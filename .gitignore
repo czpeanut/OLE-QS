@@ -1,0 +1,28 @@
+# 原始題本影像：檔案大，且校內段考卷有著作權疑慮，不放進 git 歷史
+data/samples/raw/*
+!data/samples/raw/.gitkeep
+data/uploads/
+
+# 管線輸出
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+dist/
+
+# 環境變數與金鑰
+.env
+.env.*
+!.env.example
+
+# 作業系統
+.DS_Store
+Thumbs.db

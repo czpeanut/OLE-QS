@@ -1,0 +1,555 @@
+# 擷取 PoC #001 — 人工確認之標準答案（ground truth）
+#
+# 格式說明：
+#   使用 YAML 而非 JSON，因為題幹含大量 LaTeX 反斜線，JSON 需逐一跳脫（\\times），
+#   手工維護極易出錯。管線輸出仍為 JSON，評分腳本兩者都載入成 dict 後比對。
+#   字串一律用單引號或 block scalar，YAML 單引號內反斜線為字面值，不會被跳脫。
+#
+# 注意：curriculum 代碼為推估值，尚未對照教育部 108 課綱正式條目，
+#       待 P4 匯入官方分類表後需全面覆核（見 docs/poc-report-001.md 風險 R-3）。
+
+document:
+  id: doc_113_dayeh_g7_math_s1e1
+  title: 臺中市大業國中 113 學年度第 1 學期第 1 次定期評量七年級數學科試卷
+  school: 臺中市大業國中
+  exam_name: 113 學年度第 1 學期第 1 次定期評量
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  grade: 7
+  subject: 數學
+  scope_note: '康軒版第一冊 1-1~1-4 p.71'
+  textbook:
+    publisher: 康軒
+    volume: 1
+    units: ['1-1', '1-2', '1-3', '1-4']
+  page_count: 3
+  total_score: 100
+  answer_key_available: false      # 本次樣本未提供答案卷
+  sections:
+    - ord: 1
+      name: 一、選擇題
+      type: single
+      score_rule: '每題 4 分，共 40 分'
+      per_item_score: 4
+      count: 10
+    - ord: 2
+      name: 二、填充題
+      type: fill
+      score_rule: '每題 3 分，共 45 分'
+      per_item_score: 3
+      count: 15
+    - ord: 3
+      name: 三、計算題
+      type: calc
+      score_rule: '第 1 題 3 分，第 2、3、4 題每題 4 分，共 15 分（沒有寫出計算過程一律不給分）'
+      per_item_score: null
+      count: 4
+  score_check:                     # 結構驗證：配分總和必須等於 total_score
+    computed: 100                  # 10*4 + 15*3 + (3+4+4+4)
+    declared: 100
+    passed: true
+
+extraction_meta:
+  poc_id: poc-001
+  source_form: 手機截圖（含 Android 導覽列、頁面陰影，需裁切）
+  page_order_in_input: [2, 3, 1]   # 輸入順序與實際頁序不同，靠頁尾標記還原
+  page_footers:
+    1: '【共 3 頁，第 1 頁背面尚有試題】'
+    2: '【共 3 頁，第 2 頁尚有試題】'
+    3: '【共 3 頁，第 3 頁試題結束】'
+
+questions:
+
+  # ───────── 一、選擇題（每題 4 分） ─────────
+
+  - id: q_sel_01
+    section: 1
+    number: 1
+    type: single
+    page: 1
+    score: 4
+    difficulty: 2
+    stem: '下列敘述何者**正確**？'
+    options:
+      - {label: 'A', content: '一個數的絕對值一定是正數。'}
+      - {label: 'B', content: '正整數與負整數合稱為整數。'}
+      - {label: 'C', content: '在數線上的點，若離原點愈遠，則表示這個數的絕對值愈大。'}
+      - {label: 'D', content: '若 $|a| = |b|$，則 $a$ 和 $b$ 互為相反數。'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-2 數線與絕對值'
+      curriculum: 'N-7-8'
+      concept: [絕對值的意義, 整數的分類, 相反數]
+
+  - id: q_sel_02
+    section: 1
+    number: 2
+    type: single
+    page: 1
+    score: 4
+    difficulty: 3
+    stem: '下列敘述何者**正確**？'
+    options:
+      - {label: 'A', content: '數線上有 $A(7)$、$B(-12)$ 兩點，則 $A$、$B$ 兩點的距離 $\overline{AB}$ 為 $5$'}
+      - {label: 'B', content: '數線上有 $C(3)$、$D(d)$ 兩點，若 $\overline{CD}=5$，且 $C$ 在 $D$ 的右側，則 $d$ 是 $2$'}
+      - {label: 'C', content: '數線上有 $E(-10)$、$F(4)$、$G(g)$ 三點，若 $G$ 為 $\overline{EF}$ 的中點，則 $g$ 為 $1$'}
+      - {label: 'D', content: '數線上有 $E(-10)$、$F(4)$、$G(g)$ 三點，若 $G$ 為 $\overline{EF}$ 的中點，則 $\overline{EG}$ 為 $7$'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-2 數線與絕對值'
+      curriculum: 'N-7-6, N-7-7'
+      concept: [數線上兩點的距離, 數線上的中點]
+
+  - id: q_sel_03
+    section: 1
+    number: 3
+    type: single
+    page: 1
+    score: 4
+    difficulty: 2
+    stem: '下列敘述何者**錯誤**？'
+    options:
+      - {label: 'A', content: '最大的負整數是 $-1$'}
+      - {label: 'B', content: '如果 $a$ 是一個負數，則 $|a| = -a$'}
+      - {label: 'C', content: '$a$ 為任意數，$0+a$ 或 $0-a$ 的結果都等於 $a$。'}
+      - {label: 'D', content: '$0$ 的絕對值是 $0$'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-1 正數與負數；1-2 數線與絕對值'
+      curriculum: 'N-7-8'
+      concept: [絕對值的意義, 正負數的意義, 相反數]
+
+  - id: q_sel_04
+    section: 1
+    number: 4
+    type: single
+    page: 1
+    score: 4
+    difficulty: 3
+    stem: '下列哪個答案為**正數**？'
+    options:
+      - {label: 'A', content: '$-(-3)^{19}$'}
+      - {label: 'B', content: '$-3^{19}$'}
+      - {label: 'C', content: '$-3^{20}$'}
+      - {label: 'D', content: '$-(-3)^{20}$'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-3'
+      concept: [指數記法, 負數的次方, 負號與指數的優先順序]
+    review_note: '四個選項僅差負號位置與奇偶次方，OCR 極易混淆 $-3^{19}$ 與 $(-3)^{19}$，屬高風險題'
+
+  - id: q_sel_05
+    section: 1
+    number: 5
+    type: single
+    page: 1
+    score: 4
+    difficulty: 3
+    stem: '下列敘述何者**正確**？'
+    options:
+      - {label: 'A', content: '$-5^9 = -9^5$'}
+      - {label: 'B', content: '$2^5$ 表示 $5$ 個 $2$ 相乘'}
+      - {label: 'C', content: '$(-6)\times(-6)\times(-6) = (-6)\times 3$'}
+      - {label: 'D', content: '$(-3)^2 = -3^2$'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-3'
+      concept: [指數記法, 底數與指數的意義]
+
+  - id: q_sel_06
+    section: 1
+    number: 6
+    type: single
+    page: 1
+    score: 4
+    difficulty: 3
+    stem: '下列敘述何者**正確**？'
+    options:
+      - {label: 'A', content: '$-6$ 的相反數是 $-(-6)$'}
+      - {label: 'B', content: '$|(-5)-7| = 7+(-5)$'}
+      - {label: 'C', content: '$5-(-4)$ 的相反數是 $9$'}
+      - {label: 'D', content: '$|6-(-8)| = (-8)-6$'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-2 數線與絕對值；1-3 整數的加減'
+      curriculum: 'N-7-8, N-7-3'
+      concept: [相反數, 絕對值的計算, 整數的減法]
+
+  - id: q_sel_07
+    section: 1
+    number: 7
+    type: single
+    page: 1
+    score: 4
+    difficulty: 4
+    stem: >-
+      數線上有 $A$、$B$ 兩點，已知 $A$ 點表示的數為 $37$、$B$ 點表示的數為 $-12$。
+      若將 $\overline{AB}$ 分成七等分，則由右邊算起第 $3$ 個等分點所表示的數為何？
+    options:
+      - {label: 'A', content: '$-5$'}
+      - {label: 'B', content: '$2$'}
+      - {label: 'C', content: '$9$'}
+      - {label: 'D', content: '$16$'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-2 數線與絕對值'
+      curriculum: 'N-7-5, N-7-6'
+      concept: [數線, 等分點, 數線上兩點的距離]
+
+  - id: q_sel_08
+    section: 1
+    number: 8
+    type: single
+    page: 1
+    score: 4
+    difficulty: 3
+    stem: '算式 $(-801)\times 25$ 與下列哪一個算式的答案**相同**？'
+    options:
+      - {label: 'A', content: '$-800\times 25 + 1\times 25$'}
+      - {label: 'B', content: '$-800\times 25 - 1\times 25$'}
+      - {label: 'C', content: '$800\times(-25) - 1\times(-25)$'}
+      - {label: 'D', content: '$-800\times 20 - 1\times 5$'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-4'
+      concept: [分配律, 拆項計算技巧]
+
+  - id: q_sel_09
+    section: 1
+    number: 9
+    type: single
+    page: 2
+    score: 4
+    difficulty: 2
+    stem: '若 $a$、$b$、$c$ 為任意三個整數，且 $a$、$b$、$c$ 皆不為 $0$，則下列各式何者**錯誤**？'
+    options:
+      - {label: 'A', content: '$c-(b-a) = a-b+c$'}
+      - {label: 'B', content: '$c\times b\times a = a\times b\times c$'}
+      - {label: 'C', content: '$c\div(a-b) = c\div a - c\div b$'}
+      - {label: 'D', content: '$c\times(a+b) = c\times a + c\times b$'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-4'
+      concept: [交換律, 結合律, 分配律, 除法不具分配律]
+
+  - id: q_sel_10
+    section: 1
+    number: 10
+    type: single
+    page: 2
+    score: 4
+    difficulty: 3
+    stem: '下列各式的計算結果何者為**負數**？'
+    options:
+      - {label: 'A', content: '$(-9)^3 \times (-8^2)$'}
+      - {label: 'B', content: '$(-7)^2 \times 6^2 \times (-5^2) \times 4^2$'}
+      - {label: 'C', content: '$(-3)^5 \times (-2)^4 \times (-1)^3$'}
+      - {label: 'D', content: '$(-1^2) \times (-1^3) \times (-1^4) \times (-1^5)$'}
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-3'
+      concept: [負數的次方, 乘積的正負判斷, 負號與指數的優先順序]
+    review_note: >-
+      原卷寫作 $(-8^2)$、$(-5^2)$、$(-1^2)$ 而非 $(-8)^2$，屬「負號不在括號內」的寫法，
+      不可自行「修正」為 $(-8)^2$，須原樣保留。此為 VLM 最常見的幻覺型錯誤。
+
+  # ───────── 二、填充題（每題 3 分） ─────────
+
+  - id: q_fil_01
+    section: 2
+    number: 1
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 1
+    stem: '計算 $(-75)+37+(-15)=$ ________。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-3 整數的加減'
+      curriculum: 'N-7-3'
+      concept: [整數的加法]
+
+  - id: q_fil_02
+    section: 2
+    number: 2
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 2
+    stem: '計算 $214-399-14-101=$ ________。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-3 整數的加減'
+      curriculum: 'N-7-3, N-7-4'
+      concept: [整數的加減, 湊整技巧]
+
+  - id: q_fil_03
+    section: 2
+    number: 3
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 2
+    stem: '計算 $(-12)+|-8|+(-346)+|-342|=$ ________。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-2 數線與絕對值；1-3 整數的加減'
+      curriculum: 'N-7-8, N-7-3'
+      concept: [絕對值的計算, 整數的加法]
+
+  - id: q_fil_04
+    section: 2
+    number: 4
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 2
+    stem: '計算 $(-2024)-[82+(-2025)]=$ ________。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-3 整數的加減'
+      curriculum: 'N-7-3'
+      concept: [整數的加減, 括號的處理]
+
+  - id: q_fil_05
+    section: 2
+    number: 5
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 3
+    stem: '計算 $168\times(-2001)=$ ________。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-4'
+      concept: [分配律, 湊整技巧]
+    review_note: '原卷乘號印成小寫 x（168x(−2001)），需正規化為 \times'
+
+  - id: q_fil_06
+    section: 2
+    number: 6
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 2
+    stem: '計算 $|(-3)\times(4-17)| - |(6-15)\times 2| =$ ________'
+    tags:
+      textbook: '康軒/數學/第1冊/1-2 數線與絕對值；1-4 整數的乘除'
+      curriculum: 'N-7-8, N-7-3'
+      concept: [絕對值的計算, 四則混合運算]
+
+  - id: q_fil_07
+    section: 2
+    number: 7
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 2
+    stem: '計算 $68-18\times(-4)+(-72)\div 4=$ ________。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-3'
+      concept: [四則混合運算, 運算順序]
+
+  - id: q_fil_08
+    section: 2
+    number: 8
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 4
+    stem: '計算 $(-123)\times 1507 + (-123)\times 522 + 123\times 29 =$ ____________。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-4'
+      concept: [分配律, 提出公因數]
+
+  - id: q_fil_09
+    section: 2
+    number: 9
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 3
+    stem: '計算 $5^2 - (-5)^2 \div [4+(-3^2)]^2 =$ ________。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-3'
+      concept: [四則混合運算, 指數, 運算順序]
+
+  - id: q_fil_10
+    section: 2
+    number: 10
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 3
+    stem: '已知 $5\times 6\times 7\times 8\times 9 = 15120$，則 $(-6)\times 7\times(-8)\times 9\times(-10) =$ ____________。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-3, N-7-4'
+      concept: [乘積的正負判斷, 運算規律]
+
+  - id: q_fil_11
+    section: 2
+    number: 11
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 4
+    stem: '已知甲數為整數，且 $-6 < |甲數| < 13$，則符合何條件的甲數共有多少個？答：____________ 個。'
+    tags:
+      textbook: '康軒/數學/第1冊/1-2 數線與絕對值'
+      curriculum: 'N-7-8'
+      concept: [絕對值的意義, 整數的計數]
+    uncertain_spans:
+      - '「則符合何條件的甲數」疑為原卷誤植，正常寫法應為「符合此條件」。原樣保留，未自行修正。'
+
+  - id: q_fil_12
+    section: 2
+    number: 12
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 4
+    stem: >-
+      已知 $a$、$b$、$c$ 三個數，其中一數是 $6$，一數是 $-5$，一數是 $-8$。
+      若 $b<c$ 且 $a>c$，則 $a-b\times c =$ ________。
+    tags:
+      textbook: '康軒/數學/第1冊/1-1 正數與負數；1-4 整數的乘除'
+      curriculum: 'N-7-3'
+      concept: [數的大小比較, 四則混合運算, 運算順序]
+
+  - id: q_fil_13
+    section: 2
+    number: 13
+    type: fill
+    page: 2
+    score: 3
+    difficulty: 4
+    stem: >-
+      已知數線上有 $A(a)$、$B(b)$ 兩點，且 $a<b$，$|a-b| = 18$。
+      若自 $A$ 點向右移 $5$ 單位長到達 $C$ 點，則 $\overline{BC} =$ ________。
+    tags:
+      textbook: '康軒/數學/第1冊/1-2 數線與絕對值'
+      curriculum: 'N-7-6'
+      concept: [數線上兩點的距離, 絕對值的意義]
+
+  - id: q_fil_14
+    section: 2
+    number: 14
+    type: fill
+    page: 3
+    score: 3
+    difficulty: 5
+    stem: >-
+      在右圖 $3\times 3$ 的方格紙中，填入適當的整數，使得其橫列、直行及對角線的數字和均相等，
+      則請問 $999\times a - b\times c\times d\times e =$ ________
+    assets:
+      - key: 'TBL_P3_01'
+        kind: table
+        placement: right
+        # 表格已結構化，不需裁圖；渲染時由前端重繪
+        markdown: |
+          | $a$ | $b$ | $c$ |
+          |:---:|:---:|:---:|
+          | $-5$ | $-2$ | $1$ |
+          | $3$ | $d$ | $e$ |
+    tags:
+      textbook: '康軒/數學/第1冊/1-3 整數的加減；1-4 整數的乘除'
+      curriculum: 'N-7-3'
+      concept: [幻方, 整數的加減, 整數的乘法, 邏輯推理]
+
+  - id: q_fil_15
+    section: 2
+    number: 15
+    type: fill
+    page: 3
+    score: 3
+    difficulty: 3
+    stem: |-
+      比較下列各數的大小，由大到小排列。（全對才給分）
+
+      $2\frac{1}{3}$、$-3$、$-2.4$、$-1\frac{1}{4}$、$0$、$-|-2|$
+
+      答：________________________________。
+    tags:
+      textbook: '康軒/數學/第1冊/1-1 正數與負數；1-2 數線與絕對值'
+      curriculum: 'N-7-3, N-7-8'
+      concept: [數的大小比較, 帶分數, 絕對值的計算]
+    review_note: '含帶分數，OCR 易將 $2\frac{1}{3}$ 誤讀為 $2\ 1/3$ 或 $\frac{21}{3}$'
+
+  # ───────── 三、計算題 ─────────
+
+  - id: q_cal_01
+    section: 3
+    number: 1
+    type: calc
+    page: 3
+    score: 3
+    difficulty: 2
+    stem: '數線上有 $A$、$B$、$C$ 三點，請寫出其坐標。（此題不用計算）（每個點坐標 $1$ 分，共 $3$ 分）'
+    assets:
+      - key: 'FIG_P3_01'
+        kind: figure
+        # 真正必須裁圖的資產：數線圖（刻度位置本身即為題意，無法文字化）
+        must_crop: true
+        bbox_hint: '第 3 頁，計算題第 1 題題幹下方，含 A、C、B 三個標記點與 0、1 兩個刻度標示'
+        alt: '一條數線，由左至右標有 A 點、C 點、B 點，數線下方標示 0 與 1 兩個刻度'
+    tags:
+      textbook: '康軒/數學/第1冊/1-2 數線與絕對值'
+      curriculum: 'N-7-5'
+      concept: [數線, 坐標的判讀, 刻度單位]
+
+  - id: q_cal_02
+    section: 3
+    number: 2
+    type: calc
+    page: 3
+    score: 4
+    difficulty: 3
+    stem: '計算 $(-15) - 3^2 \times [5-(-4)^2] - |(-10)\div 5 - 3|$ 之值。（$4$ 分）'
+    tags:
+      textbook: '康軒/數學/第1冊/1-4 整數的乘除'
+      curriculum: 'N-7-3'
+      concept: [四則混合運算, 運算順序, 絕對值的計算, 指數]
+
+  - id: q_cal_03
+    section: 3
+    number: 3
+    type: group
+    page: 3
+    score: 4
+    difficulty: 3
+    stem: >-
+      下表是七位學生第一次數學定考得分與全班平均分數相差一覽表。
+      若丙生的得分為 $86$ 分，請回答下列問題：
+    assets:
+      - key: 'TBL_P3_02'
+        kind: table
+        markdown: |
+          | 學生 | 甲 | 乙 | 丙 | 丁 | 戊 | 己 | 庚 |
+          |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+          | 得分與平均分數相差(分) | $+4$ | $-11$ | $+3$ | $-7$ | $-3$ | $-8$ | $+15$ |
+    children:
+      - id: q_cal_03_1
+        number: '(1)'
+        type: calc
+        score: 2
+        stem: '這七位學生中，最高分與最低分相差多少分？（$2$ 分）'
+      - id: q_cal_03_2
+        number: '(2)'
+        type: calc
+        score: 2
+        stem: '這七位學生的平均分數為多少分？（$2$ 分）'
+    tags:
+      textbook: '康軒/數學/第1冊/1-1 正數與負數；1-3 整數的加減'
+      curriculum: 'N-7-3'
+      concept: [正負數的意義, 整數的加減, 生活情境應用]
+
+  - id: q_cal_04
+    section: 3
+    number: 4
+    type: calc
+    page: 3
+    score: 4
+    difficulty: 4
+    stem: >-
+      從 $(-12)$、$5$、$(-9)$、$6$、$4$ 五數中挑出三數，
+      若這三數最小的乘積為 $A$，最大的和為 $B$，則 $A+B$ 為多少？（$4$ 分）
+    tags:
+      textbook: '康軒/數學/第1冊/1-3 整數的加減；1-4 整數的乘除'
+      curriculum: 'N-7-3'
+      concept: [乘積的正負判斷, 極值問題, 整數的加法]
