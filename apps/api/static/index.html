@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OLE-QS 題庫系統</title>
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#fff; --line:#e2e5ea; --ink:#1b1f24; --muted:#6b7480;
+  --accent:#2f6fd0; --accent-soft:#eaf1fc; --warn:#b8541c; --ok:#1f7a4d;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#14171b; --panel:#1c2026; --line:#2c323a; --ink:#e6e9ed; --muted:#98a1ad;
+  --accent:#6ba3f0; --accent-soft:#1e2b3d; --warn:#e0925c; --ok:#5fc08c;
+}}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.65 "Noto Sans TC",system-ui,-apple-system,sans-serif;
+     background:var(--bg);color:var(--ink)}
+header{background:var(--panel);border-bottom:1px solid var(--line);padding:10px 18px;
+       display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:10}
+header h1{font-size:16px;margin:0;letter-spacing:.02em}
+header .stat{color:var(--muted);font-size:13px}
+.layout{display:grid;grid-template-columns:250px 1fr 330px;gap:14px;padding:14px;
+        align-items:start}
+@media (max-width:1100px){.layout{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px}
+.panel h2{font-size:13px;margin:0 0 8px;color:var(--muted);font-weight:600;
+          letter-spacing:.06em}
+aside,.cart{position:sticky;top:60px;max-height:calc(100vh - 74px);overflow:auto}
+label.f{display:block;font-size:12px;color:var(--muted);margin:9px 0 3px}
+select,input[type=text],input[type=number]{width:100%;padding:6px 8px;font:inherit;
+  font-size:14px;border:1px solid var(--line);border-radius:6px;
+  background:var(--bg);color:var(--ink)}
+.row{display:flex;gap:6px}
+button{font:inherit;font-size:14px;padding:6px 12px;border-radius:6px;cursor:pointer;
+       border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+button.primary{background:var(--accent);color:#fff;border-color:transparent}
+button.ghost{background:transparent;color:var(--muted);border:none;padding:3px 6px}
+button:disabled{opacity:.45;cursor:not-allowed}
+.q{border:1px solid var(--line);border-radius:9px;padding:11px 13px;margin-bottom:9px;
+   background:var(--panel)}
+.q.in-cart{border-color:var(--accent);background:var(--accent-soft)}
+.q-top{display:flex;gap:8px;align-items:flex-start;margin-bottom:5px}
+.q-stem{flex:1;white-space:pre-wrap}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:1px 14px;margin:5px 0 0;
+      font-size:14px;color:var(--ink)}
+.opts.wide{grid-template-columns:1fr}
+.badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.b{font-size:11.5px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);
+   color:var(--muted);white-space:nowrap}
+.b.d1,.b.d2{color:var(--ok)} .b.d4,.b.d5{color:var(--warn)}
+.b.src{border-style:dashed}
+.cite{font-size:11.5px;color:var(--muted);margin-top:6px;padding-top:5px;
+      border-top:1px dashed var(--line)}
+figure{margin:7px 0;text-align:center}
+figure img{max-width:100%;border:1px solid var(--line);border-radius:6px;background:#fff}
+figcaption{font-size:11.5px;color:var(--muted)}
+.shared{border-left:3px solid var(--accent);padding:6px 9px;margin:6px 0;
+        background:var(--accent-soft);border-radius:0 6px 6px 0;font-size:13.5px}
+.passage{max-height:7em;overflow:auto}
+/* 共用素材會被同組每一題引用（例：一張圖服務五題）。列表是拿來掃讀的，
+   若每題都把整張圖攤開，五題就會把畫面塞滿。預設收成縮圖，點開才放大。 */
+.shared details>summary{cursor:pointer;list-style:none;display:flex;gap:8px;
+  align-items:center;font-size:13px}
+.shared details>summary::-webkit-details-marker{display:none}
+.shared summary img{height:44px;border:1px solid var(--line);border-radius:4px;
+  background:#fff}
+.shared details[open] summary img{display:none}
+.shared .full{margin-top:6px}
+table.at{border-collapse:collapse;margin:6px auto;font-size:13px}
+table.at td,table.at th{border:1px solid var(--line);padding:2px 9px;text-align:center}
+.math{font-family:"Cambria Math",Georgia,serif;font-style:italic}
+.math sup,.math sub{font-style:normal;font-size:.72em}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-0.55em;
+      text-align:center;font-size:.92em;margin:0 .15em}
+.frac .num{border-bottom:1px solid currentColor;padding:0 .3em}
+.frac .den{padding:0 .3em}
+.ovl{border-top:1px solid currentColor;padding-top:1px}
+.sqrt{border-top:1px solid currentColor;padding:0 .15em}
+.pending{color:var(--warn);font-size:12.5px;border:1px dashed var(--warn);
+         padding:3px 7px;border-radius:5px;display:inline-block;margin:5px 0}
+.cart-item{display:flex;gap:7px;align-items:center;padding:6px 0;
+           border-bottom:1px solid var(--line);font-size:13.5px}
+.cart-item .g{flex:1;min-width:0}
+.cart-item .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cart-item input[type=number]{width:56px;padding:2px 5px;font-size:13px}
+.cart-item input[type=text]{font-size:12px;padding:2px 5px;margin-top:2px}
+.muted{color:var(--muted)}
+.empty{color:var(--muted);text-align:center;padding:26px 10px;font-size:14px}
+.dist{display:flex;gap:3px;align-items:flex-end;height:34px;margin:8px 0}
+.dist div{flex:1;background:var(--accent);border-radius:2px 2px 0 0;min-height:2px;
+          position:relative}
+.dist span{position:absolute;bottom:-16px;left:0;right:0;text-align:center;
+           font-size:10px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>OLE-QS 題庫系統</h1>
+  <span class="stat" id="stat">載入中…</span>
+  <span style="flex:1"></span>
+  <span class="stat">題目取自公開試題，匯出時自動標註出處</span>
+</header>
+
+<div class="layout">
+  <!-- ── 篩選 ── -->
+  <aside class="panel">
+    <h2>篩選</h2>
+    <label class="f">關鍵字</label>
+    <input type="text" id="q" placeholder="例：浮力、絕對值">
+    <label class="f">科目</label><select id="subject"></select>
+    <label class="f">年級</label><select id="grade"></select>
+    <label class="f">章節</label><select id="chapter"></select>
+    <label class="f">題型</label><select id="type"></select>
+    <label class="f">難度</label>
+    <div class="row">
+      <select id="dmin"></select><select id="dmax"></select>
+    </div>
+    <label class="f">其他</label>
+    <select id="hasfig">
+      <option value="">不限含圖與否</option>
+      <option value="true">只要含圖的</option>
+      <option value="false">只要不含圖的</option>
+    </select>
+    <select id="hasans" style="margin-top:6px">
+      <option value="">不限有無答案</option>
+      <option value="true">只要有答案的</option>
+      <option value="false">只要缺答案的</option>
+    </select>
+    <div class="row" style="margin-top:12px">
+      <button class="primary" style="flex:1" onclick="load()">套用</button>
+      <button onclick="resetFilters()">清除</button>
+    </div>
+  </aside>
+
+  <!-- ── 題目列表 ── -->
+  <main>
+    <div id="list"></div>
+    <div class="row" style="justify-content:center;margin:12px 0">
+      <button id="more" onclick="load(true)" style="display:none">載入更多</button>
+    </div>
+  </main>
+
+  <!-- ── 題籃 ── -->
+  <section class="panel cart">
+    <h2>題籃</h2>
+    <input type="text" id="ptitle" placeholder="考卷標題" value="未命名考卷">
+    <div id="dist"></div>
+    <div id="cart"></div>
+    <div style="margin-top:10px;font-size:13px" class="muted">
+      共 <b id="ccount">0</b> 題，總分 <b id="cscore">0</b> 分
+    </div>
+    <div class="row" style="margin-top:10px;flex-wrap:wrap">
+      <button class="primary" onclick="exportPaper('exam')">試題卷</button>
+      <button onclick="exportPaper('answer')">答案卷</button>
+      <button onclick="exportPaper('key')">解答卷</button>
+    </div>
+    <button class="ghost" style="margin-top:6px" onclick="clearCart()">清空題籃</button>
+  </section>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const TYPE_LABEL = {single:'單選',multiple:'多選',tf:'是非',fill:'填充',
+                    matching:'配合',calc:'計算',essay:'問答',group:'題組'};
+let cart = JSON.parse(localStorage.getItem('oleqs_cart') || '[]');
+let offset = 0, total = 0;
+
+const esc = s => (s ?? '').replace(/[&<>"]/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// 題幹的 Markdown+LaTeX 由後端渲染成 HTML（見 apps/api/mathfmt.py），
+// 前端直接使用，避免前後端各維護一套公式邏輯而逐漸走鐘。
+
+function mdTable(md){
+  const rows = md.trim().split('\n').map(r=>r.trim()).filter(Boolean)
+    .filter(r => !/^[\s|:-]+$/.test(r))
+    .map(r => r.replace(/^\||\|$/g,'').split('|').map(c=>c.trim()));
+  if(!rows.length) return '';
+  const head = rows[0].map(c=>`<th>${esc(c)}</th>`).join('');
+  const body = rows.slice(1).map(r=>'<tr>'+r.map(c=>`<td>${esc(c)}</td>`).join('')+'</tr>').join('');
+  return `<table class="at"><tr>${head}</tr>${body}</table>`;
+}
+
+function assetHtml(a){
+  if(a.kind === 'table' && a.markdown) return mdTable(a.markdown);
+  if(a.file) return `<figure><img src="/assets/${esc(a.file)}" alt="${esc(a.alt)}" loading="lazy">
+      ${a.label ? `<figcaption>${esc(a.label)}</figcaption>` : ''}</figure>`;
+  if(a.pending) return `<div class="pending">⚠ 此題有圖尚未產生檔案（${esc(a.key)}）</div>`;
+  return '';
+}
+
+function sharedHtml(s){
+  if(!s) return '';
+  if(s.text) return `<div class="shared"><details><summary>
+      <b>共用短文</b><span class="muted">（點開閱讀）</span></summary>
+      <div class="passage full">${esc(s.text)}</div></details></div>`;
+  if(s.file) return `<div class="shared"><details><summary>
+      <img src="/assets/${esc(s.file)}" alt="${esc(s.alt)}" loading="lazy">
+      <b>共用${esc(s.label||'素材')}</b><span class="muted">（點開放大）</span></summary>
+      <figure class="full"><img src="/assets/${esc(s.file)}" alt="${esc(s.alt)}" loading="lazy">
+      </figure></details></div>`;
+  return '';
+}
+
+function questionHtml(q){
+  const inCart = cart.some(c => c.id === q.id);
+  const longest = Math.max(0, ...q.options.map(o => (o.content||'').length));
+  const opts = q.options.length ? `<div class="opts${longest>18?' wide':''}">` +
+    q.options.map(o => `<div>(${esc(o.label)}) ${o.asset_file
+      ? `<img src="/assets/${esc(o.asset_file)}" style="height:52px;vertical-align:middle">`
+      : o.content_html}</div>`).join('') + '</div>' : '';
+  const tags = [
+    q.difficulty ? `<span class="b d${q.difficulty}">難度 ${q.difficulty}</span>` : '',
+    `<span class="b">${TYPE_LABEL[q.type]||q.type}</span>`,
+    q.score ? `<span class="b">${q.score} 分</span>` : '',
+    ...(q.tags.textbook||[]).map(t => `<span class="b">${esc(t.split('/').pop())}</span>`),
+    ...(q.tags.curriculum||[]).map(t => `<span class="b src">${esc(t)}</span>`),
+    q.answer_status === 'missing' ? '<span class="b" style="color:var(--warn)">缺答案</span>' : '',
+  ].filter(Boolean).join('');
+
+  return `<div class="q ${inCart?'in-cart':''}" id="q-${esc(q.id)}">
+    ${sharedHtml(q.shared_asset)}
+    ${q.group_stem ? `<div class="shared">${q.group_stem_html}</div>` : ''}
+    <div class="q-top">
+      <div class="q-stem">${q.stem_html}</div>
+      <button class="${inCart?'':'primary'}" onclick="toggle('${esc(q.id)}')">
+        ${inCart ? '移除' : '加入'}</button>
+    </div>
+    ${q.assets.map(assetHtml).join('')}
+    ${opts}
+    <div class="badges">${tags}</div>
+    <div class="cite">出處：${esc(q.citation)}</div>
+  </div>`;
+}
+
+const byId = {};
+
+async function load(append=false){
+  if(!append) offset = 0;
+  const p = new URLSearchParams();
+  const add = (k, v) => { if(v) p.set(k, v); };
+  add('q', $('#q').value.trim());
+  add('subject', $('#subject').value);
+  add('grade', $('#grade').value);
+  add('chapter', $('#chapter').value);
+  add('type', $('#type').value);
+  add('difficulty_min', $('#dmin').value);
+  add('difficulty_max', $('#dmax').value);
+  add('has_figure', $('#hasfig').value);
+  add('has_answer', $('#hasans').value);
+  p.set('limit', 30); p.set('offset', offset);
+
+  const r = await fetch('/api/questions?' + p);
+  const d = await r.json();
+  total = d.total;
+  d.items.forEach(q => byId[q.id] = q);
+  const html = d.items.map(questionHtml).join('');
+  if(append) $('#list').insertAdjacentHTML('beforeend', html);
+  else $('#list').innerHTML = html || '<div class="empty">沒有符合條件的題目</div>';
+  offset += d.items.length;
+  $('#more').style.display = offset < total ? '' : 'none';
+  $('#stat').textContent = `${total} 題符合條件`;
+}
+
+function toggle(id){
+  const i = cart.findIndex(c => c.id === id);
+  if(i >= 0) cart.splice(i, 1);
+  else cart.push({id, score: byId[id]?.score ?? null, section: ''});
+  saveCart();
+  const el = document.getElementById('q-' + id);
+  if(el && byId[id]) el.outerHTML = questionHtml(byId[id]);
+}
+
+function saveCart(){
+  localStorage.setItem('oleqs_cart', JSON.stringify(cart));
+  renderCart();
+}
+
+function renderCart(){
+  if(!cart.length){
+    $('#cart').innerHTML = '<div class="empty">尚未選題<br><span style="font-size:12.5px">從左側點「加入」</span></div>';
+    $('#dist').innerHTML = '';
+  } else {
+    $('#cart').innerHTML = cart.map((c, i) => {
+      const q = byId[c.id];
+      return `<div class="cart-item">
+        <div class="g">
+          <div class="t">${i+1}. ${esc(q ? q.stem.replace(/[$*]/g,'').slice(0,26) : c.id)}</div>
+          <input type="text" placeholder="分節（例：一、選擇題）" value="${esc(c.section)}"
+                 onchange="setField(${i},'section',this.value)">
+        </div>
+        <input type="number" step="0.5" min="0" value="${c.score ?? ''}"
+               onchange="setField(${i},'score',this.value)" title="配分">
+        <button class="ghost" onclick="move(${i},-1)" ${i===0?'disabled':''}>↑</button>
+        <button class="ghost" onclick="move(${i},1)" ${i===cart.length-1?'disabled':''}>↓</button>
+        <button class="ghost" onclick="toggle('${esc(c.id)}')">✕</button>
+      </div>`;
+    }).join('');
+
+    // 難度分布
+    const bins = [0,0,0,0,0];
+    cart.forEach(c => { const d = byId[c.id]?.difficulty; if(d) bins[d-1]++; });
+    const max = Math.max(1, ...bins);
+    $('#dist').innerHTML = '<div class="dist">' + bins.map((n, i) =>
+      `<div style="height:${n/max*100}%" title="難度${i+1}：${n} 題"><span>${i+1}</span></div>`
+    ).join('') + '</div>';
+  }
+  $('#ccount').textContent = cart.length;
+  $('#cscore').textContent = cart.reduce((s, c) => s + (parseFloat(c.score)||0), 0);
+}
+
+function setField(i, k, v){ cart[i][k] = k === 'score' ? (v === '' ? null : parseFloat(v)) : v; saveCart(); }
+function move(i, d){ const [x] = cart.splice(i,1); cart.splice(i+d, 0, x); saveCart(); }
+function clearCart(){ if(confirm('清空題籃？')) { cart = []; saveCart(); load(); } }
+
+function resetFilters(){
+  ['q','subject','grade','chapter','type','dmin','dmax','hasfig','hasans']
+    .forEach(id => $('#'+id).value = '');
+  load();
+}
+
+async function exportPaper(mode){
+  if(!cart.length) return alert('題籃是空的');
+  // 缺答案的題目匯出解答卷會是空的，先提醒而不是默默印出空白
+  if(mode === 'key'){
+    const miss = cart.filter(c => byId[c.id]?.answer_status === 'missing').length;
+    if(miss && !confirm(`有 ${miss} 題沒有答案，解答卷該處會是空的。仍要匯出？`)) return;
+  }
+  const body = {
+    title: $('#ptitle').value.trim() || '未命名考卷',
+    question_ids: cart.map(c => c.id),
+  };
+  const created = await (await fetch('/api/papers', {
+    method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify(body)
+  })).json();
+  await fetch('/api/papers/' + created.id, {
+    method:'PATCH', headers:{'content-type':'application/json'},
+    body: JSON.stringify({items: cart.map(c => ({
+      question_id: c.id, score: c.score, section_name: c.section || null}))})
+  });
+  window.open(`/api/papers/${created.id}/export?mode=${mode}`, '_blank');
+}
+
+async function init(){
+  const f = await (await fetch('/api/facets')).json();
+  const fill = (sel, items, label, blank) => {
+    $(sel).innerHTML = `<option value="">${blank}</option>` + items.map(i =>
+      `<option value="${i.value}">${label(i)}</option>`).join('');
+  };
+  fill('#subject', f.subjects, i => `${i.value}（${i.count}）`, '全部科目');
+  fill('#grade', f.grades, i => `${i.value} 年級（${i.count}）`, '全部年級');
+  fill('#type', f.types, i => `${TYPE_LABEL[i.value]||i.value}（${i.count}）`, '全部題型');
+  fill('#chapter', f.chapters, i => `${i.value.split('/').pop()}（${i.count}）`, '全部章節');
+  fill('#dmin', f.difficulties, i => `≥ ${i.value}`, '難度下限');
+  fill('#dmax', f.difficulties, i => `≤ ${i.value}`, '難度上限');
+  $('#q').addEventListener('keydown', e => { if(e.key === 'Enter') load(); });
+  await load();
+  // 題籃中的題目可能不在目前篩選結果裡，補抓一次才能顯示標題與難度
+  await Promise.all(cart.filter(c => !byId[c.id]).map(async c => {
+    const r = await fetch('/api/questions/' + c.id);
+    if(r.ok) byId[c.id] = await r.json();
+  }));
+  renderCart();
+}
+init();
+</script>
+</body>
+</html>
