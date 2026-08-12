@@ -34,8 +34,14 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
         reasons.append(f"擷取時標記辨識不清（{len(q['uncertain_spans'])} 處）")
 
     # ── 公式未閉合：$ 必須成對，否則題幹會渲染錯亂 ──────────────
+    # $ 兩種用途都存在：數學的公式界定符，與英語／社會卷的貨幣符號。
+    # 兩種解讀都算成立，只有**兩種解讀都不成對**時才判定為未閉合 ——
+    # 單看其中一種會誤殺：把 "$5^2$" 的 $5 當貨幣刪掉，公式就變成未閉合。
+    def unbalanced(t: str) -> bool:
+        return t.count("$") % 2 and re.sub(r"\$(?=\d)", "", t).count("$") % 2
+
     texts = [stem] + [(o.get("content") or "") for o in (q.get("options") or [])]
-    if any(t.count("$") % 2 for t in texts):
+    if any(unbalanced(t) for t in texts):
         reasons.append("LaTeX 公式未閉合")
 
     # ── 選項完整性 ──────────────────────────────────────────
@@ -77,7 +83,10 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
         flat = [str(a).strip() for a in (ans if isinstance(ans, list) else [ans])]
         if not any(flat):
             reasons.append("答案欄位存在但內容為空")
-        elif any(re.search(r"[?？]|待確認|存疑|送分|均給分|answer\s*unclear", a)
+        # 問號只有在「答案很短」時才代表存疑；完整句子裡的問號是正常標點
+        # （英語卷的答案就是整句英文，含 "Do you like sports?"）。
+        elif any(re.search(r"待確認|存疑|送分|均給分|answer\s*unclear", a)
+                 or (len(a) <= 8 and re.search(r"[?？]", a))
                  for a in flat):
             reasons.append(f"答案標示有疑義：{flat}")
         expect_n = q.get("answer_count")

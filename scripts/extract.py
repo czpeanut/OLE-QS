@@ -147,7 +147,9 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict
     cur_section = 0
     cur: dict | None = None
     buf: list[str] = []
+    lead: list[str] = []
     last_num: dict[int, int] = {}
+    section_lead: dict[int, str] = {}
 
     def flush() -> None:
         nonlocal cur, buf
@@ -194,6 +196,7 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict
 
                 if m := SECTION_RE.match(text):
                     flush()
+                    lead = []
                     cur_section += 1
                     name = f"{m.group(1)}、{m.group(2).strip()}"
                     sections.append({"ord": cur_section, "name": name,
@@ -214,6 +217,11 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict
                             buf.append(text)
                         continue
                     last_num[max(cur_section, 1)] = num
+                    if lead and cur_section and cur_section not in section_lead:
+                        text_lead = " ".join(lead).strip()
+                        if len(text_lead) >= 20:
+                            section_lead[cur_section] = text_lead
+                        lead = []
                     flush()
                     stype = (sections[cur_section - 1]["type"]
                              if sections and cur_section else "fill")
@@ -227,6 +235,11 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict
 
                 if cur is not None:
                     buf.append(text)
+                elif cur_section:
+                    # 題號出現前的文字＝這個大題的共用前文。
+                    # 克漏字與閱讀測驗的題目本身沒有題幹，全靠這段短文；
+                    # 丟掉它，那些題目會變成空題幹而被剔除。
+                    lead.append(text)
     flush()
     doc.close()
 
@@ -234,6 +247,12 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict
     # 一張圖只能歸給一題。跨欄或跨頁時「下一題」的位置判斷會失效，
     # 若不去重，同一張圖會被多題認領，寫入時撞上唯一性約束。
     claimed: set[str] = set()
+    # 沒有題幹的題目（克漏字、閱讀測驗）補上該大題的共用前文
+    for q in questions:
+        if not (q.get("stem") or "").strip() and q["section"] in section_lead:
+            q["group_stem"] = section_lead[q["section"]]
+            q["stem"] = f"依上文選出第 {q['number']} 格最適當的答案"
+
     for i, q in enumerate(questions):
         nxt = questions[i + 1] if i + 1 < len(questions) else None
         owned = [f for f in figures
@@ -256,26 +275,36 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict
         for e in pg["entries"]:
             by_section.setdefault(e["table_index"], {})[e["number"]] = e["answer"]
 
-    # 答案表的順序對應大題順序；表數與大題數不符時不硬套，寧可不掛
-    tables = sorted(by_section)
-    if len(tables) == len(sections):
-        for sec_ord, tbl in zip(range(1, len(sections) + 1), tables):
-            for q in questions:
-                if q["section"] == sec_ord and q["number"] in by_section[tbl]:
-                    q["answer"] = [by_section[tbl][q["number"]]]
-    else:
-        # 全卷連續編號時，直接依題號比對（各表題號不重疊才安全）
-        flat: dict[int, str] = {}
-        clash = False
-        for tbl in tables:
-            for n, a in by_section[tbl].items():
-                if n in flat:
-                    clash = True
-                flat[n] = a
-        if not clash:
-            for q in questions:
-                if q["number"] in flat:
-                    q["answer"] = [flat[q["number"]]]
+    # 答案表與大題的配對：依「題號集合的重疊度」比對，不要求數量相同。
+    # 數學卷有 3 個大題但只有 2 張答案表（計算題的答案是詳解文字，不成表），
+    # 若要求數量相同就會整份卷掛不上答案。
+    # 一個大題的答案可能拆成多張表（國文選擇題就拆成 1~29 與 30~35 兩張），
+    # 所以不是「一個大題配一張表」，而是把所有「題號多半落在本大題內」的表合併。
+    used: set[int] = set()
+    for sec in sections:
+        nums = {q["number"] for q in questions if q["section"] == sec["ord"]}
+        if not nums:
+            continue
+        # 分母取「較小者」：擷取不全時本大題的題號會比答案表少很多，
+        # 用聯集或最大值當分母會讓命中率被稀釋而配不上。
+        # 每張表只配給一個大題（best-match），避免相鄰大題互搶。
+        merged: dict[int, str] = {}
+        scored = []
+        for tbl, mapping in sorted(by_section.items()):
+            if tbl in used:
+                continue
+            keys = set(mapping)
+            hit = len(keys & nums) / max(1, min(len(keys), len(nums)))
+            if hit >= 0.6:
+                scored.append((hit, tbl, mapping))
+        if scored:
+            scored.sort(reverse=True, key=lambda x: x[0])
+            _, tbl, mapping = scored[0]
+            used.add(tbl)
+            merged.update(mapping)
+        for q in questions:
+            if q["section"] == sec["ord"] and q["number"] in merged:
+                q["answer"] = [merged[q["number"]]]
 
     for q in questions:
         q.pop("_col", None)
