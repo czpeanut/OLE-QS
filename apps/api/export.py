@@ -144,8 +144,9 @@ def render_question(item, n: int, mode: str, seen_shared: set) -> str:
         if q.explanation_md:
             body.append(f'<div class="expl">{esc(q.explanation_md)}</div>')
 
-    # 來源標註：授權條件要求保留出處，因此固定輸出，不提供關閉選項
-    body.append(f'<div class="cite">出處：{esc(q.document.citation)}</div>')
+    # 來源標註：授權條件要求保留出處，因此固定輸出，不提供關閉選項。
+    # 出處取自題目自身（可能有多個），與這份卷混用了幾份來源無關。
+    body.append(f'<div class="cite">出處：{esc(q.citation)}</div>')
     body.append("</div>")
 
     score = f"（{item.score:g} 分）" if item.score else ""
@@ -160,7 +161,8 @@ def render_paper(paper: Paper, mode: str = "exam") -> str:
 
     sources = OrderedDict()
     for item in paper.items:
-        sources.setdefault(item.question.document.citation, None)
+        for c in item.question.citations:
+            sources.setdefault(c, None)
 
     parts = [f'<div class="head"><h1>{esc(paper.title)}{title_suffix}</h1>'
              f'<div class="meta">共 {len(paper.items)} 題　'

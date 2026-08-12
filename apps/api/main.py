@@ -81,16 +81,14 @@ def question_json(q: Question, *, with_answer: bool = True) -> dict:
         "review_note": q.review_note,
         "tags": {axis: [t.value for t in q.tags if t.axis == axis]
                  for axis in ("textbook", "curriculum", "concept")},
-        # 來源標註隨題目一起回傳，前端無需另外查詢
-        "citation": q.document.citation,
-        "source": {
-            "school": q.document.school,
-            "exam_name": q.document.exam_name,
-            "year": q.document.academic_year_roc,
-            "grade": q.document.grade,
-            "subject": q.document.subject,
-            "scope_note": q.document.scope_note,
-        },
+        # 出處來自題目自身的快照，不是它所屬的文件 —— 一題可有多個出處
+        "citation": q.citation,
+        "sources": [{
+            "citation": s.citation, "relation": s.relation,
+            "school": s.school, "exam_name": s.exam_name,
+            "year": s.academic_year_roc, "grade": s.grade, "subject": s.subject,
+            "number_in_paper": s.number_in_paper, "note": s.note,
+        } for s in q.sources],
     }
 
 
@@ -159,6 +157,7 @@ def list_questions(
             .options(selectinload(Question.options),
                      selectinload(Question.assets),
                      selectinload(Question.tags),
+                     selectinload(Question.sources),
                      selectinload(Question.document).selectinload(Document.assets)))
 
     if subject:

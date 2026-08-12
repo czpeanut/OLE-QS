@@ -93,8 +93,10 @@ class Document(Base):
 
     sections: Mapped[list["Section"]] = relationship(back_populates="document",
                                                      cascade="all, delete-orphan")
+    # 題目**不**隨文件級聯刪除。題目自帶出處快照後就是獨立實體，
+    # 清掉一次匯入紀錄不該毀掉已被考卷引用的題目。
     questions: Mapped[list["Question"]] = relationship(back_populates="document",
-                                                       cascade="all, delete-orphan")
+                                                       passive_deletes=True)
     assets: Mapped[list["Asset"]] = relationship(back_populates="document",
                                                  cascade="all, delete-orphan")
 
@@ -105,7 +107,11 @@ class Document(Base):
 
     @property
     def citation(self) -> str:
-        """匯出時印在每一題底下的出處字串。"""
+        """這份文件的描述字串。
+
+        ⚠️ 這**不是**題目出處的權威來源 —— 題目的出處存在 QuestionSource，
+        於匯入當下快照。原因見 QuestionSource 的說明。
+        """
         bits = [self.school, f"{self.academic_year_roc}學年度"]
         if self.semester:
             bits.append(f"第{self.semester}學期")
@@ -141,8 +147,9 @@ class Question(Base):
     __tablename__ = "question"
 
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
-    document_id: Mapped[str] = mapped_column(ForeignKey("document.id", ondelete="CASCADE"),
-                                             index=True)
+    # 只代表「從哪次匯入進來」，不是出處的權威（出處在 QuestionSource）
+    document_id: Mapped[str | None] = mapped_column(
+        ForeignKey("document.id", ondelete="SET NULL"), index=True)
     section_ord: Mapped[int] = mapped_column(Integer, nullable=False)
     number: Mapped[int] = mapped_column(Integer, nullable=False)
 
@@ -172,7 +179,7 @@ class Question(Base):
 
     created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
 
-    document: Mapped[Document] = relationship(back_populates="questions")
+    document: Mapped[Document | None] = relationship(back_populates="questions")
     options: Mapped[list["Option"]] = relationship(
         back_populates="question", cascade="all, delete-orphan",
         order_by="Option.ord")
@@ -180,6 +187,18 @@ class Question(Base):
         back_populates="question", cascade="all, delete-orphan")
     tags: Mapped[list["Tag"]] = relationship(
         back_populates="question", cascade="all, delete-orphan")
+    sources: Mapped[list["QuestionSource"]] = relationship(
+        back_populates="question", cascade="all, delete-orphan",
+        order_by="QuestionSource.ord")
+
+    @property
+    def citations(self) -> list[str]:
+        """這一題的所有出處。組卷匯出時逐題列出，與它來自哪份文件無關。"""
+        return [s.citation for s in self.sources]
+
+    @property
+    def citation(self) -> str:
+        return "；".join(self.citations) or "（來源未標註）"
 
     __table_args__ = (
         # 題號在不同大題會重複，唯一鍵必須帶上大題
@@ -251,6 +270,68 @@ class Asset(Base):
             "OR pending = 1",
             name="ck_asset_has_payload"),
     )
+
+
+class QuestionSource(Base):
+    """題目的出處。**一題可以有多個**。
+
+    為什麼不直接用 Question.document_id 推導出處：
+
+    1. **去重合併**：同一題常同時出現在多份考卷。合併成一題後，外鍵只能指向
+       其中一份，其餘來源就消失了 —— 但它們同樣是這題的合法出處。
+    2. **改編題**：老師改動數字或敘述後，這題不再屬於原卷，出處應記為
+       「改編自 X」。掛外鍵等於謊稱它就是原卷的題目。
+    3. **出處必須不可變**：若渲染時才從 Document 算出處，那份文件被修改或刪除，
+       已經發出去的考卷的出處就跟著變。因此在匯入當下把來源欄位**快照**進來。
+
+    document_id 保留，但只代表「這題是從哪次匯入進來的」，不是出處的權威。
+    """
+
+    __tablename__ = "question_source"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    question_id: Mapped[str] = mapped_column(ForeignKey("question.id", ondelete="CASCADE"),
+                                             index=True)
+    ord: Mapped[int] = mapped_column(Integer, default=0)
+
+    # ── 快照欄位：匯入當下複製，之後不隨 Document 變動 ──────────
+    school: Mapped[str] = mapped_column(String(120), nullable=False)
+    exam_name: Mapped[str] = mapped_column(String(200), nullable=False)
+    academic_year_roc: Mapped[int] = mapped_column(Integer, nullable=False)
+    semester: Mapped[int | None] = mapped_column(Integer)
+    exam_seq: Mapped[int | None] = mapped_column(Integer)
+    grade: Mapped[int] = mapped_column(Integer, nullable=False)
+    subject: Mapped[str] = mapped_column(String(40), nullable=False)
+
+    page: Mapped[int | None] = mapped_column(Integer)
+    number_in_paper: Mapped[int | None] = mapped_column(Integer)
+
+    # original 原題 / adapted 改編 / duplicate 同題另一出處
+    relation: Mapped[str] = mapped_column(String(20), default="original")
+    note: Mapped[str | None] = mapped_column(String(300))
+
+    document_id: Mapped[str | None] = mapped_column(
+        ForeignKey("document.id", ondelete="SET NULL"))
+
+    question: Mapped["Question"] = relationship(back_populates="sources")
+
+    __table_args__ = (
+        CheckConstraint("length(trim(school)) > 0", name="ck_qsource_school"),
+        CheckConstraint("length(trim(exam_name)) > 0", name="ck_qsource_exam"),
+    )
+
+    @property
+    def citation(self) -> str:
+        bits = [self.school, f"{self.academic_year_roc}學年度"]
+        if self.semester:
+            bits.append(f"第{self.semester}學期")
+        if self.exam_seq:
+            bits.append(f"第{self.exam_seq}次定期評量")
+        bits.append(f"{self.grade}年級{self.subject}")
+        if self.number_in_paper:
+            bits.append(f"第{self.number_in_paper}題")
+        prefix = {"adapted": "改編自 ", "duplicate": "另見 "}.get(self.relation, "")
+        return prefix + " ".join(bits)
 
 
 class Tag(Base):

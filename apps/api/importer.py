@@ -19,7 +19,8 @@ from sqlalchemy.orm import Session
 
 from .db import get_session, init_db, reindex_question
 from .models import (Asset, AssetKind, AnswerStatus, Document, Option,
-                     Question, QuestionType, ReviewStatus, Section, Tag)
+                     Question, QuestionSource, QuestionType, ReviewStatus,
+                     Section, Tag)
 
 REQUIRED_SOURCE_FIELDS = ("title", "school", "exam_name", "academic_year_roc",
                           "grade", "subject")
@@ -51,7 +52,10 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
 
     doc_id = meta["id"]
 
-    # 重載：整份清掉再寫。cascade 會一併刪除 section/question/option/asset/tag。
+    # 重載：整份清掉再寫。
+    # 題目已不隨文件級聯刪除（見 models.Document.questions），
+    # 因此這裡必須明確刪除本文件匯入的題目，否則重跑會殘留舊題。
+    session.execute(delete(Question).where(Question.document_id == doc_id))
     session.execute(delete(Document).where(Document.id == doc_id))
     session.execute(
         __import__("sqlalchemy").text(
@@ -116,6 +120,17 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
         )
         session.add(question)
         session.flush()
+
+        # 出處快照到題目上。這裡刻意複製欄位而非只存 document_id ——
+        # 題目日後可能被合併、改編，或原文件被修改，出處都必須留在題目自己身上。
+        session.add(QuestionSource(
+            question_id=qid, ord=0, relation="original",
+            school=d.school, exam_name=d.exam_name,
+            academic_year_roc=d.academic_year_roc,
+            semester=d.semester, exam_seq=d.exam_seq,
+            grade=d.grade, subject=d.subject,
+            page=q.get("page"), number_in_paper=q.get("number"),
+            document_id=doc_id))
 
         for i, o in enumerate(q.get("options") or []):
             asset = o.get("asset") or {}
