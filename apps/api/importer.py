@@ -111,7 +111,7 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
             section_ord=q.get("section", 1), number=q["number"],
             type=QuestionType(q["type"]),
             stem_md=q.get("stem", ""), group_stem=q.get("group_stem"),
-            answer=answer,
+            answer=answer or None,
             answer_status=(AnswerStatus.verified if answer else AnswerStatus.missing),
             answer_source=("source_answer_key" if answer else None),
             explanation_md=q.get("explanation"),
@@ -140,6 +140,13 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
             grade=d.grade, subject=d.subject,
             page=q.get("page"), number_in_paper=q.get("number"),
             document_id=doc_id))
+
+        # 被剔除的題目只保留題目本身與剔除原因，不寫入它的選項／圖表／標籤。
+        # 那些資料正是它被剔除的原因（空選項、標籤重複、圖檔缺失），
+        # 硬寫入會違反完整性約束並讓整份卷匯入失敗 —— 一題壞掉不該拖垮整份卷。
+        if not keep:
+            n += 1
+            continue
 
         for i, o in enumerate(q.get("options") or []):
             asset = o.get("asset") or {}

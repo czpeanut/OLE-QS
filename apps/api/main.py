@@ -177,8 +177,10 @@ def list_questions(
     if difficulty_max:
         stmt = stmt.where(Question.difficulty <= difficulty_max)
     if has_answer is not None:
-        stmt = (stmt.where(Question.answer.is_not(None)) if has_answer
-                else stmt.where(Question.answer.is_(None)))
+        # 用 answer_status 而非 answer 欄位：SQLAlchemy 的 JSON 欄位把 Python None
+        # 存成 JSON null 而不是 SQL NULL，is_(None) 因此永遠不成立。
+        stmt = (stmt.where(Question.answer_status != "missing") if has_answer
+                else stmt.where(Question.answer_status == "missing"))
     if chapter:
         stmt = stmt.where(Question.id.in_(
             select(Tag.question_id).where(Tag.axis == "textbook",
