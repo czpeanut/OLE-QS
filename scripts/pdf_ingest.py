@@ -49,13 +49,22 @@ TEXT_LAYER_MIN_CHARS = 120
 
 
 @dataclass
+class FigureInfo:
+    key: str
+    file: str
+    bbox: list[float]          # 頁面座標 (pt)
+    column: int                # 0=左欄 1=右欄，單欄頁一律 0
+
+
+@dataclass
 class PageInfo:
     page_no: int
     image: str
     width: int
     height: int
     char_count: int
-    image_count: int
+    columns: int
+    figures: list[FigureInfo] = field(default_factory=list)
 
 
 @dataclass
@@ -66,8 +75,66 @@ class DocInfo:
     route: str                      # 'digital' | 'scanned' | 'mixed' | 'error'
     digital_pages: int
     scanned_pages: int
+    figure_count: int = 0
     pages: list[PageInfo] = field(default_factory=list)
     error: str | None = None
+
+
+def detect_columns(page) -> tuple[int, float]:
+    """判斷頁面是單欄還是雙欄，回傳 (欄數, 分欄線 x 座標)。
+
+    作法：看文字區塊的左緣分布。雙欄版面的左緣會明顯聚成兩堆，
+    且右堆的起點大於頁寬中線。比訓練版面模型簡單得多，對考卷夠用。
+    """
+    mid = (page.rect.x0 + page.rect.x1) / 2
+    lefts = [b[0] for b in page.get_text("blocks") if (b[4] or "").strip()]
+    if len(lefts) < 6:
+        return 1, mid
+    right_side = [x for x in lefts if x > mid]
+    # 右半邊要有夠多的獨立區塊起點，才算真的有第二欄
+    return (2, mid) if len(right_side) >= max(3, len(lefts) * 0.2) else (1, mid)
+
+
+def extract_figures(page, out_dir: Path, page_no: int, dpi: int,
+                    mid: float, columns: int, pad: float = 2.0) -> list[FigureInfo]:
+    """把頁面上的圖形切出來。
+
+    關鍵：**渲染頁面區域**，不要抽出內嵌的影像物件（XObject）。理由有二 ——
+
+      1. 透明度：PDF 的圖幾乎都帶 SMask（軟遮罩）。直接抽 XObject 會丟掉遮罩，
+         原本透明的地方變成純黑，圖等於毀損。實測某份自然科考卷，
+         14 張圖裡有 2 張（燒杯圖、長條圖）整張變全黑，完全不可用。
+      2. 重複使用：同一個 XObject 可以在頁面上被放置多次（旋轉、翻轉）。
+         實測該卷某題的 4 個選項圖就是同一張圖擺 4 次 ——
+         照 xref 去抽只會得到 1 張，少掉 3 個選項。
+
+    改成從頁面渲染指定矩形，兩個問題同時消失，得到的就是讀者看到的樣子。
+    """
+    placements: list = []
+    for info in page.get_images(full=True):
+        placements.extend(page.get_image_rects(info[0]))
+
+    # 依閱讀順序排序：雙欄時先左欄由上而下，再右欄
+    def order(r):
+        col = 1 if (columns == 2 and r.x0 >= mid) else 0
+        return (col, round(r.y0, 1), round(r.x0, 1))
+
+    placements.sort(key=order)
+
+    figures: list[FigureInfo] = []
+    for i, r in enumerate(placements, start=1):
+        clip = fitz.Rect(r.x0 - pad, r.y0 - pad, r.x1 + pad, r.y1 + pad) & page.rect
+        if clip.is_empty:
+            continue
+        key = f"p{page_no}_f{i:02d}"
+        path = out_dir / f"{key}.png"
+        page.get_pixmap(dpi=dpi, clip=clip).save(path)
+        figures.append(FigureInfo(
+            key=key, file=str(path),
+            bbox=[round(v, 1) for v in (r.x0, r.y0, r.x1, r.y1)],
+            column=1 if (columns == 2 and r.x0 >= mid) else 0,
+        ))
+    return figures
 
 
 def render(pdf_path: Path, root: Path, out_root: Path, dpi: int,
@@ -88,11 +155,12 @@ def render(pdf_path: Path, root: Path, out_root: Path, dpi: int,
     info.page_count = doc.page_count
     text_layer: dict[str, list] = {}
 
+    fig_dir = out_dir / "figures"
     for i, page in enumerate(doc, start=1):
         img_path = out_dir / f"p{i:02d}.png"
         text = page.get_text("text")
         chars = len(text.strip())
-        n_images = len(page.get_images(full=True))
+        columns, mid = detect_columns(page)
 
         if not (skip_existing and img_path.exists()):
             pix = page.get_pixmap(dpi=dpi)
@@ -101,6 +169,12 @@ def render(pdf_path: Path, root: Path, out_root: Path, dpi: int,
         else:
             w = h = 0
 
+        figures = []
+        if page.get_images(full=True):
+            fig_dir.mkdir(parents=True, exist_ok=True)
+            figures = extract_figures(page, fig_dir, i, dpi, mid, columns)
+        info.figure_count += len(figures)
+
         if chars >= TEXT_LAYER_MIN_CHARS:
             info.digital_pages += 1
             # 保留座標，之後可用來對齊 VLM 的版面判讀
@@ -108,7 +182,7 @@ def render(pdf_path: Path, root: Path, out_root: Path, dpi: int,
         else:
             info.scanned_pages += 1
 
-        info.pages.append(PageInfo(i, str(img_path), w, h, chars, n_images))
+        info.pages.append(PageInfo(i, str(img_path), w, h, chars, columns, figures))
 
     doc.close()
 
@@ -157,7 +231,8 @@ def main() -> int:
                            error=traceback.format_exc(limit=1))
         docs.append(info)
         mark = {"digital": "文字", "scanned": "掃描", "mixed": "混合", "error": "失敗"}[info.route]
-        print(f"[{n:>3}/{len(pdfs)}] {mark}  {info.page_count:>2}頁  "
+        cols = "/".join(str(p.columns) for p in info.pages) or "-"
+        print(f"[{n:>3}/{len(pdfs)}] {mark}  {info.page_count:>2}頁  圖{info.figure_count:>3}  欄{cols}  "
               f"{pdf.relative_to(root)}" + (f"\n        ⚠ {info.error}" if info.error else ""))
 
     (args.out / "manifest.json").write_text(
@@ -170,8 +245,9 @@ def main() -> int:
         by_route[d.route] = by_route.get(d.route, 0) + 1
     total_pages = sum(d.page_count for d in docs)
 
+    total_figs = sum(d.figure_count for d in docs)
     print(f"\n{'=' * 56}")
-    print(f"總計 {len(docs)} 份、{total_pages} 頁")
+    print(f"總計 {len(docs)} 份、{total_pages} 頁、{total_figs} 張圖")
     for route, label in [("digital", "原生數位（有文字圖層，免 OCR）"),
                          ("scanned", "掃描影像（需走 VLM 擷取）"),
                          ("mixed", "混合（需逐頁判斷）"),

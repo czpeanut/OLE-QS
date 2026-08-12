@@ -1,0 +1,834 @@
+# 擷取 PoC #002 — 人工確認之標準答案（ground truth）
+#
+# 來源為「原生數位 PDF」，文字取自 PDF 文字圖層（無損），圖形由頁面區域渲染取出。
+# 與 PoC #001（數學卷，掃描截圖）的對照重點：
+#   - 題號慣例不同：本卷全卷連續 1~35，數學卷分大題各自從 1 重編
+#   - 版面不同：1~3 頁雙欄、第 4 頁單欄
+#   - 圖形密度高：17 張，且有「多題共用一圖」與「選項本身是圖」兩種結構
+
+document:
+  id: doc_113_dayeh_g7_sci_s1e1
+  title: 臺中市大業國中 113 學年度第 1 學期第 1 次定期評量七年級自然科題目卷
+  school: 臺中市大業國中
+  exam_name: 113 學年度第 1 學期第 1 次定期評量
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  grade: 7
+  subject: 自然
+  sub_subject: 生物              # 七上自然即生物；使用者稱「理化」，實為生物範圍
+  scope_note: null               # ⚠️ 本卷未印考試範圍（數學卷有印），分類無法靠範圍註記縮小候選
+  page_count: 4
+  total_score: 100
+  answer_key_available: false
+  numbering: continuous          # ⚠️ 全卷連續編號，與數學卷相反
+  layout:
+    columns_per_page: [2, 2, 2, 1]
+  sections:
+    - ord: 1
+      name: 一、填充題
+      type: fill
+      score_rule: '第 1~5 題，一題 2 分；第 6~13 題，一題 3 分'
+      per_item_score: null       # 同一大題內配分不一致，不可用單一值檢查
+      count: 13
+    - ord: 2
+      name: 二、選擇題
+      type: single
+      score_rule: '第 14~33 題，一題 3 分'
+      per_item_score: 3
+      count: 20
+    - ord: 3
+      name: 三、題組
+      type: single
+      score_rule: '第 34~35 題，一題 3 分'
+      per_item_score: 3
+      count: 2
+  score_check:
+    computed: 100                # 5*2 + 8*3 + 20*3 + 2*3
+    declared: 100
+    passed: true
+
+extraction_meta:
+  poc_id: poc-002
+  source_form: 原生數位 PDF（含文字圖層，620 KB，4 頁）
+  text_source: pdf_text_layer    # 非 OCR
+  figure_source: page_region_render   # 非 XObject 抽取，見下方 known_issues
+  figure_count: 17
+  known_issues:
+    - '文字圖層在中文與半形數字之間插入多餘空白（「113 學年度第1 學期」），需正規化'
+    - '攝氏度符號在文字圖層被編碼成半形片假名濁音符（「37 ﾟC」），需修正為 °C'
+    - '若改用抽取 XObject 的方式取圖，14 張中有 2 張（圖八、圖九）因 SMask 遺失而全黑'
+
+# 共用素材：多題共用的圖與表獨立定義，題目以 shared_asset 引用。
+# 這是本卷最重要的結構 —— 若逐題獨立擷取，題 1~13 會全部失去圖而無法作答。
+shared_assets:
+  - key: FIG_1
+    label: 圖(一)
+    kind: figure
+    file: p1_f01.png
+    page: 1
+    bbox: [51, 154, 330, 321]
+    alt: '顯微鏡 A（複式顯微鏡，構造標示 甲乙丙丁戊己庚辛壬癸）與顯微鏡 B（解剖顯微鏡，構造標示 a~f）'
+    used_by: [1, 2, 3, 4, 5]
+  - key: FIG_2
+    label: 圖(二)
+    kind: figure
+    file: p1_f03.png
+    page: 1
+    bbox: [59, 501, 323, 589]
+    alt: '四種不同細胞的顯微照片與示意圖，由左至右標示甲、乙、丙、丁'
+    used_by: [6, 7, 8, 9, 10]
+  - key: FIG_3
+    label: 圖(三)
+    kind: figure
+    file: p1_f04.png
+    page: 1
+    bbox: [99, 746, 307, 970]
+    alt: '五支試管甲~戊，管口上方標示內容物：水+澱粉／水+澱粉+鹽酸／澱粉酶+澱粉+水／澱粉酶+澱粉+鹽酸／澱粉酶+纖維素+水'
+    used_by: [11, 12, 13]
+
+questions:
+
+  # ───────── 一、填充題（1~5 每題 2 分；6~13 每題 3 分） ─────────
+
+  - id: q_sci_01
+    section: 1
+    number: 1
+    type: fill
+    page: 1
+    score: 2
+    difficulty: 1
+    shared_asset: FIG_1
+    group_stem: '圖(一)是顯微鏡 A、B 與相關構造，請根據圖(一)回答第 1~5 題：'
+    stem: 'A 是哪一種顯微鏡？（填中文）'
+    tags:
+      textbook: '自然/生物/第1冊/觀察工具與顯微鏡'
+      curriculum: 'Ma-IV-1'
+      concept: [複式顯微鏡, 解剖顯微鏡, 觀察工具]
+
+  - id: q_sci_02
+    section: 1
+    number: 2
+    type: fill
+    page: 1
+    score: 2
+    difficulty: 1
+    shared_asset: FIG_1
+    stem: 'B 是哪一種顯微鏡？（填中文）'
+    tags:
+      textbook: '自然/生物/第1冊/觀察工具與顯微鏡'
+      curriculum: 'Ma-IV-1'
+      concept: [解剖顯微鏡, 觀察工具]
+
+  - id: q_sci_03
+    section: 1
+    number: 3
+    type: fill
+    page: 1
+    score: 2
+    difficulty: 2
+    shared_asset: FIG_1
+    stem: '如果要觀察螞蟻的觸角，適合用哪一種顯微鏡？（填代號）'
+    tags:
+      textbook: '自然/生物/第1冊/觀察工具與顯微鏡'
+      curriculum: 'Ma-IV-1'
+      concept: [解剖顯微鏡, 觀察工具的選用]
+
+  - id: q_sci_04
+    section: 1
+    number: 4
+    type: fill
+    page: 1
+    score: 2
+    difficulty: 3
+    shared_asset: FIG_1
+    stem: '使用 A 顯微鏡的癸鏡頭觀察標本時，如果光線太亮，可以轉動哪一個構造調整？（填代號）'
+    tags:
+      textbook: '自然/生物/第1冊/觀察工具與顯微鏡'
+      curriculum: 'Ma-IV-1'
+      concept: [複式顯微鏡的操作, 光圈, 物鏡]
+    review_note: >-
+      「癸鏡頭」的「癸」不是錯字 —— 圖(一)中以天干（甲乙丙丁戊己庚辛壬癸）標示構造，
+      癸標示的是短物鏡。此題**必須有圖才能作答**，是共用圖結構的典型案例。
+
+  - id: q_sci_05
+    section: 1
+    number: 5
+    type: fill
+    page: 1
+    score: 2
+    difficulty: 3
+    shared_asset: FIG_1
+    stem: '使用 B 顯微鏡觀察標本時，如果視線模糊，可以調整哪兩個構造，使雙眼視野清晰？（填代號）'
+    answer_count: 2
+    tags:
+      textbook: '自然/生物/第1冊/觀察工具與顯微鏡'
+      curriculum: 'Ma-IV-1'
+      concept: [解剖顯微鏡的操作, 調焦]
+
+  - id: q_sci_06
+    section: 1
+    number: 6
+    type: fill
+    page: 1
+    score: 3
+    difficulty: 2
+    shared_asset: FIG_2
+    group_stem: '圖(二)是四種不同細胞，請根據代號甲~丁回答第 6~10 題'
+    stem: '請問哪兩個細胞具有細胞壁？（填代號）'
+    answer_count: 2
+    tags:
+      textbook: '自然/生物/第1冊/細胞的構造'
+      curriculum: 'Da-IV-1'
+      concept: [細胞壁, 動植物細胞的差異]
+
+  - id: q_sci_07
+    section: 1
+    number: 7
+    type: fill
+    page: 1
+    score: 3
+    difficulty: 3
+    shared_asset: FIG_2
+    stem: '請問哪三個細胞具有細胞核？（填代號）'
+    answer_count: 3
+    tags:
+      textbook: '自然/生物/第1冊/細胞的構造'
+      curriculum: 'Da-IV-1'
+      concept: [細胞核, 紅血球無細胞核]
+
+  - id: q_sci_08
+    section: 1
+    number: 8
+    type: fill
+    page: 1
+    score: 3
+    difficulty: 3
+    shared_asset: FIG_2
+    stem: '請問哪兩個細胞具有較小的液泡？（填代號）'
+    answer_count: 2
+    tags:
+      textbook: '自然/生物/第1冊/細胞的構造'
+      curriculum: 'Da-IV-1'
+      concept: [液泡, 動植物細胞的差異]
+
+  - id: q_sci_09
+    section: 1
+    number: 9
+    type: fill
+    page: 1
+    score: 3
+    difficulty: 3
+    shared_asset: FIG_2
+    stem: '請問哪兩個細胞具有保護內部構造的功能？（填代號）'
+    answer_count: 2
+    tags:
+      textbook: '自然/生物/第1冊/細胞的構造'
+      curriculum: 'Da-IV-1'
+      concept: [細胞壁, 細胞的功能]
+
+  - id: q_sci_10
+    section: 1
+    number: 10
+    type: fill
+    page: 1
+    score: 3
+    difficulty: 2
+    shared_asset: FIG_2
+    stem: '請問乙細胞可以運送什麼氣體？（填中文）'
+    tags:
+      textbook: '自然/生物/第1冊/細胞的構造'
+      curriculum: 'Da-IV-1'
+      concept: [紅血球, 氧氣的運送]
+
+  - id: q_sci_11
+    section: 1
+    number: 11
+    type: fill
+    page: 1
+    score: 3
+    difficulty: 3
+    shared_asset: FIG_3
+    group_stem: '小葉配置了五種不同的溶液且皆放在 37 °C 環境下一小時，如圖(三)。請根據甲~戊的代號回答第 11~13 題：'
+    stem: '請問利用本氏液檢測，哪一個會變色？（填代號）'
+    tags:
+      textbook: '自然/生物/第1冊/養分與酵素'
+      curriculum: 'Da-IV-2'
+      concept: [本氏液, 還原糖檢測, 酵素作用]
+
+  - id: q_sci_12
+    section: 1
+    number: 12
+    type: fill
+    page: 1
+    score: 3
+    difficulty: 4
+    shared_asset: FIG_3
+    stem: '小葉想證明「澱粉酶的受質是澱粉」，請問應該用哪兩個試管實驗？（填代號）'
+    answer_count: 2
+    tags:
+      textbook: '自然/生物/第1冊/養分與酵素'
+      curriculum: 'Da-IV-2, Mb-IV-1'
+      concept: [酵素的專一性, 受質, 對照實驗, 變因控制]
+
+  - id: q_sci_13
+    section: 1
+    number: 13
+    type: fill
+    page: 1
+    score: 3
+    difficulty: 4
+    shared_asset: FIG_3
+    stem: '小葉想證明「澱粉酶不適合酸性環境」，請問應該用哪兩個試管實驗？（填代號）'
+    answer_count: 2
+    tags:
+      textbook: '自然/生物/第1冊/養分與酵素'
+      curriculum: 'Da-IV-2, Mb-IV-1'
+      concept: [酵素與酸鹼值, 對照實驗, 變因控制]
+
+  # ───────── 二、選擇題（第 14~33 題，一題 3 分） ─────────
+
+  - id: q_sci_14
+    section: 2
+    number: 14
+    type: single
+    page: 1
+    score: 3
+    difficulty: 2
+    stem: '關於地球上生物的敘述，何者錯誤？'
+    options:
+      - {label: 'A', content: '熱帶雨林因雨量較沙漠地區多，所以生物種類較豐富'}
+      - {label: 'B', content: '生物與其生存的環境大約佔海平面上下共 20 公里'}
+      - {label: 'C', content: '海平面往上 15000 公尺的高空目前沒有發現生物生存'}
+      - {label: 'D', content: '翅膀像枯葉般的枯葉蝶，可以藉由展翅阻嚇天敵。'}
+    tags:
+      textbook: '自然/生物/第1冊/生物圈與生物多樣性'
+      curriculum: 'Lb-IV-1'
+      concept: [生物圈, 生物多樣性, 擬態]
+
+  - id: q_sci_15
+    section: 2
+    number: 15
+    type: single
+    page: 1
+    score: 3
+    difficulty: 3
+    stem: '關於細胞的相關敘述，下列何者正確？'
+    options:
+      - {label: 'A', content: '許旺、許來登與虎克共同發表細胞學說'}
+      - {label: 'B', content: '細胞是組成生物體的基本單位，因此一個細胞可以完成所有的生命現象'}
+      - {label: 'C', content: '虎克觀察了植物死細胞的細胞膜，並稱為細胞'}
+      - {label: 'D', content: '不同的細胞型態可能與其功能有關。'}
+    tags:
+      textbook: '自然/生物/第1冊/細胞學說'
+      curriculum: 'Da-IV-1'
+      concept: [細胞學說, 虎克, 許旺與許來登, 細胞的構造與功能]
+
+  - id: q_sci_16
+    section: 2
+    number: 16
+    type: single
+    page: 1
+    score: 3
+    difficulty: 3
+    stem: '小葉用複式顯微鏡觀察肌肉細胞如圖(四)的甲視野，為了看到如圖(四)的乙視野，請問應該調整什麼構造？'
+    assets:
+      - key: FIG_4
+        label: 圖(四)
+        kind: figure
+        file: p1_f02.png
+        bbox: [433, 475, 641, 575]
+        alt: '兩個視野比較，甲視野中肌肉細胞較小較多，乙視野中肌肉細胞較大較少'
+    options:
+      - {label: 'A', content: '旋轉盤'}
+      - {label: 'B', content: '粗調節輪'}
+      - {label: 'C', content: '目鏡'}
+      - {label: 'D', content: '光圈'}
+    tags:
+      textbook: '自然/生物/第1冊/觀察工具與顯微鏡'
+      curriculum: 'Ma-IV-1'
+      concept: [複式顯微鏡的操作, 放大倍率, 旋轉盤]
+
+  - id: q_sci_17
+    section: 2
+    number: 17
+    type: single
+    page: 1
+    score: 3
+    difficulty: 4
+    stem: >-
+      將某植物的細胞放進四種不同濃度的食鹽水中，濃度配置如表(一)。
+      已知其中三種濃度會使細胞膜與細胞壁分離，只有一種濃度會使細胞膨脹，
+      請判斷此細胞的細胞質濃度大約多少？
+    assets:
+      - key: TBL_1
+        label: 表(一)
+        kind: table
+        # 原卷此表是內嵌影像，但內容為規則表格 → 結構化保存，不以圖片形式儲存
+        source_file: p1_f05.png
+        markdown: |
+          | 溶液代號 | 溶液濃度 |
+          |:---:|:---:|
+          | 甲 | 2% |
+          | 乙 | 4% |
+          | 丙 | 6% |
+          | 丁 | 8% |
+    options:
+      - {label: 'A', content: '3%'}
+      - {label: 'B', content: '5%'}
+      - {label: 'C', content: '7%'}
+      - {label: 'D', content: '9%'}
+    tags:
+      textbook: '自然/生物/第1冊/物質進出細胞'
+      curriculum: 'Da-IV-3'
+      concept: [擴散作用, 滲透作用, 質壁分離, 濃度比較]
+
+  - id: q_sci_18
+    section: 2
+    number: 18
+    type: single
+    page: 2
+    score: 3
+    difficulty: 3
+    stem: >-
+      「小葉使用量筒裝取 100 毫升、20 °C 的水，並將 30 公克的白糖直接加入後，用玻棒攪拌。
+      為了溶解更多的糖，小葉將溶液倒進燒杯中加熱至 50 °C，以此增加溶解度。」
+      關於小葉做實驗的方式，下列敘述何者正確？
+    options:
+      - {label: 'A', content: '小葉不應該將白糖直接加入量筒中'}
+      - {label: 'B', content: '小葉可以利用溫度計測量燒杯溶液溫度並攪拌溶液'}
+      - {label: 'C', content: '小葉使用酒精燈即可均勻加熱水溶液'}
+      - {label: 'D', content: '小葉可將量筒放至酒精燈上加熱。'}
+    tags:
+      textbook: '自然/生物/第1冊/實驗器材與操作'
+      curriculum: 'Ma-IV-2'
+      concept: [量筒的使用, 加熱器材, 實驗安全]
+
+  - id: q_sci_19
+    section: 2
+    number: 19
+    type: single
+    page: 2
+    score: 3
+    difficulty: 3
+    stem: '小葉對甲、乙兩種食物進行醣類檢測，實驗結果如表(二)。請問根據表(二)，下列何項敘述錯誤？'
+    assets:
+      - key: TBL_2
+        label: 表(二)
+        kind: table
+        source_file: p2_f06.png
+        markdown: |
+          |  | 碘液 | 本氏液（隔水加熱後） |
+          |:---:|:---:|:---:|
+          | 食物甲 | 黃褐色 | 紅色 |
+          | 食物乙 | 藍黑色 | 綠色 |
+    options:
+      - {label: 'A', content: '食物乙的澱粉濃度較食物甲高'}
+      - {label: 'B', content: '食物甲的葡萄糖濃度較食物乙高'}
+      - {label: 'C', content: '食物甲可能是米飯'}
+      - {label: 'D', content: '食物乙含有澱粉也有葡萄糖。'}
+    tags:
+      textbook: '自然/生物/第1冊/養分與檢測'
+      curriculum: 'Da-IV-2'
+      concept: [碘液檢測澱粉, 本氏液檢測還原糖, 實驗結果判讀]
+
+  - id: q_sci_20
+    section: 2
+    number: 20
+    type: single
+    page: 2
+    score: 3
+    difficulty: 2
+    stem: '下列哪一個組成層次與草履蟲相同？'
+    options:
+      - {label: 'A', content: '公雞'}
+      - {label: 'B', content: '豌豆花'}
+      - {label: 'C', content: '皮膚'}
+      - {label: 'D', content: '小腸。'}
+    tags:
+      textbook: '自然/生物/第1冊/生物體的組成層次'
+      curriculum: 'Db-IV-1'
+      concept: [組成層次, 單細胞生物, 器官與個體]
+
+  - id: q_sci_21
+    section: 2
+    number: 21
+    type: single
+    page: 2
+    score: 3
+    difficulty: 3
+    stem: '圖(五)是物質進出細胞的示意圖，甲、乙代表進出細胞的物質，丙是特殊通道供物質進出。關於圖(五)下列敘述何者錯誤？'
+    assets:
+      - key: FIG_5
+        label: 圖(五)
+        kind: figure
+        file: p2_f08.png
+        bbox: [108, 617, 274, 750]
+        alt: '細胞膜的磷脂雙層示意圖，標示細胞外、細胞膜、細胞內；甲、乙為穿越細胞膜的物質箭頭，丙為膜上的通道蛋白'
+    options:
+      - {label: 'A', content: '甲、乙可能是同一種物質'}
+      - {label: 'B', content: '丙的成分主要是蛋白質'}
+      - {label: 'C', content: '不同物質需要不同的丙通道協助進出'}
+      - {label: 'D', content: '乙物質可能是礦物質。'}
+    tags:
+      textbook: '自然/生物/第1冊/物質進出細胞'
+      curriculum: 'Da-IV-3'
+      concept: [細胞膜的構造, 通道蛋白, 物質進出細胞]
+
+  - id: q_sci_22
+    section: 2
+    number: 22
+    type: single
+    page: 2
+    score: 3
+    difficulty: 3
+    stem: >-
+      「『甲胞器』在每個細胞的數量都不太一樣，大多數細胞有大約 300 個～1000 個『甲胞器』。
+      但在需要大量能量的細胞，例如肝臟和心臟中，每個細胞約有 2,000 個～5,000 個『甲胞器』。」
+      根據以上敘述，請問「甲胞器」是指什麼構造？
+    options:
+      - {label: 'A', content: '粒線體'}
+      - {label: 'B', content: '葉綠體'}
+      - {label: 'C', content: '液泡'}
+      - {label: 'D', content: '細胞核'}
+    tags:
+      textbook: '自然/生物/第1冊/細胞的構造'
+      curriculum: 'Da-IV-1'
+      concept: [粒線體, 胞器的功能, 能量代謝]
+    uncertain_spans:
+      - >-
+        原卷第四個選項的標籤印成 (C)，與第三個選項重複（實際印為「(C)液泡  (C)細胞核」）。
+        依序推斷應為 (D)，此處已更正為 (D) 並記錄於此。
+        ⚠️ 這是唯一一處對原卷做的更動，因為保留重複標籤會使題目無法作答。
+
+  - id: q_sci_23
+    section: 2
+    number: 23
+    type: single
+    page: 2
+    score: 3
+    difficulty: 4
+    stem: '小葉利用解剖顯微鏡觀察到如圖(六)的畫面。在不改變倍率情況下，改成複式顯微鏡觀察，請問視野會是什麼畫面？'
+    assets:
+      - key: FIG_6
+        label: 圖(六)
+        kind: figure
+        file: p2_f01.png
+        bbox: [511, 94, 564, 171]
+        alt: '圓形視野中有一個尖端朝下的黑色三角形，左上有太陽形圖案，右側有閃電形圖案'
+    options:
+      # ⚠️ 本題選項本身即為圖形，沒有任何文字內容。
+      # 這四張圖在 PDF 中是同一個影像物件旋轉/翻轉後放置四次。
+      - {label: 'A', content: '', asset: {kind: figure, file: p2_f02.png}}
+      - {label: 'B', content: '', asset: {kind: figure, file: p2_f03.png}}
+      - {label: 'C', content: '', asset: {kind: figure, file: p2_f04.png}}
+      - {label: 'D', content: '', asset: {kind: figure, file: p2_f05.png}}
+    tags:
+      textbook: '自然/生物/第1冊/觀察工具與顯微鏡'
+      curriculum: 'Ma-IV-1'
+      concept: [複式顯微鏡的倒立影像, 解剖顯微鏡的正立影像, 視野判讀]
+    review_note: >-
+      **選項即圖形**的典型案例。若擷取時只取文字，本題四個選項會全部變成空字串，
+      題目形同報廢，且純文字的結構檢查不會察覺。驗證器已加入「選項需有文字或圖片」的檢查。
+
+  - id: q_sci_24
+    section: 2
+    number: 24
+    type: single
+    page: 2
+    score: 3
+    difficulty: 2
+    stem: '下列何者屬於生命現象？'
+    options:
+      - {label: 'A', content: '岩洞中有石筍生成'}
+      - {label: 'B', content: '鹽巴溶解於水中'}
+      - {label: 'C', content: '黴菌的孢子萌發'}
+      - {label: 'D', content: '擴散作用。'}
+    tags:
+      textbook: '自然/生物/第1冊/生命現象'
+      curriculum: 'Da-IV-1'
+      concept: [生命現象, 生殖, 生物與非生物]
+
+  - id: q_sci_25
+    section: 2
+    number: 25
+    type: single
+    page: 2
+    score: 3
+    difficulty: 3
+    stem: '圖(七)是細胞構造的示意圖，關於圖(七)的敘述何者正確？'
+    assets:
+      - key: FIG_7
+        label: 圖(七)
+        kind: figure
+        file: p2_f07.png
+        bbox: [390, 437, 684, 544]
+        alt: '左為動物細胞、右為植物細胞的立體示意圖，標示甲、乙、丙、丁、戊、己、庚等構造'
+    options:
+      - {label: 'A', content: '甲構造可使用本氏液染色'}
+      - {label: 'B', content: '己構造的主要成分是醣類'}
+      - {label: 'C', content: '有些生物的細胞沒有丁構造'}
+      - {label: 'D', content: '庚構造可以產生能量。'}
+    tags:
+      textbook: '自然/生物/第1冊/細胞的構造'
+      curriculum: 'Da-IV-1'
+      concept: [動植物細胞的比較, 胞器的功能, 細胞壁]
+
+  - id: q_sci_26
+    section: 2
+    number: 26
+    type: single
+    page: 2
+    score: 3
+    difficulty: 4
+    stem: >-
+      「市面上販賣的吉利丁粉是以動物皮、骨頭內的蛋白質製成，可用來製作果凍食品、化粧品的凝膠劑等。
+      但如果搭配新鮮水果，例如：鳳梨、木瓜，就無法順利凝結。主要原因是因為這些水果中有酵素，
+      會分解吉利丁粉的主要成分，使凝結作用失效。但改成煮過的罐頭鳳梨，即可做出鳳梨口味的果凍。」
+      關於以上的敘述，下列何者錯誤？
+    options:
+      - {label: 'A', content: '與新鮮水果酵素起反應的受質是蛋白質'}
+      - {label: 'B', content: '木瓜酵素的主要成分是蛋白質'}
+      - {label: 'C', content: '因罐頭鳳梨經過高溫處理，其中的酵素已被溫度破壞'}
+      - {label: 'D', content: '使用新鮮鳳梨酵素醃肉品時，效果較罐頭鳳梨差。'}
+    tags:
+      textbook: '自然/生物/第1冊/養分與酵素'
+      curriculum: 'Da-IV-2'
+      concept: [酵素的專一性, 受質, 溫度對酵素的影響, 生活情境應用]
+
+  - id: q_sci_27
+    section: 2
+    number: 27
+    type: single
+    page: 2
+    score: 3
+    difficulty: 4
+    stem: >-
+      小葉是一位左撇子的學生，利用複式顯微鏡觀察草履蟲，已知在視野中看到草履蟲在左上方。
+      如果小葉希望看到放大的草履蟲，請問下列哪一個步驟錯誤？
+    options:
+      - {label: 'A', content: '將玻片往左上方移動後，再轉動旋轉盤'}
+      - {label: 'B', content: '旋轉盤轉到較短的物鏡，並調整成較大的光圈'}
+      - {label: 'C', content: '如視線模糊，可轉動細調節輪'}
+      - {label: 'D', content: '使用右眼觀察視野畫面，左眼睜開寫實驗記錄。'}
+    tags:
+      textbook: '自然/生物/第1冊/觀察工具與顯微鏡'
+      curriculum: 'Ma-IV-1'
+      concept: [複式顯微鏡的操作, 倒立影像與移動方向, 物鏡的選擇]
+
+  - id: q_sci_28
+    section: 2
+    number: 28
+    type: single
+    page: 3
+    score: 3
+    difficulty: 4
+    stem: >-
+      小葉製作出一種半透膜，此構造如同細胞膜，可讓某些物質流通。小葉在一個小燒杯上覆蓋此半透膜，
+      將小燒杯放進大燒杯中，如圖(八)。已知小燒杯裝有 10% 的澱粉液，大燒杯裝有 10% 的葡萄糖液，
+      請問 1 小時後進行檢測，下列相關敘述，何者正確？
+    assets:
+      - key: FIG_8
+        label: 圖(八)
+        kind: figure
+        file: p3_f01.png
+        bbox: [32, 145, 349, 308]
+        alt: '大燒杯內裝 10% 葡萄糖液（以圓點表示），內置一覆蓋半透膜的小燒杯，內裝 10% 澱粉液（以斜線表示），右上角有圖例'
+    options:
+      - {label: 'A', content: '用本氏液檢測，大燒杯中的溶液可能呈藍色'}
+      - {label: 'B', content: '用本氏液檢測，小燒杯中的溶液可能呈黃色'}
+      - {label: 'C', content: '水分子無法穿過半透膜'}
+      - {label: 'D', content: '1 小時後，兩個燒杯都有澱粉。'}
+    tags:
+      textbook: '自然/生物/第1冊/物質進出細胞'
+      curriculum: 'Da-IV-3'
+      concept: [擴散作用, 半透膜的選擇性, 分子大小, 本氏液檢測]
+    review_note: '此圖若以抽取 XObject 方式處理會整張變黑（SMask 遺失），必須由頁面區域渲染'
+
+  - id: q_sci_29
+    section: 2
+    number: 29
+    type: single
+    page: 3
+    score: 3
+    difficulty: 5
+    stem: |-
+      小葉想證實甲飼料與乙飼料是否可增加乳牛分泌乳汁的產量。他設計了三組實驗，每組皆有 10 頭乳牛，
+      在相同時間分別吃不一樣的飼料。每天擠乳 2 次，連續 20 天後將結果利用公式作分析。分析結果如圖(九)，公式：
+
+      $\frac{\text{該組飼料飼養的乳牛分泌的平均乳汁量}}{\text{一般飼料飼養的乳牛分泌的平均乳汁量}} \times 100\%$
+
+      關於小葉的實驗，何者敘述正確？
+    assets:
+      - key: FIG_9
+        label: 圖(九)
+        kind: chart
+        file: p3_f04.png
+        bbox: [72, 554, 310, 737]
+        alt: '長條圖，橫軸為一般飼料、甲飼料、乙飼料，縱軸為百分比(%)；一般飼料約 100%，甲飼料約 400%，乙飼料約 100%'
+    options:
+      - {label: 'A', content: '一般飼料的組別可作為實驗組'}
+      - {label: 'B', content: '食用乙飼料的乳牛無法分泌乳汁'}
+      - {label: 'C', content: '無法得知同時食用甲、乙飼料的乳汁產量'}
+      - {label: 'D', content: '飼養乳牛的環境條件為操作變因。'}
+    tags:
+      textbook: '自然/生物/第1冊/科學方法與實驗設計'
+      curriculum: 'Mb-IV-1'
+      concept: [對照組與實驗組, 操作變因, 控制變因, 圖表判讀]
+    review_note: >-
+      題幹含一個**分子分母都是中文長句的分數式**，需以 $\frac{\text{...}}{\text{...}}$ 表示。
+      純文字擷取會把它壓成一行而失去分數結構。同時圖(九)是長條圖（kind: chart），
+      若無法正確取出，選項完全無法判斷。
+
+  - id: q_sci_30
+    section: 2
+    number: 30
+    type: single
+    page: 3
+    score: 3
+    difficulty: 2
+    stem: >-
+      在航海時代，因船員、船長在海上漂流的時間過長，導致當時的船醫發現一種怪病，俗稱水手病。
+      病人呈現皮下和牙齦出血的症狀，後來因吃了某種食物而逐漸痊癒。此種食物可能是？
+    options:
+      - {label: 'A', content: '米飯'}
+      - {label: 'B', content: '雞肉'}
+      - {label: 'C', content: '檸檬'}
+      - {label: 'D', content: '堅果'}
+    tags:
+      textbook: '自然/生物/第1冊/養分'
+      curriculum: 'Da-IV-2'
+      concept: [維生素C, 壞血病, 營養素的功能]
+
+  - id: q_sci_31
+    section: 2
+    number: 31
+    type: single
+    page: 3
+    score: 3
+    difficulty: 3
+    stem: >-
+      「近期在南極外海發現新品種的海百合，外型與植物相似，但其實與海星、海膽一樣，同屬於棘皮動物。
+      在古代它們的數量和種類都相當多，曾在海洋中繁盛一時，後來多數種類逐漸因環境改變而消失。」
+      關於以上的敘述，何者正確？
+    options:
+      - {label: 'A', content: '海百合的細胞可觀察到大液泡'}
+      - {label: 'B', content: '海百合的組成層次缺乏器官系統'}
+      - {label: 'C', content: '地球上的生物種類都保持不變'}
+      - {label: 'D', content: '海百合的細胞觀察不到細胞壁。'}
+    tags:
+      textbook: '自然/生物/第1冊/細胞的構造；生物多樣性'
+      curriculum: 'Da-IV-1, Lb-IV-1'
+      concept: [動物細胞的特徵, 組成層次, 生物多樣性的變化]
+
+  - id: q_sci_32
+    section: 2
+    number: 32
+    type: single
+    page: 3
+    score: 3
+    difficulty: 3
+    stem: '圖(十)是複式顯微鏡的物鏡鏡頭。當觀察相同標本時，如不改變目鏡鏡頭，下列哪一個物鏡鏡頭觀察到的細胞數最多？'
+    assets:
+      - key: FIG_10
+        label: 圖(十)
+        kind: figure
+        file: p3_f02.png
+        bbox: [458, 284, 616, 399]
+        alt: '三個物鏡鏡頭甲、乙、丙並列，長度由短到長依序為甲、乙、丙'
+    options:
+      - {label: 'A', content: '甲'}
+      - {label: 'B', content: '乙'}
+      - {label: 'C', content: '丙'}
+      - {label: 'D', content: '一樣多'}
+    tags:
+      textbook: '自然/生物/第1冊/觀察工具與顯微鏡'
+      curriculum: 'Ma-IV-1'
+      concept: [物鏡長度與放大倍率, 視野範圍與倍率的關係]
+
+  - id: q_sci_33
+    section: 2
+    number: 33
+    type: single
+    page: 3
+    score: 3
+    difficulty: 4
+    stem: '圖(十一)是某代謝反應的示意圖，根據圖(十一)，下列敘述何者正確？'
+    assets:
+      - key: FIG_11
+        label: 圖(十一)
+        kind: figure
+        file: p3_f03.png
+        bbox: [393, 540, 681, 672]
+        alt: '示意圖：方形的甲與扇形缺口的乙結合成複合物，再分解產生丙、丁兩個小片段，乙維持原形'
+    options:
+      - {label: 'A', content: '此反應是合成反應'}
+      - {label: 'B', content: '甲的成分一定是蛋白質'}
+      - {label: 'C', content: '乙的活性受溫度影響'}
+      - {label: 'D', content: '丙、丁是受質'}
+    tags:
+      textbook: '自然/生物/第1冊/養分與酵素'
+      curriculum: 'Da-IV-2'
+      concept: [酵素與受質, 分解反應, 酵素的專一性, 溫度對酵素的影響]
+
+  # ───────── 三、題組（第 34~35 題，一題 3 分） ─────────
+  # 本大題有共用的閱讀短文，兩題共用。與第 1~13 題的「共用圖」是同一種結構。
+
+  - id: q_sci_34
+    section: 3
+    number: 34
+    type: single
+    page: 4
+    score: 3
+    difficulty: 3
+    shared_asset: PASSAGE_1
+    stem: '關於以上文章內容，下列何者正確？'
+    options:
+      - {label: 'A', content: '如果患有腎臟疾病的患者，需注意脂質的食用'}
+      - {label: 'B', content: '食用紅肉除了可以獲得動物性蛋白，得到的脂質量也比食用海鮮較低'}
+      - {label: 'C', content: '如果需要補充蛋白質養分，「蛋」是最佳的來源'}
+      - {label: 'D', content: '食用精緻澱粉，因含有較多的糖跟油，有助於營養均衡。'}
+    tags:
+      textbook: '自然/生物/第1冊/養分與均衡飲食'
+      curriculum: 'Da-IV-2'
+      concept: [三大營養素, 均衡飲食, 閱讀理解]
+
+  - id: q_sci_35
+    section: 3
+    number: 35
+    type: single
+    page: 4
+    score: 3
+    difficulty: 4
+    shared_asset: PASSAGE_1
+    stem: '小葉決定按照醫學建議控管自己飲食的熱量，請問下列哪一個選項的熱量搭配最適當（大卡是熱量單位）？'
+    options:
+      - {label: 'A', content: '碳水化合物 250 大卡、脂質 50 大卡、蛋白質 200 大卡'}
+      - {label: 'B', content: '碳水化合物 300 大卡、脂質 125 大卡、蛋白質 75 大卡。'}
+      - {label: 'C', content: '碳水化合物 450 大卡、脂質 150 大卡、蛋白質 400 大卡'}
+      - {label: 'D', content: '碳水化合物 500 大卡、脂質 200 大卡、蛋白質 300 大卡'}
+    tags:
+      textbook: '自然/生物/第1冊/養分與均衡飲食'
+      curriculum: 'Da-IV-2'
+      concept: [均衡飲食比例, 百分比計算, 資料應用]
+
+# 題組 34~35 的共用閱讀短文
+passages:
+  - key: PASSAGE_1
+    page: 4
+    used_by: [34, 35]
+    text: |-
+      飲食均衡是維持健康的重要原則，目前醫學建議每天的飲食熱量來源以碳水化合物為主，佔 50% 到 60%；
+      脂質佔 20% 到 30%；蛋白質佔 10% 到 20%。以下提供幾個重點：
+
+      　　碳水化合物的部分，可以多選擇未精製的全穀雜糧。精緻的穀類或加工後的製品往往會添加過多的油和糖，
+      比較不建議。未精製的全穀雜糧，像是糙米、麥片，不僅含有膳食纖維素可以幫助消化，
+      還有含有豐富的維生素 B 群、維生素 E 和礦物質，都是大家容易缺乏的營養素。
+
+      　　脂質方面，我們可以盡量選擇屬於不飽和脂肪酸的植物油，像是橄欖油、花生油、芥花油、苦茶油等，
+      也可從堅果種子等補充脂質。
+
+      　　蛋白質品質最佳的來源是蛋，而且蛋裡面還有豐富的維生素 A、維生素 B1、和維生素 B2，
+      以及鐵與磷等礦物質，所以吃蛋的 CP 值很高。海鮮等水產提供的是動物性蛋白質，脂質量平均來說比肉類來得低，
+      比紅肉來的理想。至於吃素的人就得多靠黃豆和黃豆製品來提供植物性蛋白質了。
+      需注意：如果有腎臟病要與醫師或營養師了解適當的蛋白質攝取量，避免造成腎臟的負擔。

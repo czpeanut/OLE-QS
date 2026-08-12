@@ -67,21 +67,51 @@ def check(doc: dict) -> list[tuple[str, str]]:
             if bad:
                 warn(f"{name}：每題應為 {per} 分，下列題目配分不符 {bad}")
 
-    # ── 3. 題號連續性（分大題各自從 1 開始） ────────────────────────
-    # 注意：台灣段考卷的題號在每個大題會重新編號，不能用全卷流水號檢查。
-    for sec_ord in sorted(by_section):
-        nums = [q.get("number") for q in questions if q.get("section") == sec_ord]
-        nums = [n for n in nums if isinstance(n, int)]
-        expected = list(range(1, len(nums) + 1))
-        if sorted(nums) != expected:
-            missing = set(expected) - set(nums)
-            dupes = [n for n, c in Counter(nums).items() if c > 1]
-            detail = []
-            if missing:
-                detail.append(f"缺 {sorted(missing)}")
-            if dupes:
-                detail.append(f"重複 {sorted(dupes)}")
-            err(f"第 {sec_ord} 大題題號不連續：{'；'.join(detail) or nums}")
+    # ── 3. 題號連續性 ───────────────────────────────────────────
+    # 編號慣例因卷而異，實測兩種都存在，必須自動判斷，寫死任何一種都會整卷誤報：
+    #   per_section — 每個大題重新從 1 編號（例：數學卷 1..10 / 1..15 / 1..4）
+    #   continuous  — 全卷連續編號（例：自然科卷 填充1-13 / 選擇14-33 / 題組34-35）
+    all_nums = [q.get("number") for q in questions if isinstance(q.get("number"), int)]
+    scheme = meta.get("numbering")
+    if scheme not in {"per_section", "continuous"}:
+        # 每個大題都從 1 開始 → per_section；否則視為全卷連續
+        starts = [min(n for n in (q.get("number") for q in questions
+                                  if q.get("section") == s and isinstance(q.get("number"), int)))
+                  for s in sorted(by_section)
+                  if any(isinstance(q.get("number"), int) and q.get("section") == s
+                         for q in questions)]
+        scheme = "per_section" if starts and all(s == 1 for s in starts) else "continuous"
+
+    def report_gaps(nums: list[int], expected: list[int], label: str) -> None:
+        if sorted(nums) == expected:
+            return
+        missing = set(expected) - set(nums)
+        dupes = [n for n, c in Counter(nums).items() if c > 1]
+        extra = set(nums) - set(expected)
+        detail = []
+        if missing:
+            detail.append(f"缺 {sorted(missing)}")
+        if dupes:
+            detail.append(f"重複 {sorted(dupes)}")
+        if extra:
+            detail.append(f"多出 {sorted(extra)}")
+        err(f"{label}題號不連續：{'；'.join(detail) or nums}")
+
+    if scheme == "per_section":
+        for sec_ord in sorted(by_section):
+            nums = [q["number"] for q in questions
+                    if q.get("section") == sec_ord and isinstance(q.get("number"), int)]
+            report_gaps(nums, list(range(1, len(nums) + 1)), f"第 {sec_ord} 大題")
+    else:
+        report_gaps(all_nums, list(range(1, len(all_nums) + 1)), "全卷")
+        # 全卷連續時，各大題的題號範圍不可交錯
+        prev_max = 0
+        for sec_ord in sorted(by_section):
+            nums = [q["number"] for q in questions
+                    if q.get("section") == sec_ord and isinstance(q.get("number"), int)]
+            if nums and min(nums) <= prev_max:
+                err(f"第 {sec_ord} 大題題號範圍與前一大題重疊（{min(nums)} ≤ {prev_max}）")
+            prev_max = max(nums or [prev_max])
 
     # ── 4. 題目本身的完整性 ──────────────────────────────────────
     seen_ids: set[str] = set()
@@ -110,8 +140,9 @@ def check(doc: dict) -> list[tuple[str, str]]:
         if len(set(labels)) != len(labels):
             err(f"{qid}：選項標籤重複 {labels}")
         for o in opts:
-            if not (o.get("content") or "").strip():
-                err(f"{qid} 選項 {o.get('label')}：內容為空")
+            # 選項不一定是文字 —— 實測自然科卷有整組「選項就是圖」的題目
+            if not (o.get("content") or "").strip() and not o.get("asset"):
+                err(f"{qid} 選項 {o.get('label')}：既無文字內容也無圖片")
 
         # 題組必須有子題
         if qtype == "group" and not q.get("children"):
@@ -128,9 +159,10 @@ def check(doc: dict) -> list[tuple[str, str]]:
             if key and not (q.get("assets")):
                 err(f"{qid}：資產 {key} 未定義")
         for a in q.get("assets", []):
-            if a.get("kind") == "figure" and not (a.get("url") or a.get("must_crop")):
+            has_file = a.get("file") or a.get("url") or a.get("must_crop")
+            if a.get("kind") in {"figure", "chart"} and not has_file:
                 warn(f"{qid} 資產 {a.get('key')}：圖形資產尚未產生檔案")
-            if a.get("kind") == "table" and not (a.get("markdown") or a.get("url")):
+            if a.get("kind") == "table" and not (a.get("markdown") or has_file):
                 err(f"{qid} 資產 {a.get('key')}：表格既無結構化內容也無圖檔")
 
         # LaTeX 錢字號需成對
@@ -139,7 +171,24 @@ def check(doc: dict) -> list[tuple[str, str]]:
             if text.count("$") % 2 != 0:
                 err(f"{qid} {field}：LaTeX 的 $ 數量為奇數，公式未閉合")
 
-    # ── 5. 答案掛載 ─────────────────────────────────────────────
+    # ── 5. 共用素材（多題共用的圖或閱讀短文） ────────────────────
+    # 實測自然科卷：題 1~13 共用三張圖、題 34~35 共用一篇短文。
+    # 若共用素材遺失，這些題目全部無法作答，但逐題檢查看不出異常。
+    shared = {a.get("key"): a for a in doc.get("shared_assets", [])}
+    shared.update({p.get("key"): p for p in doc.get("passages", [])})
+    for q in questions:
+        ref = q.get("shared_asset")
+        if ref and ref not in shared:
+            err(f"{q.get('id')}：引用了不存在的共用素材 {ref}")
+    for key, a in shared.items():
+        users = [q.get("number") for q in questions if q.get("shared_asset") == key]
+        if not users:
+            warn(f"共用素材 {key}：沒有任何題目引用")
+        declared = a.get("used_by")
+        if declared and sorted(declared) != sorted(n for n in users if n is not None):
+            err(f"共用素材 {key}：宣告由 {declared} 使用，實際引用的是 {sorted(users)}")
+
+    # ── 6. 答案掛載 ─────────────────────────────────────────────
     if meta.get("answer_key_available"):
         no_answer = [q["id"] for q in questions
                      if q.get("type") != "group" and not q.get("answer")]
