@@ -47,6 +47,12 @@ except ImportError:  # PyMuPDF < 1.24 只有舊的 fitz 名稱
 # 掃描 PDF 有時會夾帶頁碼或浮水印的少量文字，用門檻擋掉。
 TEXT_LAYER_MIN_CHARS = 120
 
+# 墨水覆蓋率低於此值視為空白頁。
+# 空白頁與掃描頁的文字量都是 0，但意義完全相反 ——
+# 誤判成掃描頁會把空白頁送進 VLM 白花錢，還會讓整份文件被歸類成「混合」。
+# 實測 23 頁真實考卷：空白頁 0.00%，最稀疏的內容頁（純答案表）2.51%，分界很寬。
+BLANK_MAX_INK = 0.005
+
 
 @dataclass
 class FigureInfo:
@@ -64,6 +70,8 @@ class PageInfo:
     height: int
     char_count: int
     columns: int
+    ink: float                 # 墨水覆蓋率 0~1
+    blank: bool
     figures: list[FigureInfo] = field(default_factory=list)
 
 
@@ -75,9 +83,19 @@ class DocInfo:
     route: str                      # 'digital' | 'scanned' | 'mixed' | 'error'
     digital_pages: int
     scanned_pages: int
+    blank_pages: int = 0
     figure_count: int = 0
     pages: list[PageInfo] = field(default_factory=list)
     error: str | None = None
+
+
+def ink_ratio(page) -> float:
+    """量測頁面的墨水覆蓋率。用低解析度灰階即可，成本可忽略。"""
+    pix = page.get_pixmap(dpi=50, colorspace=fitz.csGRAY)
+    data = pix.samples
+    if not data:
+        return 0.0
+    return sum(1 for b in data if b < 200) / len(data)
 
 
 def detect_columns(page) -> tuple[int, float]:
@@ -161,6 +179,8 @@ def render(pdf_path: Path, root: Path, out_root: Path, dpi: int,
         text = page.get_text("text")
         chars = len(text.strip())
         columns, mid = detect_columns(page)
+        ink = ink_ratio(page)
+        blank = chars == 0 and ink < BLANK_MAX_INK and not page.get_images(full=True)
 
         if not (skip_existing and img_path.exists()):
             pix = page.get_pixmap(dpi=dpi)
@@ -170,19 +190,23 @@ def render(pdf_path: Path, root: Path, out_root: Path, dpi: int,
             w = h = 0
 
         figures = []
-        if page.get_images(full=True):
+        if not blank and page.get_images(full=True):
             fig_dir.mkdir(parents=True, exist_ok=True)
             figures = extract_figures(page, fig_dir, i, dpi, mid, columns)
         info.figure_count += len(figures)
 
-        if chars >= TEXT_LAYER_MIN_CHARS:
+        # 空白頁不參與路線判斷 —— 它既不是「需要 OCR」也不是「有文字」
+        if blank:
+            info.blank_pages += 1
+        elif chars >= TEXT_LAYER_MIN_CHARS:
             info.digital_pages += 1
             # 保留座標，之後可用來對齊 VLM 的版面判讀
             text_layer[str(i)] = page.get_text("blocks")
         else:
             info.scanned_pages += 1
 
-        info.pages.append(PageInfo(i, str(img_path), w, h, chars, columns, figures))
+        info.pages.append(PageInfo(i, str(img_path), w, h, chars, columns,
+                                   round(ink, 4), blank, figures))
 
     doc.close()
 
@@ -231,7 +255,7 @@ def main() -> int:
                            error=traceback.format_exc(limit=1))
         docs.append(info)
         mark = {"digital": "文字", "scanned": "掃描", "mixed": "混合", "error": "失敗"}[info.route]
-        cols = "/".join(str(p.columns) for p in info.pages) or "-"
+        cols = "/".join(("空" if p.blank else str(p.columns)) for p in info.pages) or "-"
         print(f"[{n:>3}/{len(pdfs)}] {mark}  {info.page_count:>2}頁  圖{info.figure_count:>3}  欄{cols}  "
               f"{pdf.relative_to(root)}" + (f"\n        ⚠ {info.error}" if info.error else ""))
 
@@ -246,8 +270,10 @@ def main() -> int:
     total_pages = sum(d.page_count for d in docs)
 
     total_figs = sum(d.figure_count for d in docs)
+    total_blank = sum(d.blank_pages for d in docs)
     print(f"\n{'=' * 56}")
-    print(f"總計 {len(docs)} 份、{total_pages} 頁、{total_figs} 張圖")
+    print(f"總計 {len(docs)} 份、{total_pages} 頁、{total_figs} 張圖"
+          + (f"（含 {total_blank} 頁空白，已排除）" if total_blank else ""))
     for route, label in [("digital", "原生數位（有文字圖層，免 OCR）"),
                          ("scanned", "掃描影像（需走 VLM 擷取）"),
                          ("mixed", "混合（需逐頁判斷）"),
