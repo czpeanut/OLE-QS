@@ -148,6 +148,7 @@ def list_questions(
     difficulty_max: int | None = None,
     has_answer: bool | None = None,
     has_figure: bool | None = None,
+    include_rejected: bool = Query(False, description="含被品管剔除的題目"),
     limit: int = Query(50, le=200),
     offset: int = 0,
     session: Session = Depends(db),
@@ -160,6 +161,9 @@ def list_questions(
                      selectinload(Question.sources),
                      selectinload(Question.document).selectinload(Document.assets)))
 
+    # 被品管閘門剔除的題目預設不出現在檢索與組卷
+    if not include_rejected:
+        stmt = stmt.where(Question.status != "rejected")
     if subject:
         stmt = stmt.where(Document.subject == subject)
     if grade:

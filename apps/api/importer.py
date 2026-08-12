@@ -18,6 +18,7 @@ from sqlalchemy import delete
 from sqlalchemy.orm import Session
 
 from .db import get_session, init_db, reindex_question
+from .quality import evaluate, summarize
 from .models import (Asset, AssetKind, AnswerStatus, Document, Option,
                      Question, QuestionSource, QuestionType, ReviewStatus,
                      Section, Tag, split_school)
@@ -99,9 +100,12 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
     session.flush()
 
     n = 0
+    verdicts: list[tuple[bool, list[str]]] = []
     for q in doc.get("questions") or []:
         qid = q["id"]
         answer = q.get("answer")
+        keep, reasons = evaluate(q, doc)
+        verdicts.append((keep, reasons))
         question = Question(
             id=qid, document_id=doc_id,
             section_ord=q.get("section", 1), number=q["number"],
@@ -114,8 +118,10 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
             difficulty=q.get("difficulty"), score=q.get("score"), page=q.get("page"),
             answer_count=q.get("answer_count"),
             shared_asset_key=q.get("shared_asset"),
-            status=ReviewStatus.reviewed,      # 黃金樣本已人工確認
-            review_note=q.get("review_note"),
+            # 品管閘門：有疑慮的題目標為 rejected，不進檢索與組卷，
+            # 但仍寫入資料庫，剔除率與原因是管線健康度的指標。
+            status=(ReviewStatus.reviewed if keep else ReviewStatus.rejected),
+            review_note="；".join(reasons) if reasons else q.get("review_note"),
             uncertain_spans=q.get("uncertain_spans"),
         )
         session.add(question)
@@ -170,10 +176,12 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
                 session.add(Tag(question_id=qid, axis="concept", value=v,
                                 labeled_by="human"))
 
-        reindex_question(session, qid, searchable_body(q))
+        if keep:
+            reindex_question(session, qid, searchable_body(q))
         n += 1
 
-    return f"{doc_id}：{n} 題"
+    stats = summarize(verdicts)
+    return stats
 
 
 def main(argv: list[str]) -> int:
@@ -187,16 +195,29 @@ def main(argv: list[str]) -> int:
         return 2
 
     init_db()
+    totals: list[dict] = []
     with get_session() as session:
         for path in paths:
             try:
-                msg = import_document(session, load_file(path), str(path))
-                print(f"  ✅ {path.name}  →  {msg}")
+                st = import_document(session, load_file(path), str(path))
+                totals.append(st)
+                print(f"  ✅ {path.name}  →  收錄 {st['kept']}/{st['total']} 題"
+                      f"（{st['keep_rate']:.0%}）")
+                for reason, cnt in st["reasons"].items():
+                    print(f"       剔除 {cnt} 題：{reason}")
             except Exception as exc:
                 session.rollback()
                 print(f"  ❌ {path.name}  →  {type(exc).__name__}: {exc}")
                 continue
             session.commit()
+
+    if totals:
+        kept = sum(t["kept"] for t in totals)
+        total = sum(t["total"] for t in totals)
+        print(f"\n{'=' * 52}\n共 {total} 題，收錄 {kept} 題（{kept / total:.0%}），"
+              f"剔除 {total - kept} 題")
+        if total and kept / total < 0.7:
+            print("⚠ 收錄率偏低 —— 這通常代表擷取管線有問題，而不是這批卷特別難。")
     return 0
 
 
