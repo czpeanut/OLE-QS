@@ -70,18 +70,98 @@ def norm(s: str) -> str:
     return s.strip()
 
 
+CELL_NUM_RE = re.compile(r"^\s*[(（]?\s*(\d{1,3})\s*[)）]?\s*[.、．]?\s*$")
+
+
+def table_text(tab) -> str:
+    """把一個表格攤平成閱讀順序的文字，每題一行。
+
+    考卷常把題目排進表格 —— 國文的字音字形、解釋題就是四欄兩題一列。
+    逐行掃描文字區塊時，儲存格的順序會被打亂（同一列的兩題交錯），
+    題號因此不再遞增而被切分規則整段丟棄。
+
+    這裡改走表格結構：依「列優先」走訪儲存格，遇到只含題號的儲存格就換行，
+    後續儲存格接在該題後面。一列有兩題時就正確拆成兩行。
+    """
+    lines: list[str] = []
+    cur: list[str] = []
+    try:
+        rows = tab.extract()
+    except Exception:
+        return ""
+    for row in rows:
+        for cell in row:
+            text = (cell or "").strip()
+            if not text:
+                continue
+            if CELL_NUM_RE.match(text):
+                if cur:
+                    lines.append(" ".join(cur))
+                cur = [text.rstrip(".、．") + "."]
+            elif cur:
+                cur.append(text)
+            else:
+                lines.append(text)
+    if cur:
+        lines.append(" ".join(cur))
+    return "\n".join(lines)
+
+
 def reading_order(page) -> list[tuple[float, float, float, float, str]]:
-    """回傳依閱讀順序排好的文字區塊。雙欄時先左欄由上而下，再右欄。"""
+    """回傳依閱讀順序排好的文字區塊。雙欄時先左欄由上而下，再右欄。
+
+    表格會先被抽出來整塊處理（見 table_text），落在表格範圍內的文字區塊
+    則跳過，避免同一段文字出現兩次。
+    """
     mid = (page.rect.x0 + page.rect.x1) / 2
-    blocks = [b for b in page.get_text("blocks") if (b[4] or "").strip()]
-    if not blocks:
+
+    tables = []
+    try:
+        found = page.find_tables().tables
+    except Exception:
+        found = []
+    page_area = max(1.0, page.rect.width * page.rect.height)
+    for tab in found:
+        # find_tables() 會在純文字的多欄版面上誤判出「表格」，
+        # 一旦誤判，落在其範圍內的文字與圖形都會被吞掉 ——
+        # 實測社會卷因此從 50 題掉到 27 題、圖從 10 張掉到 2 張。
+        # 真正的表格必須同時滿足：至少 2x2、不佔滿整頁、儲存格填充率夠高。
+        try:
+            rows = tab.extract()
+        except Exception:
+            continue
+        n_rows = len(rows)
+        n_cols = max((len(r) for r in rows), default=0)
+        if n_rows < 2 or n_cols < 2:
+            continue
+        x0, y0, x1, y1 = tab.bbox
+        if (x1 - x0) * (y1 - y0) > page_area * 0.5:
+            continue
+        filled = sum(1 for r in rows for c in r if (c or "").strip())
+        if filled < n_rows * n_cols * 0.5:
+            continue
+        text = table_text(tab)
+        if text:
+            tables.append((x0, y0, x1, y1, text))
+
+    def inside_table(b) -> bool:
+        cx, cy = (b[0] + b[2]) / 2, (b[1] + b[3]) / 2
+        return any(x0 <= cx <= x1 and y0 <= cy <= y1
+                   for x0, y0, x1, y1, _ in tables)
+
+    blocks = [b for b in page.get_text("blocks")
+              if (b[4] or "").strip() and not inside_table(b)]
+    items = blocks + tables
+    if not items:
         return []
-    right = [b for b in blocks if b[0] > mid]
-    two_col = len(right) >= max(3, len(blocks) * 0.2)
+    right = [b for b in items if b[0] > mid]
+    two_col = len(right) >= max(3, len(items) * 0.2)
+
     def key(b):
         col = 1 if (two_col and b[0] > mid) else 0
         return (col, round(b[1], 1), round(b[0], 1))
-    return sorted(blocks, key=key)
+
+    return sorted(items, key=key)
 
 
 def parse_header(text: str) -> dict:
