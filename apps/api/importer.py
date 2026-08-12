@@ -20,7 +20,7 @@ from sqlalchemy.orm import Session
 from .db import get_session, init_db, reindex_question
 from .models import (Asset, AssetKind, AnswerStatus, Document, Option,
                      Question, QuestionSource, QuestionType, ReviewStatus,
-                     Section, Tag)
+                     Section, Tag, split_school)
 
 REQUIRED_SOURCE_FIELDS = ("title", "school", "exam_name", "academic_year_roc",
                           "grade", "subject")
@@ -123,9 +123,12 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
 
         # 出處快照到題目上。這裡刻意複製欄位而非只存 document_id ——
         # 題目日後可能被合併、改編，或原文件被修改，出處都必須留在題目自己身上。
+        city, short = split_school(d.school)
         session.add(QuestionSource(
             question_id=qid, ord=0, relation="original",
-            school=d.school, exam_name=d.exam_name,
+            school=d.school, city=meta.get("city") or city,
+            school_short=meta.get("school_short") or short,
+            exam_name=d.exam_name,
             academic_year_roc=d.academic_year_roc,
             semester=d.semester, exam_seq=d.exam_seq,
             grade=d.grade, subject=d.subject,

@@ -25,6 +25,33 @@ def utcnow() -> datetime:
     return datetime.now(timezone.utc)
 
 
+CITIES = ("台北", "新北", "桃園", "台中", "台南", "高雄", "基隆", "新竹", "嘉義",
+          "苗栗", "彰化", "南投", "雲林", "屏東", "宜蘭", "花蓮", "台東",
+          "澎湖", "金門", "連江")
+
+
+def split_school(full: str) -> tuple[str, str]:
+    """把學校全名拆成 (縣市, 校名簡稱)。
+
+    「臺中市立向上國民中學」→ ("台中", "向上")
+    「臺中市大業國中」      → ("台中", "大業")
+
+    出處要印在每一題底下，必須夠短才不會蓋過題目本身，
+    所以顯示用簡稱；完整校名仍存在 school 欄位，法律上的可追溯性不受影響。
+    """
+    name = (full or "").replace("臺", "台").strip()
+    city = next((c for c in CITIES if name.startswith(c)), "")
+    if city:
+        name = name[len(city):].lstrip("市縣")
+    name = name.removeprefix("立")
+    for suffix in ("國民中學", "高級中學附設國中部", "完全中學", "高級中學",
+                   "國民小學", "國中", "高中", "中學", "國小"):
+        if name.endswith(suffix):
+            name = name[: -len(suffix)]
+            break
+    return city, name.strip()
+
+
 class Base(DeclarativeBase):
     pass
 
@@ -198,7 +225,8 @@ class Question(Base):
 
     @property
     def citation(self) -> str:
-        return "；".join(self.citations) or "（來源未標註）"
+        # 方括號本身即為分界，多個出處用空白串接即可
+        return " ".join(self.citations) or "（來源未標註）"
 
     __table_args__ = (
         # 題號在不同大題會重複，唯一鍵必須帶上大題
@@ -296,6 +324,9 @@ class QuestionSource(Base):
 
     # ── 快照欄位：匯入當下複製，之後不隨 Document 變動 ──────────
     school: Mapped[str] = mapped_column(String(120), nullable=False)
+    # 顯示用簡稱，匯入時由 school 推導，可在來源資料中明確覆寫
+    city: Mapped[str | None] = mapped_column(String(20))
+    school_short: Mapped[str | None] = mapped_column(String(40))
     exam_name: Mapped[str] = mapped_column(String(200), nullable=False)
     academic_year_roc: Mapped[int] = mapped_column(Integer, nullable=False)
     semester: Mapped[int | None] = mapped_column(Integer)
@@ -322,16 +353,17 @@ class QuestionSource(Base):
 
     @property
     def citation(self) -> str:
-        bits = [self.school, f"{self.academic_year_roc}學年度"]
-        if self.semester:
-            bits.append(f"第{self.semester}學期")
-        if self.exam_seq:
-            bits.append(f"第{self.exam_seq}次定期評量")
-        bits.append(f"{self.grade}年級{self.subject}")
-        if self.number_in_paper:
-            bits.append(f"第{self.number_in_paper}題")
-        prefix = {"adapted": "改編自 ", "duplicate": "另見 "}.get(self.relation, "")
-        return prefix + " ".join(bits)
+        """印在題目底下的出處，格式 [台中 大業 113]。
+
+        刻意極簡：出處要跟著每一題走，冗長就會蓋過題目本身。
+        學期、次數、年級、科目、題號仍完整存在資料庫，需要時可查。
+        """
+        city, short = self.city, self.school_short
+        if not short:
+            city, short = split_school(self.school)
+        bits = [b for b in (city, short, str(self.academic_year_roc)) if b]
+        mark = {"adapted": "改編 ", "duplicate": "另見 "}.get(self.relation, "")
+        return f"[{mark}{' '.join(bits)}]"
 
 
 class Tag(Base):
