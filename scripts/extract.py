@@ -480,21 +480,26 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
                               key=lambda r: (1 if r.x0 > mid else 0, r.y0, r.x0))
         for i, r in enumerate(two_col_figs, start=1):
             key = f"p{pno}_f{i:02d}"
+            # 圖檔名必須帶文件 ID。「p1_f01.png」在每一份卷裡都會出現，
+            # 全部寫進同一個資產目錄的話會互相覆蓋 —— 實測 673 筆圖形紀錄
+            # 只剩 136 個檔案，題目顯示的是別間學校的圖。
+            # 缺圖只是那題被剔除，貼錯圖卻是看起來能作答但整題是錯的。
+            rel = f"{doc_id}/{key}.png"
             if fig_dir:
-                fig_dir.mkdir(parents=True, exist_ok=True)
+                (fig_dir / doc_id).mkdir(parents=True, exist_ok=True)
                 clip = fitz.Rect(r.x0 - 2, r.y0 - 2, r.x1 + 2, r.y1 + 2) & page.rect
                 # 退化的圖形區域（寬或高為 0）渲染時會丟例外。一張圖不值得
                 # 中斷整批 —— 少一張圖只是那題被品管閘門剔除，中斷卻是全批停擺。
                 if clip.is_empty or clip.width < 1 or clip.height < 1:
                     continue
                 try:
-                    page.get_pixmap(dpi=dpi, clip=clip).save(fig_dir / f"{key}.png")
+                    page.get_pixmap(dpi=dpi, clip=clip).save(fig_dir / rel)
                 except Exception as exc:
                     print(f"    ⚠ {path.name} p{pno} {key}：圖形渲染失敗（{exc}），略過")
                     continue
             figures.append({"key": key, "page": pno,
                             "col": 1 if r.x0 > mid else 0,
-                            "y": r.y0, "file": f"{key}.png"})
+                            "y": r.y0, "file": rel})
 
         for b in reading_order(page):
             x0, y0, _, _, raw = b[0], b[1], b[2], b[3], b[4]
