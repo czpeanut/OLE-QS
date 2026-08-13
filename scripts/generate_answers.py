@@ -19,8 +19,10 @@
     缺少看不到的資訊時回報 missing_context —— 這能反過來抓出組裝漏圖的 bug。
 
 用法:
-    export GEMINI_API_KEY=...
-    export ANTHROPIC_API_KEY=...
+    # 金鑰放專案根目錄的 .env.local（已在 .gitignore 裡），一行一個：
+    #     GEMINI_API_KEY=...
+    #     ANTHROPIC_API_KEY=...
+    # 也可以用環境變數，環境變數優先。
 
     # 單份試水溫
     python scripts/generate_answers.py data/bank/doc_111_嘉義_北興_數學_g7s1e1.yaml \\
@@ -57,8 +59,31 @@ try:
 except ImportError:
     sys.exit("需要 requests，請先執行：pip install requests")
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO))
 from apps.api.quality import evaluate  # noqa: E402
+
+
+def load_env_file() -> None:
+    """從 .env.local / .env 補上還沒設定的環境變數。
+
+    金鑰不該出現在指令列裡 —— 指令列會進 shell history、行程列表與各種
+    紀錄。放檔案裡由程式自己讀，金鑰就只存在於那個檔案。
+    兩個檔名都在 .gitignore 裡，不會被 commit。
+
+    已經設好的環境變數優先，檔案不覆蓋它。
+    """
+    for name in (".env.local", ".env"):
+        path = REPO / name
+        if not path.is_file():
+            continue
+        for line in path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, value = line.partition("=")
+            key = key.strip().removeprefix("export ").strip()
+            os.environ.setdefault(key, value.strip().strip("'\""))
 
 SYSTEM = """你是一位國中教師，正在為考卷編寫答案卷。
 
@@ -300,6 +325,7 @@ def main() -> int:
     ap.add_argument("--merge", action="store_true", help="把答案寫回來源 YAML")
     ap.add_argument("--workers", type=int, default=4)
     args = ap.parse_args()
+    load_env_file()
 
     sources = (sorted(args.source.glob("*.y*ml")) if args.source.is_dir()
                else [args.source])[: args.max_docs]
