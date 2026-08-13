@@ -44,7 +44,10 @@ def split_school(full: str) -> tuple[str, str]:
     if city:
         name = name[len(city):].lstrip("市縣")
     name = name.removeprefix("立")
-    for suffix in ("國民中學", "高級中學附設國中部", "完全中學", "高級中學",
+    # 長的排前面：高中附設的國中部會寫成「林園高級中學國中部」，
+    # 先比對到短的「國中」只會剩下「林園高級中學」這種不像簡稱的簡稱。
+    for suffix in ("高級中學附設國中部", "高級中學國中部", "高級中學國中",
+                   "國民中學", "完全中學", "高級中學",
                    "國民小學", "國中", "高中", "中學", "國小"):
         if name.endswith(suffix):
             name = name[: -len(suffix)]

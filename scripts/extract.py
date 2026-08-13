@@ -34,17 +34,43 @@ except ImportError:
     except ImportError:
         sys.exit("需要 PyMuPDF，請先執行：pip install pymupdf")
 
-GRADE_MAP = {"一": 7, "二": 8, "三": 9}
+# 同一個年級有四種寫法：「一年級」「1年級」（校內序號）
+# 與「七年級」「7年級」（課綱序號），同一所學校的相鄰兩次段考都可能不一致
+GRADE_MAP = {"一": 7, "二": 8, "三": 9, "七": 7, "八": 8, "九": 9,
+             "1": 7, "2": 8, "3": 9, "7": 7, "8": 8, "9": 9}
 SEMESTER_MAP = {"一": 1, "二": 2, "1": 1, "2": 2}
+CN_NUM = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6}
 
 # 大題標題：「一、選擇題：(每題 4 分，共 40 分)」
 SECTION_RE = re.compile(r"^\s*([一二三四五六七八九十])\s*[、.]\s*([^：:（(]{1,12})\s*[：:（(]?")
-# 題目開頭：「14.(  )」「1.」「(1)」
-QSTART_RE = re.compile(r"^\s*(\d{1,3})\s*[.、．]\s*(\(\s*\)|（\s*）)?\s*")
+# 題目開頭：「14.(  )」「1.」「(  )1.」「(   ) 1.」「(B)10.」
+# 作答括號可能在題號前也可能在題號後，兩種寫法在同一批考卷裡都很常見；
+# 只認「題號在前」會讓括號在前的整份卷幾乎抓不到題目。
+# 括號裡也可能已經填了答案（老師改過的卷），那也是題號。
+# 題號後面緊接數字的不算（「(A) 1.5 公尺」是選項裡的小數，不是第 1 題）。
+QSTART_RE = re.compile(r"^\s*(?:[(（]\s*[A-EＡ-Ｅ]?\s*[)）]\s*)?(\d{1,3})\s*[.、．](?!\d)\s*"
+                       r"(\(\s*\)|（\s*）)?\s*")
 # 選項：「(A)」「（Ａ）」，可連續出現在同一行
 OPTION_RE = re.compile(r"[(（]\s*([A-EＡ-Ｅ])\s*[)）]")
-# 答案頁不參與題目擷取
-ANSWER_PAGE_RE = re.compile(r"解答|答案卷|解析卷|參考答案")
+# 答案頁不參與題目擷取。
+#
+# 判斷只看頁首那一小段，而且要比「有沒有出現這幾個字」更講究一點：
+#   - 「答案卷」最常出現的地方其實是題目卷的注意事項（「請在答案卷上作答」），
+#     整頁掃描的話這些卷會被當成答案頁丟掉，一題都抓不到。
+#   - 但題目卷的頁首也會寫「本試卷(含作答卷)共3頁」，所以連頁首都不能只看有無。
+# 因此改用「誰先出現」：答案類字樣排在試卷類字樣前面，才是答案頁。
+# 「答案卷」前面接動詞時是指示語而非頁名（「請依照號碼依序填入答案卷」）；
+# 單獨的「答案」也可能是答案頁的標題（「…數學科- 答案」），但同樣是注意事項的
+# 高頻詞（「每個答案4分」「答案請寫在…」），所以排除接著量詞或動詞的用法。
+ANSWER_PAGE_RE = re.compile(r"解答|解析卷|參考答案"
+                            r"|(?<![填寫劃畫入在到])(?:答案卷|作答卷)"
+                            r"|答案(?![卡欄卷0-9]|\s*[請寫填劃畫])")
+# 大題標題也算「這是題目頁」的證據：答案頁的標題一定排在大題標題前面，
+# 反過來若「二、填充題(每個答案4分…)」先出現，那個「答案」就只是配分說明。
+QUESTION_PAGE_RE = re.compile(r"試題卷|題目卷|試卷|試題|[一二三四五六七八九十]\s*[、．]")
+ANSWER_PAGE_HEAD_CHARS = 80
+# 卷頭資訊（年級）只在這段範圍內找
+GRADE_HEAD_CHARS = 200
 
 TYPE_BY_NAME = [
     ("選擇", "single"), ("單選", "single"), ("多選", "multiple"),
@@ -164,6 +190,93 @@ def reading_order(page) -> list[tuple[float, float, float, float, str]]:
     return sorted(items, key=key)
 
 
+def is_answer_page(page_text: str) -> bool:
+    """這一頁是答案卷／解答／空白作答卷嗎？（見 ANSWER_PAGE_RE 的說明）"""
+    head = norm(page_text[:ANSWER_PAGE_HEAD_CHARS * 2].replace("\n", " "))
+    head = head[:ANSWER_PAGE_HEAD_CHARS]
+    ans = ANSWER_PAGE_RE.search(head)
+    if not ans:
+        return False
+    que = QUESTION_PAGE_RE.search(head)
+    return que is None or ans.start() < que.start()
+
+
+def parse_grade(t: str) -> int | None:
+    """從卷面文字判斷年級。
+
+    考卷寫年級的方式沒有共識，實測到的至少五種都在這裡：
+    「七年級」「一年級」「國一」「七學級」（錯字），以及只印在
+    作答欄位上的「一年　班　號」。
+
+    都沒有時退而求其次看**冊次**：教科書一冊對應一個學期，
+    第一、二冊＝七年級，三、四＝八年級，五、六＝九年級。
+    這是課綱的固定對應，不是推測。
+    """
+    # 由強到弱三層證據，強的有命中就不看弱的
+    tiers = (
+        # 明寫年級。數字可能被括號或方括號包起來（「【七】年級」），
+        # 「七學級」是實測到的錯字，「七年 ___班」是作答欄位
+        [r"[【（(\[]?\s*([一二三七八九1-3789])\s*[】）)\]]?\s*年級",
+         r"([一二三七八九])\s*[年學][\s_＿]*[級班]"],
+        [r"國([一二三])"],
+        # 冊次：教科書一冊對應一個學期，第一、二冊＝七年級，三、四＝八年級，
+        # 五、六＝九年級。這是課綱的固定對應，不是推測。
+        [r"第([一二三四五六])冊", r"\bB([1-6])\b"],
+    )
+    def volume_to_grade(g: str) -> int:
+        return 7 + ((CN_NUM.get(g) or int(g)) - 1) // 2
+
+    # 一頁上可能出現好幾個年級，而且互相矛盾：題目內文會寫「某校二年級學生…」，
+    # 有學校把上一屆的頁首留著（頁首「九年級數學-p1」，卷名卻是「(七年級)」）。
+    # 卷名才是這份卷的年級，所以取**離「學年度」最近**的那個。
+    # 沒有「學年度」可當錨點時只看頁首那一段，不然會抓到題目內文裡的年級。
+    anchor = t.find("學年度")
+    scope = t if anchor >= 0 else t[:GRADE_HEAD_CHARS]
+    for i, patterns in enumerate(tiers):
+        hits = [(m.start(), m.group(1)) for p in patterns for m in re.finditer(p, scope)]
+        if not hits:
+            continue
+        _, g = (min(hits, key=lambda h: abs(h[0] - anchor)) if anchor >= 0
+                else min(hits))
+        return volume_to_grade(g) if i == 2 else GRADE_MAP[g]
+    return None
+
+
+def parse_school(t: str) -> str | None:
+    """從卷面文字抓完整校名。
+
+    校名前面常黏著別的字（「第1頁高雄市立大灣國民中學」「第2學期臺中市立
+    向上國民中學」），所以縣市必須直接寫進樣式裡比對 ——
+    寫成「任意兩三個中文字＋市/縣」再事後檢查是不夠的：那樣會先比對到
+    「期臺中市」，判定縣市不合法後就跳過整段，真正的校名反而抓不到。
+    """
+    m = SCHOOL_RE.search(t)
+    return re.sub(r"\s+", "", m.group(0)) if m else None
+
+
+SUBJECTS = ("數學", "國文", "英語", "英文", "自然", "理化", "生物", "地球科學",
+            "地科", "社會", "歷史", "地理", "公民", "健康教育", "健教", "體育",
+            "藝術", "音樂", "表演藝術", "視覺藝術", "科技", "資訊")
+
+
+def parse_subject(t: str) -> str | None:
+    """抓科目。只認課程清單裡的名稱，且必須出現在「這是哪一科」的位置上。
+
+    早期寫法是「取『科』字前面的 1~3 個中文字」，但卷頭把科目黏在別的字後面
+    （「第2次段考數學科試題」），就會切出「考數學」「級數學」這種科目名 ——
+    一個科目在題庫裡出現三種寫法，科目篩選就廢了。
+
+    先把空白全部去掉再比對：卷頭為了排版會把科目名拆開（「科目:數 學(代碼03)」）。
+    """
+    flat = re.sub(r"\s+", "", t)
+    for name in SUBJECTS:
+        if any(pat in flat for pat in (
+                f"{name}科", f"{name}領域", f"科目:{name}", f"科目：{name}",
+                f"年級{name}", f"{name}試題", f"{name}試卷", f"{name}題目卷")):
+            return name
+    return None
+
+
 def parse_header(text: str) -> dict:
     """從第一頁抓考卷的來源資訊。"""
     t = norm(text.replace("\n", " "))
@@ -173,15 +286,14 @@ def parse_header(text: str) -> dict:
     if m := re.search(r"第([一二12])學期", t):
         meta["semester"] = SEMESTER_MAP.get(m.group(1))
     if m := re.search(r"第([一二三四1-4])次", t):
-        meta["exam_seq"] = SEMESTER_MAP.get(m.group(1), 1) if m.group(1) in "一二12" else 3
-    if m := re.search(r"([一-鿿]{2,4}[市縣](?:立)?[一-鿿]{2,6}(?:國民中學|國中))", t):
-        meta["school"] = m.group(1)
-    if m := re.search(r"([一二三])年級", t):
-        meta["grade"] = GRADE_MAP.get(m.group(1))
-    if m := re.search(r"年級\s*([一-鿿]{1,3})科", t):
-        meta["subject"] = m.group(1)
-    elif m := re.search(r"([一-鿿]{1,3})科(?:試題|題目卷|試卷)", t):
-        meta["subject"] = m.group(1)
+        g = m.group(1)
+        meta["exam_seq"] = CN_NUM.get(g) or int(g)
+    if school := parse_school(t):
+        meta["school"] = school
+    if grade := parse_grade(t):
+        meta["grade"] = grade
+    if subject := parse_subject(t):
+        meta["subject"] = subject
     if m := re.search(r"[◎※]?\s*(?:段考|命題)?範圍[：:]\s*([^\n]{1,60})", t):
         meta["scope_note"] = m.group(1).strip("（） ")
     return meta
@@ -218,14 +330,30 @@ CITY_SET = {"台北", "新北", "桃園", "台中", "台南", "高雄", "基隆"
             "苗栗", "彰化", "南投", "雲林", "屏東", "宜蘭", "花蓮", "台東",
             "澎湖", "金門", "連江", "臺北", "臺中", "臺南", "臺東"}
 
+# 校名樣式（parse_school 用）：縣市名直接列舉，長的排前面避免被短的截斷。
+# 中間允許空白 —— 卷頭常為了排版把校名拆開（「台北市立 新興國民中學」）。
+SCHOOL_RE = re.compile(
+    r"(?:" + "|".join(sorted(CITY_SET, key=len, reverse=True)) + r")"
+    r"\s*[市縣]\s*立?\s*[一-鿿]{2,6}?\s*(?:國民中學|國中|高級中學國中|高級中學)")
+
+# 縣與市不能猜 ——「彰化市溪湖國中」是錯的校名，正確是「彰化縣立溪湖國中」。
+# 只在卷面沒印校名、必須自行組出來時才會用到這張表。
+COUNTY_CITIES = {"苗栗", "彰化", "南投", "雲林", "屏東", "宜蘭",
+                 "花蓮", "台東", "澎湖", "金門", "連江"}
+
 
 def parse_path(path: Path, root: Path | None = None) -> dict:
     """從檔案路徑取來源資訊。
 
-    實測整批考古題的目錄慣例是「年級-學期／縣市／學校.pdf」，
-    例如 1-1/台中/五權.pdf。這比解析卷頭可靠得多 ——
-    有相當比例的考卷根本沒在題目卷上印學校或學年度，
-    那些資訊只存在於檔名與資料夾。
+    整批考古題的目錄慣例是「學年度／學期-次數／縣市／學校.pdf」，
+    例如 112/1-2/彰化/埔心.pdf ＝ 112 學年度第 1 學期第 2 次段考。
+    這比解析卷頭可靠得多 —— 有相當比例的考卷根本沒在題目卷上印
+    學校或學年度，那些資訊只存在於檔名與資料夾。
+
+    ⚠️ 「1-2」曾被讀成「一年級第二學期」。實際是「第一學期第二次段考」，
+    卷頭寫得很清楚（「111學年度第一學期第二次段考」），而且一個學年只有
+    兩個學期卻有 1-3、2-3 這樣的目錄，年級解讀根本擺不下。
+    **年級不在路徑裡**，只能從卷面取得。
     """
     parts = [decode_mojibake(x) for x in path.parts]
     meta: dict = {}
@@ -235,34 +363,75 @@ def parse_path(path: Path, root: Path | None = None) -> dict:
             meta["city"] = norm_part
             if i + 1 < len(parts):
                 meta["school_short"] = Path(parts[i + 1]).stem
-        if m := re.fullmatch(r"([1-3])-([12])", part):
-            meta["grade"] = GRADE_MAP[["一", "二", "三"][int(m.group(1)) - 1]]
-            meta["semester"] = int(m.group(2))
-    if meta.get("city") and meta.get("school_short"):
-        meta["school"] = f"{meta['city']}市{meta['school_short']}國中"
+        if re.fullmatch(r"1\d{2}", part):
+            meta["academic_year_roc"] = int(part)
+        if m := re.fullmatch(r"([12])-([1-4])", part):
+            meta["semester"] = int(m.group(1))
+            meta["exam_seq"] = int(m.group(2))
     return meta
 
 
-def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict | None:
+def build_school(city: str | None, short: str | None) -> str | None:
+    """卷面沒印校名時，用縣市＋校名簡稱組一個。"""
+    if not (city and short):
+        return None
+    kind = "縣" if city.replace("臺", "台") in COUNTY_CITIES else "市"
+    return f"{city}{kind}立{short}國中"
+
+
+def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
+                school_names: dict[tuple[str, str], str] | None = None,
+                default_subject: str | None = None,
+                default_grade: int | None = None) -> dict | None:
     doc = fitz.open(path)
     meta = parse_header(doc[0].get_text("text"))
-    # 路徑優先於卷頭：卷頭常缺學校與年級，路徑的目錄慣例則穩定。
-    meta.update({k: v for k, v in parse_path(path).items() if v})
+    # 路徑優先於卷頭：卷頭常缺學年度與學校，路徑的目錄慣例則穩定。
+    # 但年級不在路徑裡（見 parse_path），只能靠卷面。
+    path_meta = parse_path(path)
+    meta.update({k: v for k, v in path_meta.items() if v})
     if not meta.get("academic_year_roc"):
         # 卷頭沒印學年度時，在全文找一次
         allyears = re.findall(r"(1\d{2})\s*學年度", " ".join(
             pg.get_text("text") for pg in doc))
         if allyears:
             meta["academic_year_roc"] = int(max(set(allyears), key=allyears.count))
-    meta.setdefault("subject", "未分類")
+    if not meta.get("grade"):
+        # 年級常只印在後面幾頁的頁首。只看每頁開頭一小段，
+        # 避免把題目內文裡的「八年級的學生…」當成本卷的年級。
+        for pg in list(doc)[1:]:
+            if grade := parse_grade(norm(pg.get_text("text")[:200].replace("\n", " "))):
+                meta["grade"] = grade
+                break
+
+    # ── 校名 ───────────────────────────────────────────────
+    # 卷面印出來的校名是最權威的（「彰化縣立溪湖國中」），優先採用，
+    # 但要與路徑的校名簡稱對得上，避免抓到別份卷或頁碼黏成的字串。
+    short = meta.get("school_short")
+    # 全批對照表優先於這一份卷自己印的校名：同一所學校在不同次段考會寫成
+    # 不同的名字，照抄的話一所學校會在題庫裡分裂成好幾所（見 collect_school_names）。
+    canonical = (school_names or {}).get((meta.get("city"), short))
+    header_school = meta.get("school")
+    if header_school and short and short not in header_school:
+        header_school = None
+    meta["school"] = (canonical or header_school
+                      or build_school(meta.get("city"), short))
+
+    if not meta.get("subject") and default_subject:
+        meta["subject"] = default_subject
+    if not meta.get("grade") and default_grade:
+        meta["grade"] = default_grade
     for field in ("academic_year_roc", "grade", "subject", "school"):
         if not meta.get(field):
             print(f"    ⚠ {path.name}：抓不到 {field}，跳過（來源標註不可缺）")
             doc.close()
             return None
 
+    # 文件 ID 必須同時含「科目」與「第幾次段考」——
+    # 一所學校同一學期有 3 次段考，一次段考又有 5 個科目的卷，
+    # 少了任何一個都會撞成同一個 ID，後匯入的那份直接覆蓋前一份。
     stem_id = re.sub(r"[^\w]+", "_", decode_mojibake(str(path.stem))).strip("_").lower()
-    stem_id = f"{meta.get('city','')}_{stem_id}_{meta.get('grade','')}{meta.get('semester','')}"
+    stem_id = (f"{meta.get('city','')}_{stem_id}_{meta['subject']}"
+               f"_g{meta['grade']}s{meta.get('semester','?')}e{meta.get('exam_seq','?')}")
     stem_id = re.sub(r"[^\w]+", "_", stem_id).strip("_")
     doc_id = f"doc_{meta['academic_year_roc']}_{stem_id}"
 
@@ -291,7 +460,7 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict
 
     for pno, page in enumerate(doc, start=1):
         page_text = page.get_text("text")
-        if ANSWER_PAGE_RE.search(page_text):
+        if is_answer_page(page_text):
             continue                      # 答案頁另外由 parse_answer_key 處理
 
         # 圖形位置，之後依 y 座標歸給題目
@@ -306,7 +475,15 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict
             if fig_dir:
                 fig_dir.mkdir(parents=True, exist_ok=True)
                 clip = fitz.Rect(r.x0 - 2, r.y0 - 2, r.x1 + 2, r.y1 + 2) & page.rect
-                page.get_pixmap(dpi=dpi, clip=clip).save(fig_dir / f"{key}.png")
+                # 退化的圖形區域（寬或高為 0）渲染時會丟例外。一張圖不值得
+                # 中斷整批 —— 少一張圖只是那題被品管閘門剔除，中斷卻是全批停擺。
+                if clip.is_empty or clip.width < 1 or clip.height < 1:
+                    continue
+                try:
+                    page.get_pixmap(dpi=dpi, clip=clip).save(fig_dir / f"{key}.png")
+                except Exception as exc:
+                    print(f"    ⚠ {path.name} p{pno} {key}：圖形渲染失敗（{exc}），略過")
+                    continue
             figures.append({"key": key, "page": pno,
                             "col": 1 if r.x0 > mid else 0,
                             "y": r.y0, "file": f"{key}.png"})
@@ -449,6 +626,34 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict
     return {"document": meta, "questions": questions}
 
 
+def collect_school_names(pdfs: list[Path]) -> dict[tuple[str, str], str]:
+    """先掃一遍全批，替每所學校決定一個校名。
+
+    兩件事都靠這一輪：
+      - 沒印校名的卷可以沿用同校其他卷印出來的名字，不必用縣市＋簡稱去組
+        （組出來的不是官方名稱，而校名是出處標註的必填欄位）。
+      - **同一所學校只能有一個名字**。同一所學校的相鄰兩次段考會寫成
+        「桃園市立石門國中」與「桃園市立石門國民中學」，若各自照抄，
+        檢索與統計會把一所學校算成兩所。取最完整的那個寫法當標準名。
+    """
+    variants: dict[tuple[str, str], list[str]] = {}
+    for pdf in pdfs:
+        p = parse_path(pdf)
+        city, short = p.get("city"), p.get("school_short")
+        if not (city and short):
+            continue
+        try:
+            doc = fitz.open(pdf)
+        except Exception:
+            continue
+        text = norm(doc[0].get_text("text").replace("\n", " ")) if len(doc) else ""
+        doc.close()
+        school = parse_school(text)
+        if school and short in school:
+            variants.setdefault((city, short), []).append(school)
+    return {k: max(v, key=lambda s: (len(s), v.count(s))) for k, v in variants.items()}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -456,15 +661,25 @@ def main() -> int:
     ap.add_argument("-o", "--out", type=Path, default=Path("out/extracted"))
     ap.add_argument("--assets", type=Path, default=Path("data/assets"))
     ap.add_argument("--dpi", type=int, default=200)
+    ap.add_argument("--subject", help="卷面沒印科目時採用（整批只有一科時才給）")
+    ap.add_argument("--grade", type=int, help="卷面沒印年級時採用（同上）")
     args = ap.parse_args()
 
     pdfs = sorted(args.target.rglob("*.pdf")) if args.target.is_dir() else [args.target]
     args.out.mkdir(parents=True, exist_ok=True)
 
+    school_names = collect_school_names(pdfs)
+
     total_q = 0
     for pdf in pdfs:
-        res = extract_pdf(pdf, args.dpi, args.assets)
+        res = extract_pdf(pdf, args.dpi, args.assets, school_names,
+                          args.subject, args.grade)
         if not res:
+            continue
+        if not res["questions"]:
+            # 一題都沒抓到的多半是掃描件（沒有文字圖層）。寫出空文件只會在
+            # 題庫裡留下一份沒有題目的來源紀錄，不如直接報出來。
+            print(f"    ⚠ {pdf.name}：0 題，跳過（掃描件或版面無法辨識）")
             continue
         dest = args.out / f"{res['document']['id']}.yaml"
         dest.write_text(yaml.safe_dump(res, allow_unicode=True, sort_keys=False),
