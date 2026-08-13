@@ -8,8 +8,8 @@
 ```bash
 pip install -r requirements.txt
 
-# 1) 載入題目（已附兩份人工確認過的樣本）
-python -m apps.api.importer data/samples/expected/
+# 1) 載入題庫（附了 289 份擷取結果，5529 題）
+python -m apps.api.importer data/bank/
 
 # 2) 啟動
 uvicorn apps.api.main:app --reload
@@ -17,23 +17,46 @@ uvicorn apps.api.main:app --reload
 ```
 
 圖檔預設放在 `data/assets/`，可用 `OLEQS_ASSETS` 指定；資料庫預設 `data/oleqs.db`，
-可用 `OLEQS_DB` 指定。
+可用 `OLEQS_DB` 指定。圖檔不進版控，需要圖的話得重跑擷取。
 
 ## 處理新的考卷
 
+考卷目錄請照這個慣例擺，來源標註大半靠它（見下方「目錄慣例」）：
+
+```
+學年度／學期-次數／縣市／學校.pdf     例如 112/1-2/彰化/埔心.pdf
+```
+
 ```bash
+# 原生數位卷 → 結構化題目 YAML（含答案掛載與圖形切出）
+python scripts/extract.py "考古題目錄" -o data/bank --assets data/assets
+
+# 整批只有一科／一個年級，而卷面沒印時，明示告訴它（不要讓它猜）
+python scripts/extract.py "考古題目錄" -o data/bank --subject 數學 --grade 7
+
+# 讓同一所學校在題庫裡只有一個校名（跨批次累積後才需要）
+python scripts/canonicalize_schools.py data/bank
+
+# 擷取結果的結構驗證（配分總和、題號連續性、選項、共用素材…）
+python scripts/validate_extraction.py data/bank/*.yaml
+
 # PDF → 頁面影像 + 文字圖層 + 圖形（自動判斷原生數位 / 掃描 / 空白頁）
 python scripts/pdf_ingest.py "考古題目錄" -o out/ingest
 
 # 從答案卷解析「題號 → 答案」
 python scripts/parse_answer_key.py "考古題目錄" -o out/answer_keys
 
-# 擷取結果的結構驗證（配分總和、題號連續性、選項、共用素材…）
-python scripts/validate_extraction.py out/extracted.yaml
-
 # 用多個模型交叉作答，只有不一致的才需人工判定
 python scripts/generate_answers.py out/extracted.yaml --figures out/ingest/xxx/figures
 ```
+
+### 目錄慣例
+
+`112/1-2/彰化/埔心.pdf` ＝ 112 學年度、**第 1 學期第 2 次**段考、彰化縣埔心國中。
+
+`1-2` 是「學期-次數」，不是「年級-學期」 —— 一個學年只有兩個學期，卻有
+`1-3`、`2-3` 這種目錄；而卷頭寫得很清楚：「111學年度第一學期第二次段考」。
+**年級不在路徑裡**，只能從卷面取得，抓不到就整份跳過（來源標註不可缺）。
 
 ## 目錄
 
@@ -46,7 +69,8 @@ apps/api/          FastAPI 後端 + 網頁介面
   export.py        試題卷 / 答案卷 / 教師解答卷
   static/          單頁介面（檢索 → 題籃 → 匯出）
 scripts/           擷取管線工具
-data/samples/      黃金測試集（人工確認過的擷取結果）
+data/bank/         題庫本體（擷取結果，匯入資料庫的來源）
+data/samples/      黃金測試集（人工逐題確認過的兩份，回歸測試基準）
 docs/STATUS.md     開發現況與關鍵決策（接手先讀這份）
 docs/              開發計畫與各次 PoC 實測報告
 ```
