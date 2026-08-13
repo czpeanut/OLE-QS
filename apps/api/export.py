@@ -140,7 +140,12 @@ def render_question(item, n: int, mode: str, seen_shared: set) -> str:
 
     if mode == "key":
         ans = "、".join(str(a) for a in (q.answer or [])) or "（無答案）"
-        body.append(f'<div class="ans">答：{esc(ans)}</div>')
+        # 沒被答案卷或人工確認過的答案必須看得出來。教師解答卷是拿來改分的，
+        # 把 AI 的作答印得跟正解一模一樣，等於把「不知道錯在哪」交給老師。
+        note = {"ai_generated": "　⚠ AI 作答，未經確認",
+                "disputed": "　⚠ 模型答案不一致，待判定"}.get(
+                    getattr(q.answer_status, "value", q.answer_status), "")
+        body.append(f'<div class="ans">答：{esc(ans)}{esc(note)}</div>')
         if q.explanation_md:
             body.append(f'<div class="expl">{esc(q.explanation_md)}</div>')
 

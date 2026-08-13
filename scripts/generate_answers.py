@@ -21,12 +21,21 @@
 用法:
     export GEMINI_API_KEY=...
     export ANTHROPIC_API_KEY=...
-    python scripts/generate_answers.py data/samples/expected/113-dayeh-g7-science-s1e1.yaml \\
-        --figures out/ingest/physchem/figures -o out/answers
+
+    # 單份試水溫
+    python scripts/generate_answers.py data/bank/doc_111_嘉義_北興_數學_g7s1e1.yaml \\
+        --figures data/assets --limit 5
+
+    # 整個題庫，並把答案寫回擷取結果
+    python scripts/generate_answers.py data/bank --figures data/assets --merge
 
 輸出:
     out/answers/<卷id>.answers.yaml   每題的各家答案、是否一致、建議狀態
     終端摘要                           一致 / 爭議 / 缺素材 的題數統計
+    --merge 時                        答案連同 answer_status 寫回來源 YAML
+
+已經有答案的題目一律跳過 —— 答案卷解析出來的答案是確認過的，
+不該被模型的作答覆蓋，跑過一次也不必再花錢跑第二次。
 """
 
 from __future__ import annotations
@@ -47,6 +56,9 @@ try:
     import requests
 except ImportError:
     sys.exit("需要 requests，請先執行：pip install requests")
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from apps.api.quality import evaluate  # noqa: E402
 
 SYSTEM = """你是一位國中教師，正在為考卷編寫答案卷。
 
@@ -237,20 +249,60 @@ def judge(results: dict[str, dict]) -> tuple[str, str]:
 
 # ─────────────────────────── 主流程 ───────────────────────────
 
+def status_for(judged: str, providers: list[str]) -> str | None:
+    """把交叉比對的結論翻成題庫的 answer_status。
+
+    只有答案卷與人工能給 verified。單一模型、多模型一致，都還是 ai_generated ——
+    「兩個模型都這樣說」提高的是可信度，不是確認。
+    """
+    return {"agreed": "ai_generated",
+            "agreed_low_confidence": "ai_generated",
+            "single_source": "ai_generated",
+            "disputed": "disputed"}.get(judged)
+
+
+def merge_back(path: Path, doc: dict, rows: list[dict], providers: list[str]) -> int:
+    """把作答結果寫回擷取結果 YAML。回傳寫入的題數。"""
+    by_id = {r["id"]: r for r in rows}
+    source = "+".join(providers)
+    written = 0
+    for q in doc.get("questions") or []:
+        r = by_id.get(q.get("id"))
+        if not r or q.get("answer"):
+            continue
+        status = status_for(r["status"], providers)
+        if not status:
+            continue                       # 缺素材／呼叫失敗的不寫，留著下次再跑
+        ok = [v for v in r["by_model"].values() if v and not v.get("error")]
+        answer = next((v.get("answer") for v in ok if v.get("answer")), None)
+        if not answer:
+            continue
+        q["answer"] = answer if isinstance(answer, list) else [answer]
+        q["answer_status"] = status
+        q["answer_source"] = source
+        written += 1
+    if written:
+        path.write_text(yaml.safe_dump(doc, allow_unicode=True, sort_keys=False),
+                        encoding="utf-8")
+    return written
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("source", type=Path, help="擷取結果 YAML/JSON")
+    ap.add_argument("source", type=Path, help="擷取結果 YAML/JSON，或整個目錄")
     ap.add_argument("--figures", type=Path, required=True, help="圖檔目錄")
     ap.add_argument("-o", "--out", type=Path, default=Path("out/answers"))
     ap.add_argument("--providers", default="gemini,claude",
                     help="逗號分隔，預設 gemini,claude（刻意用不同家族）")
-    ap.add_argument("--limit", type=int, help="只跑前 N 題，用於試水溫")
+    ap.add_argument("--limit", type=int, help="每份卷只跑前 N 題，用於試水溫")
+    ap.add_argument("--max-docs", type=int, help="只跑前 N 份卷")
+    ap.add_argument("--merge", action="store_true", help="把答案寫回來源 YAML")
     ap.add_argument("--workers", type=int, default=4)
     args = ap.parse_args()
 
-    doc = yaml.safe_load(args.source.read_text(encoding="utf-8"))
-    questions = doc.get("questions", [])[: args.limit]
+    sources = (sorted(args.source.glob("*.y*ml")) if args.source.is_dir()
+               else [args.source])[: args.max_docs]
 
     chosen = []
     for name in args.providers.split(","):
@@ -268,53 +320,74 @@ def main() -> int:
     if len(chosen) == 1:
         print(f"⚠ 只有 {chosen[0]} 可用 —— 無法交叉驗證，全部結果都需要人工複核\n")
 
-    def run(q: dict) -> dict:
-        prompt = build_prompt(q, doc)
-        images = collect_images(q, doc, args.figures)
-        results: dict[str, dict] = {}
-        for name in chosen:
-            fn, _, model = PROVIDERS[name]
-            try:
-                results[name] = fn(prompt, images, model)
-            except Exception as exc:
-                results[name] = {"error": f"{type(exc).__name__}: {exc}"}
-        status, note = judge(results)
-        return {"id": q.get("id"), "number": q.get("number"), "type": q.get("type"),
-                "images_sent": len(images), "status": status, "note": note,
-                "by_model": results}
+    def run_one(doc: dict) -> callable:
+        def run(q: dict) -> dict:
+            prompt = build_prompt(q, doc)
+            images = collect_images(q, doc, args.figures)
+            results: dict[str, dict] = {}
+            for name in chosen:
+                fn, _, model = PROVIDERS[name]
+                try:
+                    results[name] = fn(prompt, images, model)
+                except Exception as exc:
+                    results[name] = {"error": f"{type(exc).__name__}: {exc}"}
+            status, note = judge(results)
+            return {"id": q.get("id"), "number": q.get("number"), "type": q.get("type"),
+                    "images_sent": len(images), "status": status, "note": note,
+                    "by_model": results}
+        return run
 
-    with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        rows = list(pool.map(run, questions))
-
+    from collections import Counter
     args.out.mkdir(parents=True, exist_ok=True)
-    dest = args.out / f"{doc['document']['id']}.answers.yaml"
-    dest.write_text(yaml.safe_dump(
-        {"source": str(args.source), "providers": chosen, "answers": rows},
-        allow_unicode=True, sort_keys=False), encoding="utf-8")
+    total = Counter()
+    merged_total = 0
+
+    for src in sources:
+        doc = yaml.safe_load(src.read_text(encoding="utf-8"))
+        # 兩種題目不送模型，因為錢是實打實地花：
+        #   已有答案的 —— 答案卷解析出來的是確認過的，不該被模型的作答覆蓋。
+        #   品管閘門會剔除的 —— 那些題目不會出現在檢索與組卷裡，替它們作答沒有用。
+        todo = [q for q in doc.get("questions", [])
+                if not q.get("answer") and evaluate(q, doc)[0]][: args.limit]
+        if not todo:
+            continue
+
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            rows = list(pool.map(run_one(doc), todo))
+
+        dest = args.out / f"{doc['document']['id']}.answers.yaml"
+        dest.write_text(yaml.safe_dump(
+            {"source": str(src), "providers": chosen, "answers": rows},
+            allow_unicode=True, sort_keys=False), encoding="utf-8")
+
+        tally = Counter(r["status"] for r in rows)
+        total.update(tally)
+        merged = merge_back(src, doc, rows, chosen) if args.merge else 0
+        merged_total += merged
+        print(f"  {src.name}  {len(rows)} 題  "
+              + "  ".join(f"{k}={v}" for k, v in sorted(tally.items()))
+              + (f"  → 寫回 {merged} 題" if args.merge else ""))
 
     # ── 摘要 ──────────────────────────────────────────────────
-    from collections import Counter
-    tally = Counter(r["status"] for r in rows)
     label = {"agreed": "一致（可自動採用）",
              "agreed_low_confidence": "一致但信心偏低（建議抽查）",
              "disputed": "不一致（必須人工判定）",
              "missing_context": "模型回報缺少素材（先查組裝是否漏圖）",
              "single_source": "僅單一來源（無法驗證）",
              "failed": "呼叫失敗"}
+    n = sum(total.values())
     print(f"\n{'=' * 56}")
-    print(f"{len(rows)} 題，使用 {' + '.join(chosen)}")
+    print(f"{len(sources)} 份卷、{n} 題，使用 {' + '.join(chosen)}")
     for k in label:
-        if tally.get(k):
-            print(f"  {label[k]:<32} {tally[k]:>3} 題")
+        if total.get(k):
+            print(f"  {label[k]:<32} {total[k]:>5} 題")
 
-    need = tally.get("disputed", 0) + tally.get("missing_context", 0)
-    if rows:
-        print(f"\n人工需處理 {need}/{len(rows)} 題（{need / len(rows):.0%}）")
-    for r in rows:
-        if r["status"] in {"disputed", "missing_context"}:
-            print(f"  第 {r['number']} 題（{r['id']}）：{r['note']}")
-
-    print(f"\n寫入 {dest}")
+    need = total.get("disputed", 0) + total.get("missing_context", 0)
+    if n:
+        print(f"\n人工需處理 {need}/{n} 題（{need / n:.0%}）")
+    if args.merge:
+        print(f"寫回來源 YAML {merged_total} 題（標為 ai_generated，非 verified）")
+    print(f"明細寫入 {args.out}")
     return 0
 
 

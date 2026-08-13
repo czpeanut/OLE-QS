@@ -71,6 +71,10 @@ QUESTION_PAGE_RE = re.compile(r"試題卷|題目卷|試卷|試題|[一二三四�
 ANSWER_PAGE_HEAD_CHARS = 80
 # 卷頭資訊（年級）只在這段範圍內找
 GRADE_HEAD_CHARS = 200
+# 一頁的影像置放數超過這個值就不是「有很多圖」，而是整頁文字被存成小圖。
+# 實測有考卷把每個字都存成 12×12 的影像，單頁 15598 個置放 ——
+# 照單全收的話一題會掛上兩千多張圖，圖檔目錄也會爆掉。
+MAX_FIGURES_PER_PAGE = 60
 
 TYPE_BY_NAME = [
     ("選擇", "single"), ("單選", "single"), ("多選", "multiple"),
@@ -468,6 +472,10 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
         placements = []
         for info in page.get_images(full=True):
             placements.extend(page.get_image_rects(info[0]))
+        if len(placements) > MAX_FIGURES_PER_PAGE:
+            print(f"    ⚠ {path.name} p{pno}：{len(placements)} 個影像置放，"
+                  f"整頁文字被存成小圖，本頁不取圖形")
+            placements = []
         two_col_figs = sorted(placements,
                               key=lambda r: (1 if r.x0 > mid else 0, r.y0, r.x0))
         for i, r in enumerate(two_col_figs, start=1):

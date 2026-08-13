@@ -104,6 +104,15 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
     for q in doc.get("questions") or []:
         qid = q["id"]
         answer = q.get("answer")
+        # 答案的來源決定它能不能被當成正解。從答案卷解析出來的是 verified，
+        # AI 作答出來的只能是 ai_generated／disputed —— 混為一談的話，
+        # 老師拿教師解答卷改分時分不出哪些是沒人確認過的。
+        if answer:
+            answer_status = (AnswerStatus(q["answer_status"]) if q.get("answer_status")
+                             else AnswerStatus.verified)
+            answer_source = q.get("answer_source") or "source_answer_key"
+        else:
+            answer_status, answer_source = AnswerStatus.missing, None
         keep, reasons = evaluate(q, doc)
         verdicts.append((keep, reasons))
         question = Question(
@@ -112,8 +121,8 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
             type=QuestionType(q["type"]),
             stem_md=q.get("stem", ""), group_stem=q.get("group_stem"),
             answer=answer or None,
-            answer_status=(AnswerStatus.verified if answer else AnswerStatus.missing),
-            answer_source=("source_answer_key" if answer else None),
+            answer_status=answer_status,
+            answer_source=answer_source,
             explanation_md=q.get("explanation"),
             difficulty=q.get("difficulty"), score=q.get("score"), page=q.get("page"),
             answer_count=q.get("answer_count"),
