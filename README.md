@@ -47,6 +47,7 @@ apps/api/          FastAPI 後端 + 網頁介面
   static/          單頁介面（檢索 → 題籃 → 匯出）
 scripts/           擷取管線工具
 data/samples/      黃金測試集（人工確認過的擷取結果）
+docs/STATUS.md     開發現況與關鍵決策（接手先讀這份）
 docs/              開發計畫與各次 PoC 實測報告
 ```
 
@@ -111,8 +112,9 @@ docs/              開發計畫與各次 PoC 實測報告
 
 ## 目前狀態
 
-擷取管線與檢索、組卷、匯出的主幹已可運作，並在真實考卷上驗證過。
-詳見 [`docs/development-plan.md`](docs/development-plan.md) 與
-[`docs/poc-report-001.md`](docs/poc-report-001.md)、[`docs/poc-report-002.md`](docs/poc-report-002.md)。
+**題庫已收錄 1008 題**，涵蓋 8 個縣市、5 個科目，收錄率 84%。
+最大缺口是答案覆蓋率只有 20%（多數來源是純題目卷，沒附答案卷）。
 
-尚未完成：校對工作台、課綱分類表的正式匯入、智慧組卷、Word 匯出。
+👉 **接手開發請先讀 [`docs/STATUS.md`](docs/STATUS.md)** ——
+那份記錄了現況、關鍵決策的理由，以及下一步的優先序。
+開發計畫的部分內容已被後續實測推翻，兩份 PoC 報告比計畫本身更接近現況。
