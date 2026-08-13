@@ -3,9 +3,9 @@ document:
   semester: 1
   exam_seq: 1
   school: 新北市立蘆洲國民中學
+  grade: 7
   subject: 數學
   scope_note: 1-1~1-4        7   年_____班______號  姓名:_________________ (非電腦
-  grade: 7
   city: 新北
   school_short: 蘆洲
   id: doc_113_新北_蘆洲_數學_g7s1e1
@@ -13,11 +13,16 @@ document:
   exam_name: 113學年度第1學期第1次定期評量
   sections:
   - ord: 1
+    name: 一、選擇題
+    type: single
+    score_rule: 一、選擇題:(每題4分,共40分)
+    count: 10
+  - ord: 2
     name: 二、填充題
     type: fill
     score_rule: 二、填充題:(每格4分,共52分)
     count: 7
-  - ord: 2
+  - ord: 3
     name: 三、計算題
     type: calc
     score_rule: 三、計算題:(每題4分,共8分,請詳細
@@ -26,13 +31,167 @@ questions:
 - id: doc_113_新北_蘆洲_數學_g7s1e1_s1_1
   section: 1
   number: 1
+  type: single
+  page: 1
+  stem: 在數線上將-1與-2兩點間的部分 分成10等分後,得9個等分點,那麼 由右向左數第7個等分點所表示的數 為何?
+  options:
+  - label: A
+    content: '-0.7'
+  - label: B
+    content: '-1.7'
+  - label: C
+    content: '-2.7'
+  - label: D
+    content: '-7'
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列關於正、負數的敘述何者錯誤?
+  options:
+  - label: A
+    content: -1是最大的負整數。
+  - label: B
+    content: 如果a是負數,則-a就是正數。
+  - label: C
+    content: 如果a是負數,則|a|=-a。
+  - label: D
+    content: 給定兩數a、b,可得a>b或a<b。
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 下列甲、乙、丙、丁的敘述哪些正確? 甲:-5的相反數是5乙:0的相反數是0丙:|-8|的相反數是-8丁:的相反數是2
+  options:
+  - label: A
+    content: 甲、乙
+  - label: B
+    content: 丙、丁
+  - label: C
+    content: 甲、乙、丙
+  - label: D
+    content: 甲、乙、丙、丁
+  assets:
+  - key: p1_f01
+    kind: figure
+    file: p1_f01.png
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 下列哪一個數加上(-6)後,其絕對值 會大於18?
+  options:
+  - label: A
+    content: '-13'
+  - label: B
+    content: '-12'
+  - label: C
+    content: '-11'
+  - label: D
+    content: '-10'
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 小南原本在數線上(-2)的位置,後來 又往左邊走9個單位,則下列哪個 選項可以表示小南最後的位置?
+  options:
+  - label: A
+    content: (-2)+9
+  - label: B
+    content: 2+9
+  - label: C
+    content: (-2)+(-9)
+  - label: D
+    content: 2+(-9)
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 已知丙<乙<甲,下列敘述 七年級 數學科 第1頁,共2頁 何者正確?
+  options:
+  - label: A
+    content: 丙必為負數
+  - label: B
+    content: 甲必為正數
+  - label: C
+    content: 甲、丙互為相反數
+  - label: D
+    content: 丙-甲<0
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 算式699×(-29)與下列哪一個算式的 答案相同?
+  options:
+  - label: A
+    content: 700×(-29)+1×(-29)
+  - label: B
+    content: 700×(-29)-1×(-29)
+  - label: C
+    content: 699×(-29)-1×(-29)
+  - label: D
+    content: 699×(-30)+1×(-30)
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 比較各數的大小,下列何者正 確? 甲=(-3)10、乙=(-3)11、 丙=(-3)12
+  options:
+  - label: A
+    content: 丙>乙>甲
+  - label: B
+    content: 乙>甲>丙
+  - label: C
+    content: 丙>甲>乙
+  - label: D
+    content: 甲>丙>乙
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 判斷下列哪個等式是正確的?
+  options:
+  - label: A
+    content: -(5×5)=(-5)2
+  - label: B
+    content: (-5)×(-5)×(-5)=(-5)3
+  - label: C
+    content: (-5)×(-5)×(-5)×(-5)=-54
+  - label: D
+    content: (-5)+(-5)+(-5)+(-5)=(-5)4
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 下列選項中,哪一選項式子的答案 性質 符號不同 於其他三者?
+  options:
+  - label: A
+    content: (-12) 11(-10)9(-8)
+  - label: B
+    content: 12(-11) 10(-9)8
+  - label: C
+    content: (-11)1098(-7)
+  - label: D
+    content: (-11)(-10)9(-8)(-7)
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_1
+  section: 2
+  number: 1
   type: fill
   page: 2
   stem: '計算下列各式的值: (1) (-752)+165-(-652)=________。 (2)|-25|-|-75|-16= 。 (3) (-1654)-(86-1655)=________。
     (4)|8×(-2)-5|÷7×(-4)=________。 (5) 9×(-135)-9×(-35)= 。 (6) 168×(-2002)=________。
     (7) (-22)×(-16)÷(-2)3-52=________。'
-- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_2
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_2
+  section: 2
   number: 2
   type: fill
   page: 2
@@ -47,51 +206,51 @@ questions:
   - key: p2_f03
     kind: figure
     file: p2_f03.png
-- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_3
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_3
+  section: 2
   number: 3
   type: fill
   page: 2
   stem: '數學考試若以80分為基準,小敏的成績是89分,就記為+9分,則: P.7例1小雯的成績是63分,應記為     分。'
-- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_4
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_4
+  section: 2
   number: 4
   type: fill
   page: 2
   stem: A=3.1×106、B=0.64×105、C=8.2×104,請 將A、B、C由大至小排列 為     。
-- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_5
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_5
+  section: 2
   number: 5
   type: fill
   page: 2
   stem: 電子顯微鏡可以觀察到0.00000014公尺 大小的細胞,以科學記號表示 為     公尺。 七年級 數學科 第2頁,共2頁2
-- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_6
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_6
+  section: 2
   number: 6
   type: fill
   page: 2
   stem: '已知地球的質量約為5.97×1021公噸,請 判斷將5.97×1021乘開,則這個數是幾位 數?答: 位數'
-- id: doc_113_新北_蘆洲_數學_g7s1e1_s1_7
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_7
+  section: 2
   number: 7
   type: fill
   page: 2
   stem: 政府發放老人年金每人每月3000元,若 全國符合條件的長者約250萬人,則政府 每年需負擔老人年金之經費 為     元。(以科學記號表示)
-- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_1
-  section: 2
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s3_1
+  section: 3
   number: 1
   type: calc
   page: 2
   stem: '有一份試卷共25題,答對1題可得4分, 答錯1題倒扣2分,未作答則沒得分也不扣 分。如果小美在這次考試中未作答2題, 答錯4題,請問: (1) 小美答對多少題?(1分)
     (2) 小美在這次考試中得多少分?(3分)'
-- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_2
-  section: 2
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s3_2
+  section: 3
   number: 2
   type: calc
   page: 2
   stem: 在下圖3×3的方格紙中,填入適當的整數, 使得其橫列、直行及對角線的數字和均相等 求a、b、c、d分別是多少?(各1分) b -5 a d -1 -2
-- id: doc_113_新北_蘆洲_數學_g7s1e1_s2_3
-  section: 2
+- id: doc_113_新北_蘆洲_數學_g7s1e1_s3_3
+  section: 3
   number: 3
   type: calc
   page: 2

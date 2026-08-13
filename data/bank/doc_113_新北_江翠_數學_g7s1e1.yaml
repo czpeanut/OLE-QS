@@ -3,9 +3,9 @@ document:
   semester: 1
   exam_seq: 1
   school: 新北市立江翠國民中學
+  grade: 7
   subject: 數學
   scope_note: 康軒版第一冊1-1至1-4 。  (二)本試卷含答案卷共4頁(前兩頁雙面印製,第3、4頁單面印製)。  (三)全部試題共
-  grade: 7
   city: 新北
   school_short: 江翠
   id: doc_113_新北_江翠_數學_g7s1e1
@@ -13,11 +13,16 @@ document:
   exam_name: 113學年度第1學期第1次定期評量
   sections:
   - ord: 1
+    name: 一、選擇題
+    type: single
+    score_rule: 一、選擇題:(每題4分,佔48%)
+    count: 12
+  - ord: 2
     name: 二、填充題
     type: fill
     score_rule: 二、填充題:(每題4分,佔40%)
     count: 10
-  - ord: 2
+  - ord: 3
     name: 三、素養題
     type: fill
     score_rule: 三、素養題:(每題6分,佔12%)
@@ -26,80 +31,261 @@ questions:
 - id: doc_113_新北_江翠_數學_g7s1e1_s1_1
   section: 1
   number: 1
-  type: fill
-  page: 2
-  stem: 小蓁某次段考的分數,若以80分為基準,各科的得分與基準的比較,如下表所示,已知國文科的 分數為78分。 (1-1習作) 科目 國文 英語 數學 自然
-    社會 與基準的比較 -2 +8 +13 0. -3請問:小蓁的五科總分是多少分?             分。
+  type: single
+  page: 1
+  stem: 數線上有A、B、C三點,請問A點的坐標是多少?(1-1習作) C B A -1 -2 -3 1 0 2
+  options:
+  - label: A
+    content: '-2.5'
+  - label: B
+    content: '1.3'
+  - label: C
+    content: 1 2 5
+  - label: D
+    content: 1 3 5
 - id: doc_113_新北_江翠_數學_g7s1e1_s1_2
   section: 1
   number: 2
-  type: fill
-  page: 2
-  stem: 已知b為整數,又|b|<7.1,則b的可能值有多少個?             個。 (1-1習作)
+  type: single
+  page: 1
+  stem: 數線上有A(5)、B(-11)、C(c)三點,若C為A、B的中點,則c是多少? (1-2課本)
+  options:
+  - label: A
+    content: '-2'
+  - label: B
+    content: '-3'
+  - label: C
+    content: '-4'
+  - label: D
+    content: '-5'
 - id: doc_113_新北_江翠_數學_g7s1e1_s1_3
   section: 1
   number: 3
-  type: fill
-  page: 2
-  stem: 小寳利用實驗室裡的顯微鏡觀察四種不同大小的微生物,並以科學記號 微生物 大小(mm) 記錄其大小,如右表,則這四種微生物A、B、C、D的大小關係為何?
-    A
+  type: single
+  page: 1
+  stem: 若a、b、c為任意三個整數,且a、b、c皆不為0,則下列算式何者不正確? (1-3課本)
+  options:
+  - label: A
+    content: (a+b)×c=a×c+b×c
+  - label: B
+    content: (a-b)÷c=a÷c-b÷c
+  - label: C
+    content: c×(a+b)=c×a+c×b
+  - label: D
+    content: a÷(b+c)=a÷b+a÷c
   answer:
   - d
 - id: doc_113_新北_江翠_數學_g7s1e1_s1_4
   section: 1
   number: 4
-  type: fill
-  page: 2
-  stem: 6×10 -4 B
+  type: single
+  page: 1
+  stem: 諾羅病毒是最常引起腸胃炎的病毒之一,其直徑大小約為27奈米,即0.000000027公尺。 試將0.000000027以科學記號表示。 (1-4課本)
+    -10
+  options:
+  - label: B
+    content: 2.7×10 -9
+  - label: C
+    content: 2.7×10 -8
+  - label: D
+    content: 2.7×10 -7
+  - label: A
+    content: 2.7×10
 - id: doc_113_新北_江翠_數學_g7s1e1_s1_5
   section: 1
   number: 5
-  type: fill
-  page: 2
-  stem: 3×10 -5 C 1.7×10 -3 D 9.8×10 -5 。 (以>、<或=表示) (1-4課本) 4. 計算 (-26)-9×[(-8)-|-5|]
-    的值等於多少?              。 (1-3課本) 5. 利用分配律計算 (-96)×84+(-96)×16之值為何?              。
-    (1-3習作)
+  type: single
+  page: 1
+  stem: 已知5×6×7×8×9=15120,則(-6)×(-7)×(-8)×(-9)×(-10)=? (ch1習作)
+  options:
+  - label: A
+    content: '-30120'
+  - label: B
+    content: '-30240'
+  - label: C
+    content: '-30360'
+  - label: D
+    content: '30600'
 - id: doc_113_新北_江翠_數學_g7s1e1_s1_6
   section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 將-5、2.5、-(-1 2)、0、|-6|、(-3)的相反數,這六個數由小至大排列,請問哪個選項 是正確的? (1-1課本)
+  options:
+  - label: A
+    content: '|-6|<-5<0<-(-1 2)<2.5<(-3)的相反數'
+  - label: B
+    content: -5<0<-(-1 2)<(-3)的相反數<2.5<|-6|
+  - label: C
+    content: -5<0<-(-1 2)<2.5<(-3)的相反數<|-6|
+  - label: D
+    content: -5<-(-1 2)<0<(-3)的相反數<2.5<|-6| a b c -5 -2 1. 3. d e
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 在右圖3×3的方格紙中,填入適當的整數,使得其橫列、直行及對角線的 數字和均相等,則:a+b+c+d+e=? (1-2習作)
+  options:
+  - label: A
+    content: '-15'
+  - label: B
+    content: '-12'
+  - label: C
+    content: '-9'
+  - label: D
+    content: '-6'
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 有一份試卷共20題,答對1題可得5分,答錯1題倒扣2分,未作答則未得分也不扣分。 若小傑共作答了18題,其中答對15題,則小傑應得多少分? (1-3課本)
+  options:
+  - label: A
+    content: '69'
+  - label: B
+    content: '70'
+  - label: C
+    content: '71'
+  - label: D
+    content: 73 【背面尚有試題,繼續加油!】 1新北市立江翠國民中學113學年度第一學期第1次定期考查七年級數學科試題卷  P.2 n×28+(-1)
+      m×65等於多少? (1-4課本)
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 若n為奇數,m為偶數,則(-1)
+  options:
+  - label: A
+    content: '-37'
+  - label: B
+    content: '-43'
+  - label: C
+    content: '43'
+  - label: D
+    content: 37 2-(-6) 2×(14-4 2)」的值為何? (1-4課本)
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: 計算「6
+  options:
+  - label: A
+    content: '108'
+  - label: B
+    content: '84'
+  - label: C
+    content: '-36'
+  - label: D
+    content: '-60'
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 2
+  stem: 小琳與朋友們走進一間創意冰品店,價目表如右圖,若他們想合點 一碗三姊妹雪再加8樣配料,且小琳拿250元去結帳,是否足夠? 剩下或不夠多少元? (1-4課本)
+  options:
+  - label: A
+    content: 否,不夠20元
+  - label: B
+    content: 否,不夠10元
+  - label: C
+    content: 足夠,剩下10元
+  - label: D
+    content: 足夠,剩下30元
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 2
+  stem: 右圖為熊熊航空公司推出臺北飛往東京機票促銷活動。 已知活動期間,阿宸以早鳥優惠價買到4張機票,共花68000元。若優惠限量150張機票全數售出,則熊熊航
+    空公司總銷售金額為多少元? (ch1習作)
+  options:
+  - label: A
+    content: 255萬
+  - label: B
+    content: 270萬
+  - label: C
+    content: 285萬
+  - label: D
+    content: 300萬
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 小蓁某次段考的分數,若以80分為基準,各科的得分與基準的比較,如下表所示,已知國文科的 分數為78分。 (1-1習作) 科目 國文 英語 數學 自然
+    社會 與基準的比較 -2 +8 +13 0. -3請問:小蓁的五科總分是多少分?             分。
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知b為整數,又|b|<7.1,則b的可能值有多少個?             個。 (1-1習作)
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 小寳利用實驗室裡的顯微鏡觀察四種不同大小的微生物,並以科學記號 微生物 大小(mm) 記錄其大小,如右表,則這四種微生物A、B、C、D的大小關係為何?
+    A 4.6×10 -4 B 5.3×10 -5 C 1.7×10 -3 D 9.8×10 -5 。 (以>、<或=表示) (1-4課本)
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 計算 (-26)-9×[(-8)-|-5|] 的值等於多少?              。 (1-3課本)
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 利用分配律計算 (-96)×84+(-96)×16之值為何?              。 (1-3習作)
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_6
+  section: 2
   number: 6
   type: fill
   page: 2
   stem: 比-21 1 4大,且比18 3 8小的所有整數的和為多少?                。 (1-1課本) 【尚有試題,繼續加油!】 2新北市立江翠國民中學113學年度第一學期第1次定期考查七年級數學科試題卷  P.3
-- id: doc_113_新北_江翠_數學_g7s1e1_s1_7
-  section: 1
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_7
+  section: 2
   number: 7
   type: fill
   page: 3
   stem: 數線上有A(-14)、B(b)、C(c)三點,若C為AB̅̅̅的中點,而且AB̅̅̅=6,則c可能為多少?              。 (1-2習作)
-- id: doc_113_新北_江翠_數學_g7s1e1_s1_8
-  section: 1
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_8
+  section: 2
   number: 8
   type: fill
   page: 3
   stem: 教室裡有6個塑膠箱,每個塑膠箱內有6個紙箱,每個紙箱內有6個木箱,每個木箱內有5個鐵箱, 每個鐵箱內有7個吊飾,請問:塑膠箱、木箱、吊飾等三種數量的總和為多少?            個。
     (答案可以乘開化簡,亦可以指數記法表示而不化簡)(1-4習作)
-- id: doc_113_新北_江翠_數學_g7s1e1_s1_9
-  section: 1
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_9
+  section: 2
   number: 9
   type: fill
   page: 3
   stem: 若甲×295=10030,則(甲-8)×295-甲×29.5=?              。(1-3課本)
-- id: doc_113_新北_江翠_數學_g7s1e1_s1_10
-  section: 1
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_10
+  section: 2
   number: 10
   type: fill
   page: 3
   stem: 現在曉東,筱曦兩人在長為50公尺的游泳池之相對兩端同時出發游泳,游到另一端便立即返回, 若每秒曉東游3公尺而筱曦每秒游2公尺,請問:從兩人同時出發開始計時11分鐘內,兩人相遇
     了多少次?            次。 (1-3課本)
-- id: doc_113_新北_江翠_數學_g7s1e1_s2_1
-  section: 2
+- id: doc_113_新北_江翠_數學_g7s1e1_s3_1
+  section: 3
   number: 1
   type: fill
   page: 3
   stem: 請利用下方數線,標記出各點的位置(包含符號及坐標):A(-4)、B(-2 1 4 )、C(-0.5)、D( 3 7 )。 (每個點標記錯誤扣2分)
     1 0 -3 -4 -2 -1
-- id: doc_113_新北_江翠_數學_g7s1e1_s2_2
-  section: 2
+- id: doc_113_新北_江翠_數學_g7s1e1_s3_2
+  section: 3
   number: 2
   type: fill
   page: 3

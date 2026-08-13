@@ -8,7 +8,7 @@
 ```bash
 pip install -r requirements.txt
 
-# 1) 載入題庫（附了 289 份擷取結果，5529 題）
+# 1) 載入題庫（附了 297 份擷取結果，6176 題）
 python -m apps.api.importer data/bank/
 
 # 2) 啟動

@@ -3,9 +3,9 @@ document:
   semester: 1
   exam_seq: 2
   school: 新北市立蘆洲國民中學
+  grade: 7
   subject: 數學
   scope_note: 2-1~2-3        7   年_____班______號  姓名:_________________ (非電腦
-  grade: 7
   city: 新北
   school_short: 蘆洲
   id: doc_113_新北_蘆洲_數學_g7s1e2
@@ -13,6 +13,16 @@ document:
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
+    name: 一、是非題
+    type: tf
+    score_rule: 一、是非題:(每題2分)
+    count: 9
+  - ord: 2
+    name: 二、選擇題
+    type: single
+    score_rule: 二、選擇題:(每題4分)
+    count: 10
+  - ord: 3
     name: 三、填充題
     type: fill
     score_rule: 三、填充題:(第1~9題,每題4分;第10、11題,
@@ -21,65 +31,271 @@ questions:
 - id: doc_113_新北_蘆洲_數學_g7s1e2_s1_1
   section: 1
   number: 1
+  type: tf
+  page: 1
+  stem: 最小的質數是2,也是質數中唯一的偶數。
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_2
+  section: 1
+  number: 2
+  type: tf
+  page: 1
+  stem: 若兩個整數互質,則這兩個整數的最大公因 數必為1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_3
+  section: 1
+  number: 3
+  type: tf
+  page: 1
+  stem: 若a是3的倍數,則a一定也是9的倍數。
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_4
+  section: 1
+  number: 4
+  type: tf
+  page: 1
+  stem: 若兩個整數互質,則這兩個整數都是質數。
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_5
+  section: 1
+  number: 5
+  type: tf
+  page: 1
+  stem: 所有整數都有倒數。 (   )6.0是11的倍數。
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_7
+  section: 1
+  number: 7
+  type: tf
+  page: 1
+  stem: 兩個質數必互質。
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_8
+  section: 1
+  number: 8
+  type: tf
+  page: 1
+  stem: 所有大於1的正整數的正因數個數都是偶數 個。
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_9
+  section: 1
+  number: 9
+  type: tf
+  page: 1
+  stem: 在1到100的整數中,扣除25個質數後,剩 下的數皆為合數。 3×3 2×7為2 2×7的倍數。
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_10
+  section: 1
+  number: 10
+  type: tf
+  page: 1
+  stem: '2'
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 1
+  stem: 下列何者為質數?
+  options:
+  - label: A
+    content: '49'
+  - label: B
+    content: '51'
+  - label: C
+    content: '71'
+  - label: D
+    content: '81'
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_2
+  section: 2
+  number: 2
+  type: single
+  page: 1
+  stem: 下列哪一組數互質?
+  options:
+  - label: A
+    content: 9、25
+  - label: B
+    content: 13、39
+  - label: C
+    content: 12、87
+  - label: D
+    content: 21、91 3×3 2的因數?
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_3
+  section: 2
+  number: 3
+  type: single
+  page: 1
+  stem: 下列何者為2 3
+  options:
+  - label: B
+    content: 2 4×3 2
+  - label: A
+    content: 2 2×3 3
+  - label: D
+    content: 2 3×5
+  - label: C
+    content: '2'
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_4
+  section: 2
+  number: 4
+  type: single
+  page: 1
+  stem: 已知3465=315×11=385×9=495×7=693×5,則 下列何者不是3465的質因數?
+  options:
+  - label: A
+    content: '11'
+  - label: B
+    content: '9'
+  - label: C
+    content: '7'
+  - label: D
+    content: '5'
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_5
+  section: 2
+  number: 5
+  type: single
+  page: 1
+  stem: '將正整數N的所有正因數由小到大排列如下: 1、2、a、b、c、32、N,則 七年級 數學科 第1頁,共2頁1 a+b+c=?'
+  options:
+  - label: A
+    content: '22'
+  - label: B
+    content: '24'
+  - label: C
+    content: '26'
+  - label: D
+    content: '28'
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_6
+  section: 2
+  number: 6
+  type: single
+  page: 1
+  stem: 請問-5 2 3 =?
+  options:
+  - label: A
+    content: -5+ 2 3
+  - label: B
+    content: -5- 2 3
+  - label: C
+    content: 5+ 2 3
+  - label: D
+    content: 5- 2 3
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_7
+  section: 2
+  number: 7
+  type: single
+  page: 1
+  stem: 小質玩【欣欣農場】時,發現高麗菜每45小 時可收成一次,小白菜每36小時可收成一次, 空心菜每30小時可收成一次。某次小質同時 收成這三種蔬菜,那麼最少要再幾小時,小
+    質 才可以再度同時收成這三種蔬菜?
+  options:
+  - label: A
+    content: 90小時
+  - label: B
+    content: 120小時
+  - label: C
+    content: 150小時
+  - label: D
+    content: 180小時
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_8
+  section: 2
+  number: 8
+  type: single
+  page: 1
+  stem: 已知a=( 5 26 - 4 25)- 3 23,b= 5 26 -( 4 25 - 3 23), c= 5 26 - 4 25 - 3 23,下列敘述何者正確?
+  options:
+  - label: A
+    content: a=b,b=c
+  - label: B
+    content: a=c,b≠c
+  - label: C
+    content: a≠c,b=c
+  - label: D
+    content: a≠c,b≠c
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_9
+  section: 2
+  number: 9
+  type: single
+  page: 1
+  stem: 古老的伊斯蘭數學書有提到一個當時遺產分 配的案例:當一位婦女過世時,留下丈夫、 一個兒子和三個女兒,丈夫可以取得全部財 產的1 4 ,兒子可以取得丈夫分完後剩下財產
+    的1 5 ,三個女兒則均分最後剩下的財產。請 計算丈夫、兒子及其中一個女兒誰分得的財 產最多?
+  options:
+  - label: A
+    content: 丈夫
+  - label: B
+    content: 兒子2
+  - label: C
+    content: 其中一個女兒 【試題結束】
+  - label: D
+    content: 一樣多
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s2_10
+  section: 2
+  number: 10
+  type: single
+  page: 2
+  stem: 有一瓶果汁,連瓶子共重600公克,小可喝 掉2 5瓶果汁後,剩餘的果汁連瓶子共重444公克,試問空瓶子重多少公克?
+  options:
+  - label: A
+    content: 184公克
+  - label: B
+    content: 205公克
+  - label: C
+    content: 210公克
+  - label: D
+    content: 224公克
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_1
+  section: 3
+  number: 1
   type: fill
   page: 2
   stem: 請寫出5 2 3的倒數為
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_2
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_2
+  section: 3
   number: 2
   type: fill
   page: 2
   stem: 計算2 3 - 1 3 ×(- 2 7)=
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_3
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_3
+  section: 3
   number: 3
   type: fill
   page: 2
   stem: 計算25 2 3 × 7 3 +22 2 3 ×(- 7 3)=
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_4
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_4
+  section: 3
   number: 4
   type: fill
   page: 2
   stem: 求[2 4×3×7 3,3 3×5×7 2,2 2×3 2×11] = (以標準分解式表示)
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_5
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_5
+  section: 3
   number: 5
   type: fill
   page: 2
   stem: 求(2 4×5 3,3 3×11 2)=
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_6
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_6
+  section: 3
   number: 6
   type: fill
   page: 2
   stem: 此數12×21×52的標準分解式為
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_7
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_7
+  section: 3
   number: 7
   type: fill
   page: 2
   stem: 小斑利用六位數231192的標準分解式2 a×b 2×13 c×19 d,將abcd作為手機螢幕鎖定的密碼, 則此密碼為
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_8
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_8
+  section: 3
   number: 8
   type: fill
   page: 2
   stem: 若六位數9n874n為11的倍數,則n=
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_9
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_9
+  section: 3
   number: 9
   type: fill
   page: 2
   stem: 老師將鉛筆115枝、橡皮擦85個,分給全班同學, 每人得到的鉛筆和橡皮擦的數量都相同,最後剩 下3枝鉛筆及1個橡皮擦。則全班最多有 位同學。
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_10
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_10
+  section: 3
   number: 10
   type: fill
   page: 2
   stem: 已知a=2 x×3×7,其中a是28的倍數,但不是24的倍數,則x =
-- id: doc_113_新北_蘆洲_數學_g7s1e2_s1_11
-  section: 1
+- id: doc_113_新北_蘆洲_數學_g7s1e2_s3_11
+  section: 3
   number: 11
   type: fill
   page: 2

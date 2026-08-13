@@ -1,9 +1,10 @@
 document:
   academic_year_roc: 113
   semester: 1
+  grade: 7
   subject: 數學
   scope_note: 康軒版第一冊第2章                          ◆ 命題教師:數學領域團隊老師  一、單一選擇題(
-  grade: 7
+  exam_seq: 2
   city: 新北
   school_short: 桃子腳
   school: 新北市立桃子腳國中
@@ -12,150 +13,391 @@ document:
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
+    name: 一、單一選擇題
     type: single
-    score_rule: 一、選擇題(每題5分,占50%)
+    score_rule: 一、單一選擇題(每題5分,占50%)【請在答案卷上作答】
     count: 10
   - ord: 2
     name: 二、填充題
     type: fill
-    score_rule: 二、填充題(每題4分,占40%)【如答案為分數,請以最簡分數作答】
+    score_rule: 二、填充題(每題4分,占40%)【如答案為分數,請以最簡分數作答,請在答案卷上作答】
     count: 10
   - ord: 3
     name: 三、綜合題
     type: fill
+    score_rule: 三、綜合題(每題5分,占10%)【請在答案卷上作答】
+    count: 2
+  - ord: 4
+    name: 一、選擇題
+    type: single
+    score_rule: 一、選擇題(每題5分,占50%)
+    count: 10
+  - ord: 5
+    name: 二、填充題
+    type: fill
+    score_rule: 二、填充題(每題4分,占40%)【如答案為分數,請以最簡分數作答】
+    count: 10
+  - ord: 6
+    name: 三、綜合題
+    type: fill
     score_rule: 三、綜合題(每題5分,占10%)
     count: 2
-  exam_seq: 2
 questions:
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: 若A= 32x5x7,則下列選項中所表示的數,何者是A的倍數?
+  options:
+  - label: A
+    content: 2x32x52x72
+  - label: B
+    content: 35x72x11
+  - label: C
+    content: 2x3x52x72
+  - label: D
+    content: 3x5x7
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: 已知a= 2x35x5x73, b= 22x35x5x75x11,  c= 35x5x17,則(a , b , c) = ?
+  options:
+  - label: A
+    content: 22x35x5x75x11x17
+  - label: B
+    content: 2x3x5x7x11x19
+  - label: C
+    content: 3x5
+  - label: D
+    content: 35x5
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: 下列各分數中,何者是最簡分數?
+  options:
+  - label: A
+    content: 39 15 18 11 16 72
+  - label: B
+    content: '64'
+  - label: C
+    content: '121'
+  - label: D
+    content: ''
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: 將−(3x3x3x3x3x3)以指數表示為下列何者?
+  options:
+  - label: A
+    content: (−3)6
+  - label: B
+    content: −36
+  - label: C
+    content: '36'
+  - label: D
+    content: (−6)3
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: 有一邊長為48cm的正方形木板。若將此木板劃分成數個大小相同的長方形,則此長方形的長與寬不 可能為下列哪一組?
+  options:
+  - label: A
+    content: 長24cm,寬12cm
+  - label: B
+    content: 長3cm,寬2cm
+  - label: C
+    content: 長16cm,寬9cm
+  - label: D
+    content: 長12cm,寬8cm
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: 在某座不知何處的大樓樓頂裝有粉紅色、紫色、藍色的三盞燈,其中粉紅燈每21分鐘閃一次,紫燈 每15分鐘閃一次,藍燈每24分鐘閃一次。若這三盞燈於晚上5點同時閃一次,則當晚9點19分
+    後,那一盞燈先閃?
+  options:
+  - label: A
+    content: 粉紅燈
+  - label: B
+    content: 紫燈
+  - label: C
+    content: 藍燈
+  - label: D
+    content: 三盞燈同時閃
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: 已知a= −3 919,判斷下列各式之值何者最大? 613  ,c= −5 4 509 ,b=
+  options:
+  - label: A
+    content: '|a+b+c|'
+  - label: B
+    content: '|a+b-c|'
+  - label: C
+    content: '|a-b+c|'
+  - label: D
+    content: '|a-b-c|'
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: 計算( 5)2=  ? 3 3 3 3 3 5)2+ ( 5)2+ ( 5)2+ ( 5)2+ (
+  options:
+  - label: A
+    content: 25 3 9 9 5
+  - label: B
+    content: '5'
+  - label: C
+    content: '9'
+  - label: D
+    content: ''
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: 已知axb = 315 ,且a、b是正整數,則b不可能是下列哪一個數?
+  options:
+  - label: A
+    content: '15'
+  - label: B
+    content: '21'
+  - label: C
+    content: '35'
+  - label: D
+    content: '33'
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
-  page: 3
-  stem: ''
+  page: 1
+  stem: n等於下列哪一個數時,可使3 n  為整數? 4 5 6 7 8 9 n+ n+ n+ n+ n+ n+
+  options:
+  - label: A
+    content: '14'
+  - label: B
+    content: '16'
+  - label: C
+    content: '18'
+  - label: D
+    content: '2520'
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
-  page: 3
-  stem: ''
+  page: 1
+  stem: '若甲=4,乙=27,丙=125,則[甲 , 乙 , 丙]=            (請以標準分解式作答)。 第1頁共4頁113學年度第一學期  【七】年級數學科   第【二】次段考試題
+    班級:           座號:       姓名:_________'
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: 設C為正整數,則使315 C亦為正整數的C有_________________個。
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: 丁數=(45 , 25),則丁數的所有正因數和為          。
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: 計算94 5+ 1之值 = _________________。 5+ 994 5+ 9994 5+ 99994 5+ 999994
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_5
   section: 2
   number: 5
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: 若某數b的倒數為3 5,則(−b)3= ___________。
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: '小園、小玖、小貞分別買了不同包裝的草莓牛奶,已知小園買的是500ml、價格是35元;小玖買的 是700ml、價格是45元;小貞買的是1200ml、價格是75元,則誰買的草莓牛奶平均1
+    ml的價格最 便宜? 答:         。'
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_7
   section: 2
   number: 7
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: '已知A + 919,則A與B何者較大? 3 3 509 = B + 答:         。'
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_8
   section: 2
   number: 8
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: 桌上有5杯抹茶,乙同學喝了7杯,則兩人共喝了________杯抹茶。 7 3 4杯,丙同學比乙同學少喝了
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_9
   section: 2
   number: 9
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: 597 613) = ______________。 613−(16 16 19−
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s2_10
   section: 2
   number: 10
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: 39x(−9693 5= ___________。 5) + (−39)x302
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s3_1
   section: 3
   number: 1
   type: fill
-  page: 3
-  stem: ''
+  page: 2
+  stem: 一邊長為55公分的正方形,將它的邊長增加為原來的1 5,請問正方形面積增加了多少?
 - id: doc_113_新北_桃子腳_數學_g7s1e2_s3_2
   section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: '好吃食品公司培養益生菌,然後經過加工步驟,製成好吃的食品。 假設益生菌在適當環境裡,1個益生菌每15小時可分裂成3個益生菌,且分裂後的益生菌亦可繼續
+    分裂。現在從1個益生菌開始培養,若期間益生菌皆未死亡且在適當環境之下,經過15天後,共 分裂成3j個益生菌,也能表示成9k個益生菌。則j與k之值為何? 第2頁共4頁113學年度第一學期  【七】年級數學科   第【二】次段考試題
+    班級:           座號:       姓名:_________ ※請用藍色或黑色筆作答'
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_2
+  section: 4
+  number: 2
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_3
+  section: 4
+  number: 3
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_4
+  section: 4
+  number: 4
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_5
+  section: 4
+  number: 5
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_6
+  section: 4
+  number: 6
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_7
+  section: 4
+  number: 7
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_8
+  section: 4
+  number: 8
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_9
+  section: 4
+  number: 9
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s4_10
+  section: 4
+  number: 10
+  type: single
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_1
+  section: 5
+  number: 1
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_2
+  section: 5
+  number: 2
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_3
+  section: 5
+  number: 3
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_4
+  section: 5
+  number: 4
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_5
+  section: 5
+  number: 5
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_6
+  section: 5
+  number: 6
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_7
+  section: 5
+  number: 7
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_8
+  section: 5
+  number: 8
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_9
+  section: 5
+  number: 9
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s5_10
+  section: 5
+  number: 10
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s6_1
+  section: 6
+  number: 1
+  type: fill
+  page: 3
+  stem: ''
+- id: doc_113_新北_桃子腳_數學_g7s1e2_s6_2
+  section: 6
   number: 2
   type: fill
   page: 3
