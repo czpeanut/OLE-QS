@@ -209,16 +209,61 @@ def split_options(text: str) -> tuple[str, list[dict]]:
     return stem, opts
 
 
+def decode_mojibake(s: str) -> str:
+    """還原 unzip 對非 ASCII 檔名的 #UXXXX 編碼。"""
+    return re.sub(r"#U([0-9a-fA-F]{4})", lambda m: chr(int(m.group(1), 16)), s)
+
+
+CITY_SET = {"台北", "新北", "桃園", "台中", "台南", "高雄", "基隆", "新竹", "嘉義",
+            "苗栗", "彰化", "南投", "雲林", "屏東", "宜蘭", "花蓮", "台東",
+            "澎湖", "金門", "連江", "臺北", "臺中", "臺南", "臺東"}
+
+
+def parse_path(path: Path, root: Path | None = None) -> dict:
+    """從檔案路徑取來源資訊。
+
+    實測整批考古題的目錄慣例是「年級-學期／縣市／學校.pdf」，
+    例如 1-1/台中/五權.pdf。這比解析卷頭可靠得多 ——
+    有相當比例的考卷根本沒在題目卷上印學校或學年度，
+    那些資訊只存在於檔名與資料夾。
+    """
+    parts = [decode_mojibake(x) for x in path.parts]
+    meta: dict = {}
+    for i, part in enumerate(parts):
+        norm_part = part.replace("臺", "台")
+        if norm_part in {c.replace("臺", "台") for c in CITY_SET}:
+            meta["city"] = norm_part
+            if i + 1 < len(parts):
+                meta["school_short"] = Path(parts[i + 1]).stem
+        if m := re.fullmatch(r"([1-3])-([12])", part):
+            meta["grade"] = GRADE_MAP[["一", "二", "三"][int(m.group(1)) - 1]]
+            meta["semester"] = int(m.group(2))
+    if meta.get("city") and meta.get("school_short"):
+        meta["school"] = f"{meta['city']}市{meta['school_short']}國中"
+    return meta
+
+
 def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None) -> dict | None:
     doc = fitz.open(path)
     meta = parse_header(doc[0].get_text("text"))
+    # 路徑優先於卷頭：卷頭常缺學校與年級，路徑的目錄慣例則穩定。
+    meta.update({k: v for k, v in parse_path(path).items() if v})
+    if not meta.get("academic_year_roc"):
+        # 卷頭沒印學年度時，在全文找一次
+        allyears = re.findall(r"(1\d{2})\s*學年度", " ".join(
+            pg.get_text("text") for pg in doc))
+        if allyears:
+            meta["academic_year_roc"] = int(max(set(allyears), key=allyears.count))
+    meta.setdefault("subject", "未分類")
     for field in ("academic_year_roc", "grade", "subject", "school"):
         if not meta.get(field):
             print(f"    ⚠ {path.name}：抓不到 {field}，跳過（來源標註不可缺）")
             doc.close()
             return None
 
-    stem_id = re.sub(r"[^\w]+", "_", path.stem).strip("_").lower()
+    stem_id = re.sub(r"[^\w]+", "_", decode_mojibake(str(path.stem))).strip("_").lower()
+    stem_id = f"{meta.get('city','')}_{stem_id}_{meta.get('grade','')}{meta.get('semester','')}"
+    stem_id = re.sub(r"[^\w]+", "_", stem_id).strip("_")
     doc_id = f"doc_{meta['academic_year_roc']}_{stem_id}"
 
     sections: list[dict] = []
