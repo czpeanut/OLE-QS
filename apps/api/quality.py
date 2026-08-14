@@ -93,6 +93,17 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
         if expect_n and len(flat) != expect_n:
             reasons.append(f"應有 {expect_n} 個答案，實際 {len(flat)} 個")
 
+        # 選擇題與是非題的答案只能是自己的選項代號。
+        # 答案卷是表格，解析時只要對錯一行，整段答案就會平移 ——
+        # 實測有整份卷的答案變成下一題的題號（第5題的答案是「7.」）。
+        # 這種錯誤最危險的地方在於它看起來很正常：欄位有值、狀態是
+        # verified，然後原封不動印在教師解答卷上當正解。
+        labels = {o.get("label") for o in opts}
+        if qtype in {"single", "tf", "multiple"} and labels:
+            stray = [a for a in flat if a not in labels]
+            if stray:
+                reasons.append(f"{qtype} 題的答案 {stray} 不在選項代號 {sorted(labels)} 之中")
+
     return (not reasons), reasons
 
 

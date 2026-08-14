@@ -212,10 +212,27 @@ def ask_anthropic(prompt: str, images: list[tuple[str, Path]], model: str) -> di
     return json.loads(m.group(0) if m else text)
 
 
+# 模型會下架 —— 實測 gemini-2.5-pro 已回「no longer available to new users」。
+# 預設寫在這裡，要換版本時用 .env.local 的 GEMINI_MODEL／ANTHROPIC_MODEL 覆蓋，
+# 不必改程式。
 PROVIDERS = {
-    "gemini": (ask_gemini, "GEMINI_API_KEY", "gemini-2.5-pro"),
-    "claude": (ask_anthropic, "ANTHROPIC_API_KEY", "claude-sonnet-5"),
+    "gemini": (ask_gemini, "GEMINI_API_KEY", "GEMINI_MODEL", "gemini-3.7-flash"),
+    "claude": (ask_anthropic, "ANTHROPIC_API_KEY", "ANTHROPIC_MODEL", "claude-sonnet-5"),
 }
+
+
+def redact(text: str) -> str:
+    """把金鑰從訊息裡拿掉。
+
+    HTTP 錯誤訊息會把整個請求 URL 印出來，而 Gemini 的金鑰是 query 參數 ——
+    不處理的話金鑰會被寫進作答結果的 YAML 檔，那個檔案是會留下來的。
+    """
+    text = re.sub(r"(key=)[^&\s]+", r"\1***", text)
+    for env in ("GEMINI_API_KEY", "ANTHROPIC_API_KEY"):
+        value = os.environ.get(env)
+        if value:
+            text = text.replace(value, "***")
+    return text
 
 
 # ─────────────────────────── 答案比對 ───────────────────────────
@@ -335,7 +352,7 @@ def main() -> int:
         name = name.strip()
         if name not in PROVIDERS:
             return sys.exit(f"未知的 provider：{name}（可用：{', '.join(PROVIDERS)}）")
-        _, env_key, _ = PROVIDERS[name]
+        _, env_key, _, _ = PROVIDERS[name]
         if not os.environ.get(env_key):
             print(f"⚠ 略過 {name}：環境變數 {env_key} 未設定")
             continue
@@ -352,11 +369,12 @@ def main() -> int:
             images = collect_images(q, doc, args.figures)
             results: dict[str, dict] = {}
             for name in chosen:
-                fn, _, model = PROVIDERS[name]
+                fn, _, model_env, default_model = PROVIDERS[name]
+                model = os.environ.get(model_env) or default_model
                 try:
                     results[name] = fn(prompt, images, model)
                 except Exception as exc:
-                    results[name] = {"error": f"{type(exc).__name__}: {exc}"}
+                    results[name] = {"error": redact(f"{type(exc).__name__}: {exc}")}
             status, note = judge(results)
             return {"id": q.get("id"), "number": q.get("number"), "type": q.get("type"),
                     "images_sent": len(images), "status": status, "note": note,
