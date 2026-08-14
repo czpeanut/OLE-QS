@@ -137,6 +137,169 @@ def table_text(tab) -> str:
     return "\n".join(lines)
 
 
+# ───────────────────────── 分數結構重建 ─────────────────────────
+#
+# PDF 裡的分數沒有「分數」這個東西，只有三樣分開的物件：上面一列字、
+# 一條線段、下面一列字。get_text() 只看得到文字，於是 ½ 被攤平成「1 2」，
+# 而 -5½ 變成「-5 1 2」—— 題目字面上就已經是錯的，之後不管誰來作答
+# （老師、模型）都在解一題不存在的題目。實測影響 21% 的題目。
+#
+# 重建的依據是那條線：找出分數線，再把貼著它上下兩側的字撿回來。
+
+CJK_RANGE = ("㐀", "鿿")
+
+
+def _has_cjk(s: str) -> bool:
+    return any(CJK_RANGE[0] <= c <= CJK_RANGE[1] for c in s)
+
+
+def fraction_bars(page) -> list[tuple[float, float, float]]:
+    """頁面上所有可能是分數線的水平線，回傳 (x0, x1, y)。
+
+    上限 60pt 是因為分數線只需容納分子分母，再長就是表格框線或填答底線。
+
+    線段與矩形都要看 —— 有些排版軟體把分數線畫成線段（items 的 "l"），
+    有些畫成高度不到 1pt 的填滿矩形（"re"）。只認線段的話，後者整份卷的
+    分數都會漏掉（實測板橋卷即是如此）。
+    """
+    out = []
+    for drawing in page.get_drawings():
+        for item in drawing["items"]:
+            if item[0] == "l":
+                a, b = item[1], item[2]
+                if abs(a.y - b.y) < 0.8 and 3 < abs(a.x - b.x) < 60:
+                    out.append((min(a.x, b.x), max(a.x, b.x), (a.y + b.y) / 2))
+            elif item[0] == "re":
+                r = item[1]
+                if r.height < 2 and 3 < r.width < 60:
+                    out.append((r.x0, r.x1, (r.y0 + r.y1) / 2))
+    return out
+
+
+def _side_chars(chars, bx0, bx1, by, lo, hi):
+    """分數線某一側的字元，且必須整個字都落在線的寬度之內。"""
+    got = []
+    for ch in chars:
+        if ch["frac"] is not None or ch["c"].isspace():
+            continue
+        h = ch["h"] or 8.0
+        if not (lo * h < ch["cy"] - by < hi * h):
+            continue
+        if ch["x0"] < bx0 - 2 or ch["x1"] > bx1 + 2:
+            continue
+        got.append(ch)
+    return got
+
+
+def find_fractions(page, chars: list[dict]) -> list[dict]:
+    """配對分數線與其上下的字元，就地在 chars 標記歸屬。
+
+    誤判的來源是表格框線與填答底線 —— 它們同樣是水平線，上下也同樣有字。
+    分辨的關鍵是**貼合度**：分數線是為了分子分母而畫的，長度跟著它們走；
+    框線則遠寬於碰巧落在範圍內的那幾個字。
+    """
+    found: list[dict] = []
+    for bx0, bx1, by in fraction_bars(page):
+        width = bx1 - bx0
+        above = _side_chars(chars, bx0, bx1, by, -1.7, -0.15)
+        below = _side_chars(chars, bx0, bx1, by, 0.15, 1.7)
+        if not above or not below:
+            continue
+
+        num = "".join(c["c"] for c in sorted(above, key=lambda c: c["x0"])).strip()
+        den = "".join(c["c"] for c in sorted(below, key=lambda c: c["x0"])).strip()
+        if not num or not den or len(num) > 8 or len(den) > 8:
+            continue
+        if _has_cjk(num) or _has_cjk(den):
+            continue
+        # 分子分母都得有實質內容 —— 擋掉「……」與連續底線這類版面裝飾
+        if not any(c.isalnum() for c in num) or not any(c.isalnum() for c in den):
+            continue
+        # 括號必須成對。答案格的編號「(1) (2)」上下相鄰時很像分子分母，
+        # 湊出 \frac{(1}{4)} 這種東西 —— 真正的分數不會把括號拆開。
+        if any(s.count("(") != s.count(")") or s.count("（") != s.count("）")
+               for s in (num, den)):
+            continue
+
+        # 線的長度是照分子分母裡**較寬的那一側**畫的（1/12 的分子只有一個字，
+        # 線卻有兩位數那麼寬），所以只能要求較寬的一側貼合，不能兩側都要求。
+        span_n = max(c["x1"] for c in above) - min(c["x0"] for c in above)
+        span_d = max(c["x1"] for c in below) - min(c["x0"] for c in below)
+        if max(span_n, span_d) < width * 0.35:
+            continue
+
+        idx = len(found)
+        for ch in above:
+            ch["frac"], ch["role"] = idx, "num"
+        for ch in below:
+            ch["frac"], ch["role"] = idx, "den"
+        found.append({"num": num, "den": den,
+                      "anchor": min(c["x0"] for c in above)})
+    return found
+
+
+def text_blocks(page) -> list[tuple]:
+    """與 page.get_text("blocks") 同形狀，但堆疊的分數已還原成 $\\frac{a}{b}$。
+
+    分子與分母在 rawdict 裡是同一區塊的相鄰兩行。做法是照原本的行結構
+    重組文字，把分子那一段換成 LaTeX，分母那幾個字直接略過；
+    只剩空白的行（原本整行都是分母）就不輸出，免得多出空行。
+    """
+    raw = page.get_text("rawdict")["blocks"]
+
+    chars: list[dict] = []
+    for bi, blk in enumerate(raw):
+        if blk.get("type") != 0:
+            continue
+        for li, line in enumerate(blk.get("lines", [])):
+            for span in line.get("spans", []):
+                for ch in span.get("chars", []):
+                    x0, y0, x1, y1 = ch["bbox"]
+                    chars.append({"c": ch["c"], "bi": bi, "li": li,
+                                  "x0": x0, "x1": x1,
+                                  "cy": (y0 + y1) / 2, "h": y1 - y0,
+                                  "frac": None, "role": None})
+
+    fracs = find_fractions(page, chars)
+    if not fracs:
+        return list(page.get_text("blocks"))
+
+    grouped: dict[tuple[int, int], list[dict]] = {}
+    for ch in chars:
+        grouped.setdefault((ch["bi"], ch["li"]), []).append(ch)
+
+    # 每個分數整頁只輸出一次，位置取它第一個字元出現的地方。
+    # 不能改成「每行一次」—— 數學排版的 PDF 會把分子的每個字元各放一行
+    # （x、－、20 各自成行），那樣同一個分數會被輸出三次。
+    emitted: set[int] = set()
+
+    out: list[tuple] = []
+    for bi, blk in enumerate(raw):
+        if blk.get("type") != 0:
+            continue
+        lines_out: list[str] = []
+        for li, _ in enumerate(blk.get("lines", [])):
+            buf: list[str] = []
+            for ch in sorted(grouped.get((bi, li), []), key=lambda c: c["x0"]):
+                fid = ch["frac"]
+                if fid is None:
+                    buf.append(ch["c"])
+                    continue
+                if fid not in emitted:
+                    f = fracs[fid]
+                    buf.append(f"$\\frac{{{f['num']}}}{{{f['den']}}}$")
+                    emitted.add(fid)
+                # 該分數的其餘字元（含分母）都已包在上面那個 token 裡
+            text = "".join(buf)
+            if text.strip():
+                lines_out.append(text)
+        body = "\n".join(lines_out)
+        if body.strip():
+            x0, y0, x1, y1 = blk["bbox"]
+            out.append((x0, y0, x1, y1, body + "\n", bi, 0))
+    return out
+
+
 def reading_order(page) -> list[tuple[float, float, float, float, str]]:
     """回傳依閱讀順序排好的文字區塊。雙欄時先左欄由上而下，再右欄。
 
@@ -179,7 +342,7 @@ def reading_order(page) -> list[tuple[float, float, float, float, str]]:
         return any(x0 <= cx <= x1 and y0 <= cy <= y1
                    for x0, y0, x1, y1, _ in tables)
 
-    blocks = [b for b in page.get_text("blocks")
+    blocks = [b for b in text_blocks(page)
               if (b[4] or "").strip() and not inside_table(b)]
     items = blocks + tables
     if not items:
