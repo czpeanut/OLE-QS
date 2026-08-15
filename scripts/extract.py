@@ -76,6 +76,14 @@ GRADE_HEAD_CHARS = 200
 # 照單全收的話一題會掛上兩千多張圖，圖檔目錄也會爆掉。
 MAX_FIGURES_PER_PAGE = 60
 
+# 題幹自己說「需要看圖」的寫法。圖形歸屬時用它加權。
+# 涵蓋面要夠寬：漏掉一種寫法，那類題目的圖就會被旁邊不需要圖的題搶走
+# —— 實測「圖為七年18班…次數分配折線圖」因為不是「右圖／如圖」開頭，
+# 那張折線圖被判給了隔壁的「點P在第三象限」。
+FIG_REF_RE = re.compile(
+    r"右圖|下圖|上圖|左圖|如圖|附圖|依圖|由圖|圖[(（]|圖為|圖中|圖示"
+    r"|折線圖|長條圖|圓形圖|統計圖|示意圖|分布圖|圖形|數線|坐標|方格")
+
 TYPE_BY_NAME = [
     ("選擇", "single"), ("單選", "single"), ("多選", "multiple"),
     ("是非", "tf"), ("填充", "fill"), ("填空", "fill"),
@@ -300,14 +308,52 @@ def text_blocks(page) -> list[tuple]:
     return out
 
 
-def reading_order(page) -> list[tuple[float, float, float, float, str]]:
+def page_items(page, tables) -> list[tuple]:
+    """本頁的文字區塊與表格，落在表格範圍內的文字區塊會跳過。"""
+    def inside_table(b) -> bool:
+        cx, cy = (b[0] + b[2]) / 2, (b[1] + b[3]) / 2
+        return any(x0 <= cx <= x1 and y0 <= cy <= y1
+                   for x0, y0, x1, y1, _ in tables)
+
+    blocks = [b for b in text_blocks(page)
+              if (b[4] or "").strip() and not inside_table(b)]
+    return blocks + tables
+
+
+def is_two_column(items: list[tuple], mid: float) -> bool:
+    """這一頁是不是雙欄排版。
+
+    圖形歸屬必須知道這件事。單欄版面裡，「右圖」就放在題目文字的右側，
+    x 座標自然超過頁面中線 —— 若無條件把它算成「右欄」，而題目文字算成
+    「左欄」，兩者永遠配不起來，圖就掛不上任何題目。
+    """
+    right = [b for b in items if b[0] > mid]
+    return len(right) >= max(3, len(items) * 0.2)
+
+
+def reading_order(page, tables=None) -> list[tuple[float, float, float, float, str]]:
     """回傳依閱讀順序排好的文字區塊。雙欄時先左欄由上而下，再右欄。
 
     表格會先被抽出來整塊處理（見 table_text），落在表格範圍內的文字區塊
-    則跳過，避免同一段文字出現兩次。
+    則跳過，避免同一段文字出現兩次。表格偵測不便宜，呼叫端若已經算過
+    就把結果傳進來。
     """
     mid = (page.rect.x0 + page.rect.x1) / 2
+    tables = table_regions(page) if tables is None else tables
+    items = page_items(page, tables)
+    if not items:
+        return []
+    two_col = is_two_column(items, mid)
 
+    def key(b):
+        col = 1 if (two_col and b[0] > mid) else 0
+        return (col, round(b[1], 1), round(b[0], 1))
+
+    return sorted(items, key=key)
+
+
+def table_regions(page) -> list[tuple[float, float, float, float, str]]:
+    """頁面上真正的表格，回傳 (x0, y0, x1, y1, 攤平後的文字)。"""
     tables = []
     try:
         found = page.find_tables().tables
@@ -336,25 +382,133 @@ def reading_order(page) -> list[tuple[float, float, float, float, str]]:
         text = table_text(tab)
         if text:
             tables.append((x0, y0, x1, y1, text))
+    return tables
 
-    def inside_table(b) -> bool:
-        cx, cy = (b[0] + b[2]) / 2, (b[1] + b[3]) / 2
-        return any(x0 <= cx <= x1 and y0 <= cy <= y1
-                   for x0, y0, x1, y1, _ in tables)
 
-    blocks = [b for b in text_blocks(page)
-              if (b[4] or "").strip() and not inside_table(b)]
-    items = blocks + tables
-    if not items:
-        return []
-    right = [b for b in items if b[0] > mid]
-    two_col = len(right) >= max(3, len(items) * 0.2)
+# ───────────────────────── 向量圖形 ─────────────────────────
+#
+# get_images() 只找得到「嵌入的點陣圖」。國中數學卷的幾何圖、數線、
+# 長條圖多半是**向量繪製**的，在 get_images() 眼中根本不存在 ——
+# 於是題幹寫著「右圖△ABC 有三條對稱軸」，卻沒有任何圖被掛上去。
+# 這種題目模型會直接回報缺素材（校準時 70 題有 12 題如此），
+# 老師看到的也是一題無法作答的題目。
 
-    def key(b):
-        col = 1 if (two_col and b[0] > mid) else 0
-        return (col, round(b[1], 1), round(b[0], 1))
+def _drawing_rects(page) -> list:
+    """向量繪圖元件的外框。
 
-    return sorted(items, key=key)
+    刻意**不**排除純水平／純垂直的細線。直覺上細線是表格框線與填答底線、
+    不是圖形，但坐標平面、數線、長條圖、方格紙正是由這種線組成的 ——
+    排掉它們，這幾類圖會整批消失（只有三角形這種斜邊圖形留得下來）。
+    該濾掉的東西改用「聚起來之後夠不夠像一張圖」來判斷。
+
+    完美水平或垂直的線，外框的寬或高會是 0，Rect.is_empty 為真 ——
+    但那正是坐標軸與數線本身。這裡給它一點厚度而不是丟掉它。
+    """
+    out = []
+    for drawing in page.get_drawings():
+        r = fitz.Rect(drawing["rect"])
+        if r.width <= 0 and r.height <= 0:
+            continue                       # 真的是一個點，沒有內容
+        if r.width == 0:
+            r.x1 = r.x0 + 0.5
+        if r.height == 0:
+            r.y1 = r.y0 + 0.5
+        out.append(r)
+    return out
+
+
+def _merge_near(boxes: list, gap: float) -> list[tuple]:
+    """把彼此靠近的外框合併，回傳 (合併後外框, 合併了幾個元件)。
+
+    一張圖是由很多線段與曲線拼出來的；元件數量本身也是訊號 ——
+    單獨一條線是底線，幾十條線聚在一起才是圖。
+    """
+    items = [(fitz.Rect(b), 1) for b in boxes]
+    changed = True
+    while changed:
+        changed = False
+        merged: list[tuple] = []
+        while items:
+            box, count = items.pop()
+            touching = [it for it in items
+                        if fitz.Rect(box.x0 - gap, box.y0 - gap,
+                                     box.x1 + gap, box.y1 + gap).intersects(it[0])]
+            if touching:
+                changed = True
+                for it in touching:
+                    items.remove(it)
+                    box = box | it[0]
+                    count += it[1]
+            merged.append((box, count))
+        items = merged
+    return items
+
+
+def drop_page_furniture(page, rects: list) -> list:
+    """濾掉不是題目附圖、而是版面本身的東西。點陣圖與向量圖都要過這一關。
+
+    兩種都會被誤當成附圖掛到題目上，而且都比「沒有圖」更糟 ——
+    那題看起來有圖，圖裡卻不是這題要的東西：
+
+    浮水印：校名與「試題僅供參考」的底圖蓋住整片題目文字，照它的範圍渲染，
+        出來的是好幾題的題目文字。真正的附圖裡只有零星標號（A、B、O、x），
+        區域內的字數是最乾淨的分野。
+
+    卷頭卷尾：校名橫幅、科目姓名座號的表格、頁尾裝飾線。它們橫貫版面寬度，
+        而且貼在頁面的上下緣。
+    """
+    words = [fitz.Rect(w[:4]) for w in page.get_text("words")]
+    keep = []
+    for r in rects:
+        box = fitz.Rect(r)
+        if sum(1 for w in words if box.intersects(w)) > 25:
+            continue
+        wide = box.width > page.rect.width * 0.6
+        if wide and (box.y0 < page.rect.height * 0.12
+                     or box.y1 > page.rect.height * 0.92):
+            continue
+        keep.append(r)
+    return keep
+
+
+def vector_figures(page, tables, taken, min_side=28.0, min_area=2200.0) -> list:
+    """向量繪製的圖形區域。tables／taken 內的區域會排除。
+
+    會把緊鄰的短文字一起框進來：三角形的頂點標號 A、B、C 是文字不是繪圖，
+    不在繪圖外框內，只框繪圖的話會渲染出一個沒有標號的三角形 ——
+    而題目問的往往正是「∠A 是幾度」。
+    """
+    page_area = max(1.0, page.rect.width * page.rect.height)
+    labels = []
+    for blk in page.get_text("dict")["blocks"]:
+        if blk.get("type") != 0:
+            continue
+        for line in blk.get("lines", []):
+            for span in line.get("spans", []):
+                if len((span.get("text") or "").strip()) <= 6:
+                    labels.append(fitz.Rect(span["bbox"]))
+
+    out = []
+    for box, parts in _merge_near(_drawing_rects(page), gap=12.0):
+        if box.width < min_side or box.height < min_side:
+            continue
+        if box.width * box.height < min_area:
+            continue
+        if box.width * box.height > page_area * 0.35:
+            continue
+        # 只由一兩個元件組成、又沒有相當面積的，多半是框線而不是圖
+        if parts < 3 and box.width * box.height < min_area * 3:
+            continue
+        if any(fitz.Rect(t[:4]).intersects(box) for t in tables):
+            continue
+        if any(fitz.Rect(r).intersects(box) for r in taken):
+            continue
+        grown = fitz.Rect(box.x0 - 10, box.y0 - 10, box.x1 + 10, box.y1 + 10)
+        for lab in labels:
+            if grown.intersects(lab):
+                box = box | lab
+        out.append(box)
+    return out
 
 
 def is_answer_page(page_text: str) -> bool:
@@ -632,6 +786,8 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
 
         # 圖形位置，之後依 y 座標歸給題目
         mid = (page.rect.x0 + page.rect.x1) / 2
+        tables = table_regions(page)
+        two_col = is_two_column(page_items(page, tables), mid)
         placements = []
         for info in page.get_images(full=True):
             placements.extend(page.get_image_rects(info[0]))
@@ -639,8 +795,16 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
             print(f"    ⚠ {path.name} p{pno}：{len(placements)} 個影像置放，"
                   f"整頁文字被存成小圖，本頁不取圖形")
             placements = []
+        # 向量繪製的圖形（幾何圖、數線、長條圖）——
+        # 已經被點陣圖蓋到的區域不重複取
+        placements += vector_figures(page, tables, placements)
+        placements = drop_page_furniture(page, placements)
+        if len(placements) > MAX_FIGURES_PER_PAGE:
+            print(f"    ⚠ {path.name} p{pno}：{len(placements)} 個圖形區域，"
+                  f"版面判讀可能有誤，本頁不取圖形")
+            placements = []
         two_col_figs = sorted(placements,
-                              key=lambda r: (1 if r.x0 > mid else 0, r.y0, r.x0))
+                              key=lambda r: (1 if (two_col and r.x0 > mid) else 0, r.y0, r.x0))
         for i, r in enumerate(two_col_figs, start=1):
             key = f"p{pno}_f{i:02d}"
             # 圖檔名必須帶文件 ID。「p1_f01.png」在每一份卷裡都會出現，
@@ -661,10 +825,10 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
                     print(f"    ⚠ {path.name} p{pno} {key}：圖形渲染失敗（{exc}），略過")
                     continue
             figures.append({"key": key, "page": pno,
-                            "col": 1 if r.x0 > mid else 0,
-                            "y": r.y0, "file": rel})
+                            "col": 1 if (two_col and r.x0 > mid) else 0,
+                            "y": r.y0, "y1": r.y1, "file": rel})
 
-        for b in reading_order(page):
+        for b in reading_order(page, tables):
             x0, y0, _, _, raw = b[0], b[1], b[2], b[3], b[4]
             for line in raw.splitlines():
                 line = line.rstrip()
@@ -707,7 +871,7 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
                            "section": max(cur_section, 1),
                            "number": num,
                            "type": stype, "page": pno,
-                           "_col": 1 if x0 > mid else 0, "_y": y0}
+                           "_col": 1 if (two_col and x0 > mid) else 0, "_y": y0}
                     buf = [text[m.end():]]
                     continue
 
@@ -731,18 +895,38 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
             q["group_stem"] = section_lead[q["section"]]
             q["stem"] = f"依上文選出第 {q['number']} 格最適當的答案"
 
+    # 每題在版面上佔的垂直範圍：從自己的第一行到下一題的第一行。
+    spans: dict[str, tuple[float, float]] = {}
     for i, q in enumerate(questions):
         nxt = questions[i + 1] if i + 1 < len(questions) else None
-        owned = [f for f in figures
-                 if f["key"] not in claimed
-                 and f["page"] == q["page"] and f["col"] == q["_col"]
-                 and f["y"] >= q["_y"] - 4
-                 and (nxt is None or nxt["page"] != q["page"]
-                      or nxt["_col"] != q["_col"] or f["y"] < nxt["_y"])]
-        if owned:
-            claimed.update(f["key"] for f in owned)
-            q["assets"] = [{"key": f["key"], "kind": "figure", "file": f["file"]}
-                           for f in owned]
+        same_flow = (nxt is not None and nxt["page"] == q["page"]
+                     and nxt["_col"] == q["_col"])
+        spans[q["id"]] = (q["_y"] - 4, nxt["_y"] if same_flow else float("inf"))
+
+    # 用「圖與題目垂直範圍的重疊量」歸屬，而不是「圖的頂端落在誰的範圍內」。
+    #
+    # 「右圖」是排在題目文字**右側**的，它的頂端通常比題目的第一行還高一點
+    # ——用頂端判斷會把它判給上一題。實測某卷第 7 題寫著「如右圖(一)的坐標
+    # 平面」，那張坐標圖卻被掛到第 6 題的「營隊分組」上：兩題都看起來有圖，
+    # 兩題都是錯的。改看重疊量，圖就會落在真正涵蓋它的那一題。
+    for f in figures:
+        best, best_score = None, 0.0
+        for q in questions:
+            if f["page"] != q["page"] or f["col"] != q["_col"]:
+                continue
+            top, bottom = spans[q["id"]]
+            overlap = min(f["y1"], bottom) - max(f["y"], top)
+            if overlap <= 0:
+                continue
+            # 題幹明講「右圖／如圖」的，同分時優先 —— 那是題目自己說它需要圖
+            score = overlap * (1.5 if FIG_REF_RE.search(q.get("stem") or "") else 1.0)
+            if score > best_score:
+                best, best_score = q, score
+        if best is None:
+            continue
+        claimed.add(f["key"])
+        best.setdefault("assets", []).append(
+            {"key": f["key"], "kind": "figure", "file": f["file"]})
 
     # ── 掛答案 ────────────────────────────────────────────────
     keys = parse_answers(path)
