@@ -444,6 +444,27 @@ def _merge_near(boxes: list, gap: float) -> list[tuple]:
     return items
 
 
+def split_answer(raw: str, q: dict) -> list[str]:
+    """答案卷的一格 → 答案清單。
+
+    多選題的答案寫在同一格裡（「B、D」），照原樣存成單一字串的話，
+    它既不等於 B 也不等於 D，跟選項對不起來，最後被品管閘門當成壞答案剔除
+    —— 那是一個本來完全正確、只是沒被拆開的答案。
+
+    選項代號也順手轉成大寫：有的答案卷寫小寫 d，題目卷的選項卻是 D。
+    """
+    text = (raw or "").strip()
+    labels = {o.get("label") for o in (q.get("options") or [])}
+    if not labels:
+        return [text]
+
+    parts = [p.strip() for p in re.split(r"[、,，/／\s]+", text) if p.strip()]
+    upper = [p.upper() for p in parts]
+    if upper and all(p in labels for p in upper):
+        return upper
+    return [text]
+
+
 def drop_page_furniture(page, rects: list) -> list:
     """濾掉不是題目附圖、而是版面本身的東西。點陣圖與向量圖都要過這一關。
 
@@ -966,7 +987,7 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
             merged.update(mapping)
         for q in questions:
             if q["section"] == sec["ord"] and q["number"] in merged:
-                q["answer"] = [merged[q["number"]]]
+                q["answer"] = split_answer(merged[q["number"]], q)
 
     for q in questions:
         q.pop("_col", None)
