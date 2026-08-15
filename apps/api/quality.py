@@ -44,6 +44,24 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
     if any(unbalanced(t) for t in texts):
         reasons.append("LaTeX 公式未閉合")
 
+    # ── 括號未閉合：算式殘缺的徵兆 ────────────────────────────
+    # 堆疊排版的算式（分數、指數）在還原時，括號可能跟著上下標一起被
+    # 移到別處，留下「已知甲= (− 乙、丙之值最大為何?」這種半截式子。
+    # 表面上是一段完整的中文句子，實際上算式已經不成立、無法作答。
+    def unclosed_paren(t: str) -> bool:
+        depth = 0
+        for c in t:
+            if c == "(":
+                depth += 1
+            elif c == ")":
+                depth -= 1
+                if depth < 0:
+                    return True
+        return depth != 0
+
+    if unclosed_paren(stem):
+        reasons.append("題幹括號未閉合，算式可能殘缺")
+
     # ── 選項完整性 ──────────────────────────────────────────
     qtype = q.get("type")
     opts = q.get("options") or []

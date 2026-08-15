@@ -166,6 +166,27 @@ def _has_cjk(s: str) -> bool:
     return any(CJK_RANGE[0] <= c <= CJK_RANGE[1] for c in s)
 
 
+# 分子分母裡不可能出現的字元 —— 出現就代表抓到的是隔壁的內文。
+# 括號不列入：它在算式裡是合法的，改由 _balanced() 檢查嵌套是否正確。
+FRAC_STOP_CHARS = set("：:，。、；;？?！!「」『』")
+
+
+def _balanced(s: str) -> bool:
+    """括號是否正確嵌套。「)：(」數量相等，但先右後左，不是合法的式子。"""
+    for opener, closer in (("(", ")"), ("（", "）")):
+        depth = 0
+        for c in s:
+            if c == opener:
+                depth += 1
+            elif c == closer:
+                depth -= 1
+                if depth < 0:
+                    return False
+        if depth:
+            return False
+    return True
+
+
 def fraction_bars(page) -> list[tuple[float, float, float]]:
     """頁面上所有可能是分數線的水平線，回傳 (x0, x1, y)。
 
@@ -228,10 +249,14 @@ def find_fractions(page, chars: list[dict]) -> list[dict]:
         # 分子分母都得有實質內容 —— 擋掉「……」與連續底線這類版面裝飾
         if not any(c.isalnum() for c in num) or not any(c.isalnum() for c in den):
             continue
-        # 括號必須成對。答案格的編號「(1) (2)」上下相鄰時很像分子分母，
-        # 湊出 \frac{(1}{4)} 這種東西 —— 真正的分數不會把括號拆開。
-        if any(s.count("(") != s.count(")") or s.count("（") != s.count("）")
-               for s in (num, den)):
+        # 括號必須正確嵌套 —— 只數個數不夠。分數線下方若剛好是下一行的
+        # 「( 4a+3b )：( 2a-b )」，擷取到的「)：(2a」括號數量相等卻是
+        # 先右後左，數量檢查放行後那幾個字就被吃掉，題幹殘缺。
+        if any(not _balanced(s) for s in (num, den)):
+            continue
+        # 比號與句讀不可能出現在分子分母裡。出現就表示抓到的是隔壁的內文，
+        # 不是這個分數的一部分。
+        if any(c in FRAC_STOP_CHARS for s in (num, den) for c in s):
             continue
 
         # 線的長度是照分子分母裡**較寬的那一側**畫的（1/12 的分子只有一個字，
