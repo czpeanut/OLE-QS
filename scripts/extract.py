@@ -76,6 +76,11 @@ GRADE_HEAD_CHARS = 200
 # 照單全收的話一題會掛上兩千多張圖，圖檔目錄也會爆掉。
 MAX_FIGURES_PER_PAGE = 60
 
+# 「承上題」這類把條件留在前一題的寫法。
+# 只認明確指涉前一題的用語，而且必須出現在題幹開頭 ——
+# 放寬成「承上」「上題」會誤中「坐標平面上」「以上題目」這類文字。
+CARRY_RE = re.compile(r"^.{0,8}?(?:承上|呈上|接上|同上|依上)\s*[題小]")
+
 # 題幹自己說「需要看圖」的寫法。圖形歸屬時用它加權。
 # 涵蓋面要夠寬：漏掉一種寫法，那類題目的圖就會被旁邊不需要圖的題搶走
 # —— 實測「圖為七年18班…次數分配折線圖」因為不是「右圖／如圖」開頭，
@@ -988,6 +993,30 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
         for q in questions:
             if q["section"] == sec["ord"] and q["number"] in merged:
                 q["answer"] = split_answer(merged[q["number"]], q)
+
+    # ── 跨題引用：「承上題」把條件留在前一題 ──────────────────────
+    # 這種題目單獨拿出來是無解的 —— 條件全在前一題。對模型如此，對打開
+    # 題庫想單獨用這一題的老師也一樣。
+    # 借用 group_stem 這個既有欄位（本來就是「隨題一起顯示的共用說明」），
+    # 教師介面、匯出與作答提示三邊都不必改就會跟著帶上。
+    for i, q in enumerate(questions):
+        if i == 0 or q.get("group_stem"):
+            continue
+        if not CARRY_RE.search(q.get("stem") or ""):
+            continue
+        # 連鎖引用要一路往回找：17 承 16、16 又承 15，只帶 16 仍然缺條件。
+        # 不跨大題 —— 第二大題的第 1 題「承上題」指的不會是第一大題的最後一題。
+        chain: list[dict] = []
+        j = i - 1
+        while j >= 0 and questions[j]["section"] == q["section"]:
+            chain.append(questions[j])
+            if not CARRY_RE.search(questions[j].get("stem") or ""):
+                break
+            j -= 1
+        parts = [f"（第 {p['number']} 題）{(p.get('stem') or '').strip()}"
+                 for p in reversed(chain) if (p.get("stem") or "").strip()]
+        if parts:
+            q["group_stem"] = "\n".join(parts)
 
     for q in questions:
         q.pop("_col", None)
