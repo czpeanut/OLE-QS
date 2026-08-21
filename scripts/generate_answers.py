@@ -94,6 +94,9 @@ SYSTEM = """你是一位國中教師，正在為考卷編寫答案卷。
 3. 選擇題的 answer 只填代號（例：["B"]）；多個答案就列多個。
 4. 填充題的 answer 填最簡答案本身（例：["-53"]、["複式顯微鏡"]、["甲","丙"]）。
 5. reasoning 用一到三句話說明關鍵推理，不要長篇解題。
+6. 數學式一律用純文字寫：3/2、x^2、sqrt(5)、2*3。
+   **不要用 LaTeX 反斜線指令**（\\frac、\\times）—— 反斜線在 JSON 裡是逸出字元，
+   \\frac 會被解讀成換頁符加上 rac，答案與說明都會被靜默改壞。
 
 只輸出 JSON，格式：
 {"answer": [...], "reasoning": "...", "confidence": 0.0-1.0, "missing_context": false, "missing_what": ""}"""
@@ -174,6 +177,20 @@ def _b64(path: Path) -> str:
     return base64.standard_b64encode(path.read_bytes()).decode()
 
 
+def loads_lenient(text: str) -> dict:
+    """解析模型回的 JSON，容忍未逸出的 LaTeX 反斜線。
+
+    數學題的 reasoning 幾乎一定會寫到 \\frac、\\times，而模型輸出 JSON 時
+    常常不把反斜線逸出成 \\\\ —— 那是不合法的 JSON，整題就當成呼叫失敗丟掉。
+    這裡把不構成合法逸出序列的反斜線補成 \\\\ 再解析一次。
+    """
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        patched = re.sub(r'\\(?!["\\/bfnrtu])', r"\\\\", text)
+        return json.loads(patched)
+
+
 def ask_gemini(prompt: str, images: list[tuple[str, Path]], model: str) -> dict:
     key = os.environ["GEMINI_API_KEY"]
     parts: list[dict] = [{"text": SYSTEM + "\n\n" + prompt}]
@@ -188,7 +205,7 @@ def ask_gemini(prompt: str, images: list[tuple[str, Path]], model: str) -> dict:
               "generationConfig": {"responseMimeType": "application/json", "temperature": 0}},
         timeout=120)
     r.raise_for_status()
-    return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
+    return loads_lenient(r.json()["candidates"][0]["content"]["parts"][0]["text"])
 
 
 def ask_anthropic(prompt: str, images: list[tuple[str, Path]], model: str) -> dict:
@@ -209,7 +226,7 @@ def ask_anthropic(prompt: str, images: list[tuple[str, Path]], model: str) -> di
     r.raise_for_status()
     text = r.json()["content"][0]["text"]
     m = re.search(r"\{.*\}", text, re.S)      # 容忍模型在 JSON 前後多寫幾個字
-    return json.loads(m.group(0) if m else text)
+    return loads_lenient(m.group(0) if m else text)
 
 
 # 模型會下架 —— 實測 gemini-2.5-pro 已回「no longer available to new users」。
