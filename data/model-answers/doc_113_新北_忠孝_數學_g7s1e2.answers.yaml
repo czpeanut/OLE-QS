@@ -1,0 +1,251 @@
+source: data/bank/doc_113_新北_忠孝_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 2是最小的質數且是唯一的偶數質數。(A)選項漏掉了1（1既非質數也非合數）；(C)選項中65為合數；(D)選項中97為質數，能拼出的矩形種類少於合數81。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 偶數的定義為可被2整除的整數，因此2必為任意兩個偶數的公因數。(A)最大公因數為12；(B)互質的兩數不一定是質數（如8與9）；(C)3的倍數不一定是9的倍數（如6）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 30的質因數為2、3、5，選項中只有17與30的最大公因數為1，故兩數互質。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將 66 分解為兩正整數相乘的組合有 (1, 66)、(2, 33)、(3, 22)、(6, 11)，兩數之和分別為 67、35、25、17，故
+        a+b 可能為 25。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_7
+  number: 7
+  type: single
+  images_sent: 3
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由題意可知 $a = 2^2 \times 3 \times 5$，$b = 350 = 2 \times 5^2 \times
+        7$。兩數的最小公倍數 $[a, b] = 2^2 \times 3 \times 5^2 \times 7 = 2100$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_8
+  number: 8
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: A = 4^6 × 5^11 = (2^2)^6 × 5^11 = 2^12 × 5^11 = 2 × (2 × 5)^11 =
+        2 × 10^11，為 2 後面接 11 個 0，因此共有 12 位數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_10
+  number: 10
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 原式可化簡為 -2024 × (1 + 1/2023) = -(2024 + 2024/2023) = -(2024 + 1 +
+        1/2023) = -2025 - 1/2023，其值約為 -2025.0005，最接近 -2025。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^3 \times 11 \times 23
+      reasoning: 將2024做質因數分解：2024 ÷ 2 = 1012，1012 ÷ 2 = 506，506 ÷ 2 = 253，253 ÷ 11
+        = 23，故標準分解式為2^3 × 11 × 23。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目不完整，缺少包含□的具體數字、算式或範圍條件
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供含有□的完整數字或代數條件，無法判斷□的值。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目不完整，缺少包含□的具體數字、算式或範圍條件
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中未給出要比較的數值或代號
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中未提供需要比較大小的數值或代數式，缺少題目的核心條件。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中未給出要比較的數值或代號
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 7
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '47'
+      reasoning: 每條緞帶等長且要使總條數最少，長度需為144、180、240的最大公因數，即12公分。最少可分成 (144+180+240)/12
+        = 47 條。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_7
+  number: 7
+  type: fill
+  images_sent: 3
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '13'
+      reasoning: 全班30人中，會游泳的有30×(5/6)=25人，會彈鋼琴的有30×(3/5)=18人。兩者皆會的人數最少為25+18-30=13人。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_8
+  number: 8
+  type: fill
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '3'
+      reasoning: 甲車每60分鐘、乙車每45分鐘、丙車每20分鐘回到A點，求三者最小公倍數[60, 45, 20] = 180分鐘，即3小時後相遇。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_9
+  number: 9
+  type: fill
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 18/41
+      reasoning: 兩桶液體的總容量皆相同且最終總體積不變，水的總量剛好等於一桶的容量（1）。因此兩桶中的水量相加為1，另一桶的水佔容量的 1 - 23/41
+        = 18/41。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_10
+  number: 10
+  type: fill
+  images_sent: 4
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '44'
+      reasoning: 設 $a=2x, b=2y$ 且 $(x,y)=1$，由 $a \times b = 4xy = 420$ 得 $xy = 105
+        = 3 \times 5 \times 7$。當 $x$ 與 $y$ 最接近時（即 7 和 15），$x+y=22$ 最小，因此 $a+b$ 的最小值為
+        $2 \times 22 = 44$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s3_1
+  number: 1
+  type: calc
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -\frac{24}{25}
+      reasoning: 利用裂項性質，每個項皆可化簡為 $-\left(\frac{1}{n^2} - \frac{1}{(n+1)^2}\right)$，相加中間項互相抵消後得到
+        $-\left(1 - \frac{1}{25}\right) = -\frac{24}{25}$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e2_s3_2
+  number: 2
+  type: calc
+  images_sent: 4
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 18
+      - (2) 足夠
+      reasoning: (1) 15天為360小時，共分裂360÷20=18次，故細胞數為4^18個，k=18。(2) 製作8公克需8×60億個細胞，因60億<2^33，故8×60億<2^3×2^33=2^36=4^18，因此足夠。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

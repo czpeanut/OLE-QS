@@ -1,0 +1,131 @@
+source: data/bank/doc_113_新北_板橋_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_新北_板橋_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 兩支原子筆價格為 50 元，三支鉛筆價格為 3x 元。兩者相差「最多貴 15 元」即為小於或等於 15 元，列式為 50 - 3x
+        ≦ 15。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_板橋_數學_g7s2e3_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：(丙)與(丁)的數線圖示（包含點的實心/空心與箭頭方向）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中(丙)與(丁)的數線圖示缺失，無法判斷其所代表的不等式範圍，因此無法確定哪兩個敘述或圖示相同。
+      confidence: 0.0
+      missing_context: true
+      missing_what: (丙)與(丁)的數線圖示（包含點的實心/空心與箭頭方向）
+- id: doc_113_新北_板橋_數學_g7s2e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 由小儀不高於小靜可知「小儀 ≦ 小靜」；由小紋的分數減去小儀為負數可知「小紋 < 小儀」，綜合兩者得到「小紋 < 小儀 ≦ 小靜」。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_板橋_數學_g7s2e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 展開不等式得 -4x - 4 ≦ 2x + 2，移項整理得 -6x ≦ 6，兩邊同除以 -6 且變號後得到 x ≧ -1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_板橋_數學_g7s2e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中的一元一次不等式缺少運算符號及不等號右側的常數項。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中的不等式不完整，缺少兩項之間的運算符號以及不等號右邊的數值，無法進行解題。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中的一元一次不等式缺少運算符號及不等號右側的常數項。
+- id: doc_113_新北_板橋_數學_g7s2e3_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將不等式各項減 3 得 -14 < -2x ≦ -8，同除以 -2 得 4 ≦ x < 7。因此符合範圍的整數為 4、5、6，最小為
+        4，最大為 6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_板橋_數學_g7s2e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設答對填充題 y 題，選擇題為 11-y 題（y≤8）。總分為 4(11-y)+7y = 44+3y，由 44+3y≥60 得 y≥6。因此
+        y 可為 6、7、8，總分最低為 44+3(6)=62 分，最高為 44+3(8)=68 分。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_板橋_數學_g7s2e3_s1_8
+  number: 8
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 全班總人數為 4 + 8 + 8 + 10 + 6 + 3 + 1 = 40 人，20分鐘以上的人數為 6 + 3 + 1 = 10
+        人，佔全班百分比為 10 / 40 = 25%。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_板橋_數學_g7s2e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：班上同學完整的身高一覽表及次數分配表（含A、B所在欄位與組距）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供完整的班級身高一覽表以及包含A、B的次數分配表，無法計算次數。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 班上同學完整的身高一覽表及次數分配表（含A、B所在欄位與組距）

@@ -1,0 +1,359 @@
+source: data/bank/doc_113_屏東_明正_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 1的倒數仍為1（因為1 × 1 = 1），而不是-1，因此(A)選項錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 根據指數律同底相乘指數相加的性質，$10^8 \times 10^7 \times 10^{15} = 10^{8+7+15}$，因此
+        $n = 8 + 7 + 15$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題幹中的數值疑有缺漏（例如帶分數部分漏印），導致計算結果 -1/6 無對應選項。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 依題目算式 (-6) × 甲 = 1，可得甲 = -1/6，但選項中無此數值（選項皆與 13/2 相關，疑似題目中原本為帶分數或小數而有缺漏），無法直接由題幹選出答案。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 題幹中的數值疑有缺漏（例如帶分數部分漏印），導致計算結果 -1/6 無對應選項。
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 18 的質因數為 2、3，49 的質因數為 7，兩數的最大公因數為 1，因此 18 與 49 互質。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 根據指數律，(5^4)^2 應等於 5^(4×2) = 5^8，而不是 5^6，故選項 (C) 錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將468進行質因數分解得468 = 2^2 × 3^2 × 13，其質因數有2、3、13。因此3與13皆為468的質因數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將 24 質因數分解為 2^3 × 3，則 24^5 = (2^3 × 3)^5 = 2^(3×5) × 3^5 = 2^15 ×
+        3^5，因此  = 15。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 除以一個分數等於乘以該分數的倒數，即 $9 \div \frac{2}{5} = 9 \times \frac{5}{2}$，故
+        (C) 正確。(A) 與 (D) 皆不符合運算規則與分配律。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 大於10且小於20的質數有11、13、17、19共4個，故【10★20】= 4；大於50且小於60的質數有53、59共2個，故【50★60】=
+        2。兩者相加為4 + 2 = 6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_11
+  number: 11
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 從短除法過程可看出，3與7並未同時整除三數，此為求最小公倍數的短除法；最後剩餘的1、11、10已兩兩互質，因此最小公倍數為 2×3²×7×10×11，故丁的敘述正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_12
+  number: 12
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 拼成正方形的最小邊長為12與8的最小公倍數24公分，因此長需2塊、寬需3塊，最少共需要2×3=6塊磁磚。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s1_13
+  number: 13
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: $n$ 為 $189, 420, 294$ 的正公因數，其最大公因數為 $\gcd(189, 420, 294) = 21$。$21$
+        的正因數有 $1, 3, 7, 21$ 共 4 個，故符合的 $n$ 值有 4 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 72、5566、32472
+      - 45、385
+      - 45、72、32472
+      - 385、5566、32472
+      reasoning: 根據倍數判別法：個位數為偶數者是2的倍數；個位數為0或5者是5的倍數；各數位總和為9的倍數者是9的倍數；奇數位和與偶數位和之差為11的倍數者是11的倍數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 11^4
+      - 2^2×3^3×5×7^2×11
+      - 2^2×3^2×5×7
+      reasoning: (1) 三數的最大公因數取共同質因數的最低次方，即 11^4。(2) 最小公倍數取所有質因數的最高次方，為 2^2×3^3×5×7^2×11。(3)
+        45=3^2×5、105=3×5×7、180=2^2×3^2×5，其最小公倍數為 2^2×3^2×5×7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1\frac{2}{3} > 1\frac{5}{12}
+      - (-\frac{4}{7})^4 > (-\frac{4}{7})^9 > (-\frac{4}{7})^7
+      reasoning: (1) 通分後 $1\frac{8}{12} > 1\frac{5}{12}$。(2) 偶次方為正數故最大；奇次方為負數，底數絕對值介於
+        0 到 1 之間，次方越大絕對值越小，故負得越少反而越大，得 $(-\frac{4}{7})^9 > (-\frac{4}{7})^7$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -1/2
+      - -3/2
+      - 13/4
+      - '0'
+      reasoning: (1) 連續約分得 -4/8 = -1/2。(2) [5/8 × (-12/5)]^4 ÷ (-3/2)^3 = (-3/2)^4
+        ÷ (-3/2)^3 = -3/2。(3) -7/4 - [6 ÷ (-6/5)] = -7/4 - (-5) = 13/4。(4) 提出 7/9
+        得到 7/9 × (-27 + 11 + 16) = 7/9 × 0 = 0。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '420'
+      reasoning: 甲、乙、丙繞一圈分別需要 3360/168=20 分鐘、3360/112=30 分鐘、3360/240=14 分鐘。三人再次在原出發點會合的時間為
+        [20, 30, 14] 的最小公倍數，即 420 分鐘。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 2^{10}
+      - (2) 2^5
+      reasoning: (1) 拐杖糖總包數為 2 × 8 × 8 × 8 = 2^1 × 2^3 × 2^3 × 2^3 = 2^{10} 包。(2)
+        每班分得 2^{10} ÷ 32 = 2^{10} ÷ 2^5 = 2^5 包。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s5_1
+  number: 1
+  type: fill
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：完整題目內容（題幹文字或算式）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 提供的圖片僅為答案卷的空格欄位，題目內容被裁切且未提供題幹，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整題目內容（題幹文字或算式）
+- id: doc_113_屏東_明正_數學_g7s1e2_s5_2
+  number: 2
+  type: fill
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：第2題各小題 (1)、(2)、(3) 的題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供答案卷的空格欄位截圖，未包含第2題的具體題目內容，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第2題各小題 (1)、(2)、(3) 的題目內容
+- id: doc_113_屏東_明正_數學_g7s1e2_s5_3
+  number: 3
+  type: fill
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：第 3 題的題目內文及小題 (1)、(2) 的具體題目
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 提供的圖片僅為答案卷的作答表格，缺乏第 3 題的題目文字與內容，無法進行作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第 3 題的題目內文及小題 (1)、(2) 的具體題目
+- id: doc_113_屏東_明正_數學_g7s1e2_s5_4
+  number: 4
+  type: fill
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：第4題的完整題目內容與子題敘述
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供答案卷的空格表格編號 (1) 至 (4)，缺乏實際題目的題目敘述與問題內容，無法進行作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第4題的完整題目內容與子題敘述
+- id: doc_113_屏東_明正_數學_g7s1e2_s6_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '420'
+      reasoning: 甲、乙、丙繞一圈分別需要 3360/168=20 分鐘、3360/112=30 分鐘、3360/240=14 分鐘。三人再次於原點會合的時間為
+        20、30、14 的最小公倍數 [20, 30, 14] = 420 分鐘。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s1e2_s6_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^{10}
+      - 2^5
+      reasoning: 拐杖糖總數為 2 × 8 × 8 × 8 = 2^1 × 2^3 × 2^3 × 2^3 = 2^{10} 包；分給 32 班，每班可分得
+        2^{10} ÷ 32 = 2^{10} ÷ 2^5 = 2^5 包。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

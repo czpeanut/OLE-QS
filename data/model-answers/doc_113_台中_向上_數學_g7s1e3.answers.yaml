@@ -1,0 +1,206 @@
+source: data/bank/doc_113_台中_向上_數學_g7s1e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_向上_數學_g7s1e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 去括號時，括號前面有負號，內部各項皆需變號，故 -(2X-3) = -2X+3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設100元鈔票有x張，則500元鈔票有(8-x)張。依題意列式100x + 500(8-x) = 3200，解得-400x = -800，x
+        = 2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s1_8
+  number: 8
+  type: single
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設波霸奶茶為x杯，則珍珠奶茶為2x+1杯，泡沫紅茶為2x-2杯。打8折後每杯單價分別為24、20、12元，依題意列式24x+20(2x+1)+12(2x-2)=524，解得x=6，全班人數為6+13+10=29人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整且正確的題幹與選項
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目內容錯亂且混雜了多個不同題目的文字，選項亦殘缺不全，無法進行有效作答與推理。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整且正確的題幹與選項
+- id: doc_113_台中_向上_數學_g7s1e3_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 將方程式左式的 $x$ 提出後，括號內各項透過分項對消法化簡為 $(1 - \frac{1}{2011}) = \frac{2010}{2011}$，得到
+        $x \times \frac{2010}{2011} = 2010$，解得 $x = 2011$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - X+2
+      reasoning: 合併同類項，2X - X = X，常數項 7 - 5 = 2，故化簡結果為 X+2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 4X
+      reasoning: 原式化簡為 (1/3 * 6)X + (1/2 * 4)X = 2X + 2X = 4X。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '1'
+      reasoning: 將方程式兩邊同減 8 得 2X = 2，再兩邊同除以 2 解得 X = 1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '16'
+      reasoning: 將等式兩邊移項整理，5X - 4X = 9 + 7，計算得 X = 16。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：方程式中第二項分母「34-」後面缺失的數字或正確數值
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中第二個分式之分母為「34-」，數值與符號不完整，無法正確求解該一元一次方程式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 方程式中第二項分母「34-」後面缺失的數字或正確數值
+- id: doc_113_台中_向上_數學_g7s1e3_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 80X^2-60X+10
+      reasoning: 依題意進行乘法展開：(2X - 1) × (-5) × [-2(4X - 1)] = 10(2X - 1)(4X - 1) = 10(8X^2
+        - 6X + 1) = 80X^2 - 60X + 10。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 350x+250(800-x)=230000
+      reasoning: 全票賣出 x 張，則半票賣出 (800 - x) 張；全票總額為 350x 元，半票總額為 250(800 - x) 元，依題意總收入可列式為
+        350x + 250(800 - x) = 230000。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s3_1
+  number: 1
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 18x+48
+      - (2) 170x+4
+      reasoning: 周長為水平線段總和加上垂直線段總和，即 18×2 + (9x-2+8) + 8 + (9x-2) = 18x+48；面積可分割為下方長方形
+        18(9x-2) 與上方長方形 8(x+5)，合計為 162x-36+8x+40 = 170x+4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e3_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 440度
+      - (2) 不正確，多支出651元
+      reasoning: (1) 7、8月為夏月，前240度費用為240×1.6=384元，剩餘費用864-384=480元，由241~660度部分（每度2.4元）分擔，得480÷2.4=200度，總用電量為240+200=440度。(2)
+        非夏月660度電費為1.6×240+2.1×420=1266元；夏月810度電費為1.6×240+2.4×420+3.5×150=1917元；平均多支出1917-1266=651元，小恩忽略了夏月費率調整，故說法不正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

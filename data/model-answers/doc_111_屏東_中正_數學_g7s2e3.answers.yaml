@@ -1,0 +1,145 @@
+source: data/bank/doc_111_屏東_中正_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 解不等式 2x - 3 > 9 得 x > 6。小於 10 且大於 6 的正整數有 7、8、9，共 3 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_2
+  number: 2
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 從直方圖讀取各組人數：35~40公斤有1人、40~45公斤有8人、45~50公斤有9人。小於50公斤的總人數為 1 + 8 + 9
+        = 18人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 「51以上」表示大於或等於51（x ≥ 51），「不超過100」表示小於或等於100（x ≤ 100），合併為51 ≤ x ≤ 100。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 算式中的 $2x \times 0.75$ 表示兩件定價 $x$ 元的商品先打 75 折，減 100 表示打折後再折抵 100 元，小於
+        800 表示花不到 800 元，與選項 (B) 的敘述完全吻合。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將11次分數由小到大排列為：40, 50, 50, 60, 70, 70, 80, 80, 80, 90, 100。第6個數為中位數70分；出現最多次的分數為80分（出現3次），故眾數為80分。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 由已知條件可知 a ≤ b，兩邊同時加上 -5 應得 -5+a ≤ -5+b，故 (A) 不等號方向錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：一年十六班和一年十七班練習投籃進球數的次數分配折線圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目依據次數分配折線圖進行判斷，但題幹未附上該折線圖與相關數據，因此無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 一年十六班和一年十七班練習投籃進球數的次數分配折線圖
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_8
+  number: 8
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 設方塊體積為 x 立方公分。由步驟(2)得 200 + 4x ≤ 500，即 x ≤ 75；由步驟(3)得 200 + 6x +
+        30 > 500，即 x > 45。因此體積範圍為 45 < x ≤ 75，故 45 立方公分時水剛好裝滿不會溢出，不可能為方塊體積。
+      confidence: 0.9
+      missing_context: false
+      missing_what: ''
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：七年智班數學段考分數次數分配折線圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目依賴「七年智班數學段考分數次數分配折線圖」來判斷各組人數、中位數及平均數，但未附上該圖表，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 七年智班數學段考分數次數分配折線圖
+- id: doc_111_屏東_中正_數學_g7s2e3_s1_10
+  number: 10
+  type: single
+  images_sent: 4
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由圓形圖知桌球佔10%，對應人數最少的丙為4人，故全班人數為4÷10%=40人。排球佔25%為10人，籃球與羽球共26人且籃球>羽球，由長條圖可知丁為籃球(14人)、乙為羽球(12人)、甲為排球(10人)，故選D。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

@@ -1,0 +1,274 @@
+source: data/bank/doc_112_高雄_大灣_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 不等式 x ≥ 3 代表 x 大於或等於 3，日常語言中表示為「x 不小於 3」。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 不等式兩邊同乘以負數時，不等號方向必須改變。因此若 a > b，同乘以 -3 後應為 -3a < -3b，故 (D) 是錯的。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 式子中 2x 表示兩件同價位商品的總額，先減 100 元代表用券抵扣 100 元，乘以 0.7 代表抵用後再打 7 折，小於 1000
+        代表花不到 1000 元，故對應選項 (A)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中的不等式與選項符號排版損壞，缺少正確的題目數學式與完整選項內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中的不等式「ax \frac{≥bb}{ab}」以及選項 (A)、(B) 之數學符號排版出現嚴重損壞與缺漏，無法確認原始題目與完整選項。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中的不等式與選項符號排版損壞，缺少正確的題目數學式與完整選項內容
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設批發 x 顆釋迦，可賣出 0.9x 顆，總收入為 40×0.9x = 36x 元，成本為 25x 元，利潤為 36x - 25x
+        = 11x 元。由 11x ≥ 4500 得 x ≥ 409.09...，故最少需批發 410 顆。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 通過時間介於 13/90×60 ≈ 8.67 分鐘至 13/70×60 ≈ 11.14 分鐘之間，選項中僅 9 分鐘符合此範圍。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_8
+  number: 8
+  type: single
+  images_sent: 2
+  status: missing_context
+  note: gemini 回報缺少素材：缺少圖(三)
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及有三種情形，但僅提供兩張天平圖，分別可得 x > z 與 x > y，仍無法判斷 y 與 z 的大小關係，缺少第三張圖。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少圖(三)
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少七年甲班學生體重的次數分配直方圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「次數分配直方圖如圖」，但未提供該直方圖或各組次數分配資料，無法計算體重小於50公斤的人數。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少七年甲班學生體重的次數分配直方圖
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_11
+  number: 11
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 全隊16人，中位數2.5球代表第8人投進2球、第9人投進3球，故投進0~2球的人數共8人，得2+2+a=8，即a=4，進而求得b=2。比較所有球數的次數，投進2球的次數最多（4人），因此眾數為2球。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_16
+  number: 16
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：七年甲班全班同學體重次數分配直方圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右圖」體重次數分配直方圖，但未提供該直方圖的各組組中點與次數資料，無法計算平均數。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 七年甲班全班同學體重次數分配直方圖
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_17
+  number: 17
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 應選出2人，當選的安全門檻票數為有效票數除以(當選人數+1)後加1票，即 24000 ÷ (2 + 1) + 1 = 8001 票。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_18
+  number: 18
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 數線上在 -1 處為實心圓點（表示包含 -1，即 $x \ge -1$），在 4 處為空心圓點（表示不包含 4，即 $x < 4$），因此表示的不等式為
+        $-1 \le x < 4$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_19
+  number: 19
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 由長條圖可讀出投進1、2、3、5、6、7球的人數分別為2、3、5、8、7、1人，因此投進4球的人數為全班總人數扣除其餘人數：35
+        - (2 + 3 + 5 + 8 + 7 + 1) = 9人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_20
+  number: 20
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 乙箱有45顆球且中位數為36，表示乙箱中小於36的球有22顆、大於36的球有22顆。原本大於36的球有54顆（37~90號），故甲箱內大於36的球數
+        b = 54 - 22 = 32。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_21
+  number: 21
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 解不等式 3x - 7 > 3 - x 得 4x > 10，即 x > 2.5。因為 x 為整數，所以 x 最小為 3，此時 2x
+        + 3 = 2(3) + 3 = 9。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_22
+  number: 22
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: (甲)平均數為4.2；(乙)中位數為(4+6)/2=5；(丙)9筆資料的中位數是第5筆；(丁)眾數為出現次數最多的數；(戊)資料筆數為偶數時中位數可能不在資料中。因此(乙)(丙)(戊)共3項正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_23
+  number: 23
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 將不等式移項得 (a - b)x ≥ b - a = -(a - b)。因 a < b，可知 a - b < 0，同除以 (a -
+        b) 時不等號需變號，得 x ≤ -1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_24
+  number: 24
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設票價為P元，團體有x人，依題意列出不等式80×P×0.8 < x×P×0.9，化簡得x > 640/9 ≈ 71.11，故團體至少需有72人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大灣_數學_g7s2e3_s1_25
+  number: 25
+  type: single
+  images_sent: 3
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 由步驟二知 300 + 3x < 450，解得 x < 50；由步驟三知 300 + 5x + 20 > 450，解得 x > 26。合併得
+        26 < x < 50。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

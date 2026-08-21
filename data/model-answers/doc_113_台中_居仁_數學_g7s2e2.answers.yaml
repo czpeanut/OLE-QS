@@ -1,0 +1,63 @@
+source: data/bank/doc_113_台中_居仁_數學_g7s2e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_居仁_數學_g7s2e2_s1_23
+  number: 23
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整的題目敘述
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目內容僅有「得分6. 12. 18.」，缺乏完整題目文字與欲求解的問題，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整的題目敘述
+- id: doc_113_台中_居仁_數學_g7s2e2_s2_1
+  number: 1
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{13}{2}
+      reasoning: A點坐標為(0,-2)，B點坐標為(3,0)，P點為(2,-3)。將四邊形AOBP以線段OP分割為△AOP與△BOP，面積分別為
+        (1/2)×2×2=2 與 (1/2)×3×3=9/2，相加得 13/2（或6.5）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e2_s2_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '3:1'
+      - 9/5
+      reasoning: (1) 由內項乘積等於外項乘積得 2(a-b) = a+b，化簡得 a = 3b，故 a:b = 3:1。(2) 令 x=2k,
+        y=3k (k≠0)，代入得 (3x+y):(3y-2x) = (6k+3k):(9k-4k) = 9k:5k，比值為 9/5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e2_s2_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1008人
+      reasoning: 設總人數為 x，女生總人數為 (3/7)x，不及格總人數為 (1/4)x。女生及格人數減去男生不及格人數等於「女生總人數 - 女生不及格人數
+        - 男生不及格人數」= (3/7)x - (1/4)x = (5/28)x = 180，解得 x = 1008。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

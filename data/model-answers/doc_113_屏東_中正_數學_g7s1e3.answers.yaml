@@ -1,0 +1,291 @@
+source: data/bank/doc_113_屏東_中正_數學_g7s1e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_屏東_中正_數學_g7s1e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中待判斷是否為一元一次方程式的式子列表
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供需要判斷的式子列表，無法計算有一元一次方程式的數量。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中待判斷是否為一元一次方程式的式子列表
+- id: doc_113_屏東_中正_數學_g7s1e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 由 23x - 4 = 8 可知 23x = 12。將原式化簡得 46x - 8 - 69x + 6 = -23x - 2，代入
+        23x = 12 得 -12 - 2 = -14。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 依照運算順序化簡：原式 = 6 - 2[4 + 3x - 2] = 6 - 2[3x + 2] = 6 - 6x - 4 = -6x
+        + 2。選項中皆無此正確答案。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 將原方程式等號兩邊同乘以 10，可得 3x + 50 = 7x - 2，兩方程式具有相同的解，故選 (C)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 解方程式 5(x - 1) = 3x - 7 得 2x = -2，即 x = -1。將 x = -1 代入 2x - 1 = nx
+        - 12 得 -3 = -n - 12，解得 n = -9。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 設十位數字為 x、個位數字為 y，則 x + y = 10 且 10y + x = 3(10x + y) - 2。將 y = 10
+        - x 代入解得 x = 2、y = 8，故原數為 28。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設每包巧克力有 x 顆，由題意知 x 除以 25 餘 8；因此 10 包共有 10x 顆，除以 25 的餘數同等於 10×8 =
+        80 除以 25 的餘數，即為 5 顆。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s1_10
+  number: 10
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設來回均搭乘纜車有 x 人，單程搭乘有 y 人。依搭乘總人次可得 2x + y = 200 + 100 = 300，依費用可得 300x
+        + 180y = 51000，解得 x = 50, y = 200，故總人數為 50 + 200 = 250 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{x-5}{30}
+      reasoning: 總共有 x 顆糖果，扣除剩下的 5 顆後，將其餘糖果平分給 30 個學生，因此每人分得 (x - 5)/30 顆。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -\frac{1}{2}
+      - '-10'
+      reasoning: (1) 由 1 - x = 3 + 3x 移項整理得 4x = -2，解得 x = -1/2。(2) 由 -2x + 2 = 25
+        + 0.3x 移項得 -2.3x = 23，解得 x = -10。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - xx-1911
+      reasoning: 民國元年為西元1912年，換算民國年份為西元年份減去1911，因此西元xx年為民國 (xx-1911) 年。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 3x+12
+      reasoning: 井深為 x 公尺，摺成三等段後每段繩長為 (x + 4) 公尺，因此繩子全長為 3(x + 4) = 3x + 12 公尺。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '22'
+      reasoning: 將高度 1000 公尺代入公式，計算 28 - 1000 ÷ 100 × (3/5) = 28 - 6 = 22°C。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '80'
+      reasoning: 竹竿露出水面的部分佔全長的 $1 - \frac{1}{4} = \frac{3}{4}$，因此全長為 $60 \div \frac{3}{4}
+        = 80$ 公尺。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '19'
+      reasoning: 將兩邊底數化為5：(5^2)^(2x-5) = (5^3)^(x+3)，得 5^(4x-10) = 5^(3x+9)。由指數相等解
+        4x - 10 = 3x + 9，得 x = 19。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '70'
+      reasoning: 設行經一般道路共 x 公里，則高速公路為 (100 - x) 公里。依時間列式：x/60 + (100 - x)/90 = 1.5，同乘
+        180 得 3x + 2(100 - x) = 270，解得 x = 70。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s1e3_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目原始清晰的完整數學算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中包含多處亂碼與不完整的數學符號（如 4xx、5xx、-6 x 5 1-x），無法確認原始算式的正確內容。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目原始清晰的完整數學算式
+- id: doc_113_屏東_中正_數學_g7s1e3_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整且正確的一元一次方程式文字
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中方程式文字損毀（-3=- + 2 6 3），缺少未知數與完整的運算符號，無法判讀原方程式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整且正確的一元一次方程式文字
+- id: doc_113_屏東_中正_數學_g7s1e3_s3_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中的圖形及其所標示之邊長與灰色區域資訊
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目指稱「如右圖」，但未附上幾何圖形與各邊長或相關代數標示，無法進行計算。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中的圖形及其所標示之邊長與灰色區域資訊
+- id: doc_113_屏東_中正_數學_g7s1e3_s3_4
+  number: 4
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 10000元
+      reasoning: 設原價每人 x 元，A方案兩人總費用為 2(x - 2000) 元，B方案為 x + 0.5x = 1.5x 元。依題意列式 2(x
+        - 2000) - 1.5x = 1000，解得 0.5x = 5000，x = 10000。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

@@ -1,0 +1,92 @@
+source: data/bank/doc_113_台中_居仁_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_居仁_數學_g7s2e1_s1_23
+  number: 23
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目完整內文與問題
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供配分或題號相關資訊「對應分數6. 12. 18.」，缺少完整的題目敘述與問題內容，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目完整內文與問題
+- id: doc_113_台中_居仁_數學_g7s2e1_s1_24
+  number: 24
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目問題描述與計算要求
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供一組數值資料，缺少具體的問題敘述與要求（例如求中位數、平均數或找規律等），無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目問題描述與計算要求
+- id: doc_113_台中_居仁_數學_g7s2e1_s2_1
+  number: 1
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) A(-2, 3)，B(4, -3)
+      - (2) 略（於平面上標出 C(-4, -3)、D(3, 2)）
+      reasoning: 從坐標平面圖上讀取點 A 位於 x = -2、y = 3，點 B 位於 x = 4、y = -3；第二小題依坐標在圖上描出 C 與
+        D 兩點。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e1_s2_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 驢5個，騾7個
+      reasoning: 設驢馱 x 個包裹，騾馱 y 個包裹。依題意列出二元一次聯立方程式：y + 1 = 2(x - 1) 與 x + 1 = y -
+        1，解得 x = 5，y = 7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e1_s2_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 每件訂單薪資50元
+      - 第151件以上每件訂單獎勵金15元
+      reasoning: 依題意列出二元一次聯立方程式：250x + 100y = 14000 與 170x + 20y = 8800，解得 x = 50、y
+        = 15。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e1_s2_4
+  number: 4
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 九族文化村5人，劍湖山8人，六福村10人，麗寶樂園19人
+      reasoning: 由題意可列出六福村為2x人、麗寶樂園為(2y+3)人，且2x - y = 2與x + y + 2x + (2y+3) = 42。解聯立方程式得x
+        = 5，y = 8，進而求得四個地點的人數分別為5人、8人、10人、19人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

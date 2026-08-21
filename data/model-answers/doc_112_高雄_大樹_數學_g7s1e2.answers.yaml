@@ -1,0 +1,124 @@
+source: data/bank/doc_112_高雄_大樹_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_112_高雄_大樹_數學_g7s1e2_s2_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 7
+      - (2) 2^4 × 3 × 5 × 7^2
+      reasoning: 將三數進行質因數分解：105=3×5×7、196=2^2×7^2、112=2^4×7。最大公因數取共同質因數的最小次方得 7；最小公倍數取所有質因數的最大次方得
+        2^4×3×5×7^2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大樹_數學_g7s1e2_s2_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -\frac{435}{4}
+      reasoning: 原式等於 125 × (-9/10) - [(-2) + 5 × (-7/20)] = -225/2 - (-2 - 7/4) =
+        -450/4 - (-15/4) = -435/4。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大樹_數學_g7s1e2_s2_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '9'
+      reasoning: 正整數 M 的正因數對稱相乘等於 M，由第 2 個因數 2 與倒數第 2 個因數 18 可得 M = 2 × 18 = 36。36
+        的全部正因數依序為 1、2、3、4、6、9、12、18、36，對應可得 c = 9。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大樹_數學_g7s1e2_s2_5
+  number: 5
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^2 × 3^2 × 7
+      - 2^2 × 3 × 5 × 11
+      reasoning: 將252進行質因數分解得2²×3²×7；將660進行質因數分解得2²×3×5×11。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大樹_數學_g7s1e2_s2_6
+  number: 6
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '18'
+      reasoning: 滿足乘積為72的正整數因數對中，4與18的和為22（4+18=22）。因a<b，故a=4、b=18。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大樹_數學_g7s1e2_s2_7
+  number: 7
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '30'
+      reasoning: 由 a = b × c³ 可得 c³ = a / b = 2^(8-5) × 3^(7-4) × 5^(6-3) = 2³ × 3³
+        × 5³ = (2 × 3 × 5)³ = 30³，因此 c = 30。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大樹_數學_g7s1e2_s3_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 乙>甲>丙
+      reasoning: 設甲=6/a、乙=15/b、丙=10/c為最簡分數，則gcd(6,a)=1、gcd(15,b)=1、gcd(10,c)=1。因540=2²×3³×5且[a,b,c]=540，質因數分配後得a=5、b=4、c=27，故甲=6/5=1.2、乙=15/4=3.75、丙=10/27，大小關係為乙>甲>丙。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_大樹_數學_g7s1e2_s3_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '3'
+      reasoning: 舊生產線每條產能為 $8^8$ 顆，4 條總產能為 $4 \times 8^8 = 2^2 \times 2^{24} = 2^{26}$
+        顆；新生產線每條產能為 $4^{13}$ 顆，3 條總產能為 $3 \times 4^{13} = 3 \times 2^{26}$ 顆。兩者相除得到倍數為
+        $(3 \times 2^{26}) \div 2^{26} = 3$ 倍。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

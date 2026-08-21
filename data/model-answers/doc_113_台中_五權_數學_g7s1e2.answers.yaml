@@ -1,0 +1,264 @@
+source: data/bank/doc_113_台中_五權_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_五權_數學_g7s1e2_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提到的質因數分解計算過程附圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中提到「計算過程如右圖」，但未提供該質因數分解（短除法）的圖片或過程資訊，無法推求 a、b、c 的值。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中提到的質因數分解計算過程附圖
+- id: doc_113_台中_五權_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: A 的質因數分解為 2^5 × 3^2 × 5^7，其因數的各質因數次方皆不可超過 A 本身。(A) 2^4 × 3^1 × 5^6
+        各質因數次方均小於或等於 A，故為 A 的因數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 12 的質因數為 2、3，25 的質因數為 5，兩數的最大公因數為 1，因此 12 與 25 互質。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少短除法計算過程圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「計算過程如圖」，但未提供短除法的過程圖片，無法確認洋洋的計算步驟與題目具體指涉內容。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少短除法計算過程圖
+- id: doc_113_台中_五權_數學_g7s1e2_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 由題目列出的正因數包含 9 與 10 可知，b 必為 9 與 10 的公倍數，選項中只有 90 符合此條件。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s1_7
+  number: 7
+  type: single
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：兩部電影的時間表（附圖）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中提及「右圖為兩部電影的時間表」，但提供的圖片僅包含題目文字，缺少兩部電影的時間表資訊，無法進行計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 兩部電影的時間表（附圖）
+- id: doc_113_台中_五權_數學_g7s1e2_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 將不等式通分為 12/20 < a/20 < 18/20，得 12 < a < 18。因為 a/20 為最簡分數，a 與 20 互質（非
+        2 或 5 的倍數），符合的 a 只有 13 和 17，共 2 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將帶分數轉為假分數得 $1\frac{3}{8} = \frac{11}{8}$，原式化為 $\frac{11}{6} + \frac{11}{8}$，通分後得
+        $\frac{44}{24} + \frac{33}{24} = \frac{77}{24}$，故選 (A)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 起初鮮奶佔 1/2 杯，喝掉 1/3 後剩下 2/3 的混合液，其中的鮮奶量為 (1/2) × (2/3) = 1/3 杯。隨後加滿紅茶，總量恢復為
+        1 杯，鮮奶所佔比例即為 1/3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s1_11
+  number: 11
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設成本為 1，定價為 1 × (3/2) = 1.5。週年慶打 8 折再打 9 折後的售價為 1.5 × 0.8 × 0.9 =
+        1.08，因此利潤為 1.08 - 1 = 0.08，即賺 8%。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s1_12
+  number: 12
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 根據指數律，原式可化簡為 (10^2)^6 × 10^3 ÷ 10^4 = 10^(12+3-4) = 10^11，故選 (C)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s1_15
+  number: 15
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 由題意可知 $a$ 是 $4\times 4=16$ 與 $5\times 5=25$ 的公倍數，即 400 的倍數。四位數中 400
+        的倍數範圍為 $400\times 3=1200$ 到 $400\times 24=9600$，共有 $24 - 3 + 1 = 22$ 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '0'
+      reasoning: 因為該數為5的倍數，個位數□必為0或5；又該數為3的倍數，各數位數字和4+5+8+1+□=18+□必須是3的倍數。當□=0時，18為3的倍數；當□=5時，23非3的倍數，故□只能填入0。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '32'
+      reasoning: 原子筆售價為 96 的因數，且介於 30 到 40 之間，96 的因數中符合條件的只有 32，故每支售價為 32 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^6 × 3^7 × 5^8 × 7^9
+      reasoning: 求兩數的最小公倍數，取所有出現過的質因數之最高次方相乘，得 2^6 × 3^7 × 5^8 × 7^9。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '8'
+      reasoning: 第一項 $\frac{93}{2024} \times \frac{506}{3} = 31 \times \frac{1}{4}
+        = \frac{31}{4}$，第二項 $\frac{3}{2024} \times \frac{506}{3} = \frac{1}{4}$，兩者相加為
+        $\frac{31}{4} + \frac{1}{4} = \frac{32}{4} = 8$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - y > z > x
+      reasoning: 將指數化為相同的最大公因數20次方：x = 2^80 = (2^4)^20 = 16^20，y = 3^60 = (3^3)^20
+        = 27^20，z = 5^40 = (5^2)^20 = 25^20。因為 27 > 25 > 16，所以 y > z > x。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_五權_數學_g7s1e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '48'
+      - '104'
+      reasoning: (1) 2與3的公倍數有33人，3與5的公倍數有13人，2與5的公倍數有20人，三者公倍數有6人，恰好兩項為(33-6)+(13-6)+(20-6)=48人。(2)
+        總人數為5和7的公倍數（35的倍數）且小於300，最大總人數為280人；L號佔1-(1/5)-(3/7)=13/35，最多有280×(13/35)=104人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

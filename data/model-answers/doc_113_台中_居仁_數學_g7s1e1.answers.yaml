@@ -1,0 +1,209 @@
+source: data/bank/doc_113_台中_居仁_數學_g7s1e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：D點的正確座標以及選項(B)、(C)、(D)等號左側所代表的線段或運算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中 D 點座標及選項 (B)、(C)、(D) 等號左側的線段名稱出現亂碼與缺失，無法正確判斷敘述對錯。
+      confidence: 0.0
+      missing_context: true
+      missing_what: D點的正確座標以及選項(B)、(C)、(D)等號左側所代表的線段或運算式
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 絕對值代表距離，絕對值較大並不代表數值本身較大。例如當 a = -5、b = 2 時，|a| > |b|，但 a < b，故 (D)
+        錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 除法不具備對加法的左分配律，即 a ÷ (b + c) ≠ (a ÷ b) + (a ÷ c)。左式為 84 ÷ 7 = 12，右式為
+        21 + 28 = 49，兩者不相等。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 5.4×10^-4 (0.00054) 大於 5.6×10^-6 (0.0000056) 為正確敘述；(B)應為1.28×10^5；(C)應從第7位開始不為0；(D)應為8位數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：第 (6) 小題及前述算式的完整排版與內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目結尾出現排版錯亂與截斷（第 (6) 小題算式不完整），無法確定最後小題的完整題目內容。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第 (6) 小題及前述算式的完整排版與內容
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1.243 \times 10^{-8}
+      - 6.35 \times 10^{6}
+      reasoning: (1) 0.00000001243 將小數點向右移8位，記為 1.243×10⁻⁸；(2) 6350000 將小數點向左移6位，記為
+        6.35×10⁶。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-5'
+      - 向右移動5個單位長
+      reasoning: (1) B點坐標為兩端點的平均：[(-13) + 3] / 2 = -5。(2) 互為相反數的新坐標中點為0，因此原中點 -5 需向右移動
+        5 個單位長才能達到 0。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '20'
+      reasoning: 絕對值小於A的正整數為1到8，故A=9；絕對值小於B的整數個數為2B-1=21，得B=11。因此A+B=9+11=20。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提到的數字圖形（右圖）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右圖」，但未提供該圖形與圖中的數字配置，無法計算 a+b+c 的值。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中提到的數字圖形（右圖）
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_11
+  number: 11
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '2'
+      reasoning: 由 $3.27 \times 10^a = 32700000$ 可知 $a = 7$；由 $7.22 \times 10^b =
+        0.0000722$（小數點後第 6、7 位為 2）可知 $b = -5$。因此 $a + b = 7 + (-5) = 2$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_12
+  number: 12
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 6.4\times 10^{-6}
+      - 乙>丁>甲>丙
+      reasoning: 乙病毒直徑為 80/12500000 = 64/10000000 = 6.4×10⁻⁶。比較四者大小：乙(6.4×10⁻⁶) >
+        丁(4.3×10⁻⁶) > 甲(1.2×10⁻⁷) > 丙(2.1×10⁻⁸)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_13
+  number: 13
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 6.9\times 10^{11}
+      reasoning: 1天文單位為15000萬公里＝$1.5\times 10^{11}$公尺，因此4.6天文單位等於$4.6\times 1.5\times
+        10^{11} = 6.9\times 10^{11}$公尺。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_14
+  number: 14
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '100'
+      reasoning: 從數字 {-4, -2, 0, 3, 5} 中選三數相乘，最大乘積 a 為 (-4) × (-2) × 5 = 40，最小乘積 b
+        為 (-4) × 3 × 5 = -60，故 a - b = 40 - (-60) = 100。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e1_s1_15
+  number: 15
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-30'
+      reasoning: 設柯南坐標為-7，各成員原位置分別為：步美 -7-6=-13、光彥 -7+5=-2、元太 -7-11=-18、灰原 -7+10=3。四人原位置坐標之總和為
+        (-13)+(-2)+(-18)+3 = -30。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

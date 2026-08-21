@@ -1,0 +1,229 @@
+source: data/bank/doc_111_高雄_大灣_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1000-5x\le 60
+      reasoning: 買了5張x元的電影票共花費5x元，剩下的錢為1000-5x元；不高於60元即小於或等於60元，依題意不需化簡列為1000-5x≤60。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x \ge 1
+      - x > -11
+      - x \le 46
+      reasoning: (1) 移項得 -3x ≤ -3，故 x ≥ 1。(2) 展開化簡得 -2x - 22 < 0，故 x > -11。(3) 同乘以
+        12 展開得 84 - 4(2x - 26) ≥ 3(3x - 14) - 12x，整理得 188 - 8x ≥ -3x - 42，解得 x ≤ 46。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 設買了 x 枝鋼珠筆，列式 15×5 + 7×3 + 24x ≤ 230，得到 96 + 24x ≤ 230，解得 x ≤ 5.583...，因此最多買了
+        5 枝。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 8或9
+      reasoning: 設團體有 x 人（x < 10 且為整數）。買10張折價票費用為 10 × 100 × 0.75 = 750 元，依題意 750
+        < 100x，解得 x > 7.5，因此 x 可為 8 或 9。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '7'
+      reasoning: 4輛校車共可載 4 × 35 = 140 人，剩餘 400 - 140 = 260 人。260 ÷ 40 = 6.5，故最少需租
+        7 輛遊覽車才能載完所有師生。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '252'
+      reasoning: 烹飪社所佔百分比為 100% - (25% + 25% + 10% + 5%) = 35%，因此烹飪社學生人數為 720 × 35%
+        = 252 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '550'
+      reasoning: 由甲候選人的得票合計可得 A = 750 - 300 - 250 = 200；由第二投開票所的得票合計可得 B = 600 - 250
+        = 350。因此 A + B = 200 + 350 = 550。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少折線圖中各組體重（如45~50、50~55、65~70、70~75、75~80公斤）的對應次數/點位數值。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目依賴附圖（體重次數分配折線圖）讀取各組的已知人數，但文字中未包含圖表上的具體點位數值，無法進行計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少折線圖中各組體重（如45~50、50~55、65~70、70~75、75~80公斤）的對應次數/點位數值。
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '176'
+      reasoning: 全隊11人的身高總和為 11 × 168 = 1848 公分，一、二年級8人的身高總和為 1320 公分，故三年級3人的身高總和為
+        1848 - 1320 = 528 公分，平均身高為 528 ÷ 3 = 176 公分。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的數線或圖示
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目要求寫出圖示所代表的不等式，但未提供對應的圖示內容，無法作答。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中提及的數線或圖示
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_12
+  number: 12
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '57'
+      - '56'
+      - '45'
+      reasoning: 將11筆資料由小到大排序為45, 45, 49, 51, 52, 56, 59, 60, 67, 71, 72。總和為627，平均數為627/11=57；中位數為第6個數56；出現次數最多的是眾數45。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_13
+  number: 13
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '2'
+      - '108000'
+      reasoning: 設A型車x輛、B型車(5-x)輛，由載客數16x+25(5-x)≧88及行李數45x+35(5-x)≧200，解得2.5≦x≦4.11，整數解x=3或4，故共有2種租車方式；最省錢為x=4、y=1，三天租金共為(4×7000+1×8000)×3=108000元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_14
+  number: 14
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '285'
+      reasoning: 從8:00到10:30經過2.5小時，行駛距離介於 2.5×98=245 公里至 2.5×103=257.5 公里之間。與A地的總距離介於
+        30+245=275 公里至 30+257.5=287.5 公里之間，此區間內15的倍數只有 285。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_15
+  number: 15
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '129'
+      - 五或六
+      reasoning: 由平均數60得六人總次數為360，故X+Y=360-(60+47+85+39)=129；因乙為第一名且小於100，乙的次數為94（丁的2倍，此時甲=35為第6名）或86（甲的2倍，此時甲=43為第5名）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_大灣_數學_g7s2e3_s1_16
+  number: 16
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '10'
+      reasoning: 設原本有 $n$ 個數，擦掉 $x$ 後剩 $n-1$ 個數，總和為 $(n-1) \times 14\frac{2}{13} =
+        (n-1) \times \frac{184}{13}$。由於總和為整數且平均值約為 14.15，可得 $n-1 = 26$（即 $n = 27$）。原本總和為
+        $\frac{27 \times 28}{2} = 378$，剩下的總和為 $26 \times \frac{184}{13} = 368$，故擦去的數字為
+        $378 - 368 = 10$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

@@ -1,0 +1,140 @@
+source: data/bank/doc_113_新北_中平_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_新北_中平_數學_g7s2e1_s1_2
+  number: 2
+  type: fill
+  images_sent: 2
+  status: missing_context
+  note: gemini 回報缺少素材：實際的數學題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 提供的文字與圖片內容為試卷作答注意事項及班級填寫欄位，並非實際的數學題目，缺少題目內容。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 實際的數學題目內容
+- id: doc_113_新北_中平_數學_g7s2e1_s1_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少具體的數學題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 提供的文字僅為考卷上的作答注意事項，並無具體的數學題目內容。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少具體的數學題目內容
+- id: doc_113_新北_中平_數學_g7s2e1_s1_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - ✕
+      - ✕
+      - ✕
+      - ○
+      reasoning: 1. 兩邊同減3y後y項消去，化簡為一元一次方程式，故錯誤；2. 二元一次方程式在沒有限制下有無限多組解，故錯誤；3. x坐標為0的點在y軸上，故錯誤；4.
+        將x=-1, y=1代入兩方程式皆成立，故正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s2e1_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設洗髮精每瓶 x 元、沐浴乳每瓶 y 元，依題意 (4x + 2y) - (2x + 4y) = 60，化簡得 2x - 2y =
+        60，即 x - y = 30，表示1瓶洗髮精比1瓶沐浴乳貴30元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s2e1_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 小銘獲得的獎金為 200y 元，花費的成本為 50x 元，因此贏得的金額為獎金減去成本，即 (200y - 50x) 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s2e1_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 聯立方程組中不含未知係數的兩式為 2x + 3y = 5 與 2x + 5y = 7，解得 x = 1, y = 1。將此解代入
+        ax + 4y = 2 得 a = -2，代入 2x + by = 3 得 b = 1，故 a - b = -2 - 1 = -3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s2e1_s1_9
+  number: 9
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由 ab=0 可知 a=0 或 b=0。若 b=0 且 a≠0 則在 x 軸上；若 a=0 且 b≠0 則在 y 軸上；若 a=b=0
+        則在原點，故以上皆有可能。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s2e1_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 因為點 P(m, n) 在第二象限，所以 m < 0 且 n > 0。由此可得 -m > 0、n > 0，因此點 (-m, n)
+        的坐標為 (正, 正)，位在第一象限內。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s2e1_s1_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 三
+      - m = -\frac{5}{2}, n = \frac{1}{2}
+      - 2人協力車6輛，3人協力車8輛
+      - 12公分
+      reasoning: A點平移後得B(-2, -3)位於第三象限，解聯立方程m+n=-2與m-n=-3得m=-5/2, n=1/2；非選1解聯立2a+3b=36與150a+200b=2500得a=6,
+        b=8；非選2由繩長3x=4y及x=2y-2解得y=3，繩長為12公分。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

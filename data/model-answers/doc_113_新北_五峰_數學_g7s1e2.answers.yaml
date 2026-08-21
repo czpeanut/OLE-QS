@@ -1,0 +1,283 @@
+source: data/bank/doc_113_新北_五峰_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_新北_五峰_數學_g7s1e2_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 因為該數為2的倍數，個位數需為偶數；又為3的倍數，數位和 2+4+5+6+□ = 17+□ 需為3的倍數。當 □=4 時，數位和為21可被3整除且4為偶數，故選(C)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 一個整數若是4的倍數，其末兩位數必為4的倍數。末兩位數為5□，可能的數為52與56，因此□可填入2或6，選項中僅有(B)符合。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 該數的質因數包含 2、5、7（若題幹為 2^5 × 5^3 × 7^2）。選項 (A) 含有質因數 5、(B) 含有 7、(D)
+        含有 2 與 7，皆不互質；(C) 39 的質因數為 3 與 13，與其互質。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 中括號符號表示求最小公倍數。將第一個數質因數分解為 2² × 3 × 5²，第二個數為 2³ × 5³ × 7，兩數的最小公倍數為取各質因數的最高次方，即
+        2³ × 3 × 5³ × 7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '17'
+      reasoning: 當兩正整數乘積固定時，兩數愈接近其和愈小。72 的正因數中差最小的組合為 8 與 9，因此 a+b 的最小值為 8+9=17。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '6'
+      reasoning: 利用11的倍數判別法，奇數位數字和（6 + 5 + 4 = 15）與偶數位數字和（7 + □ + 2 = 9 + □）的差需為11的倍數，即
+        15 - (9 + □) = 6 - □ = 0，得 □ = 6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^3 \times 3 \times 5^2 \times 7
+      reasoning: 將4200進行質因數分解：4200 = 42 × 100 = (2 × 3 × 7) × (2^2 × 5^2) = 2^3 ×
+        3 × 5^2 × 7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^2 × 5 × 7
+      reasoning: 求兩數的最大公因數時，取兩數共同質因數的最低次方，質因數 2 取 2 次方，5 取 1 次方，7 取 1 次方，故最大公因數為 2^2
+        × 5 × 7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '180'
+      - '3'
+      reasoning: 第一格由公式 [a, b] = (a × b) ÷ (a, b) = 2160 ÷ 12 = 180；第二格通分得 22/42 <
+        甲/42 < 30/42，甲介於 23 至 29 之間且與 42 互質，符合的有 23、25、29，共 3 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目內容不完整，缺少「且 甲」之後的條件與題目所求。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目句子不完整，在「且 甲」後被截斷，缺少關鍵的不等式或條件以及問題目標，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目內容不完整，缺少「且 甲」之後的條件與題目所求。
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '16'
+      reasoning: 原分數為 5/8，分子加上 10 後變為 15，是原本的 3 倍；為維持分數值不變，分母也需變為原來的 3 倍（8 × 3 = 24），因此分母需加上
+        24 - 8 = 16。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -1/15
+      - 34/7
+      reasoning: 第一題提出公因數 (-1/19) 得 (-1/19) * (8/15 + 11/15) = -1/15；第二題先算除法，7 - (3/4
+        ÷ 7/4) + (-3/7 ÷ 1/4) = 7 - 3/7 - 12/7 = 7 - 15/7 = 34/7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目不完整，缺少後續的數學運算式。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目內容僅有「計算並化簡5」，缺少完整的數學運算式，無法進行計算與化簡。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目不完整，缺少後續的數學運算式。
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '82'
+      reasoning: 任何非零數的0次方為1，故(-33)^0 = 1；(-3)^4 = 81。兩者相加 1 + 81 = 82。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{55}{32}
+      reasoning: 第一項為 52 × (1/32) = 13/8 = 52/32；第二項為 (1/27) ÷ (4/81) × (1/8) = (1/27)
+        × (81/4) × (1/8) = 3/32。兩項相加得 52/32 + 3/32 = 55/32。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '4'
+      reasoning: 計算 A = 45 × 56 = 2520，為 4 位數（若原題包含上標指數 $4^5 \times 5^6 = 16 \times
+        10^6 = 16000000$ 則為 8 位數，此處依題文字面計算為 4 位數）。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_13
+  number: 13
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '140'
+      reasoning: 三人同時晨跑的週期為 5、4、2 的最小公倍數 20 天。要再次恰好在星期三晨跑，天數須為 20 與 7（一週天數）的最小公倍數，即
+        lcm(20, 7) = 140 天。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_14
+  number: 14
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '26'
+      reasoning: 每條緞帶長度應為 150、180、450 的最大公因數，即 30 公分。最少可分成 (150 + 180 + 450) ÷ 30
+        = 5 + 6 + 15 = 26 條。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_五峰_數學_g7s1e2_s2_15
+  number: 15
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '450'
+      reasoning: 喝掉的 5/8 瓶果汁重 1650 - 900 = 750 公克，因此整瓶果汁重 750 ÷ (5/8) = 1200 公克，空瓶重為
+        1650 - 1200 = 450 公克。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

@@ -1,0 +1,215 @@
+source: data/bank/doc_113_高雄_七賢_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：第二小題兩個分式中間缺少的運算符號
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 第一題可化簡為 -15x+10y+5，但第二題中兩個分式之間遺漏了運算符號（加號或減號等），無法確定題目進行化簡。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 第二小題兩個分式中間缺少的運算符號
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少完整的二元一次式算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目句子不完整，缺少要化簡的二元一次式內容，無法進行計算與化簡。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少完整的二元一次式算式
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -5x+14y
+      reasoning: 先化簡括號內部：8y - (-4x + y) = 4x + 7y，再展開乘上 2 得 8x + 14y，最後與 -13x 合併同類項得到
+        -5x + 14y。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '41'
+      reasoning: 將 y = x + 1 代入 2x - y = 19，得 2x - (x + 1) = 19，解得 x = a = 20，進而得
+        y = b = 21，因此 a + b = 20 + 21 = 41。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-9'
+      reasoning: 解二元一次聯立方程式 3x+5y=13 與 -7x-9y=-17，可求得 x=-4、y=5，即 a=-4、b=5。因此 a-b =
+        -4-5 = -9。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：二元一次聯立方程式的第一個方程式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目表示為二元一次聯立方程式，但題目中僅給出一個標示為第2式的方程式（5x+y-1=4x-y+3），缺少第1式，無法求解唯一之y值。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 二元一次聯立方程式的第一個方程式
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 聯立不含常數 a、b 的兩方程式 5x - 2y = 4 與 2x - 5y = -11，解得 x = 2、y = 3，因此 x
+        + y = 2 + 3 = 5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '3'
+      reasoning: 將 x=1、y=2 代入聯立方程式得 a+4b=6 與 3a-2b=4。解此聯立方程式求得 a=2、b=1，故 a+b=2+1=3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 三
+      reasoning: 因為點 P(a, b) 在第二象限，所以 a < 0 且 b > 0。因此 ab < 0 且 a - b < 0，兩坐標皆為負數，故該點在第三象限。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (4, -8)
+      reasoning: 由住家與車站、學校的坐標可知，坐標平面上1單位長代表50公尺，且向東為x軸正向、向北為y軸正向。從學校(2, 4)向東走100公尺（x加2）、向南走600公尺（y減12），可得公園坐標為(4,
+        -8)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '13'
+      reasoning: 設丟出反面 y 次、正面 (27 - y) 次，依題意列式為 3(27 - y) + 2y = 68，解得 y = 13。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的坐標/位置示意圖（右圖）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目依賴附圖來得知火車站、百貨公司、咖啡廳與書局的相對方位，但題幹中並未提供該圖，因此無法判定書局所在的象限。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中提及的坐標/位置示意圖（右圖）
+- id: doc_113_高雄_七賢_數學_g7s2e1_s1_13
+  number: 13
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '810'
+      reasoning: 設方形禮盒每盒 x 元、圓形每盒 y 元、身上有 M 元。由題意列出 3x + 7y = M + 240 與 7x + 3y =
+        M - 360，兩式相減得 y - x = 150，代入第二式化簡得 10x + 450 = M - 360，故 M - 10x = 810 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '3'
+      reasoning: A點向左4單位、向上3單位後坐標為(2a+1-4, 3+3)，與B點(-1, 3b)重合。由2a-3=-1得a=1，由6=3b得b=2，因此a+b=1+2=3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：開學特惠活動說明的圖片或文字內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右圖為活動說明」，但未提供開學特惠活動的具體內容與規則，無法列式計算兩雙鞋定價的差額。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 開學特惠活動說明的圖片或文字內容

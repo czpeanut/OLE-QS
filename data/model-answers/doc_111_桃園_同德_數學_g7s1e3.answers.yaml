@@ -1,0 +1,221 @@
+source: data/bank/doc_111_桃園_同德_數學_g7s1e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_桃園_同德_數學_g7s1e3_s2_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 依據四則運算規則先乘除後加減，x÷10−5 可以寫成分數形式的 x/10−5，對應選項 (C)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s2_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 鏮洺 3 年前的年齡為 (x - 3) 歲，數學老師的年齡為其 2.5 倍多 3 歲，故列式為 2.5(x - 3) + 3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s2_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將 x = 5 代入各選項：(A) 為 11、(B) 為 3、(C) 為 3，皆為奇數；(D) 為 20/3 - 4/6 - 14/7
+        = 6 - 2 = 4，為偶數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s2_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 一元一次方程式必須包含等號且未知數最高次方為1。在四個式子中，只有「x = 9」、「7x = 0」與「-3x + 8 = 3x」符合條件（「-2x」僅為代數式，非方程式），因此共有
+        3 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s2_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將 x = -6 代入 (A)，等號左邊為 3(-6) + 1 = -17，右邊為 2(-6) - 5 = -17，兩邊相等，故
+        x = -6 是 (A) 的解。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s2_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 從步驟三到步驟四時，由 -7x/3 = 14 求解 x 應乘上 (-3/7) 得 x = -6，經睿漏掉了負號，因此在步驟四開始發生錯誤。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s2_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少三個天平上積木平衡狀態的圖形或詳細文字描述，以及積木形狀符號。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺少三個天平左右兩邊積木平衡狀態的圖形或關係式，且積木形狀的代號/圖案未完整顯示，無法進行計算。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少三個天平上積木平衡狀態的圖形或詳細文字描述，以及積木形狀符號。
+- id: doc_111_桃園_同德_數學_g7s1e3_s2_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：右表（男、女性基礎代謝率BMR計算公式表）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「根據右表的資訊」，但未提供該表（內含男、女性基礎代謝率之計算公式），因此無法單依題幹資訊確定公式。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 右表（男、女性基礎代謝率BMR計算公式表）
+- id: doc_111_桃園_同德_數學_g7s1e3_s3_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '12'
+      - '5'
+      - '2'
+      reasoning: (1) 由 (2/3)x = 8 可得 x = 12；(2) 由 3x + 5 = 15 + x 移項得 2x = 10，x =
+        5；(3) 原式為 (2x+1)/3 - (x-4)/6 = 2，同乘 6 得 2(2x+1) - (x-4) = 12，化簡得 3x + 6 =
+        12，故 x = 2。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s3_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 甲
+      - 乙
+      - 丁
+      reasoning: 圓形、長方形、箏形皆必有對稱軸，為線對稱圖形；直角三角形與梯形則不一定具備對稱軸（需為等腰直角三角形或等腰梯形才成立）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s3_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目中提及的剪紙圖形
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右邊的形狀」，但未提供圖形，無法得知各點的相對位置與頂點標籤。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少題目中提及的剪紙圖形
+- id: doc_111_桃園_同德_數學_g7s1e3_s3_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '6'
+      reasoning: 設丟出奇數點 x 次，則丟出偶數點為 (27 - x) 次。依題意列式：3(27 - x) - 2x = 51，解得 81 - 5x
+        = 51，5x = 30，x = 6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s3_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '140'
+      reasoning: 設經過 t 小時，粗蠟燭剩餘高度為 1-t/7，細蠟燭為 1-t/3。依題意列式 1-t/7 = 3(1-t/3)，解得 t =
+        7/3 小時，換算為 140 分鐘。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s4_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2x - 300
+      reasoning: 籃球鞋定價為 x 元，慢跑鞋為 x - 300 元，兩者合計共付 x + (x - 300) = 2x - 300 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s1e3_s4_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目背景中的其他促銷活動規定（如滿額現折或滿額贈優惠條件）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題幹描述僅有8折折價券折抵一雙鞋，折抵1000元與500元之總價不可能相同（1300+x ≠ 1400+x），題目顯然缺少商場其他促銷方案（如滿額折扣等前文設定）。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少題目背景中的其他促銷活動規定（如滿額現折或滿額贈優惠條件）

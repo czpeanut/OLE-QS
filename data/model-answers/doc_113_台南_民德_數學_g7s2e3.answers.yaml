@@ -1,0 +1,287 @@
+source: data/bank/doc_113_台南_民德_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台南_民德_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：選項 (D) 完整的不等式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 選項 (A)、(B)、(C) 經代入檢驗均不成立，而選項 (D) 的不等式內容殘缺不全，無法進行判斷。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 選項 (D) 完整的不等式
+- id: doc_113_台南_民德_數學_g7s2e3_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 「不低於」代表大於或等於（≥），同意人數至少為全班的一半（28 × 1/2），且同意人數最多為全班總人數28人，因此範圍為 28
+        × 1/2 ≤ x ≤ 28。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 前三次總分為211分，設再考n次且皆得滿分100分。由不等式(211 + 100n)/(3 + n) > 90可得10n > 59，即n
+        > 5.9，因此最少需要6次。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 美美花費 5x 元拿到 3 張摸彩券，故 300 ≤ 5x < 400 得 60 ≤ x < 80；小儀花費 5x + 150 元拿到
+        4 張摸彩券，故 400 ≤ 5x + 150 < 500 得 50 ≤ x < 70。取兩者交集得 60 ≤ x < 70。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 第7個數為中位數所以 b = 6，出現3次的 c 為眾數所以 c = 8。由13個數的平均數為6可知總和為78，列式 1+2+2+3+2a+6+8+8+8+9+10+12=78，解得
+        2a=9，即 a=9/2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：學生身高的次數分配表
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右表是某班學生身高的次數分配表」，但未提供該次數分配表內容，無法計算累積次數以求出中位數所在組別。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 學生身高的次數分配表
+- id: doc_113_台南_民德_數學_g7s2e3_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：生物成績的次數分配折線圖及其各組數值
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及依據「生物成績的次數分配折線圖」作答，但未提供該折線圖的各組人數數據或圖形，無法計算70~90分所佔的比例。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 生物成績的次數分配折線圖及其各組數值
+- id: doc_113_台南_民德_數學_g7s2e3_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 化簡不等式得 (a - 7)x >= -12。由於解為 x <= 6，不等號方向改變，因此 -12 / (a - 7) = 6，解得
+        a = 5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '8'
+      reasoning: 設玩 $x$ 次遊樂設施，護照費用為 $300 + 30(x - 5) = 30x + 150$ 元。依題意列出不等式 $30x
+        + 150 < 50x$，解得 $x > 7.5$，故至少要玩 8 次。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '88'
+      reasoning: 設原票價為 x 元、人數為 n 人。買 100 張票的費用為 100 × 0.7x = 70x，買 n 張票費用為 0.8nx。依題意
+        70x < 0.8nx，解得 n > 87.5，故最少需 88 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '21'
+      reasoning: 前6公里耗時6/30＝0.2小時（12分鐘），總時間不超過0.5小時（30分鐘），故剩餘時間最多0.3小時。剩餘距離最多為50×0.3＝15公里，因此總距離最遠為6＋15＝21公里。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '200'
+      reasoning: 設訂購 x 個甜柿，可販售的完好甜柿為 0.9x 個。利潤為 40×0.9x - 30x = 6x 元，依題意 6x ≥ 1200，解得
+        x ≥ 200，故至少要訂購 200 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整的成績次數分配直方圖（各組成績區間與對應的人數數據）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提供的「次數分配直方圖」為文字殘缺的 OCR 內容，無法明確判讀各分數區間所對應的學生人數（次數），因此無法計算算術平均數。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整的成績次數分配直方圖（各組成績區間與對應的人數數據）
+- id: doc_113_台南_民德_數學_g7s2e3_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：康和國中七年級學生身高圓形圖及圖中既有的數據（如總人數或各區間比例/人數）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右圖」，但未提供七年級學生身高的圓形圖及相關數據，無法進行計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 康和國中七年級學生身高圓形圖及圖中既有的數據（如總人數或各區間比例/人數）
+- id: doc_113_台南_民德_數學_g7s2e3_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '55'
+      reasoning: 將已知 7 個數由小到大排列為 10, 40, 50, 65, 73, 77, 82。8 個數的中位數為第 4 與第 5 個數的平均，由
+        (x + 65) / 2 = 60 可解得 x = 55，排序後恰好位於第 4 位。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5692'
+      reasoning: 密碼依序以x軸、y軸做線對稱相當於以原點為對稱中心旋轉180度。由左至右的數字2、6、9、5在旋轉180度且順序顛倒後，分別對應為5、6、9、2，因此密碼為5692。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s2_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的方格圖（包含三角形ABC與對稱軸L的位置）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「如右圖」並需要根據方格中的三角形ABC與直線L來計算面積，但未提供該圖形與方格資訊，無法計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中提及的方格圖（包含三角形ABC與對稱軸L的位置）
+- id: doc_113_台南_民德_數學_g7s2e3_s2_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (-2, 1)
+      reasoning: A、B 兩點的 x 坐標相同，故對稱軸為通過 AB 中點的水平線 y = -4。點 C(-2, -9) 關於 y = -4 的對稱點坐標為
+        (-2, 2*(-4) - (-9)) = (-2, 1)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台南_民德_數學_g7s2e3_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少計程車車資計算規則表格（包含起跳金額、起跳里程、後續跳錶距離與金額等資訊）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中提及「如右表所示」，但未提供計程車的計費標準表格（包含起跳價、起跳里程、續程計費方式等），因此無法進行計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少計程車車資計算規則表格（包含起跳金額、起跳里程、後續跳錶距離與金額等資訊）
+- id: doc_113_台南_民德_數學_g7s2e3_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 5、6、7、9
+      reasoning: 資料總和為77，扣除已知9數和61得x+y=16；因中位數為7且小於7的數已有5個，故x≥7，配合x<y可得x=7、y=9。完整資料中5、6、7、9各出現2次，故眾數為5、6、7、9。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

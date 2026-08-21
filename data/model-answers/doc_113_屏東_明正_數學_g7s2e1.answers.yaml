@@ -1,0 +1,305 @@
+source: data/bank/doc_113_屏東_明正_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_屏東_明正_數學_g7s2e1_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 坐標 M(3, -4) 的 x 坐標為正、y 坐標為負，因此該點位於第四象限。與 y 軸距離為 3、與 x 軸距離為 4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 將第(2)式乘以2後，y的係數變為-4，再與第(1)式相加（即 (1) + (2)×2）即可消去未知數y。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 由第(1)式 3x + 4y = 2 移項可得 3x = 2 - 4y，兩邊同除以 3 得 x = (2 - 4y) / 3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 因為 x、y 皆為正整數，由 x = 16 - 4y > 0 可得 y < 4，因此 y 可為 1、2、3，對應的 x 分別為 12、8、4，共有
+        3 組解。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設一桶炸雞為 x 元、一個披薩為 y 元，依題意可列出方程式 (2x + 3y) - (3x + 2y) = 50，化簡得 y -
+        x = 50，即 1 個披薩比 1 桶炸雞貴 50 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目缺少標示 P、Q、R、S、T 五點位置的坐標平面圖。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供標示 P、Q、R、S、T 五點的坐標平面圖，無法得知各點的具體坐標。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目缺少標示 P、Q、R、S、T 五點位置的坐標平面圖。
+- id: doc_113_屏東_明正_數學_g7s2e1_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目中所指的表格及二元一次式相關數據
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目指稱「在下表空格中」，但未提供該表格內容與二元一次式，無法進行計算。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少題目中所指的表格及二元一次式相關數據
+- id: doc_113_屏東_明正_數學_g7s2e1_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整的表格結構與空格位置定義
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提供的表格文字排版錯亂且殘缺不全，包含未對齊的欄位與不完整的項目（如「-3x+4y」），無法判定需填入的空格位置與對應已知條件。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整的表格結構與空格位置定義
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -9x-3y+3
+      - 24x-17y-4
+      - \frac{3x-7y+4}{12}
+      reasoning: (1) 同類項合併得 -9x-3y+3。(2) 去括號得 18x-15y+6x-2y-4 = 24x-17y-4。(3) 通分後得
+        \frac{3(x-y)-4(y-1)}{12} = \frac{3x-7y+4}{12}。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整清晰的聯立方程式題目
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字為 OCR 掃描破碎雜訊，方程式 (2) 內容不完整且混雜了考卷其他部分（表格、坐標圖等）的文字，無法辨識完整題目。
+      confidence: 0.2
+      missing_context: true
+      missing_what: 完整清晰的聯立方程式題目
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \begin{cases} x+y=100 \\ 3x+\frac{1}{3}y=100 \end{cases}
+      reasoning: 根據人數總和可列出 x + y = 100；根據饅頭總數，大和尚吃 3x 個、小和尚吃 (1/3)y 個，可列出 3x + (1/3)y
+        = 100。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \begin{cases} x+10=2(y+10) \\ x-6=4(y-6) \end{cases}
+      reasoning: 10年後林爸為 x+10 歲、小林子為 y+10 歲，依題意列出 x+10=2(y+10)；6年前林爸為 x-6 歲、小林子為 y-6
+        歲，依題意列出 x-6=4(y-6)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (-2, 2)
+      reasoning: 設E點坐標為(x, y)，由題意知 x + 6 = 4 得到 x = -2，y - 3 = -1 得到 y = 2，故E點坐標為(-2,
+        2)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-1'
+      reasoning: A點移動後的坐標為(2a+1-4, 3+3)=(2a-3, 6)，與B(-1, 3b)重合。解得2a-3=-1 => a=1，3b=6
+        => b=2，故a-b=1-2=-1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 四
+      reasoning: 因為點 P(ab, a-b) 在第二象限，所以 ab < 0 且 a - b > 0（即 a > b），可推得 a > 0 且 b
+        < 0。因此點 Q(a, b) 的坐標為 (正, 負)，位於第四象限。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '138'
+      reasoning: 設飯糰1個x元、豆漿1杯y元，2x+3y=120。奕玟的花費為6x+9y+2=3(2x+3y)+2=362元，故應找回500-362=138元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：圖(1)
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目需要參照圖(1)以判斷屏東公園相對於明正國中、家樂福與縣政府的相對位置與坐標象限，但未提供該圖片。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 圖(1)
+- id: doc_113_屏東_明正_數學_g7s2e1_s3_10
+  number: 10
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '12'
+      reasoning: 依據題意列出聯立方程式：x + y = 12 及 y + (2x + 2y) = 24（即 2x + 3y = 24）。解得 y
+        = 0、x = 12，因此 x + 2y = 12 + 0 = 12。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s4_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏完整的數學題目內容與提問
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目內容僅有「屏東阿猴82.」，缺乏完整的數學題目敘述與問題，無法進行作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺乏完整的數學題目內容與提問
+- id: doc_113_屏東_明正_數學_g7s2e1_s4_2
+  number: 2
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '31'
+      - 72勝10敗
+      - 18次
+      reasoning: 1.(1) 勝差=[(52-21)+(61-30)]/2=31。 (2) 設阿猴x勝(82-x)敗，[(x-25)+(57-(82-x))]/2=47，解得x=72，為72勝10敗。
+        2. 設單次券x張、Express Pass y張，x+y=25且40x+30y=930，解得x=18、y=7；每玩一次設施都需要一張單次券，故共玩了18次。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e1_s8_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目的完整文字敘述與數學算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅包含配分與題號標示，缺乏具體的題目內容與數學算式，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目的完整文字敘述與數學算式

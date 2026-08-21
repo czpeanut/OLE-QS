@@ -1,0 +1,352 @@
+source: data/bank/doc_113_台中_向上_數學_g7s1e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_向上_數學_g7s1e1_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 以中午12點為基準（0），下午4點為+4表示向後4小時為正，上午8點為中午12點前4小時，故記為-4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：選項(丙)與(丁)的完整題幹文字
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中選項(丙)與(丁)的敘述文字有明顯缺漏與錯亂（如「0沒有相反數3 1最接近的整數為-3 (丁) 在數線上與-3」未完整結束），無法正確判斷所有選項的對錯。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 選項(丙)與(丁)的完整題幹文字
+- id: doc_113_台中_向上_數學_g7s1e1_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 在數線上向左移動代表減法，向右移動代表加法。從 -3 出發向左移 4 單位再向右移 5 單位，算式為 -3 - 4 + 5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 數線上兩點的距離為兩點坐標差的絕對值，即 $|(-5) - (-2)| = |-3| = 3$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 連乘運算中，負數的個數為奇數時結果為負數。(D) 選項有 3 個負數相乘，結果為負數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 依四則運算先乘除後加減的原則，(-15)÷(-3)=5，(-5)×2=-10，原式變為(-18)+5-(-10)=-18+5+10=-3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 計算各選項：(A) -23 - 12 = -35；(B) 4 ÷ (-1) = -4；(C) -8 ÷ 1 = -8；(D) 9
+        + (-1) = 8。比較後以 (D) 的值 8 最大。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將各數化為相同次方比較，$c = 6.3 \times 10^{-6} = 0.63 \times 10^{-5}$。因為 $8.2
+        > 7.5 > 0.63$，所以 $a > b > c$，即 $c < b < a$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 最大乘積甲為 (-8) × (-2) × 4 = 64，最小乘積乙為 (-8) × 4 × 1 = -32。因此甲 - 乙 = 64
+        - (-32) = 96。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s1_10
+  number: 10
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 由圖可知A點在C點左側，且線段AC長度為2，故A點所表示的數為 x - 2。因A與B互為相反數，所以B點所表示的數為 -(x -
+        2)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '17'
+      reasoning: 根據絕對值的定義，|-18| = 18，因此原式為 35 - 18 = 17。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '10'
+      reasoning: 計算 30 + (-20) 等同於 30 - 20，結果為 10。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-999'
+      reasoning: 去括號後原式變為 2024 - 999 - 2024，利用交換律與結合律得 (2024 - 2024) - 999 = -999。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '788211'
+      reasoning: 利用分配律計算：999 × 789 = (1000 - 1) × 789 = 789000 - 789 = 788211。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 科學記號 $a \times 10^{-n}$（其中 $1 \le a < 10$ 且 $n$ 為正整數）化為小數時，從小數點後第
+        $n$ 位開始出現不為 0 的數字，故 $2.1 \times 10^{-5}$ 從小數點後第 5 位開始出現不為 0 的數字。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 3.2 \times 10^9
+      reasoning: 320萬瓩 = $320 \times 10^4 \times 10^3$ 瓦 = $3.2 \times 10^6 \times
+        10^3$ 瓦 = $3.2 \times 10^9$ 瓦。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '374'
+      reasoning: 根據除法分配律，(甲-374)÷17 = (甲÷17) - (374÷17)。已知甲÷17=396，且374÷17=22，因此算式為396-22=374。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-2'
+      - 右
+      - '2'
+      reasoning: C點為A、B的中點，坐標為(-9 + 5) / 2 = -2。若A、B兩點移動後互為相反數，其新中點必為0，故需將原中點-2向右移動2個單位長至0。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '6'
+      reasoning: 由 |a|=5 得 a=5 或 -5；由 |b-2|=3 得 b=5 或 -1。因為 b<a，唯一符合的組合為 a=5 且 b=-1，故
+        a-b = 5 - (-1) = 6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '113'
+      reasoning: 將 A 改寫為 1234×(1121+1) = 1234×1121 + 1234，B 改寫為 1121×(1234+1) = 1121×1234
+        + 1121，兩式相減得 A - B = 1234 - 1121 = 113。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '20'
+      reasoning: 由 $a<b<c$ 及 $a\times b\times c<0$ 可推得 $a<0$；因為 $b-a=2|a|=-2a$，得 $b=-a>0$。再由
+        $c-b=3|b|=-3a$，可知 $c-a=-5a=25$，解得 $a=-5$、$b=5$、$c=20$，故 $a+b+c=20$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s2_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '22'
+      reasoning: 根據定義公式代入計算：4@(-2) = 4^2 - 4×(-2) + |4÷(-2)| - (-2)^2 = 16 - (-8)
+        + 2 - 4 = 22。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s3_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 6月21日上午6點
+      reasoning: 臺北(+8)比紐約(-5)快13小時。紐約時間6月20日下午5點（17:00）加上13小時，為臺北時間6月21日早上6點（06:00）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s1e1_s3_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-78'
+      - '200'
+      reasoning: (1) 先算小括號得-16與-4，中括號內為-16-(-4)=-12，原式=(-6)+6×(-12)=-78。(2) 提出公因數(-69)，中括號內為(-69)×(225-38+13)=(-69)×200，除以(-69)得200。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

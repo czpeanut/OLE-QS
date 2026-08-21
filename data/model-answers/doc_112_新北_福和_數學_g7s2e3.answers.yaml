@@ -1,0 +1,345 @@
+source: data/bank/doc_112_新北_福和_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_112_新北_福和_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：各選項數線上的不等式圖形（包含端點空心/實心與範圍線）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 各選項只有數線刻度數字，缺少數線上表示不等式範圍的圖形標記（如空心點、實心點與線段），無法判斷正確圖示。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 各選項數線上的不等式圖形（包含端點空心/實心與範圍線）
+- id: doc_112_新北_福和_數學_g7s2e3_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 將 x=-1 代入各選項：(A) -1 < 3 成立；(B) -3 > 3 不成立，故 x=-1 不是其解；(C) 3 > -3
+        成立。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_4
+  number: 4
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 計算各月甲、乙兩地氣溫差距：4月相差10度、5月相差2度、6月相差6度、7月相差12度（24-12）、8月相差10度，故7月相差最多。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 當資料總個數為偶數時，中位數為中間兩數的平均值，該數值不一定是原本資料中的值，故(B)錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 原中位數為 119，由 (118+120)/2 = 119 可知資料為偶數筆，中間兩數為 118 與 120（分別為第 n 項與第
+        n+1 項）。刪除一筆大於中位數的資料（308）後，資料總數變為 2n-1 筆，新中位數即為第 n 項，即 118。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少圖一到圖四的數線圖形
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中未提供圖一至圖四的具體數線圖示（包含空心/實心點及箭頭方向），無法判斷其與敘述的對應關係。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少圖一到圖四的數線圖形
+- id: doc_112_新北_福和_數學_g7s2e3_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 將 x = -2 代入不等式得 -3(-2) + 4 > -2n + 2，整理為 10 > -2n + 2，得 8 > -2n，兩邊同除以
+        -2 變號後得到 n > -4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將不等式兩邊同乘以 10 得 5(3x + 6) ≥ 2(8x + 24)，展開化簡為 15x + 30 ≥ 16x + 48，移項得
+        -x ≥ 18，故 x ≤ -18。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由 a > b 且 ac < bc 可知 c < 0。不等式同加或同減任意數時不等號方向不變，因此 a - c > b - c 恆成立。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_11
+  number: 11
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設最少要存 x 週，依題意列出不等式 800 + 130x ≥ 7500，解得 130x ≥ 6700，x ≥ 51.53...，因此最少需要存
+        52 週。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_12
+  number: 12
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由投開票所表格可推得 f=500、b=350、d=800、c=450、a=350、e=100。因此 a+e=450，而 f=500，故
+        (D) a+e=f 敘述錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_14
+  number: 14
+  type: single
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：乙隊學生投進球數長條圖（圖二）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及甲隊（圖一）與乙隊（圖二）的數據，但僅提供圖一，缺少乙隊的圖二，因此無法計算乙隊的中位數 b 與眾數 d。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 乙隊學生投進球數長條圖（圖二）
+- id: doc_112_新北_福和_數學_g7s2e3_s1_15
+  number: 15
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 由由小到大排列可知第7個數為中位數 b=6，出現最多次的數為眾數 c=8。總和為 6×13=78，代入計算得 2a+70=78，解得
+        a=4，因此 a+b+c=4+6+8=18。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_16
+  number: 16
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 將 400 誤按為 40 使總和減少了 360，因此平均數減少了 360 ÷ 20 = 18。實際的算術平均數應為 a + 18。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_17
+  number: 17
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 乳癌第四期的3年存活率低於60%，故甲錯誤；三期與四期的存活率差距以大腸癌（約83%降至29%，差54%）最大，故乙正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_18
+  number: 18
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 總花費為 120×3 + 90×6 + 4x，由於帶 1000 元不夠支付，列式為 120×3 + 90×6 + 4x > 1000，移項後得到
+        120×3 + 90×6 > 1000 - 4x，故選 (B)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_19
+  number: 19
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 解不等式 2x + 7 > 3x - 3 可得 x < 10。在小於 10 的正整數（1, 2, ..., 9）中，最小的正整數為
+        1，故選 D。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_20
+  number: 20
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設買鋼珠筆 x 枝，原子筆為 x+2 枝，依題意列出不等式 30x + 8(x + 2) ≤ 200，解得 38x ≤ 184，x
+        ≤ 4.84。x 最大整數為 4，因此原子筆最多可買 4 + 2 = 6 枝。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_21
+  number: 21
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目中提及的「右圖」（駕駛汽車與搭公車每公里的碳排放量數據）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中提到「依據右圖中的資訊」，但題目並未提供右圖，缺少駕駛汽車與搭公車每公里所產生的碳排放量數據，因此無法計算所需天數。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少題目中提及的「右圖」（駕駛汽車與搭公車每公里的碳排放量數據）
+- id: doc_112_新北_福和_數學_g7s2e3_s1_22
+  number: 22
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '90'
+      reasoning: 小考平均 a=(50+45+55)/3=50，態度平均 c=60。依公式 0.35(50) + 0.35b + 0.3(60) ≥
+        60，得作業平均 b ≥ 70。設5-2作業為 x 分，則 (60+60+x)/3 ≥ 70，解得 x ≥ 90。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_新北_福和_數學_g7s2e3_s1_23
+  number: 23
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：體重相關的次數分配表或統計圖表
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺少對應的體重統計數據、次數分配表或直方圖，無法得知55~60公斤的具體人數。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 體重相關的次數分配表或統計圖表
+- id: doc_112_新北_福和_數學_g7s2e3_s1_24
+  number: 24
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏前題（第23題）所依據的班級體重次數分配表或統計圖表。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目依賴前題的體重統計數據或圖表（如次數分配表或長條圖），由於未提供該圖表，無法得知各體重組別人數與中位數，故無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺乏前題（第23題）所依據的班級體重次數分配表或統計圖表。
+- id: doc_112_新北_福和_數學_g7s2e3_s1_25
+  number: 25
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：113年國中教育會考數學科能力等級與加權分數對照表
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目指稱之「113年國中教育會考數學科能力等級與加權分數表」並未附於題幹中，缺少能力等級切點數據，無法判定小森之能力等級。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 113年國中教育會考數學科能力等級與加權分數對照表
+- id: doc_112_新北_福和_數學_g7s2e3_s1_26
+  number: 26
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 數學科加權分數計算方式為：選擇題題數/25×85 + 非選得分/6×15。由表知基礎等級門檻為38.10分，設選擇題對x題，則3.4x
+        + (1/6)×15 ≥ 38.10，解得3.4x ≥ 35.6，x ≥ 10.47，故至少需對11題。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

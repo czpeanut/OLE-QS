@@ -1,0 +1,346 @@
+source: data/bank/doc_113_台中_四育_數學_g7s1e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_四育_數學_g7s1e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 利用分配律將 -4 乘入括號內，得到 -4 × 3x + (-4) × (-5) = -12x + 20。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{x}{4}
+      reasoning: 一打為12包，售價x元，因此每包泡麵為x/12元；3包泡麵的售價為3 * (x/12) = x/4元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：式子「1/2 x = 10-2」的選項代號
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題幹要求選出3個一元一次方程式的代號，但式子「1/2 x = 10-2」缺少對應的選項代號，導致無法寫出完整的3個代號答案。
+      confidence: 0.9
+      missing_context: true
+      missing_what: 式子「1/2 x = 10-2」的選項代號
+- id: doc_113_台中_四育_數學_g7s1e3_s1_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 步驟三
+      reasoning: 步驟三中，將左式的 -5 移項至右式時應變號為 +5（即 3x = 8 + 5），但他寫成 3x = 8 - 5，因此步驟三開始發生錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '8'
+      reasoning: 展開並化簡等式兩側得 2x + 12 = 4x - 4，移項整理可得 2x = 16，解得 x = 8。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{x-500}{25}
+      reasoning: 總成本為 x 元，扣除導師贊助的 500 元後，剩餘 (x - 500) 元由 25 位學生平分，因此每位學生平均負擔 \frac{x-500}{25}
+        元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目中提及的數線位置圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「如右圖」，需要數線圖來確認 P 點位於原點 O 的左側或右側，以判斷線段長度為 x-2 還是 2-x，目前缺少該圖。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少題目中提及的數線位置圖
+- id: doc_113_台中_四育_數學_g7s1e3_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{5x+11}{6}
+      reasoning: 通分後化簡：\frac{3(3x+1)-2(2x-4)}{6} = \frac{9x+3-4x+8}{6} = \frac{5x+11}{6}。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 6x-5
+      reasoning: 先化簡中括號內部得 x-(3x-1) = -2x+1，再展開中括號得 -2(-2x+1) = 4x-2，最後與 2x-3 合併得
+        (2x-3)+(4x-2) = 6x-5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x=-23
+      reasoning: 將方程式同乘以 12 整理得 3(1-3x) - 2(1-4x) = 24，化簡為 1 - x = 24，解得 x = -23。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-2'
+      reasoning: 令 (5x+4)/3 = (6x-2)/7，交叉相乘得 7(5x+4) = 3(6x-2)，化簡為 35x+28 = 18x-6，解得
+        17x = -34，故 x = -2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_13
+  number: 13
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x+(x-1)+(x-2)=-24
+      reasoning: 假設三數中最大者為x，則另外兩個連續整數為x-1與x-2，依題意三數之和為-24，可列出方程式 x+(x-1)+(x-2)=-24。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_14
+  number: 14
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '48'
+      reasoning: 兩數互為相反數表示相加為0，列式為 (7x + 40) + (56 - 9x) = 0，化簡得 -2x + 96 = 0，解得 x
+        = 48。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_15
+  number: 15
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{3}{35}x
+      reasoning: 定價為 x 元，依加 4 成定價可知成本為 x ÷ 1.4 = 5/7 x 元；打 8 折售價為 0.8x = 4/5 x 元。每件衣服獲利為售價減成本，即
+        4/5 x - 5/7 x = 3/35 x 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_16
+  number: 16
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '45'
+      reasoning: 設房間有 x 間，依題意列出學生人數方程式 4x + 5 = 5(x - 1)，解得 x = 10。將 x = 10 代入得學生人數為
+        4(10) + 5 = 45 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_17
+  number: 17
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '12'
+      reasoning: 設山路長為 x 公里，根據上山與下山的時間和可列出方程式 x/2 + x/3 = 10，解得 x = 12。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_18
+  number: 18
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5600'
+      reasoning: 設定價為 x 元，則成本為 0.6x + 800 = 0.9x - 1600，解得 x = 8000。代入得成本為 0.6 × 8000
+        + 800 = 5600 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_19
+  number: 19
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目中顯示各邊長度與 x 關係的幾何圖形。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「如圖」，但並未提供包含幾何圖形及邊長與 x 關係的圖形資訊，無法進行計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少題目中顯示各邊長度與 x 關係的幾何圖形。
+- id: doc_113_台中_四育_數學_g7s1e3_s1_20
+  number: 20
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-40'
+      reasoning: 設攝氏與華氏溫度相同為 x 度，依換算公式 F = 9/5 C + 32，令 x = 9/5 x + 32，解得 -4/5 x =
+        32，故 x = -40。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_21
+  number: 21
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '26'
+      reasoning: 設原本買 x 支冰棒，依題意列式為 25x - 25(x + 1) × 0.9 = 40，解得 x = 25。因筱雯最後多買了 1
+        支，故最後買了 25 + 1 = 26 支。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_22
+  number: 22
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '160'
+      reasoning: 設包子每顆比饅頭貴8元，數量給反相當於少拿20顆包子、多拿20顆饅頭，因此老闆應退還差價 20 × 8 = 160 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_23
+  number: 23
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 設兒子今年 x 歲、父親今年 y 歲，依題意列出聯立方程式 y+8=3(x+8) 與 y-4=9(x-4)，解得 x=8、y=40。因此父親今年的年齡是兒子今年年齡的
+        40÷8=5 倍。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s1_24
+  number: 24
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-2'
+      reasoning: 九個數字總和為9，故每排和為3、正中央格x=1。由對角線與行列關係可推得：e=0（因2+x+e=3），進而由第一行a+c+e=3與第一列a+(-4)+2=3（因b+1+6=3得b=-4）解得a=5，因此c=3-5-0=-2。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_四育_數學_g7s1e3_s2_20
+  number: 20
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏完整的題目題幹敘述與具體問題
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供「人 公里 元」三個詞彙單位，缺乏完整的題目敘述與問題內容，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺乏完整的題目題幹敘述與具體問題

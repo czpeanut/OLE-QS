@@ -1,0 +1,405 @@
+source: data/bank/doc_113_新北_中平_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_新北_中平_數學_g7s1e2_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：選項 (D) 的完整敘述及選項 (B) 修正後的完整文字
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中的選項 (D) 文字不完整（僅有數字「5」），且 (B) 選項語句混亂破損，導致無法正確判斷完整題意。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 選項 (D) 的完整敘述及選項 (B) 修正後的完整文字
+- id: doc_113_新北_中平_數學_g7s1e2_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 該數的質因數為 2、5、7，與其互質的數不能包含這些質因數。(A) 的質因數只有 3 和 11，兩者最大公因數為 1，故互質。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 長方形面積為 70，兩邊長為正整數時，當邊長最接近（7 和 10）時周長最小。周長為 2 × (7 + 10) = 34。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提到的四個算式內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺少了所提及的四個算式（甲、乙、丙、丁），無法判斷哪些算式正確。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中提到的四個算式內容
+- id: doc_113_新北_中平_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將兩數進行質因數分解，$a = 34 \times 12 = 2^3 \times 3 \times 17$，$b = 432 =
+        2^4 \times 3^3$。因此最小公倍數 $[a, b] = 2^4 \times 3^3 \times 17$、最大公因數 $(a, b)
+        = 2^3 \times 3$，故選 (A)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：各選項算式中遺失的數字或數值
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目各選項的算式中缺少運算的數字或項，無法進行計算與比較。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 各選項算式中遺失的數字或數值
+- id: doc_113_新北_中平_數學_g7s1e2_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將三數通分為同分母 15：$-\frac{7}{3}=-\frac{35}{15}$，$-\frac{12}{5}=-\frac{36}{15}$，$-\frac{32}{15}=-\frac{32}{15}$。因為
+        $-36 < -35 < -32$，所以 $-\frac{12}{5} < -\frac{7}{3} < -\frac{32}{15}$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 原式為 2⁶ × 3⁵。選項 (C) 的 (-4)³ × (-3)⁵ = (-2⁶) × (-3⁵) = 2⁶ × 3⁵，負負得正且底數可化為
+        2 與 3，數值與原式完全相等。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中甲、乙兩個最簡分數的具體表示式遺漏（未顯示分數）。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中「甲、乙兩個最簡分數分別為、」遺漏了甲與乙兩個分數的具體代數表達式，無法進行通分與求解。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中甲、乙兩個最簡分數的具體表示式遺漏（未顯示分數）。
+- id: doc_113_新北_中平_數學_g7s1e2_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: A = 101 × (101/102) = (102-1)^2/102 = 100 + 1/102，最接近的整數 a = 100；B
+        = 101 × (103/102) = (102^2 - 1)/102 = 102 - 1/102，最接近的整數 b = 102。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '4'
+      reasoning: 由3的倍數判別法可知數字和 5+4+3+2+□=14+□ 須為3的倍數，□可為1、4、7；由4的倍數判別法可知末兩位數 2□ 須為4的倍數，□可為0、4、8。取兩者交集得□=4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2×3^3×5×7×13
+      reasoning: 各數質因數分解為 3^2×5×7、2×13、2×3^3，取各質因數之最高次方得最小公倍數為 2×3^3×5×7×13。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '91'
+      reasoning: 將各數質因數分解：$36=2^2\times 3^2$、$57=3\times 19$、$134=2\times 67$。$A$
+        的相異質因數為 2、3、19、67，其和為 $2+3+19+67=91$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '1'
+      reasoning: 數線上兩點的距離為兩點坐標差的絕對值，即 |(-3) - (-2)| = |-1| = 1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -\frac{13}{12}
+      reasoning: 去括號後依同分母分組計算：(17/24 - 19/24) - (13/15 + 2/15) = -2/24 - 15/15 = -1/12
+        - 1 = -13/12。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-50'
+      reasoning: 利用分配律提出公因數 5/16，原式可寫為 5/16 × (-100 + (-79) + 19) = 5/16 × (-160)
+        = -50。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '64'
+      reasoning: 利用指數律，先將前兩項結合為 [ (12/7) × (-14/3) ]^5 = (-8)^5，再除以 (-8)^3 得到 (-8)^(5-3)
+        = (-8)^2 = 64。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5000000'
+      reasoning: 4^3 × 5^7 = (2^2)^3 × 5^7 = 2^6 × 5^7 = (2 × 5)^6 × 5 = 10^6 × 5
+        = 5000000。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '12'
+      reasoning: 利用兩正整數乘積等於其最大公因數與最小公倍數的乘積，即 (a, b) × [a, b] = a × b，可得 (a, b) = 3024
+        ÷ 252 = 12。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 甲>乙>丙>丁
+      reasoning: 甲、乙為正數，因底數介於0與1之間，指數愈大值愈小，故甲>乙>0；丙、丁為負數，底數絕對值大於1，指數愈大絕對值愈大，故負得愈多，丙>丁。因此甲>乙>丙>丁。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '15'
+      reasoning: 欲使剪成的緞帶條數最少，每條長度需為三條緞帶長度的最大公因數，即 gcd(140, 210, 175) = 35 公分。最少可剪成的總條數為
+        (140 + 210 + 175) ÷ 35 = 4 + 6 + 5 = 15 條。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s2_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '90'
+      reasoning: 花費為10、12、15的公倍數，其最小公倍數為60。介於350至400元之間的公倍數為360元，故三種麵包單價分別為36元、30元、24元，各買一個共需36+30+24=90元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 12%
+      reasoning: 前後差價為 140 - 125 = 15 元，根據漲幅公式 (15 / 125) × 100% = 12%。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s3_2
+  number: 2
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A＝48，B＝72
+      - '144'
+      reasoning: 由因數列表可知A的最大因數為48，故A＝48；B為2位數且含有因數8與9，故B為[8,9]＝72。三個數12、48、72的最小公倍數[12,
+        48, 72]＝144。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s3_3
+  number: 3
+  type: calc
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 37個
+      - 200毫升
+      reasoning: 紅茶總量為 4 × 5又3/5 = 112/5 公升。可裝杯數為 (112/5) ÷ (3/5) = 112/3 = 37又1/3
+        杯，故最多可裝滿 37 個紙杯。剩下 1/3 杯紅茶，即 (1/3) × (3/5) = 1/5 公升 = 200 毫升。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_中平_數學_g7s1e2_s5_01
+  number: 1
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少完整的題目敘述與問題內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供題號數字列表，缺少實際的題目文字與問題內容，無法進行作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少完整的題目敘述與問題內容
+- id: doc_113_新北_中平_數學_g7s1e2_s6_02
+  number: 2
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏具體的運算題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅包含小題編號與配分，缺乏具體的運算題目或問題內容，無法進行計算作答。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺乏具體的運算題目內容
+- id: doc_113_新北_中平_數學_g7s1e2_s6_03
+  number: 3
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目具體內容與算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供題號與配分，缺乏具體的數學題目算式與內容，無法進行作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目具體內容與算式

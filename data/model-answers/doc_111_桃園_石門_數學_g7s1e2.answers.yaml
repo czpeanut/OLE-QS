@@ -1,0 +1,325 @@
+source: data/bank/doc_111_桃園_石門_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目排版錯漏，選項中缺少正確答案 $-\frac{6}{7}$
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 計算 $(-\frac{5}{7}) - \frac{1}{7} = -\frac{6}{7}$，但選項中沒有 $-\frac{6}{7}$，且題幹文字出現排版錯置，無法確認正確選項。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 題目排版錯漏，選項中缺少正確答案 $-\frac{6}{7}$
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目算式 $73 \times 23 = 14\square$ 存在打字或數字錯誤，需提供正確算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 計算 $73 \times 23 = 1679$，為四位數且前兩位為 16，與題目給定的 $14\square$ 矛盾，題目條件有誤無法直接得出正確選項。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目算式 $73 \times 23 = 14\square$ 存在打字或數字錯誤，需提供正確算式
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 兩質數相乘的積至少有三個正因數（1、質數本身及其乘積），因此必為合數，絕不可能是質數；(A) 2+3=5 為質數；(C) 8 與
+        9 互質但皆為合數；(D) 質數有無窮多個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 經判斷3的倍數有3186、252、111共3個(a=3)；4的倍數有412、252共2個(b=2)；9的倍數有3186、252共2個(c=2)。因此a+b+c=3+2+2=7為質數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 將 120 進行質因數分解：120 = 2 × 2 × 2 × 3 × 5 = 2³ × 3 × 5，故選 (B)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將 2187 進行質因數分解可得 2187 = 3^7，因此 2187 的質因數只有 3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 先求 18 與 24 的最大公因數 (18,24) = 6，再求 12 與 6 的最小公倍數 [12,6] = 12。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 原式可簡化為 (-1/9) × (7/3) × (12/7) = (-1/9) × 4 = -4/9，故選 (D)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_10
+  number: 10
+  type: single
+  images_sent: 5
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由短除法可知，8、12、10的最小公倍數為 2 × 2 × 2 × 3 × 5 = 120，故選項 (D) 正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_11
+  number: 11
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 210 的質因數為 2、3、5、7。選項 (A) 31 為質數且不含上述質因數，因此與 210 互質；(B)、(C)、(D) 分別含有
+        5 和 7、3、7 的公因數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_12
+  number: 12
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 求三數的最大公因數，需挑選共同質因數的最小次方。三數共同質因數為 2、3、11，其最小次方分別為 2、3、1 次方，故最大公因數為
+        2^2 × 3^3 × 11。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_13
+  number: 13
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 28 的正因數除了本身以外有 1、2、4、7、14，其總和為 1+2+4+7+14 = 28，符合完美數的定義。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_14
+  number: 14
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 總金額 242★8 需為 22 的倍數，即須為 11 的倍數。利用 11 的倍數判別法：(8 + 2 + 2) - (★ + 4)
+        = 8 - ★ 須為 11 的倍數，可得 ★ = 8，故總金額為 24288 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_16
+  number: 16
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將各數化為小數，a = -0.5，b ≈ -0.333，c = -0.4。負數中絕對值越小者數值越大，因此 b > c > a。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_17
+  number: 17
+  type: single
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 買6杯珍珠奶茶的費用：查理公子為 46×5=230 元；花朵兒為 50×0.8×6=240 元；Tea's茶味為 3×(50+25)=225
+        元。因此 Tea's茶味最省錢。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_18
+  number: 18
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 根據同底數冪的乘除法則，指數部分進行運算：6 + 4 - 3 = 7，因此方框中的值為 7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_19
+  number: 19
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 根據指數律 $(a^m)^n = a^{m \times n}$，可得 $[(-2)^8]^4 = (-2)^{8 \times
+        4} = (-2)^{32}$，因此 $\square = 32$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_20
+  number: 20
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 月份 8 可拆成質數和 3＋5，日期 24 可拆成質數和 11＋13，將四個質數 3、5、11、13 由小到大排列可得 6 位數密碼為
+        351113。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_21
+  number: 21
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 根據最小公倍數的結合律，[a, b, 24] = [[a, b], 24] = [15, 24] = 120。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s1_22
+  number: 22
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 食材總重為麵糰 150 克、番茄醬 10 克、鳳梨 25 1/2 克、火腿 50 3/4 克、洋蔥圈 12 1/5 克、起司 30
+        1/10 克，扣除烤箱蒸發的 20 克水分後，總重為 150 + 10 + 25 1/2 + 50 3/4 + 12 1/5 + 30 1/10 -
+        20 = 258 11/20 克，對應選項(D)。
+      confidence: 0.85
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s2_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 24
+      - (2) \frac{3}{5}
+      - (3) \frac{14}{15}
+      reasoning: (1) 25^12 = (5^2)^12 = 5^24，故 △ = 24。(2) 5^23 × (3 / 5^24) = 3/5。(3)
+        3/5 + 1/3 = 9/15 + 5/15 = 14/15。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s1e2_s2_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 326顆
+      - 386顆
+      - 312顆
+      reasoning: (1) 水蜜桃顆數加4為10與15的公倍數(30的倍數)，三百多顆中符合30k-4者有326、356、386顆，故最少326顆、最多386顆。(2)
+        顆數除以10餘2且除以15餘12，可推得為30的倍數加12，三百多顆中最小為30×10+12=312顆。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

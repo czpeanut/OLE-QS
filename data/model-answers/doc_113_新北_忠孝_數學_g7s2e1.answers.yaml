@@ -1,0 +1,290 @@
+source: data/bank/doc_113_新北_忠孝_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x-18y
+      - \frac{5xy-4y}{3}
+      reasoning: (1) 展開得 (12y-4x+20) - (-5x+30y+20) = x-18y。(2) 將y乘入分子展開得 (5xy-4y)/3。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 方程式 4x - 30 = y 表示大川的錢（y）等於小金的錢（x）的 4 倍再少 30 元，因此選項 (C) 符合題意。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提到的右圖（包含小翊購買的飯糰數量、豆漿數量以及付出的金額）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目要求根據右圖計算找回的金額，但未提供包含購買數量及付款金額的圖片內容，無法計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中提到的右圖（包含小翊購買的飯糰數量、豆漿數量以及付出的金額）
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \begin{cases} x+y=18 \\ 85x+95y=1640 \end{cases}
+      reasoning: 根據人數總和可列出 x + y = 18，根據餐點總花費可列出 85x + 95y = 1640，組合成二元一次聯立方程式。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 由 x = 24 - 4y 且 x、y 為大於等於 0 的整數，可得 y 可為 0, 1, 2, 3, 4, 5, 6，共有 7
+        組解。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：第 (1)、(2) 小題完整且清晰的聯立方程式原始題目
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字排版錯亂且第 (2) 小題方程式不完整（如「y 3 = \frac{13}{3} x-」截斷），無法確認完整的二元一次聯立方程式內容。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第 (1)、(2) 小題完整且清晰的聯立方程式原始題目
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_7
+  number: 7
+  type: fill
+  images_sent: 7
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 61/6
+      reasoning: 設粉紅球每個重 x 公克，藍色積木每塊重 y 公克。由第一個天平得 2x + y = 16；由第二個天平得 2x + 4y + 1
+        = 30，即 2x + 4y = 29。兩式相減得 3y = 13，解得 y = 13/3，x = 35/6，因此一個球加一塊積木共重 x + y
+        = 61/6 公克（或 10 又 1/6 公克）。
+      confidence: 0.9
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - m = 10
+      - n = 5
+      reasoning: 向左移動代表x坐標減少，4 - m = -6 解得 m = 10；向上移動代表y坐標增加，-3 + n = 2 解得 n = 5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 第四象限
+      - 第一象限
+      reasoning: 因為點 (m, n) 在第四象限，所以 m > 0 且 n < 0。對於 (1) (|m|, n-m)，其坐標為 (正, 負)，在第四象限；對於
+        (2) (m-n, m²+n²)，其坐標為 (正, 正)，在第一象限。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - a=-1
+      - b=2
+      reasoning: 聯立 5x-2y=4 與 2x-5y=-11 解得 x=2, y=3。將解代入 2x+ay=1 得 4+3a=1 即 a=-1；代入
+        -x+by=4 得 -2+3b=4 即 b=2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提到的相對位置圖（右圖）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「如右圖」，但未提供包含火車站、百貨公司、咖啡廳及書局相對位置的圖形，無法判斷書局所在的象限。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中提到的相對位置圖（右圖）
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：任教該班級之數學教師姓名資訊
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目詢問該班任課數學老師的姓名，此為特定班級的現場資訊，題目文本中並未提供。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 任教該班級之數學教師姓名資訊
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將 y = (1/5)x 代入 5x - y = 5 得 (24/5)x = 5，解得 x = a = 25/24，進而求得 y
+        = b = 5/24。因此 a + b = 25/24 + 5/24 = 30/24 = 5/4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的 A、B、C 三點在坐標平面上的位置圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺少坐標平面圖，無法得知 A、B、C 三點的坐標，因此無法計算橫坐標與縱坐標的總和。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中提及的 A、B、C 三點在坐標平面上的位置圖
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_3
+  number: 3
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設較貴的鞋定價為 x 元、較便宜的為 y 元（x ≥ y）。使用折價券花費為 0.8x + 0.8y，特惠活動花費為 x + 0.6y。特惠花費減折價券花費為
+        0.2(x - y) ≥ 0，可知使用折價券花費較少；又兩者相差 0.2(x - y) = 50 元，得 x - y = 250 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 由題目設定可知坐標平面上向東100公尺為x坐標加2單位、向北100公尺為y坐標加2單位。學校坐標為(2, 4)，往東100公尺再往南400公尺，其坐標為(2
+        + 2, 4 - 8) = (4, -4)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少表(一)（WBGT數值對應熱傷害風險等級的標準）與表(二)（甲地與乙地的溫度測量數據）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺少表(一)（熱傷害風險等級與WBGT對照表）與表(二)（甲地、乙地所測得之溫度數據），無法計算WBGT並判斷風險等級。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少表(一)（WBGT數值對應熱傷害風險等級的標準）與表(二)（甲地與乙地的溫度測量數據）
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設甲借乙還為 x 輛、乙借甲還為 y 輛。依題意在甲歸還比甲出租多 4 輛，得 (15+y)-(15+x)=4，即 y-x=4；甲出租數量減乙出租數量為
+        (15+x)-(13+y) = 2-(y-x) = -2，故甲出租比乙出租少 2 輛。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：小美蛋糕店的價目表（包含黑櫻桃蛋糕及其他蛋糕的售價）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「下圖為小美蛋糕店的價目表」，但未提供該價目表圖片或蛋糕價格資訊，無法得知黑櫻桃蛋糕及其他蛋糕的單價，故無法判斷結帳金額的關係式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 小美蛋糕店的價目表（包含黑櫻桃蛋糕及其他蛋糕的售價）
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設公車站為原點(0,0)，郵局位置為向東400公尺、向南300公尺即(400,-300)；小帥家為向北400公尺、向東300公尺即(300,400)。從小美所在的郵局走到小帥家，需向北直走700公尺、向西直走100公尺。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

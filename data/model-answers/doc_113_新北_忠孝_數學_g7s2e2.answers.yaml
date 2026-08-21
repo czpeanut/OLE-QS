@@ -1,0 +1,295 @@
+source: data/bank/doc_113_新北_忠孝_數學_g7s2e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_新北_忠孝_數學_g7s2e2_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 同時在直線 x = 1 與 y = -4 上的點，其 x 坐標為 1 且 y 坐標為 -4，即交點坐標為 (1, -4)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s1_4
+  number: 4
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 方程式化簡為 x - y = 2，通過點 (2, 0) 和 (0, -2)，其直線通過第一、三、四象限，不通過第二象限。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s1_5
+  number: 5
+  type: single
+  images_sent: 14
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 正比的定義為兩變數滿足 $y = kx$ 且 $k \neq 0$（常數），因此 $y = -\frac{1}{2}x$ 表示 $x$
+        與 $y$ 成正比。(A) 比例式外項積等於內項積，無法推得 $x:y$ 為定值；(B) 比例式性質為 $ad=bc$ 而非 $ac=bd$；(C)
+        變數同向增減不代表比值恆為定值。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (\frac{3}{2}, -7)
+      reasoning: 將 (m, -2) 代入 2x + y = 1 得 2m - 2 = 1，解得 m = 3/2；將 (4, n) 代入得 2(4)
+        + n = 1，解得 n = -7。因此數對 (m, n) = (3/2, -7)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 由A(2,0)與B(4,-6)可求得直線方程式為y=-3x+6。將C(k,1-2k)代入得1-2k=-3k+6，解得k=5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{21}{5}
+      reasoning: 兩直線與x軸的交點分別為(6, 0)與(9/5, 0)，底邊長為6 - 9/5 = 21/5；聯立解得兩直線交點為(3, -2)，高為|-2|
+        = 2。因此三角形面積為 (1/2) * (21/5) * 2 = 21/5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少比例式的具體算式內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中未給出具體的比例式方程式，無法計算出 x 的值。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少比例式的具體算式內容
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '9'
+      reasoning: '由 5x - 2y = 3x + y 可化簡得 2x = 3y，即 x : y = 3 : 2。令 x = 3k、y = 2k
+        (k ≠ 0)，代入得 (x + 3y) : (x - y) = 9k : k = 9 : 1，故比值為 9。'
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '180'
+      reasoning: 原汁含量占飲料總重的比例為 24/100 = 0.24，因此 750 公克的飲料含有 750 × 0.24 = 180 公克的原汁。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{x \times y}{2}=36
+      reasoning: 三角形面積計算公式為「底乘高除以2」，因此底為 x、高為 y、面積為 36 時，未化簡的關係式為 (x × y)/2 = 36。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2y+9=-\frac{1}{2}(5x-2)
+      reasoning: 設 (2y+9) = k(5x-2)，將 x = -4, y = 1 代入得 11 = -22k，解得 k = -1/2，故關係式為
+        2y+9 = -1/2(5x-2)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_9
+  number: 9
+  type: fill
+  images_sent: 11
+  status: missing_context
+  note: gemini 回報缺少素材：向西走的距離數值
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中向西走的距離數值缺失，無法計算出 y 的值。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 向西走的距離數值
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '480'
+      reasoning: 設甲、乙轉出人數分別為 x、6x，轉入人數分別為 y、6y。由開學時兩校人數相同可列式 1114 - x + y = 1514 -
+        6x + 6y，化簡得 5(x - y) = 400，即 x - y = 80。乙校開學人數與原有人數相差 |6y - 6x| = 6|x - y|
+        = 6 × 80 = 480 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_11
+  number: 11
+  type: fill
+  images_sent: 3
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '11:54'
+      reasoning: 設甲、乙每分鐘各印 a、b 張，由 11:30 時印量相同得 30a = 20b，即 b = 1.5a。12:00 時總印量為 60a
+        + 50b = 135a = 1620，解得 a = 12、b = 18。若原計畫 11:00 同時開始，每分鐘合印 30 張，印 1620 張需
+        54 分鐘，即 11:54 完成。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_12
+  number: 12
+  type: fill
+  images_sent: 6
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 7/25
+      reasoning: 大圓半徑為4，總面積為16π。灰色部分包含兩隻眼睛（半徑0.5的圓，面積共0.5π）及嘴巴（半徑2的圓扣除半徑1的圓，面積為4π-π=3π），故灰色面積為3.5π，白色面積為16π-3.5π=12.5π。面積比值為
+        3.5π/12.5π = 7/25。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_13
+  number: 13
+  type: fill
+  images_sent: 7
+  status: missing_context
+  note: gemini 回報缺少素材：圖(二)以及各點與各直線方程式的對應關係
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供圖(二)，且題幹中A、B、D點分別在哪條直線上的對應關係留空缺失，無法確定各點坐標以進行大小排序。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 圖(二)以及各點與各直線方程式的對應關係
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_14
+  number: 14
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '180'
+      reasoning: 設甲、乙車長分別為 4x、5x 公尺，速率分別為 4v、5v 公尺/秒。依題意列出方程式：450 + 4x = 4v × 31.5
+        與 450 + 5x = 5v × 27，解得 v = 5、x = 45，故甲車長度為 4x = 180 公尺。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s2_15
+  number: 15
+  type: fill
+  images_sent: 8
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '105'
+      reasoning: 由前後黑輪價錢和為99元知原價與新價和為99。因十位與個位顛倒且蝦捲與黑輪價錢比前後皆為2:3，總退款45元即為黑輪差價的5/3倍，得黑輪原價減新價為27元。聯立解得黑輪原價為63元、蝦捲原價為42元，故一開始需付42+63=105元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 漂白水0.1公升
+      - 清水14.9公升
+      reasoning: 原本5公升消毒嘔吐物的漂白水中含漂白水原液0.1公升（5×1/50）與水4.9公升；調配成20公升一般清潔漂白水需要原液0.2公升（20×1/100）與水19.8公升，因此還需加入漂白水0.1公升（0.2-0.1）及清水14.9公升（19.8-4.9）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s2e2_s3_2
+  number: 2
+  type: calc
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (-4,-3)
+      reasoning: 直線與兩軸交點為A(-16, 0)與B(0, -4)。因同高，兩三角形面積比即為線段比AP:PB = 3:1，由內分點公式可得P點座標為((-16×1+0×3)/4,
+        (0×1+(-4)×3)/4) = (-4, -3)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

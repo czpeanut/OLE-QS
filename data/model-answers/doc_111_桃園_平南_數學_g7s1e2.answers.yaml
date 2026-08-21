@@ -1,0 +1,273 @@
+source: data/bank/doc_111_桃園_平南_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏填充題的具體題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題幹僅為考試說明與配分資訊，並未提供具體的題目內容，因此無法作答。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺乏填充題的具體題目內容
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目具體內容缺失，僅包含考試作答說明
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供作答說明文字「答案須填寫於答案卷上。」，並無具體的數學題目內容。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目具體內容缺失，僅包含考試作答說明
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題幹將多個小題（第1題、第2題、第3題）混合在一起，缺乏各自獨立的題目與選項排版
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題幹同時包含第1題、第2題與第3題，但僅有一組選項，且第3題的選項中(A)與(B)皆為錯誤敘述，題目格式混雜且缺漏各小題的獨立作答區或完整內容。
+      confidence: 0.3
+      missing_context: true
+      missing_what: 題幹將多個小題（第1題、第2題、第3題）混合在一起，缺乏各自獨立的題目與選項排版
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 帶分數拆開為整數與分數之和：$4\frac{5}{9} - 7\frac{3}{5} = (4 + \frac{5}{9}) -
+        (7 + \frac{3}{5}) = (4 - 7) + (\frac{5}{9} - \frac{3}{5})$，故選 (B)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 0 可以寫成 13 乘以 0，因此 0 是 13 的倍數。(B) 完全平方數的因數個數為奇數個；(C) 因數與倍數的定義限於整數，1.6
+        非整數；(D) 互質的兩數不一定要是質數（如 8 與 9）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: (D) 選項左式為 -(\frac{4}{5})^3 × (\frac{4}{5})^2 = -(\frac{4}{5})^5，為負數，而右式
+        (\frac{4}{5})^5 為正數，兩者不相等，故 (D) 錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A>C>D>B
+      reasoning: A、C 為正數且底數的絕對值小於 1，故次方越小值越大，得 A > C > 0；B、D 為負數，絕對值較小的負數值較大，得 0 >
+        D > B。綜合得 A > C > D > B。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '420'
+      reasoning: 因數成對相乘等於原數，由第二個與倒數第二個因數可得 x = 2 × 21 = 42。接著求 42 與 60 的最小公倍數：[42,
+        60] = 420。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '511'
+      reasoning: 總金額 3679□ 需為 72 的倍數（同時為 8 和 9 的倍數）。由 9 的倍數判別法得 3+6+7+9+□ = 25+□ 為
+        9 的倍數，□ 為正整數故 □=2；檢查 792 可被 8 整除，故總價為 36792 元，每件東西為 36792÷72=511 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{7}{30}
+      reasoning: 只參加大隊接力的學生比例為參加大隊接力的比例減去兩項都參加的比例，即 2/5 - 1/6 = 12/30 - 5/30 = 7/30。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '1517'
+      reasoning: 將 2030 質因數分解可得 2030 = 2^1 × 5^1 × 7^1 × 29，對照 2^a × b^c × d × 29
+        可得 a = 1, b = 5, c = 1, d = 7，因此密碼 abcd 為 1517。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_13
+  number: 13
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^3×3×5^2×7×11^2
+      - 2×3×5×7
+      reasoning: A = 2^2×3×5^2×7，B = 2^3×3×5×11^2，C = 210 = 2×3×5×7。求最小公倍數[A, B]取各質因數之最高次方得
+        2^3×3×5^2×7×11^2；求最大公因數(A, C)取共同質因數之最低次方得 2×3×5×7。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_14
+  number: 14
+  type: fill
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '6'
+      - '540'
+      reasoning: 54、60、90 的最大公因數 (54, 60, 90) = 2 × 3 = 6；最小公倍數 [54, 60, 90] = 2²
+        × 3³ × 5 = 540。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_15
+  number: 15
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '2'
+      - '3'
+      - '7'
+      - '17'
+      reasoning: 將 714 進行質因數分解可得 714 = 2 × 3 × 7 × 17，因此其質因數為 2、3、7、17。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_16
+  number: 16
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '2401'
+      reasoning: 原式可化簡為 (3^8 × 7^4) ÷ 3^8 = 7^4，計算 7^4 得 2401。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_18
+  number: 18
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1月19日
+      reasoning: 計算 9、6、3 的最小公倍數 [9, 6, 3] = 18，表示三人每隔 18 天會同時回家一次。由 1 月 1 日往後推算 18
+        天，得到下一次同時回家為 1 月 19 日。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_19
+  number: 19
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '12'
+      reasoning: 每組人數必須是75與105的公因數（1、3、5、15）。總人數為180人，對應總組數分別為180、60、36、12組，其中低於20組的只有12組（每組15人）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_平南_數學_g7s1e2_s1_20
+  number: 20
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 帥
+      - 匿
+      - 國
+      - 中
+      - 好
+      - 校
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+      reasoning: 在1到20中，去除2與3的倍數後剩下1、5、7、11、13、17、19號，對應字卡上的文字依序為帥、匿、國、中、好、好、校。
