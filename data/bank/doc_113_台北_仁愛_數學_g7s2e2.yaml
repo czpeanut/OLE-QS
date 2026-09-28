@@ -1,98 +1,95 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 2
-  school: 臺北市立仁愛國民中學
-  grade: 7
-  subject: 數學
   city: 台北
   school_short: 仁愛
+  school: 臺北市立仁愛國民中學
   id: doc_113_台北_仁愛_數學_g7s2e2
-  title: 臺北市立仁愛國民中學 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 臺北市立仁愛國民中學 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、單選題
-    type: single
-    score_rule: 一、 單選題(每題4分,共68分)【請以2B鉛筆劃記於答案卡上】
+    name: 一、 單選題(每題4分，共68分)【請以2B鉛筆劃記於答案卡上】
     count: 17
   - ord: 2
-    name: 二、非選題
-    type: calc
-    score_rule: 二、 非選題(每題8分,共32分)
+    name: 二、 非選題(每題8分，共32分)【請用黑色或藍色原子筆寫在答案卷上。需寫出計算過程,否則不予計分】
     count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/2-2/台北/仁愛.pdf
 questions:
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下述哪些點在方程式y=-4的圖形上? A(-1 ,-4) B(1 , 2) C(-4 , 0) D( $\frac{1}{2}$ ,-4) E(1
-    ,-0.2) F(0 , 1) G(1 ,-4) H(-4 , 1)
+  stem: '下述哪些點在方程式 $y = -4$ 的圖形上？
+
+    $A(-1, -4)$　$B(1, 2)$　$C(-4, 0)$　$D(\frac{1}{2}, -4)$
+
+    $E(1, -0.2)$　$F(0, 1)$　$G(1, -4)$　$H(-4, 1)$'
   options:
   - label: A
-    content: A、D、G
+    content: $A$、$D$、$G$
   - label: B
-    content: A、C、H
+    content: $A$、$C$、$H$
   - label: C
-    content: C、D、G
+    content: $C$、$D$、$G$
   - label: D
-    content: C、G、H
+    content: $C$、$G$、$H$
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列哪一個方程式的圖形會通過原點?
+  stem: 下列哪一個方程式的圖形會通過原點？
   options:
   - label: A
-    content: 2y-7=0
+    content: $2y - 7 = 0$
   - label: B
-    content: 3x=8
+    content: $3x = 8$
   - label: C
-    content: 5x-y=0
+    content: $5x - y = 0$
   - label: D
-    content: y=3x-6
+    content: $y = 3x - 6$
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 若xy=3成立,表示x與y都是分數,且x與y成反比
+    content: 若 $xy = 3$ 成立，表示 $x$ 與 $y$ 都是分數，且 $x$ 與 $y$ 成反比
   - label: B
-    content: 若-xy=3成立,表示x與y成反比
+    content: 若 $-xy = 3$ 成立，表示 $x$ 與 $y$ 成反比
   - label: C
-    content: 若xy=- 成立,表示x與y成正比
+    content: 若 $xy = -\frac{1}{3}$ 成立，表示 $x$ 與 $y$ 成正比
   - label: D
-    content: 當x的值愈大,y的值隨著減少,則表示y與x成反比
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p1_f01.png
+    content: 當 $x$ 的值愈大，$y$ 的值隨著減少，則表示 $y$ 與 $x$ 成反比
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 下列哪一個選項中的y與x成反比?
+  stem: 下列哪一個選項中的 $y$ 與 $x$ 成反比？
   options:
   - label: A
-    content: 長x公分、寬y公分的長方形面積為20平方 公分
+    content: 長 $x$ 公分、寬 $y$ 公分的長方形面積為 20 平方公分
   - label: B
-    content: 時速20公里,花x小時走了y公里
+    content: 時速 20 公里，花 $x$ 小時走了 $y$ 公里
   - label: C
-    content: 1枝筆賣15元,小明買x枝,共付了y元
+    content: 1 枝筆賣 15 元，小明買 $x$ 枝，共付了 $y$ 元
   - label: D
-    content: x、y是不為0的數,滿足x:5=y:(-3)
+    content: '$x$、$y$ 是不為 0 的數，滿足 $x : 5 = y : (-3)$'
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 大仁用2大匙抹茶粉和460毫升鮮奶,沖泡成2杯抹茶拿鐵,若他想要重新沖泡36杯相同口味 的抹茶拿鐵,至少需要準備幾瓶1公升的鮮奶 才夠?
+  stem: 大仁用 2 大匙抹茶粉和 460 毫升鮮奶，沖泡成 2 杯抹茶拿鐵，若他想要重新沖泡 36 杯相同口味的抹茶拿鐵，至少需要準備幾瓶 1 公升的鮮奶才夠？
   options:
   - label: A
     content: '7'
@@ -107,91 +104,84 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列四個敘述甲與乙關係的選項中,哪一個與其 他三個不同?
+  stem: 下列四個敘述甲與乙關係的選項中，哪一個與其他三個不同？
   options:
   - label: A
-    content: 甲是乙的 倍
+    content: 甲是乙的 $\frac{b}{a}$ 倍
   - label: B
-    content: 甲:乙=a:b
+    content: '甲：乙 $= a : b$'
   - label: C
-    content: 甲的a倍等於乙的b倍
+    content: 甲的 $a$ 倍等於乙的 $b$ 倍
   - label: D
-    content: 甲:乙的比值為
-  assets:
-  - key: p1_f02
-    kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p1_f03.png
+    content: 甲：乙的比值為 $\frac{b}{a}$
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若a、b、c、d均不為0,且a c = b d ,則下列哪 一個性質不一定成立?
+  stem: 若 $a$、$b$、$c$、$d$ 均不為 0，且 $\frac{a}{c} = \frac{b}{d}$，則下列哪一個性質不一定成立？
   options:
   - label: A
-    content: ad=bc
+    content: $ad = bc$
   - label: B
-    content: a b = c d
+    content: $\frac{a}{b} = \frac{c}{d}$
   - label: C
-    content: a d = b c
+    content: $\frac{a}{d} = \frac{b}{c}$
   - label: D
-    content: a:b=c:d
+    content: '$a : b = c : d$'
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 下圖的坐標平面上有原點O與A、B、C、D四 點。若有一直線L通過點(-3 , 4 )且與y軸垂 直,則L也會通過下列哪一點?
+  stem: 下圖的坐標平面上有原點 $O$ 與 $A$、$B$、$C$、$D$ 四點。若有一直線 $L$ 通過點 $(-3, 4)$ 且與 $y$ 軸垂直，則
+    $L$ 也會通過下列哪一點？
   options:
   - label: A
-    content: A y
+    content: $A$
   - label: B
-    content: B
+    content: $B$
   - label: C
-    content: C
+    content: $C$
   - label: D
-    content: D D 1 A C O x 1 B
+    content: $D$
   assets:
-  - key: p1_f04
+  - key: s1_8_f1
     kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p1_f04.png
+    file: doc_113_台北_仁愛_數學_g7s2e2/s1_8_f1.png
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 已知a>0,b<0,下列何者可能是方程式x+ay=b的圖形?
+  stem: 已知 $a > 0$，$b < 0$，下列何者可能是方程式 $x + ay = b$ 的圖形？
   options:
   - label: A
-    content: y
+    content: ''
+    asset:
+      key: optA
+      file: doc_113_台北_仁愛_數學_g7s2e2/1_9_optA.png
   - label: B
-    content: y x O x O
+    content: ''
+    asset:
+      key: optB
+      file: doc_113_台北_仁愛_數學_g7s2e2/1_9_optB.png
   - label: C
-    content: y
+    content: ''
+    asset:
+      key: optC
+      file: doc_113_台北_仁愛_數學_g7s2e2/1_9_optC.png
   - label: D
-    content: y x O x O
-  assets:
-  - key: p1_f05
-    kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p1_f05.png
-  - key: p1_f06
-    kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p1_f06.png
-  - key: p1_f07
-    kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p1_f07.png
-  - key: p1_f08
-    kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p1_f08.png
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_台北_仁愛_數學_g7s2e2/1_9_optD.png
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 二元一次方程式x=3與2x+y=1圖形的交點 在哪一個象限內?
+  stem: 二元一次方程式 $x = 3$ 與 $2x + y = 1$ 圖形的交點在哪一個象限內？
   options:
   - label: A
     content: 第一象限
@@ -206,42 +196,43 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 如下圖,坐標平面上直線L的方程式為x=-5, 直線M的方程式為y=-3,P點的坐標為 (a , b)。根據下圖中P點位置判斷,下列關係 何者正確?
+  stem: 如下圖，坐標平面上直線 $L$ 的方程式為 $x = -5$，直線 $M$ 的方程式為 $y = -3$，$P$ 點的坐標為 $(a, b)$。根據下圖中
+    $P$ 點位置判斷，下列關係何者正確？
   options:
   - label: A
-    content: a<-5,b>-3
+    content: $a < -5$，$b > -3$
   - label: B
-    content: a<-5,b<-3
+    content: $a < -5$，$b < -3$
   - label: C
-    content: a>-5,b>-3
+    content: $a > -5$，$b > -3$
   - label: D
-    content: a>-5,b<-3 y L x O P M
+    content: $a > -5$，$b < -3$
   assets:
-  - key: p1_f09
+  - key: s1_11_f1
     kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p1_f09.png
+    file: doc_113_台北_仁愛_數學_g7s2e2/s1_11_f1.png
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 大仁到花店買花,他身上的錢恰好可以買15朵玫瑰花或6朵鬱金香。若大仁先買了4朵鬱 金香,則他身上剩下的錢恰好可以買多少朵玫 瑰花?
+  stem: 大仁到花店買花，他身上的錢恰好可以買 15 朵玫瑰花或 6 朵鬱金香。若大仁先買了 4 朵鬱金香，則他身上剩下的錢恰好可以買多少朵玫瑰花？
   options:
   - label: A
-    content: 3朵
+    content: 3 朵
   - label: B
-    content: 4朵
+    content: 4 朵
   - label: C
-    content: 5朵
+    content: 5 朵
   - label: D
-    content: 9朵
+    content: 9 朵
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 有A、B兩個完全相同的杯子,各裝不同量的 水。若將A杯中 $\frac{1}{7}$ 的水倒入B杯,則兩杯的水 位等高。設A杯原來的水量為a,B杯原來的
-    水量為b,則a b =?
+  stem: 有 $A$、$B$ 兩個完全相同的杯子，各裝不同量的水。若將 $A$ 杯中 $\frac{1}{7}$ 的水倒入 $B$ 杯，則兩杯的水位相等。設
+    $A$ 杯原來的水量為 $a$，$B$ 杯原來的水量為 $b$，則 $\frac{a}{b} = $？
   options:
   - label: A
     content: $\frac{7}{5}$
@@ -256,48 +247,70 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 下列表格中,何者x、y成反比關係? x 1. 2. 3. 4. 5. y 5. 10.
+  stem: 下列表格中，何者 $x$、$y$ 成反比關係？
+  options:
+  - label: A
+    content: '| $x$ | 1 | 2 | 3 | 4 | 5 |
+
+      | :--- | :--- | :--- | :--- | :--- | :--- |
+
+      | $y$ | 5 | 10 | 15 | 20 | 25 |'
+  - label: B
+    content: '| $x$ | 1 | 2 | 3 | 4 | 5 |
+
+      | :--- | :--- | :--- | :--- | :--- | :--- |
+
+      | $y$ | 60 | 30 | 20 | 15 | 12 |'
+  - label: C
+    content: '| $x$ | 1 | 2 | 3 | 5 |
+
+      | :--- | :--- | :--- | :--- | :--- |
+
+      | $y$ | $-\frac{3}{5}$ | $\frac{9}{10}$ | $-\frac{3}{2}$ | $\frac{12}{5}$ |'
+  - label: D
+    content: '| $x$ | 2 | $-3$ | 5 | $-8$ |
+
+      | :--- | :--- | :--- | :--- | :--- |
+
+      | $y$ | $-\frac{3}{5}$ | $\frac{9}{10}$ | $-\frac{3}{2}$ | $\frac{12}{5}$ |'
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 20. 25. x 1. 2. 3. 4. 5. y 60. 30. 20. 15. 12. x 1. 2. 3. 5. 3 - 5 9 10 3
-    - 2 12 5 y
+  stem: 已知 $y$ 與 $x$ 成正比，$z$ 與 $y$ 成反比，且當 $z = 4$ 時，$y = 3$，$x = -9$。則當 $x = 18$ 時，$y
+    - z = $？
   options:
-  - label: C
-    content: x 2. -3 5. -8 3 - 5 9 10 3 - 2 12 5 y
-  - label: D
-    content: (   )15. 已知y與x成正比,z與y成反比,且當z=4時,y=3,x=-9。則當x=18時,y-z=?
   - label: A
-    content: '-4'
+    content: $-4$
   - label: B
-    content: 1 2
+    content: '12'
   - label: C
     content: '4'
   - label: D
-    content: '-8'
+    content: $-8$
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 若(1 , a)、(-2 , b)、(c , 3)、(d , -1)都在方程式y= $\frac{1}{2}$ x+1的圖形上,則下列敘述何者正確?
+  stem: 若 $(1, a)$、$(-2, b)$、$(c, 3)$、$(d, -1)$ 都在方程式 $y = \frac{1}{2}x + 1$ 的圖形上，則下列敘述何者正確？
   options:
   - label: A
-    content: a=1
+    content: $a = 1$
   - label: B
-    content: b=0
+    content: $b = 0$
   - label: C
-    content: c=3
+    content: $c = 3$
   - label: D
-    content: d=4
+    content: $d = 4$
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 已知坐標平面上有一直線L與一點A。若L的 方程式為x=-2,A點坐標為(6 , 5),則A點 到直線L的距離為何?
+  stem: 已知坐標平面上有一直線 $L$ 與一點 $A$。若 $L$ 的方程式為 $x = -2$，$A$ 點坐標為 $(6, 5)$，則 $A$ 點到直線
+    $L$ 的距離為何？
   options:
   - label: A
     content: '3'
@@ -310,31 +323,40 @@ questions:
 - id: doc_113_台北_仁愛_數學_g7s2e2_s2_1
   section: 2
   number: 1
-  type: calc
+  type: fill
   page: 2
-  stem: 設x、y為正整數,且滿足(x-y+1):(x+y-3)=3:2, 則x=        ,y=        。       【每格4分】
+  stem: '設 $x$、$y$ 為正整數，且滿足 $(x - y + 1) : (x + y - 3) = 3 : 2$，則 $x = $________，$y
+    = $________。【每格4 分】'
 - id: doc_113_台北_仁愛_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: calc
   page: 2
-  stem: 大仁和小愛一起逛學校的園遊會,結束後,兩人開始 討論各自的零用錢。 大仁對小愛說:「如果你給我200元,那我的錢和妳錢 的比是4:1。」小愛聽完後對大仁說:「反過來說,如
-    果換成你給我200元,那我的錢和你的錢的比就會是3:2了!」則大仁和小愛的錢原來相差多少元?
+  stem: '大仁和小愛一起逛學校的園遊會，結束後，兩人開始討論各自的零用錢。
+
+    大仁對小愛說：「如果你給我 200 元，那我的錢和妳錢的比是 4：1。」小愛聽完後對大仁說：「反過來說，如果換成你給我 200 元，那我的錢和你的錢的比就會是
+    3：2 了!」則大仁和小愛的錢原來相差多少元？'
 - id: doc_113_台北_仁愛_數學_g7s2e2_s2_3
   section: 2
   number: 3
   type: calc
   page: 2
-  stem: '已知電腦文件下載時間與網速成反比,若網速為每秒50 MB,則下載時間為20秒,試問: (1)若以x表示網速,y表示下載時間,則x與y的關係 式為何?                               【4分】
-    (2)若想將下載時間縮短到5秒,則需要將網速升級到每 秒多少MB?                           【4分】'
+  stem: '已知電腦文件下載時間與網速成反比，若網速為每秒 50 MB，則下載時間為 20 秒，試問：
+
+    (1)若以 $x$ 表示網速，$y$ 表示下載時間，則 $x$ 與 $y$ 的關係式為何？【4 分】
+
+    (2)若想將下載時間縮短到 5 秒，則需要將網速升級到每秒多少 MB？【4 分】'
 - id: doc_113_台北_仁愛_數學_g7s2e2_s2_4
   section: 2
   number: 4
   type: calc
   page: 2
-  stem: '下圖是二元一次方程式ax-y=0、y-x=b的圖形, 兩直線L1、L2的交點為M (3 , 6),則: (1) 求出a、b之值。                       【4分】
-    (2) 若L1、L2與y軸分別交於O、N兩點,則三角形MNO的面積為多少? 【4分】 y L2 M(3 , 6) N x O L1'
+  stem: '下圖是二元一次方程式 $ax - y = 0$、$y - x = b$ 的圖形，兩直線 $L_1$、$L_2$ 的交點為 $M(3, 6)$，則：
+
+    (1) 求出 $a$、$b$ 之值。【4 分】
+
+    (2) 若 $L_1$、$L_2$ 與 $y$ 軸分別交於 $O$、$N$ 兩點，則三角形 $MNO$ 的面積為多少？【4 分】'
   assets:
-  - key: p2_f01
+  - key: s2_4_f1
     kind: figure
-    file: doc_113_台北_仁愛_數學_g7s2e2/p2_f01.png
+    file: doc_113_台北_仁愛_數學_g7s2e2/s2_4_f1.png

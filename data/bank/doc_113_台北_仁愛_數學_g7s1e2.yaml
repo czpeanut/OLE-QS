@@ -1,48 +1,46 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 2
-  school: 臺北市立仁愛國民中學
-  grade: 7
-  subject: 數學
   city: 台北
   school_short: 仁愛
+  school: 臺北市立仁愛國民中學
   id: doc_113_台北_仁愛_數學_g7s1e2
-  title: 臺北市立仁愛國民中學 113學年度第1學期第2次定期評量7年級數學科試題
+  title: 臺北市立仁愛國民中學 113學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
     name: 一、單選題
-    type: single
-    score_rule: 一、單選題(1~4題每題5分,5~20題每題4分,共84分)【注意:以2B鉛筆劃記於答案卡上。】
     count: 20
   - ord: 2
     name: 二、非選題
-    type: calc
-    score_rule: 二、非選題(共16分)【注意:用黑色或藍色原子筆寫在答案卷上。需寫出計算過程,否則不予計分】
     count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/1-2/台北/仁愛.pdf
 questions:
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列哪一個計算結果與-3 $\frac{1}{2}$ 不同? $\frac{1}{2}$
+  stem: 下列哪一個計算結果與$-3\frac{1}{2}$不同？
   options:
-  - label: B
-    content: -3- $\frac{1}{2}$
-  - label: C
-    content: −(3+ $\frac{1}{2}$ )
-  - label: D
-    content: −(4- $\frac{1}{2}$
   - label: A
-    content: -3+ )
+    content: $-3+\frac{1}{2}$
+  - label: B
+    content: $-3-\frac{1}{2}$
+  - label: C
+    content: $-(3+\frac{1}{2})$
+  - label: D
+    content: $-(4-\frac{1}{2})$
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 求18、30、45三數的最小公倍數為?
+  stem: 求18、30、45 三數的最小公倍數為？
   options:
   - label: A
     content: '60'
@@ -57,14 +55,14 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 若-$\frac{15}{18}$ = $\frac{−5}{a}$ = $\frac{b}{54}$ ,則a+b =?
+  stem: 若$-\frac{15}{18} = \frac{-5}{a} = \frac{b}{54}$，則 a＋b =？
   options:
   - label: A
-    content: '-51'
+    content: －51
   - label: B
     content: '51'
   - label: C
-    content: '-39'
+    content: －39
   - label: D
     content: '39'
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_4
@@ -72,25 +70,25 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 下列何者不為最簡分數? $\frac{63}{78}$
+  stem: 下列何者不為最簡分數？
   options:
+  - label: A
+    content: $\frac{63}{78}$
   - label: B
     content: $\frac{20}{81}$
   - label: C
     content: $\frac{22}{105}$
   - label: D
     content: $\frac{27}{110}$
-  - label: A
-    content: ''
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 如果五位數58□12是6的倍數,則□代表的所有可能的數為?
+  stem: 如果五位數58□12 是6 的倍數，則□代表的所有可能的數為？
   options:
   - label: A
-    content: 0~9
+    content: 0～9
   - label: B
     content: 2、5、8
   - label: C
@@ -102,112 +100,115 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 計算 $\frac{11}{17}$ −( $\frac{3}{19}$ − $\frac{6}{17}$ ) =? $\frac{14}{17}$
+  stem: 計算 $\frac{11}{17} - (\frac{3}{19} - \frac{6}{17}) =$？
   options:
+  - label: A
+    content: $\frac{14}{17}$
   - label: B
     content: $\frac{16}{19}$
   - label: C
     content: $\frac{44}{323}$
   - label: D
     content: $\frac{146}{323}$
-  - label: A
-    content: ''
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 下列哪一個數不為44的倍數?
+  stem: 下列哪一個數不為44 的倍數？
   options:
   - label: A
-    content: '114'
+    content: $11^{4}$
   - label: B
-    content: 22×11
+    content: $2^{2} \times 11$
   - label: C
-    content: 22×3×11
+    content: $2^{2} \times 3 \times 11$
   - label: D
-    content: 22×113
+    content: $2^{2} \times 11^{3}$
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 計算[22×3×72,33×5×7,2×32×11]的結果為?
+  stem: 計算［$2^{2} \times 3 \times 7^{2}$，$3^{3} \times 5 \times 7$，$2 \times 3^{2}
+    \times 11$］的結果為？
   options:
   - label: A
     content: '3'
   - label: B
-    content: 2×3×5×7×11
+    content: $2 \times 3 \times 5 \times 7 \times 11$
   - label: C
-    content: 23×36×5×73×11
+    content: $2^{3} \times 3^{6} \times 5 \times 7^{3} \times 11$
   - label: D
-    content: 22×33×5×72×11
+    content: $2^{2} \times 3^{3} \times 5 \times 7^{2} \times 11$
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: -2 $\frac{1}{3}$ 的倒數與- $\frac{3}{7}$ 的相反數之乘積為?
+  stem: $-2\frac{1}{3}$ 的倒數與$-\frac{3}{7}$ 的相反數之乘積為？
   options:
-  - label: D
-    content: − $\frac{9}{49}$ $\frac{9}{49}$
   - label: A
     content: '1'
   - label: B
-    content: '-1'
+    content: －1
   - label: C
-    content: 3相等? ) 9 ]
+    content: $\frac{9}{49}$
+  - label: D
+    content: $-\frac{9}{49}$
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 下列哪一個算式的值與 [ (− $\frac{7}{2}$ ) 9+3
+  stem: 下列哪一個算式的值與 $[(-\frac{7}{2})^{9}]^{3}$ 相等？
   options:
-  - label: B
-    content: (− ) 9−3
-  - label: C
-    content: (− ) 9×3
-  - label: D
-    content: (− ) 9÷3 $\frac{7}{2}$ $\frac{7}{2}$ $\frac{7}{2}$ $\frac{7}{2}$
   - label: A
-    content: (−
+    content: $(-\frac{7}{2})^{9+3}$
+  - label: B
+    content: $(-\frac{7}{2})^{9-3}$
+  - label: C
+    content: $(-\frac{7}{2})^{9\times 3}$
+  - label: D
+    content: $(-\frac{7}{2})^{9\div 3}$
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 因為8 = 5×1.6,所以8是5的倍數。
+    content: 因為8 = 5×1.6，所以8 是5 的倍數。
   - label: B
-    content: 1到100的整數中,扣除25個質數後,剩下的數皆為合數。
+    content: 1 到100 的整數中，扣除25 個質數後，剩下的數皆為合數。
   - label: C
-    content: 35的相異質因數是1、5、7、35。
+    content: 35 的相異質因數是1、5、7、35。
   - label: D
-    content: 1是19的因數。
+    content: 1 是19 的因數。
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: 下列各數中,與39互質的數有幾個? 27、77、7×13、22×7×11、7×132×17
+  stem: '下列各數中，與39 互質的數有幾個？
+
+    27、77、7×13、22×7×11、7×132×17'
   options:
   - label: A
-    content: 1個
+    content: 1 個
   - label: B
-    content: 2個
+    content: 2 個
   - label: C
-    content: 3個
+    content: 3 個
   - label: D
-    content: 4個
+    content: 4 個
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 已知a = 48×12,b = 16×15,則(a,b)=?
+  stem: 已知 a = 48×12，b = 16×15，則（a，b）=？
   options:
   - label: A
     content: '96'
@@ -216,28 +217,29 @@ questions:
   - label: C
     content: '12'
   - label: D
-    content: 6 ) 4 ,b = (− ) 5 ,c = (− ) 6 ,則a、b、c三數的大小關係為?
+    content: '6'
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_14
   section: 1
   number: 14
   type: single
   page: 1
-  stem: 若a = (− $\frac{6}{7}$ $\frac{6}{7}$ $\frac{6}{7}$
+  stem: 若$a = (-\frac{6}{7})^{4}$，$b = (-\frac{6}{7})^{5}$，$c = (-\frac{6}{7})^{6}$，則a、b、c
+    三數的大小關係為？
   options:
   - label: A
-    content: a>c>b
+    content: a＞c＞b
   - label: B
-    content: c>b>a
+    content: c＞b＞a
   - label: C
-    content: c>a>b
+    content: c＞a＞b
   - label: D
-    content: a>b>c 【背面尚有試題】 臺北市立仁愛國民中學113學年度第1學期第二次段考 七年級 數學科試題
+    content: a＞b＞c
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 已知正整數a =11×12×13×......×18,則a的相異質因數共有幾個?
+  stem: 已知正整數a =11×12×13×……×18，則a 的相異質因數共有幾個？
   options:
   - label: A
     content: '3'
@@ -252,29 +254,29 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 下列選項何者正確?
+  stem: 下列選項何者正確？
   options:
   - label: A
-    content: 38 + 32 = 310
+    content: $3^{8} + 3^{2} = 3^{10}$
   - label: B
-    content: 58 ÷ 52 = 54
+    content: $5^{8} \div 5^{2} = 5^{4}$
   - label: C
-    content: 42 × 43 = 45
+    content: $4^{2} \times 4^{3} = 4^{5}$
   - label: D
-    content: 24 × 34 = 54 ) 7 × ( − ) 7 ÷ (-2) 4 =?
+    content: $2^{4} \times 3^{4} = 5^{4}$
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 計算 ( $\frac{6}{5}$ $\frac{5}{3}$
+  stem: 計算 $(\frac{6}{5})^{7} \times (-\frac{5}{3})^{7} \div (-2)^{4} =$？
   options:
   - label: A
-    content: '-8'
+    content: －8
   - label: B
     content: '8'
   - label: C
-    content: '-6'
+    content: －6
   - label: D
     content: '6'
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_18
@@ -282,23 +284,22 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 已知一袋麵粉重15 $\frac{3}{7}$ 公斤,製作一個戚風蛋糕需要用到 $\frac{3}{4}$ 公斤的麵粉,試問用一袋麵粉在製作最多個戚風蛋糕的狀
-    況下,還剩下多少公斤的麵粉? $\frac{1}{7}$
+  stem: 已知一袋麵粉重$15\frac{3}{7}$ 公斤，製作一個戚風蛋糕需要用到 $\frac{3}{4}$ 公斤的麵粉，試問用一袋麵粉在製作最多個戚風蛋糕的狀況下，還剩下多少公斤的麵粉？
   options:
+  - label: A
+    content: $\frac{1}{7}$
   - label: B
     content: $\frac{2}{7}$
   - label: C
     content: $\frac{3}{7}$
   - label: D
     content: $\frac{4}{7}$
-  - label: A
-    content: ''
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 某校際運動會,甲校有143人參加,乙校有91人參加,欲將兩校人數各分成若干組,每組人數要相等,準備趣味競 賽,則最少共需分成幾組?
+  stem: 某校際運動會，甲校有143 人參加，乙校有91 人參加，欲將兩校人數各分成若干組，每組人數要相等，準備趣味競賽，則最少共需分成幾組？
   options:
   - label: A
     content: '7'
@@ -313,7 +314,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 已知有一條公路長3000公尺,自起點開始,在中央分隔島上每隔25公尺設置一盞路燈;為歡慶國慶,自起點開 始,每隔6公尺設立一面旗幟。如果起點及終點皆同時設置路燈和旗幟,則共有多少個地方同時設置路燈和旗幟?
+  stem: 已知有一條公路長3000 公尺，自起點開始，在中央分隔島上每隔25 公尺設置一盞路燈；為歡慶國慶，自起點開始，每隔6 公尺設立一面旗幟。如果起點及終點皆同時設置路燈和旗幟，則共有多少個地方同時設置路燈和旗幟？
   options:
   - label: A
     content: '380'
@@ -328,23 +329,25 @@ questions:
   number: 1
   type: calc
   page: 2
-  stem: 計算−$\frac{5}{18}$ × 567 + $\frac{5}{18}$ ×(-374)+ $\frac{5}{18}$ × 41=?(4分)
-    −3) 2 −| −2 | −(−32) ÷ $\frac{272}{(−54)2}$
+  stem: 計算$-\frac{5}{18} \times 567 + \frac{5}{18} \times (－374) + \frac{5}{18} \times
+    41=$？（4 分）
 - id: doc_113_台北_仁愛_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: calc
   page: 2
-  stem: 計算 ( $\frac{5}{2}$ $\frac{3}{4}$ =?(6分)
+  stem: 計算 $(\frac{5}{2}-3)^{2}-|\frac{3}{4}-2|-(-3^{2})\div\frac{27^{2}}{(-54)^{2}}=$？（6
+    分）
 - id: doc_113_台北_仁愛_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: calc
   page: 2
-  stem: 大雄將桌上144個壹圓硬幣分堆,每堆硬幣的個數皆相同,若每堆至少3個,至多16個,則共有幾種分法?(4分)
+  stem: 大雄將桌上144 個壹圓硬幣分堆，每堆硬幣的個數皆相同，若每堆至少3 個，至多16 個，則共有幾種分法？（4 分）
 - id: doc_113_台北_仁愛_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: calc
   page: 2
-  stem: 靜香某天在奇幻魔法學校中發現119這個數很特別。當它被2除時,餘數為1,當它被3除時,餘數為2,當它被4除時,餘數為3,當它被5除時,餘數為4,當它被6除時,餘數為5,則具有此性質的三位數最大為多少?(2分)
+  stem: 靜香某天在奇幻魔法學校中發現119 這個數很特別。當它被2 除時，餘數為 1，當它被3 除時，餘數為2，當它被4除時，餘數為3，當它被5 除時，餘數為4，當它被6
+    除時，餘數為5，則具有此性質的三位數最大為多少？（2 分）
