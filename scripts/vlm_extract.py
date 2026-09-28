@@ -237,8 +237,10 @@ def call_model(parts: list[dict], model: str) -> tuple[dict, str, float]:
                                  "thinkingConfig": {"thinkingLevel": "low"}}}
     order = [model] + [m for m in FALLBACK if m != model]
     last = None
+    attempt_skip: set[str] = set()
     for attempt in range(8):
-        m = order[min(attempt // 2, len(order) - 1)]
+        m = next((x for x in order[min(attempt // 2, len(order) - 1):] if x not in attempt_skip),
+                 order[-1])
         try:
             r = requests.post(
                 f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
@@ -251,8 +253,16 @@ def call_model(parts: list[dict], model: str) -> tuple[dict, str, float]:
             data = r.json()
             cost = Usage.add(m, data.get("usageMetadata", {}))
             cand = data["candidates"][0]
-            if cand.get("finishReason") not in (None, "STOP"):
-                raise RuntimeError(f"模型輸出中斷：{cand.get('finishReason')}")
+            reason = cand.get("finishReason")
+            if reason == "RECITATION":
+                # 輸出與受版權保護的已知文本（英文閱讀短文常見）重複度過高而被擋。
+                # temperature 0 下同一模型重試必然再擋，換模型並稍微放寬取樣
+                last = f"{m} RECITATION"
+                body["generationConfig"]["temperature"] = 0.3
+                attempt_skip.add(m)
+                continue
+            if reason not in (None, "STOP"):
+                raise RuntimeError(f"模型輸出中斷：{reason}")
             text = "".join(p.get("text", "") for p in cand["content"]["parts"])
             return repair_tree(loads_lenient(text)), m, cost
         except requests.HTTPError as exc:
