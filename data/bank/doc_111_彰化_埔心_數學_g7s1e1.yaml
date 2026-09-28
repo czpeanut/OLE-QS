@@ -1,53 +1,59 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 1
   exam_seq: 1
-  school: 彰化縣埔心國中
-  grade: 7
-  subject: 數學
   city: 彰化
   school_short: 埔心
+  school: 彰化縣埔心國中
   id: doc_111_彰化_埔心_數學_g7s1e1
-  title: 彰化縣埔心國中 111學年度第1學期第1次定期評量7年級數學科試題
+  title: 彰化縣埔心國中 111學年度第1學期第1次定期評量 7年級數學科試題
   exam_name: 111學年度第1學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題4分,15題共60分)
+    name: 一、選擇題：(每題4 分，15 題共60 分)
     count: 15
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:(每題4分,共32分。若填充題不只一個答案,則依比例給分。)
+    name: 二、填充題：(每題4 分，共32 分。若填充題不只一個答案，則依比例給分。)
     count: 8
   - ord: 3
-    name: 三、非選擇題
-    type: single
-    score_rule: 三、非選擇題:(每題4分,共8分) 請直接於答案卷上作答。
+    name: 三、非選擇題：(每題4 分，共8 分) 請直接於答案卷上作答。
     count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/1-1/彰化/埔心.pdf
 questions:
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下表是一年甲班三位同學的某次數學考試成績與最高分成績92分的比較表。則這 三位同學中最高分的分數是幾分?
+  stem: '下表是一年甲班三位同學的某次數學考試成績與最高分成績92 分的比較表。則這三位同學中最高分的分數是幾分？
+
+
+    | 學生 | A | B | C |
+
+    | :--- | :---: | :---: | :---: |
+
+    | 成績與最高分成績的差距 | －20 | －6 | －5 |'
   options:
   - label: A
-    content: -5分
+    content: －5 分
   - label: B
-    content: -20分
+    content: －20 分
   - label: C
-    content: 87分
+    content: 87 分
   - label: D
-    content: 72分。 學生A B C成績與最高分成績的差距 -20 -6 -5
+    content: 72 分。
+  answer:
+  - C
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 如下左圖,數線上的哪一點可以表示為-$\frac{2}{3}$ ?
+  stem: 如下左圖，數線上的哪一點可以表示為$-\frac{2}{3}$ ？
   options:
   - label: A
     content: A
@@ -56,41 +62,54 @@ questions:
   - label: C
     content: C
   - label: D
-    content: D D C B A -3 -2 -1 0 1 2 3 -3
+    content: D
   assets:
-  - key: p1_f01
+  - key: s1_2_f1
     kind: figure
-    file: doc_111_彰化_埔心_數學_g7s1e1/p1_f01.png
+    file: doc_111_彰化_埔心_數學_g7s1e1/s1_2_f1.png
+  answer:
+  - B
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 如上右圖,小螞蟻原本在數線上(-3)的位置,後來又往右邊走到數線上6的位 置,則下列哪個選項可以表示這隻小螞蟻最後的位置?
+  stem: 如上右圖，小螞蟻原本在數線上(－3)的位置，後來又往右邊走到數線上6 的位置，則下列哪個選項可以表示這隻小螞蟻最後的位置？
   options:
   - label: A
-    content: (-3)+6
+    content: (－3)＋6
   - label: B
-    content: -3-6
+    content: －3－6
   - label: C
-    content: 6 -(-3)
+    content: 6 －(－3)
   - label: D
-    content: (-3) ×(-2)
+    content: (－3) $\times$(－2)
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_111_彰化_埔心_數學_g7s1e1/s1_3_f1.png
+  answer:
+  - D
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 下列哪一個選項可以表示「百萬分之一」?
+  stem: 下列哪一個選項可以表示「百萬分之一」？
   options:
   - label: A
-    content: '10100000'
+    content: $10^{100000}$
   - label: B
-    content: '106'
+    content: $10^{6}$
   - label: C
-    content: 10 -5
+    content: $10^{-5}$
   - label: D
-    content: 10 -6
+    content: $10^{-6}$
+  answer:
+  - D
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_5
   section: 1
   number: 5
@@ -99,64 +118,88 @@ questions:
   stem: 關於下列數的比較大小何者錯誤?
   options:
   - label: A
-    content: '|-6|> -6'
+    content: ｜－6｜> －6
   - label: B
-    content: '- 4的相反數 < 4'
+    content: － 4 的相反數 < 4
   - label: C
-    content: -(-5) > 3
+    content: －(－5) > 3
   - label: D
-    content: -3 > -5。
+    content: －3 > －5。
+  answer:
+  - B
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 有一數a,若|a|>3,且a<0,則下列選項中哪些可能是a在數線上的位置? a a
+  stem: 有一數$a$，若｜$a$｜>3，且$a$<0，則下列選項中哪些可能是$a$ 在數線上的位置？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_111_彰化_埔心_數學_g7s1e1/1_6_optA.png
   - label: B
-    content: -3 0 3 a
+    content: ''
+    asset:
+      key: optB
+      file: doc_111_彰化_埔心_數學_g7s1e1/1_6_optB.png
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_111_彰化_埔心_數學_g7s1e1/1_6_optC.png
   - label: D
-    content: -3 0 3
+    content: ''
+    asset:
+      key: optD
+      file: doc_111_彰化_埔心_數學_g7s1e1/1_6_optD.png
+  answer:
+  - B
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 計算-35÷5-|(-5)×3 |的值為何?
+  stem: 計算－35÷5－｜(－5)×3 ｜的值為何?
   options:
   - label: A
-    content: '-22'
+    content: －22
   - label: B
     content: '6'
   - label: C
-    content: '-12'
+    content: －12
   - label: D
-    content: '-15'
+    content: －15
+  answer:
+  - A
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 算式801×(-11)與下列哪一個算式的答案相同?
+  stem: 算式801×(－11)與下列哪一個算式的答案相同？
   options:
   - label: A
-    content: 800×(-11)-1×(-11)
+    content: 800×(－11)－1×(－11)
   - label: B
-    content: 800×(-11)+1×(-11)
+    content: 800×(－11)＋1×(－11)
   - label: C
-    content: 800×(-10)-1×(-1)
+    content: 800×(－10)－1×(－1)
   - label: D
-    content: 800×(-10)+1×(-1)
+    content: 800×(－10)＋1×(－1)
+  answer:
+  - B
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 若a×1999=40061,則(a+10)×1999=?
+  stem: 若$a$×1999＝40061，則($a$＋10)×1999＝？
   options:
   - label: A
     content: '60051'
@@ -166,6 +209,9 @@ questions:
     content: '80101929'
   - label: D
     content: '59561'
+  answer:
+  - A
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_10
   section: 1
   number: 10
@@ -174,45 +220,58 @@ questions:
   stem: 下列哪一個選項正確?
   options:
   - label: A
-    content: 100=1
+    content: $10^{0}$＝1
   - label: B
-    content: 010=1
+    content: $0^{10}$＝1
   - label: C
-    content: (-2)4 =-24
+    content: $(-2)^{4} = -2^{4}$
   - label: D
-    content: 0沒有相反數
+    content: 0 沒有相反數
+  answer:
+  - A
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 下列敘述何者錯誤?
+  stem: 下列敘述何者錯誤？
   options:
   - label: A
-    content: 23+(-2)3=0
+    content: $2^{3}$＋$(-2)^{3}$＝0
   - label: B
-    content: -24+(-2)4=0
+    content: $-2^{4}$＋$(-2)^{4}$＝0
   - label: C
-    content: (-2)3-(-23)=0
+    content: $(-2)^{3}$－$(-2^{3})$＝0
   - label: D
-    content: (-2)4-(-24)=0
+    content: $(-2)^{4}$－$(-2^{4})$＝0
+  answer:
+  - D
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: 下列哪一個數值最小?
+  stem: 下列哪一個數值最小？
   options:
   - label: A
-    content: 2.5×10 -4
+    content: 2.5×$10^{-4}$
   - label: B
-    content: 9.5×10
+    content: 9.5×$10^{-5}$
+  - label: C
+    content: 7.5×$10^{-6}$
+  - label: D
+    content: 5.5×$10^{-8}$
+  answer:
+  - D
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 計算4-〔-(-3)2+3〕÷6之值為何?
+  stem: 計算4－〔－（－3）$^{2}$＋3〕÷6 之值為何？
   options:
   - label: A
     content: '2'
@@ -221,36 +280,47 @@ questions:
   - label: C
     content: '5'
   - label: D
-    content: -6 << ----   背面尚有試題  --- >> 1 0 -3 0 3 a -3 0 3 -5
-  - label: C
-    content: 7.5×10 -6
-  - label: D
-    content: 5.5×10 -8
+    content: －6
+  answer:
+  - C
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 依據台灣即時用電資訊,111年10月2日21:10全台灣即時用電量 為3067.4萬瓩。此即時用電量可用下列何者表示?
+  stem: 依據台灣即時用電資訊，111 年10 月2 日21:10 全台灣即時用電量為3067.4 萬瓩。此即時用電量可用下列何者表示？
   options:
   - label: A
-    content: 3.0674×103瓩
+    content: 3.0674×$10^{3}$ 瓩
   - label: B
-    content: 3.0674×104瓩
+    content: 3.0674×$10^{4}$ 瓩
   - label: C
-    content: 3.0674×107瓩
+    content: 3.0674×$10^{7}$ 瓩
   - label: D
-    content: 3.0674×108瓩
+    content: 3.0674×$10^{8}$ 瓩
   assets:
-  - key: p2_f01
+  - key: s1_14_f1
     kind: figure
-    file: doc_111_彰化_埔心_數學_g7s1e1/p2_f01.png
+    file: doc_111_彰化_埔心_數學_g7s1e1/s1_14_f1.png
+  answer:
+  - C
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 下列表格中為甲、乙、丙、丁四位同學進行整數四則計算的過程中,請 檢查四位同學的計算過程何者完全正確?
+  stem: '下列表格中為甲、乙、丙、丁四位同學進行整數四則計算的過程中，請檢查四位同學的計算過程何者完全正確?
+
+
+    | 甲同學: | 乙同學: | 丙同學: | 丁同學: |
+
+    | :--- | :--- | :--- | :--- |
+
+    | 3850－1005＋5<br>＝3850－1010<br>＝2840 | (－24)－6×[(－8)－\|－7\|]<br>＝(－24)－6×[(－8)＋7]<br>＝(－24)－6×(－1)<br>＝(－24)－(－6)<br>＝－18
+    | 7×(－155)－7×(－55)<br>＝7×[(－155)－(－55)]<br>＝7×(－100)<br>＝－700 | $5^{2}$－$(-5)^{2}$×(13－$3^{2}$)<br>＝10－10×(13－6)<br>＝10－10×7<br>＝10－70<br>＝－60
+    |'
   options:
   - label: A
     content: 甲
@@ -259,75 +329,112 @@ questions:
   - label: C
     content: 丙
   - label: D
-    content: '丁 甲同學: 乙同學: 丙同學: 丁同學: 52-(-5)2×(13-32) =10-10×(13-6) =10-10×7 =10-70
-      =-60 3850-1005+5 =3850-1010 =2840 (-24)-6×[(-8)-|-7|] =(-24)-6×[(-8)+7] =(-24)-6×(-1)
-      =(-24)-(-6) =-18 7×(-155)-7×(-55) =7×[(-155)-(-55)] =7×(-100) =-700'
+    content: 丁
+  answer:
+  - C
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: '計算算式的值   36÷(-6)×(-3) =?  答: _____________ 。'
+  stem: 計算算式的值   36÷(－6)×(－3) ＝?
+  answer:
+  - '18'
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: '計算算式的值   214+(-473)-14-(-73) =?  答 : _____________ 。'
+  stem: 計算算式的值   214＋(－473)－14－(－73) ＝?
+  answer:
+  - '-200'
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: '計算算式的值  |75-83|-(-9)×〔 (-2)-7〕 =?   答: _____________ 。'
+  stem: 計算算式的值  ｜75－83｜－（－9）×〔（－2）－7〕 ＝?
+  answer:
+  - '-73'
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: '請將15 10000000  以科學記號表示。 答: _____________ 。'
+  stem: 請將$\frac{15}{10000000}$ 以科學記號表示。
+  answer:
+  - 1.5×10^{-6}
+  - 1.5×10－6
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: '-3的絕對值與6的相反數之和為多少?  答: _____________ 。'
+  stem: －3 的絕對值與6 的相反數之和為多少?
+  answer:
+  - '-3'
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: '若A為負整數,且∣A∣<2$\frac{1}{5}$ ,則A可能為何?  答: _____________ 。'
+  stem: 若$A$ 為負整數，且∣$A$∣＜$2\frac{1}{5}$ ，則$A$ 可能為何？
+  answer:
+  - -1、-2
+  - -1, -2
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: '數線上有A(-7)、B(3)兩點,若C(c)為A、B的中點,則c為多少? 答: _________ 。'
+  stem: 數線上有$A$(－7)、$B$(3)兩點，若$C(c)$為$A$、$B$ 的中點，則$c$ 為多少？
+  answer:
+  - '-2'
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: '數線上有C(c)、D(-2)兩點,若CD̅̅̅̅=5,則c可能是多少? 答: _________ 。'
+  stem: 數線上有$C(c)$、$D$(－2)兩點，若$\overline{CD}$＝5，則$c$ 可能是多少？
+  answer:
+  - 3 或-7
+  - 3, -7
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s3_1
   section: 3
   number: 1
-  type: single
+  type: calc
   page: 2
-  stem: 下表為部分區域與倫敦 格林威治的時差。小文上網查中華航空飛往洛杉磯的班機,有一 班飛機起飛時間為臺北時間9月20日23時30分,抵達洛杉磯時間為9月20日19時30分,則此班機的飛行時間為多久?
-    城市 雪梨 臺北 倫敦 洛杉磯 時差 +11 +8 0 -8
-  assets:
-  - key: p2_f02
-    kind: figure
-    file: doc_111_彰化_埔心_數學_g7s1e1/p2_f02.png
+  stem: '下表為部分區域與倫敦 格林威治的時差。小文上網查中華航空飛往洛杉磯的班機，有一班飛機起飛時間為臺北時間9 月20 日23 時30 分，抵達洛杉磯時間為9
+    月20 日19 時30分，則此班機的飛行時間為多久？
+
+
+    | 城市 | 雪梨 | 臺北 | 倫敦 | 洛杉磯 |
+
+    | :--- | :---: | :---: | :---: | :---: |
+
+    | 時差 | ＋11 | ＋8 | 0 | －8 |'
+  answer:
+  - 12 小時
+  answer_source: answer_key_vlm
 - id: doc_111_彰化_埔心_數學_g7s1e1_s3_2
   section: 3
   number: 2
-  type: single
+  type: calc
   page: 2
-  stem: 下圖為數線上四個點的位置關係,且它們表示的數分別為a、b、c、d。若|a-c|=8, |b-d|=7,|a-d|=12,則|b-c|=? 2
+  stem: 下圖為數線上四個點的位置關係，且它們表示的數分別為$a$、$b$、$c$、$d$。若｜$a$－$c$｜＝8， ｜$b$－$d$｜＝7，｜$a$－$d$｜＝12，則｜$b$－$c$｜＝?
   assets:
-  - key: p2_f03
+  - key: s3_2_f1
     kind: figure
-    file: doc_111_彰化_埔心_數學_g7s1e1/p2_f03.png
+    file: doc_111_彰化_埔心_數學_g7s1e1/s3_2_f1.png
+  answer:
+  - '3'
+  answer_source: answer_key_vlm

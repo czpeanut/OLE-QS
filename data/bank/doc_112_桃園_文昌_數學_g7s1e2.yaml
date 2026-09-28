@@ -1,54 +1,76 @@
 document:
-  semester: 1
-  exam_seq: 2
-  school: 桃園市立文昌國民中學
   grade: 7
   subject: 數學
-  scope_note: '2-1~2-4  班級: _______  座號: _______  姓名: ___________ 組別: □數資'
   academic_year_roc: 112
+  semester: 1
+  exam_seq: 2
   city: 桃園
   school_short: 文昌
+  school: 桃園市立文昌國民中學
+  scope_note: 2-1~2-4
   id: doc_112_桃園_文昌_數學_g7s1e2
-  title: 桃園市立文昌國民中學 112學年度第1學期第2次定期評量7年級數學科試題
+  title: 桃園市立文昌國民中學 112學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 112學年度第1學期第2次定期評量
-  sections: []
+  sections:
+  - ord: 1
+    name: 一、選擇題
+    count: 25
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/112/1-2/桃園/文昌.pdf
+  scope:
+    lessons:
+    - number: 2-1
+      title: null
+    - number: 2-2
+      title: null
+    - number: 2-3
+      title: null
+    - number: 2-4
+      title: null
+    publisher: 康軒
+    raw: 2-1~2-4
+    volume: null
 questions:
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列敘述何者 正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 最小的 質數是1
+    content: 最小的質數是 1
   - label: B
-    content: 任意兩個質數 之和必為偶數
+    content: 任意兩個質數之和必為偶數
   - label: C
-    content: 若 ( a , b ) = 1 ,則a、 b皆為質數
+    content: 若 $(a, b) = 1$，則 $a$、$b$ 皆為質數
   - label: D
-    content: 如果甲數是9的倍數,則甲數一定也是3的倍數
+    content: 如果甲數是 9 的倍數，則甲數一定也是 3 的倍數
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 右圖是利用短除法將a做標準分解式的過程,則下列敘述何者 正確? 3 a b 105 c 35 d
+  stem: 右圖是利用短除法將 $a$ 做標準分解式的過程，則下列敘述何者正確？
   options:
   - label: A
-    content: a= 345
+    content: $a = 345$
   - label: B
-    content: b= 5
+    content: $b = 5$
   - label: C
-    content: b× c× d= a
+    content: $b \times c \times d = a$
   - label: D
-    content: b+ c+ d= 15 32
+    content: $b + c + d = 15$
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_112_桃園_文昌_數學_g7s1e2/s1_2_f1.png
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 若N是正整數 , N+ 2也是 正整數,則N可能是多少 ?
+  stem: 若 $N$ 是正整數，$\frac{32}{N+2}$ 也是正整數，則 $N$ 可能是多少？
   options:
   - label: A
     content: '4'
@@ -63,7 +85,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 若七位數「 106175」是11的倍數,請問 中可填入的數為何 ?
+  stem: 若七位數「1061□75」是 11 的倍數，請問□中可填入的數為何？
   options:
   - label: A
     content: '4'
@@ -78,67 +100,67 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 在1~ 2023的整數中 ,12和30的公倍數有多少個?
+  stem: 在 1～2023 的整數中，12 和 30 的公倍數有多少個？
   options:
   - label: A
-    content: 33個
+    content: 33 個
   - label: B
-    content: 67個
+    content: 67 個
   - label: C
-    content: 133個
+    content: 133 個
   - label: D
-    content: 202個
+    content: 202 個
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 下列選項中所表示的數,哪一個與176的最大公因數為44?
+  stem: 下列選項中所表示的數，哪一個與 176 的最大公因數為 44？
   options:
   - label: A
-    content: 23 × 5 × 11
+    content: $2^{3} \times 5 \times 11$
   - label: B
-    content: 22 × 5 × 11
+    content: $2^{2} \times 5 \times 11$
   - label: C
-    content: 23 × 3 × 7
+    content: $2^{3} \times 3 \times 7$
   - label: D
-    content: 22 × 3 × 7 44 + 13 5 22 −( 9 44 − 7 22 ) 之值為何?
+    content: $2^{2} \times 3 \times 7$
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 算式4 9 13 5
+  stem: 算式 $\frac{5}{44} + \frac{13}{22} - (\frac{9}{44} - \frac{7}{22})$ 之值為何？
   options:
   - label: A
-    content: '11'
-  - label: C
-    content: '11'
-  - label: D
-    content: '11'
+    content: $\frac{4}{11}$
   - label: B
-    content: 22 1 7 ÷ 4 3
+    content: $\frac{5}{11}$
+  - label: C
+    content: $\frac{9}{11}$
+  - label: D
+    content: $\frac{13}{22}$
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 算式8 5的值,與下列何者 相等? 1 7 × 4 5
+  stem: 算式 $8\frac{1}{7} \div 4\frac{3}{5}$ 的值，與下列何者相等？
   options:
   - label: A
-    content: 8 3 1 7 ÷ 3
+    content: $8\frac{1}{7} \times 4\frac{5}{3}$
   - label: B
-    content: (8 ÷ 4) + ( 5 ) 1 7 ÷ 4) + ( 8 1 7 ÷ 3
+    content: $(8 \div 4) + (\frac{1}{7} \div \frac{3}{5})$
   - label: C
-    content: (8 5 ) 3 5) + ( 1 7 ÷ 4 3
+    content: $(8\frac{1}{7} \div 4) + (8\frac{1}{7} \div \frac{3}{5})$
   - label: D
-    content: (8 ÷ 4 5 ) 請翻頁繼續作答1 2 + 3 1 3 + 4 1
+    content: $(8 \div 4\frac{3}{5}) + (\frac{1}{7} \div 4\frac{3}{5})$
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: 算式2 4的值,寫成帶分數的形式,請問整數部分為何?
+  stem: 算式 $2\frac{1}{2} + 3\frac{1}{3} + 4\frac{1}{4}$ 的值，寫成帶分數的形式，請問整數部分為何？
   options:
   - label: A
     content: '9'
@@ -153,67 +175,67 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 若K = 15 × 162 × 253 ,則 將K展開後 是多少 位數?
+  stem: 若 $K = 15 \times 16^{2} \times 25^{3}$，則將 $K$ 展開後是多少位數？
   options:
   - label: A
-    content: 6位數
+    content: 6 位數
   - label: B
-    content: 7位數
+    content: 7 位數
   - label: C
-    content: 8位數
+    content: 8 位數
   - label: D
-    content: 10位數
+    content: 10 位數
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 判斷36是92的幾倍? 1
+  stem: 判斷 $3^{6}$ 是 $9^{2}$ 的幾倍？
   options:
   - label: A
-    content: 9倍
+    content: $\frac{1}{9}$ 倍
   - label: B
-    content: 1倍
+    content: 1 倍
   - label: C
-    content: 3倍
+    content: 3 倍
   - label: D
-    content: 9倍
+    content: 9 倍
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 若A= 11×12×13×14×15,則A的相異質因數有多少個?
+  stem: 若 $A = 11 \times 12 \times 13 \times 14 \times 15$，則 $A$ 的相異質因數有多少個？
   options:
   - label: A
-    content: 5個
+    content: 5 個
   - label: B
-    content: 6個
+    content: 6 個
   - label: C
-    content: 7個
+    content: 7 個
   - label: D
-    content: 8個
+    content: 8 個
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 下列何者 是126的倍數?
+  stem: 下列何者是 126 的倍數？
   options:
   - label: A
-    content: 3 × 7
+    content: $3 \times 7$
   - label: B
-    content: 3 × 11
+    content: $3 \times 11$
   - label: C
-    content: 23 × 3 × 7 × 11
+    content: $2^{3} \times 3 \times 7 \times 11$
   - label: D
-    content: 2 × 33 × 72 × 11
+    content: $2 \times 3^{3} \times 7^{2} \times 11$
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 若 [ 5 × a , 3 × a ] = 30,則 [ 5 × a , 3 × a , 24 ]=?
+  stem: 若 $[5 \times a, 3 \times a] = 30$，則 $[5 \times a, 3 \times a, 24] =$？
   options:
   - label: A
     content: '30'
@@ -228,99 +250,101 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 已知甲數為負整數,且 甲7 ,則滿足 這樣關係的甲數 可能是多少? 28為最簡分數,若
+  stem: 已知甲數為負整數，且 $\frac{甲}{28}$ 為最簡分數，若 $\frac{-29}{56} > \frac{甲}{28} > \frac{-4}{7}$，則滿足這樣關係的甲數可能是多少？
   options:
   - label: A
-    content: '- 15'
+    content: －15
   - label: B
-    content: '- 17'
+    content: －17
   - label: C
-    content: '- 30'
+    content: －30
   - label: D
-    content: '- 31 7 ) 2、 b= (− 7 ) 3、 c= −( 5 5'
+    content: －31
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 若a= (−
+  stem: 若 $a = (-\frac{5}{7})^{2}$、$b = (-\frac{5}{7})^{3}$、$c = -(\frac{5}{7})^{2}$、$d
+    = -(\frac{5}{7})^{3}$，則下列敘述何者正確？
   options:
   - label: A
-    content: a ≠ c, c ≠ d
+    content: $a \neq c$，$c \neq d$
   - label: B
-    content: a ≠ c, b= d
+    content: $a \neq c$，$b = d$
   - label: C
-    content: a= c, b ≠ d
+    content: $a = c$，$b \neq d$
   - label: D
-    content: a= c, b= d
+    content: $a = c$，$b = d$
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 將甲、乙、丙三個正分數化為最簡分數後,其分子分別為21、 14、 6,且分母的最小公倍數為252。 判斷甲、乙、丙三數的大小關係為何?
+  stem: 將甲、乙、丙三個正分數化為最簡分數後，其分子分別為 21、14、6，且分母的最小公倍數為 252。判斷甲、乙、丙三數的大小關係為何？
   options:
   - label: A
-    content: 甲>乙>丙
+    content: 甲＞乙＞丙
   - label: B
-    content: 甲>丙>乙
+    content: 甲＞丙＞乙
   - label: C
-    content: 乙>甲>丙
+    content: 乙＞甲＞丙
   - label: D
-    content: 乙>丙>甲
+    content: 乙＞丙＞甲
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 算式 ( 3 × 5 )6 ÷ 33 ÷ 52 = 3m× 5n ,則1 1
+  stem: 算式 $(3 \times 5)^{6} \div 3^{3} \div 5^{2} = 3^{m} \times 5^{n}$，則 $\frac{3}{2}
+    \times m - \frac{1}{2} \times n =$？
   options:
   - label: A
-    content: '2'
+    content: $\frac{1}{2}$
   - label: B
-    content: 1 2
+    content: $1\frac{1}{2}$
   - label: C
-    content: 2 3 ) 3 × (−2) + (−42) × 80 × 2
+    content: $2\frac{1}{2}$
+  - label: D
+    content: $3\frac{1}{2}$
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 算式8 ÷ (−
+  stem: 算式 $8 \div (-\frac{2}{3})^{3} \times (-2) + (-4^{2}) \times 8^{0} \times \frac{1}{16}$
+    之值為何？
   options:
   - label: A
     content: '53'
   - label: B
-    content: '- 53'
+    content: －53
   - label: C
     content: '120'
   - label: D
-    content: '- 120請接續第3頁作答 −29 56 > 甲28 > −4 7 ) 2 、 d= −( 7 ) 3 ,則下列敘述何者 正確? 5 5
-      3 2 × m− 1 2 × n= ? 1 1 2'
-  - label: D
-    content: 3 2 1 16之值 為何?
+    content: －120
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_20
   section: 1
   number: 20
   type: single
   page: 3
-  stem: 君君 到很傳統 糕餅店買了一些鳳梨酥,花費192元。已知這家糕餅店的 每一顆鳳梨酥的售價均 相等,並且每一顆 鳳梨酥的售價超過28元、不超過40元。
-    小毅在同一家糕餅店也買了一些鳳 梨酥,並且沒有再買其他商品,則下列哪一個金額有可能是 小毅的花費?
+  stem: 君君到很傳統糕餅店買了一些鳳梨酥，花費 192 元。已知這家糕餅店的每一顆鳳梨酥的售價均相等，並且每一顆鳳梨酥的售價超過 28 元、不超過 40 元。小毅在同一家糕餅店也買了一些鳳梨酥，並且沒有再買其他商品，則下列哪一個金額有可能是小毅的花費？
   options:
   - label: A
-    content: 168元
+    content: 168 元
   - label: B
-    content: 176元
+    content: 176 元
   - label: C
-    content: 276元
+    content: 276 元
   - label: D
-    content: 416元
+    content: 416 元
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_21
   section: 1
   number: 21
   type: single
   page: 3
-  stem: 很謹慎產品設計公司的產品為了防止產品被仿冒,特別設計專屬於公司產品的辨識條碼,其 規則是最後一個數字為前面所有數字的因數。例如:14005是該公司產品的條碼,其中5是1400的因數。請問下列哪一組數字可以是該公司產品的辨識條碼?
+  stem: 很謹慎產品設計公司的產品為了防止產品被仿冒，特別設計專屬於公司產品的辨識條碼，其規則是最後一個數字為前面所有數字的因數。例如：14005 是該公司產品的條碼，其中
+    5 是 1400 的因數。請問下列哪一組數字可以是該公司產品的辨識條碼？
   options:
   - label: A
     content: '765729'
@@ -335,13 +359,12 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: 成成 是一位愛乾淨的男孩,他的房間每5天會打掃一次,書桌每4天會清理一次,衣服則 是每2天會洗一次, 若某一個星期日,他同時打掃房間、書桌、洗衣服,
-    則下列敘述何者正確?
+  stem: 成成是一位愛乾淨的男孩，他的房間每 5 天會打掃一次，書桌每 4 天會清理一次，衣服則是每 2 天會洗一次，若某一個星期日，他同時打掃房間、書桌、洗衣服，則下列敘述何者正確？
   options:
   - label: A
-    content: 成成下一次同時打掃房間、書桌、洗衣服是60天後
+    content: 成成下一次同時打掃房間、書桌、洗衣服是 60 天後
   - label: B
-    content: 成成下一次同時打掃房間、書桌、洗衣服是20天後
+    content: 成成下一次同時打掃房間、書桌、洗衣服是 20 天後
   - label: C
     content: 成成下一次同時打掃房間、書桌、洗衣服也會是星期日
   - label: D
@@ -351,44 +374,44 @@ questions:
   number: 23
   type: single
   page: 3
-  stem: 已知好好吃麵包店 的藍莓麵包、三星蔥麵包、丹麥堅果麵包的單價分別為20元、 30元、 35元。 某日麵包店打烊後分別計算各種麵包當日賣出的收入金額,若藍莓麵包、三星蔥麵包、丹麥堅果麵包的收入金額均相等,則此金額可能在下列哪一個範圍?
+  stem: 已知好好吃麵包店的藍莓麵包、三星蔥麵包、丹麥堅果麵包的單價分別為 20 元、30 元、35 元。某日麵包店打烊後分別計算各種麵包當日賣出的收入金額，若藍莓麵包、三星蔥麵包、丹麥堅果麵包的收入金額均相等，則此金額可能在下列哪一個範圍？
   options:
   - label: A
-    content: 1~ 200元
+    content: 1～200 元
   - label: B
-    content: 201~ 400元
+    content: 201～400 元
   - label: C
-    content: 401~ 600元
+    content: 401～600 元
   - label: D
-    content: 601~ 800元3 3
+    content: 601～800 元
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_24
   section: 1
   number: 24
   type: single
   page: 3
-  stem: 一袋麵粉重15 4公斤的麵粉,假如在製作過程中沒有 任何失誤,則下列敘述何者正確? 7公斤,老闆製做一份鬆餅需要用到3
+  stem: 一袋麵粉重 $15\frac{3}{7}$ 公斤，老闆製做一份鬆餅需要用到 $\frac{3}{4}$ 公斤的麵粉，假如在製作過程中沒有任何失誤，則下列敘述何者正確？
   options:
   - label: A
-    content: 最多可以製作15個鬆餅,剩下7公斤的麵粉4 7公斤的麵粉
+    content: 最多可以製作 15 個鬆餅，剩下 $\frac{3}{7}$ 公斤的麵粉
   - label: B
-    content: 最多可以製作15個鬆餅,剩下3 7公斤的麵粉
+    content: 最多可以製作 15 個鬆餅，剩下 $\frac{4}{7}$ 公斤的麵粉
   - label: C
-    content: 最多可以製作20個鬆餅,剩下4 7公斤的麵粉
+    content: 最多可以製作 20 個鬆餅，剩下 $\frac{3}{7}$ 公斤的麵粉
   - label: D
-    content: 最多可以製作20個鬆餅,剩下
+    content: 最多可以製作 20 個鬆餅，剩下 $\frac{4}{7}$ 公斤的麵粉
 - id: doc_112_桃園_文昌_數學_g7s1e2_s1_25
   section: 1
   number: 25
   type: single
   page: 3
-  stem: 文學里 最近剛舉辦完里長選舉,有老高、小張 、阿亮等三位候選人,經過統計後得知此次的選 舉參與投票的選民一共有686人,並且有2 2 7投給了 小張,而最後剩下的票的7的票投給
-    老高,剩下的票的3 7是投給 阿亮,其餘都是廢票。 則下列敘述何者正確?
+  stem: 文學里最近剛舉辦完里長選舉，有老高、小張、阿亮等三位候選人，經過統計後得知此次的選舉參與投票的選民一共有 686 人，並且有 $\frac{2}{7}$
+    的票投給老高，剩下的票的 $\frac{2}{7}$ 投給了小張，而最後剩下的票的 $\frac{3}{7}$ 是投給阿亮，其餘都是廢票。則下列敘述何者正確？
   options:
   - label: A
-    content: 這次的選舉廢票有0張
+    content: 這次的選舉廢票有 0 張
   - label: B
-    content: 這次的選舉廢票有200張
+    content: 這次的選舉廢票有 200 張
   - label: C
-    content: 這次的選舉當選的人是 阿亮
+    content: 這次的選舉當選的人是阿亮
   - label: D
-    content: 老高 、小張 的票數相同 試題結束
+    content: 老高、小張的票數相同
