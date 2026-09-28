@@ -687,7 +687,8 @@ def main() -> int:
         # 寧可早一點停，也不要超過上限才發現
         if args.budget_twd:
             per = (Usage.run_usd * TWD_PER_USD / Usage.calls) if Usage.calls else 5.0
-            if Usage.twd() + per * args.workers >= args.budget_twd:
+            # 緩衝取兩倍：實測觸發當下在處理中的卷剛好偏大，只留一倍時超出上限約 0.7%
+            if Usage.twd() + per * args.workers * 2 >= args.budget_twd:
                 return {"path": str(p), "skip": "已達預算上限"}
         res, stats = extract(p, args.assets, model)
         if res:
