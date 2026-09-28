@@ -102,7 +102,10 @@ SCHEMA = {
             "group": {"type": "STRING", "nullable": True},
             "figures": {"type": "ARRAY", "items": FIG},
             "listening": {"type": "BOOLEAN"},
-            "lesson": {"type": "STRING", "nullable": True}},
+            "lesson": {"type": "OBJECT", "nullable": True, "properties": {
+                "number": {"type": "STRING", "nullable": True},
+                "title": {"type": "STRING", "nullable": True},
+                "basis": {"type": "STRING", "nullable": True}}}},
             "required": ["section", "number", "type", "page", "stem"]}},
         "answer_key": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {
             "section": {"type": "INTEGER"},
@@ -131,6 +134,7 @@ PROMPT = """你是題庫建置人員，要把一份台灣國中段考考卷逐�
 - **只能用上面列出的指令**。其他符號直接寫 Unicode 字元（∵ ∴ ≒ ° ⊥ ∥），
   不要用 \\mathrm、\\text、\\cdot 以外的指令。
 - 普通的數字與文字不要包進 $ 裡。
+- 輸出是 JSON：字串裡的反斜線一律寫成兩個（例如 "$\\\\frac{1}{2}$"），否則 \\t、\\f、\\n 會被當成控制字元。
 
 # 題組（閱讀測驗、克漏字、題組）
 - 凡是「閱讀下文回答第X～Y題」「克漏字」「根據下圖回答…」這類多題共用的素材，
@@ -156,56 +160,148 @@ PROMPT = """你是題庫建置人員，要把一份台灣國中段考考卷逐�
 - 答案頁、答案卷、空白作答卷**不要**當成題目。若卷上印有正確答案，填入 answer_key。
 - scope：卷頭若寫了命題範圍（例如「康軒版第三冊第1課～第4課」「Book 1 Starter～Lesson 3」），
   raw 照抄，並拆出版本、冊別與課次清單（有寫課名就一併填）。
-- lesson（僅國文、英文）：只有題目明確寫出課名或課次，或直接引用某一課的課文原句、
-  而且能確定是哪一課時才填，格式「第N課 課名」或「Lesson N」。不確定就填 null，不要猜。
+- lesson（僅國文、英文）：這一題出自哪一課。number 填課次（「第3課」「Lesson 2」），
+  title 填課名（「夏夜」「What Time Is It?」），basis 用一句話寫出判斷依據
+  （題目寫了課名、作者、引用了該課課文原句或注釋）。
+  只有能確定時才填；像字音字形、成語這類看不出出自哪一課的題目填 null，不要猜。
 - header.school：卷面印的校名；exam_title：卷面印的考試名稱。
 """
 
 
 # ─────────────────────────── 模型呼叫 ───────────────────────────
 
+# 官方價格（美元／每百萬 tokens，2026 年底前）。思考用的 tokens 以輸出價計。
+# 2027 年起 3.6～3.8 flash 漲為兩倍，屆時要更新這張表。
+PRICES = {
+    "gemini-3.7-flash": (0.75, 3.75),
+    "gemini-3.6-flash": (0.75, 3.75),
+    "gemini-3.8-flash": (0.75, 3.75),
+    "gemini-3-flash-preview": (0.50, 3.00),
+}
+# 主力模型塞車（503）是常態而非例外 —— 實測深夜也會連續六次 503。
+# 依序改用同價位的其他 flash，不要整份卷因為一個模型忙線就失敗。
+FALLBACK = ["gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.8-flash", "gemini-3-flash-preview"]
+TWD_PER_USD = 32.5      # 保守換算，高估台幣費用比低估安全
+
+
 class Usage:
+    """累計用量與費用。費用寫進檔案，分好幾輪執行時接續累計，預算上限才有意義。"""
     lock = threading.Lock()
     prompt = out = thought = calls = 0
+    usd = 0.0              # 含先前各輪的累計
+    run_usd = 0.0          # 只算這一輪，用來估每份卷的平均花費
+    ledger: Path | None = None
 
     @classmethod
-    def add(cls, meta: dict) -> None:
+    def load(cls, ledger: Path) -> None:
+        cls.ledger = ledger
+        if ledger.is_file():
+            d = json.loads(ledger.read_text(encoding="utf-8"))
+            cls.usd = d.get("usd", 0.0)
+
+    @classmethod
+    def add(cls, model: str, meta: dict) -> float:
+        p_in, p_out = PRICES.get(model, max(PRICES.values()))
+        pt = meta.get("promptTokenCount", 0)
+        ot = meta.get("candidatesTokenCount", 0)
+        th = meta.get("thoughtsTokenCount", 0)
+        cost = (pt * p_in + (ot + th) * p_out) / 1e6
         with cls.lock:
             cls.calls += 1
-            cls.prompt += meta.get("promptTokenCount", 0)
-            cls.out += meta.get("candidatesTokenCount", 0)
-            cls.thought += meta.get("thoughtsTokenCount", 0)
+            cls.prompt += pt
+            cls.out += ot
+            cls.thought += th
+            cls.usd += cost
+            cls.run_usd += cost
+            if cls.ledger:
+                cls.ledger.write_text(json.dumps(
+                    {"usd": round(cls.usd, 4), "twd": round(cls.usd * TWD_PER_USD, 1),
+                     "updated": time.strftime("%Y-%m-%d %H:%M:%S")}), encoding="utf-8")
+        return cost
+
+    @classmethod
+    def twd(cls) -> float:
+        return cls.usd * TWD_PER_USD
 
 
-def call_model(parts: list[dict], model: str) -> dict:
+def call_model(parts: list[dict], model: str) -> tuple[dict, str, float]:
+    """回傳 (輸出, 實際使用的模型, 這次花費美元)。"""
     key = os.environ["GEMINI_API_KEY"]
     body = {"contents": [{"parts": parts}],
             "generationConfig": {"responseMimeType": "application/json",
                                  "responseSchema": SCHEMA,
                                  "temperature": 0,
-                                 "maxOutputTokens": 65536}}
+                                 "maxOutputTokens": 65536,
+                                 # 擷取是照抄加判斷版面，不需要深度推理；
+                                 # 思考 tokens 以輸出價計費，放著不管會是最大的一筆
+                                 "thinkingConfig": {"thinkingLevel": "low"}}}
+    order = [model] + [m for m in FALLBACK if m != model]
     last = None
-    for attempt in range(6):
+    for attempt in range(8):
+        m = order[min(attempt // 2, len(order) - 1)]
         try:
             r = requests.post(
-                f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
                 params={"key": key}, json=body, timeout=600)
             if r.status_code in (429, 500, 502, 503, 504):
-                last = f"HTTP {r.status_code}"
-                time.sleep(min(60, 4 * 2 ** attempt))
+                last = f"{m} HTTP {r.status_code}"
+                time.sleep(min(30, 3 * 2 ** (attempt % 3)))
                 continue
             r.raise_for_status()
             data = r.json()
-            Usage.add(data.get("usageMetadata", {}))
+            cost = Usage.add(m, data.get("usageMetadata", {}))
             cand = data["candidates"][0]
             if cand.get("finishReason") not in (None, "STOP"):
                 raise RuntimeError(f"模型輸出中斷：{cand.get('finishReason')}")
             text = "".join(p.get("text", "") for p in cand["content"]["parts"])
-            return loads_lenient(text)
-        except (requests.RequestException, KeyError) as exc:
-            last = redact(f"{type(exc).__name__}: {exc}")
-            time.sleep(min(60, 4 * 2 ** attempt))
+            return repair_tree(loads_lenient(text)), m, cost
+        except requests.HTTPError as exc:
+            last = redact(f"{m} {exc.response.status_code}: {exc.response.text[:200]}")
+            break                                  # 400 這類請求本身有錯，換模型也沒用
+        except (requests.RequestException, KeyError, json.JSONDecodeError) as exc:
+            last = redact(f"{m} {type(exc).__name__}: {exc}")
+            time.sleep(5)
     raise RuntimeError(f"呼叫失敗：{last}")
+
+
+# ─────────────────────────── 公式逸出修復 ───────────────────────────
+#
+# 模型寫 JSON 時，LaTeX 的反斜線有時逸出（\\times），有時沒有（\times）。
+# 沒逸出的那些，恰好有一部分是**合法的** JSON 逸出序列，解析時不會報錯，
+# 而是被靜默改成控制字元：
+#     \times → Tab + "imes"        \frac → 換頁 + "rac"
+#     \neq   → 換行 + "eq"         \beta → 退格 + "eta"
+#     \rightarrow → 歸位 + "ightarrow"
+# 實測大灣卷第 21 題的「×」就這樣變成了「<Tab>imes」。解析後逐字串還原：
+# 控制字元後面接的字母若能湊成已知的 LaTeX 指令，就改回反斜線加指令。
+
+LATEX_NAMES = sorted("""
+times frac dfrac tfrac theta tau beta neq ne nu rho rightarrow leftarrow leftrightarrow
+Rightarrow right left ldots leq le geq ge pm mp div cdot cdots circ angle triangle sqrt
+overline overleftrightarrow overrightarrow mathrm mathbf mathit text textrm boldsymbol pi alpha
+perp parallel approx infty degree sim square dots because therefore bot Delta mu Omega
+lambda propto cong lt gt underline
+""".split(), key=len, reverse=True)
+_CTRL = {"\t": "t", "\f": "f", "\b": "b", "\r": "r"}
+_CTRL_RE = re.compile("([\t\f\b\r])(" + "|".join(
+    n[1:] for n in LATEX_NAMES if n[0] in "tfbr") + ")(?![a-zA-Z])")
+_NL_RE = re.compile("\n(" + "|".join(n[1:] for n in LATEX_NAMES if n[0] == "n") + ")(?![a-zA-Z])")
+
+
+def repair_latex(s: str) -> str:
+    s = _CTRL_RE.sub(lambda m: "\\" + _CTRL[m.group(1)] + m.group(2), s)
+    # 換行在一般文字裡是合法的，只在 $…$ 公式裡還原
+    return re.sub(r"\$[^$]*\$", lambda m: _NL_RE.sub(lambda k: "\\n" + k.group(1), m.group(0)), s)
+
+
+def repair_tree(x):
+    if isinstance(x, str):
+        return repair_latex(x)
+    if isinstance(x, list):
+        return [repair_tree(v) for v in x]
+    if isinstance(x, dict):
+        return {k: repair_tree(v) for k, v in x.items()}
+    return x
 
 
 # ─────────────────────────── 文字層驗證 ───────────────────────────
@@ -285,12 +381,14 @@ def extract(path: Path, fig_dir: Path | None, model: str) -> tuple[dict | None, 
 
     t0 = time.time()
     try:
-        out = call_model(parts, model)
+        out, used_model, cost = call_model(parts, model)
     except Exception as exc:
         stats["error"] = str(exc)
         doc.close()
         return None, stats
     stats["seconds"] = round(time.time() - t0, 1)
+    stats["model"] = used_model
+    stats["usd"] = round(cost, 4)
 
     # ── 出處：一律取自路徑 ──────────────────────────────────
     short = meta["school_short"]
@@ -384,8 +482,10 @@ def extract(path: Path, fig_dir: Path | None, model: str) -> tuple[dict | None, 
         if assets:
             item["assets"] = assets
 
-        if tag := lesson_tag(scope, q.get("lesson")):
-            item["tags"] = {"textbook": tag, "labeled_by": "ai"}
+        les = q.get("lesson") or {}
+        if les.get("number") or les.get("title"):
+            # 課次標籤先存原始判讀，章節名稱由 build_chapters.py 跨卷彙整後統一
+            item["lesson_raw"] = {k: les.get(k) for k in ("number", "title", "basis") if les.get(k)}
 
         # ── 文字層驗證 ───────────────────────────────────────
         # 題目的每個實質字元都必須能在原卷文字層裡找到。對不上代表模型
@@ -409,6 +509,13 @@ def extract(path: Path, fig_dir: Path | None, model: str) -> tuple[dict | None, 
                     if item.get("group_stem") == (g.get("passage") or "").strip():
                         item.setdefault("uncertain_spans", []).append(
                             f"題組短文與原卷文字層不符（吻合 {cov:.0%}）")
+
+    # 字詞題的作答指示寫在大題標題上（「一、國字注音」），題目本身只有「朦朧」。
+    # 老師單獨取用一題時看不到大題標題，把指示帶到題目上才看得懂要做什麼。
+    sec_names = {s["ord"]: s["name"] for s in sections}
+    for item in questions:
+        if len(item["stem"]) < 6 and not item.get("group_stem") and sec_names.get(item["section"]):
+            item["group_stem"] = sec_names[item["section"]]
 
     questions.sort(key=lambda x: (x["section"], x["number"]))
 
@@ -451,7 +558,7 @@ def extract(path: Path, fig_dir: Path | None, model: str) -> tuple[dict | None, 
         "exam_name": f"{meta['academic_year_roc']}學年度第{meta['semester']}學期"
                      f"第{meta['exam_seq']}次定期評量",
         "sections": sections,
-        "extractor": f"vlm:{model}",
+        "extractor": f"vlm:{used_model}",
         "source_file": "/".join(path.parts[-6:]),
     })
     if scope:
@@ -478,6 +585,10 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--log", type=Path, help="每份卷的統計寫成 JSON Lines")
     ap.add_argument("--deadline", help="超過這個時間（ISO 格式）就不再送出新的卷")
+    ap.add_argument("--budget-twd", type=float,
+                    help="累計費用（台幣，含先前各輪）達到這個數字就不再送出新的卷")
+    ap.add_argument("--ledger", type=Path, default=Path("out/vlm_spend.json"),
+                    help="累計費用的記錄檔，跨輪次接續")
     args = ap.parse_args()
     load_env_file()
     model = os.environ.get("GEMINI_EXTRACT_MODEL") or MODEL
@@ -495,7 +606,17 @@ def main() -> int:
         from datetime import datetime
         deadline = datetime.fromisoformat(args.deadline).timestamp()
 
-    done_ids = {p.stem for p in args.out.glob("*.yaml")}
+    args.ledger.parent.mkdir(parents=True, exist_ok=True)
+    Usage.load(args.ledger)
+    print(f"模型 {model}；先前累計費用 NT${Usage.twd():.0f}"
+          + (f"，上限 NT${args.budget_twd:.0f}" if args.budget_twd else ""), flush=True)
+    # 續跑只跳過「視覺模型已經擷取過」的卷。輸出目錄裡若有規則式（extract.py）
+    # 的舊結果，ID 相同但品質較差，要被新結果取代，不能當成已完成。
+    done_ids = set()
+    for y in args.out.glob("*.yaml"):
+        head = y.read_text(encoding="utf-8")[:4000]
+        if "extractor: vlm:" in head:
+            done_ids.add(y.stem)
     log_lock = threading.Lock()
 
     def work(p: Path) -> dict:
@@ -511,6 +632,12 @@ def main() -> int:
                 return {"path": str(p), "skip": "已完成"}
         if deadline and time.time() > deadline:
             return {"path": str(p), "skip": "已過截止時間"}
+        # 預算以「預估」計：同時在跑的卷還沒結帳，所以預留每份卷的平均花費當緩衝，
+        # 寧可早一點停，也不要超過上限才發現
+        if args.budget_twd:
+            per = (Usage.run_usd * TWD_PER_USD / Usage.calls) if Usage.calls else 5.0
+            if Usage.twd() + per * args.workers >= args.budget_twd:
+                return {"path": str(p), "skip": "已達預算上限"}
         res, stats = extract(p, args.assets, model)
         if res:
             dest = args.out / f"{res['document']['id']}.yaml"
@@ -531,13 +658,16 @@ def main() -> int:
                 n_ok += 1
                 n_q += s["questions"]
             tag = (f"{s.get('questions')} 題 題組{s.get('groups')} 存疑{s.get('uncertain')}"
-                   f" 覆蓋{s.get('recall', '—')} {s.get('seconds')}s" if s.get("questions") is not None
+                   f" 覆蓋{s.get('recall', '—')} {s.get('seconds')}s {s.get('model','')}"
+                   f" ${s.get('usd', 0):.3f}｜累計 NT${Usage.twd():.0f}"
+                   if s.get("questions") is not None
                    else s.get("skip") or s.get("error", "")[:80])
             print(f"[{i}/{len(paths)}] {'/'.join(Path(s['path']).parts[-6:])}  {tag}", flush=True)
 
     el = time.time() - t0
     print(f"\n完成 {n_ok} 份、{n_q} 題，{el/60:.1f} 分鐘；呼叫 {Usage.calls} 次，"
-          f"輸入 {Usage.prompt/1e6:.2f}M、輸出 {Usage.out/1e6:.2f}M、思考 {Usage.thought/1e6:.2f}M tokens")
+          f"輸入 {Usage.prompt/1e6:.2f}M、輸出 {Usage.out/1e6:.2f}M、思考 {Usage.thought/1e6:.2f}M tokens；"
+          f"累計費用 US${Usage.usd:.2f}（NT${Usage.twd():.0f}）")
     return 0
 
 

@@ -187,7 +187,7 @@ def loads_lenient(text: str) -> dict:
     try:
         return json.loads(text)
     except json.JSONDecodeError:
-        patched = re.sub(r'\\(?!["\\/bfnrtu])', r"\\\\", text)
+        patched = re.sub(r'\\(?!["\\/bfnrt]|u[0-9a-fA-F]{4})', r"\\\\", text)
         return json.loads(patched)
 
 

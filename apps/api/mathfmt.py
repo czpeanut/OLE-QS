@@ -21,6 +21,11 @@ COMMANDS = {
     r"\alpha": "α", r"\beta": "β", r"\theta": "θ", r"\pi": "π",
     r"\angle": "∠", r"\triangle": "△", r"\parallel": "∥", r"\perp": "⊥",
     r"\rightarrow": "→", r"\Rightarrow": "⇒", r"\ldots": "…", r"\cdots": "⋯",
+    r"\dots": "…", r"\leftrightarrow": "↔", r"\leftarrow": "←",
+    r"\le": "≤", r"\ge": "≥", r"\ne": "≠", r"\lt": "<", r"\gt": ">",
+    r"\sim": "∼", r"\cong": "≅", r"\propto": "∝", r"\square": "□",
+    r"\therefore": "∴", r"\because": "∵", r"\bot": "⊥", r"\Delta": "Δ",
+    r"\mu": "μ", r"\Omega": "Ω", r"\lambda": "λ", r"\rho": "ρ",
     r"\%": "%", r"\,": " ", r"\ ": " ", r"\!": "",
 }
 
@@ -68,6 +73,20 @@ def latex_to_html(tex: str) -> str:
             if cmd == r"\overline":
                 body, j = _group(tex, i + len(cmd))
                 out.append(f'<span class="ovl">{latex_to_html(body)}</span>')
+                i = j
+                continue
+            # 直線 AB（雙箭頭）與射線 AB（單箭頭）：國中幾何的標準記號
+            if cmd in (r"\overleftrightarrow", r"\overrightarrow"):
+                body, j = _group(tex, i + len(cmd))
+                arrow = "↔" if cmd == r"\overleftrightarrow" else "→"
+                out.append(f'<span class="ovarr"><span class="arr">{arrow}</span>'
+                           f'<span>{latex_to_html(body)}</span></span>')
+                i = j
+                continue
+            # 字體指令只影響字形，內容照常顯示（化學式常被包在 \mathrm 裡）
+            if cmd in (r"\mathrm", r"\mathbf", r"\mathit", r"\boldsymbol", r"\textrm"):
+                body, j = _group(tex, i + len(cmd))
+                out.append(f'<span class="up">{latex_to_html(body)}</span>')
                 i = j
                 continue
             if cmd == r"\text":
@@ -131,4 +150,7 @@ MATH_CSS = """
 .frac .den{padding:0 .3em}
 .ovl{border-top:1px solid currentColor;padding-top:1px}
 .sqrt{border-top:1px solid currentColor;padding:0 .15em}
+.up{font-style:normal}
+.ovarr{display:inline-flex;flex-direction:column;align-items:center;line-height:1;vertical-align:-0.1em}
+.ovarr .arr{font-size:.7em;line-height:.8;font-style:normal}
 """

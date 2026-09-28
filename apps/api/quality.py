@@ -17,6 +17,12 @@ import re
 
 # 題幹短於此字數幾乎確定是擷取殘缺
 MIN_STEM_CHARS = 6
+# 國文字音字形題本來就只有兩三個字：「ㄉㄡ風」（寫國字）、「教『誨』」（寫注音）。
+# 題幹含注音符號，或用「」框出要作答的字，就是這一型，短是正常的。
+ZHUYIN_ITEM_RE = re.compile(r"[\u3105-\u3129\u02ca\u02c7\u02cb\u02d9]|「.{1,3}」|『.{1,3}』")
+# 作答指示寫在大題標題上的字詞題（「一、國字注音」底下每題只有「朦朧」兩個字）
+WORD_SECTION_RE = re.compile(r"注音|注釋|國字|字音|字形|解釋|詞義|錯別字|改錯|形音義"
+                             r"|單字|字彙|拼字|翻譯|中翻英|英翻中|[Vv]ocabulary|[Ss]pelling")
 # 各題型應有的選項數；None 表示不檢查
 EXPECTED_OPTIONS = {"single": 4, "tf": 2}
 
@@ -26,7 +32,13 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
     reasons: list[str] = []
 
     stem = (q.get("stem") or "").strip()
-    if len(stem) < MIN_STEM_CHARS:
+    # 短題幹不一定是殘缺：字音字形題本來就短；克漏字與題組的內容在共用短文裡
+    sec_name = next((s.get("name") or "" for s in (doc.get("document") or {}).get("sections") or []
+                     if s.get("ord") == q.get("section")), "")
+    short_ok = bool(stem) and (ZHUYIN_ITEM_RE.search(stem)
+                               or (q.get("group_stem") or "").strip()
+                               or WORD_SECTION_RE.search(sec_name))
+    if len(stem) < MIN_STEM_CHARS and not short_ok:
         reasons.append("題幹過短或為空，可能擷取殘缺")
 
     # ── 辨識不清：擷取階段自己標記的不確定處 ──────────────────
