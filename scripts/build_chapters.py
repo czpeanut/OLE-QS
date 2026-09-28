@@ -55,6 +55,12 @@ def norm_title(t: str | None) -> str | None:
     return t or None
 
 
+def match_key(title: str, subject: str) -> str:
+    """比對用的鍵：去掉標點與空白。「下雨天真好」與「下雨天，真好」是同一課。"""
+    k = re.sub(r"[\s，、,.。·・：:；;！!？?—–\-－―「」『』〈〉《》()（）]", "", title)
+    return k.lower() if subject == "英語" else k
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -81,7 +87,7 @@ def main() -> int:
             t = norm_title(raw.get("title"))
             if not t:
                 continue
-            k = t.lower() if m["subject"] == "英語" else t
+            k = match_key(t, m["subject"])
             seen[key][k].append(m.get("exam_seq") or 0)
             display[(*key, k)][t] += 1
 
@@ -97,12 +103,11 @@ def main() -> int:
     for p, d in docs:
         m = d["document"]
         vol = volume(m)
-        known = {(r[0].lower() if m["subject"] == "英語" else r[0])
-                 for r in catalog.get((m["subject"], vol), [])}
+        known = {match_key(r[0], m["subject"]) for r in catalog.get((m["subject"], vol), [])}
         dirty = False
         for q in d.get("questions") or []:
             t = norm_title((q.get("lesson_raw") or {}).get("title"))
-            k = t.lower() if (t and m["subject"] == "英語") else t
+            k = match_key(t, m["subject"]) if t else None
             if t and k in known:
                 tag = f"第{VOLUME[vol]}冊 {t}" if m["subject"] == "國文" else f"Book {vol} {t}"
                 tagged += 1

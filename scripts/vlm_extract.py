@@ -49,7 +49,7 @@ sys.path.insert(0, str(REPO))
 sys.path.insert(0, str(REPO / "scripts"))
 
 from extract import (attach_answers, attach_carry_context, build_school,  # noqa: E402
-                     decode_mojibake, fitz, parse_path, split_answer)
+                     decode_mojibake, fitz, parse_path, split_answer, split_options)
 from generate_answers import load_env_file, loads_lenient, redact  # noqa: E402
 
 MODEL = "gemini-3.7-flash"
@@ -336,6 +336,44 @@ def coverage(part: Counter, whole: Counter) -> float:
     return sum(min(v, whole.get(k, 0)) for k, v in part.items()) / n
 
 
+def lift_inline_options(item: dict) -> bool:
+    """模型有時把選項寫進題幹（「…何者正確？(A)甲 (B)乙 (C)丙 (D)丁」）而不是選項欄位。
+    內容都在，只是位置錯了 —— 這種題目會被品管閘門判成「單選題沒有選項」剔除。
+    只處理選擇題、且選項代號從 A 起依序連續的情況；回傳是否有修改。"""
+    if item.get("options") or item.get("type") not in ("single", "multiple"):
+        return False
+
+    def sequential(opts: list[dict]) -> bool:
+        labels = [o["label"] for o in opts]
+        return len(opts) >= 2 and labels == [chr(ord("A") + i) for i in range(len(opts))]
+
+    stem, opts = split_options(item.get("stem") or "")
+    if not sequential(opts):
+        # 多題共用一組選項的配合題：選項印在題組說明裡（「學生的權利有(A)學習權
+        # (B)受教權…請依題意判斷」），每一題只有一句陳述。把那組選項複製到題目上，
+        # 題組說明保持原樣。原卷選項代號本身就有錯（兩個 B）的不處理，留給閘門擋下。
+        _, shared = split_options(item.get("group_stem") or "")
+        if not sequential(shared):
+            return False
+        # 最後一個選項後面常接著作答指示（「(D)財產權，請依題意判斷…」）；
+        # 只有逗號後面真的是指示才切，選項本身含逗號時不動
+        last = shared[-1]["content"]
+        m = re.search(r"[，。,；;]\s*(?=.*(?:請|判斷|選出|回答|填入|作答))", last)
+        if m:
+            shared[-1]["content"] = last[:m.start()].strip()
+        item["options"] = shared
+        return True
+    # 最後一個選項後面若接著空行與表格／說明，那是題幹的一部分（題目附表），移回題幹
+    tail = ""
+    last = opts[-1]["content"]
+    if "\n\n" in last:
+        last, tail = last.split("\n\n", 1)
+        opts[-1]["content"] = last.strip()
+    item["stem"] = (stem + ("\n\n" + tail.strip() if tail.strip() else "")).strip()
+    item["options"] = opts
+    return True
+
+
 # ─────────────────────────── 主流程 ───────────────────────────
 
 def crop(page, box: list[int], dest: Path) -> bool:
@@ -472,6 +510,9 @@ def extract(path: Path, fig_dir: Path | None, model: str) -> tuple[dict | None, 
             opts.append(opt)
         if opts:
             item["options"] = opts
+        else:
+            lift_inline_options(item)
+            opts = item.get("options") or []
 
         assets = []
         for j, fig in enumerate(q.get("figures") or [], start=1):
