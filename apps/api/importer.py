@@ -174,6 +174,9 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
                 pending=bool(a.get("must_crop")) and not file))
 
         tags = q.get("tags") or {}
+        # 模型推斷的章節（例如依課文引句判斷出自哪一課）要標成 ai，
+        # 老師檢索時才分得出哪些是人工確認過的分類。
+        labeled_by = tags.get("labeled_by") or "human"
         seen: set[tuple[str, str]] = set()
         for axis in ("textbook", "curriculum"):
             raw = tags.get(axis)
@@ -185,7 +188,7 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
                 if v and (axis, v) not in seen:
                     seen.add((axis, v))
                     session.add(Tag(question_id=qid, axis=axis, value=v,
-                                    is_primary=True, labeled_by="human"))
+                                    is_primary=True, labeled_by=labeled_by))
         for v in tags.get("concept") or []:
             if ("concept", v) not in seen:
                 seen.add(("concept", v))

@@ -714,6 +714,14 @@ COUNTY_CITIES = {"苗栗", "彰化", "南投", "雲林", "屏東", "宜蘭",
                  "花蓮", "台東", "澎湖", "金門", "連江"}
 
 
+PATH_GRADES = {"國一": 7, "國二": 8, "國三": 9}
+# 歷史、地理、公民在題庫裡是「社會」科的子科目。只存成「社會」的話，
+# 同校同次段考的歷史卷與地理卷會拿到同一個文件 ID，後匯入的蓋掉前一份。
+PATH_SUBJECTS = {"國文": ("國文", None), "英文": ("英語", None), "英語": ("英語", None),
+                 "數學": ("數學", None), "自然": ("自然", None), "社會": ("社會", None),
+                 "歷史": ("社會", "歷史"), "地理": ("社會", "地理"), "公民": ("社會", "公民")}
+
+
 def parse_path(path: Path, root: Path | None = None) -> dict:
     """從檔案路徑取來源資訊。
 
@@ -725,11 +733,21 @@ def parse_path(path: Path, root: Path | None = None) -> dict:
     ⚠️ 「1-2」曾被讀成「一年級第二學期」。實際是「第一學期第二次段考」，
     卷頭寫得很清楚（「111學年度第一學期第二次段考」），而且一個學年只有
     兩個學期卻有 1-3、2-3 這樣的目錄，年級解讀根本擺不下。
-    **年級不在路徑裡**，只能從卷面取得。
+    舊批次的路徑沒有年級，只能從卷面取得；完整題庫的路徑多了「國一」
+    「數學」這兩層，有的話以路徑為準。
     """
     parts = [decode_mojibake(x) for x in path.parts]
     meta: dict = {}
     for i, part in enumerate(parts):
+        # 完整考古題庫多了兩層：「年級／科目／學年度／學期-次數／縣市／學校.pdf」。
+        # 這兩層是人工整理的分類，比卷面可靠 —— 卷面的年級曾被上一屆
+        # 沒換掉的頁首騙過，科目也曾被切成「考數學」「級數學」。
+        if part in PATH_GRADES:
+            meta["grade"] = PATH_GRADES[part]
+        if part in PATH_SUBJECTS:
+            meta["subject"], sub = PATH_SUBJECTS[part]
+            if sub:
+                meta["sub_subject"] = sub
         norm_part = part.replace("臺", "台")
         if norm_part in {c.replace("臺", "台") for c in CITY_SET}:
             meta["city"] = norm_part
@@ -751,6 +769,76 @@ def build_school(city: str | None, short: str | None) -> str | None:
     return f"{city}{kind}立{short}國中"
 
 
+def attach_answers(path: Path, sections: list[dict], questions: list[dict]) -> None:
+    """從同一份 PDF 的答案頁解析答案，依大題配對後掛到題目上（就地修改）。"""
+    keys = parse_answers(path)
+    by_section: dict[int, dict[int, str]] = {}
+    for pg in keys["answer_pages"]:
+        if pg.get("likely_blank_sheet"):
+            continue
+        for e in pg["entries"]:
+            by_section.setdefault(e["table_index"], {})[e["number"]] = e["answer"]
+
+    # 答案表與大題的配對：依「題號集合的重疊度」比對，不要求數量相同。
+    # 數學卷有 3 個大題但只有 2 張答案表（計算題的答案是詳解文字，不成表），
+    # 若要求數量相同就會整份卷掛不上答案。
+    # 一個大題的答案可能拆成多張表（國文選擇題就拆成 1~29 與 30~35 兩張），
+    # 所以不是「一個大題配一張表」，而是把所有「題號多半落在本大題內」的表合併。
+    used: set[int] = set()
+    for sec in sections:
+        nums = {q["number"] for q in questions if q["section"] == sec["ord"]}
+        if not nums:
+            continue
+        # 分母取「較小者」：擷取不全時本大題的題號會比答案表少很多，
+        # 用聯集或最大值當分母會讓命中率被稀釋而配不上。
+        # 每張表只配給一個大題（best-match），避免相鄰大題互搶。
+        merged: dict[int, str] = {}
+        scored = []
+        for tbl, mapping in sorted(by_section.items()):
+            if tbl in used:
+                continue
+            keys = set(mapping)
+            hit = len(keys & nums) / max(1, min(len(keys), len(nums)))
+            if hit >= 0.6:
+                scored.append((hit, tbl, mapping))
+        if scored:
+            scored.sort(reverse=True, key=lambda x: x[0])
+            _, tbl, mapping = scored[0]
+            used.add(tbl)
+            merged.update(mapping)
+        for q in questions:
+            if q["section"] == sec["ord"] and q["number"] in merged:
+                q["answer"] = split_answer(merged[q["number"]], q)
+
+
+
+def attach_carry_context(questions: list[dict]) -> None:
+    """「承上題」帶上前一題的條件（就地修改）。"""
+    # 這種題目單獨拿出來是無解的 —— 條件全在前一題。對模型如此，對打開
+    # 題庫想單獨用這一題的老師也一樣。
+    # 借用 group_stem 這個既有欄位（本來就是「隨題一起顯示的共用說明」），
+    # 教師介面、匯出與作答提示三邊都不必改就會跟著帶上。
+    for i, q in enumerate(questions):
+        if i == 0 or q.get("group_stem"):
+            continue
+        if not CARRY_RE.search(q.get("stem") or ""):
+            continue
+        # 連鎖引用要一路往回找：17 承 16、16 又承 15，只帶 16 仍然缺條件。
+        # 不跨大題 —— 第二大題的第 1 題「承上題」指的不會是第一大題的最後一題。
+        chain: list[dict] = []
+        j = i - 1
+        while j >= 0 and questions[j]["section"] == q["section"]:
+            chain.append(questions[j])
+            if not CARRY_RE.search(questions[j].get("stem") or ""):
+                break
+            j -= 1
+        parts = [f"（第 {p['number']} 題）{(p.get('stem') or '').strip()}"
+                 for p in reversed(chain) if (p.get("stem") or "").strip()]
+        if parts:
+            q["group_stem"] = "\n".join(parts)
+
+
+
 def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
                 school_names: dict[tuple[str, str], str] | None = None,
                 default_subject: str | None = None,
@@ -758,7 +846,7 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
     doc = fitz.open(path)
     meta = parse_header(doc[0].get_text("text"))
     # 路徑優先於卷頭：卷頭常缺學年度與學校，路徑的目錄慣例則穩定。
-    # 但年級不在路徑裡（見 parse_path），只能靠卷面。
+    # 年級與科目若在路徑裡（完整題庫的「國一／數學／…」），也以路徑為準。
     path_meta = parse_path(path)
     meta.update({k: v for k, v in path_meta.items() if v})
     if not meta.get("academic_year_roc"):
@@ -802,7 +890,8 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
     # 一所學校同一學期有 3 次段考，一次段考又有 5 個科目的卷，
     # 少了任何一個都會撞成同一個 ID，後匯入的那份直接覆蓋前一份。
     stem_id = re.sub(r"[^\w]+", "_", decode_mojibake(str(path.stem))).strip("_").lower()
-    stem_id = (f"{meta.get('city','')}_{stem_id}_{meta['subject']}"
+    subj = meta["subject"] + (f"_{meta['sub_subject']}" if meta.get("sub_subject") else "")
+    stem_id = (f"{meta.get('city','')}_{stem_id}_{subj}"
                f"_g{meta['grade']}s{meta.get('semester','?')}e{meta.get('exam_seq','?')}")
     stem_id = re.sub(r"[^\w]+", "_", stem_id).strip("_")
     doc_id = f"doc_{meta['academic_year_roc']}_{stem_id}"
@@ -979,69 +1068,8 @@ def extract_pdf(path: Path, dpi: int = 200, fig_dir: Path | None = None,
         best.setdefault("assets", []).append(
             {"key": f["key"], "kind": "figure", "file": f["file"]})
 
-    # ── 掛答案 ────────────────────────────────────────────────
-    keys = parse_answers(path)
-    by_section: dict[int, dict[int, str]] = {}
-    for pg in keys["answer_pages"]:
-        if pg.get("likely_blank_sheet"):
-            continue
-        for e in pg["entries"]:
-            by_section.setdefault(e["table_index"], {})[e["number"]] = e["answer"]
-
-    # 答案表與大題的配對：依「題號集合的重疊度」比對，不要求數量相同。
-    # 數學卷有 3 個大題但只有 2 張答案表（計算題的答案是詳解文字，不成表），
-    # 若要求數量相同就會整份卷掛不上答案。
-    # 一個大題的答案可能拆成多張表（國文選擇題就拆成 1~29 與 30~35 兩張），
-    # 所以不是「一個大題配一張表」，而是把所有「題號多半落在本大題內」的表合併。
-    used: set[int] = set()
-    for sec in sections:
-        nums = {q["number"] for q in questions if q["section"] == sec["ord"]}
-        if not nums:
-            continue
-        # 分母取「較小者」：擷取不全時本大題的題號會比答案表少很多，
-        # 用聯集或最大值當分母會讓命中率被稀釋而配不上。
-        # 每張表只配給一個大題（best-match），避免相鄰大題互搶。
-        merged: dict[int, str] = {}
-        scored = []
-        for tbl, mapping in sorted(by_section.items()):
-            if tbl in used:
-                continue
-            keys = set(mapping)
-            hit = len(keys & nums) / max(1, min(len(keys), len(nums)))
-            if hit >= 0.6:
-                scored.append((hit, tbl, mapping))
-        if scored:
-            scored.sort(reverse=True, key=lambda x: x[0])
-            _, tbl, mapping = scored[0]
-            used.add(tbl)
-            merged.update(mapping)
-        for q in questions:
-            if q["section"] == sec["ord"] and q["number"] in merged:
-                q["answer"] = split_answer(merged[q["number"]], q)
-
-    # ── 跨題引用：「承上題」把條件留在前一題 ──────────────────────
-    # 這種題目單獨拿出來是無解的 —— 條件全在前一題。對模型如此，對打開
-    # 題庫想單獨用這一題的老師也一樣。
-    # 借用 group_stem 這個既有欄位（本來就是「隨題一起顯示的共用說明」），
-    # 教師介面、匯出與作答提示三邊都不必改就會跟著帶上。
-    for i, q in enumerate(questions):
-        if i == 0 or q.get("group_stem"):
-            continue
-        if not CARRY_RE.search(q.get("stem") or ""):
-            continue
-        # 連鎖引用要一路往回找：17 承 16、16 又承 15，只帶 16 仍然缺條件。
-        # 不跨大題 —— 第二大題的第 1 題「承上題」指的不會是第一大題的最後一題。
-        chain: list[dict] = []
-        j = i - 1
-        while j >= 0 and questions[j]["section"] == q["section"]:
-            chain.append(questions[j])
-            if not CARRY_RE.search(questions[j].get("stem") or ""):
-                break
-            j -= 1
-        parts = [f"（第 {p['number']} 題）{(p.get('stem') or '').strip()}"
-                 for p in reversed(chain) if (p.get("stem") or "").strip()]
-        if parts:
-            q["group_stem"] = "\n".join(parts)
+    attach_answers(path, sections, questions)
+    attach_carry_context(questions)
 
     for q in questions:
         q.pop("_col", None)
