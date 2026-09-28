@@ -1,38 +1,34 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 1
   exam_seq: 2
-  grade: 7
-  subject: 數學
   city: 嘉義
   school_short: 北興
-  school: 嘉義市立北興國中
+  school: 北興國中
   id: doc_111_嘉義_北興_數學_g7s1e2
-  title: 嘉義市立北興國中 111學年度第1學期第2次定期評量7年級數學科試題
+  title: 北興國中 111學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 111學年度第1學期第2次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題3分,共36分)
     count: 12
   - ord: 2
     name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:(每題4分,共40分)
     count: 10
   - ord: 3
     name: 三、計算題
-    type: calc
-    score_rule: 三、計算題:(每題6分,共24分)
     count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/1-2/嘉義/北興.pdf
 questions:
 - id: doc_111_嘉義_北興_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 在104、594、4851、28160、2766602五個數字中,4的倍數有幾個?
+  stem: 在 $104$、$594$、$4851$、$28160$、$2766602$ 五個數字中，$4$ 的倍數有幾個？
   options:
   - label: A
     content: '1'
@@ -47,7 +43,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 計算(8,12,10)=?
+  stem: 計算 $(8, 12, 10) = $？
   options:
   - label: A
     content: '120'
@@ -62,52 +58,53 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 計算(-$\frac{4}{7}$ )-(-$\frac{3}{4}$ )=? $\frac{37}{28}$
+  stem: 計算 $(-\frac{4}{7}) - (-\frac{3}{4}) = $？
   options:
+  - label: A
+    content: $-\frac{37}{28}$
   - label: B
     content: $\frac{5}{28}$
   - label: C
-    content: − $\frac{1}{11}$
+    content: $-\frac{1}{11}$
   - label: D
     content: $\frac{7}{11}$
-  - label: A
-    content: −
 - id: doc_111_嘉義_北興_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 下列選項中所表示的數,哪一個與252的最大公因數為126?
+  stem: 下列選項中所表示的數，哪一個與 $252$ 的最大公因數為 $126$？
   options:
   - label: A
-    content: 2 × 3 × 52 × 72
+    content: $2 \times 3 \times 5^{2} \times 7^{2}$
   - label: B
-    content: 22 × 32 × 5 × 72
+    content: $2^{2} \times 3^{2} \times 5 \times 7^{2}$
   - label: C
-    content: 22 × 3 × 52 × 7
+    content: $2^{2} \times 3 \times 5^{2} \times 7$
   - label: D
-    content: 2 × 32 × 5 × 7
+    content: $2 \times 3^{2} \times 5 \times 7$
 - id: doc_111_嘉義_北興_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 在下列各選項的敘述中,何者完全正確?
+  stem: 在下列各選項的敘述中，何者完全正確？
   options:
   - label: A
-    content: 1是質數,而且是任何整數的因數
+    content: $1$ 是質數，而且是任何整數的因數
   - label: B
-    content: 2是2的因數,而且2是2的質因數
+    content: $2$ 是 $2$ 的因數，而且 $2$ 是 $2$ 的質因數
   - label: C
-    content: 9是198的因數,而且9是198的質因數
+    content: $9$ 是 $198$ 的因數，而且 $9$ 是 $198$ 的質因數
   - label: D
-    content: 97、91、89都是質數6 ÷2 3 × 3 2=2 □×3 △,則□+△=?
+    content: $97$、$91$、$89$ 都是質數
 - id: doc_111_嘉義_北興_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 化簡(2 × 3)
+  stem: 化簡 $(2 \times 3)^{6} \div 2^{3} \times 3^{2} = 2^{\square} \times 3^{\triangle}$，則
+    $\square + \triangle = $？
   options:
   - label: A
     content: '11'
@@ -122,7 +119,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 計算〔(75,125),15〕=?
+  stem: 計算 $[(75, 125), 15] = $？
   options:
   - label: A
     content: '125'
@@ -137,62 +134,46 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 如圖,學校、郵局和安琪家都在忠孝路上,若將忠孝路看成一條 數線,且郵局的坐標為(-5 $\frac{1}{3}$ ),安琪家的坐標為(-1 $\frac{1}{2}$
-    )。 學校 安琪家 郵局 $\frac{1}{2}$ 1 - ? $\frac{1}{3}$ 5 - 若郵局為學校與安琪家的中點,則學校的坐標為多少? $\frac{1}{6}$
+  stem: 如圖，學校、郵局和安琪家都在忠孝路上，若將忠孝路看成一條數線，且郵局的坐標為 $(-5\frac{1}{3})$，安琪家的坐標為 $(-1\frac{1}{2})$。若郵局為學校與安琪家的中點，則學校的坐標為多少？
   options:
-  - label: B
-    content: 3 $\frac{5}{6}$
-  - label: C
-    content: −8 $\frac{5}{6}$
-  - label: D
-    content: −10 $\frac{5}{6}$
   - label: A
-    content: −9
+    content: $-9\frac{1}{6}$
+  - label: B
+    content: $3\frac{5}{6}$
+  - label: C
+    content: $-8\frac{5}{6}$
+  - label: D
+    content: $-10\frac{5}{6}$
   assets:
-  - key: p1_f01
+  - key: s1_8_f1
     kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e2/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e2/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e2/p1_f03.png
+    file: doc_111_嘉義_北興_數學_g7s1e2/s1_8_f1.png
 - id: doc_111_嘉義_北興_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 以下分別為4種罐裝飲料的容量與碳足跡標籤,標籤中的數字代表此罐裝飲料生命週期所產生 的二氧化碳排放量,則哪一種飲料每百毫升的二氧化碳排放量最多?
+  stem: 以下分別為 $4$ 種罐裝飲料的容量與碳足跡標籤，標籤中的數字代表此罐裝飲料生命週期所產生的二氧化碳排放量，則哪一種飲料每百毫升的二氧化碳排放量最多？
   options:
   - label: A
-    content: 250毫升
+    content: 250 毫升
   - label: B
-    content: 330毫升
+    content: 330 毫升
   - label: C
-    content: 300毫升
+    content: 300 毫升
   - label: D
-    content: 550毫升 $\frac{13}{20}$ 、 $\frac{a}{60}$ 、− $\frac{1}{2}$ 是由小到大排列的三個數,且
-      $\frac{a}{60}$
+    content: 550 毫升
   assets:
-  - key: p1_f04
+  - key: s1_9_f1
     kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e2/p1_f04.png
-  - key: p1_f05
-    kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e2/p1_f05.png
-  - key: p1_f06
-    kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e2/p1_f06.png
-  - key: p1_f07
-    kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e2/p1_f07.png
+    file: doc_111_嘉義_北興_數學_g7s1e2/s1_9_f1.png
 - id: doc_111_嘉義_北興_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 若− 為最簡分數,則a有幾種可能的答案?
+  stem: 若 $-\frac{13}{20}$、$\frac{a}{60}$、$-\frac{1}{2}$ 是由小到大排列的三個數，且 $\frac{a}{60}$
+    為最簡分數，則 $a$ 有幾種可能的答案？
   options:
   - label: A
     content: '2'
@@ -201,13 +182,13 @@ questions:
   - label: C
     content: '4'
   - label: D
-    content: 5 2)÷(-$\frac{2}{3}$ ) 2+(-3) 2=?
+    content: '5'
 - id: doc_111_嘉義_北興_數學_g7s1e2_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 計算(-4
+  stem: 計算 $(-4^{2}) \div (-\frac{2}{3})^{2} + (-3)^{2} = $？
   options:
   - label: A
     content: '-45'
@@ -222,9 +203,17 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 在下列敘述之中,正確的有多少個? (甲)設a、b為相異正整數,且a、b都是11的倍數,則a+ b也是11的倍數。 ) 2 × (− ) 3 =(−
-    ) 5 $\frac{3}{4}$ $\frac{3}{4}$ $\frac{3}{4}$ (乙)(− (丙)如果a、b為相異的質數,則a、b的最大公因數是1。
-    (丁)35是38的倍數。 (戊)-1的倒數是1。
+  stem: '在下列敘述之中，正確的有多少個？
+
+    (甲)設 $a$、$b$ 為相異正整數，且 $a$、$b$ 都是 $11$ 的倍數，則 $a + b$ 也是 $11$ 的倍數。
+
+    (乙)$(-\frac{3}{4})^{2} \times (-\frac{3}{4})^{3} = (-\frac{3}{4})^{5}$
+
+    (丙)如果 $a$、$b$ 為相異的質數，則 $a$、$b$ 的最大公因數是 $1$。
+
+    (丁)$3^{5}$ 是 $3^{8}$ 的倍數。
+
+    (戊)$-1$ 的倒數是 $1$。'
   options:
   - label: A
     content: '2'
@@ -233,94 +222,106 @@ questions:
   - label: C
     content: '4'
   - label: D
-    content: 3 (背面還有試題) 第1頁,共2頁
+    content: '3'
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: 將924作質因數分解,並寫成標準分解式。924=_________
+  stem: 將 $924$ 作質因數分解，並寫成標準分解式。$924 = $＿＿＿＿＿＿＿＿＿
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 計算〔22 × 34 × 7 × 11,24 × 33 × 52 × 11,23 × 35 × 53 × 11〕=_____(以標準分解式回答)
+  stem: 計算 $[2^{2} \times 3^{4} \times 7 \times 11, 2^{4} \times 3^{3} \times 5^{2}
+    \times 11, 2^{3} \times 3^{5} \times 5^{3} \times 11] = $＿＿＿＿＿(以標準分解式回答)
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 將-$\frac{7}{3}$ 、-$\frac{12}{5}$ 、-$\frac{32}{15}$ 三個數從小到大排列為__________ ×
-    1 $\frac{1}{3}$
+  stem: 將 $-\frac{7}{3}$、$-\frac{12}{5}$、$-\frac{32}{15}$ 三個數從小到大排列為＿＿＿＿＿＿＿＿＿＿
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 計算(-12)× $\frac{5}{6}$ =__________(將答案以最簡分數表示)
+  stem: 計算 $(-12) \times \frac{5}{6} \times 1\frac{1}{3} = $＿＿＿＿＿＿＿＿＿＿(將答案以最簡分數表示)
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 計算 $\frac{88}{97}$ −( $\frac{5}{7}$ −1 $\frac{9}{97}$ )=__________(將答案以最簡分數表示)
+  stem: 計算 $\frac{88}{97} - (\frac{5}{7} - 1\frac{9}{97}) = $＿＿＿＿＿＿＿＿＿＿(將答案以最簡分數表示)
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 計算5 3 × $\frac{2}{13}$ -$\frac{2}{13}$ × 60=__________
+  stem: 計算 $5^{3} \times \frac{2}{13} - \frac{2}{13} \times 60 = $＿＿＿＿＿＿＿＿＿＿
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 桌上有48個大小相同的正方體積木,今欲將48個積木進行分堆,每堆積木的個數都一樣,不能剩下。 若每堆至少2個,但不能多於15個,則可能的分堆方法有哪些?
-    答:可分成__________堆(答案不止一種,全對才給分)
+  stem: '桌上有 $48$ 個大小相同的正方體積木，今欲將 $48$ 個積木進行分堆，每堆積木的個數都一樣，不能剩下。若每堆至少 $2$ 個，但不能多於 $15$
+    個，則可能的分堆方法有哪些？
+
+    答：可分成＿＿＿＿＿＿＿＿＿＿堆(答案不止一種，全對才給分)'
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 洛基、索爾、浩克同時、同地、同方向出發,等速持續繞周長為400公尺的操場運動。已知洛基、索爾、 浩克繞操場一圈所需的時間分別為4分鐘、5分鐘與6分鐘,則從他們出發到三人第一次在出發點會合
-    為止,洛基共走了_______公尺。
+  stem: 洛基、索爾、浩克同時、同地、同方向出發，等速持續繞周長為 $400$ 公尺的操場運動。已知洛基、索爾、浩克繞操場一圈所需的時間分別為 $4$ 分鐘、$5$
+    分鐘與 $6$ 分鐘，則從他們出發到三人第一次在出發點會合為止，洛基共走了＿＿＿＿＿＿＿公尺。
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 櫻木、流川楓兩人在不同的公司上班,櫻木每上班1天後會接著休假5天,流川楓每上班1天後會接著 休假7天,若櫻木、流川楓兩人同在今天星期四上班,則下次兩人同在星期四上班是_____天後
+  stem: 櫻木、流川楓兩人在不同的公司上班，櫻木每上班 $1$ 天後會接著休假 $5$ 天，流川楓每上班 $1$ 天後會接著休假 $7$ 天，若櫻木、流川楓兩人同在今天星期四上班，則下次兩人同在星期四上班是＿＿＿＿＿天後
 - id: doc_111_嘉義_北興_數學_g7s1e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 已知積木長6公分、寬3公分、高4公分,如果拿200塊這種相同的積木要堆一個最大的立方體,堆 疊時積木方向必須相同且不能分割,則堆完之後還剩________塊積木。
+  stem: 已知積木長 $6$ 公分、寬 $3$ 公分、高 $4$ 公分，如果拿 $200$ 塊這種相同的積木要堆一個最大的立方體，堆疊時積木方向必須相同且不能分割，則堆完之後還剩＿＿＿＿＿＿＿＿塊積木。
 - id: doc_111_嘉義_北興_數學_g7s1e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: '阿肥忘了自己的銀行帳戶密碼,還好他有一個用標準分解式寫成的密碼提示: 15040 + a= 2b× c2 × 11 × d,其中a、b、c、d都是正整數。
-    依序輸入a、b、c、d即為帳戶密碼,則帳戶密碼為多少?'
+  stem: '阿肥忘了自己的銀行帳戶密碼，還好他有一個用標準分解式寫成的密碼提示：
+
+    $15040 + a = 2^{b} \times c^{2} \times 11 \times d$，其中 $a$、$b$、$c$、$d$ 都是正整數。
+
+    依序輸入 $a$、$b$、$c$、$d$ 即為帳戶密碼，則帳戶密碼為多少？'
 - id: doc_111_嘉義_北興_數學_g7s1e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 2
-  stem: '計算下列各式的值: $\frac{1}{2}$ )4 × ( $\frac{2}{3}$ )2   (2)(27 × 37) ÷ 65 −72 (1)(−'
+  stem: '計算下列各式的值：
+
+    (1)$(-\frac{1}{2})^{4} \times (\frac{2}{3})^{2}$
+
+    (2)$(2^{7} \times 3^{7}) \div 6^{5} - 7^{2}$'
 - id: doc_111_嘉義_北興_數學_g7s1e2_s3_3
   section: 3
   number: 3
   type: calc
   page: 2
-  stem: '盈萱家的客廳地板為長640公分、寬720公分的長方形,她想將客廳地板鋪滿大小相同的正方形瓷磚。 盈萱為了整體的美觀,不希望切割瓷磚: (1)盈萱所能選擇的瓷磚邊長最大是多少公分?
-    (2)盈萱後來聽了朋友的建議,覺得瓷磚太大有龜裂的風險,希望瓷磚邊長不要超過50公分,則他所能 選擇的瓷磚邊長最大是多少公分?此時共需要多少塊瓷磚才能將客廳地板鋪滿?'
+  stem: '盈萱家的客廳地板為長 $640$ 公分、寬 $720$ 公分的長方形，她想將客廳地板鋪滿大小相同的正方形瓷磚。盈萱為了整體的美觀，不希望切割瓷磚：
+
+    (1)盈萱所能選擇的瓷磚邊長最大是多少公分？
+
+    (2)盈萱後來聽了朋友的建議，覺得瓷磚太大有龜裂的風險，希望瓷磚邊長不要超過 $50$ 公分，則他所能選擇的瓷磚邊長最大是多少公分？此時共需要多少塊瓷磚才能將客廳地板鋪滿？'
 - id: doc_111_嘉義_北興_數學_g7s1e2_s3_4
   section: 3
   number: 4
   type: calc
   page: 2
-  stem: 環繞北興湖的道路全長1000公尺,市政府為了發展當地觀光,在道路旁設置遊客中心,並在遊客中心 門口設置路燈。再以該路燈為起點沿著環湖道路,每50公尺設一盞路燈,每20公尺種一棵柳樹;如遇
-    同點設路燈和種柳樹時,則只設路燈。若依照這樣的規劃,則共設置多少盞路燈?需種植多少棵柳樹? 第2頁,共2頁
+  stem: 環繞北興湖的道路全長 $1000$ 公尺，市政府為了發展當地觀光，在道路旁設置遊客中心，並在遊客中心門口設置路燈。再以該路燈為起點沿著環湖道路，每
+    $50$ 公尺設一盞路燈，每 $20$ 公尺種一棵柳樹；如遇同點設路燈和種柳樹時，則只設路燈。若依照這樣的規劃，則共設置多少盞路燈？需種植多少棵柳樹？

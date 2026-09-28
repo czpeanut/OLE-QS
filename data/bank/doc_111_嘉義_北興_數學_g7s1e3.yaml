@@ -1,128 +1,367 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 1
   exam_seq: 3
-  grade: 7
-  subject: 數學
   city: 嘉義
   school_short: 北興
-  school: 嘉義市立北興國中
+  school: 北興國中
   id: doc_111_嘉義_北興_數學_g7s1e3
-  title: 嘉義市立北興國中 111學年度第1學期第3次定期評量7年級數學科試題
+  title: 北興國中 111學年度第1學期第3次定期評量 7年級數學科試題
   exam_name: 111學年度第1學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題〈每題3分,共36
-    type: single
-    score_rule: 一、 選擇題〈每題3分,共36分〉
-    count: 0
+    name: 一、選擇題〈每題3 分，共36 分〉
+    count: 12
   - ord: 2
-    name: 二、填充題〈每題4分,共40
-    type: fill
-    score_rule: 二、 填充題〈每題4分,共40分〉
+    name: 二、填充題〈每題4 分，共40 分〉
     count: 10
   - ord: 3
-    name: 三、非選題〈每題6分,共24
-    type: calc
-    score_rule: 三、非選題〈每題6分,共24分〉
+    name: 三、非選題〈每題6 分，共24 分〉
     count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/1-3/嘉義/北興.pdf
 questions:
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: $x=3$ 是下列哪一個一元一次方程式的解？
+  options:
+  - label: A
+    content: $2x+3=3$
+  - label: B
+    content: $3x+3=9$
+  - label: C
+    content: $2x+3=9$
+  - label: D
+    content: $2x+1=5$
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列哪一個方程式的解與 $60x+25=200x-90$ 相同？
+  options:
+  - label: A
+    content: $6x+25=20x-90$
+  - label: B
+    content: $60x+2.5=200x-9$
+  - label: C
+    content: $6x+25=2x-0.9$
+  - label: D
+    content: $6x+2.5=20x-9$
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 將 $\frac{4x-3}{4}-\frac{2x-5}{6}$ 化簡後，可得到下列哪一個式子？
+  options:
+  - label: A
+    content: $8x+1$
+  - label: B
+    content: $8x-19$
+  - label: C
+    content: $\frac{8x+1}{12}$
+  - label: D
+    content: $\frac{8x-19}{2}$
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 如圖，分別以直線 $L$、$M$ 為對稱軸，所完成的對稱圖形應是下列哪一選項？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: optA
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_4_optA.png
+  - label: B
+    content: ''
+    asset:
+      key: optB
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_4_optB.png
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_4_optC.png
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_4_optD.png
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_111_嘉義_北興_數學_g7s1e3/s1_4_f1.png
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 一個長方形的周長為 30，如果長為 $x$，那麼面積可以用下列哪一個式子表示？
+  options:
+  - label: A
+    content: $x(30-x)$
+  - label: B
+    content: $x(15-x)$
+  - label: C
+    content: $x\cdot\frac{30-x}{2}$
+  - label: D
+    content: $x(15-2x)$
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 小林以四種不同的方式連接正六邊形 $ABCDEF$ 的三條對角線，連接後所形成的圖形如下，則下列哪一個選項中的圖形不是線對稱圖形？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: optA
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_6_optA.png
+  - label: B
+    content: ''
+    asset:
+      key: optB
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_6_optB.png
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_6_optC.png
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_6_optD.png
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 下列敘述何者正確？
+  options:
+  - label: A
+    content: 若 $-3x=5$，則 $x=5+3$
+  - label: B
+    content: 若 $-4x=7$，則 $x=7\div 4$
+  - label: C
+    content: 若 $-5x=6$，則 $x=6\div(-5)$
+  - label: D
+    content: 若 $-6x=7$，則 $x=-\frac{6}{7}$
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: '將一張正方形色紙上下對摺後，再左右對摺，如下圖所示：
+
+
+    再將 剪成 ，則色紙展開後的圖形為下列何者？'
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: optA
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_8_optA.png
+  - label: B
+    content: ''
+    asset:
+      key: optB
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_8_optB.png
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_8_optC.png
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_111_嘉義_北興_數學_g7s1e3/1_8_optD.png
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_111_嘉義_北興_數學_g7s1e3/s1_8_f1.png
+  - key: s1_8_f2
+    kind: figure
+    file: doc_111_嘉義_北興_數學_g7s1e3/s1_8_f2.png
+  - key: s1_8_f3
+    kind: figure
+    file: doc_111_嘉義_北興_數學_g7s1e3/s1_8_f3.png
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 北興幸福水果專賣店販賣蘋果，以進貨價加 20%作為定價，當經過一段時間後，會以訂價減 20%作為特價銷售。請問當蘋果以特價銷售時，北興幸福水果專賣店會賺錢還是會賠錢？
+  options:
+  - label: A
+    content: 會賠錢
+  - label: B
+    content: 會賺錢
+  - label: C
+    content: 不賺不賠
+  - label: D
+    content: 要知道進貨價才能判斷。
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: '解一元一次方程式 $\frac{x}{2}-\frac{1}{3}=\frac{x}{6}+1$ 時，下列哪一個步驟開始發生錯誤？
+
+    步驟一：$3x-2=x+1$
+
+    步驟二：$3x-x=1-2$
+
+    步驟三：$2x=-1$
+
+    步驟四：$x=-\frac{1}{2}$'
+  options:
+  - label: A
+    content: 步驟一
+  - label: B
+    content: 步驟二
+  - label: C
+    content: 步驟三
+  - label: D
+    content: 步驟四
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 2
+  stem: 右圖為牛肉麵店的公告。若一碗牛肉麵調漲前的售價為 $x$ 元，則外帶一碗牛肉麵的花費，公告前後相差多少元？
+  options:
+  - label: A
+    content: $0.2x$ 元
+  - label: B
+    content: $0.23x$ 元
+  - label: C
+    content: $0.14x$ 元
+  - label: D
+    content: $0.15x$ 元
+  assets:
+  - key: s1_11_f1
+    kind: figure
+    file: doc_111_嘉義_北興_數學_g7s1e3/s1_11_f1.png
+- id: doc_111_嘉義_北興_數學_g7s1e3_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 2
+  stem: 如右圖，在月曆上正方形塑膠板框住 4 個日期 a、b、c、d。若 a+b+c+d=72，則 a=？
+  options:
+  - label: A
+    content: '11'
+  - label: B
+    content: '12'
+  - label: C
+    content: '13'
+  - label: D
+    content: '14'
+  assets:
+  - key: s1_12_f1
+    kind: figure
+    file: doc_111_嘉義_北興_數學_g7s1e3/s1_12_f1.png
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: 化簡5x−6 + 2x+ 4=________________。
+  stem: 化簡 $5x-6+2x+4=$________________。
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 已知父親體重是兒子體重的3倍多2公斤,如果父親體重為x公斤, 則兒子體重是_______公斤。(以含x的式子表示)
+  stem: 已知父親體重是兒子體重的 3 倍多 2 公斤，如果父親體重為 $x$ 公斤，則兒子體重是_______公斤。(以含 $x$ 的式子表示)
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 已知翰翰5年前的年齡是(x-7)歲,則三年後,翰翰的年齡為_______歲。(以含x的式子表示)
+  stem: 已知翰翰 5 年前的年齡是(x-7)歲，則三年後，翰翰的年齡為_______歲。(以含 $x$ 的式子表示)
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 小華心中想好一個整數,將這個整數乘以4,再加上3,所得的結果為95, 設小華心中所想的整數為x。可列出方程式為      。(不須化簡)
+  stem: 小華心中想好一個整數，將這個整數乘以 4，再加上 3，所得的結果為 95，設小華心中所想的整數為 $x$。可列出方程式為      。(不須化簡)
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 已知三個連續奇數的和是195,則三數中最小的數為___________。
+  stem: 已知三個連續奇數的和是 195，則三數中最小的數為___________。
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 前NBA球員魔獸霍華德加入T1聯盟桃園永豐雲豹隊,掀起了台灣的魔獸風潮, 若魔獸霍華德在比賽中共得38分,其中總共投進3分球和2分球共15球,且罰進6球得6分
-    請問:魔獸霍華德在這場比賽投進_________顆2分球?
+  stem: '前 NBA 球員魔獸霍華德加入 T1 聯盟桃園永豐雲豹隊，掀起了台灣的魔獸風潮，若魔獸霍華德在比賽中共得 38 分，其中總共投進 3 分球和 2
+    分球共 15 球，且罰進 6 球得 6 分
+
+    請問：魔獸霍華德在這場比賽投進_________顆 2 分球？'
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 虎克船長駕海盜船往返金銀島與夢幻島之間。已知去程速率為每小時50公里, 回程速率為每小時60公里,來回共花5小時30分鐘,則金銀島與夢幻島間的距離是_________公里?
+  stem: 虎克船長駕海盜船往返金銀島與夢幻島之間。已知去程速率為每小時 50 公里，回程速率為每小時 60 公里，來回共花 5 小時 30 分鐘，則金銀島與夢幻島間的距離是_________公里？
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 如果x的一元一次方程式 $\frac{x+12}{6}$ -2=ax+2的解為3,求a =________。
+  stem: 如果 $x$ 的一元一次方程式 $\frac{x+12}{6}-2=ax+2$ 的解為 3，求 $a=$________。
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 解方程式:$\frac{2}{3}$ (x-3)=$\frac{1}{4}$ (x+6)-$\frac{1}{6}$ , 則x=________。
+  stem: 解方程式：$\frac{2}{3}(x-3)=\frac{1}{4}(x+6)-\frac{1}{6}$，則 $x=$________。
 - id: doc_111_嘉義_北興_數學_g7s1e3_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 已知一副撲克牌去掉鬼牌後有52張,其中字母牌(A、J、Q、K)共有16張, 其他的牌皆視為數字牌,現在將這副撲克牌分成甲、乙兩堆, 若甲堆中的數字牌比乙堆中的字母牌少2張,則甲、乙兩堆牌相差______張?
-    【第2頁,共有3頁】
+  stem: 已知一副撲克牌去掉鬼牌後有 52 張，其中字母牌(A、J、Q、K)共有 16 張，其他的牌皆視為數字牌，現在將這副撲克牌分成甲、乙兩堆，若甲堆中的數字牌比乙堆中的字母牌少
+    2 張，則甲、乙兩堆牌相差______張？
 - id: doc_111_嘉義_北興_數學_g7s1e3_s3_1
   section: 3
   number: 1
   type: calc
   page: 3
-  stem: 右圖是裝置藝術展廣場上的一個大型藝術裝置,此裝置由9個正方體木箱組成, 請畫出它的三視圖。 前視圖 上視圖 右視圖 前方
+  stem: 右圖是裝置藝術展廣場上的一個大型藝術裝置，此裝置由 9 個正方體木箱組成，請畫出它的三視圖。
   assets:
-  - key: p3_f01
+  - key: s3_1_f1
     kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e3/p3_f01.png
-  - key: p3_f02
-    kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e3/p3_f02.png
-  - key: p3_f03
-    kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e3/p3_f03.png
-  - key: p3_f04
-    kind: figure
-    file: doc_111_嘉義_北興_數學_g7s1e3/p3_f04.png
+    file: doc_111_嘉義_北興_數學_g7s1e3/s3_1_f1.png
 - id: doc_111_嘉義_北興_數學_g7s1e3_s3_2
   section: 3
   number: 2
   type: calc
   page: 3
-  stem: 某次數學競試共有25題,其計分方式如下:答對一題得4分,答錯一題倒扣1分(得-1分),沒有作答 則不記分。若梅西作答21題,共得70分,則梅西答對幾題?
+  stem: 某次數學競試共有 25 題，其計分方式如下：答對一題得 4 分，答錯一題倒扣 1 分(得－1 分)，沒有作答則不記分。若梅西作答 21 題，共得 70
+    分，則梅西答對幾題？
 - id: doc_111_嘉義_北興_數學_g7s1e3_s3_3
   section: 3
   number: 3
   type: calc
   page: 3
-  stem: 解方程式:−2x= 1 − $\frac{x}{2}$ + $\frac{x}{4}$ + $\frac{x}{8}$ − $\frac{x}{16}$
+  stem: 解方程式：$-2x=1-\frac{x}{2}+\frac{x}{4}+\frac{x}{8}-\frac{x}{16}$
 - id: doc_111_嘉義_北興_數學_g7s1e3_s3_4
   section: 3
   number: 4
   type: calc
   page: 3
-  stem: x的一元一次方程式ax+5=2a+14與-2x+3=3x-2有相同的解,求a的值。 【第3頁,共有3頁】
+  stem: $x$ 的一元一次方程式 $ax+5=2a+14$ 與 $-2x+3=3x-2$ 有相同的解，求 $a$ 的值。

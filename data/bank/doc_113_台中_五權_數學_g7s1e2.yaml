@@ -1,121 +1,117 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 2
-  school: 台中市立五權國民中學
-  grade: 7
-  subject: 數學
   city: 台中
   school_short: 五權
+  school: 臺中市立五權國中
   id: doc_113_台中_五權_數學_g7s1e2
-  title: 台中市立五權國民中學 113學年度第1學期第2次定期評量7年級數學科試題
+  title: 臺中市立五權國中 113學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、 選擇題(每題4分,共60分)答案請畫於答案卡
+    name: 一、選擇題（每題4 分，共60 分）答案請畫於答案卡
     count: 15
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、 填充題(每格4分,共28分)
-    count: 6
+    name: 二、填充題（每格4 分，共28 分）
+    count: 7
   - ord: 3
-    name: 三、非選擇題
-    type: single
-    score_rule: 三、 非選擇題(每題6分,共12分)
+    name: 三、非選擇題（每題6 分，共12 分）
     count: 2
-  - ord: 4
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(每格4分,共28分)
-    count: 0
-  - ord: 5
-    name: 三、非選擇題
-    type: single
-    score_rule: 三、非選擇題(每題6分,共12分)請詳細寫下計算過程
-    count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/1-2/台中/五權.pdf
 questions:
 - id: doc_113_台中_五權_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列敘述何者正確? $\frac{1}{4}$ = −2 + $\frac{1}{4}$
+  stem: 下列敘述何者正確？
   options:
-  - label: B
-    content: 2 $\frac{3}{5}$ 倒數為2 $\frac{5}{3}$
-  - label: C
-    content: 3 $\frac{4}{5}$ −2 $\frac{1}{3}$ = 3 −2 + $\frac{4}{5}$
   - label: A
-    content: −2
+    content: $-2\frac{1}{4} = -2 + \frac{1}{4}$
+  - label: B
+    content: $2\frac{3}{5}$ 倒數為 $2\frac{5}{3}$
+  - label: C
+    content: $3\frac{4}{5} - 2\frac{1}{3} = 3 - 2 + \frac{4}{5} - \frac{1}{3}$
+  - label: D
+    content: 1 沒有倒數。
 - id: doc_113_台中_五權_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 小美女將一正整數a分解成質因數相乘,計算過程如右圖。 則以下敘述何者正確?
+  stem: 小美女將一正整數 $a$ 分解成質因數相乘，計算過程如右圖。 則以下敘述何者正確？
   options:
   - label: A
-    content: a= 2 × 3 × 11
+    content: $a = 2 \times 3 \times 11$
   - label: B
-    content: a有4個因數
+    content: $a$ 有 4 個因數
   - label: C
-    content: b可被4整除
+    content: $b$ 可被 4 整除
   - label: D
-    content: c= 3 × 11 。
+    content: $c = 3 \times 11$ 。
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_113_台中_五權_數學_g7s1e2/s1_2_f1.png
 - id: doc_113_台中_五權_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 若A= 25 × 32 × 57,則下列選項中所表示的數,何者是A的因數?
+  stem: 若 $A = 2^{5} \times 3^{2} \times 5^{7}$，則下列選項中所表示的數，何者是 $A$ 的因數？
   options:
   - label: A
-    content: 24 × 3 × 56
+    content: $2^{4} \times 3 \times 5^{6}$
   - label: B
-    content: 2 × 32 × 58
+    content: $2 \times 3^{2} \times 5^{8}$
   - label: C
-    content: 32 × 58
+    content: $3^{2} \times 5^{8}$
   - label: D
-    content: 26 。
+    content: $2^{6}$ 。
 - id: doc_113_台中_五權_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 下列哪一選項中的兩數互質?
+  stem: 下列哪一選項中的兩數互質？
   options:
   - label: A
-    content: 12,25
+    content: 12，25
   - label: B
-    content: 39,42
+    content: 39，42
   - label: C
-    content: 15,81
+    content: 15，81
   - label: D
-    content: 6,20 。
+    content: 6，20 。
 - id: doc_113_台中_五權_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 洋洋利用短除法求最大公因數、最小公倍數,計算過程如圖,則以下敘述何者 正確?
+  stem: 洋洋利用短除法求最大公因數、最小公倍數，計算過程如圖，則以下敘述何者正確？
   options:
   - label: A
-    content: (36,48,72) = 2
+    content: $(36,48,72) = 2$
   - label: B
-    content: (36,48,72) = 23 × 32
+    content: $(36,48,72) = 2^{3} \times 3^{2}$
   - label: C
-    content: '[ 36,48,72] = 36 × 48 × 32'
+    content: $[36,48,72] = 36 \times 48 \times 32$
   - label: D
-    content: '[ 36,48,72] = 24 × 32。'
+    content: $[36,48,72] = 2^{4} \times 3^{2}$ 。
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_113_台中_五權_數學_g7s1e2/s1_5_f1.png
 - id: doc_113_台中_五權_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 翎翎列出b的正因數,由小而大排列如下:1,2,3,6,9,10,15,30,..... b的值為何
+  stem: "翎翎列出 $b$ 的正因數，由小而大排列如下：1，2，3，6，9，10，15，30，..... \n $b$ 的值為何"
   options:
   - label: A
     content: '90'
@@ -130,7 +126,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 大雄和靜香決定在第二次定期評量後相約至松鼠影城看電影,因兩人想 看的電影不同,他們決定各看各的電影,只要兩部電影結束時間同時就 好,右圖為兩部電影的時間表,則他們一起看完的時間最早是幾點?
+  stem: 大雄和靜香決定在第二次定期評量後相約至松鼠影城看電影，因兩人想看的電影不同，他們決定各看各的電影，只要兩部電影結束時間同時就好，右圖為兩部電影的時間表，則他們一起看完的時間最早是幾點？
   options:
   - label: A
     content: '6:00'
@@ -141,16 +137,16 @@ questions:
   - label: D
     content: 23:40 。
   assets:
-  - key: p1_f01
+  - key: s1_7_f1
     kind: figure
-    file: doc_113_台中_五權_數學_g7s1e2/p1_f01.png
+    file: doc_113_台中_五權_數學_g7s1e2/s1_7_f1.png
 - id: doc_113_台中_五權_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 已知a是正整數, $\frac{a}{20}$ 是最簡分數,且 $\frac{3}{5}$ < $\frac{a}{20}$ < $\frac{9}{10}$
-    ,則a可能的值共有幾 個?
+  stem: 已知 $a$ 是正整數，$\frac{a}{20}$ 是最簡分數，且 $\frac{3}{5} < \frac{a}{20} < \frac{9}{10}$，則
+    $a$ 可能的值共有幾個？
   options:
   - label: A
     content: '7'
@@ -165,7 +161,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 算式 $\frac{11}{6}$ −(−1 $\frac{3}{8}$ )之值為何?
+  stem: 算式 $\frac{11}{6} - (-1\frac{3}{8})$ 之值為何？
   options:
   - label: A
     content: $\frac{77}{24}$
@@ -180,23 +176,22 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 「60藍」飲料店新進員工調配鮮奶茶,先在杯子裡倒半杯鮮奶,然後倒入紅茶至全滿,充分混和後,喝了 $\frac{1}{3}$ 得茶味太淡,將紅茶倒入杯中至全滿,充分混和後,試問最後整杯飲料中「鮮奶」佔多少?
-    $\frac{1}{6}$
+  stem: ｢60 藍｣飲料店新進員工調配鮮奶茶，先在杯子裡倒半杯鮮奶，然後倒入紅茶至全滿，充分混和後，喝了 $\frac{1}{3}$ 杯後覺得茶味太淡，將紅茶倒入杯中至全滿，充分混和後，試問最後整杯飲料中｢鮮奶｣佔多少？
   options:
+  - label: A
+    content: $\frac{1}{6}$
   - label: B
     content: $\frac{1}{3}$
   - label: C
     content: $\frac{1}{2}$
   - label: D
-    content: $\frac{2}{3}$
-  - label: A
-    content: 。
+    content: $\frac{2}{3}$ 。
 - id: doc_113_台中_五權_數學_g7s1e2_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 「VQ」服飾店,先將成本乘 $\frac{3}{2}$ 當定價,週年慶特惠再依定價打8折,加入會員可再享9折優惠,請問週年慶賣衣服給 會員可賺多少%?
+  stem: ｢VQ｣服飾店，先將成本乘 $\frac{3}{2}$ 當定價，週年慶特惠再依定價打 8 折，加入會員可再享 9 折優惠，請問週年慶賣衣服給會員可賺多少％？
   options:
   - label: A
     content: '15'
@@ -211,57 +206,53 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 計算(102)6 × 103 ÷ 104的值為何?
+  stem: 計算 $(10^{2})^{6} \times 10^{3} \div 10^{4}$ 的值為何？
   options:
   - label: A
-    content: '1013'
+    content: $10^{13}$
   - label: B
-    content: '1012'
+    content: $10^{12}$
   - label: C
-    content: '1011'
+    content: $10^{11}$
   - label: D
-    content: 109。 2 > (− $\frac{3}{4}$ 3 > (− $\frac{3}{4}$
+    content: $10^{9}$ 。
 - id: doc_113_台中_五權_數學_g7s1e2_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 下列各數的大小關係何者正確?
+  stem: 下列各數的大小關係何者正確？
   options:
   - label: A
-    content: (− $\frac{3}{4}$ ) ) 4 > (− $\frac{5}{4}$ 5 > (− $\frac{5}{4}$ 6
-  - label: D
-    content: (− $\frac{3}{4}$ 2 > (− $\frac{3}{4}$
-  - label: C
-    content: (− $\frac{5}{4}$ ) ) ) ) ) 1 − $\frac{1}{3}$
-  - label: D
-    content: 1沒有倒數。 2 $\frac{a}{2}$ $\frac{b}{3}$ $\frac{c}{11}$ 2  36 48 72 2  18
-      24 36 3   9 12 18 2   3  4  6 3  3  2  3 1  2  1松鼠影城 片名 第1場次 片長 ★各場次間隔 皆為10分鐘☆
-      海底奇緣9:00 80分 荒野稻草人9:00 110分 杯後覺6 > (− $\frac{5}{4}$ 5 > (− $\frac{5}{4}$ 4 4
+    content: $(-\frac{3}{4})^{2} > (-\frac{3}{4})^{3} > (-\frac{3}{4})^{4}$
   - label: B
-    content: (− $\frac{5}{4}$ ) ) ) ) 4 > (− $\frac{3}{4}$ 3 。 ) 臺中市立五權國中113學年度第1學期一年級第二次定期評量數學試題
-      的值為何?
-  - label: A
-    content: − $\frac{22025}{3}$ 22025
+    content: $(-\frac{5}{4})^{6} > (-\frac{5}{4})^{5} > (-\frac{5}{4})^{4}$
+  - label: C
+    content: $(-\frac{5}{4})^{4} > (-\frac{5}{4})^{5} > (-\frac{5}{4})^{6}$
+  - label: D
+    content: $(-\frac{3}{4})^{2} > (-\frac{3}{4})^{4} > (-\frac{3}{4})^{3}$ 。
 - id: doc_113_台中_五權_數學_g7s1e2_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 計算22024 −(22024 + 22025) × $\frac{1}{3}$
+  stem: 計算 $2^{2024} - (2^{2024} + 2^{2025}) \times \frac{1}{3}$ 的值為何？
   options:
+  - label: A
+    content: $-\frac{2^{2025}}{3}$
   - label: B
-    content: '3'
+    content: $\frac{2^{2025}}{3}$
   - label: C
     content: '0'
   - label: D
-    content: -2。
+    content: -2 。
 - id: doc_113_台中_五權_數學_g7s1e2_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: a為一個四位數,a的 $\frac{1}{4}$ 可被4整除,a的 $\frac{1}{5}$ 可被5整除,請問符合以上條件的a有幾個?
+  stem: $a$ 為一個四位數，$a$ 的 $\frac{1}{4}$ 可被 4 整除，$a$ 的 $\frac{1}{5}$ 可被 5 整除，請問符合以上條件的
+    $a$ 有幾個？
   options:
   - label: A
     content: '3'
@@ -270,78 +261,91 @@ questions:
   - label: C
     content: '23'
   - label: D
-    content: 24。
+    content: 24 。
 - id: doc_113_台中_五權_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: 五位數4581□ 是3也是5的倍數,那麼 □ 內可以填入_○ 1 _。
+  stem: '計算下列各式，分數運算需化為最簡，答案全對才給分，答案填入p3 答案卷
+
+
+    五位數 4581□ 是 3 也是5 的倍數，那麼 □ 內可以填入_①_。'
 - id: doc_113_台中_五權_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 「202文具店」販售的原子筆每支售價均相等且介於30~40元,若大帥哥購買原子筆的總金額為96元,則每枝 原子筆的售價為_○ 2 _元。
+  stem: 「202 文具店」販售的原子筆每支售價均相等且介於30～40 元，若大帥哥購買原子筆的總金額為96 元，則每枝原子筆的售價為_②_元。
 - id: doc_113_台中_五權_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 計算下列各組的值[24 × 37 × 58,26 × 34 × 79]=_○ 3 _。(標準分解式書寫)
+  stem: 計算下列各組的值［$2^{4} \times 3^{7} \times 5^{8}$，$2^{6} \times 3^{4} \times 7^{9}$］=_③_。（標準分解式書寫）
 - id: doc_113_台中_五權_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 計算 $\frac{93}{2024}$ × ( $\frac{506}{3}$ ) + $\frac{3}{2024}$ ÷ ( $\frac{3}{506}$
-    ) =__○ 4 _。(化至最簡才給分)
+  stem: 計算 $\frac{93}{2024} \times (\frac{506}{3}) + \frac{3}{2024} \div (\frac{3}{506})
+    =$_④_。（化至最簡才給分）
 - id: doc_113_台中_五權_數學_g7s1e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: x= 280,y= 360,z= 540,比較x、y、z   的大小_○ 5 _。(以代號表示)
+  stem: $x = 2^{80}$，$y = 3^{60}$，$z = 5^{40}$，比較 $x$、$y$、$z$ 的大小_⑤_。(以代號表示)
 - id: doc_113_台中_五權_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: '「全權國中」校慶活動: 編號是2的倍數,可得到一顆茶葉蛋 (1)校慶當天舉行抽獎活動,有200位同學參加,將他們編號1~200號, 編號是3的倍數,可得到一個肉包
-    編號是5的倍數,可得到一瓶鮮奶 符合條件可領取獎品:則恰好得到兩項獎品的有_○ 6 _人。 (2)校慶發行紀念衫有S、M、L三種尺碼,已知紀念衫限量發售件數少於300件(1人限購1件),購買S號的
-    $\frac{1}{5}$ ,購買M號的人數佔 $\frac{3}{7}$ ,則購買L號的最多有_○ 7 _人。 人數佔'
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e2/p2_f01.png
+  stem: '「全權國中」校慶活動：
+
+    （1）校慶當天舉行抽獎活動，有200 位同學參加，將他們編號1～200 號，符合條件可領取獎品：則恰好得到兩項獎品的有_⑥_人。
+
+
+    | 條件 |
+
+    | --- |
+
+    | 編號是 2 的倍數，可得到一顆茶葉蛋 |
+
+    | 編號是 3 的倍數，可得到一個肉包 |
+
+    | 編號是 5 的倍數，可得到一瓶鮮奶 |'
+- id: doc_113_台中_五權_數學_g7s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: '「全權國中」校慶活動：
+
+    （2）校慶發行紀念衫有S、M、L 三種尺碼，已知紀念衫限量發售件數少於300 件（1 人限購1 件），購買S 號的人數佔 $\frac{1}{5}$，購買M
+    號的人數佔 $\frac{3}{7}$，則購買L 號的最多有_⑦_人。'
 - id: doc_113_台中_五權_數學_g7s1e2_s3_1
   section: 3
   number: 1
-  type: single
+  type: calc
   page: 2
-  stem: 三家超商推出咖啡優惠方案如右圖,已知各超商每杯咖啡定價相同且購買杯數7-12   買3送1為4的倍數,試問(1)7-12的優惠方案等於定價打幾折?
-    (2)來而福的優惠方案等於定價打幾折? 來而福 第2杯半價 (3)買哪家超商的咖啡最划算?(每小題各2分) 金家   定價打7折
+  stem: '請詳細寫下計算過程，作答寫在p3 答案卷
+
+
+    三家超商推出咖啡優惠方案如右圖，已知各超商每杯咖啡定價相同且購買杯數為4 的倍數，試問
+
+    （1）7-12 的優惠方案等於定價打幾折？
+
+    （2）來而福的優惠方案等於定價打幾折？
+
+    （3）買哪家超商的咖啡最划算？（每小題各2 分）'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_台中_五權_數學_g7s1e2/s3_1_f1.png
 - id: doc_113_台中_五權_數學_g7s1e2_s3_2
   section: 3
   number: 2
-  type: single
+  type: calc
   page: 2
-  stem: 「香噴噴糕餅店」出爐245個鳳梨酥、196個太陽餅,老闆將鳳梨酥和太陽餅分別包裝成「鳳梨酥禮盒」和「太陽餅禮 盒」,每盒裝的糕餅數量相同,最少總共可裝成幾個禮盒?
-    2臺中市立五權國中113學年度第1學期一年級第二次定期評量數學試題 ------------------------------------------------------------------------------------------------------------------------------------------------
-    一年____班_____號  姓名_________
-- id: doc_113_台中_五權_數學_g7s1e2_s5_1
-  section: 5
-  number: 1
-  type: single
-  page: 3
-  stem: ''
-- id: doc_113_台中_五權_數學_g7s1e2_s5_2
-  section: 5
-  number: 2
-  type: single
-  page: 3
-  stem: 答案卷,交回此卷 3
-  assets:
-  - key: p3_f02
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e2/p3_f02.png
+  stem: 「香噴噴糕餅店」出爐245 個鳳梨酥、196 個太陽餅，老闆將鳳梨酥和太陽餅分別包裝成｢鳳梨酥禮盒｣和｢太陽餅禮盒｣，每盒裝的糕餅數量相同，最少總共可裝成幾個禮盒？

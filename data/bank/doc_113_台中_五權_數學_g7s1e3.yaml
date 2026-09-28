@@ -1,89 +1,94 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 3
-  school: 台中市立五權國民中學
-  grade: 7
-  subject: 數學
   city: 台中
   school_short: 五權
+  school: 台中市立五權國民中學
   id: doc_113_台中_五權_數學_g7s1e3
-  title: 台中市立五權國民中學 113學年度第1學期第3次定期評量7年級數學科試題
+  title: 台中市立五權國民中學 113學年度第1學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、單選25題
-    type: single
-    score_rule: 一、 單選25題:每題4分,共100分
+    name: 一、 單選25 題：每題4 分，共100 分
     count: 25
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/1-3/台中/五權.pdf
 questions:
 - id: doc_113_台中_五權_數學_g7s1e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: '下列有幾個是一元一次方程式? 甲: 3x+1=7x-11  乙: 2x+6丙: x2-x+5=0    丁: 4x=0戊: 2x+y=1      己:
-    5y-8=0'
+  stem: '下列有幾個是一元一次方程式？
+
+    甲: $3x+1=7x-11$  乙: $2x+6$
+
+    丙: $x^{2}-x+5=0$    丁: $4x=0$
+
+    戊: $2x+y=1$      己: $5y-8=0$'
   options:
   - label: A
-    content: 0個
+    content: 0 個
   - label: B
-    content: 1個
+    content: 1 個
   - label: C
-    content: 2個
+    content: 2 個
   - label: D
-    content: 3個
+    content: 3 個
 - id: doc_113_台中_五權_數學_g7s1e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: $\frac{5}{2}$ x所代表的意義與下列哪一個式子相同?
+  stem: $\frac{5}{2x}$ 所代表的意義與下列哪一個式子相同？
   options:
   - label: A
-    content: $\frac{5}{22}$ ÷x
+    content: $\frac{5}{2}\div x$
   - label: B
-    content: 5÷2×x
+    content: $5\div 2\times x$
   - label: C
-    content: .5x
+    content: $2\cdot 5x$
   - label: D
-    content: 5÷2÷x
+    content: $5\div 2\div x$
 - id: doc_113_台中_五權_數學_g7s1e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 以下哪一個敘述可以列式為4x+3?
+  stem: 以下哪一個敘述可以列式為 $4x+3$？
   options:
   - label: A
-    content: 宥茗買了4瓶飲料和3塊蛋糕,若飲料一 瓶x元,共需付多少錢?
+    content: 宥茗買了4 瓶飲料和3 塊蛋糕，若飲料一瓶 $x$ 元，共需付多少錢？
   - label: B
-    content: 薰方有4塊巧克力,分給三個人,一人分 到多少塊?
+    content: 薰方有4 塊巧克力，分給三個人，一人分到多少塊？
   - label: C
-    content: 租4部車,最後一部車只坐3人,設每部 坐x人,共多少人?
+    content: 租4 部車，最後一部車只坐3 人，設每部坐 $x$ 人，共多少人？
   - label: D
-    content: 若每人拿走4顆糖果,還剩3顆,假設共 有x人,則原本有多少顆糖果? $\frac{1}{3}$
+    content: 若每人拿走4 顆糖果，還剩3 顆，假設共有 $x$ 人，則原本有多少顆糖果？
 - id: doc_113_台中_五權_數學_g7s1e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 化簡- (9x-6)=?
+  stem: 化簡 $-\frac{1}{3}(9x-6)=$？
   options:
   - label: A
-    content: 9x-6
+    content: $9x-6$
   - label: B
-    content: -3x-6
+    content: $-3x-6$
   - label: C
-    content: -3x+6
+    content: $-3x+6$
   - label: D
-    content: -3x+2
+    content: $-3x+2$
 - id: doc_113_台中_五權_數學_g7s1e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 如果-6x=6x,則x=?
+  stem: 如果 $-6x=6x$，則 $x=$？
   options:
   - label: A
     content: '6'
@@ -92,59 +97,62 @@ questions:
   - label: C
     content: '0'
   - label: D
-    content: 不合理,無解
+    content: 不合理，無解
 - id: doc_113_台中_五權_數學_g7s1e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 靖捷為了減肥,決定每天爬10層樓,若從 一樓到二樓共走了x個階梯,如果每層樓的 階梯數都相同,那麼從一樓到十樓共要走幾 個階梯?
+  stem: 靖捷為了減肥，決定每天爬10 層樓，若從一樓到二樓共走了 $x$ 個階梯，如果每層樓的階梯數都相同，那麼從一樓到十樓共要走幾個階梯？
   options:
   - label: A
-    content: 10x個
+    content: $10x$ 個
   - label: B
-    content: 9x個
+    content: $9x$ 個
   - label: C
-    content: 8x個
+    content: $8x$ 個
   - label: D
-    content: 7x個1/3
+    content: $7x$ 個
 - id: doc_113_台中_五權_數學_g7s1e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 左圖是永峻參加101盃羽毛球 大賽獲得第一名上台領獎,下 面是頒獎台設計師繪畫的側面 平面圖,請求出此頒獎台側面 平面圖的周長為何?
+  stem: 左圖是永峻參加 101 盃羽毛球大賽獲得第一名上台領獎，下面是頒獎台設計師繪畫的側面平面圖，請求出此頒獎台側面平面圖的周長為何?
   options:
   - label: A
-    content: 3x+8
+    content: $3x+8$
   - label: B
-    content: 4x+14
+    content: $4x+14$
   - label: C
-    content: 4x+16
+    content: $4x+16$
   - label: D
-    content: 6x+16
+    content: $6x+16$
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_113_台中_五權_數學_g7s1e3/s1_7_f1.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 下列敘述何者錯誤?
+  stem: 下列敘述何者錯誤？
   options:
   - label: A
-    content: 若a+c=b+c,則a=b
+    content: 若 $a+c=b+c$，則 $a=b$
   - label: B
-    content: 若a-c=b-c,則a=b
+    content: 若 $a-c=b-c$，則 $a=b$
   - label: C
-    content: 若a×c=b×c,則a=b
+    content: 若 $a\times c=b\times c$，則 $a=b$
   - label: D
-    content: 若a÷c=b÷c,則a=b
+    content: 若 $a\div c=b\div c$，則 $a=b$
 - id: doc_113_台中_五權_數學_g7s1e3_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 鉑叡國小時,每個月的零用錢為a元,升 上國中後,媽媽加他零用錢,加國小10%的 零用錢,但鉑叡成績越考越差,媽媽說下個 月要減他10%的零用錢,則下個月鉑叡的零
-    用錢跟國小時相比,比較多還是比較少?
+  stem: 鉑叡國小時，每個月的零用錢為 a 元，升上國中後，媽媽加他零用錢，加國小 10%的零用錢，但鉑叡成績越考越差，媽媽說下個月要減他 10%的零用錢，則下個月鉑叡的零用錢跟國小時相比，比較多還是比較少？
   options:
   - label: A
     content: 比國小領的少
@@ -154,58 +162,51 @@ questions:
     content: 一模一樣
   - label: D
     content: 無法判斷
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p1_f02.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 2025年新年即將來臨,慧甄和 諶熙討論去年各自領了多少壓歲 錢。慧甄的壓歲錢是諶熙的2倍 少500元 ,若去年慧甄領了x元 ,則諶熙去年壓歲錢領了多少錢?
-    $\frac{x+500}{2}$ $\frac{x}{2}$
+  stem: 2025 年新年即將來臨，慧甄和諶熙討論去年各自領了多少壓歲錢。慧甄的壓歲錢是諶熙的 2 倍少 500 元 ，若去年慧甄領了 $x$ 元，則諶熙去年壓歲錢領了多少錢？
   options:
-  - label: B
-    content: ''
   - label: A
-    content: −500 $\frac{x−500}{2}$
-  - label: D
-    content: 2x-500
+    content: $\frac{x+500}{2}$
+  - label: B
+    content: $\frac{x}{2}-500$
   - label: C
-    content: ''
+    content: $\frac{x-500}{2}$
+  - label: D
+    content: $2x-500$
   assets:
-  - key: p1_f03
+  - key: s1_10_f1
     kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p1_f03.png
+    file: doc_113_台中_五權_數學_g7s1e3/s1_10_f1.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 美美百貨公司舉辦促銷, 則下列敘述何者可做為促 銷標語?
+  stem: 美美百貨公司舉辦促銷，則下列敘述何者可做為促銷標語？
   options:
   - label: A
-    content: 原價打兩折再減1元
+    content: 原價打兩折再減1 元
   - label: B
-    content: 原價打四折再減1元
+    content: 原價打四折再減1 元
   - label: C
-    content: 原價減1元打四折
+    content: 原價減1 元打四折
   - label: D
-    content: 原價打二五折再減1元
+    content: 原價打二五折再減1 元
   assets:
-  - key: p1_f04
+  - key: s1_11_f1
     kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p1_f04.png
+    file: doc_113_台中_五權_數學_g7s1e3/s1_11_f1.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 威善上課偷吃餅乾被抓包, 決心要跟同學分享這餅乾有 多麼的好吃,恰巧賣場在特 價,買五包送一包,威善總 共帶回26包餅乾去學校請同學吃。若每包 餅乾售價10元,則威善應付多少元?
+  stem: 威善上課偷吃餅乾被抓包，決心要跟同學分享這餅乾有多麼的好吃，恰巧賣場在特價，買五包送一包，威善總共帶回 26 包餅乾去學校請同學吃。若每包餅乾售價
+    10 元，則威善應付多少元？
   options:
   - label: A
     content: '200'
@@ -215,37 +216,38 @@ questions:
     content: '250'
   - label: D
     content: '260'
+  assets:
+  - key: s1_12_f1
+    kind: figure
+    file: doc_113_台中_五權_數學_g7s1e3/s1_12_f1.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 下圖為瑋宸到超商購買飲料的經過。若每 瓶汽水的原價為x  元,則根據圖中的內容 可以列出下列哪一個方程式?
+  stem: 下圖為瑋宸到超商購買飲料的經過。若每瓶汽水的原價為 $x$ 元，則根據圖中的內容可以列出下列哪一個方程式？
   options:
   - label: A
-    content: 2x×0.8+15=3x×0.7
+    content: $2x\times 0.8+15=3x\times 0.7$
   - label: B
-    content: 2x×0.8-15=3x×0.7
+    content: $2x\times 0.8-15=3x\times 0.7$
   - label: C
-    content: 2x+15=3x×0.7
+    content: $2x+15=3x\times 0.7$
   - label: D
-    content: 2x-15=3x×0.7
+    content: $2x-15=3x\times 0.7$
   assets:
-  - key: p2_f01
+  - key: s1_13_f1
     kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p2_f02.png
+    file: doc_113_台中_五權_數學_g7s1e3/s1_13_f1.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 祐杰放學回家時,不小心踩到一隻狗的尾 巴,被狗追咬後,結果他的作業有一部分 被狗咬掉,請你幫祐杰求a的位置代表何 數?
+  stem: 祐杰放學回家時，不小心踩到一隻狗的尾巴，被狗追咬後，結果他的作業有一部分被狗咬掉，請你幫祐杰求 $a$ 的位置代表何數？
   options:
   - label: A
-    content: '-5'
+    content: －5
   - label: B
     content: '3'
   - label: C
@@ -253,53 +255,50 @@ questions:
   - label: D
     content: '5'
   assets:
-  - key: p2_f03
+  - key: s1_14_f1
     kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p2_f03.png
+    file: doc_113_台中_五權_數學_g7s1e3/s1_14_f1.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 佑翔參加體育班籃球隊選手選拔,若他只 有投出2分球與3分球,且出手16次共命 中6球得13分,則佑翔的3分球共命中 多少球?
+  stem: 佑翔參加體育班籃球隊選手選拔，若他只有投出 2 分球與 3 分球，且出手 16 次共命中 6 球得 13 分，則佑翔的 3 分球共命中多少球？
   options:
   - label: A
-    content: 1球
+    content: 1 球
   - label: B
-    content: 2球
+    content: 2 球
   - label: C
-    content: 3球
+    content: 3 球
   - label: D
-    content: 5球2/3
-  assets:
-  - key: p2_f04
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p2_f04.png
-  - key: p2_f05
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p2_f05.png
+    content: 5 球
 - id: doc_113_台中_五權_數學_g7s1e3_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 左圖為披薩店的公告,若披 薩調漲前的售價為y元,則 會員買披薩的花費,公告前 後相差多少元?
+  stem: 左圖為披薩店的公告，若披薩調漲前的售價為 $y$ 元，則會員買披薩的花費，公告前後相差多少元？
   options:
   - label: A
-    content: 0.045y元
+    content: $0.045y$ 元
   - label: B
-    content: 0.05y元
+    content: $0.05y$ 元
   - label: C
-    content: 0.09y元
+    content: $0.09y$ 元
   - label: D
-    content: 0.145y元。
+    content: $0.145y$ 元。
+  assets:
+  - key: s1_16_f1
+    kind: figure
+    file: doc_113_台中_五權_數學_g7s1e3/s1_16_f1.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 園遊會時,106班學生賣雞米花和炸雞 塊,雞米花每份可賺20元,炸雞塊每份可 賺25元,已知他們賣出的雞米花份數是炸 雞塊的2倍,共賺了   9100元,請問園遊
-    會當天他們賣出的雞米花和炸雞塊總共多 少份數?
+  stem: 園遊會時，106 班學生賣雞米花和炸雞塊，雞米花每份可賺 20 元，炸雞塊每份可賺 25 元，已知他們賣出的雞米花份數是炸雞塊的 2 倍，共賺了   9100
+    元，請問園遊會當天他們賣出的雞米花和炸雞塊總共多少份數？
   options:
   - label: A
     content: '130'
@@ -314,8 +313,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 森地與中人在玩猜數字遊戲,森地請中人 先想好一個幸運數字,但不要告訴他是多少 。森地說:「現在把你的幸運數字乘以5, 再加上8,再把算出來的數乘以4,最後再
-    減掉7,然後再告訴我答案是多少?」, 中人說:「245」,請問此幸運數字是多少?
+  stem: 森地與中人在玩猜數字遊戲，森地請中人先想好一個幸運數字，但不要告訴他是多少。森地說：「現在把你的幸運數字乘以5，再加上8，再把算出來的數乘以 4，最後再減掉7，然後再告訴我答案是多少？」，中人說：「245」，請問此幸運數字是多少？
   options:
   - label: A
     content: '9'
@@ -324,48 +322,44 @@ questions:
   - label: C
     content: '11'
   - label: D
-    content: 12 $\frac{5x−7}{3}$
-  assets:
-  - key: p2_f06
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p2_f06.png
+    content: '12'
 - id: doc_113_台中_五權_數學_g7s1e3_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 已知 與-5互為倒數,則x之值為 何? $\frac{32}{25}$
+  stem: 已知 $\frac{5x-7}{3}$ 與－5 互為倒數，則 $x$ 之值為何？
   options:
+  - label: A
+    content: $\frac{32}{25}$
   - label: B
     content: $\frac{25}{32}$
   - label: C
     content: $\frac{22}{5}$
   - label: D
-    content: − $\frac{38}{25}$
-  - label: A
-    content: $\frac{x−m}{3}$ = $\frac{3x+2}{12}$
+    content: $-\frac{38}{25}$
 - id: doc_113_台中_五權_數學_g7s1e3_s1_20
   section: 1
   number: 20
   type: single
   page: 2
-  stem: 若x=-1為方程式 的解,則m=? $\frac{4}{3}$
+  stem: 若 $x=-1$ 為方程式 $\frac{x-m}{3}=\frac{3x+2}{12}$ 的解，則 $m=$？
   options:
+  - label: A
+    content: $-\frac{4}{3}$
   - label: B
-    content: − $\frac{3}{4}$
+    content: $-\frac{3}{4}$
   - label: C
     content: $\frac{3}{4}$
   - label: D
     content: $\frac{5}{4}$
-  - label: A
-    content: −
 - id: doc_113_台中_五權_數學_g7s1e3_s1_21
   section: 1
   number: 21
   type: single
   page: 2
-  stem: 威竣參加抽獎中了一箱衛生紙,重情義的 他分給同學,他和他的好朋友們每個人都 平均分到,若每個人分15包,則會剩下11包;若每個人分17包,則會不足3包,請
-    問他分給了幾個好朋友?
+  stem: 威竣參加抽獎中了一箱衛生紙，重情義的他分給同學，他和他的好朋友們每個人都平均分到，若每個人分15 包，則會剩下11 包；若每個人分17 包，則會不足3
+    包，請問他分給了幾個好朋友？
   options:
   - label: A
     content: '5'
@@ -380,12 +374,12 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: 若方程式x-m=2與m-6 =3x有相同 的解,則m=?
+  stem: 若方程式 $x-m=2$ 與 $m-6=3x$ 有相同的解，則 $m=$？
   options:
   - label: A
-    content: '-6'
+    content: －6
   - label: B
-    content: '-3'
+    content: －3
   - label: C
     content: '0'
   - label: D
@@ -395,7 +389,7 @@ questions:
   number: 23
   type: single
   page: 3
-  stem: 右圖為某年12月份的 月曆,其中塗色區域所 圍的4天日期和為80, 則該年聖誕節是星期 幾?
+  stem: 右圖為某年12 月份的月曆，其中塗色區域所圍的4 天日期和為80，則該年聖誕節是星期幾？
   options:
   - label: A
     content: 星期四
@@ -406,15 +400,15 @@ questions:
   - label: D
     content: 星期日
   assets:
-  - key: p3_f01
+  - key: s1_23_f1
     kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p3_f01.png
+    file: doc_113_台中_五權_數學_g7s1e3/s1_23_f1.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_24
   section: 1
   number: 24
   type: single
   page: 3
-  stem: 如下圖,相同動物的重量皆相同且三座天 秤均保持平衡,求柏安的體重為多少公 斤?
+  stem: 如下圖，相同動物的重量皆相同且三座天秤均保持平衡，求柏安的體重為多少公斤？
   options:
   - label: A
     content: '40'
@@ -425,31 +419,23 @@ questions:
   - label: D
     content: 80  公斤
   assets:
-  - key: p3_f02
+  - key: s1_24_f1
     kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p3_f02.png
-  - key: p3_f03
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p3_f03.png
-  - key: p3_f04
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p3_f04.png
+    file: doc_113_台中_五權_數學_g7s1e3/s1_24_f1.png
 - id: doc_113_台中_五權_數學_g7s1e3_s1_25
   section: 1
   number: 25
   type: single
   page: 3
-  stem: 解一元一次方程式0.01x−0.45 −0.02x+0.11 0.05 -0.5= 0.3 ,得x=? $\frac{1781}{8}$
+  stem: '解一元一次方程式
+
+    $\frac{0.01x-0.45}{0.05}-0.5=\frac{-0.02x+0.11}{0.3}$，得 $x=$？'
   options:
   - label: A
     content: '0'
   - label: B
-    content: ''
+    content: $\frac{1781}{8}$
   - label: C
     content: '37'
   - label: D
-    content: 74 3/3
-  assets:
-  - key: p3_f05
-    kind: figure
-    file: doc_113_台中_五權_數學_g7s1e3/p3_f05.png
+    content: '74'
