@@ -1,0 +1,523 @@
+<title>題庫審題台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script>window.katex || document.write('<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"><\/script>')</script>
+<style>
+/* 版面：左側是段考與考卷的目錄，右側照考卷原本的順序逐題排出；紅筆色只留給「回報」 */
+:root{
+  --paper:#fbfaf6; --panel:#f1efe8; --card:#ffffff; --ink:#1d2433; --muted:#626b7c;
+  --rule:#dcd8cc; --pen:#c0392b; --pen-soft:#fbe9e6; --ok:#2f7d4f; --ok-soft:#e5f2ea;
+  --warn:#9a6a00; --warn-soft:#fbf1d8; --focus:#2d5bd7;
+  --f-body:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+  --f-paper:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --f-code:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#15181e; --panel:#1c2028; --card:#20252e; --ink:#e6e8ee; --muted:#9aa3b2;
+  --rule:#343a46; --pen:#ef6b5b; --pen-soft:#3a2124; --ok:#6cc08e; --ok-soft:#1e3327;
+  --warn:#e2b44f; --warn-soft:#3a3120; --focus:#7aa2ff; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#15181e; --panel:#1c2028; --card:#20252e; --ink:#e6e8ee; --muted:#9aa3b2;
+  --rule:#343a46; --pen:#ef6b5b; --pen-soft:#3a2124; --ok:#6cc08e; --ok-soft:#1e3327;
+  --warn:#e2b44f; --warn-soft:#3a3120; --focus:#7aa2ff; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font:14px/1.6 var(--f-body)}
+button,select,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.wrap{display:grid;grid-template-columns:300px minmax(0,1fr);min-height:100vh}
+aside{background:var(--panel);border-right:1px solid var(--rule);padding-block:16px;padding-inline:16px;
+  position:sticky;top:env(safe-area-inset-top,0px);height:100vh;overflow:auto;display:flex;flex-direction:column;gap:14px}
+main{padding-block:20px 80px;padding-inline:24px;min-width:0}
+h1{font:700 18px/1.3 var(--f-body);margin:0;letter-spacing:.02em}
+.sub{color:var(--muted);font-size:12.5px}
+.field{display:flex;flex-direction:column;gap:4px}
+.field label{font-size:12px;color:var(--muted);letter-spacing:.06em}
+select,input[type=text],textarea{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:6px 8px;width:100%}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.btn{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:5px 10px;cursor:pointer}
+.btn{white-space:nowrap}
+.btn:hover{border-color:var(--muted)}
+.btn.pen{background:var(--pen);border-color:var(--pen);color:#fff}
+.btn.ghost{background:transparent}
+.papers{display:flex;flex-direction:column;gap:2px}
+.paper-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;text-align:left;background:transparent;border:1px solid transparent;
+  border-radius:var(--r);padding:6px 8px;cursor:pointer}
+.paper-item:hover{background:var(--card)}
+.paper-item[aria-current="true"]{background:var(--card);border-color:var(--rule)}
+.paper-item .n{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12.5px}
+.chip{display:inline-block;font-size:11.5px;line-height:1.5;padding:0 6px;border-radius:99px;border:1px solid var(--rule);color:var(--muted);white-space:nowrap}
+.chip.pen{color:var(--pen);border-color:var(--pen);background:var(--pen-soft)}
+.chip.ok{color:var(--ok);border-color:var(--ok);background:var(--ok-soft)}
+.chip.warn{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-variant-numeric:tabular-nums}
+.stat{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:6px 8px}
+.stat b{display:block;font-size:16px}
+.stat span{font-size:11.5px;color:var(--muted)}
+
+.paper-head{display:flex;flex-direction:column;gap:6px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:8px}
+.paper-head h2{font:600 20px/1.35 var(--f-paper);margin:0;text-wrap:balance}
+.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding-block:10px;position:sticky;top:env(safe-area-inset-top,0px);
+  background:var(--paper);z-index:2;border-bottom:1px solid var(--rule)}
+.toolbar label{display:flex;gap:6px;align-items:center;font-size:13px;cursor:pointer}
+.section-title{font:600 15px/1.4 var(--f-paper);margin:26px 0 6px;padding-top:6px;border-top:1px dashed var(--rule)}
+.passage{background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--muted);border-radius:var(--r);
+  padding:12px 14px;margin:14px 0 6px;font:15px/1.9 var(--f-paper)}
+.passage .lbl{font:12px var(--f-body);color:var(--muted);letter-spacing:.06em;display:block;margin-bottom:4px}
+.q{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 10px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.q.rejected .body{opacity:.62}
+.q.reported{background:linear-gradient(90deg,var(--pen-soft),transparent 60%)}
+.q.flash{animation:flash 1.6s ease-out}
+@keyframes flash{from{box-shadow:inset 0 0 0 2px var(--focus)}to{box-shadow:inset 0 0 0 2px transparent}}
+@media (prefers-reduced-motion:reduce){.q.flash{animation:none;box-shadow:inset 0 0 0 2px var(--focus)}}
+.num{font:600 17px/1.5 var(--f-paper);text-align:right;font-variant-numeric:tabular-nums}
+.body{min-width:0;display:flex;flex-direction:column;gap:8px}
+.meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.code{font:500 12.5px var(--f-code);letter-spacing:.08em;background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:0 6px;cursor:pointer}
+.code:hover{border-color:var(--ink)}
+.stem{font:16px/1.9 var(--f-paper);overflow-wrap:anywhere}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:4px 18px;font:15.5px/1.8 var(--f-paper)}
+.opt{display:flex;gap:6px;min-width:0}
+.opt .l{font-weight:600;flex:none}
+.opt.correct .l{color:var(--ok)}
+.figs{display:flex;gap:10px;flex-wrap:wrap}
+.figs img,.opt img,.passage img{max-width:100%;height:auto;background:#fff;border:1px solid var(--rule);border-radius:4px}
+.figs img{max-height:320px}
+.opt img{max-height:120px}
+.missing{font-size:12.5px;color:var(--warn);border:1px dashed var(--warn);border-radius:4px;padding:4px 8px}
+.foot{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--muted)}
+.why{font-size:12.5px;color:var(--pen)}
+.tbl{overflow-x:auto}
+.tbl table{border-collapse:collapse;font-size:14.5px}
+.tbl td,.tbl th{border:1px solid var(--rule);padding:3px 8px;vertical-align:top}
+.math-raw{font-family:var(--f-code);color:var(--warn)}
+math{font-size:1.08em}
+.katex-error{color:var(--pen)!important}
+
+.report{border:1px solid var(--pen);border-radius:var(--r);background:var(--pen-soft);padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+.report .cats{display:flex;gap:6px;flex-wrap:wrap}
+.report .cats label{display:flex;gap:4px;align-items:center;border:1px solid var(--rule);background:var(--card);border-radius:99px;padding:1px 10px;cursor:pointer;font-size:13px}
+.report .cats input:checked + span{color:var(--pen);font-weight:700}
+.report textarea{min-height:56px;resize:vertical}
+.report-note{font-size:13px;color:var(--pen)}
+.empty{color:var(--muted);padding:48px 0;text-align:center}
+.drawer{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.drawer ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.drawer a{color:var(--pen);cursor:pointer;text-decoration:underline}
+.banner{font-size:12.5px;border-radius:var(--r);padding:6px 10px;background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn)}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+@media (max-width:820px){
+  .wrap{grid-template-columns:minmax(0,1fr)}
+  aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--rule)}
+  main{padding-inline:16px}
+  .q{grid-template-columns:30px minmax(0,1fr)}
+}
+</style>
+
+<div class="wrap">
+  <aside>
+    <div>
+      <h1>題庫審題台</h1>
+      <div class="sub" id="builtInfo">載入題庫中…</div>
+    </div>
+    <div class="field">
+      <label for="jump">以審題編號找題</label>
+      <div class="row" style="flex-wrap:nowrap">
+        <input type="text" id="jump" placeholder="例如 7K2M9X" maxlength="10" autocomplete="off" style="font-family:var(--f-code);letter-spacing:.08em;text-transform:uppercase">
+        <button class="btn" id="jumpBtn">前往</button>
+      </div>
+      <div class="sub" id="jumpMsg" aria-live="polite"></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label for="fGrade">年級</label><select id="fGrade"></select></div>
+      <div class="field"><label for="fSubject">科目</label><select id="fSubject"></select></div>
+      <div class="field"><label for="fYear">學年度</label><select id="fYear"></select></div>
+      <div class="field"><label for="fExam">段考</label><select id="fExam"></select></div>
+    </div>
+    <div class="field">
+      <label>考卷</label>
+      <div class="papers" id="paperList"><div class="sub">選擇上方條件後列出考卷</div></div>
+    </div>
+    <div class="stats" id="reportStats"></div>
+  </aside>
+
+  <main>
+    <div id="dbBanner" class="banner" hidden></div>
+    <div class="drawer" id="drawer" hidden>
+      <div class="row" style="justify-content:space-between">
+        <b>已回報的題目</b>
+        <div class="row"><button class="btn" id="copyAll">複製全部編號與說明</button><button class="btn ghost" id="closeDrawer">收起</button></div>
+      </div>
+      <ol id="drawerList"></ol>
+    </div>
+    <div id="view"><div class="empty">從左側選一份考卷開始審題。<br>每一題右上角的六碼是審題編號，回報問題時用它指認題目。</div></div>
+  </main>
+</div>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const EXAM_NAME = {"1-1":"上學期第1次","1-2":"上學期第2次","1-3":"上學期第3次","2-1":"下學期第1次","2-2":"下學期第2次","2-3":"下學期第3次"};
+const GRADE_NAME = {7:"七年級",8:"八年級",9:"九年級"};
+const TYPE_NAME = {single:"單選",multiple:"多選",tf:"是非",fill:"填充",calc:"計算",essay:"問答",matching:"配合"};
+const CATS = ["公式錯誤","錯字或漏字","圖片錯誤或缺圖","選項錯誤","題組或短文錯誤","答案錯誤","題型或大題錯誤","出處錯誤","其他"];
+
+let INDEX = null;
+const groupCache = new Map();
+let current = null;          // {gi, doc}
+let db = null;
+let reports = new Map();     // code -> report
+let reviewed = new Map();    // docKey -> {at}
+let hideRejected = false, onlyReported = false, onlyOcr = false;
+
+/* ── 文字渲染：Markdown（表格、粗體、換行）＋行內 $…$ 公式 ───────────── */
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function isMath(t){
+  if (/[\\^_{}]/.test(t)) return true;                 // 有 LaTeX 指令或上下標
+  if (/[A-Za-z]{2,}\s+[A-Za-z]{2,}/.test(t)) return false; // 英文句子：$ 是錢的符號
+  if (/[一-鿿]{2,}/.test(t) && !/[=+\-×÷<>]/.test(t)) return false;
+  return t.trim().length > 0;
+}
+function mathHTML(tex){
+  if (window.katex) {
+    try { return katex.renderToString(tex, {output:"mathml", throwOnError:false, strict:"ignore", trust:false}); }
+    catch(e){ /* fall through */ }
+  }
+  return '<span class="math-raw">$' + esc(tex) + '$</span>';
+}
+function inline(s){
+  const parts = String(s ?? "").split(/\$([^$]*)\$/);
+  let out = "";
+  for (let i = 0; i < parts.length; i++) {
+    if (i % 2 && isMath(parts[i])) { out += mathHTML(parts[i]); continue; }
+    const txt = i % 2 ? "$" + parts[i] + "$" : parts[i];
+    out += esc(txt).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+  }
+  return out;
+}
+function rich(s){
+  const lines = String(s ?? "").split("\n");
+  const out = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (/^\s*\|/.test(lines[i])) {
+      const rows = [];
+      while (i < lines.length && /^\s*\|/.test(lines[i])) rows.push(lines[i++]);
+      i--;
+      const body = rows.filter(r => !/^\s*\|?\s*:?-{2,}/.test(r.replace(/\|/g,"").trim() ? r : "|---|"))
+        .filter(r => !/^\s*\|(\s*:?-+:?\s*\|)+\s*$/.test(r))
+        .map(r => "<tr>" + r.trim().replace(/^\||\|$/g,"").split("|").map(c => "<td>" + inline(c.trim()) + "</td>").join("") + "</tr>");
+      out.push('<div class="tbl"><table>' + body.join("") + "</table></div>");
+    } else {
+      out.push(inline(lines[i]));
+    }
+  }
+  return out.join("<br>").replace(/(<br>)?(<div class="tbl">)/g,"$2").replace(/(<\/table><\/div>)<br>/g,"$1");
+}
+
+/* ── 資料載入 ───────────────────────────────────────────── */
+async function loadIndex(){
+  const r = await fetch("data/index.json");
+  INDEX = await r.json();
+  const nPapers = INDEX.groups.reduce((a,g)=>a+g.papers.length,0);
+  const nQ = INDEX.groups.reduce((a,g)=>a+g.papers.reduce((b,p)=>b+p.n,0),0);
+  $("#builtInfo").textContent = `${INDEX.groups.length} 場段考・${nPapers} 份卷・${nQ.toLocaleString()} 題`;
+  buildFilters();
+}
+async function loadGroup(gi){
+  if (groupCache.has(gi)) return groupCache.get(gi);
+  const r = await fetch("data/" + INDEX.groups[gi].f);
+  const g = await r.json();
+  groupCache.set(gi, g);
+  return g;
+}
+const subjName = g => g.sub ? g.sub : g.subject;
+
+/* ── 篩選 ──────────────────────────────────────────────── */
+function opts(sel, values, label){
+  const cur = sel.value;
+  sel.innerHTML = values.map(v => `<option value="${esc(v)}">${esc(label(v))}</option>`).join("");
+  if (values.map(String).includes(cur)) sel.value = cur;
+}
+function buildFilters(){
+  const G = INDEX.groups;
+  opts($("#fGrade"), [...new Set(G.map(g=>g.grade))].sort(), v => GRADE_NAME[v] || v);
+  const refresh = () => {
+    const gr = +$("#fGrade").value;
+    const inGrade = G.filter(g => g.grade === gr);
+    const order = ["國文","英語","數學","自然","社會","歷史","地理","公民"];
+    opts($("#fSubject"), [...new Set(inGrade.map(subjName))].sort((a,b)=>order.indexOf(a)-order.indexOf(b)), v=>v);
+    const sj = $("#fSubject").value;
+    const inSubj = inGrade.filter(g => subjName(g) === sj);
+    opts($("#fYear"), [...new Set(inSubj.map(g=>g.year))].sort(), v => v + " 學年度");
+    const yr = +$("#fYear").value;
+    const inYear = inSubj.filter(g => g.year === yr);
+    opts($("#fExam"), [...new Set(inYear.map(g=>`${g.sem}-${g.exam}`))].sort(), v => EXAM_NAME[v] || v);
+    listPapers();
+  };
+  ["#fGrade","#fSubject","#fYear","#fExam"].forEach(s => $(s).addEventListener("change", refresh));
+  refresh();
+}
+function selectedGroup(){
+  const [sem, exam] = ($("#fExam").value || "0-0").split("-").map(Number);
+  return INDEX.groups.findIndex(g => g.grade === +$("#fGrade").value && subjName(g) === $("#fSubject").value
+    && g.year === +$("#fYear").value && g.sem === sem && g.exam === exam);
+}
+function listPapers(){
+  const gi = selectedGroup();
+  const box = $("#paperList");
+  if (gi < 0) { box.innerHTML = '<div class="sub">沒有符合的考卷</div>'; return; }
+  box.innerHTML = INDEX.groups[gi].papers.map((p, i) => {
+    const nRep = countReports(p.doc);
+    const done = reviewed.has(docKey(p.doc));
+    return `<button class="paper-item" data-gi="${gi}" data-doc="${esc(p.doc)}" aria-current="${current && current.doc===p.doc}">
+      <span>${esc(p.city)} ${esc(p.short)} ${p.ocr?'<span class="chip warn">掃描</span>':''}${p.ext==='rule'?'<span class="chip">舊版</span>':''}${done?'<span class="chip ok">已審</span>':''}${nRep?`<span class="chip pen">${nRep} 題回報</span>`:''}</span>
+      <span class="n">${p.ok}/${p.n}</span></button>`;
+  }).join("");
+  box.querySelectorAll(".paper-item").forEach(b => b.addEventListener("click", () => openPaper(+b.dataset.gi, b.dataset.doc)));
+}
+
+/* ── 單份考卷 ─────────────────────────────────────────── */
+async function openPaper(gi, doc, focusCode){
+  $("#view").innerHTML = '<div class="empty">載入中…</div>';
+  const g = await loadGroup(gi);
+  const P = g.papers.find(p => p.doc === doc);
+  current = {gi, doc, paper: P, group: INDEX.groups[gi]};
+  listPapers();
+  renderPaper();
+  if (focusCode) focusQuestion(focusCode);
+  else if (matchMedia("(max-width: 820px)").matches) $("#view").scrollIntoView({block:"start"});
+  else window.scrollTo({top:0});
+}
+function renderPaper(){
+  if (!current) return;
+  const {paper: P, group: G} = current;
+  const nOk = P.q.filter(q=>q.ok).length;
+  const done = reviewed.get(docKey(P.doc));
+  let h = `<div class="paper-head">
+    <div class="sub">${esc(GRADE_NAME[G.grade])}・${esc(subjName(G))}・${G.year} 學年度${esc(EXAM_NAME[G.sem+"-"+G.exam])}段考</div>
+    <h2>${esc(P.title || P.school)}</h2>
+    <div class="row">
+      <span class="chip">${P.q.length} 題・收錄 ${nOk}</span>
+      ${P.ext==='vlm'?'<span class="chip ok">視覺模型擷取</span>':'<span class="chip warn">舊版規則式擷取</span>'}
+      ${P.q.some(q=>q.ocr)?'<span class="chip warn">掃描件：無文字層可驗證</span>':''}
+      ${P.scope?`<span class="sub">命題範圍：${esc(P.scope)}</span>`:''}
+    </div>
+  </div>
+  <div class="toolbar">
+    <label><input type="checkbox" id="tHide" ${hideRejected?"checked":""}> 隱藏被剔除的題目</label>
+    <label><input type="checkbox" id="tRep" ${onlyReported?"checked":""}> 只看已回報</label>
+    <button class="btn ${done?'':'pen'}" id="markDone" ${db?'':'disabled'}>${done?'取消「已審完」':'標記這份卷已審完'}</button>
+  </div>`;
+
+  const secName = Object.fromEntries((P.sections||[]).map(s=>[s.o, s.name]));
+  let lastSec = null, lastG = null;
+  for (const q of P.q) {
+    if (hideRejected && !q.ok) continue;
+    if (onlyReported && !reports.has(q.c)) continue;
+    if (q.s !== lastSec) { h += `<div class="section-title">${esc(secName[q.s] || ("第 " + q.s + " 大題"))}</div>`; lastSec = q.s; lastG = null; }
+    if (q.g && q.g !== lastG && (q.sa || P.passages[q.g].trim() !== (secName[q.s] || "").trim())) {
+      const figs = q.sa ? figHTML([q.sa], P) : "";
+      h += `<div class="passage"><span class="lbl">題組說明／共用短文</span>${rich(P.passages[q.g])}${figs?'<div class="figs" style="margin-top:8px">'+figs+'</div>':''}</div>`;
+    }
+    lastG = q.g || null;
+    h += questionHTML(q, P);
+  }
+  $("#view").innerHTML = h;
+  $("#tHide").addEventListener("change", e => { hideRejected = e.target.checked; renderPaper(); });
+  $("#tRep").addEventListener("change", e => { onlyReported = e.target.checked; renderPaper(); });
+  $("#markDone").addEventListener("click", toggleDone);
+  bindQuestionEvents();
+}
+function figHTML(ids, P){
+  return ids.map(id => P.images[id] ? `<img src="${P.images[id]}" alt="附圖" loading="lazy">` : '<span class="missing">圖檔遺失</span>').join("");
+}
+function questionHTML(q, P){
+  const r = reports.get(q.c);
+  const ans = (q.ans || []).map(String);
+  const optHTML = (q.opts||[]).length ? `<div class="opts">${q.opts.map(o => `<div class="opt ${ans.includes(o.l)?'correct':''}"><span class="l">(${esc(o.l)})</span><span>${rich(o.c)}${o.img? (P.images[o.img]?`<br><img src="${P.images[o.img]}" alt="選項${esc(o.l)}的圖" loading="lazy">`:'<span class="missing">選項圖遺失</span>'):''}</span></div>`).join("")}</div>` : "";
+  return `<div class="q ${q.ok?'':'rejected'} ${r?'reported':''}" id="q-${q.c}" data-code="${q.c}">
+    <div class="num">${esc(q.n)}.</div>
+    <div class="body">
+      <div class="meta">
+        <button class="code" data-copy="${q.c}" title="複製審題編號">${q.c}</button>
+        <span class="chip">${esc(TYPE_NAME[q.t] || q.t)}</span>
+        ${q.ok?'':'<span class="chip pen">已被品管剔除</span>'}
+        ${q.ocr?'<span class="chip warn">掃描辨識</span>':''}
+        ${r?`<span class="chip pen">已回報：${esc((r.cats||[]).join("、") || "其他")}</span>`:''}
+      </div>
+      ${q.stem?`<div class="stem">${rich(q.stem)}</div>`:''}
+      ${q.imgs && q.imgs.length ? `<div class="figs">${figHTML(q.imgs, P)}</div>` : ""}
+      ${optHTML}
+      ${q.ok ? "" : `<div class="why">剔除原因：${esc((q.why||[]).join("；"))}</div>`}
+      <div class="foot">
+        ${q.ans?`<span>答案：<b>${inline(ans.join("、"))}</b>${q.as==='verified'?'':` <span class="chip">${esc(q.as)}</span>`}</span>`:'<span>答案：無</span>'}
+        ${q.tag?`<span>章節：${esc(q.tag)}</span>`:''}
+        <button class="btn ${r?'':'pen'}" data-report="${q.c}">${r?'修改回報':'回報問題'}</button>
+      </div>
+      ${r && r.note ? `<div class="report-note">回報說明：${esc(r.note)}</div>` : ""}
+      <div class="report-slot"></div>
+    </div>
+  </div>`;
+}
+function bindQuestionEvents(){
+  document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => copyText(b.dataset.copy, b)));
+  document.querySelectorAll("[data-report]").forEach(b => b.addEventListener("click", () => openReport(b.dataset.report)));
+}
+function focusQuestion(code){
+  const el = document.getElementById("q-" + code);
+  if (!el) return;
+  el.scrollIntoView({block:"center"});
+  el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+}
+
+/* ── 回報 ──────────────────────────────────────────────── */
+function findQ(code){ return current && current.paper.q.find(q => q.c === code); }
+function openReport(code){
+  const q = findQ(code); if (!q) return;
+  const slot = document.querySelector(`#q-${code} .report-slot`);
+  if (slot.innerHTML) { slot.innerHTML = ""; return; }
+  const r = reports.get(code) || {};
+  const sel = new Set(r.cats || []);
+  slot.innerHTML = `<form class="report" id="rf-${code}">
+    <div class="cats">${CATS.map((c,i)=>`<label><input type="checkbox" class="visually-hidden" id="rc-${code}-${i}" value="${esc(c)}" ${sel.has(c)?"checked":""}><span>${esc(c)}</span></label>`).join("")}</div>
+    <label class="visually-hidden" for="rn-${code}">說明</label>
+    <textarea id="rn-${code}" placeholder="哪裡有問題？例如「(C) 選項的分數應為 3/4」">${esc(r.note || "")}</textarea>
+    <div class="row">
+      <button class="btn pen" type="submit">${db ? "儲存回報" : "複製回報內容"}</button>
+      <button class="btn ghost" type="button" data-cancel>取消</button>
+      ${reports.has(code) && db ? '<button class="btn ghost" type="button" data-withdraw>撤回回報</button>' : ""}
+      <span class="sub" data-status aria-live="polite"></span>
+    </div>
+  </form>`;
+  const form = slot.querySelector("form");
+  form.querySelector("[data-cancel]").addEventListener("click", () => slot.innerHTML = "");
+  const wd = form.querySelector("[data-withdraw]");
+  if (wd) wd.addEventListener("click", async () => {
+    try { await db.collection("reports").doc(code).delete(); slot.innerHTML = ""; }
+    catch(e){ form.querySelector("[data-status]").textContent = "撤回失敗：" + (e.code || e.message); }
+  });
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const cats = [...form.querySelectorAll("input:checked")].map(x => x.value);
+    const note = form.querySelector("textarea").value.trim();
+    const status = form.querySelector("[data-status]");
+    if (!cats.length && !note) { status.textContent = "請至少勾一個問題類型或寫一句說明"; return; }
+    const G = current.group, P = current.paper;
+    const body = {code, qid: q.id, doc: P.doc, school: P.school, grade: G.grade, subject: subjName(G),
+      exam: `${G.year}-${G.sem}-${G.exam}`, number: q.n, section: q.s, cats, note,
+      at: new Date().toISOString()};
+    if (!db) {
+      const text = `${code}｜${P.school} ${G.year}學年度${EXAM_NAME[G.sem+"-"+G.exam]} 第${q.n}題｜${cats.join("、")}｜${note}`;
+      copyText(text, form.querySelector("[type=submit]"));
+      status.textContent = "已複製，請貼給 Claude";
+      return;
+    }
+    status.textContent = "儲存中…";
+    try { await db.collection("reports").doc(code).set(body); slot.innerHTML = ""; }
+    catch(e){
+      status.textContent = e.code === "invalid_argument" ? "你在這份網頁的權限只能檢視，無法儲存回報" :
+        e.code === "quota_exceeded" ? "回報數量已達上限（5,000 筆），請先整理舊的回報" : "儲存失敗，請再試一次";
+    }
+  });
+  form.querySelector("textarea").focus();
+}
+function countReports(doc){ let n = 0; for (const r of reports.values()) if (r.doc === doc) n++; return n; }
+function docKey(doc){ let h = 0; for (const ch of doc) h = (h * 31 + ch.codePointAt(0)) >>> 0; return "d" + h.toString(36); }
+async function toggleDone(){
+  if (!db || !current) return;
+  const k = docKey(current.paper.doc);
+  try {
+    if (reviewed.has(k)) await db.collection("reviewed").doc(k).delete();
+    else await db.collection("reviewed").doc(k).set({doc: current.paper.doc, at: new Date().toISOString()});
+  } catch(e){ /* 權限不足時按鈕沒有作用，由 banner 說明 */ }
+}
+function renderReportStats(){
+  const n = reports.size;
+  $("#reportStats").innerHTML = `
+    <div class="stat"><b>${n}</b><span>已回報題目</span></div>
+    <div class="stat"><b>${reviewed.size}</b><span>已審完的卷</span></div>
+    <button class="btn" id="openDrawer" ${n?"":"disabled"}>回報清單</button>`;
+  const b = $("#openDrawer"); if (b) b.addEventListener("click", openDrawer);
+}
+function openDrawer(){
+  const list = [...reports.values()].sort((a,b)=>String(b.at).localeCompare(String(a.at)));
+  $("#drawerList").innerHTML = list.map(r => `<li><a data-go="${esc(r.code)}">${esc(r.code)}</a>　${esc(r.school)} ${esc(r.exam)} 第${esc(r.number)}題・${esc((r.cats||[]).join("、"))}${r.note?"・"+esc(r.note):""}</li>`).join("");
+  $("#drawerList").querySelectorAll("[data-go]").forEach(a => a.addEventListener("click", () => jumpTo(a.dataset.go)));
+  $("#drawer").hidden = false;
+}
+$("#closeDrawer").addEventListener("click", () => $("#drawer").hidden = true);
+$("#copyAll").addEventListener("click", e => {
+  const text = [...reports.values()].map(r => `${r.code}｜${r.school} ${r.exam} 第${r.number}題｜${(r.cats||[]).join("、")}｜${r.note||""}`).join("\n");
+  copyText(text, e.target);
+});
+
+/* ── 編號跳轉 ───────────────────────────────────────────── */
+async function jumpTo(code){
+  code = String(code || "").trim().toUpperCase();
+  const gi = INDEX && INDEX.codes[code];
+  if (gi === undefined) { $("#jumpMsg").textContent = `找不到編號 ${code}`; return; }
+  $("#jumpMsg").textContent = "";
+  const g = await loadGroup(gi);
+  const P = g.papers.find(p => p.q.some(q => q.c === code));
+  const G = INDEX.groups[gi];
+  $("#fGrade").value = G.grade; $("#fGrade").dispatchEvent(new Event("change"));
+  $("#fSubject").value = subjName(G); $("#fSubject").dispatchEvent(new Event("change"));
+  $("#fYear").value = G.year; $("#fYear").dispatchEvent(new Event("change"));
+  $("#fExam").value = `${G.sem}-${G.exam}`; $("#fExam").dispatchEvent(new Event("change"));
+  hideRejected = false; onlyReported = false;
+  await openPaper(gi, P.doc, code);
+}
+$("#jumpBtn").addEventListener("click", () => jumpTo($("#jump").value));
+$("#jump").addEventListener("keydown", e => { if (e.key === "Enter") jumpTo($("#jump").value); });
+
+async function copyText(text, btn){
+  try { await navigator.clipboard.writeText(text); flashBtn(btn, "已複製"); }
+  catch(e){
+    const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+    flashBtn(btn, "請按 Ctrl+C"); setTimeout(()=>ta.remove(), 4000);
+  }
+}
+function flashBtn(btn, msg){ if (!btn) return; const t = btn.textContent; btn.textContent = msg; setTimeout(()=>btn.textContent = t, 1400); }
+
+/* ── 回報資料庫 ─────────────────────────────────────────── */
+function rerenderKeepingScroll(){
+  const y = window.scrollY;
+  const open = [...document.querySelectorAll(".report-slot form")].map(f => f.id);
+  if (open.length) { listPapers(); renderReportStats(); return; }  // 表單開著時不重繪題目，避免打到一半被清掉
+  listPapers(); renderReportStats(); renderPaper(); window.scrollTo({top:y});
+}
+async function initDb(){
+  const use = window.claude && window.claude.use ? window.claude.use.bind(window.claude) : null;
+  db = use ? await use("db") : null;
+  if (!db) {
+    const bn = $("#dbBanner");
+    bn.hidden = false;
+    bn.textContent = "這個檢視無法存取回報資料庫：回報會改成複製文字，請貼給 Claude。";
+    renderReportStats();
+    return;
+  }
+  db.collection("reports").onSnapshot(s => {
+    reports = new Map(s.docs.map(d => [d.id, d.data()]));
+    rerenderKeepingScroll();
+  }, () => {});
+  db.collection("reviewed").onSnapshot(s => {
+    reviewed = new Map(s.docs.map(d => [d.id, d.data()]));
+    rerenderKeepingScroll();
+  }, () => {});
+}
+
+(async () => {
+  renderReportStats();
+  try { await loadIndex(); }
+  catch(e){ $("#builtInfo").textContent = "題庫資料載入失敗，請重新整理頁面"; return; }
+  initDb();
+  const h = location.hash.replace("#","");
+  if (h && INDEX.codes[h.toUpperCase()] !== undefined) jumpTo(h);
+})();
+</script>
