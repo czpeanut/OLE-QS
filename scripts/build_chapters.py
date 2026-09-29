@@ -106,6 +106,8 @@ def main() -> int:
         known = {match_key(r[0], m["subject"]) for r in catalog.get((m["subject"], vol), [])}
         dirty = False
         for q in d.get("questions") or []:
+            if ((q.get("tags") or {}).get("chapter") or {}).get("code"):
+                continue                  # 已依教科書章節表歸類（classify_chapters.py）
             t = norm_title((q.get("lesson_raw") or {}).get("title"))
             k = match_key(t, m["subject"]) if t else None
             if t and k in known:

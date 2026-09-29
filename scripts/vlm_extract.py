@@ -177,6 +177,8 @@ PRICES = {
     "gemini-3.6-flash": (0.75, 3.75),
     "gemini-3.8-flash": (0.75, 3.75),
     "gemini-3-flash-preview": (0.50, 3.00),
+    "gemini-3.1-flash-lite": (0.25, 1.50),
+    "gemini-3.5-flash-lite": (0.50, 3.00),     # 查不到公開價，先以高估計
 }
 # 主力模型塞車（503）是常態而非例外 —— 實測深夜也會連續六次 503。
 # 依序改用同價位的其他 flash，不要整份卷因為一個模型忙線就失敗。
@@ -214,9 +216,11 @@ class Usage:
             cls.usd += cost
             cls.run_usd += cost
             if cls.ledger:
-                cls.ledger.write_text(json.dumps(
+                tmp = cls.ledger.with_suffix(".tmp")      # 先寫暫存再換名，中途被砍也不會寫壞帳本
+                tmp.write_text(json.dumps(
                     {"usd": round(cls.usd, 4), "twd": round(cls.usd * TWD_PER_USD, 1),
                      "updated": time.strftime("%Y-%m-%d %H:%M:%S")}), encoding="utf-8")
+                tmp.replace(cls.ledger)
         return cost
 
     @classmethod
@@ -224,18 +228,19 @@ class Usage:
         return cls.usd * TWD_PER_USD
 
 
-def call_model(parts: list[dict], model: str) -> tuple[dict, str, float]:
+def call_model(parts: list[dict], model: str, schema: dict | None = None,
+               fallback: list[str] | None = None, thinking: str = "low") -> tuple[dict, str, float]:
     """回傳 (輸出, 實際使用的模型, 這次花費美元)。"""
     key = os.environ["GEMINI_API_KEY"]
     body = {"contents": [{"parts": parts}],
             "generationConfig": {"responseMimeType": "application/json",
-                                 "responseSchema": SCHEMA,
+                                 "responseSchema": schema or SCHEMA,
                                  "temperature": 0,
                                  "maxOutputTokens": 65536,
                                  # 擷取是照抄加判斷版面，不需要深度推理；
                                  # 思考 tokens 以輸出價計費，放著不管會是最大的一筆
-                                 "thinkingConfig": {"thinkingLevel": "low"}}}
-    order = [model] + [m for m in FALLBACK if m != model]
+                                 "thinkingConfig": {"thinkingLevel": thinking}}}
+    order = [model] + [m for m in (fallback or FALLBACK) if m != model]
     last = None
     attempt_skip: set[str] = set()
     for attempt in range(8):
