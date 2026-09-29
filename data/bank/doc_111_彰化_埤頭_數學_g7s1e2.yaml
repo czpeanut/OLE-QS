@@ -1,53 +1,49 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 1
   exam_seq: 2
-  school: 彰化縣立埤頭國民中學
-  grade: 7
-  subject: 數學
   city: 彰化
   school_short: 埤頭
+  school: 彰化縣立埤頭國民中學
   id: doc_111_彰化_埤頭_數學_g7s1e2
-  title: 彰化縣立埤頭國民中學 111學年度第1學期第2次定期評量7年級數學科試題
+  title: 彰化縣立埤頭國民中學 111學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 111學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題4分,共32分)
+    name: 一、選擇題：(每題4 分，共32 分)
     count: 8
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:(每格4分,共48分)
+    name: 二、填充題：(每格4 分，共48 分)
     count: 9
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: '三、計算題: (共20分)'
+    name: 三、計算題： (共20 分)
     count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/1-2/彰化/埤頭.pdf
 questions:
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: -15 $\frac{3}{7}$ 和下列那一式的值相等?
+  stem: $-15\frac{3}{7}$ 和下列那一式的值相等？
   options:
   - label: A
-    content: -15+$\frac{3}{73}$
+    content: $-15+\frac{3}{7}$
   - label: B
-    content: -16+$\frac{3}{73}$
+    content: $-16+\frac{3}{7}$
   - label: C
-    content: -14- 7
+    content: $-14-\frac{3}{7}$
   - label: D
-    content: -15- 7
+    content: $-15-\frac{3}{7}$
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 已知270的標準分解式為2a×3b×5c,則a+b+c之值 為何?
+  stem: 已知 270 的標準分解式為 $2^{a}\times 3^{b}\times 5^{c}$，則 $a+b+c$ 之值為何？
   options:
   - label: A
     content: '5'
@@ -62,7 +58,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 下列哪一選項中的兩數互質?
+  stem: 下列哪一選項中的兩數互質？
   options:
   - label: A
     content: 14、35
@@ -71,20 +67,20 @@ questions:
   - label: C
     content: 20、21
   - label: D
-    content: 42、51乙12=12丙=
+    content: 42、51
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 已知 $\frac{36}{48}$ =6甲= 丁 ,則下列敘述何者正確?
+  stem: 已知 $\frac{36}{48}=\frac{6}{\text{甲}}=\frac{\text{乙}}{12}=\frac{12}{\text{丙}}=\frac{\text{丁}}{20}$，則下列敘述何者正確？
   options:
   - label: A
-    content: 甲=10
+    content: 甲＝10
   - label: B
-    content: 乙=6
+    content: 乙＝6
   - label: C
-    content: 丙=18
+    content: 丙＝18
   - label: D
     content: 丁=15
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s1_5
@@ -92,23 +88,22 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 數線上A (-2 $\frac{5}{12}$ )、B( 5 $\frac{5}{61}$ ) ,則AB為何?
+  stem: 數線上 $A(-2\frac{5}{12})$、$B(5\frac{5}{6})$，則 $\overline{AB}$ 為何？
   options:
-  - label: B
-    content: –8 $\frac{1}{4}$
-  - label: C
-    content: 8 4
-  - label: D
-    content: 8 $\frac{1}{2}$ $\frac{5}{1}$
   - label: A
-    content: '3'
+    content: $3\frac{5}{12}$
+  - label: B
+    content: $-8\frac{1}{4}$
+  - label: C
+    content: $8\frac{1}{4}$
+  - label: D
+    content: $8\frac{1}{2}$
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 小佑有一筆存款,他花了存款的  $\frac{1}{4}$ 買一雙球鞋,存款 的 $\frac{1}{3}$ 買一部電子辭典,還剩下2000元,則小佑原有存
-    款多少元?
+  stem: 小佑有一筆存款，他花了存款的 $\frac{1}{4}$ 買一雙球鞋，存款的 $\frac{1}{3}$ 買一部電子辭典，還剩下 2000 元，則小佑原有存款多少元?
   options:
   - label: A
     content: '4800'
@@ -117,13 +112,13 @@ questions:
   - label: C
     content: '6000'
   - label: D
-    content: 6400元
+    content: 6400 元
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若四位數875□是2的倍數也是3的倍數,則□內可 填入為多少?
+  stem: 若四位數 875□ 是 2 的倍數也是 3 的倍數，則□內可填入為多少？
   options:
   - label: A
     content: '2'
@@ -132,14 +127,13 @@ questions:
   - label: C
     content: '6'
   - label: D
-    content: 8 $\frac{3}{4}$ )3、乙= (− $\frac{3}{4}$ )4、丙= (− $\frac{3}{4}$ )5  ,試問甲
-      、
+    content: '8'
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 已知甲= (− 乙、丙之值最大為何?
+  stem: 已知甲$= (-\frac{3}{4})^{3}$、乙$= (-\frac{3}{4})^{4}$、丙$= (-\frac{3}{4})^{5}$，試問甲、乙、丙之值最大為何？
   options:
   - label: A
     content: 甲
@@ -148,101 +142,124 @@ questions:
   - label: C
     content: 丙
   - label: D
-    content: 無法判斷 七年____班____號 姓名___________
+    content: 無法判斷
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: '計算下列各式之值: (1) (30、42)=             (以標準分解式表示) (2) [105、126、315]=              (以標準分解式表示)
-    (3) (       、2×33×52、22×34×7)= (以標準分解式表示) (4) [23×3×5、2×32×52、22×32×11]= (以標準分解式表示)'
+  stem: '計算下列各式之值：
+
+    (1) $(30、42)=$_____________ (以標準分解式表示)
+
+    (2) $[105、126、315]=$_____________ (以標準分解式表示)
+
+    (3) $(2^{2}\times 3^{2}\times 5、2\times 3^{3}\times 5^{2}、2^{2}\times 3^{4}\times
+    7)=$_____________ (以標準分解式表示)
+
+    (4) $[2^{3}\times 3\times 5、2\times 3^{2}\times 5^{2}、2^{2}\times 3^{2}\times
+    11]=$_____________ (以標準分解式表示)'
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: 若七位數53□7184是11的倍數,則□=
+  stem: 若七位數 53□7184 是 11 的倍數，則□=_______________
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: 計算 –2 $\frac{1}{1}$ -( $\frac{11}{1}$ 1  ) = +
+  stem: 計算 $-2\frac{17}{19}-(\frac{11}{17}+\frac{2}{19})=$___________
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 1
-  stem: 小娟想用30塊邊長為1的正方形紙板,緊密地拼成面積 為30的長方形,則此長方形的周長最小為       單 位長。
+  stem: 小娟想用 30 塊邊長為 1 的正方形紙板，緊密地拼成面積為 30 的長方形，則此長方形的周長最小為___________單位長。
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 1
-  stem: 計算  $\frac{6}{53}$ ×(-2 )+ ×2+ $\frac{14}{53}$ ×(-2 ) = $\frac{45}{53}$
+  stem: 計算 $\frac{6}{53}\times(-2)+\frac{45}{53}\times 2+\frac{14}{53}\times(-2)=$___________
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 1
-  stem: 東方國今年儲存了550粒的米,西方國今年儲存了547粒的 米,請問東方國所儲存的米是西方國的       倍。 【背面尚有試題】
+  stem: 東方國今年儲存了 $5^{50}$ 粒的米，西方國今年儲存了 $5^{47}$ 粒的米，請問東方國所儲存的米是西方國的___________倍。
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 小南將他的生日12月30日寫成一個四位數1230,再將1230的相異質因數由小到大排列作為他的提款卡密碼,請問他 的提款卡密碼是
+  stem: 小南將他的生日 12 月 30 日寫成一個四位數 1230，再將 1230 的相異質因數由小到大排列作為他的提款卡密碼，請問他的提款卡密碼是____________________
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 甲為正整數,★ ( 甲 ) 表示小於或等於甲的所有質數的個 數,例如:★ ( 2 )=1,代表小於等於2的質數有1個,★ ( 3 )=2代表小於等於3的質數有2個,★
-    ( 4 )=2,代表 小於等於4的質數有2個。 則★ ( 19 )-★ ( 10 )=             。
+  stem: '甲為正整數，★ ( 甲 ) 表示小於或等於甲的所有質數的個數，例如：★ ( 2 )＝1，代表小於等於 2 的質數有 1 個，★ ( 3 )＝2 代表小於等於
+    3 的質數有 2 個，★ ( 4 )＝2，代表小於等於 4 的質數有 2 個。
+
+    則★ ( 19 )－★ ( 10 )＝_____________。'
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 自強家中客廳為一個長1350公分,寬600公分的長方形地 板;想要在地板上鋪設相同大小的正方形磁磚,且磁磚不 能切割使用。請問下列A~E五種不同規格的正方形磁磚中
-    ,自強可以考慮用              (全對才給分)
+  stem: 自強家中客廳為一個長 1350 公分，寬 600 公分的長方形地板；想要在地板上鋪設相同大小的正方形磁磚，且磁磚不能切割使用。請問下列 A～E 五種不同規格的正方形磁磚中，自強可以考慮用______________(全對才給分)
   assets:
-  - key: p2_f01
+  - key: s2_9_f1
     kind: figure
-    file: doc_111_彰化_埤頭_數學_g7s1e2/p2_f01.png
+    file: doc_111_彰化_埤頭_數學_g7s1e2/s2_9_f1.png
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: 計算 -( 1 )4 +  $\frac{4}{21}$ ×3 $\frac{1}{2}$ -2 $\frac{1}{5}$ ÷ (-3 $\frac{3}{10}$
-    ) +( $\frac{1}{4}$ )2之值 (5分)
+  stem: 計算 $-(\frac{1}{2})^{4}+\frac{4}{21}\times 3\frac{1}{2}-2\frac{1}{5}\div(-3\frac{3}{10})+(\frac{1}{4})^{2}$
+    之值 (5分)
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 2
-  stem: 數線上有隻跳蚤,每跳一次固定往左移a單位,在跳的過程 中經過A (47)、B (26)、C (-1 )、D (x)。若a為大於1的整 數,則x之值最大為何?(5分)
+  stem: 數線上有隻跳蚤，每跳一次固定往左移 $a$ 單位，在跳的過程中經過 $A(47)$、$B(26)$、$C(-1)$、$D(x)$。若 $a$ 為大於
+    1 的整數，則 $x$ 之值最大為何？(5分)
   assets:
-  - key: p2_f02
+  - key: s3_2_f1
     kind: figure
-    file: doc_111_彰化_埤頭_數學_g7s1e2/p2_f02.png
+    file: doc_111_彰化_埤頭_數學_g7s1e2/s3_2_f1.png
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s3_3
   section: 3
   number: 3
   type: calc
   page: 2
-  stem: '將150個無色的球排成一直線,如下所示: ...... 1 2 3 4 150從左邊算起,先將編號為2的倍數的球全部塗紅色, 再將編號為3的倍數的球全部塗藍色,最後將編號為5的倍
-    數的球全部塗黃色。請問哪幾號的球被塗了3次顏色? (5分)'
+  stem: '將 150 個無色的球排成一直線，如下所示：
+
+
+    從左邊算起，先將編號為 2 的倍數的球全部塗紅色，
+
+    再將編號為 3 的倍數的球全部塗藍色，最後將編號為 5 的倍數的球全部塗黃色。請問哪幾號的球被塗了 3 次顏色?
+
+    (5分)'
+  assets:
+  - key: s3_3_f1
+    kind: figure
+    file: doc_111_彰化_埤頭_數學_g7s1e2/s3_3_f1.png
 - id: doc_111_彰化_埤頭_數學_g7s1e2_s3_4
   section: 3
   number: 4
   type: calc
   page: 2
-  stem: '如下圖,有一個測驗共有五題是非題,正確填○,錯誤 填×,每題20分,總分100分。若小明都填○,則: (1) 請找出小明哪幾題答錯,並更正該題算式的正確答案。
-    (4分) (2) 小明最後得幾分?(1分) (O) 1. 38÷34×33=36 (O) 2. (–21 )6÷76=36 (O) 3. (–56 )÷(–5)2=54
-    (O) 4. (6×4)10=610×410 (O) 5. (24)5=220'
+  stem: '如下圖，有一個測驗共有五題是非題，正確填○，錯誤填×，每題 20 分，總分 100 分。若小明都填○，則:
+
+    (1) 請找出小明哪幾題答錯，並更正該題算式的正確答案。(4 分)
+
+    (2) 小明最後得幾分？(1 分)'
   assets:
-  - key: p2_f03
+  - key: s3_4_f1
     kind: figure
-    file: doc_111_彰化_埤頭_數學_g7s1e2/p2_f03.png
+    file: doc_111_彰化_埤頭_數學_g7s1e2/s3_4_f1.png

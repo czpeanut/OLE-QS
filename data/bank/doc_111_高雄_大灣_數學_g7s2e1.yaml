@@ -1,127 +1,137 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 2
   exam_seq: 1
-  school: 高雄市立大灣國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 1-1~1-3(翰林版)                                     一年______班
   city: 高雄
   school_short: 大灣
+  school: 高雄市立大灣國中
+  scope_note: 1-1~1-3(翰林版)
   id: doc_111_高雄_大灣_數學_g7s2e1
-  title: 高雄市立大灣國民中學 111學年度第2學期第1次定期評量7年級數學科試題
+  title: 高雄市立大灣國中 111學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 111學年度第2學期第1次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題4分,共40分)
     count: 10
   - ord: 2
     name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:(每格4分,共60分)
-    count: 9
+    count: 15
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/2-1/高雄/大灣.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: null
+    - number: 1-2
+      title: null
+    - number: 1-3
+      title: null
+    publisher: 翰林版
+    raw: 1-1~1-3(翰林版)
+    volume: null
 questions:
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: (  ) 判別下列各組x、y所代表的數,哪一個不是方程式3x-4y=-2的解?【習作1-1】
+  stem: 判別下列各組 $x$、$y$ 所代表的數，哪一個不是方程式 $3x-4y=-2$ 的解？【習作 1-1】
   options:
   - label: A
-    content: x=6、y=5
+    content: $x=6$、$y=5$
   - label: B
-    content: x=-1、y=-1
+    content: $x=-1$、$y=-1$
   - label: C
-    content: x= $\frac{1}{3}$  、y=$\frac{1}{4}$
+    content: $x=-\frac{1}{3}$、$y=\frac{1}{4}$
   - label: D
-    content: x=0.4、y=0.8 Created by trial version of DocuFreezer
+    content: $x=0.4$、$y=0.8$
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: (  ) 將 $\frac{x2y}{3}$ $\frac{2x3y}{4}$  化簡後,可得下列哪一式?【習作第1章總習題】
+  stem: 將 $\frac{x-2y}{3}-\frac{2x-3y}{4}$ 化簡後，可得下列哪一式？【習作第 1 章總習題】
   options:
   - label: A
-    content: -2x-17y
+    content: $-2x-17y$
   - label: B
-    content: -2x+y
+    content: $-2x+y$
   - label: C
-    content: $\frac{2x17y}{12}$
+    content: $\frac{-2x-17y}{12}$
   - label: D
-    content: $\frac{2xy}{12}$
+    content: $\frac{-2x+y}{12}$
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: (  ) 賈賽買了每瓶15元的果汁和每瓶20元的牛奶各若干瓶(兩種都有買),共花300元,則賈賽有幾種買法?
+  stem: 賈賽買了每瓶 15 元的果汁和每瓶 20 元的牛奶各若干瓶(兩種都有買)，共花 300 元，則賈賽有幾種買法？
   options:
   - label: A
-    content: 2種
+    content: 2 種
   - label: B
-    content: 3種
+    content: 3 種
   - label: C
-    content: 4種
+    content: 4 種
   - label: D
-    content: 5種       
+    content: 5 種
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: (  ) 下列哪一組x、y所代表的數是二元一次聯立方程式2 1 x y的解?【習作1-2】 2 3 9 x y
+  stem: 下列哪一組 $x$、$y$ 所代表的數是二元一次聯立方程式 $\begin{cases}x+2y=1\\ 2x-3y=9\end{cases}$ 的解？【習作
+    1-2】
   options:
   - label: A
-    content: x=1、y=0
+    content: $x=1$、$y=0$
   - label: B
-    content: x=5、y=-2
+    content: $x=5$、$y=-2$
   - label: C
-    content: x=-1、y=1
+    content: $x=-1$、$y=1$
   - label: D
-    content: x=3、y=-1 ○ 1 3
+    content: $x=3$、$y=-1$
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: '........ 7 2 1....... x y x y        5. (  ) 解二元一次聯立方程式 時,芳馨先將○ 1式整理成下列哪一個方程式,再代入○
-    2式, ○ 2可消去○ 2式中的y?【習作1-2】'
+  stem: 解二元一次聯立方程式 $\begin{cases}3x+y=5.........\text{①}\\ 7x=2y+1.......\text{②}\end{cases}$
+    時，芳馨先將①式整理成下列哪一個方程式，再代入②式，可消去②式中的 $y$？【習作 1-2】
   options:
   - label: A
-    content: y=3x-5
+    content: $y=3x-5$
   - label: B
-    content: y=5-3x
+    content: $y=5-3x$
   - label: C
-    content: x=$\frac{5-y}{3}$
+    content: $x=\frac{5-y}{3}$
   - label: D
-    content: x= $\frac{y-5}{3}$ ○ 1 2 3 3......... 5 2 2....... x y x y     
-       
+    content: $x=\frac{y-5}{3}$
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: (  ) 解二元一次聯立方程式 時,使用下列哪一個方法,可以完全消去x項?【習作第1 ○ 2章總習題】
+  stem: 解二元一次聯立方程式 $\begin{cases}2x-3y=3.........\text{①}\\ 5x+2y=-2.......\text{②}\end{cases}$
+    時，使用下列哪一個方法，可以完全消去 $x$ 項？【習作第 1 章總習題】
   options:
   - label: A
-    content: ○ 1 × 5+○ 2 × 2
+    content: ① $\times$ 5＋② $\times$ 2
   - label: B
-    content: ○ 1 × 5-○ 2 × 2
+    content: ① $\times$ 5－② $\times$ 2
   - label: C
-    content: ○ 1 × 2+○ 2 × 3
+    content: ① $\times$ 2＋② $\times$ 3
   - label: D
-    content: ○ 1 × 3-○ 2 × 2       $\frac{2x3y}{6}$ 4 $\frac{15x15y5}{3}$
-      0的解為x a  ,y b  ,則 ? a b  
+    content: ① $\times$ 3－② $\times$ 2
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: (  ) 若二元一次聯立方程式
+  stem: 若二元一次聯立方程式 $\begin{cases}\frac{2x-3y}{6}=4\\ \frac{15x+15y-5}{3}=0\end{cases}$
+    的解為 $x=a$，$y=b$，則 $a-b=$？
   options:
   - label: A
     content: $\frac{5}{3}$
@@ -130,118 +140,167 @@ questions:
   - label: C
     content: $\frac{29}{3}$
   - label: D
-    content: $\frac{139}{3}$ 
+    content: $-\frac{139}{3}$
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: (  ) 真馨花店裡的玫瑰每朵15元,薔薇每朵10元。已知思儒兩種花共買了12朵,一共花了165元,則思 儒兩種花各買了幾朵?【習作1-3】
+  stem: 真馨花店裡的玫瑰每朵 15 元，薔薇每朵 10 元。已知思儒兩種花共買了 12 朵，一共花了 165 元，則思儒兩種花各買了幾朵？【習作 1-3】
   options:
   - label: A
-    content: 9朵玫瑰,3朵薔薇
+    content: 9 朵玫瑰，3 朵薔薇
   - label: B
-    content: 3朵玫瑰,9朵薔薇
+    content: 3 朵玫瑰，9 朵薔薇
   - label: C
-    content: 6朵玫瑰,6朵薔薇
+    content: 6 朵玫瑰，6 朵薔薇
   - label: D
-    content: 4朵玫瑰,8朵薔薇
+    content: 4 朵玫瑰，8 朵薔薇
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: (  ) 曾帥和郝美比賽跑步,兩人從同一起跑點出發,已知曾帥的速度是郝美的2倍。若郝美先跑80公尺後, 曾帥才開始追趕,1分鐘後曾帥在郝美前方40公尺處,則郝美每秒跑多少公尺?
+  stem: 曾帥和郝美比賽跑步，兩人從同一起跑點出發，已知曾帥的速度是郝美的 2 倍。若郝美先跑 80 公尺後，曾帥才開始追趕，1 分鐘後曾帥在郝美前方 40
+    公尺處，則郝美每秒跑多少公尺？
   options:
   - label: A
-    content: 4公尺
+    content: 4 公尺
   - label: B
-    content: 3公尺
+    content: 3 公尺
   - label: C
-    content: 2公尺
+    content: 2 公尺
   - label: D
-    content: 1公尺
+    content: 1 公尺
 - id: doc_111_高雄_大灣_數學_g7s2e1_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: '狄陶有濃度20%和5%的食鹽水,欲混合成濃度為9%的食鹽水300公克,則需要20%食鹽水多少公克? (註: (%)= 100%  食鹽重 濃度
-    食鹽水重 )'
+  stem: '狄陶有濃度 20%和 5%的食鹽水，欲混合成濃度為 9%的食鹽水 300 公克，則需要 20%食鹽水多少公克？
+
+    (註：$\text{濃度}(\%)=\frac{\text{食鹽重}}{\text{食鹽水重}}\times 100\%$)'
   options:
   - label: A
-    content: 80公克
+    content: 80 公克
   - label: B
-    content: 100公克
+    content: 100 公克
   - label: C
-    content: 150公克
+    content: 150 公克
   - label: D
-    content: 220公克 第1頁,共2頁
+    content: 220 公克
 - id: doc_111_高雄_大灣_數學_g7s2e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: '化簡下列各式: (1) (2 4 5) (4 5 6) x y x y      =____○ 1 ____。【課本1-1】 (2)  $\frac{3x6y}{2}$
-    $\frac{3xy5}{4}$  =____○ 2 ____。【課本1-1】 Created by trial version of DocuFreezer
-    (3) $\frac{2x-y-5}{3}$ $\frac{x3y3}{2}$  =____○ 3 ____。【習作1-1】 (4) 2(3 ) 4(
-    2 ) x y x y    =____○ 4 ____。【習作第1章總習題】'
+  stem: '化簡下列各式：
+
+    (1) $(2x+4y-5)+(4x-5y+6)=$ ____①____。【課本 1-1】'
 - id: doc_111_高雄_大灣_數學_g7s2e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: '解下列二元一次聯立方程式:       (1) 2 x y ,x=____○ 5 ____,y=____○ 6 ____。【習作1-2】
-    3 4 2 x y        (2) 2 3 38 x y ,x=____○ 7 ____,y=____○ 8 ____。【習作1-2】
-    3 2 21 x y'
+  stem: '化簡下列各式：
+
+    (2) $\frac{3x+6y}{2}+\frac{3x+y-5}{4}=$ ____②____。【課本 1-1】'
 - id: doc_111_高雄_大灣_數學_g7s2e1_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 已知7 $\frac{y}{2}$ x   、3 7 $\frac{y}{4}$ x   及2 7 ax y   有相同的解,則a之值為____○
-    9 ____。【習作1-2】              
+  stem: '化簡下列各式：
+
+    (3) $\frac{2x-y-5}{3}-\frac{x-3y-3}{2}=$ ____③____。【習作 1-1】'
 - id: doc_111_高雄_大灣_數學_g7s2e1_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 若二元一次聯立方程式11 ax by與3 4 1 x y有相同解,則a+b=____○ 10 ____。 2 3 x y 2 5 ax by
+  stem: '化簡下列各式：
+
+    (4) $2(3x-y)-4(x-2y)=$ ____④____。【習作第 1 章總習題】'
 - id: doc_111_高雄_大灣_數學_g7s2e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 杜琪的年齡比兒子年齡的4倍少3歲,比女兒年齡的12倍多1歲,已知杜琪的年齡介在30歲到40歲之間, 則杜琪今年____○ 11 ____歲。
+  stem: '解下列二元一次聯立方程式：
+
+    (1) $\begin{cases}x=2y\\ 3x-4y=2\end{cases}$，$x=$ ____⑤____。【習作 1-2】'
 - id: doc_111_高雄_大灣_數學_g7s2e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 文具店內有甲、乙兩種耶誕卡,已知5盒甲耶誕卡的數量與4盒乙耶誕卡的數量相等,而且2盒甲耶誕卡和1盒乙耶誕卡共52張,如果甲耶誕卡每盒有x張、乙耶誕卡每盒有y張,則甲、乙耶誕卡每盒相差____○
-    12 ____ 張。【習作1-3】
+  stem: '解下列二元一次聯立方程式：
+
+    (1) $\begin{cases}x=2y\\ 3x-4y=2\end{cases}$，$y=$ ____⑥____。【習作 1-2】'
 - id: doc_111_高雄_大灣_數學_g7s2e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 七年五班共有學生33人,校外教學時男生每3人一組,女生每5人一組,全班恰好分成9組,則七年五班女 生有____○ 13 ____人。。【習作1-3】
+  stem: '解下列二元一次聯立方程式：
+
+    (2) $\begin{cases}2x+3y=38\\ -3x+2y=21\end{cases}$，$x=$ ____⑦____。【習作 1-2】'
 - id: doc_111_高雄_大灣_數學_g7s2e1_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 耶誕派對總共有45人參加,每個人都喝了至少1杯汽水或果汁,有31人兩種飲料都喝。若有喝汽水的人數比 有喝果汁的人數多10人,則喝汽水的人有____○
-    14 ____人。
+  stem: '解下列二元一次聯立方程式：
+
+    (2) $\begin{cases}2x+3y=38\\ -3x+2y=21\end{cases}$，$y=$ ____⑧____。【習作 1-2】'
 - id: doc_111_高雄_大灣_數學_g7s2e1_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 如右圖,卡稱將兩張大小不同的長方形紙張平舖在桌面上,其中有部分重疊(即灰色部 分),已知重疊部分面積是其中一張長方形紙張面積的$\frac{3}{5}$
-    ,且重疊部分面積是另一張長方 形紙張面積的$\frac{2}{3}$ ,若覆蓋桌面上的總面積是156平方公分,則兩張長方形紙張的面積相 差____○ 15
-    ____平方公分。 第2頁,共2頁
+  stem: 已知 $x+\frac{y}{2}=7$、$3x-\frac{y}{4}=7$ 及 $ax+2y=7$ 有相同的解，則 $a$ 之值為____⑨____。【習作
+    1-2】
+- id: doc_111_高雄_大灣_數學_g7s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 若二元一次聯立方程式 $\begin{cases}ax-by=11\\ 2x+y=3\end{cases}$ 與 $\begin{cases}3x-4y=-1\\
+    2ax+by=-5\end{cases}$ 有相同解，則 $a+b=$ ____⑩____。
+- id: doc_111_高雄_大灣_數學_g7s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 杜琪的年齡比兒子年齡的 4 倍少 3 歲，比女兒年齡的 12 倍多 1 歲，已知杜琪的年齡介在 30 歲到 40 歲之間，則杜琪今年____⑪____歲。
+- id: doc_111_高雄_大灣_數學_g7s2e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 文具店內有甲、乙兩種耶誕卡，已知 5 盒甲耶誕卡的數量與 4 盒乙耶誕卡的數量相等，而且 2 盒甲耶誕卡和 1 盒乙耶誕卡共 52 張，如果甲耶誕卡每盒有
+    $x$ 張、乙耶誕卡每盒有 $y$ 張，則甲、乙耶誕卡每盒相差____⑫____張。【習作 1-3】
+- id: doc_111_高雄_大灣_數學_g7s2e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 七年五班共有學生 33 人，校外教學時男生每 3 人一組，女生每 5 人一組，全班恰好分成 9 組，則七年五班女生有____⑬____人。。【習作
+    1-3】
+- id: doc_111_高雄_大灣_數學_g7s2e1_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: 耶誕派對總共有 45 人參加，每個人都喝了至少 1 杯汽水或果汁，有 31 人兩種飲料都喝。若有喝汽水的人數比有喝果汁的人數多 10 人，則喝汽水的人有____⑭____人。
+- id: doc_111_高雄_大灣_數學_g7s2e1_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 2
+  stem: 如右圖，卡稱將兩張大小不同的長方形紙張平舖在桌面上，其中有部分重疊(即灰色部分)，已知重疊部分面積是其中一張長方形紙張面積的 $\frac{3}{5}$，且重疊部分面積是另一張長方形紙張面積的
+    $\frac{2}{3}$，若覆蓋桌面上的總面積是 156 平方公分，則兩張長方形紙張的面積相差____⑮____平方公分。
   assets:
-  - key: p2_f01
+  - key: s2_15_f1
     kind: figure
-    file: doc_111_高雄_大灣_數學_g7s2e1/p2_f01.png
+    file: doc_111_高雄_大灣_數學_g7s2e1/s2_15_f1.png

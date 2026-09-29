@@ -1,54 +1,51 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 112
   semester: 1
   exam_seq: 3
-  school: 彰化縣立溪湖國中
-  grade: 7
-  subject: 數學
   city: 彰化
   school_short: 溪湖
+  school: 彰化縣立溪湖國中
   id: doc_112_彰化_溪湖_數學_g7s1e3
-  title: 彰化縣立溪湖國中 112學年度第1學期第3次定期評量7年級數學科試題
+  title: 彰化縣立溪湖國中 112學年度第1學期第3次定期評量 7年級數學科試題
   exam_name: 112學年度第1學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、單選題
-    type: single
-    score_rule: 一、單選題:在ABCD選項中選一個最佳答案,並寫在(  )中
+    name: 一、單選題:在ABCD 選項中選一個最佳答案，並寫在( )中 每題4 分
     count: 7
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(在      填入正確答案,) 每格4分。
-    count: 4
+    name: 二、填充題(在 填入正確答案，) 每格4 分。
+    count: 16
   - ord: 3
-    name: 三、應用題
-    type: fill
-    score_rule: 三、應用題(每題4分)
+    name: 三、應用題(每題4 分)
     count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/112/1-3/彰化/溪湖.pdf
 questions:
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 2+x可簡記為2x
+    content: $2+x$ 可簡記為 $2x$
   - label: B
-    content: 3x-2x化簡後的結果為1
+    content: $3x-2x$ 化簡後的結果為 1
   - label: C
-    content: -2(x+2)可以化簡成-2x+2
+    content: $-2(x+2)$ 可以化簡成 $-2x+2$
   - label: D
-    content: 若a=b,則a -1=b -1
+    content: 若 $a=b$，則 $a-1=b-1$
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 教室內的溫度計上,通常有兩種數值,分別是攝 氏溫度與華氏溫度。已知攝氏溫度為x°C時,換 算成華氏溫度為( x+32)°F。 則當攝氏溫度為10°C時,換算成華氏溫度是多
-    少°F?
+  stem: '教室內的溫度計上，通常有兩種數值，分別是攝氏溫度與華氏溫度。已知攝氏溫度為 $x$°C 時，換算成華氏溫度為 $(\frac{9}{5}x+32)$°F。
+
+    則當攝氏溫度為 10°C 時，換算成華氏溫度是多少°F？'
   options:
   - label: A
     content: '50'
@@ -58,16 +55,16 @@ questions:
     content: '30'
   - label: D
     content: '20'
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_112_彰化_溪湖_數學_g7s1e3/p1_f01.png
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 下列哪些是一元一次方程式? (甲) x+5=-9    (乙) 3x-2 (丙) + =x    (丁) 2x=0
+  stem: '下列哪些是一元一次方程式？
+
+    (甲) $x+5=-9$ (乙) $3x-2$
+
+    (丙) $\frac{x}{3}+\frac{x}{3}=x$ (丁) $2x=0$'
   options:
   - label: A
     content: 甲乙丙
@@ -77,126 +74,203 @@ questions:
     content: 甲丙丁
   - label: D
     content: 乙丙丁
-  assets:
-  - key: p1_f02
-    kind: figure
-    file: doc_112_彰化_溪湖_數學_g7s1e3/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_112_彰化_溪湖_數學_g7s1e3/p1_f03.png
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: x=3是下列哪一個方程式的解?
+  stem: $x=3$ 是下列哪一個方程式的解？
   options:
   - label: A
-    content: 2x-6=-4
+    content: $2x-6=-4$
   - label: B
-    content: -8+3x=-5
+    content: $-8+3x=-5$
   - label: C
-    content: 4x+7=11
+    content: $4x+7=11$
   - label: D
-    content: x-4=-2
-  assets:
-  - key: p1_f04
-    kind: figure
-    file: doc_112_彰化_溪湖_數學_g7s1e3/p1_f04.png
+    content: $\frac{2}{3}x-4=-2$
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 已知x的方程式15-x= x+5,若將等號兩邊 同乘以4,則關於x的敘述何者正確?
+  stem: 已知 $x$ 的方程式 $15-x=\frac{1}{4}x+5$，若將等號兩邊同乘以 4，則關於 $x$ 的敘述何者正確？
   options:
   - label: A
-    content: x的值不變
+    content: $x$ 的值不變
   - label: B
-    content: x的值會變小
+    content: $x$ 的值會變小
   - label: C
-    content: x的值會變大
+    content: $x$ 的值會變大
   - label: D
-    content: x的值是4
-  assets:
-  - key: p1_f05
-    kind: figure
-    file: doc_112_彰化_溪湖_數學_g7s1e3/p1_f05.png
+    content: $x$ 的值是 4
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 下列哪一個選項可算出方程式3x+7=16的解 ?
+  stem: 下列哪一個選項可算出方程式 $3x+7=16$ 的解？
   options:
   - label: A
-    content: x=16-7÷3
+    content: $x=16-7\div 3$
   - label: B
-    content: x=(16-7)÷3
+    content: $x=(16-7)\div 3$
   - label: C
-    content: x=16-7×3
+    content: $x=16-7\times 3$
   - label: D
-    content: x=(16-7)×3
+    content: $x=(16-7)\times 3$
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 下列哪一個方程式的解與0.2x+1=x-0.1的 解相同?
+  stem: 下列哪一個方程式的解與 $0.2x+1=x-0.1$ 的解相同？
   options:
   - label: A
-    content: 2x+1=x-1
+    content: $2x+1=x-1$
   - label: B
-    content: 2x+10=10x-1
+    content: $2x+10=10x-1$
   - label: C
-    content: 2x+1=10x-1
+    content: $2x+1=10x-1$
   - label: D
-    content: 2x+10=x-1
+    content: $2x+10=x-1$
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: (-1)×a =
+  stem: 'A 部分:簡記下列各代數式。
+
+    1. $(-1)\times a = $________'
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: a× =
-  assets:
-  - key: p1_f06
-    kind: figure
-    file: doc_112_彰化_溪湖_數學_g7s1e3/p1_f06.png
+  stem: 'A 部分:簡記下列各代數式。
+
+    2. $a\times \frac{5}{9}=$________'
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: x÷ +4= B部分:根據題意在空格中填入合於題意的代數式1. 一瓶果汁比一瓶汽水貴12元,如果一瓶果汁為a元 ,那麼一瓶汽水為         元。
-    2.已知小翊的體重是x公斤,若爸爸的體重是小翊體 重的3倍多2公斤,則爸爸的體重是 公斤。 3. 已知一長方形的周長為x公分,寬為5公分,則 長是          公分。
-    C部分:化簡下列各式1. -9-3x+12   = 2.  (2x-5)×(-3)  = 3. -3(-4x-2)+(1-x) =
-  assets:
-  - key: p1_f07
-    kind: figure
-    file: doc_112_彰化_溪湖_數學_g7s1e3/p1_f07.png
+  stem: 'A 部分:簡記下列各代數式。
+
+    3. $x\div \frac{1}{3}+4=$________'
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s2_4
   section: 2
   number: 4
   type: fill
   page: 1
-  stem: '4x-[5x-3(2x-1)]-3= D部分: 解下列各一元一次方程式。 1.   -4x-5=7             x= 2.   5(x-2)=22-3x        x=
-    3.   3(5-2x)=-(x-2)-4    x= E部分:綜合題1. 已知乙數減15等於乙數的4倍,則乙數= 2. 若 與 互為相反數,則x的值= .
-    3. 已知x的一元一次方程式mx+2=3x+1,m為x的係 數。若方程式的解為1,則m的值=            。'
+  stem: 'B 部分:根據題意在空格中填入合於題意的代數式
+
+    1. 一瓶果汁比一瓶汽水貴 12 元，如果一瓶果汁為 $a$ 元，那麼一瓶汽水為________元。'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 'B 部分:根據題意在空格中填入合於題意的代數式
+
+    2. 已知小翊的體重是 $x$ 公斤，若爸爸的體重是小翊體重的 3 倍多 2 公斤，則爸爸的體重是________公斤。'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 'B 部分:根據題意在空格中填入合於題意的代數式
+
+    3. 已知一長方形的周長為 $x$ 公分，寬為 5 公分，則長是________公分。'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 'C 部分:化簡下列各式
+
+    1. $-9-3x+12 =$________'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 'C 部分:化簡下列各式
+
+    2. $(2x-5)\times (-3) =$________'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 1
+  stem: 'C 部分:化簡下列各式
+
+    3. $-3(-4x-2)+(1-x) =$________'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 1
+  stem: 'C 部分:化簡下列各式
+
+    4. $4x-[5x-3(2x-1)]-3=$________'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 'D 部分: 解下列各一元一次方程式。
+
+    1. $-4x-5=7$ $x=$________'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 'D 部分: 解下列各一元一次方程式。
+
+    2. $5(x-2)=22-3x$ $x=$________'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 'D 部分: 解下列各一元一次方程式。
+
+    3. $3(5-2x)=-(x-2)-4$ $x=$________'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: 'E 部分:綜合題
+
+    1. 已知乙數減 15 等於乙數的 4 倍，則乙數=________'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 2
+  stem: 'E 部分:綜合題
+
+    2. 若 $\frac{x+3}{2}$ 與 $\frac{x-2}{3}$ 互為相反數，則 $x$ 的值=________'
+- id: doc_112_彰化_溪湖_數學_g7s1e3_s2_16
+  section: 2
+  number: 16
+  type: fill
+  page: 2
+  stem: 'E 部分:綜合題
+
+    3. 已知 $x$ 的一元一次方程式 $mx+2=3x+1$，$m$ 為 $x$ 的係數。若方程式的解為 1，則 $m$ 的值=________。'
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s3_1
   section: 3
   number: 1
-  type: fill
+  type: calc
   page: 2
-  stem: 阿鴻沿著相同的路徑上山、下山共需要5小時,如果 阿鴻上山每小時可走2公里,下山每小時可走3公里, 則這條山路長多少公里?
+  stem: 1.阿鴻沿著相同的路徑上山、下山共需要 5 小時，如果阿鴻上山每小時可走 2 公里，下山每小時可走 3 公里，則這條山路長多少公里？
 - id: doc_112_彰化_溪湖_數學_g7s1e3_s3_2
   section: 3
   number: 2
-  type: fill
+  type: calc
   page: 2
-  stem: 已知一杯美式咖啡賣x元,自備環保杯可折價5元, 若阿鴻與7位同學各點一杯美式咖啡,其中4人自備 環保杯,合計付了260元。則一杯美式咖啡賣多少 元?
+  stem: 2.已知一杯美式咖啡賣 $x$ 元，自備環保杯可折價 5 元，若阿鴻與 7 位同學各點一杯美式咖啡，其中 4 人自備環保杯，合計付了 260 元。則一杯美式咖啡賣多少元？

@@ -1,141 +1,190 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 112
   semester: 1
   exam_seq: 1
-  school: 高雄市立大樹國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 大樹
+  school: 高雄市立大樹國民中學
   id: doc_112_高雄_大樹_數學_g7s1e1
-  title: 高雄市立大樹國民中學 112學年度第1學期第1次定期評量7年級數學科試題
+  title: 高雄市立大樹國民中學 112學年度第1學期第1次定期評量 7年級數學科試題
   exam_name: 112學年度第1學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、填充題
-    type: fill
-    score_rule: 一、填充題:4分/格,共40分(答案填錯題號不予計分)
-    count: 3
+    name: 一、填充題:4 分/格,共40 分(答案填錯題號不予計分)
+    count: 10
   - ord: 2
-    name: 二、選擇題
-    type: single
-    score_rule: 二、選擇題:每題4分,共40分
+    name: 二、選擇題:每題4 分，共40 分
     count: 10
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題:共10分,無合理的計算過程,不予計分
+    name: 三、計算題:共10 分，無合理的計算過程，不予計分
     count: 2
   - ord: 4
-    name: 四、核心素養題
-    type: fill
-    score_rule: '四、核心素養題(填充題型式,無需計算過程,答案必須填在底線上,否則不計分): 共10分'
-    count: 1
+    name: '四、核心素養題(填充題型式，無需計算過程，答案必須填在底線上，否則不計分): 共10 分'
+    count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/112/1-1/高雄/大樹.pdf
 questions:
 - id: doc_112_高雄_大樹_數學_g7s1e1_s1_1
   section: 1
   number: 1
   type: fill
   page: 1
-  stem: '計算下列各式: (1) (-337 )+525+137=        (2) (-27 )+(-32 )+(-52 )+61= (3) (-36
-    )-(-63)+(-127 ) =_______  (4) (-1205 )-( 376-1198 )=_______ (5) (-98 )-| 69-99
-    |=_______    (6) (-32 )×(-125 )×76=_______ (7) 556×8+(-56 )×8=______'
+  stem: '計算下列各式：
+
+    (1) $(-337)+525+137=$______'
 - id: doc_112_高雄_大樹_數學_g7s1e1_s1_2
   section: 1
   number: 2
   type: fill
   page: 1
-  stem: (1)4.68×10 -9小數點後連續出現   個0 -9的6出現在小數點後第   位。 (2)4.68×10
+  stem: '計算下列各式：
+
+    (2) $(-27)+(-32)+(-52)+61=$______'
 - id: doc_112_高雄_大樹_數學_g7s1e1_s1_3
   section: 1
   number: 3
   type: fill
   page: 1
-  stem: 數線上有兩點A、B,若A點坐標為-10,A、B的中點坐標為-2,則B點坐標為    。
+  stem: '計算下列各式：
+
+    (3) $(-36)-(-63)+(-127)=$_______'
+- id: doc_112_高雄_大樹_數學_g7s1e1_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: '計算下列各式：
+
+    (4) $(-1205)-(376-1198)=$_______'
+- id: doc_112_高雄_大樹_數學_g7s1e1_s1_5
+  section: 1
+  number: 5
+  type: fill
+  page: 1
+  stem: '計算下列各式：
+
+    (5) $(-98)-|69-99|=$_______'
+- id: doc_112_高雄_大樹_數學_g7s1e1_s1_6
+  section: 1
+  number: 6
+  type: fill
+  page: 1
+  stem: '計算下列各式：
+
+    (6) $(-32)\times(-125)\times 76=$_______'
+- id: doc_112_高雄_大樹_數學_g7s1e1_s1_7
+  section: 1
+  number: 7
+  type: fill
+  page: 1
+  stem: '計算下列各式：
+
+    (7) $556\times 8+(-56)\times 8=$______'
+- id: doc_112_高雄_大樹_數學_g7s1e1_s1_8
+  section: 1
+  number: 8
+  type: fill
+  page: 1
+  stem: $4.68\times 10^{-9}$ 小數點後連續出現______個 0
+- id: doc_112_高雄_大樹_數學_g7s1e1_s1_9
+  section: 1
+  number: 9
+  type: fill
+  page: 1
+  stem: $4.68\times 10^{-9}$ 的 6 出現在小數點後第______位。
+- id: doc_112_高雄_大樹_數學_g7s1e1_s1_10
+  section: 1
+  number: 10
+  type: fill
+  page: 1
+  stem: 數線上有兩點 $A$、$B$，若 $A$ 點坐標為 $-10$，$A$、$B$ 的中點坐標為 $-2$，則 $B$ 點坐標為______。
 - id: doc_112_高雄_大樹_數學_g7s1e1_s2_1
   section: 2
   number: 1
   type: single
   page: 1
-  stem: 下面三個數a=2.496×10 8、b=3.547×10 7、c=1.475×10 9的大小關係為何?
+  stem: 下面三個數 $a=2.496\times 10^{8}$、$b=3.547\times 10^{7}$、$c=1.475\times 10^{9}$
+    的大小關係為何？
   options:
   - label: A
-    content: a>b>c
+    content: $a>b>c$
   - label: B
-    content: b>c>a
+    content: $b>c>a$
   - label: C
-    content: c>a>b
+    content: $c>a>b$
   - label: D
-    content: c>b>a
+    content: $c>b>a$
 - id: doc_112_高雄_大樹_數學_g7s1e1_s2_2
   section: 2
   number: 2
   type: single
   page: 1
-  stem: 計算500÷(-5 3)-(-72)÷(-3)之值為何?
+  stem: 計算 $500\div(-5^{3})-(-72)\div(-3)$ 之值為何？
   options:
   - label: A
     content: '12'
   - label: B
-    content: '-4'
+    content: $-4$
   - label: C
-    content: '-12'
+    content: $-12$
   - label: D
-    content: '-28'
+    content: $-28$
 - id: doc_112_高雄_大樹_數學_g7s1e1_s2_3
   section: 2
   number: 3
   type: single
   page: 1
-  stem: 下列等式何者正確?
+  stem: 下列等式何者正確？
   options:
   - label: A
-    content: -5 3=-(5 3)
+    content: $-5^{3}=-(5^{3})$
   - label: B
-    content: (-5) 2=-(5 2)
+    content: $(-5)^{2}=-(5^{2})$
   - label: C
-    content: -(-5 3)=-(5 3)
+    content: $-(-5^{3})=-(5^{3})$
   - label: D
-    content: -(-5) 2=5 2
+    content: $-(-5)^{2}=5^{2}$
 - id: doc_112_高雄_大樹_數學_g7s1e1_s2_4
   section: 2
   number: 4
   type: single
   page: 1
-  stem: 下列四個數:2.4、-4.3、-$\frac{13}{3}$ 、-0.3,哪一個數的絕對值最大?
+  stem: 下列四個數：2.4、$-4.3$、$-\frac{13}{3}$、$-0.3$，哪一個數的絕對值最大？
   options:
   - label: A
-    content: '-4.3'
+    content: $-4.3$
   - label: B
-    content: -$\frac{13}{3}$
+    content: $-\frac{13}{3}$
   - label: C
     content: '2.4'
   - label: D
-    content: '-0.3'
+    content: $-0.3$
 - id: doc_112_高雄_大樹_數學_g7s1e1_s2_5
   section: 2
   number: 5
   type: single
   page: 1
-  stem: 下列各組數的大小比較,何者正確?
+  stem: 下列各組數的大小比較，何者正確？
   options:
   - label: A
-    content: -9>-8
+    content: $-9>-8$
   - label: B
-    content: -│-7.6│=│7.6│
+    content: -|-7.6|=|7.6|
   - label: C
-    content: -3>0
+    content: $-3>0$
   - label: D
-    content: -$\frac{2}{5}$ >-1$\frac{2}{5}$
+    content: $-\frac{2}{5}>-1\frac{2}{5}$
 - id: doc_112_高雄_大樹_數學_g7s1e1_s2_6
   section: 2
   number: 6
   type: single
   page: 1
-  stem: 若a為整數,且∣a∣>$\frac{5}{3}$ ,則下列何者不可能為a的值?
+  stem: 若 $a$ 為整數，且 $|a|>\frac{5}{3}$，則下列何者不可能為 $a$ 的值？
   options:
   - label: A
-    content: '-2'
+    content: $-2$
   - label: B
     content: '1'
   - label: C
@@ -147,78 +196,104 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 在下圖的數線上,O為原點,點A、B、C、D所表示的數分別為a、b、c、d。請問下 列哪一個大小關係是不正確的? A B O C D b a c d
+  stem: 在下圖的數線上，$O$ 為原點，點 $A$、$B$、$C$、$D$ 所表示的數分別為 $a$、$b$、$c$、$d$。請問下列哪一個大小關係是不正確的？
   options:
   - label: A
-    content: ∣a∣<∣b∣ˉ
+    content: $|a|<|b|$
   - label: B
-    content: ∣b∣=∣c∣
+    content: $|b|=|c|$
   - label: C
-    content: ∣a∣>∣d∣ˉ
+    content: $|a|>|d|$
   - label: D
-    content: ∣0∣<∣b∣ 0 *背面有題*
+    content: $|0|<|b|$
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_112_高雄_大樹_數學_g7s1e1/s2_7_f1.png
 - id: doc_112_高雄_大樹_數學_g7s1e1_s2_8
   section: 2
   number: 8
   type: single
   page: 2
-  stem: 下列敘述何者錯誤?
+  stem: 下列敘述何者錯誤？
   options:
   - label: A
-    content: 數線上,所有右邊的點所表示的數永遠大於左邊的點所表示的數
+    content: 數線上，所有右邊的點所表示的數永遠大於左邊的點所表示的數
   - label: B
-    content: 當兩個數互為相反數時,則它們與原點的距離是相等的
+    content: 當兩個數互為相反數時，則它們與原點的距離是相等的
   - label: C
-    content: 絕對值越小的數,離原點越近
+    content: 絕對值越小的數，離原點越近
   - label: D
-    content: 離原點越遠的點,所表示的數越大
+    content: 離原點越遠的點，所表示的數越大
 - id: doc_112_高雄_大樹_數學_g7s1e1_s2_9
   section: 2
   number: 9
   type: single
   page: 2
-  stem: 下列哪一個式子錯誤?
+  stem: 下列哪一個式子錯誤？
   options:
   - label: A
-    content: (-3 ) 3>(-3 ) 5>(-3 ) 7
+    content: $(-3)^{3}>(-3)^{5}>(-3)^{7}$
   - label: B
-    content: 3 3<3 4<3 5
+    content: $3^{3}<3^{4}<3^{5}$
   - label: C
-    content: (-3 ) 3>(-3 ) 4>(-3 ) 5 3>-3 4>-3 5
+    content: $(-3)^{3}>(-3)^{4}>(-3)^{5}$
   - label: D
-    content: '-3'
+    content: $-3^{3}>-3^{4}>-3^{5}$
 - id: doc_112_高雄_大樹_數學_g7s1e1_s2_10
   section: 2
   number: 10
   type: single
   page: 2
-  stem: 下列哪一個數值最小?
+  stem: 下列哪一個數值最小？
   options:
   - label: A
-    content: 7.5×10 -7
+    content: $7.5\times 10^{-7}$
   - label: B
-    content: 3.5×10 -7
+    content: $3.5\times 10^{-7}$
   - label: C
-    content: 7.5×10 -6
+    content: $7.5\times 10^{-6}$
   - label: D
-    content: 3.5×10 -6
+    content: $3.5\times 10^{-6}$
 - id: doc_112_高雄_大樹_數學_g7s1e1_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: '[(-2) 3×(-3) 2-(-2) 3+5]-(-1) 12    (5分)'
+  stem: $[(-2)^{3}\times(-3)^{2}-(-2)^{3}+5]-(-1)^{12}$ (5 分)
 - id: doc_112_高雄_大樹_數學_g7s1e1_s3_2
   section: 3
   number: 2
   type: calc
   page: 2
-  stem: '| 10×(4-7) |×(-2)÷12              (5分)'
+  stem: $|10\times(4-7)|\times(-2)\div 12$ (5 分)
 - id: doc_112_高雄_大樹_數學_g7s1e1_s4_1
   section: 4
   number: 1
   type: fill
   page: 2
-  stem: '(1) 以下答案請以科學記號表示(佔6分): 非洲豬瘟病毒的直徑大小為____________公尺 伊波拉病毒的直徑大小為____________公尺
-    諾羅病毒的直徑大小為_____________公尺 (2) 非洲豬瘟病毒(代號A)、伊波拉病毒(代號B)、諾羅病毒(代號C),請比較 這三種病毒顆粒直徑的大小(以代號表示)
-    。   (4分) 答:_____________________________________ [試題結束,共兩頁]'
+  stem: '以下答案請以科學記號表示(佔 6 分):
+
+    非洲豬瘟病毒的直徑大小為____________公尺
+
+    伊波拉病毒的直徑大小為____________公尺
+
+    諾羅病毒的直徑大小為_____________公尺'
+  group_stem: '非洲豬瘟病毒（Asfivirus）是外型複雜的大型 DNA 病毒，病毒顆粒直徑大小約 0.2 微米($\mu\mathrm{m}$)。室溫下，可在糞便中存活
+    11 天，在部分豬肉產品中可存活超過 140 天以上。伊波拉病毒（Ebola virus）屬線狀病毒科的一種，病毒顆粒直徑大小約 80 奈米(nm)，可導致出血熱，使人致死。諾羅病毒(
+    Norovirus)是一群會造成人類腸胃炎的病毒，屬於杯狀病毒科，病毒顆粒直徑大小約 0.000027 毫米(mm)。試回答下列問題。
+
+    (已知 1 毫米＝$10^{-3}$公尺，1 微米＝$10^{-6}$公尺，1 奈米＝$10^{-9}$公尺)'
+- id: doc_112_高雄_大樹_數學_g7s1e1_s4_2
+  section: 4
+  number: 2
+  type: fill
+  page: 2
+  stem: '非洲豬瘟病毒(代號 A)、伊波拉病毒(代號 B)、諾羅病毒(代號 C)，請比較這三種病毒顆粒直徑的大小(以代號表示) 。 (4 分)
+
+    答:_____________________________________'
+  group_stem: '非洲豬瘟病毒（Asfivirus）是外型複雜的大型 DNA 病毒，病毒顆粒直徑大小約 0.2 微米($\mu\mathrm{m}$)。室溫下，可在糞便中存活
+    11 天，在部分豬肉產品中可存活超過 140 天以上。伊波拉病毒（Ebola virus）屬線狀病毒科的一種，病毒顆粒直徑大小約 80 奈米(nm)，可導致出血熱，使人致死。諾羅病毒(
+    Norovirus)是一群會造成人類腸胃炎的病毒，屬於杯狀病毒科，病毒顆粒直徑大小約 0.000027 毫米(mm)。試回答下列問題。
+
+    (已知 1 毫米＝$10^{-3}$公尺，1 微米＝$10^{-6}$公尺，1 奈米＝$10^{-9}$公尺)'

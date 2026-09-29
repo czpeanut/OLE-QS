@@ -1,75 +1,71 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 112
   semester: 1
   exam_seq: 2
-  school: 彰化縣立溪湖國中
-  grade: 7
-  subject: 數學
   city: 彰化
   school_short: 溪湖
+  school: 彰化縣立溪湖國中
   id: doc_112_彰化_溪湖_數學_g7s1e2
-  title: 彰化縣立溪湖國中 112學年度第1學期第2次定期評量7年級數學科試題
+  title: 彰化縣立溪湖國中 112學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 112學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、單選題
-    type: single
-    score_rule: 一、 單選題(每題4分,共40分)
+    name: 一、 單選題(每題4 分，共40 分)
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、 填充題(每格4分,共52分)
-    count: 12
+    name: 二、 填充題(每格4 分，共52 分)
+    count: 13
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、 計算題 (每題4分,共8分。請寫出詳細計算過程,否
+    name: 三、 計算題 (每題4 分，共8 分。請寫出詳細計算過程，否則不予計分)
     count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/112/1-2/彰化/溪湖.pdf
 questions:
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 若 $\frac{b}{28}$ $\frac{5}{a}$ $\frac{45}{63}$     ,則b a  =?
+  stem: 若$-\frac{45}{63}=\frac{5}{a}=-\frac{b}{28}$，則$a+b=$？
   options:
   - label: A
     content: '27'
   - label: B
     content: '13'
   - label: C
-    content: 13 
+    content: '-13'
   - label: D
-    content: 27 
+    content: '-27'
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列哪一個數跟78互質?
+  stem: 下列哪一個數跟78 互質？
   options:
   - label: A
     content: '27'
   - label: B
     content: '143'
   - label: C
-    content: 7 5 2 2  
+    content: $2\times 5^{2}\times 7$
   - label: D
-    content: 2 11 7 5  
+    content: $5\times 7\times 11^{2}$
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 已知5 10 78 1.    p ,下列關於p值的敘述何者正確?
+  stem: 已知$p=1.78\times 10^{-5}$，下列關於$p$ 值的敘述何者正確？
   options:
   - label: A
-    content: 介於0跟1 之間
+    content: 介於0 跟-1之間
   - label: B
-    content: 介於0與1兩數之間,兩數中比較接近0
+    content: 介於0 與1 兩數之間，兩數中比較接近0
   - label: C
-    content: 介於0與1兩數之間,兩數中比較接近1
+    content: 介於0 與1 兩數之間，兩數中比較接近1
   - label: D
     content: 大於1
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s1_4
@@ -77,22 +73,22 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 下列敘述何者錯誤?
+  stem: 下列敘述何者錯誤？
   options:
   - label: A
-    content: 72 ] 24 , 18 [ 
+    content: '[18,24] = 72'
   - label: B
-    content: 1不是質數,也不是合數
+    content: 1 不是質數，也不是合數
   - label: C
-    content: 若甲是9的倍數,則甲一定也是3的倍數
+    content: 若甲是9 的倍數，則甲一定也是3 的倍數
   - label: D
-    content: 若兩個整數互質,則這兩個數必為質數
+    content: 若兩個整數互質，則這兩個數必為質數
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 有兩正整數a 、b ,若已知66  b a ,則a+b的最 大值和最小值相差多少?
+  stem: 有兩正整數$a$、$b$，若已知$a\times b=66$，則$a+b$ 的最大值和最小值相差多少？
   options:
   - label: A
     content: '35'
@@ -107,39 +103,37 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列算式何者正確?
+  stem: 下列算式何者正確？
   options:
   - label: A
-    content: 12 4 3 ) $\frac{4}{7}$ ( ) $\frac{4}{7}$ ( ) $\frac{4}{7}$ (    
-      
+    content: $(-\frac{4}{7})^{3}\times (-\frac{4}{7})^{4}=(-\frac{4}{7})^{12}$
   - label: B
-    content: 3 2 6 0.3) ( 0.3) ( 0.3) (  
+    content: $(0.3)^{6}\div (0.3)^{2}=(0.3)^{3}$
   - label: C
-    content: 6 3 3 6 ) 3 ( ) 3 (   
+    content: $(-3^{6})^{3}=(-3^{3})^{6}$
   - label: D
-    content: 7 7 7 20 5 4  
+    content: $4^{7}\times 5^{7}=20^{7}$
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若2 3 5 3   A ,則下列選項中所表示的數,何者為A的倍數?
+  stem: 若$A=3^{3}\times 5^{2}$，則下列選項中所表示的數，何者為$A$ 的倍數？
   options:
   - label: A
-    content: 3 3 2 5 3 2  
+    content: $2^{2}\times 3^{3}\times 5^{3}$
   - label: B
-    content: 2 2 7 5 2  
+    content: $2\times 5^{2}\times 7^{2}$
   - label: C
-    content: 7 5 3 3 2  
+    content: $3^{2}\times 5^{3}\times 7$
   - label: D
-    content: 7 5 34  
+    content: $3^{4}\times 5\times 7$
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 若甲= )9 $\frac{5}{13}$ ( 、乙= 10 ) $\frac{5}{13}$ ( 、丙= 11 ) $\frac{5}{13}$
-    ( ,則甲、乙 丙三數的大小關係為何?
+  stem: 若甲=$(-\frac{5}{13})^{9}$、乙=$(-\frac{5}{13})^{10}$、丙=$(-\frac{5}{13})^{11}$，則甲、乙丙三數的大小關係為何？
   options:
   - label: A
     content: 甲>乙>丙
@@ -154,117 +148,124 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 下列哪一個選項可以表示「二十五萬分之一」?
+  stem: 下列哪一個選項可以表示「二十五萬分之一」？
   options:
   - label: A
-    content: 6 10 4  
+    content: $4\times 10^{-6}$
   - label: B
-    content: 5 10 2.5  
+    content: $2.5\times 10^{-5}$
   - label: C
-    content: 5 10 2.5 
+    content: $2.5\times 10^{5}$
   - label: D
-    content: 6 10 4
+    content: $4\times 10^{6}$
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 已知某文具店販售的原子筆每枝售價均相等且超過10元,帥興和帥超在此文具店分別購買若干枝原 子筆。若帥興購買原子筆的花費為48元,則帥超 購買原子筆的花費可能為下列何者?
+  stem: 已知某文具店販售的原子筆每枝售價均相等且超過10 元，帥興和帥超在此文具店分別購買若干枝原子筆。若帥興購買原子筆的花費為48 元，則帥超購買原子筆的花費可能為下列何者？
   options:
   - label: A
-    content: 18元
+    content: 18 元
   - label: B
-    content: 26元
+    content: 26 元
   - label: C
-    content: 36元
+    content: 36 元
   - label: D
-    content: 56元
+    content: 56 元
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 已知a為正整數,若a 10 732 1.  乘開後是7位數,則a = _________。
+  stem: 已知$a$ 為正整數，若$1.732\times 10^{a}$ 乘開後是7 位數，則$a =$ _________。
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: 求 $\frac{3}{5}$ 2的倒數為 _______。
+  stem: 求$2\frac{3}{5}$ 的倒數為 _______。
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: 求( 2 2 2 7 3 2   、 7 5 23   ) = _____________。(以標準分解 式表示)
+  stem: 求($2^{2}\times 3^{2}\times 7^{2}$、$2^{3}\times 5\times 7$) = _____________。(以標準分解式表示)
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 1
-  stem: 將13 91 18   做質因數分解,並以標準分解式表示為 __________________。 背面尚有試題 的分母加上21,且分子加上a
-    ,所產生的分數化簡
+  stem: 將$18\times 91\times 13$ 做質因數分解，並以標準分解式表示為__________________。
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 如果$\frac{4}{7}$ ,則a的值應為__________。 後,恰好也等於$\frac{4}{7}$
+  stem: 如果$\frac{4}{7}$ 的分母加上21，且分子加上$a$，所產生的分數化簡後，恰好也等於$\frac{4}{7}$，則$a$ 的值應為__________。
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 算式3 10 0000174 0.  之值的科學記號表示為 ________________。
+  stem: 算式$0.0000174\times 10^{3}$ 之值的科學記號表示為________________。
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: '計算下列各式的值,並化為最簡分數: (1) ) $\frac{4}{17}$ $\frac{25}{23}$ ( $\frac{13}{17}$
-    $\frac{8}{23}$    = ________。 (2) ) $\frac{3}{17}$ (1 ) $\frac{4}{25}$ ( $\frac{2}{15}$
-    1    = ________。'
+  stem: (1)$\frac{8}{23}+\frac{13}{17}-(\frac{25}{23}-\frac{4}{17}) =$ ________。
+  group_stem: 7.計算下列各式的值，並化為最簡分數：
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 若5 10 5.2    A 、 4 10 2.8    B 、 5 10 3.8    C ,則A、B、 C由大至小排列為_______________。
+  stem: (2)$1\frac{2}{15}\div (-\frac{4}{25})\times (1\frac{3}{17}) =$ ________。
+  group_stem: 7.計算下列各式的值，並化為最簡分數：
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 計算0 4 4 3 ) 3 ( 3) (     =________。
+  stem: 若$A=5.2\times 10^{-5}$、$B=2.8\times 10^{-4}$、$C=3.8\times 10^{-5}$，則$A$、$B$、$C$
+    由大至小排列為_______________。
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 計算7 5 5 ) 2 ( ) $\frac{10}{3}$ ( ) $\frac{6}{5}$ (     =__________。
+  stem: 計算$(-3)^{4}-(-3^{4})+3^{0} =$________。
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_11
   section: 2
   number: 11
   type: fill
   page: 2
-  stem: 若四位數31□8可質因數分解成c b a 11 3 2   ,且a 、b 、 c均為正整數,則    c b a _________。
+  stem: 計算$(-\frac{6}{5})^{5}\times (\frac{10}{3})^{5}\div (-2)^{7} =$__________。
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s2_12
   section: 2
   number: 12
   type: fill
   page: 2
-  stem: 已知大哥每4天回家一趟,二哥每6天回家一趟,弟弟每3天回家一趟。如果三人某次同時回家時正好是星期日, 那麼下次同時星期日回家是_________天之後。
+  stem: 若四位數$31\square 8$ 可質因數分解成$2^{a}\times 3^{b}\times 11^{c}$，且$a$、$b$、$c$ 均為正整數，則$a+b+c
+    =$_________。
+- id: doc_112_彰化_溪湖_數學_g7s1e2_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 已知大哥每4 天回家一趟，二哥每6 天回家一趟，弟弟每3 天回家一趟。如果三人某次同時回家時正好是星期日，那麼下次同時星期日回家是_________天之後。
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: 快樂生技公司培養綠藻以製作「綠藻粉」,再經過後續的 加工步驟,製成綠藻相關的保健食品。假設在光照充沛的 環境下,1個綠藻細胞每16小時可分裂成4個綠藻細胞,
-    且分裂後的細胞亦可繼續分裂。今從1個綠藻細胞開始培 養,若培養期間綠藻細胞皆未死亡,且培養環境的光照充 沛,經過10天後,共分裂成p 2個綠藻細胞,則p之值為
-    何?
+  stem: 快樂生技公司培養綠藻以製作「綠藻粉」，再經過後續的加工步驟，製成綠藻相關的保健食品。假設在光照充沛的環境下，1 個綠藻細胞每16 小時可分裂成4 個綠藻細胞，且分裂後的細胞亦可繼續分裂。今從1
+    個綠藻細胞開始培養，若培養期間綠藻細胞皆未死亡，且培養環境的光照充沛，經過10 天後，共分裂成$2^{p}$ 個綠藻細胞，則$p$ 之值為何？
 - id: doc_112_彰化_溪湖_數學_g7s1e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 2
-  stem: 設4 2 8 5 3 2    A 、 11 5 3 2 6 5     B ,求A跟B的最小公倍 數,並以科學記號表示。 試題結束
+  stem: 設$A=2^{8}\times 3^{2}\times 5^{4}$、$B=2^{5}\times 3\times 5^{6}\times 11$，求$A$
+    跟$B$ 的最小公倍數，並以科學記號表示。

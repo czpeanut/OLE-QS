@@ -1,165 +1,175 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 2
   exam_seq: 2
-  school: 高雄市立大灣國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 大灣
+  school: 高雄市立大灣國民中學
   id: doc_111_高雄_大灣_數學_g7s2e2
-  title: 高雄市立大灣國民中學 111學年度第2學期第2次定期評量7年級數學科試題
+  title: 高雄市立大灣國民中學 111學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 111學年度第2學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(共10題,每題3分,共30分)
-    count: 8
+    name: 一、選擇題(共 10 題，每題 3 分，共 30 分)
+    count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(共13格,每格4分,共52分)
+    name: 二、填充題(共 13 格，每格 4 分，共 52 分)
     count: 11
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題(共1題,共18分)
+    name: 三、計算題(共 1 題，共 18 分)
     count: 1
-  - ord: 4
-    name: 一、每人可投射10支飛標,以
-    type: fill
-    score_rule: 一、 每人可投射10支飛標,以邊長1公尺的正方形直角座標為標靶。方
-    count: 0
-  - ord: 5
-    name: 二、以下兩種情況的飛標視為得
-    type: fill
-    score_rule: '二、 以下兩種情況的飛標視為得分,一支給1分,同一支不重覆計分:'
-    count: 0
-  - ord: 6
-    name: 三、李大哥投射的10支飛鏢,
-    type: fill
-    score_rule: '三、李大哥投射的10支飛鏢,編號1~10,其投射的座標如下:'
-    count: 10
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/2-2/高雄/大灣.pdf
 questions:
 - id: doc_111_高雄_大灣_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 坐標平面上,點 ( 3, 4) Q  到x軸的距離是多少?
+  stem: 坐標平面上，點 $Q(-3,-4)$ 到 $x$ 軸的距離是多少？
   options:
   - label: A
     content: '3'
   - label: B
-    content: '-3'
+    content: －3
   - label: C
     content: '4'
   - label: D
-    content: -4 Created by trial version of DocuFreezer
+    content: －4
 - id: doc_111_高雄_大灣_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 坐標平面上,方程式2 6 x y   的圖形與x軸的交點坐標為何?
+  stem: 坐標平面上，方程式 $2x-y=6$ 的圖形與 $x$ 軸的交點坐標為何？
   options:
   - label: A
-    content: (3 , 0)
+    content: （3 , 0）
   - label: B
-    content: (0 , 3)
+    content: （0 , 3）
   - label: C
-    content: (-6 , 0)
+    content: （－6 , 0）
   - label: D
-    content: (0 , -6)
+    content: （0 , －6）
 - id: doc_111_高雄_大灣_數學_g7s2e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 下列哪一個選項,其比值與5:8的比值相等?
+  stem: 下列哪一個選項，其比值與 $5:8$ 的比值相等？
   options:
   - label: A
-    content: (5+3):(8+3)
+    content: （5＋3）：（8＋3）
   - label: B
-    content: (1÷5):(1÷8)
+    content: （1÷5）：（1÷8）
   - label: C
-    content: (5-1):(8-1)
+    content: （5－1）：（8－1）
   - label: D
-    content: (5×3):(8×3)
+    content: （5×3）：（8×3）
 - id: doc_111_高雄_大灣_數學_g7s2e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: '坐標平面上, 1 : 2 0 L x  , 2 : 3 0 L y  與3 : 7 L y ax   相交於同一點,則a=?'
+  stem: 坐標平面上，$L_{1}:x+2=0$，$L_{2}:y-3=0$ 與 $L_{3}:y=ax-7$ 相交於同一點，則 $a=$？
   options:
   - label: A
-    content: '-1'
+    content: －1
   - label: B
-    content: '-3'
+    content: －3
   - label: C
-    content: '-5'
+    content: －5
   - label: D
-    content: '-7'
+    content: －7
 - id: doc_111_高雄_大灣_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 下列哪一個選項的y與x成反比? x 9.
+  stem: 下列哪一個選項的 $y$ 與 $x$ 成反比？
+  options:
+  - label: A
+    content: '| x | 9 | 8 | 7 | 6 |
+
+      |---|---|---|---|---|
+
+      | y | 1 | 2 | 3 | 4 |'
+  - label: B
+    content: '| x | 2 | 4 | 6 | 8 |
+
+      |---|---|---|---|---|
+
+      | y | 12 | 6 | 4 | 3 |'
+  - label: C
+    content: '| x | 1 | 3 | 5 | 7 |
+
+      |---|---|---|---|---|
+
+      | y | 2 | 4 | 6 | 8 |'
+  - label: D
+    content: '| x | 1 | 3 | 5 | 7 |
+
+      |---|---|---|---|---|
+
+      | y | 8 | 6 | 4 | 2 |'
+- id: doc_111_高雄_大灣_數學_g7s2e2_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 如圖，在坐標平面上有一長方形 $OABC$，其中三個頂點坐標分別是 $O(0,0)$、$A(6,0)$、$C(0,4)$。若固定頂點 $O$，將長方形
+    $OABC$ 逆時針旋轉 $90^{\circ}$，則旋轉後頂點 $B$ 會落在下列哪一個點？
+  options:
+  - label: A
+    content: （－6 , 4）
+  - label: B
+    content: （－4 , 6）
+  - label: C
+    content: （4 , －6）
+  - label: D
+    content: （6 , －4）
+  assets:
+  - key: s1_6_f1
+    kind: figure
+    file: doc_111_高雄_大灣_數學_g7s2e2/s1_6_f1.png
+- id: doc_111_高雄_大灣_數學_g7s2e2_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 坐標平面上，若一直線 $y=ax+b$ 通過 $(-2,8)$、$(6,2k+1)$ 與原點，則 $k=$？
+  options:
+  - label: A
+    content: $-\frac{25}{2}$
+  - label: B
+    content: －12
+  - label: C
+    content: $-\frac{23}{2}$
+  - label: D
+    content: －11
 - id: doc_111_高雄_大灣_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 7. 6. y 1. 2. 3. 4. x 2. 4. 6. 8. y 12. 6. 4. 3. x 1 3 5 7 x 1 3 5 7
+  stem: 若 $12:18=\frac{12}{5}:a=2:b$，則 $a$、$b$ 兩數的大小關係為何？
   options:
   - label: A
-    content: y 2 4 6 8
-  - label: D
-    content: y 8 6 4 2 6. 如圖,在坐標平面上有一長方形OABC,其中三個頂點坐標分別是 (0, 0) O 、(6, 0) A   、 (0,
-      4) C 。 若固定頂點O,將長方形OABC逆時針旋轉90°,則旋轉後頂點B會落在下列哪一個點?
-  - label: A
-    content: (-6 , 4)
+    content: a＞b
   - label: B
-    content: (-4 , 6)
+    content: a＝b
   - label: C
-    content: (4 , -6)
+    content: a＜b
   - label: D
-    content: (6 , -4) 7. 坐標平面上,若一直線y ax b  通過( 2, 8)   、(6, 2 1) k  與原點,則k=?
-  - label: B
-    content: '-12'
-  - label: C
-    content: -$\frac{23}{2}$
-  - label: D
-    content: '-11'
-  - label: A
-    content: '-$\frac{25}{2}$ 8. 若 $\frac{12}{5}$ 12:18 : 2: a b   ,則a 、b兩數的大小關係為何?'
-  - label: A
-    content: a>b
-  - label: B
-    content: a=b
-  - label: C
-    content: a<b
-  - label: D
-    content: 不能確定2 ( , ) D a ab  ,有幾個點在第一象限?
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_111_高雄_大灣_數學_g7s2e2/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_111_高雄_大灣_數學_g7s2e2/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_111_高雄_大灣_數學_g7s2e2/p1_f03.png
+    content: 不能確定
 - id: doc_111_高雄_大灣_數學_g7s2e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 設點( , ) a ab  在第四象限,下列四個點( , ) A a b  、 2 ( , ) B b ab 、 ( , ) C b a  、
+  stem: 設點 $(-a,ab)$ 在第四象限，下列四個點 $A(-a,b)$、$B(b^{2},ab)$、$C(-b,a)$、$D(a^{2},-ab)$，有幾個點在第一象限？
   options:
   - label: A
     content: 一
@@ -174,156 +184,120 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 小文原本計畫使用甲、乙兩台列印機於10:00開始一起印製文件並持續到下午,但10:00時有人正 在使用乙,於是他先使用甲印製,於10:05才開始使用乙一起印製,且到10:15時乙印製的總張數
-    與甲相同,到10:45時甲、乙印製的總張數合計為2100張。若甲、乙的印製張數與印製時間皆成正 比,則依照小文原本的計畫,甲、乙印製的總張數會在哪個時間達到2100張?
+  stem: 小文原本計畫使用甲、乙兩台列印機於 10：00 開始一起印製文件並持續到下午，但 10：00 時有人正在使用乙，於是他先使用甲印製，於 10：05
+    才開始使用乙一起印製，且到 10：15 時乙印製的總張數與甲相同，到 10：45 時甲、乙印製的總張數合計為 2100 張。若甲、乙的印製張數與印製時間皆成正比，則依照小文原本的計畫，甲、乙印製的總張數會在哪個時間達到
+    2100 張？
   options:
   - label: A
-    content: '10:40'
+    content: 10：40
   - label: B
-    content: '10:41'
+    content: 10：41
   - label: C
-    content: '10:42'
+    content: 10：42
   - label: D
-    content: '10:43'
+    content: 10：43
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 如果( 3 , 2) P a a   在坐標平面是x軸上的一點,則P點坐標為1 。
+  stem: 如果 $P(a+3,a-2)$ 在坐標平面是 $x$ 軸上的一點，則 $P$ 點坐標為 ① 。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: ( , ) P a b在第二象限,已知7 a b   、 1 a b   ,則P點的坐標為  ○ 2  。
+  stem: $P(a,b)$ 在第二象限，已知 $|a|+|b|=7$、$|a|-|b|=1$，則 $P$ 點的坐標為 ② 。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: 坐標平面上有一點 (5 , 3)  A ,則A點與x軸的距離為  ○ 3  個單位長,A點與y軸的距離 為  ○ 4  個單位長。 第1頁,共2頁
-    一數2
+  stem: 坐標平面上有一點 $A(5,-3)$，則 A 點與 $x$ 軸的距離為 ③ 個單位長，A 點與 $y$ 軸的距離為 ④ 個單位長。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 將點 ( 4, 3) A   向左平移5個單位,再向下平移a個單位後,會落在直線2 3 7 y x   上,試求出a之值 為  ○ 5  。
+  stem: 將點 $A(-4,3)$ 向左平移 5 個單位，再向下平移 $a$ 個單位後，會落在直線 $2y=3x+7$ 上，試求出 $a$ 之值為 ⑤ 。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 一彈簧原長為30公分,秤重50公克物體時,彈簧長度變為36公分;若改秤75公克的物體時,彈簧 長度變為  ○ 6  公分。
+  stem: 一彈簧原長為 30 公分，秤重 50 公克物體時，彈簧長度變為 36 公分；若改秤 75 公克的物體時，彈簧長度變為 ⑥ 公分。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 已知x、y皆不為0,$\frac{x}{2}$ $\frac{y}{5}$  ,則3 :7 x y的最簡整數比為  ○ 7  。 Created
-    by trial version of DocuFreezer
+  stem: 已知 $x$、$y$ 皆不為 0，$\frac{x}{2}=\frac{y}{5}$，則 $3x:7y$ 的最簡整數比為 ⑦ 。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 中秋節時阿柚製作的廣式月餅、蛋黃酥的數量比為2:1,其中製作廣式月餅和蛋黃酥時皆需使用鹹蛋 黃。若阿柚製作每個廣式月餅時使用2顆鹹蛋黃,製作每個蛋黃酥時使用1顆鹹蛋黃,且總共使用120顆鹹蛋黃,則他製作了  ○
-    8  個蛋黃酥。
+  stem: 中秋節時阿柚製作的廣式月餅、蛋黃酥的數量比為 $2:1$，其中製作廣式月餅和蛋黃酥時皆需使用鹹蛋黃。若阿柚製作每個廣式月餅時使用 2 顆鹹蛋黃，製作每個蛋黃酥時使用
+    1 顆鹹蛋黃，且總共使用 120 顆鹹蛋黃，則他製作了 ⑧ 個蛋黃酥。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 已知6 x  、 4 y  ,當x、y成正比時,關係式為  ○ 9  ;x、y成反比時,關係式為  ○ 10  。
+  stem: 已知 $x=6$、$y=4$，當 $x$、$y$ 成正比時，關係式為 ⑨ ；$x$、$y$ 成反比時，關係式為 ⑩ 。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 已知0 x  ,若 (3 1):1 (3 4):4 x x    ,則x    ○ 11 。
+  stem: 已知 $x>0$，若 $(3x-1):1=(3x+4):4$，則 $x=$ ⑪ 。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 二元一次方程式2 2 x y  與3 4 9 x y  皆通過A點坐標,則A點坐標為   ○ 12 。
+  stem: 二元一次方程式 $x+2y=2$ 與 $3x-4y=-9$ 皆通過 $A$ 點坐標，則 $A$ 點坐標為 ⑫ 。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s2_11
   section: 2
   number: 11
   type: fill
   page: 2
-  stem: 如果0 a  、 0 b  ,則3 ( , ) a a b   為第   ○ 13象限。
+  stem: 如果 $a<0$、$b>0$，則 $(-a^{3},a-b)$ 為第 ⑬ 象限。
 - id: doc_111_高雄_大灣_數學_g7s2e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: '射飛鏢比賽的規則如下:'
+  stem: '射飛鏢比賽的規則如下：
+
+    一、每人可投射 10 支飛標，以邊長1公尺的正方形直角座標為標靶。方形標靶細分為20×20 的格線，兩邊框中點連線為直角座標的 $x$ 軸及 $y$ 軸，如右圖。
+
+    二、以下兩種情況的飛標視為得分，一支給 1 分，同一支不重覆計分：
+
+    (1) 投射進第一象限或第三象限。
+
+    (2) 有任 5 支以上的飛鏢可連成一直線者。
+
+    三、李大哥投射的10支飛鏢，編號1~10，其投射的座標如下：
+
+
+    | 編號 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+    |---|---|---|---|---|---|---|---|---|---|---|
+
+    | 坐標 | A(0,2) | B(1,2) | C(0,1) | D(1,0) | E(0, -3) | F(-1,2) | G(6,7) | H(0,5)
+    | I(0,7) | J(2,0) |
+
+
+    (1)請在標靶上填上各個飛鏢的坐標?(一個坐標1分)
+
+    (2)有兩方程式 $L_{1}:ax+by=1$ 經過點G、B兩點以及 $L_{2}:y=ax+b$ 經過點F、D兩點，求 $L_{1}$、$L_{2}$
+    交點坐標?(3分)
+
+    (3)請問李大哥的得分為多少分?(3分)
+
+    (4)承上題，依李大哥的得分率，若將滿分改為50分時，則李大哥可得幾分?(2分)'
   assets:
-  - key: p2_f01
+  - key: s3_1_f1
     kind: figure
-    file: doc_111_高雄_大灣_數學_g7s2e2/p2_f01.png
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_1
-  section: 6
-  number: 1
-  type: fill
-  page: 2
-  stem: ''
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_2
-  section: 6
-  number: 2
-  type: fill
-  page: 2
-  stem: ''
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_3
-  section: 6
-  number: 3
-  type: fill
-  page: 2
-  stem: ''
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_4
-  section: 6
-  number: 4
-  type: fill
-  page: 2
-  stem: ''
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_5
-  section: 6
-  number: 5
-  type: fill
-  page: 2
-  stem: ''
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_6
-  section: 6
-  number: 6
-  type: fill
-  page: 2
-  stem: ''
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_7
-  section: 6
-  number: 7
-  type: fill
-  page: 2
-  stem: ''
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_8
-  section: 6
-  number: 8
-  type: fill
-  page: 2
-  stem: ''
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_9
-  section: 6
-  number: 9
-  type: fill
-  page: 2
-  stem: ''
-- id: doc_111_高雄_大灣_數學_g7s2e2_s6_10
-  section: 6
-  number: 10
-  type: fill
-  page: 2
-  stem: '坐標A(0,2) B(1,2) C(0,1) D(1,0) E(0, 3) F( 1,2) G(6,7) H(0,5) I(0,7) J(2,0)
-    (1)請在標靶上填上各個飛鏢的坐標?(一個坐標1分) (2)有兩方程式1 : 1 L ax by  經過點G、B兩點以及2 : L y ax b  經過點F、D兩點,求L1
-    、 L2交點坐標?(3分) (3)請問李大哥的得分為多少分?(3分) (4)承上題,依李大哥的得分率,若將滿分改為50分時,則李大哥可得幾分?(2分) <
-    試 題 結 束 > 第2頁,共2頁 一數2'
+    file: doc_111_高雄_大灣_數學_g7s2e2/s3_1_f1.png

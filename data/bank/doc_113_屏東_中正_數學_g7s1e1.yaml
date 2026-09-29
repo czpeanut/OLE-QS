@@ -1,44 +1,49 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 1
-  school: 屏東縣立中正國民中學
-  grade: 7
-  subject: 數學
   city: 屏東
   school_short: 中正
+  school: 屏東縣立中正國民中學
   id: doc_113_屏東_中正_數學_g7s1e1
-  title: 屏東縣立中正國民中學 113學年度第1學期第1次定期評量7年級數學科試題
+  title: 屏東縣立中正國民中學 113學年度第1學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、 選擇題(共30分/每題3分)
+    name: 一、 選擇題(共30 分/每題3 分)
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(第1題每格3分,其餘每格4分,共50分)
+    name: 二、填充題(第1 題每格3 分，其餘每格4 分，共50 分)
     count: 9
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題(每題5分,共20分)
-    count: 3
+    name: 三、計算題(每題5 分，共20 分)
+    count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/1-1/屏東/中正.pdf
 questions:
 - id: doc_113_屏東_中正_數學_g7s1e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 將數線上-3和-4兩點之間的線段分成4等分,所得的3個等分點中,由左向右數第3個等分點4
+  stem: 將數線上－3 和－4 兩點之間的線段分成 4 等分，所得的 3 個等分點中，由左向右數第 3 個等分點所代表的數為何？
+  options:
+  - label: A
+    content: $-3\frac{1}{4}$
+  - label: B
+    content: $-3\frac{3}{4}$
+  - label: C
+    content: $-4\frac{1}{4}$
+  - label: D
+    content: $-4\frac{3}{4}$
 - id: doc_113_屏東_中正_數學_g7s1e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 比-8大的負整數共有幾個?
+  stem: 比－8 大的負整數共有幾個？
   options:
   - label: A
     content: '7'
@@ -53,14 +58,14 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 最小的正數是1,最大的負數是-1
+    content: 最小的正數是1，最大的負數是－1
   - label: B
-    content: 在數線上的點,若離原點愈遠,則表示 這個數愈大
+    content: 在數線上的點，若離原點愈遠，則表示這個數愈大
   - label: C
-    content: 當兩個數互為相反數,則此兩數與原點距離相等
+    content: 當兩個數互為相反數，則此兩數與原點距離相等
   - label: D
     content: 任何數的絕對值一定是正數
 - id: doc_113_屏東_中正_數學_g7s1e1_s1_4
@@ -68,82 +73,82 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 下列敘述何者錯誤?
+  stem: 下列敘述何者錯誤？
   options:
   - label: A
-    content: 整數的乘法具有分配律,整數的除法不具有分配律
+    content: 整數的乘法具有分配律，整數的除法不具有分配律
   - label: B
-    content: 同號的兩整數相除,其結 果為負數
+    content: 同號的兩整數相除，其結果為負數
   - label: C
-    content: 異號的兩整數相乘,其結果為負數
+    content: 異號的兩整數相乘，其結果為負數
   - label: D
-    content: aa為任意數,0× aa和0× (-aa)的結果都等於0
+    content: $a$為任意數，$0\times a$ 和$0\times (-a)$的結果都等於0
 - id: doc_113_屏東_中正_數學_g7s1e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 將6個-2做連續的乘法,可用指數的方式表示,應為下列何者?
+  stem: 將6 個－2 做連續的乘法，可用指數的方式表示，應為下列何者？
   options:
   - label: A
-    content: '-26'
+    content: $-2^{6}$
   - label: B
-    content: (-2)6
+    content: $(-2)^{6}$
   - label: C
-    content: 6−2
+    content: $6^{-2}$
   - label: D
-    content: (-2)× 6
+    content: $(-2)\times 6$
 - id: doc_113_屏東_中正_數學_g7s1e1_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 下列對科學記號的敘述何者正確?
+  stem: 下列對科學記號的敘述何者正確？
   options:
   - label: A
-    content: 1.1 × 10−2是科學記號的表示方法
+    content: $1.1 \times 10^{-2}$ 是科學記號的表示方法
   - label: B
-    content: 將6.07× 105乘開是5位數
+    content: 將$6.07\times 10^{5}$ 乘開是5 位數
   - label: C
-    content: 1.23× 10−5乘開是小於0的數
+    content: $1.23\times 10^{-5}$ 乘開是小於0 的數
   - label: D
-    content: 科學記號的表示方法,就是將一個正數表示成aa× 10nn的形式, 其中1<aa<10,且n為整數。
+    content: 科學記號的表示方法，就是將一個正數表示成$a\times 10^{n}$的形式，其中$1<a<10$，且n 為整數。
 - id: doc_113_屏東_中正_數學_g7s1e1_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若aa是-(-5)的相反數,bb是-|-12|的相反數,則aa-bb的值為下列何數?
+  stem: 若 $a$ 是－(－5)的相反數，$b$ 是－|－12|的相反數，則 $a-b$ 的值為下列何數？
   options:
   - label: A
     content: '17'
   - label: B
-    content: '-17'
+    content: －17
   - label: C
     content: '7'
   - label: D
-    content: '-7'
+    content: －7
 - id: doc_113_屏東_中正_數學_g7s1e1_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 數線上有P(6)、Q(-9)、R(4)、S(-5) 四個點,則下列線段何者最短?
+  stem: 數線上有 P(6)、Q(－9)、R(4)、S(－5) 四個點，則下列線段何者最短？
   options:
   - label: A
-    content: PPPP തതതത
+    content: $\overline{PQ}$
   - label: B
-    content: QQQQ തതതത
+    content: $\overline{QR}$
   - label: C
-    content: RRRR തതതത
+    content: $\overline{RS}$
   - label: D
-    content: PPPP തതതത 1
+    content: $\overline{PS}$
 - id: doc_113_屏東_中正_數學_g7s1e1_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: aa為整數,且12 < | aa | < 16 3 ,則aa可能的值有幾個?
+  stem: $a$ 為整數，且$12 < | a | < 16\frac{1}{3}$，則 $a$ 可能的值有幾個？
   options:
   - label: A
     content: '3'
@@ -158,91 +163,107 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 如果aa、b兩數為異號數,且 |- aa | = 2, | bb | = 3,則| aa | ×(-4)+ aa× bb−| − bb| 的值為下列何
-    數?
+  stem: 如果 $a$、b 兩數為異號數，且 |－ $a$ | = 2， | $b$ | = 3，則| $a$ | ×（－4）+ $a\times b-| -
+    b|$ 的值為下列何數？
   options:
   - label: A
     content: '17'
   - label: B
     content: '11'
   - label: C
-    content: '-1'
+    content: －1
   - label: D
-    content: '-17'
+    content: －17
 - id: doc_113_屏東_中正_數學_g7s1e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: (1)(-11)+6-(-11) = _____________。 (2) 3 × 9 × 27 × 81=3 □,則□=        。 (3)
-    |123-321|+|321-423|= _____________。  (4) (-32 ) +(-2) 2=              。 (5)(-26)×
-    75+(-26) × 25= _____________。  (6)(-8)+4 × | 12 ÷(-3)|=              。 ※尚有試題※
-    第1頁,共2頁                                                   七年級數學
+  stem: '(1)（－11）＋6－（－11） = _____________。
+
+    (2) $3 \times 9 \times 27 \times 81＝3^{\square}$，則$\square$＝________。
+
+    (3) |123－321|＋|321－423|= _____________。
+
+    (4) $(-3^{2} ) +(-2)^{2}$＝______________。
+
+    (5)（－26）× 75＋(－26) × 25= _____________。
+
+    (6)(－8)＋4 × | 12 ÷（－3）| ＝______________。'
 - id: doc_113_屏東_中正_數學_g7s1e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 若∣a∣的相反數為-5,則a可能是多少? 。
+  stem: 若∣a∣的相反數為－5，則 a 可能是多少？______________。
 - id: doc_113_屏東_中正_數學_g7s1e1_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 數線上有C(c)、D(5)兩點,若CCCC തതതത = 7,則c可能是多少?                  。
+  stem: 數線上有C(c)、D(5)兩點，若$\overline{CD} = 7$，則c 可能是多少？__________________。
 - id: doc_113_屏東_中正_數學_g7s1e1_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 已知A=8.9×102 、B=2.6×103 、C=5.6×10−2 、D=9.1×10−3請將此四數,由大到小依序排列 。(請寫代號)
+  stem: 已知 $A＝8.9\times 10^{2}$ 、$B＝2.6\times 10^{3}$ 、$C＝5.6\times 10^{-2}$ 、$D＝9.1\times
+    10^{-3}$ 請將此四數，由大到小依序排列__________________。(請寫代號)
 - id: doc_113_屏東_中正_數學_g7s1e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 以上午9點為基準,若當天下午1點記為+12,則當天上午7點記為               。
+  stem: 以上午 9 點為基準，若當天下午 1 點記為＋12，則當天上午 7 點記為_______________。
 - id: doc_113_屏東_中正_數學_g7s1e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 若a、b兩數滿足10aa = 100bb =100000000,則a+b=               。
+  stem: 若 a、b 兩數滿足 $10^{a} ＝ 100^{b} ＝100000000$，則 a＋b＝_______________。
 - id: doc_113_屏東_中正_數學_g7s1e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 某次考試有測驗題50題,答對一題得2分,答錯一題倒扣1分,不答不扣分,若佩玲僅做45題得72分, 則佩玲答對               題
+  stem: 某次考試有測驗題 50 題，答對一題得 2 分，答錯一題倒扣 1 分，不答不扣分，若佩玲僅做45 題得72 分，則佩玲答對_______________題
 - id: doc_113_屏東_中正_數學_g7s1e1_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 勇哥和禹彤分別在數線上表示-21、9的位置上,且同時面對面相向而行,若勇哥的速率是禹彤的2倍,則兩 人在數線上相遇的位置為               。
+  stem: 勇哥和禹彤分別在數線上表示－21、9 的位置上，且同時面對面相向而行，若勇哥的速率是禹彤的 2 倍，則兩人在數線上相遇的位置為_______________。
 - id: doc_113_屏東_中正_數學_g7s1e1_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: '數線上A(aa)、B(bb)、C(c)三點,若AAAA തതതത = 5,BBBB തതതത = 3,則| aa − c |=                。
-    1.  劃出一條數線,並標出下列各點: (數線包含原點、正向、單位長)'
+  stem: 數線上A($a$)、B($b$)、C(c)三點，若$\overline{AB} = 5$，$\overline{BC} = 3$，則| $a - c$
+    |=________________。
+- id: doc_113_屏東_中正_數學_g7s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '劃出一條數線，並標出下列各點： (數線包含原點、正向、單位長)
+
+    A(－4)、B(1.3)、C($-2\frac{2}{3}$)、D(3.25)'
 - id: doc_113_屏東_中正_數學_g7s1e1_s3_2
   section: 3
   number: 2
   type: calc
   page: 2
-  stem: 若17 1000000= 1.7×10aa ,7890000= 7.89 ×10bb ,0.00000051=5.1×10cc ,則aa + b +
-    c=?
+  stem: 若 $\frac{17}{1000000}＝ 1.7\times 10^{a}$ ，$7890000＝ 7.89 \times 10^{b}$ ，$0.00000051＝5.1\times
+    10^{c}$ ，則$a ＋ b ＋ c$＝？
 - id: doc_113_屏東_中正_數學_g7s1e1_s3_3
   section: 3
   number: 3
   type: calc
   page: 2
-  stem: 已知aa 、bb兩數皆為整數,且aa比bb小,若 | aa | +| bb | = 3,則aa + bb的和可能為多少?
+  stem: 已知 $a$ 、$b$ 兩數皆為整數，且 $a$ 比 $b$ 小，若 | $a$ | +| $b$ | = 3，則$a + b$的和可能為多少？
 - id: doc_113_屏東_中正_數學_g7s1e1_s3_4
   section: 3
   number: 4
   type: calc
   page: 2
-  stem: 計算|(-4) -8|-(-2)4×3×(-5)-[22+(-8)]÷7=? ※尚有試題※ 第2頁,共2頁                                                   七年級數學
+  stem: 計算｜(－4) －8｜－$(-2)^{4}\times 3\times(-5)$－[22＋(－8)]÷7＝？

@@ -1,68 +1,69 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 1
   exam_seq: 3
-  school: 高雄市立大灣國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 大灣
+  school: 高雄市立大灣國民中學
   id: doc_111_高雄_大灣_數學_g7s1e3
-  title: 高雄市立大灣國民中學 111學年度第1學期第3次定期評量7年級數學科試題
+  title: 高雄市立大灣國民中學 111學年度第1學期第3次定期評量 7年級數學科試題
   exam_name: 111學年度第1學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(共10題,每題3分,共30分)
+    name: 一、選擇題(共 10 題，每題 3 分，共 30 分)
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(共15格,每格4分,共60分)
+    name: 二、填充題(共 15 格，每格 4 分，共 60 分)
     count: 8
+  - ord: 3
+    name: 三、 計算題(共 2 題，每題 5 分，共 10 分)
+    count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/1-3/高雄/大灣.pdf
 questions:
 - id: doc_111_高雄_大灣_數學_g7s1e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 代數式 $\frac{x}{3}$
+  stem: 代數式$-\frac{x}{3}$與下列哪一個選項所代表的數相同？
   options:
   - label: A
-    content: $\frac{1}{3}$ x   −    
+    content: $x\div\left(-\frac{1}{3}\right)$
   - label: B
-    content: $\frac{1}{x}$ ( 3) − 
+    content: $(-3)\times\frac{1}{x}$
   - label: C
-    content: ( ) 3 x − 
+    content: $(-x)\div 3$
   - label: D
-    content: $\frac{1}{3}$ ( ) x   − −     Created by free version of DocuFreezer
+    content: $(-x)\times\left(-\frac{1}{3}\right)$
 - id: doc_111_高雄_大灣_數學_g7s1e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 如果大壯每天看書x頁,那麼下列哪一個敘述可以列式為80 3x − ?
+  stem: 如果大壯每天看書$x$頁，那麼下列哪一個敘述可以列式為 $80-3x$？
   options:
   - label: A
-    content: 看書3天的總頁數
+    content: 看書 3 天的總頁數
   - label: B
     content: 書本的總頁數
   - label: C
-    content: 已經看了80頁,再看3天後所剩下的頁數
+    content: 已經看了 80 頁，再看 3 天後所剩下的頁數
   - label: D
-    content: 書本共有80頁,看了3天後所剩下的頁數
+    content: 書本共有 80 頁，看了 3 天後所剩下的頁數
 - id: doc_111_高雄_大灣_數學_g7s1e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 若2 x =1+$\frac{x}{2}$ +$\frac{x}{3}$ +$\frac{x}{4}$ ,則x =?
+  stem: 若 $2x = 1+\frac{x}{2}+\frac{x}{3}+\frac{x}{4}$，則 $x = $？
   options:
   - label: A
-    content: $\frac{12}{11}$ −
+    content: $-\frac{12}{11}$
   - label: B
-    content: $\frac{11}{12}$ −
+    content: $-\frac{11}{12}$
   - label: C
     content: $\frac{12}{11}$
   - label: D
@@ -72,7 +73,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 解方程式(3 x +2)+2〔 (x -1)-(2 x +1) 〕=6,得x =?
+  stem: 解方程式 $(3x+2)+2〔(x-1)-(2x+1)〕=6$，得 $x = $？
   options:
   - label: A
     content: '2'
@@ -87,41 +88,41 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 如右圖,拿走哪一個積木後,它的右視圖不會改變?
+  stem: 如右圖，拿走哪一個積木後，它的右視圖不會改變？
   options:
   - label: A
-    content: 積木A
+    content: 積木 A
   - label: B
-    content: 積木B
+    content: 積木 B
   - label: C
-    content: 積木C
+    content: 積木 C
   - label: D
-    content: 積木D
+    content: 積木 D
   assets:
-  - key: p1_f01
+  - key: s1_5_f1
     kind: figure
-    file: doc_111_高雄_大灣_數學_g7s1e3/p1_f01.png
+    file: doc_111_高雄_大灣_數學_g7s1e3/s1_5_f1.png
 - id: doc_111_高雄_大灣_數學_g7s1e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 下列哪個選項為一元一次方程式?
+  stem: 下列哪個選項為一元一次方程式？
   options:
   - label: A
-    content: 2x-6
+    content: $2x-6$
   - label: B
-    content: 2x2+x-1=0
+    content: $2x^{2}+x-1=0$
   - label: C
-    content: 2x+y=1
+    content: $2x+y=1$
   - label: D
-    content: 7x=0
+    content: $7x=0$
 - id: doc_111_高雄_大灣_數學_g7s1e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 一年一班共有學生24人,某次考試及格同學的平均分數為80分,不及格學生的平均分數為40分,且全 班平均分數為60分,則及格人數為多少人?
+  stem: 一年一班共有學生 24 人，某次考試及格同學的平均分數為 80 分，不及格學生的平均分數為 40 分，且全班平均分數為 60 分，則及格人數為多少人？
   options:
   - label: A
     content: '10'
@@ -136,22 +137,22 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: -11與22兩數各減一個相同的數之後,所得新的兩數互為相反數,若所減的數為x ,則依題意可列出下 列哪一個算式?
+  stem: －11 與 22 兩數各減一個相同的數之後，所得新的兩數互為相反數，若所減的數為 $x$ ，則依題意可列出下列哪一個算式？
   options:
   - label: A
-    content: (-11-x)(22-x)=0
+    content: $(-11-x)(22-x)=0$
   - label: B
-    content: (-11-x)-(22-x)=0
+    content: $(-11-x)-(22-x)=0$
   - label: C
-    content: (-11-x)+(22-x)=0
+    content: $(-11-x)+(22-x)=0$
   - label: D
-    content: $\frac{−11−x}{22−x}$ =1
+    content: $\frac{-11-x}{22-x}=1$
 - id: doc_111_高雄_大灣_數學_g7s1e3_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 已知某次數學競賽,試題共有20題,每答對一題可得5分,但若答錯一題要倒扣1分,而沒有作答不 計分。若喪彪只有2題沒作答,共得66分,則他這次競賽共答對多少題?
+  stem: 已知某次數學競賽，試題共有 20 題，每答對一題可得 5 分，但若答錯一題要倒扣 1 分，而沒有作答不計分。若喪彪只有 2 題沒作答，共得 66 分，則他這次競賽共答對多少題？
   options:
   - label: A
     content: '13'
@@ -166,86 +167,121 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 下列選項中有一張紙片會與右圖緊密拼湊成正方形紙片,且正方形上的黑色區域會 形成一個線對稱圖形,則此紙片為何?
+  stem: 下列選項中有一張紙片會與右圖緊密拼湊成正方形紙片，且正方形上的黑色區域會形成一個線對稱圖形，則此紙片為何？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_111_高雄_大灣_數學_g7s1e3/1_10_optA.png
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_111_高雄_大灣_數學_g7s1e3/1_10_optB.png
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_111_高雄_大灣_數學_g7s1e3/1_10_optC.png
   - label: D
-    content: 第1頁,共2頁 一數3
+    content: ''
+    asset:
+      key: optD
+      file: doc_111_高雄_大灣_數學_g7s1e3/1_10_optD.png
   assets:
-  - key: p1_f02
+  - key: s1_10_f1
     kind: figure
-    file: doc_111_高雄_大灣_數學_g7s1e3/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_111_高雄_大灣_數學_g7s1e3/p1_f03.png
-  - key: p1_f04
-    kind: figure
-    file: doc_111_高雄_大灣_數學_g7s1e3/p1_f04.png
-  - key: p1_f05
-    kind: figure
-    file: doc_111_高雄_大灣_數學_g7s1e3/p1_f05.png
-  - key: p1_f06
-    kind: figure
-    file: doc_111_高雄_大灣_數學_g7s1e3/p1_f06.png
+    file: doc_111_高雄_大灣_數學_g7s1e3/s1_10_f1.png
 - id: doc_111_高雄_大灣_數學_g7s1e3_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: '化簡下列各式: (1) 5 6 2 4 x x − + + =  ○ 1  。 (2) $\frac{3}{5}$ ( 8 ) ( ) x − −
-    =  ○ 2  。 (3) ( 3 1) 2(5 1) x x − + − − =  ○ 3  。 (4) $\frac{3x−1}{2}$ $\frac{2x+5}{3}$
-    − =  ○ 4  。'
+  stem: '化簡下列各式：
+
+    (1) $5x-6+2x+4 =$ ① 。
+
+    (2) $(-8x)\div(-\frac{3}{5}) =$ ② 。
+
+    (3) $(-3x+1)-2(5x-1) =$ ③ 。
+
+    (4) $\frac{3x-1}{2}-\frac{2x+5}{3} =$ ④ 。'
 - id: doc_111_高雄_大灣_數學_g7s1e3_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: '解下列各一元一次方程式: (1) 7 40 9 56 x x + = − ,x =  ○ 5  。 (2) 3( 40) 100 40 x x −
-    = − + ,x =  ○ 6  。 (3) $\frac{2x−3}{4}$ $\frac{x+2}{6}$ x − = −,x =  ○ 7  。 (4)
-    $\frac{x+1}{3}$ 3 x − = ,x=  ○ 8  。'
+  stem: '解下列各一元一次方程式：
+
+    (1) $7x+40=9x-56$，$x =$ ⑤ 。
+
+    (2) $3(x-40)=100-x+40$，$x =$ ⑥ 。
+
+    (3) $\frac{2x-3}{4}-\frac{x+2}{6}=-x$，$x =$ ⑦ 。
+
+    (4) $x-\frac{x+1}{3}=3$，$x =$ ⑧ 。'
 - id: doc_111_高雄_大灣_數學_g7s1e3_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 已知三個連續奇數的和為195,如果設三數中最小的奇數為x ,則x =  ○ 9  。
+  stem: 已知三個連續奇數的和為195，如果設三數中最小的奇數為$x$ ，則$x =$ ⑨ 。
 - id: doc_111_高雄_大灣_數學_g7s1e3_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 小帥從家中至大灣國中打籃球,已知去程每小時平均6公里,但因打球消耗許多體力,回程時降為每小 時平均4公里,而來回一趟共需1小時40分,請問小帥家距離大灣國中為  ○
-    10  公里。
+  stem: 小帥從家中至大灣國中打籃球，已知去程每小時平均6公里，但因打球消耗許多體力，回程時降為每小時平均4公里，而來回一趟共需1小時40分，請問小帥家距離大灣國中為
+    ⑩ 公里。
 - id: doc_111_高雄_大灣_數學_g7s1e3_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 如右圖,在等腰三角形ABC中,已知∠C=40°,則∠B=  ○ 11  度; 如果CD=4,則BD=  ○ 12  公分。
+  stem: '如右圖，在等腰三角形 ABC 中，已知$\angle C=40^{\circ}$，則$\angle B=$ ⑪ 度；
+
+    如果$\overline{CD}=4$，則$\overline{BD}=$ ⑫ 公分。'
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_111_高雄_大灣_數學_g7s1e3/s2_5_f1.png
 - id: doc_111_高雄_大灣_數學_g7s1e3_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 有一個二位數,個位數字比十位數字大3,若此二位數加2,則等於個位數字的7倍, 原二位數為   ○ 13  。
+  stem: 有一個二位數，個位數字比十位數字大 3，若此二位數加 2，則等於個位數字的 7 倍，原二位數為 ⑬ 。
 - id: doc_111_高雄_大灣_數學_g7s1e3_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 鬍子哥買了3碗紅豆豆花,每碗是x元,他拿了一張伍佰元的鈔票付錢,老闆找他416元,那麼一碗 紅豆豆花是   ○ 14  元。
+  stem: 鬍子哥買了 3 碗紅豆豆花，每碗是 $x$ 元，他拿了一張伍佰元的鈔票付錢，老闆找他 416 元，那麼一碗紅豆豆花是 ⑭ 元。
 - id: doc_111_高雄_大灣_數學_g7s1e3_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 如圖中,A、B為直線L上的相異兩點,C點為直線L外的一點,且AB =10,C點與 直線L的距離為8,則△ABC的面積為   ○ 15  。 三、 計算題(共2題,每題5分,共10分)
-    1. 火車以300km/hr行駛,出發30分鐘後故障停駛,請工人維修20分鐘後復駛,但速度剩下原來的$\frac{4}{5}$ 比原先預計晚了40分鐘。問火車行駛的距離為多少公里?
-    2. 右圖是一個線對稱圖形的一半,L是其對稱軸。在方格中分別找到B、C、D、E點的對稱點G、H、I、J點,並連接AG 、GH 、HI 、IJ 、JF 。 <試
-    題 結 束> 第2頁,共2頁 一數3 Created by free version of DocuFreezer A B C D C A B L ,抵達終點時A
-    B C D F E L
+  stem: 如圖中，$A$、$B$ 為直線 $L$ 上的相異兩點，$C$ 點為直線 $L$ 外的一點，且$\overline{AB}=10$，$C$ 點與直線
+    $L$ 的距離為 8，則$\triangle ABC$ 的面積為 ⑮ 。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_111_高雄_大灣_數學_g7s1e3/s2_8_f1.png
+- id: doc_111_高雄_大灣_數學_g7s1e3_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 火車以300km/hr行駛，出發30分鐘後故障停駛，請工人維修20分鐘後復駛，但速度剩下原來的$\frac{4}{5}$，抵達終點時比原先預計晚了40分鐘。問火車行駛的距離為多少公里？
+- id: doc_111_高雄_大灣_數學_g7s1e3_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 右圖是一個線對稱圖形的一半，$L$ 是其對稱軸。在方格中分別找到 $B$、$C$、$D$、$E$ 點的對稱點 $G$、$H$、$I$、$J$ 點，並連接$\overline{AG}$、$\overline{GH}$、$\overline{HI}$、$\overline{IJ}$、$\overline{JF}$。
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_111_高雄_大灣_數學_g7s1e3/s3_2_f1.png

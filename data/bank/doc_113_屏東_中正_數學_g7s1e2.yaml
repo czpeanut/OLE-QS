@@ -1,38 +1,34 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 2
-  school: 屏東縣立中正國民中學
-  grade: 7
-  subject: 數學
   city: 屏東
   school_short: 中正
+  school: 屏東縣立中正國民中學
   id: doc_113_屏東_中正_數學_g7s1e2
-  title: 屏東縣立中正國民中學 113學年度第1學期第2次定期評量7年級數學科試題
+  title: 屏東縣立中正國民中學 113學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、單一選擇題
-    type: single
-    score_rule: 一、單一選擇題(每題4分,共40分)
+    name: 一、單一選擇題(每題4分，共40分)
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(每格4分,共40分)
+    name: 二、填充題(每格4分，共40分)
     count: 10
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題(每題5分,共20分)
+    name: 三、計算題(每題5分，共20分)
     count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/1-2/屏東/中正.pdf
 questions:
 - id: doc_113_屏東_中正_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 右列哪一個數的因數個數不是偶數?
+  stem: 右列哪一個數的因數個數不是偶數？
   options:
   - label: A
     content: '104'
@@ -47,22 +43,23 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 已知3927有一質因數為11,則下列何者正確?
+  stem: 已知 3927 有一質因數為 11，則下列何者正確？
   options:
   - label: A
-    content: 11是3927最大的質因數
+    content: 11 是 3927 最大的質因數
   - label: B
-    content: 11是3927最小的質因數
+    content: 11 是 3927 最小的質因數
   - label: C
-    content: 3927有3個相異質因數
+    content: 3927 有 3 個相異質因數
   - label: D
-    content: 3927有4個相異質因數
+    content: 3927 有 4 個相異質因數
 - id: doc_113_屏東_中正_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 老師將點心67包餅乾和84條果凍平分給班上的學生,結果餅乾多出7包,果凍不夠6條,若學生 人數最多有p人,最少有q人,則p-q=?
+  stem: 老師將點心 67 包餅乾和 84 條果凍平分給班上的學生，結果餅乾多出 7 包，果凍不夠 6 條，若學生人數最多有 $p$ 人，最少有 $q$ 人，則
+    $p-q=$ ？
   options:
   - label: A
     content: '15'
@@ -77,7 +74,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 若x、66兩數與30、44兩數有相同的最大公因數和最小公倍數,則x=?
+  stem: 若 $x$、66 兩數與 30、44 兩數有相同的最大公因數和最小公倍數，則 $x=$ ？
   options:
   - label: A
     content: '20'
@@ -92,28 +89,29 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 0為12的倍數
+    content: 0 為 12 的倍數
   - label: B
-    content: 若a和b互質,則a、b必為質數
+    content: 若 $a$ 和 $b$ 互質，則 $a$、$b$ 必為質數
   - label: C
-    content: -1$\frac{2}{5}$ 的倒數為-1$\frac{5}{2}$
+    content: $-1\frac{2}{5}$ 的倒數為 $-1\frac{5}{2}$
   - label: D
-    content: (-5)6×(-26)=[(-5)×(-2)] 6 11,乙=- $\frac{6}{(1C1)+1}$ ,丙=-$\frac{6+1}{11}$
-      ,丁=-$\frac{6+1}{11+1}$ ,則這四數中最小的是哪一個?
+    content: $(-5)^{6}\times(-2^{6})=[(-5)\times(-2)]^{6}$
 - id: doc_113_屏東_中正_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 已知甲=-6
+  stem: 已知甲 $=-\frac{6}{11}$，乙 $=-\frac{6}{11+1}$，丙 $=-\frac{6+1}{11}$，丁 $=-\frac{6+1}{11+1}$，則這四數中最小的是哪一個？
   options:
   - label: A
     content: 甲
   - label: B
-    content: 乙     丙
+    content: 乙
+  - label: C
+    content: 丙
   - label: D
     content: 丁
 - id: doc_113_屏東_中正_數學_g7s1e2_s1_7
@@ -121,22 +119,22 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: -4 $\frac{1}{3}$ 與下列哪一個算式的值相同?
+  stem: $-4\frac{1}{3}$ 與下列哪一個算式的值相同？
   options:
   - label: A
-    content: -4- $\frac{1}{3}$
+    content: $-4-\frac{1}{3}$
   - label: B
-    content: -4+ $\frac{1}{3}$
+    content: $-4+\frac{1}{3}$
   - label: C
-    content: -5- $\frac{2}{3}$
+    content: $-5-\frac{2}{3}$
   - label: D
-    content: -5+ $\frac{1}{3}$
+    content: $-5+\frac{1}{3}$
 - id: doc_113_屏東_中正_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 如果$\frac{6}{10}$ 的分子加上21,那麼分母要加上多少,其值才不會變?
+  stem: 如果 $\frac{6}{10}$ 的分子加上 21，那麼分母要加上多少，其值才不會變？
   options:
   - label: A
     content: '21'
@@ -151,123 +149,125 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 若a=84,b=56,c=274,則a、b、c的大小關係為何?
+  stem: 若 $a=8^{4}$，$b=5^{6}$，$c=27^{4}$，則 $a$、$b$、$c$ 的大小關係為何？
   options:
   - label: A
-    content: b>c>a
+    content: $b>c>a$
   - label: B
-    content: a>b>c
+    content: $a>b>c$
   - label: C
-    content: c>b>a
+    content: $c>b>a$
   - label: D
-    content: a>c>b
+    content: $a>c>b$
 - id: doc_113_屏東_中正_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 已知p=(-$\frac{5}{3}$ )2,q=(-$\frac{5}{3}$ )3,r=(-$\frac{5}{3}$ )4,則下列何者正確?
+  stem: 已知 $p=(-\frac{5}{3})^{2}$，$q=(-\frac{5}{3})^{3}$，$r=(-\frac{5}{3})^{4}$，則下列何者正確？
   options:
   - label: A
-    content: p>q>r
+    content: $p>q>r$
   - label: B
-    content: q>p>r
+    content: $q>p>r$
   - label: C
-    content: r>p>q
+    content: $r>p>q$
   - label: D
-    content: p>r>q
+    content: $p>r>q$
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 將66×78×104做質因數分解,並以標準分解式表示為____________。
+  stem: 將 $66\times78\times104$ 做質因數分解，並以標準分解式表示為____________。
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: 小賀用六位數179928的標準分解式2a×b3×c2×17d,將abcd作為筆電鎖的密碼,則密碼為____________
+  stem: 小賀用六位數 179928 的標準分解式 $2^{a}\times b^{3}\times c^{2}\times 17^{d}$，將 $abcd$
+    作為筆電鎖的密碼，則密碼為____________
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: 8316所有相異質因數之和為____________。
+  stem: 8316 所有相異質因數之和為____________。
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 1
-  stem: '[22×3×72 , 22×53×7 , 2×32×52×112] =____________。(標準分解式表示)'
+  stem: '[$2^{2}\times3\times7^{2}$ , $2^{2}\times5^{3}\times7$ , $2\times3^{2}\times5^{2}\times11^{2}$]
+    ＝____________。(標準分解式表示)'
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 1
-  stem: 已知a=22×3 □×7,其中a是63的倍數,但不是54的倍數,且□為正整數,則a=____________。
+  stem: 已知 $a=2^{2}\times3^{\square}\times7$，其中 $a$ 是 63 的倍數，但不是 54 的倍數，且 $\square$
+    為正整數，則 $a=$____________。
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 1
-  stem: 大寶每6天回家一趟,二寶每4天回家一趟,小寶每3天回家一趟,如果三人某次同時回家時正好是星期 三,那麼下次同時星期三回家是____________天之後。
-    【背面還有試題】 第1頁,共2頁 七年級數學
+  stem: 大寶每 6 天回家一趟，二寶每 4 天回家一趟，小寶每 3 天回家一趟，如果三人某次同時回家時正好是星期三，那麼下次同時星期三回家是____________天之後。
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 計算 $\frac{7}{6}$ ÷∣ $\frac{1}{3}$ -2∣+6 $\frac{2}{3}$ ×(- $\frac{4}{5}$ )
-    的值=____________。
+  stem: 計算 $\frac{7}{6}\div|\frac{1}{3}-2|+6\frac{2}{3}\times(-\frac{4}{5})$ 的值＝____________。
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 已知a=- $\frac{2}{17}$ ,b=- $\frac{5}{43}$ ,c=- $\frac{3}{25}$ ,則a、b、c三數的大小關係為____________。
+  stem: 已知 $a=-\frac{2}{17}$，$b=-\frac{5}{43}$，$c=-\frac{3}{25}$，則 $a$、$b$、$c$ 三數的大小關係為____________。
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 計算 (- $\frac{1}{3}$ )3÷(- $\frac{1}{3}$ )2×(-9)2+43的值=____________。
+  stem: 計算 $(-\frac{1}{3})^{3}\div(-\frac{1}{3})^{2}\times(-9)^{2}+4^{3}$ 的值＝____________。
 - id: doc_113_屏東_中正_數學_g7s1e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 已知A=84×513,則A是____________位數。
+  stem: 已知 $A=8^{4}\times5^{13}$，則 $A$ 是____________位數。
 - id: doc_113_屏東_中正_數學_g7s1e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: 亮亮利用短除法做質因數分解,不小心弄髒部分地方,造成有些數字不見了,如右圖, 求B、C、D、E的值,並寫出A的標準分解式。(每個答案一分,共5分)
-    【解】
+  stem: '亮亮利用短除法做質因數分解，不小心弄髒部分地方，造成有些數字不見了，如右圖，
+
+    求 $B$、$C$、$D$、$E$ 的值，並寫出 A 的標準分解式。(每個答案一分，共5分)'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_屏東_中正_數學_g7s1e2/s3_1_f1.png
 - id: doc_113_屏東_中正_數學_g7s1e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 2
-  stem: '水果店有72個梨子、84個蘋果、108個橘子,老闆想分裝成梨子禮盒、蘋果禮盒、橘子禮盒出售,三種 水果禮盒內的水果個數要一樣多,且全部分裝完。那麼:
-    (1)一盒最多可以放幾個水果?(3分)   (2)老闆共要準備多少個禮盒?(2分) 【解】 2 $\frac{06A660}{31990563}$ 3 $\frac{651}{D8E5}$
-    7 B C'
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_113_屏東_中正_數學_g7s1e2/p2_f01.png
+  stem: '水果店有 72 個梨子、84 個蘋果、108 個橘子，老闆想分裝成梨子禮盒、蘋果禮盒、橘子禮盒出售，三種水果禮盒內的水果個數要一樣多，且全部分裝完。那麼：
+
+    (1)一盒最多可以放幾個水果？(3分)   (2)老闆共要準備多少個禮盒？(2分)'
 - id: doc_113_屏東_中正_數學_g7s1e2_s3_3
   section: 3
   number: 3
   type: calc
   page: 2
-  stem: 計算3 $\frac{11}{13}$ ×(-59)-1 $\frac{11}{13}$ ×(-59) +4 $\frac{1}{5}$ ×139+4
-    $\frac{1}{5}$ ×(-39)的值。(5分) 【解】
+  stem: 計算 $3\frac{11}{13}\times(-59)-1\frac{11}{13}\times(-59)+4\frac{1}{5}\times139+4\frac{1}{5}\times(-39)$
+    的值。(5分)
 - id: doc_113_屏東_中正_數學_g7s1e2_s3_4
   section: 3
   number: 4
   type: calc
   page: 2
-  stem: 計算 (-$\frac{18}{11}$ )8×($\frac{11}{6}$ )8÷(-3)5+(-$\frac{4}{3}$ )5×(-$\frac{9}{8}$
-    )5÷($\frac{3}{2}$ )3的值。(5分) 【解】 【試題結束】 第2頁,共2頁 七年級數學
+  stem: 計算 $(-\frac{18}{11})^{8}\times(\frac{11}{6})^{8}\div(-3)^{5}+(-\frac{4}{3})^{5}\times(-\frac{9}{8})^{5}\div(\frac{3}{2})^{3}$
+    的值。(5分)
