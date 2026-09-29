@@ -16,6 +16,11 @@
 
 用法:
     python scripts/build_review_site.py data/bank --assets data/assets -o out/review
+
+整個題庫超過單一網頁的容量（256 MB）時，依年級分站：
+    python scripts/build_review_site.py data/bank --assets data/assets -o out/review7 \
+        --grade 7 --sites 7=<國一網址>,8=<國二網址>,9=<國三網址>
+每站只放該年級，但認得其他年級的審題編號，輸入時會連到對的那一站。
 """
 
 from __future__ import annotations
@@ -42,7 +47,8 @@ except ImportError:
     sys.exit("需要 Pillow，請先執行：pip install pillow")
 
 CROCKFORD = "0123456789ABCDEFGHJKMNPQRSTVWXYZ"   # 去掉 I L O U，唸出來不會混淆
-MAX_WIDTH = 900
+MAX_WIDTH = 800
+GRADE_LABEL = {7: "國一", 8: "國二", 9: "國三"}
 
 
 def code_of(qid: str, length: int = 6) -> str:
@@ -54,6 +60,11 @@ def code_of(qid: str, length: int = 6) -> str:
     return out
 
 
+def is_gray(im) -> bool:
+    small = im.resize((48, 48))
+    return max(max(px) - min(px) for px in small.getdata()) < 24
+
+
 def webp_data_uri(path: Path) -> str | None:
     if not path.is_file():
         return None
@@ -61,10 +72,12 @@ def webp_data_uri(path: Path) -> str | None:
         im = Image.open(path)
         if im.width > MAX_WIDTH:
             im = im.resize((MAX_WIDTH, round(im.height * MAX_WIDTH / im.width)), Image.LANCZOS)
-        if im.mode not in ("RGB", "RGBA"):
+        if im.mode not in ("RGB", "RGBA", "L"):
             im = im.convert("RGBA" if "transparency" in im.info else "RGB")
+        if im.mode == "RGB" and is_gray(im):
+            im = im.convert("L")                 # 考卷圖多半是黑白線條圖，灰階省下約兩成
         buf = io.BytesIO()
-        im.save(buf, "WEBP", quality=72, method=4)
+        im.save(buf, "WEBP", quality=65, method=6)
         return "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode()
     except Exception:
         return None
@@ -76,7 +89,10 @@ def main() -> int:
     ap.add_argument("bank", type=Path)
     ap.add_argument("--assets", type=Path, required=True)
     ap.add_argument("-o", "--out", type=Path, required=True)
+    ap.add_argument("--grade", type=int, help="只放這個年級（7、8、9）")
+    ap.add_argument("--sites", default="", help="各年級網址，如 7=https://…,8=https://…")
     args = ap.parse_args()
+    sites = dict(kv.split("=", 1) for kv in args.sites.split(",") if "=" in kv)
 
     out = args.out
     (out / "data" / "g").mkdir(parents=True, exist_ok=True)
@@ -90,6 +106,12 @@ def main() -> int:
                m.get("academic_year_roc"), m.get("semester"), m.get("exam_seq"))
         groups[key].append(d)
 
+    elsewhere: dict[str, int] = {}      # 其他年級站的審題編號 → 年級
+    if args.grade:
+        for key in [k for k in groups if k[0] != args.grade]:
+            for d in groups.pop(key):
+                for q in d.get("questions") or []:
+                    elsewhere[code_of(q["id"])] = key[0]
     codes: dict[str, str] = {}          # 審題編號 → 題目 ID
     code_group: dict[str, int] = {}     # 審題編號 → 段考檔序號
     index_groups = []
@@ -180,7 +202,9 @@ def main() -> int:
                              "year": year, "sem": sem, "exam": exam, "papers": summary})
 
     (out / "data" / "index.json").write_text(json.dumps(
-        {"groups": index_groups, "codes": code_group}, ensure_ascii=False,
+        {"groups": index_groups, "codes": code_group, "elsewhere": elsewhere,
+         "sites": {int(k): v for k, v in sites.items()},
+         "label": GRADE_LABEL.get(args.grade)}, ensure_ascii=False,
         separators=(",", ":")), encoding="utf-8")
     (out / "codes.json").write_text(json.dumps(codes, ensure_ascii=False, indent=0),
                                     encoding="utf-8")

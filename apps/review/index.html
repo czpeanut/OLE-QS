@@ -226,6 +226,7 @@ async function loadIndex(){
   INDEX = await r.json();
   const nPapers = INDEX.groups.reduce((a,g)=>a+g.papers.length,0);
   const nQ = INDEX.groups.reduce((a,g)=>a+g.papers.reduce((b,p)=>b+p.n,0),0);
+  if (INDEX.label) { $("h1").textContent = `題庫審題台・${INDEX.label}`; document.title = `題庫審題台・${INDEX.label}`; }
   $("#builtInfo").textContent = `${INDEX.groups.length} 場段考・${nPapers} 份卷・${nQ.toLocaleString()} 題`;
   buildFilters();
 }
@@ -461,7 +462,15 @@ $("#copyAll").addEventListener("click", e => {
 async function jumpTo(code){
   code = String(code || "").trim().toUpperCase();
   const gi = INDEX && INDEX.codes[code];
-  if (gi === undefined) { $("#jumpMsg").textContent = `找不到編號 ${code}`; return; }
+  if (gi === undefined) {
+    const other = INDEX && INDEX.elsewhere && INDEX.elsewhere[code];
+    const site = other && INDEX.sites && INDEX.sites[other];
+    if (other) $("#jumpMsg").innerHTML = site
+      ? `編號 ${esc(code)} 在<a href="${esc(site)}#${esc(code)}" target="_top">${esc(GRADE_NAME[other] || other)}的審題台</a>`
+      : `編號 ${esc(code)} 在${esc(GRADE_NAME[other] || other)}的審題台`;
+    else $("#jumpMsg").textContent = `找不到編號 ${code}`;
+    return;
+  }
   $("#jumpMsg").textContent = "";
   const g = await loadGroup(gi);
   const P = g.papers.find(p => p.q.some(q => q.c === code));
