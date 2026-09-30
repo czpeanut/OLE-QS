@@ -172,7 +172,9 @@ def ask(model_spec: str, prompt: str, images: list[tuple[str, Path]]) -> tuple[d
     return out, cost
 
 
-def norm(ans: str | None, qtype: str) -> str:
+def norm(ans, qtype: str) -> str:
+    if isinstance(ans, list):
+        ans = "；".join(str(x) for x in ans) if qtype == "fill" else "".join(str(x) for x in ans)
     s = str(ans or "").strip().upper()
     if qtype in ("single", "multiple"):
         return "".join(sorted(set(re.findall(r"[A-H]", s))))
