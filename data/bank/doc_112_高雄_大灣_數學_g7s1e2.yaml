@@ -1,33 +1,35 @@
 document:
-  semester: 1
-  exam_seq: 2
-  school: 高雄市立大灣國民中學
   grade: 7
   subject: 數學
   academic_year_roc: 112
+  semester: 1
+  exam_seq: 2
   city: 高雄
   school_short: 大灣
+  school: 高雄市立大灣國民中學
   id: doc_112_高雄_大灣_數學_g7s1e2
-  title: 高雄市立大灣國民中學 112學年度第1學期第2次定期評量7年級數學科試題
+  title: 高雄市立大灣國民中學 112學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 112學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、單一選擇題
-    type: single
-    score_rule: 一、單一選擇題 (每題3分,共90分)ˊ
+    name: 一、單一選擇題 （每題3 分，共90 分）ˊ
     count: 30
   - ord: 2
-    name: 二、非選題
-    type: calc
-    score_rule: 二.非選題(每題5分;共2題,小計10分)請列出完整計算過程;否則不計分
-    count: 0
+    name: 二.非選題(每題5 分;共2 題,小計10 分)請列出完整計算過程;否則不計分
+    count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/112/1-2/高雄/大灣.pdf
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列哪一個數是2的倍數也是11的倍數?
+  stem: 下列哪一個數是 2 的倍數也是 11 的倍數？
   options:
   - label: A
     content: '1568'
@@ -36,43 +38,73 @@ questions:
   - label: C
     content: '2468'
   - label: D
-    content: 3456。
+    content: '3456'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
     content: 奇數一定是質數
   - label: B
     content: 合數一定是偶數
   - label: C
-    content: 篩檢小於100的質數,只需使用2、3、5、7篩檢即可
+    content: 篩檢小於 100 的質數，只需使用 2、3、5、7 篩檢即可
   - label: D
-    content: 91不是2、3、5的倍數,所以91是質數。
+    content: 91 不是 2、3、5 的倍數，所以 91 是質數
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 下列式子何者正確?
+  stem: 下列式子何者正確？
   options:
   - label: A
-    content: 28×38=58
+    content: $2^{8}\times 3^{8}=5^{8}$
   - label: B
-    content: 38÷35=33
+    content: $3^{8}\div 3^{5}=3^{3}$
   - label: C
-    content: (28)3=211
+    content: $(2^{8})^{3}=2^{11}$
   - label: D
-    content: 34×35=320。
+    content: $3^{4}\times 3^{5}=3^{20}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 妙妙買進了126個茶杯,平均分裝於若干個盒子內。若每個盒子內的茶杯數均為x,則x不可能為下列哪一數?
+  stem: 妙妙買進了 126 個茶杯，平均分裝於若干個盒子內。若每個盒子內的茶杯數均為 $x$，則 $x$ 不可能為下列哪一數？
   options:
   - label: A
     content: '3'
@@ -81,28 +113,48 @@ questions:
   - label: C
     content: '9'
   - label: D
-    content: 11。 Created by trial version of DocuFreezer
+    content: '11'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 已知一最簡分數介於$\frac{1}{6}$ 與$\frac{1}{81}$ 之間,且其分母為48,則此最簡分數是多少?
+  stem: 已知一最簡分數介於 $\frac{1}{6}$ 與 $\frac{1}{8}$ 之間，且其分母為 48，則此最簡分數是多少？
   options:
+  - label: A
+    content: $\frac{5}{48}$
   - label: B
     content: $\frac{7}{48}$
   - label: C
-    content: $\frac{1}{48}$
+    content: $\frac{11}{48}$
   - label: D
-    content: $\frac{13}{48}$ 。
-  - label: A
-    content: $\frac{5}{498}$
+    content: $\frac{13}{48}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 算式22 +$\frac{11}{18}$ -($\frac{23}{22}$ -$\frac{7}{18}$ )之值為何?
+  stem: 算式 $\frac{9}{22}+\frac{11}{18}-(\frac{23}{22}-\frac{7}{18})$ 之值為何？
   options:
   - label: A
     content: $\frac{4}{11}$
@@ -111,13 +163,23 @@ questions:
   - label: C
     content: $\frac{1}{9}$
   - label: D
-    content: $\frac{5}{4}$ 。
+    content: $\frac{5}{4}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 小綺生日時得到一副撲克牌,每張撲克牌都是長為5公分、寬為3公分,小綺想用撲克牌拼出一個最小的正方形,如 圖,她至少要用幾張牌才能完成呢?
+  stem: 小綺生日時得到一副撲克牌，每張撲克牌都是長為 5 公分、寬為 3 公分，小綺想用撲克牌拼出一個最小的正方形，如圖，她至少要用幾張牌才能完成呢？
   options:
   - label: A
     content: '60'
@@ -126,17 +188,27 @@ questions:
   - label: C
     content: '15'
   - label: D
-    content: 6。
+    content: '6'
   assets:
-  - key: p1_f01
+  - key: s1_7_f1
     kind: figure
-    file: doc_112_高雄_大灣_數學_g7s1e2/p1_f01.png
+    file: doc_112_高雄_大灣_數學_g7s1e2/s1_7_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 23×25×(23)5=2m,則m=?
+  stem: $2^{3}\times 2^{5}\times (2^{3})^{5}=2^{m}$，則 $m=$？
   options:
   - label: A
     content: '16'
@@ -145,92 +217,152 @@ questions:
   - label: C
     content: '23'
   - label: D
-    content: 25。
+    content: '25'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 在下列各選項中,哪一選項的數全部都是質數?
+  stem: 在下列各選項中，哪一選項的數全部都是質數？
   options:
   - label: A
     content: 31、37、47、51
   - label: B
     content: 47、53、59、69
   - label: C
-    content: 53、59、67、 73
+    content: 53、59、67、73
   - label: D
-    content: 67、73、83、87。
+    content: 67、73、83、87
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 一個長方形的長為$\frac{2}{3}$ ,面積為$\frac{7}{5}$ ,則長方形的寬為多少?
+  stem: 一個長方形的長為 $\frac{2}{3}$，面積為 $\frac{7}{5}$，則長方形的寬為多少？
   options:
+  - label: A
+    content: $\frac{3}{10}$
   - label: B
     content: $\frac{21}{10}$
   - label: C
     content: $\frac{21}{5}$
   - label: D
-    content: $\frac{3}{7}$ 。
-  - label: A
-    content: $\frac{3}{10}$
+    content: $\frac{3}{7}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 某生將一正整數a分解成質因數相乘,計算過程如圖。則下列哪一個選項是正確的?
+  stem: 某生將一正整數 $a$ 分解成質因數相乘，計算過程如圖。則下列哪一個選項是正確的？
   options:
   - label: A
-    content: b=22×32×52×7
+    content: $b=2^{2}\times 3^{2}\times 5^{2}\times 7$
   - label: B
-    content: c=32×52×7
+    content: $c=3^{2}\times 5^{2}\times 7$
   - label: C
-    content: e=32×52×7
+    content: $e=3^{2}\times 5^{2}\times 7$
   - label: D
-    content: f=5×7。 和乙身上錢的 $\frac{1}{2}$ 一樣多,且已知乙身上有600元,則甲身上有多少錢?
+    content: $f=5\times 7$
   assets:
-  - key: p1_f02
+  - key: s1_11_f1
     kind: figure
-    file: doc_112_高雄_大灣_數學_g7s1e2/p1_f02.png
+    file: doc_112_高雄_大灣_數學_g7s1e2/s1_11_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: 若甲身上錢的 $\frac{1}{3}$
+  stem: 若甲身上錢的 $\frac{1}{3}$ 和乙身上錢的 $\frac{1}{2}$ 一樣多，且已知乙身上有 600 元，則甲身上有多少錢？
   options:
   - label: A
-    content: 800元
+    content: 800 元
   - label: B
-    content: 900元
+    content: 900 元
   - label: C
-    content: 1000元
+    content: 1000 元
   - label: D
-    content: 1200元。
+    content: 1200 元
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 下列哪一個是24×52×11和22×33×74的最小公倍數?
+  stem: 下列哪一個是 $2^{4}\times 5^{2}\times 11$ 和 $2^{2}\times 3^{3}\times 7^{4}$ 的最小公倍數？
   options:
   - label: A
-    content: '24'
+    content: $2^{4}$
   - label: B
-    content: 22×3×5×7×11
+    content: $2^{2}\times 3\times 5\times 7\times 11$
   - label: C
-    content: 22×32×52×74×11
+    content: $2^{2}\times 3^{2}\times 5^{2}\times 7^{4}\times 11$
   - label: D
-    content: 24×33×52×74×11 。
+    content: $2^{4}\times 3^{3}\times 5^{2}\times 7^{4}\times 11$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_14
   section: 1
   number: 14
   type: single
   page: 1
-  stem: 一個百位數字為5,十位數字為2的三位數,如果它可以被3與7整除,則此三位數的個位數字為何?
+  stem: 一個百位數字為 5，十位數字為 2 的三位數，如果它可以被 3 與 7 整除，則此三位數的個位數字為何？
   options:
   - label: A
     content: '2'
@@ -239,13 +371,23 @@ questions:
   - label: C
     content: '5'
   - label: D
-    content: 7。
+    content: '7'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_15
   section: 1
   number: 15
   type: single
   page: 1
-  stem: 有一個甲數,依次用7、9、11除都餘2,則甲數最小是多少?
+  stem: 有一個甲數，依次用 7、9、11 除都餘 2，則甲數最小是多少？
   options:
   - label: A
     content: '693'
@@ -254,13 +396,23 @@ questions:
   - label: C
     content: '77'
   - label: D
-    content: 99。
+    content: '99'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_16
   section: 1
   number: 16
   type: single
   page: 1
-  stem: 如果2a×52是23×32×54的因數,則a不可能為下列何者?
+  stem: 如果 $2^{a}\times 5^{2}$ 是 $2^{3}\times 3^{2}\times 5^{4}$ 的因數，則 $a$ 不可能為下列何者？
   options:
   - label: A
     content: '1'
@@ -269,28 +421,48 @@ questions:
   - label: C
     content: '3'
   - label: D
-    content: 4。
+    content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_17
   section: 1
   number: 17
   type: single
   page: 1
-  stem: 下列何者的乘積最小?
+  stem: 下列何者的乘積最小？
   options:
   - label: A
-    content: 1 $\frac{3}{7}$ ×(-$\frac{3}{2}$ )×(-$\frac{1}{8}$ )
+    content: $1\frac{3}{7}\times (-\frac{3}{2})\times (-\frac{1}{8})$
   - label: B
-    content: (-2)×1 $\frac{1}{3}$ ×(-$\frac{1}{2}$ )
+    content: $(-2)\times 1\frac{1}{3}\times (-\frac{1}{2})$
   - label: C
-    content: (-$\frac{2}{3}$ )×(-5)×(-$\frac{5}{4}$ ) ×0×(-1$\frac{1}{10}$ )。
+    content: $(-\frac{2}{3})\times (-5)\times (-\frac{5}{4})$
   - label: D
-    content: $\frac{1}{22}$
+    content: $\frac{1}{2}\times 0\times (-1\frac{1}{10})$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_18
   section: 1
   number: 18
   type: single
   page: 1
-  stem: 計算7 ÷(-$\frac{4}{5}$ )÷$\frac{3}{10}$ -(-$\frac{3}{7}$ )÷ $\frac{1}{5}$ =?
+  stem: 計算 $\frac{2}{7}\div (-\frac{4}{5})\div \frac{3}{10}-(-\frac{3}{7})\div \frac{1}{5}=$？
   options:
   - label: A
     content: $\frac{6}{7}$
@@ -299,13 +471,23 @@ questions:
   - label: C
     content: $\frac{34}{35}$
   - label: D
-    content: $\frac{69}{70}$ 。
+    content: $\frac{69}{70}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_19
   section: 1
   number: 19
   type: single
   page: 1
-  stem: 計算(84,23×3×72,32×53×7)=?
+  stem: 計算 $(84, 2^{3}\times 3\times 7^{2}, 3^{2}\times 5^{3}\times 7)=$？
   options:
   - label: A
     content: '21'
@@ -314,63 +496,104 @@ questions:
   - label: C
     content: '105'
   - label: D
-    content: 210。
+    content: '210'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_20
   section: 1
   number: 20
   type: single
   page: 1
-  stem: 已知a=(-$\frac{5}{3}$ )2、b=(-$\frac{5}{3}$ )3、c=(-$\frac{5}{c3}$ )4、d=(-$\frac{5}{3}$
-    )5,則a、b、c、d的大小順序為何?
+  stem: 已知 $a=(-\frac{5}{3})^{2}$、$b=(-\frac{5}{3})^{3}$、$c=(-\frac{5}{3})^{4}$、$d=(-\frac{5}{3})^{5}$，則
+    $a$、$b$、$c$、$d$ 的大小順序為何？
   options:
   - label: A
-    content: a>b>c>d
+    content: $a>b>c>d$
   - label: B
-    content: a<b<c<d
+    content: $a<b<c<d$
   - label: C
-    content: '>a>b>d'
+    content: $c>a>b>d$
   - label: D
-    content: c>a>d>b。 第1頁(共2頁)
+    content: $c>a>d>b$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_21
   section: 1
   number: 21
   type: single
   page: 2
-  stem: 下列哪一個數為23×34×53和22×32×72的最大公因數?
+  stem: 下列哪一個數為 $2^{3}\times 3^{4}\times 5^{3}$ 和 $2^{2}\times 3^{2}\times 7^{2}$
+    的最大公因數？
   options:
   - label: A
-    content: 22×32×53×72
+    content: $2^{2}\times 3^{2}\times 5^{3}\times 7^{2}$
   - label: B
-    content: 2×3×5×7
+    content: $2\times 3\times 5\times 7$
   - label: C
-    content: 22×32
+    content: $2^{2}\times 3^{2}$
   - label: D
-    content: 23×32。
+    content: $2^{3}\times 3^{2}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_22
   section: 1
   number: 22
   type: single
   page: 2
-  stem: 如圖的每一個方格皆同等大小,若斜線部分代表3 $\frac{4}{7}$ ,則塗灰部分代表的是多少?
+  stem: 如圖的每一個方格皆同等大小，若斜線部分代表 $3\frac{4}{7}$，則塗灰部分代表的是多少？
   options:
-  - label: B
-    content: 1 $\frac{1}{351}$
-  - label: C
-    content: 5 $\frac{20}{21}$
-  - label: D
-    content: 2 $\frac{1}{74}$ 。
   - label: A
-    content: 4 $\frac{20}{21}$
+    content: $4\frac{20}{21}$
+  - label: B
+    content: $1\frac{1}{35}$
+  - label: C
+    content: $5\frac{20}{21}$
+  - label: D
+    content: $2\frac{1}{7}$
   assets:
-  - key: p2_f01
+  - key: s1_22_f1
     kind: figure
-    file: doc_112_高雄_大灣_數學_g7s1e2/p2_f01.png
+    file: doc_112_高雄_大灣_數學_g7s1e2/s1_22_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_23
   section: 1
   number: 23
   type: single
   page: 2
-  stem: 已知a、b均為大於  的正整數,若a×b=17,且a、b互質,則a+b=?
+  stem: 已知 $a$、$b$ 均為大於 1 的正整數，若 $a\times b=147$，且 $a$、$b$ 互質，則 $a+b=$？
   options:
   - label: A
     content: '52'
@@ -379,29 +602,48 @@ questions:
   - label: C
     content: '24'
   - label: D
-    content: 28。
+    content: '28'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_24
   section: 1
   number: 24
   type: single
   page: 2
-  stem: 大寶買了91枝鉛筆和117枝螢光筆,他要將鉛筆和螢光筆混合包裝起來送給朋友,但是每一包皆有鉛筆和螢光筆,且 每一包裡頭的鉛筆數量一樣,螢光筆的數量也一樣,則下列敘述何者錯誤?
+  stem: 大寶買了 91 枝鉛筆和 117 枝螢光筆，他要將鉛筆和螢光筆混合包裝起來送給朋友，但是每一包皆有鉛筆和螢光筆，且每一包裡頭的鉛筆數量一樣，螢光筆的數量也一樣，則下列敘述何者錯誤？
   options:
   - label: A
-    content: 大寶最多可送給13個朋友
+    content: 大寶最多可送給 13 個朋友
   - label: B
-    content: 每 一包裡頭有7枝鉛筆
+    content: 每一包裡頭有 7 枝鉛筆
   - label: C
-    content: 每一包裡頭有9枝螢光筆
+    content: 每一包裡頭有 9 枝螢光筆
   - label: D
-    content: 每一包裡共有13枝筆。 Created by trial version of DocuFreezer
+    content: 每一包裡共有 13 枝筆
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_25
   section: 1
   number: 25
   type: single
   page: 2
-  stem: '小綺把大小相同的正方形紙片拼成矩形。當她有6張紙片時,她有兩種拼法: 。當她有12張紙 ; 片時,她有三種拼法: ; ; ,則下列哪一種數量的紙片,她只能有一種拼
-    法?'
+  stem: 小綺把大小相同的正方形紙片拼成矩形。當她有 6 張紙片時，她有兩種拼法：如圖；如圖。當她有 12 張紙片時，她有三種拼法：如圖；如圖；如圖，則下列哪一種數量的紙片，她只能有一種拼法？
   options:
   - label: A
     content: '91'
@@ -410,30 +652,31 @@ questions:
   - label: C
     content: '187'
   - label: D
-    content: 221。
+    content: '221'
   assets:
-  - key: p2_f02
+  - key: s1_25_f1
     kind: figure
-    file: doc_112_高雄_大灣_數學_g7s1e2/p2_f02.png
-  - key: p2_f03
+    file: doc_112_高雄_大灣_數學_g7s1e2/s1_25_f1.png
+  - key: s1_25_f2
     kind: figure
-    file: doc_112_高雄_大灣_數學_g7s1e2/p2_f03.png
-  - key: p2_f04
-    kind: figure
-    file: doc_112_高雄_大灣_數學_g7s1e2/p2_f04.png
-  - key: p2_f05
-    kind: figure
-    file: doc_112_高雄_大灣_數學_g7s1e2/p2_f05.png
-  - key: p2_f06
-    kind: figure
-    file: doc_112_高雄_大灣_數學_g7s1e2/p2_f06.png
+    file: doc_112_高雄_大灣_數學_g7s1e2/s1_25_f2.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_26
   section: 1
   number: 26
   type: single
   page: 2
-  stem: 老師出了一道練習題,並附標準答案,但小莉不慎塗汙了一個分子如下:「求(-2 $\frac{1}{3}$ )+〔2 $\frac{1}{4}$ -(-
-    6 3●)〕的結果 」,請你幫她求出塗汙的分子是多少? 是多少?答:3 $\frac{3}{4}$
+  stem: 老師出了一道練習題，並附標準答案，但小莉不慎塗汙了一個分子如下：「求$(-2\frac{1}{3})+[2\frac{1}{4}-(-3\frac{\text{●}}{6})]$
+    的結果是多少？答：$3\frac{3}{4}$ 」，請你幫她求出塗汙的分子是多少？
   options:
   - label: A
     content: '1'
@@ -442,65 +685,147 @@ questions:
   - label: C
     content: '4'
   - label: D
-    content: 5。
+    content: '5'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_27
   section: 1
   number: 27
   type: single
   page: 2
-  stem: 若甲=2015×(-$\frac{2015}{20124}$ ),則甲計算所得之值最接近哪一個整數?
+  stem: 若甲$=2015\times (-\frac{2015}{2014})$，則甲計算所得之值最接近哪一個整數？
   options:
   - label: A
-    content: '-2014'
+    content: $-2014$
   - label: B
-    content: '-015'
+    content: $-2015$
   - label: C
-    content: '-2016'
+    content: $-2016$
   - label: D
-    content: -2017。
+    content: $-2017$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_28
   section: 1
   number: 28
   type: single
   page: 2
-  stem: 若三個正數a、b、c的關係式為a+$\frac{a}{101}$ =b-$\frac{b}{87}$ =c,則a、b、c的大小關係為何?
+  stem: 若三個正數 $a$、$b$、$c$ 的關係式為 $a+\frac{a}{101}=b-\frac{b}{87}=c$，則 $a$、$b$、$c$ 的大小關係為何？
   options:
   - label: A
-    content: a>b>c
+    content: $a>b>c$
   - label: B
-    content: c>b>a
+    content: $c>b>a$
   - label: C
-    content: a>c>b
+    content: $a>c>b$
   - label: D
-    content: b>c>a。
+    content: $b>c>a$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_29
   section: 1
   number: 29
   type: single
   page: 2
-  stem: 請先觀察下列式子的規律性再運算,試求 $\frac{4}{26}$ + $\frac{4}{610}$ + $\frac{4}{1014}$
-    + $\frac{4}{1418}$ + $\frac{4}{1822}$ =?
+  stem: 請先觀察下列式子的規律性再運算，試求 $\frac{4}{2\times 6}+\frac{4}{6\times 10}+\frac{4}{10\times
+    14}+\frac{4}{14\times 18}+\frac{4}{18\times 22}=$？
   options:
+  - label: A
+    content: $\frac{4}{11}$
   - label: B
-    content: $\frac{5}{151}$
+    content: $\frac{5}{11}$
   - label: C
     content: $\frac{11}{22}$
   - label: D
-    content: $\frac{6}{1N1}$ 。
-  - label: A
-    content: $\frac{4}{11}$
+    content: $\frac{6}{11}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_高雄_大灣_數學_g7s1e2_s1_30
   section: 1
   number: 30
   type: single
   page: 2
-  stem: 若M=320,N=15,P=710,則M、、P的大小關係為何?
+  stem: 若 $M=3^{20}$，$N=5^{15}$，$P=7^{10}$，則 $M$、$N$、$P$ 的大小關係為何？
   options:
   - label: A
-    content: M>N>P
+    content: $M>N>P$
   - label: B
-    content: N>M>P
+    content: $N>M>P$
   - label: C
-    content: P>N>M
+    content: $P>N>M$
   - label: D
-    content: N>P>M。
+    content: $N>P>M$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
+- id: doc_112_高雄_大灣_數學_g7s1e2_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 2
+  stem: 計算 $\frac{5}{13}+(-1\frac{9}{17})+\frac{8}{13}+(-\frac{8}{17})=$？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_112_高雄_大灣_數學_g7s1e2_s2_2
+  section: 2
+  number: 2
+  type: calc
+  page: 2
+  stem: 若將 17136 質因數分解可得 $2^{a}\times b^{2}\times c\times 17$，則 $a+b+c=$？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai

@@ -1,107 +1,138 @@
 document:
-  academic_year_roc: 113
-  exam_seq: 3
   grade: 7
   subject: 數學
+  academic_year_roc: 113
   semester: 2
+  exam_seq: 3
   city: 桃園
   school_short: 桃園
-  school: 桃園市立桃園國中
+  school: 桃園國民中學
   id: doc_113_桃園_桃園_數學_g7s2e3
-  title: 桃園市立桃園國中 113學年度第2學期第3次定期評量7年級數學科試題
+  title: 桃園國民中學 113學年度第2學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題68%
-    type: single
-    score_rule: 一、選擇題68% (每題4分) 請將答案劃記在答案卡上
+    name: 一、選擇題 68% (每題4分) 請將答案劃記在答案卡上
     count: 17
   - ord: 2
-    name: 二、填充題20%
-    type: fill
-    score_rule: 二、填充題20% (每格4分) 請將答案寫在答案欄上
+    name: 二、填充題 20% (每格 4 分) 請將答案寫在答案欄上
     count: 5
   - ord: 3
-    name: 三、計算題12%
-    type: calc
-    score_rule: 三、 計算題12% (每題6分) (無計算過程不計分)
+    name: 三、 計算題 12% (每題6分) (無計算過程不計分)
     count: 2
-  - ord: 4
-    name: 二、填充題20%
-    type: fill
-    score_rule: 二、填充題20% (每格4分) 請將答案寫在答案欄上
-    count: 5
-  - ord: 5
-    name: 三、計算題12%
-    type: calc
-    score_rule: 三、計算題12%(每題6分) (無計算過程不計分)
-    count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/2-3/桃園/桃園.pdf
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 轟炸雞排店貼出告示徵求店員,年齡需滿18歲,但未滿40歲。小美的姊姊符合徵求資格, 若她的年齡為x歲,則x的範圍為何?
+  stem: 轟炸雞排店貼出告示徵求店員，年齡需滿18歲，但未滿40歲。小美的姊姊符合徵求資格，若她的年齡為 $x$ 歲，則 $x$ 的範圍為何？
   options:
   - label: A
-    content: 18  x<40
+    content: $18 \leq x < 40$
   - label: B
-    content: 18<x<40
+    content: $18 < x < 40$
   - label: C
-    content: 18<x  40
+    content: $18 < x \leq 40$
   - label: D
-    content: 18  x  40
+    content: $18 \leq x \leq 40$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-1
+      title: 一元一次不等式的解及圖示
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-1 一元一次不等式的解及圖示
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 請問x=-1是下列哪一個不等式的解?
+  stem: 請問 $x = -1$ 是下列哪一個不等式的解？
   options:
   - label: A
-    content: 3x+5>2
+    content: $3x + 5 > 2$
   - label: B
-    content: 2 ( x-3 )+5<-5
+    content: $2(x - 3) + 5 < -5$
   - label: C
-    content: x- $\frac{x}{3}$
+    content: $x - \frac{x}{3} \leq 1$
+  - label: D
+    content: $2 - x < 2$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-1
+      title: 一元一次不等式的解及圖示
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-1 一元一次不等式的解及圖示
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 如果a>b,那麼下列哪一個敘述是錯的?
+  stem: 如果 $a > b$，那麼下列哪一個敘述是錯的？
   options:
   - label: A
-    content: a+3>b+3
+    content: $a + 3 > b + 3$
   - label: B
-    content: a+(-3 )>b+(-3 )
+    content: $a + (-3) > b + (-3)$
   - label: C
-    content: 3a>3b
+    content: $3a > 3b$
   - label: D
-    content: -3a>-3b
+    content: $-3a > -3b$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 解不等式9-2x  3 ( x-7 ),其解為何?
+  stem: 解不等式 $9 - 2x \leq 3(x - 7)$，其解為何？
   options:
   - label: A
-    content: x  6
+    content: $x \geq 6$
   - label: B
-    content: x  30
+    content: $x \geq 30$
   - label: C
-    content: x  6
+    content: $x \leq 6$
   - label: D
-    content: x -12
+    content: $x \geq -12$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 發哥想要批發每顆25元的釋迦來賣,打算以每顆40元的價格賣出,而運送的過程中會有10%的釋迦損傷不能賣。若發哥預計售完後要賺4500元以上,則他最少要批發多少顆釋迦
-    才行?
+  stem: 發哥想要批發每顆25元的釋迦來賣，打算以每顆40元的價格賣出，而運送的過程中會有10%的釋迦損傷不能賣。若發哥預計售完後要賺4500元以上，則他最少要批發多少顆釋迦才行？
   options:
   - label: A
     content: 409顆
@@ -111,172 +142,323 @@ questions:
     content: 411顆
   - label: D
     content: 400顆
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 下列解5- $\frac{5}{3}$ x>7-x的過程中,解題步驟依序為
+  stem: 下列解 $5 - \frac{5}{3}x > 7 - x$ 的過程中，解題步驟依序為(A)～(D) ，請問哪一步驟開始出錯？
   options:
   - label: A
-    content: '~'
-  - label: D
-    content: ',請問哪一步驟開始出錯?'
-  - label: A
-    content: 兩邊同減5,故- $\frac{5}{3}$ x>2-x
+    content: 兩邊同減5，故 $-\frac{5}{3}x > 2 - x$
   - label: B
-    content: 兩邊同加x,故- $\frac{2}{3}$ 1 0 3
+    content: 兩邊同加 $x$，故 $-\frac{2}{3}x > 2$
+  - label: C
+    content: 兩邊同乘以 $(-\frac{3}{2})$，故 $x > -3$
   - label: D
     content: 圖示此不等式的解為
+    asset:
+      key: optD
+      file: doc_113_桃園_桃園_數學_g7s2e3/1_6_optD.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 解不等式  $\frac{4x+2}{15}$ < $\frac{x+1}{3}$ - $\frac{x-1}{5}$ ,其解為何?
+  stem: 解不等式 $\frac{4x + 2}{15} < \frac{x + 1}{3} - \frac{x - 1}{5}$，其解為何？
   options:
   - label: A
-    content: x<3
+    content: $x < 3$
   - label: B
-    content: x>3
+    content: $x > 3$
   - label: C
-    content: x<2
+    content: $x < 2$
   - label: D
-    content: x<0
+    content: $x < 0$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 已知ax-3  4x+1為x的一次不等式,若x=-2是不等式的一個解,則a的範圍為何?
+  stem: 已知 $ax - 3 \geq 4x + 1$ 為 $x$ 的一次不等式，若 $x = -2$ 是不等式的一個解，則 $a$ 的範圍為何？
   options:
   - label: A
-    content: a  2
+    content: $a \leq 2$
   - label: B
-    content: a  2
+    content: $a \geq 2$
   - label: C
-    content: a  5
+    content: $a \leq 5$
   - label: D
-    content: a  5
+    content: $a \geq 5$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 遊戲公司想知道「鬥陣神魔」這個線上遊戲的玩家的性別及年齡層,因此在網路上找了100位玩家做了調查,結果如下,試問:根據這份調查,哪一個年齡層的玩家人數最多?
+  stem: 遊戲公司想知道「鬥陣神魔」這個線上遊戲的玩家的性別及年齡層，因此在網路上找了100 位玩家做了調查，結果如下，試問：根據這份調查，哪一個年齡層的玩家人數最多？
   options:
   - label: A
-    content: 10~20歲
+    content: 10~20 歲
   - label: B
-    content: 20~30歲
+    content: 20~30 歲
   - label: C
-    content: 30~40歲
+    content: 30~40 歲
   - label: D
-    content: 40~50歲20 18 16 14 12 10 8 6 4 2 0次 數 ( 人 ) 男性 女性 年齡(歲) 10 20 30 40 50
-      60 70九年級數學-p1,本試題共3頁 家長 總 分 簽章  1
-  - label: D
-    content: 2-x<2 x>2
-  - label: C
-    content: '兩邊同乘以 (- $\frac{3}{2}$ ),故x>-3請閱讀下列敘述後回答第10.~11.題: ◎某科技公司人事部門整理了研發部門所有工作人員年齡如下:
-      28、32、47、33、31、40、49、42、25、40、40、25 ( 單位:歲 )'
+    content: 40~50 歲
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_113_桃園_桃園_數學_g7s2e3/s1_9_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 研發部門人員年齡的中位數為何?
+  stem: 研發部門人員年齡的中位數為何？
   options:
   - label: A
-    content: 33歲
+    content: 33 歲
   - label: B
-    content: 36.5歲
+    content: 36.5 歲
   - label: C
-    content: 37.5歲
+    content: 37.5 歲
   - label: D
-    content: 40歲
+    content: 40 歲
+  group_stem: '請閱讀下列敘述後回答第10.~11.題:
+
+    ◎某科技公司人事部門整理了研發部門所有工作人員年齡如下：
+
+    28、32、47、33、31、40、49、42、25、40、40、25 ( 單位：歲 )'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 研發部門人員年齡的眾數為何?
+  stem: 研發部門人員年齡的眾數為何？
   options:
   - label: A
-    content: 25歲
+    content: 25 歲
   - label: B
-    content: 32歲
+    content: 32 歲
   - label: C
-    content: 40歲
+    content: 40 歲
   - label: D
-    content: '49歲 請閱讀下列敘述後回答第12.~13.題: ◎某科技公司業務部門15個人這一週加班時數加總後製成下圖: 6 5 4 3 2 1 0
-      6 5 4 3 2 1次 數 ( 人 ) 時數(時)'
+    content: 49 歲
+  group_stem: '請閱讀下列敘述後回答第10.~11.題:
+
+    ◎某科技公司人事部門整理了研發部門所有工作人員年齡如下：
+
+    28、32、47、33、31、40、49、42、25、40、40、25 ( 單位：歲 )'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 業務部門加班時數的平均數為何?
+  stem: 業務部門加班時數的平均數為何？
   options:
   - label: A
-    content: 平均數小於4小時
+    content: 平均數小於4 小時
   - label: B
-    content: 平均數等於4小時
+    content: 平均數等於4 小時
   - label: C
-    content: 平均數大於4小時
+    content: 平均數大於4 小時
   - label: D
     content: 無法判定
+  group_stem: '請閱讀下列敘述後回答第12.~13.題:
+
+    ◎某科技公司業務部門15 個人這一週加班時數加總後製成下圖：'
+  shared_asset: g1_12_13
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 業務部門加班時數的中位數為何?
+  stem: 業務部門加班時數的中位數為何？
   options:
   - label: A
-    content: 3小時
+    content: 3 小時
   - label: B
-    content: 4小時
+    content: 4 小時
   - label: C
-    content: 5小時
+    content: 5 小時
   - label: D
-    content: 6小時
+    content: 6 小時
+  group_stem: '請閱讀下列敘述後回答第12.~13.題:
+
+    ◎某科技公司業務部門15 個人這一週加班時數加總後製成下圖：'
+  shared_asset: g1_12_13
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 某籃球隊隊員共16人,每人投籃6次,且下表為其投進球數的次數分配表。 若此隊投進球數的中位數是2.5球,則眾數為何?
+  stem: '某籃球隊隊員共 16 人，每人投籃 6 次，且下表為其投進球數的次數分配表。
+
+    若此隊投進球數的中位數是 2.5 球，則眾數為何？
+
+
+    | 投進球數 ( 球 ) | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | 次數 ( 人 ) | 2 | 2 | a | b | 3 | 2 | 1 |'
   options:
   - label: A
-    content: 1球
+    content: 1 球
   - label: B
-    content: 2球
+    content: 2 球
   - label: C
-    content: 3球
+    content: 3 球
   - label: D
-    content: 4球 投進球數 ( 球 ) 0. 1. 2. 3. 4. 5. 6. 次數 ( 人 ) 2. 2. a b 3. 2. 1. 次數 ( 人
-      ) 2 2 a b 3 2 1
+    content: 4 球
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 右圖為由9個正方體積木堆疊的立體模型,試選出圖中人偶所見的前視圖。
+  stem: 右圖為由9 個正方體積木堆疊的立體模型，試選出圖中人偶所見的前視圖。
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_桃園_桃園_數學_g7s2e3/1_15_optA.png
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_桃園_桃園_數學_g7s2e3/1_15_optB.png
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_桃園_桃園_數學_g7s2e3/1_15_optC.png
   - label: D
-    content: 前方
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_桃園_桃園_數學_g7s2e3/1_15_optD.png
+  assets:
+  - key: s1_15_f1
+    kind: figure
+    file: doc_113_桃園_桃園_數學_g7s2e3/s1_15_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 6-1
+      title: 線對稱與三視圖
+      chapter: 第6章 線對稱與三視圖
+    textbook: 七下 6-1 線對稱與三視圖
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 如果以對摺的方法可以將線段平分,那麼想在AB上取一點P,使AP :BP = 7:9, 則至少須將AB對摺幾次?
+  stem: '如果以對摺的方法可以將線段平分，那麼想在 $\overline{AB}$ 上取一點 P，使 $\overline{AP} : \overline{BP}
+    = 7 : 9$，則至少須將 $\overline{AB}$ 對摺幾次？'
   options:
   - label: A
     content: 1次
@@ -286,12 +468,22 @@ questions:
     content: 4次
   - label: D
     content: 8次
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 6-1
+      title: 線對稱與三視圖
+      chapter: 第6章 線對稱與三視圖
+    textbook: 七下 6-1 線對稱與三視圖
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
     content: 正方形有兩條對稱軸
@@ -300,102 +492,165 @@ questions:
   - label: C
     content: 菱形有四條對稱軸
   - label: D
-    content: 正六邊形有6條對稱軸 九年級數學-p2,本試題共3頁
+    content: 正六邊形有6 條對稱軸
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 6-1
+      title: 線對稱與三視圖
+      chapter: 第6章 線對稱與三視圖
+    textbook: 七下 6-1 線對稱與三視圖
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s2_1
   section: 2
   number: 1
   type: fill
   page: 3
-  stem: 一元一次不等式1-5x<17-8x的最大整數解為a ,-14-3x<-37-8x的最大整數解為b, 則a-b=?       (1)
+  stem: 一元一次不等式 $1 - 5x < 17 - 8x$ 的最大整數解為 $a$，$-14 - 3x < -37 - 8x$ 的最大整數解為 $b$，則
+    $a - b = $？ ____(1)____
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s2_2
   section: 2
   number: 2
   type: fill
   page: 3
-  stem: 一矩形的長為(x+3)公分,寬為5公分,面積小於45平方公分,則此矩形周長的大小範圍為何? (2)       (周長以y表示)
+  stem: 一矩形的長為 $(x+3)$ 公分，寬為 5 公分，面積小於 45 平方公分，則此矩形周長的大小範圍為何？ ____(2)____ (周長以 $y$
+    表示)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s2_3
   section: 2
   number: 3
   type: fill
   page: 3
-  stem: 若ax-7  2x+8的解為x -3,則a之值為何?       (3)
+  stem: 若 $ax - 7 \geq 2x + 8$ 的解為 $x \leq -3$，則 $a$ 之值為何？ ____(3)____
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s2_4
   section: 2
   number: 4
   type: fill
   page: 3
-  stem: 如下圖為2010年1月至7月液化石油氣價格長條圖,則2010年6月價格較2010年2月價格 調降了大約多少%?        (4)       %
-    (四捨五入至整數位)
+  stem: 如下圖為 2010 年 1 月至 7 月液化石油氣價格長條圖，則 2010 年 6 月價格較 2010 年 2 月價格調降了大約多少％？ ____(4)____
+    ％ (四捨五入至整數位)
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_113_桃園_桃園_數學_g7s2e3/s2_4_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s2_5
   section: 2
   number: 5
   type: fill
   page: 3
-  stem: 葉老師為班上舉行數學小考,共10題總分為100分 ,成績紀錄如下表,其中遺漏了部分資料。 已知班上共有40人,平均數為66分,請問中位數為多少分?       (5)       分
+  stem: '葉老師為班上舉行數學小考，共 10 題總分為 100 分 ，成績紀錄如下表，其中遺漏了部分資料。已知班上共有 40 人，平均數為 66 分，請問中位數為多少分？
+    ____(5)____ 分
+
+
+    | 成績 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 | 合計 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | 人數 | 1 | 3 | 5 | | | 6 | 4 | 1 | 40 |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s3_1
   section: 3
   number: 1
   type: calc
   page: 3
-  stem: 學生若干人,住若干間宿舍,若每間住4人,還餘19人,如果每間住6人,則一間有住人, 但是沒有住滿,若宿舍有x間,請回答下列問題。 (1)請依題意列出一元一次不等式?(2%)
-    (2)試計算第(1)小題並列出x的範圍?(2%) (3)求宿舍共有幾間?(2%) (請寫出所有可能的答案才計分)
+  stem: '學生若干人，住若干間宿舍，若每間住4 人，還餘19 人，如果每間住6 人，則一間有住人，但是沒有住滿，若宿舍有 $x$ 間，請回答下列問題。
+
+    (1)請依題意列出一元一次不等式？(2%)
+
+    (2)試計算第(1)小題並列出 $x$ 的範圍？(2%)
+
+    (3)求宿舍共有幾間？(2%) (請寫出所有可能的答案才計分)'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e3_s3_2
   section: 3
   number: 2
   type: calc
   page: 3
-  stem: '右圖為興隆圖書館去年部分書籍出借情形的圓形圖,若去年共借出3600本,則: (1)「電腦」項目所占的圓心角度數為幾度?(2%) (2)「小說」項目共借出幾本?(2%)
-    (3) 借出最多與最少的項目相差幾本?(2%) 九年級數學-p3,本試題共3頁 電腦800本 財經 $\frac{1}{12}$ 散文25% 休閒50° 小說
-    桃園國民中學  113學年度第  二  學期第3次定期考試題   (答案卷)  (七年級) 科目:數 學(03) 姓名: 年   班   號'
+  stem: '右圖為興隆圖書館去年部分書籍出借情形的圓形圖，若去年共借出 3600 本，則：
+
+    (1)「電腦」項目所占的圓心角度數為幾度？(2%)
+
+    (2)「小說」項目共借出幾本？(2%)
+
+    (3) 借出最多與最少的項目相差幾本？(2%)'
   assets:
-  - key: p3_f01
+  - key: s3_2_f1
     kind: figure
-    file: doc_113_桃園_桃園_數學_g7s2e3/p3_f01.png
-  - key: p3_f02
-    kind: figure
-    file: doc_113_桃園_桃園_數學_g7s2e3/p3_f02.png
-- id: doc_113_桃園_桃園_數學_g7s2e3_s4_1
-  section: 4
-  number: 1
-  type: fill
-  page: 4
-  stem: (1)
-- id: doc_113_桃園_桃園_數學_g7s2e3_s4_2
-  section: 4
-  number: 2
-  type: fill
-  page: 4
-  stem: (2)
-- id: doc_113_桃園_桃園_數學_g7s2e3_s4_3
-  section: 4
-  number: 3
-  type: fill
-  page: 4
-  stem: (3)
-- id: doc_113_桃園_桃園_數學_g7s2e3_s4_4
-  section: 4
-  number: 4
-  type: fill
-  page: 4
-  stem: (4)
-- id: doc_113_桃園_桃園_數學_g7s2e3_s4_5
-  section: 4
-  number: 5
-  type: fill
-  page: 4
-  stem: (5)
-- id: doc_113_桃園_桃園_數學_g7s2e3_s5_1
-  section: 5
-  number: 1
-  type: calc
-  page: 4
-  stem: 學生若干人,住若干間宿舍,若每間住4人,還餘19人,如果每間住6人,則一間有住人, 但是沒有住滿,若宿舍有x間,請回答下列問題。 (1)請依題意列出一元一次不等式?(2%)
-    (2)試計算第(1)小題並列出x的範圍?(2%) (3)求宿舍共有幾間?(2%) (請寫出所有可能的答案才計分)
-- id: doc_113_桃園_桃園_數學_g7s2e3_s5_2
-  section: 5
-  number: 2
-  type: calc
-  page: 4
-  stem: '右圖為興隆圖書館去年部分書籍出借情形的圓形圖,若去年共借出3600本,則: (1)「電腦」項目所占的圓心角度數為幾度?(2%) (2)「小說」項目共借出幾本?(2%)
-    (3) 借出最多與最少的項目相差幾本?(2%) 九年級數學-p4,本試題共3頁 家長 總 分 簽章 電腦800本 財經 $\frac{1}{12}$ 散文25%
-    休閒50° 小說'
+    file: doc_113_桃園_桃園_數學_g7s2e3/s3_2_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
+shared_assets:
+- key: g1_12_13
+  label: 題組附圖
+  kind: figure
+  file: doc_113_桃園_桃園_數學_g7s2e3/g1_12_13_f1.png
+  used_by:
+  - doc_113_桃園_桃園_數學_g7s2e3_s1_12
+  - doc_113_桃園_桃園_數學_g7s2e3_s1_13

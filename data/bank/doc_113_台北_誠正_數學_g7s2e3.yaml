@@ -1,242 +1,784 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 3
-  school: 臺北市立誠正國民中學
-  grade: 7
-  subject: 數學
-  scope_note: '4-1 ~ 5-1  (答案請畫記在答案卡上)        7年    班    號 姓名:'
   city: 台北
   school_short: 誠正
+  school: 臺北市立誠正國民中學
+  scope_note: 4-1 ~ 5-1
   id: doc_113_台北_誠正_數學_g7s2e3
-  title: 臺北市立誠正國民中學 113學年度第2學期第3次定期評量7年級數學科試題
+  title: 臺北市立誠正國民中學 113學年度第2學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、基本單選題
-    type: single
-    score_rule: 一、 基本單選題:(每題4分;共52分)
+    name: 一、 基本單選題
     count: 13
   - ord: 2
-    name: 二、進階單選題
-    type: single
-    score_rule: 二、 進階單選題:(每題4分;共48分)
-    count: 0
+    name: 二、 進階單選題
+    count: 12
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/2-3/台北/誠正.pdf
+  scope:
+    lessons:
+    - number: 4-1
+      title: null
+    - number: 5-1
+      title: null
+    publisher: null
+    raw: 4-1 ~ 5-1
+    volume: null
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: x不大於 - 2可列出下列哪個一元一次不等式?
+  stem: $x$ 不大於 - 2 可列出下列哪個一元一次不等式？
   options:
   - label: A
-    content: x > - 2
+    content: $x > - 2$
   - label: B
-    content: x ≥ - 2
+    content: $x \geq - 2$
   - label: C
-    content: x < - 2
+    content: $x < - 2$
   - label: D
-    content: x ≤ - 2
+    content: $x \leq - 2$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-1
+      title: 一元一次不等式的解及圖示
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-1 一元一次不等式的解及圖示
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 小安買了五個臺鐵便當,每個y元,他總共花費低於490元,依照題意可列出下列哪個一元一次不等式?
+  stem: 小安買了五個臺鐵便當，每個 $y$ 元，他總共花費低於 490 元，依照題意可列出下列哪個一元一次不等式？
   options:
   - label: A
-    content: y < 490
+    content: $y < 490$
   - label: B
-    content: y ≤ 490
+    content: $y \leq 490$
   - label: C
-    content: 5y < 490
+    content: $5y < 490$
   - label: D
-    content: 5y ≤ 490
+    content: $5y \leq 490$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: x = - 1是下列哪一個不等式的解?
+  stem: $x = - 1$ 是下列哪一個不等式的解？
   options:
   - label: A
-    content: x + 1 > - x - 1
+    content: $x + 1 > - x - 1$
   - label: B
-    content: 2x - 3 < 4x - 4
+    content: $2x - 3 < 4x - 4$
   - label: C
-    content: '- 5x ≥ - 3x - 5'
+    content: $- 5x \geq - 3x - 5$
   - label: D
-    content: 4x - 2 ≥ x
+    content: $4x - 2 \geq x$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-1
+      title: 一元一次不等式的解及圖示
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-1 一元一次不等式的解及圖示
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 右圖是下列哪個不等式解的圖示? 0 5 - 1
+  stem: 右圖是下列哪個不等式解的圖示？
   options:
   - label: A
-    content: '- 1 < x ≤ 5'
+    content: $- 1 < x \leq 5$
   - label: B
-    content: '- 1 < x < 5'
+    content: $- 1 < x < 5$
   - label: C
-    content: '- 1 ≤ x ≤ 5'
+    content: $- 1 \leq x \leq 5$
   - label: D
-    content: '- 1 ≤ x < 5'
+    content: $- 1 \leq x < 5$
   assets:
-  - key: p1_f01
+  - key: s1_4_f1
     kind: figure
-    file: doc_113_台北_誠正_數學_g7s2e3/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_113_台北_誠正_數學_g7s2e3/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_113_台北_誠正_數學_g7s2e3/p1_f03.png
+    file: doc_113_台北_誠正_數學_g7s2e3/s1_4_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-1
+      title: 一元一次不等式的解及圖示
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-1 一元一次不等式的解及圖示
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 一元一次不等式 - 2x - 4 < 3x + 1的解為下列何者?
+  stem: 一元一次不等式 $- 2x - 4 < 3x + 1$ 的解為下列何者？
   options:
   - label: A
-    content: x < - 1
+    content: $x < - 1$
   - label: B
-    content: x > - 1
+    content: $x > - 1$
   - label: C
-    content: x < 1
+    content: $x < 1$
   - label: D
-    content: x > 1 $\frac{3x-1}{4}$
+    content: $x > 1$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 一元一次不等式  $\frac{2x+4}{3}$ + 1的解為下列何者? ≥
+  stem: 一元一次不等式 $\frac{2x + 4}{3} \geq \frac{3x - 1}{4} + 1$ 的解為下列何者？
   options:
   - label: A
-    content: x ≥ 18
+    content: $x \geq 18$
   - label: B
-    content: x ≤ 18
+    content: $x \leq 18$
   - label: C
-    content: x ≥ 7
+    content: $x \geq 7$
   - label: D
-    content: x ≤ 7
+    content: $x \leq 7$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 右圖為某校排球校隊學生體重的次數分配折線圖,依照 圖中資訊請問體重未滿70公斤的有幾人?
+  stem: 右圖為某校排球校隊學生體重的次數分配折線圖，依照圖中資訊請問體重未滿 70 公斤的有幾人？
   options:
   - label: A
-    content: 6人
+    content: 6 人
   - label: B
-    content: 12人
+    content: 12 人
   - label: C
-    content: 28人
+    content: 28 人
   - label: D
-    content: 33人
+    content: 33 人
   assets:
-  - key: p1_f04
+  - key: s1_7_f1
     kind: figure
-    file: doc_113_台北_誠正_數學_g7s2e3/p1_f04.png
+    file: doc_113_台北_誠正_數學_g7s2e3/s1_7_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 右圖為七年X班全班同學體育成績的次數分配直方圖, 依照圖中資訊請問七年X班全班共有多少人?
+  stem: 右圖為七年 X 班全班同學體育成績的次數分配直方圖，依照圖中資訊請問七年 X 班全班共有多少人？
   options:
   - label: A
-    content: 29人
+    content: 29 人
   - label: B
-    content: 30人
+    content: 30 人
   - label: C
-    content: 31人
+    content: 31 人
   - label: D
-    content: 32人
+    content: 32 人
   assets:
-  - key: p1_f05
+  - key: s1_8_f1
     kind: figure
-    file: doc_113_台北_誠正_數學_g7s2e3/p1_f05.png
+    file: doc_113_台北_誠正_數學_g7s2e3/s1_8_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 有一群人的年齡由小到大排列為7、9、11、11、16、 17、18、22、24、35、43、47、54、61歲,則這群人年 齡的中位數是多少歲?
+  stem: 有一群人的年齡由小到大排列為 7、9、11、11、16、17、18、22、24、35、43、47、54、61 歲，則這群人年齡的中位數是多少歲？
   options:
   - label: A
-    content: 18歲
+    content: 18 歲
   - label: B
-    content: 20歲
+    content: 20 歲
   - label: C
-    content: 22歲
+    content: 22 歲
   - label: D
-    content: 24歲
+    content: 24 歲
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 有21人的體重分別為61、43、47、53、45、51、63、 51、72、69、58、51、60、50、48、74、70、66、57、 71、58公斤,則這21人體重的眾數是多少公斤?
+  stem: 有 21 人的體重分別為 61、43、47、53、45、51、63、51、72、69、58、51、60、50、48、74、70、66、57、71、58
+    公斤，則這 21 人體重的眾數是多少公斤？
   options:
   - label: A
-    content: 51公斤
+    content: 51 公斤
   - label: B
-    content: 55公斤
+    content: 55 公斤
   - label: C
-    content: 57公斤
+    content: 57 公斤
   - label: D
-    content: 58公斤
+    content: 58 公斤
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 婕翎想買一臺35000元的電腦,他已有壓歲錢12000元,若每週可以存750元,則婕翎至少要存幾週的錢 才能買這臺電腦?
+  stem: 婕翎想買一臺 35000 元的電腦，他已有壓歲錢 12000 元，若每週可以存 750 元，則婕翎至少要存幾週的錢才能買這臺電腦？
   options:
   - label: A
-    content: 47週
+    content: 47 週
   - label: B
-    content: 46週
+    content: 46 週
   - label: C
-    content: 31週
+    content: 31 週
   - label: D
-    content: 30週
+    content: 30 週
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: 某班有男生10人、女生15人,某次小考男生的平均 分數為75分,女生的平均分數為80分,則全班的平 均分數為多少分?
+  stem: 某班有男生 10 人、女生 15 人，某次小考男生的平均分數為 75 分，女生的平均分數為 80 分，則全班的平均分數為多少分？
   options:
   - label: A
-    content: 76.5分
+    content: 76.5 分
   - label: B
-    content: 77分
+    content: 77 分
   - label: C
-    content: 77.5分
+    content: 77.5 分
   - label: D
-    content: 78分
+    content: 78 分
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
 - id: doc_113_台北_誠正_數學_g7s2e3_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 右圖是大王速食店在去年7~12月每個月營業額的長 條圖,則大王速食店去年7~12月的平均營業額是多 少萬元?
+  stem: 右圖是大王速食店在去年 7～12 月每個月營業額的長條圖，則大王速食店去年 7～12 月的平均營業額是多少萬元？
   options:
   - label: A
-    content: 345萬元
+    content: 345 萬元
   - label: B
-    content: 172.5萬元
+    content: 172.5 萬元
   - label: C
-    content: 40萬元
+    content: 40 萬元
   - label: D
-    content: 20萬元
+    content: 20 萬元
   assets:
-  - key: p1_f06
+  - key: s1_13_f1
     kind: figure
-    file: doc_113_台北_誠正_數學_g7s2e3/p1_f06.png
+    file: doc_113_台北_誠正_數學_g7s2e3/s1_13_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_14
+  section: 2
+  number: 14
+  type: single
+  page: 2
+  stem: '(甲) $a$ 是一個不大於 7 的正數可以用不等式 $x \leq 7$ 表示。
+
+    (乙)若 $a > b$ 且 $c \geq d$ 則 $a + c > b + d$。
+
+    (丙)全班 27 人數學小考分數的中位數為 62 分，則代表有 13 人超過 62 分。
+
+    (丁)資料分組中的「40 ~ 50」意思代表該組資料至少 40 且未滿 50。
+
+    試問上述(甲) ~ (丁)有幾項敘述是正確的？'
+  options:
+  - label: A
+    content: 1 項
+  - label: B
+    content: 2 項
+  - label: C
+    content: 3 項
+  - label: D
+    content: 4 項
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_15
+  section: 2
+  number: 15
+  type: single
+  page: 2
+  stem: '下表為某校七年級是否戴眼鏡的男女人數的列聯表：
+
+
+    | 性別 | 男生 | 女生 | 合計 |
+
+    |---|---|---|---|
+
+    | 有戴眼鏡 | $a$ | $b$ | $e$ |
+
+    | 沒戴眼鏡 | $c$ | 35 | 60 |
+
+    | 合計 | $d$ | 80 | 180 |
+
+
+    (單位：人)
+
+    依照上表，請問下列敘述何者正確？'
+  options:
+  - label: A
+    content: 有戴眼鏡的男生占全部男生的 75%。
+  - label: B
+    content: 有戴眼鏡的女生共 35 人。
+  - label: C
+    content: 沒戴眼鏡的男生占全部沒戴眼鏡的 25%。
+  - label: D
+    content: 有戴眼鏡的女生比沒戴眼鏡的男生多 30 人。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_16
+  section: 2
+  number: 16
+  type: single
+  page: 2
+  stem: 若 $x$ 是正數，則不等式 $- 5(x - 1) + 2(x + 5) > 0$ 解的圖形為下列何者？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: optA
+      file: doc_113_台北_誠正_數學_g7s2e3/2_16_optA.png
+  - label: B
+    content: ''
+    asset:
+      key: optB
+      file: doc_113_台北_誠正_數學_g7s2e3/2_16_optB.png
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_113_台北_誠正_數學_g7s2e3/2_16_optC.png
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_台北_誠正_數學_g7s2e3/2_16_optD.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_17
+  section: 2
+  number: 17
+  type: single
+  page: 2
+  stem: 小綸參加旅行社兩天一夜出遊活動，共訂 $x$ 間房，若每間住 5 人，會有 12 人沒得住，若每間住 8 人，則最後還有一間有住人但沒有住滿。依題意列式，下列何者正確？
+  options:
+  - label: A
+    content: $5x + 12 < 8x$
+  - label: B
+    content: $0 < 5x + 12 < 8x$
+  - label: C
+    content: $7x < 5x + 12 < 8x$
+  - label: D
+    content: $8x - 8 < 5x + 12 < 8x$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_18
+  section: 2
+  number: 18
+  type: single
+  page: 2
+  stem: 右圖為調查誠正國中七年級學生從籃球、排球、桌球、羽球之中選擇自己最喜歡的運動所製成的圓形圖，共計調查 180 人，每人只能選擇一項運動，已知選排球的人占了全部的
+    25%、選羽球的人數有 27 人、選桌球的在圖中的圓心角為 72°，求 $a + b + c =$？
+  options:
+  - label: A
+    content: '204'
+  - label: B
+    content: '208'
+  - label: C
+    content: '212'
+  - label: D
+    content: '216'
+  assets:
+  - key: s2_18_f1
+    kind: figure
+    file: doc_113_台北_誠正_數學_g7s2e3/s2_18_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_19
+  section: 2
+  number: 19
+  type: single
+  page: 2
+  stem: '下圖為兩人為班上同樂會訂購飲料的對話過程：
+
+    若兩人計算皆無誤，且所需飲料數超過 10 杯，則他們所需的飲料杯數可能是多少杯？'
+  options:
+  - label: A
+    content: 15 杯
+  - label: B
+    content: 17 杯
+  - label: C
+    content: 19 杯
+  - label: D
+    content: 21 杯
+  assets:
+  - key: s2_19_f1
+    kind: figure
+    file: doc_113_台北_誠正_數學_g7s2e3/s2_19_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_20
+  section: 2
+  number: 20
+  type: single
+  page: 3
+  stem: 有一組資料共有 10 筆，其由小到大排列的前 5 筆資料分別為 1、2、3、5、5，已知這組資料的中位數為 6、眾數為 8，則下列選項何者不可能為這
+    10 筆資料的平均數？
+  options:
+  - label: A
+    content: '5.3'
+  - label: B
+    content: '5.5'
+  - label: C
+    content: '5.7'
+  - label: D
+    content: '5.9'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_21
+  section: 2
+  number: 21
+  type: single
+  page: 3
+  stem: 夏季是芒果產季，小菜打算進貨每顆 20 元的芒果若干顆來賣，小菜將這批芒果分成品質較好的占全部的 60% 以每顆 50 元賣出，品質適中的占全部的
+    30% 以每顆 30 元賣出，運送過程壞掉的占全部的 10% 無法賣出，將這些芒果全部賣出後，小菜能賺超過 3990 元，請問小菜最少進貨多少顆芒果？
+  options:
+  - label: A
+    content: 191 顆
+  - label: B
+    content: 190 顆
+  - label: C
+    content: 211 顆
+  - label: D
+    content: 210 顆
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_22
+  section: 2
+  number: 22
+  type: single
+  page: 3
+  stem: '身體質量指數(BMI)為衡量人肥胖程度的計算方式，其計算方法為 $\text{BMI} = \frac{\text{體重(單位：公斤)}}{\text{身高}^{2}\text{(單位：公尺)}}$，例：160
+    公分，60 公斤的人，其 $\text{BMI} = \frac{60}{1.6^{2}} = 23.4375$。
+
+    依照衛福部標準，13 歲的七年級學生 $\text{BMI} < 15.7$ 為過輕、$15.7 \leq \text{BMI} < 21.9$ 為正常範圍、$\text{BMI}
+    \geq 21.9$ 為過重。
+
+    下圖為七年 X 班全班體重的次數分配直方圖：
+
+    已知班上的小愷身高為 150 公分，且他的 BMI 為正常範圍，請問下列敘述何者錯誤？'
+  options:
+  - label: A
+    content: 此組資料的次數分配表其組距為 10 公斤。
+  - label: B
+    content: 小愷的體重可能是 45 公斤。
+  - label: C
+    content: 班上至少有 17 個人體重比小愷重。
+  - label: D
+    content: 小愷的體重有可能是班上的中位數。
+  assets:
+  - key: s2_22_f1
+    kind: figure
+    file: doc_113_台北_誠正_數學_g7s2e3/s2_22_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_23
+  section: 2
+  number: 23
+  type: single
+  page: 3
+  stem: '下表為某停車場的計費方式：
+
+
+    |  | 平日收費方式 | 假日收費方式 |
+
+    |---|---|---|
+
+    | 價格 | 第一個小時 40 元<br>後續每小時 30 元 | 第一個小時 60 元<br>後續每小時 40 元 |
+
+    | 注意事項 | 未滿 1 小時，<br>仍以 1 小時計算，<br>單日收費最高 400 元 | 未滿 1 小時，<br>仍以 1 小時計算，<br>單日收費最高
+    700 元 |
+
+
+    某天假日小智全家出去玩於當日 12：40 停此停車場，已知離開時小智爸爸繳的停車費大於 200 元且不超過 300 元，請問下列何者不可能是當天小智全家離開此停車場的時間？'
+  options:
+  - label: A
+    content: 17：30
+  - label: B
+    content: 18：00
+  - label: C
+    content: 18：50
+  - label: D
+    content: 19：50
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_24
+  section: 2
+  number: 24
+  type: single
+  page: 3
+  stem: '下表為上個月路邊調查 40 人有購買 TPASS 月票的年齡次數分配表：
+
+
+    | 年齡(歲) | 次數(人) |
+
+    |---|---|
+
+    | 10 ~ 20 | 2 |
+
+    | 20 ~ 30 | 18 |
+
+    | 30 ~ 40 | 10 |
+
+    | 40 ~ 50 | 7 |
+
+    | 50 ~ 60 | 2 |
+
+    | 60 ~ 70 | 1 |
+
+
+    依照上表資料，求這 40 人年齡的平均數為多少歲？'
+  options:
+  - label: A
+    content: 28 歲
+  - label: B
+    content: 33 歲
+  - label: C
+    content: 35 歲
+  - label: D
+    content: 38 歲
+  group_stem: 'TPASS 是臺灣政府推出的「公共運輸月票」，其中「北北基桃 TPASS」是針對台北市、新北市、基隆市、桃園市等四地區通勤族設計的一種優惠交通月票，旨在鼓勵民眾搭乘大眾運輸，減少汽機車使用，改善交通環境品質。
+
+
+    現行「北北基桃 TPASS」月票使用方法為用悠遊卡支付 1200 元開通，開通後便可在 30 日內於限定地區無限次搭乘如捷運、公車、台鐵區間車等，無需另外花費，對部分學生與通勤族可省下一筆不小的交通費。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
+- id: doc_113_台北_誠正_數學_g7s2e3_s2_25
+  section: 2
+  number: 25
+  type: single
+  page: 3
+  stem: '土匪老師每天到誠正國中上班通勤的搭乘方式如下：
+
+    先花 15 元搭乘公車到捷運站，再花 32 元搭到南港展覽館站，下班回去則原路返回，花費相同。
+
+    若土匪老師每次上下班都有回家，且不計算其他出門交通，則 30 日內土匪老師至少需上班幾天購買 TPASS 月票會比較划算？'
+  options:
+  - label: A
+    content: 12 天
+  - label: B
+    content: 13 天
+  - label: C
+    content: 25 天
+  - label: D
+    content: 26 天
+  group_stem: 'TPASS 是臺灣政府推出的「公共運輸月票」，其中「北北基桃 TPASS」是針對台北市、新北市、基隆市、桃園市等四地區通勤族設計的一種優惠交通月票，旨在鼓勵民眾搭乘大眾運輸，減少汽機車使用，改善交通環境品質。
+
+
+    現行「北北基桃 TPASS」月票使用方法為用悠遊卡支付 1200 元開通，開通後便可在 30 日內於限定地區無限次搭乘如捷運、公車、台鐵區間車等，無需另外花費，對部分學生與通勤族可省下一筆不小的交通費。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai

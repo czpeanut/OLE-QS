@@ -1,33 +1,35 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 112
   semester: 1
   exam_seq: 2
-  school: 桃園市立石門國民中學
-  grade: 7
-  subject: 數學
   city: 桃園
   school_short: 石門
+  school: 桃園市立石門國中
   id: doc_112_桃園_石門_數學_g7s1e2
-  title: 桃園市立石門國民中學 112學年度第1學期第2次定期評量7年級數學科試題
+  title: 桃園市立石門國中 112學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 112學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(每題4分,共88分)
+    name: 一、選擇題（每題4 分，共88 分）
     count: 22
   - ord: 2
-    name: 二、非選擇題
-    type: single
-    score_rule: 二、非選擇題(請用黑色墨水筆寫於非選擇題答案卷上,每題6分,共12分)
+    name: 二、非選擇題（請用黑色墨水筆寫於非選擇題答案卷上，每題6 分，共12 分）
     count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/112/1-2/桃園/石門.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列哪一選項中的兩數互質?
+  stem: 下列哪一選項中的兩數互質？
   options:
   - label: A
     content: 14、63
@@ -37,72 +39,126 @@ questions:
     content: 88、33
   - label: D
     content: 38、57
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 關於五位數14□25的敘述,下列何者錯誤?
+  stem: 關於五位數14□25 的敘述，下列何者錯誤？
   options:
   - label: A
-    content: 若是3的倍數,則□可填0、3、6
+    content: 若是 3 的倍數，則□可填0、3、6
   - label: B
-    content: 無論□填那一個數,皆不可能是4的倍數
+    content: 無論□填那一個數，皆不可能是 4 的倍數
   - label: C
-    content: 無論□填那一個數,一定能被5整除
+    content: 無論□填那一個數，一定能被 5 整除
   - label: D
-    content: 若是11的倍數,則□可填2
+    content: 若是11 的倍數，則□可填2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 若 $\frac{−16}{12}$ = $\frac{12}{a}$ $\frac{4}{b}$ = − ,則b−a= ?
+  stem: 若$\frac{-16}{12} = \frac{12}{a} = -\frac{4}{b}$，則 $b-a = ?$？
   options:
   - label: A
     content: '6'
   - label: B
-    content: '- 6'
+    content: － 6
   - label: C
-    content: '-12'
+    content: －12
   - label: D
     content: '12'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 下列哪個數是32 × 53的因數?
+  stem: 下列哪個數是 $3^{2} \times 5^{3}$ 的因數？
   options:
   - label: A
-    content: 3 × 5
+    content: $3 \times 5$
   - label: B
-    content: 32 × 54
+    content: $3^{2} \times 5^{4}$
   - label: C
-    content: '33'
+    content: $3^{3}$
   - label: D
-    content: 2 × 32 × 53
+    content: $2 \times 3^{2} \times 5^{3}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 正整數N的所有正因數由小到大排列如下:1、2、3、b、c、11、d、e、f、44、g、N, 則下列敘述何者正確?
+  stem: '正整數 N 的所有正因數由小到大排列如下：1、2、3、b、c、11、d、e、f、44、g、N，
+
+    則下列敘述何者正確？'
   options:
   - label: A
-    content: N是2的因數
+    content: N 是 2 的因數
   - label: B
-    content: N的所有正因數中有4個質數
+    content: N 的所有正因數中有4 個質數
   - label: C
     content: f = 33
   - label: D
-    content: N是0的倍數
+    content: N 是0 的倍數
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 如果一個長方形的長是a,寬是b(a、b是整數且a> b),若其面積是36, 則這樣的長方形有多少個?
+  stem: '如果一個長方形的長是$a$，寬是b（$a$、b 是整數且$a> b$），若其面積是36，
+
+    則這樣的長方形有多少個？'
   options:
   - label: A
     content: '3'
@@ -112,27 +168,47 @@ questions:
     content: '5'
   - label: D
     content: '6'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 下列敘述何者正確? 3×3 7) 2= 25 × 39
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 108 × 102 = 1016
+    content: $10^{8} \times 10^{2} = 10^{16}$
   - label: B
-    content: (2 ) 2〕 3 =($\frac{2}{3}$ ) 5
-  - label: D
-    content: 108 ÷ 58 = 28
+    content: $(2^{3} \times 3^{7})^{2} = 2^{5} \times 3^{9}$
   - label: C
-    content: 〔($\frac{2}{3}$
+    content: $[(\frac{2}{3})^{2}]^{3} = (\frac{2}{3})^{5}$
+  - label: D
+    content: $10^{8} \div 5^{8} = 2^{8}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 計算〔 36, (84,63)〕=?
+  stem: 計算〔 36, (84,63)〕＝？
   options:
   - label: A
     content: '3'
@@ -142,12 +218,22 @@ questions:
     content: '105'
   - label: D
     content: '252'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 求105和245的公因數共有多少個?
+  stem: 求105 和 245 的公因數共有多少個？
   options:
   - label: A
     content: '4'
@@ -156,13 +242,25 @@ questions:
   - label: C
     content: '6'
   - label: D
-    content: '7第1頁,共3頁 桃園市立石門國中第112學年度 第一學期 第二次段考 七年級 數學科試卷 班級:     座號:      姓名:             準'
+    content: '7'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 體育課時甲、乙、丙三人投籃比賽,甲投8中4顆,乙投9中5顆,丙投11中7顆 , 則誰的投籃命中率較高?(命中率=全場投中次數÷全場出手次數)
+  stem: '體育課時甲、乙、丙三人投籃比賽，甲投 8 中 4 顆，乙投 9 中 5 顆，丙投 11 中7 顆 ，
+
+    則誰的投籃命中率較高？（命中率=全場投中次數÷全場出手次數）'
   options:
   - label: A
     content: 甲
@@ -172,12 +270,23 @@ questions:
     content: 丙
   - label: D
     content: 一樣高
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 已知100100=22 × a2 × 7 × 11 × b,其中a、b均為質數, b>a,則a+b之值為何?
+  stem: 已知$100100＝2^{2} \times a^{2} \times 7 \times 11 \times b$，其中 $a$、b 均為質數， b＞$a$，則
+    $a+b$ 之值為何？
   options:
   - label: A
     content: '12'
@@ -187,103 +296,173 @@ questions:
     content: '16'
   - label: D
     content: '18'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 算式 $\frac{19}{22}$ + $\frac{13}{18}$ -( $\frac{21}{22}$ - $\frac{5}{18}$ )之值為何?
-    $\frac{10}{11}$
+  stem: 算式$\frac{19}{22} + \frac{13}{18} - (\frac{21}{22} - \frac{5}{18})$之值為何？
   options:
+  - label: A
+    content: $\frac{10}{11}$
   - label: B
     content: $\frac{4}{11}$
   - label: C
-    content: $\frac{−26}{11}$
+    content: $\frac{-26}{11}$
   - label: D
-    content: $\frac{3}{−22}$
-  - label: A
-    content: ''
+    content: $\frac{3}{-22}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 計算(−7 $\frac{2}{3}$ )-(−11 $\frac{3}{5}$ )+(−2 $\frac{1}{2}$ )=?
+  stem: 計算$(-7\frac{2}{3}) - (-11\frac{3}{5}) + (-2\frac{1}{2}) = ?$？
   options:
-  - label: B
-    content: -18 $\frac{23}{30}$
-  - label: C
-    content: -21 $\frac{13}{30}$
-  - label: D
-    content: 10 $\frac{13}{30}$
   - label: A
-    content: 1 $\frac{13}{30}$
+    content: $1\frac{13}{30}$
+  - label: B
+    content: $-18\frac{23}{30}$
+  - label: C
+    content: $-21\frac{13}{30}$
+  - label: D
+    content: $10\frac{13}{30}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 計算 ) $\frac{1}{-3}$ ( - 2 3 3 ) - ( - 3 3 9 ) - ( =?
+  stem: 計算$\frac{1}{(-3)} - \frac{3}{(-3)^{2}} - \frac{9}{(-3)^{3}} = ?$？
   options:
-  - label: B
-    content: '-1'
-  - label: C
-    content: -$\frac{1}{3}$
-  - label: D
-    content: $\frac{2}{3}$
   - label: A
     content: $\frac{1}{3}$
+  - label: B
+    content: －1
+  - label: C
+    content: $-\frac{1}{3}$
+  - label: D
+    content: $\frac{2}{3}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 若a= 23 × 3 × 5 × 72 × 11,b=23 × 3 × 73,則下列哪一個選項是正確的?
+  stem: 若 $a= 2^{3} \times 3 \times 5 \times 7^{2} \times 11$，b＝$2^{3} \times 3 \times
+    7^{3}$，則下列哪一個選項是正確的？
   options:
   - label: A
-    content: a、b的最大公因數為23 × 3 × 73
+    content: $a$、b 的最大公因數為 $2^{3} \times 3 \times 7^{3}$
   - label: B
-    content: a、b的最小公倍數為23 × 3 × 5 × 72 × 11
+    content: $a$、b 的最小公倍數為$2^{3} \times 3 \times 5 \times 7^{2} \times 11$
   - label: C
-    content: 22 × 3 × 7   是b的因數
+    content: $2^{2} \times 3 \times 7$   是b 的因數
   - label: D
-    content: a的相異質因數總和為41
+    content: $a$的相異質因數總和為41
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 化簡4÷(−$\frac{2}{3}$ ) 3 × (−6) + (−52) 之後,可得下列哪一個結果?
+  stem: 化簡$4 \div (-\frac{2}{3})^{3} \times (-6) + (-5^{2})$ 之後，可得下列哪一個結果？
   options:
   - label: A
-    content: '-56'
+    content: －56
   - label: B
     content: '56'
   - label: C
     content: '106'
   - label: D
-    content: -106 $\frac{15}{7}$ $\frac{4}{5}$ $\frac{3}{8}$
+    content: －106
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 計算 ÷〔(- )× 〕=?
+  stem: 計算$\frac{15}{7} \div [(-\frac{4}{5}) \times \frac{3}{8}] = ?$？
   options:
   - label: A
-    content: −$\frac{30}{7}$
+    content: $-\frac{30}{7}$
   - label: B
-    content: −$\frac{9}{14}$
+    content: $-\frac{9}{14}$
   - label: C
-    content: −$\frac{50}{7}$
+    content: $-\frac{50}{7}$
   - label: D
-    content: −$\frac{14}{9}$
+    content: $-\frac{14}{9}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 在1到300的正整數中,不論除以3、除以5、或除以6  都還是整數的共有多少個?
+  stem: 在1 到300 的正整數中，不論除以3、除以5、或除以6  都還是整數的共有多少個？
   options:
   - label: A
     content: '9'
@@ -292,59 +471,101 @@ questions:
   - label: C
     content: '11'
   - label: D
-    content: '12第2頁,共3頁 桃園市立石門國中第112學年度 第一學期 第二次段考 七年級 數學科試卷 班級:     座號:      姓名:             準'
+    content: '12'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_19
   section: 1
   number: 19
   type: single
   page: 3
-  stem: 若甲數=2a×3×5,且甲數是80的倍數,但不是96的倍數,則下列何者正確?
+  stem: 若甲數＝$2^{a} \times 3 \times 5$，且甲數是80 的倍數，但不是96 的倍數，則下列何者正確？
   options:
   - label: A
-    content: a的最小質因數是1
+    content: $a$的最小質因數是1
   - label: B
-    content: a=4
+    content: $a=4$
   - label: C
-    content: a有偶數個正因數
+    content: $a$有偶數個正因數
   - label: D
-    content: a和6互質
+    content: $a$和6 互質
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_20
   section: 1
   number: 20
   type: single
   page: 3
-  stem: 若a=134,b=0.134,則a是b的多少倍?
+  stem: 若$a＝13^{4}$，b＝$0.13^{4}$，則 $a$是b 的多少倍？
   options:
   - label: A
-    content: '104'
+    content: $10^{4}$
   - label: B
-    content: 10−4
+    content: $10^{-4}$
   - label: C
-    content: '108'
+    content: $10^{8}$
   - label: D
-    content: 10−8
+    content: $10^{-8}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_21
   section: 1
   number: 21
   type: single
   page: 3
-  stem: 計算(1 − $\frac{1}{2}$ ) × (1 − $\frac{1}{3}$ ) × ⋯⋯× (1 − $\frac{1}{10}$ )
-    = ?
+  stem: 計算$(1 - \frac{1}{2}) \times (1 - \frac{1}{3}) \times \dots \times (1 - \frac{1}{10})
+    = ?$？
   options:
+  - label: A
+    content: $\frac{1}{10}$
   - label: B
-    content: $\frac{1}{100}$ $\frac{1}{10}$
+    content: $\frac{1}{100}$
   - label: C
     content: $\frac{1}{1000}$
-  - label: A
-    content: ''
   - label: D
     content: 無法計算
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s1_22
   section: 1
   number: 22
   type: single
   page: 3
-  stem: 有一件工作,甲獨作每天可完成全部工作的 $\frac{1}{12}$ ,乙獨作每天可完成全部工作的 $\frac{1}{9}$ , 若甲先作了4天,剩下的由乙繼續完成,則乙還需要多少天可完成工作?
+  stem: '有一件工作，甲獨作每天可完成全部工作的$\frac{1}{12}$，乙獨作每天可完成全部工作的$\frac{1}{9}$，
+
+    若甲先作了 4 天，剩下的由乙繼續完成，則乙還需要多少天可完成工作？'
   options:
   - label: A
     content: '3'
@@ -354,19 +575,61 @@ questions:
     content: '5'
   - label: D
     content: '6'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s2_1
   section: 2
   number: 1
-  type: single
+  type: calc
   page: 3
-  stem: '某學校每星期三營養午餐有供應水果,調查發現7年10班學生喜歡吃蘋果的人占全班的 $\frac{3}{5}$ , $\frac{2}{3}$ ,兩種皆喜歡吃的共24人且占全班的
-    $\frac{8}{15}$ 喜歡吃柑橘的人占全班的 ,試問: (1)此班全班共有多少人?(2分) (2)此班學生喜歡吃蘋果較多,還是喜歡吃柑橘較多?(2分)
-    (3)兩種水果中至少喜歡吃一種水果的人數?(2分)'
+  stem: '某學校每星期三營養午餐有供應水果，調查發現7 年10 班學生喜歡吃蘋果的人占全班的$\frac{3}{5}$，
+
+    喜歡吃柑橘的人占全班的 $\frac{2}{3}$，兩種皆喜歡吃的共24 人且占全班的 $\frac{8}{15}$，試問：
+
+    （1）此班全班共有多少人？（2 分）
+
+    （2）此班學生喜歡吃蘋果較多，還是喜歡吃柑橘較多？（2 分）
+
+    （3）兩種水果中至少喜歡吃一種水果的人數？（2 分）'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_112_桃園_石門_數學_g7s1e2_s2_2
   section: 2
   number: 2
-  type: single
+  type: calc
   page: 3
-  stem: '某學校校慶運動會為獎勵運動競賽表現優異班級,將巧克力糖22 × 3 × 5 × 7顆、 水果軟糖22 × 5 × 7顆、牛奶糖22 × 3 × 72顆,分裝在一些禮盒裡送給優異班級,
-    使每個禮盒裡的各種糖果數量一樣多,試問: (1)最多可以裝成多少盒(請用標準分解式寫出答案)?(3分) (2)每盒巧克力糖、水果軟糖、牛奶糖各有多少顆?(3分)
-    第3頁,共3頁'
+  stem: '某學校校慶運動會為獎勵運動競賽表現優異班級，將巧克力糖$2^{2} \times 3 \times 5 \times 7$顆、
+
+    水果軟糖$2^{2} \times 5 \times 7$顆、牛奶糖$2^{2} \times 3 \times 7^{2}$顆，分裝在一些禮盒裡送給優異班級，
+
+    使每個禮盒裡的各種糖果數量一樣多，試問：
+
+    （1）最多可以裝成多少盒（請用標準分解式寫出答案）？（3 分）
+
+    （2）每盒巧克力糖、水果軟糖、牛奶糖各有多少顆？（3 分）'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai

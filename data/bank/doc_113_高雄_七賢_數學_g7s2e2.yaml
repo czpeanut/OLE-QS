@@ -1,68 +1,63 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 2
-  school: 高雄市立七賢國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 七賢
+  school: 高雄市立七賢國民中學
   id: doc_113_高雄_七賢_數學_g7s2e2
-  title: 高雄市立七賢國民中學 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 高雄市立七賢國民中學 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
     name: 一、選擇
-    type: single
-    score_rule: '一、選擇 : (每題4分。共40分):'
     count: 10
   - ord: 2
     name: 二、填充題
-    type: fill
-    score_rule: '二、填充題: (每格4分。共52分):'
-    count: 11
+    count: 13
   - ord: 3
     name: 三、計算題
-    type: calc
-    score_rule: '三、計算題: (每題4分。共8分):'
-    count: 2
-  - ord: 4
-    name: 一、選擇題..
-    type: single
-    score_rule: 一、 選擇題..(每題4分,共40分)
-    count: 10
-  - ord: 5
-    name: 二、填充題..
-    type: fill
-    score_rule: 二、 填充題..(每格4分,共52分)
-    count: 9
-  - ord: 6
-    name: 三、計算題..
-    type: calc
-    score_rule: 三、 計算題..(每題4分,共8分)
-    count: 0
+    count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/2-2/高雄/七賢.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 坐標平面上,有一點Q(5 ,-2)在二元一次方程式-2x+ay=4的圖形上,則a=?
+  stem: 坐標平面上，有一點Q(5 ,－2)在二元一次方程式－2x＋ay＝4的圖形上，則a＝﹖
   options:
   - label: A
     content: '4'
   - label: B
-    content: '-7'
+    content: －7
   - label: C
-    content: '-6'
+    content: －6
   - label: D
-    content: '-3'
+    content: －3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 在坐標平面上,直線L的方程式為y=-7x+2,則L不通過第幾象限?
+  stem: 在坐標平面上，直線L 的方程式為y＝－7x＋2，則L 不通過第幾象限﹖
   options:
   - label: A
     content: 第一象限
@@ -72,27 +67,47 @@ questions:
     content: 第三象限
   - label: D
     content: 第四象限
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 方程式ax+by=2的圖形會通過A(1 , 2)、B(-1 , -6),若C(k , 0)也在ax+by=2的圖形,求k=? 1
+  stem: 方程式ax＋by＝2的圖形會通過A(1 , 2)、B(－1 , －6)，若C(k , 0)也在ax＋by＝2的圖形，求k＝﹖
   options:
   - label: A
     content: '2'
   - label: B
-    content: '2'
+    content: $\frac{1}{2}$
   - label: C
     content: '1'
   - label: D
     content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 有一塊長方形農地,其長、寬比為7:4,若配合道路修建計畫後,農地的長減少了4公尺,此時農 地長的4倍為農地寬的5倍,則原來長方形的周長為多少公尺?
+  stem: 有一塊長方形農地，其長、寬比為7﹕4，若配合道路修建計畫後，農地的長減少了4公尺，此時農地長的4倍為農地寬的5倍，則原來長方形的周長為多少公尺﹖
   options:
   - label: A
     content: '44'
@@ -102,28 +117,55 @@ questions:
     content: '22'
   - label: D
     content: '11'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 設y與x成正比,且x=3時,y=21,則當x=-7時,y是多少?
+  stem: 設y 與x 成正比，且x＝3時，y＝21，則當x＝－7時，y 是多少﹖
   options:
   - label: A
-    content: '-49'
+    content: －49
   - label: B
-    content: '-42'
+    content: －42
   - label: C
-    content: '-35'
+    content: －35
   - label: D
-    content: '-28'
+    content: －28
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: '判斷下列敘述哪些正確? 甲: 若x的值愈大,y的值也隨之愈大,則表示x與y成正比 乙: 若x表示圓的半徑,y表示圓周長,則y與x成正比 丙:一天24小時中,設晝長為x小時,夜長為y小時,則y與x成反比
-    丁:長方形面積為24平方公分,設長為x公分,寬為y公分,則y與x成反比'
+  stem: '判斷下列敘述哪些正確？
+
+    甲: 若x 的值愈大，y 的值也隨之愈大，則表示x 與y 成正比
+
+    乙: 若x 表示圓的半徑，y 表示圓周長，則y 與x 成正比
+
+    丙:一天24小時中，設晝長為x 小時，夜長為y 小時，則y 與x 成反比
+
+    丁:長方形面積為24平方公分，設長為x 公分，寬為y 公分，則y 與x 成反比'
   options:
   - label: A
     content: 僅甲、乙
@@ -133,296 +175,430 @@ questions:
     content: 僅丙、丁
   - label: D
     content: 僅乙、丁
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 如下圖,坐標平面上直線L的方程式為7x-3y+15=0。若有一直線M的方程式為x=a,則a的值 在下列哪一個範圍時,M與L的交點會在第二象限? y
-    O x L
+  stem: 如下圖，坐標平面上直線L 的方程式為7x－3y＋15＝0。若有一直線M 的方程式為x＝a，則a 的值在下列哪一個範圍時，M 與L 的交點會在第二象限？
   options:
   - label: A
-    content: 2<a<3
+    content: 2＜a＜3
   - label: B
-    content: 5<a<6
+    content: 5＜a＜6
   - label: C
-    content: -2<a<-1
+    content: －2＜a＜－1
   - label: D
-    content: -3<a<-4一下數2段第1頁,共4頁
+    content: －3＜a＜－4
   assets:
-  - key: p1_f01
+  - key: s1_7_f1
     kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e2/p1_f01.png
+    file: doc_113_高雄_七賢_數學_g7s2e2/s1_7_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: single
   page: 2
-  stem: 如圖,已知四邊形ABCD為正方形,且AB垂直x軸,若B(3,-1)、C(-12,-1),則求過A、C兩 點的直線方程式y=ax+b為何?
+  stem: 如圖，已知四邊形ABCD 為正方形，且$\overline{AB}$ 垂直x 軸，若B(3,－1)、C(－12,－1)，則求過A、C 兩點的直線方程式y＝ax＋b
+    為何？
   options:
   - label: A
-    content: y=x+14
+    content: y＝x＋14
   - label: B
-    content: y=-3x+9
+    content: y＝－3x＋9
   - label: C
-    content: y=x +11
+    content: y＝x ＋11
   - label: D
-    content: y=-x-13
+    content: y＝－x－13
   assets:
-  - key: p2_f01
+  - key: s1_8_f1
     kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e2/p2_f01.png
+    file: doc_113_高雄_七賢_數學_g7s2e2/s1_8_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: 下圖是二元一次方程式x+3y=7、3x+y=5的圖形,若兩直線的交點為A( 1 , 2 ),直線3x+y=5與x軸交於B點,直線x+3y=7與y軸交於C點,則四邊形ABOC的面積為多少?
-    7 $\frac{10}{6}$
+  stem: 下圖是二元一次方程式x＋3y＝7、3x＋y＝5的圖形，若兩直線的交點為A( 1 , 2 )，直線3x＋y＝5與x 軸交於B 點，直線x＋3y＝7與y
+    軸交於C 點，則四邊形ABOC 的面積為多少﹖
   options:
+  - label: A
+    content: $\frac{7}{3}$
+  - label: B
+    content: $\frac{10}{6}$
   - label: C
     content: $\frac{12}{3}$
   - label: D
     content: $\frac{17}{6}$
-  - label: A
-    content: '3'
-  - label: B
-    content: ''
   assets:
-  - key: p2_f02
+  - key: s1_9_f1
     kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e2/p2_f02.png
+    file: doc_113_高雄_七賢_數學_g7s2e2/s1_9_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 有A、B兩個完全相同的杯子,各裝不同量的水。設A杯原來的水量為a,B杯原來的水量為b, $\frac{1}{7}$ 的水倒入B杯,倒完後發現兩杯的水位等高,求a
-    b =? 若將A杯中5 7
+  stem: 有A、B 兩個完全相同的杯子，各裝不同量的水。設A 杯原來的水量為a，B 杯原來的水量為b，若將A 杯中 $\frac{1}{7}$ 的水倒入B 杯，倒完後發現兩杯的水位等高，求
+    $\frac{a}{b}$ ＝？
   options:
-  - label: B
-    content: 6 7
-  - label: C
-    content: 7 4
-  - label: D
-    content: '7'
   - label: A
-    content: '5'
+    content: $\frac{5}{7}$
+  - label: B
+    content: $\frac{6}{7}$
+  - label: C
+    content: $\frac{7}{4}$
+  - label: D
+    content: $\frac{7}{5}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_1
   section: 2
   number: 1
-  type: single
+  type: fill
   page: 2
-  stem: '在坐標平面上,下列哪些方程式的圖形會通過原點?答:              。(全對才給分) 1'
-  options:
-  - label: A
-    content: x+2y =0
-  - label: B
-    content: 5y=1-3x
-  - label: C
-    content: '- 2 y=x'
-  - label: D
-    content: y=0
-  - label: E
-    content: x- y-1=0
+  stem: '在坐標平面上，下列哪些方程式的圖形會通過原點﹖答: ______________。（全對才給分）
+
+    (A) x＋2y ＝0   (B) 5y＝1－3x   (C)  －$\frac{1}{2}$ y＝x   (D) y＝0  (E) x－ y－1＝0'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 已知y與x成反比,且x=-4時,y=9,則當y=-6時,x的值是            。
+  stem: 已知y 與x 成反比，且x＝－4時，y＝9，則當y＝－6時，x 的值是 ____________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 設酒精x立方公分的重量為y公克,而且x、y成正比,如圖所示。則當酒精為8立方公分時, 重量為                公克。
+  stem: 設酒精x 立方公分的重量為y 公克，而且x、y 成正比，如圖所示。則當酒精為8立方公分時，重量為 ____________ 公克。
   assets:
-  - key: p2_f03
+  - key: s2_3_f1
     kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e2/p2_f03.png
+    file: doc_113_高雄_七賢_數學_g7s2e2/s2_3_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: '求下列各比例式中的x值。 : $\frac{5}{7}$ $\frac{5}{3}$ =x: $\frac{1}{14}$ (1) - ,x=_______。
-    (2) (x+1):4=(1-2x):(-10),x=________。 一下數2段第2頁,共4頁'
+  stem: (1) －$\frac{5}{3}$ ：$\frac{5}{7}$＝x：$\frac{1}{14}$ ，x＝_______。
+  group_stem: 求下列各比例式中的x 值。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_5
   section: 2
   number: 5
   type: fill
-  page: 3
-  stem: '設x,y皆不為0,且5x-2y=3x+y,則: (1) x:y的最簡整數比為________。 (2) 若x-3y=12,(x+4):(y-x)的比值為________。'
+  page: 2
+  stem: (2) (x＋1)：4＝(1－2x)：(－10），x＝________。
+  group_stem: 求下列各比例式中的x 值。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 3
-  stem: 已知物體在月球上的重量與在地球上的重量成正比。當在地球的重量是6公斤,則在月球上的重量是1公 斤,若在地球上的重量為x公斤,在月球上的重量為y公斤,則x與y的關係式為                 。
+  stem: (1) x：y 的最簡整數比為________。
+  group_stem: 設x，y 皆不為0，且5x－2y＝3x＋y，則：
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 3
-  stem: 小佑與小諒原有零用錢的比為4:3。後來小佑花了150買玩具,而小諒從媽媽手上拿到150元的零用錢, 結果兩人的零用錢比變為7:9,則兩人原有零用錢總和為               元。
+  stem: (2) 若x－3y＝12，(x＋4)：(y－x）的比值為________。
+  group_stem: 設x，y 皆不為0，且5x－2y＝3x＋y，則：
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 3
-  stem: 受到少子化的衝擊,位於偏鄉的振興、中平兩所國小決定併校,合併前振興國小的男生、女生人數比為5:4,中平國小的男生、女生人數比為6:5 ,已知兩校的女生人數相同,則兩校合併後男生、女生人數
-    比為                  。
+  stem: 已知物體在月球上的重量與在地球上的重量成正比。當在地球的重量是6公斤，則在月球上的重量是1公斤，若在地球上的重量為x 公斤，在月球上的重量為y 公斤，則x
+    與y 的關係式為 ______________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 3
-  stem: 一群廚師為了挑戰世界紀錄,一起製作一個超級法國麵包,假設每位廚師每小時的工作量是固定的,如 果16位廚師合作10小時可以完工,若想要提早2小時完成,則應增加             位廚師合作才能完工。
+  stem: 小佑與小諒原有零用錢的比為 4﹕3。後來小佑花了150買玩具，而小諒從媽媽手上拿到150元的零用錢，結果兩人的零用錢比變為 7﹕9，則兩人原有零用錢總和為
+    ____________ 元。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 3
-  stem: 已知彈簧秤在彈性限度(可正確秤得的最大重量)內,彈簧秤被拉長的長度和所掛物重成正比。今已 知此彈簧秤的原長10公分,在彈性限度內掛一重量為63公克的物體時,彈簧長度會變為24公分;若改掛
-    重量為27克的另一物體時,則彈簧長度會變為             公分。
+  stem: 受到少子化的衝擊，位於偏鄉的振興、中平兩所國小決定併校，合併前振興國小的男生、女生人數比為 5﹕4，中平國小的男生、女生人數比為 6﹕5 ，已知兩校的女生人數相同，則兩校合併後男生、女生人數比為
+    ______________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s2_11
   section: 2
   number: 11
   type: fill
   page: 3
-  stem: 有一圓形跑道,小翊、小妍分別由A地出發、並各自以反方向前進。已知小翊走了102步,小妍走了70步時,兩人在跑道上的某點交會,且交會之後小妍再走84步恰好走回到A點。若小翊每步的距離相
-    等,小妍每步的距離相等,則交會之後,小翊再走              步會恰好走回到A點。 一下數2段第3頁,共4頁
+  stem: 一群廚師為了挑戰世界紀錄，一起製作一個超級法國麵包，假設每位廚師每小時的工作量是固定的，如果16位廚師合作10小時可以完工，若想要提早2小時完成，則應增加
+    ____________ 位廚師合作才能完工。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 3
+  stem: 已知彈簧秤在彈性限度（可正確秤得的最大重量）內，彈簧秤被拉長的長度和所掛物重成正比。今已知此彈簧秤的原長10公分，在彈性限度內掛一重量為63公克的物體時，彈簧長度會變為24公分；若改掛重量為27克的另一物體時，則彈簧長度會變為
+    ____________ 公分。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e2_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 3
+  stem: 有一圓形跑道，小翊、小妍分別由A 地出發、並各自以反方向前進。已知小翊走了102步，小妍走了70步時，兩人在跑道上的某點交會，且交會之後小妍再走84步恰好走回到A
+    點。若小翊每步的距離相等，小妍每步的距離相等，則交會之後，小翊再走 ____________ 步會恰好走回到A 點。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 4
-  stem: '下圖的坐標平面上有四直線L1、L2、L3、L4。若這四直線中,有一直線為方程式5x-3y-15=0的圖形, 則: y 1 x O 1 L 1 L
-    2 L 3 L 4 (1) 此直線為何,請寫出判斷過程? (2) 若L3的直線方程式為y=ax+b,L4的直線方程式為y=cx+d,求L3、L4兩直線的交點座標。'
-  assets:
-  - key: p4_f01
-    kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e2/p4_f01.png
+  stem: （1） 此直線為何，請寫出判斷過程？
+  group_stem: 下圖的坐標平面上有四直線$L_{1}$、$L_{2}$、$L_{3}$、$L_{4}$。若這四直線中，有一直線為方程式5x－3y－15＝0的圖形，則﹕
+  shared_asset: g3_1_2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 4
-  stem: '小琪將他的壓歲錢存入銀行。已知利息固定時,存款與年利率成反比,若小琪在銀行存入10000元, 該銀行的年利率為1.2%,試問: (1) 若以x表示存入銀行的金額,y表示該銀行的年利率,則x與y的關係式為何?
-    (2) 若銀行的年利率為1.5%,則小琪想要獲得相同的利息,只需要存入多少元? 一下數2段第4頁,共4頁 高雄市立七賢國民中學113學年度第2學期 一年級數學
-    第2次段考 一年級_____班 座號_____ 姓名________________'
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_1
-  section: 4
-  number: 1
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_2
-  section: 4
-  number: 2
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_3
-  section: 4
+  stem: （2） 若 $L_{3}$ 的直線方程式為y＝ax＋b，$L_{4}$ 的直線方程式為y＝cx＋d，求$L_{3}$、$L_{4}$兩直線的交點座標。
+  group_stem: 下圖的坐標平面上有四直線$L_{1}$、$L_{2}$、$L_{3}$、$L_{4}$。若這四直線中，有一直線為方程式5x－3y－15＝0的圖形，則﹕
+  shared_asset: g3_1_2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e2_s3_3
+  section: 3
   number: 3
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_4
-  section: 4
+  type: calc
+  page: 4
+  stem: (1) 若以x 表示存入銀行的金額，y 表示該銀行的年利率，則x 與y 的關係式為何？
+  group_stem: 小琪將他的壓歲錢存入銀行。已知利息固定時，存款與年利率成反比，若小琪在銀行存入10000元，該銀行的年利率為1.2%，試問：
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e2_s3_4
+  section: 3
   number: 4
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_5
-  section: 4
-  number: 5
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_6
-  section: 4
-  number: 6
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_7
-  section: 4
-  number: 7
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_8
-  section: 4
-  number: 8
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_9
-  section: 4
-  number: 9
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s4_10
-  section: 4
-  number: 10
-  type: single
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s5_1
-  section: 5
-  number: 1
-  type: fill
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s5_2
-  section: 5
-  number: 2
-  type: fill
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s5_3
-  section: 5
-  number: 3
-  type: fill
-  page: 5
-  stem: 4(1) 4(2) 5(1) 5(2)
-- id: doc_113_高雄_七賢_數學_g7s2e2_s5_6
-  section: 5
-  number: 6
-  type: fill
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s5_7
-  section: 5
-  number: 7
-  type: fill
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s5_8
-  section: 5
-  number: 8
-  type: fill
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s5_9
-  section: 5
-  number: 9
-  type: fill
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s5_10
-  section: 5
-  number: 10
-  type: fill
-  page: 5
-  stem: ''
-- id: doc_113_高雄_七賢_數學_g7s2e2_s5_11
-  section: 5
-  number: 11
-  type: fill
-  page: 5
-  stem: ''
+  type: calc
+  page: 4
+  stem: (2) 若銀行的年利率為1.5%，則小琪想要獲得相同的利息，只需要存入多少元？
+  group_stem: 小琪將他的壓歲錢存入銀行。已知利息固定時，存款與年利率成反比，若小琪在銀行存入10000元，該銀行的年利率為1.2%，試問：
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
+shared_assets:
+- key: g3_1_2
+  label: 題組附圖
+  kind: figure
+  file: doc_113_高雄_七賢_數學_g7s2e2/g3_1_2_f1.png
+  used_by:
+  - doc_113_高雄_七賢_數學_g7s2e2_s3_1
+  - doc_113_高雄_七賢_數學_g7s2e2_s3_2

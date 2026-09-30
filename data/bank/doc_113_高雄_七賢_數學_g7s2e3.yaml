@@ -1,98 +1,155 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 3
-  school: 高雄市立七賢國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 七賢
+  school: 高雄市立七賢國民中學
   id: doc_113_高雄_七賢_數學_g7s2e3
-  title: 高雄市立七賢國民中學 113學年度第2學期第3次定期評量7年級數學科試題
+  title: 高雄市立七賢國民中學 113學年度第2學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(每題3分,共45分)
+    name: 一、選擇題(每題3分，共45分)
     count: 15
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(每格4分,共40分)
-    count: 7
+    name: 二、填充題(每格4分，共 40分)
+    count: 10
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題(第1題7分,第2題8分,共15分)
+    name: 三、計算題(第1題7分，第2題8分，共15分)
     count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/2-3/高雄/七賢.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 右圖為下列哪一個不等式的解? 0 3 -2
+  stem: 右圖為下列哪一個不等式的解？
   options:
   - label: A
-    content: 2 3 − ≤ < x
+    content: $3 < x \leq -2$
   - label: B
-    content: 3 2 - < ≤x
+    content: $-2 \leq x < 3$
   - label: C
-    content: 2 3 − < ≤x
+    content: $3 \leq x < -2$
   - label: D
-    content: 3 2 - ≤ < x
+    content: $-2 < x \leq 3$
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_113_高雄_七賢_數學_g7s2e3/s1_1_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-1
+      title: 一元一次不等式的解及圖示
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-1 一元一次不等式的解及圖示
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: x − < 3與下列哪個不等式相同?
+  stem: $3 < -x$ 與下列哪個不等式相同？
   options:
   - label: A
-    content: 3 − < x
+    content: $x < -3$
   - label: B
-    content: x < −3
+    content: $-3 < x$
   - label: C
-    content: 0 3 > − x
+    content: $x - 3 > 0$
   - label: D
-    content: 0 3 < − x
+    content: $x - 3 < 0$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 已知0 > xx且3 + xx≥0,以下敘述何者正確?
+  stem: 已知 $0 > x$ 且 $3 + x \geq 0$，以下敘述何者正確？
   options:
   - label: A
-    content: x為正數,至多為3
+    content: x 為正數，至多為3
   - label: B
-    content: x為正數且至少為3
+    content: x 為正數且至少為3
   - label: C
-    content: x為負數,至多為 −3
+    content: x 為負數，至多為 $-3$
   - label: D
-    content: x為負數且至少為 −3
+    content: x 為負數且至少為 $-3$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 下列何者為不等式−13(7xx−17) + 1 < 40  的圖解? 0 -2 1
+  stem: 下列何者為不等式 $-13(7x - 17) + 1 < 40$ 的圖解？
   options:
-  - label: B
-    content: 0 1 -2
-  - label: C
-    content: 0 1 2
-  - label: D
-    content: 0 1 2
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_高雄_七賢_數學_g7s2e3/1_4_optA.png
+  - label: B
+    content: ''
+    asset:
+      key: optB
+      file: doc_113_高雄_七賢_數學_g7s2e3/1_4_optB.png
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_113_高雄_七賢_數學_g7s2e3/1_4_optC.png
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_高雄_七賢_數學_g7s2e3/1_4_optD.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 華仔算他六月平均每天可花用150元的零用錢,從六月一日起每天都剛好花掉150元的零用錢,直到x日,因是小如生日所以當天買了禮物,共花掉520元的零用錢,華仔算算之後每天的零用錢至多只能花120元,這樣零用錢才不會透支,則x最大為
+  stem: 華仔算他六月平均每天可花用150元的零用錢，從六月一日起每天都剛好花掉150元的零用錢，直到x日，因是小如生日所以當天買了禮物，共花掉520元的零用錢，華仔算算之後每天的零用錢至多只能花120元，這樣零用錢才不會透支，則x
+    最大為
   options:
   - label: A
     content: '13'
@@ -102,12 +159,22 @@ questions:
     content: '17'
   - label: D
     content: '19'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 以下哪一種統計圖表,最容易看出2024年總統選舉各政黨總統候選人得票率佔整體有效票的比例?
+  stem: 以下哪一種統計圖表，最容易看出2024年總統選舉各政黨總統候選人得票率佔整體有效票的比例？
   options:
   - label: A
     content: 長條圖
@@ -117,12 +184,22 @@ questions:
     content: 圓形圖
   - label: D
     content: 折線圖
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 已知一個立體圖形如圖(一),則圖(二)是從哪一面觀察而來?
+  stem: 已知一個立體圖形如圖(一)，則圖(二)是從哪一面觀察而來？
   options:
   - label: A
     content: 左
@@ -131,20 +208,27 @@ questions:
   - label: C
     content: 上
   - label: D
-    content: 後 上面 左面 後面 前面 右面 圖(一) 圖(二)
+    content: 後
   assets:
-  - key: p1_f01
+  - key: s1_7_f1
     kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e3/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e3/p1_f02.png
+    file: doc_113_高雄_七賢_數學_g7s2e3/s1_7_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 6-1
+      title: 線對稱與三視圖
+      chapter: 第6章 線對稱與三視圖
+    textbook: 七下 6-1 線對稱與三視圖
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 華仔製作七賢國中在114年國中教育會考五科積分成績的圓形圖,已知有450人應考,5A那組共有90人, 則該組的圓心角 θ =
+  stem: 華仔製作七賢國中在114年國中教育會考五科積分成績的圓形圖，已知有450人應考，5A 那組共有90人，則該組的圓心角 $\theta =$
   options:
   - label: A
     content: '20'
@@ -153,44 +237,89 @@ questions:
   - label: C
     content: '72'
   - label: D
-    content: 90 【背面尚有題目】 1下表為7年甲班學生體重次數分配表,請回答下列第9題到第12題 體重 (公斤) 40~45 45~50 50~55
-      55~60 60~65 65~70 70~75合計 次數(人) 1. 3. 5.
+    content: '90'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: 6. 4. 2. 30. (     )9. 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
     content: 體重超過70公斤的有2人
   - label: B
     content: 體重50公斤以下(含)有4人
   - label: C
-    content: 體重不到55公斤,
+    content: 體重不到55公斤，至少占全班的 $\frac{1}{3}$
   - label: D
-    content: 體重65公斤以上(含)佔不到全班的30% 至少占全班的 $\frac{1}{3}$
+    content: 體重65公斤以上(含)佔不到全班的30%
+  group_stem: '下表為7年甲班學生體重次數分配表，請回答下列第9題到第12題
+
+
+    | 體重 (公斤) | 40～45 | 45～50 | 50～55 | 55～60 | 60～65 | 65～70 | 70～75 | 合計 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 1 | 3 | 5 | 9 | 6 | 4 | 2 | 30 |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 華仔說在班上有3個同學體重比我輕,請問他可能的體重為?
+  stem: 華仔說在班上有3個同學體重比我輕，請問他可能的體重為？
   options:
   - label: A
-    content: '45'
+    content: 45 公斤
   - label: B
-    content: '47'
+    content: 47 公斤
   - label: C
-    content: '50'
+    content: 50 公斤
   - label: D
-    content: 52  公斤
+    content: 52 公斤
+  group_stem: '下表為7年甲班學生體重次數分配表，請回答下列第9題到第12題
+
+
+    | 體重 (公斤) | 40～45 | 45～50 | 50～55 | 55～60 | 60～65 | 65～70 | 70～75 | 合計 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 1 | 3 | 5 | 9 | 6 | 4 | 2 | 30 |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 60公斤以上(含)的同學佔全班的百分之幾?
+  stem: 60公斤以上(含)的同學佔全班的百分之幾？
   options:
   - label: A
     content: '10'
@@ -200,27 +329,63 @@ questions:
     content: '40'
   - label: D
     content: '60'
+  group_stem: '下表為7年甲班學生體重次數分配表，請回答下列第9題到第12題
+
+
+    | 體重 (公斤) | 40～45 | 45～50 | 50～55 | 55～60 | 60～65 | 65～70 | 70～75 | 合計 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 1 | 3 | 5 | 9 | 6 | 4 | 2 | 30 |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 若按表製作成”體重次數分配折線圖  ”,以體重(公斤)為橫軸、次數(人)為縱軸,則下列何者為可能 出現的坐標 ?
+  stem: 若按表製作成”體重次數分配折線圖  ”，以體重(公斤)為橫軸、次數(人)為縱軸，則下列何者為可能出現的坐標 ？
   options:
   - label: A
-    content: (72.5,2)
+    content: (72.5，2)
   - label: B
-    content: (60,6)
+    content: (60，6)
   - label: C
-    content: (50,3)
+    content: (50，3)
   - label: D
-    content: (52.5,9)
+    content: (52.5，9)
+  group_stem: '下表為7年甲班學生體重次數分配表，請回答下列第9題到第12題
+
+
+    | 體重 (公斤) | 40～45 | 45～50 | 50～55 | 55～60 | 60～65 | 65～70 | 70～75 | 合計 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 1 | 3 | 5 | 9 | 6 | 4 | 2 | 30 |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 畫出正六邊形所有的對角線,其中不為其對稱軸的有幾條?
+  stem: 畫出正六邊形所有的對角線，其中不為其對稱軸的有幾條？
   options:
   - label: A
     content: '6'
@@ -230,12 +395,22 @@ questions:
     content: '4'
   - label: D
     content: '3'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 6-1
+      title: 線對稱與三視圖
+      chapter: 第6章 線對稱與三視圖
+    textbook: 七下 6-1 線對稱與三視圖
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 有一直線方程式yy= 2xx−9,(a,b)為直線上的點,已知a至少為b且a至多為2b,若a、b均為整數,則 (a,b)共有幾組可能?
+  stem: 有一直線方程式 $y = 2x - 9$，(a,b)為直線上的點，已知a 至少為b 且a 至多為2b，若a、b 均為整數，則(a,b)共有幾組可能？
   options:
   - label: A
     content: '1'
@@ -245,13 +420,22 @@ questions:
     content: '3'
   - label: D
     content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 玩具店有甲、乙兩種公仔各50個,甲和以公仔每個售價分別為200元和50元,今玩具店促銷這兩種公 仔,促銷方式為「買一個甲公仔送一個乙公仔,但若只買乙公仔則沒有優惠」,某日打烊後結算,發現
-    這兩種公仔共剩餘40個,若兩種都至少賣出一個,且賣出的總金額超過5000元,請問單賣乙公仔數量的 敘述何者正確?
+  stem: 玩具店有甲、乙兩種公仔各50個，甲和以公仔每個售價分別為200元和50元，今玩具店促銷這兩種公仔，促銷方式為「買一個甲公仔送一個乙公仔，但若只買乙公仔則沒有優惠」，某日打烊後結算，發現這兩種公仔共剩餘40個，若兩種都至少賣出一個，且賣出的總金額超過5000元，請問單賣乙公仔數量的敘述何者正確？
   options:
   - label: A
     content: 至少18個
@@ -261,77 +445,261 @@ questions:
     content: 至少19個
   - label: D
     content: 至多19個
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: '將下列敘述列成x的不等式 (1)青少年x歲,指12歲以上(含)且未滿18歲:  1 (2) x不為負數且不超過3:  2'
+  stem: '將下列敘述列成x 的不等式
+
+    (1)青少年x 歲，指12歲以上(含)且未滿18歲：  ①'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-1
+      title: 一元一次不等式的解及圖示
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-1 一元一次不等式的解及圖示
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 求下列不等式的解 (1) x $\frac{3}{2}$ 6 ≥ − ,  3          (2) 2xx−3(xx−2) ≤3,  4       (3)
-    − 4 ≤3,  5 2xx+1
+  stem: '將下列敘述列成x 的不等式
+
+    (2) x 不為負數且不超過3：  ②'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-1
+      title: 一元一次不等式的解及圖示
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-1 一元一次不等式的解及圖示
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 已知一次不等式−3(xx−aa) > (xx−aa)的圖解為                                      則a=  6
-    -2 -1 0 1
+  stem: '求下列不等式的解
+
+    (1) $-6 \geq \frac{3}{2}x$，  ③'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 小如生日將一包糖果分給自己以外的同班同學,已知如果每人分10個則不夠分,若每人改分9個則剩下28個,則該班包括小如至少有   7  個學生。 2
+  stem: '求下列不等式的解
+
+    (2) $2x - 3(x - 2) \leq 3$，  ④'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s2_5
   section: 2
   number: 5
   type: fill
-  page: 3
-  stem: '小美持續運動瘦身,三個月前的體重是88公斤,現在是x公斤,且他減少的重量超過現在體重的1題意列出一元一次不等式(無須化簡):    8'
+  page: 2
+  stem: '求下列不等式的解
+
+    (3) $-\frac{2x+1}{4} \leq 3$，  ⑤'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s2_6
   section: 2
   number: 6
   type: fill
-  page: 3
-  stem: 六個正整數:9, a,5,10,9, b ,已知這六筆資料,由小到大排列後,中位數為8,眾數為9,則知b a + 最大會等 於多少?   9
+  page: 2
+  stem: 已知一次不等式 $-3(x - a) > (x - a)$ 的圖解為右圖，則a=  ⑥
+  assets:
+  - key: s2_6_f1
+    kind: figure
+    file: doc_113_高雄_七賢_數學_g7s2e3/s2_6_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s2_7
   section: 2
   number: 7
   type: fill
+  page: 2
+  stem: 小如生日將一包糖果分給自己以外的同班同學，已知如果每人分10個則不夠分，若每人改分9個則剩下28個，則該班包括小如至少有   ⑦  個學生。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_8
+  section: 2
+  number: 8
+  type: fill
   page: 3
-  stem: 一個由若干個正方體積木所排成的立體圖形,若它的三視圖如下,則可判斷它共由  10  塊積木組合而成。 前視圖 右視圖 上視圖
+  stem: 小美持續運動瘦身，三個月前的體重是88公斤，現在是x 公斤，且他減少的重量超過現在體重的 $\frac{1}{10}$ 倍，請依題意列出一元一次不等式(無須化簡)：    ⑧
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 4-2
+      title: 解一元一次不等式及其應用
+      chapter: 第4章 一元一次不等式
+    textbook: 七下 4-2 解一元一次不等式及其應用
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 六個正整數：9, a,5,10,9, b ，已知這六筆資料，由小到大排列後，中位數為8，眾數為9，則知 $a+b$ 最大會等於多少？   ⑨
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-2
+      title: 平均數、中位數與眾數
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-2 平均數、中位數與眾數
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 一個由若干個正方體積木所排成的立體圖形，若它的三視圖如下，則可判斷它共由  ⑩  塊積木組合而成。
   assets:
-  - key: p3_f01
+  - key: s2_10_f1
     kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e3/p3_f01.png
-  - key: p3_f02
-    kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e3/p3_f02.png
-  - key: p3_f03
-    kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e3/p3_f03.png
+    file: doc_113_高雄_七賢_數學_g7s2e3/s2_10_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 6-1
+      title: 線對稱與三視圖
+      chapter: 第6章 線對稱與三視圖
+    textbook: 七下 6-1 線對稱與三視圖
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s3_1
   section: 3
   number: 1
   type: calc
   page: 3
-  stem: 劉醫師今天共看了30位病人,並將看診時間整理成次數分配表(如下圖),請回答下列問題 (1)繪製次數分配折線圖。(4%)        (2)求每人平均看診幾分鐘?(3%)
-    11看診時間 次數(人) (分鐘) 0~5
+  stem: '劉醫師今天共看了30位病人，並將看診時間整理成次數分配表(如下圖)，請回答下列問題
+
+
+    | 看診時間（分鐘） | 次數（人） |
+
+    | :---: | :---: |
+
+    | 0～5 | 2 |
+
+    | 5~10 | 6 |
+
+    | 10~15 | 11 |
+
+    | 15~20 | 9 |
+
+    | 20~25 | 2 |
+
+    | 合計 | 30 |
+
+
+    (1)繪製次數分配折線圖。(4%)
+
+    (2)求每人平均看診幾分鐘？(3%)'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_高雄_七賢_數學_g7s2e3/s3_1_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 5-1
+      title: 統計圖表
+      chapter: 第5章 統計圖表與統計數據
+    textbook: 七下 5-1 統計圖表
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e3_s3_2
   section: 3
   number: 2
   type: calc
   page: 3
-  stem: 5~10 6. 10~15 11. 15~20 9. 20~25 2. 合計30. 9 10次 數8 7 ( 人 ) 6 5 4 3 2 1 0 5
-    10 15 20 25時間(分鐘) 2.依下列指示描繪圖形。 (1)利用方格完成以直線L為對稱軸的線對稱圖形。 L (4%) 《試題結束,祝各位同學暑假愉快》
-    3 10倍,請依 如圖(d)剪掉△DBE(D、E分別為AB തതതത、AC തതതത  中點),利用圖(e) 描繪展開後的圖形,以斜線表示剪掉的區塊部分。(4%)
-    (2) 將一張正方形色紙依下圖(a)~圖(c)的步驟對摺三次後,再 圖(a) 圖(b) 圖(c) A D B E C圖(d) 圖(e)
+  stem: '依下列指示描繪圖形。
+
+    (1)利用方格完成以直線 $L$ 為對稱軸的線對稱圖形。(4%)
+
+    (2) 將一張正方形色紙依下圖(a)~圖(c)的步驟對摺三次後，再如圖(d)剪掉 $\triangle DBE$($D$、$E$ 分別為 $\overline{AB}$、$\overline{AC}$
+    中點)，利用圖(e)描繪展開後的圖形，以斜線表示剪掉的區塊部分。(4%)'
   assets:
-  - key: p3_f04
+  - key: s3_2_f1
     kind: figure
-    file: doc_113_高雄_七賢_數學_g7s2e3/p3_f04.png
+    file: doc_113_高雄_七賢_數學_g7s2e3/s3_2_f1.png
+  - key: s3_2_f2
+    kind: figure
+    file: doc_113_高雄_七賢_數學_g7s2e3/s3_2_f2.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 6-1
+      title: 線對稱與三視圖
+      chapter: 第6章 線對稱與三視圖
+    textbook: 七下 6-1 線對稱與三視圖
+    labeled_by: ai

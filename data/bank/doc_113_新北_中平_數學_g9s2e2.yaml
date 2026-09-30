@@ -25,6 +25,10 @@ document:
     count: 5
   extractor: vlm:gemini-3.7-flash
   source_file: 國三/數學/113/2-2/新北/中平.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_113_新北_中平_數學_g9s2e2_s1_1
   section: 1
@@ -32,30 +36,80 @@ questions:
   type: tf
   page: 1
   stem: $y = -(x - 2)^{2} + x^{2}$，$y$是為$x$的二次函數。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-1
+      title: 基本二次函數圖形
+      chapter: 第1章 二次函數
+    textbook: 九下 1-1 基本二次函數圖形
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s1_2
   section: 1
   number: 2
   type: tf
   page: 1
   stem: 由盒狀圖可以得到一組資料的四分位數、中位數及算術平均數。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s1_3
   section: 1
   number: 3
   type: tf
   page: 1
   stem: 如果一實驗所有可能發生的結果有n 種，則每一種結果發生的機率都是$\frac{1}{n}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-2
+      title: 機率
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-2 機率
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s1_4
   section: 1
   number: 4
   type: tf
   page: 1
   stem: 有一個角錐共有11 個頂點，則它的邊數有20 個。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s1_5
   section: 1
   number: 5
   type: tf
   page: 1
   stem: 四分位數Q3 就是將資料由小到大排序，至多有$\frac{3}{4}$的資料小於或等於Q3，且至多有$\frac{1}{4}$的資料大於或等於Q3。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_1
   section: 2
   number: 1
@@ -71,6 +125,16 @@ questions:
     content: $\frac{2}{3}$
   - label: D
     content: $\frac{5}{6}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_2
   section: 2
   number: 2
@@ -87,6 +151,16 @@ questions:
     content: 圖形開口向下
   - label: D
     content: 當$x = -2$時，$y$有最小值-5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_3
   section: 2
   number: 3
@@ -103,6 +177,16 @@ questions:
     content: '3'
   - label: D
     content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_4
   section: 2
   number: 4
@@ -123,6 +207,16 @@ questions:
   - key: s2_4_f1
     kind: figure
     file: doc_113_新北_中平_數學_g9s2e2/s2_4_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_5
   section: 2
   number: 5
@@ -138,6 +232,16 @@ questions:
     content: $y = -3(x + 2)^{2} + 6$
   - label: D
     content: $y = 3(x - 2)^{2} - 6$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_6
   section: 2
   number: 6
@@ -153,6 +257,16 @@ questions:
     content: '10.5'
   - label: D
     content: '11'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_7
   section: 2
   number: 7
@@ -168,6 +282,16 @@ questions:
     content: '6'
   - label: D
     content: '7'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_8
   section: 2
   number: 8
@@ -192,6 +316,16 @@ questions:
     content: $\frac{22}{249}$
   - label: D
     content: $\frac{15}{249}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-2
+      title: 機率
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-2 機率
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_9
   section: 2
   number: 9
@@ -207,6 +341,16 @@ questions:
     content: $\frac{1}{2}$
   - label: D
     content: $\frac{7}{12}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-2
+      title: 機率
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-2 機率
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_10
   section: 2
   number: 10
@@ -227,6 +371,16 @@ questions:
   - key: s2_10_f1
     kind: figure
     file: doc_113_新北_中平_數學_g9s2e2/s2_10_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_11
   section: 2
   number: 11
@@ -246,6 +400,16 @@ questions:
   - key: s2_11_f1
     kind: figure
     file: doc_113_新北_中平_數學_g9s2e2/s2_11_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s2_12
   section: 2
   number: 12
@@ -265,6 +429,16 @@ questions:
   - key: s2_12_f1
     kind: figure
     file: doc_113_新北_中平_數學_g9s2e2/s2_12_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s3_1
   section: 3
   number: 1
@@ -272,6 +446,16 @@ questions:
   page: 3
   stem: 中平國中舉辦校慶園遊會，只要消費滿100 元，都可以參加抽獎活動。若923 攤位的抽獎箱中有6 顆大小相同的球，顏色分別為2 顆黑球及4 顆白球，自箱中依序抽出兩顆球，取後放回，若兩顆球的顏色相同，便可以10
     元帶走一杯飲料；求當消費滿100 元時，抽出10 元飲料優惠的機率為多少? (素養題)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-2
+      title: 機率
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-2 機率
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s3_2
   section: 3
   number: 2
@@ -283,6 +467,16 @@ questions:
   - key: s3_2_f1
     kind: figure
     file: doc_113_新北_中平_數學_g9s2e2/s3_2_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s3_3
   section: 3
   number: 3
@@ -294,6 +488,16 @@ questions:
   - key: s3_3_f1
     kind: figure
     file: doc_113_新北_中平_數學_g9s2e2/s3_3_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s3_4
   section: 3
   number: 4
@@ -305,6 +509,16 @@ questions:
   - key: s3_4_f1
     kind: figure
     file: doc_113_新北_中平_數學_g9s2e2/s3_4_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s3_5
   section: 3
   number: 5
@@ -315,6 +529,16 @@ questions:
   - key: s3_5_f1
     kind: figure
     file: doc_113_新北_中平_數學_g9s2e2/s3_5_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s4_1
   section: 4
   number: 1
@@ -324,6 +548,16 @@ questions:
   group_stem: '1、如下圖，有一個半徑2 公尺，高12$\pi$公尺的圓柱桶橫躺地面，內裝汽油，油最深為1 公尺如(圖一)，今把圓柱桶直立如(圖二)，試問:
     (素養題)'
   shared_asset: g4_1_3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s4_2
   section: 4
   number: 2
@@ -333,6 +567,16 @@ questions:
   group_stem: '1、如下圖，有一個半徑2 公尺，高12$\pi$公尺的圓柱桶橫躺地面，內裝汽油，油最深為1 公尺如(圖一)，今把圓柱桶直立如(圖二)，試問:
     (素養題)'
   shared_asset: g4_1_3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s4_3
   section: 4
   number: 3
@@ -342,6 +586,16 @@ questions:
   group_stem: '1、如下圖，有一個半徑2 公尺，高12$\pi$公尺的圓柱桶橫躺地面，內裝汽油，油最深為1 公尺如(圖一)，今把圓柱桶直立如(圖二)，試問:
     (素養題)'
   shared_asset: g4_1_3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s4_4
   section: 4
   number: 4
@@ -358,6 +612,16 @@ questions:
   group_stem: '2、如下圖，書桌上黏著一個金字塔，金字塔是邊長都是5 公分的正四角錐，若P 點在正四角錐的$\overline{BC}$邊上，且$\overline{BP}
     = \overline{PC}$，又Q 點在正四角錐的$\overline{DE}$邊上，且$\overline{EQ} = \overline{QD}$，現有一隻螞蟻在金字塔表面上爬行，試回答下列問題:'
   shared_asset: g4_4_5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
 - id: doc_113_新北_中平_數學_g9s2e2_s4_5
   section: 4
   number: 5
@@ -367,6 +631,16 @@ questions:
   group_stem: '2、如下圖，書桌上黏著一個金字塔，金字塔是邊長都是5 公分的正四角錐，若P 點在正四角錐的$\overline{BC}$邊上，且$\overline{BP}
     = \overline{PC}$，又Q 點在正四角錐的$\overline{DE}$邊上，且$\overline{EQ} = \overline{QD}$，現有一隻螞蟻在金字塔表面上爬行，試回答下列問題:'
   shared_asset: g4_4_5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
 shared_assets:
 - key: g4_1_3
   label: 題組附圖

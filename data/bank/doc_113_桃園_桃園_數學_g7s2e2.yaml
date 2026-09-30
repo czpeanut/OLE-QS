@@ -1,308 +1,603 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 2
-  grade: 7
-  subject: 數學
   city: 桃園
   school_short: 桃園
-  school: 桃園市立桃園國中
+  school: 桃園國民中學
   id: doc_113_桃園_桃園_數學_g7s2e2
-  title: 桃園市立桃園國中 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 桃園國民中學 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一 、選擇題:每題4分
+    name: 一、選擇題:每題4分
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:每格4分
-    count: 11
+    name: 二、填充題:每格4分
+    count: 12
   - ord: 3
-    name: 三、非選題
-    type: calc
-    score_rule: 三、非選題:共12分
-    count: 2
-  - ord: 4
-    name: 一、選擇題
-    type: single
-    score_rule: 一. 選擇題:每題4分,共40分
-    count: 0
-  - ord: 5
-    name: 二、填充題
-    type: fill
-    score_rule: 二.填充題:每格4分,共48分
-    count: 0
-  - ord: 6
-    name: 三、非選題
-    type: calc
-    score_rule: 三.非選題:每答3分,共12分(請寫出計算過程與答案,否則不予計分。)
-    count: 2
+    name: 三、非選題：共12分
+    count: 3
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/2-2/桃園/桃園.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 在坐標平面上,關於直線:5x-4y=20的敘述何者正確?
+  stem: 在坐標平面上，關於直線：$5x-4y=20$ 的敘述何者正確？
   options:
   - label: A
-    content: 與x軸的交點坐標為(5 , 0)
+    content: 與 $x$ 軸的交點坐標為 $(5 , 0)$
   - label: B
-    content: 與y軸的交點坐標為(0 , 5)
+    content: 與 $y$ 軸的交點坐標為 $(0 , 5)$
   - label: C
-    content: 與兩軸圍成之三角形面積為20
+    content: 與兩軸圍成之三角形面積為 20
   - label: D
-    content: 與直線x+y=0的交點坐標為($\frac{20}{9}$
+    content: 與直線 $x+y=0$ 的交點坐標為 $(\frac{20}{9},-\frac{20}{9})$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 關於直線:ax+by+c=0的圖形的敘述,下列何者錯誤?
+  stem: 關於直線：$ax+by+c=0$ 的圖形的敘述，下列何者錯誤？
   options:
   - label: A
-    content: 若ab=0,則其圖形必通過原點
+    content: 若 $ab=0$，則其圖形必通過原點
   - label: B
-    content: 若ab>0,則其圖形必通過第二象限
+    content: 若 $ab>0$，則其圖形必通過第二象限
   - label: C
-    content: 若ab<0,則其圖形必通過第三象限
+    content: 若 $ab<0$，則其圖形必通過第三象限
   - label: D
-    content: 若c=0,則其圖形必通過原點
+    content: 若 $c=0$，則其圖形必通過原點
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 設A (3,5)、B ( 2,3 )、C ( 2,5 ),則下列哪一個方程式的圖形表示通過點A,且與直線BC垂直?
+  stem: 設 $A(3,5)$、$B(2,3)$、$C(2,5)$，則下列哪一個方程式的圖形表示通過點 $A$，且與直線 $BC$ 垂直？
   options:
   - label: A
-    content: x=3
+    content: $x=3$
   - label: B
-    content: x=5
+    content: $x=5$
   - label: C
-    content: y=3
+    content: $y=3$
   - label: D
-    content: y=5
+    content: $y=5$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 如右圖(一),在直角坐標平面上有一條直線,方程式為ax+by=4, A(-1,-6)是這條直線上的一個點,阿如發現,如果把這個點向右移3個 單位,再向上移6個單位,到達一點B,B點也會在這條直線上,則下列
-    敘述何者正確?
+  stem: 如右圖(一)，在直角坐標平面上有一條直線，方程式為 $ax+by=4$，$A(-1,-6)$ 是這條直線上的一個點，阿如發現，如果把這個點向右移 3
+    個單位，再向上移 6 個單位，到達一點 B，B 點也會在這條直線上，則下列敘述何者正確？
   options:
   - label: A
-    content: a +b=0
+    content: $a+b=0$
   - label: B
-    content: a+b=1
+    content: $a+b=1$
   - label: C
-    content: a+b=-1
+    content: $a+b=-1$
   - label: D
-    content: ab=-1
+    content: $ab=-1$
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_113_桃園_桃園_數學_g7s2e2/s1_4_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 若點(a , b)在直線$\frac{2}{3}$ x-$\frac{3}{4}$ y=0上,則a:b=?
+  stem: 若點 $(a, b)$ 在直線 $\frac{2}{3}x-\frac{3}{4}y=0$ 上，則 $a:b=$？
   options:
   - label: A
-    content: '3:8'
+    content: 3：8
   - label: B
-    content: '3:4'
+    content: 3：4
   - label: C
-    content: '9:8'
+    content: 9：8
   - label: D
-    content: '8:9'
+    content: 8：9
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 欲使(7x-3):(3x-5)有意義,則x不可為下列哪一數?
+  stem: 欲使 $(7x-3):(3x-5)$ 有意義，則 $x$ 不可為下列哪一數？
   options:
   - label: A
     content: $\frac{5}{3}$
   - label: B
-    content: -$\frac{5}{3}$
+    content: $-\frac{5}{3}$
   - label: C
     content: $\frac{5}{2}$
   - label: D
-    content: -$\frac{5}{2}$
+    content: $-\frac{5}{2}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若a:b=c:d成立,且abcd≠0,則下列何者錯誤?
+  stem: 若 $a:b=c:d$ 成立，且 $abcd \neq 0$，則下列何者錯誤？
   options:
   - label: A
-    content: a:c=b:d
+    content: $a:c=b:d$
   - label: B
-    content: b:a=d:c
+    content: $b:a=d:c$
   - label: C
-    content: (a+b):b=(c+d):d
+    content: $(a+b):b=(c+d):d$
   - label: D
-    content: (a+c):(a-c)=(b-d):(b+d)
+    content: $(a+c):(a-c)=(b-d):(b+d)$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 下列哪一組的比是相等的?
+  stem: 下列哪一組的比是相等的？
   options:
   - label: A
-    content: 2:3與6:4
+    content: 2：3 與 6：4
   - label: B
-    content: $\frac{1}{3}$ :$\frac{1}{4}$ 與3:4
+    content: $\frac{1}{3}:\frac{1}{4}$ 與 3：4
   - label: C
-    content: 4:18與6:27
+    content: 4：18 與 6：27
   - label: D
-    content: 7:0.5與0.7:5
+    content: 7：0.5 與 0.7：5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 若a與b成反比,c與b成反比,d與c成正比,則下列何者正確?
+  stem: 若 $a$ 與 $b$ 成反比，$c$ 與 $b$ 成反比，$d$ 與 $c$ 成正比，則下列何者正確？
   options:
   - label: A
-    content: a與c成反比
+    content: $a$ 與 $c$ 成反比
   - label: B
-    content: b與d成正比
+    content: $b$ 與 $d$ 成正比
   - label: C
-    content: '1'
+    content: $\frac{1}{a}$ 與 $\frac{1}{d}$ 成正比
+  - label: D
+    content: $\frac{1}{b}$ 與 $\frac{1}{c}$ 成正比
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 下列四個關於比值的敘述,有幾個是正確的? 甲:「$\frac{1}{3}$ :$\frac{1}{4}$ 的比值是4:3」                乙:「$\frac{1}{3}$
-    :$\frac{1}{4}$ 的比值是$\frac{3}{4}$ 」 丙:「8公分:4公分的比值是2公分」      丁:「3:$\frac{1}{4}$
+  stem: '下列四個關於比值的敘述，有幾個是正確的？
+
+    甲：「$\frac{1}{3}:\frac{1}{4}$ 的比值是 4：3」
+
+    乙：「$\frac{1}{3}:\frac{1}{4}$ 的比值是 $\frac{3}{4}$」
+
+    丙：「8 公分：4 公分的比值是 2 公分」
+
+    丁：「$3:\frac{1}{4}$ 的比值是 12」'
   options:
   - label: A
-    content: 0個
+    content: 0 個
   - label: B
-    content: 1個
+    content: 1 個
   - label: C
-    content: 2個
+    content: 2 個
   - label: D
-    content: 3個 七年級數學-p.1本試題共4頁 總 家長 分 簽章 ,-$\frac{20}{9}$ ) 圖(一) a與1 d成正比
-  - label: D
-    content: 1 b與1 c成正比 的比值是12」
+    content: 3 個
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: 下列敘述中,x與y的關係成正比的有a個,成反比的有b個,則a×b=__(1)__ (1)一罐飲料x元,買了一打共y元。 (2)長10公分,寬x公分,面積y平方公分的矩形。
-    (3)時速x公里,花了y小時,共走了230公里。 (4)半徑x公分,面積y平方公分的圓。 (5)重量x公斤折合y台斤 (6)xy≠0,且x:2=3:y。 (7)一旅行團有30人,其中男生有x人,女生有y人。
-    (8)曉萱有x顆糖果,大寶有y顆糖果,曉萱的糖果數和大寶的5倍一樣多。
+  stem: '下列敘述中，$x$ 與 $y$ 的關係成正比的有 $a$ 個，成反比的有 $b$ 個，則 $a\times b=$＿＿(1)＿＿
+
+    (1)一罐飲料 $x$ 元，買了一打共 $y$ 元。
+
+    (2)長 10 公分，寬 $x$ 公分，面積 $y$ 平方公分的矩形。
+
+    (3)時速 $x$ 公里，花了 $y$ 小時，共走了 230 公里。
+
+    (4)半徑 $x$ 公分，面積 $y$ 平方公分的圓。
+
+    (5)重量 $x$ 公斤折合 $y$ 台斤
+
+    (6)$xy\neq 0$，且 $x:2=3:y$。
+
+    (7)一旅行團有 30 人，其中男生有 $x$ 人，女生有 $y$ 人。
+
+    (8)曉萱有 $x$ 顆糖果，大寶有 $y$ 顆糖果，曉萱的糖果數和大寶的 5 倍一樣多。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 若兩聯立方程式    2x+3y=5    2x+by=3 ax+4y=2與3x+2y=5的解相同,則點(a,b)會在坐標平面的第__(2)__象限。
+  stem: 若兩聯立方程式 $\begin{cases} 2x+3y=5 \\ ax+4y=2 \end{cases}$ 與 $\begin{cases} 2x+by=3
+    \\ 3x+2y=5 \end{cases}$ 的解相同，則點 $(a,b)$ 會在坐標平面的第＿＿(2)＿＿象限。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 87%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 在坐標平面上,若直線y=-3x+6的圖形,與x軸交於P,與y軸交於Q,且O是原點,則△POQ的 面積為__(3)__平方單位
+  stem: 在坐標平面上，若直線 $y=-3x+6$ 的圖形，與 $x$ 軸交於 $P$，與 $y$ 軸交於 $Q$，且 $O$ 是原點，則 $\triangle
+    POQ$ 的面積為＿＿(3)＿＿平方單位
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: '如圖(二),在直角坐標平面上,ABCD是正方形,且AB垂直x軸,若D點坐標為(4,3),且A、C兩點y都在直線x+y+1=0上,則: (1)通過B、D兩點的直線方程式為__(4)__。
-    x O A D (2)通過B、C兩點的直線方程式為__(5)__。 B C圖(二)'
+  stem: (1)通過 $B$、$D$ 兩點的直線方程式為＿＿(4)＿＿。
+  group_stem: 如圖(二)，在直角坐標平面上，$ABCD$ 是正方形，且 $\overline{AB}$ 垂直 $x$ 軸，若 $D$ 點坐標為 $(4,3)$，且
+    $A$、$C$ 兩點都在直線 $x＋y＋1＝0$ 上，則：
+  shared_asset: g2_4_5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 某校七年級男生人數占全七年級的$\frac{3}{7}$ ,若女生比男生多102人,則七年級全部有__(6)__人。
+  stem: (2)通過 $B$、$C$ 兩點的直線方程式為＿＿(5)＿＿。
+  group_stem: 如圖(二)，在直角坐標平面上，$ABCD$ 是正方形，且 $\overline{AB}$ 垂直 $x$ 軸，若 $D$ 點坐標為 $(4,3)$，且
+    $A$、$C$ 兩點都在直線 $x＋y＋1＝0$ 上，則：
+  shared_asset: g2_4_5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 設a、b為兩正數,且8 a=3 b,則$\frac{a+}{a-}$b b=__(7)__。
+  stem: 某校七年級男生人數占全七年級的 $\frac{3}{7}$，若女生比男生多 102 人，則七年級全部有＿＿(6)＿＿人。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 若2x與1 y成正比,而且當x=3時,y=4,則當x=-4時,y=__(8)__。
+  stem: 設 $a$、$b$ 為兩正數，且 $\frac{8}{a}=\frac{3}{b}$，則 $\frac{a+b}{a-b}=$＿＿(7)＿＿。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 設x與y成反比,已知當x=6時,y=$\frac{19}{3}$ ,則當x=10時,y=__(9)__。
+  stem: 若 $2x$ 與 $\frac{1}{y}$ 成正比，而且當 $x=3$ 時，$y=4$，則當 $x=-4$ 時，$y=$＿＿(8)＿＿。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 圓面積與其半徑的平方成正比,已知有一圓半徑為r公分,面積為158平方公分,若有一圓半徑為2r公分,則此圓的面積為__(10)__平方公分。
+  stem: 設 $x$ 與 $y$ 成反比，已知當 $x=6$ 時，$y=\frac{19}{3}$，則當 $x=10$ 時，$y=$＿＿(9)＿＿。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 民國95年時,父子年齡比為5:1;民國115年時,父子年齡比為15:7,則民國103年時父子年齡比 為__(11)__
+  stem: 圓面積與其半徑的平方成正比，已知有一圓半徑為 $r$ 公分，面積為 158 平方公分，若有一圓半徑為 $2r$ 公分，則此圓的面積為＿＿(10)＿＿平方公分。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s2_11
   section: 2
   number: 11
   type: fill
   page: 2
-  stem: 如下圖(三),有一個圓與一個正方形重疊,且正方形的一個頂點落在此圓的圓心上,若重疊的部分占 正方形的 $\frac{1}{3}$ ,則圓半徑與正方形邊長的比值為__(12)__(圓周率以3計算)
-    O圖(三) 七年級數學-p.2本試題共4頁
+  stem: 民國 95 年時，父子年齡比為 5：1；民國 115 年時，父子年齡比為 15：7，則民國 103 年時父子年齡比為＿＿(11)＿＿
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_桃園_桃園_數學_g7s2e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 如下圖(三)，有一個圓與一個正方形重疊，且正方形的一個頂點落在此圓的圓心上，若重疊的部分占正方形的 $\frac{1}{3}$，則圓半徑與正方形邊長的比值為＿＿(12)＿＿(圓周率以
+    3 計算)
   assets:
-  - key: p2_f01
+  - key: s2_12_f1
     kind: figure
-    file: doc_113_桃園_桃園_數學_g7s2e2/p2_f01.png
+    file: doc_113_桃園_桃園_數學_g7s2e2/s2_12_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 3
-  stem: '暑假時,小翊和家人一同出遊,為了方便看地圖,小翊將地圖坐標化如下圖,其中一條筆直的高速 公路上,A交流道的坐標為(1 , 3),B交流道的坐標為(-2
-    , 0),試回答下列問題: 請寫出計算過程與答案,否則不予計分。 y高速公路1 A(1 , 3) B(-2 , 0) x O 1 (1) 此高速公路的直線方程式為何?(3分)
-    (2) 若小翊從A交流道下高速公路,直行向東2單位,向北k公里,可從D交流道上高速公路,則D點坐標為何?(3分)'
+  stem: (1) 此高速公路的直線方程式為何？(3 分)
+  group_stem: '暑假時，小翊和家人一同出遊，為了方便看地圖，小翊將地圖坐標化如下圖，其中一條筆直的高速公路上，$A$ 交流道的坐標為 $(1 , 3)$，$B$
+    交流道的坐標為 $(-2 , 0)$，試回答下列問題：
+
+    請寫出計算過程與答案，否則不予計分。'
+  shared_asset: g3_1_2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_桃園_桃園_數學_g7s2e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 3
-  stem: 'Sam和Tony計畫今年暑假一起到香港自助旅行,一圓遊迪士尼樂園的夢想。Sam將存了一整年的旅遊 基金3萬元臺幣,拿到銀行全部換成港幣;Tony覺得美金的匯率比較好,決定把自己存的3萬元臺幣
-    先全部換成美金,打算到香港再換成港幣。偏偏出發前夕兩人皆感染登革熱無法成行,兩人只好失望 地把之前換好的港幣與美金,全部再換回臺幣。下表為當時期外幣買進與賣出的平均匯率,請問兩人
-    將外幣換回臺幣後,分別獲利或損失多少元台幣?(各3分) 請寫出計算過程與答案,否則不予計分。(小數點後四捨五入) ※註:「現金買進」表示銀行向你買進外幣,「現金賣出」表示銀行賣出外幣給你。
-    幣別 現金買進 現金賣出 美金32.65 33.20 USD港幣4.10 4.30 HKD七年級數學-p.3本試題共4頁 桃園國民中學113學年度第二學期第二次定期考試題        (七年級)
-    科目:數學(03) 班     號 姓名:'
-  assets:
-  - key: p3_f01
-    kind: figure
-    file: doc_113_桃園_桃園_數學_g7s2e2/p3_f01.png
-- id: doc_113_桃園_桃園_數學_g7s2e2_s6_1
-  section: 6
-  number: 1
+  stem: (2) 若小翊從 $A$ 交流道下高速公路，直行向東 2 單位，向北 $k$ 公里，可從 $D$ 交流道上高速公路，則 $D$ 點坐標為何？(3 分)
+  group_stem: '暑假時，小翊和家人一同出遊，為了方便看地圖，小翊將地圖坐標化如下圖，其中一條筆直的高速公路上，$A$ 交流道的坐標為 $(1 , 3)$，$B$
+    交流道的坐標為 $(-2 , 0)$，試回答下列問題：
+
+    請寫出計算過程與答案，否則不予計分。'
+  shared_asset: g3_1_2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_113_桃園_桃園_數學_g7s2e2_s3_3
+  section: 3
+  number: 3
   type: calc
-  page: 4
-  stem: ''
-  assets:
-  - key: p4_f01
-    kind: figure
-    file: doc_113_桃園_桃園_數學_g7s2e2/p4_f01.png
-- id: doc_113_桃園_桃園_數學_g7s2e2_s6_2
-  section: 6
-  number: 2
-  type: calc
-  page: 4
-  stem: 七年級數學-p.4本試題共4頁 家長 總 分 簽章
+  page: 3
+  stem: '2. Sam 和 Tony 計畫今年暑假一起到香港自助旅行，一圓遊迪士尼樂園的夢想。Sam 將存了一整年的旅遊基金 3 萬元臺幣，拿到銀行全部換成港幣；Tony
+    覺得美金的匯率比較好，決定把自己存的 3 萬元臺幣先全部換成美金，打算到香港再換成港幣。偏偏出發前夕兩人皆感染登革熱無法成行，兩人只好失望地把之前換好的港幣與美金，全部再換回臺幣。下表為當時期外幣買進與賣出的平均匯率，請問兩人將外幣換回臺幣後，分別獲利或損失多少元台幣？(各
+    3 分)
+
+    請寫出計算過程與答案，否則不予計分。(小數點後四捨五入)
+
+    ※註：「現金買進」表示銀行向你買進外幣，「現金賣出」表示銀行賣出外幣給你。
+
+
+    | 幣別 | 現金買進 | 現金賣出 |
+
+    | --- | --- | --- |
+
+    | 美金 USD | 32.65 | 33.20 |
+
+    | 港幣 HKD | 4.10 | 4.30 |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+shared_assets:
+- key: g2_4_5
+  label: 題組附圖
+  kind: figure
+  file: doc_113_桃園_桃園_數學_g7s2e2/g2_4_5_f1.png
+  used_by:
+  - doc_113_桃園_桃園_數學_g7s2e2_s2_4
+  - doc_113_桃園_桃園_數學_g7s2e2_s2_5
+- key: g3_1_2
+  label: 題組附圖
+  kind: figure
+  file: doc_113_桃園_桃園_數學_g7s2e2/g3_1_2_f1.png
+  used_by:
+  - doc_113_桃園_桃園_數學_g7s2e2_s3_1
+  - doc_113_桃園_桃園_數學_g7s2e2_s3_2

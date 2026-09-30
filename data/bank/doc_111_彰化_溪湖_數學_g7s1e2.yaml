@@ -1,43 +1,38 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 1
   exam_seq: 2
-  school: 彰化縣立溪湖國中
-  grade: 7
-  subject: 數學
   city: 彰化
   school_short: 溪湖
+  school: 彰化縣立溪湖國中
   id: doc_111_彰化_溪湖_數學_g7s1e2
-  title: 彰化縣立溪湖國中 111學年度第1學期第2次定期評量7年級數學科試題
+  title: 彰化縣立溪湖國中 111學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 111學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題 和 二、填充題
-    type: single
-    score_rule: 一、選擇題 和 二、填充題 答對總題數得分對照表
-    count: 0
-  - ord: 2
-    name: 一、選擇題
-    type: single
-    score_rule: 一、 選擇題
+    name: 選擇題
     count: 10
-  - ord: 3
-    name: 二、填充題
-    type: fill
-    score_rule: 二、 填充題
+  - ord: 2
+    name: 填充題
     count: 7
-  - ord: 4
-    name: 三、計算題
-    type: calc
-    score_rule: 三、 計算題(每題四分,請完整寫出你的解題過程)
+  - ord: 3
+    name: 計算題(每題四分，請完整寫出你的解題過程)
     count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/1-2/彰化/溪湖.pdf
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_1
-  section: 2
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_1
+  section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列何者可表示成兩個質數的乘積?
+  stem: 下列何者可表示成兩個質數的乘積？
   options:
   - label: A
     content: '97'
@@ -47,57 +42,97 @@ questions:
     content: '84'
   - label: D
     content: '81'
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_2
-  section: 2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_2
+  section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列何者的值與 $\frac{5}{8}$ 2  相等?
+  stem: 下列何者的值與$-2\frac{5}{8}$相等？
   options:
   - label: A
-    content: $\frac{5}{8}$ 2  
+    content: $-2-\frac{5}{8}$
   - label: B
-    content: $\frac{3}{8}$ 2  
+    content: $-2-\frac{3}{8}$
   - label: C
-    content: 375 1. 
+    content: $-1.375$
   - label: D
-    content: $\frac{5}{8}$ 2  
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_3
-  section: 2
+    content: $-2+\frac{5}{8}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_3
+  section: 1
   number: 3
   type: single
   page: 1
-  stem: 算式 ) $\frac{3}{8}$ ( $\frac{5}{6}$    之值為何? $\frac{29}{24}$ 
+  stem: 算式$-\frac{5}{6}-(-\frac{3}{8})$之值為何？
   options:
-  - label: B
-    content: $\frac{8}{14}$ 
-  - label: C
-    content: $\frac{11}{24}$ 
-  - label: D
-    content: $\frac{1}{4}$ 
   - label: A
-    content: × 7× 113的因數?
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_4
-  section: 2
+    content: $-\frac{29}{24}$
+  - label: B
+    content: $-\frac{8}{14}$
+  - label: C
+    content: $-\frac{11}{24}$
+  - label: D
+    content: $-\frac{1}{4}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_4
+  section: 1
   number: 4
   type: single
   page: 1
-  stem: 下列哪一個不是23 × 32
+  stem: 下列哪一個不是$2^{3} \times 3^{2} \times 7 \times 11^{3}$的因數？
   options:
   - label: A
-    content: 3 24 
+    content: $2^{4} \times 3$
   - label: B
-    content: 2 11 3 2  
+    content: $2 \times 3 \times 11^{2}$
   - label: C
-    content: 2 2 11 3 
+    content: $3^{2} \times 11^{2}$
   - label: D
-    content: 3 2 11 2 
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_5
-  section: 2
+    content: $2^{2} \times 11^{3}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_5
+  section: 1
   number: 5
   type: single
   page: 1
-  stem: 判斷7଺是7ଷ的幾倍?
+  stem: 判斷$7^{6}$是$7^{3}$的幾倍？
   options:
   - label: A
     content: '2'
@@ -107,27 +142,47 @@ questions:
     content: '49'
   - label: D
     content: '343'
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_6
-  section: 2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_6
+  section: 1
   number: 6
   type: single
   page: 1
-  stem: 下列選項中所表示的數,哪一個與252的最大公因 數為84?
+  stem: 下列選項中所表示的數，哪一個與252 的最大公因數為84？
   options:
   - label: A
-    content: 2 × 3 × 52 × 72
+    content: $2 \times 3 \times 5^{2} \times 7^{2}$
   - label: B
-    content: 2 × 32 × 5 × 72
+    content: $2 \times 3^{2} \times 5 \times 7^{2}$
   - label: C
-    content: 22 × 3 × 52 × 7
+    content: $2^{2} \times 3 \times 5^{2} \times 7$
   - label: D
-    content: 22 × 32 × 5 × 7
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_7
-  section: 2
+    content: $2^{2} \times 3^{2} \times 5 \times 7$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_7
+  section: 1
   number: 7
   type: single
   page: 1
-  stem: 在0、1、127、297四數中,若質數有a個,合數有b個,11的倍數有c個,則a+ b+ c=?
+  stem: 在0、1、127、297 四數中，若質數有$a$個，合數有$b$個，11 的倍數有$c$個，則$a+b+c=$？
   options:
   - label: A
     content: '2'
@@ -137,12 +192,22 @@ questions:
     content: '4'
   - label: D
     content: '5'
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_8
-  section: 2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_8
+  section: 1
   number: 8
   type: single
   page: 1
-  stem: 若a、b為正整數,且a× b= 2ଶ× 3ହ× 7,則下列 何者不可能為a、b最大公因數?
+  stem: 若$a$、$b$為正整數，且$a \times b = 2^{2} \times 3^{5} \times 7$，則下列何者不可能為$a$、$b$最大公因數？
   options:
   - label: A
     content: '1'
@@ -151,28 +216,48 @@ questions:
   - label: C
     content: '18'
   - label: D
-    content: 27 $\frac{ଵ}{ସ}$ ଷ ଼)的結果相等?
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_9
-  section: 2
+    content: '27'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_9
+  section: 1
   number: 9
   type: single
   page: 1
-  stem: 下列何式與−1 ÷ 2 ÷ (− $\frac{ଵ}{ସ}$ ଷ ଼)]
+  stem: 下列何式與$-1\frac{1}{4} \div 2 \div (-\frac{3}{8})$的結果相等？
   options:
-  - label: B
-    content: −1 $\frac{ଵ}{ସ}$ $\frac{ଵ}{ଶ}$ ଷ ଼)
   - label: A
-    content: −1 ÷ [2 ÷ (− × × (− $\frac{ଵ}{ସ}$ ଼ $\frac{ଵ}{ସ}$ ଷ ଼) ]
+    content: $-1\frac{1}{4} \div [2 \div (-\frac{3}{8})]$
+  - label: B
+    content: $-1\frac{1}{4} \times \frac{1}{2} \times (-\frac{3}{8})$
   - label: C
-    content: −1 ଷ )]
+    content: $-1\frac{1}{4} \div [2 \times (-\frac{8}{3})]$
   - label: D
-    content: −1 ÷ [2 × (− ÷ [2 × (−
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_10
-  section: 2
+    content: $-1\frac{1}{4} \div [2 \times (-\frac{3}{8})]$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s1_10
+  section: 1
   number: 10
   type: single
   page: 1
-  stem: 阿明家的客廳地板為長720公分、寬630公分的長 方形,他想將客廳地板鋪滿大小相同的正方形瓷磚。 在不切割瓷磚的前提下,若選擇的瓷磚邊長要最大, 則此時共需要多少塊瓷磚才能將客廳地板鋪滿?
+  stem: 阿明家的客廳地板為長720 公分、寬630 公分的長方形，他想將客廳地板鋪滿大小相同的正方形瓷磚。在不切割瓷磚的前提下，若選擇的瓷磚邊長要最大，則此時共需要多少塊瓷磚才能將客廳地板鋪滿？
   options:
   - label: A
     content: '90'
@@ -182,77 +267,205 @@ questions:
     content: '45'
   - label: D
     content: '15'
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_1
-  section: 3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_1
+  section: 2
   number: 1
   type: fill
   page: 1
-  stem: 求 $\frac{2}{5}$ 2  的倒數為_______。
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_2
-  section: 3
+  stem: 求$-2\frac{2}{5}$的倒數為_______。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_2
+  section: 2
   number: 2
   type: fill
   page: 1
-  stem: 將924作質因數分解,並寫成標準分解式為___________。
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_3
-  section: 3
+  stem: 將924 作質因數分解，並寫成標準分解式為___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_3
+  section: 2
   number: 3
   type: fill
   page: 1
-  stem: 桌上有210個大小相同的正方體積木,今欲將210個積木 進行分堆,每堆積木的個數都一樣,而且不能剩下。若每 堆至少3個,但不能多於10個,則可能的分堆方法有
-    _______種。
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_4
-  section: 3
+  stem: 桌上有210 個大小相同的正方體積木，今欲將210 個積木進行分堆，每堆積木的個數都一樣，而且不能剩下。若每堆至少3 個，但不能多於10 個，則可能的分堆方法有_______種。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_4
+  section: 2
   number: 4
   type: fill
   page: 1
-  stem: '求下列各組數的最大公因數或最小公倍數,並以標準分解 式表示: (1)(270、2ଷ× 3ଶ× 7) = _____________。 (2)[2ଷ×
-    3ସ× 5 × 7ଶ、2ହ× 3ଶ× 7 × 11] = _______________。 背面尚有試題'
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_5
-  section: 3
+  stem: '求下列各組數的最大公因數或最小公倍數，並以標準分解式表示:
+
+    (1) $(270、2^{3} \times 3^{2} \times 7) =$ _____________。
+
+    (2) $[2^{3} \times 3^{4} \times 5 \times 7^{2}、2^{5} \times 3^{2} \times 7 \times
+    11] =$ _______________。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_5
+  section: 2
   number: 5
   type: fill
   page: 2
-  stem: 若 $\frac{3}{2}$   a 、 $\frac{6}{5}$   b 、 $\frac{12}{7}$   c ,則a、b、c三數的大小關
-    係為______________。
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_6
-  section: 3
+  stem: 若$a=-\frac{3}{2}$、$b=-\frac{6}{5}$、$c=-\frac{12}{7}$，則$a$、$b$、$c$三數的大小關係為______________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_6
+  section: 2
   number: 6
   type: fill
   page: 2
-  stem: 計算下列各式的值:(以最簡分數表示) (1) ) $\frac{5}{12}$ $\frac{7}{18}$ 1 ( ) $\frac{5}{12}$
-    2 (     =____________。 (2) ) $\frac{7}{12}$ ( $\frac{1}{3}$ 2 ) $\frac{2}{9}$
-    (     = __________。 (3) 2 4 6 6 ) 5 ( 10 ) 5 2 (     =________。
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_7
-  section: 3
+  stem: '計算下列各式的值：(以最簡分數表示)
+
+    (1) $(-2\frac{5}{12})-(-1\frac{7}{18}-\frac{5}{12}) =$____________。
+
+    (2) $(-\frac{2}{9}) \times 2\frac{1}{3} \div (-\frac{7}{12}) =$ __________。
+
+    (3) $(2^{6} \times 5^{6}) \div 10^{4}-(-5)^{2} =$________。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_7
+  section: 2
   number: 7
   type: fill
   page: 2
-  stem: 若b a 3 ) 3 ( 9 6 6   ,則a+ b=_________。
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s4_1
-  section: 4
+  stem: 若$9^{6}=(3^{a})^{6}=3^{b}$，則$a+b=$_________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_1
+  section: 3
   number: 1
   type: calc
   page: 2
-  stem: 計算 ) $\frac{4}{7}$ ( $\frac{11}{3}$ $\frac{4}{7}$ ) $\frac{3}{2}$ ( 3  
-      值,並以最簡分數表示。
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s4_2
-  section: 4
+  stem: 計算$(\frac{3}{2})^{3} \times \frac{4}{7}+\frac{11}{3} \times (-\frac{4}{7})$值，並以最簡分數表示。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_2
+  section: 3
   number: 2
   type: calc
   page: 2
-  stem: 如下圖,郵局、學校都在彰水路上,若將彰水路看成一條 數線,郵局的坐標為 ) $\frac{2}{5}$ 4 ( ,學校為 ) $\frac{1}{3}$
-    2 ( 。帥興從郵局出 發,先向南走 $\frac{3}{4}$ 2個單位和帥良會合,再一起向北走 $\frac{3}{5}$ 9個 單位,則最後兩人會停在學校的北邊或南邊?
-    學校 郵局 北0 $\frac{1}{3}$ 2 $\frac{2}{5}$ 4 
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s4_3
-  section: 4
+  stem: 如下圖，郵局、學校都在彰水路上，若將彰水路看成一條數線，郵局的坐標為$(-4\frac{2}{5})$，學校為$(2\frac{1}{3})$。帥興從郵局出發，先向南走$2\frac{3}{4}$個單位和帥良會合，再一起向北走$9\frac{3}{5}$個單位，則最後兩人會停在學校的北邊或南邊？
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_111_彰化_溪湖_數學_g7s1e2/s3_2_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_3
+  section: 3
   number: 3
   type: calc
   page: 2
-  stem: 帥超身上有一個裝滿十元硬幣的零錢袋,某天他準備到鐵 爪驛站使用,他將袋子裡的硬幣倒出來,發現以5個一疊、 6個一疊、9個一疊都多出2個硬幣,已知袋子裡的錢介於1000元~2000元之間,則此零錢袋中有多少元?
-- id: doc_111_彰化_溪湖_數學_g7s1e2_s4_4
-  section: 4
+  stem: 帥超身上有一個裝滿十元硬幣的零錢袋，某天他準備到鐵爪驛站使用，他將袋子裡的硬幣倒出來，發現以5 個一疊、6 個一疊、9 個一疊都多出2 個硬幣，已知袋子裡的錢介於1000
+    元～2000 元之間，則此零錢袋中有多少元？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_4
+  section: 3
   number: 4
   type: calc
   page: 2
-  stem: 將27、39、40、80、91、126六個數分成兩組,若每組三 個數且兩組乘積相等,則跟91一組的是哪兩個數? 試題結束
+  stem: 將27、39、40、80、91、126 六個數分成兩組，若每組三個數且兩組乘積相等，則跟91 一組的是哪兩個數？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai

@@ -1,84 +1,129 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 2
   exam_seq: 1
-  school: 桃園市立同德國民中學
-  grade: 7
   city: 桃園
   school_short: 同德
-  subject: 數學
+  school: 桃園市立同德國民中學
+  scope_note: 1-1~2-1
   id: doc_111_桃園_同德_數學_g7s2e1
-  title: 桃園市立同德國民中學 111學年度第2學期第1次定期評量7年級數學科試題
+  title: 桃園市立同德國民中學 111學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 111學年度第2學期第1次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: 一、 選擇題 (每題4分;共40分)
     count: 10
   - ord: 2
     name: 二、填充題
-    type: fill
-    score_rule: 二、 填充題(每格4分;共40分)
-    count: 7
+    count: 10
   - ord: 3
     name: 三、計算題
-    type: calc
-    score_rule: 三、 計算題(第一題10分;第二、三題各5分;共20分)
-    count: 0
+    count: 3
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/2-1/桃園/同德.pdf
+  scope:
+    lessons:
+    - number: 1-1~2-1
+      title: null
+    publisher: null
+    raw: 1-1~2-1
+    volume: null
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列敘述何者錯誤?
+  stem: 下列敘述何者錯誤？
   options:
   - label: A
-    content: 0 $\frac{1}{2}$    b a為二元一次方程式
+    content: $-\frac{1}{2}a-b=0$為二元一次方程式
   - label: B
-    content: 方程式4 2 3  y x也可以表示為0 8 4 6   y x
+    content: 方程式$3x+2y=4$也可以表示為$6x+4y-8=0$
   - label: C
-    content: x 2與y 3為同類項可以合併為y x 3 2 
+    content: $2x$與$3y$為同類項可以合併為$2x+3y$
   - label: D
-    content: 5 13 7    y x為二元一次式
+    content: $-7x+13y-5$為二元一次式
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列有關方程式22 2 5  y x的敘述何者錯誤?
+  stem: 下列有關方程式$5x+2y=22$的敘述何者錯誤？
   options:
   - label: A
-    content: 若x、y皆為任意數 ,則方程式有無限多組解
+    content: 若$x$、$y$皆為任意數，則方程式有無限多組解
   - label: B
-    content: 若x、y皆為正整數,則方程式有2組解
+    content: 若$x$、$y$皆為正整數，則方程式有2組解
   - label: C
-    content: 若x、y皆為整數,則方程式有無限多組解
+    content: 若$x$、$y$皆為整數，則方程式有無限多組解
   - label: D
-    content: 若x、y為0或正整數,則方程式有5組解
+    content: 若$x$、$y$為0或正整數，則方程式有5組解
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 已知玫瑰花每朵賣20元,百合花每朵賣30元,曜新共買了10朵,花了210元,則曜新買的玫瑰花與百合花 相差多少朵?
+  stem: 已知玫瑰花每朵賣20 元，百合花每朵賣30 元，曜新共買了10 朵，花了210 元，則曜新買的玫瑰花與百合花相差多少朵？
   options:
   - label: A
-    content: 8朵
+    content: 8 朵
   - label: B
-    content: 5朵
+    content: 5 朵
   - label: C
-    content: 3朵
+    content: 3 朵
   - label: D
-    content: 1朵
+    content: 1 朵
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: '下列有幾組x、y是二元一次方程式2 3 2    y x的解? 甲: 1   x , 0  y乙: 4  x , 2   y丙:
-    $\frac{5}{2}$  x , $\frac{7}{3}$   y丁: 0.4   x , 0.4   y'
+  stem: '下列有幾組$x$、$y$是二元一次方程式$-2x-3y=2$的解？
+
+    甲：$x=-1$，$y=0$
+
+    乙：$x=4$，$y=-2$
+
+    丙：$x=\frac{5}{2}$，$y=-\frac{7}{3}$
+
+    丁：$x=-0.4$，$y=-0.4$'
   options:
   - label: A
     content: 4組
@@ -88,148 +133,404 @@ questions:
     content: 2組
   - label: D
     content: 1組
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 如右圖,若亦君身高為x公分,又旭身高為y公分,依題意可列出下列哪一個二元一次聯立方程式?  
+  stem: 如右圖，若亦君身高為$x$公分，又旭身高為$y$公分，依題意可列出下列哪一個二元一次聯立方程式？
   options:
   - label: A
-    content:  3 15 8 6 5
+    content: $\begin{cases} 5x=6y \\ 8x+15=3y \end{cases}$
   - label: B
-    content:  y x 15 3 8 5 6 y x y x     y x  
+    content: $\begin{cases} 6x=5y \\ 8x=3y+15 \end{cases}$
   - label: C
-    content:  y x
+    content: $\begin{cases} 5x=6y \\ 8x=3y+15 \end{cases}$
   - label: D
-    content:  15 3 8 6 5 y x 3 15 8 5 6 y x     y x亦君 又旭   
+    content: $\begin{cases} 6x=5y \\ 8x+15=3y \end{cases}$
   assets:
-  - key: p1_f01
+  - key: s1_5_f1
     kind: figure
-    file: doc_111_桃園_同德_數學_g7s2e1/p1_f01.png
+    file: doc_111_桃園_同德_數學_g7s2e1/s1_5_f1.png
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 80%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 試利用代入消去法解二元一次聯立方程式 (2) 1 (1) 4 2  y x ,則下列哪一個步驟開始發生錯誤?  y x  
+  stem: 試利用代入消去法解二元一次聯立方程式$\begin{cases} 2x-y=-4\cdots(1) \\ x+y=1\cdots(2) \end{cases}$，則下列哪一個步驟開始發生錯誤?
   options:
   - label: A
-    content: 步驟一:由移項  y x  1 
+    content: 步驟一：由②移項$x=1-y\cdots ③$
   - label: B
-    content: 步驟二:代入得4 ) 2(1     y y
+    content: 步驟二：③代入①得 $2(1-y)-y=-4$
   - label: C
-    content: '步驟三: 4 2 2     y y , 2   y'
+    content: 步驟三：$2-2y-y=-4$ ， $y=-2$
   - label: D
-    content: 步驟四:代入得3  x 1買了糖果,再給妹妹20元,此時小明的錢是妹妹的2倍,
+    content: 步驟四：代入②得 $x=3$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_7
   section: 1
   number: 7
   type: single
   page: 2
-  stem: 小明與妹妹二人共有490元,小明先將其所有錢的$\frac{1}{3}$ 依題意下列何者正確?(設小明原有x元,妹妹原有y元)     
-       2 20 $\frac{1}{3}$ 490
+  stem: 小明與妹妹二人共有490 元，小明先將其所有錢的$\frac{1}{3}$買了糖果，再給妹妹20 元，此時小明的錢是妹妹的2 倍，依題意下列何者正確？(設小明原有$x$元，妹妹原有$y$元)
   options:
-  - label: B
-    content: y x ) 20 2( 20 $\frac{1}{3}$ 490 y x y x
   - label: A
-    content: ''
+    content: $\begin{cases} x+y=490 \\ \frac{1}{3}x-20=2y \end{cases}$
+  - label: B
+    content: $\begin{cases} x+y=490 \\ \frac{1}{3}x-20=2(y+20) \end{cases}$
   - label: C
-    content:      y x  
+    content: $\begin{cases} x+y=490 \\ \frac{2}{3}x-20=2y \end{cases}$
+  - label: D
+    content: $\begin{cases} x+y=490 \\ \frac{2}{3}x-20=2(y+20) \end{cases}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_8
   section: 1
   number: 8
   type: single
   page: 2
-  stem: 若a<0、b>0,則下列敘述何者錯誤?
+  stem: 若$a<0$、$b>0$，則下列敘述何者錯誤？
   options:
   - label: A
-    content: 點 ( b , a )在第四象限
+    content: 點 ( $b$ , $a$ )在第四象限
   - label: B
-    content: 點 ( a , b )在第二象限
+    content: 點 ( $a$ , $b$ )在第二象限
   - label: C
-    content: 點 ( b , a )到y軸的距離為a單位長
+    content: 點 ( $b$ , $a$ )到$y$軸的距離為$|a|$單位長
   - label: D
-    content: 點 ( b , 0)在x軸上
+    content: 點 ( $b$ , 0)在$x$軸上
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: 已知A 、B兩點的坐標分別為A (-3 , 1 )、B ( 2 , 1 ),若ABC  的面積為10,則下列何者不可能 是C點坐標?
+  stem: 已知A 、B兩點的坐標分別為 A (－3 , 1 )、B ( 2 , 1 )，若$\triangle ABC$的面積為10，則下列何者不可能是C點坐標？
   options:
   - label: A
-    content: ( 0 , -3 )
+    content: ( 0 , －3 )
   - label: B
     content: ( 2 , 3 )
   - label: C
     content: ( 5 , 5 )
   - label: D
-    content: (-1, 5 )
+    content: (－1, 5 )
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 在坐標平面上有一隻蟑螂名叫小強,當牠吃到一塊滅蟑藥後感到渾身不對勁,於是迅速逃跑求生。已知 牠先往南衝了8個單位,再往東爬了13個單位,再往北慢慢移動3個單位,最後六腳癱軟停在(
-    7 , -1 ) 的位置;請問這塊滅蟑藥放在座標何處?( y軸正向為北方,x軸正向為東方)
+  stem: 在坐標平面上有一隻蟑螂名叫小強，當牠吃到一塊滅蟑藥後感到渾身不對勁，於是迅速逃跑求生。已知牠先往南衝了8個單位，再往東爬了13個單位，再往北慢慢移動3個單位，最後六腳癱軟停在(
+    7 , －1 )的位置；請問這塊滅蟑藥放在座標何處？( $y$軸正向為北方，$x$軸正向為東方)
   options:
   - label: A
-    content: (-6 , 4 )
+    content: (－6 , 4 )
   - label: B
-    content: ( 20 ,-6 )
+    content: ( 20 ,－6 )
   - label: C
-    content: ( 9 ,-12 )
+    content: ( 9 ,－12 )
   - label: D
-    content: (-6 ,-6 )
+    content: (－6 ,－6 )
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: 化簡下列各式 (1)      ) 5 2( ) 2 3( y x y x _______(1)________ (2)  $\frac{4xy}{5}$
-     $\frac{7x2y}{4}$ ______(2)_________
+  stem: '化簡下列各式
+
+    (1) $3(x-2y)-2(-x-5y)=$ ________(1)________'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 解下列各二元一次聯立方程式   (1)   3 14 2 13求x、y的值 ____(3)________ y x  x y   (2)  
-    y x求x、y的值 _____(4)_______ 10 4 1 0.5 y x   2         2 20 $\frac{2}{3}$
-    490 (D) y x ) 20 2( 20 $\frac{2}{3}$ 490 y x y x      y x    
+  stem: '化簡下列各式
+
+    (2) $\frac{7x-2y}{4}-\frac{4x-y}{5}=$ ______(2)_________'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s2_3
   section: 2
   number: 3
   type: fill
-  page: 3
-  stem: 已知二元一次聯立方程式 7 3 2 10 3 y x by x的解是2  x 、 a y ,則  b a ? _____(5)_______
-     
+  page: 2
+  stem: '解下列各二元一次聯立方程式
+
+    (1) $\begin{cases} 13x-2y=14 \\ y=3x \end{cases}$ 求$x$、$y$的值 ____(3)________'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s2_4
   section: 2
   number: 4
   type: fill
-  page: 3
-  stem: 直角坐標平面上有A ( 2m-9 , n+2 )、B ( n , m-1 ),若將A點右移4個單位,再向下移5個單位,會與B點 重合,則點 ( m
-    , n )為 ______(6)______;點 ( m , n ) 在第______(7)______象限
+  page: 2
+  stem: '解下列各二元一次聯立方程式
+
+    (2) $\begin{cases} x+0.5y=1 \\ 4x+y=10 \end{cases}$ 求$x$、$y$的值 _____(4)_______'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 3
-  stem: 佩萱12歲生日那天,媽媽告訴她,等你到我這年齡我就52歲了,請問媽媽今年幾歲?____(8)____
+  stem: 已知二元一次聯立方程式$\begin{cases} 3x+by=10 \\ 2x-3y=7 \end{cases}$ 的解是$x=2$、$y=a$，則
+    $a-b=$？ _____(5)_______
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 86%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 3
-  stem: 已知5 $\frac{y}{2}$  x 、 8 $\frac{y}{4}$ 3   x及11  y ax有相同的解,求a之值 ______(9)______
+  stem: 直角坐標平面上有A ( 2m-9 , n+2 )、B ( n , m-1 )，若將A點右移4個單位，再向下移5個單位，會與B點重合，則點 ( m ,
+    n )為 ______(6)______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s2e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 3
-  stem: 美美水果行買進一批蘋果與水梨,已知蘋果比水梨多了10個,如果將蘋果每5個裝一盒,水梨每4個裝一盒, 兩種水果恰好共裝成11盒。請問水果行買進水梨多少個?______(10)_____
+  stem: 直角坐標平面上有A ( 2m-9 , n+2 )、B ( n , m-1 )，若將A點右移4個單位，再向下移5個單位，會與B點重合，則點 ( m ,
+    n ) 在第______(7)______象限
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_111_桃園_同德_數學_g7s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 佩萱12歲生日那天，媽媽告訴她，等你到我這年齡我就52歲了，請問媽媽今年幾歲?____(8)____
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_111_桃園_同德_數學_g7s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 已知$x-\frac{y}{2}=5$、$3x+\frac{y}{4}=8$及$ax+y=11$ 有相同的解，求$a$之值 ______(9)______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_111_桃園_同德_數學_g7s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 美美水果行買進一批蘋果與水梨，已知蘋果比水梨多了10個，如果將蘋果每5個裝一盒，水梨每4個裝一盒，兩種水果恰好共裝成11盒。請問水果行買進水梨多少個？______(10)_____
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_111_桃園_同德_數學_g7s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: '若$a>0$，且$a+b<0$，請填入下列各點分別在哪一象限或哪一坐標軸上？
+
+    ① ( $a$ , $b$ )   ② ( $b$,  $|a-b|$ )   ③ ( $\frac{b}{a}$ , $a+b$ )   ④ ( $-ab$
+    , $-b^{2}$ )   ⑤ ( 0 , $b-a$ )'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_111_桃園_同德_數學_g7s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: 已知兩正整數，若大數比小數的2倍再少5，且小數比大數的5倍再少2。此兩個整數各是多少?
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_111_桃園_同德_數學_g7s2e1_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 3
+  stem: 下圖為同德早餐車所販售的商品，每購買一個飯糰，可用10元加購飲品。某日購買飯糰的顧客皆加購飲品，且當日共賣出x個品項，其中有y個是飯團，則當日早餐店的收入為多少元?
   assets:
-  - key: p3_f01
+  - key: s3_3_f1
     kind: figure
-    file: doc_111_桃園_同德_數學_g7s2e1/p3_f01.png
+    file: doc_111_桃園_同德_數學_g7s2e1/s3_3_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai

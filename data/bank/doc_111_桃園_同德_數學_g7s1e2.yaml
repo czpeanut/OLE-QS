@@ -1,53 +1,71 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 1
   exam_seq: 2
-  school: 桃園市立同德國民中學
-  grade: 7
   city: 桃園
   school_short: 同德
-  subject: 數學
+  school: 桃園市立同德國中
+  scope_note: 2－1～2－4
   id: doc_111_桃園_同德_數學_g7s1e2
-  title: 桃園市立同德國民中學 111學年度第1學期第2次定期評量7年級數學科試題
+  title: 桃園市立同德國中 111學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 111學年度第1學期第2次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題4分,共20分)
     count: 5
   - ord: 2
     name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:(每格4分,共64分)
     count: 13
   - ord: 3
     name: 三、綜合題
-    type: fill
-    score_rule: 三、綜合題:(每題4分,共16分)
     count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/1-2/桃園/同德.pdf
+  scope:
+    lessons:
+    - number: 2-1～2-4
+      title: null
+    publisher: null
+    raw: 2－1～2－4
+    volume: null
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_111_桃園_同德_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 二位數中9的倍數共有多少個?
+  stem: 二位數中 9 的倍數共有多少個？
   options:
   - label: A
-    content: 9個
+    content: 9 個
   - label: B
-    content: 10個
+    content: 10 個
   - label: C
-    content: 11個
+    content: 11 個
   - label: D
-    content: 12個
+    content: 12 個
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 拔河比賽時,雙方人數的總和一定是下列那一個數的倍數?
+  stem: 拔河比賽時，雙方人數的總和一定是下列那一個數的倍數？
   options:
   - label: A
     content: '2'
@@ -57,12 +75,22 @@ questions:
     content: '5'
   - label: D
     content: '9'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 哪幾組數互質?  甲:27,28、乙:17、43、丙:12,51、丁:21,50
+  stem: 哪幾組數互質？ 甲：27，28、乙：17、43、丙：12，51、丁：21，50
   options:
   - label: A
     content: 甲乙
@@ -72,12 +100,22 @@ questions:
     content: 甲乙丙丁
   - label: D
     content: 甲乙丁
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 從1到99之間的所有整數,刪去2、3、5、7的倍數後,所剩下的最大整數是?
+  stem: 從 1 到 99 之間的所有整數，刪去 2、3、5、7 的倍數後，所剩下的最大整數是？
   options:
   - label: A
     content: '91'
@@ -87,129 +125,324 @@ questions:
     content: '97'
   - label: D
     content: '99'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 小於100的正整數中,可以被2或3整除的數共有多少個?
+  stem: 小於 100 的正整數中，可以被 2 或 3 整除的數共有多少個？
   options:
   - label: A
-    content: 50個
+    content: 50 個
   - label: B
-    content: 33個
+    content: 33 個
   - label: C
-    content: 16個
+    content: 16 個
   - label: D
-    content: 66個
+    content: 66 個
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 將630寫成標準分解式:630=__(1)__,並求出630的正因數 個數 有__(2)__個。2-1
+  stem: 將 630 寫成標準分解式：630＝____(1)____，並求出 630 的正因數個數有____(2)____個。2-1
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: 已知a=20×21×22×23×24×25×26×27×28×29,則a這個數的後面會有__ 的後面會有__(3)__個連續的0。2-1
+  stem: 已知 a＝20×21×22×23×24×25×26×27×28×29，則 a 這個數的後面會有____(3)____個連續的 0。2-1
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: (24,[12,18])=__(4)__。2-2
+  stem: （24,［12,18］）＝____(4)____。2-2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 1
-  stem: '[(75,125),15]=__(5)__。2-2'
+  stem: ［（75,125）,15］＝____(5)____。2-2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 1
-  stem: 若[3×a, 4×a] =24,則[3×a, 4×a, 15]= __(6)__。2-2
+  stem: 若 [3×a, 4×a] ＝24，則 [3×a, 4×a, 15]＝ ____(6)____。2-2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 1
-  stem: 若- $\frac{11}{20}$ 、 $\frac{a}{60}$ 、- $\frac{1}{2}$ $\frac{a}{60}$ 是由小到大排
-    ,且 是最簡分數,則 ,則a=__(7)__。2-3
+  stem: 若 $-\frac{11}{20}$、$\frac{a}{60}$、$-\frac{1}{2}$ 是由小到大排列的三個數，且 $\frac{a}{60}$
+    是最簡分數，則 a＝____(7)____。2-3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 1
-  stem: 計算 $\frac{1}{−2}$ $\frac{2}{(−2)2}$ $\frac{2}{(−2)3}$ $\frac{2}{(−2)4}$ +
-    + + =__(8)__。(以最簡分數表示 表示)2-4
+  stem: 計算 $\frac{1}{-2} + \frac{2}{(-2)^{2}} + \frac{2}{(-2)^{3}} + \frac{2}{(-2)^{4}}$＝____(8)____。(以最簡分數表示)2-4
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 1
-  stem: '甲乙兩人在不同的保險公司上班,甲每上班5天休假1天(連上 上5天班後休息一天),乙每上班7天休假1天(連上 上7天班後休息一天),若恰好甲、乙兩人同在今天星期四休假,則:
-    恰好甲、乙兩人同在今天星期四休假,則: (1) 下次兩人在同一天休假是__(9)__天後。 (2) 下次兩人同在星期四休假是__(10)__天後。 1'
+  stem: '甲乙兩人在不同的保險公司上班，甲每上班 5 天休假 1 天（連上 5 天班後休息一天），乙每上班 7 天休假 1 天（連上 7 天班後休息一天），若恰好甲、乙兩人同在今天星期四休假，則：
+
+    (1) 下次兩人在同一天休假是____(9)____天後。
+
+    (2) 下次兩人同在星期四休假是____(10)____天後。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 小德買了一張壁報紙,長130公分、寬78公分,想要裁剪成很多個大小不同的正方形,而正方形 同的正方形,而正方形 是越大越好,那麼至少可以剪成__(11)__個大小不同的正方形。
-    同的正方形。
+  stem: 小德買了一張壁報紙，長 130 公分、寬 78 公分，想要裁剪成很多個大小不同的正方形，而正方形是越大越好，那麼至少可以剪成____(11)____個大小不同的正方形。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 有一個水密桃果園近日收成,小桃一人獨自採收,3天內可採完,小園一人獨自採收,6天內可採 完,如果兩人一起採收,請問需__(12)__日可採收完成。
+  stem: 有一個水蜜桃果園近日收成，小桃一人獨自採收，3 天內可採完，小園一人獨自採收，6 天內可採完，如果兩人一起採收，請問需____(12)____日可採收完成。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_11
   section: 2
   number: 11
   type: fill
   page: 2
-  stem: '| $\frac{1}{4}$ - $\frac{1}{3}$ |+| $\frac{1}{5}$ - $\frac{1}{4}$ |+| $\frac{1}{6}$
-    - $\frac{1}{5}$ |=__(13)__。 $\frac{5}{9}$'
+  stem: $|\frac{1}{4} - \frac{1}{3}| + |\frac{1}{5} - \frac{1}{4}| + |\frac{1}{6}
+    - \frac{1}{5}|$＝____(13)____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_12
   section: 2
   number: 12
   type: fill
   page: 2
-  stem: 酒精連瓶重 瓶重900克,用去酒精 後,剩下的酒精連瓶子重 瓶子重500克,則瓶子的重量是 是__(14)__ 克。
+  stem: 酒精連瓶重 900 克，用去酒精 $\frac{5}{9}$ 後，剩下的酒精連瓶子重 500 克，則瓶子的重量是____(14)____克。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s2_13
   section: 2
   number: 13
   type: fill
   page: 2
-  stem: 做一個8吋蛋糕需要 $\frac{1}{5}$ 公斤的麵粉,現有1 $\frac{1}{2}$ 公斤的麵粉可以做出__(15)__個完整的8吋蛋 糕,還剩下__(16)__公斤的麵粉。
+  stem: 做一個 8 吋蛋糕需要 $\frac{1}{5}$ 公斤的麵粉，現有 $1\frac{1}{2}$ 公斤的麵粉可以做出____(15)____個完整的
+    8 吋蛋糕，還剩下____(16)____公斤的麵粉。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s3_1
   section: 3
   number: 1
-  type: fill
+  type: calc
   page: 2
-  stem: 計算 $\frac{1}{2×3}$ + $\frac{1}{3×4}$ + $\frac{1}{4×5}$ + $\frac{1}{5×6}$ =?
+  stem: 計算 $\frac{1}{2 \times 3} + \frac{1}{3 \times 4} + \frac{1}{4 \times 5} + \frac{1}{5
+    \times 6}$＝？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s3_2
   section: 3
   number: 2
-  type: fill
+  type: calc
   page: 2
-  stem: 四個連續正整數的乘積為 續正整數的乘積為3024,求此四數。
+  stem: 四個連續正整數的乘積為 3024，求此四數。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s3_3
   section: 3
   number: 3
-  type: fill
+  type: essay
   page: 2
-  stem: 下列圖形為七巧板(正方形),請塗上 $\frac{5}{8}$ 的面積。
+  stem: 下列圖形為七巧板（正方形），請塗上 $\frac{5}{8}$ 的面積。
   assets:
-  - key: p2_f01
+  - key: s3_3_f1
     kind: figure
-    file: doc_111_桃園_同德_數學_g7s1e2/p2_f01.png
+    file: doc_111_桃園_同德_數學_g7s1e2/s3_3_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_111_桃園_同德_數學_g7s1e2_s3_4
   section: 3
   number: 4
-  type: fill
+  type: essay
   page: 2
-  stem: 請將1~9分別填入□中,使得式子成立,但數字不 得重複。 □+□=□,□-□=□,□÷□=□。 2
+  stem: '請將 1~9 分別填入□中，使得式子成立，但數字不得重複。
+
+    □＋□＝□，□－□＝□，□÷□＝□。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai

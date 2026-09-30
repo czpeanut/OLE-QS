@@ -1,116 +1,557 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 1
-  school: 高雄市立七賢國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 七賢
+  school: 高雄市立七賢國民中學
   id: doc_113_高雄_七賢_數學_g7s2e1
-  title: 高雄市立七賢國民中學 113學年度第2學期第1次定期評量7年級數學科試題
+  title: 高雄市立七賢國民中學 113學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第1次定期評量
   sections:
   - ord: 1
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題 (每格4分,共52分)
-    count: 13
+    name: 一、單一選擇題 （每題4分，共40分）
+    count: 10
   - ord: 2
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題 (每題4分,共8分)(請於相對應的欄位內繕寫計算過程才給分)
+    name: 二、填充題 （每格4分，共52分）
+    count: 13
+  - ord: 3
+    name: 三、計算題 （每題4分，共8分）(請於相對應的欄位內繕寫計算過程才給分)
     count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/113/2-1/高雄/七賢.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_1
   section: 1
   number: 1
-  type: fill
-  page: 2
-  stem: 化簡二元一次式-5(3x-2y-1) =【    】。 $\frac{5x-4y}{3}$ $\frac{(-x+2y)}{2}$ =【    】。
+  type: single
+  page: 1
+  stem: 珍珠奶茶一杯30元，雞排一份40元。小翊買了x 杯珍珠奶茶和y 份雞排，共花了200元，下列哪一組數值是他的買法？
+  options:
+  - label: A
+    content: 2杯珍珠奶茶、4份雞排
+  - label: B
+    content: 3杯珍珠奶茶、3份雞排
+  - label: C
+    content: 4杯珍珠奶茶、2份雞排
+  - label: D
+    content: 5杯珍珠奶茶、1份雞排。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_2
   section: 1
   number: 2
-  type: fill
-  page: 2
-  stem: 化簡二元一次式 -
+  type: single
+  page: 1
+  stem: 某商店舉辦促銷活動，買4包餅乾和3個麵包，僅需115元。若小芬至此商店購買12包餅乾和9個麵包，付500元鈔票一張，應可找回多少元？
+  options:
+  - label: A
+    content: 115元
+  - label: B
+    content: 155元
+  - label: C
+    content: 345元
+  - label: D
+    content: 385元。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_3
   section: 1
   number: 3
-  type: fill
-  page: 2
-  stem: 化簡二元一次式-13x+2[8y-(-4x+y)]=【    】。
+  type: single
+  page: 1
+  stem: 下列何者能消去二元一次聯立方程式$\begin{cases}-3x+4y=1 \text{ ……①}\\ 4x-2y=-1 \text{……②}\end{cases}$中的一個未知數？
+  options:
+  - label: A
+    content: ①－②×2
+  - label: B
+    content: ①×3＋②×3
+  - label: C
+    content: ①＋②×2
+  - label: D
+    content: ①×4－②×3
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 90%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_4
   section: 1
   number: 4
-  type: fill
-  page: 2
-  stem: 已知二元一次聯立方程式{y=x+1 2x-y=19的解為x=a,y=b,則a+b=【    】。
+  type: single
+  page: 1
+  stem: 若x、y 皆為正整數，則二元一次方程式10x＋15y＝90共有幾組解？
+  options:
+  - label: A
+    content: 2組
+  - label: B
+    content: 3組
+  - label: C
+    content: 4組
+  - label: D
+    content: 無限多組
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_5
   section: 1
   number: 5
-  type: fill
-  page: 2
-  stem: 已知二元一次聯立方程式 {3x+5y=13的解為x=a,y=b,則a-b之值為【    】。 -7x-9y=-17 -x+3y=-2x-y+5......1
+  type: single
+  page: 1
+  stem: 坐標平面上，下列哪一個數對所表示的點，與x 軸距離最近？
+  options:
+  - label: A
+    content: （5 ,－2）
+  - label: B
+    content: （1 , 3）
+  - label: C
+    content: （－3 , 5）
+  - label: D
+    content: （0 ,－4）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_6
   section: 1
   number: 6
-  type: fill
-  page: 2
-  stem: 解二元一次聯立方程式{ 5x+y-1=4x-y+3......2 ,得y=【       】。
+  type: single
+  page: 1
+  stem: 已知花生糖1顆2元，梅子糖2顆1元。若小詩買花生糖及梅子糖共60顆，花了60元，則此兩種糖果的數量關係為何？
+  options:
+  - label: A
+    content: 花生糖和梅子糖一樣多
+  - label: B
+    content: 花生糖比梅子糖少20顆
+  - label: C
+    content: 花生糖比梅子糖少30顆
+  - label: D
+    content: 花生糖比梅子糖多30顆
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_7
   section: 1
   number: 7
-  type: fill
-  page: 2
-  stem: 若x、y的兩個二元一次聯立方程式{5x-2y=4 2x+ay=1與{-x+by=4 2x-5y=-11有相同的解,求x+y=【    】
+  type: single
+  page: 1
+  stem: 羽毛球的售價分成兩種：比賽用球每打300元，練習用球每打250元。創創共買了10打羽毛球，結帳時店員將兩種價目看反了，結果使得創創多付了100元。設比賽用球買x
+    打，練習用球買y 打，則下列哪一個二元一次方程組可用來表示題目中的數量關係？
+  options:
+  - label: A
+    content: $\begin{cases}x+y=10\\ 300x+250y=3100\end{cases}$
+  - label: B
+    content: $\begin{cases}x+y=10\\ 300x+250y=2600\end{cases}$
+  - label: C
+    content: $\begin{cases}x+y=10\\ 300x+250y=300y+250x+100\end{cases}$
+  - label: D
+    content: $\begin{cases}x+y=10\\ 300x+250y=300y+250x-100\end{cases}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 89%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_8
   section: 1
   number: 8
-  type: fill
-  page: 2
-  stem: 已知{ax+2by=6 3ax-by=4的解為x=1、y=2,則a+b之值為【    】。
+  type: single
+  page: 1
+  stem: '以下是甲、乙、丙三人看地圖時對四個地標的描述：
+
+    甲：從學校向北直走500公尺，再向東直走100公尺可到圖書館。
+
+    乙：從學校向西直走300公尺，再向北直走200公尺可到郵局。
+
+    丙：郵局在火車站東方200公尺處。
+
+    根據三人的描述，若從圖書館出發，判斷下列哪一種走法，其終點是火車站？'
+  options:
+  - label: A
+    content: 向南直走300公尺，再向西直走200公尺
+  - label: B
+    content: 向南直走300公尺，再向西直走600公尺
+  - label: C
+    content: 向南直走700公尺，再向西直走200公尺
+  - label: D
+    content: 向南直走700公尺，再向西直走600公尺
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_9
   section: 1
   number: 9
-  type: fill
+  type: single
   page: 2
-  stem: 已知P(a , b)在第二象限內,則(ab , a-b)在第【    】象限。 數第二頁
+  stem: 小宜跟同學在某餐廳吃飯，右圖為此餐廳的菜單。若他們所點的餐點總共為x 份義大利麵，y 杯飲料，4份沙拉，則他們點了幾份A 餐？
+  options:
+  - label: A
+    content: x－y
+  - label: B
+    content: x－y－4
+  - label: C
+    content: x－y＋4
+  - label: D
+    content: x＋y＋4
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_113_高雄_七賢_數學_g7s2e1/s1_9_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s1_10
   section: 1
   number: 10
-  type: fill
-  page: 3
-  stem: 已知小薇住家的西方100公尺處為車站,住家的北方200公尺處為學校,且從學校往東方走100公尺,再往南方走600公尺可 到達公園。若小薇將住家、車站、學校分別標示在坐標平面上的(2
-    , 0)、(0 , 0)、(2 , 4)三點,則公園的坐標為 【    】。
-- id: doc_113_高雄_七賢_數學_g7s2e1_s1_11
-  section: 1
-  number: 11
-  type: fill
-  page: 3
-  stem: 有一丟銅板遊戲,其規則是丟出正面得3分,丟出反面得2分。小民參加此遊戲,共丟了27次,得68分,求小民共丟出幾次 反面?【    】次。
-- id: doc_113_高雄_七賢_數學_g7s2e1_s1_12
-  section: 1
-  number: 12
-  type: fill
-  page: 3
-  stem: 如右圖,將火車站看成一坐標平面的原點,並以火車站到百貨公司的方向為x軸的負向,以火車站 到咖啡廳的方向為y軸的負向,則書局在此坐標平面上的第【    】象限。
-- id: doc_113_高雄_七賢_數學_g7s2e1_s1_13
-  section: 1
-  number: 13
-  type: fill
-  page: 3
-  stem: 某商店將巧克力包裝成方形、圓形禮盒出售,且每盒方形禮盒的價錢相同,每盒圓形禮盒的價錢相同。阿郁原先想購買3盒方形禮盒和7盒圓形禮盒,但他身上的錢會不足240元,如果改成購買7盒方形禮盒和3盒圓形禮盒,他身上的錢會剩下360元。若阿郁最後購買10盒方形禮盒,則他身上的錢會剩下【    】元。
+  type: single
+  page: 2
+  stem: 已知某速食店販售的套餐內容為一片雞排和一杯可樂，且一份套餐的價錢比單點一片雞排再單點一杯可樂的總價錢便宜50元。阿俊打算到該速食店買兩份套餐，若他發現店內有單點一片雞排就再送一片雞排的促銷活動，且單點一片雞排再單點兩杯可樂的總價錢，比兩份套餐的總價錢便宜20元，則根據題意可得到下列哪一個結論？
+  options:
+  - label: A
+    content: 一份套餐的價錢必為140元
+  - label: B
+    content: 一份套餐的價錢必為160元
+  - label: C
+    content: 單點一片雞排的價錢必為110元
+  - label: D
+    content: 單點一片雞排的價錢必為120元
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s2_1
   section: 2
   number: 1
-  type: calc
-  page: 3
-  stem: 坐標平面上有兩點A(2a+1 , 3)、B(-1 , 3b),若A點向左4單位,再向上3單位後,會與B點重合,則a+b=?
+  type: fill
+  page: 2
+  stem: 化簡二元一次式－5(3x－2y－1) ＝【    】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_七賢_數學_g7s2e1_s2_2
   section: 2
   number: 2
+  type: fill
+  page: 2
+  stem: 化簡二元一次式 $\frac{5x-4y}{3}-\frac{(-x+2y)}{2}$ ＝【    】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 化簡二元一次式－13x＋2[8y－(－4x＋y)]＝【    】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知二元一次聯立方程式$\begin{cases}y=x+1\\ 2x-y=19\end{cases}$ 的解為x＝a，y＝b，則a＋b＝【    】。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知二元一次聯立方程式 $\begin{cases}3x+5y=13\\ -7x-9y=-17\end{cases}$ 的解為x＝a，y＝b，則a－b
+    之值為【    】。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 87%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 解二元一次聯立方程式$\begin{cases}-x+3y=-2x-y+5\text{……①}\\ 5x+y-1=4x-y+3\text{……②}\end{cases}$，得y＝【       】。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 若x、y 的兩個二元一次聯立方程式$\begin{cases}5x-2y=4\\ 2x+ay=1\end{cases}$與$\begin{cases}-x+by=4\\
+    2x-5y=-11\end{cases}$有相同的解，求x＋y＝【    】
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 81%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知$\begin{cases}ax+2by=6\\ 3ax-by=4\end{cases}$的解為x＝1、y＝2，則a＋b 之值為【    】。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 84%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 已知P(a , b)在第二象限內，則(ab , a－b)在第【    】象限。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 已知小薇住家的西方100公尺處為車站，住家的北方200公尺處為學校，且從學校往東方走100公尺，再往南方走600公尺可到達公園。若小薇將住家、車站、學校分別標示在坐標平面上的（2
+    , 0）、（0 , 0）、（2 , 4）三點，則公園的坐標為【    】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 3
+  stem: 有一丟銅板遊戲，其規則是丟出正面得3分，丟出反面得2分。小民參加此遊戲，共丟了27次，得68分，求小民共丟出幾次反面？【    】次。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 3
+  stem: 如右圖，將火車站看成一坐標平面的原點，並以火車站到百貨公司的方向為x 軸的負向，以火車站到咖啡廳的方向為y 軸的負向，則書局在此坐標平面上的第【    】象限。
+  assets:
+  - key: s2_12_f1
+    kind: figure
+    file: doc_113_高雄_七賢_數學_g7s2e1/s2_12_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 3
+  stem: 某商店將巧克力包裝成方形、圓形禮盒出售，且每盒方形禮盒的價錢相同，每盒圓形禮盒的價錢相同。阿郁原先想購買3盒方形禮盒和7盒圓形禮盒，但他身上的錢會不足240元，如果改成購買7盒方形禮盒和3盒圓形禮盒，他身上的錢會剩下360元。若阿郁最後購買10盒方形禮盒，則他身上的錢會剩下【    】元。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s3_1
+  section: 3
+  number: 1
   type: calc
   page: 3
-  stem: 某鞋店正舉辦開學特惠活動,右圖為活動說明。小徹打算在該店同時購買一雙球鞋及 一雙皮鞋,且他有一張所有購買的商品定價皆打8折的折價券。若小徹計算後發現使
-    用折價券與參加特惠活動兩者的花費相差60元,則兩雙鞋的定價相差多少元? 數第三頁 百貨公司 火車站 書局 咖啡廳
+  stem: 坐標平面上有兩點A(2a＋1 , 3)、B(－1 , 3b)，若A 點向左4單位，再向上3單位後，會與B 點重合，則a＋b＝？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_113_高雄_七賢_數學_g7s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: 某鞋店正舉辦開學特惠活動，右圖為活動說明。小徹打算在該店同時購買一雙球鞋及一雙皮鞋，且他有一張所有購買的商品定價皆打8折的折價券。若小徹計算後發現使用折價券與參加特惠活動兩者的花費相差60元，則兩雙鞋的定價相差多少元？
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_高雄_七賢_數學_g7s2e1/s3_2_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai

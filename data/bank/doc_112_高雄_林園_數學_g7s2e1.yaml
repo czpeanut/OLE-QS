@@ -1,149 +1,207 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 112
   semester: 2
   exam_seq: 1
-  school: 高雄市立林園高級中學國中
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 林園
+  school: 高雄市立林園高級中學 國中部
   id: doc_112_高雄_林園_數學_g7s2e1
-  title: 高雄市立林園高級中學國中 112學年度第2學期第1次定期評量7年級數學科試題
+  title: 高雄市立林園高級中學 國中部 112學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 112學年度第2學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題 (每題4分,10題共40分)
+    name: 一、選擇題 (每題4 分，10 題共40 分)
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題 (每格4分,15格共60分) * 作答請小心,不要填錯格子,答案全對才給分,答案請寫在作答卷上
-    count: 9
+    name: 二、填充題 (每格4 分，15 格共60 分) * 作答請小心，不要填錯格子，答案全對才給分，答案請寫在作答卷上
+    count: 15
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/112/2-1/高雄/林園.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
 questions:
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 將二元一次式2(2x-3y+1)-(4x+3y-7) 化簡成為ax+by+c 。 請問:a+b+c的值為何?
+  stem: '將二元一次式 $2(2x-3y+1)-(4x+3y-7)$ 化簡成為 $ax+by+c$ 。
+
+    請問：$a+b+c$ 的值為何？'
   options:
   - label: A
-    content: '-9'
+    content: $-9$
   - label: B
     content: '0'
   - label: C
     content: '8'
   - label: D
-    content: 18 。
+    content: '18'
   answer:
   - B
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 關於9x-8y+13中下列敘述何者錯誤 ?
+  stem: 關於 $9x-8y+13$ 中下列敘述何者錯誤 ？
   options:
   - label: A
     content: 這不是一個二元一次方程式
   - label: B
     content: 常數項為13
   - label: C
-    content: y項係數為8
+    content: y 項係數為8
   - label: D
-    content: x項為9x。
+    content: x項為$9x$。
   answer:
   - C
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 已知x與y均為正整數,則2x+3y=21會有幾組解?
+  stem: 已知 $x$ 與 $y$ 均為正整數，則 $2x+3y=21$ 會有幾組解？
   options:
   - label: A
     content: 無限多組
   - label: B
-    content: 5組
+    content: 5 組
   - label: C
-    content: 4組
+    content: 4 組
   - label: D
-    content: 3組  。
+    content: 3 組
   answer:
   - D
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 用代入消去法解二元一次聯立方程式 ,整理1式可得x=?
+  stem: 用代入消去法解二元一次聯立方程式 $\begin{cases} 3x+4y=2 \cdots\cdots ① \\ 2x-3y=7 \cdots\cdots
+    ② \end{cases}$，整理①式可得$x＝$？
   options:
   - label: A
-    content: 2-4y
+    content: $2-4y$
   - label: B
-    content: (2-4y)×3
+    content: $(2-4y)\times 3$
   - label: C
-    content: ''
+    content: $\frac{2-4y}{3}$
   - label: D
-    content: ''
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p1_f03.png
+    content: $\frac{4y-2}{3}$
   answer:
   - C
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 下列何者能消去二元一次聯立方程式 中的一個未知數?
+  stem: 下列何者能消去二元一次聯立方程式 $\begin{cases} -3x+4y=1 \cdots\cdots ① \\ 4x-2y=-1 \cdots\cdots
+    ② \end{cases}$ 中的一個未知數？
   options:
   - label: A
-    content: 1+2×2
+    content: ①＋②$\times 2$
   - label: B
-    content: 1×3+2×3
+    content: ①$\times 3$＋②$\times 3$
   - label: C
-    content: 1-2×2
+    content: ①－②$\times 2$
   - label: D
-    content: 1×4-2×3 。
-  assets:
-  - key: p1_f04
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p1_f04.png
+    content: ①$\times 4$－②$\times 3$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 90%）
   answer:
   - A
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 經過「八十五肚吸」,小明買了每杯45元的奶茶,與每杯30元的紅茶好幾杯,一共花了210元。 請問他不可能買到下列哪一種杯數?
+  stem: '經過「八十五肚吸」，小明買了每杯45元的奶茶，與每杯30元的紅茶好幾杯，一共花了210 元。
+
+    請問他不可能買到下列哪一種杯數？'
   options:
   - label: A
-    content: 4杯奶茶
+    content: 4 杯奶茶
   - label: B
-    content: 4杯紅茶
+    content: 4 杯紅茶
   - label: C
-    content: 2杯奶茶
+    content: 2 杯奶茶
   - label: D
-    content: 2杯紅茶 。
+    content: 2 杯紅茶
   answer:
   - D
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 小珍最近十次的數學分數如下:90 , 80 , 40 , 90 , 100 , 50 , 70 , 30 , 90 , 80 (分) 則這十次分數的中位數+眾數=?
+  stem: '小珍最近十次的數學分數如下：90 , 80 , 40 , 90 , 100 , 50 , 70 , 30 , 90 , 80 (分)
+
+    則這十次分數的中位數＋眾數＝？'
   options:
   - label: A
     content: '150'
@@ -152,15 +210,27 @@ questions:
   - label: C
     content: '170'
   - label: D
-    content: 180 。
+    content: '180'
   answer:
   - C
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第1次段考範圍
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 右圖是學生身高次數分配直方圖, 請問身高在145公分以上(含),未滿165公分的有多少人?
+  stem: '右圖是學生身高次數分配直方圖，
+
+    請問身高在145 公分以上(含)，未滿165 公分的有多少人？'
   options:
   - label: A
     content: '20'
@@ -169,19 +239,31 @@ questions:
   - label: C
     content: '22'
   - label: D
-    content: 23  。
+    content: '23'
   assets:
-  - key: p1_f05
+  - key: s1_8_f1
     kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p1_f05.png
+    file: doc_112_高雄_林園_數學_g7s2e1/s1_8_f1.png
   answer:
   - A
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第1次段考範圍
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 有一臺筆記型電腦,老闆若以定價的六折出售,就會賠1000元;若以定價的八折出售,就會賺7000元, 則定價為多少元?
+  stem: '有一臺筆記型電腦，老闆若以定價的六折出售，就會賠1000 元；若以定價的八折出售，就會賺7000 元，
+
+    則定價為多少元？'
   options:
   - label: A
     content: '40000'
@@ -190,15 +272,25 @@ questions:
   - label: C
     content: '30000'
   - label: D
-    content: 25000。
+    content: '25000'
   answer:
   - A
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 有甲、乙兩數,已知甲大於乙,兩數之和為75,兩數之差為25。請問:甲數除以乙數為何?
+  stem: 有甲、乙兩數，已知甲大於乙，兩數之和為75，兩數之差為25。請問：甲數除以乙數為何？
   options:
   - label: A
     content: '50'
@@ -207,118 +299,359 @@ questions:
   - label: C
     content: '5'
   - label: D
-    content: 25 。
+    content: '25'
   answer:
   - B
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 已知x=3 ,y=-2是二元一次方程式mx+6y=3的解,其中m是一個固定的數,則m= (1) 。
+  stem: 已知 $x=3$ ，$y=-2$ 是二元一次方程式 $mx+6y=3$ 的解，其中$m$是一個固定的數，則$m＝$ (1) 。
   answer:
   - '5'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: 小靖身上原有50元及10元硬幣共400元,吃午餐用了x個50元硬幣,買文具花掉y個10元硬幣,那麼小靖身上 還剩下  (2) 元。(以x,y表示)
+  stem: '小靖身上原有50 元及10 元硬幣共400 元，吃午餐用了x 個50 元硬幣，買文具花掉y 個10 元硬幣，那麼小靖身上
+
+    還剩下 (2) 元。(以$x$，$y$ 表示)'
   answer:
   - 400-(50x+10y)
+  answer_status: disputed
+  review_note: 答案卷解析與影像判讀不一致：['400-(50x+10y)'] vs ['400－(50x＋10y)']
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: ( 1 ) 已知x-3y=32,則4x-12y-28=__ (3)___。 ( 2 ) 化簡 + =_  (4)____。 1
-  assets:
-  - key: p1_f06
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p1_f06.png
-  - key: p1_f07
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p1_f07.png
+  stem: ( 1 ) 已知$x-3y=32$，則$4x-12y-28=$ (3) 。
   answer:
   - '100'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s2_4
   section: 2
   number: 4
   type: fill
-  page: 2
-  stem: 計算下列各題:(x,y全對才給分) ( 1 ) ,答=  (5)   。             ( 2 ) ,答= (6)  。 ( 3 ) ,答=  (7)_  。         (
-    4 ) ,答=  (8)  。
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p2_f02.png
-  - key: p2_f03
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p2_f03.png
-  - key: p2_f04
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p2_f04.png
+  page: 1
+  stem: ( 2 ) 化簡 $\frac{2x+5y-4}{3} + \frac{2x-3y}{5} =$ (4) 。
+  answer:
+  - $\frac{16x+16y-20}{15}$
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 小倫與小歐相約去歡樂麵包店購買麵包,小倫買了5個法國麵包和6個巧克力蛋糕,共付620元; 小歐買了10個法國麵包和5個巧克力蛋糕,再加購2個2元塑膠袋,共付929元。
-    請問:1個法國麵包加上1個巧克力蛋糕共   (9)  元。
+  stem: '計算下列各題：(x，y 全對才給分)
+
+    ( 1 ) $\begin{cases} y=x+1 \\ 2x+y=19 \end{cases}$，答＝ (5) 。'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 82%）
   answer:
   - 'x= 6
 
     y= 7'
+  answer_status: disputed
+  review_note: 答案卷解析與影像判讀不一致：['x= 6\ny= 7'] vs ['x=6, y=7']
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: '右圖是七年乙班學生的身高次數分配直方圖,請問: (1)七年乙班全班共有  (10)    位學生。 (2)七年乙班學生身高的中位數在   (11)   公分這一組。'
-  assets:
-  - key: p2_f05
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p2_f05.png
+  stem: '計算下列各題：(x，y 全對才給分)
+
+    ( 2 ) $\begin{cases} 3x+5y=13 \\ -7x-9y=-17 \end{cases}$，答＝ (6) 。'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 84%）
   answer:
   - 'x=-4
 
     y= 5'
+  answer_status: disputed
+  review_note: 答案卷解析與影像判讀不一致：['x=-4\ny= 5'] vs ['x=－4, y=5']
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: '右圖是七年信班數學段考分數次數分配折線圖,請問: (1) 40~80分的學生有   (12)  人。 (2) 這個班數學段考分數的平均分數是   (13)   分。'
-  assets:
-  - key: p2_f06
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p2_f06.png
+  stem: '計算下列各題：(x，y 全對才給分)
+
+    ( 3 ) $\begin{cases} 0.3x-0.2y=2.5 \\ 5x+2y=15 \end{cases}$，答＝ (7) 。'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
   answer:
   - 'x= 5
 
     y=-5'
+  answer_status: disputed
+  review_note: 答案卷解析與影像判讀不一致：['x= 5\ny=-5'] vs ['x=5, y=－5']
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 水果行買進一批臺中福壽山農場的蜜蘋果,老闆想用精美禮盒分裝銷售。若每5顆蘋果裝成一盒,則會剩下2顆 蘋果沒有盒子裝;若每盒都裝滿6顆,則會多出3個空盒子。請問這批蘋果共有  (14)    顆。
+  stem: '計算下列各題：(x，y 全對才給分)
+
+    ( 4 ) $\begin{cases} 231x+269y=193 \\ 269x+231y=307 \end{cases}$，答＝ (8) 。'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 88%）
   answer:
   - 'x= 2
 
     y=-1'
+  answer_status: disputed
+  review_note: 答案卷解析與影像判讀不一致：['x= 2\ny=-1'] vs ['x=2, y=－1']
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_112_高雄_林園_數學_g7s2e1_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 小妍在古書算法統宗裡看到一道數學題,並解讀題目意思如下圖:請問大和尚有    (15)    人。 ***試題結束** * 2
-  assets:
-  - key: p2_f07
-    kind: figure
-    file: doc_112_高雄_林園_數學_g7s2e1/p2_f07.png
+  stem: '小倫與小歐相約去歡樂麵包店購買麵包，小倫買了5 個法國麵包和6 個巧克力蛋糕，共付620 元；
+
+    小歐買了10 個法國麵包和5 個巧克力蛋糕，再加購2 個2 元塑膠袋，共付929 元。
+
+    請問：1 個法國麵包加上1 個巧克力蛋糕共 (9) 元。'
   answer:
   - '115'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_112_高雄_林園_數學_g7s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: '右圖是七年乙班學生的身高次數分配直方圖，請問：
+
+    (1)七年乙班全班共有 (10) 位學生。'
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e1/s2_10_f1.png
+  answer:
+  - '30'
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第1次段考範圍
+    labeled_by: ai
+- id: doc_112_高雄_林園_數學_g7s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: '右圖是七年乙班學生的身高次數分配直方圖，請問：
+
+    (2)七年乙班學生身高的中位數在 (11) 公分這一組。'
+  assets:
+  - key: s2_11_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e1/s2_11_f1.png
+  answer:
+  - 160~170
+  answer_status: disputed
+  review_note: 答案卷解析與影像判讀不一致：['160~170'] vs ['160～170']
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第1次段考範圍
+    labeled_by: ai
+- id: doc_112_高雄_林園_數學_g7s2e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: '右圖是七年信班數學段考分數次數分配折線圖，請問：
+
+    (1) 40～80 分的學生有 (12) 人。'
+  assets:
+  - key: s2_12_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e1/s2_12_f1.png
+  answer:
+  - '29'
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第1次段考範圍
+    labeled_by: ai
+- id: doc_112_高雄_林園_數學_g7s2e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: '右圖是七年信班數學段考分數次數分配折線圖，請問：
+
+    (2) 這個班數學段考分數的平均分數是 (13) 分。'
+  assets:
+  - key: s2_13_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e1/s2_13_f1.png
+  answer:
+  - '69'
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第1次段考範圍
+    labeled_by: ai
+- id: doc_112_高雄_林園_數學_g7s2e1_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: '水果行買進一批臺中福壽山農場的蜜蘋果，老闆想用精美禮盒分裝銷售。若每5 顆蘋果裝成一盒，則會剩下2 顆
+
+    蘋果沒有盒子裝；若每盒都裝滿6 顆，則會多出3 個空盒子。請問這批蘋果共有 (14) 顆。'
+  answer:
+  - '102'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_112_高雄_林園_數學_g7s2e1_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 2
+  stem: 小妍在古書算法統宗裡看到一道數學題，並解讀題目意思如下圖：請問大和尚有 (15) 人。
+  assets:
+  - key: s2_15_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e1/s2_15_f1.png
+  answer:
+  - '25'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
