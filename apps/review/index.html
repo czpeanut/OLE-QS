@@ -174,7 +174,7 @@ let current = null;          // {gi, doc}
 let db = null;
 let reports = new Map();     // code -> report
 let reviewed = new Map();    // docKey -> {at}
-let hideRejected = false, onlyReported = false, onlyOcr = false;
+let hideRejected = false, onlyReported = false, onlyOcr = false, onlyDisputed = false;
 
 /* ── 文字渲染：Markdown（表格、粗體、換行）＋行內 $…$ 公式 ───────────── */
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -313,6 +313,7 @@ function renderPaper(){
   <div class="toolbar">
     <label><input type="checkbox" id="tHide" ${hideRejected?"checked":""}> 隱藏被剔除的題目</label>
     <label><input type="checkbox" id="tRep" ${onlyReported?"checked":""}> 只看已回報</label>
+    <label><input type="checkbox" id="tDis" ${onlyDisputed?"checked":""}> 只看答案待判定</label>
     <button class="btn ${done?'':'pen'}" id="markDone" ${db?'':'disabled'}>${done?'取消「已審完」':'標記這份卷已審完'}</button>
   </div>`;
 
@@ -321,6 +322,7 @@ function renderPaper(){
   for (const q of P.q) {
     if (hideRejected && !q.ok) continue;
     if (onlyReported && !reports.has(q.c)) continue;
+    if (onlyDisputed && q.as !== "disputed") continue;
     if (q.s !== lastSec) { h += `<div class="section-title">${esc(secName[q.s] || ("第 " + q.s + " 大題"))}</div>`; lastSec = q.s; lastG = null; }
     if (q.g && q.g !== lastG && (q.sa || P.passages[q.g].trim() !== (secName[q.s] || "").trim())) {
       const figs = q.sa ? figHTML([q.sa], P) : "";
@@ -332,11 +334,24 @@ function renderPaper(){
   $("#view").innerHTML = h;
   $("#tHide").addEventListener("change", e => { hideRejected = e.target.checked; renderPaper(); });
   $("#tRep").addEventListener("change", e => { onlyReported = e.target.checked; renderPaper(); });
+  $("#tDis").addEventListener("change", e => { onlyDisputed = e.target.checked; renderPaper(); });
   $("#markDone").addEventListener("click", toggleDone);
   bindQuestionEvents();
 }
 function figHTML(ids, P){
   return ids.map(id => P.images[id] ? `<img src="${P.images[id]}" alt="附圖" loading="lazy">` : '<span class="missing">圖檔遺失</span>').join("");
+}
+const SRC_NAME = {"ai:gemini+qwen":"AI・兩模型一致", "ai:majority":"AI・三票中兩票", "ai:gemini-only":"AI・僅 Gemini"};
+const VOTE_NAME = {gemini:"Gemini", qwen:"Qwen", gemini_high:"Gemini 高思考"};
+function answerHTML(q, ans){
+  const votes = q.votes ? Object.entries(q.votes).map(([k,v]) => `${VOTE_NAME[k]||k} ${inline(String(v))}`).join("／") : "";
+  if (q.as === "disputed") {
+    const shown = q.ans ? `<b>${inline(ans.join("、"))}</b> ` : "";
+    return `<span>答案：${shown}<span class="chip warn">待判定</span>${votes?` <span class="sub">${votes}</span>`:""}${q.note?` <span class="sub">${esc(q.note)}</span>`:""}</span>`;
+  }
+  if (!q.ans) return '<span>答案：無</span>';
+  const chip = q.as === "verified" ? "" : ` <span class="chip ${q.src==="ai:gemini+qwen"?"ok":""}">${esc(SRC_NAME[q.src] || q.as)}</span>`;
+  return `<span>答案：<b>${inline(ans.join("、"))}</b>${chip}</span>`;
 }
 function questionHTML(q, P){
   const r = reports.get(q.c);
@@ -357,7 +372,7 @@ function questionHTML(q, P){
       ${optHTML}
       ${q.ok ? "" : `<div class="why">剔除原因：${esc((q.why||[]).join("；"))}</div>`}
       <div class="foot">
-        ${q.ans?`<span>答案：<b>${inline(ans.join("、"))}</b>${q.as==='verified'?'':` <span class="chip">${esc(q.as)}</span>`}</span>`:'<span>答案：無</span>'}
+        ${answerHTML(q, ans)}
         ${q.tag?`<span>章節：${esc(q.tag)}</span>`:''}
         <button class="btn ${r?'':'pen'}" data-report="${q.c}">${r?'修改回報':'回報問題'}</button>
       </div>
@@ -479,7 +494,7 @@ async function jumpTo(code){
   $("#fSubject").value = subjName(G); $("#fSubject").dispatchEvent(new Event("change"));
   $("#fYear").value = G.year; $("#fYear").dispatchEvent(new Event("change"));
   $("#fExam").value = `${G.sem}-${G.exam}`; $("#fExam").dispatchEvent(new Event("change"));
-  hideRejected = false; onlyReported = false;
+  hideRejected = false; onlyReported = false; onlyDisputed = false;
   await openPaper(gi, P.doc, code);
 }
 $("#jumpBtn").addEventListener("click", () => jumpTo($("#jump").value));

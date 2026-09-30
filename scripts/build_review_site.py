@@ -171,6 +171,14 @@ def main() -> int:
                 if q.get("answer"):
                     item["ans"] = q["answer"]
                     item["as"] = q.get("answer_status") or "verified"
+                if q.get("answer_status") == "disputed":
+                    item["as"] = "disputed"
+                    if q.get("ai_answers"):
+                        item["votes"] = q["ai_answers"]
+                    if q.get("review_note") and "答案卷" in str(q["review_note"]):
+                        item["note"] = q["review_note"]
+                if str(q.get("answer_source", "")).startswith("ai:"):
+                    item["src"] = q["answer_source"]
                 if q.get("source_ocr") or str(q.get("review_note", "")).startswith("掃描件"):
                     item["ocr"] = True
                 tag = (q.get("tags") or {}).get("textbook")

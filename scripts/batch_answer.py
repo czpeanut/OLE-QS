@@ -214,6 +214,53 @@ def run_qwen(args) -> None:
     print(f"Qwen 完成；階段累計 NT${B.Ledger.twd():.1f}", flush=True)
 
 
+def run_qwen_split(args) -> None:
+    """整份被 Qwen 內容審查擋下的卷：每 5 題一段送出，段落再被擋就逐題送，
+    只有真正觸發審查的題目沒有 Qwen 答案（交給 Gemini 高思考當第二票）。"""
+    dest = OUT / "qwen"
+    todo = []
+    for p in load_docs(args.bank, args.only):
+        if (dest / f"{p.stem}.json").is_file():
+            continue
+        d = yaml.safe_load(p.read_text(encoding="utf-8"))
+        if targets(d):
+            todo.append((p, d))
+    print(f"Qwen 分段重試 {len(todo)} 份", flush=True)
+    from answer_batch import QwenUsage
+
+    def ask_part(d, part):
+        text, images = question_block(d, part, args.assets)
+        prompt = PROMPT.format(subject=d["document"]["subject"], questions=text)
+        out, _ = ask_qwen(prompt, images, "qwen3-vl-plus", False)
+        return {a.get("i"): a for a in out.get("answers") or [] if isinstance(a, dict)}
+
+    def one(item):
+        p, d = item
+        qs = targets(d)
+        got, blocked = {}, []
+        for k in range(0, len(qs), 5):
+            part = qs[k:k + 5]
+            try:
+                got.update(ask_part(d, part))
+            except Exception:  # noqa: BLE001
+                for single in part:
+                    try:
+                        got.update(ask_part(d, [single]))
+                    except Exception:  # noqa: BLE001
+                        blocked.append(single[1]["id"])
+        out = {"answers": list(got.values()), "model": "qwen3-vl-plus(split)", "blocked": blocked}
+        (dest / f"{p.stem}.json").write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
+        return p, len(got), len(blocked)
+
+    base = QwenUsage.usd
+    with ThreadPoolExecutor(args.workers) as pool:
+        for p, n, nb in pool.map(one, todo):
+            spent = QwenUsage.usd - base
+            base = QwenUsage.usd
+            twd = B.Ledger.add("answer_qwen", spent) if spent else B.Ledger.twd()
+            print(f"  {p.stem}：答 {n} 題、擋 {nb} 題｜階段累計 NT${twd:.0f}", flush=True)
+
+
 # ─────────────────────────── 比對與寫回 ───────────────────────────
 
 def answers_of(path: Path, qs: list[tuple[int, dict]]) -> dict[str, str]:
@@ -229,8 +276,10 @@ def disagreements(d: dict) -> list[tuple[int, dict]]:
     qs = targets(d)
     g = answers_of(OUT / "gemini" / f"{d['document']['id']}.json", qs)
     w = answers_of(OUT / "qwen" / f"{d['document']['id']}.json", qs)
-    return [(i, q) for i, q in qs if q["id"] in g and q["id"] in w
-            and norm(g[q["id"]], q["type"]) != norm(w[q["id"]], q["type"])]
+    if not (OUT / "qwen" / f"{d['document']['id']}.json").is_file():
+        return []                                  # Qwen 還沒答完，先不送第三票
+    return [(i, q) for i, q in qs if q["id"] in g and (
+        q["id"] not in w or norm(g[q["id"]], q["type"]) != norm(w[q["id"]], q["type"]))]
 
 
 def to_list(ans: str, q: dict) -> list[str]:
@@ -242,7 +291,7 @@ def to_list(ans: str, q: dict) -> list[str]:
 
 
 def merge(args) -> None:
-    stats = {"consensus": 0, "majority": 0, "disputed": 0, "key_ok": 0, "key_conflict": 0, "pending": 0}
+    stats = {"consensus": 0, "majority": 0, "gemini_only": 0, "disputed": 0, "key_ok": 0, "key_conflict": 0, "pending": 0}
     for p in load_docs(args.bank, args.only):
         d = yaml.safe_load(p.read_text(encoding="utf-8"))
         qs = targets(d)
@@ -253,22 +302,25 @@ def merge(args) -> None:
         dirty = False
         for _, q in qs:
             qid, typ = q["id"], q["type"]
-            if qid not in g or qid not in w:
+            if qid not in g or (qid not in w and qid not in t):
                 stats["pending"] += 1
                 continue
-            votes = {"gemini": g[qid], "qwen": w[qid]}
+            votes = {"gemini": g[qid]}
+            if qid in w:
+                votes["qwen"] = w[qid]
             if qid in t:
                 votes["gemini_high"] = t[qid]
             q["ai_answers"] = votes
-            ng, nw = norm(g[qid], typ), norm(w[qid], typ)
+            ng = norm(g[qid], typ)
+            nw = norm(w[qid], typ) if qid in w else None
             if ng == nw:
                 final, how = g[qid], "consensus"
             elif qid in t and norm(t[qid], typ) in (ng, nw):
-                final, how = t[qid], "majority"
+                # Qwen 擋下的題只有 Gemini 兩種思考等級互證，同家族，另外標註
+                final, how = t[qid], ("majority" if nw is not None else "gemini_only")
             else:
                 final, how = None, "disputed"
-            if q.get("answer") and q.get("answer_source") != "ai:gemini+qwen" \
-                    and q.get("answer_source") != "ai:majority":
+            if q.get("answer") and not str(q.get("answer_source", "")).startswith("ai:"):
                 # 已有答案卷的答案：只在兩模型一致推翻時標記，保留原答案
                 if how == "consensus" and norm(q["answer"], typ) != ng:
                     q["answer_status"] = "disputed"
@@ -281,7 +333,8 @@ def merge(args) -> None:
             if final is not None:
                 q["answer"] = to_list(final, q)
                 q["answer_status"] = "ai_generated"
-                q["answer_source"] = "ai:gemini+qwen" if how == "consensus" else "ai:majority"
+                q["answer_source"] = {"consensus": "ai:gemini+qwen", "majority": "ai:majority",
+                                      "gemini_only": "ai:gemini-only"}[how]
                 stats[how] += 1
             else:
                 q.pop("answer", None)
@@ -297,7 +350,7 @@ def merge(args) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("step", choices=["gemini", "qwen", "tiebreak", "merge", "status"])
+    ap.add_argument("step", choices=["gemini", "qwen", "qwen-split", "tiebreak", "merge"])
     ap.add_argument("--bank", type=Path, default=Path("data/bank"))
     ap.add_argument("--assets", type=Path, default=Path("data/assets"))
     ap.add_argument("--budget-twd", type=float, default=7000)
@@ -320,6 +373,8 @@ def main() -> int:
         collect_gemini(args, "answer_tiebreak")
     elif args.step == "qwen":
         run_qwen(args)
+    elif args.step == "qwen-split":
+        run_qwen_split(args)
     elif args.step == "merge":
         merge(args)
     print(f"階段累計 NT${B.Ledger.twd():.1f}")
