@@ -404,8 +404,8 @@ def lesson_tag(scope: dict | None, lesson: str | None) -> str | None:
     return " ".join(b.strip() for b in bits if b and b.strip())
 
 
-def extract(path: Path, fig_dir: Path | None, model: str) -> tuple[dict | None, dict]:
-    """回傳 (擷取結果, 統計)。擷取失敗時結果為 None。"""
+def prepare(path: Path) -> tuple[list[dict] | None, dict]:
+    """組出送模型的 parts（頁面影像＋文字層）。路徑缺欄位時 parts 為 None。"""
     stats: dict = {"path": str(path)}
     meta = parse_path(path)
     for field in ("grade", "subject", "academic_year_roc", "semester", "exam_seq",
@@ -413,33 +413,56 @@ def extract(path: Path, fig_dir: Path | None, model: str) -> tuple[dict | None, 
         if not meta.get(field):
             stats["skip"] = f"路徑缺 {field}"
             return None, stats
-
     doc = fitz.open(path)
     parts: list[dict] = [{"text": PROMPT}]
-    page_sig: list[Counter] = []
-    all_sig = Counter()
+    chars = 0
     for i, page in enumerate(doc, start=1):
         text = page.get_text("text")
-        sig = sig_chars(text)
-        page_sig.append(sig)
-        all_sig += sig
+        chars += sum(sig_chars(text).values())
         img = page.get_pixmap(dpi=IMG_DPI).tobytes("jpeg", jpg_quality=80)
         parts.append({"text": f"\n【第{i}頁影像】"})
         parts.append({"inline_data": {"mime_type": "image/jpeg",
                                       "data": base64.b64encode(img).decode()}})
         parts.append({"text": f"【第{i}頁文字層】\n{text.strip() or '（此頁沒有文字層）'}"})
     stats["pages"] = len(doc)
-    stats["text_chars"] = sum(all_sig.values())
-    has_text = stats["text_chars"] > 200
+    stats["text_chars"] = chars
+    doc.close()
+    return parts, stats
 
+
+def request_body(parts: list[dict]) -> dict:
+    """批次 API 用的單筆請求（與 call_model 的設定相同）。"""
+    return {"contents": [{"parts": parts}],
+            "generationConfig": {"responseMimeType": "application/json",
+                                 "responseSchema": SCHEMA, "temperature": 0,
+                                 "maxOutputTokens": 65536,
+                                 "thinkingConfig": {"thinkingLevel": "low"}}}
+
+
+def extract(path: Path, fig_dir: Path | None, model: str) -> tuple[dict | None, dict]:
+    """回傳 (擷取結果, 統計)。擷取失敗時結果為 None。"""
+    parts, stats = prepare(path)
+    if parts is None:
+        return None, stats
     t0 = time.time()
     try:
         out, used_model, cost = call_model(parts, model)
     except Exception as exc:
         stats["error"] = str(exc)
-        doc.close()
         return None, stats
     stats["seconds"] = round(time.time() - t0, 1)
+    return finish(path, fig_dir, out, used_model, cost, stats)
+
+
+def finish(path: Path, fig_dir: Path | None, out: dict, used_model: str, cost: float,
+           stats: dict) -> tuple[dict | None, dict]:
+    """把模型輸出組成題庫格式：出處、題組、裁圖、文字層驗證、答案。"""
+    meta = parse_path(path)
+    doc = fitz.open(path)
+    all_sig = Counter()
+    for page in doc:
+        all_sig += sig_chars(page.get_text("text"))
+    has_text = sum(all_sig.values()) > 200
     stats["model"] = used_model
     stats["usd"] = round(cost, 4)
 

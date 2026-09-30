@@ -26,6 +26,7 @@ import math
 import re
 import sys
 import threading
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -96,10 +97,14 @@ def load_units(curr: dict, grade: int, sem: int, subject: str, sub: str | None) 
 # 第 k 次段考最遠考到課本的哪裡（依單元順序的比例）。模型少了這個限制，
 # 會把第一次段考的題目歸到期末才教的章節。
 EXAM_REACH = {1: 0.55, 2: 0.85, 3: 1.0}
+# 學期的最後一次段考涵蓋全冊。國三下學期因為會考只有兩次段考，
+# 第 2 次就是期末考；照 EXAM_REACH 會把最後幾節（例如電磁感應）排除在候選外。
+LAST_EXAM = {(9, 2): 2}
 
 
-def within_exam(units: list[dict], exam: int | None) -> list[dict]:
-    reach = EXAM_REACH.get(exam or 3, 1.0)
+def within_exam(units: list[dict], exam: int | None, grade: int = 0, sem: int = 0) -> list[dict]:
+    last = LAST_EXAM.get((grade, sem), 3)
+    reach = 1.0 if (exam or last) >= last else EXAM_REACH.get(exam, 1.0)
     out = []
     for key in dict.fromkeys((u["publisher"], u["subject"]) for u in units):
         book = [u for u in units if (u["publisher"], u["subject"]) == key]
@@ -120,22 +125,22 @@ def short(s: str | None, n: int) -> str:
     return s if len(s) <= n else s[:n] + "…"
 
 
-def classify(path: Path, curr: dict, force: bool) -> tuple[str, int, float]:
+def build(path: Path, curr: dict, force: bool) -> tuple[str, str | None]:
+    """回傳 (狀態, 提示詞)。狀態不是 ok 時提示詞為 None。"""
     d = yaml.safe_load(path.read_text(encoding="utf-8"))
     m = d["document"]
     qs = d.get("questions") or []
     if m.get("subject") in ("英語", "英文") or not qs:
-        return "skip", 0, 0.0
+        return "skip", None
     if not str(m.get("extractor", "")).startswith("vlm"):
-        return "skip", 0, 0.0          # 規則式舊卷會被視覺擷取取代，同時寫檔會互相覆蓋
+        return "skip", None            # 規則式舊卷會被視覺擷取取代，同時寫檔會互相覆蓋
     if not force and all((q.get("tags") or {}).get("chapter") for q in qs):
-        return "done", 0, 0.0
-    units = load_units(curr, m["grade"], m["semester"], m["subject"], m.get("sub_subject"))
+        return "done", None
+    units, pub = candidates(curr, m)
     if not units:
-        return "nounits", 0, 0.0
-    pub = publisher_of(m.get("scope")) or publisher_of({"s": m.get("scope_note")})
+        return "nounits", None
     shown = [u for u in units if u["publisher"] == pub] if pub else units
-    shown = within_exam(shown, m.get("exam_seq"))
+    shown = within_exam(shown, m.get("exam_seq"), m["grade"], m["semester"])
     lines = [f"{u['id']}  {u['publisher']}・{u['subject']}・"
              + (f"{u['chapter']}・" if u["chapter"] else "") + f"{u['code']} {u['title']}"
              for u in shown]
@@ -152,16 +157,27 @@ def classify(path: Path, curr: dict, force: bool) -> tuple[str, int, float]:
         qlines.append(f"{head}[{i}] {short(q.get('stem'), 160)}" + (f"（{opts}）" if opts else ""))
 
     scope = m.get("scope_note") or ((m.get("scope") or {}).get("raw"))
-    prompt = PROMPT.format(
+    return "ok", PROMPT.format(
         grade=TERM[m["grade"]], term="上" if m["semester"] == 1 else "下", exam=m.get("exam_seq"),
         subject=m["subject"] + (f"（{m['sub_subject']}）" if m.get("sub_subject") else ""),
         scope=f"卷上印的考試範圍：{scope}" + (f"（{pub}版）" if pub else "") if scope else "卷上沒有印考試範圍。",
         units="\n".join(lines), questions="\n".join(qlines))
-    out, model, cost = call_model([{"text": prompt}], MODEL, schema=SCHEMA, fallback=FALLBACK,
-                                  thinking="minimal")   # 思考 tokens 以輸出價計，實測佔一半以上費用
 
+
+def candidates(curr: dict, m: dict) -> tuple[list[dict], str | None]:
+    units = load_units(curr, m["grade"], m["semester"], m["subject"], m.get("sub_subject"))
+    pub = publisher_of(m.get("scope")) or publisher_of({"s": m.get("scope_note")})
+    return units, pub
+
+
+def apply(path: Path, curr: dict, out: dict, model: str) -> int:
+    """把模型的選擇寫回題目標籤（重新讀檔，避免覆蓋其他步驟的修改）。"""
+    d = yaml.safe_load(path.read_text(encoding="utf-8"))
+    m = d["document"]
+    qs = d.get("questions") or []
+    units, pub = candidates(curr, m)
     by_id = {u["id"]: u for u in units}
-    picked = {it.get("i"): it.get("unit", "").strip() for it in out.get("items") or []}
+    picked = {it.get("i"): (it.get("unit") or "").strip() for it in out.get("items") or []}
     book = f"{TERM[m['grade']]}{'上' if m['semester'] == 1 else '下'}"
     n = 0
     for i, q in enumerate(qs):
@@ -182,7 +198,57 @@ def classify(path: Path, curr: dict, force: bool) -> tuple[str, int, float]:
     m["chapter_index"] = {"publisher": out.get("publisher"), "model": model,
                           "publisher_from_scope": pub}
     path.write_text(yaml.safe_dump(d, allow_unicode=True, sort_keys=False), encoding="utf-8")
-    return "ok", n, cost
+    return n
+
+
+def classify(path: Path, curr: dict, force: bool) -> tuple[str, int, float]:
+    status, prompt = build(path, curr, force)
+    if status != "ok":
+        return status, 0, 0.0
+    out, model, cost = call_model([{"text": prompt}], MODEL, schema=SCHEMA, fallback=FALLBACK,
+                                  thinking="minimal")   # 思考 tokens 以輸出價計，實測佔一半以上費用
+    return "ok", apply(path, curr, out, model), cost
+
+
+def run_batch(args, curr: dict, paths: list[Path]) -> None:
+    """批次 API（半價）：送出所有待分類的卷，輪詢到收完。"""
+    import batch_api as B
+    phase = "chapters"
+    queued = {k for j in B.load_jobs(phase) if not j.get("collected") for k in j["keys"]}
+    reqs = []
+    for p in paths:
+        if p.stem in queued:
+            continue
+        status, prompt = build(p, curr, args.force)
+        if status == "ok":
+            reqs.append((p.stem, {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {
+                "responseMimeType": "application/json", "responseSchema": SCHEMA, "temperature": 0,
+                "thinkingConfig": {"thinkingLevel": "minimal"}}}))
+    est = 0.0012 * len(reqs)                 # 實測一般價每份 US$0.0024
+    if reqs:
+        if B.Ledger.twd() + est * B.TWD_PER_USD > args.budget_twd:
+            print(f"預算不足（預估 NT${est * B.TWD_PER_USD:.0f}），不送出")
+            return
+        job = B.gemini_submit(phase, f"chapters_{time.strftime('%m%d_%H%M%S')}", MODEL, reqs, est_usd=est)
+        print(f"送出 {len(reqs)} 份卷 → {job['name']}", flush=True)
+    for job in B.load_jobs(phase):
+        if job.get("collected"):
+            continue
+        s, res = B.wait(job, every=120, log=lambda x: print(x, flush=True))
+        usd, n = 0.0, 0
+        for key in job["keys"]:
+            r = res.get(key) or {}
+            usd += B.gemini_cost(job["model"], r.get("usageMetadata") or {})
+            try:
+                text = "".join(x.get("text", "") for x in r["candidates"][0]["content"]["parts"])
+                n += apply(args.bank / f"{key}.yaml", curr, json.loads(text), f"{job['model']}(batch)")
+            except Exception as exc:  # noqa: BLE001
+                print(f"  失敗 {key}：{str(exc)[:100]}")
+        twd = B.Ledger.add(phase, usd)
+        job.update({"collected": True, "state": s, "usd": round(usd, 4)})
+        job.pop("_raw", None)
+        B.save_job(phase, job)
+        print(f"收回 {job['label']}：歸類 {n} 題，US${usd:.3f}｜階段累計 NT${twd:.0f}", flush=True)
 
 
 def main() -> int:
@@ -196,6 +262,7 @@ def main() -> int:
     ap.add_argument("--limit", type=int)
     ap.add_argument("--only", help="只處理檔名含這段文字的卷")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--batch", action="store_true", help="用批次 API（半價），預算算在 out/phase2_spend.json")
     args = ap.parse_args()
 
     load_env_file()
@@ -205,6 +272,9 @@ def main() -> int:
     paths = sorted(p for p in args.bank.glob("*.yaml") if not args.only or args.only in p.name)
     if args.limit:
         paths = paths[:args.limit]
+    if args.batch:
+        run_batch(args, curr, paths)
+        return 0
     print(f"{len(paths)} 份卷；先前費用 NT${Usage.twd():.1f}，上限 NT${args.budget_twd:.0f}", flush=True)
 
     stats = {"ok": 0, "done": 0, "skip": 0, "nounits": 0, "fail": 0}
