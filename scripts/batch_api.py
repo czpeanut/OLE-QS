@@ -59,7 +59,11 @@ class Ledger:
 
     @classmethod
     def add(cls, phase: str, usd: float) -> float:
-        with cls.lock:
+        import fcntl
+        LEDGER.parent.mkdir(parents=True, exist_ok=True)
+        # 多個程序（收件、Qwen、送件）同時記帳，用檔案鎖避免互相覆蓋
+        with cls.lock, open(LEDGER.with_suffix(".lock"), "w") as lk:
+            fcntl.flock(lk, fcntl.LOCK_EX)
             d = cls.read()
             d["usd"] = round(d["usd"] + usd, 5)
             d["by_phase"][phase] = round(d["by_phase"].get(phase, 0.0) + usd, 5)

@@ -110,6 +110,11 @@ def collect(args) -> int:
                 if reason not in (None, "STOP"):
                     raise RuntimeError(reason)
                 text = "".join(x.get("text", "") for x in cand["content"]["parts"])
+                # 原始輸出先存檔：組裝若出錯，可以不重送、直接重新組裝（reassemble）
+                raw = Path("out/batches/raw_extract") / f"{doc_id_of(Path(path))}.json"
+                raw.parent.mkdir(parents=True, exist_ok=True)
+                raw.write_text(json.dumps({"path": path, "text": text, "usd": cost}, ensure_ascii=False),
+                               encoding="utf-8")
                 out = repair_tree(loads_lenient(text))
                 doc, stats = finish(Path(path), args.assets, out, f"{job['model']}(batch)", cost,
                                     {"path": path})
@@ -136,10 +141,24 @@ def collect(args) -> int:
     return left
 
 
+def reassemble(args) -> None:
+    """用存下的原始輸出重新組裝（不呼叫模型）。"""
+    n = 0
+    for raw in sorted(Path("out/batches/raw_extract").glob("*.json")):
+        x = json.loads(raw.read_text(encoding="utf-8"))
+        out = repair_tree(loads_lenient(x["text"]))
+        doc, _ = finish(Path(x["path"]), args.assets, out, f"{MODEL}(batch)", x["usd"], {"path": x["path"]})
+        if doc:
+            (args.out / f"{doc['document']['id']}.yaml").write_text(
+                yaml.safe_dump(doc, allow_unicode=True, sort_keys=False), encoding="utf-8")
+            n += 1
+    print(f"重新組裝 {n} 份")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["submit", "collect", "run"])
+    ap.add_argument("cmd", choices=["submit", "collect", "run", "reassemble"])
     ap.add_argument("--list", type=Path)
     ap.add_argument("--root", type=Path, default=Path("."))
     ap.add_argument("-o", "--out", type=Path, default=Path("data/bank"))
@@ -156,6 +175,9 @@ def main() -> int:
                  if l.strip()]
         if args.limit:
             paths = pending(paths, args.out)[:args.limit]
+    if args.cmd == "reassemble":
+        reassemble(args)
+        return 0
     if args.cmd in ("submit", "run"):
         submit(args, paths)
     if args.cmd in ("collect", "run"):
