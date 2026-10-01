@@ -1,98 +1,96 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 1
-  school: 高雄市立苓雅國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 苓雅
+  school: 高雄市立苓雅國民中學
   id: doc_113_高雄_苓雅_數學_g7s2e1
-  title: 高雄市立苓雅國民中學 113學年度第2學期第1次定期評量7年級數學科試題
+  title: 高雄市立苓雅國民中學 113學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第1次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:每題3分,共30分
     count: 10
   - ord: 2
     name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:第1~11每格3分,第12~15每格4分,共49分
     count: 8
   - ord: 3
     name: 三、計算題
-    type: calc
-    score_rule: 三、計算題:共21分(第2、3、4題需有過程,無過程不予計分)
     count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/高雄/苓雅.pdf
 questions:
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 3x+ 4y+ 7可化簡為7xy+ 7
+    content: $3x+ 4y+ 7$可化簡為$7xy+ 7$
   - label: B
-    content: 2x+ 8y= 12有無限多組正整數解
+    content: $2x+ 8y= 12$有無限多組正整數解
   - label: C
-    content: −5x−2y+ 6有無限多組解
+    content: $-5x-2y+ 6$有無限多組解
   - label: D
-    content: x= −3, y= 7是 −2x+ y−13 = 0的一組解 $\frac{3x+2y}{4}$ $\frac{−2x+1}{3}$
+    content: $x= -3, y= 7$是 $-2x+ y-13 = 0$ 的一組解
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: − 可化簡為下列哪個式子? $\frac{x+6y+4}{12}$ $\frac{17x+6y−4}{12}$
+  stem: $\frac{3x+2y}{4}-\frac{-2x+1}{3}$可化簡為下列哪個式子？
   options:
-  - label: D
-    content: ''
   - label: A
-    content: x+ 6y+ 4
+    content: $x+ 6y+ 4$
   - label: B
-    content: 17x+ 6y−4
+    content: $17x+ 6y-4$
   - label: C
-    content: $\frac{x}{2}$ + y= 37
+    content: $\frac{x+6y+4}{12}$
+  - label: D
+    content: $\frac{17x+6y-4}{12}$
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 二元一次聯立方程式{ = 17的解為x= a, y= b ,則a−b的值為何? 4x+ $\frac{y}{4}$
+  stem: 二元一次聯立方程式$\begin{cases} \frac{x}{2} + y= 37 \\ 4x+\frac{y}{4} = 17 \end{cases}$
+    的解為 $x= a, y= b$ ，則$a-b$ 的值為何？
   options:
   - label: A
-    content: −34
+    content: $-34$
   - label: B
-    content: '2'
+    content: $2$
   - label: C
-    content: '34'
+    content: $34$
   - label: D
-    content: 36 4x+ 7y= 15 ... ... ... 1
+    content: $36$
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 小國用加減消去法解聯立方程式{ 3x+ 6y= 19 ... ... ... 2時,使用下列哪個方法可完全消去x項?
+  stem: 小國用加減消去法解聯立方程式$\begin{cases} 4x+ 7y= 15 \dots\dots ① \\ 3x+ 6y= 19 \dots\dots
+    ② \end{cases}$ 時，使用下列哪個方法可完全消去$x$項？
   options:
   - label: A
-    content: 1× 3 + 2× 4
+    content: ①$\times 3 + $②$\times 4$
   - label: B
-    content: 1× 3 −2× 4
+    content: ①$\times 3 - $②$\times 4$
   - label: C
-    content: 1× 6 + 2× 7
+    content: ①$\times 6 + $②$\times 7$
   - label: D
-    content: 1× 6 −2× 7 $\frac{b}{a}$ , b2) 在坐標平面上的第幾象限?
+    content: ①$\times 6 - $②$\times 7$
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 若a> 0,b< 0,則點A(
+  stem: 若$a> 0$，$b< 0$，則點 $A(\frac{b}{a}, b^{2})$ 在坐標平面上的第幾象限？
   options:
   - label: A
     content: 第一象限
@@ -107,14 +105,14 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列哪一個點與y軸的距離最短?
+  stem: 下列哪一個點與$y$軸的距離最短？
   options:
   - label: A
-    content: ( 3 , −7 )
+    content: ( 3 , $-7$ )
   - label: B
-    content: ( −2 , −6)
+    content: ( $-2$ , $-6$)
   - label: C
-    content: ( −11 , 10 )
+    content: ( $-11$ , 10 )
   - label: D
     content: ( 5 , 8 )
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s1_7
@@ -122,22 +120,22 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 坐標平面上,點 ( −7, 2 ) 向下平移5單位,在向右平移3單位後,會落在下列哪一個點坐標上?
+  stem: 坐標平面上，點 ( $-7$, 2 ) 向下平移5 單位，在向右平移3 單位後，會落在下列哪一個點坐標上？
   options:
   - label: A
-    content: ( −12 , 5 )
+    content: ( $-12$ , 5 )
   - label: B
-    content: ( −2 , 5 )
+    content: ( $-2$ , 5 )
   - label: C
-    content: ( −10 , −3 )
+    content: ( $-10$ , $-3$ )
   - label: D
-    content: ( −4 , −3 )
+    content: ( $-4$ , $-3$ )
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 已知大、小兩數的和為172,兩數的差為14,請問小數為何?
+  stem: 已知大、小兩數的和為172，兩數的差為14，請問小數為何？
   options:
   - label: A
     content: '19'
@@ -152,7 +150,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 小苓到早餐店買包子,已知他身上的錢恰好等於12個肉包或15個芝麻包的價錢。若小苓先買了8個 肉包,則他剩餘的錢恰好可以買多少顆芝麻包?
+  stem: 小苓到早餐店買包子，已知他身上的錢恰好等於12 個肉包或15 個芝麻包的價錢。若小苓先買了8 個肉包，則他剩餘的錢恰好可以買多少顆芝麻包？
   options:
   - label: A
     content: '4'
@@ -167,97 +165,116 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 已知小雅住家的東方500公尺處為學校,且從學校往北方走100公尺,再往東方走300公尺可到 達捷運站。若小雅將住家、學校分別標示在坐標平面上的 (
-    −2 , −2 )、 ( 3 , −2) 兩點,則捷運站應標 示在此坐標平面上的哪一點?
+  stem: 已知小雅住家的東方 500 公尺處為學校，且從學校往北方走 100 公尺，再往東方走 300 公尺可到達捷運站。若小雅將住家、學校分別標示在坐標平面上的
+    ( $-2$ , $-2$ )、 ( 3 , $-2$) 兩點，則捷運站應標示在此坐標平面上的哪一點？
   options:
   - label: A
-    content: ( 6, −1 )
+    content: ( 6, $-1$ )
   - label: B
-    content: ( 0, −1 )
+    content: ( 0, $-1$ )
   - label: C
-    content: ( 6, −3 )
+    content: ( 6, $-3$ )
   - label: D
-    content: ( 0, −3 )
+    content: ( 0, $-3$ )
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 下列哪些是二元一次方程式?  1  (全對才給分) (甲) 7x+ 5y  (乙) −5x−2y= 8  (丙) 6y−1 = 17  (丁) 2x−11
-    = 6y
+  stem: "下列哪些是二元一次方程式？  ①  （全對才給分） \n(甲) $7x+ 5y$  (乙) $-5x-2y= 8$  (丙) $6y-1 = 17$\
+    \  (丁) $2x-11 = 6y$"
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: 在直角坐標平面上有一點A(12 , −7) ,點A到x軸的距離為  2  ,到y軸的距離為  3  。
+  stem: 在直角坐標平面上有一點 $A(12 , -7)$ ，點 $A$ 到 $x$ 軸的距離為  ②  ，到$y$ 軸的距離為  ③  。
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: 若x= −2, y= 11是方程式ax+ 2y= 16的解,則a=  4  。
+  stem: 若 $x= -2, y= 11$ 是方程式$ax+ 2y= 16$ 的解，則$a=$  ④  。
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s2_4
   section: 2
   number: 4
   type: fill
   page: 1
-  stem: 已知3x−4y= −2 , 則8y−6x+ 7 =  5  。 【一年級數學第1頁,共2頁】
+  stem: 已知 $3x-4y= -2$ ， 則$8y-6x+ 7 =$  ⑤  。
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 已知坐標平面上有一點Q(2n−18 , 6 + 12n) 位於y軸上,則n=  6  。
+  stem: 已知坐標平面上有一點 $Q(2n-18 , 6 + 12n)$ 位於 $y$ 軸上，則$n=$  ⑥  。
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 甲、乙兩人原先共有360元,甲給乙17元後,乙的錢是甲的2倍,則乙原先有  7  元。
+  stem: 甲、乙兩人原先共有360 元，甲給乙17 元後，乙的錢是甲的2 倍，則乙原先有  ⑦  元。
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: '化簡下列各式: (1) (2x+ 3y−8) + (7x−y+ 9) =  8  。 (2) (5x−8y+ 17) −(3y+ 11x−6) =  9  。
-    (3) (4)'
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_113_高雄_苓雅_數學_g7s2e1/p2_f01.png
+  stem: "化簡下列各式：\n(1) $(2x+ 3y-8) + (7x-y+ 9) =$  ⑧  。\n(2) $(5x-8y+ 17) -(3y+ 11x-6)\
+    \ =$  ⑨  。\n(3)\n$$\\begin{array}{r@{}l}\n  -9x + 7y - 13 \\\\\n-) \\phantom{-}\
+    \ 6x - 2y - 8 \\\\\n\\hline\n\\text{⑩}\n\\end{array}$$\n(4) $\\frac{1}{2} (3x+\
+    \ 4y-2) -\\frac{1}{3} (5x-2y+ 7) =$  ⑪  。"
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: '解下列各二元一次聯立方程式,x、y皆對才給分: (1) { y= −2x 3x−2y= 91的解為  12  。 (3) { x+ y= −1 −3x+
-    4y= 4的解為  14  。'
+  stem: '解下列各二元一次聯立方程式， $x$、$y$ 皆對才給分：
+
+    (1) $\begin{cases} y= -2x \\ 3x-2y= 91 \end{cases}$ 的解為  ⑫  。
+
+    (2) $\begin{cases} -2x+ 6y= 8 \\ x+ 5y= -4 \end{cases}$ 的解為  ⑬  。
+
+    (3) $\begin{cases} x+ y= -1 \\ -3x+ 4y= 4 \end{cases}$ 的解為  ⑭  。
+
+    (4) $\begin{cases} -2x+ 3y= 13 \\ 3x-7y= 8 \end{cases}$ 的解為  ⑮  。'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 81%）
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: 如圖,坐標平面上有A、B、C、D、E五個點,請寫出各點的坐 標。(5分)
+  stem: 如圖，坐標平面上有A、B、C、D、E 五個點，請寫出各點的坐標。(5 分)
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_高雄_苓雅_數學_g7s2e1/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 418.61
+      - 541.93
+      - 699.85
+      - 783.16
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s3_2
   section: 3
   number: 2
   type: calc
   page: 2
-  stem: 某國中舉行校外教學活動,第二天時有一項活動是騎協力車。 租車行提供了兩種款式的協力車,一種是雙人協力車,一種是三 人協力車。三年八班共借了11台協力車,且協力車都坐滿人,已
-    知三年八班共有26人,請問他們分別借了幾台雙人協力車與三人 協力車?(6分)
+  stem: 某國中舉行校外教學活動，第二天時有一項活動是騎協力車。租車行提供了兩種款式的協力車，一種是雙人協力車，一種是三人協力車。三年八班共借了11 台協力車，且協力車都坐滿人，已知三年八班共有26
+    人，請問他們分別借了幾台雙人協力車與三人協力車？(6 分)
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s3_3
   section: 3
   number: 3
   type: calc
   page: 2
-  stem: 已知有一方程式{−3x+ 2y= 13 6x−7y= −77,x= a, y= b。坐標平面上有一點P(a , b),則P點坐標為何?P點坐標在第
-    幾象限?(5分)
+  stem: 已知有一方程式$\begin{cases}-3x+ 2y= 13 \\ 6x-7y= -77\end{cases}$，$x= a$ ， $y= b$。坐標平面上有一點$P(a
+    , b)$，則$P$點坐標為何？$P$點坐標在第幾象限？(5 分)
 - id: doc_113_高雄_苓雅_數學_g7s2e1_s3_4
   section: 3
   number: 4
   type: calc
   page: 2
-  stem: 已知 {x−2y= 17 4x+ y= 5與 { ax−4y= 19 2x+ by= −15有相同的解,則a+ b的值為何?(5分) 【一年級數學第2頁,共2頁】
-    $\frac{1}{2}$ (3x+ 4y−2) − $\frac{1}{3}$ (5x−2y+ 7) =  11  。 (2) {−2x+ 6y= 8 x+
-    5y= −4的解為  13  。 (4) {−2x+ 3y= 13 3x−7y= 8的解為  15  。
+  stem: 已知 $\begin{cases}x-2y= 17 \\ 4x+ y= 5\end{cases}$ 與 $\begin{cases} ax-4y=
+    19 \\ 2x+ by= -15\end{cases}$ 有相同的解，則 $a+ b$的值為何？(5 分)
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 81%）

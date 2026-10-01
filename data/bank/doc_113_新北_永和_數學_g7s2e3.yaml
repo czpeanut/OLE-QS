@@ -1,55 +1,63 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 3
-  school: 新北市立永和國民中學
-  grade: 7
-  subject: 數學
-  scope_note: '康軒版第二冊4-1~6-1             七年   班   號 姓名:   ★選擇題請以2B鉛筆直接在電腦閱卷'
   city: 新北
   school_short: 永和
+  school: 新北市立永和國民中學
+  scope_note: 康軒版第二冊4-1～6-1
   id: doc_113_新北_永和_數學_g7s2e3
-  title: 新北市立永和國民中學 113學年度第2學期第3次定期評量7年級數學科試題
+  title: 新北市立永和國民中學 113學年度第2學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:【1~2每題4分,3~25每題3分,共77分】
+    name: 一、選擇題：【1~2 每題4 分，3~25 每題3 分，共77 分】
     count: 25
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:【每格3分,共$\frac{15}{AB}$ 分】★填充題請以黑色原子筆在答案卷上作答。
+    name: 二、填充題：【每格3 分，共15 分】
     count: 5
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題:【共8分】★計算題請以黑色原子筆在答案卷上作答。
-    count: 0
+    name: 三、計算題：【共8 分】
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-3/新北/永和.pdf
+  scope:
+    lessons:
+    - number: 4-1
+      title: null
+    - number: 6-1
+      title: null
+    publisher: 康軒版
+    raw: 康軒版第二冊4-1～6-1
+    volume: 第二冊
 questions:
 - id: doc_113_新北_永和_數學_g7s2e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列敘述何者錯誤?
+  stem: 下列敘述何者錯誤？
   options:
   - label: A
-    content: 「x−7至多是18的2倍」可用不等式表示成「x−7 ≤18 × 2 」。
+    content: 「$x-7$ 至多是18的2倍」可用不等式表示成「$x-7 \leq 18 \times 2$」。
   - label: B
-    content: 「x−5不小於9 」可用不等式表示成「 x−5 ≥9 」。
+    content: 「$x-5$ 不小於 9 」可用不等式表示成「$x-5 \geq 9$」。
   - label: C
-    content: 沒有任何條件的限制,一元一次不等式的解通常不只一個。
+    content: 沒有任何條件的限制，一元一次不等式的解通常不只一個。
   - label: D
-    content: 不等式0 ≤x≤17的整數解有17個。
+    content: 不等式 $0 \leq x \leq 17$ 的整數解有 17 個。
 - id: doc_113_新北_永和_數學_g7s2e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: '小翊將右圖線段(甲)、射線(乙) 、直線(丙)、四邊形(丁)等四種幾何圖形標示如下: (甲) AB      (乙) ED⃗⃗⃗⃗⃗        (丙)
-    BC⃡⃗⃗⃗⃗       (丁)四邊形BCDF判斷哪一個圖形的表示法是錯誤的?'
+  stem: '小翊將右圖線段(甲)、射線(乙) 、直線(丙)、四邊形(丁)等四種幾何圖形標示如下:
+
+    (甲) $\overline{AB}$      (乙) $\overline{ED}$      (丙) $\overline{BC}$      (丁)四邊形BCDF
+
+    判斷哪一個圖形的表示法是錯誤的？'
   options:
   - label: A
     content: 甲
@@ -59,12 +67,23 @@ questions:
     content: 丙
   - label: D
     content: 丁
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s2e3/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 510.42
+      - 309.73
+      - 654.68
+      - 412.67
 - id: doc_113_新北_永和_數學_g7s2e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 右圖的立體圖形由相同大小的正方體積木堆疊而成,判斷拿走圖中哪一個積木後,此 圖形的右視圖形狀會改變?
+  stem: 右圖的立體圖形由相同大小的正方體積木堆疊而成，判斷拿走圖中哪一個積木後，此圖形的右視圖形狀會改變？
   options:
   - label: A
     content: 甲
@@ -74,12 +93,36 @@ questions:
     content: 丙
   - label: D
     content: 丁
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s2e3/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 531.55
+      - 418.09
+      - 651.03
+      - 511.74
 - id: doc_113_新北_永和_數學_g7s2e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 右表是七年甲班男、女生是否戴眼鏡的列聯表。 判斷下列何者正確?
+  stem: '右表是七年甲班男、女生是否戴眼鏡的列聯表。
+
+    判斷下列何者正確?
+
+
+    | 性別 \ 是否戴眼鏡 | 男生 | 女生 | 合計 |
+
+    | :--- | :---: | :---: | :---: |
+
+    | 戴眼鏡 | 6 | $b$ | $c$ |
+
+    | 沒戴眼鏡 | $a$ | 7 | $d$ |
+
+    | 合計 | 14 | 16 | $e$ |'
   options:
   - label: A
     content: 戴眼鏡的男生比沒戴眼鏡的男生多
@@ -94,84 +137,133 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 右圖是A、B兩城市的時薪次數分配折線圖,則下列敘述何者錯誤?
+  stem: 右圖是A、B兩城市的時薪次數分配折線圖，則下列敘述何者錯誤？
   options:
   - label: A
     content: 組距是10元
   - label: B
-    content: 時薪在210~240元的人數,A城市比B城市多1人
+    content: 時薪在210~240元的人數，A城市比B城市多1人
   - label: C
-    content: 時薪220元以上(含)的人數,A城市比B城市多4人
+    content: 時薪220元以上(含)的人數，A城市比B城市多4人
   - label: D
-    content: 兩城市的時薪分組中,時薪210~220元的人數差距最大
+    content: 兩城市的時薪分組中，時薪210~220 元的人數差距最大
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s2e3/s1_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 452.13
+      - 665.77
+      - 635.0
+      - 829.6
 - id: doc_113_新北_永和_數學_g7s2e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 若a> b且c> 0 ,則下列何者錯誤?
+  stem: 若$a> b$ 且$c> 0$ ，則下列何者錯誤？
   options:
   - label: A
-    content: a+ c> b+ c
+    content: $a+ c> b+ c$
   - label: B
-    content: a−c> b−c
+    content: $a-c> b-c$
   - label: C
-    content: a× c> b× c
+    content: $a\times c> b\times c$
   - label: D
-    content: a÷ c< b÷ c
+    content: $a\div c< b\div c$
 - id: doc_113_新北_永和_數學_g7s2e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 已知一個二位數的十位數字與個位數字和為9 ,若此二位數的個位數字為x ,且此二位數加上30後不逾73 ,則 依題意列出的不等式為何?
+  stem: 已知一個二位數的十位數字與個位數字和為 9 ，若此二位數的個位數字為 $x$ ，且此二位數加上 30 後不逾 73 ，則依題意列出的不等式為何？
   options:
   - label: A
-    content: 10(9 −x) + x≤73 −30
+    content: $10(9 -x) + x\leq 73 -30$
   - label: B
-    content: 10(9 −x) + x< 73 −30
+    content: $10(9 -x) + x< 73 -30$
   - label: C
-    content: 10(9 −x) + x+ 30 ≥73
+    content: $10(9 -x) + x+ 30 \geq 73$
   - label: D
-    content: 10x+ (9 −x) + 30 ≤73 【背面尚有試題】【第1頁,共5頁】 (甲) A D (乙) E F (丁) (丙) B C甲 丁
-      乙 前面 丙 性別 是否戴眼鏡 男生 女生 合計 戴眼鏡6. b c沒戴眼鏡a 7. d合計14. 16. e 9 10 A城市B城市 次 數 ( 8
-      7人 ) 6 5 4 3 2 1 0 190 200 210 220 230 240 250時薪(元)
+    content: $10x+ (9 -x) + 30 \leq 73$
 - id: doc_113_新北_永和_數學_g7s2e3_s1_8
   section: 1
   number: 8
   type: single
   page: 2
-  stem: 關於不等式及其解的圖形,下列選項何者錯誤? $\frac{7x−9}{2}$ ≤6
+  stem: 關於不等式及其解的圖形，下列選項何者錯誤？
   options:
-  - label: B
-    content: 2x+ 3 < 6x−5
-  - label: C
-    content: 2(x+ 1) < 4
-  - label: D
-    content: −
   - label: A
-    content: ''
+    content: $\frac{7x-9}{2}\leq 6$
+    asset:
+      key: optA
+      file: doc_113_新北_永和_數學_g7s2e3/1_8_optA.png
+      crop:
+        page: 2
+        rect:
+        - 79.06
+        - 117.78
+        - 205.83
+        - 158.8
+  - label: B
+    content: $2x+ 3 < 6x-5$
+    asset:
+      key: optB
+      file: doc_113_新北_永和_數學_g7s2e3/1_8_optB.png
+      crop:
+        page: 2
+        rect:
+        - 226.25
+        - 120.87
+        - 347.19
+        - 157.77
+  - label: C
+    content: $2(x+ 1) < 4$
+    asset:
+      key: optC
+      file: doc_113_新北_永和_數學_g7s2e3/1_8_optC.png
+      crop:
+        page: 2
+        rect:
+        - 387.28
+        - 120.87
+        - 509.68
+        - 156.74
+  - label: D
+    content: $-\frac{x}{5} + 5 \geq 0$
+    asset:
+      key: optD
+      file: doc_113_新北_永和_數學_g7s2e3/1_8_optD.png
+      crop:
+        page: 2
+        rect:
+        - 530.82
+        - 119.84
+        - 653.22
+        - 158.8
 - id: doc_113_新北_永和_數學_g7s2e3_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: 解不等式 −(x+ 4) −18 ≥3(x−3) ,可得x的最大整數解為何?
+  stem: 解不等式 $-(x+ 4) -18 \geq 3(x-3)$ ，可得$x$的最大整數解為何?
   options:
   - label: A
-    content: '-2'
+    content: －2
   - label: B
-    content: '-3'
+    content: －3
   - label: C
-    content: '-4'
+    content: －4
   - label: D
-    content: '-5'
+    content: －5
 - id: doc_113_新北_永和_數學_g7s2e3_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 在不大於29的質數中,有幾個數是不等式5(x+ 4) ≤7x−8的解?
+  stem: 在不大於 29 的質數中，有幾個數是不等式 $5(x+ 4) \leq 7x-8$ 的解？
   options:
   - label: A
     content: 3個
@@ -186,95 +278,182 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 若小翊以四種不同的方式連接正八邊形ABCDEFGH的三條對角線,連接後的情形如下列選項中的圖形所示,則 下列哪一個圖形不是線對稱圖形?
+  stem: 若小翊以四種不同的方式連接正八邊形$ABCDEFGH$ 的三條對角線，連接後的情形如下列選項中的圖形所示，則下列哪一個圖形不是線對稱圖形？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_永和_數學_g7s2e3/1_11_optA.png
+      crop:
+        page: 2
+        rect:
+        - 107.48
+        - 352.04
+        - 193.45
+        - 440.54
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_永和_數學_g7s2e3/1_11_optB.png
+      crop:
+        page: 2
+        rect:
+        - 246.65
+        - 349.98
+        - 332.62
+        - 439.5
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_新北_永和_數學_g7s2e3/1_11_optC.png
+      crop:
+        page: 2
+        rect:
+        - 387.28
+        - 351.01
+        - 474.7
+        - 439.5
   - label: D
-    content: A A H H G G B B F C F C D D E E
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p2_f02.png
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_新北_永和_數學_g7s2e3/1_11_optD.png
+      crop:
+        page: 2
+        rect:
+        - 522.81
+        - 348.94
+        - 612.41
+        - 438.47
 - id: doc_113_新北_永和_數學_g7s2e3_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 如下圖,將一張正方形色紙按照下面圖1、圖2的步驟對摺兩次後得到一個小正方形,接著在此小正方形的左上 角打一個洞,如圖3。則此正方形色紙展開後的圖形為下列何者?
-    圖1圖2圖3
+  stem: 如下圖，將一張正方形色紙按照下面圖1、圖2 的步驟對摺兩次後得到一個小正方形，接著在此小正方形的左上角打一個洞，如圖3。則此正方形色紙展開後的圖形為下列何者？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_永和_數學_g7s2e3/1_12_optA.png
+      crop:
+        page: 2
+        rect:
+        - 99.47
+        - 604.88
+        - 167.22
+        - 669.64
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_永和_數學_g7s2e3/1_12_optB.png
+      crop:
+        page: 2
+        rect:
+        - 205.12
+        - 604.88
+        - 272.14
+        - 669.64
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_新北_永和_數學_g7s2e3/1_12_optC.png
+      crop:
+        page: 2
+        rect:
+        - 309.32
+        - 603.85
+        - 377.79
+        - 669.64
   - label: D
     content: ''
+    asset:
+      key: optD
+      file: doc_113_新北_永和_數學_g7s2e3/1_12_optD.png
+      crop:
+        page: 2
+        rect:
+        - 413.51
+        - 603.85
+        - 487.09
+        - 670.67
   assets:
-  - key: p2_f03
+  - key: s1_12_f1
     kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p2_f03.png
-  - key: p2_f04
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p2_f04.png
-  - key: p2_f05
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p2_f05.png
-  - key: p2_f06
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p2_f06.png
+    file: doc_113_新北_永和_數學_g7s2e3/s1_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 95.82
+      - 503.74
+      - 339.9
+      - 601.53
 - id: doc_113_新北_永和_數學_g7s2e3_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 右圖是七年乙班學生某次數學小考分數次數分配直方圖。 小妍和小美對於此直方圖的說法如下。判斷他們的說法是否正確。 那次小考我考70分,所以 我的分數被列在60∼70分
-    全班數學小考分數的 中位數在70~80分這 一組。 這組。 小妍
+  stem: '右圖是七年乙班學生某次數學小考分數次數分配直方圖。
+
+    小妍和小美對於此直方圖的說法如下。判斷他們的說法是否正確。
+
+    小妍：全班數學小考分數的中位數在70~80分這一組。
+
+    小美：那次小考我考70分，所以我的分數被列在60∼70分這組。'
   options:
   - label: A
     content: 兩人皆錯誤
   - label: B
-    content: 小妍錯誤,小美正確
+    content: 小妍錯誤，小美正確
   - label: C
-    content: 小妍正確,小美錯誤
+    content: 小妍正確，小美錯誤
   - label: D
     content: 兩人皆錯誤
   assets:
-  - key: p2_f07
+  - key: s1_13_f1
     kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p2_f07.png
+    file: doc_113_新北_永和_數學_g7s2e3/s1_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 452.86
+      - 680.22
+      - 680.18
+      - 783.16
 - id: doc_113_新北_永和_數學_g7s2e3_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 七年丙班導師為了鼓勵班上學生閱讀,規定每人每學期至少閱讀5本課外讀物,上學期全班統計結果如右表,則全班在上學期中, 每人閱讀課外讀物的眾數與中位數分別為何?
+  stem: '七年丙班導師為了鼓勵班上學生閱讀，規定每人每學期至少閱讀5 本課外讀物，上學期全班統計結果如右表，則全班在上學期中，每人閱讀課外讀物的眾數與中位數分別為何？
+
+
+    | 課外讀物(本) | 5 | 6 | 7 | 8 | 9 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 2 | 3 | 8 | 9 | 5 |'
   options:
   - label: A
-    content: 眾數8本,中位數8本
+    content: 眾數8 本，中位數 8 本
   - label: B
-    content: 眾數8本,中位數7本
+    content: 眾數8 本，中位數7 本
   - label: C
-    content: 眾數9本,中位數8本
+    content: 眾數9 本，中位數 8 本
   - label: D
-    content: 眾數9本,中位數7本 【第2頁,共5頁】 $\frac{x}{5}$ + 5 ≥0 A H A H G B G B F C F C D E
-      D E 8次 數6 ( 人4 ) 2 0 40 30 50 60 70 80 90100分數(分) 小美 課外讀物(本) 5. 6. 7. 8. 9.
-      次數(人) 2. 3. 8. 9. 5.
+    content: 眾數9 本，中位數 7 本
 - id: doc_113_新北_永和_數學_g7s2e3_s1_15
   section: 1
   number: 15
   type: single
   page: 3
-  stem: 若不等式 $\frac{−5(x−3)}{6}$ > 3x−9,且x為自然數,則x所有可能的解有幾個?
+  stem: 若不等式 $\frac{-5(x-3)}{6} > 3x-9$，且 $x$ 為自然數，則 $x$ 所有可能的解有幾個？
   options:
   - label: A
     content: 2個
@@ -289,37 +468,37 @@ questions:
   number: 16
   type: single
   page: 3
-  stem: 不等式2(x−5) − $\frac{17x−3}{4}$ ≤8解的最小值為何? $\frac{7}{5}$
+  stem: 不等式 $2(x-5) -\frac{17x-3}{4} \leq 8$ 解的最小值為何？
   options:
-  - label: C
-    content: − $\frac{23}{3}$
-  - label: D
-    content: − $\frac{25}{3}$
   - label: A
-    content: −5
+    content: $-5$
   - label: B
-    content: −
+    content: $-\frac{7}{5}$
+  - label: C
+    content: $-\frac{23}{3}$
+  - label: D
+    content: $-\frac{25}{3}$
 - id: doc_113_新北_永和_數學_g7s2e3_s1_17
   section: 1
   number: 17
   type: single
   page: 3
-  stem: 永和文具店舉辦促銷活動,購物總金額全面打八折,小和帶著200元買了單價12元的原子筆若干枝和2個單價40元的史萊姆,則小和最多可以購買幾枝原子筆?
+  stem: 永和文具店舉辦促銷活動，購物總金額全面打八折，小和帶著200 元買了單價12 元的原子筆若干枝和2 個單價40 元的史萊姆，則小和最多可以購買幾枝原子筆？
   options:
   - label: A
-    content: 12枝
+    content: 12 枝
   - label: B
-    content: 13枝
+    content: 13 枝
   - label: C
-    content: 14枝
+    content: 14 枝
   - label: D
-    content: 15枝
+    content: 15 枝
 - id: doc_113_新北_永和_數學_g7s2e3_s1_18
   section: 1
   number: 18
   type: single
   page: 3
-  stem: 阿和端午連假去登山健行,已知他沿著相同路徑上、下山,且往返總時間不超過7小時,若阿和上山每小時走2公里,下山每小時走5公里,則他往返最多共走幾公里?
+  stem: 阿和端午連假去登山健行，已知他沿著相同路徑上、下山，且往返總時間不超過7 小時，若阿和上山每小時走2公里，下山每小時走5 公里，則他往返最多共走幾公里？
   options:
   - label: A
     content: 10公里
@@ -334,14 +513,14 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 已知x的一元一次不等式 $\frac{2(x−3b)}{5}$ ≤4x−1的解為x≥−1  ,則b=? $\frac{23}{6}$
+  stem: 已知 $x$ 的一元一次不等式 $\frac{2(x-3b)}{5} \leq 4x-1$ 的解為 $x\geq -1$  ，則 $b=?$
   options:
-  - label: C
-    content: $\frac{41}{6}$
   - label: A
     content: '1'
   - label: B
-    content: ''
+    content: $\frac{23}{6}$
+  - label: C
+    content: $\frac{41}{6}$
   - label: D
     content: '2'
 - id: doc_113_新北_永和_數學_g7s2e3_s1_20
@@ -349,7 +528,7 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: 若x為整數,且滿足不等式 $\frac{9x+1}{2}$ ≤15,則9x−8的最大值為下列何者 ?
+  stem: 若$x$為整數，且滿足不等式 $\frac{9x+1}{2} \leq 15$，則 $9x-8$ 的最大值為下列何者 ？
   options:
   - label: A
     content: '19'
@@ -364,49 +543,92 @@ questions:
   number: 21
   type: single
   page: 3
-  stem: 若 $\frac{|a|}{a}$ $\frac{4}{a}$ $\frac{2}{a}$ $\frac{3x}{a}$ = −1 ,則一元一次不等式
-    的解為何? ≤ − $\frac{2}{3}$
+  stem: 若 $\frac{|a|}{a}= -1$ ，則一元一次不等式  $\frac{4}{a}\leq \frac{2}{a}-\frac{3x}{a}$
+    的解為何？
   options:
-  - label: B
-    content: x≥ $\frac{2}{3}$
-  - label: C
-    content: x≤− $\frac{2}{3}$
-  - label: D
-    content: x≤ $\frac{2}{3}$
   - label: A
-    content: x≥−
+    content: $x\geq -\frac{2}{3}$
+  - label: B
+    content: $x\geq \frac{2}{3}$
+  - label: C
+    content: $x\leq -\frac{2}{3}$
+  - label: D
+    content: $x\leq \frac{2}{3}$
 - id: doc_113_新北_永和_數學_g7s2e3_s1_22
   section: 1
   number: 22
   type: single
   page: 3
-  stem: 將一張正方形色紙按照下面圖1~圖3的步驟對摺三次後,得到一個如圖4的三角形。若在三角形上打一個洞,並 將紙張展開後如圖5所示。則圖4打洞的位置是下列何者?
-    圖1圖2圖3圖4圖5
+  stem: 將一張正方形色紙按照下面圖1～圖3的步驟對摺三次後，得到一個如圖4的三角形。若在三角形上打一個洞，並將紙張展開後如圖5所示。則圖4打洞的位置是下列何者？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_永和_數學_g7s2e3/1_22_optA.png
+      crop:
+        page: 3
+        rect:
+        - 95.82
+        - 694.66
+        - 138.8
+        - 741.88
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_永和_數學_g7s2e3/1_22_optB.png
+      crop:
+        page: 3
+        rect:
+        - 157.76
+        - 694.66
+        - 200.73
+        - 741.88
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_新北_永和_數學_g7s2e3/1_22_optC.png
+      crop:
+        page: 3
+        rect:
+        - 219.69
+        - 695.7
+        - 264.85
+        - 742.91
   - label: D
     content: ''
+    asset:
+      key: optD
+      file: doc_113_新北_永和_數學_g7s2e3/1_22_optD.png
+      crop:
+        page: 3
+        rect:
+        - 286.73
+        - 694.66
+        - 331.16
+        - 741.88
   assets:
-  - key: p3_f01
+  - key: s1_22_f1
     kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p3_f01.png
-  - key: p3_f02
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p3_f02.png
+    file: doc_113_新北_永和_數學_g7s2e3/s1_22_f1.png
+    crop:
+      page: 3
+      rect:
+      - 121.33
+      - 597.66
+      - 488.55
+      - 688.22
 - id: doc_113_新北_永和_數學_g7s2e3_s1_23
   section: 1
   number: 23
   type: single
   page: 3
-  stem: 有一美術館開放參觀的時段為10:00至15:00,該美術館統計某日參觀民眾進入與離開美術館的時間,並將資 料整理成下圖1、圖2,其中圖1為民眾進入時間的次數分配直方圖,圖2為民眾離開時間的次數分配直方圖。
-    次 數 次 數120 115 100 90 85 55 ( ( 人 人65 45 60 45 ) ) 10:00 11:00 12:00 13:00 14:00
-    15:00圖1                                                                圖2 10:00
-    11:00 12:00 13:00 14:00 15:00進入時間 離開時間 若該日14:00當下無人進入或離開美術館,則14:00時仍在美術館內參觀的民眾人數為何?
+  stem: '有一美術館開放參觀的時段為10：00 至15：00，該美術館統計某日參觀民眾進入與離開美術館的時間，並將資料整理成下圖1、圖2，其中圖1 為民眾進入時間的次數分配直方圖，圖2
+    為民眾離開時間的次數分配直方圖。
+
+    若該日14：00 當下無人進入或離開美術館，則14：00 時仍在美術館內參觀的民眾人數為何？'
   options:
   - label: A
     content: '10'
@@ -415,96 +637,197 @@ questions:
   - label: C
     content: '65'
   - label: D
-    content: 70 【背面尚有試題】【第3頁,共5頁】
+    content: '70'
   assets:
-  - key: p3_f03
+  - key: s1_23_f1
     kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p3_f03.png
-  - key: p3_f04
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p3_f04.png
+    file: doc_113_新北_永和_數學_g7s2e3/s1_23_f1.png
+    crop:
+      page: 3
+      rect:
+      - 81.25
+      - 788.58
+      - 493.65
+      - 923.51
 - id: doc_113_新北_永和_數學_g7s2e3_s1_24
   section: 1
   number: 24
   type: single
   page: 4
-  stem: 根據下方所給的後視圖、右視圖、上視圖,判斷下列哪一個選項可能是對應的立體圖形? 後視圖 右視圖 上視圖
+  stem: 根據下方所給的後視圖、右視圖、上視圖，判斷下列哪一個選項可能是對應的立體圖形？
   options:
-  - label: C
-    content: ''
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_永和_數學_g7s2e3/1_24_optA.png
+      crop:
+        page: 4
+        rect:
+        - 92.91
+        - 169.38
+        - 204.38
+        - 237.23
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_永和_數學_g7s2e3/1_24_optB.png
+      crop:
+        page: 4
+        rect:
+        - 231.35
+        - 154.93
+        - 318.77
+        - 240.33
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_113_新北_永和_數學_g7s2e3/1_24_optC.png
+      crop:
+        page: 4
+        rect:
+        - 354.49
+        - 154.93
+        - 463.04
+        - 232.07
   - label: D
-    content: 前面 前面 前面 前面
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_新北_永和_數學_g7s2e3/1_24_optD.png
+      crop:
+        page: 4
+        rect:
+        - 491.48
+        - 169.38
+        - 597.84
+        - 241.36
   assets:
-  - key: p4_f01
+  - key: s1_24_f1
     kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p4_f01.png
-  - key: p4_f02
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p4_f02.png
-  - key: p4_f03
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p4_f03.png
-  - key: p4_f04
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p4_f04.png
-  - key: p4_f05
-    kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p4_f05.png
+    file: doc_113_新北_永和_數學_g7s2e3/s1_24_f1.png
+    crop:
+      page: 4
+      rect:
+      - 84.89
+      - 76.5
+      - 262.67
+      - 153.64
 - id: doc_113_新北_永和_數學_g7s2e3_s1_25
   section: 1
   number: 25
   type: single
   page: 4
-  stem: '一個箱子內有4顆相同的球,將4顆球分別標示號碼1、2、3、4,今小翊以每次從箱子內取一顆球且取後放回的 方式抽取,並取球10次,取出的結果如下表所列,其中第9、10次的紀錄不小心塗汙了:
-    次數 第1次 第2次 第3次 第4次 第5次 第6次 第7次 第8次 第9次 第10次 號碼1. 3. 2. 4. 3. 4. 2. 1. 若每次取球時,任一顆球被取到的機會皆相等,且取出的號碼即為得分,已知「這10次得分的平均數不小於2.2,且不大於2.4」,設第9次號碼為x,第10次號碼為y,則下列敘述何者錯誤?'
+  stem: '一個箱子內有4 顆相同的球，將4 顆球分別標示號碼1、2、3、4，今小翊以每次從箱子內取一顆球且取後放回的方式抽取，並取球10 次，取出的結果如下表所列，其中第9、10
+    次的紀錄不小心塗汙了：
+
+
+    | 次數 | 第1 次 | 第2 次 | 第3 次 | 第4 次 | 第5 次 | 第6 次 | 第7 次 | 第8 次 | 第9 次 | 第10 次 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
+    | :---: |
+
+    | 號碼 | 1 | 3 | 2 | 4 | 3 | 4 | 2 | 1 | | |
+
+
+    若每次取球時，任一顆球被取到的機會皆相等，且取出的號碼即為得分，已知「這10 次得分的平均數不小於 2.2，且不大於 2.4」，設第9 次號碼為x，第10
+    次號碼為y，則下列敘述何者錯誤?'
   options:
   - label: A
-    content: (x,y)共有6組可能的解
+    content: (x，y)共有6 組可能的解
   - label: B
-    content: 每一組(x,y)可能解的情況下,這10次得分的中位數皆是2
+    content: 每一組(x，y)可能解的情況下，這10 次得分的中位數皆是2
   - label: C
-    content: 在x≠y的情況下,這10次得分的眾數是x和y
+    content: 在x≠y 的情況下，這10 次得分的眾數是x 和y
   - label: D
-    content: 每一組(x,y)可能解的情況下,這10次得分的眾數都不可能是4
+    content: 每一組(x，y)可能解的情況下，這10 次得分的眾數都不可能是4
 - id: doc_113_新北_永和_數學_g7s2e3_s2_1
   section: 2
   number: 1
   type: fill
   page: 4
-  stem: 如右圖,直線L垂直平分 於C點,直線M垂直平分AC於D點。若BD =8x+13, A B C D AC =7x-3,則AB的值=      (1)     。
+  stem: 如右圖，直線$L$ 垂直平分$\overline{AB}$ 於$C$ 點，直線$M$ 垂直平分$\overline{AC}$ 於$D$ 點。若$\overline{BD}
+    ＝8x＋13$，$\overline{AC} ＝7x－3$，則$\overline{AB}$ 的值＝ (1) 。
   assets:
-  - key: p4_f06
+  - key: s2_1_f1
     kind: figure
-    file: doc_113_新北_永和_數學_g7s2e3/p4_f06.png
+    file: doc_113_新北_永和_數學_g7s2e3/s2_1_f1.png
+    crop:
+      page: 4
+      rect:
+      - 571.63
+      - 494.46
+      - 658.32
+      - 585.02
 - id: doc_113_新北_永和_數學_g7s2e3_s2_2
   section: 2
   number: 2
   type: fill
   page: 4
-  stem: 滑板社共有10位社員,他們的體重資料如右:75,64,61,42,66,35,51,50,x,73(單位:公斤) , 已知這10位社員體重的中位數為59公斤,則x=      (2)     。
+  stem: 滑板社共有10 位社員，他們的體重資料如右：75，64，61，42，66，35，51，50，x，73(單位：公斤) ，已知這10 位社員體重的中位數為59
+    公斤，則x= (2) 。
 - id: doc_113_新北_永和_數學_g7s2e3_s2_3
   section: 2
   number: 3
   type: fill
   page: 4
-  stem: 下表是七年丁班全班學生生物科成績的次數分配表, 則全班生物科成績的算術平均數是     (3)     分 。 分數(分) 50~60 60~70
-    70~80 80~90 90~100合計 次數(人)
+  stem: '下表是七年丁班全班學生生物科成績的次數分配表， 則全班生物科成績的算術平均數是 (3) 分 。
+
+
+    | 分數(分) | 50～60 | 60～70 | 70～80 | 80～90 | 90～100 | 合計 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 4 | x | 12 | 10 | 6 | 40 |'
 - id: doc_113_新北_永和_數學_g7s2e3_s2_4
   section: 2
   number: 4
   type: fill
   page: 4
-  stem: x 12. 10.
-- id: doc_113_新北_永和_數學_g7s2e3_s2_6
+  stem: 蟹堡王販賣美味蟹堡及可樂，蟹堡及可樂的單價分別是 80 元和 35 元，且每日備品各 80 份。今日促銷活動為「買一份蟹堡送一杯可樂，但若僅購買可樂則無任何優惠」。員工今日打烊時發現蟹堡和可樂共剩餘50
+    份（兩項商品至少各賣出一份），且賣出的總金額超過 4200 元。若今日賣出x 個蟹堡，則x 所有可能的解有 (4) 個。
+- id: doc_113_新北_永和_數學_g7s2e3_s2_5
   section: 2
-  number: 6
+  number: 5
   type: fill
   page: 4
-  stem: 40. 4. 蟹堡王販賣美味蟹堡及可樂,蟹堡及可樂的單價分別是80元和35元,且每日備品各80份。今日促銷活動為「買 一份蟹堡送一杯可樂,但若僅購買可樂則無任何優惠」。員工今日打烊時發現蟹堡和可樂共剩餘50份(兩項商品至
-    少各賣出一份),且賣出的總金額超過4200元。若今日賣出x個蟹堡,則x所有可能的解有       (4)     個。 5. 已知高鐵從台北到台南的原票價是1350元,
-    11人以上(含)的團體享有原票價打72折的優惠。今九年甲班舉辦班遊, 若全班從台北搭高鐵到台南的優惠總票價比原票價計費的總費用便宜12000元以上(含),則九年甲班全班人數至少
-    有       (5)     人。
+  stem: 已知高鐵從台北到台南的原票價是1350元， 11人以上(含)的團體享有原票價打72折的優惠。今九年甲班舉辦班遊，若全班從台北搭高鐵到台南的優惠總票價比原票價計費的總費用便宜12000元以上(含)，則九年甲班全班人數至少有
+    (5) 人。
+- id: doc_113_新北_永和_數學_g7s2e3_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 5
+  stem: 利用方格畫出以直線$L$ 為對稱軸的線對稱圖形（4 分）
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s2e3/s3_1_f1.png
+    crop:
+      page: 5
+      rect:
+      - 91.45
+      - 578.05
+      - 227.69
+      - 774.9
+- id: doc_113_新北_永和_數學_g7s2e3_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 5
+  stem: 如下圖，矩形ABCD 中，E、F 兩點分別在$\overline{BC}$、$\overline{CD}$上，連接A、E、F 三點形成$\triangle
+    AEF$。已知$\overline{BE}= 10$、$\overline{DF}= 3$、 $\overline{FC}=7$，且$\triangle AEF$
+    的面積不超過80。設$\overline{CE}= x$，請依題意列出不等式，並求出 $\overline{CE}$ 的最大值。（4分）
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s2e3/s3_2_f1.png
+    crop:
+      page: 5
+      rect:
+      - 336.27
+      - 571.86
+      - 487.09
+      - 666.54

@@ -1,54 +1,58 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 2
-  school: 新北市立永和國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 康軒版第一冊2-1~2-3                         七年       班       號
   city: 新北
   school_short: 永和
+  school: 新北市立永和國民中學
+  scope_note: 康軒版第一冊2-1～2-3
   id: doc_113_新北_永和_數學_g7s1e2
-  title: 新北市立永和國民中學 113學年度第1學期第2次定期評量7年級數學科試題
+  title: 新北市立永和國民中學 113學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(1~20題每題3分;21~26題每題4分,共84分)   ※請於答案卡上劃記,否則不予計分。
     count: 26
   - ord: 2
     name: 二、非選題
-    type: calc
-    score_rule: 二、非選題:(共16分)※題目在答案卷上,請在答案卷上作答,否則不予計分
-    count: 0
-  - ord: 3
-    name: 二、非選題
-    type: calc
-    score_rule: 二、非選題:(每題4分,共16分)
-    count: 3
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-2/新北/永和.pdf
+  scope:
+    lessons:
+    - number: 2-1
+      title: null
+    - number: 2-2
+      title: null
+    - number: 2-3
+      title: null
+    publisher: 康軒版
+    raw: 康軒版第一冊2-1～2-3
+    volume: 第一冊
 questions:
 - id: doc_113_新北_永和_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列敘述何者正確?                                                                      (2-1)
+  stem: 下列敘述何者正確？
   options:
   - label: A
     content: 所有的質數都是奇數
   - label: B
-    content: 若兩個整數互質,則這兩個整數都是質數
+    content: 若兩個整數互質，則這兩個整數都是質數
   - label: C
-    content: 1是最小的質數
+    content: 1 是最小的質數
   - label: D
-    content: 小於100的最大質數為97
+    content: 小於 100 的最大質數為 97
 - id: doc_113_新北_永和_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 一個數除了自己以外的所有因數和等於自己時,就稱為「完美數」。例如:6是最小的完美數,因為6的因 數有1、2、3、6,且6=1+2+3。請問:下列哪一個數是「完美數」?                        (2-1)
+  stem: 一個數除了自己以外的所有因數和等於自己時，就稱為「完美數」。例如：6 是最小的完美數，因為 6 的因數有 1、2、3、6，且 $6=1+2+3$。請問：下列哪一個數是「完美數」？
   options:
   - label: A
     content: '16'
@@ -63,38 +67,38 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 下列何者不等於-5 $\frac{5}{9}$ ?                                                                  (2-3)
+  stem: 下列何者不等於 $-5\frac{5}{9}$？
   options:
   - label: A
-    content: -5+ $\frac{5}{9}$
+    content: $-5+\frac{5}{9}$
   - label: B
-    content: -5- $\frac{5}{9}$
+    content: $-5-\frac{5}{9}$
   - label: C
-    content: -( 5+ $\frac{5}{9}$ )
+    content: $-(5+\frac{5}{9})$
   - label: D
-    content: -5+(- $\frac{5}{9}$ )
+    content: $-5+(-\frac{5}{9})$
 - id: doc_113_新北_永和_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 計算6-〔(-15) ÷ (-0.6)-(-0.6) × 15]的式子中,哪一個步驟開始出現錯誤?                 (2-3)
+  stem: 計算 $6-[(-15)\div(-0.6)-(-0.6)\times 15]$ 的式子中，哪一個步驟開始出現錯誤？
   options:
   - label: A
-    content: 步驟一:6-〔(-15) ÷ (- $\frac{3}{5}$ )-(- $\frac{3}{5}$ ) × 15]
+    content: 步驟一：$6-[(-15)\div(-\frac{3}{5})-(-\frac{3}{5})\times 15]$
   - label: B
-    content: 步驟二:6-〔15 × $\frac{5}{3}$ - $\frac{3}{5}$ × 15]
+    content: 步驟二：$6-[15\times\frac{5}{3}-\frac{3}{5}\times 15]$
   - label: C
-    content: 步驟三:6- ( 25-9 )
+    content: 步驟三：$6-(25-9)$
   - label: D
-    content: 步驟四:-10
+    content: 步驟四：$-10$
 - id: doc_113_新北_永和_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 若將三個分數$\frac{4}{24}$ 、$\frac{14}{105}$ 、$\frac{24}{126}$ 化為最簡分數,再同乘以一個正整數a後,皆可將這三個分數化為正整數,
-    則a的值可能為何?                                                                     (2-2)
+  stem: 若將三個分數 $\frac{4}{24}$、$\frac{14}{105}$、$\frac{24}{126}$ 化為最簡分數，再同乘以一個正整數 $a$
+    後，皆可將這三個分數化為正整數，則 $a$ 的值可能為何？
   options:
   - label: A
     content: '350'
@@ -109,22 +113,22 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列何者與- $\frac{3}{5}$ 相等?                                                                   (2-3)
+  stem: 下列何者與 $-\frac{3}{5}$ 相等？
   options:
   - label: A
-    content: '- $\frac{3+15}{5+15}$'
+    content: $-\frac{3+15}{5+15}$
   - label: B
-    content: '- $\frac{3-15}{5-15}$'
+    content: $-\frac{3-15}{5-15}$
   - label: C
-    content: '- $\frac{3×15}{5×15}$'
+    content: $-\frac{3\times 15}{5\times 15}$
   - label: D
-    content: '- $\frac{15÷3}{15÷5}$ 背面尚有試題 第1頁,共5頁'
+    content: $-\frac{15\div 3}{15\div 5}$
 - id: doc_113_新北_永和_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 2
-  stem: 將12×3×57以標準分解式表示時,下列哪一個不是12×3×57的質因數?                           (2-1)
+  stem: 將 $12\times 3\times 57$ 以標準分解式表示時，下列哪一個不是 $12\times 3\times 57$ 的質因數？
   options:
   - label: A
     content: '19'
@@ -139,37 +143,37 @@ questions:
   number: 8
   type: single
   page: 2
-  stem: 正整數84與105的公因數有幾個?                                                          (2-2)
+  stem: 正整數 84 與 105 的公因數有幾個？
   options:
   - label: A
-    content: 2個
+    content: 2 個
   - label: B
-    content: 3個
+    content: 3 個
   - label: C
-    content: 4個
+    content: 4 個
   - label: D
-    content: 5個
+    content: 5 個
 - id: doc_113_新北_永和_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: 若甲數的標準分解式為24×32×52×7,下列何者不是甲數的因數?                                  (2-1)
+  stem: 若甲數的標準分解式為 $2^{4}\times 3^{2}\times 5^{2}\times 7$，下列何者不是甲數的因數？
   options:
   - label: A
-    content: 24×53
+    content: $2^{4}\times 5^{3}$
   - label: B
-    content: 22×3×5×7
+    content: $2^{2}\times 3\times 5\times 7$
   - label: C
-    content: 23×32
+    content: $2^{3}\times 3^{2}$
   - label: D
-    content: 32×7
+    content: $3^{2}\times 7$
 - id: doc_113_新北_永和_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 永貞設定手機解鎖的密碼為abcd四碼,若他是利用1008的標準分解式2a×cb×d來設計密碼,則此 組密碼為何?                                                                            (2-1)
+  stem: 永貞設定手機解鎖的密碼為 $abcd$ 四碼，若他是利用 1008 的標準分解式 $2^{a}\times c^{b}\times d$ 來設計密碼，則此組密碼為何？
   options:
   - label: A
     content: '4237'
@@ -184,37 +188,37 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 已知五位數2732□為11的倍數,下列敘述何者錯誤?                                         (2-1)
+  stem: 已知五位數 2732□為 11 的倍數，下列敘述何者錯誤？
   options:
   - label: A
-    content: 此五位數為5的倍數
+    content: 此五位數為 5 的倍數
   - label: B
-    content: 此五位數為4的倍數
+    content: 此五位數為 4 的倍數
   - label: C
-    content: 此五位數為9的倍數
+    content: 此五位數為 9 的倍數
   - label: D
-    content: 此五位數為33的倍數
+    content: 此五位數為 33 的倍數
 - id: doc_113_新北_永和_數學_g7s1e2_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 下列哪一個算式的值與其它三者不同?                                                      (2-3)
+  stem: 下列哪一個算式的值與其它三者不同？
   options:
   - label: A
-    content: (-$\frac{1}{2}$ ) ÷  $\frac{8}{5}$ × (-2$\frac{2}{5}$ )
+    content: $(-\frac{1}{2})\div\frac{8}{5}\times(-2\frac{2}{5})$
   - label: B
-    content: (-$\frac{1}{2}$ ) ÷ (-$\frac{5}{12}$ ) ×  $\frac{5}{8}$
+    content: $(-\frac{1}{2})\div(-\frac{5}{12})\times\frac{5}{8}$
   - label: C
-    content: (-2$\frac{2}{5}$ ) ÷  $\frac{8}{5}$ × (-$\frac{1}{2}$ )
+    content: $(-2\frac{2}{5})\div\frac{8}{5}\times(-\frac{1}{2})$
   - label: D
-    content: (-$\frac{1}{2}$ ) ÷ (-2$\frac{2}{5}$ ) ×  $\frac{8}{5}$
+    content: $(-\frac{1}{2})\div(-2\frac{2}{5})\times\frac{8}{5}$
 - id: doc_113_新北_永和_數學_g7s1e2_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 下列哪一個數不能同時被9和15整除?                                                     (2-2)
+  stem: 下列哪一個數不能同時被 9 和 15 整除？
   options:
   - label: A
     content: '45'
@@ -229,7 +233,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 已知a = 2 × 3 □ × 7 ,其中a是63的倍數,但不是54的倍數,則□ =?                         (2-2)
+  stem: 已知 $a=2\times 3^\square\times 7$，其中 $a$ 是 63 的倍數，但不是 54 的倍數，則 $\square=$？
   options:
   - label: A
     content: '1'
@@ -238,14 +242,14 @@ questions:
   - label: C
     content: '3'
   - label: D
-    content: 4第2頁,共5頁
+    content: '4'
 - id: doc_113_新北_永和_數學_g7s1e2_s1_15
   section: 1
   number: 15
   type: single
   page: 3
-  stem: 在 $\frac{2}{3}$ 、- $\frac{3}{4}$ 、 $\frac{4}{5}$ 、- $\frac{5}{6}$ 、 $\frac{6}{7}$
-    五數中,任意選出三數相乘後,最大的值為何?                     (2-3)
+  stem: 在 $\frac{2}{3}$、$-\frac{3}{4}$、$\frac{4}{5}$、$-\frac{5}{6}$、$\frac{6}{7}$
+    五數中，任意選出三數相乘後，最大的值為何？
   options:
   - label: A
     content: $\frac{4}{7}$
@@ -260,7 +264,7 @@ questions:
   number: 16
   type: single
   page: 3
-  stem: 若n是正整數, $\frac{56}{n}$ 也是正整數,則n不可能是下列何者?                                     (2-1)
+  stem: 若 $n$ 是正整數，$\frac{56}{n}$ 也是正整數，則 $n$ 不可能是下列何者？
   options:
   - label: A
     content: '4'
@@ -275,42 +279,48 @@ questions:
   number: 17
   type: single
   page: 3
-  stem: 計算24×5×72與2×53×7的最小公倍數是最大公因數的幾倍?                                   (2-2)
+  stem: 計算 $2^{4}\times 5\times 7^{2}$ 與 $2\times 5^{3}\times 7$ 的最小公倍數是最大公因數的幾倍？
   options:
   - label: A
-    content: 23×52×7
+    content: $2^{3}\times 5^{2}\times 7$
   - label: B
-    content: 22×52×7
+    content: $2^{2}\times 5^{2}\times 7$
   - label: C
-    content: 23×5×7
+    content: $2^{3}\times 5\times 7$
   - label: D
-    content: 23×52
+    content: $2^{3}\times 5^{2}$
 - id: doc_113_新北_永和_數學_g7s1e2_s1_18
   section: 1
   number: 18
   type: single
   page: 3
-  stem: 右圖是利用短除法求出三數252、336、378的最大公因數的過程。利用短除法,求出這三數的最小公倍數 為何?                                                                                   (2-2)
-    3   252  336  378 7   84  112  126
+  stem: 右圖是利用短除法求出三數 252、336、378 的最大公因數的過程。利用短除法，求出這三數的最小公倍數為何？
   options:
   - label: A
-    content: 2×3×7 2  12   16   18 6    8    9
+    content: $2\times 3\times 7$
   - label: B
-    content: 22×32×7
+    content: $2^{2}\times 3^{2}\times 7$
   - label: C
-    content: 24×33×7
+    content: $2^{4}\times 3^{3}\times 7$
   - label: D
-    content: 25×34×7
+    content: $2^{5}\times 3^{4}\times 7$
   assets:
-  - key: p3_f01
+  - key: s1_18_f1
     kind: figure
-    file: doc_113_新北_永和_數學_g7s1e2/p3_f01.png
+    file: doc_113_新北_永和_數學_g7s1e2/s1_18_f1.png
+    crop:
+      page: 3
+      rect:
+      - 399.67
+      - 384.03
+      - 518.42
+      - 460.14
 - id: doc_113_新北_永和_數學_g7s1e2_s1_19
   section: 1
   number: 19
   type: single
   page: 3
-  stem: 有兩正數a、b皆為合數且 ( a , b) = 1,已知 [ a , b] = 644,則a+b之值為何?                 (2-2)
+  stem: 有兩正數 $a$、$b$ 皆為合數且 $(a, b)=1$，已知 $[a, b]=644$，則 $a+b$ 之值為何？
   options:
   - label: A
     content: '54'
@@ -325,37 +335,38 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: 算式(- $\frac{5}{16}$ ) × 598 + $\frac{5}{16}$ × (-262 )+ $\frac{5}{16}$ × 60之值為何?                                       (2-3)
+  stem: 算式 $(-\frac{5}{16})\times 598+\frac{5}{16}\times(-262)+\frac{5}{16}\times
+    60$ 之值為何？
   options:
   - label: A
-    content: '- $\frac{575}{2}$'
+    content: $-\frac{575}{2}$
   - label: B
-    content: '-250'
+    content: $-250$
   - label: C
-    content: '- $\frac{495}{4}$'
+    content: $-\frac{495}{4}$
   - label: D
-    content: '-55'
+    content: $-55$
 - id: doc_113_新北_永和_數學_g7s1e2_s1_21
   section: 1
   number: 21
   type: single
   page: 3
-  stem: 大哥每4天回家一趟,二哥每8天回家一趟,小妹每6天回家一趟,兄妹三人正好在11月16日星期六 同時回家,那麼下次同時星期六回家是幾天之後呢?                                          (2-2)
+  stem: 大哥每 4 天回家一趟，二哥每 8 天回家一趟，小妹每 6 天回家一趟，兄妹三人正好在 11 月 16 日星期六同時回家，那麼下次同時星期六回家是幾天之後呢？
   options:
   - label: A
-    content: 24天
+    content: 24 天
   - label: B
-    content: 96天
+    content: 96 天
   - label: C
-    content: 144天
+    content: 144 天
   - label: D
-    content: 168天
+    content: 168 天
 - id: doc_113_新北_永和_數學_g7s1e2_s1_22
   section: 1
   number: 22
   type: single
   page: 3
-  stem: 涵詠水果店老闆進了126顆蘋果和90顆水梨,想分裝成水果禮盒出售,每個禮盒都有蘋果和水梨,且每個 禮盒中的蘋果數量相同,梨子數量也相同,則最多能分成幾盒?                                 (2-2)
+  stem: 涵詠水果店老闆進了 126 顆蘋果和 90 顆水梨，想分裝成水果禮盒出售，每個禮盒都有蘋果和水梨，且每個禮盒中的蘋果數量相同，梨子數量也相同，則最多能分成幾盒？
   options:
   - label: A
     content: '5'
@@ -364,13 +375,13 @@ questions:
   - label: C
     content: '12'
   - label: D
-    content: 18背面尚有試題 第3頁,共5頁
+    content: '18'
 - id: doc_113_新北_永和_數學_g7s1e2_s1_23
   section: 1
   number: 23
   type: single
   page: 4
-  stem: 阿和準備了48顆桃子要與好朋友分享,已知每人分到的數量相同,且桃子全部分完。若每人至少3顆, 且至少分給4人,則一共有多少種分法?                                                    (2-1)
+  stem: 阿和準備了 48 顆桃子要與好朋友分享，已知每人分到的數量相同，且桃子全部分完。若每人至少 3 顆，且至少分給 4 人，則一共有多少種分法？
   options:
   - label: A
     content: '3'
@@ -385,7 +396,7 @@ questions:
   number: 24
   type: single
   page: 4
-  stem: 紅豆餅店的機械手臂一次可以做出462個紅豆餅,想平均分裝於若干個盒子內,若每個盒子內均裝有n個 紅豆餅,則n不可能為何?                                                                (2-1)
+  stem: 紅豆餅店的機械手臂一次可以做出 462 個紅豆餅，想平均分裝於若干個盒子內，若每個盒子內均裝有 $n$ 個紅豆餅，則 $n$ 不可能為何？
   options:
   - label: A
     content: '33'
@@ -400,8 +411,8 @@ questions:
   number: 25
   type: single
   page: 4
-  stem: 甲、乙、丙分別表示3個數,若甲×1 $\frac{5}{7}$ = 乙×1 $\frac{5}{8}$ = 丙×1 $\frac{5}{9}$ =
-    1,則甲、乙、丙的大小關係為何?  (2-3)
+  stem: 甲、乙、丙分別表示 3 個數，若甲 $\times 1\frac{5}{7}=$ 乙 $\times 1\frac{5}{8}=$ 丙 $\times
+    1\frac{5}{9}=1$，則甲、乙、丙的大小關係為何？
   options:
   - label: A
     content: 甲<乙<丙
@@ -416,38 +427,84 @@ questions:
   number: 26
   type: single
   page: 4
-  stem: 5度C手作烘焙推出抗漲優惠方案,提拉米蘇千層均一價,一次買兩個,第一個原價,第二個以原價的6折促銷。小凱一次買了兩個提拉米蘇千層,又加購了一個330元的長條可可初雪蛋糕,共付了1800元,
-    店員找他30元,則一個提拉米蘇千層的原價在下列哪一個範圍?                              (2-3)
+  stem: 5 度 C 手作烘焙推出抗漲優惠方案，提拉米蘇千層均一價，一次買兩個，第一個原價，第二個以原價的 6 折促銷。小凱一次買了兩個提拉米蘇千層，又加購了一個
+    330 元的長條可可初雪蛋糕，共付了 1800 元，店員找他 30 元，則一個提拉米蘇千層的原價在下列哪一個範圍？
   options:
   - label: A
-    content: 810~840
+    content: 810～840
   - label: B
-    content: 850~880
+    content: 850～880
   - label: C
-    content: 890~920
+    content: 890～920
   - label: D
-    content: 930~960
-- id: doc_113_新北_永和_數學_g7s1e2_s3_1
-  section: 3
+    content: 930～960
+- id: doc_113_新北_永和_數學_g7s1e2_s2_1
+  section: 2
   number: 1
+  type: fill
+  page: 5
+  stem: '下圖是小歆利用短除法對整數 $A$ 做質因數分解的過程，其中 $C<D$。請找出 $A$，$B$，$C$，$D$ 的值。
+
+    $A=$___________
+
+    $B=$___________
+
+    $C=$___________
+
+    $D=$___________'
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s1e2/s2_1_f1.png
+    crop:
+      page: 5
+      rect:
+      - 218.24
+      - 284.96
+      - 301.29
+      - 384.81
+- id: doc_113_新北_永和_數學_g7s1e2_s2_2
+  section: 2
+  number: 2
   type: calc
   page: 5
-  stem: 下圖是小歆利用短除法對整數A做質因數分解的過 程,其中C < D。請找出A,B,C,D的值。 A =___________ 2     A B 1827
-    3 609 C 203 D B =___________ C =___________ D =___________
-- id: doc_113_新北_永和_數學_g7s1e2_s3_3
-  section: 3
+  stem: 計算 $\frac{2}{7}-\frac{1}{4}\div 1.75+(-6)\div 0.6$ 的值
+- id: doc_113_新北_永和_數學_g7s1e2_s2_3
+  section: 2
   number: 3
   type: calc
   page: 5
-  stem: 如圖,有一個長495公尺、寬270公尺的長方形公園,想要在公園的四個邊上裝設路燈,相鄰兩盞燈之間的距離 要相等,且四個頂點都裝,則最少需裝幾盞路燈?
-    答:________________
-- id: doc_113_新北_永和_數學_g7s1e2_s3_4
-  section: 3
+  stem: 如圖，有一個長 495 公尺、寬 270 公尺的長方形公園，想要在公園的四個邊上裝設路燈，相鄰兩盞燈之間的距離要相等，且四個頂點都裝，則最少需裝幾盞路燈？
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s1e2/s2_3_f1.png
+    crop:
+      page: 5
+      rect:
+      - 516.98
+      - 475.88
+      - 673.62
+      - 537.54
+- id: doc_113_新北_永和_數學_g7s1e2_s2_4
+  section: 2
   number: 4
   type: calc
   page: 5
-  stem: '人氣手搖店DRINK TEA推出2款新品,濃郁的可可搭配 香甜草莓奶蓋的「可可草莓奶蓋」和焦糖香味濃厚,搭配Q彈 布丁的「焦糖布丁鮮奶茶」。配合雙11特價活動,決定推出
-    三種促銷方案供顧客選擇(如右圖): 已知可可草莓奶蓋一杯80元,焦糖布丁鮮奶茶一杯60元。 若小葶想要購買20杯可可草莓奶蓋及12杯焦糖布丁鮮奶茶, 請問選擇哪種方案總花費會較少?(需算出三種方案的費用)
-    【試題結束】 第5頁,共5頁2. 計算  $\frac{2}{7}$ - $\frac{1}{4}$ ÷ 1.75+(-6) ÷0.6的值 答:________________
-    270公尺495公尺DRINK TEA特價優惠方案: 甲:同種飲品,第二件5折 乙:可可草莓奶蓋一律八折, 焦糖布丁鮮奶茶買2送1丙:買兩杯可可草莓奶蓋 送一杯焦糖布丁鮮奶茶
-    答:_____________________'
+  stem: '人氣手搖店 DRINK TEA 推出 2 款新品，濃郁的可可搭配香甜草莓奶蓋的「可可草莓奶蓋」和焦糖香味濃厚，搭配 Q 彈布丁的「焦糖布丁鮮奶茶」。配合雙
+    11 特價活動，決定推出三種促銷方案供顧客選擇(如右圖)：
+
+    已知可可草莓奶蓋一杯 80 元，焦糖布丁鮮奶茶一杯 60 元。
+
+    若小葶想要購買 20 杯可可草莓奶蓋及 12 杯焦糖布丁鮮奶茶，請問選擇哪種方案總花費會較少？(需算出三種方案的費用)'
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s1e2/s2_4_f1.png
+    crop:
+      page: 5
+      rect:
+      - 434.64
+      - 605.91
+      - 675.08
+      - 796.58

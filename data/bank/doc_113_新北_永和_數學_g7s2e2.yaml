@@ -1,44 +1,57 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 2
-  school: 新北市立永和國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 康軒版第二冊2-2~3-2                      七年_______班_______號  姓名:__
   city: 新北
   school_short: 永和
+  school: 新北市立永和國民中學
+  scope_note: 康軒版第二冊2-2~3-2
   id: doc_113_新北_永和_數學_g7s2e2
-  title: 新北市立永和國民中學 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 新北市立永和國民中學 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(每題3分,共84分)
-    count: 20
+    name: 一、選擇題(每題3 分，共84 分)
+    count: 28
+  - ord: 2
+    name: 二、非選題(共16 分)
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-2/新北/永和.pdf
+  scope:
+    lessons:
+    - number: 2-2
+    - number: 3-1
+    - number: 3-2
+    publisher: 康軒版
+    raw: 康軒版第二冊2-2~3-2
+    volume: 第二冊
 questions:
 - id: doc_113_新北_永和_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 若a:b=5:3,則下列a與b的關係的敘述,哪一個是正確的?【3-1】
+  stem: 若$a：b＝5：3$，則下列$a$ 與$b$ 的關係的敘述，哪一個是正確的？【3-1】
   options:
   - label: A
-    content: a為b的$\frac{5}{3}$ 倍
+    content: $a$ 為$b$ 的$\frac{5}{3}$ 倍
   - label: B
-    content: a為b的$\frac{3}{5}$ 倍
+    content: $a$ 為$b$ 的$\frac{3}{5}$ 倍
   - label: C
-    content: a為b的$\frac{5}{8}$ 倍
+    content: $a$ 為$b$ 的$\frac{5}{8}$ 倍
   - label: D
-    content: a為b的$\frac{8}{5}$ 倍
+    content: $a$ 為$b$ 的$\frac{8}{5}$ 倍
 - id: doc_113_新北_永和_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: '在直角坐標平面上有ㄅ(-1 , 2)、ㄆ(1 ,-2)、ㄇ(-1 ,-2)、ㄈ(1 , 2)四個點;哪一點在二元一次方程式: 5x-4y+3=0的圖形上?  【2-2】'
+  stem: '在直角坐標平面上有ㄅ(－1 , 2)、ㄆ(1 ,－2)、ㄇ(－1 ,－2)、ㄈ(1 , 2)四個點；哪一點在二元一次方程式：
+
+    $5x－4y＋3＝0$ 的圖形上? 【2-2】'
   options:
   - label: A
     content: ㄅ
@@ -53,14 +66,14 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 已知y與x成正比,若x=12時,y=-9,則當y=60時,x=?  【3-2】
+  stem: 已知 $y$ 與 $x$ 成正比，若$x＝12$ 時，$y＝－9$，則當$y＝60$ 時，$x＝?$ 【3-2】
   options:
   - label: A
     content: '80'
   - label: B
-    content: '-80'
+    content: －80
   - label: C
-    content: '-45'
+    content: －45
   - label: D
     content: '45'
 - id: doc_113_新北_永和_數學_g7s2e2_s1_4
@@ -68,29 +81,29 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 已知y與x成反比,若x=-6時,y=-6,則當x=4時,y=?  【3-2】
+  stem: 已知 $y$ 與 $x$ 成反比，若$x＝－6$ 時，$y＝－6$，則當$x＝4$ 時，$y＝?$ 【3-2】
   options:
   - label: A
     content: '4'
   - label: B
-    content: '-4'
+    content: －4
   - label: C
     content: '9'
   - label: D
-    content: '-9'
+    content: －9
 - id: doc_113_新北_永和_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 直角坐標平面上有一點T(-3 , 4)在二元一次方程式2x-ky=2的圖形上,則k值為何? 【2-2】
+  stem: 直角坐標平面上有一點T(－3 , 4)在二元一次方程式$2x－ky＝2$ 的圖形上，則$k$ 值為何？ 【2-2】
   options:
   - label: A
     content: '2'
   - label: B
-    content: '-2'
+    content: －2
   - label: C
-    content: '-1'
+    content: －1
   - label: D
     content: '1'
 - id: doc_113_新北_永和_數學_g7s2e2_s1_6
@@ -98,22 +111,24 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列哪一條直線不通過原點? 【2-2】
+  stem: '下列哪一條直線不通過原點？
+
+    【2-2】'
   options:
   - label: A
-    content: y軸
+    content: $y$ 軸
   - label: B
-    content: 13x-9y=0
+    content: $13x－9y＝0$
   - label: C
-    content: y-x=1
+    content: $y－x＝1$
   - label: D
-    content: 4x=-3y
+    content: $4x＝－3y$
 - id: doc_113_新北_永和_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若(x+y)與(x-1)成正比,且x=8時,y=6,則當x=12時,y=? 【3-2】
+  stem: 若$(x＋y)$與$(x－1)$成正比，且$x＝8$ 時，$y＝6$，則當$x＝12$ 時，$y＝？$ 【3-2】
   options:
   - label: A
     content: '10'
@@ -128,7 +143,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 若 (a-1):7=4:5,則10a+8之值為何? 【3-1】
+  stem: 若 $(a－1)：7＝4：5$，則$10a＋8$ 之值為何？ 【3-1】
   options:
   - label: A
     content: '54'
@@ -143,44 +158,44 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 已知x、y皆不為0,且5x=2y,求(2x-3y):(4x+y)=? 【3-1】
+  stem: 已知$x$、$y$ 皆不為0，且$5x＝2y$，求（$2x－3y$）：（$4x＋y$）＝？ 【3-1】
   options:
   - label: A
-    content: '-2:11'
+    content: －2：11
   - label: B
-    content: (-11):(-13)
+    content: (－11)：(－13)
   - label: C
-    content: '2:11'
+    content: 2：11
   - label: D
-    content: 11:(-13)
+    content: 11：(－13)
 - id: doc_113_新北_永和_數學_g7s2e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 下列敘述中,何者表示y和x成正比? 【3-2】
+  stem: 下列敘述中，何者表示$y$ 和$x$ 成正比？ 【3-2】
   options:
   - label: A
-    content: x、y皆不為0,滿足x:5=y:4。
+    content: $x$、$y$ 皆不為0，滿足$x：5＝y：4$。
   - label: B
-    content: 以時速x公里,走完50公里的路程須花y小時。
+    content: 以時速$x$ 公里，走完50 公里的路程須花$y$ 小時。
   - label: C
-    content: 投籃球數x次,命中球數15次,沒中次數y次。
+    content: 投籃球數$x$ 次，命中球數15 次，沒中次數$y$ 次。
   - label: D
-    content: 面積為10平方公分的三角形,它的底為x公分、高為y公分。 【第1頁,共3頁】
+    content: 面積為10 平方公分的三角形，它的底為$x$ 公分、高為$y$ 公分。
 - id: doc_113_新北_永和_數學_g7s2e2_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 若x:y=3:4,且x+2y=22,則(x-2):(y+1)=? 【3-1】
+  stem: 若$x：y＝3：4$，且$x＋2y＝22$，則（$x－2$）：（$y＋1$）＝？ 【3-1】
   options:
   - label: A
-    content: '1:5'
+    content: 1：5
   - label: B
-    content: '4:9'
+    content: 4：9
   - label: C
-    content: '7:13'
+    content: 7：13
   - label: D
     content: 其比例不固定
 - id: doc_113_新北_永和_數學_g7s2e2_s1_12
@@ -188,59 +203,72 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 下列敘述中,哪一個敘述中的y和x不成反比? 【3-2】
+  stem: 下列敘述中，哪一個敘述中的$y$ 和$x$ 不成反比？ 【3-2】
   options:
   - label: A
-    content: x、y皆不為0,滿足x:2=5:y。
+    content: $x$、$y$ 皆不為0，滿足$x：2＝5：y$。
   - label: B
-    content: 以每分鐘剝x顆花生的速度剝100顆花生,共花了y分鐘。
+    content: 以每分鐘剝$x$ 顆花生的速度剝100 顆花生，共花了$y$ 分鐘。
   - label: C
-    content: 全班36人的數學小考,及格x人,不及格y人。
+    content: 全班36 人的數學小考，及格$x$ 人，不及格$y$ 人。
   - label: D
-    content: 長為x公分、寬為y公分,且面積為40平方公分的長方形。
+    content: 長為$x$ 公分、寬為$y$ 公分，且面積為40 平方公分的長方形。
 - id: doc_113_新北_永和_數學_g7s2e2_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 直角坐標平面上有A(4 , 3)、B(-3 ,-2)、C (-1 , 2) 三點,其位置如右圖所示, 下列敘述何者正確? 【2-2】
+  stem: '直角坐標平面上有A(4 , 3)、B(－3 ,－2)、C (－1 , 2) 三點，其位置如右圖所示，
+
+    下列敘述何者正確？ 【2-2】'
   options:
   - label: A
-    content: A點與B點到y軸的距離均相等。
+    content: A 點與B 點到$y$ 軸的距離均相等。
   - label: B
-    content: 同時通過B點與C點的二元一次方程式為1 $\frac{x}{2}$ $\frac{y}{4}$ − = −。
+    content: 同時通過B 點與C 點的二元一次方程式為$\frac{x}{2}-\frac{y}{4}=-1$。
   - label: C
-    content: 同時通過B點與C點的直線會與y軸相交於(0,6)。
+    content: 同時通過B 點與C 點的直線會與$y$ 軸相交於(0,6)。
   - label: D
-    content: A點與C點均在二元一次方程式y=x-1的圖形上。
+    content: A 點與C 點均在二元一次方程式$y＝x－1$ 的圖形上。
+  assets:
+  - key: s1_13_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s2e2/s1_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 508.15
+      - 250.84
+      - 660.4
+      - 407.42
 - id: doc_113_新北_永和_數學_g7s2e2_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 某班有一群學生留下來做教室布置,後來有2位女同學先離開,此時男、女生人數比為3:2;後來又有5位男生 離開,此時男、女生人數比變為2:3,試問原來男、女生總共有多少人?【3-1】
+  stem: 某班有一群學生留下來做教室布置，後來有2 位女同學先離開，此時男、女生人數比為3：2；後來又有5 位男生離開，此時男、女生人數比變為2：3，試問原來男、女生總共有多少人？【3-1】
   options:
   - label: A
-    content: 8人
+    content: 8 人
   - label: B
-    content: 10人
+    content: 10 人
   - label: C
-    content: 15人
+    content: 15 人
   - label: D
-    content: 17人
+    content: 17 人
 - id: doc_113_新北_永和_數學_g7s2e2_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 二元一次方程式L:-ay+2bx=7和M:2ax-3by=9的圖形相交於 (1,-1),則a+b之值為何?【2-2】
+  stem: 二元一次方程式$L：－ay＋2bx＝7$ 和 $M：2ax－3by＝9$ 的圖形相交於 (1,－1)，則$a＋b$ 之值為何？【2-2】
   options:
   - label: A
     content: '8'
   - label: B
     content: '16'
   - label: C
-    content: '-1'
+    content: －1
   - label: D
     content: '2'
 - id: doc_113_新北_永和_數學_g7s2e2_s1_16
@@ -248,74 +276,238 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 已知x與y成正比,又y與z成反比,則x與z之間的關係為何?【3-2】
+  stem: 已知$x$ 與$y$ 成正比，又$y$ 與$z$ 成反比，則$x$ 與$z$ 之間的關係為何？【3-2】
   options:
   - label: A
     content: 成正比
   - label: B
     content: 成反比
   - label: C
-    content: 不成正比,也不成反比
+    content: 不成正比，也不成反比
   - label: D
-    content: 成正比,同時也成反比
+    content: 成正比，同時也成反比
 - id: doc_113_新北_永和_數學_g7s2e2_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 若欲讓直線L:-y+2x=-5與直線M:x=a相交於第三象限,則a的值可以是多少?【2-2】
+  stem: 若欲讓直線$L：－y＋2x＝－5$ 與直線$M：x＝a$ 相交於第三象限，則$a$ 的值可以是多少？【2-2】
   options:
   - label: A
     content: '0'
   - label: B
-    content: '-1'
+    content: －1
   - label: C
-    content: '-2'
+    content: －2
   - label: D
-    content: '-3'
+    content: －3
 - id: doc_113_新北_永和_數學_g7s2e2_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: '坐標平面上,直線方程式L: $\frac{5}{6}$ y = − 和M: $\frac{5}{6}$ y x = − ,此兩條直線的交點坐標為何?【2-2】'
+  stem: 坐標平面上，直線方程式$L：y = -\frac{5}{6}$ 和$M：y = -\frac{5}{6}x$，此兩條直線的交點坐標為何？【2-2】
   options:
   - label: A
-    content: (0, $\frac{5}{6}$ − )
+    content: (0,$-\frac{5}{6}$)
   - label: B
-    content: ( $\frac{25}{36}$ , $\frac{5}{6}$ − )
+    content: ( $\frac{25}{36}$ ,$-\frac{5}{6}$)
   - label: C
-    content: (1, $\frac{5}{6}$ − )
+    content: (1,$-\frac{5}{6}$)
   - label: D
-    content: (-1, $\frac{5}{6}$ − )
+    content: (－1,$-\frac{5}{6}$)
 - id: doc_113_新北_永和_數學_g7s2e2_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 小明到小吃店買水餃,他身上帶的錢恰好等於48粒蝦仁水餃或72粒韭菜水餃的價錢。若小明先買了30粒韭菜水 餃,則他身上剩下的錢恰好可買多少粒蝦仁水餃?【3-2】
+  stem: 小明到小吃店買水餃，他身上帶的錢恰好等於48 粒蝦仁水餃或72 粒韭菜水餃的價錢。若小明先買了30 粒韭菜水餃，則他身上剩下的錢恰好可買多少粒蝦仁水餃？【3-2】
   options:
   - label: A
-    content: 28粒
+    content: 28 粒
   - label: B
-    content: 27粒
+    content: 27 粒
   - label: C
-    content: 20粒
+    content: 20 粒
   - label: D
-    content: 32粒
+    content: 32 粒
 - id: doc_113_新北_永和_數學_g7s2e2_s1_20
   section: 1
   number: 20
   type: single
   page: 2
-  stem: a、b、c均不為0,則下列哪一個式子必定成立?【3-1】
+  stem: $a$、$b$、$c$ 均不為0，則下列哪一個式子必定成立？【3-1】
   options:
   - label: A
-    content: a:b=(a+c):(b+c)
+    content: $a：b＝(a＋c)：(b＋c)$
   - label: B
-    content: a:b=(a-c):(b-c)
+    content: $a：b＝(a－c)：(b－c)$
   - label: C
-    content: a:b=(a+a):(b+b)
+    content: $a：b＝(a＋a)：(b＋b)$
   - label: D
-    content: a:b=(a-b):(b-a) 【第2頁,共3頁】 y 4 3 A C 2 $\frac{1}{1123}$ 4 O x -4 -2-1
-      -3 -4 -3 -2 - B
+    content: $a：b＝(a－b)：(b－a)$
+- id: doc_113_新北_永和_數學_g7s2e2_s1_21
+  section: 1
+  number: 21
+  type: single
+  page: 3
+  stem: 多慧、傑憲和峮峮對於「二元一次方程式的圖形」說法如下。試著來判斷他們的敘述真偽並選出正確答案。 【2-2】
+  options:
+  - label: A
+    content: 只有多慧正確，其餘二人錯誤
+  - label: B
+    content: 只有傑憲錯誤，其餘二人正確
+  - label: C
+    content: 只有峮峮正確，其餘二人錯誤
+  - label: D
+    content: 三人皆正確
+  assets:
+  - key: s1_21_f1
+    kind: figure
+    file: doc_113_新北_永和_數學_g7s2e2/s1_21_f1.png
+    crop:
+      page: 3
+      rect:
+      - 79.05
+      - 106.4
+      - 544.56
+      - 224.8
+- id: doc_113_新北_永和_數學_g7s2e2_s1_22
+  section: 1
+  number: 22
+  type: single
+  page: 3
+  stem: 設$a$、$b$、$c$、$d$ 都不為0，且$ad＝bc$，則下列何者可能不成立？【3-1】
+  options:
+  - label: A
+    content: $a：c＝d：b$
+  - label: B
+    content: $a：c＝b：d$
+  - label: C
+    content: $d：b＝c：a$
+  - label: D
+    content: $b：a＝d：c$
+- id: doc_113_新北_永和_數學_g7s2e2_s1_23
+  section: 1
+  number: 23
+  type: single
+  page: 3
+  stem: 當攝氏溫度為 $x$ 度時，華氏溫度為 $y$ 度，可得關係式為$y = \frac{9}{5}x+32$，則下列敘述何者正確？ 【3-2】
+  options:
+  - label: A
+    content: $x$ 與 $y$ 成正比
+  - label: B
+    content: $x$ 與 ($y$＋32) 成正比
+  - label: C
+    content: (9$x$＋160) 與 $y$ 成正比
+  - label: D
+    content: (9$x$－160) 與 $y$ 成正比
+- id: doc_113_新北_永和_數學_g7s2e2_s1_24
+  section: 1
+  number: 24
+  type: single
+  page: 3
+  stem: 若坐標平面中直線$L$ 通過原點，且$L$ 上的其中一點到$y$ 軸的距離為6；到$x$ 軸的距離為7，則直線$L$ 的方程式可能為何？ 【2-2】
+  options:
+  - label: A
+    content: $x＝6$
+  - label: B
+    content: $y＝－7$
+  - label: C
+    content: $6x＝7y$
+  - label: D
+    content: $7x＝－6y$
+- id: doc_113_新北_永和_數學_g7s2e2_s1_25
+  section: 1
+  number: 25
+  type: single
+  page: 3
+  stem: 若$a＞0$；$b＜0$；$c＞0$，則直線方程式$L：ax＋by＝c$ 的圖形在坐標平面上不通過第幾象限？ 【2-2】
+  options:
+  - label: A
+    content: 第一象限
+  - label: B
+    content: 第二象限
+  - label: C
+    content: 第三象限
+  - label: D
+    content: 第四象限
+- id: doc_113_新北_永和_數學_g7s2e2_s1_26
+  section: 1
+  number: 26
+  type: single
+  page: 3
+  stem: 甲、乙兩種機器分別以固定速率生產一批貨物，若4 台甲機器和2 台乙機器同時運轉3 小時的總產量，與2 台甲機器和5 台乙機器同時運轉2 小時的總產量相同，則1
+    台甲機器運轉1 小時的產量，與1 台乙機器運轉幾小時的產量相同？ 【3-1】
+  options:
+  - label: A
+    content: $\frac{1}{2}$ 小時
+  - label: B
+    content: $\frac{2}{3}$ 小時
+  - label: C
+    content: $\frac{3}{2}$ 小時
+  - label: D
+    content: 2 小時
+- id: doc_113_新北_永和_數學_g7s2e2_s1_27
+  section: 1
+  number: 27
+  type: single
+  page: 3
+  stem: 有一條繩子長354 公分，若按9：4 的比例剪成兩段後，再將兩段繩子分別圍成正方形，則大小兩個正方形的面積比為多少？ 【3-1】
+  options:
+  - label: A
+    content: 3：2
+  - label: B
+    content: 9：4
+  - label: C
+    content: 27：8
+  - label: D
+    content: 81：16
+- id: doc_113_新北_永和_數學_g7s2e2_s1_28
+  section: 1
+  number: 28
+  type: single
+  page: 3
+  stem: 某場音樂會販售的座位分成一樓與二樓兩個區域。若一樓售出與未售出的座位數比為3：2，全場音樂會一、二樓售出與未售出的座位數比為17：12，且此場音樂會一、二樓未售出的座位數相等。則二樓售出與未售出的座位數比為何？【3-1】
+  options:
+  - label: A
+    content: 4：3
+  - label: B
+    content: 7：5
+  - label: C
+    content: 2：1
+  - label: D
+    content: 24：17
+- id: doc_113_新北_永和_數學_g7s2e2_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 4
+  stem: '在坐標平面上有若干點，$A ( 0 , 0 )$、$B ( 3 , 0 )$、$C (－2 , 3 )$、$D ( 4 ,－4 )$、$E (－3
+    , 3 )$、$F ( 3 , 10 )$
+
+    ＊ 答案務必要以所代表的英文字母表示，否則不予計分！本題可免計算過程。
+
+    (1) 直線方程式$y＝3$ 會通過哪些點？（2 分）
+
+    (2) 直線方程式$y＝－x$ 會通過哪些點？（2 分）'
+- id: doc_113_新北_永和_數學_g7s2e2_s2_2
+  section: 2
+  number: 2
+  type: calc
+  page: 4
+  stem: 某種商品賣出的個數與賣出單價的平方成反比，如果賣出單價為200 元時，可賣出160 個，則賣出單價為400 元時，可以賣出多少個商品？(4 分)
+- id: doc_113_新北_永和_數學_g7s2e2_s2_3
+  section: 2
+  number: 3
+  type: calc
+  page: 4
+  stem: 在坐標平面上，有$L$、$M$ 兩條直線；$L：2x＋y＝8$，$M：x－y＝4$，$L$ 和$M$ 的交點為$C$；而$L$、$M$ 和$y$ 軸分別交於$A$、$B$
+    兩點，求$\triangle ABC$ 的面積。(4 分)
+- id: doc_113_新北_永和_數學_g7s2e2_s2_4
+  section: 2
+  number: 4
+  type: calc
+  page: 4
+  stem: 已知甲、乙兩個杯子，各裝不同量的水。若先將甲杯中 $\frac{1}{4}$ 的水倒進乙杯後，再將乙杯中 $\frac{1}{4}$ 的水倒進甲杯。依序完成此兩個步驟後，兩杯的水量相等。倒水過程中，水皆沒有溢出。試問甲杯與乙杯最初的水量比為何？(4
+    分)

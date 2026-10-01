@@ -1,104 +1,242 @@
 document:
-  semester: 2
-  exam_seq: 2
-  school: 新北市立土城國民中學
   grade: 7
   subject: 數學
   academic_year_roc: 113
+  semester: 2
+  exam_seq: 2
   city: 新北
   school_short: 土城
+  school: 新北市立土城國民中學
   id: doc_113_新北_土城_數學_g7s2e2
-  title: 新北市立土城國民中學 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 新北市立土城國民中學 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
-  sections: []
+  sections:
+  - ord: 1
+    name: 配對題(每題3 分，共18 分)
+    count: 6
+  - ord: 2
+    name: 單一選擇題(題號7~19，每題4 分；題號20~24，每題3 分，共67 分)
+    count: 18
+  - ord: 3
+    name: 計算題(請使用黑色原子筆將答案寫在答案欄裡面，沒有寫在答案欄裡面，不予計分。)
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-2/新北/土城.pdf
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
 questions:
 - id: doc_113_新北_土城_數學_g7s2e2_s1_1
   section: 1
   number: 1
-  type: fill
+  type: matching
   page: 1
-  stem: 一年四班共有學生30人,其中男生有x人,女生有y人。
+  stem: 一年四班共有學生30 人，其中男生有$x$ 人，女生有$y$ 人。
+  group_stem: 請判斷1.~6.題各敘述中，$y$ 與$x$ 的關係，$y$ 與$x$ 成正比請答「A」，$y$ 與$x$ 成反比請答「B」，不是以上兩者關係請答「C」
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_新北_土城_數學_g7s2e2_s1_2
   section: 1
   number: 2
-  type: fill
+  type: matching
   page: 1
-  stem: 小香的媽媽在銀行存了x元,年利率為1%,一年後得y元的利息(1年後的利息=存款X年利率)
+  stem: 小香的媽媽在銀行存了$x$ 元，年利率為1%，一年後得$y$ 元的利息(1 年後的利息=存款X 年利率)
+  group_stem: 請判斷1.~6.題各敘述中，$y$ 與$x$ 的關係，$y$ 與$x$ 成正比請答「A」，$y$ 與$x$ 成反比請答「B」，不是以上兩者關係請答「C」
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_新北_土城_數學_g7s2e2_s1_3
   section: 1
   number: 3
-  type: fill
+  type: matching
   page: 1
-  stem: 小軒下載大小為x MB的檔案,所需的下載時間為Y分鐘(假設網速固定)
+  stem: 小軒下載大小為$x$ MB 的檔案，所需的下載時間為Y 分鐘（假設網速固定）
+  group_stem: 請判斷1.~6.題各敘述中，$y$ 與$x$ 的關係，$y$ 與$x$ 成正比請答「A」，$y$ 與$x$ 成反比請答「B」，不是以上兩者關係請答「C」
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_新北_土城_數學_g7s2e2_s1_4
   section: 1
   number: 4
-  type: fill
+  type: matching
   page: 1
-  stem: 阿鎂要撥放一部影片,若播放速度為正常速度的x倍,則播完一部影片所需時間為y分鐘
+  stem: 阿鎂要撥放一部影片，若播放速度為正常速度的$x$ 倍，則播完一部影片所需時間為$y$ 分鐘
+  group_stem: 請判斷1.~6.題各敘述中，$y$ 與$x$ 的關係，$y$ 與$x$ 成正比請答「A」，$y$ 與$x$ 成反比請答「B」，不是以上兩者關係請答「C」
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_新北_土城_數學_g7s2e2_s1_5
   section: 1
   number: 5
-  type: fill
+  type: matching
   page: 1
-  stem: 小菲買飲料,一杯30元,第二杯半價。若她買了x杯,總金額為y元。
+  stem: 小菲買飲料，一杯30 元，第二杯半價。若她買了$x$ 杯，總金額為$y$ 元。
+  group_stem: 請判斷1.~6.題各敘述中，$y$ 與$x$ 的關係，$y$ 與$x$ 成正比請答「A」，$y$ 與$x$ 成反比請答「B」，不是以上兩者關係請答「C」
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_新北_土城_數學_g7s2e2_s1_6
   section: 1
   number: 6
-  type: fill
+  type: matching
   page: 1
-  stem: 若每度電5元,小諺家這個月用了x度電,總電費為y元。 二、 單一選擇題(題號7~19,每題4分;題號20~24,每題3分,共67分)
-- id: doc_113_新北_土城_數學_g7s2e2_s1_7
-  section: 1
+  stem: 若每度電5 元，小諺家這個月用了$x$ 度電，總電費為$y$ 元。
+  group_stem: 請判斷1.~6.題各敘述中，$y$ 與$x$ 的關係，$y$ 與$x$ 成正比請答「A」，$y$ 與$x$ 成反比請答「B」，不是以上兩者關係請答「C」
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_7
+  section: 2
   number: 7
   type: single
   page: 1
-  stem: '請問下列各比,何者是最簡整數比? $\frac{1}{3}$ : $\frac{1}{2}$'
+  stem: 請問下列各比，何者是最簡整數比？
   options:
   - label: A
-    content: '2:3.1'
+    content: 2：3.1
   - label: B
-    content: 11:(-33)
+    content: 11：(－33)
   - label: C
-    content: ''
+    content: $\frac{1}{3}$ ：$\frac{1}{2}$
   - label: D
-    content: '2:3'
-- id: doc_113_新北_土城_數學_g7s2e2_s1_8
-  section: 1
+    content: 2：3
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_8
+  section: 2
   number: 8
   type: single
   page: 1
-  stem: 若比例式(x-3):2 = (2x−5):3,請問x的值為? $\frac{3}{2}$
+  stem: 若比例式($x$－3)：2 = (2$x$−5)：3，請問$x$的值為？
   options:
   - label: A
     content: '2'
   - label: B
-    content: ''
+    content: $\frac{3}{2}$
   - label: C
     content: −1
   - label: D
     content: '1'
-- id: doc_113_新北_土城_數學_g7s2e2_s1_9
-  section: 1
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_9
+  section: 2
   number: 9
   type: single
   page: 1
-  stem: 如果a:b= 2:3,則下列敘述何者錯誤?
+  stem: 如果$a$：$b$= 2：3，則下列敘述何者錯誤？
   options:
   - label: A
-    content: a:3b= 2:9
+    content: $a$：3$b$= 2：9
   - label: B
-    content: (a+ 1):(b+ 2) = 3:5
+    content: ($a$+ 1)：($b$+ 2) = 3：5
   - label: C
-    content: a2:b2 = 4:9
+    content: $a^{2}$：$b^{2}$ = 4：9
   - label: D
-    content: (a+ b):(a−b) = 5:(−1)
-- id: doc_113_新北_土城_數學_g7s2e2_s1_10
-  section: 1
+    content: ($a$+ $b$)：($a$−$b$) = 5：(−1)
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_10
+  section: 2
   number: 10
   type: single
   page: 1
-  stem: 在直角坐標平面上,方程式x−2y= 6的圖形與y軸的交點座標為?
+  stem: 在直角坐標平面上，方程式$x$−2$y$= 6的圖形與$y$軸的交點座標為？
   options:
   - label: A
     content: (0,3)
@@ -108,27 +246,53 @@ questions:
     content: (3,0)
   - label: D
     content: (−3,0)
-- id: doc_113_新北_土城_數學_g7s2e2_s1_11
-  section: 1
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_11
+  section: 2
   number: 11
   type: single
   page: 1
-  stem: 下列敘述何者錯誤? $\frac{14}{11}$
+  stem: 下列敘述何者錯誤？
   options:
   - label: A
-    content: '700:550的比值為 $\frac{5}{6}$ : $\frac{6}{7}$'
+    content: 700：550 的比值為$\frac{14}{11}$
   - label: B
-    content: 和35:36的比值相同
+    content: $\frac{5}{6}$ ：$\frac{6}{7}$和35：36 的比值相同
   - label: C
-    content: 660:2160的比值比660:2100的比值小
+    content: 660：2160 的比值比660：2100 的比值小
   - label: D
-    content: 9:11的比值是0.9:1.1比值的10倍 第一頁,共三頁,背面尚有試題
-- id: doc_113_新北_土城_數學_g7s2e2_s1_12
-  section: 1
+    content: 9：11 的比值是0.9：1.1 比值的10 倍
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_12
+  section: 2
   number: 12
   type: single
   page: 2
-  stem: 在直角坐標平面上,二元一次方程式2x−3y= 6的圖形,不通過第幾象限?
+  stem: 在直角坐標平面上，二元一次方程式2$x$−3$y$= 6的圖形，不通過第幾象限？
   options:
   - label: A
     content: 第一象限
@@ -138,103 +302,193 @@ questions:
     content: 第三象限
   - label: D
     content: 第四象限
-- id: doc_113_新北_土城_數學_g7s2e2_s1_13
-  section: 1
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_13
+  section: 2
   number: 13
   type: single
   page: 2
-  stem: 在座標平面中,下列敘述何者正確?
+  stem: 在座標平面中，下列敘述何者正確？
   options:
   - label: A
-    content: 兩個二元一次方程式的圖形若相交於一點,則交點坐標就是此二元一次聯立方程式的解。
+    content: 兩個二元一次方程式的圖形若相交於一點，則交點坐標就是此二元一次聯立方程式的解。
   - label: B
-    content: 方程式x= n的圖形是一條垂直y軸的直線
+    content: 方程式$x$= $n$的圖形是一條垂直$y$軸的直線
   - label: C
-    content: 方程式y=0的圖形就是y軸
+    content: 方程式$y$＝0的圖形就是$y$軸
   - label: D
-    content: 二元一次方程式x+ 2y= 0的圖形是一條不會通過原點的直線
-- id: doc_113_新北_土城_數學_g7s2e2_s1_14
-  section: 1
+    content: 二元一次方程式$x$+ 2$y$= 0的圖形是一條不會通過原點的直線
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_14
+  section: 2
   number: 14
   type: single
   page: 2
-  stem: 若(3, a)、(1, b)、(c, 6)、(d, -4)都在方程式y= $\frac{1}{3}$ x−1的圖形上,則下列敘述何者正確?
+  stem: 若(3, $a$)、(1, $b$)、($c$, 6)、($d$, －4)都在方程式$y$=$\frac{1}{3} x$−1的圖形上，則下列敘述何者正確？
   options:
   - label: A
-    content: a= 0
+    content: $a$= 0
   - label: B
-    content: b= 1
+    content: $b$= 1
   - label: C
-    content: c= 3
+    content: $c$= 3
   - label: D
-    content: d= −15
-- id: doc_113_新北_土城_數學_g7s2e2_s1_15
-  section: 1
+    content: $d$= −15
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_15
+  section: 2
   number: 15
   type: single
   page: 2
-  stem: 若方程式ax+ by= 1的圖形是通過(0, −3)、(3, −3)兩點的直線,則此方程式為何? x+ $\frac{1}{6}$ $\frac{1}{18}$
-    y= 1
+  stem: 若方程式$ax$+ $by$= 1的圖形是通過(0, −3)、(3, −3)兩點的直線，則此方程式為何？
   options:
-  - label: B
-    content: − $\frac{1}{3}$ x= 1
-  - label: C
-    content: − $\frac{1}{3}$ y= 1
-  - label: D
-    content: $\frac{1}{6}$ x+ $\frac{1}{18}$
   - label: A
-    content: y= 1
-- id: doc_113_新北_土城_數學_g7s2e2_s1_16
-  section: 1
+    content: $\frac{1}{18} x$+$\frac{1}{6} y$= 1
+  - label: B
+    content: −$\frac{1}{3} x$= 1
+  - label: C
+    content: −$\frac{1}{3} y$= 1
+  - label: D
+    content: $\frac{1}{6} x$+$\frac{1}{18} y$= 1
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_16
+  section: 2
   number: 16
   type: single
   page: 2
-  stem: 已知自由落體的距離與時間的平方成正比,在1秒內落下的距離為490公分,則在3秒內落下的距離為 多少公分?
+  stem: 已知自由落體的距離與時間的平方成正比，在1 秒內落下的距離為490 公分，則在3 秒內落下的距離為多少公分？
   options:
   - label: A
-    content: 4410公分
+    content: 4410 公分
   - label: B
-    content: 1470公分
+    content: 1470 公分
   - label: C
-    content: 3430公分
+    content: 3430 公分
   - label: D
-    content: 2890公分
-- id: doc_113_新北_土城_數學_g7s2e2_s1_17
-  section: 1
+    content: 2890 公分
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_17
+  section: 2
   number: 17
   type: single
   page: 2
-  stem: 若x:y=3:8,且2x+ y= −42,則(-2x+ 5):(x−y)的比為何?
+  stem: 若$x$：$y$＝3：8，且2$x$+ $y$= −42，則(－2$x$+ 5)：($x$−$y$)的比為何？
   options:
   - label: A
-    content: '1:5'
+    content: 1：5
   - label: B
-    content: (−1):5
+    content: (−1)：5
   - label: C
-    content: '23:15'
+    content: 23：15
   - label: D
-    content: 23:(−15)
-- id: doc_113_新北_土城_數學_g7s2e2_s1_18
-  section: 1
+    content: 23：(−15)
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_18
+  section: 2
   number: 18
   type: single
   page: 2
-  stem: 若二元一次方程式2x−ay= 8與bx−2y= 1的圖形交點為(5,-1),則下列敘述何者正確? $\frac{1}{5}$
+  stem: 若二元一次方程式2$x$−$ay$= 8與$bx$−2$y$= 1的圖形交點為(5,－1)，則下列敘述何者正確？
   options:
   - label: A
-    content: a= 2
+    content: $a$= 2
   - label: B
-    content: a= −2
+    content: $a$= −2
   - label: C
-    content: b=
+    content: $b$=$\frac{1}{5}$
   - label: D
-    content: b= −5
-- id: doc_113_新北_土城_數學_g7s2e2_s1_19
-  section: 1
+    content: $b$= −5
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_19
+  section: 2
   number: 19
   type: single
   page: 2
-  stem: 老師買文具送學生當獎勵,老師身上帶的錢恰好可買15枝鉛筆或10個橡皮擦。若老師先買了6枝鉛 筆,此時他身上剩下的錢恰好可買幾個橡皮擦?
+  stem: 老師買文具送學生當獎勵，老師身上帶的錢恰好可買15 枝鉛筆或10 個橡皮擦。若老師先買了6 枝鉛筆，此時他身上剩下的錢恰好可買幾個橡皮擦？
   options:
   - label: A
     content: '2'
@@ -243,45 +497,92 @@ questions:
   - label: C
     content: '6'
   - label: D
-    content: 8個 第二頁,共三頁,背面尚有試題
-- id: doc_113_新北_土城_數學_g7s2e2_s1_20
-  section: 1
+    content: 8 個
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_20
+  section: 2
   number: 20
   type: single
   page: 3
-  stem: 長26公分的彈簧,掛著一個重量為x公克的砝碼後,彈簧長度為y公分,彈簧的伸長量為z公分。附表為x、y、z的關係,則下列敘述何者正確?(不考慮彈簧未使用的情況)
-    x(公克) 0. 5. 10. 15. 20. 25. y(公分) 26. 28. 30. 32. 34. 36. z(公分) 0. 2. 4. 6. 8.
-    10.
+  stem: '長26 公分的彈簧，掛著一個重量為$x$公克的砝碼後，彈簧長度為$y$公分，彈簧的伸長量為$z$公分。附表為$x$、$y$、$z$的關係，則下列敘述何者正確？(不考慮彈簧未使用的情況)
+
+
+    | $x$(公克) | 0 | 5 | 10 | 15 | 20 | 25 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | $y$(公分) | 26 | 28 | 30 | 32 | 34 | 36 |
+
+    | $z$(公分) | 0 | 2 | 4 | 6 | 8 | 10 |'
   options:
   - label: A
-    content: 只有x與z成正比
+    content: 只有$x$與$z$成正比
   - label: B
-    content: 只有y與x成正比
+    content: 只有$y$與$x$成正比
   - label: C
-    content: x與y成正比,y與z也成正比
+    content: $x$與$y$成正比，$y$與$z$也成正比
   - label: D
-    content: x、y、z三數間沒有正比關係
-- id: doc_113_新北_土城_數學_g7s2e2_s1_21
-  section: 1
+    content: $x$、$y$、$z$三數間沒有正比關係
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_21
+  section: 2
   number: 21
   type: single
   page: 3
-  stem: 若長方形ABCD與圓O,兩者周長都相等,且AB̅̅̅̅:AD̅̅̅̅ = 1:2,則長方形ABCD面積:圓O面積的比是 多少?
+  stem: 若長方形ABCD 與圓O，兩者周長都相等，且$\overline{AB}$：$\overline{AD}$ = 1：2，則長方形ABCD 面積：圓O
+    面積的比是多少？
   options:
   - label: A
-    content: '2:9'
+    content: 2：9
   - label: B
-    content: 2π:9
+    content: 2$\pi$：9
   - label: C
-    content: '9:2'
+    content: 9：2
   - label: D
-    content: 9:2π
-- id: doc_113_新北_土城_數學_g7s2e2_s1_22
-  section: 1
+    content: 9：2$\pi$
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_22
+  section: 2
   number: 22
   type: single
   page: 3
-  stem: 馬戲團表演中,有一種特殊的腳踏車,這種腳踏車的前輪很大,後輪很小,前後輪的半徑比為8:3,特 技人員騎著這種腳踏車表演,如果前輪轉了144圈,求後輪轉了多少圈?
+  stem: 馬戲團表演中，有一種特殊的腳踏車，這種腳踏車的前輪很大，後輪很小，前後輪的半徑比為8：3，特技人員騎著這種腳踏車表演，如果前輪轉了144 圈，求後輪轉了多少圈？
   options:
   - label: A
     content: '144'
@@ -290,14 +591,26 @@ questions:
   - label: C
     content: '264'
   - label: D
-    content: '384圈 請閱讀下列敘述後。回答23~24題 阿皇在某超市協助家中購買料理用食材時,注意到許多商品標價牌上會寫「每幾公克多少元」的資 訊,他試著根據這些資料來比較哪一種商品較划算。他記錄了以下三種商品的標價資訊:
-      商品名稱 包裝重量 售價 標示單位價格A牛絞肉300克135元 每100克45元B豬絞肉250克100元 每50克20元C雞胸肉500克190元 每100克38元'
-- id: doc_113_新北_土城_數學_g7s2e2_s1_23
-  section: 1
+    content: 384 圈
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_23
+  section: 2
   number: 23
   type: single
   page: 3
-  stem: 根據表格資訊,哪一種商品的「每公克價格」最低?請選出正確答案。
+  stem: 根據表格資訊，哪一種商品的「每公克價格」最低？請選出正確答案。
   options:
   - label: A
     content: 牛絞肉
@@ -307,12 +620,40 @@ questions:
     content: 雞胸肉
   - label: D
     content: 三者價格相同
-- id: doc_113_新北_土城_數學_g7s2e2_s1_24
-  section: 1
+  group_stem: '請閱讀下列敘述後。回答23~24 題
+
+
+    阿皇在某超市協助家中購買料理用食材時，注意到許多商品標價牌上會寫「每幾公克多少元」的資訊，他試著根據這些資料來比較哪一種商品較划算。他記錄了以下三種商品的標價資訊：
+
+
+    | 商品名稱 | 包裝重量 | 售價 | 標示單位價格 |
+
+    | :--- | :--- | :--- | :--- |
+
+    | A 牛絞肉 | 300 克 | 135 元 | 每100 克45 元 |
+
+    | B 豬絞肉 | 250 克 | 100 元 | 每50 克20 元 |
+
+    | C 雞胸肉 | 500 克 | 190 元 | 每100 克38 元 |'
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s2_24
+  section: 2
   number: 24
   type: single
   page: 3
-  stem: 某天此超市推出周年慶活動,凡豬、牛肉產品每盒折價10元。請問此時何者敘述合理?
+  stem: 某天此超市推出周年慶活動，凡豬、牛肉產品每盒折價10 元。請問此時何者敘述合理？
   options:
   - label: A
     content: 豬絞肉每公克價格最低
@@ -321,4 +662,79 @@ questions:
   - label: C
     content: 豬絞肉每公克價格與雞胸肉每公克價格相同
   - label: D
-    content: 牛絞肉變成最便宜 第三頁,共三頁
+    content: 牛絞肉變成最便宜
+  group_stem: '請閱讀下列敘述後。回答23~24 題
+
+
+    阿皇在某超市協助家中購買料理用食材時，注意到許多商品標價牌上會寫「每幾公克多少元」的資訊，他試著根據這些資料來比較哪一種商品較划算。他記錄了以下三種商品的標價資訊：
+
+
+    | 商品名稱 | 包裝重量 | 售價 | 標示單位價格 |
+
+    | :--- | :--- | :--- | :--- |
+
+    | A 牛絞肉 | 300 克 | 135 元 | 每100 克45 元 |
+
+    | B 豬絞肉 | 250 克 | 100 元 | 每50 克20 元 |
+
+    | C 雞胸肉 | 500 克 | 190 元 | 每100 克38 元 |'
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 4
+  stem: '直線$L$：3$x$+ 4$y$= 12的圖形交$x$軸於$A$點，交$y$軸於$B$點，
+
+    (1)求A、B 兩點座標為何？(4 分)
+
+    (2)求$\triangle AOB$的面積？(3 分)
+
+    (3)若$P(2, k)$在第一象限，且四邊形$PAOB$的面積為$\triangle AOB$ 面積的3 倍，求$k$之值？(2 分)'
+  answer:
+  - (1) A(4,0)、B(0,3)
+  - (2) 6
+  - (3) k=\frac{15}{2}
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_113_新北_土城_數學_g7s2e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 4
+  stem: 姊妹倆人原來各有一些存款，姊姊用去1000元之後，此時姊、妹的存款比為7：5；然後妹妹又用去300 元，此時姊、妹倆各自的剩下存款比為2：1，則姐姐原有多少錢？(6
+    分)
+  answer:
+  - '2400'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai

@@ -1,51 +1,104 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 2
-  school: 臺中市大業國中
-  grade: 7
-  subject: 數學
   city: 台中
   school_short: 大業
+  school: 臺中市大業國中
   id: doc_113_台中_大業_數學_g7s1e2
-  title: 臺中市大業國中 113學年度第1學期第2次定期評量7年級數學科試題
+  title: 臺中市大業國中 113學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(每題4分,共計40分)
+    name: 一、選擇題（每題4 分，共計40 分）
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(每格3分,共計30分)
+    name: 二、填充題（每格3 分，共計30 分）
     count: 10
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題(每小題5分,共計30分)
+    name: 三、計算題（每小題5 分，共計30 分）
     count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-2/台中/大業.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
 questions:
 - id: doc_113_台中_大業_數學_g7s1e2_s1_1
   section: 1
   number: 1
-  type: fill
+  type: single
   page: 1
-  stem: 一律使用黑色原子筆作答,違者扣10分。
+  stem: '關於以下四位同學針對正整數的說法，哪些是正確的?
+
+    甲：6 是的48 因數，也是72 的因數，所以(48 , 72)＝6
+
+    乙：若a 是質數，則a 的因數不可能是合數
+
+    丙：若C 是3 的倍數，則C 一定也是9 的倍數
+
+    丁：若x 為正整數，則$\frac{x+1}{x}$必定是最簡分數'
+  options:
+  - label: A
+    content: 甲、丁
+  - label: B
+    content: 乙、丙
+  - label: C
+    content: 甲、丙
+  - label: D
+    content: 乙、丁
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s1_2
   section: 1
   number: 2
-  type: fill
+  type: single
   page: 1
-  stem: 一律以最簡分數作答,填充題全對才給分。
+  stem: 計算$0.831725672-0.831613672=$?
+  options:
+  - label: A
+    content: '0.0112'
+  - label: B
+    content: $1.12\times 10^{-3}$
+  - label: C
+    content: $1.12\times 10^{-4}$
+  - label: D
+    content: $1.12\times 10^{-5}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 以下對於六位數13579□的敘述,哪些是正確的? 甲:因為十位數字為9,所以□內無論填入哪一個數,此六位數必不是2的倍數 乙:□內填入5,那麼此六位數一定可以被11整除
-    丙:□內填入0,那麼此六位數一定可以被2和5整除 丁:□內填入8,那麼此六位數一定可以被4整除
+  stem: '以下對於六位數13579□的敘述，哪些是正確的？
+
+    甲：因為十位數字為9，所以□內無論填入哪一個數，此六位數必不是2 的倍數
+
+    乙：□內填入5，那麼此六位數一定可以被11 整除
+
+    丙：□內填入0，那麼此六位數一定可以被2 和5 整除
+
+    丁：□內填入8，那麼此六位數一定可以被4 整除'
   options:
   - label: A
     content: 甲、乙
@@ -55,13 +108,24 @@ questions:
     content: 甲、丙
   - label: D
     content: 甲、乙、丙
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 小翊在水電行中當學徒,他先從幫老闆的客戶鋪設磁磚學起。 今某客戶辦公廳為一個長1400公分、寬2100公分的長方形地板, 若他想要在地板上鋪設相同大小的正方形磁磚,且磁磚不能切割
-    使用。試問下列A~E五種不同規格的正方形磁磚中,小翊可以 考慮用哪幾種?
+  stem: '小翊在水電行中當學徒，他先從幫老闆的客戶鋪設磁磚學起。
+
+    今某客戶辦公廳為一個長1400 公分、寬2100 公分的長方形地板，若他想要在地板上鋪設相同大小的正方形磁磚，且磁磚不能切割使用。試問下列A～E 五種不同規格的正方形磁磚中，小翊可以考慮用哪幾種？'
   options:
   - label: A
     content: A、B、C
@@ -72,70 +136,123 @@ questions:
   - label: D
     content: C、D、E
   assets:
-  - key: p1_f01
+  - key: s1_4_f1
     kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p1_f01.png
+    file: doc_113_台中_大業_數學_g7s1e2/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 479.26
+      - 590.4
+      - 662.2
+      - 662.38
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 已知7 10.3 10 p   ,下列關於p的敘述何者錯誤? 8 1.03 10 
+  stem: 已知$p=10.3\times 10^{7}$，下列關於p 的敘述何者錯誤？
   options:
-  - label: B
-    content: 此數超過1億
-  - label: C
-    content: 3後面共有7個零
-  - label: D
-    content: 此數為一個9位數
   - label: A
-    content: 可用科學記號表示為
+    content: 可用科學記號表示為$1.03\times 10^{8}$
+  - label: B
+    content: 此數超過1 億
+  - label: C
+    content: 3 後面共有7 個零
+  - label: D
+    content: 此數為一個9 位數
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 已知甲= $\frac{2}{7}$ 3  ,乙= $\frac{2}{7}$ 3  ,丙=-2.5,那麼甲、乙、丙三數在數線上的位置關係可能為下列何者?
+  stem: 已知甲＝$-3\frac{2}{7}$，乙＝$-3+\frac{2}{7}$，丙＝－2.5，那麼甲、乙、丙三數在數線上的位置關係可能為下列何者？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_台中_大業_數學_g7s1e2/1_6_optA.png
+      crop:
+        page: 1
+        rect:
+        - 95.86
+        - 889.67
+        - 197.89
+        - 939.98
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_台中_大業_數學_g7s1e2/1_6_optB.png
+      crop:
+        page: 1
+        rect:
+        - 249.66
+        - 891.73
+        - 347.31
+        - 939.98
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_台中_大業_數學_g7s1e2/1_6_optC.png
+      crop:
+        page: 1
+        rect:
+        - 406.37
+        - 892.76
+        - 504.75
+        - 941.01
   - label: D
-    content: 第1頁,共3頁 小心作答,考試順利!
-  assets:
-  - key: p1_f02
-    kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p1_f03.png
-  - key: p1_f04
-    kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p1_f04.png
-  - key: p1_f05
-    kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p1_f05.png
-  - key: p1_f06
-    kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p1_f06.png
-  - key: p1_f07
-    kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p1_f07.png
-  - key: p1_f08
-    kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p1_f08.png
-  - key: p1_f09
-    kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p1_f09.png
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_台中_大業_數學_g7s1e2/1_6_optD.png
+      crop:
+        page: 1
+        rect:
+        - 559.44
+        - 891.73
+        - 659.28
+        - 939.98
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 2
-  stem: 若3 2 2 3 5 7 m      ,且m是35的倍數,但不是100的倍數,則□= ?
+  stem: 若$m=2^{3}\times 3^{2}\times 5^{\square }\times 7$，且m 是35 的倍數，但不是100 的倍數，則□
+    = ?
   options:
   - label: A
     content: '1'
@@ -145,12 +262,22 @@ questions:
     content: '3'
   - label: D
     content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 2
-  stem: 設三個正整數56、28、a的最大公因數是7,最小公倍數是168,則a ?
+  stem: 設三個正整數56、28、a 的最大公因數是7，最小公倍數是168，則$a = $?
   options:
   - label: A
     content: '14'
@@ -160,31 +287,66 @@ questions:
     content: '35'
   - label: D
     content: '42'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: 右圖是阿勇和珍珍兩人的對話,根據兩人的對話內容,以下是家人幫 阿勇計算出最後剩下獎金的方法,試判斷誰的計算方法是正確的?
+  stem: 右圖是阿勇和珍珍兩人的對話，根據兩人的對話內容，以下是家人幫阿勇計算出最後剩下獎金的方法，試判斷誰的計算方法是正確的?
   options:
   - label: A
-    content: '珍珍: $\frac{20}{100}$ (2000000 100000)  '
+    content: '珍珍: $(2000000-100000)\times \frac{20}{100}$'
   - label: B
-    content: '媽媽: $\frac{80}{100}$ (2000000 100000)  '
+    content: '媽媽: $(2000000-100000)\times \frac{80}{100}$'
   - label: C
-    content: '爸爸: $\frac{80}{100}$ 2000000 100000  '
+    content: '爸爸: $2000000\times \frac{80}{100}-100000$'
   - label: D
-    content: '阿勇: $\frac{20}{100}$ 2000000 100000  '
+    content: '阿勇: $2000000\times \frac{20}{100}-100000$'
   assets:
-  - key: p2_f01
+  - key: s1_9_f1
     kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p2_f01.png
+    file: doc_113_台中_大業_數學_g7s1e2/s1_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 525.18
+      - 205.49
+      - 686.25
+      - 346.61
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 關於1 2 3 ... 50 a   的說法,何者正確? 甲:a有25個質因數 乙:a有15個質因數 丙:a乘開之後有12個0丁:a乘開之後有10個0
+  stem: '關於$a=1\times 2\times 3\times \dots \times 50$的說法，何者正確?
+
+    甲:a 有25 個質因數
+
+    乙:a 有15 個質因數
+
+    丙:a 乘開之後有12 個0
+
+    丁:a 乘開之後有10 個0'
   options:
   - label: A
     content: 甲、丙
@@ -194,104 +356,275 @@ questions:
     content: 乙、丙
   - label: D
     content: 乙、丁
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: 求2024的標準分解式= 。
+  stem: 求2024 的標準分解式=___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 試計算 $\frac{13}{259}$ $\frac{3}{185}$ $\frac{4}{147}$ $\frac{1}{105}$ 111 [
-    +( )] 21 [( ]    - - )- = 。
+  stem: 試計算$111\times [\frac{13}{259}+(-\frac{3}{185})]+21\times [(-\frac{4}{147})-\frac{1}{105}]=$___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 若7 708 10 a   -、 11 1.03 10 b   -、 9 0.925 10 c   -,試由大到小寫出a b c 、、的大小關係?
-    。
+  stem: 若$a=708\times 10^{-7}$、$b=1.03\times 10^{-11}$、$c=0.925\times 10^{-9}$，試由大到小寫出a、b、c
+    的大小關係？___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 以標準分解式表示3 2 2 2 2 2 3 7 , 2 ] 3 5 , 2 5 7 [     = 。
+  stem: 以標準分解式表示 $[2^{3}\times 3\times 7^{2},\ 2^{2}\times 3\times 5,\ 2\times 5^{2}\times
+    7^{2}]=$___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 在30~50之間的正整數中,將與36互質的數由小到大排列,則第4個數為 。
+  stem: 在30~50 之間的正整數中，將與36 互質的數由小到大排列，則第4 個數為___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 已知m為正整數,若 $\frac{174}{m}$ A =  ,且A是一個二位數的質數,則m  。 第2頁,共3頁 小心作答,考試順利!
+  stem: 已知m 為正整數，若$A=\frac{174}{m}$，且A 是一個二位數的質數，則$m=$___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 3
-  stem: 計算 $\frac{1}{2024}$ $\frac{1}{2023}$ $\frac{1}{2022}$ $\frac{1}{1013}$ ( 1)
-    ( 1) ( 1) ... ( 1)=     - - - - 。
+  stem: 計算$(\frac{1}{2024}-1)\times (\frac{1}{2023}-1)\times (\frac{1}{2022}-1)\times
+    \dots \times (\frac{1}{1013}-1)=$___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 3
-  stem: 阿亮發現242這個數具有被6除餘2,被5除不足3,被8除不足6的特性,則與242具有相同特性的 三位數中最大的一個= 。
+  stem: 阿亮發現242 這個數具有被6 除餘2，被5 除不足3，被8 除不足6 的特性，則與242 具有相同特性的三位數中最大的一個=___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 3
-  stem: 如右圖,在一個正方體的六個面上,各寫一個正整數,並使相對兩面所寫的兩個17數字和都相等。如果38、17、11的對面依次寫上a、b、c,且a、b、c皆為質數,
-    38 11則a+b+c= 。
+  stem: 如右圖，在一個正方體的六個面上，各寫一個正整數，並使相對兩面所寫的兩個數字和都相等。如果38、17、11 的對面依次寫上a、b、c，且a、b、c 皆為質數，則a＋b＋c＝___________。
   assets:
-  - key: p3_f01
+  - key: s2_9_f1
     kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p3_f01.png
+    file: doc_113_台中_大業_數學_g7s1e2/s2_9_f1.png
+    crop:
+      page: 3
+      rect:
+      - 576.2
+      - 200.33
+      - 670.94
+      - 288.82
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 質因數分解
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-1 質因數分解
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 3
-  stem: 觀察右式的過程,則( a , b , c )= 。
+  stem: 觀察右式的過程，則( a , b , c )＝___________。
   assets:
-  - key: p3_f02
+  - key: s2_10_f1
     kind: figure
-    file: doc_113_台中_大業_數學_g7s1e2/p3_f02.png
+    file: doc_113_台中_大業_數學_g7s1e2/s2_10_f1.png
+    crop:
+      page: 3
+      rect:
+      - 400.54
+      - 302.49
+      - 499.65
+      - 404.4
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 3
-  stem: '有一個三角形水池,各邊長分別為252公尺、315公尺和378公尺,若在三頂點各置一路燈,且在 三路燈之間每隔相等的距離豎立一根椿,再用鐵鍊圍成護欄。請問:
-    (1)相鄰兩木椿之間的距離最大為 公尺。 (2)最少需要 根木椿。'
+  stem: '有一個三角形水池，各邊長分別為252 公尺、315 公尺和378 公尺，若在三頂點各置一路燈，且在三路燈之間每隔相等的距離豎立一根椿，再用鐵鍊圍成護欄。請問：
+
+    (1)相鄰兩木椿之間的距離最大為_______公尺。
+
+    (2)最少需要_______根木椿。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 3
-  stem: 已知$\frac{1}{1}$ $\frac{1}{2}$ $\frac{1}{12}$  ,$\frac{1}{2}$ $\frac{1}{3}$
-    $\frac{1}{23}$   ,試利用這樣的方法計算 $\frac{1}{24}$ $\frac{1}{46}$ $\frac{1}{68}$
-    1 1 ... 2020 2022 2022 2024        =?
+  stem: 已知$\frac{1}{1}-\frac{1}{2}=\frac{1}{1\times 2}$，$\frac{1}{2}-\frac{1}{3}=\frac{1}{2\times
+    3}$，試利用這樣的方法計算$\frac{1}{2\times 4}+\frac{1}{4\times 6}+\frac{1}{6\times 8}+\dots
+    +\frac{1}{2020\times 2022}+\frac{1}{2022\times 2024}=$?
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s3_3
   section: 3
   number: 3
   type: calc
   page: 3
-  stem: 曉蕎是學校的旗隊也是合唱團的成員,暑假期間學校旗隊每7天就會集訓一次、合唱團每4天就會 集訓一次,如果遇到兩個團隊都需要集訓時,曉蕎就必須辦理請假手續,申請其中一個團體請假,
-    若7/1是兩個團體的第一次集訓(即曉喬第一次辦理請假手續),則 (1)下一次曉喬必須辦理請假手續的時間為幾月幾日? (2)請問暑假期間(7/1~8/31),曉喬共辦理了幾次的請假?
+  stem: '曉蕎是學校的旗隊也是合唱團的成員，暑假期間學校旗隊每7 天就會集訓一次、合唱團每4 天就會集訓一次，如果遇到兩個團隊都需要集訓時，曉蕎就必須辦理請假手續，申請其中一個團體請假，若7/1
+    是兩個團體的第一次集訓(即曉喬第一次辦理請假手續)，則
+
+    (1)下一次曉喬必須辦理請假手續的時間為幾月幾日?
+
+    (2)請問暑假期間(7/1~8/31)，曉喬共辦理了幾次的請假?'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s1e2_s3_4
   section: 3
   number: 4
   type: calc
   page: 3
-  stem: '在古老的印度,有一位數學家婆什迦羅寫了一本以他女兒莉拉沃蒂為名的數學書,書中提到一則 涉及蜜蜂計算的有趣問題,如下: Q: 有一群蜜蜂飛來,其中五分之一飛到卡達美巴花上駐足,另有三分之一飛到希琳達花上停歇,
-    這兩個數之差的三倍蜜蜂,又飛到可麗塔珈花上共舞。請問剩下的蜜蜂是原來蜜蜂群的幾分之幾? 第3頁,共3頁 小心作答,考試順利!'
+  stem: '在古老的印度，有一位數學家婆什迦羅寫了一本以他女兒莉拉沃蒂為名的數學書，書中提到一則涉及蜜蜂計算的有趣問題，如下：
+
+    Q: 有一群蜜蜂飛來，其中五分之一飛到卡達美巴花上駐足，另有三分之一飛到希琳達花上停歇，這兩個數之差的三倍蜜蜂，又飛到可麗塔珈花上共舞。請問剩下的蜜蜂是原來蜜蜂群的幾分之幾？'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 標準分解式與分數運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai

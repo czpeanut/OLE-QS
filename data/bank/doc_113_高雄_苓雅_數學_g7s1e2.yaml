@@ -1,38 +1,34 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 2
-  school: 高雄市立苓雅國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 苓雅
+  school: 高雄市立苓雅國民中學
   id: doc_113_高雄_苓雅_數學_g7s1e2
-  title: 高雄市立苓雅國民中學 113學年度第1學期第2次定期評量7年級數學科試題
+  title: 高雄市立苓雅國民中學 113學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:每題3分,共30分
+    name: 一、選擇題：每題3 分，共30 分
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:每格3分,共45分
-    count: 9
+    name: 二、填充題：每格3 分，共45 分
+    count: 15
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題:配分如各題標示,共25分 (需有過程,無過程不予計分)
+    name: 三、計算題：配分如各題標示，共25 分 (需有過程，無過程不予計分)
     count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-2/高雄/苓雅.pdf
 questions:
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列何者為780的質因數?
+  stem: 下列何者為780 的質因數？
   options:
   - label: A
     content: '12'
@@ -41,7 +37,14 @@ questions:
   - label: C
     content: '15'
   - label: D
-    content: 17 $\frac{1}{4}$ )5 × (− $\frac{1}{4}$ )7 = (− $\frac{1}{4}$ )□,則□=?
+    content: '17'
+- id: doc_113_高雄_苓雅_數學_g7s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 若$(-\frac{1}{4})^{5} \times (-\frac{1}{4})^{7} = (-\frac{1}{4})^{\square}$，則$\square$＝？
+  options:
   - label: A
     content: '-2'
   - label: B
@@ -50,18 +53,12 @@ questions:
     content: '12'
   - label: D
     content: '35'
-- id: doc_113_高雄_苓雅_數學_g7s1e2_s1_2
-  section: 1
-  number: 2
-  type: single
-  page: 1
-  stem: 若(−
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 有多少個正整數同時是168的因數,也是12的倍數?
+  stem: 有多少個正整數同時是168 的因數，也是12 的倍數？
   options:
   - label: A
     content: '4'
@@ -70,28 +67,28 @@ questions:
   - label: C
     content: '8'
   - label: D
-    content: 12 $\frac{5}{6}$
+    content: '12'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 的分母加上−18,其分子應該加上多少才能讓分數的值不變?
+  stem: $\frac{5}{6}$的分母加上$-18$，其分子應該加上多少才能讓分數的值不變？
   options:
   - label: A
-    content: −18
+    content: $-18$
   - label: B
-    content: −10
+    content: $-10$
   - label: C
     content: '10'
   - label: D
-    content: −15
+    content: $-15$
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 有6個數:25632、5613、12321、639、87456、3356,其中2的倍數有A個,3的倍數有B個,9的倍 數有C個,請問A+B-C=?
+  stem: 有6 個數：25632、5613、12321、639、87456、3356，其中2 的倍數有A 個，3 的倍數有B 個，9 的倍數有C 個，請問A+B-C=？
   options:
   - label: A
     content: '7'
@@ -106,7 +103,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列何者可以表示成兩個質數的乘積?
+  stem: 下列何者可以表示成兩個質數的乘積？
   options:
   - label: A
     content: '243'
@@ -115,52 +112,51 @@ questions:
   - label: C
     content: '246'
   - label: D
-    content: 247 $\frac{2}{7}$ + $\frac{3}{11}$ − $\frac{5}{13}$ 、b= $\frac{2}{7}$
-      −(− $\frac{3}{11}$ − $\frac{5}{13}$ ) 、c= $\frac{2}{7}$ + ( $\frac{3}{11}$ −
-      $\frac{5}{13}$
+    content: '247'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 已知a= ),判斷下列敘述何者正確?
+  stem: 已知$a=\frac{2}{7} + \frac{3}{11} - \frac{5}{13}$、$b=\frac{2}{7} -(-\frac{3}{11}
+    - \frac{5}{13})$、$c=\frac{2}{7} + (\frac{3}{11} - \frac{5}{13})$，判斷下列敘述何者正確？
   options:
   - label: A
-    content: a= c且b= c
+    content: $a= c$ 且 $b= c$
   - label: B
-    content: a= c且b≠c
+    content: $a= c$ 且 $b\neq c$
   - label: C
-    content: a≠c且b= c
+    content: $a\neq c$ 且 $b= c$
   - label: D
-    content: a≠c且b≠c
+    content: $a\neq c$ 且 $b\neq c$
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 535是533的多少倍?
+  stem: $5^{35}$是$5^{33}$的多少倍？
   options:
   - label: A
-    content: 2倍
+    content: 2 倍
   - label: B
-    content: 5倍
+    content: 5 倍
   - label: C
-    content: 25倍
+    content: 25 倍
   - label: D
-    content: 125倍
+    content: 125 倍
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 請問下列敘述何者正確?
+  stem: 請問下列敘述何者正確？
   options:
   - label: A
-    content: 若a、b互質,則a與b皆為質數
+    content: 若a、b 互質，則a 與b 皆為質數
   - label: B
-    content: 若a、b皆為質數,則a與b互質
+    content: 若a、b 皆為質數，則a 與b 互質
   - label: C
-    content: 35的質因數為1、5、7
+    content: 35 的質因數為1、5、7
   - label: D
     content: 質數必為奇數
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s1_10
@@ -168,100 +164,156 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 下列哪一個數和23 × 5 × 11互質?
+  stem: 下列哪一個數和$2^{3} \times 5 \times 11$互質？
   options:
   - label: A
-    content: 3 × 7
+    content: $3 \times 7$
   - label: B
-    content: 25 × 3
+    content: $2^{5} \times 3$
   - label: C
-    content: 2 × 53 × 7
+    content: $2 \times 5^{3} \times 7$
   - label: D
-    content: 112 × 13
+    content: $11^{2} \times 13$
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 求下列各組的最大公因數,並以標準分解式表示。 (1) (128 , 64 , 280)=___1___ (2) (26 × 3 × 11  , 8
-    × 11)=___2___
+  stem: '求下列各組的最大公因數，並以標準分解式表示。
+
+    (1) $(128 , 64 , 280)＝$＿＿＿①＿＿＿'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: 求下列各組的最小公倍數,並以標準分解式表示。 (1) [620 , 23 × 3 × 11]=___3___ (2) [84 , 180 , 495]=___4___
+  stem: '求下列各組的最大公因數，並以標準分解式表示。
+
+    (2) $(2^{6} \times 3 \times 11 , 8 \times 11)＝$＿＿＿②＿＿＿'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: 計算下列各式的值,若答案為分數請將答案化為最簡分數。 −(2 $\frac{5}{11}$ $\frac{5}{13}$ + $\frac{8}{13}$
-    (1) − )=___5___ 【一年級數學第1頁,共2頁】 $\frac{12}{7}$ × (− $\frac{35}{36}$ )=___6___ (2)
-    $\frac{3}{7}$ + $\frac{5}{17}$ (3) ( ) × 119=___7___ (4) 127 ÷ (35 × 45) + 63=___8___
-    )5 × ( $\frac{12}{5}$ )5 ÷ ( $\frac{21}{5}$ $\frac{7}{4}$ )3=___9___ (5) (
+  stem: '求下列各組的最小公倍數，並以標準分解式表示。
+
+    (1) $[620 , 2^{3} \times 3 \times 11]＝$＿＿＿③＿＿＿'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s2_4
   section: 2
   number: 4
   type: fill
-  page: 2
-  stem: 若n是正整數, $\frac{36}{n}$ 也是正整數,則n=___10___。(全對才給分)
+  page: 1
+  stem: '求下列各組的最小公倍數，並以標準分解式表示。
+
+    (2) $[84 , 180 , 495]＝$＿＿＿④＿＿＿'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s2_5
   section: 2
   number: 5
   type: fill
-  page: 2
-  stem: a、b皆是大於1的整數且a> b,若(a, b) = 1且[a, b] = 32 × 7,則a+ b=___11___
+  page: 1
+  stem: '計算下列各式的值，若答案為分數請將答案化為最簡分數。
+
+    (1) $-\frac{5}{13} -(2\frac{5}{11} + \frac{8}{13})＝$＿＿＿⑤＿＿＿'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 已知a= 12 × 13 × 14 × 15 × 16 × 17 × 18 × 19 × 20 × 21,則a這個數後面會有__12__個連續的0。
+  stem: '計算下列各式的值，若答案為分數請將答案化為最簡分數。
+
+    (2) $\frac{12}{7} \times (-\frac{35}{36})＝$＿＿＿⑥＿＿＿'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 請問下列哪些是504的因數?___13___。(全對才給分) (甲) 2 × 3 (乙) 22 × 7 (丙) 33 × 7 (丁) 23 × 3
-    × 7 (戊) 5 × 7
+  stem: '計算下列各式的值，若答案為分數請將答案化為最簡分數。
+
+    (3) $(\frac{3}{7} + \frac{5}{17}) \times 119＝$＿＿＿⑦＿＿＿'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: a= 212、b= 48、c= 85,請將a、b、c由小到大排列。___14___
+  stem: '計算下列各式的值，若答案為分數請將答案化為最簡分數。
+
+    (4) $12^{7} \div (3^{5} \times 4^{5}) + 6^{3}＝$＿＿＿⑧＿＿＿'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: '小谷為了避免忘記自己的銀行帳戶密碼,所以他設計了一個標準分解式來提醒自己: 66520 + a= 2b× c3 × d× 11,其中a、b、c、d都是1~9的正整數。小谷將密碼設為abcd,則密碼為
-    ___15___。'
+  stem: '計算下列各式的值，若答案為分數請將答案化為最簡分數。
+
+    (5) $(\frac{7}{4})^{5} \times (\frac{12}{5})^{5} \div (\frac{21}{5})^{3}＝$＿＿＿⑨＿＿＿'
+- id: doc_113_高雄_苓雅_數學_g7s1e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 若n 是正整數，$\frac{36}{n}$ 也是正整數，則$n=$＿＿＿⑩＿＿＿。（全對才給分）
+- id: doc_113_高雄_苓雅_數學_g7s1e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: $a$、$b$皆是大於1 的整數且$a> b$，若$(a, b) = 1$且$[a, b] = 3^{2} \times 7$，則$a+ b=$＿＿＿⑪＿＿＿
+- id: doc_113_高雄_苓雅_數學_g7s1e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 已知$a= 12 \times 13 \times 14 \times 15 \times 16 \times 17 \times 18 \times
+    19 \times 20 \times 21$，則$a$這個數後面會有＿＿⑫＿＿個連續的0。
+- id: doc_113_高雄_苓雅_數學_g7s1e2_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: '請問下列哪些是504 的因數？＿＿＿⑬＿＿＿。（全對才給分）
+
+    (甲) $2 \times 3$ (乙) $2^{2} \times 7$ (丙) $3^{3} \times 7$ (丁) $2^{3} \times 3
+    \times 7$ (戊) $5 \times 7$'
+- id: doc_113_高雄_苓雅_數學_g7s1e2_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: $a= 2^{12}$、$b= 4^{8}$、$c= 8^{5}$，請將a、b、c 由小到大排列。＿＿＿⑭＿＿＿
+- id: doc_113_高雄_苓雅_數學_g7s1e2_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 2
+  stem: '小谷為了避免忘記自己的銀行帳戶密碼，所以他設計了一個標準分解式來提醒自己：
+
+    $66520 + a= 2^{b} \times c^{3} \times d \times 11$，其中a、b、c、d 都是1～9 的正整數。小谷將密碼設為abcd，則密碼為___⑮___。'
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: 實驗室培養A細胞,已知在理想的情況下,1個細胞每4小時會分裂成2個細胞,且分裂後的細胞可繼續分 裂。如果在分裂的過程中細胞都沒有壞死,且全部都進行分裂,請問:(1)從一個細胞開始培養,經過3天後總共
-    有2a個細胞,a的值為何?(3分)(2)若實驗室目標培養224個細胞,請問還需要再花多久的時間培養?(不算已經 過的3天)(4分)
+  stem: 實驗室培養A 細胞，已知在理想的情況下，1 個細胞每4 小時會分裂成2 個細胞，且分裂後的細胞可繼續分裂。如果在分裂的過程中細胞都沒有壞死，且全部都進行分裂，請問：(1)從一個細胞開始培養，經過3
+    天後總共有$2^{a}$個細胞，$a$的值為何？(3 分)(2)若實驗室目標培養$2^{24}$個細胞，請問還需要再花多久的時間培養？（不算已經過的3 天）(4
+    分)
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 2
-  stem: 小圓家、學校、便利商店在同一條數線上,且小圓家在學校與便利商店的中點。已知小圓家的坐標是− $\frac{2}{3}$ ,學校 $\frac{3}{5}$
-    坐標是−1 ,請問便利商店的坐標是多少?(6分)
+  stem: 小圓家、學校、便利商店在同一條數線上，且小圓家在學校與便利商店的中點。已知小圓家的坐標是$-\frac{2}{3}$，學校坐標是$-1\frac{3}{5}$，請問便利商店的坐標是多少？(6
+    分)
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s3_3
   section: 3
   number: 3
   type: calc
   page: 2
-  stem: 老師把147顆糖果和92顆果凍平均分給若干位同學,最後發現糖果剩下3顆,果凍剩下2顆。請問:(1)小朋 友的人數可能有多少人?(4分) (2)在分給最多小朋友的情況中,每人能拿到糖果與果凍各幾顆?(2分)
+  stem: 老師把147 顆糖果和92 顆果凍平均分給若干位同學，最後發現糖果剩下3 顆，果凍剩下2 顆。請問：(1)小朋友的人數可能有多少人？(4 分) (2)在分給最多小朋友的情況中，每人能拿到糖果與果凍各幾顆？(2
+    分)
 - id: doc_113_高雄_苓雅_數學_g7s1e2_s3_4
   section: 3
   number: 4
   type: calc
   page: 2
-  stem: 在開心公車站,甲公車每12分鐘到站一次,乙公車每18分鐘到站一次,丙公車每30分鐘到站一次。若上午8點剛好三班公車同時到站,請問:下一次三班公車同時到站的時間為何?(6分)
-    【試題結束】 【一年級數學第2頁,共2頁】
+  stem: 在開心公車站，甲公車每12 分鐘到站一次，乙公車每18 分鐘到站一次，丙公車每30 分鐘到站一次。若上午8 點剛好三班公車同時到站，請問：下一次三班公車同時到站的時間為何？(6
+    分)

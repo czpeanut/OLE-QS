@@ -1,88 +1,185 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 2
-  school: 臺中市立大業國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 2-2 ~ 3-2一年____班_____號姓名_________ 注意事項:1. 請使用黑色原子筆作答,違者扣10分。
   city: 台中
   school_short: 大業
+  school: 臺中市大業國中
+  scope_note: 2-2 ~ 3-2
   id: doc_113_台中_大業_數學_g7s2e2
-  title: 臺中市立大業國民中學 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 臺中市大業國中 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、是非題
-    type: tf
-    score_rule: 一、是非題:每題2分,共16分
-    count: 7
+    name: 是非題：每題2 分，共16 分
+    count: 8
   - ord: 2
-    name: 二、單選題
-    type: single
-    score_rule: 二、單選題:每題4分,共40分
+    name: 單選題：每題4 分，共40 分
     count: 10
   - ord: 3
-    name: 三、填充題
-    type: fill
-    score_rule: 三、填充題:每格3分,共33分
+    name: 填充題：每格3 分，共33 分
     count: 10
   - ord: 4
-    name: 四、計算題
-    type: calc
-    score_rule: 四、計算題(共計11分)
-    count: 1
+    name: 計算題(共計11 分)
+    count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-2/台中/大業.pdf
+  scope:
+    lessons:
+    - number: 2-2
+      title: null
+    - number: 3-2
+      title: null
+    publisher: null
+    raw: 2-2 ~ 3-2
+    volume: null
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
 questions:
+- id: doc_113_台中_大業_數學_g7s2e2_s1_1
+  section: 1
+  number: 1
+  type: tf
+  page: 1
+  stem: 在坐標平面上，y 軸的方程式就是y＝0。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s1_2
   section: 1
   number: 2
-  type: fill
+  type: tf
   page: 1
-  stem: 一律以最簡分數作答,填充題全對才給分。
+  stem: 在坐標平面上，兩個二元一次方程式的圖形若相交於一點，則交點坐標就是此二元一次聯立方程式的解。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s1_3
   section: 1
   number: 3
   type: tf
   page: 1
-  stem: ( ) 在坐標平面上有一點A(a , b),則A點到x軸的距離是—a—、到y軸的距離是—b—。
+  stem: 在坐標平面上一點A(a , b)，則A 點到x 軸的距離是 | a |、到y 軸的距離是 | b |。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s1_4
   section: 1
   number: 4
   type: tf
   page: 1
-  stem: ( ) 若0 ab  ,則方程式1 $\frac{x}{a}$ $\frac{y}{b}$  與兩軸所圍成的三角形面積為$\frac{1}{2}$
-    ab。
+  stem: 若 $ab \neq 0$，則方程式 $\frac{x}{a} + \frac{y}{b} = 1$ 與兩軸所圍成的三角形面積為 $\frac{1}{2}ab$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: tf
   page: 1
-  stem: '( ) 若 : 3:11 a b  ,則a的3倍等於b的11倍。'
+  stem: '若 a : b = 3 : 11，則 a 的 3 倍等於 b 的 11 倍。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s1_6
   section: 1
   number: 6
   type: tf
   page: 1
-  stem: ( ) 若甲、乙兩數的比值是$\frac{a}{b}$ ,則甲數是乙數的$\frac{a}{b}$ 倍。
+  stem: 若甲、乙兩數的比值是 $\frac{a}{b}$，則甲數是乙數的 $\frac{a}{b}$ 倍。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: tf
   page: 1
-  stem: ( ) 若x值增加,y的值隨之減少,則y與x一定成反比。
+  stem: 若 x 值增加，y 的值隨之減少，則 y 與 x 一定成反比。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: tf
   page: 1
-  stem: ( ) 若$\frac{1}{x}$ 與$\frac{1}{y}$ 成正比,則x與y亦成正比。
+  stem: 若 $\frac{1}{x}$ 與 $\frac{1}{y}$ 成正比，則 x 與 y 亦成正比。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_1
   section: 2
   number: 1
   type: single
   page: 1
-  stem: '( ) 判斷下列敘述哪些正確? 甲: :3 : 2 x y  ,得y與x成正比。 乙: :3 2: x y  ,得y與x成反比。 丙: $\frac{1}{2}$
-    $\frac{1}{3}$ ( + ) :( ) 3: 2 x y   ,得y與x既不成正比也不成反比。'
+  stem: '判斷下列敘述哪些正確？
+
+    甲: x : 3 = y : 2，得 y 與 x 成正比。
+
+    乙: x : 3 = 2 : y，得 y 與 x 成反比。
+
+    丙: $(x + \frac{1}{2}) : (y + \frac{1}{3}) = 3 : 2$，得 y 與 x 既不成正比也不成反比。'
   options:
   - label: A
     content: 僅甲、乙
@@ -92,102 +189,172 @@ questions:
     content: 僅乙、丙
   - label: D
     content: 甲、乙、丙
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: single
   page: 1
-  stem: ( )已知ad bc = ,a、b、c、d均不為0,則下列哪一個性質不一定成立?
+  stem: 已知 $ad = bc$，$a$、$b$、$c$、$d$ 均不為 0，則下列哪一個性質不一定成立？
   options:
   - label: A
-    content: $\frac{a}{b}$ $\frac{c}{d}$ =
+    content: $\frac{a}{b} = \frac{c}{d}$
   - label: B
-    content: ': : a b c d ='
+    content: '$a : b = c : d$'
   - label: C
-    content: ': : a c b d ='
+    content: '$a : c = b : d$'
   - label: D
-    content: $\frac{a}{c}$ $\frac{d}{b}$ =
+    content: $\frac{a}{c} = \frac{d}{b}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_3
   section: 2
   number: 3
   type: single
   page: 1
-  stem: ( ) 若$\frac{8a3b}{22a5b}$ 0  ,則a:b的比值為?
+  stem: '若 $\frac{8a - 3b}{2a - 5b} = 0$，則 a : b 的比值為？'
   options:
   - label: A
-    content: '5'
+    content: $\frac{2}{5}$
   - label: B
     content: $\frac{3}{8}$
   - label: C
     content: $\frac{6}{-2}$
   - label: D
     content: 無意義
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_4
   section: 2
   number: 4
   type: single
   page: 1
-  stem: '( )如果 : 2:3 a b  ,則下列敘述何者錯誤?'
+  stem: '如果 a : b = 2 : 3，則下列敘述何者錯誤?'
   options:
   - label: A
-    content: '2 2 : 4:9 a b '
+    content: '$a^{2} : b^{2} = 4 : 9$'
   - label: B
-    content: '( 1) :( 1) 1: 2 a b   '
+    content: '$(a - 1) : (b - 1) = 1 : 2$'
   - label: C
-    content: ( ) :( ) 5:1 a b a b   -
+    content: '$(a + b) : (a - b) = -5 : 1$'
   - label: D
-    content: :5 2:15 a b 
+    content: '$a : 5b = 2 : 15$'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_5
   section: 2
   number: 5
   type: single
   page: 1
-  stem: ( )若3 x  與4 y  成正比,且3 x  時, 6 y  ,則當15 x  時,
+  stem: 若 $x + 3$ 與 $y - 4$ 成正比，且 $x = 3$ 時，$y = 6$，則當 $x = 15$ 時，
   options:
   - label: A
-    content: 5 y 
+    content: $y = 5$
   - label: B
-    content: 10 y 
+    content: $y = 10$
   - label: C
-    content: 15 y 
+    content: $y = 15$
   - label: D
-    content: 20 y  第1頁共3頁
+    content: $y = 20$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_6
   section: 2
   number: 6
   type: single
   page: 2
-  stem: ( )下列哪一個選項屬於反比關係?
+  stem: 下列哪一個選項屬於反比關係?
   options:
   - label: A
     content: 正方形的邊長與此正方形的面積
   - label: B
     content: 一個人的年齡與身高
   - label: C
-    content: 一天之中,白天與夜晚的時間
+    content: 一天之中，白天與夜晚的時間
   - label: D
-    content: 三角形面積固定的情況下,邊長與其所對應的高
+    content: 三角形面積固定的情況下，邊長與其所對應的高
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_7
   section: 2
   number: 7
   type: single
   page: 2
-  stem: ( )在坐標平面上,下列哪一個方程式的圖形,必通過第二象限?
+  stem: 在坐標平面上，下列哪一個方程式的圖形，必通過第二象限?
   options:
   - label: A
-    content: 3y , 0 x a a   - -
+    content: $x - 3y = -a$ , $a < 0$
   - label: B
-    content: y 1  , 0 ax a   -
+    content: $ax - y = 1$ , $a > 0$
   - label: C
-    content: y , 0 x a a   
+    content: $x + y = a$ , $a < 0$
   - label: D
-    content: y 1  , 0 x a a   
+    content: $x + ay = 1$ , $a < 0$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_8
   section: 2
   number: 8
   type: single
   page: 2
-  stem: ( ) 若點(a,b)在第四象限,則方程式ax+by=-3的圖形不通過
+  stem: 若點(a,b)在第四象限，則方程式 $ax + by = -3$ 的圖形不通過
   options:
   - label: A
     content: 第一象限
@@ -197,113 +364,313 @@ questions:
     content: 第三象限
   - label: D
     content: 第四象限
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_9
   section: 2
   number: 9
   type: single
   page: 2
-  stem: ( )在直角坐標平面上,直線0 ax y b   - 的圖形如右圖所示,則下列數值何者最大?
+  stem: 在直角坐標平面上，直線 $ax - y + b = 0$ 的圖形如右圖所示，則下列數值何者最大？
   options:
   - label: A
-    content: a b 
+    content: $a + b$
   - label: B
-    content: a b 
+    content: $a - b$
   - label: C
-    content: ab
+    content: $ab$
   - label: D
-    content: b a 
+    content: $b - a$
   assets:
-  - key: p2_f01
+  - key: s2_9_f1
     kind: figure
-    file: doc_113_台中_大業_數學_g7s2e2/p2_f01.png
+    file: doc_113_台中_大業_數學_g7s2e2/s2_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 576.69
+      - 274.63
+      - 694.71
+      - 394.08
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s2_10
   section: 2
   number: 10
   type: single
   page: 2
-  stem: ( )茹茹跟小喜各以固定的速率跑步,茹茹對小喜說:「我跑3步的距離你需要跑4步;而我跑4步的時間你可以 跑5步。」請問茹茹跑a公尺,則同時間內小喜跑多少公尺?
+  stem: 茹茹跟小喜各以固定的速率跑步，茹茹對小喜說：「我跑 3 步的距離你需要跑 4 步；而我跑 4 步的時間你可以跑 5 步。」請問茹茹跑 a 公尺，則同時間內小喜跑多少公尺？
   options:
   - label: A
-    content: $\frac{16}{15}$ a
+    content: $\frac{16}{15}a$
   - label: B
-    content: $\frac{15}{16}$ a
+    content: $\frac{15}{16}a$
   - label: C
-    content: $\frac{8}{9}$ a
+    content: $\frac{8}{9}a$
   - label: D
-    content: $\frac{9}{8}$ a
+    content: $\frac{9}{8}a$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_1
   section: 3
   number: 1
   type: fill
   page: 2
-  stem: 在某次投籃比賽中,大魁共投了x球,且投進17球。已知此次比賽中,大魁投籃的命中率為85%,則他的總投球數 為 球。 註命中率=「投進球數」與「總投球數」的比值,通常以百分率表示。
+  stem: '在某次投籃比賽中，大魁共投了 x 球，且投進 17 球。已知此次比賽中，大魁投籃的命中率為 85%，則他的總投球數為________球。
+
+    註命中率＝「投進球數」與「總投球數」的比值，通常以百分率表示。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_2
   section: 3
   number: 2
   type: fill
   page: 2
-  stem: 若0 ab  ,且6 7 2( 2 ) a b a b    ,則( ) :( ) b a b a    。
+  stem: '若 $ab \neq 0$，且 $6a - 7b = 2(a - 2b)$，則 $(b + a) : (b - a) =$________。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_3
   section: 3
   number: 3
   type: fill
   page: 2
-  stem: '若 : 2:3 x y  ,且3 2 36 x y   ,則5x y   。'
+  stem: '若 $x : y = 2 : 3$，且 $3x + 2y = 36$，則 $5x + y =$________。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_4
   section: 3
   number: 4
   type: fill
   page: 2
-  stem: 若x與y成正比,但x與z成反比,且當3 x  時, 15 y  , 8 z  。試問,當25 y  時,z  。
+  stem: 若 x 與 y 成正比，但 x 與 z 成反比，且當 $x = 3$ 時，$y = 15$，$z = 8$。試問，當 $y = 25$ 時，$z =$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_5
   section: 3
   number: 5
   type: fill
   page: 2
-  stem: '若a 、b均為正整數, : 3:5 a b  且( b) + [ b]=112 a a , , ,則2 + b = a 。'
+  stem: '若 a、b均為正整數，$a : b = 3 : 5$ 且 $(a , b) + [a , b] = 112$，則 $2a + b =$________。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_6
   section: 3
   number: 6
   type: fill
   page: 2
-  stem: 縮時錄影是指連續定時拍攝同一個場景或物件,接著將照片順序串連製作成影片所營造出來的快鏡效果。若小恩希望將8小時的動物行為觀察影片製作成3分鐘的縮時影片,他設定每x秒拍攝一張照片,製作影片時每秒撥放y張照片,則x與y的關係為
-    。判斷x與y的關係為 (填正比或反比)。 第2頁共3頁
+  stem: 縮時錄影是指連續定時拍攝同一個場景或物件，接著將照片順序串連製作成影片所營造出來的快鏡效果。若小恩希望將 8 小時的動物行為觀察影片製作成 3 分鐘的縮時影片，他設定每
+    x 秒拍攝一張照片，製作影片時每秒撥放 y 張照片，則 x 與 y 的關係為________。判斷 x 與 y 的關係為________(填正比或反比)。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-2
+      title: 正比與反比
+      chapter: 第3章 比例
+    textbook: 七下 3-2 正比與反比
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_7
   section: 3
   number: 7
   type: fill
   page: 3
-  stem: 一般單車都有前、後兩組齒輪,前者的齒數較多,稱為大盤,後者的齒數較少,稱為飛輪。而大盤與飛輪齒數的比值, 稱為齒比,例如大盤為46齒,飛輪為23齒時,齒比為$\frac{46}{23}$
-    =2,即大盤轉一圈的時間,飛輪需轉2圈,請問當小安利用 變速器將大盤調成44齒、飛輪調成11齒,此時小安踩了大盤7圈,飛輪會轉 圈。
+  stem: 一般單車都有前、後兩組齒輪，前者的齒數較多，稱為大盤，後者的齒數較少，稱為飛輪。而大盤與飛輪齒數的比值，稱為齒比，例如大盤為 46 齒，飛輪為 23
+    齒時，齒比為 $\frac{46}{23} = 2$，即大盤轉一圈的時間，飛輪需轉 2 圈，請問當小安利用變速器將大盤調成 44 齒、飛輪調成 11 齒，此時小安踩了大盤
+    7 圈，飛輪會轉________圈。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_8
   section: 3
   number: 8
   type: fill
   page: 3
-  stem: 若二元一次方程式94 30 1314 0 x y k     的圖形與兩軸無法圍成三角形,則k  。
+  stem: 若二元一次方程式 $94x + 30y - 1314 + k = 0$ 的圖形與兩軸無法圍成三角形，則 $k =$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_9
   section: 3
   number: 9
   type: fill
   page: 3
-  stem: 若方程式y ax b   的圖形會通過(-1,13)、(2,-14)兩點,則此方程式為 。
+  stem: 若方程式 $y = ax + b$ 的圖形會通過(-1，13)、(2，-14)兩點，則此方程式為________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s3_10
   section: 3
   number: 10
   type: fill
   page: 3
-  stem: 直角坐標平面上,直線8 24  ( 0) x ay a    與兩軸所圍成的三角形面積為12,則a  。
+  stem: 直角坐標平面上，直線 $8x + ay = 24$ ($a < 0$) 與兩軸所圍成的三角形面積為 12，則 $a =$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
 - id: doc_113_台中_大業_數學_g7s2e2_s4_1
   section: 4
   number: 1
   type: calc
   page: 3
-  stem: '因應大業國中即將到來的30周年校慶,班上如火如荼地討論著園遊會要販賣的商品, 彤彤提議可以販賣她自己製作的舒芙蕾鬆餅,於是她提供了她自己製作舒芙蕾鬆餅的
-    獨家配方,如下圖所示。彤彤預備先製作12人份的舒芙蕾鬆餅給班上進行試吃, 在準備食材時,發現家裡剛好缺少低筋麵粉和砂糖,其他材料則都有足夠的量,試協助 彤彤解決問題:
-    (1)根據配方,若小妍要製作12人份的舒芙蕾鬆餅,則需要準備多少低筋麵粉和砂糖?(4分) (2)小蜜蜂聽聞大業國中有活動,很開心地想去參加,牠沿著直線L:
-    1 ax by  飛行,從A(3 , -3)出發,飛行5分鐘後, 抵達B(3 , 4),試求出方程式,並在坐標平面上畫出L。(方程式2分,圖形2分) (3)若蜜蜂從B點繼續出發,接著飛行15分鐘之後抵達大業國中,請問大業國中在坐標平面上的座標為何?(3分)
-    第3頁共3頁'
-  assets:
-  - key: p3_f01
-    kind: figure
-    file: doc_113_台中_大業_數學_g7s2e2/p3_f01.png
+  stem: (1)根據配方，若小妍要製作 12 人份的舒芙蕾鬆餅，則需要準備多少低筋麵粉和砂糖？(4 分)
+  group_stem: 因應大業國中即將到來的30 周年校慶，班上如火如荼地討論著園遊會要販賣的商品，彤彤提議可以販賣她自己製作的舒芙蕾鬆餅，於是她提供了她自己製作舒芙蕾鬆餅的獨家配方，如下圖所示。彤彤預備先製作12
+    人份的舒芙蕾鬆餅給班上進行試吃，在準備食材時，發現家裡剛好缺少低筋麵粉和砂糖，其他材料則都有足夠的量，試協助彤彤解決問題：
+  shared_asset: g4_1_3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 3-1
+      title: 比例式
+      chapter: 第3章 比例
+    textbook: 七下 3-1 比例式
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g7s2e2_s4_2
+  section: 4
+  number: 2
+  type: calc
+  page: 3
+  stem: '(2)小蜜蜂聽聞大業國中有活動，很開心地想去參加，牠沿著直線 L: $ax + by = 1$ 飛行，從 A(3 , -3)出發，飛行 5 分鐘後，抵達
+    B(3 , 4)，試求出方程式，並在坐標平面上畫出 L。(方程式 2 分，圖形 2 分)'
+  group_stem: 因應大業國中即將到來的30 周年校慶，班上如火如荼地討論著園遊會要販賣的商品，彤彤提議可以販賣她自己製作的舒芙蕾鬆餅，於是她提供了她自己製作舒芙蕾鬆餅的獨家配方，如下圖所示。彤彤預備先製作12
+    人份的舒芙蕾鬆餅給班上進行試吃，在準備食材時，發現家裡剛好缺少低筋麵粉和砂糖，其他材料則都有足夠的量，試協助彤彤解決問題：
+  shared_asset: g4_1_3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g7s2e2_s4_3
+  section: 4
+  number: 3
+  type: calc
+  page: 3
+  stem: (3)若蜜蜂從 B 點繼續出發，接著飛行 15 分鐘之後抵達大業國中，請問大業國中在坐標平面上的座標為何?(3 分)
+  group_stem: 因應大業國中即將到來的30 周年校慶，班上如火如荼地討論著園遊會要販賣的商品，彤彤提議可以販賣她自己製作的舒芙蕾鬆餅，於是她提供了她自己製作舒芙蕾鬆餅的獨家配方，如下圖所示。彤彤預備先製作12
+    人份的舒芙蕾鬆餅給班上進行試吃，在準備食材時，發現家裡剛好缺少低筋麵粉和砂糖，其他材料則都有足夠的量，試協助彤彤解決問題：
+  shared_asset: g4_1_3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+shared_assets:
+- key: g4_1_3
+  label: 題組附圖
+  kind: figure
+  file: doc_113_台中_大業_數學_g7s2e2/g4_1_3_f1.png
+  used_by:
+  - doc_113_台中_大業_數學_g7s2e2_s4_1
+  - doc_113_台中_大業_數學_g7s2e2_s4_2
+  - doc_113_台中_大業_數學_g7s2e2_s4_3
+  crop:
+    page: 3
+    rect:
+    - 542.45
+    - 457.28
+    - 711.47
+    - 620.07

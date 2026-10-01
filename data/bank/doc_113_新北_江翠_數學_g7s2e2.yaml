@@ -1,49 +1,60 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 2
-  school: 新北市立江翠國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 康軒第二冊2-2至3-2  (二)頁數:本試卷試題卷共1張2頁(雙面印製)、答案卷共1頁  (三)試題及作答方式:全部試
   city: 新北
   school_short: 江翠
+  school: 新北市江翠國民中學
+  scope_note: 康軒第二冊2-2 至3-2
   id: doc_113_新北_江翠_數學_g7s2e2
-  title: 新北市立江翠國民中學 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 新北市江翠國民中學 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題4分,共40分)
     count: 10
   - ord: 2
     name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:(每格4分,共60分)
     count: 12
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-2/新北/江翠.pdf
+  scope:
+    lessons:
+    - number: 2-2
+      title: null
+    - number: 2-3
+      title: null
+    - number: 3-1
+      title: null
+    - number: 3-2
+      title: null
+    publisher: 康軒
+    raw: 康軒第二冊2-2 至3-2
+    volume: 第二冊
 questions:
 - id: doc_113_新北_江翠_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 判斷下列二元一次方程式的圖形,哪一個會通過原點?  (習作29頁)
+  stem: 判斷下列二元一次方程式的圖形，哪一個會通過原點？ （習作29 頁）
   options:
   - label: A
-    content: 3x+2y=1
+    content: $3x+2y=1$
   - label: B
-    content: $\frac{1}{3}$ y=-2x
+    content: $\frac{1}{3}y=-2x$
   - label: C
-    content: -x+5y=-3
+    content: $-x+5y=-3$
   - label: D
-    content: y= $\frac{7}{6}$ x-2
+    content: $y=\frac{7}{6}x-2$
 - id: doc_113_新北_江翠_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 坐標平面上,方程式y=0的圖形為何?(習作28頁)
+  stem: 坐標平面上，方程式$y=0$ 的圖形為何？（習作28 頁）
   options:
   - label: A
     content: x軸
@@ -58,7 +69,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 若Q(-4 , 5 )在方程式ax-3y=9的圖形上,則a的值是多少?(課本76頁)
+  stem: 若 $Q(-4,5)$在方程式 $ax-3y=9$ 的圖形上，則 a 的值是多少？（課本76 頁）
   options:
   - label: A
     content: '3'
@@ -73,7 +84,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 若(3a+1):(2a-5)=4:3,則a=?
+  stem: 若$(3a+1):(2a-5)=4:3$，則$a=$？（習作44 頁）
   options:
   - label: A
     content: '7'
@@ -82,100 +93,114 @@ questions:
   - label: C
     content: '17'
   - label: D
-    content: -23(習作44頁)
+    content: '-23'
 - id: doc_113_新北_江翠_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 小妍年齡的9倍等於媽媽年齡的4倍,兩人年齡相加為78,則小妍的年齡:媽媽的年齡為?
+  stem: 小妍年齡的9 倍等於媽媽年齡的4 倍，兩人年齡相加為78，則小妍的年齡：媽媽的年齡為? (習作35 頁)
   options:
   - label: A
-    content: '4:9'
+    content: 4：9
   - label: B
-    content: '9:4'
+    content: 9：4
   - label: C
-    content: '2:3'
+    content: 2：3
   - label: D
-    content: 26:52   (習作35頁)
+    content: 26：52
 - id: doc_113_新北_江翠_數學_g7s2e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 承上題,6年後小妍與媽媽的年齡比值為多少?
+  stem: 承上題，6 年後小妍與媽媽的年齡比值為多少？
   options:
   - label: A
-    content: ''
+    content: $\frac{9}{4}$
   - label: B
-    content: ''
+    content: $\frac{2}{3}$
   - label: C
-    content: ''
+    content: $\frac{1}{2}$
   - label: D
-    content: ''
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p1_f03.png
-  - key: p1_f04
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p1_f04.png
-  group_stem: （第 5 題）小妍年齡的9倍等於媽媽年齡的4倍,兩人年齡相加為78,則小妍的年齡:媽媽的年齡為?
+    content: $\frac{4}{9}$
+  group_stem: （第 5 題）小妍年齡的9 倍等於媽媽年齡的4 倍，兩人年齡相加為78，則小妍的年齡：媽媽的年齡為? (習作35 頁)
 - id: doc_113_新北_江翠_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 在坐標平面上畫出方程式x=y+1的圖形,應為下列何者?(課本83頁)
+  stem: 在坐標平面上畫出方程式$x=y+1$ 的圖形，應為下列何者？（課本83 頁）
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_江翠_數學_g7s2e2/1_7_optA.png
+      crop:
+        page: 1
+        rect:
+        - 104.55
+        - 582.04
+        - 205.07
+        - 682.9
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_江翠_數學_g7s2e2/1_7_optB.png
+      crop:
+        page: 1
+        rect:
+        - 241.51
+        - 582.04
+        - 342.03
+        - 682.9
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_新北_江翠_數學_g7s2e2/1_7_optC.png
+      crop:
+        page: 1
+        rect:
+        - 379.2
+        - 582.04
+        - 479.0
+        - 682.9
   - label: D
     content: ''
-  assets:
-  - key: p1_f05
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p1_f05.png
-  - key: p1_f06
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p1_f06.png
-  - key: p1_f07
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p1_f07.png
-  - key: p1_f08
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p1_f08.png
+    asset:
+      key: optD
+      file: doc_113_新北_江翠_數學_g7s2e2/1_7_optD.png
+      crop:
+        page: 1
+        rect:
+        - 503.05
+        - 582.04
+        - 604.3
+        - 682.9
 - id: doc_113_新北_江翠_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 下列各敘述中,何者y與x成反比?(課本120頁)
+  stem: 下列各敘述中，何者y 與 x 成反比？（課本120 頁）
   options:
   - label: A
-    content: 班上24人,男、女生x、y人。
+    content: 班上24 人，男、女生x、y 人。
   - label: B
-    content: 滿分100的試卷且每題分數固定,答錯x題,成績y。
+    content: 滿分100 的試卷且每題分數固定，答錯x 題，成績y。
   - label: C
-    content: 錢包裡的錢,用掉了x元,剩下y元
+    content: 錢包裡的錢，用掉了x 元，剩下y 元
   - label: D
-    content: 面積固定的長方形,長、寬各為x、y公分。
+    content: 面積固定的長方形，長、寬各為x、y 公分。
 - id: doc_113_新北_江翠_數學_g7s2e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 工程團隊預計由20位師傅施工可於5天完成,假設每位師傅每日負責的工作量相同,若要提早1天完工,應再加派幾位師傅?
+  stem: 工程團隊預計由20 位師傅施工可於5 天完成，假設每位師傅每日負責的工作量相同，若要提早1 天完工，應再加派幾位師傅？ （習作41 頁）
   options:
   - label: A
     content: '4'
@@ -184,111 +209,109 @@ questions:
   - label: C
     content: '6'
   - label: D
-    content: 7 (習作41頁)
+    content: '7'
 - id: doc_113_新北_江翠_數學_g7s2e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 兩條等長的繩子,一條圍成一個正方形,另一條圍成一個長寬比為3:2的長方形,請問正方形 與長方形的面積比為?
+  stem: 兩條等長的繩子，一條圍成一個正方形，另一條圍成一個長寬比為3：2 的長方形，請問正方形與長方形的面積比為？
   options:
   - label: A
-    content: '25:24'
+    content: 25：24
   - label: B
-    content: '16:15'
+    content: 16：15
   - label: C
-    content: '9:8'
+    content: 9：8
   - label: D
-    content: '1:1'
+    content: 1：1
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 二元一次方程式2x+3y=6、x-2y=6的圖形交點坐標為  1  ,此交點在第   2   象限內。 (習作30頁) 【試題結束!仔細檢查並將答案寫在答案卷】
-    【還有題目,請翻面 !】 2新北市江翠國民中學113學年度第二學期第2次定期考查七年級數學科試題卷  P. 七 年級 ____班 ____號  姓名:__________
-  assets:
-  - key: p1_f09
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p1_f09.png
+  stem: 二元一次方程式 $2x+3y=6$、$x-2y=6$ 的圖形交點坐標為 ① ，此交點在第 ② 象限內。（習作30 頁）
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 求方程式x-y=5與x軸、y軸所圍成三角形面積為    3    平方單位。
+  stem: 求方程式$x-y=5$ 與x 軸、y 軸所圍成三角形面積為 ③ 平方單位。
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: '寫出下列各比的比值,並以最簡分數表示:(課本95頁) (1)  $\frac{2}{3}$ (-$\frac{3}{4}$ )的比值=     4     (2)
-    (-1.4 ):(-2.6 ) 的比值=    5 :'
+  stem: "寫出下列各比的比值，並以最簡分數表示：(課本95 頁)\n(1) $\\frac{2}{3}:(-\\frac{3}{4})$的比值＝ ④ \n\
+    (2) $(-1.4):(-2.6)$ 的比值＝ ⑤"
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 坐標平面有三點A(2,4)、B(4,-6)、C(-k ,4k+1),若A、B、C三點都在方程式y=ax+b的圖形 上,則k=?    6     (習作27頁)
+  stem: 坐標平面有三點$A(2,4)$、$B(4,-6)$、$C(-k,4k+1)$，若A、B、C 三點都在方程式$y=ax+b$ 的圖形上，則$k=$？
+    ⑥ （習作27 頁）
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 若9:( ) = 2x:1 ,x=   7
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p2_f01.png
+  stem: 若 $9:(-\frac{3}{2})=2x:1$ ，$x=$ ⑦
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: '設y與x成反比,則: (1)當y=3時,x=-4,x與y的關係式為何?    8 (2)若y=2時,x=   9'
+  stem: "設y 與x 成反比，則：\n(1)當$y=3$ 時，$x=-4$，$x$ 與y 的關係式為何？ ⑧ \n(2)若$y=2$ 時，$x=$ ⑨"
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 小翊騎單車2小時共騎了40公里,小靖以20公里每小時的時速共騎了60公里,則小翊與小靖騎 單車的平均速率比值為何?    10       (以最簡分數表示)
-    (習作33頁)
+  stem: 小翊騎單車2 小時共騎了 40 公里，小靖以20 公里每小時的時速共騎了60 公里，則小翊與小靖騎單車的平均速率比值為何？ ⑩ (以最簡分數表示)
+    (習作33 頁)
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 小安想調配灰色油漆,於是將2.7公升的白漆與0.3公升的黑漆混合,但發現油漆不夠,若想再調 配出2公升灰色油漆,其中需倒入  11  公升的黑漆才能調配出原來的顏色?(習作34頁)
+  stem: 小安想調配灰色油漆，於是將2.7 公升的白漆與0.3 公升的黑漆混合，但發現油漆不夠，若想再調配出2 公升灰色油漆，其中需倒入 ⑪ 公升的黑漆才能調配出原來的顏色？（習作34
+    頁）
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 某校上學期男學生與女學生的人數比為4:3,下學期男學生人數不變,女學生減少了40人,男 學生與女學生的人數比變成2:1,則下學期全校學生共有多少人?    12    (課本107頁)
+  stem: 某校上學期男學生與女學生的人數比為 4：3，下學期男學生人數不變，女學生減少了 40 人，男學生與女學生的人數比變成 2：1，則下學期全校學生共有多少人？
+    ⑫ （課本107 頁)
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 甲、乙兩人各有一筆錢,若兩人均將自己所有錢的 拿來交換,交換後甲的錢的5倍等於乙的錢 的4倍,則甲、乙原有錢的比為?    13    。
-  assets:
-  - key: p2_f02
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p2_f02.png
+  stem: 甲、乙兩人各有一筆錢，若兩人均將自己所有錢的 $\frac{1}{3}$ 拿來交換，交換後甲的錢的5 倍等於乙的錢的4 倍，則甲、乙原有錢的比為？
+    ⑬ 。
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_11
   section: 2
   number: 11
   type: fill
   page: 2
-  stem: 直線L為二元一次方程式3x+y=3的圖形,在直線L上可找到某點,此點到x軸的距離是到y軸 的距離 的2倍,則所有可能的點坐標為    14    。
+  stem: 直線L 為二元一次方程式$3x+y=3$ 的圖形，在直線L 上可找到某點，此點到x 軸的距離是到y 軸的距離 的2 倍，則所有可能的點坐標為 ⑭ 。
 - id: doc_113_新北_江翠_數學_g7s2e2_s2_12
   section: 2
   number: 12
   type: fill
   page: 2
-  stem: 如下圖,坐標平面上,A點坐標為(-3,0),B、C兩點的y坐標分別為15、6且D點在x軸上。若A 、E兩點在方程式2x+y+6=0的圖形上,且△ABC與△ADE面積相等,則E點的x坐標為  15
-    。 y B C A D x o E 【試題結束!仔細檢查並將答案寫在答案卷】
+  stem: 如下圖，坐標平面上，A 點坐標為(-3,0)，B、C 兩點的y 坐標分別為15、6 且D 點在x 軸上。若A、E 兩點在方程式$2x+y+6=0$
+    的圖形上，且$\triangle ABC$ 與$\triangle ADE$ 面積相等，則E 點的x 坐標為 ⑮ 。
   assets:
-  - key: p2_f03
+  - key: s2_12_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e2/p2_f03.png
+    file: doc_113_新北_江翠_數學_g7s2e2/s2_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 88.52
+      - 777.04
+      - 277.2
+      - 948.06
