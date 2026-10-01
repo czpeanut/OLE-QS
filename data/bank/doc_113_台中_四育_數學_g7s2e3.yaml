@@ -1,39 +1,43 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 3
-  school: 臺中市立四育國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 'Ch4不等式的應用、Ch5統計圖表、Ch6線對稱圖形與三視圖        年      班 座號:        姓名'
   city: 台中
   school_short: 四育
+  school: 臺中市立四育國民中學
+  scope_note: Ch4 不等式的應用、Ch5 統計圖表、Ch6 線對稱圖形與三視圖
   id: doc_113_台中_四育_數學_g7s2e3
-  title: 臺中市立四育國民中學 113學年度第2學期第3次定期評量7年級數學科試題
+  title: 臺中市立四育國民中學 113學年度第2學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(每題4分,共84分)
+    name: 一、選擇題（每題4 分，共84 分）
     count: 21
   - ord: 2
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(每題4分,共84分)
-    count: 0
-  - ord: 3
-    name: 二、非選擇題
-    type: single
-    score_rule: 二、非選擇題(第1題6分;第2、3題各5分,無計算過程不予計分)
+    name: 二、非選擇題（第1 題6 分；第2、3 題各5 分，無計算過程不予計分）
     count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-3/台中/四育.pdf
+  scope:
+    lessons:
+    - number: Ch4
+      title: 不等式的應用
+    - number: Ch5
+      title: 統計圖表
+    - number: Ch6
+      title: 線對稱圖形與三視圖
+    publisher: null
+    raw: Ch4 不等式的應用、Ch5 統計圖表、Ch6 線對稱圖形與三視圖
+    volume: null
 questions:
 - id: doc_113_台中_四育_數學_g7s2e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列四邊形中,哪一個不能稱為線對稱圖形?【習71】
+  stem: 下列四邊形中，哪一個不能稱為線對稱圖形？【習71】
   options:
   - label: A
     content: 矩形
@@ -48,29 +52,29 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 下列敘述何者錯誤?【課171、177、191、192】
+  stem: 下列敘述何者錯誤？【課171、177、191、192】
   options:
   - label: A
-    content: 當資料數值屬於連續性,且適合分組時使用,宜採用直方圖來表示。
+    content: 當資料數值屬於連續性，且適合分組時使用，宜採用直方圖來表示。
   - label: B
-    content: 如果想呈現各類資料的百分率,宜採用圓形圖來做表示。
+    content: 如果想呈現各類資料的百分率，宜採用圓形圖來做表示。
   - label: C
-    content: 一般而言,資料中的極端值不太會影響中位數與眾數。
+    content: 一般而言，資料中的極端值不太會影響中位數與眾數。
   - label: D
-    content: 在一組資料中,最大的數稱為眾數。
+    content: 在一組資料中，最大的數稱為眾數。
 - id: doc_113_台中_四育_數學_g7s2e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 下列敘述何者正確?【課215、習70】
+  stem: 下列敘述何者正確？【課215、習70】
   options:
   - label: A
-    content: 通過直線外一點P到直線L的垂線只有一條
+    content: 通過直線外一點Ｐ到直線Ｌ的垂線只有一條
   - label: B
-    content: 能將AB̅̅̅̅̅ 平分的直線只有一條
+    content: 能將 $\overline{AB}$ 平分的直線只有一條
   - label: C
-    content: AB⃗⃗⃗⃗⃗  與BA⃗⃗⃗⃗⃗  代表相同的射線
+    content: $\overline{AB}$ 與 $\overline{BA}$ 代表相同的射線
   - label: D
     content: 等腰三角形底邊中垂線不一定會通過三角形的頂點
 - id: doc_113_台中_四育_數學_g7s2e3_s1_4
@@ -78,114 +82,99 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 下列何者是右圖以虛線為對稱軸之對稱圖形的另一半?【課213】
+  stem: 下列何者是右圖以虛線為對稱軸之對稱圖形的另一半？【課213】
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_台中_四育_數學_g7s2e3/1_4_optA.png
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_台中_四育_數學_g7s2e3/1_4_optB.png
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_台中_四育_數學_g7s2e3/1_4_optC.png
   - label: D
     content: ''
+    asset:
+      key: optD
+      file: doc_113_台中_四育_數學_g7s2e3/1_4_optD.png
   assets:
-  - key: p1_f01
+  - key: s1_4_f1
     kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f03.png
+    file: doc_113_台中_四育_數學_g7s2e3/s1_4_f1.png
 - id: doc_113_台中_四育_數學_g7s2e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 在七邊形ABCDEFG中,以A為頂點所形成的對角線共有幾條?【課209】
+  stem: 在七邊形ABCDEFG 中，以A 為頂點所形成的對角線共有幾條？【課209】
   options:
   - label: A
-    content: 4條
+    content: 4 條
   - label: B
-    content: 6條
+    content: 6 條
   - label: C
-    content: 7條
+    content: 7 條
   - label: D
-    content: 14條
+    content: 14 條
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_113_台中_四育_數學_g7s2e3/s1_5_f1.png
 - id: doc_113_台中_四育_數學_g7s2e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 試求不等式 −3x+ 1 ≥−2 ,其解的圖示為下列何者?【習54】
+  stem: 試求不等式 $-3x+ 1 \geq-2$ ，其解的圖示為下列何者？【習54】
   options:
   - label: A
-    content: 0 -1 1
+    content: ''
+    asset:
+      key: optA
+      file: doc_113_台中_四育_數學_g7s2e3/1_6_optA.png
   - label: B
-    content: 0 -1 1
+    content: ''
+    asset:
+      key: optB
+      file: doc_113_台中_四育_數學_g7s2e3/1_6_optB.png
   - label: C
-    content: 0 -1 1
+    content: ''
+    asset:
+      key: optC
+      file: doc_113_台中_四育_數學_g7s2e3/1_6_optC.png
   - label: D
-    content: 0 -1 1
-  assets:
-  - key: p1_f04
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f04.png
-  - key: p1_f05
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f05.png
-  - key: p1_f06
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f06.png
-  - key: p1_f07
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f07.png
-  - key: p1_f08
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f08.png
-  - key: p1_f09
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f09.png
-  - key: p1_f10
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f10.png
-  - key: p1_f11
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f11.png
-  - key: p1_f12
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f12.png
-  - key: p1_f13
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f13.png
-  - key: p1_f14
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f14.png
-  - key: p1_f15
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p1_f15.png
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_台中_四育_數學_g7s2e3/1_6_optD.png
 - id: doc_113_台中_四育_數學_g7s2e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 當a> b  時,如果c< 0 ,則下列選項何者錯誤?【習53】
+  stem: 當 $a> b$ 時，如果 $c< 0$ ，則下列選項何者錯誤？【習53】
   options:
   - label: A
-    content: a+c> b+c
+    content: $a+c> b+c$
   - label: B
-    content: a−c> b−c
+    content: $a-c> b-c$
   - label: C
-    content: a× c> b× c
+    content: $a\times c> b\times c$
   - label: D
-    content: c−a< c−b
+    content: $c-a< c-b$
 - id: doc_113_台中_四育_數學_g7s2e3_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 已知5筆資料,其數值分別是5、12、18、24、31,試問平均數?【習62】
+  stem: 已知5 筆資料，其數值分別是5、12、18、24、31，試問平均數？【習62】
   options:
   - label: A
     content: '17'
@@ -200,7 +189,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 承上題,若將數值5加入上述資料中,可得眾數a ,中位數b ,試問b−a= ?【習62】
+  stem: 承上題，若將數值5 加入上述資料中，可得眾數 $a$ ，中位數 $b$ ，試問 $b-a=$ ？【習62】
   options:
   - label: A
     content: '7'
@@ -209,118 +198,150 @@ questions:
   - label: C
     content: '13'
   - label: D
-    content: 16下 頁 有 題(1/3) A G B F E C D
-  group_stem: （第 8 題）已知5筆資料,其數值分別是5、12、18、24、31,試問平均數?【習62】
+    content: '16'
+  group_stem: （第 8 題）已知5 筆資料，其數值分別是5、12、18、24、31，試問平均數？【習62】
 - id: doc_113_台中_四育_數學_g7s2e3_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 右圖為四育國中A班學生體重次數分配直方圖,試問此A班同學體重的中位數在哪一組? 【課182】
+  stem: '右圖為四育國中A 班學生體重次數分配直方圖，試問此A 班同學體重的中位數在哪一組？
+
+    【課182】'
   options:
   - label: A
-    content: 65~70公斤
+    content: 65~70 公斤
   - label: B
-    content: 70~75公斤
+    content: 70~75 公斤
   - label: C
-    content: 75~80公斤
+    content: 75~80 公斤
   - label: D
     content: 無法得知
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_113_台中_四育_數學_g7s2e3/s1_10_f1.png
 - id: doc_113_台中_四育_數學_g7s2e3_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 承上題10,試問A班同學體重的平均數?【習62】
+  stem: 承上題 10，試問A 班同學體重的平均數？【習62】
   options:
   - label: A
-    content: 76公斤
+    content: 76 公斤
   - label: B
-    content: 76.5公斤
+    content: 76.5 公斤
   - label: C
-    content: 77公斤
+    content: 77 公斤
   - label: D
-    content: 77.5公斤
-  group_stem: （第 10 題）右圖為四育國中A班學生體重次數分配直方圖,試問此A班同學體重的中位數在哪一組? 【課182】
+    content: 77.5 公斤
+  group_stem: '（第 10 題）右圖為四育國中A 班學生體重次數分配直方圖，試問此A 班同學體重的中位數在哪一組？
+
+    【課182】'
 - id: doc_113_台中_四育_數學_g7s2e3_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 承上題10,若要將此次數分配直方圖繪製成圓形圖,試問70~75公斤在圓形圖中所占的圓 心角度數?【課171】
+  stem: 承上題 10，若要將此次數分配直方圖繪製成圓形圖，試問70~75 公斤在圓形圖中所占的圓心角度數？【課171】
   options:
   - label: A
-    content: 144度
+    content: 144 度
   - label: B
-    content: 136度
+    content: 136 度
   - label: C
-    content: 120度
+    content: 120 度
   - label: D
-    content: 108度
-  group_stem: '（第 10 題）右圖為四育國中A班學生體重次數分配直方圖,試問此A班同學體重的中位數在哪一組? 【課182】
+    content: 108 度
+  group_stem: '（第 10 題）右圖為四育國中A 班學生體重次數分配直方圖，試問此A 班同學體重的中位數在哪一組？
 
-    （第 11 題）承上題10,試問A班同學體重的平均數?【習62】'
+    【課182】
+
+    （第 11 題）承上題 10，試問A 班同學體重的平均數？【習62】'
 - id: doc_113_台中_四育_數學_g7s2e3_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 解不等式 $\frac{2}{3}$ x− $\frac{3}{2}$ (x−1) < −1 【課155】 $\frac{3}{5}$
+  stem: 解不等式 $\frac{2}{3}x-\frac{3}{2}(x-1) < -1$ 【課155】
   options:
-  - label: B
-    content: x> − $\frac{3}{5}$
   - label: A
-    content: x< −
+    content: $x< -\frac{3}{5}$
+  - label: B
+    content: $x> -\frac{3}{5}$
   - label: C
-    content: x< 3
+    content: $x< 3$
   - label: D
-    content: x> 3
+    content: $x> 3$
 - id: doc_113_台中_四育_數學_g7s2e3_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 下列選項中有一張紙片會與右圖緊密拼湊成正方形紙片,且正方形上的 黑色區域會形成線對稱圖形,試問此紙片為何?【改103會】
+  stem: 下列選項中有一張紙片會與右圖緊密拼湊成正方形紙片，且正方形上的黑色區域會形成線對稱圖形，試問此紙片為何？【改103 會】
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_台中_四育_數學_g7s2e3/1_14_optA.png
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_台中_四育_數學_g7s2e3/1_14_optB.png
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_台中_四育_數學_g7s2e3/1_14_optC.png
   - label: D
     content: ''
+    asset:
+      key: optD
+      file: doc_113_台中_四育_數學_g7s2e3/1_14_optD.png
+  assets:
+  - key: s1_14_f1
+    kind: figure
+    file: doc_113_台中_四育_數學_g7s2e3/s1_14_f1.png
 - id: doc_113_台中_四育_數學_g7s2e3_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 在寒假家政作業中,老師要求將一張正方形色紙如下圖的步驟對摺,然後將箭頭部分割 下,試問下列選項何者是展開後的圖形?【習73】
+  stem: 在寒假家政作業中，老師要求將一張正方形色紙如下圖的步驟對摺，然後將箭頭部分割下，試問下列選項何者是展開後的圖形？【習73】
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_台中_四育_數學_g7s2e3/1_15_optA.png
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_台中_四育_數學_g7s2e3/1_15_optB.png
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_台中_四育_數學_g7s2e3/1_15_optC.png
   - label: D
     content: ''
+    asset:
+      key: optD
+      file: doc_113_台中_四育_數學_g7s2e3/1_15_optD.png
   assets:
-  - key: p2_f01
+  - key: s1_15_f1
     kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p2_f02.png
-  - key: p2_f03
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p2_f03.png
+    file: doc_113_台中_四育_數學_g7s2e3/s1_15_f1.png
 - id: doc_113_台中_四育_數學_g7s2e3_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 已知右圖為一線對稱圖形,若從甲、乙、丙、丁中,選取兩格空白格子著色後,整體仍為 線對稱圖形,則應選擇甲、乙、丙、丁中哪兩個格子?【改114會】
+  stem: 已知右圖為一線對稱圖形，若從甲、乙、丙、丁中，選取兩格空白格子著色後，整體仍為線對稱圖形，則應選擇甲、乙、丙、丁中哪兩個格子？【改114 會】
   options:
   - label: A
     content: 甲、丙
@@ -329,15 +350,18 @@ questions:
   - label: C
     content: 乙、丙
   - label: D
-    content: 乙、丁 下 頁 有 題(2/3) 次 數 ( 人 ) 2 4 6 8 10 12 ~~ 65 70 75 80 85 90體重(公斤) 甲
-      乙 丙 丁
+    content: 乙、丁
+  assets:
+  - key: s1_16_f1
+    kind: figure
+    file: doc_113_台中_四育_數學_g7s2e3/s1_16_f1.png
 - id: doc_113_台中_四育_數學_g7s2e3_s1_17
   section: 1
   number: 17
   type: single
   page: 3
-  stem: 科博館的門票一張為120元,20人以上(含)的團體可享75折優惠價。翁老師帶班上學 生到科博館進行戶外教學。已知總人數在10人以上(含),但未滿20人。買票時翁老師發
-    現,直接購買團體票反而比較便宜,試問翁老師班上的學生人數最少有多少人?【課158】
+  stem: 科博館的門票一張為120 元，20 人以上（含）的團體可享75 折優惠價。翁老師帶班上學生到科博館進行戶外教學。已知總人數在10 人以上（含），但未滿20
+    人。買票時翁老師發現，直接購買團體票反而比較便宜，試問翁老師班上的學生人數最少有多少人？【課158】
   options:
   - label: A
     content: '15'
@@ -352,7 +376,7 @@ questions:
   number: 18
   type: single
   page: 3
-  stem: 若不等式ax+ 21 > 1僅有四個正整數解,且a為整數,則a的值為何?
+  stem: 若不等式 $ax+ 21 > 1$ 僅有四個正整數解，且 $a$ 為整數，則 $a$ 的值為何？
   options:
   - label: A
     content: '-4'
@@ -367,7 +391,7 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 有六個數由小到大排列,已知這六個數的平均數35,而前兩數的平均數為17,最後兩數的 平均數為50,則此六個數的中位數為多少?
+  stem: 有六個數由小到大排列，已知這六個數的平均數35，而前兩數的平均數為17，最後兩數的平均數為50，則此六個數的中位數為多少？
   options:
   - label: A
     content: '35'
@@ -382,60 +406,34 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: 已知 (a , b) 在第二象限,下列哪一個圖形表示為ax< b的解?
+  stem: 已知 $(a,b)$ 在第二象限，下列哪一個圖形表示為 $ax< b$ 的解？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_台中_四育_數學_g7s2e3/1_20_optA.png
   - label: B
-    content: $\frac{b}{a}$ 0 0
+    content: ''
+    asset:
+      key: optB
+      file: doc_113_台中_四育_數學_g7s2e3/1_20_optB.png
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_台中_四育_數學_g7s2e3/1_20_optC.png
   - label: D
-    content: $\frac{b}{a}$ 0 $\frac{b}{a}$
-  assets:
-  - key: p3_f01
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f01.png
-  - key: p3_f02
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f02.png
-  - key: p3_f03
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f03.png
-  - key: p3_f04
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f04.png
-  - key: p3_f05
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f05.png
-  - key: p3_f06
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f06.png
-  - key: p3_f07
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f07.png
-  - key: p3_f08
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f08.png
-  - key: p3_f09
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f09.png
-  - key: p3_f10
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f10.png
-  - key: p3_f11
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f11.png
-  - key: p3_f12
-    kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f12.png
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_台中_四育_數學_g7s2e3/1_20_optD.png
 - id: doc_113_台中_四育_數學_g7s2e3_s1_21
   section: 1
   number: 21
   type: single
   page: 3
-  stem: 圖(一)是甲、乙兩校的國文成績折線圖,圖(二)是丙、丁兩校的英文成績折線圖,根據圖 中的資訊,試判斷下列敘述何者正確?【改95基】 375次 數 甲325
-    ( 人275 ) 225 175乙125 ~~ 0 20 40 60 80 100國文成績(分) 圖(一)
+  stem: 圖(一)是甲、乙兩校的國文成績折線圖，圖(二)是丙、丁兩校的英文成績折線圖，根據圖中的資訊，試判斷下列敘述何者正確？【改95 基】
   options:
   - label: A
     content: 甲校國文成績的平均分數比乙校低
@@ -444,34 +442,44 @@ questions:
   - label: C
     content: 丙校英文成績的平均分數比丁校低
   - label: D
-    content: '丙校英文成績的平均分數比丁校高 讓刻苦成為習慣,用汗水澆灌未來(3/3) $\frac{b}{a}$ 0 375次 數325丙 ( 人275
-      ) 225丁175 125 ~~ 0 20 40 60 80 100英文成績(分) 圖(二) 臺中市立四育國民中學113學年度第二學期七年級數學科第三次定期評量
-      範圍:Ch4不等式的應用、Ch5統計圖表、Ch6線對稱圖形與三視圖 年      班 座號:        姓名:'
+    content: 丙校英文成績的平均分數比丁校高
   assets:
-  - key: p3_f13
+  - key: s1_21_f1
     kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p3_f13.png
-- id: doc_113_台中_四育_數學_g7s2e3_s3_1
-  section: 3
+    file: doc_113_台中_四育_數學_g7s2e3/s1_21_f1.png
+  - key: s1_21_f2
+    kind: figure
+    file: doc_113_台中_四育_數學_g7s2e3/s1_21_f2.png
+- id: doc_113_台中_四育_數學_g7s2e3_s2_1
+  section: 2
   number: 1
-  type: single
+  type: essay
   page: 4
-  stem: 已知9個正方體積木堆疊立體圖形如右圖,請依箭頭標示畫出三視圖 【習72】 前視圖 右視圖 上視圖 前面
-- id: doc_113_台中_四育_數學_g7s2e3_s3_2
-  section: 3
-  number: 2
-  type: single
-  page: 4
-  stem: 四育飲料店為響應環保,茉香綠茶大杯自備 容器可減5元,若老闆想讓自備容器者,購 買茉香綠茶特大杯每毫升的價格比大杯每毫 升的價格便宜,則當自備容器者購買特大杯
-    時,至少要減多少元? 【習56】 品項 大杯 特大杯 (750毫升) (1000毫升) 茉香綠茶40元55元
-- id: doc_113_台中_四育_數學_g7s2e3_s3_3
-  section: 3
-  number: 3
-  type: single
-  page: 4
-  stem: 小強在前6次的數學小考成績分別為54、 38、26、42、50、20,若他希望最後的平均 能達到60分以上,則最少還要有幾次小 考,才有機會達成這個目標?
-    (假設每次小考的滿分都是100分) 大杯 (750毫升) 茉香綠茶40元
+  stem: '已知9 個正方體積木堆疊立體圖形如右圖，請依箭頭標示畫出三視圖
+
+    【習72】'
   assets:
-  - key: p4_f02
+  - key: s2_1_f1
     kind: figure
-    file: doc_113_台中_四育_數學_g7s2e3/p4_f02.png
+    file: doc_113_台中_四育_數學_g7s2e3/s2_1_f1.png
+- id: doc_113_台中_四育_數學_g7s2e3_s2_2
+  section: 2
+  number: 2
+  type: calc
+  page: 4
+  stem: '四育飲料店為響應環保，茉香綠茶大杯自備容器可減5 元，若老闆想讓自備容器者，購買茉香綠茶特大杯每毫升的價格比大杯每毫升的價格便宜，則當自備容器者購買特大杯時，至少要減多少元？【習56】
+
+
+    | 品項 | 大杯（７５０毫升） | 特大杯（１０００毫升） |
+
+    | :--- | :--- | :--- |
+
+    | 茉香綠茶 | ４０元 | ５５元 |'
+- id: doc_113_台中_四育_數學_g7s2e3_s2_3
+  section: 2
+  number: 3
+  type: calc
+  page: 4
+  stem: '小強在前6 次的數學小考成績分別為54、38、26、42、50、20，若他希望最後的平均能達到60 分以上，則最少還要有幾次小考，才有機會達成這個目標？
+
+    (假設每次小考的滿分都是100 分)'

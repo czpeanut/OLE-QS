@@ -1,92 +1,290 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 1
-  school: 新北市立丹鳳高級中學國中
-  grade: 7
-  subject: 數學
   city: 新北
   school_short: 丹鳳
+  school: 新北市立丹鳳高中國中部
   id: doc_113_新北_丹鳳_數學_g7s2e1
-  title: 新北市立丹鳳高級中學國中 113學年度第2學期第1次定期評量7年級數學科試題
+  title: 新北市立丹鳳高中國中部 113學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、選擇基礎題
-    type: single
-    score_rule: '一、選擇基礎題: 20 % (共5題,每題4分)'
+    name: 一、選擇基礎題： 20 % (共5 題，每題4 分)
     count: 5
   - ord: 2
-    name: 二、填充基礎題
-    type: fill
-    score_rule: 二、填充基礎題:20 % (共5題,每題4分)
-    count: 0
+    name: 二、填充基礎題：20 % (共5 題，每題4 分)
+    count: 5
   - ord: 3
-    name: 三、選擇題
-    type: single
-    score_rule: 三、選擇題:20 % (共5題,每題4分)
-    count: 0
+    name: 三、選擇題：20 % (共5 題，每題4 分)
+    count: 5
   - ord: 4
-    name: 四、填充題
-    type: fill
-    score_rule: 四、填充題:40 % (共10題,每題4分)
-    count: 0
+    name: 四、填充題：40 % (共10 題，每題4 分)
+    count: 10
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/新北/丹鳳.pdf
 questions:
 - id: doc_113_新北_丹鳳_數學_g7s2e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 依上文選出第 1 格最適當的答案
+  stem: ''
   options:
   - label: A
-    content: (8x-5y+2)+(3x+3y+1) = 11x-8y+3。
+    content: $(8x - 5y + 2) + (3x + 3y + 1) = 11x - 8y + 3$。
   - label: B
-    content: (8x-5y+2)-(3x+3y+1) = 5x-8y+1。
-  group_stem: (注意:只有兩個選項,選出敘述正確的選項)
+    content: $(8x - 5y + 2) - (3x + 3y + 1) = 5x - 8y + 1$。
+  group_stem: 一、選擇基礎題： 20 % (共5 題，每題4 分)
 - id: doc_113_新北_丹鳳_數學_g7s2e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 依上文選出第 2 格最適當的答案
+  stem: ''
   options:
   - label: A
-    content: 2x+5y-4x+y-6=-2x+4y是二元一次方程式。
+    content: $2x + 5y - 4x + y - 6 = -2x + 4y$ 是二元一次方程式。
   - label: B
-    content: 2x-5y+4x-y=8x-3y+1是二元一次方程式。
-  group_stem: (注意:只有兩個選項,選出敘述正確的選項)
+    content: $2x - 5y + 4x - y = 8x - 3y + 1$ 是二元一次方程式。
+  group_stem: 一、選擇基礎題： 20 % (共5 題，每題4 分)
 - id: doc_113_新北_丹鳳_數學_g7s2e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: '計算x=-3、y=1是哪一個二元一次方程式的解:'
+  stem: 計算 $x = -3$、$y = 1$ 是哪一個二元一次方程式的解：
   options:
   - label: A
-    content: 3x+2y+7=0。
+    content: $3x + 2y + 7 = 0$。
   - label: B
-    content: 5x+3y+8=0。
+    content: $5x + 3y + 8 = 0$。
 - id: doc_113_新北_丹鳳_數學_g7s2e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 依上文選出第 4 格最適當的答案
+  stem: ''
   options:
   - label: A
-    content: 解{ 2x+y=1...1 4x-y=5...2時,可由1-2消去y。 3x-4y=13...1 2x+3y=3...2時,可由1×3+2×4消去y。
+    content: 解 $\begin{cases} 2x + y = 1 \cdots ① \\ 4x - y = 5 \cdots ② \end{cases}$
+      時，可由 ①－② 消去 $y$。
   - label: B
-    content: 解{
-  group_stem: (注意:只有兩個選項,選出敘述正確的選項)
+    content: 解 $\begin{cases} 3x - 4y = 13 \cdots ① \\ 2x + 3y = 3 \cdots ② \end{cases}$
+      時，可由 ①$\times 3$＋②$\times 4$ 消去 $y$。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 83%）
+  group_stem: 一、選擇基礎題： 20 % (共5 題，每題4 分)
 - id: doc_113_新北_丹鳳_數學_g7s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: '若P點到x軸的距離是2,到y軸的距離是3。則在 第二象限P點的座標是:'
+  stem: 若 $P$ 點到 $x$ 軸的距離是 2，到 $y$ 軸的距離是 3。則在第二象限 $P$ 點的座標是：
   options:
   - label: A
-    content: (-3 , 2)
+    content: $(-3, 2)$
   - label: B
-    content: (-2 , 3)。
+    content: $(-2, 3)$。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 在 $x$ 軸上的點有：______⑥______。
+  group_stem: '※在下表中A~I 共9 組座標，請依據下列問題，
+
+    在6~7 題中填寫A~I 的英文代碼。(完全答對才給分)
+
+
+    | A $(-\frac{1}{2}, 2)$ | B $(0, 8)$ | C $(12, -\frac{11}{3})$ |
+
+    | --- | --- | --- |
+
+    | D $(-9, 0)$ | E $(-2, 1)$ | F $(0, -\frac{1}{4})$ |
+
+    | G $(-\frac{23}{32}, -\frac{23}{32})$ | H $(5, 0)$ | I $(1, -5)$ |'
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 在第二象限的點有：______⑦______。
+  group_stem: '※在下表中A~I 共9 組座標，請依據下列問題，
+
+    在6~7 題中填寫A~I 的英文代碼。(完全答對才給分)
+
+
+    | A $(-\frac{1}{2}, 2)$ | B $(0, 8)$ | C $(12, -\frac{11}{3})$ |
+
+    | --- | --- | --- |
+
+    | D $(-9, 0)$ | E $(-2, 1)$ | F $(0, -\frac{1}{4})$ |
+
+    | G $(-\frac{23}{32}, -\frac{23}{32})$ | H $(5, 0)$ | I $(1, -5)$ |'
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 已知 $a$ 為負數、且 $ab$ 為負數，則 $P(b, b-a)$ 在第______⑧______象限。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 1
+  stem: 坐標平面上有一點 $P(8, -2)$。若從 $P$ 點出發，先向下 3 單位，再向左 5 單位，最後到達 $Q$ 點，則 $Q$ 點的坐標為：______⑨______。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 1
+  stem: 在坐標平面上，從阿丹家向左 4 單位，再向上 3 單位，到達小鳳家 $(2, 1)$，則阿丹家的坐標為：______⑩______。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s3_11
+  section: 3
+  number: 11
+  type: single
+  page: 1
+  stem: 下列各組數中，何者不是二元一次方程式 $2x + 3y = 7$ 的解？
+  options:
+  - label: A
+    content: $x = 2$、$y = 1$
+  - label: B
+    content: $x = \frac{5}{2}$、$y = \frac{2}{3}$
+  - label: C
+    content: $x = -2$、$y = 3$
+  - label: D
+    content: $x = 8$、$y = -3$。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s3_12
+  section: 3
+  number: 12
+  type: single
+  page: 1
+  stem: 若 $x$、$y$ 皆為正整數，則二元一次方程式 $2x + 3y = 24$ 的解有：
+  options:
+  - label: A
+    content: 無限多
+  - label: B
+    content: '5'
+  - label: C
+    content: '4'
+  - label: D
+    content: 3 組。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s3_13
+  section: 3
+  number: 13
+  type: single
+  page: 1
+  stem: 下列敘述，何者正確：
+  options:
+  - label: A
+    content: 二元一次方程式只有一組解。
+  - label: B
+    content: $8x + y - 3$ 是一個二元一次方程式。
+  - label: C
+    content: $x = -1$、$y = 1$ 是聯立方程式 $\begin{cases} 3x + 2y = -1 \\ 2x + 3y = 1 \end{cases}$
+      的解。
+  - label: D
+    content: 若 $x = m$、$y = n$ 是二元一次方程式 $2x - 3y = 4$ 的一組解，則 $2n - 3m = 4$。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s3_14
+  section: 3
+  number: 14
+  type: single
+  page: 1
+  stem: 有一條繩子可圍成一個邊長為 $x$ 公尺的正六邊形，也可圍成一個邊長為 $y$ 公尺的正方形，若正方形的邊長比正六邊形邊長的 2 倍少 4 公尺，則繩長是：
+  options:
+  - label: A
+    content: '48'
+  - label: B
+    content: '36'
+  - label: C
+    content: '72'
+  - label: D
+    content: 60 公尺。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s3_15
+  section: 3
+  number: 15
+  type: single
+  page: 1
+  stem: 已知 $A(m, n)$ 在第二象限內，下列敘述，何者正確：
+  options:
+  - label: A
+    content: $(-n^{2}, mn)$ 在第一象限
+  - label: B
+    content: $(\frac{m}{n}, -\frac{n}{m})$ 在第二象限
+  - label: C
+    content: $(m^{2}, n^{3})$ 在第三象限
+  - label: D
+    content: $(\frac{m}{n}, mn)$ 在第四象限。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_16
+  section: 4
+  number: 16
+  type: fill
+  page: 1
+  stem: 已知 $x - 2y = 13$，計算 $3(4x - 8y + 11) - 2(x - 2y + 23)$ 的值為______⑯______。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_17
+  section: 4
+  number: 17
+  type: fill
+  page: 1
+  stem: 化簡 $\frac{2x - y + 4}{2} - \frac{x + 2y - 1}{3}$______⑰______。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_18
+  section: 4
+  number: 18
+  type: fill
+  page: 1
+  stem: 若 $\begin{cases} ax + 2by = 6 \\ 3ax - by = 4 \end{cases}$ 的解為 $x = 2$、$y
+    = 3$，則 $a + b = $______⑱______。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 86%）
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_19
+  section: 4
+  number: 19
+  type: fill
+  page: 1
+  stem: 解 $\begin{cases} 4x + y = -1 + 3x - y \\ 3x - 2y - 13 = 0 \end{cases}$，計算
+    $x - y = $______⑲______。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 84%）
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_20
+  section: 4
+  number: 20
+  type: fill
+  page: 1
+  stem: 解 $\begin{cases} \frac{x}{2} + \frac{y}{8} = \frac{9}{2} \\ \frac{4x}{5} +
+    y = 12 \end{cases}$，計算 $x + y = $______⑳______。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 83%）
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_21
+  section: 4
+  number: 21
+  type: fill
+  page: 1
+  stem: 解 $\frac{2x - 5}{3} = \frac{x - 2y}{4} = \frac{y - 11}{2}$，則 $x + y = $______㉑______。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_22
+  section: 4
+  number: 22
+  type: fill
+  page: 1
+  stem: 小翊買了 5 張全票、2 張優待票，共 360 元；小妍買 3 張全票、1 張優待票，共 210 元。則阿丹買 1 張全票、2 張優待票，共______㉒______元。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_23
+  section: 4
+  number: 23
+  type: fill
+  page: 1
+  stem: 阿瑤班上各有男女同學若干人。已知班上的男生比女生多 5 人，某日有兩位女同學請公假參加數學競賽，此時班上的男生是女生的 2 倍少 7 人，試問阿瑤全班共有______㉓______位同學。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_24
+  section: 4
+  number: 24
+  type: fill
+  page: 1
+  stem: 丹丹商店的礦泉水售價分為兩種：大瓶的每箱 200 元，小瓶的每箱 120 元。若共賣出 20 箱，但結帳時店員把兩種售價看反了，結果少收 800 元。則大瓶礦泉水賣出______㉔______箱。
+- id: doc_113_新北_丹鳳_數學_g7s2e1_s4_25
+  section: 4
+  number: 25
+  type: fill
+  page: 2
+  stem: 阿丹計算 $125^{2x} = 25^{y+2}$ 與 $9^{3y} = 27^{4x}$，得 $x = a$、$y = b$，則 $a + b
+    = $______㉕______。

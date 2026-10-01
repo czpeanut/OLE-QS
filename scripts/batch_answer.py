@@ -126,12 +126,17 @@ def collect_gemini(args, phase: str) -> int:
     for job in B.load_jobs(phase):
         if job.get("collected"):
             continue
-        s = B.state(job)
-        if s not in B.DONE["gemini"] and s not in B.FAILED["gemini"]:
+        try:
+            s = B.state(job)
+            if s not in B.DONE["gemini"] and s not in B.FAILED["gemini"]:
+                left += 1
+                print(f"  {job['label']} {s}", flush=True)
+                continue
+            res = B.results(job)
+        except Exception as exc:  # noqa: BLE001  網路暫時中斷，下一輪再收
+            print(f"  {job['label']} 查詢失敗，下一輪再試：{str(exc)[:100]}", flush=True)
             left += 1
-            print(f"  {job['label']} {s}", flush=True)
             continue
-        res = B.results(job)
         usd, ok, bad = 0.0, 0, 0
         for doc_id in job["keys"]:
             r = res.get(doc_id) or {}

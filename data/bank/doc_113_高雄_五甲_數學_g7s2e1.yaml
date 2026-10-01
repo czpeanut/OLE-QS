@@ -1,71 +1,272 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 1
-  school: 高雄市立五甲國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 五甲
+  school: 高雄市立五甲國民中學
   id: doc_113_高雄_五甲_數學_g7s2e1
-  title: 高雄市立五甲國民中學 113學年度第2學期第1次定期評量7年級數學科試題
+  title: 高雄市立五甲國民中學 113學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(每題3分,共45分)
-    count: 3
+    name: 一、選擇題(每題 3 分,共 45 分)
+    count: 15
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(每格3分,共39分)
-    count: 1
+    name: 二、填充題(每格 3 分,共 39 分)
+    count: 13
   - ord: 3
-    name: 三、非選題
-    type: calc
-    score_rule: 三、非選題(共16分)
-    count: 0
+    name: 三、非選題(共 16 分)
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/高雄/五甲.pdf
 questions:
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列哪一組 $x$、$y$ 所代表的數是二元一次聯立方程式 $\begin{cases} x+2y=1 \\ 2x-3y=9 \end{cases}$
+    的解
+  options:
+  - label: A
+    content: $x=1$、$y=0$
+  - label: B
+    content: $x=5$、$y=-2$
+  - label: C
+    content: $x=-1$、$y=1$
+  - label: D
+    content: $x=3$、$y=-1$。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 90%）
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 解 $\begin{cases} 3x+y=5 & \dots\dots (1) \\ 7x=2y+3 & \dots\dots (2) \end{cases}$
+    時，芳馨先將(1)式整理成下列哪一個方程式，再代入(2)式，可消去(2)式中的 $y$？
+  options:
+  - label: A
+    content: $y=3x-5$
+  - label: B
+    content: $y=5-3x$
+  - label: C
+    content: $x=\frac{5-y}{3}$
+  - label: D
+    content: $x=\frac{y-5}{3}$。
 - id: doc_113_高雄_五甲_數學_g7s2e1_s1_3
   section: 1
   number: 3
-  type: fill
+  type: single
   page: 1
-  stem: 附圖為某店的宣傳單,若小玉拿到後,到此店同時買了一件定價x元的衣服和一件定價元的褲子,共省500元,則 依題意可列出下列哪一個方程式?
+  stem: 附圖為某店的宣傳單，若小玉拿到後，到此店同時買了一件定價 $x$ 元的衣服和一件定價 $y$ 元的褲子，共省 500 元，則依題意可列出下列哪一個方程式？
+  options:
+  - label: A
+    content: $0.6x+0.75y+100=500$
+  - label: B
+    content: $0.6x+0.75y-100=500$
+  - label: C
+    content: $0.4x+0.25y+100=500$
+  - label: D
+    content: $0.4x+0.25y-100=500$
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_高雄_五甲_數學_g7s2e1/s1_3_f1.png
 - id: doc_113_高雄_五甲_數學_g7s2e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 將一19 3一化簡後,可得下列哪一式?
+  stem: 將 $\frac{x-2y}{3}-\frac{2x-3y}{4}$ 化簡後，可得下列哪一式？
   options:
   - label: A
-    content: -2x-17y
+    content: $-2x-17y$
   - label: B
-    content: -2x+y
+    content: $-2x+y$
   - label: C
-    content: '-'
+    content: $\frac{-2x-17y}{12}$
   - label: D
-    content: 4 12 12
+    content: $\frac{-2x+y}{12}$。
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 如圖，$P$ 點為坐標平面上固定的點，則下列何者最有可能為 $P$ 點的坐標？
+  options:
   - label: A
-    content: x=1 y=0
+    content: (-3 , 5)
   - label: B
-    content: x=5、y-2
+    content: (5 , -3)
   - label: C
-    content: x=-1•y=1
+    content: (-5 , 3)
   - label: D
-    content: x=3 =-1 (3x+y=5...(1) 2、()解 時,芳馨先將(1)式整理成下列哪一個方程式,再代入(2)式,可消去(2)式中的?
-      (7x=2y+3......(2) x+2y=1 1、()下列哪一組 、 所代表的數是二元一次聯立方程式(2x-3y g
+    content: (-4 , 4)。
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_113_高雄_五甲_數學_g7s2e1/s1_5_f1.png
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 在早餐店裡，王伯伯買 5 顆饅頭，3 顆包子，老闆少收 1 元，只要 110 元。李太太買了 10 顆饅頭，5 顆包子，老闆以售價的九折優待，只要
+    189 元。若饅頭每顆 $x$ 元，包子每顆 $y$ 元，則下列哪一組二元一次聯立方程式可表示題目中的數量關係？
+  options:
   - label: A
-    content: 0.6x+0.75y+100=500
+    content: $\begin{cases} 5x+3y=110+1 \\ 10x+5y=189 \times 0.9 \end{cases}$
   - label: B
-    content: 0.6x+0.75y-100-500
+    content: $\begin{cases} 5x+3y=110+1 \\ 10x+5y=189 \div 0.9 \end{cases}$
   - label: C
-    content: 0.4x+0.25y+100=500
+    content: $\begin{cases} 5x+3y=110-1 \\ 10x+5y=189 \times 0.9 \end{cases}$
   - label: D
-    content: 0.4x+0.25-100 =500高雄市立五甲國民中學113學年度第二學期第一次定期考查一年級數學科題目卷 周年慶 衣服全面6折 褲子全面75折
-      同時購買衣服和褲子 再折100元14 ()某商店將巧克力 購買3盒力 下240元。若阿有
+    content: $\begin{cases} 5x+3y=110-1 \\ 10x+5y=189 \div 0.9 \end{cases}$。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 87%）
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 2
+  stem: 若二元一次聯立方程式 $\begin{cases} 6x-y=6 & \dots\dots (1) \\ y=\frac{1}{6}x & \dots\dots
+    (2) \end{cases}$ 的解為 $x=a$、$y=b$，則 $a+b$ 之值為多少？
+  options:
+  - label: A
+    content: $\frac{6}{5}$
+  - label: B
+    content: $\frac{76}{13}$
+  - label: C
+    content: $\frac{35}{36}$
+  - label: D
+    content: $\frac{37}{36}$。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 90%）
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 2
+  stem: 筱雯跟同學們在日式餐廳吃飯，附圖為此餐廳的菜單。若他們所點的餐點總共為 15 份蓋飯，$x$ 杯飲料，$y$ 份和風沙拉，他們點了幾份 A 餐？(以含
+    $x$、$y$ 的式子表示)
+  options:
+  - label: A
+    content: $10-x+y$
+  - label: B
+    content: $15-x+y$
+  - label: C
+    content: $10-x-y$
+  - label: D
+    content: $15-x-y$
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_113_高雄_五甲_數學_g7s2e1/s1_8_f1.png
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 已知健太買了每枝 20 元的原子筆 $x$ 枝和每枝 30 元的螢光筆 $y$ 枝，兩種都有買，且一共花了 160 元，健太可能買了幾枝原子筆？
+  options:
+  - label: A
+    content: 5 枝
+  - label: B
+    content: 6 枝
+  - label: C
+    content: 7 枝
+  - label: D
+    content: 8 枝。
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: 下圖為一坐標平面，若從坐標平面上的點 $(-1, 2)$ 出發，則下列哪一種方式可以移動到點 $(3, -1)$？
+  options:
+  - label: A
+    content: 向左移動 3 單位，向下移動 4 單位
+  - label: B
+    content: 向左移動 3 單位，向上移動 4 單位
+  - label: C
+    content: 向右移動 4 單位，向下移動 3 單位
+  - label: D
+    content: 向右移動 4 單位，向上移動 3 單位
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_113_高雄_五甲_數學_g7s2e1/s1_10_f1.png
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 2
+  stem: 甲、乙兩班學生一起上體育課時分成籃球與排球兩組，每位學生須選擇其中一組參加。若籃球組總人數為甲班學生人數的 $\frac{3}{2}$ 倍再多 2
+    人，排球組總人數為乙班學生人數的 $\frac{1}{4}$ 倍再多 3 人，則下列關於甲班、乙班學生人數的敘述，何者正確？
+  options:
+  - label: A
+    content: 甲班學生人數是乙班學生人數的 $\frac{3}{2}$ 倍再多 10 人
+  - label: B
+    content: 甲班學生人數是乙班學生人數的 $\frac{3}{2}$ 倍再少 10 人
+  - label: C
+    content: 甲班學生人數是乙班學生人數的 $\frac{2}{3}$ 倍再多 10 人
+  - label: D
+    content: 甲班學生人數是乙班學生人數的 $\frac{2}{3}$ 倍再少 10 人
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 2
+  stem: 已知捷立租車行有甲、乙兩個營業據點，顧客租車後當日須於營業結束前在任意一個據點還車。某日營業結束清點車輛時，發現在甲歸還的自行車比從甲出租的多 4
+    輛。若當日從甲出租且在甲歸還的自行車為 15 輛，從乙出租且在乙歸還的自行車為 13 輛，則關於當日從甲、乙出租的自行車數量，下列比較何者正確？
+  options:
+  - label: A
+    content: 從甲出租的比從乙出租的多 2 輛
+  - label: B
+    content: 從甲出租的比從乙出租的少 2 輛
+  - label: C
+    content: 從甲出租的比從乙出租的多 6 輛
+  - label: D
+    content: 從甲出租的比從乙出租的少 6 輛
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_13
+  section: 1
+  number: 13
+  type: single
+  page: 2
+  stem: '某協會舉辦會長選舉，共有甲、乙、丙三位候選人，投票規則為每人從選票上的三位候選人中選出一 vu 蓋一個贊成章，選出另外一人蓋一個反對章，符合上述規則的選票為有效票，不符合則為廢票。開票後統計有效票中各候選人得到的贊成章、反對章個數，以及廢票張數，結果如下表所示。根據投票規則與表中資訊，求
+    $x-y$ 之值為何？
+
+
+    | | 候選人 | 甲 | 乙 | 丙 |
+
+    | :--- | :--- | :--- | :--- | :--- |
+
+    | 有效票 | 贊成章(個) | 180 | 100 | $x$ |
+
+    | | 反對章(個) | 170 | 130 | $y$ |
+
+    | 廢票(張) | | 15 | | |'
+  options:
+  - label: A
+    content: '-40'
+  - label: B
+    content: '-20'
+  - label: C
+    content: '20'
+  - label: D
+    content: '40'
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_14
+  section: 1
+  number: 14
+  type: single
+  page: 2
+  stem: 某商店將巧克力包裝成方形、圓形禮盒出售，且每盒方形禮盒的價錢相同，每盒圓形禮盒的價錢相同。阿郁原先想購買 3 盒方形禮盒和 7 盒圓形禮盒，但他身上的錢會不足
+    240 元，如果改成購買 7 盒方形禮盒和 3 盒圓形禮盒，他身上的錢會剩下 240 元。若阿郁最後購買 10 盒方形禮盒，則他身上的錢會剩下多少元？
+  options:
   - label: A
     content: '360'
   - label: B
@@ -73,99 +274,156 @@ questions:
   - label: C
     content: '600'
   - label: D
-    content: 720 2.
-  - label: C
-    content: 甲班學生人數是乙班學生人數的倍再多10人
-  - label: D
-    content: 甲班學生人數是乙班學生人數的倍再少10人12、()已知捷立租車行有甲、乙兩個營業據點,顧客租車後當日須於營業結束前在任意一個據點還車。某日營業結束清點
-      車輛時,發現在甲歸還的自行車比從甲出租的多4輛。若當日從甲出租且在甲歸還的自行車為15輛,從乙出租且在乙歸還的自 行車為13輛,則關於當日從甲、乙出租的自行車數量,下列比較何者正確?
-  - label: A
-    content: 從甲出租的比從乙出租的多2輛
-  - label: B
-    content: 從甲出租的比從乙出租的少2輛
-  - label: C
-    content: 從甲出租的比從乙出租的多6輛
-  - label: D
-    content: 從甲出租的比從乙出租的少6輛13、() 協會舉辦會長選舉,共有甲、乙、丙三位候選人,投票規則為每人從選票上的三位候選人中選出一人蓋一個費成
-      章,選出另外一人蓋一個反對章,符合上述規則的選票為有效票,不符合則為廢票。開票後統計有效票中各候選人得到的贊成 章、反對章個數,以及廢票張數,結果如下表所示。根據投票規則與表中資訊,求x-y之值為何?
-      候選人 甲 廢票(張) 15
-  - label: A
-    content: --40
-  - label: B
-    content: 有效票「反對章(個) 170 130丙 贊成章(個) 180 100 -2 -20
-  - label: C
-    content: '20'
-  - label: D
-    content: 40力包裝成方形、圓形禮盒出售,且每盒方形禮盒的價錢相同,每盒圓形禮盒的價錢相同。阿郁原先想 形禮盒,但他身上的錢會不足240元,如果改成購買7盒方形禮盒和3盒圓形禮盒,他身上的錢會剩
-      後購買10盒方形禮盒,則他身上的錢會剩下多少元? 2 x. ע 題目卷 第2頁/全4頁3
-  - label: A
-    content: 甲班學生人數是乙班學生人數的倍再多10人
-  - label: B
-    content: 甲班學生人數是乙班學生人數的倍再少10人
-  - label: A
-    content: 向左移動3單位,向下移動4單位
-  - label: B
-    content: 向左移動3單位,向上移動4單位
-  - label: C
-    content: 向右移動4單位,向下移動3單位
-  - label: D
-    content: 向右移動4單位,向上移動3單位11、()甲、乙兩班學生一起上體育課時分成籃球與排球兩組,每位學生須選擇其中一組參加。若籃球組總人數為甲班學生
-      人數的 股的倍再多2人,排球組總人數為乙班學生人數的倍再多3人,則下列關於甲班、乙班學生人數的敘述,何者正確?
-  - label: A
-    content: 10-x+ (A 9已知健太買了每枝20元的原子筆枝和每枝30元的螢光筆枝,兩種都有買,且一共花 了160元,健太可能買了幾枝原子筆?
-  - label: A
-    content: 5枝
-  - label: B
-    content: 6枚
-  - label: C
-    content: 7枝
-  - label: D
-    content: 8枝。 10、()下圖為一坐標平面,若從坐標平面上的點(-1,2)出發,則下列哪一種方式可以移動到點(3,1)? (6x-y=6 ......
-      (1)
-- id: doc_113_高雄_五甲_數學_g7s2e1_s1_7
+    content: '720'
+- id: doc_113_高雄_五甲_數學_g7s2e1_s1_15
   section: 1
-  number: 7
+  number: 15
   type: single
-  page: 2
-  stem: 若二元一次聯立方程式
+  page: 3
+  stem: 下圖為甲、乙、丙三根筆直的木棍平行擺放在地面上的情形。已知乙有一部分只與甲重疊，其餘部分只與丙重疊，甲與乙重疊的部分的長度為 2 公尺，丙與乙重疊的部分的長度為
+    3 公尺。若乙的長度最長且甲、乙的長度相差 $x$ 公尺，乙、丙的長度相差 $y$ 公尺，則甲、乙、丙不重疊時的長度總合為多少公尺？
   options:
-  - label: B
-    content: 15-x+y
-  - label: C
-    content: 10-x-
-  - label: D
-    content: 15-x-у 8( ) 雯跟同學們在日式餐廳吃飯,附圖為此餐廳的菜單。若他們所點的餐點總共為15份蓋 飯,杯飲料,份和風沙拉,他們點了幾份餐?(以含、y的式子表示)
-      7635 95
-  - label: B
-    content: '13'
-  - label: C
-    content: '36'
-  - label: D
-    content: 36° 37 이 이 2 3的解為=a、y=b,則atb之值為多少? A 1份蓋飯B 2份蓋飯-2杯飲料3份蓋飯-3杯飲料 +3份和風沙拉6、如下圖,在坐標平面上有一正
-      日,在坐標平面上有一正方形ABCD的邊長為10個單位長,已知點的坐標為(-6,4)),且AB垂直X軸, 則C點的坐標為A(-6,4) 題目卷 第3頁/全4頁1、小莉與家人聚餐,共點了每份200一號餐X份和每份150元的二號餐y份,則一共花了元。
-      2、已知ay=-3是方程式-4x+3y=7的解,則a=_ 3、化簡2(3x-y) -4 (x-2) = 4、中華隊在奧運開幕進場時,選手隊伍如圖。如果天成的位置在第4排第2列,以數對(4,2)表示,彥勳的位置可以用數
-      對表示為, 15、()下圖為甲、乙、丙三根筆直的木棍平行擺放在地面上的情形。已知乙有一部分只與甲重疊,其餘部分只與丙重疊, 甲與乙重疊的部分的長度為2公尺,丙與乙重疊的部分的長度為3公尺。若乙的長度最長旦甲、乙的長度相差公尺,乙、丙的
-      長度相差公尺,則甲、乙、丙不重疊時的長度總合為多少公尺? 乙與丙重疊 的部分3公尺
   - label: A
-    content: 9-x+y
+    content: $9-x+y$
   - label: B
-    content: 15-x+y
+    content: $15-x+y$
   - label: C
-    content: 12-x-y
+    content: $12-x-y$
   - label: D
-    content: 15-x-у
+    content: $15-x-y$
+  assets:
+  - key: s1_15_f1
+    kind: figure
+    file: doc_113_高雄_五甲_數學_g7s2e1/s1_15_f1.png
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 3
+  stem: 小莉與家人聚餐，共點了每份 200 一號餐 $x$ 份和每份 150 元的二號餐 $y$ 份，則一共花了__________元。
 - id: doc_113_高雄_五甲_數學_g7s2e1_s2_2
   section: 2
   number: 2
   type: fill
+  page: 3
+  stem: 已知 $x=a$、$y=-3$ 是方程式 $-4x+3y=7$ 的解，則 $a=$__________。
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 3
+  stem: 化簡 $2(3x-y)-4(x-2y)=$__________。
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 3
+  stem: 中華隊在奧運開幕進場時，選手隊伍如圖。如果天成的位置在第 4 排第 2 列，以數對 $(4, 2)$ 表示，彥勳的位置可以用數對表示為__________。
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_113_高雄_五甲_數學_g7s2e1/s2_4_f1.png
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 3
+  stem: 如圖，在象棋盤上，如果把帥的坐標定為 $(2, 0)$，炮的坐標定為 $(-1, 1)$，則相的坐標為__________。
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_113_高雄_五甲_數學_g7s2e1/s2_5_f1.png
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 3
+  stem: 如下圖，在坐標平面上有一正方形 $ABCD$ 的邊長為 10 個單位長，已知 $A$ 點的坐標為 $(-6, 4)$，且 $\overline{AB}$
+    垂直 $x$ 軸，則 $C$ 點的坐標為__________。
+  assets:
+  - key: s2_6_f1
+    kind: figure
+    file: doc_113_高雄_五甲_數學_g7s2e1/s2_6_f1.png
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
   page: 4
-  stem: '永樂游泳池的收費標準是(1)全票每張110元(2)優待票每張80元;試回答下列問題: (1)已知周一有200人購票入場,其中有120人購買優待票,則當天永樂游泳池收入多少元?(3分)
-    (2)已知周二有250人購票入場,周三有300人購票入場,若周二的收入比周三少4600元,則周二購買優待票的人數比周三購 優待票的人數多或少幾人?(5分)
-    (1)明翰打算5天生產水蜜桃果汁,5天生產水蜜桃罐頭,若生產出的水蜜桃果汁、水蜜桃罐頭與未加工的水蜜桃全部售出, 則可獲利多少元?(3分) (2)若明翰生產水蜜桃果汁x日,生產水蜜桃罐頭y日,且生產出的水蜜桃果汁、水蜜桃罐頭與未加工之水蜜桃全部售出,可
-    獲利713000元,則x之值為何?(5分) 題目卷 第4頁/全4頁 買1、明翰有一個果園,用來種植水蜜桃並販賣,沒賣完的水蜜桃則加工成水蜜桃果汁或水蜜桃罐頭,其獲利如附表所示。今年因
-    遭逢颱風只搶收了10000公斤的水蜜桃,由於人手不足,所以每日只能生產500公斤的果汁或300公斤的罐頭(兩者只能擇 一),同時要趕在10天後上市,未加工的水蜜桃則直接售出。試回答下列問題:
-    7、如果P(a+2,2-4)在坐標平面是X軸上的一點,則P點的坐標為8、已知坐標平面上有一長方形ABCD,今固定B點並將此長方形依順時針方向旋轉,如圖所示,旋轉前其坐標分別為4
-    (0,0)、B(7,0)、C(7,3)、D (0,3)。若旋轉後C點的坐標為(10,0),則旋轉後D點的坐標為13、解二元一次聯立方程式 方程式(=3-02-
-    的解為Xa、y=b,則ath= [3x+2y=6 9、桌球社某次活動中,如果男生每2人一組,女生每4人一組,共可分17組。如果男生每4人一組,女生每2人一組,
-    共可分16組。該社團共有社員人? 10、已知P點在第四象限內,且與x軸相距5個單位長,與y軸相距8個單位長,則P點的坐標為= 11、已知P(a,b)在第四象限,則R(一ba)在第象限?
-    (3x+4y=-15......(1) 12、解二元一次聯立方程式: 的解為x=a、y=b,則5x-4y=7.........(2)'
+  stem: 如果 $P(a+2, a-4)$ 在坐標平面是 $x$ 軸上的一點，則 $P$ 點的坐標為__________。
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 4
+  stem: 已知坐標平面上有一長方形 $ABCD$，今固定 $B$ 點並將此長方形依順時針方向旋轉，如圖所示，旋轉前其坐標分別為 $A(0, 0)$、$B(7,
+    0)$、$C(7, 3)$、$D(0, 3)$。若旋轉後 $C$ 點的坐標為 $(10, 0)$，則旋轉後 $D$ 點的坐標為__________。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_高雄_五甲_數學_g7s2e1/s2_8_f1.png
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 4
+  stem: 桌球社某次活動中，如果男生每 2 人一組，女生每 4 人一組，共可分 17 組。如果男生每 4 人一組，女生每 2 人一組，共可分 16 組。該社團共有社員__________人？
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 4
+  stem: 已知 $P$ 點在第四象限內，且與 $x$ 軸相距 5 個單位長，與 $y$ 軸相距 8 個單位長，則 $P$ 點的坐標為__________。
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 4
+  stem: 已知 $P(a, b)$ 在第四象限，則 $R(-a^{2}, b-a)$ 在第__________象限？
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 4
+  stem: 解二元一次聯立方程式：$\begin{cases} 3x+4y=-15 & \dots\dots (1) \\ 5x-4y=7 & \dots\dots
+    (2) \end{cases}$ 的解為 $x=a$、$y=b$，則 $a+b=$__________。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 86%）
+- id: doc_113_高雄_五甲_數學_g7s2e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 4
+  stem: 解二元一次聯立方程式 $\begin{cases} y=3-9x & \dots\dots (1) \\ 3x+2y=6 & \dots\dots
+    (2) \end{cases}$ 的解為 $x=a$、$y=b$，則 $a+b=$__________。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
+- id: doc_113_高雄_五甲_數學_g7s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 4
+  stem: '明翰有一個果園，用來種植水蜜桃並販賣，沒賣完的水蜜桃則加工成水蜜桃果汁或水蜜桃罐頭，其獲利如附表所示。今年因遭逢颱風只搶收了 10000 公斤的水蜜桃，由於人手不足，所以每日只能生產
+    500 公斤的果汁或 300 公斤的罐頭（兩者只能擇一），同時要趕在 10 天後上市，未加工的水蜜桃則直接售出。試回答下列問題：
+
+
+    | 種類 | 水蜜桃 | 水蜜桃果汁 | 水蜜桃罐頭 |
+
+    | :--- | :--- | :--- | :--- |
+
+    | 每公斤獲利 | 50 元 | 80 元 | 130 元 |
+
+
+    (1)明翰打算 5 天生產水蜜桃果汁，5 天生產水蜜桃罐頭，若生產出的水蜜桃果汁、水蜜桃罐頭與未加工的水蜜桃全部售出，則可獲利多少元？(3分)
+
+    (2)若明翰生產水蜜桃果汁 $x$ 日，生產水蜜桃罐頭 $y$ 日，且生產出的水蜜桃果汁、水蜜桃罐頭與未加工之水蜜桃全部售出，可獲利 713000 元，則
+    $x$ 之值為何？(5分)'
+- id: doc_113_高雄_五甲_數學_g7s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 4
+  stem: '永樂游泳池的收費標準是(1)全票每張 110 元(2)優待票每張 80 元；試回答下列問題：
+
+    (1)已知周一有 200 人購票入場，其中有 120 人購買優待票，則當天永樂游泳池收入多少元？(3分)
+
+    (2)已知周二有 250 人購票入場，周三有 300 人購票入場，若周二的收入比周三少 4600 元，則周二購買優待票的人數比周三購買優待票的人數多或少幾人？(5分)'

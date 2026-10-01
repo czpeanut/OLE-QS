@@ -1,23 +1,31 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 1
-  school: 臺中市立四育國民中學
-  grade: 7
-  subject: 數學
   city: 台中
   school_short: 四育
+  school: 台中市四育國中
   id: doc_113_台中_四育_數學_g7s2e1
-  title: 臺中市立四育國民中學 113學年度第2學期第1次定期評量7年級數學科試題
+  title: 台中市四育國中 113學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第1次定期評量
-  sections: []
+  sections:
+  - ord: 1
+    name: 選擇題
+    count: 20
+  - ord: 2
+    name: 計算題
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/台中/四育.pdf
 questions:
 - id: doc_113_台中_四育_數學_g7s2e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 坐標平面上,A(-$\frac{3}{2}$ , 2.5)的位置在第幾象限?
+  stem: 坐標平面上，$A(-\frac{3}{2}, 2.5)$ 的位置在第幾象限？
   options:
   - label: A
     content: 四
@@ -26,58 +34,60 @@ questions:
   - label: C
     content: 二
   - label: D
-    content: 一 。
+    content: 一
 - id: doc_113_台中_四育_數學_g7s2e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: (2 , 3)與x軸的距離為2
+    content: （2 , 3）與 $x$ 軸的距離為 2
   - label: B
-    content: (0 , -2)在x軸上
+    content: （0 , －2）在 $x$ 軸上
   - label: C
-    content: (2 , 0)在第一象限
+    content: （2 , 0）在第一象限
   - label: D
-    content: (-2 , 3)與y軸的距離為2 。
+    content: （－2 , 3）與 $y$ 軸的距離為 2 。
 - id: doc_113_台中_四育_數學_g7s2e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 化簡-5y+3x-6-x+2y+7=?
+  stem: 化簡 $-5y+3x-6-x+2y+7=$ ？
   options:
   - label: A
-    content: 2x+7y+13
+    content: $2x+7y+13$
   - label: B
-    content: 4x-3y+1
+    content: $4x-3y+1$
   - label: C
-    content: 2x-3y+1
+    content: $2x-3y+1$
   - label: D
-    content: 5x-6y-1 。
+    content: $5x-6y-1$ 。
 - id: doc_113_台中_四育_數學_g7s2e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 試求二元一次聯立方程式    y x的解。 5 = + y x 8 2 = +
+  stem: 試求二元一次聯立方程式 $\begin{cases}x+y=5 \\ x+2y=8\end{cases}$ 的解。
   options:
   - label: A
-    content: x=1、y=4
+    content: $x=1$、$y=4$
   - label: B
-    content: x=2、y=3
+    content: $x=2$、$y=3$
   - label: C
-    content: x=3、y=2
+    content: $x=3$、$y=2$
   - label: D
-    content: x=4、y=1
+    content: $x=4$、$y=1$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 89%）
 - id: doc_113_台中_四育_數學_g7s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 小明到郵局買12元和5元的郵票共20張,花了135元,則小明買了幾張5元的郵票?
+  stem: 小明到郵局買 12 元和 5 元的郵票共 20 張，花了 135 元，則小明買了幾張 5 元的郵票？
   options:
   - label: A
     content: '15'
@@ -92,7 +102,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 直角坐標平面上,由A(6 , -3)出發,向上走8個單位,再向左走2個單位,到達一點B,則B點 到y軸的距離為多少?
+  stem: 直角坐標平面上，由 $A(6,-3)$ 出發，向上走 8 個單位，再向左走 2 個單位，到達一點 $B$，則 $B$ 點到 $y$ 軸的距離為多少？
   options:
   - label: A
     content: '4'
@@ -101,13 +111,14 @@ questions:
   - label: C
     content: '6'
   - label: D
-    content: 9  
+    content: '9'
 - id: doc_113_台中_四育_數學_g7s2e1_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若聯立方程式 $\frac{1}{4}$ $\frac{2}{3}$ 3 5 4 8 x y - = ,則3x+4y=? x y + =
+  stem: 若聯立方程式 $\begin{cases}\frac{1}{4}x-\frac{2}{3}y=3 \\ 5x+4y=8\end{cases}$，則
+    $3x+4y=$ ？
   options:
   - label: A
     content: '0'
@@ -116,13 +127,15 @@ questions:
   - label: C
     content: '2'
   - label: D
-    content: 3  。
+    content: 3 。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 86%）
 - id: doc_113_台中_四育_數學_g7s2e1_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 二元一次方程式2x+5y=10有幾組整數解?
+  stem: 二元一次方程式 $2x+5y=10$ 有幾組整數解？
   options:
   - label: A
     content: '1'
@@ -131,33 +144,33 @@ questions:
   - label: C
     content: '3'
   - label: D
-    content: 無限多  組。
+    content: 無限多 組。
 - id: doc_113_台中_四育_數學_g7s2e1_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 化簡3(2x-5y)-2(-x+y)=?
+  stem: 化簡 $3(2x-5y)-2(-x+y)=$ ？
   options:
   - label: A
-    content: -8x+17y
+    content: $-8x+17y$
   - label: B
-    content: 8x-17y
+    content: $8x-17y$
   - label: C
-    content: 8x-4y
+    content: $8x-4y$
   - label: D
-    content: 4x-13y
+    content: $4x-13y$
 - id: doc_113_台中_四育_數學_g7s2e1_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 若3690x-1670y+6700=0,則369x-167y=?
+  stem: 若 $3690x-1670y+6700=0$，則 $369x-167y=$ ？
   options:
   - label: A
-    content: '-67000'
+    content: $-67000$
   - label: B
-    content: '-670'
+    content: $-670$
   - label: C
     content: '670'
   - label: D
@@ -167,7 +180,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 在坐標平面上,位於兩軸且與原點距離為8的點有幾個?
+  stem: 在坐標平面上，位於兩軸且與原點距離為 8 的點有幾個？
   options:
   - label: A
     content: '1'
@@ -176,28 +189,28 @@ questions:
   - label: C
     content: '4'
   - label: D
-    content: 無限多  個 。
+    content: 無限多 個 。
 - id: doc_113_台中_四育_數學_g7s2e1_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: 化簡 $\frac{2x-3y}{3}$ - $\frac{x-y-1}{5}$ =? $\frac{7x−18y−3}{15}$
+  stem: 化簡 $\frac{2x-3y}{3}-\frac{x-y-1}{5}=$ ？
   options:
+  - label: A
+    content: $7x-12y-3$
+  - label: B
+    content: $\frac{7x-18y-3}{15}$
   - label: C
-    content: 7x-12y+3
+    content: $7x-12y+3$
   - label: D
     content: $\frac{7x-12y+3}{15}$
-  - label: A
-    content: 7x-12y-3
-  - label: B
-    content: ''
 - id: doc_113_台中_四育_數學_g7s2e1_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 已知3條毛巾的價格可以買到4條手帕,若小芬的媽媽買了6條毛巾和5條手帕共花390元,則毛巾 一條多少元?
+  stem: 已知 3 條毛巾的價格可以買到 4 條手帕，若小芬的媽媽買了 6 條毛巾和 5 條手帕共花 390 元，則毛巾一條多少元？
   options:
   - label: A
     content: '20'
@@ -206,29 +219,29 @@ questions:
   - label: C
     content: '40'
   - label: D
-    content: 50  。
+    content: 50 。
 - id: doc_113_台中_四育_數學_g7s2e1_s1_14
   section: 1
   number: 14
   type: single
   page: 1
-  stem: 已知(3x-5y+3) 2與∣2x-3y+1∣互為相反數。則(x , y)=?
+  stem: 已知 $(3x-5y+3)^{2}$ 與 $|2x-3y+1|$ 互為相反數。則 $(x, y)=$ ？
   options:
   - label: A
-    content: ( 4 , 3 )
+    content: （ 4 , 3 ）
   - label: B
-    content: ( -1 , 0 )
+    content: （ －1 , 0 ）
   - label: C
-    content: (-2 , -1 )
+    content: （－2 , －1 ）
   - label: D
-    content: ( -6 , -3 ) 。 【背面尚有試題】 台中市四育國中113學年度第一學期第二次定期評量七年級數學科試題卷
+    content: （ －6 , －3 ） 。
 - id: doc_113_台中_四育_數學_g7s2e1_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 若聯立方程式       8 3 18 2 7 = + y x與6 4 22 3 8 = - y x有相同的解,則a-3b=? = -
-    = - y ax by x
+  stem: 若聯立方程式 $\begin{cases}7x-2y=18 \\ ax+3y=8\end{cases}$ 與 $\begin{cases}8x-3y=22
+    \\ 4x-by=6\end{cases}$ 有相同的解，則 $a-3b=$ ？
   options:
   - label: A
     content: '16'
@@ -237,13 +250,16 @@ questions:
   - label: C
     content: '4'
   - label: D
-    content: -2。
+    content: －2。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 83%）
 - id: doc_113_台中_四育_數學_g7s2e1_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 若x=5,y=3時,ax+by的值為 -21,當x=1,y=7時,ax+by的值為59,則b-a=?
+  stem: 若 $x=5$，$y=3$ 時，$ax+by$ 的值為 $-21$，當 $x=1$，$y=7$ 時，$ax+by$ 的值為 59，則 $b-a=$
+    ？
   options:
   - label: A
     content: '2'
@@ -258,7 +274,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 耶誕派對總共有65人參加,每個人都喝了至少1杯汽水或果汁,有31人兩種飲料都喝。若有喝汽 水的人數比有喝果汁的人數多12人,則有多少人喝汽水?
+  stem: 耶誕派對總共有 65 人參加，每個人都喝了至少 1 杯汽水或果汁，有 31 人兩種飲料都喝。若有喝汽水的人數比有喝果汁的人數多 12 人，則有多少人喝汽水？
   options:
   - label: A
     content: '65'
@@ -273,7 +289,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 小允做一題兩數相減的運算,第一次將被減數後面少寫一個0,所得的差為-542;驗算時卻將減數後 面少寫一個0,所得的差為1213,則正確的差為多少?
+  stem: 小允做一題兩數相減的運算，第一次將被減數後面少寫一個 0，所得的差為 $-542$；驗算時卻將減數後面少寫一個 0，所得的差為 1213，則正確的差為多少？
   options:
   - label: A
     content: '4207'
@@ -288,36 +304,63 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 若聯立方程式    4 2 1 3 4 = - y x =- + 的解x、y之值的和為-1,求a的值為何? a y ax
+  stem: 若聯立方程式 $\begin{cases}4x+3y=-1 \\ ax-2y=4a\end{cases}$ 的解 $x$、$y$ 之值的和為 $-1$，求
+    $a$ 的值為何？
   options:
   - label: A
     content: '5'
   - label: B
     content: '3'
   - label: C
-    content: '-1'
+    content: －1
   - label: D
-    content: '-3'
+    content: －3
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 89%）
 - id: doc_113_台中_四育_數學_g7s2e1_s1_20
   section: 1
   number: 20
   type: single
   page: 2
-  stem: x8 = 1- y 4且y 27 = 1- x 9 ,則x+y=?
+  stem: $8^{x}=4^{y-1}$ 且 $27^{y}=9^{x-1}$，則 $x+y=$ ？
   options:
   - label: A
-    content: '-4'
+    content: －4
   - label: B
     content: '0'
   - label: C
     content: '2'
   - label: D
-    content: 6  。 二、 計算題(每題5分,共20分)  ( 除第一題外,無計算過程一律不給分) 1. 在坐標平面上標示出下列各點的位置 (須標示出點的名稱,否則不予計分)
-      A(2 , 5)、B(-4 , 3)、C(-3 , 0)、D(-5 , -3)、E(3 , -4) y 1 x O 1 2. 坐標平面上有A(3 ,-2)、B(7
-      ,-2)、C(3 , 6)三點,則△ABC的面積為? 3. 有A、B兩堆糖果,如果從A堆中拿20顆放在B堆中,那麼B堆中的糖果變為A堆剩餘糖果的2倍;如果從B堆中拿30顆糖果放在A堆中,那麼此時A堆中的糖果就比B堆剩餘的糖果多80顆,求原來A、B兩堆各有多
-      少顆糖果? 4. 甲工廠與乙工廠加入口罩國家生產隊,若甲工廠先生產60000片口罩後,乙工廠才開始工作,則乙工廠需要4小時才能追上甲工廠的產量;若甲工廠先工作2小時後,乙工廠才開始工作,則乙工廠需要10小時才能追
-      上甲工廠的產量。則甲工廠與乙工廠每小時各自可生產多少片口罩?
+    content: 6 。
+- id: doc_113_台中_四育_數學_g7s2e1_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 2
+  stem: '在坐標平面上標示出下列各點的位置 (須標示出點的名稱，否則不予計分)
+
+    $A(2, 5)$、$B(-4, 3)$、$C(-3, 0)$、$D(-5, -3)$、$E(3, -4)$'
   assets:
-  - key: p2_f01
+  - key: s2_1_f1
     kind: figure
-    file: doc_113_台中_四育_數學_g7s2e1/p2_f01.png
+    file: doc_113_台中_四育_數學_g7s2e1/s2_1_f1.png
+- id: doc_113_台中_四育_數學_g7s2e1_s2_2
+  section: 2
+  number: 2
+  type: calc
+  page: 2
+  stem: 坐標平面上有 $A(3, -2)$、$B(7, -2)$、$C(3, 6)$ 三點，則 $\triangle ABC$ 的面積為？
+- id: doc_113_台中_四育_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: calc
+  page: 2
+  stem: 有 $A$、$B$ 兩堆糖果，如果從 $A$ 堆中拿 20 顆放在 $B$ 堆中，那麼 $B$ 堆中的糖果變為 $A$ 堆剩餘糖果的 2 倍；如果從
+    $B$ 堆中拿 30 顆糖果放在 $A$ 堆中，那麼此時 $A$ 堆中的糖果就比 $B$ 堆剩餘的糖果多 80 顆，求原來 $A$、$B$ 兩堆各有多少顆糖果？
+- id: doc_113_台中_四育_數學_g7s2e1_s2_4
+  section: 2
+  number: 4
+  type: calc
+  page: 2
+  stem: 甲工廠與乙工廠加入口罩國家生產隊，若甲工廠先生產 60000 片口罩後，乙工廠才開始工作，則乙工廠需要 4 小時才能追上甲工廠的產量；若甲工廠先工作
+    2 小時後，乙工廠才開始工作，則乙工廠需要 10 小時才能追上甲工廠的產量。則甲工廠與乙工廠每小時各自可生產多少片口罩？

@@ -1,94 +1,107 @@
 document:
-  semester: 1
-  exam_seq: 1
-  school: 臺北市立誠正國民中學
   grade: 7
   subject: 數學
-  scope_note: '1-1~1-4          七年_____班_____號 姓名:               ※作答時必須使用2B'
   academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
   city: 台北
   school_short: 誠正
+  school: 臺北市立誠正國民中學
+  scope_note: 1-1～1-4
   id: doc_113_台北_誠正_數學_g7s1e1
-  title: 臺北市立誠正國民中學 113學年度第1學期第1次定期評量7年級數學科試題
+  title: 臺北市立誠正國民中學 113學年度第1學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題4分,共100分)
-    count: 24
+    name: 一、選擇題：(每題4 分，共100 分)
+    count: 25
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-1/台北/誠正.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: null
+    - number: 1-2
+      title: null
+    - number: 1-3
+      title: null
+    - number: 1-4
+      title: null
+    publisher: null
+    raw: 1-1～1-4
+    volume: null
 questions:
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列敘述中,何者正確?
+  stem: 下列敘述中，何者正確？
   options:
   - label: A
-    content: '|−4 −(−12)| = 4 −12'
+    content: $|-4 -(-12)| = 4 - 12$
   - label: B
-    content: 4 −(−6)的相反數為10
+    content: $4 -(-6)$的相反數為$10$
   - label: C
-    content: −3的相反數為−(−3)
+    content: $-3$的相反數為$-(-3)$
   - label: D
-    content: 29 −(−11) = −11 −29
+    content: $29 -(-11) = -11 - 29$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 計算(−27) + 39 + (−112)之值為下列何者?
+  stem: 計算$(-27) + 39 + (-112)$之值為下列何者？
   options:
   - label: A
-    content: −178
+    content: $-178$
   - label: B
-    content: −100
+    content: $-100$
   - label: C
-    content: '100'
+    content: $100$
   - label: D
-    content: '124'
+    content: $124$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 下列選項何者表示「壹佰萬分之一」?
+  stem: 下列選項何者表示「壹佰萬分之一」？
   options:
   - label: A
-    content: '101000000'
+    content: $10^{1000000}$
   - label: B
-    content: 1 × 106
+    content: $1 \times 10^{6}$
   - label: C
-    content: −1 × 106
+    content: $-1 \times 10^{6}$
   - label: D
-    content: 1 × 10−6
+    content: $1 \times 10^{-6}$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 若臺北市人口約為251萬人,若以科學記號來表示 此數為下列何者?
+  stem: 若臺北市人口約為251 萬人，若以科學記號來表示此數為下列何者？
   options:
   - label: A
-    content: 2.51 × 105
+    content: $2.51 \times 10^{5}$
   - label: B
-    content: 2.51 × 106
+    content: $2.51 \times 10^{6}$
   - label: C
-    content: 251 × 105
+    content: $251 \times 10^{5}$
   - label: D
-    content: 251 × 106
+    content: $251 \times 10^{6}$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 下列各選項敘述,何者錯誤?
+  stem: 下列各選項敘述，何者錯誤？
   options:
   - label: A
     content: 最小的正整數是1
   - label: B
-    content: −1為最大的負數
+    content: $-1$為最大的負數
   - label: C
     content: 0的相反數為0
   - label: D
@@ -98,77 +111,83 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 某籃球隊以身高180公分為基準,身高183公分記為 +3公分,則身高173公分該記為?
+  stem: 某籃球隊以身高180 公分為基準，身高183 公分記為＋3 公分，則身高173 公分該記為？
   options:
   - label: A
-    content: −13
+    content: $-13$
   - label: B
-    content: −7
+    content: $-7$
   - label: C
-    content: −4
+    content: $-4$
   - label: D
-    content: −3
+    content: $-3$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 草莓冰淇淋從攝氏零下12度的冷凍櫃拿出來一分鐘 之後,它的溫度變成攝氏零下4度。請問過程中草莓 冰淇淋是上升還是下降幾度?
+  stem: 草莓冰淇淋從攝氏零下12 度的冷凍櫃拿出來一分鐘之後，它的溫度變成攝氏零下4 度。請問過程中草莓冰淇淋是上升還是下降幾度？
   options:
   - label: A
-    content: 上升8度
+    content: 上升8 度
   - label: B
-    content: 上升10度
+    content: 上升10 度
   - label: C
-    content: 下降8度
+    content: 下降8 度
   - label: D
-    content: 下降10度 第1頁,共2頁
+    content: 下降10 度
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 設a、b、c是正整數,則下列哪個選項一定是負數?
+  stem: 設$a$、$b$、$c$是正整數，則下列哪個選項一定是負數？
   options:
   - label: A
-    content: (−a) × (−b) × c
+    content: $(-a) \times (-b) \times c$
   - label: B
-    content: (−a) × b÷ (−c)
+    content: $(-a) \times b \div (-c)$
   - label: C
-    content: (−a)3 ÷ (−b)2 × (−c)5
+    content: $(-a)^{3} \div (-b)^{2} \times (-c)^{5}$
   - label: D
-    content: (−a) × (−b)3 × (−c)5
+    content: $(-a) \times (-b)^{3} \times (-c)^{5}$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 下列選項哪一個數最大?
+  stem: 下列選項哪一個數最大？
   options:
   - label: A
-    content: 3.1 × 10−6
+    content: $3.1 \times 10^{-6}$
   - label: B
-    content: 4.5 × 10−5
+    content: $4.5 \times 10^{-5}$
   - label: C
-    content: 2.51 × 10−6
+    content: $2.51 \times 10^{-6}$
   - label: D
-    content: 1.02 × 10−5
+    content: $1.02 \times 10^{-5}$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 比較下列各選項中兩個數的大小關係,何者正確? $\frac{1}{2}$ |
+  stem: 比較下列各選項中兩個數的大小關係，何者正確？
   options:
-  - label: B
-    content: −3 < −5
   - label: A
-    content: 0 > |−
+    content: $0 > |-\frac{1}{2}|$
+  - label: B
+    content: $-3 < -5$
   - label: C
-    content: (−2)3 > (−2)4
+    content: $(-2)^{3} > (-2)^{4}$
   - label: D
-    content: −24 > −25甲=−3、乙=−(−1.7)、丙= 2 −1 3 2. 、 3. 丁=| −3|,則下列大小順序何者正確? 丁= | −3
-      | −
+    content: $-2^{4} > -2^{5}$
+- id: doc_113_台北_誠正_數學_g7s1e1_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 1
+  stem: 已知甲＝$-3$、乙＝$-(-1.7)$、丙＝$-1\frac{2}{3}$、丁＝$|-3|$，則下列大小順序何者正確？
+  options:
   - label: A
     content: 乙>丁>丙>甲
   - label: B
@@ -182,7 +201,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 數線上絕對值小於6的整數有幾個?
+  stem: 數線上絕對值小於6 的整數有幾個？
   options:
   - label: A
     content: '7'
@@ -197,42 +216,42 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: 已知數線上兩點P(−7)、Q(−13),則PQ的中點坐標 為何?
+  stem: 已知數線上兩點$P(-7)$、$Q(-13)$，則$\overline{PQ}$的中點坐標為何？
   options:
   - label: A
-    content: −10
+    content: $-10$
   - label: B
-    content: −6
+    content: $-6$
   - label: C
-    content: −3
+    content: $-3$
   - label: D
-    content: −1
+    content: $-1$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_14
   section: 1
   number: 14
   type: single
   page: 1
-  stem: 若數線上一點A與−1的距離為5,則點A所代表的 數為下列何者?
+  stem: 若數線上一點Ａ與$-1$的距離為5，則點Ａ所代表的數為下列何者？
   options:
   - label: A
-    content: 4或−6
+    content: 4 或$-6$
   - label: B
     content: '4'
   - label: C
     content: '0'
   - label: D
-    content: −6
+    content: $-6$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_15
   section: 1
   number: 15
   type: single
   page: 1
-  stem: 計算(−29) × 75 −29 × 25 + 100 × 29 =?
+  stem: 計算$(-29) \times 75 - 29 \times 25 + 100 \times 29 =$？
   options:
   - label: A
-    content: −2900
+    content: $-2900$
   - label: B
-    content: −1450
+    content: $-1450$
   - label: C
     content: '0'
   - label: D
@@ -242,12 +261,12 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 計算|22 × (−2)3| + 52 ÷ 100之值為以下何者?
+  stem: 計算$|2^{2} \times (-2)^{3}| + 5^{2} \div 10^{0}$之值為以下何者？
   options:
   - label: A
-    content: −9
+    content: $-9$
   - label: B
-    content: −7
+    content: $-7$
   - label: C
     content: '41'
   - label: D
@@ -257,42 +276,42 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 計算(−1)2024 + (−3)2 −72之值為以下何者?
+  stem: 計算$(-1)^{2024} + (-3)^{2} - 7^{2}$之值為以下何者？
   options:
   - label: A
-    content: −59
+    content: $-59$
   - label: B
-    content: −57
+    content: $-57$
   - label: C
-    content: −39
+    content: $-39$
   - label: D
-    content: −38
+    content: $-38$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 若有a、b二數,|a| = |b|且a≠b,則下列敘述 何者正確?
+  stem: 若有$a$、$b$二數，$|a| = |b|$且$a \neq b$，則下列敘述何者正確？
   options:
   - label: A
-    content: a+ b= 0
+    content: $a + b = 0$
   - label: B
-    content: a−b= 0
+    content: $a - b = 0$
   - label: C
-    content: a× b= 0
+    content: $a \times b = 0$
   - label: D
-    content: a× b> 0
+    content: $a \times b > 0$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 已知3.24 × 10a是6位數,且7.62 × 10b的小數點後 第8位開始不為0,試問a+ b=?
+  stem: 已知$3.24 \times 10^{a}$是6位數，且$7.62 \times 10^{b}$的小數點後第8位開始不為0，試問$a + b =$？
   options:
   - label: A
-    content: −3
+    content: $-3$
   - label: B
-    content: −4
+    content: $-4$
   - label: C
     content: '13'
   - label: D
@@ -302,94 +321,97 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 當a= −3,b= −7時,下列何者最小?
+  stem: 當$a = -3$，$b = -7$時，下列何者最小？
   options:
   - label: A
-    content: '|a+ b|'
+    content: $|a + b|$
   - label: B
-    content: '|a−b|'
+    content: $|a - b|$
   - label: C
-    content: '|a| + |b|'
+    content: $|a| + |b|$
   - label: D
-    content: '|a| −|b|'
+    content: $|a| - |b|$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_21
   section: 1
   number: 21
   type: single
   page: 2
-  stem: 已知12 × 14 × 16 × 18 = 48384, 則(−10) × (−12) × (−14) × (−16) × (−18)為何?
+  stem: 已知 $12 \times 14 \times 16 \times 18 = 48384$，則$(-10) \times (-12) \times
+    (-14) \times (-16) \times (-18)$為何？
   options:
   - label: A
     content: '483840'
   - label: B
-    content: −483840
+    content: $-483840$
   - label: C
     content: '62026'
   - label: D
-    content: −62026
+    content: $-62026$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_22
   section: 1
   number: 22
   type: single
   page: 2
-  stem: 喝好茶飲料店本週的促銷文宣為『凡購買兩杯飲料 者,不限同品項,享9折優惠』。某日,小晴在店內購 買一杯30元的烏龍茶及一杯40元的檸檬綠茶,總共兩
-    杯。試問小晴享優惠後的總金額計算方式與下列何者選 項相同?
+  stem: 喝好茶飲料店本週的促銷文宣為『凡購買兩杯飲料者，不限同品項，享9 折優惠』。某日，小晴在店內購買一杯30 元的烏龍茶及一杯40 元的檸檬綠茶，總共兩杯。試問小晴享優惠後的總金額計算方式與下列何者選項相同？
   options:
   - label: A
-    content: 30 × 0.9 + 0.1 × 40
+    content: $30 \times 0.9 + 0.1 \times 40$
   - label: B
-    content: 0.1 × (30 + 40)
+    content: $0.1 \times (30 + 40)$
   - label: C
-    content: 0.9 × (30 + 40)
+    content: $0.9 \times (30 + 40)$
   - label: D
-    content: 1.1 × (30 + 40) 第2頁,共2頁
+    content: $1.1 \times (30 + 40)$
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_23
   section: 1
   number: 23
   type: single
   page: 2
-  stem: 數線上P、Q、R、S的坐標分別為a、b、c、d,它 們在數線上的位置如下圖,根據各點的位置,判斷下列 哪個選項不會與 |a−c| 相等? a b c
-    d 0 P Q R S O
+  stem: 數線上$P$、$Q$、$R$、$S$的坐標分別為$a$、$b$、$c$、$d$，它們在數線上的位置如下圖，根據各點的位置，判斷下列哪個選項不會與 $|a
+    - c|$ 相等？
   options:
   - label: A
-    content: a−c
+    content: $a - c$
   - label: B
-    content: c−a
+    content: $c - a$
   - label: C
-    content: '|d−a| −|d−c|'
+    content: $|d - a| - |d - c|$
   - label: D
-    content: PR
+    content: $\overline{PR}$
+  assets:
+  - key: s1_23_f1
+    kind: figure
+    file: doc_113_台北_誠正_數學_g7s1e1/s1_23_f1.png
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_24
   section: 1
   number: 24
   type: single
   page: 2
-  stem: 以英國格林威治時區(GMT+ 0)為基準,臺灣的時 區為GMT+ 8,代表臺灣比英國格林威治快8個小時。 若美國舊金山的時區為GMT−7,則台灣與美國舊金山
-    的時間關係為下列何者?
+  stem: 以英國格林威治時區($GMT + 0$)為基準，臺灣的時區為 $GMT + 8$，代表臺灣比英國格林威治快8 個小時。若美國舊金山的時區為 $GMT
+    - 7$，則台灣與美國舊金山的時間關係為下列何者？
   options:
   - label: A
-    content: 臺灣比美國舊金山快1小時
+    content: 臺灣比美國舊金山快1 小時
   - label: B
-    content: 臺灣比美國舊金山慢1小時
+    content: 臺灣比美國舊金山慢1 小時
   - label: C
-    content: 臺灣比美國舊金山快15小時
+    content: 臺灣比美國舊金山快15 小時
   - label: D
-    content: 臺灣比美國舊金山慢15小時
+    content: 臺灣比美國舊金山慢15 小時
 - id: doc_113_台北_誠正_數學_g7s1e1_s1_25
   section: 1
   number: 25
   type: single
   page: 2
-  stem: 接上題,小美、小麗、小華分別住在臺灣、美國舊 金山及澳洲墨爾本(GMT+ 10),且三位皆在當地國家的 晚間十點至隔天上午八點為睡眠休息時間,不便聯絡。
-    若臺灣的小美想同時在線上與舊金山的小麗及墨爾本的 小華進行視訊通話,則下列何者臺灣時間不適合?
+  stem: 接上題，小美、小麗、小華分別住在臺灣、美國舊金山及澳洲墨爾本($GMT + 10$)，且三位皆在當地國家的晚間十點至隔天上午八點為睡眠休息時間，不便聯絡。若臺灣的小美想同時在線上與舊金山的小麗及墨爾本的小華進行視訊通話，則下列何者臺灣時間不適合？
   options:
   - label: A
-    content: 上午09:00
+    content: 上午 09：00
   - label: B
-    content: 上午11:00
+    content: 上午 11：00
   - label: C
-    content: 中午12:00
+    content: 中午 12：00
   - label: D
-    content: 下午14:00
-  group_stem: （第 24 題）以英國格林威治時區(GMT+ 0)為基準,臺灣的時 區為GMT+ 8,代表臺灣比英國格林威治快8個小時。 若美國舊金山的時區為GMT−7,則台灣與美國舊金山
-    的時間關係為下列何者?
+    content: 下午 14：00
+  group_stem: （第 24 題）以英國格林威治時區($GMT + 0$)為基準，臺灣的時區為 $GMT + 8$，代表臺灣比英國格林威治快8 個小時。若美國舊金山的時區為
+    $GMT - 7$，則台灣與美國舊金山的時間關係為下列何者？

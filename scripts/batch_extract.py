@@ -90,12 +90,17 @@ def collect(args) -> int:
     for job in B.load_jobs(PHASE):
         if job.get("collected"):
             continue
-        s = B.state(job)
-        if s not in B.DONE["gemini"] and s not in B.FAILED["gemini"]:
-            print(f"  {job['label']} {s}", flush=True)
+        try:
+            s = B.state(job)
+            if s not in B.DONE["gemini"] and s not in B.FAILED["gemini"]:
+                print(f"  {job['label']} {s}", flush=True)
+                left += 1
+                continue
+            res = B.results(job)
+        except Exception as exc:  # noqa: BLE001  網路暫時中斷，下一輪再收
+            print(f"  {job['label']} 查詢失敗，下一輪再試：{str(exc)[:100]}", flush=True)
             left += 1
             continue
-        res = B.results(job)
         ok = bad = 0
         usd = 0.0
         failed = []

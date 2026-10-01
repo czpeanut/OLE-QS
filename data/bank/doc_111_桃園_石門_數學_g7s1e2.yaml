@@ -1,58 +1,69 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 111
   semester: 1
   exam_seq: 2
-  school: 桃園市立石門國民中學
-  grade: 7
-  subject: 數學
-  scope_note: '翰林版第一冊2-1〜2-4     7年     班     號  姓名:  ★注意事項:1選擇題畫卡,請用2B鉛筆!'
   city: 桃園
   school_short: 石門
+  school: 桃園市立石門國中
+  scope_note: 翰林版第一冊2-1〜2-4
   id: doc_111_桃園_石門_數學_g7s1e2
-  title: 桃園市立石門國民中學 111學年度第1學期第2次定期評量7年級數學科試題
+  title: 桃園市立石門國中 111學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 111學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題4分,共88分)
+    name: 一、選擇題：(每題4 分，共 88 分)
     count: 22
   - ord: 2
-    name: 二、非選題
-    type: calc
-    score_rule: 二、非選題:(每題6分,共12分) 請將答案寫在手寫卷上
+    name: 二、非選題：(每題6 分，共12 分) 請將答案寫在手寫卷上
     count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/111/1-2/桃園/石門.pdf
+  scope:
+    lessons:
+    - number: 2-1
+      title: null
+    - number: 2-2
+      title: null
+    - number: 2-3
+      title: null
+    - number: 2-4
+      title: null
+    publisher: 翰林版
+    raw: 翰林版第一冊2-1〜2-4
+    volume: 第一冊
 questions:
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: (-$\frac{5}{7}$ )-$\frac{1}{7}$ =? $\frac{6}{7}$
+  stem: （$-\frac{5}{7}$）$-\frac{1}{7}$＝？
   options:
+  - label: A
+    content: $-\frac{6}{7}$
   - label: B
-    content: '- $\frac{4}{7}$'
+    content: $-\frac{4}{7}$
   - label: C
     content: $\frac{6}{7}$
   - label: D
     content: $\frac{4}{7}$
-  - label: A
-    content: '- $\frac{1}{5}$'
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列哪一個算式的值與-3相等 ?
+  stem: 下列哪一個算式的值與$-3\frac{1}{5}$ 相等 ？
   options:
-  - label: B
-    content: -3- $\frac{1}{5}$
-  - label: C
-    content: '- $\frac{14}{5}$'
   - label: A
-    content: -3+ $\frac{1}{5}$
+    content: $-3+\frac{1}{5}$
+  - label: B
+    content: $-3-\frac{1}{5}$
+  - label: C
+    content: $-\frac{14}{5}$
   - label: D
-    content: -3× $\frac{1}{5}$
+    content: $-3\times\frac{1}{5}$
   answer:
   - 4 6 5
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_3
@@ -60,7 +71,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 73 × 23=14□,□=?
+  stem: $7^{3}\times 2^{3}=14^{\square}$，$\square=？$
   options:
   - label: A
     content: '1'
@@ -75,7 +86,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
     content: 一個質數加上另一個質數一定不是質數
@@ -90,37 +101,37 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 已知412、3186、252、111四數中,3的倍數有a個,4的倍數有b個,9的倍數有c個,則下列何者正確?
+  stem: 已知412、3186、252、111 四數中，3 的倍數有a 個，4 的倍數有b 個，9 的倍數有c 個，則下列何者正確？
   options:
   - label: A
-    content: a=2
+    content: a＝2
   - label: B
-    content: b=3
+    content: b＝3
   - label: C
-    content: c=3
+    content: c＝3
   - label: D
-    content: a+b+c是質數
+    content: a＋b＋c 是質數
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 下列何者是120的標準分解式?
+  stem: 下列何者是120 的標準分解式？
   options:
   - label: A
-    content: 2 × 33 × 5
+    content: $2\times 3^{3}\times 5$
   - label: B
-    content: 23 × 3 × 5
+    content: $2^{3}\times 3\times 5$
   - label: C
-    content: 22 × 5 × 6
+    content: $2^{2}\times 5\times 6$
   - label: D
-    content: 10 × 12
+    content: $10\times 12$
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 求2187的所有質因數?
+  stem: 求2187 的所有質因數？
   options:
   - label: A
     content: '3'
@@ -135,7 +146,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: '[12,(18,24)]=?'
+  stem: '[12,(18,24)]＝？'
   options:
   - label: A
     content: '6'
@@ -150,53 +161,41 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: (-$\frac{1}{9}$ )× $\frac{7}{3}$ ÷ $\frac{7}{12}$ =? $\frac{1}{9}$
+  stem: （$-\frac{1}{9}$）$\times\frac{7}{3}\div\frac{7}{12}$＝？
   options:
-  - label: B
-    content: '- $\frac{2}{9}$'
-  - label: C
-    content: '- $\frac{3}{9}$'
-  - label: D
-    content: '- $\frac{4}{9}$'
   - label: A
-    content: '-'
+    content: $-\frac{1}{9}$
+  - label: B
+    content: $-\frac{2}{9}$
+  - label: C
+    content: $-\frac{3}{9}$
+  - label: D
+    content: $-\frac{4}{9}$
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 右邊是津城做的短除法算式,請問下列何者正確?
+  stem: 右邊是津城做的短除法算式，請問下列何者正確？
   options:
   - label: A
-    content: (8,12,10)=4
+    content: （8,12,10）＝4
   - label: B
-    content: '[2,3,5] =1'
+    content: '[2,3,5] ＝1'
   - label: C
-    content: (4,6,5)=2
+    content: （4,6,5）＝2
   - label: D
-    content: '[8,12,10]=120 8 12 10 2. 4 6 5 2 2  3  5'
+    content: '[8,12,10]＝120'
   assets:
-  - key: p1_f01
+  - key: s1_10_f1
     kind: figure
-    file: doc_111_桃園_石門_數學_g7s1e2/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_111_桃園_石門_數學_g7s1e2/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_111_桃園_石門_數學_g7s1e2/p1_f03.png
-  - key: p1_f04
-    kind: figure
-    file: doc_111_桃園_石門_數學_g7s1e2/p1_f04.png
-  - key: p1_f05
-    kind: figure
-    file: doc_111_桃園_石門_數學_g7s1e2/p1_f05.png
+    file: doc_111_桃園_石門_數學_g7s1e2/s1_10_f1.png
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 下列哪一個數與210互質?
+  stem: 下列哪一個數與210 互質？
   options:
   - label: A
     content: '31'
@@ -205,29 +204,30 @@ questions:
   - label: C
     content: '51'
   - label: D
-    content: 91 【背面還有試題】 本試卷共有3頁,此為第1頁
+    content: '91'
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: (22 × 34 × 7 × 11 , 24 × 33 × 52 × 11, 23 × 35 × 53 × 11)=?
+  stem: （$2^{2}\times 3^{4}\times 7\times 11$, $2^{4}\times 3^{3}\times 5^{2}\times
+    11$, $2^{3}\times 3^{5}\times 5^{3}\times 11$）＝？
   options:
   - label: A
-    content: 23 × 33 × 11
+    content: $2^{3}\times 3^{3}\times 11$
   - label: B
-    content: 22 × 33 × 52 × 7× 11
+    content: $2^{2}\times 3^{3}\times 5^{2}\times 7\times 11$
   - label: C
-    content: 22 × 33 × 11
+    content: $2^{2}\times 3^{3}\times 11$
   - label: D
-    content: 24 × 35 × 53 × 7× 11
+    content: $2^{4}\times 3^{5}\times 5^{3}\times 7\times 11$
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 古希臘數學家歐幾里德提出:如果有一個數,它的所有正因數,除了本身以外,加起來剛好等於本身,則 這個數就稱為完美數(perfect number)。例如:6的因數有1、2、3、6,除了本身6以外,1+2+3=6,
-    則6是完美數。請問下列哪一個數,也是完美數?
+  stem: 古希臘數學家歐幾里德提出：如果有一個數，它的所有正因數，除了本身以外，加起來剛好等於本身，則這個數就稱為完美數(perfect number)。例如：6
+    的因數有1、2、3、6，除了本身6 以外，1＋2＋3＝6，則6 是完美數。請問下列哪一個數，也是完美數？
   options:
   - label: A
     content: '12'
@@ -242,42 +242,43 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 十月份708班有22位同學訂營養午餐,午餐股長共收了242★8元的午餐費,★是被原子筆漏水塗汙的部 分,已知每個人午餐費是相同的正整數,請問十月份708班共收了多少元的午餐費?
+  stem: 十月份708 班有22 位同學訂營養午餐，午餐股長共收了242★8 元的午餐費，★是被原子筆漏水塗汙的部分，已知每個人午餐費是相同的正整數，請問十月份708
+    班共收了多少元的午餐費？
   options:
   - label: A
-    content: 24218元
+    content: 24218 元
   - label: B
-    content: 24248元
+    content: 24248 元
   - label: C
-    content: 24268元
+    content: 24268 元
   - label: D
-    content: 24288元
+    content: 24288 元
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: '- $\frac{11}{113}$ -( $\frac{1}{2}$ - $\frac{11}{13}$ ) =? 2'
+  stem: －$\frac{11}{13}$－( $\frac{1}{2}$－$\frac{11}{13}$ ) ＝？
   options:
+  - label: A
+    content: $\frac{1}{2}$
   - label: B
-    content: '- $\frac{1}{2}$'
+    content: －$\frac{1}{2}$
   - label: C
     content: $\frac{10}{13}$
-  - label: A
-    content: ''
   - label: D
-    content: '- $\frac{11}{26}$'
+    content: －$\frac{11}{26}$
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 若a=- $\frac{1}{2}$ ,b=- $\frac{1}{3}$ ,c=- $\frac{2}{>5}$ ,則下列何者正確?
+  stem: 若a＝－$\frac{1}{2}$，b＝－$\frac{1}{3}$，c＝－$\frac{2}{5}$，則下列何者正確？
   options:
   - label: A
     content: b<c<a
   - label: B
-    content: a>bc
+    content: a>b>c
   - label: C
     content: c>b>a
   - label: D
@@ -287,32 +288,30 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: '鍾老師想要在學期末買6杯珍珠奶茶請他各班的小老師,以感謝他們一學期來的辛勞。於是上網找到3家 每杯容量都是500c.c.的飲料店,以下是這3家的促銷方案:
-    查理公子:珍珠奶茶原價一杯46元,買五送一。 花朵兒:珍珠奶茶原價一杯50元,買超過五杯,每杯都打八折。 ’ s茶味:珍珠奶茶原價一杯50元,每買2杯,第二杯都半價。
-    不考慮各家珍珠奶茶品質的情況下,請問鍾老師向哪一家購買最省錢? Tea'
+  stem: '鍾老師想要在學期末買6 杯珍珠奶茶請他各班的小老師，以感謝他們一學期來的辛勞。於是上網找到3 家每杯容量都是500c.c.的飲料店，以下是這3 家的促銷方案：
+
+    查理公子：珍珠奶茶原價一杯46 元，買五送一。
+
+    花朵兒：珍珠奶茶原價一杯50 元，買超過五杯，每杯都打八折。
+
+    Tea’ s 茶味：珍珠奶茶原價一杯50 元，每買2 杯，第二杯都半價。
+
+    不考慮各家珍珠奶茶品質的情況下，請問鍾老師向哪一家購買最省錢？'
   options:
   - label: A
     content: 查理公子
   - label: B
     content: 花朵兒
   - label: C
-    content: Tea ’ s茶味
+    content: Tea’ s 茶味
   - label: D
     content: 三家價錢都一樣
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_111_桃園_石門_數學_g7s1e2/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_111_桃園_石門_數學_g7s1e2/p2_f02.png
 - id: doc_111_桃園_石門_數學_g7s1e2_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: (-$\frac{3}{4}$ )6 ×(-$\frac{3}{4}$ )4 ÷(-$\frac{3}{4}$ )3=(-$\frac{3}{4}$
-    ) □,□=?
+  stem: （$-\frac{3}{4}$）$^{6}\times$（$-\frac{3}{4}$）$^{4}\div$（$-\frac{3}{4}$）$^{3}$＝（$-\frac{3}{4}$）$^{\square}$，$\square$＝？
   options:
   - label: A
     content: '6'
@@ -327,7 +326,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 〔(-2)8〕4=(-2) □,□=?
+  stem: 〔（－2）$^{8}$〕$^{4}$＝（－2）$^{\square}$，$\square$＝？
   options:
   - label: A
     content: '32'
@@ -342,8 +341,8 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 生日是8月24日的以翔在一本科普書中看到歌德巴赫猜想:「任何一個大於2的偶數,都可以表示成2個 質數的和。」於是他想用這種方式來設計提款卡密碼。他將生日的月份和日期,各拆成2個質數的和,然
-    後將這4個質數由小到大排列成一個6位數字的密碼,請問下列哪一個是以翔的提款卡密碼?
+  stem: 生日是8 月24 日的以翔在一本科普書中看到歌德巴赫猜想：「任何一個大於2 的偶數，都可以表示成2 個質數的和。」於是他想用這種方式來設計提款卡密碼。他將生日的月份和日期，各拆成2
+    個質數的和，然後將這4 個質數由小到大排列成一個6 位數字的密碼，請問下列哪一個是以翔的提款卡密碼？
   options:
   - label: A
     content: '351113'
@@ -358,7 +357,7 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: 已知[a,b]=15,求[a,b,24]=?
+  stem: 已知[a，b]＝15，求[a，b，24]＝？
   options:
   - label: A
     content: '72'
@@ -373,32 +372,41 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 孟承按照家政老師的食譜,要做一個8吋的夏威夷PIZZA。他先將老師已揉好的麵糰取150克來桿圓,放 $\frac{1}{2}$ 在烤盤紙上,用叉子戳洞,並塗上10克的番茄醬。接著家政老師說可憑個人喜好添加食材,於是孟承在
-    $\frac{3}{4}$ 克的火腿,12 $\frac{1}{5}$ 克的洋蔥圈及50 $\frac{13}{20}$ 已塗好番茄醬的麵糰上,加入25克的鳳梨,最後再灑上滿滿的cheese
-    $\frac{1}{10}$ 條30克。根據經驗,這樣的PIZZA入烤箱後會蒸發約20克的水分。在忽略上述所有食材些微誤差下,請 問孟承最後烤出來的PIZZA總重約多少克?
-    20克
+  stem: 孟承按照家政老師的食譜，要做一個8 吋的夏威夷PIZZA。他先將老師已揉好的麵糰取150 克來桿圓，放在烤盤紙上，用叉子戳洞，並塗上$10\frac{1}{2}$
+    克的番茄醬。接著家政老師說可憑個人喜好添加食材，於是孟承在已塗好番茄醬的麵糰上，加入$25\frac{3}{4}$ 克的火腿，$12\frac{1}{5}$
+    克的洋蔥圈及$50\frac{13}{20}$克的鳳梨，最後再灑上滿滿的cheese 條30 克。根據經驗，這樣的PIZZA 入烤箱後會蒸發約$20\frac{1}{10}$克的水分。在忽略上述所有食材些微誤差下，請問孟承最後烤出來的PIZZA
+    總重約多少克？
   options:
-  - label: B
-    content: 253克
-  - label: C
-    content: 259克
-  - label: D
-    content: 265 $\frac{11}{20}$ 7克
   - label: A
-    content: 250 【還有下一張試卷】 本試卷共有3頁,此為第2頁
+    content: $250\frac{7}{20}$ 克
+  - label: B
+    content: 253 克
+  - label: C
+    content: 259 克
+  - label: D
+    content: $265\frac{11}{20}$ 克
 - id: doc_111_桃園_石門_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: calc
   page: 3
-  stem: 按照下列步驟求出523 × $\frac{3}{2512}$ $\frac{1}{3}$ + =? (1)觀察2512=(5 △,將2512化成5
-    □)12=5 △,並求出△=?(2分) $\frac{3}{2512}$ (2)透過約分計算523 × =?(2分) $\frac{3}{2512}$ $\frac{1}{3}$
-    (3)完成計算求出523 × + =?(2分) 注意!此為題目卷,請將答案用黑色原子筆寫在手寫卷上!
+  stem: '按照下列步驟求出 $5^{23}\times\frac{3}{25^{12}}+\frac{1}{3}＝？$
+
+    (1)觀察$25^{12}＝（5^{\square}）^{12}＝5^{\triangle}$，將$25^{12}$ 化成$5^{\triangle}$，並求出$\triangle＝？$（2
+    分）
+
+    (2)透過約分計算 $5^{23}\times\frac{3}{25^{12}}＝？$（2 分）
+
+    (3)完成計算求出 $5^{23}\times\frac{3}{25^{12}}+\frac{1}{3}＝？$（2 分）'
 - id: doc_111_桃園_石門_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: calc
   page: 3
-  stem: (1)拉拉山的偉叡果園,今天採收三百多顆水蜜桃,每10顆裝成一箱,會剩下6顆,每15顆裝成一箱,會剩 下11顆,請問1偉叡果園今天採收的水蜜桃至少有幾顆?(2分)
-    2偉叡果園今天採收的水蜜桃最多有幾顆?(2分) (2)拉拉山的祥龍果園,今天也採收三百多顆水蜜桃,每10顆裝成一箱,會剩下2顆,每15顆裝成一箱,會 剩下12顆,請問祥龍果園今天採收的水蜜桃至少有幾顆?(2分)
-    注意!此為題目卷,請將答案用黑色原子筆寫在手寫卷上! 【試題結束】 本試卷共有3頁,此為第3頁
+  stem: '(1)拉拉山的偉叡果園，今天採收三百多顆水蜜桃，每10 顆裝成一箱，會剩下6 顆，每15 顆裝成一箱，會剩下11 顆，請問①偉叡果園今天採收的水蜜桃至少有幾顆？(2
+    分)
+
+    ②偉叡果園今天採收的水蜜桃最多有幾顆？(2 分)
+
+    (2)拉拉山的祥龍果園，今天也採收三百多顆水蜜桃，每10 顆裝成一箱，會剩下2 顆，每15 顆裝成一箱，會剩下12 顆，請問祥龍果園今天採收的水蜜桃至少有幾顆？(2
+    分)'
