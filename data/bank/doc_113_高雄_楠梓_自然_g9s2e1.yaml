@@ -19,6 +19,10 @@ document:
     count: 45
   extractor: vlm:gemini-3.7-flash(batch)
   source_file: 國三/自然/113/2-1/高雄/楠梓.pdf
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
 questions:
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_1
   section: 1
@@ -26,48 +30,128 @@ questions:
   type: tf
   page: 1
   stem: 電力公司以「度」為單位來計量家庭用掉的電量有多少庫侖，以收取電費。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_2
   section: 1
   number: 2
   type: tf
   page: 1
   stem: 中氣層的最低溫度比對流層的最低溫度還要低。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-1
+      title: 地球的大氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-1 地球的大氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_3
   section: 1
   number: 3
   type: tf
   page: 1
   stem: 整個大氣層溫度最高的地方是在對流層底部，接近地表的地方，其原因是地表附近空氣吸收地表輻射的紅外線。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-1
+      title: 地球的大氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-1 地球的大氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_4
   section: 1
   number: 4
   type: tf
   page: 1
   stem: 大多數的流星的尾跡結束於中氣層。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-1
+      title: 地球的大氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-1 地球的大氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_5
   section: 1
   number: 5
   type: tf
   page: 1
   stem: 臺灣梅雨的形成是因為在春末夏初之際，西南季風和東北季風兩者勢力相當，而造成連續性下雨。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-3
+      title: 氣團與鋒面
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-3 氣團與鋒面
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_6
   section: 1
   number: 6
   type: tf
   page: 1
   stem: 關於電池電壓1.5V 代表此電池每秒可提供的電能是1.5 焦耳。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-3
+      title: 電池
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-3 電池
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_7
   section: 1
   number: 7
   type: tf
   page: 1
   stem: 電暖器的使用是電流的熱效應，而鉛蓄電池的充電是電流的化學效應。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_8
   section: 1
   number: 8
   type: tf
   page: 1
   stem: 容易造成降雨雷擊與強陣風的降雨類型是鋒面雨 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-3
+      title: 氣團與鋒面
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-3 氣團與鋒面
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_9
   section: 1
   number: 9
@@ -78,12 +162,32 @@ questions:
   - key: s1_9_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s1_9_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s1_10
   section: 1
   number: 10
   type: tf
   page: 1
   stem: 小明查網路顯示台北飛高雄的民航機，飛行高度會在2 萬英呎(約6096 公尺)，所以這架飛機會飛在大氣層中的平流層。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-1
+      title: 地球的大氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-1 地球的大氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_11
   section: 2
   number: 11
@@ -101,6 +205,16 @@ questions:
     content: 電流在電池中從負極移動到正極時獲得電能。
   group_stem: '[題組11-12] ⅠⅡ Ⅲ三燈泡在一電路中發光，其電路圖如右圖所示。請回答下列 11-12 題:'
   shared_asset: g2_11_12
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_12
   section: 2
   number: 12
@@ -118,6 +232,16 @@ questions:
     content: 電源的電壓不變。
   group_stem: '[題組11-12] ⅠⅡ Ⅲ三燈泡在一電路中發光，其電路圖如右圖所示。請回答下列 11-12 題:'
   shared_asset: g2_11_12
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_13
   section: 2
   number: 13
@@ -133,6 +257,16 @@ questions:
     content: 1 度＝1 仟瓦．小時
   - label: D
     content: 1 庫侖＝1 安培／秒。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_14
   section: 2
   number: 14
@@ -148,6 +282,16 @@ questions:
     content: 4 個；0.5A
   - label: D
     content: 6 個；0.25A 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-3
+      title: 電池
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-3 電池
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_15
   section: 2
   number: 15
@@ -169,6 +313,16 @@ questions:
   - key: s2_15_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_15_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-1
+      title: 電流的熱效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-1 電流的熱效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_16
   section: 2
   number: 16
@@ -187,6 +341,16 @@ questions:
     content: '3'
   - label: D
     content: 4。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_17
   section: 2
   number: 17
@@ -213,6 +377,16 @@ questions:
     content: '252000'
   - label: D
     content: 36000。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_18
   section: 2
   number: 18
@@ -228,6 +402,16 @@ questions:
     content: 延長線中的保險絲額定電流應大於延長線的最大電流安全容量
   - label: D
     content: 保險絲的材料多為低熔點的合金。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_19
   section: 2
   number: 19
@@ -243,6 +427,16 @@ questions:
     content: 接地構成通路，電器才能啟動
   - label: D
     content: 萬一漏電時，可將外漏之電流導入地面，以免人體觸電。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_20
   section: 2
   number: 20
@@ -262,6 +456,16 @@ questions:
   - key: s2_20_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_20_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_21
   section: 2
   number: 21
@@ -278,6 +482,16 @@ questions:
     content: '2'
   - label: D
     content: 1。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_22
   section: 2
   number: 22
@@ -293,6 +507,16 @@ questions:
     content: 燈泡只要電壓足夠，不論接直流電或交流電都會亮
   - label: D
     content: 只有直流電才可以電解水，交流電無法電解水。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-2
+      title: 生活用電
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-2 生活用電
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_23
   section: 2
   number: 23
@@ -312,6 +536,16 @@ questions:
   - key: s2_23_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_23_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-3
+      title: 電池
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-3 電池
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_24
   section: 2
   number: 24
@@ -327,6 +561,16 @@ questions:
     content: 常見的二次電池包含鋰離子電池及鎳氫電池等
   - label: D
     content: 乾電池又稱碳鋅電池。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-3
+      title: 電池
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-3 電池
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_25
   section: 2
   number: 25
@@ -342,6 +586,16 @@ questions:
     content: 乾電池內的電解質是氯化銨
   - label: D
     content: 乾電池的鋅殼為負極。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-3
+      title: 電池
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-3 電池
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_26
   section: 2
   number: 26
@@ -361,6 +615,16 @@ questions:
   - key: s2_26_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_26_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_27
   section: 2
   number: 27
@@ -376,6 +640,16 @@ questions:
     content: 正極為B；活性A＞B
   - label: D
     content: 正極為B；活性A＜B。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_28
   section: 2
   number: 28
@@ -393,6 +667,16 @@ questions:
     content: 鋅片減少的重量大於銅片增加的重量。
   group_stem: '[題組28-30] 鋅銅電池的裝置如右圖，此電池正在放電時。若已知原子量：Zn＝65.4、Cu＝63.5，請回答下列28-30 題問題：'
   shared_asset: g2_28_30
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_29
   section: 2
   number: 29
@@ -410,6 +694,16 @@ questions:
     content: 電路接通時，U 型管內溶液中的鉀離子K$^{+}$會游向正極。
   group_stem: '[題組28-30] 鋅銅電池的裝置如右圖，此電池正在放電時。若已知原子量：Zn＝65.4、Cu＝63.5，請回答下列28-30 題問題：'
   shared_asset: g2_28_30
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_30
   section: 2
   number: 30
@@ -427,6 +721,16 @@ questions:
     content: '電池的總反應為: Zn$^{2+}$＋Cu→Zn ＋Cu$^{2+}$'
   group_stem: '[題組28-30] 鋅銅電池的裝置如右圖，此電池正在放電時。若已知原子量：Zn＝65.4、Cu＝63.5，請回答下列28-30 題問題：'
   shared_asset: g2_28_30
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_31
   section: 2
   number: 31
@@ -448,6 +752,16 @@ questions:
   - key: g2_31_34_x2
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/g2_31_34_f2.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_32
   section: 2
   number: 32
@@ -465,6 +779,16 @@ questions:
     content: 鉛極，H$_{2}$。
   group_stem: '[題組31-34] 利用鉛蓄電池為電源進行電解水的實驗，如圖為電解一段時間後的情形，請回答下列問題：'
   shared_asset: g2_31_34
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_33
   section: 2
   number: 33
@@ -482,6 +806,16 @@ questions:
     content: 不斷電系統通常都是用鉛蓄電池。
   group_stem: '[題組31-34] 利用鉛蓄電池為電源進行電解水的實驗，如圖為電解一段時間後的情形，請回答下列問題：'
   shared_asset: g2_31_34
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_34
   section: 2
   number: 34
@@ -499,6 +833,16 @@ questions:
     content: 銅片變輕。
   group_stem: '[題組31-34] 利用鉛蓄電池為電源進行電解水的實驗，如圖為電解一段時間後的情形，請回答下列問題：'
   shared_asset: g2_31_34
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_35
   section: 2
   number: 35
@@ -516,6 +860,16 @@ questions:
     content: 乙電極質量減輕 。
   group_stem: '[題組35-36] 如圖為不同電極電解硫酸銅水溶液的實驗裝置：電解槽(一)以銅片當電極電解硫酸銅水溶液；電解槽(二)則是以碳棒當電極電解硫酸銅水溶液的實驗裝置，請回答下列問題：'
   shared_asset: g2_35_36
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_36
   section: 2
   number: 36
@@ -533,6 +887,16 @@ questions:
     content: 若不考慮水的蒸發，在學校實驗室中將這組裝置放在夠大的電子天平上，二者實驗裝置的總重量不變。
   group_stem: '[題組35-36] 如圖為不同電極電解硫酸銅水溶液的實驗裝置：電解槽(一)以銅片當電極電解硫酸銅水溶液；電解槽(二)則是以碳棒當電極電解硫酸銅水溶液的實驗裝置，請回答下列問題：'
   shared_asset: g2_35_36
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 理化
+      code: 1-4
+      title: 電流的化學效應
+      chapter: 第1章 電與生活
+    textbook: 九下理化 1-4 電流的化學效應
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_37
   section: 2
   number: 37
@@ -548,6 +912,16 @@ questions:
     content: 阻擋大多數來自太空的小天體碎片侵襲地球
   - label: D
     content: 提供動植物生存所需氣體。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-1
+      title: 地球的大氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-1 地球的大氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_38
   section: 2
   number: 38
@@ -563,6 +937,16 @@ questions:
     content: 冬；對流雨
   - label: D
     content: 冬；地形雨。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-3
+      title: 氣團與鋒面
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-3 氣團與鋒面
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_39
   section: 2
   number: 39
@@ -578,6 +962,16 @@ questions:
     content: 臭氧含量最多的是平流層
   - label: D
     content: 珠穆朗瑪峰也還在對流層中而已。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-1
+      title: 地球的大氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-1 地球的大氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_40
   section: 2
   number: 40
@@ -593,6 +987,16 @@ questions:
     content: 南
   - label: D
     content: 北。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-2
+      title: 天氣現象
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-2 天氣現象
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_41
   section: 2
   number: 41
@@ -608,6 +1012,16 @@ questions:
     content: 0 到50 代表良好
   - label: D
     content: 負責公布的是環境部。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-1
+      title: 地球的大氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-1 地球的大氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_42
   section: 2
   number: 42
@@ -627,6 +1041,16 @@ questions:
   - key: s2_42_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_42_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-3
+      title: 氣團與鋒面
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-3 氣團與鋒面
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_43
   section: 2
   number: 43
@@ -646,6 +1070,16 @@ questions:
   - key: s2_43_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_43_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-2
+      title: 天氣現象
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-2 天氣現象
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_44
   section: 2
   number: 44
@@ -665,6 +1099,16 @@ questions:
   - key: s2_44_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_44_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-3
+      title: 氣團與鋒面
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-3 氣團與鋒面
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_45
   section: 2
   number: 45
@@ -687,6 +1131,16 @@ questions:
   - key: s2_45_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_45_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-3
+      title: 氣團與鋒面
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-3 氣團與鋒面
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_46
   section: 2
   number: 46
@@ -706,6 +1160,16 @@ questions:
   - key: s2_46_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_46_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-2
+      title: 天氣現象
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-2 天氣現象
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_47
   section: 2
   number: 47
@@ -721,6 +1185,16 @@ questions:
     content: 形成露的所需溫度最低
   - label: D
     content: 霧和露是液態水，霜是固態水。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-2
+      title: 天氣現象
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-2 天氣現象
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_48
   section: 2
   number: 48
@@ -737,6 +1211,16 @@ questions:
     content: '3'
   - label: D
     content: 4。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-4
+      title: 臺灣的災變天氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-4 臺灣的災變天氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_49
   section: 2
   number: 49
@@ -758,6 +1242,16 @@ questions:
   - key: s2_49_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_49_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-4
+      title: 臺灣的災變天氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-4 臺灣的災變天氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_50
   section: 2
   number: 50
@@ -774,6 +1268,16 @@ questions:
     content: $\frac{4}{3}$
   - label: D
     content: 75％。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-2
+      title: 天氣現象
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-2 天氣現象
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_51
   section: 2
   number: 51
@@ -793,6 +1297,16 @@ questions:
   - key: s2_51_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_51_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-2
+      title: 天氣現象
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-2 天氣現象
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_52
   section: 2
   number: 52
@@ -808,6 +1322,16 @@ questions:
     content: 水氣含量隨高度的變化
   - label: D
     content: 氣溫隨高度的變化。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-1
+      title: 地球的大氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-1 地球的大氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_53
   section: 2
   number: 53
@@ -827,6 +1351,16 @@ questions:
   - key: s2_53_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_53_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-1
+      title: 地球的大氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-1 地球的大氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_54
   section: 2
   number: 54
@@ -846,6 +1380,16 @@ questions:
   - key: s2_54_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_54_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-4
+      title: 臺灣的災變天氣
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-4 臺灣的災變天氣
+    labeled_by: ai
 - id: doc_113_高雄_楠梓_自然_g9s2e1_s2_55
   section: 2
   number: 55
@@ -865,6 +1409,16 @@ questions:
   - key: s2_55_f1
     kind: figure
     file: doc_113_高雄_楠梓_自然_g9s2e1/s2_55_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 地科
+      code: 3-2
+      title: 天氣現象
+      chapter: 第3章 變化莫測的天氣
+    textbook: 九下地科 3-2 天氣現象
+    labeled_by: ai
 shared_assets:
 - key: g2_11_12
   label: 題組附圖

@@ -19,6 +19,10 @@ document:
     count: 2
   extractor: vlm:gemini-3.7-flash(batch)
   source_file: 國二/數學/113/1-2/台南/民德.pdf
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
 questions:
 - id: doc_113_台南_民德_數學_g8s1e2_s1_1
   section: 1
@@ -35,6 +39,16 @@ questions:
     content: $\sqrt{70}$
   - label: D
     content: $2\sqrt{12}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_2
   section: 1
   number: 2
@@ -50,6 +64,16 @@ questions:
     content: $\sqrt{5}\times 3=\sqrt{15}$
   - label: D
     content: $\sqrt{8}\div\sqrt{2}=\sqrt{8\div 2}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_3
   section: 1
   number: 3
@@ -65,6 +89,16 @@ questions:
     content: $2x+5$ 是 $2x^{2}+x-10$ 的因式
   - label: D
     content: $2x-4$ 是 $2x^{2}+x-10$ 的因式
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_4
   section: 1
   number: 4
@@ -80,6 +114,16 @@ questions:
     content: $2\sqrt{17}$
   - label: D
     content: $\sqrt{34}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_5
   section: 1
   number: 5
@@ -95,6 +139,16 @@ questions:
     content: '2'
   - label: D
     content: $-2$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_6
   section: 1
   number: 6
@@ -110,6 +164,16 @@ questions:
     content: $\frac{\sqrt{7}}{3}$ 跟 $\sqrt{28}$ 是同類方根
   - label: D
     content: 因式分解 $25x^{2}-16=(5x-4)^{2}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 提公因式與乘法公式作因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 提公因式與乘法公式作因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_7
   section: 1
   number: 7
@@ -129,6 +193,16 @@ questions:
   - key: s1_7_f1
     kind: figure
     file: doc_113_台南_民德_數學_g8s1e2/s1_7_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_8
   section: 1
   number: 8
@@ -144,6 +218,16 @@ questions:
     content: $18+2\sqrt{45}$
   - label: D
     content: $18+6\sqrt{5}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_9
   section: 1
   number: 9
@@ -160,6 +244,16 @@ questions:
     content: '10'
   - label: D
     content: '1'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_10
   section: 1
   number: 10
@@ -179,30 +273,80 @@ questions:
   - key: s1_10_f1
     kind: figure
     file: doc_113_台南_民德_數學_g8s1e2/s1_10_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_11
   section: 1
   number: 11
   type: fill
   page: 2
   stem: 計算 $\sqrt{3}-\frac{\sqrt{21}}{\sqrt{12}}\div\frac{\sqrt{7}}{\sqrt{3}}=$______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_12
   section: 1
   number: 12
   type: fill
   page: 2
   stem: 若 6、8、$x$ 為直角三角形的三個邊，則 $x=$______ (全對才給分)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_13
   section: 1
   number: 13
   type: fill
   page: 2
   stem: 已知 $\sqrt{2}\approx 1.414$，則 $\sqrt{200}+\sqrt{0.02}$ 的近似值 $=$______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_14
   section: 1
   number: 14
   type: fill
   page: 2
   stem: 計算 $\sqrt{35}\times\sqrt{14}-\frac{2}{\sqrt{10}+3}=$______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_15
   section: 1
   number: 15
@@ -210,42 +354,112 @@ questions:
   page: 2
   stem: 將一張邊長為 $6x+3$ 的正方形色紙中間剪去一個邊長為 $2x+1$ 的小正方形後，剩餘面積剛好與一個長方形相等，若此長方形有一邊長為 $8x+4$，則其周長
     $=$______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 提公因式與乘法公式作因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 提公因式與乘法公式作因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_16
   section: 1
   number: 16
   type: fill
   page: 2
   stem: 因式分解 $(4x-3)^{2}+3x(3-4x)=$______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 提公因式與乘法公式作因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 提公因式與乘法公式作因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_17
   section: 1
   number: 17
   type: fill
   page: 2
   stem: 因式分解 $4x^{2}-81=$______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 提公因式與乘法公式作因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 提公因式與乘法公式作因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_18
   section: 1
   number: 18
   type: fill
   page: 2
   stem: 因式分解 $14x^{2}-80x-24=$______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_19
   section: 1
   number: 19
   type: fill
   page: 2
   stem: 在直角三角形 $ABC$ 中，若斜邊 $\overline{BC}=4$，$\overline{AB}=3$，則斜邊上的高 $=$______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_20
   section: 1
   number: 20
   type: fill
   page: 2
   stem: $m$、$n$ 為整數，若 $4x^{2}-mx+16$ 可因式分解為 $(2x+n)^{2}$，則 $m+n=$______ (全對才給分)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 提公因式與乘法公式作因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 提公因式與乘法公式作因式分解
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_21
   section: 1
   number: 21
   type: fill
   page: 2
   stem: 若 $3\sqrt{5}$ 的小數部分為 $a$，則 $a$ 的倒數 $=$______
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s1_22
   section: 1
   number: 22
@@ -257,6 +471,16 @@ questions:
   - key: s1_22_f1
     kind: figure
     file: doc_113_台南_民德_數學_g8s1e2/s1_22_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s2_1
   section: 2
   number: 1
@@ -268,9 +492,29 @@ questions:
   - key: s2_1_f1
     kind: figure
     file: doc_113_台南_民德_數學_g8s1e2/s2_1_f1.png
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
 - id: doc_113_台南_民德_數學_g8s1e2_s2_2
   section: 2
   number: 2
   type: calc
   page: 3
   stem: 若 $x$ 為正整數，而 $3x^{2}-14x-5$ 為一個質數，則 (1) $x=$？(2)此質數=$？(每小題各 3 分，共 6 分)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
