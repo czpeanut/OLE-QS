@@ -1,0 +1,527 @@
+document:
+  grade: 9
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 高雄
+  school_short: 陽明
+  school: 高雄市立陽明國中
+  id: doc_113_高雄_陽明_數學_g9s1e1
+  title: 高雄市立陽明國中 113學年度第1學期第1次定期評量 9年級數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題(每題4 分，共40 分)
+    count: 10
+  - ord: 2
+    name: 二、填充題(共40 分，1~6 格 每格2 分、7~13 格 每格4 分)(答案皆須化至最簡)
+    count: 13
+  - ord: 3
+    name: 三、綜合題(共20 分)(沒有計算過程不給分，超出格子不予計分)
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國三/數學/113/1-1/高雄/陽明.pdf
+questions:
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: '下列敘述有幾項正確?
+
+    (1)設a、b、c 皆不等於0，且 $\frac{a}{2} = \frac{b}{3} = \frac{c}{5}$，則a：b：c ＝ 5：3：2
+
+    (2)兩個菱形一定相似
+
+    (3)兩個三角形中，若有兩組對應邊成比例，則第三組邊也會對應成比例
+
+    (4) $\triangle ABC$ 中，D、E 分別在 $\overline{AB}$、$\overline{AC}$ 上，若 $\overline{DE}
+    : \overline{BC} = \overline{AD} : \overline{AB}$，則 $\overline{DE}$ 一定與 $\overline{BC}$
+    平行。'
+  options:
+  - label: A
+    content: 0 項
+  - label: B
+    content: 1 項
+  - label: C
+    content: 兩項
+  - label: D
+    content: 3 項
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '已知四邊形ABCD～四邊形PQRS，A、B、C、D 的對應頂點依序為 P、Q、R、S，若 $\angle A : \angle B : \angle
+    C = 3 : 2 : 4$，$\angle D = 36^\circ$，求 $\angle Q + \angle R =$ ?'
+  options:
+  - label: A
+    content: 180°
+  - label: B
+    content: 216°
+  - label: C
+    content: 252°
+  - label: D
+    content: 260°
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 如圖(一)，四邊形ABCD 為梯形，$\overline{AD} \parallel \overline{PQ} \parallel \overline{BC}$，若
+    $\overline{DQ} = x$，$\overline{QC} = 3$，$\overline{AP} = 2x - 3$，$\overline{PB}
+    = 4$，則x 的值為何?
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: $\frac{7}{2}$
+  - label: C
+    content: '4'
+  - label: D
+    content: $\frac{9}{2}$
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 523.07
+      - 488.26
+      - 657.18
+      - 596.37
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 如圖(二)，兩個正方形ABCD、GCEF 的面積分別為4、25。若C 點在 $\overline{BE}$ 上，$\overline{AF}$ 與
+    $\overline{CG}$ 相交於H 點，求 $\overline{DH} =$ ?
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: $\frac{5}{7}$
+  - label: C
+    content: $\frac{6}{7}$
+  - label: D
+    content: '3'
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 546.4
+      - 626.55
+      - 646.25
+      - 755.3
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 如圖(三)，$\triangle ABC$ 與 $\triangle DEF$ 中，$\angle A = 50^\circ$，$\angle B
+    = 60^\circ$，$\angle C = 70^\circ$，且 $\frac{\overline{AB}}{\overline{DE}} = \frac{\overline{BC}}{\overline{EF}}
+    = \frac{\overline{AC}}{\overline{DF}}$，只知 $\angle D = (x + 2y)^\circ$、$\angle
+    E = (x + 3y)^\circ$，求 $x + y =$ ?
+  options:
+  - label: A
+    content: '40'
+  - label: B
+    content: '45'
+  - label: C
+    content: '48'
+  - label: D
+    content: '50'
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s1_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 498.28
+      - 793.74
+      - 693.63
+      - 918.35
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 2
+  stem: 如圖(四)，在直角坐標平面上有一 $\triangle ABC$，且 $\overline{DE}$、$\overline{BC}$ 皆和y 軸平行。若A
+    點坐標為(-2，0)，B 點坐標為(6，0)，E 點坐標為(4，5)，則C 點坐標為何?
+  options:
+  - label: A
+    content: (6，6)
+  - label: B
+    content: (6，$\frac{20}{3}$)
+  - label: C
+    content: (6，$\frac{22}{3}$)
+  - label: D
+    content: (6，8)
+  assets:
+  - key: s1_6_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s1_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 574.83
+      - 44.5
+      - 692.91
+      - 158.8
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 2
+  stem: '如圖(五)，$\overline{AD} \parallel \overline{BC}$，$\overline{AE} : \overline{EB}
+    = \overline{DF} : \overline{CF} = 1 : 2$，若 $\overline{AD} = 12$，$\overline{BC}
+    = 18$，則 $\overline{EF} =$ ?'
+  options:
+  - label: A
+    content: '13'
+  - label: B
+    content: '13.5'
+  - label: C
+    content: '14'
+  - label: D
+    content: '14.5'
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s1_7_f1.png
+    crop:
+      page: 2
+      rect:
+      - 535.46
+      - 190.02
+      - 665.93
+      - 289.86
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 2
+  stem: 如圖(六)，矩形ABCD 平放於地面，$\overline{AB} = 9$，$\overline{AD} = 12$。今沿著對角線 $\overline{BD}$
+    將矩形ABCD 裁成兩塊全等三角形，將其中一塊沿著直線BD 往上推5 個單位(即 $\overline{BB'} = 5$)，此時D 點將被移至D′點，則D′
+    點到直線BC 的距離($\overline{D'H}$)為何?
+  options:
+  - label: A
+    content: '11'
+  - label: B
+    content: '12'
+  - label: C
+    content: '13'
+  - label: D
+    content: '14'
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s1_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 469.12
+      - 334.5
+      - 686.34
+      - 448.79
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 三姐妹的理解能力各有不同，因此媽媽讓曉雯、曉玫、曉嵐三人分別以正常播放速度的1.2 倍速、1.5 倍速、1.6 倍速的播放速度觀看同一部土司製作的教學影片，且播放過程均不中斷。若曉玫觀看此教學影片花了24
+    分鐘才看完，則關於曉雯和曉嵐看影片所花的時間，下列敘述何者正確?
+  options:
+  - label: A
+    content: 曉嵐花了20 分鐘
+  - label: B
+    content: 曉嵐花了 18 分鐘
+  - label: C
+    content: 曉雯花了32 分鐘
+  - label: D
+    content: 曉雯花了 30 分鐘
+  group_stem: 新冠肺炎三級警戒期間，親子相處時間增加許多，為了讓小孩在家不無聊及吃得更健康，開始流行自己動手製作土司，其基本食材有高筋麵粉、鹽、糖、奶油及酵母粉，透過網路教學影片能讓大人及小孩都能輕鬆入門、一展廚藝。已知土司的製作過程為醒麵→第1
+    次揉製→第1 次發酵→第2 次揉製→第2 次發酵→烘烤。發酵的目的是讓麵糰變大而使土司口感更鬆軟、更好吃。今日下午媽媽與三姐妹曉雯、曉玫、曉嵐，透過網路教學影片學習如何製作土司。
+- id: doc_113_高雄_陽明_數學_g9s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: 已知麵糰在第2 次揉製完成後的高度為8 公分，烤模器具高為20 公分，如圖(七)所示。若麵糰發酵膨脹每分鐘等速增高0.05 公分，且當第2 次發酵膨脹到烤模器具的七成高時，即可送入烤箱烘烤，請問經過幾分鐘麵糰發酵膨脹後,可送入烤箱開始烘烤?
+  options:
+  - label: A
+    content: '280'
+  - label: B
+    content: '200'
+  - label: C
+    content: '120'
+  - label: D
+    content: '240'
+  group_stem: 新冠肺炎三級警戒期間，親子相處時間增加許多，為了讓小孩在家不無聊及吃得更健康，開始流行自己動手製作土司，其基本食材有高筋麵粉、鹽、糖、奶油及酵母粉，透過網路教學影片能讓大人及小孩都能輕鬆入門、一展廚藝。已知土司的製作過程為醒麵→第1
+    次揉製→第1 次發酵→第2 次揉製→第2 次發酵→烘烤。發酵的目的是讓麵糰變大而使土司口感更鬆軟、更好吃。今日下午媽媽與三姐妹曉雯、曉玫、曉嵐，透過網路教學影片學習如何製作土司。
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s1_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 517.96
+      - 838.11
+      - 693.63
+      - 967.89
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 3
+  stem: '若 $y : z = 3 : 2$，$x : z = 4 : 3$，則 $x : y : z =$ ①'
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 3
+  stem: '已知a、b、c 皆不等於0，且 $2a = 3b$，$4b = 5c$，則 $a : b : c =$ ②'
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 3
+  stem: '如圖(八)，$\triangle ABC$ 中，D 在 $\overline{BC}$ 上，E 在 $\overline{AD}$ 上，且 $\overline{BD}
+    : \overline{DC} = 3 : 2$，$\overline{AE} : \overline{ED} = 5 : 3$，若 $\triangle
+    BDE$ 的面積是9，求：
+
+    (1) $\triangle CDE$ 的面積＝ ③ 。'
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s2_3_f1.png
+    crop:
+      page: 3
+      rect:
+      - 563.89
+      - 205.5
+      - 682.7
+      - 335.27
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 3
+  stem: '如圖(八)，$\triangle ABC$ 中，D 在 $\overline{BC}$ 上，E 在 $\overline{AD}$ 上，且 $\overline{BD}
+    : \overline{DC} = 3 : 2$，$\overline{AE} : \overline{ED} = 5 : 3$，若 $\triangle
+    BDE$ 的面積是9，求：
+
+    (2) $\triangle CAE$ 的面積＝ ④ 。'
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s2_4_f1.png
+    crop:
+      page: 3
+      rect:
+      - 563.89
+      - 205.5
+      - 682.7
+      - 335.27
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 3
+  stem: '如圖(九)，E、F 分別是 $\overline{BC}$、$\overline{CD}$ 的中點，連接 $\overline{AE}$、$\overline{AF}$。若G、H
+    分別在 $\overline{AE}$、$\overline{AF}$ 上，且 $\overline{AG} : \overline{GE} = 3 : 2$，$\overline{AH}
+    : \overline{HF} = 3 : 2$，則
+
+    (1) $\overline{GH} : \overline{EF} =$ ⑤ 。'
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s2_5_f1.png
+    crop:
+      page: 3
+      rect:
+      - 564.62
+      - 332.43
+      - 694.36
+      - 488.01
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 3
+  stem: '如圖(九)，E、F 分別是 $\overline{BC}$、$\overline{CD}$ 的中點，連接 $\overline{AE}$、$\overline{AF}$。若G、H
+    分別在 $\overline{AE}$、$\overline{AF}$ 上，且 $\overline{AG} : \overline{GE} = 3 : 2$，$\overline{AH}
+    : \overline{HF} = 3 : 2$，則
+
+    (2) $\overline{GH} : \overline{BD} =$ ⑥ 。'
+  assets:
+  - key: s2_6_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s2_6_f1.png
+    crop:
+      page: 3
+      rect:
+      - 564.62
+      - 332.43
+      - 694.36
+      - 488.01
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: '若 $x : y : z = 2 : 3 : 4$，且 $x + 2y + 3z = 720$，則x 的值是 ⑦ 。'
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 如圖(十)，$\triangle ABC$ 中，$\overline{DE} \parallel \overline{AB}$，$\overline{CF}$
+    交 $\overline{AB}$ 於F 點，若 $\overline{CE} = 9$，$\overline{BE} = 12$，$\triangle ACF$
+    的面積為56，求 $\triangle ACD$ 的面積為 ⑧ 。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s2_8_f1.png
+    crop:
+      page: 3
+      rect:
+      - 536.92
+      - 507.87
+      - 703.84
+      - 626.3
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 如圖(十一)，$\triangle ABC$ 中，D、E 為 $\overline{AB}$，$\overline{AC}$ 上兩點，若 $\overline{AB}
+    = 6$，$\overline{AC} = 4$，$\overline{AD} = 2$，$\overline{AE} = 3$，$\overline{DE}
+    = 2.5$，求 $\overline{BC} =$ ⑨ 。
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s2_9_f1.png
+    crop:
+      page: 3
+      rect:
+      - 549.31
+      - 644.1
+      - 692.18
+      - 752.2
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: '如圖(十二)，梯形ABCD 中，已知 $\overline{AD} \parallel \overline{BC}$，E、F 兩點分別在 $\overline{AB}$、$\overline{DC}$
+    上。若 $\overline{AE} = 2$，$\overline{EB} = 3$，$\overline{DF} = 1$，$\overline{FC}
+    = \frac{3}{2}$，且梯形AEFD 與梯形EBCF 相似，則 $\overline{AD} : \overline{BC} =$ ⑩ 。'
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s2_10_f1.png
+    crop:
+      page: 3
+      rect:
+      - 544.21
+      - 777.22
+      - 686.34
+      - 866.75
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 3
+  stem: 小明的撲滿裡只有1 元、5 元、10 元的硬幣，且這三種硬幣的個數比是 5：6：3，若1 元硬幣比10 元硬幣多20 個，則撲滿裡共有 ⑪ 元。
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 4
+  stem: 小華到文具店買筆，只知2 枝鉛筆的價錢和1 枝原子筆的價錢相同，且1 枝鉛筆加上2 枝原子筆的價錢恰好可買2 枝螢光筆。若同種類的筆每枝價錢皆相同，則1
+    枝鉛筆、1 枝原子筆、1 枝螢光筆的價錢比為何? ⑫ (需用最簡整數比表示)。
+- id: doc_113_高雄_陽明_數學_g9s1e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 4
+  stem: 如圖(十三)，直角 $\triangle ABC$ 中，只知 $\angle A = 90^\circ$，$\overline{AB} = 2$，$\overline{AC}
+    = 4$。若D 為 $\overline{AC}$ 上一點，$\overline{AD} = 1$，根據圖中標示的角，判斷 $\angle 1$、$\angle
+    2$、$\angle 3$ 的大小關係 ⑬ 。
+  assets:
+  - key: s2_13_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s2_13_f1.png
+    crop:
+      page: 4
+      rect:
+      - 515.05
+      - 179.7
+      - 678.33
+      - 285.74
+- id: doc_113_高雄_陽明_數學_g9s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 4
+  stem: '只知 $\overline{AB}$，利用尺規作圖，在 $\overline{AB}$ 上找出一點Ｃ，使得 $\overline{AC} : \overline{CB}
+    = 2 : 3$ (4 分)(不必寫出作法)'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s3_1_f1.png
+    crop:
+      page: 4
+      rect:
+      - 200.85
+      - 394.35
+      - 431.19
+      - 417.83
+- id: doc_113_高雄_陽明_數學_g9s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 4
+  stem: 如圖(十四)，$\triangle ABC$ 中，$\overline{AB} = \overline{AC} = 9$，$\overline{BC}
+    = \overline{BD} = 6$，求 $\overline{DC} =$ ? (4 分)
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g9s1e1/s3_2_f1.png
+    crop:
+      page: 4
+      rect:
+      - 584.3
+      - 421.18
+      - 695.82
+      - 570.57
+- id: doc_113_高雄_陽明_數學_g9s1e1_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 4
+  stem: '有甲、乙、丙三台機器，甲、乙兩台機器每天的產量比是5：4，乙、丙兩台機器每天的產量比是6：5，回答下列問題：
+
+    (1)甲、乙、丙三台機器每天的產量比是多少? (3 分)
+
+    (2)已知A 工廠有甲、乙兩台機器，B 工廠有乙、丙兩台機器，Ｃ工廠有甲、丙兩台機器，在機器皆正常運作的情形下，A、B、C 這三間工廠每日產量比依序是多少?
+    (3 分)'
+- id: doc_113_高雄_陽明_數學_g9s1e1_s3_4
+  section: 3
+  number: 4
+  type: calc
+  page: 4
+  stem: '若干對夫妻參加集團婚禮，並提供參加的夫妻每人一杯飲料，其中飲料有茶、咖啡、果汁三種選擇。已知男士人數與女士人數相等，且男士選擇茶、咖啡、果汁的杯數比為7：3：2，女士選擇茶、咖啡、果汁的杯數比為3：3：2。
+
+    (1)所有參加者選擇茶、咖啡、果汁的杯數比為何? (3 分)
+
+    (2)如果共有192 對夫妻參加此集團婚禮，則選擇果汁的人共有幾人? (3 分)'

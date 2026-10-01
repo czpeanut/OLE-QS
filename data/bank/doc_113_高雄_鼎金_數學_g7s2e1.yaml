@@ -1,63 +1,61 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 1
-  school: 高雄市立鼎金國民中學
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 鼎金
+  school: 高雄市立鼎金國民中學
   id: doc_113_高雄_鼎金_數學_g7s2e1
-  title: 高雄市立鼎金國民中學 113學年度第2學期第1次定期評量7年級數學科試題
+  title: 高雄市立鼎金國民中學 113學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、
-    type: fill
-    score_rule: 一. (6%)解聯立方程式
+    name: 壹、選擇題 (88％)(每題4分)
     count: 22
   - ord: 2
-    name: 二、由於校慶活動時班級表現可
-    type: fill
-    score_rule: 二. 由於校慶活動時班級表現可圈可點,所以歐老師想買30個小蛋糕獎勵全班同學,
-    count: 0
+    name: 貳、非選題(12%)(請在答案欄內作答)
+    count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/高雄/鼎金.pdf
 questions:
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列各選項的敘述何者正確?
+  stem: 下列各選項的敘述何者正確？
   options:
   - label: A
-    content: (-7 , -3)在第四象限
+    content: （－7 , －3）在第四象限
   - label: B
-    content: (105 , 31)在第三象限
+    content: （105 , 31）在第三象限
   - label: C
-    content: ($\frac{5}{3}$ , $\frac{1}{2}$  )在第二象限
+    content: （$\frac{5}{3}$，$-\frac{1}{2}$）在第二象限
   - label: D
-    content: ($\frac{5}{2}$ , -3)在第四象限。
+    content: （$\frac{5}{2}$, －3）在第四象限。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 坐標平面上,點Q(-3 , -4)到y軸的距離是多少?
+  stem: 坐標平面上，點 $Q$（－3 , －4）到 y 軸的距離是多少？
   options:
   - label: A
     content: '3'
   - label: B
-    content: '-3'
+    content: －3
   - label: C
     content: '4'
   - label: D
-    content: -4。
+    content: －4。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 將x=$\frac{1}{2}$ ,y= $\frac{1}{3}$  代入2x-3y+1所得的結果為下列何者?
+  stem: 將 $x=\frac{1}{2}$，$y=-\frac{1}{3}$ 代入 $2x-3y+1$ 所得的結果為下列何者？
   options:
   - label: A
     content: '1'
@@ -72,155 +70,151 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 已知P點在第二象限內,且與x軸相距5個單位長,與y軸相距7個單位長,則P點的坐標為何?
+  stem: 已知 $P$ 點在第二象限內，且與 x 軸相距 5 個單位長，與 y 軸相距 7 個單位長，則 $P$ 點的坐標為何？
   options:
   - label: A
-    content: (-5 , 7)
+    content: （－5 , 7）
   - label: B
-    content: (7 ,-5)
+    content: （7 ,－5）
   - label: C
-    content: (5 ,-7)
+    content: （5 ,－7）
   - label: D
-    content: (-7 , 5) 。
+    content: （－7 , 5） 。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 將 $\frac{x2y}{3}$ $\frac{2x3y}{4}$  化簡後,可得下列哪一式?
+  stem: 將 $\frac{x-2y}{3}-\frac{2x-3y}{4}$ 化簡後，可得下列哪一式？
   options:
   - label: A
-    content: -2x-17y
+    content: －2x－17y
   - label: B
-    content: -2x+y
+    content: －2x＋y
   - label: C
-    content: $\frac{2x17y}{12}$
+    content: $\frac{-2x-17y}{12}$
   - label: D
-    content: $\frac{2xy}{12}$ 。
+    content: $\frac{-2x+y}{12}$ 。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 在早餐店裡,王伯伯買5顆饅頭,3顆包子,老闆少收1元,只要110元。 李太太買了10顆饅頭,5顆包子,老闆以售價的九折優待,只要189元。 若饅頭每顆x元,包子每顆y元,則下列哪一組二元一次聯立方程式可表示題目中的數量關係?
+  stem: '在早餐店裡，王伯伯買 5 顆饅頭，3 顆包子，老闆少收 1 元，只要 110 元。
+
+    李太太買了 10 顆饅頭，5 顆包子，老闆以售價的九折優待，只要 189 元。
+
+    若饅頭每顆 x 元，包子每顆 y 元，則下列哪一組二元一次聯立方程式可表示題目中的數量關係？'
   options:
   - label: A
-    content: 5 3 110 1 10 5 189 0.9 x y x y         
+    content: $\begin{cases} 5x+3y=110+1 \\ 10x+5y=189\times 0.9 \end{cases}$
   - label: B
-    content: 5 3 110 1 10 5 189 0.9 x y x y         
+    content: $\begin{cases} 5x+3y=110+1 \\ 10x+5y=189\div 0.9 \end{cases}$
   - label: C
-    content: 5 3 110 1 10 5 189 0.9 x y x y         
+    content: $\begin{cases} 5x+3y=110-1 \\ 10x+5y=189\times 0.9 \end{cases}$
   - label: D
-    content: 5 3 110 1 10 5 189 0.9 x y x y          。
+    content: $\begin{cases} 5x+3y=110-1 \\ 10x+5y=189\div 0.9 \end{cases}$ 。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 90%）
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 解二元一次聯立方程式2 3 3 5 2 2 x y x y    2 -= ○ + =- ○ 時,使用下列哪一個方法,可以完全消去x項? 1
+  stem: 解二元一次聯立方程式 $\begin{cases} 2x-3y=3 \cdots\cdots ① \\ 5x+2y=-2 \cdots\cdots
+    ② \end{cases}$ 時，使用下列哪一個方法，可以完全消去 x 項？
   options:
   - label: A
-    content: ○ 1×5+○ 2×2
+    content: ①×5＋②×2
   - label: B
-    content: ○ 1×5-○ 2×2
+    content: ①×5－②×2
   - label: C
-    content: ○ 1×2+○ 2×3
+    content: ①×2＋②×3
   - label: D
-    content: ○ 1×3-○ 2×2。
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_113_高雄_鼎金_數學_g7s2e1/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_113_高雄_鼎金_數學_g7s2e1/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_113_高雄_鼎金_數學_g7s2e1/p1_f03.png
-  - key: p1_f04
-    kind: figure
-    file: doc_113_高雄_鼎金_數學_g7s2e1/p1_f04.png
+    content: ①×3－②×2。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 判別x=1、y=2是下列哪一個聯立方程式的解?
+  stem: 判別 x＝1、y＝2 是下列哪一個聯立方程式的解？
   options:
   - label: A
-    content: 2 5 3 2 x y x y    += -=
+    content: $\begin{cases} 2x+y=5 \\ 3x-y=2 \end{cases}$
   - label: B
-    content: 4 5 3 x y x y    -= +=
+    content: $\begin{cases} 4x-y=5 \\ x+y=3 \end{cases}$
   - label: C
-    content: 5 3 3 7 x y x y    -= +=
+    content: $\begin{cases} 5x-y=3 \\ x+3y=7 \end{cases}$
   - label: D
-    content: 2 0 7 4 x y x y    -= -=。
+    content: $\begin{cases} 2x-y=0 \\ 7x-y=4 \end{cases}$ 。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 76%）
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 二元一次聯立方程式    7 2 18 4 =- + ay x的解為x=3、y=-2,請問下列敍述何者正確? = - y bx
+  stem: 二元一次聯立方程式 $\begin{cases} 4x-ay=18 \\ bx+2y=-7 \end{cases}$ 的解為 x＝3、y＝－2，請問下列敍述何者正確？
   options:
   - label: A
-    content: a=3
+    content: a＝3
   - label: B
-    content: b=1
+    content: b＝1
   - label: C
-    content: a=-3
+    content: a＝－3
   - label: D
-    content: b=3。
+    content: b＝3。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 從(1 , 2)出發,先往下走3個單位,再往左走2個單位,所得到的新坐標為下列何者?
+  stem: 從（1 , 2）出發，先往下走 3 個單位，再往左走 2 個單位，所得到的新坐標為下列何者？
   options:
   - label: A
-    content: (-1 , -1)
+    content: （－1 , －1）
   - label: B
-    content: (-2 , -3)
+    content: （－2 , －3）
   - label: C
-    content: (-2 , 0)
+    content: （－2 , 0）
   - label: D
-    content: (3 , -1)。
+    content: （3 , －1）。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 在直角坐標平面上有一長方形PQRS,已知P(-4 , 2)、Q(2 , 2)、R(2 , -3), 則S點的坐標為下列何者?
+  stem: 在直角坐標平面上有一長方形 PQRS，已知 P（－4 , 2）、Q（2 , 2）、R（2 , －3），則 S 點的坐標為下列何者？
   options:
   - label: A
-    content: (-4 , 2)
+    content: （－4 , 2）
   - label: B
-    content: (-4 , -3)
+    content: （－4 , －3）
   - label: C
-    content: (-3 , -4)
+    content: （－3 , －4）
   - label: D
-    content: (-2 , -4)。
+    content: （－2 , －4）。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: 已知x+ $\frac{y}{2}$ =7、3x-$\frac{y}{4}$ =7及ax+2y=7有相同的解,請問下列敍述何者正確?
+  stem: 已知 $x+\frac{y}{2}=7$、$3x-\frac{y}{4}=7$ 及 $ax+2y=7$ 有相同的解，請問下列敍述何者正確？
   options:
   - label: A
-    content: x=-3
+    content: x＝－3
   - label: B
-    content: y=16
+    content: y＝16
   - label: C
-    content: a=-6
+    content: a＝－6
   - label: D
-    content: 8 a x y   。
+    content: a＋x＋y＝8 。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 若點A(3a+9 , 5-a)在y軸上,則A點與x軸的距離為何?
+  stem: 若點 A（3a＋9 , 5－a）在 y 軸上，則 A 點與 x 軸的距離為何？
   options:
   - label: A
     content: '2'
@@ -229,88 +223,89 @@ questions:
   - label: C
     content: '6'
   - label: D
-    content: 8。 【頁1】【接續下頁】
+    content: 8。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 如果a<0,b>0,則下列敍述何者錯誤? $\frac{b}{a}$ )在第三象限
+  stem: 如果 a＜0，b＞0，則下列敍述何者錯誤？
   options:
-  - label: B
-    content: (a2 , -b)在第四象限
   - label: A
-    content: (a ,
+    content: （a , $\frac{b}{a}$）在第三象限
+  - label: B
+    content: （$a^{2}$ , －b）在第四象限
   - label: C
-    content: (ab , -a)在第四象限
+    content: （ab , －a）在第四象限
   - label: D
-    content: (-a2 , -b2)在第三象限。
+    content: （$-a^{2}$ , $-b^{2}$）在第三象限。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 在坐標平面上,由P點沿著與x軸平行的方向向右移動3個單位,再沿著與y軸平行的方向 向下移動4個單位,可到達(2 , -3),求P點的坐標?
+  stem: 在坐標平面上，由 $P$ 點沿著與 x 軸平行的方向向右移動 3 個單位，再沿著與 y 軸平行的方向向下移動 4 個單位，可到達（2 , －3），求
+    $P$ 點的坐標？
   options:
   - label: A
-    content: (-1 , 1)
+    content: （－1 , 1）
   - label: B
-    content: (-6 , 6)
+    content: （－6 , 6）
   - label: C
-    content: (5 , -7)
+    content: （5 , －7）
   - label: D
-    content: (-2 , 0)。
+    content: （－2 , 0）。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 關於二元一次方程式3x+4y=36,下列敘述何者錯誤?
+  stem: 關於二元一次方程式 3x＋4y＝36，下列敘述何者錯誤？
   options:
   - label: A
-    content: 若x、y均為整數,則方程式有4組解
+    content: 若 x、y 均為整數，則方程式有 4 組解
   - label: B
     content: 有無限多組解
   - label: C
-    content: 此方程式與x=$\frac{36-4y}{3}$ 有相同的解
+    content: 此方程式與 $x=\frac{36-4y}{3}$ 有相同的解
   - label: D
-    content: 此方程式與y=$\frac{36-3x}{4}$ 有相同的解。
+    content: 此方程式與 $y=\frac{36-3x}{4}$ 有相同的解。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 小勇與小玲兩人共有300元,小勇先將其所有錢的一半買了糖果,再給小玲15元後, 此時小勇的錢為小玲的2倍,設小勇與小玲原先各有x、y元,下列敍述何者錯誤?
+  stem: 小勇與小玲兩人共有 300 元，小勇先將其所有錢的一半買了糖果，再給小玲 15 元後，此時小勇的錢為小玲的 2 倍，設小勇與小玲原先各有 x、y 元，下列敍述何者錯誤？
   options:
   - label: A
-    content: 可列式300 x y  
+    content: 可列式 $x+y=300$
   - label: B
-    content: 可列式$\frac{1}{2}$ 15 2 x y  
+    content: 可列式 $\frac{1}{2}x-15=2y$
   - label: C
-    content: 小勇原有258元
+    content: 小勇原有 258 元
   - label: D
-    content: 小玲原有42元。
+    content: 小玲原有 42 元。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 已知魯夫原有y元,娜美原有x元。若魯夫給娜美20元之後,魯夫身上的錢是娜美的2倍少10元, 則x與y的關係式為何?
+  stem: 已知魯夫原有 y 元，娜美原有 x 元。若魯夫給娜美 20 元之後，魯夫身上的錢是娜美的 2 倍少 10 元，則 x 與 y 的關係式為何？
   options:
   - label: A
-    content: 2x-y=-50
+    content: 2x－y＝－50
   - label: B
-    content: 2x-y=50
+    content: 2x－y＝50
   - label: C
-    content: 2x-y=-10
+    content: 2x－y＝－10
   - label: D
-    content: x-2y=-50。
+    content: x－2y＝－50。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 若3x+by=12沒有正整數解,則b可能是下列哪一個數?
+  stem: 若 3x＋by＝12 沒有正整數解，則 b 可能是下列哪一個數？
   options:
   - label: A
     content: '2'
@@ -319,56 +314,44 @@ questions:
   - label: C
     content: '6'
   - label: D
-    content: -2。
+    content: －2。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_20
   section: 1
   number: 20
   type: single
   page: 2
-  stem: 解聯立方程式5 150 350 6500 y x x y    2 = ○ - = ○,若將1 ○式代入2 ○式,則可得下列哪一個結果? 1
+  stem: 解聯立方程式 $\begin{cases} y=5x \cdots\cdots ① \\ 150x-350y=6500 \cdots\cdots ②
+    \end{cases}$，若將 ①式代入 ②式，則可得下列哪一個結果？
   options:
   - label: A
-    content: 750y-350y=6500
+    content: 750y－350y＝6500
   - label: B
-    content: 150x-5x=6500
+    content: 150x－5x＝6500
   - label: C
-    content: 150x-1750x=6500
+    content: 150x－1750x＝6500
   - label: D
-    content: y-5x=6500。
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_113_高雄_鼎金_數學_g7s2e1/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_113_高雄_鼎金_數學_g7s2e1/p2_f02.png
-  - key: p2_f03
-    kind: figure
-    file: doc_113_高雄_鼎金_數學_g7s2e1/p2_f03.png
-  - key: p2_f04
-    kind: figure
-    file: doc_113_高雄_鼎金_數學_g7s2e1/p2_f04.png
+    content: y－5x＝6500。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_21
   section: 1
   number: 21
   type: single
   page: 2
-  stem: 若長方形的長為-3x+5y+7,寬為4x-y+8,則此長方形的周長為多少?
+  stem: 若長方形的長為－3x＋5y＋7，寬為 4x－y＋8，則此長方形的周長為多少？
   options:
   - label: A
-    content: x+4y+15
+    content: x＋4y＋15
   - label: B
-    content: 2x-3y+1
+    content: 2x－3y＋1
   - label: C
-    content: 2x+8y+30
+    content: 2x＋8y＋30
   - label: D
-    content: 4x-6y+2。
+    content: 4x－6y＋2。
 - id: doc_113_高雄_鼎金_數學_g7s2e1_s1_22
   section: 1
   number: 22
   type: single
   page: 2
-  stem: 若A(2x+3 , y+5)與B(1-2y , x)代表同一點,則(x , y)在第幾象限?
+  stem: 若 $A$（2x＋3 , y＋5）與 $B$（1－2y , x）代表同一點，則（x , y）在第幾象限？
   options:
   - label: A
     content: 一
@@ -377,9 +360,46 @@ questions:
   - label: C
     content: 三
   - label: D
-    content: 四。 貳、非選題(12%)(請在答案欄內作答)           3(3 2) 2(2 1) 6 $\frac{1}{2}$
-      $\frac{2}{3}$ (3 2) (2 1) 4 x y
-  assets:
-  - key: p2_f05
-    kind: figure
-    file: doc_113_高雄_鼎金_數學_g7s2e1/p2_f05.png
+    content: 四。
+- id: doc_113_高雄_鼎金_數學_g7s2e1_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 2
+  stem: (6%)解聯立方程式 $\begin{cases} 3(3x-2)-2(2y+1)=6 \\ \frac{1}{2}(3x-2)+\frac{2}{3}(2y+1)=4
+    \end{cases}$ (須有計算過程，否則不予計分)
+- id: doc_113_高雄_鼎金_數學_g7s2e1_s2_2
+  section: 2
+  number: 2
+  type: calc
+  page: 2
+  stem: (１)若要買 30 個小蛋糕，且每種蛋糕只能以盒為單位購買，則歐老師有幾種買法？(3%)
+  group_stem: '二. 由於校慶活動時班級表現可圈可點，所以歐老師想買 30 個小蛋糕獎勵全班同學，
+
+    若老師有附圖的兩種蛋糕可選擇，試回答下列問題：'
+  shared_asset: g2_2_3
+- id: doc_113_高雄_鼎金_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: calc
+  page: 2
+  stem: (２)承(１)題，最便宜的買法為多少元？(3%)
+  group_stem: '二. 由於校慶活動時班級表現可圈可點，所以歐老師想買 30 個小蛋糕獎勵全班同學，
+
+    若老師有附圖的兩種蛋糕可選擇，試回答下列問題：'
+  shared_asset: g2_2_3
+shared_assets:
+- key: g2_2_3
+  label: 題組附圖
+  kind: figure
+  file: doc_113_高雄_鼎金_數學_g7s2e1/g2_2_3_f1.png
+  used_by:
+  - doc_113_高雄_鼎金_數學_g7s2e1_s2_2
+  - doc_113_高雄_鼎金_數學_g7s2e1_s2_3
+  crop:
+    page: 2
+    rect:
+    - 254.67
+    - 731.82
+    - 471.79
+    - 848.18
