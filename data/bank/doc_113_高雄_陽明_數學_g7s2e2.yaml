@@ -1,68 +1,64 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 2
-  school: 高雄市立陽明國中
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 陽明
+  school: 高雄市立陽明國中
   id: doc_113_高雄_陽明_數學_g7s2e2
-  title: 高雄市立陽明國中 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 高雄市立陽明國中 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:每題4分,共40分
+    name: 一、選擇題：每題4 分，共40 分
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:每格4分,共40分
+    name: 二、填充題：每格4 分，共40 分
     count: 10
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: '三、 計算題: 共20分'
-    count: 4
+    name: 三、 計算題： 共20 分
+    count: 7
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-2/高雄/陽明.pdf
 questions:
 - id: doc_113_高雄_陽明_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列哪一個方程式的圖形會通過原點?
+  stem: 下列哪一個方程式的圖形會通過原點？
   options:
   - label: A
-    content: 3x+2y=1
+    content: 3x＋2y＝1
   - label: B
-    content: -x=-3
+    content: －x＝－3
   - label: C
-    content: $\frac{1}{3}$ y=-2x
+    content: $\frac{1}{3}$y＝－2x
   - label: D
-    content: y=$\frac{7}{6}$ x-2 。
+    content: y＝$\frac{7}{6}$x－2 。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 小翊騎單車2小時共騎了30公里,小靖騎單車3小時共騎了40公里,則小翊與小靖騎單 車的平均速率比為何?
+  stem: 小翊騎單車2 小時共騎了30 公里，小靖騎單車3 小時共騎了40 公里，則小翊與小靖騎單車的平均速率比為何？
   options:
   - label: A
-    content: '30:40'
+    content: 30：40
   - label: B
-    content: '9:8'
+    content: 9：8
   - label: C
-    content: '3:2'
+    content: 3：2
   - label: D
-    content: 80:90 。
+    content: 80：90 。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 若兩直線3x-2y=5和ax+y=7的交點為(1,b),則點(a,-b)在第幾象限?
+  stem: 若兩直線 3x－2y＝5 和 ax＋y＝7 的交點為(1,b)，則點(a，－b)在第幾象限？
   options:
   - label: A
     content: 第一象限
@@ -77,52 +73,52 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 若x:y=5:7, 2x+3y=62,則(x+3):(2y-6)等於下列何者?
+  stem: 若 x：y＝5：7， 2x＋3y＝62，則（x＋3）：（2y－6）等於下列何者？
   options:
   - label: A
-    content: '1:1'
+    content: 1：1
   - label: B
-    content: '13:22'
+    content: 13：22
   - label: C
-    content: '5:7'
+    content: 5：7
   - label: D
-    content: 22:13 。
+    content: 22：13 。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 若x值增加,y的值也隨著增加,則y與x一定成正比。
+    content: 若x 值增加，y 的值也隨著增加，則y 與x 一定成正比。
   - label: B
-    content: 若y與x成反比,則y值是x值的某個固定倍數。
+    content: 若y 與x 成反比，則y 值是x 值的某個固定倍數。
   - label: C
-    content: 如果兩個比a:b和c:d的比值相同,可以寫成a:b=c:d,這種等式稱為比例式,且ac=bd。
+    content: 如果兩個比a：b 和c：d 的比值相同，可以寫成a：b＝c：d，這種等式稱為比例式，且ac＝bd。
   - label: D
-    content: 若甲、乙兩數的比值是 倍。 ,則甲數是乙數的
+    content: 若甲、乙兩數的比值是$\frac{a}{b}$，則甲數是乙數的$\frac{a}{b}$倍。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 點(5,6)、(4,3)與(2,k)均在同一直線上,則k=?
+  stem: 點(5,6)、(4,3)與(2,k)均在同一直線上，則k＝？
   options:
   - label: A
     content: '9'
   - label: B
     content: '6'
   - label: C
-    content: '-9'
+    content: －9
   - label: D
-    content: -3 。
+    content: －3 。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 坐標平面上直線L:y=ax+b通過(2,-7)、 (0,-1)兩點,請問直線L和下列哪個方程式的交 點在第四象限?
+  stem: 坐標平面上直線 L:y=ax+b 通過(2,-7)、 (0,-1)兩點，請問直線 L 和下列哪個方程式的交點在第四象限?
   options:
   - label: A
     content: x=3
@@ -137,7 +133,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 若a>0,b<0,則直線方程式ax+by=-3在直角坐標平面上的圖形不通過第幾象限?
+  stem: 若a>0，b<0，則直線方程式ax+by＝-3在直角坐標平面上的圖形不通過第幾象限?
   options:
   - label: A
     content: 一
@@ -152,8 +148,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 已知甲校原有920人,乙校原有915人,寒假期間甲、乙兩校人數變動的原因只有轉出與轉 入兩種,且轉出的人數比為2:3,轉入的人數比也為2:3。若寒假結束開學時甲、乙兩校人
-    數相同,則乙校開學時的人數與原有的人數相差多少?
+  stem: 已知甲校原有920人，乙校原有915人，寒假期間甲、乙兩校人數變動的原因只有轉出與轉入兩種，且轉出的人數比為2：3，轉入的人數比也為2：3。若寒假結束開學時甲、乙兩校人數相同，則乙校開學時的人數與原有的人數相差多少？
   options:
   - label: A
     content: '5'
@@ -168,7 +163,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 已知(3x-3y):( x-2y+2)= 2:1,則x、 y的正整數解有多少組?
+  stem: 已知（3x－3y）：（ x－2y＋2）＝ 2：1，則 x、 y 的正整數解有多少組？
   options:
   - label: A
     content: 3組
@@ -177,112 +172,148 @@ questions:
   - label: C
     content: 2組
   - label: D
-    content: 1組 。 第1頁,共3頁【一年級數學科】
+    content: 1組 。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: $\frac{12}{35}$ :$\frac{8}{49}$ 的比值為=________。
+  stem: $\frac{12}{35}$：$\frac{8}{49}$ 的比值為＝________。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 若(x-1):3=(x+1):6,則x=________。
+  stem: 若（x－1）：3＝（x＋1）：6，則x＝________。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 設y與x成反比,當x= 6時, y=-3,則y=-9時, x=________。
+  stem: 設 y 與 x 成反比，當 x＝ 6 時， y＝－3，則 y＝－9 時， x＝________。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 在坐標平面上,y軸的方程式是________。
+  stem: 在坐標平面上，y 軸的方程式是________。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 已知(2 ,a)、 (b , 2)都在二元一次方程式3x+ y= 6的圖形上,則2a+3b=________。
+  stem: 已知(2 ,a)、 (b , 2)都在二元一次方程式 3x＋ y＝ 6 的圖形上，則 2a＋3b＝________。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 在直角坐標平面上,將直線3x-y=2的圖形向下平移4單位,求移動後新的直線方程式?______。
+  stem: 在直角坐標平面上，將直線3x-y＝2 的圖形向下平移4 單位，求移動後新的直線方程式?______。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 有A、B兩個完全相同的杯子,各裝不同量的水。設A杯原來的水量為a,B杯原來的水量為 的水倒入A杯,倒完後發現兩杯的水位等高,求$\frac{a}{b}$
-    =________。 b,若將B杯中$\frac{1}{7}$
+  stem: 有A、B 兩個完全相同的杯子，各裝不同量的水。設A 杯原來的水量為a，B 杯原來的水量為b，若將B 杯中$\frac{1}{7}$ 的水倒入A 杯，倒完後發現兩杯的水位等高，求$\frac{a}{b}$
+    ＝________。
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: '如右圖為$\frac{7}{AB}$ 個正方形紙板緊密地拼成長方形ABCD。 求AD : =________。'
+  stem: '如右圖為7 個正方形紙板緊密地拼成長方形ABCD。
+
+    求$\overline{AD}$ ：$\overline{AB}$ ＝________。'
   assets:
-  - key: p2_f01
+  - key: s2_8_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e2/p2_f01.png
+    file: doc_113_高雄_陽明_數學_g7s2e2/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 536.92
+      - 485.17
+      - 672.49
+      - 590.18
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_9
   section: 2
   number: 9
-  type: single
+  type: fill
   page: 2
-  stem: '下列各敘述中, y與x成正比的有哪些: ________。 (全對才給分)'
-  options:
-  - label: A
-    content: 面積為30平方公分的平行四邊形,底為x公分,高為y公分。
-  - label: B
-    content: 每次加1500元的汽油,每公升油價x元,可加y公升的汽油。
-  - label: C
-    content: 一年甲班共有學生36人,其中男生有x人,女生有y人。
-  - label: D
-    content: 周長為30公分的長方形,長為x公分,寬為y公分。
-  - label: E
-    content: 一本書的定價為200元,打x折時售價為y元。
+  stem: '下列各敘述中， y 與x 成正比的有哪些: ________。 (全對才給分)
+
+    (A) 面積為30 平方公分的平行四邊形，底為x 公分，高為y 公分。
+
+    (B) 每次加1500 元的汽油，每公升油價x 元，可加y 公升的汽油。
+
+    (C) 一年甲班共有學生36 人，其中男生有x 人，女生有y 人。
+
+    (D) 周長為30 公分的長方形，長為x 公分，寬為y 公分。
+
+    (E)一本書的定價為200 元，打x 折時售價為y 元。'
 - id: doc_113_高雄_陽明_數學_g7s2e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 如右圖,甲、乙兩車同時自A、B兩地出發,兩車相會後,甲車 經過16分鐘到達B地,乙車經過49分鐘到達A地,則甲、乙 兩車的速率比為________。(請化為最簡整數比)
-    (4分) 第2頁,共3頁【一年級數學科】
+  stem: 如右圖，甲、乙兩車同時自A、B 兩地出發，兩車相會後，甲車經過16 分鐘到達B 地，乙車經過49 分鐘到達A 地，則甲、乙兩車的速率比為________。(請化為最簡整數比)
+    （4 分）
   assets:
-  - key: p2_f02
+  - key: s2_10_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e2/p2_f02.png
+    file: doc_113_高雄_陽明_數學_g7s2e2/s2_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 501.2
+      - 767.94
+      - 676.14
+      - 850.24
 - id: doc_113_高雄_陽明_數學_g7s2e2_s3_1
   section: 3
   number: 1
-  type: calc
+  type: essay
   page: 3
-  stem: 在直角坐標平面上,兩直線方程式分別為L:x-y=0;M:2x-3y=4 (1)在直角坐標平面上畫出直線L與直線M的圖形。(4分) (2)直線L與直線M的交點坐標為
-    ________。(1分) [註:(2) (3)只需把坐標寫出來,不須過程] (3)直線M與x軸的交點坐標為 ________。(1分) (4)直線L、直線M及x軸所圍成的三角形面積為何?  (2分)[註:需有計算過程]
+  stem: （1）在直角坐標平面上畫出直線L 與直線M 的圖形。（4 分）
+  group_stem: 在直角坐標平面上，兩直線方程式分別為 L：x-y=0；M：2x-3y=4
 - id: doc_113_高雄_陽明_數學_g7s2e2_s3_2
   section: 3
   number: 2
-  type: calc
+  type: fill
   page: 3
-  stem: 已知y與x成反比,且x、y都是正數,則當x值增加20%時, y減少幾倍?(4分)
+  stem: "（2）直線L 與直線M 的交點坐標為 ________。（1 分）\n     [註：(2) (3)只需把坐標寫出來，不須過程]"
+  group_stem: 在直角坐標平面上，兩直線方程式分別為 L：x-y=0；M：2x-3y=4
 - id: doc_113_高雄_陽明_數學_g7s2e2_s3_3
   section: 3
   number: 3
-  type: calc
+  type: fill
   page: 3
-  stem: 已知(2y+9)與(5x-2)成正比,且x=-4時,y=1,則x與y的關係式為何? (4分)
+  stem: （3）直線M 與x 軸的交點坐標為 ________。（1 分）
+  group_stem: 在直角坐標平面上，兩直線方程式分別為 L：x-y=0；M：2x-3y=4
 - id: doc_113_高雄_陽明_數學_g7s2e2_s3_4
   section: 3
   number: 4
   type: calc
   page: 3
-  stem: '比例尺(英語: Scale) 是指地圖上距離和實際距離之間的比例。例如當實際距離為100公 尺,而在地圖上的距離為1公分時,則稱這一地圖的比例尺是1:10000。
-    高雄市立陽明國中 與屏東縣立恆春國民中學兩校在一幅比例尺為1:1500000的地圖上測得兩校的直線距離為6公分,則兩校實際的直線距離為幾公里(1公里=100000公分)?(4分)
-    第3頁,共3頁【一年級數學科】'
+  stem: （4）直線L、直線M 及x 軸所圍成的三角形面積為何?  （2 分）[註：需有計算過程]
+  group_stem: 在直角坐標平面上，兩直線方程式分別為 L：x-y=0；M：2x-3y=4
+- id: doc_113_高雄_陽明_數學_g7s2e2_s3_5
+  section: 3
+  number: 5
+  type: calc
+  page: 3
+  stem: 已知 y 與 x 成反比，且x、y 都是正數，則當 x 值增加 20%時， y 減少幾倍？（4 分）
+- id: doc_113_高雄_陽明_數學_g7s2e2_s3_6
+  section: 3
+  number: 6
+  type: calc
+  page: 3
+  stem: 已知(2y＋9)與(5x－2)成正比，且x＝－4 時，y＝1，則x 與y 的關係式為何？ （4 分）
+- id: doc_113_高雄_陽明_數學_g7s2e2_s3_7
+  section: 3
+  number: 7
+  type: calc
+  page: 3
+  stem: 比例尺（英語： Scale） 是指地圖上距離和實際距離之間的比例。例如當實際距離為 100 公尺，而在地圖上的距離為1 公分時，則稱這一地圖的比例尺是
+    1:10000。 高雄市立陽明國中與屏東縣立恆春國民中學兩校在一幅比例尺為 1:1500000 的地圖上測得兩校的直線距離為 6 公分，則兩校實際的直線距離為幾公里(1
+    公里=100000 公分)？（4 分）

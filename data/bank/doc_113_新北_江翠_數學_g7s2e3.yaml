@@ -1,24 +1,52 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 3
-  school: 新北市立江翠國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 康軒版 第二冊4-1~6-1。  (二) 本試卷雙面印製,共3頁。   (三) 試題包含23題單選題,配分方式如下:1~
   city: 新北
   school_short: 江翠
+  school: 新北市立江翠國民中學
+  scope_note: 康軒版 第二冊 4-1~6-1
   id: doc_113_新北_江翠_數學_g7s2e3
-  title: 新北市立江翠國民中學 113學年度第2學期第3次定期評量7年級數學科試題
+  title: 新北市立江翠國民中學 113學年度第2學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第3次定期評量
-  sections: []
+  sections:
+  - ord: 1
+    name: 單選題
+    count: 23
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-3/新北/江翠.pdf
+  scope:
+    lessons:
+    - number: 4-1
+      title: null
+    - number: 4-2
+      title: null
+    - number: 5-1
+      title: null
+    - number: 6-1
+      title: null
+    publisher: 康軒版
+    raw: 康軒版 第二冊 4-1~6-1
+    volume: 第二冊
 questions:
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下表是國內郵件資費的部分一覽表,若寄50公克的普通掛號信函,則需付多少元?【4-1習作】
+  stem: '下表是國內郵件資費的部分一覽表，若寄 50 公克的普通掛號信函，則需付多少元？【4-1 習作】
+
+
+    | 費用(元) \ 類別 \ 重量(公克) | 不逾 20 | 超過 20<br>不逾 50 | 超過 50<br>不逾 100 | 超過 100<br>不逾
+    250 |
+
+    | :--- | :---: | :---: | :---: | :---: |
+
+    | 限時信函 | 15 | 23 | 31 | 47 |
+
+    | 普通掛號信函 | 28 | 36 | 44 | 60 |'
   options:
   - label: A
     content: '23'
@@ -27,105 +55,131 @@ questions:
   - label: C
     content: '31'
   - label: D
-    content: 44 $\frac{3x−5}{2}$ $\frac{2x−3}{3}$
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f01.png
+    content: '44'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列是解一元一次不等式「 + 1 ≤ + 2」的四個步驟,試判斷哪一個步驟開始發生錯誤?【4-2課本】
+  stem: 下列是解一元一次不等式「$\frac{3x-5}{2} + 1 \leq \frac{2x-3}{3} + 2$」的四個步驟，試判斷哪一個步驟開始發生錯誤？【4-2
+    課本】
   options:
   - label: A
-    content: 步驟一:同乘以6得9x-15+1 ≤4x−6+2
+    content: 步驟一：同乘以 6 得 $9x-15+1 \leq 4x-6+2$
   - label: B
-    content: 步驟二:移項得9x-4x≤−6+2 + 15 −1
+    content: 步驟二：移項得 $9x-4x \leq -6+2+15-1$
   - label: C
-    content: 步驟三:化簡得5x≤10
+    content: 步驟三：化簡得 $5x \leq 10$
   - label: D
-    content: 步驟四:同除以5得x≤2
+    content: 步驟四：同除以 5 得 $x \leq 2$
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 請問下列哪一個選項的圖形其對稱軸數量最多?【6-1課本】
+  stem: 請問下列哪一個選項的圖形其對稱軸數量最多？【6-1 課本】
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_江翠_數學_g7s2e3/1_3_optA.png
+      crop:
+        page: 1
+        rect:
+        - 114.75
+        - 398.39
+        - 190.5
+        - 479.64
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_江翠_數學_g7s2e3/1_3_optB.png
+      crop:
+        page: 1
+        rect:
+        - 269.2
+        - 401.48
+        - 334.75
+        - 477.58
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_新北_江翠_數學_g7s2e3/1_3_optC.png
+      crop:
+        page: 1
+        rect:
+        - 400.33
+        - 403.55
+        - 471.71
+        - 476.55
   - label: D
     content: ''
-  assets:
-  - key: p1_f02
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f03.png
-  - key: p1_f04
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f04.png
-  - key: p1_f05
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f05.png
+    asset:
+      key: optD
+      file: doc_113_新北_江翠_數學_g7s2e3/1_3_optD.png
+      crop:
+        page: 1
+        rect:
+        - 535.1
+        - 394.26
+        - 621.06
+        - 478.61
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: x=-5可為下列哪一個不等式的解?【4-1課本】
+  stem: $x＝-5$ 可為下列哪一個不等式的解？【4-1 課本】
   options:
   - label: A
-    content: 5x+16 ≥88
+    content: $5x+16 \geq 88$
   - label: B
-    content: 15>8+2x
+    content: $15>8+2x$
   - label: C
-    content: x+7>10
+    content: $x+7>10$
   - label: D
-    content: 3x+ 37 ≤9
+    content: $3x+37 \leq 9$
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 解一元一次不等式-$\frac{6}{11}$ x-6 ≥0,得其解的範圍為何?【第4章習作】
+  stem: 解一元一次不等式 $-\frac{6}{11}x-6 \geq 0$，得其解的範圍為何？【第4 章習作】
   options:
   - label: A
-    content: x≤11
+    content: $x \leq 11$
   - label: B
-    content: x≥−11
+    content: $x \geq -11$
   - label: C
-    content: x≥11
+    content: $x \geq 11$
   - label: D
-    content: x≤−11
+    content: $x \leq -11$
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 若a>0>b,則下列哪一個式子是錯誤的?【第4章習作】
+  stem: 若 $a>0>b$，則下列哪一個式子是錯誤的？【第4 章習作】
   options:
   - label: A
-    content: a+3>b+3
+    content: $a+3>b+3$
   - label: B
-    content: 3a>3b
+    content: $3a>3b$
   - label: C
-    content: -3+a>-3+b
+    content: $-3+a>-3+b$
   - label: D
-    content: -3a>-3b
+    content: $-3a>-3b$
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: (圖一)為甲、乙兩國調查113年7月受雇者薪資次數分配折線圖。試問薪資6萬元以上(含)的人數,兩國相差 多少萬人?【5-1習作】
+  stem: （圖一）為甲、乙兩國調查 113 年 7 月受雇者薪資次數分配折線圖。試問薪資 6 萬元以上(含)的人數，兩國相差多少萬人？【5-1 習作】
   options:
   - label: A
     content: '60'
@@ -135,27 +189,49 @@ questions:
     content: '80'
   - label: D
     content: '11'
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g7s2e3/s1_7_f1.png
+    crop:
+      page: 1
+      rect:
+      - 100.18
+      - 805.93
+      - 273.55
+      - 961.47
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: (圖二)是以直線L為對稱軸的線對稱圖形,其中A、B、C、D的對稱點分別為I、H、G、F,則直線L是下列 哪一個線段的中垂線?【6-1課本】
+  stem: （圖二）是以直線 L 為對稱軸的線對稱圖形，其中 A、B、C、D 的對稱點分別為 I、H、G、F，則直線 L 是下列哪一個線段的中垂線？【6-1 課本】
   options:
   - label: A
-    content: AH
+    content: $\overline{AH}$
   - label: B
-    content: BF
+    content: $\overline{BF}$
   - label: C
-    content: CE
+    content: $\overline{CE}$
   - label: D
-    content: DF
+    content: $\overline{DF}$
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g7s2e3/s1_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 321.65
+      - 806.96
+      - 441.11
+      - 957.35
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: (圖三)的立體圖形由相同大小的正方體積木堆疊而成。判斷拿走右圖的哪一個積木後,此圖形右視圖的形狀 會改變?【6-1習作】
+  stem: （圖三）的立體圖形由相同大小的正方體積木堆疊而成。判斷拿走右圖的哪一個積木後，此圖形右視圖的形狀會改變？【6-1 習作】
   options:
   - label: A
     content: 甲
@@ -164,33 +240,28 @@ questions:
   - label: C
     content: 丙
   - label: D
-    content: 丁 (圖一)                       (圖二)                   (圖三) [第1頁/共3頁] 新北市立江翠國民中學113學年度第二學期第三次定期考查七年級數學科
-      試卷P.2
+    content: 丁
   assets:
-  - key: p1_f06
+  - key: s1_9_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f06.png
-  - key: p1_f07
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f07.png
-  - key: p1_f08
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f08.png
-  - key: p1_f09
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f09.png
-  - key: p1_f10
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p1_f10.png
+    file: doc_113_新北_江翠_數學_g7s2e3/s1_9_f1.png
+    crop:
+      page: 1
+      rect:
+      - 495.76
+      - 806.96
+      - 607.94
+      - 958.38
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 美美逛夜市買了21個髮圈,其中12元的有1個,20元的有5個,30元的有4個,剩下的都是40元,則下列述敘 何者正確?【5-1課本】
+  stem: 美美逛夜市買了 21 個髮圈，其中 12 元的有 1 個，20 元的有 5 個，30 元的有 4 個，剩下的都是 40 元，則下列述敘何者正確？【5-1
+    課本】
   options:
   - label: A
-    content: 髮圈平均價格為30元
+    content: 髮圈平均價格為 30 元
   - label: B
     content: 髮圈價格的中位數等於髮圈價格的眾數
   - label: C
@@ -202,8 +273,8 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 將一張邊長為40公分的正方形紙張,由圖1、圖2對摺兩次後,再以剪刀於圖3正方形其中兩邊的中點P、Q剪開, 則剪下的圖形面積為多少平方公分?【6-1課本】
-    圖1圖2圖3
+  stem: 將一張邊長為 40 公分的正方形紙張，由圖 1、圖 2 對摺兩次後，再以剪刀於圖 3 正方形其中兩邊的中點 P、Q 剪開，則剪下的圖形面積為多少平方公分？【6-1
+    課本】
   options:
   - label: A
     content: '50'
@@ -214,20 +285,25 @@ questions:
   - label: D
     content: '1400'
   assets:
-  - key: p2_f01
+  - key: s1_11_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p2_f02.png
+    file: doc_113_新北_江翠_數學_g7s2e3/s1_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 200.71
+      - 210.61
+      - 559.13
+      - 343.45
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 有一觀光工廠開放參觀的時段為10:00至15:00,該工廠統計某日參觀民眾進入與離開工廠的時間,並將資料整理 成圖(一)、圖(二),其中圖(一)為民眾進入時間的次數分配直方圖,圖(二)為民眾離開時間的次數分配直方圖。
-    次 數240 200 ( 人130 80 120 ) 10:00 11:00 12:00 13:00 14:00 15:00若該日14:00當下無人進入或離開工廠,則14:00時仍在廠內參觀的民眾人數為何?【5-1習作】
-    10:00 11:00 12:00 13:00 14:00 15:00進入時間 離開時間
+  stem: '有一觀光工廠開放參觀的時段為 10：00 至 15：00，該工廠統計某日參觀民眾進入與離開工廠的時間，並將資料整理成圖(一)、圖(二)，其中圖(一)為民眾進入時間的次數分配直方圖，圖(二)為民眾離開時間的次數分配直方圖。
+
+
+    若該日 14：00 當下無人進入或離開工廠，則 14：00 時仍在廠內參觀的民眾人數為何？【5-1 習作】'
   options:
   - label: A
     content: '140'
@@ -238,32 +314,39 @@ questions:
   - label: D
     content: '310'
   assets:
-  - key: p2_f03
+  - key: s1_12_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p2_f03.png
+    file: doc_113_新北_江翠_數學_g7s2e3/s1_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 228.4
+      - 398.39
+      - 508.86
+      - 479.64
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 玩具店有甲、乙兩種公仔各50個。今玩具店促銷這兩種公仔,促銷的方式為「買一個甲公仔送一個乙公仔,但若只買 乙公仔則沒有任何優惠。」某日打烊後結算,發現這兩種公仔共剩餘70個,且賣出的數量不同(至少各賣出1個),若甲
-    公仔賣出x個,則乙公仔賣出幾個?【4-1習作】
+  stem: 玩具店有甲、乙兩種公仔各 50 個。今玩具店促銷這兩種公仔，促銷的方式為「買一個甲公仔送一個乙公仔，但若只買乙公仔則沒有任何優惠。」某日打烊後結算，發現這兩種公仔共剩餘
+    70 個，且賣出的數量不同(至少各賣出 1 個)，若甲公仔賣出 $x$ 個，則乙公仔賣出幾個？【4-1 習作】
   options:
   - label: A
-    content: 30-2x
+    content: $30-2x$
   - label: B
-    content: 30-x
+    content: $30-x$
   - label: C
-    content: 50-2x
+    content: $50-2x$
   - label: D
-    content: x+ 20
+    content: $x+20$
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 翠翠花店在七夕情人節前買進一批紅玫瑰花,但在運送過程中有一成的花損壞無法賣出。已知花店以每枝7元的價格 買進,並以每枝30元的價格賣出所剩的紅玫瑰花,且全部賣完,最後至少獲利4800元,試問花店至少買進了多少枝
-    紅玫瑰花?【4-2課本】
+  stem: 翠翠花店在七夕情人節前買進一批紅玫瑰花，但在運送過程中有一成的花損壞無法賣出。已知花店以每枝 7 元的價格買進，並以每枝 30 元的價格賣出所剩的紅玫瑰花，且全部賣完，最後至少獲利
+    4800 元，試問花店至少買進了多少枝紅玫瑰花？【4-2 課本】
   options:
   - label: A
     content: '180'
@@ -278,26 +361,33 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 下圖是七年信班數學段考分數次數分配折線圖,請問下列敘述何者正確?【5-1習作】
+  stem: 下圖是七年信班數學段考分數次數分配折線圖，請問下列敘述何者正確？【5-1 習作】
   options:
   - label: A
-    content: 人數最多與人數最少的組彼此相差7人
+    content: 人數最多與人數最少的組彼此相差 7 人
   - label: B
-    content: 60~90分有22人
+    content: 60～90 分有 22 人
   - label: C
-    content: 全班平均分數不低於80分
+    content: 全班平均分數不低於 80 分
   - label: D
-    content: 中位數在80~90分這一組
+    content: 中位數在 80～90 分這一組
   assets:
-  - key: p2_f04
+  - key: s1_15_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p2_f04.png
+    file: doc_113_新北_江翠_數學_g7s2e3/s1_15_f1.png
+    crop:
+      page: 2
+      rect:
+      - 221.11
+      - 695.53
+      - 487.01
+      - 817.03
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 阿賢老師將一包糖果分給小朋友,如果每人分8個,則不夠分;若每人改分7個,則剩下25個,試問小朋友至少有 幾人?【4-2習作】
+  stem: 阿賢老師將一包糖果分給小朋友，如果每人分 8 個，則不夠分；若每人改分 7 個，則剩下 25 個，試問小朋友至少有幾人？【4-2 習作】
   options:
   - label: A
     content: '27'
@@ -306,29 +396,29 @@ questions:
   - label: C
     content: '25'
   - label: D
-    content: 24 [第2頁/共3頁] P Q次 數220 180 110 160 ( 人100 ) 新北市立江翠國民中學113學年度第二學期第三次定期考查七年級數學科
-      試卷P.3
+    content: '24'
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_17
   section: 1
   number: 17
   type: single
   page: 3
-  stem: 已知x的一元一次不等式 -5(x+a)<3+x的解為x>2,則a =?【4-2習作】
+  stem: 已知 $x$ 的一元一次不等式 $-5(x+a)<3+x$ 的解為 $x>2$，則 $a＝$？【4-2 習作】
   options:
   - label: A
-    content: '-3'
+    content: $-3$
   - label: B
     content: '3'
   - label: C
     content: '11'
   - label: D
-    content: '-1'
+    content: $-1$
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_18
   section: 1
   number: 18
   type: single
   page: 3
-  stem: 七年甲班學生有27人,本學期測量全班學生的身高,並計算平均身高為152公分。後來發現有一位同學實際身高為185公分,卻被登記為158公分,則經過修正後,全班平均身高是多少公分?【5-1課本】
+  stem: 七年甲班學生有 27 人，本學期測量全班學生的身高，並計算平均身高為 152 公分。後來發現有一位同學實際身高為 185 公分，卻被登記為 158
+    公分，則經過修正後，全班平均身高是多少公分？【5-1 課本】
   options:
   - label: A
     content: '151'
@@ -343,7 +433,8 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 如右圖,直線L垂直平分AB於C點,直線M垂直平分AC  於D點。若CD=2x+1, BC=5x-4,則DB=?【6-1課本】
+  stem: 如右圖，直線 L 垂直平分 $\overline{AB}$ 於 C 點，直線 M 垂直平分 $\overline{AC}$ 於 D 點。若 $\overline{CD}＝2x＋1$，$\overline{BC}＝5x－4$，則
+    $\overline{DB}＝$？【6-1 課本】
   options:
   - label: A
     content: '52'
@@ -354,15 +445,23 @@ questions:
   - label: D
     content: '13'
   assets:
-  - key: p3_f01
+  - key: s1_19_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p3_f01.png
+    file: doc_113_新北_江翠_數學_g7s2e3/s1_19_f1.png
+    crop:
+      page: 3
+      rect:
+      - 531.46
+      - 180.69
+      - 643.64
+      - 281.54
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_20
   section: 1
   number: 20
   type: single
   page: 3
-  stem: 阿軒從家裡騎腳踏車到外婆家,已知去程的平均時速為12公里,回程的平均時速為15公里,如果阿軒往返的時間在1.2小時以內(含),則阿軒家與外婆家的距離最多幾公里?【第4章習作】
+  stem: 阿軒從家裡騎腳踏車到外婆家，已知去程的平均時速為 12 公里，回程的平均時速為 15 公里，如果阿軒往返的時間在 1.2 小時以內(含)，則阿軒家與外婆家的距離最多幾公里？【第
+    4 章習作】
   options:
   - label: A
     content: '10'
@@ -377,8 +476,9 @@ questions:
   number: 21
   type: single
   page: 3
-  stem: 如右圖,四邊形ABCD是以BD為對稱軸的線對稱圖形,其中A、H、E的對稱點分別為C、G、F,設HF ̅̅̅̅̅與EG ̅̅̅̅̅交於BD上̅̅̅̅̅的一點O。若BC
-    =̅̅̅̅̅10公分,BE=̅̅̅̅OF ̅̅̅̅̅=6公分,且四邊形AEOH為長方形,則圖中塗色部分的面積總和為多少平方公分?【6-1習作】
+  stem: 如右圖，四邊形 ABCD 是以直線 BD 為對稱軸的線對稱圖形，其中 A、H、E 的對稱點分別為 C、G、F，設 $\overline{HF}$ 與
+    $\overline{EG}$ 交於 $\overline{BD}$ 上的一點 O。若 $\overline{BC}＝10$ 公分，$\overline{BE}＝\overline{OF}＝6$
+    公分，且四邊形 AEOH 為長方形，則圖中塗色部分的面積總和為多少平方公分？【6-1 習作】
   options:
   - label: A
     content: '24'
@@ -389,40 +489,83 @@ questions:
   - label: D
     content: '48'
   assets:
-  - key: p3_f02
+  - key: s1_21_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s2e3/p3_f02.png
+    file: doc_113_新北_江翠_數學_g7s2e3/s1_21_f1.png
+    crop:
+      page: 3
+      rect:
+      - 564.25
+      - 351.96
+      - 686.62
+      - 478.61
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_22
   section: 1
   number: 22
   type: single
   page: 3
-  stem: 業者販售含咖啡因飲料時通常會以紅、黃、綠三色來標示每杯飲料的咖啡因含量,各顏色的意義如表(一)所示。 表(一)                                               表(二)
-    咖啡因含量標示 咖啡因含量 紅色 超過200毫克 黃色 超過100毫克, 但不超過200毫克 綠色 不超過100毫克 容量 咖啡因含量標示 中杯400毫升
-    黃色 大杯500毫升 紅色 我國建議每位成人一日的咖啡因攝取量不超過300毫克,歐盟則建議一日不超過400毫克。表(二)為某商店美式咖啡 的容量及咖啡因含量標示,已知該店美式咖啡每毫升的咖啡因含量相同,判斷一位成人一日喝2杯該店中杯的美式咖
-    啡,其咖啡因攝取量是否符合我國或歐盟的建議?【改自112會考】
+  stem: '業者販售含咖啡因飲料時通常會以紅、黃、綠三色來標示每杯飲料的咖啡因含量，各顏色的意義如表(一)所示。
+
+
+    表(一)
+
+    | 咖啡因含量標示 | 咖啡因含量 |
+
+    | :---: | :--- |
+
+    | 紅色 | 超過 200 毫克 |
+
+    | 黃色 | 超過 100 毫克，<br>但不超過 200 毫克 |
+
+    | 綠色 | 不超過 100 毫克 |
+
+
+    表(二)
+
+    | 容量 | 咖啡因含量標示 |
+
+    | :---: | :---: |
+
+    | 中杯 400 毫升 | 黃色 |
+
+    | 大杯 500 毫升 | 紅色 |
+
+
+    我國建議每位成人一日的咖啡因攝取量不超過 300 毫克，歐盟則建議一日不超過 400 毫克。表(二)為某商店美式咖啡的容量及咖啡因含量標示，已知該店美式咖啡每毫升的咖啡因含量相同，判斷一位成人一日喝
+    2 杯該店中杯的美式咖啡，其咖啡因攝取量是否符合我國或歐盟的建議？【改自 112 會考】'
   options:
   - label: A
     content: 符合我國也符合歐盟
   - label: B
-    content: 符合我國,不符合歐盟
+    content: 符合我國，不符合歐盟
   - label: C
     content: 不符合我國也不符合歐盟
   - label: D
-    content: 不符合我國,符合歐盟
+    content: 不符合我國，符合歐盟
 - id: doc_113_新北_江翠_數學_g7s2e3_s1_23
   section: 1
   number: 23
   type: single
   page: 3
-  stem: 下圖的數線上有A(-2)、O(0)、B(2)三點。今打算在此數線上標示P(p)、Q(q)兩點,且p、q互為倒數,若P在B的 右側,則下列敘述何者正確?【改自113會考】
-    A B O 0 2 -2
+  stem: 下圖的數線上有 A(－2)、O(0)、B(2)三點。今打算在此數線上標示 P(p)、Q(q)兩點，且 p、q 互為倒數，若 P 在 B 的右側，則下列敘述何者正確？【改自
+    113 會考】
   options:
   - label: A
-    content: Q在$\frac{AO}{AO}$ 上,且$\frac{AQ}{AQ}$ <$\frac{QO}{QO}$
+    content: Q 在 $\overline{AO}$ 上，且 $\overline{AQ} < \overline{QO}$
   - label: B
-    content: Q在 上,且 >
+    content: Q 在 $\overline{AO}$ 上，且 $\overline{AQ} > \overline{QO}$
   - label: C
-    content: Q在$\frac{OB}{OB}$ 上,且$\frac{OQ}{OQ}$ <$\frac{QB}{QB}$
+    content: Q 在 $\overline{OB}$ 上，且 $\overline{OQ} < \overline{QB}$
   - label: D
-    content: Q在 上,且 > [第3頁/共3頁,試題結束,請再次細心檢查]
+    content: Q 在 $\overline{OB}$ 上，且 $\overline{OQ} > \overline{QB}$
+  assets:
+  - key: s1_23_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g7s2e3/s1_23_f1.png
+    crop:
+      page: 3
+      rect:
+      - 80.51
+      - 815.22
+      - 251.7
+      - 859.33

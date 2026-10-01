@@ -1,108 +1,144 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 3
-  school: 高雄市立陽明國中
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 陽明
+  school: 高雄市立陽明國中
   id: doc_113_高雄_陽明_數學_g7s2e3
-  title: 高雄市立陽明國中 113學年度第2學期第3次定期評量7年級數學科試題
+  title: 高雄市立陽明國中 113學年度第2學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第3次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題4分,共100分)
-    count: 24
+    name: 一、選擇題：(每題4 分，共100 分)
+    count: 25
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-3/高雄/陽明.pdf
 questions:
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 請問x=-1是下咧哪一個不等式的解?
+  stem: 請問 $x = -1$ 是下列哪一個不等式的解？
   options:
   - label: A
-    content: 3x+5>2
+    content: $3x+5 > 2$
   - label: B
-    content: 2(x-3)+5<-5
+    content: $2(x-3)+5 < -5$
   - label: C
-    content: 2-x<2
+    content: $2-x < 2$
   - label: D
-    content: 1 $\frac{x}{3}$ ≤ − x
+    content: $x-\frac{x}{3} \leq 1$
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列何者為不等式-3(2x-1)<27的解在數線上的圖示?
+  stem: 下列何者為不等式 $-3(2x-1) < 27$ 的解在數線上的圖示？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_2_optA.png
+      crop:
+        page: 1
+        rect:
+        - 56.51
+        - 282.9
+        - 171.67
+        - 335.27
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_2_optB.png
+      crop:
+        page: 1
+        rect:
+        - 196.48
+        - 282.9
+        - 312.37
+        - 335.27
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_2_optC.png
+      crop:
+        page: 1
+        rect:
+        - 340.82
+        - 281.86
+        - 456.71
+        - 335.27
   - label: D
     content: ''
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p1_f01.png
+    asset:
+      key: optD
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_2_optD.png
+      crop:
+        page: 1
+        rect:
+        - 482.97
+        - 282.9
+        - 598.86
+        - 335.27
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 若( a , b )在第二象限,且ax+b ≥ 0,則下列哪一個選項正確?
+  stem: 若 $( a , b )$ 在第二象限，且 $ax+b \geq 0$，則下列哪一個選項正確？
   options:
   - label: A
-    content: $\frac{b}{a}$ x ≤
+    content: $x \leq \frac{b}{a}$
   - label: B
-    content: $\frac{b}{a}$ x ≥
+    content: $x \geq \frac{b}{a}$
   - label: C
-    content: $\frac{b}{a}$ x − ≤
+    content: $x \leq -\frac{b}{a}$
   - label: D
-    content: $\frac{b}{a}$ x − ≥
+    content: $x \geq -\frac{b}{a}$
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 下列何者為不等式1 $\frac{7x−2}{5}$ $\frac{2x+1}{3}$ ≤ − 的解?
+  stem: 下列何者為不等式 $\frac{2x+1}{3}-\frac{7x-2}{5} \leq 1$ 的解？
   options:
   - label: A
-    content: $\frac{4}{11}$ - ≤ x
+    content: $x \leq -\frac{4}{11}$
   - label: B
-    content: $\frac{4}{11}$ - ≥ x
+    content: $x \geq -\frac{4}{11}$
   - label: C
-    content: $\frac{10}{11}$ ≥ x
+    content: $x \geq \frac{10}{11}$
   - label: D
-    content: $\frac{10}{11}$ ≤ x
+    content: $x \leq \frac{10}{11}$
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 夢想遊樂園有兩種收費方法如下:○ 1計次收費,每玩一次遊樂設施收費50元。○ 2購買遊樂園護照 每本300元,可玩6次遊樂設施,每超過一次加收20元。宇傑到此遊樂園玩,若他打算買遊園護
-    照,那麼他至少要玩幾次遊樂設施才會比計次收費划算?
+  stem: 夢想遊樂園有兩種收費方法如下：①計次收費，每玩一次遊樂設施收費 50 元。②購買遊樂園護照每本 300 元，可玩 6 次遊樂設施，每超過一次加收 20
+    元。宇傑到此遊樂園玩，若他打算買遊園護照，那麼他至少要玩幾次遊樂設施才會比計次收費划算？
   options:
   - label: A
-    content: 10次
+    content: 10 次
   - label: B
-    content: 9次
+    content: 9 次
   - label: C
-    content: 8次
+    content: 8 次
   - label: D
-    content: 7次
+    content: 7 次
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 陽明國中童軍團辦迎新露營活動,若每頂帳篷睡6人,則有13人沒有帳篷可睡;若每頂帳篷睡8人,則只有1頂帳蓬沒有睡滿人。請問帳篷數量可能有幾頂?
+  stem: 陽明國中童軍團辦迎新露營活動，若每頂帳篷睡 6 人，則有 13 人沒有帳篷可睡；若每頂帳篷睡 8 人，則只有 1 頂帳蓬沒有睡滿人。請問帳篷數量可能有幾頂？
   options:
   - label: A
     content: 7,8,9,10
@@ -111,57 +147,104 @@ questions:
   - label: C
     content: 6,7,8,9
   - label: D
-    content: 9,10,11,12頂
+    content: 9,10,11,12 頂
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 小美將某服飾店的促銷活動內容告訴小明後,小明假設某一商品的定價為x元,並列出關係式為0.3(2x-100)<1000,則下列何者可能是小美告訴小明的內容?
+  stem: 小美將某服飾店的促銷活動內容告訴小明後，小明假設某一商品的定價為 $x$ 元，並列出關係式為 $0.3(2x-100) < 1000$，則下列何者可能是小美告訴小明的內容？
   options:
   - label: A
-    content: 買兩件等值的商品可減100元,再打3折,最後不到1000元耶!
+    content: 買兩件等值的商品可減 100 元，再打 3 折，最後不到 1000 元耶！
   - label: B
-    content: 買兩件等值的商品可減100元,再打7折,最後不到1000元耶!
+    content: 買兩件等值的商品可減 100 元，再打 7 折，最後不到 1000 元耶！
   - label: C
-    content: 買兩件等值的商品可打3折,再減100元,最後不到1000元耶!
+    content: 買兩件等值的商品可打 3 折，再減 100 元，最後不到 1000 元耶！
   - label: D
-    content: 買兩件等值的商品可打7折,再減100元,最後不到1000元耶! 第1頁,共5頁【一年級數學科】
+    content: 買兩件等值的商品可打 7 折，再減 100 元，最後不到 1000 元耶！
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_8
   section: 1
   number: 8
   type: single
   page: 2
-  stem: 下圖(一)是將積木放在等臂天平上的三種情形。若一個方體、錐體、球體的積木重量分別以x、y、 z表示,則x、y、z的大小關係為何?
+  stem: 下圖(一)是將積木放在等臂天平上的三種情形。若一個方體、錐體、球體的積木重量分別以 $x$、$y$、$z$ 表示，則 $x$、$y$、$z$ 的大小關係為何？
   options:
   - label: A
-    content: x>y>z
+    content: $x > y > z$
   - label: B
-    content: y>x>z
+    content: $y > x > z$
   - label: C
-    content: x>z>y
+    content: $x > z > y$
   - label: D
-    content: z>y>x
+    content: $z > y > x$
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g7s2e3/s1_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 207.41
+      - 87.85
+      - 651.35
+      - 178.41
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: 有甲、乙兩個箱子,甲箱重47公斤,其重量比乙箱的3倍還重,且比乙箱的4倍還輕。若乙箱重x公斤,依題意可得到下列哪一個關係式?
+  stem: 有甲、乙兩個箱子，甲箱重 47 公斤，其重量比乙箱的 3 倍還重，且比乙箱的 4 倍還輕。若乙箱重 $x$ 公斤，依題意可得到下列哪一個關係式？
   options:
-  - label: B
-    content: x <$\frac{47}{4}$
-  - label: C
-    content: $\frac{47}{4}$ < x <$\frac{47}{3}$
   - label: A
-    content: x >$\frac{47}{3}$
+    content: $x > \frac{47}{3}$
+  - label: B
+    content: $x < \frac{47}{4}$
+  - label: C
+    content: $\frac{47}{4} < x < \frac{47}{3}$
+  - label: D
+    content: $\frac{47}{3} < x < 47$
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 右圖(二)為阿貴一天中的作息時間分配圓形圖,若阿貴希望把自己每天 的閱讀時間調整為2小時,那麼阿貴的閱讀時間需增加多少分鐘? 投進次數0. 1. 2.
-    3. 4. 5. 6. 次數(人) 2. 2. a b 3. 2. 1. 中位數是2.5,則眾數為何?
+  stem: 右圖(二)為阿貴一天中的作息時間分配圓形圖，若阿貴希望把自己每天的閱讀時間調整為 2 小時，那麼阿貴的閱讀時間需增加多少分鐘？
+  options:
+  - label: A
+    content: '15'
+  - label: B
+    content: '48'
+  - label: C
+    content: '60'
+  - label: D
+    content: '105'
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g7s2e3/s1_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 532.54
+      - 282.9
+      - 679.05
+      - 460.14
+- id: doc_113_高雄_陽明_數學_g7s2e3_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 2
+  stem: '某籃球隊隊員共 16 人，每人投籃 6 次，且上表(一)為其投進球的次數分配表。若此隊投進球數的中位數是 2.5，則眾數為何？
+
+
+    表(一)
+
+    | 投進次數 | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 2 | 2 | $a$ | $b$ | 3 | 2 | 1 |'
   options:
   - label: A
     content: '2'
@@ -176,71 +259,166 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 將下圖(三)的正方形色紙沿其中一條對角線對摺後,再沿原正方形的另一條對角線對摺,如圖(四) 所示。最後將圖(四)的色紙剪下一紙片,如圖(五)所示。若下列有一圖形為圖(五)的展開圖,則此
-    圖為何?
+  stem: 將下圖(三)的正方形色紙沿其中一條對角線對摺後，再沿原正方形的另一條對角線對摺，如圖(四)所示。最後將圖(四)的色紙剪下一紙片，如圖(五)所示。若下列有一圖形為圖(五)的展開圖，則此圖為何？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_12_optA.png
+      crop:
+        page: 2
+        rect:
+        - 89.31
+        - 645.13
+        - 184.79
+        - 738.78
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_12_optB.png
+      crop:
+        page: 2
+        rect:
+        - 227.09
+        - 645.13
+        - 322.57
+        - 738.78
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_12_optC.png
+      crop:
+        page: 2
+        rect:
+        - 359.77
+        - 644.1
+        - 455.25
+        - 738.78
   - label: D
-    content: 圖(三) 圖(四)     圖(五) 第2頁,共5頁【一年級數學科】 圖(一)
-  - label: D
-    content: $\frac{47}{3}$ < x < 47圖(二) 表(一) 圖(六) 圖(七)
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_12_optD.png
+      crop:
+        page: 2
+        rect:
+        - 501.2
+        - 646.16
+        - 597.41
+        - 739.82
   assets:
-  - key: p2_f01
+  - key: s1_12_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p2_f02.png
+    file: doc_113_高雄_陽明_數學_g7s2e3/s1_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 230.01
+      - 819.54
+      - 492.43
+      - 968.92
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_13
   section: 1
   number: 13
   type: single
   page: 3
-  stem: 上圖(六)為小華6~12月份每月的零用錢與支出費用折線圖。若小華將每月剩餘金額儲存起來, 則下列何者可為小華6~12月份每月所存金額的折線圖?
+  stem: 上圖(六)為小華 6~12 月份每月的零用錢與支出費用折線圖。若小華將每月剩餘金額儲存起來，則下列何者可為小華 6~12 月份每月所存金額的折線圖？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_13_optA.png
+      crop:
+        page: 3
+        rect:
+        - 50.67
+        - 297.34
+        - 210.31
+        - 404.42
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_13_optB.png
+      crop:
+        page: 3
+        rect:
+        - 208.87
+        - 297.34
+        - 368.5
+        - 404.42
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_13_optC.png
+      crop:
+        page: 3
+        rect:
+        - 367.06
+        - 298.38
+        - 528.15
+        - 404.42
   - label: D
     content: ''
+    asset:
+      key: optD
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_13_optD.png
+      crop:
+        page: 3
+        rect:
+        - 525.98
+        - 298.38
+        - 686.34
+        - 405.45
   assets:
-  - key: p3_f03
+  - key: s1_13_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p3_f03.png
+    file: doc_113_高雄_陽明_數學_g7s2e3/s1_13_f1.png
+    crop:
+      page: 3
+      rect:
+      - 63.07
+      - 53.79
+      - 361.21
+      - 192.86
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_14
   section: 1
   number: 14
   type: single
   page: 3
-  stem: 圖(七)方格紙格線上的八條等長線段形成一個線對稱圖形。圖中有四條線段標示上號碼,判斷擦 去下列哪個選項中的兩條線段後,剩下的圖形不是線對稱圖形?
+  stem: 圖(七)方格紙格線上的八條等長線段形成一個線對稱圖形。圖中有四條線段標示上號碼，判斷擦去下列哪個選項中的兩條線段後，剩下的圖形不是線對稱圖形？
   options:
   - label: A
-    content: 1和2
+    content: ①和②
   - label: B
-    content: 2和3
+    content: ②和③
   - label: C
-    content: 2和4
+    content: ②和④
   - label: D
-    content: 1和3
+    content: ①和③
   assets:
-  - key: p3_f04
+  - key: s1_14_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p3_f04.png
+    file: doc_113_高雄_陽明_數學_g7s2e3/s1_14_f1.png
+    crop:
+      page: 3
+      rect:
+      - 404.24
+      - 44.5
+      - 628.02
+      - 198.02
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_15
   section: 1
   number: 15
   type: single
   page: 3
-  stem: 歷史老師要帶春嬌、志明等班上同學去校外教學認識台南的古蹟,因為時間有限,最多只能到兩 個古蹟。老師列出台南古蹟有:安平古堡、億載金城、赤崁樓、孔廟、延平郡王祠等五個地方讓
-    大家來投票決定地點,全班30人,一人投1票,每個人都必須要投票!若第2名的古蹟獲得同 樣多選票,則老師用抽籤決定,請問赤嵌樓要得幾張票才能不管其他地點票數都能保証入選呢?
+  stem: 歷史老師要帶春嬌、志明等班上同學去校外教學認識台南的古蹟，因為時間有限，最多只能到兩個古蹟。老師列出台南古蹟有：安平古堡、億載金城、赤崁樓、孔廟、延平郡王祠等五個地方讓大家來投票決定地點，全班
+    30 人，一人投 1 票，每個人都必須要投票！若第 2 名的古蹟獲得同樣多選票，則老師用抽籤決定，請問赤嵌樓要得幾張票才能不管其他地點票數都能保証入選呢？
   options:
   - label: A
     content: '8'
@@ -249,13 +427,13 @@ questions:
   - label: C
     content: '11'
   - label: D
-    content: 12張
+    content: 12 張
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_16
   section: 1
   number: 16
   type: single
   page: 3
-  stem: 下圖(八),是甲、乙兩校的工藝成績折線圖。下圖(九)是丙、丁兩校的家政成績折線圖。 根據圖中的資訊,判斷下列敘述何者正確?
+  stem: "下圖(八)，是甲、乙兩校的工藝成績折線圖。下圖(九)是丙、丁兩校的家政成績折線圖。\n 根據圖中的資訊，判斷下列敘述何者正確？"
   options:
   - label: A
     content: 甲校工藝成績的平均分數比乙校高
@@ -264,77 +442,174 @@ questions:
   - label: C
     content: 丙校家政成績的平均分數比丁校高
   - label: D
-    content: 丙校家政成績的平均分數比丁校低 圖(八)                   圖(九) 第3頁,共5頁【一年級數學科】
+    content: 丙校家政成績的平均分數比丁校低
   assets:
-  - key: p3_f05
+  - key: s1_16_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p3_f05.png
+    file: doc_113_高雄_陽明_數學_g7s2e3/s1_16_f1.png
+    crop:
+      page: 3
+      rect:
+      - 197.93
+      - 811.28
+      - 547.1
+      - 972.02
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_17
   section: 1
   number: 17
   type: single
   page: 4
-  stem: 有甲、乙兩個箱子,其中甲箱內有98顆球,分別標記號碼1~98,且號碼為不重複的整數,乙箱 內沒有球。已知小育從甲箱內拿出49顆球放入乙箱後,乙箱內球的號碼的中位數為40。若此時
-    甲箱內有a顆球的號碼小於40,有b顆球的號碼大於40,則關於a、b之值,下列何者正確?
+  stem: 有甲、乙兩個箱子，其中甲箱內有 98 顆球，分別標記號碼 1~98，且號碼為不重複的整數，乙箱內沒有球。已知小育從甲箱內拿出 49 顆球放入乙箱後，乙箱內球的號碼的中位數為
+    40。若此時甲箱內有 $a$ 顆球的號碼小於 40，有 $b$ 顆球的號碼大於 40，則關於 $a$、$b$ 之值，下列何者正確？
   options:
   - label: A
-    content: a = 16
+    content: $a = 16$
   - label: B
-    content: a = 24
+    content: $a = 24$
   - label: C
-    content: b = 24
+    content: $b = 24$
   - label: D
-    content: b = 34
+    content: $b = 34$
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_18
   section: 1
   number: 18
   type: single
   page: 4
-  stem: 根據下方圖(十)所給的視圖,判斷下列哪一個選項可能是對應的立體圖形?
+  stem: 根據下方圖(十)所給的視圖，判斷下列哪一個選項可能是對應的立體圖形？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_18_optA.png
+      crop:
+        page: 4
+        rect:
+        - 60.88
+        - 205.5
+        - 181.88
+        - 289.86
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_18_optB.png
+      crop:
+        page: 4
+        rect:
+        - 207.41
+        - 202.4
+        - 327.68
+        - 289.86
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_18_optC.png
+      crop:
+        page: 4
+        rect:
+        - 358.31
+        - 205.5
+        - 466.19
+        - 289.86
   - label: D
-    content: 圖(十)                                              圖(十一)
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_18_optD.png
+      crop:
+        page: 4
+        rect:
+        - 499.74
+        - 211.69
+        - 619.28
+        - 300.18
   assets:
-  - key: p4_f01
+  - key: s1_18_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p4_f01.png
-  - key: p4_f02
-    kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p4_f02.png
-  - key: p4_f03
-    kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p4_f03.png
+    file: doc_113_高雄_陽明_數學_g7s2e3/s1_18_f1.png
+    crop:
+      page: 4
+      rect:
+      - 86.4
+      - 324.18
+      - 321.84
+      - 448.79
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_19
   section: 1
   number: 19
   type: single
   page: 4
-  stem: 右圖(十一)為正六邊形及其兩條對角線AC與AD 。若阿一加畫一條對角線後,使正六邊形與這 三條對角線構成一個線對稱圖形,則阿一 不可以畫哪一條?
+  stem: 右圖(十一)為正六邊形及其兩條對角線 $\overline{AC}$ 與 $\overline{AD}$ 。若阿一加畫一條對角線後，使正六邊形與這三條對角線構成一個線對稱圖形，則阿一
+    不可以畫哪一條？
   options:
   - label: A
-    content: AE
+    content: $\overline{AE}$
+    asset:
+      key: optA
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_19_optA.png
+      crop:
+        page: 4
+        rect:
+        - 46.3
+        - 551.22
+        - 163.65
+        - 657.26
   - label: B
-    content: CF
+    content: $\overline{CF}$
+    asset:
+      key: optB
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_19_optB.png
+      crop:
+        page: 4
+        rect:
+        - 213.24
+        - 551.22
+        - 329.13
+        - 658.29
   - label: C
-    content: BD
+    content: $\overline{BD}$
+    asset:
+      key: optC
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_19_optC.png
+      crop:
+        page: 4
+        rect:
+        - 377.27
+        - 551.22
+        - 493.89
+        - 658.29
   - label: D
-    content: BE
+    content: $\overline{BE}$
+    asset:
+      key: optD
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_19_optD.png
+      crop:
+        page: 4
+        rect:
+        - 546.4
+        - 550.18
+        - 662.29
+        - 658.29
   assets:
-  - key: p4_f04
+  - key: s1_19_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p4_f04.png
+    file: doc_113_高雄_陽明_數學_g7s2e3/s1_19_f1.png
+    crop:
+      page: 4
+      rect:
+      - 421.74
+      - 319.02
+      - 615.63
+      - 451.89
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_20
   section: 1
   number: 20
   type: single
   page: 4
-  stem: 某超商推出集點送模型車活動:每消費50元贈送1點,每買1條巧克力,加贈l點,集滿20點 送模型車。已知每條巧克力30元,小明想買一些巧克力來獲得點數兑換模型車,且他已有點數8點,請問小明至少還要買幾條巧克力才能湊足點數?
+  stem: 某超商推出集點送模型車活動：每消費 50 元贈送 1 點，每買 1 條巧克力，加贈 1 點，集滿 20 點送模型車。已知每條巧克力 30 元，小明想買一些巧克力來獲得點數兑換模型車，且他已有點數
+    8 點，請問小明至少還要買幾條巧克力才能湊足點數？
   options:
   - label: A
     content: '7'
@@ -343,36 +618,48 @@ questions:
   - label: C
     content: '9'
   - label: D
-    content: 10條
+    content: 10 條
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_21
   section: 1
   number: 21
   type: single
   page: 4
-  stem: 試問下列解x $\frac{5}{3}$ 5- >7-x的過程中,步驟
+  stem: 試問下列解 $5-\frac{5}{3}x > 7-x$ 的過程中，步驟(A)~(D)哪一步開始出錯？
   options:
   - label: A
-    content: '~'
-  - label: D
-    content: 哪一步開始出錯?
-  - label: A
-    content: 兩邊同減5,故x $\frac{5}{3}$ - >2-x
+    content: 兩邊同減 5，故 $-\frac{5}{3}x > 2-x$
   - label: B
-    content: 兩邊同加x,故x $\frac{2}{3}$ - >2
+    content: 兩邊同加 $x$，故 $-\frac{2}{3}x > 2$
   - label: C
-    content: 兩邊同乘以 ) $\frac{3}{2}$ (- ,故x >-3
+    content: 兩邊同乘以 $(-\frac{3}{2})$，故 $x > -3$
   - label: D
-    content: 圖示此不等式的解為 第4頁,共5頁【一年級數學科】
-  assets:
-  - key: p4_f05
-    kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e3/p4_f05.png
+    content: 圖示此不等式的解為
+    asset:
+      key: optD
+      file: doc_113_高雄_陽明_數學_g7s2e3/1_21_optD.png
+      crop:
+        page: 4
+        rect:
+        - 532.54
+        - 920.67
+        - 668.85
+        - 962.73
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_22
   section: 1
   number: 22
   type: single
   page: 5
-  stem: 下表(二)為71人參加某商店舉辦的單手抓糖果活動的統計結果。若抓到糖果數的中位數為a, 眾數為b,則a+b之值為何?
+  stem: '下表(二)為 71 人參加某商店舉辦的單手抓糖果活動的統計結果。若抓到糖果數的中位數為 $a$，眾數為 $b$，則 $a+b$ 之值為何？
+
+
+    表(二)
+
+    | 抓到糖果數(顆) | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
+    | :---: | :---: |
+
+    | 次數(人) | 3 | 7 | 6 | 10 | 11 | 8 | 13 | 7 | 1 | 4 | 1 |'
   options:
   - label: A
     content: '21'
@@ -381,15 +668,38 @@ questions:
   - label: C
     content: '19'
   - label: D
-    content: 18表(二) 抓到糖果數(顆) 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 次數(人) 3. 7. 6.
-      10. 11. 8. 13. 7. 1. 4. 1.
+    content: '18'
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_23
   section: 1
   number: 23
   type: single
   page: 5
-  stem: 右表(三)為餐廳的價目表,今日每份餐點價格均打八折。依霖帶妹妹到餐廳各點一份餐點用餐,妹 妹想點橙汁雞丁飯,但依霖只帶了210元,請問依霖的餐點有幾種選擇?
+  stem: '右表(三)為餐廳的價目表，今日每份餐點價格均打八折。依霖帶妹妹到餐廳各點一份餐點用餐，妹妹想點橙汁雞丁飯，但依霖只帶了 210 元，請問依霖的餐點有幾種選擇？
+
+
     表(三)
+
+    | 餐點 | 價格 |
+
+    | :--- | :--- |
+
+    | 番茄蛋炒飯 | 60 元 |
+
+    | 酥炸排骨飯 | 80 元 |
+
+    | 蔬菜海鮮麵 | 90 元 |
+
+    | 清蒸鱈魚飯 | 100 元 |
+
+    | 紅燒牛腩飯 | 110 元 |
+
+    | 橙汁雞丁飯 | 120 元 |
+
+    | 白酒蛤蠣麵 | 120 元 |
+
+    | 海鮮墨魚麵 | 140 元 |
+
+    | 嫩烤豬腳飯 | 150 元 |'
   options:
   - label: A
     content: '9'
@@ -398,22 +708,29 @@ questions:
   - label: C
     content: '7'
   - label: D
-    content: 6種 。 番 茄 蛋 炒 飯 。 酥 炸 排 骨 飯 。 蔬 菜 海 鮮 麵 。 清 蒸 鱈 魚 飯 。 紅 燒 牛 腩 飯 。 橙 汁
-      雞 丁 飯 。 白 酒 蛤 蠣 麵 。 海 鮮 墨 魚 麵 。 嫩 烤 豬 腳 飯60元80元90元100元110元120元120元140元150元
+    content: 6 種
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_24
   section: 1
   number: 24
   type: single
   page: 5
-  stem: 下表(四)為阿貢公司80人的月薪薪資分布,試問:該公司月薪的中位數在哪一組? 表(四) 月薪(萬元) 2~3 3~4 4~5 5~6 6~7 7~8
-    8~9 9~10次數(人) 8. 15. 16. 24. 10. 4. 0. 3.
+  stem: '下表(四)為阿貢公司 80 人的月薪薪資分布，試問：該公司月薪的中位數在哪一組？
+
+
+    表(四)
+
+    | 月薪(萬元) | 2~3 | 3~4 | 4~5 | 5~6 | 6~7 | 7~8 | 8~9 | 9~10 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 8 | 15 | 16 | 24 | 10 | 4 | 0 | 3 |'
   options:
   - label: A
-    content: 3~4萬元
+    content: 3~4 萬元
   - label: B
-    content: 4~5萬元
+    content: 4~5 萬元
   - label: C
-    content: 5~6萬元
+    content: 5~6 萬元
   - label: D
     content: 不能確定
 - id: doc_113_高雄_陽明_數學_g7s2e3_s1_25
@@ -421,15 +738,23 @@ questions:
   number: 25
   type: single
   page: 5
-  stem: 承上題:根據此表求該公司月薪的平均數為何?
+  stem: 承上題：根據此表求該公司月薪的平均數為何？
   options:
   - label: A
-    content: 5萬元
+    content: 5 萬元
   - label: B
-    content: 4.9萬元
+    content: 4.9 萬元
   - label: C
-    content: 4.8萬元
+    content: 4.8 萬元
   - label: D
-    content: 4.7萬元 第5頁,共5頁【一年級數學科】
-  group_stem: （第 24 題）下表(四)為阿貢公司80人的月薪薪資分布,試問:該公司月薪的中位數在哪一組? 表(四) 月薪(萬元) 2~3 3~4 4~5
-    5~6 6~7 7~8 8~9 9~10次數(人) 8. 15. 16. 24. 10. 4. 0. 3.
+    content: 4.7 萬元
+  group_stem: '（第 24 題）下表(四)為阿貢公司 80 人的月薪薪資分布，試問：該公司月薪的中位數在哪一組？
+
+
+    表(四)
+
+    | 月薪(萬元) | 2~3 | 3~4 | 4~5 | 5~6 | 6~7 | 7~8 | 8~9 | 9~10 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 8 | 15 | 16 | 24 | 10 | 4 | 0 | 3 |'

@@ -1,179 +1,188 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 3
-  school: 新北市立蘆洲國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 2-4    ~  3-3       7   年_____班______號  姓名:_________________
   city: 新北
   school_short: 蘆洲
+  school: 新北市市立蘆洲國民中學
+  scope_note: 2-4 ~ 3-3
   id: doc_113_新北_蘆洲_數學_g7s1e3
-  title: 新北市立蘆洲國民中學 113學年度第1學期第3次定期評量7年級數學科試題
+  title: 新北市市立蘆洲國民中學 113學年度第1學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第3次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: '一、選擇題: (每題4分,共100分)'
     count: 25
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-3/新北/蘆洲.pdf
+  scope:
+    lessons:
+    - number: 2-4
+      title: null
+    - number: 3-3
+      title: null
+    publisher: null
+    raw: 2-4 ~ 3-3
+    volume: null
 questions:
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: (-)3的值為何?
+  stem: $(-5)^{3}$的值為何？
   options:
   - label: A
-    content: '-'
+    content: $-15$
   - label: B
-    content: '-'
+    content: $-25$
   - label: C
-    content: '-'
+    content: $-75$
   - label: D
-    content: '-125'
+    content: $-125$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 請判別下列哪一個選項是正確的?
+  stem: 請判別下列哪一個選項是正確的？
   options:
   - label: A
-    content: 72×73=72×3=76
+    content: $7^{2} \times 7^{3} = 7^{2 \times 3} = 7^{6}$
   - label: B
-    content: 72+73=72+3=75
+    content: $7^{2} + 7^{3} = 7^{2 + 3} = 7^{5}$
   - label: C
-    content: (72)3=72×3=76
+    content: $(7^{2})^{3} = 7^{2 \times 3} = 7^{6}$
   - label: D
-    content: 75-73=75-3=72
+    content: $7^{5} - 7^{3} = 7^{5 - 3} = 7^{2}$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 英杰 原本有35元,後來每天存x元,7天後,英杰共有多少元?
+  stem: 英杰原本有 35 元，後來每天存 $x$ 元，7 天後，英杰共有多少元？
   options:
   - label: A
-    content: '[(35+x)×7]元'
+    content: $[(35 + x) \times 7]$元
   - label: B
-    content: (35+x×7)元
+    content: $(35 + x \times 7)$元
   - label: C
-    content: (35×7+x)元
+    content: $(35 \times 7 + x)$元
   - label: D
-    content: '[35×(x+7)]元'
+    content: $[35 \times (x + 7)]$元
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: -2x可表示為下列何者?
+  stem: $-2x$ 可表示為下列何者？
   options:
   - label: A
-    content: -2+x
+    content: $-2 + x$
   - label: B
-    content: -2-x
+    content: $-2 - x$
   - label: C
-    content: -2×x
+    content: $-2 \times x$
   - label: D
-    content: -2÷x
+    content: $-2 \div x$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 當x=-4時,-3x÷2的值為多少?
+  stem: 當 $x = -4$ 時，$-3x \div 2$ 的值為多少？
   options:
   - label: A
     content: '6'
   - label: B
-    content: '-6'
+    content: $-6$
   - label: C
     content: '9'
   - label: D
-    content: '-9'
+    content: $-9$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 化簡(-)×(-x+10)=?
+  stem: 化簡$(-\frac{3}{5}) \times (-x + 10) = ？$
   options:
   - label: A
-    content: -3x
+    content: $\frac{3}{5}x - 6$
   - label: B
-    content: x-
+    content: $\frac{3}{5}x - 10$
   - label: C
-    content: x
+    content: $\frac{3}{5}x + 6$
   - label: D
-    content: 3x
+    content: $3x + 10$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 化簡7x-2x=?
+  stem: 化簡 $7x - 2x = ？$
   options:
   - label: A
     content: '5'
   - label: B
     content: '7'
   - label: C
-    content: 5x
+    content: $5x$
   - label: D
-    content: 7x
+    content: $7x$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 化簡-3x-(-4x)=?
+  stem: 化簡 $-3x - (-4x) = ？$
   options:
   - label: A
-    content: -7x
+    content: $-7x$
   - label: B
-    content: -x
+    content: $-x$
   - label: C
-    content: 7x
+    content: $7x$
   - label: D
-    content: x
+    content: $x$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 已知一個長方形的長是3x-1,寬是5,則其面積是多少?
+  stem: 已知一個長方形的長是 $3x - 1$，寬是 5，則其面積是多少？
   options:
   - label: A
-    content: 3x-5
+    content: $3x - 5$
   - label: B
-    content: 15x-1
+    content: $15x - 1$
   - label: C
-    content: 5-15x
+    content: $5 - 15x$
   - label: D
-    content: 15x-5
+    content: $15x - 5$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 方程式0.5x-0.3x+0.1x=0.2x-4,則x=?
+  stem: 方程式 $0.5x - 0.3x + 0.1x = 0.2x - 4$，則 $x = ？$
   options:
   - label: A
-    content: '-'
+    content: $-400$
   - label: B
-    content: '-4'
+    content: $-4$
   - label: C
-    content: '-'
+    content: $-\frac{4}{5}$
   - label: D
-    content: '-40'
+    content: $-40$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 已知比-4大x的數是1,則比x的2倍少7的數是多少?
+  stem: 已知比 $-4$ 大 $x$ 的數是 1，則比 $x$ 的 2 倍少 7 的數是多少？
   options:
   - label: A
     content: '3'
@@ -188,29 +197,29 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: x=-1是下列哪一個一元一次方程式的解?
+  stem: $x = -1$ 是下列哪一個一元一次方程式的解？
   options:
   - label: A
-    content: 1+2x=-x
+    content: $1 + 2x = -x$
   - label: B
-    content: 4x=5+x
+    content: $4x = 5 + x$
   - label: C
-    content: 2x-7=9
+    content: $2x - 7 = 9$
   - label: D
-    content: 14-3x=17
+    content: $14 - 3x = 17$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 解方程式5-[3x-(3+x)]=2(x-1),得到x=?
+  stem: 解方程式 $5 - [3x - (3 + x)] = 2(x - 1)$，得到 $x = ？$
   options:
   - label: A
-    content: ''
+    content: $\frac{5}{2}$
   - label: B
     content: '0'
   - label: C
-    content: '-1'
+    content: $-1$
   - label: D
     content: '1'
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_14
@@ -218,22 +227,22 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: 陳 媽媽到蘆洲菜市場買了6顆蘋果與8顆梨子,共花了242元。若一顆梨子比一顆蘋果貴4元,請問 七年級 數學科 第1頁,共3頁2買4顆梨子需要多少錢?
+  stem: 陳媽媽到蘆洲菜市場買了 6 顆蘋果與 8 顆梨子，共花了 242 元。若一顆梨子比一顆蘋果貴 4 元，請問買 4 顆梨子需要多少錢？
   options:
   - label: A
-    content: 15元
+    content: 15 元
   - label: B
-    content: 19元
+    content: 19 元
   - label: C
-    content: 60元
+    content: 60 元
   - label: D
-    content: 76元
+    content: 76 元
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 小姍 買了4杯咖啡,付1000元找回460元,則一杯咖啡多少元?
+  stem: 小姍買了 4 杯咖啡，付 1000 元找回 460 元，則一杯咖啡多少元？
   options:
   - label: A
     content: '125'
@@ -248,89 +257,89 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 判斷312是96的幾倍?
+  stem: 判斷 $3^{12}$ 是 $9^{6}$ 的幾倍？
   options:
   - label: A
     content: '1'
   - label: B
-    content: ()2
+    content: $(\frac{1}{3})^{2}$
   - label: C
-    content: ()6
+    content: $(\frac{1}{3})^{6}$
   - label: D
-    content: (-6)2
+    content: $(-6)^{2}$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 下列何者為方程式+=的解?
+  stem: 下列何者為方程式 $\frac{x - 1}{4} + \frac{x - 2}{3} = \frac{1}{6}$ 的解？
   options:
   - label: A
-    content: x=0
+    content: $x = 0$
   - label: B
-    content: x=
+    content: $x = \frac{13}{7}$
   - label: C
-    content: x=
+    content: $x = \frac{11}{7}$
   - label: D
-    content: x=5
+    content: $x = 5$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 下列何者是方程式20-3(4-x)=(4x+11)-8x的解?
+  stem: 下列何者是方程式 $20 - 3(4 - x) = (4x + 11) - 8x$ 的解？
   options:
   - label: A
-    content: x=0
+    content: $x = 0$
   - label: B
-    content: x=
+    content: $x = \frac{3}{7}$
   - label: C
-    content: x=
+    content: $x = \frac{19}{7}$
   - label: D
-    content: x=
+    content: $x = -\frac{3}{7}$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 若kx-7=-5(3+2x)的解是x=-1,則k的值為何?
+  stem: 若 $kx - 7 = -5(3 + 2x)$ 的解是 $x = -1$，則 $k$ 的值為何？
   options:
   - label: A
     content: '12'
   - label: B
-    content: '-12'
+    content: $-12$
   - label: C
     content: '2'
   - label: D
-    content: '-2'
+    content: $-2$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_20
   section: 1
   number: 20
   type: single
   page: 2
-  stem: 某人上山、下山共需6小時,如果上山每小時走1.5公里,下山每小時走3公里,則山路長為多少公 里?
+  stem: 某人上山、下山共需 6 小時，如果上山每小時走 1.5 公里，下山每小時走 3 公里，則山路長為多少公里？
   options:
   - label: A
-    content: 3公里
+    content: 3 公里
   - label: B
-    content: 6公里
+    content: 6 公里
   - label: C
-    content: 9公里
+    content: 9 公里
   - label: D
-    content: 10公里
+    content: 10 公里
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_21
   section: 1
   number: 21
   type: single
   page: 2
-  stem: -4.1和3.7兩數各加一個相同的數後,所得的兩數互為相反數,則所加的數為何?
+  stem: $-4.1$ 和 3.7 兩數各加一個相同的數後，所得的兩數互為相反數，則所加的數為何？
   options:
   - label: A
-    content: -0.7ˉ
+    content: $-0.7$
   - label: B
-    content: 0.2ˉ
+    content: '0.2'
   - label: C
-    content: 0.4ˉ
+    content: '0.4'
   - label: D
     content: '0.7'
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_22
@@ -338,29 +347,30 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 計算(-)3×(-18)+÷(-3)之值為何?
+  stem: 計算 $(-\frac{1}{3})^{3} \times (-18) + \frac{5}{9} \div (-3)$ 之值為何？
   options:
   - label: A
-    content: '-'
+    content: $-\frac{13}{27}$
   - label: B
-    content: '-'
+    content: $-\frac{23}{27}$
   - label: C
-    content: ''
+    content: $\frac{13}{27}$
   - label: D
-    content: ''
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_113_新北_蘆洲_數學_g7s1e3/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_113_新北_蘆洲_數學_g7s1e3/p2_f02.png
+    content: $\frac{23}{27}$
 - id: doc_113_新北_蘆洲_數學_g7s1e3_s1_23
   section: 1
   number: 23
   type: single
   page: 2
-  stem: '以下是小靖化簡 - 的過程: 步驟一:將式子同乘以4,得3x+2-2(-3x+1) 步驟二:去括號得3x+2+6x-2步驟三:化簡得9x關於小靖的化簡過程,從哪一步驟開始出現錯誤?'
+  stem: '以下是小靖化簡 $\frac{3x + 2}{4} - \frac{-3x + 1}{2}$ 的過程：
+
+    步驟一：將式子同乘以 4，得 $3x + 2 - 2(-3x + 1)$
+
+    步驟二：去括號得 $3x + 2 + 6x - 2$
+
+    步驟三：化簡得 $9x$
+
+    關於小靖的化簡過程，從哪一步驟開始出現錯誤？'
   options:
   - label: A
     content: 步驟一
@@ -375,7 +385,7 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 已知甲、乙、丙三人各有一些錢,其中甲的錢是乙的2倍,乙比丙多1元,丙比甲少11元,求三人的 錢共有多少元?
+  stem: 已知甲、乙、丙三人各有一些錢，其中甲的錢是乙的 2 倍，乙比丙多 1 元，丙比甲少 11 元，求三人的錢共有多少元？
   options:
   - label: A
     content: '30'
@@ -390,7 +400,16 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 在下圖的方格中,填入適當的數字,使得每行、每列以及對角線上的數字和是相同的,則★的值為何? 16 14 15 12七年級 數學科 第2頁,共3頁3
+  stem: '在下圖的方格中，填入適當的數字，使得每行、每列以及對角線上的數字和是相同的，則★的值為何？
+
+
+    | 16 | | 14 |
+
+    | :---: | :---: | :---: |
+
+    | ★ | | 15 |
+
+    | 12 | | |'
   options:
   - label: A
     content: '9'
@@ -399,8 +418,15 @@ questions:
   - label: C
     content: '11'
   - label: D
-    content: 13七年級 數學科 第3頁,共3頁
+    content: '13'
   assets:
-  - key: p2_f03
+  - key: s1_25_f1
     kind: figure
-    file: doc_113_新北_蘆洲_數學_g7s1e3/p2_f03.png
+    file: doc_113_新北_蘆洲_數學_g7s1e3/s1_25_f1.png
+    crop:
+      page: 2
+      rect:
+      - 74.68
+      - 916.38
+      - 146.06
+      - 982.16

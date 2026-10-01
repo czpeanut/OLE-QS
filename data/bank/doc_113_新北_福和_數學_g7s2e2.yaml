@@ -1,64 +1,73 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 2
-  school: 新北市立福和國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 2-2 ~ 3-2                                          班級:_____
   city: 新北
   school_short: 福和
+  school: 新北市立福和國中
+  scope_note: 2-2 ~ 3-2
   id: doc_113_新北_福和_數學_g7s2e2
-  title: 新北市立福和國民中學 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 新北市立福和國中 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: '一、 選擇題: (第1~16題每題4分,第17~24題每題3分,共88分)'
     count: 24
   - ord: 2
     name: 二、計算題
-    type: calc
-    score_rule: '二、計算題: (每題6分,共12分) ※請小心計算,没有計算過程者,不予計分※'
-    count: 2
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-2/新北/福和.pdf
+  scope:
+    lessons:
+    - number: 2-2
+      title: null
+    - number: 3-1
+      title: null
+    - number: 3-2
+      title: null
+    publisher: null
+    raw: 2-2 ~ 3-2
+    volume: null
 questions:
 - id: doc_113_新北_福和_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列哪一個二元一次方程式的圖形會通過原點?
+  stem: 下列哪一個二元一次方程式的圖形會通過原點？
   options:
   - label: A
-    content: −2x+ y= 9
+    content: $-2x+y=9$
   - label: B
-    content: 3x−2 = −2(2y+ 1)
+    content: $3x-2=-2(2y+1)$
   - label: C
-    content: 5y= −2x+ 2
+    content: $5y=-2x+2$
   - label: D
-    content: 3(x+ 1) = 3y−3          [2-2]
+    content: $3(x+1)=3y-3$
 - id: doc_113_新北_福和_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 在坐標平面上,下列哪一條直線會通過點 (−3 , 4)且與y軸垂直?
+  stem: 在坐標平面上，下列哪一條直線會通過點 $(-3,4)$ 且與 $y$ 軸垂直？
   options:
   - label: A
-    content: x= −3
+    content: $x=-3$
   - label: B
-    content: x= 4
+    content: $x=4$
   - label: C
-    content: y= −3
+    content: $y=-3$
   - label: D
-    content: y= 4                                         [2-2]
+    content: $y=4$
 - id: doc_113_新北_福和_數學_g7s2e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 已知P(a, b) 為二元一次方程式3x−y= 5圖形上的一點,則9a−3b= ?
+  stem: 已知 $P(a,b)$ 為二元一次方程式 $3x-y=5$ 圖形上的一點，則 $9a-3b=?$
   options:
   - label: A
     content: '5'
@@ -67,58 +76,58 @@ questions:
   - label: C
     content: '11'
   - label: D
-    content: 15                                            [2-2]
+    content: '15'
 - id: doc_113_新北_福和_數學_g7s2e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 坐標平面上,關於二元一次方程式4x+ 3y= 36的圖形,下列敘述何者正確?
+  stem: 坐標平面上，關於二元一次方程式 $4x+3y=36$ 的圖形，下列敘述何者正確？
   options:
   - label: A
-    content: 圖形與y軸交於(0,12)
+    content: 圖形與 $y$ 軸交於 $(0,12)$
   - label: B
     content: 圖形不經過第一象限
   - label: C
-    content: 圖形與x軸交於(0,9)
+    content: 圖形與 $x$ 軸交於 $(0,9)$
   - label: D
-    content: 圖形通過原點                                            [2-2]
+    content: 圖形通過原點
 - id: doc_113_新北_福和_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 若x∶y= 2 ∶5,且2x+ 3y= 38 ,則 (x−1) ∶(y−3) = ?
+  stem: 若 $x:y=2:5$，且 $2x+3y=38$，則 $(x-1):(y-3)=?$
   options:
   - label: A
-    content: 1 ∶2
+    content: $1:2$
   - label: B
-    content: 2 ∶5
+    content: $2:5$
   - label: C
-    content: 3 ∶1
+    content: $3:1$
   - label: D
-    content: 3 ∶7                                          [3-1]
+    content: $3:7$
 - id: doc_113_新北_福和_數學_g7s2e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 若3a∶2b= 2 ∶1 ,且a、b皆不等於0,下列敘述何者正確?
+  stem: 若 $3a:2b=2:1$，且 $a$、$b$ 皆不等於 0，下列敘述何者正確？
   options:
   - label: A
-    content: a∶b= 3 ∶4
+    content: $a:b=3:4$
   - label: B
-    content: 若(a+ 2)、(b+ 6)皆不等於0,則(a+ 2) ∶(b+ 6) = 2 ∶3
+    content: 若 $(a+2)$、$(b+6)$ 皆不等於 0，則 $(a+2):(b+6)=2:3$
   - label: C
-    content: 3b= 4a
+    content: $3b=4a$
   - label: D
-    content: 若(a+ 4)、(b+ 3)皆不等於0,則(a+ 4) ∶(b+ 3) = 4 ∶3                [3-1]
+    content: 若 $(a+4)$、$(b+3)$ 皆不等於 0，則 $(a+4):(b+3)=4:3$
 - id: doc_113_新北_福和_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若 (2x−3) ∶5 = (7x+ 3) ∶4,則x的值為?
+  stem: 若 $(2x-3):5=(7x+3):4$，則 $x$ 的值為？
   options:
   - label: A
     content: '-1'
@@ -127,13 +136,13 @@ questions:
   - label: C
     content: '3'
   - label: D
-    content: 7                                              [3-1]
+    content: '7'
 - id: doc_113_新北_福和_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 已知y與x成正比,且x= 4時,y= 18,則當x= 6,y=? $\frac{4}{3}$
+  stem: 已知 $y$ 與 $x$ 成正比，且 $x=4$ 時，$y=18$，則當 $x=6$，$y=？$
   options:
   - label: A
     content: '27'
@@ -142,133 +151,135 @@ questions:
   - label: C
     content: '12'
   - label: D
-    content: '[3-2]'
+    content: $\frac{4}{3}$
 - id: doc_113_新北_福和_數學_g7s2e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 已知y與x成反比,且x= 6時,y= 15,則當x= 9,y=? $\frac{18}{5}$
+  stem: 已知 $y$ 與 $x$ 成反比，且 $x=6$ 時，$y=15$，則當 $x=9$，$y=？$
   options:
+  - label: A
+    content: $\frac{18}{5}$
   - label: B
     content: '10'
   - label: C
     content: '18'
   - label: D
     content: $\frac{45}{2}$
-  - label: A
-    content: '[3-2]'
 - id: doc_113_新北_福和_數學_g7s2e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 請判斷下列敘述何者正確?
+  stem: 請判斷下列敘述何者正確？
   options:
   - label: A
-    content: 當x值增加, y值卻減少時,則y與x成反比
+    content: 當 $x$ 值增加，$y$ 值卻減少時，則 $y$ 與 $x$ 成反比
   - label: B
-    content: 面積相同的三角形,底與對應高成正比
+    content: 面積相同的三角形，底與對應高成正比
   - label: C
-    content: 若y與x成反比時,則x與y的乘積為固定的數
+    content: 若 $y$ 與 $x$ 成反比時，則 $x$ 與 $y$ 的乘積為固定的數
   - label: D
-    content: 圓的半徑與面積成正比                [3-2]
+    content: 圓的半徑與面積成正比
 - id: doc_113_新北_福和_數學_g7s2e2_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 若二元一次方程式y= ax+ b的圖形通過(-3 ,-3)與(6 ,0)兩點,則下列敘述何者正確?
+  stem: 若二元一次方程式 $y=ax+b$ 的圖形通過（-3 ,-3）與（6 ,0）兩點，則下列敘述何者正確？
   options:
   - label: A
-    content: 方程式為y= $\frac{1}{3}$ x−2
+    content: 方程式為 $y=\frac{1}{3}x-2$
   - label: B
-    content: 方程式為y= 3x−2
+    content: 方程式為 $y=3x-2$
   - label: C
-    content: a= 3
+    content: $a=3$
   - label: D
-    content: b= 2                  [2-2]
+    content: $b=2$
 - id: doc_113_新北_福和_數學_g7s2e2_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: 姊姊與弟弟約好清晨一起去操場慢跑。已知兩人同時出發同時結束,且姊姊的速率是弟弟的 $\frac{7}{4}$ 倍,若他們 總共跑了22圈,則弟弟總共跑了幾圈?
+  stem: 姊姊與弟弟約好清晨一起去操場慢跑。已知兩人同時出發同時結束，且姊姊的速率是弟弟的 $\frac{7}{4}$ 倍，若他們總共跑了 22 圈，則弟弟總共跑了幾圈？
   options:
   - label: A
-    content: '14'
+    content: 14 圈。
   - label: B
-    content: '12'
+    content: 12 圈。
   - label: C
-    content: '8'
+    content: 8 圈。
   - label: D
-    content: 4     圈。         [3-1] 第1面 試題尚未結束,請翻頁繼續作答。
+    content: 4 圈。
 - id: doc_113_新北_福和_數學_g7s2e2_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 已知彈簧秤在彈性限度內,所掛物體的重量與彈簧伸長量成正比。假設一彈簧秤的彈性限度為1公斤,已知 秤72公克重的物體時,彈簧的伸長量是12公分,則此彈簧秤秤48公克重的物體時,彈簧伸長量是多少公分?
+  stem: 已知彈簧秤在彈性限度內，所掛物體的重量與彈簧伸長量成正比。假設一彈簧秤的彈性限度為 1 公斤，已知秤 72 公克重的物體時，彈簧的伸長量是 12 公分，則此彈簧秤秤
+    48 公克重的物體時，彈簧伸長量是多少公分？
   options:
   - label: A
-    content: '6'
+    content: 6 公分。
   - label: B
-    content: '8'
+    content: 8 公分。
   - label: C
-    content: '16'
+    content: 16 公分。
   - label: D
-    content: 18     公分。                                   [3-2]
+    content: 18 公分。
 - id: doc_113_新北_福和_數學_g7s2e2_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 若金明與爸爸11年前的年齡比是1:4,19年後的年齡比是2:3,則今年金明幾歲?
+  stem: 若金明與爸爸 11 年前的年齡比是 1:4，19 年後的年齡比是 2:3，則今年金明幾歲？
   options:
   - label: A
-    content: '15'
+    content: 15 歲。
   - label: B
-    content: '17'
+    content: 17 歲。
   - label: C
-    content: '19'
+    content: 19 歲。
   - label: D
-    content: 21     歲。                                   [3-1]
+    content: 21 歲。
 - id: doc_113_新北_福和_數學_g7s2e2_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 坐標平面上的三條相異直線, y= ax−8 、 y= 2與ax+ by= 12有一個共同交點 (−2 , k) ,則下列敘 述何者錯誤?
+  stem: 坐標平面上的三條相異直線，$y=ax-8$、$y=2$ 與 $ax+by=12$ 有一個共同交點 $(-2,k)$，則下列敘述何者錯誤？
   options:
   - label: A
-    content: a= 5
+    content: $a=5$
   - label: B
-    content: b= 1
+    content: $b=1$
   - label: C
-    content: k= 2
+    content: $k=2$
   - label: D
-    content: a+ b+ k= −2                   [2-2]
+    content: $a+b+k=-2$
 - id: doc_113_新北_福和_數學_g7s2e2_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 坐標平面上,已知點A(a, b) 在方程式x+ 2y= 4的圖形上。若A點在第二象限,且A點到x軸的距離與A點 $\frac{5}{2}$
+  stem: 坐標平面上，已知點 $A(a,b)$ 在方程式 $x+2y=4$ 的圖形上。若 $A$ 點在第二象限，且 $A$ 點到 $x$ 軸的距離與 $A$
+    點到 $y$ 軸的距離比為 $2:3$，則 $a+b$ 之值為何？
   options:
+  - label: A
+    content: $\frac{5}{2}$
   - label: B
     content: '1'
   - label: C
     content: $\frac{20}{7}$
   - label: D
-    content: −4         [2-2]&[3-1] 到y軸的距離比為2 ∶3,則a+ b之值為何?
-  - label: A
-    content: ''
+    content: '-4'
 - id: doc_113_新北_福和_數學_g7s2e2_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 若點A(a−b, ab) 在坐標平面上的第四象限,則y= ax+ b的圖形不通過第幾象限?
+  stem: 若點 $A(a-b,ab)$ 在坐標平面上的第四象限，則 $y=ax+b$ 的圖形不通過第幾象限？
   options:
   - label: A
     content: 第一象限
@@ -277,13 +288,13 @@ questions:
   - label: C
     content: 第三象限
   - label: D
-    content: 第四象限                                   [2-2]
+    content: 第四象限
 - id: doc_113_新北_福和_數學_g7s2e2_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 若(x−2y+ 5) ∶(3x−y) = 3 ∶4,則x、y皆為正整數的解有幾組?
+  stem: 若 $(x-2y+5):(3x-y)=3:4$，則 $x$、$y$ 皆為正整數的解有幾組？
   options:
   - label: A
     content: '1'
@@ -292,132 +303,163 @@ questions:
   - label: C
     content: '3'
   - label: D
-    content: 4                                                       [3-1]
+    content: '4'
 - id: doc_113_新北_福和_數學_g7s2e2_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 為了在即將到來的校慶園遊會上擺攤賣手工餅乾,需要烘烤固定總數量的一大盤餅乾。假設所有參與的同學 製作餅乾的工作能力都是相同的。若一起製作需要的時數與參與人數成反比,且12位同學一起製作需要5小
-    時才能完成全部的餅乾。如果班級希望能在3小時就完成所有餅乾的製作,則需要安排幾位同學一起製作?
+  stem: 為了在即將到來的校慶園遊會上擺攤賣手工餅乾，需要烘烤固定總數量的一大盤餅乾。假設所有參與的同學製作餅乾的工作能力都是相同的。若一起製作需要的時數與參與人數成反比，且
+    12 位同學一起製作需要 5 小時才能完成全部的餅乾。如果班級希望能在 3 小時就完成所有餅乾的製作，則需要安排幾位同學一起製作？
   options:
   - label: A
-    content: '8'
+    content: 8 位。
   - label: B
-    content: '15'
+    content: 15 位。
   - label: C
-    content: '20'
+    content: 20 位。
   - label: D
-    content: 21     位。                                              [3-2]
+    content: 21 位。
 - id: doc_113_新北_福和_數學_g7s2e2_s1_20
   section: 1
   number: 20
   type: single
   page: 2
-  stem: 美味杯子蛋糕的食譜說明,製作8個杯子蛋糕需要使用200公克的麵粉。假設製作不同數量的杯子蛋糕時, 所需麵粉的重量與杯子蛋糕的數量成正比。如果小美想要按照這份食譜的比例,製作12個同樣的杯子蛋糕,
-    她需要準備多少的公克的麵粉?
+  stem: 美味杯子蛋糕的食譜說明，製作 8 個杯子蛋糕需要使用 200 公克的麵粉。假設製作不同數量的杯子蛋糕時，所需麵粉的重量與杯子蛋糕的數量成正比。如果小美想要按照這份食譜的比例，製作
+    12 個同樣的杯子蛋糕，她需要準備多少的公克的麵粉？
   options:
   - label: A
-    content: '250'
+    content: 250 公克。
   - label: B
-    content: '275'
+    content: 275 公克。
   - label: C
-    content: '300'
+    content: 300 公克。
   - label: D
-    content: 375    公克。        [3-2]
+    content: 375 公克。
 - id: doc_113_新北_福和_數學_g7s2e2_s1_21
   section: 1
   number: 21
   type: single
   page: 2
-  stem: 已知甲校原有876人,乙校原有900人,寒假期間甲、乙兩校人數變動的原因只有轉出與轉入兩種,且轉出 人數比為2:3,轉入人數比也為2:3。若寒假結束開學時甲、乙兩校人數相同,則乙校開學時的人數與原有的
-    人數相差多少?
+  stem: 已知甲校原有 876 人，乙校原有 900 人，寒假期間甲、乙兩校人數變動的原因只有轉出與轉入兩種，且轉出人數比為 2:3，轉入人數比也為 2:3。若寒假結束開學時甲、乙兩校人數相同，則乙校開學時的人數與原有的人數相差多少？
   options:
   - label: A
-    content: '72'
+    content: 72 人。
   - label: B
-    content: '48'
+    content: 48 人。
   - label: C
-    content: '36'
+    content: 36 人。
   - label: D
-    content: 24     人。                                      (挑戰題) [3-1] 試題尚未結束,請翻頁繼續作答。
-      第2面
+    content: 24 人。
 - id: doc_113_新北_福和_數學_g7s2e2_s1_22
   section: 1
   number: 22
   type: single
   page: 3
-  stem: 銀明家附近即將開幕一家大型購物中心,為提供顧客更舒適便利的購物體驗,並響應提升公共設施友善度的 倡議,該中心正在檢討廁所配置。目前,購物中心內設有男廁20間、女廁28間。根據政府最新頒布的法規,
-    公共場所的男女廁所比例應調整為1:5,以更符合實際使用需求。若業者希望在不增加廁所總間數的情況下 且符合新法規,則需將幾間男廁改建為女廁?
+  stem: 銀明家附近即將開幕一家大型購物中心，為提供顧客更舒適便利的購物體驗，並響應提升公共設施友善度的倡議，該中心正在檢討廁所配置。目前，購物中心內設有男廁
+    20 間、女廁 28 間。根據政府最新頒布的法規，公共場所的男女廁所比例應調整為 1：5，以更符合實際使用需求。若業者希望在不增加廁所總間數的情況下且符合新法規，則需將幾間男廁改建為女廁？
   options:
   - label: A
-    content: '6'
+    content: 6 間。
   - label: B
-    content: '8'
+    content: 8 間。
   - label: C
-    content: '10'
+    content: 10 間。
   - label: D
-    content: 12    間。 (素養題) [3-1]
+    content: 12 間。
 - id: doc_113_新北_福和_數學_g7s2e2_s1_23
   section: 1
   number: 23
   type: single
   page: 3
-  stem: 桌上有甲、乙兩個圓柱形杯子,杯深均為20公分,各裝有9公分高的水,已知甲杯底面積為20平方公分, 乙杯的底面積為30平方公分。銅明將甲杯內的一些水倒入乙杯,過程中水沒有溢出,使得甲、乙兩杯內水的
-    高度比為3:4,若不計杯子厚度,則乙杯內水的高度變為多少公分?
+  stem: 桌上有甲、乙兩個圓柱形杯子，杯深均為 20 公分，各裝有 9 公分高的水，已知甲杯底面積為 20 平方公分，乙杯的底面積為 30 平方公分。銅明將甲杯內的一些水倒入乙杯，過程中水沒有溢出，使得甲、乙兩杯內水的高度比為
+    3:4，若不計杯子厚度，則乙杯內水的高度變為多少公分?
   options:
   - label: A
-    content: '7.5'
+    content: 7.5 公分。
   - label: B
-    content: '8'
+    content: 8 公分。
   - label: C
-    content: '10'
+    content: 10 公分。
   - label: D
-    content: 12      公分。                                   [3-1]
+    content: 12 公分。
 - id: doc_113_新北_福和_數學_g7s2e2_s1_24
   section: 1
   number: 24
   type: single
   page: 3
-  stem: 愛純與寬植兩人同時從圓形公園步道的不同地點出發,沿著相反方向慢走,兩人走路速率皆 保持不變。當愛純走了60公尺,兩人第一次相遇;當愛純再走90公尺,兩人第二次相遇。
-    若兩人第二次相遇後,寬植再走225公尺,兩人會第三次相遇。則第一次相遇前,寬植走了 多少公尺?
+  stem: 愛純與寬植兩人同時從圓形公園步道的不同地點出發，沿著相反方向慢走，兩人走路速率皆保持不變。當愛純走了 60 公尺，兩人第一次相遇；當愛純再走 90
+    公尺，兩人第二次相遇。若兩人第二次相遇後，寬植再走 225 公尺，兩人會第三次相遇。則第一次相遇前，寬植走了多少公尺？
   options:
   - label: A
-    content: '75'
+    content: 75 公尺。
   - label: B
-    content: '90'
+    content: 90 公尺。
   - label: C
-    content: '150'
+    content: 150 公尺。
   - label: D
-    content: 270    公尺。              (挑戰題)  [3-1]
+    content: 270 公尺。
   assets:
-  - key: p3_f01
+  - key: s1_24_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s2e2/p3_f01.png
+    file: doc_113_新北_福和_數學_g7s2e2/s1_24_f1.png
+    crop:
+      page: 3
+      rect:
+      - 622.63
+      - 301.47
+      - 716.61
+      - 391.0
 - id: doc_113_新北_福和_數學_g7s2e2_s2_1
   section: 2
   number: 1
   type: calc
   page: 3
-  stem: 二元一次方程式4x+ y= 4在坐標平面上所對應的圖形為直線L1 ,二元一次方程式x−y= 6在坐標平面上所對 應的圖形為直線L2。 (1) 設P點為L1及L2的交點,求P點的坐標。(3分)
-    (2) 直線L1 、 L2分別與  y  軸交於Q、R兩點,求三角形PQR的面積。(3分)                          [2-2]
+  stem: (1) 設 $P$ 點為 $L_{1}$ 及 $L_{2}$ 的交點，求 $P$ 點的坐標。(3 分)
+  group_stem: 1. 二元一次方程式 $4x+y=4$ 在坐標平面上所對應的圖形為直線 $L_{1}$，二元一次方程式 $x-y=6$ 在坐標平面上所對應的圖形為直線
+    $L_{2}$。
 - id: doc_113_新北_福和_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: calc
   page: 3
-  stem: 主題:樂高建築的奇蹟 (素養題)                                                                [3-1]
-    樂高積木不僅是玩具,更能用來拼砌出驚人的建築模型。樂高樂園裡的迷你世界就展示了許多按比例縮小的 世界著名地標,完全由樂高積木打造而成。此外,樂高公司也推出了「建築系列」,讓玩家可以在家組裝精緻的地
-    標模型。 (1) 位於馬來西亞樂高樂園的迷你世界中,吉隆坡雙子星塔是亞洲區最受歡迎的模型之一。 雙子星塔真實高度約為452公尺,模型高度設計為9.04公尺。請問此模型高度與真實
-    高度的比例是多少?(以最簡整數比表示)  (3分) (2) 若新加坡魚尾獅的模型是依1:20比例縮小製作,魚尾獅的真實高度約為8.6公尺, 請問樂高模型的魚尾獅高度約為多少公分?
-    (3分) (試題結束,選擇題請將答案畫在答案卡上;計算題請用黑筆寫在答案卷上。) 第3面
+  stem: (2) 直線 $L_{1}$、$L_{2}$ 分別與 $y$ 軸交於 $Q$、$R$ 兩點，求三角形 $PQR$ 的面積。(3 分)
+  group_stem: 1. 二元一次方程式 $4x+y=4$ 在坐標平面上所對應的圖形為直線 $L_{1}$，二元一次方程式 $x-y=6$ 在坐標平面上所對應的圖形為直線
+    $L_{2}$。
+- id: doc_113_新北_福和_數學_g7s2e2_s2_3
+  section: 2
+  number: 3
+  type: calc
+  page: 3
+  stem: (1) 位於馬來西亞樂高樂園的迷你世界中，吉隆坡雙子星塔是亞洲區最受歡迎的模型之一。雙子星塔真實高度約為 452 公尺，模型高度設計為 9.04 公尺。請問此模型高度與真實高度的比例是多少？（以最簡整數比表示）
+    (3 分)
+  group_stem: "2. 主題：樂高建築的奇蹟 (素養題)\n    樂高積木不僅是玩具，更能用來拼砌出驚人的建築模型。樂高樂園裡的迷你世界就展示了許多按比例縮小的世界著名地標，完全由樂高積木打造而成。此外，樂高公司也推出了「建築系列」，讓玩家可以在家組裝精緻的地標模型。"
   assets:
-  - key: p3_f02
+  - key: s2_3_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s2e2/p3_f02.png
-  - key: p3_f03
+    file: doc_113_新北_福和_數學_g7s2e2/s2_3_f1.png
+    crop:
+      page: 3
+      rect:
+      - 581.83
+      - 727.69
+      - 710.05
+      - 852.3
+- id: doc_113_新北_福和_數學_g7s2e2_s2_4
+  section: 2
+  number: 4
+  type: calc
+  page: 3
+  stem: (2) 若新加坡魚尾獅的模型是依 1:20 比例縮小製作，魚尾獅的真實高度約為 8.6 公尺，請問樂高模型的魚尾獅高度約為多少公分？ (3 分)
+  group_stem: "2. 主題：樂高建築的奇蹟 (素養題)\n    樂高積木不僅是玩具，更能用來拼砌出驚人的建築模型。樂高樂園裡的迷你世界就展示了許多按比例縮小的世界著名地標，完全由樂高積木打造而成。此外，樂高公司也推出了「建築系列」，讓玩家可以在家組裝精緻的地標模型。"
+  assets:
+  - key: s2_4_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s2e2/p3_f03.png
-  - key: p3_f04
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e2/p3_f04.png
+    file: doc_113_新北_福和_數學_g7s2e2/s2_4_f1.png
+    crop:
+      page: 3
+      rect:
+      - 581.83
+      - 850.5
+      - 710.05
+      - 975.11

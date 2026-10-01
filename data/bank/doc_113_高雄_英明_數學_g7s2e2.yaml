@@ -1,41 +1,56 @@
 document:
-  semester: 2
-  exam_seq: 2
-  school: 高雄市立英明國中
   grade: 7
   subject: 數學
-  scope_note: 南一版B2 2-2~3-2   ※背面有試題※  一數學1
   academic_year_roc: 113
+  semester: 2
+  exam_seq: 2
   city: 高雄
   school_short: 英明
+  school: 高雄市立英明國中
+  scope_note: 南一版 B2 2-2~3-2
   id: doc_113_高雄_英明_數學_g7s2e2
-  title: 高雄市立英明國中 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 高雄市立英明國中 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:60%(每題4分)
-    count: 13
+    name: 一、選擇題：60%(每題4 分)
+    count: 15
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:30%(每格3分)
+    name: 二、填充題：30%(每格3 分)
     count: 10
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題:10%依每題配分給分
-    count: 2
+    name: 三、計算題：10%依每題配分給分
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-2/高雄/英明.pdf
+  scope:
+    lessons: []
+    publisher: 南一版
+    raw: 南一版 B2 2-2~3-2
+    volume: B2
 questions:
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: (甲) 每100公克價格為25元的魚,魚的重量x公克,其價格為y元; (乙) 一本書中,已閱讀的頁數x頁與未閱讀的頁數y頁; (丙) 購買同一單價的商品,購買數量x與總價錢y的關係。(未有任何折扣);
-    (丁) 圓的半徑x與面積y的關係; (戊) 面積相同的三角形,底x與對應高y的關係; (己) 全班學生30人,平分成x組,每組恰為y人; (庚) 車子的速率固定,車子所花的時間x與行駛的距離y;
-    (辛) 邊長為x的正方形,其周長為y檢視上列所述,請問y與x成正比的有幾個?
+  stem: '(甲) 每100 公克價格為25 元的魚，魚的重量x 公克，其價格為y 元；
+
+    (乙) 一本書中，已閱讀的頁數x 頁與未閱讀的頁數y 頁；
+
+    (丙) 購買同一單價的商品，購買數量x 與總價錢y 的關係。（未有任何折扣）；
+
+    (丁) 圓的半徑x 與面積y 的關係；
+
+    (戊) 面積相同的三角形，底x 與對應高y 的關係；
+
+    (己) 全班學生30 人，平分成x 組，每組恰為y 人；
+
+    (庚) 車子的速率固定，車子所花的時間x 與行駛的距離y；
+
+    (辛) 邊長為x 的正方形，其周長為y
+
+    檢視上列所述，請問y 與x 成正比的有幾個？'
   options:
   - label: A
     content: '3'
@@ -50,43 +65,52 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 在坐標平面上,y=4的圖形是垂直x軸的直線。
+    content: 在坐標平面上，$y=4$ 的圖形是垂直x 軸的直線。
   - label: B
-    content: 方程式x=0的圖形和y軸恰交於一點。
+    content: 方程式$x=0$ 的圖形和y 軸恰交於一點。
   - label: C
-    content: 若x、y皆為正整數,則10 x y + = 的圖形依然是一條直線。
+    content: 若x、y 皆為正整數，則$x+y=10$的圖形依然是一條直線。
   - label: D
-    content: 方程式3 4 9 x y − = 的圖形不通過第二象限。
+    content: 方程式$3x-4y=9$的圖形不通過第二象限。
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 若$\frac{a}{5}$ :$\frac{b}{4}$ =3:2,則下列哪一個式子是錯誤的?
+  stem: 若$\frac{a}{5}:\frac{b}{4}=3:2$，則下列哪一個式子是錯誤的？
   options:
   - label: A
-    content: a:b=15:8
+    content: a：b＝15：8
   - label: B
-    content: $\frac{2a}{5}$ $\frac{3b}{4}$ =
+    content: $\frac{2a}{5}=\frac{3b}{4}$
   - label: C
-    content: 15a=8b
+    content: 15a＝8b
   - label: D
-    content: a:15=b:8。
+    content: a：15＝b：8。
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: '假設a:b有意義,則a:b=? 2 : a ab 。'
+  stem: 假設a：b 有意義，則a：b＝？
+  options:
+  - label: A
+    content: $a^{3}:b^{3}$
+  - label: B
+    content: $ab:b^{2}$
+  - label: C
+    content: $a^{2}:b^{2}$
+  - label: D
+    content: $a^{2}:ab$ 。
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 若直線y=ax+b通過第一、二、四象限,則( b , a )在第幾象限?
+  stem: 若直線$y=ax+b$ 通過第一、二、四象限，則( b , a )在第幾象限？
   options:
   - label: A
     content: 一
@@ -101,31 +125,22 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: '坐標平面上有一直線 :3 4 12 L x y + = 。若有另一直線 : M x a = ,則a的值在下列哪一個範圍時,M與L的交點會在第一象限?
-    3 3 : a b'
+  stem: 坐標平面上有一直線$L:3x+4y=12$。若有另一直線$M:x=a$，則a 的值在下列哪一個範圍時，M 與L 的交點會在第一象限？
   options:
-  - label: B
-    content: '2 : ab b'
-  - label: C
-    content: '2 2 : a b'
-  - label: D
-    content: ''
   - label: A
-    content: ''
-  - label: A
-    content: 3 4 a  
+    content: $3<a<4$
   - label: B
-    content: 4 5 a  
+    content: $4<a<5$
   - label: C
-    content: 1 0 a − 
+    content: $-1<a<0$
   - label: D
-    content: 3 2 a − −
+    content: $-3<a<-2$
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若直線y=ax+b的圖形通過(1,3)、(2,7)及(5,2k+1)三點,則k=? $\frac{15}{2}$ 。
+  stem: 若直線$y=ax+b$ 的圖形通過（1，3）、（2，7）及（5，2k＋1）三點，則k＝？
   options:
   - label: A
     content: '9'
@@ -134,36 +149,60 @@ questions:
   - label: C
     content: '19'
   - label: D
-    content: ''
+    content: $\frac{15}{2}$ 。
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 下列哪一個選項的y與x成反比? x
+  stem: 下列哪一個選項的y 與x 成反比？
+  options:
+  - label: A
+    content: '| x | 9 | 8 | 7 | 6 |
+
+      |---|---|---|---|---|
+
+      | y | 1 | 2 | 3 | 4 |'
+  - label: B
+    content: '| x | 1 | 3 | 5 | 7 |
+
+      |---|---|---|---|---|
+
+      | y | 2 | 4 | 6 | 8 |'
+  - label: C
+    content: '| x | 2 | 4 | 6 | 8 |
+
+      |---|---|---|---|---|
+
+      | y | 12 | 6 | 4 | 3 |'
+  - label: D
+    content: '| x | 1 | 3 | 5 | 7 |
+
+      |---|---|---|---|---|
+
+      | y | 8 | 6 | 4 | 2 | 。'
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 8. 7. 6. y 1. 2. 3. 4. x 1. 3. 5. 7. y 2. 4. 6. 8. x 2. 4. 6. 8. y
-- id: doc_113_高雄_英明_數學_g7s2e2_s1_12
-  section: 1
-  number: 12
-  type: single
-  page: 1
-  stem: 6. 4. 3. x 1. 3. 5. 7. y 8. 6. 4. 2.
+  stem: 已知y 與x 成正比，若當x＝2 時，y＝5，則當y＝120 時，x＝？
   options:
   - label: A
-    content: 9、 已知y與x成正比,若當x=2時,y=5,則當y=120時,x=? $\frac{1}{12}$
+    content: $\frac{1}{12}$
   - label: B
     content: '12'
   - label: C
     content: '24'
   - label: D
     content: 48。
-  - label: A
-    content: ※背面有試題※ 一數學1 10、 哥哥比弟弟大4歲,6年前兄弟倆的年齡比為3:2,請問幾年後兄弟兩人的年齡比為6:5?
+- id: doc_113_高雄_英明_數學_g7s2e2_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: 哥哥比弟弟大4 歲，6 年前兄弟倆的年齡比為3：2，請問幾年後兄弟兩人的年齡比為6：5？
+  options:
   - label: A
     content: '5'
   - label: B
@@ -171,7 +210,15 @@ questions:
   - label: C
     content: '8'
   - label: D
-    content: 無解。 11、 在彈性限度內,彈簧所掛物重的重量與彈簧的伸長量成正比。有一彈簧原長18公分,掛一物重40公 克時,彈簧長變為26公分。若原彈簧改掛一物重100公克,則彈簧長變為幾公分?
+    content: 無解。
+- id: doc_113_高雄_英明_數學_g7s2e2_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 2
+  stem: 在彈性限度內，彈簧所掛物重的重量與彈簧的伸長量成正比。有一彈簧原長18 公分，掛一物重40 公克時，彈簧長變為26 公分。若原彈簧改掛一物重100
+    公克，則彈簧長變為幾公分？
+  options:
   - label: A
     content: '34'
   - label: B
@@ -179,22 +226,28 @@ questions:
   - label: C
     content: '38'
   - label: D
-    content: 40 12、 一條直線高速公路為2x+3y=18,有一個城鎮位於(3,8),現要從城鎮開闢一條快速道路通往高速 公路,此快速道路只能平行x軸或平行y軸開闢,試問如何開闢距離才會最短?
+    content: '40'
+- id: doc_113_高雄_英明_數學_g7s2e2_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 2
+  stem: 一條直線高速公路為2x＋3y＝18，有一個城鎮位於（3，8），現要從城鎮開闢一條快速道路通往高速公路，此快速道路只能平行x 軸或平行y 軸開闢，試問如何開闢距離才會最短？
+  options:
   - label: A
-    content: 向下4個單位
+    content: 向下4 個單位
   - label: B
-    content: 向左6個單位
+    content: 向左6 個單位
   - label: C
-    content: 向上4個單位
+    content: 向上4 個單位
   - label: D
-    content: 向右6個單位。
+    content: 向右6 個單位。
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 圖(一)為一張正面白色,反面灰色的長方形紙片。今沿虛線剪下分成甲、乙兩長方形紙片,並將甲紙 片反面朝上黏貼於乙紙片上,形成一張白、灰相間的長方形紙片,如圖(二)所示。若圖(二)中白色與灰
-    色區域的面積比為9:4,圖(二)紙片的面積為39,則圖(一)紙片的面積為何? 圖(一)                   圖(二)
+  stem: 圖(一)為一張正面白色，反面灰色的長方形紙片。今沿虛線剪下分成甲、乙兩長方形紙片，並將甲紙片反面朝上黏貼於乙紙片上，形成一張白、灰相間的長方形紙片，如圖(二)所示。若圖(二)中白色與灰色區域的面積比為9：4，圖(二)紙片的面積為39，則圖(一)紙片的面積為何？
   options:
   - label: A
     content: '43'
@@ -205,33 +258,37 @@ questions:
   - label: D
     content: 66。
   assets:
-  - key: p2_f01
+  - key: s1_13_f1
     kind: figure
-    file: doc_113_高雄_英明_數學_g7s2e2/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_113_高雄_英明_數學_g7s2e2/p2_f02.png
+    file: doc_113_高雄_英明_數學_g7s2e2/s1_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 161.4
+      - 309.73
+      - 457.21
+      - 356.94
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 有甲、乙兩個相同杯子,各裝有不等量的水。若將甲杯中的 $\frac{3}{10}$ 水倒入乙杯且無溢出,此時甲、乙兩杯 水量的比例為3:4,試求原本甲、乙兩杯水量的比為何?
+  stem: 有甲、乙兩個相同杯子，各裝有不等量的水。若將甲杯中的$\frac{3}{10}$ 水倒入乙杯且無溢出，此時甲、乙兩杯水量的比例為3：4，試求原本甲、乙兩杯水量的比為何？
   options:
   - label: A
-    content: '5:4'
+    content: 5：4
   - label: B
-    content: '8:5'
+    content: 8：5
   - label: C
-    content: '16:9'
+    content: 16：9
   - label: D
-    content: '30:19'
+    content: 30：19
 - id: doc_113_高雄_英明_數學_g7s2e2_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 小程在雜技表演中,自行車(腳踏車)的後輪較小、前輪較大,且後輪與前輪的半徑比為4:7,小程騎 此臺自行車表演,若後輪轉了196圈,那麼此時前輪轉了多少圈??
+  stem: 小程在雜技表演中，自行車(腳踏車)的後輪較小、前輪較大，且後輪與前輪的半徑比為4：7，小程騎此臺自行車表演，若後輪轉了196 圈，那麼此時前輪轉了多少圈？？
   options:
   - label: A
     content: '343'
@@ -246,73 +303,90 @@ questions:
   number: 1
   type: fill
   page: 2
-  stem: 若方程式y ax b = + 通過點( 5 , 7 )且與y軸垂直,則此方程式為   (1)
+  stem: 若方程式$y=ax+b$ 通過點( 5 , 7 )且與y 軸垂直，則此方程式為 (1)
 - id: doc_113_高雄_英明_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 若x:y=2:3,且5x+3y=57,則(2x-1):(2y+1)的比值為    (2)   。
+  stem: 若x：y＝2：3，且5x＋3y＝57，則（2x－1）：（2y＋1）的比值為 (2) 。
 - id: doc_113_高雄_英明_數學_g7s2e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 若方程式 ( ) 3 2 y a x a = + + −的圖形只通過兩個象限,則a為   (3)    。
+  stem: 若方程式$y=(a+3)x+a-2$ 的圖形只通過兩個象限，則a 為 (3) 。
 - id: doc_113_高雄_英明_數學_g7s2e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 已知x與y成正比,y與z成正比,若當x=8時,y=40,z=4,則當z=10時,x=    (4)   。
+  stem: 已知x 與y 成正比，y 與z 成正比，若當x＝8 時，y＝40，z＝4，則當z＝10 時，x＝ (4) 。
 - id: doc_113_高雄_英明_數學_g7s2e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 英明國中畢業旅行至九族文化村,參加樂園中原住民表演劇場,劇場中原本的男、女生比為7:5。 若後來進來23個人,其中女生有12人,則最後男、女生的比變成4:3,則原本劇場中有   (5)   人。
+  stem: 英明國中畢業旅行至九族文化村，參加樂園中原住民表演劇場，劇場中原本的男、女生比為7：5。 若後來進來23 個人，其中女生有12 人，則最後男、女生的比變成4：3，則原本劇場中有
+    (5) 人。
 - id: doc_113_高雄_英明_數學_g7s2e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 灰貓宅配通今天有一批貨物需要運送,如果每次運送60件貨物(不論大小),需30次才能運送完,而且 每次運送來回需要6分鐘,從下午2:00開始運送。若希望在下午4:00就完成運送,則每次運送貨
-    物應改為   (6)  件。
+  stem: 灰貓宅配通今天有一批貨物需要運送，如果每次運送60 件貨物(不論大小)，需30 次才能運送完，而且 每次運送來回需要6 分鐘，從下午2：00 開始運送。若希望在下午4：00
+    就完成運送，則每次運送貨 物應改為 (6) 件。
 - id: doc_113_高雄_英明_數學_g7s2e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 在坐標平面上,將方程式3x+5y-8=0的圖形向右平移5個單位,再向下平移6個單位,可得到新的 直線方程式的圖形,則新的直線方程式為    (7)    。
+  stem: 在坐標平面上，將方程式3x＋5y－8＝0 的圖形向右平移5 個單位，再向下平移6 個單位，可得到新的 直線方程式的圖形，則新的直線方程式為 (7)
+    。
 - id: doc_113_高雄_英明_數學_g7s2e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 已知( ) 3 x + 與( ) 2 y + 成反比,當x=4時,y=6,則x=6時,y=為    (8)    。 ※請接第二張※ 一數學2
+  stem: 已知$(x+3)$ 與$(y+2)$ 成反比，當x＝4 時，y＝6，則x＝6 時，y＝為 (8) 。
 - id: doc_113_高雄_英明_數學_g7s2e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 3
-  stem: 若點在直線2x+y=3上,且與x軸與y軸的距離相等,則滿足此條件的點之坐標為    (9)   。
+  stem: 若點在直線2x＋y＝3 上，且與x 軸與y 軸的距離相等，則滿足此條件的點之坐標為 (9) 。
 - id: doc_113_高雄_英明_數學_g7s2e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 3
-  stem: 已知有大、小兩種瓶子與A、B兩桶汽水,且大、小瓶子的容量比為7:3,A、B兩桶汽水的體積比為3:5。若A桶內的汽水恰可裝滿36個大瓶子,則B桶內的汽水恰可裝滿   (10)  個小瓶子。
+  stem: 已知有大、小兩種瓶子與A、B 兩桶汽水，且大、小瓶子的容量比為7：3，A、B 兩桶汽水的體積比為 3：5。若A 桶內的汽水恰可裝滿36 個大瓶子，則B
+    桶內的汽水恰可裝滿 (10) 個小瓶子。
 - id: doc_113_高雄_英明_數學_g7s2e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 3
-  stem: '已知某校男、女生共有1800人,且男、女生人數的比為5:4,問: (1)若男生人數不變,欲使男、女人數的比為4:5,則女生應增加多少人?(2分)
-    (2)若男、女生按2:3的比例增加,則當男、女生人數相等時,全校共有多少人?(3分)'
+  stem: (1)若男生人數不變，欲使男、女人數的比為4：5，則女生應增加多少人？(2 分)
+  group_stem: 1、已知某校男、女生共有1800 人，且男、女生人數的比為5：4，問：
 - id: doc_113_高雄_英明_數學_g7s2e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 3
-  stem: '坐標平面上有三條直線 : 7 L x y − = 、 :2 5 M x y + = 、 : 1 N x = −分別相交於A、B、C三點,則: (1)直線L及M交於A點,求A點坐標為何?(2分)
-    (2)所圍成的ABC面積為多少平方單位?(3分) ※試題結束※ 一數學3'
+  stem: (2)若男、女生按2：3 的比例增加，則當男、女生人數相等時，全校共有多少人？(3 分)
+  group_stem: 1、已知某校男、女生共有1800 人，且男、女生人數的比為5：4，問：
+- id: doc_113_高雄_英明_數學_g7s2e2_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 3
+  stem: (1)直線L 及M 交於A 點，求A 點坐標為何？(2 分)
+  group_stem: '2、坐標平面上有三條直線$L: x-y=7$、$M: 2x+y=5$、$N: x=-1$分別相交於A、B、C 三點，則：'
+- id: doc_113_高雄_英明_數學_g7s2e2_s3_4
+  section: 3
+  number: 4
+  type: calc
+  page: 3
+  stem: (2)所圍成的△ABC 面積為多少平方單位？(3 分)
+  group_stem: '2、坐標平面上有三條直線$L: x-y=7$、$M: 2x+y=5$、$N: x=-1$分別相交於A、B、C 三點，則：'

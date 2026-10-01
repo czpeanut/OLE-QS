@@ -1,60 +1,100 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 3
-  school: 新北市立江翠國民中學
-  grade: 7
-  subject: 數學
-  scope_note: 康軒版第一冊第3章第1節~第3章第3節  2. 本試卷共3頁(雙面印刷)  3. 全部試題共24題,全為選擇題。請用2B
   city: 新北
   school_short: 江翠
+  school: 新北市立江翠國民中學
+  scope_note: 康軒版第一冊第 3 章第 1 節～第 3 章第 3 節
   id: doc_113_新北_江翠_數學_g7s1e3
-  title: 新北市立江翠國民中學 113學年度第1學期第3次定期評量7年級數學科試題
+  title: 新北市立江翠國民中學 113學年度第1學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第3次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(1~8題 每題5分,9~22題 每題4分,23~24題 每題2分,共100分)
     count: 24
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-3/新北/江翠.pdf
+  scope:
+    lessons:
+    - number: 第3章第1節
+      title: null
+    - number: 第3章第2節
+      title: null
+    - number: 第3章第3節
+      title: null
+    publisher: 康軒版
+    raw: 康軒版第一冊第 3 章第 1 節～第 3 章第 3 節
+    volume: 第一冊
 questions:
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_1
   section: 1
   number: 1
-  type: fill
+  type: single
   page: 1
-  stem: 範圍:康軒版第一冊第3章第1節~第3章第3節
+  stem: 若 x=1，則下列哪一個式子的運算結果其值最大？
+  options:
+  - label: A
+    content: 8-3x
+  - label: B
+    content: -x+7
+  - label: C
+    content: 5x+4
+  - label: D
+    content: -6(x-3)
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_2
   section: 1
   number: 2
-  type: fill
+  type: single
   page: 1
-  stem: 本試卷共3頁(雙面印刷)
+  stem: 下列哪一個選項可算出方程式 7+m÷3=16 的解？
+  options:
+  - label: A
+    content: m=16-7÷3
+  - label: B
+    content: m=(16-7)÷3
+  - label: C
+    content: m=(16-7)×3
+  - label: D
+    content: m=16÷3+7
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_3
   section: 1
   number: 3
-  type: fill
+  type: single
   page: 1
-  stem: 全部試題共24題,全為選擇題。請用2B鉛筆將各題正確答案依題號畫記在答案卡上,否則不予計分。
+  stem: 下列何者不是一元一次方程式？
+  options:
+  - label: A
+    content: 2x=0
+  - label: B
+    content: x÷3=7x+6
+  - label: C
+    content: 2x+10
+  - label: D
+    content: x+5=-9
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 下列哪一個是方程式9x=5x的解?
+  stem: 下列哪一個是方程式 9x=5x 的解？
   options:
   - label: A
-    content: ''
+    content: $\frac{9}{5}$
+  - label: B
+    content: $\frac{5}{9}$
   - label: C
     content: 此題無解
   - label: D
-    content: 0                        【課本3-2】
+    content: '0'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 下列哪一個方程式的解與0.3x-0.5=0.2x+3的解相同?
+  stem: 下列哪一個方程式的解與 0.3x-0.5=0.2x+3 的解相同？
   options:
   - label: A
     content: 3x-5=2x+3
@@ -63,13 +103,13 @@ questions:
   - label: C
     content: 3x-0.5=2x+3
   - label: D
-    content: 3x-50=2x+30                                                   【習作3綜】
+    content: 3x-50=2x+30
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 化簡-2(3x-5)+3(-x-1)=? 可得下列何式?
+  stem: 化簡 -2(3x-5)+3(-x-1)=? 可得下列何式？
   options:
   - label: A
     content: -9x+7
@@ -78,13 +118,13 @@ questions:
   - label: C
     content: 9x-13
   - label: D
-    content: -5x+7      【課本3-1】
+    content: -5x+7
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 若650x=100x-800,則11x=?
+  stem: 若 650x=100x-800，則 11x=?
   options:
   - label: A
     content: '-12'
@@ -93,13 +133,13 @@ questions:
   - label: C
     content: '-20'
   - label: D
-    content: -25                          【習作3綜】
+    content: '-25'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 已知甲數減16等於甲數的4倍少1,試求甲數是多少?
+  stem: 已知甲數減 16 等於甲數的 4 倍少 1，試求甲數是多少？
   options:
   - label: A
     content: '-5'
@@ -108,29 +148,28 @@ questions:
   - label: C
     content: '-7'
   - label: D
-    content: 9          【課本3-3】 m
-  - label: B
-    content: $\frac{1}{6}$ $\frac{3}{10}$
+    content: '9'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 小翠以六折優惠的價錢買了一件衣服,花了m元,小翠可較原價省多少錢?
+  stem: 小翠以六折優惠的價錢買了一件衣服，花了 m 元，小翠可較原價省多少錢？
   options:
   - label: A
-    content: m $\frac{2}{3}$
+    content: $\frac{3}{10}$m
+  - label: B
+    content: $\frac{1}{6}$m
   - label: C
     content: m-60
   - label: D
-    content: m                                                                    【課本3-1】
-      $\frac{11−7x}{3}$ $\frac{−2+3x}{4}$
+    content: $\frac{2}{3}$m
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 若 與 互為相反數,則x=?
+  stem: 若 $\frac{11-7x}{3}$ 與 $\frac{-2+3x}{4}$ 互為相反數，則 x=?
   options:
   - label: A
     content: '2'
@@ -139,29 +178,28 @@ questions:
   - label: C
     content: '8'
   - label: D
-    content: 10                          【習作3-2】 $\frac{−x+4}{3}$ $\frac{2x−1}{2}$
-      $\frac{−8x+11}{6}$ $\frac{3x−2}{5}$
+    content: '10'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 將 - 化簡後,可得到下列哪一個式子?
+  stem: 將 $\frac{-x+4}{3}-\frac{2x-1}{2}$ 化簡後，可得到下列哪一個式子？
   options:
   - label: A
-    content: ''
+    content: $\frac{-8x+11}{6}$
   - label: B
     content: -8x+13
   - label: C
-    content: ''
+    content: $\frac{3x-2}{5}$
   - label: D
-    content: 5x-14                                                                           【習作3-1】
+    content: 5x-14
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: 已知x的一元一次方程式5(x+2)=2x-2與3x+8=nx-12的解相同,則n=?
+  stem: 已知 x 的一元一次方程式 5(x+2)=2x-2 與 3x+8=nx-12 的解相同，則 n=?
   options:
   - label: A
     content: '3'
@@ -170,14 +208,14 @@ questions:
   - label: C
     content: '-2'
   - label: D
-    content: -4                                                                               【習作3-2】
-      〔背面尚有試題〕 1新北市立江翠國民中學113學年度第一學期第3次定期考查七年級數學科試題卷  P.2
+    content: '-4'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 小翠抽屜裡有一些硬幣,其中10元硬幣的個數是50元硬幣的3倍,50元硬幣的總錢數比10元硬幣 的總錢數多80元。請問抽屜裡有幾個50元硬幣?
+  stem: 小翠抽屜裡有一些硬幣，其中 10 元硬幣的個數是 50 元硬幣的 3 倍，50 元硬幣的總錢數比 10 元硬幣的總錢數多 80 元。請問抽屜裡有幾個
+    50 元硬幣？
   options:
   - label: A
     content: 不合理
@@ -186,13 +224,13 @@ questions:
   - label: C
     content: '4'
   - label: D
-    content: 8           【習作3-3】
+    content: '8'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 若x=3為9-〔3x-(a+x)〕=4的解,則a=?
+  stem: 若 x=3 為 9-〔3x-(a+x)〕=4 的解，則 a=?
   options:
   - label: A
     content: '8'
@@ -201,13 +239,13 @@ questions:
   - label: C
     content: '3'
   - label: D
-    content: 1                    【課本3-2】
+    content: '1'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 已知a m÷a n=a m-n,若5 6x=5 8x÷5 4,則x=?
+  stem: 已知 $a^{m}\div a^{n}=a^{m-n}$，若 $5^{6x}=5^{8x}\div 5^{4}$，則 x=?
   options:
   - label: A
     content: '1'
@@ -216,14 +254,14 @@ questions:
   - label: C
     content: '6'
   - label: D
-    content: 10                       【習作3綜】
+    content: '10'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 小翠所使用的手機費率計算方式如下:「月租費200元可抵通話費300秒,超過300秒的部分, 每秒以0.4元計算。」現有另一T電信業者,推出免月租費的新方案,但每秒通話費0.5元。
-    則小翠每月通話時間幾秒時,T電信業者的新方案會和原來費率計算方式的價錢相同?           【習作3綜】
+  stem: 小翠所使用的手機費率計算方式如下：「月租費 200 元可抵通話費 300 秒，超過 300 秒的部分，每秒以 0.4 元計算。」現有另一 T 電信業者，推出免月租費的新方案，但每秒通話費
+    0.5 元。則小翠每月通話時間幾秒時，T 電信業者的新方案會和原來費率計算方式的價錢相同？
   options:
   - label: A
     content: '950'
@@ -238,8 +276,8 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 已知小翠每天都會買2杯相同價格的咖啡,自從環保政策公告後,小翠每次買咖啡都會自備環保杯, 每杯可以省下5元,若未自備環保杯買40天咖啡的費用剛好與自備環保杯買45天咖啡的費用相同,
-    則小翠買的咖啡一杯原價多少元?
+  stem: 已知小翠每天都會買 2 杯相同價格的咖啡，自從環保政策公告後，小翠每次買咖啡都會自備環保杯，每杯可以省下 5 元，若未自備環保杯買 40 天咖啡的費用剛好與自備環保杯買
+    45 天咖啡的費用相同，則小翠買的咖啡一杯原價多少元？
   options:
   - label: A
     content: '35'
@@ -248,13 +286,13 @@ questions:
   - label: C
     content: '45'
   - label: D
-    content: 52                          【課本3-3】
+    content: '52'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 如右圖,四邊形ACEF為一長方形,已知三角形BDF的面積為22,則BC̅̅̅̅線段長=?                 【課本3-3】
+  stem: 如右圖，四邊形 $ACEF$ 為一長方形，已知三角形 $BDF$ 的面積為 22，則 $\overline{BC}$ 線段長=?
   options:
   - label: A
     content: '0.8'
@@ -265,15 +303,23 @@ questions:
   - label: D
     content: '3'
   assets:
-  - key: p2_f01
+  - key: s1_18_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s1e3/p2_f01.png
+    file: doc_113_新北_江翠_數學_g7s1e3/s1_18_f1.png
+    crop:
+      page: 2
+      rect:
+      - 463.71
+      - 537.67
+      - 609.4
+      - 669.49
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 有一個整數,若我們將這個整數減6後乘以6,再加6後除以6,所得的結果還是6。試問如果 你把這個整數減8後乘以8,再加8後除以8,所得的結果是多少?
+  stem: 有一個整數，若我們將這個整數減 6 後乘以 6，再加 6 後除以 6，所得的結果還是 6。試問如果你把這個整數減 8 後乘以 8，再加 8 後除以
+    8，所得的結果是多少？
   options:
   - label: A
     content: '4'
@@ -282,13 +328,14 @@ questions:
   - label: C
     content: '8'
   - label: D
-    content: 12     【3-3】
+    content: '12'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_20
   section: 1
   number: 20
   type: single
   page: 2
-  stem: 如圖為O、P、Q、R四點在數線上的位置圖,其中O為原點,且PR̅̅̅̅=5,OQ̅̅̅̅=OR̅̅̅̅。若P點所表示的數為x, 則Q點所表示的數為何(以x表示)?
+  stem: 如圖為 O、P、Q、R 四點在數線上的位置圖，其中 O 為原點，且 $\overline{PR}=5$，$\overline{OQ}=\overline{OR}$。若
+    P 點所表示的數為 $x$，則 Q 點所表示的數為何(以 x 表示)？
   options:
   - label: A
     content: -x-5
@@ -297,19 +344,25 @@ questions:
   - label: C
     content: -x+20
   - label: D
-    content: 3x+5                                                  【3-1】 〔背面尚有試題〕
-      2新北市立江翠國民中學113學年度第一學期第3次定期考查七年級數學科試題卷  P.3
+    content: 3x+5
   assets:
-  - key: p2_f02
+  - key: s1_20_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s1e3/p2_f02.png
+    file: doc_113_新北_江翠_數學_g7s1e3/s1_20_f1.png
+    crop:
+      page: 2
+      rect:
+      - 307.81
+      - 805.93
+      - 460.78
+      - 843.85
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_21
   section: 1
   number: 21
   type: single
   page: 3
-  stem: 右圖中有八個格子,小翠在第1個格子內填入8,第6個格子內填入8 x-3 x-3,如果她要使每個相鄰的三個格子內所填的數字和都是19,則 第5個格子內應填入什麼數(以x表示)
-    ?
+  stem: 右圖中有八個格子，小翠在第 1 個格子內填入 8，第 6 個格子內填入 x-3，如果她要使每個相鄰的三個格子內所填的數字和都是 19，則第 5 個格子內應填入什麼數(以
+    x 表示) ？
   options:
   - label: A
     content: 5-2x
@@ -318,14 +371,36 @@ questions:
   - label: C
     content: 14-x
   - label: D
-    content: 16+3x             【3-2】
+    content: 16+3x
+  assets:
+  - key: s1_21_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g7s1e3/s1_21_f1.png
+    crop:
+      page: 3
+      rect:
+      - 450.6
+      - 78.54
+      - 674.24
+      - 110.27
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_22
   section: 1
   number: 22
   type: single
   page: 3
-  stem: 五福村樂園場地分成動物區與遊樂區兩區,右表為兩種參觀方式與所需的門票費用。 參觀方式 門票費用 兩區皆參觀500元 僅參觀其中 一區300元 已知七年九班同學皆從這兩種方式中選擇一種,進入動物區有12人,進入遊樂區
-    有20人。若七年九班門票總花費為8600元,則七年九班共有多少人?
+  stem: '五福村樂園場地分成動物區與遊樂區兩區，右表為兩種參觀方式與所需的門票費用。
+
+
+    | 參觀方式 | 門票費用 |
+
+    | --- | --- |
+
+    | 兩區皆參觀 | 500 元 |
+
+    | 僅參觀其中一區 | 300 元 |
+
+
+    已知七年九班同學皆從這兩種方式中選擇一種，進入動物區有 12 人，進入遊樂區有 20 人。若七年九班門票總花費為 8600 元，則七年九班共有多少人？'
   options:
   - label: A
     content: '18'
@@ -334,14 +409,14 @@ questions:
   - label: C
     content: '26'
   - label: D
-    content: 32                                                       【習作3綜】
+    content: '32'
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_23
   section: 1
   number: 23
   type: single
   page: 3
-  stem: 右圖為某超商促銷活動內容,今小翠到該超商拿相差6元的2種飯糰各1個 結帳時,店員說:「要不要多買2瓶指定飲料?搭配促銷活動後2組優惠 價的金額,只比你買2個飯糰的金額多18元。」若小翠只多買1瓶指定飲料,且店員會以對消費者最便宜的
-    方式結帳,則與原來只買2個飯糰價格相比,他要多付多少元?
+  stem: 右圖為某超商促銷活動內容，今小翠到該超商拿相差 6 元的 2 種飯糰各 1 個結帳時，店員說：「要不要多買 2 瓶指定飲料？搭配促銷活動後 2 組優惠價的金額，只比你買
+    2 個飯糰的金額多 18 元。」若小翠只多買 1 瓶指定飲料，且店員會以對消費者最便宜的方式結帳，則與原來只買 2 個飯糰價格相比，他要多付多少元？
   options:
   - label: A
     content: '5'
@@ -350,18 +425,25 @@ questions:
   - label: C
     content: '8'
   - label: D
-    content: 11 【仿110會考】
+    content: '11'
   assets:
-  - key: p3_f01
+  - key: s1_23_f1
     kind: figure
-    file: doc_113_新北_江翠_數學_g7s1e3/p3_f01.png
+    file: doc_113_新北_江翠_數學_g7s1e3/s1_23_f1.png
+    crop:
+      page: 3
+      rect:
+      - 516.89
+      - 428.31
+      - 677.15
+      - 522.98
 - id: doc_113_新北_江翠_數學_g7s1e3_s1_24
   section: 1
   number: 24
   type: single
   page: 3
-  stem: 有一列火車以時速200公里從起站出發,出發30分鐘後,火車發生故障緊急靠站維修15分鐘,維修後繼續 $\frac{3}{4}$ 出發,此時速度只剩原來速度的
-    ,火車到達終點站共誤點49分鐘,則火車從起點到終點共行駛多少公里?
+  stem: 有一列火車以時速 200 公里從起站出發，出發 30 分鐘後，火車發生故障緊急靠站維修 15 分鐘，維修後繼續出發，此時速度只剩原來速度的 $\frac{3}{4}$，火車到達終點站共誤點
+    49 分鐘，則火車從起點到終點共行駛多少公里？
   options:
   - label: A
     content: '280'
@@ -370,5 +452,4 @@ questions:
   - label: C
     content: '400'
   - label: D
-    content: 440   公里                                                 【3-3】 〔試題結束〕
-      3
+    content: '440'

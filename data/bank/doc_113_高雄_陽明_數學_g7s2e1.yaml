@@ -1,114 +1,115 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 1
-  school: 高雄市立陽明國中
-  grade: 7
-  subject: 數學
   city: 高雄
   school_short: 陽明
+  school: 高雄市立陽明國中
   id: doc_113_高雄_陽明_數學_g7s2e1
-  title: 高雄市立陽明國中 113學年度第2學期第1次定期評量7年級數學科試題
+  title: 高雄市立陽明國中 113學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:每題4分,共40分
+    name: 一、選擇題：每題4 分，共40 分
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:每格3分,共42分
+    name: 二、填充題：每格3 分，共42 分
     count: 8
   - ord: 3
-    name: 三、綜合題
-    type: fill
-    score_rule: 三、綜合題:每題6分,共18分(請於答案卷上作答,沒有計算過程,不予計分)
+    name: 三、綜合題：每題6 分，共18 分(請於答案卷上作答，沒有計算過程，不予計分)
     count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/高雄/陽明.pdf
 questions:
 - id: doc_113_高雄_陽明_數學_g7s2e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 請問x= −3,y= 1為下列哪一個二元一次方程式的解?
+  stem: 請問 $x = -3$ ， $y = 1$ 為下列哪一個二元一次方程式的解？
   options:
   - label: A
-    content: x+ 4y= −2
+    content: $x + 4y = -2$
   - label: B
-    content: −x+ 4y= 1
+    content: $-x + 4y = 1$
   - label: C
-    content: −2x+ 3y= −3
+    content: $-2x + 3y = -3$
   - label: D
-    content: −2x−3y= 3
+    content: $-2x - 3y = 3$
 - id: doc_113_高雄_陽明_數學_g7s2e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 關於式子「−10 −7x−3y」的敘述,下列何者正確?
+  stem: 關於式子「$-10 - 7x - 3y$」的敘述，下列何者正確?
   options:
   - label: A
     content: 此為二元一次方程式
   - label: B
-    content: x項的係數為−7x
+    content: $x$ 項的係數為 $-7x$
   - label: C
-    content: 常數項為10
+    content: 常數項為 10
   - label: D
-    content: y項的係數為−3
+    content: $y$ 項的係數為 $-3$
 - id: doc_113_高雄_陽明_數學_g7s2e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 解二元一次聯立方程式{73x+ 4y= 11 73x= 19 −2y,得y =? $\frac{4}{3}$
+  stem: 解二元一次聯立方程式 $\begin{cases} 73x + 4y = 11 \\ 73x = 19 - 2y \end{cases}$ ，得 $y
+    = ?$
   options:
-  - label: D
-    content: $\frac{5}{3}$
   - label: A
     content: '5'
   - label: B
-    content: −4
+    content: '-4'
   - label: C
-    content: 5x−y= 5
+    content: $\frac{4}{3}$
+  - label: D
+    content: $\frac{5}{3}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 86%）
 - id: doc_113_高雄_陽明_數學_g7s2e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 若二元一次聯立方程式{ x的解為x= a,y= b, 則a+ b之值為何? $\frac{1}{6}$ y= $\frac{36}{29}$
+  stem: 若二元一次聯立方程式 $\begin{cases} 5x - y = 5 \\ y = \frac{1}{6}x \end{cases}$ 的解為
+    $x = a$ ， $y = b$ , 則 $a + b$ 之值為何？
   options:
+  - label: A
+    content: $\frac{36}{29}$
   - label: B
     content: $\frac{5}{29}$
   - label: C
     content: $\frac{30}{29}$
   - label: D
     content: $\frac{35}{29}$
-  - label: A
-    content: ''
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 89%）
 - id: doc_113_高雄_陽明_數學_g7s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 爸爸叫明陽到飲料店買3杯奶茶和5杯綠茶,但明陽記錯數量,結果買成5杯奶茶和3杯綠茶,已知一杯奶茶比一杯綠茶多10元,請問明陽買錯杯數的總價格比爸爸原本要
-    買的杯數總價格多或少幾元?
+  stem: 爸爸叫明陽到飲料店買 3 杯奶茶和 5 杯綠茶，但明陽記錯數量，結果買成 5 杯奶茶和 3 杯綠茶，已知一杯奶茶比一杯綠茶多 10 元，請問明陽買錯杯數的總價格比爸爸原本要買的杯數總價格多或少幾元？
   options:
   - label: A
-    content: 多20元
+    content: 多 20 元
   - label: B
-    content: 多10元
+    content: 多 10 元
   - label: C
-    content: 少20元
+    content: 少 20 元
   - label: D
-    content: 少10元
+    content: 少 10 元
 - id: doc_113_高雄_陽明_數學_g7s2e1_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 小陽參加一個108人的營隊,要進行分組,分組的人數為5人一組或6人一組,請問總 共有幾種分組方式?
+  stem: 小陽參加一個 108 人的營隊，要進行分組，分組的人數為 5 人一組或 6 人一組，請問總共有幾種分組方式？
   options:
   - label: A
     content: '3'
@@ -123,26 +124,33 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 如右圖(一)的坐標平面上有A、B、C、D四點,根據圖(一)中各點位置判 斷,哪一個點在第三象限?
+  stem: 如右圖(一)的坐標平面上有 A、B、C、D 四點，根據圖(一)中各點位置判斷，哪一個點在第三象限？
   options:
   - label: A
-    content: A點
+    content: A 點
   - label: B
-    content: B點
+    content: B 點
   - label: C
-    content: C點
+    content: C 點
   - label: D
-    content: D點 圖(一)
+    content: D 點
   assets:
-  - key: p1_f01
+  - key: s1_7_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e1/p1_f01.png
+    file: doc_113_高雄_陽明_數學_g7s2e1/s1_7_f1.png
+    crop:
+      page: 1
+      rect:
+      - 610.19
+      - 548.09
+      - 698.34
+      - 658.25
 - id: doc_113_高雄_陽明_數學_g7s2e1_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 坐標平面上一點P(a, b)在第三象限,則(a+ b, b)為第幾象限?
+  stem: 坐標平面上一點 $P(a, b)$ 在第三象限，則 $(a + b, b)$ 為第幾象限？
   options:
   - label: A
     content: 第一象限
@@ -157,111 +165,147 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 右圖(二)的坐標平面上有一點(3, 3)與另外四點A、B、C、D,根據圖中各 點的位置判斷,下列哪一點的坐標最可能是(2,1)?
+  stem: 右圖(二)的坐標平面上有一點(3, 3)與另外四點 A、B、C、D，根據圖中各點的位置判斷，下列哪一點的坐標最可能是(2,1)？
   options:
   - label: A
-    content: A點
+    content: A 點
   - label: B
-    content: B點
+    content: B 點
   - label: C
-    content: C點
+    content: C 點
   - label: D
-    content: D點 圖(二)
+    content: D 點
   assets:
-  - key: p1_f02
+  - key: s1_9_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e1/p1_f02.png
+    file: doc_113_高雄_陽明_數學_g7s2e1/s1_9_f1.png
+    crop:
+      page: 1
+      rect:
+      - 614.56
+      - 671.92
+      - 715.82
+      - 805.82
 - id: doc_113_高雄_陽明_數學_g7s2e1_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 承上題,已知派出所、公園分別標示在坐標平面上的(0,0)、(3,3),由派出所往東150公 尺再往北150公尺可以走到公園。若小陽從公園出發,先往東方走450公尺,再往南走300公尺可走到膜斯漢堡店,請問膜斯漢堡店在坐標平面上的坐標為何?
+  stem: 承上題，已知派出所、公園分別標示在坐標平面上的(0,0)、(3,3)，由派出所往東 150 公尺再往北 150 公尺可以走到公園。若小陽從公園出發，先往東方走
+    450 公尺，再往南走 300 公尺可走到膜斯漢堡店，請問膜斯漢堡店在坐標平面上的坐標為何?
   options:
   - label: A
-    content: (12,−3)
+    content: (12，−3)
   - label: B
-    content: (9,−6)
+    content: (9，−6)
   - label: C
-    content: (9,−3)
+    content: (9，−3)
   - label: D
-    content: (12,−6) 【P.1,共3頁】
-  group_stem: （第 9 題）右圖(二)的坐標平面上有一點(3, 3)與另外四點A、B、C、D,根據圖中各 點的位置判斷,下列哪一點的坐標最可能是(2,1)?
+    content: (12，−6)
+  group_stem: （第 9 題）右圖(二)的坐標平面上有一點(3, 3)與另外四點 A、B、C、D，根據圖中各點的位置判斷，下列哪一點的坐標最可能是(2,1)？
 - id: doc_113_高雄_陽明_數學_g7s2e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: '化簡下列各式: (1)(−4x−2y−7) + (2x+ 9y−5) =        。 (2)(7x−5y−13) −(−2x+ 11y−7)
-    =    2    。 (3)−4(2x−3y+ 2) −2(3x−11y) =    3    。 $\frac{2}{5}$ (2x−3y) − $\frac{1}{3}$
-    (2x+ 4) =    4    。 (4)'
+  stem: '化簡下列各式:
+
+    (1) $(-4x - 2y - 7) + (2x + 9y - 5) =$ ① 。
+
+    (2) $(7x - 5y - 13) - (-2x + 11y - 7) =$ ② 。
+
+    (3) $-4(2x - 3y + 2) - 2(3x - 11y) =$ ③ 。
+
+    (4) $\frac{2}{5}(2x - 3y) - \frac{1}{3}(2x + 4) =$ ④ 。'
 - id: doc_113_高雄_陽明_數學_g7s2e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 解下列二元一次聯立方程式:(每小題全對才給分) (1){x= −3y x−2y= −15,則x、y的值為  5  。 (2) { x−2y= 1 2x+
-    3y= −5,則x、y的值為  6  。 (3) { 5x+ 2y= 3x−y x+ 3y−4 = −y+ 1,則x、y的值為  7  。 x−8y= −7
-    $\frac{1}{5}$ ,則x、y的值為  8  。 (4) { x+ $\frac{1}{3}$ y= − $\frac{10}{3}$
+  stem: '解下列二元一次聯立方程式:(每小題全對才給分)
+
+    (1) $\begin{cases} x = -3y \\ x - 2y = -15 \end{cases}$ ，則 $x$ 、 $y$ 的值為 ⑤ 。
+
+    (2) $\begin{cases} x - 2y = 1 \\ 2x + 3y = -5 \end{cases}$ ，則 $x$ 、 $y$ 的值為 ⑥
+    。
+
+    (3) $\begin{cases} 5x + 2y = 3x - y \\ x + 3y - 4 = -y + 1 \end{cases}$ ，則 $x$
+    、 $y$ 的值為 ⑦ 。
+
+    (4) $\begin{cases} x - 8y = -7 \\ \frac{1}{5}x + \frac{1}{3}y = -\frac{10}{3}
+    \end{cases}$ ，則 $x$ 、 $y$ 的值為 ⑧ 。'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 82%）
 - id: doc_113_高雄_陽明_數學_g7s2e1_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 若二元一次方程式ax+ by= −4有一解為x= 4,y= −2,則2a−b=  9  。
+  stem: 若二元一次方程式 $ax + by = -4$ 有一解為 $x = 4$ ， $y = -2$ ，則 $2a - b =$ ⑨ 。
 - id: doc_113_高雄_陽明_數學_g7s2e1_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 老師說:「我今年的年紀比我兒子的4倍多4歲;再過25年後我要退休了,那時我的年紀是我兒子 的2倍少5歲」,則老師退休時是  10  歲。
+  stem: 老師說:「我今年的年紀比我兒子的 4 倍多 4 歲;再過 25 年後我要退休了，那時我的年紀是我兒子的 2 倍少 5 歲」，則老師退休時是 ⑩ 歲。
 - id: doc_113_高雄_陽明_數學_g7s2e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 坐標平面上,如果從點A(6a, 2b)向下移動7個單位,再向左移動6個單位即到達B點,已知B點 的坐標為(5 , 5),則數對(a, b)為  11  。
+  stem: 坐標平面上，如果從點 $A(6a, 2b)$ 向下移動 7 個單位，再向左移動 6 個單位即到達 $B$ 點，已知 $B$ 點的坐標為 $(5 ,
+    5)$ ，則數對 $(a, b)$ 為 ⑪ 。
 - id: doc_113_高雄_陽明_數學_g7s2e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 坐標平面上有一點A,且A點到x軸的距離為4,A點到y軸的距離恰為到x軸的3倍。若A點 在第二象限,則A點的坐標為(a , b),則a−b=    12    。
+  stem: 坐標平面上有一點 $A$ ，且 $A$ 點到 $x$ 軸的距離為 4， $A$ 點到 $y$ 軸的距離恰為到 $x$ 軸的 3 倍。若 $A$ 點在第二象限，則
+    $A$ 點的坐標為 $(a , b)$ ，則 $a - b =$ ⑫ 。
 - id: doc_113_高雄_陽明_數學_g7s2e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 某服飾店推出「買兩件商品總價打9折,買三件商品總價打8折」的服務,小陽原本只想要鞋 子,店員:「你再挑選一件上衣,只比原來單買一雙鞋子的價格再多280元;如果你挑選兩件上
-    衣,三件商品可打八折,等於你原本只買一雙鞋再多加420元,你就能多買兩件上衣!」 已知店內上衣的價格均相同,請問小陽原本挑選的鞋子    13    元。
-    【P.2,共3頁】
+  stem: '某服飾店推出「買兩件商品總價打 9 折，買三件商品總價打 8 折」的服務，小陽原本只想要鞋子，店員:「你再挑選一件上衣，只比原來單買一雙鞋子的價格再多
+    280 元；如果你挑選兩件上衣，三件商品可打八折，等於你原本只買一雙鞋再多加 420 元，你就能多買兩件上衣!」
+
+    已知店內上衣的價格均相同，請問小陽原本挑選的鞋子 ⑬ 元。'
 - id: doc_113_高雄_陽明_數學_g7s2e1_s2_8
   section: 2
   number: 8
   type: fill
   page: 3
-  stem: 已知一個正三角形的邊長分別為(3x+ 2y+ 2)公分、(9x−4y)公分、(−6x+ 14y−1)公分,求 此正三角形的邊長為    14    公分。
+  stem: 已知一個正三角形的邊長分別為 $(3x + 2y + 2)$ 公分、 $(9x - 4y)$ 公分、 $(-6x + 14y - 1)$ 公分，求此正三角形的邊長為
+    ⑭ 公分。
 - id: doc_113_高雄_陽明_數學_g7s2e1_s3_1
   section: 3
   number: 1
-  type: fill
+  type: calc
   page: 3
-  stem: 用28公分的繩子,圍成一個長方形,且長比寬的3倍少2公分,假設長方形的長為x公分,寬 為y公分,依提示寫出算式並求出圍出的長方形面積為多少平方公分。
+  stem: 用 28 公分的繩子，圍成一個長方形，且長比寬的 3 倍少 2 公分，假設長方形的長為 $x$ 公分，寬為 $y$ 公分，依提示寫出算式並求出圍出的長方形面積為多少平方公分。
 - id: doc_113_高雄_陽明_數學_g7s2e1_s3_2
   section: 3
   number: 2
-  type: fill
+  type: calc
   page: 3
-  stem: 浩南在解二元一次聯立方程式{∎x−△y= 12 △x+ ∎y= 9的過程中不小心睡著了,醒來發現自己不小心弄 髒了題目,∎、△為弄髒的部分,且標示同樣符號之弄髒處為同樣的數字。浩南記得此聯立方程
-    式的解為x= 4,y= −2,請問原本尚未弄髒的二元一次聯立方程式為何?
+  stem: 浩南在解二元一次聯立方程式 $\begin{cases} ■x - △y = 12 \\ △x + ■y = 9 \end{cases}$ 的過程中不小心睡著了，醒來發現自己不小心弄髒了題目，■、△為弄髒的部分，且標示同樣符號之弄髒處為同樣的數字。浩南記得此聯立方程式的解為
+    $x = 4$ ， $y = -2$ ，請問原本尚未弄髒的二元一次聯立方程式為何?
 - id: doc_113_高雄_陽明_數學_g7s2e1_s3_3
   section: 3
   number: 3
-  type: fill
+  type: calc
   page: 3
-  stem: 陽陽想要制定運動計畫,教練給陽陽甲、乙兩種訓練方案如下圖。每天從甲、乙兩種方案中挑 選一種方案做訓練,兩種方案在30天內每天只選一種方案訓練一次或是休息,且最多只能休息10天(休息日不做任何訓練),已知最後陽陽在30天內騎自行車共騎295公里,則陽陽有訓練天
-    數為幾天?(請列出所有可能的答案) ~試題結束~ 【P.3,共3頁】
+  stem: 陽陽想要制定運動計畫，教練給陽陽甲、乙兩種訓練方案如下圖。每天從甲、乙兩種方案中挑選一種方案做訓練，兩種方案在 30 天內每天只選一種方案訓練一次或是休息，且最多只能休息
+    10 天(休息日不做任何訓練)，已知最後陽陽在 30 天內騎自行車共騎 295 公里，則陽陽有訓練天數為幾天？(請列出所有可能的答案)
   assets:
-  - key: p3_f01
+  - key: s3_3_f1
     kind: figure
-    file: doc_113_高雄_陽明_數學_g7s2e1/p3_f01.png
+    file: doc_113_高雄_陽明_數學_g7s2e1/s3_3_f1.png
+    crop:
+      page: 3
+      rect:
+      - 408.38
+      - 525.39
+      - 674.29
+      - 666.51

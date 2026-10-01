@@ -1,53 +1,58 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 1
-  school: 新北市立福和國民中學
-  grade: 7
-  subject: 數學
   city: 新北
   school_short: 福和
+  school: 新北市立福和國民中學
+  scope_note: 1-1~1-4
   id: doc_113_新北_福和_數學_g7s1e1
-  title: 新北市立福和國民中學 113學年度第1學期第1次定期評量7年級數學科試題
+  title: 新北市立福和國民中學 113學年度第1學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(1〜18題,每題3分,19〜28題,每題1分,共64分)
+    name: 選擇題：(1〜18 題，每題3 分，19〜28 題，每題1 分，共64 分)
     count: 28
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:請將答案寫在答案卷上,未用黑色筆作答,扣5分。 (每格3分,共24分)
+    name: 填充題：請將答案寫在答案卷上,未用黑色筆作答，扣5 分。 （每格3 分，共24 分）
     count: 6
+  - ord: 3
+    name: 計算題：【第2、3 題要寫計算過程才給分】(每題4 分，共12 分)
+    count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-1/新北/福和.pdf
+  scope:
+    lessons:
+    - number: 1-1~1-4
+      title: null
+    publisher: null
+    raw: 1-1~1-4
+    volume: null
 questions:
 - id: doc_113_新北_福和_數學_g7s1e1_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: ''
+  stem: 下列何者的運算結果不正確？
   options:
-  - label: B
-    content: 下列何者的運算結果不正確?
   - label: A
-    content: (-1)×3×(-5)=1×3×5
+    content: (-1) $\times$ 3 $\times$ (-5)＝1 $\times$ 3 $\times$ 5
   - label: B
-    content: (-5)×[3×(-18)]=(5×18)×3
+    content: (-5) $\times$ [3 $\times$ (-18)]＝(5 $\times$ 18) $\times$ 3
   - label: C
-    content: (-52)×98-48×98=-(52+48)×98
+    content: (-52) $\times$ 98－48 $\times$ 98＝-(52＋48) $\times$ 98
   - label: D
-    content: 24×101-24×(-99)=24×(101-99)
+    content: 24 $\times$ 101－24 $\times$ (-99)＝24 $\times$ (101－99)
 - id: doc_113_新北_福和_數學_g7s1e1_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: ''
+  stem: 如果｜甲數｜＝ 8，｜乙數｜＝ 9，則甲數－乙數不可能是下列哪一個數？
   options:
-  - label: B
-    content: 如果|甲數|= 8,|乙數|= 9,則甲數-乙數不可能是下列哪一個數?
   - label: A
     content: '17'
   - label: B
@@ -61,27 +66,23 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: ''
+  stem: 已知a = (1414－1515)－1616，b = 1414－(1515－1616)，c = 1414－1515－1616，則下列敘述何者正確？
   options:
-  - label: B
-    content: 已知a = (1414-1515)-1616,b = 1414-(1515-1616),c = 1414-1515-1616,則下列敘述何者正確?
   - label: A
-    content: a=c,b=c
+    content: a＝c，b＝c
   - label: B
-    content: a=c,b≠c
+    content: a＝c，b$\neq$c
   - label: C
-    content: a≠c,b=c
+    content: a$\neq$c，b＝c
   - label: D
-    content: a≠c,b≠c
+    content: a$\neq$c，b$\neq$c
 - id: doc_113_新北_福和_數學_g7s1e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: ''
+  stem: 比－8 小5 的數為甲數，比－3 大9 的數為乙數，則甲數×乙數之值為何？
   options:
-  - label: B
-    content: 比-8小5的數為甲數,比-3大9的數為乙數,則甲數×乙數之值為何?
   - label: A
     content: '-78'
   - label: B
@@ -95,10 +96,8 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: ''
+  stem: 數線上有A、B、C 三點、若B 點為A、C 兩點的中點，A 的坐標為－2， B 的坐標為6，求C 點的坐標為何？
   options:
-  - label: B
-    content: 數線上有A、B、C三點、若B點為A、C兩點的中點,A的坐標為-2, B的坐標為6,求C點的坐標為何?
   - label: A
     content: '10'
   - label: B
@@ -112,10 +111,9 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: ''
+  stem: 已知 6 $\times$ 7 $\times$ 8 $\times$ 9 $\times$ 10＝30240，計算（－0.6）$\times$ 7
+    $\times$（－0.8）$\times$ 9 $\times$ (-10 )為何？
   options:
-  - label: B
-    content: 已知6 × 7 × 8 × 9 × 10=30240,計算(-0.6)× 7 ×(-0.8)× 9 × (-10 )為何?
   - label: A
     content: '-302.4'
   - label: B
@@ -129,7 +127,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 若甲×123=2214,求 (甲-5) × 123為何?
+  stem: 若甲$\times$123=2214，求 (甲－5) $\times$ 123 為何？
   options:
   - label: A
     content: '2214'
@@ -144,10 +142,8 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: ''
+  stem: 已知Ｐ為整數，且 －1 <∣Ｐ∣< 7 ，則符合條件的Ｐ共有多少個？
   options:
-  - label: B
-    content: 已知P為整數,且 -1 <∣P∣< 7 ,則符合條件的P共有多少個?
   - label: A
     content: '7'
   - label: B
@@ -161,10 +157,10 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: ''
+  stem: '下列敘述何者正確？
+
+    甲：－11 的相反數是$-\frac{1}{11}$ 乙：－(－8) 的相反數是－8 丙：15 的絕對值是－15 丁：0 的絕對值是0'
   options:
-  - label: B
-    content: 下列敘述何者正確? $\frac{1}{11}$ 甲:-11的相反數是- 乙:-(-8) 的相反數是-8     丙:15的絕對值是-15  丁:0的絕對值是0
   - label: A
     content: 甲、乙
   - label: B
@@ -178,10 +174,9 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: ''
+  stem: 翻車魚是目前世界上所有魚類中產卵數量最多的魚，牠一次的產卵數量可高達$3.1\times 10^{8}$ 顆，將$3.1\times 10^{8}$
+    化成整數的形式是幾位數？
   options:
-  - label: B
-    content: 翻車魚是目前世界上所有魚類中產卵數量最多的魚,牠一次的產卵數量可高達3.1×108顆,將3.1×108化成整數的 形式是幾位數?
   - label: A
     content: '8'
   - label: B
@@ -195,16 +190,14 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: ''
+  stem: 已知數線上一點K(－3)，則下列哪一點離K 點最遠？
   options:
-  - label: B
-    content: 已知數線上一點K(-3),則下列哪一點離K點最遠?
   - label: A
     content: P(-2.1)
   - label: B
-    content: Q(-1 $\frac{1}{3}$ )
+    content: Q($-1\frac{1}{3}$)
   - label: C
-    content: R(1 $\frac{2}{3}$ )
+    content: R($1\frac{2}{3}$)
   - label: D
     content: S(2.5)
 - id: doc_113_新北_福和_數學_g7s1e1_s1_12
@@ -212,10 +205,8 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: ''
+  stem: 下列哪一個數減去(－7)後，其絕對值會小於7？
   options:
-  - label: B
-    content: 下列哪一個數減去(-7)後,其絕對值會小於7?
   - label: A
     content: '-8'
   - label: B
@@ -229,10 +220,11 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: ''
+  stem: '外太空有四顆閃耀的星球，分別命名為「樂樂」、「憂憂」、「怒怒」、「厭厭」，已知與地球的距離分別為
+
+    $666\times 10^{17}$ 光年、$0.33\times 10^{20}$ 光年、$3.88\times 10^{19}$ 光年、$24\times
+    10^{18}$ 光年，請問哪一個星球與地球的距離最近？'
   options:
-  - label: B
-    content: 外太空有四顆閃耀的星球,分別命名為「樂樂」、「憂憂」、「怒怒」、「厭厭」,已知與地球的距離分別為666×1017光年、0.33×1020光年、3.88×1019光年、24×1018光年,請問哪一個星球與地球的距離最近?
   - label: A
     content: 怒怒
   - label: B
@@ -246,10 +238,8 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: ''
+  stem: 已知 a = $(-0.77)^{22}$、b = $(-0.77)^{23}$、c = $(-0.77)^{24}$，判斷a、b、c 三數的大小關係為何？
   options:
-  - label: B
-    content: 已知a = (−0.77)22、b = (−0.77)23、c = (−0.77)24,判斷a、b、c三數的大小關係為何?
   - label: A
     content: c > a > b
   - label: B
@@ -263,27 +253,23 @@ questions:
   number: 15
   type: single
   page: 1
-  stem: ''
+  stem: 數線上A、B、C 三點，且B 點在C 點的右邊12 個單位長的位置，若B 點坐標為－18，且A、C 兩點的距離為7，則A 點的坐標為何？
   options:
-  - label: B
-    content: 數線上A、B、C三點,且B點在C點的右邊12個單位長的位置,若B點坐標為-18,且A、C兩點的距離 為7,則A點的坐標為何?
   - label: A
-    content: -23或-13
+    content: －23 或－13
   - label: B
-    content: -13或1
+    content: －13 或1
   - label: C
-    content: -23或-37
+    content: －23 或－37
   - label: D
-    content: -1或-13 〔第1頁 共三頁〕
+    content: －1 或－13
 - id: doc_113_新北_福和_數學_g7s1e1_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: ''
+  stem: 將$7.26\times 10^{-5}$ 化成小數形式，則從小數點後第幾位開始出現不為0 的數字？
   options:
-  - label: B
-    content: 將7.26×10 -5化成小數形式,則從小數點後第幾位開始出現不為0的數字?
   - label: A
     content: 第五位
   - label: B
@@ -297,10 +283,9 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: ''
+  stem: 小叮噹設計一個在數線上行走的阿狗狗機器人，當按下按鍵Ｓ時，阿狗狗會往正向走3 個單位長的距離；按下按鍵Ｅ時，阿狗狗會往負向走2 個單位長的距離。如果阿狗狗一開始的位置在P（k），且小叮噹先按11
+    次按鍵Ｓ，再按9 次按鍵Ｅ後，阿狗狗的位置停在Q（12），求k 為何？
   options:
-  - label: B
-    content: 小叮噹設計一個在數線上行走的阿狗狗機器人,當按下按鍵S時,阿狗狗會往正向走3個單位長的距離;按下 按鍵E時,阿狗狗會往負向走2個單位長的距離。如果阿狗狗一開始的位置在P(k),且小叮噹先按11次按鍵S,再按9次按鍵E後,阿狗狗的位置停在Q(12),求k為何?
   - label: A
     content: '-16'
   - label: B
@@ -314,168 +299,240 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: ''
+  stem: 右圖數線上的A、B、C、D 四點所表示的數分別為a、b、c、d，且O 為原點。根據圖中各點的位置判斷，下列何者的值最小？
   options:
-  - label: B
-    content: 右圖數線上的A、B、C、D四點所表示的數分別為a、b、c、d,且O為原點。根據圖中各點的位置判斷,下列 何者的值最小?
   - label: A
     content: ∣a∣
   - label: B
-    content: ∣b-a∣
+    content: ∣b－a∣
   - label: C
-    content: ∣c∣-∣d∣
+    content: ∣c∣－∣d∣
   - label: D
-    content: ∣d-a∣ 第19~28題:請判斷下列敘述,正確選
-  - label: A
-    content: ',不正確選'
-  - label: B
-    content: ''
+    content: ∣d－a∣
   assets:
-  - key: p2_f01
+  - key: s1_18_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f01.png
+    file: doc_113_新北_福和_數學_g7s1e1/s1_18_f1.png
+    crop:
+      page: 2
+      rect:
+      - 503.05
+      - 200.29
+      - 674.97
+      - 246.46
 - id: doc_113_新北_福和_數學_g7s1e1_s1_19
   section: 1
   number: 19
-  type: single
+  type: tf
   page: 2
-  stem: -23=-6。
+  stem: $-2^{3}＝-6$。
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s1_20
   section: 1
   number: 20
-  type: single
+  type: tf
   page: 2
-  stem: 若a<0,則∣a∣=-a。
+  stem: 若a＜0，則∣a∣＝－a。
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s1_21
   section: 1
   number: 21
-  type: single
+  type: tf
   page: 2
-  stem: 任何不為0的數,其絕對值一定大於0。
+  stem: 任何不為0 的數，其絕對值一定大於0。
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s1_22
   section: 1
   number: 22
-  type: single
+  type: tf
   page: 2
-  stem: 若a、b為兩個負數,且∣a∣>∣b∣,則b > a。
+  stem: 若a、b 為兩個負數，且∣a∣＞∣b∣，則 b > a。
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s1_23
   section: 1
   number: 23
-  type: single
+  type: tf
   page: 2
-  stem: 計算1800+(-1400)+1200+(-1600)=0
+  stem: 計算1800＋(－1400)＋1200＋(－1600)＝0
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s1_24
   section: 1
   number: 24
-  type: single
+  type: tf
   page: 2
   stem: 最小的正數是1。
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s1_25
   section: 1
   number: 25
-  type: single
+  type: tf
   page: 2
-  stem: 已知a、b、c皆不為0,則a÷(b+c)=a÷b+a÷c 。
+  stem: 已知a、b、c 皆不為0，則a÷(b＋c)＝a÷b＋a÷c 。
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s1_26
   section: 1
   number: 26
-  type: single
+  type: tf
   page: 2
-  stem: -2.7和4為異號數。
+  stem: －2.7 和4 為異號數。
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s1_27
   section: 1
   number: 27
-  type: single
+  type: tf
   page: 2
-  stem: 62.5×104是科學記號表示法。
+  stem: $62.5\times 10^{4}$ 是科學記號表示法。
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s1_28
   section: 1
   number: 28
-  type: single
+  type: tf
   page: 2
-  stem: 已知a =1.3×100,則a介於0、1之間。
+  stem: 已知 a =$1.3\times 10^{0}$，則 a 介於0、1 之間。
+  options:
+  - label: A
+    content: 正確
+  - label: B
+    content: 不正確
 - id: doc_113_新北_福和_數學_g7s1e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: '以「科學記號表示法」記錄下列各數: (1) 2900000= ○ 1 。 (2) 0.00000784= ○ 2 。 (3) 一本柯南漫畫150頁,大約厚1.5公分,平均一頁為
-    ○ 3公分。'
+  stem: '以「科學記號表示法」記錄下列各數：
+
+    (1) 2900000＝____①____。
+
+    (2) 0.00000784＝____②____。
+
+    (3) 一本柯南漫畫150 頁，大約厚1.5 公分，平均一頁為____③____公分。'
 - id: doc_113_新北_福和_數學_g7s1e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 請寫出絕對值小於2 $\frac{5}{9}$ 的所有整數點 ○ 4 。
+  stem: 請寫出絕對值小於$2\frac{5}{9}$ 的所有整數點____④____。
 - id: doc_113_新北_福和_數學_g7s1e1_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: '有三個角落生物坐在數線上聊天,以下是他們的對話內容: 蜥蜴: 「企鵝,你在那裡? 」 企鵝:「我在炸蝦右方11個單位長的位置。」 炸蝦:「我在蜥蜴左方7單位長的位置。」
-    若蜥蜴在坐標為-6的位置,則企鵝在坐標為 ○5的位置'
+  stem: '有三個角落生物坐在數線上聊天，以下是他們的對話內容：
+
+    蜥蜴: 「企鵝，你在那裡? 」
+
+    企鵝：「我在炸蝦右方11 個單位長的位置。」
+
+    炸蝦：「我在蜥蜴左方7 單位長的位置。」
+
+    若蜥蜴在坐標為－6 的位置，則企鵝在坐標為____⑤____的位置'
 - id: doc_113_新北_福和_數學_g7s1e1_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 計算4×7×(-25) + 517 = ○ 6 。
+  stem: 計算4×7×(－25) + 517 =____⑥____。
 - id: doc_113_新北_福和_數學_g7s1e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 計算|4-(-3)|×|(-3)×4|-6×4= ○ 7
+  stem: 計算｜4－(－3)｜×｜(－3)×4｜－6×4＝____⑦____
 - id: doc_113_新北_福和_數學_g7s1e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: '數線上A(a)、B(b)兩點的位置如右圖,則下列敘述正確的有哪些? ○ 8 。 A B a - 2 - 1 b 0 1甲:∣a∣> 1      乙:∣b∣>
-    1      丙:a+b > 0      丁: b-a > 0 〔第2頁 共三頁〕'
+  stem: '數線上Ａ(a)、B(b)兩點的位置如右圖，則下列敘述正確的有哪些？____⑧____。
+
+    甲：∣a∣＞ 1 乙：∣b∣＞ 1 丙：a＋b ＞ 0 丁： b－a ＞ 0'
   assets:
-  - key: p2_f02
+  - key: s2_6_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f02.png
-  - key: p2_f03
+    file: doc_113_新北_福和_數學_g7s1e1/s2_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 510.34
+      - 856.49
+      - 696.82
+      - 902.66
+- id: doc_113_新北_福和_數學_g7s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: '如下圖，分別寫出數線上A、B、C、D 各點的坐標。 (每個點1 分，共4 分)
+
+    A （ ） B（ ） C（ ） D （ ）'
+  assets:
+  - key: s3_1_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f03.png
-  - key: p2_f04
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f04.png
-  - key: p2_f05
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f05.png
-  - key: p2_f06
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f06.png
-  - key: p2_f07
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f07.png
-  - key: p2_f08
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f08.png
-  - key: p2_f09
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f09.png
-  - key: p2_f10
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f10.png
-  - key: p2_f11
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f11.png
-  - key: p2_f12
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f12.png
-  - key: p2_f13
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f13.png
-  - key: p2_f14
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f14.png
-  - key: p2_f15
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f15.png
-  - key: p2_f16
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s1e1/p2_f16.png
+    file: doc_113_新北_福和_數學_g7s1e1/s3_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 47.0
+      - 400.45
+      - 645.83
+      - 465.2
+- id: doc_113_新北_福和_數學_g7s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: '計算$(-5)^{2}\times 2^{3}-4\times 7^{2}-(-3)^{3}\div 27$
+
+    ='
+- id: doc_113_新北_福和_數學_g7s1e1_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 3
+  stem: '下表為福和冰果室一月份～七月份的營業收入紀錄與每月成本比較表，若每月的成本為8000 元，則這七個月的總營業額是賺或賠多少元？
+
+
+    | | 一月 | 二月 | 三月 | 四月 | 五月 | 六月 | 七月 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 與每月成本比較 | －1530 | －1210 | －1150 | －760 | +680 | +1250 | +3400 |
+
+
+    （單位：元）'

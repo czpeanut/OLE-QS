@@ -1,66 +1,98 @@
 document:
-  semester: 2
-  exam_seq: 3
-  school: 新北市立福和國民中學
   grade: 7
   subject: 數學
   academic_year_roc: 113
+  semester: 2
+  exam_seq: 3
   city: 新北
   school_short: 福和
+  school: 新北市立福和國民中學
   id: doc_113_新北_福和_數學_g7s2e3
-  title: 新北市立福和國民中學 113學年度第2學期第3次定期評量7年級數學科試題
+  title: 新北市立福和國民中學 113學年度第2學期第3次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第3次定期評量
-  sections: []
+  sections:
+  - ord: 1
+    name: 選擇題(第1至16題，每題4分，共64分；第17至28題，每題3分，共36分，合計100分)
+    count: 28
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-3/新北/福和.pdf
 questions:
 - id: doc_113_新北_福和_數學_g7s2e3_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 請判斷下列號誌中,何者為線對稱圖形?
+  stem: 請判斷下列號誌中，何者為線對稱圖形？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_福和_數學_g7s2e3/1_1_optA.png
+      crop:
+        page: 1
+        rect:
+        - 100.18
+        - 133.22
+        - 175.2
+        - 206.22
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_福和_數學_g7s2e3/1_1_optB.png
+      crop:
+        page: 1
+        rect:
+        - 213.1
+        - 130.13
+        - 288.12
+        - 206.22
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_新北_福和_數學_g7s2e3/1_1_optC.png
+      crop:
+        page: 1
+        rect:
+        - 323.11
+        - 133.22
+        - 401.04
+        - 207.26
   - label: D
-    content: 。
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f01.png
-  - key: p1_f02
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f02.png
-  - key: p1_f03
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f03.png
-  - key: p1_f04
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f04.png
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_新北_福和_數學_g7s2e3/1_1_optD.png
+      crop:
+        page: 1
+        rect:
+        - 438.94
+        - 130.13
+        - 508.86
+        - 206.22
 - id: doc_113_新北_福和_數學_g7s2e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 海綿寶寶的水壺裝了86毫升的水,派大星的水壺裝了a毫升。已知派大星水壺的水量不大於海綿寶寶水壺的水 量,則下列哪個不等式合乎題意?
+  stem: 海綿寶寶的水壺裝了86毫升的水，派大星的水壺裝了 $a$ 毫升。已知派大星水壺的水量不大於海綿寶寶水壺的水量，則下列哪個不等式合乎題意？
   options:
   - label: A
-    content: a≤86
+    content: $a \leq 86$
   - label: B
-    content: a< 86
+    content: $a < 86$
   - label: C
-    content: a≥86
+    content: $a \geq 86$
   - label: D
-    content: a> 86     。
+    content: $a > 86$
 - id: doc_113_新北_福和_數學_g7s2e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 圖(一)為班上數學成績的次數分配折線圖,請問全班在70分以上(含)的有多少人?
+  stem: 圖(一)為班上數學成績的次數分配折線圖，請問全班在70分以上(含)的有多少人？
   options:
   - label: A
     content: 8人
@@ -69,100 +101,135 @@ questions:
   - label: C
     content: 18人
   - label: D
-    content: 26人     。 圖(一)
+    content: 26人
   assets:
-  - key: p1_f05
+  - key: s1_3_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f05.png
-  - key: p1_f06
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f06.png
+    file: doc_113_新北_福和_數學_g7s2e3/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 551.13
+      - 267.35
+      - 693.18
+      - 366.15
 - id: doc_113_新北_福和_數學_g7s2e3_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 已知a> b,請問下列哪個不等式錯誤?
+  stem: 已知 $a > b$，請問下列哪個不等式錯誤？
   options:
   - label: A
-    content: a-4 > b-4
+    content: $a - 4 > b - 4$
   - label: B
-    content: (-7 )+ a> (-7 )+ b
+    content: $(-7) + a > (-7) + b$
   - label: C
-    content: 3b < 3a
+    content: $3b < 3a$
   - label: D
-    content: -5a> -5b     。
+    content: $-5a > -5b$
 - id: doc_113_新北_福和_數學_g7s2e3_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 請問以下各選項中,x的一元一次不等式的圖解何者正確?
+  stem: 請問以下各選項中，$x$ 的一元一次不等式的圖解何者正確？
   options:
   - label: A
-    content: x< 2
+    content: $x < 2$
+    asset:
+      key: optA
+      file: doc_113_新北_福和_數學_g7s2e3/1_5_optA.png
+      crop:
+        page: 1
+        rect:
+        - 95.81
+        - 488.15
+        - 193.42
+        - 533.29
   - label: B
-    content: −3 < x< 2
+    content: $-3 < x < 2$
+    asset:
+      key: optB
+      file: doc_113_新北_福和_數學_g7s2e3/1_5_optB.png
+      crop:
+        page: 1
+        rect:
+        - 221.11
+        - 488.15
+        - 326.01
+        - 533.29
   - label: C
-    content: −1 ≤x< 4
+    content: $-1 \leq x < 4$
+    asset:
+      key: optC
+      file: doc_113_新北_福和_數學_g7s2e3/1_5_optC.png
+      crop:
+        page: 1
+        rect:
+        - 354.43
+        - 488.15
+        - 474.62
+        - 532.26
   - label: D
-    content: -3 ≥x> -5     。
-  assets:
-  - key: p1_f07
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f07.png
-  - key: p1_f08
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f08.png
-  - key: p1_f09
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f09.png
-  - key: p1_f10
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f10.png
+    content: $-3 \geq x > -5$
+    asset:
+      key: optD
+      file: doc_113_新北_福和_數學_g7s2e3/1_5_optD.png
+      crop:
+        page: 1
+        rect:
+        - 503.05
+        - 488.15
+        - 613.04
+        - 533.29
 - id: doc_113_新北_福和_數學_g7s2e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 請判斷圖(二)中,哪個線段為A點到直線L的距離?
+  stem: 請判斷圖(二)中，哪個線段為 $A$ 點到直線 $L$ 的距離？
   options:
   - label: A
-    content: AC̅̅̅̅
+    content: $\overline{AC}$
   - label: B
-    content: AD̅̅̅̅
+    content: $\overline{AD}$
   - label: C
-    content: AB̅̅̅̅
+    content: $\overline{AB}$
   - label: D
-    content: AE̅̅̅̅   。 圖(二)
+    content: $\overline{AE}$
   assets:
-  - key: p1_f11
+  - key: s1_6_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f11.png
-  - key: p1_f12
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p1_f12.png
+    file: doc_113_新北_福和_數學_g7s2e3/s1_6_f1.png
+    crop:
+      page: 1
+      rect:
+      - 397.41
+      - 532.52
+      - 516.15
+      - 613.77
 - id: doc_113_新北_福和_數學_g7s2e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: '解x的一元一次不等式: 5x+ 9 > 2(2x+ 5)。 則'
+  stem: 解 $x$ 的一元一次不等式：$5x + 9 > 2(2x + 5)$。則
   options:
   - label: A
-    content: x> 1
+    content: $x > 1$
   - label: B
-    content: x> −4
+    content: $x > -4$
   - label: C
-    content: x> 14
+    content: $x > 14$
   - label: D
-    content: x> 19  。
+    content: $x > 19$
 - id: doc_113_新北_福和_數學_g7s2e3_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 小浩幫老師登記10位同學的數學分數,成績由小到大依序為40、48、56、75、75、75、85、90、99、100。後來 發現48分的同學,應該更正為78分才對。試問平均數、中位數與眾數,何者不會改變?
+  stem: 小浩幫老師登記10位同學的數學分數，成績由小到大依序為40、48、56、75、75、75、85、90、99、100。後來發現48分的同學，應該更正為78分才對。試問平均數、中位數與眾數，何者不會改變？
   options:
   - label: A
     content: 眾數
@@ -171,72 +238,74 @@ questions:
   - label: C
     content: 平均數
   - label: D
-    content: 三者皆不改變     。
+    content: 三者皆不改變
 - id: doc_113_新北_福和_數學_g7s2e3_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 請判斷下列選項何者正確?
+  stem: 請判斷下列選項何者正確？
   options:
   - label: A
-    content: AB⃗⃗⃗⃗⃗  和BA⃗⃗⃗⃗⃗  代表相同的射線
+    content: $\vec{AB}$ 和 $\vec{BA}$ 代表相同的射線
   - label: B
-    content: 五邊形有5條對角線,所以六邊形有6條對角線
+    content: 五邊形有5條對角線，所以六邊形有6條對角線
   - label: C
-    content: AB̅̅̅̅ 的中垂線會通過AB̅̅̅̅ 的中點及點A、點B
+    content: $\overline{AB}$ 的中垂線會通過 $\overline{AB}$ 的中點及點A、點B
   - label: D
-    content: 線對稱圖形的對稱軸垂直平分兩個對稱點的連線段     。
+    content: 線對稱圖形的對稱軸垂直平分兩個對稱點的連線段
 - id: doc_113_新北_福和_數學_g7s2e3_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 香片是把茶葉和花瓣交錯窨 ㄧ ㄣˋ製而成的花茶,最常見的是茉莉花香片,也有桂花、梔子香片。泡茶水溫建議逾80°C 、且不高於90°C才容易釋香。若水溫為x°C
-    ,則適合沖泡的水溫範圍為?
+  stem: 香片是把茶葉和花瓣交錯窨製而成的花茶，最常見的是茉莉花香片，也有桂花、梔子香片。泡茶水溫建議逾80℃、且不高於90℃才容易釋香。若水溫為 $x$℃，則適合沖泡的水溫範圍為？
   options:
   - label: A
-    content: 80 ≤x≤90
+    content: $80 \leq x \leq 90$
   - label: B
-    content: 80 < x< 90
+    content: $80 < x < 90$
   - label: C
-    content: 80 ≤x< 90
+    content: $80 \leq x < 90$
   - label: D
-    content: 80 < x≤90     。 〔第1頁,共4頁〕
+    content: $80 < x \leq 90$
 - id: doc_113_新北_福和_數學_g7s2e3_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 請問x=-2是下列哪一個不等式的解?
+  stem: 請問 $x = -2$ 是下列哪一個不等式的解？
   options:
   - label: A
-    content: 3x+ 4 > 1
+    content: $3x + 4 > 1$
   - label: B
-    content: 2(x−3) + 4 < 5x
+    content: $2(x - 3) + 4 < 5x$
   - label: C
-    content: ($\frac{x}{2}$
+    content: $(\frac{x}{2} - \frac{x}{3}) \leq 1$
+  - label: D
+    content: $7 - \frac{x}{3} < 2$
 - id: doc_113_新北_福和_數學_g7s2e3_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 端午節時,小豪與隊友參加划龍舟比賽,去程每分鐘前進50公尺,回程因為逆風,每分鐘只能前進45公尺。已 知比賽來回距離皆為x公尺。若划完全程所花的時間未滿1.5小時,則依據題意,可列出下列哪一個不等式?
-    + $\frac{x}{45}$ $\frac{x}{50}$ < 1.5
+  stem: 端午節時，小豪與隊友參加划龍舟比賽，去程每分鐘前進50公尺，回程因為逆風，每分鐘只能前進45公尺。已知比賽來回距離皆為 $x$ 公尺。若划完全程所花的時間未滿1.5小時，則依據題意，可列出下列哪一個不等式？
   options:
-  - label: B
-    content: $\frac{x}{50}$ + $\frac{x}{45}$ < 90
-  - label: C
-    content: $\frac{x}{50}$
   - label: A
-    content: ''
+    content: $\frac{x}{50} + \frac{x}{45} < 1.5$
+  - label: B
+    content: $\frac{x}{50} + \frac{x}{45} < 90$
+  - label: C
+    content: $\frac{x}{50} + \frac{x}{45} \leq 1.5$
+  - label: D
+    content: $\frac{x}{50} + \frac{x}{45} \leq 90$
 - id: doc_113_新北_福和_數學_g7s2e3_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 福福國中為了解學生的手機使用情形,隨機調查了10位同學每天平均使用手機的時間,調查結果如下:6、3、 4、5、4、2、4、3、5、4。若其平均數為a小時,中位數為  b小時,眾數為c小時,則a+
-    b+ c之值為何?
+  stem: 福福國中為了解學生的手機使用情形，隨機調查了10位同學每天平均使用手機的時間，調查結果如下：6、3、4、5、4、2、4、3、5、4。若其平均數為 $a$
+    小時，中位數為 $b$ 小時，眾數為 $c$ 小時，則 $a + b + c$ 之值為何？
   options:
   - label: A
     content: '12'
@@ -245,13 +314,14 @@ questions:
   - label: C
     content: '13'
   - label: D
-    content: 13.5     。
+    content: '13.5'
 - id: doc_113_新北_福和_數學_g7s2e3_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 正方形有p條對稱軸,平行四邊形有q條對稱軸,菱形有r條對稱軸,箏形有s條對稱軸。 請問p+ q+ r+ s之值為何?
+  stem: 正方形有 $p$ 條對稱軸，平行四邊形有 $q$ 條對稱軸，菱形有 $r$ 條對稱軸，箏形有 $s$ 條對稱軸。請問 $p + q + r + s$
+    之值為何？
   options:
   - label: A
     content: '7'
@@ -260,26 +330,13 @@ questions:
   - label: C
     content: '9'
   - label: D
-    content: 10     。 圖(四) 圖(三)
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f01.png
-  - key: p2_f02
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f02.png
-  - key: p2_f03
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f03.png
-  - key: p2_f04
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f04.png
+    content: '10'
 - id: doc_113_新北_福和_數學_g7s2e3_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 圖(三)為七年級某班學生身高次數分配直方圖,下列哪一個敘述錯誤?
+  stem: 圖(三)為七年級某班學生身高次數分配直方圖，下列哪一個敘述錯誤？
   options:
   - label: A
     content: 全班共有21人
@@ -288,118 +345,233 @@ questions:
   - label: C
     content: 組距為5公分
   - label: D
-    content: 中位數在155~160公分這一組     。
+    content: 中位數在155～160公分這一組
+  assets:
+  - key: s1_15_f1
+    kind: figure
+    file: doc_113_新北_福和_數學_g7s2e3/s1_15_f1.png
+    crop:
+      page: 2
+      rect:
+      - 60.84
+      - 432.43
+      - 199.97
+      - 554.96
 - id: doc_113_新北_福和_數學_g7s2e3_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 將一張正方形色紙依圖(四)方式對摺兩次,在其右下角打一個洞,問正方形色紙展開後的圖形可能為下列何者?
+  stem: 將一張正方形色紙依圖(四)方式對摺兩次，在其右下角打一個洞，問正方形色紙展開後的圖形可能為下列何者？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_福和_數學_g7s2e3/1_16_optA.png
+      crop:
+        page: 2
+        rect:
+        - 104.55
+        - 654.26
+        - 170.1
+        - 717.98
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_福和_數學_g7s2e3/1_16_optB.png
+      crop:
+        page: 2
+        rect:
+        - 253.17
+        - 654.26
+        - 320.91
+        - 717.98
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_新北_福和_數學_g7s2e3/1_16_optC.png
+      crop:
+        page: 2
+        rect:
+        - 402.51
+        - 652.2
+        - 470.25
+        - 717.98
   - label: D
-    content: 。
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_新北_福和_數學_g7s2e3/1_16_optD.png
+      crop:
+        page: 2
+        rect:
+        - 549.68
+        - 653.23
+        - 618.14
+        - 717.98
   assets:
-  - key: p2_f05
+  - key: s1_16_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f05.png
-  - key: p2_f06
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f06.png
+    file: doc_113_新北_福和_數學_g7s2e3/s1_16_f1.png
+    crop:
+      page: 2
+      rect:
+      - 245.88
+      - 449.97
+      - 508.14
+      - 541.55
 - id: doc_113_新北_福和_數學_g7s2e3_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 圖(五)是由正立方體緊密堆砌而成的立體圖形,請判斷下列哪一個選項為圖(五)的上視圖?
+  stem: 圖(五)是由正立方體緊密堆砌而成的立體圖形，請判斷下列哪一個選項為圖(五)的上視圖？
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_福和_數學_g7s2e3/1_17_optA.png
+      crop:
+        page: 2
+        rect:
+        - 112.56
+        - 751.25
+        - 199.97
+        - 843.85
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_福和_數學_g7s2e3/1_17_optB.png
+      crop:
+        page: 2
+        rect:
+        - 226.94
+        - 751.25
+        - 315.81
+        - 843.85
   - label: C
     content: ''
+    asset:
+      key: optC
+      file: doc_113_新北_福和_數學_g7s2e3/1_17_optC.png
+      crop:
+        page: 2
+        rect:
+        - 341.32
+        - 751.25
+        - 428.73
+        - 843.85
   - label: D
     content: ''
+    asset:
+      key: optD
+      file: doc_113_新北_福和_數學_g7s2e3/1_17_optD.png
+      crop:
+        page: 2
+        rect:
+        - 457.15
+        - 751.25
+        - 544.56
+        - 843.85
   assets:
-  - key: p2_f07
+  - key: s1_17_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f07.png
-  - key: p2_f08
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f08.png
-  - key: p2_f09
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f09.png
-  - key: p2_f10
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p2_f10.png
+    file: doc_113_新北_福和_數學_g7s2e3/s1_17_f1.png
+    crop:
+      page: 2
+      rect:
+      - 531.46
+      - 430.37
+      - 654.57
+      - 557.02
 - id: doc_113_新北_福和_數學_g7s2e3_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 已知x的一元一次不等式 $\frac{1}{2}$ ax≤ab的圖解如圖(六)所示,試問下列何者正確?
+  stem: 已知 $x$ 的一元一次不等式 $\frac{1}{2}ax \leq ab$ 的圖解如圖(六)所示，試問下列何者正確？
   options:
   - label: A
-    content: a> 0,b= 3
+    content: $a > 0$，$b = 3$
   - label: B
-    content: a> 0,b= −3
+    content: $a > 0$，$b = -3$
   - label: C
-    content: a< 0,b= 3
+    content: $a < 0$，$b = 3$
   - label: D
-    content: a< 0,b= −3     。 〔第2頁,共4頁〕 −$\frac{x}{3}$ ) ≤1
-  - label: D
-    content: 7 −$\frac{x}{3}$ < 2     。 + $\frac{x}{45}$ ≤1.5
-  - label: D
-    content: $\frac{x}{50}$ + $\frac{x}{45}$ ≤90     。 前方 圖(五) 圖(六)
+    content: $a < 0$，$b = -3$
+  assets:
+  - key: s1_18_f1
+    kind: figure
+    file: doc_113_新北_福和_數學_g7s2e3/s1_18_f1.png
+    crop:
+      page: 2
+      rect:
+      - 546.03
+      - 856.49
+      - 693.18
+      - 919.17
 - id: doc_113_新北_福和_數學_g7s2e3_s1_19
   section: 1
   number: 19
   type: single
   page: 3
-  stem: '解x的一元一次不等式: $\frac{x−1}{2}$ + $\frac{2x+2}{3}$ −2 ≤4。  則'
+  stem: 解 $x$ 的一元一次不等式：$\frac{x-1}{2} + \frac{2x+2}{3} - 2 \leq 4$。則
   options:
   - label: A
-    content: x≤$\frac{5}{7}$
+    content: $x \leq \frac{5}{7}$
   - label: B
-    content: x≤5
+    content: $x \leq 5$
   - label: C
-    content: x≤$\frac{1}{4}$
+    content: $x \leq \frac{1}{4}$
   - label: D
-    content: x≤$\frac{11}{7}$ 。
+    content: $x \leq \frac{11}{7}$
 - id: doc_113_新北_福和_數學_g7s2e3_s1_20
   section: 1
   number: 20
   type: single
   page: 3
-  stem: 圖(七)為各邊等長的3 × 3九宮格。目前已塗黑兩格,打算再將1、2、3、4的格子塗黑,以形成一個線對稱 圖形。請問以下哪種方式,塗黑後仍不是線對稱圖形?
-    1 2
+  stem: 圖(七)為各邊等長的 $3 \times 3$ 九宮格。目前已塗黑兩格，打算再將①、②、③、④的格子塗黑，以形成一個線對稱圖形。請問以下哪種方式，塗黑後仍不是線對稱圖形？
   options:
   - label: A
-    content: '1'
+    content: ①
   - label: B
-    content: 1 + 3
+    content: ① + ③
   - label: C
-    content: 2 + 4
+    content: ② + ④
   - label: D
-    content: 1 + 2 + 3     。 3 4圖(七)
+    content: ① + ② + ③
   assets:
-  - key: p3_f01
+  - key: s1_20_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p3_f01.png
+    file: doc_113_新北_福和_數學_g7s2e3/s1_20_f1.png
+    crop:
+      page: 3
+      rect:
+      - 578.82
+      - 128.07
+      - 675.7
+      - 238.21
 - id: doc_113_新北_福和_數學_g7s2e3_s1_21
   section: 1
   number: 21
   type: single
   page: 3
-  stem: 請問下列敘述有幾項是正確的? (甲)有7筆資料,由小到大排列後,第4筆資料就是中位數。 (乙)有5筆資料, 數值分別是2、4、6、6、8,這組資料的平均數是6。
-    (丙)有4筆資料,數值是5、7、9、12,這組資料的中位 數是8。 (丁)一組資料中,最大的數值叫做眾數。 (戊)中位數的數值不一定在原始資料裡。
+  stem: '請問下列敘述有幾項是正確的？
+
+    (甲)有7筆資料，由小到大排列後，第4筆資料就是中位數。
+
+    (乙)有5筆資料，數值分別是2、4、6、6、8，這組資料的平均數是6。
+
+    (丙)有4筆資料，數值是5、7、9、12，這組資料的中位數是8。
+
+    (丁)一組資料中，最大的數值叫做眾數。
+
+    (戊)中位數的數值不一定在原始資料裡。'
   options:
   - label: A
     content: 1項
@@ -408,30 +580,42 @@ questions:
   - label: C
     content: 3項
   - label: D
-    content: 4項     。 和和國中相當重視自主學習,為了鼓勵學生自主規劃與主動學習,每次段考後,學校都會針對自主學習時數前40名的學生給 予獎勵,以提升全校學習氛圍。學校針對七年33班共25位同學進行了一項調查,記錄這些同學在一週內累積的自主學習做
-      題數量,並將結果整理成次數分配表,如表(一)所示。不過部分資料沒有被登記到。 做題數量 (題) 30~40 40~50 50~60 60~70 70~80
-      80~90 90~100次數 (人) 3. 5. a b 2. 1. 2. 表(一)
+    content: 4項
 - id: doc_113_新北_福和_數學_g7s2e3_s1_22
   section: 1
   number: 22
   type: single
   page: 3
-  stem: 若王老師想計算七年33班做題數量的平均數,請問以下計算方式何者正確?
+  stem: 若王老師想計算七年33班做題數量的平均數，請問以下計算方式何者正確？
   options:
   - label: A
-    content: (35 × 3 + 45 × 5 + 55 × a+ 65 × b+ 75 × 2 + 85 × 1 + 95 × 2) ÷ 25
+    content: $(35 \times 3 + 45 \times 5 + 55 \times a + 65 \times b + 75 \times 2
+      + 85 \times 1 + 95 \times 2) \div 25$
   - label: B
-    content: (30 × 3 + 40 × 5 + 50 × a+ 60 × b+ 70 × 2 + 80 × 1 + 90 × 2) ÷ 25
+    content: $(30 \times 3 + 40 \times 5 + 50 \times a + 60 \times b + 70 \times 2
+      + 80 \times 1 + 90 \times 2) \div 25$
   - label: C
-    content: (40 × 3 + 50 × 5 + 60 × a+ 70 × b+ 80 × 2 + 90 × 1 + 100 × 2) ÷ 25
+    content: $(40 \times 3 + 50 \times 5 + 60 \times a + 70 \times b + 80 \times 2
+      + 90 \times 1 + 100 \times 2) \div 25$
   - label: D
-    content: (35 × 3 + 45 × 5 + 55 × a+ 65 × b+ 75 × 2 + 85 × 1 + 95 × 2) ÷ 33    。
+    content: $(35 \times 3 + 45 \times 5 + 55 \times a + 65 \times b + 75 \times 2
+      + 85 \times 1 + 95 \times 2) \div 33$
+  group_stem: '和和國中相當重視自主學習，為了鼓勵學生自主規劃與主動學習，每次段考後，學校都會針對自主學習時數前40名的學生給予獎勵，以提升全校學習氛圍。學校針對七年33班共25位同學進行了一項調查，記錄這些同學在一週內累積的自主學習做題數量，並將結果整理成次數分配表，如表(一)所示。不過部分資料沒有被登記到。
+
+
+    表(一)
+
+    | 做題數量（題） | 30~40 | 40~50 | 50~60 | 60~70 | 70~80 | 80~90 | 90~100 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數（人） | 3 | 5 | $a$ | $b$ | 2 | 1 | 2 |'
 - id: doc_113_新北_福和_數學_g7s2e3_s1_23
   section: 1
   number: 23
   type: single
   page: 3
-  stem: 承上題,已知本週有一半以上的人做題數量未達60題,且眾數是落在60~70題這一組。請判斷表(一)中做題數量 為60~70題的這一組人數b為多少人?
+  stem: 承上題，已知本週有一半以上的人做題數量未達60題，且眾數是落在60~70題這一組。請判斷表(一)中做題數量為60~70題的這一組人數 $b$ 為多少人？
   options:
   - label: A
     content: 5人
@@ -440,15 +624,32 @@ questions:
   - label: C
     content: 7人
   - label: D
-    content: 8人     。
-  group_stem: （第 22 題）若王老師想計算七年33班做題數量的平均數,請問以下計算方式何者正確?
+    content: 8人
+  group_stem: '和和國中相當重視自主學習，為了鼓勵學生自主規劃與主動學習，每次段考後，學校都會針對自主學習時數前40名的學生給予獎勵，以提升全校學習氛圍。學校針對七年33班共25位同學進行了一項調查，記錄這些同學在一週內累積的自主學習做題數量，並將結果整理成次數分配表，如表(一)所示。不過部分資料沒有被登記到。
+
+
+    表(一)
+
+    | 做題數量（題） | 30~40 | 40~50 | 50~60 | 60~70 | 70~80 | 80~90 | 90~100 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數（人） | 3 | 5 | $a$ | $b$ | 2 | 1 | 2 |'
 - id: doc_113_新北_福和_數學_g7s2e3_s1_24
   section: 1
   number: 24
   type: single
   page: 3
-  stem: 好好吃便當店的便當售價如表(二)所示。為響應環保,購買中份便當且自備便當盒可以折10元。若老闆想要讓自 備便當盒者,購買大份便當的每公克單價比中份便當每公克單價便宜,則當自備便當盒者購買大份便當時,老闆至
-    少要折多少元?
+  stem: '好好吃便當店的便當售價如表(二)所示。為響應環保，購買中份便當且自備便當盒可以折10元。若老闆想要讓自備便當盒者，購買大份便當的每公克單價比中份便當每公克單價便宜，則當自備便當盒者購買大份便當時，老闆至少要折多少元？
+
+
+    表(二)
+
+    | 品項 | 中份 (500克) | 大份 (750克) |
+
+    | :--- | :---: | :---: |
+
+    | 便當 | 100元 | 150元 |'
   options:
   - label: A
     content: 10元
@@ -457,13 +658,13 @@ questions:
   - label: C
     content: 15元
   - label: D
-    content: 16元     。 品項 中份 (500克) 大份 (750克) 便當100元150元 表(二) 〔第3頁,共4頁〕
+    content: 16元
 - id: doc_113_新北_福和_數學_g7s2e3_s1_25
   section: 1
   number: 25
   type: single
   page: 4
-  stem: 試問圖(八)的三視圖,下列選項中哪兩個視圖恰好相同?
+  stem: 試問圖(八)的三視圖，下列選項中哪兩個視圖恰好相同？
   options:
   - label: A
     content: 前視圖、右視圖
@@ -472,31 +673,24 @@ questions:
   - label: C
     content: 後視圖、左視圖
   - label: D
-    content: 後視圖、上視圖   。 前方 圖(八) 【生活素養題】 選舉是公民基於自由意願投票,依法選出行政首長或民意代表。例如我國總統由人民直接選舉產生,每人只能一票,立法
-      委員採「單一選區制」,即每一選區只選出一位區域立委;市議員採「複數選區制」,即每一選區中會選出多位議員。 假設某次立法委員選舉,共有3位候選人,採單一選區制,每一個區僅選出1人。已知該選區可投票人數為40萬人,若以
-      投票率70%,有效票比率96% 計算,則至少要獲得多少票才能篤定當選? 由上可得:投票數= 400000 × 70% = 280000;有效票= 280000
-      × 96% = 268800。 如果將有效票268800除以3,則每人得票數為89600票,事實上當候選人票數都非常少時,就算89601票也無法當選。
-      假設甲參選人得票為x票,則其他候選人的總得票數為(268800 −x)票。若要保證一定當選,則其得票數要大於所有落選 人的總票數,因此可以列出不等式:x>
-      268800 −x,得x> 134400。 所以至少要得到134400 + 1 = 134401(票)才能確定篤定當選。
+    content: 後視圖、上視圖
   assets:
-  - key: p4_f01
+  - key: s1_25_f1
     kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p4_f01.png
-  - key: p4_f02
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p4_f02.png
-  - key: p4_f03
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p4_f03.png
-  - key: p4_f04
-    kind: figure
-    file: doc_113_新北_福和_數學_g7s2e3/p4_f04.png
+    file: doc_113_新北_福和_數學_g7s2e3/s1_25_f1.png
+    crop:
+      page: 4
+      rect:
+      - 574.44
+      - 34.18
+      - 688.81
+      - 155.67
 - id: doc_113_新北_福和_數學_g7s2e3_s1_26
   section: 1
   number: 26
   type: single
   page: 4
-  stem: 花媽參加里長選舉,共5位候選人,應選出1人。已知該選區可投票人數為1800人,若以投票率70%,有效票 比率90% 計算,則花媽至少要獲得多少票才能篤定當選?
+  stem: 花媽參加里長選舉，共5位候選人，應選出1人。已知該選區可投票人數為1800人，若以投票率70%，有效票比率90%計算，則花媽至少要獲得多少票才能篤定當選？
   options:
   - label: A
     content: 567票
@@ -505,13 +699,27 @@ questions:
   - label: C
     content: 1134票
   - label: D
-    content: 1135票     。
+    content: 1135票
+  group_stem: '【生活素養題】
+
+    選舉是公民基於自由意願投票，依法選出行政首長或民意代表。例如我國總統由人民直接選舉產生，每人只能一票，立法委員採「單一選區制」，即每一選區只選出一位區域立委；市議員採「複數選區制」，即每一選區中會選出多位議員。
+
+    假設某次立法委員選舉，共有3位候選人，採單一選區制，每一個區僅選出1人。已知該選區可投票人數為40萬人，若以投票率 70%，有效票比率 96% 計算，則至少要獲得多少票才能篤定當選？
+
+    由上可得：投票數= $400000 \times 70\% = 280000$；有效票= $280000 \times 96\% = 268800$。
+
+    如果將有效票268800除以3，則每人得票數為89600票，事實上當候選人票數都非常少時，就算89601票也無法當選。
+
+    假設甲參選人得票為 $x$ 票，則其他候選人的總得票數為$(268800 - x)$票。若要保證一定當選，則其得票數要大於所有落選人的總票數，因此可以列出不等式：$x
+    > 268800 - x$，得 $x > 134400$。
+
+    所以至少要得到 $134400 + 1 = 134401$（票）才能確定篤定當選。'
 - id: doc_113_新北_福和_數學_g7s2e3_s1_27
   section: 1
   number: 27
   type: single
   page: 4
-  stem: 花爸參加市議員選舉,共18位候選人,應選出9人。已知該選區可投票人數為30萬人,若以投票率75%,有效 票比率80% 計算,則花爸至少要獲得多少票才能篤定當選?
+  stem: 花爸參加市議員選舉，共18位候選人，應選出9人。已知該選區可投票人數為30萬人，若以投票率75%，有效票比率80%計算，則花爸至少要獲得多少票才能篤定當選？
   options:
   - label: A
     content: 10001票
@@ -520,14 +728,30 @@ questions:
   - label: C
     content: 18001票
   - label: D
-    content: 20001票     。
+    content: 20001票
+  group_stem: '【生活素養題】
+
+    選舉是公民基於自由意願投票，依法選出行政首長或民意代表。例如我國總統由人民直接選舉產生，每人只能一票，立法委員採「單一選區制」，即每一選區只選出一位區域立委；市議員採「複數選區制」，即每一選區中會選出多位議員。
+
+    假設某次立法委員選舉，共有3位候選人，採單一選區制，每一個區僅選出1人。已知該選區可投票人數為40萬人，若以投票率 70%，有效票比率 96% 計算，則至少要獲得多少票才能篤定當選？
+
+    由上可得：投票數= $400000 \times 70\% = 280000$；有效票= $280000 \times 96\% = 268800$。
+
+    如果將有效票268800除以3，則每人得票數為89600票，事實上當候選人票數都非常少時，就算89601票也無法當選。
+
+    假設甲參選人得票為 $x$ 票，則其他候選人的總得票數為$(268800 - x)$票。若要保證一定當選，則其得票數要大於所有落選人的總票數，因此可以列出不等式：$x
+    > 268800 - x$，得 $x > 134400$。
+
+    所以至少要得到 $134400 + 1 = 134401$（票）才能確定篤定當選。'
 - id: doc_113_新北_福和_數學_g7s2e3_s1_28
   section: 1
   number: 28
   type: single
   page: 4
-  stem: 敏敏近期沉迷追某一部影集,已知此影集每集的片長相同,且每集有 $\frac{1}{10}$ 的時間是幕後花絮。 敏敏看了36小時的影集,剛好看完此影集總集數的90%。她發現這個周末只剩下3小時又52分鐘的休閒時間可
-    以看影集,若用正常播放速率無法看完剩下的集數。於是敏敏決定把每集的幕後花絮用x倍速播放,其餘以正常 速率播放。請問x的值至少是多少,敏敏才能在剩下時間內看完這部影集?                     (挑戰題)
+  stem: '敏敏近期沉迷追某一部影集，已知此影集每集的片長相同，且每集有 $\frac{1}{10}$ 的時間是幕後花絮。
+
+    敏敏看了36小時的影集，剛好看完此影集總集數的90%。她發現這個周末只剩下3小時又52分鐘的休閒時間可以看影集，若用正常播放速率無法看完剩下的集數。於是敏敏決定把每集的幕後花絮用
+    $x$ 倍速播放，其餘以正常速率播放。請問 $x$ 的值至少是多少，敏敏才能在剩下時間內看完這部影集？ (挑戰題)'
   options:
   - label: A
     content: '1.25'
@@ -536,4 +760,4 @@ questions:
   - label: C
     content: '1.75'
   - label: D
-    content: 2     。 〔第4頁,共4頁〕「試題結束」
+    content: '2'
