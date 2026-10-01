@@ -186,7 +186,24 @@ let INDEX = null;
 const groupCache = new Map();
 let current = null;          // {gi, doc}
 let db = null;
-let reports = new Map();     // code -> report
+let reports = new Map();     // code -> [每位審題者的回報]
+let reportDocs = new Map();  // 資料庫文件 ID -> 回報
+let userNs = null, ME = {id: null, name: ""};
+let NAMES = {};              // 審題者 ID -> 顯示名稱（每次從平台查，不存進資料庫）
+function who(id){ if (!id) return "（未記名）"; if (id === ME.id) return "你"; return NAMES[id] || "某位審題者"; }
+function myReportId(code){ return ME.id ? `${code}~${ME.id}` : code; }
+function myReport(code){ return (reports.get(code) || []).find(r => (r.by || null) === (ME.id || null)); }
+async function refreshNames(){
+  if (!userNs) return;
+  const ids = new Set();
+  for (const r of reportDocs.values()) if (r.by) ids.add(r.by);
+  for (const r of reviewed.values()) if (r.by) ids.add(r.by);
+  for (const r of crops.values()) if (r.by) ids.add(r.by);
+  if (![...ids].some(i => !(i in NAMES))) return;
+  const ps = await userNs.profiles([...ids]);
+  for (const i of ids) NAMES[i] = (ps[i] && ps[i].name) || "";
+  rerenderKeepingScroll();
+}
 let reviewed = new Map();    // docKey -> {at}
 let hideRejected = false, onlyReported = false, onlyOcr = false, onlyDisputed = false;
 
@@ -329,6 +346,7 @@ function renderPaper(){
     <label><input type="checkbox" id="tRep" ${onlyReported?"checked":""}> 只看已回報</label>
     <label><input type="checkbox" id="tDis" ${onlyDisputed?"checked":""}> 只看答案待判定</label>
     <button class="btn ${done?'':'pen'}" id="markDone" ${db?'':'disabled'}>${done?'取消「已審完」':'標記這份卷已審完'}</button>
+    ${done ? `<span class="sub">${esc(who(done.by))}已標記審完</span>` : ""}
   </div>`;
 
   const secName = Object.fromEntries((P.sections||[]).map(s=>[s.o, s.name]));
@@ -380,7 +398,8 @@ function openCropEditor(btn){
   let f = cropFrac(cm);
   const ed = document.createElement("div");
   ed.className = "cropedit";
-  ed.innerHTML = `<div class="sub">拖曳紅點調整四邊（也可以點紅點後用方向鍵微調）。灰色區域是可延伸的範圍。</div>
+  const last = crops.get(cropKey(cm.f));
+  ed.innerHTML = `<div class="sub">拖曳紅點調整四邊（也可以點紅點後用方向鍵微調）。灰色區域是可延伸的範圍。${last ? `目前是${esc(who(last.by))}調整過的範圍。` : ""}</div>
     <div class="stagewrap" style="width:min(100%, ${Math.max(cm.px, 480) + 28}px)"><div class="stage"><img src="${P.images[id]}" alt="附圖原卷範圍">
       <div class="sel">${["n","s","w","e"].map(k=>`<button type="button" class="hd" data-e="${k}" aria-label="${{n:"上",s:"下",w:"左",e:"右"}[k]}邊"></button>`).join("")}</div></div></div>
     <div class="row"><button class="btn pen" type="button" data-act="save">儲存邊緣</button>
@@ -428,7 +447,7 @@ function openCropEditor(btn){
       if (db && crops.has(cropKey(cm.f))) { try { await db.collection("crops").doc(cropKey(cm.f)).delete(); crops.delete(cropKey(cm.f)); } catch(err){} }
       close(); return;
     }
-    const body = {file: cm.f, doc: P.doc, page: cm.pg, rect, orig: cm.r, at: new Date().toISOString()};
+    const body = {file: cm.f, doc: P.doc, page: cm.pg, rect, orig: cm.r, by: ME.id, at: new Date().toISOString()};
     if (!db) { copyText(`附圖邊緣調整 ${cm.f} 第${cm.pg}頁 ${rect.join(",")}`, e.target); return; }
     try { await db.collection("crops").doc(cropKey(cm.f)).set(body); crops.set(cropKey(cm.f), body); close(); }
     catch(err){ ed.querySelector("[data-msg]").textContent = "儲存失敗：" + (err.code || err.message); }
@@ -447,7 +466,9 @@ function answerHTML(q, ans){
   return `<span>答案：<b>${inline(ans.join("、"))}</b>${chip}</span>`;
 }
 function questionHTML(q, P){
-  const r = reports.get(q.c);
+  const rs = reports.get(q.c) || [];
+  const r = rs.length ? rs : null;
+  const rcats = [...new Set(rs.flatMap(x => x.cats || []))];
   const ans = (q.ans || []).map(String);
   const optHTML = (q.opts||[]).length ? `<div class="opts">${q.opts.map(o => `<div class="opt ${ans.includes(o.l)?'correct':''}"><span class="l">(${esc(o.l)})</span><span>${rich(o.c)}${o.img? `<br>${imgTag(o.img, P, "選項"+o.l+"的圖", 120)}`:''}</span></div>`).join("")}</div>` : "";
   return `<div class="q ${q.ok?'':'rejected'} ${r?'reported':''}" id="q-${q.c}" data-code="${q.c}">
@@ -458,7 +479,7 @@ function questionHTML(q, P){
         <span class="chip">${esc(TYPE_NAME[q.t] || q.t)}</span>
         ${q.ok?'':'<span class="chip pen">已被品管剔除</span>'}
         ${q.ocr?'<span class="chip warn">掃描辨識</span>':''}
-        ${r?`<span class="chip pen">已回報：${esc((r.cats||[]).join("、") || "其他")}</span>`:''}
+        ${r?`<span class="chip pen">${rs.length > 1 ? rs.length + " 人" : esc(who(rs[0].by))}回報：${esc(rcats.join("、") || "其他")}</span>`:''}
       </div>
       ${q.stem?`<div class="stem">${rich(q.stem)}</div>`:''}
       ${q.imgs && q.imgs.length ? `<div class="figs">${figHTML(q.imgs, P)}</div>` : ""}
@@ -469,7 +490,7 @@ function questionHTML(q, P){
         ${q.tag?`<span>章節：${esc(q.tag)}</span>`:''}
         <button class="btn ${r?'':'pen'}" data-report="${q.c}">${r?'修改回報':'回報問題'}</button>
       </div>
-      ${r && r.note ? `<div class="report-note">回報說明：${esc(r.note)}</div>` : ""}
+      ${rs.filter(x => x.note).map(x => `<div class="report-note">${esc(who(x.by))}：${esc(x.note)}</div>`).join("")}
       <div class="report-slot"></div>
     </div>
   </div>`;
@@ -492,7 +513,7 @@ function openReport(code){
   const q = findQ(code); if (!q) return;
   const slot = document.querySelector(`#q-${code} .report-slot`);
   if (slot.innerHTML) { slot.innerHTML = ""; return; }
-  const r = reports.get(code) || {};
+  const r = myReport(code) || {};
   const sel = new Set(r.cats || []);
   slot.innerHTML = `<form class="report" id="rf-${code}">
     <div class="cats">${CATS.map((c,i)=>`<label><input type="checkbox" class="visually-hidden" id="rc-${code}-${i}" value="${esc(c)}" ${sel.has(c)?"checked":""}><span>${esc(c)}</span></label>`).join("")}</div>
@@ -501,7 +522,7 @@ function openReport(code){
     <div class="row">
       <button class="btn pen" type="submit">${db ? "儲存回報" : "複製回報內容"}</button>
       <button class="btn ghost" type="button" data-cancel>取消</button>
-      ${reports.has(code) && db ? '<button class="btn ghost" type="button" data-withdraw>撤回回報</button>' : ""}
+      ${myReport(code) && db ? '<button class="btn ghost" type="button" data-withdraw>撤回我的回報</button>' : ""}
       <span class="sub" data-status aria-live="polite"></span>
     </div>
   </form>`;
@@ -509,7 +530,7 @@ function openReport(code){
   form.querySelector("[data-cancel]").addEventListener("click", () => slot.innerHTML = "");
   const wd = form.querySelector("[data-withdraw]");
   if (wd) wd.addEventListener("click", async () => {
-    try { await db.collection("reports").doc(code).delete(); slot.innerHTML = ""; }
+    try { await db.collection("reports").doc(myReportId(code)).delete(); slot.innerHTML = ""; }
     catch(e){ form.querySelector("[data-status]").textContent = "撤回失敗：" + (e.code || e.message); }
   });
   form.addEventListener("submit", async e => {
@@ -521,7 +542,7 @@ function openReport(code){
     const G = current.group, P = current.paper;
     const body = {code, qid: q.id, doc: P.doc, school: P.school, grade: G.grade, subject: subjName(G),
       exam: `${G.year}-${G.sem}-${G.exam}`, number: q.n, section: q.s, cats, note,
-      at: new Date().toISOString()};
+      by: ME.id, at: new Date().toISOString()};
     if (!db) {
       const text = `${code}｜${P.school} ${G.year}學年度${EXAM_NAME[G.sem+"-"+G.exam]} 第${q.n}題｜${cats.join("、")}｜${note}`;
       copyText(text, form.querySelector("[type=submit]"));
@@ -529,7 +550,7 @@ function openReport(code){
       return;
     }
     status.textContent = "儲存中…";
-    try { await db.collection("reports").doc(code).set(body); slot.innerHTML = ""; }
+    try { await db.collection("reports").doc(myReportId(code)).set(body); slot.innerHTML = ""; }
     catch(e){
       status.textContent = e.code === "invalid_argument" ? "你在這份網頁的權限只能檢視，無法儲存回報" :
         e.code === "quota_exceeded" ? "回報數量已達上限（5,000 筆），請先整理舊的回報" : "儲存失敗，請再試一次";
@@ -537,14 +558,14 @@ function openReport(code){
   });
   form.querySelector("textarea").focus();
 }
-function countReports(doc){ let n = 0; for (const r of reports.values()) if (r.doc === doc) n++; return n; }
+function countReports(doc){ let n = 0; for (const rs of reports.values()) if (rs[0].doc === doc) n++; return n; }
 function docKey(doc){ let h = 0; for (const ch of doc) h = (h * 31 + ch.codePointAt(0)) >>> 0; return "d" + h.toString(36); }
 async function toggleDone(){
   if (!db || !current) return;
   const k = docKey(current.paper.doc);
   try {
     if (reviewed.has(k)) await db.collection("reviewed").doc(k).delete();
-    else await db.collection("reviewed").doc(k).set({doc: current.paper.doc, at: new Date().toISOString()});
+    else await db.collection("reviewed").doc(k).set({doc: current.paper.doc, by: ME.id, at: new Date().toISOString()});
   } catch(e){ /* 權限不足時按鈕沒有作用，由 banner 說明 */ }
 }
 function renderReportStats(){
@@ -556,14 +577,14 @@ function renderReportStats(){
   const b = $("#openDrawer"); if (b) b.addEventListener("click", openDrawer);
 }
 function openDrawer(){
-  const list = [...reports.values()].sort((a,b)=>String(b.at).localeCompare(String(a.at)));
-  $("#drawerList").innerHTML = list.map(r => `<li><a data-go="${esc(r.code)}">${esc(r.code)}</a>　${esc(r.school)} ${esc(r.exam)} 第${esc(r.number)}題・${esc((r.cats||[]).join("、"))}${r.note?"・"+esc(r.note):""}</li>`).join("");
+  const list = [...reportDocs.values()].sort((a,b)=>String(b.at).localeCompare(String(a.at)));
+  $("#drawerList").innerHTML = list.map(r => `<li><a data-go="${esc(r.code)}">${esc(r.code)}</a>　${esc(r.school)} ${esc(r.exam)} 第${esc(r.number)}題・${esc((r.cats||[]).join("、"))}${r.note?"・"+esc(r.note):""}　<span class="sub">— ${esc(who(r.by))}</span></li>`).join("");
   $("#drawerList").querySelectorAll("[data-go]").forEach(a => a.addEventListener("click", () => jumpTo(a.dataset.go)));
   $("#drawer").hidden = false;
 }
 $("#closeDrawer").addEventListener("click", () => $("#drawer").hidden = true);
 $("#copyAll").addEventListener("click", e => {
-  const text = [...reports.values()].map(r => `${r.code}｜${r.school} ${r.exam} 第${r.number}題｜${(r.cats||[]).join("、")}｜${r.note||""}`).join("\n");
+  const text = [...reportDocs.values()].map(r => `${r.code}｜${r.school} ${r.exam} 第${r.number}題｜${(r.cats||[]).join("、")}｜${r.note||""}｜${who(r.by)}`).join("\n");
   copyText(text, e.target);
 });
 
@@ -620,16 +641,32 @@ async function initDb(){
     renderReportStats();
     return;
   }
+  userNs = await use("user");
+  if (userNs) {
+    ME = await userNs.me();
+    const canWrite = await userNs.can("data.write");
+    $("#builtInfo").textContent += ME.name ? `・審題者：${ME.name}` : "";
+    if (canWrite === false) {
+      const bn = $("#dbBanner");
+      bn.hidden = false;
+      bn.textContent = "你目前只有檢視權限：可以看題目，但回報、調整邊緣、標記審完都無法儲存。請向這份網頁的擁有者要求「可參與」以上的權限。";
+    }
+  }
   db.collection("reports").onSnapshot(s => {
-    reports = new Map(s.docs.map(d => [d.id, d.data()]));
+    reportDocs = new Map(s.docs.map(d => [d.id, d.data()]));
+    reports = new Map();
+    for (const r of reportDocs.values()) { if (!reports.has(r.code)) reports.set(r.code, []); reports.get(r.code).push(r); }
+    refreshNames();
     rerenderKeepingScroll();
   }, () => {});
   db.collection("crops").onSnapshot(s => {
     crops = new Map(s.docs.map(d => [d.id, d.data()]));
+    refreshNames();
     rerenderKeepingScroll();
   }, () => {});
   db.collection("reviewed").onSnapshot(s => {
     reviewed = new Map(s.docs.map(d => [d.id, d.data()]));
+    refreshNames();
     rerenderKeepingScroll();
   }, () => {});
 }
