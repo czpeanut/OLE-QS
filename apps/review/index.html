@@ -424,6 +424,10 @@ function openCropEditor(btn){
   ed.querySelector("[data-act=save]").addEventListener("click", async e => {
     const R = cm.R, W = R[2]-R[0], H = R[3]-R[1], r2 = v => Math.round(v*100)/100;
     const rect = [r2(R[0]+f.l*W), r2(R[1]+f.t*H), r2(R[0]+(f.l+f.w)*W), r2(R[1]+(f.t+f.h)*H)];
+    if (rect.every((v, i) => Math.abs(v - cm.r[i]) < 0.5)) {   // 沒有改變：視同還原，不留紀錄
+      if (db && crops.has(cropKey(cm.f))) { try { await db.collection("crops").doc(cropKey(cm.f)).delete(); crops.delete(cropKey(cm.f)); } catch(err){} }
+      close(); return;
+    }
     const body = {file: cm.f, doc: P.doc, page: cm.pg, rect, orig: cm.r, at: new Date().toISOString()};
     if (!db) { copyText(`附圖邊緣調整 ${cm.f} 第${cm.pg}頁 ${rect.join(",")}`, e.target); return; }
     try { await db.collection("crops").doc(cropKey(cm.f)).set(body); crops.set(cropKey(cm.f), body); close(); }
