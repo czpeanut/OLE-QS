@@ -366,12 +366,12 @@ function cropFrac(cm){
 function imgTag(id, P, alt, maxH){
   if (!P.images[id]) return '<span class="missing">圖檔遺失</span>';
   const cm = P.cm && P.cm[id];
-  if (!cm) return `<img src="${P.images[id]}" alt="${esc(alt)}" loading="lazy">`;
+  if (!cm) return `<img src="${P.images[id]}" alt="${esc(alt)}">`;
   const f = cropFrac(cm), H = cm.px * (cm.R[3]-cm.R[1]) / (cm.R[2]-cm.R[0]);
   const iw = f.w * cm.px, ih = f.h * H;                      // 裁切範圍在圖上的像素大小
   const width = Math.min(iw, maxH * iw / ih);
   return `<span class="cropwrap"><span class="cropbox ${f.adjusted?'adjusted':''}" data-img="${id}" style="width:${width.toFixed(0)}px;max-width:100%;aspect-ratio:${iw.toFixed(1)}/${ih.toFixed(1)}">
-    <img src="${P.images[id]}" alt="${esc(alt)}" loading="lazy" style="width:${(100/f.w).toFixed(3)}%;left:${(-f.l/f.w*100).toFixed(3)}%;top:${(-f.t/f.h*100).toFixed(3)}%"></span>
+    <img src="${P.images[id]}" alt="${esc(alt)}" decoding="async" style="width:${(100/f.w).toFixed(3)}%;left:${(-f.l/f.w*100).toFixed(3)}%;top:${(-f.t/f.h*100).toFixed(3)}%"></span>
     <button class="cropbtn" type="button" data-crop="${id}">${f.adjusted?'已調整邊緣・再調整':'調整邊緣'}</button></span>`;
 }
 function openCropEditor(btn){
