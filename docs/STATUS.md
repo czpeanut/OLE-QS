@@ -99,3 +99,20 @@ python scripts/classify_chapters.py data/bank --ledger out/chapter_spend.json --
 
 重建：`python scripts/build_review_site.py data/bank --assets data/assets -o out/rv7 --grade 7 --sites 7=…,8=…,9=…`。
 回報存在各站的 `reports` 集合（文件 ID 是審題編號），審完的卷存在 `reviewed`。
+
+### 附圖邊緣調整（2026-10-01）
+
+每張附圖、選項圖下方有「調整邊緣」：顯示裁切範圍四周多留 8% 的原卷影像，拖曳四邊
+（或點選後用方向鍵）調整，儲存到該站資料庫的 `crops` 集合。套用方式：
+
+```bash
+# 1. 匯出各站 crops 集合成 JSON（Claude 用 ArtifactData list，out_dir 指到 out/crops）
+# 2. 從原卷 PDF 依新範圍重裁（220 DPI）並更新題庫的 crop 位置
+python scripts/apply_crops.py out/crops --pdf-root <考卷根目錄>
+# 3. 重建並重新發佈審題網頁
+python scripts/build_review_site.py data/bank --assets data/assets -o out/rv7 --grade 7 \
+    --sites 7=…,8=…,9=… --pdf-root <考卷根目錄>
+```
+
+舊卷的裁切位置用 `scripts/recover_crops.py` 以模板比對從 PDF 找回（35,084 張，6 張找不到）；
+新擷取的卷在擷取時直接記錄。規則式舊卷的圖來源不同，沒有調整功能。
