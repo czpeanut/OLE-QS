@@ -1,114 +1,115 @@
 document:
-  academic_year_roc: 113
-  semester: 1
-  school: 高雄市立楠梓國民中學
   grade: 7
   subject: 數學
+  academic_year_roc: 113
+  semester: 1
   exam_seq: 2
   city: 高雄
   school_short: 楠梓
+  school: 高雄市立楠梓國民中學
   id: doc_113_高雄_楠梓_數學_g7s1e2
-  title: 高雄市立楠梓國民中學 113學年度第1學期第2次定期評量7年級數學科試題
+  title: 高雄市立楠梓國民中學 113學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題:(每題3分,共30分)
+    name: 一、選擇題：(每題3 分，共30 分)
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、填充題:(每格3分,共54分)
+    name: 二、填充題：(每格3 分，共54 分)
     count: 10
   - ord: 3
-    name: 三、計算題
-    type: calc
-    score_rule: 三、計算題:(每題4分,共16分) (須列出完整計算過程或說明理由)
+    name: 三、計算題：(每題4 分，共16 分) (須列出完整計算過程或說明理由)
     count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-2/高雄/楠梓.pdf
 questions:
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 有多少個正整數同時是10的倍數,也是360的因數?
+  stem: 有多少個正整數同時是10 的倍數，也是360 的因數？
   options:
   - label: A
-    content: 7個
+    content: 7 個
   - label: B
-    content: 8個
+    content: 8 個
   - label: C
-    content: 9個
+    content: 9 個
   - label: D
-    content: 10個
+    content: 10 個
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 下列哪一個數與22×52×7互質?
+  stem: 下列哪一個數與$2^{2}\times 5^{2}\times 7$ 互質？
   options:
   - label: A
-    content: 32×72
+    content: $3^{2}\times 7^{2}$
   - label: B
-    content: 23×53
+    content: $2^{3}\times 5^{3}$
   - label: C
-    content: 3×42
+    content: $3\times 4^{2}$
   - label: D
-    content: 32×11
+    content: $3^{2}\times 11$
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 已知a=-$\frac{3}{4c}$ ,b=-$\frac{7}{9}$ ,c=-$\frac{5}{8a}$ ,則a、b、c三數的大小關係為何?
+  stem: 已知$a＝-\frac{3}{4}$，$b＝-\frac{7}{9}$，$c＝-\frac{5}{8}$，則$a$、$b$、$c$ 三數的大小關係為何？
   options:
   - label: A
-    content: b>a>
+    content: $b＞a＞c$
   - label: B
-    content: c>>b
+    content: $c＞a＞b$
   - label: C
-    content: a>c>b
+    content: $a＞c＞b$
   - label: D
-    content: b>c>a
+    content: $b＞c＞a$
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 已知a=-$\frac{5}{12}$ ,b=-$\frac{6}{17}$ ,c=$\frac{7}{1a9}$ ,判別下列各式的值何者最大?
+  stem: 已知$a＝-\frac{5}{12}$，$b＝-\frac{6}{17}$，$c＝\frac{7}{19}$，判別下列各式的值何者最大？
   options:
   - label: A
-    content: '|a-b+c|'
+    content: ｜$a-b+c$｜
   - label: B
-    content: '|+b-c|'
+    content: ｜$a+b-c$｜
   - label: C
-    content: '|a-b-c|'
+    content: ｜$a-b-c$｜
   - label: D
-    content: '|a+b+c|'
+    content: ｜$a+b+c$｜
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: '[ (-$\frac{2}{71}$ )+$\frac{5}{8}$ ]÷13= (-$\frac{2}{7}$ )÷13+$\frac{5}{8}$
-      ÷13'
+    content: '[ ($-\frac{2}{7}$)$+\frac{5}{8}$ ]$\div 13＝$ ($-\frac{2}{7}$)$\div 13+\frac{5}{8}\div
+      13$'
   - label: B
-    content: 13÷ [ (-$\frac{2}{7}$ )+$\frac{5}{8}$ ]=13÷ (-$\frac{2}{7}$ ) + 13÷ $\frac{5}{8}$
+    content: $13\div$ [ ($-\frac{2}{7}$)$+\frac{5}{8}$ ]$＝13\div$ ($-\frac{2}{7}$)
+      ＋ $13\div\frac{5}{8}$
   - label: C
-    content: $\frac{2}{3}$ - 5 =-$\frac{1}{2}$
+    content: $\frac{2}{3}-\frac{1}{5}＝-\frac{1}{2}$
   - label: D
-    content: -1的倒數是1
+    content: $-1$ 的倒數是1
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 甲:「a是6的倍數,也是8的倍數,則a一定是48的倍數。」 乙:「a是6的倍數,也是5的倍數,則a一定是30的倍數。」 下列選項何者正確?
+  stem: '甲：「$a$ 是6 的倍數，也是8 的倍數，則$a$ 一定是48 的倍數。」
+
+    乙：「$a$ 是6 的倍數，也是5 的倍數，則$a$ 一定是30 的倍數。」
+
+    下列選項何者正確？'
   options:
   - label: A
     content: 兩人皆正確
@@ -123,7 +124,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 若a、b為正整數,且a×b=23×35×5,則下列何者不可能為a、b的最大公因數?
+  stem: 若$a$、$b$ 為正整數，且$a\times b＝2^{3}\times 3^{5}\times 5$，則下列何者不可能為$a$、$b$ 的最大公因數？
   options:
   - label: A
     content: '1'
@@ -138,158 +139,173 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 已知a、b、c為三正整數,且a、b的最大公因數為45,a、c的最大公因數為75。若a介於200與250之間, 則下列敘述何者正確?
+  stem: 已知$a$、$b$、$c$ 為三正整數，且$a$、$b$ 的最大公因數為45，$a$、$c$ 的最大公因數為75。若$a$ 介於200 與250 之間，則下列敘述何者正確？
   options:
   - label: A
-    content: 25是a的因數,25是c的因數
+    content: 25 是$a$ 的因數，25 是$c$ 的因數
   - label: B
-    content: 25不是a的因數,25是c的因數
+    content: 25 不是$a$ 的因數，25 是$c$ 的因數
   - label: C
-    content: 25不是a的因數,25是b的因數
+    content: 25 不是$a$ 的因數，25 是$b$ 的因數
   - label: D
-    content: 25不是a的因數,25不是b的因數
+    content: 25 不是$a$ 的因數，25 不是$b$ 的因數
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 已知某文具店販售的筆記本每本售價均相等且超過10元,小錦和小勳在此文具店分別購買若干本筆記本。若小 錦購買筆記本的花費為42元,則小勳購買筆記本的花費可能為下列何者?
+  stem: 已知某文具店販售的筆記本每本售價均相等且超過10 元，小錦和小勳在此文具店分別購買若干本筆記本。若小錦購買筆記本的花費為42 元，則小勳購買筆記本的花費可能為下列何者？
   options:
   - label: A
-    content: 48元
+    content: 48 元
   - label: B
-    content: 50元
+    content: 50 元
   - label: C
-    content: 64元
+    content: 64 元
   - label: D
-    content: 70元
+    content: 70 元
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 下列何者與960的最大公因數為96?
+  stem: 下列何者與960 的最大公因數為96？
   options:
   - label: A
-    content: 16×20
+    content: $16\times 20$
   - label: B
-    content: 24×36
+    content: $24\times 36$
   - label: C
-    content: 32×15
+    content: $32\times 15$
   - label: D
-    content: 48×8
+    content: $48\times 8$
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 如果五位數495□6是4的倍數,那麼□內可以填入_________________。(全對才給分)
+  stem: 如果五位數495□6 是4 的倍數，那麼□內可以填入_________________。(全對才給分)
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 1
-  stem: 如果六位數125□64是3的倍數,那麼□內可以填入_________________。(全對才給分)
+  stem: 如果六位數125□64 是3 的倍數，那麼□內可以填入_________________。(全對才給分)
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: 如果七位數8□71902是11的倍數,那麼□內應該填入_________________。
+  stem: 如果七位數8□71902 是11 的倍數，那麼□內應該填入_________________。
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_4
   section: 2
   number: 4
-  type: single
+  type: fill
   page: 1
-  stem: 以下是2527113的因數有哪些?答:_____________。(以代號作答,全對才給分。)
-  options:
-  - label: A
-    content: 223
-  - label: B
-    content: 27211
-  - label: C
-    content: 5112
-  - label: D
-    content: 5710
-  - label: E
-    content: 2527113
+  stem: '以下是$2\times 5^{2}\times 7\times 11^{3}$ 的因數有哪些？答：_____________。(以代號作答，全對才給分。)
+
+    (A) $2^{2}\times 3$
+
+    (B) $2\times 7^{2}\times 11$
+
+    (C) $5\times 11^{2}$
+
+    (D) $5\times 7\times 10$
+
+    (E) $2\times 5^{2}\times 7\times 11^{3}$'
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_5
   section: 2
   number: 5
-  type: single
+  type: fill
   page: 2
-  stem: 以下是88的倍數有哪些?答:_____________。(以代號作答,全對才給分。)
-  options:
-  - label: A
-    content: '24'
-  - label: B
-    content: 23511
-  - label: C
-    content: 2411
-  - label: D
-    content: 23112
-  - label: E
-    content: 2452
+  stem: '以下是88 的倍數有哪些？答：_____________。(以代號作答，全對才給分。)
+
+    (A) $2^{4}$
+
+    (B) $2^{3}\times 5\times 11$
+
+    (C) $2^{4}\times 11$
+
+    (D) $2^{3}\times 11^{2}$
+
+    (E) $2^{4}\times 5^{2}$'
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: '將下列各數作質因數分解,並寫成標準分解式: (1)  273 =_______________ (2)  1125=_______________'
+  stem: '將下列各數作質因數分解，並寫成標準分解式：
+
+    (1) 273 ＝_______________
+
+    (2) $112\times 5$＝_______________'
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 若3×a、5×a的最大公因數是30,則2×a、3×a、300的最小公倍數是___________。
+  stem: 若 $3\times a$、$5\times a$ 的最大公因數是 30，則 $2\times a$、$3\times a$、300 的最小公倍數是___________。
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: '求下列各組數的最大公因數: (1)  ( 27 , 7 , 74 ) =_______________ (2)  ( 280 , 24×32×7
-    ) =_______________'
+  stem: '求下列各組數的最大公因數：
+
+    (1) ( $2^{7}$ , 7 , $7^{4}$ ) ＝_______________
+
+    (2) ( 280 , $2^{4}\times 3^{2}\times 7$ ) ＝_______________'
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: '求下列各組數的最小公倍數,並以標準分解式作答: (2)  [ 27 , 7 , 74 ] =_______________ (2)  [ 28 ,
-    40 , 35 ] =_______________'
+  stem: '求下列各組數的最小公倍數，並以標準分解式作答：
+
+    (1) [ $2^{7}$ , 7 , $7^{4}$ ] ＝_______________
+
+    (2) [ 28 , 40 , 35 ] ＝_______________'
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 計算下列各式的值:(答案若為分數,須化為最簡分數作答。) =__________ (2)  239 $\frac{5}{6}$ (1)  -58-1
-    $\frac{3}{4}$ )- [ (-$\frac{5}{79}$ )+$\frac{9}{13}$ ]=__________ (4)  $\frac{2}{3}$
-    (3)  (-$\frac{17}{13}$ (5)  3 $\frac{3}{10}$ ÷(-4 $\frac{1}{2}$ )-4 ×(-1 $\frac{3}{4}$
-    )=__________ (6)  (1 $\frac{2}{11}$
+  stem: '計算下列各式的值：(答案若為分數，須化為最簡分數作答。)
+
+    (1) $-58-1\frac{3}{4}＝$__________
+
+    (2) $239\frac{5}{6}-243\frac{5}{9}＝$__________
+
+    (3) ($-1\frac{7}{13}$)$-$ [ ($-5\frac{7}{9}$)$+\frac{9}{13}$ ]$＝$__________
+
+    (4) $\frac{2}{3}-$（$\frac{1}{6}-\frac{3}{2}$）$＝$__________
+
+    (5) $3\frac{3}{10}\div (-4\frac{1}{2})-4\times (-1\frac{3}{4})＝$__________
+
+    (6) ($1\frac{2}{11}-2\frac{1}{13}$)$\times 143＝$__________'
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: 杰倫想用長12公分、寬15公分、高9公分的長方體積 木,堆成一個邊長大於300公分的實心正方體,且所有 的積木都依相同方向排列,則至少要使用多少塊積木才
-    能堆置而成?
+  stem: 杰倫想用長12 公分、寬15 公分、高9 公分的長方體積木，堆成一個邊長大於300 公分的實心正方體，且所有的積木都依相同方向排列，則至少要使用多少塊積木才能堆置而成？
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 2
-  stem: 有一條公路全長1800公尺,自起點開始,在中央分隔 島上每隔30公尺設置一盞路燈,且起點處有設置路 燈;為歡度國慶,自起點開始,每隔8公尺設立一面旗
-    幟。後來因為市長認為有路燈的地方設置旗幟實在不美 觀,故將設置於路燈處的旗幟都拆除了,請求出後來僅 設置了多少面旗幟? - 243 $\frac{5}{9}$
-    =__________ -($\frac{1}{6}$ -$\frac{3}{2}$ )=__________ -2 $\frac{1}{13}$ )× 143=__________
+  stem: 有一條公路全長1800 公尺，自起點開始，在中央分隔島上每隔30 公尺設置一盞路燈，且起點處有設置路燈；為歡度國慶，自起點開始，每隔8 公尺設立一面旗幟。後來因為市長認為有路燈的地方設置旗幟實在不美觀，故將設置於路燈處的旗幟都拆除了，請求出後來僅設置了多少面旗幟？
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s3_3
   section: 3
   number: 3
   type: calc
   page: 2
-  stem: 偉成、嘉裕、正信三人,同時從同地出發,朝同方向繞 一個周長為1080公尺的環狀步道行走,偉成每分鐘走72公尺,嘉裕每分鐘走60公尺,正信每分鐘走54公
-    尺。出發後,第一次三人會合於出發點時,嘉裕已經繞 了幾圈?
+  stem: 偉成、嘉裕、正信三人，同時從同地出發，朝同方向繞一個周長為1080 公尺的環狀步道行走，偉成每分鐘走72 公尺，嘉裕每分鐘走60 公尺，正信每分鐘走54
+    公尺。出發後，第一次三人會合於出發點時，嘉裕已經繞了幾圈？
 - id: doc_113_高雄_楠梓_數學_g7s1e2_s3_4
   section: 3
   number: 4
   type: calc
   page: 2
-  stem: 有一個機器人,從數線上點A(-6 $\frac{5}{8}$ )的位置等速前進, 若此機器人走1小時到達點B( $\frac{5}{8}$ ),再走1小時到達C點,求C點的坐標。
+  stem: 有一個機器人，從數線上點A($-6\frac{5}{8}$)的位置等速前進，若此機器人走1 小時到達點B($\frac{5}{8}$)，再走1 小時到達C
+    點，求C 點的坐標。

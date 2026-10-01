@@ -1,55 +1,57 @@
 document:
-  academic_year_roc: 113
-  semester: 2
-  school: 高雄市立楠梓國民中學
   grade: 7
   subject: 數學
+  academic_year_roc: 113
+  semester: 2
   exam_seq: 2
   city: 高雄
   school_short: 楠梓
+  school: 高雄市楠梓國民中學
   id: doc_113_高雄_楠梓_數學_g7s2e2
-  title: 高雄市立楠梓國民中學 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 高雄市楠梓國民中學 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
     name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題(每題3分;共36分)
     count: 12
   - ord: 2
     name: 二、填充題
-    type: fill
-    score_rule: 二、填充題(每題4分;共48分)
     count: 12
+  - ord: 3
+    name: 三、計算題
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-2/高雄/楠梓.pdf
 questions:
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 甲、乙兩人分別以固定的速率由A地出發前往B地,已知甲花了3小時,乙花了2小時,則甲、乙兩人的速率比為下 !" !! 列何者?
+  stem: 甲、乙兩人分別以固定的速率由 $A$ 地出發前往 $B$ 地，已知甲花了 $3\frac{1}{3}$ 小時，乙花了 $2\frac{3}{4}$
+    小時，則甲、乙兩人的速率比為下列何者？
   options:
   - label: A
-    content: $
+    content: '$\frac{10}{3} : \frac{11}{4}$'
   - label: B
-    content: '40:33'
+    content: '$40 : 33$'
   - label: C
-    content: '10:11'
+    content: '$10 : 11$'
   - label: D
-    content: '33:40 # :'
+    content: '$33 : 40$'
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 坐標平面上,關於二元一次方程式-2x+3y=6的圖形,下列敘述何者正確?
+  stem: 坐標平面上，關於二元一次方程式 $-2x+3y=6$ 的圖形，下列敘述何者正確？
   options:
   - label: A
     content: 圖形不經過第四象限
   - label: B
-    content: 圖形與x軸交於(3 , 0)
+    content: 圖形與 $x$ 軸交於 $(3,0)$
   - label: C
-    content: 圖形與y軸交於(0 , -2)
+    content: 圖形與 $y$ 軸交於 $(0,-2)$
   - label: D
     content: 圖形通過原點
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_3
@@ -57,91 +59,94 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 如右圖,直線L1、L2其中一條為x軸,直線M1、M2其中一條為y軸,若直線N為方程式2x-y=-8的圖形,那麼圖中N的A、B、C、D四點,哪一點可能是原點?
+  stem: 如右圖，直線 $L_{1}$、$L_{2}$ 其中一條為 $x$ 軸，直線 $M_{1}$、$M_{2}$ 其中一條為 $y$ 軸，若直線 $N$
+    為方程式 $2x-y=-8$ 的圖形，那麼圖中的 $A$、$B$、$C$、$D$ 四點，哪一點可能是原點？
   options:
   - label: A
-    content: A
+    content: $A$
   - label: B
-    content: B
+    content: $B$
   - label: C
-    content: C
+    content: $C$
   - label: D
-    content: D M1 M2 D A L1 L2 B C
+    content: $D$
   assets:
-  - key: p1_f01
+  - key: s1_3_f1
     kind: figure
-    file: doc_113_高雄_楠梓_數學_g7s2e2/p1_f01.png
+    file: doc_113_高雄_楠梓_數學_g7s2e2/s1_3_f1.png
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: '小涵與阿嘉一起去咖啡店購買同款咖啡豆,咖啡豆每公克的價錢固定,購買時自備容器則結帳金額再減15元。若小涵購 買咖啡豆300公克且自備容器,需支付385元;阿嘉購買咖啡豆x公克但沒有自備容器,需支付y元,則y與x的關係式
-    $ #x'
+  stem: 小涵與阿嘉一起去咖啡店購買同款咖啡豆，咖啡豆每公克的價錢固定，購買時自備容器則結帳金額再減 15 元。若小涵購買咖啡豆 300 公克且自備容器，需支付
+    385 元；阿嘉購買咖啡豆 $x$ 公克但沒有自備容器，需支付 $y$ 元，則 $y$ 與 $x$ 的關係式為下列何者？
   options:
-  - label: B
-    content: 'y= # $x'
-  - label: C
-    content: 'y= $ #x+15'
-  - label: D
-    content: y= %% &"x+5為下列何者?
   - label: A
-    content: y=
+    content: $y=\frac{4}{3}x$
+  - label: B
+    content: $y=\frac{3}{4}x$
+  - label: C
+    content: $y=\frac{4}{3}x+15$
+  - label: D
+    content: $y=\frac{77}{60}x+5$
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 如果a:b=4:5,則下列敘述何者錯誤?
+  stem: 如果 $a:b=4:5$，則下列敘述何者錯誤？
   options:
   - label: A
-    content: a:3b=4:15
+    content: $a:3b=4:15$
   - label: B
-    content: (a+b):(a-b)=9:(-1)
+    content: $(a+b):(a-b)=9:(-1)$
   - label: C
-    content: a2:b2=16:25
+    content: $a^{2}:b^{2}=16:25$
   - label: D
-    content: (a+1):(b+2)=5:7 $\frac{1}{5}$ $\frac{1}{61}$ 5 $\frac{1}{6}$
+    content: $(a+1):(b+2)=5:7$
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 如果x= y,且x、y皆不等於0,則下列哪一個選項正確?
+  stem: 如果 $\frac{1}{5}x=\frac{1}{6}y$，且 $x$、$y$ 皆不等於 0，則下列哪一個選項正確？
   options:
   - label: A
-    content: 'x:y= :'
+    content: $x:y=\frac{1}{5}:\frac{1}{6}$
   - label: B
-    content: x:y=5:6
+    content: $x:y=5:6$
   - label: C
-    content: x:y=6:5
+    content: $x:y=6:5$
   - label: D
-    content: x:y=36:25
+    content: $x:y=36:25$
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 如右圖,長方形ABCD中,M、N兩點分別是 、 的中點,且長方形AMND分成甲、乙AB CD兩長方形,長方形MBCN分成丙、丁兩長方形。 若甲面積:乙面積比=7:5,丙面積:丁面積比=4:5,則乙面積:丙面積比=?
+  stem: 如右圖，長方形 $ABCD$ 中，$M$、$N$ 兩點分別是 $\overline{AB}$、$\overline{CD}$ 的中點，且長方形 $AMND$
+    分成甲、乙兩長方形，長方形 $MBCN$ 分成丙、丁兩長方形。若甲面積：乙面積比 $=7:5$，丙面積：丁面積比 $=4:5$，則乙面積：丙面積比 $=$？
   options:
   - label: A
-    content: '28:25'
+    content: $28:25$
   - label: B
-    content: '7:4'
+    content: $7:4$
   - label: C
-    content: '1:1'
+    content: $1:1$
   - label: D
-    content: '15:16'
+    content: $15:16$
   assets:
-  - key: p1_f02
+  - key: s1_7_f1
     kind: figure
-    file: doc_113_高雄_楠梓_數學_g7s2e2/p1_f02.png
+    file: doc_113_高雄_楠梓_數學_g7s2e2/s1_7_f1.png
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 已知有大、小兩種紙杯與甲、乙兩桶果汁,其中小紙杯與大紙杯的容量比為3:4,甲桶果汁與乙桶果汁的體積比為5:6。若甲桶內的果汁剛好裝滿小紙杯100個,則乙桶內的果汁最多可裝滿幾個大紙杯?
+  stem: 已知有大、小兩種紙杯與甲、乙兩桶果汁，其中小紙杯與大紙杯的容量比為 $3:4$，甲桶果汁與乙桶果汁的體積比為 $5:6$。若甲桶內的果汁剛好裝滿小紙杯
+    100 個，則乙桶內的果汁最多可裝滿幾個大紙杯？
   options:
   - label: A
     content: '81'
@@ -156,42 +161,42 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: '如右圖,將長方形ABCD分割成1個灰色長方形與196個面積相等的小正方形。根據右圖,若AD AB灰色長方形之長與寬的比為5:3,則 : =?'
+  stem: 如右圖，將長方形 $ABCD$ 分割成 1 個灰色長方形與 196 個面積相等的小正方形。根據右圖，若灰色長方形之長與寬的比為 $5:3$，則 $\overline{AD}:\overline{AB}=$？
   options:
   - label: A
-    content: '5:3'
+    content: $5:3$
   - label: B
-    content: '7:5'
+    content: $7:5$
   - label: C
-    content: '31:19'
+    content: $31:19$
   - label: D
-    content: '23:14'
+    content: $23:14$
   assets:
-  - key: p1_f03
+  - key: s1_9_f1
     kind: figure
-    file: doc_113_高雄_楠梓_數學_g7s2e2/p1_f03.png
+    file: doc_113_高雄_楠梓_數學_g7s2e2/s1_9_f1.png
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 在坐標平面上,二元一次方程式3x-2y=-7與2x-y=k的圖形交於一點,如果此兩條直線交點的x坐標為-1, 則k=?
+  stem: 在坐標平面上，二元一次方程式 $3x-2y=-7$ 與 $2x-y=k$ 的圖形交於一點，如果此兩條直線交點的 $x$ 坐標為 $-1$，則 $k=$？
   options:
   - label: A
-    content: '-4'
+    content: $-4$
   - label: B
-    content: '-3'
+    content: $-3$
   - label: C
     content: '4'
   - label: D
-    content: 11 1
+    content: '11'
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 有一東西向的直線吊橋橫跨溪谷,小維、阿良分 別從西橋頭、東橋頭同時開始往吊橋的另一頭筆 直地走過去,如下圖。已知小維從西橋頭走了72步,阿良從東橋頭走了45步時,兩人在吊橋上的
-    某點交會,且交會之後阿良再走54步恰好走到西橋頭。若小維每步的距離相等,阿良每步的距離相等,則交會之後小 維再走多少步會恰好走到東橋頭?
+  stem: 有一東西向的直線吊橋橫跨溪谷，小維、阿良分別從西橋頭、東橋頭同時開始往吊橋的另一頭筆直地走過去，如下圖。已知小維從西橋頭走了 72 步，阿良從東橋頭走了
+    45 步時，兩人在吊橋上的某點交會，且交會之後阿良再走 54 步恰好走到西橋頭。若小維每步的距離相等，阿良每步的距離相等，則交會之後小維再走多少步會恰好走到東橋頭？
   options:
   - label: A
     content: '45'
@@ -202,97 +207,142 @@ questions:
   - label: D
     content: '72'
   assets:
-  - key: p2_f01
+  - key: s1_11_f1
     kind: figure
-    file: doc_113_高雄_楠梓_數學_g7s2e2/p2_f01.png
+    file: doc_113_高雄_楠梓_數學_g7s2e2/s1_11_f1.png
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 下列四個敘述甲與乙關係的選項中,哪一個與其他三個不同? $\frac{b}{a}$ $\frac{b}{a}$
+  stem: 下列四個敘述甲與乙關係的選項中，哪一個與其他三個不同？
   options:
   - label: A
-    content: 甲:乙的比值為
+    content: 甲：乙的比值為 $\frac{b}{a}$
   - label: B
-    content: 甲:乙=a:b
+    content: 甲：乙 $=a:b$
   - label: C
-    content: 甲的a倍等於乙的b倍
+    content: 甲的 $a$ 倍等於乙的 $b$ 倍
   - label: D
-    content: 甲是乙的 倍
+    content: 甲是乙的 $\frac{b}{a}$ 倍
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
-  stem: 在坐標平面上,同時通過A(-3 ,-1)、B(-3 , 3)兩點的鉛垂線的直線方程式為何?_______。
+  stem: 在坐標平面上，同時通過 $A(-3,-1)$、$B(-3,3)$ 兩點的鉛垂線的直線方程式為何？＿＿＿＿＿＿＿。
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
-  stem: 已知M(a , b)為二元一次方程式4x-6y=8圖形上一點,求6a-9b=_____________。
+  stem: 已知 $M(a,b)$ 為二元一次方程式 $4x-6y=8$ 圖形上一點，求 $6a-9b=$_____________。
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 已知x、y皆不為0,且3x=7y,則(1)x:y的最簡整數比為何?______。 (2)(x+2y):(x-y)的最簡整數比為何?_______。(每格2分)
+  stem: '已知 $x$、$y$ 皆不為 0，且 $3x=7y$，則（1）$x:y$ 的最簡整數比為何？＿＿＿＿＿＿。
+
+    （2）$(x+2y):(x-y)$ 的最簡整數比為何？＿＿＿＿＿＿＿。（每格 2 分）'
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: 已知方程式ax+by=1的圖形為通過P(-1 , 1)、Q(3, -2)兩點的直線,求此二元一次方程式為何?__________。
+  stem: 已知方程式 $ax+by=1$ 的圖形為通過 $P(-1,1)$、$Q(3,-2)$ 兩點的直線，求此二元一次方程式為何？＿＿＿＿＿＿____。
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: 檢視下列敘述,哪個敘述成反比關係?______。哪個敘述成正比關係?______________。(每格2分) (甲)車子行駛的距離固定,車子的速率與所花的時間。
-    (乙)一天24小時的白天與夜晚的時間。 (丙)小靜的身高與體重。 (丁)圓的半徑與面積。      (戊)購買同一單價的商品,購買數量與總價錢的關係。(未有任何折扣)
+  stem: '檢視下列敘述，哪個敘述成反比關係？＿＿＿＿＿＿。哪個敘述成正比關係？______________。（每格 2 分）
+
+    （甲）車子行駛的距離固定，車子的速率與所花的時間。 （乙）一天 24 小時的白天與夜晚的時間。 （丙）小靜的身高與體重。
+
+    （丁）圓的半徑與面積。 （戊）購買同一單價的商品，購買數量與總價錢的關係。（未有任何折扣）'
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 小文原本計畫使用甲、乙兩臺影印機於9:00開始一起印製文件並持續到下午,但9:00時有人正在使用乙,於是他先使用甲印 製,於9:05才開始使用乙一起印製,且到9:15時乙印製的總張數與甲相同,到9:45時甲、乙印製的總張數合計為3150張。
-    若甲、乙的印製張數與印製時間皆成正比,則依照小文原本的計畫,甲、乙印製的總張數會何時達到3150張?______。
+  stem: 小文原本計畫使用甲、乙兩臺影印機於 9：00 開始一起印製文件並持續到下午，但 9：00 時有人正在使用乙，於是他先使用甲印製，於 9：05 才開始使用乙一起印製，且到
+    9：15 時乙印製的總張數與甲相同，到 9：45 時甲、乙印製的總張數合計為 3150 張。若甲、乙的印製張數與印製時間皆成正比，則依照小文原本的計畫，甲、乙印製的總張數會何時達到
+    3150 張？＿＿＿＿＿＿。
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 已知某一節捷運車廂原本男生與女生的人數比為7:5,抵達某站後,有1位男生上車,4位女生下車,此時男生與女生的人數比 為2:1,則此節車廂現有_____人。
-    $\frac{1}{5}$ $\frac{1}{4}$
+  stem: 已知某一節捷運車廂原本男生與女生的人數比為 $7:5$，抵達某站後，有 1 位男生上車，4 位女生下車，此時男生與女生的人數比為 $2:1$，則此節車廂現有＿＿＿__人。
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 新民國中去年的七年級新生中,男、女生的人數比是15:16,如果今年入學的新生中,男生人數比去年的人數增加了 ,女生人 數比去年的人數減少了 。則今年七年級新生中,男、女生人數的比為何?___________。
+  stem: 新民國中去年的七年級新生中，男、女生的人數比是 $15:16$，如果今年入學的新生中，男生人數比去年的人數增加了 $\frac{1}{5}$，女生人數比去年的人數減少了
+    $\frac{1}{4}$。則今年七年級新生中，男、女生人數的比為何？___________。
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 已知坐標平面上的兩個二元一次方程式分別為ax+3y=1與-x+by=-4,如果點(-2 , 3)為這兩個二元一次方程式所對應圖 形的交點,求a=____,b=___。(每格2分)
+  stem: 已知坐標平面上的兩個二元一次方程式分別為 $ax+3y=1$ 與 $-x+by=-4$，如果點 $(-2,3)$ 為這兩個二元一次方程式所對應圖形的交點，求
+    $a=$＿＿＿＿，$b=$＿＿＿。（每格 2 分）
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
-  stem: 在比例尺1:400000的地圖上,某市兩區公所的直線距離是25公分,則實際的直線距離是____公里 (1公里=1000公尺;1公尺=100公分)
+  stem: '在比例尺 $1:400000$ 的地圖上，某市兩區公所的直線距離是 25 公分，則實際的直線距離是＿＿＿＿公里
+
+    （1 公里＝1000 公尺；1 公尺＝100 公分）'
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_11
   section: 2
   number: 11
   type: fill
   page: 2
-  stem: 威利到小吃店買水餃,他身上帶的錢恰好等於12粒蝦仁水餃或15粒韭菜水餃的價錢。若威利先買了4粒蝦仁水餃,則他身 上剩下的錢恰好可買_____粒韭菜水餃。
+  stem: 威利到小吃店買水餃，他身上帶的錢恰好等於 12 粒蝦仁水餃或 15 粒韭菜水餃的價錢。若威利先買了 4 粒蝦仁水餃，則他身上剩下的錢恰好可買＿＿＿＿＿粒韭菜水餃。
 - id: doc_113_高雄_楠梓_數學_g7s2e2_s2_12
   section: 2
   number: 12
   type: fill
   page: 2
-  stem: 正敏參加慢跑活動,若正敏以固定速率跑完全程,則需花 $\frac{3}{4}$ 小時,開跑前正敏覺得狀況良好,故全程將速率提升 $\frac{1}{4}$
-    倍, 則正敏此次跑完全程需花______分鐘。 2
+  stem: 正敏參加慢跑活動，若正敏以固定速率跑完全程，則需花 $\frac{3}{4}$ 小時，開跑前正敏覺得狀況良好，故全程將速率提升 $\frac{1}{4}$
+    倍，則正敏此次跑完全程需花＿＿＿＿＿＿分鐘。
+- id: doc_113_高雄_楠梓_數學_g7s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: 已知 $x:y=4:7$，且 $3x+5y=470$，則 $(x+4):(y-4)$ 的比值是？(3 分)
+- id: doc_113_高雄_楠梓_數學_g7s2e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: 有四個數 $a$、$b$、$c$、$d$，且 $(2,a)$、$(-3,b)$、$(c,8)$、$(d,-4)$ 這四點都在二元一次方程式 $2x-y=4$
+    的圖形上，求 $a=$？ $b=$？ $c=$？ $d=$？(4 分)
+- id: doc_113_高雄_楠梓_數學_g7s2e2_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 3
+  stem: 如果 $(x-y+1):(x+y-3)=3:2$，求 $x$、$y$ 的正整數解。(3 分)
+- id: doc_113_高雄_楠梓_數學_g7s2e2_s3_4
+  section: 3
+  number: 4
+  type: calc
+  page: 3
+  stem: '二元一次方程式 $x-2y=2$ 在坐標平面上所對應的圖形為直線 $L_{1}$，二元一次方程式 $2x+y=-6$ 在坐標平面上所對應的圖形為直線
+    $L_{2}$。
+
+    (1)將直線 $L_{1}$ 及 $L_{2}$ 畫在坐標平面上。(2 分)
+
+    (2)設 $A$ 點為 $L_{1}$ 及 $L_{2}$ 的交點，求 $A$ 點的坐標。(2 分)
+
+    (3)直線 $L_{1}$、$L_{2}$ 分別與 $y$ 軸交於 $B$、$C$ 兩點，求三角形 $ABC$ 的面積。(2 分)'
+  assets:
+  - key: s3_4_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g7s2e2/s3_4_f1.png

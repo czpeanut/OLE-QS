@@ -1,70 +1,94 @@
 document:
-  semester: 2
-  exam_seq: 1
-  school: 新北市立崇林國中
   grade: 7
   subject: 數學
   academic_year_roc: 113
+  semester: 2
+  exam_seq: 1
   city: 新北
   school_short: 崇林
+  school: 新北市立崇林國中
   id: doc_113_新北_崇林_數學_g7s2e1
-  title: 新北市立崇林國中 113學年度第2學期第1次定期評量7年級數學科試題
+  title: 新北市立崇林國中 113學年度第2學期第1次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第1次定期評量
   sections:
   - ord: 1
-    name: 一、單一選擇題
-    type: single
-    score_rule: 一、 單一選擇題(每題4分,共40分,請將答案寫在答案卷)
+    name: 單一選擇題
     count: 10
   - ord: 2
-    name: 二、填充題
-    type: fill
-    score_rule: 二、 填充題(每題4分,共40分,請將答案寫在答案卷)
+    name: 填充題
     count: 10
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/新北/崇林.pdf
 questions:
 - id: doc_113_新北_崇林_數學_g7s2e1_s1_1
   section: 1
   number: 1
-  type: fill
+  type: single
   page: 1
-  stem: 本學科試題於作答結束後只需繳交答案卷,並將題目卷收回。
+  stem: 化簡二元一次式$(x+2y-5)-(3x+y-7)=$________。
+  options:
+  - label: A
+    content: $-2x+3y-12$
+  - label: B
+    content: $-2x+y+2$
+  - label: C
+    content: $-2x+3y+2$
+  - label: D
+    content: 2x+3y-12
 - id: doc_113_新北_崇林_數學_g7s2e1_s1_2
   section: 1
   number: 2
-  type: fill
+  type: single
   page: 1
-  stem: 作答時必須使用藍色或黑色原子筆將正確答案寫在答案卷上,否則不予計分。
+  stem: 若 $x=3$、$y=-2$ 是 $ax+by=18$ 的解，試求：$-15a+10b-10=$________。
+  options:
+  - label: A
+    content: '10'
+  - label: B
+    content: '-10'
+  - label: C
+    content: '-100'
+  - label: D
+    content: '100'
 - id: doc_113_新北_崇林_數學_g7s2e1_s1_3
   section: 1
   number: 3
-  type: fill
+  type: single
   page: 1
-  stem: 作答專心,計算小心,切勿作弊。
-  assets:
-  - key: p1_f01
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e1/p1_f01.png
+  stem: 若二元一次聯立方程式$\begin{cases} x=3y \\ 5y-x=10 \end{cases}$的解為 $x=a$，$y=b$，則 $a+b$
+    之值＝________。
+  options:
+  - label: A
+    content: '-15'
+  - label: B
+    content: '-3'
+  - label: C
+    content: '15'
+  - label: D
+    content: '20'
 - id: doc_113_新北_崇林_數學_g7s2e1_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: x=1,y=-1為下列哪一個二元一次聯立方程式的解=        。
+  stem: $x=1$，$y=-1$ 為下列哪一個二元一次聯立方程式的解＝________。
   options:
   - label: A
-    content: 29 18 37 23 17 40 x y x y − =   + = 
+    content: $\begin{cases} 29x-18y=37 \\ 23x+17y=40 \end{cases}$
   - label: B
-    content: 37 17 20 16 15 41 x y x y + =   − = 
+    content: $\begin{cases} 37x+17y=20 \\ 16x-15y=41 \end{cases}$
   - label: C
-    content: 45 17 32 16 11 27 x y x y + =   − = 
+    content: $\begin{cases} 45x+17y=32 \\ 16x-11y=27 \end{cases}$
   - label: D
-    content: 19 11 30 31 17 14 x y x y − =   + = 
+    content: $\begin{cases} 19x-11y=30 \\ 31x+17y=14 \end{cases}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 84%）
 - id: doc_113_新北_崇林_數學_g7s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: '若二元一次聯立方程式  x-3y=8 2x+y=-5的解能滿足3x-2y-k=0,試求: k=        。'
+  stem: 若二元一次聯立方程式 $\begin{cases} x-3y=8 \\ 2x+y=-5 \end{cases}$ 的解能滿足 $3x-2y-k=0$，試求：$k=$________。
   options:
   - label: A
     content: '2'
@@ -79,7 +103,8 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 已知2( ) 3( ) 5 5( ) 7( ) 12 x y x y x y x y + + − =   + + − =  ,則2x+y之值=      。
+  stem: 已知$\begin{cases} 2(x+y)+3(x-y)=5 \\ 5(x+y)+7(x-y)=12 \end{cases}$，則 $2x+y$
+    之值＝______。
   options:
   - label: A
     content: '2'
@@ -88,28 +113,34 @@ questions:
   - label: C
     content: '7'
   - label: D
-    content: 8 1
+    content: '8'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 89%）
 - id: doc_113_新北_崇林_數學_g7s2e1_s1_7
   section: 1
   number: 7
   type: single
   page: 2
-  stem: 必買水果行買進一批蜜蘋果,余老闆想用禮盒分裝銷售。若每9顆蘋果裝成 一盒,則會剩下5顆蘋果沒有盒子裝;若每盒都裝滿11顆,則會不足7顆 蘋果。試問這批蘋果共有多少顆        盒子共有多少個        。
+  stem: 必買水果行買進一批蜜蘋果，余老闆想用禮盒分裝銷售。若每 9 顆蘋果裝成一盒，則會剩下 5 顆蘋果沒有盒子裝；若每盒都裝滿 11 顆，則會不足 7 顆蘋果。試問這批蘋果共有多少顆________盒子共有多少個________。
   options:
   - label: A
-    content: 蘋果共有47顆、盒子共有6個
+    content: 蘋果共有 47 顆、盒子共有 6 個
   - label: B
-    content: 蘋果共有59顆、盒子共有5個
+    content: 蘋果共有 59 顆、盒子共有 5 個
   - label: C
-    content: 蘋果共有47顆、盒子共有5個
+    content: 蘋果共有 47 顆、盒子共有 5 個
   - label: D
-    content: 蘋果共有59顆、盒子共有6個
+    content: 蘋果共有 59 顆、盒子共有 6 個
 - id: doc_113_新北_崇林_數學_g7s2e1_s1_8
   section: 1
   number: 8
   type: single
   page: 2
-  stem: 若箱子中有一些紅球與白球,請依下列兩種取法計算出紅球與白球全部共有多 少顆        。
+  stem: '若箱子中有一些紅球與白球，請依下列兩種取法計算出紅球與白球全部共有多少顆________。
+
+    取法一：每次取出 5 顆紅球、4 顆白球，連續取幾次之後，箱子中僅剩紅球 1 顆，白球 2 顆。
+
+    取法二：每次取出 9 顆紅球、7 顆白球，連續取幾次之後，箱子中僅剩紅球 2 顆，白球 4 顆。'
   options:
   - label: A
     content: '102'
@@ -118,102 +149,109 @@ questions:
   - label: C
     content: '106'
   - label: D
-    content: 108取法一:每次取出5顆紅球、4顆白球,連續取幾次之後, 箱子中僅剩紅球1顆,白球2顆。 取法二:每次取出9顆紅球、7顆白球,連續取幾次之後,
-      箱子中僅剩紅球2顆,白球4顆。
+    content: '108'
 - id: doc_113_新北_崇林_數學_g7s2e1_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: 已知小余住家的西方100公尺處為車站,住家的北方200公尺處為學校,且從 學校往東方走100公尺,再往南方走400公尺可到達公園。若小余將住家、車
-    站、學校分別標示在坐標平面上的(2 , 0)、(0 , 0)、(2 , 4)三點,則公園應標示在 此坐標平面上的哪一點        。
+  stem: 已知小余住家的西方 100 公尺處為車站，住家的北方 200 公尺處為學校，且從學校往東方走 100 公尺，再往南方走 400 公尺可到達公園。若小余將住家、車站、學校分別標示在坐標平面上的
+    $(2,0)$、$(0,0)$、$(2,4)$ 三點，則公園應標示在此坐標平面上的哪一點________。
   options:
   - label: A
-    content: (0 ,-4)
+    content: $(0,-4)$
   - label: B
-    content: (4 , 12)
+    content: $(4,12)$
   - label: C
-    content: (4 ,-4)
+    content: $(4,-4)$
   - label: D
-    content: (0 , 12)
+    content: $(0,12)$
 - id: doc_113_新北_崇林_數學_g7s2e1_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 如圖,小余從A點出發,沿ABCDEF路線行走。已知A、B兩點坐標分別為y (-1,-2)、(9,-2),且AB =10,BC =8,CD=6,DE
-    =4,EF =2, C D則終點F坐標為何        。 E F終點x A B
+  stem: 如圖，小余從 $A$ 點出發，沿 $ABCDEF$ 路線行走。已知 $A$、$B$ 兩點坐標分別為 $(-1,-2)$、$(9,-2)$，且 $\overline{AB}=10$，$\overline{BC}=8$，$\overline{CD}=6$，$\overline{DE}=4$，$\overline{EF}=2$，則終點
+    $F$ 坐標為何________。
   options:
   - label: A
-    content: (6,4)
+    content: $(6,4)$
   - label: B
-    content: (5,2)
+    content: $(5,2)$
   - label: C
-    content: (4,1)
+    content: $(4,1)$
   - label: D
-    content: (2,1) 2
+    content: $(2,1)$
   assets:
-  - key: p2_f01
+  - key: s1_10_f1
     kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e1/p2_f01.png
+    file: doc_113_新北_崇林_數學_g7s2e1/s1_10_f1.png
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 3
-  stem: 已知A=x-2y+3,B=4x+5y-6,若x=3,y=2,則3A-2B=        。    x+$\frac{1}{4}$ y=9
+  stem: 已知 $A=x-2y+3$，$B=4x+5y-6$，若 $x=3$，$y=2$，則 $3A-2B=$________。
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 3
-  stem: 已知二元一次聯立方程式x+y=17的解為x=a,y=b, $\frac{1}{5}$ 則|a-b|=      。
+  stem: 已知二元一次聯立方程式$\begin{cases} x+\frac{1}{4}y=9 \\ \frac{1}{5}x+y=17 \end{cases}$
+    的解為 $x=a$，$y=b$，則 $|a-b|=$______。
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_3
   section: 2
   number: 3
   type: fill
   page: 3
-  stem: 解二元一次聯立方程式78 87 =123 87 78 =42 x y x y −   −  ,則x+y=        。  3x+y=k+5
+  stem: 解二元一次聯立方程式$\begin{cases} 78x-87y=123 \\ 87x-78y=42 \end{cases}$，則 $x+y=$________。
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_4
   section: 2
   number: 4
   type: fill
   page: 3
-  stem: 若二元一次聯立方程式  2x+3y=k的解為x=a、y=b,且a與b的和為-2, 試求k值=        。
+  stem: 若二元一次聯立方程式 $\begin{cases} 3x+y=k+5 \\ 2x+3y=k \end{cases}$ 的解為 $x=a$、$y=b$，且
+    $a$ 與 $b$ 的和為 $-2$，試求 $k$ 值＝________。
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 3
-  stem: 有一個2位數,個位數字與十位數字和為13,若將個位數字與十位數字位置 調換後,所得的新數比原數多27,則原數=        。
+  stem: 有一個 2 位數，個位數字與十位數字和為 13，若將個位數字與十位數字位置調換後，所得的新數比原數多 27，則原數＝________。
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 3
-  stem: 班上各有男、女同學若干人,若從其中一位男同學眼中看出去,男同學人數的3倍是女同學人數的4倍多1人;若從其中一位女同學眼中看出去,女同學人 數的3倍是男同學人數的2倍少2人,則全班人數共有        人。
+  stem: 班上各有男、女同學若干人，若從其中一位男同學眼中看出去，男同學人數的 3 倍是女同學人數的 4 倍多 1 人；若從其中一位女同學眼中看出去，女同學人數的
+    3 倍是男同學人數的 2 倍少 2 人，則全班人數共有________人。
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 3
-  stem: 若 ( 1) 27 9 x y + = , ( ) ( ) 2 1 100 1000 x y + − = ,則x-y=        。 3
+  stem: 若 $27^{(x+1)}=9^{y}$，$100^{(x+2)}=1000^{(y-1)}$，則 $x-y=$________。
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_8
   section: 2
   number: 8
   type: fill
   page: 4
-  stem: 已知A ( m , n ) 在第二象限內,且|m|>|n|,試判別B ( m+n , m-n ) 會在哪個象限內        。
+  stem: 已知 $A(m,n)$ 在第二象限內，且 $|m|>|n|$，試判別 $B(m+n,m-n)$ 會在哪個象限內________。
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_9
   section: 2
   number: 9
   type: fill
   page: 4
-  stem: 直角坐標平面上有A (2a+1 , b+5),B (2b-1 , 3a-1)兩點,若由A點出發, 先向左8單位,再向上1單位後會與B點重合,則2a—3b=        。
+  stem: 直角坐標平面上有 $A(2a+1,b+5)$，$B(2b-1,3a-1)$ 兩點，若由 $A$ 點出發，先向左 8 單位，再向上 1 單位後會與 $B$
+    點重合，則 $2a-3b=$________。
 - id: doc_113_新北_崇林_數學_g7s2e1_s2_10
   section: 2
   number: 10
   type: fill
   page: 4
-  stem: 已知坐標平面上有一長方形ABCD,其坐標分別為A (0 , 0)、B (3 , 0)、 C (3, 1)、 D (0 , 1)。今固定B點並將此長方形依順時針方向旋轉,
-    如圖所示。若旋轉後C點的坐標為(4 , 0),則旋轉後D點的坐標為 何        。 4 y C D x A B
+  stem: 已知坐標平面上有一長方形 $ABCD$，其坐標分別為 $A(0,0)$、$B(3,0)$、$C(3,1)$、$D(0,1)$。今固定 $B$ 點並將此長方形依順時針方向旋轉，如圖所示。若旋轉後
+    $C$ 點的坐標為 $(4,0)$，則旋轉後 $D$ 點的坐標為何________。
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g7s2e1/s2_10_f1.png

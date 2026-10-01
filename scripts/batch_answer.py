@@ -177,7 +177,10 @@ def run_qwen(args) -> None:
     def one(p: Path):
         if stop.is_set():
             return p, "stop", 0.0
-        d = yaml.safe_load(p.read_text(encoding="utf-8"))
+        try:
+            d = yaml.safe_load(p.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001  檔案正被其他步驟改寫，下次再答
+            return p, "失敗：讀檔", 0.0
         qs = targets(d)
         if not qs:
             return p, "none", 0.0
@@ -225,7 +228,8 @@ def run_qwen_split(args) -> None:
     dest = OUT / "qwen"
     todo = []
     for p in load_docs(args.bank, args.only):
-        if (dest / f"{p.stem}.json").is_file():
+        # 只處理 Gemini 已答、Qwen 整份被擋的卷（新卷先走一般 qwen 步驟）
+        if (dest / f"{p.stem}.json").is_file() or not (OUT / "gemini" / f"{p.stem}.json").is_file():
             continue
         d = yaml.safe_load(p.read_text(encoding="utf-8"))
         if targets(d):

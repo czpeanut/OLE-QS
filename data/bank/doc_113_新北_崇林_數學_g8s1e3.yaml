@@ -1,0 +1,430 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 3
+  city: 新北
+  school_short: 崇林
+  school: 崇林國中
+  id: doc_113_新北_崇林_數學_g8s1e3
+  title: 崇林國中 113學年度第1學期第3次定期評量 8年級數學科試題
+  exam_name: 113學年度第1學期第3次定期評量
+  sections:
+  - ord: 1
+    name: 是非題(每題4分，共20分。正確的敘述畫【A】，錯誤的畫【B】)
+    count: 5
+  - ord: 2
+    name: 二、選擇題(每題4分，共80分)
+    count: 20
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/1-3/新北/崇林.pdf
+questions:
+- id: doc_113_新北_崇林_數學_g8s1e3_s1_1
+  section: 1
+  number: 1
+  type: tf
+  page: 1
+  stem: 有兩個數A、B，若AB＝0，則A＝0或B＝0。
+- id: doc_113_新北_崇林_數學_g8s1e3_s1_2
+  section: 1
+  number: 2
+  type: tf
+  page: 1
+  stem: 若方程式(2x＋1)(x＋2)＝1，則2x＋1＝1 或x＋2＝1。
+- id: doc_113_新北_崇林_數學_g8s1e3_s1_3
+  section: 1
+  number: 3
+  type: tf
+  page: 1
+  stem: x的一元二次方程式$ax^{2}＋bx＋c＝0$中，當$b^{2}－4ac＝0$時，此方程式有重根。
+- id: doc_113_新北_崇林_數學_g8s1e3_s1_4
+  section: 1
+  number: 4
+  type: tf
+  page: 1
+  stem: 解一元二次方程式$(x－5)^{2}＝9$時，等號兩邊開根號得x－5＝3，所以x＝8。
+- id: doc_113_新北_崇林_數學_g8s1e3_s1_5
+  section: 1
+  number: 5
+  type: tf
+  page: 1
+  stem: '下圖為某公司產品近年的銷售成長率折線圖，請問105 年的銷售額是否比104 年的
+
+    銷售額少？
+
+    註：銷售成長率＝$\frac{\text{今年銷售額－去年銷售額}}{\text{去年銷售額}}\times 100\%$'
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g8s1e3/s1_5_f1.png
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_6
+  section: 2
+  number: 6
+  type: single
+  page: 1
+  stem: 判別下列何者是x 的一元二次方程式？
+  options:
+  - label: A
+    content: 2x－5＝0
+  - label: B
+    content: (2x－1)(x＋7)
+  - label: C
+    content: $6x^{2}＋5x＝6x^{2}＋25$
+  - label: D
+    content: $-3x^{2}＋15x＝－9999$
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_7
+  section: 2
+  number: 7
+  type: single
+  page: 1
+  stem: 判別－1 為下列哪一個一元二次方程式的解？
+  options:
+  - label: A
+    content: x(x＋1)＝－1
+  - label: B
+    content: $x^{2}＋1＝0$
+  - label: C
+    content: $x^{2}－3x＋2＝0$
+  - label: D
+    content: $\frac{1}{2}x^{2}＋\frac{3}{2}x＋1＝0$
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_8
+  section: 2
+  number: 8
+  type: single
+  page: 1
+  stem: 下列何者是完全平方式？
+  options:
+  - label: A
+    content: $2x^{2}－2x－4$
+  - label: B
+    content: $x^{2}＋4x－4$
+  - label: C
+    content: $9x^{2}－6x＋1$
+  - label: D
+    content: $x^{2}－9$
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_9
+  section: 2
+  number: 9
+  type: single
+  page: 2
+  stem: '解一元二次方程式$(2x＋1)(2x－3)＝5(2x＋1)^{2}$ 的步驟如下：
+
+    第一步：等號兩邊同除以(2x＋1)，得$2x－3＝5(2x＋1)$
+
+    第二步：等號右邊去括號，得2x－3＝10x＋5
+
+    第三步：利用移項化簡，得x＝－1
+
+    試問哪個步驟開始發生錯誤？答：____。'
+  options:
+  - label: A
+    content: 第一步
+  - label: B
+    content: 第二步
+  - label: C
+    content: 第三步
+  - label: D
+    content: 以上步驟都正確
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_10
+  section: 2
+  number: 10
+  type: single
+  page: 2
+  stem: 右圖是八年十四班段考數學成績累積相對次數分配折線圖，則90 分以上(含)與未滿60 分者，共占多少百分比？
+  options:
+  - label: A
+    content: 10%
+  - label: B
+    content: 20%
+  - label: C
+    content: 30%
+  - label: D
+    content: 40%
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g8s1e3/s2_10_f1.png
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_11
+  section: 2
+  number: 11
+  type: single
+  page: 2
+  stem: 右圖是甲、乙兩班學生身高的累積相對次數分配折線圖，若甲班有80 人、乙班有40 人，則哪一班身高在170 公分以上(含)的人數較多？
+  options:
+  - label: A
+    content: 甲
+  - label: B
+    content: 乙
+  - label: C
+    content: 一樣多
+  - label: D
+    content: 無法判斷
+  assets:
+  - key: s2_11_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g8s1e3/s2_11_f1.png
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_12
+  section: 2
+  number: 12
+  type: single
+  page: 2
+  stem: 比較方程式$7x^{2}＝0$ 和$3x^{2}＝3x$ 的解，下列何者正確？
+  options:
+  - label: A
+    content: 兩個方程式的解皆是x＝0(重根)
+  - label: B
+    content: 兩個方程式有一個解相同，而這個相同的解不是0
+  - label: C
+    content: 兩個方程式有一個解相同，而這個相同的解是x＝0
+  - label: D
+    content: 兩個方程式的解都不相同
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_13
+  section: 2
+  number: 13
+  type: single
+  page: 2
+  stem: 若$(m－2)x^{2}＋(m－5)x＋3＝0$ 是x 的一元二次方程式，則m 的條件為何？
+  options:
+  - label: A
+    content: m≠2
+  - label: B
+    content: m＝2
+  - label: C
+    content: m≠5
+  - label: D
+    content: m≠0
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_14
+  section: 2
+  number: 14
+  type: single
+  page: 2
+  stem: 下列方程式中，何者的解是重根？
+  options:
+  - label: A
+    content: $x^{2}－2x－1＝0$
+  - label: B
+    content: $(x－3)^{2}＝25$
+  - label: C
+    content: $4x^{2}＋4x＝1$
+  - label: D
+    content: $-3x^{2}＋6x－3＝0$
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_15
+  section: 2
+  number: 15
+  type: single
+  page: 3
+  stem: '某個新興的傳染病在許多國家漫延開來。其中有甲、乙、丙三個國家的國力與人口都相近，但採取的防疫態度和措施仍有不同。以上是這三國在疫情開始的前十週所遭受感染的累積確診人數折線圖。
+
+
+    請問哪一國最早爆發傳染，但有即時採取對策，使疫情控制住。'
+  options:
+  - label: A
+    content: 甲
+  - label: B
+    content: 乙
+  - label: C
+    content: 丙
+  - label: D
+    content: 無法判斷
+  assets:
+  - key: s2_15_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g8s1e3/s2_15_f1.png
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_16
+  section: 2
+  number: 16
+  type: single
+  page: 3
+  stem: 若$4(x＋3)^{2}＝20$ 的兩根為a 與b，且a＞b，則a－b＝____。
+  options:
+  - label: A
+    content: $2\sqrt{5}$
+  - label: B
+    content: '0'
+  - label: C
+    content: $-2\sqrt{5}$
+  - label: D
+    content: －6
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_17
+  section: 2
+  number: 17
+  type: single
+  page: 3
+  stem: 將方程式$x^{2}－34x＋285＝0$ 整理成$(x－p)^{2}＝q$ 的形式，其中p、q 為整數，則p＋q＝？
+  options:
+  - label: A
+    content: －21
+  - label: B
+    content: －13
+  - label: C
+    content: '13'
+  - label: D
+    content: '21'
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_18
+  section: 2
+  number: 18
+  type: single
+  page: 3
+  stem: 已知方程式$x^{2}－5625＝0$ 的兩根為±75，則下列何者可為方程式$x^{2}＋6x－5616＝0$ 的解？
+  options:
+  - label: A
+    content: －72
+  - label: B
+    content: －78
+  - label: C
+    content: －81
+  - label: D
+    content: －83
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_19
+  section: 2
+  number: 19
+  type: single
+  page: 3
+  stem: 已知x的一元二次方程式$x^{2}－8x＋(3m＋7)＝0$有兩個相異的根，求m的最大整數值。
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '3'
+  - label: C
+    content: '2'
+  - label: D
+    content: '1'
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_20
+  section: 2
+  number: 20
+  type: single
+  page: 3
+  stem: '右圖的六邊形是由甲、乙兩個長方形和丙、丁兩個等腰直角
+
+    三角形所組成，其中甲、乙的面積和等於丙、丁的面積和。
+
+    若丙的一股長為3，且丁的面積比丙的面積小，則丁的一股
+
+    長為何？'
+  options:
+  - label: A
+    content: $2－\sqrt{3}$
+  - label: B
+    content: $3－\sqrt{5}$
+  - label: C
+    content: $6－3\sqrt{3}$
+  - label: D
+    content: $3－\sqrt{3}$
+  assets:
+  - key: s2_20_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g8s1e3/s2_20_f1.png
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_21
+  section: 2
+  number: 21
+  type: single
+  page: 4
+  stem: '下圖是崇崇國中八年級學生第二次段考數學分數累積次數分配折線圖。
+
+    以下是小妍、小翊與小美對於此折線圖的說法如下。請問3 人的說法，錯誤的有幾個？
+
+
+    | 小妍 | 小翊 | 小美 |
+
+    | --- | --- | --- |
+
+    | 這次段考最高分為100 分，最低分為40 分。 | 排名第30 名在50 ～60 分這一組。 | 80 分以上(含)的相對次數為60%。 |'
+  options:
+  - label: A
+    content: 全對
+  - label: B
+    content: '1'
+  - label: C
+    content: '2'
+  - label: D
+    content: '3'
+  assets:
+  - key: s2_21_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g8s1e3/s2_21_f1.png
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_22
+  section: 2
+  number: 22
+  type: single
+  page: 4
+  stem: '812班在園遊會推出免運團購活動，活動宣傳單如右。已知
+
+    活動期間的某筆訂單總金額為5040元，且每條生乳捲成本
+
+    為190元，試問此筆訂單是否獲利？'
+  options:
+  - label: A
+    content: 賺錢
+  - label: B
+    content: 賠錢
+  - label: C
+    content: 收支打平
+  - label: D
+    content: 此題無解
+  assets:
+  - key: s2_22_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g8s1e3/s2_22_f1.png
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_23
+  section: 2
+  number: 23
+  type: single
+  page: 4
+  stem: 'x的一元二次方程式$x^{2}－13x＋k＝0$的其中一解為質數，另一
+
+    解為合數，若k為整數，則k的值有幾種可能？'
+  options:
+  - label: A
+    content: 此題無解
+  - label: B
+    content: '1'
+  - label: C
+    content: '2'
+  - label: D
+    content: '3'
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_24
+  section: 2
+  number: 24
+  type: single
+  page: 4
+  stem: '如右圖，長方形為某園遊會場地(長為90公尺，寬為
+
+    42公尺)，其中每一個灰色小格為面積相等的正方形，且
+
+    各代表一個攤位。若圖中灰色區域(即攤位)的總面積為
+
+    720平方公尺，則此園遊會場地共有多少個攤位？'
+  options:
+  - label: A
+    content: '36'
+  - label: B
+    content: '80'
+  - label: C
+    content: '124'
+  - label: D
+    content: '256'
+  assets:
+  - key: s2_24_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g8s1e3/s2_24_f1.png
+- id: doc_113_新北_崇林_數學_g8s1e3_s2_25
+  section: 2
+  number: 25
+  type: single
+  page: 4
+  stem: '一般黃金比例身材指的是「上半身長：下半身長＝下半身長：全身長」，其中上半身
+
+    指的是肚臍以上、下半身則為肚臍以下。試問一位身高為180公分且擁有黃金比例身材
+
+    的人，其下半身長為多少公分？($\sqrt{2}≒1.414$、$\sqrt{3}≒1.732$、$\sqrt{5}≒2.236$，四捨五入到整數位)'
+  options:
+  - label: A
+    content: '101'
+  - label: B
+    content: '109'
+  - label: C
+    content: '111'
+  - label: D
+    content: '112'
