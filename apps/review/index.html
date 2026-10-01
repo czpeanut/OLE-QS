@@ -89,6 +89,20 @@ select,input[type=text],textarea{background:var(--card);border:1px solid var(--r
 .figs img,.opt img,.passage img{max-width:100%;height:auto;background:#fff;border:1px solid var(--rule);border-radius:4px}
 .figs img{max-height:320px}
 .opt img{max-height:120px}
+.cropbox{position:relative;display:inline-block;overflow:hidden;background:#fff;border:1px solid var(--rule);border-radius:4px;vertical-align:top}
+.cropbox img{position:absolute;max-width:none!important;max-height:none!important;border:0!important;border-radius:0!important;height:auto}
+.cropwrap{display:inline-flex;flex-direction:column;align-items:flex-start;gap:2px;max-width:100%;vertical-align:top}
+.cropbtn{font-size:12px;line-height:1.2;padding:2px 4px;border:0;background:none;color:var(--muted);cursor:pointer;text-decoration:underline}
+.cropbtn:hover,.cropbtn:focus-visible{color:var(--pen)}
+.cropbox.adjusted{outline:2px solid var(--ok);outline-offset:1px}
+.cropedit{display:flex;flex-direction:column;gap:8px;padding:10px;background:var(--panel);border:1px solid var(--rule);border-radius:var(--r);width:100%}
+.stagewrap{overflow:hidden;padding:14px;max-width:100%;background:rgba(0,0,0,.38);border-radius:4px}
+.stage{position:relative;max-width:100%;touch-action:none;user-select:none;background:#fff}
+.stage img{display:block;width:100%;height:auto;max-height:none!important;border:0!important;border-radius:0!important}
+.sel{position:absolute;outline:2px solid var(--pen);box-shadow:0 0 0 9999px rgba(0,0,0,.38)}
+.hd{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:var(--pen);border:2px solid #fff;padding:0;cursor:pointer}
+.hd[data-e=n]{left:50%;top:0;cursor:ns-resize}.hd[data-e=s]{left:50%;top:100%;cursor:ns-resize}
+.hd[data-e=w]{left:0;top:50%;cursor:ew-resize}.hd[data-e=e]{left:100%;top:50%;cursor:ew-resize}
 .missing{font-size:12.5px;color:var(--warn);border:1px dashed var(--warn);border-radius:4px;padding:4px 8px}
 .foot{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--muted)}
 .why{font-size:12.5px;color:var(--pen)}
@@ -339,7 +353,82 @@ function renderPaper(){
   bindQuestionEvents();
 }
 function figHTML(ids, P){
-  return ids.map(id => P.images[id] ? `<img src="${P.images[id]}" alt="附圖" loading="lazy">` : '<span class="missing">圖檔遺失</span>').join("");
+  return ids.map(id => imgTag(id, P, "附圖", 320)).join("");
+}
+/* ── 附圖：顯示裁切範圍，可拖曳調整邊緣 ───────────────────── */
+let crops = new Map();       // 調整紀錄：key -> {rect, file, ...}
+function cropKey(file){ let h = 2166136261; for (const ch of file) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619) >>> 0; } return "c" + h.toString(36); }
+function cropFrac(cm){
+  const R = cm.R, saved = crops.get(cropKey(cm.f)), e = saved ? saved.rect : cm.r;
+  const W = R[2]-R[0], H = R[3]-R[1];
+  return {l:(e[0]-R[0])/W, t:(e[1]-R[1])/H, w:(e[2]-e[0])/W, h:(e[3]-e[1])/H, adjusted: !!saved};
+}
+function imgTag(id, P, alt, maxH){
+  if (!P.images[id]) return '<span class="missing">圖檔遺失</span>';
+  const cm = P.cm && P.cm[id];
+  if (!cm) return `<img src="${P.images[id]}" alt="${esc(alt)}" loading="lazy">`;
+  const f = cropFrac(cm), H = cm.px * (cm.R[3]-cm.R[1]) / (cm.R[2]-cm.R[0]);
+  const iw = f.w * cm.px, ih = f.h * H;                      // 裁切範圍在圖上的像素大小
+  const width = Math.min(iw, maxH * iw / ih);
+  return `<span class="cropwrap"><span class="cropbox ${f.adjusted?'adjusted':''}" data-img="${id}" style="width:${width.toFixed(0)}px;max-width:100%;aspect-ratio:${iw.toFixed(1)}/${ih.toFixed(1)}">
+    <img src="${P.images[id]}" alt="${esc(alt)}" loading="lazy" style="width:${(100/f.w).toFixed(3)}%;left:${(-f.l/f.w*100).toFixed(3)}%;top:${(-f.t/f.h*100).toFixed(3)}%"></span>
+    <button class="cropbtn" type="button" data-crop="${id}">${f.adjusted?'已調整邊緣・再調整':'調整邊緣'}</button></span>`;
+}
+function openCropEditor(btn){
+  const id = btn.dataset.crop, P = current.paper, cm = P.cm[id];
+  const box = btn.closest(".cropwrap");
+  let f = cropFrac(cm);
+  const ed = document.createElement("div");
+  ed.className = "cropedit";
+  ed.innerHTML = `<div class="sub">拖曳紅點調整四邊（也可以點紅點後用方向鍵微調）。灰色區域是可延伸的範圍。</div>
+    <div class="stagewrap" style="width:min(100%, ${Math.max(cm.px, 480) + 28}px)"><div class="stage"><img src="${P.images[id]}" alt="附圖原卷範圍">
+      <div class="sel">${["n","s","w","e"].map(k=>`<button type="button" class="hd" data-e="${k}" aria-label="${{n:"上",s:"下",w:"左",e:"右"}[k]}邊"></button>`).join("")}</div></div></div>
+    <div class="row"><button class="btn pen" type="button" data-act="save">儲存邊緣</button>
+      <button class="btn" type="button" data-act="reset">還原原始範圍</button>
+      <button class="btn ghost" type="button" data-act="cancel">取消</button><span class="sub" data-msg></span></div>`;
+  box.replaceWith(ed);
+  const stage = ed.querySelector(".stage"), sel = ed.querySelector(".sel");
+  const draw = () => Object.assign(sel.style, {left:f.l*100+"%", top:f.t*100+"%", width:f.w*100+"%", height:f.h*100+"%"});
+  const MIN = 0.03;
+  const move = (edge, dx, dy) => {           // dx, dy 為佔整張圖的比例
+    if (edge === "w") { const r = f.l + f.w; f.l = Math.min(Math.max(0, f.l + dx), r - MIN); f.w = r - f.l; }
+    if (edge === "e") { f.w = Math.min(Math.max(MIN, f.w + dx), 1 - f.l); }
+    if (edge === "n") { const b = f.t + f.h; f.t = Math.min(Math.max(0, f.t + dy), b - MIN); f.h = b - f.t; }
+    if (edge === "s") { f.h = Math.min(Math.max(MIN, f.h + dy), 1 - f.t); }
+    draw();
+  };
+  ed.querySelectorAll(".hd").forEach(hd => {
+    hd.addEventListener("pointerdown", e => {
+      e.preventDefault(); hd.setPointerCapture(e.pointerId);
+      let x = e.clientX, y = e.clientY;
+      const onMove = ev => { const r = stage.getBoundingClientRect();
+        move(hd.dataset.e, (ev.clientX - x) / r.width, (ev.clientY - y) / r.height); x = ev.clientX; y = ev.clientY; };
+      const onUp = () => { hd.removeEventListener("pointermove", onMove); hd.removeEventListener("pointerup", onUp); };
+      hd.addEventListener("pointermove", onMove); hd.addEventListener("pointerup", onUp);
+    });
+    hd.addEventListener("keydown", e => {
+      const k = {ArrowLeft:[-1,0], ArrowRight:[1,0], ArrowUp:[0,-1], ArrowDown:[0,1]}[e.key];
+      if (!k) return; e.preventDefault(); move(hd.dataset.e, k[0]*0.005, k[1]*0.005);
+    });
+  });
+  draw();
+  const close = () => rerenderKeepingScroll(true);
+  ed.querySelector("[data-act=cancel]").addEventListener("click", close);
+  ed.querySelector("[data-act=reset]").addEventListener("click", async e => {
+    const k = cropKey(cm.f);
+    if (!crops.has(k)) { f = cropFrac(cm); draw(); return; }
+    if (!db) { close(); return; }
+    try { await db.collection("crops").doc(k).delete(); crops.delete(k); close(); }
+    catch(err){ ed.querySelector("[data-msg]").textContent = "還原失敗：" + (err.code || err.message); }
+  });
+  ed.querySelector("[data-act=save]").addEventListener("click", async e => {
+    const R = cm.R, W = R[2]-R[0], H = R[3]-R[1], r2 = v => Math.round(v*100)/100;
+    const rect = [r2(R[0]+f.l*W), r2(R[1]+f.t*H), r2(R[0]+(f.l+f.w)*W), r2(R[1]+(f.t+f.h)*H)];
+    const body = {file: cm.f, doc: P.doc, page: cm.pg, rect, orig: cm.r, at: new Date().toISOString()};
+    if (!db) { copyText(`附圖邊緣調整 ${cm.f} 第${cm.pg}頁 ${rect.join(",")}`, e.target); return; }
+    try { await db.collection("crops").doc(cropKey(cm.f)).set(body); crops.set(cropKey(cm.f), body); close(); }
+    catch(err){ ed.querySelector("[data-msg]").textContent = "儲存失敗：" + (err.code || err.message); }
+  });
 }
 const SRC_NAME = {"ai:gemini+qwen":"AI・兩模型一致", "ai:majority":"AI・三票中兩票", "ai:gemini-only":"AI・僅 Gemini"};
 const VOTE_NAME = {gemini:"Gemini", qwen:"Qwen", gemini_high:"Gemini 高思考"};
@@ -356,7 +445,7 @@ function answerHTML(q, ans){
 function questionHTML(q, P){
   const r = reports.get(q.c);
   const ans = (q.ans || []).map(String);
-  const optHTML = (q.opts||[]).length ? `<div class="opts">${q.opts.map(o => `<div class="opt ${ans.includes(o.l)?'correct':''}"><span class="l">(${esc(o.l)})</span><span>${rich(o.c)}${o.img? (P.images[o.img]?`<br><img src="${P.images[o.img]}" alt="選項${esc(o.l)}的圖" loading="lazy">`:'<span class="missing">選項圖遺失</span>'):''}</span></div>`).join("")}</div>` : "";
+  const optHTML = (q.opts||[]).length ? `<div class="opts">${q.opts.map(o => `<div class="opt ${ans.includes(o.l)?'correct':''}"><span class="l">(${esc(o.l)})</span><span>${rich(o.c)}${o.img? `<br>${imgTag(o.img, P, "選項"+o.l+"的圖", 120)}`:''}</span></div>`).join("")}</div>` : "";
   return `<div class="q ${q.ok?'':'rejected'} ${r?'reported':''}" id="q-${q.c}" data-code="${q.c}">
     <div class="num">${esc(q.n)}.</div>
     <div class="body">
@@ -384,6 +473,7 @@ function questionHTML(q, P){
 function bindQuestionEvents(){
   document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => copyText(b.dataset.copy, b)));
   document.querySelectorAll("[data-report]").forEach(b => b.addEventListener("click", () => openReport(b.dataset.report)));
+  document.querySelectorAll("[data-crop]").forEach(b => b.addEventListener("click", () => openCropEditor(b)));
 }
 function focusQuestion(code){
   const el = document.getElementById("q-" + code);
@@ -510,10 +600,10 @@ async function copyText(text, btn){
 function flashBtn(btn, msg){ if (!btn) return; const t = btn.textContent; btn.textContent = msg; setTimeout(()=>btn.textContent = t, 1400); }
 
 /* ── 回報資料庫 ─────────────────────────────────────────── */
-function rerenderKeepingScroll(){
+function rerenderKeepingScroll(force){
   const y = window.scrollY;
-  const open = [...document.querySelectorAll(".report-slot form")].map(f => f.id);
-  if (open.length) { listPapers(); renderReportStats(); return; }  // 表單開著時不重繪題目，避免打到一半被清掉
+  const open = [...document.querySelectorAll(".report-slot form, .cropedit")];
+  if (open.length && !force) { listPapers(); renderReportStats(); return; }  // 表單開著時不重繪題目，避免打到一半被清掉
   listPapers(); renderReportStats(); renderPaper(); window.scrollTo({top:y});
 }
 async function initDb(){
@@ -528,6 +618,10 @@ async function initDb(){
   }
   db.collection("reports").onSnapshot(s => {
     reports = new Map(s.docs.map(d => [d.id, d.data()]));
+    rerenderKeepingScroll();
+  }, () => {});
+  db.collection("crops").onSnapshot(s => {
+    crops = new Map(s.docs.map(d => [d.id, d.data()]));
     rerenderKeepingScroll();
   }, () => {});
   db.collection("reviewed").onSnapshot(s => {

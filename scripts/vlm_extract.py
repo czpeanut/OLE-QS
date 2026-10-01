@@ -381,20 +381,20 @@ def lift_inline_options(item: dict) -> bool:
 
 # ─────────────────────────── 主流程 ───────────────────────────
 
-def crop(page, box: list[int], dest: Path) -> bool:
-    """依 0~1000 正規化座標從頁面切圖。"""
+def crop(page, box: list[int], dest: Path) -> list[float] | None:
+    """依 0~1000 正規化座標從頁面切圖，回傳實際裁切範圍（PDF 點座標），失敗回傳 None。"""
     if not box or len(box) != 4:
-        return False
+        return None
     y0, x0, y1, x1 = box
     r = page.rect
     clip = fitz.Rect(r.x0 + x0 / 1000 * r.width, r.y0 + y0 / 1000 * r.height,
                      r.x0 + x1 / 1000 * r.width, r.y0 + y1 / 1000 * r.height)
     clip = fitz.Rect(clip.x0 - 4, clip.y0 - 4, clip.x1 + 4, clip.y1 + 4) & r
     if clip.is_empty or clip.width < 8 or clip.height < 8:
-        return False
+        return None
     dest.parent.mkdir(parents=True, exist_ok=True)
     page.get_pixmap(dpi=CROP_DPI, clip=clip).save(dest)
-    return True
+    return [round(v, 2) for v in (clip.x0, clip.y0, clip.x1, clip.y1)]
 
 
 def lesson_tag(scope: dict | None, lesson: str | None) -> str | None:
@@ -487,6 +487,8 @@ def finish(path: Path, fig_dir: Path | None, out: dict, used_model: str, cost: f
         sections = [{"ord": 1, "name": "試題"}]
     known_sections = {s["ord"] for s in sections}
 
+    crops: dict[str, dict] = {}
+
     def save_fig(fig: dict | None, key: str) -> str | None:
         if not fig or not fig_dir:
             return None
@@ -494,7 +496,10 @@ def finish(path: Path, fig_dir: Path | None, out: dict, used_model: str, cost: f
         if not (1 <= pno <= len(doc)):
             return None
         rel = f"{doc_id}/{key}.png"
-        return rel if crop(doc[pno - 1], fig.get("box"), fig_dir / rel) else None
+        rect = crop(doc[pno - 1], fig.get("box"), fig_dir / rel)
+        if rect:
+            crops[rel] = {"page": pno, "rect": rect}     # 審題網頁調整邊緣時用
+        return rel if rect else None
 
     # ── 題組：短文與共用圖 ────────────────────────────────────
     groups: dict[str, dict] = {}
@@ -618,6 +623,17 @@ def finish(path: Path, fig_dir: Path | None, out: dict, used_model: str, cost: f
 
     for s in sections:
         s["count"] = sum(1 for q in questions if q["section"] == s["ord"])
+    # 每張圖記下在原卷的位置，邊緣調整時從 PDF 重裁
+    for item in questions:
+        for a in item.get("assets") or []:
+            if a.get("file") in crops:
+                a["crop"] = crops[a["file"]]
+        for o in item.get("options") or []:
+            if (o.get("asset") or {}).get("file") in crops:
+                o["asset"]["crop"] = crops[o["asset"]["file"]]
+    for a in shared_assets:
+        if a.get("file") in crops:
+            a["crop"] = crops[a["file"]]
 
     # ── 反向覆蓋率：原卷有多少內容沒被擷取到 ─────────────────────
     if has_text:

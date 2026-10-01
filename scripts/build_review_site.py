@@ -48,6 +48,7 @@ except ImportError:
 
 CROCKFORD = "0123456789ABCDEFGHJKMNPQRSTVWXYZ"   # 去掉 I L O U，唸出來不會混淆
 MAX_WIDTH = 800
+PAD = 0.08                # 調整邊緣的留邊：裁切範圍長邊的 8%
 GRADE_LABEL = {7: "國一", 8: "國二", 9: "國三"}
 
 
@@ -83,6 +84,31 @@ def webp_data_uri(path: Path) -> str | None:
         return None
 
 
+def encode(im) -> str:
+    if im.mode == "RGB" and is_gray(im):
+        im = im.convert("L")
+    buf = io.BytesIO()
+    im.save(buf, "WEBP", quality=65, method=6)
+    return "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
+def padded(pdf, crop: dict) -> tuple[str, dict] | None:
+    """從 PDF 渲染「裁切範圍四周多留 PAD」的圖，供審題網頁拖曳調整邊緣。"""
+    import fitz
+    pno, (x0, y0, x1, y1) = crop["page"], crop["rect"]
+    if not (1 <= pno <= len(pdf)):
+        return None
+    page = pdf[pno - 1]
+    pad = max(8.0, PAD * max(x1 - x0, y1 - y0))
+    R = fitz.Rect(x0 - pad, y0 - pad, x1 + pad, y1 + pad) & page.rect
+    dpi = min(200, MAX_WIDTH / (R.width / 72))
+    pix = page.get_pixmap(dpi=dpi, clip=R)
+    im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    meta = {"pg": pno, "R": [round(v, 2) for v in (R.x0, R.y0, R.x1, R.y1)],
+            "r": [x0, y0, x1, y1], "px": pix.width}
+    return encode(im), meta
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -91,6 +117,8 @@ def main() -> int:
     ap.add_argument("-o", "--out", type=Path, required=True)
     ap.add_argument("--grade", type=int, help="只放這個年級（7、8、9）")
     ap.add_argument("--sites", default="", help="各年級網址，如 7=https://…,8=https://…")
+    ap.add_argument("--only", help="只放檔名含這段文字的卷（測試用）")
+    ap.add_argument("--pdf-root", type=Path, help="考卷 PDF 根目錄；有的話附圖改從 PDF 渲染並留邊，可在網頁調整邊緣")
     args = ap.parse_args()
     sites = dict(kv.split("=", 1) for kv in args.sites.split(",") if "=" in kv)
 
@@ -100,6 +128,8 @@ def main() -> int:
 
     groups: dict[tuple, list] = defaultdict(list)
     for p in sorted(args.bank.glob("*.yaml")):
+        if args.only and args.only not in p.name:
+            continue
         d = yaml.safe_load(p.read_text(encoding="utf-8"))
         m = d.get("document") or {}
         key = (m.get("grade"), m.get("subject"), m.get("sub_subject") or "",
@@ -125,15 +155,32 @@ def main() -> int:
             m = d["document"]
             images: dict[str, str | None] = {}
             img_ids: dict[str, str] = {}
+            crop_meta: dict[str, dict] = {}
+            pdf_path = args.pdf_root / m["source_file"] if args.pdf_root and m.get("source_file") else None
+            pdf_doc = None
 
-            def img(rel: str | None) -> str | None:
-                nonlocal missing_images
+            def img(asset: dict | None) -> str | None:
+                nonlocal missing_images, pdf_doc
+                rel = (asset or {}).get("file")
                 if not rel:
                     return None
                 if rel not in img_ids:
                     iid = f"i{len(img_ids) + 1}"
                     img_ids[rel] = iid
-                    images[iid] = webp_data_uri(args.assets / rel)
+                    done = None
+                    if asset.get("crop") and pdf_path and pdf_path.is_file():
+                        try:
+                            if pdf_doc is None:
+                                import fitz
+                                pdf_doc = fitz.open(pdf_path)
+                            done = padded(pdf_doc, asset["crop"])
+                        except Exception:  # noqa: BLE001
+                            done = None
+                    if done:
+                        images[iid] = done[0]
+                        crop_meta[iid] = {"f": rel, **done[1]}
+                    else:
+                        images[iid] = webp_data_uri(args.assets / rel)
                     if images[iid] is None:
                         missing_images += 1
                 return img_ids[rel]
@@ -162,10 +209,10 @@ def main() -> int:
                     "c": c, "id": q["id"], "s": q.get("section"), "n": q.get("number"),
                     "t": q.get("type"), "stem": q.get("stem") or "",
                     "opts": [{"l": o.get("label"), "c": o.get("content") or "",
-                              "img": img((o.get("asset") or {}).get("file"))}
+                              "img": img(o.get("asset"))}
                              for o in q.get("options") or []],
-                    "imgs": [i for a in q.get("assets") or [] if (i := img(a.get("file")))],
-                    "sa": img(sa.get("file")) if sa else None,
+                    "imgs": [i for a in q.get("assets") or [] if (i := img(a))],
+                    "sa": img(sa) if sa else None,
                     "g": gid, "ok": ok, "why": why,
                 }
                 if q.get("answer"):
@@ -187,6 +234,8 @@ def main() -> int:
                 qs.append(item)
 
             ext = str(m.get("extractor") or "rule")
+            if pdf_doc is not None:
+                pdf_doc.close()
             papers_out.append({
                 "doc": m.get("id"), "school": m.get("school"), "short": m.get("school_short"),
                 "city": m.get("city"), "title": m.get("title"),
@@ -194,7 +243,7 @@ def main() -> int:
                 "scope": m.get("scope_note"),
                 "sections": [{"o": s.get("ord"), "name": s.get("name")}
                              for s in m.get("sections") or []],
-                "passages": passages, "images": images, "q": qs,
+                "passages": passages, "images": images, "cm": crop_meta, "q": qs,
             })
             summary.append({"doc": m.get("id"), "short": m.get("school_short"),
                             "city": m.get("city"), "n": len(qs),

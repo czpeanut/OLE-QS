@@ -305,9 +305,13 @@ def merge(args) -> None:
         d = yaml.safe_load(p.read_text(encoding="utf-8"))
         qs = targets(d)
         did = d["document"]["id"]
+        dis = disagreements(d)
+        if dis and not (OUT / "tiebreak" / f"{did}.json").is_file():
+            stats["pending"] += len(qs)            # 第三票還沒回來，整份卷下次再合併
+            continue
         g = answers_of(OUT / "gemini" / f"{did}.json", qs)
         w = answers_of(OUT / "qwen" / f"{did}.json", qs)
-        t = answers_of(OUT / "tiebreak" / f"{did}.json", disagreements(d))
+        t = answers_of(OUT / "tiebreak" / f"{did}.json", dis)
         dirty = False
         for _, q in qs:
             qid, typ = q["id"], q["type"]
