@@ -22,6 +22,10 @@ document:
     count: 2
   extractor: vlm:gemini-3.7-flash(batch)
   source_file: 國一/數學/113/2-1/高雄/光華.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
 questions:
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_1
   section: 1
@@ -39,6 +43,16 @@ questions:
     content: $3x+\frac{1}{2}y+6$
   - label: D
     content: $\frac{1}{3}x+2y+6$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_2
   section: 1
   number: 2
@@ -54,6 +68,16 @@ questions:
     content: 零下13 度
   - label: D
     content: 零下77 度
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_3
   section: 1
   number: 3
@@ -72,6 +96,16 @@ questions:
     content: $\begin{cases} x+y=20 \\ 100x+120y+200=120x+100y \end{cases}$
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 89%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_4
   section: 1
   number: 4
@@ -90,6 +124,16 @@ questions:
     content: －116
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 89%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_5
   section: 1
   number: 5
@@ -115,6 +159,16 @@ questions:
     content: 40 分
   - label: D
     content: 50 分
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_6
   section: 1
   number: 6
@@ -130,6 +184,16 @@ questions:
     content: '8'
   - label: D
     content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_7
   section: 1
   number: 7
@@ -145,6 +209,16 @@ questions:
     content: $x$ 軸上的點，其$y$ 座標必為0
   - label: D
     content: $x$ 軸和$y$ 軸不屬於任何象限
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_8
   section: 1
   number: 8
@@ -160,6 +234,16 @@ questions:
     content: $a<0$，$b>0$
   - label: D
     content: $a<0$，$b<0$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_9
   section: 1
   number: 9
@@ -178,6 +262,16 @@ questions:
     content: $-\frac{139}{3}$
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 89%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s1_10
   section: 1
   number: 10
@@ -207,18 +301,48 @@ questions:
       - 242.65
       - 300.54
       - 335.27
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_1
   section: 2
   number: 1
   type: fill
   page: 2
   stem: 麗麗到文具店買了2 枝原子筆和3 隻鉛筆，若原子筆一枝$x$ 元，鉛筆一隻$y$ 元，則她共用去___________元。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_2
   section: 2
   number: 2
   type: fill
   page: 2
   stem: 歌手阿妹現年$x$ 歲，阿畢現年$y$ 歲，10 年後兩人的年齡和為________歲。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_3
   section: 2
   number: 3
@@ -227,6 +351,16 @@ questions:
   stem: 解聯立方程式$\begin{cases} 3x+y=a \\ 5x-3y=24 \end{cases}$，若$x=3$，則$a=$________。
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 81%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_4
   section: 2
   number: 4
@@ -234,48 +368,128 @@ questions:
   page: 2
   stem: 歷史博物館兵馬俑展覽吸引大批人潮參觀，某日館方售出學生票及全票共8412 張，其中學生票數比全票數的3倍多12 張，若全票售出$x$ 張，學生票售出$y$
     張，則$x-y=$______。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
   stem: 若$|7x-3y-1|+|14x+5y-13|=0$，則$7x+7y=$______。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
   stem: 計算$-4(x+y)+3[2x-(5x-2y)]=$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
   stem: 小文某次段考國、英、數三科的平均是$x$ 分，而社會科與自然的總分是$y$ 分，則她五科的總分是________分。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
   stem: 若$-1<x<0$，則點($x-\frac{1}{x}$ , $x+\frac{1}{x}$)在第＿____象限。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
   stem: 若$x=a$、$y=b$ 是$x+2y=47$ 的解，則$2a+4b=$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
   stem: 若$x$、$y$ 皆為正整數，則二元一次方程式$3x+2y=17$ 的正整數解共有________組。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_11
   section: 2
   number: 11
   type: fill
   page: 2
   stem: 若$a=-4$，$b=3$，則P($-ab$ ，$|b|-a$)在第________象限。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_12
   section: 2
   number: 12
@@ -285,12 +499,32 @@ questions:
     \end{cases}$  則$x=$________，$y=$________。(對一個給2 分)
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 81%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_13
   section: 2
   number: 13
   type: fill
   page: 3
   stem: 若$x-y+5=7=-2x-3y-4$，則$x+y=$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_14
   section: 2
   number: 14
@@ -308,6 +542,16 @@ questions:
       - 226.14
       - 191.98
       - 264.06
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s2_15
   section: 2
   number: 15
@@ -324,15 +568,45 @@ questions:
     | 1 公里內 | 60% | 75% |
 
     | 超過 1 公里 | 40% | 25% |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s3_1
   section: 3
   number: 1
   type: calc
   page: 3
   stem: 座標平面上有兩點A($2a-1$，$3$)、B($-1$，$2b$)，若A 點向左3 單位，再向上4 單位後，會與B 點重合，則$a+b=?$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
 - id: doc_113_高雄_光華_數學_g7s2e1_s3_2
   section: 3
   number: 2
   type: calc
   page: 3
   stem: 運動會時，班上一起買了4箱運動飲料，每箱的數量相同。如果每個學生發1瓶，會剩下1箱又6瓶。如果每個學生發2瓶，則會不夠12瓶。請問學生有幾人？每箱運動飲料有幾瓶？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
