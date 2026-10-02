@@ -21,6 +21,7 @@
     python scripts/build_review_site.py data/bank --assets data/assets -o out/review7 \
         --grade 7 --sites 7=<國一網址>,8=<國二網址>,9=<國三網址>
 每站只放該年級，但認得其他年級的審題編號，輸入時會連到對的那一站。
+再加 --sem 1/2 可以把年級再分上下學期（--sites 7-1=…,7-2=…）。
 """
 
 from __future__ import annotations
@@ -116,6 +117,7 @@ def main() -> int:
     ap.add_argument("--assets", type=Path, required=True)
     ap.add_argument("-o", "--out", type=Path, required=True)
     ap.add_argument("--grade", type=int, help="只放這個年級（7、8、9）")
+    ap.add_argument("--sem", type=int, help="再只放這個學期（1、2）；--sites 的鍵改用 7-1 這種格式")
     ap.add_argument("--sites", default="", help="各年級網址，如 7=https://…,8=https://…")
     ap.add_argument("--only", help="只放檔名含這段文字的卷（測試用）")
     ap.add_argument("--pdf-root", type=Path, help="考卷 PDF 根目錄；有的話附圖改從 PDF 渲染並留邊，可在網頁調整邊緣")
@@ -136,12 +138,15 @@ def main() -> int:
                m.get("academic_year_roc"), m.get("semester"), m.get("exam_seq"))
         groups[key].append(d)
 
-    elsewhere: dict[str, int] = {}      # 其他年級站的審題編號 → 年級
+    elsewhere: dict[str, str] = {}      # 其他站的審題編號 → 站名（"7" 或 "7-1"）
     if args.grade:
-        for key in [k for k in groups if k[0] != args.grade]:
+        def mine(k) -> bool:
+            return k[0] == args.grade and (not args.sem or k[4] == args.sem)
+        for key in [k for k in groups if not mine(k)]:
+            site = f"{key[0]}-{key[4]}" if args.sem else str(key[0])
             for d in groups.pop(key):
                 for q in d.get("questions") or []:
-                    elsewhere[code_of(q["id"])] = key[0]
+                    elsewhere[code_of(q["id"])] = site
     codes: dict[str, str] = {}          # 審題編號 → 題目 ID
     code_group: dict[str, int] = {}     # 審題編號 → 段考檔序號
     index_groups = []
@@ -260,8 +265,9 @@ def main() -> int:
 
     (out / "data" / "index.json").write_text(json.dumps(
         {"groups": index_groups, "codes": code_group, "elsewhere": elsewhere,
-         "sites": {int(k): v for k, v in sites.items()},
-         "label": GRADE_LABEL.get(args.grade)}, ensure_ascii=False,
+         "sites": sites,
+         "label": (GRADE_LABEL.get(args.grade, "") + ("上" if args.sem == 1 else "下" if args.sem == 2 else ""))
+                  or None}, ensure_ascii=False,
         separators=(",", ":")), encoding="utf-8")
     (out / "codes.json").write_text(json.dumps(codes, ensure_ascii=False, indent=0),
                                     encoding="utf-8")

@@ -179,6 +179,7 @@ math{font-size:1.08em}
 const $ = s => document.querySelector(s);
 const EXAM_NAME = {"1-1":"上學期第1次","1-2":"上學期第2次","1-3":"上學期第3次","2-1":"下學期第1次","2-2":"下學期第2次","2-3":"下學期第3次"};
 const GRADE_NAME = {7:"七年級",8:"八年級",9:"九年級"};
+function siteName(k){ const [g, sem] = String(k).split("-"); return (GRADE_NAME[g] || g) + (sem === "1" ? "上學期" : sem === "2" ? "下學期" : ""); }
 const TYPE_NAME = {single:"單選",multiple:"多選",tf:"是非",fill:"填充",calc:"計算",essay:"問答",matching:"配合"};
 const CATS = ["公式錯誤","錯字或漏字","圖片錯誤或缺圖","選項錯誤","題組或短文錯誤","答案錯誤","題型或大題錯誤","出處錯誤","其他"];
 
@@ -596,8 +597,8 @@ async function jumpTo(code){
     const other = INDEX && INDEX.elsewhere && INDEX.elsewhere[code];
     const site = other && INDEX.sites && INDEX.sites[other];
     if (other) $("#jumpMsg").innerHTML = site
-      ? `編號 ${esc(code)} 在<a href="${esc(site)}#${esc(code)}" target="_top">${esc(GRADE_NAME[other] || other)}的審題台</a>`
-      : `編號 ${esc(code)} 在${esc(GRADE_NAME[other] || other)}的審題台`;
+      ? `編號 ${esc(code)} 在<a href="${esc(site)}#${esc(code)}" target="_top">${esc(siteName(other))}的審題台</a>`
+      : `編號 ${esc(code)} 在${esc(siteName(other))}的審題台`;
     else $("#jumpMsg").textContent = `找不到編號 ${code}`;
     return;
   }
