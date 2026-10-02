@@ -1,65 +1,58 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 2
   exam_seq: 2
-  school: 新北市立崇林國中
-  grade: 7
-  subject: 數學
   city: 新北
   school_short: 崇林
+  school: 新北市立崇林國中
   id: doc_113_新北_崇林_數學_g7s2e2
-  title: 新北市立崇林國中 113學年度第2學期第2次定期評量7年級數學科試題
+  title: 新北市立崇林國中 113學年度第2學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第2學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、單選題
-    type: single
-    score_rule: 一、單選題:第1.~26.題,每題3分;第27題2分,共80分。
+    name: 一、單選題:第1.～26.題，每題3 分；第27 題2 分，共80 分。
     count: 27
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-2/新北/崇林.pdf
 questions:
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 題(   ) 通過(2 , -5)、(0 , -5)兩點的直線方程式為下列何者?
+  stem: 通過$(2,-5)$、$(0,-5)$兩點的直線方程式為下列何者？
   options:
   - label: A
-    content: x=2
+    content: $x=2$
   - label: B
-    content: 5x+2y=0
+    content: $5x+2y=0$
   - label: C
-    content: 5x-2y=0
+    content: $5x-2y=0$
   - label: D
-    content: y=-5
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: $y=-5$
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: (   ) a, b兩數中,有一個關係式為3a= 2b,則下列哪一個是a與b的比值? $\frac{2}{3}$
+  stem: $a,b$兩數中，有一個關係式為$3a=2b$，則下列哪一個是$a$與$b$的比值？
   options:
+  - label: A
+    content: $\frac{2}{3}$
   - label: B
     content: $\frac{3}{2}$
-  - label: A
-    content: ''
   - label: C
     content: '6'
   - label: D
-    content: 資料不足,無法求出
+    content: 資料不足，無法求出
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: (   ) $\frac{1}{4}$ 已知(m , -2)、( , n)都在二元一次方程式2x+y=1的圖形上,則m+n的值為多少?
+  stem: 已知$(m,-2)$、$(\frac{1}{4},n)$都在二元一次方程式$2x+y=1$的圖形上，則$m+n$的值為多少？
   options:
   - label: A
     content: '2'
@@ -69,42 +62,27 @@ questions:
     content: '4'
   - label: D
     content: '5'
-  ai_answers:
-    gemini: A
-    qwen: C
-    gemini_high: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:majority
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: (   ) 下列敘述何者正確?
+  stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 坐標平面上一點A(a , b),則A點到x軸的距離是—a—、到y軸的距離是—b—。
+    content: 坐標平面上一點$A(a,b)$，則$A$點到$x$軸的距離是$|a|$、到$y$軸的距離是$|b|$。
   - label: B
-    content: x軸上的任意一點,其橫坐標一定是0;y軸上的任意一點,其縱坐標一定是0 。
+    content: $x$軸上的任意一點，其橫坐標一定是0；$y$軸上的任意一點，其縱坐標一定是0。
   - label: C
-    content: 在坐標平面上,方程式x=n的圖形是一條垂直y軸的直線。
+    content: 在坐標平面上，方程式$x=n$的圖形是一條垂直$y$軸的直線。
   - label: D
-    content: 在坐標平面上,兩個二元一次方程式的圖形若相交於一點,則交點坐標就是此二元 一次聯立方程式的解。
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: 在坐標平面上，兩個二元一次方程式的圖形若相交於一點，則交點坐標就是此二元一次聯立方程式的解。
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: (   ) 小宇到花店買花,他身上帶的錢恰好可以買16朵玫瑰花或24朵康乃馨。若小宇先買了12朵玫瑰花, 則他身上剩下的錢恰好可買多少朵康乃馨?
+  stem: 小宇到花店買花，他身上帶的錢恰好可以買16朵玫瑰花或24朵康乃馨。若小宇先買了12朵玫瑰花，則他身上剩下的錢恰好可買多少朵康乃馨？
   options:
   - label: A
     content: '6'
@@ -114,41 +92,27 @@ questions:
     content: '9'
   - label: D
     content: '12'
-  ai_answers:
-    gemini: A
-    qwen: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: (   ) 判斷下列二元一次方程式的圖形,哪一個會通過原點? 7
+  stem: 判斷下列二元一次方程式的圖形，哪一個會通過原點？
   options:
   - label: A
-    content: 3x+2y=1
+    content: $3x+2y=1$
   - label: B
-    content: -x+5y=-3
+    content: $-x+5y=-3$
   - label: C
-    content: y=-2x
+    content: $y=-2x$
   - label: D
-    content: y= 6 x-2
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: $y=\frac{7}{6}x-2$
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: (   ) 已知坐標平面上有兩直線相交於一點(2 , a),且兩直線的方程式分別為2x+3y=4、3x-2y=b,其中a、b為兩數。求a−b之值為何?【修改自會106】
+  stem: 已知坐標平面上有兩直線相交於一點$(2,a)$，且兩直線的方程式分別為$2x+3y=4$、$3x-2y=b$，其中$a$、$b$為兩數。求$a-b$之值為何？【修改自會106】
   options:
   - label: A
     content: '5'
@@ -158,68 +122,53 @@ questions:
     content: '6'
   - label: D
     content: '-6'
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: (   ) 已知甲、乙兩人同時在右圖中的A點以相等的速率,甲依A→B→C→ D→A的方向繞行正方形,乙依A→D→E→A的方向繞 行正三角形。當兩人下次同時又在起點A點相遇,請問這時甲繞行的
-    圈數與乙繞行圈數的比為
+  stem: 已知甲、乙兩人同時在右圖中的A點以相等的速率，甲依A→B→C→D→A的方向繞行正方形，乙依A→D→E→A的方向繞行正三角形。當兩人下次同時又在起點A點相遇，請問這時甲繞行的圈數與乙繞行圈數的比為
   options:
   - label: A
-    content: '3:4'
+    content: 3：4
   - label: B
-    content: '4:3'
+    content: 4：3
   - label: C
-    content: '4:5'
+    content: 4：5
   - label: D
-    content: 5:4新北市立崇林國中113學年度第二學期七年級數學科第二次定期考試題目卷
+    content: 5：4
   assets:
-  - key: p1_f01
+  - key: s1_8_f1
     kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p1_f01.png
-  ai_answers:
-    gemini: A
-    qwen: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    file: doc_113_新北_崇林_數學_g7s2e2/s1_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 514.79
+      - 825.73
+      - 613.14
+      - 955.5
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_9
   section: 1
   number: 9
   type: single
   page: 2
-  stem: (   ) 請問下列的各個敘述中,x與y的關係不是成反比的是哪一個?
+  stem: 請問下列的各個敘述中，$x$與$y$的關係不是成反比的是哪一個？
   options:
   - label: A
-    content: 漫畫書一本x元,以450元買了y本。
+    content: 漫畫書一本$x$元，以450元買了$y$本。
   - label: B
-    content: 以時速x公里,花了y小時,跑完40公里。
+    content: 以時速$x$公里，花了$y$小時，跑完40公里。
   - label: C
-    content: 高5公分,面積為40平方公分的梯形,它的上底長為x公分,下底長為y公分。
+    content: 高5公分，面積為40平方公分的梯形，它的上底長為$x$公分，下底長為$y$公分。
   - label: D
-    content: x、y是不為0的數,滿足x:2=(-5):y。
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: $x$、$y$是不為0的數，滿足$x:2=(-5):y$。
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 已知學校與公車站牌相距3公里,在地圖上兩地的距離是2公分,則2公分:3公里的比值為何?
+  stem: 已知學校與公車站牌相距3公里，在地圖上兩地的距離是2公分，則2公分：3公里的比值為何？
   options:
   - label: A
     content: $\frac{1}{1500}$
@@ -229,19 +178,12 @@ questions:
     content: $\frac{1}{150000}$
   - label: D
     content: $\frac{1}{1500000}$
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 某工程18人合作,30天可以完工,若想要提前10天完工,則應增加多少人?
+  stem: 某工程18人合作，30天可以完工，若想要提前10天完工，則應增加多少人？
   options:
   - label: A
     content: '3'
@@ -251,19 +193,12 @@ questions:
     content: '15'
   - label: D
     content: '18'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 在某次數學活動中,老師提出了一個比例問題,並設計了一個小遊戲。題目如下:假設有一個比例關係 (2x-y):(x-y+1)=3:2,請問在這個比例中,x和y的正整數解有幾組?
+  stem: 在某次數學活動中，老師提出了一個比例問題，並設計了一個小遊戲。題目如下：假設有一個比例關係$(2x-y):(x-y+1)=3:2$，請問在這個比例中，$x$和$y$的正整數解有幾組？
   options:
   - label: A
     content: '1'
@@ -273,19 +208,12 @@ questions:
     content: '3'
   - label: D
     content: '4'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 方程式3x+ 4y+ 12=0的圖形不通過哪一個象限?
+  stem: 方程式$3x+4y+12=0$的圖形不通過哪一個象限？
   options:
   - label: A
     content: 第一象限
@@ -295,19 +223,12 @@ questions:
     content: 第三象限
   - label: D
     content: 第四象限
-  ai_answers:
-    gemini: A
-    qwen: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 有一個蓄水池,若每3分鐘注入5公升的水,則1小時後可將水池注滿,若每分鐘改注入2公升的水, 則需要花多少分鐘才可將此水池注滿?
+  stem: 有一個蓄水池，若每3分鐘注入5公升的水，則1小時後可將水池注滿，若每分鐘改注入2公升的水，則需要花多少分鐘才可將此水池注滿？
   options:
   - label: A
     content: '45'
@@ -317,60 +238,55 @@ questions:
     content: '60'
   - label: D
     content: '75'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 已知x與y成正比,若x= 3,y= −8;當y= −3時,則x=? $\frac{9}{8}$
+  stem: 已知$x$與$y$成正比，若$x=3$，$y=-8$；當$y=-3$時，則$x=?$
   options:
-  - label: D
-    content: $\frac{8}{9}$
   - label: A
     content: '8'
   - label: B
-    content: −8
+    content: '-8'
   - label: C
-    content: ''
+    content: $\frac{9}{8}$
+  - label: D
+    content: $\frac{8}{9}$
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 如右圖,直線AC的方程式為2x+ y= 4,A在y軸上,B、C兩點在x軸上。 已知∆AOB面積= ∆AOC面積,則下列何者為直線AB的方程式?
+  stem: '如右圖，直線AC的方程式為$2x+y=4$，$A$在$y$軸上，$B$、$C$兩點在$x$軸上。
+
+    已知$\triangle AOB$面積$=\triangle AOC$面積，則下列何者為直線AB的方程式？'
   options:
   - label: A
-    content: −2x+ y= 4
+    content: $-2x+y=4$
   - label: B
-    content: −x+ 2y= 4
+    content: $-x+2y=4$
   - label: C
-    content: x−2y= 4
+    content: $x-2y=4$
   - label: D
-    content: 2x−y= 4
+    content: $2x-y=4$
   assets:
-  - key: p2_f01
+  - key: s1_16_f1
     kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p2_f01.png
-  ai_answers:
-    gemini: A
-    qwen: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    file: doc_113_新北_崇林_數學_g7s2e2/s1_16_f1.png
+    crop:
+      page: 2
+      rect:
+      - 549.04
+      - 730.78
+      - 670.71
+      - 839.92
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 已知y與(3x-4)成反比,且x=2時,y=5,則當y=-1時,x=?
+  stem: 已知$y$與$(3x-4)$成反比，且$x=2$時，$y=5$，則當$y=-1$時，$x=？$
   options:
   - label: A
     content: '-1'
@@ -379,36 +295,28 @@ questions:
   - label: C
     content: '2'
   - label: D
-    content: -2新北市立崇林國中113學年度第二學期七年級數學科第二次定期考試題目卷
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: '-2'
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_18
   section: 1
   number: 18
   type: single
   page: 3
-  stem: 有100個和尚,共吃100個饅頭,已知大和尚一人吃3個饅頭;3位小和尚吃一個饅頭, 請問大和尚的人數與小和尚的人數之比值為多少? $\frac{1}{2}$
-    $\frac{1}{3}$ $\frac{1}{4}$ $\frac{1}{5}$
+  stem: 有100個和尚，共吃100個饅頭，已知大和尚一人吃3個饅頭；3位小和尚吃一個饅頭，請問大和尚的人數與小和尚的人數之比值為多少？
   options:
   - label: A
-    content: ''
+    content: $\frac{1}{2}$
   - label: B
-    content: ''
+    content: $\frac{1}{3}$
   - label: C
-    content: ''
+    content: $\frac{1}{4}$
   - label: D
-    content: ''
+    content: $\frac{1}{5}$
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_19
   section: 1
   number: 19
   type: single
   page: 3
-  stem: 坐標平面上有三點A(2 , 0)、B(4 , -6)、C(k , 1-2k),若A、B、C三點在坐標平面上的同一條直線上, 則k=?
+  stem: 坐標平面上有三點$A(2,0)$、$B(4,-6)$、$C(k,1-2k)$，若$A$、$B$、$C$三點在坐標平面上的同一條直線上，則$k=？$
   options:
   - label: A
     content: '4'
@@ -418,106 +326,123 @@ questions:
     content: '6'
   - label: D
     content: '7'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_20
   section: 1
   number: 20
   type: single
   page: 3
-  stem: 媽媽準備了紅茶、鮮奶及若干個完全相同的杯子,並將所有的紅茶及一部分的鮮奶以2:1的體積比混合成 鮮奶茶。若鮮奶茶剛好倒滿8個杯子,而剩下的鮮奶剛好倒滿4個杯子則媽媽準備的紅茶與鮮奶的體積比為
-    何?【修改自會110(補考)】
+  stem: 媽媽準備了紅茶、鮮奶及若干個完全相同的杯子，並將所有的紅茶及一部分的鮮奶以2：1的體積比混合成鮮奶茶。若鮮奶茶剛好倒滿8個杯子，而剩下的鮮奶剛好倒滿4個杯子則媽媽準備的紅茶與鮮奶的體積比為何？【修改自會110(補考)】
   options:
   - label: A
-    content: '3:5'
+    content: 3：5
   - label: B
-    content: '4:5'
+    content: 4：5
   - label: C
-    content: '6:11'
+    content: 6：11
   - label: D
-    content: '9:11'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: 9：11
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_21
   section: 1
   number: 21
   type: single
   page: 3
-  stem: 已知ab>0,下列哪一個選項可能為方程式x−ay=b的圖形?【修改自基90】 y y L L x x O O
+  stem: 已知$ab>0$，下列哪一個選項可能為方程式$x-ay=b$的圖形？【修改自基90】
   options:
   - label: A
     content: ''
+    asset:
+      key: optA
+      file: doc_113_新北_崇林_數學_g7s2e2/1_21_optA.png
+      crop:
+        page: 3
+        rect:
+        - 135.9
+        - 503.74
+        - 213.12
+        - 596.37
   - label: B
     content: ''
+    asset:
+      key: optB
+      file: doc_113_新北_崇林_數學_g7s2e2/1_21_optB.png
+      crop:
+        page: 3
+        rect:
+        - 245.19
+        - 503.74
+        - 326.06
+        - 593.27
   - label: C
     content: ''
-  assets:
-  - key: p3_f01
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p3_f01.png
-  - key: p3_f02
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p3_f02.png
-  - key: p3_f03
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p3_f03.png
+    asset:
+      key: optC
+      file: doc_113_新北_崇林_數學_g7s2e2/1_21_optC.png
+      crop:
+        page: 3
+        rect:
+        - 358.13
+        - 503.74
+        - 439.0
+        - 596.37
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_新北_崇林_數學_g7s2e2/1_21_optD.png
+      crop:
+        page: 3
+        rect:
+        - 475.45
+        - 504.78
+        - 559.22
+        - 597.4
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_22
   section: 1
   number: 22
   type: single
   page: 3
-  stem: 有甲、乙兩個完全相同的杯子,各裝不同量的水,若甲杯中水量的 則甲、乙兩杯的水位高度比為2:3。求甲、乙兩杯原有水量比為多少?
+  stem: 有甲、乙兩個完全相同的杯子，各裝不同量的水，若甲杯中水量的$\frac{2}{5}$倒入乙杯，且過程中無漏水，則甲、乙兩杯的水位高度比為2：3。求甲、乙兩杯原有水量比為多少?
   options:
   - label: A
-    content: '5:3'
+    content: 5：3
   - label: B
-    content: '3:5'
+    content: 3：5
   - label: C
-    content: '1:2'
+    content: 1：2
   - label: D
-    content: '2:1'
-  ai_answers:
-    gemini: A
-    qwen: D
-    gemini_high: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:majority
+    content: 2：1
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_23
   section: 1
   number: 23
   type: single
   page: 3
-  stem: 如右圖ABCD是矩形,PBQT與SQCR都是正方形, 已知PBQT面積為36平方公分,SQCR面積為25平方公分, ABCD面積為143平方公分,DR̅̅̅̅:PB̅̅̅̅=?
+  stem: 如右圖ABCD是矩形，PBQT與SQCR都是正方形，已知PBQT面積為36平方公分，SQCR面積為25平方公分，ABCD面積為143平方公分，$\overline{DR}:\overline{PB}=？$
   options:
   - label: A
-    content: '4:3'
+    content: 4：3
   - label: B
-    content: '5:4'
+    content: 5：4
   - label: C
-    content: '6:5'
+    content: 6：5
   - label: D
-    content: 7:6 y y L O L x x O
-  - label: D
-    content: $\frac{2}{5}$ 倒入乙杯,且過程中無漏水, 新北市立崇林國中113學年度第二學期七年級數學科第二次定期考試題目卷
+    content: 7：6
+  assets:
+  - key: s1_23_f1
+    kind: figure
+    file: doc_113_新北_崇林_數學_g7s2e2/s1_23_f1.png
+    crop:
+      page: 3
+      rect:
+      - 524.26
+      - 783.42
+      - 621.16
+      - 897.71
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_24
   section: 1
   number: 24
   type: single
   page: 4
-  stem: 有一東西向的直線吊橋橫跨溪谷,小維、阿良分別從西橋頭、東橋頭同時開始往吊橋的另一頭筆直地走過去, 如圖所示。已知小維從西橋頭走了48步,阿良從東橋頭走了70步時,兩人在吊橋上的某點交會,且交會之
-    後阿良再走60步恰好走到西橋頭。若小維每步的距離相等,阿良每步的距離相等,則交會之後小維再走多 少步會恰好走到東橋頭? 阿 良 小 維 東橋頭 西橋頭 【修改自會112】
+  stem: 有一東西向的直線吊橋橫跨溪谷，小維、阿良分別從西橋頭、東橋頭同時開始往吊橋的另一頭筆直地走過去，如圖所示。已知小維從西橋頭走了48步，阿良從東橋頭走了70步時，兩人在吊橋上的某點交會，且交會之後阿良再走60步恰好走到西橋頭。若小維每步的距離相等，阿良每步的距離相等，則交會之後小維再走多少步會恰好走到東橋頭？【修改自會112】
   options:
   - label: A
     content: '46'
@@ -528,203 +453,84 @@ questions:
   - label: D
     content: '72'
   assets:
-  - key: p4_f01
+  - key: s1_24_f1
     kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f01.png
-  - key: p4_f02
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f02.png
-  - key: p4_f03
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f03.png
-  - key: p4_f04
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f04.png
-  - key: p4_f05
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f05.png
-  - key: p4_f06
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f06.png
-  - key: p4_f07
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f07.png
-  - key: p4_f08
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f08.png
-  - key: p4_f09
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f09.png
-  - key: p4_f10
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f10.png
-  - key: p4_f11
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f11.png
-  - key: p4_f12
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f12.png
-  - key: p4_f13
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f13.png
-  - key: p4_f14
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f14.png
-  - key: p4_f15
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f15.png
-  - key: p4_f16
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f16.png
-  - key: p4_f17
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f17.png
-  - key: p4_f18
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f18.png
-  - key: p4_f19
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f19.png
-  - key: p4_f20
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f20.png
-  - key: p4_f21
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f21.png
-  - key: p4_f22
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f22.png
-  - key: p4_f23
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f23.png
-  - key: p4_f24
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f24.png
-  - key: p4_f25
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f25.png
-  - key: p4_f26
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f26.png
-  - key: p4_f27
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f27.png
-  - key: p4_f28
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f28.png
-  - key: p4_f29
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f29.png
-  - key: p4_f30
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f30.png
-  - key: p4_f31
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f31.png
-  - key: p4_f32
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f32.png
-  - key: p4_f33
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f33.png
-  - key: p4_f34
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f34.png
-  - key: p4_f35
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f35.png
-  - key: p4_f36
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f36.png
-  - key: p4_f37
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f37.png
-  - key: p4_f38
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f38.png
-  - key: p4_f39
-    kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f39.png
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    file: doc_113_新北_崇林_數學_g7s2e2/s1_24_f1.png
+    crop:
+      page: 4
+      rect:
+      - 110.4
+      - 140.48
+      - 522.79
+      - 241.36
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_25
   section: 1
   number: 25
   type: single
   page: 4
-  stem: 小文原本計畫使用甲、乙兩臺影印機於10:00開始一起印製文件並持續到下午,但10:00時有人正在使用 乙,於是他先使用甲印製,於10:06才開始使用乙一起印製,且到10:12時乙印製的總張數與甲相同,到10:30時甲、乙印製的總張數合計為1560張。若甲、乙的印製張數與印製時間皆成正比,則依照小文原本
-    的計畫,甲、乙印製的總張數會在哪個時間達到1560張?【修改自會110】
+  stem: 小文原本計畫使用甲、乙兩臺影印機於10：00開始一起印製文件並持續到下午，但10：00時有人正在使用乙，於是他先使用甲印製，於10：06才開始使用乙一起印製，且到10：12時乙印製的總張數與甲相同，到10：30時甲、乙印製的總張數合計為1560張。若甲、乙的印製張數與印製時間皆成正比，則依照小文原本的計畫，甲、乙印製的總張數會在哪個時間達到1560張？【修改自會110】
   options:
   - label: A
-    content: '10:25'
+    content: 10：25
   - label: B
-    content: '10:26'
+    content: 10：26
   - label: C
-    content: '10:27'
+    content: 10：27
   - label: D
-    content: '10:28'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: 10：28
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_26
   section: 1
   number: 26
   type: single
   page: 4
-  stem: 如右圖,將長方形ABCD分割成1個灰色長方形與130 A D面積相等的小正方形。根據右圖,若灰色長方形之 長與寬的比為4:3,則AD̅̅̅̅:AB̅̅̅̅=?【修改自基100-北】
+  stem: 如右圖，將長方形ABCD分割成1個灰色長方形與130面積相等的小正方形。根據右圖，若灰色長方形之長與寬的比為4：3，則$\overline{AD}:\overline{AB}＝？$【修改自基100-北】
   options:
   - label: A
-    content: '21:16'
+    content: 21：16
   - label: B
-    content: '30:23'
+    content: 30：23
   - label: C
-    content: '38:29'
+    content: 38：29
   - label: D
-    content: 46:35 B C
+    content: 46：35
   assets:
-  - key: p4_f40
+  - key: s1_26_f1
     kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f40.png
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    file: doc_113_新北_崇林_數學_g7s2e2/s1_26_f1.png
+    crop:
+      page: 4
+      rect:
+      - 452.86
+      - 488.26
+      - 635.0
+      - 581.92
 - id: doc_113_新北_崇林_數學_g7s2e2_s1_27
   section: 1
   number: 27
   type: single
   page: 4
-  stem: '如右圖,坐標平面上一直線L: 4x+ 5y= 20分別與x軸、y軸交於A、B兩點。一點P(a, b)在直線AB上, 且∆AOP面積是∆BOP面積的一半。
-    則兩數a、b的關係式為L'
+  stem: '如右圖，坐標平面上一直線$L:4x+5y=20$分別與$x$軸、$y$軸交於$A$、$B$兩點。一點$P(a,b)$在直線$AB$上，且$\triangle
+    AOP$面積是$\triangle BOP$面積的一半。
+
+
+    則兩數$a$、$b$的關係式為'
   options:
   - label: A
-    content: 5a−2b= 0
+    content: $5a-2b=0$
   - label: B
-    content: 5a+ 2b= 0
+    content: $5a+2b=0$
   - label: C
-    content: 2a−5b= 0
+    content: $2a-5b=0$
   - label: D
-    content: 2a+ 5b= 0試題結束!
+    content: $2a+5b=0$
   assets:
-  - key: p4_f41
+  - key: s1_27_f1
     kind: figure
-    file: doc_113_新北_崇林_數學_g7s2e2/p4_f41.png
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    file: doc_113_新北_崇林_數學_g7s2e2/s1_27_f1.png
+    crop:
+      page: 4
+      rect:
+      - 490.75
+      - 659.58
+      - 645.93
+      - 766.65

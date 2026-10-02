@@ -1,0 +1,348 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 1
+  city: 高雄
+  school_short: 光華
+  school: 高雄市立光華國民中學
+  id: doc_113_高雄_光華_數學_g8s2e1
+  title: 高雄市立光華國民中學 113學年度第2學期第1次定期評量 8年級數學科試題
+  exam_name: 113學年度第2學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、 單選題(每題3分，共30分)
+    count: 10
+  - ord: 2
+    name: 二、 填充題 (每格4分，共60分) (務必將答案化成最簡根式、最簡分數，未化簡者，不予計分)
+    count: 15
+  - ord: 3
+    name: 三、 計算題 (每題5 分，共10 分 ) 請寫下完整的計算過程；沒計算過程，不予計分。
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/2-1/高雄/光華.pdf
+questions:
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 等差數列第3 項為40，第6 項為31，則第8 項等於多少？
+  options:
+  - label: A
+    content: '22'
+  - label: B
+    content: '23'
+  - label: C
+    content: '24'
+  - label: D
+    content: '25'
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 如圖，用木條依次向右排出相連的柵欄，如果要排出第102 個圖形，總共需要幾根木條？
+  options:
+  - label: A
+    content: '405'
+  - label: B
+    content: '407'
+  - label: C
+    content: '409'
+  - label: D
+    content: '413'
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_113_高雄_光華_數學_g8s2e1/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 43.17
+      - 279.76
+      - 239.12
+      - 328.59
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 若 $x+4$ , $-15$ , $5x$ 三數成等比數列，則$x$ 的值可能為何？
+  options:
+  - label: A
+    content: '9'
+  - label: B
+    content: '5'
+  - label: C
+    content: －4
+  - label: D
+    content: －5
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 有一線型函數的圖形通過點（－4 , 5）且平行$x$ 軸，則下列敘述何者正確？
+  options:
+  - label: A
+    content: 此函數為一次函數
+  - label: B
+    content: 此函數為$x=-4$
+  - label: C
+    content: 此函數為 $y=-4$
+  - label: D
+    content: 此函數的圖形與 $y$ 軸相交於（0 , 5）。
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 求一等差級數 $6+6\frac{2}{5}+6\frac{4}{5}+\dots\dots$到第21 項的和為下列何者？
+  options:
+  - label: A
+    content: '210'
+  - label: B
+    content: '200'
+  - label: C
+    content: '147'
+  - label: D
+    content: '140'
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 已知函數$y_{1}=4x-3$，且通過( 1 , $a$ )、( 3 , $b$ )，則關於函數$y_{2}=ax+b$ 之敘述下列何者正確？
+  options:
+  - label: A
+    content: $y_{2}$ 是常數函數
+  - label: B
+    content: 在$x=0$ 時，函數值$y_{2}=8$
+  - label: C
+    content: $y_{2}$ 之圖形不通過第四象限
+  - label: D
+    content: 在$x=4$ 時，函數值$y_{2}=0$
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 有一等比數列的公比為$-\frac{1}{2}$ ，第9 項為3，則首項為何？
+  options:
+  - label: A
+    content: '768'
+  - label: B
+    content: '384'
+  - label: C
+    content: －384
+  - label: D
+    content: －768
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 下列有關函數的敘述，何者錯誤？
+  options:
+  - label: A
+    content: 有一等差數列的一般項為$a_{n}=3n+2$，因為每一項都有相對應的值，所以$a_{n}$ 為$n$ 的函數
+  - label: B
+    content: 海洋公園的門票為12 歲以上590 元，未滿12 歲190 元。若$x$ 表示年齡，$y$ 表示票價，則$y$ 是$x$ 的函數
+  - label: C
+    content: 在平年中，若$y$ 表示月分，$x$ 表示$y$ 月的天數，則$y$ 是$x$ 的函數
+  - label: D
+    content: 若二年甲班學生玩擲骰子遊戲，每人擲一次，以 $x$ 表示學生的座號，$y$ 表示擲出的點數，則$y$ 是$x$ 的函數
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 一多邊形其周長為408 公分，它的邊長恰形成公差為2 公分的等差數列，已知其最長邊為45 公分，則此多邊形的邊數為何？
+  options:
+  - label: A
+    content: '13'
+  - label: B
+    content: '12'
+  - label: C
+    content: '11'
+  - label: D
+    content: '10'
+- id: doc_113_高雄_光華_數學_g8s2e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 在100～400 且個位數字為7 的正整數，自小到大排列的數列中，請問下列敘述何者錯誤？
+  options:
+  - label: A
+    content: 此數列為等差數列
+  - label: B
+    content: 此數列公差為10
+  - label: C
+    content: 此數列共有30 項
+  - label: D
+    content: 此數列末項為399
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 一等差數列的公差為－5，第8 項為17，則此數列的首項為 (1) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知$y$ 是$x$ 的函數，設函數$y=(a-2)x-(2a-x)+3$，且在$x=3$ 時，函數值 $y$ 為 4，則在$x=1$ 時，函數值為
+    (2) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知一等比數列2 , $-2\sqrt{7}$ , $a$ , $-14\sqrt{7}$ , $b$，則 $a+b$ 的值為 (3) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知$-7$ , $x$ , 27 三數成等差數列，且4, $x$ , $y$ 三數成等比數列，則 $x+y=$ (4) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '有一種圖形叫做「謝爾賓斯基三角形」( Sierpinski triangle )，它是用一個三角形，經過一個規律剪裁後得到的圖形，如附圖，圖一有1
+    個著色三角形，圖二有3 個著色三角形，每一個圖形其著色三角形個數都是前一個圖的 3 倍，請問根據此規律，圖七有幾個著色三角形？答: (5) 個。'
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_113_高雄_光華_數學_g8s2e1/s2_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 53.49
+      - 288.95
+      - 359.99
+      - 379.62
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 有一生產機器，其輸入原料重量與輸出成品重量成線型函數關係，若輸入原料 30 公斤，可輸出 24 公斤的成品；輸入原料 45 公斤，可輸出 34 公斤的成品，今欲輸出
+    48 公斤的成品，則應輸入 (6) 公斤的原料。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知等差數列甲的首項是 17，公差為10；等差數列乙的首項是 13，公差為 4，則這兩個數列的第5 個共同項為 (7) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 設一等差級數的首項為 76，末項為 24，公差為－4，則此級數的和為 (8) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 若一等比數列的第4 項為$\frac{1}{4}$，第7 項為 16，則等比數列的第2 項為 (9) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 在 10 和 55 兩數之間放入若干個數，使其成為一等差數列，若此等差數列的和為 520，則此等差數列的公差為 (10) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 已知某等差數列的首項為－40，第 2 項為$-39\frac{1}{4}$ ，則此數列由第 (11) 項開始變為正數。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 如果$a$、$b$ 兩數的等差中項為 16，且$2a+b$ 與 $4a-2b-5$ 的等差中項為 20，則$a-b=$ (12) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 設一等差數列共有 40 項，已知首項和第 3 項的和為 17，第 38 項和第 40 項的和為 103，則此級數的和為 (13) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: 如圖，第十二層的數字總和為 (14) 。
+  assets:
+  - key: s2_14_f1
+    kind: figure
+    file: doc_113_高雄_光華_數學_g8s2e1/s2_14_f1.png
+    crop:
+      page: 2
+      rect:
+      - 347.57
+      - 723.77
+      - 440.33
+      - 801.18
+- id: doc_113_高雄_光華_數學_g8s2e1_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 2
+  stem: 已知函數$y=-\frac{5}{12}x+5$ 的圖形與$x$、$y$ 軸分別交於$A$、$B$ 兩點，$y=ax$ 與函數$y$ 的圖形交於 $C$
+    點，若$\triangle AOB$ 的面積為$\triangle BOC$ 面積的 3 倍，且$a>0$，則$a=$ (15) 。
+- id: doc_113_高雄_光華_數學_g8s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: '如附圖，長方形$ABCD$ 中，$\overline{AB}=5$，$\overline{BC}=6$。已知小浩從 $A$ 點出發，經過 $B$、$C$、$D$、$A$、……，第
+    1 秒走 1 個單位，第 2 秒走 3 個單位，每一秒都比前一秒多走 2 個單位，則：
+
+    (1) 經過 30 秒之後，小浩走了多少個單位？(3 分)
+
+    (2) 承上題(1)，此時小浩在哪一個線段上？(2 分)'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_高雄_光華_數學_g8s2e1/s3_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 55.7
+      - 239.95
+      - 146.99
+      - 306.13
+- id: doc_113_高雄_光華_數學_g8s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: '如附圖，正方形$ABCD$ 的邊長是 10 ，$E$ 在 $\overline{BC}$ 的延長線上，且 $\overline{BE}=10$，點
+    $Q$ 在 $\overline{CD}$ 上移動，且 $\overline{EQ}$ 與 $\overline{AB}$ 交於 $F$，$\overline{EQ}$
+    與 $\overline{CD}$ 交於 $Q$，設 $\overline{DQ}$ 為$x$ ( $0<x<10$ )，$\overline{FB}=5-\frac{1}{2}x$，且四邊形
+    $AFQD$ 與$\triangle BEF$ 的面積和為 $y$ ，則：
+
+    (1) 求$x$ 與$y$ 的關係式。(3 分)
+
+    (2) 當$y=90$，$x=$？(2 分)'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_高雄_光華_數學_g8s2e1/s3_2_f1.png
+    crop:
+      page: 3
+      rect:
+      - 35.06
+      - 413.47
+      - 200.05
+      - 509.26

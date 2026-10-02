@@ -1,51 +1,58 @@
 document:
+  grade: 7
+  subject: 數學
   academic_year_roc: 113
   semester: 1
   exam_seq: 2
-  school: 新北市立土城國民中學
-  grade: 7
-  subject: 數學
   city: 新北
   school_short: 土城
+  school: 新北市立土城國民中學
   id: doc_113_新北_土城_數學_g7s1e2
-  title: 新北市立土城國民中學 113學年度第1學期第2次定期評量7年級數學科試題
+  title: 新北市立土城國民中學 113學年度第1學期第2次定期評量 7年級數學科試題
   exam_name: 113學年度第1學期第2次定期評量
   sections:
   - ord: 1
-    name: 一、選擇題
-    type: single
-    score_rule: 一、選擇題 (每題4分,共22題)
+    name: 一、選擇題 (每題4 分，共22 題)
     count: 22
+  - ord: 2
+    name: 二、 計算題(每題6 分，共2 題)
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-2/新北/土城.pdf
 questions:
 - id: doc_113_新北_土城_數學_g7s1e2_s1_1
   section: 1
   number: 1
   type: single
   page: 1
-  stem: 下列敘述有幾項正確? (甲) 0是任意正整數的倍數。 (乙) 1是任意正整數的因數。 (丙) 1是最小的質數。 (丁) 所有的質數都是奇數。 (戊)
-    任一正整數的因數個數皆是偶數個。 (己) 若兩個整數互質,則這兩數都是質數。
+  stem: '下列敘述有幾項正確？
+
+    (甲) 0 是任意正整數的倍數。
+
+    (乙) 1 是任意正整數的因數。
+
+    (丙) 1 是最小的質數。
+
+    (丁) 所有的質數都是奇數。
+
+    (戊) 任一正整數的因數個數皆是偶數個。
+
+    (己) 若兩個整數互質，則這兩數都是質數。'
   options:
   - label: A
-    content: 2項
+    content: 2 項
   - label: B
-    content: 3項
+    content: 3 項
   - label: C
-    content: 4項
+    content: 4 項
   - label: D
-    content: 5項
-  ai_answers:
-    gemini: A
-    qwen: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: 5 項
 - id: doc_113_新北_土城_數學_g7s1e2_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 有一長方形面積72且邊長為整數,求其周長最 小為?
+  stem: 有一長方形面積72 且邊長為整數，求其周長最小為？
   options:
   - label: A
     content: '17'
@@ -55,19 +62,12 @@ questions:
     content: '18'
   - label: D
     content: '36'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 將42×444做質因數分解後,寫成標準分解式的 結果為2a × 3b × 7× c,求a+b+c=?
+  stem: 將42×444 做質因數分解後，寫成標準分解式的結果為$2^{a} \times 3^{b} \times 7 \times c$，求$a+b+c$＝？
   options:
   - label: A
     content: '41'
@@ -77,19 +77,12 @@ questions:
     content: '113'
   - label: D
     content: '115'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 222、3333、7051、63063、9051306,五個數 中,有多少個11的倍數?
+  stem: 222、3333、7051、63063、9051306，五個數中，有多少個11 的倍數？
   options:
   - label: A
     content: '2'
@@ -99,19 +92,12 @@ questions:
     content: '4'
   - label: D
     content: '5'
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 若五位數1234□是3的倍數,也是4的倍數, 則□中可填入的數為?
+  stem: 若五位數1234□是3 的倍數，也是4 的倍數，則□中可填入的數為？
   options:
   - label: A
     content: '0'
@@ -121,19 +107,12 @@ questions:
     content: '4'
   - label: D
     content: '8'
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 求 [24 , 32 , 48] =?
+  stem: 求 $[24, 32, 48]$ ＝？
   options:
   - label: A
     content: '8'
@@ -143,64 +122,43 @@ questions:
     content: '96'
   - label: D
     content: '192'
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 下列何者不是22×32×7的因數?
+  stem: 下列何者不是$2^{2}\times 3^{2}\times 7$ 的因數？
   options:
   - label: A
-    content: 2×32
+    content: $2\times 3^{2}$
   - label: B
     content: 4×7
   - label: C
     content: 3×7
   - label: D
-    content: 2×3×72
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: $2\times 3\times 7^{2}$
 - id: doc_113_新北_土城_數學_g7s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 求 (33×52×114 , 22×32×5×72×112) =?
+  stem: 求 ($3^{3}\times 5^{2}\times 11^{4}$, $2^{2}\times 3^{2}\times 5\times 7^{2}\times
+    11^{2}$) ＝？
   options:
   - label: A
-    content: 32×50×112
+    content: $3^{2}\times 5\times 11^{2}$
   - label: B
-    content: 22×32×50×72×112
+    content: $2^{2}\times 3^{2}\times 5\times 7^{2}\times 11^{2}$
   - label: C
-    content: 33×52×114
+    content: $3^{3}\times 5^{2}\times 11^{4}$
   - label: D
-    content: 22×33×52×72×114第1頁,試題共3頁,背面尚有試題
-  ai_answers:
-    gemini: A
-    qwen: D
-    gemini_high: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:majority
+    content: $2^{2}\times 3^{3}\times 5^{2}\times 7^{2}\times 11^{4}$
 - id: doc_113_新北_土城_數學_g7s1e2_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 已知兩正整數a>b,且 (a , b)=12, [a , b]=252,則a可能為?
+  stem: 已知兩正整數 $a>b$，且 $(a, b)＝12$，$[a, b]＝252$，則 $a$可能為？
   options:
   - label: A
     content: '168'
@@ -210,19 +168,12 @@ questions:
     content: '36'
   - label: D
     content: '12'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 有一個分數的分母為48,已知其分子減去5以 $\frac{7}{8}$ 後,恰可約分成 ,則原分子為?
+  stem: 有一個分數的分母為48，已知其分子減去5 以後，恰可約分成 $\frac{7}{8}$，則原分子為？
   options:
   - label: A
     content: '47'
@@ -232,108 +183,76 @@ questions:
     content: '12'
   - label: D
     content: '2'
-  ai_answers:
-    gemini: A
-    qwen: C
-    gemini_high: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:majority
 - id: doc_113_新北_土城_數學_g7s1e2_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 計算 $\frac{8}{99}$ -( $\frac{35}{99}$ -$\frac{17}{22}$ ) =?
+  stem: 計算 $\frac{8}{99}-(\frac{35}{99}-\frac{17}{22})$ ＝？
   options:
+  - label: A
+    content: $-\frac{10}{11}$
   - label: B
-    content: '- $\frac{23}{22}$'
+    content: $-\frac{23}{22}$
   - label: C
     content: $\frac{23}{22}$
   - label: D
     content: $\frac{1}{2}$
-  - label: A
-    content: -$\frac{10}{11}$
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: 計算 $\frac{7}{9}$ × (-$\frac{2}{7}$ ) ÷1 $\frac{4}{5}$ =?
+  stem: 計算 $\frac{7}{9} \times (-\frac{2}{7}) \div 1\frac{4}{5}$ ＝？
   options:
   - label: A
-    content: -$\frac{2}{5}$
+    content: $-\frac{2}{5}$
   - label: B
     content: $\frac{2}{5}$
   - label: C
-    content: -$\frac{10}{81}$
+    content: $-\frac{10}{81}$
   - label: D
     content: $\frac{10}{81}$
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 計算(-9 )×8 $\frac{4}{7}$ -(-9 )×3 $\frac{4}{7}$ =?
+  stem: 計算$(-9)\times 8\frac{4}{7}-(-9)\times 3\frac{4}{7}$ ＝？
   options:
   - label: A
-    content: '-45'
+    content: $-45$
   - label: B
     content: '45'
   - label: C
-    content: -106 $\frac{2}{7}$
+    content: $-106\frac{2}{7}$
   - label: D
-    content: 106 $\frac{2}{7}$
-  ai_answers:
-    gemini: A
-    qwen: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: $106\frac{2}{7}$
 - id: doc_113_新北_土城_數學_g7s1e2_s1_14
   section: 1
   number: 14
   type: single
   page: 1
-  stem: 下列哪一個數的值最小?
+  stem: 下列哪一個數的值最小？
   options:
   - label: A
-    content: (-$\frac{1}{3}$ )2
+    content: $(-\frac{1}{3})^{2}$
   - label: B
-    content: ( -$\frac{1}{3}$ )3
+    content: $(-\frac{1}{3})^{3}$
   - label: C
-    content: (-$\frac{6}{5}$ )4
+    content: $(-\frac{6}{5})^{4}$
   - label: D
-    content: (-$\frac{6}{5}$ )3
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: $(-\frac{6}{5})^{3}$
 - id: doc_113_新北_土城_數學_g7s1e2_s1_15
   section: 1
   number: 15
   type: single
   page: 1
-  stem: 已知 (-7)5 × (-7)2=(-7)x 、 (-7)5÷(-7)2=(-7)y、[(-7)5]2=(-7)z求x+y+z=?
+  stem: '已知 $(-7)^{5}\times (-7)^{2}=(-7)^{x}$、
+
+    $(-7)^{5}\div (-7)^{2}=(-7)^{y}$、$[(-7)^{5}]^{2}=(-7)^{z}$
+
+    求$x+y+z$＝？'
   options:
   - label: A
     content: '21'
@@ -343,19 +262,12 @@ questions:
     content: '19.5'
   - label: D
     content: '16.5'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_16
   section: 1
   number: 16
   type: single
   page: 1
-  stem: 計算25×54=?
+  stem: 計算 $2^{5}\times 5^{4}$＝？
   options:
   - label: A
     content: '200'
@@ -365,19 +277,14 @@ questions:
     content: '20000'
   - label: D
     content: '200000'
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 若33+33+33=3a,93是33的b倍, 求a+b=?
+  stem: '若$3^{3}+3^{3}+3^{3}=3^{a}$，$9^{3}$ 是 $3^{3}$ 的 $b$ 倍，
+
+    求$a+b$＝？'
   options:
   - label: A
     content: '7'
@@ -387,23 +294,12 @@ questions:
     content: '13'
   - label: D
     content: '31'
-  assets:
-  - key: p2_f01
-    kind: figure
-    file: doc_113_新北_土城_數學_g7s1e2/p2_f01.png
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 土城花店進了一塊長方體插花海綿,長168公 分,寬154公分,高140公分,店員要將海綿 切成每塊一樣大的正方體且沒有剩下,請問最 少可以切出幾塊正方體海綿?
+  stem: 土城花店進了一塊長方體插花海綿，長168 公分，寬154 公分，高140 公分，店員要將海綿切成每塊一樣大的正方體且沒有剩下，請問最少可以切出幾塊正方體海綿？
   options:
   - label: A
     content: '1320'
@@ -413,21 +309,23 @@ questions:
     content: '33'
   - label: D
     content: '14'
-  ai_answers:
-    gemini: A
-    qwen: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 土城國中餐廚公司進行白米分裝,已知一袋2 $\frac{5}{8}$ 公斤的白米,每$\frac{9}{16}$ 公斤裝成一包,計算得 = 4 $\frac{2}{3}$
-    知2 $\frac{5}{8}$ ÷ $\frac{9}{16}$ 。 2甲說:「可裝成4包,剩下 公斤。」 3 2乙說:「可裝成4包。」 3 9 × 2丙說:「
-    是未滿一包的重量。」 16 3 5 × 2丁說:「2是未滿一包的重量。」 8 3則哪些人說法正確? 則哪些人說法正確?
+  stem: '土城國中餐廚公司進行白米分裝，已知一袋 $2\frac{5}{8}$ 公斤的白米，每 $\frac{9}{16}$ 公斤裝成一包，計算得知 $2\frac{5}{8}
+    \div \frac{9}{16} = 4\frac{2}{3}$。
+
+    甲說：「可裝成4 包，剩下 $\frac{2}{3}$ 公斤。」
+
+    乙說：「可裝成 $4\frac{2}{3}$ 包。」
+
+    丙說：「$\frac{9}{16} \times \frac{2}{3}$ 是未滿一包的重量。」
+
+    丁說：「$2\frac{5}{8} \times \frac{2}{3}$ 是未滿一包的重量。」
+
+    則哪些人說法正確？'
   options:
   - label: A
     content: 甲、丙
@@ -437,24 +335,18 @@ questions:
     content: 乙、丙
   - label: D
     content: 乙、丁
-  assets:
-  - key: p2_f02
-    kind: figure
-    file: doc_113_新北_土城_數學_g7s1e2/p2_f02.png
-  ai_answers:
-    gemini: C
-    qwen: C
-  answer:
-  - C
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
 - id: doc_113_新北_土城_數學_g7s1e2_s1_20
   section: 1
   number: 20
   type: single
   page: 2
-  stem: 涂土、程城、林寧三人各買一條不同長度的 緞帶,涂土把緞帶分成三段,程城把緞帶分 成四段,林寧把緞帶分成五段。 涂土說:「我緞帶兩段長和程城的三段等長。」
-    林寧說:「我緞帶三段長和程城的四段等長。」 若涂土買了27公尺,請問林寧買多少公尺?
+  stem: '涂土、程城、林寧三人各買一條不同長度的緞帶，涂土把緞帶分成三段，程城把緞帶分成四段，林寧把緞帶分成五段。
+
+    涂土說：「我緞帶兩段長和程城的三段等長。」
+
+    林寧說：「我緞帶三段長和程城的四段等長。」
+
+    若涂土買了27 公尺，請問林寧買多少公尺？'
   options:
   - label: A
     content: '32'
@@ -463,25 +355,13 @@ questions:
   - label: C
     content: '36'
   - label: D
-    content: 40第2頁,試題共3頁 請閱讀以下內容,並回答第21、22題 土城虛擬遊戲幣市場有三種貨幣,圖幣、勇幣、程幣 幣值 結算週期 倍率1圖幣=3台幣3天3倍1勇幣=4台幣4天4倍1程幣=5台幣5天5倍
-      例如:在11月1日用台幣3元購買1圖幣, 11月4日結算,可獲得3圖幣相當於台幣9元
-  assets:
-  - key: p2_f03
-    kind: figure
-    file: doc_113_新北_土城_數學_g7s1e2/p2_f03.png
-  ai_answers:
-    gemini: D
-    qwen: D
-  answer:
-  - D
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: '40'
 - id: doc_113_新北_土城_數學_g7s1e2_s1_21
   section: 1
   number: 21
   type: single
   page: 2
-  stem: 若勇勇買了1個勇幣,試問8天後可獲得多少 勇幣?
+  stem: 若勇勇買了1 個勇幣，試問8 天後可獲得多少勇幣？
   options:
   - label: A
     content: '8'
@@ -491,19 +371,32 @@ questions:
     content: '32'
   - label: D
     content: '64'
-  ai_answers:
-    gemini: B
-    qwen: B
-  answer:
-  - B
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+  group_stem: '請閱讀以下內容，並回答第21、22 題
+
+
+    土城虛擬遊戲幣市場有三種貨幣，圖幣、勇幣、程幣
+
+
+    | 幣值 | 結算週期 | 倍率 |
+
+    | --- | --- | --- |
+
+    | 1 圖幣=3 台幣 | 3 天 | 3 倍 |
+
+    | 1 勇幣=4 台幣 | 4 天 | 4 倍 |
+
+    | 1 程幣=5 台幣 | 5 天 | 5 倍 |
+
+
+    例如:在11 月1 日用台幣3 元購買1 圖幣，
+
+    11 月4 日結算，可獲得3 圖幣相當於台幣9 元'
 - id: doc_113_新北_土城_數學_g7s1e2_s1_22
   section: 1
   number: 22
   type: single
   page: 2
-  stem: 若俊仔11月1號領到300元零用錢,試問他要 在11月1日投資哪種貨幣,在12月最後一次 貨幣結算時換回台幣,他可以獲得最多台幣?
+  stem: 若俊仔11 月1 號領到300 元零用錢，試問他要在11 月1 日投資哪種貨幣，在12 月最後一次貨幣結算時換回台幣，他可以獲得最多台幣？
   options:
   - label: A
     content: 圖幣
@@ -512,16 +405,43 @@ questions:
   - label: C
     content: 程幣
   - label: D
-    content: '一樣多 新北市立土城國民中學113學年度第一學期 第二次段考 數學科(七年級)試題手寫卷 班級:        座號:        姓名:
-      二、 計算題(每題6分,共2題) 注意: 請用黑色原子筆在作答區內作答,標明題號並寫出完整計算過程或原因,否則不予計分。 1. 城林橋為連接樹林與土城交通要道,此橋全長為
-      第1題作答區840公尺,原來在此橋的兩側每隔10公尺裝設一 盞路燈(橋頭與橋尾都裝),但因節能考量改為每 隔15公尺裝設一盞路燈,請回答下列問題。 (1)在不需要拆除的路燈中,相鄰兩盞的距離是多
-      少公尺?(2分) (2)此時不需要拆除的路燈共有多少盞?(4分) 2. 計算(- $\frac{7}{9}$ )6×(- $\frac{9}{7}$ )5+
-      $\frac{2}{3}$ ÷ (-1 $\frac{1}{2}$ ) +20240第2題作答區 (- $\frac{7}{9}$ )6×(- $\frac{9}{7}$
-      )5+ $\frac{2}{3}$ ÷ (-1 $\frac{1}{2}$ 之值?(6分) ) +20240 = 第3頁,試題共3頁,試題結束'
-  ai_answers:
-    gemini: A
-    qwen: A
-  answer:
-  - A
-  answer_status: ai_generated
-  answer_source: ai:gemini+qwen
+    content: 一樣多
+  group_stem: '請閱讀以下內容，並回答第21、22 題
+
+
+    土城虛擬遊戲幣市場有三種貨幣，圖幣、勇幣、程幣
+
+
+    | 幣值 | 結算週期 | 倍率 |
+
+    | --- | --- | --- |
+
+    | 1 圖幣=3 台幣 | 3 天 | 3 倍 |
+
+    | 1 勇幣=4 台幣 | 4 天 | 4 倍 |
+
+    | 1 程幣=5 台幣 | 5 天 | 5 倍 |
+
+
+    例如:在11 月1 日用台幣3 元購買1 圖幣，
+
+    11 月4 日結算，可獲得3 圖幣相當於台幣9 元'
+- id: doc_113_新北_土城_數學_g7s1e2_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 3
+  stem: '城林橋為連接樹林與土城交通要道，此橋全長為840 公尺，原來在此橋的兩側每隔10 公尺裝設一盞路燈(橋頭與橋尾都裝)，但因節能考量改為每隔15 公尺裝設一盞路燈，請回答下列問題。
+
+    (1)在不需要拆除的路燈中，相鄰兩盞的距離是多少公尺？(2 分)
+
+    (2)此時不需要拆除的路燈共有多少盞？(4 分)'
+- id: doc_113_新北_土城_數學_g7s1e2_s2_2
+  section: 2
+  number: 2
+  type: calc
+  page: 3
+  stem: '計算$(-\frac{7}{9})^{6}\times (-\frac{9}{7})^{5}+\frac{2}{3} \div (-1\frac{1}{2})
+    +2024^{0}$
+
+    之值？(6 分)'
