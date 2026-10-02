@@ -88,17 +88,28 @@ python scripts/classify_chapters.py data/bank --ledger out/chapter_spend.json --
 
 ## 審題網頁
 
-題庫超過單一網頁容量（256 MB），依年級分三站，審題編號跨站通用
-（輸入別站的編號會提示並連過去）：
+題庫超過單一網頁容量（256 MB），依年級與學期分六站，審題編號跨站通用
+（輸入別站的編號會提示並連過去）。多人審題：回報依審題者分開存、記錄誰標記審完與調整邊緣；
+在各站的 Share 選單以 email 邀請，權限選 Contributor 以上才能儲存。
 
-| 年級 | 網址 |
-|---|---|
-| 國一 | https://claude.ai/artifact/54hK3SSLDCFJThZm9Dju1x |
-| 國二 | https://claude.ai/artifact/V1AG52HtTER52AMqnZ3LQt |
-| 國三 | https://claude.ai/artifact/NZSZpSo7x5YeEEYnUKbN9c |
+| 年級 | 上學期 | 下學期 |
+|---|---|---|
+| 國一 | https://claude.ai/artifact/54hK3SSLDCFJThZm9Dju1x | https://claude.ai/artifact/SL1HGAvkyswTUfs3XtaK4r |
+| 國二 | https://claude.ai/artifact/V1AG52HtTER52AMqnZ3LQt | https://claude.ai/artifact/5xWEr2Ahur2Lrjpro7dSAx |
+| 國三 | https://claude.ai/artifact/NZSZpSo7x5YeEEYnUKbN9c | https://claude.ai/artifact/5K48rnUym4QGwqoo22mnhm |
 
-重建：`python scripts/build_review_site.py data/bank --assets data/assets -o out/rv7 --grade 7 --sites 7=…,8=…,9=…`。
-回報存在各站的 `reports` 集合（文件 ID 是審題編號），審完的卷存在 `reviewed`。
+重建：`python scripts/build_review_site.py data/bank --assets data/assets -o out/s7-1 --grade 7 --sem 1 --pdf-root <考卷根目錄>`，
+再把六站網址寫進各站 `data/index.json` 的 `sites`（鍵為 `7-1` 這種格式）。
+回報存在各站的 `reports` 集合（文件 ID 為「審題編號~審題者ID」），審完的卷在 `reviewed`，邊緣調整在 `crops`。
+
+## 第二階段（2026-09-30～10-02）：批次擷取、Gemini＋Qwen 作答
+
+預算上限 NT$7,000，實際 **NT$5,628**（`out/phase2_spend.json` 加重試 NT$21.5）。
+- 擷取：Gemini 批次 API（半價）擷取其餘約 2,550 份；全部 5,567 份中 5,558 份完成，9 份仍被 RECITATION 擋下（多為國三英文）。
+- 作答：Gemini（批次，數學、自然中等思考）與 Qwen（即時，社會用 qwen3-vl-plus、其他 qwen3.5-flash 思考）各答一次，
+  不一致由 Gemini 高思考投第三票。Qwen 內容審查擋下的卷分段重送，仍被擋的題只用 Gemini 兩種思考互證（標 ai:gemini-only）。
+- 統計見 `docs/bank_stats.md`、`docs/unit_counts.md`（`scripts/bank_stats.py` 產生）。
+- 期間 Google 帳單一度停擺（403 dunning），那段時間的批次全部失敗、不計費，恢復後重送。
 
 ### 附圖邊緣調整（2026-10-01）
 
