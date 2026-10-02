@@ -45,6 +45,9 @@ questions:
     content: 5x-y2=1
   answer:
   - C
+  ai_answers:
+    gemini: C
+    qwen: C
 - id: doc_114_台中_向上_數學_g7s2e1_s1_2
   section: 1
   number: 2
@@ -62,6 +65,9 @@ questions:
     content: y=1
   answer:
   - B
+  ai_answers:
+    gemini: B
+    qwen: B
 - id: doc_114_台中_向上_數學_g7s2e1_s1_3
   section: 1
   number: 3
@@ -113,6 +119,9 @@ questions:
     content: y=40(x-3)
   answer:
   - D
+  ai_answers:
+    gemini: D
+    qwen: D
 - id: doc_114_台中_向上_數學_g7s2e1_s1_5
   section: 1
   number: 5
@@ -155,6 +164,9 @@ questions:
     content: -3x-2
   answer:
   - A
+  ai_answers:
+    gemini: A
+    qwen: A
 - id: doc_114_台中_向上_數學_g7s2e1_s1_7
   section: 1
   number: 7
@@ -172,6 +184,9 @@ questions:
     content: (1)2-(2)3
   answer:
   - B
+  ai_answers:
+    gemini: B
+    qwen: B
 - id: doc_114_台中_向上_數學_g7s2e1_s1_8
   section: 1
   number: 8
@@ -190,6 +205,9 @@ questions:
     content: 步驟四
   answer:
   - B
+  ai_answers:
+    gemini: B
+    qwen: B
 - id: doc_114_台中_向上_數學_g7s2e1_s1_9
   section: 1
   number: 9
@@ -226,6 +244,9 @@ questions:
     content: '7'
   answer:
   - A
+  ai_answers:
+    gemini: A
+    qwen: A
 - id: doc_114_台中_向上_數學_g7s2e1_s2_1
   section: 2
   number: 1
@@ -238,6 +259,10 @@ questions:
     file: p1_f08.png
   answer:
   - ( 2 , 3 )
+  ai_answers:
+    gemini: (0,0)
+    qwen: (3, 3)
+    gemini_high: (1, 2)
 - id: doc_114_台中_向上_數學_g7s2e1_s2_2
   section: 2
   number: 2
@@ -250,6 +275,11 @@ questions:
     file: p1_f09.png
   answer:
   - '-4'
+  ai_answers:
+    gemini: '0'
+    qwen: '0'
+  answer_status: disputed
+  review_note: 答案卷 ['-4']，Gemini 與 Qwen 一致判為 0
 - id: doc_114_台中_向上_數學_g7s2e1_s2_3
   section: 2
   number: 3
@@ -259,6 +289,9 @@ questions:
     ~ 114學年度第二學期臺中市立向上國民中學第一次定期評量  一年級  數學科試題
   answer:
   - ( 5 , -4 )
+  ai_answers:
+    gemini: (5,-4)
+    qwen: (5, -4)
 - id: doc_114_台中_向上_數學_g7s2e1_s2_4
   section: 2
   number: 4
@@ -267,6 +300,9 @@ questions:
   stem: 化簡2x-4+5y-3x+2y+6=        (4)
   answer:
   - -x+7y+2
+  ai_answers:
+    gemini: -x+7y+2
+    qwen: -x+7y+2
 - id: doc_114_台中_向上_數學_g7s2e1_s2_5
   section: 2
   number: 5
@@ -275,6 +311,9 @@ questions:
   stem: 化簡3(2x-y)-2(x-3y+4)=         (5) =
   answer:
   - 4x+3y-8
+  ai_answers:
+    gemini: 4x+3y-8
+    qwen: 4x+3y-8
 - id: doc_114_台中_向上_數學_g7s2e1_s2_6
   section: 2
   number: 6
@@ -285,6 +324,10 @@ questions:
   - 'x = 4
 
     y = 2'
+  ai_answers:
+    gemini: x=4；y=2
+    qwen: x=4; y=2
+    gemini_high: x=2, y=4
 - id: doc_114_台中_向上_數學_g7s2e1_s2_7
   section: 2
   number: 7
@@ -293,6 +336,9 @@ questions:
   stem: 坐標平面上兩點A(4,5)、B(2,8),若以A點為新原點, 單位長不變,則B點的新座標為________(7)_________ 。
   answer:
   - ( -2 , 3 )
+  ai_answers:
+    gemini: (-2,3)
+    qwen: (-2, 3)
 - id: doc_114_台中_向上_數學_g7s2e1_s2_8
   section: 2
   number: 8
@@ -303,6 +349,10 @@ questions:
   - 'x = -1.5
 
     y = 5'
+  ai_answers:
+    gemini: x=-\frac{3}{2}；y=5
+    qwen: x=-1.5; y=5
+    gemini_high: x=-\frac{3}{2}, y=5
 - id: doc_114_台中_向上_數學_g7s2e1_s2_9
   section: 2
   number: 9
@@ -313,6 +363,10 @@ questions:
   - 'x =1
 
     y = 2'
+  ai_answers:
+    gemini: x=1；y=2
+    qwen: x=1; y=2
+    gemini_high: x=1, y=2
 - id: doc_114_台中_向上_數學_g7s2e1_s2_10
   section: 2
   number: 10
@@ -321,6 +375,9 @@ questions:
   stem: 已知一長方形周長78公分,且長比寬的3倍少1公分, 則此長方形面積為___________(10)_________ 平方公分。
   answer:
   - '290'
+  ai_answers:
+    gemini: '290'
+    qwen: '290'
 - id: doc_114_台中_向上_數學_g7s2e1_s2_11
   section: 2
   number: 11
@@ -329,6 +386,10 @@ questions:
   stem: 好酒一瓶,可以醉倒3位客人;薄酒4瓶,可以醉倒1位客人。 如果有22位客人醉倒了,他們總共喝了20瓶酒,則好酒有 ________(11)________瓶。
   answer:
   - 無解
+  ai_answers:
+    gemini: \frac{68}{11}
+    qwen: '6'
+    gemini_high: '6'
 - id: doc_114_台中_向上_數學_g7s2e1_s2_12
   section: 2
   number: 12
@@ -338,6 +399,10 @@ questions:
     第________(12)______天首次到達第一象限。 y O -1 -1 x A(-10 , -10)
   answer:
   - '14'
+  ai_answers:
+    gemini: '18'
+    qwen: '22'
+    gemini_high: '14'
 - id: doc_114_台中_向上_數學_g7s2e1_s2_13
   section: 2
   number: 13
@@ -348,6 +413,9 @@ questions:
     「股票」是自行操作買賣單一公司。 「基金」是委託專家投資很多檔股票。
   answer:
   - '40000'
+  ai_answers:
+    gemini: '40000'
+    qwen: '40000'
 - id: doc_114_台中_向上_數學_g7s2e1_s3_1
   section: 3
   number: 1
