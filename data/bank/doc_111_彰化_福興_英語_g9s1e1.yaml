@@ -53,6 +53,9 @@ questions:
   answer:
   - newspaper
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: newspaper
+    qwen: newspaper
 - id: doc_111_彰化_福興_英語_g9s1e1_s4_2
   section: 4
   number: 2
@@ -65,6 +68,9 @@ questions:
   answer:
   - serious
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: serious
+    qwen: serious
 - id: doc_111_彰化_福興_英語_g9s1e1_s4_3
   section: 4
   number: 3
@@ -77,6 +83,9 @@ questions:
   answer:
   - at least
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: at least
+    qwen: at least
 - id: doc_111_彰化_福興_英語_g9s1e1_s4_4
   section: 4
   number: 4
@@ -89,29 +98,40 @@ questions:
   answer:
   - proud
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: proud
+    qwen: proud
 - id: doc_111_彰化_福興_英語_g9s1e1_s4_5
   section: 4
   number: 5
   type: fill
   page: 2
   stem: 最近
-  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  review_note: 答案卷 ['lately']，Gemini 與 Qwen 一致判為 recently
   source_ocr: true
   group_stem: 第二部份:閱讀及書寫測驗(80%) 一、單字(每題1分,共5分)(以課本單字為主)
   answer:
   - lately
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: recently
+    qwen: recently
+  answer_status: disputed
 - id: doc_111_彰化_福興_英語_g9s1e1_s5_1
   section: 5
   number: 1
   type: fill
   page: 2
   stem: Although many girls like the beautiful dress, it is not my t____e.
-  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  review_note: 答案卷 ['type']，Gemini 與 Qwen 一致判為 taste
   source_ocr: true
   answer:
   - type
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: taste
+    qwen: taste
+  answer_status: disputed
 - id: doc_111_彰化_福興_英語_g9s1e1_s5_2
   section: 5
   number: 2
@@ -123,6 +143,10 @@ questions:
   answer:
   - slim
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: slim
+    qwen: simple
+    gemini_high: slim
 - id: doc_111_彰化_福興_英語_g9s1e1_s5_3
   section: 5
   number: 3
@@ -134,6 +158,10 @@ questions:
   answer:
   - abroad
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: abroad
+    qwen: allowed
+    gemini_high: abroad
 - id: doc_111_彰化_福興_英語_g9s1e1_s5_4
   section: 5
   number: 4
@@ -145,6 +173,9 @@ questions:
   answer:
   - pieces
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: pieces
+    qwen: pieces
 - id: doc_111_彰化_福興_英語_g9s1e1_s5_5
   section: 5
   number: 5
@@ -156,6 +187,9 @@ questions:
   answer:
   - digging
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: digging
+    qwen: digging
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_1
   section: 6
   number: 1
@@ -177,6 +211,9 @@ questions:
   answer:
   - B
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: B
+    qwen: B
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_2
   section: 6
   number: 2
@@ -198,6 +235,9 @@ questions:
   answer:
   - C
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: C
+    qwen: C
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_3
   section: 6
   number: 3
@@ -219,6 +259,9 @@ questions:
   answer:
   - A
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: A
+    qwen: A
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_4
   section: 6
   number: 4
@@ -241,6 +284,9 @@ questions:
   answer:
   - D
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: D
+    qwen: D
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_5
   section: 6
   number: 5
@@ -262,6 +308,9 @@ questions:
   answer:
   - B
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: B
+    qwen: B
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_6
   section: 6
   number: 6
@@ -283,6 +332,9 @@ questions:
   answer:
   - B
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: B
+    qwen: B
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_7
   section: 6
   number: 7
@@ -303,6 +355,9 @@ questions:
   answer:
   - C
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: C
+    qwen: C
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_8
   section: 6
   number: 8
@@ -323,6 +378,9 @@ questions:
   answer:
   - B
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: B
+    qwen: B
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_9
   section: 6
   number: 9
@@ -345,6 +403,10 @@ questions:
   answer:
   - A
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: A
+    qwen: B
+    gemini_high: A
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_10
   section: 6
   number: 10
@@ -360,11 +422,15 @@ questions:
     content: will be dead
   - label: D
     content: was dead
-  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  review_note: 答案卷 ['D']，Gemini 與 Qwen 一致判為 A
   source_ocr: true
   answer:
   - D
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer_status: disputed
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_11
   section: 6
   number: 11
@@ -386,6 +452,9 @@ questions:
   answer:
   - D
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: D
+    qwen: D
 - id: doc_111_彰化_福興_英語_g9s1e1_s6_12
   section: 6
   number: 12
@@ -406,6 +475,9 @@ questions:
   answer:
   - A
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: A
+    qwen: A
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_1
   section: 7
   number: 1
@@ -434,6 +506,9 @@ questions:
   answer:
   - D
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: D
+    qwen: D
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_2
   section: 7
   number: 2
@@ -462,6 +537,9 @@ questions:
   answer:
   - A
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: A
+    qwen: A
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_3
   section: 7
   number: 3
@@ -490,6 +568,9 @@ questions:
   answer:
   - C
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: C
+    qwen: C
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_4
   section: 7
   number: 4
@@ -518,6 +599,9 @@ questions:
   answer:
   - C
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: C
+    qwen: C
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_5
   section: 7
   number: 5
@@ -541,11 +625,15 @@ questions:
     They told Jenny to __3.__ dress designing. She was __4.__ and had a fight with
     her parents last night. Her parents __5.__ her feelings, so Jenny hasn’t talked
     to them since then. She hopes her parents can understand her one day.'
-  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  review_note: 答案卷 ['A']，Gemini 與 Qwen 一致判為 B
   source_ocr: true
   answer:
   - A
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer_status: disputed
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_6
   section: 7
   number: 6
@@ -586,6 +674,9 @@ questions:
   answer:
   - B
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: B
+    qwen: B
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_7
   section: 7
   number: 7
@@ -626,6 +717,9 @@ questions:
   answer:
   - D
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: D
+    qwen: D
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_8
   section: 7
   number: 8
@@ -666,6 +760,9 @@ questions:
   answer:
   - A
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: A
+    qwen: A
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_9
   section: 7
   number: 9
@@ -706,6 +803,9 @@ questions:
   answer:
   - C
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: C
+    qwen: C
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_10
   section: 7
   number: 10
@@ -748,6 +848,9 @@ questions:
   answer:
   - A
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: A
+    qwen: A
 - id: doc_111_彰化_福興_英語_g9s1e1_s7_11
   section: 7
   number: 11
@@ -790,6 +893,9 @@ questions:
   answer:
   - C
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: C
+    qwen: C
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_1
   section: 8
   number: 1
@@ -834,6 +940,9 @@ questions:
   answer:
   - D
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: D
+    qwen: D
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_2
   section: 8
   number: 2
@@ -878,6 +987,9 @@ questions:
   answer:
   - C
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: C
+    qwen: C
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_3
   section: 8
   number: 3
@@ -923,6 +1035,10 @@ questions:
   answer:
   - B
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: B
+    qwen: D
+    gemini_high: B
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_4
   section: 8
   number: 4
@@ -945,6 +1061,9 @@ questions:
   answer:
   - D
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: D
+    qwen: D
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_5
   section: 8
   number: 5
@@ -967,6 +1086,9 @@ questions:
   answer:
   - D
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: D
+    qwen: D
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_6
   section: 8
   number: 6
@@ -1012,6 +1134,9 @@ questions:
   answer:
   - C
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: C
+    qwen: C
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_7
   section: 8
   number: 7
@@ -1057,6 +1182,9 @@ questions:
   answer:
   - D
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: D
+    qwen: D
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_8
   section: 8
   number: 8
@@ -1102,6 +1230,10 @@ questions:
   answer:
   - B
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: B
+    qwen: D
+    gemini_high: B
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_9
   section: 8
   number: 9
@@ -1147,6 +1279,9 @@ questions:
   answer:
   - B
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: B
+    qwen: B
 - id: doc_111_彰化_福興_英語_g9s1e1_s8_10
   section: 8
   number: 10
@@ -1193,6 +1328,9 @@ questions:
   answer:
   - A
   answer_source: answer_key_vlm
+  ai_answers:
+    gemini: A
+    qwen: A
 - id: doc_111_彰化_福興_英語_g9s1e1_s9_1
   section: 9
   number: 1
