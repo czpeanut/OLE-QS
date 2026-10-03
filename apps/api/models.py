@@ -160,7 +160,7 @@ class Section(Base):
     document_id: Mapped[str] = mapped_column(ForeignKey("document.id", ondelete="CASCADE"),
                                              index=True)
     ord: Mapped[int] = mapped_column(Integer, nullable=False)
-    name: Mapped[str] = mapped_column(String(80), nullable=False)
+    name: Mapped[str] = mapped_column(String(300), nullable=False)
     type: Mapped[str | None] = mapped_column(String(20))
     score_rule: Mapped[str | None] = mapped_column(String(200))
     per_item_score: Mapped[float | None] = mapped_column(Float)
@@ -183,14 +183,14 @@ class Question(Base):
     section_ord: Mapped[int] = mapped_column(Integer, nullable=False)
     number: Mapped[int] = mapped_column(Integer, nullable=False)
 
-    type: Mapped[QuestionType] = mapped_column(Enum(QuestionType), nullable=False, index=True)
+    type: Mapped[QuestionType] = mapped_column(Enum(QuestionType, native_enum=False, length=20), nullable=False, index=True)
     stem_md: Mapped[str] = mapped_column(Text, nullable=False)
     stem_raw: Mapped[str | None] = mapped_column(Text)      # 正規化前原文，供對照原圖
     group_stem: Mapped[str | None] = mapped_column(Text)    # 題組共用說明
 
     answer: Mapped[list | None] = mapped_column(JSON)
     answer_status: Mapped[AnswerStatus] = mapped_column(
-        Enum(AnswerStatus), default=AnswerStatus.missing, index=True)
+        Enum(AnswerStatus, native_enum=False, length=20), default=AnswerStatus.missing, index=True)
     answer_source: Mapped[str | None] = mapped_column(String(80))   # answer_key / gemini+claude / human
     explanation_md: Mapped[str | None] = mapped_column(Text)
 
@@ -212,7 +212,7 @@ class Question(Base):
     unit_chapter: Mapped[str | None] = mapped_column(String(200))
 
     status: Mapped[ReviewStatus] = mapped_column(
-        Enum(ReviewStatus), default=ReviewStatus.needs_review, index=True)
+        Enum(ReviewStatus, native_enum=False, length=20), default=ReviewStatus.needs_review, index=True)
     review_note: Mapped[str | None] = mapped_column(Text)
     uncertain_spans: Mapped[list | None] = mapped_column(JSON)
 
@@ -286,7 +286,7 @@ class Asset(Base):
 
     key: Mapped[str] = mapped_column(String(40), nullable=False)
     label: Mapped[str | None] = mapped_column(String(40))      # 圖(一)、表(二)
-    kind: Mapped[AssetKind] = mapped_column(Enum(AssetKind), nullable=False)
+    kind: Mapped[AssetKind] = mapped_column(Enum(AssetKind, native_enum=False, length=20), nullable=False)
     scope: Mapped[str] = mapped_column(String(10), default="question")   # question | shared
 
     file: Mapped[str | None] = mapped_column(String(300))      # figure/chart 用

@@ -42,7 +42,7 @@ def _env(name: str) -> str:
         for line in Path(".env.local").read_text(encoding="utf-8").splitlines():
             k, _, v = line.strip().partition("=")
             if k and k not in os.environ:
-                os.environ[k] = v
+                os.environ[k] = v.strip().strip('"').strip("'")
     return os.environ[name]
 
 
