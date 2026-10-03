@@ -45,6 +45,7 @@ def main() -> int:
     ap.add_argument("-o", "--out", type=Path, required=True)
     ap.add_argument("--units", type=Path, required=True)
     ap.add_argument("--curriculum", type=Path, default=Path("data/curriculum/junior.yaml"))
+    ap.add_argument("--topics", type=Path, default=Path("data/curriculum/english_topics.yaml"))
     args = ap.parse_args()
 
     docs = collections.Counter()
@@ -99,7 +100,7 @@ def main() -> int:
     curr = yaml.safe_load(args.curriculum.read_text(encoding="utf-8"))["grades"]
     u = ["# 各單元題數", "", f"由 `scripts/bank_stats.py` 產生（{time.strftime('%Y-%m-%d')}），只算通過品管閘門的題目。",
          "數學、自然各版本節次大致對齊，合併三版本計數，節名列翰林的；國文、社會列翰林的單元，"
-         "並另計康軒、南一（模型看不出版本時偏向判成翰林）。英文不在章節表內。", ""]
+         "並另計康軒、南一（模型看不出版本時偏向判成翰林）。英語依內容主題分類，不分版本。", ""]
     for name in ("數學", "生物", "理化", "地科", "國文", "歷史", "地理", "公民"):
         u += [f"## {name}", ""]
         for g in sorted(curr):
@@ -131,6 +132,19 @@ def main() -> int:
                                   "| 課／節 | 名稱 | 題數 |", "|---|---|---:|"]
                             u += [f"| {c} | {t.replace('|', '／')} | {n:,} |" for c, t, n in rows]
                         u.append("")
+    if args.topics.is_file():
+        topics = yaml.safe_load(args.topics.read_text(encoding="utf-8"))["topics"]
+        en = {(g, sem): {k[4]: v for k, v in units.items() if k[:3] == (g, sem, "英語")}
+              for g in (7, 8, 9) for sem in (1, 2)}
+        cols = [(g, sem) for g in (7, 8, 9) for sem in (1, 2)]
+        u += ["## 英語（依內容主題，不分版本）", "",
+              "| 代號 | 分組 | 主題 | " + " | ".join(f"{TERM[g]}{'上' if s == 1 else '下'}" for g, s in cols)
+              + " | 合計 |", "|---|---|---|" + "---:|" * (len(cols) + 1)]
+        for t in topics:
+            ns = [en[c].get(t["id"], 0) for c in cols]
+            u.append(f"| {t['id']} | {t.get('group') or ''} | {t['title']} | "
+                     + " | ".join(f"{n:,}" for n in ns) + f" | {sum(ns):,} |")
+        u.append("")
     args.units.write_text("\n".join(u) + "\n", encoding="utf-8")
     print(f"→ {args.out}、{args.units}")
     return 0

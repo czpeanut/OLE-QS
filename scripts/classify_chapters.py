@@ -10,7 +10,7 @@
     tags.textbook  「七上 1-1 正數與負數」這類可讀標籤（網頁與匯入沿用這欄）
     tags.labeled_by: ai
 
-英文不在章節表內，不處理（沿用 build_chapters.py 依考卷課名歸類的結果）。
+英語另由 classify_english.py 依內容主題歸類。
 已歸類過的卷自動跳過；--force 重做。
 
 用法:
