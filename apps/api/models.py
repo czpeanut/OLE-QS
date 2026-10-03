@@ -307,7 +307,7 @@ class Asset(Base):
         UniqueConstraint("document_id", "key", name="uq_asset_key"),
         CheckConstraint(
             "file IS NOT NULL OR markdown IS NOT NULL OR text IS NOT NULL "
-            "OR pending = 1",
+            "OR pending",
             name="ck_asset_has_payload"),
     )
 

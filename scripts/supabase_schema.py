@@ -50,4 +50,5 @@ out += ["", "create or replace function oleqs_reset_sequences() returns void lan
         "    execute format('select setval(%L, coalesce((select max(%I) from %I), 0) + 1, false)', r.seq, r.col, r.tbl);",
         "  end loop;", "end $$;",
         "revoke execute on function oleqs_reset_sequences() from public, anon, authenticated;", ""]
-print("\n".join(out))
+# 去掉行尾空白、tab 換空白：網頁 SQL Editor 貼上時比較不會出狀況
+print("\n".join(line.rstrip().replace("\t", "    ") for line in "\n".join(out).splitlines()))
