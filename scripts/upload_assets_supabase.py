@@ -35,6 +35,7 @@ def main() -> int:
     ap.add_argument("--assets", type=Path, default=REPO / "data" / "assets")
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--force-list", type=Path, help="這份清單（每行一個 data/assets 下的相對路徑）不論傳過與否都重傳，例如重新裁切過的圖")
     args = ap.parse_args()
 
     url = _env("SUPABASE_URL").rstrip("/")
@@ -50,7 +51,8 @@ def main() -> int:
 
     done = set(DONE.read_text(encoding="utf-8").splitlines()) if DONE.is_file() else set()
     files = sorted(p.relative_to(args.assets).as_posix() for p in args.assets.rglob("*.png"))
-    todo = [f for f in files if f not in done][: args.limit]
+    force = set(args.force_list.read_text(encoding="utf-8").split()) if args.force_list else set()
+    todo = [f for f in files if f not in done or f in force][: args.limit]
     print(f"共 {len(files):,} 張，已傳 {len(done):,}，這次要傳 {len(todo):,}", flush=True)
 
     lock = threading.Lock()
