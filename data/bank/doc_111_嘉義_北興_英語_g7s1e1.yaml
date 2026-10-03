@@ -34,6 +34,9 @@ document:
     count: 3
   extractor: vlm:gemini-3.7-flash
   source_file: 國一/英文/111/1-1/嘉義/北興.pdf
+  chapter_index:
+    kind: english_topics
+    model: gemini-3.1-flash-lite
 questions:
 - id: doc_111_嘉義_北興_英語_g7s1e1_s4_20
   section: 4
@@ -51,8 +54,15 @@ questions:
   - label: D
     content: you are.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 be動詞(am/is/are) + 肯定/否定/Yes-No問答
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-01
+      title: be動詞(am/is/are) + 肯定/否定/Yes-No問答
+      chapter: B1 七上
   ai_answers:
     gemini: C
     qwen: C
@@ -76,8 +86,15 @@ questions:
   - label: D
     content: Margaret’s
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 所有格形容詞（my/your/his/her/its/our/their）+ 所有格's
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-05
+      title: 所有格形容詞（my/your/his/her/its/our/their）+ 所有格's
+      chapter: B1 七上
   ai_answers:
     gemini: D
     qwen: D
@@ -101,8 +118,15 @@ questions:
   - label: D
     content: for
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -126,8 +150,15 @@ questions:
   - label: D
     content: an eraser
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-04
+      title: 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
+      chapter: B1 七上
   ai_answers:
     gemini: C
     qwen: C
@@ -151,8 +182,15 @@ questions:
   - label: D
     content: sheep; mice; oxen
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-04
+      title: 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
+      chapter: B1 七上
   ai_answers:
     gemini: D
     qwen: D
@@ -176,8 +214,15 @@ questions:
   - label: D
     content: a cat dead
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -201,8 +246,15 @@ questions:
   - label: D
     content: Two books.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 Who問句
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-06
+      title: Who問句
+      chapter: B1 七上
   ai_answers:
     gemini: A
     qwen: A
@@ -226,8 +278,15 @@ questions:
   - label: D
     content: a ; an
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-04
+      title: 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
+      chapter: B1 七上
   ai_answers:
     gemini: A
     qwen: A
@@ -251,8 +310,15 @@ questions:
   - label: D
     content: What
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 Who問句
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-06
+      title: Who問句
+      chapter: B1 七上
   ai_answers:
     gemini: B
     qwen: B
@@ -276,8 +342,15 @@ questions:
   - label: D
     content: Isn’t
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 be動詞(am/is/are) + 肯定/否定/Yes-No問答
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-01
+      title: be動詞(am/is/are) + 肯定/否定/Yes-No問答
+      chapter: B1 七上
   ai_answers:
     gemini: C
     qwen: C
@@ -303,8 +376,15 @@ questions:
   group_stem: '30~33 題: 請依據所附圖表資料，選出正確的答案(每題2 分，共8 分)'
   shared_asset: g5_30_33
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -330,8 +410,15 @@ questions:
   group_stem: '30~33 題: 請依據所附圖表資料，選出正確的答案(每題2 分，共8 分)'
   shared_asset: g5_30_33
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -357,8 +444,15 @@ questions:
   group_stem: '30~33 題: 請依據所附圖表資料，選出正確的答案(每題2 分，共8 分)'
   shared_asset: g5_30_33
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: D
@@ -385,8 +479,15 @@ questions:
   group_stem: '30~33 題: 請依據所附圖表資料，選出正確的答案(每題2 分，共8 分)'
   shared_asset: g5_30_33
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -401,8 +502,15 @@ questions:
   page: 4
   stem: A-mei has (有) a  b        l voice (聲音) . I like her songs very much .
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: beautiful
     qwen: beautiful
@@ -417,8 +525,15 @@ questions:
   page: 4
   stem: Who are the w        n over there?  They are waitresses (女服務生).
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: women
     qwen: women
@@ -433,8 +548,15 @@ questions:
   page: 4
   stem: Mr. and Mrs. White have (有) two da          and a son.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: daughters
     qwen: daughters
@@ -449,8 +571,15 @@ questions:
   page: 4
   stem: Antony and Mia are h        d and wife.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: husband
     qwen: husband
@@ -465,8 +594,15 @@ questions:
   page: 4
   stem: Where is Mom? She is cooking in the k         n .
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: kitchen
     qwen: kitchen
@@ -481,8 +617,15 @@ questions:
   page: 4
   stem: 'Mr. and Mrs. Wang have (有) three c        n: one boy and two girls.'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: children
     qwen: children
@@ -497,8 +640,15 @@ questions:
   page: 4
   stem: Look at the baby in the p      e. He is so cute.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: picture
     qwen: picture
@@ -513,8 +663,15 @@ questions:
   page: 4
   stem: The new movie t        r is big and cool. Let’s (讓我們) see a movie there.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: theater
     qwen: theater
@@ -529,8 +686,15 @@ questions:
   page: 4
   stem: E         ts have a long trunk(鼻子) and two big ears.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: Elephants
     qwen: Elephants
@@ -545,8 +709,15 @@ questions:
   page: 4
   stem: I’m thirteen years old. I’m a j      r high school student.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: junior
     qwen: junior
@@ -563,8 +734,15 @@ questions:
     \      2               3    ?\nThey are the   4    , ox , tiger,    5   ,    \
     \ 6      ,    7      ,     8     , goat,  \n  9    ,    10     , dog and pig."
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: twelve；animals；in Chinese；rat；rabbit；dragon；snake；horse；monkey；rooster
     qwen: Chinese; twelve; animals; rat; rabbit; dragon; snake; horse; monkey; rooster
@@ -578,8 +756,15 @@ questions:
   page: 4
   stem: 2.這男孩既聰明又充滿活力。The boy is    11      and      12      .
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: smart；energetic
     qwen: smart; energetic
@@ -597,8 +782,15 @@ questions:
   stem: "3.Dave 是個人緣很好的人。他也是個很好的傾聽者。\n Dave is a      13           14     . He is\
     \ also a good listener."
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: people；person
     qwen: popular; guy

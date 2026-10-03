@@ -138,11 +138,13 @@ def main() -> int:
               for g in (7, 8, 9) for sem in (1, 2)}
         cols = [(g, sem) for g in (7, 8, 9) for sem in (1, 2)]
         u += ["## 英語（依內容主題，不分版本）", "",
-              "| 代號 | 分組 | 主題 | " + " | ".join(f"{TERM[g]}{'上' if s == 1 else '下'}" for g, s in cols)
-              + " | 合計 |", "|---|---|---|" + "---:|" * (len(cols) + 1)]
+              "| 代號 | 分組 | 主題 | 康軒 | 翰林 | 南一 | " + " | ".join(f"{TERM[g]}{'上' if s == 1 else '下'}" for g, s in cols)
+              + " | 合計 |", "|---|---|---|---|---|---|" + "---:|" * (len(cols) + 1)]
         for t in topics:
             ns = [en[c].get(t["id"], 0) for c in cols]
-            u.append(f"| {t['id']} | {t.get('group') or ''} | {t['title']} | "
+            ls = t.get("lessons") or {}
+            u.append(f"| {t['id']} | {t.get('group') or ''} | {t['title'].replace('|', '／')} | "
+                     + " | ".join(ls.get(p, "") for p in ("康軒", "翰林", "南一")) + " | "
                      + " | ".join(f"{n:,}" for n in ns) + f" | {sum(ns):,} |")
         u.append("")
     args.units.write_text("\n".join(u) + "\n", encoding="utf-8")

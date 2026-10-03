@@ -29,6 +29,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -41,14 +42,15 @@ from generate_answers import load_env_file  # noqa: E402
 from vlm_extract import call_model  # noqa: E402
 
 PHASE = "chapters_en"
+NUMBERED = re.compile(r"^\s*[(（]?\d{1,3}\s*[.．、)）]\s*")   # 題幹開頭印的題號，會和 Q 代號混淆
 
 SCHEMA = {
     "type": "OBJECT",
     "properties": {
         "items": {"type": "ARRAY", "items": {
             "type": "OBJECT",
-            "properties": {"i": {"type": "INTEGER"}, "topic": {"type": "STRING"}},
-            "required": ["i", "topic"]}},
+            "properties": {"q": {"type": "STRING"}, "topic": {"type": "STRING"}},
+            "required": ["q", "topic"]}},
     },
     "required": ["items"],
 }
@@ -66,7 +68,7 @@ PROMPT = """你是國中英語老師，要把一份段考卷的每一題歸到�
    閱讀測驗、克漏字、看圖或對話理解等依列表中最接近的類別。
 3. 真的無法判斷時 topic 填空字串，不要猜。
 
-題目（i 是題目序號）：
+題目（每題開頭的 Q 代號填在 q；不要用題目上印的題號）：
 {questions}
 """
 
@@ -93,6 +95,7 @@ def build(path: Path, topics: list[dict], force: bool) -> tuple[str, str | None]
         return "done", None
     shown = available(topics, m["grade"], m["semester"])
     lines = [f"{t['id']}  " + (f"{t['group']}・" if t.get("group") else "") + t["title"]
+             + (f"（{'／'.join(f'{p[0]}{v}' for p, v in t['lessons'].items())}）" if t.get("lessons") else "")
              for t in shown]
 
     seen_groups: set[str] = set()
@@ -104,7 +107,8 @@ def build(path: Path, topics: list[dict], force: bool) -> tuple[str, str | None]
             seen_groups.add(g)
             head = f"〔題組〕{short(g, 300)}\n"
         opts = "；".join(short(o.get("content"), 30) for o in q.get("options") or [])
-        qlines.append(f"{head}[{i}] {short(q.get('stem'), 180)}" + (f"（{opts}）" if opts else ""))
+        stem = NUMBERED.sub("", q.get("stem") or "")
+        qlines.append(f"{head}[Q{i}] {short(stem, 180)}" + (f"（{opts}）" if opts else ""))
 
     scope = m.get("scope_note") or ((m.get("scope") or {}).get("raw"))
     return "ok", PROMPT.format(
@@ -117,11 +121,12 @@ def apply(path: Path, topics: list[dict], out: dict, model: str) -> int:
     d = yaml.safe_load(path.read_text(encoding="utf-8"))
     m = d["document"]
     by_id = {t["id"]: t for t in topics}
-    picked = {it.get("i"): (it.get("topic") or "").strip() for it in out.get("items") or []}
+    picked = {str(it.get("q") or "").strip().lstrip("[Qq").rstrip("]"): (it.get("topic") or "").strip()
+              for it in out.get("items") or []}
     book = f"{TERM[m['grade']]}{'上' if m['semester'] == 1 else '下'}"
     n = 0
     for i, q in enumerate(d.get("questions") or []):
-        t = by_id.get(picked.get(i, ""))
+        t = by_id.get(picked.get(str(i), ""))
         tags = q.get("tags") or {}
         tags["chapter"] = {"publisher": None, "book": book, "subject": "英語",
                            "code": t["id"] if t else None, "title": t["title"] if t else None,
