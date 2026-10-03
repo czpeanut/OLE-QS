@@ -100,6 +100,7 @@ select,input[type=text],textarea{background:var(--card);border:1px solid var(--r
 .stage{position:relative;max-width:100%;touch-action:none;user-select:none;background:#fff}
 .stage img{display:block;width:100%;height:auto;max-height:none!important;border:0!important;border-radius:0!important}
 .sel{position:absolute;outline:2px solid var(--pen);box-shadow:0 0 0 9999px rgba(0,0,0,.38)}
+.oldsel{position:absolute;outline:2px dashed #f5b301;pointer-events:none;z-index:1}
 .hd{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:var(--pen);border:2px solid #fff;padding:0;cursor:pointer}
 .hd[data-e=n]{left:50%;top:0;cursor:ns-resize}.hd[data-e=s]{left:50%;top:100%;cursor:ns-resize}
 .hd[data-e=w]{left:0;top:50%;cursor:ew-resize}.hd[data-e=e]{left:100%;top:50%;cursor:ew-resize}
@@ -391,7 +392,7 @@ function imgTag(id, P, alt, maxH){
   const width = Math.min(iw, maxH * iw / ih);
   return `<span class="cropwrap"><span class="cropbox ${f.adjusted?'adjusted':''}" data-img="${id}" style="width:${width.toFixed(0)}px;max-width:100%;aspect-ratio:${iw.toFixed(1)}/${ih.toFixed(1)}">
     <img src="${P.images[id]}" alt="${esc(alt)}" decoding="async" style="width:${(100/f.w).toFixed(3)}%;left:${(-f.l/f.w*100).toFixed(3)}%;top:${(-f.t/f.h*100).toFixed(3)}%"></span>
-    <button class="cropbtn" type="button" data-crop="${id}">${f.adjusted?'已調整邊緣・再調整':'調整邊緣'}</button></span>`;
+    <button class="cropbtn" type="button" data-crop="${id}">${f.adjusted?'已調整邊緣・再調整':cm.o?'已自動校正・檢查邊緣':'調整邊緣'}</button></span>`;
 }
 function openCropEditor(btn){
   const id = btn.dataset.crop, P = current.paper, cm = P.cm[id];
@@ -400,11 +401,15 @@ function openCropEditor(btn){
   const ed = document.createElement("div");
   ed.className = "cropedit";
   const last = crops.get(cropKey(cm.f));
-  ed.innerHTML = `<div class="sub">拖曳紅點調整四邊（也可以點紅點後用方向鍵微調）。灰色區域是可延伸的範圍。${last ? `目前是${esc(who(last.by))}調整過的範圍。` : ""}</div>
+  const R0 = cm.R, oldFrac = cm.o ? {l:(cm.o[0]-R0[0])/(R0[2]-R0[0]), t:(cm.o[1]-R0[1])/(R0[3]-R0[1]),
+    w:(cm.o[2]-cm.o[0])/(R0[2]-R0[0]), h:(cm.o[3]-cm.o[1])/(R0[3]-R0[1])} : null;
+  ed.innerHTML = `<div class="sub">拖曳紅點調整四邊（也可以點紅點後用方向鍵微調）。灰色區域是可延伸的範圍。${cm.o ? "這張圖已自動校正過，虛線是校正前的框。" : ""}${last ? `目前是${esc(who(last.by))}調整過的範圍。` : ""}</div>
     <div class="stagewrap" style="width:min(100%, ${Math.max(cm.px, 480) + 28}px)"><div class="stage"><img src="${P.images[id]}" alt="附圖原卷範圍">
+      ${oldFrac ? `<div class="oldsel" style="left:${oldFrac.l*100}%;top:${oldFrac.t*100}%;width:${oldFrac.w*100}%;height:${oldFrac.h*100}%"></div>` : ""}
       <div class="sel">${["n","s","w","e"].map(k=>`<button type="button" class="hd" data-e="${k}" aria-label="${{n:"上",s:"下",w:"左",e:"右"}[k]}邊"></button>`).join("")}</div></div></div>
     <div class="row"><button class="btn pen" type="button" data-act="save">儲存邊緣</button>
-      <button class="btn" type="button" data-act="reset">還原原始範圍</button>
+      <button class="btn" type="button" data-act="reset">${cm.o ? "用自動校正的範圍" : "還原原始範圍"}</button>
+      ${cm.o ? '<button class="btn" type="button" data-act="old">用校正前的框</button>' : ""}
       <button class="btn ghost" type="button" data-act="cancel">取消</button><span class="sub" data-msg></span></div>`;
   box.replaceWith(ed);
   const stage = ed.querySelector(".stage"), sel = ed.querySelector(".sel");
@@ -434,6 +439,7 @@ function openCropEditor(btn){
   draw();
   const close = () => rerenderKeepingScroll(true);
   ed.querySelector("[data-act=cancel]").addEventListener("click", close);
+  ed.querySelector("[data-act=old]")?.addEventListener("click", () => { f = {...oldFrac}; draw(); });
   ed.querySelector("[data-act=reset]").addEventListener("click", async e => {
     const k = cropKey(cm.f);
     if (!crops.has(k)) { f = cropFrac(cm); draw(); return; }

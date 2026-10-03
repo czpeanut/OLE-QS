@@ -101,12 +101,18 @@ def padded(pdf, crop: dict) -> tuple[str, dict] | None:
         return None
     page = pdf[pno - 1]
     pad = max(8.0, PAD * max(x1 - x0, y1 - y0))
-    R = fitz.Rect(x0 - pad, y0 - pad, x1 + pad, y1 + pad) & page.rect
+    R = fitz.Rect(x0 - pad, y0 - pad, x1 + pad, y1 + pad)
+    old = crop.get("auto_from")          # 自動校正前的框：留在可調範圍內，審題時可以改回去
+    if old:
+        R |= fitz.Rect(old[0] - 4, old[1] - 4, old[2] + 4, old[3] + 4)
+    R &= page.rect
     dpi = min(200, MAX_WIDTH / (R.width / 72))
     pix = page.get_pixmap(dpi=dpi, clip=R)
     im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
     meta = {"pg": pno, "R": [round(v, 2) for v in (R.x0, R.y0, R.x1, R.y1)],
             "r": [x0, y0, x1, y1], "px": pix.width}
+    if old:
+        meta["o"] = old
     return encode(im), meta
 
 
