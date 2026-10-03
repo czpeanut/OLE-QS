@@ -1,0 +1,12 @@
+import { NextRequest, NextResponse } from "next/server";
+import { fetchAsset } from "@/lib/assets";
+
+// 附圖放在私有 bucket，經這裡以 service role 讀出；瀏覽器與 Vercel CDN 快取一週
+export async function GET(_req: NextRequest, { params }: { params: { path: string[] } }) {
+  const rel = params.path.map(decodeURIComponent).join("/");
+  if (rel.includes("..")) return new NextResponse("bad path", { status: 400 });
+  const r = await fetchAsset(rel);
+  if (!r.ok) return new NextResponse("not found", { status: 404 });
+  return new NextResponse(r.body, { headers: { "Content-Type": "image/png",
+    "Cache-Control": "public, max-age=604800, s-maxage=2592000, immutable" } });
+}
