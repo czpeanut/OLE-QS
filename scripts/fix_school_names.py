@@ -18,12 +18,15 @@ from pathlib import Path
 
 import yaml
 
-SUFFIX = re.compile(r"(國民中學|國中|國中部|中學)$")
+SUFFIX = re.compile(r"(國民中學|國中|國中部|中學|國民中小學|國中小|高中|[（(]國中部[）)])$")
+# 夾帶卷頭的特徵：學年度、段考、試卷、代號、英文、換行、數字
+JUNK = re.compile(r"[0-9A-Za-z\n]|學年|學期|段考|評量|試題|試卷|題目|代號|代碼|考卷|規|或|等|為")
 
 
 def clean(name: str, short: str) -> bool:
     name = name or ""
-    return bool(SUFFIX.search(name)) and len(name) <= 20 and short in name and name.count(short) == 1
+    return (bool(SUFFIX.search(name)) and len(name) <= 22 and short in name
+            and not JUNK.search(name))
 
 
 def main() -> int:
@@ -51,7 +54,8 @@ def main() -> int:
         if not names[key]:
             print(f"  找不到標準校名，略過：{m['id']}（{m.get('school', '')[:40]}）")
             continue
-        std = names[key].most_common(1)[0][0]
+        # 有縣市字首的優先（「桃子腳國民中小學」→「新北市立桃子腳國民中小學」），再看出現次數
+        std = max(names[key].items(), key=lambda kv: (key[0][:1] in kv[0][:2] or kv[0][:1] in "臺台", kv[1]))[0]
         subject = m["subject"] + (f"（{m['sub_subject']}）" if m.get("sub_subject") else "")
         title = f"{std} {m.get('exam_name', '')} {m['grade']}年級{subject}科試題"
         print(f"  {m['id']}：{m.get('school', '')[:40]!r} → {std}")
