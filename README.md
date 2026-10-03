@@ -3,18 +3,30 @@
 把國中考古題的 PDF／掃描檔轉成結構化題庫，依課綱與教科書章節分類，
 供教師檢索、自由組卷、匯出考卷。
 
-## 快速開始
+## 快速開始（選題組卷平台）
 
 ```bash
 pip install -r requirements.txt
+python -m playwright install chromium        # 下載 PDF 用；已有 Chromium 時改設 OLEQS_CHROMIUM=<路徑>
 
-# 1) 載入題庫（附了 297 份擷取結果，6066 題）
+# 1) 載入題庫（data/bank 全部約 5,500 份卷、20 萬題，約需 1～2 小時；可重複執行）
 python -m apps.api.importer data/bank/
 
 # 2) 啟動
-uvicorn apps.api.main:app --reload
+uvicorn apps.api.main:app --host 0.0.0.0 --port 8000
 # 開啟 http://127.0.0.1:8000
 ```
+
+或用 Docker（例如放在 Synology NAS 上）：`docker compose up -d --build`，
+`data/` 整個掛進容器（`oleqs.db`、`assets/`、`curriculum/`）。
+
+功能：
+- **題庫選題**：科目 → 子科 → 冊別 → 版本 → 章節（英語為跨版本文法主題），加題型、答案、附圖、學年度、關鍵字篩選；
+  點題目即勾選，可本頁全選。題籃存在瀏覽器。
+- **組卷匯出**：標題、副標題、試題卷／答案卷／教師解答卷、單欄／雙欄、字級、作答行數、依題型自動分大題、
+  逐題配分與排序；右側即時預覽，下載 PDF（headless Chromium 排版，頁尾頁碼）或直接列印。
+- **我的試卷**：存檔、載入再編輯、直接下載 PDF。
+- 每題與卷末固定印出處（授權條件，不可關閉）；AI 作答的答案在解答卷上會標示未經人工確認。
 
 圖檔預設放在 `data/assets/`，可用 `OLEQS_ASSETS` 指定；資料庫預設 `data/oleqs.db`，
 可用 `OLEQS_DB` 指定。圖檔不進版控，需要圖的話得重跑擷取。

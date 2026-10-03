@@ -83,17 +83,28 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
             score_rule=s.get("score_rule"), per_item_score=s.get("per_item_score"),
             declared_count=s.get("count")))
 
+    # 資產代號在一份卷內必須唯一；擷取偶爾給出重複代號，改名而不是讓整份卷匯入失敗
+    used_keys: set[str] = set()
+
+    def unique(key: str) -> str:
+        k, n = key, 1
+        while k in used_keys:
+            n += 1
+            k = f"{key}_{n}"
+        used_keys.add(k)
+        return k
+
     # 共用資產（多題共用的圖）與閱讀短文
     for a in doc.get("shared_assets") or []:
         session.add(Asset(
-            document_id=doc_id, key=a["key"], label=a.get("label"),
+            document_id=doc_id, key=unique(a["key"]), label=a.get("label"),
             kind=AssetKind(a.get("kind", "figure")), scope="shared",
             file=a.get("file"), markdown=a.get("markdown"), alt=a.get("alt"),
             bbox=a.get("bbox"), used_by=a.get("used_by")))
 
     for p in doc.get("passages") or []:
         session.add(Asset(
-            document_id=doc_id, key=p["key"], label=p.get("label", "閱讀短文"),
+            document_id=doc_id, key=unique(p["key"]), label=p.get("label", "閱讀短文"),
             kind=AssetKind.table, scope="shared", text=p.get("text"),
             used_by=p.get("used_by")))
 
@@ -115,6 +126,9 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
             answer_status, answer_source = AnswerStatus.missing, None
         keep, reasons = evaluate(q, doc)
         verdicts.append((keep, reasons))
+        unit = (q.get("tags") or {}).get("chapter") or {}
+        if not unit.get("code"):
+            unit = {}
         question = Question(
             id=qid, document_id=doc_id,
             section_ord=q.get("section", 1), number=q["number"],
@@ -132,6 +146,9 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
             status=(ReviewStatus.reviewed if keep else ReviewStatus.rejected),
             review_note="；".join(reasons) if reasons else q.get("review_note"),
             uncertain_spans=q.get("uncertain_spans"),
+            unit_publisher=unit.get("publisher"), unit_subject=unit.get("subject"),
+            unit_code=unit.get("code"), unit_title=unit.get("title"),
+            unit_chapter=unit.get("chapter"),
         )
         session.add(question)
         session.flush()
@@ -167,7 +184,7 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
         for a in q.get("assets") or []:
             file = a.get("file") or a.get("source_file")
             session.add(Asset(
-                document_id=doc_id, question_id=qid, key=a["key"],
+                document_id=doc_id, question_id=qid, key=unique(a["key"]),
                 label=a.get("label"), kind=AssetKind(a.get("kind", "figure")),
                 scope="question", file=file,
                 markdown=a.get("markdown"), alt=a.get("alt"), bbox=a.get("bbox"),

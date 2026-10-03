@@ -31,6 +31,9 @@ document:
     count: 4
   extractor: vlm:gemini-3.7-flash
   source_file: 國三/英文/112/1-2/高雄/大樹.pdf
+  chapter_index:
+    kind: english_topics
+    model: gemini-3.1-flash-lite(batch)
 questions:
 - id: doc_112_高雄_大樹_英語_g9s1e2_s1_1
   section: 1
@@ -59,8 +62,15 @@ questions:
       - 509.24
       - 241.53
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -85,8 +95,15 @@ questions:
   - label: D
     content: whether
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: D
     qwen: D
@@ -110,8 +127,15 @@ questions:
   - label: D
     content: tired; tired
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-03
+      title: 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
+      chapter: B5 九上
   ai_answers:
     gemini: C
     qwen: C
@@ -136,8 +160,15 @@ questions:
   - label: D
     content: will rain
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 從屬連接詞（when/before/after）+ 未來式
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B3-09
+      title: 從屬連接詞（when/before/after）+ 未來式
+      chapter: B3 八上
   ai_answers:
     gemini: A
     qwen: A
@@ -162,8 +193,15 @@ questions:
   - label: D
     content: when took
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: C
     qwen: C
@@ -187,8 +225,15 @@ questions:
   - label: D
     content: bored
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-03
+      title: 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
+      chapter: B5 九上
   ai_answers:
     gemini: B
     qwen: B
@@ -213,8 +258,15 @@ questions:
   - label: D
     content: was studied
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 過去式一般動詞（規則+不規則變化）+ Did問答
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B2-08
+      title: 過去式一般動詞（規則+不規則變化）+ Did問答
+      chapter: B2 七下
   ai_answers:
     gemini: B
     qwen: B
@@ -239,8 +291,15 @@ questions:
   - label: D
     content: interests
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-03
+      title: 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
+      chapter: B5 九上
   ai_answers:
     gemini: A
     qwen: A
@@ -265,8 +324,15 @@ questions:
   - label: D
     content: excited about
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-03
+      title: 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
+      chapter: B5 九上
   ai_answers:
     gemini: D
     qwen: D
@@ -291,8 +357,15 @@ questions:
   - label: D
     content: the second
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 不定代名詞（one/each/some/many/most/both/all + of）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B4-10
+      title: 不定代名詞（one/each/some/many/most/both/all + of）
+      chapter: B4 八下
   ai_answers:
     gemini: C
     qwen: C
@@ -316,8 +389,15 @@ questions:
   - label: D
     content: what to do
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: D
     qwen: D
@@ -342,8 +422,15 @@ questions:
   - label: D
     content: about
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 關係代名詞 that/which（修飾事物）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-06
+      title: 關係代名詞 that/which（修飾事物）
+      chapter: B5 九上
   ai_answers:
     gemini: A
     qwen: A
@@ -368,8 +455,15 @@ questions:
   - label: D
     content: how did she look
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: B
     qwen: B
@@ -394,8 +488,15 @@ questions:
   - label: D
     content: came in
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 從屬連接詞（when/before/after）+ 未來式
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B3-09
+      title: 從屬連接詞（when/before/after）+ 未來式
+      chapter: B3 八上
   ai_answers:
     gemini: A
     qwen: B
@@ -421,8 +522,15 @@ questions:
   - label: D
     content: how Jack will go to Japan
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: B
     qwen: B
@@ -456,8 +564,15 @@ questions:
     \ you understand this, nothing is going to be different even if you have this\
     \ change. I truly hope you think this through again.\nLove,\nLisa"
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -491,8 +606,15 @@ questions:
     \ you understand this, nothing is going to be different even if you have this\
     \ change. I truly hope you think this through again.\nLove,\nLisa"
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
   ai_answers:
     gemini: B
     qwen: B
@@ -526,8 +648,15 @@ questions:
     \ you understand this, nothing is going to be different even if you have this\
     \ change. I truly hope you think this through again.\nLove,\nLisa"
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -578,8 +707,15 @@ questions:
     \ war.\n  Syria 敘利亞  war 戰爭 bomb 轟炸"
   shared_asset: g2_19_21
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -620,8 +756,15 @@ questions:
     \ war.\n  Syria 敘利亞  war 戰爭 bomb 轟炸"
   shared_asset: g2_19_21
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -662,8 +805,15 @@ questions:
     \ war.\n  Syria 敘利亞  war 戰爭 bomb 轟炸"
   shared_asset: g2_19_21
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -695,8 +845,15 @@ questions:
     \ movies, but OLD movies. \n-We also hold movie festivals every month. \n locate\
     \ 位於 Kaohsiung Film Archive 高雄電影館"
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -727,8 +884,15 @@ questions:
     \ movies, but OLD movies. \n-We also hold movie festivals every month. \n locate\
     \ 位於 Kaohsiung Film Archive 高雄電影館"
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -767,8 +931,15 @@ questions:
     \ him.\n deity 神  role 角色  thunderbolt 雷電  weapon 武器"
   shared_asset: g2_24_26
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -807,8 +978,15 @@ questions:
     \ him.\n deity 神  role 角色  thunderbolt 雷電  weapon 武器"
   shared_asset: g2_24_26
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -847,8 +1025,15 @@ questions:
     \ him.\n deity 神  role 角色  thunderbolt 雷電  weapon 武器"
   shared_asset: g2_24_26
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: B
@@ -865,8 +1050,15 @@ questions:
   stem: 社團 n.
   group_stem: 貳、寫作測驗48% 一、字彙中翻英（每題2 分）16%
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: club
     qwen: club
@@ -882,8 +1074,15 @@ questions:
   stem: 挖掘 v.
   group_stem: 貳、寫作測驗48% 一、字彙中翻英（每題2 分）16%
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: dig
     qwen: dig
@@ -899,8 +1098,15 @@ questions:
   stem: 主題 n.
   group_stem: 貳、寫作測驗48% 一、字彙中翻英（每題2 分）16%
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: theme
     qwen: theme
@@ -916,8 +1122,15 @@ questions:
   stem: 期待 v.
   group_stem: 貳、寫作測驗48% 一、字彙中翻英（每題2 分）16%
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: expect
     qwen: expect
@@ -932,8 +1145,15 @@ questions:
   page: 4
   stem: 國家的 adj.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: national
     qwen: national
@@ -948,8 +1168,15 @@ questions:
   page: 4
   stem: 計程車 n.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: taxi
     qwen: taxi
@@ -965,8 +1192,15 @@ questions:
   stem: 景色 n.
   group_stem: 貳、寫作測驗48% 一、字彙中翻英（每題2 分）16%
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: view
     qwen: view
@@ -982,8 +1216,15 @@ questions:
   stem: 節目 n.
   group_stem: 貳、寫作測驗48% 一、字彙中翻英（每題2 分）16%
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: program
     qwen: program
@@ -999,8 +1240,15 @@ questions:
   stem: Jack has the bad h      t of biting his nails. That may make him get sick
     easily.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: habit
     qwen: habit
@@ -1015,8 +1263,15 @@ questions:
   page: 4
   stem: Look at the dark c      ds in the sky! It is going to rain.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: clouds
     qwen: clouds
@@ -1031,8 +1286,15 @@ questions:
   page: 4
   stem: The table is so h      y. Can you help me to move it?
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: heavy
     qwen: heavy
@@ -1047,8 +1309,15 @@ questions:
   page: 4
   stem: We usually make a shopping l     t before we go to the supermarket
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: list
     qwen: list
@@ -1063,8 +1332,15 @@ questions:
   page: 4
   stem: The shirts are on s     e. If you buy one, you will get another one for free
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: sale
     qwen: sale
@@ -1080,8 +1356,15 @@ questions:
   stem: ________ (ride) bikes is getting popular because it can reduce carbon and
     protect our mother Earth.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 動名詞當主詞（V-ing is fun）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B3-12
+      title: 動名詞當主詞（V-ing is fun）
+      chapter: B3 八上
   ai_answers:
     gemini: Riding
     qwen: Riding
@@ -1097,8 +1380,15 @@ questions:
   stem: Amy ________ (go) to see the movie, The Super Mario Bros., with his sister
     yesterday. They really like it.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 過去式一般動詞（規則+不規則變化）+ Did問答
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B2-08
+      title: 過去式一般動詞（規則+不規則變化）+ Did問答
+      chapter: B2 七下
   ai_answers:
     gemini: went
     qwen: went
@@ -1113,8 +1403,15 @@ questions:
   page: 4
   stem: ________ (study) hard, or you won’t pass the exam.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 祈使句 + and/or
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B4-07
+      title: 祈使句 + and/or
+      chapter: B4 八下
   ai_answers:
     gemini: Study
     qwen: Study
@@ -1129,8 +1426,15 @@ questions:
   page: 4
   stem: I ________ (buy) an Ipad as a birthday gift by my father.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
   ai_answers:
     gemini: was bought
     qwen: was bought
@@ -1146,8 +1450,15 @@ questions:
   stem: Jack is an experienced teacher. It ________ (be) 30 years since he started
     to teach.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 現在完成式 — 持續（since/for）+ 已完成（yet/already/just）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-02
+      title: 現在完成式 — 持續（since/for）+ 已完成（yet/already/just）
+      chapter: B5 九上
   ai_answers:
     gemini: has been
     qwen: has been
@@ -1162,8 +1473,15 @@ questions:
   page: 4
   stem: Mary was asked ________ (finish) her homework before 8 pm.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 need/ask/want + O + to V
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-11
+      title: need/ask/want + O + to V
+      chapter: B5 九上
   ai_answers:
     gemini: to finish
     qwen: to finish
@@ -1179,8 +1497,15 @@ questions:
   stem: "Do you know?   \nWho is Jack talking with?  (合併成一句)                     \
     \                 (2 分)"
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
 - id: doc_112_高雄_大樹_英語_g9s1e2_s6_47
   section: 6
   number: 47
@@ -1189,8 +1514,15 @@ questions:
   stem: Robert’s son always worries Robert.  (改寫句子成…worried….)                   (2
     分)
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-03
+      title: 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
+      chapter: B5 九上
 - id: doc_112_高雄_大樹_英語_g9s1e2_s6_48
   section: 6
   number: 48
@@ -1198,8 +1530,15 @@ questions:
   page: 4
   stem: 這則新聞來自一個可信任的網站嗎？  (翻譯)                                (3 分)
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 關係代名詞 that/which（修飾事物）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-06
+      title: 關係代名詞 that/which（修飾事物）
+      chapter: B5 九上
 - id: doc_112_高雄_大樹_英語_g9s1e2_s6_49
   section: 6
   number: 49
@@ -1207,8 +1546,15 @@ questions:
   page: 4
   stem: 多虧有這部電影，現在我明白台灣真正有多美。(翻譯)                        (3 分)
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 關係代名詞 that/which（修飾事物）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-06
+      title: 關係代名詞 that/which（修飾事物）
+      chapter: B5 九上
 shared_assets:
 - key: g2_19_21
   label: 題組附圖

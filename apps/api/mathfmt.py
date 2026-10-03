@@ -127,9 +127,56 @@ def latex_to_html(tex: str) -> str:
 
 
 def render(md: str | None) -> str:
-    """Markdown（粗體）+ 行內 $…$ 公式 → HTML。非公式部分一律逸出。"""
+    """Markdown（粗體、管線式表格）+ 行內 $…$ 公式 → HTML。非公式部分一律逸出。"""
     if not md:
         return ""
+    # 只有出現表格分隔列（| --- |）才當表格；絕對值 |a－c| 也可能在行首
+    if SEP.search(md):
+        return _blocks(md)
+    return _inline(md)
+
+
+SEP = re.compile(r"^\s*\|?[\s:|-]*-{3,}[\s:|-]*\|?\s*$", re.M)
+
+
+def _blocks(md: str) -> str:
+    """題組說明常夾著表格（統計表、時刻表）：連續以 | 開頭的行轉成 <table>。"""
+    out: list[str] = []
+    buf: list[str] = []
+    rows: list[str] = []
+
+    def flush_text():
+        if buf:
+            out.append(_inline("\n".join(buf)))
+            buf.clear()
+
+    def flush_table():
+        if rows and not any(SEP.match(r) for r in rows):
+            out.append(_inline("\n".join(rows)))
+            rows.clear()
+        if rows:
+            body = [r for r in rows if not set(r.replace("|", "").replace(" ", "")) <= set(":-")]
+            cells = [[c.strip() for c in r.strip().strip("|").split("|")] for r in body]
+            if cells:
+                head = "".join(f"<th>{_inline(c)}</th>" for c in cells[0])
+                trs = "".join("<tr>" + "".join(f"<td>{_inline(c)}</td>" for c in r) + "</tr>"
+                              for r in cells[1:])
+                out.append(f'<table class="md"><tr>{head}</tr>{trs}</table>')
+            rows.clear()
+
+    for line in md.split("\n"):
+        if line.strip().startswith("|"):
+            flush_text()
+            rows.append(line)
+        else:
+            flush_table()
+            buf.append(line)
+    flush_text()
+    flush_table()
+    return "".join(out)
+
+
+def _inline(md: str) -> str:
     parts: list[str] = []
     for i, chunk in enumerate(re.split(r"\$([^$]*)\$", md)):
         if i % 2:                                  # 奇數段是公式
@@ -144,13 +191,15 @@ def render(md: str | None) -> str:
 MATH_CSS = """
 .math{font-family:"Cambria Math","Latin Modern Math",Georgia,serif;font-style:italic}
 .math sup,.math sub{font-style:normal;font-size:.72em}
-.frac{display:inline-flex;flex-direction:column;vertical-align:-0.55em;
+.frac{display:inline-flex;flex-direction:column;vertical-align:middle;
       text-align:center;font-size:.92em;margin:0 .15em}
 .frac .num{border-bottom:1px solid currentColor;padding:0 .3em}
 .frac .den{padding:0 .3em}
 .ovl{border-top:1px solid currentColor;padding-top:1px}
 .sqrt{border-top:1px solid currentColor;padding:0 .15em}
 .up{font-style:normal}
+table.md{border-collapse:collapse;margin:4px 0;font-size:.92em}
+table.md td,table.md th{border:1px solid currentColor;padding:1px 8px;text-align:center}
 .ovarr{display:inline-flex;flex-direction:column;align-items:center;line-height:1;vertical-align:-0.1em}
 .ovarr .arr{font-size:.7em;line-height:.8;font-style:normal}
 """

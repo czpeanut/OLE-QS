@@ -19,6 +19,9 @@ document:
     count: 14
   extractor: vlm:gemini-3.7-flash
   source_file: 國三/英文/113/1-2/台中/五權.pdf
+  chapter_index:
+    kind: english_topics
+    model: gemini-3.1-flash-lite(batch)
 questions:
 - id: doc_113_台中_五權_英語_g9s1e2_s1_1
   section: 1
@@ -48,8 +51,15 @@ questions:
       - 508.58
       - 207.49
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -75,8 +85,15 @@ questions:
   group_stem: Because of the heavy traffic, I    2.    in it and almost late for the
     train. At last, I got on it    3.   , and didn’t miss it.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
   ai_answers:
     gemini: B
     qwen: B
@@ -102,8 +119,15 @@ questions:
   group_stem: Because of the heavy traffic, I    2.    in it and almost late for the
     train. At last, I got on it    3.   , and didn’t miss it.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -131,8 +155,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 83%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
 - id: doc_113_台中_五權_英語_g9s1e2_s1_5
   section: 1
   number: 5
@@ -151,8 +182,15 @@ questions:
   group_stem: Tom and Mary is going to have their wedding in a big restaurant next
     month, so they have to make a guest    4.    to make sure who    5.   .
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: A
     qwen: B
@@ -181,8 +219,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 89%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
 - id: doc_113_台中_五權_英語_g9s1e2_s1_7
   section: 1
   number: 7
@@ -203,8 +248,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 89%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
 - id: doc_113_台中_五權_英語_g9s1e2_s1_8
   section: 1
   number: 8
@@ -225,8 +277,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 87%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
 - id: doc_113_台中_五權_英語_g9s1e2_s1_9
   section: 1
   number: 9
@@ -247,8 +306,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 90%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
 - id: doc_113_台中_五權_英語_g9s1e2_s1_10
   section: 1
   number: 10
@@ -266,8 +332,15 @@ questions:
     content: to paint
   group_stem: The doghouse has already    10.    by Dad. Now it    11.    a new one.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
   ai_answers:
     gemini: C
     qwen: C
@@ -292,8 +365,15 @@ questions:
     content: looks at
   group_stem: The doghouse has already    10.    by Dad. Now it    11.    a new one.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 連綴動詞（look/sound/taste/smell/feel/become/get）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B4-04
+      title: 連綴動詞（look/sound/taste/smell/feel/become/get）
+      chapter: B4 八下
   ai_answers:
     gemini: C
     qwen: C
@@ -319,8 +399,15 @@ questions:
   group_stem: My grandma likes to save all food in the    12.    to keep it fresh.
     She thinks that way, the food won’t go bad, and then it    13.    all the time.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -346,8 +433,15 @@ questions:
   group_stem: My grandma likes to save all food in the    12.    to keep it fresh.
     She thinks that way, the food won’t go bad, and then it    13.    all the time.
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
   ai_answers:
     gemini: D
     qwen: D
@@ -372,8 +466,15 @@ questions:
   - label: D
     content: that
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: D
     qwen: D
@@ -397,8 +498,15 @@ questions:
   - label: D
     content: that
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: A
     qwen: A
@@ -424,8 +532,15 @@ questions:
   - label: D
     content: what it is done
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: B
     qwen: B
@@ -450,8 +565,15 @@ questions:
   - label: D
     content: what
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: B
     qwen: B
@@ -476,8 +598,15 @@ questions:
   - label: D
     content: what
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: A
     qwen: A
@@ -502,8 +631,15 @@ questions:
   - label: D
     content: being told
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
   ai_answers:
     gemini: D
     qwen: D
@@ -527,8 +663,15 @@ questions:
   - label: D
     content: asking
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 動名詞 V-ing 當受詞（enjoy/keep/finish/practice/avoid）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B3-05
+      title: 動名詞 V-ing 當受詞（enjoy/keep/finish/practice/avoid）
+      chapter: B3 八上
   ai_answers:
     gemini: C
     qwen: C
@@ -552,8 +695,15 @@ questions:
   - label: D
     content: what was Ivy happened
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: C
     qwen: C
@@ -577,8 +727,15 @@ questions:
   - label: D
     content: how’s the weather
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: C
     qwen: C
@@ -603,8 +760,15 @@ questions:
   - label: D
     content: he saw; will be told
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
   ai_answers:
     gemini: B
     qwen: B
@@ -628,8 +792,15 @@ questions:
   - label: D
     content: watching; listening to
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
   ai_answers:
     gemini: C
     qwen: C
@@ -653,8 +824,15 @@ questions:
   - label: D
     content: what she was asked to buy
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: D
     qwen: D
@@ -688,8 +866,15 @@ questions:
   - label: D
     content: 垂涎三尺
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -739,8 +924,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 85%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
 - id: doc_113_台中_五權_英語_g9s1e2_s2_28
   section: 2
   number: 28
@@ -783,8 +975,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 87%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
 - id: doc_113_台中_五權_英語_g9s1e2_s2_29
   section: 2
   number: 29
@@ -827,8 +1026,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 80%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
 - id: doc_113_台中_五權_英語_g9s1e2_s2_30
   section: 2
   number: 30
@@ -869,8 +1075,15 @@ questions:
 
     Kiki: Ok, I see. Thank you! I feel better now.'
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
   ai_answers:
     gemini: B
     qwen: B
@@ -920,8 +1133,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 80%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
 - id: doc_113_台中_五權_英語_g9s1e2_s2_32
   section: 2
   number: 32
@@ -962,8 +1182,15 @@ questions:
 
     Kiki: Ok, I see. Thank you! I feel better now.'
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
   ai_answers:
     gemini: D
     qwen: D
@@ -1013,8 +1240,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 80%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 間接問句（Do you know what/where/when/how...?）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-05
+      title: 間接問句（Do you know what/where/when/how...?）
+      chapter: B5 九上
 - id: doc_113_台中_五權_英語_g9s1e2_s2_34
   section: 2
   number: 34
@@ -1057,8 +1291,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 80%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: B5-04
+      title: 被動語態（be+p.p.+by）
+      chapter: B5 九上
 - id: doc_113_台中_五權_英語_g9s1e2_s2_35
   section: 2
   number: 35
@@ -1096,8 +1337,15 @@ questions:
     \     directly 直接地     popular vote 普選票  \nelector 選舉人      religion 宗教      \
     \ set out 出發      vote 投票；選票   \naccording to 根據      candidate 候選人"
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -1144,8 +1392,15 @@ questions:
     \     directly 直接地     popular vote 普選票  \nelector 選舉人      religion 宗教      \
     \ set out 出發      vote 投票；選票   \naccording to 根據      candidate 候選人"
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -1196,8 +1451,15 @@ questions:
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 90%）
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
 - id: doc_113_台中_五權_英語_g9s1e2_s2_38
   section: 2
   number: 38
@@ -1239,8 +1501,15 @@ questions:
     for half-truth or fake news.'
   shared_asset: g2_37_40
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -1304,8 +1573,15 @@ questions:
     for half-truth or fake news.'
   shared_asset: g2_37_40
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -1354,8 +1630,15 @@ questions:
     for half-truth or fake news.'
   shared_asset: g2_37_40
   tags:
-    textbook: 第五冊（九上）第2次段考範圍
+    textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 九上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D

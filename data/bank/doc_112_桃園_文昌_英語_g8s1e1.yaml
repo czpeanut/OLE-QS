@@ -50,6 +50,9 @@ document:
     publisher: 翰林
     raw: 教科書版本：翰林 範圍：B3 L1-L2 + ABC P.20-22
     volume: B3
+  chapter_index:
+    kind: english_topics
+    model: gemini-3.1-flash-lite(batch)
 questions:
 - id: doc_112_桃園_文昌_英語_g8s1e1_s4_16
   section: 4
@@ -80,8 +83,15 @@ questions:
       - 656.18
       - 810.0
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -106,8 +116,15 @@ questions:
   - label: D
     content: poor
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -132,8 +149,15 @@ questions:
   - label: D
     content: lesson
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -158,8 +182,15 @@ questions:
   - label: D
     content: making up
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -183,8 +214,15 @@ questions:
   - label: D
     content: from
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 授與動詞（gave/sent/showed/wrote/made + 人 + 物）+ to/for
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-02
+      title: 授與動詞（gave/sent/showed/wrote/made + 人 + 物）+ to/for
+      chapter: B3 八上
   ai_answers:
     gemini: A
     qwen: A
@@ -209,8 +247,15 @@ questions:
   - label: D
     content: How’s; snows
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 How/What問天氣 + 天氣描述（It rains/is rainy）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-01
+      title: How/What問天氣 + 天氣描述（It rains/is rainy）
+      chapter: B3 八上
   ai_answers:
     gemini: C
     qwen: C
@@ -234,8 +279,15 @@ questions:
   - label: D
     content: mine
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 所有格代名詞（mine/yours/his/hers/theirs）+ Whose
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-11
+      title: 所有格代名詞（mine/yours/his/hers/theirs）+ Whose
+      chapter: B3 八上
   ai_answers:
     gemini: D
     qwen: D
@@ -260,8 +312,15 @@ questions:
   - label: D
     content: Were
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 第三人稱單數動詞變化（+s/es/ies）+ does
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B2-02
+      title: 第三人稱單數動詞變化（+s/es/ies）+ does
+      chapter: B2 七下
   ai_answers:
     gemini: A
     qwen: A
@@ -286,8 +345,15 @@ questions:
   - label: D
     content: made ; after
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 從屬連接詞（when/before/after）+ 未來式
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-09
+      title: 從屬連接詞（when/before/after）+ 未來式
+      chapter: B3 八上
   ai_answers:
     gemini: D
     qwen: D
@@ -313,8 +379,15 @@ questions:
   - label: D
     content: was; there were
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 過去式 be動詞（was/were）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B2-07
+      title: 過去式 be動詞（was/were）
+      chapter: B2 七下
   ai_answers:
     gemini: C
     qwen: C
@@ -339,8 +412,15 @@ questions:
   - label: D
     content: came; after
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 從屬連接詞（when/before/after）+ 未來式
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-09
+      title: 從屬連接詞（when/before/after）+ 未來式
+      chapter: B3 八上
   ai_answers:
     gemini: B
     qwen: B
@@ -365,8 +445,15 @@ questions:
   - label: D
     content: Who; ours
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 所有格代名詞（mine/yours/his/hers/theirs）+ Whose
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-11
+      title: 所有格代名詞（mine/yours/his/hers/theirs）+ Whose
+      chapter: B3 八上
   ai_answers:
     gemini: A
     qwen: A
@@ -396,8 +483,15 @@ questions:
   - label: D
     content: Don’t be so mean to her. She’s just a three-year-old girl.
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -455,8 +549,15 @@ questions:
       \ Then, Goldilocks woke up and ran out of the house. Goldilocks now means the\
       \ idea of finding something “just right.”\n\U0001F4D6 porridge 粥"
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -514,8 +615,15 @@ questions:
       \ Then, Goldilocks woke up and ran out of the house. Goldilocks now means the\
       \ idea of finding something “just right.”\n\U0001F4D6 porridge 粥"
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: AB
     qwen: AB
@@ -574,8 +682,15 @@ questions:
       \ Then, Goldilocks woke up and ran out of the house. Goldilocks now means the\
       \ idea of finding something “just right.”\n\U0001F4D6 porridge 粥"
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -633,8 +748,15 @@ questions:
       \ Then, Goldilocks woke up and ran out of the house. Goldilocks now means the\
       \ idea of finding something “just right.”\n\U0001F4D6 porridge 粥"
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: AC
     qwen: AC
@@ -693,8 +815,15 @@ questions:
       \ Then, Goldilocks woke up and ran out of the house. Goldilocks now means the\
       \ idea of finding something “just right.”\n\U0001F4D6 porridge 粥"
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -752,8 +881,15 @@ questions:
       \ Then, Goldilocks woke up and ran out of the house. Goldilocks now means the\
       \ idea of finding something “just right.”\n\U0001F4D6 porridge 粥"
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: AD
     qwen: AD
@@ -801,8 +937,15 @@ questions:
     \ 水箱"
   shared_asset: g6_35_38
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 過去式 be動詞（was/were）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B2-07
+      title: 過去式 be動詞（was/were）
+      chapter: B2 七下
   ai_answers:
     gemini: C
     qwen: C
@@ -849,8 +992,15 @@ questions:
     \ 水箱"
   shared_asset: g6_35_38
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 從屬連接詞（when/before/after）+ 未來式
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-09
+      title: 從屬連接詞（when/before/after）+ 未來式
+      chapter: B3 八上
   ai_answers:
     gemini: A
     qwen: A
@@ -897,8 +1047,15 @@ questions:
     \ 水箱"
   shared_asset: g6_35_38
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 過去式一般動詞（規則+不規則變化）+ Did問答
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B2-08
+      title: 過去式一般動詞（規則+不規則變化）+ Did問答
+      chapter: B2 七下
   ai_answers:
     gemini: B
     qwen: B
@@ -945,8 +1102,15 @@ questions:
     \ 水箱"
   shared_asset: g6_35_38
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -1026,8 +1190,15 @@ questions:
     \ I found my phone frozen in the snow.\n\n\U0001F4D6 southern hemisphere 南半球 \
     \  capital city 首都   average 平均"
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -1067,8 +1238,15 @@ questions:
     \ I found my phone frozen in the snow.\n\n\U0001F4D6 southern hemisphere 南半球 \
     \  capital city 首都   average 平均"
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -1108,8 +1286,15 @@ questions:
     \ I found my phone frozen in the snow.\n\n\U0001F4D6 southern hemisphere 南半球 \
     \  capital city 首都   average 平均"
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -1183,8 +1368,15 @@ questions:
 
     📖 however 然而；但是 difference 差別 common 常見的  gravy 肉汁   politeness 禮貌 necessary 必要的，應該的'
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -1281,8 +1473,15 @@ questions:
 
     📖 however 然而；但是 difference 差別 common 常見的  gravy 肉汁   politeness 禮貌 necessary 必要的，應該的'
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -1338,8 +1537,15 @@ questions:
 
     📖 however 然而；但是 difference 差別 common 常見的  gravy 肉汁   politeness 禮貌 necessary 必要的，應該的'
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -1409,8 +1615,15 @@ questions:
     📖 idiom 慣用語'
   shared_asset: g7_45_46
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -1442,8 +1655,15 @@ questions:
     📖 idiom 慣用語'
   shared_asset: g7_45_46
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -1498,8 +1718,15 @@ questions:
     📖 experience 實驗  goggles 泳鏡'
   shared_asset: g7_47_48
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: A
@@ -1548,8 +1775,15 @@ questions:
     📖 experience 實驗  goggles 泳鏡'
   shared_asset: g7_47_48
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -1575,8 +1809,15 @@ questions:
       - 176.73
       - 377.67
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: camera
     qwen: camera
@@ -1602,8 +1843,15 @@ questions:
       - 548.51
       - 394.36
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: postcard
     qwen: postcard
@@ -1619,8 +1867,15 @@ questions:
   stem: I transferred from other school a few days ago, so everything is s         e
     to me.    📖 transfer 轉學
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: strange
     qwen: strange
@@ -1635,8 +1890,15 @@ questions:
   page: 9
   stem: My favorite season is a         n. It’s not too hot, not too cold.
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: autumn
     qwen: autumn
@@ -1652,8 +1914,15 @@ questions:
   stem: Mr. Ruy is a computer e          r. He designs a lot of APPs and you can download
     them on the phones.
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: engineer
     qwen: engineer
@@ -1670,8 +1939,15 @@ questions:
 
     → ___________________________________________________________________________'
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 從屬連接詞（when/before/after）+ 未來式
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-09
+      title: 從屬連接詞（when/before/after）+ 未來式
+      chapter: B3 八上
 - id: doc_112_桃園_文昌_英語_g8s1e1_s9_55
   section: 9
   number: 55
@@ -1681,8 +1957,15 @@ questions:
 
     → ___________________________________________________________________________'
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 授與動詞（gave/sent/showed/wrote/made + 人 + 物）+ to/for
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-02
+      title: 授與動詞（gave/sent/showed/wrote/made + 人 + 物）+ to/for
+      chapter: B3 八上
 - id: doc_112_桃園_文昌_英語_g8s1e1_s9_56
   section: 9
   number: 56
@@ -1692,8 +1975,15 @@ questions:
 
     → ___________________________________________________________________________'
   tags:
-    textbook: 第三冊（八上）第1次段考範圍
+    textbook: 八上 英語 過去進行式（was/were+Ving）+ when從句
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 英語
+      code: B3-03
+      title: 過去進行式（was/were+Ving）+ when從句
+      chapter: B3 八上
 shared_assets:
 - key: g6_35_38
   label: 題組附圖

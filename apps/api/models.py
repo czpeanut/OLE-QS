@@ -202,6 +202,15 @@ class Question(Base):
     parent_id: Mapped[str | None] = mapped_column(ForeignKey("question.id"))
     shared_asset_key: Mapped[str | None] = mapped_column(String(40))
 
+    # 教科書單元（classify_chapters / classify_english 的結果）。
+    # 數學、自然各版本節次對齊，篩選只看代號；國文、社會要連同版本一起比對；
+    # 英語是跨版本的主題代號，unit_publisher 為空。
+    unit_publisher: Mapped[str | None] = mapped_column(String(10))
+    unit_subject: Mapped[str | None] = mapped_column(String(10), index=True)   # 生物、歷史…；沒有子科時同科目
+    unit_code: Mapped[str | None] = mapped_column(String(20), index=True)
+    unit_title: Mapped[str | None] = mapped_column(String(200))
+    unit_chapter: Mapped[str | None] = mapped_column(String(200))
+
     status: Mapped[ReviewStatus] = mapped_column(
         Enum(ReviewStatus), default=ReviewStatus.needs_review, index=True)
     review_note: Mapped[str | None] = mapped_column(Text)
@@ -406,6 +415,7 @@ class Paper(Base):
     subject: Mapped[str | None] = mapped_column(String(40))
     owner: Mapped[str | None] = mapped_column(String(80))
     notes: Mapped[str | None] = mapped_column(Text)
+    settings: Mapped[dict | None] = mapped_column(JSON)       # 匯出設定（副標題、分欄、作答空間…）
     created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow, onupdate=utcnow)
 

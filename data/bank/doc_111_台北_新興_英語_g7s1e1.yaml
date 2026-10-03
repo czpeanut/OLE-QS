@@ -37,6 +37,9 @@ document:
     count: 5
   extractor: vlm:gemini-3.7-flash
   source_file: 國一/英文/111/1-1/台北/新興.pdf
+  chapter_index:
+    kind: english_topics
+    model: gemini-3.1-flash-lite(batch)
 questions:
 - id: doc_111_台北_新興_英語_g7s1e1_s4_11
   section: 4
@@ -54,8 +57,15 @@ questions:
   - label: D
     content: be
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 be動詞(am/is/are) + 肯定/否定/Yes-No問答
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-01
+      title: be動詞(am/is/are) + 肯定/否定/Yes-No問答
+      chapter: B1 七上
   ai_answers:
     gemini: B
     qwen: B
@@ -79,8 +89,15 @@ questions:
   - label: D
     content: What
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 Where問句 + 回答方式
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-08
+      title: Where問句 + 回答方式
+      chapter: B1 七上
   ai_answers:
     gemini: D
     qwen: D
@@ -104,8 +121,15 @@ questions:
   - label: D
     content: two goose
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-04
+      title: 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
+      chapter: B1 七上
   ai_answers:
     gemini: C
     qwen: C
@@ -129,8 +153,15 @@ questions:
   - label: D
     content: How old
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 Who問句
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-06
+      title: Who問句
+      chapter: B1 七上
   ai_answers:
     gemini: B
     qwen: B
@@ -154,8 +185,15 @@ questions:
   - label: D
     content: Is
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 be動詞(am/is/are) + 肯定/否定/Yes-No問答
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-01
+      title: be動詞(am/is/are) + 肯定/否定/Yes-No問答
+      chapter: B1 七上
   ai_answers:
     gemini: D
     qwen: D
@@ -179,8 +217,15 @@ questions:
   - label: D
     content: they
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 人稱代名詞（主格I/you/he/she/it/we/they）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-02
+      title: 人稱代名詞（主格I/you/he/she/it/we/they）
+      chapter: B1 七上
   ai_answers:
     gemini: A
     qwen: A
@@ -204,8 +249,15 @@ questions:
   - label: D
     content: Their
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 所有格形容詞（my/your/his/her/its/our/their）+ 所有格's
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-05
+      title: 所有格形容詞（my/your/his/her/its/our/their）+ 所有格's
+      chapter: B1 七上
   ai_answers:
     gemini: B
     qwen: B
@@ -229,8 +281,15 @@ questions:
   - label: D
     content: ten year old
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 其他文法（不在列表中的文法點）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: G0
+      title: 其他文法（不在列表中的文法點）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -254,8 +313,15 @@ questions:
   - label: D
     content: aren’t
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 be動詞(am/is/are) + 肯定/否定/Yes-No問答
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-01
+      title: be動詞(am/is/are) + 肯定/否定/Yes-No問答
+      chapter: B1 七上
   ai_answers:
     gemini: D
     qwen: D
@@ -279,8 +345,15 @@ questions:
   - label: D
     content: it is
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 受格代名詞（me/you/him/her/it/us/them）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-11
+      title: 受格代名詞（me/you/him/her/it/us/them）
+      chapter: B1 七上
   ai_answers:
     gemini: A
     qwen: A
@@ -304,8 +377,15 @@ questions:
   - label: D
     content: They are not my favorite animals.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 對話與情境應答
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R2
+      title: 對話與情境應答
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -329,8 +409,15 @@ questions:
   - label: D
     content: band
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 There is/are（肯定/否定/問答）+ some/any
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-15
+      title: There is/are（肯定/否定/問答）+ some/any
+      chapter: B1 七上
   ai_answers:
     gemini: B
     qwen: B
@@ -354,8 +441,15 @@ questions:
   - label: D
     content: all
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 There is/are（肯定/否定/問答）+ some/any
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-15
+      title: There is/are（肯定/否定/問答）+ some/any
+      chapter: B1 七上
   ai_answers:
     gemini: A
     qwen: A
@@ -379,8 +473,15 @@ questions:
   - label: D
     content: also
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -404,8 +505,15 @@ questions:
   - label: D
     content: afternoon
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -442,8 +550,15 @@ questions:
 
     Mike: Yes, you are right. You are a 29 .'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -480,8 +595,15 @@ questions:
 
     Mike: Yes, you are right. You are a 29 .'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -518,8 +640,15 @@ questions:
 
     Mike: Yes, you are right. You are a 29 .'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 位置介系詞（in/on/under/behind/between/next to/near/in front of）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-07
+      title: 位置介系詞（in/on/under/behind/between/next to/near/in front of）
+      chapter: B1 七上
   ai_answers:
     gemini: B
     qwen: B
@@ -556,8 +685,15 @@ questions:
 
     Mike: Yes, you are right. You are a 29 .'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 片語與慣用語
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -610,8 +746,15 @@ questions:
 
     Playing in the park. |'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: B
@@ -638,8 +781,15 @@ questions:
   group_stem: (Ⅱ)
   shared_asset: g6_31_32
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: A
     qwen: A
@@ -665,8 +815,15 @@ questions:
   group_stem: (Ⅱ)
   shared_asset: g6_31_32
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -715,8 +872,15 @@ questions:
 
     Yuki: No. He is a basketball player（球員）.'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: C
     qwen: C
@@ -765,8 +929,15 @@ questions:
 
     Yuki: No. He is a basketball player（球員）.'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: D
     qwen: D
@@ -815,8 +986,15 @@ questions:
 
     Yuki: No. He is a basketball player（球員）.'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
   ai_answers:
     gemini: B
     qwen: B
@@ -831,8 +1009,15 @@ questions:
   page: 3
   stem: Tim is my father. I am Tim’s d   r.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: daughter
     qwen: daughter
@@ -847,8 +1032,15 @@ questions:
   page: 3
   stem: Amy has a big f   y . She has eight brothers and sisters.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: family
     qwen: family
@@ -863,8 +1055,15 @@ questions:
   page: 3
   stem: 'A: Is it a g   e?  B: No, it is a mouse.'
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: giraffe
     qwen: goose
@@ -880,8 +1079,15 @@ questions:
   page: 3
   stem: The black bear is very tall and s   g.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: strong
     qwen: strong
@@ -896,8 +1102,15 @@ questions:
   page: 3
   stem: Peppa Pig is my f   e show. The pigs on that show are smart.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: favorite
     qwen: favorite
@@ -912,8 +1125,15 @@ questions:
   page: 3
   stem: You can have f   t like (像) oranges or apples every day.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: fruit
     qwen: fruit
@@ -928,8 +1148,15 @@ questions:
   page: 3
   stem: The table is d   y, not clean.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: dirty
     qwen: dirty
@@ -944,8 +1171,15 @@ questions:
   page: 3
   stem: The game is e  y, not hard.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: easy
     qwen: easy
@@ -960,8 +1194,15 @@ questions:
   page: 3
   stem: This is an apple. (請將apple 改成oranges 後適當改寫句子)
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-04
+      title: 名詞單複數（規則/不規則變化）+ 冠詞a/an/the
+      chapter: B1 七上
 - id: doc_111_台北_新興_英語_g7s1e1_s8_2
   section: 8
   number: 2
@@ -969,8 +1210,15 @@ questions:
   page: 3
   stem: They are my bothers. (請依畫線部分造原問句)
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 Who問句
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-06
+      title: Who問句
+      chapter: B1 七上
 - id: doc_111_台北_新興_英語_g7s1e1_s8_3
   section: 8
   number: 3
@@ -978,8 +1226,15 @@ questions:
   page: 3
   stem: Teacher Ben is from the USA. (請依畫線部分造原問句)
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 Where問句 + 回答方式
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: B1-08
+      title: Where問句 + 回答方式
+      chapter: B1 七上
 - id: doc_111_台北_新興_英語_g7s1e1_s8_4
   section: 8
   number: 4
@@ -987,8 +1242,15 @@ questions:
   page: 3
   stem: How old are you? (請依據事實作答)
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 其他文法（不在列表中的文法點）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: G0
+      title: 其他文法（不在列表中的文法點）
+      chapter: 綜合
 - id: doc_111_台北_新興_英語_g7s1e1_s8_8
   section: 8
   number: 8
@@ -996,8 +1258,15 @@ questions:
   page: 3
   stem: Let’s help the o  d man there.
   tags:
-    textbook: 第一冊（七上）第1次段考範圍
+    textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+    chapter:
+      publisher: null
+      book: 七上
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
   ai_answers:
     gemini: old
     qwen: old
