@@ -1,0 +1,22 @@
+source: data/bank/doc_112_高雄_林園_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_112_高雄_林園_數學_g7s2e1_s2_4
+  number: 4
+  type: fill
+  images_sent: 4
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x=6, y=7
+      - x=-4, y=5
+      - x=5, y=-5
+      - x=2, y=-1
+      reasoning: 分別解各小題的二元一次聯立方程式：(1)代入法得x=6, y=7；(2)加減消去法得x=-4, y=5；(3)兩式相加消去y得x=5,
+        y=-5；(4)將兩式相加與相減簡化得x+y=1與x-y=3，解得x=2, y=-1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

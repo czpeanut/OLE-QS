@@ -1,0 +1,33 @@
+source: data/bank/doc_114_台中_向上_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_114_台中_向上_數學_g7s2e1_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 大於2
+      reasoning: 設好球數為S、壞球數為B，由S＋B＝53與S－B＝23可解得S＝38、B＝15。其好壞球比為38÷15≈2.53，大於2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_114_台中_向上_數學_g7s2e1_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 26400元
+      reasoning: 設小孩紅包有 x 包、長者紅包有 y 包，由題意可列式 x + y = 14 且 x + 6y = 2x（千元與百元張數相同），解得
+        y = 2, x = 12。總金額為 1200 × 12 + 6000 × 2 = 26400 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

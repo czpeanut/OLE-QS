@@ -1,0 +1,683 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 屏東
+  school_short: 明正
+  school: 屏東縣立明正國民中學
+  id: doc_113_屏東_明正_數學_g8s1e1
+  title: 屏東縣立明正國民中學 113學年度第1學期第1次定期評量 8年級數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題：每題4 分，共40 分
+    count: 10
+  - ord: 2
+    name: 二、填充題：每格4 分，共40 分(全對才給分)
+    count: 10
+  - ord: 3
+    name: 三、計算題：每題5 分，共20 分(需有計算過程，否則一律不計分)
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/1-1/屏東/明正.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 右圖(一)為每格邊長皆為1 的 正方形，則灰色正方形的邊長為何?
+  options:
+  - label: A
+    content: $\sqrt{2}$
+  - label: B
+    content: $\sqrt{3}$
+  - label: C
+    content: '4'
+  - label: D
+    content: $\sqrt{5}$
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_113_屏東_明正_數學_g8s1e1/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 575.02
+      - 131.24
+      - 687.6
+      - 239.56
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 若$A$ 為正整數，且滿足$99^{2}＝A＋1$，則$A$ 與下列何者相等？
+  options:
+  - label: A
+    content: ( 99＋1 ) ( 99－1 )
+  - label: B
+    content: $( 99－1 )^{2}$
+  - label: C
+    content: $( 99＋1 )^{2}$
+  - label: D
+    content: $( 99＋1 )^{2} ( 99－1 )^{2}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: $99.5^{2}＝( 100－a )^{2}＝100^{2}－2\times100\times b＋0.25＝c$
+  options:
+  - label: A
+    content: $a＝b$
+  - label: B
+    content: $b＝0.25$
+  - label: C
+    content: $c＝9000.5$
+  - label: D
+    content: $a＝5$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 已知$9x^{2}＋8＝( 3x＋1 ) ( 3x－1 )＋ 9$，下列哪個一選項的敘述是錯誤的？
+  options:
+  - label: A
+    content: $9x^{2}＋8$ 除以$3x＋1$ 得商式為$3x－1$
+  - label: B
+    content: $9x^{2}＋8$ 除以$3x＋1$ 得商式為$3x＋1$
+  - label: C
+    content: $9x^{2}＋8$ 除以$3x＋1$ 得餘式為$9$
+  - label: D
+    content: $9x^{2}＋8$ 除以$3x－1$ 得餘式為$9$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 下列有關平方根的敘述，何者正確？
+  options:
+  - label: A
+    content: 因為沒有任何整數的平方等於2，所以2 沒有平方根
+  - label: B
+    content: 若$a$ 是2 的平方根，則$-a$ 也是2 的平方根
+  - label: C
+    content: 因為$-2^{2}＝-4$，所以$-2$ 是$-4$ 的平方根
+  - label: D
+    content: 因為$a＝2^{2}$，所以$a$ 是2 的平方根
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 下列敘述何者正確？
+  options:
+  - label: A
+    content: $\sqrt{25}＝\pm5$
+  - label: B
+    content: $-\sqrt{0.09} = -0.3$
+  - label: C
+    content: $\sqrt{(-3)^{2}} = -3$
+  - label: D
+    content: $\sqrt{1.6} = 0.4$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: F 為$x$ 的二次多項式，G 為$x$ 的一次多項式。 若F＋G 為$x$ 的$a$ 次多項式，F－G 為$x$ 的$b$ 次多項式，F×G 為$x$
+    的$c$ 次多項式，F÷G 的商式為$x$ 的 d 次多項式，則下列敘述何者正確？
+  options:
+  - label: A
+    content: $a＝3$
+  - label: B
+    content: $b＝1$
+  - label: C
+    content: $c＝3$
+  - label: D
+    content: $d＝0$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 有關 $\sqrt{85}$ 的敘述，下列何者錯誤？
+  options:
+  - label: A
+    content: $\sqrt{85} > 0$
+  - label: B
+    content: $\sqrt{85}$ 與 $-\sqrt{85}$ 均是85 的平方根
+  - label: C
+    content: $\sqrt{85} < 9$
+  - label: D
+    content: $\sqrt{85} > 8$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 計算 $\sqrt{12.5}$ 的近似值後，判斷右圖(二)數線上的$A$、$B$、$C$、$D$ 四點，哪一點與 $\sqrt{12.5}$ 最接近？
+  options:
+  - label: A
+    content: A
+  - label: B
+    content: B
+  - label: C
+    content: C
+  - label: D
+    content: D
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_113_屏東_明正_數學_g8s1e1/s1_9_f1.png
+    crop:
+      page: 1
+      rect:
+      - 561.27
+      - 707.56
+      - 735.38
+      - 785.13
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 已知$a= \sqrt{\frac{62}{3}}$、b＝5、c = $\sqrt{20.5}$， 則$a$、$b$、$c$ 三數的大小關係為何？
+  options:
+  - label: A
+    content: $a＞b＞c$
+  - label: B
+    content: $c＞b＞a$
+  - label: C
+    content: $b＞c＞a$
+  - label: D
+    content: $b＞a＞c$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 已知$m$ 為正整數，若$m＜ \sqrt{27} ＜ m＋1$， 則$m＝$____________
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: '5'
+    qwen: '5'
+  answer:
+  - '5'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: '利用乘法公式計算下列各式的值：
+
+    （1）$38 \times 0.3 + 38 \times 0.7 + 41 \times 0.3 + 41 \times 0.7 ＝$____________'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '79'
+    qwen: '79'
+  answer:
+  - '79'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: '利用乘法公式計算下列各式的值：
+
+    （2）$( 25\frac{1}{2} )^{2}－( 24\frac{1}{2} )^{2} ＝$____________'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '50'
+    qwen: '50'
+  answer:
+  - '50'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 計算$133\times \frac{133}{135}$ 的值，其值最接近哪一個正整數？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '133'
+    qwen: '131'
+    gemini_high: '131'
+  answer:
+  - '131'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 多項式$A$ 為單項式且多項式$B＝x^{3}－2x^{2}＋3x－4$，若$A－B$ 的二次項係數為 7，求多項式$A$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: 5x^2
+    qwen: 5x^{2}
+  answer:
+  - 5x^2
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 計算 $( 2－4x－3x^{2} )－[( 2x^{2}－5x＋7 )＋( x^{2}＋x－3 )]＝$_________________
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: -6x^2-2
+    qwen: -6x^{2}-2
+  answer:
+  - -6x^2-2
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 計算 $( 2x^{2}＋5x－3 )( x＋2 )＝$_______________
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: 2x^3+9x^2+7x-6
+    qwen: 2x^{3}+9x^{2}+7x-6
+  answer:
+  - 2x^3+9x^2+7x-6
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 求 $( 6x^{2}－5＋7x ) \div ( 3x－1 )$ 的商式。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: 2x+3
+    qwen: 2x+3
+  answer:
+  - 2x+3
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 若多項式$5x^{2}－7x＋a$ 除以$x－3$ 得餘式為 16，求$a$ 的值。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '-8'
+    qwen: '-8'
+  answer:
+  - '-8'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 利用十分逼近法求 $\sqrt{11}$ 的近似值，並以四捨五入法求至小數點後第一位。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: '3.3'
+    qwen: '3.3'
+  answer:
+  - '3.3'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_屏東_明正_數學_g8s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 若 $a$、$b$ 均為正整數，且 $a－b＝1$，$a^{2}＋b^{2}＝13$， 則 $ab＝$？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+- id: doc_113_屏東_明正_數學_g8s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 如圖(三)，有一都市規劃的 設計圖為長$4x$ 公尺、寬$x$ 公尺的長方形。已知橫 向開闢的兩條小路寬皆為 1 公尺，縱向開闢的三條小路寬皆為3
+    公尺， 則剩下灰色的建築預定地面積＝？
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_屏東_明正_數學_g8s1e1/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 504.65
+      - 377.67
+      - 709.53
+      - 483.71
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+- id: doc_113_屏東_明正_數學_g8s1e1_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 2
+  stem: 若$x＋y$ 的正平方根是 5，$x－y$ 的負平方根是$-3$， 則$x^{2}－y^{2}＝$？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+- id: doc_113_屏東_明正_數學_g8s1e1_s3_4
+  section: 3
+  number: 4
+  type: calc
+  page: 2
+  stem: 已知$a$ 為正整數，若要讓 $\sqrt{47 - a}$ 為整數，則$a$ 的所有可能值有幾個？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai

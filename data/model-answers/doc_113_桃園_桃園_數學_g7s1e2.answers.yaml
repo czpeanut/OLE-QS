@@ -1,0 +1,314 @@
+source: data/bank/doc_113_桃園_桃園_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_桃園_桃園_數學_g7s1e2_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 甲數減 5 為 15 和 21 的公倍數，[15, 21] = 105，因甲數介於 50 與 150 之間，故甲數為 105 +
+        5 = 110。110 除以 11 的餘數為 0。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 相異的兩個質數，其公因數只有1，因此最大公因數必為1，兩數一定互質。(A)的反例為4+5=9（合數）；(B)的0、1與負整數既非質數也非合數；(C)的反例為2+1=3（質數）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 將各數進行質因數分解：4=2²、5=5、6=2×3、7=7、8=2³。P 的質因數有 2、3、5、7，共 4 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 在步驟一中已將大於2的所有偶數（2的倍數）刪除，因此經過這兩步驟後，除了2以外，所有留下的數必然都是奇數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 計算得 $A = \frac{19}{21}$、$B = 4$、$C = 11$，大小關係為 $C > B > A$。因此「算式A的值最大」為「否」，「算式B的值最小」亦為「否」，最後到達「丁」。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 將全部收入視為 1，扣除生活費與給媽媽的錢後，投資占收入的比例為 $1 - \frac{1}{3} - \frac{1}{5} =
+        \frac{15}{15} - \frac{5}{15} - \frac{3}{15} = \frac{7}{15}$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s1_9
+  number: 9
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 該短除法過程是求三個數最小公倍數的方法（當有兩數具有公因數時繼續短除，無法整除者直接落下，直到三數兩兩互質），因此三個數的最小公倍數為
+        2 × 3² × 7 × 1 × 11 × 10，丁的敘述正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中標示 a、b、c 及刻度的完整數線圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「如圖」，但數線圖遺失且文字未能完整顯示 a、b、c 與原點及各刻度的確切相對位置，無法進行數值大小比較。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中標示 a、b、c 及刻度的完整數線圖
+- id: doc_113_桃園_桃園_數學_g7s1e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^2×3×5×13×31
+      reasoning: 將兩數進行質因數分解：52×465 = 2^2×3×5×13×31，13×5×31×4 = 2^2×5×13×31。取兩數的最小公倍數即為
+        2^2×3×5×13×31。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '11'
+      reasoning: 一大包除以13餘6，一小包除以13餘4，則2大包和3小包的總餘數為 2×6 + 3×4 = 24。24除以13得餘數為11。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '2'
+      - '5'
+      - '27'
+      reasoning: 因為 $2A+1$ 為 110 的正奇數因數且大於 1，故 $2A+1$ 可為 5、11、55，解得正整數 $A$ 為 2、5、27。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-42'
+      reasoning: 五個數為 -2/3、7/2、5/3、-3、4。欲求最小乘積，需為負數且絕對值最大，故選取絕對值最大的負數 -3 與最大的兩個正數
+        4、7/2 相乘，得 (-3) × 4 × (7/2) = -42。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - <
+      - '>'
+      reasoning: (1) 正數中 217/256 > 217/257，加上負號後大小相反，故填 <。(2) 正數中 5/6 = 20/24 < 7/8
+        = 21/24，加上負號後大小相反，故填 >。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 4\frac{1}{2}
+      - '0'
+      reasoning: (1) 原式拆括號後為 1又2/3 + 3又5/6 - (15又1/4 - 14又1/4) = 5又1/2 - 1 = 4又1/2。(2)
+        前半部括號 4又1/3 + 11又1/6 - 15又1/2 = 15又1/2 - 15又1/2 = 0，0 乘以任何數皆為 0。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s2_8
+  number: 8
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '8'
+      reasoning: 由數線可知點由左至右依序為 A、B、C、D，因此 AB + BC + CD = AD。線段長度 AD = D - A = 4 5/6
+        - (-3 1/6) = 8。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{13}{36}
+      reasoning: 設分子為 $x$，由 $\frac{x-5}{36} = \frac{2}{9} = \frac{8}{36}$ 可得 $x-5=8$，解得
+        $x=13$，故原分數為 $\frac{13}{36}$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '777777'
+      reasoning: 根據規律，12345654321為111111的平方，連續7個奇數和為7的平方，相乘得到(111111×7)^2 = 777777^2，故a
+        = 777777。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '43'
+      - 71、83
+      reasoning: (1) 拿仙女棒的學生編號為首項2、公差3的等差數列，末項為128，項數為(128-2)/3 + 1 = 43位。(2) 同時拿到仙女棒與甩炮的編號滿足除以3餘2且除以4餘3，通式為12k+11，在70至90之間的號碼為71與83。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 73元
+      - 4%
+      - 麥脆雞腿堡
+      reasoning: (1) 69×(1+6%)=73.14，四捨五入至整數為73元。(2) 漲幅為(130-125)/125×100%=4%。(3)
+        各餐點皆調漲3元，原價最低的麥脆雞腿堡(52元)漲幅3/52最高。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s3_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '6'
+      reasoning: 最後一圈拿到麵包代表圈數（正因數個數）為奇數，而正因數個數為奇數的數必為完全平方數。在1到36中，完全平方數有1、4、9、16、25、36，共6個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e2_s6_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 提供的文字僅為考卷頁尾/表頭資訊，並無任何題目內容可供作答。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目內容

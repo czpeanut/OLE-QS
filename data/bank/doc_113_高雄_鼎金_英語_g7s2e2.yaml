@@ -1,0 +1,1890 @@
+document:
+  grade: 7
+  subject: 英語
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 2
+  city: 高雄
+  school_short: 鼎金
+  school: 高雄市立鼎金國民中學
+  id: doc_113_高雄_鼎金_英語_g7s2e2
+  title: 高雄市立鼎金國民中學 113學年度第2學期第2次定期評量 7年級英語科試題
+  exam_name: 113學年度第2學期第2次定期評量
+  sections:
+  - ord: 1
+    name: '一、文法選擇 : 20% (每題1 分)'
+    count: 20
+  - ord: 2
+    name: 二、克漏字選擇 (8% 每題2 分)
+    count: 4
+  - ord: 3
+    name: 二、閱讀素養題 (20% 每題2 分)
+    count: 10
+  - ord: 4
+    name: 四、單字 (5% 每題1 分)
+    count: 5
+  - ord: 5
+    name: 五、文意字彙 (10% 每題2 分)
+    count: 5
+  - ord: 6
+    name: 六、改寫句子 (12 % 每題3 分/每個小錯扣0.5 分)
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/英文/113/2-2/高雄/鼎金.pdf
+  chapter_index:
+    kind: english_topics
+    model: gemini-3.1-flash-lite(batch)
+questions:
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: Look at the picture. What is the boy doing?
+  options:
+  - label: A
+    content: making pancakes
+  - label: B
+    content: doing the dishes
+  - label: C
+    content: eating noodles
+  - label: D
+    content: mopping the floor
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_113_高雄_鼎金_英語_g7s2e2/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 308.59
+      - 136.35
+      - 437.54
+      - 238.26
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B1-13
+      title: 現在進行式（be+Ving）+ What are you doing?
+      chapter: B1 七上
+    textbook: 七下 英語 現在進行式（be+Ving）+ What are you doing?
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: You must practice every day ______ you win the game.
+  options:
+  - label: A
+    content: until
+  - label: B
+    content: 'on'
+  - label: C
+    content: X
+  - label: D
+    content: for
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: G0
+      title: 其他文法（不在列表中的文法點）
+      chapter: 綜合
+    textbook: 七下 英語 其他文法（不在列表中的文法點）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 'Mom: Dear, dinner’s ________. Are you hungry? Son: Yeah, I can’t wait to
+    eat.'
+  options:
+  - label: A
+    content: ready
+  - label: B
+    content: good
+  - label: C
+    content: full
+  - label: D
+    content: right
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 'Ian: Are these shoes yours? Bella: Yes, they are _____________.'
+  options:
+  - label: A
+    content: my
+  - label: B
+    content: his
+  - label: C
+    content: yours
+  - label: D
+    content: ours
+  ai_answers:
+    gemini: D
+    qwen: C
+    gemini_high: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:majority
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B1-05
+      title: 所有格形容詞（my/your/his/her/its/our/their）+ 所有格's
+      chapter: B1 七上
+    textbook: 七下 英語 所有格形容詞（my/your/his/her/its/our/their）+ 所有格's
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 'Mandy: ___________ flour do we need to make a pie? Is one cup enough? Tracy:
+    No. One bag, please.'
+  options:
+  - label: A
+    content: How many
+  - label: B
+    content: How much
+  - label: C
+    content: What
+  - label: D
+    content: Which
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-06
+      title: How many / How much 問答句
+      chapter: B2 七下
+    textbook: 七下 英語 How many / How much 問答句
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: Today is December 1st. New Year’s Day is still _________.
+  options:
+  - label: A
+    content: away a year
+  - label: B
+    content: a month away
+  - label: C
+    content: two months away
+  - label: D
+    content: away two days
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-04
+      title: 序數 + 日期表達（What's the date?）
+      chapter: B2 七下
+    textbook: 七下 英語 序數 + 日期表達（What's the date?）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 'A: ___________ do you want, iced fruit tea or juice? B: I want both. I’m
+    too thirsty.'
+  options:
+  - label: A
+    content: What
+  - label: B
+    content: Whose
+  - label: C
+    content: When
+  - label: D
+    content: Which
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-09
+      title: Wh-疑問句（含過去式）
+      chapter: B2 七下
+    textbook: 七下 英語 Wh-疑問句（含過去式）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 'Max: _____ bottles of water does Tim have? Linda: He has three.'
+  options:
+  - label: A
+    content: What
+  - label: B
+    content: How many
+  - label: C
+    content: How much
+  - label: D
+    content: Which
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-06
+      title: How many / How much 問答句
+      chapter: B2 七下
+    textbook: 七下 英語 How many / How much 問答句
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: How much butter_____ in the kitchen?
+  options:
+  - label: A
+    content: are they
+  - label: B
+    content: is it
+  - label: C
+    content: is there
+  - label: D
+    content: are there
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B1-15
+      title: There is/are（肯定/否定/問答）+ some/any
+      chapter: B1 七上
+    textbook: 七下 英語 There is/are（肯定/否定/問答）+ some/any
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: For making the cupcake, we need ________ sugar and two__________.
+  options:
+  - label: A
+    content: many ; eggs
+  - label: B
+    content: some ; eggs
+  - label: C
+    content: much ; egg
+  - label: D
+    content: a little ; egg
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-05
+      title: 可數/不可數名詞 + 數量形容詞（many/much/a few/a little/some/any）
+      chapter: B2 七下
+    textbook: 七下 英語 可數/不可數名詞 + 數量形容詞（many/much/a few/a little/some/any）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 1
+  stem: 'A: Is Kelly the first girl in the line? B: No, she is ________ girl. She
+    is sitting between Alice and Betty.'
+  options:
+  - label: A
+    content: the second
+  - label: B
+    content: the third
+  - label: C
+    content: the first
+  - label: D
+    content: last
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-04
+      title: 序數 + 日期表達（What's the date?）
+      chapter: B2 七下
+    textbook: 七下 英語 序數 + 日期表達（What's the date?）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 1
+  stem: 'Ben: Let’s _____ two eggs, some salt and a cup of milk ______ the bowl. Mia
+    : Sure. It’s easy for me.'
+  options:
+  - label: A
+    content: put ; at
+  - label: B
+    content: heat ; up
+  - label: C
+    content: add ; in
+  - label: D
+    content: add ; to
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B1-09
+      title: 祈使句（肯定/Don't否定/Please）
+      chapter: B1 七上
+    textbook: 七下 英語 祈使句（肯定/Don't否定/Please）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_13
+  section: 1
+  number: 13
+  type: single
+  page: 1
+  stem: 'Clerk: How many bowls of rice do you eat a day? Lucy: __________'
+  options:
+  - label: A
+    content: There is one kilogram.
+  - label: B
+    content: Twice a day.
+  - label: C
+    content: One.
+  - label: D
+    content: Two cups are not enough.
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R2
+      title: 對話與情境應答
+      chapter: 綜合
+    textbook: 七下 英語 對話與情境應答
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_14
+  section: 1
+  number: 14
+  type: single
+  page: 1
+  stem: 'Lara: _______ is Thanksgiving this year? Jim: It’s on the fourth Thursday
+    in November.'
+  options:
+  - label: A
+    content: What time
+  - label: B
+    content: Where
+  - label: C
+    content: When
+  - label: D
+    content: What day
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-04
+      title: 序數 + 日期表達（What's the date?）
+      chapter: B2 七下
+    textbook: 七下 英語 序數 + 日期表達（What's the date?）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_15
+  section: 1
+  number: 15
+  type: single
+  page: 1
+  stem: 'Sam: __________ tickets for E-DA Theme Park are these? Alen: They’re Anna’s.'
+  options:
+  - label: A
+    content: Whose
+  - label: B
+    content: When
+  - label: C
+    content: Who’s
+  - label: D
+    content: Which
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B1-06
+      title: Who問句
+      chapter: B1 七上
+    textbook: 七下 英語 Who問句
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_16
+  section: 1
+  number: 16
+  type: single
+  page: 1
+  stem: Your hands are clean, ______ mine _______ dirty.
+  options:
+  - label: A
+    content: but ; is
+  - label: B
+    content: but ; are
+  - label: C
+    content: and ; is
+  - label: D
+    content: or ; are
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-12
+      title: 連接詞 because/so + Why問句
+      chapter: B2 七下
+    textbook: 七下 英語 連接詞 because/so + Why問句
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_17
+  section: 1
+  number: 17
+  type: single
+  page: 1
+  stem: 'A: ______________? B: Yes. I want two pieces.'
+  options:
+  - label: A
+    content: What do you want?
+  - label: B
+    content: Do you want some cake?
+  - label: C
+    content: Which do you have?
+  - label: D
+    content: Are you ready for the game?
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R2
+      title: 對話與情境應答
+      chapter: 綜合
+    textbook: 七下 英語 對話與情境應答
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_18
+  section: 1
+  number: 18
+  type: single
+  page: 1
+  stem: 'A: Isn’t the class party in March? B: _________'
+  options:
+  - label: A
+    content: Yes, it ‘s in August.
+  - label: B
+    content: No, it’s at three p.m.
+  - label: C
+    content: January twelfth is Monday.
+  - label: D
+    content: No, it’s on July fifth.
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R2
+      title: 對話與情境應答
+      chapter: 綜合
+    textbook: 七下 英語 對話與情境應答
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_19
+  section: 1
+  number: 19
+  type: single
+  page: 1
+  stem: There are five _________.
+  options:
+  - label: A
+    content: glasses of water
+  - label: B
+    content: rice on the floor
+  - label: C
+    content: juice on the table
+  - label: D
+    content: bag of salt here
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-05
+      title: 可數/不可數名詞 + 數量形容詞（many/much/a few/a little/some/any）
+      chapter: B2 七下
+    textbook: 七下 英語 可數/不可數名詞 + 數量形容詞（many/much/a few/a little/some/any）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s1_20
+  section: 1
+  number: 20
+  type: single
+  page: 1
+  stem: Which sentence is correct? (選出正確的句子)
+  options:
+  - label: A
+    content: Christmas is in December 25th.
+  - label: B
+    content: The class meeting is at Friday.
+  - label: C
+    content: Today is May 7th, 2025.
+  - label: D
+    content: Our family dinner is on 6 p.m.
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-04
+      title: 序數 + 日期表達（What's the date?）
+      chapter: B2 七下
+    textbook: 七下 英語 序數 + 日期表達（What's the date?）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s2_21
+  section: 2
+  number: 21
+  type: single
+  page: 2
+  stem: （克漏字第21格）
+  options:
+  - label: A
+    content: with
+  - label: B
+    content: for
+  - label: C
+    content: in
+  - label: D
+    content: of
+  group_stem: 'Dear Mom,
+
+    Thanks 21 everything. You cook dinner and do the dishes for me every day. Also,
+    you always 22 me when I am sick. You help me with my math and English homework.
+    You mean 23 to me. Today is 24 . I love you !
+
+    Yours,
+
+    Rita'
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
+    textbook: 七下 英語 片語與慣用語
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s2_22
+  section: 2
+  number: 22
+  type: single
+  page: 2
+  stem: （克漏字第22格）
+  options:
+  - label: A
+    content: take care of
+  - label: B
+    content: wait for
+  - label: C
+    content: wake up
+  - label: D
+    content: take out
+  group_stem: 'Dear Mom,
+
+    Thanks 21 everything. You cook dinner and do the dishes for me every day. Also,
+    you always 22 me when I am sick. You help me with my math and English homework.
+    You mean 23 to me. Today is 24 . I love you !
+
+    Yours,
+
+    Rita'
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
+    textbook: 七下 英語 片語與慣用語
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s2_23
+  section: 2
+  number: 23
+  type: single
+  page: 2
+  stem: （克漏字第23格）
+  options:
+  - label: A
+    content: a little
+  - label: B
+    content: a lot
+  - label: C
+    content: a lot of
+  - label: D
+    content: a few
+  group_stem: 'Dear Mom,
+
+    Thanks 21 everything. You cook dinner and do the dishes for me every day. Also,
+    you always 22 me when I am sick. You help me with my math and English homework.
+    You mean 23 to me. Today is 24 . I love you !
+
+    Yours,
+
+    Rita'
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s2_24
+  section: 2
+  number: 24
+  type: single
+  page: 2
+  stem: （克漏字第24格）
+  options:
+  - label: A
+    content: Christmas
+  - label: B
+    content: Easter
+  - label: C
+    content: Mother’s Day
+  - label: D
+    content: Halloween
+  group_stem: 'Dear Mom,
+
+    Thanks 21 everything. You cook dinner and do the dishes for me every day. Also,
+    you always 22 me when I am sick. You help me with my math and English homework.
+    You mean 23 to me. Today is 24 . I love you !
+
+    Yours,
+
+    Rita'
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_25
+  section: 3
+  number: 25
+  type: single
+  page: 2
+  stem: What is the topic of the reading?  topic 主題
+  options:
+  - label: A
+    content: Mistakes in life.
+  - label: B
+    content: Special days around the world.
+  - label: C
+    content: People’s favorite holidays.
+  - label: D
+    content: People’s lives with their pets.
+  group_stem: 'Hey everyone! How are you ? Do you like holidays? I want to share some
+    cool holidays with you.
+
+
+    Who loves pizza? On February 9th, it’s National Pizza Day! You can eat your favorite
+    pizza with your friends and family.
+
+
+    July is really hot, right? Eating ice cream is a great way to cool down. The third
+    Sunday of July is National Ice Cream Day!
+
+
+    Let’s talk about smiles! The first Friday of October is World Smile Day. Smile
+    at others and do something nice to make people happy.
+
+
+    Do you love pets? April 11th is National Pet Day! It’s a great day to play with
+    your animal friends and take them for a walk.
+
+
+    Wait—there’s a day for failure? Yes, it’s true! October 13th is International
+    Day for Failure! Making mistakes is fine. It’s a part of learning and growing!
+
+
+    Do you want to know more about cool holidays? Let me know! 
+
+     share 分享 national 國家的 favorite 最喜歡的 smile 微笑 failure 失敗 international 國際的 mistake
+    錯誤 grow 成長'
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_26
+  section: 3
+  number: 26
+  type: single
+  page: 2
+  stem: 'According to the reading, what is the correct order of the holidays?  according
+    to 根據 order 順序
+
+    ❶ National Pet Day ❹ National Ice Cream Day
+
+    ❷ World Smile Day ❺ International Day for Failure
+
+    ❸ National Pizza Day'
+  options:
+  - label: A
+    content: ❶❷❸❹❺
+  - label: B
+    content: ❷❺❸❹❶
+  - label: C
+    content: ❸❶❷❹❺
+  - label: D
+    content: ❸❶❹❷❺
+  group_stem: 'Hey everyone! How are you ? Do you like holidays? I want to share some
+    cool holidays with you.
+
+
+    Who loves pizza? On February 9th, it’s National Pizza Day! You can eat your favorite
+    pizza with your friends and family.
+
+
+    July is really hot, right? Eating ice cream is a great way to cool down. The third
+    Sunday of July is National Ice Cream Day!
+
+
+    Let’s talk about smiles! The first Friday of October is World Smile Day. Smile
+    at others and do something nice to make people happy.
+
+
+    Do you love pets? April 11th is National Pet Day! It’s a great day to play with
+    your animal friends and take them for a walk.
+
+
+    Wait—there’s a day for failure? Yes, it’s true! October 13th is International
+    Day for Failure! Making mistakes is fine. It’s a part of learning and growing!
+
+
+    Do you want to know more about cool holidays? Let me know! 
+
+     share 分享 national 國家的 favorite 最喜歡的 smile 微笑 failure 失敗 international 國際的 mistake
+    錯誤 grow 成長'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 87%）
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_27
+  section: 3
+  number: 27
+  type: single
+  page: 3
+  stem: What is the main idea of the reading?  main 主要的
+  options:
+  - label: A
+    content: Those apples are delicious.
+  - label: B
+    content: We need two cups of white sugar.
+  - label: C
+    content: There are six candy apples on the table.
+  - label: D
+    content: You can make candy apples in five easy steps.
+  group_stem: 'Recipes  Halloween  Sweets
+
+    Candy Apples
+
+    By Sarah Bond on Sep 13, 2025
+
+
+    | Prep Time: | Cook Time: | Total Time: |
+
+    | :--- | :--- | :--- |
+
+    | 10 mins | 30 mins | 40 mins |
+
+
+    Candy apples are sweet and delicious. You can make them, too. It is not hard!
+    *hard 難的
+
+     First, wash six apples, and put the sticks into the apples.
+
+     Then, put two cups of white sugar and a cup of water in a round pan.
+
+     Third, heat the pan and melt the sugar.
+
+     Next, dip your apples into the pan.
+
+    (Don’t touch the sugar water. It is VERY hot.)
+
+     Last, cool the apples for a few minutes, and they are ready!
+
+    You see? It is easy. Just a little time in the kitchen and you can enjoy your
+    delicious candy apples!
+
+     recipe 食譜 sweet 甜食／甜的 candy 糖果 prep time 準備時間 total 總共的 stick 木棍 melt 融化'
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_28
+  section: 3
+  number: 28
+  type: single
+  page: 3
+  stem: What does “dip” mean in the reading?  mean 意指
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: optA
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_28_optA.png
+      crop:
+        page: 3
+        rect:
+        - 114.77
+        - 510.97
+        - 242.27
+        - 600.5
+  - label: B
+    content: ''
+    asset:
+      key: optB
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_28_optB.png
+      crop:
+        page: 3
+        rect:
+        - 313.69
+        - 510.97
+        - 442.64
+        - 600.5
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_28_optC.png
+      crop:
+        page: 3
+        rect:
+        - 114.77
+        - 619.33
+        - 242.99
+        - 708.86
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_28_optD.png
+      crop:
+        page: 3
+        rect:
+        - 313.69
+        - 619.33
+        - 441.91
+        - 708.86
+  group_stem: 'Recipes  Halloween  Sweets
+
+    Candy Apples
+
+    By Sarah Bond on Sep 13, 2025
+
+
+    | Prep Time: | Cook Time: | Total Time: |
+
+    | :--- | :--- | :--- |
+
+    | 10 mins | 30 mins | 40 mins |
+
+
+    Candy apples are sweet and delicious. You can make them, too. It is not hard!
+    *hard 難的
+
+     First, wash six apples, and put the sticks into the apples.
+
+     Then, put two cups of white sugar and a cup of water in a round pan.
+
+     Third, heat the pan and melt the sugar.
+
+     Next, dip your apples into the pan.
+
+    (Don’t touch the sugar water. It is VERY hot.)
+
+     Last, cool the apples for a few minutes, and they are ready!
+
+    You see? It is easy. Just a little time in the kitchen and you can enjoy your
+    delicious candy apples!
+
+     recipe 食譜 sweet 甜食／甜的 candy 糖果 prep time 準備時間 total 總共的 stick 木棍 melt 融化'
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_29
+  section: 3
+  number: 29
+  type: single
+  page: 4
+  stem: Kelly is watching this video on YouTube. What can she learn from it?
+  options:
+  - label: A
+    content: An easy way to make ice cream.
+  - label: B
+    content: Some facts about ice cream.
+  - label: C
+    content: Steps to make strawberry yogurt.
+  - label: D
+    content: Ice cream from around the world.
+  group_stem: '(Andy is a YouTuber, and he is making a video.)
+
+    Welcome to Yummy in Minutes.
+
+    I’m Andy. Today, we are going to make something fun and easy—Shake-It Ice Cream!
+
+    Here’s what you need:
+
+    • 2 cups of yogurt • Ice cubes (a lot!)
+
+    • 2 tablespoons of sugar • 500 grams of strawberries
+
+    • 1 cup of salt • A small bag and a big bag
+
+    Let’s start!
+
+    1. Put the yogurt, sugar, and strawberries in the small bag. Seal it.
+
+    2. Put ice cubes in the big bag. Add the salt on top.
+
+    3. Put the small bag inside the big bag. Seal the big bag.
+
+    Now, shake the bags! Just keep shaking for 5 minutes. The small bag will get cold.
+    You can see what’s happening here, guys, right? When you’re done, open the big
+    bag. Dry the small bag, so no saltwater gets in it. Then open the small bag—your
+    ice cream is ready!
+
+    This is great for kids or parties. Alright, go make some ice cream, and I will
+    see you next time on Yummy in Minutes!
+
+    * tablespoon 一大匙的量
+
+     shake 搖晃 yogurt 優格 ice cube 冰塊 seal 密封 top 頂部 will 將會 done 完成的 dry（使）變乾'
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_30
+  section: 3
+  number: 30
+  type: single
+  page: 4
+  stem: Which is right?
+  options:
+  - label: A
+    content: '- yogurt
+
+      - strawberries
+
+      - ice cubes
+
+
+      - salt'
+    asset:
+      key: optA
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_30_optA.png
+      crop:
+        page: 4
+        rect:
+        - 111.85
+        - 274.64
+        - 277.24
+        - 380.68
+  - label: B
+    content: '- yogurt
+
+      - sugar
+
+
+      - ice cubes
+
+      - strawberries'
+    asset:
+      key: optB
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_30_optB.png
+      crop:
+        page: 4
+        rect:
+        - 325.35
+        - 277.74
+        - 502.39
+        - 380.68
+  - label: C
+    content: '- yogurt
+
+      - strawberries
+
+      - sugar
+
+
+      - ice cubes
+
+      - salt'
+    asset:
+      key: optC
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_30_optC.png
+      crop:
+        page: 4
+        rect:
+        - 113.31
+        - 387.13
+        - 294.73
+        - 490.07
+  - label: D
+    content: '- ice cubes
+
+      - salt
+
+
+      - yogurt
+
+      - strawberries
+
+      - sugar'
+    asset:
+      key: optD
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_30_optD.png
+      crop:
+        page: 4
+        rect:
+        - 325.35
+        - 386.1
+        - 487.09
+        - 490.07
+  group_stem: '(Andy is a YouTuber, and he is making a video.)
+
+    Welcome to Yummy in Minutes.
+
+    I’m Andy. Today, we are going to make something fun and easy—Shake-It Ice Cream!
+
+    Here’s what you need:
+
+    • 2 cups of yogurt • Ice cubes (a lot!)
+
+    • 2 tablespoons of sugar • 500 grams of strawberries
+
+    • 1 cup of salt • A small bag and a big bag
+
+    Let’s start!
+
+    1. Put the yogurt, sugar, and strawberries in the small bag. Seal it.
+
+    2. Put ice cubes in the big bag. Add the salt on top.
+
+    3. Put the small bag inside the big bag. Seal the big bag.
+
+    Now, shake the bags! Just keep shaking for 5 minutes. The small bag will get cold.
+    You can see what’s happening here, guys, right? When you’re done, open the big
+    bag. Dry the small bag, so no saltwater gets in it. Then open the small bag—your
+    ice cream is ready!
+
+    This is great for kids or parties. Alright, go make some ice cream, and I will
+    see you next time on Yummy in Minutes!
+
+    * tablespoon 一大匙的量
+
+     shake 搖晃 yogurt 優格 ice cube 冰塊 seal 密封 top 頂部 will 將會 done 完成的 dry（使）變乾'
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_31
+  section: 3
+  number: 31
+  type: single
+  page: 4
+  stem: How many languages do people in Japan want to learn?
+  options:
+  - label: A
+    content: One
+  - label: B
+    content: Two
+  - label: C
+    content: Three or more
+  - label: D
+    content: None
+  group_stem: 'Japanese Use AI to Learn Languages
+
+    Many people in Japan want to learn new languages. Some people learn English, and
+    some learn Chinese or Korean. Now, they use AI tools to help them. AI can listen,
+    speak, and check grammar. It helps people practice every day.
+
+    Many students use AI apps on their phones. Some workers use AI on computers or
+    ipads. AI can also be a teacher. It can ask questions and give answers. People
+    like AI because it is fast and easy to use.
+
+    In 2023, many schools in Japan started to use AI in English classes. Some teachers
+    think AI is good, but some teachers do not like it. They say students must talk
+    to real people too.
+
+    * language 語言 grammar 文法 computer 電腦'
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_32
+  section: 3
+  number: 32
+  type: single
+  page: 5
+  stem: 'Look at the picture below. What does the bar graph (柱狀圖)
+
+    show about students'' study habits?'
+  options:
+  - label: A
+    content: Most students study for 1-2 hours a day. * most 大多數
+  - label: B
+    content: Most students study for more than 5 hours a day.
+  - label: C
+    content: No students use AI for studying.
+  - label: D
+    content: AI makes students study less. * less 較少的
+  group_stem: 'Japanese Use AI to Learn Languages
+
+    Many people in Japan want to learn new languages. Some people learn English, and
+    some learn Chinese or Korean. Now, they use AI tools to help them. AI can listen,
+    speak, and check grammar. It helps people practice every day.
+
+    Many students use AI apps on their phones. Some workers use AI on computers or
+    ipads. AI can also be a teacher. It can ask questions and give answers. People
+    like AI because it is fast and easy to use.
+
+    In 2023, many schools in Japan started to use AI in English classes. Some teachers
+    think AI is good, but some teachers do not like it. They say students must talk
+    to real people too.
+
+    * language 語言 grammar 文法 computer 電腦'
+  assets:
+  - key: s3_32_f1
+    kind: figure
+    file: doc_113_高雄_鼎金_英語_g7s2e2/s3_32_f1.png
+    crop:
+      page: 5
+      rect:
+      - 390.19
+      - 32.12
+      - 559.22
+      - 196.98
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_33
+  section: 3
+  number: 33
+  type: single
+  page: 5
+  stem: Why do some teachers not like AI in language learning?
+  options:
+  - label: A
+    content: AI is too slow.
+  - label: B
+    content: AI cannot help students with speaking.
+  - label: C
+    content: AI is not good at grammar.
+  - label: D
+    content: AI cannot replace real conversations. *replace 取代
+  group_stem: 'Japanese Use AI to Learn Languages
+
+    Many people in Japan want to learn new languages. Some people learn English, and
+    some learn Chinese or Korean. Now, they use AI tools to help them. AI can listen,
+    speak, and check grammar. It helps people practice every day.
+
+    Many students use AI apps on their phones. Some workers use AI on computers or
+    ipads. AI can also be a teacher. It can ask questions and give answers. People
+    like AI because it is fast and easy to use.
+
+    In 2023, many schools in Japan started to use AI in English classes. Some teachers
+    think AI is good, but some teachers do not like it. They say students must talk
+    to real people too.
+
+    * language 語言 grammar 文法 computer 電腦'
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s3_34
+  section: 3
+  number: 34
+  type: single
+  page: 5
+  stem: Which of the following is NOT an AI tool for language learning?
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: optA
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_34_optA.png
+      crop:
+        page: 5
+        rect:
+        - 44.82
+        - 337.59
+        - 210.21
+        - 485.94
+  - label: B
+    content: ''
+    asset:
+      key: optB
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_34_optB.png
+      crop:
+        page: 5
+        rect:
+        - 206.58
+        - 336.56
+        - 370.51
+        - 485.94
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_34_optC.png
+      crop:
+        page: 5
+        rect:
+        - 367.61
+        - 337.59
+        - 528.62
+        - 486.98
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_113_高雄_鼎金_英語_g7s2e2/3_34_optD.png
+      crop:
+        page: 5
+        rect:
+        - 525.72
+        - 336.56
+        - 690.38
+        - 486.98
+  group_stem: 'Japanese Use AI to Learn Languages
+
+    Many people in Japan want to learn new languages. Some people learn English, and
+    some learn Chinese or Korean. Now, they use AI tools to help them. AI can listen,
+    speak, and check grammar. It helps people practice every day.
+
+    Many students use AI apps on their phones. Some workers use AI on computers or
+    ipads. AI can also be a teacher. It can ask questions and give answers. People
+    like AI because it is fast and easy to use.
+
+    In 2023, many schools in Japan started to use AI in English classes. Some teachers
+    think AI is good, but some teachers do not like it. They say students must talk
+    to real people too.
+
+    * language 語言 grammar 文法 computer 電腦'
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: R1
+      title: 閱讀理解（短文、書信、圖表、廣告）
+      chapter: 綜合
+    textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s4_1
+  section: 4
+  number: 1
+  type: fill
+  page: 5
+  stem: 忙碌的 _______
+  ai_answers:
+    gemini: busy
+    qwen: busy
+  answer:
+  - busy
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s4_2
+  section: 4
+  number: 2
+  type: fill
+  page: 5
+  stem: 想念 ________
+  ai_answers:
+    gemini: miss
+    qwen: miss
+  answer:
+  - miss
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s4_3
+  section: 4
+  number: 3
+  type: fill
+  page: 5
+  stem: 信件________
+  ai_answers:
+    gemini: letter
+    qwen: letter
+  answer:
+  - letter
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s4_4
+  section: 4
+  number: 4
+  type: fill
+  page: 5
+  stem: 賽跑 _________
+  ai_answers:
+    gemini: race
+    qwen: race
+  answer:
+  - race
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s4_5
+  section: 4
+  number: 5
+  type: fill
+  page: 5
+  stem: 九月 ________
+  ai_answers:
+    gemini: September
+    qwen: September
+  answer:
+  - September
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s5_1
+  section: 5
+  number: 1
+  type: fill
+  page: 5
+  stem: One piece of bread is not e________h for me. I eat like a horse.
+  ai_answers:
+    gemini: enough
+    qwen: enough
+  answer:
+  - enough
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s5_2
+  section: 5
+  number: 2
+  type: fill
+  page: 5
+  stem: 'Son: Mom, can you help me with my math homework? It’s too d t for me. Mom:
+    Okay.'
+  ai_answers:
+    gemini: difficult
+    qwen: difficult
+  answer:
+  - difficult
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s5_3
+  section: 5
+  number: 3
+  type: fill
+  page: 5
+  stem: February is the s d month of the year. It only has 28 0r 29 days.
+  ai_answers:
+    gemini: second
+    qwen: second
+  answer:
+  - second
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-04
+      title: 序數 + 日期表達（What's the date?）
+      chapter: B2 七下
+    textbook: 七下 英語 序數 + 日期表達（What's the date?）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s5_4
+  section: 5
+  number: 4
+  type: fill
+  page: 5
+  stem: A father can also play the r e of a mother and take good care of his family.
+  ai_answers:
+    gemini: role
+    qwen: role
+  answer:
+  - role
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V1
+      title: 字彙（詞義、拼字、詞性變化）
+      chapter: 綜合
+    textbook: 七下 英語 字彙（詞義、拼字、詞性變化）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s5_5
+  section: 5
+  number: 5
+  type: fill
+  page: 5
+  stem: Can I go to the baseball game on May 3rd? Of c e. Let’s meet at Chengcing
+    Lake Baseball Stadium at 5:30 p.m. (澄清湖棒球場)
+  ai_answers:
+    gemini: course
+    qwen: course
+  answer:
+  - course
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: V2
+      title: 片語與慣用語
+      chapter: 綜合
+    textbook: 七下 英語 片語與慣用語
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s6_1
+  section: 6
+  number: 1
+  type: essay
+  page: 5
+  stem: What is the date today? (依事實回答)
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-04
+      title: 序數 + 日期表達（What's the date?）
+      chapter: B2 七下
+    textbook: 七下 英語 序數 + 日期表達（What's the date?）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s6_2
+  section: 6
+  number: 2
+  type: essay
+  page: 5
+  stem: The man has one piece of pie for lunch. (依畫線部分造原問句)
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-06
+      title: How many / How much 問答句
+      chapter: B2 七下
+    textbook: 七下 英語 How many / How much 問答句
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s6_3
+  section: 6
+  number: 3
+  type: essay
+  page: 5
+  stem: are / brown / until/ sides. /on / Wait / the / both / pancakes / (重組句子)
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B1-09
+      title: 祈使句（肯定/Don't否定/Please）
+      chapter: B1 七上
+    textbook: 七下 英語 祈使句（肯定/Don't否定/Please）
+    labeled_by: ai
+- id: doc_113_高雄_鼎金_英語_g7s2e2_s6_4
+  section: 6
+  number: 4
+  type: essay
+  page: 5
+  stem: Judy needs three oranges. （將畫線部分改為「三瓶柳橙汁」）
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 英語
+      code: B2-05
+      title: 可數/不可數名詞 + 數量形容詞（many/much/a few/a little/some/any）
+      chapter: B2 七下
+    textbook: 七下 英語 可數/不可數名詞 + 數量形容詞（many/much/a few/a little/some/any）
+    labeled_by: ai

@@ -1,0 +1,759 @@
+document:
+  grade: 9
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 高雄
+  school_short: 楠梓
+  school: 高雄市立楠梓國民中學
+  id: doc_113_高雄_楠梓_數學_g9s1e2
+  title: 高雄市立楠梓國民中學 113學年度第1學期第2次定期評量 9年級數學科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題（每題4 分，共20 分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（每格4 分，共64 分）
+    count: 13
+  - ord: 3
+    name: 三、計算題（12 分，只有答案但未列過程不給分）
+    count: 2
+  - ord: 4
+    name: 四、挑戰題（每格2 分，共4 分）
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國三/數學/113/1-2/高雄/楠梓.pdf
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列敘述何者正確？
+  options:
+  - label: A
+    content: 對同弧的圓心角度數等於圓周角度數
+  - label: B
+    content: 圓內接四邊形的對角互補
+  - label: C
+    content: 過圓外一點對此圓可以作出無限多條切線
+  - label: D
+    content: 圓中的弦愈長，其所對應的弦心距也愈大
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-2
+      title: 圓心角與圓周角
+      chapter: 第2章 圓形
+    textbook: 九上 2-2 圓心角與圓周角
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 在兩個相似三角形中，下列敘述何者錯誤？
+  options:
+  - label: A
+    content: 對應高的比＝對應邊的比
+  - label: B
+    content: 對應周長的比＝對應邊的比
+  - label: C
+    content: 面積的比＝對應邊的比
+  - label: D
+    content: 對應邊會成比例
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 如右圖，直角 $\triangle ABC$ 中，$\angle C=90^{\circ}$，則下列敘述何者正確？
+  options:
+  - label: A
+    content: $\sin A=\frac{5}{13}$
+  - label: B
+    content: $\cos A=\frac{12}{13}$
+  - label: C
+    content: $\tan A=\frac{5}{12}$
+  - label: D
+    content: $\sin A=\cos B$
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 562.58
+      - 248.73
+      - 686.29
+      - 316.8
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-4
+      title: 相似三角形的應用與三角比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-4 相似三角形的應用與三角比
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 若圓 O 的半徑為 5，圓心到四條直線 $L_{1}$、$L_{2}$、$L_{3}$、$L_{4}$ 的距離分別為 $3\sqrt{3}$、5、6、$2\sqrt{6}$，則此四條直線中，哪一條是割線？
+  options:
+  - label: A
+    content: $L_{1}$
+  - label: B
+    content: $L_{2}$
+  - label: C
+    content: $L_{3}$
+  - label: D
+    content: $L_{4}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-1
+      title: 點、線、圓
+      chapter: 第2章 圓形
+    textbook: 九上 2-1 點、線、圓
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 如右圖，已知 A、B、C 三點皆在圓 O 上，$\angle ABC=62^{\circ}$，則 $\angle OCA=$
+  options:
+  - label: A
+    content: 28°
+  - label: B
+    content: 56°
+  - label: C
+    content: 31°
+  - label: D
+    content: 26°
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s1_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 581.56
+      - 358.04
+      - 684.65
+      - 460.15
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-2
+      title: 圓心角與圓周角
+      chapter: 第2章 圓形
+    textbook: 九上 2-2 圓心角與圓周角
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 若一扇形的面積為 $54\pi$ 平方公分，半徑 12 公分，則此扇形的圓心角為___________度
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-2
+      title: 圓心角與圓周角
+      chapter: 第2章 圓形
+    textbook: 九上 2-2 圓心角與圓周角
+    labeled_by: ai
+  ai_answers:
+    gemini: '135'
+    qwen: '135'
+  answer:
+  - '135'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 如右圖，若 $\angle AOC=130^{\circ}$，則 $\angle ABC=$___________度
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 591.71
+      - 497.45
+      - 681.71
+      - 589.42
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-2
+      title: 圓心角與圓周角
+      chapter: 第2章 圓形
+    textbook: 九上 2-2 圓心角與圓周角
+    labeled_by: ai
+  ai_answers:
+    gemini: '115'
+    qwen: '115'
+  answer:
+  - '115'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 如下圖(1)，直線 L 與圓 O 相切於 P 點，A 點在直線上且 $\overline{AO}$ 與圓 O 相交於 B 點。已知 $\overline{PA}=16$，$\overline{AB}=8$，則圓
+    O 的半徑為___________
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 56.29
+      - 842.07
+      - 176.73
+      - 948.44
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-1
+      title: 點、線、圓
+      chapter: 第2章 圓形
+    textbook: 九上 2-1 點、線、圓
+    labeled_by: ai
+  ai_answers:
+    gemini: '12'
+    qwen: '12'
+  answer:
+  - '12'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 如下圖(2)，兩同心圓 O，其中大圓的弦 $\overline{AB}$ 切小圓於 C，若 $\overline{AB}=10$，則大圓與小圓之間的環型區域面積為___________
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 184.58
+      - 842.07
+      - 277.53
+      - 946.47
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-1
+      title: 點、線、圓
+      chapter: 第2章 圓形
+    textbook: 九上 2-1 點、線、圓
+    labeled_by: ai
+  ai_answers:
+    gemini: 25\pi
+    qwen: 25\pi
+  answer:
+  - 25\pi
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 如下圖(3)，$\overline{AB}$ 與 $\overline{CD}$ 為圓中的兩弦，且 $\overline{AB}//\overline{CD}$，若
+    $\overgroup{AB}=150^{\circ}$，$\overgroup{CD}=50^{\circ}$，則 $\angle B=$___________度
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 302.73
+      - 832.91
+      - 401.24
+      - 946.47
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-2
+      title: 圓心角與圓周角
+      chapter: 第2章 圓形
+    textbook: 九上 2-2 圓心角與圓周角
+    labeled_by: ai
+  ai_answers:
+    gemini: '40'
+    qwen: '65'
+    gemini_high: '40'
+  answer:
+  - '40'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: '如下圖(4)，$\overline{PA}$、$\overline{PB}$ 切圓 O 於 A、B，則：
+
+    （1）若 $\angle APB=56^{\circ}$，則 $\angle AOB=$___________度，$\angle C=$___________度
+
+    （2）若圓 O 半徑為 5，且 $\overline{PA}=12$，則 $\overline{AB}=$___________，P 到圓 O 的最遠距離是___________'
+  assets:
+  - key: s2_6_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_6_f1.png
+    crop:
+      page: 1
+      rect:
+      - 424.15
+      - 822.44
+      - 564.55
+      - 947.45
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-2
+      title: 圓心角與圓周角
+      chapter: 第2章 圓形
+    textbook: 九上 2-2 圓心角與圓周角
+    labeled_by: ai
+  ai_answers:
+    gemini: 124；62；\frac{120}{13}；18
+    qwen: 124; 62; \frac{120}{13}; 18
+    gemini_high: 124；62；\frac{120}{13}；18
+  answer:
+  - '124'
+  - '62'
+  - \frac{120}{13}
+  - '18'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 如下圖(5)，$\overline{AB}\perp\overline{CD}$，$\overline{AB}$ 是圓 O 的直徑，若 $\overline{BE}=6$，$\overline{CD}=24$，則
+    圓 O 的半徑為___________
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_7_f1.png
+    crop:
+      page: 1
+      rect:
+      - 581.56
+      - 824.4
+      - 680.4
+      - 947.45
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-1
+      title: 點、線、圓
+      chapter: 第2章 圓形
+    textbook: 九上 2-1 點、線、圓
+    labeled_by: ai
+  ai_answers:
+    gemini: '15'
+    qwen: '15'
+  answer:
+  - '15'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 如右圖，$\triangle ABC$ 中，$\overline{AD}$ 為 $\overline{BC}$ 上的高，$\angle B=41^{\circ}$，若
+    $\overline{AB}=10$，$\overline{BC}=12$，則 $\triangle ABC$ 的面積為___________ ($\sin
+    41^{\circ}=0.65$，$\cos 41^{\circ}=0.75$，$\tan 41^{\circ}=0.87$)
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 573.05
+      - 56.62
+      - 685.31
+      - 141.38
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-4
+      title: 相似三角形的應用與三角比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-4 相似三角形的應用與三角比
+    labeled_by: ai
+  ai_answers:
+    gemini: '39'
+    qwen: '39'
+  answer:
+  - '39'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 如下圖(6)，$\triangle ABC$ 中，$\overline{AD}$ 為 $\overline{BC}$ 上的高，$\angle B=45^{\circ}$，$\angle
+    C=30^{\circ}$，若 $\overline{AD}=5$，則 $\triangle ABC$ 的周長為___________
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 45.49
+      - 358.04
+      - 193.75
+      - 457.2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-4
+      title: 相似三角形的應用與三角比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-4 相似三角形的應用與三角比
+    labeled_by: ai
+  ai_answers:
+    gemini: 15+5\sqrt{2}+5\sqrt{3}
+    qwen: 15+5\sqrt{2}+5\sqrt{3}
+  answer:
+  - 15+5\sqrt{2}+5\sqrt{3}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 如下圖(7)，$\triangle ABC$ 為邊長 24 的正三角形，且 D、E、F 分別為 $\triangle ABC$ 各邊中點，G、H、I
+    分別為 $\triangle DEF$ 各邊中點，則 $\triangle GHI$ 的面積＝___________
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 191.13
+      - 332.18
+      - 310.91
+      - 456.22
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: 9\sqrt{3}
+    qwen: 9\sqrt{3}
+  answer:
+  - 9\sqrt{3}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 如下圖(8)，$\triangle ABC$ 中，$\angle A=90^{\circ}$，$\overline{AB}=12$、$\overline{AC}=5$，若從
+    $\overline{AB}$ 中點 D 作 $\overline{DE}\perp\overline{BC}$，且與 $\overline{BC}$ 交於
+    E 點，則 $\triangle EBD$ 面積：$\triangle ABC$ 面積＝___________
+  assets:
+  - key: s2_11_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 314.18
+      - 363.27
+      - 441.49
+      - 457.2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-4
+      title: 相似三角形的應用與三角比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-4 相似三角形的應用與三角比
+    labeled_by: ai
+  ai_answers:
+    gemini: 36:169
+    qwen: \frac{36}{169}
+    gemini_high: 36:169
+  answer:
+  - 36:169
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 如下圖(9)，四邊形 ABCD 為圓內接四邊形，若 $\angle A=54^{\circ}$，$\angle P=32^{\circ}$，則 $\angle
+    Q=$___________度
+  assets:
+  - key: s2_12_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 444.11
+      - 336.44
+      - 567.49
+      - 457.2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-2
+      title: 圓心角與圓周角
+      chapter: 第2章 圓形
+    textbook: 九上 2-2 圓心角與圓周角
+    labeled_by: ai
+  ai_answers:
+    gemini: '32'
+    qwen: '40'
+    gemini_high: '40'
+  answer:
+  - '40'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 如下圖(10)，$\overline{AB}$ 為半圓的直徑，且 $\overline{AB}=14$，若 C、D 三等分 $\overgroup{AB}$，則
+    $\overline{AC}^{2}+\overline{AD}^{2}=$___________
+  assets:
+  - key: s2_13_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s2_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 565.53
+      - 370.47
+      - 688.25
+      - 457.2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-2
+      title: 圓心角與圓周角
+      chapter: 第2章 圓形
+    textbook: 九上 2-2 圓心角與圓周角
+    labeled_by: ai
+  ai_answers:
+    gemini: '196'
+    qwen: '196'
+  answer:
+  - '196'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 如右圖，直角 $\triangle ABC$ 中，$\angle C=90^{\circ}$，圓 O 與 $\overline{AB}$、$\overline{BC}$
+    切於 D、C，且圓心 O 在 $\overline{AC}$ 上，若 $\overline{AC}=12$、$\overline{BC}=5$，求圓 O 的半徑
+    (5 分)
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_高雄_楠梓_數學_g9s1e2/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 560.62
+      - 487.96
+      - 675.82
+      - 576.0
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-1
+      title: 點、線、圓
+      chapter: 第2章 圓形
+    textbook: 九上 2-1 點、線、圓
+    labeled_by: ai
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 在兩股長為 3、4 的直角三角形區域內畫出一個正方形，且此正方形的 4 個頂點都要在直角三角形的邊上，求正方形的邊長 (答案不只一個) (7 分)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s4_1
+  section: 4
+  number: 1
+  type: fill
+  page: 2
+  stem: 直角坐標平面中，圓 O 的圓心 O(2 ,7)、半徑為 13，P(－1 ,3)是圓 O 內部一點，則過 P 點的所有弦中，長度為整數的有___________條
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 2-1
+      title: 點、線、圓
+      chapter: 第2章 圓形
+    textbook: 九上 2-1 點、線、圓
+    labeled_by: ai
+  ai_answers:
+    gemini: '4'
+    qwen: '4'
+  answer:
+  - '4'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_楠梓_數學_g9s1e2_s4_2
+  section: 4
+  number: 2
+  type: fill
+  page: 2
+  stem: 在 $\triangle ABC$ 中，$\overline{AB}=\overline{AC}=2$，$\angle A=108^{\circ}$，則
+    $\overline{BC}=$___________
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-4
+      title: 相似三角形的應用與三角比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-4 相似三角形的應用與三角比
+    labeled_by: ai
+  ai_answers:
+    gemini: \sqrt{5}+1
+    qwen: \sqrt{5}+1
+  answer:
+  - \sqrt{5}+1
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen

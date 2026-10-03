@@ -1,0 +1,696 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 新北
+  school_short: 板橋
+  school: 新北市立板橋國中
+  id: doc_113_新北_板橋_數學_g8s1e1
+  title: 新北市立板橋國中 113學年度第1學期第1次定期評量 8年級數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、 選擇題(每題4 分，共40 分)
+    count: 10
+  - ord: 2
+    name: 二、 填充題(每格4 分，共44 分)
+    count: 11
+  - ord: 3
+    name: 三、 計算題(共16 分)
+    count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/1-1/新北/板橋.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 判斷下列等式，何者正確？
+  options:
+  - label: A
+    content: $(77 - 5)^{2} = 77^{2} - 2 \times 77 \times 5 - 5^{2}$
+  - label: B
+    content: $305^{2} = (300 + 5)^{2} = 300^{2} + 5^{2}$
+  - label: C
+    content: $91^{2} = 100^{2} - 2 \times 100 \times 1 + 1^{2}$
+  - label: D
+    content: $8.5^{2} = (8 + 0.5)^{2} = 8^{2} + 2 \times 8 \times 0.5 + 0.5^{2}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '在下面多項式直式減法空格內，沒有出現下列哪一個數？
+
+    $$\begin{array}{r@{}l}
+
+    & \square x^{2} + 3x - 2 \\
+
+    -) & -2x^{2} - \square x - \square \\
+
+    \hline
+
+    & -5x^{2} + 3x + 2
+
+    \end{array}$$'
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '0'
+  - label: C
+    content: $-3$
+  - label: D
+    content: $-7$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 89%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 設$a$、$b$、$c$是常數，若$(a+3b-2)x^{3}-(2a+5b-3)x+(a-b+c)$ 是零次多項式，則下列哪一個數不可能為$c$值？
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: '2'
+  - label: C
+    content: $-2$
+  - label: D
+    content: $-5$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 已知$(x^{2}-ax+1)(2x-5)$的展開式中，$x^{2}$項的係數是$-13$，則$x$項的係數為何？
+  options:
+  - label: A
+    content: '22'
+  - label: B
+    content: '21'
+  - label: C
+    content: '20'
+  - label: D
+    content: '18'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 已知$a=\sqrt{89^{4}}-\sqrt{11^{4}}$，請問下列哪一個不是$a$的因數？
+  options:
+  - label: A
+    content: '100'
+  - label: B
+    content: '34'
+  - label: C
+    content: '26'
+  - label: D
+    content: '12'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 已知$6x^{2}+8x-7=(3x-2)(2x+4)+1$，下列哪一個敘述是錯誤的？
+  options:
+  - label: A
+    content: '[(6$x^{2}$ + 8$x$ - 7) - 1]可以被(2$x$ + 4)整除'
+  - label: B
+    content: (6$x^{2}$ + 8$x$ - 7)除以(3$x$ - 2)的餘數是1
+  - label: C
+    content: '[(6$x^{2}$ + 8$x$ - 7) - 1] 除以(3$x$ - 2)的商式是(2$x$ + 4)'
+  - label: D
+    content: '[(6$x^{2}$ + 8$x$ - 7) + 1] 可以被 (3$x$ - 2)整除'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 下列各數的值何者正確？
+  options:
+  - label: A
+    content: $\sqrt{3969} = 3^{2} \times 7^{2}$
+  - label: B
+    content: $\sqrt{361} = \pm 19$
+  - label: C
+    content: $\sqrt{(-5)^{6}} = (-5)^{3}$
+  - label: D
+    content: $-\sqrt{0.09} = -0.3$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 2
+  stem: '下列敘述，正確的幾個？
+
+    (甲)因為$3^{2} = 9$，$(\frac{2}{5})^{2} = \frac{4}{25}$，所以$3\frac{2}{5}$是$9\frac{4}{25}$的平方根     (乙)
+    $\sqrt{36}$的平方根為6與$-6$
+
+    (丙) 若$a = (-1)^{2}$，則$a$的負平方根是$-1$      (丁) 因為$-2^{2} = -4$，所以$-2$是$-4$的負平方根
+
+    (戊) 已知 $a = 7$，$b = \sqrt{50}$，則$a$、$b$的大小關係為 $a < b$
+
+    (己) 2024 年10 月1 日是所謂的「完全平方日」或稱「正方形日」，即$20241001 = 4499^{2}$，所以4499是20241001的正平方根'
+  options:
+  - label: A
+    content: 4個
+  - label: B
+    content: 3個
+  - label: C
+    content: 2 個
+  - label: D
+    content: 1個
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 滿足 $9 \leq \sqrt{x} \leq 16$ 的正整數 $x$ 共有幾個？
+  options:
+  - label: A
+    content: '176'
+  - label: B
+    content: '175'
+  - label: C
+    content: '174'
+  - label: D
+    content: '173'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: 已知$A= 99^{2}$，則$102^{2} + 96^{2}$與下列何者選項的結果相同？
+  options:
+  - label: A
+    content: $2A+ 16$
+  - label: B
+    content: $2A+ 6$
+  - label: C
+    content: $2A+ 18$
+  - label: D
+    content: $2A+ 8$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 計算$(3x+ 2)(3x-2) =$   (A)   。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: 9x^2-4
+    qwen: $9x^2-4$
+  answer:
+  - 9x^2-4
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 若$(1004)^{2} = 1000^{2} + s$，則 $s=$     (B)     。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '8016'
+    qwen: '8016'
+  answer:
+  - '8016'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 計算$97^{2} -97 \times 54 + 27^{2} =$     (C)     。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '4900'
+    qwen: '4900'
+  answer:
+  - '4900'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 計算$\sqrt{1\frac{19}{81}} -\sqrt{(-14)^{2}} + (\sqrt{8})^{2} =$     (D)     。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: -\frac{44}{9}
+    qwen: -\frac{44}{9}
+  answer:
+  - -\frac{44}{9}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 若有一多項式$A$， $(-5x^{2} + 4x-19) -A= 6 -4x-3x^{2}$，則多項式 $A$ 按降冪排列為     (E)     。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: -2x^2+8x-25
+    qwen: -2x^2+8x-25
+  answer:
+  - -2x^2+8x-25
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 設 $m$為正整數，若$\sqrt{378 \times m}$亦為正整數，則 $m$的最小值為何？      (F)     。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '42'
+    qwen: '42'
+  answer:
+  - '42'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知$6.8^{2} = 46.24$，$6.9^{2} = 47.61$，$6.84^{2} = 46.7856$，$6.85^{2} = 46.9225$，$6.86^{2}
+    = 47.0596$，$6.855^{2} = 46.991025$，則$\sqrt{47}$化成小數時的十分位與百分位的和為      (G)     。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: '13'
+    qwen: '13'
+  answer:
+  - '13'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 計算$\frac{802^{2}+198(1604+198)}{320^{2}-180^{2}} =$      (H)     。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{100}{7}
+    qwen: \frac{100}{7}
+  answer:
+  - \frac{100}{7}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 計算$4 \times 3^{6} \times 5^{4}$ 的平方根=      (I)     。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: \pm 1350
+    qwen: '1350'
+    gemini_high: \pm 1350
+  answer:
+  - \pm 1350
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 一長方形的面積為$(6x^{2} + 13x+ 6)$平方公分，其寬為$(2x+ 3)$公分，用剪刀沿著長寬各減去 1 公分，得到一個小長方形，如右圖灰色部分，則灰色長方形的面積為多少平方公分？     (J)     。
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_新北_板橋_數學_g8s1e1/s2_10_f1.png
+    crop:
+      page: 3
+      rect:
+      - 443.38
+      - 274.64
+      - 636.46
+      - 399.26
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: 6x^2+8x+2
+    qwen: 6x^2+8x+2
+  answer:
+  - 6x^2+8x+2
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 3
+  stem: 已知$10x^{2} + mx+ 24$ 能被多項式$5x+ 2$ 整除，求 $m$ 的平方根=    (K)     。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: \pm 8
+    qwen: \pm 8
+  answer:
+  - \pm 8
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g8s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 4
+  stem: '芓奇要設計一個指尖陀螺，他先準備兩個邊長分別為a 和b 的正方形紙板，沿虛線剪開後，再將各三角形緊密排列成為一個指尖陀螺的模型圖，如附圖。芓奇利用圖形得到以下條件：
+
+    兩個正方形的面積總和$a^{2} + b^{2} = 320$，$\overline{AB} = a+ b= 24$，請回答下列問題：(1) $a\times
+    b=$？(3 分)
+
+    (2) $(a-b)^{2} =$？ (3 分)'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_新北_板橋_數學_g8s1e1/s3_1_f1.png
+    crop:
+      page: 4
+      rect:
+      - 445.57
+      - 487.23
+      - 693.29
+      - 589.14
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+- id: doc_113_新北_板橋_數學_g8s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 4
+  stem: 計算$(2x^{2} + 6x^{3} -5) \div (2x+ 2)$的商式= ______________ … … . . (3 分) ， 餘式=
+    _____________ … … . . (3 分)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+- id: doc_113_新北_板橋_數學_g8s1e1_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 4
+  stem: 若$\sqrt{4x+ 9}$是81的平方根，$x-y$的負平方根為 $-5$，則$2x-y$的平方根為何？（4 分）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai

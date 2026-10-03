@@ -1,0 +1,310 @@
+source: data/bank/doc_113_新北_永和_數學_g7s1e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_新北_永和_數學_g7s1e3_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 選項 (D) 為同底數相加，不能將指數相加（只有相乘時指數才相加，即 $(-7)^4 \times (-7)^2 = (-7)^6$），故
+        (D) 敘述錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目四個選項的正確數學式（文字編碼錯亂無法辨識）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目選項中的數學式因排版或字元編碼異常而錯亂重疊，無法辨識出原本正確的代數式進行化簡計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目四個選項的正確數學式（文字編碼錯亂無法辨識）
+- id: doc_113_新北_永和_數學_g7s1e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將兩式通分至公分母 15，分子為 3(3x - 2) - 5(-4x + 1) = 9x - 6 + 20x - 5 = 29x
+        - 11，化簡後得 (29x - 11)/15。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 解方程式 x÷5 - 12 = 25 時，先將等式兩邊同加 12 得到 x÷5 = 25 + 12，再將兩邊同乘以 5 得到 x
+        = (25 + 12) × 5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 丙敘述「若 a = b，則 a × c = b × c」為等量乘法公理，敘述完全正確；丁在 c = 0 時不成立，乙兩式解不同。因四個選項中僅有
+        (B) 不包含正確的丙，故錯誤的為甲乙丁。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 由題目可推知 a 為方程式 15x - 27 = 0.3 的解，即 15a - 27 = 0.3，兩邊同乘以 10 得 150a
+        - 270 = 3。所求 400 - 150a + 270 = 400 - (150a - 270) = 400 - 3 = 397。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_11
+  number: 11
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的右方表格
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目要求根據「右方表格」作答並求出未知數 a、b、c，但題目內容未附上該表格，無法解題。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中提及的右方表格
+- id: doc_113_新北_永和_數學_g7s1e3_s1_12
+  number: 12
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題幹中姊姊與妹妹金額的完整正確代數式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題幹中的代數式（如「x 9元」、「( 5 3  x )元」）出現嚴重的文字亂碼與破損，無法確定姊姊與妹妹的實際金額關係。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題幹中姊姊與妹妹金額的完整正確代數式
+- id: doc_113_新北_永和_數學_g7s1e3_s1_14
+  number: 14
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 展開方程式：4(5x+2) - [2 - 12x + 3] = -29，化簡得 20x + 8 - (5 - 12x) = -29，即
+        32x + 3 = -29，解得 x = -1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_15
+  number: 15
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將 x = -5 代入 (6x-2)/4 得到 a = (6(-5)-2)/4 = -8；將 x = 5 代入 (-7x+11)/8
+        得到 b = (-7(5)+11)/8 = -3。故 a + b = -8 + (-3) = -11。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_16
+  number: 16
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 設個位數字為 x，則十位數字為 9-x。原數為 10(9-x)+x = 90-9x，對調後的新數為 10x+(9-x) = 9x+9。新數減原數為
+        (9x+9)-(90-9x) = 18x-81，對應選項 (A)。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_17
+  number: 17
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：算式 A 的正確指數與運算符號排版（如底數與次方的完整表達式）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中的數學算式「12 8 5 4 」排版缺失且指數與底數關係不明，無法確定實際的數值算式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 算式 A 的正確指數與運算符號排版（如底數與次方的完整表達式）
+- id: doc_113_新北_永和_數學_g7s1e3_s1_18
+  number: 18
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設通話時間為 x 秒，依題意列式：140 + 0.3(x - 300) = 0.35x，化簡得 50 + 0.3x = 0.35x，解得
+        x = 1000 秒。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_19
+  number: 19
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 濃度從 64% 降至 2% 為原本的 1/32（即 (1/2)^5），共需經過 5 次減半期，因此需要 5 × 20 = 100
+        分鐘。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_20
+  number: 20
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 連續四個奇數依序為 (x + 4)、(x + 6)、(x + 8)、(x + 10)，其總和為 (x + 4) + (x + 6)
+        + (x + 8) + (x + 10) = 4x + 28，對應選項 (B)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_23
+  number: 23
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設三家定價為 a、b、c，依題意列式：0.9a - 0.6a = 48 得 a = 160；0.8b - 42 = 0.5b 得
+        b = 140；c - 0.75c = 45 得 c = 180。因此 C 商店定價最貴。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_24
+  number: 24
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 定價為 x 元，打七五折再抵 200 元後的售價為 (0.75x - 200) 元；節省的金額即為定價減去售價，故方程式為 x -
+        (0.75x - 200) = 1600，對應選項 (A)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_25
+  number: 25
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設現在小和 x 歲、爸爸 y 歲，依題意 x+y=70 且 y-7=3(x-7)，解得 x=21、y=49。n 年後 49+n=2(21+n)，解得
+        n=7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_26
+  number: 26
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設去回皆搭纜車有x人、單程搭纜車有y人，搭乘總人次為2x+y=12+14=26，總費用為250x+150y=3500，解聯立方程式得x=8、y=10，故總人數為8+10=18人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_27
+  number: 27
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設變動後四人的書本數皆為 k，則原本阿永有 k-1 本、小和有 k+2 本、阿國有 k/3 本、阿中有 4k 本。由總數 (k-1)
+        + (k+2) + k/3 + 4k = 77 解得 k = 12，故阿中原本有 4*12 = 48 本書。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_永和_數學_g7s1e3_s1_28
+  number: 28
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 姊姊折返回家花費3分鐘，停留1分鐘，總共耗費3+3+1=7分鐘後重新出發。設距離為x公尺，依題意列式 x/80 = 7 + x/100，解得
+        x = 2800。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

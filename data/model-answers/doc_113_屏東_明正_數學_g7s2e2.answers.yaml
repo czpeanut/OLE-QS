@@ -1,0 +1,298 @@
+source: data/bank/doc_113_屏東_明正_數學_g7s2e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_屏東_明正_數學_g7s2e2_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 求出直線與兩軸的交點為 $(5, 0)$ 與 $(0, 2)$，直線通過第一、二、四象限，因此不通過第三象限。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 在坐標平面上，方程式 y=0 的圖形為 x 軸，而非 y 軸（y 軸的方程式為 x=0），因此選項 (A) 錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 直線 y=ax+b 不過第一象限，故斜率 a<0 且 y 截距 b<0；直線 y=cx 通過原點且與其交於第三象限（x<0, y<0），代入得
+        c=y/x>0，因此 (C) c<0 敘述錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 由 x + y = 0 可得 y = -x，符合正比形式 y = kx（k = -1 ≠ 0），因此 y 與 x 成正比；又因為
+        k < 0，當 x 愈大時，y 值隨之愈小。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-7'
+      reasoning: 直線 x=a 與 y=b 的交點坐標為 (a, b)，對照題目交點 (-4, 3) 可知 a = -4、b = 3，故 a - b
+        = -4 - 3 = -7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '4'
+      reasoning: 將 (m, 0) 代入方程式得 m/5 = 2，解得 m = 10；將 (0, n) 代入得 -n/3 = 2，解得 n = -6。故
+        m + n = 10 + (-6) = 4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目提及的「圖一」長方形ABCD在坐標平面上的位置圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目依賴「圖一」來確認長方形ABCD各頂點的相對位置（長與寬分別對應哪兩邊、頂點排列順序及在坐標平面上的相對方向），缺乏該圖無法唯一確定C點坐標與直線方程式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目提及的「圖一」長方形ABCD在坐標平面上的位置圖
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '2'
+      reasoning: 由通過 A(1, 0) 與 B(2, -3) 的直線方程式求得 y = -3x + 3，將 C(k, 1-2k) 代入得 1-2k
+        = -3k + 3，解得 k = 2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目提及的「右圖二」，缺少圖形中 m 與 n 的相對位置或大小關係
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「如右圖二」，因缺少圖二無法得知 m 與 n 的具體數值或相對大小關係，故無法判定 a、b、c、d 的大小順序。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目提及的「右圖二」，缺少圖形中 m 與 n 的相對位置或大小關係
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '17'
+      reasoning: 總打數為 114 + 46 = 160 次，總安打數為 31 + x 支。由打擊率公式可得 (31 + x) / 160 = 0.3，解得
+        31 + x = 48，故 x = 17。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '3'
+      reasoning: 根據比例式性質「內項乘積等於外項乘積」，可列式為 5(x + 1) = -4(1 - 2x)。展開後得 5x + 5 = -4 +
+        8x，移項解得 3x = 9，因此 x = 3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '320'
+      reasoning: 設平平零用錢為x元、安安為y元，由題意知2x = 3y且x + y = 800，可得平平與安安零用錢比為3：2，因此安安有800
+        × (2/5) = 320元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{11}{5}
+      reasoning: 由 x:4 = y:3 可設 x = 4r、y = 3r (r ≠ 0)，代入得 (2x+y):(2x-y) = (8r+3r):(8r-3r)
+        = 11r:5r，其比值為 11/5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 設總金額為 60k，則每粒蝦仁鍋貼為 5k、韭菜鍋貼為 4k。點了 8 粒蝦仁鍋貼花費 40k，剩下 20k，可點韭菜鍋貼 20k
+        ÷ 4k = 5 粒。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-45'
+      reasoning: 設正比關係式為 y = kx，將 x=4、y=15 代入得 k = 15/4。再將 x=-12 代入關係式，求得 y = (15/4)
+        * (-12) = -45。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_13
+  number: 13
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -\frac{23}{2}
+      reasoning: 設 (2y+5)(3x-2) = k，代入 x=-4, y=2 得 k = (9)(-14) = -126。當 x=3 時，(2y+5)(7)
+        = -126，解得 2y+5 = -18，故 y = -23/2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_14
+  number: 14
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '16'
+      reasoning: 總工作量為 4 × 20 = 80 人·小時，5 位木工合作需 80 ÷ 5 = 16 小時完工。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s2_15
+  number: 15
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 280元
+      reasoning: 披薩售價與直徑的平方成正比，16吋與12吋披薩面積比為16²：12²＝16：9。12吋披薩價格為640×(9/16)＝360元，故可省下640－360＝280元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 略（依兩方程式作圖）
+      - (2) A(4, 2)
+      - (3) 14
+      reasoning: 解聯立方程式得交點 A(4, 2)；求出與軸交點 B(6, 0)、C(0, 4)，四邊形 ABOC 面積可分割為 △OAB 面積
+        (1/2×6×2=6) 與 △OAC 面積 (1/2×4×4=8)，合計為 14。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_明正_數學_g7s2e2_s3_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - y = 30 - 3x
+      - 5/3
+      reasoning: (1) 原高30公分，5分鐘燒掉15公分，每分鐘燒3公分，故關係式為y = 30 - 3x。(2) 剩餘10公分時總共需燃燒20/3分鐘，扣除已燃燒的5分鐘，又繼續燃燒了5/3（或1又2/3）分鐘。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

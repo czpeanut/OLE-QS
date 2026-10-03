@@ -1,0 +1,311 @@
+source: data/bank/doc_113_高雄_苓雅_數學_g7s1e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 以中午12時為基準（0），下午7時是在12時之後7小時記為+7；上午7時是在12時之前5小時，因此應表示為-5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 數線上由左至右數值漸增，左端點為 -2，每等分長度為 0.1。由左向右數第 3 個等分點為 -2 + 3 × 0.1 = -1.7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: A選項整數還包含0；B選項距離應為兩數相減的絕對值；C選項0的絕對值是0，非正數；D選項互為相反數的兩數相加必等於0，故D正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 除法具有右分配律，即 $(a - b) \div c = a \div c - b \div c$；減法與除法不具結合律，除法亦無左分配律，故僅
+        (C) 正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將各選項皆化為科學記號或以 10^8 比較：(A) 為 2.3×10^8、(B) 為 0.75×10^8、(C) 為 0.12×10^8、(D)
+        為 1.8×10^8，故 (A) 的數值最大。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s1_7
+  number: 7
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 由圖可知 p=(-0.7)^4=0.2401。此數介於0與1之間，且因小於0.5，故比較接近0。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的數線圖（包含A、B、C點的相對位置關係）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右圖數線上的A、B、C三點」，但未提供該數線圖，無法得知A、B、C三點在數線上的相對左右順序。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中提及的數線圖（包含A、B、C點的相對位置關係）
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：右側的數學題目內容以及甲、乙、丙三人的說法
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中提及「題目如右」，但未提供該數學題目的詳細內容以及甲、乙、丙三人的具體說法，因此無法判斷何者正確。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 右側的數學題目內容以及甲、乙、丙三人的說法
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 甲數線上的距離 AB = 18 對應乙數線上的距離 DE = 6，比例為 3:1。甲數線上 BC = 15，對應乙數線上 EF 的距離應為
+        15 / 3 = 5，因此 x = 1 + 5 = 6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_1
+  number: 1
+  type: fill
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-3'
+      - (-6)⁴
+      - '-14'
+      - '200'
+      - '-576'
+      - '22977'
+      - '300'
+      - '21'
+      - '-21000'
+      - '-8600'
+      reasoning: 依序計算：(1) -(-3)=3，相反數為 -3；(2) 連乘簡記為 (-6)⁴；(3) 2-3-13=-14；(4) 8×25=200；(5)
+        -182-18-376=-576；(6) 23×(1000-1)=22977；(7) 532-232=300；(8) -9+30=21；(9) 1000×(-21)=-21000；(10)
+        43×(-200)=-8600。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '17'
+      reasoning: 滿足絕對值小於9的整數範圍為 -8 到 8，共有正整數 8 個、負整數 8 個及整數 0，合計 8 + 8 + 1 = 17 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2或-18
+      - -3或-13
+      reasoning: 因為A點為-8且AB距離為10，所以B點為-8+10=2或-8-10=-18；AB中點距離A點為5單位，故中點坐標為-8+5=-3或-8-5=-13。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '8'
+      reasoning: 6.54321 的小數點後有 5 位數，乘以 10 的 b 次方後若要使數字末尾有 3 個 0，小數點需向右移動 5 + 3 =
+        8 位，故 b = 8。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '25060'
+      reasoning: 根據乘法分配律，(a + 1) × 528 = 528 × a + 528。已知 528 × a = 24532，故所求為 24532
+        + 528 = 25060。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中完整的數學運算符號與指數表達式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字排版與數學符號（如加號、乘號、指數或等號位置）嚴重缺漏亂碼，無法確定確切算式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中完整的數學運算符號與指數表達式
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目缺少 3x3 方格紙的圖形，無法確認變數 a、c、e 所代表的位置。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右圖3 3 的方格紙」且要求計算「a c e + +」，但題幹未提供方格圖形及 a、c、e 的具體位置，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目缺少 3x3 方格紙的圖形，無法確認變數 a、c、e 所代表的位置。
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_8
+  number: 8
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - b < d < c < a
+      reasoning: 負數奇數次方為負、偶數次方為正；因底數絕對值小於1，奇數次方中指數較小者絕對值較大故數值較小（b < d < 0），偶數次方中指數較大者數值較小（0
+        < c < a），因此由小到大為 b < d < c < a。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '15'
+      reasoning: 台北比紐約快12小時（+8與-4差12小時），出發時紐約時間為10月10日早上6點，抵達紐約時為當日晚上9點（21點），飛行時間為21
+        - 6 = 15小時。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s2_10
+  number: 10
+  type: fill
+  images_sent: 1
+  status: failed
+  note: 所有模型都呼叫失敗
+  by_model:
+    gemini:
+      error: 'JSONDecodeError: Invalid \escape: line 3 column 30 (char 52)'
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '10'
+      reasoning: 五次猜拳結果中，小明1勝3敗1平，位置在1*(+2)+3*(-3)=-7；小華3勝1敗1平，位置在3*(+2)+1*(-3)=3。兩人相距
+        |3 - (-7)| = 10 個單位。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_苓雅_數學_g7s1e1_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 不夠
+      - (2) 2張
+      reasoning: 四人總共有 250+50+150+90=540 元。(1) 四人都買B區票需 150×4=600 元，540<600 故不夠。(2)
+        四人皆進場最少需買C區票，設買 x 張B區票，則 150x+100(4-x)≤540，得 50x≤140，x 最大為 2，故最多能買 2 張B區票。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

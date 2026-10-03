@@ -1,0 +1,715 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 1
+  city: 新北
+  school_short: 忠孝
+  school: 新北市立忠孝國中
+  scope_note: 1-1~2-1
+  id: doc_113_新北_忠孝_數學_g7s2e1
+  title: 新北市立忠孝國中 113學年度第2學期第1次定期評量 7年級數學科試題
+  exam_name: 113學年度第2學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、課本習作題-填充題：每格4 分，共60 分
+    count: 12
+  - ord: 2
+    name: 二、教育會考題-選擇題：每題5 分，共40 分
+    count: 8
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/新北/忠孝.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: null
+    - number: 2-1
+      title: null
+    publisher: null
+    raw: 1-1~2-1
+    volume: null
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_1
+  section: 1
+  number: 1
+  type: fill
+  page: 1
+  stem: '化簡下列各式：
+
+    (1) $4(3y-x+5)-5(-x+6y+4)$
+
+    (2) $\frac{5x-4y}{3}+\frac{(-x+2y-1)}{2}$'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: x-18y
+    qwen: $x-18y$；$\frac{7x-2y-3}{6}$
+    gemini_high: (1) x-18y；(2) \frac{7x-2y-3}{6}
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 小金有$x$ 元，大川有$y$ 元，根據下列哪一個選項的敘述可列出二元一次方程式$4x-30=y$？答：_______。
+  options:
+  - label: A
+    content: 小金的錢是大川的4 倍少30 元
+  - label: B
+    content: 小金的錢是大川的4 倍多30 元
+  - label: C
+    content: 大川的錢是小金的4 倍少30 元
+  - label: D
+    content: 大川的錢是小金的4 倍多30 元
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_3
+  section: 1
+  number: 3
+  type: fill
+  page: 1
+  stem: 若飯糰一個$a$ 元，豆漿一杯$b$ 元，則根據右圖，小翊可找回多少元？
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_新北_忠孝_數學_g7s2e1/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 387.49
+      - 328.91
+      - 671.89
+      - 417.93
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '140'
+    qwen: '140'
+  answer:
+  - '140'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: 班上同學一行共18人聚餐，已知餐廳有A、B兩種套餐，A餐一份85元、B餐一份95元，若一人點一份，點A餐的有 $x$ 人、點B餐的有 $y$ 人，總共花了1640元。依題意列出二元一次聯立方程式為__________。(全對才給分)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: $\begin{cases}x+y=18\\85x+95y=1640\end{cases}$
+    qwen: \begin{cases} x+y=18 \\ 85x+95y=1640 \end{cases}
+  answer:
+  - $\begin{cases}x+y=18\\85x+95y=1640\end{cases}$
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 若 $x$、$y$ 皆為正整數或 0，則二元一次方程式$x+4y=24$的解有多少組？
+  options:
+  - label: A
+    content: 5組
+  - label: B
+    content: 6組
+  - label: C
+    content: 7組
+  - label: D
+    content: 無限多組
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_6
+  section: 1
+  number: 6
+  type: fill
+  page: 1
+  stem: '解下列各二元一次聯立方程式。( x 和 y 全對才給分)
+
+    (1) $\begin{cases}-x+3y=-2x-y+5\\ 5x+y-1=4x-y+3\end{cases}$
+
+    (2) $\begin{cases}\frac{x}{2}+y=1\\ x-\frac{y}{3}=\frac{13}{3}\end{cases}$'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 84%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_7
+  section: 1
+  number: 7
+  type: fill
+  page: 1
+  stem: 已知每個●的重量都相同，且每塊■的重量都相同。若下圖的兩個等臂天平都剛好平衡，那麼一個●加一塊■共重多少公克？
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_113_新北_忠孝_數學_g7s2e1/s1_7_f1.png
+    crop:
+      page: 1
+      rect:
+      - 59.89
+      - 701.35
+      - 651.6
+      - 806.73
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: $\frac{61}{6}$
+    qwen: '15'
+    gemini_high: '11.25'
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_8
+  section: 1
+  number: 8
+  type: fill
+  page: 1
+  stem: 坐標平面上有一點 $P(4 , -3)$，若從 $P$ 點出發，先向左 $m$ 單位，再向上 $n$ 單位，最後到達一點$Q(-6 , 2)$，則
+    $m$、$n$ 的值分別為何？(全對才給分)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: $m=10, n=5$
+    qwen: 10；5
+    gemini_high: m=10，n=5
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_9
+  section: 1
+  number: 9
+  type: fill
+  page: 1
+  stem: '已知$(m , n)$在第四象限內，則下列各點分別在哪一象限內？將答案填入下列空格中。
+
+
+    | 坐標 | $( 3m , -2n )$ | $( |m| , n-m )$ | $( m-n , m^{2}+n^{2} )$ |
+
+    | :--- | :--- | :--- | :--- |
+
+    | 象限或坐標軸 | 第一象限 | (1) | (2) |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: (1) 第四象限；(2) 第一象限
+    qwen: 第四象限；第一象限
+    gemini_high: (1) 第四象限；(2) 第一象限
+  answer:
+  - (1) 第四象限
+  - (2) 第一象限
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_10
+  section: 1
+  number: 10
+  type: fill
+  page: 2
+  stem: 若$x$、$y$的兩個二元一次聯立方程式$\begin{cases}5x-2y=4\\ 2x+ay=1\end{cases}$與$\begin{cases}-x+by=4\\
+    2x-5y=-11\end{cases}$有相同的解，求$a$、$b$的值。(全對才給分)
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_11
+  section: 1
+  number: 11
+  type: fill
+  page: 2
+  stem: 如右圖，將火車站看成一坐標平面的原點，並以火車站到百貨公司的方向為 $y$ 軸的正向，以咖啡廳到火車站的方向為 $x$ 軸的正向，則書局在此坐標平面上的哪一象限內？
+  assets:
+  - key: s1_11_f1
+    kind: figure
+    file: doc_113_新北_忠孝_數學_g7s2e1/s1_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 578.62
+      - 179.35
+      - 670.58
+      - 276.55
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 第四象限
+    qwen: 第三象限
+    gemini_high: 第三象限
+  answer:
+  - 第三象限
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_忠孝_數學_g7s2e1_s1_12
+  section: 1
+  number: 12
+  type: fill
+  page: 2
+  stem: 現在任教你的班數學老師的姓名全名。(姓名全對才給分)
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第1次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: 數學老師
+    qwen: Unknown
+    gemini_high: 無
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 2
+  stem: 若二元一次聯立方程式$\begin{cases} 5x-y=5\\ y= \frac{1}{5} x\end{cases}$ 的解為$x=a$，$y=b$，則$a+b$
+    之值為何？【103 會考】
+  options:
+  - label: A
+    content: $\frac{29}{25}$
+  - label: B
+    content: $\frac{75}{13}$
+  - label: C
+    content: $\frac{31}{25}$
+  - label: D
+    content: $\frac{5}{4}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_2
+  section: 2
+  number: 2
+  type: single
+  page: 2
+  stem: 右圖為$A$、$B$、$C$ 三點在坐標平面上的位置圖。若$A$、$B$、$C$ 的橫坐標的數字總和為$a$，縱坐標的數字總和為$b$，則$a-b$
+    之值為何？【105 會考】
+  options:
+  - label: A
+    content: '5'
+  - label: B
+    content: '3'
+  - label: C
+    content: $-3$
+  - label: D
+    content: $-5$
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_113_新北_忠孝_數學_g7s2e1/s2_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 527.56
+      - 417.93
+      - 703.31
+      - 591.05
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: single
+  page: 2
+  stem: '某鞋店正舉辦開學特惠活動，下圖為活動說明。
+
+    小帥打算在該店同時購買一雙球鞋及一雙皮鞋，且他有一張所有購買的商品定價皆打8 折的折價券。若小帥計算後發現使用折價券與參加特惠活動兩者的花費相差50 元，則下列敘述何者正確？【111
+    會考】'
+  options:
+  - label: A
+    content: 使用折價券的花費較少，且兩雙鞋的定價相差 100 元
+  - label: B
+    content: 參加特惠活動的花費較少，且兩雙鞋的定價相差 100 元
+  - label: C
+    content: 使用折價券的花費較少，且兩雙鞋的定價相差 250 元
+  - label: D
+    content: 參加特惠活動的花費較少，且兩雙鞋的定價相差 250 元
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_113_新北_忠孝_數學_g7s2e1/s2_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 172.8
+      - 587.13
+      - 416.95
+      - 699.38
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_4
+  section: 2
+  number: 4
+  type: single
+  page: 2
+  stem: 已知小美住家的西方100 公尺處為車站，住家的北方200 公尺處為學校，且從學校往東方走100 公尺，再往南方走400 公尺可到達公園。若小美將住家、車站、學校分別標示在坐標平面上的(2
+    , 0)、(0 , 0)、(2 , 4)三點，則公園應標示在此坐標平面上的哪一點？【109 會考】
+  options:
+  - label: A
+    content: (4,－4)
+  - label: B
+    content: (4 , 12)
+  - label: C
+    content: (0 , －4)
+  - label: D
+    content: (0 , 12)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_5
+  section: 2
+  number: 5
+  type: single
+  page: 3
+  stem: '為了降低中暑的機會，近年來部分國家會使用綜合溫度熱指數WBGT(℃)作為判斷熱傷害風險的指標，而WBGT 的計算方式如下：
+
+    在戶外有日曬時，WBGT＝0.7TW＋0.2TG＋0.1Td
+
+    在戶外無日曬或室內時，WBGT＝0.7TW＋0.3TG
+
+    $T_W$：自然濕球溫度(℃)，用以反映水分揮發的難易度
+
+    $T_G$：黑球溫度(℃)，用以反映太陽輻射的效應
+
+    $T_d$：乾球溫度(℃)，用以反映單純空氣溫度
+
+    依 WBGT 數值大小可將熱傷害風險區分為五個等級，如表(一)所示。
+
+    表(二)為戶外有日曬的甲地與室內的乙地在中午時所測量到的各種溫度。
+
+    根據上文，甲地、乙地在中午時的熱傷害風險等級分別為何？【111 會考】
+
+
+    表(一)
+
+    | WBGT 數值 | ＜21 | 21～25 | 25～28 | 28～31 | $\geq$ 31 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | 風險等級 | 安全 | 注意 | 警戒 | 高度警戒 | 危險 |
+
+    ※ 21～25 代表21 以上(含)，未滿25，其他依此類推
+
+
+    表(二)
+
+    | | 甲地 | 乙地 |
+
+    | :--- | :--- | :--- |
+
+    | $T_W$ | 23℃ | 20℃ |
+
+    | $T_G$ | 30℃ | 24℃ |
+
+    | $T_d$ | 26℃ | 24℃ |'
+  options:
+  - label: A
+    content: 注意、安全
+  - label: B
+    content: 注意、注意
+  - label: C
+    content: 警戒、安全
+  - label: D
+    content: 警戒、注意
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第1次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_6
+  section: 2
+  number: 6
+  type: single
+  page: 3
+  stem: 已知小帥租車行有甲、乙兩個營業據點，顧客租車後當日須於營業結束前在任意一個據點還車。某日營業結束清點車輛時，發現在甲歸還的自行車比從甲出租的多4 輛。若當日從甲出租且在甲歸還的自行車為15
+    輛，從乙出租且在乙歸還的自行車為13 輛，則關於當日從甲、乙出租的自行車數量，下列比較何者正確？【110 會考】
+  options:
+  - label: A
+    content: 從甲出租的比從乙出租的多2 輛
+  - label: B
+    content: 從甲出租的比從乙出租的多6 輛
+  - label: C
+    content: 從甲出租的比從乙出租的少2 輛
+  - label: D
+    content: 從甲出租的比從乙出租的少6 輛
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_7
+  section: 2
+  number: 7
+  type: single
+  page: 3
+  stem: 下圖為小美蛋糕店的價目表，小帥原本拿了4 個蛋糕去結帳，結帳時發現該店正在舉辦優惠活動，優惠方式為每買5 個蛋糕，其中1 個價格最低的蛋糕免費，因此小帥後來多買了1
+    個黑櫻桃蛋糕。若原本的結帳金額為$x$ 元，後來的結帳金額為$y$ 元，則$x$ 與$y$ 的關係式不可能為下列何者？【109 會考】
+  options:
+  - label: A
+    content: $y=x$
+  - label: B
+    content: $y=x+5$
+  - label: C
+    content: $y=x+10$
+  - label: D
+    content: $y=x+15$
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_113_新北_忠孝_數學_g7s2e1/s2_7_f1.png
+    crop:
+      page: 3
+      rect:
+      - 479.45
+      - 587.13
+      - 690.22
+      - 705.6
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: B
+    gemini_high: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_忠孝_數學_g7s2e1_s2_8
+  section: 2
+  number: 8
+  type: single
+  page: 3
+  stem: '底下為小帥使用LINE 通訊軟體跟小美對話的紀錄。
+
+    小帥：小美妳下公車之後，往正前方直走400 公尺，右轉再直走300 公尺就到我家了。
+
+    小美：我照你說的走到郵局了，不是你家。
+
+    小帥：啊！因為妳下車後朝東方走才走到郵局。要朝向北方，才能走到我家。
+
+    根據對話紀錄，小美要從郵局出發走到小帥家，則此走法為何？【103 會考】'
+  options:
+  - label: A
+    content: 向北直走400 公尺，再向東直走300 公尺
+  - label: B
+    content: 向北直走100 公尺，再向東直走700 公尺
+  - label: C
+    content: 向北直走300 公尺，再向西直走400 公尺
+  - label: D
+    content: 向北直走700 公尺，再向西直走100 公尺
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen

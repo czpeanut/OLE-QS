@@ -1,0 +1,620 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 新北
+  school_short: 忠孝
+  school: 新北市立忠孝國中辦理（或新北市立忠孝國中）
+  id: doc_113_新北_忠孝_數學_g7s1e2
+  title: 新北市立忠孝國中辦理（或新北市立忠孝國中） 113學年度第1學期第2次定期評量 7年級數學科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題：(每題4 分共40 分)
+    count: 10
+  - ord: 2
+    name: 二、填充題：(1~5 題 每題6 分，6~10 題 每題4 分 共50 分)
+    count: 10
+  - ord: 3
+    name: 三、計算題(沒計算過程不予計分)：(第一題5 分；第二題 第一小題2 分，第二小題3 分，共10 分)
+    count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-2/新北/忠孝.pdf
+  scope:
+    publisher: 康軒版
+    volume: null
+  chapter_index:
+    publisher: 康軒
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: 康軒
+questions:
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列敘述何者正確?
+  options:
+  - label: A
+    content: 1 到 100 的整數中，扣除 25 個質數後，剩下的數皆為合數。
+  - label: B
+    content: 2 是最小的質數，也是質數中唯一的偶數。
+  - label: C
+    content: 因為 5 與 13 皆是質數，所以 5×13 的乘積 65 也是質數。
+  - label: D
+    content: 將 n 個邊長為 1 的小正方形緊密排列拼成矩形，且不會剩下，則 n＝97 比 n＝81 可以拼出較多不同形狀的矩形。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 因數與倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-1 因數與倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列敘述何者正確？
+  options:
+  - label: A
+    content: 6 是 36 的因數，也是 48 的因數，所以 (36 , 48)＝6。
+  - label: B
+    content: 若甲、乙兩整數互質，則甲、乙兩數必為質數。
+  - label: C
+    content: 若丙是 3 的倍數，則丙一定也是 9 的倍數。
+  - label: D
+    content: 2 一定是兩個偶數的公因數。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 因數與倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-1 因數與倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 下列哪個數與 30 互質?
+  options:
+  - label: A
+    content: '12'
+  - label: B
+    content: '15'
+  - label: C
+    content: '17'
+  - label: D
+    content: '25'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 因數與倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-1 因數與倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 有三個數 $a = -\frac{3}{4}$, $b = -\frac{7}{9}$, $c = -\frac{11}{12}$ 請問下列敘述何者正確?
+  options:
+  - label: A
+    content: a > b > c
+  - label: B
+    content: c > b > a
+  - label: C
+    content: c > a > b
+  - label: D
+    content: b > a > c
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 若 a、b 為正整數，且 a×b＝66，則 a＋b 的值可能是下列何者
+  options:
+  - label: A
+    content: '6'
+  - label: B
+    content: '11'
+  - label: C
+    content: '22'
+  - label: D
+    content: '25'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 因數與倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-1 因數與倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 下列選項中所表示的數，哪一個與 72 的最大公因數為 6？
+  options:
+  - label: A
+    content: $2\times 3\times 5^{2}$
+  - label: B
+    content: $2\times 3^{2}\times 5$
+  - label: C
+    content: $2^{2}\times 3\times 5$
+  - label: D
+    content: $2^{2}\times 3^{2}\times 5$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 設 $a = 2^{2}\times 3\times 5$，$b = 350$ 求 $[a, b] =$？
+  options:
+  - label: A
+    content: '4200'
+  - label: B
+    content: '1050'
+  - label: C
+    content: '1680'
+  - label: D
+    content: '2100'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 已知 A= $4^{6}\times 5^{11}$，判斷 A 是幾位數？
+  options:
+  - label: A
+    content: '6'
+  - label: B
+    content: '11'
+  - label: C
+    content: '12'
+  - label: D
+    content: '13'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 判斷下列算式之值何者小於 0？
+  options:
+  - label: A
+    content: $1 - (-1.5)^{5}$
+  - label: B
+    content: $1 - (-1.6)^{6}$
+  - label: C
+    content: $1 - (-0.9)^{7}$
+  - label: D
+    content: $1 - (1)^{10}$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+- id: doc_113_新北_忠孝_數學_g7s1e2_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 估算 $2024\times \left(-\frac{2024}{2023}\right)$ 最接近下列哪一個數?
+  options:
+  - label: A
+    content: '-2023'
+  - label: B
+    content: '-2024'
+  - label: C
+    content: '-2025'
+  - label: D
+    content: '-2026'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '計算下列各式的值(請化成最簡分數)
+
+    $\left(-1\frac{1}{3}\right)\times \frac{1}{6}\times \left(-1\frac{4}{5}\right)\div
+    \frac{1}{2}=$______'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: '計算下列各式的值(請化成最簡分數)
+
+    $\frac{34}{99}-\left(\frac{7}{99}-\frac{17}{22}\right)=$______'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 求 2024 的標準分解式為______。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 因數與倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-1 因數與倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: $2^3 \times 11 \times 23$
+    qwen: $2^3 \times 11 \times 23$
+  answer:
+  - $2^3 \times 11 \times 23$
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 3867□ 是 11 的倍數請問□=______。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-1
+      title: 因數與倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-1 因數與倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: '6'
+    qwen: '6'
+  answer:
+  - '6'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: $a = (27)^{5}$ , $b = 3^{5}\times 3^{5}$ , $c = 3^{20}\div 3^{4}$ 寫出 a、b、c
+    的大小關係______。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
+  ai_answers:
+    gemini: $c > a > b$
+    qwen: $b < a < c$
+    gemini_high: $c > a > b$
+  answer:
+  - $c > a > b$
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 小忠為了布置教室，買了三條緞帶分別長 144 公分、180 公分、240 公分，要將緞帶分成每條等長(長度為整數)，最少可分成______條。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: '47'
+    qwen: '47'
+  answer:
+  - '47'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 忠孝國中 7 年 13 班有 30 人，其中有 $\frac{5}{6}$ 的人會游泳，$\frac{3}{5}$ 的人會彈鋼琴，其中會游泳的又會彈鋼琴的，會有______人。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '13'
+    qwen: '15'
+    gemini_high: $13 \sim 18$
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 甲車依逆時針方向繞著圓周行駛，每 1 小時繞一周；乙車依順時針方向繞著圓周行駛，每 45 分鐘繞一周；丙車沿著直徑 $\overline{AB}$
+    方向來回行駛，每 20 分鐘來回一趟，如圖。若甲、乙、丙三車同時由 A 點出發，則出發後，甲、乙、丙三車又同時在 A 點相遇，最快是在______小時後。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_新北_忠孝_數學_g7s1e2/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 251.67
+      - 115.53
+      - 353.78
+      - 235.31
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: '3'
+    qwen: '3'
+  answer:
+  - '3'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 小忠有容量一樣的一桶水與一桶濃縮果汁，小忠用勺子舀了一瓢水放入濃縮果汁中，再從濃縮果汁中舀了相同容量的液體放回水中，最後測量發現其中一桶的水佔了此桶容量的
+    $\frac{23}{41}$，請問另一桶的水佔容量的______。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: $\frac{18}{41}$
+    qwen: $\frac{18}{41}$
+  answer:
+  - $\frac{18}{41}$
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 已知 $(a, b) = 2$ ， $a\times b = 420$ ，請問 $a+b$ 的最小值______。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-2
+      title: 最大公因數與最小公倍數
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-2 最大公因數與最小公倍數
+    labeled_by: ai
+  ai_answers:
+    gemini: '44'
+    qwen: '44'
+  answer:
+  - '44'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_忠孝_數學_g7s1e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '計算 $\frac{-3}{1^{2}\times 2^{2}} + \frac{-5}{2^{2}\times 3^{2}} + \frac{-7}{3^{2}\times
+    4^{2}} + \frac{-9}{4^{2}\times 5^{2}} =$
+
+    (提示: $\frac{5}{2\times 7} = \frac{1}{2} - \frac{1}{7}$)'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-3
+      title: 分數的四則運算
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-3 分數的四則運算
+    labeled_by: ai
+- id: doc_113_新北_忠孝_數學_g7s1e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: (1)假設在光照充沛的環境下，1 個綠藻細胞每 20 小時可分裂成 4 個綠藻細胞，且分裂後的細胞亦可繼續分裂。今從 1 個綠藻細胞開始培養，若培養期間綠藻細胞皆未死亡且培養環境的光照充沛，經過
+    15 天後，共分裂成 $4^{k}$ 個綠藻細胞，則 k 之值為何？
+  group_stem: 健康生技公司培養綠藻以製作「綠藻粉」，再經過後續的加工步驟，製成綠藻相關的保健食品。已知該公司製作每 1 公克的「綠藻粉」需要 60 億個綠藻細胞。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai
+- id: doc_113_新北_忠孝_數學_g7s1e2_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 2
+  stem: (2)承(1)，已知 60 億介於 $2^{32}$ 與 $2^{33}$ 之間，請判斷 $4^{k}$ 個綠藻細胞是否足夠製作 8 公克的「綠藻粉」？
+  group_stem: 健康生技公司培養綠藻以製作「綠藻粉」，再經過後續的加工步驟，製成綠藻相關的保健食品。已知該公司製作每 1 公克的「綠藻粉」需要 60 億個綠藻細胞。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 2-4
+      title: 指數律
+      chapter: 第2章 分數的運算
+    textbook: 七上 2-4 指數律
+    labeled_by: ai

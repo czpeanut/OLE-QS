@@ -1,0 +1,235 @@
+source: data/bank/doc_111_彰化_溪湖_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 91 可以分解為 7 與 13 的乘積，7 和 13 皆為質數，因此符合題意。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 題目的帶分數 $-2\frac{5}{8}$ 等於 $-(2 + \frac{5}{8})$，對應選項 (D)。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目與選項之完整且未亂碼的原始數學式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目與選項中的數學式含有格式轉換亂碼（如『23 × 32』與選項中的『11』、『』等符號排列異常），缺乏正確的原始題目排版，無法準確辨識各選項之數式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目與選項之完整且未亂碼的原始數學式
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 根據指數律，7⁶ ÷ 7³ = 7⁶⁻³ = 7³ = 343，因此 7⁶ 是 7³ 的 343 倍。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 將 252 與 84 做質因數分解：252 = 2² × 3² × 7，84 = 2² × 3 × 7。選項 (C) 2² × 3
+        × 5² × 7 與 252 的質因數共同最高次方為 2²、3¹、7¹，其最大公因數恰為 2² × 3 × 7 = 84。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 質數有 127 共 1 個（a = 1）；合數有 297 共 1 個（b = 1）；11 的倍數有 0 和 297 共 2 個（c
+        = 2）。故 a + b + c = 1 + 1 + 2 = 4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 若 d 為 a 與 b 的最大公因數，則 d² 必整除 a×b。選項 (D) 的 27² = 3⁶，但 a×b 中 3 的最高次方僅為
+        5 次方，無法被 3⁶ 整除，故不可能為最大公因數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目與選項的完整算式內容（因文字亂碼損毀無法判讀）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目及選項中的數學式含有大量亂碼與缺漏符號，無法辨識原始題目算式與選項內容。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目與選項的完整算式內容（因文字亂碼損毀無法判讀）
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s2_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 正方形瓷磚的最大邊長為長和寬的最大公因數 gcd(720, 630) = 90 公分。因此所需的瓷磚塊數為 (720 ÷ 90)
+        × (630 ÷ 90) = 8 × 7 = 56 塊。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目數學式排版亂碼，缺少正確完整的數式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中「\frac{2}{5} 2 」出現排版亂碼與符號錯置，無法明確辨識原本的完整算式或數值。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目數學式排版亂碼，缺少正確完整的數式
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^2×3×7×11
+      reasoning: 924除以2得462，462除以2得231，231除以3得77，77除以7得11，故質因數分解為2^2×3×7×11。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 每堆積木個數必須是210的因數且介於3到10之間（含）。210在3到10之間的因數有3、5、6、7、10，共5種可能的分堆方法。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2×3²
+      - 2⁵×3⁴×5×7²×11
+      reasoning: (1) 將 270 化為標準分解式 2×3³×5，與 2³×3²×7 取共同質因數的最小次方得 2×3²。(2) 最小公倍數取所有質因數的最大次方得
+        2⁵×3⁴×5×7²×11。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s3_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - b > a > c
+      reasoning: 各數化為小數分別為 $a = -1.5$、$b = -1.2$、$c \approx -1.714$。因為負數的絕對值越大其值越小，故大小關係為
+        $b > a > c$。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s4_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1820元
+      reasoning: 硬幣個數扣除2後為5、6、9的公倍數，最小公倍數為90，故硬幣個數為90k+2。金額在1000至2000元之間，即硬幣在100至200個之間，當k=2時硬幣有182個，總金額為182×10=1820元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_彰化_溪湖_數學_g7s1e2_s4_4
+  number: 4
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '27'
+      - '80'
+      reasoning: 將六個數質因數分解後，全部乘積為 2^8 * 3^6 * 5^2 * 7^2 * 13^2，故每組乘積需為 2^4 * 3^3 *
+        5 * 7 * 13。由於 91 包含質因數 7 與 13，另一組必包含 39 與 126，因此與 91 同組的數需從 27、40、80 中挑選，經檢驗
+        91 * 27 * 80 恰等於目標乘積。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

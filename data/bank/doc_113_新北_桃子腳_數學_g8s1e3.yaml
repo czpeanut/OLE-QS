@@ -1,0 +1,580 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 3
+  city: 新北
+  school_short: 桃子腳
+  school: 桃子腳國民中小學
+  scope_note: 翰林版第三冊 4-1~5-1
+  id: doc_113_新北_桃子腳_數學_g8s1e3
+  title: 桃子腳國民中小學 113學年度第1學期第3次定期評量 8年級數學科試題
+  exam_name: 113學年度第1學期第3次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題（每題 5 分，佔 50％）
+    count: 10
+  - ord: 2
+    name: 二、填充題（每個答案 4 分，佔 40％）
+    count: 8
+  - ord: 3
+    name: 三、非選題（每題答案 5 分，佔 10％）
+    count: 0
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/1-3/新北/桃子腳.pdf
+  scope:
+    lessons:
+    - number: 4-1
+      title: null
+    - number: 5-1
+      title: null
+    publisher: 翰林版
+    raw: 翰林版第三冊 4-1~5-1
+    volume: 第三冊
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: 翰林
+questions:
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 有四個連續奇數，由小而大依次排好，若前兩個數的乘積加上後兩個數的乘積等於 945，且最小數為 $x$，則依題意可列出下列何式？
+  options:
+  - label: A
+    content: $x(x+2)+(x+4)(x+6)=945$
+  - label: B
+    content: $x(x+1)+(x+3)(x+5)=945$
+  - label: C
+    content: $x(x+3)+(x+5)(x+7)=945$
+  - label: D
+    content: $[x(x+1)]^{2}+[(x+2)(x+3)]^{2}=945$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 若 $(3x+7)^{2}-9=4$，則 $3x+7$ 之值為何？
+  options:
+  - label: A
+    content: '13'
+  - label: B
+    content: $\pm 13$
+  - label: C
+    content: $\pm\sqrt{13}$
+  - label: D
+    content: $\sqrt{13}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: '如表為一年甲班 40 名學生數學科成績的累積次數分配表：
+
+
+    | 成績（分） | 40～50 | 50～60 | 60～70 | 70～80 | 80～90 | 90～100 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數（人） | | | | $x$ | 8 | |
+
+    | 累積次數（人） | 7 | 10 | 18 | | 35 | 40 |
+
+
+    則下列敘述何者正確？'
+  options:
+  - label: A
+    content: $x=10$
+  - label: B
+    content: 不及格者有 18 人
+  - label: C
+    content: 70～90 分者有 17 人
+  - label: D
+    content: 70 分以上者有 17 人。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: '如表的資料，判斷下列敘述何者正確？
+
+
+    | 體重（公斤） | 相對次數（％） | 累積相對次數（％） |
+
+    | :---: | :---: | :---: |
+
+    | 40～45 | 40 | 80 |'
+  options:
+  - label: A
+    content: 45 公斤以上占全部的 20％
+  - label: B
+    content: 40～45 公斤占全部的 30％
+  - label: C
+    content: 35～40 公斤共有 40 人
+  - label: D
+    content: 不滿 45 公斤共 80 人。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 甲、乙兩人同解一個一元二次方程式，甲生算錯判別式，其餘均沒錯，得兩解為 $4$、$-5$，乙生看錯 $x$ 項係數，其餘均沒錯，得兩解為 $-2$、1，則正確的方程式為何？
+  options:
+  - label: A
+    content: $x^{2}+x+2=0$
+  - label: B
+    content: $x^{2}-x+2=0$
+  - label: C
+    content: $x^{2}+x-2=0$
+  - label: D
+    content: $x^{2}-x-2=0$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: D
+    gemini_high: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 利用配方法將方程式 $16x^{2}-16x+1=0$ 化成 $(4x+a)^{2}=b$ 的形式，則 $a-b$ 的值是多少？
+  options:
+  - label: A
+    content: $-5$
+  - label: B
+    content: $-4$
+  - label: C
+    content: '0'
+  - label: D
+    content: $-3$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 利用配方法解 $x^{2}+4x-7=0$ 時，最後會得到下列哪一個結果？
+  options:
+  - label: A
+    content: $(x+2)^{2}=7$
+  - label: B
+    content: $(x+2)^{2}=11$
+  - label: C
+    content: $(x-2)^{2}=5$
+  - label: D
+    content: $(x+4)^{2}=7$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 若 $\alpha$ 是方程式 $x^{2}+3x-9=0$ 的解，則 $3\alpha^{2}+9\alpha-14$ 之值為何？
+  options:
+  - label: A
+    content: $-14$
+  - label: B
+    content: '10'
+  - label: C
+    content: '13'
+  - label: D
+    content: 14。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 一元二次方程式 $3x^{2}-4x+5=0$ 的兩根為何？
+  options:
+  - label: A
+    content: 相異兩實根
+  - label: B
+    content: 相等實根
+  - label: C
+    content: 沒有實數解
+  - label: D
+    content: 以上皆非。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 若 $x>0$，且 $-x^{2}+x+1=0$，則 $2x^{2}-4x-1$ 之值為何？
+  options:
+  - label: A
+    content: $\sqrt{5}$
+  - label: B
+    content: $-\sqrt{5}$
+  - label: C
+    content: $2\sqrt{5}$
+  - label: D
+    content: $-2\sqrt{5}$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 若 $x=m$ 為方程式 $x^{2}-7x-1=259$ 與 $x^{2}+2x-7=145$ 的解，則 $20+m=$【 ① 】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '7'
+    qwen: '8'
+    gemini_high: '8'
+  answer:
+  - '8'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知 $x$ 的一元二次式 $(x-m)(x-2)+4$ 為完全平方式，則 $m=$【 ② 】或【 ③ 】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: 6；-2
+    qwen: 6；-2
+  answer:
+  - '6'
+  - '-2'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 若方程式 $x^{2}+4x+a=0$ 有一根為 $-2+\sqrt{11}$，則 $a=$【 ④ 】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: '-7'
+    qwen: '-7'
+  answer:
+  - '-7'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 若 $-2$ 為一元二次方程式 $mx^{2}+3x-(m+3)=0$ 的一個解，求 $m$ 的值 $=$【 ⑤ 】及此方程式的另外一個解 $=$【
+    ⑥ 】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: 3；1
+    qwen: 3；1
+  answer:
+  - '3'
+  - '1'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 將 $x^{2}+\frac{b}{a}x$ 配成一完全平方式，需加上【 ⑦ 】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{b^2}{4a^2}
+    qwen: $\frac{b^{2}}{4a^{2}}$
+  answer:
+  - \frac{b^2}{4a^2}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 方程式 $\frac{1}{4}x^{2}+\frac{1}{3}x-\frac{1}{2}=0$ 的解為 $x=$【 ⑧ 】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{-2\pm\sqrt{22}}{3}
+    qwen: $\frac{-2 \pm \sqrt{22}}{3}$
+  answer:
+  - \frac{-2\pm\sqrt{22}}{3}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 柳橙園中有 16 棵柳橙樹，每棵平均可生產柳橙 400 個。若柳橙園中，每加種 1 棵，每棵平均產量減少 10 個，則果農需加種【 ⑨ 】棵，才能收成
+    7840 個柳橙。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '12'
+    qwen: '12'
+  answer:
+  - '12'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_桃子腳_數學_g8s1e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 如圖是國內某家航空公司應徵空服人員身高的累積相對次數分配折線圖，已知初選的條件為身高 165～180 公分，若身高 175～190 公分的有 26
+    人，則通過初選的有【 ⑩ 】人？
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_新北_桃子腳_數學_g8s1e3/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 491.48
+      - 716.34
+      - 679.45
+      - 865.72
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: '91'
+    qwen: '91'
+  answer:
+  - '91'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen

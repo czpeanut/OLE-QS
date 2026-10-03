@@ -1,0 +1,253 @@
+source: data/bank/doc_111_高雄_林園_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_高雄_林園_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：選項 (C) 完整的不等式內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 選項 (C) 內容不完整（僅有「x/2」而缺少完整不等式），題目文字排版殘缺，無法完整驗證所有選項。
+      confidence: 0.9
+      missing_context: true
+      missing_what: 選項 (C) 完整的不等式內容
+- id: doc_111_高雄_林園_數學_g7s2e3_s1_3
+  number: 3
+  type: single
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：完整題幹問句與完整的各選項文字描述
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題幹問句未完整（未說明要選何者正確、何者錯誤或從哪一步驟開始出錯），且選項文字有缺漏與錯位，無法客觀作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整題幹問句與完整的各選項文字描述
+- id: doc_111_高雄_林園_數學_g7s2e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 當車速為90 km/h時，所需時間為15/90小時=10分鐘；車速為60 km/h時，所需時間為15/60小時=15分鐘。時間範圍在10到15分鐘之間，選項中只有(C)
+        12分鐘符合。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s1_5
+  number: 5
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 全班共36人，小於45公斤的人數為35~40公斤（1人）與40~45公斤（8人），故大於等於45公斤的人數為 36 - (1 +
+        8) = 27人（即 9 + 5 + 7 + 6 = 27人）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s1_6
+  number: 6
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 閱讀時間的圓心角為 360° - (135° + 120° + 30° + 60°) = 15°。一天有 24 小時（1440 分鐘），因此閱讀時間為
+        1440 × (15° / 360°) = 60 分鐘。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 總人數16人，中位數為2.5球代表第8人投進2球、第9人投進3球，故投進2球以內的人數累計為8人，即2+2+a=8，得a=4，進而算出b=2。比較各球數次數，投進2球的次數最多（4人），故眾數為2球。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 算術平均數容易受到資料中的極端值（過大或過小的數值）影響，因此選項 (B) 的敘述錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s1_9
+  number: 9
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設原始胎壓為 x PSI，依修車步驟可列不等式 26 ≤ 3x - 1 ≤ 47，同加 1 得 27 ≤ 3x ≤ 48，同除以
+        3 得 9 ≤ x ≤ 16，故選 (B)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由11個數由小到大排列可知，第6個數為中位數a=7；出現最多次的數為眾數c=10。由算術平均數為8得總和為88，即1+1+2+4+7+7+10+10+10+b+19=88，解得b=17。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x>11
+      - x>2
+      - x\le\frac{13}{4}
+      reasoning: (1) 移項得 x > 6 + 5 = 11；(2) 移項得 4x > 8，解得 x > 2；(3) 兩邊同乘 30 得 5(2x+1)-6(x-2)
+        ≤ 30，化簡得 4x+17 ≤ 30，解得 x ≤ 13/4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - a \le \frac{8}{3}
+      reasoning: 將 x = -3 代入不等式得 -3a - 3 ≥ 4(-3) + 1，整理得 -3a - 3 ≥ -11，即 -3a ≥ -8，同除以
+        -3 變號得 a ≤ 8/3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 10000-x\ge 5(500+x)
+      - 0<x\le 1250
+      reasoning: 媽媽給小華 x 元後，媽媽有 (10000-x) 元，小華有 (500+x) 元，不少於即大於等於，故列式為 10000-x >=
+        5(500+x)。解不等式得 6x <= 7500，即 x <= 1250，配合題幹 x>0，解為 0<x<=1250。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 18 \le x < 40
+      reasoning: 「滿18歲」表示大於或等於18歲（x >= 18），「未滿40歲」表示小於40歲（x < 40），因此x的範圍為 18 <= x
+        < 40。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：72人參加活動抓到糖果數的完整統計表數據
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中提及的統計表格內容缺失且文字遭到截斷，缺乏72人抓到糖果數的完整次數分配表，無法計算中位數與眾數。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 72人參加活動抓到糖果數的完整統計表數據
+- id: doc_111_高雄_林園_數學_g7s2e3_s2_15
+  number: 15
+  type: fill
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：第8題的體重分配直方圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題幹包含第6至10題，其中第8題需要「體重分配直方圖」，但提供的圖片僅有第7題的圓形圖，缺少第8題的完整直方圖資訊，無法完整作答。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 第8題的體重分配直方圖
+- id: doc_111_高雄_林園_數學_g7s2e3_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - a = 9
+      - b = 36
+      reasoning: 乙箱45顆球的中位數為第23顆（號碼32），代表乙箱中有22顆小於32、22顆大於32。全體1~90中，小於32的有31顆、大於32的有58顆，故甲箱中小於32的有
+        a = 31 - 22 = 9 顆，大於32的有 b = 58 - 22 = 36 顆。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e3_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x/15 + x/10 > 1
+      - x > 6
+      reasoning: 去程時間為 x/15 小時，回程時間為 x/10 小時，總時間超過 1 小時故列式為 x/15 + x/10 > 1；通分化簡得
+        5x/30 > 1，解得 x > 6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

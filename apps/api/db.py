@@ -17,19 +17,26 @@ from sqlalchemy.orm import Session, sessionmaker
 
 from .models import Base
 
-DB_PATH = Path(os.environ.get("OLEQS_DB", "data/oleqs.db"))
-DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-engine = create_engine(f"sqlite:///{DB_PATH}", future=True)
+# OLEQS_DATABASE_URL 有設（例如 Supabase 的 postgresql://…）就用 Postgres，否則用本機 SQLite
+DATABASE_URL = os.environ.get("OLEQS_DATABASE_URL")
+if DATABASE_URL:
+    engine = create_engine(DATABASE_URL.replace("postgres://", "postgresql://", 1),
+                           pool_pre_ping=True, pool_size=5, max_overflow=5, future=True)
+else:
+    DB_PATH = Path(os.environ.get("OLEQS_DB", "data/oleqs.db"))
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    engine = create_engine(f"sqlite:///{DB_PATH}", future=True)
+IS_PG = engine.dialect.name == "postgresql"
 SessionLocal = sessionmaker(bind=engine, expire_on_commit=False, future=True)
 
 
-@event.listens_for(engine, "connect")
-def _sqlite_pragmas(conn, _):
-    cur = conn.cursor()
-    cur.execute("PRAGMA foreign_keys=ON")     # SQLite 預設不強制外鍵，必須手動開
-    cur.execute("PRAGMA journal_mode=WAL")
-    cur.close()
+if not IS_PG:
+    @event.listens_for(engine, "connect")
+    def _sqlite_pragmas(conn, _):
+        cur = conn.cursor()
+        cur.execute("PRAGMA foreign_keys=ON")     # SQLite 預設不強制外鍵，必須手動開
+        cur.execute("PRAGMA journal_mode=WAL")
+        cur.close()
 
 
 # 題幹與選項合併成一份可搜尋文字。用 external content 會讓刪除同步變複雜，
@@ -44,12 +51,20 @@ CREATE VIRTUAL TABLE IF NOT EXISTS question_fts USING fts5(
 
 
 def init_db() -> None:
+    # Postgres 的表與搜尋索引由 deploy/supabase/schema.sql 建立，這裡不動
+    if IS_PG:
+        return
     Base.metadata.create_all(engine)
     with engine.begin() as conn:
         conn.execute(text(FTS_DDL))
 
 
 def reindex_question(session: Session, question_id: str, body: str) -> None:
+    if IS_PG:
+        session.execute(text("INSERT INTO question_search (question_id, body) VALUES (:qid, :body) "
+                             "ON CONFLICT (question_id) DO UPDATE SET body = excluded.body"),
+                        {"qid": question_id, "body": body})
+        return
     session.execute(text("DELETE FROM question_fts WHERE question_id = :qid"),
                     {"qid": question_id})
     session.execute(
@@ -65,6 +80,11 @@ def search_ids(session: Session, query: str, limit: int = 500) -> list[str]:
     q = (query or "").strip()
     if not q:
         return []
+    if IS_PG:            # pg_trgm 的 GIN 索引支援 ILIKE 子字串比對
+        like = "%" + q.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_") + "%"
+        rows = session.execute(text("SELECT question_id FROM question_search WHERE body ILIKE :q LIMIT :lim"),
+                               {"q": like, "lim": limit}).all()
+        return [r[0] for r in rows]
     if len(q) >= 3:
         rows = session.execute(
             text("SELECT question_id FROM question_fts "

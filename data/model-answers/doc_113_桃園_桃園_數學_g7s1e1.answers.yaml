@@ -1,0 +1,328 @@
+source: data/bank/doc_113_桃園_桃園_數學_g7s1e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 負數的大小比較中，絕對值愈大者其值愈小，故 -3 < -2 1/2 < -2；正數大於 0 且大於負數，因此完整大小關係為 -3
+        < -2 1/2 < -2 < 0 < 2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 美花答對第 1 題（-(-8)=8）與第 5 題（-75-(-82)=7），共答對 2 題，每題 20 分，總共應得 40 分。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：選項 (D) 完整的科學記號指數數值
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字排版錯亂，選項 (D) 的指數部分缺失，無法判斷其完整數值（如 5.57×10^-8 或 5.57×10^-9），進而無法確定最小值為
+        (C) 或 (D)。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 選項 (D) 完整的科學記號指數數值
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：算式(己)的完整且正確的題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及要觀察(甲)到(己)，但算式中(己)的標籤缺失且文字「2×(-1) 5<(-4 2)×(-1 5)」存在排版/辨識錯誤，無法確認完整算式以判定正確個數。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 算式(己)的完整且正確的題目內容
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 由 |甲數| + 乙數 = 0 可得 乙數 = -|甲數|，兩邊取絕對值後為 |乙數| = |- |甲數|| = |甲數|，故 (C)
+        恆成立。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 科學記號的形式為 a×10ⁿ，其中 1≤|a|<10 且 n 為整數。符合條件的有 3×10⁻²、1.48×10（即 1.48×10¹）及
+        2.005×10³，共 3 項。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 方程式可改寫為 |x - 3| = |x - (-2)|，代表 x 到 3 的距離等於 x 到 -2 的距離，因此 x 是 -2
+        和 3 的中點。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 由題意可知 $n < 0$ 且 $|m| < |n|$，因此 $m+n < 0$。選項 (A) 中 $n$ 為負數、$(m+n)$
+        為負數，負負得正，故其值為正數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 由題意可知 $b < c < 0 < d$。因為 $a$ 與 $c$ 互為相反數，故 $a = -c > 0$ 且 $|a| =
+        |c|$。由於 $b < c < 0$，可得 $|b| > |c| = |a|$，因此 $|a| > |b|$（選項A）不正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 0.000071 小數點向右移5位為 7.1，因此科學記號表示為 7.1×10⁻⁵，選項 (A) 正確。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 由題意知 $a < b < c < d$，可設 $a=0$，則 $d=16$。因 $|c-a|=10$，得 $c=10$；因 $|b-d|=11$，得
+        $b=16-11=5$。因此線段 $BC = c - b = 10 - 5 = 5$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '14'
+      reasoning: 由 C 為 AB 中點且 BC=4 可知 AB 長度為 8，即 |k - 6| = 8。解得 k = 14 或 k = -2，因題目限制
+        k > 0，故 k = 14。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 89
+      - (2) 11
+      - (3) -142
+      - (4) 108
+      - (5) -9500
+      reasoning: 依四則運算規則及指數、絕對值定義依序計算：(1) 1+48+40=89；(2) 8+(-15)÷(-5)=11；(3) -34+(-8)-100=-142；(4)
+        45-18+81=108；(5) -95×(54+38+8)=-9500。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '22'
+      reasoning: 由題目可知 2.25 < |甲數| ≤ 13，且甲數為整數，故 |甲數| 可為 3 到 13 共 11 個值。每個絕對值對應正負兩種可能，因此甲數共有
+        11 × 2 = 22 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '34'
+      reasoning: 1.234×10^10 為 11 位數，故 A=11；1.234×10^-10 = 0.0000000001234，小數點後共有
+        13 位數，故 B=13；從小數點後第 10 位開始出現不為 0 的數字，故 C=10。因此 A+B+C = 11+13+10 = 34。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2或0
+      reasoning: 由甲、乙、丙為整數，絕對值為非負整數，且2|甲+5|+3|乙|+4|丙-6|=3，唯一非負整數解為|甲+5|=0、|乙|=1、|丙-6|=0。因此甲=-5、乙=±1、丙=6，相加得-5+(±1)+6=2或0。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 20^4
+      reasoning: 依題意，1須臾 = 20羅預 = 20×20彈指 = 20×20×20瞬 = 20×20×20×20念（剎那），因此1須臾為1剎那的20^4倍。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '8'
+      reasoning: 原式等於 708。708 = 7.08 × 10^2，得 a = 2；708 = 0.000708 × 10^6，得 b = 6。故
+        a + b = 2 + 6 = 8。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '4562'
+      reasoning: 將式子展開為 (-151846) + (甲數 × 456) + (456 × 10) = -151846 + 151848 + 4560
+        = 2 + 4560 = 4562。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s3_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 答錯 7 題，未作答 8 題
+      - (2) 50 分
+      reasoning: 小芬作答25題中對18題，故答錯 25-18=7 題；未作答題數為 33-25=8 題。得分為 18×4 - 7×2 - 8×1
+        = 72 - 14 - 8 = 50 分。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_桃園_桃園_數學_g7s1e1_s4_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：第3大題各小題的具體題目文字與算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供小題題號 3.(1) 至 3.(5)，缺乏具體的題目文字與算式內容，無法進行作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第3大題各小題的具體題目文字與算式
+- id: doc_113_桃園_桃園_數學_g7s1e1_s5_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少具體的數學題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 提供的文字僅有試卷頁碼與欄位資訊，並無實際題目內容，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少具體的數學題目內容

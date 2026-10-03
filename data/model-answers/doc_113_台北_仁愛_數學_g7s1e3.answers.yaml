@@ -1,0 +1,292 @@
+source: data/bank/doc_113_台北_仁愛_數學_g7s1e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整且排版正確的表格內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目表格文字排版錯亂且缺漏，無法確定甲、乙、丙、丁於表格中的確切對應位置，且選項後方混雜其他不相關式子。
+      confidence: 0.9
+      missing_context: true
+      missing_what: 完整且排版正確的表格內容
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_4
+  number: 4
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 化簡代數式並非解方程式，不能任意將式子同乘以4，而應該進行通分，故步驟一就開始出現錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 根據等量公理，方程式兩邊同乘以一個不為0的數，方程式的解（y的值）維持不變。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 原式化簡：4x - [5x - (6x - 3)] - 3 = 4x - (-x + 3) - 3 = 5x - 6。因此 a =
+        5、b = -6，a × b = -30。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設個位數字為 x，則原十位數字為 15-x。對調後的新數十位數字為 x、個位數字為 15-x，新數表示為 10x + (15 -
+        x) = 9x + 15。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 選項 (A) 的解為 x = 0；(B) 化簡得 x = 3，解不為 0；(C) 解為 x = 0；(D) 化簡得 2x - 2
+        = 3x - 2，解為 x = 0。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 一元一次方程式必須含有一個未知數且最高次方為一次的等式。(甲)、(丙)、(丁)、(己)皆是一元一次方程式，(乙)為二次方程式，(戊)不是等式，故共有4個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_11
+  number: 11
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：方程式 5(x+2)= 缺少等號右邊的表達式，且題目與選項排版混雜破損
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字排版錯亂且方程式不完整（如「5(x+2)=」缺少等號右側數值，且與另一題文字混雜），缺少完整的題目條件，無法求解。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 方程式 5(x+2)= 缺少等號右邊的表達式，且題目與選項排版混雜破損
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_14
+  number: 14
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 根據指數律，等式右邊為 17^(9-x)。因為底數相同，指數亦相等，得 2x = 9 - x，解方程式可得 3x = 9，故 x
+        = 3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_15
+  number: 15
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 展開方程式得 0.2x - 1.5 + 0.3x = 6，整理為 0.5x = 7.5，解得 x = 15。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_16
+  number: 16
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設小數為 x，則大數為 15 - x。依題意「小數比大數的 1/4 倍多 7」，可列出方程式 x = 1/4(15 - x) +
+        7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_17
+  number: 17
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 妹妹的錢為 (x - 4) 元，而哥哥的錢為 3x 元，妹妹的錢恰好等於哥哥的錢乘以 1/3 再減去 4 元，即為哥哥的 1/3
+        倍少 4 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_18
+  number: 18
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設三連續偶數為 x-2、x、x+2，其和為 3x = 78，解得中間數 x = 26，故最大的數為 26 + 2 = 28。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_19
+  number: 19
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 設外套成本為 x 元，依題意列式為 x - 0.6x = 200，解得 0.4x = 200，x = 500。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_20
+  number: 20
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設上、下課路線長為 x 公里，根據時間差列式：x/4 - x/10 = 0.6，解得 3x/20 = 0.6，x = 4 公里。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_21
+  number: 21
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 設7-11定價為x元，由0.9x = 0.5x + 36得x = 90；設全家定價為y元，由0.8y - 33 = 0.5y得y
+        = 110。因此7-11定價較便宜。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_22
+  number: 22
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設50元硬幣有x個，則10元硬幣有3x個。依題意列式50x - 10(3x) = 50，得20x = 50，x = 2.5。因硬幣個數必須為整數，故無解。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_23
+  number: 23
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設兩區皆參觀有 x 人，則僅參觀一區有 (15 - x) + (20 - x) = 35 - 2x 人。依題意列式 500x +
+        300(35 - 2x) = 9500，解得 x = 10，全班總人數為 35 - 10 = 25 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_24
+  number: 24
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設原本有 x 個灶位，則總人數為 6x + 2。增加 2 個灶位後改為 5 人一組正好分完，人數為 5(x + 2)。解方程式 6x
+        + 2 = 5(x + 2)，得 x = 8。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_仁愛_數學_g7s1e3_s1_25
+  number: 25
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設填充題有 x 題，則選擇題有 (x - 6) 題。依題意列式：2(x - 6) + 5x = 100，解得 7x = 112，x
+        = 16。總題數為 16 + (16 - 6) = 26 題。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

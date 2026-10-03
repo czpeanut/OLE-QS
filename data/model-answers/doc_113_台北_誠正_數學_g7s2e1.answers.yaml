@@ -1,0 +1,127 @@
+source: data/bank/doc_113_台北_誠正_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台北_誠正_數學_g7s2e1_s1_2
+  number: 2
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -x+4y+3
+      reasoning: 將同類項合併：(3x - 4x) + (-2y + 6y) + (-7 + 10) = -x + 4y + 3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_誠正_數學_g7s2e1_s1_3
+  number: 3
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - -5x+8y+7
+      reasoning: 展開括號得 -x+6y-3-4x+2y+10，合併同類項後得到 -5x+8y+7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_誠正_數學_g7s2e1_s1_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目排版破損，缺少第(15)、(16)、(17)題完整的二元一次聯立方程式內容。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字排版錯亂且缺少完整的方程式內容（例如聯立方程式的第二式或等號兩側常數項無法正確辨認），缺少完整題目資訊。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目排版破損，缺少第(15)、(16)、(17)題完整的二元一次聯立方程式內容。
+- id: doc_113_台北_誠正_數學_g7s2e1_s1_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目中繪有直線L及各線段（A到Y等點）的方格圖形。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目依賴包含直線 L 及各線段的方格圖形，但題目內容中並未提供該圖，無法判斷各線段與直線 L 的位置關係。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少題目中繪有直線L及各線段（A到Y等點）的方格圖形。
+- id: doc_113_台北_誠正_數學_g7s2e1_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '2'
+      - '4'
+      reasoning: 正方形有2條對角線（連接相對頂點），並且有4條對稱軸（2條對角線與2條對邊中點連線）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_誠正_數學_g7s2e1_s1_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '9'
+      reasoning: 三角形面積等於底乘以高除以二。已知面積為 81 且底邊 QR 為 18，則 P 點到 QR 的距離（高）為 (81 * 2) /
+        18 = 9。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台北_誠正_數學_g7s2e1_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中的幾何圖形（以確定∠1的位置與各頂點關係）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「如右圖」，但未提供圖形，無法確認角1的確切位置，因此無法準確作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中的幾何圖形（以確定∠1的位置與各頂點關係）
+- id: doc_113_台北_誠正_數學_g7s2e1_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的「下圖」圖形資訊
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「下圖的粗黑實線」，但未提供該對稱圖形一半的圖檔或座標資訊，無法完成作圖。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中提及的「下圖」圖形資訊
+- id: doc_113_台北_誠正_數學_g7s2e1_s1_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的立體圖形圖片
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目要求根據「右圖」畫出立體圖形的三視圖，但未提供該立體圖形的圖片資訊，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中提及的立體圖形圖片

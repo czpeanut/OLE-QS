@@ -1,0 +1,159 @@
+source: data/bank/doc_113_台中_居仁_數學_g7s1e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_居仁_數學_g7s1e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：正確且無亂碼的方程式題目與選項內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目及選項中的數學式因編碼錯亂導致符號與數字順序顛倒且缺漏，無法正確判讀方程式與各選項的算式內容。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 正確且無亂碼的方程式題目與選項內容
+- id: doc_113_台中_居仁_數學_g7s1e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 分數部分將分子與分母同乘以10，$\frac{4}{0.5}$ 等於 $\frac{40}{5}$，故原方程式等價於 (A) 中的方程式。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e3_s1_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：清晰且排版正確的數學題目原始算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中各小題的一元一次式因排版或字元編碼異常，運算符號、括號與數字順序錯亂顛倒，無法明確辨識原始題目之完整算式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 清晰且排版正確的數學題目原始算式
+- id: doc_113_台中_居仁_數學_g7s1e3_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：清晰且正確排列的一元一次方程式題目原文
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字因排版或擷取錯誤產生嚴重亂碼與符號錯位（例如運算符號與括號位置顛倒混亂），無法確定各小題之完整且正確的方程式內容。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 清晰且正確排列的一元一次方程式題目原文
+- id: doc_113_台中_居仁_數學_g7s1e3_s1_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：第13題的L形幾何圖形，以及開頭/結尾表格題的完整圖表資訊
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目包含多道未明確編號區分的題目，且第13題缺少解題所需的幾何圖形（如圖所示之長度），表格題內容亦不完整，故無法完整作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第13題的L形幾何圖形，以及開頭/結尾表格題的完整圖表資訊
+- id: doc_113_台中_居仁_數學_g7s1e3_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{x+2}{3}
+      reasoning: 設兒子體重為 y 公斤，依題意父親體重 x = 3y - 2，移項得 3y = x + 2，因此兒子體重 y = \frac{x+2}{3}
+        公斤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e3_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：牛肉麵店的公告內容或圖片
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中提及「下圖為牛肉麵店的公告」，但未提供該公告的圖片或文字內容，無法得知調漲金額或外帶費用的計算方式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 牛肉麵店的公告內容或圖片
+- id: doc_113_台中_居仁_數學_g7s1e3_s1_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '9'
+      reasoning: 設100元鈔票有 x 張，則500元鈔票有 (14 - x) 張。依題意列出方程式 100x + 500(14 - x) = 3400，解得
+        x = 9。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e3_s1_11
+  number: 11
+  type: fill
+  images_sent: 3
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '68'
+      reasoning: 設共有 x 桌，依題意列出人數方程式 8x + 4 = 9(x - 1) + 5，解得 x = 8。代入得總人數為 8 × 8 +
+        4 = 68 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e3_s2_1
+  number: 1
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{19}{3}
+      reasoning: 設買了 $x$ 個鮪魚漢堡，則牛肉漢堡有 $(13-x)$ 個。依題意列式 $30x + 45(13-x) = 500 - 10$，解得
+        $15x = 95$，即 $x = \frac{19}{3}$（或 $6\frac{1}{3}$）。
+      confidence: 0.9
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s1e3_s2_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A店
+      - 160分鐘
+      reasoning: (1) 90分鐘費用：A店為 50 + 0.6×30 = 68元，B店為 60 + 0.5×30 = 75元，故選A店划算。(2)
+        設待了 x 分鐘，列式 50 + 0.6(x - 60) = 60 + 0.5(x - 60)，解得 x = 160分鐘（或2小時40分鐘）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

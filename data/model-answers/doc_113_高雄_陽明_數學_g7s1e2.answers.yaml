@@ -1,0 +1,246 @@
+source: data/bank/doc_113_高雄_陽明_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_高雄_陽明_數學_g7s1e2_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將165進行質因數分解可得 $165 = 3 \times 5 \times 11$，其質因數為3、5、11，因此2不是165的質因數。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中含「□」的分數正確表達式，以及選項D的完整正確文字
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目內容缺失分數的具體形式（題目僅寫「若10是一個...」而未正確顯示含「□」的分數表達式），且選項D混入了其他題目的文字，資訊不完整無法確切作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中含「□」的分數正確表達式，以及選項D的完整正確文字
+- id: doc_113_高雄_陽明_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少變數 a 的完整算式，以及變數 b 和 c 的數值或算式定義
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中 a 的算式未完整提供，且完全缺少變數 b 與 c 的數值或定義，無法進行大小比較。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少變數 a 的完整算式，以及變數 b 和 c 的數值或算式定義
+- id: doc_113_高雄_陽明_數學_g7s1e2_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 若質數是合數的因數（如 3 與 6），兩者不互質；若質數不是合數的因數（如 3 與 8），兩者互質，因此質數跟合數不一定互質。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 倒數的定義為兩數相乘等於 1，(−7/8) × (−8/7) = 1，故 −7/8 的倒數確實是 −8/7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中甲、乙、丙、丁四點對應的完整數值
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字殘缺不全，未完整提供甲、乙、丙、丁四點所代表的數值，無法進行距離原點遠近的比較。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中甲、乙、丙、丁四點對應的完整數值
+- id: doc_113_高雄_陽明_數學_g7s1e2_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整且語意正確的題目敘述（A點坐標與移動方向、長度）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目語句與數字出現排版錯置與漏字（例如「A點所表示的數為3單位, 1/3 單位到達B點...再向右移動2」），語意不完整且無法確定起點坐標與移動歷程，無法進行正確計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整且語意正確的題目敘述（A點坐標與移動方向、長度）
+- id: doc_113_高雄_陽明_數學_g7s1e2_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目選項與計算結果（個位數字為 4）不符，可能選項有缺漏或印刷/OCR錯誤
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 連乘積 27×313×47×95 的個位數為 5（奇數乘 5 的個位數必為 5），再加上 59 後個位數為 5+9=14 的個位數
+        4，但選項中無 4，題目選項可能有誤或缺漏。
+      confidence: 0.5
+      missing_context: true
+      missing_what: 題目選項與計算結果（個位數字為 4）不符，可能選項有缺漏或印刷/OCR錯誤
+- id: doc_113_高雄_陽明_數學_g7s1e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '9'
+      reasoning: 根據同底數冪相乘的指數律，底數相同時指數相加：2 + 3 + 4 = 9，因此 □ = 9。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2×3^2
+      - 2^3×5^2×13
+      reasoning: (1) 取兩數共有質因數的最小次方，得 2×3^2。(2) 將 200 化為 2^3×5^2，104 化為 2^3×13，取所有質因數的最高次方，得最小公倍數為
+        2^3×5^2×13。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '60'
+      reasoning: 正整數 N 必須同時為 15 和 12 的公倍數，因此 N 的最小值為 15 與 12 的最小公倍數 [15, 12] = 60。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '63'
+      reasoning: 四數相乘的總積為 24 × 28 × 54 × 63 = 2^6 × 3^6 × 7^2，每組乘積應為 2^3 × 3^3 × 7
+        = 1512。與 24 同組的數為 1512 ÷ 24 = 63。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - c>a>b
+      reasoning: 計算差值：c-a = (20/23 - 19/23) - (23/37 - 24/37) = 1/23 + 1/37 > 0，故
+        c > a；同理 a-b = 1/23 + 1/37 > 0，故 a > b，因此大小關係為 c > a > b。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '52'
+      reasoning: 因 P 與 Q 互為倒數，P×Q=1。展開原式可得 (P×Q + P×22 1/6)×(13/45) = (1 + 179)×(13/45)
+        = 180×(13/45) = 52。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '18'
+      reasoning: 根據兩數的乘積等於其最大公因數與最小公倍數的乘積，設某數為 x，則 x × 24 = 6 × 72，解得 x = 18。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s3_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '12'
+      - '50'
+      reasoning: (1) 最小正方形邊長為長寬的最小公倍數 [6, 4] = 12 公分。(2) 邊長 12k 的正方形需要 (12k/6)×(12k/4)
+        = 6k² 張紙片，當 k=5 時需 150 張（<=200），剩下 200 - 150 = 50 張。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_陽明_數學_g7s1e2_s3_4
+  number: 4
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 30元、40元、60元
+      - (2) 8個
+      reasoning: (1) 蛋糕單價為120的因數且大於等於25、小於120，故可能為30、40、60元。(2) 檢驗三種單價在310到330元之間的整數倍，只有40×8=320元符合，故買了8個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

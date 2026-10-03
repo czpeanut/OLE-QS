@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OLE 題庫組卷</title>
+<style>
+:root{
+  --bg:#f4f5f7; --panel:#fff; --line:#e1e4e9; --ink:#1b1f24; --muted:#687280;
+  --accent:#2563c9; --accent-ink:#fff; --accent-soft:#e8f0fc; --warn:#b4531a; --ok:#1d7a4b; --bad:#b42318;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#13161a; --panel:#1b1f25; --line:#2b3139; --ink:#e5e8ec; --muted:#99a2ae;
+  --accent:#6aa2f2; --accent-ink:#0d1420; --accent-soft:#1c2a3d; --warn:#e3965e; --ok:#5cbf8a; --bad:#f07a70;
+}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;font:15px/1.6 "Noto Sans TC","Noto Sans CJK TC",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink)}
+button,select,input{font:inherit;color:inherit}
+header{position:sticky;top:0;z-index:20;background:var(--panel);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:16px;padding:0 18px;height:54px}
+header .brand{font-weight:800;font-size:18px;letter-spacing:.04em}
+header .brand small{font-weight:500;color:var(--muted);font-size:13px;margin-left:6px}
+nav.tabs{display:flex;gap:4px;margin-left:auto}
+nav.tabs button{border:0;background:none;padding:8px 14px;border-radius:8px;cursor:pointer;color:var(--muted);font-weight:600}
+nav.tabs button.on{background:var(--accent-soft);color:var(--accent)}
+.badge-n{display:inline-block;min-width:20px;padding:0 6px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-size:12px;margin-left:4px}
+main{max-width:1280px;margin:0 auto;padding:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+.filters{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px 12px}
+.filters label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted);font-weight:600}
+select,input[type=text],input[type=number],input[type=search]{padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--bg);font-size:14px;width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);border-radius:99px;padding:3px 11px;font-size:13px;cursor:pointer;background:var(--panel);user-select:none}
+.chip.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.layout{display:grid;grid-template-columns:300px 1fr;gap:14px;margin-top:14px;align-items:start}
+@media (max-width:900px){.layout{grid-template-columns:1fr}}
+.units{position:sticky;top:70px;max-height:calc(100vh - 86px);overflow:auto}
+.units h3,.side h3{margin:0 0 8px;font-size:13px;color:var(--muted)}
+.unit-ch{font-size:12px;color:var(--muted);margin:10px 0 3px;font-weight:700}
+.unit{display:flex;gap:6px;align-items:flex-start;padding:3px 4px;border-radius:6px;cursor:pointer;font-size:14px;overflow-wrap:anywhere}
+.unit:hover{background:var(--accent-soft)}
+.unit .c{margin-left:auto;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+.unit.zero{opacity:.45}
+.unit .code{color:var(--muted);font-size:12px;min-width:3.4em;white-space:nowrap}
+.bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.bar .grow{flex:1}
+.btn{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:14px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.btn.link{border:0;background:none;color:var(--accent);padding:4px 6px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.muted{color:var(--muted)}
+.q{display:flex;gap:10px;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:12px;margin-bottom:10px;cursor:pointer}
+.q.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset;background:var(--accent-soft)}
+.q input[type=checkbox]{width:18px;height:18px;margin-top:3px;accent-color:var(--accent);flex:none}
+.q .body{flex:1;min-width:0}
+.q .stem{white-space:normal}
+.q .grp{font-size:13px;border-left:3px solid var(--line);padding:2px 8px;margin-bottom:6px;color:var(--muted);max-height:6.5em;overflow:hidden}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 16px;margin-top:4px;font-size:14px}
+.opts.c4{grid-template-columns:repeat(4,minmax(0,1fr))}.opts.c1{grid-template-columns:1fr}
+.opts img,.q figure img{max-width:100%;max-height:220px;background:#fff;border-radius:4px}
+.q figure{margin:6px 0}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:12px}
+.tag{border:1px solid var(--line);border-radius:99px;padding:0 8px;color:var(--muted)}
+.tag.u{color:var(--accent);border-color:var(--accent)}
+.tag.ok{color:var(--ok)}.tag.ai{color:var(--warn)}.tag.bad{color:var(--bad)}
+.ans{color:var(--bad);font-weight:700;font-size:13px;margin-top:4px}
+.pager{display:flex;justify-content:center;gap:6px;margin:14px 0}
+.fab{position:fixed;right:22px;bottom:22px;z-index:30;box-shadow:0 4px 14px rgba(0,0,0,.2);border-radius:99px;padding:12px 20px}
+.math sup,.math sub{font-size:.72em}.frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;font-size:.92em;margin:0 .15em}
+.frac .num{border-bottom:1px solid currentColor;padding:0 .3em}.frac .den{padding:0 .3em}
+.ovl,.sqrt{border-top:1px solid currentColor}
+.ovarr{display:inline-flex;flex-direction:column;align-items:center;line-height:1}.ovarr .arr{font-size:.7em}
+.compose{display:grid;grid-template-columns:420px 1fr;gap:14px;align-items:start}
+@media (max-width:1000px){.compose{grid-template-columns:1fr}}
+.side{display:flex;flex-direction:column;gap:12px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px}
+.form label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted);font-weight:600}
+.form .full{grid-column:1/-1}
+.form .check{flex-direction:row;align-items:center;gap:6px;color:var(--ink);font-weight:500;font-size:14px}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{flex:1;border:0;background:var(--panel);padding:6px 4px;cursor:pointer;font-size:13px}
+.seg button.on{background:var(--accent);color:var(--accent-ink);font-weight:700}
+.items{max-height:52vh;overflow:auto;border-top:1px solid var(--line)}
+.it{display:grid;grid-template-columns:28px 1fr 58px 64px;gap:6px;align-items:center;padding:6px 2px;border-bottom:1px solid var(--line);font-size:13px}
+.it .t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.it .ty{color:var(--muted);font-size:11px}
+.it input{padding:3px 5px;font-size:13px}
+.it .ops{display:flex;gap:0}
+.it .ops button{border:0;background:none;cursor:pointer;color:var(--muted);padding:2px 4px}
+.preview{position:sticky;top:70px}
+.preview iframe{width:100%;height:calc(100vh - 150px);border:1px solid var(--line);border-radius:10px;background:#e9ebee}
+.empty{text-align:center;padding:60px 20px;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--panel);padding:8px 16px;border-radius:8px;font-size:14px;z-index:50;opacity:0;transition:opacity .2s}
+.toast.show{opacity:1}
+table.list{width:100%;border-collapse:collapse;font-size:14px}
+table.list td,table.list th{padding:8px;border-bottom:1px solid var(--line);text-align:left}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">OLE 題庫<small>選題組卷</small></div>
+  <span class="muted" id="stat"></span>
+  <nav class="tabs">
+    <button data-tab="pick" class="on">題庫選題</button>
+    <button data-tab="compose">組卷匯出<span class="badge-n" id="cnt">0</span></button>
+    <button data-tab="papers">我的試卷</button>
+  </nav>
+</header>
+
+<main>
+<!-- ───── 題庫選題 ───── -->
+<section id="tab-pick">
+  <div class="card">
+    <div class="filters">
+      <label>科目<select id="f-subject"></select></label>
+      <label id="w-sub">子科<select id="f-sub"></select></label>
+      <label>冊別<select id="f-book"></select></label>
+      <label id="w-pub">版本<select id="f-pub"></select></label>
+      <label>答案<select id="f-answer">
+        <option value="">不限</option>
+        <option value="verified,ai">有答案</option>
+        <option value="verified">答案卷</option>
+        <option value="ai">AI 作答</option>
+        <option value="disputed">待判定</option>
+        <option value="missing">無答案</option>
+      </select></label>
+      <label>附圖<select id="f-fig"><option value="">不限</option><option value="1">有圖</option><option value="0">無圖</option></select></label>
+      <label>學年度<select id="f-year"><option value="">不限</option></select></label>
+      <label>關鍵字<input type="search" id="f-q" placeholder="題幹或選項"></label>
+    </div>
+    <div style="margin-top:10px" class="chips" id="f-types"></div>
+  </div>
+
+  <div class="layout">
+    <aside class="card units">
+      <h3 id="units-title">章節</h3>
+      <div class="bar" style="margin:0 0 6px"><button class="btn link" id="u-all">全部章節</button>
+        <label class="muted" style="font-size:12px;margin-left:auto"><input type="checkbox" id="u-hide0" checked> 隱藏 0 題</label></div>
+      <div class="muted" style="font-size:12px;margin-bottom:4px" id="u-note"></div>
+      <div id="units"></div>
+    </aside>
+    <div>
+      <div class="bar">
+        <strong id="total">—</strong>
+        <span class="grow"></span>
+        <label class="muted" style="font-size:13px"><input type="checkbox" id="show-ans"> 顯示答案</label>
+        <button class="btn" id="sel-page">本頁全選</button>
+        <button class="btn" id="unsel-page">取消本頁</button>
+      </div>
+      <div id="list"></div>
+      <div class="pager" id="pager"></div>
+    </div>
+  </div>
+  <button class="btn primary fab" id="go-compose" hidden>前往組卷（<span id="fab-n">0</span>）</button>
+</section>
+
+<!-- ───── 組卷匯出 ───── -->
+<section id="tab-compose" hidden>
+  <div class="compose">
+    <div class="side">
+      <div class="card">
+        <h3>試卷設定</h3>
+        <div class="form">
+          <label class="full">標題<input type="text" id="s-title" value="段考複習卷"></label>
+          <label class="full">副標題<input type="text" id="s-subtitle" placeholder="例如：七年級數學 第一次段考範圍"></label>
+          <label class="full">輸出<div class="seg" id="s-mode">
+            <button data-v="exam" class="on">試題卷</button><button data-v="answer">答案卷</button><button data-v="key">教師解答卷</button></div></label>
+          <label>版面<div class="seg" id="s-cols"><button data-v="1" class="on">單欄</button><button data-v="2">雙欄</button></div></label>
+          <label>字級<select id="s-fs"><option value="10.5">小</option><option value="11.5" selected>中</option><option value="12.5">大</option></select></label>
+          <label>計算／問答作答行數<input type="number" id="s-lines" min="0" max="20" value="4"></label>
+          <label>&nbsp;<span class="check"><input type="checkbox" id="s-auto" checked>依題型分大題</span></label>
+          <label class="check"><input type="checkbox" id="s-fields" checked>班級座號姓名欄</label>
+          <label class="check"><input type="checkbox" id="s-score" checked>顯示配分</label>
+          <label class="check full"><input type="checkbox" id="s-appendix">試題卷卷末附參考答案</label>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bar" style="margin-bottom:6px">
+          <h3 style="margin:0">已選 <span id="c-n">0</span> 題・總分 <span id="c-total">0</span></h3>
+          <span class="grow"></span>
+          <button class="btn link" id="c-fill">依題型套用預設配分</button>
+          <button class="btn link" id="c-clear" style="color:var(--bad)">清空</button>
+        </div>
+        <div class="items" id="items"></div>
+      </div>
+      <div class="bar">
+        <button class="btn primary" id="dl-pdf">輸出 PDF／列印</button>
+        <button class="btn" id="save">存成我的試卷</button>
+      </div>
+    </div>
+    <div class="preview">
+      <div class="bar"><strong>預覽</strong><span class="muted" id="pv-note" style="font-size:13px"></span><span class="grow"></span><button class="btn" id="pv-refresh">重新整理</button></div>
+      <iframe id="pv" title="試卷預覽"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ───── 我的試卷 ───── -->
+<section id="tab-papers" hidden>
+  <div class="card"><table class="list" id="papers"></table></div>
+</section>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const TYPE = {single:"單選", multiple:"多選", tf:"是非", fill:"填充", matching:"配合", calc:"計算", essay:"問答", group:"題組"};
+const DEFAULT_SCORE = {single:2, multiple:3, tf:1, fill:2, matching:2, calc:5, essay:5, group:2};
+const PAGE = 30;
+let TAX = null, page = 0, lastItems = [];
+const F = {subject:"數學", sub:"", book:"7-1", pub:"翰林", units:new Set(), types:new Set()};
+
+// ── 題籃（存在瀏覽器）：順序、配分與列表顯示用的摘要 ──
+const basket = load("oleqs.basket", {ids:[], score:{}, info:{}});
+function load(k, d){ try{ return JSON.parse(localStorage.getItem(k)) || d }catch{ return d } }
+function persist(){ try{ localStorage.setItem("oleqs.basket", JSON.stringify(basket)) }catch{} ; refreshCount() }
+function inBasket(id){ return basket.ids.includes(id) }
+function add(q){
+  if (inBasket(q.id)) return;
+  basket.ids.push(q.id);
+  basket.score[q.id] = basket.score[q.id] ?? DEFAULT_SCORE[q.type] ?? 2;
+  basket.info[q.id] = {type:q.type, text:plain(q.stem_html).slice(0,80), unit:q.unit?.title || "", book:q.book};
+}
+function remove(id){ basket.ids = basket.ids.filter(x => x !== id); delete basket.score[id]; delete basket.info[id] }
+function plain(h){ const d = document.createElement("div"); d.innerHTML = h || ""; return d.textContent.replace(/\s+/g," ").trim() }
+function refreshCount(){ const n = basket.ids.length; $("#cnt").textContent = n; $("#fab-n").textContent = n; $("#go-compose").hidden = !n }
+function toast(m){ const t = $("#toast"); t.textContent = m; t.classList.add("show"); clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove("show"), 1800) }
+
+// ── 分頁籤 ──
+document.querySelectorAll("nav.tabs button").forEach(b => b.onclick = () => show(b.dataset.tab));
+$("#go-compose").onclick = () => show("compose");
+function show(tab){
+  document.querySelectorAll("nav.tabs button").forEach(b => b.classList.toggle("on", b.dataset.tab === tab));
+  for (const t of ["pick","compose","papers"]) $("#tab-"+t).hidden = t !== tab;
+  $("#go-compose").hidden = tab !== "pick" || !basket.ids.length;
+  if (tab === "compose") { renderItems(); preview() }
+  if (tab === "papers") loadPapers();
+}
+
+// ── 篩選 ──
+async function api(path, opt){ const r = await fetch(path, opt); if (!r.ok) throw new Error((await r.text()).slice(0,200)); return r }
+function opt(sel, list, val){ sel.innerHTML = list.map(([v,t]) => `<option value="${v}">${t}</option>`).join(""); if (val !== undefined) sel.value = val }
+async function init(){
+  TAX = await (await api("/api/taxonomy")).json();
+  opt($("#f-subject"), TAX.subjects.map(s => [s.name, s.name]), F.subject);
+  opt($("#f-book"), TAX.books.map(b => [`${b.grade}-${b.semester}`, b.name]), F.book);
+  opt($("#f-pub"), TAX.publishers.map(p => [p, p]), F.pub);
+  $("#stat").textContent = `收錄 ${TAX.total.toLocaleString()} 題`;
+  opt($("#f-year"), [["","不限"], ...TAX.years.map(y => [y, y])], "");
+  $("#f-types").innerHTML = '<span class="muted" style="font-size:12px;margin-right:4px">題型</span>' +
+    Object.entries(TYPE).filter(([k]) => k !== "group").map(([k,v]) => `<span class="chip" data-v="${k}">${v}</span>`).join("");
+  $("#f-types").onclick = e => { const c = e.target.closest(".chip"); if (!c) return;
+    F.types.has(c.dataset.v) ? F.types.delete(c.dataset.v) : F.types.add(c.dataset.v); c.classList.toggle("on"); search(0) };
+  for (const id of ["#f-answer","#f-fig","#f-year"]) $(id).onchange = () => search(0);
+  let tq; $("#f-q").oninput = () => { clearTimeout(tq); tq = setTimeout(() => search(0), 350) };
+  $("#f-subject").onchange = () => { F.subject = $("#f-subject").value; F.sub = ""; subjectChanged() };
+  $("#f-sub").onchange = () => { F.sub = $("#f-sub").value; loadUnits() };
+  $("#f-book").onchange = () => { F.book = $("#f-book").value; loadUnits() };
+  $("#f-pub").onchange = () => { F.pub = $("#f-pub").value; loadUnits() };
+  $("#u-all").onclick = () => { F.units.clear(); renderUnits(); search(0) };
+  $("#u-hide0").onchange = () => renderUnits();
+  $("#show-ans").onchange = () => renderList();
+  $("#sel-page").onclick = () => { lastItems.forEach(add); persist(); renderList() };
+  $("#unsel-page").onclick = () => { lastItems.forEach(q => remove(q.id)); persist(); renderList() };
+  refreshCount();
+  subjectChanged();
+}
+function subjectChanged(){
+  const s = TAX.subjects.find(x => x.name === F.subject);
+  $("#w-sub").hidden = !s.subs.length;
+  opt($("#f-sub"), [["", "全部"], ...s.subs.map(x => [x, x])], F.sub);
+  // 英語用跨版本主題，數學與自然各版本節次一致，版本只影響章節名稱
+  $("#w-pub").hidden = F.subject === "英語";
+  loadUnits();
+}
+
+let UNITS = [];
+async function loadUnits(){
+  const [g, s] = F.book.split("-");
+  const qs = new URLSearchParams({subject:F.subject, grade:g, semester:s, publisher:F.pub});
+  if (F.sub) qs.set("sub", F.sub);
+  UNITS = await (await api("/api/units?" + qs)).json();
+  F.units.clear();
+  $("#units-title").textContent = F.subject === "英語" ? "文法主題（跨版本）" : `章節（${F.pub}版）`;
+  $("#u-note").textContent = F.subject === "英語" ? "" : TAX.merged.includes(F.subject) ? "三版本節次對齊，合併計數" : "";
+  renderUnits(); search(0);
+}
+function renderUnits(){
+  let html = "", ch = null;
+  const hide0 = $("#u-hide0").checked;
+  for (const u of UNITS) {
+    if (hide0 && !u.count && !F.units.has(u.key)) continue;
+    const head = u.chapter || (u.subject !== F.subject ? u.subject : null);
+    if (head !== ch) { ch = head; if (head) html += `<div class="unit-ch">${esc(head)}</div>` }
+    const lessons = u.lessons && Object.keys(u.lessons).length ? ` title="${esc(Object.entries(u.lessons).map(([p,l]) => p+" "+l).join("、"))}"` : "";
+    html += `<label class="unit ${u.count ? "" : "zero"}"${lessons}><input type="checkbox" data-c="${esc(u.key)}" ${F.units.has(u.key) ? "checked" : ""}>
+      <span class="code">${esc(u.code)}</span><span>${esc(u.title)}</span><span class="c">${u.count.toLocaleString()}</span></label>`;
+  }
+  $("#units").innerHTML = html || '<div class="muted">這一冊沒有章節資料</div>';
+  $("#units").onchange = e => { const c = e.target.dataset.c; if (!c) return;
+    e.target.checked ? F.units.add(c) : F.units.delete(c); search(0) };
+}
+
+async function search(p){
+  page = p;
+  const [g, s] = F.book.split("-");
+  const qs = new URLSearchParams({subject:F.subject, grade:g, semester:s, limit:PAGE, offset:p*PAGE});
+  if (F.sub) qs.set("sub", F.sub);
+  if (F.units.size) { qs.set("units", [...F.units].join(",")); qs.set("publisher", F.pub) }
+  if (F.types.size) qs.set("type", [...F.types].join(","));
+  if ($("#f-answer").value) qs.set("answer", $("#f-answer").value);
+  if ($("#f-fig").value) qs.set("has_figure", $("#f-fig").value === "1");
+  if ($("#f-year").value) qs.set("year", $("#f-year").value);
+  if ($("#f-q").value.trim()) qs.set("q", $("#f-q").value.trim());
+  $("#list").innerHTML = '<div class="empty">載入中…</div>';
+  const data = await (await api("/api/questions?" + qs)).json();
+  lastItems = data.items;
+  $("#total").textContent = `共 ${data.total.toLocaleString()} 題`;
+  renderList(); renderPager(data.total);
+}
+function esc(s){ return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])) }
+function optCols(opts){ if (opts.some(o => o.asset_file)) return "c2"; const m = Math.max(...opts.map(o => (o.content||"").length)); return m <= 7 ? "c4" : m <= 20 ? "" : "c1" }
+function ansTag(q){
+  if (q.answer_status === "verified") return '<span class="tag ok">答案卷</span>';
+  if (q.answer_status === "ai_generated") return `<span class="tag ai">${q.answer_source === "ai:gemini+qwen" ? "AI 雙模型一致" : "AI 多數決"}</span>`;
+  if (q.answer_status === "disputed") return '<span class="tag bad">答案待判定</span>';
+  return '<span class="tag">無答案</span>';
+}
+function renderList(){
+  const showAns = $("#show-ans").checked;
+  if (!lastItems.length) { $("#list").innerHTML = '<div class="empty">查無題目，試著放寬篩選條件</div>'; return }
+  $("#list").innerHTML = lastItems.map(q => {
+    const figs = q.assets.filter(a => a.file).map(a => `<figure><img loading="lazy" src="/api/assets/${esc(a.file)}" alt=""></figure>`).join("");
+    const shared = q.shared_asset?.file ? `<figure><img loading="lazy" src="/api/assets/${esc(q.shared_asset.file)}" alt=""></figure>` : "";
+    const opts = q.options.length ? `<div class="opts ${optCols(q.options)}">${q.options.map(o =>
+      `<div>(${esc(o.label)}) ${o.content_html}${o.asset_file ? `<br><img loading="lazy" src="/api/assets/${esc(o.asset_file)}" alt="">` : ""}</div>`).join("")}</div>` : "";
+    return `<div class="q ${inBasket(q.id) ? "sel" : ""}" data-id="${esc(q.id)}">
+      <input type="checkbox" ${inBasket(q.id) ? "checked" : ""} tabindex="-1">
+      <div class="body">
+        ${q.group_stem_html ? `<div class="grp">${q.group_stem_html}</div>` : ""}${shared}
+        <div class="stem">${q.stem_html}</div>${figs}${opts}
+        ${showAns && q.answer ? `<div class="ans">答：${esc(q.answer.join("、"))}</div>` : ""}
+        <div class="meta">
+          ${q.unit ? `<span class="tag u">${esc(q.unit.code)} ${esc(q.unit.title)}</span>` : ""}
+          <span class="tag">${TYPE[q.type] || q.type}</span>${ansTag(q)}
+          <span class="tag">${esc(q.citation)}</span>
+        </div>
+      </div></div>`;
+  }).join("");
+  $("#list").onclick = e => {
+    if (e.target.closest("a")) return;
+    const card = e.target.closest(".q"); if (!card) return;
+    const q = lastItems.find(x => x.id === card.dataset.id);
+    inBasket(q.id) ? remove(q.id) : add(q); persist();
+    card.classList.toggle("sel", inBasket(q.id)); card.querySelector("input").checked = inBasket(q.id);
+  };
+}
+function renderPager(total){
+  const n = Math.ceil(total / PAGE); if (n <= 1) { $("#pager").innerHTML = ""; return }
+  const btn = (p, t, dis) => `<button class="btn" data-p="${p}" ${dis ? "disabled" : ""}>${t}</button>`;
+  $("#pager").innerHTML = btn(page-1, "上一頁", page === 0) + `<span class="muted" style="align-self:center">第 ${page+1} / ${n} 頁</span>` + btn(page+1, "下一頁", page >= n-1);
+  $("#pager").onclick = e => { const b = e.target.closest("button"); if (b && !b.disabled) { search(+b.dataset.p); scrollTo(0,0) } };
+}
+
+// ── 組卷匯出 ──
+const S = {mode:"exam", columns:1};
+function seg(id, key){ $(id).onclick = e => { const b = e.target.closest("button"); if (!b) return;
+  S[key] = isNaN(+b.dataset.v) ? b.dataset.v : +b.dataset.v;
+  $(id).querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); preview() } }
+seg("#s-mode", "mode"); seg("#s-cols", "columns");
+for (const id of ["#s-title","#s-subtitle","#s-fs","#s-lines","#s-auto","#s-fields","#s-score","#s-appendix"])
+  $(id).addEventListener(id === "#s-title" || id === "#s-subtitle" ? "input" : "change", () => preview());
+function settings(){ return {subtitle:$("#s-subtitle").value, columns:S.columns, font_size:+$("#s-fs").value,
+  answer_lines:+$("#s-lines").value, auto_sections:$("#s-auto").checked, header_fields:$("#s-fields").checked,
+  show_score:$("#s-score").checked, answer_appendix:$("#s-appendix").checked} }
+function payload(){ return {title:$("#s-title").value || "試卷", mode:S.mode, settings:settings(),
+  items:basket.ids.map(id => ({question_id:id, score:basket.score[id] ?? null}))} }
+
+function renderItems(){
+  $("#c-n").textContent = basket.ids.length;
+  $("#c-total").textContent = basket.ids.reduce((a,id) => a + (+basket.score[id] || 0), 0);
+  $("#items").innerHTML = basket.ids.map((id, i) => { const f = basket.info[id] || {};
+    return `<div class="it" data-id="${esc(id)}"><span class="muted">${i+1}</span>
+      <div class="t" title="${esc(f.text)}"><span class="ty">${TYPE[f.type] || ""}・${esc(f.book || "")} ${esc(f.unit || "")}</span><br>${esc(f.text)}</div>
+      <input type="number" min="0" step="0.5" value="${basket.score[id] ?? ""}" aria-label="配分">
+      <span class="ops"><button data-a="up" title="上移">▲</button><button data-a="down" title="下移">▼</button><button data-a="del" title="移除">✕</button></span></div>` }).join("")
+    || '<div class="empty">還沒有選題，回「題庫選題」勾選題目</div>';
+}
+$("#items").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+  const id = b.closest(".it").dataset.id, i = basket.ids.indexOf(id);
+  if (b.dataset.a === "del") remove(id);
+  if (b.dataset.a === "up" && i > 0) [basket.ids[i-1], basket.ids[i]] = [basket.ids[i], basket.ids[i-1]];
+  if (b.dataset.a === "down" && i < basket.ids.length-1) [basket.ids[i+1], basket.ids[i]] = [basket.ids[i], basket.ids[i+1]];
+  persist(); renderItems(); preview() };
+$("#items").onchange = e => { if (e.target.type !== "number") return;
+  basket.score[e.target.closest(".it").dataset.id] = e.target.value === "" ? null : +e.target.value;
+  persist(); renderItems(); preview() };
+$("#c-fill").onclick = () => { basket.ids.forEach(id => basket.score[id] = DEFAULT_SCORE[basket.info[id]?.type] ?? 2); persist(); renderItems(); preview() };
+$("#c-clear").onclick = () => { if (!confirm("清空所有已選題目？")) return; basket.ids = []; basket.score = {}; basket.info = {}; persist(); renderItems(); preview() };
+
+let pvTimer;
+function preview(){ clearTimeout(pvTimer); pvTimer = setTimeout(doPreview, 400) }
+async function doPreview(){
+  if (!basket.ids.length) { $("#pv").srcdoc = '<p style="font-family:sans-serif;color:#888;text-align:center;margin-top:30vh">尚未選題</p>'; return }
+  $("#pv-note").textContent = "排版中…";
+  try {
+    const html = await (await api("/api/render", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(payload())})).text();
+    $("#pv").srcdoc = html; $("#pv-note").textContent = "";
+  } catch (e) { $("#pv-note").textContent = "預覽失敗：" + e.message }
+}
+$("#pv-refresh").onclick = doPreview;
+// 用瀏覽器列印：對話框的「目的地」選「另存為 PDF」即可存檔（與 codexstudy 錯題本列印同一種做法）
+$("#dl-pdf").onclick = async () => {
+  if (!basket.ids.length) return toast("尚未選題");
+  clearTimeout(pvTimer); await doPreview();
+  const w = $("#pv").contentWindow, imgs = [...w.document.images];
+  await Promise.all(imgs.map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r })));
+  await w.document.fonts?.ready;
+  w.focus(); w.print();
+};
+$("#save").onclick = async () => {
+  if (!basket.ids.length) return toast("尚未選題");
+  const p = payload();
+  await api("/api/papers", {method:"POST", headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({title:p.title, subject:F.subject, settings:{...p.settings, mode:p.mode}, items:p.items})});
+  toast("已存到「我的試卷」");
+};
+
+// ── 我的試卷 ──
+async function loadPapers(){
+  const list = await (await api("/api/papers")).json();
+  $("#papers").innerHTML = list.length ? "<tr><th>標題</th><th>科目</th><th>題數</th><th>總分</th><th>更新時間</th><th></th></tr>" + list.map(p =>
+    `<tr data-id="${esc(p.id)}"><td>${esc(p.title)}</td><td>${esc(p.subject || "")}</td><td>${p.count}</td><td>${p.total_score}</td>
+     <td class="muted">${new Date(p.updated_at).toLocaleString()}</td>
+     <td><button class="btn" data-a="open">載入編輯</button> <button class="btn link" data-a="del" style="color:var(--bad)">刪除</button></td></tr>`).join("")
+    : '<tr><td class="empty">還沒有存過試卷</td></tr>';
+}
+$("#papers").onclick = async e => { const b = e.target.closest("button"); if (!b) return;
+  const id = b.closest("tr").dataset.id;
+  if (b.dataset.a === "del") { if (!confirm("刪除這份試卷？")) return; await api("/api/papers/" + id, {method:"DELETE"}); loadPapers(); return }
+  const p = await (await api("/api/papers/" + id)).json();
+  basket.ids = []; basket.score = {}; basket.info = {};
+  for (const it of p.items) { add(it.question); basket.score[it.question.id] = it.score }
+  persist(); $("#s-title").value = p.title; const st = p.settings || {};
+  $("#s-subtitle").value = st.subtitle || ""; show("compose");
+};
+
+init().catch(e => { $("#list").innerHTML = `<div class="empty">連不上伺服器：${esc(e.message)}</div>` });
+</script>
+</body>
+</html>

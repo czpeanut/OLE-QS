@@ -1,0 +1,148 @@
+source: data/bank/doc_113_屏東_中正_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 點 Q(2,-4) 到 x 軸的距離為其 y 座標的絕對值，即 |-4| = 4，並非 2，因此選項 (D) 敘述錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 方程式①中x的係數為2，方程式②中x的係數為3。將①式乘以3得到6x，②式乘以2得到6x，兩式相減（①×3－②×2）即可消去x項。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 點 (-5,0) 的 y 坐標為 0，應位在 x 軸上而非 y 軸上，故 (B) 敘述錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將 x = -1, y = -2 代入聯立方程式得到 -a - 6b = -8 與 -2a + 2b = -2，解得 a = 2、b
+        = 1，故 a + b = 3。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設水蜜桃一顆 x 元、蘋果一顆 y 元，列式 x+2y=170、3x+5y=465，解得 x=80、y=45。選項 (C) 3顆水蜜桃與8顆蘋果的總價為
+        3×80+8×45=600 元，恰好不用找錢。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設年齡差為 d，學生現年為 y，老師現年為 x。由題意可得 y - d = 6 且 x + d = 57，兩式相減得 (x - y)
+        + 2d = 51，又 x - y = d，故 3d = 51，得年齡差 d = 17 歲。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：Q點的正確坐標文字
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字存在嚴重的 OCR 辨識錯誤與混亂（Q 點坐標顯示為『− aa 1 bb, aa』且後面混入二元一次式的無關文字），無法得知
+        Q 點的正確坐標表達式進行判斷。
+      confidence: 0.0
+      missing_context: true
+      missing_what: Q點的正確坐標文字
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_8
+  number: 8
+  type: single
+  images_sent: 2
+  status: missing_context
+  note: gemini 回報缺少素材：完整的二元一次式數值表格（包含甲、乙、丙、丁各格與對應的算式/數值）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目所提供的圖片僅為表格的局部切片，缺少包含二元一次式、各項數據以及甲、乙、丙、丁位置的完整表格，無法計算與判斷。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整的二元一次式數值表格（包含甲、乙、丙、丁各格與對應的算式/數值）
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設單點一片雞排為 x 元、一杯可樂為 y 元，則一份套餐為 x+y-35 元。依題意列式：x+2y = 2(x+y-35) - 10，化簡得
+        x = 80，故單點一片雞排必為 80 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_屏東_中正_數學_g7s2e1_s1_10
+  number: 10
+  type: single
+  images_sent: 6
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+      reasoning: 設單片拼圖長度為 L 公分，兩片交接處重疊長度為 d 公分。依題意可列出聯立方程式：4L - 3d = 23，10L - 9d =
+        56。將第一式乘以 3 減去第二式可得 2L = 13，解得 L = 6.5 公分。

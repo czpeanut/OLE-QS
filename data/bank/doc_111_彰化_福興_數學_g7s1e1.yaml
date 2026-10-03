@@ -1,0 +1,687 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 1
+  city: 彰化
+  school_short: 福興
+  school: 彰化縣福興國中
+  id: doc_111_彰化_福興_數學_g7s1e1
+  title: 彰化縣福興國中 111學年度第1學期第1次定期評量 7年級數學科試題
+  exam_name: 111學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題：每題 4 分,共 40 分
+    count: 10
+  - ord: 2
+    name: 二、填充題：每格 4 分，共 52 分。
+    count: 8
+  - ord: 3
+    name: 三、綜合題：每題 4 分,共 8 分 (要有計算過程,否則 0 分)
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/111/1-1/彰化/福興.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列敘述何者錯誤？
+  options:
+  - label: A
+    content: 數線上的兩個數，右邊的數大於左邊的數
+  - label: B
+    content: 數線上的兩個數，右邊的數一定是正數
+  - label: C
+    content: 數線上邊有一個正數及一個負數，則負數的點在正數的點的左邊
+  - label: D
+    content: 數線上有一個正數及一個負數且互為相反數，則這兩個數到原點的距離相同。
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 如下圖，數線上有 A、B、C、D 四點，試問哪一點的坐標是錯誤的？
+  options:
+  - label: A
+    content: $A(-3\frac{1}{3})$
+  - label: B
+    content: $B(-1)$
+  - label: C
+    content: $C(2.5)$
+  - label: D
+    content: $D(4\frac{3}{4})$
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g7s1e1/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 64.8
+      - 217.31
+      - 417.6
+      - 267.71
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 已知甲數 < 乙數 < 0，且 a＝甲數×甲數，b＝乙數×乙數，c＝甲數×乙數，則 a、b、c 三者的大小關係為何？
+  options:
+  - label: A
+    content: b > a > c
+  - label: B
+    content: b > c > a
+  - label: C
+    content: c > b > a
+  - label: D
+    content: a > c > b
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 以中午 12 時為基準，下午 5 時以＋5 表示，則上午 5 時應表示為何？
+  options:
+  - label: A
+    content: '-5'
+  - label: B
+    content: '-6'
+  - label: C
+    content: '-7'
+  - label: D
+    content: '+7'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 已知甲、乙兩數互為相反數，且甲＝－2.5，則下列敘述何者正確？
+  options:
+  - label: A
+    content: 乙數為 5.2
+  - label: B
+    content: 甲－乙＝0
+  - label: C
+    content: 甲＋乙的相反數等於甲－乙
+  - label: D
+    content: 甲－乙的相反數等於乙－甲。
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 當 a＝6，b＝－9 時，下列何者最小？
+  options:
+  - label: A
+    content: $|a+b|$
+  - label: B
+    content: $|a-b|$
+  - label: C
+    content: $|a|+|b|$
+  - label: D
+    content: $|a|-|b|$
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 若 a＜0 且 b＞0，則 a－b 與 0 的大小關係為何？
+  options:
+  - label: A
+    content: a－b＜0
+  - label: B
+    content: a－b＝0
+  - label: C
+    content: a－b＞0
+  - label: D
+    content: 不能比較
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: $3.85 \times 10^{a}$ 這個數乘開後是 9 位數。而 $6.79 \times 10^{b}$ 這個數，其中 9 出現在小數點後第
+    10 位，求 a＋b＝？
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: '2'
+  - label: C
+    content: '4'
+  - label: D
+    content: '6'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 如下圖，已知數線上 $A(a)$、$B(b)$ 兩點，則下列選項何者正確？
+  options:
+  - label: A
+    content: a＜b
+  - label: B
+    content: $|a|>|b|$
+  - label: C
+    content: a＋b＜0
+  - label: D
+    content: b－a＞0
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g7s1e1/s1_9_f1.png
+    crop:
+      page: 1
+      rect:
+      - 121.42
+      - 546.22
+      - 362.95
+      - 598.25
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_111_彰化_福興_數學_g7s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 已知 $243=3^{a}$，$128=2^{b}$，則 $a-b^{2}=?$
+  options:
+  - label: A
+    content: '44'
+  - label: B
+    content: '-44'
+  - label: C
+    content: '2'
+  - label: D
+    content: '-2'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_111_彰化_福興_數學_g7s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 如果 | 甲數 |＝8，乙數＝－2，則甲數－乙數＝__①___
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - 10 或 -6
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: 10 或 -6
+    qwen: 10;-6
+    gemini_high: 10 或 -6
+- id: doc_111_彰化_福興_數學_g7s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 在一條可折疊的數線上，已知 $A(-26)$、$B$、$C(58)$ 三點中，若以 B 點為折點，將此數線左、右對折（如圖 a），則 A、C 兩點折疊後重合（如圖
+    b），則 B 點坐標為__②___。
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g7s1e1/s2_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 118.47
+      - 731.45
+      - 378.98
+      - 800.51
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '16'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: '16'
+    qwen: '16'
+- id: doc_111_彰化_福興_數學_g7s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 數線上有 $A$、$B(-3)$ 兩點，若 $\overline{AB}=7$，則 A 點坐標為何？__③___。
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - -10，4
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: 4 或 -10
+    qwen: 4;-10
+    gemini_high: 4 或 -10
+- id: doc_111_彰化_福興_數學_g7s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知 a 為正整數，若絕對值小於 a 的整數共有 11 個，則 a＝__④___。
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '6'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: '6'
+    qwen: '6'
+- id: doc_111_彰化_福興_數學_g7s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '計算下列各式的值：
+
+    (1) $31-(-18)+60=\_\_\text{⑤}\_\_$
+
+    (2) $(3-7) \times (-4) - 2 \times |(-6)-6| \div (-3) = \_\_\text{⑥}\_\_$
+
+    (3) $56 \times (-234) + (-56) \times 66 + 56 \times 310 = \_\_\text{⑦}\_\_$
+
+    (4) $(-5)^{2} \times 2^{3} - 4 \times 7^{2} - (-3)^{4} \div 9 = \_\_\text{⑧}\_\_$'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '109'
+  - '24'
+  - '560'
+  - '-5'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: 109；24；560；-5
+    qwen: 109;24;560;-5
+    gemini_high: 109；24；560；-5
+- id: doc_111_彰化_福興_數學_g7s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '將下列各數以科學記號表示
+
+    (1) $3650000000=\_\_\text{⑨}\_\_$
+
+    (2) $\frac{2}{50000}=\_\_\text{⑩}\_\_$
+
+    (3) $0.04208=\_\_\text{⑪}\_\_$'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - 3.65×10^{9}
+  - 4×10^{-5}
+  - 4.208×10^{-2"]
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: 3.65 \times 10^{9}；4 \times 10^{-5}；4.208 \times 10^{-2}
+    qwen: $3.65\times 10^{9}$;$4\times 10^{-5}$;$4.208\times 10^{-2}$
+    gemini_high: $3.65 \times 10^9$；$4 \times 10^{-5}$；$4.208 \times 10^{-2}$
+- id: doc_111_彰化_福興_數學_g7s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 右圖為某一飛鏢遊戲，轉動飛鏢靶後，將飛鏢射向飛鏢靶，已知射中上下區域得 5 分，左右區域得(-3)分，未射中則不予計分，若你有 15 支飛鏢，全部射完後得總分
+    18 分，其中有 6 支射中上下區域，則你有幾支飛鏢未射中飛鏢靶？__⑫___
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g7s1e1/s2_7_f1.png
+    crop:
+      page: 2
+      rect:
+      - 384.87
+      - 367.85
+      - 473.56
+      - 471.27
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '5'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '5'
+    qwen: '5'
+- id: doc_111_彰化_福興_數學_g7s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: $-|-4|$、$-2\frac{1}{3}$、$|-3\frac{2}{5}|$、$|-5|$、$3$ 中，最大的數減去最小的數＝__⑬___。
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '9'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: '9'
+    qwen: '9'
+- id: doc_111_彰化_福興_數學_g7s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 如下圖，$A(a)$、$B(b)$ 為數線上相異兩點，且 $\overline{AB}=12$。若將 A 點向右移 7 單位長，B 點向左移 1 單位長，可得到新的兩點所代表的數互為相反數，則
+    a＋b＝？(圖形僅供參考)(4 分)
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g7s1e1/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 250.69
+      - 555.71
+      - 505.96
+      - 603.49
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - a+b=-6
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+- id: doc_111_彰化_福興_數學_g7s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 夜市裡有一種棒球九宮格遊戲，已知九宮格上標有「＋」、「－」兩種符號，如圖所示。其玩法為:每一局有 5 顆球，若球丟中「＋」獲得＋3 分，若丟中「－」獲得－2
+    分，沒丟中或丟到重複的格子則扣 4 分，最後將 5 顆球的分數 加總，得分為正分即可獲得獎品。某次勇緯丟 5 顆全中，且沒有丟到重複的格 子，如果勇緯有得到獎品，他可能得幾分？
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g7s1e1/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 411.05
+      - 689.24
+      - 522.33
+      - 774.33
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - 15, 10, 5 (或 15 分、10 分、5 分)
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai

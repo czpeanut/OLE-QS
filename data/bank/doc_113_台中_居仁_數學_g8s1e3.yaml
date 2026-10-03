@@ -1,0 +1,643 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 3
+  city: 台中
+  school_short: 居仁
+  school: 臺中市立居仁國中
+  id: doc_113_台中_居仁_數學_g8s1e3
+  title: 臺中市立居仁國中 113學年度第1學期第3次定期評量 8年級數學科試題
+  exam_name: 113學年度第1學期第3次定期評量
+  sections:
+  - ord: 1
+    name: 一、填充題：(85%)【根號、分數須化到最簡，否則不予計分，全對才給分】
+    count: 17
+  - ord: 2
+    name: 二、非選題：(共15 分) (請用黑筆作答並有計算過程，否則不予計分)
+    count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/1-3/台中/居仁.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_1
+  section: 1
+  number: 1
+  type: fill
+  page: 1
+  stem: '判別下列哪些是一元二次方程式？___________。
+
+    (A)$2x-3=0$
+
+    (B)$(2x-1)(x+6)$
+
+    (C)$-3x^{2}+14x=-\frac{2}{3}$
+
+    (D)$6x^{2}+5x=6x^{2}+24$
+
+    (E) $(x-3)(x+2)+(x+2)(2x+1)=0$'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: CE
+    qwen: CE
+  answer:
+  - CE
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_2
+  section: 1
+  number: 2
+  type: fill
+  page: 1
+  stem: '下列敘述哪些正確？_____________。
+
+    (A)有兩個數$A$、$B$，若$AB=0$，則$A=0$ 或$B=0$。
+
+    (B)若方程式$(2x+1)(x+2)=1$，則$2x+1=1$ 或$x+2=1$。
+
+    (C)$x$ 的一元二次方程式$ax^{2}+bx=c$ 中，當$b^{2}-4ac=0$ 時，此方程式有重根。。
+
+    (D)$-1$ 為一元二次方程式$-x^{2}-4x-3=0$ 的一個解。
+
+    (E)解一元二次方程式$(2x+1)(2x-3)=5(2x+1)^{2}$，等號兩邊同除以$(2x+1)$，得$2x-3=5(2x+1)$，利用移項化簡，得$x=-1$'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: AD
+    qwen: ACD
+    gemini_high: AD
+  answer:
+  - AD
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_3
+  section: 1
+  number: 3
+  type: fill
+  page: 1
+  stem: '文文每天都會練習投籃，已知上週他共練了50 回(每回10球)，進球數的相對次數分配長條圖如右。
+
+    若命中率$=\frac{\text{進球數}}{\text{投球數}}\times 100\%$，則：
+
+    在50 回練習中，有_______回命中率為60%(或稱六成)。'
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_台中_居仁_數學_g8s1e3/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 431.0
+      - 457.3
+      - 661.23
+      - 602.56
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: '10'
+    qwen: '10'
+  answer:
+  - '10'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 右圖為樂樂國中八年級甲、乙、丙三班數學段考成績的累積次數分配折線圖，已知三班的學生數都相同，則下列敘述何者正確?_________。
+  options:
+  - label: A
+    content: 丙班的及格人數最多
+  - label: B
+    content: 乙班的最高分為90分
+  - label: C
+    content: 80~90分的人數，甲班最多
+  - label: D
+    content: 甲班的第20名在丙班是前6名
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_113_台中_居仁_數學_g8s1e3/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 429.54
+      - 659.58
+      - 659.78
+      - 815.15
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: B
+    gemini_high: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_5
+  section: 1
+  number: 5
+  type: fill
+  page: 1
+  stem: 若5 是$x$ 的一元二次方程式$(x-a)^{2}=36$ 的一個解，則$a=$_________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: -1、11
+    qwen: -1, 11
+    gemini_high: -1 或 11
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_6
+  section: 1
+  number: 6
+  type: fill
+  page: 1
+  stem: 一元二次方程式$x^{2}-2x+(m-5)=0$ 的解為相異兩根，求m 的範圍為____________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: m<6
+    qwen: m<6
+  answer:
+  - m<6
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_7
+  section: 1
+  number: 7
+  type: fill
+  page: 2
+  stem: '阿曜將班上同學一分鐘仰臥起坐的次數，分成低於17、17〜24、25〜32、33 以上四組，並將資料記錄於下表。求$x+y=$___________。
+
+
+    | 仰臥起坐次數（次） | 低於 17 | 17〜24 | 25〜32 | 33 以上 |
+
+    | :--- | :---: | :---: | :---: | :---: |
+
+    | 次數（人） | 1 | 6 | 4 | $x$ |
+
+    | 相對次數（%） | 5 | 30 | 20 | |
+
+    | 累積相對次數（%） | 5 | | $y$ | 100 |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: '64'
+    qwen: '64'
+  answer:
+  - '64'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 2
+  stem: 己知香香泡芙店每日準備500 個泡芙販售，每個泡芙的原價為$x$ 元，且晚上關店時未售出的泡芙一律丟棄。為了減少未售出而丟棄的泡芙數量，晚上六點後到八點一律打8
+    折，晚上八點後到關門前一律打5 折。己知某日的晚上六點時店裡剩下$5x$ 個，晚上八點時剩下$3x$ 個，關店時剩下$x$ 個，最後結算時，總收入為19000
+    元，請依題意列出此題的一元二次方程式為何？__________。
+  options:
+  - label: A
+    content: $x(500-5x)+5x^{2}+3x^{2}=19000$
+  - label: B
+    content: $x(500-5x)+4x^{2}+1.5x^{2}+x^{2}=19000$
+  - label: C
+    content: $x(500-5x)+1.6x^{2}+x^{2}+x^{2}=19000$
+  - label: D
+    content: $x(500-5x)+1.6x^{2}+x^{2}=19000$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_9
+  section: 1
+  number: 9
+  type: fill
+  page: 2
+  stem: '解下列一元二次方程式
+
+    (1) $(x-3)(2x+5)=0$，$x=$__________。
+
+    (2) $7x^{2}=4x$，$x=$__________。
+
+    (3) $(x-1)(x-5)=12$，$x=$__________。
+
+    (4) $(-4x+1)^{2}=9(x+2)^{2}$，$x=$__________。
+
+    (5) $-\frac{1}{4}x^{2}+\frac{1}{8}x+1=0$，$x=$__________。
+
+    (6) $(x+8)^{2}+x^{2}+(x-8)^{2}=164$，$x=$__________。
+
+    (7) $x^{2}-14x-3551=0$，$x=$__________。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: 3或$-\frac{5}{2}$；0或$\frac{4}{7}$；7或$-1$；7或$-\frac{5}{7}$；$\frac{1\pm\sqrt{65}}{4}$；$\pm
+      2\sqrt{3}$；67或$-53$
+    qwen: 3, -2.5; 0, \frac{4}{7}; 7, -1; 7, -\frac{5}{7}; \frac{1 \pm \sqrt{65}}{4};
+      \pm 2\sqrt{3}; 67, -53
+    gemini_high: 3 或 -\frac{5}{2}；0 或 \frac{4}{7}；7 或 -1；7 或 -\frac{5}{7}；\frac{1\pm\sqrt{65}}{4}；\pm
+      2\sqrt{3}；67 或 -53
+  answer:
+  - 3 或 -\frac{5}{2}
+  - 0 或 \frac{4}{7}
+  - 7 或 -1
+  - 7 或 -\frac{5}{7}
+  - \frac{1\pm\sqrt{65}}{4}
+  - \pm 2\sqrt{3}
+  - 67 或 -53
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_10
+  section: 1
+  number: 10
+  type: fill
+  page: 2
+  stem: 以配方法解一元二次方程式$2x^{2}+px+q=0$，可得$x=-1\pm \frac{\sqrt{10}}{2}$，求$2p+q=$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: '5'
+    qwen: '5'
+  answer:
+  - '5'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_11
+  section: 1
+  number: 11
+  type: fill
+  page: 2
+  stem: 一長方形農地，其寬比長少4 公尺，今在農地內部周圍開闢一條寬2 公尺的道路，剩下的部分做為菜園。若菜園的面積是道路面積的4 倍，則原來農地的長是__________公尺。
+  assets:
+  - key: s1_11_f1
+    kind: figure
+    file: doc_113_台中_居仁_數學_g8s1e3/s1_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 113.31
+      - 811.28
+      - 253.19
+      - 926.61
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '40'
+    qwen: '40'
+  answer:
+  - '40'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_12
+  section: 1
+  number: 12
+  type: fill
+  page: 3
+  stem: 一元二次方程式$x^{2}+7x=0$ 可配方成$(x+a)^{2}=b$ 的形式，其中$a$、$b$ 為兩數，求$a+b$ 之值為___________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{63}{4}
+    qwen: \frac{63}{4}
+  answer:
+  - \frac{63}{4}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_13
+  section: 1
+  number: 13
+  type: fill
+  page: 3
+  stem: '若$a$ 為方程式$4x^{2}-x-6=0$的一個根，$b$ 為方程式$3x^{2}-x-2=0$的一個根，
+
+    則$(4a^{2}-a)(6b^{2}-2b-1)$的值為__________。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '18'
+    qwen: '18'
+  answer:
+  - '18'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_14
+  section: 1
+  number: 14
+  type: fill
+  page: 3
+  stem: $x$ 的一元二次方程式$x^{2}-9x+k=0$ 的其中一解為質數，另一解為合數，若$k$ 為整數，則$k$ 的值可能為_________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: 18或20
+    qwen: 18, 20
+    gemini_high: 18 或 20
+  answer:
+  - 18 或 20
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_15
+  section: 1
+  number: 15
+  type: fill
+  page: 3
+  stem: 亮均在計算某正數的平方時，不小心將該正數的平方看成該正數的2 倍，結果求出來的答案比正確答案少224，則原題目是求    的平方。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '16'
+    qwen: '16'
+  answer:
+  - '16'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_16
+  section: 1
+  number: 16
+  type: fill
+  page: 3
+  stem: "相傳西元前六世紀，古希臘數學家畢達哥拉斯發現把單弦琴的弦線在約五分之二長度的地方用承托托著時，兩邊就能彈出極美妙的和音。他認為，既然琴弦有一個完美的分割點（或比例），那麼所有線條、形狀、物體，萬事萬物，乃至宇宙，都應該有同一個完美的比例。因此，以畢氏為首的許多古希臘數學家，窮畢生精力去研究比例。直到西元前4\
+    \ 世紀，在歐幾里得的《幾何原本》一書中，才對這個比例寫下確切的定義：「若將一線段分割成長、短兩段，且長段與短段的比，恰好等於全長與長段的比，則稱此種分割為黃金分割」。\n\
+    \   如下圖所示，$\\overline{AB}$、$\\overline{AC}$、$\\overline{BC}$三線段的長度若滿足 $\\overline{AB}：\\\
+    overline{AC}=\\overline{AC}：\\overline{BC}$的關係，稱為黄金分割比。\n   若已知$\\overline{AC}=2y$，$\\\
+    overline{BC}=1$，求$y$值為________。"
+  assets:
+  - key: s1_16_f1
+    kind: figure
+    file: doc_113_台中_居仁_數學_g8s1e3/s1_16_f1.png
+    crop:
+      page: 3
+      rect:
+      - 394.57
+      - 645.13
+      - 594.2
+      - 688.22
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{1+\sqrt{5}}{4}
+    qwen: \frac{1+\sqrt{5}}{4}
+  answer:
+  - \frac{1+\sqrt{5}}{4}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s1_17
+  section: 1
+  number: 17
+  type: fill
+  page: 3
+  stem: 如圖，正方形廣場 ABCD 的邊長為15 公尺，有甲、乙兩機器人同時等速前進，甲機器人從B 點出發，沿著$\overline{BC}$往C 點方向前進，乙機器人從C
+    點出發，沿著$\overline{CD}$往D 點方向前進，若乙每分鐘速率恰好是甲每分鐘速率的2 倍，前進3 分鐘後，甲機器人走到E 點，乙機器人走到F 點，且$\overline{EF}=6\sqrt{5}$
+    公尺，則乙每分鐘的速率為_________公尺。
+  assets:
+  - key: s1_17_f1
+    kind: figure
+    file: doc_113_台中_居仁_數學_g8s1e3/s1_17_f1.png
+    crop:
+      page: 3
+      rect:
+      - 510.42
+      - 825.73
+      - 623.34
+      - 940.02
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '2'
+    qwen: '2'
+  answer:
+  - '2'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_居仁_數學_g8s1e3_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 4
+  stem: '下方為某校八年級所有學生這次段考數學成績的次數分配表及其累積相對次數分配折線圖，已知表中與圖中都有些部分被塗掉，若40〜50 分、60〜70 分與90〜100
+    分的人數分別為a 人、b 人與c 人，試回答下列問題：
+
+    (1) 該校八年級學生共有多少人？
+
+    (2) 求a、b、c 的值分別為何？
+
+
+    | 數學成績（分） | 次數（人） |
+
+    | :---: | :---: |
+
+    | 40〜50 | $a$ |
+
+    | 50〜60 | 80 |
+
+    | 60〜70 | $b$ |
+
+    | 70〜80 | 60 |
+
+    | 80〜90 | 80 |
+
+    | 90〜100 | $c$ |'
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_113_台中_居仁_數學_g8s1e3/s2_1_f1.png
+    crop:
+      page: 4
+      rect:
+      - 372.71
+      - 205.5
+      - 597.11
+      - 395.13
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+- id: doc_113_台中_居仁_數學_g8s1e3_s2_2
+  section: 2
+  number: 2
+  type: calc
+  page: 4
+  stem: 已知$x$ 的一元二次方程式$3mx^{2}-2mx+3=0$ 有重根，求$m$ 的值及此方程式的解。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+- id: doc_113_台中_居仁_數學_g8s1e3_s2_3
+  section: 2
+  number: 3
+  type: calc
+  page: 4
+  stem: 樂安旅行社舉辦綠島兩天一夜的旅遊。預定人數為30 人，每人收費5000 元，當人數到達30 人後，每增加1 人，每人可便宜100 元。若旅行社的總收入為159600
+    元，則共有多少人參加？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai

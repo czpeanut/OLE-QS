@@ -1,0 +1,680 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 1
+  city: 嘉義
+  school_short: 北興
+  school: 嘉義市北興國中
+  id: doc_111_嘉義_北興_數學_g7s2e1
+  title: 嘉義市北興國中 111學年度第2學期第1次定期評量 7年級數學科試題
+  exam_name: 111學年度第2學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題(每題3 分，共36 分)
+    count: 12
+  - ord: 2
+    name: 二、填充題(每格4 分，共40 分)：請依照空格內號碼依序填入答案卷
+    count: 7
+  - ord: 3
+    name: 三、計算題(每題6 分，共24 分)
+    count: 4
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/111/2-1/嘉義/北興.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
+questions:
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 二元一次方程式 $x+3y=4$ 有幾組解？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: 無限多組解。
+  answer:
+  - O
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列哪一組 x、y 所代表的數是二元一次聯立方程式 $\begin{cases} x+2y=1 \\ 2x-3y=9 \end{cases}$ 的解？
+  options:
+  - label: A
+    content: x = 1、y = 0
+  - label: B
+    content: x = 5、y = −2
+  - label: C
+    content: x = −1、y = 1
+  - label: D
+    content: x = 3、y = −1。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 若二元一次式 $-7x+y+3$ 的 $x$ 項係數為 $a$，$y$ 項係數為 $b$，常數項為 $c$，則 $a+b-c=$？
+  options:
+  - label: A
+    content: －9
+  - label: B
+    content: －4
+  - label: C
+    content: '11'
+  - label: D
+    content: 9。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 利用加減消去法解聯立方程式 $\begin{cases} -9x+2y=-12 \;\dots\dots ① \\ 4x-5y=-7 \;\dots\dots
+    ② \end{cases}$，則下列方法何者正確？
+  options:
+  - label: A
+    content: 要消去 $x$ 可以將① $\times 5$ 加② $\times 2$
+  - label: B
+    content: 要消去 $x$ 可以將① $\times 4$ 加② $\times 9$
+  - label: C
+    content: 要消去 $y$ 可以① $\times 5$ 減② $\times 2$
+  - label: D
+    content: 要消去 $y$ 可以將① $\times 4$ 加② $\times 9$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 有一聯立方程式為 $\begin{cases} a-b=24 \\ \frac{a}{b}=0.6 \end{cases}$，請利用代入消去法求出其解為何？
+  options:
+  - label: A
+    content: a＝－60，b＝－36
+  - label: B
+    content: a＝60，b＝36
+  - label: C
+    content: a＝－36，b＝－60
+  - label: D
+    content: a＝36，b＝60。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 如右圖，已知 $ABCD$ 是一邊長為 7 的正方形，且 $\overline{AD}$ 垂直 $x$ 軸，若 $A(3,4)$，則 $C$ 點坐標為何？
+  options:
+  - label: A
+    content: （－4 , －3）
+  - label: B
+    content: （－3 , －4）
+  - label: C
+    content: （－7 , －7）
+  - label: D
+    content: （－1 , －1）。
+  assets:
+  - key: s1_6_f1
+    kind: figure
+    file: doc_111_嘉義_北興_數學_g7s2e1/s1_6_f1.png
+    crop:
+      page: 1
+      rect:
+      - 586.15
+      - 457.2
+      - 695.78
+      - 585.16
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 已知小宣班上共有 31 人。若男生人數的 2 倍比女生人數的 3 倍少 8 人，則小宣班上女生比男生少幾人？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: 4。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 二元一次聯立方程式 $\begin{cases} 2x-\frac{1}{6}y=17 \\ \frac{1}{4}x+2y=-10 \end{cases}$
+    的解為 $\begin{cases} x=a \\ y=b \end{cases}$，則 $a+b=$？
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: '2'
+  - label: C
+    content: '4'
+  - label: D
+    content: 6 。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 81%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 已知 $A(-2,3)$、$B(x,y)$ 都在第二象限，若 $\overline{AB}$ 平行 $y$ 軸，且 $\overline{AB}=3$，則
+    $x+y=$？
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '5'
+  - label: C
+    content: '6'
+  - label: D
+    content: 7 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 恩恩為響應愛心捐款，將其撲滿捐出。已知其撲滿內有 $x$ 個 50 元，25 個 10 元，$y$ 個 5 元，則他共捐出多少元？
+  options:
+  - label: A
+    content: 50x＋5y＋250
+  - label: B
+    content: x＋y＋25
+  - label: C
+    content: 50x＋5y＋25
+  - label: D
+    content: 50x＋5y 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 1
+  stem: 若 $a$ 為任意數，且 $P(7,-a)$ 為坐標平面上的一點，則下列敘述何者正確？
+  options:
+  - label: A
+    content: P 點可能位在 y 軸上
+  - label: B
+    content: P 點可能在第二象限
+  - label: C
+    content: P 點到 x 軸的距離為│a│
+  - label: D
+    content: P 點可能在第三象限。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 1
+  stem: 翊萱帶了 500 元到市場買水果，如果她買 3 個蘋果、5 個水梨，則剩下 30 元；如果她買 5 個蘋果、4 個水梨，則剛好把錢用完。設蘋果每個
+    $x$ 元，水梨每個 $y$ 元，則依題意可列出下列哪一組聯立方程式？
+  options:
+  - label: A
+    content: $\begin{cases} 5x+3y=530 \\ 4x+5y=500 \end{cases}$
+  - label: B
+    content: $\begin{cases} 3x+5y=530 \\ 5x+4y=500 \end{cases}$
+  - label: C
+    content: $\begin{cases} 5x+3y=470 \\ 4x+5y=500 \end{cases}$
+  - label: D
+    content: $\begin{cases} 3x+5y=470 \\ 5x+4y=500 \end{cases}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 87%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_111_嘉義_北興_數學_g7s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '(1)化簡 $2(4x+5y+7)-3(x+4y-7)=$【 ① 】。
+
+    (2)化簡 $\frac{4x-10y+1}{12}-\frac{5y+3}{6}=$【 ② 】。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: 5x-2y+35；\frac{4x-20y-5}{12}
+    qwen: 5x-2y+35;\frac{4x-20y-5}{12}
+    gemini_high: $5x-2y+35$；$\frac{4x-20y-5}{12}$
+  answer:
+  - $5x-2y+35$
+  - $\frac{4x-20y-5}{12}$
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_111_嘉義_北興_數學_g7s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 二元一次方程式 $10x+15y=70$ 的所有正整數解共有【 ③ 】組。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '2'
+    qwen: '2'
+  answer:
+  - '2'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知 $x$、$y$ 的關係式為 $\frac{x-y}{3}-\frac{x-2y}{4}=\frac{x-3}{12}$，求 $y=$【 ④ 】?
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: -\frac{3}{2}
+    qwen: -\frac{3}{2}
+  answer:
+  - -\frac{3}{2}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 若 $0>b>a$，則 $A(b-a,a-b)$ 在第【 ⑤ 】象限？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 四
+    qwen: 四
+  answer:
+  - 四
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '試解下列各二元一次聯立方程式的解：(其中 $x$、$y$ 的數值全對才給分)
+
+    (1) $\begin{cases} 7x+6y=10 \\ 8x-6y=5 \end{cases}$ 的 $(x,y)$ 為【 ⑥ 】。
+
+    (2) $\begin{cases} 2x+3y=-14 \\ 5x-2y=-16 \end{cases}$ 的 $(x,y)$ 為【 ⑦ 】。
+
+    (3) $\begin{cases} 2(x+3)=5(y-1) \\ 2x+3=3(x-y)+10 \end{cases}$ 的 $(x,y)$ 為【 ⑧
+    】。'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_111_嘉義_北興_數學_g7s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 已知 $P$ 點在第二象限內，且與 $x$ 軸相距 5 個單位長，與 $y$ 軸相距 7 個單位長，則 $P$ 點的坐標為【 ⑨ 】。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: (-7,5)
+    qwen: (-7, 5)
+  answer:
+  - (-7,5)
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 若 $M(y-x,x-1)$，$N(y+x,-y+1)$。若將 $M$ 點右移 4 個單位，下移 3 個單位，則將與 $N$ 點重合，試求 $x$、$y$
+    之值為【 ⑩ 】。(x、y 的數值全對才給分)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: x=2, y=3
+    qwen: x=2, y=3
+  answer:
+  - x=2, y=3
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_嘉義_北興_數學_g7s2e1_s3_1
+  section: 3
+  number: 1
+  type: essay
+  page: 2
+  stem: '如右圖(一)的坐標平面，試問：(答對一坐標得1 分)
+
+    (1) 請寫出右圖(一)中 A、B、C 各點坐標。
+
+    (2) 請在右圖(二)的坐標平面上，直接標出以下三點的位置，並在該點標示其坐標 $D(-4,1)$、$E(3,-1)$、$F(-1,-2)$'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_111_嘉義_北興_數學_g7s2e1/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 339.05
+      - 410.73
+      - 480.76
+      - 585.16
+  - key: s3_1_f2
+    kind: figure
+    file: doc_111_嘉義_北興_數學_g7s2e1/s3_1_f2.png
+    crop:
+      page: 2
+      rect:
+      - 482.73
+      - 410.73
+      - 637.2
+      - 585.16
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_111_嘉義_北興_數學_g7s2e1_s3_2
+  section: 3
+  number: 2
+  type: essay
+  page: 2
+  stem: '育成與小立兩人口袋裡只有5 元、10 元兩種硬幣，若育成的硬幣共有19 個，小立的硬幣共有16 個，且育成的總金額比小立多30 元，則育成的10
+    元硬幣比小立的10 元硬幣多幾個？
+
+    【需有計算過程，若只有答案則不予計分】'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_111_嘉義_北興_數學_g7s2e1_s3_3
+  section: 3
+  number: 3
+  type: essay
+  page: 2
+  stem: '如果 $a<0$，$b>0$，則於下表空格中，填入各點分別在哪一個象限或是位於坐標軸上？
+
+
+    | 點 | $(a, -\frac{b}{a})$ | $(a^2, -b)$ | $(ab, 0)$ |
+
+    | :--- | :--- | :--- | :--- |
+
+    | 象限或坐標軸 | | | |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_111_嘉義_北興_數學_g7s2e1_s3_4
+  section: 3
+  number: 4
+  type: essay
+  page: 2
+  stem: 羽球社和籃球社共有90 人，若兩社團同時各退出10 人後，籃球社剩下的人數恰好是羽球社剩下人數的2 倍，求籃球社和羽球社原來各有多少人？【需有計算過程，若只有答案則不予計分】
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai

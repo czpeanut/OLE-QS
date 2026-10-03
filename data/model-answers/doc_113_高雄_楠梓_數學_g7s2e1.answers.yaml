@@ -1,0 +1,382 @@
+source: data/bank/doc_113_高雄_楠梓_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: (A)不是等式；(B)化簡後為 y = -5，是一元一次方程式；(C)含有絕對值；(D)含兩個未知數且次數皆為 1，為二元一次方程式。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 還原聯立方程式為 2x + 3y = 14 與 3x - y = -1。將 (C) x = 1、y = 4 代入，得 2(1) +
+        3(4) = 14 且 3(1) - 4 = -1，兩式皆成立。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 根據題意，投進的2分球與3分球共20球，可列出方程式 x + y = 20；總得分為48分，可列出 2x + 3y = 48，故聯立方程式為選項
+        (A)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中完整的二元一次聯立方程式（第 1 式與第 2 式）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題幹中的聯立方程式因 OCR 亂碼嚴重破損（包含大括號及各項係數符號混亂），無法確定第 1 式的完整正確方程式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中完整的二元一次聯立方程式（第 1 式與第 2 式）
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 聯立方程式中兩式的 x 係數分別為 5 與 3，取最小公倍數 15，因此將第 1 式乘 3 減去第 2 式乘 5 即可消去 x。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 點到x軸的距離為其y坐標的絕對值。P、Q、R、S到x軸的距離分別為2、0、3、8，其中S點的距離8最大，故離x軸最遠的是S點。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 依題意列式為 15x + 20y = 150，化簡得 3x + 4y = 30。因 x、y 皆為正整數，代入各選項檢驗，當 x =
+        6 時，4y = 12，得 y = 3 為整數解，故可能買了 6 枝原子筆。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中的坐標平面附圖（包含P點與Q點的位置）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目依賴附圖以判斷P(4, a)與Q(b, 6)在坐標平面上的相對位置以決定a與b的範圍，但題目未提供完整圖形。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中的坐標平面附圖（包含P點與Q點的位置）
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s1_10
+  number: 10
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 由 $|a|=|b|$ 且 $a>b$ 可知 $a>0$ 且 $b=-a$，因此 $a+b=0$ 且 $a-b=2a>0$。故點
+        $(a-b, a+b)=(2a, 0)$ 位在 $x$ 軸上。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中乙、丙、丁選項完整的 x 與 y 數值
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目的乙、丙、丁選項中 x 與 y 的數值排版錯亂且缺漏不全，無法正確判斷所有選項是否為方程式的解。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中乙、丙、丁選項完整的 x 與 y 數值
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 將 x=a、y=4 代入方程式 -3x+5y=5 中，得到 -3a+20=5，移項化簡可解得 a=5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：兩分式之間的運算符號（如加法或減法）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中兩分式之間缺少運算符號（加號或減號），資訊不完整無法進行化簡。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 兩分式之間的運算符號（如加法或減法）
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-126'
+      - '-70'
+      reasoning: 聯立解二元一次方程式 {-2x + 4y = -28, 3x - 5y = -28}，可解得 x = -126，y = -70。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '7'
+      - '2'
+      reasoning: 設全票 x 張、半票 y 張，依題意列出二元一次聯立方程式 x + y = 9 與 300x + 200y = 2000，解得半票
+        y = 7 張、全票 x = 2 張。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '300'
+      - '100'
+      reasoning: 設姐姐原有 x 元、弟弟原有 y 元，依題意列出聯立方程式：x + 20 = 4(y - 20) 與 x - 20 = 2(y +
+        20) + 40，解得 x = 300、y = 100。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：象棋盤的附圖以及題幹中遺漏的棋子名稱
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺少棋盤附圖，且題幹中棋子名稱遺漏，無法判斷各棋子的相對位置以推算坐標。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 象棋盤的附圖以及題幹中遺漏的棋子名稱
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_8
+  number: 8
+  type: fill
+  images_sent: 4
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '2'
+      reasoning: 解聯立方程式 $3x+4y=8$ 與 $2x-3y=11$，可得 $x=4$、$y=-1$。將其代入 $ax-7y=15$，得 $4a+7=15$，解得
+        $a=2$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：二元一次聯立方程式的完整內容（缺少另一個方程式）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中的二元一次聯立方程式不完整，缺少了包含變數 x 的方程式，無法求解 a 與 b。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 二元一次聯立方程式的完整內容（缺少另一個方程式）
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (-2, 0)
+      reasoning: 設P點坐標為(x, y)，由題意得 x + 6 = 4 且 y - 5 = -5，解得 x = -2、y = 0，故P點坐標為(-2,
+        0)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '25'
+      reasoning: 設男生有 x 人、女生有 y 人，依題意列出二元一次聯立方程式：x + y = 55 且 x/3 + y/5 = 15。解得 y
+        = 25（女生人數），x = 30。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '200'
+      reasoning: 依題意列式 $3x = 2y$ 及 $2x + y = 280$，解得 $x = 80$、$y = 120$，因此 $x + y
+        = 200$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_13
+  number: 13
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-1'
+      reasoning: 設小和今年 $x$ 歲，則恩怡今年為 $3x+6$ 歲；依題意列出方程式 $(3x+6)+5 = 2(x+5)$，解得 $x =
+        -1$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_14
+  number: 14
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (2,-3)
+      reasoning: 正方形邊長為5，A點坐標為(-3, 2)。由圖可知B點在A點下方5個單位，坐標為(-3, -3)；C點在B點右方5個單位，因此C點坐標為(-3+5,
+        -3) = (2, -3)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s2_15
+  number: 15
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '21'
+      reasoning: 設來回均搭纜車者有 a 人、單程搭纜車者有 b 人。纜車總搭乘人次為 2a + b = 10 + 20 = 30，總費用為 250a
+        + 150b = 4050，解得 a = 9、b = 12，故總人數為 9 + 12 = 21 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 3000(30-x)元
+      - 300(x-y)元
+      reasoning: (1) 賣出 A 款共 (30-x) 雙，收入為 3000(30-x) 元。(2) 總共送出 (30-x) 雙 B 款，因此實際付費購買的
+        B 款數量為 (30-y)-(30-x)=(x-y) 雙，收入為 300(x-y) 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_楠梓_數學_g7s2e1_s3_2
+  number: 2
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x = 3，y = -2
+      - '117'
+      reasoning: 由長方形對邊相等可列出聯立方程式：3x = 4x + 2y + 1 與 2x - y + 5 = 13，解得 x = 3、y =
+        -2。邊長分別為 9 與 13，故面積為 9 × 13 = 117。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

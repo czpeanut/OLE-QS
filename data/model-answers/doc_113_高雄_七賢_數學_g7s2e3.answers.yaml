@@ -1,0 +1,327 @@
+source: data/bank/doc_113_高雄_七賢_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目所指的數線解圖形（右圖）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右圖」，但未提供數線圖以判斷端點（-2 與 3）為實心或空心圓點，因此無法確定不等式符號包含哪種等號關係。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目所指的數線解圖形（右圖）
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目與選項完整的不等式數學式內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目與選項中的數學式出現缺漏與排版錯誤（如「x − < 3」、「3 − < x」、「0 3 > − x」等），無法確認原本完整的不等式內容。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目與選項完整的不等式數學式內容
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由 0 > x 得 x < 0（x 為負數）；由 3 + x ≥ 0 得 x ≥ -3（x 至少為 -3）。綜合兩者可得 -3 ≤
+        x < 0，故選 (D)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 六月共有30天，總零用錢為 $30 \times 150 = 4500$ 元。依題意列出不等式 $150(x - 1) + 520
+        + 120(30 - x) \le 4500$，化簡得 $30x + 3970 \le 4500 \Rightarrow 30x \le 530 \Rightarrow
+        x \le 17.67$，因此整數 $x$ 最大為 17。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 圓形圖最適合用來呈現各部分佔整體的百分比與比例關係。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_7
+  number: 7
+  type: single
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 從「左面」觀察立體圖形時，視野由左至右分別為後面、中間、前面，對應的最大高度分別為2層、3層、1層，與圖(二)各行的方塊高度[2,
+        3, 1]完全吻合。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 圓心角計算方式為 360° 乘以該組所佔比例：360° × (90 / 450) = 360° × 1/5 = 72°。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏題目所依據的班級體重統計圖表或次數分配數據
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺少對應的體重次數分配表或統計圖表，無法得知各體重區間的人數及全班總人數以判斷各選項的正確性。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺乏題目所依據的班級體重統計圖表或次數分配數據
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：全班同學體重的相關數據、次數分配表或統計圖表
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺乏全班同學體重分布的相關圖表或前文數據，無法判斷華仔可能的體重範圍。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 全班同學體重的相關數據、次數分配表或統計圖表
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_11
+  number: 11
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：班級體重次數分配表或長條圖/直方圖等數據
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供班級各體重區間的人數或次數分配表（圖），無法計算 60 公斤以上所佔的百分比。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 班級體重次數分配表或長條圖/直方圖等數據
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_12
+  number: 12
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提到的體重次數分配表
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「按表製作」，但未提供體重次數分配表，無法得知各組組中點與對應的次數以判定坐標。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中提到的體重次數分配表
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_13
+  number: 13
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 正六邊形的對角線共有 6×(6-3)/2 = 9 條，其中連接相對頂點的 3 條主對角線為對稱軸，其餘 9 - 3 = 6 條對角線不為對稱軸。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_14
+  number: 14
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 依題意，直線方程式為 y = 2x - 9，代入點 (a,b) 得 b = 2a - 9。由「a 至少為 b」得 a ≥ 2a -
+        9 ⇒ a ≤ 9；由「a 至多為 2b」得 a ≤ 2(2a - 9) ⇒ a ≥ 6，故整數 a 可為 6, 7, 8, 9 共 4 組解。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s1_15
+  number: 15
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設賣出甲公仔 x 個，單賣乙公仔 y 個，則賣出與送出的公仔總數為 2x + y = 100 - 40 = 60。依題意總金額 200x
+        + 50y > 5000，將 y = 60 - 2x 代入得 100x > 2000，即 x > 20（x ≧ 21），故 y ≦ 60 - 2(21)
+        = 18，即單賣乙公仔至多 18 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 12\le x<18
+      - 0\le x\le 3
+      reasoning: (1) 12歲以上含12歲，未滿18歲不含18歲，故列為 12 <= x < 18；(2) 不為負數即大於等於0，不超過3即小於等於3，故列為
+        0 <= x <= 3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：清晰且正確排版的不等式題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文本存在嚴重的排版與 OCR 錯誤（如不等式符號位置錯置、重複字元及破碎的算式），無法辨識正確的題目內容以進行求解。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 清晰且正確排版的不等式題目內容
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：不等式解的數線圖解
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及不等式的圖解，但並未提供數線圖解的內容與數值，無法確定解的範圍以求得 a 的值。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 不等式解的數線圖解
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '30'
+      reasoning: 設小如以外的同學有 x 人，糖果總數為 9x + 28。依題意 10x > 9x + 28，解得 x > 28，故同學人數最少為
+        29 人，全班包括小如至少有 29 + 1 = 30 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 88 - x > 1/8 x
+      reasoning: 減少的重量為 (88 - x) 公斤，大於現在體重 x 的 1/8，故列出不等式為 88 - x > 1/8 x。
+      confidence: 0.9
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '13'
+      reasoning: 中位數為8，由已知數5, 9, 9, 10可知第3項與第4項分別為7與9。前3項需≤7，除了已知的5之外，a與b必須填補前3項中的兩個位置，且其中較大者為7。為維持眾數唯一為9，另一個數不能為7或5，故最大可為6，因此a+b的最大值為7+6=13。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s2_7
+  number: 7
+  type: fill
+  images_sent: 3
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '11'
+      reasoning: 由上視圖可知 3×3 的每個位置皆有積木（高度至少為 1）。前視圖與右視圖均只有一欄高度為 3、其餘兩欄高度為 1，故只有交會的
+        1 格高度為 3，其餘 8 格高度皆為 1，總積木數為 3 + 1 × 8 = 11 塊。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s2e3_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整的看診時間次數分配表（各組組距及對應人數）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及的次數分配表內容殘缺不全，缺少各組組距與對應人數，無法計算平均時間或作圖。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整的看診時間次數分配表（各組組距及對應人數）
+- id: doc_113_高雄_七賢_數學_g7s2e3_s3_2
+  number: 2
+  type: calc
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：完整題幹以及作圖題目所需之圖形（圖(a)至圖(e)、方格與直線L等圖示）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目屬於作圖題且混雜多題殘缺文字，缺少作圖所需的完整圖示（如圖a~e及方格圖），無法直接給出標準文字答案。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整題幹以及作圖題目所需之圖形（圖(a)至圖(e)、方格與直線L等圖示）

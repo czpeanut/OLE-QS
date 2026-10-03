@@ -1,0 +1,944 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 3
+  city: 桃園
+  school_short: 同德
+  school: 桃園市立同德國中
+  scope_note: 4-1～CH5
+  id: doc_111_桃園_同德_數學_g8s1e3
+  title: 桃園市立同德國中 111學年度第1學期第3次定期評量 8年級數學科試題
+  exam_name: 111學年度第1學期第3次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題（每題4 分，共100 分） 請選擇最適合的答案，並將正確選項劃記於答案卡上
+    count: 25
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國二/數學/111/1-3/桃園/同德.pdf
+  scope:
+    lessons: []
+    publisher: null
+    raw: 4-1～CH5
+    volume: null
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
+questions:
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: '判別下列有幾個是一元二次方程式？
+
+    甲：$(x+2)(x-5)=0$ 乙：$2x^{2}=7-x$ 丙：$3x^{2}+2x-5$ 丁：$2x^{2}+5x-2=(2x+1)(x-2)$
+
+    戊：$-x^{2}+3x^{3}=-1$ 己：$x+3=0$'
+  options:
+  - label: A
+    content: '5'
+  - label: B
+    content: '4'
+  - label: C
+    content: '3'
+  - label: D
+    content: '2'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 若一元二次方程式可分解為$(2x-1)(3x+1)=1$，則下列何者正確？
+  options:
+  - label: A
+    content: $x=-\frac{1}{2}$或$\frac{2}{3}$
+  - label: B
+    content: $x=\frac{1}{2}$或$-\frac{1}{3}$
+  - label: C
+    content: $2x-1=1$ 或 $3x+1=1$
+  - label: D
+    content: $2x-1=-1$ 或 $3x+1=-1$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 一元二次方程式 $ax^{2}+bx+c=0$ 有一根為 0 的條件是下列何者？
+  options:
+  - label: A
+    content: $b^{2}-4ac=0$
+  - label: B
+    content: $b=0$
+  - label: C
+    content: $c=0$
+  - label: D
+    content: $c \neq 0$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: '大同與阿德對於「一元二次方程式 $2x^{2}-x-6=9$」的描述如下。判別他們的說法是否正確？
+
+    | 大同 | 阿德 |
+
+    | :--- | :--- |
+
+    | 將 $x=3$ 代入 $2x^{2}-x-6=9$<br>得 $2x^{2}-x-6=6^{2}-3-6=27 \neq 9$<br>所以 $x=3$
+    不是方程式 $2x^{2}-x-6=9$ 的解 | 因為 $2x^{2}-x-6$ 可分解為 $(2x+3)(x-2)$<br>所以 $2x^{2}-x-6=9$<br>$(2x+3)(x-2)=9$<br>$x=-\frac{3}{2}$
+    或 $x=2$<br>此方程式的解為 $-\frac{3}{2}$ 與 2 |'
+  options:
+  - label: A
+    content: 大同正確，阿德錯誤
+  - label: B
+    content: 大同錯誤，阿德正確
+  - label: C
+    content: 兩人皆正確
+  - label: D
+    content: 兩人皆錯誤
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 對於 $(x-5)(x-1)=(2x+3)(x-1)$ 的敘述，則下列何者正確？
+  options:
+  - label: A
+    content: 方程式只有一根，而且這個根是負數
+  - label: B
+    content: 方程式有二根，而且二根的正負數相同
+  - label: C
+    content: 方程式有一根為正數，另一根為負數
+  - label: D
+    content: 方程式無解
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 已知 $m$ 為整數，若方程式 $(3x+m)(x-m)=0$ 的解為 $-3$ 與 1，則 $m$ 的值？
+  options:
+  - label: A
+    content: 9 或 1
+  - label: B
+    content: 1 或 $-3$
+  - label: C
+    content: $-3$
+  - label: D
+    content: $-3$ 或 9
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-1
+      title: 因式分解法解一元二次方程式
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-1 因式分解法解一元二次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 2
+  stem: 若 $x^{2}-10x+a$ 為一完全平方式，則 $a$ 的值為何？
+  options:
+  - label: A
+    content: '10'
+  - label: B
+    content: '25'
+  - label: C
+    content: '5'
+  - label: D
+    content: '20'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 2
+  stem: 若方程式 $x^{2}+6x+p=0$ 可配方成 $(x-q)^{2}=4$ 的形式，則 $p+q$ 的值是多少？
+  options:
+  - label: A
+    content: '8'
+  - label: B
+    content: '5'
+  - label: C
+    content: '3'
+  - label: D
+    content: '2'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 若一元二次方程式 $a(x+b)^{2}=14$ 的兩根為 $\frac{-3\pm\sqrt{14}}{5}$，其中 $a$、$b$ 為正數，則
+    $a$、$b$ 的值為何？
+  options:
+  - label: A
+    content: $a=25$，$b=\frac{3}{25}$
+  - label: B
+    content: $a=25$，$b=\frac{3}{5}$
+  - label: C
+    content: $a=5$，$b=\frac{3}{5}$
+  - label: D
+    content: $a=5$，$b=3$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: '密室逃脱遊戲是玩家利用身邊的物品或工具，完成指定任務或解開特定謎題，最終得以成功逃離該區域。小桃在玩密室逃脱遊戲尋寶的路途上，發現一個寶箱，但是要打開寶箱需要一個四位數字的密碼，他發現牆上寫了一道數學題目:
+    $3x^{2}-7x-2=0$，其解為 $x=\frac{b\pm\sqrt{c}}{a}$（須化為最簡），密碼為 $a$、$b$、$c$ 照順序擺放，試問小桃應該輸入的密碼為何，才能順利打開此寶箱？'
+  options:
+  - label: A
+    content: '3725'
+  - label: B
+    content: '3773'
+  - label: C
+    content: '6725'
+  - label: D
+    content: '6773'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 2
+  stem: 已知 $m$ 為正整數，若方程式 $2x^{2}-mx+2=0$ 有解，則 $m$ 的值不可能為下列哪一個數？
+  options:
+  - label: A
+    content: '6'
+  - label: B
+    content: '5'
+  - label: C
+    content: '4'
+  - label: D
+    content: '3'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 2
+  stem: 判別一元二次方程式 $x^{2}-x+a=0$ 中的 $a$ 為下列哪一個數時，可使此方程式的兩根皆為整數？
+  options:
+  - label: A
+    content: $-6$
+  - label: B
+    content: '6'
+  - label: C
+    content: $-4$
+  - label: D
+    content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_13
+  section: 1
+  number: 13
+  type: single
+  page: 2
+  stem: 下列那一個一元二次方程式無解？
+  options:
+  - label: A
+    content: $x^{2}-x-1=0$
+  - label: B
+    content: $3x^{2}-4x+3=0$
+  - label: C
+    content: $2x^{2}+3x-4=0$
+  - label: D
+    content: $x^{2}+3x+1=0$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-2
+      title: 配方法與公式解
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-2 配方法與公式解
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_14
+  section: 1
+  number: 14
+  type: single
+  page: 2
+  stem: 寒流到了，小兔兔工廠製作的暖暖包每箱售價 2000 元，預計每個月可賣 200 箱，為了提高銷售總金額採取降價措施，依過去經驗，每箱降價 50 元時，則會多賣出暖暖包
+    10 箱。假設小兔兔工廠降價 $50x$ 元時，售貨總金額可以達到 450000 元，則下列哪一個列式是正確的？
+  options:
+  - label: A
+    content: $450000=(2000+50x)(200-10x)$
+  - label: B
+    content: $450000=(2000-50x)(200+10x)$
+  - label: C
+    content: $450000=(2000-50x)(200-10x)$
+  - label: D
+    content: $450000=(2000+50x)(200+10x)$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_15
+  section: 1
+  number: 15
+  type: single
+  page: 2
+  stem: 如右圖，在正方形 $ABCD$ 中，若 $\overline{BE}=x$，$\overline{CE}=1$，則三角形 $ABE$ 與梯形 $AECD$
+    的面積比為 $1:2$，請問正方形 $ABCD$ 的邊長是多少？
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: '2'
+  - label: C
+    content: $\frac{3}{2}$
+  - label: D
+    content: $\frac{2}{3}$
+  assets:
+  - key: s1_15_f1
+    kind: figure
+    file: doc_111_桃園_同德_數學_g8s1e3/s1_15_f1.png
+    crop:
+      page: 2
+      rect:
+      - 526.91
+      - 830.62
+      - 641.13
+      - 948.44
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_16
+  section: 1
+  number: 16
+  type: single
+  page: 3
+  stem: '如圖，$Q$ 點在 $\overline{PR}$ 上，且 $\overline{PQ}$、$\overline{QR}$、$\overline{PR}$
+    的長度滿足 $\overline{PQ}:\overline{QR}=\overline{QR}:\overline{PR}$ 的關係。
+
+    若 $\overline{QR}=2$，則 $\overline{PR}=$？'
+  options:
+  - label: A
+    content: $-1+\sqrt{5}$
+  - label: B
+    content: $-1-\sqrt{5}$
+  - label: C
+    content: $1+\sqrt{5}$
+  - label: D
+    content: $1-\sqrt{5}$
+  assets:
+  - key: s1_16_f1
+    kind: figure
+    file: doc_111_桃園_同德_數學_g8s1e3/s1_16_f1.png
+    crop:
+      page: 3
+      rect:
+      - 519.05
+      - 59.89
+      - 686.29
+      - 107.35
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_17
+  section: 1
+  number: 17
+  type: single
+  page: 3
+  stem: 有四個連續正奇數，如果第一、第二兩數的積加上第三、第四兩數的積等於 206，則這四個數的和為多少？
+  options:
+  - label: A
+    content: '48'
+  - label: B
+    content: '40'
+  - label: C
+    content: '32'
+  - label: D
+    content: '24'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_18
+  section: 1
+  number: 18
+  type: single
+  page: 3
+  stem: 如右圖，小園的房間是一個長方形，而且長比寬多 4 公尺，她在房間的中間擺了一塊長方形地毯，地毯邊緣與牆邊的垂直距離都是 2 公尺。若未鋪地毯的面積是地毯面積的
+    2 倍，則小園房間的長是多少公尺？
+  options:
+  - label: A
+    content: '8'
+  - label: B
+    content: '10'
+  - label: C
+    content: '12'
+  - label: D
+    content: '14'
+  assets:
+  - key: s1_18_f1
+    kind: figure
+    file: doc_111_桃園_同德_數學_g8s1e3/s1_18_f1.png
+    crop:
+      page: 3
+      rect:
+      - 523.96
+      - 336.44
+      - 640.15
+      - 421.2
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_19
+  section: 1
+  number: 19
+  type: single
+  page: 3
+  stem: 某次數學考試中，桃子原先的數學成績是小園數學成績的 4 倍還少 5 分。後來數學老師在課堂上檢討考卷時，桃子詢問老師某題計算題(一題 10 分)，數學老師這才發現，這題計算題給錯了答案，因此班上同學都要調整成績，桃子的數學成績可以加分，但是小園得再扣分，此時桃子的成績恰好是小園成績的平方，請問：桃子後來正確的數學成績為幾分？
+  options:
+  - label: A
+    content: '5'
+  - label: B
+    content: '19'
+  - label: C
+    content: '71'
+  - label: D
+    content: '81'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 4-3
+      title: 應用問題
+      chapter: 第4章 一元二次方程式
+    textbook: 八上 4-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_20
+  section: 1
+  number: 20
+  type: single
+  page: 3
+  stem: 如右圖，大同為了比較自己班級的同學第二次段考數學分數和全校八年級全體同學數學分數，特地繪製累積相對次數分配折線圖。若 60 分以上(含)表示及格，則大同的班級和全校八年級同學的及格率哪一個比較低？
+  options:
+  - label: A
+    content: 大同的班級
+  - label: B
+    content: 全校八年級
+  - label: C
+    content: 全校八年級和大同的班級一樣
+  - label: D
+    content: 依題目所述，無法比較哪一個及格率較高
+  assets:
+  - key: s1_20_f1
+    kind: figure
+    file: doc_111_桃園_同德_數學_g8s1e3/s1_20_f1.png
+    crop:
+      page: 3
+      rect:
+      - 510.22
+      - 689.24
+      - 665.02
+      - 821.45
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_21
+  section: 1
+  number: 21
+  type: single
+  page: 3
+  stem: '下表是班上同學體重的累積次數分配表，下列敘述何者正確？
+
+    | 體重（公斤） | 30～40 | 40～50 | 50～60 | 60～70 | 70～80 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: |
+
+    | 累積次數（人） | 3 | 12 | 21 | 27 | 30 |'
+  options:
+  - label: A
+    content: 班上同學體重最重的是 80 公斤，最輕的是 30 公斤
+  - label: B
+    content: 班上 70～80 公斤的人最多
+  - label: C
+    content: 班上體重在 60 公斤以上的有 3 人
+  - label: D
+    content: 以上皆非
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_22
+  section: 1
+  number: 22
+  type: single
+  page: 4
+  stem: 右圖是某捷運公司統計 1 月及 2 月旅客當月使用悠遊卡搭乘次數的累積相對次數分配折線圖，及提供常客的優惠方案，如右表，則 2 月獲得 30%回饋金的旅客占
+    2 月旅客的多少百分比？
+  options:
+  - label: A
+    content: 16%
+  - label: B
+    content: 48%
+  - label: C
+    content: 52%
+  - label: D
+    content: 84%
+  assets:
+  - key: s1_22_f1
+    kind: figure
+    file: doc_111_桃園_同德_數學_g8s1e3/s1_22_f1.png
+    crop:
+      page: 4
+      rect:
+      - 317.78
+      - 102.11
+      - 662.73
+      - 264.11
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_23
+  section: 1
+  number: 23
+  type: single
+  page: 4
+  stem: '下表是一至六月份至阿里山搭乘小火車人數的累積相對次數分配表，則五月份觀光客有幾人？
+
+    | 月分(月) | 一 | 二 | 三 | 四 | 五 | 六 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+
+    | 次數(人) | 3600 | | | 3200 | | |
+
+    | 累積次數(人) | | | | | | |
+
+    | 累積相對次數(%) | 18 | 35 | 55 | | 85 | |'
+  options:
+  - label: A
+    content: 2800 人
+  - label: B
+    content: 3000 人
+  - label: C
+    content: 3200 人
+  - label: D
+    content: 4000 人
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_24
+  section: 1
+  number: 24
+  type: single
+  page: 4
+  stem: 下圖分別為甲、乙兩校學生參加數學競試成績的相對次數分配折線圖，已知兩校參加考試的人數均相同，且兩校合計共有 24 人成績未達 60 分。若成績達 90
+    分以上(含)可獲頒獎狀，請問兩校得獎的學生共有多少人？
+  options:
+  - label: A
+    content: '16'
+  - label: B
+    content: '15'
+  - label: C
+    content: '14'
+  - label: D
+    content: '12'
+  assets:
+  - key: s1_24_f1
+    kind: figure
+    file: doc_111_桃園_同德_數學_g8s1e3/s1_24_f1.png
+    crop:
+      page: 4
+      rect:
+      - 317.78
+      - 555.05
+      - 650.62
+      - 688.25
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_111_桃園_同德_數學_g8s1e3_s1_25
+  section: 1
+  number: 25
+  type: single
+  page: 4
+  stem: 右圖為阿德班上同學數學成績的次數分配折線圖，可是部分資料被墨水弄髒了，只知道及格的人占全班的 85%，則 70～90 分的同學占全班的多少百分比？
+  options:
+  - label: A
+    content: 60%
+  - label: B
+    content: 55%
+  - label: C
+    content: 50%
+  - label: D
+    content: 45%
+  assets:
+  - key: s1_25_f1
+    kind: figure
+    file: doc_111_桃園_同德_數學_g8s1e3/s1_25_f1.png
+    crop:
+      page: 4
+      rect:
+      - 483.38
+      - 754.36
+      - 642.44
+      - 878.4
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 5-1
+      title: 統計資料處理
+      chapter: 第5章 統計資料處理
+    textbook: 八上 5-1 統計資料處理
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen

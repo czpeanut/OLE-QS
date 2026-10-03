@@ -1,0 +1,783 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 1
+  city: 彰化
+  school_short: 福興
+  school: 彰化縣福興國中
+  id: doc_111_彰化_福興_數學_g8s1e1
+  title: 彰化縣福興國中 111學年度第1學期第1次定期評量 8年級數學科試題
+  exam_name: 111學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題(每題4分，共40分)
+    count: 10
+  - ord: 2
+    name: 二、填充題(每格 4 分，共 52 分)
+    count: 13
+  - ord: 3
+    name: 三、計算題：(每題 4 入，共 8 分，需寫計算過程否則不予計分)
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/111/1-1/彰化/福興.pdf
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: '下列四位同學想算出$(19.5)^{2}$的值，他們的方法如下：
+
+    小佑：$(19.5)^{2}=(20-0.5)^{2}=20^{2}-2\times20\times0.5-0.5^{2}$
+
+    阿家：$(19.5)^{2}=(\frac{39}{2})^{2}=\frac{39^{2}}{4}$。
+
+    莎莎：$(19.5)^{2}=19^{2}+(0.5)^{2}$
+
+    小恩：$(19.5)^{2}=(19+0.5)^{2}=19^{2}+2\times19\times0.5+0.5^{2}$
+
+    若這四人都沒有其它計算上的錯誤，則有多少人的答案是對的？'
+  options:
+  - label: A
+    content: 1 人
+  - label: B
+    content: 2 人
+  - label: C
+    content: 3 人
+  - label: D
+    content: 4 人
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 已知$A$為$x$的二次多項式，$B$為$x$的一次多項式，則$A+2B$為$x$的幾次多項式？
+  options:
+  - label: A
+    content: 一次
+  - label: B
+    content: 二次
+  - label: C
+    content: 三次
+  - label: D
+    content: 四次
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 已知 $2x^{2}+x+3$ 除以另一個多項式 $B$ 後，得商式為 $2x+3$，餘式為 $6$，則此多項式 $B$ 為何？
+  options:
+  - label: A
+    content: $x+1$
+  - label: B
+    content: $x-1$
+  - label: C
+    content: $x+3$
+  - label: D
+    content: $x-3$
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 若 $x$ 的多項式 $3(4x+5)-m(6x-1)$ 為零次多項式，且 $m$ 為一常數，則此多項式為何？
+  options:
+  - label: A
+    content: '12'
+  - label: B
+    content: '13'
+  - label: C
+    content: '15'
+  - label: D
+    content: '17'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 已知 $n$ 是正整數，則能使 $\sqrt{\frac{540}{n}}$ 的值為整數的 $n$ 值共有多少個？
+  options:
+  - label: A
+    content: 一個
+  - label: B
+    content: 二個
+  - label: C
+    content: 三個
+  - label: D
+    content: 四個
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 下列敘述何者正確？
+  options:
+  - label: A
+    content: $\pm 4$ 的平方根為 16
+  - label: B
+    content: 1 的平方根為 1
+  - label: C
+    content: 5 是 $-25$ 的平方根
+  - label: D
+    content: $|-49|$ 的平方根為 $\pm 7$
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 已知 $(m-n)^{2}=13$，$(m+n)^{2}=27$，則 $m^{2}+n^{2}=$？
+  options:
+  - label: A
+    content: '40'
+  - label: B
+    content: '30'
+  - label: C
+    content: '20'
+  - label: D
+    content: '10'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 若 $(2x^{2}-1)-[x+1-(a+6x^{2})]$ 計算後所得結果的常數項為 $6$，則 $a=$？
+  options:
+  - label: A
+    content: '8'
+  - label: B
+    content: '-8'
+  - label: C
+    content: '6'
+  - label: D
+    content: '-6'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 下列哪一個選項的表示方法是正確的？
+  options:
+  - label: A
+    content: $\sqrt{(-7)^{2}}=7$
+  - label: B
+    content: $\sqrt{4\frac{16}{25}}=2\frac{4}{5}$
+  - label: C
+    content: 16 的平方根是 4
+  - label: D
+    content: $\sqrt{64}=\pm 8$
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_111_彰化_福興_數學_g8s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 若 $(ax+1)(x+3)(x+b)=x^{3}+cx^{2}+dx-3$，則 $a\times b\times c=$？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '-1'
+  - label: C
+    content: '-3'
+  - label: D
+    content: '3'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '計算下列各式的值：
+
+    ①$1019^{2}-38\times1000+19^{2}=$ (1)'
+  review_note: 答案卷 ['1000000']，Gemini 與 Qwen 一致判為 1000722
+  source_ocr: true
+  answer:
+  - '1000000'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '1000722'
+    qwen: '1000722'
+  answer_status: disputed
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: '計算下列各式的值：
+
+    ②$70\frac{3}{7}\times69\frac{4}{7}=$ (2)'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - 4899\frac{40}{49}
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: 4899\frac{40}{49}
+    qwen: 4899\frac{40}{49}
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: '計算下列各式的值：
+
+    ③$2234\times3234\times(\frac{2234}{3234}-\frac{3234}{2234})=$ (3)'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '-5468000'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '-5468000'
+    qwen: '-5468000'
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 多項式 $5x^{3}+7x-4x^{2}+1$ 的次數為 $a$、二次項的係數為 $b$，常數項為 $c$，則 $a+b+c=$ (4)
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '0'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: '0'
+    qwen: '0'
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 計算 $(7x-1)(-x+2)$ 並降冪排列寫出答案 (5)
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - -7x^{2}+15x-2
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: -7x^{2}+15x-2
+    qwen: -7x^2+15x-2
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 若多項式 $B$ 減 $9x-2x^{2}$ 的差為 $3x^{3}+4x^{2}-2x-1$，則多項式 $B$ 為何？= (6)
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - 3x^{3}+2x^{2}+7x-1
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: 3x^{3}+2x^{2}+7x-1
+    qwen: 3x^3+2x^2+7x-1
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知 $3.6^{2}=12.96$、$3.7^{2}=13.69$、$3.65^{2}=13.3225$，則 $\sqrt{13}$ 的近似值為多少？
+    (7) (四捨五入至小數點後第一位)
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '3.6'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: '3.6'
+    qwen: '3.6'
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 若 $(512-24)^{2}=512^{2}-24xa$，則 $a=$ (8)
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '1000'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '1000'
+    qwen: '1000'
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 設 $9$ 是 $4a+1$ 的一個平方根，$121$ 的負平方根為 $b$，則 $a+b=$ (9)
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '9'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: '9'
+    qwen: '9'
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 若 $a$ 為整數，且 $a<-\sqrt{\frac{39}{5}}<a+1$，則 $a$ 的值為多少？ (10)
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '-3'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: '-3'
+    qwen: '-3'
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 已知 $(2x+m)(nx+2)$ 計算後，$x^{2}$ 項係數與常數項都是 $10$，則此多項式的 $x$ 項係數為 (11) 。
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '29'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '29'
+    qwen: '29'
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 如右圖，正方形 $ABCD$ 的邊長為 $65\frac{3}{4}$ 公分，正方形 $PQRS$ 的邊長為 $34\frac{1}{4}$ 公分，則灰色部分的面積為
+    (12) 平方公分。
+  assets:
+  - key: s2_12_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g8s1e1/s2_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 417.27
+      - 298.8
+      - 515.45
+      - 397.96
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '3150'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '3150'
+    qwen: '3150'
+- id: doc_111_彰化_福興_數學_g8s1e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 下圖為小美計算兩個多項式相除的過程，則 $a+b+c+d=$ (13)
+  assets:
+  - key: s2_13_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g8s1e1/s2_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 90.98
+      - 387.16
+      - 179.02
+      - 453.6
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - '41'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '41'
+    qwen: '41'
+- id: doc_111_彰化_福興_數學_g8s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 如圖所示，請以 $x$ 的多項式表示圖形的周長與面積。
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g8s1e1/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 70.69
+      - 486.65
+      - 176.73
+      - 560.62
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - 周長：$10x+8$
+  - 面積：$13x-1$
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+- id: doc_111_彰化_福興_數學_g8s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: '小君想在一面玻璃牆上展示九張的個人美照，他的設計圖如下，白色格子區為圖片黏貼處，每張圖片的大小與每個白色格子大小相同，若九宮格中每一個白色格子的邊長都是
+    6.6 公分，試回答下列問題：
+
+    (1) 若這九張照片可以拼成一個大正方形嗎？若可以的話其邊長為多少？(2 分)
+
+    (2) 這面玻璃牆貼完照片後，剩下的面積(灰色區塊)是多少？(2 分)'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_111_彰化_福興_數學_g8s1e1/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 69.71
+      - 590.07
+      - 203.56
+      - 704.29
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  answer:
+  - (1)可以，19.8公分
+  - (2)174.4平方公分
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai

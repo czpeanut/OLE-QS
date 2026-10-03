@@ -1,0 +1,63 @@
+source: data/bank/doc_112_嘉義_北興_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_112_嘉義_北興_數學_g7s1e2_s2_1
+  number: 1
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '120'
+      reasoning: 公園周長為 2×(36+24)=120 公尺。甲、乙、丙走一圈分別需 120/3=40 秒、120/4=30 秒、120/6=20
+        秒，三人同時在 A 相遇的最快時間為 [40, 30, 20]=120 秒。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_嘉義_北興_數學_g7s1e2_s2_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 乙>甲>丙
+      reasoning: 將三數同除以最大公因數 2²×3×7² 後，甲數剩 2×3×7=42，乙數剩 7²=49，丙數剩 2²×3²=36，因此乙 > 甲
+        > 丙。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_嘉義_北興_數學_g7s1e2_s2_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1485元
+      reasoning: 四位數18▲5為33的倍數（即11與3的公倍數），由11的倍數判別法(1+8)-(▲+5)或(8+5)-(1+▲)=12-▲為11的倍數，得知▲=1。因此每份材料為1815÷33=55元，27份共需27×55=1485元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_嘉義_北興_數學_g7s1e2_s2_4
+  number: 4
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{141}{4}
+      reasoning: 計算各項：(-3)^4 = 81，7^2 = 49，(-2)^3 = -8。原式 = 81 - 49 - (26 / -8) =
+        32 - (-13/4) = 32 + 13/4 = 141/4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

@@ -1,0 +1,285 @@
+source: data/bank/doc_112_台北_誠正_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: (乙)「小於」為 < ，寫成 2x+3<70 正確；(丁)「不大於」為 ≤ ，寫成 6-5x≤39 正確。(甲)「超過」應為 >
+        ；(丙)「未滿」應為 < 。故選 (C)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：各選項中完整的不等式數線圖形
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中的數線圖示與選項內容因 OCR 轉換破損嚴重，缺乏完整的數線圖形（包含空心/實心圓點及射線方向），無法正確判斷對應的不等式圖示。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 各選項中完整的不等式數線圖形
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 鋼鐵人進入後未響鈴，表示 x + 80 ≦ 500，得 x ≦ 420；浩克進入後警示音響起，表示 x + 80 + 250 >
+        500，得 x > 170。故 170 < x ≦ 420。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_5
+  number: 5
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 不等式兩邊同乘負數時需改變不等號方向。原式 $-3x+6<12$ 兩邊同乘以 $-4$，可得 $12x-24>-48$，故 (D)
+        正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 從第三步驟 -5x > -6 到第四步驟時，不等式兩邊同除以負數 -5 應該要改變不等號方向為 x < 6/5，因此第四步驟開始發生錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將不等式移項整理得 (a - 3)x < -(a - 3)。因為 a < 0，所以 a - 3 < 0，同除以負數 (a - 3)
+        時不等號要變號，得到 x > -1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設進步30分以上的同學有 x 位，依題意列出不等式 25×10 + 45x ≤ 700，解得 45x ≤ 450，即 x ≤ 10，故至多
+        10 位。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：投進球數與對應人數的長條圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「下方長條圖」，但未附上長條圖或各投進球數的人數數據，因此無法計算投進球數的中位數。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 投進球數與對應人數的長條圖
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目中提及的某班數學第三次段考分數次數分配表
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右上的次數分配表」，但未提供該次數分配表的具體數據，無法計算平均分數。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少題目中提及的某班數學第三次段考分數次數分配表
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_11
+  number: 11
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 從最高分組開始累計人數：90~100分有2人（第1~2名），80~90分有6人（第3~8名），70~80分有8人（第9~16名），因此第10名落在70~80分這組。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_12
+  number: 12
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的體重測量統計直條圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及需參考右上方直條圖以得知其他體重區間的人數，但題文未提供該統計圖表，無法計算體重適中學生的人數。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中提及的體重測量統計直條圖
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_13
+  number: 13
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺色列印到一半的紙張圖形
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及文件正好列印到一半，需要對照印出一半的圖形才能判斷四位數字的排列順序（如區分8103或3018），但題幹未附上圖形。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 缺色列印到一半的紙張圖形
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_15
+  number: 15
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的「右圖」線對稱圖形
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右圖為一線對稱圖形」，但未提供該圖形，無法判斷各線段位置與對稱軸。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中提及的「右圖」線對稱圖形
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_16
+  number: 16
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：第15題的線對稱圖形
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 本題需要參考第15題的線對稱圖形以確定點A、D、E、F的相對位置及對稱軸關係，因缺乏圖形資訊無法解題。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第15題的線對稱圖形
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_18
+  number: 18
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設租用 x 輛車，總人數為 30x + 20。由 150 < 30x + 20 < 200 得 4.33 < x < 6，故 x
+        = 5；代入檢驗總人數 170 人，每輛坐 40 人時第 5 輛坐 10 人符合題意。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_19
+  number: 19
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 5月份花費增加 27000 - 15000 = 12000 元，分攤到全年 12 個月平均每月增加 12000 ÷ 12 = 1000
+        元，因此新的每月平均花費為 15000 + 1000 = 16000 元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s1_20
+  number: 20
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 原數據中24與25各有4個班；若轉學生轉入23人的班級使其變為24人，則24人班級增為5班成為唯一眾數24，且排序後第6、7位皆為24，中位數亦為24，滿足題意。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s2_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：第(2)小題完整且正確的不等式算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 第(2)小題的數學式文字排版錯亂且有字元遺漏（「5-(2x+3) $\frac{2x+1}{2}$ 5 >2-」），無法確認完整且正確的不等式題目。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 第(2)小題完整且正確的不等式算式
+- id: doc_112_台北_誠正_數學_g7s2e3_s2_2
+  number: 2
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 9
+      - (2) 10%
+      reasoning: 由總人數得 x + y = 20 - (6 + 3) = 11，由平均數得 1×6 + 2x + 3×3 + 4y = 2.05×20
+        = 41，即 2x + 4y = 26 (x + 2y = 13)。解聯立可得 x = 9，y = 2。因此 4 人所占百分比為 (2 / 20)
+        × 100% = 10%。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_台北_誠正_數學_g7s2e3_s2_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目所指的右列圖形及對稱軸 L
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目要求繪製以直線 L 為對稱軸的線對稱圖形，但題目內容缺少原始圖形與對稱軸 L 的圖像資訊，無法作答。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少題目所指的右列圖形及對稱軸 L

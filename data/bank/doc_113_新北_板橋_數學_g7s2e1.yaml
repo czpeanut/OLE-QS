@@ -1,0 +1,623 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 1
+  city: 新北
+  school_short: 板橋
+  school: 新北市立板橋國民中學
+  scope_note: 康軒版第二冊 1-1~2-1
+  id: doc_113_新北_板橋_數學_g7s2e1
+  title: 新北市立板橋國民中學 113學年度第2學期第1次定期評量 7年級數學科試題
+  exam_name: 113學年度第2學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題
+    count: 10
+  - ord: 2
+    name: 二、填充題
+    count: 7
+  - ord: 3
+    name: 三、計算題
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/新北/板橋.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: null
+    - number: 2-1
+      title: null
+    publisher: 康軒版
+    raw: 康軒版第二冊 1-1~2-1
+    volume: 第二冊
+  chapter_index:
+    publisher: 康軒
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: 康軒
+questions:
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列何者為二元一次式?     (1-1 課本 p.7)
+  options:
+  - label: A
+    content: $7x+ 3 = 4y$
+  - label: B
+    content: $2x+ y-2(3 + x)$
+  - label: C
+    content: $5x+ 2y$
+  - label: D
+    content: $\frac{x}{3}-6y^{2}+ 8$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 尚佳有 $x$ 元，夏簡有 $y$ 元，根據下列哪一個選項的敘述可列出二元一次方程式$y= 5x-20$?     (1-1 習作 p.5)
+  options:
+  - label: A
+    content: 尚佳的錢是夏簡的 5 倍少 20 元
+  - label: B
+    content: 夏簡的錢是尚佳的 5 倍少 20 元
+  - label: C
+    content: 尚佳的錢是夏簡的 5 倍多 20 元
+  - label: D
+    content: 夏簡的錢是尚佳的 5 倍多 20 元
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 化簡$-3x+ 5y-1 -(-2x-y+ 2)=$?     (1-1 課本 p.11)
+  options:
+  - label: A
+    content: $-x+ 6y-3$
+  - label: B
+    content: $-x+ 6y-1$
+  - label: C
+    content: $-5x+ 4y-3$
+  - label: D
+    content: $-5x+ 4y-1$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 解二元一次聯立方程式$\begin{cases} 2x+ 3y= 8 \dots (1) \\ 3x-5y= -7 \dots (2) \end{cases}$
+    如果要完全消去$y$項，應該如何操作?     (1-2 習作 p.8)
+  options:
+  - label: A
+    content: (1) $\times 3+$(2) $\times 2$
+  - label: B
+    content: (1) $\times 3-$(2) $\times 2$
+  - label: C
+    content: (1) $\times 5+$(2) $\times 3$
+  - label: D
+    content: (1) $\times 5-$(2) $\times 3$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: $x=5$，$y=-3$ 是下列哪一個聯立方程式的解?     (1-2 課本 p.30)
+  options:
+  - label: A
+    content: $\begin{cases} 3x+ 4y= 3 \\ 5x+ 2y= -5 \end{cases}$
+  - label: B
+    content: $\begin{cases} 4x+ 3y= -3 \\ 2x+ 5y= 5 \end{cases}$
+  - label: C
+    content: $\begin{cases} 3x+ 4y= -3 \\ 2x+ 5y= 5 \end{cases}$
+  - label: D
+    content: $\begin{cases} 3x+ 4y= 3 \\ 2x+ 5y= -5 \end{cases}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 78%）
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 已知$\begin{cases} 3x+ 2by= -2 \\ 2ax-4y= 8 \end{cases}$ 的解為$x=2$、$y=1$，求$a$與$b$的值=?     (1-2
+    習作 p.9)
+  options:
+  - label: A
+    content: $a=3$、$b=4$
+  - label: B
+    content: $a=-4$、$b=3$
+  - label: C
+    content: $a=3$、$b=-4$
+  - label: D
+    content: $a=4$、$b=3$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 已知動物園的門票全票一張 80 元，優待票一張 50 元，某日共賣出 200 張票，收入為 15100 元，問當日賣出多少張全票?     (1-3
+    習作 p.11)
+  options:
+  - label: A
+    content: '30'
+  - label: B
+    content: '80'
+  - label: C
+    content: '120'
+  - label: D
+    content: '170'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 坐標平面上有一點 A(7,-4)，則 A 點會在哪一象限內?     (2-1 課本 p.62)
+  options:
+  - label: A
+    content: 第一象限
+  - label: B
+    content: 第二象限
+  - label: C
+    content: 第三象限
+  - label: D
+    content: 第四象限
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 佐除去便利商店買飲料，結帳時店員告訴他一共 23 元，佐除手上只有 5 元和 1 元的銅板，兩種銅板都至少有三十個，請問佐除的不找零付錢方法(例如
+    5 元給一個、1 元給 18 個)共有多少種組合?     (1-1)
+  options:
+  - label: A
+    content: 4 種
+  - label: B
+    content: 5 種
+  - label: C
+    content: 6 種
+  - label: D
+    content: 7 種
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: 大腸包小腸是將糯米腸切開後，在中間包 1 支烤香腸一起食用的食物，某攤販販賣烤香腸及大腸包小腸兩種商品，烤香腸 1 支 30 元、大腸包小腸 1 份
+    55 元，某天老闆結算共收入 21225 元，已知共用了 495 支烤香腸(包括單賣和夾在糯米)，則老闆當天共賣出多少份大腸包小腸?     (1-3 仿
+    111 基北區特招)
+  options:
+  - label: A
+    content: '255'
+  - label: B
+    content: '250'
+  - label: C
+    content: '245'
+  - label: D
+    content: '240'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '現有一個原長 6 公分的彈簧，於彈簧的彈性限度下，在彈簧下端用力往下拉時，每多用力 1 單位力，彈簧就會多伸長 3 公分，若拉力達到$x$單位時，彈簧總長度為$y$公分，試回答以下問題:     (1-1)
+
+    (1) 列出拉力與彈簧總長度之關係式為___①___
+
+    (2) 此關係式是否為二元一次方程式?___ ②___'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: y=3x+6；是
+    qwen: $y=3x+6$;O
+    gemini_high: y=3x+6；是
+  answer:
+  - y=3x+6
+  - 是
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_板橋_數學_g7s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: '解下列各二元一次聯立方程式     (1-2)
+
+    (1)$\begin{cases} x = 3y \\ x + y = 16 \end{cases}$  ___③___     (課本 p.24)
+
+    (2)$\begin{cases} 2x + 3y = 7 \\ 3x - 5y = 1 \end{cases}$  ___④___     (習作 p.8)
+
+    (3)$\begin{cases} \frac{4}{3}x + \frac{3}{2}y = 15 \\ -\frac{1}{9}x + \frac{1}{12}y
+    = \frac{5}{2} \end{cases}$  ___⑤___
+
+    (4)$\begin{cases} 57x + 49y = 0 \\ 38x - 69y = 0 \end{cases}$  ___⑥___'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 81%）
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_新北_板橋_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 板橋國中象棋隊含教練共有 36 人，因某場比賽表現優異，阿龍是男教練買了 10 個披薩開慶功宴請全隊含教練聚餐，男生每 3 人分食一個，女生每 5
+    人分食一個，且剛好會分完，試問板橋國中象棋隊男女學生隊員人數相差___⑦___人?     (1-3 課本 p.41)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '5'
+    qwen: '5'
+  answer:
+  - '5'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: '已知點 $\text{A}(m,n)$ 在第二象限內，則下列各點分別在哪一象限內或坐標軸上?     (2-1 習作 p.22)
+
+    (1)$\text{B}(n-m,mn)$  ___⑧___
+
+    (2)$\text{C}(m-n,-2n)$  ___⑨___
+
+    (3)$\text{D}(m^{2},n\times 10^{-1})$  ___⑩___
+
+    (4)$\text{E}(2m-2(n+m)+2n,m-3)$  ___⑪___'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 第四象限；第三象限；第一象限；y軸
+    qwen: 第四象限;第三象限;第一象限;y軸負半軸
+    gemini_high: 第四象限；第三象限；第一象限；y軸
+  answer:
+  - 第四象限
+  - 第三象限
+  - 第一象限
+  - y軸
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_板橋_數學_g7s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 3
+  stem: '象棋中，馬有「八面威風馬走日，最是傷神馬絆腳」之說法，意思為馬的走法為日字(直行同方向往前兩格，再轉90°走一格)，圖(一)為某棋局之部份局面，馬為紅棋，其餘皆為黑棋，若將位於原點，士所在的坐標為$(1,0)$，砲所在的坐標為$(0,-1)$，試問:
+
+    (1)馬現在位置的所在坐標為?  ___⑫___
+
+    (2)若現在換紅方執棋，想用馬叫將(再下一步可用馬吃將)，則需讓馬走到之坐標為? ___⑬___  (2-1)'
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_113_新北_板橋_數學_g7s2e1/s2_5_f1.png
+    crop:
+      page: 3
+      rect:
+      - 372.44
+      - 140.4
+      - 622.8
+      - 287.02
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: (-1,-3)；(-2,-1)
+    qwen: $(-2,-2)$;$(-3,0)$
+    gemini_high: (-1,-3)；(-2,-1) 或 (1,-2)
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_新北_板橋_數學_g7s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 3
+  stem: '某家燒烤店的消費方式為大人 800 元，小孩 640 元，兒童節為了搶商機，此店推出了 A、B 兩種優惠方案，A 方案為 4 人以上同行打九折，B
+    方案為 5 人同行，1 人免費(限最低消費者)，每次只能選擇一種方案消費，小龍和柚澄兩家人分別到燒烤店用餐，小龍一家共 4 人，只能用 A 方案，共消費 2736
+    元；柚澄一家共 6 人且小孩不只 1 人，可以用 A 方案或 B 方案，兩種方案相差 224 元，請問:     (1-3)
+
+    (1)小龍家大人有___⑭___人
+
+    (2)柚澄家大人有___⑮___人'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: 3；2
+    qwen: 3;2
+    gemini_high: 3；2
+  answer:
+  - '3'
+  - '2'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_板橋_數學_g7s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: '龍哥在玩闖關遊戲中發現一張藏寶圖，上面有特殊的平面坐標，如圖(二)所示，每格皆為一單位，還附上指示尋寶路徑的步驟如下:     (2-1)
+
+    (1) 從原點(x、y 軸交點)出發，向正 x 方向走 3 格後向左轉90°
+
+    (2) 向前走 2 格後轉向負 x 方向
+
+    (3) 向前走前一次移動格數的 2 倍
+
+    (4) 沿著平行 y 軸的方向前進跨越 x 軸，使得跨越前和跨越後所移動的格數相同
+
+    (5) 此時到達處即為寶藏位置
+
+    求寶藏位置的坐標(x,y)為?  ___⑯___'
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_113_新北_板橋_數學_g7s2e1/s2_7_f1.png
+    crop:
+      page: 3
+      rect:
+      - 438.87
+      - 609.71
+      - 559.31
+      - 738.65
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: (-1,-2)
+    qwen: $(-1,-2)$
+  answer:
+  - (-1,-2)
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_板橋_數學_g7s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 4
+  stem: '請分別以「代入消去法」及「加減消去法」求解聯立方程式$\begin{cases} x+ 3y= 43 \\ -5x+ 2y= 6 \end{cases}$
+
+    (1)代入消去法(3 分)
+
+    (2)加減消去法(2 分)'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_新北_板橋_數學_g7s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 4
+  stem: '有一水池有甲乙兩根排水管和丙一根注水管，若在空水池中只打開甲丙的開關需 7 小時能裝滿水池，只開乙丙的開關需 8 小時能裝滿水池，若在滿水池中只打開甲乙的開關需
+    1 小時能放空水池，試問:
+
+    (1)假設丙一小時注水量為$x$，水池容量為$y$，則甲和乙兩根排水管一小時的排水量各為何? (2 分)
+
+    (2)如果在此滿水池同時打開全部開關需多少小時才能放空水池? (3 分)    (1-3)'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai

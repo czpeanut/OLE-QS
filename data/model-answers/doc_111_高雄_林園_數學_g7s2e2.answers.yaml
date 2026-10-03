@@ -1,0 +1,90 @@
+source: data/bank/doc_111_高雄_林園_數學_g7s2e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_高雄_林園_數學_g7s2e2_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - y=-\frac{1}{3}x
+      reasoning: 設關係式為 y = kx，將 x = 12、y = -4 代入得 -4 = 12k，解得 k = -1/3，因此關係式為 y =
+        -1/3 x。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e2_s3_2
+  number: 2
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 漂白水50公克，清水4950公克
+      - 495公克
+      - (1, 2)
+      reasoning: 消毒水比例1:99，總重5000g時漂白水為5000×(1/100)=50g、清水為4950g；漂白水多倒5g需補清水5×99=495g。解聯立方程2x+y=4與x-2y=-3得x=1、y=2，交點為(1,
+        2)。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s2e2_s5_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏各題（P131例7、P80例5、P81例6、P87例1、P90例3）的具體題目文字與內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供課本或講義的頁碼與題號，未提供實際的題目內容，因此無法進行作答。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺乏各題（P131例7、P80例5、P81例6、P87例1、P90例3）的具體題目文字與內容
+- id: doc_111_高雄_林園_數學_g7s2e2_s5_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏對應頁碼（P98-3、P106例2、P110例4、P120-6、P126例3）的具體題目內文與圖表
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供課本或習作的頁碼與題號（如 P98-3、P106例2 等），缺乏實際的題目文字、圖表與具體問題內容，無法進行作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺乏對應頁碼（P98-3、P106例2、P110例4、P120-6、P126例3）的具體題目內文與圖表
+- id: doc_111_高雄_林園_數學_g7s2e2_s5_13
+  number: 13
+  type: fill
+  images_sent: 3
+  status: missing_context
+  note: gemini 回報缺少素材：題目問題與文字敘述
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供解答過程與附圖，缺少題目本體文字與問題敘述，無法得知欲求之答案。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目問題與文字敘述
+- id: doc_111_高雄_林園_數學_g7s2e2_s6_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 漂白水50公克，清水4950公克
+      - (2) 495公克
+      reasoning: (1) 漂白水與清水比為1:99，總重5000公克分為100等份，每份50公克，故漂白水50公克、清水4950公克。(2) 漂白水55公克需對應55×99=5445公克清水，需再補入5445-4950=495公克清水。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

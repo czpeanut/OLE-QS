@@ -1,200 +1,343 @@
-"""把組好的卷輸出成可列印的 HTML（瀏覽器直接列印即為 PDF）。
+"""把選好的題目排成考卷：HTML（預覽、列印）與 PDF（headless Chromium）。
 
-三份輸出共用同一份渲染邏輯，避免「畫面看到的」與「印出來的」不一致：
-    exam    試題卷
-    answer  答案卷
+三種輸出共用同一份渲染邏輯，避免「畫面看到的」與「印出來的」不一致：
+    exam    試題卷（可選卷末附答案）
+    answer  答案卷（作答格）
     key     教師解答卷（題目 + 答案 + 詳解）
 
 **來源標註在這裡強制執行。** 依授權條件，公開試題可用但須保留出處，
-所以出處字串由 Document 直接產生，不接受呼叫端覆寫或關閉。
+所以每題底下的出處與卷末來源列表固定輸出，不提供關閉選項。
 """
 
 from __future__ import annotations
 
 import html
+import os
+import re
+import struct
 from collections import OrderedDict
+from dataclasses import dataclass
+from functools import lru_cache
+from pathlib import Path
 
 from .mathfmt import MATH_CSS, render as md
-from .models import Paper, Question
+from .models import Question
+from .storage import asset_path
 
-PRINT_CSS = """
-@page { size: A4; margin: 14mm 12mm 16mm 12mm; }
-* { box-sizing: border-box; }
-body { font-family: "Noto Serif TC", "Songti TC", serif; font-size: 11.5pt;
-       line-height: 1.7; color: #000; margin: 0; }
-.head { text-align: center; border-bottom: 2px solid #000; padding-bottom: 6px;
-        margin-bottom: 10px; }
-.head h1 { font-size: 15pt; margin: 0 0 4px; }
-.meta { font-size: 9.5pt; color: #333; }
-.fields { display: flex; gap: 18px; justify-content: flex-end;
-          font-size: 10pt; margin: 6px 0 12px; }
-.section-title { font-weight: 700; font-size: 12pt; margin: 14px 0 6px;
-                 border-left: 4px solid #000; padding-left: 6px; }
-/* 題目不可跨頁斷裂 —— 老師最在意的排版細節 */
-.q { break-inside: avoid; page-break-inside: avoid; margin: 0 0 11px; }
-.q-head { display: flex; gap: 6px; }
-.q-no { font-weight: 700; min-width: 2.2em; }
-.q-body { flex: 1; }
-.opts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px 14px;
-        margin-top: 3px; }
-.opts.wide { grid-template-columns: 1fr; }
-.opt { display: flex; gap: 4px; }
-.group-stem { background: #f4f4f4; padding: 6px 8px; margin: 8px 0 6px;
-              border-left: 3px solid #888; break-inside: avoid; }
-.passage { background: #f8f8f8; padding: 8px 10px; margin: 8px 0;
-           border: 1px solid #ddd; text-indent: 2em; break-inside: avoid; }
-figure { margin: 6px 0; text-align: center; break-inside: avoid; }
-figure img { max-width: 100%; }
-figcaption { font-size: 9pt; color: #555; }
-table.asset { border-collapse: collapse; margin: 6px auto; font-size: 10.5pt; }
-table.asset td, table.asset th { border: 1px solid #333; padding: 2px 10px;
-                                 text-align: center; }
-.cite { font-size: 8.5pt; color: #666; margin-top: 2px; }
-.ans { color: #b00; font-weight: 700; }
-.expl { font-size: 10pt; color: #333; background: #fafafa; padding: 4px 8px;
-        margin-top: 3px; border-left: 3px solid #ccc; }
-.answer-grid { display: grid; grid-template-columns: repeat(10, 1fr);
-               border: 1px solid #000; }
-.answer-grid div { border: 1px solid #999; padding: 5px 2px; text-align: center;
-                   font-size: 10pt; min-height: 2.1em; }
-.answer-grid .n { background: #eee; font-weight: 700; }
-.footer-note { margin-top: 16px; padding-top: 6px; border-top: 1px solid #999;
-               font-size: 8.5pt; color: #555; }
-""" + MATH_CSS
+TYPE_ORDER = ["single", "multiple", "tf", "fill", "matching", "calc", "essay", "group"]
+TYPE_NAME = {"single": "單選題", "multiple": "多選題", "tf": "是非題", "fill": "填充題",
+             "matching": "配合題", "calc": "計算題", "essay": "非選擇題", "group": "題組"}
+GROUP_NAME = {"英語": "閱讀測驗", "國文": "閱讀測驗"}
+CHOICE = {"single", "multiple", "tf"}
+NUM = "一二三四五六七八九十"
+CROP_DPI = 220            # 擷取管線裁圖的解析度；據此把圖印回原卷上的實際大小
+# 原卷題幹開頭的作答括號與題號（「( )16.」）：組卷後題號重編，留著會兩個題號並列
+LEAD = re.compile(r"^\s*(?:[(（]\s*[)）]\s*)?(?:\d{1,3}\s*[.．、](?!\d)\s*)?")
+
+
+def clean_stem(stem: str | None) -> str:
+    return LEAD.sub("", stem or "", count=1)
+
+DEFAULTS = {
+    "subtitle": "",            # 副標題，例如「七年級數學 第一次段考 複習卷」
+    "header_fields": True,     # 班級／座號／姓名
+    "auto_sections": True,     # 依題型自動分大題
+    "columns": 1,              # 版面分欄（1 或 2）
+    "font_size": 11.5,         # pt
+    "answer_lines": 4,         # 計算、非選擇題留幾行作答空間
+    "show_score": True,
+    "answer_appendix": False,  # 試題卷卷末附答案
+    "choice_paren": True,      # 選擇題前印作答括號「(　　)」
+}
+
+
+@dataclass
+class Item:
+    question: Question
+    score: float | None = None
+    section_name: str | None = None
 
 
 def esc(s: str | None) -> str:
     return html.escape(s or "", quote=False)
 
 
-def render_options(q: Question) -> str:
-    if not q.options:
-        return ""
-    # 選項短就排兩欄，長就排一欄
-    longest = max((len(o.content_md) for o in q.options), default=0)
-    cls = "opts" if longest <= 18 else "opts wide"
-    cells = []
-    for o in q.options:
-        body = md(o.content_md)
-        if o.asset_file:
-            body += f'<img src="/assets/{esc(o.asset_file)}" alt="選項{esc(o.label)}">'
-        cells.append(f'<div class="opt"><span>({esc(o.label)})</span>'
-                     f'<span>{body}</span></div>')
-    return f'<div class="{cls}">{"".join(cells)}</div>'
+@lru_cache(maxsize=20000)
+def _png_width(path: str) -> int | None:
+    try:
+        with open(path, "rb") as f:
+            head = f.read(24)
+        if head[:8] == b"\x89PNG\r\n\x1a\n":
+            return struct.unpack(">I", head[16:20])[0]
+    except OSError:
+        pass
+    return None
 
 
-def render_assets(q: Question) -> str:
-    out = []
-    for a in sorted(q.assets, key=lambda x: x.key):
-        if a.kind.value == "table" and a.markdown:
-            out.append(md_table(a.markdown, a.label))
-        elif a.file:
+class Renderer:
+    def __init__(self, asset_root: Path, asset_url: str = "/assets/", columns: int = 1):
+        self.root = asset_root
+        self.url = asset_url
+        self.narrow = columns == 2
+
+    def img(self, file: str, alt: str = "") -> str:
+        local = asset_path(file)
+        w = _png_width(str(local)) if local else None
+        style = f' style="width:{w / CROP_DPI * 25.4:.1f}mm"' if w else ""
+        return f'<img src="{self.url}{esc(file)}" alt="{esc(alt)}"{style}>'
+
+    # ── 題目元件 ──
+    def options(self, q: Question) -> str:
+        if not q.options:
+            return ""
+        has_img = any(o.asset_file for o in q.options)
+        longest = max((len(o.content_md) for o in q.options), default=0)
+        # 選項短就並排；雙欄版面每欄只有一半寬，門檻跟著減半
+        four, two = (4, 10) if self.narrow else (7, 20)
+        cols = 2 if has_img else 4 if longest <= four else 2 if longest <= two else 1
+        cells = []
+        for o in q.options:
+            body = md(o.content_md)
+            if o.asset_file:
+                body += self.img(o.asset_file, f"選項{o.label}")
+            cells.append(f'<div class="opt"><span class="ol">({esc(o.label)})</span>'
+                         f'<span>{body}</span></div>')
+        return f'<div class="opts c{cols}">{"".join(cells)}</div>'
+
+    def assets(self, q: Question) -> str:
+        out = []
+        for a in sorted(q.assets, key=lambda x: x.key):
+            if a.kind.value == "table" and a.markdown:
+                out.append(md_table(a.markdown, a.label))
+            elif a.file:
+                cap = f"<figcaption>{esc(a.label)}</figcaption>" if a.label else ""
+                out.append(f"<figure>{self.img(a.file, a.alt or '')}{cap}</figure>")
+        return "".join(out)
+
+    def shared(self, q: Question) -> str:
+        a = next((x for x in (q.document.assets if q.document else [])
+                  if x.key == q.shared_asset_key), None)
+        if not a:
+            return ""
+        if a.text:
+            paras = "".join(f"<p>{md(p)}</p>" for p in a.text.split("\n\n") if p.strip())
+            return f'<div class="passage">{paras}</div>'
+        if a.file:
             cap = f"<figcaption>{esc(a.label)}</figcaption>" if a.label else ""
-            out.append(f'<figure><img src="/assets/{esc(a.file)}" '
-                       f'alt="{esc(a.alt)}">{cap}</figure>')
-        elif a.pending:
-            out.append('<figure style="border:1px dashed #c00;padding:8px;color:#c00">'
-                       f'⚠ 此題有圖尚未產生檔案（{esc(a.key)}）</figure>')
-    return "".join(out)
+            return f"<figure>{self.img(a.file, a.alt or '')}{cap}</figure>"
+        return ""
+
+    def question(self, item: Item, n: int, mode: str, st: dict, seen: dict) -> str:
+        q = item.question
+        out = []
+        # 共用素材與題組說明只在該組第一題前印一次
+        if q.shared_asset_key and (q.document_id, q.shared_asset_key) not in seen["shared"]:
+            seen["shared"].add((q.document_id, q.shared_asset_key))
+            out.append(self.shared(q))
+        if q.group_stem and q.group_stem != seen.get("group"):
+            out.append(f'<div class="group-stem">{md(q.group_stem)}</div>')
+        seen["group"] = q.group_stem
+
+        t = q.type.value
+        paren = '<span class="paren">(　　)</span>' if st["choice_paren"] and mode == "exam" and t in CHOICE else ""
+        body = [paren + md(clean_stem(q.stem_md)), self.assets(q), self.options(q)]
+        if mode == "exam" and t in ("calc", "essay") and st["answer_lines"]:
+            body.append('<div class="lines">' + '<div class="ln"></div>' * int(st["answer_lines"]) + "</div>")
+        if mode == "key":
+            ans = "、".join(str(a) for a in (q.answer or [])) or "（無答案）"
+            # 沒被答案卷或人工確認過的答案必須看得出來：教師解答卷是拿來改分的
+            note = {"ai_generated": ("（AI 雙模型一致，未經人工確認）" if q.answer_source == "ai:gemini+qwen"
+                                     else "（AI 多數決，未經人工確認）"),
+                    "disputed": "（模型答案不一致，待判定）"}.get(q.answer_status.value, "")
+            body.append(f'<div class="ans">答：{esc(ans)}<span class="warn">{esc(note)}</span></div>')
+            if q.explanation_md:
+                body.append(f'<div class="expl">{md(q.explanation_md)}</div>')
+        body.append(f'<div class="cite">{esc(q.citation)}</div>')
+        score = (f'<span class="sc">（{item.score:g} 分）</span>'
+                 if st["show_score"] and item.score else "")
+        out.append(f'<div class="q"><span class="qn">{n}.</span>'
+                   f'<div class="qb">{"".join(body)}</div>{score}</div>')
+        return "".join(out)
 
 
 def md_table(markdown: str, label: str | None = None) -> str:
-    """把 Markdown 表格轉成 HTML。只支援管線式表格，考卷用不到更複雜的語法。"""
+    """Markdown 管線式表格 → HTML。"""
     rows = [r.strip() for r in markdown.strip().splitlines() if r.strip()]
     rows = [r for r in rows if not set(r.replace("|", "").replace(" ", "")) <= set(":-")]
     cells = [[c.strip() for c in r.strip("|").split("|")] for r in rows]
     if not cells:
         return ""
-    head = "".join(f"<th>{esc(c)}</th>" for c in cells[0])
-    body = "".join("<tr>" + "".join(f"<td>{esc(c)}</td>" for c in r) + "</tr>"
-                   for r in cells[1:])
+    head = "".join(f"<th>{md(c)}</th>" for c in cells[0])
+    body = "".join("<tr>" + "".join(f"<td>{md(c)}</td>" for c in r) + "</tr>" for r in cells[1:])
     cap = f"<caption>{esc(label)}</caption>" if label else ""
     return f'<table class="asset">{cap}<tr>{head}</tr>{body}</table>'
 
 
-def render_question(item, n: int, mode: str, seen_shared: set) -> str:
-    q: Question = item.question
-    out = []
-
-    # 共用素材（多題共用的圖或閱讀短文）只在該組第一題前印一次
-    if q.shared_asset_key and q.shared_asset_key not in seen_shared:
-        seen_shared.add(q.shared_asset_key)
-        shared = next((a for a in q.document.assets
-                       if a.key == q.shared_asset_key), None)
-        if shared:
-            if shared.text:
-                paras = "".join(f"<p>{esc(p)}</p>"
-                                for p in shared.text.split("\n\n") if p.strip())
-                out.append(f'<div class="passage">{paras}</div>')
-            elif shared.file:
-                cap = f"<figcaption>{esc(shared.label)}</figcaption>"
-                out.append(f'<figure><img src="/assets/{esc(shared.file)}" '
-                           f'alt="{esc(shared.alt)}">{cap}</figure>')
-
-    if q.group_stem:
-        out.append(f'<div class="group-stem">{md(q.group_stem)}</div>')
-
-    body = [f'<div class="q-body">{md(q.stem_md)}']
-    body.append(render_assets(q))
-    body.append(render_options(q))
-
-    if mode == "key":
-        ans = "、".join(str(a) for a in (q.answer or [])) or "（無答案）"
-        body.append(f'<div class="ans">答：{esc(ans)}</div>')
-        if q.explanation_md:
-            body.append(f'<div class="expl">{esc(q.explanation_md)}</div>')
-
-    # 來源標註：授權條件要求保留出處，因此固定輸出，不提供關閉選項。
-    # 出處取自題目自身（可能有多個），與這份卷混用了幾份來源無關。
-    body.append(f'<div class="cite">出處：{esc(q.citation)}</div>')
-    body.append("</div>")
-
-    score = f"（{item.score:g} 分）" if item.score else ""
-    out.append(f'<div class="q"><div class="q-head">'
-               f'<span class="q-no">{n}.</span>{"".join(body)}</div>'
-               f'<span style="font-size:9.5pt;color:#666">{score}</span></div>')
-    return "".join(out)
+def sections(items: list[Item], auto: bool, group_name: str = "題組") -> list[tuple[str | None, list[Item]]]:
+    """分大題。自動分組時依題型排序（同題型維持原順序，題組不會被拆開）。"""
+    if not auto:
+        out: list[tuple[str | None, list[Item]]] = []
+        for it in items:
+            if not out or out[-1][0] != it.section_name:
+                out.append((it.section_name, []))
+            out[-1][1].append(it)
+        return out
+    groups: OrderedDict[str, list[Item]] = OrderedDict((t, []) for t in TYPE_ORDER)
+    for it in items:
+        q = it.question
+        # 閱讀、圖表題組自成一個大題，放在一般題型之後
+        key = "group" if (q.group_stem or q.shared_asset_key) else q.type.value
+        groups.setdefault(key, []).append(it)
+    named = [(group_name if t == "group" else TYPE_NAME.get(t, t), its) for t, its in groups.items() if its]
+    return [(f"{NUM[i]}、{name}" if i < len(NUM) else name, its) for i, (name, its) in enumerate(named)]
 
 
-def render_paper(paper: Paper, mode: str = "exam") -> str:
-    title_suffix = {"exam": "", "answer": "　答案卷", "key": "　教師解答卷"}[mode]
+def section_note(its: list[Item]) -> str:
+    scores = [it.score for it in its]
+    if not all(scores):
+        return ""
+    total = sum(scores)
+    if len(set(scores)) == 1:
+        return f"（每題 {scores[0]:g} 分，共 {total:g} 分）"
+    return f"（共 {total:g} 分）"
 
-    sources = OrderedDict()
-    for item in paper.items:
-        for c in item.question.citations:
-            sources.setdefault(c, None)
 
-    parts = [f'<div class="head"><h1>{esc(paper.title)}{title_suffix}</h1>'
-             f'<div class="meta">共 {len(paper.items)} 題　'
-             f'總分 {paper.total_score:g} 分</div></div>',
-             '<div class="fields"><span>班級：________</span>'
-             '<span>座號：______</span><span>姓名：____________</span></div>']
+def render(title: str, items: list[Item], mode: str, settings: dict | None,
+           asset_root: Path, asset_url: str = "/assets/", base_href: str | None = None) -> str:
+    st = {**DEFAULTS, **(settings or {})}
+    cols = 2 if int(st["columns"]) == 2 and mode != "answer" else 1     # 答案卷的作答格不分欄
+    r = Renderer(asset_root, asset_url, cols)
+    suffix = {"exam": "", "answer": "　答案卷", "key": "　教師解答卷"}[mode]
+    total = sum(it.score or 0 for it in items)
 
+    head = [f'<header class="head"><h1>{esc(title)}{suffix}</h1>']
+    if st["subtitle"]:
+        head.append(f'<div class="sub">{esc(st["subtitle"])}</div>')
+    meta = f"共 {len(items)} 題" + (f"　滿分 {total:g} 分" if st["show_score"] and total else "")
+    head.append(f'<div class="meta">{meta}</div></header>')
+    if st["header_fields"] and mode != "key":
+        head.append('<div class="fields"><span>班級：＿＿＿＿</span><span>座號：＿＿＿</span>'
+                    '<span>姓名：＿＿＿＿＿＿</span><span>得分：＿＿＿＿</span></div>')
+
+    subjects = {it.question.document.subject for it in items if it.question.document}
+    gname = GROUP_NAME.get(next(iter(subjects)), "題組") if len(subjects) == 1 else "題組"
+    secs = sections(items, st["auto_sections"], gname)
+    body: list[str] = []
     if mode == "answer":
-        n = len(paper.items)
-        nums = "".join(f'<div class="n">{i}</div>' for i in range(1, n + 1))
-        blanks = "".join('<div></div>' for _ in range(n))
-        # 每十題一列，題號列與作答列交錯
-        grid = []
-        for start in range(0, n, 10):
-            end = min(start + 10, n)
-            grid.append("".join(f'<div class="n">{i}</div>'
-                                for i in range(start + 1, end + 1)))
-            grid.append("".join('<div></div>' for _ in range(start, end)))
-        parts.append(f'<div class="answer-grid">{"".join(grid)}</div>')
+        n = 0
+        for name, its in secs:
+            if name:
+                body.append(f'<div class="sec">{esc(name)}</div>')
+            grid = []
+            for start in range(0, len(its), 10):
+                chunk = range(n + start + 1, n + min(start + 10, len(its)) + 1)
+                grid.append("".join(f'<div class="n">{i}</div>' for i in chunk))
+                grid.append("".join('<div class="b"></div>' for _ in chunk))
+            n += len(its)
+            body.append(f'<div class="grid">{"".join(grid)}</div>')
     else:
-        current = None
-        seen_shared: set = set()
-        for n, item in enumerate(paper.items, start=1):
-            if item.section_name and item.section_name != current:
-                current = item.section_name
-                parts.append(f'<div class="section-title">{esc(current)}</div>')
-            parts.append(render_question(item, n, mode, seen_shared))
+        n = 0
+        seen: dict = {"shared": set()}
+        for name, its in secs:
+            if name:
+                note = section_note(its) if st["show_score"] else ""
+                body.append(f'<div class="sec">{esc(name)}<span class="sn">{note}</span></div>')
+            for it in its:
+                n += 1
+                body.append(r.question(it, n, mode, st, seen))
+        if mode == "exam" and st["answer_appendix"]:
+            n = 0
+            cells = []
+            for _, its in secs:
+                for it in its:
+                    n += 1
+                    a = "、".join(str(x) for x in (it.question.answer or [])) or "—"
+                    cells.append(f"<div><b>{n}.</b> {esc(a)}</div>")
+            body.append('<div class="appendix"><div class="sec">參考答案</div>'
+                        f'<div class="anslist">{"".join(cells)}</div></div>')
 
-    parts.append('<div class="footer-note">本卷題目取自下列公開試題，'
-                 '著作權屬原命題單位所有：<br>' +
-                 "<br>".join(esc(s) for s in sources) + "</div>")
+    sources: OrderedDict[str, None] = OrderedDict()
+    for it in items:
+        for c in it.question.citations:
+            sources.setdefault(c, None)
+    foot = ('<footer class="src">本卷題目取自下列公開試題，著作權屬原命題單位所有：'
+            + "、".join(esc(s) for s in sources) + "</footer>")
 
-    return (f'<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">'
-            f'<title>{esc(paper.title)}{title_suffix}</title>'
-            f'<style>{PRINT_CSS}</style></head><body>{"".join(parts)}</body></html>')
+    base = f'<base href="{esc(base_href)}">' if base_href else ""
+    return (f'<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">{base}'
+            f"<title>{esc(title)}{suffix}</title><style>{PRINT_CSS}"
+            f":root{{--fs:{float(st['font_size'])}pt}}</style></head>"
+            f'<body><div class="paper">{"".join(head)}'
+            f'<main class="cols{cols}">{"".join(body)}</main>{foot}</div></body></html>')
+
+
+PRINT_CSS = """
+@page { size: A4; margin: 15mm 13mm 16mm 13mm; }
+* { box-sizing: border-box; }
+html { background: #fff; }
+/* 英數字先用西文字型：CJK 字型裡的 ’ “ 是全形寬，英文閱讀題會出現怪空格 */
+body { font-family: "Times New Roman", "Liberation Serif", "Noto Serif TC", "Noto Serif CJK TC",
+       "Songti TC", "PMingLiU", serif;
+       font-size: var(--fs); line-height: 1.75; color: #000; margin: 0; }
+@media screen { body { background: #e9ebee; padding: 16px 0; }
+  .paper { background: #fff; width: 210mm; min-height: 297mm; margin: 0 auto; padding: 15mm 13mm;
+           box-shadow: 0 1px 6px rgba(0,0,0,.18); } }
+.head { text-align: center; border-bottom: 2px solid #000; padding-bottom: 5px; margin-bottom: 8px; }
+.head h1 { font-size: 1.45em; margin: 0; letter-spacing: .08em; }
+.head .sub { font-size: 1.02em; margin-top: 2px; }
+.head .meta { font-size: .82em; color: #333; }
+.fields { display: flex; gap: 1.6em; justify-content: flex-end; font-size: .9em; margin: 4px 0 10px; }
+main.cols2 { column-count: 2; column-gap: 9mm; column-rule: 1px solid #999; }
+.sec { font-weight: 700; font-size: 1.05em; margin: 12px 0 6px; break-after: avoid; }
+.sec .sn { font-weight: 400; font-size: .85em; margin-left: .4em; }
+.q { display: flex; gap: .35em; margin: 0 0 .85em; break-inside: avoid; }
+.qn { font-weight: 700; min-width: 1.9em; text-align: right; }
+.qb { flex: 1; min-width: 0; }
+.sc { font-size: .8em; color: #555; white-space: nowrap; }
+.opts { display: grid; gap: 1px 1.2em; margin-top: 2px; }
+.opts.c4 { grid-template-columns: repeat(4, 1fr); }
+.opts.c2 { grid-template-columns: repeat(2, 1fr); }
+.opts.c1 { grid-template-columns: 1fr; }
+.opt { display: flex; gap: .25em; }
+.ol { white-space: nowrap; }
+.paren { margin-right: .3em; }
+.group-stem { padding: 4px 8px; margin: 6px 0; border-left: 3px solid #555; break-inside: avoid; }
+.passage { padding: 6px 10px; margin: 6px 0; border: 1px solid #888; break-inside: avoid; }
+.passage p { margin: 0 0 .4em; text-indent: 2em; }
+figure { margin: 4px 0; text-align: center; break-inside: avoid; }
+figure img, .opt img { max-width: 100%; height: auto; }
+figcaption { font-size: .8em; }
+table.asset { border-collapse: collapse; margin: 5px auto; font-size: .92em; }
+table.asset td, table.asset th { border: 1px solid #333; padding: 1px 8px; text-align: center; }
+.lines { margin-top: 4px; }
+.lines .ln { border-bottom: 1px solid #999; height: 2em; }
+.cite { font-size: .68em; color: #777; text-align: right; line-height: 1.3; }
+.ans { color: #b00; font-weight: 700; }
+.ans .warn { font-weight: 400; font-size: .8em; margin-left: .4em; }
+.expl { font-size: .9em; border-left: 3px solid #ccc; padding: 2px 8px; margin-top: 2px; }
+.grid { display: grid; grid-template-columns: repeat(10, 1fr); border: 1px solid #000; margin-bottom: 8px; }
+.grid div { border: 1px solid #999; text-align: center; min-height: 2.3em; padding-top: .3em; }
+.grid .n { background: #eee; font-weight: 700; min-height: 0; padding: 0; }
+.appendix { break-before: page; column-span: all; }
+.anslist { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px 10px; }
+footer.src { margin-top: 14px; padding-top: 5px; border-top: 1px solid #999; font-size: .68em; color: #555; }
+""" + MATH_CSS
+
+
+def to_pdf(html_text: str) -> bytes:
+    """用 headless Chromium 把 HTML 印成 PDF（頁尾印頁碼）。html_text 要帶 <base>，圖才找得到。"""
+    from playwright.sync_api import sync_playwright
+    # OLEQS_CHROMIUM：指定現成的 Chromium（版本與 playwright 套件不符時用）
+    exe = os.environ.get("OLEQS_CHROMIUM") or None
+    with sync_playwright() as p:
+        browser = p.chromium.launch(executable_path=exe)
+        try:
+            page = browser.new_page()
+            page.set_content(html_text, wait_until="networkidle")
+            return page.pdf(format="A4", print_background=True, prefer_css_page_size=True,
+                            display_header_footer=True, header_template="<span></span>",
+                            footer_template='<div style="width:100%;text-align:center;font-size:8pt;'
+                                            'color:#555">第 <span class="pageNumber"></span> 頁，'
+                                            '共 <span class="totalPages"></span> 頁</div>')
+        finally:
+            browser.close()

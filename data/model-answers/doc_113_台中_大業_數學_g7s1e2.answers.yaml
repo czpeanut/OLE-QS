@@ -1,0 +1,341 @@
+source: data/bank/doc_113_台中_大業_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_大業_數學_g7s1e2_s1_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目內容（此處僅有考卷作答注意事項）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 輸入的文字僅為試卷注意事項，並無數學問題供作答。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目內容（此處僅有考卷作答注意事項）
+- id: doc_113_台中_大業_數學_g7s1e2_s1_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏具體的題目內容與待求解的算式。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目內容僅包含作答注意事項說明，並無具體的數學題目與算式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺乏具體的題目內容與待求解的算式。
+- id: doc_113_台中_大業_數學_g7s1e2_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 甲錯誤，因個位數若為偶數則為2的倍數；乙正確，奇偶數位和之差為 |(10+5)-15|=0，可被11整除；丙正確，個位為0必為2和5的倍數；丁錯誤，末兩位98不是4的倍數。故正確的為乙、丙。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s1_4
+  number: 4
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 正方形磁磚邊長必須是 1400 與 2100 的公因數。1400 和 2100 的公因數包括 20 (B)、25 (C)、35 (E)，故小翊可考慮
+        B、C、E 三種規格。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: p = 10.3 × 10^7 = 1.03 × 10^8 = 103,000,000，此數為 9 位數且大於 1 億，但數字 3
+        後面只有 6 個 0，故 (C) 錯誤。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 因為 m 是 35（5×7）的倍數，所以 5 的次方至少為 1；又 m 的質因數分解中已有 2³（含 2²），若 m 不是 100（2²×5²）的倍數，則
+        5 的次方不能大於或等於 2，故 □ 只能為 1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 56 = 2³ × 7、28 = 2² × 7，因為三數最大公因數為 7，故 a 不能有質因數 2；又最小公倍數 168 = 2³
+        × 3 × 7 含有質因數 3，此質因數必由 a 提供，因此 a 必為 3 × 7 = 21。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s1_9
+  number: 9
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 中獎金額為200萬元，扣除20%的稅後剩下80%（即 $2000000 \times \frac{80}{100}$），再扣除捐出的10萬元（100000），故正確列式為
+        $2000000 \times \frac{80}{100} - 100000$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 50以內的質數共有15個（2, 3, 5, ..., 47），故a有15個質因數（乙正確）；質因數5的次方數為[50/5] + [50/25]
+        = 10 + 2 = 12，因此乘開後末尾有12個0（丙正確），故選(C)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^3\times 11\times 23
+      reasoning: 將2024進行質因數分解：2024 = 2 × 1012 = 2^2 × 506 = 2^3 × 253 = 2^3 × 11 ×
+        23。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整的數學運算式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中的數學算式符號排列嚴重錯亂且破碎（包含不完整的括號與運算符號），無法確認原始題意與算式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整的數學運算式
+- id: doc_113_台中_大業_數學_g7s1e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - a>c>b
+      reasoning: 將各數化為科學記號：a = 7.08 × 10^(-5)，b = 1.03 × 10^(-11)，c = 9.25 × 10^(-10)，比較次方與係數可知
+        a > c > b。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目原始排版與清晰正確的數學表達式
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字出現嚴重的排版亂碼與符號錯位（例如括號反向及乘號與數字分離），無法確定原式的三個數字及其正確次方。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目原始排版與清晰正確的數學表達式
+- id: doc_113_台中_大業_數學_g7s1e2_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '41'
+      reasoning: 36的質因數為2與3，因此與36互質的數不能是2或3的倍數。在30到50之間由小到大排列依序為31、35、37、41、43、47、49，其中第4個數為41。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '6'
+      reasoning: 將 174 質因數分解得 2 × 3 × 29，其質因數中唯一的二位數質數為 29，故 A = 29，m = 174 / 29 =
+        6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{1}{2}
+      reasoning: 原式為 $(\frac{1}{2024}-1)\times(\frac{1}{2023}-1)\times\dots\times(\frac{1}{1013}-1)
+        = (-\frac{2023}{2024})\times(-\frac{2022}{2023})\times\dots\times(-\frac{1012}{1013})$。共有
+        $2024-1013+1=1012$ 個負數項（乘積為正），經前後對消後為 $\frac{1012}{2024}=\frac{1}{2}$。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '962'
+      reasoning: 該數被6除餘2、被5除不足3（即餘2）、被8除不足6（即餘2），代表該數減2為6、5、8的公倍數，公倍數為120的倍數。最大的三位數為120×8＋2＝962。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s2_9
+  number: 9
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '54'
+      reasoning: 設相對兩面的和為S，則 38+a = 17+b = 11+c，得 b=a+21、c=a+27。因 a、b 皆為質數且 b=a+21（奇偶性不同），a
+        必為唯一的偶質數 2，由此求得 b=23、c=29，故 a+b+c = 2+23+29 = 54。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s2_10
+  number: 10
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '12'
+      reasoning: 從短除法可知前三層除數 2、2、3 均能同時整除三個數，第四層起並非三數的公因數，故最大公因數 (a, b, c) = 2 × 2
+        × 3 = 12。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '63'
+      - '12'
+      reasoning: 求三邊長 252、315、378 的最大公因數得最大距離為 63 公尺；三角形周長總段數為 (252+315+378)/63 =
+        15 段，扣除 3 個頂點放置路燈，最少需木樁 15 - 3 = 12 根。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1011/4048
+      reasoning: 利用分項對消法，原式 = 1/2 * (1/2 - 1/4 + 1/4 - 1/6 + ... + 1/2022 - 1/2024)
+        = 1/2 * (1/2 - 1/2024) = 1/2 * (1011/2024) = 1011/4048。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s3_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 7月29日
+      - (2) 3次
+      reasoning: 旗隊與合唱團集訓天數的最小公倍數為 [7, 4] = 28 天。第一次請假為 7/1，下一次請假為 7/1 + 28 天 = 7/29；再下一次為
+        7/29 + 28 天 = 8/26，因此在 7/1 至 8/31 期間共辦理 3 次請假。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_大業_數學_g7s1e2_s3_4
+  number: 4
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1/15
+      reasoning: 設蜜蜂總數為1，飛到各花上的比例分別為1/5、1/3及3×(1/3 - 1/5) = 2/5，合計飛走1/5 + 1/3 + 2/5
+        = 14/15，因此剩下1 - 14/15 = 1/15。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

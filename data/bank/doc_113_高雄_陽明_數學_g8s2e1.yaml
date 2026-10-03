@@ -1,0 +1,805 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 1
+  city: 高雄
+  school_short: 陽明
+  school: 高雄市立陽明國中
+  id: doc_113_高雄_陽明_數學_g8s2e1
+  title: 高雄市立陽明國中 113學年度第2學期第1次定期評量 8年級數學科試題
+  exam_name: 113學年度第2學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題： (每題4 分，共40 分)
+    count: 10
+  - ord: 2
+    name: 二、填充題： ( 第 ① ~ ⑧ 格每格1 分，其餘每格3 分，共38 分)
+    count: 11
+  - ord: 3
+    name: 三、綜合題： ( 第1～2 題每題5 分，第3～4 題每題6 分，共22 分 )※未有計算過程不予計分
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/2-1/高雄/陽明.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 坐標平面上，一次函數 $y = -2x - 6$ 的圖形通過下列哪一個點？
+  options:
+  - label: A
+    content: (-4, 2)
+  - label: B
+    content: (-4, 1)
+  - label: C
+    content: (-4, -1)
+  - label: D
+    content: (-4, -2)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列哪一個選項中的數列是等差數列也是等比數列？
+  options:
+  - label: A
+    content: $\frac{1}{2}$，1，2，4，6，8，10
+  - label: B
+    content: 1，2，3，4，5，6，7，8
+  - label: C
+    content: 2，2，2，2，2，2，2，2
+  - label: D
+    content: 0，1，0，1，0，1，0，1
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: '判斷下列敘述正確的有幾個？
+
+    (甲) 因為 7，13，5，6，28 沒有規律，所以這不是數列。
+
+    (乙) 數列 3，6，9，12，15 是一個公差為 3 的等差數列。
+
+    (丙) 數列 2，4，8，16 中，因為 $4 - 2 \neq 8 - 4$，所以 2，4，8，16 不是一個數列。
+
+    (丁) 若有一個等差數列，將每一項都加上 5，則得到的新數列也會是一個等差數列。
+
+    (戊) 若有一個等比數列，將每一項都乘上 5，則得到的新數列也會是一個等比數列。
+
+    (己) $\frac{1}{2} + \frac{1}{4} + \frac{1}{6} + \frac{1}{8}$ 是一個級數，但不是等差級數。
+
+    (庚) 0，0，0，0，0 不是一個等差數列，也不是一個等比數列。
+
+    (辛) 6 是 -4 與 -9 的等比中項。'
+  options:
+  - label: A
+    content: 4 個
+  - label: B
+    content: 5 個
+  - label: C
+    content: 6 個
+  - label: D
+    content: 7 個
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: '判斷下列敘述 $y$ 是 $x$ 的函數有幾個？
+
+    (甲) 小翊第一次段考 5 科的平均分數為 $x$ 分，總分為 $y$ 分。
+
+    (乙) 一長方形的周長為 12，長為 $x$，寬為 $y$。
+
+    (丙) 閏年中，$x$ 表示天數，$y$ 表示 $x$ 天所對應的月分。
+
+    (丁) 遊樂園推出「599 元一票玩到底」的促銷活動，活動期間每人一律 599 元，若以 $x$ 表示忻澄所玩的時間(小時)、$y$ 表示忻澄所需支付的價格(元)。
+
+    (戊) 班上學生的血型，$x$ 表示血型，$y$ 表示對應的學生。
+
+    (己) 阿熊原有 135 元，從今日起每天存 50 元，存了 $x$ 天後，共存了 $y$ 元。'
+  options:
+  - label: A
+    content: 3 個
+  - label: B
+    content: 4 個
+  - label: C
+    content: 5 個
+  - label: D
+    content: 6 個
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: C
+    gemini_high: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 2
+  stem: 已知一等差數列 $\frac{1}{2}$，$\frac{1}{3}$，……，則此數列第 34 項的值為何？
+  options:
+  - label: A
+    content: '6'
+  - label: B
+    content: $\frac{1}{35}$
+  - label: C
+    content: $-\frac{31}{6}$
+  - label: D
+    content: '-5'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 2
+  stem: 若 $a$，$3$，$10$，$b$，$c$ 五數成等比數列，則 $a \times c + 3 \times b$ 之值為何？
+  options:
+  - label: A
+    content: '200'
+  - label: B
+    content: '130'
+  - label: C
+    content: '40'
+  - label: D
+    content: '-45'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 2
+  stem: 依序將等比數列 $2^{0}$、$2^{1}$、$2^{2}$、$2^{3}$、$2^{4}$、$2^{5}$、⋯⋯⋯⋯。填入圖(一)的圓圈中。小八觀察後發現：第一次轉彎處的數為
+    $2^{1}$；第二次轉彎處的數為 $2^{3}$；第三次轉彎處的數為 $2^{6}$。請問第八次轉彎處的數為何？
+  options:
+  - label: A
+    content: $2^{8}$
+  - label: B
+    content: $2^{16}$
+  - label: C
+    content: $2^{36}$
+  - label: D
+    content: $2^{37}$
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g8s2e1/s1_7_f1.png
+    crop:
+      page: 2
+      rect:
+      - 508.49
+      - 115.71
+      - 662.29
+      - 286.77
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 2
+  stem: 已知 $2x$，$5x+2$，$18x$ 三正數成等比數列，則此數列的公比為何？
+  options:
+  - label: A
+    content: '2'
+  - label: B
+    content: '3'
+  - label: C
+    content: '4'
+  - label: D
+    content: '5'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 小玉某日 7 點自家中開車出發，以固定每小時 45 公里的時速到公司上班，其所剩距離和時間成線型函數關係，如圖(二)所示。若公司規定 7:30 需準時打卡，利用圖中所提供的數據，推估小玉當日上班到勤的情形為下列哪一種?
+  options:
+  - label: A
+    content: 提早 1 分鐘到達
+  - label: B
+    content: 準時到達
+  - label: C
+    content: 遲到 3 分鐘
+  - label: D
+    content: 遲到 5 分鐘
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g8s2e1/s1_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 501.93
+      - 308.7
+      - 684.89
+      - 470.46
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: 小丸子在 $3\times 3$、$5\times 5$、$7\times 7$、⋯⋯、$25\times 25$ 正方形方格的兩條對角線上的方格塗滿灰色，如圖(三)所示。請問她全部塗完後，總共會有多少個灰色方格？
+  options:
+  - label: A
+    content: '297'
+  - label: B
+    content: '324'
+  - label: C
+    content: '330'
+  - label: D
+    content: '351'
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g8s2e1/s1_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 192.1
+      - 551.22
+      - 651.35
+      - 697.5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '在下列各空格中填入適當的數，使每個數列成為等差數列。
+
+    (1) $-2\frac{1}{3}$，$3\frac{1}{3}$，①______，②______。
+
+    (2) ③______，$2a-3d$，$3a$，④______。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: 9；\frac{44}{3}；a-6d；4a+3d
+    qwen: 9；\frac{44}{3}；a-6d；4a+3d
+  answer:
+  - '9'
+  - \frac{44}{3}
+  - a-6d
+  - 4a+3d
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: '在下列各空格中填入適當的數，使每個數列成為等比數列。
+
+    (1) ⑤______，$6$，$6\sqrt{3}$，⑥______。
+
+    (2) $0.12$，$0.3$，⑦______，⑧______。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+  ai_answers:
+    gemini: 2\sqrt{3}；18；0.75；1.875
+    qwen: 2\sqrt{3}；18；0.75；1.875
+  answer:
+  - 2\sqrt{3}
+  - '18'
+  - '0.75'
+  - '1.875'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 3
+  stem: '已知等差級數 $25+22+19+\cdots\cdots+(-26)$，則
+
+    (1) 此級數共有⑨______項。
+
+    (2) 此級數的和為⑩______。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+  ai_answers:
+    gemini: 18；-9
+    qwen: 18；-9
+  answer:
+  - '18'
+  - '-9'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 3
+  stem: 若等差級數的首項為 5，前 10 項的和為 365，則公差為⑪______。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+  ai_answers:
+    gemini: '7'
+    qwen: '7'
+  answer:
+  - '7'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 3
+  stem: 如圖(四)，觀察雞蛋花樹的外觀，若從突出地面的第 1 根主幹開始算第 1 層，則往第 2 層生長的枝數增加為 3 枝；往第 3 層則又從每一分枝長出
+    3 個分枝，所以第 3 層生長的枝數增加為 9 枝，以此類推。則此雞蛋花樹在第⑫______層生長的枝數會增加為 729 枝。
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g8s2e1/s2_5_f1.png
+    crop:
+      page: 3
+      rect:
+      - 531.82
+      - 152.86
+      - 703.84
+      - 286.77
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+  ai_answers:
+    gemini: '7'
+    qwen: '7'
+  answer:
+  - '7'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 3
+  stem: 若函數 $y = \frac{2x - 5}{3}$ 與函數 $y = 2x + 7$，在 $x = a$ 時的函數值互為相反數，則 $a$ 為⑬______。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: '-2'
+    qwen: '-2'
+  answer:
+  - '-2'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: 已知函數 $y = ax + b$ 的圖形是平行 $x$ 軸的直線，且圖形通過 $(5, -1)$，則 $x$ 為 $-10$ 時，其函數值為⑭______。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: '-1'
+    qwen: '-1'
+  answer:
+  - '-1'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 已知 $\sqrt{2}+1$，$1$，$a$ 三數成等差數列，$\sqrt{2}+1$，$1$，$b$ 三數成等比數列，則 $a+b =$ ⑮______。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: '0'
+    qwen: '0'
+  answer:
+  - '0'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 已知甲、乙兩個等差級數的首項皆為 45，公差皆為 $-4$，且甲比乙少一項。若甲的級數和與乙的級數和相差 7，則甲有⑯______項。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+  ai_answers:
+    gemini: '13'
+    qwen: '13'
+  answer:
+  - '13'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 如圖(五)，已知將四個一次函數的圖形畫在同一個直角坐標平面上，其四條直線剛好圍成一個面積為 18 平方單位的正方形 $OABC$，其中 $B$ 點在
+    $y$ 軸上。若直線 $BC$ 為函數 $y = ax + b$ 的圖形，則 $2a - b =$ ⑰______。
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g8s2e1/s2_10_f1.png
+    crop:
+      page: 3
+      rect:
+      - 560.97
+      - 452.14
+      - 700.2
+      - 651.06
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: '4'
+    qwen: '4'
+  answer:
+  - '4'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 3
+  stem: 依次將 $\frac{25}{7}$ 的分母加 5，分子加 3，得到一個數列 $\frac{25}{7}$，$\frac{28}{12}$，$\frac{31}{17}$，……，則此數列的第⑱______項會等於
+    1。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: '10'
+    qwen: '10'
+  answer:
+  - '10'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_陽明_數學_g8s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 4
+  stem: 如圖(六)，用一些棋子排出正六邊形，由內而外共排了 8 圈。已知最內圈每邊 3 顆棋子，往外每圈每邊增加 2 顆(即由內向外算起第 2 圈每邊 5
+    顆，第 3 圈每邊 7 顆，⋯⋯)，則完成此圖形共需要幾顆棋子？
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g8s2e1/s3_1_f1.png
+    crop:
+      page: 4
+      rect:
+      - 141.07
+      - 179.7
+      - 581.37
+      - 356.94
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+- id: doc_113_高雄_陽明_數學_g8s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 4
+  stem: '兔兔在網路影音平臺建立了一個個人頻道，不定期分享自己的旅遊影片。表(一)是他統計前三個月頻道的訂閱人數，若第一年時，此頻道從第二個月開始，每月的訂閱人數減去前一個月的訂閱人數後的值恰好為一等比數列，則第六個月和第五個月相比，訂閱人數會增加多少人？
+
+
+    表(一)
+
+    | 月 | 第一個月 | 第二個月 | 第三個月 |
+
+    | :--- | :--- | :--- | :--- |
+
+    | 訂閱人數(人) | 5 | 15 | 35 |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+- id: doc_113_高雄_陽明_數學_g8s2e1_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 4
+  stem: 在 44 和 2 兩數之間放入若干個數，使其成為一等差數列，若此等差數列的和為 345，則此等差數列的項數及公差分別為多少？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+- id: doc_113_高雄_陽明_數學_g8s2e1_s3_4
+  section: 3
+  number: 4
+  type: calc
+  page: 4
+  stem: 龜兔賽跑比賽規則為烏龜出發 20 分鐘後，兔子開始追趕。若比賽時間與離終點距離成線型函數關係，如圖(七)所示。試問比賽經過多少時間，兔子會追上烏龜？
+  assets:
+  - key: s3_4_f1
+    kind: figure
+    file: doc_113_高雄_陽明_數學_g8s2e1/s3_4_f1.png
+    crop:
+      page: 4
+      rect:
+      - 273.75
+      - 767.94
+      - 444.32
+      - 969.95
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai

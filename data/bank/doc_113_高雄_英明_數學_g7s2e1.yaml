@@ -1,0 +1,764 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 1
+  city: 高雄
+  school_short: 英明
+  school: 高雄市立英明國中
+  scope_note: 南一版第二冊1-1~2-1
+  id: doc_113_高雄_英明_數學_g7s2e1
+  title: 高雄市立英明國中 113學年度第2學期第1次定期評量 7年級數學科試題
+  exam_name: 113學年度第2學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題
+    count: 15
+  - ord: 2
+    name: 二、填充題
+    count: 10
+  - ord: 3
+    name: 三、計算題
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/高雄/英明.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: null
+    - number: 2-1
+      title: null
+    publisher: 南一版
+    raw: 南一版第二冊1-1~2-1
+    volume: 第二冊
+  chapter_index:
+    publisher: 南一
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: 南一
+questions:
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列哪個式子不是二元一次方程式？
+  options:
+  - label: A
+    content: $2x-3y+5=4$
+  - label: B
+    content: $5x+7y=0$
+  - label: C
+    content: $-9x-5-\frac{3y}{2}=9x$
+  - label: D
+    content: $x+2y-3(x-3y)=-2(x-5)$
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列敘述何者正確？
+  options:
+  - label: A
+    content: 點$(0,-5)$在$x$軸上
+  - label: B
+    content: 點$(1,3)$到$y$軸的距離為$3$
+  - label: C
+    content: 點$(8,-5)$在第二象限
+  - label: D
+    content: 原點在$y$軸上
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 平面直角坐標系
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 坐標平面上，如果從點$A(8,-3)$向上移動$5$個單位，再向左移動$3$個單位即到達$B$點，則$B$點坐標為何？
+  options:
+  - label: A
+    content: $(13,-6)$
+  - label: B
+    content: $(5,2)$
+  - label: C
+    content: $(3,0)$
+  - label: D
+    content: $(3,2)$
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 平面直角坐標系
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 已知一長方形的周長為$34$公分，且長的$2$倍比寬的$3$倍少$1$。若長是$x$公分、寬是$y$公分，則依題意可以列出下列哪一個二元一次聯立方程式？
+  options:
+  - label: A
+    content: $\begin{cases} x+y=34 \\ 2x=3y+1 \end{cases}$
+  - label: B
+    content: $\begin{cases} x+y=34 \\ 2x=3y-1 \end{cases}$
+  - label: C
+    content: $\begin{cases} x+y=17 \\ 2x=3y+1 \end{cases}$
+  - label: D
+    content: $\begin{cases} x+y=17 \\ 2x=3y-1 \end{cases}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 82%）
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 二元一次聯立方程式的應用
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 二元一次聯立方程式的應用
+    labeled_by: ai
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 若$x$及$y$皆為正整數，則二元一次方程式$2x+3y=5$有幾組解？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: 無限多
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 下列哪一個選項是$3x-5y=-10$的解？
+  options:
+  - label: A
+    content: $x=-2$，$y=-1$
+  - label: B
+    content: $x=3$，$y=-2$
+  - label: C
+    content: $x=-5$，$y=-1$
+  - label: D
+    content: $x=-1$，$y=2$
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 媽媽叫晨晨到超市買$3$瓶洗髮精和$5$瓶沐浴乳，但晨晨買成$5$瓶洗髮精和$3$瓶沐浴乳，且多花了$60$元。下列選項何者正確？
+  options:
+  - label: A
+    content: $1$瓶洗髮精比$1$瓶沐浴乳貴$60$元
+  - label: B
+    content: $1$瓶洗髮精比$1$瓶沐浴乳便宜$30$元
+  - label: C
+    content: $1$瓶洗髮精比$1$瓶沐浴乳貴$30$元
+  - label: D
+    content: $1$瓶洗髮精比$1$瓶沐浴乳便宜$60$元
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 二元一次聯立方程式的應用
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 二元一次聯立方程式的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 有一隻螞蟻在坐標平面上作等速直線運動，由點$A(-3,-2)$前進，到$B(7,-7)$只需$5$秒。若螞蟻前進方向及速度不變，繼續由$B$點再走$3$秒到$C$點，則$C$點坐標為下列何者？
+  options:
+  - label: A
+    content: $(13,-10)$
+  - label: B
+    content: $(14,-11)$
+  - label: C
+    content: $(15,-12)$
+  - label: D
+    content: $(16,-13)$
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 平面直角坐標系
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 若$(a,b)$在坐標平面的第二象限，則下列何者恆為正數？
+  options:
+  - label: A
+    content: $ab$
+  - label: B
+    content: $a+b$
+  - label: C
+    content: $a^{2}-b^{2}$
+  - label: D
+    content: $b-a$
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 平面直角坐標系
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: '喬丹在東西區明星籃球賽中表現可圈可點，兩分球、三分球都曾出手，罰球總共得$2$分，比賽結束後，喬丹共得$55$分。
+
+    甲：「喬丹兩分球最多可能投進$23$顆。」
+
+    乙：「喬丹兩分球最少可能投進$1$顆。」
+
+    丙：「喬丹三分球最多可能投進$15$顆。」
+
+    丁：「喬丹三分球可能一顆都沒投進。」
+
+    請問四個人的判斷，哪一個是正確的？'
+  options:
+  - label: A
+    content: 甲
+  - label: B
+    content: 乙
+  - label: C
+    content: 丙
+  - label: D
+    content: 丁
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 二元一次聯立方程式的應用
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 二元一次聯立方程式的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 2
+  stem: 有一個四位數$A$，其最左邊數字為$x$，末尾的三位數為$y$；若將其最左端數字$x$移到個位數，得一新數$B$，則$A+B$為下列哪一數的倍數？
+  options:
+  - label: A
+    content: '5'
+  - label: B
+    content: '7'
+  - label: C
+    content: '11'
+  - label: D
+    content: '13'
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 二元一次聯立方程式的應用
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 二元一次聯立方程式的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 2
+  stem: 小蘇放學從校門口出發，向南走$500$公尺到達公園，再向西走$200$公尺又向北走$300$公尺到便利商店買冰淇淋；吃完冰後，從便利商店向東走$100$公尺，再向南直行$200$公尺回到自己的家。若以東方和北方分別為$x$軸、$y$軸的正向，以$50$公尺為單位長，且校門口的坐標為$(2,-3)$，則小蘇家的坐標為何？
+  options:
+  - label: A
+    content: $(-1,-9)$
+  - label: B
+    content: $(-2,-10)$
+  - label: C
+    content: $(0,-11)$
+  - label: D
+    content: $(1,-12)$
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 平面直角坐標系
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_13
+  section: 1
+  number: 13
+  type: single
+  page: 2
+  stem: 甲乙兩生同解一聯立方程式$\begin{cases} ax+by=4 \\ ax-by=2 \end{cases}$甲生將式中的$a$寫錯，得其解為$x=12$，$y=1$；乙生將式中的$b$寫錯，得其解為$x=\frac{3}{2}$，$y=\frac{1}{4}$，若此外並無其他計算上的錯誤，則求原方程組中正確$x$、$y$值為何？
+  options:
+  - label: A
+    content: $x=2$，$y=1$
+  - label: B
+    content: $x=\frac{3}{2}$，$y=1$
+  - label: C
+    content: $x=1$，$y=\frac{3}{2}$
+  - label: D
+    content: $x=1$，$y=2$
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_14
+  section: 1
+  number: 14
+  type: single
+  page: 2
+  stem: 若$\begin{cases} 5ax-by=16 \\ 2x+5y=-11 \end{cases}$與$\begin{cases} 3x-4y=18
+    \\ 3ax-4by=30 \end{cases}$有相同的解，且$a$、$b$為常數，則$a+b=$？
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: '-1'
+  - label: C
+    content: '-3'
+  - label: D
+    content: '1'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 82%）
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_英明_數學_g7s2e1_s1_15
+  section: 1
+  number: 15
+  type: single
+  page: 2
+  stem: 附圖為小偉、小杰、小婷三人由左至右站在一起的示意圖，小杰站在$30\text{cm}$的臺階上，小婷站在花臺上；結果花臺與臺階高度總和比小偉高度少$15\text{
+    cm}$，而小婷站的高度又比小杰站的高度高出$80$公分，若小偉與小杰身高相差$x$公分，小杰與小婷身高相差$y$公分，求小偉與小婷身高相差幾公分？(已知小偉最高，小杰次之，小婷最矮)
+  options:
+  - label: A
+    content: $x+y$
+  - label: B
+    content: $x+y+5$
+  - label: C
+    content: $x-y+5$
+  - label: D
+    content: $x-y+10$
+  assets:
+  - key: s1_15_f1
+    kind: figure
+    file: doc_113_高雄_英明_數學_g7s2e1/s1_15_f1.png
+    crop:
+      page: 2
+      rect:
+      - 66.68
+      - 706.02
+      - 329.7
+      - 923.51
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 二元一次聯立方程式的應用
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 二元一次聯立方程式的應用
+    labeled_by: ai
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 3
+  stem: 若$A$點位於第二象限，且$A$點到$x$軸的距離為$3$，到$y$軸距離為$7$，則$A$點坐標為________。
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 平面直角坐標系
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: (-7,3)
+    qwen: (-7, 3)
+  answer:
+  - (-7,3)
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 3
+  stem: 若$x+2y=8$，則$2(3x-2y)+5(2x+3y)-3(3x-y)-3=$________。
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '53'
+    qwen: '53'
+  answer:
+  - '53'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 3
+  stem: 若$x=7$，$y=-2$是二元一次方程式$4x-ky=5$的一組解，則$k$值為何________。
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: -\frac{23}{2}
+    qwen: -\frac{23}{2}
+  answer:
+  - -\frac{23}{2}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 3
+  stem: 已知$P(4-3k,4k-5)$是坐標平面上的一點，若$P$點在$y$軸上，則$k=$________。
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 平面直角坐標系
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{4}{3}
+    qwen: \frac{4}{3}
+  answer:
+  - \frac{4}{3}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 3
+  stem: 百貨公司舉辦飲料促銷活動，其中各項飲料售價公告如下：「綠茶每杯$30$元，檸檬紅茶每杯$40$元」。已知曉萱買了$2x$杯綠茶、$3y$杯檸檬紅茶，還外加一個$2$元的購物袋，則曉萱總共要付________元。(請化簡為$ax+by+c$的型式)
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: 60x+120y+2
+    qwen: 60x+120y+2
+  answer:
+  - 60x+120y+2
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 3
+  stem: 若$x=5$，$y=-1$是$\begin{cases} ax=b+2(y-2) \\ -2x-ay=3b \end{cases}$的解，且$a$、$b$是兩個任意數，則$a+b=$________。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 86%）
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: 化簡二元一次式$\frac{3}{5}(-3x+2y)-\frac{1}{3}(x+4)=$________。
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: -\frac{32}{15}x+\frac{6}{5}y-\frac{4}{3}
+    qwen: -\frac{32}{15}x+\frac{6}{5}y-\frac{4}{3}
+  answer:
+  - -\frac{32}{15}x+\frac{6}{5}y-\frac{4}{3}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 有一個二位數等於其個位數字與十位數字和的$4$倍。若將十位數字與個位數字交換，新數比原數大$27$，則原數為________。
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 二元一次聯立方程式的應用
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 二元一次聯立方程式的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: '36'
+    qwen: '36'
+  answer:
+  - '36'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 解下列二元一次聯立方程式$\begin{cases} x=3+\frac{2y}{3} \\ \frac{2-x}{3}-\frac{y}{3}=1
+    \end{cases}$。（全對才給分）
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 84%）
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_英明_數學_g7s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 設$a-b>0$，$ab<0$，則點$(\frac{1}{a}-\frac{1}{b},\frac{a}{b})$在第________象限。
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 平面直角坐標系
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 四
+    qwen: 四
+  answer:
+  - 四
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_英明_數學_g7s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: 三年前，爸爸年齡是兒子年齡的$4$倍多$2$歲；四年後，爸爸年齡是兒子年齡的$3$倍少$2$歲，則爸爸及兒子今年分別是幾歲？
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 二元一次聯立方程式的應用
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 二元一次聯立方程式的應用
+    labeled_by: ai
+- id: doc_113_高雄_英明_數學_g7s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: 便利商店週年慶期間舉辦滿佰抽抽樂的打折活動。小瑋買$4$罐飲料與$3$包零食，總金額滿$100$元，他抽中八折，共花了$136$元；恩恩買$5$罐飲料與$6$包零食，總金額滿$100$元，她抽中五折，共花了$140$元。已知每罐飲料價錢皆相同，每包零食價錢也相同，則$1$罐飲料與$1$包零食分別為多少元？
+  tags:
+    chapter:
+      publisher: 南一
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 二元一次聯立方程式的應用
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 二元一次聯立方程式的應用
+    labeled_by: ai

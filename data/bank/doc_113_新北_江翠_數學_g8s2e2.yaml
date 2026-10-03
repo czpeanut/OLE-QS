@@ -1,0 +1,844 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 2
+  city: 新北
+  school_short: 江翠
+  school: 新北市立江翠國民中學
+  scope_note: 南一版第四冊3-1 至3-4
+  id: doc_113_新北_江翠_數學_g8s2e2
+  title: 新北市立江翠國民中學 113學年度第2學期第2次定期評量 8年級數學科試題
+  exam_name: 113學年度第2學期第2次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題：每題5 分，共50 分。
+    count: 10
+  - ord: 2
+    name: 二、填充題：每題4 分，共40 分。（須化成最簡根式）
+    count: 10
+  - ord: 3
+    name: 三、綜合題：（不須寫出作法，但務必保留作圖痕跡，且務必寫出何者即為所求）共10 分。
+    count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/2-2/新北/江翠.pdf
+  scope:
+    lessons:
+    - number: 3-1
+      title: null
+    - number: 3-2
+      title: null
+    - number: 3-3
+      title: null
+    - number: 3-4
+      title: null
+    publisher: 南一
+    raw: 南一版第四冊3-1 至3-4
+    volume: 第四冊
+  chapter_index:
+    publisher: 南一
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: 南一
+questions:
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 如圖(一)，颱風過後，蘭宜民宿的三角窗玻璃破裂成甲、乙、丙、丁四片，若民宿主人臨時找不到工具量測三角窗的長度及角度，但只需挑選一片玻璃碎片，即可讓玻璃材料店按照三角形全等條件，切割出與$\triangle
+    ABC$ 相同的三角窗玻璃，則應挑選哪一片玻璃？[3-3]
+  options:
+  - label: A
+    content: 丁
+  - label: B
+    content: 乙
+  - label: C
+    content: 丙
+  - label: D
+    content: 甲
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 474.15
+      - 175.57
+      - 681.13
+      - 323.92
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-3
+      title: 三角形全等
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-3 三角形全等
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '如圖(二)，以下是推算八邊形內角和的步驟：
+
+    步驟1：從 $A$ 點最多可以作出 $a$ 條對角線。
+
+    步驟2：這些對角線將八邊形分割成 $b$ 個三角形。
+
+    步驟3：利用三角形的內角和求得八邊形的內角和為 $c$ 度。
+
+    關於上述 $a$、$b$、$c$ 的數值，下列哪一個選項錯誤？[3-1]'
+  options:
+  - label: A
+    content: $a=5$
+  - label: B
+    content: $b=6$
+  - label: C
+    content: $c=1280$
+  - label: D
+    content: $b \times 180=c$
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 527.35
+      - 362.36
+      - 633.75
+      - 488.01
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-1
+      title: 內角與外角
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-1 內角與外角
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 下列哪一組角度可以是三角形的三個外角度數？[3-1]
+  options:
+  - label: A
+    content: 30°、60°、90°
+  - label: B
+    content: 60°、60°、60°
+  - label: C
+    content: 90°、90°、180°
+  - label: D
+    content: 120°、120°、120°
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-1
+      title: 內角與外角
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-1 內角與外角
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 如圖(三)，兩直線相交形成 $\angle 1$、$\angle 2$、$\angle 3$、$\angle 4$，則下列敘述何者錯誤？[3-1]
+  options:
+  - label: A
+    content: $\angle 1=\angle 3$
+  - label: B
+    content: $\angle 3$ 與 $\angle 4$ 互餘
+  - label: C
+    content: $\angle 2=\angle 4$
+  - label: D
+    content: $\angle 3$ 與 $\angle 2$ 互補
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 507.67
+      - 614.17
+      - 653.43
+      - 680.99
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-1
+      title: 內角與外角
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-1 內角與外角
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 正十邊形的一個內角為多少度？[3-1]
+  options:
+  - label: A
+    content: 144°
+  - label: B
+    content: 135°
+  - label: C
+    content: 120°
+  - label: D
+    content: 156°
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-1
+      title: 內角與外角
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-1 內角與外角
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 在 $\triangle ABC$ 中，已知 $\angle A$ 的外角為 120°，若 $\angle B=3\angle C$，則 $\angle
+    C=$？[3-1]
+  options:
+  - label: A
+    content: 60°
+  - label: B
+    content: 75°
+  - label: C
+    content: 30°
+  - label: D
+    content: 25°
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-1
+      title: 內角與外角
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-1 內角與外角
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 如圖(四)，已知 $\triangle ABC \cong \triangle DEF$ 且 $A$、$B$、$C$ 三點分別對應 $D$、$E$、$F$
+    三點。若 $\angle C=60^{\circ}$，$\angle E=70^{\circ}$，則 $\angle A=$？[3-3]
+  options:
+  - label: A
+    content: 30°
+  - label: B
+    content: 45°
+  - label: C
+    content: 60°
+  - label: D
+    content: 50°
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s1_7_f1.png
+    crop:
+      page: 1
+      rect:
+      - 474.87
+      - 825.73
+      - 684.05
+      - 941.06
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-3
+      title: 三角形全等
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-3 三角形全等
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 2
+  stem: 如圖(五)，在 $\triangle ABC$ 與 $\triangle XYZ$ 中，已知 $\overline{AB}=\overline{XY}$，$\angle
+    B=\angle Y$，若再加上 $\angle A=\angle X=90^{\circ}$，即可根據何種全等性質得知 $\triangle ABC \cong
+    \triangle XYZ$？[3-3]
+  options:
+  - label: A
+    content: RHS
+  - label: B
+    content: ASA
+  - label: C
+    content: SSS
+  - label: D
+    content: SAS
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s1_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 474.87
+      - 79.59
+      - 684.05
+      - 187.7
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-3
+      title: 三角形全等
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-3 三角形全等
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 如圖(六)，已知 $\overline{AD}$ 垂直平分 $\overline{CE}$ 且 $\angle B=90^{\circ}$，若 $\overline{BC}=6$，$\overline{AE}=8$，則
+    $\overline{AB}$ 的長度為何？[3-4]
+  options:
+  - label: A
+    content: $2\sqrt{7}$
+  - label: B
+    content: '3'
+  - label: C
+    content: $3\sqrt{7}$
+  - label: D
+    content: '4'
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s1_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 504.76
+      - 208.59
+      - 638.13
+      - 360.04
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-4
+      title: 全等三角形的應用
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-4 全等三角形的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: 如圖(七)，在 $\triangle ABC$ 中，已知 $\overline{AB}=\overline{AC}$，$\overline{CD}$
+    垂直 $\overline{AB}$ 於 $D$ 點。若 $\angle BCD=20^{\circ}$，則 $\angle A$ 的度數為何？[3-4]
+  options:
+  - label: A
+    content: 55°
+  - label: B
+    content: 45°
+  - label: C
+    content: 60°
+  - label: D
+    content: 40°
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s1_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 536.83
+      - 375.78
+      - 638.13
+      - 515.87
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-4
+      title: 全等三角形的應用
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-4 全等三角形的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 如圖(八)，$\triangle DEF$ 是一個三角形魚池，其中 $\angle EDF=115^{\circ}$，若家成從 $Q$ 點出發，以逆時針方向經過
+    $E$、$F$ 點後回到 $P$ 點，即轉彎兩次，則這兩次共轉了 $\underline{\quad\quad}$ 度。［3-1］
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s2_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 526.62
+      - 553.28
+      - 643.96
+      - 699.57
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-1
+      title: 內角與外角
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-1 內角與外角
+    labeled_by: ai
+  ai_answers:
+    gemini: '295'
+    qwen: '295'
+  answer:
+  - '295'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 如圖(九)，若 $\angle AOB=150^{\circ}$，且 $\overline{OD}$ 是 $\angle AOC$ 的角平分線，$\overline{OE}$
+    是 $\angle BOC$ 的角平分線，則 $\angle DOE=\underline{\quad\quad}$ 度。［3-4］
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s2_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 508.4
+      - 701.89
+      - 631.57
+      - 802.77
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-4
+      title: 全等三角形的應用
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-4 全等三角形的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: '75'
+    qwen: '75'
+  answer:
+  - '75'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 如圖(十)，$\overline{AD}$ 與 $\overline{BC}$ 交於 $O$ 點，已知 $\angle A=88^{\circ}$，$\angle
+    B=24^{\circ}$，$\angle C=48^{\circ}$，則 $\angle D=\underline{\quad\quad}$ 度。［3-1］
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s2_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 530.27
+      - 815.41
+      - 629.38
+      - 941.06
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-1
+      title: 內角與外角
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-1 內角與外角
+    labeled_by: ai
+  ai_answers:
+    gemini: '64'
+    qwen: '64'
+  answer:
+  - '64'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 3
+  stem: 有正 $m$ 邊、正 $n$ 邊、正 $p$ 邊三種正多邊形，其每一內角分別為 $A^{\circ}$、$B^{\circ}$、$C^{\circ}$。已知
+    $A+B+C=350$，則 $\frac{1}{m}+\frac{1}{n}+\frac{1}{p}=\underline{\quad\quad}$。［3-1］
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-1
+      title: 內角與外角
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-1 內角與外角
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{19}{36}
+    qwen: \frac{19}{36}
+  answer:
+  - \frac{19}{36}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 3
+  stem: 坐標平面上有一個等腰直角三角形 $ABC$，其中 $\angle A=90^{\circ}$，已知 $A$ 點在 $x$ 軸上，$B$ 點在 $y$
+    軸上，若 $C$ 點與 $x$ 軸相距 4，且與 $y$ 軸相距 10，則 $B$ 點坐標為 $\underline{\quad\quad}$。［3-3］
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-3
+      title: 三角形全等
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-3 三角形全等
+    labeled_by: ai
+  ai_answers:
+    gemini: (0, 6) 或 (0, 14) 或 (0, -6) 或 (0, -14)
+    qwen: (0, 6) 或 (0, -6)
+    gemini_high: $(0, 6)$、$(0, -6)$、$(0, 14)$、$(0, -14)$
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 3
+  stem: 已知等腰三角形的頂角與一腰長，可利用 $\underline{\quad\quad}$ 全等性質，以尺規作圖畫出一全等之等腰三角形。［3-3］
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-3
+      title: 三角形全等
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-3 三角形全等
+    labeled_by: ai
+  ai_answers:
+    gemini: SAS
+    qwen: SAS
+  answer:
+  - SAS
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: 如圖(十一)，$\triangle ABC$ 為特殊設計的運動公園，$L_{1}$ 及 $L_{2}$ 分別為 $\overline{BC}$、$\overline{AC}$
+    的中垂線，$O$ 為 $L_{1}$ 與 $L_{2}$ 的交點，且 $\overline{OA}$、$\overline{OB}$ 及 $\overline{OC}$
+    為三條跑道，已知 $\overline{OA}$ 為 10 公尺，某天想減肥的小樹懶熙熙從 $O$ 點出發，向 $A$、$B$、$C$ 三點練習折返跑各一次，試問他共跑了
+    $\underline{\quad\quad}$ 公尺。（所謂折返跑是指由 $O$ 跑向 $A$ 再跑回 $O$）［3-4］
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s2_7_f1.png
+    crop:
+      page: 3
+      rect:
+      - 501.84
+      - 411.9
+      - 662.91
+      - 540.64
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-4
+      title: 全等三角形的應用
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-4 全等三角形的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: '60'
+    qwen: '60'
+  answer:
+  - '60'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 正三角形邊長為 10，則其高為 $\underline{\quad\quad}$。［3-4］
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-4
+      title: 全等三角形的應用
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-4 全等三角形的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: 5\sqrt{3}
+    qwen: 5\sqrt{3}
+  answer:
+  - 5\sqrt{3}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 如圖(十二)，$\triangle ABC$ 為直角三角形，$\angle ABC$ 為 90°，$\overline{AB}=4$，$\overline{BC}=3$，以
+    $\overline{AC}$ 為邊作正方形 $ACDE$，求 $\overline{BE}=\underline{\quad\quad}$。［3-3］
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s2_9_f1.png
+    crop:
+      page: 3
+      rect:
+      - 504.76
+      - 619.33
+      - 650.52
+      - 774.9
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-4
+      title: 全等三角形的應用
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-4 全等三角形的應用
+    labeled_by: ai
+  ai_answers:
+    gemini: \sqrt{65}
+    qwen: \sqrt{65}
+  answer:
+  - \sqrt{65}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 在 $\triangle ABC$ 與 $\triangle PQR$ 中，$\overline{AB}=\overline{PQ}$，$\overline{AC}=\overline{PR}$，$\angle
+    B=\angle Q$。若當 $\angle C=50^{\circ}$ 時，則 $\angle R=\underline{\quad\quad}$ 度。［3-3］
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-3
+      title: 三角形全等
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-3 三角形全等
+    labeled_by: ai
+  ai_answers:
+    gemini: 50 或 130
+    qwen: 50 或 130
+  answer:
+  - 50 或 130
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g8s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 4
+  stem: 如圖，$\triangle ABC$ 為鈍角三角形，利用尺規作圖畫出 $\overline{AB}$ 上的高。（3 分）［3-2］
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s3_1_f1.png
+    crop:
+      page: 4
+      rect:
+      - 416.56
+      - 136.35
+      - 679.67
+      - 241.36
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-2
+      title: 基本尺規作圖
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-2 基本尺規作圖
+    labeled_by: ai
+- id: doc_113_新北_江翠_數學_g8s2e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 4
+  stem: 如圖，棋藝博士從復仇人聯盟退休後經營密室逃脫遊戲公司，其中一間密室，逃脫方式為找到另一多元世界的出口 $W$（此出口未必在密室的牆上喔！），已知此出口位置與銅牆、鐵壁距離相等，且與龍、虎兩神柱距離也相等，身為超級玩家的你請利用尺規作圖標出
+    $W$ 的位置。（3 分）［3-2］
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s3_2_f1.png
+    crop:
+      page: 4
+      rect:
+      - 428.23
+      - 410.86
+      - 674.57
+      - 541.67
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-2
+      title: 基本尺規作圖
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-2 基本尺規作圖
+    labeled_by: ai
+- id: doc_113_新北_江翠_數學_g8s2e2_s3_3
+  section: 3
+  number: 3
+  type: essay
+  page: 4
+  stem: '如圖，四邊形 $ABCD$ 及四邊形 $AEFG$ 皆為正方形，其中 $E$ 點在 $\overline{AB}$ 上，試說明 $\overline{DE}=\overline{BG}$。（每格
+    1 分，共 4 分）［3-3］
+
+
+    說明：在 $\triangle ADE$ 和 $\triangle ABG$ 中，
+
+    ∵ $\underline{\quad\quad\quad\quad}$ (四邊形 $AEFG$ 為正方形邊長相等)
+
+    ∵ $\underline{\quad\quad\quad\quad}$ (四邊形 $ABCD$ 為正方形邊長相等)
+
+    ∵ $\underline{\quad\quad\quad\quad}$ (四邊形 $ABCD$、$AEFG$ 皆為正方形內角相等)
+
+    ∴ $\triangle ADE \cong \triangle ABG$ ( $\underline{\quad\quad}$ 全等性質)，故 $\overline{DE}=\overline{BG}$
+    (對應邊相等)。'
+  assets:
+  - key: s3_3_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g8s2e2/s3_3_f1.png
+    crop:
+      page: 4
+      rect:
+      - 535.37
+      - 653.38
+      - 662.18
+      - 756.33
+  tags:
+    chapter:
+      publisher: 南一
+      book: 八下
+      subject: 數學
+      code: 3-3
+      title: 三角形全等
+      chapter: 第3章 三角形的性質與尺規作圖
+    textbook: 八下 3-3 三角形全等
+    labeled_by: ai

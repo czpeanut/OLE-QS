@@ -1,0 +1,835 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 2
+  city: 高雄
+  school_short: 林園
+  school: 高雄市立林園高級中學國中部
+  id: doc_112_高雄_林園_數學_g7s2e2
+  title: 高雄市立林園高級中學國中部 112學年度第2學期第2次定期評量 7年級數學科試題
+  exam_name: 112學年度第2學期第2次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題：（每題3 分，共30 分）
+    count: 10
+  - ord: 2
+    name: 二、填充題（第1~10 格，每格2 分；第11~20 格，每格4 分，共60 分）
+    count: 12
+  - ord: 3
+    name: 三、計算作圖題（共10 分）
+    count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國一/數學/112/2-2/高雄/林園.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
+questions:
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 判斷下列哪一個二元一次方程式的圖形不會通過原點。
+  options:
+  - label: A
+    content: $x-2y=0$
+  - label: B
+    content: $y=x$
+  - label: C
+    content: $-x+3y=11$
+  - label: D
+    content: $\frac{1}{3}y=-2x$
+  answer:
+  - C
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 右圖是以直線 $L$ 為對稱軸的線對稱圖形，其中 $A$、$B$、$C$、$D$ 的對稱點分別為 $I$、$H$、$G$、$F$，則直線 $L$ 不是下列哪一個線段的垂直平分線？
+  options:
+  - label: A
+    content: $\overline{AI}$
+  - label: B
+    content: $\overline{CG}$
+  - label: C
+    content: $\overline{DH}$
+  - label: D
+    content: $\overline{BH}$
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e2/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 537.05
+      - 195.05
+      - 635.24
+      - 303.38
+  answer:
+  - C
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第2次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 七邊形共有 $a$ 個頂點，$b$ 個邊，$c$ 個內角，則 $a+b+c=$？
+  options:
+  - label: A
+    content: '14'
+  - label: B
+    content: '21'
+  - label: C
+    content: '28'
+  - label: D
+    content: '35'
+  answer:
+  - B
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第2次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 二元一次方程式 $x=3$ 與 $2x+y=1$ 圖形的交點在哪一個象限內？
+  options:
+  - label: A
+    content: 第一象限
+  - label: B
+    content: 第二象限
+  - label: C
+    content: 第三象限
+  - label: D
+    content: 第四象限
+  answer:
+  - D
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 已知坐標平面上一點 $M(3,-4)$，若從 $M$ 點出發，先向左 5 單位，再向上 4 單位，最後到達 $N$ 點，則 $N$ 點的坐標為何？
+  options:
+  - label: A
+    content: $(8,-8)$
+  - label: B
+    content: $(8,0)$
+  - label: C
+    content: $(-2,-8)$
+  - label: D
+    content: $(-2,0)$
+  answer:
+  - D
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 在坐標平面上，下列哪一點與 $A(-1,0)$ 相距 4 單位且在 $x$ 軸上？
+  options:
+  - label: A
+    content: $(-5,0)$
+  - label: B
+    content: $(-1,4)$
+  - label: C
+    content: $(4,0)$
+  - label: D
+    content: $(0,-5)$
+  answer:
+  - A
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 若 $(1,a)$、$( -2,b)$、$(c,3)$、$(d,-1)$ 都在方程式 $y=\frac{1}{2}x+1$ 的圖形上，則下列敘述何者正確？
+  options:
+  - label: A
+    content: $a=1$
+  - label: B
+    content: $b=0$
+  - label: C
+    content: $c=3$
+  - label: D
+    content: $d=4$
+  answer:
+  - B
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 依照下圖指示對摺兩次，剪下右上方三角形後，剩下的紙張展開是下列哪一個圖形？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: optA
+      file: doc_112_高雄_林園_數學_g7s2e2/1_8_optA.png
+      crop:
+        page: 1
+        rect:
+        - 359.35
+        - 624.44
+        - 418.58
+        - 682.04
+  - label: B
+    content: ''
+    asset:
+      key: optB
+      file: doc_112_高雄_林園_數學_g7s2e2/1_8_optB.png
+      crop:
+        page: 1
+        rect:
+        - 443.78
+        - 623.45
+        - 502.36
+        - 681.05
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_112_高雄_林園_數學_g7s2e2/1_8_optC.png
+      crop:
+        page: 1
+        rect:
+        - 526.91
+        - 622.15
+        - 586.15
+        - 682.04
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_112_高雄_林園_數學_g7s2e2/1_8_optD.png
+      crop:
+        page: 1
+        rect:
+        - 610.04
+        - 622.15
+        - 670.91
+        - 682.04
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e2/s1_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.98
+      - 613.96
+      - 318.11
+      - 684.33
+  answer:
+  - C
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第2次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 右圖 $\triangle ABC$ 有三條對稱軸，若 $\overline{BE}=2$ 公分，則 $\triangle ABC$ 的周長為多少公分？
+  options:
+  - label: A
+    content: '12'
+  - label: B
+    content: '18'
+  - label: C
+    content: '24'
+  - label: D
+    content: '30'
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e2/s1_9_f1.png
+    crop:
+      page: 1
+      rect:
+      - 486.98
+      - 680.07
+      - 597.27
+      - 783.16
+  answer:
+  - A
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第2次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_112_高雄_林園_數學_g7s2e2_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 右圖是一個立體圖形，下列(A)～(D)何者是此立體圖形的上視圖？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: optA
+      file: doc_112_高雄_林園_數學_g7s2e2/1_10_optA.png
+      crop:
+        page: 1
+        rect:
+        - 84.76
+        - 796.58
+        - 149.24
+        - 861.71
+  - label: B
+    content: ''
+    asset:
+      key: optB
+      file: doc_112_高雄_林園_數學_g7s2e2/1_10_optB.png
+      crop:
+        page: 1
+        rect:
+        - 169.85
+        - 797.56
+        - 234.98
+        - 860.73
+  - label: C
+    content: ''
+    asset:
+      key: optC
+      file: doc_112_高雄_林園_數學_g7s2e2/1_10_optC.png
+      crop:
+        page: 1
+        rect:
+        - 254.62
+        - 797.56
+        - 319.75
+        - 860.73
+  - label: D
+    content: ''
+    asset:
+      key: optD
+      file: doc_112_高雄_林園_數學_g7s2e2/1_10_optD.png
+      crop:
+        page: 1
+        rect:
+        - 339.71
+        - 797.56
+        - 404.84
+        - 860.73
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e2/s1_10_f1.png
+    crop:
+      page: 1
+      rect:
+      - 460.8
+      - 788.4
+      - 590.07
+      - 872.18
+  answer:
+  - B
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第2次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer_status: disputed
+  review_note: 答案卷 ['B']，Gemini 與 Qwen 一致判為 D
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 若方程式 $ax+7y=-1$ 的圖形通過點 $P(2,-1)$，則 $a=$【 ① 】
+  answer:
+  - '3'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: '3'
+    qwen: '3'
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 如果數對 $(2,-1)$ 表示 $P$ 點的位置，那麼 $P$ 點到 $x$ 軸的距離是【 ② 】，到 $y$ 軸的距離是【 ③ 】。
+  answer:
+  - (3,0)
+  answer_status: disputed
+  review_note: 答案卷解析與影像判讀不一致：['(3,0)'] vs ['1', '2']
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 1；2
+    qwen: 1;2
+    gemini_high: 1；2
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: '如圖，坐標平面上有 $A$、$B$、$C$ 三點，則：
+
+    (1) $A$ 點的坐標是【 ④ 】。
+
+    (2) $B$ 點的坐標是【 ⑤ 】。
+
+    (3) $C$ 點的坐標是【 ⑥ 】。'
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e2/s2_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 337.42
+      - 23.56
+      - 495.16
+      - 178.69
+  answer:
+  - (3,0)
+  - (4,-3)
+  - (-3\frac{1}{2}, 2)
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: (3,0)；(4,-3)；(-3,2)
+    qwen: (3,0);(5,-2);(-3,2)
+    gemini_high: (3,0)；(4,-2)；(-3,2)
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: '右圖是以 $\overleftrightarrow{AF}$ 為對稱軸的線對稱圖形，則：
+
+    (1) $I$ 點的對稱點是【 ⑦ 】點，
+
+    (2)若 $\angle E=35^\circ$，則 $\angle E$ 的對稱角 $\angle G$ 為【 ⑧ 】度。'
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e2/s2_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 411.71
+      - 175.42
+      - 514.8
+      - 273.6
+  answer:
+  - C
+  - '35'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第2次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: C；35
+    qwen: C;35
+    gemini_high: C；35
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '$A(-3,0)$、$B(0,-8)$、$C(-3,-6)$、$D(1,4.25)$、$E(0,-3)$、$F(8,-12)$、$G(-14,-3)$
+
+    (1)上述那些點在 $y=-3$ 的圖形上？答：【 ⑨ 】。
+
+    (2)上述那些點在第三象限？答：【 ⑩ 】。'
+  answer:
+  - E、G
+  - C、G
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: E、G；C、G
+    qwen: EG;CG
+    gemini_high: E、G；C、G
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '如右圖，直線 $L$ 垂直平分 $\overline{AB}$ 於 $C$ 點，直線 $M$ 垂直平分 $\overline{AC}$ 於 $D$
+    點。
+
+    若 $\overline{CD}=2x-1$，$\overline{BC}=5x-4$，則：
+
+    (1) $x=$【 ⑪ 】。
+
+    (2) $\overline{AB}=$【 ⑫ 】。'
+  assets:
+  - key: s2_6_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e2/s2_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 429.38
+      - 326.95
+      - 567.49
+      - 457.2
+  answer:
+  - '2'
+  - '12'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第2次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: 2；12
+    qwen: 2;12
+    gemini_high: 2；12
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 若二元一次方程式 $x-ay=8$ 與 $bx+2y=13$ 的圖形交點為 $(5,-1)$，則 $a=$【 ⑬ 】、$b=$【 ⑭ 】。
+  answer:
+  - '3'
+  - '3'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: 3；3
+    qwen: 3;3
+    gemini_high: 3；3
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知 $P(a,b)$ 在第三象限內，則 $Q(|a|,-b)$ 在第【 ⑮ 】象限、$R(ab,-b^{2})$ 在第【 ⑯ 】象限。
+  answer:
+  - 一
+  - 四
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 一；四
+    qwen: 一;四
+    gemini_high: 一；四
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 若從 $P(4,-3)$ 出發，先向左 $m$ 單位，再向上 $n$ 單位，最後到達一點 $Q(-5,1)$，則 $m+n=$【 ⑰ 】。
+  answer:
+  - '13'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: '13'
+    qwen: '13'
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 坐標平面上有兩點 $A(2a+1,3)$、$B(-1,3b)$，若 $A$ 點向左 4 單位，再向上 3 單位後，會與 $B$ 點重合，則 $a-b=$【
+    ⑱ 】。
+  answer:
+  - '-1'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: '-1'
+    qwen: '-1'
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 坐標平面上有三點 $A(2,0)$、$B(4,-6)$、$C(k,1-2k)$，若 $A$、$B$、$C$ 三點都在二元一次方程式 $y=ax+b$
+    的圖形上，則 $k=$【 ⑲ 】。
+  answer:
+  - '5'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: '5'
+    qwen: '5'
+- id: doc_112_高雄_林園_數學_g7s2e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 已知 $A(-4,-1)$、$B(3,-4)$、$C(3,-1)$，若直線 $L$ 通過 $A$ 點且與 $\overline{BC}$ 平行，則直線
+    $L$ 的方程式為【 ⑳ 】。
+  answer:
+  - x=-4
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: x=-4
+    qwen: x=-4
+- id: doc_112_高雄_林園_數學_g7s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 在坐標平面上畫出二元一次方程式 $x-y=1$、$2x+3y=12$ 的圖形，並求出這兩個二元一次方程式的圖形與 $y$ 軸所圍成的區域面積。(要有計算過程，否則不予計分，6
+    分)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-2
+      title: 二元一次方程式的圖形
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-2 二元一次方程式的圖形
+    labeled_by: ai
+- id: doc_112_高雄_林園_數學_g7s2e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 如圖，利用方格完成以直線 $L$ 為對稱軸的線對稱圖形。(4 分)
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_112_高雄_林園_數學_g7s2e2/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 132.87
+      - 822.44
+      - 270.0
+      - 923.56
+  tags:
+    chapter:
+      publisher: null
+      book: 七下
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 七下 第2次段考範圍
+    labeled_by: ai

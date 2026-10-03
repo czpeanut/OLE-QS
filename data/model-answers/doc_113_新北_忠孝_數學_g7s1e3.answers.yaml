@@ -1,0 +1,250 @@
+source: data/bank/doc_113_新北_忠孝_數學_g7s1e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_1
+  number: 1
+  type: single
+  images_sent: 5
+  status: missing_context
+  note: gemini 回報缺少素材：題目中方程式各項之間的運算符號（如加減號）與等號
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未給出完整的方程式運算符號與等號（僅提供各分式片段圖片），無法得知完整的方程式內容。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中方程式各項之間的運算符號（如加減號）與等號
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_2
+  number: 2
+  type: single
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將方程式同除以 -3 得 3(x-2)-2x = -3，展開化簡得 x-6 = -3，解得 x = 3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 小華將方程式看成 2x - 5 = -m(x - 2)，代入 x = 3 得 1 = -m，故正確的 m = -1。將 m = -1
+        代回原式 2x - 5 = -(x - 2)，解得正確的 x = 7/3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：正確且完整的題目內容（包含正確的數學符號/指數格式與選項D文字）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字出現嚴重的排版與 OCR 辨識錯誤（方程式指數可能掉落成常數，且選項 (D) 混入了其他題目的文字敘述），導致題目資訊不完整且無法明確作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 正確且完整的題目內容（包含正確的數學符號/指數格式與選項D文字）
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：方程式缺少等號與右側的數值，以及欲求解的未知數說明
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目方程式不完整，缺少等號及右式的數值與問題敘述（如求 m 之值），無法進行計算。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 方程式缺少等號與右側的數值，以及欲求解的未知數說明
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設50元硬幣有x個，10元硬幣有(2x+3)個，依題意列式為50x+10(2x+3)=1710，解得x=24。10元硬幣有51個，硬幣總數為24+51=75個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_10
+  number: 10
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設跳了 $x$ 次，A青蛙的位置為 $-23 - 2x$，B青蛙的位置為 $8 + 3x$。由題意 $-23 - 2x = -(8
+        + 3x)$，解得 $x = 15$。因此A青蛙跳了 $2 \times 15 = 30$ 個單位。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_11
+  number: 11
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 長方形總面積為 6(4+x)。扣除三個空白直角三角形的面積（分別為 1/2×4×3=6、1/2×x×6=3x、1/2×(4+x)×3=6+1.5x），可得斜線面積為
+        12+1.5x=27，解得 x=10。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_12
+  number: 12
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設走路距離為 x 公里，騎車距離為 (8 - x) 公里。依題意列出時間方程式：(8 - x)/12 + x/4 = 8/12 +
+        50/60，解得 2x = 10，故 x = 5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_13
+  number: 13
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設原數十位數字為 x、個位數字為 y。依題意 x+y=5 且 (10y+x)-(10x+y)=9(y-x)=9，得 y-x=1。解聯立得
+        x=2, y=3，故原數為 23，對調後的新數為 32。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_14
+  number: 14
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設房間有 x 間，依題意列式 5(x - 1) + 3 = 4x + 70，解得 x = 72，故學生總人數為 4 × 72 +
+        70 = 358 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_15
+  number: 15
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 彈珠總數為 64 + 20 = 84 個，交換過程總數不變。最後小孝彈珠數是阿忠的 2 倍，故小孝最後有 84 × (2 / (1
+        + 2)) = 56 個彈珠。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_16
+  number: 16
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設選擇題有 x 題，則填充題有 x-2 題。依題意列式：4x + 3(x-2) + 5×3 = 100，解得 x = 13。因此選擇題
+        13 題、填充題 11 題、計算題 3 題，總題數為 13 + 11 + 3 = 27 題。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_17
+  number: 17
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由月曆的位置關係可知，若以 c 為基準，則 a = c - 8 且 b = c - 2。代入 a + b + c = 50 得 (c
+        - 8) + (c - 2) + c = 50，解得 3c = 60，故 c = 20。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_18
+  number: 18
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設兩區皆參觀有x人、僅參觀一區有y人，依題意可列式：2x + y = 16 + 17 = 33 且 500x + 350y = 10150，解得
+        x = 7、y = 19，全班總人數為 7 + 19 = 26 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_19
+  number: 19
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設 $AB = CD = x$，$BC = DA = 3x$，總路程為 $8x$。各段花費時間總和為 $\frac{x}{10}
+        + \frac{3x}{15} + \frac{x}{20} + \frac{3x}{25} = \frac{47x}{100}$，故平均速率為 $\frac{8x}{\frac{47x}{100}}
+        = \frac{800}{47}$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_新北_忠孝_數學_g7s1e3_s1_20
+  number: 20
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：丟番圖的墓誌銘圖檔或文字內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「下圖為丟番圖的墓誌銘」，但未提供該墓誌銘的文字或圖檔內容，無法計算 a、b、c 的值。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 丟番圖的墓誌銘圖檔或文字內容

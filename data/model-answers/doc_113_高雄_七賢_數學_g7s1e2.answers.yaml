@@ -1,0 +1,153 @@
+source: data/bank/doc_113_高雄_七賢_數學_g7s1e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_高雄_七賢_數學_g7s1e2_s1_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '100'
+      - '10'
+      reasoning: 正整數 N 共有 9 個正因數，由對稱性可知第 3 個與倒數第 3 個因數相乘等於 N，即 4 × 25 = N = 100；正中間第
+        5 個因數為 b，滿足 b² = N = 100，故 b = 10。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s1e2_s1_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2或8
+      reasoning: 6的倍數須同時為2和3的倍數。個位數□可為0、2、4、6、8，且數字和7+5+3+1+□=16+□須為3的倍數，檢驗得□為2或8。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s1e2_s1_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 2^4\times 3^3\times 11
+      reasoning: 將72質因數分解為2^3×3^2，66質因數分解為2×3×11，相乘後合併同底數質因數得到2^4×3^3×11。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s1e2_s1_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '2988'
+      reasoning: 四位數需同時為3與4的倍數。為求最大值，自百位9開始檢驗，當百位為9、十位為8、個位為8時，數字和2+9+8+8=27為3的倍數，且末兩位88為4的倍數，故最大值為2988。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s1e2_s1_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 3×11
+      - '1'
+      - 2^3×3×7×11
+      - 3^3×5×11
+      reasoning: 利用標準分解式求最大公因數取共同質因數的最小次方，最小公倍數取所有質因數的最大次方。(1)(A,B)=3×11；(2)C與D互質，最大公因數為1；(3)[A,C]=2^3×3×7×11；(4)[B,D]=3^3×5×11。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s1e2_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - ×
+      reasoning: 1到100中能被6整除的數有16個，同時能被6與15整除（即被30整除）的數有3個，因此能被6整除但不能被15整除的數共有 16
+        - 3 = 13 個，故題幹敘述錯誤。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s1e2_s1_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '216'
+      reasoning: a=12、b=18，兩數的最小公倍數為 [a, b]=36。36 的倍數中最接近 200 的是 36×6=216（|216-200|=16，比
+        |180-200|=20 更接近）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s1e2_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '12'
+      reasoning: 盒數最多為18、24、30的最大公因數，即gcd(18, 24, 30) = 6盒。每盒水果總數為 (18 + 24 + 30)
+        ÷ 6 = 12顆。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s1e2_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - \frac{3}{4}
+      reasoning: 計算 30 除以 2 1/4 等於 13 餘 1/3 段，剩下的實際長度為 1/3 × (9/4) = 3/4 公尺。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_七賢_數學_g7s1e2_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '3'
+      - '360'
+      reasoning: 將24、30、45做質因數分解分別為2³×3、2×3×5、3²×5，因此最大公因數為3，最小公倍數為2³×3²×5=360。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

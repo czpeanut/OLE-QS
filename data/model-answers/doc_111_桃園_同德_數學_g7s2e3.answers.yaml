@@ -1,0 +1,162 @@
+source: data/bank/doc_111_桃園_同德_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目不完整，缺少「若16」之後的完整題幹敘述與運算式。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目內容僅有「若16」，敘述明顯截斷不完整，缺少完整的條件與問題，無法進行計算作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目不完整，缺少「若16」之後的完整題幹敘述與運算式。
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：體重的次數分配直方圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中提到體重的次數分配直方圖如附圖，但未提供該直方圖，無法得知體重小於50公斤的各組人數。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 體重的次數分配直方圖
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題目中提到的身高折線圖（附圖）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「如附圖所示」，但未提供身高的折線圖數據，無法得知各身高區間的人數以進行判斷。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少題目中提到的身高折線圖（附圖）
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 解不等式 2x - 4 > 9 得 x > 6.5。在不大於 10 的正整數（1 至 10）中，大於 6.5 的數有 7、8、9、10，共
+        4 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將不等式移項得 (a - 2)x < 2 - a = -(a - 2)。因為 a < 2，所以 a - 2 < 0，兩邊同除以 (a
+        - 2) 需變號，得到 x > -1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (4x-400)\times 0.5<2000
+      reasoning: 購買四件等值商品總價為 4x 元，先減 400 元為 (4x - 400) 元，再打 5 折為 (4x - 400) × 0.5
+        元，最後不到 2000 元即小於 2000，故不等式為 (4x - 400) × 0.5 < 2000（或化簡為 2x - 200 < 2000）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x ≧ -10
+      reasoning: 展開不等式得 3 + 9x ≧ 4x - 24 - 23，整理為 3 + 9x ≧ 4x - 47，移項得 5x ≧ -50，解得
+        x ≧ -10。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x <= 4
+      reasoning: 移項得 -3x + x >= -3 - 5，即 -2x >= -8，兩邊同除以 -2（不等號反向）得 x <= 4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '14'
+      reasoning: 由不等式 5x - 7 > 7 - x 解得 x > 7/3，因為 x 為整數，所以 x 的最小整數為 3。代入 3x + 5 得最小值為
+        3(3) + 5 = 14。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '16'
+      reasoning: 設答對 x 題，則列出不等式 5x - 2(20 - x) > 70，解得 7x > 110，即 x > 15.71，因此 x 至少為
+        16 題。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_同德_數學_g7s2e3_s1_11
+  number: 11
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '88'
+      reasoning: 設人數為x人，買100張七折票花費為100×100×0.7=7000元，依實際人數買八折票花費為80x元。依題意7000 < 80x，解得x
+        > 87.5，故最少需88人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

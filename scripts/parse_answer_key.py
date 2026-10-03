@@ -59,7 +59,8 @@ NOT_AN_ANSWER = ("全對才給分", "分段給分", "請寫出", "請用黑筆",
                  "座號", "姓名", "____")
 # 空白答案卷會預印作答提示，例如「x =」「y =」各一行，等號後面是空的。
 # 這種格看起來有內容，其實是留白給學生填。
-PLACEHOLDER_RE = re.compile(r"^[A-Za-z]\s*[=＝]\s*$")
+# 一格裡可能連續預印好幾個提示（聯立方程式的「x = 、 y =」）。
+PLACEHOLDER_RE = re.compile(r"^(?:[A-Za-z]\s*[=＝]\s*[、，,;；]?\s*)+$")
 
 
 def norm(s: str | None) -> str:
@@ -141,6 +142,11 @@ def parse_interleaved(rows: list[list[str]]) -> list[tuple[int, str]]:
         cells = [norm(c) for c in row]
         # 必須成對出現：偶數位是題號、奇數位是答案
         for i in range(0, len(cells) - 1, 2):
+            # 答案格本身若是個題號，這一列就是空白作答卷的題號列，不是答案。
+            # 實測「['1.(1)', '2.(2)', '3.(3)']」整列都是題號，卻被讀成
+            # 「第 1 題的答案是 2.(2)」。
+            if as_label(cells[i + 1]) is not None:
+                continue
             n, a = as_label(cells[i]), clean_answer(cells[i + 1], allow_numeric=False)
             if n is not None and a:
                 out.append((n, a))
@@ -161,6 +167,18 @@ def parse_stacked(rows: list[list[str]]) -> list[tuple[int, str]]:
         got = [n for n in nums if n is not None]
         if not got or len(got) < len(head_ne) or got != sorted(got):
             continue
+
+        # 答案不會是題號。空白作答卷整張表都是題號格：
+        #     ['5.', '6.']
+        #     ['7.', '8.']
+        # 上下兩列都通過「題號列」的檢查，於是第 5 題的答案被寫成「7.」。
+        # 這種錯誤最難發現 —— 欄位有值、格式正常，卻會原封不動印在
+        # 教師解答卷上當正解。實測溪湖整批 111 學年的卷都是這樣壞掉的。
+        body_ne = [c for c in body if c]
+        body_nums = [n for n in (as_label(c) for c in body_ne) if n is not None]
+        if body_ne and len(body_nums) == len(body_ne) and body_nums == sorted(body_nums):
+            continue
+
         for n, cell in zip(nums, body):
             a = clean_answer(cell)
             if n is not None and a:
@@ -181,6 +199,8 @@ def parse_labeled(rows: list[list[str]]) -> list[tuple[int, str]]:
     for row in rows:
         cells = [norm(c) for c in row]
         for i in range(0, len(cells) - 1, 2):
+            if as_label(cells[i + 1]) is not None:      # 同上：答案不會是題號
+                continue
             n, ans = as_label(cells[i]), clean_answer(cells[i + 1], allow_numeric=False)
             if n is not None and ans:
                 out.append((n, ans))
@@ -203,9 +223,13 @@ def looks_like_score_table(rows: list[list[str]], pairs: list[tuple[int, str]]) 
     if len(pairs) < 4:
         return False
     values = [as_number(a) for _, a in pairs]
-    if any(v is None for v in values):
+    known = [v for v in values if v is not None]
+    # 只要有一格解析不出數字就整張表放行，是太脆弱的判準 ——
+    # 空白作答格裡混進一個「11.\n(1)」就足以讓整張表逃過檢查。
+    # 改看能解析的那些：多數是遞增整數，就是分數或題號，不是答案。
+    if len(known) < len(values) * 0.6:
         return False
-    return values == sorted(values) and len(set(values)) > 2
+    return known == sorted(known) and len(set(known)) > 2
 
 
 def parse_table(rows: list[list[str]], idx: int) -> tuple[list[KeyEntry], str | None]:

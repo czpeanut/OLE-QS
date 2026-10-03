@@ -1,0 +1,890 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 1
+  city: 高雄
+  school_short: 苓雅
+  school: 高雄市立苓雅國民中學
+  id: doc_113_高雄_苓雅_數學_g8s2e1
+  title: 高雄市立苓雅國民中學 113學年度第2學期第1次定期評量 8年級數學科試題
+  exam_name: 113學年度第2學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、 選擇題：每題3 分，共30 分
+    count: 10
+  - ord: 2
+    name: 二、 填充題:每格3 分，共42 分
+    count: 14
+  - ord: 3
+    name: 三、綜合應用題：共28 分
+    count: 7
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/2-1/高雄/苓雅.pdf
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列敘述何者正確?
+  options:
+  - label: A
+    content: 0 , 7 , 0 , 7 , 0 , 7 是等差數列。
+  - label: B
+    content: －1 , $\frac{1}{2}$ , －$\frac{1}{4}$ , $\frac{1}{6}$ , －$\frac{1}{8}$
+      是等比數列。
+  - label: C
+    content: 若 a , b , c , d , e 為等差數列,則 a＋1 , b＋2 , c＋3 , d＋4 , e＋5 也是等差數列。
+  - label: D
+    content: 若 a , b , c , d , e 為等比數列,則 a , b＋2 , c＋4 , d＋8 , e＋16 也是等比數列。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '費氏數列規律為從第三項起,每一項均為前兩項的和,即數列 1 , 1 , 2 , 3 , 5 , 8 , ......。
+
+    若依照此規則,下列哪一項為偶數?'
+  options:
+  - label: A
+    content: 第 89 項
+  - label: B
+    content: 第 90 項
+  - label: C
+    content: 第 91 項
+  - label: D
+    content: 第 92 項
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 若等差數列第n 項$a_{n}$＝－5n＋8，則此等差數列的公差為何？
+  options:
+  - label: A
+    content: －5
+  - label: B
+    content: '3'
+  - label: C
+    content: '5'
+  - label: D
+    content: '8'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 試求15 至150 中，被3 除餘2 的所有整數之和。
+  options:
+  - label: A
+    content: '3820'
+  - label: B
+    content: '3815'
+  - label: C
+    content: '3750'
+  - label: D
+    content: '3735'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 有一多邊形的周長為75 公分。若其各邊邊長是公差為3 的等差數列，且最短邊為9 公分，則此多邊形共有多少邊？
+  options:
+  - label: A
+    content: 4 邊
+  - label: B
+    content: 5 邊
+  - label: C
+    content: 6 邊
+  - label: D
+    content: 7 邊
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 已知一個等差級數$a_{1}$＋$a_{2}$＋……＋$a_{30}$＝610。若將各項都加上2，則新的級數總和為多少？
+  options:
+  - label: A
+    content: '620'
+  - label: B
+    content: '630'
+  - label: C
+    content: '650'
+  - label: D
+    content: '670'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 有一個等比數列的首項為3，第6 項為－96，則公比為何？
+  options:
+  - label: A
+    content: '2'
+  - label: B
+    content: －2
+  - label: C
+    content: '3'
+  - label: D
+    content: －3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: x、y 兩變數的關係如下列的四個選項,則何者y 不是x 的函數?
+  options:
+  - label: A
+    content: '| x | 1 | 2 | 3 | 4 |
+
+      |---|---|---|---|---|
+
+      | y | 0 | 0 | 0 | 0 |'
+  - label: B
+    content: '| x | 1 | 2 | 3 | 4 |
+
+      |---|---|---|---|---|
+
+      | y | 3 | 4 | 5 | 6 |'
+  - label: C
+    content: '| x | 1 | 2 | 3 | 4 |
+
+      |---|---|---|---|---|
+
+      | y | 3 | 4 | 4 | 6 |'
+  - label: D
+    content: '| x | 1 | 2 | 3 | 1 |
+
+      |---|---|---|---|---|
+
+      | y | 3 | 4 | 5 | 6 |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 一次函數y＝ax＋b，在x＝3 時的函數值為2，在x＝－1 時的函數值為10，則此一次函數為何？
+  options:
+  - label: A
+    content: y＝－x＋6
+  - label: B
+    content: y＝x－6
+  - label: C
+    content: y＝－2x＋8
+  - label: D
+    content: y＝2x＋8
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 關於函數y＝－4x＋5 的圖形，下列何者不正確？
+  options:
+  - label: A
+    content: x＝－3 時的函數值小於x＝0 時的函數值
+  - label: B
+    content: 此圖形是一條斜直線
+  - label: C
+    content: 此圖形不通過第三象限
+  - label: D
+    content: 此圖形與x 軸交於（$\frac{5}{4}$ , 0）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '觀察右表中各項的規律，求第n 項為 ① 。
+
+    | 第1 項 | 第2 項 | …… | 第n 項 |
+
+    |---|---|---|---|
+
+    | $a_{1}$ | $a_{2}$ | …… | $a_{n}$ |
+
+    | 2×1＋3 | 2×2＋3 | | ? |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: 2n+3
+    qwen: $2n+3$
+  answer:
+  - 2n+3
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知某數列的第n 項$a_{n}$＝n(n+1)，若此數列的第k 項為72，求k＝ ② 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: '8'
+    qwen: '8'
+  answer:
+  - '8'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知一個等差數列的首項為－52，公差為3，則此等差數列自第 ③ 項開始為正數？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+  ai_answers:
+    gemini: '19'
+    qwen: '19'
+  answer:
+  - '19'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 等差級數11＋14＋17＋……，則前13 項的和為多少？ ④
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+  ai_answers:
+    gemini: '377'
+    qwen: '377'
+  answer:
+  - '377'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知一個等差級數的首項為－4，末項為26，和為121，求其公差＝ ⑤ 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+  ai_answers:
+    gemini: '3'
+    qwen: '3'
+  answer:
+  - '3'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 在－7 和97 之間插入n 個數，使其成一個等差數列，且此數列的總和為720，則n＝ ⑥ 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+  ai_answers:
+    gemini: '14'
+    qwen: '14'
+  answer:
+  - '14'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 小苓、小雅在網路上搶到巨蛋場館《嗨翻跨年演唱會》搖滾區的門票,此區共有 25 排座位,且此區每一排都比其前一排多 2 個座位; 小苓搶到第 23 排,
+    小雅搶到第 3 排,已知這兩排的座位總共有 128 個,請問搖滾區共有幾個座位? ⑦
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+  ai_answers:
+    gemini: '1600'
+    qwen: '1600'
+  answer:
+  - '1600'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 如右圖，將一個面積為112 的正三角形，取各邊中點連成第2 個正三角形，再將第2 個正三角形各邊中點連成第3 個正三角形，依此方法，則第5 個正三角形的面積＝
+    ⑧ 。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_高雄_苓雅_數學_g8s2e1/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 601.5
+      - 482.07
+      - 702.77
+      - 571.6
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+  ai_answers:
+    gemini: $\frac{7}{16}$
+    qwen: $\frac{7}{16}$
+  answer:
+  - $\frac{7}{16}$
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 設一球每次反彈高度為原高度的$\frac{3}{4}$，若此球自高處落下，經4 次反彈後的高度是$\frac{405}{4}$公尺，則此球原本離地面
+    ⑨ 公尺。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+  ai_answers:
+    gemini: '320'
+    qwen: '320'
+  answer:
+  - '320'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 已知a , b , 8， c , d 成等比數列，則a×b×c×d＝ ⑩ 。(請將答案乘開)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+  ai_answers:
+    gemini: '4096'
+    qwen: '32768'
+    gemini_high: '4096'
+  answer:
+  - '4096'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 已知線型函數y＝ax＋b，其圖形通過（－1 , 2）與（3 , 10）兩點，求a＋b＝ ⑪ 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: '6'
+    qwen: '6'
+  answer:
+  - '6'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: '(1)將x 輸入後，依照下列流程計算後，得到x 與y 的關係式為 ⑫ 。
+
+    輸入數字x $\rightarrow$ 減5 $\rightarrow$ 乘以（－3）$\rightarrow$ 加7 $\rightarrow$ 答案y'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: y=-3x+22
+    qwen: $y=-3x+22$
+  answer:
+  - y=-3x+22
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: (2)承上題，若y 值為22，則x＝ ⑬ 。
+  group_stem: '（第 12 題）(1)將x 輸入後，依照下列流程計算後，得到x 與y 的關係式為 ⑫ 。
+
+    輸入數字x $\rightarrow$ 減5 $\rightarrow$ 乘以（－3）$\rightarrow$ 加7 $\rightarrow$ 答案y'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: '0'
+    qwen: '0'
+  answer:
+  - '0'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: 若線型函數的圖形與x 軸不相交，而且通過點（5 , 6），若x＝－3 時的函數值為a，x＝11 時的函數值為b，則3a＋b＝ ⑭ 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: '24'
+    qwen: '24'
+  answer:
+  - '24'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: (1) 將整副牌排好之後，第30 張是什麼數字? (4 分)
+  group_stem: '1、一副撲克牌有4 種花色，每種花色有13 張，分別為A，2，3……，10，J，Q，K。若把A 當成1，J 當成11，Q 當成12，K
+    當成13。
+
+    新平將撲克牌以等差數列排列，他的排法如下:
+
+    從1 開始，依照1，4，7……由上往下排列，如果遇到14 就再從1 輪起，即14 $\rightarrow$ 1，15 $\rightarrow$ 2，……依此類推。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: (2) 承第(1)題，新平將撲克牌進行洗牌,洗牌規則為:將最下面 15 張不改變順序,放至最上方變成最上面 15 張,稱為洗牌一回合,經洗牌3 回合後,
+    請怡安任取一張，怡安抽取了從上面數的第6 張牌,請問怡安抽到什麼數字的牌?(請簡略說明理由)(3 分)
+  group_stem: '1、一副撲克牌有4 種花色，每種花色有13 張，分別為A，2，3……，10，J，Q，K。若把A 當成1，J 當成11，Q 當成12，K
+    當成13。
+
+    新平將撲克牌以等差數列排列，他的排法如下:
+
+    從1 開始，依照1，4，7……由上往下排列，如果遇到14 就再從1 輪起，即14 $\rightarrow$ 1，15 $\rightarrow$ 2，……依此類推。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-1
+      title: 認識數列與等差數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-1 認識數列與等差數列
+    labeled_by: ai
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 3
+  stem: (1)小晨的爸爸購買了一輛電動車，簽約時先付訂金10 萬元，其餘的分12 期無息繳清，已知這12 期金額成等差數列，前兩期共30 萬元，第五、六期共46
+    萬元，則此輛新車總價為多少萬元？(4 分)
+  group_stem: '2、(1)小晨的爸爸購買了一輛電動車，簽約時先付訂金10 萬元，其餘的分12 期無息繳清，已知這12 期金額成等差數列，前兩期共30
+    萬元，第五、六期共46 萬元，則此輛新車總價為多少萬元？(4 分)
+
+    (2)接上題，若小晨的爸爸覺得每期繳款金額太多，希望改成25 期無息付款，且每期比前一期多繳5000 元，則第一期要繳多少錢? (3 分)'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s3_4
+  section: 3
+  number: 4
+  type: calc
+  page: 3
+  stem: (2)接上題，若小晨的爸爸覺得每期繳款金額太多，希望改成25 期無息付款，且每期比前一期多繳5000 元，則第一期要繳多少錢? (3 分)
+  group_stem: '2、(1)小晨的爸爸購買了一輛電動車，簽約時先付訂金10 萬元，其餘的分12 期無息繳清，已知這12 期金額成等差數列，前兩期共30
+    萬元，第五、六期共46 萬元，則此輛新車總價為多少萬元？(4 分)
+
+    (2)接上題，若小晨的爸爸覺得每期繳款金額太多，希望改成25 期無息付款，且每期比前一期多繳5000 元，則第一期要繳多少錢? (3 分)'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-2
+      title: 等差級數
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-2 等差級數
+    labeled_by: ai
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s3_5
+  section: 3
+  number: 5
+  type: calc
+  page: 3
+  stem: '3、艾美設計了一個幾何圖案，方法如下：
+
+    將長度為243 公分的線段(如圖一)分成三等分後，去掉中間的線段，再加上兩條等長的線段，形成圖二，使得圖中每一個線段都等長。接著將圖二中的每條小線段三等分，去掉中間的線段後，再加上兩條更小的等長線段，形成圖三，使得圖中每一個更小的線段都等長。
+
+    依此方法進行下去，圖五線段的總長度為多少公分? (6 分)'
+  assets:
+  - key: s3_5_f1
+    kind: figure
+    file: doc_113_高雄_苓雅_數學_g8s2e1/s3_5_f1.png
+    crop:
+      page: 3
+      rect:
+      - 101.65
+      - 590.43
+      - 708.59
+      - 655.19
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 1-3
+      title: 等比數列
+      chapter: 第1章 數列與級數
+    textbook: 八下 1-3 等比數列
+    labeled_by: ai
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s3_6
+  section: 3
+  number: 6
+  type: calc
+  page: 3
+  stem: (1) 通過原點O 與點A 的線型函數為何?(4 分)
+  group_stem: '4、苓雅國中辦理『認識家鄉、探索在地文化』營隊，營隊從苓雅國中出發，目的地是蓮池潭，路程長10 公里，為結合健康促進，採慢跑方式，跑步時維持同一速率。
+
+    右圖是行進路程與時間的關係圖。'
+  shared_asset: g3_6_7
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+- id: doc_113_高雄_苓雅_數學_g8s2e1_s3_7
+  section: 3
+  number: 7
+  type: calc
+  page: 3
+  stem: (2) 若早上7:30 出發，則何時會到達蓮池潭?(4 分)
+  group_stem: '4、苓雅國中辦理『認識家鄉、探索在地文化』營隊，營隊從苓雅國中出發，目的地是蓮池潭，路程長10 公里，為結合健康促進，採慢跑方式，跑步時維持同一速率。
+
+    右圖是行進路程與時間的關係圖。'
+  shared_asset: g3_6_7
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 2-1
+      title: 線型函數與其圖形
+      chapter: 第2章 線型函數與其圖形
+    textbook: 八下 2-1 線型函數與其圖形
+    labeled_by: ai
+shared_assets:
+- key: g3_6_7
+  label: 題組附圖
+  kind: figure
+  file: doc_113_高雄_苓雅_數學_g8s2e1/g3_6_7_f1.png
+  used_by:
+  - doc_113_高雄_苓雅_數學_g8s2e1_s3_6
+  - doc_113_高雄_苓雅_數學_g8s2e1_s3_7
+  crop:
+    page: 3
+    rect:
+    - 473.26
+    - 814.38
+    - 686.01
+    - 980.27

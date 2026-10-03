@@ -44,7 +44,10 @@ def split_school(full: str) -> tuple[str, str]:
     if city:
         name = name[len(city):].lstrip("市縣")
     name = name.removeprefix("立")
-    for suffix in ("國民中學", "高級中學附設國中部", "完全中學", "高級中學",
+    # 長的排前面：高中附設的國中部會寫成「林園高級中學國中部」，
+    # 先比對到短的「國中」只會剩下「林園高級中學」這種不像簡稱的簡稱。
+    for suffix in ("高級中學附設國中部", "高級中學國中部", "高級中學國中",
+                   "國民中學", "完全中學", "高級中學",
                    "國民小學", "國中", "高中", "中學", "國小"):
         if name.endswith(suffix):
             name = name[: -len(suffix)]
@@ -157,7 +160,7 @@ class Section(Base):
     document_id: Mapped[str] = mapped_column(ForeignKey("document.id", ondelete="CASCADE"),
                                              index=True)
     ord: Mapped[int] = mapped_column(Integer, nullable=False)
-    name: Mapped[str] = mapped_column(String(80), nullable=False)
+    name: Mapped[str] = mapped_column(String(300), nullable=False)
     type: Mapped[str | None] = mapped_column(String(20))
     score_rule: Mapped[str | None] = mapped_column(String(200))
     per_item_score: Mapped[float | None] = mapped_column(Float)
@@ -180,14 +183,14 @@ class Question(Base):
     section_ord: Mapped[int] = mapped_column(Integer, nullable=False)
     number: Mapped[int] = mapped_column(Integer, nullable=False)
 
-    type: Mapped[QuestionType] = mapped_column(Enum(QuestionType), nullable=False, index=True)
+    type: Mapped[QuestionType] = mapped_column(Enum(QuestionType, native_enum=False, length=20), nullable=False, index=True)
     stem_md: Mapped[str] = mapped_column(Text, nullable=False)
     stem_raw: Mapped[str | None] = mapped_column(Text)      # 正規化前原文，供對照原圖
     group_stem: Mapped[str | None] = mapped_column(Text)    # 題組共用說明
 
     answer: Mapped[list | None] = mapped_column(JSON)
     answer_status: Mapped[AnswerStatus] = mapped_column(
-        Enum(AnswerStatus), default=AnswerStatus.missing, index=True)
+        Enum(AnswerStatus, native_enum=False, length=20), default=AnswerStatus.missing, index=True)
     answer_source: Mapped[str | None] = mapped_column(String(80))   # answer_key / gemini+claude / human
     explanation_md: Mapped[str | None] = mapped_column(Text)
 
@@ -199,8 +202,17 @@ class Question(Base):
     parent_id: Mapped[str | None] = mapped_column(ForeignKey("question.id"))
     shared_asset_key: Mapped[str | None] = mapped_column(String(40))
 
+    # 教科書單元（classify_chapters / classify_english 的結果）。
+    # 數學、自然各版本節次對齊，篩選只看代號；國文、社會要連同版本一起比對；
+    # 英語是跨版本的主題代號，unit_publisher 為空。
+    unit_publisher: Mapped[str | None] = mapped_column(String(10))
+    unit_subject: Mapped[str | None] = mapped_column(String(10), index=True)   # 生物、歷史…；沒有子科時同科目
+    unit_code: Mapped[str | None] = mapped_column(String(20), index=True)
+    unit_title: Mapped[str | None] = mapped_column(String(200))
+    unit_chapter: Mapped[str | None] = mapped_column(String(200))
+
     status: Mapped[ReviewStatus] = mapped_column(
-        Enum(ReviewStatus), default=ReviewStatus.needs_review, index=True)
+        Enum(ReviewStatus, native_enum=False, length=20), default=ReviewStatus.needs_review, index=True)
     review_note: Mapped[str | None] = mapped_column(Text)
     uncertain_spans: Mapped[list | None] = mapped_column(JSON)
 
@@ -274,7 +286,7 @@ class Asset(Base):
 
     key: Mapped[str] = mapped_column(String(40), nullable=False)
     label: Mapped[str | None] = mapped_column(String(40))      # 圖(一)、表(二)
-    kind: Mapped[AssetKind] = mapped_column(Enum(AssetKind), nullable=False)
+    kind: Mapped[AssetKind] = mapped_column(Enum(AssetKind, native_enum=False, length=20), nullable=False)
     scope: Mapped[str] = mapped_column(String(10), default="question")   # question | shared
 
     file: Mapped[str | None] = mapped_column(String(300))      # figure/chart 用
@@ -295,7 +307,7 @@ class Asset(Base):
         UniqueConstraint("document_id", "key", name="uq_asset_key"),
         CheckConstraint(
             "file IS NOT NULL OR markdown IS NOT NULL OR text IS NOT NULL "
-            "OR pending = 1",
+            "OR pending",
             name="ck_asset_has_payload"),
     )
 
@@ -403,6 +415,7 @@ class Paper(Base):
     subject: Mapped[str | None] = mapped_column(String(40))
     owner: Mapped[str | None] = mapped_column(String(80))
     notes: Mapped[str | None] = mapped_column(Text)
+    settings: Mapped[dict | None] = mapped_column(JSON)       # 匯出設定（副標題、分欄、作答空間…）
     created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow, onupdate=utcnow)
 

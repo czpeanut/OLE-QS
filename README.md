@@ -3,37 +3,72 @@
 把國中考古題的 PDF／掃描檔轉成結構化題庫，依課綱與教科書章節分類，
 供教師檢索、自由組卷、匯出考卷。
 
-## 快速開始
+## 快速開始（選題組卷平台）
 
 ```bash
 pip install -r requirements.txt
+python -m playwright install chromium        # 下載 PDF 用；已有 Chromium 時改設 OLEQS_CHROMIUM=<路徑>
 
-# 1) 載入題目（已附兩份人工確認過的樣本）
-python -m apps.api.importer data/samples/expected/
+# 1) 載入題庫（data/bank 全部約 5,500 份卷、20 萬題，約需 1～2 小時；可重複執行）
+python -m apps.api.importer data/bank/
 
 # 2) 啟動
-uvicorn apps.api.main:app --reload
+uvicorn apps.api.main:app --host 0.0.0.0 --port 8000
 # 開啟 http://127.0.0.1:8000
 ```
 
+或用 Docker（例如放在 Synology NAS 上）：`docker compose up -d --build`，
+`data/` 整個掛進容器（`oleqs.db`、`assets/`、`curriculum/`）。
+
+功能：
+- **題庫選題**：科目 → 子科 → 冊別 → 版本 → 章節（英語為跨版本文法主題），加題型、答案、附圖、學年度、關鍵字篩選；
+  點題目即勾選，可本頁全選。題籃存在瀏覽器。
+- **組卷匯出**：標題、副標題、試題卷／答案卷／教師解答卷、單欄／雙欄、字級、作答行數、依題型自動分大題、
+  逐題配分與排序；右側即時預覽，下載 PDF（headless Chromium 排版，頁尾頁碼）或直接列印。
+- **我的試卷**：存檔、載入再編輯、直接下載 PDF。
+- 每題與卷末固定印出處（授權條件，不可關閉）；AI 作答的答案在解答卷上會標示未經人工確認。
+
 圖檔預設放在 `data/assets/`，可用 `OLEQS_ASSETS` 指定；資料庫預設 `data/oleqs.db`，
-可用 `OLEQS_DB` 指定。
+可用 `OLEQS_DB` 指定。圖檔不進版控，需要圖的話得重跑擷取。
 
 ## 處理新的考卷
 
+考卷目錄請照這個慣例擺，來源標註大半靠它（見下方「目錄慣例」）：
+
+```
+學年度／學期-次數／縣市／學校.pdf     例如 112/1-2/彰化/埔心.pdf
+```
+
 ```bash
+# 原生數位卷 → 結構化題目 YAML（含答案掛載與圖形切出）
+python scripts/extract.py "考古題目錄" -o data/bank --assets data/assets
+
+# 整批只有一科／一個年級，而卷面沒印時，明示告訴它（不要讓它猜）
+python scripts/extract.py "考古題目錄" -o data/bank --subject 數學 --grade 7
+
+# 讓同一所學校在題庫裡只有一個校名（跨批次累積後才需要）
+python scripts/canonicalize_schools.py data/bank
+
+# 擷取結果的結構驗證（配分總和、題號連續性、選項、共用素材…）
+python scripts/validate_extraction.py data/bank/*.yaml
+
 # PDF → 頁面影像 + 文字圖層 + 圖形（自動判斷原生數位 / 掃描 / 空白頁）
 python scripts/pdf_ingest.py "考古題目錄" -o out/ingest
 
 # 從答案卷解析「題號 → 答案」
 python scripts/parse_answer_key.py "考古題目錄" -o out/answer_keys
 
-# 擷取結果的結構驗證（配分總和、題號連續性、選項、共用素材…）
-python scripts/validate_extraction.py out/extracted.yaml
-
 # 用多個模型交叉作答，只有不一致的才需人工判定
 python scripts/generate_answers.py out/extracted.yaml --figures out/ingest/xxx/figures
 ```
+
+### 目錄慣例
+
+`112/1-2/彰化/埔心.pdf` ＝ 112 學年度、**第 1 學期第 2 次**段考、彰化縣埔心國中。
+
+`1-2` 是「學期-次數」，不是「年級-學期」 —— 一個學年只有兩個學期，卻有
+`1-3`、`2-3` 這種目錄；而卷頭寫得很清楚：「111學年度第一學期第二次段考」。
+**年級不在路徑裡**，只能從卷面取得，抓不到就整份跳過（來源標註不可缺）。
 
 ## 目錄
 
@@ -46,7 +81,8 @@ apps/api/          FastAPI 後端 + 網頁介面
   export.py        試題卷 / 答案卷 / 教師解答卷
   static/          單頁介面（檢索 → 題籃 → 匯出）
 scripts/           擷取管線工具
-data/samples/      黃金測試集（人工確認過的擷取結果）
+data/bank/         題庫本體（擷取結果，匯入資料庫的來源）
+data/samples/      黃金測試集（人工逐題確認過的兩份，回歸測試基準）
 docs/STATUS.md     開發現況與關鍵決策（接手先讀這份）
 docs/              開發計畫與各次 PoC 實測報告
 ```

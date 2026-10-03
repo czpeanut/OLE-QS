@@ -1,0 +1,368 @@
+source: data/bank/doc_113_台中_向上_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_向上_數學_g7s2e1_s1_1
+  number: 1
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 第二象限為 x < 0 且 y > 0 的區域。由圖可知，位於第二象限內的點有 A、B、C、D、F 共 5 個（E 點在 x 軸上，不屬於任何象限）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設風間家坐標為 (x, y)，由題意可列出方程式 x - 9 = -6 且 y + 12 = 3，解得 x = 3、y = -9，故風間家的位置為
+        (3, -9)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目提及的坐標平面圖，無法得知點 P 與點 Q 的縱坐標高低關係。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 雖然可推知 a < 0 且 c > 0（得 a - c < 0），但 b 與 d 皆小於 0，要判斷 b - d 的正負需依賴圖形中
+        P 與 Q 的縱坐標高低位置，因題目未附圖而無法判斷。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目提及的坐標平面圖，無法得知點 P 與點 Q 的縱坐標高低關係。
+- id: doc_113_台中_向上_數學_g7s2e1_s1_4
+  number: 4
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 乙車繞完第8圈共歷時 35 × 8 = 280 分鐘。此時甲車行駛 280 ÷ 50 = 5.6 圈，即從正 y 軸（90°）出發逆時針旋轉
+        0.6 × 360° = 216°，到達 306°，位於第四象限。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: (A) 為一元一次方程式；(B) 未含等號，為多項式而非方程式；(C) 包含 $2x-5=\frac{9}{4}-3y$ 的形式，含有兩個未知數且最高次數皆為一次的等式，為二元一次方程式。
+      confidence: 0.9
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將 x = -9、y = 6 代入方程式得 -9a + 6b = 3/2。兩邊同乘以 -2，可得 18a - 12b = (3/2)
+        * (-2) = -3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 將 (B) x=3, y=0 代入兩方程式：3(3)+5(0)=9 且 2(3)-3(0)=6，均成立。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 全班有 x 位同學，y 位小組長每人得 10 片，其餘 (x - y) 位同學每人得 8 片。總餅乾數為 10y + 8(x -
+        y) = 8x + 2y 片。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 全部 y 公里皆以基本費率每公里 20 元計算，共 20y 元；超過 x 公里的 (y-x) 公里每公里再加收 15 元，共 15(y-x)
+        元，加上起跳費 80 元，方程式為 80+20y+15(y-x)=490。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s1_10
+  number: 10
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 設男生分成 x 組，女生分成 y 組，可列出聯立方程式：x + y = 10 且 3x + 4y = 34，解得 x = 6、y
+        = 4。因此男生有 18 人、女生有 16 人，男生比女生多 18 - 16 = 2 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s2_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-2'
+      reasoning: 點A(m, n)在第四象限，故m > 0且n < 0。與x軸距離為|n| = 9可得n = -9，與y軸距離為|m| = 7可得m
+        = 7，因此m + n = 7 + (-9) = -2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s2_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目原始排版與完整題幹內容（式子與運算符號存在缺漏與亂碼）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目文字排版嚴重錯亂且式子符號缺失（小題編號、選項代號與運算符號交錯破損），無法完整得知原始題目欲求之完整題目內容或對應選項。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目原始排版與完整題幹內容（式子與運算符號存在缺漏與亂碼）
+- id: doc_113_台中_向上_數學_g7s2e1_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '1'
+      reasoning: 解聯立方程式：(5x+4y=2)×3 加上 (4x-3y=-17)×4 可得 31x = -62，解得 x = a = -2；代回得
+        y = b = 3。因此 a + b = -2 + 3 = 1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '130'
+      reasoning: 由第一式得 5x = 32y，代入第二式得 32y - 3y = 58，解得 y = b = 2。進而求得 5x = 64，即 x
+        = a = 64/5。因此 10a + b = 10(64/5) + 2 = 128 + 2 = 130。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 因為絕對值與平方皆大於等於0且互為相反數，故兩式皆為0。解聯立方程式 3x-2y=0 與 x-4y+10=0 可得 x=2、y=3，因此
+        x+y=5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '46'
+      reasoning: 設9人桌有x桌、10人桌有y桌，得方程式9x+10y=421。欲使總桌數x+y=(421+x)/10最大，x需取最大非負整數解，可得x=39、y=7，故最多開46桌。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s2_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '6'
+      reasoning: 設被加數為 x，加數為 y。依題意得 x + 0.1y = 3.93 且 x + 10y = 26.7，兩式相減解得 9.9y =
+        22.77，得 y = 2.3，進而求得 x = 3.7。因此原本正確的和為 3.7 + 2.3 = 6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s2_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 1740x-300y=136200
+      reasoning: 前900公斤以每公斤1.6x元售出，得款900(1.6x)=1440x元；剩下的300公斤以每公斤(x-y)元售出，得款300(x-y)元。總收入為1440x+300(x-y)=136200，化簡得1740x-300y=136200（或29x-5y=2270）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '30'
+      reasoning: 設加入 95% 酒精 x ml，則 60% 酒精需 (70 - x) ml。列式 0.95x + 0.60(70 - x) = 0.75
+        × 70，解得 0.35x = 10.5，x = 30。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '455'
+      reasoning: 設上個月A、B款銷售量分別為x、y個，列出聯立方程式：x + y = 840 與 (7/8)x + (5/4)y = 855。解得x
+        = 520，故本月A款銷售量為 520 × (7/8) = 455 個。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s3_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (-152, 188)
+      - '39'
+      reasoning: 每次按按鈕 x 坐標加 2、y 坐標減 3，故第 3 次坐標為 (-152, 188)；設按了 n 次，由 (-158 + 2n)
+        + (197 - 3n) = 0 可解得 n = 39。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s3_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 3x+2y=80
+      - '41'
+      reasoning: (1) 向上隊得分為 3x + 2y + 8 = 88，整理得 3x + 2y = 80。(2) 小葉隊得分為 3(y - 8)
+        + 2(x + 9) + 7 = 86，整理得 2x + 3y = 85；解聯立方程得 x = 14、y = 19，故向上隊總進球數為 14 + 19
+        + 8 = 41 球。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_向上_數學_g7s2e1_s3_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整的題目問題描述及計分對照表格
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目內容僅有部分數字與「累積答對題數」等片段文字，缺乏完整的題目敘述與問題要求，無法進行計算或判斷。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整的題目問題描述及計分對照表格
+- id: doc_113_台中_向上_數學_g7s2e1_s3_16
+  number: 16
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：完整的題目敘述、計分規則或對應的累積答對題數圖表
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供部分分數序列與「累積答對題數」字樣，缺少完整的計分規則、圖表數據或具體提問內容，無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整的題目敘述、計分規則或對應的累積答對題數圖表
+- id: doc_113_台中_向上_數學_g7s2e1_s3_23
+  number: 23
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏題目的完整敘述與提問內容（如表格、人數分布或求值目標）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅列出數據「得分78. 81. 83. 86. 88. 90. 92.」，缺乏問題主幹與具體提問（例如計算平均數、中位數或對應人數等），無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺乏題目的完整敘述與提問內容（如表格、人數分布或求值目標）

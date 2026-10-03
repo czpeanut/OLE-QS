@@ -17,6 +17,12 @@ import re
 
 # 題幹短於此字數幾乎確定是擷取殘缺
 MIN_STEM_CHARS = 6
+# 國文字音字形題本來就只有兩三個字：「ㄉㄡ風」（寫國字）、「教『誨』」（寫注音）。
+# 題幹含注音符號，或用「」框出要作答的字，就是這一型，短是正常的。
+ZHUYIN_ITEM_RE = re.compile(r"[\u3105-\u3129\u02ca\u02c7\u02cb\u02d9]|「.{1,3}」|『.{1,3}』")
+# 作答指示寫在大題標題上的字詞題（「一、國字注音」底下每題只有「朦朧」兩個字）
+WORD_SECTION_RE = re.compile(r"注音|注釋|國字|字音|字形|解釋|詞義|錯別字|改錯|形音義"
+                             r"|單字|字彙|拼字|翻譯|中翻英|英翻中|[Vv]ocabulary|[Ss]pelling")
 # 各題型應有的選項數；None 表示不檢查
 EXPECTED_OPTIONS = {"single": 4, "tf": 2}
 
@@ -26,7 +32,13 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
     reasons: list[str] = []
 
     stem = (q.get("stem") or "").strip()
-    if len(stem) < MIN_STEM_CHARS:
+    # 短題幹不一定是殘缺：字音字形題本來就短；克漏字與題組的內容在共用短文裡
+    sec_name = next((s.get("name") or "" for s in (doc.get("document") or {}).get("sections") or []
+                     if s.get("ord") == q.get("section")), "")
+    short_ok = bool(stem) and (ZHUYIN_ITEM_RE.search(stem)
+                               or (q.get("group_stem") or "").strip()
+                               or WORD_SECTION_RE.search(sec_name))
+    if len(stem) < MIN_STEM_CHARS and not short_ok:
         reasons.append("題幹過短或為空，可能擷取殘缺")
 
     # ── 辨識不清：擷取階段自己標記的不確定處 ──────────────────
@@ -44,11 +56,30 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
     if any(unbalanced(t) for t in texts):
         reasons.append("LaTeX 公式未閉合")
 
+    # ── 括號未閉合：算式殘缺的徵兆 ────────────────────────────
+    # 堆疊排版的算式（分數、指數）在還原時，括號可能跟著上下標一起被
+    # 移到別處，留下「已知甲= (− 乙、丙之值最大為何?」這種半截式子。
+    # 表面上是一段完整的中文句子，實際上算式已經不成立、無法作答。
+    def unclosed_paren(t: str) -> bool:
+        depth = 0
+        for c in t:
+            if c == "(":
+                depth += 1
+            elif c == ")":
+                depth -= 1
+                if depth < 0:
+                    return True
+        return depth != 0
+
+    if unclosed_paren(stem):
+        reasons.append("題幹括號未閉合，算式可能殘缺")
+
     # ── 選項完整性 ──────────────────────────────────────────
     qtype = q.get("type")
     opts = q.get("options") or []
     expected = EXPECTED_OPTIONS.get(qtype)
-    if expected and len(opts) != expected:
+    # 是非題卷面通常不印選項（作答寫 O／X），沒有選項是正常的；有印的才檢查數量
+    if expected and len(opts) != expected and not (qtype == "tf" and not opts):
         reasons.append(f"{qtype} 題應有 {expected} 個選項，實際 {len(opts)} 個")
 
     labels = [o.get("label") for o in opts]
@@ -92,6 +123,17 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
         expect_n = q.get("answer_count")
         if expect_n and len(flat) != expect_n:
             reasons.append(f"應有 {expect_n} 個答案，實際 {len(flat)} 個")
+
+        # 選擇題與是非題的答案只能是自己的選項代號。
+        # 答案卷是表格，解析時只要對錯一行，整段答案就會平移 ——
+        # 實測有整份卷的答案變成下一題的題號（第5題的答案是「7.」）。
+        # 這種錯誤最危險的地方在於它看起來很正常：欄位有值、狀態是
+        # verified，然後原封不動印在教師解答卷上當正解。
+        labels = {o.get("label") for o in opts}
+        if qtype in {"single", "tf", "multiple"} and labels:
+            stray = [a for a in flat if a not in labels]
+            if stray:
+                reasons.append(f"{qtype} 題的答案 {stray} 不在選項代號 {sorted(labels)} 之中")
 
     return (not reasons), reasons
 

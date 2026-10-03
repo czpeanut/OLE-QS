@@ -1,0 +1,790 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 新北
+  school_short: 江翠
+  school: 新北市立江翠國民中學
+  scope_note: 康軒版第一冊 1-1 至 1-4
+  id: doc_113_新北_江翠_數學_g7s1e1
+  title: 新北市立江翠國民中學 113學年度第1學期第1次定期評量 7年級數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題
+    count: 12
+  - ord: 2
+    name: 二、填充題
+    count: 10
+  - ord: 3
+    name: 三、素養題
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-1/新北/江翠.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: null
+    - number: 1-2
+      title: null
+    - number: 1-3
+      title: null
+    - number: 1-4
+      title: null
+    publisher: 康軒
+    raw: 康軒版第一冊 1-1 至 1-4
+    volume: 第一冊
+  chapter_index:
+    publisher: 康軒
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: 康軒
+questions:
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 數線上有 $A$、$B$、$C$ 三點，請問 $A$ 點的坐標是多少？(1-1 習作)
+  options:
+  - label: A
+    content: '-2.5'
+  - label: B
+    content: '1.3'
+  - label: C
+    content: $1\frac{2}{5}$
+  - label: D
+    content: $1\frac{3}{5}$
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g7s1e1/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 138.08
+      - 242.65
+      - 589.83
+      - 303.28
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 負數與數線
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-1 負數與數線
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: A
+    gemini_high: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 數線上有 $A(5)$、$B(-11)$、$C(c)$ 三點，若 $C$ 為 $A$、$B$ 的中點，則 $c$ 是多少？(1-2 課本)
+  options:
+  - label: A
+    content: $-2$
+  - label: B
+    content: $-3$
+  - label: C
+    content: $-4$
+  - label: D
+    content: $-5$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 整數的加減
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-2 整數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 若 $a$、$b$、$c$ 為任意三個整數，且 $a$、$b$、$c$ 皆不為 $0$，則下列算式何者不正確？(1-3 課本)
+  options:
+  - label: A
+    content: $(a+b)\times c=a\times c+b\times c$
+  - label: B
+    content: $(a-b)\div c=a\div c-b\div c$
+  - label: C
+    content: $c\times(a+b)=c\times a+c\times b$
+  - label: D
+    content: $a\div(b+c)=a\div b+a\div c$
+  answer:
+  - D
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 整數的乘除與四則運算
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-3 整數的乘除與四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 諾羅病毒是最常引起腸胃炎的病毒之一，其直徑大小約為 27 奈米，即 0.000000027 公尺。試將 0.000000027 以科學記號表示。(1-4
+    課本)
+  options:
+  - label: A
+    content: $2.7\times 10^{-10}$
+  - label: B
+    content: $2.7\times 10^{-9}$
+  - label: C
+    content: $2.7\times 10^{-8}$
+  - label: D
+    content: $2.7\times 10^{-7}$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 已知 $5\times 6\times 7\times 8\times 9=15120$，則 $(-6)\times(-7)\times(-8)\times(-9)\times(-10)=$？(ch1
+    習作)
+  options:
+  - label: A
+    content: $-30120$
+  - label: B
+    content: $-30240$
+  - label: C
+    content: $-30360$
+  - label: D
+    content: '30600'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 整數的乘除與四則運算
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-3 整數的乘除與四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 將 $-5$、$2.5$、$-(-\frac{1}{2})$、$0$、$\|-6\|$、$(-3)$ 的相反數，這六個數由小至大排列，請問哪個選項是正確的？(1-1
+    課本)
+  options:
+  - label: A
+    content: $\|-6\| < -5 < 0 < -(-\frac{1}{2}) < 2.5 < (-3)$ 的相反數
+  - label: B
+    content: $-5 < 0 < -(-\frac{1}{2}) < (-3)$ 的相反數 $< 2.5 < \|-6\|$
+  - label: C
+    content: $-5 < 0 < -(-\frac{1}{2}) < 2.5 < (-3)$ 的相反數 $< \|-6\|$
+  - label: D
+    content: $-5 < -(-\frac{1}{2}) < 0 < (-3)$ 的相反數 $< 2.5 < \|-6\|$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 負數與數線
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-1 負數與數線
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: "在右圖 $3\\times 3$ 的方格紙中，填入適當的整數，使得其橫列、直行及對角線的數字和均相等，則：$a+b+c+d+e=$？(1-2 習作)\n\
+    \n| $a$ | $b$ | $c$ |\n| :---: | :---: | :---: | \n| $-5$ | $-2$ | 1 |\n| 3 |\
+    \ $d$ | $e$ |"
+  options:
+  - label: A
+    content: $-15$
+  - label: B
+    content: $-12$
+  - label: C
+    content: $-9$
+  - label: D
+    content: $-6$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 整數的加減
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-2 整數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 有一份試卷共 20 題，答對 1 題可得 5 分，答錯 1 題倒扣 2 分，未作答則未得分也不扣分。若小傑共作答了 18 題，其中答對 15 題，則小傑應得多少分？(1-3
+    課本)
+  options:
+  - label: A
+    content: '69'
+  - label: B
+    content: '70'
+  - label: C
+    content: '71'
+  - label: D
+    content: '73'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 整數的乘除與四則運算
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-3 整數的乘除與四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 若 $n$ 為奇數，$m$ 為偶數，則 $(-1)^{n}\times 28+(-1)^{m}\times 65$ 等於多少？(1-4 課本)
+  options:
+  - label: A
+    content: $-37$
+  - label: B
+    content: $-43$
+  - label: C
+    content: '43'
+  - label: D
+    content: '37'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: 計算「$6^{2}-(-6)^{2}\times(14-4^{2})$」的值為何？(1-4 課本)
+  options:
+  - label: A
+    content: '108'
+  - label: B
+    content: '84'
+  - label: C
+    content: $-36$
+  - label: D
+    content: $-60$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 2
+  stem: 小琳與朋友們走進一間創意冰品店，價目表如右圖，若他們想合點一碗三姊妹雪再加 8 樣配料，且小琳拿 250 元去結帳，是否足夠？剩下或不夠多少元？(1-4
+    課本)
+  options:
+  - label: A
+    content: 否，不夠 20 元
+  - label: B
+    content: 否，不夠 10 元
+  - label: C
+    content: 足夠，剩下 10 元
+  - label: D
+    content: 足夠，剩下 30 元
+  assets:
+  - key: s1_11_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g7s1e1/s1_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 567.25
+      - 166.28
+      - 686.01
+      - 288.83
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 2
+  stem: 右圖為熊熊航空公司推出臺北飛往東京機票促銷活動。已知活動期間，阿宸以早鳥優惠價買到 4 張機票，共花 68000 元。若優惠限量 150 張機票全數售出，則熊熊航空公司總銷售金額為多少元？(ch1
+    習作)
+  options:
+  - label: A
+    content: 255 萬
+  - label: B
+    content: 270 萬
+  - label: C
+    content: 285 萬
+  - label: D
+    content: 300 萬
+  assets:
+  - key: s1_12_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g7s1e1/s1_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 473.26
+      - 299.41
+      - 690.38
+      - 391.0
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 整數的乘除與四則運算
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-3 整數的乘除與四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '小蓁某次段考的分數，若以 80 分為基準，各科的得分與基準的比較，如下表所示，已知國文科的分數為 78 分。(1-1 習作)
+
+
+    | 科目 | 國文 | 英語 | 數學 | 自然 | 社會 |
+
+    | :--- | :---: | :---: | :---: | :---: | :---: |
+
+    | 與基準的比較 | $-2$ | $+8$ | $+13$ | 0 | $-3$ |
+
+
+    請問：小蓁的五科總分是多少分？______分。'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 負數與數線
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-1 負數與數線
+    labeled_by: ai
+  ai_answers:
+    gemini: '416'
+    qwen: '416'
+  answer:
+  - '416'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知 $b$ 為整數，又 $\|b\| < 7.1$，則 $b$ 的可能值有多少個？______個。(1-1 習作)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 負數與數線
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-1 負數與數線
+    labeled_by: ai
+  ai_answers:
+    gemini: '15'
+    qwen: '15'
+  answer:
+  - '15'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: '小寳利用實驗室裡的顯微鏡觀察四種不同大小的微生物，並以科學記號記錄其大小，如右表，則這四種微生物 $A$、$B$、$C$、$D$ 的大小關係為何？______。(以＞、＜或＝表示)(1-4
+    課本)
+
+
+    | 微生物 | 大小($\text{mm}$) |
+
+    | :---: | :---: |
+
+    | $A$ | $4.6\times 10^{-4}$ |
+
+    | $B$ | $5.3\times 10^{-5}$ |
+
+    | $C$ | $1.7\times 10^{-3}$ |
+
+    | $D$ | $9.8\times 10^{-5}$ |'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: C>A>D>B
+    qwen: C>A>D>B
+  answer:
+  - C>A>D>B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 計算 $(-26)-9\times[(-8)-\|-5\|]$ 的值等於多少？______。(1-3 課本)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 整數的乘除與四則運算
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-3 整數的乘除與四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '91'
+    qwen: '91'
+  answer:
+  - '91'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 利用分配律計算 $(-96)\times 84+(-96)\times 16$ 之值為何？______。(1-3 習作)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 整數的乘除與四則運算
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-3 整數的乘除與四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '-9600'
+    qwen: '-9600'
+  answer:
+  - '-9600'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 比 $-21\frac{1}{4}$ 大，且比 $18\frac{3}{8}$ 小的所有整數的和為多少？______。(1-1 課本)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 負數與數線
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-1 負數與數線
+    labeled_by: ai
+  ai_answers:
+    gemini: '-60'
+    qwen: '-60'
+  answer:
+  - '-60'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: 數線上有 $A(-14)$、$B(b)$、$C(c)$ 三點，若 $C$ 為 $\overline{AB}$ 的中點，而且 $\overline{AB}=6$，則
+    $c$ 可能為多少？______。(1-2 習作)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 整數的加減
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-2 整數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: -11或-17
+    qwen: -11;-17
+    gemini_high: -11 或 -17
+  answer:
+  - -11 或 -17
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 教室裡有 6 個塑膠箱，每個塑膠箱內有 6 個紙箱，每個紙箱內有 6 個木箱，每個木箱內有 5 個鐵箱，每個鐵箱內有 7 個吊飾，請問：塑膠箱、木箱、吊飾等三種數量的總和為多少？______個。(答案可以乘開化簡，亦可以指數記法表示而不化簡)(1-4
+    習作)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: '7782'
+    qwen: '7782'
+  answer:
+  - '7782'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 若 甲$\times 295=10030$，則 (甲$-8)\times 295-$甲$\times 29.5=$？______。(1-3 課本)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 整數的乘除與四則運算
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-3 整數的乘除與四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '6667'
+    qwen: '6667'
+  answer:
+  - '6667'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 現在曉東，筱曦兩人在長為 50 公尺的游泳池之相對兩端同時出發游泳，游到另一端便立即返回，若每秒曉東游 3 公尺而筱曦每秒游 2 公尺，請問：從兩人同時出發開始計時
+    11 分鐘內，兩人相遇了多少次？______次。(1-3 課本)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 整數的乘除與四則運算
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-3 整數的乘除與四則運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '33'
+    qwen: '33'
+  answer:
+  - '33'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_江翠_數學_g7s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: 請利用下方數線，標記出各點的位置(包含符號及坐標)：$A(-4)$、$B(-2\frac{1}{4})$、$C(-0.5)$、$D(\frac{3}{7})$。(每個點標記錯誤扣
+    2 分)
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g7s1e1/s3_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 168.69
+      - 519.22
+      - 576.71
+      - 558.18
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 負數與數線
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-1 負數與數線
+    labeled_by: ai
+- id: doc_113_新北_江翠_數學_g7s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: '一家媒體「愛○媒」，發了一篇新聞報導其標題為「知名麵包店超神 一小時收入 36 萬」
+
+    【特約記者林○妮報導】
+
+    大排長龍，但不是排三倍券或口罩，而是板橋某家知名麵包店！
+
+    據現場目擊，生意興隆時，平均 5 到 8 秒就結帳一位，每位客人平均大約買 300 元到 600 元，粗估一分鐘收入 6000 元，一小時的營業額達到 36
+    萬！
+
+    這家知名的麵包店以蛋糕及鳳梨酥聞名，提起「小○」，一股人可能不知道本來是麵包店，現在早上也還有賣麵包。「小○」的蛋糕及鳳梨酥等產品，因為好吃又便宜，幾乎成了板橋人的固定伴手禮，平日就生意興隆，每逢節日之前經常大排長龍，很多人都來光顧，買到外縣市去送人。
+
+
+    (1)根據上述報導，若「平均 5 到 8 秒就結帳一位，每位客人平均大約買 300 元到 600 元」資訊無誤，那麼一分鐘收入真的有可能 6000 元嗎？請回答「是」或「否」，並說明原因。(1-2
+    課本)（2 分）
+
+
+    (2)如果麵包店一小時的營業額達到 36 萬！而且這家麵包店每天營業時間 8 小時，全年 365 天都不休息，那麼這家麵包全年的營業總金額為多少元？(請以科學記號表示。)並判斷是否有超過
+    10 億元？(1-4 課本)（4 分）'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_新北_江翠_數學_g7s1e1/s3_2_f1.png
+    crop:
+      page: 3
+      rect:
+      - 562.88
+      - 654.42
+      - 686.74
+      - 746.01
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 整數的乘除與四則運算
+      chapter: 第1章 整數的運算
+    textbook: 七上 1-3 整數的乘除與四則運算
+    labeled_by: ai

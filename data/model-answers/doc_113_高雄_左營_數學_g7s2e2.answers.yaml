@@ -1,0 +1,392 @@
+source: data/bank/doc_113_高雄_左營_數學_g7s2e2.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_高雄_左營_數學_g7s2e2_s1_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少具體的數學測驗題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 所提供的內容僅為考試注意事項與作答規定，並無具體的數學題目內容。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少具體的數學測驗題目內容
+- id: doc_113_高雄_左營_數學_g7s2e2_s1_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏具體的題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 提供的文字為試卷的注意事項與考試說明，並非實際的題目內容，缺乏題目資訊無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺乏具體的題目內容
+- id: doc_113_高雄_左營_數學_g7s2e2_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：右圖(二)的水果雞尾酒食譜內容（各材料比例及替換規則）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目中提到的「右圖(二)」食譜內容（包含雞尾酒配方以及醋與果汁的替換比例）未提供，無法計算不足的份量與替換方式。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 右圖(二)的水果雞尾酒食譜內容（各材料比例及替換規則）
+- id: doc_113_高雄_左營_數學_g7s2e2_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 小球的淨重為「總重量－空盤重量」，依數據計算分別為 25、50、75、100 公克，與小球個數的比值皆為 2.5（定值），故小球個數與(總重量－空盤重量)成正比。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 選項 (B)、(C)、(D) 化簡後之比例皆為「甲：乙 = 2：3」，僅選項 (A) 為「甲：乙 = 3：2」，故 (A) 與其他三個不同。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設 a = 9k, b = 5k (k ≠ 0)，代入 (D) 選項得 (2a+b):(3a-b) = (18k+5k):(27k-5k)
+        = 23k:22k = 23:22，恆成立。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 成反比的關係式為 xy=k (k≠0)。其中 (乙) 2xy=1 => xy=1/2、(丙) xy=-10、(己) xy=1/6
+        皆符合成反比定義，故選 (C)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: '設營業前鮮奶與優酪乳數量分別為 7r 與 4r，依題意 (7r - 13) : (4r - 12) = 11 : 4，解得 r
+        = 5。營業結束後剩下鮮奶 22 瓶、優酪乳 8 瓶，合計 30 瓶。'
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s1_10
+  number: 10
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 由圖可知直線 $L$ 由左下往右上遞增（斜率為正）。因 $y=-1 > -2$，對應的 $x$ 坐標 $d > 3$；而 $x=-1
+        < 3$，對應的 $y$ 坐標 $f < -2$，故 $d > 3 > f$，即 $d > f$ 必定正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_1
+  number: 1
+  type: fill
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：第(1)小題被裁切掉的完整題目內容
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 附圖左側被裁切，無法看清第(1)小題的完整題目內容，且文字題目出現亂碼破損，缺乏足夠資訊以正確作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第(1)小題被裁切掉的完整題目內容
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '7'
+      reasoning: 根據比例式內項乘積等於外項乘積，可列出方程式 5(x + 5) = 3(3x - 1)，展開得 5x + 25 = 9x - 3，解得
+        4x = 28，即 x = 7。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_3
+  number: 3
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '3:4'
+      reasoning: '將方程式移項整理可得 9x - 5x = 14y - 11y，即 4x = 3y，因此 x : y = 3 : 4。'
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x=-5
+      reasoning: 與y軸平行的直線方程式形式為x=k，因通過點(-5,7)，故方程式為x=-5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '11'
+      reasoning: 將 (5, m) 代入 2x - y = 4 得 10 - m = 4，解得 m = 6；將 (n, -14) 代入得 2n -
+        (-14) = 4，解得 n = -5。因此 m - n = 6 - (-5) = 11。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-20'
+      reasoning: 因為 y 與 x 成正比，設 y = kx。代入 x = -3, y = 4 得 k = -4/3，故當 x = 15 時，y =
+        (-4/3) * 15 = -20。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_7
+  number: 7
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '48'
+      reasoning: 因 $y$ 與 $x$ 成反比，可設 $xy = k$。代入 $x = -4, y = -6$ 得 $k = 24$。當 $y =
+        \frac{1}{2}$ 時，$x \times \frac{1}{2} = 24$，解得 $x = 48$。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_9
+  number: 9
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-6'
+      reasoning: 由 A(-3,4) 與 B(-1,2) 可求得直線方程式為 y = -x + 1。將 C(k+11, k+2) 代入方程式得 k+2
+        = -(k+11)+1，解得 2k = -12，故 k = -6。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_10
+  number: 10
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '240'
+      reasoning: 火星重量與地球重量成正比，設比值為 6/15 = 2/5。地球重 600 公斤時，在火星上的重量為 600 × (2/5) = 240
+        公斤重。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_11
+  number: 11
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '4'
+      reasoning: 總工作量為 10 人 × 21 天 = 210 人·天。提早 6 天完成即需在 15 天內完成，總共需要 210 ÷ 15 = 14
+        位同學，因此需要再多尋求 14 - 10 = 4 位同學。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_12
+  number: 12
+  type: fill
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：題目左側裁切遺失的完整敘述（雙方交換貨幣的具體方式或比例）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目圖片左側文字被截斷，且題目敘述不完整，缺少兩人的具體交換條件與規則，無法計算出正確比例。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目左側裁切遺失的完整敘述（雙方交換貨幣的具體方式或比例）
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_13
+  number: 13
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提及的 x、y 數據表格
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「下表為x、y的數據」，但題目內容未附上該數據表格，無法求得成反比的常數與關係式。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 題目中提及的 x、y 數據表格
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_14
+  number: 14
+  type: fill
+  images_sent: 1
+  status: missing_context
+  note: gemini 回報缺少素材：完整包含兩組以上 (x, y) 數據的表格圖片
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提供的表格圖片 [p3_f03] 遭到截斷，僅包含一組數據 (x=1, y=2)，缺少求出正比常數與 k 所需的第二組數據。
+      confidence: 0.95
+      missing_context: true
+      missing_what: 完整包含兩組以上 (x, y) 數據的表格圖片
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_15
+  number: 15
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '5'
+      reasoning: 將 (4,-2) 代入得 4a+b=-2 及 4c-2d=-3。所求 8a+2b-12c+6d = 2(4a+b) - 3(4c-2d)
+        = 2(-2) - 3(-3) = -4 + 9 = 5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_16
+  number: 16
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題目中提到的右圖(五)
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「右圖(五)」，但未提供該圖形或直線的相對位置與坐標系資訊，無法判斷 a、b、c 的大小關係。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題目中提到的右圖(五)
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_17
+  number: 17
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '75'
+      reasoning: 設內野未售出票數為x，則內野售出為4x（內野總數5x）；外野售出亦為x，外野未售出為(2/3)x（外野總數(5/3)x）。總售出票數為5x，門票總數為(20/3)x，故購票率為
+        5x / ((20/3)x) * 100% = 75%。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s2_18
+  number: 18
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (10, 10)
+      - (\frac{10}{7}, -\frac{10}{7})
+      reasoning: P點到兩軸距離相等，代表|x|=|y|，即y=x或y=-x。分別代入4x-3y=10解聯立方程式，可得P點為(10, 10)或(10/7,
+        -10/7)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_高雄_左營_數學_g7s2e2_s3_2
+  number: 2
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 3：2
+      - 19支
+      - (-4/3, 4)
+      reasoning: 由2支紅筆售價等於3支藍筆售價得單價比為3:2；設紅筆單價3k、藍筆2k，原訂藍筆x支，由方程式3x+8=1.3(12+2x)解得x=19；解聯立方程式3x+4y=12與y=-3x得交點坐標為(-4/3,
+        4)。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''

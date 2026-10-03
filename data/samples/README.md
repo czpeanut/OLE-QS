@@ -10,6 +10,9 @@ raw/        原始題本影像（未進版控，見下方說明）
 expected/   人工確認過的標準答案（ground truth），YAML 格式
 ```
 
+> `expected/` 只放**人工逐題確認過**的樣本。管線輸出（題庫本體）在 `data/bank/`，
+> 兩者不可混放 —— 拿管線自己的輸出當基準，回歸測試就永遠是滿分。
+
 ## 為什麼 ground truth 用 YAML 而非 JSON
 
 題幹含大量 LaTeX 反斜線，JSON 需逐一跳脫（`\\times`），手工維護極易出錯。

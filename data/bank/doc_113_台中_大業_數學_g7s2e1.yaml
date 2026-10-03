@@ -1,0 +1,862 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 1
+  city: 台中
+  school_short: 大業
+  school: 臺中市立大業國民中學
+  scope_note: 康軒版 1-1~2-1
+  id: doc_113_台中_大業_數學_g7s2e1
+  title: 臺中市立大業國民中學 113學年度第2學期第1次定期評量 7年級數學科試題
+  exam_name: 113學年度第2學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、是非題：(正確的打「○」，錯誤的打「×」；共6 題，每題2 分，共12 分)
+    count: 6
+  - ord: 2
+    name: 二、選擇題：(共10 題，每題4 分，共40 分)
+    count: 10
+  - ord: 3
+    name: 三、填充題：(共11 格，每格3 分，共33 分)
+    count: 11
+  - ord: 4
+    name: 四、綜合題：(4 題，共15 分)
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/台中/大業.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: null
+    - number: 2-1
+      title: null
+    publisher: 康軒
+    raw: 康軒版 1-1~2-1
+    volume: null
+  chapter_index:
+    publisher: 康軒
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: 康軒
+questions:
+- id: doc_113_台中_大業_數學_g7s2e1_s1_1
+  section: 1
+  number: 1
+  type: tf
+  page: 1
+  stem: $2x-y=4$ 和 $x-\frac{1}{2}y=2$ 兩個二元一次方程式都有無限多組解，且他們的解都相同。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: O
+    qwen: O
+  answer:
+  - O
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s1_2
+  section: 1
+  number: 2
+  type: tf
+  page: 1
+  stem: 若 $x$、$y$ 均為正整數，則 $3x-2y=24$ 有無限多組解。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: O
+    qwen: O
+  answer:
+  - O
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s1_3
+  section: 1
+  number: 3
+  type: tf
+  page: 1
+  stem: 在化簡二元一次式 $\frac{-x+2y}{4}+\frac{-2y-x}{3}$ 的過程中，可將整個式子乘以 12，得到 $3(-x+2y)+4(-2y-x)$，最後利用分配律展開並且合併同類項後得到
+    $-7x-2y$。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: X
+    qwen: X
+  answer:
+  - X
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s1_4
+  section: 1
+  number: 4
+  type: tf
+  page: 1
+  stem: 小軒對婷婷說：「你的彈珠數量是我的 $\frac{1}{3}$。」，婷婷對小軒說：「我的彈珠數量的 5 倍比你的彈珠數量少 4 顆。」，算算看他們是否說對了？若說對了打「○」，說錯了打「×」。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: X
+    qwen: X
+  answer:
+  - X
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s1_5
+  section: 1
+  number: 5
+  type: tf
+  page: 1
+  stem: 小軒「解二元一次聯立方程式 $\begin{cases}-x-3y=-1 \cdots\cdots ① \\ 3x+2y=8 \cdots\cdots
+    ②\end{cases}$」，她利用 ①$\times 3-$② 消去 $x$，可得 $-11y=11$。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 88%）
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g7s2e1_s1_6
+  section: 1
+  number: 6
+  type: tf
+  page: 1
+  stem: 在坐標平面上，與 $x$ 軸相距 4 單位，且與 $y$ 軸相距 3 單位的點只有四個。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: O
+    qwen: O
+  answer:
+  - O
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 1
+  stem: 關於二元一次式 $3x-2y-5$ 的敘述，下列何者正確？
+  options:
+  - label: A
+    content: 有無限多組解
+  - label: B
+    content: $x$ 項的係數為 $3x$
+  - label: C
+    content: $y$ 項的係數為 2
+  - label: D
+    content: 常數項為 $-5$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s2_2
+  section: 2
+  number: 2
+  type: single
+  page: 1
+  stem: '下列哪些是二元一次方程式？
+
+    (甲) $2x-y$
+
+    (乙) $2x-y=2-y$
+
+    (丙) $3x-y=y-1$
+
+    (丁) $2x-3=0$'
+  options:
+  - label: A
+    content: 乙、丙
+  - label: B
+    content: 丙
+  - label: C
+    content: 甲、乙、丙
+  - label: D
+    content: 甲、乙、丙、丁
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: single
+  page: 1
+  stem: 當 $x=2$、$y=-3$ 時，二元一次式 $-3x-2y+5$ 的值為何？
+  options:
+  - label: A
+    content: '5'
+  - label: B
+    content: $-17$
+  - label: C
+    content: '17'
+  - label: D
+    content: $-7$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s2_4
+  section: 2
+  number: 4
+  type: single
+  page: 1
+  stem: $x=-1$，$y=3$ 是下列哪一個二元一次方程式的解？
+  options:
+  - label: A
+    content: $-3x-2y=3$
+  - label: B
+    content: $2x+y=-5$
+  - label: C
+    content: $3x=y-6$
+  - label: D
+    content: $x-y=2$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s2_5
+  section: 2
+  number: 5
+  type: single
+  page: 1
+  stem: $x=-1$，$y=0$ 不是下列哪一個二元一次聯立方程式的解？
+  options:
+  - label: A
+    content: $\begin{cases}2x-y=-2 \\ -x+y=1\end{cases}$
+  - label: B
+    content: $\begin{cases}4x+y=-4 \\ x+y=-1\end{cases}$
+  - label: C
+    content: $\begin{cases}x-y=1 \\ 4x+3y+4=0\end{cases}$
+  - label: D
+    content: $\begin{cases}-2x+y=2 \\ 3x-2y=-3\end{cases}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 74%）
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g7s2e1_s2_6
+  section: 2
+  number: 6
+  type: single
+  page: 2
+  stem: 若小金有 $x$ 元，大川有 $y$ 元，則根據下列哪一個選項的敘述可列出二元一次方程式 $x-30=4y$？
+  options:
+  - label: A
+    content: 小金的錢是大川的 4 倍多 30 元
+  - label: B
+    content: 小金的錢是大川的 4 倍少 30 元
+  - label: C
+    content: 大川的錢是小金的 4 倍多 30 元
+  - label: D
+    content: 大川的錢是小金的 4 倍少 30 元
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s2_7
+  section: 2
+  number: 7
+  type: single
+  page: 2
+  stem: '在右表的空格中填入適當的數，使配對的 $x$、$y$ 值都是二元一次方程式 $-6x+y=-1$ 的解，下列何者正確？
+
+    | $x$ | $-2$ | $b$ | $\frac{1}{2}$ | $d$ |
+
+    | :--- | :--- | :--- | :--- | :--- |
+
+    | $y$ | $a$ | $-1$ | $c$ | $8$ |'
+  options:
+  - label: A
+    content: $a=-11$
+  - label: B
+    content: $b=0$
+  - label: C
+    content: $c=-4$
+  - label: D
+    content: $d=-\frac{3}{2}$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s2_8
+  section: 2
+  number: 8
+  type: single
+  page: 2
+  stem: 已知 $A(m,n)$ 在第四象限內，則下列何者也在第四象限內？
+  options:
+  - label: A
+    content: ($n-m$, $|-m|$)
+  - label: B
+    content: ($m^{2}$, $n^{3}$)
+  - label: C
+    content: ($\frac{m}{n}$, $mn$)
+  - label: D
+    content: ($-m^{2}$, $-\frac{1}{n}$)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: A
+    gemini_high: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s2_9
+  section: 2
+  number: 9
+  type: single
+  page: 2
+  stem: 泉嘉商店的礦泉水售價分為兩種：大瓶的每箱 200 元，小瓶的每箱 120 元。若共賣出 20 箱，但結帳時店員把兩種售價看反了，結果少收 800 元。設大瓶礦泉水賣出
+    $x$ 箱，小瓶礦泉水賣出 $y$ 箱，則下列何者為符合題意的二元一次聯立方程式？
+  options:
+  - label: A
+    content: $\begin{cases}x-y=20 \\ 200x+100y=800\end{cases}$
+  - label: B
+    content: $\begin{cases}x-y=20 \\ 200x+120y-800=120x+200y\end{cases}$
+  - label: C
+    content: $\begin{cases}x+y=20 \\ 200x+120y+800=120x+200y\end{cases}$
+  - label: D
+    content: $\begin{cases}x+y=20 \\ 200x+120y-800=120x+200y\end{cases}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 85%）
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g7s2e1_s2_10
+  section: 2
+  number: 10
+  type: single
+  page: 2
+  stem: 運動會時，班上一起買了 3 箱運動飲料，每箱的數量相同。如果每個學生先發 1 瓶，還剩下 1 箱又 6 瓶，但如果每人再多發 1 瓶，則會不夠 8
+    瓶，班上有 $a$ 位學生，每箱運動飲料有 $b$ 瓶，則 $a+b=$？
+  options:
+  - label: A
+    content: '54'
+  - label: B
+    content: '42'
+  - label: C
+    content: '34'
+  - label: D
+    content: '30'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 化簡 $(-5y+3x-1)-(-2x-y+7)=$_________________。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: 5x-4y-8
+    qwen: 5x-4y-8
+  answer:
+  - 5x-4y-8
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 化簡 $-3(x-2y)-2(-2x+5y-3)=$_________________。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: x-4y+6
+    qwen: x-y+6
+    gemini_high: x-4y+6
+  answer:
+  - x-4y+6
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 坐標平面上有一點 P，若從 P 點出發，先向上 2 單位，再向左 6 單位，最後到達 $Q(-3,-2)$，則 P 點的坐標為__________。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: (3,-4)
+    qwen: (3, 0)
+    gemini_high: (3,-4)
+  answer:
+  - (3,-4)
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 已知二元一次方程式 $3x-2ay=-91$ 的解為 $x=a$、$y=-2$，則 $a=$_____。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '-13'
+    qwen: '-3'
+    gemini_high: '-13'
+  answer:
+  - '-13'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: '坐標平面上有四個點 $A(-4,0)$、$B(3,-5)$、$C(-2,2)$、$D(0,-5)$，
+
+    (甲) A 點在 $x$ 軸上
+
+    (乙) B 點在第二象限
+
+    (丙) C 點到 $x$ 軸距離與到 $y$ 軸的距離一樣
+
+    (丁) D 點到 $y$ 軸的距離為 5。以上敘述正確的有______________(請填代號，全對才給分)。'
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 甲、丙
+    qwen: 甲、丁
+    gemini_high: 甲、丙
+  answer:
+  - 甲、丙
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 已知 $P(\frac{b}{a}, a-b)$ 在第二象限內，則 $Q(-ab, b)$ 在第_____象限內。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 四
+    qwen: 四
+  answer:
+  - 四
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g7s2e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 坐標平面上有兩個點 $A(3a+1, b-3)$、$B(b+2, 2a+2)$，若 A 點向左 2 單位，再向上 3 單位後，A、B 兩點會重合，則
+    $a+b=$________。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: '17'
+    qwen: '-1'
+    gemini_high: '17'
+  answer:
+  - '17'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 有一條繩子可圍成一個正三角形，也可圍成一個正方形，如果正三角形的邊長比正方形邊長的 3 倍少 5 公分，則繩長為_______公分。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '12'
+    qwen: '36'
+    gemini_high: '12'
+  answer:
+  - '12'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 小惠在臺南旅遊時買了 4 個相同的紀念品，且單價不到 100 元，以為付給老闆的錢剛好，結果老闆發現小惠把標價上的十位數字與個位數字看反了，所以退還給小惠
+    72 元。若其十位數字與個位數字的和為 14，那麼一個紀念品原來的單價為_______元。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '68'
+    qwen: '86'
+    gemini_high: '68'
+  answer:
+  - '68'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 小業國中一年十九班學生，分食 8 個蛋糕，若男生每 3 人分食 1 個，女生每 5 人分食 1 個，剛好分完；若男生每 5 人分食 1 個，女生每
+    3 人分食 1 個，也剛好分完，則一年十九班學生共_____人。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '30'
+    qwen: '48'
+    gemini_high: '30'
+  answer:
+  - '30'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 3
+  stem: 軒睿某天搭公車去上班，下車時發現手機遺落在公車上，於是他招攬一輛計程車去追趕公車，計程車司機說：「若以時速 60 公里追，只需 6 分鐘就可以追到；若以時速
+    50 公里追，則需花 10 分鐘才可以追到。」假設公車時速固定，則公車的時速為每小時______公里。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '35'
+    qwen: '45'
+    gemini_high: '35'
+  answer:
+  - '35'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g7s2e1_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 4
+  stem: 坐標平面上有 A、B、C、D 四點，寫出它們的坐標。(4 分)(此題不需計算過程)
+  assets:
+  - key: s4_1_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g7s2e1/s4_1_f1.png
+    crop:
+      page: 4
+      rect:
+      - 62.27
+      - 120.83
+      - 296.04
+      - 366.11
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g7s2e1_s4_2
+  section: 4
+  number: 2
+  type: calc
+  page: 4
+  stem: 利用代入消去法，求二元一次聯立方程式 $\begin{cases}2x=5y-4 \\ 6x=7y+12\end{cases}$ 的解。(3 分)
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 86%）
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g7s2e1_s4_3
+  section: 4
+  number: 3
+  type: calc
+  page: 4
+  stem: 已知家鄉早餐店的蛋餅 9 份和奶茶 6 杯共要 360 元，若老師買了蛋餅 6 份和奶茶 4 杯付了 300 元，則可找回多少元？(4 分)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g7s2e1_s4_4
+  section: 4
+  number: 4
+  type: calc
+  page: 4
+  stem: '若 $x$、$y$ 的兩個二元一次聯立方程式 $\begin{cases}2x+3y=8 \\ 5x-ay=1\end{cases}$ 與 $\begin{cases}-x+by=4
+    \\ 3x-5y=-7\end{cases}$ 有相同的解，求：
+
+    (1)$x+y$ 的值？(2 分)
+
+    (2)$a$、$b$ 的值？(2 分)'
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 84%）
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai

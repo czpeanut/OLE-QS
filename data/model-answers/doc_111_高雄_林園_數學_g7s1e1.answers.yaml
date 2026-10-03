@@ -1,0 +1,35 @@
+source: data/bank/doc_111_高雄_林園_數學_g7s1e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_高雄_林園_數學_g7s1e1_s4_1
+  number: 1
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A在-2與-3之間將單位長3等分的第2個等分點(-2\frac{2}{3})
+      - B在3與4之間將單位長4等分的第1個等分點(3.25)
+      - C在0與-1的中點(-0.5)
+      reasoning: 將各數化為帶分數或小數：A點位於-2與-3之間向左2/3單位處；B點為3又1/4，位於3與4之間向右1/4單位處；C點為-1/2，位於0與-1的正中間。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_高雄_林園_數學_g7s1e1_s4_2
+  number: 2
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '70'
+      reasoning: 先計算中括號內：35 - (-4) × (-5) = 35 - 20 = 15。接著依四則運算先乘除後加減：35 - 7 × 15
+        ÷ (-3) = 35 - (-35) = 70。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

@@ -1,0 +1,35 @@
+source: data/bank/doc_112_高雄_林園_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_112_高雄_林園_數學_g7s2e3_s3_1
+  number: 1
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) x ≤ -5/2
+      - (2) x > -4
+      reasoning: (1) 移項得 4x ≤ -10，解得 x ≤ -5/2。(2) 分子化簡後為 (8-x)/4 > (1-2x)/3，同乘 12
+        得 3(8-x) > 4(1-2x)，展開整理得 5x > -20，解得 x > -4。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_112_高雄_林園_數學_g7s2e3_s3_2
+  number: 2
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 蘋果84顆，梨子105顆
+      reasoning: 設蘋果有 x 顆、梨子有 y 顆，依題意列出聯立方程式 5x = 4y 與 y - x = 21。解得 x = 84、y = 105，故蘋果有
+        84 顆、梨子有 105 顆。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

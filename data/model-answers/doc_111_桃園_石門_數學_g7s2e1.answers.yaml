@@ -1,0 +1,300 @@
+source: data/bank/doc_111_桃園_石門_數學_g7s2e1.yaml
+providers:
+- gemini
+answers:
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少標示黃金魚蛋位置的坐標平面圖或題幹描述
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供黃金魚蛋所在的坐標平面圖或相關題幹情境描述，無法判斷其坐標。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少標示黃金魚蛋位置的坐標平面圖或題幹描述
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_2
+  number: 2
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺乏起點「套圈圈」的坐標或對應的平面坐標圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供起點「套圈圈」的坐標或相關附圖，無法計算到達點的坐標。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺乏起點「套圈圈」的坐標或對應的平面坐標圖
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_3
+  number: 3
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：美食景點的直角坐標系圖或各景點的坐標資料
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供美食景點的坐標或平面圖，無法判斷景點所在的象限分布。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 美食景點的直角坐標系圖或各景點的坐標資料
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_4
+  number: 4
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：第3題的題目內容與相關景點坐標或圖表資訊
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及「承第3題」，缺少第3題的前文內容、坐標平面圖或景點位置相關數據，無法得知所指象限及景點數量。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 第3題的題目內容與相關景點坐標或圖表資訊
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_5
+  number: 5
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 點到 x 軸的距離為 y 座標的絕對值。選項中各點到 x 軸的距離分別為 (A) 1、(B) 3、(C) 4、(D) 2，因此 (A)
+        最近。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_6
+  number: 6
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 點 P 的 x 坐標為負數（-7），y 坐標為正數（5），因此該點位於第二象限。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_7
+  number: 7
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 將 x=3, y=2 代入各選項檢驗：在 (C) 中，2(3)-2=4 且 3(3)+4(2)=17，兩式皆成立。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_8
+  number: 8
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 將括號展開得 3x - 15y - 4x + 2，合併同類項後得到 -x - 15y + 2。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_9
+  number: 9
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 將兩式相加得 2x = 4，解得 x = 2；將 x = 2 代入第一式得 y = -3，故解為 x = 2, y = -3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_11
+  number: 11
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 由2x + 3y = 21可知2x = 3(7 - y)，因為x, y為正整數，y必須為小於7的奇數，即y = 1, 3, 5，對應的x分別為9,
+        6, 3，共有3組正整數解。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_12
+  number: 12
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 將 x = 3, y = -2 代入方程式 mx + 6y = 3，得 3m + 6(-2) = 3，解得 3m - 12 = 3，3m
+        = 15，因此 m = 5。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_13
+  number: 13
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 點A(a, -3)向右移動2個單位後x坐標為a+2，向下移動4個單位後y坐標為-3-4=-7。由B(1, b)可得a+2=1即a=-1，b=-7，因此(B)正確。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_14
+  number: 14
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - D
+      reasoning: 設50元硬幣有 x 個，10元硬幣有 (50 - x) 個。依題意列式為 50x + 10(50 - x) = 1460，解得 40x
+        = 960，即 x = 24。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_15
+  number: 15
+  type: single
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 因為 a < 0，所以 a^2 > 0，x 座標 -a^2 < 0；又 b > 0 且 a < 0，所以 y 座標 b - a >
+        0。點 (-a^2, b - a) 的符號為 (負, 正)，位於第二象限。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_16
+  number: 16
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少題幹前文（包含明蝦與台灣鯛的每斤原價、總購買重量及總花費金額等資訊）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺少題組的背景前文，無法得知明蝦與台灣鯛的原價、廖媽媽購買的總重量以及總金額等數據。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 缺少題幹前文（包含明蝦與台灣鯛的每斤原價、總購買重量及總花費金額等資訊）
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_17
+  number: 17
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：題幹情境前文（包含廖媽媽購買台灣鯛與明蝦的價格、數量或條件敘述）
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目缺少題組情境與廖媽媽購買台灣鯛與明蝦的相關條件（如單價、總金額或數量關係等前文），無法直接計算。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 題幹情境前文（包含廖媽媽購買台灣鯛與明蝦的價格、數量或條件敘述）
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_18
+  number: 18
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：缺少明蝦的單價、重量計價方式或原本14隻明蝦的花費等前文背景資訊。
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目未提供明蝦的單價或原本14隻明蝦的價格等必要數據，無法計算購買6隻明蝦所需付的金額。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 缺少明蝦的單價、重量計價方式或原本14隻明蝦的花費等前文背景資訊。
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_19
+  number: 19
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 設球鞋定價為 x 元，媽媽身上的錢為 0.8x - 180 元。依題意花光所有的錢買到七五折球鞋，列式為 0.8x - 180 =
+        0.75x，解得 0.05x = 180，故 x = 3600。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_20
+  number: 20
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - C
+      reasoning: 設阿美買了 x 枝螢光筆、阿玲買了 y 枝螢光筆，依題意列式為 24x + 18(10 - x) = 24y + 18(11 -
+        y)，化簡得 6x + 180 = 6y + 198，解得 x - y = 3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_21
+  number: 21
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - A
+      reasoning: 設年齡差為 d，根據題意可列出學生過去年齡 (現齡-d) = 3，老師未來年齡 (現齡+d) = 57，兩者相差 3d = 57
+        - 3 = 54，解得 d = 18。因此學生現年 3 + 18 = 21 歲，老師現年 21 + 18 = 39 歲。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_111_桃園_石門_數學_g7s2e1_s1_22
+  number: 22
+  type: single
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - B
+      reasoning: 設四個小孩年齡由大到小為 a、b、c、d，每三人年齡和最大為 a+b+c=81，最小為 b+c+d=66。兩式相減可得老大與老么年齡差
+        a-d = 81-66 = 15歲。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''

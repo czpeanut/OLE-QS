@@ -1,0 +1,240 @@
+source: data/bank/doc_113_台中_居仁_數學_g7s2e3.yaml
+providers:
+- gemini
+answers:
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_1
+  number: 1
+  type: single
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：各選項對應的數線圖形
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目詢問不等式與圖形是否相符，但題幹中缺乏各選項對應的數線圖（包含圓圈實心/空心及射線方向），無法進行比對判斷。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 各選項對應的數線圖形
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_4
+  number: 4
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-3'
+      reasoning: 將10筆資料由小到大排列為3, 5, 5, 5, 7, 9, 11, 12, 12, 29。出現次數最多的是5，得眾數a = 5；中位數b為第5與第6項的平均(7
+        + 9) / 2 = 8。因此a - b = 5 - 8 = -3。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_5
+  number: 5
+  type: fill
+  images_sent: 0
+  status: missing_context
+  note: gemini 回報缺少素材：居仁國中各社團人數的圓形圖
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目提及圓形圖但未提供圖形內容，無法得知電腦社或其他相關社團的度數或人數比例。
+      confidence: 1.0
+      missing_context: true
+      missing_what: 居仁國中各社團人數的圓形圖
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_6
+  number: 6
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (6,3)
+      reasoning: 中垂線為垂直線 x = 1，故線段兩端點 y 坐標相同為 3。由中點 x 坐標公式可知 (-4 + x)/2 = 1，解得 x =
+        6，故 O 點坐標為 (6, 3)。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_7
+  number: 7
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - x < 5
+      - x \ge -\frac{5}{2}
+      - x > 3
+      reasoning: (1) 5x - 7 < 3x + 3 移項得 2x < 10，解得 x < 5；(2) 3x + 18 ≤ 7x + 28 移項得
+        -4x ≤ 10，解得 x ≥ -5/2；(3) 同乘 6 得 3(x - 1) - 4x < -6，化簡 -x - 3 < -6 得 x > 3。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_8
+  number: 8
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '-1'
+      reasoning: 將不等式兩邊同乘以15得 3(3x+4) - 15 < 5(-x-2)，化簡得 9x - 3 < -5x - 10，移項解得 14x
+        < -7，即 x < -1/2。小於 -1/2 的最大整數為 -1。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_9
+  number: 9
+  type: fill
+  images_sent: 4
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '12'
+      reasoning: 不考慮顏色下：圖形A（含卍字紋）為0條；圖形B（8個尖角的星形同心圓）有8條；圖形C（上下左右對稱的織紋）有2條；圖形D（圓形內含十字排列圖樣）有水平與鉛直共2條。四個圖形對稱軸總數為
+        0 + 8 + 2 + 2 = 12 條。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_10
+  number: 10
+  type: fill
+  images_sent: 2
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - b＝d＜c＜a
+      reasoning: 甲隊眾數a＝9，總人數60人，第30、31人分別為6、7球，故中位數c＝6.5；乙隊眾數b＝6，總人數55人，第28人為6球，故中位數d＝6。由小到大排列為b＝d＜c＜a。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_12
+  number: 12
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '8'
+      reasoning: 其餘已知組別人數總和為 2 + 8 + 9 + 4 + 5 = 28 人，占全班的 100% - (20% + 10%) = 70%，因此全班人數為
+        28 ÷ 0.7 = 40 人。45~50公斤的人數為 40 × 20% = 8 人。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_13
+  number: 13
+  type: fill
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1,3)
+      reasoning: 以左上到右下的對角線為對稱軸時，(2,2)在對稱軸上，(4,3)與(3,4)互為對稱點，因此只需再將(3,1)的對稱點(1,3)塗黑即可構成線對稱圖形。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_14
+  number: 14
+  type: fill
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - '18.75'
+      reasoning: 由甲組資料總和可得 X + Y = 96 - 60 = 36。乙組資料總和為 3(X + Y) + 42 = 3(36) + 42
+        = 150，共8個數，平均數為 150 / 8 = 18.75（或 75/4）。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s1_15
+  number: 15
+  type: fill
+  images_sent: 2
+  status: missing_context
+  note: gemini 回報缺少素材：完整題目問句與相關條件
+  by_model:
+    gemini:
+      answer: []
+      reasoning: 題目僅提供情境前言，未給出具體問句與求解目標，且附圖與題幹文字不相符，資訊不完整無法作答。
+      confidence: 0.0
+      missing_context: true
+      missing_what: 完整題目問句與相關條件
+- id: doc_113_台中_居仁_數學_g7s2e3_s3_1
+  number: 1
+  type: calc
+  images_sent: 1
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 以對稱軸L為基準，向右取對應各頂點（距離L分別為1格、5格、7格之對稱點）並以直尺依序連線成三角形
+      reasoning: 三角形的三個頂點距離對稱軸 L 分別為 1 格、5 格、7 格，在對稱軸右側相同水平位置取距離 1 格、5 格、7 格的對應點，並以直尺連接三點即可得到線對稱圖形。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s3_2
+  number: 2
+  type: calc
+  images_sent: 3
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - (1) 上視圖：第一列（後）三格皆塗黑，第二列（中）與第三列（前）均塗黑中、右兩格；右視圖：由左至右（前至後）高度分別為1、2、3層
+      - (2) 甲
+      reasoning: 原圖高度分布為：後排(3,1,3)、中排(0,1,2)、前排(0,1,1)。拿走甲後，(3,3)處仍有2層積木，故上視圖不變；且後排因左柱仍有3層高，右視圖後排最高仍為3，故右視圖亦不變。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s3_3
+  number: 3
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 40公里
+      - 至少36元
+      reasoning: 三次總行駛里程為201.8+198.1+200.1=600公里，總耗油15公升，平均每公升可跑40公里；單趟17公里需耗油17/40公升，搭公車較划算即(17/40)x
+        > 15，得x > 35.29，因油價為整數，故油價至少需為36元。
+      confidence: 1.0
+      missing_context: false
+      missing_what: ''
+- id: doc_113_台中_居仁_數學_g7s2e3_s3_4
+  number: 4
+  type: calc
+  images_sent: 0
+  status: single_source
+  note: 只有一個模型成功作答，無法交叉驗證
+  by_model:
+    gemini:
+      answer:
+      - 30a+18
+      - '120'
+      reasoning: 新生人數為 30a+18 人。改每班 33 人時，最後一班人數為 (30a+18)-33(a-1) = 51-3a，由題意 16.5
+        < 51-3a < 33 可得 6 < a < 11.5，故班級數 a 最大為 11、最小為 7，新生最多與最少相差 30×(11-7) = 120
+        人。
+      confidence: 0.95
+      missing_context: false
+      missing_what: ''

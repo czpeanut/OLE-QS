@@ -1,0 +1,652 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 新北
+  school_short: 丹鳳
+  school: 新北市立丹鳳高中國中部
+  id: doc_113_新北_丹鳳_數學_g7s1e1
+  title: 新北市立丹鳳高中國中部 113學年度第1學期第1次定期評量 7年級數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: '一、選擇基礎題： 20% (共5 題，每題4 分)
+
+      (注意：只有兩個選項，選出敘述正確的選項)'
+    count: 5
+  - ord: 2
+    name: 二、選擇題：20% (共5 題，每題4 分)
+    count: 5
+  - ord: 3
+    name: 三、填充題：60% (共15 題，每題4 分) (全對才給分)
+    count: 15
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-1/新北/丹鳳.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 已知 a 與 b 互為相反數，則：
+  options:
+  - label: A
+    content: $\mid a\mid +\mid b\mid =0$
+  - label: B
+    content: $\mid a\mid =\mid b\mid$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 數線上有 $A(3)$、$B(-13)$ 兩點，若 $C(c)$ 為 $A$、$B$ 的中點，則 $c$ 是：
+  options:
+  - label: A
+    content: '16'
+  - label: B
+    content: $-5$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 以中午 12 點為基準，若下午 5 時以「$+5$」表示，則上午 8 時以下列何者表示最恰當？
+  options:
+  - label: A
+    content: $-4$
+  - label: B
+    content: $-8$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 選出敘述正確的選項：
+  options:
+  - label: A
+    content: 5 個 7 相乘$=7^{5}$。
+  - label: B
+    content: 10 個 5 相加$=5^{10}$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 將 $3.125\times 10^{-17}$ 乘開後，小數點後共有幾個 0 ?
+  options:
+  - label: A
+    content: '17'
+  - label: B
+    content: 16。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s2_6
+  section: 2
+  number: 6
+  type: single
+  page: 1
+  stem: 下列敘述，何者錯誤：
+  options:
+  - label: A
+    content: 整數包含正整數、負整數與 0。
+  - label: B
+    content: 數線要包含原點、正向與單位長。
+  - label: C
+    content: 最小的正數是 1，最大的負數是 $-1$。
+  - label: D
+    content: 在數線上任取兩點，左邊的點所表示的數較小。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s2_7
+  section: 2
+  number: 7
+  type: single
+  page: 1
+  stem: 滿足｜甲｜$<5.4$ 的整數甲共有幾個？
+  options:
+  - label: A
+    content: 8 個
+  - label: B
+    content: 9 個
+  - label: C
+    content: 10 個
+  - label: D
+    content: 11 個。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s2_8
+  section: 2
+  number: 8
+  type: single
+  page: 1
+  stem: 已知數線上有 $A(8)$、$B(-13)$、$C(-4)$ 三點，則 $\overline{AB}+\overline{BC}+\overline{CA}=$
+  options:
+  - label: A
+    content: '38'
+  - label: B
+    content: '40'
+  - label: C
+    content: '42'
+  - label: D
+    content: 44。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s2_9
+  section: 2
+  number: 9
+  type: single
+  page: 1
+  stem: 下列選項，何者錯誤：
+  options:
+  - label: A
+    content: $(-5)\times (-5)\times (-5)\times (-5)=-5^{4}$。
+  - label: B
+    content: $(-3)\times (-3)\times (-3)\times (-3)\times (-3)=-3^{5}$。
+  - label: C
+    content: $(-7)\times (-7)\times (-7)\times (-7)=7^{4}$。
+  - label: D
+    content: $-(9\times 9\times 9\times 9)$ 記為 $-9^{4}$。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s2_10
+  section: 2
+  number: 10
+  type: single
+  page: 1
+  stem: 某次考試題目共有 25 題，答對一題得 4 分，答錯一題倒扣 2 分，不作答則沒得分，也不扣分。已知小翊在這次考試中答對了 19 題、2 題未作答、其餘都答錯，試問小翊在這次考試中可得：
+  options:
+  - label: A
+    content: '76'
+  - label: B
+    content: '72'
+  - label: C
+    content: '70'
+  - label: D
+    content: 68 分。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 1
+  stem: 在數線上將 $-2$ 與 $-3$ 兩點間的部分分成 5 等分後，得 4 個等分點，那麼由左起向右數第 2 個等分點所表示的數值是：____⑪____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: -\frac{13}{5}
+    qwen: -\frac{13}{5}
+  answer:
+  - -\frac{13}{5}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 1
+  stem: '已知 $A=|-5|$ 的相反數，$B=-(-3)$ 的相反數，$C=18$ 的相反數，$D=-|-15|$。
+
+    計算：$A-B+C-D$ 的值為____⑫____。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '-5'
+    qwen: '-5'
+  answer:
+  - '-5'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_13
+  section: 3
+  number: 13
+  type: fill
+  page: 1
+  stem: 計算 $326+765+(-826)+(-465)=$____⑬____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: '-200'
+    qwen: '-200'
+  answer:
+  - '-200'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_14
+  section: 3
+  number: 14
+  type: fill
+  page: 1
+  stem: 計算 $15-|(-23)-(-17)|+(-21)=$____⑭____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '-12'
+    qwen: '-12'
+  answer:
+  - '-12'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_15
+  section: 3
+  number: 15
+  type: fill
+  page: 1
+  stem: 數線上有 $A(3)$、$B(7)$、$C(12)$、$D(d)$ 四點，如果 $\overline{AB}=\overline{CD}$，則 $d$
+    可能是____⑮____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: 8 或 16
+    qwen: 8;16
+    gemini_high: 8 或 16
+  answer:
+  - 8 或 16
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_16
+  section: 3
+  number: 16
+  type: fill
+  page: 1
+  stem: 計算 $(-456)\times 1608+(-456)\times 421+(-456)\times (-29)=$____⑯____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '-912000'
+    qwen: '-912000'
+  answer:
+  - '-912000'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_17
+  section: 3
+  number: 17
+  type: fill
+  page: 1
+  stem: 計算 $58-18\times (-6)-(-90)\div (-5)=$____⑰____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '148'
+    qwen: '148'
+  answer:
+  - '148'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_18
+  section: 3
+  number: 18
+  type: fill
+  page: 1
+  stem: 計算 $246\times (-1003)=$____⑱____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '-246738'
+    qwen: '-246738'
+  answer:
+  - '-246738'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_19
+  section: 3
+  number: 19
+  type: fill
+  page: 1
+  stem: '已知 $6\times 7\times 8\times 9\times 10=30240$，
+
+    計算 $(-5)\times (-6)\times (-7)\times (-8)\times (-9)=$____⑲____。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '-15120'
+    qwen: '-15120'
+  answer:
+  - '-15120'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_20
+  section: 3
+  number: 20
+  type: fill
+  page: 1
+  stem: 數線上若數線上代表 a 的點與原點的距離是 13，則 $|a-12|=$____⑳____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: 1 或 25
+    qwen: 1;25
+    gemini_high: 1 或 25
+  answer:
+  - 1 或 25
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_21
+  section: 3
+  number: 21
+  type: fill
+  page: 1
+  stem: 計算 $(-1)^{2}+(-1)^{3}+(-1^{4})+(-1^{5})=$____㉑____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: '-2'
+    qwen: '-2'
+  answer:
+  - '-2'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_22
+  section: 3
+  number: 22
+  type: fill
+  page: 1
+  stem: 以科學記號表示 $3210000000=$____㉒____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: 3.21\times 10^{9}
+    qwen: 3.21\times 10^{9}
+  answer:
+  - 3.21\times 10^{9}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_23
+  section: 3
+  number: 23
+  type: fill
+  page: 1
+  stem: 某次樂透彩頭彩中獎機率約為二百萬分之一，以科學記號表示二百萬分之一＝____㉓____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: 5\times 10^{-7}
+    qwen: 5\times 10^{-7}
+  answer:
+  - 5\times 10^{-7}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_24
+  section: 3
+  number: 24
+  type: fill
+  page: 1
+  stem: 已知 $A=7.1\times 10^{-4}$、$B=9.6\times 10^{-5}$、$C=3.22\times 10^{-3}$、$D=6.08\times
+    10^{-4}$，請將 A、B、C、D 由大到小排列：____㉔____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: C>A>D>B
+    qwen: C>A>D>B
+  answer:
+  - C>A>D>B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_丹鳳_數學_g7s1e1_s3_25
+  section: 3
+  number: 25
+  type: fill
+  page: 1
+  stem: '最先提出人類有可能在奈米層級做各種應用的，是 1965 年諾貝爾物理獎得主費曼。1 奈米就是 0.000000001 公尺，原子的平均直徑約 0.2
+    奈米，則 0.2 奈米可用科學記號表示為____㉕____公尺。
+
+    (以科學記號表示)。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: 2\times 10^{-10}
+    qwen: 2\times 10^{-10}
+  answer:
+  - 2\times 10^{-10}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen

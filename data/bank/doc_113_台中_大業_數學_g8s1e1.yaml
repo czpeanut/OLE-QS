@@ -1,0 +1,657 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 大業
+  school: 臺中市大業國中
+  scope_note: 【康軒版 第三冊 1-1~2-1】
+  id: doc_113_台中_大業_數學_g8s1e1
+  title: 臺中市大業國中 113學年度第1學期第1次定期評量 8年級數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題
+    count: 10
+  - ord: 2
+    name: 二、填充題
+    count: 9
+  - ord: 3
+    name: 三、計算思考題
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/1-1/台中/大業.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: null
+    - number: 2-1
+      title: null
+    publisher: 康軒版
+    raw: 【康軒版 第三冊 1-1~2-1】
+    volume: 第三冊
+  chapter_index:
+    publisher: 康軒
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: 康軒
+questions:
+- id: doc_113_台中_大業_數學_g8s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 已知$A$為$x$的四次多項式，$B$為$x$的四次多項式，則$2A-3B$不可能為$x$的幾次多項式？
+  options:
+  - label: A
+    content: 五次
+  - label: B
+    content: 四次
+  - label: C
+    content: 三次
+  - label: D
+    content: 二次
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式與其加減運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式與其加減運算
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_113_台中_大業_數學_g8s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列何者敘述正確？
+  options:
+  - label: A
+    content: 9的平方根為3
+  - label: B
+    content: 若$a$為某數，$\sqrt{(a-3)^{2}}=a-3$
+  - label: C
+    content: $\sqrt{16}$的平方根為$\pm 2$
+  - label: D
+    content: $\sqrt{0.9}=0.3$
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根與近似值
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根與近似值
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_113_台中_大業_數學_g8s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 若$\sqrt{7x}$的值為整數，則下列哪一個數不可能為$x$的值？
+  options:
+  - label: A
+    content: $7^{5}$
+  - label: B
+    content: $7^{3}$
+  - label: C
+    content: $7^{1}$
+  - label: D
+    content: $7^{0}$
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根與近似值
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根與近似值
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_113_台中_大業_數學_g8s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 若多項式$A$除以多項式$B$得商式為$Q$，餘式為$R$，其中$R\neq 0$，則下列敘述何者恆正確？
+  options:
+  - label: A
+    content: $Q$的次數小於$B$的次數
+  - label: B
+    content: $R$的次數小於$B$的次數
+  - label: C
+    content: $A$的次數大於$B$的次數
+  - label: D
+    content: $B$的次數等於$Q$的次數
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除運算
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_113_台中_大業_數學_g8s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 已知二個單項式$2024x^{n+7}$和$10x^{2m+3}$是同類項，則$(n-2m)^{2}$的值為何？
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '9'
+  - label: C
+    content: '16'
+  - label: D
+    content: '25'
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式與其加減運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式與其加減運算
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_113_台中_大業_數學_g8s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 若$b$為整數，$b<-\sqrt{\frac{49}{2}}<b+1$，則$b$的值為何？
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '5'
+  - label: C
+    content: '-4'
+  - label: D
+    content: '-5'
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根與近似值
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根與近似值
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_113_台中_大業_數學_g8s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 求$\sqrt{3^{6}}-\sqrt{(-3)^{4}}+\sqrt{2025}-\sqrt{289}$之值為何？
+  options:
+  - label: A
+    content: '46'
+  - label: B
+    content: '52'
+  - label: C
+    content: '58'
+  - label: D
+    content: '64'
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根與近似值
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根與近似值
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_113_台中_大業_數學_g8s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 若三數$x=\sqrt{10}-\sqrt{24}$，$y=\sqrt{15}-\sqrt{16}$，$z=\sqrt{12}-\sqrt{20}$，比較三者的大小關係？
+  options:
+  - label: A
+    content: $x>z>y$
+  - label: B
+    content: $y>z>x$
+  - label: C
+    content: $y>x>z$
+  - label: D
+    content: $z>x>y$
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根與近似值
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根與近似值
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_113_台中_大業_數學_g8s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 滿足$\sqrt{2024}<k\leq 99$的整數$k$共有多少個？
+  options:
+  - label: A
+    content: '53'
+  - label: B
+    content: '54'
+  - label: C
+    content: '55'
+  - label: D
+    content: '56'
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根與近似值
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根與近似值
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_113_台中_大業_數學_g8s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 若$2024\times \frac{2024}{2025}=x+\frac{1}{2025}$，則$x=$？
+  options:
+  - label: A
+    content: '2022'
+  - label: B
+    content: '2023'
+  - label: C
+    content: '2024'
+  - label: D
+    content: '2025'
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_113_台中_大業_數學_g8s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '下列(甲)~(癸)屬於$x$的多項式的有_____(A)_____個，屬於常數多項式的有_____(B)_____個。(填入數字)
+
+    (甲) 0
+
+    (乙) $2024+\frac{1}{3}x^{2}$
+
+    (丙) $\frac{x}{5}+x^{2}-x^{5}$
+
+    (丁) $\sqrt{3x}+x$
+
+    (戊) $\frac{-7}{2x}$
+
+    (己) $x^{2}+7-x^{2}$
+
+    (庚) $\sqrt{101x^{2}+9}$
+
+    (辛) -9
+
+    (壬) $x+9=0$
+
+    (癸) $|-3|x+x^{2}$'
+  answer:
+  - '7'
+  - '2'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式與其加減運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式與其加減運算
+    labeled_by: ai
+  ai_answers:
+    gemini: 6；3
+    qwen: 6;3
+    gemini_high: 6；3
+- id: doc_113_台中_大業_數學_g8s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: '計算下列多項式的四則運算，並將答案以降冪排列：
+
+    (1) $(x^{2}+7x-4)-(x^{3}-x^{2}+1)=$_____(C)_____。
+
+    (2) $2(-2x+x^{2}+1)+3(x^{2}-x-7)=$_____(D)_____。
+
+    (3) $-8x(9-\frac{3}{2}x)=$_____(E)_____。
+
+    (4) $(x^{2}+2x+1)(x^{2}-2x+1)=$_____(F)_____。
+
+    (5) $(x+1)(x-2)-(x+2)(x-1)=$_____(G)_____。
+
+    (6) $(4x^{3}-7x^{2}+8x)\div (4x)=$_____(H)_____。'
+  answer:
+  - -x^{3}+2x^{2}+7x-5
+  - 5x^{2}-7x-19
+  - 12x^{2}-72x
+  - x^{4}-2x^{2}+1
+  - -2x
+  - x^{2}-\frac{7}{4}x+2
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式與其加減運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式與其加減運算
+    labeled_by: ai
+  ai_answers:
+    gemini: -x^{3}+2x^{2}+7x-5；5x^{2}-7x-19；12x^{2}-72x；x^{4}-2x^{2}+1；-2x；x^{2}-\frac{7}{4}x+2
+    qwen: -x^{3}+2x^{2}+7x-5;5x^{2}-7x-19;12x^{2}-72x;x^{4}-2x^{2}+1;-2x;x^{2}-\frac{7}{4}x+2
+    gemini_high: $-x^{3}+2x^{2}+7x-5$；$5x^{2}-7x-19$；$12x^{2}-72x$；$x^{4}-2x^{2}+1$；$-2x$；$x^{2}-\frac{7}{4}x+2$
+- id: doc_113_台中_大業_數學_g8s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 若$A$為五次多項式，$B$為三次多項式，$A\times B$最多有$m$項，$A-B$最少有$n$項，則$m-n=$_____(I)_____。
+  answer:
+  - '8'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '8'
+    qwen: '8'
+- id: doc_113_台中_大業_數學_g8s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: $(1-2x^{2}+3x)(-5x^{5}+4x^{3}-3x^{2}+2x-1)$五次項的係數為$a$，則$a=$_____(J)_____。
+  answer:
+  - '-13'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '-13'
+    qwen: '-13'
+- id: doc_113_台中_大業_數學_g8s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '利用乘法公式，完成下列計算：
+
+    (1) $300.1^{2}=$_____(K)_____。
+
+    (2) $(-2x+9y)^{2}=$_____(L)_____。
+
+    (3) $\frac{238^{2}-2\times 239\times 38+38^{2}}{199^{2}+398+1}=$_____(M)_____。'
+  answer:
+  - '90060.01'
+  - 4x^{2}-36xy+81y^{2}
+  - \frac{9981}{10000} (或 9981/10000)
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: 90060.01；4x^{2}-36xy+81y^{2}；\frac{9981}{10000}
+    qwen: 90060.01;4x^{2}-36xy+81y^{2};1
+    gemini_high: $90060.01$；$4x^{2}-36xy+81y^{2}$；$\frac{9981}{10000}$
+- id: doc_113_台中_大業_數學_g8s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 某梯形的上底為$x-3$、下底為$3x+1$、面積為$2x^{2}+5x-3$，試以$x$的多項式表示此梯形的高為_____(N)_____。
+  answer:
+  - x+3
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除運算
+    labeled_by: ai
+  ai_answers:
+    gemini: x+3
+    qwen: x+3
+- id: doc_113_台中_大業_數學_g8s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 若$(7-3x^{2}+7x)\div (x^{2}+1)$得商式$q$，餘式$r$，計算$q+2r=$_____(O)_____。
+  answer:
+  - 14x+17
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除運算
+    labeled_by: ai
+  ai_answers:
+    gemini: 14x+17
+    qwen: 14x+17
+- id: doc_113_台中_大業_數學_g8s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知$4x^{3}-4x^{2}+11x+11$除以多項式$A$的商式為$2x^{2}-3x+7$，餘式為4，求此多項式為_____(P)_____。
+  answer:
+  - 2x+1
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除運算
+    labeled_by: ai
+  ai_answers:
+    gemini: 2x+1
+    qwen: 2x+1
+- id: doc_113_台中_大業_數學_g8s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 如下圖，多項式除法中有六個未知數，分別以$a$、$b$、$c$、$d$、$e$、$f$表示，計算$a+b+c+d+e+f=$_____(Q)_____。
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e1/s2_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 65.22
+      - 306.63
+      - 193.45
+      - 417.83
+  answer:
+  - '33'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '33'
+    qwen: '33'
+- id: doc_113_台中_大業_數學_g8s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '(1) $\overline{AD}$之距離？(3分)
+
+    (2) $C$點坐標與$B$點坐標之和為？(3分)'
+  group_stem: 已知數線上$A$、$B$、$C$、$D$四點，其中$A$點坐標為$x^{2}+3x-7$、$D$點坐標為$x^{2}+x$。若$B$、$C$點為$\overline{AD}$的三等分點，回答以下問題：(以$x$多項式表示答案)
+  shared_asset: g3_1_2
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式與其加減運算
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式與其加減運算
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g8s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 若$-\sqrt{2x+1}$是9的負平方根，$10y+1$的正平方根為11，求$\sqrt{4y-3x}$的負平方根為何？(3分)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根與近似值
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根與近似值
+    labeled_by: ai
+shared_assets:
+- key: g3_1_2
+  label: 題組附圖
+  kind: figure
+  file: doc_113_台中_大業_數學_g8s1e1/g3_1_2_f1.png
+  used_by:
+  - doc_113_台中_大業_數學_g8s1e1_s3_1
+  crop:
+    page: 2
+    rect:
+    - 119.14
+    - 519.22
+    - 468.87
+    - 557.15

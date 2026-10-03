@@ -1,0 +1,870 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 大業
+  school: 臺中市大業國中
+  scope_note: 康軒版第三冊 2-2~3-2
+  id: doc_113_台中_大業_數學_g8s1e2
+  title: 臺中市大業國中 113學年度第1學期第2次定期評量 8年級數學科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  sections:
+  - ord: 1
+    name: 是非題：以下敘述正確的打「○」，錯誤的打「×」
+    count: 5
+  - ord: 2
+    name: 選擇
+    count: 10
+  - ord: 3
+    name: 填充
+    count: 10
+  - ord: 4
+    name: 計算題
+    count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/1-2/台中/大業.pdf
+  scope:
+    lessons:
+    - number: 2-2~3-2
+      title: null
+    publisher: 康軒版
+    raw: 康軒版第三冊 2-2~3-2
+    volume: 第三冊
+  chapter_index:
+    publisher: 康軒
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: 康軒
+questions:
+- id: doc_113_台中_大業_數學_g8s1e2_s1_1
+  section: 1
+  number: 1
+  type: tf
+  page: 1
+  stem: （  ）$3$、$4$、$\sqrt{7}$ 是直角三角形的三邊長
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: O
+    qwen: O
+  answer:
+  - O
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s1_2
+  section: 1
+  number: 2
+  type: tf
+  page: 1
+  stem: （  ）$\sqrt{16\frac{1}{9}}-\sqrt{4\frac{1}{9}}=4\frac{1}{3}-2\frac{1}{3}=2$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: X
+    qwen: X
+  answer:
+  - X
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s1_3
+  section: 1
+  number: 3
+  type: tf
+  page: 1
+  stem: （  ）$\sqrt{24}$、$\sqrt{\frac{2}{3}}$、$\sqrt{0.06}$ 是同類方根
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: O
+    qwen: O
+  answer:
+  - O
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s1_4
+  section: 1
+  number: 4
+  type: tf
+  page: 1
+  stem: （  ）如果一個二次多項式可因式分解成$(x+a)(x+b)$，那麼此二次多項式的一次項係數為$a+b$。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: O
+    qwen: O
+  answer:
+  - O
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s1_5
+  section: 1
+  number: 5
+  type: tf
+  page: 1
+  stem: （  ）因式分解 $20-9x-20x^{2}=(5x-4)(4x+5)$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: X
+    qwen: X
+  answer:
+  - X
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 1
+  stem: （  ）如右圖，$ABCD$為一四邊形，$\angle ABC=\angle ACD=90^{\circ}$、$\overline{BC}=6$、$\overline{CD}=5$、$\overline{AC}=13$、$\overline{AB}=a$、$\overline{AD}=b$，則下列何者正確？
+  options:
+  - label: A
+    content: $a=12$ 、$b=12$
+  - label: B
+    content: $a=\sqrt{205}$ 、$b=12$
+  - label: C
+    content: $a=12$ 、$b=\sqrt{133}$
+  - label: D
+    content: $a=\sqrt{133}$  、$b=\sqrt{194}$
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e2/s2_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 531.46
+      - 394.26
+      - 661.13
+      - 501.31
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s2_2
+  section: 2
+  number: 2
+  type: single
+  page: 1
+  stem: （  ）下列等式何者不成立？
+  options:
+  - label: A
+    content: $4\sqrt{3}+2\sqrt{3}=6\sqrt{3}$
+  - label: B
+    content: $4\sqrt{3}-2\sqrt{3}=2\sqrt{3}$
+  - label: C
+    content: $4\sqrt{3}\times 2\sqrt{3}=8\sqrt{3}$
+  - label: D
+    content: $4\sqrt{3}\div 2\sqrt{3}=2$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s2_3
+  section: 2
+  number: 3
+  type: single
+  page: 1
+  stem: （  ）下列何者為多項式 $x+4$ 的倍式？
+  options:
+  - label: A
+    content: $x^{2}+4$
+  - label: B
+    content: $x^{2}-4$
+  - label: C
+    content: $x^{2}+16$
+  - label: D
+    content: $x^{2}-16$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 利用提公因式與乘法公式做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 利用提公因式與乘法公式做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s2_4
+  section: 2
+  number: 4
+  type: single
+  page: 1
+  stem: （  ）已知多項式 $x^{2}-6x$ 與多項式  $x^{2}+ax-48$ 的公因式為一次多項式，其中 $a$ 為整數。判斷下列何者是 $(x^{2}-6x)+(x^{2}+ax-48)$  的因式？
+  options:
+  - label: A
+    content: $x+4$
+  - label: B
+    content: $x-3$
+  - label: C
+    content: $x+2$
+  - label: C
+    content: $x-1$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法做因式分解
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g8s1e2_s2_5
+  section: 2
+  number: 5
+  type: single
+  page: 1
+  stem: （  ）$(2x+3)^{2}-(x-1)^{2}$ 可因式分解成$(3x+a)(x+b)$，其中$a$、 $b$均為整數，則 $2a+b$ 之值為何？
+  options:
+  - label: A
+    content: $6$
+  - label: B
+    content: $8$
+  - label: C
+    content: $10$
+  - label: D
+    content: $12$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 利用提公因式與乘法公式做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 利用提公因式與乘法公式做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s2_6
+  section: 2
+  number: 6
+  type: single
+  page: 1
+  stem: （  ）已知多項式 $12x^{2}-77x-20$ 可因式分解成$(4x+a)(bx-c)$ ，其中 $a$、b、$c$為整數，則 $a+c$ 之值為何？
+  options:
+  - label: A
+    content: $19$
+  - label: B
+    content: $21$
+  - label: C
+    content: $-12$
+  - label: D
+    content: $-19$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s2_7
+  section: 2
+  number: 7
+  type: single
+  page: 1
+  stem: （  ）已知$x-2$是$5x^{2}-11x+a$的因式，也是$x^{2}+bx-2$的因式，則 $a+b=？$
+  options:
+  - label: A
+    content: $1$
+  - label: B
+    content: $2$
+  - label: C
+    content: $3$
+  - label: D
+    content: $4$
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s2_8
+  section: 2
+  number: 8
+  type: single
+  page: 1
+  stem: （  ）如下圖，甲、乙、丙均為正方形，乙的周長為$12$，丙的周長為$16$，則$\overline{AC}＝？$
+  options:
+  - label: A
+    content: $12$
+  - label: B
+    content: $13$
+  - label: C
+    content: $\sqrt{170}$
+  - label: D
+    content: $4\sqrt{10}$
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e2/s2_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 104.55
+      - 885.38
+      - 202.89
+      - 962.51
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s2_9
+  section: 2
+  number: 9
+  type: single
+  page: 2
+  stem: （  ）如右圖，$\triangle ABC$為直角三角形，$\angle BAC=90^{\circ}$，今以$\overline{AB}$ 、$\overline{AC}$
+    為邊長向外各做一個正方形，已知正方形的兩對角線會將正方形分割成四個等面積的三角形，若$\overline{BC}=4\sqrt{3}$，則圖中灰色部分面積和為多少？
+  options:
+  - label: A
+    content: $12$
+  - label: B
+    content: $16$
+  - label: C
+    content: $24$
+  - label: D
+    content: $48$
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e2/s2_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 575.9
+      - 92.99
+      - 672.05
+      - 187.65
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s2_10
+  section: 2
+  number: 10
+  type: single
+  page: 2
+  stem: '（  ）一般螢幕的尺寸是指螢幕對角線的長度，例如15吋的螢幕表示其對角線長為15吋。而長寬比是指螢幕長度和寬度的比，例如4:3表示螢幕長度與寬度的比為4:3。表(一)為兩種4:3螢幕的尺寸、長度與寬度，若將一個15吋螢幕與20吋螢幕以圖(一)方式拼接，在不考慮拼接處長度的情況下，拼接後的大長方形螢幕尺寸最接近下列何者？
+
+
+    | 尺寸(吋) | 長度(吋) | 寬度(吋) |
+
+    |---|---|---|
+
+    | 15 | 12 | 9 |
+
+    | 20 | 16 | 12 |
+
+    表(一)'
+  options:
+  - label: A
+    content: 25吋
+  - label: B
+    content: 27吋
+  - label: C
+    content: 29吋
+  - label: D
+    content: 31吋
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e2/s2_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 318.01
+      - 348.86
+      - 450.58
+      - 438.37
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 計算並化簡  $(\sqrt{75}+\sqrt{24})-(\sqrt{48}-\sqrt{6})=$ ________
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: \sqrt{3}+3\sqrt{6}
+    qwen: $\sqrt{3}+3\sqrt{6}$
+  answer:
+  - \sqrt{3}+3\sqrt{6}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 計算並化簡 $\sqrt{\frac{9}{7}}\div\sqrt{3\frac{6}{7}}\times\sqrt{\frac{3}{6}}=$
+    ________
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{\sqrt{6}}{6}
+    qwen: $\frac{\sqrt{6}}{6}$
+  answer:
+  - \frac{\sqrt{6}}{6}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 計算並化簡 $\frac{\sqrt{5}-\sqrt{2}}{\sqrt{5}+\sqrt{2}}=$ ________
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{7-2\sqrt{10}}{3}
+    qwen: $\frac{7-2\sqrt{10}}{3}$
+  answer:
+  - \frac{7-2\sqrt{10}}{3}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 如右圖，正$\triangle ABC$ 中，若將 $\overline{AB}$ 與 $\overline{AC}$ 重疊對摺，得到的摺痕為 $\overline{AD}$，$\overline{AD}=10$，則正$\triangle
+    ABC$ 的面積為多少？ ________
+  assets:
+  - key: s3_4_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e2/s3_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 551.13
+      - 688.31
+      - 658.94
+      - 785.04
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{100\sqrt{3}}{3}
+    qwen: $\frac{100\sqrt{3}}{3}$
+  answer:
+  - \frac{100\sqrt{3}}{3}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 如右圖，$\angle ABC=\angle ADC=90^{\circ}$，$\overline{DE}$ 垂直$\overline{AC}$於E點，$\overline{AD}=20$，$\overline{AB}=24$，$\overline{BC}=7$，求$\overline{DE}=？$
+    ________
+  assets:
+  - key: s3_5_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e2/s3_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 516.89
+      - 852.36
+      - 621.78
+      - 937.74
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: '12'
+    qwen: '12'
+  answer:
+  - '12'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 因式分解 $x^{2}(5y-3)+4(3-5y)=$____________。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 利用提公因式與乘法公式做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 利用提公因式與乘法公式做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: (5y-3)(x+2)(x-2)
+    qwen: $(5y-3)(x-2)(x+2)$
+    gemini_high: $(5y-3)(x+2)(x-2)$
+  answer:
+  - $(5y-3)(x+2)(x-2)$
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g8s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 因式分解 $-45x^{2}+21x+12=$____________。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: -3(5x-4)(3x+1)
+    qwen: -3(3x+1)(5x-4)
+    gemini_high: $-3(5x-4)(3x+1)$
+  answer:
+  - $-3(5x-4)(3x+1)$
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_大業_數學_g8s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 因式分解 $(2x-7)^{2}-10x+35=$____________。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 利用提公因式與乘法公式做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 利用提公因式與乘法公式做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: 2(2x-7)(x-6)
+    qwen: 2(2x-7)(x-6)
+  answer:
+  - 2(2x-7)(x-6)
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 因式分解 $(4x+5)^{2}+4(4x+5)-32=$____________。
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法做因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法做因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: (4x+13)(4x+1)
+    qwen: $(4x+13)(4x+1)$
+  answer:
+  - (4x+13)(4x+1)
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 如右圖，$\overline{AB}=8$，$\overline{BC}=5$，$\overline{CD}=12$，$\overline{DE}=13$，且
+    $\angle ABC=\angle BCD=\angle AED=90^{\circ}$，則$\overline{AE}$ 的長度＝ ____________
+  assets:
+  - key: s3_10_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e2/s3_10_f1.png
+    crop:
+      page: 3
+      rect:
+      - 497.95
+      - 200.29
+      - 605.76
+      - 316.62
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: '16'
+    qwen: '16'
+  answer:
+  - '16'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_大業_數學_g8s1e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: 佳佳卡丁車的跑道如下圖所示。已知$A(1,3)$、$B(-2,-5)$、$C(4,-2)$、$D(4,3)$四點為四個轉彎處，請問 $\overline{CD}$、$\overline{AB}$、$\overline{BC}$的長度分別為多少？
+    (3 分)
+  assets:
+  - key: s4_1_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e2/s4_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 81.97
+      - 464.42
+      - 190.5
+      - 596.23
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g8s1e2_s4_2
+  section: 4
+  number: 2
+  type: calc
+  page: 3
+  stem: 計算並化簡 $\frac{10\sqrt{3}}{2\sqrt{3}-\sqrt{7}}-(\sqrt{21}+2)(\sqrt{7}-1)+\frac{2}{3}\sqrt{63}$
+    (3 分)
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+- id: doc_113_台中_大業_數學_g8s1e2_s4_3
+  section: 4
+  number: 3
+  type: calc
+  page: 3
+  stem: '如下圖，A、B兩個小鎮在某條路(直線L)的同側，且$\overline{AC}$ 垂直直線L於C點、$\overline{BD}$ 垂直直線L於D點，交通局要在直線L上建一公車轉運站S，S與A、B兩個小鎮的距離相等。若$\overline{AB}=\sqrt{13}$
+    ，$\overline{AC}=1$，$\overline{BD}=3$ ，則:
+
+    (1) $\overline{CD}=？$ (1分)
+
+    (2) 該公車轉運站S與A小鎮的距離為多少？ (3分)'
+  assets:
+  - key: s4_3_f1
+    kind: figure
+    file: doc_113_台中_大業_數學_g8s1e2/s4_3_f1.png
+    crop:
+      page: 3
+      rect:
+      - 57.92
+      - 784.26
+      - 199.97
+      - 901.63
+  tags:
+    chapter:
+      publisher: 康軒
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai

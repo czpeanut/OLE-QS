@@ -1,0 +1,753 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 1
+  city: 高雄
+  school_short: 光華
+  school: 高雄市立光華國民中學
+  id: doc_113_高雄_光華_數學_g7s2e1
+  title: 高雄市立光華國民中學 113學年度第2學期第1次定期評量 7年級數學科試題
+  exam_name: 113學年度第2學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題【每題3 分，共30 分】
+    count: 10
+  - ord: 2
+    name: 二、填充題【每題4 分，共60 分】
+    count: 15
+  - ord: 3
+    name: 三、計算題【每題5 分，共10 分】
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/2-1/高雄/光華.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 小明、小君、小華與小玲四人都喜歡收集卡通貼紙，其中小君所收集的張數是小華的3 倍；而小明所收集的張數是小玲的一半又多6 張，假設小華共收集$x$ 張，小玲共收集$y$
+    張，則小明與小君共收集多少張？
+  options:
+  - label: A
+    content: $x+y+6$
+  - label: B
+    content: $\frac{1}{2}x+3y+6$
+  - label: C
+    content: $3x+\frac{1}{2}y+6$
+  - label: D
+    content: $\frac{1}{3}x+2y+6$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 攝氏溫度$x$ 度時，華氏溫度為$y$ 度，且$x$ 與$y$ 的關係為$y=\frac{9}{5}x+32$，當攝氏為零下25 度時，華氏溫度為多少度？
+  options:
+  - label: A
+    content: 77 度
+  - label: B
+    content: 13 度
+  - label: C
+    content: 零下13 度
+  - label: D
+    content: 零下77 度
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 礦泉水的售價分為兩種：大瓶的每箱100 元，小瓶的每箱120 元。發發商店兩種共賣出20 箱，但結帳時店員把兩種價目看反了，結果商店少收200 元。設大瓶礦泉水賣出$x$
+    箱，小瓶礦泉水賣出$y$ 箱，則下列何者為符合題意的聯立方程式？
+  options:
+  - label: A
+    content: $\begin{cases} x-y=20 \\ 120x+100y=2100 \end{cases}$
+  - label: B
+    content: $\begin{cases} x-y=20 \\ 100x+120y-200=120x+100y \end{cases}$
+  - label: C
+    content: $\begin{cases} x+y=20 \\ 100x+120y-200=120x+100y \end{cases}$
+  - label: D
+    content: $\begin{cases} x+y=20 \\ 100x+120y+200=120x+100y \end{cases}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 89%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 已知$x$、$y$ 的聯立方程式$\begin{cases} 9-3x=2(x+y) \\ y+25=4(y-x) \end{cases}$，則$11(7x+y)-50$
+    之值為何？
+  options:
+  - label: A
+    content: '50'
+  - label: B
+    content: －50
+  - label: C
+    content: '104'
+  - label: D
+    content: －116
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 89%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: '在某次段考中，班上六位同學的英語成績如下表所示：(滿分100 分)
+
+
+    | 學生 | 甲 | 乙 | 丙 | 丁 | 戊 | 己 |
+
+    | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+
+    | 分數 | 92 | 54 | □ | □ | 68 | 86 |
+
+
+    若丙、丁兩人的成績不慎被撕毀而看不到，只知他們六人的平均分數是72 分，且丙的分數比丁的2 倍多9 分，請問，丙與丁兩人分數相差多少分？'
+  options:
+  - label: A
+    content: 27 分
+  - label: B
+    content: 39 分
+  - label: C
+    content: 40 分
+  - label: D
+    content: 50 分
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 若$A(5,0)$，$B(-3,0)$，$C$ 為$(k,-4)$且可以任意移動，其中$k$ 為任意數，則$\triangle ABC$ 的面積＝？
+  options:
+  - label: A
+    content: '32'
+  - label: B
+    content: '16'
+  - label: C
+    content: '8'
+  - label: D
+    content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 下列敘述何者錯誤？
+  options:
+  - label: A
+    content: ($2$，$3$)和($3$，$2$)是不同的點
+  - label: B
+    content: $x$ 座標為0 的點，不可能出現在$x$ 軸上
+  - label: C
+    content: $x$ 軸上的點，其$y$ 座標必為0
+  - label: D
+    content: $x$ 軸和$y$ 軸不屬於任何象限
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 已知P($ab$，$a-b$)在第二象限內，則$a$、$b$ 分別是正數或負數
+  options:
+  - label: A
+    content: $a>0$，$b>0$
+  - label: B
+    content: $a>0$，$b<0$
+  - label: C
+    content: $a<0$，$b>0$
+  - label: D
+    content: $a<0$，$b<0$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 若二元一次聯立方程式$\begin{cases} \frac{2x-3y}{6}=4 \\ \frac{15x+15y-5}{3}=0 \end{cases}$
+    的解為$x=a$，$y=b$，則$a-b=？$
+  options:
+  - label: A
+    content: $\frac{5}{3}$
+  - label: B
+    content: $\frac{9}{5}$
+  - label: C
+    content: $\frac{29}{3}$
+  - label: D
+    content: $-\frac{139}{3}$
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 89%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_光華_數學_g7s2e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: '某鞋店正舉辦開學特惠活動，下圖為活動說明。
+
+
+    小明打算在該店同時購買一雙球鞋及一雙皮鞋，且他有一張所有購買的商品定價皆打8 折的折價券。若小明計算後發現使用折價券與參加特惠活動兩者的花費相差50 元，則下列敘述何者正確？'
+  options:
+  - label: A
+    content: 使用折價券的花費較少，且兩雙鞋的定價相差100 元
+  - label: B
+    content: 使用折價券的花費較少，且兩雙鞋的定價相差250 元
+  - label: C
+    content: 參加特惠活動的花費較少，且兩雙鞋的定價相差100 元
+  - label: D
+    content: 參加特惠活動的花費較少，且兩雙鞋的定價相差250 元
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_113_高雄_光華_數學_g7s2e1/s1_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 108.2
+      - 242.65
+      - 300.54
+      - 335.27
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 麗麗到文具店買了2 枝原子筆和3 隻鉛筆，若原子筆一枝$x$ 元，鉛筆一隻$y$ 元，則她共用去___________元。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: 2x+3y
+    qwen: 2x+3y
+  answer:
+  - 2x+3y
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 歌手阿妹現年$x$ 歲，阿畢現年$y$ 歲，10 年後兩人的年齡和為________歲。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: x+y+20
+    qwen: x+y+20
+  answer:
+  - x+y+20
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 解聯立方程式$\begin{cases} 3x+y=a \\ 5x-3y=24 \end{cases}$，若$x=3$，則$a=$________。
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 81%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 歷史博物館兵馬俑展覽吸引大批人潮參觀，某日館方售出學生票及全票共8412 張，其中學生票數比全票數的3倍多12 張，若全票售出$x$ 張，學生票售出$y$
+    張，則$x-y=$______。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '-4212'
+    qwen: '-4212'
+  answer:
+  - '-4212'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 若$|7x-3y-1|+|14x+5y-13|=0$，則$7x+7y=$______。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '11'
+    qwen: '11'
+  answer:
+  - '11'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 計算$-4(x+y)+3[2x-(5x-2y)]=$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: -13x+2y
+    qwen: -13x+2y
+  answer:
+  - -13x+2y
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 小文某次段考國、英、數三科的平均是$x$ 分，而社會科與自然的總分是$y$ 分，則她五科的總分是________分。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: 3x+y
+    qwen: 3x+y
+  answer:
+  - 3x+y
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 若$-1<x<0$，則點($x-\frac{1}{x}$ , $x+\frac{1}{x}$)在第＿____象限。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 四
+    qwen: 二
+    gemini_high: 四
+  answer:
+  - 四
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 若$x=a$、$y=b$ 是$x+2y=47$ 的解，則$2a+4b=$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '94'
+    qwen: '94'
+  answer:
+  - '94'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 若$x$、$y$ 皆為正整數，則二元一次方程式$3x+2y=17$ 的正整數解共有________組。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-1
+      title: 二元一次方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-1 二元一次方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '3'
+    qwen: '3'
+  answer:
+  - '3'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 若$a=-4$，$b=3$，則P($-ab$ ，$|b|-a$)在第________象限。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+  ai_answers:
+    gemini: 一
+    qwen: 一
+  answer:
+  - 一
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 解$\begin{cases} \frac{x}{2}+\frac{y}{3}=\frac{4}{3} \\ \frac{3x}{2}-\frac{y}{5}=1
+    \end{cases}$  則$x=$________，$y=$________。(對一個給2 分)
+  uncertain_spans:
+  - 內容與原卷文字層不符（吻合 81%）
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 3
+  stem: 若$x-y+5=7=-2x-3y-4$，則$x+y=$________。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-2
+      title: 解二元一次聯立方程式
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-2 解二元一次聯立方程式
+    labeled_by: ai
+  ai_answers:
+    gemini: '-4'
+    qwen: '-4'
+  answer:
+  - '-4'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 3
+  stem: 將2 個一模一樣的小長方形依圖示，合併成2 種大長方形，大長方形的周長分別為34 和38，則原本小長方形的周長為________。
+  assets:
+  - key: s2_14_f1
+    kind: figure
+    file: doc_113_高雄_光華_數學_g7s2e1/s2_14_f1.png
+    crop:
+      page: 3
+      rect:
+      - 93.63
+      - 226.14
+      - 191.98
+      - 264.06
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '24'
+    qwen: '24'
+  answer:
+  - '24'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 3
+  stem: '某班級做學生通車上學距離調查結果如下表，有60%的男生、75%的女生通車上學的距離在一公里內，且這些女生的人數比這些男生的人數多6 人；有40%的男生、25%的女生通車上學的距離超過一公里，且一公里內的同學人數比超過一公里的同學人數多16
+    人，試問該班級總人數有________人。
+
+
+    | 性別 \ 距離 | 男 | 女 |
+
+    | :-: | :-: | :-: |
+
+    | 1 公里內 | 60% | 75% |
+
+    | 超過 1 公里 | 40% | 25% |'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai
+  ai_answers:
+    gemini: '44'
+    qwen: '44'
+  answer:
+  - '44'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_光華_數學_g7s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: 座標平面上有兩點A($2a-1$，$3$)、B($-1$，$2b$)，若A 點向左3 單位，再向上4 單位後，會與B 點重合，則$a+b=?$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 2-1
+      title: 直角坐標平面
+      chapter: 第2章 直角坐標與二元一次方程式的圖形
+    textbook: 七下 2-1 直角坐標平面
+    labeled_by: ai
+- id: doc_113_高雄_光華_數學_g7s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: 運動會時，班上一起買了4箱運動飲料，每箱的數量相同。如果每個學生發1瓶，會剩下1箱又6瓶。如果每個學生發2瓶，則會不夠12瓶。請問學生有幾人？每箱運動飲料有幾瓶？
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七下
+      subject: 數學
+      code: 1-3
+      title: 應用問題
+      chapter: 第1章 二元一次聯立方程式
+    textbook: 七下 1-3 應用問題
+    labeled_by: ai

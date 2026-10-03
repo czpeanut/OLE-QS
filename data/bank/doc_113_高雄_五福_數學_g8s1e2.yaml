@@ -1,0 +1,751 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 高雄
+  school_short: 五福
+  school: 高雄市立五福國民中學
+  id: doc_113_高雄_五福_數學_g8s1e2
+  title: 高雄市立五福國民中學 113學年度第1學期第2次定期評量 8年級數學科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  sections:
+  - ord: 1
+    name: '一、選擇題: (每題4 分，共20 分)'
+    count: 5
+  - ord: 2
+    name: '二、填充題: (每格4 分，共68 分)'
+    count: 17
+  - ord: 3
+    name: '三、計算題: 12％ (每題4 分，共12 分)'
+    count: 3
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/1-2/高雄/五福.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_高雄_五福_數學_g8s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列何者是最簡根式？
+  options:
+  - label: A
+    content: $\sqrt{76}$
+  - label: B
+    content: $\sqrt{\frac{5}{19}}$
+  - label: C
+    content: $\frac{3}{\sqrt{6}}$
+  - label: D
+    content: $\frac{9}{2}\sqrt{14}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '下列敘述正確的有幾個？
+
+    (甲) $\sqrt{25} = \pm 5$
+
+    (乙) 若 a 為任意數，則 $\sqrt{a^{2}} = |a|$
+
+    (丙) $\sqrt{1.6} = 0.4$
+
+    (丁) 因為 $\sqrt{10}$ 的小數部分是無窮且不循環的，所以在數線上找不到坐標為 $\sqrt{10}$ 的點
+
+    (戊) $\sqrt{45}$ 與 $\sqrt{0.8}$ 是同類方根'
+  options:
+  - label: A
+    content: 1 個
+  - label: B
+    content: 2 個
+  - label: C
+    content: 3 個
+  - label: D
+    content: 4 個
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-1
+      title: 平方根的意義
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-1 平方根的意義
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 右圖為 A、B、C、D 四點在方格紙上的位置圖，其中每一點均位於格子點上，關於 $\triangle ABC$ 與 $\triangle ABD$
+    的形狀，下列判斷何者正確？
+  options:
+  - label: A
+    content: $\triangle ABC$ 是等腰三角形，$\triangle ABD$ 不是等腰三角形
+  - label: B
+    content: $\triangle ABC$ 不是等腰三角形，$\triangle ABD$ 是等腰三角形
+  - label: C
+    content: 兩個都是等腰三角形
+  - label: D
+    content: 兩個都不是等腰三角形
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_高雄_五福_數學_g8s1e2/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 516.89
+      - 356.08
+      - 657.48
+      - 462.1
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: '在(甲)～(己)中哪些是 $2x^{2}-4x-16$ 的因式？
+
+    (甲) $x^{2}+2x-8$
+
+    (乙) $3x+12$
+
+    (丙) $2x-8$
+
+    (丁) 3
+
+    (戊) $3x-6$
+
+    (己) $\frac{1}{2}x+1$'
+  options:
+  - label: A
+    content: (甲)、(丙)、(丁)
+  - label: B
+    content: (丙)、(丁)、(己)
+  - label: C
+    content: (乙)、(丁)、(戊)
+  - label: D
+    content: (乙)、(戊)、(己)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 在坐標平面上，$A(2, a)$ 與 $B(b, 1)$ 兩點都在直線 $y=x+3$ 上，則 $\overline{AB} =$？
+  options:
+  - label: A
+    content: $4\sqrt{2}$
+  - label: B
+    content: $\sqrt{23}$
+  - label: C
+    content: '4'
+  - label: D
+    content: '1'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '計算下列各根式，並將答案化簡為最簡根式：
+
+    (1) $3\sqrt{48}+2\sqrt{125}-2\sqrt{27}+3\sqrt{45}=$ ____(1)____'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: 6\sqrt{3}+19\sqrt{5}
+    qwen: $6\sqrt{3}+19\sqrt{5}$
+  answer:
+  - 6\sqrt{3}+19\sqrt{5}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: '計算下列各根式，並將答案化簡為最簡根式：
+
+    (2) $\sqrt{\frac{35}{3}}\times\frac{4}{3}\times(-6\sqrt{15})\div(-\frac{1}{\sqrt{21}})=$
+    ____(2)____'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: 280\sqrt{3}
+    qwen: $280\sqrt{3}$
+  answer:
+  - 280\sqrt{3}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: '計算下列各根式，並將答案化簡為最簡根式：
+
+    (3) $(-\sqrt{7}-\sqrt{6})^{2}=$ ____(3)____'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: 13+2\sqrt{42}
+    qwen: $13+2\sqrt{42}$
+  answer:
+  - 13+2\sqrt{42}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: '計算下列各根式，並將答案化簡為最簡根式：
+
+    (4) $\frac{\sqrt{2}}{\sqrt{14}+2\sqrt{3}}=$ ____(4)____'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: \sqrt{7}-\sqrt{6}
+    qwen: $\sqrt{7}-\sqrt{6}$
+  answer:
+  - \sqrt{7}-\sqrt{6}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '因式分解下列各式：
+
+    (1) $2x(3x-5)+x(5x-1)=$ ____(5)____'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 提公因式與乘法公式作因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 提公因式與乘法公式作因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: 11x(x-1)
+    qwen: $11x(x-1)$
+  answer:
+  - 11x(x-1)
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '因式分解下列各式：
+
+    (2) $7x-35-(5-x)^{2}=$ ____(6)____'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 提公因式與乘法公式作因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 提公因式與乘法公式作因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: (x-5)(12-x)
+    qwen: $(x-5)(12-x)$
+  answer:
+  - (x-5)(12-x)
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: '因式分解下列各式：
+
+    (3) $x^{2}+4ax-2x-8a=$ ____(7)____'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-1
+      title: 提公因式與乘法公式作因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-1 提公因式與乘法公式作因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: (x+4a)(x-2)
+    qwen: $(x-2)(x+4a)$
+    gemini_high: (x+4a)(x-2)
+  answer:
+  - (x+4a)(x-2)
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: '因式分解下列各式：
+
+    (4) $-15x^{2}+50x-35=$ ____(8)____'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: -5(3x-7)(x-1)
+    qwen: -5(3x-7)(x-1)
+  answer:
+  - -5(3x-7)(x-1)
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 已知 $\sqrt{15}\approx 3.873$，則 $\sqrt{0.006}\approx$ ____(9)____。(以四捨五入法取到小數點後第四位)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: '0.0775'
+    qwen: '0.0775'
+  answer:
+  - '0.0775'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 若 a 為正整數，且 $(a-4)(a-6)-3$ 代表一個質數，則此質數＝ ____(10)____。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
+  ai_answers:
+    gemini: '5'
+    qwen: '5'
+  answer:
+  - '5'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 如右圖，小美將一張長方形紙板切割成甲、乙、丙、丁四塊，已知長方形甲的邊長為 $4x+3$ 和 $3x-2$，長方形乙的面積為 $6x^{2}-7x+2$，丙為正方形，則長方形丁的面積為
+    ____(11)____
+  assets:
+  - key: s2_11_f1
+    kind: figure
+    file: doc_113_高雄_五福_數學_g8s1e2/s2_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 527.82
+      - 348.86
+      - 634.9
+      - 443.53
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: 8x^{2}+2x-3
+    qwen: $8x^2+2x-3$
+  answer:
+  - 8x^{2}+2x-3
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 有甲、乙兩紙片，交疊情形如圖(一)，已知甲的寬為 $x-1$，交疊後，圖形面積為 $5x^{2}-3x-2$，重疊處為一正方形，若將甲與乙重新擺放，且沒有重疊如圖(二)，求圖(二)的周長為
+    ____(12)____
+  assets:
+  - key: s2_12_f1
+    kind: figure
+    file: doc_113_高雄_五福_數學_g8s1e2/s2_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 516.89
+      - 481.96
+      - 654.57
+      - 643.69
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: 14x
+    qwen: 14x
+  answer:
+  - 14x
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 如右圖，阿漢想爬上一處懸崖，他用一把梯子斜靠崖壁，發現梯子不夠高，還差 1 公尺才能碰到懸崖高處。已知梯子長度 5 公尺，懸崖高度 4 公尺，則若要爬上懸崖，阿漢還要將梯子往前移
+    ____(13)____ 公尺才能成功。
+  assets:
+  - key: s2_13_f1
+    kind: figure
+    file: doc_113_高雄_五福_數學_g8s1e2/s2_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 421.46
+      - 681.09
+      - 548.2
+      - 787.11
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: '1'
+    qwen: '1'
+  answer:
+  - '1'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: '已知 O 點為原點，且方程式 $5x-4y=20$ 的圖形與 x 軸的交點為 P，與 y 軸的交點為 Q，則：
+
+    (1) 三角形 POQ 的周長＝ ____(14)____。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: 9+\sqrt{41}
+    qwen: $9+\sqrt{41}$
+  answer:
+  - 9+\sqrt{41}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 2
+  stem: '已知 O 點為原點，且方程式 $5x-4y=20$ 的圖形與 x 軸的交點為 P，與 y 軸的交點為 Q，則：
+
+    (2) 三角形 POQ 斜邊上的高＝ ____(15)____。'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{20\sqrt{41}}{41}
+    qwen: $\frac{20\sqrt{41}}{41}$
+  answer:
+  - \frac{20\sqrt{41}}{41}
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_16
+  section: 2
+  number: 16
+  type: fill
+  page: 3
+  stem: 如右圖，$\overline{AB}\perp\overline{BC}$、$\overline{AD}\perp\overline{CD}$，且
+    $\overline{AB}=7$，$\overline{BC}=a$、$\overline{CD}=b$、$\overline{AD}=9$，求 $(a+b)(a-b)=$
+    ____(16)____
+  assets:
+  - key: s2_16_f1
+    kind: figure
+    file: doc_113_高雄_五福_數學_g8s1e2/s2_16_f1.png
+    crop:
+      page: 3
+      rect:
+      - 530.73
+      - 48.62
+      - 664.77
+      - 172.18
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-3
+      title: 畢氏定理
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-3 畢氏定理
+    labeled_by: ai
+  ai_answers:
+    gemini: '32'
+    qwen: '32'
+  answer:
+  - '32'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s2_17
+  section: 2
+  number: 17
+  type: fill
+  page: 3
+  stem: 計算 $\sqrt{a}+\sqrt{b}+\sqrt{d}+\sqrt{e}+\sqrt{c}\times\sqrt{f}$ 並將答案化為最簡根式，得到的答案為
+    $m\sqrt{a}+n\sqrt{b}+k$，其中 $1<a<b<5$、$4<c<7$、$9<d<15$、$17\leq e<f\leq 20$，且 $a$、$b$、$c$、$d$、$e$、$f$、$m$、$n$、$k$
+    都是正整數，則 $m\sqrt{a}+n\sqrt{b}+k=$ ____(17)____
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 2-2
+      title: 根式的運算
+      chapter: 第2章 平方根與畢氏定理
+    textbook: 八上 2-2 根式的運算
+    labeled_by: ai
+  ai_answers:
+    gemini: 4\sqrt{2}+3\sqrt{3}+10
+    qwen: $4\sqrt{2}+3\sqrt{3}+10$
+  answer:
+  - 4\sqrt{2}+3\sqrt{3}+10
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_高雄_五福_數學_g8s1e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: (1)小妍想用全部的甲塑膠墊與全部的丙塑膠墊拼成一個長方形，發現乙塑膠墊不夠用，則最少還缺幾塊乙塑膠墊？
+  group_stem: '小妍和同學相約到河濱公園看煙火，因怕地面濕冷，每個人各帶了幾塊塑膠墊，統計其大小數量如右，試回答下列問題：
+
+
+    甲：邊長為 $x$ 的正方形，共 6 塊
+
+    乙：長為 $x$、寬為 1 的長方形，共 15 塊
+
+    丙：邊長為 1 的正方形，共 5 塊'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
+- id: doc_113_高雄_五福_數學_g8s1e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: (2)後來大家想改拼成一個最大的正方形，應使用甲、乙、丙塑膠墊各幾塊？
+  group_stem: '小妍和同學相約到河濱公園看煙火，因怕地面濕冷，每個人各帶了幾塊塑膠墊，統計其大小數量如右，試回答下列問題：
+
+
+    甲：邊長為 $x$ 的正方形，共 6 塊
+
+    乙：長為 $x$、寬為 1 的長方形，共 15 塊
+
+    丙：邊長為 1 的正方形，共 5 塊'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai
+- id: doc_113_高雄_五福_數學_g8s1e2_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 3
+  stem: 若 a 為整數，且 $x^{2}+ax-24$ 可以因式分解，求 a 所有可能的值
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 3-2
+      title: 利用十字交乘法因式分解
+      chapter: 第3章 因式分解
+    textbook: 八上 3-2 利用十字交乘法因式分解
+    labeled_by: ai

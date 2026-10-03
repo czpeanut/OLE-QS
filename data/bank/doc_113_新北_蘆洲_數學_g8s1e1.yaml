@@ -1,0 +1,683 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 新北
+  school_short: 蘆洲
+  school: 新北市立蘆洲國民中學
+  scope_note: 1-1~1-3、5-1
+  id: doc_113_新北_蘆洲_數學_g8s1e1
+  title: 新北市立蘆洲國民中學 113學年度第1學期第1次定期評量 8年級數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題(每題4 分，共計40 分)
+    count: 10
+  - ord: 2
+    name: 二、填充題(每格4 分，共計48 分) (多項式答案請按降冪排列)
+    count: 8
+  - ord: 3
+    name: 三、計算題(共12 分) (需有計算過程，多項式答案請按降冪排列)
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國二/數學/113/1-1/新北/蘆洲.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: null
+    - number: 1-2
+      title: null
+    - number: 1-3
+      title: null
+    - number: 5-1
+      title: null
+    publisher: null
+    raw: 1-1~1-3、5-1
+    volume: null
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 計算 $(2000-2)^{2}$ 的結果，與下列哪一個式子相同？
+  options:
+  - label: A
+    content: $2000^{2}-2\times 2000\times 2+2$
+  - label: B
+    content: $2000^{2}-2^{2}$
+  - label: C
+    content: $2000^{2}-2\times 2000\times 2+2^{2}$
+  - label: D
+    content: $2000^{2}-2000\times 2+2^{2}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '有四位同學想算出 $10.5^{2}$ 的值，他們的方法如下：
+
+    小娟：$10.5^{2}=\frac{21^{2}}{2}$
+
+    小品：$10.5^{2}=10^{2}+0.5^{2}$
+
+    阿惠：$10.5^{2}=(10+0.5)^{2}=10^{2}+2\times 10\times 0.5+0.5^{2}$
+
+    阿明：$10.5^{2}=(11-0.5)^{2}=11^{2}-2\times 11\times 0.5-0.5^{2}$
+
+    如果這四人接下來都沒有計算或其他方面的錯誤，那麼誰的計算過程是正確的?'
+  options:
+  - label: A
+    content: 小娟
+  - label: B
+    content: 小品
+  - label: C
+    content: 阿惠
+  - label: D
+    content: 阿明
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 下列哪一個是 $x$ 的多項式?
+  options:
+  - label: A
+    content: $x+3=0$
+  - label: B
+    content: $|x|+6$
+  - label: C
+    content: $\frac{1}{x-3}$
+  - label: D
+    content: $\frac{4}{7}x$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 若多項式 $(a-3)x^{2}+(b+2)x+10$ 是一個常數多項式，則 $a+b=$
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 下列的敘述哪一個是正確的?
+  options:
+  - label: A
+    content: 多項式 $x^{2}-3x$ 中，$x$ 項的係數是 3
+  - label: B
+    content: 若常數多項式不為 0 時，稱為零次多項式
+  - label: C
+    content: 兩個 $x$ 的二次多項式相加，其結果也是 $x$ 的二次多項式
+  - label: D
+    content: 在多項式除法中，當餘式不為 0 時，餘式的次數必小於商式的次數
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 若想知道某次段考英語科成績不及格（未滿 60 分）或 80 分以上占全班人數的百分比，則應使用下列何種統計圖最為適合?
+  options:
+  - label: A
+    content: 次數分配折線圖
+  - label: B
+    content: 次數分配直方圖
+  - label: C
+    content: 相對次數分配折線圖
+  - label: D
+    content: 累積相對次數分配折線圖
+  tags:
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 八上 第1次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 下圖是八年甲班段考數學成績累積相對次數分配折線圖，則未滿 60 分與 90 分以上(含)者，共占多少百分比？
+  options:
+  - label: A
+    content: 60%
+  - label: B
+    content: 50%
+  - label: C
+    content: 40%
+  - label: D
+    content: 30%
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_113_新北_蘆洲_數學_g8s1e1/s1_7_f1.png
+    crop:
+      page: 1
+      rect:
+      - 430.92
+      - 856.53
+      - 624.69
+      - 985.25
+  tags:
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 八上 第1次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 2
+  stem: 已知一身高累積次數分配折線圖上各點的坐標分別為( 150，0 )、( 160，8 )、( 170，23 )、( 180，36 )、( 190，40
+    )，則：160~180 公分有 _______ 人？
+  options:
+  - label: A
+    content: 20 人
+  - label: B
+    content: 28 人
+  - label: C
+    content: 31 人
+  - label: D
+    content: 40 人
+  tags:
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 八上 第1次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 2
+  stem: 阿丁將班上 50 個同學身高的資料，自 130 公分開始，每 10 公分為一組，製作身高折線圖，如下圖所示。根據此圖判別下列哪一個敘述是錯誤的？
+  options:
+  - label: A
+    content: 在 130～150 公分之間的人數占全班的 26％
+  - label: B
+    content: 在 130～160 公分之間的人數占全班的 80％
+  - label: C
+    content: 在 140～160 公分之間的人數占全班的 76％
+  - label: D
+    content: 在 150～160 公分之間的人數占全班的 50％
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_113_新北_蘆洲_數學_g8s1e1/s1_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 431.65
+      - 261.18
+      - 667.67
+      - 417.76
+  tags:
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 八上 第1次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 2
+  stem: '若 A 是二次多項式，B 是一次多項式，則下列兩人的說法何者正確？
+
+    甲：$A+B$ 是三次多項式、$A-B$ 是一次多項式
+
+    乙：$A\times B$ 是三次多項式、$A\div B$ 的商是一次多項式'
+  options:
+  - label: A
+    content: 甲正確、乙錯誤
+  - label: B
+    content: 甲錯誤、乙正確
+  - label: C
+    content: 兩人皆正確
+  - label: D
+    content: 兩人皆錯誤
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '計算下列各式
+
+    (1) $(2x-3)(7x+2)=$
+
+    (2) $59.5\times 60.5=$
+
+    (3) $319^{2}-119^{2}=$
+
+    (4) $3(2x+1)^{2}-[(x-4)(x+4)-1]=$'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: $14x^2-17x-6$；$3599.75$；$87600$；$11x^2+12x+20$
+    qwen: $14x^2-17x-6$; $3599.75$; $87600$; $11x^2+12x+20$
+    gemini_high: $14x^2-17x-6$；$3599.75$；$87600$；$11x^2+12x+20$
+  answer:
+  - $14x^2-17x-6$
+  - $3599.75$
+  - $87600$
+  - $11x^2+12x+20$
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 若 $499^{2}=500^{2}-n+1^{2}$，則 $n=$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '1000'
+    qwen: '1000'
+  answer:
+  - '1000'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 有一多項式 $B$ 除以 $x-6$ 的商式為 $3x^{2}-2$，餘式為 -5，則此多項式 $B=$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: $3x^3-18x^2-2x+7$
+    qwen: $3x^3-18x^2-2x+7$
+  answer:
+  - $3x^3-18x^2-2x+7$
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知 $3x^{2}+2x-9$ 除以另一個多項式 $B$ 後，得商式為 $x-2$，餘式為 7，則此多項式 $B=$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: $3x+8$
+    qwen: $3x+8$
+  answer:
+  - $3x+8$
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 若 $A$ 是多項式，且 $A+(-2x^{2}+7x+1)=-4x^{2}-3x+6$，則此多項式 $A=$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-2
+      title: 多項式的加減
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-2 多項式的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: $-2x^2-10x+5$
+    qwen: $-2x^2-10x+5$
+  answer:
+  - $-2x^2-10x+5$
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '下表是新新百貨公司員工年齡分配表的一部分，已知 40~50 歲有 120 位，則：
+
+    | 年齡（歲） | 相對次數（％） | 累積相對次數（％） |
+
+    | --- | --- | --- |
+
+    | 40~50 | 40％ | 70％ |
+
+    (1)全部的員工有 _________ 人
+
+    (2)年齡在 50 歲以上有 _________ 人'
+  tags:
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 八上 第1次段考範圍
+    labeled_by: ai
+  ai_answers:
+    gemini: 300；90
+    qwen: 300; 90
+    gemini_high: 300；90
+  answer:
+  - '300'
+  - '90'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 萬聖節即將到來，阿中設計一個面具，準備戴上它參加學校的活動，這個面具是將一個大正方形紙板，內部減去四個相同大小的小正方形，當成是眼、鼻、口的位置，如下圖所示。求此面具的面積為
+    _________ 平方公分？
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_113_新北_蘆洲_數學_g8s1e1/s2_7_f1.png
+    crop:
+      page: 2
+      rect:
+      - 494.3
+      - 846.21
+      - 613.03
+      - 993.51
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-1
+      title: 乘法公式
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-1 乘法公式
+    labeled_by: ai
+  ai_answers:
+    gemini: '228'
+    qwen: '228'
+  answer:
+  - '228'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 阿強分到一大塊長方形田地，田地中縱向、橫向各被開闢一條寬為 $x$ 公尺的小路，其餘作為稻田耕作，如圖所示。若測量得知田地長為 $4x+4$ 公尺，寬為
+    $3x-1$ 公尺，則阿強能耕作的稻田面積有 _________ 平方公尺？(以 $x$ 的多項式表示)
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_新北_蘆洲_數學_g8s1e1/s2_8_f1.png
+    crop:
+      page: 3
+      rect:
+      - 510.32
+      - 242.6
+      - 690.25
+      - 368.23
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: $6x^2+5x-4$
+    qwen: $6x^2+5x-4$
+  answer:
+  - $6x^2+5x-4$
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: '求下列多項式除法的商式與餘式 (每個答案各 2 分，共 8 分)
+
+    (1) $(3x^{2}+6x+2)\div(3x^{2}-3x+4)$
+
+    (2) $(2x^{2}-3)\div(x+1)$'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八上
+      subject: 數學
+      code: 1-3
+      title: 多項式的乘除
+      chapter: 第1章 乘法公式與多項式
+    textbook: 八上 1-3 多項式的乘除
+    labeled_by: ai
+- id: doc_113_新北_蘆洲_數學_g8s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: '珊瑚國中八年級共有 600 位學生，第一次段考數學成績的相對次數分配折線圖如下，回答下列問題：
+
+    (1) 不及格（未滿 60 分）占全部人數的百分比是多少？ (2 分)
+
+    (2) 70 分以上（含）有多少人？ (2 分)'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_新北_蘆洲_數學_g8s1e1/s3_2_f1.png
+    crop:
+      page: 3
+      rect:
+      - 430.92
+      - 541.83
+      - 665.48
+      - 707.7
+  tags:
+    chapter:
+      publisher: null
+      book: 八上
+      subject: 數學
+      code: null
+      title: null
+      chapter: null
+    textbook: 八上 第1次段考範圍
+    labeled_by: ai

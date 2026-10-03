@@ -1,0 +1,885 @@
+document:
+  grade: 9
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 2
+  city: 新北
+  school_short: 中平
+  school: 新北市立中平國民中學
+  id: doc_113_新北_中平_數學_g9s2e2
+  title: 新北市立中平國民中學 113學年度第2學期第2次定期評量 9年級數學科試題
+  exam_name: 113學年度第2學期第2次定期評量
+  sections:
+  - ord: 1
+    name: '一、是非題: 每題2 分，共10 分'
+    count: 5
+  - ord: 2
+    name: 二、選擇題：每題5 分，共60 分
+    count: 12
+  - ord: 3
+    name: 三、填充題：每題4 分，共20 分
+    count: 5
+  - ord: 4
+    name: 四、計算題：共10 分
+    count: 5
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國三/數學/113/2-2/新北/中平.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite(batch)
+    publisher_from_scope: null
+questions:
+- id: doc_113_新北_中平_數學_g9s2e2_s1_1
+  section: 1
+  number: 1
+  type: tf
+  page: 1
+  stem: $y = -(x - 2)^{2} + x^{2}$，$y$是為$x$的二次函數。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-1
+      title: 基本二次函數圖形
+      chapter: 第1章 二次函數
+    textbook: 九下 1-1 基本二次函數圖形
+    labeled_by: ai
+  ai_answers:
+    gemini: X
+    qwen: X
+  answer:
+  - X
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s1_2
+  section: 1
+  number: 2
+  type: tf
+  page: 1
+  stem: 由盒狀圖可以得到一組資料的四分位數、中位數及算術平均數。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
+  ai_answers:
+    gemini: X
+    qwen: X
+  answer:
+  - X
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s1_3
+  section: 1
+  number: 3
+  type: tf
+  page: 1
+  stem: 如果一實驗所有可能發生的結果有n 種，則每一種結果發生的機率都是$\frac{1}{n}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-2
+      title: 機率
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-2 機率
+    labeled_by: ai
+  ai_answers:
+    gemini: X
+    qwen: X
+  answer:
+  - X
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s1_4
+  section: 1
+  number: 4
+  type: tf
+  page: 1
+  stem: 有一個角錐共有11 個頂點，則它的邊數有20 個。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
+  ai_answers:
+    gemini: O
+    qwen: O
+  answer:
+  - O
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s1_5
+  section: 1
+  number: 5
+  type: tf
+  page: 1
+  stem: 四分位數Q3 就是將資料由小到大排序，至多有$\frac{3}{4}$的資料小於或等於Q3，且至多有$\frac{1}{4}$的資料大於或等於Q3。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
+  ai_answers:
+    gemini: X
+    qwen: O
+    gemini_high: X
+  answer:
+  - X
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_中平_數學_g9s2e2_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 1
+  stem: 若$k$為投擲一粒公正骰子的點數，則二次函數$y = 2x^{2} + k$圖形的頂點坐標，低於二次函數$y = -2(x - 3)^{2} + 3$圖形頂點坐標的機率？
+  options:
+  - label: A
+    content: $\frac{1}{3}$
+  - label: B
+    content: $\frac{1}{2}$
+  - label: C
+    content: $\frac{2}{3}$
+  - label: D
+    content: $\frac{5}{6}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_2
+  section: 2
+  number: 2
+  type: single
+  page: 1
+  stem: 已知二次函數$y = a(x - h)^{2} + k$的圖形可由二次函數$y = 2x^{2}$平移後得到，其對稱軸為直線 $x + 2 = 0$，且其圖形通過$(1,
+    13)$，則下列敘述何者正確？
+  options:
+  - label: A
+    content: 圖形的頂點座標為(2,-5)
+  - label: B
+    content: 圖形與y軸交點座標為(0,-3)
+  - label: C
+    content: 圖形開口向下
+  - label: D
+    content: 當$x = -2$時，$y$有最小值-5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_3
+  section: 2
+  number: 3
+  type: single
+  page: 1
+  stem: '已知二次函數甲: $y = -3(x + 1)^{2}$、乙: $y = a(x - 2)^{2} + 3$、丙: $y = \frac{1}{3}(x
+    - 6)^{2} - 3$，若其圖形開口大小為甲<乙<丙，且a為整數，則a可能的值有幾個?'
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: '4'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_4
+  section: 2
+  number: 4
+  type: single
+  page: 1
+  stem: 如右圖，正$\triangle OAB$，$B$ 點在拋物線$y = x^{2}$上，$O$ 是原點，$A$ 點在$x$軸上，求正$\triangle
+    OAB$ 面積為何?
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: $2\sqrt{3}$
+  - label: C
+    content: $3\sqrt{3}$
+  - label: D
+    content: '6'
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_113_新北_中平_數學_g9s2e2/s2_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 553.09
+      - 574.69
+      - 672.22
+      - 719.02
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_5
+  section: 2
+  number: 5
+  type: single
+  page: 1
+  stem: 將二次函數$y = 3(x - 2)^{2} + 6$的圖形以x 軸為對稱軸，向下摺疊，則翻轉後此圖形的二次函數為何?
+  options:
+  - label: A
+    content: $y = -3(x - 2)^{2} - 6$
+  - label: B
+    content: $y = -3(x - 2)^{2} + 6$
+  - label: C
+    content: $y = -3(x + 2)^{2} + 6$
+  - label: D
+    content: $y = 3(x - 2)^{2} - 6$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 1-2
+      title: 二次函數圖形與最大值、 最小值
+      chapter: 第1章 二次函數
+    textbook: 九下 1-2 二次函數圖形與最大值、 最小值
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_6
+  section: 2
+  number: 6
+  type: single
+  page: 1
+  stem: 一群資料由小到大依序為1、1、2、3、4、8、z、13、x、y、19、21。若四分位距是12.5，平均數是9.5，則$Q_{2}$ 為何？
+  options:
+  - label: A
+    content: '9.5'
+  - label: B
+    content: '10'
+  - label: C
+    content: '10.5'
+  - label: D
+    content: '11'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_7
+  section: 2
+  number: 7
+  type: single
+  page: 1
+  stem: 有12 個數值資料成等差數列，且這12 個數的四分位距為24，則公差為多少？
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '5'
+  - label: C
+    content: '6'
+  - label: D
+    content: '7'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_8
+  section: 2
+  number: 8
+  type: single
+  page: 2
+  stem: '某校九年級共有249 位同學，每人都接受定點投籃測驗，一次投10 球，投籃命中球數的次數分配表如下，若從中任意選出一人，試問此人投籃命中球數在第3
+    四分位數的機率?(素養題)
+
+
+    | 命中球數(球) | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+    :--- |
+
+    | 次數(人) | 5 | 16 | 20 | 21 | 32 | 41 | 36 | 30 | 22 | 15 | 11 |'
+  options:
+  - label: A
+    content: $\frac{36}{249}$
+  - label: B
+    content: $\frac{30}{249}$
+  - label: C
+    content: $\frac{22}{249}$
+  - label: D
+    content: $\frac{15}{249}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-2
+      title: 機率
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-2 機率
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_9
+  section: 2
+  number: 9
+  type: single
+  page: 2
+  stem: 將一顆均勻的骰子連續投擲兩次，假設第一次、第二次出現的點數分別以x、y 表示，試求x＋y 的和是合數的機率?
+  options:
+  - label: A
+    content: $\frac{5}{12}$
+  - label: B
+    content: $\frac{4}{9}$
+  - label: C
+    content: $\frac{1}{2}$
+  - label: D
+    content: $\frac{7}{12}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-2
+      title: 機率
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-2 機率
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_10
+  section: 2
+  number: 10
+  type: single
+  page: 2
+  stem: 如右圖，在三角柱中，$\overline{AB} = 5$ ，$\overline{BC} = 8$，$\overline{BF} = 12$，若G
+    點為$\overline{BF}$上的某一點，則當$\overline{AG} + \overline{GD}$最少時，$\overline{BG} = ?$
+  options:
+  - label: A
+    content: $\frac{59}{13}$
+  - label: B
+    content: $\frac{60}{13}$
+  - label: C
+    content: $\frac{191}{13}$
+  - label: D
+    content: $\frac{192}{13}$
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_新北_中平_數學_g9s2e2/s2_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 523.96
+      - 444.76
+      - 627.71
+      - 581.89
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_11
+  section: 2
+  number: 11
+  type: single
+  page: 2
+  stem: 如右圖，有一個正六角錐，其底面正六邊形的面積為$384\sqrt{3}$平方公分，側面等腰三角形的腰長為17 公分，求A 點到底面正六邊形的距離為多少公分?
+  options:
+  - label: A
+    content: $\sqrt{30}$
+  - label: B
+    content: $\sqrt{31}$
+  - label: C
+    content: $\sqrt{33}$
+  - label: D
+    content: $\sqrt{34}$
+  assets:
+  - key: s2_11_f1
+    kind: figure
+    file: doc_113_新北_中平_數學_g9s2e2/s2_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 531.16
+      - 636.55
+      - 647.35
+      - 774.98
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s2_12
+  section: 2
+  number: 12
+  type: single
+  page: 2
+  stem: 如右圖，將一張黏在細棍上的三角形紙板，減掉上半部分後，再旋轉一周會得到一個立體圖形，求此立體圖形的表面積為多少平方公分?
+  options:
+  - label: A
+    content: 300$\pi$
+  - label: B
+    content: 330$\pi$
+  - label: C
+    content: 360$\pi$
+  - label: D
+    content: 390$\pi$
+  assets:
+  - key: s2_12_f1
+    kind: figure
+    file: doc_113_新北_中平_數學_g9s2e2/s2_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 519.71
+      - 819.16
+      - 628.36
+      - 975.93
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: 中平國中舉辦校慶園遊會，只要消費滿100 元，都可以參加抽獎活動。若923 攤位的抽獎箱中有6 顆大小相同的球，顏色分別為2 顆黑球及4 顆白球，自箱中依序抽出兩顆球，取後放回，若兩顆球的顏色相同，便可以10
+    元帶走一杯飲料；求當消費滿100 元時，抽出10 元飲料優惠的機率為多少? (素養題)
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-2
+      title: 機率
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-2 機率
+    labeled_by: ai
+  ai_answers:
+    gemini: $\frac{5}{9}$
+    qwen: \frac{5}{9}
+  answer:
+  - $\frac{5}{9}$
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 如右圖，小新將他與七位朋友的體重繪製成盒狀圖，但不慎打翻東西，圖形沾上汙漬，導致第一四分位數Q1 無法辨識。已知她們八人體重的算術平均數和中位數相同，則Q1
+    為何？
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_新北_中平_數學_g9s2e2/s3_2_f1.png
+    crop:
+      page: 3
+      rect:
+      - 437.24
+      - 329.24
+      - 643.75
+      - 392.07
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 2-1
+      title: 四分位數與盒狀圖
+      chapter: 第2章 統計與機率
+    textbook: 九下 2-1 四分位數與盒狀圖
+    labeled_by: ai
+  ai_answers:
+    gemini: '41.5'
+    qwen: '41.5'
+  answer:
+  - '41.5'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 如右圖是一個長方體，$\overline{FG} = 8$公分、$\overline{GH} = 6$公分、$\overline{DH} = 4$公分，且$\overline{AC}$與$\overline{BD}$相交於I
+    點。若想將繩子從I 點分別拉直連接至F、G 兩點，則$\triangle IFG$ 面積為多少平方公分？
+  assets:
+  - key: s3_3_f1
+    kind: figure
+    file: doc_113_新北_中平_數學_g9s2e2/s3_3_f1.png
+    crop:
+      page: 3
+      rect:
+      - 478.8
+      - 478.8
+      - 608.07
+      - 576.65
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
+  ai_answers:
+    gemini: '20'
+    qwen: '20'
+  answer:
+  - '20'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 右圖為裝水的長方體容器，內部長10 公分，寬4 公分、高13 公分。若將$\overline{AB}$邊放在桌面上，C 點離開桌面斜放，水面離長方體上的頂點分別為4
+    公分與5 公分，則此容器已裝水的體積為多少立方公分？
+  assets:
+  - key: s3_4_f1
+    kind: figure
+    file: doc_113_新北_中平_數學_g9s2e2/s3_4_f1.png
+    crop:
+      page: 3
+      rect:
+      - 469.31
+      - 644.73
+      - 627.71
+      - 783.16
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
+  ai_answers:
+    gemini: '340'
+    qwen: '340'
+  answer:
+  - '340'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_新北_中平_數學_g9s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 右圖是一個馬蹄形磁體，上半部恰好可看成大半圓柱挖去小半圓柱，求出這個馬蹄形磁鐵的體積是多少立方公分？
+  assets:
+  - key: s3_5_f1
+    kind: figure
+    file: doc_113_新北_中平_數學_g9s2e2/s3_5_f1.png
+    crop:
+      page: 3
+      rect:
+      - 507.93
+      - 812.95
+      - 628.36
+      - 948.11
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
+  ai_answers:
+    gemini: $30\pi+120$
+    qwen: 120+18\pi
+    gemini_high: 30\pi + 120
+  answer:
+  - 30\pi + 120
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_新北_中平_數學_g9s2e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 4
+  stem: (1) 求$\angle AOB$ 為多少度 ? (1 分)
+  group_stem: '1、如下圖，有一個半徑2 公尺，高12$\pi$公尺的圓柱桶橫躺地面，內裝汽油，油最深為1 公尺如(圖一)，今把圓柱桶直立如(圖二)，試問:
+    (素養題)'
+  shared_asset: g4_1_3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
+- id: doc_113_新北_中平_數學_g9s2e2_s4_2
+  section: 4
+  number: 2
+  type: calc
+  page: 4
+  stem: (2) 求灰色部分的弓形面積為多少平方公尺? (3 分)
+  group_stem: '1、如下圖，有一個半徑2 公尺，高12$\pi$公尺的圓柱桶橫躺地面，內裝汽油，油最深為1 公尺如(圖一)，今把圓柱桶直立如(圖二)，試問:
+    (素養題)'
+  shared_asset: g4_1_3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
+- id: doc_113_新北_中平_數學_g9s2e2_s4_3
+  section: 4
+  number: 3
+  type: calc
+  page: 4
+  stem: (3) 求汽油的高度a 為多少公尺 ? (3 分)
+  group_stem: '1、如下圖，有一個半徑2 公尺，高12$\pi$公尺的圓柱桶橫躺地面，內裝汽油，油最深為1 公尺如(圖一)，今把圓柱桶直立如(圖二)，試問:
+    (素養題)'
+  shared_asset: g4_1_3
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-1
+      title: 角柱與圓柱
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-1 角柱與圓柱
+    labeled_by: ai
+- id: doc_113_新北_中平_數學_g9s2e2_s4_4
+  section: 4
+  number: 4
+  type: single
+  page: 4
+  stem: (1) $\overleftrightarrow{BC}$與$\overleftrightarrow{AD}$為下列何者關係? (1 分)
+  options:
+  - label: A
+    content: 平行
+  - label: B
+    content: 垂直
+  - label: C
+    content: 歪斜
+  group_stem: '2、如下圖，書桌上黏著一個金字塔，金字塔是邊長都是5 公分的正四角錐，若P 點在正四角錐的$\overline{BC}$邊上，且$\overline{BP}
+    = \overline{PC}$，又Q 點在正四角錐的$\overline{DE}$邊上，且$\overline{EQ} = \overline{QD}$，現有一隻螞蟻在金字塔表面上爬行，試回答下列問題:'
+  shared_asset: g4_4_5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
+- id: doc_113_新北_中平_數學_g9s2e2_s4_5
+  section: 4
+  number: 5
+  type: calc
+  page: 4
+  stem: (2)螞蟻由P 至Q 的最短距離為多少公分？ (2 分)
+  group_stem: '2、如下圖，書桌上黏著一個金字塔，金字塔是邊長都是5 公分的正四角錐，若P 點在正四角錐的$\overline{BC}$邊上，且$\overline{BP}
+    = \overline{PC}$，又Q 點在正四角錐的$\overline{DE}$邊上，且$\overline{EQ} = \overline{QD}$，現有一隻螞蟻在金字塔表面上爬行，試回答下列問題:'
+  shared_asset: g4_4_5
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九下
+      subject: 數學
+      code: 3-2
+      title: 角錐與圓錐
+      chapter: 第3章 立體圖形
+    textbook: 九下 3-2 角錐與圓錐
+    labeled_by: ai
+shared_assets:
+- key: g4_1_3
+  label: 題組附圖
+  kind: figure
+  file: doc_113_新北_中平_數學_g9s2e2/g4_1_3_f1.png
+  used_by:
+  - doc_113_新北_中平_數學_g9s2e2_s4_1
+  - doc_113_新北_中平_數學_g9s2e2_s4_2
+  - doc_113_新北_中平_數學_g9s2e2_s4_3
+  crop:
+    page: 4
+    rect:
+    - 151.85
+    - 230.07
+    - 618.22
+    - 541.64
+- key: g4_4_5
+  label: 題組附圖
+  kind: figure
+  file: doc_113_新北_中平_數學_g9s2e2/g4_4_5_f1.png
+  used_by:
+  - doc_113_新北_中平_數學_g9s2e2_s4_4
+  - doc_113_新北_中平_數學_g9s2e2_s4_5
+  crop:
+    page: 4
+    rect:
+    - 438.87
+    - 681.05
+    - 643.75
+    - 855.49

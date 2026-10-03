@@ -1,0 +1,949 @@
+document:
+  grade: 8
+  subject: 數學
+  academic_year_roc: 113
+  semester: 2
+  exam_seq: 3
+  city: 台中
+  school_short: 向上
+  school: 臺中市立向上國民中學
+  scope_note: 第四冊3-5 ~ 4-3
+  id: doc_113_台中_向上_數學_g8s2e3
+  title: 臺中市立向上國民中學 113學年度第2學期第3次定期評量 8年級數學科試題
+  exam_name: 113學年度第2學期第3次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題 (請將你的答案填寫於答案卷上)
+    count: 10
+  - ord: 2
+    name: 二、填充題 (請將你的答案填寫於答案卷上)
+    count: 13
+  - ord: 3
+    name: 三、綜合應用題 (請將你的答案填寫於答案卷上)
+    count: 2
+  extractor: vlm:gemini-3.7-flash
+  source_file: 國二/數學/113/2-3/台中/向上.pdf
+  scope:
+    lessons:
+    - number: 3-5
+      title: null
+    - number: 4-3
+      title: null
+    publisher: null
+    raw: 第四冊3-5 ~ 4-3
+    volume: 第四冊
+  chapter_index:
+    publisher: 翰林
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
+questions:
+- id: doc_113_台中_向上_數學_g8s2e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 有二線段分別長為 6.6 公分與 10.7 公分，則下列哪一個線段長能與這二線段圍成一個三角形？
+  options:
+  - label: A
+    content: '4.1'
+  - label: B
+    content: '3.9'
+  - label: C
+    content: '17.2'
+  - label: D
+    content: '17.3'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 3-5
+      title: 三角形的邊角關係
+      chapter: 第3章 三角形的基本性質
+    textbook: 八下 3-5 三角形的邊角關係
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: A
+    gemini_high: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 在 $\triangle ABC$ 中，若 $\overline{AB} = 7$、$\overline{BC} = \sqrt{43}$、$\overline{CA}
+    = 8$，則 $\angle A$、$\angle B$、$\angle C$ 的大小關係為何？
+  options:
+  - label: A
+    content: $\angle B > \angle C > \angle A$
+  - label: B
+    content: $\angle B > \angle A > \angle C$
+  - label: C
+    content: $\angle A > \angle C > \angle B$
+  - label: D
+    content: $\angle A > \angle B > \angle C$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 3-5
+      title: 三角形的邊角關係
+      chapter: 第3章 三角形的基本性質
+    textbook: 八下 3-5 三角形的邊角關係
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: D
+    gemini_high: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 如圖，直線 $L_{3}$ 為 $L_{1}$、$L_{2}$ 的截線，請問下列哪個選項可以說明 $L_{1}$ 和 $L_{2}$ 平行？
+  options:
+  - label: A
+    content: $\angle 1 + \angle 7 = 180^{\circ}$
+  - label: B
+    content: $\angle 2 + \angle 7 = 180^{\circ}$
+  - label: C
+    content: $\angle 2 = \angle 5$
+  - label: D
+    content: $\angle 3 = \angle 6$
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 277.85
+      - 354.11
+      - 384.87
+      - 450.65
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-1
+      title: 平行線與截角性質
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-1 平行線與截角性質
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: C
+    gemini_high: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 下列哪個選項中的條件無法說明四邊形 $ABCD$ 為平行四邊形？
+  options:
+  - label: A
+    content: $\overline{AB} \parallel \overline{CD}$ 和 $\overline{AB} = \overline{CD}$
+  - label: B
+    content: $\angle A + \angle B = 180^{\circ}$ 和 $\angle B + \angle C = 180^{\circ}$
+  - label: C
+    content: $\overline{AB} = \overline{AD} = \overline{BC} = \overline{CD}$
+  - label: D
+    content: $\overline{AB} = \overline{BC}$ 且 $\overline{AD} = \overline{CD}$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-2
+      title: 平行四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-2 平行四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_向上_數學_g8s2e3_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 有 6 枝木棒，其中 11 公分長的木棒有 3 枝，12 公分長的木棒也有 3 枝，今從此 6 枝木棒中任選 4 枝木棒作為四邊形的四邊長 (木棒粗細可忽略不計)，則無法組合出下列哪一種四邊形？
+  options:
+  - label: A
+    content: 菱形
+  - label: B
+    content: 梯形
+  - label: C
+    content: 長方形
+  - label: D
+    content: 平行四邊形
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-3
+      title: 特殊四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-3 特殊四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: B
+    gemini_high: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 若某銳角三角形三個邊的長度分別為 15、12、$x$，且 $x$ 為此銳角三角形的最短邊，則下列有關 $x$ 的範圍敘述何者正確？
+  options:
+  - label: A
+    content: $3 < x < 27$
+  - label: B
+    content: $3 < x < 12$
+  - label: C
+    content: $3 < x < 9$
+  - label: D
+    content: $9 < x < 12$
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 3-5
+      title: 三角形的邊角關係
+      chapter: 第3章 三角形的基本性質
+    textbook: 八下 3-5 三角形的邊角關係
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_向上_數學_g8s2e3_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 如右圖，平行四邊形 $ABCD$ 中，$E$ 為 $\overline{CD}$ 上一點，$F$ 為 $\overline{AE}$ 與 $\overline{BD}$
+    的交點，若 $\triangle ABF$、$\triangle BFE$、$\triangle EFD$ 與 $\triangle AFD$ 的面積分別為甲、乙、丙與丁，則下列推論何者正確？
+  options:
+  - label: A
+    content: 乙＜丙
+  - label: B
+    content: 乙＞丙
+  - label: C
+    content: 甲＋丙＝乙＋丁
+  - label: D
+    content: 甲＋乙＜丙＋丁
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s1_7_f1.png
+    crop:
+      page: 1
+      rect:
+      - 266.07
+      - 861.38
+      - 405.82
+      - 952.04
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-2
+      title: 平行四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-2 平行四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: A
+    gemini_high: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 右圖中每個小方格皆為正方形，從 $A$ 點行走至 $B$ 點，則下列哪條走法的路徑長最短？
+  options:
+  - label: A
+    content: $A \rightarrow C \rightarrow D \rightarrow B$
+  - label: B
+    content: $A \rightarrow E \rightarrow F \rightarrow B$
+  - label: C
+    content: $A \rightarrow G \rightarrow H \rightarrow B$
+  - label: D
+    content: $A \rightarrow I \rightarrow J \rightarrow B$
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s1_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 237.6
+      - 957.93
+      - 422.51
+      - 1101.93
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 3-4
+      title: 中垂線與角平分線性質
+      chapter: 第3章 三角形的基本性質
+    textbook: 八下 3-4 中垂線與角平分線性質
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: C
+    gemini_high: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 在 $\triangle ABC$ 中，已知 $\angle ABC = 90^{\circ}$，且 $\angle A > \angle C$，若
+    $\overline{BD}$ 垂直 $\overline{AC}$ 且交 $\overline{AC}$ 於 $D$ 點，則 $\overline{AD}$
+    與 $\overline{CD}$ 的長短關係為下列哪個選項？
+  options:
+  - label: A
+    content: $\overline{AD} < \overline{CD}$
+  - label: B
+    content: $\overline{AD} > \overline{CD}$
+  - label: C
+    content: $\overline{AD} = \overline{CD}$
+  - label: D
+    content: 條件不足，無法確定
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s1_9_f1.png
+    crop:
+      page: 1
+      rect:
+      - 650.95
+      - 100.47
+      - 741.93
+      - 206.51
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 3-5
+      title: 三角形的邊角關係
+      chapter: 第3章 三角形的基本性質
+    textbook: 八下 3-5 三角形的邊角關係
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: B
+    gemini_high: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 已知 $ABCD$ 與 $CDEF$ 為二個全等的平行四邊形，請問下列圖 (甲)、(乙)、(丙)、(丁) 、(戊)等五圖中，有幾個的灰色區域面積相等？
+  options:
+  - label: A
+    content: 2 個
+  - label: B
+    content: 3 個
+  - label: C
+    content: 4 個
+  - label: D
+    content: 5 個
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s1_10_f1.png
+    crop:
+      page: 1
+      rect:
+      - 443.78
+      - 256.58
+      - 800.84
+      - 435.27
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-2
+      title: 平行四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-2 平行四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_向上_數學_g8s2e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 如右圖，$L_{1} \parallel L_{2}$，已知 $\angle 1 = 49^{\circ}$，$\angle 2 = 58^{\circ}$，則
+    $\angle ABC$ 的度數為 (A) 度。
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 595.31
+      - 524.62
+      - 751.75
+      - 628.04
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-1
+      title: 平行線與截角性質
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-1 平行線與截角性質
+    labeled_by: ai
+  ai_answers:
+    gemini: '107'
+    qwen: '107'
+  answer:
+  - '107'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_向上_數學_g8s2e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 如右圖，平行四邊形 $ABCD$ 中，$\angle A = (2x + 13)^{\circ}$、$\angle C = (4x - 28)^{\circ}$，則
+    $\angle B =$ (B) 度。
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 606.44
+      - 649.64
+      - 756.0
+      - 736.36
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-2
+      title: 平行四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-2 平行四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: '126'
+    qwen: '105'
+    gemini_high: '126'
+  answer:
+  - '126'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 如右圖，$L_{1} \parallel L_{2}$，若 $\angle 1 = 78^{\circ}$，$\angle 2 = 60^{\circ}$，且
+    $\overline{BO}$ 平分 $\angle DBC$，則 $\angle 3 =$ (C) 度。
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 614.62
+      - 735.38
+      - 756.0
+      - 869.89
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-1
+      title: 平行線與截角性質
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-1 平行線與截角性質
+    labeled_by: ai
+  ai_answers:
+    gemini: '9'
+    qwen: '21'
+    gemini_high: '9'
+  answer:
+  - '9'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 如右圖，$L_{1} \parallel L_{2}$，若 $\angle 1 = 16^{\circ}$，$\angle 2 = 72^{\circ}$，$\angle
+    4 = 34^{\circ}$，$\angle 5 = 77^{\circ}$，則 $\angle 3 =$ (D) 度。
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 627.38
+      - 863.67
+      - 774.65
+      - 965.13
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-1
+      title: 平行線與截角性質
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-1 平行線與截角性質
+    labeled_by: ai
+  ai_answers:
+    gemini: '81'
+    qwen: '41'
+    gemini_high: '99'
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_台中_向上_數學_g8s2e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 如右圖，$L \parallel M$，四邊形 $ABCD$ 為正方形，且 $C$ 點在 $M$ 上。若 $\angle 1 = 28^{\circ}$，則
+    $\angle 2 + \angle 3 =$ (E) 度。
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 624.76
+      - 997.2
+      - 791.35
+      - 1110.11
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-1
+      title: 平行線與截角性質
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-1 平行線與截角性質
+    labeled_by: ai
+  ai_answers:
+    gemini: '79'
+    qwen: '118'
+    gemini_high: '79'
+  answer:
+  - '79'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 如右圖，四邊形 $ABCD$ 為長方形，其對角線 $\overline{AC}$ 與 $\overline{BD}$ 相交於 $O$ 點，已知 $\overline{AE}$
+    平分 $\angle BAD$ 且與 $\overline{BD}$ 相交於 $F$，若 $\angle AOD = 130^{\circ}$，則 $\angle
+    AFB =$ (F) 度。
+  assets:
+  - key: s2_6_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 228.11
+      - 107.67
+      - 383.89
+      - 205.53
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-3
+      title: 特殊四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-3 特殊四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: '70'
+    qwen: '110'
+    gemini_high: '70'
+  answer:
+  - '70'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 平行四邊形 $ABCD$ 中，$\overline{AB}$ 比 $\overline{BC}$ 多 18 公分，$\overline{CD}$ 是
+    $\overline{AD}$ 的 1.5 倍，則平行四邊形 $ABCD$ 的周長為 (G) 。
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-2
+      title: 平行四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-2 平行四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: '180'
+    qwen: 108公分
+    gemini_high: '180'
+  answer:
+  - '180'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 如下圖，四邊形 $ABCD$ 為菱形，$AC$ 與 $BD$ 為其對角線，已知 $BD = 10$，$AC = 6$，則菱形 $ABCD$ 的周長為
+    (H) 。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 82.47
+      - 348.22
+      - 203.56
+      - 435.27
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-3
+      title: 特殊四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-3 特殊四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: 4\sqrt{34}
+    qwen: '20'
+    gemini_high: 4\sqrt{34}
+  answer:
+  - 4\sqrt{34}
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 有甲、乙、丙、丁等四個四邊形，皆不知道它們的邊長與四個角角度為何，但有它們的對角線長度與對角線夾角角度關係如下列圖 (甲)、(乙)、(丙)、(丁)
+    所示，請依據圖中的線索判斷甲、乙、丙、丁等四個四邊形的面積大小關係為 (I) (以甲、乙、丙、丁作為面積代號)。
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 68.4
+      - 553.09
+      - 405.82
+      - 687.6
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-3
+      title: 特殊四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-3 特殊四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: 丁＞乙＝丙＞甲
+    qwen: 乙=丙＞甲＞丁
+    gemini_high: 丁 > 乙 = 丙 > 甲
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_台中_向上_數學_g8s2e3_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 如右圖，在同一平面上，四邊形 $ABCD$、$ABFE$、$CDEF$ 都是平行四邊形。已知 $\angle BCD = 110^{\circ}$、$\angle
+    AEF = 100^{\circ}$、$\angle CFE = 35^{\circ}$，則 $\angle ADE + \angle FBC =$ (J)
+    度。
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 222.22
+      - 747.16
+      - 418.58
+      - 874.47
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-2
+      title: 平行四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-2 平行四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: '65'
+    qwen: '145'
+    gemini_high: '65'
+  answer:
+  - '65'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 有一個四芒星圖案如右圖所示，已知 $\overline{AC}$ 與 $\overline{DB}$ 互相垂直平分，$\overline{EG}$
+    與 $\overline{FH}$ 互相垂直平分，四條線段相交 $O$ 點，且 $\overline{EG}$ 平分 $\angle AOD$，若 $\overline{AC}
+    = \overline{BD} = 10$，$\overline{EG} = \overline{FH} = 24$，則此四芒星的面積為 (K) 。
+  assets:
+  - key: s2_11_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 289.64
+      - 870.87
+      - 421.85
+      - 993.6
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-3
+      title: 特殊四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-3 特殊四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: 120\sqrt{2}
+    qwen: '240'
+    gemini_high: 120\sqrt{2}
+  answer:
+  - 120\sqrt{2}
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 如右圖，$ABCD$ 與 $AEFD$ 皆為平行四邊形，已知 $\overline{AD} = 10$，若 $\triangle ABE$ 與 $\triangle
+    DCF$ 的面積和等於 $AECD$ 面積的一半，則 $\overline{CE}$ 與 $\overline{BF}$ 的比為 (L) 。
+  assets:
+  - key: s2_12_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 260.18
+      - 1030.58
+      - 400.91
+      - 1130.4
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-2
+      title: 平行四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-2 平行四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: '3:7'
+    qwen: '1:2'
+    gemini_high: '3:7'
+  answer:
+  - '3:7'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 如下圖，直線 $L_{1} \parallel L_{2}$ 且 $L_{3} \parallel L_{4}$，已知四邊形 $ABCD$ 為平行四邊形，$G$
+    為 $\overline{AC}$ 與 $\overline{BD}$ 的交點，$\triangle CDG$ 的面積為 13，$\overline{BC}
+    = 10$，$\overline{BE} = 8$，請問 $\triangle FEB$ 的面積為 (M) 。
+  assets:
+  - key: s2_13_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s2_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 477.49
+      - 124.36
+      - 696.44
+      - 235.31
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-2
+      title: 平行四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-2 平行四邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: '26'
+    qwen: '13'
+    gemini_high: '26'
+  answer:
+  - '26'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_向上_數學_g8s2e3_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '已知 $ABCDEF$ 為正六邊形，其邊長為 10，請問：
+
+    （1）若 $G$、$H$ 分別為 $\overline{AB}$ 與 $\overline{CD}$ 邊上的中點，如下圖 1，則 $\overline{GH}$
+    的長為多少？(2 分)
+
+    （2）若分別取 $\overline{AB}$、$\overline{CD}$ 與 $\overline{EF}$ 邊上各一點為 $P$、$Q$、$R$，使得
+    $\overline{PQ} \parallel \overline{BC}$，$\overline{QR} \parallel \overline{DE}$，且
+    $\overline{AP}$ 長度是 $\overline{PB}$ 長度的 2 倍，如下圖 2，則四邊形 $PBCQ$ 與四邊形 $QDER$ 的周長和是多少？(2
+    分)'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 467.35
+      - 416.29
+      - 761.24
+      - 553.09
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-3
+      title: 特殊四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-3 特殊四邊形
+    labeled_by: ai
+- id: doc_113_台中_向上_數學_g8s2e3_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: '已知 $ABCD$ 為正方形，其邊長為 1。今將 $\overline{BC}$ 摺至 $\overline{AC}$ 上，使 $B$ 落在 $\overline{AC}$
+    上為 $B''$ 點，得摺線 $\overline{CE}$，再將 $\overline{AD}$ 摺至 $\overline{AC}$ 上，使 $D$ 落在
+    $\overline{AC}$ 上為 $D''$ 點，得摺線 $\overline{AF}$，請回答下列問題：
+
+    （1）$\overline{AF}$ 是否平行 $\overline{CE}$？請簡單說明理由。(2 分)
+
+    （2）$\overline{AE}$ 的長度為多少？(2 分)'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_台中_向上_數學_g8s2e3/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 448.04
+      - 732.76
+      - 741.93
+      - 844.69
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 八下
+      subject: 數學
+      code: 4-3
+      title: 特殊四邊形
+      chapter: 第4章 平行與四邊形
+    textbook: 八下 4-3 特殊四邊形
+    labeled_by: ai
