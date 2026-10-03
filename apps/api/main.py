@@ -21,6 +21,7 @@ from sqlalchemy.orm import Session, selectinload
 
 from .db import get_session, init_db, search_ids
 from . import taxonomy
+from .storage import asset_path
 from .export import Item, clean_stem, render, to_pdf
 from .mathfmt import render as md
 from .models import (Asset, Document, Option, Paper, PaperItem, Question,
@@ -450,11 +451,11 @@ def export_paper(pid: str, request: Request,
 
 @app.get("/assets/{path:path}")
 def asset(path: str) -> FileResponse:
-    # 防目錄穿越：解析後必須仍在資產根目錄底下
-    target = (ASSET_ROOT / path).resolve()
-    if not target.is_file() or ASSET_ROOT not in target.parents:
+    # asset_path 會擋目錄穿越；本機沒有時從 Supabase Storage 取回並快取
+    target = asset_path(path)
+    if not target:
         raise HTTPException(404, "找不到檔案")
-    return FileResponse(target)
+    return FileResponse(target, media_type="image/png", headers={"Cache-Control": "public, max-age=604800"})
 
 
 @app.get("/", response_class=HTMLResponse)

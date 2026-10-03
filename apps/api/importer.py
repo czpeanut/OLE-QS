@@ -17,7 +17,7 @@ import yaml
 from sqlalchemy import delete
 from sqlalchemy.orm import Session
 
-from .db import get_session, init_db, reindex_question
+from .db import IS_PG, get_session, init_db, reindex_question
 from .quality import evaluate, summarize
 from .models import (Asset, AssetKind, AnswerStatus, Document, Option,
                      Question, QuestionSource, QuestionType, ReviewStatus,
@@ -56,12 +56,13 @@ def import_document(session: Session, doc: dict, source_file: str | None = None)
     # 重載：整份清掉再寫。
     # 題目已不隨文件級聯刪除（見 models.Document.questions），
     # 因此這裡必須明確刪除本文件匯入的題目，否則重跑會殘留舊題。
+    if not IS_PG:        # Postgres 的 question_search 隨題目級聯刪除；SQLite 的 FTS 表要自己清
+        session.execute(
+            __import__("sqlalchemy").text(
+                "DELETE FROM question_fts WHERE question_id IN "
+                "(SELECT id FROM question WHERE document_id = :d)"), {"d": doc_id})
     session.execute(delete(Question).where(Question.document_id == doc_id))
     session.execute(delete(Document).where(Document.id == doc_id))
-    session.execute(
-        __import__("sqlalchemy").text(
-            "DELETE FROM question_fts WHERE question_id IN "
-            "(SELECT id FROM question WHERE document_id = :d)"), {"d": doc_id})
     session.flush()
 
     d = Document(

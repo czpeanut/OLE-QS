@@ -9,3 +9,4 @@ uvicorn[standard]>=0.29
 SQLAlchemy>=2.0
 pydantic>=2.6
 playwright>=1.45        # 匯出 PDF（headless Chromium）
+psycopg[binary]>=3.1     # 連 Supabase Postgres（設了 OLEQS_DATABASE_URL 時）

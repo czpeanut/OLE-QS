@@ -22,6 +22,7 @@ from pathlib import Path
 
 from .mathfmt import MATH_CSS, render as md
 from .models import Question
+from .storage import asset_path
 
 TYPE_ORDER = ["single", "multiple", "tf", "fill", "matching", "calc", "essay", "group"]
 TYPE_NAME = {"single": "單選題", "multiple": "多選題", "tf": "是非題", "fill": "填充題",
@@ -80,7 +81,8 @@ class Renderer:
         self.narrow = columns == 2
 
     def img(self, file: str, alt: str = "") -> str:
-        w = _png_width(str(self.root / file))
+        local = asset_path(file)
+        w = _png_width(str(local)) if local else None
         style = f' style="width:{w / CROP_DPI * 25.4:.1f}mm"' if w else ""
         return f'<img src="{self.url}{esc(file)}" alt="{esc(alt)}"{style}>'
 
