@@ -5,7 +5,8 @@ import { ok } from "../shared";
 export const dynamic = "force-dynamic";
 
 // 一個集合的全部紀錄（回報、審完、邊緣調整、審題者名字）
-export async function GET(_req: NextRequest, { params }: { params: { site: string; collection: string } }) {
+export async function GET(_req: NextRequest, ctx: { params: Promise<{ site: string; collection: string }> }) {
+  const params = await ctx.params;
   if (!ok(params.site, params.collection)) return NextResponse.json({ error: "bad path" }, { status: 400 });
   const out: { id: string; data: unknown }[] = [];
   for (let from = 0; ; from += 1000) {
