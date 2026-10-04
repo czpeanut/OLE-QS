@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>題庫審題台</title>
+<style>
+:root{--bg:#f4f5f7;--panel:#fff;--line:#e1e4e9;--ink:#1b1f24;--muted:#687280;--accent:#2563c9}
+@media (prefers-color-scheme:dark){:root{--bg:#13161a;--panel:#1b1f25;--line:#2b3139;--ink:#e5e8ec;--muted:#99a2ae;--accent:#6aa2f2}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 "Noto Sans TC","Noto Sans CJK TC",system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px}
+h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+a.site{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;color:inherit;text-decoration:none}
+a.site:hover{border-color:var(--accent)}
+a.site b{font-size:18px}a.site span{display:block;color:var(--muted);font-size:13px}
+.back{display:inline-block;margin-top:20px;color:var(--accent)}
+</style></head>
+<body><main>
+<h1>題庫審題台</h1>
+<p class="sub">依年級與學期分站。回報、審完標記與附圖邊緣調整會自動儲存，所有審題者共用。</p>
+<div class="grid">
+  <a class="site" href="/review/7-1"><b>國一上學期</b><span>七年級第一學期各次段考</span></a>
+  <a class="site" href="/review/7-2"><b>國一下學期</b><span>七年級第二學期各次段考</span></a>
+  <a class="site" href="/review/8-1"><b>國二上學期</b><span>八年級第一學期各次段考</span></a>
+  <a class="site" href="/review/8-2"><b>國二下學期</b><span>八年級第二學期各次段考</span></a>
+  <a class="site" href="/review/9-1"><b>國三上學期</b><span>九年級第一學期各次段考</span></a>
+  <a class="site" href="/review/9-2"><b>國三下學期</b><span>九年級第二學期各次段考</span></a>
+</div>
+<a class="back" href="/">← 回到選題組卷</a>
+</main></body></html>

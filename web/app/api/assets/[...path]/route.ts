@@ -8,5 +8,6 @@ export async function GET(_req: NextRequest, { params }: { params: { path: strin
   const r = await fetchAsset(rel);
   if (!r.ok) return new NextResponse("not found", { status: 404 });
   return new NextResponse(r.body, { headers: { "Content-Type": "image/png",
-    "Cache-Control": "public, max-age=604800, s-maxage=2592000, immutable" } });
+    // 附圖會因校正邊界而重新裁切（路徑不變），快取一天就好
+    "Cache-Control": "public, max-age=86400, s-maxage=86400" } });
 }
