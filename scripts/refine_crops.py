@@ -131,7 +131,8 @@ def process(path: str, pdf_root: str, assets_dir: str, apply: bool) -> tuple[str
     log = []
     for a, _ in assets_of(d):
         c = a.get("crop")
-        if not a.get("file") or not c or a.get("crop_by") == "human" or not 1 <= c["page"] <= len(doc):
+        # 人工調整過的不動；已自動校正過的也跳過（中斷後重跑不會在新框上再校正一次）
+        if not a.get("file") or not c or a.get("crop_by") in ("human", "auto") or not 1 <= c["page"] <= len(doc):
             continue
         n_seen += 1
         page = doc[c["page"] - 1]
@@ -202,6 +203,8 @@ def main() -> int:
         paths = random.sample(paths, min(args.sample, len(paths)))
     seen = chg = 0
     logs: list[dict] = []
+    log_path = Path("out/refine_crops_log.jsonl" if args.apply else "out/refine_crops_sample.jsonl")
+    out_log = log_path.open("a" if args.apply else "w", encoding="utf-8")     # 套用時逐份累加，中斷也留得住
     with ProcessPoolExecutor(args.workers) as pool:
         futs = [pool.submit(process, p, str(args.pdf_root), str(args.assets), args.apply) for p in paths]
         for i, f in enumerate(as_completed(futs), 1):
@@ -209,11 +212,12 @@ def main() -> int:
             seen += s
             chg += c
             logs += log
+            out_log.write("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in log))
+            out_log.flush()
             if i % 200 == 0:
                 print(f"[{i}/{len(paths)}] 檢查 {seen:,} 張、校正 {chg:,} 張", flush=True)
+    out_log.close()
     print(f"檢查 {seen:,} 張附圖，校正 {chg:,} 張（{chg / max(seen, 1):.0%}）")
-    log_path = Path("out/refine_crops_log.jsonl" if args.apply else "out/refine_crops_sample.jsonl")
-    log_path.write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in logs), encoding="utf-8")
     if args.sample and logs:
         random.seed(1)
         sheet(random.sample(logs, min(36, len(logs))), args.pdf_root, args.bank, args.out)
