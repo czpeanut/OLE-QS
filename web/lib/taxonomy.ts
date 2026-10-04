@@ -1,6 +1,7 @@
 // 選題篩選用的分類樹：科目 → 子科 → 冊別 → 版本 → 單元（與 apps/api/taxonomy.py 同規則）。
 import data from "./data/curriculum.json";
 import counts from "./data/counts.json";
+import patternData from "./data/patterns.json";
 
 export const SUBJECTS = ["國文", "英語", "數學", "自然", "社會"];
 export const SUBS: Record<string, string[]> = { 自然: ["生物", "理化", "地科"], 社會: ["歷史", "地理", "公民"] };
@@ -13,7 +14,20 @@ export function bookName(grade: number, semester: number | null): string {
   return BOOKS.find(([g, s]) => g === grade && s === semester)?.[2] ?? `${grade}年級`;
 }
 
-export interface Unit { code: string; title: string; chapter: string | null; subject: string; lessons?: Record<string, string>; key: string; count: number }
+export interface Pattern { key: string; code: string; name: string; desc: string; n: number }
+export interface Unit { code: string; title: string; chapter: string | null; subject: string; lessons?: Record<string, string>; key: string; count: number; patterns?: Pattern[] }
+
+// 數學題型目錄（scripts/math_patterns.py）：單元鍵「年級-學期_代號」→ 題型；題目的題型標籤是「單元鍵:題型代號」
+type PatternUnit = { title: string; types: { code: string; name: string; desc: string; n: number }[] };
+const PATTERNS = patternData as Record<string, PatternUnit>;
+export function unitPatterns(grade: number, semester: number, code: string): Pattern[] {
+  const k = `${grade}-${semester}_${code}`;
+  return (PATTERNS[k]?.types ?? []).map((t) => ({ key: `${k}:${t.code}`, ...t }));
+}
+export function patternName(key: string): string | null {
+  const [k, code] = key.split(":");
+  return PATTERNS[k]?.types.find((t) => t.code === code)?.name ?? null;
+}
 
 type Raw = Record<string, unknown>;
 const junior = (data as { junior: Raw }).junior as Record<string, Record<string, Record<string, Record<string, Record<string, Raw[]>>>>>;
@@ -43,7 +57,8 @@ export function units(subject: string, sub: string | null, grade: number, semest
       const subj = s || subject;
       out.push({ code, title: u.title as string,
                  chapter: u.chapter ? `第${u.chapter}章 ${u.chapter_title}` : ((u.kind as string) ?? null),
-                 subject: subj, key: `${subj}|${code}`, count: n(subj, code) });
+                 subject: subj, key: `${subj}|${code}`, count: n(subj, code),
+                 ...(subject === "數學" ? { patterns: unitPatterns(grade, semester, code) } : {}) });
     }
   }
   return out;

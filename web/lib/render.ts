@@ -154,6 +154,8 @@ export function renderPaper(title: string, items: Item[], mode: "exam" | "answer
             : q.answer_status === "disputed" ? "（模型答案不一致，待判定）" : "";
           parts.push(`<div class="ans">答：${esc((q.answer ?? []).join("、") || "（無答案）")}<span class="warn">${esc(note)}</span></div>`);
           if (q.explanation) parts.push(`<div class="expl">${md(q.explanation)}</div>`);
+          const km = [q.pattern ? `題型：${esc(q.pattern.name)}` : "", q.difficulty ? `難度 ${q.difficulty}／5（AI 評估）` : ""].filter(Boolean);
+          if (km.length) parts.push(`<div class="kmeta">${km.join("　")}</div>`);
         }
         parts.push(`<div class="cite">${esc(q.citation)}</div>`);
         const score = st.show_score && it.score ? `<span class="sc">（${it.score} 分）</span>` : "";
@@ -208,6 +210,7 @@ figcaption { font-size: .8em; }
 .lines { margin-top: 4px; } .lines .ln { border-bottom: 1px solid #999; height: 2em; }
 .cite { font-size: .68em; color: #777; text-align: right; line-height: 1.3; }
 .ans { color: #b00; font-weight: 700; } .ans .warn { font-weight: 400; font-size: .8em; margin-left: .4em; }
+.kmeta { font-size: .75em; color: #666; }
 .expl { font-size: .9em; border-left: 3px solid #ccc; padding: 2px 8px; margin-top: 2px; }
 .grid { display: grid; grid-template-columns: repeat(10, 1fr); border: 1px solid #000; margin-bottom: 8px; }
 .grid div { border: 1px solid #999; text-align: center; min-height: 2.3em; padding-top: .3em; }
