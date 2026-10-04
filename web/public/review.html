@@ -1,0 +1,748 @@
+<title>題庫審題台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script>window.katex || document.write('<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"><\/script>')</script>
+<style>
+/* 版面：左側是段考與考卷的目錄，右側照考卷原本的順序逐題排出；紅筆色只留給「回報」 */
+:root{
+  --paper:#fbfaf6; --panel:#f1efe8; --card:#ffffff; --ink:#1d2433; --muted:#626b7c;
+  --rule:#dcd8cc; --pen:#c0392b; --pen-soft:#fbe9e6; --ok:#2f7d4f; --ok-soft:#e5f2ea;
+  --warn:#9a6a00; --warn-soft:#fbf1d8; --focus:#2d5bd7;
+  --f-body:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+  --f-paper:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --f-code:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#15181e; --panel:#1c2028; --card:#20252e; --ink:#e6e8ee; --muted:#9aa3b2;
+  --rule:#343a46; --pen:#ef6b5b; --pen-soft:#3a2124; --ok:#6cc08e; --ok-soft:#1e3327;
+  --warn:#e2b44f; --warn-soft:#3a3120; --focus:#7aa2ff; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#15181e; --panel:#1c2028; --card:#20252e; --ink:#e6e8ee; --muted:#9aa3b2;
+  --rule:#343a46; --pen:#ef6b5b; --pen-soft:#3a2124; --ok:#6cc08e; --ok-soft:#1e3327;
+  --warn:#e2b44f; --warn-soft:#3a3120; --focus:#7aa2ff; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font:14px/1.6 var(--f-body)}
+button,select,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.wrap{display:grid;grid-template-columns:300px minmax(0,1fr);min-height:100vh}
+aside{background:var(--panel);border-right:1px solid var(--rule);padding-block:16px;padding-inline:16px;
+  position:sticky;top:env(safe-area-inset-top,0px);height:100vh;overflow:auto;display:flex;flex-direction:column;gap:14px}
+main{padding-block:20px 80px;padding-inline:24px;min-width:0}
+h1{font:700 18px/1.3 var(--f-body);margin:0;letter-spacing:.02em}
+.sub{color:var(--muted);font-size:12.5px}
+.field{display:flex;flex-direction:column;gap:4px}
+.field label{font-size:12px;color:var(--muted);letter-spacing:.06em}
+select,input[type=text],textarea{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:6px 8px;width:100%}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.btn{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:5px 10px;cursor:pointer}
+.btn{white-space:nowrap}
+.btn:hover{border-color:var(--muted)}
+.btn.pen{background:var(--pen);border-color:var(--pen);color:#fff}
+.btn.ghost{background:transparent}
+.papers{display:flex;flex-direction:column;gap:2px}
+.paper-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;text-align:left;background:transparent;border:1px solid transparent;
+  border-radius:var(--r);padding:6px 8px;cursor:pointer}
+.paper-item:hover{background:var(--card)}
+.paper-item[aria-current="true"]{background:var(--card);border-color:var(--rule)}
+.paper-item .n{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12.5px}
+.chip{display:inline-block;font-size:11.5px;line-height:1.5;padding:0 6px;border-radius:99px;border:1px solid var(--rule);color:var(--muted);white-space:nowrap}
+.chip.pen{color:var(--pen);border-color:var(--pen);background:var(--pen-soft)}
+.chip.ok{color:var(--ok);border-color:var(--ok);background:var(--ok-soft)}
+.chip.warn{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-variant-numeric:tabular-nums}
+.stat{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:6px 8px}
+.stat b{display:block;font-size:16px}
+.stat span{font-size:11.5px;color:var(--muted)}
+
+.paper-head{display:flex;flex-direction:column;gap:6px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:8px}
+.paper-head h2{font:600 20px/1.35 var(--f-paper);margin:0;text-wrap:balance}
+.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding-block:10px;position:sticky;top:env(safe-area-inset-top,0px);
+  background:var(--paper);z-index:2;border-bottom:1px solid var(--rule)}
+.toolbar label{display:flex;gap:6px;align-items:center;font-size:13px;cursor:pointer}
+.section-title{font:600 15px/1.4 var(--f-paper);margin:26px 0 6px;padding-top:6px;border-top:1px dashed var(--rule)}
+.passage{background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--muted);border-radius:var(--r);
+  padding:12px 14px;margin:14px 0 6px;font:15px/1.9 var(--f-paper)}
+.passage .lbl{font:12px var(--f-body);color:var(--muted);letter-spacing:.06em;display:block;margin-bottom:4px}
+.q{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 10px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.q.rejected .body{opacity:.62}
+.q.reported{background:linear-gradient(90deg,var(--pen-soft),transparent 60%)}
+.q.flash{animation:flash 1.6s ease-out}
+@keyframes flash{from{box-shadow:inset 0 0 0 2px var(--focus)}to{box-shadow:inset 0 0 0 2px transparent}}
+@media (prefers-reduced-motion:reduce){.q.flash{animation:none;box-shadow:inset 0 0 0 2px var(--focus)}}
+.num{font:600 17px/1.5 var(--f-paper);text-align:right;font-variant-numeric:tabular-nums}
+.body{min-width:0;display:flex;flex-direction:column;gap:8px}
+.meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.code{font:500 12.5px var(--f-code);letter-spacing:.08em;background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:0 6px;cursor:pointer}
+.code:hover{border-color:var(--ink)}
+.stem{font:16px/1.9 var(--f-paper);overflow-wrap:anywhere}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:4px 18px;font:15.5px/1.8 var(--f-paper)}
+.opt{display:flex;gap:6px;min-width:0}
+.opt .l{font-weight:600;flex:none}
+.opt.correct .l{color:var(--ok)}
+.figs{display:flex;gap:10px;flex-wrap:wrap}
+.figs img,.opt img,.passage img{max-width:100%;height:auto;background:#fff;border:1px solid var(--rule);border-radius:4px}
+.figs img{max-height:320px}
+.opt img{max-height:120px}
+.cropbox{position:relative;display:inline-block;overflow:hidden;background:#fff;border:1px solid var(--rule);border-radius:4px;vertical-align:top}
+.cropbox img{position:absolute;max-width:none!important;max-height:none!important;border:0!important;border-radius:0!important;height:auto}
+.cropwrap{display:inline-flex;flex-direction:column;align-items:flex-start;gap:2px;max-width:100%;vertical-align:top}
+.cropbtn{font-size:12px;line-height:1.2;padding:2px 4px;border:0;background:none;color:var(--muted);cursor:pointer;text-decoration:underline}
+.cropbtn:hover,.cropbtn:focus-visible{color:var(--pen)}
+.cropbox.adjusted{outline:2px solid var(--ok);outline-offset:1px}
+.cropedit{display:flex;flex-direction:column;gap:8px;padding:10px;background:var(--panel);border:1px solid var(--rule);border-radius:var(--r);width:100%}
+.stagewrap{overflow:hidden;padding:14px;max-width:100%;background:rgba(0,0,0,.38);border-radius:4px}
+.stage{position:relative;max-width:100%;touch-action:none;user-select:none;background:#fff}
+.stage img{display:block;width:100%;height:auto;max-height:none!important;border:0!important;border-radius:0!important}
+.sel{position:absolute;outline:2px solid var(--pen);box-shadow:0 0 0 9999px rgba(0,0,0,.38)}
+.oldsel{position:absolute;outline:2px dashed #f5b301;pointer-events:none;z-index:1}
+.hd{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:var(--pen);border:2px solid #fff;padding:0;cursor:pointer}
+.hd[data-e=n]{left:50%;top:0;cursor:ns-resize}.hd[data-e=s]{left:50%;top:100%;cursor:ns-resize}
+.hd[data-e=w]{left:0;top:50%;cursor:ew-resize}.hd[data-e=e]{left:100%;top:50%;cursor:ew-resize}
+.missing{font-size:12.5px;color:var(--warn);border:1px dashed var(--warn);border-radius:4px;padding:4px 8px}
+.foot{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--muted)}
+.why{font-size:12.5px;color:var(--pen)}
+.tbl{overflow-x:auto}
+.tbl table{border-collapse:collapse;font-size:14.5px}
+.tbl td,.tbl th{border:1px solid var(--rule);padding:3px 8px;vertical-align:top}
+.math-raw{font-family:var(--f-code);color:var(--warn)}
+math{font-size:1.08em}
+.katex-error{color:var(--pen)!important}
+
+.report{border:1px solid var(--pen);border-radius:var(--r);background:var(--pen-soft);padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+.report .cats{display:flex;gap:6px;flex-wrap:wrap}
+.report .cats label{display:flex;gap:4px;align-items:center;border:1px solid var(--rule);background:var(--card);border-radius:99px;padding:1px 10px;cursor:pointer;font-size:13px}
+.report .cats input:checked + span{color:var(--pen);font-weight:700}
+.report textarea{min-height:56px;resize:vertical}
+.report-note{font-size:13px;color:var(--pen)}
+.empty{color:var(--muted);padding:48px 0;text-align:center}
+.drawer{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.drawer ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.drawer a{color:var(--pen);cursor:pointer;text-decoration:underline}
+.banner{font-size:12.5px;border-radius:var(--r);padding:6px 10px;background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn)}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+@media (max-width:820px){
+  .wrap{grid-template-columns:minmax(0,1fr)}
+  aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--rule)}
+  main{padding-inline:16px}
+  .q{grid-template-columns:30px minmax(0,1fr)}
+}
+</style>
+
+<div class="wrap">
+  <aside>
+    <div>
+      <h1>題庫審題台</h1>
+      <div class="sub" id="builtInfo">載入題庫中…</div>
+    </div>
+    <div class="field">
+      <label for="jump">以審題編號找題</label>
+      <div class="row" style="flex-wrap:nowrap">
+        <input type="text" id="jump" placeholder="例如 7K2M9X" maxlength="10" autocomplete="off" style="font-family:var(--f-code);letter-spacing:.08em;text-transform:uppercase">
+        <button class="btn" id="jumpBtn">前往</button>
+      </div>
+      <div class="sub" id="jumpMsg" aria-live="polite"></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label for="fGrade">年級</label><select id="fGrade"></select></div>
+      <div class="field"><label for="fSubject">科目</label><select id="fSubject"></select></div>
+      <div class="field"><label for="fYear">學年度</label><select id="fYear"></select></div>
+      <div class="field"><label for="fExam">段考</label><select id="fExam"></select></div>
+    </div>
+    <div class="field">
+      <label>考卷</label>
+      <div class="papers" id="paperList"><div class="sub">選擇上方條件後列出考卷</div></div>
+    </div>
+    <div class="stats" id="reportStats"></div>
+  </aside>
+
+  <main>
+    <div id="dbBanner" class="banner" hidden></div>
+    <div class="drawer" id="drawer" hidden>
+      <div class="row" style="justify-content:space-between">
+        <b>已回報的題目</b>
+        <div class="row"><button class="btn" id="copyAll">複製全部編號與說明</button><button class="btn ghost" id="closeDrawer">收起</button></div>
+      </div>
+      <ol id="drawerList"></ol>
+    </div>
+    <div id="view"><div class="empty">從左側選一份考卷開始審題。<br>每一題右上角的六碼是審題編號，回報問題時用它指認題目。</div></div>
+  </main>
+</div>
+
+<script>
+/* ── 網站版接點：取代 claude.ai 頁面的資料庫與使用者身分 ── */
+(() => {
+  const SITE = location.pathname.split("/").filter(Boolean)[1] || "7-1";
+  window.REVIEW_BASE = `/api/review/${SITE}/files/`;
+  window.REVIEW_SITES = Object.fromEntries(["7-1","7-2","8-1","8-2","9-1","9-2"].map(k => [k, `/review/${k}`]));
+  const api = (site, col, id) => `/api/review/${site}/db/${col}` + (id ? "/" + encodeURIComponent(id) : "");
+  const listeners = new Map();          // 集合 → 訂閱函式
+  async function refresh(col){
+    const subs = listeners.get(col); if (!subs) return;
+    try {
+      const r = await fetch(api(SITE, col)); if (!r.ok) throw new Error(r.status);
+      const rows = await r.json();
+      const snap = {docs: rows.map(x => ({id: x.id, data: () => x.data}))};
+      subs.forEach(s => s.cb(snap));
+    } catch (e) { subs.forEach(s => s.err && s.err(e)); }
+  }
+  async function write(method, col, id, body){
+    const r = await fetch(api(SITE, col, id), {method, headers: {"Content-Type": "application/json"},
+                                               body: body === undefined ? undefined : JSON.stringify(body)});
+    if (!r.ok) { const e = new Error("儲存失敗"); e.code = r.status; throw e; }
+    refresh(col);
+  }
+  const DB = {collection: col => ({
+    doc: id => ({set: data => write("PUT", col, id, data), delete: () => write("DELETE", col, id)}),
+    onSnapshot(cb, err){
+      if (!listeners.has(col)) listeners.set(col, []);
+      listeners.get(col).push({cb, err});
+      refresh(col);
+      return () => {};
+    },
+  })};
+  // 每 20 秒同步一次其他審題者的修改（分頁不在前景時暫停）
+  setInterval(() => { if (!document.hidden) listeners.forEach((_, col) => refresh(col)); }, 20000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) listeners.forEach((_, col) => refresh(col)); });
+
+  function me(){
+    let id = null, name = "";
+    try { id = localStorage.getItem("oleqs.reviewer.id"); name = localStorage.getItem("oleqs.reviewer.name") || ""; } catch {}
+    if (!id) { id = "r_" + Math.random().toString(36).slice(2, 12); try { localStorage.setItem("oleqs.reviewer.id", id); } catch {} }
+    while (!name) {
+      name = (prompt("請輸入你的名字（回報與審完紀錄會標示審題者）") || "").trim().slice(0, 30);
+    }
+    try { localStorage.setItem("oleqs.reviewer.name", name); } catch {}
+    fetch(api("_all", "people", id), {method: "PUT", headers: {"Content-Type": "application/json"}, body: JSON.stringify({name})});
+    return {id, name};
+  }
+  let names = null;
+  const USER = {
+    me: async () => me(),
+    can: async () => true,
+    async profiles(ids){
+      if (!names) { try { names = Object.fromEntries((await (await fetch(api("_all", "people"))).json()).map(x => [x.id, x.data.name])); } catch { names = {}; } }
+      return Object.fromEntries(ids.map(i => [i, {id: i, name: names[i] || ""}]));
+    },
+  };
+  window.claude = {use: async name => name === "db" ? DB : name === "user" ? USER : null};
+})();
+</script>
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const EXAM_NAME = {"1-1":"上學期第1次","1-2":"上學期第2次","1-3":"上學期第3次","2-1":"下學期第1次","2-2":"下學期第2次","2-3":"下學期第3次"};
+const GRADE_NAME = {7:"七年級",8:"八年級",9:"九年級"};
+function siteName(k){ const [g, sem] = String(k).split("-"); return (GRADE_NAME[g] || g) + (sem === "1" ? "上學期" : sem === "2" ? "下學期" : ""); }
+const TYPE_NAME = {single:"單選",multiple:"多選",tf:"是非",fill:"填充",calc:"計算",essay:"問答",matching:"配合"};
+const CATS = ["公式錯誤","錯字或漏字","圖片錯誤或缺圖","選項錯誤","題組或短文錯誤","答案錯誤","題型或大題錯誤","出處錯誤","其他"];
+
+let INDEX = null;
+const groupCache = new Map();
+let current = null;          // {gi, doc}
+let db = null;
+let reports = new Map();     // code -> [每位審題者的回報]
+let reportDocs = new Map();  // 資料庫文件 ID -> 回報
+let userNs = null, ME = {id: null, name: ""};
+let NAMES = {};              // 審題者 ID -> 顯示名稱（每次從平台查，不存進資料庫）
+function who(id){ if (!id) return "（未記名）"; if (id === ME.id) return "你"; return NAMES[id] || "某位審題者"; }
+function myReportId(code){ return ME.id ? `${code}~${ME.id}` : code; }
+function myReport(code){ return (reports.get(code) || []).find(r => (r.by || null) === (ME.id || null)); }
+async function refreshNames(){
+  if (!userNs) return;
+  const ids = new Set();
+  for (const r of reportDocs.values()) if (r.by) ids.add(r.by);
+  for (const r of reviewed.values()) if (r.by) ids.add(r.by);
+  for (const r of crops.values()) if (r.by) ids.add(r.by);
+  if (![...ids].some(i => !(i in NAMES))) return;
+  const ps = await userNs.profiles([...ids]);
+  for (const i of ids) NAMES[i] = (ps[i] && ps[i].name) || "";
+  rerenderKeepingScroll();
+}
+let reviewed = new Map();    // docKey -> {at}
+let hideRejected = false, onlyReported = false, onlyOcr = false, onlyDisputed = false;
+
+/* ── 文字渲染：Markdown（表格、粗體、換行）＋行內 $…$ 公式 ───────────── */
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function isMath(t){
+  if (/[\\^_{}]/.test(t)) return true;                 // 有 LaTeX 指令或上下標
+  if (/[A-Za-z]{2,}\s+[A-Za-z]{2,}/.test(t)) return false; // 英文句子：$ 是錢的符號
+  if (/[一-鿿]{2,}/.test(t) && !/[=+\-×÷<>]/.test(t)) return false;
+  return t.trim().length > 0;
+}
+function mathHTML(tex){
+  if (window.katex) {
+    try { return katex.renderToString(tex, {output:"mathml", throwOnError:false, strict:"ignore", trust:false}); }
+    catch(e){ /* fall through */ }
+  }
+  return '<span class="math-raw">$' + esc(tex) + '$</span>';
+}
+function inline(s){
+  const parts = String(s ?? "").split(/\$([^$]*)\$/);
+  let out = "";
+  for (let i = 0; i < parts.length; i++) {
+    if (i % 2 && isMath(parts[i])) { out += mathHTML(parts[i]); continue; }
+    const txt = i % 2 ? "$" + parts[i] + "$" : parts[i];
+    out += esc(txt).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+  }
+  return out;
+}
+function rich(s){
+  const lines = String(s ?? "").split("\n");
+  const out = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (/^\s*\|/.test(lines[i])) {
+      const rows = [];
+      while (i < lines.length && /^\s*\|/.test(lines[i])) rows.push(lines[i++]);
+      i--;
+      const body = rows.filter(r => !/^\s*\|?\s*:?-{2,}/.test(r.replace(/\|/g,"").trim() ? r : "|---|"))
+        .filter(r => !/^\s*\|(\s*:?-+:?\s*\|)+\s*$/.test(r))
+        .map(r => "<tr>" + r.trim().replace(/^\||\|$/g,"").split("|").map(c => "<td>" + inline(c.trim()) + "</td>").join("") + "</tr>");
+      out.push('<div class="tbl"><table>' + body.join("") + "</table></div>");
+    } else {
+      out.push(inline(lines[i]));
+    }
+  }
+  return out.join("<br>").replace(/(<br>)?(<div class="tbl">)/g,"$2").replace(/(<\/table><\/div>)<br>/g,"$1");
+}
+
+/* ── 資料載入 ───────────────────────────────────────────── */
+async function loadIndex(){
+  const r = await fetch(REVIEW_BASE + "data/index.json");
+  INDEX = await r.json(); INDEX.sites = REVIEW_SITES;
+  const nPapers = INDEX.groups.reduce((a,g)=>a+g.papers.length,0);
+  const nQ = INDEX.groups.reduce((a,g)=>a+g.papers.reduce((b,p)=>b+p.n,0),0);
+  if (INDEX.label) { $("h1").textContent = `題庫審題台・${INDEX.label}`; document.title = `題庫審題台・${INDEX.label}`; }
+  $("#builtInfo").textContent = `${INDEX.groups.length} 場段考・${nPapers} 份卷・${nQ.toLocaleString()} 題`;
+  buildFilters();
+}
+async function loadGroup(gi){
+  if (groupCache.has(gi)) return groupCache.get(gi);
+  const r = await fetch(REVIEW_BASE + "data/" + INDEX.groups[gi].f);
+  const g = await r.json();
+  groupCache.set(gi, g);
+  return g;
+}
+const subjName = g => g.sub ? g.sub : g.subject;
+
+/* ── 篩選 ──────────────────────────────────────────────── */
+function opts(sel, values, label){
+  const cur = sel.value;
+  sel.innerHTML = values.map(v => `<option value="${esc(v)}">${esc(label(v))}</option>`).join("");
+  if (values.map(String).includes(cur)) sel.value = cur;
+}
+function buildFilters(){
+  const G = INDEX.groups;
+  opts($("#fGrade"), [...new Set(G.map(g=>g.grade))].sort(), v => GRADE_NAME[v] || v);
+  const refresh = () => {
+    const gr = +$("#fGrade").value;
+    const inGrade = G.filter(g => g.grade === gr);
+    const order = ["國文","英語","數學","自然","社會","歷史","地理","公民"];
+    opts($("#fSubject"), [...new Set(inGrade.map(subjName))].sort((a,b)=>order.indexOf(a)-order.indexOf(b)), v=>v);
+    const sj = $("#fSubject").value;
+    const inSubj = inGrade.filter(g => subjName(g) === sj);
+    opts($("#fYear"), [...new Set(inSubj.map(g=>g.year))].sort(), v => v + " 學年度");
+    const yr = +$("#fYear").value;
+    const inYear = inSubj.filter(g => g.year === yr);
+    opts($("#fExam"), [...new Set(inYear.map(g=>`${g.sem}-${g.exam}`))].sort(), v => EXAM_NAME[v] || v);
+    listPapers();
+  };
+  ["#fGrade","#fSubject","#fYear","#fExam"].forEach(s => $(s).addEventListener("change", refresh));
+  refresh();
+}
+function selectedGroup(){
+  const [sem, exam] = ($("#fExam").value || "0-0").split("-").map(Number);
+  return INDEX.groups.findIndex(g => g.grade === +$("#fGrade").value && subjName(g) === $("#fSubject").value
+    && g.year === +$("#fYear").value && g.sem === sem && g.exam === exam);
+}
+function listPapers(){
+  const gi = selectedGroup();
+  const box = $("#paperList");
+  if (gi < 0) { box.innerHTML = '<div class="sub">沒有符合的考卷</div>'; return; }
+  box.innerHTML = INDEX.groups[gi].papers.map((p, i) => {
+    const nRep = countReports(p.doc);
+    const done = reviewed.has(docKey(p.doc));
+    return `<button class="paper-item" data-gi="${gi}" data-doc="${esc(p.doc)}" aria-current="${current && current.doc===p.doc}">
+      <span>${esc(p.city)} ${esc(p.short)} ${p.ocr?'<span class="chip warn">掃描</span>':''}${p.ext==='rule'?'<span class="chip">舊版</span>':''}${done?'<span class="chip ok">已審</span>':''}${nRep?`<span class="chip pen">${nRep} 題回報</span>`:''}</span>
+      <span class="n">${p.ok}/${p.n}</span></button>`;
+  }).join("");
+  box.querySelectorAll(".paper-item").forEach(b => b.addEventListener("click", () => openPaper(+b.dataset.gi, b.dataset.doc)));
+}
+
+/* ── 單份考卷 ─────────────────────────────────────────── */
+async function openPaper(gi, doc, focusCode){
+  $("#view").innerHTML = '<div class="empty">載入中…</div>';
+  const g = await loadGroup(gi);
+  const P = g.papers.find(p => p.doc === doc);
+  current = {gi, doc, paper: P, group: INDEX.groups[gi]};
+  listPapers();
+  renderPaper();
+  if (focusCode) focusQuestion(focusCode);
+  else if (matchMedia("(max-width: 820px)").matches) $("#view").scrollIntoView({block:"start"});
+  else window.scrollTo({top:0});
+}
+function renderPaper(){
+  if (!current) return;
+  const {paper: P, group: G} = current;
+  const nOk = P.q.filter(q=>q.ok).length;
+  const done = reviewed.get(docKey(P.doc));
+  let h = `<div class="paper-head">
+    <div class="sub">${esc(GRADE_NAME[G.grade])}・${esc(subjName(G))}・${G.year} 學年度${esc(EXAM_NAME[G.sem+"-"+G.exam])}段考</div>
+    <h2>${esc(P.title || P.school)}</h2>
+    <div class="row">
+      <span class="chip">${P.q.length} 題・收錄 ${nOk}</span>
+      ${P.ext==='vlm'?'<span class="chip ok">視覺模型擷取</span>':'<span class="chip warn">舊版規則式擷取</span>'}
+      ${P.q.some(q=>q.ocr)?'<span class="chip warn">掃描件：無文字層可驗證</span>':''}
+      ${P.scope?`<span class="sub">命題範圍：${esc(P.scope)}</span>`:''}
+    </div>
+  </div>
+  <div class="toolbar">
+    <label><input type="checkbox" id="tHide" ${hideRejected?"checked":""}> 隱藏被剔除的題目</label>
+    <label><input type="checkbox" id="tRep" ${onlyReported?"checked":""}> 只看已回報</label>
+    <label><input type="checkbox" id="tDis" ${onlyDisputed?"checked":""}> 只看答案待判定</label>
+    <button class="btn ${done?'':'pen'}" id="markDone" ${db?'':'disabled'}>${done?'取消「已審完」':'標記這份卷已審完'}</button>
+    ${done ? `<span class="sub">${esc(who(done.by))}已標記審完</span>` : ""}
+  </div>`;
+
+  const secName = Object.fromEntries((P.sections||[]).map(s=>[s.o, s.name]));
+  let lastSec = null, lastG = null;
+  for (const q of P.q) {
+    if (hideRejected && !q.ok) continue;
+    if (onlyReported && !reports.has(q.c)) continue;
+    if (onlyDisputed && q.as !== "disputed") continue;
+    if (q.s !== lastSec) { h += `<div class="section-title">${esc(secName[q.s] || ("第 " + q.s + " 大題"))}</div>`; lastSec = q.s; lastG = null; }
+    if (q.g && q.g !== lastG && (q.sa || P.passages[q.g].trim() !== (secName[q.s] || "").trim())) {
+      const figs = q.sa ? figHTML([q.sa], P) : "";
+      h += `<div class="passage"><span class="lbl">題組說明／共用短文</span>${rich(P.passages[q.g])}${figs?'<div class="figs" style="margin-top:8px">'+figs+'</div>':''}</div>`;
+    }
+    lastG = q.g || null;
+    h += questionHTML(q, P);
+  }
+  $("#view").innerHTML = h;
+  $("#tHide").addEventListener("change", e => { hideRejected = e.target.checked; renderPaper(); });
+  $("#tRep").addEventListener("change", e => { onlyReported = e.target.checked; renderPaper(); });
+  $("#tDis").addEventListener("change", e => { onlyDisputed = e.target.checked; renderPaper(); });
+  $("#markDone").addEventListener("click", toggleDone);
+  bindQuestionEvents();
+}
+function figHTML(ids, P){
+  return ids.map(id => imgTag(id, P, "附圖", 320)).join("");
+}
+/* ── 附圖：顯示裁切範圍，可拖曳調整邊緣 ───────────────────── */
+let crops = new Map();       // 調整紀錄：key -> {rect, file, ...}
+function cropKey(file){ let h = 2166136261; for (const ch of file) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619) >>> 0; } return "c" + h.toString(36); }
+function cropFrac(cm){
+  const R = cm.R, saved = crops.get(cropKey(cm.f)), e = saved ? saved.rect : cm.r;
+  const W = R[2]-R[0], H = R[3]-R[1];
+  return {l:(e[0]-R[0])/W, t:(e[1]-R[1])/H, w:(e[2]-e[0])/W, h:(e[3]-e[1])/H, adjusted: !!saved};
+}
+function imgTag(id, P, alt, maxH){
+  if (!P.images[id]) return '<span class="missing">圖檔遺失</span>';
+  const cm = P.cm && P.cm[id];
+  if (!cm) return `<img src="${P.images[id]}" alt="${esc(alt)}">`;
+  const f = cropFrac(cm), H = cm.px * (cm.R[3]-cm.R[1]) / (cm.R[2]-cm.R[0]);
+  const iw = f.w * cm.px, ih = f.h * H;                      // 裁切範圍在圖上的像素大小
+  const width = Math.min(iw, maxH * iw / ih);
+  return `<span class="cropwrap"><span class="cropbox ${f.adjusted?'adjusted':''}" data-img="${id}" style="width:${width.toFixed(0)}px;max-width:100%;aspect-ratio:${iw.toFixed(1)}/${ih.toFixed(1)}">
+    <img src="${P.images[id]}" alt="${esc(alt)}" decoding="async" style="width:${(100/f.w).toFixed(3)}%;left:${(-f.l/f.w*100).toFixed(3)}%;top:${(-f.t/f.h*100).toFixed(3)}%"></span>
+    <button class="cropbtn" type="button" data-crop="${id}">${f.adjusted?'已調整邊緣・再調整':cm.o?'已自動校正・檢查邊緣':'調整邊緣'}</button></span>`;
+}
+function openCropEditor(btn){
+  const id = btn.dataset.crop, P = current.paper, cm = P.cm[id];
+  const box = btn.closest(".cropwrap");
+  let f = cropFrac(cm);
+  const ed = document.createElement("div");
+  ed.className = "cropedit";
+  const last = crops.get(cropKey(cm.f));
+  const R0 = cm.R, oldFrac = cm.o ? {l:(cm.o[0]-R0[0])/(R0[2]-R0[0]), t:(cm.o[1]-R0[1])/(R0[3]-R0[1]),
+    w:(cm.o[2]-cm.o[0])/(R0[2]-R0[0]), h:(cm.o[3]-cm.o[1])/(R0[3]-R0[1])} : null;
+  ed.innerHTML = `<div class="sub">拖曳紅點調整四邊（也可以點紅點後用方向鍵微調）。灰色區域是可延伸的範圍。${cm.o ? "這張圖已自動校正過，虛線是校正前的框。" : ""}${last ? `目前是${esc(who(last.by))}調整過的範圍。` : ""}</div>
+    <div class="stagewrap" style="width:min(100%, ${Math.max(cm.px, 480) + 28}px)"><div class="stage"><img src="${P.images[id]}" alt="附圖原卷範圍">
+      ${oldFrac ? `<div class="oldsel" style="left:${oldFrac.l*100}%;top:${oldFrac.t*100}%;width:${oldFrac.w*100}%;height:${oldFrac.h*100}%"></div>` : ""}
+      <div class="sel">${["n","s","w","e"].map(k=>`<button type="button" class="hd" data-e="${k}" aria-label="${{n:"上",s:"下",w:"左",e:"右"}[k]}邊"></button>`).join("")}</div></div></div>
+    <div class="row"><button class="btn pen" type="button" data-act="save">儲存邊緣</button>
+      <button class="btn" type="button" data-act="reset">${cm.o ? "用自動校正的範圍" : "還原原始範圍"}</button>
+      ${cm.o ? '<button class="btn" type="button" data-act="old">用校正前的框</button>' : ""}
+      <button class="btn ghost" type="button" data-act="cancel">取消</button><span class="sub" data-msg></span></div>`;
+  box.replaceWith(ed);
+  const stage = ed.querySelector(".stage"), sel = ed.querySelector(".sel");
+  const draw = () => Object.assign(sel.style, {left:f.l*100+"%", top:f.t*100+"%", width:f.w*100+"%", height:f.h*100+"%"});
+  const MIN = 0.03;
+  const move = (edge, dx, dy) => {           // dx, dy 為佔整張圖的比例
+    if (edge === "w") { const r = f.l + f.w; f.l = Math.min(Math.max(0, f.l + dx), r - MIN); f.w = r - f.l; }
+    if (edge === "e") { f.w = Math.min(Math.max(MIN, f.w + dx), 1 - f.l); }
+    if (edge === "n") { const b = f.t + f.h; f.t = Math.min(Math.max(0, f.t + dy), b - MIN); f.h = b - f.t; }
+    if (edge === "s") { f.h = Math.min(Math.max(MIN, f.h + dy), 1 - f.t); }
+    draw();
+  };
+  ed.querySelectorAll(".hd").forEach(hd => {
+    hd.addEventListener("pointerdown", e => {
+      e.preventDefault(); hd.setPointerCapture(e.pointerId);
+      let x = e.clientX, y = e.clientY;
+      const onMove = ev => { const r = stage.getBoundingClientRect();
+        move(hd.dataset.e, (ev.clientX - x) / r.width, (ev.clientY - y) / r.height); x = ev.clientX; y = ev.clientY; };
+      const onUp = () => { hd.removeEventListener("pointermove", onMove); hd.removeEventListener("pointerup", onUp); };
+      hd.addEventListener("pointermove", onMove); hd.addEventListener("pointerup", onUp);
+    });
+    hd.addEventListener("keydown", e => {
+      const k = {ArrowLeft:[-1,0], ArrowRight:[1,0], ArrowUp:[0,-1], ArrowDown:[0,1]}[e.key];
+      if (!k) return; e.preventDefault(); move(hd.dataset.e, k[0]*0.005, k[1]*0.005);
+    });
+  });
+  draw();
+  const close = () => rerenderKeepingScroll(true);
+  ed.querySelector("[data-act=cancel]").addEventListener("click", close);
+  ed.querySelector("[data-act=old]")?.addEventListener("click", () => { f = {...oldFrac}; draw(); });
+  ed.querySelector("[data-act=reset]").addEventListener("click", async e => {
+    const k = cropKey(cm.f);
+    if (!crops.has(k)) { f = cropFrac(cm); draw(); return; }
+    if (!db) { close(); return; }
+    try { await db.collection("crops").doc(k).delete(); crops.delete(k); close(); }
+    catch(err){ ed.querySelector("[data-msg]").textContent = "還原失敗：" + (err.code || err.message); }
+  });
+  ed.querySelector("[data-act=save]").addEventListener("click", async e => {
+    const R = cm.R, W = R[2]-R[0], H = R[3]-R[1], r2 = v => Math.round(v*100)/100;
+    const rect = [r2(R[0]+f.l*W), r2(R[1]+f.t*H), r2(R[0]+(f.l+f.w)*W), r2(R[1]+(f.t+f.h)*H)];
+    if (rect.every((v, i) => Math.abs(v - cm.r[i]) < 0.5)) {   // 沒有改變：視同還原，不留紀錄
+      if (db && crops.has(cropKey(cm.f))) { try { await db.collection("crops").doc(cropKey(cm.f)).delete(); crops.delete(cropKey(cm.f)); } catch(err){} }
+      close(); return;
+    }
+    const body = {file: cm.f, doc: P.doc, page: cm.pg, rect, orig: cm.r, by: ME.id, at: new Date().toISOString()};
+    if (!db) { copyText(`附圖邊緣調整 ${cm.f} 第${cm.pg}頁 ${rect.join(",")}`, e.target); return; }
+    try { await db.collection("crops").doc(cropKey(cm.f)).set(body); crops.set(cropKey(cm.f), body); close(); }
+    catch(err){ ed.querySelector("[data-msg]").textContent = "儲存失敗：" + (err.code || err.message); }
+  });
+}
+const SRC_NAME = {"ai:gemini+qwen":"AI・兩模型一致", "ai:majority":"AI・三票中兩票", "ai:gemini-only":"AI・僅 Gemini"};
+const VOTE_NAME = {gemini:"Gemini", qwen:"Qwen", gemini_high:"Gemini 高思考"};
+function answerHTML(q, ans){
+  const votes = q.votes ? Object.entries(q.votes).map(([k,v]) => `${VOTE_NAME[k]||k} ${inline(String(v))}`).join("／") : "";
+  if (q.as === "disputed") {
+    const shown = q.ans ? `<b>${inline(ans.join("、"))}</b> ` : "";
+    return `<span>答案：${shown}<span class="chip warn">待判定</span>${votes?` <span class="sub">${votes}</span>`:""}${q.note?` <span class="sub">${esc(q.note)}</span>`:""}</span>`;
+  }
+  if (!q.ans) return '<span>答案：無</span>';
+  const chip = q.as === "verified" ? "" : ` <span class="chip ${q.src==="ai:gemini+qwen"?"ok":""}">${esc(SRC_NAME[q.src] || q.as)}</span>`;
+  return `<span>答案：<b>${inline(ans.join("、"))}</b>${chip}</span>`;
+}
+function questionHTML(q, P){
+  const rs = reports.get(q.c) || [];
+  const r = rs.length ? rs : null;
+  const rcats = [...new Set(rs.flatMap(x => x.cats || []))];
+  const ans = (q.ans || []).map(String);
+  const optHTML = (q.opts||[]).length ? `<div class="opts">${q.opts.map(o => `<div class="opt ${ans.includes(o.l)?'correct':''}"><span class="l">(${esc(o.l)})</span><span>${rich(o.c)}${o.img? `<br>${imgTag(o.img, P, "選項"+o.l+"的圖", 120)}`:''}</span></div>`).join("")}</div>` : "";
+  return `<div class="q ${q.ok?'':'rejected'} ${r?'reported':''}" id="q-${q.c}" data-code="${q.c}">
+    <div class="num">${esc(q.n)}.</div>
+    <div class="body">
+      <div class="meta">
+        <button class="code" data-copy="${q.c}" title="複製審題編號">${q.c}</button>
+        <span class="chip">${esc(TYPE_NAME[q.t] || q.t)}</span>
+        ${q.ok?'':'<span class="chip pen">已被品管剔除</span>'}
+        ${q.ocr?'<span class="chip warn">掃描辨識</span>':''}
+        ${r?`<span class="chip pen">${rs.length > 1 ? rs.length + " 人" : esc(who(rs[0].by))}回報：${esc(rcats.join("、") || "其他")}</span>`:''}
+      </div>
+      ${q.stem?`<div class="stem">${rich(q.stem)}</div>`:''}
+      ${q.imgs && q.imgs.length ? `<div class="figs">${figHTML(q.imgs, P)}</div>` : ""}
+      ${optHTML}
+      ${q.ok ? "" : `<div class="why">剔除原因：${esc((q.why||[]).join("；"))}</div>`}
+      <div class="foot">
+        ${answerHTML(q, ans)}
+        ${q.tag?`<span>章節：${esc(q.tag)}</span>`:''}
+        <button class="btn ${r?'':'pen'}" data-report="${q.c}">${r?'修改回報':'回報問題'}</button>
+      </div>
+      ${rs.filter(x => x.note).map(x => `<div class="report-note">${esc(who(x.by))}：${esc(x.note)}</div>`).join("")}
+      <div class="report-slot"></div>
+    </div>
+  </div>`;
+}
+function bindQuestionEvents(){
+  document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => copyText(b.dataset.copy, b)));
+  document.querySelectorAll("[data-report]").forEach(b => b.addEventListener("click", () => openReport(b.dataset.report)));
+  document.querySelectorAll("[data-crop]").forEach(b => b.addEventListener("click", () => openCropEditor(b)));
+}
+function focusQuestion(code){
+  const el = document.getElementById("q-" + code);
+  if (!el) return;
+  el.scrollIntoView({block:"center"});
+  el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+}
+
+/* ── 回報 ──────────────────────────────────────────────── */
+function findQ(code){ return current && current.paper.q.find(q => q.c === code); }
+function openReport(code){
+  const q = findQ(code); if (!q) return;
+  const slot = document.querySelector(`#q-${code} .report-slot`);
+  if (slot.innerHTML) { slot.innerHTML = ""; return; }
+  const r = myReport(code) || {};
+  const sel = new Set(r.cats || []);
+  slot.innerHTML = `<form class="report" id="rf-${code}">
+    <div class="cats">${CATS.map((c,i)=>`<label><input type="checkbox" class="visually-hidden" id="rc-${code}-${i}" value="${esc(c)}" ${sel.has(c)?"checked":""}><span>${esc(c)}</span></label>`).join("")}</div>
+    <label class="visually-hidden" for="rn-${code}">說明</label>
+    <textarea id="rn-${code}" placeholder="哪裡有問題？例如「(C) 選項的分數應為 3/4」">${esc(r.note || "")}</textarea>
+    <div class="row">
+      <button class="btn pen" type="submit">${db ? "儲存回報" : "複製回報內容"}</button>
+      <button class="btn ghost" type="button" data-cancel>取消</button>
+      ${myReport(code) && db ? '<button class="btn ghost" type="button" data-withdraw>撤回我的回報</button>' : ""}
+      <span class="sub" data-status aria-live="polite"></span>
+    </div>
+  </form>`;
+  const form = slot.querySelector("form");
+  form.querySelector("[data-cancel]").addEventListener("click", () => slot.innerHTML = "");
+  const wd = form.querySelector("[data-withdraw]");
+  if (wd) wd.addEventListener("click", async () => {
+    try { await db.collection("reports").doc(myReportId(code)).delete(); slot.innerHTML = ""; }
+    catch(e){ form.querySelector("[data-status]").textContent = "撤回失敗：" + (e.code || e.message); }
+  });
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const cats = [...form.querySelectorAll("input:checked")].map(x => x.value);
+    const note = form.querySelector("textarea").value.trim();
+    const status = form.querySelector("[data-status]");
+    if (!cats.length && !note) { status.textContent = "請至少勾一個問題類型或寫一句說明"; return; }
+    const G = current.group, P = current.paper;
+    const body = {code, qid: q.id, doc: P.doc, school: P.school, grade: G.grade, subject: subjName(G),
+      exam: `${G.year}-${G.sem}-${G.exam}`, number: q.n, section: q.s, cats, note,
+      by: ME.id, at: new Date().toISOString()};
+    if (!db) {
+      const text = `${code}｜${P.school} ${G.year}學年度${EXAM_NAME[G.sem+"-"+G.exam]} 第${q.n}題｜${cats.join("、")}｜${note}`;
+      copyText(text, form.querySelector("[type=submit]"));
+      status.textContent = "已複製，請貼給 Claude";
+      return;
+    }
+    status.textContent = "儲存中…";
+    try { await db.collection("reports").doc(myReportId(code)).set(body); slot.innerHTML = ""; }
+    catch(e){
+      status.textContent = e.code === "invalid_argument" ? "你在這份網頁的權限只能檢視，無法儲存回報" :
+        e.code === "quota_exceeded" ? "回報數量已達上限（5,000 筆），請先整理舊的回報" : "儲存失敗，請再試一次";
+    }
+  });
+  form.querySelector("textarea").focus();
+}
+function countReports(doc){ let n = 0; for (const rs of reports.values()) if (rs[0].doc === doc) n++; return n; }
+function docKey(doc){ let h = 0; for (const ch of doc) h = (h * 31 + ch.codePointAt(0)) >>> 0; return "d" + h.toString(36); }
+async function toggleDone(){
+  if (!db || !current) return;
+  const k = docKey(current.paper.doc);
+  try {
+    if (reviewed.has(k)) await db.collection("reviewed").doc(k).delete();
+    else await db.collection("reviewed").doc(k).set({doc: current.paper.doc, by: ME.id, at: new Date().toISOString()});
+  } catch(e){ /* 權限不足時按鈕沒有作用，由 banner 說明 */ }
+}
+function renderReportStats(){
+  const n = reports.size;
+  $("#reportStats").innerHTML = `
+    <div class="stat"><b>${n}</b><span>已回報題目</span></div>
+    <div class="stat"><b>${reviewed.size}</b><span>已審完的卷</span></div>
+    <button class="btn" id="openDrawer" ${n?"":"disabled"}>回報清單</button>`;
+  const b = $("#openDrawer"); if (b) b.addEventListener("click", openDrawer);
+}
+function openDrawer(){
+  const list = [...reportDocs.values()].sort((a,b)=>String(b.at).localeCompare(String(a.at)));
+  $("#drawerList").innerHTML = list.map(r => `<li><a data-go="${esc(r.code)}">${esc(r.code)}</a>　${esc(r.school)} ${esc(r.exam)} 第${esc(r.number)}題・${esc((r.cats||[]).join("、"))}${r.note?"・"+esc(r.note):""}　<span class="sub">— ${esc(who(r.by))}</span></li>`).join("");
+  $("#drawerList").querySelectorAll("[data-go]").forEach(a => a.addEventListener("click", () => jumpTo(a.dataset.go)));
+  $("#drawer").hidden = false;
+}
+$("#closeDrawer").addEventListener("click", () => $("#drawer").hidden = true);
+$("#copyAll").addEventListener("click", e => {
+  const text = [...reportDocs.values()].map(r => `${r.code}｜${r.school} ${r.exam} 第${r.number}題｜${(r.cats||[]).join("、")}｜${r.note||""}｜${who(r.by)}`).join("\n");
+  copyText(text, e.target);
+});
+
+/* ── 編號跳轉 ───────────────────────────────────────────── */
+async function jumpTo(code){
+  code = String(code || "").trim().toUpperCase();
+  const gi = INDEX && INDEX.codes[code];
+  if (gi === undefined) {
+    const other = INDEX && INDEX.elsewhere && INDEX.elsewhere[code];
+    const site = other && INDEX.sites && INDEX.sites[other];
+    if (other) $("#jumpMsg").innerHTML = site
+      ? `編號 ${esc(code)} 在<a href="${esc(site)}#${esc(code)}" target="_self">${esc(siteName(other))}的審題台</a>`
+      : `編號 ${esc(code)} 在${esc(siteName(other))}的審題台`;
+    else $("#jumpMsg").textContent = `找不到編號 ${code}`;
+    return;
+  }
+  $("#jumpMsg").textContent = "";
+  const g = await loadGroup(gi);
+  const P = g.papers.find(p => p.q.some(q => q.c === code));
+  const G = INDEX.groups[gi];
+  $("#fGrade").value = G.grade; $("#fGrade").dispatchEvent(new Event("change"));
+  $("#fSubject").value = subjName(G); $("#fSubject").dispatchEvent(new Event("change"));
+  $("#fYear").value = G.year; $("#fYear").dispatchEvent(new Event("change"));
+  $("#fExam").value = `${G.sem}-${G.exam}`; $("#fExam").dispatchEvent(new Event("change"));
+  hideRejected = false; onlyReported = false; onlyDisputed = false;
+  await openPaper(gi, P.doc, code);
+}
+$("#jumpBtn").addEventListener("click", () => jumpTo($("#jump").value));
+$("#jump").addEventListener("keydown", e => { if (e.key === "Enter") jumpTo($("#jump").value); });
+
+async function copyText(text, btn){
+  try { await navigator.clipboard.writeText(text); flashBtn(btn, "已複製"); }
+  catch(e){
+    const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+    flashBtn(btn, "請按 Ctrl+C"); setTimeout(()=>ta.remove(), 4000);
+  }
+}
+function flashBtn(btn, msg){ if (!btn) return; const t = btn.textContent; btn.textContent = msg; setTimeout(()=>btn.textContent = t, 1400); }
+
+/* ── 回報資料庫 ─────────────────────────────────────────── */
+function rerenderKeepingScroll(force){
+  const y = window.scrollY;
+  const open = [...document.querySelectorAll(".report-slot form, .cropedit")];
+  if (open.length && !force) { listPapers(); renderReportStats(); return; }  // 表單開著時不重繪題目，避免打到一半被清掉
+  listPapers(); renderReportStats(); renderPaper(); window.scrollTo({top:y});
+}
+async function initDb(){
+  const use = window.claude && window.claude.use ? window.claude.use.bind(window.claude) : null;
+  db = use ? await use("db") : null;
+  if (!db) {
+    const bn = $("#dbBanner");
+    bn.hidden = false;
+    bn.textContent = "無法連上審題紀錄資料庫，請重新整理頁面。";
+    renderReportStats();
+    return;
+  }
+  userNs = await use("user");
+  if (userNs) {
+    ME = await userNs.me();
+    const canWrite = await userNs.can("data.write");
+    $("#builtInfo").textContent += ME.name ? `・審題者：${ME.name}` : "";
+    if (canWrite === false) {
+      const bn = $("#dbBanner");
+      bn.hidden = false;
+      bn.textContent = "你目前只有檢視權限：可以看題目，但回報、調整邊緣、標記審完都無法儲存。請向這份網頁的擁有者要求「可參與」以上的權限。";
+    }
+  }
+  db.collection("reports").onSnapshot(s => {
+    reportDocs = new Map(s.docs.map(d => [d.id, d.data()]));
+    reports = new Map();
+    for (const r of reportDocs.values()) { if (!reports.has(r.code)) reports.set(r.code, []); reports.get(r.code).push(r); }
+    refreshNames();
+    rerenderKeepingScroll();
+  }, () => {});
+  db.collection("crops").onSnapshot(s => {
+    crops = new Map(s.docs.map(d => [d.id, d.data()]));
+    refreshNames();
+    rerenderKeepingScroll();
+  }, () => {});
+  db.collection("reviewed").onSnapshot(s => {
+    reviewed = new Map(s.docs.map(d => [d.id, d.data()]));
+    refreshNames();
+    rerenderKeepingScroll();
+  }, () => {});
+}
+
+(async () => {
+  renderReportStats();
+  try { await loadIndex(); }
+  catch(e){ $("#builtInfo").textContent = "題庫資料載入失敗，請重新整理頁面"; return; }
+  initDb();
+  const h = location.hash.replace("#","");
+  if (h && INDEX.codes[h.toUpperCase()] !== undefined) jumpTo(h);
+})();
+</script>
