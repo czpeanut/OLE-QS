@@ -32,6 +32,10 @@ CHOICE = {"single", "multiple", "tf"}
 NUM = "一二三四五六七八九十"
 CROP_DPI = 220            # 擷取管線裁圖的解析度；據此把圖印回原卷上的實際大小
 # 原卷題幹開頭的作答括號與題號（「( )16.」）：組卷後題號重編，留著會兩個題號並列
+# 選項圖：每張都至少這麼高（像素）才算「圖片選項」，統一成同一高度；更矮的多半是「甲→丙→乙」這類文字式圖
+PICTURE_PX = 100
+# 題目在比大小（顯微鏡倍率、比例尺、面積…）時，選項圖的大小本身就是答案，不能統一
+KEEP_SCALE = re.compile(r"倍|放大|縮小|比例|大小|面積|長度|尺寸")
 LEAD = re.compile(r"^\s*(?:[(（]\s*[)）]\s*)?(?:\d{1,3}\s*[.．、](?!\d)\s*)?")
 
 
@@ -48,6 +52,7 @@ DEFAULTS = {
     "show_score": True,
     "answer_appendix": False,  # 試題卷卷末附答案
     "choice_paren": True,      # 選擇題前印作答括號「(　　)」
+    "uniform_option_images": True,  # 選項圖統一大小（題目在比大小時自動維持原卷比例）
 }
 
 
@@ -62,29 +67,58 @@ def esc(s: str | None) -> str:
     return html.escape(s or "", quote=False)
 
 
+def _mm(px: float) -> float:
+    return px / CROP_DPI * 25.4
+
+
 @lru_cache(maxsize=20000)
-def _png_width(path: str) -> int | None:
+def _png_size(path: str) -> tuple[int, int] | None:
     try:
         with open(path, "rb") as f:
             head = f.read(24)
         if head[:8] == b"\x89PNG\r\n\x1a\n":
-            return struct.unpack(">I", head[16:20])[0]
+            return struct.unpack(">II", head[16:24])
     except OSError:
         pass
     return None
 
 
 class Renderer:
-    def __init__(self, asset_root: Path, asset_url: str = "/assets/", columns: int = 1):
+    def __init__(self, asset_root: Path, asset_url: str = "/assets/", columns: int = 1, uniform: bool = True):
         self.root = asset_root
         self.url = asset_url
         self.narrow = columns == 2
+        self.uniform = uniform
 
-    def img(self, file: str, alt: str = "") -> str:
+    def size(self, file: str) -> tuple[int, int] | None:
         local = asset_path(file)
-        w = _png_width(str(local)) if local else None
-        style = f' style="width:{w / CROP_DPI * 25.4:.1f}mm"' if w else ""
-        return f'<img src="{self.url}{esc(file)}" alt="{esc(alt)}"{style}>'
+        return _png_size(str(local)) if local else None
+
+    def img(self, file: str, alt: str = "", style: str | None = None) -> str:
+        if style is None:
+            d = self.size(file)
+            style = f"width:{_mm(d[0]):.1f}mm" if d else ""
+        return f'<img src="{self.url}{esc(file)}" alt="{esc(alt)}"' + (f' style="{style}"' if style else "") + ">"
+
+    def option_images(self, q: Question) -> tuple[int, dict[str, str]] | None:
+        """同一題的選項圖排成一致的大小（原卷各選項的圖常常裁得大小不一）。與 web/lib/render.ts 同規則。"""
+        files = [o.asset_file for o in q.options if o.asset_file]
+        ds = [self.size(f) for f in files]
+        if not files or any(d is None for d in ds):
+            return None
+        if self.uniform and not KEEP_SCALE.search(q.stem_md or "") and min(h for _, h in ds) >= PICTURE_PX:
+            # 圖片選項：同一高度（取中位數，限制在 18–38mm，雙欄時 15–28mm），太寬的等比縮進格子
+            lo, hi = (15, 28) if self.narrow else (18, 38)
+            H = min(hi, max(lo, _mm(sorted(h for _, h in ds)[len(ds) // 2])))
+            style = {f: f"height:{H:.1f}mm;width:auto;max-width:100%;object-fit:contain" for f in files}
+            shown = [H * w / h for w, h in ds]
+        else:
+            # 文字式小圖、比大小的題目或關閉統一時：維持原卷比例；格子放不下時整題一起等比縮小
+            max_w = max(w for w, _ in ds)
+            style = {f: f"width:calc(min(100%, {_mm(max_w):.1f}mm) * {w / max_w:.3f})" for f, (w, _) in zip(files, ds)}
+            shown = [_mm(w) for w, _ in ds]
+        cols = 4 if len(files) == len(q.options) and max(shown) <= (17 if self.narrow else 36) else 2
+        return cols, style
 
     # ── 題目元件 ──
     def options(self, q: Question) -> str:
@@ -94,14 +128,15 @@ class Renderer:
         longest = max((len(o.content_md) for o in q.options), default=0)
         # 選項短就並排；雙欄版面每欄只有一半寬，門檻跟著減半
         four, two = (4, 10) if self.narrow else (7, 20)
-        cols = 2 if has_img else 4 if longest <= four else 2 if longest <= two else 1
+        pics = self.option_images(q) if has_img else None
+        cols = (pics[0] if pics else 2) if has_img else 4 if longest <= four else 2 if longest <= two else 1
         cells = []
         for o in q.options:
             body = md(o.content_md)
             if o.asset_file:
-                body += self.img(o.asset_file, f"選項{o.label}")
+                body += self.img(o.asset_file, f"選項{o.label}", pics[1].get(o.asset_file) if pics else None)
             cells.append(f'<div class="opt"><span class="ol">({esc(o.label)})</span>'
-                         f'<span>{body}</span></div>')
+                         f'<span class="oc">{body}</span></div>')
         return f'<div class="opts c{cols}">{"".join(cells)}</div>'
 
     def assets(self, q: Question) -> str:
@@ -206,7 +241,7 @@ def render(title: str, items: list[Item], mode: str, settings: dict | None,
            asset_root: Path, asset_url: str = "/assets/", base_href: str | None = None) -> str:
     st = {**DEFAULTS, **(settings or {})}
     cols = 2 if int(st["columns"]) == 2 and mode != "answer" else 1     # 答案卷的作答格不分欄
-    r = Renderer(asset_root, asset_url, cols)
+    r = Renderer(asset_root, asset_url, cols, st["uniform_option_images"] is not False)
     suffix = {"exam": "", "answer": "　答案卷", "key": "　教師解答卷"}[mode]
     total = sum(it.score or 0 for it in items)
 
@@ -305,7 +340,8 @@ main.cols2 { column-count: 2; column-gap: 9mm; column-rule: 1px solid #999; }
 .passage { padding: 6px 10px; margin: 6px 0; border: 1px solid #888; break-inside: avoid; }
 .passage p { margin: 0 0 .4em; text-indent: 2em; }
 figure { margin: 4px 0; text-align: center; break-inside: avoid; }
-figure img, .opt img { max-width: 100%; height: auto; }
+figure img { max-width: 100%; height: auto; }
+.opt .oc { flex: 1; min-width: 0; } .opt img { display: block; max-width: 100%; margin: 1px 0 3px; }
 figcaption { font-size: .8em; }
 table.asset { border-collapse: collapse; margin: 5px auto; font-size: .92em; }
 table.asset td, table.asset th { border: 1px solid #333; padding: 1px 8px; text-align: center; }

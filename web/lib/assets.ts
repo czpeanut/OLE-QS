@@ -20,19 +20,20 @@ export async function fetchAsset(rel: string): Promise<Response> {
   return fetch(objectUrl(rel), { headers: auth(), cache: "no-store" });
 }
 
-// 只讀 PNG 檔頭拿寬度：排版時把圖印回原卷上的實際大小
-const widthCache = new Map<string, number>();
-export async function pngWidths(files: string[]): Promise<Map<string, number>> {
-  const out = new Map<string, number>();
+// 只讀 PNG 檔頭拿寬高：排版時把圖印回原卷上的實際大小，選項圖統一大小
+type Size = { w: number; h: number };
+const widthCache = new Map<string, Size>();
+export async function pngWidths(files: string[]): Promise<Map<string, Size>> {
+  const out = new Map<string, Size>();
   await Promise.all([...new Set(files)].map(async (f) => {
     if (widthCache.has(f)) { out.set(f, widthCache.get(f)!); return; }
     try {
       const r = await fetch(objectUrl(f), { headers: { ...auth(), Range: "bytes=0-23" }, cache: "no-store" });
       const b = Buffer.from(await r.arrayBuffer());
       if (b.length >= 24 && b.readUInt32BE(0) === 0x89504e47) {
-        const w = b.readUInt32BE(16);
-        widthCache.set(f, w);
-        out.set(f, w);
+        const s = { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+        widthCache.set(f, s);
+        out.set(f, s);
       }
     } catch { /* 拿不到寬度就用預設大小 */ }
   }));

@@ -13,27 +13,61 @@ const CROP_DPI = 220;      // 擷取管線裁圖的解析度；據此把圖印�
 
 export interface Settings {
   subtitle: string; header_fields: boolean; auto_sections: boolean; columns: number; font_size: number;
-  answer_lines: number; show_score: boolean; answer_appendix: boolean; choice_paren: boolean;
+  answer_lines: number; show_score: boolean; answer_appendix: boolean; choice_paren: boolean; uniform_option_images: boolean;
 }
 export const DEFAULTS: Settings = { subtitle: "", header_fields: true, auto_sections: true, columns: 1, font_size: 11.5,
-  answer_lines: 4, show_score: true, answer_appendix: false, choice_paren: true };
+  answer_lines: 4, show_score: true, answer_appendix: false, choice_paren: true, uniform_option_images: true };
 export interface Item { q: Q; score: number | null }
-export type Widths = Map<string, number>;   // 附圖路徑 → 像素寬
+export type Widths = Map<string, { w: number; h: number }>;   // 附圖路徑 → 像素寬高
+const mm = (px: number) => px / CROP_DPI * 25.4;
+// 選項圖：每張都至少這麼高（像素）才算「圖片選項」，統一成同一高度；
+// 更矮的多半是「甲→丙→乙」這類文字式圖，放大會很突兀，維持原卷比例
+const PICTURE_PX = 100;
+// 題目在比大小（顯微鏡倍率、比例尺、面積…）時，選項圖的大小本身就是答案，不能統一
+const KEEP_SCALE = /倍|放大|縮小|比例|大小|面積|長度|尺寸/;
 
-function img(file: string, widths: Widths, alt = ""): string {
-  const w = widths.get(file);
-  const style = w ? ` style="width:${(w / CROP_DPI * 25.4).toFixed(1)}mm"` : "";
-  return `<img src="/api/assets/${encodeURI(file)}" alt="${esc(alt)}"${style}>`;
+function img(file: string, widths: Widths, alt = "", style?: string): string {
+  const d = widths.get(file);
+  style ??= d ? `width:${mm(d.w).toFixed(1)}mm` : "";
+  return `<img src="/api/assets/${encodeURI(file)}" alt="${esc(alt)}"${style ? ` style="${style}"` : ""}>`;
 }
 
-function options(q: Q, widths: Widths, narrow: boolean): string {
+// 同一題的選項圖排成一致的大小（原卷各選項的圖常常裁得大小不一）
+function optionImages(q: Q, widths: Widths, narrow: boolean, uniform: boolean): { cols: number; style: Map<string, string> } | null {
+  const files = q.options.map((o) => o.asset_file).filter((f): f is string => !!f);
+  const dims = files.map((f) => widths.get(f));
+  if (!files.length || dims.some((d) => !d)) return null;
+  const ds = dims as { w: number; h: number }[];
+  const style = new Map<string, string>();
+  let shown: number[];                                  // 每張圖排出來的寬（mm）
+  if (uniform && !KEEP_SCALE.test(q.stem) && Math.min(...ds.map((d) => d.h)) >= PICTURE_PX) {
+    // 圖片選項：同一高度（取中位數，限制在 18–38mm，雙欄時 15–28mm），太寬的等比縮進格子
+    const hs = ds.map((d) => d.h).sort((a, b) => a - b);
+    const [lo, hi] = narrow ? [15, 28] : [18, 38];
+    const H = Math.min(hi, Math.max(lo, mm(hs[Math.floor(hs.length / 2)])));
+    files.forEach((f) => style.set(f, `height:${H.toFixed(1)}mm;width:auto;max-width:100%;object-fit:contain`));
+    shown = ds.map((d) => H * d.w / d.h);
+  } else {
+    // 文字式小圖、比大小的題目或關閉統一時：維持原卷比例；格子放不下時整題一起等比縮小，而不是只縮最寬的那張
+    const maxW = Math.max(...ds.map((d) => d.w));
+    files.forEach((f, i) => style.set(f, `width:calc(min(100%, ${mm(maxW).toFixed(1)}mm) * ${(ds[i].w / maxW).toFixed(3)})`));
+    shown = ds.map((d) => mm(d.w));
+  }
+  // 圖都夠窄就一列排四個，否則兩個
+  const cols = files.length === q.options.length && Math.max(...shown) <= (narrow ? 17 : 36) ? 4 : 2;
+  return { cols, style };
+}
+
+function options(q: Q, widths: Widths, narrow: boolean, uniform: boolean): string {
   if (!q.options.length) return "";
   const hasImg = q.options.some((o) => o.asset_file);
   const longest = Math.max(...q.options.map((o) => (o.content || "").length));
   const [four, two] = narrow ? [4, 10] : [7, 20];      // 雙欄每欄只有一半寬，門檻跟著減半
-  const cols = hasImg ? 2 : longest <= four ? 4 : longest <= two ? 2 : 1;
+  const pics = hasImg ? optionImages(q, widths, narrow, uniform) : null;
+  const cols = hasImg ? pics?.cols ?? 2 : longest <= four ? 4 : longest <= two ? 2 : 1;
   return `<div class="opts c${cols}">` + q.options.map((o) =>
-    `<div class="opt"><span class="ol">(${esc(o.label)})</span><span>${o.content_html}${o.asset_file ? img(o.asset_file, widths, "選項" + o.label) : ""}</span></div>`).join("") + "</div>";
+    `<div class="opt"><span class="ol">(${esc(o.label)})</span><span class="oc">${o.content_html}${o.asset_file
+      ? img(o.asset_file, widths, "選項" + o.label, pics?.style.get(o.asset_file)) : ""}</span></div>`).join("") + "</div>";
 }
 
 function assets(list: Asset[], widths: Widths): string {
@@ -112,7 +146,7 @@ export function renderPaper(title: string, items: Item[], mode: "exam" | "answer
         if (q.group_stem && q.group_stem !== lastGroup) body.push(`<div class="group-stem">${q.group_stem_html}</div>`);
         lastGroup = q.group_stem;
         const paren = st.choice_paren && mode === "exam" && CHOICE.has(q.type) ? '<span class="paren">(　　)</span>' : "";
-        const parts = [paren + md(cleanStem(q.stem)), assets(q.assets, widths), options(q, widths, cols === 2)];
+        const parts = [paren + md(cleanStem(q.stem)), assets(q.assets, widths), options(q, widths, cols === 2, st.uniform_option_images !== false)];
         if (mode === "exam" && (q.type === "calc" || q.type === "essay") && st.answer_lines)
           parts.push('<div class="lines">' + '<div class="ln"></div>'.repeat(Number(st.answer_lines)) + "</div>");
         if (mode === "key") {
@@ -168,7 +202,8 @@ main.cols2 { column-count: 2; column-gap: 9mm; column-rule: 1px solid #999; }
 .passage { padding: 6px 10px; margin: 6px 0; border: 1px solid #888; break-inside: avoid; }
 .passage p { margin: 0 0 .4em; text-indent: 2em; }
 figure { margin: 4px 0; text-align: center; break-inside: avoid; }
-figure img, .opt img { max-width: 100%; height: auto; }
+figure img { max-width: 100%; height: auto; }
+.opt .oc { flex: 1; min-width: 0; } .opt img { display: block; max-width: 100%; margin: 1px 0 3px; }
 figcaption { font-size: .8em; }
 .lines { margin-top: 4px; } .lines .ln { border-bottom: 1px solid #999; height: 2em; }
 .cite { font-size: .68em; color: #777; text-align: right; line-height: 1.3; }

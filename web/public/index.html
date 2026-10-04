@@ -59,6 +59,7 @@ select,input[type=text],input[type=number],input[type=search]{padding:7px 9px;bo
 .opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 16px;margin-top:4px;font-size:14px}
 .opts.c4{grid-template-columns:repeat(4,minmax(0,1fr))}.opts.c1{grid-template-columns:1fr}
 .opts img,.q figure img{max-width:100%;max-height:220px;background:#fff;border-radius:4px}
+.opts img{display:block;object-fit:contain}
 .q figure{margin:6px 0}
 .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:12px}
 .tag{border:1px solid var(--line);border-radius:99px;padding:0 8px;color:var(--muted)}
@@ -174,6 +175,7 @@ table.list td,table.list th{padding:8px;border-bottom:1px solid var(--line);text
           <label class="check"><input type="checkbox" id="s-fields" checked>班級座號姓名欄</label>
           <label class="check"><input type="checkbox" id="s-score" checked>顯示配分</label>
           <label class="check full"><input type="checkbox" id="s-appendix">試題卷卷末附參考答案</label>
+          <label class="check full"><input type="checkbox" id="s-uniform" checked>選項圖統一大小（題目談倍率、比例、大小時自動維持原卷比例）</label>
         </div>
       </div>
       <div class="card">
@@ -322,6 +324,28 @@ async function search(p){
 }
 function esc(s){ return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])) }
 function optCols(opts){ if (opts.some(o => o.asset_file)) return "c2"; const m = Math.max(...opts.map(o => (o.content||"").length)); return m <= 7 ? "c4" : m <= 20 ? "" : "c1" }
+// 同一題的選項圖排成一致的大小（與排版 lib/render.ts 同規則；螢幕上以圖檔像素為基準）
+const KEEP_SCALE = /倍|放大|縮小|比例|大小|面積|長度|尺寸/;
+function sizeOpts(box){
+  if (KEEP_SCALE.test(box.closest(".q")?.querySelector(".stem")?.textContent || "")) return uniformScale(box);
+  const imgs = [...box.querySelectorAll("img")]; if (!imgs.length) return;
+  Promise.all(imgs.map(i => i.complete ? 0 : new Promise(r => { i.addEventListener("load", r); i.addEventListener("error", r) }))).then(() => {
+    const ds = imgs.map(i => [i.naturalWidth, i.naturalHeight]); if (ds.some(([w, h]) => !w || !h)) return;
+    if (Math.min(...ds.map(d => d[1])) >= 100) {        // 圖片選項：同一高度
+      const hs = ds.map(d => d[1]).sort((a, b) => a - b);
+      const H = Math.min(180, Math.max(80, hs[Math.floor(hs.length / 2)]));
+      imgs.forEach(i => { i.style.height = H + "px"; i.style.width = "auto" });
+    } else uniformScale(box);                             // 文字式小圖：維持比例
+  });
+}
+// 維持原卷比例；格子放不下時整題一起等比縮小，而不是只縮最寬的那張
+function uniformScale(box){
+  const imgs = [...box.querySelectorAll("img")];
+  Promise.all(imgs.map(i => i.complete ? 0 : new Promise(r => { i.addEventListener("load", r); i.addEventListener("error", r) }))).then(() => {
+    const maxW = Math.max(...imgs.map(i => i.naturalWidth)); if (!maxW) return;
+    imgs.forEach(i => { if (i.naturalWidth) i.style.width = `calc(min(100%, ${maxW}px) * ${i.naturalWidth / maxW})` });
+  });
+}
 function ansTag(q){
   if (q.answer_status === "verified") return '<span class="tag ok">答案卷</span>';
   if (q.answer_status === "ai_generated") return `<span class="tag ai">${q.answer_source === "ai:gemini+qwen" ? "AI 雙模型一致" : "AI 多數決"}</span>`;
@@ -335,7 +359,7 @@ function renderList(){
     const figs = q.assets.filter(a => a.file).map(a => `<figure><img loading="lazy" src="/api/assets/${esc(a.file)}" alt=""></figure>`).join("");
     const shared = q.shared_asset?.file ? `<figure><img loading="lazy" src="/api/assets/${esc(q.shared_asset.file)}" alt=""></figure>` : "";
     const opts = q.options.length ? `<div class="opts ${optCols(q.options)}">${q.options.map(o =>
-      `<div>(${esc(o.label)}) ${o.content_html}${o.asset_file ? `<br><img loading="lazy" src="/api/assets/${esc(o.asset_file)}" alt="">` : ""}</div>`).join("")}</div>` : "";
+      `<div>(${esc(o.label)}) ${o.content_html}${o.asset_file ? `<img loading="lazy" src="/api/assets/${esc(o.asset_file)}" alt="">` : ""}</div>`).join("")}</div>` : "";
     return `<div class="q ${inBasket(q.id) ? "sel" : ""}" data-id="${esc(q.id)}">
       <input type="checkbox" ${inBasket(q.id) ? "checked" : ""} tabindex="-1">
       <div class="body">
@@ -349,6 +373,7 @@ function renderList(){
         </div>
       </div></div>`;
   }).join("");
+  $("#list").querySelectorAll(".opts").forEach(sizeOpts);
   $("#list").onclick = e => {
     if (e.target.closest("a")) return;
     const card = e.target.closest(".q"); if (!card) return;
@@ -370,11 +395,12 @@ function seg(id, key){ $(id).onclick = e => { const b = e.target.closest("button
   S[key] = isNaN(+b.dataset.v) ? b.dataset.v : +b.dataset.v;
   $(id).querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); preview() } }
 seg("#s-mode", "mode"); seg("#s-cols", "columns");
-for (const id of ["#s-title","#s-subtitle","#s-fs","#s-lines","#s-auto","#s-fields","#s-score","#s-appendix"])
+for (const id of ["#s-title","#s-subtitle","#s-fs","#s-lines","#s-auto","#s-fields","#s-score","#s-appendix","#s-uniform"])
   $(id).addEventListener(id === "#s-title" || id === "#s-subtitle" ? "input" : "change", () => preview());
 function settings(){ return {subtitle:$("#s-subtitle").value, columns:S.columns, font_size:+$("#s-fs").value,
   answer_lines:+$("#s-lines").value, auto_sections:$("#s-auto").checked, header_fields:$("#s-fields").checked,
-  show_score:$("#s-score").checked, answer_appendix:$("#s-appendix").checked} }
+  show_score:$("#s-score").checked, answer_appendix:$("#s-appendix").checked,
+  uniform_option_images:$("#s-uniform").checked} }
 function payload(){ return {title:$("#s-title").value || "試卷", mode:S.mode, settings:settings(),
   items:basket.ids.map(id => ({question_id:id, score:basket.score[id] ?? null}))} }
 
@@ -444,7 +470,7 @@ $("#papers").onclick = async e => { const b = e.target.closest("button"); if (!b
   basket.ids = []; basket.score = {}; basket.info = {};
   for (const it of p.items) { add(it.question); basket.score[it.question.id] = it.score }
   persist(); $("#s-title").value = p.title; const st = p.settings || {};
-  $("#s-subtitle").value = st.subtitle || ""; show("compose");
+  $("#s-subtitle").value = st.subtitle || ""; $("#s-uniform").checked = st.uniform_option_images !== false; show("compose");
 };
 
 init().catch(e => { $("#list").innerHTML = `<div class="empty">連不上伺服器：${esc(e.message)}</div>` });
