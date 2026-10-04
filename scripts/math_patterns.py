@@ -562,7 +562,7 @@ def apply(con, units: list[str], db_path: Path, dry: bool) -> None:
     rw = sqlite3.connect(db_path)
     # 各版本單元名稱：(版本, 年級, 學期, 代號) → (名稱, 章)
     names = {}
-    for pub, g, sem, c, t, ch in rw.execute("""select q.unit_publisher, d.grade, d.semester, q.unit_code, q.unit_title,
+    for pub, g, sem, c, t, ch, _n in rw.execute("""select q.unit_publisher, d.grade, d.semester, q.unit_code, q.unit_title,
             q.unit_chapter, count(*) from question q join document d on d.id = q.document_id
             where d.subject = '數學' and q.unit_code is not null group by 1, 2, 3, 4, 5, 6 order by 7"""):
         names[(pub, g, sem, c)] = (t, ch)
