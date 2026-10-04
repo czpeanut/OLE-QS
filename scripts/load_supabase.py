@@ -41,6 +41,17 @@ TABLES = [
 BATCH = 500
 
 
+def clean(v):
+    """Postgres 的 text 不收 NUL 字元（擷取時偶爾夾帶），遞迴拿掉。"""
+    if isinstance(v, str):
+        return v.replace("\x00", "")
+    if isinstance(v, list):
+        return [clean(x) for x in v]
+    if isinstance(v, dict):
+        return {k: clean(x) for k, x in v.items()}
+    return v
+
+
 def rows(con: sqlite3.Connection, table: str, doc_filter: str | None):
     where, args = "", ()
     if doc_filter:
@@ -111,7 +122,7 @@ def main() -> int:
                 for c in bool_cols:
                     if r.get(c) is not None:
                         r[c] = bool(r[c])
-                batch.append(r)
+                batch.append({k: clean(v) for k, v in r.items()})
                 n += 1
                 if len(batch) >= BATCH:
                     futs.append(pool.submit(post, table, batch))
