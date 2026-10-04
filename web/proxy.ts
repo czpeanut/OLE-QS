@@ -6,7 +6,7 @@ async function sha256(s: string): Promise<string> {
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
-export async function middleware(req: NextRequest) {
+export async function proxy(req: NextRequest) {
   const code = process.env.SITE_ACCESS_CODE;
   if (!code) return NextResponse.next();
   const { pathname } = req.nextUrl;
