@@ -8,7 +8,9 @@ export function db(): SupabaseClient {
   if (!client) {
     const url = process.env.SUPABASE_URL, key = process.env.SUPABASE_SERVICE_ROLE_KEY;
     if (!url || !key) throw new Error("缺少 SUPABASE_URL 或 SUPABASE_SERVICE_ROLE_KEY");
-    client = createClient(url, key, { auth: { persistSession: false } });
+    // Next.js 會快取伺服器端的 fetch：資料庫查詢一律不快取，否則審題紀錄、題目會讀到舊的
+    client = createClient(url, key, { auth: { persistSession: false },
+      global: { fetch: (input, init) => fetch(input, { ...init, cache: "no-store" }) } });
   }
   return client;
 }
