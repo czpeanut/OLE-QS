@@ -36,12 +36,17 @@ header{position:sticky;top:0;z-index:30;background:var(--panel);border-bottom:1p
 .brand small{font-weight:500;color:var(--muted);font-size:12.5px;letter-spacing:0}
 nav.tabs{display:flex;gap:2px;height:100%}
 nav.tabs button,nav.tabs a{border:0;background:none;padding:0 14px;color:var(--muted);font-weight:600;font-size:14.5px;
-  display:flex;align-items:center;gap:6px;border-bottom:2px solid transparent;text-decoration:none;white-space:nowrap}
+  display:flex;align-items:center;border-bottom:2px solid transparent;text-decoration:none;white-space:nowrap}
 nav.tabs button:hover,nav.tabs a:hover{color:var(--ink)}
 nav.tabs button.on{color:var(--accent);border-bottom-color:var(--accent)}
-.badge-n{min-width:20px;padding:0 6px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-size:12px;line-height:20px;text-align:center}
+.badge-n{margin-left:6px;min-width:20px;padding:0 6px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-size:12px;line-height:20px;text-align:center}
 #stat{margin-left:auto;color:var(--muted);font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
-@media (max-width:760px){header{gap:8px;padding:0 10px}.brand small,#stat{display:none}nav.tabs button,nav.tabs a{padding:0 8px;font-size:13.5px}}
+@media (max-width:760px){
+  header{gap:6px;padding:0 10px;height:52px}
+  .brand{font-size:16px}.brand small,#stat,.lg{display:none}
+  nav.tabs{flex:1;justify-content:flex-end}
+  nav.tabs button,nav.tabs a{padding:0 9px;font-size:14px}
+}
 
 main{max-width:1320px;margin:0 auto;padding:18px 20px 96px}
 @media (max-width:760px){main{padding:12px 12px 96px}}
@@ -73,10 +78,19 @@ select,input[type=text],input[type=number],input[type=search]{padding:7px 10px;b
 .side .grp-s{display:grid;gap:6px;margin-bottom:14px}
 .side hr{border:0;border-top:1px solid var(--line);margin:4px 0 12px}
 .side-toggle{display:none}
+.side-done{display:none}
 @media (max-width:960px){
-  .side-toggle{display:flex;width:100%;justify-content:space-between;align-items:center;border:0;background:none;padding:0;font-weight:700;font-size:15px}
+  .side{padding:12px 14px}
+  .side-toggle{display:flex;width:100%;justify-content:space-between;align-items:center;gap:8px;border:0;background:none;padding:0;font-weight:700;font-size:15px;text-align:left}
+  .side-toggle .chg{font-size:13px;font-weight:700;color:var(--accent);white-space:nowrap}
   .side.closed .side-body{display:none}
-  .side:not(.closed) .side-toggle{margin-bottom:12px}
+  /* 手機：範圍與章節開成全螢幕面板，底部「完成」直接回到題目 */
+  .side:not(.closed){position:fixed;inset:0;z-index:60;border-radius:0;max-height:none;overflow:auto;padding:0 16px 90px;border:0}
+  .side:not(.closed) .side-toggle{position:sticky;top:0;z-index:2;background:var(--panel);width:calc(100% + 32px);margin:0 -16px 12px;padding:14px 16px;border-bottom:1px solid var(--line)}
+  .side:not(.closed) .side-done{display:block;position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--panel);border-top:1px solid var(--line)}
+  .side-done .btn{width:100%;padding:11px;font-size:15px}
+  .unit,.pats label{padding-block:7px}
+  .seg button{padding-block:8px}
 }
 .units-head{display:flex;align-items:center;gap:6px;margin-bottom:4px}
 .units-head h3{margin:0}
@@ -107,6 +121,31 @@ select,input[type=text],input[type=number],input[type=search]{padding:7px 10px;b
 .more{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;font-size:13px}
 .more label{display:flex;align-items:center;gap:6px;color:var(--muted)}
 .more select{width:auto;padding:4px 8px;font-size:13px}
+.more-toggle{display:none}
+@media (max-width:760px){
+  .tools{padding:10px 12px;gap:8px}
+  .search input{height:38px}
+  /* 作答形式、難度各一列，按鈕縮小 */
+  .trow{gap:8px}
+  .tgrp{width:100%}
+  .tgrp > span{font-size:12px;width:4.6em;flex:none}
+  .tgrp .seg{flex-wrap:nowrap;flex:1}
+  .tgrp .seg button{flex:1;padding:5px 0;font-size:13.5px}
+  .more-toggle{margin-left:auto;font-size:13px;padding:4px 10px}
+  .actives{order:5;width:100%}
+  .more-toggle{display:inline-flex}
+  .more{display:none}
+  .tools.open .more{display:flex}
+  .rbar{margin:12px 2px 6px}
+  .rbar .btn{padding:4px 9px;font-size:13px}
+  .rbar #total{font-size:16px}
+  .cbar .btn.link{font-size:13px;padding:4px 4px}
+  .cbar h3{font-size:14px}
+  #sortnote{display:none}
+  .q{padding:12px 12px 10px}
+  .stem{font-size:15px}
+  .qtop .tag:not(.ok):not(.ai):not(.bad){display:none}
+}
 
 /* ── 結果列 ── */
 .rbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:16px 2px 10px}
@@ -177,11 +216,29 @@ select,input[type=text],input[type=number],input[type=search]{padding:7px 10px;b
 .basket .n{font-weight:800;font-size:15px;white-space:nowrap}
 .basket .mix{font-size:13px;opacity:.8;white-space:nowrap}
 .basket .btn.primary{border-radius:10px}
-@media (max-width:560px){.basket .mix{display:none}}
+@media (max-width:760px){
+  .basket{left:8px;right:8px;transform:none;bottom:calc(8px + env(safe-area-inset-bottom,0px));justify-content:space-between;padding:8px 8px 8px 14px}
+  .basket .mix{font-size:12px}
+}
 
 /* ── 組卷匯出 ── */
 .compose{display:grid;grid-template-columns:420px minmax(0,1fr);gap:18px;align-items:start}
 @media (max-width:1000px){.compose{grid-template-columns:minmax(0,1fr)}}
+details.settings > summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:15px;margin-bottom:10px}
+details.settings > summary::-webkit-details-marker{display:none}
+details.settings > summary::after{content:"收合";font-size:12.5px;color:var(--accent);font-weight:700}
+details.settings:not([open]) > summary{margin-bottom:0}
+details.settings:not([open]) > summary::after{content:"展開"}
+@media (max-width:1000px){
+  /* 手機與平板：已選題目在最上面，設定可收合，輸出按鈕固定在底部 */
+  .cside .card.picked{order:-1}
+  .actions{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--panel);border-top:1px solid var(--line);
+    padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px))}
+  .actions .btn{flex:1;padding:10px}
+  .preview{position:static}
+  .preview iframe{height:75vh}
+  .it{grid-template-columns:22px 1fr 52px 66px}
+}
 .cside{display:flex;flex-direction:column;gap:14px}
 .cside .card{padding:16px}
 .cside h3{margin:0 0 10px;font-size:15px}
@@ -220,10 +277,10 @@ table.list th{font-size:12px;color:var(--muted)}
 <header>
   <div class="brand">OLE 題庫<small>選題組卷</small></div>
   <nav class="tabs">
-    <button data-tab="pick" class="on">題庫選題</button>
-    <button data-tab="compose">組卷匯出<span class="badge-n" id="cnt">0</span></button>
-    <button data-tab="papers">我的試卷</button>
-    <a href="/review">審題台</a>
+    <button data-tab="pick" class="on"><span class="lg">題庫</span>選題</button>
+    <button data-tab="compose">組卷<span class="lg">匯出</span><span class="badge-n" id="cnt">0</span></button>
+    <button data-tab="papers"><span class="lg">我的</span>試卷</button>
+    <a href="/review">審題<span class="lg">台</span></a>
   </nav>
   <span id="stat"></span>
 </header>
@@ -233,7 +290,7 @@ table.list th{font-size:12px;color:var(--muted)}
 <section id="tab-pick">
   <div class="layout">
     <aside class="card side closed" id="side">
-      <button class="side-toggle" id="side-toggle" aria-expanded="false"><span id="side-sum">範圍與章節</span><span aria-hidden="true">▾</span></button>
+      <button class="side-toggle" id="side-toggle" aria-expanded="false"><span id="side-sum">範圍與章節</span><span class="chg">更改範圍</span></button>
       <div class="side-body">
         <div class="grp-s"><h3>科目</h3><div class="seg fill" id="f-subject"></div></div>
         <div class="grp-s" id="w-sub"><h3>分科</h3><div class="seg" id="f-sub"></div></div>
@@ -246,6 +303,7 @@ table.list th{font-size:12px;color:var(--muted)}
         <div class="muted" style="font-size:12px;margin-bottom:2px" id="u-note"></div>
         <div id="units"></div>
       </div>
+      <div class="side-done"><button class="btn primary" id="side-done">完成，看題目</button></div>
     </aside>
 
     <div>
@@ -254,9 +312,10 @@ table.list th{font-size:12px;color:var(--muted)}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input type="search" id="f-q" placeholder="搜尋題幹或選項文字" aria-label="關鍵字">
         </div>
-        <div class="trow">
+        <div class="trow" id="trow">
           <div class="tgrp"><span>作答形式</span><div class="seg" id="f-format"></div></div>
           <div class="tgrp" id="w-diff"><span>難度</span><div class="seg" id="f-diff"></div></div>
+          <button type="button" class="btn more-toggle" id="more-toggle">更多篩選</button>
         </div>
         <div class="more">
           <label>答案<select id="f-answer">
@@ -277,8 +336,8 @@ table.list th{font-size:12px;color:var(--muted)}
         <span id="total">—</span>
         <div class="actives" id="actives"></div>
         <span class="sp"></span>
-        <button class="btn" id="sel-page">本頁全加入</button>
-        <button class="btn" id="unsel-page">本頁全移除</button>
+        <button class="btn" id="sel-page"><span class="lg">本頁</span>全加入</button>
+        <button class="btn" id="unsel-page"><span class="lg">本頁</span>全移除</button>
       </div>
       <div class="sortnote muted" style="font-size:12.5px;margin:-4px 2px 6px" id="sortnote">依作答形式（選擇 → 填充 → 應用 → 其他）排列，同一題型由易到難</div>
       <div id="list"></div>
@@ -291,8 +350,8 @@ table.list th{font-size:12px;color:var(--muted)}
 <section id="tab-compose" hidden>
   <div class="compose">
     <div class="cside">
-      <div class="card">
-        <h3>試卷設定</h3>
+      <details class="card settings" id="settings" open>
+        <summary>試卷設定</summary>
         <div class="form">
           <label class="full">標題<input type="text" id="s-title" value="段考複習卷"></label>
           <label class="full">副標題<input type="text" id="s-subtitle" placeholder="例如：七年級數學 第一次段考範圍"></label>
@@ -307,8 +366,8 @@ table.list th{font-size:12px;color:var(--muted)}
           <label class="check full"><input type="checkbox" id="s-appendix">試題卷卷末附參考答案</label>
           <label class="check full"><input type="checkbox" id="s-uniform" checked>選項圖統一大小（題目談倍率、比例、大小時自動維持原卷比例）</label>
         </div>
-      </div>
-      <div class="card">
+      </details>
+      <div class="card picked">
         <div class="cbar">
           <h3 style="margin:0">已選 <span id="c-n">0</span> 題・總分 <span id="c-total">0</span></h3>
           <span class="sp"></span>
@@ -423,7 +482,11 @@ async function init(){
   $("#show-ans").onchange = () => renderList();
   $("#sel-page").onclick = () => { lastItems.forEach(add); persist(); renderList() };
   $("#unsel-page").onclick = () => { lastItems.forEach(q => remove(q.id)); persist(); renderList() };
-  $("#side-toggle").onclick = () => { const c = $("#side").classList.toggle("closed"); $("#side-toggle").setAttribute("aria-expanded", !c) };
+  $("#side-toggle").onclick = () => setSide($("#side").classList.contains("closed"));
+  $("#side-done").onclick = () => { setSide(false); $("#tab-pick").scrollIntoView() };
+  $("#more-toggle").onclick = () => { const o = $(".tools").classList.toggle("open"); $("#more-toggle").textContent = o ? "收合篩選" : "更多篩選" };
+  // 手機：試卷設定預設收合，讓已選題目與預覽在前面
+  if (matchMedia("(max-width:1000px)").matches) $("#settings").open = false;
   refreshCount();
   subjectChanged();
 }
@@ -473,6 +536,13 @@ function renderUnits(){
     else { F.units.delete(c); const u = UNITS.find(x => x.key === c); (u?.patterns || []).forEach(x => F.patterns.delete(x.key)) }
     renderUnits(); search(0) };
   summarizeSide();
+}
+// 手機版：範圍與章節開成全螢幕面板時，背景頁面不要跟著捲動
+function setSide(open){
+  $("#side").classList.toggle("closed", !open);
+  $("#side-toggle .chg").textContent = open ? "收合" : "更改範圍";
+  $("#side-toggle").setAttribute("aria-expanded", open);
+  document.body.style.overflow = open && matchMedia("(max-width:960px)").matches ? "hidden" : "";
 }
 // 手機版收合時，標題列顯示目前的範圍
 function summarizeSide(){
@@ -527,6 +597,7 @@ async function search(p){
   if (seq !== searchSeq) return;
   lastItems = data.items;
   $("#total").textContent = `${data.total.toLocaleString()} 題`;
+  $("#side-done").textContent = `完成，看 ${data.total.toLocaleString()} 題`;
   renderList(); renderPager(data.total);
 }
 
