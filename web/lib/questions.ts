@@ -93,12 +93,20 @@ export async function search(f: Filters): Promise<{ total: number; items: Q[] }>
 }
 
 async function query(f: Filters) {
-  let select = cols();
+  let qb = filtered(f, cols(), true);
+  // 選擇 → 填充 → 應用 → 其他，各題型由易到難（sort_key 由 scripts/build_sort_keys.py 算好）
+  if (sortReady) qb = qb.order("sort_key", { nullsFirst: false });
+  return qb.order("document_id").order("section_ord").order("number").range(f.offset, f.offset + f.limit - 1);
+}
+
+// 篩選條件（選題清單與隨機選題共用）；select 要含 document!document_id!inner(...)
+export function filtered(f: Omit<Filters, "limit" | "offset">, base: string, count = false) {
+  let select = base;
   if (f.q) select += ",question_search!inner(body)";
   if (f.hasFigure === true) select += ",fig:asset!question_id!inner(id)";
   if (f.hasFigure === false) select += ",nofig:asset!question_id(id)";
   if (f.patterns?.length) select += ",pf:tag!question_id!inner(value)";
-  let qb = db().from("question").select(select, { count: "exact" }).neq("status", "rejected");
+  let qb = db().from("question").select(select, count ? { count: "exact" } : undefined).neq("status", "rejected");
   if (f.subject) qb = qb.eq("document.subject", f.subject);
   if (f.grade) qb = qb.eq("document.grade", f.grade);
   if (f.semester) qb = qb.eq("document.semester", f.semester);
@@ -115,9 +123,7 @@ async function query(f: Filters) {
   if (f.answer?.length) qb = qb.in("answer_status", f.answer.map((a) => (a === "ai" ? "ai_generated" : a)));
   if (f.hasFigure === false) qb = qb.is("nofig", null);
   if (f.q) qb = qb.ilike("question_search.body", `%${f.q.replace(/[%_\\]/g, (c) => "\\" + c)}%`);
-  // 選擇 → 填充 → 應用 → 其他，各題型由易到難（sort_key 由 scripts/build_sort_keys.py 算好）
-  if (sortReady) qb = qb.order("sort_key", { nullsFirst: false });
-  return qb.order("document_id").order("section_ord").order("number").range(f.offset, f.offset + f.limit - 1);
+  return qb;
 }
 
 export async function byIds(ids: string[]): Promise<Map<string, Q>> {
