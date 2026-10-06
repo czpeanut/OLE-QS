@@ -185,6 +185,9 @@ body { font-family: "Times New Roman", "Liberation Serif", "Noto Serif TC", "Not
        font-size: var(--fs); line-height: 1.75; color: #000; margin: 0; }
 @media screen { body { background: #e9ebee; padding: 16px 0; }
   .paper { background: #fff; width: 210mm; min-height: 297mm; margin: 0 auto; padding: 15mm 13mm; box-shadow: 0 1px 6px rgba(0,0,0,.18); } }
+/* 手機上預覽：紙張隨畫面寬度縮放（只影響螢幕預覽，列印仍是 A4） */
+@media screen and (max-width: 820px) { body { padding: 0; } .paper { width: auto; min-height: 0; padding: 18px 14px; box-shadow: none; }
+  main.cols2 { column-count: 1; } .fields { flex-wrap: wrap; gap: .4em 1.2em; } .opts.c4 { grid-template-columns: repeat(2, 1fr); } }
 .head { text-align: center; border-bottom: 2px solid #000; padding-bottom: 5px; margin-bottom: 8px; }
 .head h1 { font-size: 1.45em; margin: 0; letter-spacing: .08em; }
 .head .sub { font-size: 1.02em; margin-top: 2px; }
