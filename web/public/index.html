@@ -5,166 +5,292 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OLE 題庫組卷</title>
 <style>
+/* 版面：左側「範圍＋章節樹」、右側「工具列＋分段題目清單」，底部常駐題籃列 */
 :root{
-  --bg:#f4f5f7; --panel:#fff; --line:#e1e4e9; --ink:#1b1f24; --muted:#687280;
-  --accent:#2563c9; --accent-ink:#fff; --accent-soft:#e8f0fc; --warn:#b4531a; --ok:#1d7a4b; --bad:#b42318;
+  --bg:#f2f4f7; --panel:#fff; --sunk:#f7f8fa; --line:#e3e6eb; --line-strong:#cfd4dc;
+  --ink:#151a21; --ink-2:#3a4250; --muted:#6a7381;
+  --accent:#2255c4; --accent-ink:#fff; --accent-soft:#e9effc; --accent-line:#b9cbf3;
+  --ok:#17784a; --ok-soft:#e5f4ec; --warn:#a85410; --warn-soft:#fbf0e4; --bad:#b42318; --bad-soft:#fbeae8;
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 1px 3px rgba(16,24,40,.06);
+  --radius:12px;
 }
 @media (prefers-color-scheme:dark){:root{
-  --bg:#13161a; --panel:#1b1f25; --line:#2b3139; --ink:#e5e8ec; --muted:#99a2ae;
-  --accent:#6aa2f2; --accent-ink:#0d1420; --accent-soft:#1c2a3d; --warn:#e3965e; --ok:#5cbf8a; --bad:#f07a70;
+  --bg:#111419; --panel:#191d24; --sunk:#14181e; --line:#2a3039; --line-strong:#3a424e;
+  --ink:#e7eaee; --ink-2:#c3c9d2; --muted:#98a1ad;
+  --accent:#6f9df2; --accent-ink:#0b1424; --accent-soft:#1b2940; --accent-line:#34507f;
+  --ok:#5cc08b; --ok-soft:#15291f; --warn:#e6a061; --warn-soft:#2c2116; --bad:#f07b70; --bad-soft:#2f1b19;
+  --shadow:none;
 }}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-body{margin:0;font:15px/1.6 "Noto Sans TC","Noto Sans CJK TC",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink)}
+html{scroll-padding-top:70px}
+body{margin:0;font:15px/1.65 "Noto Sans TC","Noto Sans CJK TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
 button,select,input{font:inherit;color:inherit}
-header{position:sticky;top:0;z-index:20;background:var(--panel);border-bottom:1px solid var(--line);
-  display:flex;align-items:center;gap:16px;padding:0 18px;height:54px}
-header .brand{font-weight:800;font-size:18px;letter-spacing:.04em}
-header .brand small{font-weight:500;color:var(--muted);font-size:13px;margin-left:6px}
-nav.tabs{display:flex;gap:4px;margin-left:auto}
-nav.tabs button{border:0;background:none;padding:8px 14px;border-radius:8px;cursor:pointer;color:var(--muted);font-weight:600}
-nav.tabs button.on{background:var(--accent-soft);color:var(--accent)}
-.badge-n{display:inline-block;min-width:20px;padding:0 6px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-size:12px;margin-left:4px}
-main{max-width:1280px;margin:0 auto;padding:16px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
-.filters{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px 12px}
-.filters label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted);font-weight:600}
-select,input[type=text],input[type=number],input[type=search]{padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--bg);font-size:14px;width:100%}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{border:1px solid var(--line);border-radius:99px;padding:3px 11px;font-size:13px;cursor:pointer;background:var(--panel);user-select:none}
-.chip.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-.layout{display:grid;grid-template-columns:300px 1fr;gap:14px;margin-top:14px;align-items:start}
-@media (max-width:900px){.layout{grid-template-columns:1fr}}
-.units{position:sticky;top:70px;max-height:calc(100vh - 86px);overflow:auto}
-.units h3,.side h3{margin:0 0 8px;font-size:13px;color:var(--muted)}
-.unit-ch{font-size:12px;color:var(--muted);margin:10px 0 3px;font-weight:700}
-.unit{display:flex;gap:6px;align-items:flex-start;padding:3px 4px;border-radius:6px;cursor:pointer;font-size:14px;overflow-wrap:anywhere}
-.unit:hover{background:var(--accent-soft)}
-.unit .c{margin-left:auto;white-space:nowrap;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
-.unit.zero{opacity:.45}
-.unit .code{color:var(--muted);font-size:12px;min-width:3.4em;white-space:nowrap}
-.bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
-.bar .grow{flex:1}
-.btn{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:14px}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
-.btn.link{border:0;background:none;color:var(--accent);padding:4px 6px}
-.btn:disabled{opacity:.45;cursor:not-allowed}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ── 頂列 ── */
+header{position:sticky;top:0;z-index:30;background:var(--panel);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:18px;padding:0 20px;height:56px}
+.brand{display:flex;align-items:baseline;gap:8px;font-weight:800;font-size:18px;letter-spacing:.04em;white-space:nowrap}
+.brand small{font-weight:500;color:var(--muted);font-size:12.5px;letter-spacing:0}
+nav.tabs{display:flex;gap:2px;height:100%}
+nav.tabs button,nav.tabs a{border:0;background:none;padding:0 14px;color:var(--muted);font-weight:600;font-size:14.5px;
+  display:flex;align-items:center;gap:6px;border-bottom:2px solid transparent;text-decoration:none;white-space:nowrap}
+nav.tabs button:hover,nav.tabs a:hover{color:var(--ink)}
+nav.tabs button.on{color:var(--accent);border-bottom-color:var(--accent)}
+.badge-n{min-width:20px;padding:0 6px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-size:12px;line-height:20px;text-align:center}
+#stat{margin-left:auto;color:var(--muted);font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+@media (max-width:760px){header{gap:8px;padding:0 10px}.brand small,#stat{display:none}nav.tabs button,nav.tabs a{padding:0 8px;font-size:13.5px}}
+
+main{max-width:1320px;margin:0 auto;padding:18px 20px 96px}
+@media (max-width:760px){main{padding:12px 12px 96px}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
 .muted{color:var(--muted)}
-.q{display:flex;gap:10px;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:12px;margin-bottom:10px;cursor:pointer}
-.q.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset;background:var(--accent-soft)}
-.q input[type=checkbox]{width:18px;height:18px;margin-top:3px;accent-color:var(--accent);flex:none}
-.q .body{flex:1;min-width:0}
-.q .stem{white-space:normal}
-.q .grp{font-size:13px;border-left:3px solid var(--line);padding:2px 8px;margin-bottom:6px;color:var(--muted);max-height:6.5em;overflow:hidden}
-.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 16px;margin-top:4px;font-size:14px}
+.btn{border:1px solid var(--line-strong);background:var(--panel);border-radius:8px;padding:6px 12px;font-size:14px;line-height:1.4;white-space:nowrap}
+.btn:hover{border-color:var(--accent-line);background:var(--accent-soft)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.btn.primary:hover{filter:brightness(1.07)}
+.btn.link{border:0;background:none;color:var(--accent);padding:4px 6px}
+.btn.link:hover{text-decoration:underline}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+select,input[type=text],input[type=number],input[type=search]{padding:7px 10px;border:1px solid var(--line-strong);border-radius:8px;background:var(--panel);font-size:14px;width:100%}
+
+/* 分段按鈕（科目、冊別、版本、作答形式、難度） */
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.seg button{border:1px solid var(--line);background:var(--sunk);border-radius:8px;padding:5px 11px;font-size:14px;color:var(--ink-2);white-space:nowrap}
+.seg button:hover{border-color:var(--accent-line)}
+.seg button.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.seg.fill button{flex:1;padding-inline:4px}
+.seg.books{display:grid;grid-template-columns:repeat(3,1fr)}
+
+/* ── 選題：兩欄 ── */
+.layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:960px){.layout{grid-template-columns:minmax(0,1fr)}}
+.side{position:sticky;top:74px;max-height:calc(100vh - 92px);overflow:auto;padding:16px}
+@media (max-width:960px){.side{position:static;max-height:none}}
+.side h3{margin:0 0 6px;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--muted)}
+.side .grp-s{display:grid;gap:6px;margin-bottom:14px}
+.side hr{border:0;border-top:1px solid var(--line);margin:4px 0 12px}
+.side-toggle{display:none}
+@media (max-width:960px){
+  .side-toggle{display:flex;width:100%;justify-content:space-between;align-items:center;border:0;background:none;padding:0;font-weight:700;font-size:15px}
+  .side.closed .side-body{display:none}
+  .side:not(.closed) .side-toggle{margin-bottom:12px}
+}
+.units-head{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.units-head h3{margin:0}
+.units-head .sp{flex:1}
+.units-head label{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:3px}
+.unit-ch{font-size:12px;color:var(--muted);margin:12px 0 2px;font-weight:700}
+.unit{display:flex;gap:7px;align-items:flex-start;padding:4px 6px;border-radius:7px;cursor:pointer;font-size:14px;line-height:1.45;overflow-wrap:anywhere}
+.unit:hover{background:var(--sunk)}
+.unit:has(input:checked){background:var(--accent-soft)}
+.unit input{margin-top:3px;accent-color:var(--accent)}
+.unit .code{color:var(--muted);font-size:12px;min-width:3.2em;white-space:nowrap;padding-top:1px}
+.unit .c,.pats .c{margin-left:auto;white-space:nowrap;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;padding-top:1px}
+.unit.zero{opacity:.45}
+.pats{margin:2px 0 8px 22px;padding-left:8px;border-left:2px solid var(--accent-line);display:grid;gap:1px}
+.pats label{display:flex;gap:6px;align-items:flex-start;font-size:13px;line-height:1.45;cursor:pointer;padding:2px 4px;border-radius:6px}
+.pats label:hover{background:var(--sunk)}
+.pats input{margin-top:3px;accent-color:var(--accent)}
+.pats .hint{font-size:12px;color:var(--muted);padding:2px 4px}
+
+/* ── 工具列 ── */
+.tools{padding:14px 16px;display:grid;gap:12px}
+.search{position:relative}
+.search input{padding-left:36px;height:40px;font-size:15px}
+.search svg{position:absolute;left:11px;top:11px;width:18px;height:18px;color:var(--muted)}
+.trow{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+.tgrp{display:flex;align-items:center;gap:8px}
+.tgrp > span{font-size:12.5px;color:var(--muted);font-weight:700;white-space:nowrap}
+.more{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;font-size:13px}
+.more label{display:flex;align-items:center;gap:6px;color:var(--muted)}
+.more select{width:auto;padding:4px 8px;font-size:13px}
+
+/* ── 結果列 ── */
+.rbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:16px 2px 10px}
+.rbar #total{font-size:17px;font-weight:800;font-variant-numeric:tabular-nums}
+.rbar .sortnote{font-size:12.5px;color:var(--muted)}
+.rbar .sp{flex:1}
+.actives{display:flex;flex-wrap:wrap;gap:6px}
+.actives button{border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);border-radius:99px;padding:1px 10px;font-size:12.5px}
+.actives button::after{content:" ×";opacity:.7}
+.switch{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+
+/* ── 題目清單 ── */
+.sec-h{display:flex;align-items:baseline;gap:10px;margin:22px 2px 8px;font-weight:800;font-size:15px}
+.sec-h:first-child{margin-top:4px}
+.sec-h small{font-weight:500;color:var(--muted);font-size:12.5px}
+.sub-h{margin:14px 2px 6px;font-size:13px;font-weight:700;color:var(--ink-2);display:flex;gap:8px;align-items:center}
+.sub-h::before{content:"";width:3px;height:14px;border-radius:2px;background:var(--accent)}
+.q{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px 12px;margin-bottom:10px;box-shadow:var(--shadow);cursor:pointer;transition:border-color .12s}
+.q:hover{border-color:var(--line-strong)}
+.q.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.qtop{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:12.5px}
+.qno{font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums;min-width:1.6em}
+.qtop .sp{flex:1}
+.add{border:1px solid var(--accent-line);background:var(--panel);color:var(--accent);border-radius:99px;padding:3px 13px;font-size:13px;font-weight:700;white-space:nowrap}
+.q.sel .add{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.stem{font-size:15.5px;line-height:1.8;overflow-wrap:anywhere}
+.passage{position:relative;font-size:14px;line-height:1.75;color:var(--ink-2);background:var(--sunk);border-radius:8px;padding:8px 12px;margin-bottom:8px;max-height:7.4em;overflow:hidden}
+.passage.open{max-height:none}
+.passage .more-btn{position:absolute;right:0;bottom:0;left:0;text-align:right;padding:18px 10px 4px;background:linear-gradient(to bottom,transparent,var(--sunk) 55%);border:0;color:var(--accent);font-size:12.5px;font-weight:700}
+.passage.open .more-btn{position:static;background:none;padding:4px 0 0}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 18px;margin-top:6px;font-size:14.5px}
 .opts.c4{grid-template-columns:repeat(4,minmax(0,1fr))}.opts.c1{grid-template-columns:1fr}
+@media (max-width:640px){.opts.c4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .opts img,.q figure img{max-width:100%;max-height:220px;background:#fff;border-radius:4px}
 .opts img{display:block;object-fit:contain}
-.q figure{margin:6px 0}
-.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:12px}
-.tag{border:1px solid var(--line);border-radius:99px;padding:0 8px;color:var(--muted)}
-.tag.u{color:var(--accent);border-color:var(--accent)}
-.tag.p{color:var(--ink);background:var(--bg);border-color:var(--line)}
-.tag.d1{color:var(--ok);border-color:var(--ok)}.tag.d2{color:var(--warn);border-color:var(--warn)}.tag.d3,.tag.d4,.tag.d5{color:var(--bad);border-color:var(--bad)}
-.pats{margin:0 0 6px 26px;display:grid;gap:1px}.pats label{display:flex;gap:6px;align-items:baseline;font-size:12.5px;cursor:pointer;line-height:1.45}.pats .c{margin-left:auto;color:var(--muted);font-variant-numeric:tabular-nums}
-.tag.ok{color:var(--ok)}.tag.ai{color:var(--warn)}.tag.bad{color:var(--bad)}
-.ans{color:var(--bad);font-weight:700;font-size:13px;margin-top:4px}
-.pager{display:flex;justify-content:center;gap:6px;margin:14px 0}
-.fab{position:fixed;right:22px;bottom:22px;z-index:30;box-shadow:0 4px 14px rgba(0,0,0,.2);border-radius:99px;padding:12px 20px}
+.q figure{margin:8px 0}
+.ans{display:inline-block;margin-top:8px;color:var(--bad);background:var(--bad-soft);border-radius:6px;padding:1px 8px;font-weight:700;font-size:13.5px}
+.qfoot{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:12px;color:var(--muted)}
+.tag{border:1px solid var(--line);border-radius:99px;padding:0 8px;color:var(--muted);white-space:nowrap;line-height:1.7}
+.tag.u{color:var(--accent);border-color:var(--accent-line)}
+.tag.p{color:var(--ink-2);background:var(--sunk)}
+.tag.ok{color:var(--ok);border-color:transparent;background:var(--ok-soft)}
+.tag.ai{color:var(--warn);border-color:transparent;background:var(--warn-soft)}
+.tag.bad{color:var(--bad);border-color:transparent;background:var(--bad-soft)}
+.diff{display:inline-flex;align-items:center;gap:2px;font-weight:700;white-space:nowrap}
+.diff i{width:7px;height:7px;border-radius:50%;background:var(--line-strong)}
+.diff.d1{color:var(--ok)}.diff.d2{color:var(--warn)}.diff.d3,.diff.d4,.diff.d5{color:var(--bad)}
+.diff i.f{background:currentColor}
+.diff b{margin-left:4px;font-weight:700}
+.pager{display:flex;justify-content:center;align-items:center;gap:4px;margin:18px 0;flex-wrap:wrap}
+.pager button{min-width:36px}
+.pager button.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.empty{text-align:center;padding:64px 20px;color:var(--muted)}
+.empty b{display:block;color:var(--ink-2);font-size:16px;margin-bottom:4px}
+.skel{height:120px;border-radius:var(--radius);background:linear-gradient(90deg,var(--panel),var(--sunk),var(--panel));background-size:200% 100%;animation:sk 1.2s infinite linear;margin-bottom:10px;border:1px solid var(--line)}
+@keyframes sk{to{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){.skel{animation:none}}
+
+/* 數式 */
 .math sup,.math sub{font-size:.72em}.frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;font-size:.92em;margin:0 .15em}
 .frac .num{border-bottom:1px solid currentColor;padding:0 .3em}.frac .den{padding:0 .3em}
 .ovl,.sqrt{border-top:1px solid currentColor}
 .ovarr{display:inline-flex;flex-direction:column;align-items:center;line-height:1}.ovarr .arr{font-size:.7em}
-.compose{display:grid;grid-template-columns:420px 1fr;gap:14px;align-items:start}
-@media (max-width:1000px){.compose{grid-template-columns:1fr}}
-.side{display:flex;flex-direction:column;gap:12px}
-.form{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px}
-.form label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted);font-weight:600}
+
+/* ── 底部題籃列 ── */
+.basket{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:40;display:flex;align-items:center;gap:14px;
+  background:var(--ink);color:var(--panel);border-radius:14px;padding:9px 10px 9px 18px;box-shadow:0 8px 28px rgba(0,0,0,.22);max-width:calc(100vw - 24px)}
+.basket .n{font-weight:800;font-size:15px;white-space:nowrap}
+.basket .mix{font-size:13px;opacity:.8;white-space:nowrap}
+.basket .btn.primary{border-radius:10px}
+@media (max-width:560px){.basket .mix{display:none}}
+
+/* ── 組卷匯出 ── */
+.compose{display:grid;grid-template-columns:420px minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:1000px){.compose{grid-template-columns:minmax(0,1fr)}}
+.cside{display:flex;flex-direction:column;gap:14px}
+.cside .card{padding:16px}
+.cside h3{margin:0 0 10px;font-size:15px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
+.form label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted);font-weight:700}
 .form .full{grid-column:1/-1}
 .form .check{flex-direction:row;align-items:center;gap:6px;color:var(--ink);font-weight:500;font-size:14px}
-.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.seg button{flex:1;border:0;background:var(--panel);padding:6px 4px;cursor:pointer;font-size:13px}
-.seg button.on{background:var(--accent);color:var(--accent-ink);font-weight:700}
+.form .seg button{flex:1;font-size:13px;padding:5px 4px}
+.cbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.cbar .sp{flex:1}
 .items{max-height:52vh;overflow:auto;border-top:1px solid var(--line)}
-.it{display:grid;grid-template-columns:28px 1fr 58px 64px;gap:6px;align-items:center;padding:6px 2px;border-bottom:1px solid var(--line);font-size:13px}
+.it{display:grid;grid-template-columns:28px 1fr 58px 70px;gap:6px;align-items:center;padding:7px 2px;border-bottom:1px solid var(--line);font-size:13px}
 .it .t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.it .ty{color:var(--muted);font-size:11px}
+.it .ty{color:var(--muted);font-size:11.5px}
 .it input{padding:3px 5px;font-size:13px}
-.it .ops{display:flex;gap:0}
-.it .ops button{border:0;background:none;cursor:pointer;color:var(--muted);padding:2px 4px}
-.preview{position:sticky;top:70px}
-.preview iframe{width:100%;height:calc(100vh - 150px);border:1px solid var(--line);border-radius:10px;background:#e9ebee}
-.empty{text-align:center;padding:60px 20px;color:var(--muted)}
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--panel);padding:8px 16px;border-radius:8px;font-size:14px;z-index:50;opacity:0;transition:opacity .2s}
+.it .ops{display:flex}
+.it .ops button{border:0;background:none;color:var(--muted);padding:2px 5px}
+.it .ops button:hover{color:var(--ink)}
+.mixbar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--sunk);margin:2px 0 10px}
+.mixbar i{display:block}
+.mixbar .e{background:var(--ok)}.mixbar .m{background:var(--warn)}.mixbar .h{background:var(--bad)}
+.mixtext{font-size:12.5px;color:var(--muted);margin-top:-4px;margin-bottom:8px}
+.actions{display:flex;gap:8px}
+.preview{position:sticky;top:74px}
+.preview .cbar strong{font-size:15px}
+.preview iframe{width:100%;height:calc(100vh - 140px);border:1px solid var(--line);border-radius:var(--radius);background:#e9ebee}
+.toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--ink);color:var(--panel);padding:8px 16px;border-radius:8px;font-size:14px;z-index:50;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.show{opacity:1}
 table.list{width:100%;border-collapse:collapse;font-size:14px}
-table.list td,table.list th{padding:8px;border-bottom:1px solid var(--line);text-align:left}
+table.list td,table.list th{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left}
+table.list th{font-size:12px;color:var(--muted)}
+.tblwrap{overflow-x:auto}
 </style>
 </head>
 <body>
 <header>
   <div class="brand">OLE 題庫<small>選題組卷</small></div>
-  <span class="muted" id="stat"></span>
   <nav class="tabs">
     <button data-tab="pick" class="on">題庫選題</button>
     <button data-tab="compose">組卷匯出<span class="badge-n" id="cnt">0</span></button>
     <button data-tab="papers">我的試卷</button>
-    <a href="/review" style="padding:8px 14px;color:var(--muted);font-weight:600;text-decoration:none">審題台</a>
+    <a href="/review">審題台</a>
   </nav>
+  <span id="stat"></span>
 </header>
 
 <main>
 <!-- ───── 題庫選題 ───── -->
 <section id="tab-pick">
-  <div class="card">
-    <div class="filters">
-      <label>科目<select id="f-subject"></select></label>
-      <label id="w-sub">子科<select id="f-sub"></select></label>
-      <label>冊別<select id="f-book"></select></label>
-      <label id="w-pub">版本<select id="f-pub"></select></label>
-      <label>答案<select id="f-answer">
-        <option value="">不限</option>
-        <option value="verified,ai">有答案</option>
-        <option value="verified">答案卷</option>
-        <option value="ai">AI 作答</option>
-        <option value="disputed">待判定</option>
-        <option value="missing">無答案</option>
-      </select></label>
-      <label id="w-diff">難度<select id="f-diff"><option value="">不限</option><option value="1">易</option><option value="2">中</option><option value="3,4,5">難</option><option value="4,5">挑戰題</option></select></label>
-      <label>附圖<select id="f-fig"><option value="">不限</option><option value="1">有圖</option><option value="0">無圖</option></select></label>
-      <label>學年度<select id="f-year"><option value="">不限</option></select></label>
-      <label>關鍵字<input type="search" id="f-q" placeholder="題幹或選項"></label>
-    </div>
-    <div style="margin-top:10px" class="chips" id="f-types"></div>
-  </div>
-
   <div class="layout">
-    <aside class="card units">
-      <h3 id="units-title">章節</h3>
-      <div class="bar" style="margin:0 0 6px"><button class="btn link" id="u-all">全部章節</button>
-        <label class="muted" style="font-size:12px;margin-left:auto"><input type="checkbox" id="u-hide0" checked> 隱藏 0 題</label></div>
-      <div class="muted" style="font-size:12px;margin-bottom:4px" id="u-note"></div>
-      <div id="units"></div>
-    </aside>
-    <div>
-      <div class="bar">
-        <strong id="total">—</strong>
-        <span class="grow"></span>
-        <label class="muted" style="font-size:13px"><input type="checkbox" id="show-ans"> 顯示答案</label>
-        <button class="btn" id="sel-page">本頁全選</button>
-        <button class="btn" id="unsel-page">取消本頁</button>
+    <aside class="card side closed" id="side">
+      <button class="side-toggle" id="side-toggle" aria-expanded="false"><span id="side-sum">範圍與章節</span><span aria-hidden="true">▾</span></button>
+      <div class="side-body">
+        <div class="grp-s"><h3>科目</h3><div class="seg fill" id="f-subject"></div></div>
+        <div class="grp-s" id="w-sub"><h3>分科</h3><div class="seg" id="f-sub"></div></div>
+        <div class="grp-s"><h3>冊別</h3><div class="seg books" id="f-book"></div></div>
+        <div class="grp-s" id="w-pub"><h3>版本</h3><div class="seg fill" id="f-pub"></div></div>
+        <hr>
+        <div class="units-head"><h3 id="units-title">章節</h3><span class="sp"></span>
+          <button class="btn link" id="u-all" style="font-size:12.5px">全部</button>
+          <label><input type="checkbox" id="u-hide0" checked>隱藏 0 題</label></div>
+        <div class="muted" style="font-size:12px;margin-bottom:2px" id="u-note"></div>
+        <div id="units"></div>
       </div>
+    </aside>
+
+    <div>
+      <div class="card tools">
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" id="f-q" placeholder="搜尋題幹或選項文字" aria-label="關鍵字">
+        </div>
+        <div class="trow">
+          <div class="tgrp"><span>作答形式</span><div class="seg" id="f-format"></div></div>
+          <div class="tgrp" id="w-diff"><span>難度</span><div class="seg" id="f-diff"></div></div>
+        </div>
+        <div class="more">
+          <label>答案<select id="f-answer">
+            <option value="">不限</option>
+            <option value="verified,ai">有答案</option>
+            <option value="verified">答案卷</option>
+            <option value="ai">AI 作答</option>
+            <option value="disputed">待判定</option>
+            <option value="missing">無答案</option>
+          </select></label>
+          <label>附圖<select id="f-fig"><option value="">不限</option><option value="1">有圖</option><option value="0">無圖</option></select></label>
+          <label>學年度<select id="f-year"><option value="">不限</option></select></label>
+          <label class="switch" style="margin-left:auto"><input type="checkbox" id="show-ans">顯示答案</label>
+        </div>
+      </div>
+
+      <div class="rbar">
+        <span id="total">—</span>
+        <div class="actives" id="actives"></div>
+        <span class="sp"></span>
+        <button class="btn" id="sel-page">本頁全加入</button>
+        <button class="btn" id="unsel-page">本頁全移除</button>
+      </div>
+      <div class="sortnote muted" style="font-size:12.5px;margin:-4px 2px 6px" id="sortnote">依作答形式（選擇 → 填充 → 應用 → 其他）排列，同一題型由易到難</div>
       <div id="list"></div>
       <div class="pager" id="pager"></div>
     </div>
   </div>
-  <button class="btn primary fab" id="go-compose" hidden>前往組卷（<span id="fab-n">0</span>）</button>
 </section>
 
 <!-- ───── 組卷匯出 ───── -->
 <section id="tab-compose" hidden>
   <div class="compose">
-    <div class="side">
+    <div class="cside">
       <div class="card">
         <h3>試卷設定</h3>
         <div class="form">
@@ -183,21 +309,23 @@ table.list td,table.list th{padding:8px;border-bottom:1px solid var(--line);text
         </div>
       </div>
       <div class="card">
-        <div class="bar" style="margin-bottom:6px">
-          <h3 style="margin:0">已選 <span id="c-n">0</span> 題・總分 <span id="c-total">0</span><span class="muted" id="c-diff" style="font-size:12px;font-weight:400;margin-left:8px"></span></h3>
-          <span class="grow"></span>
-          <button class="btn link" id="c-fill">依題型套用預設配分</button>
+        <div class="cbar">
+          <h3 style="margin:0">已選 <span id="c-n">0</span> 題・總分 <span id="c-total">0</span></h3>
+          <span class="sp"></span>
+          <button class="btn link" id="c-sort" title="依選題頁的順序重排：選擇 → 填充 → 應用 → 其他，同題型由易到難">依題型排序</button>
+          <button class="btn link" id="c-fill">套用預設配分</button>
           <button class="btn link" id="c-clear" style="color:var(--bad)">清空</button>
         </div>
+        <div id="c-mix"></div>
         <div class="items" id="items"></div>
       </div>
-      <div class="bar">
+      <div class="actions">
         <button class="btn primary" id="dl-pdf">輸出 PDF／列印</button>
         <button class="btn" id="save">存成我的試卷</button>
       </div>
     </div>
     <div class="preview">
-      <div class="bar"><strong>預覽</strong><span class="muted" id="pv-note" style="font-size:13px"></span><span class="grow"></span><button class="btn" id="pv-refresh">重新整理</button></div>
+      <div class="cbar"><strong>預覽</strong><span class="muted" id="pv-note" style="font-size:13px"></span><span class="sp"></span><button class="btn" id="pv-refresh">重新整理</button></div>
       <iframe id="pv" title="試卷預覽"></iframe>
     </div>
   </div>
@@ -205,18 +333,32 @@ table.list td,table.list th{padding:8px;border-bottom:1px solid var(--line);text
 
 <!-- ───── 我的試卷 ───── -->
 <section id="tab-papers" hidden>
-  <div class="card"><table class="list" id="papers"></table></div>
+  <div class="card tblwrap"><table class="list" id="papers"></table></div>
 </section>
 </main>
-<div class="toast" id="toast"></div>
+
+<div class="basket" id="basket" hidden>
+  <span class="n">已選 <span id="b-n">0</span> 題</span>
+  <span class="mix" id="b-mix"></span>
+  <button class="btn primary" id="go-compose">前往組卷 →</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
 
 <script>
 const $ = s => document.querySelector(s);
 const TYPE = {single:"單選", multiple:"多選", tf:"是非", fill:"填充", matching:"配合", calc:"計算", essay:"問答", group:"題組"};
+// 作答形式：選擇 → 填充 → 應用 → 其他（與 scripts/build_sort_keys.py 相同）
+const FORMATS = [["choice", "選擇", ["single","multiple"]], ["fill", "填充", ["fill"]], ["apply", "應用", ["calc","essay"]], ["other", "其他", ["tf","matching"]]];
+const FORMAT_NAME = {0:"選擇題", 1:"填充題", 2:"應用題", 3:"其他題型", 9:"字音字義"};
+const FORMAT_NOTE = {3:"題組、是非、配合等", 9:"國字注音、注釋、字音字形字義比較"};
 const DEFAULT_SCORE = {single:2, multiple:3, tf:1, fill:2, matching:2, calc:5, essay:5, group:2};
+// 難度 1～5 是 AI 依評分規準評的；段考題多半落在 1～3，所以 3 以上就算難
+const DIFF = {1:"易", 2:"中", 3:"難", 4:"難", 5:"難"};
+const DIFF_OPTS = [["", "全部"], ["1", "易"], ["2", "中"], ["3,4,5", "難"], ["4,5", "挑戰"]];
+const DIFF_TIP = "AI 評估的難度：1 直接套公式／記憶、2 標準題、3 需轉換題意或應用、4 多步推理、5 壓軸";
 const PAGE = 30;
 let TAX = null, page = 0, lastItems = [];
-const F = {subject:"數學", sub:"", book:"7-1", pub:"翰林", units:new Set(), types:new Set(), patterns:new Set()};
+const F = {subject:"數學", sub:"", book:"7-1", pub:"翰林", units:new Set(), formats:new Set(), patterns:new Set(), diff:""};
 
 // ── 題籃（存在瀏覽器）：順序、配分與列表顯示用的摘要 ──
 const basket = load("oleqs.basket", {ids:[], score:{}, info:{}});
@@ -227,12 +369,19 @@ function add(q){
   if (inBasket(q.id)) return;
   basket.ids.push(q.id);
   basket.score[q.id] = basket.score[q.id] ?? DEFAULT_SCORE[q.type] ?? 2;
-  basket.info[q.id] = {type:q.type, text:plain(q.stem_html).slice(0,80), unit:q.unit?.title || "", book:q.book, d:q.difficulty || null};
+  basket.info[q.id] = {type:q.type, text:plain(q.stem_html).slice(0,80), unit:q.unit?.title || "", book:q.book, d:q.difficulty || null, k:q.sort_key ?? null};
 }
 function remove(id){ basket.ids = basket.ids.filter(x => x !== id); delete basket.score[id]; delete basket.info[id] }
 function plain(h){ const d = document.createElement("div"); d.innerHTML = h || ""; return d.textContent.replace(/\s+/g," ").trim() }
-function refreshCount(){ const n = basket.ids.length; $("#cnt").textContent = n; $("#fab-n").textContent = n; $("#go-compose").hidden = !n }
+function mix(){ const n = {易:0, 中:0, 難:0}; basket.ids.forEach(id => { const d = basket.info[id]?.d; if (d) n[DIFF[d]]++ }); return n }
+function refreshCount(){
+  const n = basket.ids.length, m = mix();
+  $("#cnt").textContent = n; $("#b-n").textContent = n;
+  $("#b-mix").textContent = m.易 + m.中 + m.難 ? `易 ${m.易}・中 ${m.中}・難 ${m.難}` : "";
+  $("#basket").hidden = !n || $("#tab-pick").hidden;
+}
 function toast(m){ const t = $("#toast"); t.textContent = m; t.classList.add("show"); clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove("show"), 1800) }
+function esc(s){ return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])) }
 
 // ── 分頁籤 ──
 document.querySelectorAll("nav.tabs button").forEach(b => b.onclick = () => show(b.dataset.tab));
@@ -240,47 +389,52 @@ $("#go-compose").onclick = () => show("compose");
 function show(tab){
   document.querySelectorAll("nav.tabs button").forEach(b => b.classList.toggle("on", b.dataset.tab === tab));
   for (const t of ["pick","compose","papers"]) $("#tab-"+t).hidden = t !== tab;
-  $("#go-compose").hidden = tab !== "pick" || !basket.ids.length;
+  refreshCount();
   if (tab === "compose") { renderItems(); preview() }
   if (tab === "papers") loadPapers();
+  scrollTo(0, 0);
 }
 
 // ── 篩選 ──
 async function api(path, opt){ const r = await fetch(path, opt); if (!r.ok) throw new Error((await r.text()).slice(0,200)); return r }
-function opt(sel, list, val){ sel.innerHTML = list.map(([v,t]) => `<option value="${v}">${t}</option>`).join(""); if (val !== undefined) sel.value = val }
+function seg(el, list, val, onPick){
+  el.innerHTML = list.map(([v, t]) => `<button type="button" data-v="${esc(v)}" class="${v === val ? "on" : ""}" aria-pressed="${v === val}">${esc(t)}</button>`).join("");
+  el.onclick = e => { const b = e.target.closest("button"); if (!b) return;
+    el.querySelectorAll("button").forEach(x => { x.classList.toggle("on", x === b); x.setAttribute("aria-pressed", x === b) });
+    onPick(b.dataset.v) };
+}
 async function init(){
   TAX = await (await api("/api/taxonomy")).json();
-  opt($("#f-subject"), TAX.subjects.map(s => [s.name, s.name]), F.subject);
-  opt($("#f-book"), TAX.books.map(b => [`${b.grade}-${b.semester}`, b.name]), F.book);
-  opt($("#f-pub"), TAX.publishers.map(p => [p, p]), F.pub);
   $("#stat").textContent = `收錄 ${TAX.total.toLocaleString()} 題`;
-  opt($("#f-year"), [["","不限"], ...TAX.years.map(y => [y, y])], "");
-  $("#f-types").innerHTML = '<span class="muted" style="font-size:12px;margin-right:4px">題型</span>' +
-    Object.entries(TYPE).filter(([k]) => k !== "group").map(([k,v]) => `<span class="chip" data-v="${k}">${v}</span>`).join("");
-  $("#f-types").onclick = e => { const c = e.target.closest(".chip"); if (!c) return;
-    F.types.has(c.dataset.v) ? F.types.delete(c.dataset.v) : F.types.add(c.dataset.v); c.classList.toggle("on"); search(0) };
-  for (const id of ["#f-answer","#f-fig","#f-year","#f-diff"]) $(id).onchange = () => search(0);
+  seg($("#f-subject"), TAX.subjects.map(s => [s.name, s.name]), F.subject, v => { F.subject = v; F.sub = ""; subjectChanged() });
+  seg($("#f-book"), TAX.books.map(b => [`${b.grade}-${b.semester}`, b.name]), F.book, v => { F.book = v; loadUnits() });
+  seg($("#f-pub"), TAX.publishers.map(p => [p, p]), F.pub, v => { F.pub = v; loadUnits() });
+  seg($("#f-diff"), DIFF_OPTS, F.diff, v => { F.diff = v; search(0) });
+  // 作答形式可複選：再點一次取消
+  $("#f-format").innerHTML = FORMATS.map(([k, t]) => `<button type="button" data-v="${k}" aria-pressed="false">${t}</button>`).join("");
+  $("#f-format").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+    const k = b.dataset.v; F.formats.has(k) ? F.formats.delete(k) : F.formats.add(k);
+    b.classList.toggle("on", F.formats.has(k)); b.setAttribute("aria-pressed", F.formats.has(k)); search(0) };
+  $("#f-year").innerHTML = [["","不限"], ...TAX.years.map(y => [y, y])].map(([v,t]) => `<option value="${v}">${t}</option>`).join("");
+  for (const id of ["#f-answer","#f-fig","#f-year"]) $(id).onchange = () => search(0);
   let tq; $("#f-q").oninput = () => { clearTimeout(tq); tq = setTimeout(() => search(0), 350) };
-  $("#f-subject").onchange = () => { F.subject = $("#f-subject").value; F.sub = ""; subjectChanged() };
-  $("#f-sub").onchange = () => { F.sub = $("#f-sub").value; loadUnits() };
-  $("#f-book").onchange = () => { F.book = $("#f-book").value; loadUnits() };
-  $("#f-pub").onchange = () => { F.pub = $("#f-pub").value; loadUnits() };
   $("#u-all").onclick = () => { F.units.clear(); F.patterns.clear(); renderUnits(); search(0) };
   $("#u-hide0").onchange = () => renderUnits();
   $("#show-ans").onchange = () => renderList();
   $("#sel-page").onclick = () => { lastItems.forEach(add); persist(); renderList() };
   $("#unsel-page").onclick = () => { lastItems.forEach(q => remove(q.id)); persist(); renderList() };
+  $("#side-toggle").onclick = () => { const c = $("#side").classList.toggle("closed"); $("#side-toggle").setAttribute("aria-expanded", !c) };
   refreshCount();
   subjectChanged();
 }
 function subjectChanged(){
   const s = TAX.subjects.find(x => x.name === F.subject);
   $("#w-sub").hidden = !s.subs.length;
-  opt($("#f-sub"), [["", "全部"], ...s.subs.map(x => [x, x])], F.sub);
-  // 英語用跨版本主題，數學與自然各版本節次一致，版本只影響章節名稱
+  seg($("#f-sub"), [["", "全部"], ...s.subs.map(x => [x, x])], F.sub, v => { F.sub = v; loadUnits() });
+  // 英語用跨版本主題；數學與自然各版本節次一致，版本只影響章節名稱
   $("#w-pub").hidden = F.subject === "英語";
   $("#w-diff").hidden = F.subject !== "數學";          // 目前只有數學評過難度
-  if (F.subject !== "數學") $("#f-diff").value = "";
+  if (F.subject !== "數學" && F.diff) { F.diff = ""; seg($("#f-diff"), DIFF_OPTS, "", v => { F.diff = v; search(0) }) }
   loadUnits();
 }
 
@@ -291,8 +445,8 @@ async function loadUnits(){
   if (F.sub) qs.set("sub", F.sub);
   UNITS = await (await api("/api/units?" + qs)).json();
   F.units.clear(); F.patterns.clear();
-  $("#units-title").textContent = F.subject === "英語" ? "文法主題（跨版本）" : `章節（${F.pub}版）`;
-  $("#u-note").textContent = F.subject === "英語" ? "" : TAX.merged.includes(F.subject) ? "三版本節次對齊，合併計數" : "";
+  $("#units-title").textContent = F.subject === "英語" ? "文法主題" : `章節・${F.pub}版`;
+  $("#u-note").textContent = F.subject === "英語" ? "跨版本主題" : TAX.merged.includes(F.subject) ? "三版本節次對齊，題數合併計算" : "";
   renderUnits(); search(0);
 }
 function renderUnits(){
@@ -307,10 +461,10 @@ function renderUnits(){
       <span class="code">${esc(u.code)}</span><span>${esc(u.title)}</span><span class="c">${u.count.toLocaleString()}</span></label>`;
     // 勾選的單元底下列出題型（數學）
     if (F.units.has(u.key) && u.patterns?.length)
-      html += `<div class="pats">${u.patterns.map(p => `<label title="${esc(p.desc)}"><input type="checkbox" data-p="${esc(p.key)}" ${F.patterns.has(p.key) ? "checked" : ""}>
+      html += `<div class="pats"><div class="hint">題型（可複選）</div>${u.patterns.map(p => `<label title="${esc(p.desc)}"><input type="checkbox" data-p="${esc(p.key)}" ${F.patterns.has(p.key) ? "checked" : ""}>
         <span>${esc(p.name)}</span><span class="c">${p.n.toLocaleString()}</span></label>`).join("")}</div>`;
   }
-  $("#units").innerHTML = html || '<div class="muted">這一冊沒有章節資料</div>';
+  $("#units").innerHTML = html || '<div class="muted" style="font-size:13px">這一冊沒有章節資料</div>';
   $("#units").onchange = e => {
     const p = e.target.dataset.p;
     if (p) { e.target.checked ? F.patterns.add(p) : F.patterns.delete(p); return search(0) }
@@ -318,6 +472,36 @@ function renderUnits(){
     if (e.target.checked) F.units.add(c);
     else { F.units.delete(c); const u = UNITS.find(x => x.key === c); (u?.patterns || []).forEach(x => F.patterns.delete(x.key)) }
     renderUnits(); search(0) };
+  summarizeSide();
+}
+// 手機版收合時，標題列顯示目前的範圍
+function summarizeSide(){
+  const book = TAX.books.find(b => `${b.grade}-${b.semester}` === F.book)?.name || "";
+  const n = F.units.size;
+  $("#side-sum").textContent = `${F.subject}${F.sub ? "・" + F.sub : ""}・${book}${F.subject === "英語" ? "" : "・" + F.pub}${n ? `・${n} 個單元` : ""}`;
+}
+
+// 已套用的篩選（可點掉）
+function renderActives(){
+  const chips = [];
+  const name = k => { for (const u of UNITS) { if (u.key === k) return `${u.code} ${u.title}`; const p = u.patterns?.find(x => x.key === k); if (p) return p.name } return k };
+  F.units.forEach(k => chips.push(["unit", k, name(k)]));
+  F.patterns.forEach(k => chips.push(["pat", k, name(k)]));
+  F.formats.forEach(k => chips.push(["fmt", k, FORMATS.find(f => f[0] === k)[1] + "題"]));
+  if (F.diff) chips.push(["diff", F.diff, "難度：" + DIFF_OPTS.find(d => d[0] === F.diff)[1]]);
+  for (const [id, label] of [["#f-answer","答案"],["#f-fig","附圖"],["#f-year","學年度"]])
+    if ($(id).value) chips.push(["sel", id, `${label}：${$(id).selectedOptions[0].text}`]);
+  if ($("#f-q").value.trim()) chips.push(["q", "", `「${$("#f-q").value.trim()}」`]);
+  $("#actives").innerHTML = chips.map(([t, k, l]) => `<button type="button" data-t="${t}" data-k="${esc(k)}" title="移除這個條件">${esc(l)}</button>`).join("");
+  $("#actives").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+    const {t, k} = b.dataset;
+    if (t === "unit") { F.units.delete(k); const u = UNITS.find(x => x.key === k); (u?.patterns || []).forEach(x => F.patterns.delete(x.key)); renderUnits() }
+    if (t === "pat") { F.patterns.delete(k); renderUnits() }
+    if (t === "fmt") { F.formats.delete(k); const b2 = $(`#f-format [data-v="${k}"]`); b2.classList.remove("on"); b2.setAttribute("aria-pressed", false) }
+    if (t === "diff") { F.diff = ""; seg($("#f-diff"), DIFF_OPTS, "", v => { F.diff = v; search(0) }) }
+    if (t === "sel") $(k).value = "";
+    if (t === "q") $("#f-q").value = "";
+    search(0) };
 }
 
 let searchSeq = 0;
@@ -327,22 +511,25 @@ async function search(p){
   const qs = new URLSearchParams({subject:F.subject, grade:g, semester:s, limit:PAGE, offset:p*PAGE});
   if (F.sub) qs.set("sub", F.sub);
   if (F.units.size) { qs.set("units", [...F.units].join(",")); qs.set("publisher", F.pub) }
-  if (F.types.size) qs.set("type", [...F.types].join(","));
+  if (F.formats.size) qs.set("type", FORMATS.filter(f => F.formats.has(f[0])).flatMap(f => f[2]).join(","));
   if (F.patterns.size) qs.set("patterns", [...F.patterns].join(","));
-  if ($("#f-diff").value) qs.set("difficulty", $("#f-diff").value);
+  if (F.diff) qs.set("difficulty", F.diff);
   if ($("#f-answer").value) qs.set("answer", $("#f-answer").value);
   if ($("#f-fig").value) qs.set("has_figure", $("#f-fig").value === "1");
   if ($("#f-year").value) qs.set("year", $("#f-year").value);
   if ($("#f-q").value.trim()) qs.set("q", $("#f-q").value.trim());
-  $("#list").innerHTML = '<div class="empty">載入中…</div>';
+  renderActives(); summarizeSide();
+  $("#list").innerHTML = '<div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   const seq = ++searchSeq;                 // 連續改篩選時，只採用最後一次查詢的結果
-  const data = await (await api("/api/questions?" + qs)).json();
+  let data;
+  try { data = await (await api("/api/questions?" + qs)).json() }
+  catch (e) { if (seq === searchSeq) $("#list").innerHTML = `<div class="empty"><b>載入失敗</b>${esc(e.message)}</div>`; return }
   if (seq !== searchSeq) return;
   lastItems = data.items;
-  $("#total").textContent = `共 ${data.total.toLocaleString()} 題`;
+  $("#total").textContent = `${data.total.toLocaleString()} 題`;
   renderList(); renderPager(data.total);
 }
-function esc(s){ return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])) }
+
 function optCols(opts){ if (opts.some(o => o.asset_file)) return "c2"; const m = Math.max(...opts.map(o => (o.content||"").length)); return m <= 7 ? "c4" : m <= 20 ? "" : "c1" }
 // 同一題的選項圖排成一致的大小（與排版 lib/render.ts 同規則；螢幕上以圖檔像素為基準）
 const KEEP_SCALE = /倍|放大|縮小|比例|大小|面積|長度|尺寸/;
@@ -366,59 +553,86 @@ function uniformScale(box){
     imgs.forEach(i => { if (i.naturalWidth) i.style.width = `calc(min(100%, ${maxW}px) * ${i.naturalWidth / maxW})` });
   });
 }
-// 難度 1～5 是 AI 依評分規準評的；段考題多半落在 1～3，所以 3 以上就算難
-const DIFF = {1:"易", 2:"中", 3:"難", 4:"難", 5:"難"};
 function ansTag(q){
   if (q.answer_status === "verified") return '<span class="tag ok">答案卷</span>';
   if (q.answer_status === "ai_generated") return `<span class="tag ai">${q.answer_source === "ai:gemini+qwen" ? "AI 雙模型一致" : "AI 多數決"}</span>`;
   if (q.answer_status === "disputed") return '<span class="tag bad">答案待判定</span>';
   return '<span class="tag">無答案</span>';
 }
+function diffTag(d){
+  if (!d) return "";
+  return `<span class="diff d${d}" title="${DIFF_TIP}">${[1,2,3,4,5].map(i => `<i class="${i <= d ? "f" : ""}"></i>`).join("")}<b>${DIFF[d]}</b></span>`;
+}
+// 單元名稱用目前選的版本（同一節次各版本名稱略有不同）
+const unitLabel = q => q.unit ? `${q.unit.code} ${(UNITS.find(u => u.code === q.unit.code && (!q.unit.subject || u.subject === q.unit.subject))?.title) || q.unit.title || ""}` : "";
+const fmtOf = q => q.sort_key != null ? Math.floor(q.sort_key / 1e7) : null;
 function renderList(){
   const showAns = $("#show-ans").checked;
-  if (!lastItems.length) { $("#list").innerHTML = '<div class="empty">查無題目，試著放寬篩選條件</div>'; return }
-  $("#list").innerHTML = lastItems.map(q => {
+  if (!lastItems.length) { $("#list").innerHTML = '<div class="empty"><b>找不到符合條件的題目</b>試著取消部分篩選條件，或換一個單元</div>'; return }
+  let html = "", lastFmt, lastSub;
+  lastItems.forEach((q, i) => {
+    // 依排序分段：作答形式為大標，單元（＋題型）為小標
+    const f = fmtOf(q);
+    if (f !== null && f !== lastFmt) {
+      html += `<div class="sec-h">${FORMAT_NAME[f] || "其他題型"}${FORMAT_NOTE[f] ? `<small>${FORMAT_NOTE[f]}</small>` : ""}</div>`;
+      lastFmt = f; lastSub = null;
+    }
+    const sub = [unitLabel(q), q.pattern?.name || ""].filter(Boolean).join("・");
+    if (f !== null && sub && sub !== lastSub) { html += `<div class="sub-h">${esc(sub)}</div>`; lastSub = sub }
     const figs = q.assets.filter(a => a.file).map(a => `<figure><img loading="lazy" src="/api/assets/${esc(a.file)}" alt=""></figure>`).join("");
     const shared = q.shared_asset?.file ? `<figure><img loading="lazy" src="/api/assets/${esc(q.shared_asset.file)}" alt=""></figure>` : "";
+    const sharedText = q.shared_asset?.text && !q.group_stem_html ? `<p>${esc(q.shared_asset.text)}</p>` : "";
+    const passage = q.group_stem_html || sharedText;
     const opts = q.options.length ? `<div class="opts ${optCols(q.options)}">${q.options.map(o =>
       `<div>(${esc(o.label)}) ${o.content_html}${o.asset_file ? `<img loading="lazy" src="/api/assets/${esc(o.asset_file)}" alt="">` : ""}</div>`).join("")}</div>` : "";
-    return `<div class="q ${inBasket(q.id) ? "sel" : ""}" data-id="${esc(q.id)}">
-      <input type="checkbox" ${inBasket(q.id) ? "checked" : ""} tabindex="-1">
-      <div class="body">
-        ${q.group_stem_html ? `<div class="grp">${q.group_stem_html}</div>` : ""}${shared}
-        <div class="stem">${q.stem_html}</div>${figs}${opts}
-        ${showAns && q.answer ? `<div class="ans">答：${esc(q.answer.join("、"))}</div>` : ""}
-        <div class="meta">
-          ${q.unit ? `<span class="tag u">${esc(q.unit.code)} ${esc(q.unit.title)}</span>` : ""}
-          ${q.pattern ? `<span class="tag p">${esc(q.pattern.name)}</span>` : ""}
-          ${q.difficulty ? `<span class="tag d${q.difficulty}" title="AI 評估的難度：1 直接套公式、2 標準題、3 需轉換題意或應用、4 多步推理、5 壓軸">${DIFF[q.difficulty]} ${q.difficulty}</span>` : ""}
-          <span class="tag">${TYPE[q.type] || q.type}</span>${ansTag(q)}
-          <span class="tag">${esc(q.citation)}</span>
-        </div>
-      </div></div>`;
-  }).join("");
+    const sel = inBasket(q.id);
+    html += `<article class="q ${sel ? "sel" : ""}" data-id="${esc(q.id)}">
+      <div class="qtop"><span class="qno">${page * PAGE + i + 1}</span>${diffTag(q.difficulty)}<span class="tag">${TYPE[q.type] || q.type}</span>${ansTag(q)}<span class="sp"></span>
+        <button type="button" class="add" aria-pressed="${sel}">${sel ? "✓ 已加入" : "＋ 加入"}</button></div>
+      ${passage ? `<div class="passage">${passage}<button type="button" class="more-btn">展開全文</button></div>` : ""}${shared}
+      <div class="stem">${q.stem_html}</div>${figs}${opts}
+      ${showAns && q.answer ? `<div class="ans">答：${esc(q.answer.join("、"))}</div>` : ""}
+      <div class="qfoot">
+        ${q.unit ? `<span class="tag u">${esc(unitLabel(q))}</span>` : ""}
+        ${q.pattern ? `<span class="tag p">${esc(q.pattern.name)}</span>` : ""}
+        <span>${esc(q.citation)}</span>
+      </div></article>`;
+  });
+  $("#list").innerHTML = html;
   $("#list").querySelectorAll(".opts").forEach(sizeOpts);
+  // 短文章不用「展開全文」
+  $("#list").querySelectorAll(".passage").forEach(p => { if (p.scrollHeight <= p.clientHeight + 4) { p.classList.add("open"); p.querySelector(".more-btn").remove() } });
   $("#list").onclick = e => {
+    const more = e.target.closest(".more-btn");
+    if (more) { const p = more.closest(".passage"); p.classList.toggle("open"); more.textContent = p.classList.contains("open") ? "收合" : "展開全文"; return }
     if (e.target.closest("a")) return;
     const card = e.target.closest(".q"); if (!card) return;
+    if (!e.target.closest(".add") && getSelection().toString()) return;      // 選取文字時不要切換
     const q = lastItems.find(x => x.id === card.dataset.id);
     inBasket(q.id) ? remove(q.id) : add(q); persist();
-    card.classList.toggle("sel", inBasket(q.id)); card.querySelector("input").checked = inBasket(q.id);
+    const on = inBasket(q.id), b = card.querySelector(".add");
+    card.classList.toggle("sel", on); b.textContent = on ? "✓ 已加入" : "＋ 加入"; b.setAttribute("aria-pressed", on);
   };
 }
 function renderPager(total){
   const n = Math.ceil(total / PAGE); if (n <= 1) { $("#pager").innerHTML = ""; return }
-  const btn = (p, t, dis) => `<button class="btn" data-p="${p}" ${dis ? "disabled" : ""}>${t}</button>`;
-  $("#pager").innerHTML = btn(page-1, "上一頁", page === 0) + `<span class="muted" style="align-self:center">第 ${page+1} / ${n} 頁</span>` + btn(page+1, "下一頁", page >= n-1);
-  $("#pager").onclick = e => { const b = e.target.closest("button"); if (b && !b.disabled) { search(+b.dataset.p); scrollTo(0,0) } };
+  const pages = new Set([0, n - 1, page - 2, page - 1, page, page + 1, page + 2].filter(p => p >= 0 && p < n));
+  let html = `<button class="btn" data-p="${page - 1}" ${page === 0 ? "disabled" : ""}>‹ 上一頁</button>`, prev = -1;
+  [...pages].sort((a, b) => a - b).forEach(p => {
+    if (p - prev > 1) html += '<span class="muted">…</span>';
+    html += `<button class="btn ${p === page ? "on" : ""}" data-p="${p}">${p + 1}</button>`; prev = p;
+  });
+  html += `<button class="btn" data-p="${page + 1}" ${page >= n - 1 ? "disabled" : ""}>下一頁 ›</button>`;
+  $("#pager").innerHTML = html;
+  $("#pager").onclick = e => { const b = e.target.closest("button"); if (b && !b.disabled && +b.dataset.p !== page) { search(+b.dataset.p); scrollTo(0, 0) } };
 }
 
 // ── 組卷匯出 ──
 const S = {mode:"exam", columns:1};
-function seg(id, key){ $(id).onclick = e => { const b = e.target.closest("button"); if (!b) return;
+function segPick(id, key){ $(id).onclick = e => { const b = e.target.closest("button"); if (!b) return;
   S[key] = isNaN(+b.dataset.v) ? b.dataset.v : +b.dataset.v;
   $(id).querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); preview() } }
-seg("#s-mode", "mode"); seg("#s-cols", "columns");
+segPick("#s-mode", "mode"); segPick("#s-cols", "columns");
 for (const id of ["#s-title","#s-subtitle","#s-fs","#s-lines","#s-auto","#s-fields","#s-score","#s-appendix","#s-uniform"])
   $(id).addEventListener(id === "#s-title" || id === "#s-subtitle" ? "input" : "change", () => preview());
 function settings(){ return {subtitle:$("#s-subtitle").value, columns:S.columns, font_size:+$("#s-fs").value,
@@ -432,15 +646,15 @@ function renderItems(){
   $("#c-n").textContent = basket.ids.length;
   $("#c-total").textContent = basket.ids.reduce((a,id) => a + (+basket.score[id] || 0), 0);
   // 難度分布（只算評過難度的題目）
-  const dn = {易:0, 中:0, 難:0}; basket.ids.forEach(id => { const d = basket.info[id]?.d; if (d) dn[DIFF[d]]++ });
-  const rated = dn.易 + dn.中 + dn.難;
-  $("#c-diff").textContent = rated ? `難度　易 ${dn.易}・中 ${dn.中}・難 ${dn.難}` : "";
+  const m = mix(), rated = m.易 + m.中 + m.難;
+  $("#c-mix").innerHTML = rated ? `<div class="mixbar" title="難度分布">${[["e",m.易],["m",m.中],["h",m.難]].map(([c, v]) => `<i class="${c}" style="width:${v / rated * 100}%"></i>`).join("")}</div>
+    <div class="mixtext">易 ${m.易}・中 ${m.中}・難 ${m.難}${rated < basket.ids.length ? `　（${basket.ids.length - rated} 題未評難度）` : ""}</div>` : "";
   $("#items").innerHTML = basket.ids.map((id, i) => { const f = basket.info[id] || {};
     return `<div class="it" data-id="${esc(id)}"><span class="muted">${i+1}</span>
-      <div class="t" title="${esc(f.text)}"><span class="ty">${TYPE[f.type] || ""}・${esc(f.book || "")} ${esc(f.unit || "")}</span><br>${esc(f.text)}</div>
+      <div class="t" title="${esc(f.text)}"><span class="ty">${TYPE[f.type] || ""}${f.d ? "・" + DIFF[f.d] : ""}・${esc(f.book || "")} ${esc(f.unit || "")}</span><br>${esc(f.text)}</div>
       <input type="number" min="0" step="0.5" value="${basket.score[id] ?? ""}" aria-label="配分">
       <span class="ops"><button data-a="up" title="上移">▲</button><button data-a="down" title="下移">▼</button><button data-a="del" title="移除">✕</button></span></div>` }).join("")
-    || '<div class="empty">還沒有選題，回「題庫選題」勾選題目</div>';
+    || '<div class="empty"><b>還沒有選題</b>回「題庫選題」加入題目</div>';
 }
 $("#items").onclick = e => { const b = e.target.closest("button"); if (!b) return;
   const id = b.closest(".it").dataset.id, i = basket.ids.indexOf(id);
@@ -452,7 +666,14 @@ $("#items").onchange = e => { if (e.target.type !== "number") return;
   basket.score[e.target.closest(".it").dataset.id] = e.target.value === "" ? null : +e.target.value;
   persist(); renderItems(); preview() };
 $("#c-fill").onclick = () => { basket.ids.forEach(id => basket.score[id] = DEFAULT_SCORE[basket.info[id]?.type] ?? 2); persist(); renderItems(); preview() };
-$("#c-clear").onclick = () => { if (!confirm("清空所有已選題目？")) return; basket.ids = []; basket.score = {}; basket.info = {}; persist(); renderItems(); preview() };
+// 題籃依選題頁的排序重排（舊的題籃沒有排序資訊的題目留在原位後面）
+$("#c-sort").onclick = () => { const pos = new Map(basket.ids.map((id, i) => [id, i]));
+  basket.ids.sort((a, b) => (basket.info[a]?.k ?? 9e9) - (basket.info[b]?.k ?? 9e9) || pos.get(a) - pos.get(b));
+  persist(); renderItems(); preview(); toast("已依題型排序") };
+let clearArmed = 0;
+$("#c-clear").onclick = () => {            // 點兩次才清空，避免誤觸
+  if (Date.now() - clearArmed > 3000) { clearArmed = Date.now(); $("#c-clear").textContent = "再點一次清空"; setTimeout(() => $("#c-clear").textContent = "清空", 3000); return }
+  basket.ids = []; basket.score = {}; basket.info = {}; persist(); renderItems(); preview(); $("#c-clear").textContent = "清空" };
 
 let pvTimer;
 function preview(){ clearTimeout(pvTimer); pvTimer = setTimeout(doPreview, 400) }
@@ -465,7 +686,7 @@ async function doPreview(){
   } catch (e) { $("#pv-note").textContent = "預覽失敗：" + e.message }
 }
 $("#pv-refresh").onclick = doPreview;
-// 用瀏覽器列印：對話框的「目的地」選「另存為 PDF」即可存檔（與 codexstudy 錯題本列印同一種做法）
+// 用瀏覽器列印：對話框的「目的地」選「另存為 PDF」即可存檔
 $("#dl-pdf").onclick = async () => {
   if (!basket.ids.length) return toast("尚未選題");
   clearTimeout(pvTimer); await doPreview();
@@ -488,12 +709,14 @@ async function loadPapers(){
   $("#papers").innerHTML = list.length ? "<tr><th>標題</th><th>科目</th><th>題數</th><th>總分</th><th>更新時間</th><th></th></tr>" + list.map(p =>
     `<tr data-id="${esc(p.id)}"><td>${esc(p.title)}</td><td>${esc(p.subject || "")}</td><td>${p.count}</td><td>${p.total_score}</td>
      <td class="muted">${new Date(p.updated_at).toLocaleString()}</td>
-     <td><button class="btn" data-a="open">載入編輯</button> <button class="btn link" data-a="del" style="color:var(--bad)">刪除</button></td></tr>`).join("")
-    : '<tr><td class="empty">還沒有存過試卷</td></tr>';
+     <td style="white-space:nowrap"><button class="btn" data-a="open">載入編輯</button> <button class="btn link" data-a="del" style="color:var(--bad)">刪除</button></td></tr>`).join("")
+    : '<tr><td class="empty"><b>還沒有存過試卷</b>在「組卷匯出」按「存成我的試卷」</td></tr>';
 }
 $("#papers").onclick = async e => { const b = e.target.closest("button"); if (!b) return;
   const id = b.closest("tr").dataset.id;
-  if (b.dataset.a === "del") { if (!confirm("刪除這份試卷？")) return; await api("/api/papers/" + id, {method:"DELETE"}); loadPapers(); return }
+  if (b.dataset.a === "del") {
+    if (b.dataset.armed !== "1") { b.dataset.armed = "1"; b.textContent = "確定刪除？"; setTimeout(() => { b.dataset.armed = ""; b.textContent = "刪除" }, 3000); return }
+    await api("/api/papers/" + id, {method:"DELETE"}); loadPapers(); return }
   const p = await (await api("/api/papers/" + id)).json();
   basket.ids = []; basket.score = {}; basket.info = {};
   for (const it of p.items) { add(it.question); basket.score[it.question.id] = it.score }
@@ -501,7 +724,7 @@ $("#papers").onclick = async e => { const b = e.target.closest("button"); if (!b
   $("#s-subtitle").value = st.subtitle || ""; $("#s-uniform").checked = st.uniform_option_images !== false; show("compose");
 };
 
-init().catch(e => { $("#list").innerHTML = `<div class="empty">連不上伺服器：${esc(e.message)}</div>` });
+init().catch(e => { $("#list").innerHTML = `<div class="empty"><b>連不上伺服器</b>${esc(e.message)}</div>` });
 </script>
 </body>
 </html>

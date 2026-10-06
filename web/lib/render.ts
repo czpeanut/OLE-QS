@@ -4,7 +4,7 @@
 import { esc, MATH_CSS, render as md, cleanStem } from "./mathfmt";
 import type { Asset, Q } from "./questions";
 
-const TYPE_ORDER = ["single", "multiple", "tf", "fill", "matching", "calc", "essay", "group"];
+const TYPE_ORDER = ["single", "multiple", "fill", "calc", "essay", "tf", "matching", "group"];   // 選擇 → 填充 → 應用 → 其他
 const TYPE_NAME: Record<string, string> = { single: "單選題", multiple: "多選題", tf: "是非題", fill: "填充題", matching: "配合題", calc: "計算題", essay: "非選擇題", group: "題組" };
 const GROUP_NAME: Record<string, string> = { 英語: "閱讀測驗", 國文: "閱讀測驗" };
 const CHOICE = new Set(["single", "multiple", "tf"]);

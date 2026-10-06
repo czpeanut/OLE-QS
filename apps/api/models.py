@@ -195,6 +195,7 @@ class Question(Base):
     explanation_md: Mapped[str | None] = mapped_column(Text)
 
     difficulty: Mapped[int | None] = mapped_column(Integer, index=True)
+    sort_key: Mapped[int | None] = mapped_column(Integer, index=True)   # 選題頁排序（scripts/build_sort_keys.py）
     score: Mapped[float | None] = mapped_column(Float)
     page: Mapped[int | None] = mapped_column(Integer)
     answer_count: Mapped[int | None] = mapped_column(Integer)   # 應有幾個答案

@@ -24,7 +24,7 @@ from .mathfmt import MATH_CSS, render as md
 from .models import Question
 from .storage import asset_path
 
-TYPE_ORDER = ["single", "multiple", "tf", "fill", "matching", "calc", "essay", "group"]
+TYPE_ORDER = ["single", "multiple", "fill", "calc", "essay", "tf", "matching", "group"]  # 選擇 → 填充 → 應用 → 其他
 TYPE_NAME = {"single": "單選題", "multiple": "多選題", "tf": "是非題", "fill": "填充題",
              "matching": "配合題", "calc": "計算題", "essay": "非選擇題", "group": "題組"}
 GROUP_NAME = {"英語": "閱讀測驗", "國文": "閱讀測驗"}
