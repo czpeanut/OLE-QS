@@ -216,6 +216,31 @@ select,input[type=text],input[type=number],input[type=search]{padding:7px 10px;b
 .basket .n{font-weight:800;font-size:15px;white-space:nowrap}
 .basket .mix{font-size:13px;opacity:.8;white-space:nowrap}
 .basket .btn.primary{border-radius:10px}
+.basket .btn.view{background:transparent;color:var(--panel);border-color:rgba(255,255,255,.35);border-radius:10px}
+.basket .btn.view:hover{background:rgba(255,255,255,.12)}
+@media (prefers-color-scheme:dark){.basket .btn.view{border-color:rgba(0,0,0,.3)}.basket .btn.view:hover{background:rgba(0,0,0,.08)}}
+
+/* ── 已選題目面板：桌面從右側滑出，手機全螢幕 ── */
+@media (max-width:430px){.basket .mix{display:none}.basket{gap:8px}}
+.basket .n{cursor:pointer}
+.drawer-bg{position:fixed;inset:0;z-index:70;background:rgba(10,14,20,.35)}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:71;width:min(440px,100vw);background:var(--panel);border-left:1px solid var(--line);
+  display:flex;flex-direction:column;box-shadow:-8px 0 28px rgba(0,0,0,.18)}
+.drawer header{position:static;height:auto;padding:14px 16px;gap:10px;border-bottom:1px solid var(--line)}
+.drawer header h2{margin:0;font-size:16px}
+.drawer header .mixtext{margin:0;font-size:12.5px}
+.drawer header .x{margin-left:auto;border:0;background:var(--sunk);border-radius:8px;width:34px;height:34px;font-size:18px;line-height:1;color:var(--muted)}
+.drawer .dlist{flex:1;overflow:auto;padding:6px 8px}
+.drawer .di{display:grid;grid-template-columns:26px minmax(0,1fr) 34px;gap:8px;align-items:start;padding:10px 8px;border-bottom:1px solid var(--line)}
+.drawer .di .no{color:var(--muted);font-weight:700;font-variant-numeric:tabular-nums;padding-top:1px}
+.drawer .di .meta{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.drawer .di .txt{font-size:14px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px}
+.drawer .di .rm{border:0;background:none;color:var(--muted);font-size:16px;width:34px;height:34px;border-radius:8px}
+.drawer .di .rm:hover{background:var(--bad-soft);color:var(--bad)}
+.drawer .dfoot{display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line)}
+.drawer .dfoot .primary{flex:1;padding:10px}
+.drawer .dempty{padding:60px 20px;text-align:center;color:var(--muted)}
+@media (max-width:760px){.drawer{width:100vw;border-left:0}}
 @media (max-width:760px){
   .basket{left:8px;right:8px;transform:none;bottom:calc(8px + env(safe-area-inset-bottom,0px));justify-content:space-between;padding:8px 8px 8px 14px}
   .basket .mix{font-size:12px}
@@ -399,8 +424,16 @@ table.list th{font-size:12px;color:var(--muted)}
 <div class="basket" id="basket" hidden>
   <span class="n">已選 <span id="b-n">0</span> 題</span>
   <span class="mix" id="b-mix"></span>
+  <button class="btn view" id="b-view">查看已選</button>
   <button class="btn primary" id="go-compose">前往組卷 →</button>
 </div>
+<div class="drawer-bg" id="drawer-bg" hidden></div>
+<aside class="drawer" id="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+  <header><div><h2 id="drawer-title">已選 <span id="d-n">0</span> 題</h2><div class="mixtext" id="d-mix"></div></div>
+    <button class="x" id="d-close" aria-label="關閉">×</button></header>
+  <div class="dlist" id="d-list"></div>
+  <div class="dfoot"><button class="btn" id="d-clear" style="color:var(--bad)">清空</button><button class="btn primary" id="d-go">前往組卷 →</button></div>
+</aside>
 <div class="toast" id="toast" role="status"></div>
 
 <script>
@@ -437,8 +470,38 @@ function refreshCount(){
   const n = basket.ids.length, m = mix();
   $("#cnt").textContent = n; $("#b-n").textContent = n;
   $("#b-mix").textContent = m.易 + m.中 + m.難 ? `易 ${m.易}・中 ${m.中}・難 ${m.難}` : "";
-  $("#basket").hidden = !n || $("#tab-pick").hidden;
+  $("#basket").hidden = !n || $("#tab-pick").hidden || !$("#drawer").hidden;
 }
+// ── 已選題目面板 ──
+function openDrawer(){ renderDrawer(); $("#drawer").hidden = $("#drawer-bg").hidden = false; $("#basket").hidden = true; document.body.style.overflow = "hidden"; $("#d-close").focus() }
+function closeDrawer(){ $("#drawer").hidden = $("#drawer-bg").hidden = true; document.body.style.overflow = ""; refreshCount() }
+function renderDrawer(){
+  const n = basket.ids.length, m = mix();
+  $("#d-n").textContent = n;
+  const total = basket.ids.reduce((a, id) => a + (+basket.score[id] || 0), 0);
+  $("#d-mix").textContent = `總分 ${total}` + (m.易 + m.中 + m.難 ? `・易 ${m.易}・中 ${m.中}・難 ${m.難}` : "");
+  $("#d-list").innerHTML = n ? basket.ids.map((id, i) => { const f = basket.info[id] || {};
+    return `<div class="di" data-id="${esc(id)}"><span class="no">${i + 1}</span>
+      <div><div class="meta"><span>${TYPE[f.type] || ""}</span>${f.d ? `<span class="diff d${f.d}">${[1,2,3,4,5].map(k => `<i class="${k <= f.d ? "f" : ""}"></i>`).join("")}<b>${DIFF[f.d]}</b></span>` : ""}<span>${esc(f.book || "")} ${esc(f.unit || "")}</span></div>
+        <div class="txt">${esc(f.text)}</div></div>
+      <button class="rm" title="移除" aria-label="移除第 ${i + 1} 題">✕</button></div>` }).join("")
+    : '<div class="dempty">還沒有選題</div>';
+}
+$("#b-view").onclick = openDrawer;
+$("#basket .n").onclick = openDrawer;
+$("#d-close").onclick = closeDrawer;
+$("#drawer-bg").onclick = closeDrawer;
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#drawer").hidden) closeDrawer() });
+$("#d-go").onclick = () => { closeDrawer(); show("compose") };
+$("#d-list").onclick = e => { const b = e.target.closest(".rm"); if (!b) return;
+  const id = b.closest(".di").dataset.id; remove(id); persist(); renderDrawer();
+  // 選題清單上的卡片同步取消
+  const card = document.querySelector(`.q[data-id="${CSS.escape(id)}"]`);
+  if (card) { card.classList.remove("sel"); const a = card.querySelector(".add"); a.textContent = "＋ 加入"; a.setAttribute("aria-pressed", false) } };
+let dClearArmed = 0;
+$("#d-clear").onclick = () => {
+  if (Date.now() - dClearArmed > 3000) { dClearArmed = Date.now(); $("#d-clear").textContent = "再點一次清空"; setTimeout(() => $("#d-clear").textContent = "清空", 3000); return }
+  basket.ids = []; basket.score = {}; basket.info = {}; persist(); renderDrawer(); renderList(); $("#d-clear").textContent = "清空" };
 function toast(m){ const t = $("#toast"); t.textContent = m; t.classList.add("show"); clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove("show"), 1800) }
 function esc(s){ return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])) }
 
