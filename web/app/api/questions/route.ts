@@ -13,6 +13,7 @@ export async function GET(req: NextRequest) {
       subject: p.get("subject") || undefined, sub: p.get("sub") || undefined, grade: num("grade"), semester: num("semester"),
       year: num("year"), publisher: p.get("publisher") || undefined, units: list("units"), types: list("type"),
       answer: list("answer"), hasFigure: fig === null ? null : fig === "true", q: p.get("q")?.trim() || undefined,
+      patterns: list("patterns"), difficulty: list("difficulty")?.map(Number).filter((n) => n >= 1 && n <= 5),
       limit: Math.min(num("limit") ?? 30, 200), offset: num("offset") ?? 0,
     }));
   } catch (e) {

@@ -238,7 +238,7 @@ def list_questions(
     total = session.execute(
         select(func.count()).select_from(stmt.subquery())).scalar_one()
     rows = session.execute(
-        stmt.order_by(Question.document_id, Question.section_ord, Question.number)
+        stmt.order_by(Question.sort_key, Question.document_id, Question.section_ord, Question.number)
         .limit(limit).offset(offset)).scalars().all()
 
     return {"total": total, "items": [question_json(r) for r in rows]}

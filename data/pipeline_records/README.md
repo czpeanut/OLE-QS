@@ -7,3 +7,4 @@
 - `batch_jobs_ledgers_logs.tar.gz`：批次工作紀錄、花費帳本（`phase2_spend.json` 等）、答案評估、執行紀錄
 
 還原：`tar -xzf data/pipeline_records/<檔名> -C out/`（raw_extract 解到 `out/batches/`）。
+- `math_patterns_2026-10.tar.gz`：數學題型歸類與難度的原始結果（`out/math_patterns/*.json`，含試跑）與批次紀錄；還原：`tar -xzf … -C out/`

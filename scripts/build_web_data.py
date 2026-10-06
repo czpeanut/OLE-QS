@@ -42,6 +42,17 @@ def main() -> int:
     (OUT / "counts.json").write_text(json.dumps({"units": counts, "subjects": dict(subjects), "years": years},
                                                 ensure_ascii=False))
     print(f"單元題數 {len(counts):,} 筆；總題數 {sum(n for _, n in subjects):,}")
+
+    # 數學題型目錄（scripts/math_patterns.py 產生）＋各題型題數
+    n_pat = dict(con.execute("select value, count(*) from tag where axis = 'pattern' group by 1").fetchall())
+    patterns = {}
+    for f in sorted((REPO / "data/curriculum/math_patterns").glob("*.yaml")):
+        cat = yaml.safe_load(f.read_text(encoding="utf-8"))
+        types = [{"code": t["code"], "name": t["name"], "desc": t["desc"], "n": n_pat.get(f"{f.stem}:{t['code']}", 0)}
+                 for t in cat["types"]]
+        patterns[f.stem] = {"title": cat["unit"]["title"], "types": [t for t in types if t["n"]]}
+    (OUT / "patterns.json").write_text(json.dumps(patterns, ensure_ascii=False))
+    print(f"題型目錄 {len(patterns)} 個單元、{sum(len(p['types']) for p in patterns.values())} 個題型")
     return 0
 
 
