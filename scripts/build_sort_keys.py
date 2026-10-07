@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""算出每題在選題頁的排序位置（question.sort_key），寫回本機題庫；--supabase 一併更新 Supabase。
+"""算出每題在選題頁的排序位置（question.sort_key）與所屬題組（question.parent_id＝題組第一題），
+寫回本機題庫；--supabase 一併更新 Supabase。
 
     python scripts/build_sort_keys.py [--supabase] [--dry-run]
 
@@ -114,7 +115,7 @@ def pattern_orders() -> dict[str, int]:
     return out
 
 
-def compute(con: sqlite3.Connection) -> dict[str, int]:
+def compute(con: sqlite3.Connection) -> tuple[dict[str, int], dict[str, str]]:
     uo, po = unit_orders(), pattern_orders()
     sections = {(d, o): n for d, o, n in con.execute("select document_id, ord, name from section")}
     pattern = dict(con.execute("select question_id, value from tag where axis = 'pattern'"))
@@ -140,12 +141,15 @@ def compute(con: sqlite3.Connection) -> dict[str, int]:
         keys[qid] = key
         if grouped:                                    # 題組：同卷、同一段文章或同一張共用圖
             blocks[(doc, shared or gstem.strip()[:200])].append(qid)
+    parent: dict[str, str] = {}
     for members in blocks.values():                   # 題組成員都用第一題的位置，再依題號排
         first = min(members, key=lambda i: (keys[i][-2], keys[i][-1]))
         for i in members:
             keys[i] = keys[first][:-3] + keys[i][-3:]
+        for i in members:                             # parent_id 指向題組第一題，隨機選題時整組一起抽
+            parent[i] = first
     order = sorted(keys, key=lambda i: keys[i])
-    return {qid: keys[qid][1] * STEP + n for n, qid in enumerate(order, 1)}
+    return {qid: keys[qid][1] * STEP + n for n, qid in enumerate(order, 1)}, parent
 
 
 def push_supabase(con: sqlite3.Connection, sk: dict[str, int]) -> None:
@@ -192,7 +196,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     con = sqlite3.connect(args.db)
-    sk = compute(con)
+    sk, parent = compute(con)
     by = defaultdict(lambda: defaultdict(int))
     subj = dict(con.execute("select q.id, d.subject from question q join document d on d.id = q.document_id"))
     for qid, v in sk.items():
@@ -204,7 +208,8 @@ def main() -> int:
     if "sort_key" not in [r[1] for r in con.execute("pragma table_info(question)")]:
         con.execute("alter table question add column sort_key integer")
         con.execute("create index if not exists ix_question_sort_key on question (sort_key)")
-    con.executemany("update question set sort_key = ? where id = ?", [(v, k) for k, v in sk.items()])
+    con.executemany("update question set sort_key = ?, parent_id = ? where id = ?",
+                    [(v, parent.get(k), k) for k, v in sk.items()])
     con.commit()
     print(f"本機題庫：{len(sk):,} 題")
     if args.supabase:
