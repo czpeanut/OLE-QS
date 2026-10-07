@@ -1,20 +1,43 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OLE 題庫登入</title>
+<meta name="theme-color" content="#2547a8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
 <style>
-:root{--bg:#f4f5f7;--panel:#fff;--line:#e1e4e9;--ink:#1b1f24;--muted:#687280;--accent:#2563c9;--bad:#b42318}
-@media (prefers-color-scheme:dark){:root{--bg:#13161a;--panel:#1b1f25;--line:#2b3139;--ink:#e5e8ec;--muted:#99a2ae;--accent:#6aa2f2;--bad:#f07a70}}
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--ink);font:15px/1.6 "Noto Sans TC",system-ui,sans-serif}
-form{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:28px;width:min(340px,calc(100vw - 32px));display:flex;flex-direction:column;gap:12px}
-h1{margin:0;font-size:20px}input{padding:9px 11px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--bg);color:inherit}
-button{padding:9px;border:0;border-radius:8px;background:var(--accent);color:#fff;font:inherit;font-weight:700;cursor:pointer}
-.err{color:var(--bad);font-size:13px}
+/* 方格紙桌面上的一張登入卡，與選題頁同一套配色 */
+:root{--desk:#eef1f6;--grid:rgba(37,71,168,.055);--paper:#fff;--sunk:#f5f7fb;--line:#dde2ec;--ink:#131a2c;--muted:#69728a;
+  --accent:#2547a8;--accent-2:#3a5fd0;--accent-soft:#e8edfb;--pen:#d03b28;--pen-soft:#fdebe7}
+@media (prefers-color-scheme:dark){:root{--desk:#0f131c;--grid:rgba(140,165,235,.05);--paper:#171c28;--sunk:#131823;--line:#283044;--ink:#e8ebf3;--muted:#949db4;
+  --accent:#8aa6f5;--accent-2:#a8bdf8;--accent-soft:#1c2642;--pen:#ff7a66;--pen-soft:#3a1d19}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:16px;color:var(--ink);font:15px/1.6 "Noto Sans TC",system-ui,sans-serif;
+  background-color:var(--desk);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:26px 26px}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes draw{from{stroke-dashoffset:40}to{stroke-dashoffset:0}}
+@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+form{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:34px 30px 28px;width:min(360px,100%);
+  display:flex;flex-direction:column;gap:14px;box-shadow:0 18px 50px rgba(19,26,44,.12);animation:rise .6s cubic-bezier(.2,.8,.2,1) both}
+form::before{content:"";position:absolute;left:14px;top:22px;bottom:22px;border-left:2px dotted var(--line)}
+form.bad{animation:shake .4s}
+.logo{width:56px;height:56px}
+.logo .chk{stroke-dasharray:40;animation:draw .6s .45s cubic-bezier(.2,.8,.2,1) both}
+h1{margin:0;font-family:"Noto Serif TC",serif;font-weight:900;font-size:24px;letter-spacing:.05em}
+.sub{color:var(--muted);font-size:13.5px;margin-top:-8px}
+input{padding:11px 13px;border:1px solid var(--line);border-radius:11px;font:inherit;background:var(--sunk);color:inherit;transition:border-color .15s,box-shadow .15s}
+input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);background:var(--paper)}
+button{padding:11px;border:0;border-radius:11px;background:linear-gradient(180deg,var(--accent-2),var(--accent));color:#fff;font:inherit;font-weight:700;cursor:pointer;
+  box-shadow:0 3px 10px rgba(37,71,168,.3);transition:transform .1s,filter .15s}
+button:hover{filter:brightness(1.06)}button:active{transform:scale(.98)}
+.err{color:var(--pen);background:var(--pen-soft);border-radius:8px;padding:6px 10px;font-size:13px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head>
-<body><form method="post" action="/api/login">
-<h1>OLE 題庫組卷</h1><div style="color:var(--muted);font-size:13px">請輸入通行碼</div>
-<input type="password" name="code" autofocus required autocomplete="current-password">
-<div class="err" id="err" hidden>通行碼不正確</div>
+<body><form method="post" action="/api/login" id="f">
+<svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="3" width="19" height="24" rx="3" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.4" transform="rotate(9 17 15)"/><rect x="5" y="5" width="19" height="24" rx="3" fill="var(--paper)" stroke="var(--accent)" stroke-width="1.6"/><path d="M9 11.5h11M9 15.8h11M9 20.1h6" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" opacity=".5"/><path class="chk" d="M15.5 21.8l3.3 3.3 8.2-9.4" fill="none" stroke="var(--pen)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h1>OLE 題庫組卷</h1><div class="sub">請輸入通行碼</div>
+<input type="password" name="code" autofocus required autocomplete="current-password" aria-label="通行碼">
+<div class="err" id="err" hidden>通行碼不正確，請再試一次</div>
 <button>進入</button>
 </form>
-<script>if (location.search.includes("err")) document.getElementById("err").hidden = false</script>
+<script>if (location.search.includes("err")) { document.getElementById("err").hidden = false; document.getElementById("f").classList.add("bad") }</script>
 </body></html>
