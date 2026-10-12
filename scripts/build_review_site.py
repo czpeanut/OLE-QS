@@ -41,6 +41,9 @@ import yaml
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO))
 from apps.api.quality import evaluate  # noqa: E402
+sys.path.insert(0, str(REPO / "scripts"))
+from recover_crops import assets_of  # noqa: E402
+from redraw_figures import watermarks  # noqa: E402
 
 try:
     from PIL import Image
@@ -184,6 +187,11 @@ def main() -> int:
                             if pdf_doc is None:
                                 import fitz
                                 pdf_doc = fitz.open(pdf_path)
+                                if any(a.get("redrawn") for a, _ in assets_of(d)):
+                                    # 重繪過的卷（scripts/redraw_figures.py）：審題台也要拿掉浮水印
+                                    for i, xrefs in watermarks(pdf_doc).items():
+                                        for x in set(xrefs):
+                                            pdf_doc[i].delete_image(x)
                             done = padded(pdf_doc, asset["crop"])
                         except Exception:  # noqa: BLE001
                             done = None

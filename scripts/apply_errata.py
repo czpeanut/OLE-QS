@@ -121,8 +121,9 @@ def main() -> int:
                 continue
             before = {k: get(q, k, i) for k, i in fields(q) if k != "option"}
             before["options"] = [o.get("content") for o in q.get("options") or []]
-            ok = True
-            for left, old, new, right in edits(it["got"], it["fix"]):
+            todo_edits = edits(it["got"], it["fix"])
+            ok = bool(todo_edits)                     # 只差在選項標號之類題庫不存的地方，就不動
+            for left, old, new, right in todo_edits:
                 hit = None
                 # 上下文可能跨到相鄰選項，定位不到就縮短上下文再試（仍要求唯一）
                 for lc, rc in ((left, right), (left[-2:], right[:2]), (left, ""), ("", right)):
