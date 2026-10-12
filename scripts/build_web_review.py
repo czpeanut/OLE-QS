@@ -83,6 +83,7 @@ def main() -> int:
     patches = [
         ('fetch("data/index.json")', 'fetch(REVIEW_BASE + "data/index.json")'),
         ('fetch("data/" + INDEX.groups[gi].f)', 'fetch(REVIEW_BASE + "data/" + INDEX.groups[gi].f)'),
+        ('fetch("data/ai.json")', 'fetch(REVIEW_BASE + "data/ai.json")'),
         ("INDEX = await r.json();", "INDEX = await r.json(); INDEX.sites = REVIEW_SITES;"),
         ('target="_top"', 'target="_self"'),
         ("這個檢視無法存取回報資料庫：回報會改成複製文字，請貼給 Claude。", "無法連上審題紀錄資料庫，請重新整理頁面。"),

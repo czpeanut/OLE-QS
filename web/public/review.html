@@ -9,7 +9,7 @@
 :root{
   --paper:#fbfaf6; --panel:#f1efe8; --card:#ffffff; --ink:#1d2433; --muted:#626b7c;
   --rule:#dcd8cc; --pen:#c0392b; --pen-soft:#fbe9e6; --ok:#2f7d4f; --ok-soft:#e5f2ea;
-  --warn:#9a6a00; --warn-soft:#fbf1d8; --focus:#2d5bd7;
+  --warn:#9a6a00; --warn-soft:#fbf1d8; --focus:#2d5bd7; --ai:#5b47b8; --ai-soft:#eeebfa;
   --f-body:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
   --f-paper:"Noto Serif TC","Songti TC","PMingLiU",serif;
   --f-code:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -18,11 +18,11 @@
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#15181e; --panel:#1c2028; --card:#20252e; --ink:#e6e8ee; --muted:#9aa3b2;
   --rule:#343a46; --pen:#ef6b5b; --pen-soft:#3a2124; --ok:#6cc08e; --ok-soft:#1e3327;
-  --warn:#e2b44f; --warn-soft:#3a3120; --focus:#7aa2ff; color-scheme:dark}}
+  --warn:#e2b44f; --warn-soft:#3a3120; --focus:#7aa2ff; --ai:#a99cf0; --ai-soft:#262340; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#15181e; --panel:#1c2028; --card:#20252e; --ink:#e6e8ee; --muted:#9aa3b2;
   --rule:#343a46; --pen:#ef6b5b; --pen-soft:#3a2124; --ok:#6cc08e; --ok-soft:#1e3327;
-  --warn:#e2b44f; --warn-soft:#3a3120; --focus:#7aa2ff; color-scheme:dark}
+  --warn:#e2b44f; --warn-soft:#3a3120; --focus:#7aa2ff; --ai:#a99cf0; --ai-soft:#262340; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -55,6 +55,13 @@ select,input[type=text],textarea{background:var(--card);border:1px solid var(--r
 .chip.pen{color:var(--pen);border-color:var(--pen);background:var(--pen-soft)}
 .chip.ok{color:var(--ok);border-color:var(--ok);background:var(--ok-soft)}
 .chip.warn{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)}
+.chip.ai{color:var(--ai);border-color:var(--ai);background:var(--ai-soft)}
+/* AI 初審意見：紫色虛線框，與紅色的人工回報分開；只是提示，要人確認後才算回報 */
+.ai-box{border:1px dashed var(--ai);border-radius:var(--r);background:var(--ai-soft);padding:8px 10px;display:flex;flex-direction:column;gap:6px;font-size:13px}
+.ai-box .it{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.ai-box .src{color:var(--muted);font-size:12px}
+.ai-box .row{display:flex;gap:8px;flex-wrap:wrap}
+.ai-head{border-left:3px solid var(--ai);padding:4px 10px;font-size:13px;color:var(--ink);background:var(--ai-soft);border-radius:0 var(--r) var(--r) 0}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-variant-numeric:tabular-nums}
 .stat{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:6px 8px}
 .stat b{display:block;font-size:16px}
@@ -266,6 +273,8 @@ async function refreshNames(){
   rerenderKeepingScroll();
 }
 let reviewed = new Map();    // docKey -> {at}
+let AI = {papers: {}, q: {}, missing: {}};   // AI 初審結果（data/ai.json）：初審完成的卷、每題意見
+let onlyAi = false;
 let hideRejected = false, onlyReported = false, onlyOcr = false, onlyDisputed = false;
 
 /* ── 文字渲染：Markdown（表格、粗體、換行）＋行內 $…$ 公式 ───────────── */
@@ -322,6 +331,10 @@ async function loadIndex(){
   $("#builtInfo").textContent = `${INDEX.groups.length} 場段考・${nPapers} 份卷・${nQ.toLocaleString()} 題`;
   buildFilters();
 }
+async function loadAi(){
+  try { const r = await fetch(REVIEW_BASE + "data/ai.json"); if (r.ok) AI = await r.json(); } catch(e){ /* 還沒初審過 */ }
+  AI.papers = AI.papers || {}; AI.q = AI.q || {}; AI.missing = AI.missing || {};
+}
 async function loadGroup(gi){
   if (groupCache.has(gi)) return groupCache.get(gi);
   const r = await fetch(REVIEW_BASE + "data/" + INDEX.groups[gi].f);
@@ -369,7 +382,7 @@ function listPapers(){
     const nRep = countReports(p.doc);
     const done = reviewed.has(docKey(p.doc));
     return `<button class="paper-item" data-gi="${gi}" data-doc="${esc(p.doc)}" aria-current="${current && current.doc===p.doc}">
-      <span>${esc(p.city)} ${esc(p.short)} ${p.ocr?'<span class="chip warn">掃描</span>':''}${p.ext==='rule'?'<span class="chip">舊版</span>':''}${done?'<span class="chip ok">已審</span>':''}${nRep?`<span class="chip pen">${nRep} 題回報</span>`:''}</span>
+      <span>${esc(p.city)} ${esc(p.short)} ${p.ocr?'<span class="chip warn">掃描</span>':''}${p.ext==='rule'?'<span class="chip">舊版</span>':''}${done?'<span class="chip ok">已審</span>':''}${AI.papers[p.doc]?`<span class="chip ai">初審完成${AI.papers[p.doc].n?"・"+AI.papers[p.doc].n+" 題待確認":""}</span>`:''}${nRep?`<span class="chip pen">${nRep} 題回報</span>`:''}</span>
       <span class="n">${p.ok}/${p.n}</span></button>`;
   }).join("");
   box.querySelectorAll(".paper-item").forEach(b => b.addEventListener("click", () => openPaper(+b.dataset.gi, b.dataset.doc)));
@@ -401,11 +414,13 @@ function renderPaper(){
       ${P.q.some(q=>q.ocr)?'<span class="chip warn">掃描件：無文字層可驗證</span>':''}
       ${P.scope?`<span class="sub">命題範圍：${esc(P.scope)}</span>`:''}
     </div>
+    ${aiHeadHTML(P)}
   </div>
   <div class="toolbar">
     <label><input type="checkbox" id="tHide" ${hideRejected?"checked":""}> 隱藏被剔除的題目</label>
     <label><input type="checkbox" id="tRep" ${onlyReported?"checked":""}> 只看已回報</label>
     <label><input type="checkbox" id="tDis" ${onlyDisputed?"checked":""}> 只看答案待判定</label>
+    <label><input type="checkbox" id="tAi" ${onlyAi?"checked":""}> 只看初審標記</label>
     <button class="btn ${done?'':'pen'}" id="markDone" ${db?'':'disabled'}>${done?'取消「已審完」':'標記這份卷已審完'}</button>
     ${done ? `<span class="sub">${esc(who(done.by))}已標記審完</span>` : ""}
   </div>`;
@@ -416,6 +431,7 @@ function renderPaper(){
     if (hideRejected && !q.ok) continue;
     if (onlyReported && !reports.has(q.c)) continue;
     if (onlyDisputed && q.as !== "disputed") continue;
+    if (onlyAi && !AI.q[q.c]) continue;
     if (q.s !== lastSec) { h += `<div class="section-title">${esc(secName[q.s] || ("第 " + q.s + " 大題"))}</div>`; lastSec = q.s; lastG = null; }
     if (q.g && q.g !== lastG && (q.sa || P.passages[q.g].trim() !== (secName[q.s] || "").trim())) {
       const figs = q.sa ? figHTML([q.sa], P) : "";
@@ -428,8 +444,25 @@ function renderPaper(){
   $("#tHide").addEventListener("change", e => { hideRejected = e.target.checked; renderPaper(); });
   $("#tRep").addEventListener("change", e => { onlyReported = e.target.checked; renderPaper(); });
   $("#tDis").addEventListener("change", e => { onlyDisputed = e.target.checked; renderPaper(); });
+  $("#tAi").addEventListener("change", e => { onlyAi = e.target.checked; renderPaper(); });
   $("#markDone").addEventListener("click", toggleDone);
   bindQuestionEvents();
+}
+function aiHeadHTML(P){
+  const a = AI.papers[P.doc];
+  if (!a) return "";
+  const miss = AI.missing[P.doc] || [];
+  const day = String(a.at || "").slice(0, 10);
+  return `<div class="ai-head"><b>Claude 初審完成</b>（${esc(day)}）：${a.n ? `${a.n} 題有疑點，題目下方的紫色框是初審意見，請確認` : "沒有發現擷取錯誤"}${
+    miss.length ? `<br>可能漏擷取：${esc(miss.join("、"))}` : ""}</div>`;
+}
+function aiBoxHTML(q){
+  const items = AI.q[q.c];
+  if (!items) return "";
+  return `<div class="ai-box">${items.map(it => `<div class="it"><span class="chip ai">${it.sure ? "初審：確定" : "初審：可能"}</span>
+      <b>${esc((it.cats || []).join("、"))}</b><span>${esc(it.note)}</span></div>`).join("")}
+    <div class="row"><button class="btn" type="button" data-adopt="${q.c}">採用為回報</button>
+      <span class="src">AI 對照原卷的初審意見，確認後再回報；不正確就略過</span></div></div>`;
 }
 function figHTML(ids, P){
   return ids.map(id => imgTag(id, P, "附圖", 320)).join("");
@@ -546,6 +579,7 @@ function questionHTML(q, P){
         ${q.ok?'':'<span class="chip pen">已被品管剔除</span>'}
         ${q.ocr?'<span class="chip warn">掃描辨識</span>':''}
         ${r?`<span class="chip pen">${rs.length > 1 ? rs.length + " 人" : esc(who(rs[0].by))}回報：${esc(rcats.join("、") || "其他")}</span>`:''}
+        ${AI.q[q.c]?`<span class="chip ai">初審：${esc([...new Set(AI.q[q.c].flatMap(x => x.cats || []))].join("、"))}</span>`:''}
       </div>
       ${q.stem?`<div class="stem">${rich(q.stem)}</div>`:''}
       ${q.imgs && q.imgs.length ? `<div class="figs">${figHTML(q.imgs, P)}</div>` : ""}
@@ -557,6 +591,7 @@ function questionHTML(q, P){
         <button class="btn ${r?'':'pen'}" data-report="${q.c}">${r?'修改回報':'回報問題'}</button>
       </div>
       ${rs.filter(x => x.note).map(x => `<div class="report-note">${esc(who(x.by))}：${esc(x.note)}</div>`).join("")}
+      ${aiBoxHTML(q)}
       <div class="report-slot"></div>
     </div>
   </div>`;
@@ -564,6 +599,11 @@ function questionHTML(q, P){
 function bindQuestionEvents(){
   document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => copyText(b.dataset.copy, b)));
   document.querySelectorAll("[data-report]").forEach(b => b.addEventListener("click", () => openReport(b.dataset.report)));
+  document.querySelectorAll("[data-adopt]").forEach(b => b.addEventListener("click", () => {
+    const items = AI.q[b.dataset.adopt] || [];
+    openReport(b.dataset.adopt, {cats: [...new Set(items.flatMap(x => x.cats || []))].filter(c => CATS.includes(c)),
+                                 note: items.map(x => x.note).join("；")});
+  }));
   document.querySelectorAll("[data-crop]").forEach(b => b.addEventListener("click", () => openCropEditor(b)));
 }
 function focusQuestion(code){
@@ -575,11 +615,11 @@ function focusQuestion(code){
 
 /* ── 回報 ──────────────────────────────────────────────── */
 function findQ(code){ return current && current.paper.q.find(q => q.c === code); }
-function openReport(code){
+function openReport(code, preset){
   const q = findQ(code); if (!q) return;
   const slot = document.querySelector(`#q-${code} .report-slot`);
-  if (slot.innerHTML) { slot.innerHTML = ""; return; }
-  const r = myReport(code) || {};
+  if (slot.innerHTML && !preset) { slot.innerHTML = ""; return; }
+  const r = myReport(code) || preset || {};
   const sel = new Set(r.cats || []);
   slot.innerHTML = `<form class="report" id="rf-${code}">
     <div class="cats">${CATS.map((c,i)=>`<label><input type="checkbox" class="visually-hidden" id="rc-${code}-${i}" value="${esc(c)}" ${sel.has(c)?"checked":""}><span>${esc(c)}</span></label>`).join("")}</div>
@@ -639,6 +679,7 @@ function renderReportStats(){
   $("#reportStats").innerHTML = `
     <div class="stat"><b>${n}</b><span>已回報題目</span></div>
     <div class="stat"><b>${reviewed.size}</b><span>已審完的卷</span></div>
+    <div class="stat"><b>${Object.keys(AI.papers).length}</b><span>初審完成的卷</span></div>
     <button class="btn" id="openDrawer" ${n?"":"disabled"}>回報清單</button>`;
   const b = $("#openDrawer"); if (b) b.addEventListener("click", openDrawer);
 }
@@ -675,7 +716,7 @@ async function jumpTo(code){
   $("#fSubject").value = subjName(G); $("#fSubject").dispatchEvent(new Event("change"));
   $("#fYear").value = G.year; $("#fYear").dispatchEvent(new Event("change"));
   $("#fExam").value = `${G.sem}-${G.exam}`; $("#fExam").dispatchEvent(new Event("change"));
-  hideRejected = false; onlyReported = false; onlyDisputed = false;
+  hideRejected = false; onlyReported = false; onlyDisputed = false; onlyAi = false;
   await openPaper(gi, P.doc, code);
 }
 $("#jumpBtn").addEventListener("click", () => jumpTo($("#jump").value));
@@ -741,6 +782,7 @@ async function initDb(){
   renderReportStats();
   try { await loadIndex(); }
   catch(e){ $("#builtInfo").textContent = "題庫資料載入失敗，請重新整理頁面"; return; }
+  loadAi().then(() => { listPapers(); renderReportStats(); renderPaper(); });
   initDb();
   const h = location.hash.replace("#","");
   if (h && INDEX.codes[h.toUpperCase()] !== undefined) jumpTo(h);
