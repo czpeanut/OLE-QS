@@ -93,14 +93,14 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 下列何者並「非」伊波拉病毒在非洲快速傳播的原因？
+  stem: 下列何者並「非」伊波拉病毒在非洲快速傳播的原因？（原卷有誤，已修正）
   options:
   - label: A
     content: 無有效疫苗可預防
   - label: B
     content: 居民衛生知識不佳
   - label: C
-    content: 當地醫療醫源缺乏
+    content: 當地醫療資源缺乏
   - label: D
     content: 過度開發造成生態破壞。
   group_stem: 西元2013年12月，伊波拉病毒在西非引爆大流行，此乃伊波拉出血熱史上最嚴重的一次爆發，臨床致死率高達1%，根據世界衛生組織的統計，截至西元2015年7月30日，全世界已有11,295人死亡，主要集中在幾內亞灣沿岸三國：賴比瑞亞、獅子山及幾內亞(右下深色處)，這三個國家以銷售礦產、熱帶栽培作物為國家主要收入。請回答下列問題：
@@ -122,6 +122,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當地醫療醫源缺乏
+    to: 當地醫療資源缺乏
+    note: 「醫源」筆誤，應為「資源」
+    by: ai_review
 - id: doc_111_嘉義_北興_社會_地理_g9s1e1_s1_4
   section: 1
   number: 4
@@ -521,7 +526,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 「族人在耕種之前，先把森林中一小塊地面上的樹燒掉，然後種山芋和樹薯。他們以掘棒、鍬等傳統農具耕作並不施肥，並不施肥，數年後，當土壤變得貧瘠時農民便須移至它地，另闢田地。」請問：非洲此種農業方式分布在哪一種氣候區？
+  stem: 「族人在耕種之前，先把森林中一小塊地面上的樹燒掉，然後種山芋和樹薯。他們以掘棒、鍬等傳統農具耕作並不施肥，數年後，當土壤變得貧瘠時農民便須移至它地，另闢田地。」請問：非洲此種農業方式分布在哪一種氣候區？（原卷有誤，已修正）
   options:
   - label: A
     content: 熱帶沙漠
@@ -548,6 +553,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 傳統農具耕作並不施肥，並不施肥，數年後
+    to: 傳統農具耕作並不施肥，數年後
+    note: 重複多印「並不施肥，」贅字
+    by: ai_review
 - id: doc_111_嘉義_北興_社會_地理_g9s1e1_s1_14
   section: 1
   number: 14
@@ -773,7 +783,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 「漠南非洲因為乾旱而引發饑荒，在馬拉威、莫三比克、賴索托等國在每年九月至隔年的二月是所謂的饑月份，每天往往只能吃一頓飯。專家表示非洲國家加入WTO後，將影響地主使用土地的方式，用來生產利於出口的產品，饑荒問題將更加惡化°」請問；有上文可知，為何非洲國家加入WTO後將是饑荒變更加嚴重？
+  stem: 「漠南非洲因為乾旱而引發饑荒，在馬拉威、莫三比克、賴索托等國在每年九月至隔年的二月是所謂的饑月份，每天往往只能吃一頓飯。專家表示非洲國家加入WTO後，將影響地主使用土地的方式，用來生產利於出口的產品，饑荒問題將更加惡化。」請問:由上文可知，為何非洲國家加入WTO後將是饑荒變更加嚴重？（原卷有誤，已修正）
   options:
   - label: A
     content: 更多移民至南非人口暴增
@@ -800,6 +810,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 饑荒問題將更加惡化°」請問；有上文可知
+    to: 饑荒問題將更加惡化。」請問：由上文可知
+    note: 標點誤植且「有」應為「由」
+    by: ai_review
 - id: doc_111_嘉義_北興_社會_地理_g9s1e1_s1_21
   section: 1
   number: 21

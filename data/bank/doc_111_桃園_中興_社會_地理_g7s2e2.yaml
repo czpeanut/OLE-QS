@@ -615,10 +615,10 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 國家地理頻道製作紀錄片「臺灣--魚之島」，是以臺灣漁業為主題。以下哪個內容會是紀錄片描述的臺灣漁業環境？
+  stem: 國家地理頻道製作紀錄片「臺灣--魚之島」，是以臺灣漁業為主題。以下哪個內容會是紀錄片描述的臺灣漁業環境？（原卷有誤，已修正）
   options:
   - label: A
-    content: 臺灣東側海底育廣闊大陸棚
+    content: 臺灣東側海底有廣闊大陸棚
   - label: B
     content: 臺灣海峽有寒流與暖流交會
   - label: C
@@ -642,6 +642,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 臺灣東側海底育廣闊大陸棚
+    to: 臺灣東側海底有廣闊大陸棚
+    note: 「育」為「有」之誤字
+    by: ai_review
 - id: doc_111_桃園_中興_社會_地理_g7s2e2_s1_18
   section: 1
   number: 18

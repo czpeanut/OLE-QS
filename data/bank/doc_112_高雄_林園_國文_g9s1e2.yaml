@@ -459,12 +459,12 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 2.下列語詞運用，何者錯誤?
+  stem: 2.下列語詞運用，何者錯誤?（原卷有誤，已修正）
   options:
   - label: A
     content: 一樣是揮汗如雨，辛勤做事，有人「甘之如飴」，有人卻「自怨自艾」，應該是心態不同的關係吧
   - label: B
-    content: 透過社群媒體，消息總是「每況愈下」，手指在3C 產品按幾下，傳播既快速且無所無入。
+    content: 透過社群媒體，消息總是「每況愈下」，手指在3C 產品按幾下，傳播既快速且無所不入。
   - label: C
     content: 魯道夫學吉他，沒有恆心，無法持續練習，「一暴十寒」的做法，像是三天捕魚，五天曬網，難怪吉他彈得零零落落。
   - label: D
@@ -485,6 +485,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 傳播既快速且無所無入。
+    to: 傳播既快速且無所不入。
+    note: 「無所無入」印錯，應為「無所不入」
+    by: ai_review
 - id: doc_112_高雄_林園_國文_g9s1e2_s4_3
   section: 4
   number: 3

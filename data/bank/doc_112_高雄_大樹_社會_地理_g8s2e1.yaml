@@ -1109,7 +1109,7 @@ questions:
   number: 32
   type: single
   page: 2
-  stem: 若想購買南亞最著名的紅茶，那麼應該到圖(一)中哪一個地區去採買？
+  stem: 若想購買南亞最著名的紅茶，那麼應該到圖(二)中哪一個地區去採買？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -1138,6 +1138,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 那麼應該到圖(一)中哪一個地區去採買？
+    to: 那麼應該到圖(二)中哪一個地區去採買？
+    note: 圖號引用錯誤，題組附圖為圖(二)
+    by: ai_review
 - id: doc_112_高雄_大樹_社會_地理_g8s2e1_s1_33
   section: 1
   number: 33

@@ -664,7 +664,7 @@ questions:
   number: 1
   type: single
   page: 2
-  stem: What can we know form the story?
+  stem: What can we know from the story?（原卷有誤，已修正）
   options:
   - label: A
     content: Everyone is generous in this story.
@@ -702,6 +702,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: What can we know form the story?
+    to: What can we know from the story?
+    note: form 拼錯，應為 from
+    by: ai_review
 - id: doc_111_高雄_大灣_英語_g9s1e2_s6_2
   section: 6
   number: 2
@@ -1334,11 +1339,11 @@ questions:
   number: 3
   type: essay
   page: 4
-  stem: 'Kevin: 你訂好下周旅行的票?  Kevin: 還沒。船到橋頭自然直。
+  stem: 'Kevin: 你訂好下周旅行的票?  Larry: 還沒。船到橋頭自然直。
 
     Kevin: Have you booked the tickets for your trip next week?
 
-    Larry: I haven’t. I’ll just _______ .'
+    Larry: I haven’t. I’ll just _______ .（原卷有誤，已修正）'
   tags:
     textbook: 九上 英語 片語與慣用語
     labeled_by: ai
@@ -1349,6 +1354,11 @@ questions:
       code: V2
       title: 片語與慣用語
       chapter: 綜合
+  errata:
+  - from: 'Kevin: 你訂好下周旅行的票?  Kevin: 還沒。船到橋頭自然直。'
+    to: 'Kevin: 你訂好下周旅行的票?  Larry: 還沒。船到橋頭自然直。'
+    note: 對話者印錯，第二位應為 Larry
+    by: ai_review
 - id: doc_111_高雄_大灣_英語_g9s1e2_s8_4
   section: 8
   number: 4

@@ -732,7 +732,7 @@ questions:
   number: 57
   type: single
   page: 2
-  stem: 圖(十三)為中國四大經濟區圖，關於四大經濟區的描述何者正確？
+  stem: 圖(十三)為中國四大經濟區圖，關於四大經濟區的描述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 四大經濟區的劃分是依照各行政區的人口密度及地形特色為依據
@@ -741,7 +741,7 @@ questions:
   - label: C
     content: 丙區雖發展不如乙區，但是工資較低廉且資源豐富為其優勢
   - label: D
-    content: 丁區是經濟發展最落後的地區，原因是礦產資缺乏；交通不便。
+    content: 丁區是經濟發展最落後的地區，原因是礦產資源缺乏；交通不便。
   assets:
   - key: s1_57_f1
     kind: figure
@@ -776,6 +776,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 原因是礦產資缺乏；交通不便
+    to: 原因是礦產資源缺乏；交通不便
+    note: 漏「源」字
+    by: ai_review
 - id: doc_113_高雄_英明_社會_地理_g8s1e2_s1_58
   section: 1
   number: 58

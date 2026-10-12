@@ -126,7 +126,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: (甲)平靜水面；(乙)平面鏡；(丙)凹面鏡；(丁)毛玻璃；(戊)掃地掃起的灰塵顆粒；(己)砂紙上。若將光線投射在下列各物體的表面上時，上述哪些的反射光線會遵守反射定律？
+  stem: (甲)平靜水面；(乙)平面鏡；(丙)凹面鏡；(丁)毛玻璃；(戊)掃地掃起的灰塵顆粒；(己)砂紙上。若將光線投射在下列各物體的表面上時，上述哪些的反射光線會遵守反射定律？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙丙丁
@@ -135,7 +135,7 @@ questions:
   - label: C
     content: 乙丙丁戊
   - label: D
-    content: 甲乙丙丁戊已
+    content: 甲乙丙丁戊己
   tags:
     chapter:
       publisher: 翰林
@@ -153,6 +153,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 甲乙丙丁戊已
+    to: (D) 甲乙丙丁戊己
+    note: 天干之「己」誤印為「已」
+    by: ai_review
 - id: doc_111_彰化_溪湖_自然_g8s1e3_s1_4
   section: 1
   number: 4
@@ -1203,7 +1208,7 @@ questions:
   number: 27
   type: single
   page: 3
-  stem: 有一光線由介質A 射向介質B，已知入射角為50°，折射角為30°，則其反射線與折射線的夾角為何？
+  stem: 有一光線由介質A 射向介質B，已知入射角為50°，折射角為30°°，則其反射線與折射線的夾角為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 20°
@@ -1230,6 +1235,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 30
+    to: (B) 30°
+    note: 漏印度數符號「°」
+    by: ai_review
 - id: doc_111_彰化_溪湖_自然_g8s1e3_s1_28
   section: 1
   number: 28

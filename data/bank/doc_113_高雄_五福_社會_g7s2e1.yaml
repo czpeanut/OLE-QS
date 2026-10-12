@@ -223,7 +223,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 台中市北屯區的人口數與花蓮縣相當，但花蓮縣的面積大約為北屯區的74 倍。圖三為花蓮縣人口分布圖，若以相同的地圖比例尺與圖例繪製台中市西屯區的人口分布圖，則此二圖最大的差異為下列何者？
+  stem: 台中市北屯區的人口數與花蓮縣相當，但花蓮縣的面積大約為北屯區的74 倍。圖三為花蓮縣人口分布圖，若以相同的地圖比例尺與圖例繪製台中市北屯區的人口分布圖，則此二圖最大的差異為下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 北屯區人口分布圖點的數量較少
@@ -267,6 +267,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若以相同的地圖比例尺與圖例繪製台中市西屯區的人口分布圖
+    to: 若以相同的地圖比例尺與圖例繪製台中市北屯區的人口分布圖
+    note: 題幹前述與選項皆為北屯區，筆誤成西屯區
+    by: ai_review
 - id: doc_113_高雄_五福_社會_g7s2e1_s1_7
   section: 1
   number: 7

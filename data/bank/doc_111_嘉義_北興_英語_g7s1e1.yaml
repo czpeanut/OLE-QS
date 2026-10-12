@@ -171,7 +171,7 @@ questions:
   number: 24
   type: single
   page: 3
-  stem: There two , three , four and six lions in the zoo.
+  stem: Thereare two , three , four and six lions in the zoo.（原卷有誤，已修正）
   options:
   - label: A
     content: bear; mouses; tigers
@@ -198,6 +198,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: There two , three , four and six lions in the zoo.
+    to: There are two , three , four and six lions in the zoo.
+    note: 漏印 be 動詞 are
+    by: ai_review
 - id: doc_111_嘉義_北興_英語_g7s1e1_s4_25
   section: 4
   number: 25

@@ -1024,13 +1024,13 @@ questions:
   number: 28
   type: single
   page: 3
-  stem: '下面是中共統治時期的順口溜，請依時間順序排列排列：
+  stem: '下面是中共統治時期的順口溜，請依時間順序排列：
 
     (甲)「早匯報，晚匯報，天天敲鑼又放炮。今鬥張，明鬥李，鬥来鬥去鬥自己。」
 
     (乙)「十億人民九億商，還有一億等開張。」
 
-    (丙)「前年賣糧用籮挑，去年賣糧用船搖，今年汽車裝不了，明年火車還嫌小！」'
+    (丙)「前年賣糧用籮挑，去年賣糧用船搖，今年汽車裝不了，明年火車還嫌小！」（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲乙丙
@@ -1058,6 +1058,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請依時間順序排列排列：
+    to: 請依時間順序排列：
+    note: 多印「排列」二字
+    by: ai_review
 - id: doc_111_高雄_崇林_社會_g8s2e3_s1_29
   section: 1
   number: 29
@@ -1206,7 +1211,7 @@ questions:
   number: 32
   type: single
   page: 4
-  stem: 有關上文的近一步理解，何者說法「錯誤」？
+  stem: 有關上文的進一步理解，何者說法「錯誤」？（原卷有誤，已修正）
   options:
   - label: A
     content: 美國與中華民國斷交後，美國便廢除了中美共同防禦條約，而中華民國也被迫退出聯合國
@@ -1238,6 +1243,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini-only
+  errata:
+  - from: 有關上文的近一步理解
+    to: 有關上文的進一步理解
+    note: 「近」應為「進」
+    by: ai_review
 - id: doc_111_高雄_崇林_社會_g8s2e3_s1_33
   section: 1
   number: 33

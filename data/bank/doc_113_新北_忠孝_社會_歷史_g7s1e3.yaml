@@ -101,12 +101,12 @@ questions:
   number: 30
   type: single
   page: 1
-  stem: 臺灣開港後，社會風貌不同於以往，下列何者為當時的社會景象？
+  stem: 臺灣開港後，社會風貌不同於以往，下列何者為當時的社會景象？（原卷有誤，已修正）
   options:
   - label: A
     content: 鹿港為最重要的茶葉出口區
   - label: B
-    content: 雞籠開放開港通商，隨處可見糖廍林立
+    content: 雞籠開港通商，隨處可見糖廍林立
   - label: C
     content: 傳教士來臺設立學校、從事醫療
   - label: D
@@ -128,6 +128,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 雞籠開放開港通商
+    to: 雞籠開港通商
+    note: 多印「開放」二字
+    by: ai_review
 - id: doc_113_新北_忠孝_社會_歷史_g7s1e3_s1_31
   section: 1
   number: 31

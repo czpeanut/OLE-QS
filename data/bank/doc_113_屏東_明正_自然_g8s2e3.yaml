@@ -877,7 +877,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 短今在浴室裝上浴簾，將兩段式的桿子伸長並旋緊，恰好頂住兩邊牆壁而不致滑落，如圖(六)所示。若桿子的重量為3.0 公重，浴簾的重量為1.0 公斤重，則桿子兩端所受摩擦力共為多少公斤重？
+  stem: 短今在浴室裝上浴簾，將兩段式的桿子伸長並旋緊，恰好頂住兩邊牆壁而不致滑落，如圖(六)所示。若桿子的重量為3.0 公斤重，浴簾的重量為1.0 公斤重，則桿子兩端所受摩擦力共為多少公斤重？（原卷有誤，已修正）
   options:
   - label: A
     content: '1.0'
@@ -921,6 +921,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若桿子的重量為3.0 公重，浴簾的重量為1.0 公斤重
+    to: 若桿子的重量為3.0 公斤重，浴簾的重量為1.0 公斤重
+    note: 漏「斤」字，應為公斤重
+    by: ai_review
 - id: doc_113_屏東_明正_自然_g8s2e3_s2_18
   section: 2
   number: 18
@@ -1492,8 +1497,8 @@ questions:
   number: 1
   type: fill
   page: 3
-  stem: 娜璉分別以水銀和水兩種液體進行托里切利實驗，已知當時氣壓為一大氣壓，結果如右圖(十二)所示。則A、B、C、D、E、F、G 個點的壓力大小為(請由大到小排列)
-    ① 。
+  stem: 娜璉分別以水銀和水兩種液體進行托里切利實驗，已知當時氣壓為一大氣壓，結果如右圖(十二)所示。則A、B、C、D、E、F、G 各點的壓力大小為(請由大到小排列)
+    ① 。（原卷有誤，已修正）
   assets:
   - key: s3_1_f1
     kind: figure
@@ -1527,6 +1532,11 @@ questions:
     gemini_high: E > A = B = C = F > G > D
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 則A、B、C、D、E、F、G 個點的壓力大小為
+    to: 則A、B、C、D、E、F、G 各點的壓力大小為
+    note: 「個點」錯字，應為「各點」
+    by: ai_review
 - id: doc_113_屏東_明正_自然_g8s2e3_s3_2
   section: 3
   number: 2

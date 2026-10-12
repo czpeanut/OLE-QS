@@ -1103,10 +1103,10 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: 近年來，食品安全是民眾十分關注的生活議題之一，消費者開始對食材的栽種、生產等過程，想要有更多的了解，「農產品產銷履歷驗證制度」的推動，正好可可以滿足需求。下列何者是「農產品產銷履歷驗證制度」的實施，最希望可以達到的目的？
+  stem: 近年來，食品安全是民眾十分關注的生活議題之一，消費者開始對食材的栽種、生產等過程，想要有更多的了解，「農產品產銷履歷驗證制度」的推動，正好可以滿足需求。下列何者是「農產品產銷履歷驗證制度」的實施，最希望可以達到的目的？（原卷有誤，已修正）
   options:
   - label: A
-    content: 降地農業生產成本
+    content: 降低農業生產成本
   - label: B
     content: 促使農業環境永續發展
   - label: C
@@ -1130,6 +1130,15 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 正好可可以滿足需求
+    to: 正好可以滿足需求
+    note: 多字，可可以應為可以
+    by: ai_review
+  - from: 降地農業生產成本
+    to: 降低農業生產成本
+    note: 錯字，降地應為降低
+    by: ai_review
 - id: doc_111_嘉義_北興_社會_地理_g7s2e2_s1_31
   section: 1
   number: 31
@@ -1348,14 +1357,14 @@ questions:
   type: single
   page: 4
   stem: 鳳梨釋迦自以色列引進，初期因產期為夏季，果肉易自果柄處裂開，裂開處遭受雜菌感染而發霉，後來在農委會臺東區農業改良場努力下，將產期調整至冬季，克服了果實
-    保存不易的問題，由於其經濟價值高，又深受消費者喜愛，栽植面積增加迅速，使鳳梨釋迦成為臺灣外銷市場的魅力商品。由上文内容可知，此水果的經營方式符合下列何種概念？
+    保存不易的問題，由於其經濟價值高，又深受消費者喜愛，栽植面積增加迅速，使鳳梨釋迦成為臺灣外銷市場的魅力商品。由上文内容可知，此水果的經營方式符合下列何種概念？（原卷有誤，已修正）
   options:
   - label: A
     content: 精緻農業
   - label: B
     content: 休閒農業
   - label: C
-    content: ) 酪農業
+    content: ' 酪農業'
   - label: D
     content: 粗放農業
   tags:
@@ -1375,6 +1384,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) ) 酪農業
+    to: (C) 酪農業
+    note: 多印一個右括號
+    by: ai_review
 - id: doc_111_嘉義_北興_社會_地理_g7s2e2_s1_38
   section: 1
   number: 38

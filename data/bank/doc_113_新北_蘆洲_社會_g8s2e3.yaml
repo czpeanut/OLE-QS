@@ -361,12 +361,12 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 南非共和國是非洲經濟最發達的國家之一，為提供穩定的電力，政府也積極建設太陽能發電設備。若已知日照時數與發電效率呈正向關係，則以該地的地理位置和氣候條件判斷，下列哪一段時間太陽能發電效率最高？
+  stem: 南非共和國是非洲經濟最發達的國家之一，為提供穩定的電力，政府也積極建設太陽能發電設備。若已知日照時數與發電效率呈正向關係，則以該地的地理位置和氣候條件判斷，下列哪一段時間太陽能發電效率最高？（原卷有誤，已修正）
   options:
   - label: A
     content: 3～5月
   - label: B
-    content: 6～8
+    content: 6～8月
   - label: C
     content: 9～11 月
   - label: D
@@ -388,6 +388,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 6～8
+    to: (B) 6～8 月
+    note: 漏了「月」字
+    by: ai_review
 - id: doc_113_新北_蘆洲_社會_g8s2e3_s1_11
   section: 1
   number: 11
@@ -747,7 +752,7 @@ questions:
   type: single
   page: 2
   stem: 附圖為二戰後，兩個政權對某地區的占領情形。關於此兩政權於1950 年代發生的史事，請問下列敘述哪些是正確的？ (甲)兩國曾發生戰爭，戰後以17°N
-    為分界線 (乙)甲、乙兩國發生戰爭時，分別有中國、美國的援助 (丙)甲、乙兩國最終交戰結果是造成造成蘇聯解體 (丁)兩國發生戰爭後，間接促使台灣獲得美援
+    為分界線 (乙)甲、乙兩國發生戰爭時，分別有中國、美國的援助 (丙)甲、乙兩國最終交戰結果是造成蘇聯解體 (丁)兩國發生戰爭後，間接促使台灣獲得美援（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙
@@ -791,6 +796,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 甲、乙兩國最終交戰結果是造成造成蘇聯解體
+    to: 甲、乙兩國最終交戰結果是造成蘇聯解體
+    note: 多出一個「造成」
+    by: ai_review
 - id: doc_113_新北_蘆洲_社會_g8s2e3_s1_22
   section: 1
   number: 22

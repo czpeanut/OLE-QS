@@ -2013,14 +2013,14 @@ questions:
   number: 47
   type: single
   page: 4
-  stem: 婉榆依實驗結果產生以下推論，請問何者最不合理？
+  stem: 婉榆依實驗結果產生以下推論，請問何者最不合理？（原卷有誤，已修正）
   options:
   - label: A
     content: 當彈簧掛 70 公克重的砝碼時，全長為 17 公分
   - label: B
     content: 懸掛砝碼每增加 20 公克重，彈簧長度就增加 2 公分
   - label: C
-    content: 若彈簧的為伸長量 15 公分，則懸掛的砝碼為 50 公克重
+    content: 若彈簧的伸長量為 15 公分，則懸掛的砝碼為 50 公克重
   - label: D
     content: 此彈簧可用來測量不超過 80 公克重的物品重量。
   group_stem: ※婉榆做力的測量實驗，將彈簧掛在鐵架上，在彈簧的彈性限度內，依序在其下端懸掛不同重量的砝碼，並記錄彈簧全長的變化，繪製出砝碼重量與彈簧全長的關係圖，如附圖所示，請回答下列問題：
@@ -2042,6 +2042,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若彈簧的為伸長量 15 公分，則懸掛的砝碼為 50 公克重
+    to: 若彈簧的伸長量為 15 公分，則懸掛的砝碼為 50 公克重
+    note: 「的為」文字顛倒，應為「的伸長量為」
+    by: ai_review
 - id: doc_113_高雄_獅甲_自然_g8s2e3_s2_48
   section: 2
   number: 48

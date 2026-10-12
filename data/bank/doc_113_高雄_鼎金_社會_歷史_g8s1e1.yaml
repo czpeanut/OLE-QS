@@ -187,14 +187,14 @@ questions:
   number: 26
   type: single
   page: 1
-  stem: 小綜在《看漫畫學歷史》一書中看到附圖的對話，請根據對話內容判斷其歷史背景應為下列何者？
+  stem: 小綜在《看漫畫學歷史》一書中看到附圖的對話，請根據對話內容判斷其歷史背景應為下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 政府為了統治東方眾民實行封建
   - label: B
     content: 國君用人唯才啟用商鞅推行變法
   - label: C
-    content: 秦朝強化中央集權開始各項改
+    content: 秦朝強化中央集權開始各項改革
   - label: D
     content: 漢朝強調倫理道德思想以此穩定政權。
   assets:
@@ -231,6 +231,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 秦朝強化中央集權開始各項改
+    to: 秦朝強化中央集權開始各項改革
+    note: 漏「革」字
+    by: ai_review
 - id: doc_113_高雄_鼎金_社會_歷史_g8s1e1_s1_27
   section: 1
   number: 27

@@ -1866,10 +1866,10 @@ questions:
   number: 42
   type: single
   page: 4
-  stem: 依據課堂所學的知識，關於「喝水會讓人變胖」的說法是否適當？ 【3-1】
+  stem: 依據課堂所學的知識，關於「喝水會讓人變胖」的說法是否適當？ 【3-1】（原卷有誤，已修正）
   options:
   - label: A
-    content: 適當，因為水在人體內能夠能促進脂肪的合成
+    content: 適當，因為水在人體內能夠促進脂肪的合成
   - label: B
     content: 適當，因為水會增加飽足感，讓礦物質保留在體內
   - label: C
@@ -1907,6 +1907,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 因為水在人體內能夠能促進脂肪的合成
+    to: 因為水在人體內能夠促進脂肪的合成
+    note: 贅字，多印「能」
+    by: ai_review
 - id: doc_113_新北_永和_自然_g7s1e1_s2_43
   section: 2
   number: 43

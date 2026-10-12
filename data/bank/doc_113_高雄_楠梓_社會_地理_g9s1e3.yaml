@@ -706,8 +706,8 @@ questions:
   number: 59
   type: single
   page: 2
-  stem: "紐西蘭和澳洲是關切密切的國家，以下描述何者「錯誤」？\n甲、皆位於西南半球   乙、皆屬於大英國協會員國     \n丙、目前皆以礦產出口為最大宗\
-    \   丁、土地、人口的規模皆十分相近  。"
+  stem: "紐西蘭和澳洲是關係密切的國家，以下描述何者「錯誤」？\n甲、皆位於西南半球   乙、皆屬於大英國協會員國     \n丙、目前皆以礦產出口為最大宗\
+    \   丁、土地、人口的規模皆十分相近  。（原卷有誤，已修正）"
   options:
   - label: A
     content: 乙丙
@@ -735,6 +735,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 紐西蘭和澳洲是關切密切的國家，以下描述何者「錯誤」？
+    to: 紐西蘭和澳洲是關係密切的國家，以下描述何者「錯誤」？
+    note: 「關切密切」為「關係密切」之誤
+    by: ai_review
 - id: doc_113_高雄_楠梓_社會_地理_g9s1e3_s1_60
   section: 1
   number: 60

@@ -459,12 +459,12 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 有關於生命現象與細胞的發現，下列敘述何者正確？
+  stem: 有關於生命現象與細胞的發現，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 生活在無光環境中的深海魚類，其所需的食物能量來源與太陽光完全無關
   - label: B
-    content: 虎克先生首先了提出細胞學說
+    content: 虎克先生首先提出了細胞學說
   - label: C
     content: 虎克先生用自製顯微鏡觀察到軟木塞的活細胞
   - label: D
@@ -486,6 +486,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 虎克先生首先了提出細胞學說
+    to: 虎克先生首先提出了細胞學說
+    note: 語序錯誤，應為「首先提出了」
+    by: ai_review
 - id: doc_111_桃園_平南_自然_g7s1e1_s1_13
   section: 1
   number: 13
@@ -836,7 +841,7 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: '漢斯製作了4片標本，其中兩片加入了亞甲藍液染色，接著觀察這些標本，其結果紀錄如下，請問下列關查結果與標本配對，何者正確？
+  stem: '漢斯製作了4片標本，其中兩片加入了亞甲藍液染色，接著觀察這些標本，其結果紀錄如下，請問下列觀察結果與標本配對，何者正確？
 
 
     | 甲 | 透明、不容易觀察到細胞及形狀 |
@@ -847,7 +852,7 @@ questions:
 
     | 丙 | 細胞排列緊密，細胞核不明顯，旁邊有成對半月型的保衛細胞 |
 
-    | 丁 | 細胞扁平形，分散或聚集，可見到明顯的細胞核。 |'
+    | 丁 | 細胞扁平形，分散或聚集，可見到明顯的細胞核。 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲：染色的人類口腔皮膜細胞
@@ -875,6 +880,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問下列關查結果與標本配對，何者正確？
+    to: 請問下列觀察結果與標本配對，何者正確？
+    note: 「關查」應為「觀察」
+    by: ai_review
 - id: doc_111_桃園_平南_自然_g7s1e1_s1_24
   section: 1
   number: 24
@@ -1019,14 +1029,14 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 觀察洋蔥表皮細胞時，常使用亞甲藍液來染色，主要是為了觀察哪一構造？ˉ
+  stem: 觀察洋蔥表皮細胞時，常使用亞甲藍液來染色，主要是為了觀察哪一構造？ˉ（原卷有誤，已修正）
   options:
   - label: A
     content: 細胞核ˉ
   - label: B
     content: 細胞質ˉ
   - label: C
-    content: )細胞膜ˉ
+    content: 細胞膜ˉ
   - label: D
     content: 葉綠體。
   group_stem: ◎題組二、下圖為一複式顯微鏡示意圖，試根據所提供的資料，回答下列問題：
@@ -1048,6 +1058,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) )細胞膜
+    to: (C) 細胞膜
+    note: 多印了一個右括號
+    by: ai_review
 - id: doc_111_桃園_平南_自然_g7s1e1_s1_29
   section: 1
   number: 29

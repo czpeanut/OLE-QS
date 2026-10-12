@@ -854,7 +854,7 @@ questions:
   number: 23
   type: single
   page: 1
-  stem: 小剛回外婆家，看到芒果樹上結了好多的芒果。請問，芒果結果得過程包含了四個步驟：甲.花粉傳到雌蕊；乙.精細胞和卵結合；丙.長出花粉管；丁.散播種子；戊.長出果實。則正確順序應該是
+  stem: 小剛回外婆家，看到芒果樹上結了好多的芒果。請問，芒果結果的過程包含了五個步驟：甲.花粉傳到雌蕊；乙.精細胞和卵結合；丙.長出花粉管；丁.散播種子；戊.長出果實。則正確順序應該是（原卷有誤，已修正）
   options:
   - label: A
     content: 甲丙乙戊丁
@@ -881,6 +881,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 芒果結果得過程包含了四個步驟：
+    to: 芒果結果的過程包含了五個步驟：
+    note: 「得」為錯字，且甲至戊共有五個步驟
+    by: ai_review
 - id: doc_113_台中_向上_自然_g7s2e1_s1_24
   section: 1
   number: 24
@@ -1444,7 +1449,7 @@ questions:
   number: 40
   type: single
   page: 2
-  stem: 請問下列有關於人類 A、B、O 血型遺傳的敘述，哪一個選項是正確的？
+  stem: 請問下列有關於人類 A、B、O 血型遺傳的敘述，哪一個選項是正確的？（原卷有誤，已修正）
   options:
   - label: A
     content: 表現型共有4 種，故至少由4 種等位基因所控制
@@ -1454,7 +1459,7 @@ questions:
     content: 皮膚細胞中也具有控制血型的等位基因
   - label: D
     content: 若表現型是A 型，則基因型必為$I^{A}I^{A}$。
-  group_stem: ＊大毛家中的「血型」」的族譜如下，請回答40~42 題
+  group_stem: ＊大毛家中的「血型」的族譜如下，請回答40~42 題
   shared_asset: g1_40_42
   tags:
     chapter:
@@ -1473,6 +1478,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 大毛家中的「血型」」的族譜如下
+    to: 大毛家中的「血型」的族譜如下
+    note: 多印了一個右引號
+    by: ai_review
 - id: doc_113_台中_向上_自然_g7s2e1_s1_41
   section: 1
   number: 41
@@ -1488,7 +1498,7 @@ questions:
     content: 大毛的基因型是$I^{A}i$
   - label: D
     content: 姑姑的基因型為$I^{B}I^{B}$。
-  group_stem: ＊大毛家中的「血型」」的族譜如下，請回答40~42 題
+  group_stem: ＊大毛家中的「血型」的族譜如下，請回答40~42 題
   shared_asset: g1_40_42
   tags:
     chapter:
@@ -1522,7 +1532,7 @@ questions:
     content: '75'
   - label: D
     content: 100 %。
-  group_stem: ＊大毛家中的「血型」」的族譜如下，請回答40~42 題
+  group_stem: ＊大毛家中的「血型」的族譜如下，請回答40~42 題
   shared_asset: g1_40_42
   tags:
     chapter:
@@ -1833,12 +1843,12 @@ questions:
   number: 50
   type: single
   page: 2
-  stem: 關於馬鈴茄，請問哪一項敘述最合理？
+  stem: 關於馬鈴茄，請問哪一項敘述最合理？（原卷有誤，已修正）
   options:
   - label: A
     content: 馬鈴茄只有開番茄花
   - label: B
-    content: 馬鈴茄所收成的馬鈴薯發芽後，可以利用芽眼種出出多棵馬鈴茄
+    content: 馬鈴茄所收成的馬鈴薯發芽後，可以利用芽眼種出多棵馬鈴茄
   - label: C
     content: 馬鈴茄所收成的番茄為無性生殖
   - label: D
@@ -1866,6 +1876,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 可以利用芽眼種出出多棵馬鈴茄
+    to: 可以利用芽眼種出多棵馬鈴茄
+    note: 多印了一個「出」字
+    by: ai_review
 shared_assets:
 - key: g1_24_26
   label: 題組附圖

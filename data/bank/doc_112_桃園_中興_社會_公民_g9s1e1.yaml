@@ -775,14 +775,14 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: 對生產者而言，通常會根據商品價格決定生產的數量。請問下列相關敘述在常理之下何者最符合此一概念？
+  stem: 對生產者而言，通常會根據商品價格決定生產的數量。請問下列相關敘述在常理之下何者最符合此一概念？（原卷有誤，已修正）
   options:
   - label: A
     content: 廷瑋領到年終獎金大買最新的衣服鞋子
   - label: B
     content: 下週油價即將調漲，汽車駕駛提前進行加油
   - label: C
-    content: 西瓜市場價格上漲，瓜農增加種子西瓜面積
+    content: 西瓜市場價格上漲，瓜農增加種植西瓜面積
   - label: D
     content: 雞蛋價格大漲，社區揪團團購壓低價錢。
   tags:
@@ -802,6 +802,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 西瓜市場價格上漲，瓜農增加種子西瓜面積
+    to: 西瓜市場價格上漲，瓜農增加種植西瓜面積
+    note: 「種子」應為「種植」
+    by: ai_review
 - id: doc_112_桃園_中興_社會_公民_g9s1e1_s1_23
   section: 1
   number: 23

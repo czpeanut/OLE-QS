@@ -28,7 +28,7 @@ questions:
   type: single
   page: 1
   stem: 「友善環境飲食」是指食用對環境負擔較小的食物，藉以保護環境的飲食方式。請問，下列哪些行動符合「友善環境飲食」的理念？ (甲)飲食種類多樣化，盡量選購世界各地進口的農產品
-    (乙)選擇精緻加工食品，以卻確保食物的新鮮 (丙)多選購當季的食材 (丁)留意碳足跡標籤，選購碳足跡較低的食品
+    (乙)選擇精緻加工食品，以確保食物的新鮮 (丙)多選購當季的食材 (丁)留意碳足跡標籤，選購碳足跡較低的食品（原卷有誤，已修正）
   options:
   - label: A
     content: 甲丙
@@ -55,6 +55,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (乙)選擇精緻加工食品，以卻確保食物的新鮮
+    to: (乙)選擇精緻加工食品，以確保食物的新鮮
+    note: 原卷多印贅字「卻」
+    by: ai_review
 - id: doc_113_新北_中平_社會_地理_g9s2e2_s1_35
   section: 1
   number: 35

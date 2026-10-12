@@ -257,14 +257,14 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 小麥利用假日跟朋友聚會，聽到幾名好友分別分享工作上的點滴，請問哪一位好友最可能在志願結社的單位服務？
+  stem: 小麥利用假日跟朋友聚會，聽到幾名好友分別分享工作上的點滴，請問哪一位好友最可能在志願結社的單位服務？（原卷有誤，已修正）
   options:
   - label: A
     content: 我們不營利，全部經費都是自行籌措
   - label: B
     content: 小杰：我們從事服務業，所以很怕得罪客人
   - label: C
-    content: 小香：小倫：組織的盈餘都會做為我們的工作獎金
+    content: 小倫：組織的盈餘都會做為我們的工作獎金
   - label: D
     content: 小禾：公家機關最大的責任就是為民眾服務。
   group_stem: "中信情蒐「樂天女孩80」 球迷讚有料：沒李多慧也滿分\n    中職樂天桃猿旗下啦啦隊「樂天女孩Rakuten Girls」陣容堅強，因此經常被戲稱為「啦啦隊附屬棒球隊」，本季找來韓國洋將李多慧補強啦啦隊更引發一陣熱潮，沒想到今（28\
@@ -290,6 +290,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 小香：小倫：組織的盈餘都會做為我們的工作獎金
+    to: (C) 小倫：組織的盈餘都會做為我們的工作獎金
+    note: 多印「小香：」，應為小香發言誤植
+    by: ai_review
 - id: doc_111_桃園_中興_社會_公民_g7s2e2_s1_8
   section: 1
   number: 8

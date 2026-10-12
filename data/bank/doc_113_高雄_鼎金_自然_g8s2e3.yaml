@@ -363,7 +363,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 關於生活中的有機化合物，下列敘述何者正確？
+  stem: 關於生活中的有機化合物，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 所有的醣類都是聚合物
@@ -372,7 +372,7 @@ questions:
   - label: C
     content: 動物性脂肪在常溫下通常呈液態
   - label: D
-    content: 油脂是由碳、氫、氧元素所成組成的小分子化合物。
+    content: 油脂是由碳、氫、氧元素所組成的小分子化合物。
   tags:
     chapter:
       publisher: 翰林
@@ -390,6 +390,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 油脂是由碳、氫、氧元素所成組成的小分子化合物
+    to: 油脂是由碳、氫、氧元素所組成的小分子化合物
+    note: 「所成組成」多「成」字，應為「所組成」
+    by: ai_review
 - id: doc_113_高雄_鼎金_自然_g8s2e3_s1_10
   section: 1
   number: 10
@@ -1558,7 +1563,7 @@ questions:
   number: 35
   type: single
   page: 4
-  stem: 如圖為爬竿比賽的裝置，在人順著竿子往上爬的過程中，主要是依靠何種力量支撐而不致於往下滑？
+  stem: 如圖為爬竿比賽的裝置，在人順著竿子往上爬的過程中，主要是依靠何種力量支撐而不致於往下滑？（原卷有誤，已修正）
   options:
   - label: A
     content: 人體與地球之間的吸引力
@@ -1567,7 +1572,7 @@ questions:
   - label: C
     content: 竿子與地面之間的作用力
   - label: D
-    content: 人體與竿子之間的萬力引力。
+    content: 人體與竿子之間的萬有引力。
   assets:
   - key: s1_35_f1
     kind: figure
@@ -1602,6 +1607,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 人體與竿子之間的萬力引力
+    to: 人體與竿子之間的萬有引力
+    note: 「萬力引力」誤印，應為「萬有引力」
+    by: ai_review
 - id: doc_113_高雄_鼎金_自然_g8s2e3_s1_36
   section: 1
   number: 36

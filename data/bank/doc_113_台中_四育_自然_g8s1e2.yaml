@@ -242,7 +242,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 小明購買『犬用』的哨子，實際試吹發現狗對哨音很有反應，而自己卻完全沒聽到聲音。何者為何者為最可能的原因？(已知當時聲速為340m/s)
+  stem: 小明購買『犬用』的哨子，實際試吹發現狗對哨音很有反應，而自己卻完全沒聽到聲音。何者為最可能的原因？(已知當時聲速為340m/s)（原卷有誤，已修正）
   options:
   - label: A
     content: 小明與狗默契十足，故無哨音狗仍能受提醒
@@ -269,6 +269,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 何者為何者為最可能的原因？
+    to: 何者為最可能的原因？
+    note: 「何者為」重複印製
+    by: ai_review
 - id: doc_113_台中_四育_自然_g8s1e2_s1_4
   section: 1
   number: 4

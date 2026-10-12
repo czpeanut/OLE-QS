@@ -1682,12 +1682,12 @@ questions:
   number: 44
   type: single
   page: 5
-  stem: 從文章的敘述來看，美國取得國籍的方式是採用？
+  stem: 從文章的敘述來看，美國取得國籍的方式是採用？（原卷有誤，已修正）
   options:
   - label: A
     content: 血統主義
   - label: B
-    content: 屬地主義
+    content: 屬人主義
   - label: C
     content: 自願申請
   - label: D
@@ -1711,6 +1711,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A)血統主義(B)屬地主義(C)自願申請(D)屬地主義
+    to: (A)血統主義(B)屬地主義(C)自願申請(D)屬人主義
+    note: 選項B與D重複皆為屬地主義
+    by: ai_review
 - id: doc_113_新北_江翠_社會_g7s2e1_s3_45
   section: 3
   number: 45

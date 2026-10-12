@@ -1078,12 +1078,12 @@ questions:
   number: 28
   type: single
   page: 3
-  stem: 根據本文，下列何項作為不能吸引「寧願多睡三分鐘的客人」？
+  stem: 根據本文，下列何項作為不能吸引「寧願多睡三分鐘的客人」？（原卷有誤，已修正）
   options:
   - label: A
     content: 老闆一看到熟客，就知道對方的點餐喜好
   - label: B
-    content: 店長一間扛起了收銀、做餐、包裝及清潔的工作
+    content: 店長一肩扛起了收銀、做餐、包裝及清潔的工作
   - label: C
     content: 煎台人員將同樣是鮪魚口味的三份餐點一起處理
   - label: D
@@ -1113,6 +1113,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 店長一間扛起了收銀、做餐、包裝及清潔的工作
+    to: 店長一肩扛起了收銀、做餐、包裝及清潔的工作
+    note: 同音錯字，「一間」應為「一肩」
+    by: ai_review
 - id: doc_113_新北_土城_國文_g7s2e2_s1_29
   section: 1
   number: 29

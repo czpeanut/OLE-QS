@@ -93,7 +93,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 喬巴上地理課時，老師在班上進行字卡搶答，如圖(一)，條件一：位於西半球。條件二：季節與台灣相反。條件三：此地位於熱帶，請問：小明該拿哪一張字卡？
+  stem: 喬巴上地理課時，老師在班上進行字卡搶答，如圖(一)，條件一：位於西半球。條件二：季節與台灣相反。條件三：此地位於熱帶，請問：喬巴該拿哪一張字卡？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -137,6 +137,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 喬巴上地理課時，老師在班上進行字卡搶答，如圖(一)，條件一：位於西半球。條件二：季節與台灣相反。條件三：此地位於熱帶，請問：小明該拿哪一張字卡？
+    to: 喬巴上地理課時，老師在班上進行字卡搶答，如圖(一)，條件一：位於西半球。條件二：季節與台灣相反。條件三：此地位於熱帶，請問：喬巴該拿哪一張字卡？
+    note: 主角前後不一致，小明應為喬巴
+    by: ai_review
 - id: doc_113_高雄_鼎金_社會_地理_g7s1e1_s1_4
   section: 1
   number: 4
@@ -302,7 +307,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 阿飛駕駛飛機在（120°E，30°N）沿著緯線向東飛行，阿翔駕駛飛機在（120°E，30°S）沿者緯線向西飛行，假設飛行速度都一樣，下列敘述何者正確？
+  stem: 阿飛駕駛飛機在（120°E，30°N）沿著緯線向東飛行，阿翔駕駛飛機在（120°E，30°S）沿著緯線向西飛行，假設飛行速度都一樣，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 阿翔經過的海域面積較少
@@ -329,6 +334,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: （120°E，30°S）沿者緯線向西飛行
+    to: （120°E，30°S）沿著緯線向西飛行
+    note: 錯字，沿者應為沿著
+    by: ai_review
 - id: doc_113_高雄_鼎金_社會_地理_g7s1e1_s1_9
   section: 1
   number: 9

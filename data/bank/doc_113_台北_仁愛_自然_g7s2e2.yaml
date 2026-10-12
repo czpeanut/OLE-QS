@@ -505,7 +505,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 下圖為某地區的馬前肢化石及地層圖，以知該區地層有變動，請利用化石判斷下列哪一個地層最接近現代？
+  stem: 下圖為某地區的馬前肢化石及地層圖，已知該區地層有變動，請利用化石判斷下列哪一個地層最接近現代？（原卷有誤，已修正）
   options:
   - label: A
     content: B 地層
@@ -549,6 +549,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 以知該區地層有變動，請利用化石判斷
+    to: 已知該區地層有變動，請利用化石判斷
+    note: 錯字，「以知」應為「已知」
+    by: ai_review
 - id: doc_113_台北_仁愛_自然_g7s2e2_s2_14
   section: 2
   number: 14

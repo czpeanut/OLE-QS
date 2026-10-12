@@ -1139,7 +1139,7 @@ questions:
   type: single
   page: 3
   stem: 同時以水銀和水兩種液體進行托里切利實驗，如右圖所示。已知當時氣壓為 75 cmHg。圖中標示 A、B、C、D 四個區域，A 區域與 D 區域分別在裝水的試管內部上方，B
-    區域在裝水銀的試管內部上方，C 區域在裝水的試管裝外，試問那個區域的氣壓最高？
+    區域在裝水銀的試管內部上方，C 區域在裝水的試管外，試問那個區域的氣壓最高？（原卷有誤，已修正）
   options:
   - label: A
     content: A 區域
@@ -1183,6 +1183,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: C 區域在裝水的試管裝外，試問那個區域
+    to: C 區域在裝水的試管外，試問那個區域
+    note: 多一個「裝」字
+    by: ai_review
 - id: doc_113_台中_四育_自然_g8s2e3_s1_34
   section: 1
   number: 34

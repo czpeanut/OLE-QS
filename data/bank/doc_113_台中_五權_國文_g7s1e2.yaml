@@ -191,7 +191,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 炭治郎鈔作業時，有一題解釋不小心寫錯了，請問是哪一個解釋有誤?
+  stem: 炭治郎抄作業時，有一題解釋不小心寫錯了，請問是哪一個解釋有誤?（原卷有誤，已修正）
   options:
   - label: A
     content: '童叟無欺: 指商家非常講信用'
@@ -218,6 +218,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 炭治郎鈔作業時，有一題解釋不小心寫錯了
+    to: 炭治郎抄作業時，有一題解釋不小心寫錯了
+    note: 「鈔」應為「抄」
+    by: ai_review
 - id: doc_113_台中_五權_國文_g7s1e2_s2_7
   section: 2
   number: 7

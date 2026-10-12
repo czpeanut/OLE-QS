@@ -711,7 +711,7 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: 根據詞的格律體裁，請判斷下列為「詞」？
+  stem: 根據詞的格律體裁，請判斷下列何者為「詞」？（原卷有誤，已修正）
   options:
   - label: A
     content: 種豆南山下，草盛豆苗稀。晨興理荒穢，戴月荷鋤歸。道狹草木長，夕露沾我衣。衣沾不足惜，但使願無違
@@ -738,6 +738,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據詞的格律體裁，請判斷下列為「詞」？
+    to: 根據詞的格律體裁，請判斷下列何者為「詞」？
+    note: 題幹漏「何者」二字
+    by: ai_review
 - id: doc_113_台中_五權_國文_g9s1e1_s2_22
   section: 2
   number: 22

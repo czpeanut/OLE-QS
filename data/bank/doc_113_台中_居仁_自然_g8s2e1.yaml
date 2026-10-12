@@ -338,7 +338,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 下列有關煉鐵的敘述，何者錯誤？
+  stem: 下列有關煉鐵的敘述，何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 煉鐵需要煤焦和鐵礦
@@ -347,7 +347,7 @@ questions:
   - label: C
     content: 使用煤焦作為碳的來源，是因為來源充裕且價格低廉
   - label: D
-    content: 冶煉出的鐵是純鐵，可適時貼加其他材料製成所需物品
+    content: 冶煉出的鐵是純鐵，可適時添加其他材料製成所需物品
   tags:
     chapter:
       publisher: 翰林
@@ -365,6 +365,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 可適時貼加其他材料製成所需物品
+    to: 可適時添加其他材料製成所需物品
+    note: 「貼加」為錯字，應為「添加」
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g8s2e1_s1_11
   section: 1
   number: 11

@@ -1315,14 +1315,14 @@ questions:
   number: 8
   type: single
   page: 3
-  stem: 這段文字所描寫的季節，與下列哪一組季節代表物相同？
+  stem: 這段文字所描寫的季節，與下列哪一組季節代表物相同？（原卷有誤，已修正）
   options:
   - label: A
     content: 楓葉、霜氣
   - label: B
     content: 桃花、柳樹
   - label: C
-    content: 雪、聖誔樹
+    content: 雪、聖誕樹
   - label: D
     content: 荷花、螢火蟲。
   group_stem: "（四）我還記得那些夏天的晚上，啊！那必然是我生命中最美的一段記憶。星星、螢火蟲、隔壁小孩的笑鬧……園中的小路成了一個島，四周是南瓜的浪潮。風來的時候，南瓜葉如浪般翻滾，交頭接耳地傳遞它們的祕密。即使在無風的時候，葉子也驕傲地揚著頭，若有若無地擺動。颱風天的午後，我們坐在走廊裡。院子漲滿了水，那更像一片長滿了挺立的荷葉的池塘。\
@@ -1344,6 +1344,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 雪、聖誔樹
+    to: 雪、聖誕樹
+    note: 「誔」為錯字，應作「誕」
+    by: ai_review
 - id: doc_113_台中_四育_國文_g7s1e1_s4_9
   section: 4
   number: 9

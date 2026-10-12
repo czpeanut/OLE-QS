@@ -230,7 +230,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 小宇想要調查學校操場中有多少棵兩耳草，他先將操場劃分為20 個等面積的區域，並調查其中四個區域，分別測得兩耳草的數量為27、32、30、31 棵。則根據小林的估算，校園操場上大約有多少棵兩耳草？
+  stem: 小宇想要調查學校操場中有多少棵兩耳草，他先將操場劃分為20 個等面積的區域，並調查其中四個區域，分別測得兩耳草的數量為27、32、30、31 棵。則根據小宇的估算，校園操場上大約有多少棵兩耳草？（原卷有誤，已修正）
   options:
   - label: A
     content: '300'
@@ -257,6 +257,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則根據小林的估算，校園操場上大約有多少棵兩耳草？
+    to: 則根據小宇的估算，校園操場上大約有多少棵兩耳草？
+    note: 人名前後不一致，小林應為小宇
+    by: ai_review
 - id: doc_113_新北_蘆洲_自然_g7s2e3_s1_8
   section: 1
   number: 8

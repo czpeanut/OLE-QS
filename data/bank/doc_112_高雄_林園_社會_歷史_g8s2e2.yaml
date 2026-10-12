@@ -409,12 +409,12 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 日本與中國爆發戰爭，美軍撤離第十五部兵團後，當時中國的主要政治情況為何？
+  stem: 日本與中國爆發戰爭，美軍撤離第十五步兵團後，當時中國的主要政治情況為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 地方軍事強人憑藉武力以奪取地盤，割據一方
   - label: B
-    content: 日本扶植滿洲國政權，阻饒中國進行剿共戰爭
+    content: 日本扶植滿洲國政權，阻撓中國進行剿共戰爭
   - label: C
     content: 國民黨與共產黨不斷衝突，共黨全面控制中國
   - label: D
@@ -436,6 +436,15 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 美軍撤離第十五部兵團後
+    to: 美軍撤離第十五步兵團後
+    note: 「部兵」應為「步兵」
+    by: ai_review
+  - from: 阻饒中國進行剿共戰爭
+    to: 阻撓中國進行剿共戰爭
+    note: 「阻饒」應為「阻撓」
+    by: ai_review
 - id: doc_112_高雄_林園_社會_歷史_g8s2e2_s1_28
   section: 1
   number: 28

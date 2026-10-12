@@ -483,7 +483,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: '阿華在記錄「探測心音與脈搏」的實驗活動結果時，漏填了部分資料，由測出的脈搏次數和心博次數判斷，理論上這兩個空格由左至右該填上什麼數字？
+  stem: '阿華在記錄「探測心音與脈搏」的實驗活動結果時，漏填了部分資料，由測出的脈搏次數和心搏次數判斷，理論上這兩個空格由左至右該填上什麼數字？
 
 
     | 每分鐘的次數 | 第一次 | 第一次 | 第二次 | 第二次 |
@@ -492,7 +492,7 @@ questions:
 
     | | 脈搏 | 心搏 | 脈搏 | 心搏 |
 
-    | | 70 | | | 130 |'
+    | | 70 | | | 130 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 70、130
@@ -519,6 +519,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 由測出的脈搏次數和心博次數判斷，理論上
+    to: 由測出的脈搏次數和心搏次數判斷，理論上
+    note: 「心博」應為「心搏」
+    by: ai_review
 - id: doc_113_屏東_中正_自然_g7s1e2_s1_13
   section: 1
   number: 13

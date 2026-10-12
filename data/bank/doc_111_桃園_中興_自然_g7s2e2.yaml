@@ -58,7 +58,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 下列何者應找遺傳諮詢專家尋求協助？（甲）擔心孩子得到色盲症的夫婦；（乙）連續生下5 個女孩的夫婦；（丙）想生下資優生的夫婦的夫婦；（丁）夫婦皆正常，但家族中有血友病者。
+  stem: 下列何者應找遺傳諮詢專家尋求協助？（甲）擔心孩子得到色盲症的夫婦；（乙）連續生下5 個女孩的夫婦；（丙）想生下資優生的夫婦；（丁）夫婦皆正常，但家族中有血友病者。（原卷有誤，已修正）
   options:
   - label: A
     content: 丙丁
@@ -85,6 +85,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: （丙）想生下資優生的夫婦的夫婦；
+    to: （丙）想生下資優生的夫婦；
+    note: 贅字，多印了「的夫婦」
+    by: ai_review
 - id: doc_111_桃園_中興_自然_g7s2e2_s1_3
   section: 1
   number: 3
@@ -473,10 +478,10 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: 博美犬和吉娃娃犬能交配產生後代，下列有關此兩者的敘述，何者正確？
+  stem: 博美犬和吉娃娃犬能交配產生後代，下列有關此兩者的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 牠們的的後代具有生殖能力
+    content: 牠們的後代具有生殖能力
   - label: B
     content: 牠們的屬名不同
   - label: C
@@ -500,6 +505,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 牠們的的後代具有生殖能力
+    to: (A) 牠們的後代具有生殖能力
+    note: 贅字，多印了「的」
+    by: ai_review
 - id: doc_111_桃園_中興_自然_g7s2e2_s1_15
   section: 1
   number: 15

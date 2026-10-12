@@ -196,7 +196,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 圖中原住民所書寫的文字，最早是由下列何者所教授的？
+  stem: 圖中原住民所書寫的文字，最早是由下列何者所教授的？（原卷有誤，已修正）
   options:
   - label: A
     content: 施琅
@@ -205,7 +205,7 @@ questions:
   - label: C
     content: 西班牙人
   - label: D
-    content: 荷蘭牙人。
+    content: 荷蘭人。
   group_stem: （二）老王是康熙年間來臺灣開墾的漢人，他居住在今天的臺南市。為取得土地，老王與當地原住民進行土地買賣，土地契約如下圖，他發現圖中右側原住民的文字不是漢字，而是像外國人一樣橫式書寫。
   shared_asset: g1_5_7
   tags:
@@ -225,6 +225,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 荷蘭牙人
+    to: (D) 荷蘭人
+    note: 多印「牙」字，應為荷蘭人
+    by: ai_review
 - id: doc_112_桃園_石門_社會_歷史_g7s1e2_s1_7
   section: 1
   number: 7
@@ -758,7 +763,7 @@ questions:
 
     大臣甲：臺灣乃彈丸之地，沒有什麼價值，不如賣給其他國家。
 
-    大臣乙：臺灣可以鞏固東南沿海門戶安全，一旦落入外人之手後果不堪設'
+    大臣乙：臺灣可以鞏固東南沿海門戶安全，一旦落入外人之手後果不堪設想（原卷有誤，已修正）'
   options:
   - label: A
     content: 當時的皇帝是乾隆
@@ -785,6 +790,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一旦落入外人之手後果不堪設
+    to: 一旦落入外人之手後果不堪設想
+    note: 漏「想」字，應為後果不堪設想
+    by: ai_review
 - id: doc_112_桃園_石門_社會_歷史_g7s1e2_s2_24
   section: 2
   number: 24

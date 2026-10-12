@@ -30,7 +30,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 目前我國在大洋洲的邦交國，例如：諾魯、吐瓦魯、馬紹爾群島等。這些國家為來最可能面臨什麼環境危機？
+  stem: 目前我國在大洋洲的邦交國，例如：諾魯、吐瓦魯、馬紹爾群島等。這些國家未來最可能面臨什麼環境危機？（原卷有誤，已修正）
   options:
   - label: A
     content: 沙漠範圍擴大
@@ -57,6 +57,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 這些國家為來最可能面臨什麼環境危機？
+    to: 這些國家未來最可能面臨什麼環境危機？
+    note: 「為來」應為「未來」
+    by: ai_review
 - id: doc_113_台中_四育_社會_地理_g9s1e3_s1_2
   section: 1
   number: 2
@@ -1124,7 +1129,7 @@ questions:
   number: 31
   type: single
   page: 4
-  stem: 「此區為澳洲的精華區，為東南信風的迎風坡，降水量較多，人口集中、產業發達，大城市雪梨及位於此。」請問上文在描述的是哪個氣候區？
+  stem: 「此區為澳洲的精華區，為東南信風的迎風坡，降水量較多，人口集中、產業發達，大城市雪梨即位於此。」請問上文在描述的是哪個氣候區？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲區
@@ -1154,6 +1159,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 人口集中、產業發達，大城市雪梨及位於此。
+    to: 人口集中、產業發達，大城市雪梨即位於此。
+    note: 「及」應為「即」
+    by: ai_review
 - id: doc_113_台中_四育_社會_地理_g9s1e3_s2_32
   section: 2
   number: 32

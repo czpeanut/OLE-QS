@@ -503,14 +503,14 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 下列「」中的字，何組意思相同？
+  stem: 下列「」中的字，何組意思相同？（原卷有誤，已修正）
   options:
   - label: A
     content: 留蚊於「素」帳中／「素」不相識
   - label: B
     content: 曾不吝情「去」留／相「去」復幾許
   - label: C
-    content: 使勁」地搖／工作很費「勁」
+    content: 使「勁」地搖／工作很費「勁」
   - label: D
     content: 無怨無「尤」／群起效「尤」。
   tags:
@@ -530,6 +530,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 使勁」地搖／工作很費「勁」
+    to: 使「勁」地搖／工作很費「勁」
+    note: 漏左引號「
+    by: ai_review
 - id: doc_113_台中_大業_國文_g8s1e1_s3_4
   section: 3
   number: 4
@@ -882,14 +887,14 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 琦君擅長描寫人物，筆觸細膩生動。在〈下雨天，真好〉一文中對於人物形象的描繪，何者敘述正確？
+  stem: 琦君擅長描寫人物，筆觸細膩生動。在〈下雨天，真好〉一文中對於人物形象的描繪，何者敘述正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 「母親走進走出的抱怨，父親卻端著宜興茶壺，坐在廊下賞雨」:父親好吃懶做
   - label: B
     content: 「我坐在阿榮伯懷裡，等著阿榮伯把一粒粒又香又脆的炒豆子剝了殼送到我嘴裡」:阿榮伯是慈祥且疼愛小孩的長者
   - label: C
-    content: 「我也跟著起來，顧不得吃早飯，就套上叔叔的舊皮靴，頂著雨在院子裡玩:琦君是任性驕縱的小孩
+    content: 「我也跟著起來，顧不得吃早飯，就套上叔叔的舊皮靴，頂著雨在院子裡玩」:琦君是任性驕縱的小孩
   - label: D
     content: 「母親一邊做飯，一邊聽(鼓兒詞)，淚水掛滿了臉頰」:母親情感內斂，不善表達。
   lesson_raw:
@@ -912,6 +917,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 頂著雨在院子裡玩:琦君是任性驕縱的小孩
+    to: 頂著雨在院子裡玩」:琦君是任性驕縱的小孩
+    note: 冒號前漏右引號」
+    by: ai_review
 - id: doc_113_台中_大業_國文_g8s1e1_s3_15
   section: 3
   number: 15

@@ -1311,10 +1311,10 @@ questions:
   number: 34
   type: single
   page: 4
-  stem: 關於凝乳酵素的敘述，下列何者正確？
+  stem: 關於凝乳酵素的敘述，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 凝乳酵素使使乳源裡的蛋白質凝聚，此為化學變化
+    content: 凝乳酵素使乳源裡的蛋白質凝聚，此為化學變化
   - label: B
     content: 凝乳酵素可以促使乳源中的脂肪凝聚，分離出乳清
   - label: C
@@ -1340,6 +1340,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 凝乳酵素使使乳源裡的蛋白質凝聚，此為化學變化
+    to: 凝乳酵素使乳源裡的蛋白質凝聚，此為化學變化
+    note: 多印一個「使」字
+    by: ai_review
 - id: doc_111_高雄_大灣_自然_g8s2e2_s2_35
   section: 2
   number: 35

@@ -566,10 +566,10 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 康康在網路上看到一段話，提到權力擁有者常可能有意無意侵犯人民的基本人權，因此「愈擁有別人不懂的專業，愈須謙虛；愈掌有令人敬畏的公權力，愈須謹慎」。依據上述觀點，下面哪一位網友的回應最為適切？
+  stem: 康康在網路上看到一段話，提到權力擁有者常可能有意無意侵犯人民的基本人權，因此「愈擁有別人不懂的專業，愈須謙虛；愈掌有令人敬畏的公權力，愈須謹慎」。依據上述觀點，下面哪一位網友的回應最為適切？（原卷有誤，已修正）
   options:
   - label: A
-    content: 會提起訴訟者一定是權利被侵犯，當司法機執行公權力時，必須著重在保障原告的權利
+    content: 會提起訴訟者一定是權利被侵犯，當司法機關執行公權力時，必須著重在保障原告的權利
   - label: B
     content: 司法人員是替天行道，對重大的刑案要限期追溯並速審速決
   - label: C
@@ -593,6 +593,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當司法機執行公權力時
+    to: 當司法機關執行公權力時
+    note: 漏「關」字
+    by: ai_review
 - id: doc_112_新北_桃子腳_社會_g8s2e3_s1_18
   section: 1
   number: 18
@@ -605,11 +610,11 @@ questions:
 
     | :--- | :--- |
 
-    | 判決敗訴後賠償給學童家長的律師費 | 80,00 |
+    | 判決敗訴後賠償給學童家長的律師費 | 80,000 |
 
     | 違反交通規則的罰鍰 | 7,500 |
 
-    | 賠償被害人(學童)受傷的醫藥費 | 51,000 |'
+    | 賠償被害人(學童)受傷的醫藥費 | 51,000 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 7,500
@@ -636,6 +641,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 80,00
+    to: 80,000
+    note: 金額少印一個「0」
+    by: ai_review
 - id: doc_112_新北_桃子腳_社會_g8s2e3_s1_19
   section: 1
   number: 19

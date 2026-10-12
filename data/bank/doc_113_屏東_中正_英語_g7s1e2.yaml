@@ -480,7 +480,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: Rose can sing ____ an agnel. Her voice is beautiful.
+  stem: Rose can sing ____ an angel. Her voice is beautiful.（原卷有誤，已修正）
   options:
   - label: A
     content: for
@@ -507,6 +507,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Rose can sing ____ an agnel. Her voice is beautiful.
+    to: Rose can sing ____ an angel. Her voice is beautiful.
+    note: agnel 拼錯，應為 angel
+    by: ai_review
 - id: doc_113_屏東_中正_英語_g7s1e2_s3_8
   section: 3
   number: 8

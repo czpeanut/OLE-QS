@@ -502,7 +502,7 @@ questions:
   number: 28
   type: single
   page: 3
-  stem: The river is so ________ that we can’t across it.
+  stem: The river is so ________ that we can’t cross it.（原卷有誤，已修正）
   options:
   - label: A
     content: high
@@ -529,6 +529,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: that we can’t across it.
+    to: that we can’t cross it.
+    note: across應為動詞cross
+    by: ai_review
 - id: doc_112_桃園_石門_英語_g8s2e1_s4_29
   section: 4
   number: 29

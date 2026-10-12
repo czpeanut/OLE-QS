@@ -354,13 +354,13 @@ questions:
 
     | --- | --- |
 
-    | 甲 | 得到德國圈全力支持，向塞爾維亞宣戰。 |
+    | 甲 | 得到德國全力支持，向塞爾維亞宣戰。 |
 
     | 乙 | 全面動員軍隊，對付奧匈帝國等國。 |
 
     | 丙 | 為支持同一民族，同時向法國和俄國宣戰。 |
 
-    | 丁 | 因德軍入侵比利時，向德國宣戰。 |'
+    | 丁 | 因德軍入侵比利時，向德國宣戰。 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲丙
@@ -386,6 +386,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 得到德國圈全力支持，向塞爾維亞宣戰。
+    to: 得到德國全力支持，向塞爾維亞宣戰。
+    note: 多印「圈」字
+    by: ai_review
 - id: doc_112_高雄_林園_社會_歷史_g9s2e1_s1_24
   section: 1
   number: 24
@@ -497,7 +502,7 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 歷史圖七是某戰爭中，交戰雙方(陣營一、陣營 二)各成員國的軍隊陣亡人數圖。圖中的甲與乙 最可能分別是哪兩國？
+  stem: 歷史圖七是某戰爭中，交戰雙方(陣營一、陣營 二)各成員國的軍隊陣亡人數圖。圖中的甲與乙 最可能分別是哪兩國？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲：美國，乙：德國
@@ -506,7 +511,7 @@ questions:
   - label: C
     content: 甲：日本，乙：中國
   - label: D
-    content: 甲：俄國，乙 美國。
+    content: '甲：俄國，乙: 美國。'
   assets:
   - key: s1_27_f1
     kind: figure
@@ -540,6 +545,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: (D) 甲：俄國，乙 美國。
+    to: (D) 甲：俄國，乙：美國。
+    note: 乙後漏印冒號
+    by: ai_review
 - id: doc_112_高雄_林園_社會_歷史_g9s2e1_s1_28
   section: 1
   number: 28
@@ -576,7 +586,7 @@ questions:
   number: 29
   type: single
   page: 2
-  stem: 《悲慘世界》(Les Misérables)是法國文豪雨果(Victor Marie Hugo，西元1802～1885 年)的知名作品，背景涵蓋了十九世紀上半葉的的法國政治、社會與經濟狀況。在《悲慘世界》的原著小說中，時代的跨度非常的大。其中有一幕是統治者被加冕為法蘭西帝國皇帝。下列何者最有可能是該位皇帝的作為？
+  stem: 《悲慘世界》(Les Misérables)是法國文豪雨果(Victor Marie Hugo，西元1802～1885 年)的知名作品，背景涵蓋了十九世紀上半葉的法國政治、社會與經濟狀況。在《悲慘世界》的原著小說中，時代的跨度非常的大。其中有一幕是統治者被加冕為法蘭西帝國皇帝。下列何者最有可能是該位皇帝的作為？（原卷有誤，已修正）
   options:
   - label: A
     content: 將國王送上斷頭臺
@@ -602,6 +612,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 背景涵蓋了十九世紀上半葉的的法國政治
+    to: 背景涵蓋了十九世紀上半葉的法國政治
+    note: 多印「的」字
+    by: ai_review
 - id: doc_112_高雄_林園_社會_歷史_g9s2e1_s1_30
   section: 1
   number: 30

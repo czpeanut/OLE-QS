@@ -574,7 +574,7 @@ questions:
   number: 8
   type: single
   page: 2
-  stem: 若 $|a|<3.9$，則關於 $a$ 的敍逑，下列敍述何者正確？
+  stem: 若 $|a|<3.9$，則關於 $a$ 的敍述，下列敍述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 若 $a$ 為負整數，則滿足 $a$ 的所有數字的總和為 $-6$
@@ -601,6 +601,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則關於 a 的敍逑，下列敍述何者正確？
+    to: 則關於 a 的敍述，下列敍述何者正確？
+    note: 「逑」為錯字，應為「述」
+    by: ai_review
 - id: doc_113_新北_崇林_數學_g7s1e1_s2_9
   section: 2
   number: 9

@@ -1596,7 +1596,7 @@ questions:
   number: 45
   type: single
   page: 6
-  stem: 根據文意，下列下列敘述何者正確？
+  stem: 根據文意，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 日本因年輕人口快速成長，機器人需求降低
@@ -1639,3 +1639,8 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據文意，下列下列敘述何者正確？
+    to: 根據文意，下列敘述何者正確？
+    note: 多印「下列」二字
+    by: ai_review

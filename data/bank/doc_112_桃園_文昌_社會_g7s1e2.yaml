@@ -1307,7 +1307,7 @@ questions:
   number: 32
   type: single
   page: 4
-  stem: 朱老師在黑板上下寫一首詩（如【圖Ⅰ】），請問這首詩的主角是哪一位歷史人物？
+  stem: 朱老師在黑板上寫一首詩（如【圖Ⅰ】），請問這首詩的主角是哪一位歷史人物？（原卷有誤，已修正）
   options:
   - label: A
     content: 沈有容
@@ -1352,6 +1352,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 朱老師在黑板上下寫一首詩
+    to: 朱老師在黑板上寫一首詩
+    note: 多印「下」字
+    by: ai_review
 - id: doc_112_桃園_文昌_社會_g7s1e2_s3_33
   section: 3
   number: 33

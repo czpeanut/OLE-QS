@@ -1787,12 +1787,12 @@ questions:
   number: 42
   type: single
   page: 5
-  stem: 以下敘述何者正確?
+  stem: 以下敘述何者正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 三種金屬中，金屬丙的比熱最大。
   - label: B
-    content: 將三者同樣加熱4 分鐘，甲上升溫度是乙上升溫的的2 倍
+    content: 將三者同樣加熱4 分鐘，甲上升溫度是乙上升溫度的2 倍
   - label: C
     content: 將三者同樣加熱4 分鐘，甲吸熱較多
   - label: D
@@ -1816,6 +1816,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 甲上升溫度是乙上升溫的的2 倍
+    to: 甲上升溫度是乙上升溫度的2 倍
+    note: 錯字，「溫的」應為「溫度」
+    by: ai_review
 - id: doc_113_高雄_五福_自然_g8s1e3_s1_43
   section: 1
   number: 43

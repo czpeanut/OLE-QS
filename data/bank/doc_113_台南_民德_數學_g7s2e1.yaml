@@ -62,7 +62,7 @@ questions:
   type: single
   page: 1
   stem: 在坐標平面上，有下列幾個點：$A (-5,9)$、$B (-4,-3)$、$C (2,-1)$、$D(0,3)$、$E (-1,-9)$、$F (-4,0)$、$G
-    (-4,2)$、$H (3,3)$、$I(4,-5)$、$J(-8,2)$，則共又幾個點是位於第二象限內?
+    (-4,2)$、$H (3,3)$、$I(4,-5)$、$J(-8,2)$，則共有幾個點是位於第二象限內?（原卷有誤，已修正）
   options:
   - label: A
     content: '1'
@@ -89,6 +89,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則共又幾個點是位於第二象限內?
+    to: 則共有幾個點是位於第二象限內?
+    note: 錯字，「共又」應為「共有」
+    by: ai_review
 - id: doc_113_台南_民德_數學_g7s2e1_s1_3
   section: 1
   number: 3

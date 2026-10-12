@@ -1153,7 +1153,7 @@ questions:
   number: 33
   type: single
   page: 3
-  stem: 以下情境皆引用了南唐兩宋詞作中的經典名句，請問哪一選項用法最為適切？
+  stem: 以下情境皆引用了南唐兩宋詞作中的經典名句，請問哪一選項用法最為適切？（原卷有誤，已修正）
   options:
   - label: A
     content: 即將出國留學的洛詩安慰男友：「『別時容易見時難』，又何必在乎一時的分離？何況我們隨時可以透過視訊連繫，你不必太擔心。」
@@ -1162,7 +1162,7 @@ questions:
   - label: C
     content: 這次你們舉家移民巴西，「一江春水向東流」，不知我們何時才能再相聚啊！
   - label: D
-    content: 阮清秋孤身在異鄉工作，下班時望見天邊懸著一輪明月，憶起故鄉親友，此刻「千里共蟬娟」，心中默想；但願家人一切安好。
+    content: 阮清秋孤身在異鄉工作，下班時望見天邊懸著一輪明月，憶起故鄉親友，此刻「千里共嬋娟」，心中默想；但願家人一切安好。
   tags:
     chapter:
       publisher: 翰林
@@ -1181,12 +1181,17 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 此刻「千里共蟬娟」，心中默想；但願家人一切安好。
+    to: 此刻「千里共嬋娟」，心中默想；但願家人一切安好。
+    note: 「蟬娟」應為「嬋娟」
+    by: ai_review
 - id: doc_112_基隆_中山_國文_g9s1e1_s2_34
   section: 2
   number: 34
   type: single
   page: 4
-  stem: 依據本文六項謠言的正確觀念說明，下列何者解讀正確？
+  stem: 依據本文七項謠言的正確觀念說明，下列何者解讀正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 不論身處何地都應立即檢查家中水管、瓦斯管線、電線、房屋是否受損
@@ -1222,6 +1227,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 依據本文六項謠言的正確觀念說明，下列何者解讀正確？
+    to: 依據本文七項謠言的正確觀念說明，下列何者解讀正確？
+    note: 短文共有七項謠言，誤作六項
+    by: ai_review
 - id: doc_112_基隆_中山_國文_g9s1e1_s2_35
   section: 2
   number: 35

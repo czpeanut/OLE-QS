@@ -731,7 +731,7 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: (20)依據資料判斷，下列有關三個帝國與版圖的配對，何者完全正確？
+  stem: (20)依據資料判斷，下列有關三個帝國與版圖的配對，何者完全正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲→②；乙→③；丙→①
@@ -740,7 +740,7 @@ questions:
   - label: C
     content: 甲→②；乙→①；丙→③
   - label: D
-    content: 甲→③；乙→于；丙→①
+    content: 甲→③；乙→2；丙→①
   group_stem: "8、以下三張圖為古代三個帝國的版圖，請根據後列代號與圖片，回答第1～3 題：\n     ①波斯帝國；②亞歷山大帝國；③羅馬帝國。"
   shared_asset: g1_20_21
   tags:
@@ -759,6 +759,11 @@ questions:
     gemini_high: A
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: (D) 甲→③；乙→于；丙→①
+    to: (D) 甲→③；乙→②；丙→①
+    note: 「于」應為符號「②」之誤植
+    by: ai_review
 - id: doc_113_台中_居仁_社會_歷史_g9s1e1_s1_21
   section: 1
   number: 21

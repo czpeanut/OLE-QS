@@ -850,7 +850,7 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: 承上題，笨港應為於今日的哪個縣市？
+  stem: 承上題，笨港應位於今日的哪個縣市？（原卷有誤，已修正）
   options:
   - label: A
     content: 台南
@@ -878,6 +878,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承上題，笨港應為於今日的哪個縣市？
+    to: 承上題，笨港應位於今日的哪個縣市？
+    note: 「為於」錯字，應為「位於」
+    by: ai_review
 - id: doc_111_桃園_石門_社會_歷史_g7s1e1_s1_27
   section: 1
   number: 27

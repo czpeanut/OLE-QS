@@ -804,7 +804,7 @@ questions:
   number: 38
   type: single
   page: 3
-  stem: What was the robot mostly likely doing at three o’clock?
+  stem: What was the robot most likely doing at three o’clock?（原卷有誤，已修正）
   options:
   - label: A
     content: He was making breakfast.
@@ -837,6 +837,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: What was the robot mostly likely doing at three o’clock?
+    to: What was the robot most likely doing at three o’clock?
+    note: mostly likely 應為 most likely
+    by: ai_review
 - id: doc_112_桃園_文昌_英語_g8s1e2_s4_39
   section: 4
   number: 39

@@ -75,14 +75,14 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 下列敘述何者正確？
+  stem: 下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 所有的金屬元素在常溫時都是固體的
   - label: B
     content: 所有的非金屬元素在常溫時都是氣態和固態的
   - label: C
-    content: 非金屬元素作用總類繁多，所以性質不見得固定
+    content: 非金屬元素作用種類繁多，所以性質不見得固定
   - label: D
     content: 固態的非金屬元素為電的不良導體，唯一碳以石墨結構存在時，是電的良導體
   tags:
@@ -102,6 +102,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 非金屬元素作用總類繁多，所以性質不見得固定
+    to: 非金屬元素作用種類繁多，所以性質不見得固定
+    note: 「總類」應為「種類」
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g8s1e3_s1_3
   section: 1
   number: 3

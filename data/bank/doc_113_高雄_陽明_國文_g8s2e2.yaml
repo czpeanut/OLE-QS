@@ -674,12 +674,12 @@ questions:
   page: 2
   stem: '對人恭敬的稱呼用語，稱為「敬稱詞」；謙遜的自稱用語，稱為「謙稱詞」。
 
-    下列「 」中的敬詞、謙詞，何者使用正確？'
+    下列「 」中的敬詞、謙詞，何者使用正確？（原卷有誤，已修正）'
   options:
   - label: A
     content: 竭誠邀請老友於本週末晚上六點蒞臨，將使「貴府」蓬蓽生輝
   - label: B
-    content: 聽說「拙作」最近參加國際比賽榮獲優等獎，身為同學的我與有榮
+    content: 聽說「拙作」最近參加國際比賽榮獲優等獎，身為同學的我與有榮焉
   - label: C
     content: 歡迎各校校長、主任，惠臨「敝校」校慶
   - label: D
@@ -701,6 +701,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 身為同學的我與有榮
+    to: 身為同學的我與有榮焉
+    note: 成語漏印「焉」字
+    by: ai_review
 - id: doc_113_高雄_陽明_國文_g8s2e2_s2_14
   section: 2
   number: 14
@@ -1409,7 +1414,7 @@ questions:
   number: 33
   type: single
   page: 6
-  stem: 《戰國策》所言「詩云：『行百里者半於九十』……」『』這句話呼應下列哪一種運動家的風度？
+  stem: 《戰國策》所言「詩云：『行百里者半於九十』……」,這句話呼應下列哪一種運動家的風度？（原卷有誤，已修正）
   options:
   - label: A
     content: 光明正大的君子之爭
@@ -1457,6 +1462,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 『行百里者半於九十』……」『』這句話呼應
+    to: 『行百里者半於九十』……」，這句話呼應
+    note: 多印了空引號「『』」
+    by: ai_review
 - id: doc_113_高雄_陽明_國文_g8s2e2_s3_34
   section: 3
   number: 34

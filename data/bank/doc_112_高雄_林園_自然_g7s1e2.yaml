@@ -518,8 +518,8 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: 承上題，新聞報導有一種極端不健康的減重方式是切除一部分的「某器官」以減少絨毛的面積，避免吸收過多經攝食、消化所獲得的養分。清問此減重方式切除的「某器官」，應該是圖4
-    中的
+  stem: 承上題，新聞報導有一種極端不健康的減重方式是切除一部分的「某器官」以減少絨毛的面積，避免吸收過多經攝食、消化所獲得的養分。請問此減重方式切除的「某器官」，應該是圖4
+    中的（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -551,6 +551,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 清問此減重方式切除的「某器官」
+    to: 請問此減重方式切除的「某器官」
+    note: 錯字，清應為請
+    by: ai_review
 - id: doc_112_高雄_林園_自然_g7s1e2_s1_15
   section: 1
   number: 15

@@ -1164,7 +1164,7 @@ questions:
   number: 32
   type: single
   page: 2
-  stem: 阿毛在森林檢到一個球狀構造，由許多鱗片構成，如右圖。請問此球狀構造，最有可能是由下列何種植物所產生的？
+  stem: 阿毛在森林撿到一個球狀構造，由許多鱗片構成，如右圖。請問此球狀構造，最有可能是由下列何種植物所產生的？（原卷有誤，已修正）
   options:
   - label: A
     content: 松樹
@@ -1207,6 +1207,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 阿毛在森林檢到一個球狀構造，由許多鱗片構成
+    to: 阿毛在森林撿到一個球狀構造，由許多鱗片構成
+    note: 「檢」應為「撿」
+    by: ai_review
 - id: doc_112_高雄_林園_自然_g7s2e2_s1_33
   section: 1
   number: 33

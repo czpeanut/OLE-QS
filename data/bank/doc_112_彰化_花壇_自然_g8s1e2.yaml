@@ -814,7 +814,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 涂哥和女友同遊醉月湖，突然一陣風吹來，將女友的帽子吹到湖中間，於是涂哥想到妙招，他不斷在岸邊製造水波，讓女友的帽子慢慢漂回岸邊，試問正德這招管用嗎？
+  stem: 涂哥和女友同遊醉月湖，突然一陣風吹來，將女友的帽子吹到湖中間，於是涂哥想到妙招，他不斷在岸邊製造水波，讓女友的帽子慢慢漂回岸邊，試問涂哥這招管用嗎？（原卷有誤，已修正）
   options:
   - label: A
     content: 管用，因為水波會將帽子推到岸邊
@@ -841,6 +841,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 試問正德這招管用嗎？
+    to: 試問涂哥這招管用嗎？
+    note: 人名誤植，前文為涂哥
+    by: ai_review
 - id: doc_112_彰化_花壇_自然_g8s1e2_s1_21
   section: 1
   number: 21
@@ -1121,10 +1126,10 @@ questions:
   number: 28
   type: single
   page: 3
-  stem: 如附圖所示，馬力歐由路燈下向右跑步回家，則關於馬力歐在甲、乙、丙三個位置所形成的影子長度大小關係為：
+  stem: 如附圖所示，馬力歐由路燈下向右跑步回家，則關於馬力歐在甲、乙、丙三個位置所形成的影子長度大小關係為：（原卷有誤，已修正）
   options:
   - label: A
-    content: 甲＝乙＝丙＝丙
+    content: 甲＝乙＝丙
   - label: B
     content: 甲＞乙＞丙
   - label: C
@@ -1165,6 +1170,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 甲＝乙＝丙＝丙
+    to: (A) 甲＝乙＝丙
+    note: 多印了「＝丙」
+    by: ai_review
 - id: doc_112_彰化_花壇_自然_g8s1e2_s1_29
   section: 1
   number: 29

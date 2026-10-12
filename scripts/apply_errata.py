@@ -32,6 +32,10 @@ BANK = REPO / "data" / "bank"
 DB = REPO / "data" / "oleqs.db"
 LOG = REPO / "out" / "ai_review" / "errata_applied.json"
 MARK = "（原卷有誤，已修正）"
+# 考字形、字音、字義、成語的題目，選項裡的錯字常是故意的：不自動改，只在審題台提示
+CHAR_TEST = re.compile(r"錯別字|錯字|別字|用字|字形|字音|讀音|注音|字義|改正|訂正|正確的字|寫成國字|成語")
+# 英語的錯誤選項常是故意的文法誘答；改錯、造句、改寫題的題幹也可能故意寫錯
+EN_TEST = re.compile(r"改錯|錯誤|訂正|改寫|造句|造原|句型|文法|correct|wrong|mistake|error", re.I)
 SKIP = set(" \t\r\n　$_＿")
 
 
@@ -108,7 +112,7 @@ def main() -> int:
                 continue
             todo.setdefault(r["doc"], []).append((f, it))
 
-    changes, failed = [], []
+    changes, failed, char_test = [], [], []
     for doc, items in todo.items():
         yp = BANK / f"{doc}.yaml"
         d = yaml.safe_load(yp.read_text(encoding="utf-8"))
@@ -118,6 +122,11 @@ def main() -> int:
             qid = c2q.get(it["code"].strip().strip("[]"))
             q = by_id.get(qid)
             if q is None or (qid, it["got"]) in seen:
+                continue
+            english = d["document"].get("subject") == "英語"
+            text = (q.get("stem") or "") + (q.get("group_stem") or "")
+            if CHAR_TEST.search(text) or (english and EN_TEST.search(text)):
+                char_test.append((qid, it["got"], it["fix"]))
                 continue
             before = {k: get(q, k, i) for k, i in fields(q) if k != "option"}
             before["options"] = [o.get("content") for o in q.get("options") or []]
@@ -140,6 +149,9 @@ def main() -> int:
                     ok = False
                     break
                 k, i, v = hit
+                if english and k == "option":
+                    ok = False
+                    break
                 if k == "group_stem":                 # 題組說明是同組各題共用的，一起改
                     old_gs = q.get("group_stem")
                     for other in by_id.values():
@@ -171,7 +183,7 @@ def main() -> int:
                         x["applied"] = True
                 f.write_text(json.dumps(r, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    print(f"可修正 {len(changes)} 題；定位不到 {len(failed)} 筆")
+    print(f"可修正 {len(changes)} 題；定位不到 {len(failed)} 筆；考字形字音的題目不自動改 {len(char_test)} 筆")
     for x in failed[:20]:
         print("  定位不到：", x)
     if not args.apply or not changes:

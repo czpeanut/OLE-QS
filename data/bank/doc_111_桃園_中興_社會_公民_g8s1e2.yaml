@@ -525,7 +525,7 @@ questions:
   number: 14
   type: single
   page: 4
-  stem: '大學畢業的小樂看到公務員考試待遇資訊(如下表)，並投入準備考試，希望能成為國家公務人人員，請問進入政府機關服務擔任公務人員，從憲法上是屬於何種基本人權?
+  stem: '大學畢業的小樂看到公務員考試待遇資訊(如下表)，並投入準備考試，希望能成為國家公務人員，請問進入政府機關服務擔任公務人員，從憲法上是屬於何種基本人權?
 
 
     | 類別/等 |  | 薪資給與 |
@@ -536,7 +536,7 @@ questions:
 
     |  | 普考 | 約 38,890 元 |
 
-    |  | 初等 | 約 31,450 元 |'
+    |  | 初等 | 約 31,450 元 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 平等權
@@ -564,6 +564,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 希望能成為國家公務人人員
+    to: 希望能成為國家公務人員
+    note: 多印一個「人」字
+    by: ai_review
 - id: doc_111_桃園_中興_社會_公民_g8s1e2_s1_15
   section: 1
   number: 15
@@ -601,7 +606,7 @@ questions:
   number: 16
   type: single
   page: 4
-  stem: 為避免政府獨斷，各機關權力的行使會受到其他機構的約束。圖(一)、(二)中的對話是針對是哪一種制衡設計的說明？
+  stem: 為避免政府獨斷，各機關權力的行使會受到其他機構的約束。圖(一)、(二)中的對話是針對哪一種制衡設計的說明？（原卷有誤，已修正）
   options:
   - label: A
     content: 彈劾案
@@ -645,6 +650,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 中的對話是針對是哪一種制衡設計的說明
+    to: 中的對話是針對哪一種制衡設計的說明
+    note: 多印一個「是」字
+    by: ai_review
 - id: doc_111_桃園_中興_社會_公民_g8s1e2_s1_17
   section: 1
   number: 17

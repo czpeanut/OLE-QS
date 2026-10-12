@@ -566,14 +566,14 @@ questions:
   type: single
   page: 2
   stem: 某出版社出版了一本名之為:「1949 年大江大海」的書籍，標示出1949 年是中國歷史上頗為重要、頗為關鍵的一年，這一年所發生的大事，改變了中國和台灣的命運。請問:下列所敘述的史事的發生何者和1949
-    年「無關」？
+    年「無關」？（原卷有誤，已修正）
   options:
   - label: A
     content: 中共的長征(紅軍長征)
   - label: B
     content: 國共內戰的最後一年(國共決勝的關鍵一年)
   - label: C
-    content: 中國的經濟物價飛漲(通貨膨脹)非常嚴重)
+    content: 中國的經濟物價飛漲(通貨膨脹)非常嚴重
   - label: D
     content: 中華民國政府(蔣中正政權)撤退、遷移到台灣
   tags:
@@ -593,6 +593,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (通貨膨脹)非常嚴重)
+    to: (通貨膨脹)非常嚴重
+    note: 多了一個右括號
+    by: ai_review
 - id: doc_113_高雄_中山_社會_g8s2e2_s2_18
   section: 2
   number: 18

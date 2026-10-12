@@ -280,12 +280,12 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 下列各種地表的地質作用，何者敘述有誤？
+  stem: 下列各種地表的地質作用，何者敘述有誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 因為熱脹冷縮而使岩石外層破裂，是風化作用的一種
   - label: B
-    content: 沿海的礁石受到海浪不斷拍打侵形成海蝕洞
+    content: 沿海的礁石受到海浪不斷拍打侵蝕形成海蝕洞
   - label: C
     content: 當風力減弱時，風所攜帶的沙粒便會沉積形成沙丘
   - label: D
@@ -307,6 +307,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 沿海的礁石受到海浪不斷拍打侵形成海蝕洞
+    to: 沿海的礁石受到海浪不斷拍打侵蝕形成海蝕洞
+    note: 漏「蝕」字
+    by: ai_review
 - id: doc_113_新北_永和_自然_g9s1e1_s1_9
   section: 1
   number: 9
@@ -1741,7 +1746,7 @@ questions:
   number: 40
   type: single
   page: 4
-  stem: 一把傘掛在公車內（車內無風，傘可自由擺動），傘擺動情形如圖13 所示，則哪一個圖形可以代表公車正向南方加速前進？
+  stem: 一把傘掛在公車內（車內無風，傘可自由擺動），傘擺動情形如圖13 所示，則哪一個圖形可以代表公車正向南方加速前進？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -1750,7 +1755,7 @@ questions:
   - label: C
     content: 丙
   - label: D
-    content: )無法判斷。
+    content: 無法判斷。
   assets:
   - key: s1_40_f1
     kind: figure
@@ -1785,6 +1790,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) )無法判斷
+    to: (D) 無法判斷
+    note: 多了一個右括號
+    by: ai_review
 - id: doc_113_新北_永和_自然_g9s1e1_s2_41
   section: 2
   number: 41

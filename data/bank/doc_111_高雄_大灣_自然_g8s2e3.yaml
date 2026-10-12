@@ -1477,7 +1477,7 @@ questions:
   number: 36
   type: single
   page: 4
-  stem: 桌面所受的壓力大小關係為？
+  stem: 桌面所受的壓力大小關係為？（原卷有誤，已修正）
   options:
   - label: A
     content: B＞A＞C
@@ -1486,7 +1486,7 @@ questions:
   - label: C
     content: A＞B＝C
   - label: D
-    content: ) A＝B＝C  。
+    content: ' A＝B＝C  。'
   group_stem: '如右圖，若A、B、C 三容器的質量及底面積均相等，且內盛等高的同種液體，試回答下列問題 :'
   shared_asset: g2_35_36
   tags:
@@ -1506,6 +1506,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) ) A＝B＝C
+    to: (D) A＝B＝C
+    note: 選項標號多印一個右括號
+    by: ai_review
 - id: doc_111_高雄_大灣_自然_g8s2e3_s2_37
   section: 2
   number: 37

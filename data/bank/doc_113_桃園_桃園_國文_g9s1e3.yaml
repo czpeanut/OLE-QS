@@ -313,12 +313,12 @@ questions:
   number: 9
   type: single
   page: 2
-  stem: 下列各選項「 」中的前後詞語，何組意思相同？
+  stem: 下列各選項「 」中的前後詞語，何組意思相同？（原卷有誤，已修正）
   options:
   - label: A
     content: 他「開發」了車資酒錢，在他即將「開發」的新彎區前，幻想賺取龐大利益後的快樂
   - label: B
-    content: 颱風肆虐，災民們面對淹水殘破的家園，「手足」無措，萬望個各界發揮「手足」同胞精神，施以援助
+    content: 颱風肆虐，災民們面對淹水殘破的家園，「手足」無措，萬望各界發揮「手足」同胞精神，施以援助
   - label: C
     content: 金庸筆下的東方不敗「雌雄」莫辨，和眾多高手齊聚華山一決「雌雄」，欲爭取武林盟主寶座
   - label: D
@@ -340,6 +340,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 萬望個各界發揮「手足」同胞精神
+    to: 萬望各界發揮「手足」同胞精神
+    note: 多印贅字「個」
+    by: ai_review
 - id: doc_113_桃園_桃園_國文_g9s1e3_s1_10
   section: 1
   number: 10

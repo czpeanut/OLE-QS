@@ -685,7 +685,7 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: 俊豪是歷史系的學生，他對於工業革命這個主題非常有興趣，於是計畫在暑假前往工業革命發源地蒐集資料。請問：宇浩應前往附圖（一）中的哪個地區？
+  stem: 俊豪是歷史系的學生，他對於工業革命這個主題非常有興趣，於是計畫在暑假前往工業革命發源地蒐集資料。請問：俊豪應前往附圖（一）中的哪個地區？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -729,6 +729,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問：宇浩應前往附圖（一）中的哪個地區？
+    to: 請問：俊豪應前往附圖（一）中的哪個地區？
+    note: 人名前後不一致，宇浩應為俊豪
+    by: ai_review
 - id: doc_111_嘉義_北興_社會_歷史_g9s2e1_s1_22
   section: 1
   number: 22

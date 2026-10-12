@@ -567,7 +567,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 如右圖，將一張黏在細棍上的三角形紙板，減掉上半部分後，再旋轉一周會得到一個立體圖形，求此立體圖形的表面積為多少平方公分?
+  stem: 如右圖，將一張黏在細棍上的三角形紙板，剪掉上半部分後，再旋轉一周會得到一個立體圖形，求此立體圖形的表面積為多少平方公分?（原卷有誤，已修正）
   options:
   - label: A
     content: 300$\pi$
@@ -611,6 +611,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 三角形紙板，減掉上半部分後，再旋轉一周
+    to: 三角形紙板，剪掉上半部分後，再旋轉一周
+    note: 紙板應為「剪掉」
+    by: ai_review
 - id: doc_113_新北_中平_數學_g9s2e2_s3_1
   section: 3
   number: 1

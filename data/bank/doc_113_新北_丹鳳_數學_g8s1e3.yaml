@@ -461,7 +461,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 解一元二次方程式，下列哪一個方程式有兩個異的根？ <課本178 頁、174 頁>
+  stem: 解一元二次方程式，下列哪一個方程式有兩個相異的根？ <課本178 頁、174 頁>（原卷有誤，已修正）
   options:
   - label: A
     content: $9x^{2}+4=12x$
@@ -488,6 +488,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列哪一個方程式有兩個異的根？
+    to: 下列哪一個方程式有兩個相異的根？
+    note: 漏「相」字
+    by: ai_review
 - id: doc_113_新北_丹鳳_數學_g8s1e3_s1_13
   section: 1
   number: 13

@@ -433,8 +433,8 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 25. Mr. Wangs has three daughters.           of them are teachers. They teach
-    very well.
+  stem: 25. Mr. Wang has three daughters.           of them are teachers. They teach
+    very well.（原卷有誤，已修正）
   options:
   - label: A
     content: All
@@ -461,6 +461,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Mr. Wangs has three daughters.
+    to: Mr. Wang has three daughters.
+    note: 姓氏單數應為Wang
+    by: ai_review
 - id: doc_113_桃園_桃園_英語_g8s2e3_s2_26
   section: 2
   number: 26
@@ -1364,7 +1369,7 @@ questions:
   number: 48
   type: single
   page: 6
-  stem: 48. What didn’t the Braveheart eat?
+  stem: 48. What didn’t  Braveheart eat?（原卷有誤，已修正）
   options:
   - label: A
     content: A plastic straw.
@@ -1404,6 +1409,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: What didn’t the Braveheart eat?
+    to: What didn’t Braveheart eat?
+    note: 專有名詞名字前不應加the
+    by: ai_review
 - id: doc_113_桃園_桃園_英語_g8s2e3_s2_49
   section: 2
   number: 49
@@ -1499,7 +1509,7 @@ questions:
   number: 51
   type: single
   page: 6
-  stem: （克漏字第51格）
+  stem: （克漏字第51格）（原卷有誤，已修正）
   options:
   - label: A
     content: high
@@ -1511,16 +1521,16 @@ questions:
     content: slow
   group_stem: "One spring evening, Noah's family heard tornado sirens when they were\
     \ watching TV. Then, they watched the news. A \nbig tornado was coming closer\
-    \ to their city, Moore Oklahoma. \nHis ran to their neighbor’s basement as   51\
-    \  as they could to   52   from the strong tornado. When the wind \nhowled, Noah\
-    \ heard a loud noise. His neighbor’s roof fell off and hit a car. He saw trees\
-    \ fly in the air like paper. He never \nwanted to see anything like that   53\
-    \   again. \nWhen it was over, their house was damaged, but they were safe. Others\
-    \ weren’t so lucky. One school nearby had no \nshelter, and some kids got hurt.\
-    \ It was the kind of thing you least hope to happen. \nNow, Noah always says:\
-    \ “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes may be\
-    \ scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲 basement\
-    \ 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
+    \ to their city, Moore Oklahoma. \nThey ran to their neighbor’s basement as  \
+    \ 51  as they could to   52   from the strong tornado. When the wind \nhowled,\
+    \ Noah heard a loud noise. His neighbor’s roof fell off and hit a car. He saw\
+    \ trees fly in the air like paper. He never \nwanted to see anything like that\
+    \   53   again. \nWhen it was over, their house was damaged, but they were safe.\
+    \ Others weren’t so lucky. One school nearby had no \nshelter, and some kids got\
+    \ hurt. It was the kind of thing you least hope to happen. \nNow, Noah always\
+    \ says: “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes\
+    \ may be scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲\
+    \ basement 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
   tags:
     textbook: 八下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
@@ -1538,6 +1548,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: His ran to their neighbor’s basement as
+    to: They ran to their neighbor’s basement as
+    note: 主詞His代名詞有誤，應為They
+    by: ai_review
 - id: doc_113_桃園_桃園_英語_g8s2e3_s2_52
   section: 2
   number: 52
@@ -1555,16 +1570,16 @@ questions:
     content: carry
   group_stem: "One spring evening, Noah's family heard tornado sirens when they were\
     \ watching TV. Then, they watched the news. A \nbig tornado was coming closer\
-    \ to their city, Moore Oklahoma. \nHis ran to their neighbor’s basement as   51\
-    \  as they could to   52   from the strong tornado. When the wind \nhowled, Noah\
-    \ heard a loud noise. His neighbor’s roof fell off and hit a car. He saw trees\
-    \ fly in the air like paper. He never \nwanted to see anything like that   53\
-    \   again. \nWhen it was over, their house was damaged, but they were safe. Others\
-    \ weren’t so lucky. One school nearby had no \nshelter, and some kids got hurt.\
-    \ It was the kind of thing you least hope to happen. \nNow, Noah always says:\
-    \ “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes may be\
-    \ scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲 basement\
-    \ 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
+    \ to their city, Moore Oklahoma. \nThey ran to their neighbor’s basement as  \
+    \ 51  as they could to   52   from the strong tornado. When the wind \nhowled,\
+    \ Noah heard a loud noise. His neighbor’s roof fell off and hit a car. He saw\
+    \ trees fly in the air like paper. He never \nwanted to see anything like that\
+    \   53   again. \nWhen it was over, their house was damaged, but they were safe.\
+    \ Others weren’t so lucky. One school nearby had no \nshelter, and some kids got\
+    \ hurt. It was the kind of thing you least hope to happen. \nNow, Noah always\
+    \ says: “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes\
+    \ may be scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲\
+    \ basement 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
   tags:
     textbook: 八下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
@@ -1599,16 +1614,16 @@ questions:
     content: ever
   group_stem: "One spring evening, Noah's family heard tornado sirens when they were\
     \ watching TV. Then, they watched the news. A \nbig tornado was coming closer\
-    \ to their city, Moore Oklahoma. \nHis ran to their neighbor’s basement as   51\
-    \  as they could to   52   from the strong tornado. When the wind \nhowled, Noah\
-    \ heard a loud noise. His neighbor’s roof fell off and hit a car. He saw trees\
-    \ fly in the air like paper. He never \nwanted to see anything like that   53\
-    \   again. \nWhen it was over, their house was damaged, but they were safe. Others\
-    \ weren’t so lucky. One school nearby had no \nshelter, and some kids got hurt.\
-    \ It was the kind of thing you least hope to happen. \nNow, Noah always says:\
-    \ “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes may be\
-    \ scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲 basement\
-    \ 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
+    \ to their city, Moore Oklahoma. \nThey ran to their neighbor’s basement as  \
+    \ 51  as they could to   52   from the strong tornado. When the wind \nhowled,\
+    \ Noah heard a loud noise. His neighbor’s roof fell off and hit a car. He saw\
+    \ trees fly in the air like paper. He never \nwanted to see anything like that\
+    \   53   again. \nWhen it was over, their house was damaged, but they were safe.\
+    \ Others weren’t so lucky. One school nearby had no \nshelter, and some kids got\
+    \ hurt. It was the kind of thing you least hope to happen. \nNow, Noah always\
+    \ says: “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes\
+    \ may be scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲\
+    \ basement 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
   tags:
     textbook: 八下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
@@ -1643,16 +1658,16 @@ questions:
     content: When
   group_stem: "One spring evening, Noah's family heard tornado sirens when they were\
     \ watching TV. Then, they watched the news. A \nbig tornado was coming closer\
-    \ to their city, Moore Oklahoma. \nHis ran to their neighbor’s basement as   51\
-    \  as they could to   52   from the strong tornado. When the wind \nhowled, Noah\
-    \ heard a loud noise. His neighbor’s roof fell off and hit a car. He saw trees\
-    \ fly in the air like paper. He never \nwanted to see anything like that   53\
-    \   again. \nWhen it was over, their house was damaged, but they were safe. Others\
-    \ weren’t so lucky. One school nearby had no \nshelter, and some kids got hurt.\
-    \ It was the kind of thing you least hope to happen. \nNow, Noah always says:\
-    \ “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes may be\
-    \ scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲 basement\
-    \ 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
+    \ to their city, Moore Oklahoma. \nThey ran to their neighbor’s basement as  \
+    \ 51  as they could to   52   from the strong tornado. When the wind \nhowled,\
+    \ Noah heard a loud noise. His neighbor’s roof fell off and hit a car. He saw\
+    \ trees fly in the air like paper. He never \nwanted to see anything like that\
+    \   53   again. \nWhen it was over, their house was damaged, but they were safe.\
+    \ Others weren’t so lucky. One school nearby had no \nshelter, and some kids got\
+    \ hurt. It was the kind of thing you least hope to happen. \nNow, Noah always\
+    \ says: “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes\
+    \ may be scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲\
+    \ basement 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
   tags:
     textbook: 八下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
@@ -1687,16 +1702,16 @@ questions:
     content: sincerely
   group_stem: "One spring evening, Noah's family heard tornado sirens when they were\
     \ watching TV. Then, they watched the news. A \nbig tornado was coming closer\
-    \ to their city, Moore Oklahoma. \nHis ran to their neighbor’s basement as   51\
-    \  as they could to   52   from the strong tornado. When the wind \nhowled, Noah\
-    \ heard a loud noise. His neighbor’s roof fell off and hit a car. He saw trees\
-    \ fly in the air like paper. He never \nwanted to see anything like that   53\
-    \   again. \nWhen it was over, their house was damaged, but they were safe. Others\
-    \ weren’t so lucky. One school nearby had no \nshelter, and some kids got hurt.\
-    \ It was the kind of thing you least hope to happen. \nNow, Noah always says:\
-    \ “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes may be\
-    \ scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲 basement\
-    \ 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
+    \ to their city, Moore Oklahoma. \nThey ran to their neighbor’s basement as  \
+    \ 51  as they could to   52   from the strong tornado. When the wind \nhowled,\
+    \ Noah heard a loud noise. His neighbor’s roof fell off and hit a car. He saw\
+    \ trees fly in the air like paper. He never \nwanted to see anything like that\
+    \   53   again. \nWhen it was over, their house was damaged, but they were safe.\
+    \ Others weren’t so lucky. One school nearby had no \nshelter, and some kids got\
+    \ hurt. It was the kind of thing you least hope to happen. \nNow, Noah always\
+    \ says: “Be careful. Get ready. Listen to warnings carefully.   54   tornadoes\
+    \ may be scary, being ready \ncan save lives—  55   even yours.” \n sirens 警報聲\
+    \ basement 地下室 howled 怒吼 \ndamaged 損壞 shelter 避難所，躲避處 warnings 警報"
   tags:
     textbook: 八下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai

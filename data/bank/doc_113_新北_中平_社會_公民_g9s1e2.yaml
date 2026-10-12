@@ -396,7 +396,7 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: '表(二)是小茵與小羽一小時內，製作青蛙與星星的產量，請依據經濟學的概念來看，請問：下列者是錯誤的？
+  stem: '表(二)是小茵與小羽一小時內，製作青蛙與星星的產量，請依據經濟學的概念來看，請問：下列何者是錯誤的？
 
 
     表(二)
@@ -407,7 +407,7 @@ questions:
 
     | 折紙青蛙 | 3 隻/時 | 5 隻/時 |
 
-    | 折紙星星 | 30 個/時 | 40 個/時 |'
+    | 折紙星星 | 30 個/時 | 40 個/時 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 小羽在折紙青蛙和紙星星的產量上都具有絕對的優勢
@@ -434,6 +434,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請依據經濟學的概念來看，請問：下列者是錯誤的？
+    to: 請依據經濟學的概念來看，請問：下列何者是錯誤的？
+    note: 漏「何」字
+    by: ai_review
 - id: doc_113_新北_中平_社會_公民_g9s1e2_s1_12
   section: 1
   number: 12

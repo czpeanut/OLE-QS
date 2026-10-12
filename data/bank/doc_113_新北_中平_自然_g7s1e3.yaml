@@ -171,12 +171,12 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 有關人類神經系統的敘述何者正確？
+  stem: 有關人類神經系統的敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 視覺、聽覺、嗅覺、味覺的產生與甲有關；手燙到立刻縮回的反應則與丁有關
   - label: B
-    content: 甲、乙、丙屬於中樞神經，丁則屬於周圍神經，與丁相連的的神經共有31 對
+    content: 甲、乙、丙屬於中樞神經，丁則屬於周圍神經，與丁相連的神經共有31 對
   - label: C
     content: 腦死的患者是甲嚴重受損而失去意識，但丙仍然可以維持呼吸和心跳
   - label: D
@@ -202,6 +202,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 與丁相連的的神經共有31 對
+    to: 與丁相連的神經共有31 對
+    note: 多印一個「的」字
+    by: ai_review
 - id: doc_113_新北_中平_自然_g7s1e3_s1_6
   section: 1
   number: 6
@@ -311,14 +316,14 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 附圖為小明左手指尖受到突來的刺激後，所引起的左手手臂肌肉收縮的過程及涉及的神經傳導部位。下列敘述何者正確？
+  stem: 附圖為小明左手指尖受到突來的刺激後，所引起的左手手臂肌肉收縮的過程及涉及的神經傳導部位。下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 此動作經過反覆練習，可縮短反應時間
   - label: B
     content: 甲、乙都屬於脊神經，都是周圍神經
   - label: C
-    content: 神經傳導方是：乙→脊髓→甲
+    content: 神經傳導方式：乙→脊髓→甲
   - label: D
     content: 脊髓可控制身體的所有反射，不涉及大腦判斷。
   assets:
@@ -356,6 +361,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 神經傳導方是：乙→脊髓→甲
+    to: 神經傳導方式：乙→脊髓→甲
+    note: 「方是」應為「方式」
+    by: ai_review
 - id: doc_113_新北_中平_自然_g7s1e3_s1_10
   section: 1
   number: 10
@@ -736,7 +746,7 @@ questions:
   type: single
   page: 2
   stem: '科學家想要研究激素對血液中物質濃度的影響，在大白鼠身上分次注射激素 X 和Y (其作用與人類相似)，並記錄注射前後血液中鈣和葡萄糖的濃度變化。每次注射都有足夠的時間間隔，使激素不會彼此干擾。下表為此實驗的平均結果，請根據附表推測激素X
-    和激素和激素Y，分別相當於人體哪兩處腺體所分泌的激素？
+    和激素Y，分別相當於人體哪兩處腺體所分泌的激素？
 
     （mmol /L：毫莫耳∕公升）
 
@@ -747,7 +757,7 @@ questions:
 
     | 鈣 | 2.6 | 3.3 | 2.6 |
 
-    | 葡萄糖 | 5.4 | 5.4 | 6.7 |'
+    | 葡萄糖 | 5.4 | 5.4 | 6.7 |（原卷有誤，已修正）'
   options:
   - label: A
     content: a 和b
@@ -778,12 +788,17 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 推測激素X 和激素和激素Y，分別相當於
+    to: 推測激素X 和激素Y，分別相當於
+    note: 多印「和激素」
+    by: ai_review
 - id: doc_113_新北_中平_自然_g7s1e3_s1_21
   section: 1
   number: 21
   type: single
   page: 2
-  stem: 下列四種植物對環境刺激所產生的的感應，何者發生的原理與"含羞草的觸發運動"最不相同？
+  stem: 下列四種植物對環境刺激所產生的感應，何者發生的原理與"含羞草的觸發運動"最不相同？（原卷有誤，已修正）
   options:
   - label: A
     content: 鴨跖草葉片的氣孔在白天會打開
@@ -810,6 +825,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 對環境刺激所產生的的感應，何者
+    to: 對環境刺激所產生的感應，何者
+    note: 多印一個「的」字
+    by: ai_review
 - id: doc_113_新北_中平_自然_g7s1e3_s1_22
   section: 1
   number: 22
@@ -1136,7 +1156,7 @@ questions:
   number: 29
   type: single
   page: 3
-  stem: 附圖為甲、乙兩種動物在不同的氣溫環境下，體溫變化的情形，下列敘述何者正確？
+  stem: 附圖為甲、乙兩種動物在不同的氣溫環境下，體溫變化的情形，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲為外溫動物，乙為內溫動物
@@ -1145,7 +1165,7 @@ questions:
   - label: C
     content: 由圖片判斷，乙動物比甲動物更能適應低溫寒冷的極地環境
   - label: D
-    content: 甲通常具有保溫或或散熱構造來調節體溫，乙在溫差大時會改變棲息環境。
+    content: 甲通常具有保溫或散熱構造來調節體溫，乙在溫差大時會改變棲息環境。
   assets:
   - key: s1_29_f1
     kind: figure
@@ -1180,6 +1200,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 甲通常具有保溫或或散熱構造來調節體溫
+    to: 甲通常具有保溫或散熱構造來調節體溫
+    note: 多印一個「或」字
+    by: ai_review
 - id: doc_113_新北_中平_自然_g7s1e3_s1_30
   section: 1
   number: 30
@@ -1592,7 +1617,7 @@ questions:
   number: 40
   type: single
   page: 4
-  stem: 將兩試管放入等量的澄清石灰水，分別檢測植物排出的氣體(萌芽綠豆在瓶中已靜置2 小時)和人體呼出的氣體成分，如附圖所示。關於這兩駔實驗的敘述，何者正確？
+  stem: 將兩試管放入等量的澄清石灰水，分別檢測植物排出的氣體(萌芽綠豆在瓶中已靜置2 小時)和人體呼出的氣體成分，如附圖所示。關於這兩組實驗的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 萌芽綠豆排出的氣體不會使石灰水變色，人體吹出的氣體可使石灰水變色
@@ -1637,6 +1662,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 關於這兩駔實驗的敘述，何者正確？
+    to: 關於這兩組實驗的敘述，何者正確？
+    note: 「駔」應為「組」
+    by: ai_review
 shared_assets:
 - key: g1_5_7
   label: 題組附圖

@@ -1558,7 +1558,7 @@ questions:
   number: 43
   type: single
   page: 5
-  stem: 趴哥為了地理課堂報告，他蒐集中南美洲國家的資料，右圖為趴哥整理出的部分標題。請問：根據途中的內容判斷，他應該是以哪個國家為報告主題？
+  stem: 趴哥為了地理課堂報告，他蒐集中南美洲國家的資料，右圖為趴哥整理出的部分標題。請問：根據圖中的內容判斷，他應該是以哪個國家為報告主題？（原卷有誤，已修正）
   options:
   - label: A
     content: 巴西
@@ -1602,6 +1602,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問：根據途中的內容判斷，他應該是以哪個國家為報告主題？
+    to: 請問：根據圖中的內容判斷，他應該是以哪個國家為報告主題？
+    note: 「途中」錯字，應為「圖中」
+    by: ai_review
 - id: doc_113_高雄_光華_社會_g9s1e3_s1_44
   section: 1
   number: 44

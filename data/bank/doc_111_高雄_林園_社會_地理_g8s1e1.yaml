@@ -359,7 +359,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 承妍到上海人民公園休閒散步，看到某位父親張貼海報為兒子徵婚，如地理圖二。請問：此與現象中國哪一種人口問題相關？
+  stem: 承妍到上海人民公園休閒散步，看到某位父親張貼海報為兒子徵婚，如地理圖二。請問：此現象與中國哪一種人口問題相關？（原卷有誤，已修正）
   options:
   - label: A
     content: 人口數太多
@@ -402,6 +402,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 請問：此與現象中國哪一種人口問題相關？
+    to: 請問：此現象與中國哪一種人口問題相關？
+    note: 詞序顛倒，應為「此現象與」
+    by: ai_review
 - id: doc_111_高雄_林園_社會_地理_g8s1e1_s1_8
   section: 1
   number: 8

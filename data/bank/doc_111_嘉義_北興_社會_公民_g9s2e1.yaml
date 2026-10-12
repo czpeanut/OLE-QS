@@ -1725,7 +1725,7 @@ questions:
   number: 48
   type: single
   page: 6
-  stem: 開放美豬、牛進口的政策，為我國帶哪些負面影響？(甲)本土豬農受衝擊影響銷售 (乙)進口豬肉較便宜 (丙)本土豬肉價格便宜 (丁)擔心食安問題
+  stem: 開放美豬、牛進口的政策，為我國帶來哪些負面影響？(甲)本土豬農受衝擊影響銷售 (乙)進口豬肉較便宜 (丙)本土豬肉價格便宜 (丁)擔心食安問題（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙丙
@@ -1754,6 +1754,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 為我國帶哪些負面影響
+    to: 為我國帶來哪些負面影響
+    note: 漏「來」字
+    by: ai_review
 - id: doc_111_嘉義_北興_社會_公民_g9s2e1_s2_49
   section: 2
   number: 49

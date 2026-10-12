@@ -416,10 +416,10 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 右圖為海參在進行斷裂生殖的示意圖，則下列四種生殖方式何者與海參的斷裂生殖會有不同的結果？
+  stem: 右圖為海參在進行斷裂生殖的示意圖，則下列四種生殖方式何者與海參的斷裂生殖會有不同的結果？（原卷有誤，已修正）
   options:
   - label: A
-    content: 草履屬蟲分裂後，長成兩隻
+    content: 草履蟲分裂後，長成兩隻
   - label: B
     content: 用種子繁殖草莓
   - label: C
@@ -460,6 +460,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 草履屬蟲分裂後，長成兩隻
+    to: 草履蟲分裂後，長成兩隻
+    note: 多印「屬」字，應為草履蟲
+    by: ai_review
 - id: doc_111_桃園_中興_自然_g7s2e1_s1_10
   section: 1
   number: 10
@@ -699,7 +704,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 下列何者的受精作用不需以水為媒介？
+  stem: 下列何者的受精作用需以水為媒介？（原卷有誤，已修正）
   options:
   - label: A
     content: 梅花鹿
@@ -727,6 +732,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 下列何者的受精作用不需以水為媒介？
+    to: 下列何者的受精作用需以水為媒介？
+    note: 答案為D樹蛙，題幹誤印「不需」
+    by: ai_review
 - id: doc_111_桃園_中興_自然_g7s2e1_s1_17
   section: 1
   number: 17

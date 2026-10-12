@@ -486,7 +486,7 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: 113.7.22 關於凱米颱風的氣象新聞報導：「……根據中央氣象屬發布今日上午8 時凱米颱風的中心位置在鵝鑾鼻東南方的海面上……」。請問關於凱米颱風位置的描述缺少下列哪一項？
+  stem: 113.7.22 關於凱米颱風的氣象新聞報導：「……根據中央氣象署發布今日上午8 時凱米颱風的中心位置在鵝鑾鼻東南方的海面上……」。請問關於凱米颱風位置的描述缺少下列哪一項？（原卷有誤，已修正）
   options:
   - label: A
     content: 基準點
@@ -513,6 +513,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據中央氣象屬發布今日上午8 時
+    to: 根據中央氣象署發布今日上午8 時
+    note: 氣象署誤印為「屬」
+    by: ai_review
 - id: doc_113_高雄_七賢_自然_g9s1e1_s1_14
   section: 1
   number: 14
@@ -896,7 +901,7 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 若小邱在此區間駕車用固定時速72 公里(72km/hr)行駛2 分鐘後才發現自己嚴重超速，馬上開始以相同力道剎車，一直到區間測速得終點，若剎車過程為等加速度運動，至少要用多大的加速度減速，才能不違規？
+  stem: 若小邱在此區間駕車用固定時速72 公里(72km/hr)行駛2 分鐘後才發現自己嚴重超速，馬上開始以相同力道剎車，一直到區間測速的終點，若剎車過程為等加速度運動，至少要用多大的加速度減速，才能不違規？（原卷有誤，已修正）
   options:
   - label: A
     content: 1/12 m／s$^{2}$
@@ -927,6 +932,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一直到區間測速得終點
+    to: 一直到區間測速的終點
+    note: 錯字，「得」應為「的」
+    by: ai_review
 - id: doc_113_高雄_七賢_自然_g9s1e1_s1_25
   section: 1
   number: 25

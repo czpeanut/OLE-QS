@@ -712,7 +712,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 「有一些事，卻像夏日的小河、多天的落葉……似無所見，又非視而不見？」，下列何者屬於這類往事？
+  stem: 「有一些事，卻像夏日的小河、冬天的落葉……似無所見，又非視而不見？」，下列何者屬於這類往事？（原卷有誤，已修正）
   options:
   - label: A
     content: 不起眼卻易勾起回憶的事
@@ -742,6 +742,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 卻像夏日的小河、多天的落葉……似無所見
+    to: 卻像夏日的小河、冬天的落葉……似無所見
+    note: 課文原文應為「冬天」
+    by: ai_review
 - id: doc_113_台中_大業_國文_g7s2e1_s3_10
   section: 3
   number: 10

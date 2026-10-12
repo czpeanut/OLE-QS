@@ -264,8 +264,8 @@ questions:
   number: 6
   type: single
   page: 3
-  stem: The man and the dog _____ are sitting over there take a walk in the partk
-    every day.
+  stem: The man and the dog _____ are sitting over there take a walk in the park every
+    day.（原卷有誤，已修正）
   options:
   - label: A
     content: which
@@ -292,6 +292,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: take a walk in the partk every day.
+    to: take a walk in the park every day.
+    note: partk 應為 park
+    by: ai_review
 - id: doc_111_高雄_林園_英語_g9s1e3_s4_7
   section: 4
   number: 7

@@ -616,9 +616,9 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 'A: _____ Sam _______ to Los Angles yet?
+  stem: 'A: _____ Sam _______ to Los Angeles yet?
 
-    B: No, he is still here. He will take the plane this Friday night.'
+    B: No, he is still here. He will take the plane this Friday night.（原卷有誤，已修正）'
   options:
   - label: A
     content: Has ; been
@@ -645,6 +645,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 'A: _____ Sam _______ to Los Angles yet?'
+    to: 'A: _____ Sam _______ to Los Angeles yet?'
+    note: Los Angeles拼錯為Los Angles
+    by: ai_review
 - id: doc_111_高雄_大灣_英語_g9s1e1_s3_12
   section: 3
   number: 12

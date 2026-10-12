@@ -66,14 +66,14 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: '達爾取質量100 公克、溫度 20℃的水、銅、銀和鉛四種物質，其比熱值如下表所示。若以穩定供應的熱源分別加熱，則哪一種物質的溫度最晚到達80℃？
+  stem: '達爾取質量100 公克、溫度 20℃的銅、銀和鉛三種物質，其比熱值如下表所示。若以穩定供應的熱源分別加熱，則哪一種物質的溫度最晚到達80℃？
 
 
     | 物質 | 銅 | 銀 | 鉛 |
 
     |---|---|---|---|
 
-    | 比熱（cal/g．℃） | 0.093 | 0.056 | 0.031 |'
+    | 比熱（cal/g．℃） | 0.093 | 0.056 | 0.031 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 同時
@@ -99,6 +99,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 達爾取質量100 公克、溫度 20℃的水、銅、銀和鉛四種物質
+    to: 達爾取質量100 公克、溫度 20℃的銅、銀和鉛三種物質
+    note: 表格僅列三種物質無水，多印水字
+    by: ai_review
 - id: doc_113_台北_仁愛_自然_g8s1e3_s1_3
   section: 1
   number: 3
@@ -1024,7 +1029,7 @@ questions:
   number: 25
   type: single
   page: 3
-  stem: 圖為物質的三態變化示意圖，甲、乙和丙分別表示三種不同狀態，箭頭表示進行放熱反應的方向。甲、乙和丙三種狀態應為下列何者？
+  stem: 圖為物質的三態變化示意圖，甲、乙和丙分別表示三種不同狀態，箭頭表示進行吸熱反應的方向。甲、乙和丙三種狀態應為下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲為氣態，乙為液態，丙為固態
@@ -1069,6 +1074,11 @@ questions:
     qwen: D
   answer_status: disputed
   review_note: 答案卷 ['A']，Gemini 與 Qwen 一致判為 D
+  errata:
+  - from: 箭頭表示進行放熱反應的方向
+    to: 箭頭表示進行吸熱反應的方向
+    note: 圖示標註吸熱且答案為A，應為吸熱
+    by: ai_review
 - id: doc_113_台北_仁愛_自然_g8s1e3_s1_26
   section: 1
   number: 26

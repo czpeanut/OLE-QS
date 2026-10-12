@@ -919,7 +919,7 @@ questions:
   number: 27
   type: single
   page: 3
-  stem: 下列文句「 」中的字，何者所指的對象是蟬？
+  stem: 下列文句「 」中的字，何者所指的對象是蟬？（原卷有誤，已修正）
   options:
   - label: A
     content: 久「之」，能效人言
@@ -928,7 +928,7 @@ questions:
   - label: C
     content: 「子」能人言
   - label: D
-    content: 曷若「我」自鳴得意哉。
+    content: 曷若「我」自鳴其意哉。
   group_stem: "鴝鵒與蟬  明•莊元臣 \n鴝鵒之鳥，出於南方。南人羅②而調其舌，久之，能效③人言，但能效數聲而止，終日所唱，惟數聲也。蟬鳴於庭，鳥聞而笑之。蟬謂之曰：「子能人言，甚善。然子所言者，未嘗言也，曷若④我自鳴其意哉！」鳥俯首而慚，終身不復效人言。\
     \ \n    今文章家竊摹⑤成風，皆鴝鵒之未慚者耳。 \n（叔苴子•內篇） \n①鴝鵒：音ㄑㄩˊㄩˋ，俗稱八哥。②羅：捕捉。 \n③效：模仿。④曷若：何如。用反問的語氣表示不如。\
     \ \n⑤竊摹：剽竊、模仿。"
@@ -949,6 +949,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 曷若「我」自鳴得意哉。
+    to: (D) 曷若「我」自鳴其意哉。
+    note: 原卷引文誤植，短文原文為自鳴其意
+    by: ai_review
 - id: doc_113_新北_土城_國文_g8s1e2_s2_28
   section: 2
   number: 28

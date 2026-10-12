@@ -883,14 +883,14 @@ questions:
   number: 27
   type: single
   page: 4
-  stem: 阿永、小和、阿國、阿中四位學生原來共有77本書，若阿永的書本數量加1，小和的書本數量減2，阿國的書本數量變成原來的3倍，阿中的書本數量變成原來的$\frac{1}{4}$，則四位學生的書本數量就會相等，則下列選項何者正確？
+  stem: 阿永、小和、阿國、阿中四位學生原來共有77本書，若阿永的書本數量加1，小和的書本數量減2，阿國的書本數量變成原來的3倍，阿中的書本數量變成原來的$\frac{1}{4}$，則四位學生的書本數量就會相等，則下列選項何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 阿永原有12本書
   - label: B
     content: 小和原有10本書
   - label: C
-    content: 阿永與阿國與原來共有16本書
+    content: 阿永與阿國原來共有16本書
   - label: D
     content: 阿中原有48本書
   tags:
@@ -910,6 +910,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 阿永與阿國與原來共有 16 本書
+    to: (C) 阿永與阿國原來共有 16 本書
+    note: 多印「與」字
+    by: ai_review
 - id: doc_113_新北_永和_數學_g7s1e3_s1_28
   section: 1
   number: 28

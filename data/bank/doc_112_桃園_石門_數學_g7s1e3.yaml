@@ -551,7 +551,7 @@ questions:
   type: single
   page: 2
   stem: 元元預定以每小時 12 公里的速率騎車到離家 8 公里遠的爺爺家拜年，不料油箱沒油，只好以每小時 4 公里的速率繼續走路前進，結果比預定時間慢了 20
-    分鐘到達，請問下哪一個方程式中的 $x$ 代表元元走路的距離？
+    分鐘到達，請問下列哪一個方程式中的 $x$ 代表元元走路的距離？（原卷有誤，已修正）
   options:
   - label: A
     content: $\frac{8-x}{12}+\frac{x}{4}=\frac{8}{12}+20$
@@ -578,6 +578,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問下哪一個方程式中的 x 代表元元走路的距離？
+    to: 請問下列哪一個方程式中的 x 代表元元走路的距離？
+    note: 原卷漏「列」字
+    by: ai_review
 - id: doc_112_桃園_石門_數學_g7s1e3_s1_16
   section: 1
   number: 16

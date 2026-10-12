@@ -1093,7 +1093,7 @@ questions:
   number: 29
   type: single
   page: 4
-  stem: 小龍、小虎、小風、小玄他們以滴管將一滴水滴在透明塑膠直尺上，再移動直尺使水滴對準考卷上的圖片和文字，發現圖文被放大且方向不變，以下他們各自的推論哪個是正確的？
+  stem: 小龍、小虎、小風、小玄他們以滴管將一滴水滴在透明塑膠直尺上，再移動直尺使水滴對準考卷上的圖片和文字，發現圖文被放大且方向不變，以下他們各自的推論哪個是正確的？（原卷有誤，已修正）
   options:
   - label: A
     content: 小龍：眼睛所看到放大的圖文，一定是正立實像。
@@ -1102,7 +1102,7 @@ questions:
   - label: C
     content: 小風：水滴有使光線會聚的效果。
   - label: D
-    content: 小青：在此過程中，光速並沒有顯著變化。
+    content: 小玄：在此過程中，光速並沒有顯著變化。
   tags:
     chapter:
       publisher: 翰林
@@ -1120,6 +1120,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 小青：在此過程中，光速並沒有顯著變化。
+    to: (D) 小玄：在此過程中，光速並沒有顯著變化。
+    note: 題幹為小玄，選項誤植為小青
+    by: ai_review
 - id: doc_113_台北_誠正_自然_g8s1e2_s1_30
   section: 1
   number: 30

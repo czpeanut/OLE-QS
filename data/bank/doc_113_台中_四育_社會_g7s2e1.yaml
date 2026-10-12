@@ -959,7 +959,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 1920 年代至1990 年代，各項生活條件改善，使死亡率下降並讓臺灣人口快速成長，請問下列是下列哪些原因使臺灣人口死亡率下降？（甲）醫療技術進步（乙）國民營養提高（丙）人工生殖技術進步（丁）衛生環境改善
+  stem: 1920 年代至1990 年代，各項生活條件改善，使死亡率下降並讓臺灣人口快速成長，請問下列哪些原因使臺灣人口死亡率下降？（甲）醫療技術進步（乙）國民營養提高（丙）人工生殖技術進步（丁）衛生環境改善（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙丙
@@ -986,6 +986,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問下列是下列哪些原因使臺灣人口死亡率下降？
+    to: 請問下列哪些原因使臺灣人口死亡率下降？
+    note: 題幹重複多印「下列是」
+    by: ai_review
 - id: doc_113_台中_四育_社會_g7s2e1_s2_29
   section: 2
   number: 29

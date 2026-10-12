@@ -1121,14 +1121,14 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 下列選項中，何者「跳水」的解釋與其他三者不同？
+  stem: 下列選項中，何者「跳水」的解釋與其他三者不同？（原卷有誤，已修正）
   options:
   - label: A
     content: 只要亮亮一「跳水」，全場目光就會集中在他身上
   - label: B
     content: 英國「跳水」王子戴利在奧運會場上，憑藉高超技術擄獲眾多粉絲的心
   - label: C
-    content: 政府不斷出手打防，提出許多房貸限制，各地的房價也紛紛「跳水」
+    content: 政府不斷出手打房，提出許多房貸限制，各地的房價也紛紛「跳水」
   - label: D
     content: 喵界女神豆漿昨天橫衝直撞，居然把阿浩的手機撞到馬桶「跳水」去了。
   tags:
@@ -1148,6 +1148,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 政府不斷出手打防，提出許多房貸限制
+    to: 政府不斷出手打房，提出許多房貸限制
+    note: 「打防」應為「打房」
+    by: ai_review
 - id: doc_113_高雄_獅甲_國文_g8s1e1_s4_19
   section: 4
   number: 19

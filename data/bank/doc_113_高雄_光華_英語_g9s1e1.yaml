@@ -1064,7 +1064,7 @@ questions:
   page: 5
   stem: 'What’s so funny about the joke?
 
-    speed 速度'
+    speed 速度（原卷有誤，已修正）'
   options:
   - label: A
     content: The man saw a 3-legged chicken running past him at high speed, and he
@@ -1092,7 +1092,7 @@ questions:
 
     "I don''t know," answered the farmer, "we haven''t caught one yet"
 
-    accelerate 加速 kpt: kilometers per hour 每小時公里 explanation 解釋 breed (bred) 飼育'
+    accelerate 加速 kph: kilometers per hour 每小時公里 explanation 解釋 breed (bred) 飼育'
   ai_answers:
     gemini: B
     qwen: B
@@ -1110,6 +1110,11 @@ questions:
       chapter: 綜合
     textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: 'kpt: kilometers per hour 每小時公里'
+    to: 'kph: kilometers per hour 每小時公里'
+    note: kpt 應為 kph
+    by: ai_review
 - id: doc_113_高雄_光華_英語_g9s1e1_s5_35
   section: 5
   number: 35

@@ -2123,12 +2123,12 @@ questions:
   number: 49
   type: single
   page: 4
-  stem: 來到屏東墾丁，觸目可見珊瑚礁地形，還看到了鐘乳石的洞穴，請問此珊瑚礁形成了哪一種岩石？
+  stem: 來到屏東墾丁，觸目可見珊瑚礁地形，還看到了鐘乳石的洞穴，請問此珊瑚礁形成了哪一種岩石？（原卷有誤，已修正）
   options:
   - label: A
     content: 大理岩
   - label: B
-    content: 石灰.岩
+    content: 石灰岩
   - label: C
     content: 安山岩
   - label: D
@@ -2151,6 +2151,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 石灰.岩
+    to: (B) 石灰岩
+    note: 多印了小數點
+    by: ai_review
 - id: doc_113_高雄_獅甲_自然_g9s1e1_s2_50
   section: 2
   number: 50

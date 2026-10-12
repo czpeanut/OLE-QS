@@ -71,8 +71,8 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 右圖是某聚落的的三級產業比例圓餅圖，請問：下列有關該聚落的描述，哪些內容正確？ (甲)生產糧食作物輸出 (乙)居民都是從事服務業 (丙)提供大量就業機會
-    (丁)傳播流行文化和新知。
+  stem: 右圖是某聚落的三級產業比例圓餅圖，請問：下列有關該聚落的描述，哪些內容正確？ (甲)生產糧食作物輸出 (乙)居民都是從事服務業 (丙)提供大量就業機會
+    (丁)傳播流行文化和新知。（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙
@@ -116,6 +116,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 某聚落的的三級產業比例圓餅圖
+    to: 某聚落的三級產業比例圓餅圖
+    note: 多印一個「的」字
+    by: ai_review
 - id: doc_111_高雄_大灣_社會_g7s2e3_s1_3
   section: 1
   number: 3

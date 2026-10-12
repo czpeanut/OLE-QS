@@ -483,12 +483,12 @@ questions:
   number: 15
   type: single
   page: 1
-  stem: 國中畢業多年後舉辦同學會，幾位同學分享了最近在做的事情。請問：哪一位同學提供了無酬勞動？
+  stem: 國中畢業多年後舉辦同學會，幾位同學分享了最近在做的事情。請問：哪一位同學提供了無酬勞動？（原卷有誤，已修正）
   options:
   - label: A
     content: 芩貝：我準備繼續碩士班。
   - label: B
-    content: 芷晴：我考到了廚師證照，政在飯店服務。
+    content: 芷晴：我考到了廚師證照，正在飯店服務。
   - label: C
     content: 家馨：我去幼稚園當幼保人員。
   - label: D
@@ -510,6 +510,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 我考到了廚師證照，政在飯店服務。
+    to: 我考到了廚師證照，正在飯店服務。
+    note: 錯字，「政」應為「正」
+    by: ai_review
 - id: doc_113_台北_誠正_社會_公民_g9s1e3_s1_16
   section: 1
   number: 16

@@ -893,7 +893,7 @@ questions:
   number: 40
   type: single
   page: 2
-  stem: What is the reading about?
+  stem: What is the reading about?（原卷有誤，已修正）
   options:
   - label: A
     content: A family photo.
@@ -904,7 +904,7 @@ questions:
   - label: D
     content: A Sunday night.
   group_stem: 'It’s Sunday morning. Today is Gina’s birthday. Her family is planning
-    a party for her. Gina is not at home. She is seeing a movie with his grandpa.
+    a party for her. Gina is not at home. She is seeing a movie with her grandpa.
 
     It’s 9 a.m. Gina’s sister, Lucy is making a birthday card in her room. Her brother,
     Ben, is putting up pink balloons in the living room. It’s Gina’s favorite color.
@@ -932,6 +932,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: seeing a movie with his grandpa.
+    to: seeing a movie with her grandpa.
+    note: Gina為女性，代名詞應為her
+    by: ai_review
 - id: doc_113_台北_誠正_英語_g7s1e2_s2_41
   section: 2
   number: 41
@@ -948,7 +953,7 @@ questions:
   - label: D
     content: Gina is in her room in the morning.
   group_stem: 'It’s Sunday morning. Today is Gina’s birthday. Her family is planning
-    a party for her. Gina is not at home. She is seeing a movie with his grandpa.
+    a party for her. Gina is not at home. She is seeing a movie with her grandpa.
 
     It’s 9 a.m. Gina’s sister, Lucy is making a birthday card in her room. Her brother,
     Ben, is putting up pink balloons in the living room. It’s Gina’s favorite color.
@@ -982,8 +987,8 @@ questions:
   type: single
   page: 3
   stem: "According to the reading, what is the right(正確) order(順序)? \n  (1) Gina’s\
-    \ parents make a birthday cake. \n  (2) Gina and his grandpa see a movie. \n \
-    \ (3) Everyone sings a birthday song together. \n  (4) Ben and Lucy take pictures."
+    \ parents make a birthday cake. \n  (2) Gina and her grandpa see a movie. \n \
+    \ (3) Everyone sings a birthday song together. \n  (4) Ben and Lucy take pictures.（原卷有誤，已修正）"
   options:
   - label: A
     content: '3142'
@@ -994,7 +999,7 @@ questions:
   - label: D
     content: '2134'
   group_stem: 'It’s Sunday morning. Today is Gina’s birthday. Her family is planning
-    a party for her. Gina is not at home. She is seeing a movie with his grandpa.
+    a party for her. Gina is not at home. She is seeing a movie with her grandpa.
 
     It’s 9 a.m. Gina’s sister, Lucy is making a birthday card in her room. Her brother,
     Ben, is putting up pink balloons in the living room. It’s Gina’s favorite color.
@@ -1022,6 +1027,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Gina and his grandpa see a movie.
+    to: Gina and her grandpa see a movie.
+    note: Gina為女性，代名詞應為her
+    by: ai_review
 - id: doc_113_台北_誠正_英語_g7s1e2_s2_43
   section: 2
   number: 43

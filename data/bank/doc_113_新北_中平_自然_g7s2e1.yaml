@@ -1093,7 +1093,7 @@ questions:
   number: 29
   type: single
   page: 3
-  stem: 已知乙是某種海洋生物，但子代數量卻相當稀少，請你分析牠最有可能是誰？以及牠的的生殖方式和胚胎發育所需的養分來源？
+  stem: 已知乙是某種海洋生物，但子代數量卻相當稀少，請你分析牠最有可能是誰？以及牠的生殖方式和胚胎發育所需的養分來源？（原卷有誤，已修正）
   options:
   - label: A
     content: 綠蠵龜：胎生、卵
@@ -1134,6 +1134,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 以及牠的的生殖方式和胚胎發育
+    to: 以及牠的生殖方式和胚胎發育
+    note: 多印一個「的」字
+    by: ai_review
 - id: doc_113_新北_中平_自然_g7s2e1_s1_30
   section: 1
   number: 30

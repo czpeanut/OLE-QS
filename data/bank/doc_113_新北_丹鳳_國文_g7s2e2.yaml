@@ -1082,14 +1082,14 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: '芯芯在做近體詩介紹的簡報時，不小心將白居易的五言律詩〈西河雨夜送客〉的詩句順序打亂了，請根據所學的律詩常識，來幫芯芯重組詩句，請問正確的順序何？（提示：韻腳的位置、對仗句的位置可作為線索。）
+  stem: '芯芯在做近體詩介紹的簡報時，不小心將白居易的五言律詩〈西河雨夜送客〉的詩句順序打亂了，請根據所學的律詩常識，來幫芯芯重組詩句，請問正確的順序為何？（提示：韻腳的位置、對仗句的位置可作為線索。）
 
 
     雲黑雨翛翛／酒罷無多興／唯看一點火／遙認是行舟
 
     有風催解纜／帆開不少留／江昏水闇流／無月伴登樓
 
-    (翛，音ㄒㄧㄠ)'
+    (翛，音ㄒㄧㄠ)（原卷有誤，已修正）'
   options:
   - label: A
     content: '帆開不少留，江昏水闇流。
@@ -1140,6 +1140,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 來幫芯芯重組詩句，請問正確的順序何？
+    to: 來幫芯芯重組詩句，請問正確的順序為何？
+    note: 漏「為」字
+    by: ai_review
 - id: doc_113_新北_丹鳳_國文_g7s2e2_s4_14
   section: 4
   number: 14
@@ -1448,7 +1453,7 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: 詩中「候鳥失去季節」的意象暗喻下列何者？
+  stem: 詩中「候鳥失去季節」的意象暗喻下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 數位閱讀使讀者獲得破碎的知識
@@ -1488,7 +1493,7 @@ questions:
 
     1. 注釋：
 
-    比特速度：指電腦傳輸資料的速度，比特，即Byte 之音譯詞。'
+    比特速度：指電腦傳輸資料的速度，比特，即Bit 之音譯詞。'
   tags:
     chapter:
       publisher: null
@@ -1506,6 +1511,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 比特，即Byte 之音譯詞。
+    to: 比特，即Bit 之音譯詞。
+    note: Byte應為Bit
+    by: ai_review
 - id: doc_113_新北_丹鳳_國文_g7s2e2_s5_23
   section: 5
   number: 23
@@ -1551,7 +1561,7 @@ questions:
 
     1. 注釋：
 
-    比特速度：指電腦傳輸資料的速度，比特，即Byte 之音譯詞。'
+    比特速度：指電腦傳輸資料的速度，比特，即Bit 之音譯詞。'
   tags:
     chapter:
       publisher: null

@@ -1344,14 +1344,14 @@ questions:
   number: 24
   type: single
   page: 3
-  stem: 語文中上下兩句(或兩句以上)，字數相等、句法相稱、有時還講究平仄相對的修辭法，稱為「對偶」，據此判斷下列何者為「對偶句」︖
+  stem: 語文中上下兩句(或兩句以上)，字數相等、句法相稱、有時還講究平仄相對的修辭法，稱為「對偶」，據此判斷下列何者為「對偶句」︖（原卷有誤，已修正）
   options:
   - label: A
     content: 疏影橫斜水清淺，暗香浮動月黃昏
   - label: B
     content: 勸君更盡一杯酒，西出陽關無故人
   - label: C
-    content: 天街小雨潤如蘇，草色遙看近卻無
+    content: 天街小雨潤如酥，草色遙看近卻無
   - label: D
     content: 春風得意馬蹄疾，一日看盡長安花
   tags:
@@ -1371,6 +1371,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 天街小雨潤如蘇，草色遙看近卻無
+    to: 天街小雨潤如酥，草色遙看近卻無
+    note: 「蘇」應為「酥」
+    by: ai_review
 - id: doc_113_高雄_翠屏_國文_g7s2e2_s4_25
   section: 4
   number: 25

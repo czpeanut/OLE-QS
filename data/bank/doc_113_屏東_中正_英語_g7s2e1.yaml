@@ -1403,7 +1403,7 @@ questions:
   number: 8
   type: single
   page: 3
-  stem: Which is TURE？
+  stem: Which is TRUE？（原卷有誤，已修正）
   options:
   - label: A
     content: Susan sleeps in class and her scores are not good.
@@ -1438,6 +1438,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Which is TURE？
+    to: Which is TRUE？
+    note: TRUE誤印為TURE
+    by: ai_review
 shared_assets:
 - key: g6_1_3
   label: 題組附圖

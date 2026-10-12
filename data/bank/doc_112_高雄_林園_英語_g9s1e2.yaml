@@ -641,8 +641,8 @@ questions:
   type: single
   page: 4
   stem: "____18. Mom: How dirty your bedroom is!  Don’t keep playing games on the\
-    \ cellphone.  Go clean it up now.   \nDaivd: But it’s time for me to take a break.\
-    \  Don’t just push me...   \nMom:       \nDavid: Oh no!  Not again."
+    \ cellphone.  Go clean it up now.   \nDavid: But it’s time for me to take a break.\
+    \  Don’t just push me...   \nMom:       \nDavid: Oh no!  Not again.（原卷有誤，已修正）"
   options:
   - label: A
     content: Always be honest with me.
@@ -669,6 +669,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 'Daivd: But it’s time for me to take a break.'
+    to: 'David: But it’s time for me to take a break.'
+    note: 名字 Daivd 拼錯，應為 David
+    by: ai_review
 - id: doc_112_高雄_林園_英語_g9s1e2_s5_19
   section: 5
   number: 19

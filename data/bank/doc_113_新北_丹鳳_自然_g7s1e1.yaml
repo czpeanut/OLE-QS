@@ -438,7 +438,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 下圖為地球的高山與海洋示意圖，有關甲、乙、丙、丁區域的敘述，何者正確？
+  stem: 下圖為地球的高山與海洋示意圖，有關甲、乙、丙、丁區域的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲處可發現細菌的存在
@@ -447,7 +447,7 @@ questions:
   - label: C
     content: 丙處可能找到鮟鱇魚(燈籠魚)的存在
   - label: D
-    content: 丁處可可發現珊瑚礁、小丑魚等生物
+    content: 丁處可發現珊瑚礁、小丑魚等生物
   assets:
   - key: s1_11_f1
     kind: figure
@@ -482,6 +482,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 丁處可可發現珊瑚礁、小丑魚等生物
+    to: 丁處可發現珊瑚礁、小丑魚等生物
+    note: 多印一個「可」字
+    by: ai_review
 - id: doc_113_新北_丹鳳_自然_g7s1e1_s1_12
   section: 1
   number: 12

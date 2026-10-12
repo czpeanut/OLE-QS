@@ -447,7 +447,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 為了縮短船隻來往於大西洋和太平洋之間的時間，使船隻能夠避開遙遠且危險的南美洲海域。因此興建了大型運河，現在每一搜船經過此地都要向此國家繳交通行費，請問此國家指的是哪一個國家?
+  stem: 為了縮短船隻來往於大西洋和太平洋之間的時間，使船隻能夠避開遙遠且危險的南美洲海域。因此興建了大型運河，現在每一艘船經過此地都要向此國家繳交通行費，請問此國家指的是哪一個國家?（原卷有誤，已修正）
   options:
   - label: A
     content: 美國
@@ -474,6 +474,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 現在每一搜船經過此地都要向此國家繳交通行費
+    to: 現在每一艘船經過此地都要向此國家繳交通行費
+    note: 「搜」應為「艘」
+    by: ai_review
 - id: doc_113_新北_板橋_社會_地理_g9s1e2_s1_13
   section: 1
   number: 13

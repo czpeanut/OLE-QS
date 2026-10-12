@@ -36,12 +36,12 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 有關化學反應，下列何者正確？
+  stem: 有關化學反應，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 可能顏色有變化
   - label: B
-    content: 可能產成氣體
+    content: 可能產生氣體
   - label: C
     content: 可能生成沉澱
   - label: D
@@ -62,6 +62,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 可能產成氣體
+    to: 可能產生氣體
+    note: 「產成」應為「產生」
+    by: ai_review
 - id: doc_111_桃園_中興_自然_g8s2e1_s1_2
   section: 1
   number: 2
@@ -825,8 +830,8 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 已知氣體 X與氣體 Y，反應生成氣體 Z的反應式為 3X＋2Y→2Z，若取18克 X與足量的 Y完全反應可生成42克 Z，今改取 16克的Y與 16的X完全反應，可生成
-    Z多少克？
+  stem: 已知氣體 X與氣體 Y，反應生成氣體 Z的反應式為 3X＋2Y→2Z，若取18克 X與足量的 Y完全反應可生成42克 Z，今改取 16克的Y與 16克的X完全反應，可生成
+    Z多少克？（原卷有誤，已修正）
   options:
   - label: A
     content: '28'
@@ -852,6 +857,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 今改取 16克的Y與 16的X完全反應
+    to: 今改取 16克的Y與 16克的X完全反應
+    note: 漏字，「16的X」應為「16克的X」
+    by: ai_review
 - id: doc_111_桃園_中興_自然_g8s2e1_s1_25
   section: 1
   number: 25

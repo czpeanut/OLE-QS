@@ -286,14 +286,14 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 圖 3 為台灣行政區位置圖，根據圖中代號，關於台灣地形分布的敘述，以下何者說明正確?
+  stem: 圖 3 為台灣行政區位置圖，根據圖中代號，關於台灣地形分布的敘述，以下何者說明正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 甲縣市位於台灣本島最大的平原
   - label: B
     content: 戊縣市地形有丘陵、台地與盆地
   - label: C
-    content: 己、辛主要地形為為台地、丘陵
+    content: 己、辛主要地形為台地、丘陵
   - label: D
     content: 丙丁的主要人口集中在盆地地形
   assets:
@@ -331,6 +331,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 己、辛主要地形為為台地、丘陵
+    to: 己、辛主要地形為台地、丘陵
+    note: 多印一個「為」字
+    by: ai_review
 - id: doc_113_台南_民德_社會_地理_g7s1e2_s1_9
   section: 1
   number: 9

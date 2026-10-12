@@ -120,7 +120,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 中國的行政區劃中，自治區的行政地位與省相當。促使中國某些地區不設「省」而設「自治區」的原因為何？
+  stem: 中國的行政區劃中，自治區的行政地位與省相當。促使中國某些地區不設「省」而設「自治區」的原因為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 便於該區和外國建立友好關係
@@ -129,7 +129,7 @@ questions:
   - label: C
     content: 該區氣候乾燥
   - label: D
-    content: 。該區地形崎嶇
+    content: 該區地形崎嶇
   answer:
   - B
   answer_source: answer_key_vlm
@@ -146,6 +146,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: (D) 。該區地形崎嶇
+    to: (D) 該區地形崎嶇
+    note: 多印句號
+    by: ai_review
 - id: doc_112_高雄_林園_社會_地理_g8s1e1_s1_5
   section: 1
   number: 5

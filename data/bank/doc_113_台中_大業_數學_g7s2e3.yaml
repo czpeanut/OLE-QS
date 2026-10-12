@@ -1284,7 +1284,7 @@ questions:
 
     1、1、2、5、8、9、$A$、$A$、$B$、$B$、$B$
 
-    已知$A$、$B$為正整數，且$2 < A < B$。若此筆資料的眾數4、中位數為$c$、平均為$d$，則$c-d$為何？'
+    已知$A$、$B$為正整數，且$2 < A < B$。若此筆資料的眾數為4、中位數為$c$、平均為$d$，則$c-d$為何？（原卷有誤，已修正）'
   options:
   - label: A
     content: '0'
@@ -1311,6 +1311,11 @@ questions:
     qwen: B
   answer_status: disputed
   review_note: 答案卷 ['A']，Gemini 與 Qwen 一致判為 B
+  errata:
+  - from: 若此筆資料的眾數4、中位數為$c$、平均為$d$
+    to: 若此筆資料的眾數為4、中位數為$c$、平均為$d$
+    note: 漏字，「眾數4」漏了「為」
+    by: ai_review
 - id: doc_113_台中_大業_數學_g7s2e3_s1_32
   section: 1
   number: 32

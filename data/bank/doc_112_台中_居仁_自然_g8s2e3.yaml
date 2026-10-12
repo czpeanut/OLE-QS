@@ -31,9 +31,9 @@ questions:
   page: 1
   stem: '下列何者為有機物？
 
-    甲.$\mathrm{NaHCO_{3}}$ 乙.$\mathrm{CO}$ 丙.天然氣 丁.蔗糖 戊.銅幣 已.乾冰
+    甲.$\mathrm{NaHCO_{3}}$ 乙.$\mathrm{CO}$ 丙.天然氣 丁.蔗糖 戊.銅幣 己.乾冰
 
-    庚.尿素 辛.酒精 壬.氰化物 癸.聚酯纖維'
+    庚.尿素 辛.酒精 壬.氰化物 癸.聚酯纖維（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲、乙、丙、戊
@@ -60,6 +60,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 戊.銅幣 已.乾冰
+    to: 戊.銅幣 己.乾冰
+    note: 天干順序應為「己」非「已」
+    by: ai_review
 - id: doc_112_台中_居仁_自然_g8s2e3_s1_2
   section: 1
   number: 2

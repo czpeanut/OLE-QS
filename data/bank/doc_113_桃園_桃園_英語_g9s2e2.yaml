@@ -400,7 +400,7 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: Don’t you know drinking to much coffee is the        of your health problem?
+  stem: Don’t you know drinking too much coffee is the        of your health problem?（原卷有誤，已修正）
   options:
   - label: A
     content: end
@@ -427,6 +427,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: drinking to much coffee
+    to: drinking too much coffee
+    note: to 應為 too
+    by: ai_review
 - id: doc_113_桃園_桃園_英語_g9s2e2_s5_23
   section: 5
   number: 23

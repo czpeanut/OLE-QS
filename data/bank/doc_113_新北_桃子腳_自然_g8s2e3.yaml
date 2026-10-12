@@ -297,7 +297,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 關肥皂的敘述，下列何者錯誤？
+  stem: 關於肥皂的敘述，下列何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 肥皂的結構，一端為親油端，另一端為親水端
@@ -323,6 +323,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 關肥皂的敘述，下列何者錯誤？
+    to: 關於肥皂的敘述，下列何者錯誤？
+    note: 漏字，漏「於」
+    by: ai_review
 - id: doc_113_新北_桃子腳_自然_g8s2e3_s1_10
   section: 1
   number: 10

@@ -522,7 +522,7 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: 小雯選擇「吳沙」作為歷史報告的主題，而且打算實地考察。請問：信元最可能選擇下列哪種行程？
+  stem: 小雯選擇「吳沙」作為歷史報告的主題，而且打算實地考察。請問：小雯最可能選擇下列哪種行程？（原卷有誤，已修正）
   options:
   - label: A
     content: 到彰化研究農作
@@ -549,6 +549,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小雯選擇「吳沙」作為歷史報告的主題，而且打算實地考察。請問：信元最可能選擇下列哪種行程？
+    to: 小雯選擇「吳沙」作為歷史報告的主題，而且打算實地考察。請問：小雯最可能選擇下列哪種行程？
+    note: 人名不一致，「信元」應為「小雯」
+    by: ai_review
 - id: doc_113_台中_四育_社會_g7s1e2_s1_17
   section: 1
   number: 17
@@ -1503,7 +1508,7 @@ questions:
   number: 39
   type: single
   page: 3
-  stem: 在「某隧道」開通前從（圖五）中的「C 地點」移動到「D 地點」需要花費非常久的時間，但在隧道開通之後將兩地的交通時間所短不到一個小時，請問該隧道穿越了哪一座山脈？
+  stem: 在「某隧道」開通前從（圖五）中的「C 地點」移動到「D 地點」需要花費非常久的時間，但在隧道開通之後將兩地的交通時間縮短不到一個小時，請問該隧道穿越了哪一座山脈？（原卷有誤，已修正）
   options:
   - label: A
     content: 阿里山山脈
@@ -1533,6 +1538,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 在隧道開通之後將兩地的交通時間所短不到一個小時
+    to: 在隧道開通之後將兩地的交通時間縮短不到一個小時
+    note: 「所短」應為「縮短」
+    by: ai_review
 - id: doc_113_台中_四育_社會_g7s1e2_s3_41
   section: 3
   number: 41

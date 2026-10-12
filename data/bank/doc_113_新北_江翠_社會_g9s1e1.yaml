@@ -1241,7 +1241,7 @@ questions:
   number: 37
   type: single
   page: 3
-  stem: '銀優班遊旅行有四個選項，他將每一選項與機會成本整理成表(一)，希望藉此做出決定，最後他決定到喜好程度最高的「六福村」旅遊，請問表一中甲、乙、丙最可能的喜好程度是多少?
+  stem: '銀優班遊旅行有四個選項，他將每一選項與機會成本整理成表(二)，希望藉此做出決定，最後他決定到喜好程度最高的「六福村」旅遊，請問表二中甲、乙、丙最可能的喜好程度是多少?
 
     表(二) (註:題幹稱表一)
 
@@ -1251,7 +1251,7 @@ questions:
 
     | 喜好程度 | 甲 | 乙 | 2 | 丙 |
 
-    | 機會成本 | 2 | 1 | 1 | 1 |'
+    | 機會成本 | 2 | 1 | 1 | 1 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲 = 1 而且 乙 =1
@@ -1279,6 +1279,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 整理成表(一)，希望藉此做出決定，最後他決定到喜好程度最高的「六福村」旅遊，請問表一中
+    to: 整理成表(二)，希望藉此做出決定，最後他決定到喜好程度最高的「六福村」旅遊，請問表二中
+    note: 表號引用錯誤，對應表格為表(二)
+    by: ai_review
 - id: doc_113_新北_江翠_社會_g9s1e1_s3_38
   section: 3
   number: 38
@@ -1297,7 +1302,7 @@ questions:
 
     | 費用 | 34000 元 | 36000 元 |
 
-    | 優惠方案 | 6 月25 日前報名折價1000 元 | 6 月20 日前報名折價2000 元 |'
+    | 優惠方案 | 6 月25 日前報名折價1000 元 | 6 月20 日前報名折價2000 元 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 於6 月27 日報名甲行程的平平
@@ -1306,7 +1311,7 @@ questions:
   - label: C
     content: 於6 月21 日報名乙行程的喜喜
   - label: D
-    content: 於6 月18 日報名乙行程。
+    content: 於6 月18 日報名乙行程的樂樂。
   tags:
     chapter:
       publisher: 康軒
@@ -1325,6 +1330,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (D) 於6 月18 日報名乙行程。
+    to: (D) 於6 月18 日報名乙行程的樂樂。
+    note: 漏字，四人名單中漏了「的樂樂」
+    by: ai_review
 - id: doc_113_新北_江翠_社會_g9s1e1_s3_39
   section: 3
   number: 39
@@ -1514,7 +1524,7 @@ questions:
   number: 44
   type: single
   page: 4
-  stem: 對青年而言，可以貸款買房這樣的選擇來說是屬於下咧那些誘因？
+  stem: 對青年而言，可以貸款買房這樣的選擇來說是屬於下列那些誘因？（原卷有誤，已修正）
   options:
   - label: A
     content: 正向誘因、金錢誘因
@@ -1544,6 +1554,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 是屬於下咧那些誘因？
+    to: 是屬於下列那些誘因？
+    note: 「咧」為錯字，應作「列」
+    by: ai_review
 - id: doc_113_新北_江翠_社會_g9s1e1_s3_45
   section: 3
   number: 45

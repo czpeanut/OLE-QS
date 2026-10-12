@@ -1246,7 +1246,7 @@ questions:
   number: 25
   type: single
   page: 3
-  stem: '已知某種老鼠的毛色由三種等為基因:$C^{Y}$、$C^{B}$ 及 $C^{N}$ 所決定，分別產生黃毛、黑毛及灰毛，其中 $C^{Y}$ 對
+  stem: '已知某種老鼠的毛色由三種等位基因:$C^{Y}$、$C^{B}$ 及 $C^{N}$ 所決定，分別產生黃毛、黑毛及灰毛，其中 $C^{Y}$ 對
     $C^{B}$ 及 $C^{N}$ 為顯性，$C^{B}$ 對 $C^{N}$ 為顯性。為了推論基因型與表現型的關係，禧媛同學製作了下面的表格，有些空格禧媛不大確定就先留下空白X
     和Y，請問X 和Y 分別是何種毛色?
 
@@ -1259,7 +1259,7 @@ questions:
 
     | $C^{B}$ | X | 黑毛 | 黑毛 |
 
-    | $C^{N}$ | 黃毛 | Y | 灰毛 |'
+    | $C^{N}$ | 黃毛 | Y | 灰毛 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 黃毛、黑毛
@@ -1286,6 +1286,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '已知某種老鼠的毛色由三種等為基因:'
+    to: '已知某種老鼠的毛色由三種等位基因:'
+    note: 「等為」應為「等位」
+    by: ai_review
 - id: doc_113_高雄_左營_自然_g7s2e1_s1_26
   section: 1
   number: 26
@@ -1584,16 +1589,16 @@ questions:
 
     (己)蘭花取用整個莖的器官進行組織培養繁殖大量蘭花苗。
 
-    已知因為上課時有飛機經過教室上空，導致小自分心，筆記中部分內容並不正確。請問哪幾項的筆記內容正確？'
+    已知因為上課時有飛機經過教室上空，導致小自分心，筆記中部分內容並不正確。請問哪幾項的筆記內容正確？（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲乙丙
   - label: B
-    content: 乙戊已
+    content: 乙戊己
   - label: C
     content: 甲丙戊
   - label: D
-    content: 丙戊已。
+    content: 丙戊己。
   tags:
     chapter:
       publisher: 翰林
@@ -1611,6 +1616,15 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 乙戊已
+    to: (B) 乙戊己
+    note: 天干「己」誤印為「已」
+    by: ai_review
+  - from: (D) 丙戊已。
+    to: (D) 丙戊己。
+    note: 天干「己」誤印為「已」
+    by: ai_review
 - id: doc_113_高雄_左營_自然_g7s2e1_s2_34
   section: 2
   number: 34

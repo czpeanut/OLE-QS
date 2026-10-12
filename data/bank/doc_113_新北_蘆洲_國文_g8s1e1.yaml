@@ -101,14 +101,14 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 下列「」中的字，何者形音義解讀是正確的？
+  stem: 下列「」中的字，何者形音義解讀是正確的？（原卷有誤，已修正）
   options:
   - label: A
     content: 正「襟」危坐：ㄐㄧㄣ，衣領
   - label: B
     content: 震「懾」人心：ㄕㄜˋ，害怕
   - label: C
-    content: 機「柱」：ㄓㄨˋ，織布機
+    content: 機「杼」：ㄓㄨˋ，織布機
   - label: D
     content: 行「潦」川流：ㄌㄠˇ，積水。
   tags:
@@ -129,6 +129,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 機「柱」：ㄓㄨˋ，織布機
+    to: 機「杼」：ㄓㄨˋ，織布機
+    note: 杼誤印為柱
+    by: ai_review
 - id: doc_113_新北_蘆洲_國文_g8s1e1_s1_4
   section: 1
   number: 4
@@ -600,7 +605,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 關於「二十年了，那笛聲低沉而遙遠，然而我仍能依稀聽見，在雨中……」這段話的說明，下列何者正確？
+  stem: 關於「二十年了，那笛聲低沉而遙遠，然而我仍能依稀聽見，在雨中……」這段話的說明，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 「仍然依稀聽見」，表示過去的溫馨光景仍延續至今
@@ -609,7 +614,7 @@ questions:
   - label: C
     content: 「笛聲低沉而遙遠」，象徵她遠逝的童年，不禁感傷
   - label: D
-    content: 「……」，破折號代表笛聲不絕如縷，契合陰雨綿綿的意象。
+    content: 「……」，刪節號代表笛聲不絕如縷，契合陰雨綿綿的意象。
   lesson_raw:
     title: 下雨天，真好
     basis: 引用課文《下雨天，真好》結尾文句
@@ -630,6 +635,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「……」，破折號代表笛聲不絕如縷
+    to: 「……」，刪節號代表笛聲不絕如縷
+    note: ……為刪節號非破折號
+    by: ai_review
 - id: doc_113_新北_蘆洲_國文_g8s1e1_s1_19
   section: 1
   number: 19

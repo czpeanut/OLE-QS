@@ -455,10 +455,10 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 下列何者不是鹽橋在鋅銅電池中的功用？
+  stem: 下列何者不是鹽橋在鋅銅電池中的功用？（原卷有誤，已修正）
   options:
   - label: A
-    content: 溝通電
+    content: 溝通電路
   - label: B
     content: 使電子通過
   - label: C
@@ -482,6 +482,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 溝通電
+    to: (A) 溝通電路
+    note: 漏「路」字
+    by: ai_review
 - id: doc_113_高雄_獅甲_自然_g9s2e1_s1_12
   section: 1
   number: 12

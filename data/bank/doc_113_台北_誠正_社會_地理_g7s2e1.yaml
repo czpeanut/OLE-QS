@@ -694,7 +694,7 @@ questions:
   page: 2
   stem: '附圖是臺灣民國81 年到107 年的性別比變化趨勢圖。請問：由圖中訊息觀察，哪些推論最為合理？
 
-    (甲)新生兒性別比顯示仍受傳統重男輕女觀念的的影響 (乙)女性人數已多於男性人數 (丙)新生兒性別比女多於男 (丁)女性平均壽命比男性高'
+    (甲)新生兒性別比顯示仍受傳統重男輕女觀念的影響 (乙)女性人數已多於男性人數 (丙)新生兒性別比女多於男 (丁)女性平均壽命比男性高（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲乙丙
@@ -738,6 +738,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 受傳統重男輕女觀念的的影響
+    to: 受傳統重男輕女觀念的影響
+    note: 多印一個「的」字
+    by: ai_review
 - id: doc_113_台北_誠正_社會_地理_g7s2e1_s1_17
   section: 1
   number: 17
@@ -1022,7 +1027,7 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 清帝國時期，因渡臺禁令的影響，僅成年男子可到臺灣開墾土地。請問：當時的臺灣人口金字塔圖應為列何者？
+  stem: 清帝國時期，因渡臺禁令的影響，僅成年男子可到臺灣開墾土地。請問：當時的臺灣人口金字塔圖應為下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: ''
@@ -1059,6 +1064,11 @@ questions:
       chapter: 第2章 人口組成與族群文化
     textbook: 七下地理 2-1 人口組成
     labeled_by: ai
+  errata:
+  - from: 當時的臺灣人口金字塔圖應為列何者？
+    to: 當時的臺灣人口金字塔圖應為下列何者？
+    note: 漏印「下」字
+    by: ai_review
 - id: doc_113_台北_誠正_社會_地理_g7s2e1_s1_24
   section: 1
   number: 24

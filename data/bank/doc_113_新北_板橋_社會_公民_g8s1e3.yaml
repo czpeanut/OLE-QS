@@ -523,14 +523,14 @@ questions:
   number: 49
   type: single
   page: 2
-  stem: 下列有關直轄市山地原住民區的敘述,何者正確?
+  stem: 下列有關直轄市山地原住民區的敘述,何者正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 享有地方自治團體的地位
   - label: B
     content: 區長可以自行決定是否放颱風假
   - label: C
-    content: 行政機關為為區民代表會,立法機關為區公所
+    content: 行政機關為區民代表會,立法機關為區公所
   - label: D
     content: 區長不是直轄市市長派任,故不用執行市政府的委辦事項
   answer:
@@ -549,6 +549,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 行政機關為為區民代表會
+    to: 行政機關為區民代表會
+    note: 多印一個「為」字
+    by: ai_review
 - id: doc_113_新北_板橋_社會_公民_g8s1e3_s1_50
   section: 1
   number: 50

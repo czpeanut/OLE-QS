@@ -680,12 +680,12 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 下列對於陶淵明的敘述，何者正確？
+  stem: 下列對於陶淵明的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 因身如蒲柳之姿，貧病交迫，故以「五柳先生」為號
   - label: B
-    content: 東晉人，年輕時心懷報負出仕，後厭惡官場而掛冠歸去
+    content: 東晉人，年輕時心懷抱負出仕，後厭惡官場而掛冠歸去
   - label: C
     content: 因不為五斗米折腰，隱居於彭澤
   - label: D
@@ -710,6 +710,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 年輕時心懷報負出仕，後厭惡官場而掛冠歸去
+    to: 年輕時心懷抱負出仕，後厭惡官場而掛冠歸去
+    note: 「報負」應為「抱負」
+    by: ai_review
 - id: doc_113_台中_大業_國文_g7s2e3_s1_21
   section: 1
   number: 21

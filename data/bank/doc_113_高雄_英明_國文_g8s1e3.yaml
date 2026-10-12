@@ -1323,7 +1323,7 @@ questions:
   number: 39
   type: single
   page: 3
-  stem: 依據上文，請問何者最符合                       內「狗」的想法?
+  stem: 依據上文，請問何者最符合                       內「狗」的想法?（原卷有誤，已修正）
   options:
   - label: A
     content: 我完全不討厭你們，我只是多疑又心虛
@@ -1332,7 +1332,7 @@ questions:
   - label: C
     content: 我真的好討厭你們，竟然看輕我的專長
   - label: D
-    content: 我真的好討厭你們，竟然數衍只教幾招。
+    content: 我真的好討厭你們，竟然敷衍只教幾招。
   group_stem: "許多狗喜歡追貓，人們以為牠是要欺凌弱小。不然。狗是很羨慕貓的，羨慕牠們可以爬到那麼高的地方，因為爬得高，看到的世界就越寬廣。牠每次想跟貓討教，性子急了點，邊吼邊跑地衝上去，讓人誤以為牠要去傷害貓。其實，牠只是很心急地想要追問：千古以來，何以你們可以飛簷走壁，而身為狗兒的我們，再怎麽努力跳躍，始終跨不過圍牆，上不了屋頂？\
     \                            。 \n(杜白《動物生死書》)"
   tags:
@@ -1352,6 +1352,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 我真的好討厭你們，竟然數衍只教幾招。
+    to: 我真的好討厭你們，竟然敷衍只教幾招。
+    note: 「數衍」應為「敷衍」
+    by: ai_review
 - id: doc_113_高雄_英明_國文_g8s1e3_s2_40
   section: 2
   number: 40

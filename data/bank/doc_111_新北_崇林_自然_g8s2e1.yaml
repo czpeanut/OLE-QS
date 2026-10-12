@@ -1184,7 +1184,7 @@ questions:
   number: 30
   type: single
   page: 2
-  stem: 有關氧化還原的敘述，下列何者錯誤？甲.氧化反應與還原反應必相伴發生；乙.氧化反應與還原反應不一定相伴發生，視狀況而定；丙.氧化還原俺應只能發生在有氧氣的環境；丁.光合作用也屬於氧化還原反應。
+  stem: 有關氧化還原的敘述，下列何者錯誤？甲.氧化反應與還原反應必相伴發生；乙.氧化反應與還原反應不一定相伴發生，視狀況而定；丙.氧化還原反應只能發生在有氧氣的環境；丁.光合作用也屬於氧化還原反應。（原卷有誤，已修正）
   options:
   - label: A
     content: 甲丙
@@ -1211,6 +1211,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 丙.氧化還原俺應只能發生在有氧氣的環境
+    to: 丙.氧化還原反應只能發生在有氧氣的環境
+    note: 「俺應」為錯字，應為「反應」
+    by: ai_review
 - id: doc_111_新北_崇林_自然_g8s2e1_s1_31
   section: 1
   number: 31

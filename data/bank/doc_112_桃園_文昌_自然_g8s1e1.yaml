@@ -1315,7 +1315,7 @@ questions:
   number: 35
   type: single
   page: 4
-  stem: 關於妮妮推薦的「15度」的梅酒，此標示這代表什麼意思？
+  stem: 關於妮妮推薦的「15度」的梅酒，此標示代表什麼意思？（原卷有誤，已修正）
   options:
   - label: A
     content: 酒精的重量百分濃度為15%
@@ -1345,6 +1345,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 此標示這代表什麼意思？
+    to: 此標示代表什麼意思？
+    note: 多印了「這」字
+    by: ai_review
 shared_assets:
 - key: g1_11_16
   label: 題組附圖

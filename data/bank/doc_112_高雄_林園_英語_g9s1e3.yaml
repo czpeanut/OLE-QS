@@ -336,7 +336,7 @@ questions:
   number: 10
   type: single
   page: 3
-  stem: 10.（  ）BOGO         a good ideal for anyone who          spend money wisely.  (課本)
+  stem: 10.（  ）BOGO         a good idea for anyone who          spend money wisely.  (課本)（原卷有誤，已修正）
   options:
   - label: A
     content: sounds ; wants to
@@ -363,6 +363,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: BOGO         a good ideal for anyone
+    to: BOGO         a good idea for anyone
+    note: ideal應為idea
+    by: ai_review
 - id: doc_112_高雄_林園_英語_g9s1e3_s4_11
   section: 4
   number: 11

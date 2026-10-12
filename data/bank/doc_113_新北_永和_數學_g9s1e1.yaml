@@ -138,7 +138,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: '下列敘何者正確？ (1-2、1-3)
+  stem: '下列敘述何者正確？ (1-2、1-3)
 
     (甲)若甲、乙兩多邊形，其邊數相同則必相似
 
@@ -150,7 +150,7 @@ questions:
 
     (丁)如果只知道「對應邊成比例」或「對應角相等」則這兩個多邊形不一定相似
 
-    (戊)將一個圖形縮放 $r$ 倍時，如果縮放中心不同，所縮放出來的圖形就不全等'
+    (戊)將一個圖形縮放 $r$ 倍時，如果縮放中心不同，所縮放出來的圖形就不全等（原卷有誤，已修正）'
   options:
   - label: A
     content: 丙丁
@@ -177,6 +177,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列敘何者正確？ (1-2、1-3)
+    to: 下列敘述何者正確？ (1-2、1-3)
+    note: 漏字，應為「敘述」
+    by: ai_review
 - id: doc_113_新北_永和_數學_g9s1e1_s1_5
   section: 1
   number: 5
@@ -1153,7 +1158,7 @@ questions:
   type: single
   page: 4
   stem: 皮皮想要在校慶園遊會調製水果茶來販售，他使用了金桔、檸檬、百香果三水果，且其顆數比為 8：7：9。皮皮調製完後，金桔、檸檬、百香果的顆數比變為 4：3：6。已知皮皮調製水果茶時沒有使用百香果，關於他調製水果茶時另外兩種水果的使用情形，下列敘述何者正確？
-    (1-1)
+    (1-1)（原卷有誤，已修正）
   options:
   - label: A
     content: 只有使用金桔
@@ -1162,7 +1167,7 @@ questions:
   - label: C
     content: 使用檸檬和金桔，且使用檸檬的顆數比使用金桔的顆數多
   - label: D
-    content: 使用檸檬和金桔，且使用金桔的顆數比使用檸檬的顆多
+    content: 使用檸檬和金桔，且使用金桔的顆數比使用檸檬的顆數多
   tags:
     chapter:
       publisher: 康軒
@@ -1180,6 +1185,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 且使用金桔的顆數比使用檸檬的顆多
+    to: 且使用金桔的顆數比使用檸檬的顆數多
+    note: 漏字，應為「顆數多」
+    by: ai_review
 - id: doc_113_新北_永和_數學_g9s1e1_s2_1
   section: 2
   number: 1

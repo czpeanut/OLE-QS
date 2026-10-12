@@ -122,7 +122,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 依據這則短文的內容，下列說明何者正確﹖
+  stem: 依據這則短文的內容，下列說明何者正確﹖（原卷有誤，已修正）
   options:
   - label: A
     content: 安樂縣僅彭姓人家為獵戶身分，獲朝廷恩准得於山中狩獵
@@ -132,7 +132,7 @@ questions:
     content: 兒子為替父親報仇，在追殺白鹿時不慎摔傷，終身無法握弓
   - label: D
     content: 因為鹿角上的七星符，孫子才發現白鹿實為其祖父所變。
-  group_stem: 昔番陽郡 安樂縣有人姓彭，世以捕射為業，兒隨父入山，父忽蹶然倒地，乃變成白鹿，兒悲號追，鹿超然遠逝，遂失所在，兒於是不捉弓終身。至孫複學射，忽得一白鹿，乃於鹿角間得道家七星符，並有其祖姓名年月分明，視之惋悔，乃燒去弧失。                 (改寫自列異傳)
+  group_stem: 昔番陽郡 安樂縣有人姓彭，世以捕射為業，兒隨父入山，父忽蹶然倒地，乃變成白鹿，兒悲號追，鹿超然遠逝，遂失所在，兒於是不捉弓終身。至孫複學射，忽得一白鹿，乃於鹿角間得道家七星符，並有其祖姓名年月分明，視之惋悔，乃燒去弧矢。                 (改寫自列異傳)
   answer:
   - D
   answer_source: answer_key_vlm
@@ -149,6 +149,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 視之惋悔，乃燒去弧失。
+    to: 視之惋悔，乃燒去弧矢。
+    note: 「失」應為「矢」（弓箭）
+    by: ai_review
 - id: doc_113_新北_板橋_國文_g7s2e1_s1_5
   section: 1
   number: 5
@@ -952,7 +957,7 @@ questions:
   number: 27
   type: single
   page: 8
-  stem: 下列何者敘述何者正確？
+  stem: 下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 任職於臺東縣政府的英士，因設籍板橋區故無法購買優惠票
@@ -990,6 +995,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 下列何者敘述何者正確？
+    to: 下列敘述何者正確？
+    note: 語病贅字，多了一個「何者」
+    by: ai_review
 - id: doc_113_新北_板橋_國文_g7s2e1_s2_28
   section: 2
   number: 28

@@ -449,7 +449,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 臺灣在荷蘭統治時期，招募許多漢人來臺開墾。漢人受到受到荷蘭人統治上的嚴重壓迫，終於在 1652 年爆發以何人率眾抗荷的事件？
+  stem: 臺灣在荷蘭統治時期，招募許多漢人來臺開墾。漢人受到荷蘭人統治上的嚴重壓迫，終於在 1652 年爆發以何人率眾抗荷的事件？（原卷有誤，已修正）
   options:
   - label: A
     content: 郭懷一
@@ -475,6 +475,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 漢人受到受到荷蘭人統治上的嚴重壓迫
+    to: 漢人受到荷蘭人統治上的嚴重壓迫
+    note: 重複「受到」，多出二字
+    by: ai_review
 - id: doc_113_新北_桃子腳_社會_g7s1e1_s1_13
   section: 1
   number: 13

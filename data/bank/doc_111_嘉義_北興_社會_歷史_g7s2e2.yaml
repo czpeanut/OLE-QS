@@ -376,14 +376,14 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 承上題，第三憨的選舉運動，出現的時間應該是？
+  stem: 承上題，第三憨的選舉運動，出現的時間應該是？（原卷有誤，已修正）
   options:
   - label: A
     content: 1880 年代
   - label: B
     content: 1910 年代
   - label: C
-    content: 1930 年
+    content: 1930 年代
   - label: D
     content: 1950 年代。
   group_stem: '（第 8 題）日治時期，臺灣流傳著「第一憨，種甘蔗乎會社磅；第二憨，吃菸吹風；第三憨，選舉運動」的俗諺，(其中「吃菸吹風」是指吸食鴉片)，請問第一憨的真正原因是？
@@ -406,6 +406,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 1930 年 (D) 1950 年代
+    to: (C) 1930 年代 (D) 1950 年代
+    note: 原卷漏「代」字
+    by: ai_review
 - id: doc_111_嘉義_北興_社會_歷史_g7s2e2_s1_11
   section: 1
   number: 11
@@ -1553,7 +1558,7 @@ questions:
   number: 42
   type: single
   page: 5
-  stem: 阿惠的男朋友阿均對於嘉義舊監獄頗感興，他在網頁上看到簡介:「1922 年啟用的舊監獄將以青年旅館的形式，對所有觀展進行一種親密的歡迎儀式，以旅館情境式的引導，突破監獄冰冷的形象…」，他決定要好好感受體驗一下。請問阿均參觀後的感想哪一項正確？
+  stem: 阿惠的男朋友阿均對於嘉義舊監獄頗感興趣，他在網頁上看到簡介:「1922 年啟用的舊監獄將以青年旅館的形式，對所有觀展進行一種親密的歡迎儀式，以旅館情境式的引導，突破監獄冰冷的形象…」，他決定要好好感受體驗一下。請問阿均參觀後的感想哪一項正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 監獄本身就是政府的立法機關
@@ -1587,6 +1592,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 阿惠的男朋友阿均對於嘉義舊監獄頗感興，他在網頁上
+    to: 阿惠的男朋友阿均對於嘉義舊監獄頗感興趣，他在網頁上
+    note: 原卷漏「趣」字
+    by: ai_review
 - id: doc_111_嘉義_北興_社會_歷史_g7s2e2_s2_43
   section: 2
   number: 43

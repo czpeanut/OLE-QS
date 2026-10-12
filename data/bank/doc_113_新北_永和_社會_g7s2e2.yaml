@@ -2251,7 +2251,7 @@ questions:
   number: 56
   type: single
   page: 6
-  stem: 根據上述短文，請問音樂劇主辦單位贈送觀眾環保餐具，鼓勵減少垃圾，屬於下列何種社會規範？(L4)
+  stem: 根據上述短文，請問音樂劇主辦單位贈送觀眾環保餐具，鼓勵減少垃圾，屬於下列何種社會規範？(L4)（原卷有誤，已修正）
   options:
   - label: A
     content: 屬於風俗習慣的傳統慣例
@@ -2260,7 +2260,7 @@ questions:
   - label: C
     content: 屬於宗教信仰的戒律
   - label: D
-    content: 屬於於宗教信仰的超自然力量。
+    content: 屬於宗教信仰的超自然力量。
   group_stem: '請根據以下短文，回答52-57 題：
 
     國中同學小偉與小冰、小傑相約，於清明節放假時，到台中國家歌劇院參加網紅牛牛二創的音樂舞台劇，結果小冰答應卻沒有赴約，反而跟家人返鄉掃墓。故小偉與小傑兩人只好自行前往。途中遇到媽祖繞境活動，看到眾多信徒排隊鑽轎，以祈求神明祝福；活動動員超過3000
@@ -2282,6 +2282,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 屬於於宗教信仰的超自然力量。
+    to: (D) 屬於宗教信仰的超自然力量。
+    note: 重複多印一個「於」字
+    by: ai_review
 - id: doc_113_新北_永和_社會_g7s2e2_s3_57
   section: 3
   number: 57

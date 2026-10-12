@@ -593,7 +593,7 @@ questions:
   number: 17
   type: single
   page: 3
-  stem: 在在坐標平面上，若 $(3b,-\frac{1}{2}b+2)$ 在 $y$ 軸上，則此點坐標為何？
+  stem: 在坐標平面上，若 $(3b,-\frac{1}{2}b+2)$ 在 $y$ 軸上，則此點坐標為何？（原卷有誤，已修正）
   options:
   - label: A
     content: $(0,2)$
@@ -620,6 +620,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在在坐標平面上，若
+    to: 在坐標平面上，若
+    note: 多印一個「在」字
+    by: ai_review
 - id: doc_111_新北_崇林_數學_g7s2e1_s1_18
   section: 1
   number: 18
@@ -761,14 +766,14 @@ questions:
   number: 4
   type: fill
   page: 3
-  stem: '如果 $P(a,b)$ 在在坐標平面上的第二象限，試寫出下表中各點在哪一個象限或在哪一坐標軸上。
+  stem: '如果 $P(a,b)$ 在坐標平面上的第二象限，試寫出下表中各點在哪一個象限或在哪一坐標軸上。
 
 
     | 坐標 | $(-a,b)$ | $(-a,0)$ | $(-a,-b)$ |
 
     | :--- | :---: | :---: | :---: |
 
-    | 象限或坐標軸 | E | F | G |'
+    | 象限或坐標軸 | E | F | G |（原卷有誤，已修正）'
   tags:
     chapter:
       publisher: 康軒
@@ -789,6 +794,11 @@ questions:
   - 第四象限
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 如果 P(a,b)在在坐標平面上的第二象限
+    to: 如果 P(a,b)在坐標平面上的第二象限
+    note: 多印一個「在」字
+    by: ai_review
 - id: doc_111_新北_崇林_數學_g7s2e1_s2_5
   section: 2
   number: 5

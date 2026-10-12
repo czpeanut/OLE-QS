@@ -824,7 +824,7 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 「擁有臺灣規模最大的國際機場、眾多工業區吸引人口大量移入，也是目前全臺灣東南亞國際移工人數最的都市。」請問：文中應為下列哪一都市的特色？
+  stem: 「擁有臺灣規模最大的國際機場、眾多工業區吸引人口大量移入，也是目前全臺灣東南亞國際移工人數最多的都市。」請問：文中應為下列哪一都市的特色？（原卷有誤，已修正）
   options:
   - label: A
     content: 桃園市
@@ -851,6 +851,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 國際移工人數最的都市
+    to: 國際移工人數最多的都市
+    note: 漏「多」字
+    by: ai_review
 - id: doc_113_台中_大業_社會_地理_g7s2e3_s3_25
   section: 3
   number: 25
@@ -1743,7 +1748,7 @@ questions:
 
     表(七)
 
-    | 縣市 | 平均每戶可支配所(千元) | 縣市 | 平均每戶可支配所得(千元) |
+    | 縣市 | 平均每戶可支配所得(千元) | 縣市 | 平均每戶可支配所得(千元) |
 
     | --- | --- | --- | --- |
 
@@ -1767,7 +1772,7 @@ questions:
 
     | 彰化縣 | 925 | 金門縣 | 993 |
 
-    | 南投縣 | 879 | 連江縣 | 1,032 |'
+    | 南投縣 | 879 | 連江縣 | 1,032 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 本島南部的住戶多於北部
@@ -1794,6 +1799,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 平均每戶可支配所(千元)
+    to: 平均每戶可支配所得(千元)
+    note: 表格標題漏「得」字
+    by: ai_review
 shared_assets:
 - key: g1_1_7
   label: 題組附圖

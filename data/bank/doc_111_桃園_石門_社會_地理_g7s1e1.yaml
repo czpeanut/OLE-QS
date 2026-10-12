@@ -358,12 +358,12 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 下列有關小比例尺地圖與大比例尺地圖的敘述，何者正確？
+  stem: 下列有關小比例尺地圖與大比例尺地圖的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 小比例尺地圖的縮小程度較小，內容較詳盡
   - label: B
-    content: 同一範圍的地表，以大例尺地圖表示較為清楚
+    content: 同一範圍的地表，以大比例尺地圖表示較為清楚
   - label: C
     content: 繪製世界地圖時，應以大比例尺地圖表示較適當
   - label: D
@@ -385,6 +385,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 同一範圍的地表，以大例尺地圖表示較為清楚
+    to: 同一範圍的地表，以大比例尺地圖表示較為清楚
+    note: 漏「比」字
+    by: ai_review
 - id: doc_111_桃園_石門_社會_地理_g7s1e1_s1_11
   section: 1
   number: 11
@@ -1061,7 +1066,7 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 「旅行，就從地圖開始。首先找一張世界地圖，看看要到的地方，先找到它的(甲)經度，了解目的地和臺灣的時差，再看(乙)緯度，初步推測當地的氣候特色。接著閱讀(丙)小比例尺的街道圖，如果地圖中找不方位，則以地圖的(丁)上方表示北方。最後以車站為中心，依據預定的旅遊時間，畫定一個區域，選擇旅遊景點。」上列敘述中畫線部分，正確的是下列何者？
+  stem: 「旅行，就從地圖開始。首先找一張世界地圖，看看要到的地方，先找到它的(甲)經度，了解目的地和臺灣的時差，再看(乙)緯度，初步推測當地的氣候特色。接著閱讀(丙)小比例尺的街道圖，如果地圖中找不到方位，則以地圖的(丁)上方表示北方。最後以車站為中心，依據預定的旅遊時間，畫定一個區域，選擇旅遊景點。」上列敘述中畫線部分，正確的是下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙丙
@@ -1088,6 +1093,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如果地圖中找不方位，則以地圖的(丁)上方表示北方
+    to: 如果地圖中找不到方位，則以地圖的(丁)上方表示北方
+    note: 漏「到」字
+    by: ai_review
 - id: doc_111_桃園_石門_社會_地理_g7s1e1_s1_28
   section: 1
   number: 28

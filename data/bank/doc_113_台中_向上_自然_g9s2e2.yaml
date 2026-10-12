@@ -989,7 +989,7 @@ questions:
   number: 18
   type: single
   page: 3
-  stem: '西元2022年3月23日凌晨1時41分和1時43分，在台灣東部分別發生了了兩次有感地震，國家級警報也在這兩次地震中發揮作用，使得不少人在半夜時分被驚醒，如下表為這兩次地震的一些資料。
+  stem: '西元2022年3月23日凌晨1時41分和1時43分，在台灣東部分別發生了兩次有感地震，國家級警報也在這兩次地震中發揮作用，使得不少人在半夜時分被驚醒，如下表為這兩次地震的一些資料。
 
     | 發生時間 | 1時41分 | 1時43分 |
 
@@ -1008,10 +1008,10 @@ questions:
     | 台中市震度 | 4級 | 3級 |
 
 
-    有關這兩次地震比較，下列推論何者正確?'
+    有關這兩次地震比較，下列推論何者正確?（原卷有誤，已修正）'
   options:
   - label: A
-    content: 由於這兩次所發生的地震時間很接近，因此可次為同一次地震，而地震規模為兩次的平均值
+    content: 由於這兩次所發生的地震時間很接近，因此可視為同一次地震，而地震規模為兩次的平均值
   - label: B
     content: 由兩次地震震度可知，1時41分的地震釋放較多能量
   - label: C
@@ -1035,6 +1035,15 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 分別發生了了兩次有感地震
+    to: 分別發生了兩次有感地震
+    note: 多印一個「了」字
+    by: ai_review
+  - from: 因此可次為同一次地震
+    to: 因此可視為同一次地震
+    note: 錯字，「次」應為「視」
+    by: ai_review
 - id: doc_113_台中_向上_自然_g9s2e2_s1_19
   section: 1
   number: 19
@@ -1249,12 +1258,12 @@ questions:
     | 十一月二十二日 | 測量的竿影比八月時長，且竿影位於旗竿的北側。 |
 
 
-    根據上述所提供的資料，可推論出下列哪個結論?'
+    根據上述所提供的資料，可推論出下列哪個結論?（原卷有誤，已修正）'
   options:
   - label: A
     content: 此地於正午時皆不會被太陽直射
   - label: B
-    content: 此地五月二十八日時會被太陽直射
+    content: 此地五二月二十八日時會被太陽直射
   - label: C
     content: 丁丁的住家在北半球
   - label: D
@@ -1277,6 +1286,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 月二十二日
+    to: 二月二十二日
+    note: 漏字，應為二月二十二日
+    by: ai_review
 - id: doc_113_台中_向上_自然_g9s2e2_s1_23
   section: 1
   number: 23
@@ -2384,9 +2398,9 @@ questions:
   number: 45
   type: single
   page: 6
-  stem: "根據上述自來水加氯氣的文章，小布和毛毛各自發表的他們的看法:\n  小布:氯氣和水反應產生次氯酸，次氯酸酸在自來水中發生氧化反應，而殺死水裏的病菌。\n\
+  stem: "根據上述自來水加氯氣的文章，小布和毛毛各自發表的他們的看法:\n  小布:氯氣和水反應產生次氯酸，次氯酸在自來水中發生氧化反應，而殺死水裏的病菌。\n\
     \ 毛毛:「自來水中加的氯含量，只要在 0.4 ~ 0.6 ppm左右，就是對人體無害」這表示在 1 公升的自來水中，含有氯含量為 0.4~0.6克就對人體無害。\n\
-    根據小布和毛毛的看法，何者合理?"
+    根據小布和毛毛的看法，何者合理?（原卷有誤，已修正）"
   options:
   - label: A
     content: 小布說法合理
@@ -2417,6 +2431,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 次氯酸酸在自來水中發生氧化反應
+    to: 次氯酸在自來水中發生氧化反應
+    note: 多印一個「酸」字
+    by: ai_review
 - id: doc_113_台中_向上_自然_g9s2e2_s1_46
   section: 1
   number: 46

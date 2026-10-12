@@ -363,14 +363,14 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: (   )下列有關常見電池的敘述，何者正確？
+  stem: (   )下列有關常見電池的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 碳鋅電池內不含任何水分
   - label: B
     content: 鋰離子電池是一次電池，使用後不能再充電
   - label: C
-    content: 鹼性電池以氫氧化鉀為電解夜，放電時間較碳鋅電池長
+    content: 鹼性電池以氫氧化鉀為電解液，放電時間較碳鋅電池長
   - label: D
     content: 電池內的化學物質對環境的危害不大，可以不用回收。
   answer:
@@ -389,6 +389,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 以氫氧化鉀為電解夜，放電時間較碳鋅電池長
+    to: 以氫氧化鉀為電解液，放電時間較碳鋅電池長
+    note: 「電解夜」應為「電解液」
+    by: ai_review
 - id: doc_112_彰化_花壇_自然_g9s2e1_s1_12
   section: 1
   number: 12
@@ -1248,7 +1253,7 @@ questions:
   number: 33
   type: single
   page: 3
-  stem: (   )關於臺灣氣候災害的敘述，何者錯誤？
+  stem: (   )關於臺灣氣候災害的敘述，何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 中南部的整年乾旱，完全是因東北季風無法入侵，與梅雨、颱風來不來無關
@@ -1257,7 +1262,7 @@ questions:
   - label: C
     content: 颱風來襲每每帶來強大的風力，吹起較高的波浪，使海水易衝過堤防
   - label: D
-    content: 若梅雨、颱風帶來豪力，則易造成水災、山崩
+    content: 若梅雨、颱風帶來豪雨，則易造成水災、山崩
   answer:
   - A
   answer_source: answer_key_vlm
@@ -1274,6 +1279,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 若梅雨、颱風帶來豪力，則易造成水災、山崩
+    to: 若梅雨、颱風帶來豪雨，則易造成水災、山崩
+    note: 「豪力」應為「豪雨」
+    by: ai_review
 - id: doc_112_彰化_花壇_自然_g9s2e1_s1_34
   section: 1
   number: 34
@@ -1750,7 +1760,7 @@ questions:
   number: 44
   type: single
   page: 3
-  stem: (   )附圖(一)為某日臺灣附近的地面天氣圖，X、Y 中心氣流方向應分別為為圖(二)中的哪一個？
+  stem: (   )附圖(一)為某日臺灣附近的地面天氣圖，X、Y 中心氣流方向應分別為圖(二)中的哪一個？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲、乙
@@ -1794,6 +1804,11 @@ questions:
     gemini: C
     qwen: B
     gemini_high: C
+  errata:
+  - from: 應分別為為圖(二)中的哪一個？
+    to: 應分別為圖(二)中的哪一個？
+    note: 多印一個「為」字
+    by: ai_review
 - id: doc_112_彰化_花壇_自然_g9s2e1_s1_45
   section: 1
   number: 45

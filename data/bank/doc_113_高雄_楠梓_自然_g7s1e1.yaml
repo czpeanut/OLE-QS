@@ -1815,12 +1815,12 @@ questions:
   number: 47
   type: single
   page: 4
-  stem: 以下關於細胞內各種構造的功能，何者正確？
+  stem: 以下關於細胞內各種構造的功能，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 乙是細胞核，是細胞的生命中樞，其中含有遺傳物質
   - label: B
-    content: 已是葉綠體，可行光合作用，出現在所有植物細胞中
+    content: 己是葉綠體，可行光合作用，出現在所有植物細胞中
   - label: C
     content: 丁是細胞壁，可以使植物細胞在清水中不脹破
   - label: D
@@ -1844,6 +1844,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B)已是葉綠體，可行光合作用
+    to: (B)己是葉綠體，可行光合作用
+    note: 代號「己」誤印為「已」
+    by: ai_review
 - id: doc_113_高雄_楠梓_自然_g7s1e1_s2_48
   section: 2
   number: 48

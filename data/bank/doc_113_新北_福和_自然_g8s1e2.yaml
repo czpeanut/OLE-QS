@@ -270,14 +270,14 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 長歌手取一繩子規律振動2 秒後，產生如右圖的波形，關於此繩波的敘述下列何者正確？
+  stem: 長歌手取一繩子規律振動2 秒後，產生如右圖的波形，關於此繩波的敘述下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 頻率為4 赫茲
   - label: B
     content: 週期為2 秒/次
   - label: C
-    content: 波長4 為公分
+    content: 波長為4 公分
   - label: D
     content: 波速為16 公分/秒。
   assets:
@@ -314,6 +314,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 波長4 為公分
+    to: 波長為4公分
+    note: 語序印反，應為「為4公分」
+    by: ai_review
 - id: doc_113_新北_福和_自然_g8s1e2_s1_6
   section: 1
   number: 6

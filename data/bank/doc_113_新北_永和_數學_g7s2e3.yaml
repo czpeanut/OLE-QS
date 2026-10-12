@@ -667,10 +667,10 @@ questions:
 
     小妍：全班數學小考分數的中位數在70~80分這一組。
 
-    小美：那次小考我考70分，所以我的分數被列在60∼70分這組。'
+    小美：那次小考我考70分，所以我的分數被列在60∼70分這組。（原卷有誤，已修正）'
   options:
   - label: A
-    content: 兩人皆錯誤
+    content: 兩人皆正確
   - label: B
     content: 小妍錯誤，小美正確
   - label: C
@@ -712,6 +712,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (D) 兩人皆錯誤
+    to: (D) 兩人皆正確
+    note: (D)選項誤植，應為兩人皆正確
+    by: ai_review
 - id: doc_113_新北_永和_數學_g7s2e3_s1_14
   section: 1
   number: 14

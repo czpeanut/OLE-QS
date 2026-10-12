@@ -168,7 +168,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 住在臺灣的點點站在右圖中的A 處，面向東方，附近有一高氣壓系統，讓點點感覺風從她的右邊吹過來，此低氣壓中心應位於甲～丁何處？
+  stem: 住在臺灣的點點站在右圖中的A 處，面向東方，附近有一高氣壓系統，讓點點感覺風從她的右邊吹過來，此高氣壓中心應位於甲～丁何處？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -213,6 +213,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 讓點點感覺風從她的右邊吹過來，此低氣壓中心應位於甲～丁何處？
+    to: 讓點點感覺風從她的右邊吹過來，此高氣壓中心應位於甲～丁何處？
+    note: 前後矛盾，低氣壓誤植，應為高氣壓
+    by: ai_review
 - id: doc_113_新北_五峰_自然_g9s2e1_s1_5
   section: 1
   number: 5
@@ -1071,10 +1076,10 @@ questions:
   number: 23
   type: single
   page: 3
-  stem: 有關常用電池的性質，下列敘述何者錯誤？
+  stem: 有關常用電池的性質，下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
-    content: 碳鋅電池跟鹼性電池的中的負極均為鋅殼
+    content: 碳鋅電池跟鹼性電池中的負極均為鋅殼
   - label: B
     content: 鋰離子電池屬於二次電池
   - label: C
@@ -1098,6 +1103,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 碳鋅電池跟鹼性電池的中的負極均為鋅殼
+    to: 碳鋅電池跟鹼性電池中的負極均為鋅殼
+    note: 多印「的」字
+    by: ai_review
 - id: doc_113_新北_五峰_自然_g9s2e1_s1_24
   section: 1
   number: 24

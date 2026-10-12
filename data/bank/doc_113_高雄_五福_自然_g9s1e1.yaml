@@ -107,7 +107,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 右圖為某物體沿直線運動的位置-時間關係圖（x-t 圖），假設向東為正，試問下列敘述何者完成正確？
+  stem: 右圖為某物體沿直線運動的位置-時間關係圖（x-t 圖），假設向東為正，試問下列敘述何者完全正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 0～8 秒期間，物體未發生折返
@@ -151,6 +151,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 試問下列敘述何者完成正確？
+    to: 試問下列敘述何者完全正確？
+    note: 「完成」應為「完全」
+    by: ai_review
 - id: doc_113_高雄_五福_自然_g9s1e1_s1_4
   section: 1
   number: 4
@@ -1092,14 +1097,14 @@ questions:
 
     彎刀炭甲郎：穹道穗宮源對水桶施力1 公斤重，同時水桶對他也有1 公斤重的反作用力，此兩力大小相同方向相反所以可相互抵銷。
 
-    關於三人的敘述下列何者正確？'
+    關於三人的敘述下列何者正確？（原卷有誤，已修正）'
   options:
   - label: A
     content: 只有梅川伊福不合理
   - label: B
     content: 只有文道武吉合理
   - label: C
-    content: 合理三人均不合理
+    content: 三人均不合理
   - label: D
     content: 三人均合理
   tags:
@@ -1119,6 +1124,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 合理三人均不合理
+    to: (C) 三人均不合理
+    note: 選項多印「合理」二字
+    by: ai_review
 - id: doc_113_高雄_五福_自然_g9s1e1_s1_21
   section: 1
   number: 21
@@ -1351,7 +1361,7 @@ questions:
   number: 25
   type: single
   page: 4
-  stem: 鋼珠經0.4 秒掉落地面，若田邊控韓及在同一位置改釋放5 公克的橡皮擦，約經過幾秒後會掉落至地面？
+  stem: 鋼珠經0.4 秒掉落地面，若田邊控韓及在同一位置改釋放5 公克的橡皮擦，約經過幾秒後會掉落至地面？（原卷有誤，已修正）
   options:
   - label: A
     content: '0.1'
@@ -1360,7 +1370,7 @@ questions:
   - label: C
     content: '0.4'
   - label: D
-    content: 08
+    content: '0.8'
   group_stem: 田邊控韓及想了解物體在落體運動時的情形，將10 公克的鋼珠從空中釋放，同時以0.1 秒拍攝一次的相機，拍攝鋼珠落下的過程，如圖為拍攝結果，假設不計空氣阻力，試回答25.~27.
     題：
   shared_asset: g1_25_27
@@ -1381,6 +1391,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 08
+    to: (D) 0.8
+    note: 漏印小數點
+    by: ai_review
 - id: doc_113_高雄_五福_自然_g9s1e1_s1_26
   section: 1
   number: 26
@@ -2422,12 +2437,12 @@ questions:
   page: 8
   stem: "早期曾有一首老歌「來去臺東」，對於台東地區的特色描述得相當清楚，其中歌詞是這樣寫的：  \n你若來台東，請你斟酌看，出名鯉魚山亦有一支石雨傘 \n\
     初鹿之夜，牧場唱情歌，紅頭嶼、三仙台，美麗的海岸 \n鳳梨釋迦柴魚，好吃一大盤，洛神花紅茶，清涼透心肝 \n你若來台東，請你相邀伴，知本洗溫泉予你心快活 \n\
-    \ \n上述歌詞所提到的景觀「石雨傘」，是由一塊較細長的岩石，懸空向上，托住了一塊較大的岩石，所形成的一種特殊的平衡結構。形成的原因是上下的岩石質地不同，上方屬較堅硬的珊瑚礁岩，下方則為稍軟的礫岩，經日積月累侵蝕的結果，變成下面較細、上面較粗的模樣。而其即將因風化作用破壞而消失。請參考上圖石雨傘的外觀，試判斷石雨傘的成因為何？與下列何種地質景觀最相似？"
+    \ \n上述歌詞所提到的景觀「石雨傘」，是由一塊較細長的岩石，懸空向上，托住了一塊較大的岩石，所形成的一種特殊的平衡結構。形成的原因是上下的岩石質地不同，上方屬較堅硬的珊瑚礁岩，下方則為稍軟的礫岩，經日積月累侵蝕的結果，變成下面較細、上面較粗的模樣。而其即將因風化作用破壞而消失。請參考上圖石雨傘的外觀，試判斷石雨傘的成因為何？與下列何種地質景觀最相似？（原卷有誤，已修正）"
   options:
   - label: A
     content: 岩漿冷卻形成，澎湖的柱狀節理
   - label: B
-    content: 差異清蝕，野柳的女王頭
+    content: 差異侵蝕，野柳的女王頭
   - label: C
     content: 海水侵蝕形成，花蓮的清水斷崖
   - label: D
@@ -2466,6 +2481,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 差異清蝕，野柳的女王頭
+    to: (B) 差異侵蝕，野柳的女王頭
+    note: 「清蝕」應為「侵蝕」
+    by: ai_review
 shared_assets:
 - key: g1_25_27
   label: 題組附圖

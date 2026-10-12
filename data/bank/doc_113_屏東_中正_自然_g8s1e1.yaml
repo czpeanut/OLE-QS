@@ -1283,7 +1283,7 @@ questions:
   number: 34
   type: single
   page: 3
-  stem: '四種不同的純物質各取 10 g，於水溫 25 ℃時，分別放入各盛有 10 mL 水的甲、乙、丙、丁四個燒杯中，充分攪拌後，以濾紙過濾未溶解的固體，將濾紙烘乾，稱得未溶解固體的質量如附表十一所示。關於此四杯溶液的敘述，下列何者正確？
+  stem: '四種不同的純物質各取 10 g，於水溫 25 ℃時，分別放入各盛有 10 mL 水的甲、乙、丙、丁四個燒杯中，充分攪拌後，以濾紙過濾未溶解的固體，將濾紙烘乾，稱得未溶解固體的質量如附圖十一所示。關於此四杯溶液的敘述，下列何者正確？
 
 
     附圖十一
@@ -1292,7 +1292,7 @@ questions:
 
     | :--- | :--- | :--- | :--- | :--- |
 
-    | 未溶解量(g) | 4 | 3 | 2 | 1 |'
+    | 未溶解量(g) | 4 | 3 | 2 | 1 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲杯的溶解度最小
@@ -1319,6 +1319,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 稱得未溶解固體的質量如附表十一所示。
+    to: 稱得未溶解固體的質量如附圖十一所示。
+    note: 圖表標籤為附圖十一，題幹寫附表十一
+    by: ai_review
 - id: doc_113_屏東_中正_自然_g8s1e1_s1_35
   section: 1
   number: 35
@@ -1938,7 +1943,7 @@ questions:
   number: 50
   type: single
   page: 4
-  stem: 關於柔甄推薦的「15度」的梅酒，此標示這代表什麼意思？
+  stem: 關於柔甄推薦的「15度」的梅酒，此標示代表什麼意思？（原卷有誤，已修正）
   options:
   - label: A
     content: 酒精的重量百分濃度為15%
@@ -1966,6 +1971,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於柔甄推薦的「15度」的梅酒，此標示這代表什麼意思？
+    to: 關於柔甄推薦的「15度」的梅酒，此標示代表什麼意思？
+    note: 多印「這」字
+    by: ai_review
 shared_assets:
 - key: g2_41_45
   label: 題組附圖

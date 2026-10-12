@@ -1158,14 +1158,14 @@ questions:
   number: 34
   type: single
   page: 4
-  stem: 根據本文內容，下列敘述何者正確？
+  stem: 根據本文內容，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 在競選活動結束之後、開票結果出爐之前，川普即向麥當勞遞「辭呈」，說他要去白宮上班
   - label: B
     content: 川普在競選期間跑去開垃圾車，是為了紀念卡馬拉和拜登，並表示自己對拜登發言的認同
   - label: C
-    content: 在辯論結束後後，賀錦麗民調領先川普，原因是電視專訪中，賀錦麗言而無物，內容太空洞
+    content: 在辯論結束後，賀錦麗民調領先川普，原因是電視專訪中，賀錦麗言而無物，內容太空洞
   - label: D
     content: 川普當選後立刻展現力量與霸氣，他的靈活應變完全呈現速度感，也把領袖魅力發揮到極致
   group_stem: '「天下武功，唯○不破：川普政治學」
@@ -1200,6 +1200,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在辯論結束後後，賀錦麗民調領先川普
+    to: 在辯論結束後，賀錦麗民調領先川普
+    note: 多印一個「後」字
+    by: ai_review
 - id: doc_113_台北_誠正_國文_g8s1e2_s2_35
   section: 2
   number: 35

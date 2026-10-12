@@ -956,7 +956,7 @@ questions:
   number: 29
   type: single
   page: 3
-  stem: 根據下圖的實驗結果判斷，她最有可能選取的是哪一個物質？
+  stem: 根據下圖的實驗結果判斷，她最有可能選取的是哪一個物質？（原卷有誤，已修正）
   options:
   - label: A
     content: C
@@ -966,7 +966,7 @@ questions:
     content: Cu
   - label: D
     content: Ag
-  group_stem: 【題組】小官取石墨、硫、銅和銀四種物質中的一種，來進行元素性質與分類的實驗，並且做了詳細的觀察和實驗記錄，請依序回答36~37題：
+  group_stem: 【題組】小官取石墨、硫、銅和銀四種物質中的一種，來進行元素性質與分類的實驗，並且做了詳細的觀察和實驗記錄，請依序回答29~30題：
   assets:
   - key: s1_29_f1
     kind: figure
@@ -1000,6 +1000,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 請依序回答36~37題：
+    to: 請依序回答29~30題：
+    note: 題號引用錯誤，應為29~30題
+    by: ai_review
 - id: doc_113_新北_桃子腳_自然_g8s2e1_s1_30
   section: 1
   number: 30
@@ -1028,7 +1033,7 @@ questions:
     content: 丙，因為紅棕色又可導電
   - label: D
     content: 丁，因為金屬銅是黃色的
-  group_stem: 【題組】小官取石墨、硫、銅和銀四種物質中的一種，來進行元素性質與分類的實驗，並且做了詳細的觀察和實驗記錄，請依序回答36~37題：
+  group_stem: 【題組】小官取石墨、硫、銅和銀四種物質中的一種，來進行元素性質與分類的實驗，並且做了詳細的觀察和實驗記錄，請依序回答29~30題：
   uncertain_spans:
   - 內容與原卷文字層不符（吻合 80%）
   answer:

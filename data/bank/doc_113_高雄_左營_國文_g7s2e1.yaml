@@ -185,7 +185,7 @@ questions:
   page: 1
   stem: '小八貓欲引用杜甫〈旅夜書懷〉的詩句，請協助他填入下列幾個字：「名豈文章著？官應老病□，□□何
 
-    所似？天地一沙□。•」'
+    所似？天地一沙□。」（原卷有誤，已修正）'
   options:
   - label: A
     content: 休／飄飄／鷗
@@ -215,6 +215,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 天地一沙□。•
+    to: 天地一沙□。
+    note: 句末多印了黑點符號
+    by: ai_review
 - id: doc_113_高雄_左營_國文_g7s2e1_s2_6
   section: 2
   number: 6

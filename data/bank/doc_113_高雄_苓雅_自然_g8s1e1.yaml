@@ -1912,10 +1912,10 @@ questions:
   type: single
   page: 5
   stem: 已知酒精75％時消毒效果最佳。若目前儲藏櫃中有一罐500mL、95％的藥用酒精，要如何配製成消毒效果最佳的75% 酒精？（假設體積有加成性。例如：10mL
-    酒精＋10mL 水＝20mL）
+    酒精＋10mL 水＝20mL）（原卷有誤，已修正）
   options:
   - label: A
-    content: 取150 毫升95%藥用酒精加入約190 毫升的水
+    content: 取150 毫升95%藥用酒精加入約190 毫升的水水
   - label: B
     content: 取150 毫升95%藥用酒精加入約40 毫升的水
   - label: C
@@ -1946,6 +1946,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 約250 毫升的
+    to: 約250 毫升的水
+    note: 選項句尾漏字
+    by: ai_review
 shared_assets:
 - key: g1_9_10
   label: 題組附圖

@@ -1656,14 +1656,14 @@ questions:
   number: 46
   type: single
   page: 5
-  stem: 請問下列何者的訊息傳遞途徑，為受器→感覺神經元→大腦→脊髓→運動神經元→動器？
+  stem: 請問下列何者的訊息傳遞途徑，為受器→感覺神經元→大腦→脊髓→運動神經元→動器？（原卷有誤，已修正）
   options:
   - label: A
     content: 曉元不小心摸到滾燙的鐵板，立刻縮手
   - label: B
     content: 千純看到一顆飛過來的球，抬腳將球踢出
   - label: C
-    content: 正在上數學課的梅菱，思考著老師所解講的題目解法
+    content: 正在上數學課的梅菱，思考著老師所講解的題目解法
   - label: D
     content: 芝妍在打球，腳被蚊子叮覺得癢用手去抓。
   group_stem: '【題組二】雅雯打完疫苗後的兩天，就是陽明國中的線上學習課程了，雅雯盡可能在前一天不熬夜唸書，
@@ -1688,6 +1688,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 思考著老師所解講的題目解法
+    to: 思考著老師所講解的題目解法
+    note: 「解講」應為「講解」
+    by: ai_review
 - id: doc_113_高雄_陽明_自然_g7s1e3_s1_47
   section: 1
   number: 47

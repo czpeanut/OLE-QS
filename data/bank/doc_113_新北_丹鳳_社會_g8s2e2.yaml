@@ -650,14 +650,14 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 關於蘇伊士運河的敘述，下列敘述何者正確？
+  stem: 關於蘇伊士運河的敘述，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 由以色列收取運河費用
   - label: B
     content: 橫跨在亞洲、歐洲交界處
   - label: C
-    content: 連結亞洲和地歐洲的最短路線
+    content: 連結亞洲和歐洲的最短路線
   - label: D
     content: 將波斯灣沿岸的石油運往歐洲的必經之路。
   tags:
@@ -677,6 +677,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 連結亞洲和地歐洲的最短路線
+    to: 連結亞洲和歐洲的最短路線
+    note: 多印「地」字
+    by: ai_review
 - id: doc_113_新北_丹鳳_社會_g8s2e2_s1_17
   section: 1
   number: 17
@@ -1312,10 +1317,10 @@ questions:
   number: 34
   type: single
   page: 4
-  stem: (承上題)不平等條約內容裏，最早被收回的是下列那一項權利？
+  stem: (承上題)不平等條約內容裏，最早被收回的是下列那一項權利？（原卷有誤，已修正）
   options:
   - label: A
-    content: 領事裁判權權
+    content: 領事裁判權
   - label: B
     content: 租界權
   - label: C
@@ -1347,12 +1352,17 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (A) 領事裁判權權
+    to: (A) 領事裁判權
+    note: 多印「權」字
+    by: ai_review
 - id: doc_113_新北_丹鳳_社會_g8s2e2_s3_35
   section: 3
   number: 35
   type: single
   page: 5
-  stem: 小明在上8 年級公民課時，了解到在2003 年以前若盜用他人帳號密碼，並入侵電腦，變更他人電磁紀錄，無法以(甲)罪，對此人提告。主樣是我國《刑法》具有(乙)原則?此原則也是刑法最重要的精神!請問(甲)及(乙)各應填入何項才正確?
+  stem: 小明在上8 年級公民課時，了解到在2003 年以前若盜用他人帳號密碼，並入侵電腦，變更他人電磁紀錄，無法以(甲)罪，對此人提告。主要是我國《刑法》具有(乙)原則?此原則也是刑法最重要的精神!請問(甲)及(乙)各應填入何項才正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 甲:妨害電腦使用罪；乙:無罪推定原則
@@ -1379,6 +1389,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 無法以(甲)罪，對此人提告。主樣是我國《刑法》具有
+    to: 無法以(甲)罪，對此人提告。主要是我國《刑法》具有
+    note: 「主樣」應為「主要」
+    by: ai_review
 - id: doc_113_新北_丹鳳_社會_g8s2e2_s3_36
   section: 3
   number: 36

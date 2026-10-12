@@ -633,7 +633,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 根據上述資料，下列對於文章解讀何者「較不適當」？
+  stem: 根據上述資料，下列對於文章解讀何者「較不適當」？（原卷有誤，已修正）
   options:
   - label: A
     content: 以逃離國家分布可知，多數難民為猶太、波斯人
@@ -642,7 +642,7 @@ questions:
   - label: C
     content: 從逃離路程推測，修克拉．阿力扎達應是阿富汗人
   - label: D
-    content: 藉由統計地圖觀察，敘利亞難民數量已超國200 萬人。
+    content: 藉由統計地圖觀察，敘利亞難民數量已超過200 萬人。
   group_stem: '※根據下方難民遷移路線圖(粗細表示數量)，以及西亞難民口述資料。請回答第12～13題。
 
     我的名字是修克拉．阿力扎達（Shookrullah Alizadah），我想告訴大家我三年前逃亡的故事。這趟路花了大約4個月的時間，爸媽塞了一些錢給走私犯，因此才順利地抵達德國。
@@ -666,6 +666,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 敘利亞難民數量已超國200 萬人
+    to: 敘利亞難民數量已超過200 萬人
+    note: 「超國」應為「超過」
+    by: ai_review
 - id: doc_113_新北_五峰_社會_g8s2e2_s1_13
   section: 1
   number: 13
@@ -994,7 +999,7 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: 慈欣和羽璇因為蔣中正的政策吵得不可交，請問何者不是1937 年蔣中正的政策？
+  stem: 慈欣和羽璇因為蔣中正的政策吵得不可開交，請問何者不是1937 年蔣中正的政策？（原卷有誤，已修正）
   options:
   - label: A
     content: 先安內後攘外
@@ -1022,6 +1027,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 政策吵得不可交，請問何者不是
+    to: 政策吵得不可開交，請問何者不是
+    note: 漏「開」字
+    by: ai_review
 - id: doc_113_新北_五峰_社會_g8s2e2_s2_23
   section: 2
   number: 23

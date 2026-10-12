@@ -585,7 +585,7 @@ questions:
   number: 17
   type: single
   page: 3
-  stem: 中央氣象屬若要對一地的天氣做預報，需要參考哪些圖片?
+  stem: 中央氣象署若要對一地的天氣做預報，需要參考哪些圖片?（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙
@@ -630,6 +630,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 中央氣象屬若要對一地的天氣做預報
+    to: 中央氣象署若要對一地的天氣做預報
+    note: 氣象「署」誤印為「屬」
+    by: ai_review
 - id: doc_113_高雄_左營_社會_g7s1e3_s3_18
   section: 3
   number: 18
@@ -1192,12 +1197,12 @@ questions:
   number: 29
   type: single
   page: 4
-  stem: 雲林縣二崙鄉的旭光國小，由於靠近濁水溪只有2公里，因此每年冬天西瓜休耕期，濁水溪就成為光禿禿一片，這時只要季風一來，讓居民每逢此時總過著「吃飯拌沙」的日子，請問：造成此種現象與當地自然條件何者「無關」？
+  stem: 雲林縣二崙鄉的旭光國小，由於靠近濁水溪只有2公里，因此每年冬天西瓜休耕期，濁水溪就成為光禿禿一片，這時只要季風一來，讓居民每逢此時總過著「吃飯拌沙」的日子，請問：造成此種現象與當地自然條件何者「無關」？（原卷有誤，已修正）
   options:
   - label: A
     content: 上游攔河堰的興建，導致下游河水減少
   - label: B
-    content: 西北季風夾帶沙塵從中國一代飄揚而來
+    content: 西北季風夾帶沙塵從中國一帶飄揚而來
   - label: C
     content: 坡陡流急導致河川含沙量大
   - label: D
@@ -1219,6 +1224,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 西北季風夾帶沙塵從中國一代飄揚而來
+    to: 西北季風夾帶沙塵從中國一帶飄揚而來
+    note: 「一帶」誤印為「一代」
+    by: ai_review
 - id: doc_113_高雄_左營_社會_g7s1e3_s3_30
   section: 3
   number: 30

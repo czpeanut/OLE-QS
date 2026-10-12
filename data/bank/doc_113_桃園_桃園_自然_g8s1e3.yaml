@@ -447,7 +447,7 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: 將質量均為 20 公克，溫度分別為 10℃與 50℃的兩杯水混合在一起時，兩杯水混合後的平衡溫度會在落在 10～50℃，如果熱水質量變成大於冷水，則平衡溫度較接近原來熱水還是冷水的溫度？
+  stem: 將質量均為 20 公克，溫度分別為 10℃與 50℃的兩杯水混合在一起時，兩杯水混合後的平衡溫度會落在 10～50℃，如果熱水質量變成大於冷水，則平衡溫度較接近原來熱水還是冷水的溫度？（原卷有誤，已修正）
   options:
   - label: A
     content: 接近冷水，溫度在 10 ℃以下
@@ -474,6 +474,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 兩杯水混合後的平衡溫度會在落在 10～50℃
+    to: 兩杯水混合後的平衡溫度會落在 10～50℃
+    note: 多印「在」字
+    by: ai_review
 - id: doc_113_桃園_桃園_自然_g8s1e3_s1_14
   section: 1
   number: 14

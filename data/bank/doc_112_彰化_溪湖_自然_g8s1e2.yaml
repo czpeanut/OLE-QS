@@ -29,7 +29,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 下列關於橫波性質的描述，何者正確？
+  stem: 下列關於橫波性質的描述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 又稱為疏密波
@@ -38,7 +38,7 @@ questions:
   - label: C
     content: 聲波就是一種橫波
   - label: D
-    content: 相鄰兩波風與波谷間的距離稱為橫波的波長
+    content: 相鄰兩波峰與波谷間的距離稱為橫波的波長
   tags:
     chapter:
       publisher: 翰林
@@ -56,6 +56,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 相鄰兩波風與波谷間的距離
+    to: 相鄰兩波峰與波谷間的距離
+    note: 「波風」應為「波峰」
+    by: ai_review
 - id: doc_112_彰化_溪湖_自然_g8s1e2_s1_2
   section: 1
   number: 2
@@ -1741,14 +1746,14 @@ questions:
   number: 39
   type: single
   page: 3
-  stem: 若燭火由丁處往甲處移動，愈來愈遠離透鏡，成像將會有何變化？
+  stem: 若燭火由丁處往甲處移動，愈來愈遠離透鏡，成像將會有何變化？（原卷有誤，已修正）
   options:
   - label: A
     content: 愈來愈左
   - label: B
     content: 愈來愈右
   - label: C
-    content: 倒愈來愈大
+    content: 像愈來愈大
   - label: D
     content: 正立變倒立
   group_stem: '【題組二】
@@ -1773,6 +1778,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 倒愈來愈大
+    to: (C) 像愈來愈大
+    note: 「倒」應為「像」
+    by: ai_review
 - id: doc_112_彰化_溪湖_自然_g8s1e2_s2_40
   section: 2
   number: 40

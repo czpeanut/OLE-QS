@@ -626,7 +626,7 @@ questions:
   number: 3
   type: fill
   page: 5
-  stem: 3. This books c_______es history with art in a special way. [課本例句]
+  stem: 3. This book c_______es history with art in a special way. [課本例句]（原卷有誤，已修正）
   ai_answers:
     gemini: combines
     qwen: combines
@@ -644,12 +644,17 @@ questions:
       chapter: 綜合
     textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+  errata:
+  - from: This books c_______es history with art
+    to: This book c_______es history with art
+    note: This後名詞應為單數book
+    by: ai_review
 - id: doc_113_高雄_五甲_英語_g9s1e2_s3_4
   section: 3
   number: 4
   type: fill
   page: 5
-  stem: 4. Biil has an i_______w for a teaching job next week. [課本例句]
+  stem: 4. Bill has an i_______w for a teaching job next week. [課本例句]（原卷有誤，已修正）
   ai_answers:
     gemini: interview
     qwen: interview
@@ -667,6 +672,11 @@ questions:
       chapter: 綜合
     textbook: 九上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
+  errata:
+  - from: Biil has an i_______w
+    to: Bill has an i_______w
+    note: 人名Biil應為Bill
+    by: ai_review
 - id: doc_113_高雄_五甲_英語_g9s1e2_s3_5
   section: 3
   number: 5

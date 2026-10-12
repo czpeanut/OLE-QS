@@ -1542,10 +1542,10 @@ questions:
   number: 41
   type: single
   page: 5
-  stem: 關於甲、乙、丙三則的說明，下列何者正確？
+  stem: 關於甲、乙、丙三則的說明，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 「接天蓮葉無窮碧」所描繪之植物與「鬆排山面千重翠」相同
+    content: 「接天蓮葉無窮碧」所描繪之植物與「松排山面千重翠」相同
   - label: B
     content: 「映日荷花別樣紅」所描繪之景象與「日出江花紅勝火」相近
   - label: C
@@ -1584,6 +1584,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「接天蓮葉無窮碧」所描繪之植物與「鬆排山面千重翠」相同
+    to: 「接天蓮葉無窮碧」所描繪之植物與「松排山面千重翠」相同
+    note: 鬆為簡繁轉換誤字，應為松樹的松
+    by: ai_review
 - id: doc_113_新北_福和_國文_g9s1e3_s2_42
   section: 2
   number: 42

@@ -778,10 +778,10 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 關於絕句和律詩的描述，下列何者最為正確？
+  stem: 關於絕句和律詩的描述，下列何者最為正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: )兩者皆盛行於唐代，合稱古體詩
+    content: 兩者皆盛行於唐代，合稱古體詩
   - label: B
     content: 一首五言律詩總共會有四十個字，一首七言絕句則只有二十個字
   - label: C
@@ -805,6 +805,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) )兩者皆盛行於唐代
+    to: (A) 兩者皆盛行於唐代
+    note: 多印一個右括號
+    by: ai_review
 - id: doc_112_高雄_大灣_國文_g7s2e2_s3_12
   section: 3
   number: 12

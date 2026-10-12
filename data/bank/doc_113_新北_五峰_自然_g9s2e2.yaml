@@ -75,14 +75,14 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 2.義大利南部的那不勒斯發生規模4.4，地震深度3 公里的極淺層地震，造成當地居民恐慌，結果此一新聞被台灣網民取笑，認為當地居民小題大作。下列敘述何者正確?
+  stem: 2.義大利南部的那不勒斯發生規模4.4，地震深度3 公里的極淺層地震，造成當地居民恐慌，結果此一新聞被台灣網民取笑，認為當地居民小題大作。下列敘述何者正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 台灣離義大利很遠，所以在台灣的地震規模將小於4.4 。
   - label: B
     content: 台灣將地震強度分成10 個等級，4.4 算中間偏小的地震。
   - label: C
-    content: 不同的地震生發生時，地震深度越淺的地震其搖晃程度將越大。
+    content: 不同的地震發生時，地震深度越淺的地震其搖晃程度將越大。
   - label: D
     content: 震度與地震釋放的能量及深淺沒有絕對關係，一般離震央越近其震度越大。
   tags:
@@ -102,6 +102,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 不同的地震生發生時，地震深度越淺的地震其搖晃程度將越大。
+    to: 不同的地震發生時，地震深度越淺的地震其搖晃程度將越大。
+    note: 多印一個「生」字
+    by: ai_review
 - id: doc_113_新北_五峰_自然_g9s2e2_s1_3
   section: 1
   number: 3

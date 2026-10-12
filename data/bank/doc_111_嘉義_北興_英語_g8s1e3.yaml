@@ -400,7 +400,7 @@ questions:
   number: 27
   type: single
   page: 3
-  stem: (   )27. Ted spent two hour    basketball every day. He plays it well.
+  stem: (   )27. Ted spent two hours    basketball every day. He plays it well.（原卷有誤，已修正）
   options:
   - label: A
     content: practice
@@ -427,6 +427,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Ted spent two hour    basketball every day.
+    to: Ted spent two hours    basketball every day.
+    note: two後接複數名詞hours
+    by: ai_review
 - id: doc_111_嘉義_北興_英語_g8s1e3_s4_28
   section: 4
   number: 28

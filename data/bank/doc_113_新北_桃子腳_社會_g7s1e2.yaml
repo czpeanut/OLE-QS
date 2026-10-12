@@ -1025,7 +1025,7 @@ questions:
   number: 29
   type: single
   page: 3
-  stem: (圖一)為某種海岸類型的土地利用方式，請問該於該種海岸類型，下列何者敘述正確？
+  stem: (圖一)為某種海岸類型的土地利用方式，請問關於該種海岸類型，下列何者敘述正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 海岸線較曲折
@@ -1053,6 +1053,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 請問該於該種海岸類型，下列何者敘述正確？
+    to: 請問關於該種海岸類型，下列何者敘述正確？
+    note: 「該於」應為「關於」
+    by: ai_review
 - id: doc_113_新北_桃子腳_社會_g7s1e2_s2_30
   section: 2
   number: 30

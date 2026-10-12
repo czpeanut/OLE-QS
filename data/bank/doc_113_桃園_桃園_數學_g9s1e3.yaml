@@ -66,14 +66,14 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 下列敘述，何者不一定正確？
+  stem: 下列敘述，何者不一定正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 外心是三角形三邊中垂線的交點
   - label: B
     content: 不共線的3 點，必可找到一個圓通過這3 點
   - label: C
-    content: 外心到三形的三頂點等距
+    content: 外心到三角形的三頂點等距
   - label: D
     content: 外心必在三角形內部
   tags:
@@ -93,6 +93,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 外心到三形的三頂點等距
+    to: 外心到三角形的三頂點等距
+    note: 漏字，三形應為三角形
+    by: ai_review
 - id: doc_113_桃園_桃園_數學_g9s1e3_s1_3
   section: 1
   number: 3
@@ -645,7 +650,7 @@ questions:
   number: 10
   type: fill
   page: 2
-  stem: 某三角形的面積為192 平方公尺，若其內切圓之半俓為6 公尺，則此三角形的周長為_______公尺。
+  stem: 某三角形的面積為192 平方公尺，若其內切圓之半徑為6 公尺，則此三角形的周長為_______公尺。（原卷有誤，已修正）
   tags:
     chapter:
       publisher: 翰林
@@ -663,6 +668,11 @@ questions:
   - '64'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若其內切圓之半俓為6 公尺
+    to: 若其內切圓之半徑為6 公尺
+    note: 錯字，半俓應為半徑
+    by: ai_review
 - id: doc_113_桃園_桃園_數學_g9s1e3_s2_11
   section: 2
   number: 11

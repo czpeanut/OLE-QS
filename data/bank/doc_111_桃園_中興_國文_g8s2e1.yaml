@@ -1154,10 +1154,10 @@ questions:
   number: 31
   type: single
   page: 5
-  stem: 依據本文及圖二，下列敘述何者錯誤？
+  stem: 依據本文及圖二，下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
-    content: 作者將災害分為「自然災害」、「生物性災害」以及「其他成因引發的災害三類
+    content: 作者將災害分為「自然災害」、「生物性災害」以及「其他成因引發的災害」三類
   - label: B
     content: 作者認為戰爭造成人口大量死亡會導致瘟疫流行
   - label: C
@@ -1189,6 +1189,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「其他成因引發的災害三類
+    to: 「其他成因引發的災害」三類
+    note: 漏右引號
+    by: ai_review
 - id: doc_111_桃園_中興_國文_g8s2e1_s3_1
   section: 3
   number: 1

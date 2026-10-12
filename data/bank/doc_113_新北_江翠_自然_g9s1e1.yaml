@@ -948,7 +948,7 @@ questions:
   number: 25
   type: single
   page: 3
-  stem: 籃球比賽開球時，裁判將球由a 點垂直向上拋向b 點，再落回至a 點，若不計空氣阻力，請問關於此運過程中的描述，下列何者錯誤？
+  stem: 籃球比賽開球時，裁判將球由a 點垂直向上拋向b 點，再落回至a 點，若不計空氣阻力，請問關於此運動過程中的描述，下列何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: a 點上拋至b 點的過程中，不受重力作用
@@ -992,6 +992,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問關於此運過程中的描述，下列何者錯誤？
+    to: 請問關於此運動過程中的描述，下列何者錯誤？
+    note: 漏字，應為「運動過程」
+    by: ai_review
 - id: doc_113_新北_江翠_自然_g9s1e1_s1_26
   section: 1
   number: 26
@@ -1291,13 +1296,13 @@ questions:
   number: 32
   type: single
   page: 4
-  stem: '一個質量為5 公斤的物體作直線運動，其速度-時間關係圖（v-t 圖）如圖所示。阿翰、小法及小豈分對此物體所受的合力提出看法，其敘述如下：
+  stem: '一個質量為5 公斤的物體作直線運動，其速度-時間關係圖（v-t 圖）如圖所示。阿翰、小法及小豈分別對此物體所受的合力提出看法，其敘述如下：
 
     阿翰：在5～10 秒與10～15 秒，這兩段時間內，物體所受的合力大小相同，但方向相同。
 
     小法： 在15～20 秒間，物體所受的合力為零。
 
-    小豈： 在0～5 秒與5～10 秒，這兩段時間內，物體所受的合力大小相同，但方向相反。'
+    小豈： 在0～5 秒與5～10 秒，這兩段時間內，物體所受的合力大小相同，但方向相反。（原卷有誤，已修正）'
   options:
   - label: A
     content: 三人均合理
@@ -1341,6 +1346,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 阿翰、小法及小豈分對此物體所受的合力提出看法
+    to: 阿翰、小法及小豈分別對此物體所受的合力提出看法
+    note: 漏字，應為「分別對此」
+    by: ai_review
 - id: doc_113_新北_江翠_自然_g9s1e1_s1_33
   section: 1
   number: 33

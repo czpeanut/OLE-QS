@@ -828,7 +828,7 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: What are the rabbits from?
+  stem: Where are the rabbits from?（原卷有誤，已修正）
   options:
   - label: A
     content: ''
@@ -924,6 +924,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini-only
+  errata:
+  - from: What are the rabbits from?
+    to: Where are the rabbits from?
+    note: 詢問來自何處應為Where
+    by: ai_review
 - id: doc_112_高雄_大樹_英語_g7s1e1_s3_20
   section: 3
   number: 20

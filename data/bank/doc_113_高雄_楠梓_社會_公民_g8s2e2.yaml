@@ -235,13 +235,13 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: '若僅以「年齡」來判斷下列三人的法律行為能力及責任責任能力，其年齡由小至大依序為何？
+  stem: '若僅以「年齡」來判斷下列三人的法律行為能力及責任能力，其年齡由小至大依序為何？
 
     艾斯：「我是完全行為能力人，而且我已經有公職人員的投票權」
 
     薩波：「無行為能力人也是無責任能力人」
 
-    魯夫：「我是限制行為能力人，也是無責任能力人」'
+    魯夫：「我是限制行為能力人，也是無責任能力人」（原卷有誤，已修正）'
   options:
   - label: A
     content: 艾斯、薩波、魯夫
@@ -268,6 +268,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若僅以「年齡」來判斷下列三人的法律行為能力及責任責任能力
+    to: 若僅以「年齡」來判斷下列三人的法律行為能力及責任能力
+    note: 多印「責任」二字
+    by: ai_review
 - id: doc_113_高雄_楠梓_社會_公民_g8s2e2_s1_8
   section: 1
   number: 8

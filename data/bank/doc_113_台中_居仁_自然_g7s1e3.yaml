@@ -801,14 +801,14 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: (20)下列敘述何者錯誤？
+  stem: (20)下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 佐助想到父母不禁悲從中來與圖(三)中的ㄅ有關
   - label: B
     content: 陽光照到鳴人，他不禁眨眼，此時眨眼是一種反射，由圖(三)的ㄈ控制
   - label: C
-    content: 小櫻常肌肉抽蓄，可能與圖(一)中丙腺體的激素分泌不足有關
+    content: 小櫻常肌肉抽搐，可能與圖(一)中丙腺體的激素分泌不足有關
   - label: D
     content: 圖(一)中甲腺體所分泌的生長激素可使佐助長高。
   group_stem: 5. 卡卡西帶著鳴人、佐助、小櫻出任務，搭船遠渡重洋，但在路途中遇到曉的攻擊不得已而棄船，一行人歷經千辛萬苦後終於上岸執行任務（改編自火影忍者），試依據上文及圖(一)、圖(二)、圖(三)回答下列問題：
@@ -830,6 +830,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C)小櫻常肌肉抽蓄，可能與圖(一)中丙腺體的激素分泌不足有關
+    to: (C)小櫻常肌肉抽搐，可能與圖(一)中丙腺體的激素分泌不足有關
+    note: 抽搐誤印為抽蓄
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g7s1e3_s1_21
   section: 1
   number: 21
@@ -1822,7 +1827,7 @@ questions:
   number: 47
   type: single
   page: 5
-  stem: 47. 漸凍人（ASL）是一種漸進且致命的運動神經元疾病，罹患此疾患者主要是運動神經元萎縮，其感覺神經並未受損，雖然患者四肢無法動彈，也無法自行呼吸，但自始自終意識卻非常清楚，目前已研發藥物可以延緩漸凍人惡化，但仍無法根治。下列何者可能與漸凍人同為運動神經元受損的狀況？
+  stem: 47. 漸凍人（ALS）是一種漸進且致命的運動神經元疾病，罹患此疾患者主要是運動神經元萎縮，其感覺神經並未受損，雖然患者四肢無法動彈，也無法自行呼吸，但自始自終意識卻非常清楚，目前已研發藥物可以延緩漸凍人惡化，但仍無法根治。下列何者可能與漸凍人同為運動神經元受損的狀況？（原卷有誤，已修正）
   options:
   - label: A
     content: 植物人無法言語
@@ -1849,6 +1854,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 47. 漸凍人（ASL）是一種漸進且致命的運動神經元疾病
+    to: 47. 漸凍人（ALS）是一種漸進且致命的運動神經元疾病
+    note: 肌萎縮性脊髓側索硬化症英文縮寫為ALS
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g7s1e3_s2_48
   section: 2
   number: 48

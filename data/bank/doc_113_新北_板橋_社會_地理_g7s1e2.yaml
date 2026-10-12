@@ -580,7 +580,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 請問下列哪個地方的等高線，繪製起來屬於「海拔高度低、相對高度小」地描述？
+  stem: 請問下列哪個地方的等高線，繪製起來屬於「海拔高度低、相對高度小」的描述？（原卷有誤，已修正）
   options:
   - label: A
     content: 玉山國家公園
@@ -607,6 +607,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 繪製起來屬於「海拔高度低、相對高度小」地描述？
+    to: 繪製起來屬於「海拔高度低、相對高度小」的描述？
+    note: 「地」為錯字，應作「的」
+    by: ai_review
 shared_assets:
 - key: g1_12_13
   label: 題組附圖

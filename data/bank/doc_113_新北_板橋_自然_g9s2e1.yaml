@@ -1532,10 +1532,10 @@ questions:
   number: 33
   type: single
   page: 5
-  stem: 燃料電池與二次電池的比較，下列敘述何者正確？
+  stem: 燃料電池與二次電池的比較，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 燃料電池可以向二次電池一樣充電
+    content: 燃料電池可以像二次電池一樣充電
   - label: B
     content: 燃料電池需要持續提供燃料才能發電
   - label: C
@@ -1570,6 +1570,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 燃料電池可以向二次電池一樣充電
+    to: 燃料電池可以像二次電池一樣充電
+    note: 「向」為錯別字，應為「像」
+    by: ai_review
 - id: doc_113_新北_板橋_自然_g9s2e1_s2_34
   section: 2
   number: 34

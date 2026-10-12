@@ -735,7 +735,7 @@ questions:
   number: 35
   type: single
   page: 3
-  stem: 35. Which statement (描述) not true?
+  stem: 35. Which statement (描述)is not true?（原卷有誤，已修正）
   options:
   - label: A
     content: Color wheel helps artists know which colors they want to use together.
@@ -775,6 +775,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Which statement (描述) not true?
+    to: Which statement (描述) is not true?
+    note: 漏印 be 動詞 is
+    by: ai_review
 - id: doc_111_桃園_中興_英語_g8s1e1_s4_36
   section: 4
   number: 36

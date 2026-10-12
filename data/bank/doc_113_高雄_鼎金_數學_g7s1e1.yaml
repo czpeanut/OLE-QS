@@ -61,7 +61,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 在數線上，己知 P 點的坐標為 3，若 Q 點在 P 點右方，且與 P 點的距離為 5，則 Q 點的坐標為何？
+  stem: 在數線上，已知 P 點的坐標為 3，若 Q 點在 P 點右方，且與 P 點的距離為 5，則 Q 點的坐標為何？（原卷有誤，已修正）
   options:
   - label: A
     content: '3'
@@ -88,6 +88,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在數線上，己知 P 點的坐標為 3
+    to: 在數線上，已知 P 點的坐標為 3
+    note: 「己」應為「已」
+    by: ai_review
 - id: doc_113_高雄_鼎金_數學_g7s1e1_s1_3
   section: 1
   number: 3

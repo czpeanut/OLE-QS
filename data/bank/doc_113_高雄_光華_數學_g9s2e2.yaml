@@ -568,9 +568,9 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: '如右圖，園內接四邊形ABCD，且$\overline{AD} // \overline{BC}$，$\overline{AC}$與$\overline{BD}$交於P
+  stem: '如右圖，圓內接四邊形ABCD，且$\overline{AD} // \overline{BC}$，$\overline{AC}$與$\overline{BD}$交於P
     點。若$\angle APB= 120^\circ$，$\widehat{AD}$與$\widehat{BC}$的度數比為$2 : 3$，則$\angle
-    BAC=$？'
+    BAC=$？（原卷有誤，已修正）'
   options:
   - label: A
     content: $72^\circ$
@@ -614,6 +614,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，園內接四邊形ABCD，且
+    to: 如右圖，圓內接四邊形ABCD，且
+    note: 「園」應為「圓」
+    by: ai_review
 - id: doc_113_高雄_光華_數學_g9s2e2_s1_15
   section: 1
   number: 15
@@ -1054,12 +1059,12 @@ questions:
     - 每天運動訓練=BMR$\times$1.9
 
 
-    如果每日多攝取 275 卡，四週之後就會是 7700 卡，等同於增加 1 公斤的體重，相反地，若每日少攝取 275 卡，則四週後減少的總熱量等同減少 1 公斤的體重。請根據以上資訊回答下列回題，並詳細解釋理由。
+    如果每日多攝取 275 卡，四週之後就會是 7700 卡，等同於增加 1 公斤的體重，相反地，若每日少攝取 275 卡，則四週後減少的總熱量等同減少 1 公斤的體重。請根據以上資訊回答下列問題，並詳細解釋理由。
 
     (1) 小高是 31 歲的男性，身高 184 公分，體重 100 公斤，平常都沒有運動習慣，請計算他每日應攝取多少熱量？
 
     (2) 承上題，小高每天攝取 2600 卡的熱量，但下個月要參加模特兒選拔大賽，為了選上必須減重 2 公斤，於是想安排運動但又怕不習慣，所以打算安排四週漸進增加的計畫，第一週開始運動
-    2 天，之後每週再增加 1 天，請問小高四週後是否可以達成減重目標？'
+    2 天，之後每週再增加 1 天，請問小高四週後是否可以達成減重目標？（原卷有誤，已修正）'
   tags:
     chapter:
       publisher: null
@@ -1070,6 +1075,11 @@ questions:
       chapter: null
     textbook: 九下 第2次段考範圍
     labeled_by: ai
+  errata:
+  - from: 請根據以上資訊回答下列回題，並詳細解釋理由。
+    to: 請根據以上資訊回答下列問題，並詳細解釋理由。
+    note: 「回題」應為「問題」
+    by: ai_review
 - id: doc_113_高雄_光華_數學_g9s2e2_s2_2
   section: 2
   number: 2

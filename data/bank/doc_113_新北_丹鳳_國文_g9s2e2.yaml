@@ -530,8 +530,8 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: "前日到貴府一敘，您的風範令我欽羨不已。明晚六時，特在寒舍竟備薄酒，與拙荊、小女恭候  光臨，幸勿推卻。  此請\n王文龍先生          \
-    \         弟\n                                       莊明智敬上九月一日\n上面這封邀約函畫線部分，何者不是自謙之詞？"
+  stem: "前日到貴府一敘，您的風範令我欽羨不已。明晚六時，特在寒舍敬備薄酒，與拙荊、小女恭候  光臨，幸勿推卻。  此請\n王文龍先生          \
+    \         弟\n                                       莊明智敬上九月一日\n上面這封邀約函畫線部分，何者不是自謙之詞？（原卷有誤，已修正）"
   options:
   - label: A
     content: 薄酒
@@ -558,6 +558,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 特在寒舍竟備薄酒
+    to: 特在寒舍敬備薄酒
+    note: 「竟」為錯字，應為「敬」
+    by: ai_review
 - id: doc_113_新北_丹鳳_國文_g9s2e2_s1_17
   section: 1
   number: 17

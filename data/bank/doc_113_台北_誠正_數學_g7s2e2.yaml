@@ -555,7 +555,7 @@ questions:
 
     (丙)若$a:b$是有意義的，則$3:7=3a:7a$
 
-    (丁)已知$x$、$y$與成正比，則$x$值變大時，$y$值不一定會跟著變大'
+    (丁)已知$x$、$y$成正比，則$x$值變大時，$y$值不一定會跟著變大（原卷有誤，已修正）'
   options:
   - label: A
     content: '1'
@@ -582,6 +582,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (丁)已知x、y與成正比，則x值變大時
+    to: (丁)已知x、y成正比，則x值變大時
+    note: 多印「與」字
+    by: ai_review
 - id: doc_113_台北_誠正_數學_g7s2e2_s2_2
   section: 2
   number: 2

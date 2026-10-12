@@ -159,12 +159,12 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 下列選項「 」中的語詞，何者意義前後相同？
+  stem: 下列選項「 」中的語詞，何者意義前後相同？（原卷有誤，已修正）
   options:
   - label: A
     content: 巫政佶為了考試憂心忡忡，一夜「輾轉」難眠／許久未聯絡，我從朋友那裡「輾轉」得知周預嶄出國留學的消息
   - label: B
-    content: 蘇東坡堪稱為千古「風流」人物／他「風流」成性到處拈花惹草，令人不感苟同
+    content: 蘇東坡堪稱為千古「風流」人物／他「風流」成性到處拈花惹草，令人不敢苟同
   - label: C
     content: 瘦骨「嶙峋」的他，讓人擔憂身體狀況／溪谷中亂石「嶙峋」，澗水跌撞而過
   - label: D
@@ -187,6 +187,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 他「風流」成性到處拈花惹草，令人不感苟同
+    to: 他「風流」成性到處拈花惹草，令人不敢苟同
+    note: 「不感苟同」應為「不敢苟同」
+    by: ai_review
 - id: doc_111_彰化_溪湖_國文_g9s1e2_s1_6
   section: 1
   number: 6
@@ -1111,7 +1116,7 @@ questions:
   number: 32
   type: single
   page: 3
-  stem: 「寧所居屯落，會井汲者，或男女雜錯，或爭井鬥鬩。寧患之，乃多買器，分置井旁，汲以待之，又不使知。來者得而怪之，問知寧所為，乃各相責，不負鬥訟」（三國志），由上文可知管寧為人如何？
+  stem: 「寧所居屯落，會井汲者，或男女雜錯，或爭井鬥鬩。寧患之，乃多買器，分置井旁，汲以待之，又不使知。來者得而怪之，問知寧所為，乃各相責，不復鬥訟」（三國志），由上文可知管寧為人如何？（原卷有誤，已修正）
   options:
   - label: A
     content: 勇於解決問題，為善不欲人知
@@ -1138,6 +1143,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 問知寧所為，乃各相責，不負鬥訟
+    to: 問知寧所為，乃各相責，不復鬥訟
+    note: 典出《三國志》，「不負」應為「不復」
+    by: ai_review
 - id: doc_111_彰化_溪湖_國文_g9s1e2_s2_33
   section: 2
   number: 33

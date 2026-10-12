@@ -204,14 +204,14 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 附圖(二)為中國境內主要的河川分布圖。請問下列敘述何者正確？
+  stem: 附圖(二)為中國境內主要的河川分布圖。請問下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲河流域為中國水資源最為短缺的地區
   - label: B
     content: 中國最大的城市位於乙河出海口
   - label: C
-    content: 丙河是中國溫帶季風與副熱帶季氣候的分界線
+    content: 丙河是中國溫帶季風與副熱帶季風氣候的分界線
   - label: D
     content: 丁河因長度較短結冰期長而缺乏航運之利。
   assets:
@@ -248,6 +248,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 丙河是中國溫帶季風與副熱帶季氣候的分界線
+    to: 丙河是中國溫帶季風與副熱帶季風氣候的分界線
+    note: 漏「風」字
+    by: ai_review
 - id: doc_113_屏東_中正_社會_地理_g8s1e2_s1_7
   section: 1
   number: 7
@@ -747,8 +752,8 @@ questions:
   number: 21
   type: single
   page: 3
-  stem: 中國近年來經濟發展相當快速，因此2010 年設立第六個經濟特區，其地理位置向有「五口通八國，一路連歐亞」的優越條件，為最西方、鄰近多個鄰國的城市，一夕之間醜小鴨變天鵝，房價飛漲、五星級酒店、廠房爭相載此投資。由此飛巴黎只要6
-    個小時，政府又提供『五免』優惠政策，大家看好這裡會成為下個香港。請問：該經濟特區位於附圖中何處？
+  stem: 中國近年來經濟發展相當快速，因此2010 年設立第六個經濟特區，其地理位置向有「五口通八國，一路連歐亞」的優越條件，為最西方、鄰近多個鄰國的城市，一夕之間醜小鴨變天鵝，房價飛漲、五星級酒店、廠房爭相在此投資。由此飛巴黎只要6
+    個小時，政府又提供『五免』優惠政策，大家看好這裡會成為下個香港。請問：該經濟特區位於附圖中何處？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -777,6 +782,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 廠房爭相載此投資
+    to: 廠房爭相在此投資
+    note: 「載」應為「在」
+    by: ai_review
 - id: doc_113_屏東_中正_社會_地理_g8s1e2_s1_22
   section: 1
   number: 22

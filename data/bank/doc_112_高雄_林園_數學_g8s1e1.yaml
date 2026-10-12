@@ -92,7 +92,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 已知$6x^{2}-7x+1$＝( $2x+1$ ) ( $3x-5$ )＋6，下列哪個一選項的敘述是錯誤的？
+  stem: 已知$6x^{2}-7x+1$＝( $2x+1$ ) ( $3x-5$ )＋6，下列哪一個選項的敘述是錯誤的？（原卷有誤，已修正）
   options:
   - label: A
     content: $6x^{2}-7x+1$ 除以$2x+1$ 得商式為$3x-5$
@@ -117,6 +117,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 下列哪個一選項的敘述是錯誤的？
+    to: 下列哪一個選項的敘述是錯誤的？
+    note: 「哪個一」印錯，應為「哪一個」
+    by: ai_review
 - id: doc_112_高雄_林園_數學_g8s1e1_s1_4
   section: 1
   number: 4
@@ -564,7 +569,7 @@ questions:
   number: 12
   type: fill
   page: 2
-  stem: 如附圖，有一個大正方形被分割成一個小正方形與四個相同的直角三角形。若直角三角形的邊長分別為20 與$\frac{7}{2}$，則小正方形的面積為為_________。
+  stem: 如附圖，有一個大正方形被分割成一個小正方形與四個相同的直角三角形。若直角三角形的邊長分別為20 與$\frac{7}{2}$，則小正方形的面積為_________。（原卷有誤，已修正）
   assets:
   - key: s2_12_f1
     kind: figure
@@ -603,6 +608,11 @@ questions:
   ai_answers:
     gemini: \frac{1649}{4}
     qwen: $\frac{1649}{4}$
+  errata:
+  - from: 則小正方形的面積為為
+    to: 則小正方形的面積為
+    note: 多印一個「為」字
+    by: ai_review
 - id: doc_112_高雄_林園_數學_g8s1e1_s2_13
   section: 2
   number: 13

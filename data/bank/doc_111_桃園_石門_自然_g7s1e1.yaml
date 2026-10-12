@@ -61,7 +61,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 用顯微鏡觀察細胞時，若要使細胞染色，便於觀察，應使用種液體？
+  stem: 用顯微鏡觀察細胞時，若要使細胞染色，便於觀察，應使用何種液體？（原卷有誤，已修正）
   options:
   - label: A
     content: 清水
@@ -88,6 +88,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 應使用種液體？
+    to: 應使用何種液體？
+    note: 漏「何」字
+    by: ai_review
 - id: doc_111_桃園_石門_自然_g7s1e1_s1_3
   section: 1
   number: 3
@@ -1728,7 +1733,7 @@ questions:
   number: 44
   type: single
   page: 4
-  stem: 何種構造是乙所有植物細胞都有，而動物細胞卻沒有？
+  stem: 何種構造是所有植物細胞都有，而動物細胞卻沒有？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -1757,6 +1762,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 何種構造是乙所有植物細胞都有
+    to: 何種構造是所有植物細胞都有
+    note: 排版錯置，題幹多「乙」字
+    by: ai_review
 - id: doc_111_桃園_石門_自然_g7s1e1_s2_45
   section: 2
   number: 45
@@ -1795,12 +1805,12 @@ questions:
   number: 46
   type: single
   page: 4
-  stem: 當複式顯微鏡視野中的小生物不停向左下方移動時，為了使小生物不離開觀察視野，應將玻片往哪個方向移動？
+  stem: 當複式顯微鏡視野中的小生物不停向左下方移動時，為了使小生物不離開觀察視野，應將玻片往哪個方向移動？（原卷有誤，已修正）
   options:
   - label: A
     content: 左下方
   - label: B
-    content: 右上方
+    content: 右下方
   - label: C
     content: 左上方
   - label: D
@@ -1823,6 +1833,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B)右上方 (C)左上方 (D)右上方
+    to: (B)右上方 (C)左上方 (D)右下方
+    note: 選項(D)重複誤印為右上方
+    by: ai_review
 - id: doc_111_桃園_石門_自然_g7s1e1_s2_47
   section: 2
   number: 47

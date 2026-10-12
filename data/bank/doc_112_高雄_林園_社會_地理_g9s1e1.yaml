@@ -343,7 +343,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 西元1993 年地理圖﹙一﹚中國家的區域經濟組織式成立，致力透過結盟，對內會員國互惠，對外提升國際競爭力。請問：下列何者為這個區域組織的旗幟？
+  stem: 西元1993 年地理圖﹙一﹚中國家的區域經濟組織正式成立，致力透過結盟，對內會員國互惠，對外提升國際競爭力。請問：下列何者為這個區域組織的旗幟？（原卷有誤，已修正）
   options:
   - label: A
     content: ''
@@ -415,6 +415,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 區域經濟組織式成立
+    to: 區域經濟組織正式成立
+    note: 漏字，「式」前漏「正」字
+    by: ai_review
 - id: doc_112_高雄_林園_社會_地理_g9s1e1_s1_9
   section: 1
   number: 9
@@ -656,8 +661,8 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 地理圖(六)為西元2020 年俄羅斯主要出口商品比例圖，由圖可看出其天然資源十分豐富。請問:這樣的出口模式，對俄羅斯的經濟發展可能有什麼不量的影響？
-    (習作)
+  stem: 地理圖(六)為西元2020 年俄羅斯主要出口商品比例圖，由圖可看出其天然資源十分豐富。請問:這樣的出口模式，對俄羅斯的經濟發展可能有什麼不良的影響？
+    (習作)（原卷有誤，已修正）
   options:
   - label: A
     content: 農產充足，大量小麥外銷賺取外匯
@@ -700,3 +705,8 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 可能有什麼不量的影響？
+    to: 可能有什麼不良的影響？
+    note: 錯字，「不量」應為「不良」
+    by: ai_review

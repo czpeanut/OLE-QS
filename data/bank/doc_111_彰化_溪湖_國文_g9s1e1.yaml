@@ -1098,12 +1098,12 @@ questions:
   number: 33
   type: single
   page: 3
-  stem: 有關鬼頭刀一文敘述，下列何者正確？
+  stem: 有關鬼頭刀一文敘述，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 在航行程，一次捕到兩條魚是稀鬆平常的事
   - label: B
-    content: 公魚見母魚魚被捕而一路跟隨，遲遲不忍離去
+    content: 公魚見母魚被捕而一路跟隨，遲遲不忍離去
   - label: C
     content: 新的捕魚技術往往能同時捕捉多條鬼頭刀
   - label: D
@@ -1129,6 +1129,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 公魚見母魚魚被捕而一路跟隨
+    to: 公魚見母魚被捕而一路跟隨
+    note: 多印一個「魚」字
+    by: ai_review
 - id: doc_111_彰化_溪湖_國文_g9s1e1_s2_34
   section: 2
   number: 34

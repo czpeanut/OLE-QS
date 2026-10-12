@@ -776,10 +776,10 @@ questions:
   number: 8
   type: single
   page: 2
-  stem: 下列選項「　」中的字，何者意思前後相同？
+  stem: 下列選項「　」中的字，何者意思前後相同？（原卷有誤，已修正）
   options:
   - label: A
-    content: 廷尉乃當「之」罰金」／今法如此而更重「之」
+    content: 廷尉乃當「之」罰金／今法如此而更重「之」
   - label: B
     content: 廷尉奏「當」／廷尉「當」是也
   - label: C
@@ -806,6 +806,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 廷尉乃當「之」罰金」／今法如此而更重「之」
+    to: 廷尉乃當「之」罰金／今法如此而更重「之」
+    note: 多了一個右單引號
+    by: ai_review
 - id: doc_113_新北_中平_國文_g8s2e2_s4_9
   section: 4
   number: 9
@@ -1378,7 +1383,7 @@ questions:
   number: 3
   type: single
   page: 3
-  stem: 依照內容來看，整首〈再別康橋〉所寫的的時間序是下列哪個選項？
+  stem: 依照內容來看，整首〈再別康橋〉所寫的時間序是下列哪個選項？（原卷有誤，已修正）
   options:
   - label: A
     content: 自清晨到正午
@@ -1423,6 +1428,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 整首〈再別康橋〉所寫的的時間序是下列哪個選項？
+    to: 整首〈再別康橋〉所寫的時間序是下列哪個選項？
+    note: 多了一個「的」字
+    by: ai_review
 - id: doc_113_新北_中平_國文_g8s2e2_s5_4
   section: 5
   number: 4

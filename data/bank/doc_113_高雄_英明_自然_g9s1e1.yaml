@@ -1638,10 +1638,10 @@ questions:
   number: 40
   type: single
   page: 5
-  stem: 元興在直線路段上練習開車，若他從距離原點10 公尺處出發，其行駛過程中的$v$-$t$ 圖如附圖，則下列敘述何者錯誤？
+  stem: 元興在直線路段上練習開車，若他從距離原點10 公尺處出發，其行駛過程中的$v$-$t$ 圖如附圖，則下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
-    content: 當$t$＝3 秒時，元希位於距離原點22 公尺處
+    content: 當$t$＝3 秒時，元興位於距離原點22 公尺處
   - label: B
     content: 0～6 秒內的平均速度$v$＝(6－0)÷(6－0)＝1(m/s)
   - label: C
@@ -1682,6 +1682,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當t＝3 秒時，元希位於距離原點22 公尺處
+    to: 當t＝3 秒時，元興位於距離原點22 公尺處
+    note: 人名誤植，題幹為元興
+    by: ai_review
 - id: doc_113_高雄_英明_自然_g9s1e1_s2_41
   section: 2
   number: 41
