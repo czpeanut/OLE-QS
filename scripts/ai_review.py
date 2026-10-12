@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import difflib
 import json
 import re
 import sys
@@ -60,8 +61,10 @@ TYPE_NAME = {"single": "單選", "multiple": "多選", "tf": "是非", "fill": "
 PROMPT = """你是國中段考題庫的審題員。下面先附上一份考卷的原卷頁面（影像，有文字層的頁面另附文字層），
 接著是從這份考卷擷取出來的題目。請逐題對照原卷，找出擷取結果「與原卷不一致」的地方。
 
-最重要的原則：你只比對「擷取結果有沒有照原卷」。原卷本身印錯字、用詞不當，擷取照抄，就不是錯誤，
-不要用你的知識去「修正」原卷（例如原卷印「增小」，擷取也是「增小」，就不要報）。
+工作分兩部分，不要混在一起：
+（一）issues：擷取結果與原卷不一致的地方。這部分只比對「擷取有沒有照原卷」；原卷本身印錯、擷取照抄，
+    不算擷取錯誤，不要放進 issues（例如原卷印「增小」，擷取也是「增小」）。
+（二）errata：原卷本身印錯的地方（題庫要修正後才能用）。見最後一段。
 文字層的字形最準確（但順序可能亂、可能缺符號），影像用來看版面、公式與符號。
 
 要檢查的錯誤（cats 從這些類別選）：
@@ -83,13 +86,20 @@ PROMPT = """你是國中段考題庫的審題員。下面先附上一份考卷�
 - 原卷畫底線、雙底線、粗體、框線的文字，擷取結果不一定保留格式；只有題目明確要你看「畫線處」卻無從辨認時才報。
 
 不算錯誤、不要報：全形半形、空格、換行、標點的細微差別、填空底線的長短或寫法、用 LaTeX 或純文字寫同一個式子、
-選項排版方式、答案對錯（另有雙模型驗證）。原卷本身的命題瑕疵只有在題目因此無法作答時才報（類別用「其他」）。
+選項排版方式、答案對錯（另有雙模型驗證；題目後附的答案只供你判斷原卷錯字該怎麼改）。
 
 只列出確實有錯的題目，不要列出「擷取無誤」的題目。每個錯誤給：code（題目方括號裡的編號）、cats、
 orig（原卷上那段文字，逐字照抄，10～30 字）、got（擷取結果裡對應的那段，逐字照抄）、
 note（繁體中文，30 字內，說明哪裡不同），sure（true＝對照原卷確定有錯；false＝可能有錯、值得人工看）。
 漏附圖、漏題、題型錯這類沒有對應文字的錯誤，orig、got 可以留空。
-原卷有、擷取結果卻整題沒有的題目，寫進 missing（例如「第二大題第 5 題」）。整份都沒問題就回傳空的 issues。"""
+原卷有、擷取結果卻整題沒有的題目，寫進 missing（例如「第二大題第 5 題」）。整份都沒問題就回傳空的 issues。
+
+errata（原卷印錯）：只收明確的印刷或命題錯誤──錯字、漏字、多字、數字或符號印錯、注音印錯、圖號題號引用錯，
+修正方式只有一種合理答案，且改完要和標示的答案一致（例如選項「pH 值會逐漸增小」是錯誤敘述、答案不是它，
+就改成「減小」而不是「增大」）。以下不要收：考錯別字、字形、字音、注音、改錯的題目裡「故意寫錯」的字；
+文言文的通假字、古今字、異體字；可改可不改的用詞或標點；不確定作者原意的。
+每筆給：code、got（擷取結果裡含錯誤的那段，逐字照抄，8～30 字）、fix（同一段改正後的文字，只改錯的字）、
+note（20 字內，說明錯在哪）、sure（true＝確定是原卷印錯）。沒有就回傳空的 errata。"""
 
 SCHEMA = {
     "type": "object",
@@ -104,8 +114,13 @@ SCHEMA = {
                            "sure": {"type": "boolean"}},
             "required": ["code", "cats", "orig", "got", "note", "sure"]}},
         "missing": {"type": "array", "items": {"type": "string"}},
+        "errata": {"type": "array", "items": {
+            "type": "object",
+            "properties": {"code": {"type": "string"}, "got": {"type": "string"}, "fix": {"type": "string"},
+                           "note": {"type": "string"}, "sure": {"type": "boolean"}},
+            "required": ["code", "got", "fix", "note", "sure"]}},
     },
-    "required": ["issues", "missing"],
+    "required": ["issues", "missing", "errata"],
 }
 
 
@@ -158,6 +173,9 @@ def listing(d: dict, q2c: dict[str, str]) -> tuple[str, dict[str, str]]:
             if o.get("asset"):
                 body = (body + "（選項為圖片）").strip()
             lines.append(f"({o.get('label')}) {body}")
+        if q.get("answer"):
+            ans = q["answer"] if isinstance(q["answer"], list) else [q["answer"]]
+            lines.append("答案：" + "、".join(map(str, ans)))
     return "\n".join(lines), sent
 
 
@@ -248,6 +266,26 @@ def verify(doc: str, out: dict, pdf_root: Path) -> None:
             it["drop"] = "擷取與原卷文字層相同"
         elif layer and orig and orig in layer and got and got not in layer:
             it["checked"] = True
+    for it in out.get("errata") or []:
+        c = (it.get("code") or "").strip().strip("[]")
+        q = by_code.get(c)
+        got, fix = norm(it.get("got", "")), norm(it.get("fix", ""))
+        if q is None:
+            it["drop"] = "編號不在這份卷"
+        elif not got or not fix or got == fix:
+            it["drop"] = "沒有修正內容"
+        elif not in_text(it.get("got", ""), norm(q_text(q))):
+            it["drop"] = "擷取引文對不上"
+        elif changed(it["got"], it["fix"]) > 6:
+            it["drop"] = "改動太多，不像印刷錯誤"
+        elif layer and in_text(it.get("got", ""), layer):
+            it["checked"] = True                 # 原卷文字層確實是這樣印的；其餘交給 recheck 照抄比對
+
+
+def changed(a: str, b: str) -> int:
+    """兩段文字相差幾個字（刪＋增）。"""
+    sm = difflib.SequenceMatcher(None, a, b)
+    return sum(max(i2 - i1, j2 - j1) for op, i1, i2, j1, j2 in sm.get_opcodes() if op != "equal")
 
 
 CODES: list[dict[str, str]] = [{}]
@@ -296,6 +334,8 @@ def recheck_requests(pdf_root: Path, docs: list[str] | None = None) -> list[tupl
                  and set(it.get("cats") or []) <= RECHECK_CATS
                  and not re.search(r"底線|畫線|雙線|圖|框", it.get("note", ""))
                  and len(norm(it.get("got", ""))) >= 2}
+        codes |= {it["code"].strip().strip("[]") for it in r.get("errata") or []
+                  if not it.get("drop") and not it.get("checked") and "recheck" not in it}
         if not codes:
             continue
         d = yaml.safe_load((BANK / f"{r['doc']}.yaml").read_text(encoding="utf-8"))
@@ -356,6 +396,16 @@ def apply_recheck(answers: dict[str, dict]) -> int:
                 dropped += 1
             elif not in_text(it.get("got", ""), text):
                 it["checked"] = True             # 照抄的原卷裡沒有擷取的寫法
+        for it in r.get("errata") or []:
+            v = items.get(it["code"].strip().strip("[]"))
+            if v is None or it.get("drop") or not v.get("found"):
+                continue
+            it["recheck"] = v.get("text", "")[:2000]
+            if in_text(it.get("got", ""), norm(v.get("text", ""))):
+                it["checked"] = True             # 原卷確實這樣印
+            else:
+                it["drop"] = "複核：原卷不是這樣印"
+                dropped += 1
         f.write_text(json.dumps(r, ensure_ascii=False, indent=1), encoding="utf-8")
     return dropped
 
@@ -549,6 +599,24 @@ def cmd_publish(args) -> int:
                 site["q"].setdefault(c, []).append({"cats": it["cats"], "note": it.get("note", "")[:120],
                                                     "sure": bool(it.get("sure"))})
                 n += 1
+        for it in r.get("errata") or []:
+            c = (it.get("code") or "").strip().strip("[]")
+            if it.get("drop") or not c2q.get(c, "").startswith(doc + "_"):
+                continue
+            site["q"].setdefault(c, []).append({
+                "kind": "errata", "cats": ["原卷有誤"], "sure": bool(it.get("sure")),
+                "applied": bool(it.get("applied")),
+                "note": f"{it.get('note', '')[:60]}：「{it.get('got', '')[:60]}」→「{it.get('fix', '')[:60]}」"})
+            n += 1
+        yp = BANK / f"{doc}.yaml"
+        if yp.is_file():                          # 去除浮水印重繪過的附圖（scripts/redraw_figures.py）
+            d = yaml.safe_load(yp.read_text(encoding="utf-8"))
+            for q in d.get("questions") or []:
+                figs = [*(q.get("assets") or []), *[o["asset"] for o in q.get("options") or [] if o.get("asset")]]
+                if any(a.get("redrawn") for a in figs) and q["id"] in q2c:
+                    site["q"].setdefault(q2c[q["id"]], []).append({
+                        "kind": "redraw", "cats": ["附圖已重繪"], "sure": True, "applied": True,
+                        "note": "原卷有校徽浮水印底圖，已拿掉浮水印、依原卷重新繪製附圖"})
         if r.get("missing"):
             site["missing"][doc] = r["missing"][:20]
         site["papers"][doc] = {"at": r["at"], "n": n}

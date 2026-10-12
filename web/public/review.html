@@ -459,10 +459,11 @@ function aiHeadHTML(P){
 function aiBoxHTML(q){
   const items = AI.q[q.c];
   if (!items) return "";
-  return `<div class="ai-box">${items.map(it => `<div class="it"><span class="chip ai">${it.sure ? "初審：確定" : "初審：可能"}</span>
+  const tag = it => it.kind === "redraw" ? "附圖已重繪" : it.kind === "errata" ? (it.applied ? "原卷有誤・已修正" : "原卷可能有誤") : (it.sure ? "初審：確定" : "初審：可能");
+  return `<div class="ai-box">${items.map(it => `<div class="it"><span class="chip ai">${tag(it)}</span>
       <b>${esc((it.cats || []).join("、"))}</b><span>${esc(it.note)}</span></div>`).join("")}
-    <div class="row"><button class="btn" type="button" data-adopt="${q.c}">採用為回報</button>
-      <span class="src">AI 對照原卷的初審意見，確認後再回報；不正確就略過</span></div></div>`;
+    <div class="row">${items.some(it => !it.applied) ? `<button class="btn" type="button" data-adopt="${q.c}">採用為回報</button>` : ""}
+      <span class="src">AI 對照原卷的初審意見，確認後再回報；不正確就略過。「已修正」的原卷錯誤已改進題庫，題末加註「（原卷有誤，已修正）」</span></div></div>`;
 }
 function figHTML(ids, P){
   return ids.map(id => imgTag(id, P, "附圖", 320)).join("");
