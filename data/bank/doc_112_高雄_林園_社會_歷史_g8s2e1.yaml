@@ -278,7 +278,7 @@ questions:
   number: 24
   type: single
   page: 1
-  stem: 民國2 年，國會大選，民國黨贏得絕對的多數，其代理理事長即將掌握政治權力，卻遭暗殺，引起一場討袁行動。請問，上述的代理理事長及討袁行動各指？
+  stem: 民國2 年，國會大選，國民黨贏得絕對的多數，其代理理事長即將掌握政治權力，卻遭暗殺，引起一場討袁行動。請問，上述的代理理事長及討袁行動各指？（原卷有誤，已修正）
   options:
   - label: A
     content: 孫中山；護法運動
@@ -304,6 +304,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 民國2 年，國會大選，民國黨贏得絕對的多數
+    to: 民國2 年，國會大選，國民黨贏得絕對的多數
+    note: 「民國黨」應為「國民黨」
+    by: ai_review
 - id: doc_112_高雄_林園_社會_歷史_g8s2e1_s1_25
   section: 1
   number: 25

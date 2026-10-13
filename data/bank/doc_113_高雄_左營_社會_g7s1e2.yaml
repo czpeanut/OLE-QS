@@ -1739,10 +1739,10 @@ questions:
   number: 45
   type: single
   page: 6
-  stem: 判讀此等高線地形圖後，可知下列哪項地形資訊最正確？
+  stem: 判讀此等高線地形圖後，可知下列哪項地形資訊最正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 登山客停留在在b 點，可遠眺f 所在的大海
+    content: 登山客停留在b 點，可遠眺f 所在的大海
   - label: B
     content: df 此路線有河川流經，旅客可乘船順流至海邊
   - label: C
@@ -1768,6 +1768,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 登山客停留在在b 點，可遠眺
+    to: 登山客停留在b 點，可遠眺
+    note: 多印一個「在」字
+    by: ai_review
 - id: doc_113_高雄_左營_社會_g7s1e2_s6_46
   section: 6
   number: 46

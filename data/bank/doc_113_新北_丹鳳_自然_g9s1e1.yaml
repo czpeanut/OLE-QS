@@ -852,7 +852,7 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 娜美搭阿聯酋直航飛機，於9月8日由桃園起飛前往杜拜轉機，航程約花費10小時。為簡化計算，忽略起飛、爬升、降落的高度變化。因兩地所在的緯度差別不大，假設此趟航程沿著北緯25˚飛行，跨越經度約為66˚，如圖6所示。經度每15˚為一個時區，並將地球是為正球體，地球赤道約為40000公里。依據上述資料，下列敘述何者正確?
+  stem: 娜美搭阿聯酋直航飛機，於9月8日由桃園起飛前往杜拜轉機，航程約花費10小時。為簡化計算，忽略起飛、爬升、降落的高度變化。因兩地所在的緯度差別不大，假設此趟航程沿著北緯25˚飛行，跨越經度約為66˚，如圖6所示。經度每15˚為一個時區，並將地球視為正球體，地球赤道約為40000公里。依據上述資料，下列敘述何者正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 此次飛行過程的路徑長約為6666公里
@@ -890,6 +890,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 並將地球是為正球體，地球赤道約為40000公里。
+    to: 並將地球視為正球體，地球赤道約為40000公里。
+    note: 「是為」應為「視為」
+    by: ai_review
 - id: doc_113_新北_丹鳳_自然_g9s1e1_s2_24
   section: 2
   number: 24
@@ -1207,7 +1212,7 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: 當球自斜面高處滾下來的過程屬於何種運動？
+  stem: 當球自斜面高處滾下來的過程屬於何種運動？（原卷有誤，已修正）
   options:
   - label: A
     content: 變加速度運動
@@ -1216,7 +1221,7 @@ questions:
   - label: C
     content: 等加速度運動
   - label: D
-    content: 自由落體運動球。
+    content: 自由落體運動。
   group_stem: '【30~33題為題組】
 
     在義大利佛羅倫斯的科學史博物館成立於西元1927年，經兩年翻修後於西元2010年6月10日重新開館，更名為伽利略博物館（Museo Galileo）。
@@ -1243,6 +1248,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 自由落體運動球。
+    to: (D) 自由落體運動。
+    note: 句末多印了「球」字
+    by: ai_review
 - id: doc_113_新北_丹鳳_自然_g9s1e1_s2_31
   section: 2
   number: 31

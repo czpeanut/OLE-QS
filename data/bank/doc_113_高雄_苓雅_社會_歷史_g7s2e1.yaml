@@ -363,14 +363,14 @@ questions:
   number: 30
   type: single
   page: 1
-  stem: 下列關於日治時期的經濟政策，何者說明正確？
+  stem: 下列關於日治時期的經濟政策，何者說明正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 日治初期，日本的經濟政策為「工業日本，農業台灣」
   - label: B
     content: 後藤新平實施的專賣制度，以鴉片及蔗糖增加台灣收入
   - label: C
-    content: 重北輕南僅在台北設置郵政、電報及電話等通勳設施
+    content: 重北輕南僅在台北設置郵政、電報及電話等通訊設施
   - label: D
     content: 總督府提出「日臺合一」的口號，讓漢人與日本人的薪資一致。
   tags:
@@ -390,6 +390,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 重北輕南僅在台北設置郵政、電報及電話等通勳設施
+    to: 重北輕南僅在台北設置郵政、電報及電話等通訊設施
+    note: 通勳應為通訊之誤
+    by: ai_review
 - id: doc_113_高雄_苓雅_社會_歷史_g7s2e1_s1_31
   section: 1
   number: 31

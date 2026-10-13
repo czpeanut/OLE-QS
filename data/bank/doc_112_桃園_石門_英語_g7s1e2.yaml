@@ -967,7 +967,7 @@ questions:
 
     | Test 1 | 60 | 80 | 70 | 70 |
 
-    | Test 2 | 60 | 75 | 75 | 60 |'
+    | Test 2 | 60 | 75 | 75 | 60 |（原卷有誤，已修正）'
   options:
   - label: A
     content: Joyce
@@ -977,7 +977,7 @@ questions:
     content: Kyle
   - label: D
     content: Cindy
-  group_stem: "(41~43)\nImprove Your English\n  Joyce, Jay, Kyle, and Cindy are not\
+  group_stem: "(41~42)\nImprove Your English\n  Joyce, Jay, Kyle, and Cindy are not\
     \ good at English, but they really want to improve their English.   \nWhat can\
     \ they do?  Their teacher gives them some suggestions.\n(1) Use online dictionaries\
     \ to check words.                                  (2) Listen to your teacher’s\
@@ -1001,6 +1001,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (41~43)
+    to: (41~42)
+    note: 此題組僅有41與42兩題，原卷題號範圍印錯
+    by: ai_review
 - id: doc_112_桃園_石門_英語_g7s1e2_s5_42
   section: 5
   number: 42
@@ -1017,7 +1022,7 @@ questions:
     content: Play with her classmates.
   - label: D
     content: Use online dictionaries.
-  group_stem: "(41~43)\nImprove Your English\n  Joyce, Jay, Kyle, and Cindy are not\
+  group_stem: "(41~42)\nImprove Your English\n  Joyce, Jay, Kyle, and Cindy are not\
     \ good at English, but they really want to improve their English.   \nWhat can\
     \ they do?  Their teacher gives them some suggestions.\n(1) Use online dictionaries\
     \ to check words.                                  (2) Listen to your teacher’s\
@@ -1360,7 +1365,7 @@ questions:
   number: 56
   type: essay
   page: 4
-  stem: What day is the concert? (以「演唱會在星期三」回答」)
+  stem: What day is the concert? (以「演唱會在星期三」回答)（原卷有誤，已修正）
   tags:
     textbook: 七上 英語 What time / What day問答 + 日期表達（月份+序數）
     labeled_by: ai
@@ -1371,3 +1376,8 @@ questions:
       code: B1-14
       title: What time / What day問答 + 日期表達（月份+序數）
       chapter: B1 七上
+  errata:
+  - from: 以「演唱會在星期三」回答」
+    to: 以「演唱會在星期三」回答
+    note: 原卷末尾多印了一個右引號
+    by: ai_review

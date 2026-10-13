@@ -639,16 +639,16 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 根據人間好時節一文，王國維、司馬光、陶淵明、白居易等人的詩詞，給作者帶來什麼啟示？
+  stem: 根據人間好時節一文，王國維、司馬光、陶淵明、白居易等人的詩詞，給作者帶來什麼啟示？（原卷有誤，已修正）
   options:
   - label: A
     content: 想要實現夢想，得先下苦功
   - label: B
     content: 透過閱讀詩詞，可以變化氣質
   - label: C
-    content: 天生我才必有用，千萬不可妄自菲
+    content: 天生我才必有用，千萬不可妄自菲薄
   - label: D
-    content: 人生不同階段，皆有其自處之道薄
+    content: 人生不同階段，皆有其自處之道
   tags:
     chapter:
       publisher: 康軒
@@ -666,6 +666,15 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '(C) 天生我才必有用，千萬不可妄自菲
+
+      (D) 人生不同階段，皆有其自處之道薄'
+    to: '(C) 天生我才必有用，千萬不可妄自菲薄
+
+      (D) 人生不同階段，皆有其自處之道'
+    note: 「薄」字排版誤掉至(D)選項句尾
+    by: ai_review
 - id: doc_113_台中_四育_國文_g9s1e1_s1_20
   section: 1
   number: 20
@@ -1603,10 +1612,10 @@ questions:
   number: 44
   type: single
   page: 5
-  stem: 下列哪一個□中的字和其他三者不同？
+  stem: 下列哪一個□中的字和其他三者不同？（原卷有誤，已修正）
   options:
   - label: A
-    content: 倚□可帶
+    content: 倚□可待
   - label: B
     content: 虛與委□
   - label: C
@@ -1631,6 +1640,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (A) 倚□可帶
+    to: (A) 倚□可待
+    note: 成語「倚馬可待」，「帶」為誤字
+    by: ai_review
 - id: doc_113_台中_四育_國文_g9s1e1_s3_45
   section: 3
   number: 45

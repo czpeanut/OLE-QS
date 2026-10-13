@@ -444,7 +444,7 @@ questions:
   stem: '如附圖，$D$ 點在 $\overline{BC}$ 上，已知 $\overline{BD}:\overline{DC}=3:5$，$P$ 點在
     $\overline{AD}$ 上且 $\overline{AP}:\overline{AD}=3:5$
 
-    試問:$\triangle APB$ 面積 : $\triangle PCD$ 的積 =______'
+    試問:$\triangle APB$ 面積 : $\triangle PCD$ 的面積 =______（原卷有誤，已修正）'
   assets:
   - key: s2_2_f1
     kind: figure
@@ -480,6 +480,11 @@ questions:
   ai_answers:
     gemini: '9:10'
     qwen: '9:10'
+  errata:
+  - from: '試問:$\triangle APB$ 面積 : $\triangle PCD$ 的積 =______'
+    to: '試問:$\triangle APB$ 面積 : $\triangle PCD$ 的面積 =______'
+    note: 漏字，「的積」漏了「面」字
+    by: ai_review
 - id: doc_111_彰化_福興_數學_g9s1e1_s2_3
   section: 2
   number: 3

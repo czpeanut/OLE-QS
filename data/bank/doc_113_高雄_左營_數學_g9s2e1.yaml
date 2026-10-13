@@ -260,8 +260,8 @@ questions:
   number: 7
   type: single
   page: 2
-  stem: 已知二次函數 $y=-2(x-3)^{2}+5$，$P(2,3)$ 為此函數圖形上的一點。今小傑將此函數圖形向右且向上平移後，$P$ 點的新位置在
-    $(-3,5)$，則平移後新的頂點坐標為何？
+  stem: 已知二次函數 $y=-2(x-3)^{2}+5$，$P(2,3)$ 為此函數圖形上的一點。今小傑將此函數圖形向左且向上平移後，$P$ 點的新位置在
+    $(-3,5)$，則平移後新的頂點坐標為何？（原卷有誤，已修正）
   options:
   - label: A
     content: $(-2,7)$
@@ -288,6 +288,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 將此函數圖形向右且向上平移後，P 點的新位置在 (-3,5)
+    to: 將此函數圖形向左且向上平移後，P 點的新位置在 (-3,5)
+    note: x坐標由2變-3為向左平移，原卷誤印為向右
+    by: ai_review
 - id: doc_113_高雄_左營_數學_g9s2e1_s1_8
   section: 1
   number: 8

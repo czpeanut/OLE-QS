@@ -1573,14 +1573,14 @@ questions:
   number: 41
   type: single
   page: 3
-  stem: 有關原子結構的敘述，下列何者正確？
+  stem: 有關原子結構的敘述，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 原子核內的中子數必須與核外電子數相等，原子才會保持電中性
   - label: B
     content: 質子與電子的質量和大約等於原子的總質量
   - label: C
-    content: 當失去原子核外的電子時，整個原將帶正電
+    content: 當失去原子核外的電子時，整個原子將帶正電
   - label: D
     content: 原子核內的中子數必定與質子數相等。
   tags:
@@ -1600,6 +1600,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當失去原子核外的電子時，整個原將帶正電
+    to: 當失去原子核外的電子時，整個原子將帶正電
+    note: 漏「子」字
+    by: ai_review
 - id: doc_113_高雄_七賢_自然_g8s1e3_s1_42
   section: 1
   number: 42
@@ -1701,7 +1706,7 @@ questions:
   number: 45
   type: single
   page: 4
-  stem: 下敘述何者錯誤？
+  stem: 下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 原子是表現純物質化學性質的最小粒子
@@ -1728,6 +1733,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下敘述何者錯誤？
+    to: 下列敘述何者錯誤？
+    note: 漏「列」字
+    by: ai_review
 - id: doc_113_高雄_七賢_自然_g8s1e3_s2_46
   section: 2
   number: 46

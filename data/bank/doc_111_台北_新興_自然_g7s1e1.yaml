@@ -1289,7 +1289,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 小美買了一盒珍珠粉，懷疑裡面可能滲了澱粉。她可利用下列何種檢測？
+  stem: 小美買了一盒珍珠粉，懷疑裡面可能摻了澱粉。她可利用下列何種檢測？（原卷有誤，已修正）
   options:
   - label: A
     content: 碘液
@@ -1316,6 +1316,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 懷疑裡面可能滲了澱粉
+    to: 懷疑裡面可能摻了澱粉
+    note: 「滲」應為「摻」
+    by: ai_review
 - id: doc_111_台北_新興_自然_g7s1e1_s1_29
   section: 1
   number: 29

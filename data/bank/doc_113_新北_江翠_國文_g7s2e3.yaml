@@ -278,12 +278,12 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 下列新詩所吟詠的主角，何者配對正確？
+  stem: 下列新詩所吟詠的主角，何者配對正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 葉子是一片片青色的雲／花瓣是輻射的光芒／我成了地上的太陽。— 火龍果
   - label: B
-    content: 無悔的燒痛自己／直至／滴下最後一滴熱淚／冷死的新／完全無法復燃。— 螢火蟲
+    content: 無悔的燒痛自己／直至／滴下最後一滴熱淚／冷死的心／完全無法復燃。— 螢火蟲
   - label: C
     content: 我大清早起／站在人家屋角上啞啞的啼／人家討嫌我／說我不吉利／我不能呢呢喃喃討人家的歡喜。 — 烏鴉
   - label: D
@@ -305,6 +305,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 冷死的新／完全無法復燃
+    to: 冷死的心／完全無法復燃
+    note: 「新」應為「心」
+    by: ai_review
 - id: doc_113_新北_江翠_國文_g7s2e3_s1_9
   section: 1
   number: 9

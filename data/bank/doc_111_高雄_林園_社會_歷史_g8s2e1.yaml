@@ -120,7 +120,7 @@ questions:
   number: 19
   type: single
   page: 1
-  stem: 宣統3 年，革命黨人趁著清廷調動軍隊前住四川時，趁機發動武昌起義。請問：當時清廷為何派遣軍隊前往四川？
+  stem: 宣統3 年，革命黨人趁著清廷調動軍隊前往四川時，趁機發動武昌起義。請問：當時清廷為何派遣軍隊前往四川？（原卷有誤，已修正）
   options:
   - label: A
     content: 平定二次革命
@@ -146,6 +146,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 調動軍隊前住四川時，趁機發動武昌起義
+    to: 調動軍隊前往四川時，趁機發動武昌起義
+    note: 「前住」應為「前往」
+    by: ai_review
 - id: doc_111_高雄_林園_社會_歷史_g8s2e1_s1_20
   section: 1
   number: 20
@@ -182,7 +187,7 @@ questions:
   number: 21
   type: single
   page: 1
-  stem: 中國民國臨時約法將總統制改為內閣制，其最主要的目的為何？
+  stem: 中華民國臨時約法將總統制改為內閣制，其最主要的目的為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 避免繼任者破壞民主共和體制
@@ -208,6 +213,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 中國民國臨時約法將總統制改為內閣制
+    to: 中華民國臨時約法將總統制改為內閣制
+    note: 「中國民國」應為「中華民國」
+    by: ai_review
 - id: doc_111_高雄_林園_社會_歷史_g8s2e1_s1_22
   section: 1
   number: 22

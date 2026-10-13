@@ -924,7 +924,7 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 將某生物放置於有水的透明容器中，密封後給予陽光照射，並開始記錄容器內氧氣的含量變化，結果如圖所示。根據此圖推測，此生物最可能是下列何者？
+  stem: 將某生物放置於有水的透明容器中，密封後給予陽光照射，並開始記錄容器內氧氣的含量變化，結果如圖所示。根據此圖推測，此生物最可能是下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 矽藻
@@ -933,7 +933,7 @@ questions:
   - label: C
     content: 酵母菌
   - label: D
-    content: 大腸桿茵。
+    content: 大腸桿菌。
   assets:
   - key: s1_25_f1
     kind: figure
@@ -968,6 +968,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 大腸桿茵。
+    to: (D) 大腸桿菌。
+    note: 「茵」為錯字，應為「菌」
+    by: ai_review
 - id: doc_112_高雄_大灣_自然_g7s2e2_s1_26
   section: 1
   number: 26

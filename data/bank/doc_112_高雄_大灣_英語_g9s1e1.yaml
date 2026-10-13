@@ -452,7 +452,7 @@ questions:
   number: 6
   type: single
   page: 2
-  stem: All the sudents are ＿＿＿ about the party tonight.
+  stem: All the students are ＿＿＿ about the party tonight.（原卷有誤，已修正）
   options:
   - label: A
     content: excited
@@ -479,6 +479,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: All the sudents are ＿＿＿ about the party tonight.
+    to: All the students are ＿＿＿ about the party tonight.
+    note: sudents拼錯，應為students
+    by: ai_review
 - id: doc_112_高雄_大灣_英語_g9s1e1_s5_7
   section: 5
   number: 7

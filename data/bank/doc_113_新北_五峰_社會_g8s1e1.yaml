@@ -340,7 +340,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 中國居民在不同的自然環境中，使用各種方法，努力增產耕多糧食，因此形成各地不同的生活方式。請問：附圖甲～丁地區居民的生活方式描述，下列何者與事實相符？
+  stem: 中國居民在不同的自然環境中，使用各種方法，努力增產更多糧食，因此形成各地不同的生活方式。請問：附圖甲～丁地區居民的生活方式描述，下列何者與事實相符？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲在土樓前院曬太陽，乾溝旁玩土沙，日常吃刀削麵
@@ -384,6 +384,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 使用各種方法，努力增產耕多糧食，因此形成
+    to: 使用各種方法，努力增產更多糧食，因此形成
+    note: 「耕」應為「更」
+    by: ai_review
 - id: doc_113_新北_五峰_社會_g8s1e1_s1_6
   section: 1
   number: 6
@@ -1514,7 +1519,7 @@ questions:
   number: 33
   type: single
   page: 4
-  stem: 幸福國首相某次會議時請求該國女王在重大決策時，要關閉國會5 個星期。此舉最後由最高法院判決，認為促請女王關閉國會，不僅缺乏合理理由、且嚴重影響國會行使民主職權，因此無效，國會要在最短時間內重新召開。請問關於上述內容，下列哪一位學者在的論點比較正確？
+  stem: 幸福國首相某次會議時請求該國女王在重大決策時，要關閉國會5 個星期。此舉最後由最高法院判決，認為促請女王關閉國會，不僅缺乏合理理由、且嚴重影響國會行使民主職權，因此無效，國會要在最短時間內重新召開。請問關於上述內容，下列哪一位學者的論點比較正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 學者A：該國可能和我國一樣實施五權分立
@@ -1541,6 +1546,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問關於上述內容，下列哪一位學者在的論點比較正確？
+    to: 請問關於上述內容，下列哪一位學者的論點比較正確？
+    note: 多印「在」字
+    by: ai_review
 - id: doc_113_新北_五峰_社會_g8s1e1_s3_34
   section: 3
   number: 34

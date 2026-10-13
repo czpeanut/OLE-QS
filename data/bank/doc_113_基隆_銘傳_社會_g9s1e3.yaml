@@ -269,7 +269,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 圖二是南極洲地圖，從圖三中的 A 點往 B 點移動，請問：最可能會出現下列哪種變化？
+  stem: 圖二是南極洲地圖，從圖二中的 A 點往 B 點移動，請問：最可能會出現下列哪種變化？（原卷有誤，已修正）
   options:
   - label: A
     content: 時區越來越早
@@ -315,12 +315,17 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 從圖三中的 A 點往 B 點移動
+    to: 從圖二中的 A 點往 B 點移動
+    note: 圖號引用錯誤，A與B點在圖二
+    by: ai_review
 - id: doc_113_基隆_銘傳_社會_g9s1e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 銘傳旅行社推出全新「紐澳十日遊」，帶您一次探訪澳洲與紐西蘭的壯麗自然奇觀。行程中您可盡情欣賞世界遺產大堡礁的瑰麗海景、峽灣的震撼地貌、火山的獨特地形，以及在沙漠中的色巨岩——烏魯魯。這趟旅程結合自然景觀與地理奇蹟，讓您全方位感受紐澳地區的無與倫比之美。無論是熱愛冒險或是尋求放鬆，此行程都能滿足您的期待，留下難以忘懷的回憶。請問：圖三中哪個地點沒有出現在行程中？
+  stem: 銘傳旅行社推出全新「紐澳十日遊」，帶您一次探訪澳洲與紐西蘭的壯麗自然奇觀。行程中您可盡情欣賞世界遺產大堡礁的瑰麗海景、峽灣的震撼地貌、火山的獨特地形，以及在沙漠中的紅色巨岩——烏魯魯。這趟旅程結合自然景觀與地理奇蹟，讓您全方位感受紐澳地區的無與倫比之美。無論是熱愛冒險或是尋求放鬆，此行程都能滿足您的期待，留下難以忘懷的回憶。請問：圖三中哪個地點沒有出現在行程中？（原卷有誤，已修正）
   options:
   - label: A
     content: '1'
@@ -367,6 +372,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 以及在沙漠中的色巨岩——烏魯魯
+    to: 以及在沙漠中的紅色巨岩——烏魯魯
+    note: 漏字，烏魯魯為紅色巨岩
+    by: ai_review
 - id: doc_113_基隆_銘傳_社會_g9s1e3_s1_8
   section: 1
   number: 8
@@ -1219,7 +1229,7 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: 每年的 1 月 26 日為「澳洲日」（國慶日），都有許多民眾拿著原住民族旗抗議政府對原住民族的迫害，並認為這天應改為「哀悼日」。請問當時破壞歐洲原住民文化的歐洲政權也曾佔領並統治下列何地？
+  stem: 每年的 1 月 26 日為「澳洲日」（國慶日），都有許多民眾拿著原住民族旗抗議政府對原住民族的迫害，並認為這天應改為「哀悼日」。請問當時破壞澳洲原住民文化的歐洲政權也曾佔領並統治下列何地？（原卷有誤，已修正）
   options:
   - label: A
     content: 19 世紀的越南
@@ -1248,6 +1258,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問當時破壞歐洲原住民文化的歐洲政權
+    to: 請問當時破壞澳洲原住民文化的歐洲政權
+    note: 誤植，應為破壞澳洲原住民文化
+    by: ai_review
 - id: doc_113_基隆_銘傳_社會_g9s1e3_s2_31
   section: 2
   number: 31

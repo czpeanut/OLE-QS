@@ -151,10 +151,10 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 附圖為東南亞宗教分布圖。關於此圖，請問下列敘述何者正確？
+  stem: 附圖為東南亞宗教分布圖。關於此圖，請問下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 甲區自古深受文明古國的影響，居民主印信仰印度教
+    content: 甲區自古深受文明古國的影響，居民主要信仰印度教
   - label: B
     content: 乙區近代受西方國家殖民，居民信仰天主教
   - label: C
@@ -195,6 +195,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 居民主印信仰印度教
+    to: 居民主要信仰印度教
+    note: 「主要」誤印為「主印」
+    by: ai_review
 - id: doc_113_台中_向上_社會_g8s2e1_s1_5
   section: 1
   number: 5

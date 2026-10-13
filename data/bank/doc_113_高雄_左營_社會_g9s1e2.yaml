@@ -540,14 +540,14 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 資料一中的聖地，是指何處？
+  stem: 資料一中的聖地，是指何處？（原卷有誤，已修正）
   options:
   - label: A
     content: 麥加
   - label: B
     content: 麥地那
   - label: C
-    content: 君士丁堡
+    content: 君士坦丁堡
   - label: D
     content: 耶路撒冷
   group_stem: "■ 閱讀以下資料，回答14-16 題:\n資料一：\n  1095 年夏天，教宗烏爾班二世在法國的克萊蒙發表演說：「……死於這場戰爭是光榮的，你能洗清罪惡，在天堂將要得到獎賞！甲敵人現今盤踞在聖地，並且我們在希臘的同胞岌岌可危，敵人對他們展開無情的摧殘，我們需要挺身而出，幫助我們在東方的弟兄！拿起武器吧，因為上帝的旨意本是如此！」\n\
@@ -569,6 +569,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 君士丁堡
+    to: (C) 君士坦丁堡
+    note: 漏「坦」字
+    by: ai_review
 - id: doc_113_高雄_左營_社會_g9s1e2_s2_16
   section: 2
   number: 16

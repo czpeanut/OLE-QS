@@ -1428,6 +1428,7 @@ questions:
         - 281.13
         - 173.45
       crop_by: auto
+      redrawn: 去除浮水印
   - label: B
     content: ''
     asset:
@@ -1446,6 +1447,7 @@ questions:
         - 508.25
         - 177.71
       crop_by: auto
+      redrawn: 去除浮水印
   - label: C
     content: ''
     asset:
@@ -1458,6 +1460,7 @@ questions:
         - 208.8
         - 268.36
         - 320.73
+      redrawn: 去除浮水印
   - label: D
     content: ''
     asset:
@@ -1470,6 +1473,7 @@ questions:
         - 208.8
         - 511.53
         - 322.36
+      redrawn: 去除浮水印
   group_stem: 'VOICES OF PEOPLE
 
     Let Girls Win the Same
@@ -1773,6 +1777,7 @@ questions:
       - 434.62
       - 501.38
       - 518.73
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1915,7 +1920,7 @@ questions:
   number: 38
   type: single
   page: 7
-  stem: （克漏字第38格）
+  stem: （克漏字第38格）（原卷有誤，已修正）
   options:
   - label: A
     content: to drive less and bike more
@@ -1945,7 +1950,7 @@ questions:
     is less noise, less air pollution, and more space for people to enjoy.
 
 
-    📖 lane 巷弄 pedestrain 行人 quality 品質'
+    📖 lane 巷弄 pedestrian 行人 quality 品質'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1965,6 +1970,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: pedestrain 行人
+    to: pedestrian 行人
+    note: pedestrian拼錯
+    by: ai_review
 - id: doc_113_台南_復興_英語_g9s2e2_s2_39
   section: 2
   number: 39
@@ -2000,7 +2010,7 @@ questions:
     is less noise, less air pollution, and more space for people to enjoy.
 
 
-    📖 lane 巷弄 pedestrain 行人 quality 品質'
+    📖 lane 巷弄 pedestrian 行人 quality 品質'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -2055,7 +2065,7 @@ questions:
     is less noise, less air pollution, and more space for people to enjoy.
 
 
-    📖 lane 巷弄 pedestrain 行人 quality 品質'
+    📖 lane 巷弄 pedestrian 行人 quality 品質'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -2090,3 +2100,4 @@ shared_assets:
     - 340.04
     - 468.98
     - 544.58
+  redrawn: 去除浮水印

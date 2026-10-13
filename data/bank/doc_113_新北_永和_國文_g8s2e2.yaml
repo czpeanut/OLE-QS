@@ -1339,14 +1339,14 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: 古人交往注重禮節，稱呼自己相關的人事物用「謙詞」，稱呼對方相關的人事物則用「敬詞」。下列選項中的稱謂，何者使用最恰當？
+  stem: 古人交往注重禮節，稱呼自己相關的人事物用「謙詞」，稱呼對方相關的人事物則用「敬詞」。下列選項中的稱謂，何者使用最恰當？（原卷有誤，已修正）
   options:
   - label: A
     content: 徐志摩對老師梁啟超說：「老夫得蒙小犬指教，如撥雲見日，感謝不盡。」
   - label: B
     content: 孫行者：「啟稟天帝，下官已將罪犯捉回，現關押於天牢，聽候發落。」
   - label: C
-    content: 炭治郎對善逸：「竭誠歡迎在下今晚到寒舍小聚，讓足下略盡地主之誼。」
+    content: 炭治郎對善逸：「竭誠歡迎足下今晚到寒舍小聚，讓在下略盡地主之誼。」
   - label: D
     content: 徐志摩邀請胡適的媽媽到家裡吃飯時說：「內人手藝不佳，還請家母品嚐指教。」。
   tags:
@@ -1366,6 +1366,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 竭誠歡迎在下今晚到寒舍小聚，讓足下略盡地主之誼。
+    to: 竭誠歡迎足下今晚到寒舍小聚，讓在下略盡地主之誼。
+    note: 「在下」與「足下」稱謂顛倒
+    by: ai_review
 - id: doc_113_新北_永和_國文_g8s2e2_s5_21
   section: 5
   number: 21

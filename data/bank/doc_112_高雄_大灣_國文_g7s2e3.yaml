@@ -887,10 +887,10 @@ questions:
   number: 21
   type: single
   page: 4
-  stem: 下列選項中所歌詠的人物，何者配對錯誤？
+  stem: 下列選項中所歌詠的人物，何者配對錯誤？（原卷有誤，已修正）
   options:
   - label: A
-    content: 菊經難留彭澤令，桃源中住武陵人 — 陶潛
+    content: 菊徑難留彭澤令，桃源中住武陵人 — 陶潛
   - label: B
     content: 泗水文章昭日月，杏壇禮樂冠華夷 — 孔子
   - label: C
@@ -914,6 +914,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 菊經難留彭澤令，桃源中住武陵人
+    to: 菊徑難留彭澤令，桃源中住武陵人
+    note: 「菊經」應為「菊徑」
+    by: ai_review
 - id: doc_112_高雄_大灣_國文_g7s2e3_s1_22
   section: 1
   number: 22

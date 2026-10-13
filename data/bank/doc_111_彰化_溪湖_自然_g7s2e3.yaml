@@ -683,12 +683,12 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: (   )關於環境汙染的問題，下列敘述何者錯誤？
+  stem: (   )關於環境汙染的問題，下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 二氧化碳排放過量會造成溫室效應，引起全球暖化
   - label: B
-    content: 酸雨是工廠和汽機車排放廢氣中含有汙染物質溶在雨水中所致所致
+    content: 酸雨是工廠和汽機車排放廢氣中含有汙染物質溶在雨水中所致
   - label: C
     content: 化石燃料大量使用，使細懸浮微粒PM2.5布滿天空，造成沙塵暴
   - label: D
@@ -710,6 +710,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 含有汙染物質溶在雨水中所致所致
+    to: 含有汙染物質溶在雨水中所致
+    note: 多印一個「所致」
+    by: ai_review
 - id: doc_111_彰化_溪湖_自然_g7s2e3_s2_21
   section: 2
   number: 21

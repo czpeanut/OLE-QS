@@ -656,7 +656,7 @@ questions:
   number: 3
   type: fill
   page: 2
-  stem: '銘傳國中七年班和七年乙班某天同時進行英語聽力測驗。若測驗結果如右表，則甲、乙兩班共有______人及格。
+  stem: '銘傳國中七年甲班和七年乙班某天同時進行英語聽力測驗。若測驗結果如右表，則甲、乙兩班共有______人及格。
 
 
     | | 甲班 | 乙班 | 合計 |
@@ -667,7 +667,7 @@ questions:
 
     | 不及格 | $b$ | 8 | 23 |
 
-    | 合計 | 27 | 24 | $d$ |'
+    | 合計 | 27 | 24 | $d$ |（原卷有誤，已修正）'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -687,6 +687,11 @@ questions:
   - '28'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 銘傳國中七年班和七年乙班某天同時進行英語聽力測驗
+    to: 銘傳國中七年甲班和七年乙班某天同時進行英語聽力測驗
+    note: 漏印「甲」字
+    by: ai_review
 - id: doc_113_基隆_銘傳_數學_g7s2e3_s2_4
   section: 2
   number: 4

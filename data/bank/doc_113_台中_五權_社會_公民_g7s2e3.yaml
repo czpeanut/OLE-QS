@@ -107,12 +107,12 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 時代變遷，臺灣的人口結構也逐漸轉變。下圖為我國單人家戶十年間的成長戶數及上升比例，關於造成此現象的原因及其影響，下列敘述何者正確？
+  stem: 時代變遷，臺灣的人口結構也逐漸轉變。下圖為我國單人家戶十年間的成長戶數及上升比例，關於造成此現象的原因及其影響，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 該現象將導致生育率及離婚率增加
   - label: B
-    content: 這時年間女性就業人口及經濟能力均提高
+    content: 這十年間女性就業人口及經濟能力均提高
   - label: C
     content: 傳播媒體逐漸取代家庭的保護與照顧功能
   - label: D
@@ -150,6 +150,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 這時年間女性就業人口及經濟能力均提高
+    to: 這十年間女性就業人口及經濟能力均提高
+    note: 「時」為「十」之錯字
+    by: ai_review
 - id: doc_113_台中_五權_社會_公民_g7s2e3_s1_4
   section: 1
   number: 4

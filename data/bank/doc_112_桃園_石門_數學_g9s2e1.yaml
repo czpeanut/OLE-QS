@@ -309,10 +309,10 @@ questions:
   page: 1
   stem: '包哥參加鉛球擲遠，三次的投擲的軌跡(如右上圖)分別為
 
-    A:$y = a(x + h_{1})^{2} + k_{1}$、B:$y = b(x + h_{2})^{2} + k_{2}$、C: A:$y = c(x
-    + h_{3})^{2} + k_{3}$。
+    A:$y = a(x + h_{1})^{2} + k_{1}$、B:$y = b(x + h_{2})^{2} + k_{2}$、C:$y = c(x +
+    h_{3})^{2} + k_{3}$。
 
-    請問：三次投擲的二次函數中，二次項係數$a$、$b$、$c$ 何者「最大」？'
+    請問：三次投擲的二次函數中，二次項係數$a$、$b$、$c$ 何者「最大」？（原卷有誤，已修正）'
   options:
   - label: A
     content: a
@@ -356,6 +356,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 'C: A:$y = c(x + h_{3})^{2} + k_{3}$'
+    to: C:$y = c(x + h_{3})^{2} + k_{3}$
+    note: 多印了「A:」
+    by: ai_review
 - id: doc_112_桃園_石門_數學_g9s2e1_s1_9
   section: 1
   number: 9

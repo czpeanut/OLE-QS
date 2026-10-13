@@ -423,8 +423,8 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 右圖為俄羅斯的地理分區圖，紫倫參加西伯利亞的火車之旅，她搭乘西伯利亞鐵路，從首都出發，浴途經過貝加爾湖、大片林區以及零星小鎮，共穿越8 個時區，歷時7
-    天，總算到達終點站海參崴。請問紫倫沿途所見地形種類，依序為下列何者？
+  stem: 右圖為俄羅斯的地理分區圖，紫倫參加西伯利亞的火車之旅，她搭乘西伯利亞鐵路，從首都出發，沿途經過貝加爾湖、大片林區以及零星小鎮，共穿越8 個時區，歷時7
+    天，總算到達終點站海參崴。請問紫倫沿途所見地形種類，依序為下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 乙甲丙
@@ -484,6 +484,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 浴途經過貝加爾湖
+    to: 沿途經過貝加爾湖
+    note: 「浴」應為「沿」
+    by: ai_review
 - id: doc_113_高雄_左營_社會_g9s1e1_s1_11
   section: 1
   number: 11
@@ -666,7 +671,7 @@ questions:
 
      ⑧：西班牙，緯度低，生長季長，為歐洲重要蔬果供應地，藝術文化資產豐富，如高第的聖家堂及佛朗明哥舞蹈。
 
-    請問上列敘述及在地圖上的位置配對，何者正確？'
+    請問上列敘述及在地圖上的位置配對，何者正確？（原卷有誤，已修正）'
   options:
   - label: A
     content: ①③④
@@ -676,7 +681,7 @@ questions:
     content: ②③⑤
   - label: D
     content: ①⑥⑧。
-  group_stem: ※右圖為歐洲行政區圖，①~⑥為國家名稱。依圖中資訊，請回答第15-16 題：
+  group_stem: ※右圖為歐洲行政區圖，①~8為國家名稱。依圖中資訊，請回答第15-16 題：
   shared_asset: g2_15_16
   tags:
     chapter:
@@ -695,6 +700,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ※右圖為歐洲行政區圖，①~⑥為國家名稱。
+    to: ※右圖為歐洲行政區圖，①~⑧為國家名稱。
+    note: 圖中與選項國家編號至⑧
+    by: ai_review
 - id: doc_113_高雄_左營_社會_g9s1e1_s2_16
   section: 2
   number: 16
@@ -717,7 +727,7 @@ questions:
     content: 丙丁
   - label: D
     content: 乙丙。
-  group_stem: ※右圖為歐洲行政區圖，①~⑥為國家名稱。依圖中資訊，請回答第15-16 題：
+  group_stem: ※右圖為歐洲行政區圖，①~8為國家名稱。依圖中資訊，請回答第15-16 題：
   shared_asset: g2_15_16
   assets:
   - key: s2_16_f1

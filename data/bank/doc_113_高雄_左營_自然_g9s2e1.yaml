@@ -1075,7 +1075,7 @@ questions:
   number: 27
   type: single
   page: 3
-  stem: 下列有關電鍍的敘述，何者錯誤？ (甲)被鍍物品應掛在正極；(乙)欲鍍的金屬作為正極；(丙)電鍍液為被鍍金屬的鹽類水溶液；(丁)在其他條件不變的情況下，使用電壓越大的電池，電鍍得反應速率越快
+  stem: 下列有關電鍍的敘述，何者錯誤？ (甲)被鍍物品應掛在正極；(乙)欲鍍的金屬作為正極；(丙)電鍍液為被鍍金屬的鹽類水溶液；(丁)在其他條件不變的情況下，使用電壓越大的電池，電鍍的反應速率越快（原卷有誤，已修正）
   options:
   - label: A
     content: 甲丁
@@ -1103,6 +1103,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 電鍍得反應速率越快
+    to: 電鍍的反應速率越快
+    note: 錯字，「得」應為「的」
+    by: ai_review
 - id: doc_113_高雄_左營_自然_g9s2e1_s1_28
   section: 1
   number: 28
@@ -1406,8 +1411,8 @@ questions:
   page: 3
   stem: '如下圖所示，甲、乙、丙、丁為電解硫酸銅水溶液之電解槽，電極 1、2、5、8 為碳棒，電極 3、4、6、7 為銅棒，則下列 a ~ e 的敘述：
 
-    (a).產生氧氣的電極是 2、5 (b).有銅析出的電極是 2、4、6、8 (c).質量減少的電極是 3、7 (d).質量不變的電極是 1、2，5 (e).濃度不變的電解槽是
-    乙、丁 ；正確的有哪些？'
+    (a).產生氧氣的電極是 2、5 (b).有銅析出的電極是 2、4、6、8 (c).質量減少的電極是 3、7 (d).質量不變的電極是 1、2、5 (e).濃度不變的電解槽是
+    乙、丁 ；正確的有哪些？（原卷有誤，已修正）'
   options:
   - label: A
     content: bce
@@ -1451,6 +1456,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (d).質量不變的電極是 1、2，5
+    to: (d).質量不變的電極是 1、2、5
+    note: 標點誤植，「，」應為「、」
+    by: ai_review
 - id: doc_113_高雄_左營_自然_g9s2e1_s1_34
   section: 1
   number: 34

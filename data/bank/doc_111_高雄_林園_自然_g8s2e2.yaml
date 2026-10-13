@@ -1415,7 +1415,7 @@ questions:
   number: 32
   type: single
   page: 4
-  stem: 由哪幾種物質可以說明:「組成原子總類和數目相同，但排列方式不同，造成兩個分子的性質完全不相同」？
+  stem: 由哪幾種物質可以說明:「組成原子種類和數目相同，但排列方式不同，造成兩個分子的性質完全不相同」？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲醚、乙醇
@@ -1443,6 +1443,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 組成原子總類和數目相同
+    to: 組成原子種類和數目相同
+    note: 「總類」應為「種類」
+    by: ai_review
 - id: doc_111_高雄_林園_自然_g8s2e2_s1_33
   section: 1
   number: 33
@@ -1514,7 +1519,7 @@ questions:
   number: 35
   type: single
   page: 4
-  stem: 承第34 題，將兩種物質分別到入同一試管中進行反應，但是反應速率很慢，可以利用下列何種方式加快酯化反應？
+  stem: 承第34 題，將兩種物質分別倒入同一試管中進行反應，但是反應速率很慢，可以利用下列何種方式加快酯化反應？（原卷有誤，已修正）
   options:
   - label: A
     content: 滴入1-2 滴濃硫酸，並將試管放入熱水中反應
@@ -1542,6 +1547,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 將兩種物質分別到入同一試管中進行反應
+    to: 將兩種物質分別倒入同一試管中進行反應
+    note: 「到入」應為「倒入」
+    by: ai_review
 - id: doc_111_高雄_林園_自然_g8s2e2_s1_36
   section: 1
   number: 36

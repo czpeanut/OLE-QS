@@ -355,10 +355,10 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 笑笑羊和喜羊羊於 12 月 20 日從紐西蘭出發，沿著 180度開船，上岸後再前往南極點，請問關於他們的旅程，下列敘述何者正確？
+  stem: 笑笑羊和喜羊羊於 12 月 20 日從紐西蘭出發，沿著 180度開船，上岸後再前往南極點，請問關於他們的旅程，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 沿著 180 度往北前近，即可抵達南極點
+    content: 沿著 180 度往北前進，即可抵達南極點
   - label: B
     content: 從南極點出發，往西前進抵達甲地
   - label: C
@@ -386,6 +386,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 沿著 180 度往北前近，即可抵達南極點
+    to: (A) 沿著 180 度往北前進，即可抵達南極點
+    note: 「前近」應為「前進」
+    by: ai_review
 - id: doc_112_台北_民生_社會_g7s1e1_s1_10
   section: 1
   number: 10

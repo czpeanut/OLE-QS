@@ -886,7 +886,7 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 下列對於運動會中各項比賽的描述，何者與牛頓第三運動定律有關？
+  stem: 下列對於運動會中各項比賽的描述，何者與牛頓第三運動定律有關？（原卷有誤，已修正）
   options:
   - label: A
     content: 100 公尺短跑比賽中，選手衝向終點後，沒有辦法馬上停下來
@@ -895,7 +895,7 @@ questions:
   - label: C
     content: 滾球比賽中，愈重的球需要派出更多的人推，才能滾得比較快
   - label: D
-    content: 游泳比賽中，選手在比賽開時會蹬牆以利自己前進。
+    content: 游泳比賽中，選手在比賽開始會蹬牆以利自己前進。
   answer:
   - D
   answer_source: answer_key_vlm
@@ -912,6 +912,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 選手在比賽開時會蹬牆以利自己前進
+    to: 選手在比賽開始會蹬牆以利自己前進
+    note: 「開時」應為「開始」
+    by: ai_review
 - id: doc_111_高雄_林園_自然_g9s1e2_s1_25
   section: 1
   number: 25

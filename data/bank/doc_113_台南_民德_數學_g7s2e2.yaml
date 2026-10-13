@@ -318,7 +318,7 @@ questions:
   number: 13
   type: fill
   page: 2
-  stem: 如圖，有甲、乙、丙三個齒輪緊密接合在一起，而且分別有 30 齒、12 齒、18 齒，則甲、乙、丙三個齒輪在同一時間轉動的圈數比為＿＿＿＿。(答案以最簡分數表示)
+  stem: 如圖，有甲、乙、丙三個齒輪緊密接合在一起，而且分別有 30 齒、12 齒、18 齒，則甲、乙、丙三個齒輪在同一時間轉動的圈數比為＿＿＿＿。(答案以最簡整數比表示)（原卷有誤，已修正）
   assets:
   - key: s1_13_f1
     kind: figure
@@ -353,6 +353,11 @@ questions:
   - '6:15:10'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (答案以最簡分數表示)
+    to: (答案以最簡整數比表示)
+    note: 比應求最簡整數比，原卷誤印為最簡分數
+    by: ai_review
 - id: doc_113_台南_民德_數學_g7s2e2_s1_14
   section: 1
   number: 14

@@ -496,7 +496,7 @@ questions:
   number: 53
   type: single
   page: 2
-  stem: 下列有關都市化程度的描述，何者最為正確？
+  stem: 下列有關都市化程度的描述，何者最為正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 一國都市的土地面積占全國土地總面積的比例
@@ -506,7 +506,7 @@ questions:
     content: 一國第二、三級產業就業人口占全國總人口的比例
   - label: D
     content: 一國在都市居住的人口占全國總人口的比例。
-  group_stem: '[題組53-54]右圖四為泰國、日本、英國、中國和台灣的都市化程度的長條圖，請回答53-55 題。'
+  group_stem: '[題組53-55]右圖四為泰國、日本、英國、中國和台灣的都市化程度的長條圖，請回答53-55 題。'
   shared_asset: g2_53_55
   tags:
     chapter:
@@ -525,12 +525,17 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini-only
+  errata:
+  - from: '[題組53-54]右圖四為泰國、日本、英國、中國和台灣的都市化程度的長條圖，請回答53-55 題。'
+    to: '[題組53-55]右圖四為泰國、日本、英國、中國和台灣的都市化程度的長條圖，請回答53-55 題。'
+    note: 題組範圍誤印為53-54
+    by: ai_review
 - id: doc_113_高雄_楠梓_社會_地理_g7s2e3_s2_54
   section: 2
   number: 54
   type: single
   page: 2
-  stem: 右表中，下列哪一個國家的第一級產業人口比例應最低？
+  stem: 右圖中，下列哪一個國家的第一級產業人口比例應最低？（原卷有誤，已修正）
   options:
   - label: A
     content: 日本
@@ -540,7 +545,7 @@ questions:
     content: 泰國
   - label: D
     content: 中國。
-  group_stem: '[題組53-54]右圖四為泰國、日本、英國、中國和台灣的都市化程度的長條圖，請回答53-55 題。'
+  group_stem: '[題組53-55]右圖四為泰國、日本、英國、中國和台灣的都市化程度的長條圖，請回答53-55 題。'
   shared_asset: g2_53_55
   tags:
     chapter:
@@ -557,6 +562,11 @@ questions:
     gemini_high: A
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 右表中，下列哪一個國家的第一級產業人口比例應最低？
+    to: 右圖中，下列哪一個國家的第一級產業人口比例應最低？
+    note: 右側為長條圖非表格，表應為圖
+    by: ai_review
 - id: doc_113_高雄_楠梓_社會_地理_g7s2e3_s2_55
   section: 2
   number: 55
@@ -572,7 +582,7 @@ questions:
     content: 300 萬人
   - label: D
     content: 400 萬人。
-  group_stem: '[題組53-54]右圖四為泰國、日本、英國、中國和台灣的都市化程度的長條圖，請回答53-55 題。'
+  group_stem: '[題組53-55]右圖四為泰國、日本、英國、中國和台灣的都市化程度的長條圖，請回答53-55 題。'
   shared_asset: g2_53_55
   tags:
     chapter:

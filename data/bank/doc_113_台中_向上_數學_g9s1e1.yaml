@@ -226,7 +226,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 如右圖，有一張長為48 公分，寬為36 公分的長方形紙張，在長邊剪下寬為12 公分的長條，則寬的部分剪下多少公分的長條，所剩下的長方形會原長方形相似？
+  stem: 如右圖，有一張長為48 公分，寬為36 公分的長方形紙張，在長邊剪下寬為12 公分的長條，則寬的部分剪下多少公分的長條，所剩下的長方形會與原長方形相似？（原卷有誤，已修正）
   options:
   - label: A
     content: '12'
@@ -270,6 +270,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 所剩下的長方形會原長方形相似？
+    to: 所剩下的長方形會與原長方形相似？
+    note: 漏「與」字
+    by: ai_review
 - id: doc_113_台中_向上_數學_g9s1e1_s1_7
   section: 1
   number: 7
@@ -357,7 +362,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 下哪一組三角形必相似？
+  stem: 下列哪一組三角形必相似？（原卷有誤，已修正）
   options:
   - label: A
     content: △ABC 和△ADE
@@ -392,6 +397,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下哪一組三角形必相似？
+    to: 下列哪一組三角形必相似？
+    note: 漏「列」字
+    by: ai_review
 - id: doc_113_台中_向上_數學_g9s1e1_s1_10
   section: 1
   number: 10
@@ -652,8 +662,8 @@ questions:
   number: 8
   type: fill
   page: 2
-  stem: 小玄將右圖直角坐標平面上的四邊形OABC 以y 軸為對稱軸，繪出其對稱圖形後，再以O 點縮放中心，將對稱圖形縮小為四邊形$OA'B'C'$。已知A(12,0)，C(0,12)，$A'(-4,0)$，且$\overline{AB}
-    \perp x$軸，$\overline{BC} = 13$，$\overline{AB} < \overline{CO}$，則$B'$點坐標為 (I)
+  stem: 小玄將右圖直角坐標平面上的四邊形OABC 以y 軸為對稱軸，繪出其對稱圖形後，再以O 點為縮放中心，將對稱圖形縮小為四邊形$OA'B'C'$。已知A(12,0)，C(0,12)，$A'(-4,0)$，且$\overline{AB}
+    \perp x$軸，$\overline{BC} = 13$，$\overline{AB} < \overline{CO}$，則$B'$點坐標為 (I)（原卷有誤，已修正）
   assets:
   - key: s2_8_f1
     kind: figure
@@ -688,6 +698,11 @@ questions:
   - (-4, \frac{7}{3})
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 再以O 點縮放中心，將對稱圖形縮小
+    to: 再以O 點為縮放中心，將對稱圖形縮小
+    note: 漏「為」字
+    by: ai_review
 - id: doc_113_台中_向上_數學_g9s1e1_s2_9
   section: 2
   number: 9

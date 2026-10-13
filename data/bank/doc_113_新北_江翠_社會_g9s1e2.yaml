@@ -1651,12 +1651,12 @@ questions:
   number: 46
   type: single
   page: 5
-  stem: 根據表(三)內容判斷，若兩國間協議進行國際貿易，下列關於兩國間貿易的推論，何者較為正確？
+  stem: 根據表(三)內容判斷，若兩國間協議進行國際貿易，下列關於兩國間貿易的推論，何者較為正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 自達國若出口電動車至車飛國，通常表示自達國生產電動車的機會成本較高
   - label: B
-    content: 自達國若出口電動車至車飛國，通常表示車非國的電動車價格比自達國來得高
+    content: 自達國若出口電動車至車飛國，通常表示車飛國的電動車價格比自達國來得高
   - label: C
     content: 車飛國若從自達國進口電動車，通常表示車飛國的電動車價格比自達國來得低
   - label: D
@@ -1691,6 +1691,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 通常表示車非國的電動車價格比自達國來得高
+    to: 通常表示車飛國的電動車價格比自達國來得高
+    note: 車非國錯字，應為車飛國
+    by: ai_review
 shared_assets:
 - key: g1_13_14
   label: 題組附圖

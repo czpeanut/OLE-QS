@@ -463,7 +463,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 假設硫酸能完全解哩，其水溶液中[$H_{2}SO_{4}$] ＝$1 \times 10^{-3}$M，則溶液之[ $H^{+}$]＝？
+  stem: 假設硫酸能完全解離，其水溶液中[$H_{2}SO_{4}$] ＝$1 \times 10^{-3}$M，則溶液之[ $H^{+}$]＝？（原卷有誤，已修正）
   options:
   - label: A
     content: $2 \times 10^{-3}$M
@@ -490,6 +490,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 假設硫酸能完全解哩，其水溶液中
+    to: 假設硫酸能完全解離，其水溶液中
+    note: 「解哩」應為「解離」
+    by: ai_review
 - id: doc_113_台中_大業_自然_g8s2e2_s1_15
   section: 1
   number: 15
@@ -623,7 +628,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 今各加1 公克鋅粉於定量、同濃度的三份鹽酸中，溫度各控制在20℃、25℃及30℃，若鎂粉皆完全反應，則下列圖中何者最可能說明在定壓時，反應後所放出氣體$H_{2}$莫耳數與時間的關係？
+  stem: 今各加1 公克鋅粉於定量、同濃度的三份鹽酸中，溫度各控制在20℃、25℃及30℃，若鋅粉皆完全反應，則下列圖中何者最可能說明在定壓時，反應後所放出氣體$H_{2}$莫耳數與時間的關係？（原卷有誤，已修正）
   options:
   - label: A
     content: ''
@@ -714,6 +719,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 各控制在20℃、25℃及30℃，若鎂粉皆完全反應
+    to: 各控制在20℃、25℃及30℃，若鋅粉皆完全反應
+    note: 題幹前述為鋅粉，誤植為鎂粉
+    by: ai_review
 - id: doc_113_台中_大業_自然_g8s2e2_s1_20
   section: 1
   number: 20
@@ -1544,8 +1554,8 @@ questions:
   type: fill
   page: 5
   stem: "某類有機化合物不易溶於水，完全燃燒後只會產生二氧化碳和水，若燃燒時氧氣不足，則會產生一氧化碳和水，且一氧化碳比氧氣更容易與血液中的血紅素結合，使身體缺氧而造成傷害。在一次假日社區巡邏的任務中，口田同學就曾經因為發現住戶的寵物鳥暈倒而進一步確認為全戶一氧化碳中毒，最後將全戶解救成功，最後也得到市長的表揚。\n\
-    \n請問下列物質屬於上述某類有機化合的有那些?\n（甲）HCl   （乙）H2O2    （丙）CH4   \n（丁）C2H5OH  （戊）C6H6   \
-    \ （己）C60 \n（庚）CO    （辛）C3H8 \n請以代號作答。(             )"
+    \n請問下列物質屬於上述某類有機化合物的有那些?\n（甲）HCl   （乙）H2O2    （丙）CH4   \n（丁）C2H5OH  （戊）C6H6  \
+    \  （己）C60 \n（庚）CO    （辛）C3H8 \n請以代號作答。(             )（原卷有誤，已修正）"
   tags:
     chapter:
       publisher: 翰林
@@ -1564,6 +1574,11 @@ questions:
   - 丙、戊、辛
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 請問下列物質屬於上述某類有機化合的有那些?
+    to: 請問下列物質屬於上述某類有機化合物的有那些?
+    note: 漏「物」字
+    by: ai_review
 - id: doc_113_台中_大業_自然_g8s2e2_s2_40
   section: 2
   number: 40

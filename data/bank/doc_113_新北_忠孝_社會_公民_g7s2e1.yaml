@@ -134,12 +134,12 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 國籍的取得可因出生而由法律直接賦予，或是後天採取某種方式改變。請問：下列關於我國國籍取得的說明何項正確？
+  stem: 國籍的取得可因出生而由法律直接賦予，或是後天採取某種方式改變。請問：下列關於我國國籍取得的說明何項正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 約翰被我國國民收養後，已完成申請歸化成為我國國民
   - label: B
-    content: 多多的父親是中華民國國民，但他在日本出生，因此無無法取得我國國籍
+    content: 多多的父親是中華民國國民，但他在日本出生，因此無法取得我國國籍
   - label: C
     content: 小婕的爸媽是美國國民，她在臺灣出生，可以取得我國國籍
   - label: D
@@ -161,6 +161,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 因此無無法取得我國國籍
+    to: 因此無法取得我國國籍
+    note: 多一個「無」字
+    by: ai_review
 - id: doc_113_新北_忠孝_社會_公民_g7s2e1_s1_5
   section: 1
   number: 5

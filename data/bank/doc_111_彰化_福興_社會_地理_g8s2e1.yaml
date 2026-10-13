@@ -854,7 +854,7 @@ questions:
   number: 23
   type: single
   page: 3
-  stem: '附表為日本甲、乙、丙、丁四個地區適合欣賞楓紅的時序表，楓紅是指植物樹葉因溫度降低而引起變色的現象。根據上述，附圖中哪個地區的緯度最高？
+  stem: '附表為日本甲、乙、丙、丁四個地區適合欣賞楓紅的時序表，楓紅是指植物樹葉因溫度降低而引起變色的現象。根據上述，附表中哪個地區的緯度最高？
 
 
     | 地區 | 9月 | 10月 | 11月 | 12月 |
@@ -867,7 +867,7 @@ questions:
 
     | 丙 | | | 🍁🍁 | 🍁🍁 |
 
-    | 丁 | | | 🍁 | 🍁🍁 |'
+    | 丁 | | | 🍁 | 🍁🍁 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲
@@ -896,6 +896,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據上述，附圖中哪個地區的緯度最高？
+    to: 根據上述，附表中哪個地區的緯度最高？
+    note: 原題提供者為附表，誤寫為附圖
+    by: ai_review
 - id: doc_111_彰化_福興_社會_地理_g8s2e1_s1_24
   section: 1
   number: 24

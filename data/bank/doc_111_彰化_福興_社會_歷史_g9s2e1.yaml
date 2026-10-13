@@ -536,7 +536,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 隨著蒸汽機的廣泛使用，喬治·史蒂芬森在鐵路上用蒸汽機作動力以取代原來在鐵路上使用的有軌馬車。喬治·史蒂芬森取名布魯克號，人稱火車，而台灣有火車的產生，與何人見在台建設有關？
+  stem: 隨著蒸汽機的廣泛使用，喬治·史蒂芬森在鐵路上用蒸汽機作動力以取代原來在鐵路上使用的有軌馬車。喬治·史蒂芬森取名布魯克號，人稱火車，而台灣有火車的產生，與何人在台建設有關？（原卷有誤，已修正）
   options:
   - label: A
     content: 沈葆楨
@@ -566,6 +566,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 與何人見在台建設有關？
+    to: 與何人在台建設有關？
+    note: 多印「見」字，應刪除
+    by: ai_review
 - id: doc_111_彰化_福興_社會_歷史_g9s2e1_s1_16
   section: 1
   number: 16
@@ -1528,7 +1533,7 @@ questions:
   type: single
   page: 4
   stem: 小華是一位在英國的台灣留學生，他的室友有來自美國、法國甚至有來自中國大陸，他們都是好朋友，不會因國家認同而吵架，他們約定若自己國家國慶日，他們就懸掛自己國家的國旗，請問在今年
-    2023 懸掛國旗，下列哪依順序是正確？
+    2023 懸掛國旗，下列哪一順序是正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 小華、美國室友、法國室友、中國大陸
@@ -1558,6 +1563,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 下列哪依順序是正確？
+    to: 下列哪一順序是正確？
+    note: 「哪依」應為「哪一」
+    by: ai_review
 shared_assets:
 - key: g1_1_5
   label: 題組附圖

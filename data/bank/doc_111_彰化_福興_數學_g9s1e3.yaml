@@ -77,9 +77,9 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 如圖(二)，在梯形 $ABCD$ 中，$\overline{AB}//\overline{CD}$，$E$、$F$ 分別為對角線 $\overline{BD}$
+  stem: 如圖(二)，在梯形 $ABCD$ 中，$\overline{AD}//\overline{BC}$，$E$、$F$ 分別為對角線 $\overline{BD}$
     和 $\overline{AC}$ 的中點。若 $\overline{AD}=12$，$\overline{BC}=20$，求 $\overline{EF}$
-    長度。
+    長度。（原卷有誤，已修正）
   options:
   - label: A
     content: '2'
@@ -124,6 +124,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 在梯形 $ABCD$ 中，$\overline{AB}//\overline{CD}$，$E$、$F$ 分別為對角線
+    to: 在梯形 $ABCD$ 中，$\overline{AD}//\overline{BC}$，$E$、$F$ 分別為對角線
+    note: 平行的兩底應為AD與BC
+    by: ai_review
 - id: doc_111_彰化_福興_數學_g9s1e3_s1_3
   section: 1
   number: 3
@@ -991,13 +996,13 @@ questions:
     $D$ 點為 $\overline{BC}$ 上一點。今打算在 $\overline{AB}$ 上找一點 $P$，在 $\overline{AC}$ 上找一點
     $Q$，使得 $\triangle APQ$ 與 $\triangle DPQ$ 全等，以下是阿寶、小翰兩人的作法：
 
-    阿寶：過 $D$ 作與 $\overline{AC}$ 平行的直線交 $\overline{AB}$ 於點，過 $D$ 作與 $\overline{AB}$
+    阿寶：過 $D$ 作與 $\overline{AC}$ 平行的直線交 $\overline{AB}$ 於P點，過 $D$ 作與 $\overline{AB}$
     平行的直線交 $\overline{AC}$ 於 $Q$ 點，則 $P$、$Q$ 兩點即為所求。
 
     小翰：連接 $\overline{AD}$，作 $\overline{AD}$ 的中垂線分別交 $\overline{AB}$、$\overline{AC}$
     於 $P$ 點、$Q$ 點，則 $P$、$Q$ 兩點即為所求。
 
-    對於阿寶、小翰兩人的作法，下列判斷何者正確？'
+    對於阿寶、小翰兩人的作法，下列判斷何者正確？（原卷有誤，已修正）'
   options:
   - label: A
     content: 阿寶正確，小翰錯誤
@@ -1037,6 +1042,11 @@ questions:
     gemini: C
     qwen: B
     gemini_high: C
+  errata:
+  - from: 平行的直線交 $\overline{AB}$ 於點，過 $D$ 作與
+    to: 平行的直線交 $\overline{AB}$ 於 $P$ 點，過 $D$ 作與
+    note: 漏字，應交於P點
+    by: ai_review
 - id: doc_111_彰化_福興_數學_g9s1e3_s1_23
   section: 1
   number: 23

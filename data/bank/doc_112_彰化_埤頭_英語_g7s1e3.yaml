@@ -871,7 +871,7 @@ questions:
   type: single
   page: 2
   stem: Thanks _______ each other's help, the oxpeckers are full and happy, and the
-    zebras are clean and heathy.
+    zebras are clean and healthy.（原卷有誤，已修正）
   options:
   - label: A
     content: of
@@ -900,6 +900,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: and the zebras are clean and heathy.
+    to: and the zebras are clean and healthy.
+    note: heathy 拼錯，應為 healthy
+    by: ai_review
 - id: doc_112_彰化_埤頭_英語_g7s1e3_s4_45
   section: 4
   number: 45

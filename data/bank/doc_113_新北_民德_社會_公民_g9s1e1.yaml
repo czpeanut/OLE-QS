@@ -236,10 +236,10 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 附圖為阿光在家裡巷口發現的告示，根據告示內容，下列敘述何者正確？
+  stem: 附圖為阿光在家裡巷口發現的告示，根據告示內容，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 6,000 元為鼓勵民眾倒圾垃的正向誘因
+    content: 6,000 元為鼓勵民眾倒垃圾的正向誘因
   - label: B
     content: 1,000 元為鼓勵民眾檢舉的正向誘因
   - label: C
@@ -274,6 +274,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 6,000 元為鼓勵民眾倒圾垃的正向誘因
+    to: 6,000 元為鼓勵民眾倒垃圾的正向誘因
+    note: 「圾垃」應為「垃圾」
+    by: ai_review
 - id: doc_113_新北_民德_社會_公民_g9s1e1_s1_7
   section: 1
   number: 7

@@ -89,8 +89,8 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: "光臘樹的莖，可以不斷增生新的木質部和韌皮部，使莖\n加粗，因此莖內含有： 甲. 新的韌皮部；乙.；老的韌\n皮部 丙. 新的木質部；丁.老的木質部；戊.形成層。\
-    \ \n以上構造由外而內排列順序為何？"
+  stem: "光臘樹的莖，可以不斷增生新的木質部和韌皮部，使莖\n加粗，因此莖內含有： 甲. 新的韌皮部；乙.老的韌\n皮部 丙. 新的木質部；丁.老的木質部；戊.形成層。\
+    \ \n以上構造由外而內排列順序為何？（原卷有誤，已修正）"
   options:
   - label: A
     content: 甲→乙→丙→丁→戊
@@ -117,6 +117,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 乙.；老的韌皮部
+    to: 乙. 老的韌皮部
+    note: 多了一個分號
+    by: ai_review
 - id: doc_113_新北_桃子腳_自然_g7s1e2_s1_3
   section: 1
   number: 3
@@ -384,14 +389,14 @@ questions:
   page: 1
   stem: '櫻花在秋冬時葉片落盡，1-2 月時開花，請問這個時候
 
-    櫻花的養分從何處而來？'
+    櫻花的養分從何處而來？（原卷有誤，已修正）'
   options:
   - label: A
     content: '櫻花的莖表皮細胞可進
 
       行光合作用'
   - label: B
-    content: )根部會吸收土壤中的葡萄糖等養分
+    content: 根部會吸收土壤中的葡萄糖等養分
   - label: C
     content: 根、莖在春、夏天儲存的澱粉養分
   - label: D
@@ -415,6 +420,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) )根部會吸收土壤中的葡萄糖等養分
+    to: (B) 根部會吸收土壤中的葡萄糖等養分
+    note: 選項前多了一個右括號
+    by: ai_review
 - id: doc_113_新北_桃子腳_自然_g7s1e2_s1_10
   section: 1
   number: 10
@@ -1904,7 +1914,7 @@ questions:
   page: 4
   stem: '血液檢查發現「丙」的數目異常增加時，醫生會推論
 
-    病人身體可能發生了什麼問體？'
+    病人身體可能發生了什麼問題？（原卷有誤，已修正）'
   options:
   - label: A
     content: 罹患糖尿病
@@ -1935,6 +1945,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 病人身體可能發生了什麼問體？
+    to: 病人身體可能發生了什麼問題？
+    note: 錯字，「問體」應為「問題」
+    by: ai_review
 - id: doc_113_新北_桃子腳_自然_g7s1e2_s1_48
   section: 1
   number: 48

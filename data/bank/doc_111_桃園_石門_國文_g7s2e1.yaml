@@ -329,12 +329,12 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 根據〈聲音鐘〉，下列關於聲音鐘的敘述何者不恰當？
+  stem: 根據〈聲音鐘〉，下列關於聲音鐘的敘述何者不恰當？（原卷有誤，已修正）
   options:
   - label: A
     content: 聲音鐘與物理時間一般準確
   - label: B
-    content: 聲音鐘指的是的小販叫賣聲
+    content: 聲音鐘指的是小販叫賣聲
   - label: C
     content: 聲音鐘充滿變化，饒富趣味
   - label: D
@@ -359,6 +359,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 聲音鐘指的是的小販叫賣聲
+    to: 聲音鐘指的是小販叫賣聲
+    note: 多印一個「的」字
+    by: ai_review
 - id: doc_111_桃園_石門_國文_g7s2e1_s4_9
   section: 4
   number: 9

@@ -114,7 +114,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 小智想要調查山上的櫻花樹數量，先將整個區域劃分為 50 個小樣區，隨機抽出 5 個區域來數算，共有 400 棵櫻花樹。請問：小明所估計出來的櫻花樹總數約有幾棵？
+  stem: 小智想要調查山上的櫻花樹數量，先將整個區域劃分為 50 個小樣區，隨機抽出 5 個區域來數算，共有 400 棵櫻花樹。請問：小智所估計出來的櫻花樹總數約有幾棵？（原卷有誤，已修正）
   options:
   - label: A
     content: 3500 棵
@@ -143,6 +143,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小明所估計出來的櫻花樹總數約有幾棵？
+    to: 小智所估計出來的櫻花樹總數約有幾棵？
+    note: 題幹前文為小智，人名筆誤
+    by: ai_review
 - id: doc_111_彰化_福興_自然_g7s2e3_s1_4
   section: 1
   number: 4

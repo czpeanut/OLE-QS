@@ -332,13 +332,13 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: '如右圖，已知F 點為鈍角三角形ABC 的外心，四邊形CDEF 為正方形，其中D、E 兩點皆在三角形外部。以下為小康與小軒對於此圖形的看法：
+  stem: '如右圖，已知F 點為鈍角三角形ABC 的外心，四邊形CDEF 為正方形，其中D、E 兩點皆在三角形外部。以下為大胃與小腸對於此圖形的看法：
 
     大胃：「我認為F 點是三角形ACE 的外心。」
 
     小腸：「我認為F 點也是三角形BDE 的外心。」
 
-    判斷兩人的看法何者正確？'
+    判斷兩人的看法何者正確？（原卷有誤，已修正）'
   options:
   - label: A
     content: 僅大胃正確
@@ -382,6 +382,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 以下為小康與小軒對於此圖形的看法：
+    to: 以下為大胃與小腸對於此圖形的看法：
+    note: 人名與後文大胃和小腸不一致
+    by: ai_review
 - id: doc_113_台中_四育_數學_g9s1e3_s1_9
   section: 1
   number: 9

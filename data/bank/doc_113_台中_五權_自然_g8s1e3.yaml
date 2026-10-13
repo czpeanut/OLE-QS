@@ -593,14 +593,14 @@ questions:
   number: 15
   type: single
   page: 1
-  stem: 碳為非金屬元素，依照不同的組成結構形成三種同素異形體，如附圖所示。關於圖中的三種物質，下列敘述何者正確？
+  stem: 碳為非金屬元素，依照不同的組成結構形成三種同素異形體，如附圖所示。關於圖中的三種物質，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 三種物質的組成元素相同，性質也相同
   - label: B
     content: 三種物質均屬於非金屬，都不具導電性
   - label: C
-    content: 圖(三)為石墨，可作為電極或鉛筆芯的材料
+    content: 圖(二)為石墨，可作為電極或鉛筆芯的材料
   - label: D
     content: 圖(二)為鑽石，結構呈立體網狀，硬度最大
   assets:
@@ -637,12 +637,17 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 圖(三)為石墨，可作為電極或鉛筆芯的材料
+    to: 圖(二)為石墨，可作為電極或鉛筆芯的材料
+    note: 石墨為圖(二)，誤植為圖(三)
+    by: ai_review
 - id: doc_113_台中_五權_自然_g8s1e3_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 下列有關鹼金族的敘述，何者正確？(甲)燃燒後的產物，溶在水中後均為鹼性；(乙) 燃燒後的產物，溶在水中會使酚酞指示劑呈現無色 (丙)鹼金族的元素，投中水中後均會產生氫氣；(丁)鹼金族又號稱鹵素。
+  stem: 下列有關鹼金族的敘述，何者正確？(甲)燃燒後的產物，溶在水中後均為鹼性；(乙) 燃燒後的產物，溶在水中會使酚酞指示劑呈現無色 (丙)鹼金族的元素，投入水中後均會產生氫氣；(丁)鹼金族又號稱鹵素。（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙
@@ -669,6 +674,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 鹼金族的元素，投中水中後均會產生氫氣
+    to: 鹼金族的元素，投入水中後均會產生氫氣
+    note: 「投中水中」應為「投入水中」
+    by: ai_review
 - id: doc_113_台中_五權_自然_g8s1e3_s1_17
   section: 1
   number: 17
@@ -802,7 +812,7 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: Mg(OH)3、OMg、KCl、CuSO4、C6H1206；以上的化學式中，寫錯的有幾個呢？
+  stem: Mg(OH)3、OMg、KCl、CuSO4、C6H12O6；以上的化學式中，寫錯的有幾個呢？（原卷有誤，已修正）
   options:
   - label: A
     content: '1'
@@ -829,6 +839,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: CuSO4、C6H1206；以上的化學式中
+    to: CuSO4、C6H12O6；以上的化學式中
+    note: 葡萄糖氧原子誤植為數字0
+    by: ai_review
 - id: doc_113_台中_五權_自然_g8s1e3_s1_22
   section: 1
   number: 22

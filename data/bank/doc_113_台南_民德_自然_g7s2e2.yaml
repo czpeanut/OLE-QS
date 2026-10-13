@@ -1152,7 +1152,7 @@ questions:
   number: 33
   type: single
   page: 3
-  stem: 山羊丁的顏色應為何？
+  stem: 山羊丁的顏色應為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 白色
@@ -1161,7 +1161,7 @@ questions:
   - label: C
     content: 灰面
   - label: D
-    content: 是隨機旳，黑面、白面兩種都有可能。
+    content: 是隨機的，黑面、白面兩種都有可能。
   group_stem: '*1996 年複製羊桃莉誕生，生物技術進入了新的里程碑。
 
     科學家將白色母山羊(甲)的乳腺細胞，與黑面母山羊(乙)去除細胞核後的卵細胞融合為一，
@@ -1184,6 +1184,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 是隨機旳，黑面、白面兩種都有可能。
+    to: 是隨機的，黑面、白面兩種都有可能。
+    note: 「旳」為打字錯字，應修正為「的」
+    by: ai_review
 - id: doc_113_台南_民德_自然_g7s2e2_s1_34
   section: 1
   number: 34

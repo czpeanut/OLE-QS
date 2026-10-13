@@ -164,6 +164,7 @@ questions:
       - 390.76
       - 567.49
       - 487.31
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -215,6 +216,7 @@ questions:
       - 550.15
       - 576.65
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -266,6 +268,7 @@ questions:
       - 541.64
       - 669.27
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -351,6 +354,7 @@ questions:
       - 554.4
       - 173.45
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -396,6 +400,7 @@ questions:
       - 186.22
       - 557.67
       - 281.13
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -475,6 +480,7 @@ questions:
       - 345.93
       - 541.64
       - 441.16
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -792,6 +798,7 @@ questions:
       - 261.82
       - 556.69
       - 337.42
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -939,6 +946,7 @@ questions:
       - 458.18
       - 557.35
       - 560.62
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1228,6 +1236,7 @@ questions:
       - 567.49
       - 430.04
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1381,6 +1390,7 @@ questions:
       - 561.27
       - 666.0
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1617,7 +1627,7 @@ questions:
   number: 41
   type: single
   page: 5
-  stem: 根據文章提供資料，關於 2024 年備受矚目且肉眼可見的的紫金山-阿特拉斯彗星，國際編號 C/2023 A3 的描述，何者正確？
+  stem: 根據文章提供資料，關於 2024 年備受矚目且肉眼可見的紫金山-阿特拉斯彗星，國際編號 C/2023 A3 的描述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 是一顆週期小於 200 年的彗星。
@@ -1675,6 +1685,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 備受矚目且肉眼可見的的紫金山-阿特拉斯彗星
+    to: 備受矚目且肉眼可見的紫金山-阿特拉斯彗星
+    note: 多一個「的」字
+    by: ai_review
 - id: doc_113_台南_復興_自然_g9s1e3_s2_42
   section: 2
   number: 42

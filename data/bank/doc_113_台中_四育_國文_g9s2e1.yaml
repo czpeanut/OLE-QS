@@ -1175,7 +1175,7 @@ questions:
   number: 33
   type: single
   page: 4
-  stem: 根據文意,下列文句的主與說明,何者正確?
+  stem: 根據文意,下列文句的主語說明,何者正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 或身自早出督切——諸將士
@@ -1213,6 +1213,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列文句的主與說明，何者正確？
+    to: 下列文句的主語說明，何者正確？
+    note: 「主與」應為「主語」
+    by: ai_review
 - id: doc_113_台中_四育_國文_g9s2e1_s3_34
   section: 3
   number: 34

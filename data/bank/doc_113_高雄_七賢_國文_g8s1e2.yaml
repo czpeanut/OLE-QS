@@ -1533,7 +1533,7 @@ questions:
   number: 29
   type: single
   page: 4
-  stem: 根據第一篇文章，下列何者使簽訂AB 約的誘因？
+  stem: 根據第一篇文章，下列何者是簽訂AB 約的誘因？（原卷有誤，已修正）
   options:
   - label: A
     content: 方便日後將房屋產權轉賣他人，並從中獲利
@@ -1566,15 +1566,20 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列何者使簽訂AB 約的誘因？
+    to: 下列何者是簽訂AB 約的誘因？
+    note: 「使」為錯字，應為「是」
+    by: ai_review
 - id: doc_113_高雄_七賢_國文_g8s1e2_s5_30
   section: 5
   number: 30
   type: single
   page: 4
-  stem: 根據以上兩篇文章，下列推論何者正確？
+  stem: 根據以上兩篇文章，下列推論何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: AB 合約若無留下指本，則銀行無從查證買家信用
+    content: AB 合約若無留下紙本，則銀行無從查證買家信用
   - label: B
     content: AB 合約應用範圍很廣，若無心存歹念則不算是犯罪
   - label: C
@@ -1604,6 +1609,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: AB 合約若無留下指本，則銀行無從查證
+    to: AB 合約若無留下紙本，則銀行無從查證
+    note: 「指本」為錯字，應為「紙本」
+    by: ai_review
 - id: doc_113_高雄_七賢_國文_g8s1e2_s5_31
   section: 5
   number: 31

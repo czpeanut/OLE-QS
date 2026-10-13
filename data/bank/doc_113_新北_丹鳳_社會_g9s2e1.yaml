@@ -454,10 +454,10 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 有關臺灣地名的淵源，下列哪一選項 與植物較無關聯？
+  stem: 有關臺灣地名的淵源，下列哪一選項 與植物較無關聯？（原卷有誤，已修正）
   options:
   - label: A
-    content: 蘆州區
+    content: 蘆洲區
   - label: B
     content: 林邊鄉
   - label: C
@@ -481,6 +481,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 蘆州區
+    to: (A) 蘆洲區
+    note: 錯字，「州」應為「洲」
+    by: ai_review
 - id: doc_113_新北_丹鳳_社會_g9s2e1_s1_10
   section: 1
   number: 10

@@ -629,7 +629,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 在相同溫度下，使用一透明水槽裝1000mL的水，再將體積相同的木塊和銅塊分別丟入水中，(過程中未損失任何水分，木塊與銅塊均為與水發生任何反應)，觀察結果為:木塊半浮在水面上，銅塊沉入至杯底，推論兩者的密度大小關係為？
+  stem: 在相同溫度下，使用一透明水槽裝1000mL的水，再將體積相同的木塊和銅塊分別丟入水中，(過程中未損失任何水分，木塊與銅塊均未與水發生任何反應)，觀察結果為:木塊半浮在水面上，銅塊沉入至杯底，推論兩者的密度大小關係為？（原卷有誤，已修正）
   options:
   - label: A
     content: 木塊＞銅塊
@@ -656,6 +656,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 木塊與銅塊均為與水發生任何反應
+    to: 木塊與銅塊均未與水發生任何反應
+    note: 「均為」應作「均未」
+    by: ai_review
 - id: doc_111_台北_新興_自然_g8s1e1_s1_17
   section: 1
   number: 17

@@ -1728,14 +1728,14 @@ questions:
   number: 26
   type: single
   page: 4
-  stem: 這首歌詞中所描繪的季節，與下列哪一項相同？
+  stem: 這首歌詞中所描繪的季節，與下列哪一項相同？（原卷有誤，已修正）
   options:
   - label: A
     content: 獨在異鄉為異客，每逢佳節倍思親。遙知兄弟登高處，遍插茱萸少一人
   - label: B
     content: 近寒食雨草萋萋，著麥苗風柳映堤。等是有家歸未得，杜鵑休向耳邊啼
   - label: C
-    content: 爆竹聲中一歲除，春風送暖入屠蘇。千門萬曈曈日，總把新桃換舊符
+    content: 爆竹聲中一歲除，春風送暖入屠蘇。千門萬戶曈曈日，總把新桃換舊符
   - label: D
     content: 節分端午自誰言，萬古傳聞為屈原。堪笑楚江空渺渺，不能洗得直臣冤
   group_stem: '去年我回去　你們剛穿新棉袍
@@ -1766,6 +1766,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 千門萬曈曈日，總把新桃換舊符
+    to: 千門萬戶曈曈日，總把新桃換舊符
+    note: 漏印「戶」字
+    by: ai_review
 - id: doc_112_台北_民生_國文_g8s1e1_s5_27
   section: 5
   number: 27

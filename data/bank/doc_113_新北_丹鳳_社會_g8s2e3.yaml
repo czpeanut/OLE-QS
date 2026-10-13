@@ -32,7 +32,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 非洲某國過去曾實施嚴格種族隔離政策，儘管後來此政策廢除，能仍看見此政策遺留的影響。根據上述，文中提及的國家應位於圖(一)中何處？
+  stem: 非洲某國過去曾實施嚴格種族隔離政策，儘管後來此政策廢除，仍能看見此政策遺留的影響。根據上述，文中提及的國家應位於圖(一)中何處？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -76,6 +76,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 儘管後來此政策廢除，能仍看見此政策遺留的影響。
+    to: 儘管後來此政策廢除，仍能看見此政策遺留的影響。
+    note: 「能仍」字序顛倒，應為「仍能」
+    by: ai_review
 - id: doc_113_新北_丹鳳_社會_g8s2e3_s1_2
   section: 1
   number: 2
@@ -587,7 +592,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 關於此作物的農場經營特色，下列何者正璀？
+  stem: 關於此作物的農場經營特色，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 影響糧食生產，導致糧食必須進口
@@ -623,6 +628,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 關於此作物的農場經營特色，下列何者正璀？
+    to: 關於此作物的農場經營特色，下列何者正確？
+    note: 錯字，「正璀」應為「正確」
+    by: ai_review
 - id: doc_113_新北_丹鳳_社會_g8s2e3_s1_16
   section: 1
   number: 16
@@ -767,14 +777,14 @@ questions:
   type: single
   page: 3
   stem: 「報紙上就宣佈停課，大學也不招生了。 年輕人都很高興，因為不用上課了，也沒有權威了。 所以開始的時候挺熱鬧的，都回應毛主席號召鬥地富反壞右。 街道上有說誰出身不好，就上人家裡去抄家。
-    我就是那個時候第一次知道股票這個詞。說誰家有股票，就是資本家。有人帶著去了，都跟著湊熱鬧。」文中的我應該是經歷下列哪一事件？
+    我就是那個時候第一次知道股票這個詞。說誰家有股票，就是資本家。有人帶著去了，都跟著湊熱鬧。」文中的我應該是經歷下列哪一事件？（原卷有誤，已修正）
   options:
   - label: A
     content: 新文化運動
   - label: B
     content: 文化大革命
   - label: C
-    content: 經濟開革開放
+    content: 經濟改革開放
   - label: D
     content: 二萬五千里長征
   tags:
@@ -794,6 +804,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 經濟開革開放
+    to: (C) 經濟改革開放
+    note: 錯字，「開革」應為「改革」
+    by: ai_review
 - id: doc_113_新北_丹鳳_社會_g8s2e3_s2_21
   section: 2
   number: 21

@@ -1050,14 +1050,14 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 日本大多數農產品都擁有高身價，如青森蘋果、山形櫻桃、北海道夕張哈蜜瓜等。請問：若不考量其他因素，以農業耕作來看，日本農產品價格較貴的主要原因為何？
+  stem: 日本大多數農產品都擁有高身價，如青森蘋果、山形櫻桃、北海道夕張哈蜜瓜等。請問：若不考量其他因素，以農業耕作來看，日本農產品價格較貴的主要原因為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 可耕地少，勞動力成本高
   - label: B
     content: 水源缺乏，抽取灌溉用水
   - label: C
-    content: 氣侯寒冷，運用溫室栽培
+    content: 氣候寒冷，運用溫室栽培
   - label: D
     content: 政策限制，總生產量較低
   tags:
@@ -1077,6 +1077,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 氣侯寒冷，運用溫室栽培
+    to: 氣候寒冷，運用溫室栽培
+    note: 「氣候」誤作「氣侯」
+    by: ai_review
 - id: doc_113_台北_誠正_社會_地理_g8s1e3_s2_28
   section: 2
   number: 28

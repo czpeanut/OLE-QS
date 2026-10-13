@@ -473,7 +473,7 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: 在錯誤中學習一文說明「在錯誤中學習」的重要，下列哪句名言無法佐證？
+  stem: 在錯誤中學習一文說明「在錯誤中學習」的重要，下列哪句名言無法佐證？（原卷有誤，已修正）
   options:
   - label: A
     content: 王守仁：「不貴於無過，而貴於能改過。」
@@ -482,7 +482,7 @@ questions:
   - label: C
     content: 明朝人沈君烈提出「誤亦為學地」的見解
   - label: D
-    content: 左傳：「人非聖賢，熟能無過？過而能改，善莫大焉。」
+    content: 左傳：「人非聖賢，孰能無過？過而能改，善莫大焉。」
   lesson_raw:
     title: 在錯誤中學習
     basis: 提及課名在錯誤中學習
@@ -503,6 +503,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 左傳：「人非聖賢，熟能無過？過而能改，善莫大焉。」
+    to: 左傳：「人非聖賢，孰能無過？過而能改，善莫大焉。」
+    note: 「熟」為錯字，應作「孰」
+    by: ai_review
 - id: doc_111_彰化_溪湖_國文_g9s1e3_s1_15
   section: 1
   number: 15

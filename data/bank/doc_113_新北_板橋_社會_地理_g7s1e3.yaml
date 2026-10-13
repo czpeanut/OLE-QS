@@ -91,7 +91,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 圖一為中央象局發布的地面天氣圖，深色線條圓圈處為台灣，根據圖中資料分析，此圖顯示的日期最有可能是哪一天？
+  stem: 圖一為中央氣象局發布的地面天氣圖，深色線條圓圈處為台灣，根據圖中資料分析，此圖顯示的日期最有可能是哪一天？（原卷有誤，已修正）
   options:
   - label: A
     content: 2 月29 日
@@ -129,6 +129,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 圖一為中央象局發布的地面天氣圖
+    to: 圖一為中央氣象局發布的地面天氣圖
+    note: 漏「氣」字
+    by: ai_review
 - id: doc_113_新北_板橋_社會_地理_g7s1e3_s1_4
   section: 1
   number: 4
@@ -284,7 +289,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 寶山水庫水源來自於頭前溪之支流上坪溪，流域中何地若任意傾到廢棄物，將會影響寶山水庫的水質？
+  stem: 寶山水庫水源來自於頭前溪之支流上坪溪，流域中何地若任意傾倒廢棄物，將會影響寶山水庫的水質？（原卷有誤，已修正）
   options:
   - label: A
     content: 斗崙
@@ -313,6 +318,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 流域中何地若任意傾到廢棄物
+    to: 流域中何地若任意傾倒廢棄物
+    note: 「傾到」應為「傾倒」
+    by: ai_review
 - id: doc_113_新北_板橋_社會_地理_g7s1e3_s1_9
   section: 1
   number: 9

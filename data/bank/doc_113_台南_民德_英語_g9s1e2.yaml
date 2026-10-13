@@ -1179,7 +1179,7 @@ questions:
   number: 2
   type: fill
   page: 3
-  stem: "首先，他的東西時常被移動。 \n  To ___(9)___ ___(10)___, his thing are often moved."
+  stem: "首先，他的東西時常被移動。 \n  To ___(9)___ ___(10)___, his things are often moved.（原卷有誤，已修正）"
   ai_answers:
     gemini: begin；with
     qwen: begin; with
@@ -1199,3 +1199,8 @@ questions:
       chapter: B5 九上
     textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+  errata:
+  - from: his thing are often moved.
+    to: his things are often moved.
+    note: 動詞為are，名詞thing應為複數things
+    by: ai_review

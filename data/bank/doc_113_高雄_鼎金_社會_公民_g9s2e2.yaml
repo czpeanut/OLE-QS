@@ -545,10 +545,10 @@ questions:
   number: 56
   type: single
   page: 2
-  stem: '美美在網路上看到下述的訊息。我國無法以「中華民國」名加入聯合國的原因為何？
+  stem: '美美在網路上看到下述的訊息。我國無法以「中華民國」名義加入聯合國的原因為何？
 
     1971 年我國退出聯合國，也被迫退出隸屬於聯合國之下的世界衛生組織（WHO）。1997 年開始，我國積極重返 WHO 和世界衛生大會（WHA），並嘗試以不同名義爭取參加，足足努力了
-    12 年，終於以「中華臺北」的名稱，取得 WHA 觀察員身分。'
+    12 年，終於以「中華臺北」的名稱，取得 WHA 觀察員身分。（原卷有誤，已修正）'
   options:
   - label: A
     content: 國際條約的束縛
@@ -575,6 +575,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 我國無法以「中華民國」名加入聯合國的原因為何？
+    to: 我國無法以「中華民國」名義加入聯合國的原因為何？
+    note: 漏字，「名」應為「名義」
+    by: ai_review
 - id: doc_113_高雄_鼎金_社會_公民_g9s2e2_s1_57
   section: 1
   number: 57

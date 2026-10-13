@@ -588,7 +588,7 @@ questions:
   number: 11
   type: fill
   page: 2
-  stem: 有四個連續偶數的和為160，求此四個偶數中最小的數為_____。
+  stem: 有四個連續奇數的和為160，求此四個奇數中最小的數為_____。（原卷有誤，已修正）
   tags:
     chapter:
       publisher: 翰林
@@ -606,6 +606,11 @@ questions:
   - '37'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 有四個連續偶數的和為160，求此四個偶數中最小的數為
+    to: 有四個連續奇數的和為160，求此四個奇數中最小的數為
+    note: 解為37非偶數，應將偶數修正為奇數
+    by: ai_review
 - id: doc_113_高雄_七賢_數學_g7s1e3_s2_12
   section: 2
   number: 12

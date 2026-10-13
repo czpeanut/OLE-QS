@@ -602,7 +602,7 @@ questions:
   number: 58
   type: single
   page: 2
-  stem: 若國會通過的預算案讓行政院覺得窒礙難行。請問：行政院有有何應對措施？
+  stem: 若國會通過的預算案讓行政院覺得窒礙難行。請問：行政院有何應對措施？（原卷有誤，已修正）
   options:
   - label: A
     content: 請總統對立法院提出覆議
@@ -631,6 +631,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若國會通過的預算案讓行政院覺得窒礙難行。請問：行政院有有何應對措施？
+    to: 若國會通過的預算案讓行政院覺得窒礙難行。請問：行政院有何應對措施？
+    note: 「有有何」重複多印一個「有」
+    by: ai_review
 - id: doc_111_桃園_同德_社會_公民_g8s1e2_s1_59
   section: 1
   number: 59

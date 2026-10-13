@@ -477,7 +477,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: '如圖，有一等腰 $\triangle ABC$，$\overline{AB}=\overline{AC}$，及其外接圓，今欲在圖形上畫一直線，始其成為線對稱圖形。
+  stem: '如圖，有一等腰 $\triangle ABC$，$\overline{AB}=\overline{AC}$，及其外接圓，今欲在圖形上畫一直線，使其成為線對稱圖形。
 
     以下是飛歌、小佛兩人的作法：
 
@@ -485,7 +485,7 @@ questions:
 
     小佛：作 $\overline{AB}$ 中垂線和 $\overline{AC}$ 中垂線之交點 $P$，連接 $\overline{AP}$ 即為所求。
 
-    對於兩人的作法，下列判斷何者正確？'
+    對於兩人的作法，下列判斷何者正確？（原卷有誤，已修正）'
   options:
   - label: A
     content: 飛歌正確，小佛錯誤
@@ -529,6 +529,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 今欲在圖形上畫一直線，始其成為線對稱圖形。
+    to: 今欲在圖形上畫一直線，使其成為線對稱圖形。
+    note: 「始其」應為「使其」
+    by: ai_review
 - id: doc_113_高雄_鼎金_數學_g9s1e3_s1_11
   section: 1
   number: 11

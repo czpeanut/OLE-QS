@@ -47,7 +47,7 @@ questions:
   type: single
   page: 1
   stem: 在$\triangle ABC$和$\triangle DEF$中，若$\overline{AB}=\overline{DE}$、$\overline{BC}=\overline{EF}$、$\angle
-    B=\angle F$，則利用何種全等性質證明此 2 個三角形全等？
+    B=\angle E$，則利用何種全等性質證明此 2 個三角形全等？（原卷有誤，已修正）
   options:
   - label: A
     content: SSS
@@ -74,6 +74,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 、\angle B=\angle F，則利用何種全等性質證明此 2 個三角形全等？
+    to: 、\angle B=\angle E，則利用何種全等性質證明此 2 個三角形全等？
+    note: 原卷∠F應為∠E，否則無法以SAS證明全等
+    by: ai_review
 - id: doc_113_台中_向上_數學_g8s2e2_s1_2
   section: 1
   number: 2

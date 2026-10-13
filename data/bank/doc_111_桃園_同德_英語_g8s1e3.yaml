@@ -577,7 +577,7 @@ questions:
   number: 32
   type: single
   page: 3
-  stem: （克漏字第32格）
+  stem: （克漏字第32格）（原卷有誤，已修正）
   options:
   - label: A
     content: across from
@@ -587,7 +587,7 @@ questions:
     content: next to
   - label: D
     content: in front of
-  group_stem: '(32-35)
+  group_stem: '(32-34)
 
     Wendy: Excuse me, sir. Is there any computer store near here?
 
@@ -619,6 +619,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (32-35)
+    to: (32-34)
+    note: 題號範圍印錯，該組僅有32至34題
+    by: ai_review
 - id: doc_111_桃園_同德_英語_g8s1e3_s5_33
   section: 5
   number: 33
@@ -634,7 +639,7 @@ questions:
     content: with
   - label: D
     content: at
-  group_stem: '(32-35)
+  group_stem: '(32-34)
 
     Wendy: Excuse me, sir. Is there any computer store near here?
 
@@ -676,7 +681,7 @@ questions:
     content: with
   - label: D
     content: at
-  group_stem: '(32-35)
+  group_stem: '(32-34)
 
     Wendy: Excuse me, sir. Is there any computer store near here?
 

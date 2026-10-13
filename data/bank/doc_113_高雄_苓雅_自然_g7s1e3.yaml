@@ -220,14 +220,14 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 三杯水分別是甲(10℃)、乙(40℃)、丙(25℃)，小珮左手放入甲杯，右手放入乙杯，30 秒後，同時將左右手放入丙杯，此時兩隻手對溫度的感覺如何？
+  stem: 三杯水分別是甲(10℃)、乙(40℃)、丙(25℃)，小珮左手放入甲杯，右手放入乙杯，30 秒後，同時將左右手放入丙杯，此時兩隻手對溫度的感覺如何？（原卷有誤，已修正）
   options:
   - label: A
     content: 左手感覺較冷，右手感覺較熱
   - label: B
     content: 左手感覺較熱，右手感覺較冷
   - label: C
-    content: 因放在同一杯水水裏，兩隻手的感覺相同
+    content: 因放在同一杯水裏，兩隻手的感覺相同
   - label: D
     content: 因為感覺疲勞，兩隻手會一時失去感覺。
   tags:
@@ -247,6 +247,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 因放在同一杯水水裏，兩隻手的感覺相同
+    to: 因放在同一杯水裏，兩隻手的感覺相同
+    note: 多印一個「水」字
+    by: ai_review
 - id: doc_113_高雄_苓雅_自然_g7s1e3_s1_7
   section: 1
   number: 7

@@ -842,8 +842,8 @@ questions:
   page: 3
   stem: 如右圖，$\triangle ABC$ 中，$\angle ABC=90^\circ$，$\overline{AB} = \overline{BC}$，$D$、$E$
     兩點皆在$\overline{AC}$ 上，$F$ 為$\triangle ABC$ 外部一點，田田分別以$\overline{BD}$、$\overline{BE}$
-    為摺線，將$\overline{AB}$、$\overline{BC}$ 皆摺至與$\overline{BF}$重和。若$\overline{AC} = 10$，$\overline{AD}
-    = 2$，則$\overline{CE}$ 的長度為何?
+    為摺線，將$\overline{AB}$、$\overline{BC}$ 皆摺至與$\overline{BF}$重合。若$\overline{AC} = 10$，$\overline{AD}
+    = 2$，則$\overline{CE}$ 的長度為何?（原卷有誤，已修正）
   options:
   - label: A
     content: '3'
@@ -887,6 +887,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 皆摺至與\overline{BF}重和
+    to: 皆摺至與\overline{BF}重合
+    note: 錯字，「重和」應為「重合」
+    by: ai_review
 - id: doc_113_高雄_英明_數學_g8s2e2_s2_1
   section: 2
   number: 1

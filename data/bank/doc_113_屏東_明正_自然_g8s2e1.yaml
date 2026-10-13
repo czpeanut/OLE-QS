@@ -296,14 +296,14 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 關於莫耳的敘述何者正確？
+  stem: 關於莫耳的敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 是原子量的單位
   - label: B
     content: 同樣為1 莫耳，碳原子和氫原子數量相同，但質量不同
   - label: C
-    content: 12 公克的碳約為為2 莫耳
+    content: 12 公克的碳約為2 莫耳
   - label: D
     content: 1 莫耳有12 克。
   tags:
@@ -323,6 +323,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 12 公克的碳約為為2 莫耳
+    to: (C) 12 公克的碳約為2 莫耳
+    note: 多印一個「為」字
+    by: ai_review
 - id: doc_113_屏東_明正_自然_g8s2e1_s2_3
   section: 2
   number: 3

@@ -1516,7 +1516,7 @@ questions:
   number: 45
   type: single
   page: 4
-  stem: 依據本文，下列敘述何者敘述正確？
+  stem: 依據本文，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 司馬懿害怕諸葛亮死後，自己會遭到曹氏政權的清算，故意中諸葛亮的空城計
@@ -1555,3 +1555,8 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列敘述何者敘述正確？
+    to: 下列敘述何者正確？
+    note: 語句重複，多印「敘述」二字
+    by: ai_review

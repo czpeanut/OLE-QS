@@ -496,7 +496,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 小寬參加地理知識知識競賽，須由以下四個提示(如圖五)猜出國家名，請問應該是下列哪一個國家？
+  stem: 小寬參加地理知識競賽，須由以下四個提示(如圖五)猜出國家名，請問應該是下列哪一個國家？（原卷有誤，已修正）
   options:
   - label: A
     content: 祕魯
@@ -541,6 +541,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 小寬參加地理知識知識競賽，須由以下四個提示
+    to: 小寬參加地理知識競賽，須由以下四個提示
+    note: 重複「知識」二字
+    by: ai_review
 - id: doc_113_屏東_中正_社會_地理_g9s2e2_s1_13
   section: 1
   number: 13
@@ -676,7 +681,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 附圖(六)是東亞某日的地面天氣圖。在此氣壓系統下，鄰近的亞洲地區有不同的盛行風方，請問下列哪一個地區的風向與其他三者不同？
+  stem: 附圖(六)是東亞某日的地面天氣圖。在此氣壓系統下，鄰近的亞洲地區有不同的盛行風向，請問下列哪一個地區的風向與其他三者不同？（原卷有誤，已修正）
   options:
   - label: A
     content: 朝鮮半島
@@ -720,12 +725,17 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 鄰近的亞洲地區有不同的盛行風方，請問下列
+    to: 鄰近的亞洲地區有不同的盛行風向，請問下列
+    note: 「風方」應為「風向」
+    by: ai_review
 - id: doc_113_屏東_中正_社會_地理_g9s2e2_s1_18
   section: 1
   number: 18
   type: single
   page: 2
-  stem: 東方快車自 1883 年開始載著各國王公貴族、重要歷史人物穿梭歐亞大陸，主要往返於巴黎至伊斯坦堡(路線如圖七)。雖然今天該列車已暫停服務，但旅客仍可自行搭乘火車，追蹤昔日東方快車的路線。櫻雯退休後決定善用退休金搭乘火車舊地重遊，下列為其旅程中的所見所聞，何者錯誤？
+  stem: 東方快車自 1883 年開始載著各國王公貴族、重要歷史人物穿梭歐亞大陸，主要往返於巴黎至伊斯坦堡(路線如圖七)。雖然今天該列車已暫停服務，但旅客仍可自行搭乘火車，追蹤昔日東方快車的路線。櫻雯退休後決定善用退休金搭乘火車舊地重遊，下列為其旅程中的所見所聞，何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲國精緻農業與時尚產業發達，首都的艾菲爾鐵塔是著名地標
@@ -734,7 +744,7 @@ questions:
   - label: C
     content: 丙國首都布達佩斯跨萊茵河兩岸，景色優美，有「萊茵河明珠」之稱
   - label: D
-    content: 丁國地跨歐亞兩洲，位處黑海出入地中海的歐紐，交通地位重要
+    content: 丁國地跨歐亞兩洲，位處黑海出入地中海的樞紐，交通地位重要
   assets:
   - key: s1_18_f1
     kind: figure
@@ -763,6 +773,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 位處黑海出入地中海的歐紐，交通地位重要
+    to: 位處黑海出入地中海的樞紐，交通地位重要
+    note: 「歐紐」應為「樞紐」
+    by: ai_review
 - id: doc_113_屏東_中正_社會_地理_g9s2e2_s1_19
   section: 1
   number: 19
@@ -1547,7 +1562,7 @@ questions:
   number: 38
   type: single
   page: 4
-  stem: 阿星搭夜車時發現，某中一段路線經過幾次長長的隧道，這是因為火車正穿越哪座山脈？
+  stem: 阿星搭夜車時發現，其中一段路線經過幾次長長的隧道，這是因為火車正穿越哪座山脈？（原卷有誤，已修正）
   options:
   - label: A
     content: 庇里牛斯山
@@ -1576,6 +1591,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 阿星搭夜車時發現，某中一段路線經過幾次長長的隧道
+    to: 阿星搭夜車時發現，其中一段路線經過幾次長長的隧道
+    note: 「某中」應為「其中」
+    by: ai_review
 - id: doc_113_屏東_中正_社會_地理_g9s2e2_s1_39
   section: 1
   number: 39

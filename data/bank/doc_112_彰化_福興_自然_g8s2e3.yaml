@@ -1758,9 +1758,9 @@ questions:
   number: 42
   type: single
   page: 5
-  stem: 某生在一端開口的玻璃管中置入一小段水銀柱，使玻璃管底端的空氣成為封閉狀態，並分別將玻璃管的開口向上、向下與向右置放，如上圖(一)、圖(二)、圖(三)所示，而此時若封閉端內的空氣壓力分別為
+  stem: 某生在一端開口的玻璃管中置入一小段水銀柱，使玻璃管底端的空氣成為封閉狀態，並分別將玻璃管的開口向上、向下與向右置放，如下圖(一)、圖(二)、圖(三)所示，而此時若封閉端內的空氣壓力分別為
     $\mathrm{P_a}$、$\mathrm{P_b}$、$\mathrm{P_c}$，則 $\mathrm{P_a}$、$\mathrm{P_b}$、$\mathrm{P_c}$
-    的大小關係為何？
+    的大小關係為何？（原卷有誤，已修正）
   options:
   - label: A
     content: $\mathrm{P_a>P_b>P_c}$
@@ -1806,6 +1806,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如上圖(一)、圖(二)、圖(三)所示
+    to: 如下圖(一)、圖(二)、圖(三)所示
+    note: 圖在題目下方，誤印為上圖
+    by: ai_review
 - id: doc_112_彰化_福興_自然_g8s2e3_s1_43
   section: 1
   number: 43

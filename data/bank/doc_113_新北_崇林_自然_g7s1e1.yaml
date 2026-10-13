@@ -755,10 +755,10 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 關於擴散作用的敘述，何者正確？
+  stem: 關於擴散作用的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 製作蜜餞時，糖份進入細胞的過成稱為滲透作用
+    content: 製作蜜餞時，糖份進入細胞的過程稱為滲透作用
   - label: B
     content: 一家烤肉萬家香是擴散作用
   - label: C
@@ -782,6 +782,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 糖份進入細胞的過成稱為滲透作用
+    to: 糖份進入細胞的過程稱為滲透作用
+    note: 「過成」應為「過程」
+    by: ai_review
 - id: doc_113_新北_崇林_自然_g7s1e1_s1_24
   section: 1
   number: 24
@@ -1611,7 +1616,7 @@ questions:
   number: 46
   type: single
   page: 4
-  stem: 小雲到超市買了草莓風味氣泡水，包裝上標示無添葡萄糖，請問以下何種測試結果，能證明草莓風味氣泡水中無添加葡萄糖？
+  stem: 小雲到超市買了草莓風味氣泡水，包裝上標示無添加葡萄糖，請問以下何種測試結果，能證明草莓風味氣泡水中無添加葡萄糖？（原卷有誤，已修正）
   options:
   - label: A
     content: 在草莓風味氣泡水中滴加碘液後，隔水加熱，結果呈現不變色
@@ -1648,6 +1653,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 包裝上標示無添葡萄糖，請問以下何種測試結果
+    to: 包裝上標示無添加葡萄糖，請問以下何種測試結果
+    note: 漏字，應為「無添加」
+    by: ai_review
 - id: doc_113_新北_崇林_自然_g7s1e1_s3_47
   section: 3
   number: 47

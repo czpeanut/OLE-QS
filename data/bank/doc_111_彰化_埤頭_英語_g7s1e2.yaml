@@ -106,7 +106,7 @@ questions:
   number: 18
   type: single
   page: 1
-  stem: The singer is very . Eeveryone likes him.
+  stem: The singer is very . Everyone likes him.（原卷有誤，已修正）
   options:
   - label: A
     content: popular
@@ -133,6 +133,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: The singer is very . Eeveryone likes him.
+    to: The singer is very . Everyone likes him.
+    note: Eeveryone多打一個E，應為Everyone
+    by: ai_review
 - id: doc_111_彰化_埤頭_英語_g7s1e2_s2_19
   section: 2
   number: 19

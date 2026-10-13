@@ -29,10 +29,10 @@ questions:
   page: 1
   stem: '歷史課堂上，老師說：「一個科學假設是否正確，要看它是否在演繹推論上沒有問題，而不是看是否能有實驗證明。」
 
-    請問：老師正向學生介紹何人的研究方法？(習作)'
+    請問：老師正向學生介紹何人的研究方法？(習作)（原卷有誤，已修正）'
   options:
   - label: A
-    content: 哥白
+    content: 哥白尼
   - label: B
     content: 培根
   - label: C
@@ -55,6 +55,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: (A) 哥白
+    to: (A) 哥白尼
+    note: 漏字，人名應為哥白尼
+    by: ai_review
 - id: doc_111_高雄_林園_社會_歷史_g9s1e3_s1_17
   section: 1
   number: 17

@@ -713,7 +713,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: '附表(十)是三位公職人員的發言內容，就內容判斷，參選各公職人員的最低年齡限制排序應為下列何者？
+  stem: '附表(十)是四位公職人員的發言內容，就內容判斷，參選各公職人員的最低年齡限制排序應為下列何者？
 
 
     | 甲 | 我有權任命行政院院長 |
@@ -726,7 +726,7 @@ questions:
 
     | 丁 | 我想參選桃園市復興區原住民區長，為族人爭取福利 |
 
-    表(十)'
+    表(十)（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲＞丙＞丁＞乙
@@ -753,6 +753,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 附表(十)是三位公職人員的發言內容
+    to: 附表(十)是四位公職人員的發言內容
+    note: 表格有甲乙丙丁四位，誤作三位
+    by: ai_review
 - id: doc_113_屏東_明正_社會_g8s1e3_s1_19
   section: 1
   number: 19
@@ -2497,7 +2502,7 @@ questions:
   number: 65
   type: single
   page: 6
-  stem: 承20 題，工業區分布可知，日本工業發展的關鍵區位條件為何？
+  stem: 承64 題，工業區分布可知，日本工業發展的關鍵區位條件為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 原料
@@ -2524,6 +2529,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承20 題，工業區分布可知
+    to: 承64 題，工業區分布可知
+    note: 題號引用錯誤，承接前一題應為64題
+    by: ai_review
 - id: doc_113_屏東_明正_社會_g8s1e3_s3_66
   section: 3
   number: 66

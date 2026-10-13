@@ -1389,12 +1389,12 @@ questions:
   number: 26
   type: single
   page: 4
-  stem: 下列詩句所抒發的情感，何者與甲詩最接近？
+  stem: 下列詩句所抒發的情感，何者與甲詩最接近？（原卷有誤，已修正）
   options:
   - label: A
     content: 懷君屬秋夜，散步詠涼天。空山松子落，幽人應未眠
   - label: B
-    content: 床前明月光，疑似地上霜。舉頭望明月，低頭思故鄉
+    content: 床前明月光，疑是地上霜。舉頭望明月，低頭思故鄉
   - label: C
     content: 遠上寒山石徑斜，白雲深處有人家。停車坐愛楓林晚，霜葉紅於二月花
   - label: D
@@ -1419,6 +1419,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 床前明月光，疑似地上霜。舉頭望明月，低頭思故鄉
+    to: 床前明月光，疑是地上霜。舉頭望明月，低頭思故鄉
+    note: 詩句「疑是」誤印為「疑似」
+    by: ai_review
 - id: doc_113_新北_江翠_國文_g7s1e2_s3_27
   section: 3
   number: 27

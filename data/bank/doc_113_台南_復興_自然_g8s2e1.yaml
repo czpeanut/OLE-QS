@@ -665,7 +665,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 有關硫粉在空氣中燃燒的結果，下列何者正確？
+  stem: 有關硫粉在空氣中燃燒的結果，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 燃燒的火焰呈金黃色
@@ -674,7 +674,7 @@ questions:
   - label: C
     content: 硫的燃燒生成物溶於水生成亞硫酸
   - label: D
-    content: 硫的燃燒生成物溶於水可使石蕊試紙試紙變藍色
+    content: 硫的燃燒生成物溶於水可使石蕊試紙變藍色
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -694,6 +694,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 可使石蕊試紙試紙變藍色
+    to: 可使石蕊試紙變藍色
+    note: 多印「試紙」二字
+    by: ai_review
 - id: doc_113_台南_復興_自然_g8s2e1_s1_19
   section: 1
   number: 19
@@ -1225,6 +1230,7 @@ questions:
         - 146.95
         - 456.22
       crop_by: auto
+      redrawn: 去除浮水印
   - label: B
     content: ''
     asset:
@@ -1237,6 +1243,7 @@ questions:
         - 385.53
         - 241.85
         - 456.22
+      redrawn: 去除浮水印
   - label: C
     content: ''
     asset:
@@ -1249,6 +1256,7 @@ questions:
         - 385.53
         - 326.95
         - 456.22
+      redrawn: 去除浮水印
   - label: D
     content: ''
     asset:
@@ -1261,6 +1269,7 @@ questions:
         - 385.53
         - 409.09
         - 456.22
+      redrawn: 去除浮水印
   group_stem: '[3] 昱昇取小蘇打粉(碳酸氫鈉粉末)置入 A 試管中並以附導管的橡皮塞塞住試管口，放在酒精燈上進行加熱實驗。導管的另一端通入裝有澄清石灰水的
     B 試管，其實驗裝置如圖(二)。
 
@@ -1850,6 +1859,7 @@ shared_assets:
     - 595.64
     - 196.69
   crop_by: auto
+  redrawn: 去除浮水印
 - key: g2_28_30
   label: 題組附圖
   kind: figure
@@ -1865,6 +1875,7 @@ shared_assets:
     - 200.95
     - 595.64
     - 305.02
+  redrawn: 去除浮水印
 - key: g3_31_32
   label: 題組附圖
   kind: figure

@@ -748,12 +748,12 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: 對於下列四首韻文的文體判斷，哪個選項是正確的？
+  stem: 對於下列四首韻文的文體判斷，哪個選項是正確的？（原卷有誤，已修正）
   options:
   - label: A
     content: 「潯陽江頭夜送客，楓葉荻花秋瑟瑟。主人下馬客在船， 舉杯欲飲無管絃。」→為七言絕句
   - label: B
-    content: 「涉江采芙蓉，蘭澤多芳草。采之欲遺誰？所思在遠道。還顧望舊鄉，長路漫浩浩。同心而離居，憂作以終老。→為五言律詩
+    content: 「涉江采芙蓉，蘭澤多芳草。采之欲遺誰？所思在遠道。還顧望舊鄉，長路漫浩浩。同心而離居，憂傷以終老。→為五言律詩
   - label: C
     content: 「庭中有奇樹，綠葉發華滋。攀條折其榮，將以遺所思。馨香盈懷袖，路遠莫致之。此物何足貴，但感別經時。」→為五言古詩
   - label: D
@@ -775,12 +775,17 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 同心而離居，憂作以終老。→為五言律詩
+    to: 同心而離居，憂傷以終老。→為五言律詩
+    note: 「憂作」應為「憂傷」
+    by: ai_review
 - id: doc_111_嘉義_北興_國文_g9s2e1_s1_23
   section: 1
   number: 23
   type: single
   page: 3
-  stem: 「台灣海峽黑水溝的行程是受地形影響，使水加速，最快可達每秒四公尺。當湍急的水流帶走水中的沉積與雜屑，海水少了許多反射陽光的雜質，使光線能貫穿深處，所呈現的色澤就如墨般的深藍。」根據上述下列何者為是？
+  stem: 「台灣海峽黑水溝的形成是受地形影響，使水加速，最快可達每秒四公尺。當湍急的水流帶走水中的沉積與雜屑，海水少了許多反射陽光的雜質，使光線能貫穿深處，所呈現的色澤就如墨般的深藍。」根據上述下列何者為是？（原卷有誤，已修正）
   options:
   - label: A
     content: 黑水溝的水較清澈，透光性較佳
@@ -807,6 +812,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 台灣海峽黑水溝的行程是受地形影響，使水加速
+    to: 台灣海峽黑水溝的形成是受地形影響，使水加速
+    note: 「行程」應為「形成」
+    by: ai_review
 - id: doc_111_嘉義_北興_國文_g9s2e1_s1_24
   section: 1
   number: 24

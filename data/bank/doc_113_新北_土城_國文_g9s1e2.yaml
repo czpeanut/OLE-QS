@@ -691,14 +691,14 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: 報上有幾則新聞標題，何者說明正確？
+  stem: 報上有幾則新聞標題，何者說明正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 「黃湯下肚，轎車失控打滑」：大雨滂沱導致追撞車禍
   - label: B
     content: 「桃園航空城開發案，地方質疑黑箱作業」：地方人士質疑開發案不公開透明
   - label: C
-    content: 「無風也無雨，賺得颱風假壓馬路」：趁風兩空檔，養護單位施作道路工程
+    content: 「無風也無雨，賺得颱風假壓馬路」：趁風雨空檔，養護單位施作道路工程
   - label: D
     content: 「某地方民代轉戰百里侯，再次以壓倒性票數獲勝」：某地方民代成功連任百里侯。
   tags:
@@ -718,6 +718,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 趁風兩空檔，養護單位施作道路工程
+    to: 趁風雨空檔，養護單位施作道路工程
+    note: 「兩」應為「雨」
+    by: ai_review
 - id: doc_113_新北_土城_國文_g9s1e2_s1_22
   section: 1
   number: 22

@@ -371,12 +371,12 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 小桃在翻找史料時發現一張20世紀初德國明信片；明信片中薙髮留辮，戴上手套的團民，準備以赤手空拳對上列強的大砲。此張明信片所反應的歷史，下列何者正確？
+  stem: 小桃在翻找史料時發現一張20世紀初德國明信片；明信片中薙髮留辮，戴上手套的團民，準備以赤手空拳對上列強的大砲。此張明信片所反應的歷史，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 團民來自民間宗教組織，行動受到清政府支持
   - label: B
-    content: 團民遍布全中國，高嘁殺洋滅教，替天行道
+    content: 團民遍布全中國，高喊殺洋滅教，替天行道
   - label: C
     content: 團民引起的亂事造成清朝面臨瓜分之禍
   - label: D
@@ -415,6 +415,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 高嘁殺洋滅教，替天行道
+    to: 高喊殺洋滅教，替天行道
+    note: 嘁為喊之形近誤字
+    by: ai_review
 - id: doc_113_桃園_桃園_社會_歷史_g8s1e3_s1_11
   section: 1
   number: 11

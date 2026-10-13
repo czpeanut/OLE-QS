@@ -647,7 +647,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 台灣電力公司在計算電費時採用的單位為度，它請問下列何者消耗電能的度數最多？
+  stem: 台灣電力公司在計算電費時採用的單位為度，請問下列何者消耗電能的度數最多？（原卷有誤，已修正）
   options:
   - label: A
     content: 60W 用12 小時
@@ -674,6 +674,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 採用的單位為度，它請問下列何者消耗電能
+    to: 採用的單位為度，請問下列何者消耗電能
+    note: 多印贅字「它」
+    by: ai_review
 - id: doc_113_台中_五權_自然_g9s2e1_s1_16
   section: 1
   number: 16
@@ -1217,7 +1222,7 @@ questions:
   number: 30
   type: single
   page: 4
-  stem: 新聞報導：台中某間民宅，因動物咬斷電線，而導致電線短路產生火花而引發火災。下表為老鼠咬斷電線而造成短路的示意圖，則下列何者正確？
+  stem: 新聞報導：台中某間民宅，因動物咬斷電線，而導致電線短路產生火花而引發火災。下圖為老鼠咬斷電線而造成短路的示意圖，則下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 電線走火是由電流化學效應所造成
@@ -1261,6 +1266,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下表為老鼠咬斷電線而造成短路的示意圖
+    to: 下圖為老鼠咬斷電線而造成短路的示意圖
+    note: 為插圖而非表格，誤植為「下表」
+    by: ai_review
 - id: doc_113_台中_五權_自然_g9s2e1_s1_31
   section: 1
   number: 31

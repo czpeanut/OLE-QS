@@ -233,12 +233,12 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 古代中國曾有王子因違反法律，執法者依法律將其定罪的事件；但因為其身分特殊，刑罰由王子老師承擔。根據上文判斷，該事件是否符合法治社會的定義？
+  stem: 古代中國曾有王子因違反法律，執法者依法律將其定罪的事件；但因為其身分特殊，刑罰由王子老師承擔。根據上文判斷，該事件是否符合法治社會的定義？（原卷有誤，已修正）
   options:
   - label: A
     content: 是，在法律面前王子與庶民同罪
   - label: B
-    content: 不是；法律位經過人民授權實施
+    content: 不是；法律未經過人民授權實施
   - label: C
     content: 是，王子老師以代替受法律制裁
   - label: D
@@ -262,6 +262,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 不是；法律位經過人民授權實施
+    to: 不是；法律未經過人民授權實施
+    note: 「位」應為「未」
+    by: ai_review
 - id: doc_111_彰化_埤頭_社會_公民_g8s1e1_s2_12
   section: 2
   number: 12

@@ -652,7 +652,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 附圖中，A、B 兩物體至於光滑水平面上，今以10 牛頓的水平力作用於B，則A 作用於B 的力為何？
+  stem: 附圖中，A、B 兩物體置於光滑水平面上，今以10 牛頓的水平力作用於B，則A 作用於B 的力為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 4 牛頓向右
@@ -696,13 +696,18 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: A、B 兩物體至於光滑水平面上
+    to: A、B 兩物體置於光滑水平面上
+    note: 「至於」應為「置於」
+    by: ai_review
 - id: doc_113_高雄_獅甲_自然_g9s1e2_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 附圖所示，將五個完全相同的木塊以細線連接，在以固定的水平力F 拉動木塊，使五個木塊以相同速度在無摩擦力的水平桌面上作直線運動。剛開始五個木塊的加速度大小同為2m/s²，一段時間後，將某一位置的細線剪斷，已知剪斷後仍被相同的水平力F
-    拉動的木塊其加速度變為2.5m/s²，若忽略細線質量，則剪斷細線的位置，應是圖上P、Q、R、S哪一個位置？
+  stem: 附圖所示，將五個完全相同的木塊以細線連接，再以固定的水平力F 拉動木塊，使五個木塊以相同速度在無摩擦力的水平桌面上作直線運動。剛開始五個木塊的加速度大小同為2m/s²，一段時間後，將某一位置的細線剪斷，已知剪斷後仍被相同的水平力F
+    拉動的木塊其加速度變為2.5m/s²，若忽略細線質量，則剪斷細線的位置，應是圖上P、Q、R、S哪一個位置？（原卷有誤，已修正）
   options:
   - label: A
     content: P
@@ -746,6 +751,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 以細線連接，在以固定的水平力F 拉動木塊
+    to: 以細線連接，再以固定的水平力F 拉動木塊
+    note: 「在以」應為「再以」
+    by: ai_review
 - id: doc_113_高雄_獅甲_自然_g9s1e2_s1_20
   section: 1
   number: 20

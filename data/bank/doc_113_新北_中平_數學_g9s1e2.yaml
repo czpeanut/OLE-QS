@@ -804,7 +804,7 @@ questions:
   stem: '一部雲梯消防車之部分長度如右圖所示，其中雲梯($\overline{AB}$)長為40 公尺，當雲梯與水平面成35°時，A 點離地面的高度為多少公尺？
     (以四捨五入法求到整數位) (素養導向)
 
-    (巳知sin35°≒ 0.5736 ， cos35°≒ 0.8192 ，tan35°≒ 0.7002 )'
+    (已知sin35°≒ 0.5736 ， cos35°≒ 0.8192 ，tan35°≒ 0.7002 )（原卷有誤，已修正）'
   assets:
   - key: s2_10_f1
     kind: figure
@@ -839,6 +839,11 @@ questions:
   - '26'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (巳知sin35°≒ 0.5736
+    to: (已知sin35°≒ 0.5736
+    note: 「巳」應為「已」
+    by: ai_review
 - id: doc_113_新北_中平_數學_g9s1e2_s2_11
   section: 2
   number: 11

@@ -1677,14 +1677,14 @@ questions:
   number: 30
   type: single
   page: 7
-  stem: 關於本文寫作手法的敘述，何者正確？
+  stem: 關於本文寫作手法的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 以科學實驗數據說明鮮乳的不同製作方式。
   - label: B
     content: 首尾呼應以說明主旨。
   - label: C
-    content: 以「濃醇香」以凸顯台灣鮮乳無可取代的優勢。
+    content: 以「濃醇香」凸顯台灣鮮乳無可取代的優勢。
   - label: D
     content: 比較台灣與歐美鮮乳的製作手法優劣。
   group_stem: "（四）\n  台灣鮮奶廣告詞常有「濃郁、香醇」的形容，其實，這可能不僅是一句廣告！比起外國鮮奶，台灣鮮奶具有更醇厚的香氣及味道。這些味道上的差異並非來自民間謠言的食品添加物，而是在於生乳被製造成鮮奶的過程中的一道工序－加溫殺菌。\n\
@@ -1715,3 +1715,8 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 以「濃醇香」以凸顯台灣鮮乳無可取代的優勢。
+    to: 以「濃醇香」凸顯台灣鮮乳無可取代的優勢。
+    note: 多印一個「以」字
+    by: ai_review

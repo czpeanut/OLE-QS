@@ -972,12 +972,12 @@ questions:
   number: 25
   type: single
   page: 3
-  stem: 在鐵製鑰匙上鍍銅，關於此實驗的敘述何者正確?
+  stem: 在鐵製鑰匙上鍍銅，關於此實驗的敘述何者正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 銅片要接在電池的負極
   - label: B
-    content: 電鍍後硫酸銅容易的顏色會變淡
+    content: 電鍍後硫酸銅溶液的顏色會變淡
   - label: C
     content: 銅片的重量會減少
   - label: D
@@ -1001,6 +1001,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 電鍍後硫酸銅容易的顏色會變淡
+    to: 電鍍後硫酸銅溶液的顏色會變淡
+    note: 「容易」為錯字，應作「溶液」
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g9s2e1_s1_26
   section: 1
   number: 26

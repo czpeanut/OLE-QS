@@ -920,7 +920,7 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: 在複試顯微鏡 100X 的視野下觀察到均勻分布的細胞 128 個，請問換成何種倍率時會看到約 32 個細胞？
+  stem: 在複式顯微鏡 100X 的視野下觀察到均勻分布的細胞 128 個，請問換成何種倍率時會看到約 32 個細胞？（原卷有誤，已修正）
   options:
   - label: A
     content: 200X
@@ -947,6 +947,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在複試顯微鏡 100X 的視野下
+    to: 在複式顯微鏡 100X 的視野下
+    note: 「複試」應為「複式」
+    by: ai_review
 - id: doc_113_台中_五權_自然_g7s1e1_s1_22
   section: 1
   number: 22

@@ -1326,8 +1326,8 @@ questions:
   number: 1
   type: fill
   page: 7
-  stem: "1. 然而這些笑話是如此刻薄， 以致於他們真的傷害了人們的感情。\n However, these jokers are     (1)    \
-    \     (2)         (3)     they really hurt people’s feelings."
+  stem: "1. 然而這些笑話是如此刻薄， 以致於他們真的傷害了人們的感情。\n However, these jokes are     (1)     \
+    \    (2)         (3)     they really hurt people’s feelings.（原卷有誤，已修正）"
   ai_answers:
     gemini: so；mean；that
     qwen: so mean that
@@ -1348,6 +1348,11 @@ questions:
       chapter: B6 九下
     textbook: 九下 英語 too...to / so...that
     labeled_by: ai
+  errata:
+  - from: However, these jokers are
+    to: However, these jokes are
+    note: 中文為笑話，jokers應為jokes
+    by: ai_review
 - id: doc_113_高雄_五福_英語_g9s2e1_s7_2
   section: 7
   number: 2

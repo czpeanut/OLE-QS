@@ -143,7 +143,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 已知 $\overline{PQ}=93$，若欲求 $\overline{PQ}$ 的中點，分別以Ｐ、Ｑ為圓心、ｒ為半徑畫狐，則ｒ的最小整數值為何？
+  stem: 已知 $\overline{PQ}=93$，若欲求 $\overline{PQ}$ 的中點，分別以Ｐ、Ｑ為圓心、ｒ為半徑畫弧，則ｒ的最小整數值為何？（原卷有誤，已修正）
   options:
   - label: A
     content: '45'
@@ -170,6 +170,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 分別以Ｐ、Ｑ為圓心、ｒ為半徑畫狐，則ｒ的最小整數值為何？
+    to: 分別以Ｐ、Ｑ為圓心、ｒ為半徑畫弧，則ｒ的最小整數值為何？
+    note: 「畫狐」為錯字，應作「畫弧」
+    by: ai_review
 - id: doc_113_屏東_中正_數學_g8s2e2_s1_5
   section: 1
   number: 5

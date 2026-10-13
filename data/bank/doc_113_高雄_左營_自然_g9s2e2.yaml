@@ -203,10 +203,10 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 關於人類對於地球環境變遷所做的努力，下列敘述何者正確？
+  stem: 關於人類對於地球環境變遷所做的努力，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 使用環保冷煤可以減緩臭氧洞擴大
+    content: 使用環保冷媒可以減緩臭氧洞擴大
   - label: B
     content: 京都議定書是因為「臭氧洞」而制定的國際公約
   - label: C
@@ -229,6 +229,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 使用環保冷煤可以減緩臭氧洞擴大
+    to: 使用環保冷媒可以減緩臭氧洞擴大
+    note: 「冷煤」應為「冷媒」
+    by: ai_review
 - id: doc_113_高雄_左營_自然_g9s2e2_s1_7
   section: 1
   number: 7

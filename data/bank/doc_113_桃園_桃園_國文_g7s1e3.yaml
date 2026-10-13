@@ -457,10 +457,10 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 沈復在兒時記趣一文中展現了豐富的想像力。下列敘述，何者沒有運用「想像力」？
+  stem: 沈復在兒時記趣一文中展現了豐富的想像力。下列敘述，何者沒有運用「想像力」？（原卷有誤，已修正）
   options:
   - label: A
-    content: 海葵虔誠地合掌，水母呼喚遲來的海星，他們帶來真誠的說福
+    content: 海葵虔誠地合掌，水母呼喚遲來的海星，他們帶來真誠的祝福
   - label: B
     content: 空中飄著細細的太陽雨，天邊浮現了一道彩虹，雲後可見藍天
   - label: C
@@ -487,6 +487,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 他們帶來真誠的說福
+    to: 他們帶來真誠的祝福
+    note: 「說福」應為「祝福」
+    by: ai_review
 - id: doc_113_桃園_桃園_國文_g7s1e3_s1_13
   section: 1
   number: 13
@@ -603,6 +608,7 @@ questions:
         - 612.98
         - 444.11
         - 680.07
+      redrawn: 去除浮水印
   tags:
     textbook: 七上 語文常識(二) 閱讀導航——策略運用與資訊檢索
     labeled_by: ai

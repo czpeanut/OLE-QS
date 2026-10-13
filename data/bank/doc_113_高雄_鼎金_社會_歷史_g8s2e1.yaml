@@ -27,7 +27,7 @@ questions:
   number: 21
   type: single
   page: 1
-  stem: 宣統3 年，革命黨人趁著清廷調動軍隊前住四川時在武昌起事，是最後革命成功的重要因素。請問：當時清廷派軍隊前往四川的原因為何？
+  stem: 宣統3 年，革命黨人趁著清廷調動軍隊前往四川時在武昌起事，是最後革命成功的重要因素。請問：當時清廷派軍隊前往四川的原因為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 對抗英法聯軍
@@ -54,6 +54,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 清廷調動軍隊前住四川時在武昌起事
+    to: 清廷調動軍隊前往四川時在武昌起事
+    note: 「前住」應為「前往」
+    by: ai_review
 - id: doc_113_高雄_鼎金_社會_歷史_g8s2e1_s1_22
   section: 1
   number: 22
@@ -251,7 +256,7 @@ questions:
   number: 28
   type: single
   page: 1
-  stem: 中華民國立國之初，以《臨時約法》確定民主立國思維，更是後來憲法的前身，請問：針對約法的描述，何者正確？
+  stem: 中華民國立國之初，以《臨時約法》確定民主立國思維，更是後來憲法的前身，請問：針對約法的描述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 民國初年，《臨時約法》替「總統制」提供了法源
@@ -260,7 +265,7 @@ questions:
   - label: C
     content: 袁世凱稱帝後廢除《臨時約法》，故孫中山發起「護法運動」
   - label: D
-    content: 孫中山為了維護《臨時約法》，號招國會議員成立廣州政府。
+    content: 孫中山為了維護《臨時約法》，號召國會議員成立廣州政府。
   tags:
     chapter:
       publisher: 翰林
@@ -279,6 +284,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 號招國會議員成立廣州政府
+    to: 號召國會議員成立廣州政府
+    note: 「號招」應為「號召」
+    by: ai_review
 - id: doc_113_高雄_鼎金_社會_歷史_g8s2e1_s1_29
   section: 1
   number: 29
@@ -670,7 +680,7 @@ questions:
   number: 40
   type: single
   page: 2
-  stem: 「這個運動的發生，不僅是因為巴黎和會後人們由於失望而產生具大的情感落差，還因為這次的『外交失敗』引發對以往北京政府親日政策的不滿，於是各種衝突都接著愛國運動而併發出來。」請問：這段引文所提及的「這個運動」當為以下何者？
+  stem: 「這個運動的發生，不僅是因為巴黎和會後人們由於失望而產生巨大的情感落差，還因為這次的『外交失敗』引發對以往北京政府親日政策的不滿，於是各種衝突都接著愛國運動而併發出來。」請問：這段引文所提及的「這個運動」當為以下何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 新文化運動
@@ -697,3 +707,8 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 失望而產生具大的情感落差
+    to: 失望而產生巨大的情感落差
+    note: 「具大」應為「巨大」
+    by: ai_review

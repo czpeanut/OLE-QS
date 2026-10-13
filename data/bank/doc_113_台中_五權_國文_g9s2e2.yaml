@@ -592,10 +592,10 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 「沂珊想起五年前，正值「及笄之年」的自己參加國中會考；宣瑾在「花信之年」決定結婚後，已匆匆十載；瑞彥昨天剛過生曰，說著自己再過兩年將邁入「不惑之年」；豪成感慨著二十年前，自己還是個剛滿「弱冠」的大男孩。」四個人依目前的年齡由小而大排序，何者正確？
+  stem: 「沂珊想起五年前，正值「及笄之年」的自己參加國中會考；宣瑾在「花信之年」決定結婚後，已匆匆十載；瑞彥昨天剛過生日，說著自己再過兩年將邁入「不惑之年」；豪成感慨著二十年前，自己還是個剛滿「弱冠」的大男孩。」四個人依目前的年齡由小而大排序，何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 豪成－沂珊－如馨－宣瑾
+    content: 豪成－沂珊－瑞彥－宣瑾
   - label: B
     content: 豪成－瑞彥－宣瑾－沂珊
   - label: C
@@ -620,6 +620,15 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 瑞彥昨天剛過生曰
+    to: 瑞彥昨天剛過生日
+    note: 「生曰」印錯為「生日」
+    by: ai_review
+  - from: 豪成－沂珊－如馨－宣瑾
+    to: 豪成－沂珊－瑞彥－宣瑾
+    note: 題目無如馨，應為瑞彥
+    by: ai_review
 - id: doc_113_台中_五權_國文_g9s2e2_s1_19
   section: 1
   number: 19
@@ -1375,14 +1384,14 @@ questions:
   number: 40
   type: single
   page: 6
-  stem: 請依照【甲】和【乙】，判斷下列敘述何者最恰當？
+  stem: 請依照【甲】和【乙】，判斷下列敘述何者最恰當？（原卷有誤，已修正）
   options:
   - label: A
     content: 「不生粟之國亡」可以填入【①】處
   - label: B
     content: 「粟生而死者霸」可以填入【②】處
   - label: C
-    content: 「不生粟不死者」可以填入【③】處
+    content: 「不生粟而死者」可以填入【③】處
   - label: D
     content: 「粟生而不死者王」可以填入【④】處。
   group_stem: '【甲】管子〈治國〉：「不生粟之國亡，粟生而死$^{1}$者霸，粟生而不死者王。」
@@ -1409,6 +1418,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「不生粟不死者」可以填入
+    to: 「不生粟而死者」可以填入
+    note: 漏字「而」或印錯
+    by: ai_review
 shared_assets:
 - key: g1_40_40
   label: 題組附圖

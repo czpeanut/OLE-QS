@@ -272,7 +272,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 妍妍發現他在「Bookloop」的購書點數還有100點，如果此平台無預警關閉，可能會產生什情況？妍妍可以怎麼做？以下說明何者錯誤？
+  stem: 妍妍發現他在「Bookloop」的購書點數還有100點，如果此平台無預警關閉，可能會產生什麼情況？妍妍可以怎麼做？以下說明何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 書商服務線上平台必須負起債務不履行的民事責任
@@ -303,6 +303,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 可能會產生什情況？
+    to: 可能會產生什麼情況？
+    note: 漏「麼」字
+    by: ai_review
 - id: doc_113_新北_崇林_社會_g9s1e3_s1_9
   section: 1
   number: 9
@@ -440,7 +445,7 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 依據上文，以下敍述何者錯誤？
+  stem: 依據上文，以下敍述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 職業婦女雙重負擔，反應出職業婦女同時兼顧勞動力與非勞動力兩種角色
@@ -450,7 +455,7 @@ questions:
     content: 韓國未來會面臨勞動力不足的問題，影響國家經濟發展
   - label: D
     content: 家務市場勞動化可以減緩韓國目前面臨的問題之趨勢
-  group_stem: '(2024/12/25 中央社)韓國正式成為(甲)社會，65 歲以人口占總人口20%、達到1024 萬人。
+  group_stem: '(2024/12/25 中央社)韓國正式成為(甲)社會，65 歲以上人口占總人口20%、達到1024 萬人。
 
     2023 年底韓國生育率僅0.7，遠低於維持人口所需的2.1，預計2067 年人口將降至3900 萬人。韓國政府投入大量資金鼓勵生育仍無效。專家指出，高房價、育兒成本和職業婦女雙重負擔是主要原因。'
   tags:
@@ -470,6 +475,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 65 歲以人口占總人口20%
+    to: 65 歲以上人口占總人口20%
+    note: 漏「上」字
+    by: ai_review
 - id: doc_113_新北_崇林_社會_g9s1e3_s1_12
   section: 1
   number: 12
@@ -525,7 +535,7 @@ questions:
         - 663.71
         - 557.35
       crop_by: auto
-  group_stem: '(2024/12/25 中央社)韓國正式成為(甲)社會，65 歲以人口占總人口20%、達到1024 萬人。
+  group_stem: '(2024/12/25 中央社)韓國正式成為(甲)社會，65 歲以上人口占總人口20%、達到1024 萬人。
 
     2023 年底韓國生育率僅0.7，遠低於維持人口所需的2.1，預計2067 年人口將降至3900 萬人。韓國政府投入大量資金鼓勵生育仍無效。專家指出，高房價、育兒成本和職業婦女雙重負擔是主要原因。'
   tags:

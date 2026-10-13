@@ -1586,14 +1586,14 @@ questions:
   number: 45
   type: single
   page: 4
-  stem: 阿綸的實驗結果是否驗證「水分可以促進黴菌生長」假設？為什麼？
+  stem: 阿綸的實驗結果是否驗證「水分可以促進黴菌生長」假設？為什麼？（原卷有誤，已修正）
   options:
   - label: A
     content: 否，因為操縱變因不同
   - label: B
     content: 否，因為控制變因相同
   - label: C
-    content: 是，因為小傑有設計對照組
+    content: 是，因為阿綸有設計對照組
   - label: D
     content: 是，因為對照甲、乙實驗結果，甲的麵包上有菌絲出現。
   group_stem: '(二)阿綸想驗證水分可以促進黴菌生長的假設，故設計甲、乙兩組實驗並記錄，其三個變因如附表，試回答下列問題：
@@ -1625,6 +1625,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 是，因為小傑有設計對照組
+    to: (C) 是，因為阿綸有設計對照組
+    note: 人名筆誤，阿綸誤植為小傑
+    by: ai_review
 - id: doc_112_高雄_大樹_自然_g7s1e1_s5_46
   section: 5
   number: 46

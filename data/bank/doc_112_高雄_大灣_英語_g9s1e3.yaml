@@ -517,8 +517,8 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: "30. (\n) Sandy didn’t ubderstand what 〝 pop 〞singer meant in the sentence\
-    \ below: \n Cindy wants to be a pop singer like Taylor Swift."
+  stem: "30. (\n) Sandy didn’t understand what 〝 pop 〞singer meant in the sentence\
+    \ below: \n Cindy wants to be a pop singer like Taylor Swift.（原卷有誤，已修正）"
   options:
   - label: A
     content: sad music
@@ -545,6 +545,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Sandy didn’t ubderstand what
+    to: Sandy didn’t understand what
+    note: ubderstand 拼錯，應為 understand
+    by: ai_review
 - id: doc_112_高雄_大灣_英語_g9s1e3_s2_31
   section: 2
   number: 31
@@ -1127,7 +1132,7 @@ questions:
     )42. TimeRepublik is a great 〝platform〞 to learn new skills as well as give back
     to the community.
 
-    What the meaning of “platform”?'
+    Whatis the meaning of “platform”?（原卷有誤，已修正）'
   options:
   - label: A
     content: company
@@ -1165,6 +1170,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: What the meaning of “platform”?
+    to: What is the meaning of “platform”?
+    note: 疑問句漏了 be 動詞 is
+    by: ai_review
 - id: doc_112_高雄_大灣_英語_g9s1e3_s2_43
   section: 2
   number: 43

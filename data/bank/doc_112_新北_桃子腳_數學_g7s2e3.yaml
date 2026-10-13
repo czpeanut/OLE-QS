@@ -710,7 +710,7 @@ questions:
   number: 6
   type: fill
   page: 2
-  stem: 小志班上有12 位男同學，這些同學的上學通勤時間（單位：分鐘）由小到大排列分別為4、5、5、5、6、7、8、9、10、10、11、15，則這16 位同學上學通勤時間的中位數是______⑥______分鐘。
+  stem: 小志班上有12 位男同學，這些同學的上學通勤時間（單位：分鐘）由小到大排列分別為4、5、5、5、6、7、8、9、10、10、11、15，則這12 位同學上學通勤時間的中位數是______⑥______分鐘。（原卷有誤，已修正）
   tags:
     chapter:
       publisher: 翰林
@@ -728,6 +728,11 @@ questions:
   - '7.5'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則這16 位同學上學通勤時間的中位數是
+    to: 則這12 位同學上學通勤時間的中位數是
+    note: 全班僅12位同學，16為誤植
+    by: ai_review
 - id: doc_112_新北_桃子腳_數學_g7s2e3_s2_7
   section: 2
   number: 7

@@ -138,9 +138,9 @@ questions:
   type: single
   page: 1
   stem: 高雄機場基於安全考量限制機場附近的建築物，以機場跑道為中心點，到建築物頂樓最高處的仰角不得超過$8^{\circ}$，請問若華光建築公司打算在距離機場中心點2
-    公里處蓋一棟大樓，經測量大樓的地面高度和中心點依樣高，則在符合機場限制的規定下，大樓在地面以上的高度最高約為多少公尺(四捨五入到整數位)？(已知sin$8^{\circ}
+    公里處蓋一棟大樓，經測量大樓的地面高度和中心點一樣高，則在符合機場限制的規定下，大樓在地面以上的高度最高約為多少公尺(四捨五入到整數位)？(已知sin$8^{\circ}
     \fallingdotseq 0.1392$，cos$8^{\circ} \fallingdotseq 0.9903$，tan$8^{\circ} \fallingdotseq
-    0.1405$)
+    0.1405$)（原卷有誤，已修正）
   options:
   - label: A
     content: '278'
@@ -167,6 +167,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 經測量大樓的地面高度和中心點依樣高
+    to: 經測量大樓的地面高度和中心點一樣高
+    note: 「依樣」應為「一樣」
+    by: ai_review
 - id: doc_113_高雄_光華_數學_g9s1e3_s1_5
   section: 1
   number: 5

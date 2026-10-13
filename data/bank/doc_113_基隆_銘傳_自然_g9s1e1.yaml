@@ -807,10 +807,10 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 圖為113年9月29日中央氣象署預測山陀兒颱風的氣象圖，若分別以基隆和高雄為基準點，則山陀兒颱風的中心位置相對於基隆和高雄的距離和方向是否會相同？
+  stem: 圖為113年9月29日中央氣象署預測山陀兒颱風的氣象圖，若分別以基隆和高雄為基準點，則山陀兒颱風的中心位置相對於基隆和高雄的距離和方向是否會相同？（原卷有誤，已修正）
   options:
   - label: A
-    content: 距離和方向皆相同甲丁
+    content: 距離和方向皆相同
   - label: B
     content: 距離相同，方向不相同
   - label: C
@@ -853,6 +853,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 距離和方向皆相同甲丁
+    to: (A) 距離和方向皆相同
+    note: 原卷選項多印「甲丁」二字
+    by: ai_review
 - id: doc_113_基隆_銘傳_自然_g9s1e1_s1_19
   section: 1
   number: 19

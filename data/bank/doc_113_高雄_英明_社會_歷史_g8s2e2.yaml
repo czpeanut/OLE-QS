@@ -467,7 +467,7 @@ questions:
   number: 34
   type: single
   page: 2
-  stem: 「張學良故居」位在在新竹，但事實上他也先後在高雄西子灣與台北北投被輾轉軟禁，請問：在這些歷史相關景點中，你不會看到哪個介紹？
+  stem: 「張學良故居」位在新竹，但事實上他也先後在高雄西子灣與台北北投被輾轉軟禁，請問：在這些歷史相關景點中，你不會看到哪個介紹？（原卷有誤，已修正）
   options:
   - label: A
     content: 在滿洲國任職，協助治理東北事務
@@ -494,6 +494,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini-only
+  errata:
+  - from: 「張學良故居」位在在新竹
+    to: 「張學良故居」位在新竹
+    note: 多印一個「在」字
+    by: ai_review
 - id: doc_113_高雄_英明_社會_歷史_g8s2e2_s1_35
   section: 1
   number: 35

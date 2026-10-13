@@ -663,7 +663,7 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: 政府設置國家公園以保護生物棲息地、珍稀資源與文化。臺灣某國家公園的經緯度位置位於「北緯23°12'與東經119°27」，請問關於該國家公園，下列何者敘述正確？
+  stem: 政府設置國家公園以保護生物棲息地、珍稀資源與文化。臺灣某國家公園的經緯度位置位於「北緯23°12'與東經119°27'」，請問關於該國家公園，下列何者敘述正確？
   options:
   - label: A
     content: 奇特柱狀玄武岩地形
@@ -689,6 +689,12 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 「北緯23°12'與東經119°27」
+    to: 「北緯23°12'與東經119°27'」
+    note: 漏了經度的分符號「'」
+    by: ai_review
+    extraction: true
 - id: doc_113_新北_桃子腳_社會_g7s2e3_s2_22
   section: 2
   number: 22

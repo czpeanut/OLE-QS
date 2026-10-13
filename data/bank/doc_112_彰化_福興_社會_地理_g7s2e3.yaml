@@ -856,7 +856,7 @@ questions:
   stem: '各種交通工具的特性不同，適合的用途也不一樣。一般常見的陸地運輸方式分為鐵路及公路，請問附表有關其特性之比較中，何者錯誤？
 
 
-    | 運輸方式 | 運費 | 適運距離 | 路線與建成本 | 便利性 |
+    | 運輸方式 | 運費 | 適運距離 | 路線興建成本 | 便利性 |
 
     | :--- | :--- | :--- | :--- | :--- |
 
@@ -891,6 +891,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 路線與建成本
+    to: 路線興建成本
+    note: 表格欄位名稱「與」應為「興」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_福興_社會_地理_g7s2e3_s1_21
   section: 1
   number: 21

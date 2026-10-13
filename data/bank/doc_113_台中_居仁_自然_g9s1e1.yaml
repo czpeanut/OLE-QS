@@ -1314,7 +1314,7 @@ questions:
   number: 32
   type: single
   page: 3
-  stem: 一物體作自由落體，若不考慮空氣所造成的影響，該物體在在0~1 秒、1~2 秒、2~3 秒所落下的距離比為何？
+  stem: 一物體作自由落體，若不考慮空氣所造成的影響，該物體在0~1 秒、1~2 秒、2~3 秒所落下的距離比為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 1：1：1
@@ -1341,6 +1341,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 該物體在在0~1 秒、1~2 秒
+    to: 該物體在0~1 秒、1~2 秒
+    note: 多印一個「在」字
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g9s1e1_s1_33
   section: 1
   number: 33

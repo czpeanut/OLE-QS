@@ -451,7 +451,7 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: 若有一隻複製羊是將從黃面羊的卵細胞核取出，並與白面羊的乳腺細胞結合，在將此卵放入黑面羊的子宮孕育，試問這隻複製羊應該為何種羊？
+  stem: 若有一隻複製羊是將從黃面羊的卵細胞核取出，並與白面羊的乳腺細胞結合，再將此卵放入黑面羊的子宮孕育，試問這隻複製羊應該為何種羊？（原卷有誤，已修正）
   options:
   - label: A
     content: 黃面羊
@@ -478,6 +478,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 結合，在將此卵放入黑面羊的子宮
+    to: 結合，再將此卵放入黑面羊的子宮
+    note: 「在」為錯字，應為「再」
+    by: ai_review
 - id: doc_111_彰化_花壇_自然_g7s2e2_s1_14
   section: 1
   number: 14

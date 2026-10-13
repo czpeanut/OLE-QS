@@ -749,7 +749,7 @@ questions:
   number: 6
   type: fill
   page: 2
-  stem: 假設 $x＋2y$ 是 196 的正平方根，$3x－2y$ 是 36 的負平根，求 $2x＋10y$ 的平方根＝_____⑥ ______
+  stem: 假設 $x＋2y$ 是 196 的正平方根，$3x－2y$ 是 36 的負平方根，求 $2x＋10y$ 的平方根＝_____⑥ ______（原卷有誤，已修正）
   tags:
     chapter:
       publisher: 翰林
@@ -767,6 +767,11 @@ questions:
   - \pm 8
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 3x－2y 是 36 的負平根，求 2x＋10y 的平方根
+    to: 3x－2y 是 36 的負平方根，求 2x＋10y 的平方根
+    note: 漏字，「負平根」應為「負平方根」
+    by: ai_review
 - id: doc_113_台中_五權_數學_g8s1e1_s2_7
   section: 2
   number: 7

@@ -1243,7 +1243,7 @@ questions:
   number: 34
   type: single
   page: 2
-  stem: 請問當時兩岸正處與哪一關係階段?
+  stem: 請問當時兩岸正處於哪一關係階段?（原卷有誤，已修正）
   options:
   - label: A
     content: 武力對抗時期
@@ -1271,6 +1271,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問當時兩岸正處與哪一關係階段?
+    to: 請問當時兩岸正處於哪一關係階段?
+    note: 「處與」應為「處於」
+    by: ai_review
 - id: doc_113_台中_向上_社會_g7s2e3_s1_35
   section: 1
   number: 35

@@ -1515,14 +1515,14 @@ questions:
   number: 32
   type: single
   page: 3
-  stem: 歸零的電子秤上，放置空燒杯後顯示質量為 30g，再加入甲物質顯示質量為 40g，再緩緩加入水至顯示質量為 100g，此時發現燒杯中甲物質已全部溶解，關於此杯水溶液的敘述，下列何者錯誤？
+  stem: 歸零的電子秤上，放置空燒杯後顯示質量為 30g，再加入甲物質顯示質量為 40g，再緩緩加入水至顯示質量為 100g，此時發現燒杯中甲物質已全部溶解，關於此杯水溶液的敘述，下列何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 溶液中有甲物質 10g
   - label: B
     content: 溶液中有水 60g
   - label: C
-    content: 溶夜的質量為 70g
+    content: 溶液的質量為 70g
   - label: D
     content: 溶液的重量百分濃度為 40%。
   tags:
@@ -1542,6 +1542,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 溶夜的質量為 70g
+    to: (C) 溶液的質量為 70g
+    note: 「溶夜」為錯字，應為「溶液」
+    by: ai_review
 - id: doc_113_新北_福和_自然_g8s1e1_s1_33
   section: 1
   number: 33

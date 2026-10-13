@@ -270,12 +270,12 @@ questions:
   number: 6
   type: single
   page: 2
-  stem: 甲、乙兩個裝有純水的玻璃杯置於水平桌面，如附圖所示。下列何種情況 P、Q 兩點所受的液體壓力大小相同？
+  stem: 甲、乙兩個裝有純水的玻璃杯置於水平桌面，如附圖所示。下列何種情況 P、Q 兩點所受的液體壓力大小相同？（原卷有誤，已修正）
   options:
   - label: A
     content: 兩杯水的質量相同
   - label: B
-    content: P、Q 兩點到各自液面的垂直距離
+    content: P、Q 兩點到各自液面的垂直距離相同
   - label: C
     content: P、Q 兩點皆在各自水杯的中點
   - label: D
@@ -314,6 +314,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) P、Q 兩點到各自液面的垂直距離
+    to: (B) P、Q 兩點到各自液面的垂直距離相同
+    note: 選項漏印「相同」
+    by: ai_review
 - id: doc_113_新北_崇林_自然_g8s2e3_s1_7
   section: 1
   number: 7
@@ -510,7 +515,7 @@ questions:
   number: 11
   type: single
   page: 3
-  stem: 有一個裝水的玻璃魚缸，內部的水保持靜止，魚缸內有四點個標示為 a、b、c、d，其位置如圖所示。這四點的液體壓力分別為 $P_{a}$、$P_{b}$、$P_{c}$、$P_{d}$，則其關係應為下列何者？
+  stem: 有一個裝水的玻璃魚缸，內部的水保持靜止，魚缸內有四個標示為 a、b、c、d，其位置如圖所示。這四點的液體壓力分別為 $P_{a}$、$P_{b}$、$P_{c}$、$P_{d}$，則其關係應為下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: $P_{a}$＜$P_{b}$＝$P_{c}$＜$P_{d}$
@@ -554,6 +559,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 魚缸內有四點個標示為 a、b、c、d
+    to: 魚缸內有四個標示為 a、b、c、d
+    note: 多印「點」字
+    by: ai_review
 - id: doc_113_新北_崇林_自然_g8s2e3_s1_12
   section: 1
   number: 12

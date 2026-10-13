@@ -288,12 +288,12 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 下列關於雞蛋構造的敘述，何者正確？
+  stem: 下列關於雞蛋構造的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲含有遺傳物質DNA
   - label: B
-    content: 乙和和丁由卵巢分泌
+    content: 乙和丁由卵巢分泌
   - label: C
     content: 庚戊構成了完整的卵細胞
   - label: D
@@ -317,6 +317,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 乙和和丁由卵巢分泌
+    to: 乙和丁由卵巢分泌
+    note: 多印一個「和」字
+    by: ai_review
 - id: doc_113_台北_仁愛_自然_g7s2e1_s1_8
   section: 1
   number: 8

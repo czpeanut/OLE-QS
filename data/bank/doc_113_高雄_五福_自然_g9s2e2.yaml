@@ -124,7 +124,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 一圓盤形磁鐵如右圖甲，今將其切半後如右圖乙，則下敘述何者錯誤？
+  stem: 一圓盤形磁鐵如右圖甲，今將其切半後如右圖乙，則下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: A 為 S 極；B 為 N 極
@@ -168,6 +168,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則下敘述何者錯誤？
+    to: 則下列敘述何者錯誤？
+    note: 漏「列」字
+    by: ai_review
 - id: doc_113_高雄_五福_自然_g9s2e2_s1_4
   section: 1
   number: 4
@@ -2102,14 +2107,14 @@ questions:
   number: 41
   type: single
   page: 5
-  stem: 下圖三為大氣中臭氧的濃度與高度的關係圖，及圖四中緯度地區大氣的垂直結構分層示意圖(分成 A、B、C、D 四層)，請依據附圖判斷下列敘述何者正確？
+  stem: 下圖三為大氣中臭氧的濃度與高度的關係圖，及圖四中緯度地區大氣的垂直結構分層示意圖(分成 A、B、C、D 四層)，請依據附圖判斷下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 隨高度增加，溫度下降速率最快的為 A 層
   - label: B
     content: 距離地表 20~30km 處臭氧濃度最高，故甲層（離地 10-50km）亦可稱為臭氧層
   - label: C
-    content: 在 B 層中，溫度隨隨高度升高而遞增，是因臭氧吸收了地表的短波輻射
+    content: 在 B 層中，溫度隨高度升高而遞增，是因臭氧吸收了地表的短波輻射
   - label: D
     content: 長途客機為避免顛簸是飛在 D 層
   assets:
@@ -2163,6 +2168,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 在B層中，溫度隨隨高度升高而遞增
+    to: 在B層中，溫度隨高度升高而遞增
+    note: 多印一個「隨」字
+    by: ai_review
 - id: doc_113_高雄_五福_自然_g9s2e2_s1_42
   section: 1
   number: 42

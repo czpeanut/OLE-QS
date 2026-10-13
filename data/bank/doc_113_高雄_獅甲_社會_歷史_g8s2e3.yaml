@@ -386,7 +386,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 獅甲國中在校慶時播放一部紀錄片《北緯‧17‧38》，內容介紹有關冷戰兩個區域戰爭的過程與影響，並經由歷史老師的引導，將電影內容與台灣歷史做結合，讓學生完成學習單的填寫。請問：有關這部紀綠片的相關敘述何者正確？
+  stem: 獅甲國中在校慶時播放一部紀錄片《北緯‧17‧38》，內容介紹有關冷戰兩個區域戰爭的過程與影響，並經由歷史老師的引導，將電影內容與台灣歷史做結合，讓學生完成學習單的填寫。請問：有關這部紀錄片的相關敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 內容會介紹到美、蘇兩國正面開戰
@@ -430,6 +430,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問：有關這部紀綠片的相關敘述何者正確？
+    to: 請問：有關這部紀錄片的相關敘述何者正確？
+    note: 「紀錄片」誤植為「紀綠片」
+    by: ai_review
 - id: doc_113_高雄_獅甲_社會_歷史_g8s2e3_s1_29
   section: 1
   number: 29
@@ -563,14 +568,14 @@ questions:
   number: 33
   type: single
   page: 2
-  stem: 某一年中國農村為因應全國大白菜緊缺，自主性努力投入生產，致使以往要大排長龍等買大白菜的現象不再出現。請問：此年最有可能是以下哪一年？
+  stem: 某一年中國農村為因應全國大白菜緊缺，自主性努力投入生產，致使以往要大排長龍等買大白菜的現象不再出現。請問：此年最有可能是以下哪一年？（原卷有誤，已修正）
   options:
   - label: A
     content: 1959 年
   - label: B
-    content: 1966 年年
+    content: 1966 年
   - label: C
-    content: '1970'
+    content: 1970年
   - label: D
     content: 1988 年。
   tags:
@@ -590,6 +595,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 1966 年年(C) 1970
+    to: (B) 1966 年(C) 1970 年
+    note: B選項多印「年」字，C選項漏印「年」字
+    by: ai_review
 - id: doc_113_高雄_獅甲_社會_歷史_g8s2e3_s1_34
   section: 1
   number: 34

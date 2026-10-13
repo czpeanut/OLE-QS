@@ -524,7 +524,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: （克漏字第1格）
+  stem: （克漏字第1格）（原卷有誤，已修正）
   options:
   - label: A
     content: You are really nice, too.
@@ -537,7 +537,7 @@ questions:
   group_stem: "Zac: Hi, I’m Zac Hugo. Nice to meet you. \nJamie: I’m Jamie Parker.\
     \       1       \nZac: Who is the lady at the door? \nJamie: She is Selina. \n\
     Zac:     2     she our English teacher? \nJamie: No, she is a doctor. \nZac: Really?\
-    \ She is tall and beautiful.     3      \nJamie: Seline is forty. She is kind.\
+    \ She is tall and beautiful.     3      \nJamie: Selina is forty. She is kind.\
     \ They have a rabbit, too.  \n  4    name is Rebecca. \nZac: I see."
   tags:
     textbook: 七上 英語 對話與情境應答
@@ -556,6 +556,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 'Jamie: Seline is forty. She is kind.'
+    to: 'Jamie: Selina is forty. She is kind.'
+    note: 人名應統一為Selina
+    by: ai_review
 - id: doc_113_台中_向上_英語_g7s1e1_s2_2
   section: 2
   number: 2
@@ -574,7 +579,7 @@ questions:
   group_stem: "Zac: Hi, I’m Zac Hugo. Nice to meet you. \nJamie: I’m Jamie Parker.\
     \       1       \nZac: Who is the lady at the door? \nJamie: She is Selina. \n\
     Zac:     2     she our English teacher? \nJamie: No, she is a doctor. \nZac: Really?\
-    \ She is tall and beautiful.     3      \nJamie: Seline is forty. She is kind.\
+    \ She is tall and beautiful.     3      \nJamie: Selina is forty. She is kind.\
     \ They have a rabbit, too.  \n  4    name is Rebecca. \nZac: I see."
   tags:
     textbook: 七上 英語 be動詞(am/is/are) + 肯定/否定/Yes-No問答
@@ -611,7 +616,7 @@ questions:
   group_stem: "Zac: Hi, I’m Zac Hugo. Nice to meet you. \nJamie: I’m Jamie Parker.\
     \       1       \nZac: Who is the lady at the door? \nJamie: She is Selina. \n\
     Zac:     2     she our English teacher? \nJamie: No, she is a doctor. \nZac: Really?\
-    \ She is tall and beautiful.     3      \nJamie: Seline is forty. She is kind.\
+    \ She is tall and beautiful.     3      \nJamie: Selina is forty. She is kind.\
     \ They have a rabbit, too.  \n  4    name is Rebecca. \nZac: I see."
   tags:
     textbook: 七上 英語 What time / What day問答 + 日期表達（月份+序數）
@@ -648,7 +653,7 @@ questions:
   group_stem: "Zac: Hi, I’m Zac Hugo. Nice to meet you. \nJamie: I’m Jamie Parker.\
     \       1       \nZac: Who is the lady at the door? \nJamie: She is Selina. \n\
     Zac:     2     she our English teacher? \nJamie: No, she is a doctor. \nZac: Really?\
-    \ She is tall and beautiful.     3      \nJamie: Seline is forty. She is kind.\
+    \ She is tall and beautiful.     3      \nJamie: Selina is forty. She is kind.\
     \ They have a rabbit, too.  \n  4    name is Rebecca. \nZac: I see."
   tags:
     textbook: 七上 英語 所有格形容詞（my/your/his/her/its/our/their）+ 所有格's
@@ -928,7 +933,7 @@ questions:
   number: 6
   type: single
   page: 2
-  stem: Which is true?                           which 哪一個
+  stem: Which is true?                           which 哪一個（原卷有誤，已修正）
   options:
   - label: A
     content: Sam sings songs with Ashley after school.
@@ -941,7 +946,7 @@ questions:
   group_stem: "C.  \n                     The Smith Family \n   Ashley Smith is thirteen.\
     \ Ashley’s grandparents are retired farmers. \nThey have three children. Ashley’s\
     \ father is the big brother in his \nfamily. His brothers are Daniel and Frank.\
-    \ Ashey’s father is an office \nworker, and her mom is a nurse. Ashley has two\
+    \ Ashley’s father is an office \nworker, and her mom is a nurse. Ashley has two\
     \ twin brothers, Tony \nand Sam. They are eleven. They play basketball after school\
     \ every day. \nAshley has three cousins. They’re Hebe, Phoebe, and Nash. They\
     \ are \nstudents, too. Nash’s mother is a singer. Frank is Nash’s uncle. He is\
@@ -964,6 +969,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: His brothers are Daniel and Frank. Ashey’s father is an office worker,
+    to: His brothers are Daniel and Frank. Ashley’s father is an office worker,
+    note: Ashley漏字母l
+    by: ai_review
 - id: doc_113_台中_向上_英語_g7s1e1_s3_7
   section: 3
   number: 7
@@ -1046,7 +1056,7 @@ questions:
   group_stem: "C.  \n                     The Smith Family \n   Ashley Smith is thirteen.\
     \ Ashley’s grandparents are retired farmers. \nThey have three children. Ashley’s\
     \ father is the big brother in his \nfamily. His brothers are Daniel and Frank.\
-    \ Ashey’s father is an office \nworker, and her mom is a nurse. Ashley has two\
+    \ Ashley’s father is an office \nworker, and her mom is a nurse. Ashley has two\
     \ twin brothers, Tony \nand Sam. They are eleven. They play basketball after school\
     \ every day. \nAshley has three cousins. They’re Hebe, Phoebe, and Nash. They\
     \ are \nstudents, too. Nash’s mother is a singer. Frank is Nash’s uncle. He is\

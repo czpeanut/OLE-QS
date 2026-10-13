@@ -1695,12 +1695,12 @@ questions:
   number: 46
   type: single
   page: 5
-  stem: 兩次反應的時間和強度皆有差異，造成此差異的主要原因是？
+  stem: 兩次反應的時間和強度皆有差異，造成此差異的主要原因是？（原卷有誤，已修正）
   options:
   - label: A
     content: 疫苗可直接殺死病原體
   - label: B
-    content: 疫苗促使促使發炎反應的發生，以利白血球殺死病原體
+    content: 疫苗促使發炎反應的發生，以利白血球殺死病原體
   - label: C
     content: 疫苗促使人體產生專一性防禦作用，且此作用具有記憶性
   - label: D
@@ -1724,6 +1724,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 疫苗促使促使發炎反應的發生
+    to: 疫苗促使發炎反應的發生
+    note: 多印了一個「促使」
+    by: ai_review
 - id: doc_113_高雄_苓雅_自然_g7s1e2_s1_47
   section: 1
   number: 47

@@ -71,12 +71,12 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 下列何者正確？
+  stem: 下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 距離原點越近的點，所表示的數絕對值越大。
   - label: B
-    content: 任何數的絕對數都是正數。
+    content: 任何數的絕對值都是正數。
   - label: C
     content: 正數的絕對值一定大於負數的絕對值。
   - label: D
@@ -98,6 +98,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 任何數的絕對數都是正數。
+    to: (B) 任何數的絕對值都是正數。
+    note: 「絕對數」筆誤，應為「絕對值」
+    by: ai_review
 - id: doc_111_高雄_大灣_數學_g7s1e1_s1_3
   section: 1
   number: 3

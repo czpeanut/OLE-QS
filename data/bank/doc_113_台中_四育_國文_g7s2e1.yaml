@@ -1394,10 +1394,10 @@ questions:
   number: 1
   type: single
   page: 3
-  stem: 下列是學生看完本文後所作的延伸思考，何者與本文含義相差最遠？
+  stem: 下列是學生看完本文後所作的延伸思考，何者與本文含義相差最遠？（原卷有誤，已修正）
   options:
   - label: A
-    content: 小康：所謂「山重水複疑無路，柳暗花明又一村」，生處絕境中仍要抱有希望
+    content: 小康：所謂「山重水複疑無路，柳暗花明又一村」，身處絕境中仍要抱有希望
   - label: B
     content: 小軒：其實「禍兮福之所倚，福兮禍之所伏」，困境雖然難受卻也增長了智慧
   - label: C
@@ -1424,6 +1424,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 生處絕境中仍要抱有希望
+    to: 身處絕境中仍要抱有希望
+    note: 生處應為身處
+    by: ai_review
 - id: doc_113_台中_四育_國文_g7s2e1_s4_2
   section: 4
   number: 2

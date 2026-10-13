@@ -1138,7 +1138,7 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: '附表是甲、乙兩物質在 X、Y、Z 三種液體中的溶解情形，請問哪一種液體最適合同來分離甲、乙兩物質？
+  stem: '附表是甲、乙兩物質在 X、Y、Z 三種液體中的溶解情形，請問哪一種液體最適合用來分離甲、乙兩物質？
 
 
     | 液體種類 | 甲物質在溶劑中之情形 | 乙物質在溶劑中之情形 |
@@ -1178,6 +1178,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問哪一種液體最適合同來分離甲、乙兩物質？
+    to: 請問哪一種液體最適合用來分離甲、乙兩物質？
+    note: 「同」應為「用」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_福興_自然_g8s1e1_s1_31
   section: 1
   number: 31

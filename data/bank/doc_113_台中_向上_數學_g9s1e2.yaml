@@ -774,8 +774,8 @@ questions:
   number: 9
   type: fill
   page: 2
-  stem: 小智想利用學過的數學測量101 大樓高度，他搭乘捷運紅線在象山站測得大樓仰角45°，當捷運行進1390 公尺到達到達信義安和站時測得大樓仰角30°
-    ($\sqrt{3} \approx 1.732$，$\sqrt{2} \approx 1.414$)，請幫小智算算看101 大樓高度約 (9) 公尺（無條件捨去到整數）
+  stem: 小智想利用學過的數學測量101 大樓高度，他搭乘捷運紅線在象山站測得大樓仰角45°，當捷運行進1390 公尺到達信義安和站時測得大樓仰角30° ($\sqrt{3}
+    \approx 1.732$，$\sqrt{2} \approx 1.414$)，請幫小智算算看101 大樓高度約 (9) 公尺（無條件捨去到整數）（原卷有誤，已修正）
   assets:
   - key: s2_9_f1
     kind: figure
@@ -810,6 +810,11 @@ questions:
   - '508'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當捷運行進1390 公尺到達到達信義安和站時測得大樓仰角30°
+    to: 當捷運行進1390 公尺到達信義安和站時測得大樓仰角30°
+    note: 多印一個「到達」
+    by: ai_review
 - id: doc_113_台中_向上_數學_g9s1e2_s2_10
   section: 2
   number: 10

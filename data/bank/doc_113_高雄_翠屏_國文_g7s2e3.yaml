@@ -746,7 +746,7 @@ questions:
   number: 23
   type: single
   page: 3
-  stem: 根據文意，下列段落排序何者最恰當?
+  stem: 根據文意，下列段落排序何者最恰當?（原卷有誤，已修正）
   options:
   - label: A
     content: 乙→甲→丙
@@ -756,7 +756,7 @@ questions:
     content: 丙→甲→乙
   - label: D
     content: 丙→乙→甲
-  group_stem: '還沒有進：入保全業以前，我誤以為那是一份簡單的工作，專給退休人士打發時間及賺取零用錢，直到自己也身在其中。
+  group_stem: '還沒有進入保全業以前，我誤以為那是一份簡單的工作，專給退休人士打發時間及賺取零用錢，直到自己也身在其中。
 
     【甲】某些社區住戶則是異想天開，希望用低價顧到像連恩尼遜或傑森史塔森般身手矯健、動作迅猛如
 
@@ -794,6 +794,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 還沒有進：入保全業以前
+    to: 還沒有進入保全業以前
+    note: 冒號誤植於詞語「進入」中
+    by: ai_review
 - id: doc_113_高雄_翠屏_國文_g7s2e3_s1_24
   section: 1
   number: 24
@@ -809,7 +814,7 @@ questions:
     content: 保全人員工作項目，不是只有保護社區安全這麼簡單而已
   - label: D
     content: 作者擔任保全人員後，深知業者的生存之道，就是要送禮
-  group_stem: '還沒有進：入保全業以前，我誤以為那是一份簡單的工作，專給退休人士打發時間及賺取零用錢，直到自己也身在其中。
+  group_stem: '還沒有進入保全業以前，我誤以為那是一份簡單的工作，專給退休人士打發時間及賺取零用錢，直到自己也身在其中。
 
     【甲】某些社區住戶則是異想天開，希望用低價顧到像連恩尼遜或傑森史塔森般身手矯健、動作迅猛如
 
@@ -1335,10 +1340,10 @@ questions:
   number: 39
   type: single
   page: 4
-  stem: 擅長射箭的陳堯咨，以技術當世無雙而顯得有些自大。如果你是他的好友，下列哪一句話不適合用來規誡他？
+  stem: 擅長射箭的陳堯咨，以技術當世無雙而顯得有些自大。如果你是他的好友，下列哪一句話不適合用來規誡他？（原卷有誤，已修正）
   options:
   - label: A
-    content: 滿招損，謙無益
+    content: 滿招損，謙受益
   - label: B
     content: 萬丈高樓平地起
   - label: C
@@ -1366,6 +1371,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 滿招損，謙無益
+    to: 滿招損，謙受益
+    note: 名句「謙受益」誤印為「謙無益」
+    by: ai_review
 - id: doc_113_高雄_翠屏_國文_g7s2e3_s1_40
   section: 1
   number: 40

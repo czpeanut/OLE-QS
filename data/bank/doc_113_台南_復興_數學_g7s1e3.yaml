@@ -195,6 +195,7 @@ questions:
       - 320.73
       - 239.89
       - 355.09
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -494,6 +495,7 @@ questions:
       - 320.73
       - 554.4
       - 398.95
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -750,6 +752,7 @@ questions:
       - 190.47
       - 158.07
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -961,7 +964,7 @@ questions:
   number: 26
   type: single
   page: 3
-  stem: 若 $x=-1$ 為 $a(x+3)+2(x-1)=x+3$，則 $a=$？（習作 p. 61）
+  stem: 若 $x=-1$ 為 $a(x+3)+2(x-1)=x+3的解$，則 $a=$？（習作 p. 61）（原卷有誤，已修正）
   options:
   - label: A
     content: $-3$
@@ -990,6 +993,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若 x=-1 為 a ( x + 3 )+2 ( x - 1 )= x + 3，則 a=？
+    to: 若 x=-1 為 a ( x + 3 )+2 ( x - 1 )= x + 3 的解，則 a=？
+    note: 漏印「的解」
+    by: ai_review
 - id: doc_113_台南_復興_數學_g7s1e3_s1_27
   section: 1
   number: 27
@@ -1091,6 +1099,7 @@ questions:
         - 283.75
         - 164.29
         - 337.42
+      redrawn: 去除浮水印
   - label: B
     content: ''
     asset:
@@ -1103,6 +1112,7 @@ questions:
         - 284.73
         - 273.27
         - 336.76
+      redrawn: 去除浮水印
   - label: C
     content: ''
     asset:
@@ -1115,6 +1125,7 @@ questions:
         - 284.73
         - 388.8
         - 335.78
+      redrawn: 去除浮水印
   - label: D
     content: ''
     asset:
@@ -1127,6 +1138,7 @@ questions:
         - 284.73
         - 532.8
         - 335.78
+      redrawn: 去除浮水印
   assets:
   - key: s1_29_f1
     kind: figure
@@ -1138,6 +1150,7 @@ questions:
       - 225.82
       - 345.93
       - 270.98
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:

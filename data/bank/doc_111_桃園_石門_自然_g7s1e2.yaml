@@ -916,12 +916,12 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 有關人體心臟的敘述，何者正確？
+  stem: 有關人體心臟的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 位於腹腔，由心肌組成
   - label: B
-    content: 心臟的收縮舒張為血液流動的的動力來源
+    content: 心臟的收縮舒張為血液流動的動力來源
   - label: C
     content: 心房與靜脈間有瓣膜，可防止血液逆流
   - label: D
@@ -943,6 +943,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 心臟的收縮舒張為血液流動的的動力來源
+    to: 心臟的收縮舒張為血液流動的動力來源
+    note: 多一個「的」字
+    by: ai_review
 - id: doc_111_桃園_石門_自然_g7s1e2_s1_28
   section: 1
   number: 28

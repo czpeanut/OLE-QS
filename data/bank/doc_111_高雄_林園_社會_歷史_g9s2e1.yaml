@@ -351,7 +351,7 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 拿破崙下台後，歐洲召開維也納會議討論重整歐洲政治秩序。其中將革命期間遭拿破倫佔領的地區，恢復原有王室的統治權，請問這是維也納會議的何種原則？
+  stem: 拿破崙下台後，歐洲召開維也納會議討論重整歐洲政治秩序。其中將革命期間遭拿破崙佔領的地區，恢復原有王室的統治權，請問這是維也納會議的何種原則？（原卷有誤，已修正）
   options:
   - label: A
     content: 正統原則
@@ -377,6 +377,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 其中將革命期間遭拿破倫佔領的地區
+    to: 其中將革命期間遭拿破崙佔領的地區
+    note: 「倫」應修正為「崙」
+    by: ai_review
 - id: doc_111_高雄_林園_社會_歷史_g9s2e1_s1_26
   section: 1
   number: 26

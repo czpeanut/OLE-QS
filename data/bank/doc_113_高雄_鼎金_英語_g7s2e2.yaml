@@ -1807,7 +1807,7 @@ questions:
   number: 3
   type: fill
   page: 5
-  stem: February is the s d month of the year. It only has 28 0r 29 days.
+  stem: February is the s d month of the year. It only has 28 or 29 days.（原卷有誤，已修正）
   ai_answers:
     gemini: second
     qwen: second
@@ -1825,6 +1825,11 @@ questions:
       chapter: B2 七下
     textbook: 七下 英語 序數 + 日期表達（What's the date?）
     labeled_by: ai
+  errata:
+  - from: It only has 28 0r 29 days.
+    to: It only has 28 or 29 days.
+    note: 英文字母 o 誤植為數字 0
+    by: ai_review
 - id: doc_113_高雄_鼎金_英語_g7s2e2_s5_4
   section: 5
   number: 4

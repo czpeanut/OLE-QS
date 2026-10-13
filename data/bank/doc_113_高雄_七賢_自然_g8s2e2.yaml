@@ -526,14 +526,14 @@ questions:
     | Y | 32 | 32 | 30 |
 
 
-    表(二)'
+    表(二)（原卷有誤，已修正）'
   options:
   - label: A
     content: 若X 為陰離子，則可知○位於原子核外
   - label: B
     content: 若Y 為陽離子，則可知○位於原子核內
   - label: C
-    content: 若★位於原子核內，則可知甲是陰離子
+    content: 若★位於原子核內，則可知X是陰離子
   - label: D
     content: 若●位於原子核內，則可知Y 是陽離子。
   tags:
@@ -553,6 +553,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則可知甲是陰離子
+    to: 則可知X是陰離子
+    note: 原卷印錯，題幹為X與Y，甲應為X
+    by: ai_review
 - id: doc_113_高雄_七賢_自然_g8s2e2_s3_18
   section: 3
   number: 18

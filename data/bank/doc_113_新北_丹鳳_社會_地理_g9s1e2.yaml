@@ -414,14 +414,14 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 圖(二)中的「乙」地，常發展為都市，是人口集中的精華區，但「庚」地卻是人口稀疏，請問：形成兩地人口分布的差異，主要原因為何？
+  stem: 圖(二)中的「乙」地，常發展為都市，是人口集中的精華區，但「庚」地卻是人口稀疏，請問：形成兩地人口分布的差異，主要原因為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 地勢高低
   - label: B
     content: 礦產資源
   - label: C
-    content: 據海遠近
+    content: 距海遠近
   - label: D
     content: 降水多寡
   tags:
@@ -441,6 +441,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C)據海遠近
+    to: (C)距海遠近
+    note: 「據」應為「距」
+    by: ai_review
 - id: doc_113_新北_丹鳳_社會_地理_g9s1e2_s1_11
   section: 1
   number: 11

@@ -350,7 +350,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 民國111年8月，台灣民族黨副主席楊智淵在中國，被以中共政府以「分裂國家罪」逮捕。請問：楊智淵的家人可以向台灣的哪個官方機構求助？
+  stem: 民國111年8月，台灣民族黨副主席楊智淵在中國，被中共政府以「分裂國家罪」逮捕。請問：楊智淵的家人可以向台灣的哪個官方機構求助？（原卷有誤，已修正）
   options:
   - label: A
     content: 國台辦
@@ -377,6 +377,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini-only
+  errata:
+  - from: 被以中共政府以「分裂國家罪」逮捕
+    to: 被中共政府以「分裂國家罪」逮捕
+    note: 多印「以」字，為贅字
+    by: ai_review
 - id: doc_111_桃園_石門_社會_歷史_g7s2e3_s1_12
   section: 1
   number: 12

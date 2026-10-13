@@ -316,7 +316,7 @@ questions:
   number: 25
   type: single
   page: 1
-  stem: 康康老師對學生說：「一個科學假設是否正確，要看它是否在演繹推論上沒有問題。」請問：康康老師正向學生介紹何人的研究方法？
+  stem: 康康老師對學生說：「一個科學假設是否正確，要看它是否在演繹推論上沒有問題。」請問：康康老師正向學生介紹何人的研究方法？（原卷有誤，已修正）
   options:
   - label: A
     content: 培根
@@ -325,7 +325,7 @@ questions:
   - label: C
     content: 牛頓
   - label: D
-    content: 哥白尼。。
+    content: 哥白尼。
   tags:
     chapter:
       publisher: 翰林
@@ -343,6 +343,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 哥白尼。。
+    to: (D) 哥白尼。
+    note: 末尾多了一個句號
+    by: ai_review
 - id: doc_113_台中_五權_社會_歷史_g9s1e3_s1_26
   section: 1
   number: 26

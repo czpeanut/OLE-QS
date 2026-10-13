@@ -748,7 +748,7 @@ questions:
   page: 2
   stem: '右表為某個歐姆式導體兩端施加不同電壓時，流經導體的電流大小，依歐姆定律可知表中甲、乙的數值為何？【4-4】
 
-    | 導體電阻（V） | 流經導體的電流大小（A） |
+    | 導體電壓（V） | 流經導體的電流大小（A） |
 
     | --- | --- |
 
@@ -756,7 +756,7 @@ questions:
 
     | 甲 | 3 |
 
-    | 24 | 乙 |'
+    | 24 | 乙 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲＝16；乙＝5
@@ -784,6 +784,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 導體電阻（V）
+    to: 導體電壓（V）
+    note: 單位為伏特V，應為電壓而非電阻
+    by: ai_review
 - id: doc_113_新北_江翠_自然_g9s1e3_s1_16
   section: 1
   number: 16
@@ -1453,14 +1458,14 @@ questions:
   number: 30
   type: single
   page: 4
-  stem: 有關天文現象下列敘述何者錯誤？
+  stem: 有關天文現象下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 星體的東升西落主要是因為地球自轉
   - label: B
     content: 地球上會有四季變化的主要原因是因為太陽本身的溫度會有變化
   - label: C
-    content: 月像的盈虧是因為月球公轉
+    content: 月相的盈虧是因為月球公轉
   - label: D
     content: 一年之中各地會有晝夜長短變化是因為地球公轉且自轉軸傾斜。
   tags:
@@ -1480,6 +1485,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C)月像的盈虧是因為月球公轉
+    to: (C)月相的盈虧是因為月球公轉
+    note: 「月像」為錯字，應為「月相」
+    by: ai_review
 - id: doc_113_新北_江翠_自然_g9s1e3_s2_31
   section: 2
   number: 31

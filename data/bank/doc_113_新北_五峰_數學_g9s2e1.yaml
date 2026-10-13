@@ -1182,8 +1182,8 @@ questions:
   number: 29
   type: single
   page: 4
-  stem: 在座標標平面上，二次函數$y=\frac{1}{2}x^{2}$的圖形過A、B 兩點，其中A、B 兩點的x 坐標分別為2、6。若自A 作y 軸的平行線，自B
-    作x 軸的平行線，且兩線交於C 點，則C 點坐標為何？
+  stem: 在坐標平面上，二次函數$y=\frac{1}{2}x^{2}$的圖形過A、B 兩點，其中A、B 兩點的x 坐標分別為2、6。若自A 作y 軸的平行線，自B
+    作x 軸的平行線，且兩線交於C 點，則C 點坐標為何？（原卷有誤，已修正）
   options:
   - label: A
     content: (2 , 18)
@@ -1210,6 +1210,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在座標標平面上，二次函數
+    to: 在坐標平面上，二次函數
+    note: 多印一個「標」字
+    by: ai_review
 - id: doc_113_新北_五峰_數學_g9s2e1_s1_30
   section: 1
   number: 30

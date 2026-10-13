@@ -248,14 +248,14 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 地理圖（三）顯示近年來，中國廠商占蘋果公司的手機200 大零件供應商的數量變化。請問：中國手機零件供應商數量的變化，可反映該國的哪一發展特色？
+  stem: 地理圖（三）顯示近年來，中國廠商占蘋果公司的手機200 大零件供應商的數量變化。請問：中國手機零件供應商數量的變化，可反映該國的哪一發展特色？（原卷有誤，已修正）
   options:
   - label: A
     content: 工資提高使生產成本上升
   - label: B
     content: 國內供應鏈愈趨完整
   - label: C
-    content: 從世界工廠變成市界市場
+    content: 從世界工廠變成世界市場
   - label: D
     content: 零件轉包至其他國家生產。
   assets:
@@ -291,6 +291,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 從世界工廠變成市界市場
+    to: 從世界工廠變成世界市場
+    note: 錯字，「市界」應為「世界」
+    by: ai_review
 - id: doc_111_高雄_林園_社會_地理_g8s1e2_s1_9
   section: 1
   number: 9

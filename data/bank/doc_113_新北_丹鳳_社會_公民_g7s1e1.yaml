@@ -123,14 +123,14 @@ questions:
   number: 36
   type: single
   page: 1
-  stem: 於第二次世界大戰後，各國認知：同為人，應受到平等的對待，具有人權的保障。所以聯合國於1948 年發布一部受到國際社會重視的人權法典，奠定了平等保障人權的基礎。請問該法典是指何者？
+  stem: 於第二次世界大戰後，各國認知：同為人，應受到平等的對待，具有人權的保障。所以聯合國於1948 年發布一部受到國際社會重視的人權法典，奠定了平等保障人權的基礎。請問該法典是指何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 美國憲法
   - label: B
     content: 公民與政治權利國際公約
   - label: C
-    content: )世界人權宣言
+    content: 世界人權宣言
   - label: D
     content: 經濟社會文化權利國際公約。
   tags:
@@ -150,6 +150,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C))世界人權宣言
+    to: (C)世界人權宣言
+    note: 選項標號多印了一個右括號
+    by: ai_review
 - id: doc_113_新北_丹鳳_社會_公民_g7s1e1_s1_37
   section: 1
   number: 37

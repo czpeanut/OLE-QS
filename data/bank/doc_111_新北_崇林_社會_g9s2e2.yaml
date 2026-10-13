@@ -1557,7 +1557,7 @@ questions:
   number: 39
   type: single
   page: 5
-  stem: 承上題，請問該國如何解決這個的問題？
+  stem: 承上題，請問該國如何解決這個問題？（原卷有誤，已修正）
   options:
   - label: A
     content: 佔領他國資源來解決國內物資短缺的狀況
@@ -1600,6 +1600,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問該國如何解決這個的問題？
+    to: 請問該國如何解決這個問題？
+    note: 多印「的」字
+    by: ai_review
 - id: doc_111_新北_崇林_社會_g9s2e2_s3_40
   section: 3
   number: 40

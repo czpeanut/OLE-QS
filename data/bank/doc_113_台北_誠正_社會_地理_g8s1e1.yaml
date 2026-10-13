@@ -1196,12 +1196,12 @@ questions:
   number: 30
   type: single
   page: 2
-  stem: 關於中國各省級行政區的敘述，何者正確？
+  stem: 關於中國各省級行政區的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 一般區域設省，中國共計 12 個省
   - label: B
-    content: 直屬地方政府管轄的行政區設直轄市，中國共計 4 個直轄市
+    content: 直屬中央政府管轄的行政區設直轄市，中國共計 4 個直轄市
   - label: C
     content: 少數民族聚居處設自治區施行自治，中國共計 3 個自治區
   - label: D
@@ -1223,6 +1223,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 直屬地方政府管轄的行政區設直轄市，中國共計 4 個直轄市
+    to: 直屬中央政府管轄的行政區設直轄市，中國共計 4 個直轄市
+    note: 直轄市應直屬中央政府管轄而非地方政府
+    by: ai_review
 - id: doc_113_台北_誠正_社會_地理_g8s1e1_s2_31
   section: 2
   number: 31

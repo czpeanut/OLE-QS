@@ -735,7 +735,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 承上題，飛機飛越此分界當下，氣候條件會產生哪種改變？
+  stem: 承上題，飛機飛越此分界當下，氣候條件會產生哪種改變？（原卷有誤，已修正）
   options:
   - label: A
     content: 年溫差小於10°C
@@ -744,7 +744,7 @@ questions:
   - label: C
     content: 年雨量大於900mm
   - label: D
-    content: 年雨量小於250m。
+    content: 年雨量小於250mm。
   group_stem: 魯夫坐在由海南飛往黑龍江上的飛機上，途中機長廣播如下：「各位旅客大家好，現在飛機正經過中國南、北區域的交界，由於本次飛行所跨緯度較大，還請大家注意下機時的溫度，與出發地差異非常大，祝您有個愉快的旅途。」
     請根據上文敘述，請回答第15~17 題：
   tags:
@@ -764,6 +764,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 年雨量小於250m
+    to: 年雨量小於250mm
+    note: 降雨量單位漏打m，應為mm
+    by: ai_review
 - id: doc_113_高雄_鼎金_社會_地理_g8s1e1_s1_18
   section: 1
   number: 18

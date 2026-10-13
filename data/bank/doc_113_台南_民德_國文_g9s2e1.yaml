@@ -1157,12 +1157,12 @@ questions:
   number: 21
   type: single
   page: 3
-  stem: 根據下列對話情境，何者所使用的題辭最恰當？
+  stem: 根據下列對話情境，何者所使用的題辭最恰當？（原卷有誤，已修正）
   options:
   - label: A
     content: 「阿倫下周要迎娶美嬌娘了，紅包封套上的賀詞你想好了嗎？」「『妙選東床』應該可以吧！」
   - label: B
-    content: 「令尊九十大壽，我準備的喜幛是否已送達？」「已經收到了，感謝您！『萱茂北堂』就是最好的祝福。』」
+    content: 「令尊九十大壽，我準備的喜幛是否已送達？」「已經收到了，感謝您！『萱茂北堂』就是最好的祝福。」
   - label: C
     content: 「張太太生了男孩，我打算送份禮金恭喜她，不知道賀詞該寫什麼？」「我認為『明珠入掌』應該很適當。」
   - label: D
@@ -1185,6 +1185,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 『萱茂北堂』就是最好的祝福。』」
+    to: 『萱茂北堂』就是最好的祝福。」
+    note: 多印一個右單引號
+    by: ai_review
 - id: doc_113_台南_民德_國文_g9s2e1_s2_22
   section: 2
   number: 22

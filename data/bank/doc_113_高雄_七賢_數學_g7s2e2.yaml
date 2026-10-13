@@ -232,7 +232,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 如下圖，坐標平面上直線L 的方程式為7x－3y＋15＝0。若有一直線M 的方程式為x＝a，則a 的值在下列哪一個範圍時，M 與L 的交點會在第二象限？
+  stem: 如下圖，坐標平面上直線L 的方程式為7x－3y＋15＝0。若有一直線M 的方程式為x＝a，則a 的值在下列哪一個範圍時，M 與L 的交點會在第二象限？（原卷有誤，已修正）
   options:
   - label: A
     content: 2＜a＜3
@@ -241,7 +241,7 @@ questions:
   - label: C
     content: －2＜a＜－1
   - label: D
-    content: －3＜a＜－4
+    content: －4＜a＜－3
   assets:
   - key: s1_7_f1
     kind: figure
@@ -276,6 +276,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) －3＜a＜－4
+    to: (D) －4＜a＜－3
+    note: 區間大小順序寫反
+    by: ai_review
 - id: doc_113_高雄_七賢_數學_g7s2e2_s1_8
   section: 1
   number: 8

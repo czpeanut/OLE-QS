@@ -1352,14 +1352,14 @@ questions:
   number: 26
   type: single
   page: 3
-  stem: 客訴結束後還持續追蹤，所求不包含下列何者？
+  stem: 客訴結束後還持續追蹤，所求不包含下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 讓客訴永遠不會再發生
   - label: B
     content: 希望客戶能繼續光臨消費
   - label: C
-    content: 擬定更完善的客速處理方案
+    content: 擬定更完善的客訴處理方案
   - label: D
     content: 作為日後經驗及參考依據
   group_stem: '處理客訴五步驟
@@ -1392,6 +1392,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 擬定更完善的客速處理方案
+    to: 擬定更完善的客訴處理方案
+    note: 「客速」為「客訴」之誤
+    by: ai_review
 - id: doc_113_新北_五峰_國文_g7s1e1_s5_27
   section: 5
   number: 27

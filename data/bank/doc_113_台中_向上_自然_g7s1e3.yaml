@@ -321,7 +321,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 小羽在上家政課時認真練習回針縫，一不小心被針刺到了，立刻把手縮回並去擦藥，請問上述動作的控制中樞在哪裏?
+  stem: 小羽在上家政課時認真練習回針縫，一不小心被針刺到了，立刻把手縮回並去擦藥，請問上述動作的控制中樞在哪裏?（原卷有誤，已修正）
   options:
   - label: A
     content: 縮手(大腦)；擦藥(腦幹)
@@ -330,7 +330,7 @@ questions:
   - label: C
     content: 縮手(大腦)；擦藥(脊髓)
   - label: D
-    content: 縮手(脊隨)；擦藥(大腦)
+    content: 縮手(脊髓)；擦藥(大腦)
   tags:
     chapter:
       publisher: 翰林
@@ -348,6 +348,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 縮手(脊隨)；擦藥(大腦)
+    to: 縮手(脊髓)；擦藥(大腦)
+    note: 「脊隨」錯字，應為「脊髓」
+    by: ai_review
 - id: doc_113_台中_向上_自然_g7s1e3_s1_11
   section: 1
   number: 11

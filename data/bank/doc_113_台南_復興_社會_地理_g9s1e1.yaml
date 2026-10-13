@@ -119,6 +119,7 @@ questions:
         - 234.0
         - 162.65
         - 303.05
+      redrawn: 去除浮水印
   - label: B
     content: ''
     asset:
@@ -131,6 +132,7 @@ questions:
         - 234.0
         - 276.87
         - 303.05
+      redrawn: 去除浮水印
   - label: C
     content: ''
     asset:
@@ -143,6 +145,7 @@ questions:
         - 233.35
         - 400.58
         - 304.69
+      redrawn: 去除浮水印
   - label: D
     content: ''
     asset:
@@ -155,6 +158,7 @@ questions:
         - 233.35
         - 522.0
         - 304.69
+      redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -269,6 +273,7 @@ questions:
       - 367.85
       - 575.02
       - 457.2
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -348,6 +353,7 @@ questions:
       - 455.56
       - 582.87
       - 566.51
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -435,6 +441,7 @@ questions:
       - 585.82
       - 707.89
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -745,7 +752,7 @@ questions:
   number: 59
   type: single
   page: 2
-  stem: 俄羅斯境內礦產資源豐富,大量出口礦產及原物料轉取外匯成為其主要經濟來源。影響俄羅斯礦產資源豐富的主要原因為下列哪一個選項?
+  stem: 俄羅斯境內礦產資源豐富,大量出口礦產及原物料賺取外匯成為其主要經濟來源。影響俄羅斯礦產資源豐富的主要原因為下列哪一個選項?（原卷有誤，已修正）
   options:
   - label: A
     content: 位於板塊接觸帶
@@ -774,6 +781,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 大量出口礦產及原物料轉取外匯成為其主要經濟來源
+    to: 大量出口礦產及原物料賺取外匯成為其主要經濟來源
+    note: 「轉取」應為「賺取」
+    by: ai_review
 - id: doc_113_台南_復興_社會_地理_g9s1e1_s1_60
   section: 1
   number: 60

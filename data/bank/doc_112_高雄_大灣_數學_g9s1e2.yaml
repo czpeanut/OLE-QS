@@ -131,10 +131,10 @@ questions:
   type: single
   page: 1
   stem: $\triangle ABC$ 中，$\angle A=90^\circ$，$\overline{AC}=3$，$\overline{BC}=5$，今若以
-    C 為圓心，$\overline{AB}$ 長為半徑畫圓，則下列哪一個敘述是正確的？
+    C 為圓心，$\overline{AB}$ 長為半徑畫圓，則下列哪一個敘述是正確的？（原卷有誤，已修正）
   options:
   - label: A
-    content: A、B 都在圓內
+    content: A、B 都在圓外
   - label: B
     content: A、B 都在圓內
   - label: C
@@ -158,6 +158,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) A、B 都在圓內
+    to: (B) A、B 都在圓外
+    note: 選項與(A)重複，應為都在圓外
+    by: ai_review
 - id: doc_112_高雄_大灣_數學_g9s1e2_s1_4
   section: 1
   number: 4

@@ -1535,7 +1535,7 @@ questions:
   number: 27
   type: single
   page: 4
-  stem: 根據本文，請判斷下列選項屬於本文所說的「不能」？
+  stem: 根據本文，請判斷下列選項何者屬於本文所說的「不能」？（原卷有誤，已修正）
   options:
   - label: A
     content: 小明：我很想參加馬拉松比賽，但因為腿部受傷，導致我實在無法參賽
@@ -1563,6 +1563,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請判斷下列選項屬於本文所說的「不能」？
+    to: 請判斷下列選項何者屬於本文所說的「不能」？
+    note: 題幹漏「何者」
+    by: ai_review
 - id: doc_113_新北_永和_國文_g8s1e3_s7_28
   section: 7
   number: 28

@@ -60,7 +60,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 同一物體的質量在地球表面上為 A，在太空巾為 B，在月球表面為 C，則下列何者正確？
+  stem: 同一物體的質量在地球表面上為 A，在太空中為 B，在月球表面為 C，則下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: A > B > C
@@ -89,6 +89,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在太空巾為 B
+    to: 在太空中為 B
+    note: 「巾」為錯字，應為「中」
+    by: ai_review
 - id: doc_111_桃園_石門_自然_g8s1e1_s1_3
   section: 1
   number: 3
@@ -743,7 +748,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 將石灰石投入盛有稀鹽酸的燒杯中，發現大量氣泡冒出，且小蘇打漸漸變少。有關此現象的敘述，下列何者正確？
+  stem: 將石灰石投入盛有稀鹽酸的燒杯中，發現大量氣泡冒出，且石灰石漸漸變少。有關此現象的敘述，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 收集所冒出的氣體以點燃的線香試驗，會燒得更旺盛
@@ -772,6 +777,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 且小蘇打漸漸變少
+    to: 且石灰石漸漸變少
+    note: 題幹投入石灰石，誤寫成小蘇打
+    by: ai_review
 - id: doc_111_桃園_石門_自然_g8s1e1_s1_21
   section: 1
   number: 21
@@ -1312,7 +1322,7 @@ questions:
   - label: B
     content: 暴露於空氣中的蘋果會因氮氣的作用而變色
   - label: C
-    content: 乾燥空氣中含量第三的為氣氣
+    content: 乾燥空氣中含量第三的為氬氣氣
   - label: D
     content: 氮氣性質不活潑，不易與其他物質反應。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識

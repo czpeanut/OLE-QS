@@ -1336,10 +1336,10 @@ questions:
   number: 37
   type: single
   page: 4
-  stem: 政府規劃福利服務滿足民眾因為差異性而產生的需求，以促進其身心健全發展，讓生活更有尊嚴。請問：下列何者屬於上述的範圍？
+  stem: 政府規劃福利服務滿足民眾因為差異性而產生的需求，以促進其身心健全發展，讓生活更有尊嚴。請問：下列何者屬於上述的範圍？（原卷有誤，已修正）
   options:
   - label: A
-    content: 行動不變的史哲，每天搭乘復康巴士出門工作
+    content: 行動不便的史哲，每天搭乘復康巴士出門工作
   - label: B
     content: 家裡突遭祝融之災的葛芬，到社會局申請災害救助
   - label: C
@@ -1363,6 +1363,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 行動不變的史哲，每天搭乘復康巴士出門工作
+    to: 行動不便的史哲，每天搭乘復康巴士出門工作
+    note: 「不變」應為「不便」
+    by: ai_review
 - id: doc_113_新北_江翠_社會_g7s2e3_s3_38
   section: 3
   number: 38

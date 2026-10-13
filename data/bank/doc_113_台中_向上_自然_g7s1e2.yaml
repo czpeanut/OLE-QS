@@ -1752,7 +1752,7 @@ questions:
   number: 42
   type: single
   page: 3
-  stem: '小豪進行探測心音與脈膊的實驗，測驗結果如附表所示，若實驗過程未出現誤差，請問X、Y、Z 分別較可能為多少？
+  stem: '小豪進行探測心音與脈搏的實驗，測驗結果如附表所示，若實驗過程未出現誤差，請問X、Y、Z 分別較可能為多少？
 
     | 運動前（次／分） | 運動前（次／分） | 運動後（次／分） | 運動後（次／分） |
 
@@ -1760,14 +1760,14 @@ questions:
 
     | 心搏 | 脈搏 | 心搏 | 脈搏 |
 
-    | 80 | X | Y | Z |'
+    | 80 | X | Y | Z |（原卷有誤，已修正）'
   options:
   - label: A
     content: X:80、Y:120、Z:120
   - label: B
     content: X:80、Y:60、Z:60
   - label: C
-    content: X:120、Y:120、80
+    content: X:120、Y:120、Z:80
   - label: D
     content: X:120、Y:80、Z:120
   tags:
@@ -1787,6 +1787,15 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小豪進行探測心音與脈膊的實驗
+    to: 小豪進行探測心音與脈搏的實驗
+    note: 「脈膊」應為「脈搏」
+    by: ai_review
+  - from: (C) X:120、Y:120、80
+    to: (C) X:120、Y:120、Z:80
+    note: 漏印「Z:」
+    by: ai_review
 - id: doc_113_台中_向上_自然_g7s1e2_s1_43
   section: 1
   number: 43

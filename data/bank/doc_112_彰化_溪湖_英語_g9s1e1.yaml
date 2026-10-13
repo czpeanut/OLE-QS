@@ -715,7 +715,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 14. The house is big enough for a faimly of three ______ comfortably.
+  stem: 14. The house is big enough for a family of three ______ comfortably.（原卷有誤，已修正）
   options:
   - label: A
     content: lives in
@@ -742,6 +742,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: The house is big enough for a faimly of three
+    to: The house is big enough for a family of three
+    note: faimly 拼字錯誤，應為 family
+    by: ai_review
 - id: doc_112_彰化_溪湖_英語_g9s1e1_s3_15
   section: 3
   number: 15

@@ -547,9 +547,9 @@ questions:
   page: 1
   stem: '右圖中的甲乙丙三盆水，分別放置不同水溫的水，
 
-    阿明將左手至於甲盆，右手至於丙盆，約15 秒後一同放置乙盆，
+    阿明將左手置於甲盆，右手置於丙盆，約15 秒後一同放置乙盆，
 
-    感覺左手熱、右手冷，則三盆水由高溫到低溫為？'
+    感覺左手熱、右手冷，則三盆水由高溫到低溫為？（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲乙丙
@@ -594,6 +594,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 阿明將左手至於甲盆，右手至於丙盆
+    to: 阿明將左手置於甲盆，右手置於丙盆
+    note: 「至於」應為「置於」
+    by: ai_review
 - id: doc_111_桃園_中興_自然_g7s1e3_s1_18
   section: 1
   number: 18
@@ -1677,12 +1682,12 @@ questions:
   number: 48
   type: single
   page: 4
-  stem: 關於接尺動作的神經傳導路徑，下列敘述何者錯誤？
+  stem: 關於接尺動作的神經傳導路徑，下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 受器在眼睛內
   - label: B
-    content: 傳導路徑需需經過脊髓
+    content: 傳導路徑需經過脊髓
   - label: C
     content: 此處的反應時間，指的是從受器傳到大腦所需的時間
   - label: D
@@ -1717,6 +1722,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 傳導路徑需需經過脊髓
+    to: 傳導路徑需經過脊髓
+    note: 多印一個「需」字
+    by: ai_review
 - id: doc_111_桃園_中興_自然_g7s1e3_s1_49
   section: 1
   number: 49

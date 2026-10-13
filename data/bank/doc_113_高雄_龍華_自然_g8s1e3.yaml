@@ -1232,14 +1232,14 @@ questions:
   number: 30
   type: single
   page: 4
-  stem: 藥用酒精主要成分為濃度75%的乙醇，乙醇化學式為 $C_{2}H_{5}OH$，請判斷下列敘述何者錯誤?
+  stem: 藥用酒精主要成分為濃度75%的乙醇，乙醇化學式為 $C_{2}H_{5}OH$，請判斷下列敘述何者錯誤?（原卷有誤，已修正）
   options:
   - label: A
     content: 一個乙醇分子含有 9 個原子
   - label: B
     content: 一個乙醇分子含有 3 種原子
   - label: C
-    content: 一個乙醇分中含有 5 個氫原子
+    content: 一個乙醇分子中含有 5 個氫原子
   - label: D
     content: 一個乙醇分子和一個水分子含有的氧原子數目相同。
   tags:
@@ -1259,6 +1259,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一個乙醇分中含有 5 個氫原子
+    to: 一個乙醇分子中含有 5 個氫原子
+    note: 漏字，「分」後漏「子」字
+    by: ai_review
 - id: doc_113_高雄_龍華_自然_g8s1e3_s1_31
   section: 1
   number: 31
@@ -1494,7 +1499,7 @@ questions:
   number: 37
   type: single
   page: 5
-  stem: '表(三)為三種物質在一大氣壓下的熔點及沸點，在一大氣壓下，何者溫度最高？
+  stem: '表(三)為四種物質在一大氣壓下的熔點及沸點，在一大氣壓下，何者溫度最高？
 
 
     表(三)
@@ -1509,7 +1514,7 @@ questions:
 
     | 水 | | 0 | 100 |
 
-    | 灰 | | 512 | 2850 |'
+    | 灰 | | 512 | 2850 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 液態的電土
@@ -1538,6 +1543,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 表(三)為三種物質在一大氣壓下的熔點及沸點
+    to: 表(三)為四種物質在一大氣壓下的熔點及沸點
+    note: 表格實有四種物質，數字印錯
+    by: ai_review
 - id: doc_113_高雄_龍華_自然_g8s1e3_s1_38
   section: 1
   number: 38

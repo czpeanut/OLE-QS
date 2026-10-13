@@ -1662,7 +1662,7 @@ questions:
   number: 32
   type: single
   page: 7
-  stem: 凝聚力有限公司舉辦了新進員工研習，席間大家一一自我介紹，根據上文以及圖片的人格特質描述，請問從各人的介紹判斷，對於他們人格類型的推測何者正確？
+  stem: 凝聚力有限公司舉辦了新進員工研習，席間大家一一自我介紹，根據上文以及圖片的人格特質描述，請問從各人的介紹判斷，對於他們人格類型的推測何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 以「生活方式」一類而言，小傑屬於「I」類性，小班屬於「E」類型
@@ -1719,7 +1719,7 @@ questions:
         - 690.22
       crop_by: auto
   - label: D
-    content: 以「生活方式」一類而言，小凱屬於「J」類性，小漢屬於「P」類型
+    content: 以「生活方式」一類而言，小凱屬於「J」類型，小漢屬於「P」類型
     asset:
       key: optD
       file: doc_113_高雄_左營_國文_g8s1e1/5_32_optD.png
@@ -1765,6 +1765,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小凱屬於「J」類性，小漢屬於「P」類型
+    to: 小凱屬於「J」類型，小漢屬於「P」類型
+    note: 「類性」為「類型」之印錯
+    by: ai_review
 - id: doc_113_高雄_左營_國文_g8s1e1_s5_33
   section: 5
   number: 33

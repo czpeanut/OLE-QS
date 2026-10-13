@@ -26,7 +26,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: '請判別下列敘述(甲)~(戊)有幾項為一元二次方程式？
+  stem: '請判別下列敘述(甲)~(己)有幾項為一元二次方程式？
 
     (甲) $0 = x^{2} - 5x + 6$
 
@@ -38,7 +38,7 @@ questions:
 
     (戊) $x^{2} - 5x + 6$
 
-    (已) $-x = x^{2} - \frac{5}{2}$'
+    (已) $-x = x^{2} - \frac{5}{2}$（原卷有誤，已修正）'
   options:
   - label: A
     content: '2'
@@ -65,6 +65,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請判別下列敘述(甲)~(戊)有幾項為一元二次方程式？
+    to: 請判別下列敘述(甲)~(己)有幾項為一元二次方程式？
+    note: 敘述漏算到(己)，應改為(己)
+    by: ai_review
 - id: doc_112_桃園_石門_數學_g8s1e3_s1_2
   section: 1
   number: 2

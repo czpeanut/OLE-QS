@@ -198,7 +198,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 承上題，上述步驟中，將葉片至於酒精中隔水加熱的目的為何？
+  stem: 承上題，上述步驟中，將葉片置於酒精中隔水加熱的目的為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 破壞葉片外層的角質層
@@ -230,12 +230,17 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 將葉片至於酒精中隔水加熱的目的為何？
+    to: 將葉片置於酒精中隔水加熱的目的為何？
+    note: 「至於」應為「置於」
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g7s1e2_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 已知植物進行光合作用的反應式為：「甲＋乙→丙＋丁＋戊」，其中乙和戊的為相同物質，甲和丙均為氣體，關於反應式中物質的描述，下列何項正確？
+  stem: 已知植物進行光合作用的反應式為：「甲＋乙→丙＋丁＋戊」，其中乙和戊為相同物質，甲和丙均為氣體，關於反應式中物質的描述，下列何項正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 丙會從植物的氣孔離開
@@ -262,6 +267,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 其中乙和戊的為相同物質
+    to: 其中乙和戊為相同物質
+    note: 多贅字「的」
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g7s1e2_s1_7
   section: 1
   number: 7
@@ -713,7 +723,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 右圖為人體心臟構造的示意圖，甲~乙代表腔室，a~e 代表血管，請問圖中哪二者之間沒有瓣膜？
+  stem: 右圖為人體心臟構造的示意圖，甲~丁代表腔室，a~e 代表血管，請問圖中哪二者之間沒有瓣膜？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲和乙
@@ -758,6 +768,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 甲~乙代表腔室，a~e 代表血管
+    to: 甲~丁代表腔室，a~e 代表血管
+    note: 腔室有四個，乙應為丁
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g7s1e2_s1_20
   section: 1
   number: 20
@@ -1157,12 +1172,12 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: 右圖為植物的部分年輪，有關圖中甲和乙區的敘述，下列何者錯誤？
+  stem: 右圖為植物的部分年輪，有關圖中甲和乙區的敘述，下列何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲是木質部細胞，乙是韌皮部細胞
   - label: B
-    content: 甲和乙都是木質部細胞，但乙的細胞比戊大
+    content: 甲和乙都是木質部細胞，但乙的細胞比甲大
   - label: C
     content: 乙成長的時期比甲來的溫暖潮溼
   - label: D
@@ -1201,6 +1216,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 但乙的細胞比戊大
+    to: 但乙的細胞比甲大
+    note: 圖中僅標甲乙，戊應為甲
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g7s1e2_s1_31
   section: 1
   number: 31
@@ -1656,7 +1676,7 @@ questions:
   number: 45
   type: single
   page: 4
-  stem: "放置30 後，將芹菜的莖橫切，其維管束橫切面以及染色部位示意圖應為下列何者？\n   (圖中灰色部分代表有色溶液)"
+  stem: "放置30分鐘 後，將芹菜的莖橫切，其維管束橫切面以及染色部位示意圖應為下列何者？\n   (圖中灰色部分代表有色溶液)（原卷有誤，已修正）"
   options:
   - label: A
     content: ''
@@ -1750,6 +1770,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 放置30 後，將芹菜的莖橫切
+    to: 放置30分鐘後，將芹菜的莖橫切
+    note: 漏「分鐘」二字
+    by: ai_review
 - id: doc_113_台中_居仁_自然_g7s1e2_s3_46
   section: 3
   number: 46

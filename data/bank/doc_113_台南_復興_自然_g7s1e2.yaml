@@ -229,6 +229,7 @@ questions:
         - 451.31
         - 162.65
         - 531.16
+      redrawn: 去除浮水印
   - label: B
     content: ''
     asset:
@@ -241,6 +242,7 @@ questions:
         - 451.31
         - 275.56
         - 530.51
+      redrawn: 去除浮水印
   - label: C
     content: ''
     asset:
@@ -253,6 +255,7 @@ questions:
         - 450.33
         - 386.51
         - 530.51
+      redrawn: 去除浮水印
   - label: D
     content: ''
     asset:
@@ -265,6 +268,7 @@ questions:
         - 450.33
         - 495.82
         - 530.51
+      redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -515,6 +519,7 @@ questions:
       - 196.36
       - 556.04
       - 244.15
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -874,6 +879,7 @@ questions:
       - 548.84
       - 122.07
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -919,6 +925,7 @@ questions:
       - 162.65
       - 548.84
       - 236.62
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1084,6 +1091,7 @@ questions:
       - 556.04
       - 560.62
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1143,7 +1151,7 @@ questions:
   number: 30
   type: single
   page: 4
-  stem: 哪一支試管加入碘液後，會首先出現不變色的情形？
+  stem: 哪一支試管加入碘液後，會首先出現不變色的情形？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲，因溫度太低，所以完整保存澱粉
@@ -1153,7 +1161,7 @@ questions:
     content: 乙，因為澱粉都被分解了，檢測不到
   - label: D
     content: 丙，因為高溫直接分解了澱粉。
-  group_stem: 娜美取甲、乙、丙三試管，均加入 3mL 澱粉液及 3mL 新鮮唾液，再輕微搖晃數各試管次後，分別置於 0℃、37℃、90℃的水浴裝置中。每隔
+  group_stem: 娜美取甲、乙、丙三試管，均加入 3mL 澱粉液及 3mL 新鮮唾液，再輕微搖晃各試管數次後，分別置於 0℃、37℃、90℃的水浴裝置中。每隔
     3 分鐘，分別從甲、乙、丙三試管各取出等量的液體，冷卻後滴入碘液作檢驗。上述實驗示意，如右圖，請回答 30.～32. 題：
   shared_asset: g1_30_32
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1175,6 +1183,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 再輕微搖晃數各試管次後
+    to: 再輕微搖晃各試管數次後
+    note: 字詞順序錯位
+    by: ai_review
 - id: doc_113_台南_復興_自然_g7s1e2_s1_31
   section: 1
   number: 31
@@ -1190,7 +1203,7 @@ questions:
     content: 因為溫度太高，所以酵素暫時失去活性
   - label: D
     content: 因為溫度太高，造成酵素永久失去活性。
-  group_stem: 娜美取甲、乙、丙三試管，均加入 3mL 澱粉液及 3mL 新鮮唾液，再輕微搖晃數各試管次後，分別置於 0℃、37℃、90℃的水浴裝置中。每隔
+  group_stem: 娜美取甲、乙、丙三試管，均加入 3mL 澱粉液及 3mL 新鮮唾液，再輕微搖晃各試管數次後，分別置於 0℃、37℃、90℃的水浴裝置中。每隔
     3 分鐘，分別從甲、乙、丙三試管各取出等量的液體，冷卻後滴入碘液作檢驗。上述實驗示意，如右圖，請回答 30.～32. 題：
   shared_asset: g1_30_32
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1227,7 +1240,7 @@ questions:
     content: 溫度愈低，愈能保持唾液中酵素的活性
   - label: D
     content: 受質的多寡會影響唾液中酵素的活性。
-  group_stem: 娜美取甲、乙、丙三試管，均加入 3mL 澱粉液及 3mL 新鮮唾液，再輕微搖晃數各試管次後，分別置於 0℃、37℃、90℃的水浴裝置中。每隔
+  group_stem: 娜美取甲、乙、丙三試管，均加入 3mL 澱粉液及 3mL 新鮮唾液，再輕微搖晃各試管數次後，分別置於 0℃、37℃、90℃的水浴裝置中。每隔
     3 分鐘，分別從甲、乙、丙三試管各取出等量的液體，冷卻後滴入碘液作檢驗。上述實驗示意，如右圖，請回答 30.～32. 題：
   shared_asset: g1_30_32
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1733,6 +1746,7 @@ shared_assets:
     - 544.25
     - 119.45
   crop_by: auto
+  redrawn: 去除浮水印
 - key: g2_2_5
   label: 題組附圖
   kind: figure

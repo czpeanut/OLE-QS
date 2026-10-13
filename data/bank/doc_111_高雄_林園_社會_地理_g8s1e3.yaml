@@ -569,7 +569,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 汽車為日本經濟骨幹，生產量僅次於中國和美國，約占全國汽車生產量的10%。根據你的判斷，下列何者最不可能是在橫濱碼頭準備出口的汽車品牌
+  stem: 汽車為日本經濟骨幹，生產量僅次於中國和美國，約占全球汽車生產量的10%。根據你的判斷，下列何者最不可能是在橫濱碼頭準備出口的汽車品牌（原卷有誤，已修正）
   options:
   - label: A
     content: ''
@@ -674,19 +674,24 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 約占全國汽車生產量的10%
+    to: 約占全球汽車生產量的10%
+    note: 「全國」應為「全球」
+    by: ai_review
 - id: doc_111_高雄_林園_社會_地理_g8s1e3_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 日本為了提升競爭力，各大企業紛紛赴海外投資，出現了眾多的跨國企業，也建立了國際分工的體系。請問：上述的國際分工體系中，下列哪一個部分最可能外移到海外其他國家？
+  stem: 日本為了提升競爭力，各大企業紛紛赴海外投資，出現了眾多的跨國企業，也建立了國際分工的體系。請問：上述的國際分工體系中，下列哪一個部分最可能外移到海外其他國家？（原卷有誤，已修正）
   options:
   - label: A
     content: 本田日本研發部門
   - label: B
     content: 資生堂企業總部
   - label: C
-    content: 山崎馬扎克機械製製造工廠
+    content: 山崎馬扎克機械製造工廠
   - label: D
     content: 日本獅王企劃部門
   group_stem: '※ 日本工業技術發達，汽車、半導體、電子機械都是世界生產鏈的重要一環，並以注重品質、嚴謹的「工匠精神」享譽國際。地理圖五是日本工業區分布圖，地理表一是日本主要工業原料和產品進出口狀況，請依此圖回答問題：
@@ -720,6 +725,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 山崎馬扎克機械製製造工廠
+    to: 山崎馬扎克機械製造工廠
+    note: 多印一個「製」字
+    by: ai_review
 shared_assets:
 - key: g1_6_9
   label: 題組附圖

@@ -202,7 +202,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下哪一個事件沒有發生感覺疲勞？
+  stem: 下列哪一個事件沒有發生感覺疲勞？（原卷有誤，已修正）
   options:
   - label: A
     content: 溫泉泡久了，會覺得不熱
@@ -231,6 +231,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下哪一個事件沒有發生感覺疲勞？
+    to: 下列哪一個事件沒有發生感覺疲勞？
+    note: 漏「列」字
+    by: ai_review
 - id: doc_113_台南_復興_自然_g7s1e3_s1_7
   section: 1
   number: 7
@@ -1199,6 +1204,7 @@ questions:
       - 242.84
       - 700.36
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1421,6 +1427,7 @@ questions:
       - 240.87
       - 553.09
       - 373.75
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1535,6 +1542,7 @@ questions:
       - 429.38
       - 536.4
       - 535.42
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1848,6 +1856,7 @@ questions:
       - 259.2
       - 528.55
       - 313.85
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1927,6 +1936,7 @@ questions:
       - 440.51
       - 429.71
       - 535.42
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -2054,6 +2064,7 @@ questions:
       - 538.04
       - 187.85
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -2180,6 +2191,7 @@ questions:
       - 320.73
       - 540.65
       - 413.35
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:

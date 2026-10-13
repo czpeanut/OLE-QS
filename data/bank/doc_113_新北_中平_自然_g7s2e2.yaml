@@ -820,7 +820,7 @@ questions:
   number: 21
   type: single
   page: 3
-  stem: 請問「丙」是的分類依據為何？
+  stem: 請問「丙」的分類依據為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 是否為多細胞
@@ -847,6 +847,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 請問「丙」是的分類依據為何？
+    to: 請問「丙」的分類依據為何？
+    note: 多贅字「是」
+    by: ai_review
 - id: doc_113_新北_中平_自然_g7s2e2_s1_22
   section: 1
   number: 22

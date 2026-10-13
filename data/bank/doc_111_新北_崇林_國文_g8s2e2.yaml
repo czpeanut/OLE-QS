@@ -782,7 +782,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 關於〈我所知道的康橋〉一文，下列敘述何著正確？
+  stem: 關於〈我所知道的康橋〉一文，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 以豐富強烈的配色，描寫午後於鄉間漫步的景致
@@ -812,6 +812,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列敘述何著正確？
+    to: 下列敘述何者正確？
+    note: 「何著」印錯，應為「何者」
+    by: ai_review
 - id: doc_111_新北_崇林_國文_g8s2e2_s4_6
   section: 4
   number: 6

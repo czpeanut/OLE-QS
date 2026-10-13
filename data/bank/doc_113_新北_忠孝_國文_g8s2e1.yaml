@@ -1499,12 +1499,12 @@ questions:
   number: 39
   type: single
   page: 5
-  stem: 根據這兩篇短文，可明確得之下列何者？
+  stem: 根據這兩篇短文，可明確得知下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 孟嘗君、王鳳與王鎮惡皆遭雙親棄養
   - label: B
-    content: 王鳳與王鎮惡皆以孟嘗君為學習榜
+    content: 王鳳與王鎮惡皆以孟嘗君為學習榜樣
   - label: C
     content: 王猛以孟嘗君的名字為孫子王鎮惡命名
   - label: D
@@ -1530,6 +1530,15 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據這兩篇短文，可明確得之下列何者？
+    to: 根據這兩篇短文，可明確得知下列何者？
+    note: 「得之」應為「得知」
+    by: ai_review
+  - from: 王鳳與王鎮惡皆以孟嘗君為學習榜
+    to: 王鳳與王鎮惡皆以孟嘗君為學習榜樣
+    note: 漏「樣」字
+    by: ai_review
 - id: doc_113_新北_忠孝_國文_g8s2e1_s3_40
   section: 3
   number: 40

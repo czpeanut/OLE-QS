@@ -118,12 +118,12 @@ questions:
   number: 33
   type: single
   page: 1
-  stem: 「告訴」與「告發」是刑事訴訟過程中的兩種程序，關於兩者的主要差別，下列敘述何者正確？
+  stem: 「告訴」與「告發」是刑事訴訟過程中的兩種程序，關於兩者的主要差別，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 被害人或其家屬只能提出「告訴」，此外的第三人只能提出「告發」
   - label: B
-    content: 檢察官負責受理「告發」，「告訴」應向直接向法院提出
+    content: 檢察官負責受理「告發」，「告訴」應直接向法院提出
   - label: C
     content: 「告訴」請求追究犯罪者的刑事責任，「告發」則是單純舉發犯罪事實
   - label: D
@@ -145,6 +145,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「告訴」應向直接向法院提出
+    to: 「告訴」應直接向法院提出
+    note: 多出「向」字贅字
+    by: ai_review
 - id: doc_113_桃園_桃園_社會_公民_g8s2e2_s1_34
   section: 1
   number: 34

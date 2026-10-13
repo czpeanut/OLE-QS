@@ -916,7 +916,7 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: 愛麗絲夢遊仙境時，發現有多種藥物可使人分別變身成不同的分子。如果愛麗絲時想要透過「細胞膜上的特殊構造」進出細胞，請問她應該變身成哪種分子才能如願以償？
+  stem: 愛麗絲夢遊仙境時，發現有多種藥物可使人分別變身成不同的分子。如果愛麗絲想要透過「細胞膜上的特殊構造」進出細胞，請問她應該變身成哪種分子才能如願以償？（原卷有誤，已修正）
   options:
   - label: A
     content: 氧氣
@@ -943,6 +943,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如果愛麗絲時想要透過
+    to: 如果愛麗絲想要透過
+    note: 多印了「時」字
+    by: ai_review
 - id: doc_113_高雄_五福_自然_g7s1e1_s1_21
   section: 1
   number: 21

@@ -393,10 +393,10 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 爸爸在庭院和還在就讀國小的兒子打棒球，結果兒子不小心打破鄰居家的彩繪玻璃，爸爸帶著兒子去向鄰居道歉。下列敘述何者正確？
+  stem: 爸爸在庭院和還在就讀國小的兒子打棒球，結果兒子不小心打破鄰居家的彩繪玻璃，爸爸帶著兒子去向鄰居道歉。下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 因為兒子屬於限制行為力人，爸爸應負民事連帶賠償責任
+    content: 因為兒子屬於限制行為能力人，爸爸應負民事連帶賠償責任
   - label: B
     content: 玻璃不是爸爸打破的，所以爸爸當然不用賠償
   - label: C
@@ -419,6 +419,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 因為兒子屬於限制行為力人，爸爸應負民事連帶賠償責任
+    to: 因為兒子屬於限制行為能力人，爸爸應負民事連帶賠償責任
+    note: 漏「能」字
+    by: ai_review
 - id: doc_112_桃園_石門_社會_公民_g8s2e2_s1_12
   section: 1
   number: 12
@@ -503,7 +508,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 依據據右圖的警局報案對話內容判斷，應是指何種行為？
+  stem: 依據右圖的警局報案對話內容判斷，應是指何種行為？（原卷有誤，已修正）
   options:
   - label: A
     content: 自訴
@@ -547,6 +552,11 @@ questions:
     gemini: C
     qwen: D
     gemini_high: C
+  errata:
+  - from: 依據據右圖的警局報案對話內容判斷，應是指何種行為？
+    to: 依據右圖的警局報案對話內容判斷，應是指何種行為？
+    note: 多一個「據」字
+    by: ai_review
 - id: doc_112_桃園_石門_社會_公民_g8s2e2_s1_15
   section: 1
   number: 15
@@ -1011,11 +1021,11 @@ questions:
   number: 27
   type: single
   page: 3
-  stem: '記者：「請問你可以露一些這個案件的案情嗎？」
+  stem: '記者：「請問你可以透露一些這個案件的案情嗎？」
 
     依依：「我代表國家追訴犯罪，怕影響查案，目前不便回答你的問題。」
 
-    根據上述內容判斷，關於依依的角色，下列敘述何者正確？'
+    根據上述內容判斷，關於依依的角色，下列敘述何者正確？（原卷有誤，已修正）'
   options:
   - label: A
     content: 依法可作出不起訴的處分
@@ -1041,6 +1051,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 記者：「請問你可以露一些這個案件的案情嗎？」
+    to: 記者：「請問你可以透露一些這個案件的案情嗎？」
+    note: 漏「透」字
+    by: ai_review
 - id: doc_112_桃園_石門_社會_公民_g8s2e2_s1_28
   section: 1
   number: 28

@@ -464,7 +464,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 在相同的環境下，人類發出的聲音與超聲波的敘述何者一定正確？
+  stem: 在相同的環境下，人類發出的聲音與超聲波的敘述何者一定正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 波速的比值>1
@@ -473,7 +473,7 @@ questions:
   - label: C
     content: 週期的比值<1
   - label: D
-    content: 震幅的比值<1
+    content: 振幅的比值<1
   tags:
     chapter:
       publisher: null
@@ -491,6 +491,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 震幅的比值<1
+    to: (D) 振幅的比值<1
+    note: 「震幅」應為「振幅」
+    by: ai_review
 - id: doc_113_新北_土城_自然_g9s2e2_s1_11
   section: 1
   number: 11
@@ -1659,7 +1664,7 @@ questions:
   number: 36
   type: single
   page: 4
-  stem: 面對全球暖化危機，下列何種防治工作不能改善或減緩暖化的現象？
+  stem: 面對全球暖化危機，下列何種防治工作不能改善或減緩暖化的現象？（原卷有誤，已修正）
   options:
   - label: A
     content: 多植樹木
@@ -1668,7 +1673,7 @@ questions:
   - label: C
     content: 外出多搭乘大眾運輸工具
   - label: D
-    content: 使用環保冷煤
+    content: 使用環保冷媒
   group_stem: "題組2：「溫室效應」\n    地球表面由大氣層所包圍，就像溫室的透明玻璃，在陽光照射地球時，可防止地面溫度及溼度散失，使地面溫度不會下降太快，地表年均溫因此能保持15℃左右，此現象即稱為「溫室效應」。若無溫室效應，來自陽光的能量會很快由地表釋放回去，地球的溫度也將降至－18℃左右而成為極冷的世界。適度的溫室效應適宜地球生物存活，使人類悠遊於四季交替。"
   tags:
     chapter:
@@ -1687,6 +1692,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 使用環保冷煤
+    to: (D) 使用環保冷媒
+    note: 「冷煤」應為「冷媒」
+    by: ai_review
 shared_assets:
 - key: g1_33_34
   label: 題組附圖

@@ -1708,7 +1708,7 @@ questions:
   number: 8
   type: single
   page: 6
-  stem: 有關金庸小說的閱讀現象與特點，下敘述何者正確？
+  stem: 有關金庸小說的閱讀現象與特點，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 金庸熱至今未退，但研究者仍面臨許多值得研究的課題
@@ -1745,12 +1745,17 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 有關金庸小說的閱讀現象與特點，下敘述何者正確？
+    to: 有關金庸小說的閱讀現象與特點，下列敘述何者正確？
+    note: 題幹漏「列」字
+    by: ai_review
 - id: doc_112_高雄_大樹_國文_g9s1e2_s6_9
   section: 6
   number: 9
   type: single
   page: 6
-  stem: 由本文得知：重陽節登高得習俗，是基於何種理由?
+  stem: 由本文得知：重陽節登高的習俗，是基於何種理由?（原卷有誤，已修正）
   options:
   - label: A
     content: 運動健身
@@ -1779,6 +1784,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 由本文得知：重陽節登高得習俗，是基於何種理由?
+    to: 由本文得知：重陽節登高的習俗，是基於何種理由?
+    note: 「得」應為「的」
+    by: ai_review
 - id: doc_112_高雄_大樹_國文_g9s1e2_s6_10
   section: 6
   number: 10

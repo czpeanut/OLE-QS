@@ -283,7 +283,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 下列何者並非小軒所表現出的生物恆定機制？
+  stem: 下列何者並非小軒所表現出的生物恆定機制？（原卷有誤，已修正）
   options:
   - label: A
     content: 體育課打完籃球，都會想要補充水分
@@ -292,7 +292,7 @@ questions:
   - label: C
     content: 到第四節課時，肚子總是咕嚕、咕嚕地叫
   - label: D
-    content: 每天放學路回家上，都會買一杯奶茶。
+    content: 每天放學回家路上，都會買一杯奶茶。
   tags:
     chapter:
       publisher: 翰林
@@ -310,6 +310,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 每天放學路回家上，都會買一杯奶茶。
+    to: 每天放學回家路上，都會買一杯奶茶。
+    note: 語序倒置，應為回家路上
+    by: ai_review
 - id: doc_113_新北_桃子腳_自然_g7s1e3_s1_9
   section: 1
   number: 9
@@ -1314,12 +1319,12 @@ questions:
   number: 35
   type: single
   page: 3
-  stem: 大雄在上完體育課之後，又渴又餓，下列關於他身體所產生的反應，何者正確？
+  stem: 大雄在上完體育課之後，又渴又餓，下列關於他身體所產生的反應，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 覺得渴，是因為血液中水分的含量降低刺激大腦的結果
   - label: B
-    content: 覺得餓，腎上素的分泌會增加
+    content: 覺得餓，腎上腺素的分泌會增加
   - label: C
     content: 感覺渴，會使排尿量減少
   - label: D
@@ -1341,6 +1346,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 覺得餓，腎上素的分泌會增加
+    to: 覺得餓，腎上腺素的分泌會增加
+    note: 漏字，應為腎上腺素
+    by: ai_review
 - id: doc_113_新北_桃子腳_自然_g7s1e3_s1_36
   section: 1
   number: 36

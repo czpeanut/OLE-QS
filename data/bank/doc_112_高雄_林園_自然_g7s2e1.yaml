@@ -26,14 +26,14 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 下圖1 為向日葵與南瓜的雌蕊構造示意圖，已知向日葵的甲部位可發育成一個帶殼葵瓜子，南瓜的乙構造可發育成一個帶殼南瓜子，有關此兩種帶殼的瓜子為果實或種子之敘述，下列何者正確？
+  stem: 下圖1 為向日葵與南瓜的雌蕊構造示意圖，已知向日葵的甲部位可發育成一個帶殼葵瓜子，南瓜的乙構造可發育成一個帶殼南瓜子，有關此兩種帶殼的瓜子為果實或種子之敘述，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 兩者皆為果實
   - label: B
     content: 兩者皆為種子
   - label: C
-    content: 葵瓜子為果實，南瓜子為種子
+    content: 葵瓜子為果實，南瓜子為果實種子
   - label: D
     content: 葵瓜子為種子，南瓜子為果實
   assets:
@@ -69,6 +69,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: (D) 葵瓜子為種子，南瓜子為
+    to: (D) 葵瓜子為種子，南瓜子為果實
+    note: 選項末漏印「果實」
+    by: ai_review
 - id: doc_112_高雄_林園_自然_g7s2e1_s1_2
   section: 1
   number: 2
@@ -2087,7 +2092,7 @@ questions:
   - label: C
     content: 此種繁殖方式屬於無性生殖
   - label: D
-    content: 此種繁殖方式不頇經過減數分裂
+    content: 此種繁殖方式不須經過減數分裂
   assets:
   - key: s1_48_f1
     kind: figure

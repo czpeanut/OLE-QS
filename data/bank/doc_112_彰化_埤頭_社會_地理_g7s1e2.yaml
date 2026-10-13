@@ -535,7 +535,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 請問彰化化的八卦山為伺種地形？
+  stem: 請問彰化的八卦山為何種地形？
   options:
   - label: A
     content: 山地
@@ -566,6 +566,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問彰化化的八卦山為伺種地形？
+    to: 請問彰化的八卦山為何種地形？
+    note: 多「化」字且「伺」為「何」之誤
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g7s1e2_s1_12
   section: 1
   number: 12

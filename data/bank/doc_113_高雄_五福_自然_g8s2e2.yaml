@@ -1783,8 +1783,8 @@ questions:
   number: 42
   type: single
   page: 4
-  stem: (42)老師秤好所需NaOH 質量後，先加500ml 蒸餾水將NaOH 攪拌至全部溶解，之後再繼續加入蒸餾水至總體積800ml。隨後請各組裝1M 的溶液100ml，若各組所需濃度為0.2M，請問各組須加入蒸餾水至總體機多少ml
-    ?
+  stem: (42)老師秤好所需NaOH 質量後，先加500ml 蒸餾水將NaOH 攪拌至全部溶解，之後再繼續加入蒸餾水至總體積800ml。隨後請各組裝1M 的溶液100ml，若各組所需濃度為0.2M，請問各組須加入蒸餾水至總體積多少ml
+    ?（原卷有誤，已修正）
   options:
   - label: A
     content: '200'
@@ -1812,6 +1812,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問各組須加入蒸餾水至總體機多少ml ?
+    to: 請問各組須加入蒸餾水至總體積多少ml ?
+    note: 「機」應為「積」
+    by: ai_review
 - id: doc_113_高雄_五福_自然_g8s2e2_s2_43
   section: 2
   number: 43

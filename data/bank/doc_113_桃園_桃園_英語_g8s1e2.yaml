@@ -262,7 +262,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 18. Nick and Joe _______ when Mike opend the door.
+  stem: 18. Nick and Joe _______ when Mike opened the door.（原卷有誤，已修正）
   options:
   - label: A
     content: was taking a bath
@@ -289,6 +289,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: when Mike opend the door.
+    to: when Mike opened the door.
+    note: opend 拼錯，應為 opened
+    by: ai_review
 - id: doc_113_桃園_桃園_英語_g8s1e2_s1_19
   section: 1
   number: 19
@@ -1500,6 +1505,7 @@ questions:
       - 686.29
       - 483.71
       - 769.75
+    redrawn: 去除浮水印
   tags:
     textbook: 八上 英語 時間逆讀法（half past/quarter to）
     labeled_by: ai
@@ -1537,6 +1543,7 @@ questions:
       - 686.29
       - 483.71
       - 769.75
+    redrawn: 去除浮水印
   tags:
     textbook: 八上 英語 時間逆讀法（half past/quarter to）
     labeled_by: ai
@@ -1774,3 +1781,4 @@ shared_assets:
     - 29.78
     - 646.04
     - 121.75
+  redrawn: 去除浮水印

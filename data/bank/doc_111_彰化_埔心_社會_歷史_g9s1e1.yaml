@@ -752,7 +752,7 @@ questions:
   number: 24
   type: single
   page: 1
-  stem: 小哲翻閱一本歷史書籍，書中有一張照片，為從兩河流域挖掘出土的重要文物《居魯士文書》，上面的文字內容，是居魯士大帝宣布解放奴隸，曾有人認為這次世界上第一部記錄人權的相關文件。請問：這個文物上的文字應該是下列哪一種？
+  stem: 小哲翻閱一本歷史書籍，書中有一張照片，為從兩河流域挖掘出土的重要文物《居魯士文書》，上面的文字內容，是居魯士大帝宣布解放奴隸，曾有人認為這是世界上第一部記錄人權的相關文件。請問：這個文物上的文字應該是下列哪一種？（原卷有誤，已修正）
   options:
   - label: A
     content: 拼音文字
@@ -778,6 +778,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 曾有人認為這次世界上第一部記錄人權的相關文件
+    to: 曾有人認為這是世界上第一部記錄人權的相關文件
+    note: 錯字，「次」應為「是」
+    by: ai_review
 - id: doc_111_彰化_埔心_社會_歷史_g9s1e1_s1_25
   section: 1
   number: 25
@@ -988,12 +993,12 @@ questions:
   number: 31
   type: single
   page: 2
-  stem: 歷史課時，同學們討論埃及與兩河流域地區的文化。請問下列何人所說的完全正確？
+  stem: 歷史課時，同學們討論埃及與兩河流域地區的文化。請問下列何人所說的完全正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲生：蘇美人發明象形文字；埃及人發明楔形文字
   - label: B
-    content: 乙生：西亞地區曾創立創立一神信仰；埃及是多神信仰的社會
+    content: 乙生：西亞地區曾創立一神信仰；埃及是多神信仰的社會
   - label: C
     content: 丙生：蘇美亡於埃及；埃及亡於波斯
   - label: D
@@ -1014,6 +1019,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 西亞地區曾創立創立一神信仰
+    to: 西亞地區曾創立一神信仰
+    note: 多印重複的「創立」二字
+    by: ai_review
 - id: doc_111_彰化_埔心_社會_歷史_g9s1e1_s1_32
   section: 1
   number: 32

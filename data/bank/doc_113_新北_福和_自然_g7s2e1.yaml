@@ -662,7 +662,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 如(圖四)，每個圓圈代表一類動物的所示特徵，圓圈重疊處代表不同類生物共同具有的特徵。下列何者最可能是圖中灰色陰影所代表的特徵？
+  stem: 如(圖四)，每個圓圈代表一類生物的所示特徵，圓圈重疊處代表不同類生物共同具有的特徵。下列何者最可能是圖中灰色陰影所代表的特徵？（原卷有誤，已修正）
   options:
   - label: A
     content: 有遺傳物質
@@ -706,6 +706,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 每個圓圈代表一類動物的所示特徵
+    to: 每個圓圈代表一類生物的所示特徵
+    note: 圖中為藻類藍綠藻蕈類，非動物
+    by: ai_review
 - id: doc_113_新北_福和_自然_g7s2e1_s1_20
   section: 1
   number: 20

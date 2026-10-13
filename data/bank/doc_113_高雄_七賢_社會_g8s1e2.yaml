@@ -519,10 +519,10 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 關於一帶一路路線的敘述，何者正確？
+  stem: 關於一帶一路路線的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 可串聯亞州、歐洲、非洲與大洋洲進行貿易
+    content: 可串聯亞洲、歐洲、非洲與大洋洲進行貿易
   - label: B
     content: 一帶經由新疆維吾爾自治區進入中亞、西亞
   - label: C
@@ -550,6 +550,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 可串聯亞州、歐洲、非洲與大洋洲進行貿易
+    to: 可串聯亞洲、歐洲、非洲與大洋洲進行貿易
+    note: 「亞州」錯字，應為「亞洲」
+    by: ai_review
 - id: doc_113_高雄_七賢_社會_g8s1e2_s1_15
   section: 1
   number: 15
@@ -703,7 +708,7 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 芊瑜在翻閱《中國歷史地圖集》中看到一幅地圖如圖（八），請問：圖中穿梭於各大洋的的路線代表什麼意義？
+  stem: 芊瑜在翻閱《中國歷史地圖集》中看到一幅地圖如圖（八），請問：圖中穿梭於各大洋的路線代表什麼意義？（原卷有誤，已修正）
   options:
   - label: A
     content: 西班牙、葡萄牙人的新航路
@@ -748,6 +753,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 圖中穿梭於各大洋的的路線代表什麼意義
+    to: 圖中穿梭於各大洋的路線代表什麼意義
+    note: 多一個「的」字
+    by: ai_review
 - id: doc_113_高雄_七賢_社會_g8s1e2_s1_20
   section: 1
   number: 20
@@ -1381,7 +1391,7 @@ questions:
   number: 37
   type: single
   page: 5
-  stem: 民主國家會依據《憲法》來設計國家的「憲政體制」，圖（十四）為圖解新聞中一張重要概念圖文說明。請根據我國憲政制度與圖一判斷，該制度的設計精神，主要為下列何者？
+  stem: 民主國家會依據《憲法》來設計國家的「憲政體制」，圖（十四）為圖解新聞中一張重要概念圖文說明。請根據我國憲政制度與圖(十四)判斷，該制度的設計精神，主要為下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 可透過定期選舉以實現主權在民
@@ -1425,6 +1435,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請根據我國憲政制度與圖一判斷
+    to: 請根據我國憲政制度與圖（十四）判斷
+    note: 圖號引用錯誤，應為圖（十四）
+    by: ai_review
 - id: doc_113_高雄_七賢_社會_g8s1e2_s1_38
   section: 1
   number: 38

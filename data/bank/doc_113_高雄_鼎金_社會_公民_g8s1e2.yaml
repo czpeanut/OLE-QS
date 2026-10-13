@@ -367,7 +367,7 @@ questions:
   number: 50
   type: single
   page: 1
-  stem: 陳先生覺得自家後門旁的巷子人來人往，安全上沒有保障，於是私自建了圍牆，行政機關卻以那條巷子是防火巷，不得有任何違建，而寄了一份違建查報拆除函給江先生。請問：上述案件中，若是陳先生認為這個行政處分函違法或不當，可以先提起下列何者來確保權益？
+  stem: 陳先生覺得自家後門旁的巷子人來人往，安全上沒有保障，於是私自建了圍牆，行政機關卻以那條巷子是防火巷，不得有任何違建，而寄了一份違建查報拆除函給陳先生。請問：上述案件中，若是陳先生認為這個行政處分函違法或不當，可以先提起下列何者來確保權益？（原卷有誤，已修正）
   options:
   - label: A
     content: 請願
@@ -394,12 +394,17 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 而寄了一份違建查報拆除函給江先生
+    to: 而寄了一份違建查報拆除函給陳先生
+    note: 主角前文為陳先生，此處誤植為江先生
+    by: ai_review
 - id: doc_113_高雄_鼎金_社會_公民_g8s1e2_s1_51
   section: 1
   number: 51
   type: single
   page: 1
-  stem: 盈伊在媒體上看到湘云拍短片說明預算、決算的流程，結果盈伊看到湘云說錯了一個地方，便在影片底下留言給盈伊，請問：下列有關湘云的說明何者錯誤？
+  stem: 盈伊在媒體上看到湘云拍短片說明預算、決算的流程，結果盈伊看到湘云說錯了一個地方，便在影片底下留言給湘云，請問：下列有關湘云的說明何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 湘云：總統編列預算
@@ -426,6 +431,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 便在影片底下留言給盈伊
+    to: 便在影片底下留言給湘云
+    note: 盈伊看湘云影片，應是留言給湘云
+    by: ai_review
 - id: doc_113_高雄_鼎金_社會_公民_g8s1e2_s1_52
   section: 1
   number: 52

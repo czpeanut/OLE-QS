@@ -261,7 +261,7 @@ questions:
   number: 9
   type: matching
   page: 1
-  stem: 美國政治學者杭廷頓說：一個國家必須要經歷兩次政黨輪替，這樣的民主才稱得上足進步。
+  stem: 美國政治學者杭廷頓說：一個國家必須要經歷兩次政黨輪替，這樣的民主才稱得上是進步。
   options:
   - label: A
     content: 政黨政治
@@ -283,6 +283,12 @@ questions:
       chapter: 第1章 國家與民主政治
     textbook: 八上公民 1-2 民主政治的特色
     labeled_by: ai
+  errata:
+  - from: 這樣的民主才稱得上足進步
+    to: 這樣的民主才稱得上是進步
+    note: 「足進步」應為「是進步」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g8s1e1_s1_10
   section: 1
   number: 10
@@ -475,7 +481,7 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 所謂的狹義法律是專指下列哪依機關所制定之法律？
+  stem: 所謂的狹義法律是專指下列哪一個機關所制定之法律？（原卷有誤，已修正）
   options:
   - label: A
     content: 行政院
@@ -504,6 +510,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列哪依機關所制定之法律？
+    to: 下列哪一個機關所制定之法律？
+    note: 「哪依」應為「哪一」或「哪一個」
+    by: ai_review
 - id: doc_112_彰化_埤頭_社會_公民_g8s1e1_s2_18
   section: 2
   number: 18
@@ -931,7 +942,7 @@ questions:
   number: 29
   type: single
   page: 2
-  stem: 防堵疫情必須疫調著手，當事人常常記憶錯足跡或忘記足交過程，因此容易形成破口，彰化縣政府依《傳染病防治法》，有隱匿的事證，可開罰 6 到 30 萬元。下列相關敘述，何者正確？
+  stem: 防堵疫情必須疫調著手，當事人常常記憶錯足跡或忘記社交過程，因此容易形成破口，彰化縣政府依《傳染病防治法》，有隱匿的事證，可開罰 6 到 30 萬元。下列相關敘述，何者正確？
   options:
   - label: A
     content: 縣政府的處罰內容，剝奪了民眾的自由權
@@ -960,6 +971,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 忘記足交過程
+    to: 忘記社交過程
+    note: 「足交」應為「社交」或「足跡」之誤
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g8s1e1_s3_30
   section: 3
   number: 30
@@ -999,7 +1016,7 @@ questions:
   number: 31
   type: single
   page: 2
-  stem: 新修正的《公民投票法》施行後，年滿 18 歲就可參與公民投票；然而《憲法》仍規定：滿 20 歲的我國國民，仍不能參與 2023 年 11 月的總統大選投票，係因《憲法》的何者特性造成？
+  stem: 新修正的《公民投票法》施行後，年滿 18 歲就可參與公民投票；然而《憲法》仍規定：未滿 20 歲的我國國民，仍不能參與 2023 年 11 月的總統大選投票，係因《憲法》的何者特性造成？（原卷有誤，已修正）
   options:
   - label: A
     content: 針對重要的事情做原則性的規範
@@ -1029,6 +1046,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 滿 20 歲的我國國民，仍不能參與
+    to: 未滿 20 歲的我國國民，仍不能參與
+    note: 原卷漏「未」字，滿20歲應能投票
+    by: ai_review
 - id: doc_112_彰化_埤頭_社會_公民_g8s1e1_s3_32
   section: 3
   number: 32
@@ -1068,12 +1090,12 @@ questions:
   number: 33
   type: single
   page: 2
-  stem: 中國歷史上不乏評價很高的皇帝，如唐太宗，但是也有許多皇帝令民生痛苦、戰事不斷，人民卻無力反抗；西方國家也是如此，因此才有民主政治的出現。下列相關敘述，何者正確？
+  stem: 中國歷史上不乏評價很高的皇帝，如唐太宗，但是也有許多皇帝令民生痛苦、戰事不斷，人民卻無力反抗；西方國家也是如此，因此才有民主政治的出現。下列相關敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 民主政治屬於人治
   - label: B
-    content: 皇帝統治屬於於法治
+    content: 皇帝統治屬於法治
   - label: C
     content: 在人治社會，人民對政府極有影響力
   - label: D
@@ -1097,6 +1119,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 皇帝統治屬於於法治
+    to: 皇帝統治屬於法治
+    note: 多一個「於」字
+    by: ai_review
 - id: doc_112_彰化_埤頭_社會_公民_g8s1e1_s3_34
   section: 3
   number: 34

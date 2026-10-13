@@ -241,7 +241,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 歷史課老師與同學討論近代歐洲歷史的演變。彥維:歐洲在宗教改後，逐漸走向宗教自由的世界;振庭:最早發現新航路的是西班牙;沇銘:十八世紀被稱為天才世紀;丞晏:歐洲科學革命從天文學開始。請問上列同學中那些人說錯了?
+  stem: 歷史課老師與同學討論近代歐洲歷史的演變。彥維:歐洲在宗教改革後，逐漸走向宗教自由的世界;振庭:最早發現新航路的是西班牙;沇銘:十八世紀被稱為天才世紀;丞晏:歐洲科學革命從天文學開始。請問上列同學中那些人說錯了?
   options:
   - label: A
     content: 彥維、振庭
@@ -270,6 +270,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 歐洲在宗教改後，逐漸走向宗教自由的世界
+    to: 歐洲在宗教改革後，逐漸走向宗教自由的世界
+    note: 漏字，「宗教改」應為「宗教改革」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s1e3_s1_8
   section: 1
   number: 8
@@ -482,7 +488,7 @@ questions:
   stem: 尚佳乘時光機回到17世紀的歐洲，當時科學界正開啟一場觀念革命，尚佳最不可能遇到下列那一狀況?
   options:
   - label: A
-    content: 使用望遠鏡與天交學家一起觀測天象
+    content: 使用望遠鏡與天文學家一起觀測天象
   - label: B
     content: 向牛頓請教三大運動定律與萬有引力定律
   - label: C
@@ -508,6 +514,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 使用望遠鏡與天交學家一起觀測天象
+    to: 使用望遠鏡與天文學家一起觀測天象
+    note: 錯字，「天交學家」應為「天文學家」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s1e3_s1_15
   section: 1
   number: 15
@@ -819,7 +831,7 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 「巧克力的主要原料是可可，馬雅人最早將可可豆加水和香料製成飲料，16 世紀初被探險家船隊發現並帶回西班牙，西班牙人將可豆磨成了粉，並加入了水和糖加熱，這種被稱為巧克力的飲料，深受歐洲大眾的歡迎。」請問:文中的探險家應為伺人?
+  stem: 「巧克力的主要原料是可可，馬雅人最早將可可豆加水和香料製成飲料，16 世紀初被探險家船隊發現並帶回西班牙，西班牙人將可豆磨成了粉，並加入了水和糖加熱，這種被稱為巧克力的飲料，深受歐洲大眾的歡迎。」請問:文中的探險家應為何人?
   options:
   - label: A
     content: 狄亞士
@@ -848,6 +860,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問:文中的探險家應為伺人?
+    to: 請問:文中的探險家應為何人?
+    note: 錯字，「伺人」應為「何人」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s1e3_s1_25
   section: 1
   number: 25
@@ -955,7 +973,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 易辰撰寫有關文藝復興運動的報告，探討14世紀初，義大利產生文藝復興運動的原因有哪些? (甲)位居東西貿易、文化交流的要衝;(乙)城市富商的支持;(丙)古古典文化深植其中;(丁)貿易路線為土耳其人所阻撓
+  stem: 易辰撰寫有關文藝復興運動的報告，探討14世紀初，義大利產生文藝復興運動的原因有哪些? (甲)位居東西貿易、文化交流的要衝;(乙)城市富商的支持;(丙)古典文化深植其中;(丁)貿易路線為土耳其人所阻撓
   options:
   - label: A
     content: 甲乙丙
@@ -984,6 +1002,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (丙)古古典文化深植其中
+    to: (丙)古典文化深植其中
+    note: 多字，「古古典」應為「古典」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s1e3_s1_29
   section: 1
   number: 29

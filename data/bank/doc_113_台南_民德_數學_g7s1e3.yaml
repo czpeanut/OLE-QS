@@ -368,11 +368,11 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: '下列下列的式子中，正確的有哪些？
+  stem: '下列的式子中，正確的有哪些？
 
     ① 2（－4x＋3）＝－8x＋6 ②（6x＋3）＋（9x－4）＝15x＋7 ③（9x＋$\frac{7}{4}$）－（4x－1）＝5x＋$\frac{3}{4}$
 
-    ④（－4x＋5）－2（3x＋2）＝－10x＋1 ⑤（5x－10）－3（－2x＋4）＝11x－22。'
+    ④（－4x＋5）－2（3x＋2）＝－10x＋1 ⑤（5x－10）－3（－2x＋4）＝11x－22。（原卷有誤，已修正）'
   options:
   - label: A
     content: ①③⑤
@@ -399,6 +399,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列下列的式子中
+    to: 下列的式子中
+    note: 多印「下列」二字
+    by: ai_review
 - id: doc_113_台南_民德_數學_g7s1e3_s1_12
   section: 1
   number: 12

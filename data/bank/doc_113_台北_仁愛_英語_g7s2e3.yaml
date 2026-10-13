@@ -262,7 +262,7 @@ questions:
   type: single
   page: 1
   stem: 23. The colorful buildings and interesting shops give our town a unique ________.
-    Many visitors comes to visit here again and again.
+    Many visitors come to visit here again and again.（原卷有誤，已修正）
   options:
   - label: A
     content: price
@@ -289,6 +289,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Many visitors comes to visit here again and again.
+    to: Many visitors come to visit here again and again.
+    note: 主詞為複數，comes應為come
+    by: ai_review
 - id: doc_113_台北_仁愛_英語_g7s2e3_s2_24
   section: 2
   number: 24

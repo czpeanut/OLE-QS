@@ -1452,14 +1452,14 @@ questions:
   number: 38
   type: single
   page: 8
-  stem: 根據本文，關於流感的敘述，下列何者正確？
+  stem: 根據本文，關於流感的敘述，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 流感的併發症可能導致肺癌，不可輕忽
   - label: B
     content: 傳統抗生素不一定可以有效治療流感病毒併發的肺炎
   - label: C
-    content: 日本與臺灣因關係地緣關係流行的流感病毒株一致
+    content: 日本與臺灣因地緣關係流行的流感病毒株一致
   - label: D
     content: 臺灣春節前毋須擔憂流感的肆虐
   group_stem: "前台大醫院感染科醫師、知名旅遊部落客林氏璧表示，流行性感冒病毒絕對不能輕忽，不僅傳染力高能造成大流行，且可能發生併發症，造成肺炎、腦炎、心肌炎等重症。相較之下，普通的感冒病毒幾乎不會有併發症。\n\
@@ -1486,6 +1486,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 日本與臺灣因關係地緣關係流行的流感病毒株一致
+    to: 日本與臺灣因地緣關係流行的流感病毒株一致
+    note: 多印「關係」二字
+    by: ai_review
 - id: doc_113_新北_忠孝_國文_g9s2e1_s2_39
   section: 2
   number: 39

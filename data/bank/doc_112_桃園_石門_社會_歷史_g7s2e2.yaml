@@ -659,7 +659,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 2020 年8 月，電視節目「臺灣演義」為感謝「民主先生—□」對臺灣的貢獻，特別製作紀念影片。影片中包含廢除《動員戡亂時期臨時款》、修改憲法、開放直轄市市長直接民選等。請問：□應填入何人？
+  stem: 2020 年8 月，電視節目「臺灣演義」為感謝「民主先生—□」對臺灣的貢獻，特別製作紀念影片。影片中包含廢除《動員戡亂時期臨時條款》、修改憲法、開放直轄市市長直接民選等。請問：□應填入何人？（原卷有誤，已修正）
   options:
   - label: A
     content: 李登輝
@@ -686,6 +686,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 包含廢除《動員戡亂時期臨時款》、修改憲法
+    to: 包含廢除《動員戡亂時期臨時條款》、修改憲法
+    note: 漏「條」字
+    by: ai_review
 - id: doc_112_桃園_石門_社會_歷史_g7s2e2_s2_21
   section: 2
   number: 21

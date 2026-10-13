@@ -1383,7 +1383,7 @@ questions:
   number: 21
   type: single
   page: 3
-  stem: 句型可分為敘事句、有無句、判斷句和表態句，請問下列何者前後的句子是相同句型？【綜合】
+  stem: 句型可分為敘事句、有無句、判斷句和表態句，請問下列何者前後的句子是相同句型？【綜合】（原卷有誤，已修正）
   options:
   - label: A
     content: '君子坦蕩蕩，小人長戚戚
@@ -1394,7 +1394,7 @@ questions:
 
       廷尉乃當之罰金'
   - label: C
-    content: '見賢思賢焉，見不賢而內自省
+    content: '見賢思齊焉，見不賢而內自省
 
       書中自有千鍾粟，書中自有黃金屋'
   - label: D
@@ -1418,6 +1418,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 見賢思賢焉，見不賢而內自省
+    to: 見賢思齊焉，見不賢而內自省
+    note: 「思賢」之「賢」應作「齊」
+    by: ai_review
 - id: doc_113_新北_永和_國文_g9s1e2_s4_22
   section: 4
   number: 22

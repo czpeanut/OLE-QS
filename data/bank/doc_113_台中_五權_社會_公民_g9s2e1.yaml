@@ -532,10 +532,10 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: 關於「★」權利，下列敘述何者正確？
+  stem: 關於「★」權利，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 該權利一但完成即可享有
+    content: 該權利一旦完成即可享有
   - label: B
     content: 該權利是用來區別自己與他人商品或服務的標誌
   - label: C
@@ -560,3 +560,8 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 該權利一但完成即可享有
+    to: 該權利一旦完成即可享有
+    note: 「一但」為錯別字，應作「一旦」
+    by: ai_review

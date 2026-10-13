@@ -141,7 +141,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 上文中的政府作為，哪些屬於行政處分？（甲）立法院修法重罰嚴重超速行為（乙）對於嚴重超速者開罰3萬60000 元並吊扣牌照6 個月（丙）警察針對未將車牌懸掛在指定位置者開罰
+  stem: 上文中的政府作為，哪些屬於行政處分？（甲）立法院修法重罰嚴重超速行為（乙）對於嚴重超速者開罰3萬6000 元並吊扣牌照6 個月（丙）警察針對未將車牌懸掛在指定位置者開罰（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙丙
@@ -171,6 +171,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 對於嚴重超速者開罰3萬60000 元並吊扣
+    to: 對於嚴重超速者開罰3萬6000 元並吊扣
+    note: 多一個0，應為3萬6000元
+    by: ai_review
 - id: doc_113_新北_崇林_社會_g8s2e3_s1_5
   section: 1
   number: 5
@@ -2024,7 +2029,7 @@ questions:
   number: 47
   type: single
   page: 6
-  stem: 南非橄欖油產區的氣候環境與列哪一張圖所呈現的特徵最相符？
+  stem: 南非橄欖油產區的氣候環境與下列哪一張圖所呈現的特徵最相符？（原卷有誤，已修正）
   options:
   - label: A
     content: ''
@@ -2117,6 +2122,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 氣候環境與列哪一張圖所呈現
+    to: 氣候環境與下列哪一張圖所呈現
+    note: 漏「下」字，應為與下列
+    by: ai_review
 - id: doc_113_新北_崇林_社會_g8s2e3_s3_48
   section: 3
   number: 48

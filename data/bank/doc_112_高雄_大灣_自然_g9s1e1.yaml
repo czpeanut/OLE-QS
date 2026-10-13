@@ -1547,12 +1547,12 @@ questions:
   number: 39
   type: single
   page: 4
-  stem: 在停止施力後，物體仍繼續運動，這是由於何種作用的緣故？
+  stem: 在停止施力後，物體仍繼續運動，這是由於何種作用的緣故？（原卷有誤，已修正）
   options:
   - label: A
     content: 慣性
   - label: B
-    content: )摩擦力
+    content: 摩擦力
   - label: C
     content: 反作用力
   - label: D
@@ -1577,12 +1577,17 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) )摩擦力
+    to: (B) 摩擦力
+    note: 多印一個右括號
+    by: ai_review
 - id: doc_112_高雄_大灣_自然_g9s1e1_s2_40
   section: 2
   number: 40
   type: single
   page: 4
-  stem: 物體開始啟動後5 秒內，物體移動的距離為多少m？
+  stem: 物體開始啟動後5 秒內，物體移動的距離為多少m？（原卷有誤，已修正）
   options:
   - label: A
     content: '20'
@@ -1591,7 +1596,7 @@ questions:
   - label: C
     content: '80'
   - label: D
-    content: ) 360。
+    content: ' 360。'
   group_stem: ⚫ 可可將質量2 公斤的物體靜置於一光滑(無摩擦力)的水平面上，。今施力10 牛頓的水平定力作用2 秒後，停止施力，如右圖(一)所示。運動過程的速度(v)與時間(t)關係如右圖(二)所示。請回答第39～40
     題：
   shared_asset: g2_39_40
@@ -1612,6 +1617,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) ) 360
+    to: (D) 360
+    note: 多印一個右括號
+    by: ai_review
 shared_assets:
 - key: g2_35_36
   label: 題組附圖

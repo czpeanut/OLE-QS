@@ -1618,7 +1618,7 @@ questions:
   number: 35
   type: single
   page: 4
-  stem: 使用電功率2500 瓦的冷氣，在台灣及南韓各使用20 小時，請問產生的二氧化碳量會加差多少克重呢?
+  stem: 使用電功率2500 瓦的冷氣，在台灣及南韓各使用20 小時，請問產生的二氧化碳量會相差多少克重呢?（原卷有誤，已修正）
   options:
   - label: A
     content: '4300'
@@ -1657,6 +1657,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問產生的二氧化碳量會加差多少克重呢?
+    to: 請問產生的二氧化碳量會相差多少克重呢?
+    note: 「加差」應為「相差」
+    by: ai_review
 - id: doc_113_新北_土城_自然_g9s2e1_s1_36
   section: 1
   number: 36

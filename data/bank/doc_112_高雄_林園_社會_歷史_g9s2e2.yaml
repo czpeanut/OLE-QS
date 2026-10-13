@@ -383,12 +383,12 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 【歷史圖一】為希特勒與史達林拋開嫌隙而和解的政治漫畫。請問：兩人願意和解的主要原因為何？
+  stem: 【歷史圖一】為希特勒與史達林拋開嫌隙而和解的政治漫畫。請問：兩人願意和解的主要原因為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 經濟大恐慌重挫國內經濟
   - label: B
-    content: 兩國愈共同瓜分波蘭
+    content: 兩國欲共同瓜分波蘭
   - label: C
     content: 德蘇要聯手發展極權政治
   - label: D
@@ -426,17 +426,22 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: (B) 兩國愈共同瓜分波蘭
+    to: (B) 兩國欲共同瓜分波蘭
+    note: 「愈」為錯字，應為「欲」
+    by: ai_review
 - id: doc_112_高雄_林園_社會_歷史_g9s2e2_s1_28
   section: 1
   number: 28
   type: single
   page: 2
-  stem: 【歷史圖二】是政治諷刺漫畫，呈現美蘇兩國領導人合力壓著標註「核戰」的金屬箱子，試圖阻止箱內的怪物跑出來。請問：這張漫畫最有可能是描述哪一時代的哪一事件？
+  stem: 【歷史圖二】是政治諷刺漫畫，呈現美蘇兩國領導人合力壓著標註「核戰」的金屬箱子，試圖阻止箱內的怪物跑出來。請問：這張漫畫最有可能是描述哪一時代的哪一事件？（原卷有誤，已修正）
   options:
   - label: A
     content: 冷戰：以阿衝突
   - label: B
-    content: 二大：投下原子彈
+    content: 二戰：投下原子彈
   - label: C
     content: 冷戰：古巴危機
   - label: D
@@ -468,6 +473,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: (B) 二大：投下原子彈
+    to: (B) 二戰：投下原子彈
+    note: 「二大」應為「二戰」
+    by: ai_review
 - id: doc_112_高雄_林園_社會_歷史_g9s2e2_s1_29
   section: 1
   number: 29

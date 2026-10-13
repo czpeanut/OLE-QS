@@ -1678,14 +1678,14 @@ questions:
   number: 47
   type: single
   page: 5
-  stem: 根據上文，下列哪一項敘述正確？
+  stem: 根據上文，下列哪一項敘述正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 雙底線的概念同於魚與熊掌不可兼得
   - label: B
     content: 國防預算優先編列的機會成本是經濟發展
   - label: C
-    content: 本預算案經由監察院審核通通方可動用
+    content: 本預算案經由監察院審核通過方可動用
   - label: D
     content: 國家歲出具有多種用途，所以必須選擇。
   group_stem: 114年度中央政府總預算案歲入編列3兆1,534億元，歲出3兆1,325億元。歲出包括國防、社會福利、一般政務支出、教育、醫療、經濟發展等預算。中央政府感慨道，既要維護國家安全，又要兼顧<u>經濟發展與維護社會正義</u>，預算支出左右為難！當前國家面臨最大危機是中央的威脅，國防預算應優先編列，首當其衝的是社會福利支出，經濟發展則為下一個衝擊者！
@@ -1706,6 +1706,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 本預算案經由監察院審核通通方可動用
+    to: 本預算案經由監察院審核通過方可動用
+    note: 「通過」誤印為「通通」
+    by: ai_review
 - id: doc_113_新北_崇林_社會_g9s1e1_s3_48
   section: 3
   number: 48

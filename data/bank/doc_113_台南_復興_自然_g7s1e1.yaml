@@ -237,6 +237,7 @@ questions:
         - 602.84
         - 267.38
         - 644.73
+      redrawn: 去除浮水印
   - label: D
     content: ''
     asset:
@@ -249,6 +250,7 @@ questions:
         - 604.47
         - 339.38
         - 647.35
+      redrawn: 去除浮水印
   assets:
   - key: s1_6_f1
     kind: figure
@@ -266,6 +268,7 @@ questions:
       - 540.65
       - 575.67
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -556,6 +559,7 @@ questions:
       - 553.09
       - 456.22
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1155,7 +1159,7 @@ questions:
   number: 30
   type: single
   page: 4
-  stem: 英國著名科學家—虎克(Robert Hooker)，是科學史上的發明大王，他是第一個描述細胞的人。右圖是虎克在 300 年前利用自製的顯微鏡觀察到的影像，下列敘述何者正確？
+  stem: 英國著名科學家—虎克(Robert Hooke)，是科學史上的發明大王，他是第一個描述細胞的人。右圖是虎克在 300 年前利用自製的顯微鏡觀察到的影像，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 虎克觀察到的是植物的活細胞
@@ -1176,6 +1180,7 @@ questions:
       - 192.76
       - 551.13
       - 328.25
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1195,6 +1200,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 虎克(Robert Hooker)
+    to: 虎克(Robert Hooke)
+    note: 英文姓名 Hooke 印錯成 Hooker
+    by: ai_review
 - id: doc_113_台南_復興_自然_g7s1e1_s1_31
   section: 1
   number: 31
@@ -1452,6 +1462,7 @@ questions:
         - 239.89
         - 396.65
       crop_by: auto
+      redrawn: 去除浮水印
   - label: C
     content: ''
     asset:
@@ -1488,6 +1499,7 @@ questions:
         - 438.87
         - 396.65
       crop_by: auto
+      redrawn: 去除浮水印
   group_stem: 題組一：下圖的圖(一)、圖(二)為生物實驗室的兩種光學顯微鏡，請回答下列1~6題：
   shared_asset: g2_1_6
   assets:
@@ -1788,6 +1800,7 @@ shared_assets:
     - 449.02
     - 254.29
   crop_by: auto
+  redrawn: 去除浮水印
 - key: g2_7_8
   label: 題組附圖
   kind: figure

@@ -967,12 +967,12 @@ questions:
   number: 19
   type: single
   page: 4
-  stem: '一群考古學家在埃及 開羅的三處地點發現了人類的化石，且化石皆圍繞著某中心點。考古學因此決定以化石 $A$、$B$、$C$ 三點所形成的圓作為第一階段開挖範圍。為了精準開挖，一位精通數學的考古學家說：「假設
+  stem: '一群考古學家在埃及 開羅的三處地點發現了人類的化石，且化石皆圍繞著某中心點。考古學家因此決定以化石 $A$、$B$、$C$ 三點所形成的圓作為第一階段開挖範圍。為了精準開挖，一位精通數學的考古學家說：「假設
     $\triangle ABC$ 外接圓的圓心為 $O$ 點。先連接 $\overline{AO}$，交圓 $O$ 於 $D$ 點，再連接 $\overline{CD}$。最後作
     $\overline{AH}\perp\overline{BC}$，交 $\overline{BC}$ 於 $H$ 點。
 
 
-    若化石彼此間的距離分別為 $\overline{AB}=17$ 公尺、$\overline{BC}=21$ 公尺、$\overline{AC}=10$ 公尺，則直徑為多少公尺？'
+    若化石彼此間的距離分別為 $\overline{AB}=17$ 公尺、$\overline{BC}=21$ 公尺、$\overline{AC}=10$ 公尺，則直徑為多少公尺？（原卷有誤，已修正）'
   options:
   - label: A
     content: $\frac{85}{8}$
@@ -1017,6 +1017,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 考古學因此決定以化石 A、B、C 三點
+    to: 考古學家因此決定以化石 A、B、C 三點
+    note: 漏字，「考古學」應為「考古學家」
+    by: ai_review
 - id: doc_112_彰化_福興_數學_g9s1e3_s1_20
   section: 1
   number: 20

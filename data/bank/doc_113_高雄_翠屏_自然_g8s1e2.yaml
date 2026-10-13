@@ -102,12 +102,12 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 以下何者可以減少回聲干擾的？
+  stem: 以下何者可以減少回聲干擾的？（原卷有誤，已修正）
   options:
   - label: A
     content: 音樂廳舞臺的後方、四周與天花板，常裝設有大型反射板
   - label: B
-    content: 樂廳內也會裝設布幔、地毯與布面座椅
+    content: 音樂廳內也會裝設布幔、地毯與布面座椅
   - label: C
     content: 棒球比賽時，使用傳聲筒
   - label: D
@@ -129,6 +129,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 樂廳內也會裝設布幔、地毯與布面座椅
+    to: (B) 音樂廳內也會裝設布幔、地毯與布面座椅
+    note: 漏印「音」字
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g8s1e2_s1_4
   section: 1
   number: 4
@@ -2347,7 +2352,7 @@ questions:
   number: 46
   type: single
   page: 8
-  stem: 此水波的波速為公尺／秒？
+  stem: 此水波的波速為多少公尺／秒？（原卷有誤，已修正）
   options:
   - label: A
     content: '160'
@@ -2376,6 +2381,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 此水波的波速為公尺／秒？
+    to: 此水波的波速為多少公尺／秒？
+    note: 漏「多少」二字
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g8s1e2_s1_47
   section: 1
   number: 47

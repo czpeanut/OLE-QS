@@ -496,7 +496,7 @@ questions:
   number: 53
   type: single
   page: 2
-  stem: '圖7 是四種不同產品的特性說明。若僅考慮圖中所列出之產品特性，哪一種工廠的的設置地點應盡量接近原料產地，才能獲取較多的利潤？
+  stem: '圖7 是四種不同產品的特性說明。若僅考慮圖中所列出之產品特性，哪一種工廠的設置地點應盡量接近原料產地，才能獲取較多的利潤？
 
 
     | 產品 | 特 性 |
@@ -509,7 +509,7 @@ questions:
 
     | 丙 | 1 立方公尺的原料可製成 10 立方公尺產品 |
 
-    | 丁 | 80 公斤原料可製成 10 公斤產品 |'
+    | 丁 | 80 公斤原料可製成 10 公斤產品 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲
@@ -536,6 +536,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 哪一種工廠的的設置地點應盡量接近
+    to: 哪一種工廠的設置地點應盡量接近
+    note: 多一個「的」字
+    by: ai_review
 - id: doc_113_高雄_英明_社會_地理_g7s2e2_s1_54
   section: 1
   number: 54

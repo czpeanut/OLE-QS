@@ -1514,10 +1514,10 @@ questions:
   type: single
   page: 4
   stem: 校外教學的學習單中，有一項任務是要同學進行一種生物的族群估算，阿呆與組員們決定使用「樣區法」來計算眼前樹林中的樹，他們把樹林劃分為9 個小樣區，其中在4
-    個小區中計數分別有 13 棵、8 棵、7 棵、4 棵，請問以他們調查的結果，原本樹林裡大約有多少棵樹？
+    個小區中計數分別有 13 棵、8 棵、7 棵、4 棵，請問以他們調查的結果，原本樹林裡大約有多少棵樹？（原卷有誤，已修正）
   options:
   - label: A
-    content: 64 隻
+    content: 64 棵
   - label: B
     content: 72 隻
   - label: C
@@ -1541,6 +1541,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 原本樹林裡大約有多少棵樹？ (A) 64 隻
+    to: 原本樹林裡大約有多少棵樹？ (A) 64 棵
+    note: 計算樹木單位應為棵，選項誤印為隻
+    by: ai_review
 - id: doc_113_新北_崇林_自然_g7s2e3_s1_38
   section: 1
   number: 38

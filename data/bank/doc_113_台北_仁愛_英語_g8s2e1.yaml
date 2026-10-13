@@ -209,7 +209,7 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: 16. The man can speak many ______ languages, such Japanese and Korean.
+  stem: 16. The man can speak many ______ languages, suchas Japanese and Korean.（原卷有誤，已修正）
   options:
   - label: A
     content: lucky
@@ -236,6 +236,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: languages, such Japanese and Korean.
+    to: languages, such as Japanese and Korean.
+    note: 漏印 as，應為 such as
+    by: ai_review
 - id: doc_113_台北_仁愛_英語_g8s2e1_s4_17
   section: 4
   number: 17

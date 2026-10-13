@@ -79,14 +79,14 @@ questions:
   number: 42
   type: single
   page: 1
-  stem: 'Miss Donut 主要銷售四種熱門商品，其售價和銷售量皆相同，每個商品每天的生產成本如右表，若店家欲停產其中一種商品，增產其他三種品其中之一，希望能增加利潤，下列哪一個策略能達到此目標？
+  stem: 'Miss Donut 主要銷售四種熱門商品，其售價和銷售量皆相同，每個商品每天的生產成本如右表，若店家欲停產其中一種商品，增產其他三種商品其中之一，希望能增加利潤，下列哪一個策略能達到此目標？
 
 
     | 品項 | 蜜糖波堤 | 草莓波堤 | 豆香波堤 | 可可波堤 |
 
     | :--- | :---: | :---: | :---: | :---: |
 
-    | 生產成本 | 4 萬 | 8 萬 | 3 萬 | 5 萬 |'
+    | 生產成本 | 4 萬 | 8 萬 | 3 萬 | 5 萬 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 停止生產豆香波堤，增加生產草莓波堤。
@@ -113,6 +113,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 增產其他三種品其中之一
+    to: 增產其他三種商品其中之一
+    note: 漏字，「三種品」應為「三種商品」
+    by: ai_review
 - id: doc_111_桃園_同德_社會_公民_g9s1e2_s1_43
   section: 1
   number: 43
@@ -209,10 +214,10 @@ questions:
   number: 45
   type: single
   page: 1
-  stem: 承上題，「潔淨鎖能系統」推出廣告文宣：「歡度周年慶，全系列商品消費滿千送百，滿萬送千，加碼再贈星佑親筆簽名海報一張！」依據內容判斷，此廣告目的最有可能為下列何者？
+  stem: 承上題，「潔淨鎖能系統」推出廣告文宣：「歡度周年慶，全系列商品消費滿千送百，滿萬送千，加碼再贈星佑親筆簽名海報一張！」依據內容判斷，此廣告目的最有可能為下列何者？（原卷有誤，已修正）
   options:
   - label: A
-    content: 增加生產生本。
+    content: 增加生產成本。
   - label: B
     content: 增加商品價格。
   - label: C
@@ -246,6 +251,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 增加生產生本。
+    to: (A) 增加生產成本。
+    note: 錯字，「生產生本」應為「生產成本」
+    by: ai_review
 - id: doc_111_桃園_同德_社會_公民_g9s1e2_s1_46
   section: 1
   number: 46

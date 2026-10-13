@@ -1388,7 +1388,7 @@ questions:
   number: 31
   type: single
   page: 3
-  stem: 海研船可以藉由聲納、岩芯採樣等設備，來發掘海底的寶物。而聲納是使用「超聲波」作為水下目標物定位與測量其距離的航海設備。則關於「超聲渡」的敘述，下列何者正確？
+  stem: 海研船可以藉由聲納、岩芯採樣等設備，來發掘海底的寶物。而聲納是使用「超聲波」作為水下目標物定位與測量其距離的航海設備。則關於「超聲波」的敘述，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 屬於能量很強的聲波
@@ -1420,13 +1420,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則關於「超聲渡」的敘述，下列何者正確？
+    to: 則關於「超聲波」的敘述，下列何者正確？
+    note: 「渡」應為「波」
+    by: ai_review
 - id: doc_113_新北_丹鳳_自然_g8s1e2_s3_32
   section: 3
   number: 32
   type: single
   page: 3
-  stem: 在建構海域的魚群資料時，會先以聲納確定魚群位置後再下網捕撈確認魚種。若新海研1 號在某地點以聲納向下發射聲渡，經過4 秒後接位到回聲，已知該地海水的傳聲速率為1500
-    公尺/秒，則應將漁網撒在深度多少公尺處捕撈魚群？
+  stem: 在建構海域的魚群資料時，會先以聲納確定魚群位置後再下網捕撈確認魚種。若新海研1 號在某地點以聲納向下發射聲波，經過4 秒後接收到回聲，已知該地海水的傳聲速率為1500
+    公尺/秒，則應將漁網撒在深度多少公尺處捕撈魚群？（原卷有誤，已修正）
   options:
   - label: A
     content: '1500'
@@ -1458,6 +1463,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 以聲納向下發射聲渡，經過4 秒後接位到回聲
+    to: 以聲納向下發射聲波，經過4 秒後接收到回聲
+    note: 「聲渡」為「聲波」，「接位」為「接收」
+    by: ai_review
 - id: doc_113_新北_丹鳳_自然_g8s1e2_s3_33
   section: 3
   number: 33

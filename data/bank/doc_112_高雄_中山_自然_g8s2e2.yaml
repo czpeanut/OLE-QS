@@ -1227,12 +1227,12 @@ questions:
   number: 36
   type: single
   page: 4
-  stem: 下列為濃度均為0.1 M、體積為500 mL 的水溶液，哪一杯水溶液所解離的粒子總數最多？
+  stem: 下列為濃度均為0.1 M、體積為500 mL 的水溶液，哪一杯水溶液所解離的粒子總數最多？（原卷有誤，已修正）
   options:
   - label: A
     content: 乙醇
   - label: B
-    content: 氫氣化鈉
+    content: 氫氧化鈉
   - label: C
     content: 葡萄糖
   - label: D
@@ -1254,6 +1254,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 氫氣化鈉
+    to: (B) 氫氧化鈉
+    note: 「氣」為錯字，應作「氧」
+    by: ai_review
 - id: doc_112_高雄_中山_自然_g8s2e2_s1_37
   section: 1
   number: 37

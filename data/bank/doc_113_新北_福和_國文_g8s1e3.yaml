@@ -252,14 +252,14 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 下列選項中文句的語氣，何者正確？　　　　　　　　　　　　　   【語法】
+  stem: 下列選項中文句的語氣，何者正確？　　　　　　　　　　　　　   【語法】（原卷有誤，已修正）
   options:
   - label: A
     content: 牡丹之愛，宜乎眾矣／欣賞
   - label: B
     content: 我相信，老太陽一定覺得，還是過去的鄉下人有情有義／委屈
   - label: C
-    content: 生活裡的裡的好滋味原來不是只為了自己嘗，而是要有人來分享才有意義／喜悅
+    content: 生活裡的好滋味原來不是只為了自己嘗，而是要有人來分享才有意義／喜悅
   - label: D
     content: 籠子裡的鳥更不用說，常年的關在柵欄裡，飲啄倒是方便，冬天還有遮風的棉罩，十分地「優待」／羨慕。
   tags:
@@ -279,6 +279,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 生活裡的裡的好滋味原來不是只為了自己嘗
+    to: 生活裡的好滋味原來不是只為了自己嘗
+    note: 多印贅字「的」
+    by: ai_review
 - id: doc_113_新北_福和_國文_g8s1e3_s1_9
   section: 1
   number: 9
@@ -626,7 +631,7 @@ questions:
   page: 3
   stem: '太陽距離地球平均一億五千萬公里，所以陽光需時八分多鐘才能抵達地球。由太陽發出的能量，大約只有二十億分之一被地球截獲，這個比例看起來很小，其實已經十分可觀，足夠使地球成為一個充滿生機的星球。地球上有許多熱能和動力，都是以太陽輻射作為它們的直接或間接來源。
 
-    關於上文中對於棉被的敘述，下列何者並未提到？　　　　 【第九課習作】'
+    關於上文中對於太陽的敘述，下列何者並未提到？　　　　 【第九課習作】（原卷有誤，已修正）'
   options:
   - label: A
     content: 太陽與地球的平均距離
@@ -657,6 +662,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於上文中對於棉被的敘述，下列何者並未提到？
+    to: 關於上文中對於太陽的敘述，下列何者並未提到？
+    note: 短文描述太陽，誤植為棉被
+    by: ai_review
 - id: doc_113_新北_福和_國文_g8s1e3_s1_19
   section: 1
   number: 19

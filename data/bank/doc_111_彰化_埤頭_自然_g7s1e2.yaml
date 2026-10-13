@@ -1810,11 +1810,11 @@ questions:
 
     | :---: | :---: | :---: |
 
-    | 白血球 | 15000 | 14500-11000 |
+    | 白血球 | 15000 | 4500-11000 |
 
     | 紅血球 | 530 萬 | 450 萬-620 萬 |
 
-    | 血小板 | 25 萬 | 15 萬-40 萬 |'
+    | 血小板 | 25 萬 | 15 萬-40 萬 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 傷口發炎
@@ -1843,6 +1843,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 14500-11000
+    to: 4500-11000
+    note: 正常值範圍下限不應大於上限，多印了1
+    by: ai_review
 - id: doc_111_彰化_埤頭_自然_g7s1e2_s1_45
   section: 1
   number: 45

@@ -460,7 +460,7 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: 保險絲用什麼特性和方式保護電器? (甲)電阻較導線大 (乙)電阻較導線小 (丙)熔電較導線高 (丁)熔電較導線低 (戊)與電器並聯 (己)與電器串聯
+  stem: 保險絲用什麼特性和方式保護電器? (甲)電阻較導線大 (乙)電阻較導線小 (丙)熔點較導線高 (丁)熔點較導線低 (戊)與電器並聯 (己)與電器串聯（原卷有誤，已修正）
   options:
   - label: A
     content: 甲、丙、戊
@@ -487,6 +487,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (丙)熔電較導線高 (丁)熔電較導線低
+    to: (丙)熔點較導線高 (丁)熔點較導線低
+    note: 熔電為熔點之錯字
+    by: ai_review
 - id: doc_112_桃園_平南_自然_g9s2e1_s1_15
   section: 1
   number: 15
@@ -776,14 +781,14 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 下圖為某年某月15 天內臺灣各地的降雨量長條圖。大屯山區雨量多達1369 毫米、宜蘭蘇澳1165 毫米，分別是山區與平地的冠軍，然而台南、高雄、屏東沿海地區卻一滴雨都沒下，可說是一個台灣、兩個世界。造成降雨量差距這麼大的原因推測，何者正確?
+  stem: 下圖為某年某月15 天內臺灣各地的降雨量長條圖。大屯山區雨量多達1369 毫米、宜蘭蘇澳1165 毫米，分別是山區與平地的冠軍，然而台南、高雄、屏東沿海地區卻一滴雨都沒下，可說是一個台灣、兩個世界。造成降雨量差距這麼大的原因推測，何者正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 受東北季風影響，台北、宜蘭在迎風面，降雨量大
   - label: B
     content: 這段時間颱風沿臺灣東部外海北上，東部降下豪雨。
   - label: C
-    content: 受西南季風的影響，造成南北與量不同
+    content: 受西南季風的影響，造成南北雨量不同
   - label: D
     content: 受冷鋒過境影響，北部、東北部降雨量大。
   assets:
@@ -820,6 +825,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 受西南季風的影響，造成南北與量不同
+    to: 受西南季風的影響，造成南北雨量不同
+    note: 與量為雨量之錯字
+    by: ai_review
 - id: doc_112_桃園_平南_自然_g9s2e1_s1_24
   section: 1
   number: 24

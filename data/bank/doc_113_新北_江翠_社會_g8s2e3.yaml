@@ -707,7 +707,7 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 夏雨型暖溫帶氣候類似副熱帶季風氣侯，請問可能為下列哪一張氣候圖？
+  stem: 夏雨型暖溫帶氣候類似副熱帶季風氣候，請問可能為下列哪一張氣候圖？（原卷有誤，已修正）
   options:
   - label: A
     content: ''
@@ -792,6 +792,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 夏雨型暖溫帶氣候類似副熱帶季風氣侯
+    to: 夏雨型暖溫帶氣候類似副熱帶季風氣候
+    note: 「氣侯」錯字，應為「氣候」
+    by: ai_review
 - id: doc_113_新北_江翠_社會_g8s2e3_s2_20
   section: 2
   number: 20
@@ -1139,7 +1144,7 @@ questions:
   number: 29
   type: single
   page: 3
-  stem: 請排列游耕的步驟 甲:遷移 乙:休耕 丙:焚林 丁耕種
+  stem: 請排列游耕的步驟 甲:遷移 乙:休耕 丙:焚林 丁:耕種（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙丙丁
@@ -1165,6 +1170,11 @@ questions:
     gemini_high: B
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 甲:遷移 乙:休耕 丙:焚林 丁耕種
+    to: 甲:遷移 乙:休耕 丙:焚林 丁:耕種
+    note: 「丁」後漏植冒號
+    by: ai_review
 - id: doc_113_新北_江翠_社會_g8s2e3_s2_30
   section: 2
   number: 30

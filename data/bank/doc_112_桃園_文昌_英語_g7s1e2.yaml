@@ -559,7 +559,7 @@ questions:
   number: 31
   type: single
   page: 4
-  stem: What is the main ideal of this reading?
+  stem: What is the main idea of this reading?（原卷有誤，已修正）
   options:
   - label: A
     content: Time only affects our health.
@@ -608,6 +608,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: What is the main ideal of this reading?
+    to: What is the main idea of this reading?
+    note: ideal應為idea
+    by: ai_review
 - id: doc_112_桃園_文昌_英語_g7s1e2_s5_32
   section: 5
   number: 32
@@ -1165,8 +1170,8 @@ questions:
   number: 41
   type: fill
   page: 6
-  stem: There is an art exhibition in the art m__________m this week. Let’s go togerher.
-    exhibition 展覽
+  stem: There is an art exhibition in the art m__________m this week. Let’s go together.
+    exhibition 展覽（原卷有誤，已修正）
   tags:
     textbook: 七上 英語 字彙（詞義、拼字、詞性變化）
     labeled_by: ai
@@ -1184,6 +1189,11 @@ questions:
   - museum
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Let’s go togerher. exhibition 展覽
+    to: Let’s go together. exhibition 展覽
+    note: togerher應為together
+    by: ai_review
 - id: doc_112_桃園_文昌_英語_g7s1e2_s6_42
   section: 6
   number: 42

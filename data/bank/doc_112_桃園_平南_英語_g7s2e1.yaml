@@ -714,7 +714,7 @@ questions:
   number: 34
   type: single
   page: 3
-  stem: "(  ) 34. What does “hand-eye coordination” mean?3\n    \U0001F4D6 throw 丟"
+  stem: "(  ) 34. What does “hand-eye coordination” mean?\n    \U0001F4D6 throw 丟（原卷有誤，已修正）"
   options:
   - label: A
     content: You play baseball on a team.
@@ -760,6 +760,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: What does “hand-eye coordination” mean?3
+    to: What does “hand-eye coordination” mean?
+    note: 問號後多印數字 3
+    by: ai_review
 - id: doc_112_桃園_平南_英語_g7s2e1_s6_35
   section: 6
   number: 35

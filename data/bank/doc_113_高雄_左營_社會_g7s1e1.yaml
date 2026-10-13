@@ -1596,7 +1596,7 @@ questions:
   number: 40
   type: single
   page: 5
-  stem: 就讀左營國中的子晴，正在網路查閱某一個概念的解釋：「人們對某一性別的性格特質產生固定、簡化的看法。例如：女生應該要溫柔賢淑；男生要勇敢果斷。」請問，子情正在查閱哪一個概念呢？
+  stem: 就讀左營國中的子晴，正在網路查閱某一個概念的解釋：「人們對某一性別的性格特質產生固定、簡化的看法。例如：女生應該要溫柔賢淑；男生要勇敢果斷。」請問，子晴正在查閱哪一個概念呢？（原卷有誤，已修正）
   options:
   - label: A
     content: 性別歧視
@@ -1623,6 +1623,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問，子情正在查閱哪一個概念呢？
+    to: 請問，子晴正在查閱哪一個概念呢？
+    note: 「子情」錯字，應為「子晴」
+    by: ai_review
 - id: doc_113_高雄_左營_社會_g7s1e1_s4_41
   section: 4
   number: 41

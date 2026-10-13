@@ -316,12 +316,12 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 如(附圖7)所示，籃球比賽開球時，裁判將球由 a 點垂直向上拋向 b 點，再落回至 a 點，若不計空氣阻力，請問關於此運動過程中的描述，下列何者錯誤？
+  stem: 如(附圖7)所示，籃球比賽開球時，裁判將球由 a 點垂直向上拋向 b 點，再落回至 a 點，若不計空氣阻力，請問關於此運動過程中的描述，下列何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: a 點上拋至 b 點的過程中，不受重力作用
   - label: B
-    content: a 點上拋至到 b 點的加速度與速度方向相反
+    content: a 點上拋至 b 點的加速度與速度方向相反
   - label: C
     content: b 點落回 a 點為等加速度運動
   - label: D
@@ -359,6 +359,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: a 點上拋至到 b 點的加速度與速度方向相反
+    to: a 點上拋至 b 點的加速度與速度方向相反
+    note: 多印「到」字
+    by: ai_review
 - id: doc_111_高雄_林園_自然_g9s1e1_s1_8
   section: 1
   number: 8
@@ -1531,7 +1536,7 @@ questions:
   number: 37
   type: single
   page: 3
-  stem: (３)林園高中在開挖紀念碑所在位置時，發現地底下有許多磨圓的鵝卵石，這主要是受何種地質作用而形成？
+  stem: (2)林園高中在開挖紀念碑所在位置時，發現地底下有許多磨圓的鵝卵石，這主要是受何種地質作用而形成？（原卷有誤，已修正）
   options:
   - label: A
     content: 冰川活動
@@ -1560,6 +1565,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: (３)林園高中在開挖紀念碑所在位置時
+    to: (２)林園高中在開挖紀念碑所在位置時
+    note: 小題編號誤植為(３)
+    by: ai_review
 - id: doc_111_高雄_林園_自然_g9s1e1_s1_38
   section: 1
   number: 38

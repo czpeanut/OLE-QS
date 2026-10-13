@@ -154,12 +154,12 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 下列對於雙套、單套、同源染色體關係的說明，何者正確？
+  stem: 下列對於雙套、單套、同源染色體關係的說明，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 有雙套染色體的細胞中一定能發現同源染色體
   - label: B
-    content: 有雙套染體的細胞中不一定能找到同源染色體
+    content: 有雙套染色體的細胞中不一定能找到同源染色體
   - label: C
     content: 具單套染色體的細胞中一定能發現同源染色體
   - label: D
@@ -181,6 +181,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 有雙套染體的細胞中不一定能找到同源染色體
+    to: 有雙套染色體的細胞中不一定能找到同源染色體
+    note: 漏「色」字
+    by: ai_review
 - id: doc_113_高雄_龍華_自然_g7s2e1_s1_6
   section: 1
   number: 6
@@ -643,7 +648,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 圖(五)為草莓花朵構造其及發育的示意圖，已知草莓是由花托處膨大而來，下列敘述，何者正確？
+  stem: 圖(五)為草莓花朵構造及其發育的示意圖，已知草莓是由花托處膨大而來，下列敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲處為草莓的果實
@@ -688,6 +693,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 圖(五)為草莓花朵構造其及發育的示意圖
+    to: 圖(五)為草莓花朵構造及其發育的示意圖
+    note: 語序顛倒，應為「及其」
+    by: ai_review
 - id: doc_113_高雄_龍華_自然_g7s2e1_s1_19
   section: 1
   number: 19
@@ -742,10 +752,10 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 依圖(六)來判斷，這不可能是哪一種植物的花？
+  stem: 依圖(六)來判斷，這不可能是哪一種植物的花？（原卷有誤，已修正）
   options:
   - label: A
-    content: 芭藥
+    content: 芭樂
   - label: B
     content: 西瓜
   - label: C
@@ -770,6 +780,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (A) 芭藥
+    to: (A) 芭樂
+    note: 「芭藥」應為「芭樂」
+    by: ai_review
 - id: doc_113_高雄_龍華_自然_g7s2e1_s1_21
   section: 1
   number: 21
@@ -1383,7 +1398,7 @@ questions:
   number: 37
   type: single
   page: 4
-  stem: 下列對於人類ABO 血型遺傳的敘述，何者正確？
+  stem: 下列對於人類ABO 血型遺傳的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 有三種不同等位基因，因此人的身上有三個控制性狀的等位基因
@@ -1392,7 +1407,7 @@ questions:
   - label: C
     content: B 型血有2 種可能的基因型
   - label: D
-    content: AB型有兩種可能的型因組合。
+    content: AB型有兩種可能的基因組合。
   tags:
     chapter:
       publisher: 翰林
@@ -1410,6 +1425,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: AB型有兩種可能的型因組合。
+    to: AB型有兩種可能的基因組合。
+    note: 「型因」應為「基因」
+    by: ai_review
 - id: doc_113_高雄_龍華_自然_g7s2e1_s1_38
   section: 1
   number: 38

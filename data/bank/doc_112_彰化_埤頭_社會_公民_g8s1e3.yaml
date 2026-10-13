@@ -928,12 +928,12 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: '右圖為我國某位地方公職選人提出的政見，由內容可知，該候選人應是競選何種職位？
+  stem: '右圖為我國某位地方公職候選人提出的政見，由內容可知，該候選人應是競選何種職位？
 
 
     1. 將5歲免童納入國民義務教育，此部分可透過地方自治的方式，優先在該市實行。
 
-    2. 推動3~4歲兒童免費育的措施，初估需新台幣12億元，這部分經費精算過，不用舉債。'
+    2. 推動3~4歲兒童免費育的措施，初估需新台幣12億元，這部分經費精算過，不用舉債。（原卷有誤，已修正）'
   options:
   - label: A
     content: 市議員
@@ -962,6 +962,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 右圖為我國某位地方公職選人提出的政見
+    to: 右圖為我國某位地方公職候選人提出的政見
+    note: 原卷漏「候」字
+    by: ai_review
 - id: doc_112_彰化_埤頭_社會_公民_g8s1e3_s2_24
   section: 2
   number: 24

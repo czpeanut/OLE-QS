@@ -1412,12 +1412,12 @@ questions:
   number: 38
   type: single
   page: 3
-  stem: 判斷發泡錠遇到水就會冒泡，是物理變化還是化學變化？原因為何？
+  stem: 判斷發泡錠遇到水就會冒泡，是物理變化還是化學變化？原因為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 物理變化，只是將原先在水裏的二氧化碳釋出
   - label: B
-    content: 物理變化，因為發泡碇原本就有碳原子與氧原子
+    content: 物理變化，因為發泡錠原本就有碳原子與氧原子
   - label: C
     content: 化學變化，因為只有化學變化會產生氣泡
   - label: D
@@ -1439,6 +1439,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 因為發泡碇原本就有碳原子與氧原子
+    to: 因為發泡錠原本就有碳原子與氧原子
+    note: 「碇」應為「錠」
+    by: ai_review
 - id: doc_112_高雄_林園_自然_g8s2e1_s2_39
   section: 2
   number: 39

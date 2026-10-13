@@ -80,6 +80,7 @@ questions:
       - 540.65
       - 366.22
       - 738.98
+    redrawn: 去除浮水印
   tags:
     chapter:
       publisher: 翰林
@@ -103,7 +104,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 自清末至民國初年，列強勢力紛紛入侵，中國長期處於內憂外患的危機，為救亡圖存，有一派知識分子主張推翻舊倫理和舊道德，效法西方民主與科學精神。請問：下面四項改革主張，何者可能是此派人物所提出？【90基測樣本一】
+  stem: 自清末至民國初年，列強勢力紛紛入侵，中國長期處於內憂外患的危機，為救亡圖存，有一派知識分子主張推翻舊倫理和舊道德，效法西方民主與科學精神。請問：下面四項改革主張，何者可能是此派人物所提出？【90基測樣本一】（原卷有誤，已修正）
   options:
   - label: A
     content: 講究實事求是，反對服從權威
@@ -112,7 +113,7 @@ questions:
   - label: C
     content: 消除文化隔閡，實現世界大同
   - label: D
-    content: 重建倫禮秩序，恢復固有文化
+    content: 重建倫理秩序，恢復固有文化
   tags:
     chapter:
       publisher: 翰林
@@ -130,6 +131,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 重建倫禮秩序，恢復固有文化
+    to: (D) 重建倫理秩序，恢復固有文化
+    note: 「倫禮」應為「倫理」
+    by: ai_review
 - id: doc_113_桃園_桃園_社會_歷史_g8s2e1_s1_4
   section: 1
   number: 4
@@ -549,7 +555,7 @@ questions:
   - label: A
     content: 甲乙丙丁
   - label: B
-    content: 甲丁乙丙
+    content: 甲丁丙乙丙
   - label: C
     content: 甲丙丁乙
   - label: D

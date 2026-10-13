@@ -261,7 +261,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 袁叔禎在〈我的父親－袁世凱〉一文中描述：「父親的事業遭到了國人普遍的反對，他在內外夾攻的情勢下，精神上的壓力為他致病的主要原因。…最後眾叛親離，才是對他沉重的打擊。他這時羞憤交加，又恨又怕，再也支撐不住住，以至身亡。」文中所謂「袁世凱的事業遭反對」是指？
+  stem: 袁叔禎在〈我的父親－袁世凱〉一文中描述：「父親的事業遭到了國人普遍的反對，他在內外夾攻的情勢下，精神上的壓力為他致病的主要原因。…最後眾叛親離，才是對他沉重的打擊。他這時羞憤交加，又恨又怕，再也支撐不住，以至身亡。」文中所謂「袁世凱的事業遭反對」是指？（原卷有誤，已修正）
   options:
   - label: A
     content: 擁立溥儀復辟
@@ -288,6 +288,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 再也支撐不住住，以至身亡
+    to: 再也支撐不住，以至身亡
+    note: 多印一個「住」字
+    by: ai_review
 - id: doc_113_台南_民德_社會_歷史_g8s2e1_s1_9
   section: 1
   number: 9
@@ -996,7 +1001,7 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: '右表日期所發生的歷史事件，皆成為中華民國所制定的重要日子，若按事件發生先先後順序排列，代碼排序應為下列何者？
+  stem: '右表日期所發生的歷史事件，皆成為中華民國所制定的重要日子，若按事件發生先後順序排列，代碼排序應為下列何者？
 
 
     | 代碼 | 日期 | 節日 |
@@ -1009,7 +1014,7 @@ questions:
 
     | 丙 | 5 月 9 日 | 國恥紀念日 |
 
-    | 丁 | 10 月 10 日 | 國慶日 |'
+    | 丁 | 10 月 10 日 | 國慶日 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 甲乙丙丁
@@ -1037,6 +1042,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 若按事件發生先先後順序排列
+    to: 若按事件發生先後順序排列
+    note: 多印一個「先」字
+    by: ai_review
 - id: doc_113_台南_民德_社會_歷史_g8s2e1_s1_31
   section: 1
   number: 31

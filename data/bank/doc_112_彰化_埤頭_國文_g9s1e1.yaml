@@ -1393,7 +1393,7 @@ questions:
   number: 45
   type: single
   page: 3
-  stem: 根據本文，身為父親的作者，認為現在在長的反教養難題為何？
+  stem: 根據本文，身為父親的作者，認為現在家長的教養難題為何？
   options:
   - label: A
     content: 孩子能接收到的訊息量不足
@@ -1431,6 +1431,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 認為現在在長的反教養難題為何？
+    to: 認為現在家長的教養難題為何？
+    note: 原卷誤植「在長的反教養」，應為「家長的教養」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s1e1_s3_46
   section: 3
   number: 46

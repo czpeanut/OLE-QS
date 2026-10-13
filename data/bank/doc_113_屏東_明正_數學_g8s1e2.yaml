@@ -373,8 +373,8 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 如附圖(四)，三角形 $ABC$ 為直角三角形，四邊形 $ACDE$ 和 $BCFG$ 為正方形。若四邊形 $ABGF$、三角形 $ABC$ 及正方形
-    $ACDE$ 的面積分別 $x$、$y$、$z$，則下列關係何者正確？
+  stem: 如附圖(四)，三角形 $ABC$ 為直角三角形，四邊形 $ACDE$ 和A $BGF$ 為正方形。若四邊形 $ABGF$、三角形 $ABC$ 及正方形
+    $ACDE$ 的面積分別 $x$、$y$、$z$，則下列關係何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: $x^{2}=y^{2}+z^{2}$
@@ -419,6 +419,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 四邊形 ACDE 和 BCFG 為正方形
+    to: 四邊形 ACDE 和 ABGF 為正方形
+    note: 圖中為正方形ABGF，BCFG印錯
+    by: ai_review
 - id: doc_113_屏東_明正_數學_g8s1e2_s2_1
   section: 2
   number: 1

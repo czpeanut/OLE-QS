@@ -411,7 +411,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 在一高塔上，有一個 300 公克重的鋼珠，由塔頂自由落到地面需要時間為 2 秒，今在施工時，一個 30 公斤重的華倫不慎由塔定掉下來，不計任合阻力的情況下，試估計到達地面所需的時間約為幾秒?
+  stem: 在一高塔上，有一個 300 公克重的鋼珠，由塔頂自由落到地面需要時間為 2 秒，今在施工時，一個 30 公斤重的華倫不慎由塔頂掉下來，不計任何阻力的情況下，試估計到達地面所需的時間約為幾秒?（原卷有誤，已修正）
   options:
   - label: A
     content: 0.02 秒
@@ -438,6 +438,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一個 30 公斤重的華倫不慎由塔定掉下來，不計任合阻力
+    to: 一個 30 公斤重的華倫不慎由塔頂掉下來，不計任何阻力
+    note: 「塔定」應為「塔頂」，「任合」應為「任何」
+    by: ai_review
 - id: doc_111_彰化_溪湖_自然_g9s1e1_s1_10
   section: 1
   number: 10

@@ -70,7 +70,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: "中國在1978 年改革開放之後，東南沿海經濟特區得以快速發展的原因，主要得利於下列哪些條件？ \n     （甲）政府優惠的政策（乙）充足的動力（丙）高科技技術成熟（丁）豐富的煤、鐵礦等原料（戊）廉價的勞工（已）便利的交通"
+  stem: "中國在1978 年改革開放之後，東南沿海經濟特區得以快速發展的原因，主要得利於下列哪些條件？ \n     （甲）政府優惠的政策（乙）充足的動力（丙）高科技技術成熟（丁）豐富的煤、鐵礦等原料（戊）廉價的勞工（己）便利的交通（原卷有誤，已修正）"
   options:
   - label: A
     content: 甲丙戊
@@ -97,6 +97,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: （戊）廉價的勞工（已）便利的交通
+    to: （戊）廉價的勞工（己）便利的交通
+    note: 天干印錯，「已」應為「己」
+    by: ai_review
 - id: doc_113_新北_崇林_社會_g8s1e2_s1_3
   section: 1
   number: 3
@@ -252,7 +257,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 臺商台明在深圳、廈門、汕頭皆設有工廠，並於深圳成立中國的營運總部，其公司的傳標語為「創意與思考激盪，讓產品跟上時代需求。」近期台明的公司也正在積極推無人機產業。根據上述內容，台明最可能是從事下列哪一產業？
+  stem: 臺商台明在深圳、廈門、汕頭皆設有工廠，並於深圳成立中國的營運總部，其公司的宣傳標語為「創意與思考激盪，讓產品跟上時代需求。」近期台明的公司也正在積極推無人機產業。根據上述內容，台明最可能是從事下列哪一產業？（原卷有誤，已修正）
   options:
   - label: A
     content: 紡織服裝業
@@ -279,6 +284,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 其公司的傳標語為「創意與思考激盪
+    to: 其公司的宣傳標語為「創意與思考激盪
+    note: 漏字，「傳標語」應為「宣傳標語」
+    by: ai_review
 - id: doc_113_新北_崇林_社會_g8s1e2_s1_8
   section: 1
   number: 8

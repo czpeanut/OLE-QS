@@ -547,7 +547,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 康熙是位法律系大學生，為了完成報告到地方法院旁聽一件民事訴訟案件。他在法庭中看到有位身穿黑色法袍鑲藍邊，針對當事人雙方的論述加以審理作出判決。請問小明看到的是誰?
+  stem: 康熙是位法律系大學生，為了完成報告到地方法院旁聽一件民事訴訟案件。他在法庭中看到有位身穿黑色法袍鑲藍邊，針對當事人雙方的論述加以審理作出判決。請問康熙看到的是誰?（原卷有誤，已修正）
   options:
   - label: A
     content: 法官
@@ -574,6 +574,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 針對當事人雙方的論述加以審理作出判決。請問小明看到的是誰?
+    to: 針對當事人雙方的論述加以審理作出判決。請問康熙看到的是誰?
+    note: 主角為康熙，誤寫為小明
+    by: ai_review
 - id: doc_111_桃園_中興_社會_公民_g9s1e3_s1_16
   section: 1
   number: 16
@@ -676,7 +681,7 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 下圖顯示出我國權利救濟管道中三種途徑，但三者的法律效力並不完成相同，若將圖中「與法院最終判決有相同效力的權利救濟方式」之區塊全部上色，則上色後的圖形為何?
+  stem: 下圖顯示出我國權利救濟管道中三種途徑，但三者的法律效力並不完全相同，若將圖中「與法院最終判決有相同效力的權利救濟方式」之區塊全部上色，則上色後的圖形為何?（原卷有誤，已修正）
   options:
   - label: A
     content: ''
@@ -778,6 +783,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 但三者的法律效力並不完成相同
+    to: 但三者的法律效力並不完全相同
+    note: 完成誤植，應為完全
+    by: ai_review
 - id: doc_111_桃園_中興_社會_公民_g9s1e3_s1_20
   section: 1
   number: 20

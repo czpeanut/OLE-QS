@@ -556,7 +556,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 圖6 速度－時間關圖係代表四輛車子於東西向筆直公路的運動狀態，向東為正，下列何者錯誤？
+  stem: 圖6 速度－時間關係圖代表四輛車子於東西向筆直公路的運動狀態，向東為正，下列何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 只有甲做等加速度運動且其行進是愈來愈快
@@ -601,6 +601,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 速度－時間關圖係代表四輛車子
+    to: 速度－時間關係圖代表四輛車子
+    note: 「關圖係」應為「關係圖」
+    by: ai_review
 - id: doc_112_彰化_溪湖_自然_g9s1e1_s2_11
   section: 2
   number: 11
@@ -1151,7 +1156,7 @@ questions:
   number: 1
   type: fill
   page: 2
-  stem: (1)如上圖一若於河中建一水壩，則途中A、B、C、D 四個地點，哪一處泥沙沉積量最大？
+  stem: (1)如上圖一若於河中建一水壩，則圖中A、B、C、D 四個地點，哪一處泥沙沉積量最大？（原卷有誤，已修正）
   group_stem: "1,下圖一和圖二分別為河道上游與下游分布圖(未依比例)， \n  試回答下列問題："
   shared_asset: g3_1_4
   tags:
@@ -1171,19 +1176,24 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則途中A、B、C、D 四個地點
+    to: 則圖中A、B、C、D 四個地點
+    note: 「途中」應為「圖中」
+    by: ai_review
 - id: doc_112_彰化_溪湖_自然_g9s1e1_s3_2
   section: 3
   number: 2
   type: single
   page: 2
-  stem: (2)某工程公司在某溪各段建橋位置分布，如圖二所示（假設溪流之水量一樣），若在X 處開採砂石，下列選項中的橋梁何者容易因侵蝕而造成橋墩裸露？
+  stem: (2)某工程公司在某溪各段建橋位置分布，如圖二所示（假設溪流之水量一樣），若在X 處開採砂石，下列選項中的橋梁何者容易因侵蝕而造成橋墩裸露？（原卷有誤，已修正）
   options:
   - label: A
     content: 僅甲1～甲2
   - label: B
     content: 甲1～甲2 與乙1～乙2
   - label: C
-    content: 乙1～乙2 與丙1 丙2
+    content: 乙1～乙2 與丙1~ 丙2
   - label: D
     content: 丙1～丙2 與丁1～丁2
   group_stem: "1,下圖一和圖二分別為河道上游與下游分布圖(未依比例)， \n  試回答下列問題："
@@ -1205,6 +1215,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 乙1～乙2 與丙1 丙2
+    to: (C) 乙1～乙2 與丙1～丙2
+    note: 「丙1 丙2」漏波浪號
+    by: ai_review
 - id: doc_112_彰化_溪湖_自然_g9s1e1_s3_3
   section: 3
   number: 3

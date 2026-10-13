@@ -277,7 +277,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 孟德爾由實驗推論，豌豆莖高或矮的表徵由T 和t 兩個遺傳因子所控制，高莖（T）為顯性，矮莖（t）為隱性。若將兩高莖豌豆(Ttｘtt)進行雜交授粉，其子代的表徵為何？
+  stem: 孟德爾由實驗推論，豌豆莖高或矮的表徵由T 和t 兩個遺傳因子所控制，高莖（T）為顯性，矮莖（t）為隱性。若將兩高莖豌豆(TtｘTt)進行雜交授粉，其子代的表徵為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 全部為高莖
@@ -304,6 +304,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若將兩高莖豌豆(Ttｘtt)進行雜交授粉
+    to: 若將兩高莖豌豆(TtｘTt)進行雜交授粉
+    note: 兩高莖應為Tt×Tt，否則tt為矮莖
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g7s2e1_s1_9
   section: 1
   number: 9
@@ -744,7 +749,7 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: 人類產生肌肉細胞與產生精細胞的比較，下列何者正確？
+  stem: 人類產生皮膚細胞與產生精細胞的比較，下列何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 兩者在分裂過程均會發生同源染色體分離
@@ -771,6 +776,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 人類產生肌肉細胞與產生精細胞的比較
+    to: 人類產生皮膚細胞與產生精細胞的比較
+    note: 選項皆為皮膚細胞，題幹誤寫為肌肉細胞
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g7s2e1_s1_22
   section: 1
   number: 22
@@ -1244,14 +1254,14 @@ questions:
   number: 33
   type: single
   page: 4
-  stem: 關於人類染色體的敘述，何者錯誤？
+  stem: 關於人類染色體的敘述，何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 人類的體細胞具有雙套染色體
   - label: B
     content: 人類的生殖細胞內有體染色體、也有性染色體
   - label: C
-    content: 大小、形狀相同的染色體，稱為雙套染色體
+    content: 大小、形狀相同的染色體，稱為同源染色體
   - label: D
     content: 男孩的X 染色體和Y 染色體是一對同源染色體。
   tags:
@@ -1271,6 +1281,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 大小、形狀相同的染色體，稱為雙套染色體
+    to: 大小、形狀相同的染色體，稱為同源染色體
+    note: 雙套應為同源染色體
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g7s2e1_s1_34
   section: 1
   number: 34
@@ -1309,7 +1324,7 @@ questions:
   number: 35
   type: single
   page: 4
-  stem: 根據遺傳實驗得知，豚鼠毛色是由一對遺傳因子所控制，與性別無關，且黑色對白色是顯性。今做一組豚鼠毛色的遺傳實驗，結果如下圖八所示，當$F_{1}$數目不斷增加時，則黑毛豚鼠將從下圖中75％的位置趨近於下列何者？
+  stem: 根據遺傳實驗得知，豚鼠毛色是由一對遺傳因子所控制，與性別無關，且黑色對白色是顯性。今做一組豚鼠毛色的遺傳實驗，結果如下圖所示，當$F_{1}$數目不斷增加時，則黑毛豚鼠將從下圖中75％的位置趨近於下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲：100％
@@ -1354,6 +1369,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 結果如下圖八所示
+    to: 結果如下圖所示
+    note: 原卷誤印「圖八」
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g7s2e1_s1_36
   section: 1
   number: 36
@@ -1445,10 +1465,10 @@ questions:
   number: 38
   type: single
   page: 4
-  stem: 甲、乙、丙三種生物胚胎發育時的養分來源依序為何？
+  stem: 甲、乙、丙三種生物胚胎發育時的養分來源依序為何？（原卷有誤，已修正）
   options:
   - label: A
-    content: 甲-母體；乙-繫帶；丙-卵黃
+    content: 甲-卵黃；乙-繫帶；丙-卵黃
   - label: B
     content: 甲-母體；乙-卵黃；丙-母體
   - label: C
@@ -1483,12 +1503,17 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B)甲-母體；乙-卵黃；丙-母體(C)甲-母體；乙-卵黃；丙-母體
+    to: (B)甲-母體；乙-卵黃；丙-母體(C)甲-卵黃；乙-卵黃；丙-母體
+    note: 選項(B)與(C)完全重複印錯
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g7s2e1_s1_39
   section: 1
   number: 39
   type: single
   page: 4
-  stem: 在右側的女性生殖系統圖中，何處受精作用發生的地點?
+  stem: 在右側的女性生殖系統圖中，何處為受精作用發生的地點?（原卷有誤，已修正）
   options:
   - label: A
     content: A
@@ -1519,6 +1544,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 何處受精作用發生的地點?
+    to: 何處為受精作用發生的地點?
+    note: 漏字「為」
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g7s2e1_s1_40
   section: 1
   number: 40
@@ -1793,7 +1823,7 @@ questions:
   number: 47
   type: single
   page: 5
-  stem: 何種構造可將精細胞送到胚株中與卵結合?
+  stem: 何種構造可將精細胞送到胚珠中與卵結合?（原卷有誤，已修正）
   options:
   - label: A
     content: 玉米鬚
@@ -1825,6 +1855,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 送到胚株中與卵結合?
+    to: 送到胚珠中與卵結合?
+    note: 「株」應作「珠」
+    by: ai_review
 - id: doc_113_高雄_翠屏_自然_g7s2e1_s1_48
   section: 1
   number: 48

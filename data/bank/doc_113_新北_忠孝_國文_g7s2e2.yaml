@@ -1610,12 +1610,12 @@ questions:
   number: 5
   type: single
   page: 4
-  stem: 石虎是我們的龍貓一文中，為什麽作者可以由「幾隻石虎的存在」，得知「還擁有一塊上百公頃以上蓊鬱完整的山林」?
+  stem: 石虎是我們的龍貓一文中，為什麽作者可以由「幾隻石虎的存在」，得知「還擁有一塊上百公頃以上蓊鬱完整的山林」?（原卷有誤，已修正）
   options:
   - label: A
     content: 石虎相當凶猛，棲地山林難以開墾，石虎的存在證明山林的完整性
   - label: B
-    content: 石虎是食物鍵最高層，石虎會守護森林，一如龍貓守護森林
+    content: 石虎是食物鏈最高層，石虎會守護森林，一如龍貓守護森林
   - label: C
     content: 石虎需要廣闊生活空間，石虎的存在可以得知山林的生態完整性
   - label: D
@@ -1646,6 +1646,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 石虎是食物鍵最高層，石虎會守護森林
+    to: 石虎是食物鏈最高層，石虎會守護森林
+    note: 「鍵」應作「鏈」
+    by: ai_review
 - id: doc_113_新北_忠孝_國文_g7s2e2_s7_6
   section: 7
   number: 6

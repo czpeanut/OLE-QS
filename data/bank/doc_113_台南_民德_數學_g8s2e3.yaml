@@ -897,8 +897,8 @@ questions:
   number: 20
   type: single
   page: 4
-  stem: 如圖，四邊形 $ABCE$ 為等腰梯形，$\overline{EF}$ 為兩腰中點連線段。若 $\overline{CF} = \overline{FG}$，且梯形
-    $ABCD$ 面積為 36，則 $\triangle BFG$ 的面積為何？
+  stem: 如圖，四邊形 $ABCD$ 為等腰梯形，$\overline{EF}$ 為兩腰中點連線段。若 $\overline{CF} = \overline{FG}$，且梯形
+    $ABCD$ 面積為 36，則 $\triangle BFG$ 的面積為何？（原卷有誤，已修正）
   options:
   - label: A
     content: '6'
@@ -942,6 +942,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 四邊形 $ABCE$ 為等腰梯形
+    to: 四邊形 $ABCD$ 為等腰梯形
+    note: 梯形名稱誤植為ABCE，應為ABCD
+    by: ai_review
 - id: doc_113_台南_民德_數學_g8s2e3_s1_21
   section: 1
   number: 21

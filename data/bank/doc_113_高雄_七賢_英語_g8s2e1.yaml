@@ -928,7 +928,7 @@ questions:
   number: 41
   type: single
   page: 4
-  stem: What is ◆ in the the poem?
+  stem: What is ◆ in the  poem?（原卷有誤，已修正）
   options:
   - label: A
     content: sad
@@ -994,12 +994,17 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: What is ◆ in the the poem?
+    to: What is ◆ in the poem?
+    note: 多印一個the
+    by: ai_review
 - id: doc_113_高雄_七賢_英語_g8s2e1_s3_42
   section: 3
   number: 42
   type: single
   page: 4
-  stem: The writer will never ask a zerbra about stripes because _________.
+  stem: The writer will never ask a zebra about stripes because _________.（原卷有誤，已修正）
   options:
   - label: A
     content: the writer is sloppy
@@ -1065,6 +1070,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: The writer will never ask a zerbra about stripes because
+    to: The writer will never ask a zebra about stripes because
+    note: zerbra拼錯，應為zebra
+    by: ai_review
 - id: doc_113_高雄_七賢_英語_g8s2e1_s3_43
   section: 3
   number: 43

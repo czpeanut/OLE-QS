@@ -918,7 +918,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 小額畫了一幅自畫像，黑髮紅帽，一件深黑短袖，掛在牆上用藍光照射，請問他的帽子、衣服分別看成來呈什麼顏色？
+  stem: 小額畫了一幅自畫像，黑髮紅帽，一件深黑短袖，掛在牆上用藍光照射，請問他的帽子、衣服分別看起來呈什麼顏色？（原卷有誤，已修正）
   options:
   - label: A
     content: 藍色、藍色
@@ -962,12 +962,17 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 衣服分別看成來呈什麼顏色？
+    to: 衣服分別看起來呈什麼顏色？
+    note: 「看成來」應為「看起來」
+    by: ai_review
 - id: doc_111_桃園_平南_自然_g8s1e2_s1_29
   section: 1
   number: 29
   type: single
   page: 2
-  stem: 陽光通過紅色的透明紙，然後照在小額的自畫像，請問他的帽子、衣服分別看成來呈什麼顏色？
+  stem: 陽光通過紅色的透明紙，然後照在小額的自畫像，請問他的帽子、衣服分別看起來呈什麼顏色？（原卷有誤，已修正）
   options:
   - label: A
     content: 紅色、紅色
@@ -994,6 +999,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 衣服分別看成來呈什麼顏色？
+    to: 衣服分別看起來呈什麼顏色？
+    note: 「看成來」應為「看起來」
+    by: ai_review
 - id: doc_111_桃園_平南_自然_g8s1e2_s1_30
   section: 1
   number: 30
@@ -1357,7 +1367,7 @@ questions:
   number: 39
   type: single
   page: 3
-  stem: 當光線穿過空氣和水的交界面發生折射，請問哪一個法線的畫法是正確的？
+  stem: 當光線穿過空氣和玻璃的交界面發生折射，請問哪一個法線的畫法是正確的？（原卷有誤，已修正）
   options:
   - label: A
     content: ''
@@ -1448,6 +1458,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當光線穿過空氣和水的交界面發生折射
+    to: 當光線穿過空氣和玻璃的交界面發生折射
+    note: 選項圖中標示介質為玻璃而非水
+    by: ai_review
 - id: doc_111_桃園_平南_自然_g8s1e2_s1_40
   section: 1
   number: 40

@@ -1105,7 +1105,7 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: 小婷從小就是虔誠的是天主教徒，她一直很想去看自己所信仰宗教的最高行政機構，她應該報名哪一家旅行社的行程？
+  stem: 小婷從小就是虔誠的天主教徒，她一直很想去看自己所信仰宗教的最高行政機構，她應該報名哪一家旅行社的行程？（原卷有誤，已修正）
   options:
   - label: A
     content: 晴朗
@@ -1161,6 +1161,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小婷從小就是虔誠的是天主教徒，她一直很想去
+    to: 小婷從小就是虔誠的天主教徒，她一直很想去
+    note: 多印「是」字
+    by: ai_review
 - id: doc_112_嘉義_北興_社會_歷史_g9s1e2_s2_31
   section: 2
   number: 31

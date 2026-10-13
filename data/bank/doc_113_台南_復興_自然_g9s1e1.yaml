@@ -369,6 +369,7 @@ questions:
       - 500.07
       - 557.35
       - 598.58
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -560,12 +561,12 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 右圖(4)是某物體在直線上運動時的位置和時間關係圖(x-t 圖)，則下列敘述何者正確？
+  stem: 右圖(4)是某物體在直線上運動時的位置和時間關係圖(x-t 圖)，則下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 此物體運動軌跡為曲線
   - label: B
-    content: 物體在時間 A 時轉變改變運動方向
+    content: 物體在時間 A 時改變運動方向
   - label: C
     content: 物體在 OA 階段的路徑長等於位移大小
   - label: D
@@ -587,6 +588,7 @@ questions:
       - 557.35
       - 125.35
     crop_by: auto
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -606,6 +608,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 物體在時間 A 時轉變改變運動方向
+    to: 物體在時間 A 時改變運動方向
+    note: 多印贅字「轉變」
+    by: ai_review
 - id: doc_113_台南_復興_自然_g9s1e1_s1_14
   section: 1
   number: 14
@@ -700,6 +707,7 @@ questions:
       - 217.31
       - 544.25
       - 304.69
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -745,6 +753,7 @@ questions:
       - 303.05
       - 553.09
       - 389.78
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1065,6 +1074,7 @@ questions:
         - 154.15
         - 213.05
       crop_by: auto
+      redrawn: 去除浮水印
   - label: B
     content: ''
     asset:
@@ -1077,6 +1087,7 @@ questions:
         - 142.36
         - 242.84
         - 213.05
+      redrawn: 去除浮水印
   - label: C
     content: ''
     asset:
@@ -1089,6 +1100,7 @@ questions:
         - 142.36
         - 334.47
         - 213.05
+      redrawn: 去除浮水印
   - label: D
     content: ''
     asset:
@@ -1101,6 +1113,7 @@ questions:
         - 144.0
         - 439.2
         - 213.71
+      redrawn: 去除浮水印
   group_stem: ◎小宇將質量為 200g 的甲金屬球從樓頂靜止落下，測得開始落下瞬間的加速度值為 $g_{0}$ m/$s^{2}$。接著小宇再將另一個質量為
     400g 的乙金屬球從同地點、同高度靜止落下，若不考慮空氣阻力，且當時無風，請回答 24~26 題：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1250,6 +1263,7 @@ questions:
       - 361.96
       - 546.55
       - 445.42
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1296,6 +1310,7 @@ questions:
       - 448.69
       - 532.8
       - 541.31
+    redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1465,6 +1480,7 @@ questions:
         - 159.05
         - 131.24
       crop_by: auto
+      redrawn: 去除浮水印
   - label: B
     content: ''
     asset:
@@ -1477,6 +1493,7 @@ questions:
         - 74.29
         - 267.38
         - 131.24
+      redrawn: 去除浮水印
   - label: C
     content: ''
     asset:
@@ -1489,6 +1506,7 @@ questions:
         - 74.29
         - 361.31
         - 131.24
+      redrawn: 去除浮水印
   - label: D
     content: ''
     asset:
@@ -1507,6 +1525,7 @@ questions:
         - 468.98
         - 131.24
       crop_by: auto
+      redrawn: 去除浮水印
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1860,6 +1879,7 @@ shared_assets:
     - 398.29
     - 557.35
     - 501.71
+  redrawn: 去除浮水印
 - key: g1_20_21
   label: 題組附圖
   kind: figure
@@ -1880,6 +1900,7 @@ shared_assets:
     - 532.15
     - 683.67
   crop_by: auto
+  redrawn: 去除浮水印
 - key: g1_22_23
   label: 題組附圖
   kind: figure
@@ -1915,6 +1936,7 @@ shared_assets:
     - 152.51
     - 544.25
     - 272.62
+  redrawn: 去除浮水印
 - key: g2_4_5
   label: 題組附圖
   kind: figure
@@ -1929,3 +1951,4 @@ shared_assets:
     - 304.36
     - 545.56
     - 410.4
+  redrawn: 去除浮水印

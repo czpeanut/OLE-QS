@@ -850,7 +850,7 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: '下表為各洲的人口資料，根據表中資料可推論，目前歐洲地區許多國家面哪一項人口問題?
+  stem: '下表為各洲的人口資料，根據表中資料可推論，目前歐洲地區許多國家面臨哪一項人口問題?
 
 
     | | 出生率 | 死亡率 | 自然增加率 |
@@ -863,7 +863,7 @@ questions:
 
     | 亞洲 | 16 | 7 | 9 |
 
-    | 非洲 | 18 | 8 | 10 |'
+    | 非洲 | 18 | 8 | 10 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 人口停滯或負成長
@@ -890,6 +890,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 目前歐洲地區許多國家面哪一項人口問題?
+    to: 目前歐洲地區許多國家面臨哪一項人口問題?
+    note: 漏字，「面」應為「面臨」
+    by: ai_review
 - id: doc_113_台北_誠正_社會_地理_g9s1e1_s1_27
   section: 1
   number: 27

@@ -1572,7 +1572,7 @@ questions:
   number: 8
   type: single
   page: 5
-  stem: 根據以上內容，2 人同行持此兌換券消費，餐點組合最可能是下咧哪一種？
+  stem: 根據以上內容，2 人同行持此兌換券消費，餐點組合最可能是下列哪一種？（原卷有誤，已修正）
   options:
   - label: A
     content: 紅燒鰻、時令青菜、旗魚羹麵、五味花枝、蝦仁煎
@@ -1607,6 +1607,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 餐點組合最可能是下咧哪一種？
+    to: 餐點組合最可能是下列哪一種？
+    note: 「下咧」為錯字，應作「下列」
+    by: ai_review
 - id: doc_111_高雄_大灣_國文_g7s2e2_s4_9
   section: 4
   number: 9

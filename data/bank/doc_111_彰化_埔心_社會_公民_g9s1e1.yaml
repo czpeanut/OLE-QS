@@ -1054,7 +1054,7 @@ questions:
   number: 29
   type: single
   page: 2
-  stem: '因為疫情關係，許多餐飲業者生意大受影響，許多店家開始尋求因應之道。下表是三個店家採行的方式。一表格內容判斷，這三家業者所採取的是下列哪一策略？
+  stem: '因為疫情關係，許多餐飲業者生意大受影響，許多店家開始尋求因應之道。下表是三個店家採行的方式。依表格內容判斷，這三家業者所採取的是下列哪一策略？
 
 
     | 店家 | 因應策略 |
@@ -1065,7 +1065,7 @@ questions:
 
     | 乙 | 減少廣告 |
 
-    | 丙 | 減少食材浪費 |'
+    | 丙 | 減少食材浪費 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 提高銷貨收入
@@ -1092,12 +1092,17 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一表格內容判斷，這三家業者所採取的是下列哪一策略？
+    to: 依表格內容判斷，這三家業者所採取的是下列哪一策略？
+    note: 「一」為「依」之錯字
+    by: ai_review
 - id: doc_111_彰化_埔心_社會_公民_g9s1e1_s1_30
   section: 1
   number: 30
   type: single
   page: 2
-  stem: 經濟學是一門關著「選擇」的學科，下列哪些活動涉及選擇，屬於經濟問題？
+  stem: 經濟學是一門關於「選擇」的學科，下列哪些活動涉及選擇，屬於經濟問題？（原卷有誤，已修正）
   options:
   - label: A
     content: 是否調降遺產稅
@@ -1124,3 +1129,8 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 經濟學是一門關著「選擇」的學科
+    to: 經濟學是一門關於「選擇」的學科
+    note: 「關著」為「關於」之錯字
+    by: ai_review

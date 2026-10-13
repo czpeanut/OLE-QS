@@ -722,13 +722,13 @@ questions:
   number: 16
   type: single
   page: 3
-  stem: 下列敘述何者為非？
+  stem: 下列敘述何者為非？（原卷有誤，已修正）
   options:
   - label: A
     content: $\overline{AB}$、$\overline{CD}$ 為圓 O 的兩弦，若 $\overline{AB}\parallel\overline{CD}$，則
       $\overline{AB}=\overline{CD}$
   - label: B
-    content: 圓 O 的半徑為 8，若圓心直線 L 的距離為 6，則直線 L 與圓 O 有 2 個交點
+    content: 圓 O 的半徑為 8，若圓心到直線 L 的距離為 6，則直線 L 與圓 O 有 2 個交點
   - label: C
     content: 同一圓中，度數越大的弧，其長度越長
   - label: D
@@ -751,6 +751,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 若圓心直線 L 的距離為 6
+    to: 若圓心到直線 L 的距離為 6
+    note: 原卷漏「到」字
+    by: ai_review
 - id: doc_111_彰化_福興_數學_g9s1e2_s1_17
   section: 1
   number: 17

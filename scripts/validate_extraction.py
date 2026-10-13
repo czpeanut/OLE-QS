@@ -185,6 +185,9 @@ def check(doc: dict) -> list[tuple[str, str]]:
         if not users:
             warn(f"共用素材 {key}：沒有任何題目引用")
         declared = a.get("used_by")
+        # used_by 早期存題號，現在存題目 id：兩種都接受
+        if declared and all(isinstance(d, str) for d in declared):
+            users = [q.get("id") for q in questions if q.get("shared_asset") == key]
         if declared and sorted(declared) != sorted(n for n in users if n is not None):
             err(f"共用素材 {key}：宣告由 {declared} 使用，實際引用的是 {sorted(users)}")
 
