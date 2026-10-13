@@ -1063,8 +1063,8 @@ questions:
   number: 4
   type: fill
   page: 3
-  stem: 有 15 位同學假日去大魯閣練習打棒球，挑戰時速 158 公里的快速球，每人打擊 10 次，擊中球數的統計如右圖所示，則集中球數的 $Q_{2}$
-    為____(9)____球。
+  stem: 有 15 位同學假日去大魯閣練習打棒球，挑戰時速 158 公里的快速球，每人打擊 10 次，擊中球數的統計如右圖所示，則擊中球數的 $Q_{2}$
+    為____(9)____球。（原卷有誤，已修正）
   assets:
   - key: s2_4_f1
     kind: figure
@@ -1099,6 +1099,11 @@ questions:
   - '2'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則集中球數的 $Q_{2}$ 為
+    to: 則擊中球數的 $Q_{2}$ 為
+    note: 「集中」為錯字，應為「擊中」
+    by: ai_review
 - id: doc_113_高雄_五甲_數學_g9s2e1_s2_5
   section: 2
   number: 5

@@ -171,7 +171,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 此帝國是一個重視文化的國家甚至保存世界各地輝煌的文化與知識，下列哪一事件生，與其重視保存文化有間接或直接關係？
+  stem: 此帝國是一個重視文化的國家甚至保存世界各地輝煌的文化與知識，下列哪一事件發生，與其重視保存文化有間接或直接關係？（原卷有誤，已修正）
   options:
   - label: A
     content: 歐洲的文藝復興運動
@@ -201,6 +201,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 下列哪一事件生，與其重視保存文化
+    to: 下列哪一事件發生，與其重視保存文化
+    note: 漏「發」字
+    by: ai_review
 - id: doc_111_彰化_福興_社會_歷史_g9s1e2_s1_6
   section: 1
   number: 6

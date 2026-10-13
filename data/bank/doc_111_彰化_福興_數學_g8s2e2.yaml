@@ -663,7 +663,7 @@ questions:
   number: 5
   type: fill
   page: 2
-  stem: 如下圖(五)，$ABCDE$ 是一正五邊形，$DFGC$ 是一正方形，則 $\angle ADF=$ __(5)__
+  stem: 如下圖(五)，$ABCDE$ 是一正五邊形，$DFGC$ 是一正方形，則 $\angle EDF=$ __(5)__（原卷有誤，已修正）
   assets:
   - key: s2_5_f1
     kind: figure
@@ -701,6 +701,11 @@ questions:
   - 18^\circ
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 則 $\angle ADF=$
+    to: 則 $\angle EDF=$
+    note: 應為角EDF，度數才為108°-90°=18°
+    by: ai_review
 - id: doc_111_彰化_福興_數學_g8s2e2_s2_6
   section: 2
   number: 6

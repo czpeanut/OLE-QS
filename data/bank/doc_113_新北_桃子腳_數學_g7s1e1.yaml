@@ -220,10 +220,10 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列各等式中，何者是正確的？
+  stem: 下列各等式中，何者是正確的？（原卷有誤，已修正）
   options:
   - label: A
-    content: $5^{4}=(-5^{4})$
+    content: $5^{4}=(-5)^{4}$
   - label: B
     content: $5^{3}=(-5^{3})$
   - label: C
@@ -248,6 +248,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (A) $5^{4}=(-5^{4})$
+    to: (A) $5^{4}=(-5)^{4}$
+    note: 指數位置印錯，應在括號外
+    by: ai_review
 - id: doc_113_新北_桃子腳_數學_g7s1e1_s1_7
   section: 1
   number: 7

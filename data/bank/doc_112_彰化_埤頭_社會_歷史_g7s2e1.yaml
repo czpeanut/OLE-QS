@@ -163,7 +163,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 日治時期，總督府為發展經濟，在農業上選擇哪兩種作物從事業農業改革，增加生產，以因應日本國內經濟之所需？
+  stem: 日治時期，總督府為發展經濟，在農業上選擇哪兩種作物從事農業改革，增加生產，以因應日本國內經濟之所需？（原卷有誤，已修正）
   options:
   - label: A
     content: 稻米、樟腦
@@ -192,6 +192,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在農業上選擇哪兩種作物從事業農業改革
+    to: 在農業上選擇哪兩種作物從事農業改革
+    note: 多印「業」字
+    by: ai_review
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e1_s1_6
   section: 1
   number: 6
@@ -367,7 +372,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 有一首歌歌曲《榮譽的軍伕》是日治時期日本為激發臺灣人「愛國」情懷所改編的時代歌曲，其中部分的歌詞是「獻給天皇，我的生命；為了國家，不會憐惜……如要凋謝，去做櫻花；我的祖父，榮譽軍伕……」。這應該是日本統治臺灣的哪個階段？
+  stem: 有一首歌曲《榮譽的軍伕》是日治時期日本為激發臺灣人「愛國」情懷所改編的時代歌曲，其中部分的歌詞是「獻給天皇，我的生命；為了國家，不會憐惜……如要凋謝，去做櫻花；我的祖父，榮譽軍伕……」。這應該是日本統治臺灣的哪個階段？
   options:
   - label: A
     content: 鎮壓抗日階段
@@ -396,6 +401,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 有一首歌歌曲《榮譽的軍伕》
+    to: 有一首歌曲《榮譽的軍伕》
+    note: 多印「歌」字
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e1_s1_12
   section: 1
   number: 12

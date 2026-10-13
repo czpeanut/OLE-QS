@@ -284,8 +284,8 @@ questions:
   type: single
   page: 2
   stem: '如右圖，長方形ABCD 中，$\overline{AD} = 5$，$\overline{CD} = 3$，且$\overline{BD}$為對角線，E
-    為$\overline{BD}$上一點，$\overline{BD}$、$\overline{AE}$與$\overline{CD}$將長方形分成甲、乙、丙、丁四個三角形。若$\overline{BE}
-    : \overline{DE} = 5 : 4$，則甲面積:丁面積=？'
+    為$\overline{BD}$上一點，$\overline{BD}$、$\overline{AE}$與$\overline{CE}$將長方形分成甲、乙、丙、丁四個三角形。若$\overline{BE}
+    : \overline{DE} = 5 : 4$，則甲面積:丁面積=？（原卷有誤，已修正）'
   options:
   - label: A
     content: '$4 : 5$'
@@ -329,6 +329,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: $\overline{BD}$、$\overline{AE}$與$\overline{CD}$將長方形分成甲、乙、丙、丁四個三角形
+    to: $\overline{BD}$、$\overline{AE}$與$\overline{CE}$將長方形分成甲、乙、丙、丁四個三角形
+    note: 應為線段CE而非CD
+    by: ai_review
 - id: doc_113_高雄_光華_數學_g9s2e2_s1_9
   section: 1
   number: 9

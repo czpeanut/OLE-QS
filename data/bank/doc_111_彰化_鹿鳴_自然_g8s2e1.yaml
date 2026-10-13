@@ -601,7 +601,7 @@ questions:
 
     | 質子數 | 8 | 3 | 7 | 14 | 16 |
 
-    | 原子量 | 8 | 7 | 14 | 28 | 32 |'
+    | 原子量 | 16 | 7 | 14 | 28 | 32 |（原卷有誤，已修正）'
   options:
   - label: A
     content: Li
@@ -628,6 +628,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 原子量 | 8 | 7 | 14 | 28 | 32 |
+    to: 原子量 | 16 | 7 | 14 | 28 | 32 |
+    note: 氧的原子量應為 16，誤印為 8
+    by: ai_review
 - id: doc_111_彰化_鹿鳴_自然_g8s2e1_s1_19
   section: 1
   number: 19

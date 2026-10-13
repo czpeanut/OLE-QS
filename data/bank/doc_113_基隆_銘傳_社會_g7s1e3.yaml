@@ -144,7 +144,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 暑假時台灣普遍高溫炎熱，若暑假在台灣旅遊欲選擇較涼爽的地區，下列四地何者最適合成？
+  stem: 暑假時台灣普遍高溫炎熱，若暑假在台灣旅遊欲選擇較涼爽的地區，下列四地何者最適合？
   options:
   - label: A
     content: 阿里山
@@ -173,6 +173,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列四地何者最適合成？
+    to: 下列四地何者最適合？
+    note: 句末贅印「成」字
+    by: ai_review
+    extraction: true
 - id: doc_113_基隆_銘傳_社會_g7s1e3_s1_4
   section: 1
   number: 4
@@ -595,7 +601,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 某新聞報導指出台灣2025跨年夜受全台會受到東北季風影響，對想看台北信義區101跨年煙火的民眾來說，最佳觀賞方位，建議避免至下風處。附圖是台北各區行政區分布圖，何者位於上述中的下風處？
+  stem: 某新聞報導指出台灣2025跨年夜全台會受到東北季風影響，對想看台北信義區101跨年煙火的民眾來說，最佳觀賞方位，建議避免至下風處。附圖是台北各區行政區分布圖，何者位於上述中的下風處？（原卷有誤，已修正）
   options:
   - label: A
     content: 松山
@@ -642,6 +648,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 某新聞報導指出台灣2025跨年夜受全台會受到東北季風影響
+    to: 某新聞報導指出台灣2025跨年夜全台會受到東北季風影響
+    note: 「受全台會受到」多印「受」字
+    by: ai_review
 - id: doc_113_基隆_銘傳_社會_g7s1e3_s1_11
   section: 1
   number: 11

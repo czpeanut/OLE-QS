@@ -561,12 +561,12 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 右圖(4)是某物體在直線上運動時的位置和時間關係圖(x-t 圖)，則下列敘述何者正確？
+  stem: 右圖(4)是某物體在直線上運動時的位置和時間關係圖(x-t 圖)，則下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 此物體運動軌跡為曲線
   - label: B
-    content: 物體在時間 A 時轉變改變運動方向
+    content: 物體在時間 A 時改變運動方向
   - label: C
     content: 物體在 OA 階段的路徑長等於位移大小
   - label: D
@@ -608,6 +608,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 物體在時間 A 時轉變改變運動方向
+    to: 物體在時間 A 時改變運動方向
+    note: 多印贅字「轉變」
+    by: ai_review
 - id: doc_113_台南_復興_自然_g9s1e1_s1_14
   section: 1
   number: 14

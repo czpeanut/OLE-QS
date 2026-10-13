@@ -877,7 +877,7 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 「美國線上與全國安全網路聯盟進行線上安全研究，發現懂不到半數的受訪者聽過『釣魚』；所謂的釣魚係指詐騙者寄發電子郵件，借此取得信用卡號碼或密碼等個人資料，由於這些郵件看像從銀行等合法公司寄出，易造成消費者上當，不過八成受訪者相信自己不會受騙。」根據上述，下列推論何者正確？
+  stem: 「美國線上與全國安全網路聯盟進行線上安全研究，發現僅不到半數的受訪者聽過『釣魚』；所謂的釣魚係指詐騙者寄發電子郵件，借此取得信用卡號碼或密碼等個人資料，由於這些郵件看像從銀行等合法公司寄出，易造成消費者上當，不過八成受訪者相信自己不會受騙。」根據上述，下列推論何者正確？
   options:
   - label: A
     content: 詐騙者只使用電子郵件
@@ -906,6 +906,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 發現懂不到半數的受訪者
+    to: 發現僅不到半數的受訪者
+    note: 「懂」字印錯，應為「僅」
+    by: ai_review
+    extraction: true
 - id: doc_113_高雄_五甲_國文_g7s1e3_s4_1
   section: 4
   number: 1
@@ -923,7 +929,7 @@ questions:
     content: 元宵節
   group_stem: '鄰僅老夫婦二人，灌園為業，知余夫婦避暑於此，先來通殷勤，並釣池魚、摘園蔬為饋，償其價，不受，芸作鞋報之，始謝而受。
 
-    時方七月，綠樹蔭濃，水面風來，蟬鳴聒耳。鄰老又為製魚竿，與芸垂釣於柳蔭深處。日落時登土山觀晚霞夕照，隨意聯吟，友「獸雲吞落日，弓月彈流星」之句。
+    時方七月，綠樹蔭濃，水面風來，蟬鳴聒耳。鄰老又為製魚竿，與芸垂釣於柳蔭深處。日落時登土山觀晚霞夕照，隨意聯吟，有「獸雲吞落日，弓月彈流星」之句。
 
     少焉，月印池中，蟲聲四起，設竹榻於籬下，老嫗報酒溫飯熱，遂就月光對酌，微醺而飯。
 
@@ -947,6 +953,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 隨意聯吟，友「獸雲吞落日
+    to: 隨意聯吟，有「獸雲吞落日
+    note: 「友」字印錯，應為「有」
+    by: ai_review
+    extraction: true
 - id: doc_113_高雄_五甲_國文_g7s1e3_s4_2
   section: 4
   number: 2
@@ -964,7 +976,7 @@ questions:
     content: 甲乙丁己
   group_stem: '鄰僅老夫婦二人，灌園為業，知余夫婦避暑於此，先來通殷勤，並釣池魚、摘園蔬為饋，償其價，不受，芸作鞋報之，始謝而受。
 
-    時方七月，綠樹蔭濃，水面風來，蟬鳴聒耳。鄰老又為製魚竿，與芸垂釣於柳蔭深處。日落時登土山觀晚霞夕照，隨意聯吟，友「獸雲吞落日，弓月彈流星」之句。
+    時方七月，綠樹蔭濃，水面風來，蟬鳴聒耳。鄰老又為製魚竿，與芸垂釣於柳蔭深處。日落時登土山觀晚霞夕照，隨意聯吟，有「獸雲吞落日，弓月彈流星」之句。
 
     少焉，月印池中，蟲聲四起，設竹榻於籬下，老嫗報酒溫飯熱，遂就月光對酌，微醺而飯。
 
@@ -1209,10 +1221,10 @@ questions:
   number: 8
   type: single
   page: 3
-  stem: 下列何句充滿了想要退隱卻又捨不得的矛盾情緒？
+  stem: 下列何句充滿了想要退隱卻又捨不得的矛盾情緒？（原卷有誤，已修正）
   options:
   - label: A
-    content: 寂寂竟何待，朝朝空自歸承
+    content: 寂寂竟何待，朝朝空自歸
   - label: B
     content: 欲尋芳草去，惜與故人違
   - label: C
@@ -1246,15 +1258,20 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 寂寂竟何待，朝朝空自歸承
+    to: 寂寂竟何待，朝朝空自歸
+    note: 句末衍多「承」字
+    by: ai_review
 - id: doc_113_高雄_五甲_國文_g7s1e3_s4_9
   section: 4
   number: 9
   type: single
   page: 3
-  stem: 下列何句表達了懷才不遇的牢騷？
+  stem: 下列何句表達了懷才不遇的牢騷？（原卷有誤，已修正）
   options:
   - label: A
-    content: 寂寂竟何待，朝朝空自歸承
+    content: 寂寂竟何待，朝朝空自歸
   - label: B
     content: 欲尋芳草去，惜與故人違
   - label: C
@@ -1288,6 +1305,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 寂寂竟何待，朝朝空自歸承
+    to: 寂寂竟何待，朝朝空自歸
+    note: 句末衍多「承」字
+    by: ai_review
 - id: doc_113_高雄_五甲_國文_g7s1e3_s4_10
   section: 4
   number: 10

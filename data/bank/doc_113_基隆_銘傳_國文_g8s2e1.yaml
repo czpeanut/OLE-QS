@@ -1086,12 +1086,12 @@ questions:
   number: 26
   type: single
   page: 3
-  stem: 以下中國古代運動說明和現在運動配對，何者有誤？
+  stem: 以下中國古代運動說明和現在運動配對，何者有誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 置壺於背後，卻反矢以投之，百發百中。➔射箭
   - label: B
-    content: 用長繩一條，聯小繩數十，幹百人挽兩頭，分朋牽扯之。➔拔河
+    content: 用長繩一條，聯小繩數十，千百人挽兩頭，分朋牽扯之。➔拔河
   - label: C
     content: 初起，球頭(球隊主力)用腳尖挑起與驍色(球隊副手)，驍色挾住至球頭膝上，一築過球門。➔足球
   - label: D
@@ -1116,6 +1116,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 聯小繩數十，幹百人挽兩頭
+    to: 聯小繩數十，千百人挽兩頭
+    note: 「幹」字印錯，應為「千」
+    by: ai_review
 - id: doc_113_基隆_銘傳_國文_g8s2e1_s3_27
   section: 3
   number: 27
@@ -1322,7 +1327,7 @@ questions:
   number: 30
   type: single
   page: 4
-  stem: 從中華隊的成功經驗來看，下列哪個概念最適合同來解釋這次的勝利？
+  stem: 從中華隊的成功經驗來看，下列哪個概念最適合用來解釋這次的勝利？
   options:
   - label: A
     content: 依賴個別菁英人才的「精英理論」。
@@ -1368,6 +1373,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列哪個概念最適合同來解釋這次的勝利？
+    to: 下列哪個概念最適合用來解釋這次的勝利？
+    note: 「同」字印錯，應為「用」
+    by: ai_review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g8s2e1_s4_31
   section: 4
   number: 31

@@ -1549,10 +1549,10 @@ questions:
   number: 50
   type: single
   page: 3
-  stem: 根據本文，梁上刺客之所以當夜就殺了囚夫婦，其原因最可能為下列何者？
+  stem: 根據本文，梁上刺客之所以當夜就殺了囚夫婦，其原因最可能為下列何者？（原卷有誤，已修正）
   options:
   - label: A
-    content: 因犯夫婦造成長者被誤殺，理該償命
+    content: 囚犯夫婦造成長者被誤殺，理該償命
   - label: B
     content: 受到旅店老父的慫恿，欲殺不義之人
   - label: C
@@ -1581,6 +1581,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 因犯夫婦造成長者被誤殺
+    to: 囚犯夫婦造成長者被誤殺
+    note: 「因犯」為「囚犯」之誤
+    by: ai_review
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s2_51
   section: 2
   number: 51

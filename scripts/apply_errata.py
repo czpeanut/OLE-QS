@@ -162,11 +162,13 @@ def main() -> int:
             if not ok:
                 failed.append((qid, it["got"], it["fix"]))
                 continue
-            if not (q.get("stem") or "").rstrip().endswith(MARK):
+            extraction = bool(it.get("extraction"))   # 複核發現原卷印對、錯在擷取：改正但不註記
+            if not extraction and not (q.get("stem") or "").rstrip().endswith(MARK):
                 q["stem"] = (q.get("stem") or "").rstrip() + MARK
             q.setdefault("errata", []).append({"from": it["got"], "to": it["fix"], "note": it.get("note", ""),
-                                               "by": "ai_review"})
+                                               "by": "ai_review", **({"extraction": True} if extraction else {})})
             changes.append({"doc": doc, "qid": qid, "code": it["code"], "from": it["got"], "to": it["fix"],
+                            "extraction": extraction,
                             "note": it.get("note", ""), "before": before, "at": time.strftime("%Y-%m-%d %H:%M:%S"),
                             "after": {"stem": q.get("stem"), "group_stem": q.get("group_stem"),
                                       "options": [o.get("content") for o in q.get("options") or []]}})
@@ -196,7 +198,7 @@ def main() -> int:
     s = requests.Session()
     for c in changes:
         a, b = c["before"], c["after"]
-        note = f"原卷有誤已修正：{c['from']} → {c['to']}"
+        note = f"{'擷取錯誤' if c.get('extraction') else '原卷有誤'}已修正：{c['from']} → {c['to']}"
         row = {"stem_md": b["stem"], "review_note": note}
         con.execute("update question set stem_md=?, review_note=? where id=?", (b["stem"], note, c["qid"]))
         s.patch(f"{url}/rest/v1/question", params={"id": f"eq.{c['qid']}"}, headers=H, json=row,

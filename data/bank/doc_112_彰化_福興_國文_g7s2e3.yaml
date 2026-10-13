@@ -789,7 +789,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 「我在讀這本書時，忽然發現因斯坦想盡量給聽眾一個印象：即他的貢獻不是源於甲，就是由於乙，而與愛因斯坦本人不太相干似的。」可知下列何者最適合用來形容愛因斯坦？
+  stem: 「我在讀這本書時，忽然發現愛因斯坦想盡量給聽眾一個印象：即他的貢獻不是源於甲，就是由於乙，而與愛因斯坦本人不太相干似的。」可知下列何者最適合用來形容愛因斯坦？（原卷有誤，已修正）
   options:
   - label: A
     content: 功成不居
@@ -821,12 +821,17 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 忽然發現因斯坦想盡量給
+    to: 忽然發現愛因斯坦想盡量給
+    note: 漏「愛」字
+    by: ai_review
 - id: doc_112_彰化_福興_國文_g7s2e3_s3_10
   section: 3
   number: 10
   type: single
   page: 1
-  stem: 「創業的人都會自然而然的想到上天，而敗家的人卻無時不想想到自己。」下列敘述，何者最可能是這種情況的原因？
+  stem: 「創業的人都會自然而然的想到上天，而敗家的人卻無時不想到自己。」下列敘述，何者最可能是這種情況的原因？
   options:
   - label: A
     content: 前者做事有始有終，後者常半途而廢
@@ -858,6 +863,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 而敗家的人卻無時不想想到自己。
+    to: 而敗家的人卻無時不想到自己。
+    note: 多贅字「想」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g7s2e3_s3_11
   section: 3
   number: 11

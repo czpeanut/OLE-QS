@@ -1215,7 +1215,7 @@ questions:
   - label: B
     content: 此帝國曾統治阿拉伯半島
   - label: C
-    content: 伊斯垣堡的前身即是用該皇帝的名字命名
+    content: 伊斯坦堡的前身即是用該皇帝的名字命名
   - label: D
     content: 當時禁止所有異教崇拜，並將基督教定為國教。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1237,6 +1237,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 伊斯垣堡的前身即是用該皇帝的名字命名
+    to: 伊斯坦堡的前身即是用該皇帝的名字命名
+    note: 「垣」字誤植，應為「坦」
+    by: ai_review
+    extraction: true
 - id: doc_113_基隆_銘傳_社會_g9s1e2_s1_30
   section: 1
   number: 30
@@ -1959,10 +1965,10 @@ questions:
   number: 49
   type: single
   page: 5
-  stem: 跨國貿易成為現今跨疆界的貿易活動，下列何者說法可對應國際分工的內容？
+  stem: 跨國貿易成為現今跨疆界的貿易活動，下列何者說法可對應國際分工的內容？（原卷有誤，已修正）
   options:
   - label: A
-    content: 開放出口降造成我國資金外流
+    content: 開放出口將造成我國資金外流
   - label: B
     content: 國際貿易僅考慮本國的銷售對象
   - label: C
@@ -1988,6 +1994,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 開放出口降造成我國資金外流
+    to: 開放出口將造成我國資金外流
+    note: 「降」字誤植，應為「將」
+    by: ai_review
 - id: doc_113_基隆_銘傳_社會_g9s1e2_s1_50
   section: 1
   number: 50

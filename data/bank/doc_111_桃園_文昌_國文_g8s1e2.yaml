@@ -859,12 +859,12 @@ questions:
   number: 23
   type: single
   page: 3
-  stem: 下列各選項之文句，何者與本文的主旨相呼應？
+  stem: 下列各選項之文句，何者與本文的主旨相呼應？（原卷有誤，已修正）
   options:
   - label: A
     content: 旁觀自己的悲傷即是解脫，主觀自己的悲傷是更加悲傷。
   - label: B
-    content: 藝術的大道上前棘叢生，這也是好事，常人都望而怯步，只有意志堅強的人例外。
+    content: 藝術的大道上荊棘叢生，這也是好事，常人都望而怯步，只有意志堅強的人例外。
   - label: C
     content: 讀書要像拾柴火，見一枝收一枝，日子久了，自然積柴如山。
   - label: D
@@ -902,6 +902,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 藝術的大道上前棘叢生，這也是好事
+    to: 藝術的大道上荊棘叢生，這也是好事
+    note: 「前棘」應為「荊棘」之誤
+    by: ai_review
 - id: doc_111_桃園_文昌_國文_g8s1e2_s2_24
   section: 2
   number: 24
@@ -1739,7 +1744,7 @@ questions:
   number: 10
   type: fill
   page: 6
-  stem: 風流「ㄊㄧㄠˊ」儻
+  stem: 風流「ㄊㄧˋ」儻
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1759,6 +1764,12 @@ questions:
   - 倜
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 風流「ㄊㄧㄠˊ」儻
+    to: 風流「ㄊㄧˋ」儻
+    note: 倜儻之「倜」注音應為ㄊㄧˋ
+    by: ai_review
+    extraction: true
 - id: doc_111_桃園_文昌_國文_g8s1e2_s4_1
   section: 4
   number: 1

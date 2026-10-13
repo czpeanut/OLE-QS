@@ -961,7 +961,7 @@ questions:
 
     | --- | --- | --- |
 
-    |'
+    |（原卷有誤，已修正）'
   options:
   - label: A
     content: '| 22.29°N | 120.61°E |
@@ -976,7 +976,7 @@ questions:
 
       |'
   - label: D
-    content: '| 23.95°N | 121.57°N |'
+    content: '| 23.95°N | 121.57°E |'
   tags:
     chapter:
       publisher: 翰林
@@ -993,6 +993,11 @@ questions:
     gemini_high: A
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 23.95°N | 121.57°N
+    to: 23.95°N | 121.57°E
+    note: 經度代號誤印為N，應為E
+    by: ai_review
 - id: doc_113_新北_桃子腳_社會_g9s2e2_s2_26
   section: 2
   number: 26

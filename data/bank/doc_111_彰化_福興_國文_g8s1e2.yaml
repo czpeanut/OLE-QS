@@ -807,12 +807,12 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 下列選項「　」中的字，何組詞性前後相同？
+  stem: 下列選項「　」中的字，何組詞性前後相同？（原卷有誤，已修正）
   options:
   - label: A
     content: 一人犯蹕，「當」罰金／廷尉「當」是也
   - label: B
-    content: 天下「之」平／久「之」，已為行已過
+    content: 天下「之」平／久「之」，以為行已過
   - label: C
     content: 上「行」／以為「行」已過
   - label: D
@@ -839,6 +839,11 @@ questions:
     gemini: D
     qwen: D
   answer_status: disputed
+  errata:
+  - from: 久「之」，已為行已過
+    to: 久「之」，以為行已過
+    note: 課文原句「已為」印錯，應為「以為」
+    by: ai_review
 - id: doc_111_彰化_福興_國文_g8s1e2_s4_12
   section: 4
   number: 12

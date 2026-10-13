@@ -415,7 +415,7 @@ questions:
   page: 1
   stem: '請依題意列式：
 
-    (2) 將一箱蘋果平分給 b 位同學，每人得 4 個，最後還剩下 2 個，則這箱柳丁共有多少個？(請以 b 表示)'
+    (2) 將一箱蘋果平分給 b 位同學，每人得 4 個，最後還剩下 2 個，則這箱蘋果共有多少個？(請以 b 表示)（原卷有誤，已修正）'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -435,6 +435,11 @@ questions:
   - 4b + 2
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則這箱柳丁共有多少個？(請以 b 表示)
+    to: 則這箱蘋果共有多少個？(請以 b 表示)
+    note: 前文為蘋果，誤植為柳丁
+    by: ai_review
 - id: doc_113_高雄_五甲_數學_g7s1e3_s2_1
   section: 2
   number: 1

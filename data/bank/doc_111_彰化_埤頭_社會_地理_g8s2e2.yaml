@@ -27,7 +27,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 全球最大的食品製造商雀巢公司（Nestl），旗下有151家生產清真食品的工廠。請問：雀巢公司生產的清真食品，最可能大量販售至哪些國家或地區呢？
+  stem: 全球最大的食品製造商雀巢公司（Nestlé），旗下有151家生產清真食品的工廠。請問：雀巢公司生產的清真食品，最可能大量販售至哪些國家或地區呢？（原卷有誤，已修正）
   options:
   - label: A
     content: 中南半島
@@ -56,6 +56,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 雀巢公司（Nestl），旗下有151家
+    to: 雀巢公司（Nestlé），旗下有151家
+    note: 雀巢英文漏印字母e
+    by: ai_review
 - id: doc_111_彰化_埤頭_社會_地理_g8s2e2_s1_2
   section: 1
   number: 2
@@ -602,7 +607,7 @@ questions:
   number: 15
   type: single
   page: 1
-  stem: 利用高原上利用鑿井技術抽取地下水，並使用軸心噴灌系統灌溉，此特色位於何處？
+  stem: 利用高原上鑿井技術抽取地下水，並使用軸心噴灌系統灌溉，此特色位於何處？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -633,6 +638,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 利用高原上利用鑿井技術抽取地下水
+    to: 利用高原上鑿井技術抽取地下水
+    note: 「利用」重複冗贅
+    by: ai_review
 - id: doc_111_彰化_埤頭_社會_地理_g8s2e2_s1_16
   section: 1
   number: 16
@@ -907,7 +917,7 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 根據上文推論，當地的激進組織最有可能是為下列哪一人種？
+  stem: 根據上文推論，當地的激進組織最有可能為下列哪一人種？
   options:
   - label: A
     content: 猶太人
@@ -937,6 +947,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當地的激進組織最有可能是為下列哪一人種？
+    to: 當地的激進組織最有可能為下列哪一人種？
+    note: 「是為」贅字
+    by: ai_review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_地理_g8s2e2_s1_24
   section: 1
   number: 24

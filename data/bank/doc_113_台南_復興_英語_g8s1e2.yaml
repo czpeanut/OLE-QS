@@ -532,8 +532,8 @@ questions:
   number: 7
   type: single
   page: 2
-  stem: Mark always goes to the toilet ________ the movies starts. He doesn't want
-    to answer the call of nature during the movie.
+  stem: Mark always goes to the toilet ________ the movies tarts. He doesn't want
+    to answer the call of nature during the movie.（原卷有誤，已修正）
   options:
   - label: A
     content: before
@@ -562,6 +562,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: goes to the toilet _______ the movies starts. He doesn't
+    to: goes to the toilet _______ the movie starts. He doesn't
+    note: movies應為單數movie
+    by: ai_review
 - id: doc_113_台南_復興_英語_g8s1e2_s5_8
   section: 5
   number: 8

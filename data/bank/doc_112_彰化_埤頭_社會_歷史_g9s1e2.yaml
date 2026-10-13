@@ -98,7 +98,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 歷史課老師提到《天方夜譚》（One Thousand and One Nights）起源於阿拉伯世界，又譯作《一千零一夜》，故事講述一位美麗的王妃謝拉莎德，為了阻止國王因遭到妻子背叛而變得性格暴戾的國王不斷獵殺全國無辜女性，自願嫁到宮中，從第一夜起便在國王身旁不停的講述故事。這些故事都是國王從來沒有聽說過的，每個都新奇又精彩。直到第一千零一夜，謝拉莎德最終感化國王，治癒了他的心病，也拯救全國無數女子的性命。如果想要了解故事中阿拉伯城市工商業發達的實際狀況，最適適合去哪個城市探訪？
+  stem: 歷史課老師提到《天方夜譚》（One Thousand and One Nights）起源於阿拉伯世界，又譯作《一千零一夜》，故事講述一位美麗的王妃謝拉莎德，為了阻止國王因遭到妻子背叛而變得性格暴戾的國王不斷獵殺全國無辜女性，自願嫁到宮中，從第一夜起便在國王身旁不停的講述故事。這些故事都是國王從來沒有聽說過的，每個都新奇又精彩。直到第一千零一夜，謝拉莎德最終感化國王，治癒了他的心病，也拯救全國無數女子的性命。如果想要了解故事中阿拉伯城市工商業發達的實際狀況，最適合去哪個城市探訪？
   options:
   - label: A
     content: 巴格達
@@ -127,6 +127,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 最適適合去哪個城市探訪？
+    to: 最適合去哪個城市探訪？
+    note: 多字，最適適合應為最適合
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s1e2_s1_4
   section: 1
   number: 4
@@ -1041,10 +1047,10 @@ questions:
   number: 30
   type: single
   page: 2
-  stem: 承上題，這建築物出現於何時？又與何人有關？
+  stem: 承上題，這建築物出現於何時？又與何人有關？（原卷有誤，已修正）
   options:
   - label: A
-    content: 西元前四世紀，亞歷山大大
+    content: 西元前四世紀，亞歷山大大帝
   - label: B
     content: 西元四世紀，君士坦丁大帝
   - label: C
@@ -1071,6 +1077,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 西元前四世紀，亞歷山大大
+    to: (A) 西元前四世紀，亞歷山大大帝
+    note: 漏字，應為亞歷山大大帝
+    by: ai_review
 - id: doc_112_彰化_埤頭_社會_歷史_g9s1e2_s1_31
   section: 1
   number: 31

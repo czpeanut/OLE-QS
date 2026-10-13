@@ -77,8 +77,8 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 謀謀在學校運動會中，發現一個 100 公尺短跑的鳥龍計時員。他竟然是聽到槍聲後，才按下馬錶，當時無風，氣溫 $15^\text{o}\text{C}$（當時聲速約為
-    340 公尺／秒）。請問：選手的跑步時間應如何更正才是正確的？（計時員站在終點、鳴槍者在起點）
+  stem: 謀謀在學校運動會中，發現一個 100 公尺短跑的烏龍計時員。他竟然是聽到槍聲後，才按下馬錶，當時無風，氣溫 $15^\text{o}\text{C}$（當時聲速約為
+    340 公尺／秒）。請問：選手的跑步時間應如何更正才是正確的？（計時員站在終點、鳴槍者在起點）（原卷有誤，已修正）
   options:
   - label: A
     content: 增加 0.294 秒
@@ -107,6 +107,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一個 100 公尺短跑的鳥龍計時員
+    to: 一個 100 公尺短跑的烏龍計時員
+    note: 鳥龍印錯，應為烏龍
+    by: ai_review
 - id: doc_112_彰化_埤頭_自然_g8s1e2_s1_3
   section: 1
   number: 3

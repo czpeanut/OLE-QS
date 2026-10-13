@@ -307,7 +307,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 右圖是木瓜的花與雌蕊的放大圖，請問精細胞與卵細胞分別在哪一個構造內？(1-3)
+  stem: 右圖是木瓜的花與雌蕊的放大圖，請問精細胞與卵細胞分別在哪一個構造內？(1-3)（原卷有誤，已修正）
   options:
   - label: A
     content: 甲、庚
@@ -317,7 +317,7 @@ questions:
     content: 戊、庚
   - label: D
     content: 甲、己
-  group_stem: 根據右圖回答第 10~11 題
+  group_stem: 根據右圖回答第 10~12 題
   shared_asset: g2_10_11
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -338,6 +338,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據右圖回答第 10~11 題
+    to: 根據右圖回答第 10~12 題
+    note: 第12題亦使用該圖代號
+    by: ai_review
 - id: doc_113_基隆_銘傳_自然_g7s2e1_s2_11
   section: 2
   number: 11
@@ -353,7 +358,7 @@ questions:
     content: 辛、戊、葡萄
   - label: D
     content: 壬、丙、芭樂。(1-3)
-  group_stem: 根據右圖回答第 10~11 題
+  group_stem: 根據右圖回答第 10~12 題
   shared_asset: g2_10_11
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -983,7 +988,7 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: 柯南在某個兇案現場採集到兇手遺留下的血跡，他懷疑兇手就是是小蘭、步美、元太其中一人，於是請他們三個人提供口腔黏膜細胞，並將這些細胞與兇案現場的血液細胞比對，請問柯南要比對的是下列何者？(1-1)
+  stem: 柯南在某個兇案現場採集到兇手遺留下的血跡，他懷疑兇手就是小蘭、步美、元太其中一人，於是請他們三個人提供口腔黏膜細胞，並將這些細胞與兇案現場的血液細胞比對，請問柯南要比對的是下列何者？(1-1)（原卷有誤，已修正）
   options:
   - label: A
     content: 成熟紅血球中染色體的差異
@@ -1012,6 +1017,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 他懷疑兇手就是是小蘭、步美、元太其中一人
+    to: 他懷疑兇手就是小蘭、步美、元太其中一人
+    note: 多印一個「是」字
+    by: ai_review
 - id: doc_113_基隆_銘傳_自然_g7s2e1_s2_27
   section: 2
   number: 27

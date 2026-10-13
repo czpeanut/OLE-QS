@@ -1390,7 +1390,7 @@ questions:
   number: 32
   type: single
   page: 3
-  stem: 下圖為臺灣新住民主要來源地分布圖，近30多年間，新住民來自世界各地，不同國家的新住民在臺灣組成家庭，帶來家鄉的文化、美食也讓我們的社會有了更多元的風貌。請根據圖盼判斷台灣的新住民主要來自哪裡？
+  stem: 下圖為臺灣新住民主要來源地分布圖，近30多年間，新住民來自世界各地，不同國家的新住民在臺灣組成家庭，帶來家鄉的文化、美食也讓我們的社會有了更多元的風貌。請根據圖判斷台灣的新住民主要來自哪裡？
   options:
   - label: A
     content: 菲律賓、泰國
@@ -1439,6 +1439,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 請根據圖盼判斷台灣的新住民主要來自哪裡？
+    to: 請根據圖判斷台灣的新住民主要來自哪裡？
+    note: 原卷多印「盼」字
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g7s2e1_s1_33
   section: 1
   number: 33

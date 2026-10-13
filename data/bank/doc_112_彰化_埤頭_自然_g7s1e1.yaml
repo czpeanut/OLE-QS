@@ -356,7 +356,7 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: 天堂老師將一片白菜葉子分別放入四杯不同濃度的鹽水當中，觀察白菜細胞的變化，結果如下，請判斷此白菜細胞的濃度最接近哪兩杯鹽水之間？
+  stem: 天堂老師將一片白菜葉子分別放入五杯不同濃度的鹽水當中，觀察白菜細胞的變化，結果如下，請判斷此白菜細胞的濃度最接近哪兩杯鹽水之間？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙
@@ -387,6 +387,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 分別放入四杯不同濃度的鹽水當中
+    to: 分別放入五杯不同濃度的鹽水當中
+    note: 表格有甲至戊共五杯鹽水，題幹誤寫為四杯
+    by: ai_review
 - id: doc_112_彰化_埤頭_自然_g7s1e1_s2_14
   section: 2
   number: 14

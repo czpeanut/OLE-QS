@@ -508,8 +508,8 @@ questions:
   type: single
   page: 2
   stem: 如圖(六)，在 $\triangle ABC$ 中，$D$、$E$ 兩點分別在 $\overline{AB}$、$\overline{AC}$ 上，已知
-    $\overline{AD}=\overline{DB}$、$\overline{AE}=\overline{EC}$，$\angle ADE=43^\circ$，$\overline{DE}=6$。$\overline{BC}$
-    的長度。
+    $\overline{AD}=\overline{DB}$、$\overline{AE}=\overline{EC}$，$\angle ADE=43^\circ$，$\overline{DE}=6$。求$\overline{BC}$
+    的長度。（原卷有誤，已修正）
   options:
   - label: A
     content: '6'
@@ -553,6 +553,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: \overline{DE}=6。\overline{BC} 的長度。
+    to: \overline{DE}=6。求 \overline{BC} 的長度。
+    note: 漏「求」字
+    by: ai_review
 - id: doc_113_屏東_中正_數學_g9s1e1_s1_14
   section: 1
   number: 14

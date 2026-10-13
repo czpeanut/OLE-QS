@@ -748,7 +748,7 @@ questions:
   number: 36
   type: single
   page: 2
-  stem: Our English teacher, Mr. Lee, ________. We all like him vey much.
+  stem: Our English teacher, Mr. Lee, ________. We all like him very much.（原卷有誤，已修正）
   options:
   - label: A
     content: is nice to us
@@ -777,6 +777,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: We all like him vey much.
+    to: We all like him very much.
+    note: vey印錯，應為very
+    by: ai_review
 - id: doc_112_彰化_埤頭_英語_g7s1e1_s4_37
   section: 4
   number: 37

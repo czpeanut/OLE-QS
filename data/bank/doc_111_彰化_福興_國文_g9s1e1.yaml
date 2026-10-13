@@ -1027,7 +1027,7 @@ questions:
   - label: C
     content: 好脾氣是人在社交中所能穿的最佳服飾
   - label: D
-    content: 真誠的友誼好像健康，失去時才知到它的可貴。
+    content: 真誠的友誼好像健康，失去時才知道它的可貴。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -1046,6 +1046,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 失去時才知到它的可貴
+    to: 失去時才知道它的可貴
+    note: 「知到」應為「知道」
+    by: ai_review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g9s1e1_s2_31
   section: 2
   number: 31

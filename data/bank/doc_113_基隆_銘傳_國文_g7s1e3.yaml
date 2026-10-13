@@ -391,7 +391,7 @@ questions:
   stem: 關於〈兒時記趣〉一文，下列選項敘述，何者為非？
   options:
   - label: A
-    content: 「余億童稚時，能張目對日，明察秋毫」一句並非想像力的運用
+    content: 「余憶童稚時，能張目對日，明察秋毫」一句並非想像力的運用
   - label: B
     content: 「徐噴以煙」是「以煙徐噴」的倒裝句，「自以為是」的句法與之相同
   - label: C
@@ -421,6 +421,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (A) 「余億童稚時，能張目對日，明察秋毫」
+    to: (A) 「余憶童稚時，能張目對日，明察秋毫」
+    note: 「億」印錯，應為「憶」
+    by: ai_review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e3_s2_12
   section: 2
   number: 12
@@ -1020,7 +1026,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 下列詩句與節慶的配對，何者正確？
+  stem: 下列詩句與節慶的配對，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 玉粽襲香千舸競，艾葉黃酒可驅邪→上元節
@@ -1029,7 +1035,7 @@ questions:
   - label: C
     content: 燈樹千光照，花焰七枝開→端午節
   - label: D
-    content: 道場普渡妥幽魂，原有孟蘭古意存→中秋節。
+    content: 道場普渡妥幽魂，原有盂蘭古意存→中秋節。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1049,6 +1055,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 道場普渡妥幽魂，原有孟蘭古意存
+    to: (D) 道場普渡妥幽魂，原有盂蘭古意存
+    note: 「孟蘭」印錯，應為「盂蘭」
+    by: ai_review
 - id: doc_113_基隆_銘傳_國文_g7s1e3_s2_29
   section: 2
   number: 29

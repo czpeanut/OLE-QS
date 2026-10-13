@@ -964,7 +964,7 @@ questions:
   number: 26
   type: single
   page: 3
-  stem: 若 $x=-1$ 為 $a(x+3)+2(x-1)=x+3$，則 $a=$？（習作 p. 61）
+  stem: 若 $x=-1$ 為 $a(x+3)+2(x-1)=x+3的解$，則 $a=$？（習作 p. 61）（原卷有誤，已修正）
   options:
   - label: A
     content: $-3$
@@ -993,6 +993,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若 x=-1 為 a ( x + 3 )+2 ( x - 1 )= x + 3，則 a=？
+    to: 若 x=-1 為 a ( x + 3 )+2 ( x - 1 )= x + 3 的解，則 a=？
+    note: 漏印「的解」
+    by: ai_review
 - id: doc_113_台南_復興_數學_g7s1e3_s1_27
   section: 1
   number: 27

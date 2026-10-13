@@ -197,7 +197,7 @@ questions:
   page: 1
   stem: '阿蜜與阿篁在討論一道分數比大小的題目，請根據兩人的敘述判斷誰的說法正確？
 
-    題目：$a = -\frac{5}{3}$，$b = -\frac{7}{5}$，$c = -\frac{17}{15}$；請比較 $a, b, a$ 的大小。
+    題目：$a = -\frac{5}{3}$，$b = -\frac{7}{5}$，$c = -\frac{17}{15}$；請比較 $a, b, c$ 的大小。
 
     阿蜜：第一步，先比較 $\frac{5}{3}, \frac{7}{5}, \frac{17}{15}$ 的大小
 
@@ -205,7 +205,7 @@ questions:
     $\frac{25}{15} > \frac{21}{15} > \frac{17}{15}$，即 $a > b > c$
 
     阿篁：$a = -1\frac{2}{3}$，$b = -1\frac{2}{5}$，$c = -1\frac{2}{15}$，分子都是 2，分母越大則分數越小，因此
-    $a > b > c$'
+    $a > b > c$（原卷有誤，已修正）'
   options:
   - label: A
     content: 只有阿蜜是對的
@@ -234,6 +234,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請比較 a, b, a 的大小
+    to: 請比較 a, b, c 的大小
+    note: 原卷誤將 c 印成 a
+    by: ai_review
 - id: doc_113_高雄_五甲_數學_g7s1e2_s1_6
   section: 1
   number: 6

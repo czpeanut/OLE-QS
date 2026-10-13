@@ -198,7 +198,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: '附表是小云整理的南、北韓比較，表格內容中何者有正確？
+  stem: '附表是小云整理的南、北韓比較，表格內容中何者正確？
 
     | 國家 | 主要地形 (A) | 氣候 (B) | 天然資源 (C) | 產業發展 (D) |
 
@@ -206,7 +206,7 @@ questions:
 
     | 北韓 | 平原山地 | 溫帶季風 | 礦產資源少 | 國防工業 |
 
-    | 南韓 | 山地高原 | 副熱帶帶 | 礦產資源多 | 高科技工業 |'
+    | 南韓 | 山地高原 | 副熱帶帶 | 礦產資源多 | 高科技工業 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 主要地形
@@ -234,6 +234,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 表格內容中何者有正確？
+    to: 表格內容中何者正確？
+    note: 多印「有」字
+    by: ai_review
 - id: doc_112_彰化_福興_社會_地理_g8s1e3_s1_6
   section: 1
   number: 6

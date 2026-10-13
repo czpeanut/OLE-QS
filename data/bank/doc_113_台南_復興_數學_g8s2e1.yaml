@@ -484,7 +484,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 等已知 $x-3, x-7, x-10$ 三數成等比數列，則公比為何？
+  stem: 已知 $x-3, x-7, x-10$ 三數成等比數列，則公比為何？（原卷有誤，已修正）
   options:
   - label: A
     content: $\frac{5}{4}$
@@ -513,6 +513,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 等已知 x-3, x-7, x-10 三數成等比數列
+    to: 已知 x-3, x-7, x-10 三數成等比數列
+    note: 句首多印「等」字
+    by: ai_review
 - id: doc_113_台南_復興_數學_g8s2e1_s1_15
   section: 1
   number: 15

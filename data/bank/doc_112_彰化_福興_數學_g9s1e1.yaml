@@ -417,7 +417,7 @@ questions:
   type: single
   page: 1
   stem: 如圖(七)所示，$\triangle ABC$中，$\angle ABC = \angle ACB = \angle CDE = \angle CED$，$\overline{BD}
-    = 5$，$\overline{BC} = 15$，且，則$\overline{EC} = ？$
+    = 5$，$\overline{BC} = 15$，則$\overline{EC} = ？$（原卷有誤，已修正）
   options:
   - label: A
     content: '5'
@@ -464,6 +464,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: $\overline{BC} = 15$，且，則$\overline{EC} = ？$
+    to: $\overline{BC} = 15$，則$\overline{EC} = ？$
+    note: 多印「且，」
+    by: ai_review
 - id: doc_112_彰化_福興_數學_g9s1e1_s1_10
   section: 1
   number: 10

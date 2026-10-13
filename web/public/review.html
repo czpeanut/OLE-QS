@@ -459,7 +459,8 @@ function aiHeadHTML(P){
 function aiBoxHTML(q){
   const items = AI.q[q.c];
   if (!items) return "";
-  const tag = it => it.kind === "redraw" ? "附圖已重繪" : it.kind === "errata" ? (it.applied ? "原卷有誤・已修正" : "原卷可能有誤") : (it.sure ? "初審：確定" : "初審：可能");
+  const tag = it => it.kind === "redraw" ? "附圖已重繪" : it.kind === "errata" ?
+    (it.extraction ? (it.applied ? "擷取錯誤・已修正" : "擷取錯誤") : it.applied ? "原卷有誤・已修正" : "原卷可能有誤") : (it.sure ? "初審：確定" : "初審：可能");
   return `<div class="ai-box">${items.map(it => `<div class="it"><span class="chip ai">${tag(it)}</span>
       <b>${esc((it.cats || []).join("、"))}</b><span>${esc(it.note)}</span></div>`).join("")}
     <div class="row">${items.some(it => !it.applied) ? `<button class="btn" type="button" data-adopt="${q.c}">採用為回報</button>` : ""}

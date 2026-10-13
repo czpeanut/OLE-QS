@@ -517,7 +517,7 @@ questions:
   number: 15
   type: single
   page: 1
-  stem: 老師請同學圈出有擬人化作用的動詞，請問同學有哪第一題做錯了？
+  stem: 老師請同學圈出有擬人化作用的動詞，請問同學有哪一題做錯了？
   options:
   - label: A
     content: 雪陳述了日本櫻花和台灣芒花的形象
@@ -546,6 +546,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問同學有哪第一題做錯了？
+    to: 請問同學有哪一題做錯了？
+    note: 多贅字「第」
+    by: ai_review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e1_s2_16
   section: 2
   number: 16
@@ -868,10 +874,10 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 關於〈善用時間的方法〉課文中，下列分析何者不正確？
+  stem: 關於〈善用時間的方法〉課文中，下列分析何者不正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 已運用時間的要訣為主題，強調時間管理的重要性
+    content: 以運用時間的要訣為主題，強調時間管理的重要性
   - label: B
     content: 運用名言錦句法，彰顯主旨
   - label: C
@@ -900,6 +906,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 已運用時間的要訣為主題
+    to: (A) 以運用時間的要訣為主題
+    note: 「已」應為「以」
+    by: ai_review
 - id: doc_113_基隆_銘傳_國文_g7s1e1_s3_26
   section: 3
   number: 26
@@ -1130,14 +1141,14 @@ questions:
   number: 31
   type: single
   page: 3
-  stem: 本詩主要在描寫什麼？
+  stem: 本詩主要在描寫什麼？（原卷有誤，已修正）
   options:
   - label: A
     content: 天氣的變化無窮
   - label: B
     content: 小雨點無所不在
   - label: C
-    content: 下雨前後的的景象
+    content: 下雨前後的景象
   - label: D
     content: 太陽的強大威力。
   group_stem: '丙、
@@ -1187,6 +1198,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 下雨前後的的景象
+    to: (C) 下雨前後的景象
+    note: 多印一個「的」
+    by: ai_review
 - id: doc_113_基隆_銘傳_國文_g7s1e1_s3_32
   section: 3
   number: 32
@@ -1313,12 +1329,12 @@ questions:
   page: 4
   stem: '「一碗高尚的牛肉麵簡直就像一種祈禱，它不僅讚美我們凡人的舌頭，也彰顯廚師的認真、誠摯和專業精神。」？根據這段文字，作者認為一碗好吃的牛肉麵對我們有什麼影響？
 
-    （焦桐〈論牛肉麵〉）'
+    （焦桐〈論牛肉麵〉）（原卷有誤，已修正）'
   options:
   - label: A
     content: 能夠填飽肚子並心生感恩
   - label: B
-    content: 了解食物得來不易，不可讓浪費食物
+    content: 了解食物得來不易，不可浪費食物
   - label: C
     content: 了解農夫的辛勞
   - label: D
@@ -1342,6 +1358,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 了解食物得來不易，不可讓浪費食物
+    to: (B) 了解食物得來不易，不可浪費食物
+    note: 多贅字「讓」
+    by: ai_review
 - id: doc_113_基隆_銘傳_國文_g7s1e1_s4_1
   section: 4
   number: 1

@@ -130,7 +130,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 「誘因」對人日常生活行為產生的影響，下何者為非？
+  stem: 「誘因」對人日常生活行為產生的影響，下列何者為非？
   options:
   - label: A
     content: 誘因的出現會導致機會成本產生變化，進而影響最後的選擇
@@ -159,6 +159,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「誘因」對人日常生活行為產生的影響，下何者為非？
+    to: 「誘因」對人日常生活行為產生的影響，下列何者為非？
+    note: 漏「列」字
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_福興_社會_公民_g9s1e1_s1_5
   section: 1
   number: 5
@@ -198,7 +204,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 承小題，當該狀況發生時，資源的分配要以何種方式才比較符合公平正義的原則？
+  stem: 承上題，當該狀況發生時，資源的分配要以何種方式才比較符合公平正義的原則？（原卷有誤，已修正）
   options:
   - label: A
     content: 憑運氣先搶先贏
@@ -227,6 +233,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承小題，當該狀況發生時
+    to: 承上題，當該狀況發生時
+    note: 「承小題」誤印，應為「承上題」
+    by: ai_review
 - id: doc_112_彰化_福興_社會_公民_g9s1e1_s1_7
   section: 1
   number: 7
@@ -1041,7 +1052,7 @@ questions:
   type: single
   page: 2
   stem: 有時做選擇付出的成本不只一種。除了我們能看見的那些實際付出的外顯成本以外，可能還有因為「作該項選擇所放棄或損失的其他價值」隱藏成本。請問：若非哥每週日下午在飲料店打工
-    4 小時，時薪 180 元，為了觀賞彰化建縣 300 年演唱會，本週他決定不去打工，花了 60 元搭公車，並買了 50 飲料和 80 元雞排。依此判斷，上述非哥行為的機會成本應是多少錢？
+    4 小時，時薪 180 元，為了觀賞彰化建縣 300 年演唱會，本週他決定不去打工，花了 60 元搭公車，並買了 50元 飲料和 80 元雞排。依此判斷，上述非哥行為的機會成本應是多少錢？（原卷有誤，已修正）
   options:
   - label: A
     content: 210 元
@@ -1070,3 +1081,8 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 並買了 50 飲料和 80 元雞排
+    to: 並買了 50 元飲料和 80 元雞排
+    note: 漏「元」字
+    by: ai_review

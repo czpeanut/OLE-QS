@@ -1142,12 +1142,12 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 下列敘述，何者前後文之間不含「比較」的性質？
+  stem: 下列敘述，何者前後文之間不含「比較」的性質？（原卷有誤，已修正）
   options:
   - label: A
     content: 現代的冰品，就口味而言，比起台灣早年的冰製品恐怕就遜色了
   - label: B
-    content: 一根冰棒含在嘴裡，總要舔上半天，才捨的吃完
+    content: 一根冰棒含在嘴裡，總要舔上半天，才捨得吃完
   - label: C
     content: 台糖產製的冰棒和冰水，遠較一般市售的冰品為佳
   - label: D
@@ -1170,6 +1170,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 才捨的吃完
+    to: 才捨得吃完
+    note: 「捨的」應為「捨得」
+    by: ai_review
 - id: doc_111_彰化_福興_國文_g7s1e2_s3_17
   section: 3
   number: 17
@@ -1244,7 +1249,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 有關吃冰的滋味一文的說明，下列何者錯誤？
+  stem: 有關吃冰的滋味一文的說明，下列何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 現代的尖端科技，使冰品的口味比以往更好
@@ -1253,7 +1258,7 @@ questions:
   - label: C
     content: 「冰淇淋的味道雖好，但總難敵童年那份甜美的記憶」，這是表現對童年吃冰往事的懷念
   - label: D
-    content: 刨冰的添加物往往色彩鮮豔，奪人眼目，讓人烈日豔陽之下，萌生更多的想樣。
+    content: 刨冰的添加物往往色彩鮮豔，奪人眼目，讓人烈日豔陽之下，萌生更多的想像。
   lesson_raw:
     title: 吃冰的滋味
     basis: 題幹提及吃冰的滋味一文
@@ -1275,6 +1280,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 萌生更多的想樣
+    to: 萌生更多的想像
+    note: 「想樣」應為「想像」
+    by: ai_review
 - id: doc_111_彰化_福興_國文_g7s1e2_s3_20
   section: 3
   number: 20

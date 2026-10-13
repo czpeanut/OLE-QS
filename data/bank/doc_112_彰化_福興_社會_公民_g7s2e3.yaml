@@ -197,7 +197,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 20世紀著名的政治哲學家羅爾斯，提出建立社會基本制度的指導原則是允許合理差別待遇的「正義」原則，用來規範社會制度、決定個人的基本權利與義務，以及分配社會的利益，請問：下列哪項政策不符合上述羅爾斯的正義論原則？
+  stem: 20世紀著名的政治哲學家羅爾斯，提出建立社會基本制度的指導原則是允許合理差別待遇的「正義」原則，用來規範社會制度、決定個人的基本權利與義務，以及分配社會的利益，請問：下列哪項政策不符合上述羅爾斯的正義論原則？（原卷有誤，已修正）
   options:
   - label: A
     content: 為照顧身心障礙者，提供身障人士子女學費減免
@@ -206,7 +206,7 @@ questions:
   - label: C
     content: 視障生在考試時可獲得放大版試卷及延長作答時間
   - label: D
-    content: 為提升國民素質與競爭力，政府推動12國民教育
+    content: 為提升國民素質與競爭力，政府推動12年國民教育
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -226,12 +226,17 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 政府推動12國民教育
+    to: 政府推動12年國民教育
+    note: 漏印「年」字
+    by: ai_review
 - id: doc_112_彰化_福興_社會_公民_g7s2e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 由於經濟不景氣及物價飆漲對弱勢民眾影響甚，為妥善照顧經濟弱勢、遭受急難或災害者，提供短期日常生活所需食物及物資援助，以建置完善的社會安全網，避免食物浪費，因此某市政府推動食物銀行法的相關條例。根據上述內容，請問某市政府的該項政策主要是落實何項理念？
+  stem: 由於經濟不景氣及物價飆漲對弱勢民眾影響甚鉅，為妥善照顧經濟弱勢、遭受急難或災害者，提供短期日常生活所需食物及物資援助，以建置完善的社會安全網，避免食物浪費，因此某市政府推動食物銀行法的相關條例。根據上述內容，請問某市政府的該項政策主要是落實何項理念？（原卷有誤，已修正）
   options:
   - label: A
     content: 促進經濟發展
@@ -260,6 +265,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 對弱勢民眾影響甚，為妥善
+    to: 對弱勢民眾影響甚鉅，為妥善
+    note: 漏印「鉅」字
+    by: ai_review
 - id: doc_112_彰化_福興_社會_公民_g7s2e3_s1_8
   section: 1
   number: 8
@@ -367,7 +377,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 承小題，根據上述內容判斷，關於該基金會的敘述，下列何者最適當？
+  stem: 承小題，根據上述內容判斷，關於該協會的敘述，下列何者最適當？（原卷有誤，已修正）
   options:
   - label: A
     content: 屬於地方政府的一種
@@ -396,6 +406,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於該基金會的敘述
+    to: 關於該協會的敘述
+    note: 前文為芒草心慈善協會，誤植為基金會
+    by: ai_review
 - id: doc_112_彰化_福興_社會_公民_g7s2e3_s1_12
   section: 1
   number: 12
@@ -710,7 +725,7 @@ questions:
   stem: 大原長期關注社會安全議題，在某次活動中，他向民眾介紹社會安全的發展歷程時，一時口誤講錯。下列何者是大原口誤的內容？
   options:
   - label: A
-    content: 現代社會安全的目的標為積極提升全民生活福祉
+    content: 現代社會安全的目標為積極提升全民生活福祉
   - label: B
     content: 現代社會安全政策是從西方民主國家開始發展
   - label: C
@@ -736,6 +751,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 現代社會安全的目的標為積極提升
+    to: 現代社會安全的目標為積極提升
+    note: 「目的標」多印「的」或誤植
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_福興_社會_公民_g7s2e3_s1_22
   section: 1
   number: 22

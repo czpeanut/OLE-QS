@@ -1029,7 +1029,7 @@ questions:
   type: single
   page: 3
   stem: 附圖為西元 1970 年與 2020 年中國的人口金字塔圖，從兩個年份的比較可以得知中國人口結構變化的特徵有哪些？(甲)幼年人口比例減少 (乙)目前已進入高齡化社會
-    (丙)勞動人口比例降低 (丁)人口數總減少
+    (丙)勞動人口比例降低 (丁)人口總數減少
   options:
   - label: A
     content: 甲乙
@@ -1075,6 +1075,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (丁)人口數總減少
+    to: (丁)人口總數減少
+    note: 「總」字錯置，應為人口總數減少
+    by: ai_review
+    extraction: true
 - id: doc_113_彰化_福興_社會_地理_g8s1e1_s1_22
   section: 1
   number: 22

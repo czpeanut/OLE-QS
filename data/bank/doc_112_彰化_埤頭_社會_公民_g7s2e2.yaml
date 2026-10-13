@@ -849,7 +849,7 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: X 電視最近做了一系列「外籍移工悲歌」專題報導，大幅篇探討外籍看工在工作現場、雇主虐待、社會歧視等問題，呼籲政府相關單位應盡速解決之道。請問：上述媒體在移工議題上扮演演何種公共角色？
+  stem: X 電視最近做了一系列「外籍移工悲歌」專題報導，大幅篇探討外籍看工在工作現場、雇主虐待、社會歧視等問題，呼籲政府相關單位應盡速解決之道。請問：上述媒體在移工議題上扮演何種公共角色？
   options:
   - label: A
     content: 提供訊息
@@ -878,6 +878,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 移工議題上扮演演何種公共角色
+    to: 移工議題上扮演何種公共角色
+    note: 多印一個「演」字
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g7s2e2_s2_24
   section: 2
   number: 24

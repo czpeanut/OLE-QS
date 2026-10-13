@@ -261,9 +261,9 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 在 $\triangle ABC$ 中，若D、E 兩點分別在 $\overline{AB}$、$\overline{AC}$ 上，另有F、G 兩點同時在
+  stem: 在 $\triangle ABC$ 中，若D、E 兩點分別在 $\overline{ABC}$、$\overline{AC}$ 上，另有F、G 兩點同時在
     $\overline{BC}$ 上，並使 $\overline{DF} \perp \overline{BC}$ 且 $\overline{EG} \perp
-    \overline{BC}$。請問下列哪一個選項不能確定 $\overline{DE} // \overline{AB}$？
+    \overline{BC}$。請問下列哪一個選項不能確定 $\overline{DE} // \overline{B}$？（原卷有誤，已修正）
   options:
   - label: A
     content: '$\overline{AB} : \overline{DB} = \overline{AC} : \overline{EC}$'
@@ -290,6 +290,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問下列哪一個選項不能確定 $\overline{DE} // \overline{AB}$？
+    to: 請問下列哪一個選項不能確定 $\overline{DE} // \overline{BC}$？
+    note: D在AB上，應為DE//BC
+    by: ai_review
 - id: doc_113_台中_大業_數學_g9s1e1_s1_7
   section: 1
   number: 7

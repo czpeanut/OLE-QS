@@ -357,7 +357,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 阿毛在森林檢到一個球狀構造，由許多鱗片構成，如附圖。請問此球狀構造，最有可能是由下列何種植物所產生的？
+  stem: 阿毛在森林撿到一個球狀構造，由許多鱗片構成，如附圖。請問此球狀構造，最有可能是由下列何種植物所產生的？（原卷有誤，已修正）
   options:
   - label: A
     content: 蘇鐵
@@ -403,6 +403,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 阿毛在森林檢到一個球狀構造
+    to: 阿毛在森林撿到一個球狀構造
+    note: 「檢」應為「撿」
+    by: ai_review
 - id: doc_112_彰化_福興_自然_g7s2e2_s1_9
   section: 1
   number: 9
@@ -1441,7 +1446,7 @@ questions:
   number: 33
   type: single
   page: 4
-  stem: 已知在某地區的脊椎動物只有哺乳類、鳥類和爬蟲類，若小平依其調節體溫溫化的不同，分成內溫動物及外溫動物兩群。有關此地區中脊椎動物的生殖方式，下列敘述何者最合理？
+  stem: 已知在某地區的脊椎動物只有哺乳類、鳥類和爬蟲類，若小平依其調節體溫變化的不同，分成內溫動物及外溫動物兩群。有關此地區中脊椎動物的生殖方式，下列敘述何者最合理？
   options:
   - label: A
     content: 內溫動物、外溫動物皆必為胎生
@@ -1470,6 +1475,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若小平依其調節體溫溫化的不同
+    to: 若小平依其調節體溫變化的不同
+    note: 「溫化」應為「變化」
+    by: ai_review
+    extraction: true
 - id: doc_112_彰化_福興_自然_g7s2e2_s1_34
   section: 1
   number: 34

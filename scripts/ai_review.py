@@ -321,9 +321,8 @@ RECHECK_SCHEMA = {"type": "object", "properties": {"found": {"type": "boolean"},
 RECHECK_CATS = TEXTUAL | {"題組或短文錯誤"}
 
 
-def recheck_requests(pdf_root: Path, docs: list[str] | None = None) -> list[tuple[str, dict]]:
-    """每題一筆（同一題有好幾條意見也只抄一次）；key＝"doc|題目編號"。"""
-    reqs = []
+def recheck_requests(pdf_root: Path, docs: list[str] | None = None):
+    """逐筆產生（每題一筆，同一題有好幾條意見也只抄一次）；key＝"doc|題目編號"。"""
     q2c = CODES[0]
     for f in sorted(RESULTS.glob("*.json")):
         r = json.loads(f.read_text(encoding="utf-8"))
@@ -357,12 +356,11 @@ def recheck_requests(pdf_root: Path, docs: list[str] | None = None) -> list[tupl
                 where = f"{sec.get(q.get('section'), '第 %s 大題' % q.get('section'))}　第 {q.get('number')} 題"
                 extra = "：題組說明或閱讀短文（這題所屬的）、題幹、選項" if q.get("group_stem") else "：題幹、選項"
                 parts.append({"text": RECHECK_PROMPT.format(where=where.strip(), extra=extra)})
-                reqs.append((f"{r['doc']}|{c}", {
+                yield (f"{r['doc']}|{c}", {
                     "contents": [{"parts": parts}],
                     "generationConfig": {"responseMimeType": "application/json", "responseSchema": RECHECK_SCHEMA,
                                          "temperature": 0, "maxOutputTokens": 16384,
-                                         "thinkingConfig": {"thinkingLevel": "low"}}}))
-    return reqs
+                                         "thinkingConfig": {"thinkingLevel": "low"}}})
 
 
 def in_text(quote: str, text: str) -> bool:
@@ -394,6 +392,12 @@ def apply_recheck(answers: dict[str, dict]) -> int:
             if in_text(it.get("got", ""), text) and not in_text(it.get("orig", ""), text):
                 it["drop"] = "複核：原卷與擷取相同"
                 dropped += 1
+                # 擷取照抄了原卷，那它說的「錯字」可能是原卷印錯：轉成原卷有誤的建議（不自動改）
+                if (it.get("orig") and set(it.get("cats") or []) <= RECHECK_CATS
+                        and not any(e.get("code") == it["code"] for e in r.get("errata") or [])):
+                    r.setdefault("errata", []).append({
+                        "code": it["code"], "got": it["got"], "fix": it["orig"], "sure": False,
+                        "note": "複核：原卷確實這樣印，可能是原卷錯字", "from_issue": True})
             elif not in_text(it.get("got", ""), text):
                 it["checked"] = True             # 照抄的原卷裡沒有擷取的寫法
         for it in r.get("errata") or []:
@@ -401,8 +405,11 @@ def apply_recheck(answers: dict[str, dict]) -> int:
             if v is None or it.get("drop") or not v.get("found"):
                 continue
             it["recheck"] = v.get("text", "")[:2000]
-            if in_text(it.get("got", ""), norm(v.get("text", ""))):
+            text = norm(v.get("text", ""))
+            if in_text(it.get("got", ""), text):
                 it["checked"] = True             # 原卷確實這樣印
+            elif in_text(it.get("fix", ""), text):
+                it["checked"] = it["extraction"] = True   # 原卷印對了，錯在擷取：照樣改，但不註記原卷有誤
             else:
                 it["drop"] = "複核：原卷不是這樣印"
                 dropped += 1
@@ -413,14 +420,27 @@ def apply_recheck(answers: dict[str, dict]) -> int:
 def cmd_recheck(args) -> int:
     CODES[0], _ = load_codes(args.codes_root)
     docs = args.docs.split(",") if args.docs else None
-    reqs = recheck_requests(args.pdf_root, docs)
+    if args.batch:                           # 影像很大：邊產生邊分批送出
+        chunk, size, n, total = [], 0, 0, 0
+        for kr in recheck_requests(args.pdf_root, docs):
+            b = len(json.dumps(kr[1]))
+            if chunk and size + b > args.chunk_mb * 2**20:
+                job = gemini_submit(PHASE, f"ai_recheck_{time.strftime('%m%d_%H%M%S')}_{n}", args.model, chunk,
+                                    est_usd=len(chunk) * 0.0025)
+                print(f"  送出 {job['label']}：{len(chunk)} 題", flush=True)
+                chunk, size, n = [], 0, n + 1
+            chunk.append(kr)
+            size += b
+            total += 1
+        if chunk:
+            job = gemini_submit(PHASE, f"ai_recheck_{time.strftime('%m%d_%H%M%S')}_{n}", args.model, chunk,
+                                est_usd=len(chunk) * 0.0025)
+            print(f"  送出 {job['label']}：{len(chunk)} 題", flush=True)
+        print(f"共送出 {total} 題複核")
+        return 0
+    reqs = list(recheck_requests(args.pdf_root, docs))
     print(f"要複核 {len(reqs)} 條")
     if not reqs:
-        return 0
-    if args.batch:
-        job = gemini_submit(PHASE, f"ai_recheck_{time.strftime('%m%d_%H%M%S')}", args.model, reqs,
-                            est_usd=len(reqs) * 0.002)
-        print(f"  送出 {job['label']}")
         return 0
     key = _env("GEMINI_API_KEY")
 
@@ -581,11 +601,14 @@ def cmd_publish(args) -> int:
     """每站一個 ai.json：{papers: {doc: {at, n}}, q: {code: [{cats, note, sure}]}, missing: {doc: [...]}}"""
     q2c, q2s = load_codes(args.codes_root)
     c2q = {c: q for q, c in q2c.items()}
+    by_doc: dict[str, list[str]] = {}
+    for qid in q2c:
+        by_doc.setdefault(qid.rsplit("_s", 1)[0], []).append(qid)
     sites = {s: {"model": None, "papers": {}, "q": {}, "missing": {}} for s in SITES}
     for f in sorted((RESULTS).glob("*.json")):
         r = json.loads(f.read_text(encoding="utf-8"))
         doc = r["doc"]
-        qids = [q for q in q2c if q.startswith(doc + "_")]
+        qids = by_doc.get(doc) or []
         if not qids:
             continue
         site = sites[q2s[qids[0]]]
@@ -604,8 +627,9 @@ def cmd_publish(args) -> int:
             if it.get("drop") or not c2q.get(c, "").startswith(doc + "_"):
                 continue
             site["q"].setdefault(c, []).append({
-                "kind": "errata", "cats": ["原卷有誤"], "sure": bool(it.get("sure")),
-                "applied": bool(it.get("applied")),
+                "kind": "errata", "cats": ["擷取錯誤" if it.get("extraction") else "原卷有誤"],
+                "sure": bool(it.get("sure")), "applied": bool(it.get("applied")),
+                "extraction": bool(it.get("extraction")),
                 "note": f"{it.get('note', '')[:60]}：「{it.get('got', '')[:60]}」→「{it.get('fix', '')[:60]}」"})
             n += 1
         yp = BANK / f"{doc}.yaml"
@@ -662,6 +686,7 @@ def main() -> int:
     p.add_argument("--docs", default="")
     p.add_argument("--workers", type=int, default=8)
     p.add_argument("--batch", action="store_true")
+    p.add_argument("--chunk-mb", type=int, default=600)
     p.add_argument("--results", type=Path, default=RESULTS)
     p = sub.add_parser("collect")
     p.add_argument("--pdf-root", type=Path, required=True)

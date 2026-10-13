@@ -276,7 +276,7 @@ questions:
   - label: A
     content: 對話中之刑罰均可以單獨科處
   - label: B
-    content: 即使尚未判決定確，亦能科處
+    content: 即使尚未判決確定，亦能科處
   - label: C
     content: 上述刑罰分別為主刑、從刑
   - label: D
@@ -300,6 +300,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 即使尚未判決定確，亦能科處
+    to: 即使尚未判決確定，亦能科處
+    note: 「定確」應為「確定」
+    by: ai_review
+    extraction: true
 - id: doc_113_台南_復興_社會_公民_g8s2e2_s1_48
   section: 1
   number: 48
@@ -598,7 +604,7 @@ questions:
   number: 56
   type: single
   page: 2
-  stem: 15歲少年送醫急救後宣告傷害重不治，主嫌二人因此遭依殺人罪提起公訴，再加上高額賠償金的問題，為此二人向律師尋求法律諮詢。針對這次案件衍生的民、刑事訴訟，律師最不可能提供他們下列哪一項建議？
+  stem: 15歲少年送醫急救後宣告傷重不治，主嫌二人因此遭依殺人罪提起公訴，再加上高額賠償金的問題，為此二人向律師尋求法律諮詢。針對這次案件衍生的民、刑事訴訟，律師最不可能提供他們下列哪一項建議？（原卷有誤，已修正）
   options:
   - label: A
     content: 此刑事訴訟案件無法與被害人家屬在調解委員會中進行調解
@@ -628,6 +634,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 15歲少年送醫急救後宣告傷害重不治
+    to: 15歲少年送醫急救後宣告傷重不治
+    note: 贅字，「傷害重」應為「傷重」
+    by: ai_review
 - id: doc_113_台南_復興_社會_公民_g8s2e2_s1_57
   section: 1
   number: 57
