@@ -3,6 +3,9 @@
 把國中考古題的 PDF／掃描檔轉成結構化題庫，依課綱與教科書章節分類，
 供教師檢索、自由組卷、匯出考卷。
 
+> **其他專案要取用題目**：看 [`docs/USING_THE_BANK.md`](docs/USING_THE_BANK.md)。
+> 題目快照在 `data/export/`，取用模組是 `client/oleqs_bank.py`，不需要架站或金鑰。
+
 ## 快速開始（選題組卷平台）
 
 ```bash
