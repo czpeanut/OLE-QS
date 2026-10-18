@@ -48,7 +48,7 @@ python client/oleqs_bank.py image "doc_111_台北_新興_數學_g7s1e1/s1_8_f1.p
 | **C. Supabase 直連** | `SUPABASE_URL`、`SUPABASE_SERVICE_ROLE_KEY` | 全部（含附圖原檔） | 只有在 B 不能用時 |
 
 - **只要題目文字，用 A 就夠了**：快照在 `data/export/`，跟著 repo 一起 clone 下來。
-- **附圖不在 repo 裡**（約 4 GB，且是校內考卷的著作），要用 B 或 C 下載；`Bank.image()` 會自動選可用的方式，並快取在 `~/.cache/oleqs/`。
+- **附圖不在 repo 裡**（約 4 GB），要用 B 或 C 下載；`Bank.image()` 會自動選可用的方式，並快取在 `~/.cache/oleqs/`。
 - **快照是某個時間點的副本**（時間見 `data/export/manifest.json` 的 `exported_at`）。之後在審題台修正的內容，要重新匯出才會進快照（見「更新快照」）。
 
 ## 金鑰與安全（一定要遵守）
@@ -56,7 +56,6 @@ python client/oleqs_bank.py image "doc_111_台北_新興_數學_g7s1e1/s1_8_f1.p
 - **不要在對話裡請使用者貼金鑰或通行碼。** 請使用者把 `.env.local` 檔案**上傳**到 repo 根目錄，`oleqs_bank.py` 會自動讀。
 - `.env.local` 已在 `.gitignore`，**絕不 commit、不印出金鑰值**。
 - 優先用網站通行碼（B，唯讀）。`SUPABASE_SERVICE_ROLE_KEY` 有完整寫入權限，只拿來讀，不要用它改資料。
-- 題目來自各校段考卷，**只供內部教學使用**，不要公開發佈題目或附圖（例如放到公開網站、公開 repo）。
 
 `.env.local` 範例：
 
