@@ -881,7 +881,7 @@ questions:
   number: 23
   type: single
   page: 1
-  stem: 已知結構檢測了細胞膜之外，細胞內沒有其他由膜包圍成的特殊構造，推測以上和結構菌同一界應該有幾種？
+  stem: 已知結核菌除了細胞膜之外，細胞內沒有其他由膜包圍成的特殊構造，推測以上和結核菌同一界應該有幾種？
   options:
   - label: A
     content: '2'
@@ -910,6 +910,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 已知結構檢測了細胞膜之外，細胞內沒有其他由膜包圍成的特殊構造，推測以上和結構菌同一界應該有幾種？
+    to: 已知結核菌除了細胞膜之外，細胞內沒有其他由膜包圍成的特殊構造，推測以上和結核菌同一界應該有幾種？
+    note: 「結核菌除了」誤植為「結構檢測了」；「結核菌」誤為「結構菌」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s2e2_s1_24
   section: 1
   number: 24
@@ -1053,7 +1059,7 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 老師提醒，如果到野外國浮潛戲水時要特別小心水母，尤其是澳大利亞箱形水母（學名：Chironex fleckeri），是具有致命性的劇毒水母。請問關於此種水母學名的敘述，何者正確？
+  stem: 老師提醒，如果到野外或浮潛戲水時要特別小心水母，尤其是澳大利亞箱形水母（學名：Chironex fleckeri），是具有致命性的劇毒水母。請問關於此種水母學名的敘述，何者正確？
   options:
   - label: A
     content: Chironex為種小名
@@ -1082,12 +1088,18 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如果到野外國浮潛戲水時要特別小心水母
+    to: 如果到野外或浮潛戲水時要特別小心水母
+    note: 「或」誤植為「國」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s2e2_s1_28
   section: 1
   number: 28
   type: single
   page: 2
-  stem: 近來西南農業友，進行蚯蚓養殖法，利用養殖蚯蚓的排遺物當做肥料及協助鬆土，取代了化學肥料及農藥的使用，有助於農作物的生長，關於蚯蚓的敘述何者錯誤？
+  stem: 近來有些農友，進行蚯蚓養殖法，利用養殖蚯蚓的排遺物當做肥料及協助鬆土，取代了化學肥料及農藥的使用，有助於農作物的生長，關於蚯蚓的敘述何者錯誤？
   options:
   - label: A
     content: 依上表的「門」和「生物特徵」的配對應該為B-3
@@ -1116,6 +1128,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 近來西南農業友，進行蚯蚓養殖法
+    to: 近來有些農友，進行蚯蚓養殖法
+    note: 「有些農友」誤植為「西南農業友」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s2e2_s1_29
   section: 1
   number: 29
@@ -1226,7 +1244,7 @@ questions:
   number: 32
   type: single
   page: 2
-  stem: 優輝在複式顯微鏡看到了一隻會運動，但是體內又具有綠色顆粒的小動物，可能是有什麼？
+  stem: 優輝在複式顯微鏡看到了一隻會運動，但是體內又具有綠色顆粒的小動物，可能為何者？
   options:
   - label: A
     content: 眼蟲
@@ -1257,6 +1275,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 可能是有什麼？
+    to: 可能為何者？
+    note: 「可能為何者？」誤植為「可能是有什麼？」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s2e2_s1_33
   section: 1
   number: 33
@@ -1476,7 +1500,7 @@ questions:
   number: 39
   type: single
   page: 2
-  stem: 優輝家值油桐樹開花季，正落下雪白的油桐花如右圖，關於油桐的敘述何者正確？
+  stem: 優輝家正值油桐樹開花季，正落下雪白的油桐花如右圖，關於油桐的敘述何者正確？
   options:
   - label: A
     content: 葉脈為平行脈
@@ -1493,16 +1517,11 @@ questions:
     crop:
       page: 2
       rect:
-      - 72.33
+      - 103.12
       - 26.11
       - 176.4
       - 105.37
-      auto_from:
-      - 71.02
-      - 20.62
-      - 178.69
-      - 106.04
-    crop_by: auto
+    crop_by: human
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1522,6 +1541,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 優輝家值油桐樹開花季
+    to: 優輝家正值油桐樹開花季
+    note: 漏了「正」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s2e2_s1_40
   section: 1
   number: 40
@@ -1671,10 +1696,10 @@ questions:
   number: 43
   type: single
   page: 2
-  stem: 承上題，對於此類植物的敘述，何者正確？
+  stem: 承上題，對於此類植物的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 具有輸卵管，受精作用不需水作為媒介
+    content: 具有花粉管，受精作用不需水作為媒介
   - label: B
     content: 毬果是它的果實
   - label: C
@@ -1714,6 +1739,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 具有輸卵管，受精作用不需水作為媒介
+    to: 具有花粉管，受精作用不需水作為媒介
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「具有輸卵管，受精作用不需水作為媒介」→「具有花粉管，受精作用不需水作為媒介」
+    by: review
 - id: doc_112_彰化_埤頭_自然_g7s2e2_s1_44
   section: 1
   number: 44
@@ -1729,7 +1759,7 @@ questions:
     content: 酵母菌
   - label: D
     content: 昆蟲綱
-  group_stem: 偏側蛇蟲草菌又被稱為「喪屍真菌」，此菌感染如弓背蟻等特定種類的螞蟻，利用螞蟻作為營養的來源，菌絲漸漸在螞蟻體內形成，然後圍繞在肌肉細胞周圍，影響螞蟻的行為，被感染的螞蟻就像殭屍身不由己，離開蟻巢並走到適合菌生長環境。螞蟻緊緊得咬住樹葉或枝條而後死亡，是被感染的特徵，而蟻屍的外殼將會保護偏側蛇蟲草菌的生長，之後從蟻屍的某些部位長出菌柄，如附圖所示，待成熟後即釋放孢子，繼續感染附近的螞蟻。請回答下列問題：
+  group_stem: 偏側蛇蟲草菌又被稱為「喪屍真菌」，此菌感染如弓背蟻等特定種類的螞蟻，利用螞蟻作為營養的來源，菌絲漸漸在螞蟻體內形成，然後圍繞在肌肉細胞周圍，影響螞蟻的行為，被感染的螞蟻就像殭屍身不由己，離開蟻巢並走到適合真菌生長的環境。螞蟻緊緊得咬住樹葉或枝條而後死亡，是被感染的特徵，而蟻屍的外殼將會保護偏側蛇蟲草菌的生長，之後從蟻屍的某些部位長出菌柄，如附圖所示，待成熟後即釋放孢子，繼續感染附近的螞蟻。請回答下列問題：
   shared_asset: g1_44_45
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1750,6 +1780,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 離開蟻巢並走到適合菌生長環境
+    to: 離開蟻巢並走到適合真菌生長的環境
+    note: 題組短文中漏了「真」與「的」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s2e2_s1_45
   section: 1
   number: 45
@@ -1769,7 +1805,7 @@ questions:
     content: 兩人推論都很合理
   - label: D
     content: 兩人推論都不合理
-  group_stem: 偏側蛇蟲草菌又被稱為「喪屍真菌」，此菌感染如弓背蟻等特定種類的螞蟻，利用螞蟻作為營養的來源，菌絲漸漸在螞蟻體內形成，然後圍繞在肌肉細胞周圍，影響螞蟻的行為，被感染的螞蟻就像殭屍身不由己，離開蟻巢並走到適合菌生長環境。螞蟻緊緊得咬住樹葉或枝條而後死亡，是被感染的特徵，而蟻屍的外殼將會保護偏側蛇蟲草菌的生長，之後從蟻屍的某些部位長出菌柄，如附圖所示，待成熟後即釋放孢子，繼續感染附近的螞蟻。請回答下列問題：
+  group_stem: 偏側蛇蟲草菌又被稱為「喪屍真菌」，此菌感染如弓背蟻等特定種類的螞蟻，利用螞蟻作為營養的來源，菌絲漸漸在螞蟻體內形成，然後圍繞在肌肉細胞周圍，影響螞蟻的行為，被感染的螞蟻就像殭屍身不由己，離開蟻巢並走到適合真菌生長的環境。螞蟻緊緊得咬住樹葉或枝條而後死亡，是被感染的特徵，而蟻屍的外殼將會保護偏側蛇蟲草菌的生長，之後從蟻屍的某些部位長出菌柄，如附圖所示，待成熟後即釋放孢子，繼續感染附近的螞蟻。請回答下列問題：
   shared_asset: g1_44_45
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true

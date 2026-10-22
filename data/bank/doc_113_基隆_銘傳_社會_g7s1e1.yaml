@@ -1630,7 +1630,7 @@ questions:
   - label: B
     content: 洗衣機廣告「有了這台〈新好男人牌〉洗衣機…就可以輕鬆幫老婆洗衣服！」
   - label: C
-    content: 香水廣告「中比起王子的玻璃鞋，灰姑娘選擇穿著自己喜愛的靴子」
+    content: 香水廣告「比起王子的玻璃鞋，灰姑娘選擇穿著自己喜愛的靴子」
   - label: D
     content: 燈泡廣告「怕黑，要怎麼當爸爸？」
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1652,6 +1652,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「中比起
+    to: 「比起
+    note: (C)改為香水廣告「比起王子的玻璃鞋，灰姑娘選擇穿著自己喜愛的靴子。」
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_社會_g7s1e1_s3_41
   section: 3
   number: 41

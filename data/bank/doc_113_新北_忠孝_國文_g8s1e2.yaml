@@ -988,7 +988,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 下列「 」中成語的使用，何者正確？
+  stem: 下列「 」中成語的使用，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 老師說到做到，「雷大雨小」的風格，令學生兢兢業業，不敢懈怠
@@ -997,7 +997,7 @@ questions:
   - label: C
     content: 聽到祖母過世的消息「如雷貫耳」，讓她頓時淚如雨下
   - label: D
-    content: 他們「疾風迅雷」般的攻勢徹底打亂了我们隊伍的布局
+    content: 他們「疾風迅雷」般的攻勢徹底打亂了我們隊伍的布局
   tags:
     chapter:
       publisher: null
@@ -1015,6 +1015,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：般的攻勢徹底打亂了我们隊伍的布局 → 般的攻勢徹底打亂了我們隊伍的布局
+    by: review
 - id: doc_113_新北_忠孝_國文_g8s1e2_s5_13
   section: 5
   number: 13
@@ -1154,7 +1159,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 「先生不知何許人也，亦不詳其姓字。宅邊有五柳樹，因而為號焉。」這段文字藉描寫五柳先生姓名不為人所知，暗指陶淵明歸隱的心志，下列哪一個詩作也表現出歸隱的心境？
+  stem: 「先生不知何許人也，亦不詳其姓字。宅邊有五柳樹，因以為號焉。」這段文字藉描寫五柳先生姓名不為人所知，暗指陶淵明歸隱的心志，下列哪一個詩作也表現出歸隱的心境？
   options:
   - label: A
     content: 行路難，多岐路，今安在。長風破浪會有時，直掛雲帆濟滄海
@@ -1184,6 +1189,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: '擷取錯誤已修正（審題回報）：宅邊有五柳樹，因而為號焉。 → 宅邊有五柳樹，因
+
+      以為號焉。'
+    by: review
+    extraction: true
 - id: doc_113_新北_忠孝_國文_g8s1e2_s5_18
   section: 5
   number: 18

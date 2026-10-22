@@ -199,7 +199,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列文句，何者用字完全正確？
+  stem: 下列文句，何者用字完全正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 一聽到下課鈴聲，阿黃就迫不急待地衝出教室
@@ -208,7 +208,7 @@ questions:
   - label: C
     content: 經過老師開導之後，步高茅塞頓開，心情開朗
   - label: D
-    content: 實驗已接近完成，宴辰卻因一時疏忽而功虧一潰，令人惋惜
+    content: 實驗已接近完成，宴辰卻因一時疏忽而功虧一簣，令人惋惜
   tags:
     chapter:
       publisher: 翰林
@@ -226,6 +226,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 宴辰卻因一時疏忽而功虧一潰
+    to: 宴辰卻因一時疏忽而功虧一簣
+    note: 「功虧一潰」應為「功虧一簣」：「宴辰卻因一時疏忽而功虧一潰」→「宴辰卻因一時疏忽而功虧一簣」
+    by: review
 - id: doc_113_新北_忠孝_國文_g7s2e3_s1_7
   section: 1
   number: 7

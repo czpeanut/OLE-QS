@@ -1389,7 +1389,7 @@ questions:
   number: 7
   type: single
   page: 3
-  stem: 7. Which is right?
+  stem: 7. Which is right?（原卷有誤，已修正）
   options:
   - label: A
     content: A goose can speak.
@@ -1398,7 +1398,7 @@ questions:
   - label: C
     content: A goose can't swim underwater.
   - label: D
-    content: A monkey can climb trees and walk on its leg.
+    content: A monkey can climb trees and walk on its legs.
   group_stem: 'B.
 
     | What Can Animals Do? | | |
@@ -1433,6 +1433,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: A monkey can climb trees and walk on its leg.
+    to: A monkey can climb trees and walk on its legs.
+    note: 表格為legs，選項D漏印s：「A monkey can climb trees and walk on its leg.」→「A monkey
+      can climb trees and walk on its legs.」
+    by: review
 - id: doc_112_彰化_福興_英語_g7s1e3_s6_8
   section: 6
   number: 8

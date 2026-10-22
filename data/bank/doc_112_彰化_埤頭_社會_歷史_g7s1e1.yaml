@@ -27,7 +27,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 茂翔參加學校戶外教學到「十三行博物館」參觀，他可能在博物館裡學到哪些知識？(A)館內介紹的國山、植物園及十三行文化，全是臺灣北部重要的新石器文化遺址
+  stem: 茂翔參加學校戶外教學到「十三行博物館」參觀，他可能在博物館裡學到哪些知識？(A)館內介紹的圓山、植物園及十三行文化，全是臺灣北部重要的新石器文化遺址
     (B)十三行文化證明已具有煉鐵技術 (C)十三行遺址出土的陶器，質地粗糙、製陶技術反比以前退步 (D)十三行文化住民以農業為主，已完全放棄漁獵。
   options:
   - label: A
@@ -57,6 +57,14 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A)館內介紹的國山、植物園及十三行文化
+    to: (A)館內介紹的圓山、植物園及十三行文化
+    note: '「圓山」誤植為「國山」
+
+      題幹中重複選項'
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e1_s1_2
   section: 1
   number: 2

@@ -35,14 +35,14 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 下列各組詞語「 」中的字，何組字音前後不同？
+  stem: 下列各組詞語「 」中的字，何組字音前後不同？（原卷有誤，已修正）
   options:
   - label: A
     content: 「峭」壁／「捎」個口信
   - label: B
     content: 「儘」管／絕無「僅」有
   - label: C
-    content: 興利除弊「弊」／坐以待「斃」
+    content: 興利除「弊」／坐以待「斃」
   - label: D
     content: 漂「泊」／「舶」來品。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -63,6 +63,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：興利除弊「弊」／坐以待「斃」 → 興利除「弊」／坐以待「斃」
+    by: review
 - id: doc_111_彰化_福興_國文_g7s1e1_s1_2
   section: 1
   number: 2
@@ -1114,7 +1119,7 @@ questions:
   number: 3
   type: fill
   page: 3
-  stem: 「鸛」雀
+  stem: 「鶴」雀（原卷有誤，已修正）
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   group_stem: 注音國字 10%（每題 1 分）
@@ -1135,6 +1140,11 @@ questions:
   - ㄍㄨㄢˋ
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：「鸛」雀 → 「鶴」雀
+    by: review
 - id: doc_111_彰化_福興_國文_g7s1e1_s2_4
   section: 2
   number: 4
@@ -1294,7 +1304,7 @@ questions:
   number: 10
   type: fill
   page: 3
-  stem: 銀「ㄎㄨㄥˋ」
+  stem: 銀「ㄅㄧˋ」
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1313,6 +1323,12 @@ questions:
     gemini_high: 鞚
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：銀「ㄎㄨㄥˋ」 → 銀「ㄅㄧˋ」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g7s1e1_s3_1
   section: 3
   number: 1

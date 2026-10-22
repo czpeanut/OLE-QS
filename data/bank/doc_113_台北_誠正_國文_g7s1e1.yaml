@@ -637,7 +637,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 濫竽充數這個故事，是在強調為政者應要注意下列哪一覧面的作為？
+  stem: 濫竽充數這個故事，是在強調為政者應要注意下列哪一方面的作為？
   options:
   - label: A
     content: 考核確實，剔除庸才
@@ -664,6 +664,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列哪一覧面的作為？
+    to: 下列哪一方面的作為？
+    note: 「方面」誤植為「覧面」
+    by: review
+    extraction: true
 - id: doc_113_台北_誠正_國文_g7s1e1_s1_20
   section: 1
   number: 20
@@ -1526,7 +1532,7 @@ questions:
   stem: 下列詩句的主題，何者不是描繪瀑布？
   options:
   - label: A
-    content: 不管是甚麼風／都跟著起哄
+    content: 不管是什麼風／都跟著起哄
   - label: B
     content: 如一條拉鍊，嘩啦嘩啦拉開兩山的翠綠
   - label: C
@@ -1565,6 +1571,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 不管是甚麼風／都跟著起哄
+    to: 不管是什麼風／都跟著起哄
+    note: 「什麼」誤植為「甚麼」
+    by: review
+    extraction: true
 - id: doc_113_台北_誠正_國文_g7s1e1_s3_40
   section: 3
   number: 40

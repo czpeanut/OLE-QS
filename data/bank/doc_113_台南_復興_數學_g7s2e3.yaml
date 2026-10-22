@@ -124,11 +124,12 @@ questions:
     crop:
       page: 1
       rect:
-      - 396.0
+      - 388.52
       - 270.33
-      - 475.53
-      - 330.87
+      - 480.94
+      - 305.88
     redrawn: 去除浮水印
+    crop_by: human
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1242,8 +1243,8 @@ questions:
   number: 24
   type: single
   page: 4
-  stem: 學生小恩、小欣、阿翔三人中要選出一 IOError 復興國中的小市長，開票時開出有效選票 1500 張，統計其中 1000 張選票的結果是：小恩得
-    360 張，小欣得 310 張，阿翔得 330 張，若小恩要當選，則小恩在剩下的 500 張選票中至少再得多少張票，才可保證能單獨以得票最多確定當選復興國中的小市長？
+  stem: 學生小恩、小欣、阿翔三人中要選出一 位 復興國中的小市長，開票時開出有效選票 1500 張，統計其中 1000 張選票的結果是：小恩得 360 張，小欣得
+    310 張，阿翔得 330 張，若小恩要當選，則小恩在剩下的 500 張選票中至少再得多少張票，才可保證能單獨以得票最多確定當選復興國中的小市長？
   options:
   - label: A
     content: '235'
@@ -1273,6 +1274,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 三人中要選出一 IOError 復興國中的小市長
+    to: 三人中要選出一位復興國中的小市長
+    note: 「位」字誤擷取為「IOError」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_數學_g7s2e3_s1_25
   section: 1
   number: 25

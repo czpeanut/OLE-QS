@@ -586,7 +586,7 @@ questions:
   stem: 在古文中，常會有通用字的情況，下列選項中的字，何者不能互換？
   options:
   - label: A
-    content: 學而時習之，不「亦」說乎→通「悅」
+    content: 學而時習之，不亦「說」乎→通「悅」
   - label: B
     content: 水陸草木之花，可愛者甚「蕃」→通「繁」
   - label: C
@@ -612,6 +612,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 不「亦」說乎→通「悅」
+    to: 不亦「說」乎→通「悅」
+    note: 原卷引號標錯字，應為說通悅：「不「亦」說乎→通「悅」」→「不亦「說」乎→通「悅」」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g8s1e3_s3_32
   section: 3
   number: 32
@@ -986,7 +992,7 @@ questions:
   number: 42
   type: single
   page: 2
-  stem: 蜜蜂的讚美：「一條大河總得容納無數的小溪、小潤的流水，一座幾千米的高山總得以及一個高原作為它的基座。」此段話的寓意與下列何者相去最遠？
+  stem: 蜜蜂的讚美：「一條大河總得容納無數的小溪、小澗的流水，一座幾千米的高山總得以及一個高原作為它的基座。」此段話的寓意與下列何者相去最遠？（原卷有誤，已修正）
   options:
   - label: A
     content: 江海能夠納百川，所以成其大
@@ -1018,6 +1024,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小溪、小潤的流水
+    to: 小溪、小澗的流水
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「小溪、小潤的流水」→「小溪、小澗的流水」
+    by: review
 - id: doc_112_彰化_埤頭_國文_g8s1e3_s3_43
   section: 3
   number: 43
@@ -1065,7 +1076,7 @@ questions:
   - label: A
     content: 人生需要做非常多抉擇，邁向成功的須自行承受後果
   - label: B
-    content: 棒球跟人生一樣，邁向成功的前提出是做出對的選擇
+    content: 棒球跟人生一樣，邁向成功的前提是做出對的選擇
   - label: C
     content: 逃避是一種正確的人生選擇，但在棒球場上則不是
   - label: D
@@ -1092,6 +1103,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 前提出是做出對的選擇
+    to: 前提是做出對的選擇
+    note: 多「出」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g8s1e3_s3_45
   section: 3
   number: 45
@@ -1316,7 +1333,7 @@ questions:
   number: 51
   type: single
   page: 2
-  stem: 學期結束前，阿亮向老師要求加分，老師不悅地說：「我為何要幫你加分？」阿亮說：「因為我媽考前瞪著我說：『如果期末成績不好的話，就有一個考要倒大楣了！』我想老師應該為了自己的安全著想才對！」根據這段文字，下列何者敘述正確？
+  stem: 學期結束前，阿亮向老師要求加分，老師不悅地說：「我為何要幫你加分？」阿亮說：「因為我媽考前瞪著我說：『如果期末成績不好的話，就有一個老師要倒大楣了！』我想老師應該為了自己的安全著想才對！」根據這段文字，下列何者敘述正確？
   options:
   - label: A
     content: 阿亮母親威脅老師，要老師為她兒子加分
@@ -1345,6 +1362,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 有一個考要倒大楣了
+    to: 有一個老師要倒大楣了
+    note: 「老師」誤植為「考」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g8s1e3_s3_52
   section: 3
   number: 52
@@ -1726,7 +1749,7 @@ questions:
   number: 63
   type: single
   page: 3
-  stem: 「有農夫種茄不活，求計於農務司，司吏曰：『此不難，每茄根下埋一文即活。』問其何故，答曰：『有錢者生，無錢者死。』」這段文字主要在揭露世問哪一種醜態？
+  stem: 「有農夫種茄不活，求計於農務司，司吏曰：『此不難，每茄根下埋一文即活。』問其何故，答曰：『有錢者生，無錢者死。』」這段文字主要在揭露世間哪一種醜態？
   options:
   - label: A
     content: 貪官好賄，索求無度
@@ -1755,6 +1778,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 揭露世問哪一種醜態
+    to: 揭露世間哪一種醜態
+    note: 「間」誤植為「問」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g8s1e3_s3_64
   section: 3
   number: 64

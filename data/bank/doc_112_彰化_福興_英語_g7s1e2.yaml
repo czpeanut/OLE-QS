@@ -398,7 +398,7 @@ questions:
   number: 1
   type: fill
   page: 1
-  stem: 大家，我們來找禮物吧！ Guys, __(1)__ a __(2)__ { (2)有2個字 }.
+  stem: 大家，我們來找禮物吧！ Guys, __(1)__ a __(2)gh__ { (2)有2個字 }
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -419,6 +419,12 @@ questions:
     gemini: let's look for；present
     qwen: let's find; nice gift
     gemini_high: let's have；gift hunt
+  errata:
+  - from: Guys, __(1)__ a __(2)__ { (2)有2個字 }.
+    to: Guys, (1) a (2) g______ h______ { (2)有2個字 }
+    note: 漏了第(2)格提示字母 g______ h______
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_英語_g7s1e2_s2_2
   section: 2
   number: 2
@@ -1034,7 +1040,7 @@ questions:
   page: 2
   stem: 'Questions 18-20 (一個答案限用一次)
 
-    (A) next to (B) on (C) under (D) inside
+    (A) next to (B) on (C) under (D) insideTodayis
 
     Tina''s birthday. What''s ______ the box from her boyfriend?'
   options:
@@ -1064,6 +1070,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: Tina's birthday.
+    to: Today is Tina's birthday.
+    note: 題幹開頭漏了「Today is 」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_英語_g7s1e2_s3_19
   section: 3
   number: 19

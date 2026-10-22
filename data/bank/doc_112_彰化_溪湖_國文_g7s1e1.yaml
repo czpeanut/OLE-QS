@@ -923,7 +923,7 @@ questions:
   - label: B
     content: 這齣戲的預告看似有趣，內容卻「徒然」無味
   - label: C
-    content: 半夜裡野狗的嚎叫令人毛骨「悚然」
+    content: 半夜裡野狗的嚎叫令人毛骨「索然」
   - label: D
     content: 舊地重遊，人事已非，我不禁「恍然」神傷。
   tags:
@@ -943,6 +943,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 半夜裡野狗的嚎叫令人毛骨「悚然」
+    to: 半夜裡野狗的嚎叫令人毛骨「索然」
+    note: 原卷(C)選項為「索然」，擷取誤植為「悚然」
+    by: review
+    extraction: true
 - id: doc_112_彰化_溪湖_國文_g7s1e1_s3_16
   section: 3
   number: 16

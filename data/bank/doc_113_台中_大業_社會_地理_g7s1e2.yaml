@@ -1233,7 +1233,7 @@ questions:
   number: 35
   type: single
   page: 3
-  stem: 地理老師在出發前，在黑板上畫出了地形示意圖（如圖【八】），並向同學預告一定會經過這樣訂地形區。請你觀察圖【八】，然後告訴她這種地形為何？
+  stem: 地理老師在出發前，在黑板上畫出了地形示意圖（如圖【八】），並向同學預告一定會經過這樣的地形區。請你觀察圖【八】，然後告訴她這種地形為何？
   options:
   - label: A
     content: 丘陵
@@ -1279,6 +1279,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 並向同學預告一定會經過這樣訂地形區
+    to: 並向同學預告一定會經過這樣的地形區
+    note: 「的」誤植為「訂」
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_社會_地理_g7s1e2_s4_36
   section: 4
   number: 36
@@ -1415,7 +1421,7 @@ questions:
   number: 38
   type: single
   page: 3
-  stem: 芊瑜跟同學正在慶祝得到一分，領隊又接著進行下一題。請問：「在分層設色圖中，通常以何種顏色來代表平原地形成？」
+  stem: 芊瑜跟同學正在慶祝得到一分，領隊又接著進行下一題。請問：「在分層設色圖中，通常以何種顏色來代表平原地形？」
   options:
   - label: A
     content: 橘色
@@ -1443,6 +1449,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 通常以何種顏色來代表平原地形成？
+    to: 通常以何種顏色來代表平原地形？
+    note: 「地形」後多出「成」字
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_社會_地理_g7s1e2_s4_39
   section: 4
   number: 39

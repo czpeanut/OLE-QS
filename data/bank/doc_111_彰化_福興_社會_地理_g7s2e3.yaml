@@ -822,7 +822,7 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: 「本地是臺灣最早開發的地區,歷史發展悠久,現今仍存留許多珍貴的史蹟,如赤崁樓、鹿耳門天后宮等,這些資產使本地成為文化薈萃的古都。」上文所描述的古部位於哪一個區域?
+  stem: 「本地是臺灣最早開發的地區,歷史發展悠久,現今仍存留許多珍貴的史蹟,如赤崁樓、鹿耳門天后宮等,這些資產使本地成為文化薈萃的古都。」上文所描述的古都位於哪一個區域?
   options:
   - label: A
     content: 東部
@@ -851,6 +851,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 上文所描述的古部位於哪一個區域？
+    to: 上文所描述的古都位於哪一個區域？
+    note: 「古都」誤擷為「古部」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_地理_g7s2e3_s1_22
   section: 1
   number: 22

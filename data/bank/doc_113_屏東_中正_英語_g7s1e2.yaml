@@ -824,7 +824,7 @@ questions:
   - label: C
     content: That’s right.
   - label: D
-    content: I don’t think so.
+    content: I don’t think so.*think認為
   group_stem: 'Josh: I see a rat near the sofa.
 
     George: It is a scary animal. ____ now?
@@ -856,6 +856,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (D) I don’t think so.
+    to: (D) I don’t think so. *think 認為
+    note: 漏了註釋 *think 認為
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g7s1e2_s7_1
   section: 7
   number: 1

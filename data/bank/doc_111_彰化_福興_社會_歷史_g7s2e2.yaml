@@ -537,7 +537,7 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: 以下哪一個民生成就，台灣還未達成過？
+  stem: 以下哪一個民主成就，台灣還未達成過？
   options:
   - label: A
     content: 首次政黨輪替
@@ -566,6 +566,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 以下哪一個民生成就
+    to: 以下哪一個民主成就
+    note: 「民主」誤植為「民生」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s2e2_s2_17
   section: 2
   number: 17
@@ -757,7 +763,7 @@ questions:
   number: 22
   type: single
   page: 1
-  stem: 承小題，所有臺人領導的政治社會運動皆發生在日本治臺的哪一個統治時期？
+  stem: 承上題，所有臺人領導的政治社會運動皆發生在日本治臺的哪一個統治時期？
   options:
   - label: A
     content: 殖民地特殊統治時期
@@ -786,12 +792,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承小題，所有臺人領導
+    to: 承上題，所有臺人領導
+    note: 「承上題」誤植為「承小題」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s2e2_s2_23
   section: 2
   number: 23
   type: single
   page: 1
-  stem: 關於日治時期の中等教育敘述，何者錯誤？
+  stem: 關於日治時期的中等教育敘述，何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 臺人可選擇就讀師範學校，主要培養公學校的師資
@@ -820,6 +832,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於日治時期の中等教育敘述
+    to: 關於日治時期的中等教育敘述
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「關於日治時期の中等教育敘述」→「關於日治時期的中等教育敘述」
+    by: review
 - id: doc_111_彰化_福興_社會_歷史_g7s2e2_s2_24
   section: 2
   number: 24

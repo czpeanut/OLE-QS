@@ -61,7 +61,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 政府規劃福利服務滿足民眾因為差異性而產生的需求，以促進齊心健全發展，讓生活更有尊嚴。請問下列何者屬於上述的範圍？
+  stem: 政府規劃福利服務滿足民眾因為差異性而產生的需求，以促進身心健全發展，讓生活更有尊嚴。請問下列何者屬於上述的範圍？（原卷有誤，已修正）
   options:
   - label: A
     content: 一直有居住需求的正男，因符合申請條件，開心入住社會住宅
@@ -90,17 +90,22 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：促進齊心健全發展 → 促進身心健全發展
+    by: review
 - id: doc_112_彰化_福興_社會_公民_g7s2e3_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 相較於都會區學生，偏鄉孩子因為學習資源與親子陪伴較為貧乏，無法從小培養閱讀習慣。兒童福利聯盟公布調查報告，指出偏鄉孩子閱讀的資源少、家人難陪伴與偏鄉少圖書等三大困境。上述內容，凸顯了臺灣社會哪一項議題上的不公平？
+  stem: 相較於都會區學生，偏鄉孩子因為學習資源與親子陪伴較為貧乏，無法從小培養閱讀習慣。兒童福利聯盟公布調查報告，指出偏鄉孩子閱讀的資源少、家人難陪伴與偏鄉少圖書等三大困境。上述內容，凸顯了臺灣社會哪一項議題上的不公平？（原卷有誤，已修正）
   options:
   - label: A
     content: 個人的財富沒有得到合理的分配
   - label: B
-    content: 差距使得教育資源分配不均城鄉
+    content: 城鄉差距使得教育資源分配不均
   - label: C
     content: 個人付出沒有得到相同的認可
   - label: D
@@ -124,6 +129,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：差距使得教育資源分配不均城鄉 → 城鄉差距使得教育資源分配不均
+    by: review
 - id: doc_112_彰化_福興_社會_公民_g7s2e3_s1_4
   section: 1
   number: 4
@@ -377,7 +387,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 承小題，根據上述內容判斷，關於該協會的敘述，下列何者最適當？（原卷有誤，已修正）
+  stem: 承上題，根據上述內容判斷，關於該協會的敘述，下列何者最適當？（原卷有誤，已修正）
   options:
   - label: A
     content: 屬於地方政府的一種
@@ -411,6 +421,10 @@ questions:
     to: 關於該協會的敘述
     note: 前文為芒草心慈善協會，誤植為基金會
     by: ai_review
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：承小題 → 承上題；關於該基金會的敘述 → 關於該協會的敘述
+    by: review
 - id: doc_112_彰化_福興_社會_公民_g7s2e3_s1_12
   section: 1
   number: 12
@@ -552,7 +566,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 承小題，上述過程若以社會變遷的三個層次分析，應該符合下列哪一選項？
+  stem: 承上題，上述過程若以社會變遷的三個層次分析，應該符合下列哪一選項？
   options:
   - label: A
     content: 器物 $\rightarrow$ 理念 $\rightarrow$ 制度
@@ -581,6 +595,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：承小題 → 承上題
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_公民_g7s2e3_s1_17
   section: 1
   number: 17

@@ -383,7 +383,7 @@ questions:
     這項實驗設計的目的，最可能是在印證下列何者？'
   options:
   - label: A
-    content: 先入為主的成見，常會影響我們的判斷
+    content: 先入為主的成見，常會影響我們的判斷第三人稱
   - label: B
     content: 做任何事都要有決心與鬥志，才能成功
   - label: C
@@ -409,6 +409,14 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 先入為主的成見，常會影響我們的判斷
+    to: '(A) 先入為主的成見，常會影響我們的判斷
+
+      第三人稱'
+    note: 原卷選項A下方印有「第三人稱」四字，擷取遺漏
+    by: review
+    extraction: true
 - id: doc_113_台中_四育_國文_g8s1e3_s3_7
   section: 3
   number: 7
@@ -729,14 +737,14 @@ questions:
   number: 16
   type: single
   page: 3
-  stem: 下列「 」中的字，何者「不是」動詞？
+  stem: 下列「 」中的字，何者「不是」動詞？（原卷有誤，已修正）
   options:
   - label: A
     content: 丞相「語」郗信
   - label: B
     content: 又不得，瞋「甚」
   - label: C
-    content: 門生歸，「白」郗日
+    content: 門生歸，「白」郗曰
   - label: D
     content: 復於地取「內」口中。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -758,6 +766,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 門生歸，「白」郗日
+    to: 門生歸，「白」郗曰
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「門生歸，「白」郗日」→「門生歸，「白」郗曰」
+    by: review
 - id: doc_113_台中_四育_國文_g8s1e3_s3_17
   section: 3
   number: 17

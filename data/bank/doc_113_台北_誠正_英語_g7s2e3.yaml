@@ -1337,7 +1337,7 @@ questions:
   - label: C
     content: sad
   - label: D
-    content: nervous                                          calm 冷靜的
+    content: 'nervous                                         '
   group_stem: "<D>\nAre You Too Nervous?\nMark your answer to the following questions\
     \ and find out!\n\nQ1. It is your study time, but your sister’s music is really\
     \ loud.  What do you do?\n  (a) You are fine with it.\n  (b) You turn your music\
@@ -1369,6 +1369,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) nervous                                          calm 冷靜的
+    to: (D) nervous
+    note: 選項D混入了原卷側邊的單字註解
+    by: review
+    extraction: true
 - id: doc_113_台北_誠正_英語_g7s2e3_s2_53
   section: 2
   number: 53

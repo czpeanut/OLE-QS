@@ -35,10 +35,10 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 下列「 」中的注音寫成國字後，何組字形相同？
+  stem: 下列「 」中的注音寫成國字後，何組字形相同？（原卷有誤，已修正）
   options:
   - label: A
-    content: 可見一「ㄅㄢ」／色彩斑「ㄅㄢ」爛
+    content: 可見一「ㄅㄢ」／色彩斑「ㄅㄢ」斕
   - label: B
     content: 「ㄕˋ」目以待／躍躍欲「ㄕˋ」
   - label: C
@@ -64,6 +64,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 色彩斑「ㄅㄢ」爛
+    to: 色彩斑「ㄅㄢ」斕
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「色彩斑「ㄅㄢ」爛」→「色彩斑「ㄅㄢ」斕」
+    by: review
 - id: doc_113_高雄_五甲_國文_g7s2e1_s3_2
   section: 3
   number: 2
@@ -752,7 +757,7 @@ questions:
 
     【注釋】1修衣：整理修補衣服  2勿：不
 
-    根據上文，曾子不接受魯君餽贈的原因最可能組什麼？'
+    根據上文，曾子不接受魯君餽贈的原因最可能是什麼？'
   options:
   - label: A
     content: 免於心理負擔
@@ -781,6 +786,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 原因最可能組什麼？
+    to: 原因最可能是什麼？
+    note: 「是」誤植為「組」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_國文_g7s2e1_s3_22
   section: 3
   number: 22

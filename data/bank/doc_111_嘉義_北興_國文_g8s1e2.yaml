@@ -1114,7 +1114,7 @@ questions:
   stem: 古時的醫生又稱為「大夫」或「郎中」，下列各職業的古今代稱，何者配對正確？
   options:
   - label: A
-    content: 間諜：仵作
+    content: (A)間諜仵作
   - label: B
     content: 法醫：細作
   - label: C
@@ -1138,6 +1138,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 間諜：仵作
+    to: （Ａ）間諜仵作
+    note: 原卷間諜後無冒號，擷取多加冒號
+    by: review
+    extraction: true
 - id: doc_111_嘉義_北興_國文_g8s1e2_s3_22
   section: 3
   number: 22
@@ -1182,7 +1188,7 @@ questions:
   - label: B
     content: 我開始欣賞鳥，是在四川
   - label: C
-    content: 再令人觸目的就是那些偶然一見的囚在籠裡的小鳥兒了，但是我看不忍看
+    content: 再令人觸目的就是那些偶然一見的囚在籠裡的小鳥兒了，但是我不忍看
   - label: D
     content: 我開始欣賞鳥，是在四川。黎明時，窗外 是一片鳥囀。
   lesson_raw:
@@ -1205,6 +1211,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 但是我看不忍看
+    to: 但是我不忍看
+    note: 擷取多出一個「看」字
+    by: review
+    extraction: true
 - id: doc_111_嘉義_北興_國文_g8s1e2_s3_24
   section: 3
   number: 24

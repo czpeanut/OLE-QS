@@ -112,7 +112,7 @@ questions:
   - label: B
     content: 「ㄌㄚˋ」盡冬殘 / 味同嚼「ㄌㄚˋ」
   - label: C
-    content: 平「ㄆㄨˊ」沃野 /「ㄆㄨˊ」踅不前
+    content: 平「ㄆㄨˊ」沃野 /「ㄆㄨˊ」匐不前
   - label: D
     content: 佳「ㄧㄠˊ」美食 / 混「ㄧㄠˊ」視聽。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -135,6 +135,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：平「ㄆㄨˊ」沃野 /「ㄆㄨˊ」踅不前 → 平「ㄆㄨˊ」沃野 / 「ㄆㄨˊ」匐不前
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_國文_g7s2e3_s3_4
   section: 3
   number: 4
@@ -142,7 +148,7 @@ questions:
   page: 1
   stem: '下列「 」中的疊字,是狀聲詞的有幾個?
 
-    「喃喃」自語、「喋喋」不休、飢腸「轆轆」、「流水「淙淙」、「嗷嗷」待哺、「津津」樂道、「侃侃」而談、「嘖嘖」稱奇、「滔滔」不絕、伐木「丁丁」'
+    「喃喃」自語、「喋喋」不休、飢腸「轆轆」、流水「淙淙」、「嗷嗷」待哺、「津津」樂道、「侃侃」而談、「嘖嘖」稱奇、「滔滔」不絕、伐木「丁丁」'
   options:
   - label: A
     content: 四個
@@ -170,6 +176,12 @@ questions:
     gemini_high: C
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：飢腸「轆轆」、「流水「淙淙」 → 飢腸「轆轆」、流水「淙淙」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_國文_g7s2e3_s3_5
   section: 3
   number: 5
@@ -491,14 +503,14 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: 下列何者未具有「功成不居」的精神表現?
+  stem: 下列何者未具有「功成不居」的精神表現?（原卷有誤，已修正）
   options:
   - label: A
     content: 生而不有,為而不恃
   - label: B
     content: 願無伐善,無施勞
   - label: C
-    content: 如果說我看得到比別人遠,那是因為我站在巨人的肩膀上
+    content: 如果說我看得比別人遠,那是因為我站在巨人的肩膀上
   - label: D
     content: 投我以桃,報之以李。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -520,6 +532,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：如果說我看得到比別人遠 → 如果說我看得比別人遠
+    by: review
 - id: doc_113_高雄_五甲_國文_g7s2e3_s3_15
   section: 3
   number: 15

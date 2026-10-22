@@ -94,14 +94,14 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 關於片利共生，何者正確？
+  stem: 關於片利共生，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 兩種生物，雙方都獲利
   - label: B
     content: 雙方輪流協助對方，使生活更順利
   - label: C
-    content: 鯽魚與海龜關係，屬於片利共生
+    content: 鮣魚與海龜關係，屬於片利共生
   - label: D
     content: 雙方會定期互換角色，做對方的事
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -123,6 +123,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：鯽魚與海龜關係，屬於片利共生 → 鮣魚與海龜關係，屬於片利共生
+    by: review
 - id: doc_111_彰化_埤頭_自然_g7s2e3_s1_4
   section: 1
   number: 4
@@ -196,7 +201,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 鴉間稻是指將養鴨和耕稻，同時進行的農法，害蟲可作為鴨子的食物，不用殺蟲劑。下列何者錯誤？
+  stem: 鴨間稻是指將養鴨和耕稻，同時進行的農法，害蟲可作為鴨子的食物，不用殺蟲劑。下列何者錯誤？
   options:
   - label: A
     content: 鴨子吃害蟲，屬於掠食
@@ -225,6 +230,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：鴉間稻是指將養鴨和耕稻 → 鴨間稻是指將養鴨和耕稻
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e3_s1_7
   section: 1
   number: 7
@@ -239,7 +250,7 @@ questions:
   - label: C
     content: 小丑魚與海葵
   - label: D
-    content: 熱蟲與蚜蟲
+    content: 瓢蟲與蚜蟲
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -259,6 +270,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：熱蟲與蚜蟲 → 瓢蟲與蚜蟲
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e3_s1_8
   section: 1
   number: 8
@@ -716,7 +733,7 @@ questions:
   - label: C
     content: 人為開發前，若會影響棲地，則要完全避開，另尋其它地方
   - label: D
-    content: 環評專家的意見，僅供參考，主要是以開發商利益潤為主
+    content: 環評專家的意見，僅供參考，主要是以開發商利潤為主
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -736,6 +753,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：主要是以開發商利益潤為主 → 主要是以開發商利潤為主
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e3_s1_21
   section: 1
   number: 21
@@ -809,7 +832,7 @@ questions:
   number: 23
   type: single
   page: 1
-  stem: 關於沙漠生態系，何者正確？
+  stem: 關於凍原生態系，何者正確？
   options:
   - label: A
     content: 溫度低，降水稀少
@@ -838,6 +861,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：關於沙漠生態系，何者正確？ → 關於凍原生態系，何者正確？
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e3_s1_24
   section: 1
   number: 24
@@ -1084,7 +1113,7 @@ questions:
   stem: 關於海洋生態系，何者正確？
   options:
   - label: A
-    content: 潮間帶為退潮潮之問的區域
+    content: 潮間帶為漲潮與退潮之間的區域
   - label: B
     content: 淺海區為全海洋中，海面下200公尺以內的區域
   - label: C
@@ -1111,6 +1140,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：潮間帶為退潮潮之問的區域 → 潮間帶為漲潮與退潮之間的區域
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e3_s1_32
   section: 1
   number: 32

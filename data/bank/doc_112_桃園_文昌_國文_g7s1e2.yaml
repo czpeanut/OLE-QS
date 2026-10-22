@@ -661,7 +661,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 下列文句中的的成語，何者運用最恰當？
+  stem: 下列文句中的成語，何者運用最恰當？（原卷有誤，已修正）
   options:
   - label: A
     content: 今年全國圍棋比賽冠軍竟是一位高中女生，真是「後起之秀」。
@@ -688,6 +688,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列文句中的的成語，何者運用最恰當？
+    to: 下列文句中的成語，何者運用最恰當？
+    note: 原卷多印一個「的」字：「下列文句中的的成語，何者運用最恰當？」→「下列文句中的成語，何者運用最恰當？」
+    by: review
 - id: doc_112_桃園_文昌_國文_g7s1e2_s3_11
   section: 3
   number: 11

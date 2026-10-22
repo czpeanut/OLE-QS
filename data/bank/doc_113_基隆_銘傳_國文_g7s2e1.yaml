@@ -536,7 +536,7 @@ questions:
   - label: B
     content: 全詩奇數句必不押韻，偶數句必定押韻
   - label: C
-    content: 以聲調而言，每句的偶數字須請求平仄
+    content: 以聲調而言，每句的偶數字須講求平仄
   - label: D
     content: 絕句必不對仗，律詩頷、頸二聯須對仗。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -558,6 +558,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：每句的偶數字須請求平仄 → 每句的偶數字須講求平仄
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e1_s3_5
   section: 3
   number: 5
@@ -576,7 +582,7 @@ questions:
 
     | (C) 比較 | 與「象形」相比，多為具體事物 | 與「形聲」相比，多無聲音關係 |
 
-    | (D) 舉例 | [圖] 本，木下日本 | [圖] 闢，馬出門貌 |'
+    | (D) 舉例 | [圖] 本，木下日本 | [圖] 闖，馬出門貌 |'
   options:
   - label: A
     content: 文字：指事屬於「文」，會意屬於「字」
@@ -638,6 +644,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：闢，馬出門貌 → 闖，馬出門貌
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e1_s3_6
   section: 3
   number: 6
@@ -753,7 +765,7 @@ questions:
   - label: A
     content: 即便小范現在身處低谷，他「箕山之志」的精神依然不滅，時刻準備捲土重來
   - label: B
-    content: 網絡上充斥「信口雌黃」的言論，我們應培養獨立思考的能力，學會辨別真假
+    content: 網路上充斥「信口雌黃」的言論，我們應培養獨立思考的能力，學會辨別真假
   - label: C
     content: 我們要將學習到的眾多知識運用於生活當中，避免成為食古不化的「有腳書櫥」
   - label: D
@@ -778,6 +790,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：網絡上充斥「信口雌黃」的言論 → 網路上充斥「信口雌黃」的言論
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e1_s4_10
   section: 4
   number: 10
@@ -931,7 +949,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 針對〈四種讀書的方法〉中所提到的讀書法方法，下列配對何者最為適合？
+  stem: 針對〈四種讀書的方法〉中所提到的讀書方法，下列配對何者最為適合？
   options:
   - label: A
     content: 精讀：藉由精讀，比較閱讀感受與發現成長軌跡
@@ -963,6 +981,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：中所提到的讀書法方法，下列配對 → 中所提到的讀書方法，下列配對
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e1_s4_15
   section: 4
   number: 15
@@ -1005,7 +1029,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: '在〈東風吹馬耳〉中，提到許多動物的特徵。針對本文，下列表格敘述錯誤？
+  stem: '在〈東風吹馬耳〉中，提到許多動物的特徵。針對本文，下列表格敘述何者錯誤？
 
 
     | | 馬 | 蛇 | 倉鴞 |
@@ -1016,7 +1040,7 @@ questions:
 
     | 耳朵的功用 | (B) 藉此表達情緒與自衛 | (C) 協助禦敵 | 協助瞄準獵物 |
 
-    | 聽力高低比較 | 第二 | 第三 | (D) 最好 |'
+    | 聽力高低比較 | 第二 | 第三 | (D) 最好 |（原卷有誤，已修正）'
   options:
   - label: A
     content: 蛇聽覺器：無
@@ -1049,6 +1073,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：下列表格敘述錯誤？ → 下列表格敘述何者錯誤？
+    by: review
 - id: doc_113_基隆_銘傳_國文_g7s2e1_s4_17
   section: 4
   number: 17
@@ -1134,7 +1163,7 @@ questions:
   - label: C
     content: 杜甫／網路資訊發達，教育部決定於各大學校中增添「自媒體創作」相關課程
   - label: D
-    content: 王之渙／隨時代進步，國防部擬與網紅合作拍攝軍中生活短片，揭開軍旅神秘面紗。
+    content: 王之渙／隨時代進步，國防部擬與網紅合作拍攝軍中生活短片，揭開軍旅生活的神秘面紗。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1154,6 +1183,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：揭開軍旅神秘面紗 → 揭開軍旅生活的神秘面紗
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e1_s5_20
   section: 5
   number: 20
@@ -1576,7 +1611,7 @@ questions:
   number: 28
   type: single
   page: 4
-  stem: 根據上文，下列選項最有可能它是它的題目？
+  stem: 根據上文，下列選項最有可能會是它的題目？
   options:
   - label: A
     content: 阿茲海默症
@@ -1592,7 +1627,7 @@ questions:
 
     | :--- | :--- |
 
-    | 我們都沒有撐傘，只是<br>陪他行走在情緒的雨中<br>為了一支遺失多年的鋼筆<br>今天請問必找到；否則他會報警<br>電視裡的國旗，像是公權力的背景<br>緩緩升起
+    | 我們都沒有撐傘，只是<br>陪他行走在情緒的雨中<br>為了一支遺失多年的鋼筆<br>今天請務必找到；否則他會報警<br>電視裡的國旗，像是公權力的背景<br>緩緩升起
     | 晚餐。來電。語氣甜蜜，像極了愛情<br>對於入口即化的記憶<br>能夠如此，確實讓我略感訝異<br>接著說：「孫女，生日快樂！」 |
 
     | **二月十一日／除夕** | **四月四日／清明節** |
@@ -1621,12 +1656,18 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：今天請問必找到；否則他會報警 → 今天請務必找到；否則他會報警；下列選項最有可能它是它的題目？ → 下列選項最有可能會是它的題目？
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e1_s6_29
   section: 6
   number: 29
   type: single
   page: 4
-  stem: 根據上文，作者為何在三月二十日時「略感訝異」？
+  stem: 根據上文，作者為何在三月十二日時「略感訝異」？（原卷有誤，已修正）
   options:
   - label: A
     content: 父親用餐時的口氣非常甜蜜，像極了愛情
@@ -1642,7 +1683,7 @@ questions:
 
     | :--- | :--- |
 
-    | 我們都沒有撐傘，只是<br>陪他行走在情緒的雨中<br>為了一支遺失多年的鋼筆<br>今天請問必找到；否則他會報警<br>電視裡的國旗，像是公權力的背景<br>緩緩升起
+    | 我們都沒有撐傘，只是<br>陪他行走在情緒的雨中<br>為了一支遺失多年的鋼筆<br>今天請務必找到；否則他會報警<br>電視裡的國旗，像是公權力的背景<br>緩緩升起
     | 晚餐。來電。語氣甜蜜，像極了愛情<br>對於入口即化的記憶<br>能夠如此，確實讓我略感訝異<br>接著說：「孫女，生日快樂！」 |
 
     | **二月十一日／除夕** | **四月四日／清明節** |
@@ -1672,6 +1713,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：作者為何在三月二十日時「略感訝異」？ → 作者為何在三月十二日時「略感訝異」？
+    by: review
 - id: doc_113_基隆_銘傳_國文_g7s2e1_s6_30
   section: 6
   number: 30
@@ -1693,7 +1739,7 @@ questions:
 
     | :--- | :--- |
 
-    | 我們都沒有撐傘，只是<br>陪他行走在情緒的雨中<br>為了一支遺失多年的鋼筆<br>今天請問必找到；否則他會報警<br>電視裡的國旗，像是公權力的背景<br>緩緩升起
+    | 我們都沒有撐傘，只是<br>陪他行走在情緒的雨中<br>為了一支遺失多年的鋼筆<br>今天請務必找到；否則他會報警<br>電視裡的國旗，像是公權力的背景<br>緩緩升起
     | 晚餐。來電。語氣甜蜜，像極了愛情<br>對於入口即化的記憶<br>能夠如此，確實讓我略感訝異<br>接著說：「孫女，生日快樂！」 |
 
     | **二月十一日／除夕** | **四月四日／清明節** |

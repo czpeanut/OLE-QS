@@ -232,7 +232,7 @@ questions:
   - label: A
     content: 風雨如晦/松柏後凋
   - label: B
-    content: 烏鳥私情/母慈子孝
+    content: 烏鳥私情/母歿不臨
   - label: C
     content: 眾口鑠金/三人成虎
   - label: D
@@ -255,6 +255,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (B) 烏鳥私情/母慈子孝
+    to: (B)烏鳥私情／母歿不臨
+    note: 原卷為母歿不臨，誤擷取為母慈子孝
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_國文_g8s1e1_s3_8
   section: 3
   number: 8
@@ -819,7 +825,7 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 「夫下以言語為學,上以言語為治,世道之所以日降也。而或者見能言之鸚鵡,乃指為鳳凰、鴛鴦(ㄩㄝˋ、ㄨㄛˋ,鳳凰),惟恐其不在靈囿(宮廷花園)間,不亦異乎?」(羅大經
+  stem: 「夫下以言語為學,上以言語為治,世道之所以日降也。而或者見能言之鸚鵡,乃指為鳳凰、鸑鷟(ㄩㄝˋ、ㄓㄨㄛˊ,鳳凰),惟恐其不在靈囿(宮廷花園)間,不亦異乎?」(羅大經
     鶴林玉露)本文所諷刺的是下列何種狀況?
   options:
   - label: A
@@ -847,6 +853,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 乃指為鳳凰、鴛鴦(ㄩㄝˋ、ㄨㄛˋ，鳳凰)
+    to: 乃指為鳳凰、鸑鷟(ㄩㄝˋ、ㄓㄨㄛˊ，鳳凰)
+    note: 原卷為鸑鷟及注音ㄓㄨㄛˊ，誤擷為鴛鴦及ㄨㄛˋ
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_國文_g8s1e1_s4_1
   section: 4
   number: 1

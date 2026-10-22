@@ -565,7 +565,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 惠宇朗讀文章時，一不小心唸錯了一個字，請問下最那個字音是她需要糾正的？
+  stem: 惠宇朗讀文章時，一不小心唸錯了一個字，請問下列那個字音是她需要糾正的？（原卷有誤，已修正）
   options:
   - label: A
     content: 鼓「噪」--ㄗㄠˋ
@@ -592,6 +592,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問下最那個字音是她需要糾正的？
+    to: 請問下列那個字音是她需要糾正的？
+    note: 「下最」應為「下列」：「請問下最那個字音是她需要糾正的？」→「請問下列那個字音是她需要糾正的？」
+    by: review
 - id: doc_111_桃園_平南_國文_g8s1e2_s4_3
   section: 4
   number: 3

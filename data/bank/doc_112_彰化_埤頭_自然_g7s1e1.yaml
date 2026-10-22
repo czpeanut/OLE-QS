@@ -1317,7 +1317,7 @@ questions:
   number: 35
   type: single
   page: 2
-  stem: 如果要觀察蒼蠅上的咪毛，應該使用哪一種顯微鏡比較適合？
+  stem: 如果要觀察蒼蠅上的微毛，應該使用哪一種顯微鏡比較適合？（原卷有誤，已修正）
   options:
   - label: A
     content: 圖二，複式顯微鏡
@@ -1349,6 +1349,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：如果要觀察蒼蠅上的咪毛 → 如果要觀察蒼蠅上的微毛
+    by: review
 - id: doc_112_彰化_埤頭_自然_g7s1e1_s3_36
   section: 3
   number: 36
@@ -1677,11 +1682,11 @@ questions:
   stem: 細胞是生物的基本單位，請問主要是什麼因素會造成大鯨魚與小蝦米間體型的差異？
   options:
   - label: A
-    content: 細胞的大小
+    content: 細胞的隔大小
   - label: B
     content: 細胞製造分泌物的多寡
   - label: C
-    content: 細胞與細胞之間的時間大小
+    content: 細胞與細胞之間的間大小
   - label: D
     content: 細胞的多寡
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1703,6 +1708,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：細胞與細胞之間的時間大小 → 細胞與細胞之間的間隔大小
+    by: review
+    extraction: true
 shared_assets:
 - key: g2_11_13
   label: 題組附圖

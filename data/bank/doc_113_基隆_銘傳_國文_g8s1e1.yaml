@@ -774,7 +774,7 @@ questions:
   - label: C
     content: 家裡養的寵物不幸往生，使我們頓時體會生命無常的道理。
   - label: D
-    content: 新的教室十分寬傚，乾淨的環境令人心懷忡怡。
+    content: 新的教室十分寬敞，乾淨的環境令人心懷忡怡。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -794,6 +794,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 新的教室十分寬傚，乾淨的環境令人心懷忡怡。
+    to: 新的教室十分寬敞，乾淨的環境令人心懷忡怡。
+    note: 錯字，原卷為「寬敞」而非「寬傚」
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g8s1e1_s3_8
   section: 3
   number: 8

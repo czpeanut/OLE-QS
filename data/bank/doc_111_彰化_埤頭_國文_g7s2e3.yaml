@@ -61,6 +61,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_2
   section: 1
   number: 2
@@ -99,6 +100,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_3
   section: 1
   number: 3
@@ -136,6 +138,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_4
   section: 1
   number: 4
@@ -173,6 +176,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_5
   section: 1
   number: 5
@@ -181,7 +185,7 @@ questions:
   stem: 漢代將軍李廣擅長射箭，技藝爐火純青，使得匈奴聞風喪膽，不敢輕易犯邊，後人稱為「飛將軍」。根據以上描述，哪一句成語最適合用以形容李廣？
   options:
   - label: A
-    content: 箭雙鵰
+    content: 一箭雙鵰
   - label: B
     content: 暗箭傷人
   - label: C
@@ -207,12 +211,19 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
+  errata:
+  - from: (A) 箭雙鵰
+    to: (A) 一箭雙鵰
+    note: 選項A漏「一」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_6
   section: 1
   number: 6
   type: single
   page: 1
-  stem: 樂透彩風行全臺，所以便有宜想開一家相命館，並命名「孔明居」，乃是取諸葛亮神機妙算之義；下列幾種命名的方式欲與上述方法相同，但何者顯然稍嫌牽強？
+  stem: 樂透彩風行全臺，所以便有人想開一家相命館，並命名「孔明居」，乃是取諸葛亮神機妙算之義；下列幾種命名的方式欲與上述方法相同，但何者顯然稍嫌牽強？（原卷有誤，已修正）
   options:
   - label: A
     content: 「楊貴妃」瘦身中心
@@ -241,6 +252,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 所以便有宜想開一家相命館
+    to: 所以便有人想開一家相命館
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「所以便有宜想開一家相命館」→「所以便有人想開一家相命館」
+    by: review
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_7
   section: 1
   number: 7
@@ -278,6 +295,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_8
   section: 1
   number: 8
@@ -312,12 +330,13 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 世界變化萬千，大自然中充滿無無限智慧，下列文句何者不是敘述從大自然中學習或領略樂趣？
+  stem: 世界變化萬千，大自然中充滿無限智慧，下列文句何者不是敘述從大自然中學習或領略樂趣？
   options:
   - label: A
     content: 好鳥枝頭亦朋友，落花水面皆文章
@@ -346,12 +365,19 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
+  errata:
+  - from: 大自然中充滿無無限智慧
+    to: 大自然中充滿無限智慧
+    note: 多出一個「無」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 常以電腦寫部落格的小堞，很容易犯了注音輸入法選錯字的毛病。於是他在公開徵求網友幫他挑出錯字，請問下列何人幫忙改過後的字仍是錯誤的？
+  stem: 常以電腦寫部落格的小堞，很容易犯了注音輸入法選錯字的毛病。於是他在公開徵求網友幫他挑出錯字，請問下列何人幫忙改過後的字仍是錯誤的？（原卷有誤，已修正）
   options:
   - label: A
     content: 小沁：這對雙胞胎長得一模一樣，卻有著「炯」異的個性→迥
@@ -360,7 +386,7 @@ questions:
   - label: C
     content: 小禮：阿嬤慶祝新居落成的請「貼」已經印好了→帖
   - label: D
-    content: 小宣：由於跑步扭傷腳，他只好掌手「仗」走路→杖
+    content: 小宣：由於跑步扭傷腳，他只好拿手「仗」走路→杖
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -381,6 +407,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 他只好掌手「仗」走路
+    to: 他只好拿手「仗」走路
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「他只好掌手「仗」走路」→「他只好拿手「仗」走路」
+    by: review
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_11
   section: 1
   number: 11
@@ -415,6 +447,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_12
   section: 1
   number: 12
@@ -482,6 +515,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_14
   section: 1
   number: 14
@@ -516,6 +550,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_15
   section: 1
   number: 15
@@ -553,6 +588,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_16
   section: 1
   number: 16
@@ -587,6 +623,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_17
   section: 1
   number: 17
@@ -621,6 +658,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_18
   section: 1
   number: 18
@@ -655,6 +693,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_19
   section: 1
   number: 19
@@ -692,6 +731,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_20
   section: 1
   number: 20
@@ -730,6 +770,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_21
   section: 1
   number: 21
@@ -764,6 +805,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_22
   section: 1
   number: 22
@@ -798,12 +840,13 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_23
   section: 1
   number: 23
   type: single
   page: 2
-  stem: 隱山打生一文中，男孩拜師習武，師父「只是命令他每天到河邊挑水種菜，並規定每次到河邊，都要以掌心打水兩百次，手掌要恰恰接觸水面，就立刻止住，不准濺出一點水尤」，試問師父的用意為何？
+  stem: 隱山打坐一文中，男孩拜師習武，師父「只是命令他每天到河邊挑水種菜，並規定每次到河邊，都要以掌心打水兩百次，手掌要恰恰接觸水面，就立刻止住，不准濺出一點水花」，試問師父的用意為何？
   options:
   - label: A
     content: 要求男孩練習掌心打水的基本功
@@ -832,6 +875,13 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 隱山打生一文中，男孩拜師習武
+    to: 隱山打坐一文中，男孩拜師習武
+    note: 「坐」誤植為「生」；「花」誤植為「尤」
+    by: review
+    extraction: true
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_24
   section: 1
   number: 24
@@ -866,12 +916,13 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_25
   section: 1
   number: 25
   type: single
   page: 2
-  stem: 文言文在句型與用字選詞上都與現今用法略有差異，因此在閱讀的時候可能會感到困惑不解。「依據本文所述，我們閱讀文言文會感到困惑的原因為何？
+  stem: 文言文在句型與用字選詞上都與現今用法略有差異，因此在閱讀的時候可能會感到困惑不解。依據本文所述，我們閱讀文言文會感到困惑的原因為何？
   options:
   - label: A
     content: 閱讀理解能力不足
@@ -900,12 +951,19 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 可能會感到困惑不解。「依據本文所述
+    to: 可能會感到困惑不解。依據本文所述
+    note: 多出前引號「
+    by: review
+    extraction: true
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_26
   section: 1
   number: 26
   type: single
   page: 2
-  stem: 相傳北宋的苗振，曾以第四名的好成績考中進士。後來在供職考試前，他去拜見當朝丞相晏殊。晏殊怕他長久不寫文章，筆墨生疏，勸他溫習後再來考。苗振很輕率地說：「難道會有人作了三十年優婆塞，還發生『倒繃孩兒』的事嗎？」考試結果，苗振落選。晏殊便笑道：「苗君竟剛碰繃孩兒矣！」根據以上的故事可知「倒繃孩兒」是比喻什麼？
+  stem: 相傳北宋的苗振，曾以第四名的好成績考中進士。後來在供職考試前，他去拜見當朝丞相晏殊。晏殊怕他長久不寫文章，筆墨生疏，勸他溫習後再來考。苗振很輕率地說：「難道會有人作了三十年優婆塞，還發生『倒繃孩兒』的事嗎？」考試結果，苗振落選。晏殊便笑道：「苗君竟真倒繃孩兒矣！」根據以上的故事可知「倒繃孩兒」是比喻什麼？
   options:
   - label: A
     content: 多年老手，也有可能出差錯
@@ -934,6 +992,13 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
+  errata:
+  - from: 苗君竟剛碰繃孩兒矣！
+    to: 苗君竟真倒繃孩兒矣！
+    note: 「真倒」誤植為「剛碰」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_27
   section: 1
   number: 27
@@ -969,6 +1034,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_28
   section: 1
   number: 28
@@ -1003,6 +1069,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_29
   section: 1
   number: 29
@@ -1037,6 +1104,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_30
   section: 1
   number: 30
@@ -1071,6 +1139,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_31
   section: 1
   number: 31
@@ -1105,12 +1174,13 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_32
   section: 1
   number: 32
   type: single
   page: 2
-  stem: 依據跨時空的對話：淺談文言文翻選一文，可知文言文中常常省略主詞，郭台朗試著依照原文意，將下列省略的主語補回，請問他不小心寫錯哪一項？
+  stem: 依據跨時空的對話：淺談文言文翻譯一文，可知文言文中常常省略主詞，郭台朗試著依照原文意，將下列省略的主語補回，請問他不小心寫錯哪一項？
   options:
   - label: A
     content: （余）陳其身，使與囊齊
@@ -1142,6 +1212,13 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 淺談文言文翻選一文
+    to: 淺談文言文翻譯一文
+    note: 「譯」誤植為「選」
+    by: review
+    extraction: true
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_33
   section: 1
   number: 33
@@ -1176,6 +1253,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s1_34
   section: 1
   number: 34
@@ -1210,6 +1288,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s2_35
   section: 2
   number: 35
@@ -1224,7 +1303,7 @@ questions:
   - label: C
     content: 小昂因為長期成績不佳，所以在此次段考時頻頻突破
   - label: D
-    content: 小武第一次段考成績優良，到處向人吹噓；第二次段考成績不好，他就以「人不是十全十美」來為自己找遭階下
+    content: 小武第一次段考成績優良，到處向人吹噓；第二次段考成績不好，他就以「人不是十全十美」來為自己找臺階下
   group_stem: "寒號蟲\n    五臺山有鳥，名寒號蟲。四足，有肉翅，不能飛，其糞即五靈脂。當盛暑時，文彩絢爛，乃自鳴曰：「鳳凰不如我。」比至深冬嚴寒之際，毛羽脫落，索然如穀雛，遂自鳴曰：「得過且過。」\n\
     註：①五靈脂：一種中藥名。 ②比至：等到。 ③索然：零落。 ④穀雛：等待母鳥哺食的幼鳥。"
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1246,6 +1325,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 來為自己找遭階下
+    to: 來為自己找臺階下
+    note: 選項D「臺」誤植為「遭」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s2_36
   section: 2
   number: 36
@@ -1521,12 +1606,13 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_44
   section: 3
   number: 44
   type: tf
   page: 3
-  stem: 「顴」骨：ㄍㄨㄢ
+  stem: 「顴」骨：ㄍㄨㄢˊ（原卷有誤，已修正）
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1546,6 +1632,12 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「顴」骨：ㄍㄨㄢ
+    to: 「顴」骨：ㄍㄨㄢˊ
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「「顴」骨：ㄍㄨㄢ」→「「顴」骨：ㄍㄨㄢˊ」
+    by: review
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_45
   section: 3
   number: 45
@@ -1571,12 +1663,13 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_46
   section: 3
   number: 46
   type: tf
   page: 3
-  stem: 「箋」號：ㄧㄠ
+  stem: 「籤」號：ㄧㄠ
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1596,6 +1689,13 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 46. 「箋」號：ㄧㄠ
+    to: 46. 「籤」號：ㄧㄠ
+    note: 「籤」誤植為「箋」
+    by: review
+    extraction: true
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_47
   section: 3
   number: 47
@@ -1621,6 +1721,7 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_48
   section: 3
   number: 48
@@ -1647,12 +1748,13 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_49
   section: 3
   number: 49
   type: tf
   page: 3
-  stem: 「ㄍㄟˇ」吉：亙
+  stem: 「ㄍㄣˇ」古：亙
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1672,12 +1774,19 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 49. 「ㄍㄟˇ」吉：亙
+    to: 49. 「ㄍㄣˇ」古：亙
+    note: 「ㄍㄣˇ古」誤為「ㄍㄟˇ吉」
+    by: review
+    extraction: true
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_50
   section: 3
   number: 50
   type: tf
   page: 3
-  stem: 「黯」驢技窮：ㄑㄧㄢˊ
+  stem: 「黔」驢技窮：ㄑㄧㄢˊ
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1697,6 +1806,13 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
+  errata:
+  - from: 50. 「黯」驢技窮：ㄑㄧㄢˊ
+    to: 50. 「黔」驢技窮：ㄑㄧㄢˊ
+    note: 「黔」誤植為「黯」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_51
   section: 3
   number: 51
@@ -1722,6 +1838,7 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_52
   section: 3
   number: 52
@@ -1747,6 +1864,7 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_53
   section: 3
   number: 53
@@ -1772,6 +1890,7 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_54
   section: 3
   number: 54
@@ -1797,6 +1916,7 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_55
   section: 3
   number: 55
@@ -1825,6 +1945,7 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_56
   section: 3
   number: 56
@@ -1853,6 +1974,7 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_57
   section: 3
   number: 57
@@ -1878,12 +2000,13 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_58
   section: 3
   number: 58
   type: tf
   page: 3
-  stem: 導然：悠閒自在的樣子
+  stem: 晏然：悠閒自在的樣子（原卷有誤，已修正）
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1903,6 +2026,12 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 58. 導然：悠閒自在的樣子
+    to: 58. 晏然：悠閒自在的樣子
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「58. 導然：悠閒自在的樣子」→「58. 晏然：悠閒自在的樣子」
+    by: review
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_59
   section: 3
   number: 59
@@ -1931,6 +2060,7 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_60
   section: 3
   number: 60
@@ -1959,6 +2089,7 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_61
   section: 3
   number: 61
@@ -1987,6 +2118,7 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_62
   section: 3
   number: 62
@@ -2012,6 +2144,7 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_63
   section: 3
   number: 63
@@ -2037,6 +2170,7 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_64
   section: 3
   number: 64
@@ -2062,6 +2196,7 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_65
   section: 3
   number: 65
@@ -2087,6 +2222,7 @@ questions:
   - O
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_彰化_埤頭_國文_g7s2e3_s3_66
   section: 3
   number: 66
@@ -2112,3 +2248,4 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null

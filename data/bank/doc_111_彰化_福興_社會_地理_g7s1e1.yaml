@@ -164,7 +164,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 承小題，一般國際公法所界定的經濟海域範圍為領海基線向外推移多少浬？
+  stem: 承上題，一般國際公法所界定的經濟海域範圍為領海基線向外推移多少浬？
   options:
   - label: A
     content: 3浬
@@ -192,6 +192,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 承小題，一般國際公法所界定的經濟海域範圍為領海
+    to: 承上題，一般國際公法所界定的經濟海域範圍為領海
+    note: 「承上題」誤植為「承小題」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_地理_g7s1e1_s1_5
   section: 1
   number: 5
@@ -230,7 +236,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 承小題，如果只以距離來考量，下列何地派出的救難隊會最快抵達？
+  stem: 承上題，如果只以距離來考量，下列何地派出的救難隊會最快抵達？
   options:
   - label: A
     content: 台東縣
@@ -258,6 +264,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 承小題，如果只以距離來考量，下列何地派出的救難
+    to: 承上題，如果只以距離來考量，下列何地派出的救難
+    note: 「承上題」誤植為「承小題」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_地理_g7s1e1_s1_7
   section: 1
   number: 7
@@ -582,7 +594,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 承小題，圖中哪一個地點最早迎接「2023年的第一道曙光」？
+  stem: 承上題，圖中哪一個地點最早迎接「2023年的第一道曙光」？
   options:
   - label: A
     content: 甲
@@ -610,6 +622,12 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 承小題，圖中哪一個地點最早迎接「2023年的第一道
+    to: 承上題，圖中哪一個地點最早迎接「2023年的第一道
+    note: 「承上題」誤植為「承小題」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_地理_g7s1e1_s1_17
   section: 1
   number: 17
@@ -681,7 +699,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 根據氣象局觀測指出，台灣於9月18日下午2點44分發生規模6.8地震，震央位置在台東縣政府北方42.7公里，即池上鄉，地震僅深度7.0公里，最大震度6強，日本發布海嘯警報。請參考附圖判斷，震央的位置最接近何處？
+  stem: 根據氣象局觀測指出，台灣於9月18日下午2點44分發生規模6.8地震，震央位置在台東縣政府北方42.7公里，即池上鄉，地震深度僅7.0公里，最大震度6強，日本發布海嘯警報。請參考附圖判斷，震央的位置最接近何處？（原卷有誤，已修正）
   options:
   - label: A
     content: (119.1°E，25.2°N)
@@ -726,6 +744,11 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 即池上鄉，地震僅深度7.0公里，最大震
+    to: 即池上鄉，地震深度僅 7.0 公里，最大震
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「即池上鄉，地震僅深度7.0公里，最大震」→「即池上鄉，地震深度僅 7.0 公里，最大震」
+    by: review
 - id: doc_111_彰化_福興_社會_地理_g7s1e1_s1_20
   section: 1
   number: 20

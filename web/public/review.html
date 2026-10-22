@@ -285,9 +285,11 @@ function isMath(t){
   if (/[一-鿿]{2,}/.test(t) && !/[=+\-×÷<>]/.test(t)) return false;
   return t.trim().length > 0;
 }
+// 考卷 OCR 常用、KaTeX 沒有的命令
+const KATEX_MACROS = {"\\overparen": "\\overset{\\frown}{#1}", "\\wideparen": "\\overset{\\frown}{#1}", "\\overarc": "\\overset{\\frown}{#1}"};
 function mathHTML(tex){
   if (window.katex) {
-    try { return katex.renderToString(tex, {output:"mathml", throwOnError:false, strict:"ignore", trust:false}); }
+    try { return katex.renderToString(tex, {output:"mathml", throwOnError:false, strict:"ignore", trust:false, macros: KATEX_MACROS}); }
     catch(e){ /* fall through */ }
   }
   return '<span class="math-raw">$' + esc(tex) + '$</span>';
@@ -429,7 +431,7 @@ function renderPaper(){
   let lastSec = null, lastG = null;
   for (const q of P.q) {
     if (hideRejected && !q.ok) continue;
-    if (onlyReported && !reports.has(q.c)) continue;
+    if (onlyReported && !(reports.has(q.c) && open_(reports.get(q.c)))) continue;
     if (onlyDisputed && q.as !== "disputed") continue;
     if (onlyAi && !AI.q[q.c]) continue;
     if (q.s !== lastSec) { h += `<div class="section-title">${esc(secName[q.s] || ("第 " + q.s + " 大題"))}</div>`; lastSec = q.s; lastG = null; }
@@ -568,7 +570,8 @@ function answerHTML(q, ans){
 }
 function questionHTML(q, P){
   const rs = reports.get(q.c) || [];
-  const r = rs.length ? rs : null;
+  const done = rs.length && rs.every(x => x.resolved);       // 回報都已寫回題庫（scripts/apply_reports.py）
+  const r = rs.length && !done ? rs : null;
   const rcats = [...new Set(rs.flatMap(x => x.cats || []))];
   const ans = (q.ans || []).map(String);
   const optHTML = (q.opts||[]).length ? `<div class="opts">${q.opts.map(o => `<div class="opt ${ans.includes(o.l)?'correct':''}"><span class="l">(${esc(o.l)})</span><span>${rich(o.c)}${o.img? `<br>${imgTag(o.img, P, "選項"+o.l+"的圖", 120)}`:''}</span></div>`).join("")}</div>` : "";
@@ -581,6 +584,7 @@ function questionHTML(q, P){
         ${q.ok?'':'<span class="chip pen">已被品管剔除</span>'}
         ${q.ocr?'<span class="chip warn">掃描辨識</span>':''}
         ${r?`<span class="chip pen">${rs.length > 1 ? rs.length + " 人" : esc(who(rs[0].by))}回報：${esc(rcats.join("、") || "其他")}</span>`:''}
+        ${done?`<span class="chip ok">回報已修正：${esc(rs[0].resolved.what || "")}</span>`:''}
         ${AI.q[q.c]?`<span class="chip ai">初審：${esc([...new Set(AI.q[q.c].flatMap(x => x.cats || []))].join("、"))}</span>`:''}
       </div>
       ${q.stem?`<div class="stem">${rich(q.stem)}</div>`:''}
@@ -666,7 +670,8 @@ function openReport(code, preset){
   });
   form.querySelector("textarea").focus();
 }
-function countReports(doc){ let n = 0; for (const rs of reports.values()) if (rs[0].doc === doc) n++; return n; }
+function open_(rs){ return rs.some(x => !x.resolved); }
+function countReports(doc){ let n = 0; for (const rs of reports.values()) if (rs[0].doc === doc && open_(rs)) n++; return n; }
 function docKey(doc){ let h = 0; for (const ch of doc) h = (h * 31 + ch.codePointAt(0)) >>> 0; return "d" + h.toString(36); }
 async function toggleDone(){
   if (!db || !current) return;
@@ -678,8 +683,10 @@ async function toggleDone(){
 }
 function renderReportStats(){
   const n = reports.size;
+  const fixed = [...reports.values()].filter(rs => !open_(rs)).length;
   $("#reportStats").innerHTML = `
-    <div class="stat"><b>${n}</b><span>已回報題目</span></div>
+    <div class="stat"><b>${n - fixed}</b><span>待處理回報</span></div>
+    <div class="stat"><b>${fixed}</b><span>回報已修正</span></div>
     <div class="stat"><b>${reviewed.size}</b><span>已審完的卷</span></div>
     <div class="stat"><b>${Object.keys(AI.papers).length}</b><span>初審完成的卷</span></div>
     <button class="btn" id="openDrawer" ${n?"":"disabled"}>回報清單</button>`;
@@ -687,7 +694,7 @@ function renderReportStats(){
 }
 function openDrawer(){
   const list = [...reportDocs.values()].sort((a,b)=>String(b.at).localeCompare(String(a.at)));
-  $("#drawerList").innerHTML = list.map(r => `<li><a data-go="${esc(r.code)}">${esc(r.code)}</a>　${esc(r.school)} ${esc(r.exam)} 第${esc(r.number)}題・${esc((r.cats||[]).join("、"))}${r.note?"・"+esc(r.note):""}　<span class="sub">— ${esc(who(r.by))}</span></li>`).join("");
+  $("#drawerList").innerHTML = list.map(r => `<li><a data-go="${esc(r.code)}">${esc(r.code)}</a>　${esc(r.school)} ${esc(r.exam)} 第${esc(r.number)}題・${esc((r.cats||[]).join("、"))}${r.note?"・"+esc(r.note):""}　<span class="sub">— ${esc(who(r.by))}${r.resolved?"・已修正":""}</span></li>`).join("");
   $("#drawerList").querySelectorAll("[data-go]").forEach(a => a.addEventListener("click", () => jumpTo(a.dataset.go)));
   $("#drawer").hidden = false;
 }

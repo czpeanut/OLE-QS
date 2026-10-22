@@ -368,7 +368,7 @@ questions:
   number: 30
   type: single
   page: 1
-  stem: 甲:「政府實施海禁政策，雖然是為了防備倭寇，但造成我不能出海捕魚，家庭陷入困境」 乙:「為了打壓鄭氏政權，朝廷啟用海禁政策，但為了生計，還是不少人偷偷進行走私貿易」
+  stem: 甲:「政府實施海禁政策，雖然是為了防備倭寇，但造成我不能出海捕魚，家庭陷入困境」 乙:「為了打壓鄭氏政權，朝廷啟用海禁政策，但為了生計，還是有不少人偷偷進行走私貿易」
     根據上面的敘述，請問:甲乙分別是屬於哪個時期的人?
   options:
   - label: A
@@ -396,6 +396,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 但為了生計，還是不少人偷偷進
+    to: 但為了生計，還是有不少人偷偷進
+    note: 漏「有」字
+    by: review
+    extraction: true
 - id: doc_113_高雄_英明_社會_歷史_g7s1e2_s1_31
   section: 1
   number: 31

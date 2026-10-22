@@ -167,7 +167,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: （  ）已知方程式 $2y-3=\frac{1}{3}y+5$，若將等號兩邊同乘以 3，則下列何者正確？
+  stem: （  ）已知一方程式 $2y-3=\frac{1}{3}y+5$，若將等號兩邊同乘以 3，則下列何者正確？
   options:
   - label: A
     content: $y$ 的值會變大 3 倍
@@ -193,6 +193,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 已知方程式 $2y-3=
+    to: 已知一方程式 2y-3=
+    note: 題幹漏了「一」字
+    by: review
+    extraction: true
 - id: doc_112_高雄_林園_數學_g7s1e3_s1_6
   section: 1
   number: 6

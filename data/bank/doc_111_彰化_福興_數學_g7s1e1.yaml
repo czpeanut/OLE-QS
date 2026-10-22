@@ -39,7 +39,7 @@ questions:
   - label: B
     content: 數線上的兩個數，右邊的數一定是正數
   - label: C
-    content: 數線上邊有一個正數及一個負數，則負數的點在正數的點的左邊
+    content: 數線上有一個正數及一個負數，則負數的點在正數的點的左邊
   - label: D
     content: 數線上有一個正數及一個負數且互為相反數，則這兩個數到原點的距離相同。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -60,6 +60,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: (C) 數線上邊有一個正數及一個負數
+    to: (C) 數線上有一個正數及一個負數
+    note: 多字：原卷為「數線上」，擷取作「數線上邊」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_數學_g7s1e1_s1_2
   section: 1
   number: 2

@@ -202,7 +202,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 電影《稻草人》故事背景發生於日治後期，主角的妹妹被日本徵召打仗，音訊全無，主角的妹妹因此發瘋。請問：故事中提到妹婿被徵召到何處打仗？
+  stem: 電影《稻草人》故事背景發生於日治後期，主角的妹婿被日本徵召打仗，音訊全無，主角的妹妹因此發瘋。請問：故事中提到妹婿被徵召到何處打仗？（原卷有誤，已修正）
   options:
   - label: A
     content: 朝鮮
@@ -231,6 +231,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 主角的妹妹被日本徵召打仗
+    to: 主角的妹婿被日本徵召打仗
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「主角的妹妹被日本徵召打仗」→「主角的妹婿被日本徵召打仗」
+    by: review
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e1_s1_7
   section: 1
   number: 7
@@ -650,7 +655,7 @@ questions:
   number: 19
   type: single
   page: 1
-  stem: 臺灣文學之父賴和的小說《一桿稱仔》，描寫臺灣農民在殖民統治時期備受欺凌，甚至遭到「大人」以違反度量衡規則的理由處罰並監三 天。請問：當時的「大人」是指下列哪一種人物？
+  stem: 臺灣文學之父賴和的小說《一桿稱仔》，描寫臺灣農民在殖民統治時期備受欺凌，甚至遭到「大人」以違反度量衡規則的理由處罰並監禁三 天。請問：當時的「大人」是指下列哪一種人物？（原卷有誤，已修正）
   options:
   - label: A
     content: 士紳
@@ -679,6 +684,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 理由處罰並監三 天。請問
+    to: 理由處罰並監禁三天。請問
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「理由處罰並監三 天。請問」→「理由處罰並監禁三天。請問」
+    by: review
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e1_s1_20
   section: 1
   number: 20
@@ -1120,7 +1130,7 @@ questions:
     content: 丙
   - label: D
     content: 丁
-  group_stem: ◎日治前期，臺灣人的武裝層出不窮，讓日本人付出龐大的軍費，一度興起了賣臺的爭議，請根據右邊日治時期的行政區域圖回答 32-35 問題：
+  group_stem: ◎日治前期，臺灣人的武裝抗日層出不窮，讓日本人付出龐大的軍費，一度興起了賣臺的爭議，請根據右邊日治時期的行政區域圖回答 32-35 問題：
   shared_asset: g1_32_35
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1141,6 +1151,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 臺灣人的武裝層出不窮
+    to: 臺灣人的武裝抗日層出不窮
+    note: 題組說明漏了「抗日」二字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e1_s1_33
   section: 1
   number: 33
@@ -1156,7 +1172,7 @@ questions:
     content: 余清芳
   - label: D
     content: 劉永福
-  group_stem: ◎日治前期，臺灣人的武裝層出不窮，讓日本人付出龐大的軍費，一度興起了賣臺的爭議，請根據右邊日治時期的行政區域圖回答 32-35 問題：
+  group_stem: ◎日治前期，臺灣人的武裝抗日層出不窮，讓日本人付出龐大的軍費，一度興起了賣臺的爭議，請根據右邊日治時期的行政區域圖回答 32-35 問題：
   shared_asset: g1_32_35
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1192,7 +1208,7 @@ questions:
     content: 丙
   - label: D
     content: 丁
-  group_stem: ◎日治前期，臺灣人的武裝層出不窮，讓日本人付出龐大的軍費，一度興起了賣臺的爭議，請根據右邊日治時期的行政區域圖回答 32-35 問題：
+  group_stem: ◎日治前期，臺灣人的武裝抗日層出不窮，讓日本人付出龐大的軍費，一度興起了賣臺的爭議，請根據右邊日治時期的行政區域圖回答 32-35 問題：
   shared_asset: g1_32_35
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1229,7 +1245,7 @@ questions:
     content: 由於臺人死傷慘重，從此完全臣服於日人，沒有異議
   - label: D
     content: 抗日運動化暗為明，並且加入許多原住民分子
-  group_stem: ◎日治前期，臺灣人的武裝層出不窮，讓日本人付出龐大的軍費，一度興起了賣臺的爭議，請根據右邊日治時期的行政區域圖回答 32-35 問題：
+  group_stem: ◎日治前期，臺灣人的武裝抗日層出不窮，讓日本人付出龐大的軍費，一度興起了賣臺的爭議，請根據右邊日治時期的行政區域圖回答 32-35 問題：
   shared_asset: g1_32_35
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true

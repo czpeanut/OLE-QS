@@ -399,7 +399,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 我國在中共「一個中國」政策的堅持打壓下，在國際社會中處於尷尬的地位，為了突破這種外交封鎖，我國在1980年代後期改變外交策略，開始用經濟實力讓國際看到臺灣。請問：這個轉變是從哪一總統合任內開始的？
+  stem: 我國在中共「一個中國」政策的堅持打壓下，在國際社會中處於尷尬的地位，為了突破這種外交封鎖，我國在1980年代後期改變外交策略，開始用經濟實力讓國際看到臺灣。請問：這個轉變是從哪一總統任內開始的？
   options:
   - label: A
     content: 蔣中正
@@ -429,6 +429,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 請問：這個轉變是從哪一總統合任內開始的？
+    to: 請問：這個轉變是從哪一總統任內開始的？
+    note: 多擷取了「合」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_歷史_g7s2e3_s1_11
   section: 1
   number: 11
@@ -481,7 +487,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 老劉是一位從中國大陸來臺的退伍老兵，有一篇關於老劉的新聞報導寫道：「1987年後，這些老兵終於能夠再跋涉上屬於他們的故事。但是，童年時的故鄉早已面目全非，親人甚至早已不在，這些老人客們不禁老淚縱橫、泣不成聲。」此一場景應是發生在何事之後？
+  stem: 老劉是一位從中國大陸來臺的退伍老兵，有一篇關於老劉的新聞報導寫道：「1987年後，這些老兵終於能夠再跋涉上屬於他們的故事。但是，童年時的故鄉早已面目全非，親人甚至早已不在，這些老兵們不禁老淚縱橫、泣不成聲。」此一場景應是發生在何事之後？
   options:
   - label: A
     content: 韓戰爆發
@@ -510,6 +516,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 這些老人客們不禁老淚縱橫
+    to: 這些老兵們不禁老淚縱橫
+    note: 「老兵」誤植為「老人客」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_歷史_g7s2e3_s1_13
   section: 1
   number: 13
@@ -583,7 +595,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 前宜蘭縣縣長陳定南，在他任內禁止宜蘭山坡地開發、拒絕台塑六輕廠進駐宜蘭，推動海洋議題、整治冬山河。將宜蘭打造成現在的石流機率低、空氣品質較佳，冬山河親水公園是人民休憩的場所。請問：陳定南前縣長的作為，代表何種議題的抬頭？
+  stem: 前宜蘭縣縣長陳定南，在他任內禁止宜蘭山坡地開發、拒絕台塑六輕廠進駐宜蘭，推動海洋議題、整治冬山河。將宜蘭打造成現在的土石流機率低、空氣品質較佳，冬山河親水公園是人民休憩的場所。請問：陳定南前縣長的作為，代表何種議題的抬頭？
   options:
   - label: A
     content: 經濟發展
@@ -612,12 +624,18 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 將宜蘭打造成現在的石流機率低
+    to: 將宜蘭打造成現在的土石流機率低
+    note: 漏了「土」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_歷史_g7s2e3_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 與中華民國有107年邦交的中美洲友邦巴拿馬，在2017年6月宣布與我國斷交，失去邦交國意味著我國的國處境日漸孤立。請問：若要打破此種外交困境，下列哪一方式不是我國現階段會採取的措施？
+  stem: 與中華民國有107年邦交的中美洲友邦巴拿馬，在2017年6月宣布與我國斷交，失去邦交國意味著我國的國際處境日漸孤立。請問：若要打破此種外交困境，下列哪一方式不是我國現階段會採取的措施？
   options:
   - label: A
     content: 積極參與國際組織活動
@@ -646,6 +664,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 失去邦交國意味著我國的國處境日漸孤立
+    to: 失去邦交國意味著我國的國際處境日漸孤立
+    note: 漏了「際」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_歷史_g7s2e3_s1_17
   section: 1
   number: 17
@@ -821,7 +845,7 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 小謙是中信兄弟的球迷，他希望今年中信兄弟可以邁向三連霸，但是他也很有喜歡全壘打的一位球員林智勝，他發現林智勝球衣背後後的「Ngayaw Ake'」便是他的傳統姓名。請問：原住民族正名運動最有能出現在臺灣的哪一個時期？
+  stem: 小謙是中信兄弟的球迷，他希望今年中信兄弟可以邁向三連霸，但是他也很喜歡全壘打的一位球員林智勝，他發現林智勝球衣背後的「Ngayaw Ake'」便是他的傳統姓名。請問：原住民族正名運動最有可能出現在臺灣的哪一個時期？
   options:
   - label: A
     content: 1920年代
@@ -850,6 +874,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 他也很有喜歡全壘打的一位球員林智勝，他發現林智勝球衣背後後的「Ngayaw Ake'」便是他的傳統姓名。請問：原住民族正名運動最有能出現在臺灣
+    to: 他也很喜歡全壘打的一位球員林智勝，他發現林智勝球衣背後的「Ngayaw Ake'」便是他的傳統姓名。請問：原住民族正名運動最有可能出現在臺灣
+    note: 多「有」、「後」字，且「最有可能」漏「可」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_歷史_g7s2e3_s1_23
   section: 1
   number: 23
@@ -896,7 +926,7 @@ questions:
   - label: B
     content: 實施內容包含土地改革
   - label: C
-    content: 讓台灣走向第三級產業為主的主社會
+    content: 讓台灣走向第三級產業為主的社會
   - label: D
     content: 其中以交通建設居多
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -918,12 +948,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 讓台灣走向第三級產業為主的主社會
+    to: 讓台灣走向第三級產業為主的社會
+    note: 多擷取了「主」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_歷史_g7s2e3_s1_25
   section: 1
   number: 25
   type: single
   page: 2
-  stem: 林強《向前走》這首歌：「火車漸漸在起走，再會我的故鄉和親戚，親愛的父母再會吧，鬥陣的朋友告辭啦，我欲來去台北打拼，聽人講啥咪好康的攏在那，朋友笑我是做做瞑夢的憨子，不管如何，路是自己走」依歌詞敘述，歌詞描述農村青年來到大城市工作的時代背景為何？
+  stem: 林強《向前走》這首歌：「火車漸漸在起走，再會我的故鄉和親戚，親愛的父母再會吧，鬥陣的朋友告辭啦，我欲來去台北打拼，聽人講啥咪好康的攏在那，朋友笑我是做瞑夢的憨子，不管如何，路是自己走」依歌詞敘述，歌詞描述農村青年來到大城市工作的時代背景為何？
   options:
   - label: A
     content: 國民內戰，政府準備遷臺
@@ -952,6 +988,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 朋友笑我是做做瞑夢的憨子
+    to: 朋友笑我是做瞑夢的憨子
+    note: 多擷取了「做」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_歷史_g7s2e3_s1_26
   section: 1
   number: 26
@@ -1118,7 +1160,7 @@ questions:
   number: 30
   type: single
   page: 2
-  stem: 民國80年代，我國曾派遣臺灣農業技術團到位於大洋洲的友邦索羅門群島，教導當地農民種植蔬菜、水果、稻作等技術，讓該國的人民可以自給自足。請問：這應該是屬於於何種外交型態？
+  stem: 民國80年代，我國曾派遣臺灣農業技術團到位於大洋洲的友邦索羅門群島，教導當地農民種植蔬菜、水果、稻作等技術，讓該國的人民可以自給自足。請問：這應該是屬於何種外交型態？
   options:
   - label: A
     content: 鞏固外交
@@ -1148,12 +1190,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 這應該是屬於於何種外交型態？
+    to: 這應該是屬於何種外交型態？
+    note: 多擷取了「於」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_歷史_g7s2e3_s1_31
   section: 1
   number: 31
   type: single
   page: 2
-  stem: 近年來，臺灣社會更多元化，大都市裡常可見到東南亞與異國風情的餐飲店出現，這是因何者為臺灣社會注入了新的文化內容？
+  stem: 近年來，臺灣社會更多元化，大都市裡常可見到東南亞與異國風情的餐飲店出現，這是因何者為臺灣社會注入了新的文化內容？（原卷有誤，已修正）
   options:
   - label: A
     content: 新住民與國際移工
@@ -1162,7 +1210,7 @@ questions:
   - label: C
     content: 美國駐軍
   - label: D
-    content: 外省移
+    content: 外省族群
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1182,3 +1230,8 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 外省移
+    to: (D)外省族群
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(D) 外省移」→「(D)外省族群」
+    by: review

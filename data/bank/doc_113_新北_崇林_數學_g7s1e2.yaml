@@ -395,7 +395,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 有甲、乙、丙、丁四位機器人，每個機器人每小時皆可行進$2\frac{3}{17}$公里的路程，若甲、乙、丙、丁分別走了$\frac{6}{7}$小時、$\frac{7}{6}$小時、$\frac{7}{8}$小時、$\frac{8}{7}$小時，則哪一位機器人的行進路線最適？
+  stem: 有甲、乙、丙、丁四位機器人，每個機器人每小時皆可行進$2\frac{3}{17}$公里的路程，若甲、乙、丙、丁分別走了$\frac{6}{7}$小時、$\frac{7}{6}$小時、$\frac{7}{8}$小時、$\frac{8}{7}$小時，則哪一位機器人的行進路線最遠？
   options:
   - label: A
     content: 甲
@@ -422,6 +422,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則哪一位機器人的行進路線最適？
+    to: 則哪一位機器人的行進路線最遠？
+    note: 「最遠」誤植為「最適」
+    by: review
+    extraction: true
 - id: doc_113_新北_崇林_數學_g7s1e2_s1_13
   section: 1
   number: 13

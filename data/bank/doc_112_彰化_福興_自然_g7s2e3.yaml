@@ -1164,8 +1164,7 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: 近年南投縣有人通報，在菜園中發現一種大型兩棲類，經專家鑑定，原來是從未在臺灣野外發現的海蟾蜍。海蟾蜍原產於中南美洲，皮膚可分泌毒液讓掠食者死亡，且會吃掉比自己體積小的動物，如蜥蜴或青蛙等，若是
-    advisory 在野外擴散可能造成當地生態威脅。請問下列生物何者和海蟾蜍一樣，會對本地環境造成傷害？
+  stem: 近年南投縣有人通報，在菜園中發現一種大型兩棲類，經專家鑑定，原來是從未在臺灣野外發現的海蟾蜍。海蟾蜍原產於中南美洲，皮膚可分泌毒液讓掠食者死亡，且會吃掉比自己體積小的動物，如蜥蜴或青蛙等，若是  在野外擴散可能造成當地生態威脅。請問下列生物何者和海蟾蜍一樣，會對本地環境造成傷害？
   options:
   - label: A
     content: 歐亞水獺
@@ -1194,6 +1193,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如蜥蜴或青蛙等，若是 advisory 在野外擴散可能造成當地生態威脅
+    to: 如蜥蜴或青蛙等，若是在野外擴散可能造成當地生態威脅
+    note: 多出英文字詞 advisory
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_自然_g7s2e3_s1_31
   section: 1
   number: 31
@@ -1559,7 +1564,7 @@ questions:
   page: 3
   stem: '幾個同學參加「生態系 VR 虛擬實境體驗」。戴上 VR 設備後，幾個同學都對虛擬的生態系感到驚奇，並說出自己看到的場景：
 
-    小張：「我腳下有好多次單類跟蘚苔喔，還有看到一些青蛙。」
+    小張：「我腳下有好多蕨類跟蘚苔喔，還有看到一些青蛙。」
 
     小佳：「小聲點，我看到前面有隻黑熊。是胸口有白色 V 形花紋的那種黑熊。」
 
@@ -1596,3 +1601,9 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小張：「我腳下有好多次單類跟蘚苔喔，還有看到一些青蛙
+    to: 小張：「我腳下有好多蕨類跟蘚苔喔，還有看到一些青蛙
+    note: 原卷「蕨類」誤辨識為「次單類」
+    by: review
+    extraction: true

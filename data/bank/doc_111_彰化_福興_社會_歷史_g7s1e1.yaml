@@ -316,7 +316,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 沈沈是生活在中國某個朝代的將領，當時由於海盜不斷騷擾中國東南沿海，因此政府派遣他的部隊進駐澎湖。小沈是生活在哪一個朝代？
+  stem: 9.小沈是生活在中國某個朝代的將領，當時由於海盜不斷騷擾中國東南沿海，因此政府派遣他的部隊進駐澎湖。小沈是生活在哪一個朝代？
   options:
   - label: A
     content: 唐
@@ -345,6 +345,12 @@ questions:
     gemini: C
     qwen: B
     gemini_high: C
+  errata:
+  - from: 沈沈是生活在中國某個朝代的將領
+    to: 9. 小沈是生活在中國某個朝代的將領
+    note: 「小沈」誤植為「沈沈」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s1e1_s1_10
   section: 1
   number: 10
@@ -632,7 +638,7 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 承小題，根據學者研究，該分佈圖與哪一種植物的分布是一致的？
+  stem: 17.承上題，根據學者研究，該分佈圖與哪一種植物的分布是一致的？
   options:
   - label: A
     content: 台灣欒樹
@@ -663,6 +669,12 @@ questions:
     gemini: B
     qwen: B
   answer_status: disputed
+  errata:
+  - from: 承小題，根據學者研究
+    to: 17. 承上題，根據學者研究
+    note: 「承上題」誤植為「承小題」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s1e1_s2_18
   section: 2
   number: 18

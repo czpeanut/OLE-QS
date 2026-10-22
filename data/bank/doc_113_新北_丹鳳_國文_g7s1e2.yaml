@@ -1367,7 +1367,7 @@ questions:
   - label: B
     content: 為了要美美地見人，每天出門要花一小時化妝，而來不及吃早餐的小王
   - label: C
-    content: 埋頭於民眾洽公的雜事，每天忙得焦頭爛額，沒吃飯的阿花
+    content: 埋頭於民眾洽公的雜事，每天忙得焦頭爛額，沒空吃飯的阿花
   - label: D
     content: 立志研發出HIV疫苗，造福全人類，時常沒有在普通吃飯時間用餐的子棋。
   group_stem: '題組（三）  24～26
@@ -1396,6 +1396,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 每天忙得焦頭爛額，沒吃飯的阿花
+    to: 每天忙得焦頭爛額，沒空吃飯的阿花
+    note: 選項(C)漏了「空」字
+    by: review
+    extraction: true
 - id: doc_113_新北_丹鳳_國文_g7s1e2_s5_25
   section: 5
   number: 25

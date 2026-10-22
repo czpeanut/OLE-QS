@@ -769,14 +769,14 @@ questions:
   number: 2
   type: single
   page: 2
-  stem: Why did Pip lose the race in the story?
+  stem: Why did Pip lose the race in the story?（原卷有誤，已修正）
   options:
   - label: A
     content: He ran too fast.
   - label: B
     content: He was not ready.
   - label: C
-    content: ) He went the wrong way.
+    content: ' He went the wrong way.'
   - label: D
     content: He took a nap.
   group_stem: '(1~3)
@@ -809,6 +809,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) ) He went the wrong way.
+    to: (C) He went the wrong way.
+    note: 多印了一個右括號：「(C) ) He went the wrong way.」→「(C) He went the wrong way.」
+    by: review
 - id: doc_113_屏東_中正_英語_g7s2e3_s5_3
   section: 5
   number: 3

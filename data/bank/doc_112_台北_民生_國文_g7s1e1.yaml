@@ -163,12 +163,13 @@ questions:
   - ㄒㄧㄠˋ
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s1_6
   section: 1
   number: 6
   type: fill
   page: 1
-  stem: 「ㄅㄧ nozzle」端
+  stem: 「ㄅㄧ ˋ」端
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -189,6 +190,13 @@ questions:
   - 弊
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 「ㄅㄧ nozzle」端
+    to: 「ㄅㄧˋ」端
+    note: 注音「ㄅㄧˋ」誤植為「ㄅㄧ nozzle」
+    by: review
+    extraction: true
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s1_7
   section: 1
   number: 7
@@ -214,6 +222,7 @@ questions:
   - 殆
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s1_8
   section: 1
   number: 8
@@ -240,6 +249,7 @@ questions:
   - 睞
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s1_9
   section: 1
   number: 9
@@ -265,12 +275,13 @@ questions:
   - 纏
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s1_10
   section: 1
   number: 10
   type: fill
   page: 1
-  stem: 山「ㄠ」
+  stem: 山「ㄌㄨㄢˊ」
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   group_stem: 一、注音國字(每題1分,共10分)
@@ -292,6 +303,12 @@ questions:
   - 坳
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 山「ㄠ」
+    to: 山「ㄌㄨㄢˊ」
+    note: 注音「ㄌㄨㄢˊ」誤植為「ㄠ」
+    by: review
+    extraction: true
 - id: doc_112_台北_民生_國文_g7s1e1_s2_1
   section: 2
   number: 1
@@ -725,6 +742,7 @@ questions:
     gemini_high: C
   answer_status: disputed
   answer_source: ai:none
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_2
   section: 4
   number: 2
@@ -760,6 +778,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_3
   section: 4
   number: 3
@@ -794,6 +813,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_4
   section: 4
   number: 4
@@ -828,6 +848,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_5
   section: 4
   number: 5
@@ -862,12 +883,13 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_6
   section: 4
   number: 6
   type: single
   page: 2
-  stem: 下列文句「  」中的詞語,何者意思前後相同?
+  stem: 下列文句「  」中的詞語,何者意思前後相同?（原卷有誤，已修正）
   options:
   - label: A
     content: 光看這等「光景」,已讓人消去大半暑氣/這裡離京城不過五十里「光景」
@@ -876,7 +898,7 @@ questions:
   - label: C
     content: 這張照片的「背景」顯然是玉山/「背景」若太亮的話,照片易曝光過度
   - label: D
-    content: 他為人正派,絕不會有「出軌」行為/地基鬆軌,造成火車「出軌」,幸好無人傷亡。
+    content: 他為人正派,絕不會有「出軌」行為/地基鬆軟,造成火車「出軌」,幸好無人傷亡。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -896,6 +918,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 地基鬆軌,造成火車「出軌」
+    to: 地基鬆軟，造成火車「出軌」
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「地基鬆軌,造成火車「出軌」」→「地基鬆軟，造成火車「出軌」」
+    by: review
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_7
   section: 4
   number: 7
@@ -930,6 +958,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_8
   section: 4
   number: 8
@@ -964,6 +993,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_9
   section: 4
   number: 9
@@ -1011,6 +1041,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_10
   section: 4
   number: 10
@@ -1045,6 +1076,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_11
   section: 4
   number: 11
@@ -1082,6 +1114,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_12
   section: 4
   number: 12
@@ -1116,6 +1149,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_13
   section: 4
   number: 13
@@ -1156,19 +1190,20 @@ questions:
     to: 才能使軒軒得到禮物?
     note: 題幹為禮物，誤寫為桃子
     by: ai_review
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_14
   section: 4
   number: 14
   type: single
   page: 3
-  stem: 下列文句中的標點符號,何者使用正確?
+  stem: 下列文句中的標點符號,何者使用正確?（原卷有誤，已修正）
   options:
   - label: A
     content: 在《唐詩三百首》這本書中,我最喜歡的一首詩是王維的〈相思〉。
   - label: B
     content: 寒夜中,不管是誰家的燈光,都讓人—尤其是漂泊的旅人,有種溫暖的感覺。
   - label: C
-    content: 唉!每天早上一十一點……十二點之間,我的肚子就會餓得咕嚕咕嚕叫。
+    content: 唉!每天早上十一點……十二點之間,我的肚子就會餓得咕嚕咕嚕叫。
   - label: D
     content: 每一刻都是一個新起點、每一次與人握手都是一個承諾、一個表示內心平和的記號。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1190,6 +1225,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 每天早上一十一點……十二點之間
+    to: 每天早上十一點……十二點之間
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「每天早上一十一點……十二點之間」→「每天早上十一點……十二點之間」
+    by: review
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_15
   section: 4
   number: 15
@@ -1224,6 +1265,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s4_16
   section: 4
   number: 16
@@ -1258,6 +1300,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_112_台北_民生_國文_g7s1e1_s5_17
   section: 5
   number: 17
@@ -1510,7 +1553,7 @@ questions:
 
     說要死的必然,說富貴的許謊。但說謊的得好報,說必然的遭打。你……」
 
-    「我願意既不說人,也不遭打。那麼,老師,我得怎麼說呢?」
+    「我願意既不說謊,也不遭打。那麼,老師,我得怎麼說呢?」
 
     「那麼,你得說:『啊呀!這孩子呵!您瞧!多麼……啊唷!哈哈!Hehe!he,hehehehe。』」(魯迅 立論)'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1532,6 +1575,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 我願意既不說人,也不遭打。
+    to: 我願意既不說謊，也不遭打。
+    note: 短文「說謊」誤植為「說人」
+    by: review
+    extraction: true
 - id: doc_112_台北_民生_國文_g7s1e1_s5_21
   section: 5
   number: 21
@@ -1563,7 +1612,7 @@ questions:
 
     說要死的必然,說富貴的許謊。但說謊的得好報,說必然的遭打。你……」
 
-    「我願意既不說人,也不遭打。那麼,老師,我得怎麼說呢?」
+    「我願意既不說謊,也不遭打。那麼,老師,我得怎麼說呢?」
 
     「那麼,你得說:『啊呀!這孩子呵!您瞧!多麼……啊唷!哈哈!Hehe!he,hehehehe。』」(魯迅 立論)'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1616,7 +1665,7 @@ questions:
 
     說要死的必然,說富貴的許謊。但說謊的得好報,說必然的遭打。你……」
 
-    「我願意既不說人,也不遭打。那麼,老師,我得怎麼說呢?」
+    「我願意既不說謊,也不遭打。那麼,老師,我得怎麼說呢?」
 
     「那麼,你得說:『啊呀!這孩子呵!您瞧!多麼……啊唷!哈哈!Hehe!he,hehehehe。』」(魯迅 立論)'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識

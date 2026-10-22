@@ -614,10 +614,10 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 下列選項「　」中的字音寫成國字後，何組字形相同？
+  stem: 下列選項「　」中的字音寫成國字後，何組字形相同？（原卷有誤，已修正）
   options:
   - label: A
-    content: 童山「ㄓㄨㄛˊ　ㄓㄨㄛˊ」／「ㄓㄨㄛˊ」汗揚清
+    content: 童山「ㄓㄨㄛˊ　ㄓㄨㄛˊ」／「ㄓㄨㄛˊ」汙揚清
   - label: B
     content: 若「ㄧㄣˇ」若現／高蹈遠「ㄧㄣˇ」
   - label: C
@@ -643,6 +643,11 @@ questions:
     gemini: B
     qwen: D
     gemini_high: A
+  errata:
+  - from: 「ㄓㄨㄛˊ」汗揚清
+    to: 「ㄓㄨㄛˊ」汙揚清
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「「ㄓㄨㄛˊ」汗揚清」→「「ㄓㄨㄛˊ」汙揚清」
+    by: review
 - id: doc_111_彰化_福興_國文_g8s1e3_s4_2
   section: 4
   number: 2
@@ -816,7 +821,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 下列選項何者用字完全正確？
+  stem: 下列選項何者用字完全正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 光風霽月／鬼鬼崇崇／冰壺秋月
@@ -825,7 +830,7 @@ questions:
   - label: C
     content: 舌粲蓮花／節外生枝／去蕪存菁
   - label: D
-    content: 井然有序／擢髮難數／真知卓見
+    content: 并然有序／擢髮難數／真知卓見
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -845,6 +850,11 @@ questions:
     gemini: D
     qwen: C
     gemini_high: C
+  errata:
+  - from: 井然有序
+    to: 并然有序
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「井然有序」→「并然有序」
+    by: review
 - id: doc_111_彰化_福興_國文_g8s1e3_s4_8
   section: 4
   number: 8
@@ -1457,7 +1467,7 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 「洛陽之俗，大抵好牡丹，春時城中無分貴賤皆插花，雖負擔者亦然。花開時，士庶競為遊邀，至花落乃罷。洛陽至東京六驛，舊不進花，自今歲遣銜校一員，乘驛馬，一日一夕至京師。所進不過姚黃魏紫三數朵。以菜葉質竹籠子，藉$^{1}$覆之使馬動搖，以蠟封蒂，乃數日不落。」根據這段文字，下列關於牡丹的敘述何者最恰當？(1.藉：鋪墊。)【110.
+  stem: 「洛陽之俗，大抵好牡丹，春時城中無分貴賤皆插花，雖負擔者亦然。花開時，士庶競為遊邀，至花落乃罷。洛陽至東京六驛，舊不進花，自今歲遣銜校一員，乘驛馬，一日一夕至京師。所進不過姚黃魏紫三數朵。以菜葉藉竹籠子，藉$1$覆之使勿動搖，以蠟封蒂，乃數日不落。」根據這段文字，下列關於牡丹的敘述何者最恰當？(1.藉：鋪墊。)【110.
     會考】
   options:
   - label: A
@@ -1486,6 +1496,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 以菜葉質竹籠子，藉$^{1}$覆之使馬動搖
+    to: 以菜葉藉竹籠子，藉¹覆之使勿動搖
+    note: 原卷為「藉」「勿」，誤擷為「質」「馬」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s1e3_s4_26
   section: 4
   number: 26

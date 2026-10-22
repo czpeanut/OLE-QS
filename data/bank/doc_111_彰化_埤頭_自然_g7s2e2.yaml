@@ -95,7 +95,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: '下表為四種動物的代號、外形示意圖及名稱,依照現行動物理界的分類原則,將其分成兩組,應該如何分?
+  stem: '下表為四種動物的代號、外形示意圖及名稱,依照現行動物界的分類原則,將其分成兩組,應該如何分?
 
 
     | 蝸牛 | 海膽 | 烏賊 | 海參 |
@@ -148,6 +148,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：依照現行動物理界的分類原則 → 依照現行動物界的分類原則
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_4
   section: 1
   number: 4
@@ -636,12 +642,12 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: 有關麵包上長出黑色的黴菌,下列的敘述何者不正確? (A)大多為多細胞個體 (B)可以分泌酵素附著物後吸收養分 (C)缺乏細胞壁和葉綠體 (D)孢子為繁殖構造。
+  stem: 有關麵包上長出黑色的黴菌,下列的敘述何者不正確? (A)大多為多細胞個體 (B)可以分泌酵素將附著物後吸收養分 (C)缺乏細胞壁和葉綠體 (D)孢子為繁殖構造。
   options:
   - label: A
     content: 大多為多細胞個體
   - label: B
-    content: 可以分泌酵素附著物後吸收養分
+    content: 可以分泌酵素附著物分解後吸收養分
   - label: C
     content: 缺乏細胞壁和葉綠體
   - label: D
@@ -668,6 +674,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：可以分泌酵素附著物後吸收養分 → 可以分泌酵素將附著物分解後吸收養分
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_17
   section: 1
   number: 17
@@ -1410,7 +1422,7 @@ questions:
   number: 31
   type: single
   page: 2
-  stem: 根據資料推論,下列何者不可能是海狗具有的特徵? (A)肺部延伸伸氣囊 (B)骨中空堅硬 (C)行體外受精 (D)具有瞬膜。
+  stem: 根據資料推論,下列何者不可能是海狗具有的特徵? (A)肺部延伸出氣囊 (B)骨中空堅硬 (C)行體外受精 (D)具有瞬膜。
   options:
   - label: A
     content: 肺部延伸伸氣囊
@@ -1464,6 +1476,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：肺部延伸伸氣囊 → 肺部延伸出氣囊
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_32
   section: 1
   number: 32
@@ -1513,7 +1531,7 @@ questions:
     content: '78'
   - label: D
     content: 156。
-  group_stem: '小美在臺灣南部的甘蔗田中,分利用捕鼠籠誘捕野鼠,共捕獲 52 隻,標記後放海,幾天後用同法捕獲 48 隻野鼠,其中的 16 隻有標記。試回答下列問題:'
+  group_stem: '小美在臺灣南部的甘蔗田中,分別利用捕鼠籠誘捕野鼠,共捕獲 52 隻,標記後放回,幾天後用同法捕獲 48 隻野鼠,其中的 16 隻有標記。試回答下列問題:'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1533,12 +1551,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：分利用捕鼠籠誘捕野鼠,共捕獲 52 隻,標記後放海, → 分別利用捕鼠籠誘捕野鼠，共捕獲 52 隻，標記後放回，
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_34
   section: 1
   number: 34
   type: single
   page: 2
-  stem: '請問小美採用的生態調查法稱為: (A)直接計數法 (B)樣區法 (C)捉放法 (D)市線調查法。'
+  stem: '請問小美採用的生態調查法稱為: (A)直接計數法 (B)樣區法 (C)捉放法 (D)行線調查法。（原卷有誤，已修正）'
   options:
   - label: A
     content: 直接計數法
@@ -1548,7 +1572,7 @@ questions:
     content: 捉放法
   - label: D
     content: 市線調查法。
-  group_stem: '小美在臺灣南部的甘蔗田中,分利用捕鼠籠誘捕野鼠,共捕獲 52 隻,標記後放海,幾天後用同法捕獲 48 隻野鼠,其中的 16 隻有標記。試回答下列問題:'
+  group_stem: '小美在臺灣南部的甘蔗田中,分別利用捕鼠籠誘捕野鼠,共捕獲 52 隻,標記後放回,幾天後用同法捕獲 48 隻野鼠,其中的 16 隻有標記。試回答下列問題:'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1568,12 +1592,17 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：市線調查法 → 行線調查法
+    by: review
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_35
   section: 1
   number: 35
   type: single
   page: 2
-  stem: 承上題,關於生態系族群大小及估算法的敘述,何者錯誤? (A)出生及遷出使生物族群變大 (B)樣區法適合大面積森林木數量的估算 (C)不論捉放法或樣區法,理論上取樣數愈多,誤差愈小
+  stem: 承上題,關於生態系族群大小及估算法的敘述,何者錯誤? (A)出生及遷出使生物族群變大 (B)樣區法適合大面積森林林木數量的估算 (C)不論捉放法或樣區法,理論上取樣數愈多,誤差愈小
     (D)族群大小常跟著負荷量呈變動,並非固定不變。
   options:
   - label: A
@@ -1584,7 +1613,7 @@ questions:
     content: 不論捉放法或樣區法,理論上取樣數愈多,誤差愈小
   - label: D
     content: 族群大小常跟著負荷量呈變動,並非固定不變。
-  group_stem: '小美在臺灣南部的甘蔗田中,分利用捕鼠籠誘捕野鼠,共捕獲 52 隻,標記後放海,幾天後用同法捕獲 48 隻野鼠,其中的 16 隻有標記。試回答下列問題:'
+  group_stem: '小美在臺灣南部的甘蔗田中,分別利用捕鼠籠誘捕野鼠,共捕獲 52 隻,標記後放回,幾天後用同法捕獲 48 隻野鼠,其中的 16 隻有標記。試回答下列問題:'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1604,12 +1633,18 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：樣區法適合大面積森林木數量的估算 → 樣區法適合大面積森林林木數量的估算
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_36
   section: 1
   number: 36
   type: single
   page: 2
-  stem: 經過 3 年,野鼠族群總數減少為 74 隻,下列關於此野鼠族群的推論,何者最適當? (A)此區的環境變得分較不適合野鼠生存 (B)此野鼠族群有增加的趨勢
+  stem: 經過 3 年,野鼠族群總數減少為 74 隻,下列關於此野鼠族群的推論,何者最適當? (A)此區的環境變得較不適合野鼠生存 (B)此野鼠族群有增加的趨勢
     (C)此野鼠族群必定遷出>遷入 (D)此野鼠族群呈現平衡。
   options:
   - label: A
@@ -1620,7 +1655,7 @@ questions:
     content: 此野鼠族群必定遷出>遷入
   - label: D
     content: 此野鼠族群呈現平衡。
-  group_stem: '小美在臺灣南部的甘蔗田中,分利用捕鼠籠誘捕野鼠,共捕獲 52 隻,標記後放海,幾天後用同法捕獲 48 隻野鼠,其中的 16 隻有標記。試回答下列問題:'
+  group_stem: '小美在臺灣南部的甘蔗田中,分別利用捕鼠籠誘捕野鼠,共捕獲 52 隻,標記後放回,幾天後用同法捕獲 48 隻野鼠,其中的 16 隻有標記。試回答下列問題:'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1640,6 +1675,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：此區的環境變得分較不適合野鼠生存 → 此區的環境變得較不適合野鼠生存
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_37
   section: 1
   number: 37
@@ -1787,7 +1828,7 @@ questions:
   number: 39
   type: single
   page: 2
-  stem: 根據附表,下列敘述何者是可能發生的? (A)分析暴龍的進食殘骸,發現暴龍也會吃始祖鳥 (B)從三角龍的胃駱化石,分析出被暴龍咬過的咬痕 (C)發現暴龍追捕劍龍留下的足跡化石
+  stem: 根據附表,下列敘述何者是可能發生的? (A)分析暴龍的進食殘骸,發現暴龍也會吃始祖鳥 (B)從三角龍的骨骼化石,分析出被暴龍咬過的咬痕 (C)發現暴龍追捕劍龍留下的足跡化石
     (D)同一岩層中發現劍龍與三角龍的化石。
   options:
   - label: A
@@ -1819,12 +1860,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：從三角龍的胃駱化石,分析出被暴龍咬過的咬痕 → 從三角龍的骨骼化石，分析出被暴龍咬過的咬痕
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_40
   section: 1
   number: 40
   type: single
   page: 3
-  stem: 小美犯了一個錯誤,8 種生物中何者並非屬於植物界? (A)鬼針草 (B)鞭苔 (C)髮菜 (D)海金沙。
+  stem: 小美犯了一個錯誤,8 種生物中何者並非屬於植物界? (A)鬼針草 (B)鞭苔 (C)髮菜 (D)海金沙。（原卷有誤，已修正）
   options:
   - label: A
     content: 鬼針草
@@ -1845,7 +1892,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -1869,6 +1916,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：洪藻門,無根、莖、葉,可提煉洋菜粉 → 紅藻門，無根、莖、葉，可提煉洋菜粉
+    by: review
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_41
   section: 1
   number: 41
@@ -1895,7 +1947,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -1945,7 +1997,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -1995,7 +2047,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -2024,7 +2076,7 @@ questions:
   number: 44
   type: single
   page: 3
-  stem: 關於臺灣二葉松的學名 Pinus taiwanensis 的描述,何者不正確? (A)採用拉丁目文 (B)第二個字為屬名 (C)第一個字為名詞 (D)命名方式為林奈所創。
+  stem: 關於臺灣二葉松的學名 Pinus taiwanensis 的描述,何者不正確? (A)採用拉丁文 (B)第二個字為屬名 (C)第一個字為名詞 (D)命名方式為林奈所創。
   options:
   - label: A
     content: 採用拉丁目文
@@ -2045,7 +2097,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -2069,6 +2121,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：採用拉丁目文 → 採用拉丁文
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g7s2e2_s1_45
   section: 1
   number: 45
@@ -2095,7 +2153,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -2145,7 +2203,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -2196,7 +2254,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -2246,7 +2304,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -2296,7 +2354,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -2325,7 +2383,7 @@ questions:
   number: 50
   type: single
   page: 3
-  stem: 小美看到甲的檢索特徵,立馬在腦海中浮現符合此特徵的影像,包含生物和非生物,請問不可能為何者? (A)新冠病毒 (B)大腸桿菌 (C)念球藻 (D)黏菌。
+  stem: 小美看到甲的檢索特徵,立馬在腦海中浮現符合此特徵的影像,包含生物和非生物,請問不可能為何者? (A)新冠病毒 (B)大腸桿菌 (C)念珠藻 (D)黏菌。（原卷有誤，已修正）
   options:
   - label: A
     content: 新冠病毒
@@ -2346,7 +2404,7 @@ questions:
     | 髮菜<br>Bangia atropurpurea<br>資料:可涼拌食用,和石花菜同門 | 鞭苔<br>Bazzania trilobata<br>資料:無維管束,行孢子繁殖
     |
 
-    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:洪藻門,無根、莖、葉,可提煉洋菜粉
+    | 海金沙<br>Lygodium japonicum<br>資料:幼葉捲旋,能產生孢子 | 石花菜<br>Gelidium amansii<br>資料:紅藻門,無根、莖、葉,可提煉洋菜粉
     |
 
     | 鬼針草<br>Bidens bipinnata<br>資料:雙子葉植物 | 咸豐草<br>Bidens pilosa<br>資料:菊科 |'
@@ -2370,6 +2428,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：念球藻 → 念珠藻
+    by: review
 shared_assets:
 - key: g1_14_17
   label: 題組附圖

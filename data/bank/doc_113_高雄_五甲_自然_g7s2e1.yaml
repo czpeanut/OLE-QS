@@ -102,7 +102,7 @@ questions:
   - label: B
     content: 乙：BB＋Bb＝bb
   - label: C
-    content: 丙：BB＝bb＝bb
+    content: 丙：BB＝Bb＝bb
   - label: D
     content: 丁：BB＜Bb＝bb。
   assets:
@@ -141,6 +141,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：(C) 丙：BB＝bb＝bb → (C)丙：BB=Bb=bb
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g7s2e1_s1_4
   section: 1
   number: 4
@@ -1053,7 +1059,7 @@ questions:
   stem: 關於植物生殖構造的數量何者正確？
   options:
   - label: A
-    content: 朵花只會有一個雄蕊
+    content: 一朵花只會有一個雄蕊
   - label: B
     content: 雌蕊的子房內只包含一個胚珠
   - label: C
@@ -1079,6 +1085,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：(A) 朵花只會有一個雄蕊 → (A)一朵花只會有一個雄蕊
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g7s2e1_s1_26
   section: 1
   number: 26

@@ -1063,7 +1063,7 @@ questions:
   number: 29
   type: single
   page: 2
-  stem: 億客研究戰後臺灣的經濟發展時，發現1947年2月的物價是前一年物價的數倍至二十倍不等。這是因為下列哪一機構實行的經濟措施失當所引起？
+  stem: 億容研究戰後臺灣的經濟發展時，發現1947年2月的物價是前一年物價的數倍至二十倍不等。這是因為下列哪一機構實行的經濟措施失當所引起？（原卷有誤，已修正）
   options:
   - label: A
     content: 臺灣總督府
@@ -1092,6 +1092,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 億客研究戰後臺灣的經濟發展時
+    to: 億容研究戰後臺灣的經濟發展時
+    note: 原卷人名印刷誤字或造字問題（億客）：「億客研究戰後臺灣的經濟發展時」→「億容研究戰後臺灣的經濟發展時」
+    by: review
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e2_s1_30
   section: 1
   number: 30
@@ -1199,7 +1204,7 @@ questions:
   number: 33
   type: single
   page: 2
-  stem: 欣欣的阿公說他最喜歡的就是冬天了，因為小時候每天都要五點起床，陪爸爸去種田，之後在趕火車到學校上課。只有冬天的條候不用這麼早起，而且還可以趁天冷的時候，跟著爸媽去新公園玩耍及賞花。對他來說，那是最好間的回憶。請問：欣欣的阿公最可能早期時代的哪裡人？
+  stem: 欣欣的阿公說他最喜歡的就是冬天了，因為小時候每天都要五點起床，陪爸爸去種田，之後在趕火車到學校上課。只有冬天的條候不用這麼早起，而且還可以趁天冷的時候，跟著爸媽去新公園玩耍及賞花。對他來說，那是最好閱的回憶。請問：欣欣的阿公最可能早期時代的哪裡人？
   options:
   - label: A
     content: 一九一○年代的新竹人
@@ -1229,6 +1234,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 最好間的回憶。請問：欣欣的阿公最可能早期時代的哪裡人？
+    to: 最好閱的回憶。請問：欣欣的阿公最可能早期時代的哪裡人？
+    note: 原卷為「最好閱」，擷取誤作「最好間」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e2_s1_34
   section: 1
   number: 34
@@ -1373,7 +1384,7 @@ questions:
   number: 38
   type: single
   page: 2
-  stem: 民國79年，一群大學生聚集在中正紀念堂提出改革的訴求，開啟學生運動的風潮。這些學生能合法的走上街頭進行抗爭，與何項政策關聯係最密切？
+  stem: 民國79年，一群大學生聚集在中正紀念堂提出改革的訴求，開啟學生運動的風潮。這些學生能合法的走上街頭進行抗爭，與何項政策關聯最密切？
   options:
   - label: A
     content: 陳誠發布戒嚴
@@ -1402,3 +1413,9 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 與何項政策關聯係最密切？
+    to: 與何項政策關聯最密切？
+    note: 多打了「係」字
+    by: review
+    extraction: true

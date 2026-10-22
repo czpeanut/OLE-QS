@@ -1344,7 +1344,7 @@ questions:
   - label: B
     content: 許多青少年表面充滿活力，事實上卻完全禁不起壓力，有人戲稱他們為「草莓」族
   - label: C
-    content: 衛生署提醒愛嚼檳榔的「紅脣」族：吃檳榔可能有decode口腔健康
+    content: 衛生署提醒愛嚼檳榔的「紅脣」族：吃檳榔可能有害口腔健康
   - label: D
     content: 他很愛逛街購物，是每個月都把薪水花光光的「月光」族
   tags:
@@ -1364,6 +1364,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 吃檳榔可能有decode口腔健康
+    to: 吃檳榔可能有 害口腔健康
+    note: 「害」字誤植為「decode」
+    by: review
+    extraction: true
 - id: doc_111_彰化_溪湖_國文_g7s1e2_s4_26
   section: 4
   number: 26

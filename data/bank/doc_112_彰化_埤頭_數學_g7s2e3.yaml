@@ -169,7 +169,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 英文單字本裡面有 1200 個英文單字，承祐已記得其中 145 個單字，如果他打算每每天最多認識 8 個不同的新單字，那麼至少幾天後，承祐能背完 1200
+  stem: 英文單字本裡面有 1200 個英文單字，承祐已記得其中 145 個單字，如果他打算每天最多認識 8 個不同的新單字，那麼至少幾天後，承祐能背完 1200
     個單字？
   options:
   - label: A
@@ -199,6 +199,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：如果他打算每每天最多認識 8 個不同的 → 如果他打算每天最多認識 8 個不同的
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_數學_g7s2e3_s1_6
   section: 1
   number: 6
@@ -565,7 +571,7 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: 如圖是三年考班數學成績次數分配折線圖，下列敘述何者正確？
+  stem: 如圖是三年孝班數學成績次數分配折線圖，下列敘述何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 恰好有 9 人考 55 分
@@ -611,6 +617,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：如圖是三年考班數學成績次數分配折線圖 → 如圖是三年孝班數學成績次數分配折線圖
+    by: review
 - id: doc_112_彰化_埤頭_數學_g7s2e3_s1_15
   section: 1
   number: 15

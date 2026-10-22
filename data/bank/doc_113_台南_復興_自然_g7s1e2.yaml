@@ -190,7 +190,7 @@ questions:
   - label: C
     content: 具有專一性，因此酵素種類繁多
   - label: D
-    content: 酵素在活的生物體內才會 readout 代謝作用。
+    content: 酵素在活的生物體內才會 有 代謝作用。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -210,6 +210,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 酵素在活的生物體內才會 readout 代謝作用。
+    to: 酵素在活的生物體內才會有代謝作用。
+    note: 「有」誤辨識為「readout 」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g7s1e2_s1_6
   section: 1
   number: 6
@@ -464,7 +470,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 禹姍在社團課時不小心讓葉綠素萃取液沾染到白色制服穿白色制服。請問下列哪一種方法最容易將制服上草綠色的汙垢清洗掉？
+  stem: 禹姍在社團課時不小心讓葉綠素萃取液沾染到白色制服。請問下列哪一種方法最容易將制服上草綠色的汙垢清洗掉？（原卷有誤，已修正）
   options:
   - label: A
     content: 用熱酒精洗
@@ -493,6 +499,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 沾染到白色制服穿白色制服。請問下列哪一種方法最容易
+    to: 沾染到白色制服。請問下列哪一種方法最容易
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「沾染到白色制服穿白色制服。請問下列哪一種方法最容易」→「沾染到白色制服。請問下列哪一種方法最容易」
+    by: review
 - id: doc_113_台南_復興_自然_g7s1e2_s1_13
   section: 1
   number: 13
@@ -826,7 +837,7 @@ questions:
   - label: C
     content: 可以由上往下，也能由下往上
   - label: D
-    content: 春天由上往下，秋天天由下往上。
+    content: 春天由上往下，秋天由下往上。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -846,6 +857,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 秋天天
+    to: 秋天
+    note: 「秋天」誤作「秋天天」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g7s1e2_s1_23
   section: 1
   number: 23
@@ -1304,7 +1321,7 @@ questions:
   number: 34
   type: single
   page: 4
-  stem: 承 33.，想要檢測紅藜中是否含有該種養分，最適合理使用下列哪一種試劑？
+  stem: 承 33.，想要檢測紅藜中是否含有該種養分，最適合使用下列哪一種試劑？
   options:
   - label: A
     content: 本氏液
@@ -1336,6 +1353,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 最適合理使用下列哪一種試劑？
+    to: 最適合使用下列哪一種試劑？
+    note: 多出「理」字
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g7s1e2_s1_35
   section: 1
   number: 35

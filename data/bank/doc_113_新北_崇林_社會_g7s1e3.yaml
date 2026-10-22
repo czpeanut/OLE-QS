@@ -1529,7 +1529,7 @@ questions:
   - label: B
     content: 年溫差約為10℃
   - label: C
-    content: 河流流量豐富穩定
+    content: 河川流量豐富穩定
   - label: D
     content: 冬季天氣陰冷多雨。
   assets:
@@ -1566,6 +1566,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 河流流量豐富穩定
+    to: (C)河川流量豐富穩定
+    note: 「河川」誤植為「河流」
+    by: review
+    extraction: true
 - id: doc_113_新北_崇林_社會_g7s1e3_s3_39
   section: 3
   number: 39

@@ -423,7 +423,7 @@ questions:
   number: 30
   type: single
   page: 1
-  stem: 小萱剛進公司，告知同事，她認為男主管領導方式理性，有條理的感覺，但女性主管強勢、犀利、難溝通。請問：小萱對女性主管的評價，最適合理用哪一項性別概念來說明？
+  stem: 小萱剛進公司，告知同事，她認為男主管領導方式理性，有條理的感覺，但女性主管強勢、犀利、難溝通。請問：小萱對女性主管的評價，最適合用哪一項性別概念來說明？
   options:
   - label: A
     content: 性別歧視
@@ -453,6 +453,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 請問：小萱對女性主管的評價，最適合理用哪一項性別概念來說明？
+    to: 請問：小萱對女性主管的評價，最適合用哪一項性別概念來說明？
+    note: 多擷取「理」字
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_公民_g7s1e1_s1_31
   section: 1
   number: 31

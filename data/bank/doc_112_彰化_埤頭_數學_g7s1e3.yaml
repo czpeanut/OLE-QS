@@ -799,7 +799,7 @@ questions:
   number: 9
   type: fill
   page: 2
-  stem: 小花說：「現在爺爺的年齡是我的6倍，而5年後爺爺的年齡將會是我的4倍多4歲。」則小花現在______歲。
+  stem: 小花說：「現在爺爺的年齡是我的6倍，而5年後爺爺的年齡將會是我的4倍多9歲。」則小花現在______歲。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -819,6 +819,12 @@ questions:
   - '9.5'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 將會是我的4倍多4歲。」
+    to: 將會是我的4倍多9歲。」
+    note: 原卷為「多9歲」，誤植為「多4歲」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_數學_g7s1e3_s3_1
   section: 3
   number: 1

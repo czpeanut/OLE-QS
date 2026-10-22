@@ -449,7 +449,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 承上題，假設彰化縣各鄉鎮市的房價與人口稠密度呈正比，請問彰化哪個鄉鎮的人均居住空間最小，平均每房價可能最高？
+  stem: 承上題，假設彰化縣各鄉鎮市的房價與人口稠密度呈正比，請問彰化哪個鄉鎮的人均居住空間最小，平均房價可能最高？
   options:
   - label: A
     content: ①
@@ -480,6 +480,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 人均居住空間最小，平均每房價可能最高？
+    to: 人均居住空間最小，平均房價可能最高？
+    note: 多擷取了「每」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g7s2e1_s1_12
   section: 1
   number: 12
@@ -925,7 +931,7 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 承上題，臺灣將在 2033 年超越日本，老化指數將居全球之首，成為全世界最老的高齡國家。請問：臺灣老年人口比例快速攀升，和下列何者關係最大？
+  stem: 承上題，臺灣將在 2033 年超越日本，老化指數將居全球之首，成為全世界最老的國家。請問：臺灣老年人口比例快速攀升，和下列何者關係最大？
   options:
   - label: A
     content: 總人口數大量增加
@@ -955,6 +961,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 成為全世界最老的高齡國家。請問：臺灣老年人口
+    to: 成為全世界最老的國家。請問：臺灣老年人口
+    note: 多擷取了「高齡」二字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g7s2e1_s1_23
   section: 1
   number: 23

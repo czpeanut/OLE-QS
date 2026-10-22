@@ -1096,14 +1096,14 @@ questions:
   number: 35
   type: single
   page: 4
-  stem: Which is the best title (最好的標題) of the article?
+  stem: Which is the best title (最好的標題) of the article?（原卷有誤，已修正）
   options:
   - label: A
     content: Time is money.
   - label: B
     content: Money can talk.
   - label: C
-    content: Money is not everying.
+    content: Money is not everything.
   - label: D
     content: Money is everthing.
   group_stem: 'With it, you can buy a house, but not a home.
@@ -1146,6 +1146,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) Money is not everying.
+    to: (C) Money is not everything.
+    note: everying 拼錯：「(C) Money is not everying.」→「(C) Money is not everything.」
+    by: review
 - id: doc_111_桃園_中興_英語_g7s1e1_s4_36
   section: 4
   number: 36
