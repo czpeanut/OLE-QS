@@ -183,6 +183,8 @@ data/export/
 - **公式**：題幹、選項、短文裡的數學式是 `$…$` 包住的 LaTeX，用 KaTeX 或 MathJax 渲染。
   英文句子裡的 `$` 可能是錢的符號，判斷規則可參考 `web/lib/mathfmt.ts`。
 - **表格**：用 Markdown 表格（`| a | b |`）。
+- **畫線處**：題目用底線標出的字詞寫成 `<u>…</u>`，雙底線是 `<u class="dbl">…</u>`（例如「依<u>畫線部分</u>造問句」）。
+  顯示時保留成底線；轉純文字時可以改成「」或直接去掉標籤。只是留給學生作答的空格（＿＿＿）不會加標籤。
 - **畫線處**：原卷的底線、粗體不一定保留；題目問「畫線處」時請以原卷為準。
 - **附圖**：`images[].file`、`shared_images[].file`、`options[].image` 都是附圖檔名（相對路徑，例如 `doc_…/s1_8_f1.png`）。
   - 取得 PNG：`bank.image(file)` 回傳 bytes；或指令列 `oleqs_bank.py image <file> -o x.png`。

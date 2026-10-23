@@ -120,6 +120,7 @@ select,input[type=text],textarea{background:var(--card);border:1px solid var(--r
 .math-raw{font-family:var(--f-code);color:var(--warn)}
 math{font-size:1.08em}
 .katex-error{color:var(--pen)!important}
+u{text-decoration:underline;text-underline-offset:.18em}u.dbl{text-decoration-style:double}
 
 .report{border:1px solid var(--pen);border-radius:var(--r);background:var(--pen-soft);padding:10px 12px;display:flex;flex-direction:column;gap:8px}
 .report .cats{display:flex;gap:6px;flex-wrap:wrap}
@@ -241,7 +242,9 @@ function inline(s){
   for (let i = 0; i < parts.length; i++) {
     if (i % 2 && isMath(parts[i])) { out += mathHTML(parts[i]); continue; }
     const txt = i % 2 ? "$" + parts[i] + "$" : parts[i];
-    out += esc(txt).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+    // 畫線處 <u>…</u>（雙底線 <u class="dbl">）照樣顯示，其餘角括號當文字
+    out += esc(txt).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>")
+      .replace(/&lt;u( class=(?:&quot;|")dbl(?:&quot;|"))?&gt;/g, (_, d) => d ? '<u class="dbl">' : "<u>").replace(/&lt;\/u&gt;/g, "</u>");
   }
   return out;
 }

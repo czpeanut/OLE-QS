@@ -136,10 +136,15 @@ export function latexToHtml(tex: string): string {
   return out.join("");
 }
 
+// 題目裡的畫線處寫成 <u>…</u>（雙底線 <u class="dbl">…</u>）；其餘角括號一律當文字
+function underline(escaped: string): string {
+  return escaped.replace(/&lt;u( class="dbl")?&gt;/g, (_, d) => (d ? '<u class="dbl">' : "<u>")).replace(/&lt;\/u&gt;/g, "</u>");
+}
+
 function inline(md: string): string {
   return md.split(/\$([^$]*)\$/).map((chunk, i) =>
     i % 2 ? `<span class="math">${latexToHtml(chunk)}</span>`
-      : esc(chunk).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\n/g, "<br>"),
+      : underline(esc(chunk)).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\n/g, "<br>"),
   ).join("");
 }
 
@@ -184,6 +189,7 @@ table.md td,table.md th{border:1px solid currentColor;padding:1px 8px;text-align
 .ovarr .arr{font-size:.7em;line-height:.8;font-style:normal}
 .unarr{display:inline-flex;flex-direction:column;align-items:center;line-height:1.1;vertical-align:top}
 .unarr .arr{font-size:.7em;font-style:normal}
+u{text-decoration:underline;text-underline-offset:.18em}u.dbl{text-decoration-style:double}
 .unl{display:inline-block;min-width:1.5em;border-bottom:1px solid currentColor;text-align:center}
 .cases{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:left;border-left:1.5px solid currentColor;border-radius:.7em 0 0 .7em;padding:0 .2em 0 .45em;margin:0 .15em}
 .rows{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:left}
