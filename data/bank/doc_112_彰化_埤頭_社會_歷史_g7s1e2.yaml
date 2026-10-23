@@ -675,33 +675,27 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 貝島斯來自曾曾經在臺灣說起祖先曾經過在臺灣生活的故事，於是規劃了三天兩夜的臺灣之旅。訪問：根據右行行程景點，貝島斯應該來自哪一個國家？
+  stem: 貝島斯聽自祖父說起祖先曾經在臺灣生活的故事，於是規劃了三天兩夜的臺灣之旅。請問：根據行程規劃，貝島斯應該來自哪一個國家？
   options:
   - label: A
     content: 英國
   - label: B
-    content: 葡萄牙
+    content: 荷蘭
   - label: C
     content: 葡萄牙
   - label: D
     content: 西班牙
   assets:
-  - key: s1_17_f1
+  - key: s1_17_r10231623_1
     kind: figure
-    file: doc_112_彰化_埤頭_社會_歷史_g7s1e2/s1_17_f1.png
+    file: doc_112_彰化_埤頭_社會_歷史_g7s1e2/s1_17_r10231623_1.png
     crop:
       page: 1
       rect:
-      - 533.19
-      - 214.1
-      - 611.6
-      - 290.86
-      auto_from:
-      - 533.45
-      - 213.05
-      - 609.71
-      - 286.69
-    crop_by: auto
+      - 685.22
+      - 79.04
+      - 768.53
+      - 175.9
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -721,6 +715,13 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 貝島斯來自曾曾經在臺灣說起祖先曾經過在臺灣生活的故事，於是規劃了三天兩夜的臺灣之旅。訪問：根據右行行程景點，貝島斯應該來自哪一個國家？
+    to: 貝島斯聽自祖父說起祖先曾經在臺灣生活的故事，於是規劃了三天兩夜的臺灣之旅。請問：根據行程規劃，貝島斯應該來自哪一個國家？
+    note: 多字「曾」、「過」，「請問」誤作「訪問」，選項(B)(C)重複；原卷選項(B)(C)印重複，(B)應為荷蘭：「(B) 葡萄牙 (C) 葡萄牙」→「(B)
+      荷蘭 (C) 葡萄牙」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e2_s1_18
   section: 1
   number: 18

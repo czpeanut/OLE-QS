@@ -763,6 +763,23 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  assets:
+  - key: s6_30_r10231624_1
+    kind: figure
+    file: doc_111_台北_新興_英語_g7s1e1/s6_30_r10231624_1.png
+    crop:
+      page: 2
+      rect:
+      - 83.42
+      - 473.7
+      - 269.91
+      - 633.37
+  errata:
+  - from: What is in the (?) ?
+    to: What is in the (?) ?
+    note: 漏附第30題題幹的文氏圖
+    by: review
+    extraction: true
 - id: doc_111_台北_新興_英語_g7s1e1_s6_31
   section: 6
   number: 31
@@ -1208,7 +1225,7 @@ questions:
   number: 2
   type: essay
   page: 3
-  stem: They are my bothers. (請依畫線部分造原問句)
+  stem: They are <u>my bothers</u>. (請依畫線部分造原問句)
   tags:
     textbook: 七上 英語 Who問句
     labeled_by: ai
@@ -1219,12 +1236,19 @@ questions:
       code: B1-06
       title: Who問句
       chapter: B1 七上
+  errata:
+  - from: They are my bothers. (請依畫線部分造原問句)
+    to: They are <u>my bothers</u>. (請依畫線部分造原問句)
+    note: 原卷my bothers有畫底線，擷取未標示畫線處；bothers 應為 brothers：「They are my bothers. (請依畫線部分造原問句)」→「They
+      are my brothers. (請依畫線部分造原問句)」
+    by: review
+    extraction: true
 - id: doc_111_台北_新興_英語_g7s1e1_s8_3
   section: 8
   number: 3
   type: essay
   page: 3
-  stem: Teacher Ben is from the USA. (請依畫線部分造原問句)
+  stem: Teacher Ben is from <u>the USA</u>. (請依畫線部分造原問句)
   tags:
     textbook: 七上 英語 Where問句 + 回答方式
     labeled_by: ai
@@ -1235,6 +1259,12 @@ questions:
       code: B1-08
       title: Where問句 + 回答方式
       chapter: B1 七上
+  errata:
+  - from: Teacher Ben is from the USA. (請依畫線部分造原問句)
+    to: Teacher Ben is from <u>the USA</u>. (請依畫線部分造原問句)
+    note: 原卷the USA有畫底線，擷取未標示畫線處
+    by: review
+    extraction: true
 - id: doc_111_台北_新興_英語_g7s1e1_s8_4
   section: 8
   number: 4

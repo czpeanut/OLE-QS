@@ -328,16 +328,16 @@ questions:
   number: 9
   type: single
   page: 3
-  stem: a lot of sheep in this zoo.         colors are black. That’s special.
+  stem: ______ a lot of sheep in this zoo. ______ colors are black. That’s special.
   options:
   - label: A
-    content: There is；Its
+    content: There is ; Its
   - label: B
-    content: There is；It’s
+    content: There is ; It’s
   - label: C
-    content: There are；They
+    content: There are ; They
   - label: D
-    content: There are；Their
+    content: There are ; Their
   ai_answers:
     gemini: D
     qwen: D
@@ -355,6 +355,12 @@ questions:
       chapter: B1 七上
     textbook: 七上 英語 There is/are（肯定/否定/問答）+ some/any
     labeled_by: ai
+  errata:
+  - from: a lot of sheep in this zoo.         colors are black. That’s special.
+    to: ______ a lot of sheep in this zoo. ______ colors are black. That’s special.
+    note: 句首漏了填空底線／空格
+    by: review
+    extraction: true
 - id: doc_113_高雄_五福_英語_g7s1e3_s2_10
   section: 2
   number: 10
@@ -1356,7 +1362,7 @@ questions:
   number: 2
   type: essay
   page: 6
-  stem: There are three books on the desk. （請依畫線部分造原問句）
+  stem: There are <u>three books</u> on the desk. （請依畫線部分造原問句）
   tags:
     chapter:
       publisher: null
@@ -1367,6 +1373,12 @@ questions:
       chapter: B1 七上
     textbook: 七上 英語 There is/are（肯定/否定/問答）+ some/any
     labeled_by: ai
+  errata:
+  - from: There are three books on the desk. （請依畫線部分造原問句）
+    to: There are <u>three books</u> on the desk. （請依畫線部分造原問句）
+    note: 未標示畫線處（原卷 three books 畫底線）
+    by: review
+    extraction: true
 - id: doc_113_高雄_五福_英語_g7s1e3_s8_1
   section: 8
   number: 1

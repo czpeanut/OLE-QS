@@ -93,12 +93,12 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 「鵡」
+  stem: 「鶼」「ㄉㄧㄝˊ」情深
   options:
   - label: A
-    content: ㄎㄜˊ
+    content: 蝶
   - label: B
-    content: ㄎㄜˇ
+    content: 鰈
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   group_stem: 一、請選出「  」中正確的注音或國字。一題2分
@@ -112,6 +112,12 @@ questions:
       code: 第四課
       title: 論語選(1)子游問孝(2)譬如為山(3)吾日三省吾身
       chapter: null
+  errata:
+  - from: 「鵡」
+    to: 「鶼」「ㄉㄧㄝˊ」情深
+    note: 題幹文字與選項完全擷取錯誤
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g7s1e3_s1_4
   section: 1
   number: 4
@@ -504,11 +510,9 @@ questions:
   stem: 「殷殷寄語的深情」中的「殷殷」為
   options:
   - label: A
-    content: 更加
-  - label: B
     content: 心思深沉
-  - label: C
-    content: 情意深厚的 樣子
+  - label: B
+    content: 情意深厚的 樣子。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -521,6 +525,12 @@ questions:
       code: 第五課
       title: 背影
       chapter: null
+  errata:
+  - from: 「殷殷寄語的深情」中的「殷殷」為
+    to: 「殷殷寄語的深情」中的「殷殷」為
+    note: 原卷僅二選項，誤混入第21題選項(A)更加
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g7s1e3_s2_21
   section: 2
   number: 21

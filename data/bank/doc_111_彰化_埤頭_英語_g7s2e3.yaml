@@ -691,7 +691,7 @@ questions:
   number: 35
   type: single
   page: 2
-  stem: Mary was busy last night, ______ she did not help Ella.
+  stem: ______ Mary was busy last night, ______ she did not help Ella.
   options:
   - label: A
     content: Because; ✕
@@ -721,6 +721,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: Mary was busy last night, ______ she did not help Ella.
+    to: ______ Mary was busy last night, ______ she did not help Ella.
+    note: Mary前方漏了第一個空格底線
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_英語_g7s2e3_s4_36
   section: 4
   number: 36
@@ -1148,34 +1154,14 @@ questions:
     content: Eggs.
   - label: D
     content: Apple juice.
-  group_stem: '(On the cellphone)
-
-    Mom: Where are you, Kally?
-
-    Kally: I''m in the supermarket.
-
-    Mom: Oh, you''re right. There is no juice at home. Can you also get some chicken
-    and eggs for me? I need them to make dinner.
-
-    Kally: How much chicken do you need?
-
-    Mom: Two kilos.
-
-    Kally: I see. And how many eggs?
-
-    Mom: Ten. I want to make some tea eggs.
-
-    Kally: Do you need any strawberries?
-
-    Mom: No, but I need some apples. I can make a pie.
-
-    Kally: That is my favorite! How many apples do you need?
-
-    Mom: Five apples. Thank you, Kally.
-
-    Kally: You''re welcome.
-
-    📖 supermarket 超級市場  kilo 公斤'
+  group_stem: "(On the cellphone)\nMom: Where are you, Kally?\nKally: I'm in the supermarket.\n\
+    \       I'm here to get some mango juice.\nMom: Oh, you're right. There is no\
+    \ juice at home. Can you also get some chicken and eggs for me? I need them to\
+    \ make dinner.\nKally: How much chicken do you need?\nMom: Two kilos.\nKally:\
+    \ I see. And how many eggs?\nMom: Ten. I want to make some tea eggs.\nKally: Do\
+    \ you need any strawberries?\nMom: No, but I need some apples. I can make a pie.\n\
+    Kally: That is my favorite! How many apples do you need?\nMom: Five apples. Thank\
+    \ you, Kally.\nKally: You're welcome.\n\U0001F4D6 supermarket 超級市場 kilo 公斤"
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1195,6 +1181,13 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: What DOESN'T Kally need to buy?
+    to: What DOESN'T Kally need to buy?
+    note: '複核：原卷確實這樣印，可能是原卷錯字：「Kally: I''m in the supermarket. Mom:」→「Kally: I''m
+      in the supermarket. I''m here to get some mango ju」'
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_英語_g7s2e3_s5_49
   section: 5
   number: 49
@@ -1210,34 +1203,14 @@ questions:
     content: A tea egg.
   - label: D
     content: An apple pie.
-  group_stem: '(On the cellphone)
-
-    Mom: Where are you, Kally?
-
-    Kally: I''m in the supermarket.
-
-    Mom: Oh, you''re right. There is no juice at home. Can you also get some chicken
-    and eggs for me? I need them to make dinner.
-
-    Kally: How much chicken do you need?
-
-    Mom: Two kilos.
-
-    Kally: I see. And how many eggs?
-
-    Mom: Ten. I want to make some tea eggs.
-
-    Kally: Do you need any strawberries?
-
-    Mom: No, but I need some apples. I can make a pie.
-
-    Kally: That is my favorite! How many apples do you need?
-
-    Mom: Five apples. Thank you, Kally.
-
-    Kally: You''re welcome.
-
-    📖 supermarket 超級市場  kilo 公斤'
+  group_stem: "(On the cellphone)\nMom: Where are you, Kally?\nKally: I'm in the supermarket.\n\
+    \       I'm here to get some mango juice.\nMom: Oh, you're right. There is no\
+    \ juice at home. Can you also get some chicken and eggs for me? I need them to\
+    \ make dinner.\nKally: How much chicken do you need?\nMom: Two kilos.\nKally:\
+    \ I see. And how many eggs?\nMom: Ten. I want to make some tea eggs.\nKally: Do\
+    \ you need any strawberries?\nMom: No, but I need some apples. I can make a pie.\n\
+    Kally: That is my favorite! How many apples do you need?\nMom: Five apples. Thank\
+    \ you, Kally.\nKally: You're welcome.\n\U0001F4D6 supermarket 超級市場 kilo 公斤"
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:

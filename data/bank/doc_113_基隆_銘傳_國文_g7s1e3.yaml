@@ -399,7 +399,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 關於〈兒時記趣〉一文，下列選項敘述，何者為非？
+  stem: 關於〈兒時記趣〉一文，下列選項敘述，何者<u>為非</u>？
   options:
   - label: A
     content: 「余憶童稚時，能張目對日，明察秋毫」一句並非想像力的運用
@@ -437,6 +437,11 @@ questions:
     to: (A) 「余憶童稚時，能張目對日，明察秋毫」
     note: 「億」印錯，應為「憶」
     by: ai_review
+    extraction: true
+  - from: 關於〈兒時記趣〉一文，下列選項敘述，何者為非？
+    to: 關於〈兒時記趣〉一文，下列選項敘述，何者<u>為非</u>？
+    note: 「億」印錯，應為「憶」：「(A) 「余億童稚時，能張目對日，明察秋毫」」→「(A) 「余憶童稚時，能張目對日，明察秋毫」」
+    by: review
     extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e3_s2_12
   section: 2

@@ -645,7 +645,7 @@ questions:
   number: 3
   type: essay
   page: 1
-  stem: Mr. Collins can’t read Spanish. (依畫線部分造原問句)
+  stem: Mr. Collins can’t <u>read Spanish</u>. (依畫線部分造原問句)
   tags:
     textbook: 七上 英語 助動詞 can（肯定/否定/問答）+ Wh-疑問句
     labeled_by: ai
@@ -656,6 +656,12 @@ questions:
       code: B1-12
       title: 助動詞 can（肯定/否定/問答）+ Wh-疑問句
       chapter: B1 七上
+  errata:
+  - from: Mr. Collins can’t read Spanish. (依畫線部分造原問句)
+    to: Mr. Collins can’t <u>read Spanish</u>. (依畫線部分造原問句)
+    note: 未標示畫線處（原卷 read Spanish 有畫底線）
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g7s1e2_s5_1
   section: 5
   number: 1

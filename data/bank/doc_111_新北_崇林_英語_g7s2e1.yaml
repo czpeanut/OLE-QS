@@ -1147,11 +1147,11 @@ questions:
     content: Food.
   group_stem: "A.    Every year on the second Sunday of May, children come back home\
     \ to celebrate Mother’s Day.  They buy \ngifts for their mothers or celebrate\
-    \ it with big dinners.  However, mothers do not expect any gifts or big \ndinners\
-    \ from their children.  They just hope their children can come and see them often.\
-    \  So, don’t just buy \nsome gifts or good food for your mother.  Spend more time\
-    \ with her. \n                                            celebrate 慶祝   expect\
-    \ 期望    spend 花費    more 更多的"
+    \ <u>it</u> with big dinners.  However, mothers do not expect any gifts or big\
+    \ \ndinners from their children.  They just hope their children can come and see\
+    \ them often.  So, don’t just buy \nsome gifts or good food for your mother. \
+    \ Spend more time with her. \n                                            celebrate\
+    \ 慶祝   expect 期望    spend 花費    more 更多的"
   tags:
     textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
@@ -1179,11 +1179,11 @@ questions:
     content: To be with children.
   group_stem: "A.    Every year on the second Sunday of May, children come back home\
     \ to celebrate Mother’s Day.  They buy \ngifts for their mothers or celebrate\
-    \ it with big dinners.  However, mothers do not expect any gifts or big \ndinners\
-    \ from their children.  They just hope their children can come and see them often.\
-    \  So, don’t just buy \nsome gifts or good food for your mother.  Spend more time\
-    \ with her. \n                                            celebrate 慶祝   expect\
-    \ 期望    spend 花費    more 更多的"
+    \ <u>it</u> with big dinners.  However, mothers do not expect any gifts or big\
+    \ \ndinners from their children.  They just hope their children can come and see\
+    \ them often.  So, don’t just buy \nsome gifts or good food for your mother. \
+    \ Spend more time with her. \n                                            celebrate\
+    \ 慶祝   expect 期望    spend 花費    more 更多的"
   tags:
     textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
@@ -1206,23 +1206,25 @@ questions:
   number: 3
   type: single
   page: 3
-  stem: Which is true?
+  stem: 'Which is true?
+
+    expensive 昂貴的'
   options:
   - label: A
-    content: We need to give money to our mothers on Mother’s Day.
+    content: We need to give money to our mothers on Mother's Day.
   - label: B
     content: We need to spend more time with our mothers.
   - label: C
     content: We must buy expensive things for our mothers.
   - label: D
-    content: Mother’s Day is always on the same date every year.
+    content: Mother's Day is always on the same date every year.
   group_stem: "A.    Every year on the second Sunday of May, children come back home\
     \ to celebrate Mother’s Day.  They buy \ngifts for their mothers or celebrate\
-    \ it with big dinners.  However, mothers do not expect any gifts or big \ndinners\
-    \ from their children.  They just hope their children can come and see them often.\
-    \  So, don’t just buy \nsome gifts or good food for your mother.  Spend more time\
-    \ with her. \n                                            celebrate 慶祝   expect\
-    \ 期望    spend 花費    more 更多的"
+    \ <u>it</u> with big dinners.  However, mothers do not expect any gifts or big\
+    \ \ndinners from their children.  They just hope their children can come and see\
+    \ them often.  So, don’t just buy \nsome gifts or good food for your mother. \
+    \ Spend more time with her. \n                                            celebrate\
+    \ 慶祝   expect 期望    spend 花費    more 更多的"
   tags:
     textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
@@ -1240,6 +1242,15 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Which is true?
+    to: 'Which is true?
+
+      expensive 昂貴的'
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(C) We must buy expensive things for our mothers.」→「(C)
+      We must buy expensive things for our mothers.           」
+    by: review
+    extraction: true
 - id: doc_111_新北_崇林_英語_g7s2e1_s5_4
   section: 5
   number: 4

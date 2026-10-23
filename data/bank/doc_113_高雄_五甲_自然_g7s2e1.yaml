@@ -2340,23 +2340,6 @@ questions:
     content: 妻及她的父親
   - label: D
     content: 妻及她的母親。
-  assets:
-  - key: s1_54_f1
-    kind: figure
-    file: doc_113_高雄_五甲_自然_g7s2e1/s1_54_f1.png
-    crop:
-      page: 5
-      rect:
-      - 534.84
-      - 92.35
-      - 676.07
-      - 199.25
-      auto_from:
-      - 532.47
-      - 89.02
-      - 680.07
-      - 202.58
-    crop_by: auto
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -2376,12 +2359,20 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 已知一隱性等位基因位於 X 染色體上。某對夫妻透過遺傳諮詢得知，在沒有突變的情況下，兩人將來所生的子女中，女兒必帶有此隱性基因，但兒子必無。根據諮詢的結果，推測此對夫妻的家族中，下列哪兩人的
+      X 染色體一定沒有此隱性等位基因？【105 教育會考】
+    to: 已知一隱性等位基因位於 X 染色體上。某對夫妻透過遺傳諮詢得知，在沒有突變的情況下，兩人將來所生的子女中，女兒必帶有此隱性基因，但兒子必無。根據諮詢的結果，推測此對夫妻的家族中，下列哪兩人的
+      X 染色體一定沒有此隱性等位基因？【105 教育會考】
+    note: 本題無需配圖，圖應屬於第55題
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g7s2e1_s1_55
   section: 1
   number: 55
   type: single
   page: 5
-  stem: 附圖為已受精之雞蛋的內部構造，則下列敘述何者錯誤？
+  stem: 附圖為已受精之雞蛋的內部構造，則下列敘述何者<u>錯誤</u>？
   options:
   - label: A
     content: C 可固定 B 的位置
@@ -2410,6 +2401,23 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s1_55_r10231624_1
+    kind: figure
+    file: doc_113_高雄_五甲_自然_g7s2e1/s1_55_r10231624_1.png
+    crop:
+      page: 5
+      rect:
+      - 529.83
+      - 83.88
+      - 679.84
+      - 208.72
+  errata:
+  - from: 附圖為已受精之雞蛋的內部構造，則下列敘述何者錯誤？
+    to: 附圖為已受精之雞蛋的內部構造，則下列敘述何者<u>錯誤</u>？
+    note: 題幹提及附圖，卻漏附雞蛋構造圖
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g7s2e1_s1_56
   section: 1
   number: 56

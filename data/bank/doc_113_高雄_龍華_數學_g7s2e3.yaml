@@ -1192,9 +1192,9 @@ questions:
   number: 26
   type: single
   page: 6
-  stem: 如下圖，四邊形 $ABCD$ 是以 $\overline{BD}$ 為對稱軸的線對稱圖形，其中 A、H、E 的對稱點分別為 C、G、F，設 $\overline{HF}$
-    與 $\overline{EG}$ 交於 $\overline{BD}$ 上的一點 O。若 $\overline{BC} = 15$ 公分，$\overline{BE}
-    = \overline{OF} = 9$ 公分，且四邊形 $AEOH$ 為長方形，則圖中灰色部分的面積總和為多少平方公分？
+  stem: 如下圖，四邊形 $ABCD$ 是以 $\overleftrightarrow{BD}$ 為對稱軸的線對稱圖形，其中 A、H、E 的對稱點分別為 C、G、F，設
+    $\overline{HF}$ 與 $\overline{EG}$ 交於 $\overleftrightarrow{BD}$ 上的一點 O。若 $\overline{BC}
+    = 15$ 公分，$\overline{BE} = \overline{OF} = 9$ 公分，且四邊形 $AEOH$ 為長方形，則圖中灰色部分的面積總和為多少平方公分？
   options:
   - label: A
     content: '90'
@@ -1238,6 +1238,16 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如下圖，四邊形 $ABCD$ 是以 $\overline{BD}$ 為對稱軸的線對稱圖形，其中 A、H、E 的對稱點分別為 C、G、F，設 $\overline{HF}$
+      與 $\overline{EG}$ 交於 $\overline{BD}$ 上的一點 O。若 $\overline{BC} = 15$ 公分，$\overline{BE}
+      = \overline{OF} = 9$ 公分，且四邊形 '
+    to: 如下圖，四邊形 $ABCD$ 是以 $\overleftrightarrow{BD}$ 為對稱軸的線對稱圖形，其中 A、H、E 的對稱點分別為 C、G、F，設
+      $\overline{HF}$ 與 $\overline{EG}$ 交於 $\overleftrightarrow{BD}$ 上的一點 O。若 $\overline{BC}
+      = 15$ 公分，$\overline{BE} = \overli
+    note: 原卷對稱軸為直線BD（兩端有箭頭），擷取誤為線段
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g7s2e3_s1_27
   section: 1
   number: 27

@@ -811,8 +811,8 @@ questions:
     | doing the laundry | Mom | Dad | Mom | Dad | Mom | Mom | Sue |
 
 
-     list 列表 housework 家事 dish 碗盤  mop the floor 拖地板  take out the trash 倒垃圾  clean
-    打掃  do the laundry 洗衣服'
+    📖 list 列表 housework 家事 dish 碗盤 mop the floor 拖地板 take out the trash 倒垃圾 clean
+    打掃 do the laundry 洗衣服'
   ai_answers:
     gemini: A
     qwen: C
@@ -864,8 +864,8 @@ questions:
     | doing the laundry | Mom | Dad | Mom | Dad | Mom | Mom | Sue |
 
 
-     list 列表 housework 家事 dish 碗盤  mop the floor 拖地板  take out the trash 倒垃圾  clean
-    打掃  do the laundry 洗衣服'
+    📖 list 列表 housework 家事 dish 碗盤 mop the floor 拖地板 take out the trash 倒垃圾 clean
+    打掃 do the laundry 洗衣服'
   ai_answers:
     gemini: D
     qwen: D
@@ -888,7 +888,11 @@ questions:
   number: 33
   type: single
   page: 4
-  stem: "Look at this picture.  \n   Today is Sunday.  \n   Which (哪一個) is Jeff ?"
+  stem: 'Look at this picture.
+
+    Today is Sunday.
+
+    Which (哪一個) is <u>Jeff</u> ?'
   options:
   - label: A
     content: A
@@ -916,8 +920,8 @@ questions:
     | doing the laundry | Mom | Dad | Mom | Dad | Mom | Mom | Sue |
 
 
-     list 列表 housework 家事 dish 碗盤  mop the floor 拖地板  take out the trash 倒垃圾  clean
-    打掃  do the laundry 洗衣服'
+    📖 list 列表 housework 家事 dish 碗盤 mop the floor 拖地板 take out the trash 倒垃圾 clean
+    打掃 do the laundry 洗衣服'
   ai_answers:
     gemini: A
     qwen: C
@@ -936,6 +940,28 @@ questions:
       chapter: 綜合
     textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  assets:
+  - key: s3_33_r10231632_1
+    kind: figure
+    file: doc_113_高雄_英明_英語_g7s1e2/s3_33_r10231632_1.png
+    crop:
+      page: 4
+      rect:
+      - 268.51
+      - 37.28
+      - 563.6
+      - 163.96
+  errata:
+  - from: "Look at this picture.  \n   Today is Sunday.  \n   Which (哪一個) is Jeff\
+      \ ?"
+    to: 'Look at this picture.
+
+      Today is Sunday.
+
+      Which (哪一個) is <u>Jeff</u> ?'
+    note: 題目包含插圖但未標記附圖
+    by: review
+    extraction: true
 - id: doc_113_高雄_英明_英語_g7s1e2_s3_34
   section: 3
   number: 34

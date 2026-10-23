@@ -1152,7 +1152,24 @@ questions:
   number: 50
   type: single
   page: 4
-  stem: Who is the best for the house?
+  stem: 'Who is the best for the house?
+
+
+    | |
+
+    | --- |
+
+    | You can call me John. I am a teacher in Yonghe Junior High. My dog, Squishy
+    is dear and close to me. |
+
+    | I am Sarah. I have a small family. My husband and I just have a baby son. We
+    only have $29,000 a month. |
+
+    | I am Alex, a thirty-two-year-old doctor. I live with Aunt Stella and Uncle Jay,
+    and I also want to live with my parents. |
+
+    | My name is Tammy. These are my cousins, Summer and Lisa. They come to my house
+    every day, so I need three bedrooms.<br> best 最好  only 只  live 居住  so 所以 |'
   options:
   - label: A
     content: John
@@ -1189,6 +1206,22 @@ questions:
       chapter: 綜合
     textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: Who is the best for the house?
+    to: 'Who is the best for the house?
+
+
+      | |
+
+      | --- |
+
+      | You can call me John. I am a teacher in Yonghe Junior High. My dog, Squishy
+      is dear and close to me. |
+
+      | I am Sarah. I have a small family. My husband and'
+    note: 漏擷取題目下方四位租客候選人的自介短文與生字說明
+    by: review
+    extraction: true
 - id: doc_113_新北_永和_英語_g7s1e1_s7_51
   section: 7
   number: 51

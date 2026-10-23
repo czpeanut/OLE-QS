@@ -82,7 +82,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 右圖為某日地面天氣圖。請問：圖上的「」是表示什麼？
+  stem: 右圖為某日地面天氣圖。請問：圖上的「▲」是表示什麼？
   options:
   - label: A
     content: 低氣壓
@@ -93,22 +93,16 @@ questions:
   - label: D
     content: 鋒面
   assets:
-  - key: s1_2_f1
+  - key: s1_2_r10231629_1
     kind: figure
-    file: doc_113_新北_桃子腳_社會_g7s1e3/s1_2_f1.png
+    file: doc_113_新北_桃子腳_社會_g7s1e3/s1_2_r10231629_1.png
     crop:
       page: 1
       rect:
-      - 212.38
-      - 284.05
-      - 335.48
-      - 378.68
-      auto_from:
-      - 207.16
-      - 277.53
-      - 340.04
-      - 380.95
-    crop_by: auto
+      - 210.95
+      - 278.77
+      - 337.72
+      - 378.62
   answer:
   - D
   answer_source: answer_key_vlm
@@ -125,6 +119,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 右圖為某日地面天氣圖。請問：圖上的「」是表示什麼？
+    to: 右圖為某日地面天氣圖。請問：圖上的「▲」是表示什麼？
+    note: 引號內漏了原卷所印的鋒面符號
+    by: review
+    extraction: true
 - id: doc_113_新北_桃子腳_社會_g7s1e3_s1_3
   section: 1
   number: 3
@@ -916,7 +916,7 @@ questions:
         - 684.65
         - 563.56
       crop_by: auto
-  group_stem: 【題組二】下圖為臺灣某條河川的流量變化折線圖，請依敘述回答第25 題~第26 題。
+  group_stem: 【題組二】下圖為臺灣某條河川的流量變化折線圖，請依敘述回答第 25 題~第 26 題。
   shared_asset: g2_25_26
   answer:
   - B
@@ -939,7 +939,7 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: 請問這條河川最可能是哪一條？
+  stem: 請問這條河川最不可能哪一條？
   options:
   - label: A
     content: 曾文溪
@@ -949,7 +949,7 @@ questions:
     content: 淡水河
   - label: D
     content: 濁水溪
-  group_stem: 【題組二】下圖為臺灣某條河川的流量變化折線圖，請依敘述回答第25 題~第26 題。
+  group_stem: 【題組二】下圖為臺灣某條河川的流量變化折線圖，請依敘述回答第 25 題~第 26 題。
   shared_asset: g2_25_26
   answer:
   - C
@@ -969,6 +969,12 @@ questions:
     qwen: D
   answer_status: disputed
   review_note: 答案卷 ['C']，Gemini 與 Qwen 一致判為 D
+  errata:
+  - from: 請問這條河川最可能是哪一條？
+    to: 請問這條河川最不可能哪一條？
+    note: ''
+    by: review
+    extraction: true
 - id: doc_113_新北_桃子腳_社會_g7s1e3_s2_27
   section: 2
   number: 27
@@ -1830,17 +1836,17 @@ shared_assets:
 - key: g2_25_26
   label: 題組附圖
   kind: figure
-  file: doc_113_新北_桃子腳_社會_g7s1e3/g2_25_26_f1.png
+  file: doc_113_新北_桃子腳_社會_g7s1e3/s2_26_r10231629_1.png
   used_by:
   - doc_113_新北_桃子腳_社會_g7s1e3_s2_25
   - doc_113_新北_桃子腳_社會_g7s1e3_s2_26
   crop:
-    page: 1
+    page: 2
     rect:
-    - 216.33
-    - 849.93
-    - 449.02
-    - 937.64
+    - 396.75
+    - 228.2
+    - 634.27
+    - 318.76
 - key: g2_27_28
   label: 題組附圖
   kind: figure

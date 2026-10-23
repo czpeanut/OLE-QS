@@ -471,13 +471,13 @@ questions:
   stem: 承上題，參考上題四位選手所在地的氣候特徵敘述，何者正確？
   options:
   - label: A
-    content: 氣溫最低
+    content: ☺ 氣溫最低
   - label: B
-    content: 太陽長年直射
+    content: ☼ 太陽長年直射
   - label: C
-    content: 位處熱帶
+    content: ☆ 位處熱帶
   - label: D
-    content: 兩地同屬溫帶
+    content: ☺、☾ 兩地同屬溫帶
   group_stem: ※見右圖，在緯度20度的起跑線上有四位選手準備往東起跑，他們將沿著各自所在位置的緯線繞地球一圈，回到原位。
   shared_asset: g1_9_11
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -498,6 +498,12 @@ questions:
     gemini_high: D
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 承上題，參考上題四位選手所在地的氣候特徵敘述，何者正確？
+    to: 承上題，參考上題四位選手所在地的氣候特徵敘述，何者正確？
+    note: 各選項漏了對應選手的符號
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g7s1e1_s1_11
   section: 1
   number: 11
@@ -1205,22 +1211,16 @@ questions:
     content: 地圖與地表間的長度比例關係。
   group_stem: ※埤頭國中為慶祝60周年校慶，舉辦了園遊會的活動，邀請來自全台各地的校友一同來慶祝。
   assets:
-  - key: s1_28_f1
+  - key: s1_28_r10231625_1
     kind: figure
-    file: doc_112_彰化_埤頭_社會_地理_g7s1e1/s1_28_f1.png
+    file: doc_112_彰化_埤頭_社會_地理_g7s1e1/s1_28_r10231625_1.png
     crop:
       page: 2
       rect:
-      - 807.68
-      - 101.81
-      - 830.63
-      - 169.53
-      auto_from:
-      - 801.49
-      - 96.22
-      - 832.58
-      - 192.76
-    crop_by: auto
+      - 790.46
+      - 107.45
+      - 837.66
+      - 175.17
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1240,6 +1240,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承上題，請問在圖片中看到的 等符號，在地圖中的功用為何？
+    to: 承上題，請問在圖片中看到的 等符號，在地圖中的功用為何？
+    note: 題幹漏了三個符號圖示
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g7s1e1_s1_29
   section: 1
   number: 29
@@ -1274,6 +1280,23 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s1_29_r10231625_1
+    kind: figure
+    file: doc_112_彰化_埤頭_社會_地理_g7s1e1/s1_29_r10231625_1.png
+    crop:
+      page: 3
+      rect:
+      - 813.15
+      - 252.4
+      - 906.79
+      - 368.2
+  errata:
+  - from: 來自台南的好友在前往埤頭途中，他們看到路上的標誌牌，從路牌可以知道往埤頭行駛的方向，請問此標誌路牌顯示的是何種位置？
+    to: 來自台南的好友在前往埤頭途中，他們看到路上的標誌牌，從路牌可以知道往埤頭行駛的方向，請問此標誌路牌顯示的是何種位置？
+    note: 本題右側有路牌指示圖，漏附圖
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g7s1e1_s1_30
   section: 1
   number: 30

@@ -38,8 +38,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from apps.api.storage import BUCKET, storage_key  # noqa: E402
 from apply_reports import LOG, load_reports, supa  # noqa: E402
 from ai_review import load_codes  # noqa: E402
+from apply_errata import MARK  # noqa: E402
 from batch_api import Ledger  # noqa: E402
 from generate_answers import load_env_file  # noqa: E402
+from stage_triage_papers import ask_rotation  # noqa: E402
 from vlm_extract import call_model, crop  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
@@ -49,6 +51,8 @@ DB = REPO / "data" / "oleqs.db"
 OUT = REPO / "out" / "fix_reports"
 MODEL = "gemini-3.7-flash"
 PHASE = "fix_reports"
+ROTATE_NOTE = re.compile(r"旋轉|顛倒|倒過來|轉向|轉正")
+STRUCT_NOTE = re.compile(r"錯置|題號|大題|小題|題型|題組|拆|合併|填充題|計算題|單選|非選|多選")
 STRUCTURAL = re.compile(r"錯置|順序|題號|漏題|漏擷取|整題|大題|合併|拆|移到|另一題|上一題|下一題")
 
 PROMPT = """你是題庫校對人員。附上的是一份國中段考考卷的頁面影像，以及題庫裡某一題目前的擷取內容；
@@ -95,9 +99,11 @@ def pdf_of(doc: dict, pdf_root: Path) -> Path | None:
     return pdf_root / src if src and (pdf_root / src).is_file() else None
 
 
-def pages_for(q: dict, by_id: dict, n_pages: int) -> list[int]:
-    """這題所在頁；題組的題目再加上題組第一題所在頁（短文常在前一頁）。"""
+def pages_for(q: dict, by_id: dict, n_pages: int, wide: bool = False) -> list[int]:
+    """這題所在頁；題組的題目再加上題組第一題所在頁（短文常在前一頁）。wide：前後頁都附（跨頁的題目）。"""
     ps = {q.get("page") or 1}
+    if wide:
+        ps |= {(q.get("page") or 1) - 1, (q.get("page") or 1) + 1}
     if q.get("group_stem"):
         firsts = [x.get("page") for x in by_id.values() if x.get("group_stem") == q["group_stem"] and x.get("page")]
         if firsts:
@@ -106,7 +112,7 @@ def pages_for(q: dict, by_id: dict, n_pages: int) -> list[int]:
     for a in [*(q.get("assets") or []), *[o.get("asset") or {} for o in q.get("options") or []]]:
         if (a.get("crop") or {}).get("page"):
             ps.add(a["crop"]["page"])
-    return sorted(p for p in ps if 1 <= p <= n_pages)[-3:]
+    return sorted(p for p in ps if 1 <= p <= n_pages)[-4:]
 
 
 def current(q: dict, shared: dict) -> dict:
@@ -172,7 +178,7 @@ def cmd_run(args) -> int:
         if q is None or pdf is None:
             return code, {"verdict": "cannot", "note": "找不到題目或原卷"}, 0.0
         doc = fitz.open(pdf)
-        pages = pages_for(q, by_id, len(doc))
+        pages = pages_for(q, by_id, len(doc), args.wide)
         parts = [{"text": PROMPT}]
         for i, p in enumerate(pages, start=1):
             img = doc[p - 1].get_pixmap(dpi=150).tobytes("jpeg", jpg_quality=82)
@@ -214,10 +220,34 @@ def plain(s: str | None) -> str:
     return re.sub(r"</?u[^>]*>|\s", "", s or "")
 
 
+def keep_errata(res: dict, q: dict) -> None:
+    """模型照原卷重抄時會把先前「原卷有誤，已修正」改好的字抄回原卷的錯字：把那些修正重新套上，並保留註記。"""
+    if res.get("_errata_kept") or res.get("verdict") != "fixed":
+        return
+    res["_errata_kept"] = True
+    had_mark = MARK in (q.get("stem") or "")
+    res["stem"] = (res.get("stem") or "").replace(MARK, "").rstrip()
+    for e in q.get("errata") or []:
+        if e.get("extraction") or not e.get("from") or not e.get("to"):
+            continue
+        old, new = (re.sub(r"^\s*[(（][A-Z][)）]\s*", "", e[k]) for k in ("from", "to"))
+        for o in [res, *(res.get("options") or [])]:
+            for k in ("stem", "group_stem", "content"):
+                v = o.get(k)
+                if v and old in v and new not in v:
+                    o[k] = v.replace(old, new)
+    if had_mark:
+        res["stem"] += MARK
+
+
 def judge(res: dict, q: dict) -> str | None:
     """自動檢查：回傳 None＝可寫回，否則是交人工的原因。"""
+    if res.get("_manual"):
+        return res["_manual"]
     if res.get("verdict") != "fixed":
         return {"already_ok": "模型判定目前內容正確", "cannot": "模型判定無法只改這一題"}.get(res.get("verdict"), "沒有結果")
+    if res.get("_approved"):                         # 逐筆看過、確認改動量大是合理的（補漏擷取的短文、改附圖等）
+        return None
     old = plain(q.get("stem")) + "".join(plain(o.get("content")) for o in q.get("options") or [])
     new = plain(res.get("stem")) + "".join(plain(o.get("content")) for o in res.get("options") or [])
     ratio = difflib.SequenceMatcher(None, old, new, autojunk=False).ratio() if old or new else 1.0
@@ -252,6 +282,8 @@ def cmd_check(args) -> int:
     for code, res in results():
         _, d = load_doc(res["_qid"].rsplit("_s", 1)[0])
         q = next((x for x in d["questions"] if x["id"] == res["_qid"]), None)
+        if q:
+            keep_errata(res, q)
         why = judge(res, q) if q else "找不到題目"
         if why:
             manual += 1
@@ -279,9 +311,13 @@ def fig_files(doc_id: str, q: dict, res: dict, pdf: Path) -> dict[str, list[tupl
         key = f"s{q['section']}_{q['number']}_r{stamp}_{j}"
         rel = f"{doc_id}/{key}.png"
         rect = crop(doc[pno - 1], f["box"], ASSETS / rel)
-        if rect and int(f.get("rotate") or 0):
-            im = Image.open(ASSETS / rel)
-            im.rotate(-int(f["rotate"]), expand=True).save(ASSETS / rel)
+        notes = " ".join(r.get("note") or "" for r in res["_reports"])
+        if rect and (int(f.get("rotate") or 0) or ROTATE_NOTE.search(notes)):
+            # 模型給的旋轉角度不可靠（常轉反），改用四個方向的縮圖比較判斷
+            im = Image.open(ASSETS / rel).convert("RGB")
+            turn, _ = ask_rotation(im)
+            if turn:
+                im.rotate(-turn, expand=True).save(ASSETS / rel)
         if rect:
             out.setdefault(f["target"], []).append((rel, {"page": pno, "rect": rect}))
     return out
@@ -294,7 +330,6 @@ def cmd_apply(args) -> int:
     H = {**H, "Prefer": "return=minimal"}
     s = requests.Session()
     con = sqlite3.connect(DB)
-    log, resolved, uploads = [], [], []
     by_doc: dict[str, list[tuple[str, dict]]] = {}
     for code, res in results():
         if only and code not in only:
@@ -307,15 +342,18 @@ def cmd_apply(args) -> int:
         by_id = {x["id"]: x for x in d.get("questions") or []}
         shared = {a["key"]: a for a in d.get("shared_assets") or []}
         pdf = pdf_of(d["document"], args.pdf_root)
-        touched = False
+        done: list[tuple[str, dict]] = []
         for code, res in items:
             q = by_id.get(res["_qid"])
             if q is None:
                 continue
+            keep_errata(res, q)
             why = judge(res, q)
+            notes = " ".join(r.get("note") or "" for r in res["_reports"])
+            if (why == "模型判定目前內容正確" or (why is None and not changed(res, q))) and STRUCT_NOTE.search(notes):
+                continue                              # 題號、大題、題型這類結構問題，文字沒錯不代表回報不成立
             if why == "模型判定目前內容正確" or (why is None and not changed(res, q)):
-                resolved.append((res, "已是正確寫法（重新對照原卷）"))
-                res["_applied"] = "already_ok"
+                res.update(_applied="already_ok", _what="已是正確寫法（重新對照原卷）")
                 (OUT / f"{code}.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
                 continue
             if why:
@@ -324,7 +362,7 @@ def cmd_apply(args) -> int:
                       "options": [o.get("content") for o in q.get("options") or []],
                       "assets": [a.get("file") for a in q.get("assets") or []]}
             old_gs = q.get("group_stem")
-            q["stem"] = res["stem"]
+            q["stem"] = res["stem"] if res["stem"].strip() or not res.get("figures_changed") else "（題目見附圖）"
             new_gs = res.get("group_stem") or None
             # 題組短文（或補充了內容的大題說明）改了就套用到整個題組；
             # 只是大題標題、而模型換成另一段標題時（例如這題被掛錯大題說明），只改這一題
@@ -336,8 +374,10 @@ def cmd_apply(args) -> int:
             elif new_gs != old_gs and (new_gs or not shared_gs):
                 q["group_stem"] = new_gs
             new_opts = res.get("options") or []
+            if len({o["label"] for o in new_opts}) < len(new_opts):      # 模型偶爾給重複代號（原卷印錯）：依序重編
+                new_opts = [{**o, "label": "ABCDEFGHIJKLMNOP"[i]} for i, o in enumerate(new_opts)]
             if [o["label"] for o in new_opts] == [o.get("label") for o in q.get("options") or []]:
-                for o, n in zip(q["options"], new_opts):
+                for o, n in zip(q.get("options") or [], new_opts):
                     o["content"] = n["content"]
                 opts_replaced = False
             else:
@@ -358,7 +398,7 @@ def cmd_apply(args) -> int:
                 if figs.get("group") and q.get("shared_asset") in shared:
                     sa = shared[q["shared_asset"]]
                     sa["file"], sa["crop"] = figs["group"][0]
-                uploads += [rel for v in figs.values() for rel, _ in v]
+                res["_uploads"] = [rel for v in figs.values() for rel, _ in v]
             q.setdefault("errata", []).append({"from": (before["stem"] or "")[:200], "to": (q["stem"] or "")[:200],
                                                "note": "；".join(r["note"] or "" for r in res["_reports"])[:200],
                                                "by": "review", "extraction": True})
@@ -418,25 +458,36 @@ def cmd_apply(args) -> int:
                     s.patch(f"{url}/rest/v1/asset", params={"document_id": f"eq.{doc_id}", "key": f"eq.{sa['key']}",
                                                               "scope": "eq.shared"},
                             headers=H, json={"file": sa["file"]}, timeout=60).raise_for_status()
-            log.append({"doc": doc_id, "qid": qid, "code": code, "kind": "重新擷取", "note": res["note"],
+            res["_log"] = ({"doc": doc_id, "qid": qid, "code": code, "kind": "重新擷取", "note": res["note"],
                         "before": before, "at": time.strftime("%Y-%m-%d %H:%M:%S"),
                         "after": {"stem": q.get("stem"), "group_stem": q.get("group_stem"),
                                   "options": [o.get("content") for o in q.get("options") or []],
                                   "assets": [a.get("file") for a in q.get("assets") or []]}})
-            resolved.append((res, "擷取錯誤已修正（重新對照原卷）"))
-            res["_applied"] = "fixed"
-            (OUT / f"{code}.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
-            touched = True
-        if touched:
+            res.update(_applied="fixed", _what="擷取錯誤已修正（重新對照原卷）")
+            done.append((code, res))
+        if done:                                          # 整份卷寫完才記狀態：中斷時這份卷下次整份重做
             yp.write_text(yaml.safe_dump(d, allow_unicode=True, sort_keys=False), encoding="utf-8")
             con.commit()
+            for code, res in done:
+                (OUT / f"{code}.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
     con.commit()
+    finish(url, H, s)
+    return 0
+
+
+def finish(url: str, H: dict, s: requests.Session) -> None:
+    """寫回後的收尾（可重跑）：上傳新裁的附圖、回報標為已修正、記錄改動。"""
+    log, uploads, n_rep = [], 0, 0
     auth = {"apikey": H["apikey"], "Authorization": H["Authorization"]}
-    for rel in uploads:
-        s.post(f"{url}/storage/v1/object/{BUCKET}/{storage_key(rel)}", data=(ASSETS / rel).read_bytes(),
-               headers={**auth, "Content-Type": "image/png", "x-upsert": "true"}, timeout=120).raise_for_status()
     now = time.strftime("%Y-%m-%dT%H:%M:%S")
-    for res, what in resolved:
+    for code, res in results():
+        if not res.get("_applied") or res.get("_done"):
+            continue
+        for rel in res.get("_uploads") or []:
+            s.post(f"{url}/storage/v1/object/{BUCKET}/{storage_key(rel)}", data=(ASSETS / rel).read_bytes(),
+                   headers={**auth, "Content-Type": "image/png", "x-upsert": "true"}, timeout=120).raise_for_status()
+            uploads += 1
+        what = res["_what"]
         for r in res["_reports"]:
             row = s.get(f"{url}/rest/v1/review_doc", headers=H, timeout=60,
                         params={"select": "data", "site": f"eq.{r['site']}", "collection": "eq.reports",
@@ -447,10 +498,14 @@ def cmd_apply(args) -> int:
             s.patch(f"{url}/rest/v1/review_doc", params={"site": f"eq.{r['site']}", "collection": "eq.reports",
                                                            "id": f"eq.{r['id']}"},
                     headers=H, json={"data": data}, timeout=60).raise_for_status()
+            n_rep += 1
+        if res.get("_log"):
+            log.append(res["_log"])
+        res["_done"] = True
+        (OUT / f"{code}.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
     prev = json.loads(LOG.read_text(encoding="utf-8")) if LOG.is_file() else []
     LOG.write_text(json.dumps(prev + log, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"寫回 {len(log)} 題、新裁附圖 {len(uploads)} 張；{sum(len(r['_reports']) for r, _ in resolved)} 筆回報標為已修正")
-    return 0
+    print(f"寫回 {len(log)} 題、新裁附圖 {uploads} 張；{n_rep} 筆回報標為已修正")
 
 
 def main() -> int:
@@ -462,6 +517,7 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--only")
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--wide", action="store_true", help="附上題目前後頁（重跑跨頁的題目）")
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args()
     return {"run": cmd_run, "check": cmd_check, "apply": cmd_apply}[args.cmd](args)

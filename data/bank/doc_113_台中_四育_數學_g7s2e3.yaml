@@ -105,14 +105,14 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 下列敘述何者正確？【課215、習70】
+  stem: 下列敘述何者<u>正確</u>？【課 215、習 70】
   options:
   - label: A
-    content: 通過直線外一點Ｐ到直線Ｌ的垂線只有一條
+    content: 通過直線外一點 P 到直線 L 的垂線只有一條
   - label: B
     content: 能將 $\overline{AB}$ 平分的直線只有一條
   - label: C
-    content: $\overline{AB}$ 與 $\overline{BA}$ 代表相同的射線
+    content: $\overrightarrow{AB}$ 與 $\overrightarrow{BA}$ 代表相同的射線
   - label: D
     content: 等腰三角形底邊中垂線不一定會通過三角形的頂點
   tags:
@@ -132,6 +132,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列敘述何者正確？【課215、習70】
+    to: 下列敘述何者<u>正確</u>？【課 215、習 70】
+    note: 原卷為射線符號，擷取誤植為線段符號
+    by: review
+    extraction: true
 - id: doc_113_台中_四育_數學_g7s2e3_s1_4
   section: 1
   number: 4

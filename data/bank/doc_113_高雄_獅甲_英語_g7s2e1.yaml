@@ -886,7 +886,7 @@ questions:
   number: 37
   type: single
   page: 4
-  stem: (    ) 37. Which of the following cannot be “e”?
+  stem: (    ) 37. Which of the following **cannot** be “e”?
   options:
   - label: A
     content: have many fans
@@ -923,6 +923,23 @@ questions:
       chapter: 綜合
     textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  assets:
+  - key: s5_37_r10231620_1
+    kind: figure
+    file: doc_113_高雄_獅甲_英語_g7s2e1/s5_37_r10231620_1.png
+    crop:
+      page: 4
+      rect:
+      - 87.08
+      - 94.04
+      - 415.68
+      - 246.52
+  errata:
+  - from: (    ) 37. Which of the following cannot be “e”?
+    to: (    ) 37. Which of the following **cannot** be “e”?
+    note: 原卷題幹下方有文氏圖（Venn diagram），擷取漏附圖
+    by: review
+    extraction: true
 - id: doc_113_高雄_獅甲_英語_g7s2e1_s5_38
   section: 5
   number: 38
@@ -1339,8 +1356,10 @@ questions:
   number: 1
   type: essay
   page: 6
-  stem: "1. 將下列書寫體改寫成印刷體 \n          Many boys and girls are dancing. Bill is singing\
-    \ with his sister, Zoe. \n            _____________________________________________________________________"
+  stem: '1. 將下列書寫體改寫成印刷體
+
+
+    _____________________________________________________________________'
   tags:
     chapter:
       publisher: null
@@ -1351,13 +1370,34 @@ questions:
       chapter: 綜合
     textbook: 七下 英語 其他文法（不在列表中的文法點）
     labeled_by: ai
+  assets:
+  - key: s8_1_r10231620_1
+    kind: figure
+    file: doc_113_高雄_獅甲_英語_g7s2e1/s8_1_r10231620_1.png
+    crop:
+      page: 6
+      rect:
+      - 90.72
+      - 493.42
+      - 539.55
+      - 532.38
+  errata:
+  - from: "1. 將下列書寫體改寫成印刷體 \n          Many boys and girls are dancing. Bill is singing\
+      \ with his sister, Zoe. \n            _____________________________________________________________________"
+    to: '1. 將下列書寫體改寫成印刷體
+
+
+      _____________________________________________________________________'
+    note: 原卷為英文書寫體圖片，擷取直接轉為印刷體，失去題意
+    by: review
+    extraction: true
 - id: doc_113_高雄_獅甲_英語_g7s2e1_s8_2
   section: 8
   number: 2
   type: essay
   page: 6
   stem: "2.  根據畫線部分造原問句 \n            Emily:    What _______________________________________________________?\
-    \ \n            Mom:     Grandpa takes a walk after dinner."
+    \ \n            Mom:     Grandpa <u>takes a walk</u> after dinner."
   tags:
     chapter:
       publisher: null
@@ -1368,6 +1408,14 @@ questions:
       chapter: B2 七下
     textbook: 七下 英語 Wh-疑問句（含過去式）
     labeled_by: ai
+  errata:
+  - from: "2.  根據畫線部分造原問句 \n            Emily:    What _______________________________________________________?\
+      \ \n            Mom:     Grandpa takes a walk after dinner."
+    to: "2.  根據畫線部分造原問句 \n            Emily:    What _______________________________________________________?\
+      \ \n            Mom:     Grandpa <u>takes a walk</u> after dinner."
+    note: 原卷 takes a walk 有畫底線，擷取未標註畫線處
+    by: review
+    extraction: true
 - id: doc_113_高雄_獅甲_英語_g7s2e1_s9_1
   section: 9
   number: 1

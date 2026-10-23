@@ -565,10 +565,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: '民國 68 年頒布的《臺灣地區綜合開發計畫》，將臺灣劃分為北、中、南、東、金馬等各大區域，各區域條件不同，發展各有其特色。
-
-
-    此處有濁水溪貫穿其間，水源充足，平原廣大，此區農業發展條件佳是臺灣主要蔬菜、花卉產區。上述指的是？'
+  stem: 此處有濁水溪貫穿其間，水源充足，平原廣大，此區農業發展條件佳是臺灣主要蔬菜、花卉產區。上述指的是？
   options:
   - label: A
     content: 北部區域
@@ -578,23 +575,6 @@ questions:
     content: 南部區域
   - label: D
     content: 東部區域
-  assets:
-  - key: s1_12_f1
-    kind: figure
-    file: doc_113_基隆_銘傳_社會_g7s2e3/s1_12_f1.png
-    crop:
-      page: 2
-      rect:
-      - 517.15
-      - 61.11
-      - 696.67
-      - 290.82
-      auto_from:
-      - 510.22
-      - 54.65
-      - 698.4
-      - 294.22
-    crop_by: auto
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -614,6 +594,16 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: 民國 68 年頒布的《臺灣地區綜合開發計畫》，將臺灣劃分為北、中、南、東、金馬等各大區域，各區域條件不同，發展各有其特色。
+  errata:
+  - from: '民國 68 年頒布的《臺灣地區綜合開發計畫》，將臺灣劃分為北、中、南、東、金馬等各大區域，各區域條件不同，發展各有其特色。
+
+
+      此處有濁水溪貫穿其間，水源充足，平原廣大，此區農業發展條件佳是臺灣主要蔬菜、花卉產區。上述指的是？'
+    to: 此處有濁水溪貫穿其間，水源充足，平原廣大，此區農業發展條件佳是臺灣主要蔬菜、花卉產區。上述指的是？
+    note: 此引言與地圖為第12至14題共用題組，不應併入第12題題幹
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_社會_g7s2e3_s1_13
   section: 1
   number: 13

@@ -69,16 +69,16 @@ questions:
   number: 42
   type: single
   page: 1
-  stem: 下列畫線的部分，何者不屬於「文化」的範疇?
+  stem: 下列畫線的部分，何者不屬於「文化」的範疇？
   options:
   - label: A
-    content: 趁著清明節連假，全家到花東縱谷旅遊
+    content: 趁著清明節連假，全家到<u>花東縱谷</u>旅遊
   - label: B
-    content: 和同學約好去參觀桃園市立圖書館的新總館
+    content: 和同學約好去參觀<u>桃園市立圖書館的新總館</u>
   - label: C
-    content: 在世界棒球經典賽中，幫張育成加油
+    content: 在<u>世界棒球經典賽</u>中，幫張育成加油
   - label: D
-    content: 國中會考前，去孔廟祈求至聖先師保佑考試順利。
+    content: 國中會考前，去<u>孔廟祈求至聖先師保佑考試順利</u>。
   tags:
     chapter:
       publisher: 翰林
@@ -96,6 +96,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列畫線的部分，何者不屬於「文化」的範疇?
+    to: 下列畫線的部分，何者不屬於「文化」的範疇？
+    note: 原卷各選項皆有畫底線處，擷取未保留導致無從辨認
+    by: review
+    extraction: true
 - id: doc_111_桃園_同德_社會_公民_g7s2e1_s1_43
   section: 1
   number: 43

@@ -831,6 +831,8 @@ questions:
     content: It's swimming class.
   group_stem: '(一)
 
+    Nancy''s Schedule
+
     | | Mon. | Tue. | Wed. | Thur. | Fri. |
 
     |---|---|---|---|---|---|
@@ -862,6 +864,14 @@ questions:
       chapter: 綜合
     textbook: 七上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: Nancy's favorite class is on Monday morning and Wednesday afternoon. What
+      is it?
+    to: Nancy's favorite class is on Monday morning and Wednesday afternoon. What
+      is it?
+    note: 題組短文漏擷取課表標題Nancy's Schedule
+    by: review
+    extraction: true
 - id: doc_113_新北_板橋_英語_g7s1e2_s4_37
   section: 4
   number: 37
@@ -879,6 +889,8 @@ questions:
   - label: D
     content: Thursday.
   group_stem: '(一)
+
+    Nancy''s Schedule
 
     | | Mon. | Tue. | Wed. | Thur. | Fri. |
 
@@ -927,6 +939,8 @@ questions:
   - label: D
     content: It's 11:20.
   group_stem: '(一)
+
+    Nancy''s Schedule
 
     | | Mon. | Tue. | Wed. | Thur. | Fri. |
 
@@ -1290,7 +1304,7 @@ questions:
   number: 2
   type: essay
   page: 6
-  stem: Ken is jumping rope at the park. (依畫線部分造原問句)
+  stem: Ken <u>is jumping rope</u> at the park. (依畫線部分造原問句)
   tags:
     chapter:
       publisher: null
@@ -1301,12 +1315,18 @@ questions:
       chapter: B1 七上
     textbook: 七上 英語 現在進行式（be+Ving）+ What are you doing?
     labeled_by: ai
+  errata:
+  - from: Ken is jumping rope at the park. (依畫線部分造原問句)
+    to: Ken <u>is jumping rope</u> at the park. (依畫線部分造原問句)
+    note: 原卷is jumping rope有畫底線，擷取未標示致無法作答
+    by: review
+    extraction: true
 - id: doc_113_新北_板橋_英語_g7s1e2_s6_3
   section: 6
   number: 3
   type: essay
   page: 6
-  stem: Jenny and Paul are Vic and Fred’s parents.. (依畫部分用代名詞的「主格」「所有格」或「受格」改寫)
+  stem: <u>Jenny and Paul</u> are <u>Vic and Fred’s</u> parents.. (依畫部分用代名詞的「主格」「所有格」或「受格」改寫)
   tags:
     chapter:
       publisher: null
@@ -1317,6 +1337,12 @@ questions:
       chapter: B1 七上
     textbook: 七上 英語 受格代名詞（me/you/him/her/it/us/them）
     labeled_by: ai
+  errata:
+  - from: Jenny and Paul are Vic and Fred’s parents.. (依畫部分用代名詞的「主格」「所有格」或「受格」改寫)
+    to: <u>Jenny and Paul</u> are <u>Vic and Fred’s</u> parents.. (依畫部分用代名詞的「主格」「所有格」或「受格」改寫)
+    note: 原卷Jenny and Paul與Vic and Fred’s有畫底線，擷取未標示；原卷漏印「線」字：「(依畫部分用代名詞的「主格」「所有格」或「受格」改寫)」→「(依畫線部分用代名詞的「主格」「所有格」或「受格」改寫)」
+    by: review
+    extraction: true
 - id: doc_113_新北_板橋_英語_g7s1e2_s7_1
   section: 7
   number: 1

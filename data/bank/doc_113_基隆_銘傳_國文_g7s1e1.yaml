@@ -288,11 +288,11 @@ questions:
   - label: A
     content: 「ㄙㄨˋ」造／追本「ㄙㄨˋ」源
   - label: B
-    content: 山「ㄉㄠㄠˇ」／「ㄉㄠㄠˇ」生兄弟
+    content: 山「ㄌㄨㄢˊ」／「ㄌㄨㄢˊ」生兄弟
   - label: C
     content: 先「ㄑㄩ」／身「ㄑㄩ」
   - label: D
-    content: 白璧無「ㄒㄧㄚˊ」玉手／一語「ㄒㄧㄚˊ」不掩瑜
+    content: 白璧無「ㄒㄧㄚˊ」／「ㄒㄧㄚˊ」不掩瑜。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -314,6 +314,12 @@ questions:
   answer_status: ai_generated
   answer_source: ai:majority
   group_stem: null
+  errata:
+  - from: 下列選項「　」中的注音寫成國字後，何組字形前後相同？
+    to: 下列選項「　」中的注音寫成國字後，何組字形前後相同？
+    note: 注音符號多字；選項D文字錯置混入第9題內容
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e1_s2_9
   section: 2
   number: 9
@@ -399,7 +405,7 @@ questions:
   - label: C
     content: 成群的螢火蟲在草叢間蔓天飛舞，好似晶瑩的小星星落入凡塵，閃爍著點點亮光
   - label: D
-    content: 因為病摩的侵蝕，他的身體變得虛弱不堪，關節腫大型型，僵硬醜陋，令人同情他的遭遇
+    content: 因為病摩的侵蝕，他的身體變得虛弱不堪，關節腫大變型，僵硬醜陋，令人同情他的遭遇。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -420,6 +426,12 @@ questions:
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
   group_stem: null
+  errata:
+  - from: 下列文句，何者用字完全正確？
+    to: 下列文句，何者用字完全正確？
+    note: 原卷「變型」誤植為「型型」
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e1_s2_12
   section: 2
   number: 12
@@ -1361,7 +1373,7 @@ questions:
   number: 35
   type: single
   page: 4
-  stem: '「一碗高尚的牛肉麵簡直就像一種祈禱，它不僅讚美我們凡人的舌頭，也彰顯廚師的認真、誠摯和專業精神。」？根據這段文字，作者認為一碗好吃的牛肉麵對我們有什麼影響？
+  stem: '「一碗高尚的牛肉麵簡直就像一種祈禱，它不僅讚美我們凡人的舌頭，也彰顯廚師的認真、誠摯和專業精神。」根據這段文字，作者認為一碗好吃的牛肉麵對我們有什麼影響？
 
     （焦桐〈論牛肉麵〉）（原卷有誤，已修正）'
   options:
@@ -1397,6 +1409,15 @@ questions:
     to: (B) 了解食物得來不易，不可浪費食物
     note: 多贅字「讓」
     by: ai_review
+  - from: '「一碗高尚的牛肉麵簡直就像一種祈禱，它不僅讚美我們凡人的舌頭，也彰顯廚師的認真、誠摯和專業精神。」？根據這段文字，作者認為一碗好吃的牛肉麵對我們有什麼影響？
+
+      （焦桐〈論牛肉麵〉）（原卷有誤，已修正）'
+    to: '「一碗高尚的牛肉麵簡直就像一種祈禱，它不僅讚美我們凡人的舌頭，也彰顯廚師的認真、誠摯和專業精神。」根據這段文字，作者認為一碗好吃的牛肉麵對我們有什麼影響？
+
+      （焦桐〈論牛肉麵〉）（原卷有誤，已修正）'
+    note: 多贅字「讓」：「(B) 了解食物得來不易，不可讓浪費食物」→「(B) 了解食物得來不易，不可浪費食物」
+    by: review
+    extraction: true
   group_stem: null
 - id: doc_113_基隆_銘傳_國文_g7s1e1_s4_1
   section: 4
@@ -1659,7 +1680,7 @@ questions:
   page: 4
   stem: '(一)國字注音
 
-    10. 「ㄉㄠㄠˇ」告'
+    10. 「ㄉㄠˇ」告'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1681,6 +1702,16 @@ questions:
   answer_status: ai_generated
   answer_source: ai:majority
   group_stem: null
+  errata:
+  - from: '(一)國字注音
+
+      10. 「ㄉㄠㄠˇ」告'
+    to: '(一)國字注音
+
+      10. 「ㄉㄠˇ」告'
+    note: 注音符號多字
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e1_s4_11
   section: 4
   number: 11

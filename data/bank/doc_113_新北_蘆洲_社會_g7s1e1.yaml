@@ -1864,7 +1864,8 @@ questions:
   number: 48
   type: single
   page: 4
-  stem: 王老師家住高雄市前鎮區，妻子在高雄市左營區從事軍職，他們常利用假日回臺南市新營區探望王老師的雙親，上述畫雙底線的地名與下列何者有關？
+  stem: 王老師家住高雄市<u class="dbl">前鎮區</u>，妻子在高雄市<u class="dbl">左營區</u>從事軍職，他們常利用假日回臺南市<u
+    class="dbl">新營區</u>探望王老師的雙親，上述畫雙底線的地名與下列何者有關？
   options:
   - label: A
     content: 大清帝國實施海禁政策
@@ -1891,6 +1892,13 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 王老師家住高雄市前鎮區，妻子在高雄市左營區從事軍職，他們常利用假日回臺南市新營區探望王老師的雙親，上述畫雙底線的地名與下列何者有關？
+    to: 王老師家住高雄市<u class="dbl">前鎮區</u>，妻子在高雄市<u class="dbl">左營區</u>從事軍職，他們常利用假日回臺南市<u
+      class="dbl">新營區</u>探望王老師的雙親，上述畫雙底線的地名與下列何者有關？
+    note: 前鎮區、左營區、新營區漏標雙底線，使題幹指涉處無從辨認
+    by: review
+    extraction: true
 - id: doc_113_新北_蘆洲_社會_g7s1e1_s3_49
   section: 3
   number: 49

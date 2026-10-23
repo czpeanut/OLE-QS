@@ -280,7 +280,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 圖二中X 的名稱應該是？
+  stem: <u>圖二</u>中 X 的名稱應該是？
   options:
   - label: A
     content: 日溫差
@@ -307,6 +307,23 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s1_6_r10231626_1
+    kind: figure
+    file: doc_113_新北_福和_社會_地理_g7s1e3/s1_6_r10231626_1.png
+    crop:
+      page: 1
+      rect:
+      - 208.72
+      - 573.81
+      - 362.42
+      - 738.65
+  errata:
+  - from: 圖二中X 的名稱應該是？
+    to: <u>圖二</u>中 X 的名稱應該是？
+    note: 題目需參考圖二解題，未附圖
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_社會_地理_g7s1e3_s1_7
   section: 1
   number: 7
@@ -340,6 +357,23 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  assets:
+  - key: s1_7_r10231626_1
+    kind: figure
+    file: doc_113_新北_福和_社會_地理_g7s1e3/s1_7_r10231626_1.png
+    crop:
+      page: 1
+      rect:
+      - 368.99
+      - 569.69
+      - 690.98
+      - 796.43
+  errata:
+  - from: 圖三、圖四是甲、乙兩地的氣候圖。請問根據圖中的資訊，下列哪一項關於甲、乙兩地氣候的敘述是正確的？
+    to: 圖三、圖四是甲、乙兩地的氣候圖。請問根據圖中的資訊，下列哪一項關於甲、乙兩地氣候的敘述是正確的？
+    note: 題目需參考圖三及圖四解題，未附圖
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_社會_地理_g7s1e3_s1_8
   section: 1
   number: 8

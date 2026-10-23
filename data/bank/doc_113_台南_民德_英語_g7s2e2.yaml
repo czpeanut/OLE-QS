@@ -512,9 +512,9 @@ questions:
   number: 1
   type: fill
   page: 1
-  stem: '你在新加坡過得如何? 爸爸和我非常想念你。
+  stem: '你在新加坡過得如何？爸爸和我非常想念你。
 
-    (1)_______'
+    (1)______ are you doing in Singapore? Dad and I miss you a (2)______.'
   tags:
     textbook: 七下 英語 對話與情境應答
     labeled_by: ai
@@ -533,14 +533,24 @@ questions:
   - How are you doing in Singapore?
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '你在新加坡過得如何? 爸爸和我非常想念你。
+
+      (1)_______'
+    to: '你在新加坡過得如何？爸爸和我非常想念你。
+
+      (1)______ are you doing in Singapore? Dad and I miss you a (2)______.'
+    note: 漏擷取挖空後方的英文句子
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_英語_g7s2e2_s4_2
   section: 4
   number: 2
   type: fill
   page: 1
-  stem: '你在新加坡過得如何? 爸爸和我非常想念你。
+  stem: '你在新加坡過得如何？爸爸和我非常想念你。
 
-    Dad and I miss you a (2)_______.'
+    (1)_______ are you doing in Singapore? Dad and I miss you a (2)_______.'
   tags:
     textbook: 七下 英語 對話與情境應答
     labeled_by: ai
@@ -559,14 +569,24 @@ questions:
   - lot
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '你在新加坡過得如何? 爸爸和我非常想念你。
+
+      Dad and I miss you a (2)_______.'
+    to: '你在新加坡過得如何？爸爸和我非常想念你。
+
+      (1)_______ are you doing in Singapore? Dad and I miss you a (2)_______.'
+    note: 漏擷取前半句英文
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_英語_g7s2e2_s4_3
   section: 4
   number: 3
   type: fill
   page: 1
-  stem: '你想要幾碗飯? 我想要一碗。
+  stem: '你想耍幾碗飯？我想要一碗。
 
-    (3)_______'
+    (3)_______ (4)_______ (5)b_______ of rice do you want? I want one.'
   tags:
     textbook: 七下 英語 How many / How much 問答句
     labeled_by: ai
@@ -585,6 +605,16 @@ questions:
   - How many bowls of rice do you want?
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '你想要幾碗飯? 我想要一碗。
+
+      (3)_______'
+    to: '你想耍幾碗飯？我想要一碗。
+
+      (3)_______ (4)_______ (5)b_______ of rice do you want? I want one.'
+    note: 漏擷取挖空後方的英文句子
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_英語_g7s2e2_s4_4
   section: 4
   number: 4
@@ -592,7 +622,7 @@ questions:
   page: 1
   stem: '你想要幾碗飯? 我想要一碗。
 
-    (4)_______'
+    (3)_______ (4)_______ (5)b_______ of rice do you want? I want one.'
   tags:
     textbook: 七下 英語 How many / How much 問答句
     labeled_by: ai
@@ -611,6 +641,16 @@ questions:
   - I want one bowl.
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '你想要幾碗飯? 我想要一碗。
+
+      (4)_______'
+    to: '你想要幾碗飯? 我想要一碗。
+
+      (3)_______ (4)_______ (5)b_______ of rice do you want? I want one.'
+    note: 漏擷取前後英文句子
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_英語_g7s2e2_s4_5
   section: 4
   number: 5
@@ -618,7 +658,7 @@ questions:
   page: 1
   stem: '你想要幾碗飯? 我想要一碗。
 
-    (5)b_______ of rice do you want? I want one.'
+    (3)_______ (4)_______ (5)b_______ of rice do you want? I want one.'
   tags:
     textbook: 七下 英語 How many / How much 問答句
     labeled_by: ai
@@ -636,6 +676,16 @@ questions:
   - bowls
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '你想要幾碗飯? 我想要一碗。
+
+      (5)b_______ of rice do you want? I want one.'
+    to: '你想要幾碗飯? 我想要一碗。
+
+      (3)_______ (4)_______ (5)b_______ of rice do you want? I want one.'
+    note: 漏擷取前半句「(3)_______ (4)_______」
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_英語_g7s2e2_s4_6
   section: 4
   number: 6
@@ -643,7 +693,7 @@ questions:
   page: 1
   stem: '父親亦可扮演母親的角色。
 
-    A father can also (6)_______'
+    A father can also (6)_______ the (7) _______ of a mother.'
   tags:
     textbook: 七下 英語 助動詞 can（肯定/否定/問答）+ Wh-疑問句
     labeled_by: ai
@@ -660,6 +710,16 @@ questions:
     gemini_high: play the role of a mother.
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: '父親亦可扮演母親的角色。
+
+      A father can also (6)_______'
+    to: '父親亦可扮演母親的角色。
+
+      A father can also (6)_______ the (7) _______ of a mother.'
+    note: 漏擷取後半句「the (7) _______ of a mother.」
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_英語_g7s2e2_s4_7
   section: 4
   number: 7
@@ -667,7 +727,7 @@ questions:
   page: 1
   stem: '父親亦可扮演母親的角色。
 
-    the (7) _______ of a mother.'
+    A father can also (6)______ the (7) ______ of a mother.'
   tags:
     textbook: 七下 英語 所有格形容詞（my/your/his/her/its/our/their）+ 所有格's
     labeled_by: ai
@@ -685,6 +745,16 @@ questions:
   - role
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '父親亦可扮演母親的角色。
+
+      the (7) _______ of a mother.'
+    to: '父親亦可扮演母親的角色。
+
+      A father can also (6)______ the (7) ______ of a mother.'
+    note: 漏擷取前半句「A father can also (6)_______」
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_英語_g7s2e2_s4_8
   section: 4
   number: 8
@@ -692,7 +762,7 @@ questions:
   page: 1
   stem: '父親節在台灣是八月八日。
 
-    In Taiwan Father’s Day is on the (8)_______ day'
+    In Taiwan Father’s Day is on the (8)_______ day of (9) A______.'
   tags:
     textbook: 七下 英語 序數 + 日期表達（What's the date?）
     labeled_by: ai
@@ -710,6 +780,16 @@ questions:
   - eighth
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '父親節在台灣是八月八日。
+
+      In Taiwan Father’s Day is on the (8)_______ day'
+    to: '父親節在台灣是八月八日。
+
+      In Taiwan Father’s Day is on the (8)_______ day of (9) A______.'
+    note: 漏擷取後半句「of (9) A______.」
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_英語_g7s2e2_s4_9
   section: 4
   number: 9
@@ -717,7 +797,7 @@ questions:
   page: 1
   stem: '父親節在台灣是八月八日。
 
-    of (9) A______.'
+    In Taiwan Father''s Day is on the (8)_______ day of (9) A_______.'
   tags:
     textbook: 七下 英語 序數 + 日期表達（What's the date?）
     labeled_by: ai
@@ -735,6 +815,16 @@ questions:
   - August
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '父親節在台灣是八月八日。
+
+      of (9) A______.'
+    to: '父親節在台灣是八月八日。
+
+      In Taiwan Father''s Day is on the (8)_______ day of (9) A_______.'
+    note: 漏擷取前半句「In Taiwan Father’s Day is on the (8)_______ day」
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_英語_g7s2e2_s5_1
   section: 5
   number: 1

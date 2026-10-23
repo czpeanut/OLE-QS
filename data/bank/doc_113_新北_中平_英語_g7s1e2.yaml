@@ -848,7 +848,7 @@ questions:
   number: 3
   type: single
   page: 3
-  stem: 3. What are they talking about?
+  stem: What are they talking about?
   options:
   - label: A
     content: Emily’s family.
@@ -858,36 +858,33 @@ questions:
     content: Emily’s birthday.
   - label: D
     content: Emily’s classmates.
-  group_stem: 'Ms. Wang: Look at those people in the park.
+  group_stem: 'Ms. Wang: Look at those people in the park. Who are they?
 
-    Emily: Who are they?
+    Emily: They are my family.
 
-    Ms. Wang: They are my family.
+    Ms. Wang: What are they doing?
 
-    Emily: What are they doing?
+    Emily: They’re having a picnic.
 
-    Ms. Wang: They’re having a picnic.
+    Ms. Wang: Who is the beautiful woman?
 
-    Emily: Who is the beautiful woman?
+    Emily: My dear mom.
 
-    Ms. Wang: My dear mom.
+    Ms. Wang: What is she doing?
 
-    Emily: What is she doing?
+    Emily: She’s preparing food for us.
 
-    Ms. Wang: She’s preparing food for us.
+    Ms. Wang: How about the man?
 
-    Emily: How about the man?
+    Emily: He’s my dad. He’s playing the guitar.
 
-    Ms. Wang: He’s my dad.  He’s playing the guitar.
+    Ms. Wang: Who is the cute girl?
 
-    Emily: Who is the cute girl?
+    Emily: My sister. She’s playing with my good friend, Cookie. He is a smart puppy.
 
-    Ms. Wang: My sister.  She’s playing with my good friend, Cookie.  He is a smart
-    puppy.
+    Ms. Wang: Good job!
 
-    Emily: Good job!
-
-    📖    picnic 野餐 prepare 準備  food 食物  guitar 吉他 puppy 小狗'
+    📖 picnic 野餐 prepare 準備 food 食物 guitar 吉他 puppy 小狗'
   tags:
     textbook: 七上 英語 對話與情境應答
     labeled_by: ai
@@ -905,6 +902,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 3. What are they talking about?
+    to: What are they talking about?
+    note: 短文對話角色錯位，原卷第一句對白含Who are they，導致後續說話者全部錯亂
+    by: review
+    extraction: true
 - id: doc_113_新北_中平_英語_g7s1e2_s9_4
   section: 9
   number: 4
@@ -920,36 +923,33 @@ questions:
     content: Emily’s mom is preparing food.
   - label: D
     content: Emily’s dad is playing with Emily.
-  group_stem: 'Ms. Wang: Look at those people in the park.
+  group_stem: 'Ms. Wang: Look at those people in the park. Who are they?
 
-    Emily: Who are they?
+    Emily: They are my family.
 
-    Ms. Wang: They are my family.
+    Ms. Wang: What are they doing?
 
-    Emily: What are they doing?
+    Emily: They’re having a picnic.
 
-    Ms. Wang: They’re having a picnic.
+    Ms. Wang: Who is the beautiful woman?
 
-    Emily: Who is the beautiful woman?
+    Emily: My dear mom.
 
-    Ms. Wang: My dear mom.
+    Ms. Wang: What is she doing?
 
-    Emily: What is she doing?
+    Emily: She’s preparing food for us.
 
-    Ms. Wang: She’s preparing food for us.
+    Ms. Wang: How about the man?
 
-    Emily: How about the man?
+    Emily: He’s my dad. He’s playing the guitar.
 
-    Ms. Wang: He’s my dad.  He’s playing the guitar.
+    Ms. Wang: Who is the cute girl?
 
-    Emily: Who is the cute girl?
+    Emily: My sister. She’s playing with my good friend, Cookie. He is a smart puppy.
 
-    Ms. Wang: My sister.  She’s playing with my good friend, Cookie.  He is a smart
-    puppy.
+    Ms. Wang: Good job!
 
-    Emily: Good job!
-
-    📖    picnic 野餐 prepare 準備  food 食物  guitar 吉他 puppy 小狗'
+    📖 picnic 野餐 prepare 準備 food 食物 guitar 吉他 puppy 小狗'
   tags:
     textbook: 七上 英語 對話與情境應答
     labeled_by: ai
@@ -1182,7 +1182,7 @@ questions:
   number: 2
   type: essay
   page: 4
-  stem: 2. Frank, can you wake up your sister for me? (請肯定詳答，並將畫線地方用代名詞改寫)
+  stem: 2. Frank, can you wake up <u>your sister</u> for me? (請肯定詳答，並將畫線地方用代名詞改寫)
   tags:
     textbook: 七上 英語 助動詞 can（肯定/否定/問答）+ Wh-疑問句
     labeled_by: ai
@@ -1193,6 +1193,12 @@ questions:
       code: B1-12
       title: 助動詞 can（肯定/否定/問答）+ Wh-疑問句
       chapter: B1 七上
+  errata:
+  - from: 2. Frank, can you wake up your sister for me? (請肯定詳答，並將畫線地方用代名詞改寫)
+    to: 2. Frank, can you wake up <u>your sister</u> for me? (請肯定詳答，並將畫線地方用代名詞改寫)
+    note: 原卷your sister有畫底線，題幹要求改寫畫線處但擷取漏了底線
+    by: review
+    extraction: true
 - id: doc_113_新北_中平_英語_g7s1e2_s11_3
   section: 11
   number: 3

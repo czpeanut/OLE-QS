@@ -1210,10 +1210,10 @@ questions:
   number: 36
   type: single
   page: 3
-  stem: '同學們在比較、細胞的差異，下列敘述何者不正確？
+  stem: '同學們在比較❷、❹細胞的差異，下列敘述何者不正確？
 
 
-    | |  |  |
+    | | ❷ | ❹ |
 
     | :--- | :--- | :--- |
 
@@ -1226,13 +1226,13 @@ questions:
     | (D)功能 | 保護 | 保護 |'
   options:
   - label: A
-    content: 如表所示
+    content: 細胞種類
   - label: B
-    content: 如表所示
+    content: 葉綠體
   - label: C
-    content: 如表所示
+    content: 細胞壁
   - label: D
-    content: 如表所示
+    content: 功能
   group_stem: 【題組三】下圖為各種不同型態的細胞示意圖(圖片未按照實際比例縮放)，請依據圖表回答第36～40題：
   shared_asset: g2_36_40
   tags:
@@ -1252,6 +1252,38 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '同學們在比較、細胞的差異，下列敘述何者不正確？
+
+
+      | |  |  |
+
+      | :--- | :--- | :--- |
+
+      | (A)細胞種類 | 保衛細胞 | 口腔皮膜細胞 |
+
+      | (B)葉綠體 | 有 | 無 |
+
+      | (C)細胞壁 | 有 | 無 |
+
+      | (D)功能 | 保護 | 保護 |'
+    to: '同學們在比較❷、❹細胞的差異，下列敘述何者不正確？
+
+
+      | | ❷ | ❹ |
+
+      | :--- | :--- | :--- |
+
+      | (A)細胞種類 | 保衛細胞 | 口腔皮膜細胞 |
+
+      | (B)葉綠體 | 有 | 無 |
+
+      | (C)細胞壁 | 有 | 無 |
+
+      | (D)功能 | 保護 | 保護 |'
+    note: 選項被替換為如表所示，未呈現原卷選項內容
+    by: review
+    extraction: true
 - id: doc_113_新北_崇林_自然_g7s1e1_s2_37
   section: 2
   number: 37
