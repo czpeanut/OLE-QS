@@ -1,0 +1,823 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 五權
+  school: 臺中市立五權國民中學
+  id: doc_111_台中_五權_數學_g7s1e1
+  title: 臺中市立五權國民中學 111學年度第1學期第1次定期評量 7年級數學科試題
+  exam_name: 111學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、選擇題：(@4 分，共15 題)
+    count: 15
+  - ord: 2
+    name: 二、填充題：(@4 分，共7 格)
+    count: 7
+  - ord: 3
+    name: 三、非選擇：(@6 分，共12 分)
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/111/1-1/台中/五權.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
+questions:
+- id: doc_111_台中_五權_數學_g7s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 若以中午12 點為基準，當天下午10 點記為+5，則當天早上10 點可記為多少？ ………習作P.7 第2 題
+  options:
+  - label: A
+    content: '-10'
+  - label: B
+    content: '-5'
+  - label: C
+    content: '-1'
+  - label: D
+    content: '0'
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: B
+    gemini_high: C
+- id: doc_111_台中_五權_數學_g7s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 計算|-8| + (-2) - (-6)之值為何？ ………課本P.36 例9-1
+  options:
+  - label: A
+    content: '-16'
+  - label: B
+    content: '-4'
+  - label: C
+    content: '0'
+  - label: D
+    content: '12'
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: C
+    gemini_high: D
+- id: doc_111_台中_五權_數學_g7s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 如右圖，數線上A、B、C、D四點的坐標敍述，下列何者正確 ？
+  options:
+  - label: A
+    content: A($-1\frac{1}{3}$)
+  - label: B
+    content: B(2.5)
+  - label: C
+    content: C($3\frac{2}{3}$)
+  - label: D
+    content: D($-2\frac{4}{5}$) ………習作P.4 第2 題
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_111_台中_五權_數學_g7s1e1/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 310.37
+      - 224.51
+      - 489.14
+      - 265.1
+      auto_from:
+      - 306.16
+      - 217.42
+      - 493.35
+      - 270.89
+    crop_by: auto
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_111_台中_五權_數學_g7s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 關於$10^{-5}$ 的敘述，下列何者正確？ ………課本P.68 隨堂
+  options:
+  - label: A
+    content: $10^{-5}$＜0
+  - label: B
+    content: $10^{-5}$＝−0.5
+  - label: C
+    content: 小數點後有4 個0
+  - label: D
+    content: 共有4 位小數
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: D
+    gemini_high: C
+- id: doc_111_台中_五權_數學_g7s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: '放學後，幾個同學在教室互相討論。
+
+    小羽說：「0是整數，比−1大，所以0是正數。」
+
+    小蓁說：「−3的絕對值比−8與原點的距離小。」
+
+    小凌說：「−5到10的距離是5個單位長。」
+
+    小翡說：「5比−3大2。」
+
+    以上誰說的是正確的？'
+  options:
+  - label: A
+    content: 小羽
+  - label: B
+    content: 小蓁
+  - label: C
+    content: 小凌
+  - label: D
+    content: 小翡
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_111_台中_五權_數學_g7s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 計算(-24)+4÷(-2) -(-12)×(-3)÷(-6)之值為何？
+  options:
+  - label: A
+    content: '-20'
+  - label: B
+    content: '-11'
+  - label: C
+    content: '6'
+  - label: D
+    content: '16'
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_111_台中_五權_數學_g7s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 已知某病毒的長度為0.000000038，則其長度可以用科學記號表示為下列何者？ ………課本P.74 評量4
+  options:
+  - label: A
+    content: $3.8\times 10^{-8}$
+  - label: B
+    content: $3.8\times 10^{-9}$
+  - label: C
+    content: $38\times 10^{-8}$
+  - label: D
+    content: $38\times 10^{-9}$
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_111_台中_五權_數學_g7s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 數線上有A、B 兩點，已知A(-3)，且$\overline{AB}$ = 5，則B 點坐標為何？
+  options:
+  - label: A
+    content: '2'
+  - label: B
+    content: '8'
+  - label: C
+    content: -2 或8
+  - label: D
+    content: 2 或-8 ………課本P.41 例3
+  answer:
+  - D
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+- id: doc_111_台中_五權_數學_g7s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 計算[(-117) ×(-5) ÷65] × 0 -(-3) ×(-7)之值為何？
+  options:
+  - label: A
+    content: '-21'
+  - label: B
+    content: '-14'
+  - label: C
+    content: '14'
+  - label: D
+    content: 12 ………習作P.13 基礎1-3
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+- id: doc_111_台中_五權_數學_g7s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: 將$4.97\times 10^{-5}$ 化成小數的形式，其小數點後第5 位的數字為4；則將$4.97\times 10^{-50}$ 化成小數的形式，其小數點後第幾位的數字為4？
+  options:
+  - label: A
+    content: '51'
+  - label: B
+    content: '50'
+  - label: C
+    content: '49'
+  - label: D
+    content: 48 ………習作P.19 第2 題
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: A
+    gemini_high: B
+- id: doc_111_台中_五權_數學_g7s1e1_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 2
+  stem: 已知a、b 兩個不為0 的整數，且a 為b 的相反數，則$a^{2022}-b^{2022}$之值為何？
+  options:
+  - label: A
+    content: '4044'
+  - label: B
+    content: '2022'
+  - label: C
+    content: '0'
+  - label: D
+    content: '1'
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_111_台中_五權_數學_g7s1e1_s1_12
+  section: 1
+  number: 12
+  type: single
+  page: 2
+  stem: 設a=$(1.1)^{10}$，b=$(1.1)^{11}$，c=$(1.1)^{12}$，則a、b、c 的大小關係為何？
+  options:
+  - label: A
+    content: a>b>c
+  - label: B
+    content: c>b>a
+  - label: C
+    content: b>a>c
+  - label: D
+    content: a>c>b ……課本P.66 隨堂練習
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+- id: doc_111_台中_五權_數學_g7s1e1_s1_13
+  section: 1
+  number: 13
+  type: single
+  page: 2
+  stem: 如右圖，數線上有A、Ｂ、Ｃ三點，其坐標分別為ａ、ｂ、ｃ，則下列哪個距離最短？……習作P.11 精熟1
+  options:
+  - label: A
+    content: '|a| + |b| + |c|'
+  - label: B
+    content: '|a - c| - |b - c|'
+  - label: C
+    content: '|a| + |c - b|'
+  - label: D
+    content: '|c - a| - |c|'
+  assets:
+  - key: s1_13_f1
+    kind: figure
+    file: doc_111_台中_五權_數學_g7s1e1/s1_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 349.07
+      - 211.22
+      - 491.03
+      - 245.95
+      auto_from:
+      - 343.67
+      - 208.16
+      - 498.71
+      - 254.89
+    crop_by: auto
+  answer:
+  - B
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: D
+    gemini_high: B
+- id: doc_111_台中_五權_數學_g7s1e1_s1_14
+  section: 1
+  number: 14
+  type: single
+  page: 2
+  stem: 已知16 × 17 × 18 × 19 = 93024，則運算16 × 17 × 18 × 19 × 20之值為何？ ……課本P.61 評量第2 題（原卷有誤，已修正）
+  options:
+  - label: A
+    content: '1860480'
+  - label: B
+    content: '930240'
+  - label: C
+    content: '186048'
+  - label: D
+    content: '93044'
+  answer:
+  - A
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: B
+    gemini_high: A
+  errata:
+  - from: 則運算16 × 17 × 18 × 19 × 20？之值為何？
+    to: 則運算16 × 17 × 18 × 19 × 20之值為何？
+    note: 算式中多印了問號
+    by: ai_review
+- id: doc_111_台中_五權_數學_g7s1e1_s1_15
+  section: 1
+  number: 15
+  type: single
+  page: 2
+  stem: 計算$2^{3}\times(2^{2}-2)\div 2^{4}\times 125\times(3^{2}-1)$之值為何？
+  options:
+  - label: A
+    content: '10'
+  - label: B
+    content: $10^{2}$
+  - label: C
+    content: $10^{3}$
+  - label: D
+    content: $10^{4}$ ……習作P.19 精熟1-1
+  answer:
+  - C
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+- id: doc_111_台中_五權_數學_g7s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 已知三個整數a、b、c，其中a 為最小的自然數，b 為最大的負整數，c 不是正數也不是負數，則(a−b)×c 之值為 (1)
+  answer:
+  - '0'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: '0'
+    qwen: '0'
+- id: doc_111_台中_五權_數學_g7s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知a=0.000123，b=$4.56\times 10^{-5}$，則a (2) b(請填入＞、＝或＜)
+  answer:
+  - '>'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: ＞
+    qwen: ＞
+  answer_status: disputed
+  review_note: 答案卷 ['>']，Gemini 與 Qwen 一致判為 ＞
+- id: doc_111_台中_五權_數學_g7s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 計算678 × (−37) −(−322) × (−37)之值為 (3)
+  answer:
+  - '-37000'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '-37000'
+    qwen: '-3700'
+    gemini_high: '-37000'
+- id: doc_111_台中_五權_數學_g7s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: '下表為近期因疫情而死亡的人數統計表，若以40 人為基準點，多1 人記為+1，少1 人則記為-1。
+
+
+    | 日期 | 9/18 | 9/19 | 9/20 | 9/21 | 9/22 | 9/23 | 9/24 |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | 人數 | -1 | -9 | -7 | -1 | +19 | +1 | +11 |
+
+
+    則9/18～9/24 這段時間死亡人數中，最多與最少的人數差 (4) 人'
+  answer:
+  - '28'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: '28'
+    qwen: '28'
+- id: doc_111_台中_五權_數學_g7s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 某試題的配分為選擇題每題4 分，填充題為每題3 分，非選題兩題每題6分，已知小詠選擇題對8 題，填充題對5 題，非選兩題全對；而小仁選擇題對5 題，填充題對8
+    題，非選只對一題；則兩人的分數差 (5) 分
+  answer:
+  - '9'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '9'
+    qwen: '1'
+    gemini_high: '9'
+- id: doc_111_台中_五權_數學_g7s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 計算2022 × (2023 −2001) −2023 × (2024 −2) + 2022 = (6)
+  answer:
+  - '-4044000'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '-4044000'
+    qwen: '2022'
+    gemini_high: '-4044000'
+- id: doc_111_台中_五權_數學_g7s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 老師發給每組同學8 張牌，分別為-10、-8、-6、-4、-2、1、3、5，第一組任選4 張其乘積最小為a，第二組任選4 張其乘積最大為b，則|a
+    + b|之值為 (7)
+  answer:
+  - '480'
+  answer_source: answer_key_vlm
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: '2400'
+    qwen: '10'
+    gemini_high: '480'
+- id: doc_111_台中_五權_數學_g7s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 3
+  stem: '1.右圖為運算機器的運算路徑，先輸入某數，經過每個小圈圈的運算後再進入下一個小圈圈進行運算。請回答下列問題：
+
+    (1)若輸入(—8)，則依右圖的路徑可列出四則運算的式子為何？ (1 分)
+
+    (2)承(1)，輸出的答案為多少？(1 分)
+
+    (3)若小睿、小存與小軒三人皆輸入(—12)，小睿先往上走經過兩個圈圈後往右走，然後輸出；而小存為先往右走經過兩個圈圈後往上走經過一個小圈圈後輸出；小軒則直接往右上斜走經過一個圈圈後輸出，若小睿、小存與小軒三人所輸出的值分別為a、b、c，則此三數的大小關係為何？(4
+    分)
+
+    解：'
+  group_stem: '1.右圖為運算機器的運算路徑，先輸入某數，經過每個小圈圈的運算後再進入下一個小圈圈進行運算。請回答下列問題：
+
+    (1)若輸入(—8)，則依右圖的路徑可列出四則運算的式子為何？ (1 分)
+
+    (2)承(1)，輸出的答案為多少？(1 分)
+
+    (3)若小睿、小存與小軒三人皆輸入(—12)，小睿先往上走經過兩個圈圈後往右走，然後輸出；而小存為先往右走經過兩個圈圈後往上走經過一個小圈圈後輸出；小軒則直接往右上斜走經過一個圈圈後輸出，若小睿、小存與小軒三人所輸出的值分別為a、b、c，則此三數的大小關係為何？(4
+    分)'
+  shared_asset: g3_1_1
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_111_台中_五權_數學_g7s1e1/s3_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 385.49
+      - 262.91
+      - 500.11
+      - 381.96
+      auto_from:
+      - 382.36
+      - 259.52
+      - 505.85
+      - 389.6
+    crop_by: auto
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+- id: doc_111_台中_五權_數學_g7s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: '2.政府為了紓困推出「振興五倍券」振興經濟，可實體及數位同時進行，若選擇實體券則含3 張1000 元、2 張500 元及5 張200 元，共10
+    張，且無法找零。則：
+
+    (1)若小茵全家5 人皆選擇實體券，則小茵全家所得到的振興券共多少元？請以科學記號表示(3 分)
+
+    (2)若小茵假日自己到某店家消費，該店家推出「全品項八折優惠，使用五倍券可享200 元可購買250 元商品，500 元可購買650 元商品」的優惠活動，小茵買了1
+    個1000 元的A 商品及4 個300 元的B 商品，若小茵想用自己的五倍券搭配現金付款，且在不找零的狀況下及沒有浪費五倍券的任何優惠，則她最少應付多少現金？(列出需付金額可得1
+    分，求出最適當可得2 分)'
+  group_stem: '2.政府為了紓困推出「振興五倍券」振興經濟，可實體及數位同時進行，若選擇實體券則含3 張1000 元、2 張500 元及5 張200
+    元，共10 張，且無法找零。則：
+
+    (1)若小茵全家5 人皆選擇實體券，則小茵全家所得到的振興券共多少元？請以科學記號表示(3 分)
+
+    (2)若小茵假日自己到某店家消費，該店家推出「全品項八折優惠，使用五倍券可享200 元可購買250 元商品，500 元可購買650 元商品」的優惠活動，小茵買了1
+    個1000 元的A 商品及4 個300 元的B 商品，若小茵想用自己的五倍券搭配現金付款，且在不找零的狀況下及沒有浪費五倍券的任何優惠，則她最少應付多少現金？(列出需付金額可得1
+    分，求出最適當可得2 分)'
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+shared_assets:
+- key: g3_1_1
+  label: 題組附圖
+  kind: figure
+  file: doc_111_台中_五權_數學_g7s1e1/g3_1_1_f1.png
+  used_by:
+  - doc_111_台中_五權_數學_g7s1e1_s3_1
+  crop:
+    page: 3
+    rect:
+    - 385.49
+    - 262.91
+    - 500.11
+    - 381.96
+    auto_from:
+    - 382.36
+    - 259.52
+    - 505.85
+    - 389.6
+  crop_by: auto

@@ -1,0 +1,688 @@
+document:
+  grade: 7
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 清水
+  school: 臺中市立清水國民中學
+  id: doc_113_台中_清水_數學_g7s1e1
+  title: 臺中市立清水國民中學 113學年度第1學期第1次定期評量 7年級數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 選擇題
+    count: 5
+  - ord: 2
+    name: 填充題
+    count: 8
+  - ord: 3
+    name: 綜合題
+    count: 3
+  - ord: 4
+    name: 會考非選模擬試題
+    count: 2
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國一/數學/113/1-1/台中/清水.pdf
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
+questions:
+- id: doc_113_台中_清水_數學_g7s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 已知 $10 \times 11 \times 12 \times 13 \times 14 \times 15 = 3603600$，則 $(-11)
+    \times (-12) \times 13 \times (-14) \times (-15) = ?$
+  options:
+  - label: A
+    content: $-3603600$
+  - label: B
+    content: $-360360$
+  - label: C
+    content: $3603600$
+  - label: D
+    content: $360360$
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_清水_數學_g7s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 如果 a、b、c 皆為整數，且 c 不為 0，則下列選項，何者不一定正確？
+  options:
+  - label: A
+    content: $(a + b) \times c = a \times c + b \times c$
+  - label: B
+    content: $c \times (a + b) = c \times a + c \times b$
+  - label: C
+    content: $(a + b) \div c = a \div c + b \div c$
+  - label: D
+    content: $c \div (a + b) = c \div a + c \div b$
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_清水_數學_g7s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 下圖數線上的 A、B、C、D 四點所表示的數分別為 a、b、c、d。若 b、d 互為相反數，則根據圖中各點位置，判斷下列敘述何者正確？
+  options:
+  - label: A
+    content: $a + c < 0$
+  - label: B
+    content: $a + d > 0$
+  - label: C
+    content: $|a| < |c|$
+  - label: D
+    content: $|a| < |d|$
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_台中_清水_數學_g7s1e1/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 53.26
+      - 444.16
+      - 257.81
+      - 482.47
+      auto_from:
+      - 51.38
+      - 444.82
+      - 261.21
+      - 489.96
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_清水_數學_g7s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: '數線上有 O、A、B、C 四點，各點位置與各點所表示的數如下圖所示。
+
+    若數線上一點 D，D 點所表示的數為 d，且 $|d + 3| = |d - c|$，則關於 D 點的位置，下列敘述何者正確？'
+  options:
+  - label: A
+    content: 在 A 的左邊
+  - label: B
+    content: 介於 A、C 之間
+  - label: C
+    content: 介於 C、O 之間
+  - label: D
+    content: 介於 O、B 之間
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_113_台中_清水_數學_g7s1e1/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 52.17
+      - 667.3
+      - 221.45
+      - 703.03
+      auto_from:
+      - 52.11
+      - 664.58
+      - 224.78
+      - 708.69
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_清水_數學_g7s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 右圖為清水電器行的促銷活動傳單，已知促銷第一天美食牌微波爐賣出 10 台，且其銷售額為 62000 元。若活動期間此款微波爐總共賣出 50 台，則其總銷售額為多少元？
+  options:
+  - label: A
+    content: '294000'
+  - label: B
+    content: '310000'
+  - label: C
+    content: '334000'
+  - label: D
+    content: '350000'
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_113_台中_清水_數學_g7s1e1/s1_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 221.15
+      - 777.04
+      - 355.2
+      - 915.04
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_清水_數學_g7s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '回答下列問題：
+
+    (a) $-3.8$ 的相反數為＿＿＿(1)＿＿＿。
+
+    (b) $-(-10)$ 的相反數為＿＿＿(2)＿＿＿。'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: 3.8；-10
+    qwen: 3.8;-10
+    gemini_high: 3.8；-10
+  answer:
+  - '3.8'
+  - '-10'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_清水_數學_g7s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: '寫出下列各數的值：
+
+    (a) $|-2\frac{1}{5}| =$ ＿＿＿(3)＿＿＿。
+
+    (b) $-|-3| =$ ＿＿＿(4)＿＿＿。'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: 2\frac{1}{5}；-3
+    qwen: 2.2;-3
+    gemini_high: $2\frac{1}{5}$；-3
+  answer:
+  - $2\frac{1}{5}$
+  - '-3'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_清水_數學_g7s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: '計算下列各式的值：
+
+    (a) $(-5) + (-3) =$ ＿＿＿(5)＿＿＿。
+
+    (b) $(-5) \times (-3) =$ ＿＿＿(6)＿＿＿。
+
+    (c) $10 + (-2) =$ ＿＿＿(7)＿＿＿。
+
+    (d) $10 \div (-2) =$ ＿＿＿(8)＿＿＿。
+
+    (e) $-8 - 7 =$ ＿＿＿(9)＿＿＿。
+
+    (f) $12 - (-2) =$ ＿＿＿(10)＿＿＿。'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+  ai_answers:
+    gemini: -8；15；8；-5；-15；14
+    qwen: -8;15;8;-5;-15;14
+    gemini_high: -8；15；8；-5；-15；14
+  answer:
+  - '-8'
+  - '15'
+  - '8'
+  - '-5'
+  - '-15'
+  - '14'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_清水_數學_g7s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: '數線上有 $A(-8)$、$B(2)$、$C(c)$ 三點，若 C 為 A、B 的中點，則：
+
+    (a) $c =$ ＿＿＿(11)＿＿＿。
+
+    (b) $\overline{AB} =$ ＿＿＿(12)＿＿＿。'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+  ai_answers:
+    gemini: -3；10
+    qwen: -3;10
+    gemini_high: -3；10
+  answer:
+  - '-3'
+  - '10'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_清水_數學_g7s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: '計算下列各式的值：
+
+    (a) $-1896 - (52 - 1896) =$ ＿＿＿(13)＿＿＿。
+
+    (b) $-3 \times 5 - 100 \div (-10) \div (-2) =$ ＿＿＿(14)＿＿＿。
+
+    (c) $|-34 - 8 \times (-2)| \div (-3) \times 2 =$ ＿＿＿(15)＿＿＿。'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: -52；-20；-12
+    qwen: -52;-20;-12
+    gemini_high: -52；-20；-12
+  answer:
+  - '-52'
+  - '-20'
+  - '-12'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_清水_數學_g7s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '計算下列各式的值：
+
+    (a) $9982 \times (-3) + 18 \times (-3) =$ ＿＿＿(16)＿＿＿。
+
+    (b) $-998 \times (-253) =$ ＿＿＿(17)＿＿＿。'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+  ai_answers:
+    gemini: -30000；252494
+    qwen: -30000;252494
+    gemini_high: -30000；252494
+  answer:
+  - '-30000'
+  - '252494'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_清水_數學_g7s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: '計算下列各式的值：
+
+    (a) $(-3)^{2} =$ ＿＿＿(18)＿＿＿。
+
+    (b) $-3^{2} =$ ＿＿＿(19)＿＿＿。'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: 9；-9
+    qwen: 9;-9
+    gemini_high: 9；-9
+  answer:
+  - '9'
+  - '-9'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_清水_數學_g7s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: '計算下列式子的值：
+
+    $[(-5)^{2} - 5^{2}] \div (-5)^{2} - (-200) \div (-10^{2})^{-100} =$ ＿＿＿(20)＿＿＿。'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-4
+      title: 指數記法與科學記號
+      chapter: 第1章 數與數線
+    textbook: 七上 1-4 指數記法與科學記號
+    labeled_by: ai
+  ai_answers:
+    gemini: '-1'
+    qwen: '200'
+    gemini_high: '-2'
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_台中_清水_數學_g7s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 在數線上分別標記 $A(-4)$、$B(2)$、$C(-1.5)$、$D(-2\frac{1}{3})$、$E(3.75)$ 的位置。
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_台中_清水_數學_g7s1e1/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 368.42
+      - 36.6
+      - 415.55
+      - 356.44
+      auto_from:
+      - 367.43
+      - 30.97
+      - 419.8
+      - 356.6
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-1
+      title: 正數與負數
+      chapter: 第1章 數與數線
+    textbook: 七上 1-1 正數與負數
+    labeled_by: ai
+- id: doc_113_台中_清水_數學_g7s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 射飛鏢遊戲共有 20 枝飛鏢。射中紅色區域得 5 分，射中白色區域得 $(-3)$ 分，飛鏢落地不算分。若小宸的得分是 $(-26)$ 分，且他只有
+    2 枝飛鏢射中紅色區域，那麼他有幾枝飛鏢射中白色區域？
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_台中_清水_數學_g7s1e1/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 237.68
+      - 245.54
+      - 335.82
+      - 360.4
+      auto_from:
+      - 241.56
+      - 245.15
+      - 348.61
+      - 362.43
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-3
+      title: 正負數的乘除
+      chapter: 第1章 數與數線
+    textbook: 七上 1-3 正負數的乘除
+    labeled_by: ai
+- id: doc_113_台中_清水_數學_g7s1e1_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 2
+  stem: '小瑄某次段考的分數，若以 80 分為基準，各科的得分與基準的比較，如下表所示，已知國文科的分數為 76 分。
+
+
+    | 科目 | 國文 | 英語 | 數學 | 自然 | 社會 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | 與基準的比較 | -4 | -23 | 0 | +9 | +3 |
+
+
+    (1) 小瑄的英文科實際分數是幾分？
+
+    (2) 小瑄的五科平均分數是幾分？'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+- id: doc_113_台中_清水_數學_g7s1e1_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 2
+  stem: (1) 根據表二，臺灣臺北的時間比英國倫敦快了 8 小時，記為 +8。也就是說，如果英國倫敦現在是早上 5:00，再加上 8 小時，就可以得知臺灣臺北時間是
+    13:00。請問小澄抵達德國法蘭克福時，此時臺灣臺北的「日期、時間」為何？
+  group_stem: '小澄與爸媽在寒假規劃了德國中古世紀城堡之旅。出發之前，他發現航行程表(如表一)上面顯示的是當地的時間，於是，他上網查詢相關各地的國際標準時間(如表二)，方便在台灣的爺爺奶奶更瞭解行程時間。
+
+
+    表一：飛航行程表
+
+    | 航班 | 起飛時間(當地時間) | 抵達時間(當地時間) |
+
+    | :--- | :--- | :--- |
+
+    | 第一段航班 | 2月1日 台灣台北 23:20 | 2月2日 杜拜 4:20 |
+
+    | 第二段航班 | 2月2日 杜拜 8:20 | 2月2日 德國法蘭克福 13:20 |
+
+
+    表二：相關各地的國際標準時間
+
+    | 城市 | 美國 洛杉磯 | 英國 倫敦 | 德國 法蘭克福 | 杜拜 | 臺灣 臺北 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | 時區 | -6 | 0 | 2 | 4 | 8 |'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai
+- id: doc_113_台中_清水_數學_g7s1e1_s4_2
+  section: 4
+  number: 2
+  type: calc
+  page: 2
+  stem: (2) 小澄於臺灣臺北時間 2 月 1 日 23:20 出發，至杜拜轉機後，於德國法蘭克福時間 2 月 2 日 13:20 抵達。請問，小澄花費的總時間(含飛機飛行、轉機等待時間)為多少小時？
+  group_stem: '小澄與爸媽在寒假規劃了德國中古世紀城堡之旅。出發之前，他發現航行程表(如表一)上面顯示的是當地的時間，於是，他上網查詢相關各地的國際標準時間(如表二)，方便在台灣的爺爺奶奶更瞭解行程時間。
+
+
+    表一：飛航行程表
+
+    | 航班 | 起飛時間(當地時間) | 抵達時間(當地時間) |
+
+    | :--- | :--- | :--- |
+
+    | 第一段航班 | 2月1日 台灣台北 23:20 | 2月2日 杜拜 4:20 |
+
+    | 第二段航班 | 2月2日 杜拜 8:20 | 2月2日 德國法蘭克福 13:20 |
+
+
+    表二：相關各地的國際標準時間
+
+    | 城市 | 美國 洛杉磯 | 英國 倫敦 | 德國 法蘭克福 | 杜拜 | 臺灣 臺北 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | 時區 | -6 | 0 | 2 | 4 | 8 |'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 七上
+      subject: 數學
+      code: 1-2
+      title: 正負數的加減
+      chapter: 第1章 數與數線
+    textbook: 七上 1-2 正負數的加減
+    labeled_by: ai

@@ -1,0 +1,1000 @@
+document:
+  grade: 9
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 龍津
+  school: 臺中市立龍津高級中等學校
+  scope_note: 1-1 連比例~1-3 縮放與相似
+  id: doc_113_台中_龍津_數學_g9s1e1
+  title: 臺中市立龍津高級中等學校 113學年度第1學期第1次定期評量 9年級數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  sections:
+  - ord: 1
+    name: 一、單選題(每題 4 分,共 40 分)
+    count: 10
+  - ord: 2
+    name: 二、填充題(每格 4 分,共 40 分)
+    count: 10
+  - ord: 3
+    name: 三、尺規作圖題(共 20 分)(保留作圖痕跡,不用寫作法。沒有用尺規作圖者一律不給分)(1)(2)題各 6 分 (3)(4)題各 4 分
+    count: 4
+  extractor: vlm:gemini-3.7-flash(batch)
+  source_file: 國三/數學/113/1-1/台中/龍津.pdf
+  scope:
+    lessons:
+    - number: 1-1
+      title: 連比例
+    - number: 1-3
+      title: 縮放與相似
+    publisher: null
+    raw: 1-1 連比例~1-3 縮放與相似
+    volume: null
+  chapter_index:
+    publisher: 不確定
+    model: gemini-3.1-flash-lite
+    publisher_from_scope: null
+questions:
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 如下圖，將一些水果置於天平兩端均可保持平衡，且同種水果的重量均相等，若 2 顆鳳梨、3 顆蓮霧、4 顆枇杷的總重量為 920 公克，則 1 顆鳳梨比
+    1 顆蓮霧重多少公克？
+  options:
+  - label: A
+    content: 135 公克
+  - label: B
+    content: 150 公克
+  - label: C
+    content: 165 公克
+  - label: D
+    content: 180 公克
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 161.31
+      - 126.87
+      - 396.39
+      - 180.56
+      auto_from:
+      - 159.52
+      - 121.93
+      - 404.4
+      - 186.16
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 如圖(1)，$\triangle ABC$ 中，已知 D、E 兩點把 $\overline{AB}$ 分成三等分，且 F、G 兩點在 $\overline{AC}$
+    上。若 $\overline{DF} // \overline{EG} // \overline{BC}$，$\overline{BC} = 24$，則 $\overline{DF}
+    + \overline{EG} =$ ？
+  options:
+  - label: A
+    content: '20'
+  - label: B
+    content: '22'
+  - label: C
+    content: '24'
+  - label: D
+    content: '26'
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 22.52
+      - 594.62
+      - 152.86
+      - 663.96
+      auto_from:
+      - 20.08
+      - 595.54
+      - 154.64
+      - 665.32
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-2
+      title: 比例線段
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-2 比例線段
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 華拿秀泰影城統計出禮拜日共有 7400 人來看電影，已知共上映甲、乙、丙三部電影，觀看人數比分別為甲：乙 $= 3:4$，乙：丙 $= 3:4$，則電影觀看人數最多和最少相差多少人？
+  options:
+  - label: A
+    content: 1000 人
+  - label: B
+    content: 1200 人
+  - label: C
+    content: 1300 人
+  - label: D
+    content: 1400 人
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: A
+    gemini_high: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 如圖(2)，$\triangle ABC$ 中，$\overline{DE} // \overline{BC}$，且 $\overline{FE}
+    // \overline{DC}$，若 $\overline{AF} = 2$，$\overline{BD} = 4$，則 $\overline{FD} =$
+    ？
+  options:
+  - label: A
+    content: '2'
+  - label: B
+    content: $\sqrt{6}$
+  - label: C
+    content: $\sqrt{5}$
+  - label: D
+    content: '3'
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 195.71
+      - 582.98
+      - 271.33
+      - 665.63
+      auto_from:
+      - 197.6
+      - 579.7
+      - 269.44
+      - 665.32
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-2
+      title: 比例線段
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-2 比例線段
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: D
+    gemini_high: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 小妍利用尺規作圖，在 $\overline{AB}$ 上找到一點 R，圖(3)是他的作圖痕跡，若 $\overline{AB} = 56$，則 $\overline{AR}
+    =$ ？
+  options:
+  - label: A
+    content: '20'
+  - label: B
+    content: '21'
+  - label: C
+    content: '16'
+  - label: D
+    content: '18'
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s1_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 308.44
+      - 592.04
+      - 401.26
+      - 670.56
+      auto_from:
+      - 305.12
+      - 590.0
+      - 399.36
+      - 667.7
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-2
+      title: 比例線段
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-2 比例線段
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: B
+    gemini_high: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 小原、小軒、小王三人玩紙牌遊戲，遊戲開始前，三人的錢數比為 $11:8:5$。當遊戲結束時，總錢數不變，但三人的錢數比變為 $4:3:2$，則在這個遊戲中：
+  options:
+  - label: A
+    content: 小原贏了，小王輸了
+  - label: B
+    content: 小軒贏了，小王輸了
+  - label: C
+    content: 小王贏了，小原輸了
+  - label: D
+    content: 小軒贏了，小原輸了
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 1
+  stem: 如圖(4)，$\triangle ABC$ 中，D 是 $\overline{AB}$ 上一點，且 $\overline{AD} = 5$、$\overline{DB}
+    = 8$，$\overline{DE}:\overline{EC} = 1:2$，則 $\triangle BEC$ 面積：$\triangle ABC$
+    面積$=$？
+  options:
+  - label: A
+    content: $16:39$
+  - label: B
+    content: $5:16$
+  - label: C
+    content: $20:39$
+  - label: D
+    content: $2:5$
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s1_7_f1.png
+    crop:
+      page: 1
+      rect:
+      - 38.73
+      - 668.58
+      - 111.58
+      - 747.42
+      auto_from:
+      - 36.88
+      - 666.03
+      - 113.76
+      - 747.69
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-2
+      title: 比例線段
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-2 比例線段
+    labeled_by: ai
+  ai_answers:
+    gemini: A
+    qwen: A
+  answer:
+  - A
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 如圖(5)，D、F 是 $\overline{AB}$ 上的點，E、G 是 $\overline{AC}$ 上的點，且 $\overline{AD}:\overline{DF}:\overline{FB}
+    = \overline{AE}:\overline{EG}:\overline{GC} = 3:2:1$，若 $\overline{BC} = 30$，則
+    $\overline{FG} =$ ？
+  options:
+  - label: A
+    content: '24'
+  - label: B
+    content: '25'
+  - label: C
+    content: '26'
+  - label: D
+    content: '27'
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s1_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 170.29
+      - 665.49
+      - 243.7
+      - 745.62
+      auto_from:
+      - 169.04
+      - 662.86
+      - 245.92
+      - 745.31
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-2
+      title: 比例線段
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-2 比例線段
+    labeled_by: ai
+  ai_answers:
+    gemini: B
+    qwen: B
+  answer:
+  - B
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 如圖(6)，不等長的兩對角線 $\overline{AC}$、$\overline{BD}$ 交於 O 點，且將四邊形 ABCD 分成甲、乙、丙、丁四個三角形。若
+    $\overline{OA}:\overline{OC} = \overline{OB}:\overline{OD} = 1:2$，則哪兩個三角形相似？又是根據哪一個相似性質？
+  options:
+  - label: A
+    content: 甲和乙相似，根據 SAS 相似性質
+  - label: B
+    content: 甲和丙相似，根據 SSS 相似性質
+  - label: C
+    content: 甲和丙相似，根據 SAS 相似性質
+  - label: D
+    content: 乙和丁相似，根據 AA 相似性質
+  assets:
+  - key: s1_9_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s1_9_f1.png
+    crop:
+      page: 1
+      rect:
+      - 396.76
+      - 654.52
+      - 485.99
+      - 739.94
+      auto_from:
+      - 394.72
+      - 651.78
+      - 486.72
+      - 735.81
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: C
+    qwen: C
+  answer:
+  - C
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_龍津_數學_g9s1e1_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 1
+  stem: '如右圖，D、E、F 分別是 $\overline{BC}$、$\overline{AC}$、$\overline{AB}$ 的中點，則底下共有幾項正確？
+
+    (1) $\overline{DF} // \overline{AC}$，且 $\overline{DF} = \frac{1}{2}\overline{AC}$
+
+    (2) 面積 甲=乙=丙=丁
+
+    (3) 甲$\cong$乙$\cong$丙$\cong$丁
+
+    (4) 過 F 作 $\overline{BC}$ 的平行線，則必過 E 點'
+  options:
+  - label: A
+    content: 1 項
+  - label: B
+    content: 2 項
+  - label: C
+    content: 3 項
+  - label: D
+    content: 4 項
+  assets:
+  - key: s1_10_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s1_10_f1.png
+    crop:
+      page: 1
+      rect:
+      - 407.08
+      - 508.58
+      - 538.18
+      - 600.18
+      auto_from:
+      - 418.8
+      - 505.26
+      - 538.24
+      - 599.58
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: D
+    qwen: C
+    gemini_high: D
+  answer:
+  - D
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '(1) 若 $7:18:10 = \Box : \triangle : 15$，則 $\Box + \triangle =$ ＿＿＿'
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: '37.5'
+    qwen: '25'
+    gemini_high: \frac{75}{2}
+  answer_status: disputed
+  answer_source: ai:none
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: (2) 設 $x$、$y$、$z$ 皆不為 0，若 $2.5x = \frac{1}{3}y$，$2y:3z = 6:8$，求 $x:y:z =$
+    ＿＿＿
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: '6:45:40'
+    qwen: '2:9:8'
+    gemini_high: '6:45:40'
+  answer:
+  - '6:45:40'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: (3) 設 $x$、$y$、$z$ 皆不為 0，若 $11x = 5y = 2z$，求 $x:y:z =$ ＿＿＿
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: '10:22:55'
+    qwen: '5:22:55'
+    gemini_high: '10:22:55'
+  answer:
+  - '10:22:55'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: (1) $(x+y):(y+z):(z+x) =$ ＿＿＿
+  group_stem: 設 $x:y:z = 2:3:\frac{2}{3}$，試回答下列問題：
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: '15:11:8'
+    qwen: '13:11:7'
+    gemini_high: '15:11:8'
+  answer:
+  - '15:11:8'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: (2) 若 $x+y+z = 119$，則 $x+y-z =$ ＿＿＿
+  group_stem: 設 $x:y:z = 2:3:\frac{2}{3}$，試回答下列問題：
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: '91'
+    qwen: '49'
+    gemini_high: '91'
+  answer:
+  - '91'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: (3) 若 $3x-y-z = 77$，則 $(x+2):(y+1):(z+2) =$ ＿＿＿
+  group_stem: 設 $x:y:z = 2:3:\frac{2}{3}$，試回答下列問題：
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: '17:25:6'
+    qwen: '1:2:1'
+    gemini_high: '17:25:6'
+  answer:
+  - '17:25:6'
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 解連比例式 $5:(2x+4):15 = x:6:(3y+5)$，求 $x+y =$ ＿＿＿(答案不止一個，全對才給分)
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-1
+      title: 連比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-1 連比
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{13}{3} 或 -\frac{35}{3}
+    qwen: -1; 1
+    gemini_high: \frac{13}{3} 或 -\frac{35}{3}
+  answer:
+  - \frac{13}{3} 或 -\frac{35}{3}
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 如右圖，$\triangle ABC$ 中，$\angle A = 90^{\circ}$，$\overline{AB} = 8$、$\overline{AC}
+    = 6$，從 D 點作 $\overline{DE} \perp \overline{BC}$ 交 $\overline{BC}$ 於 E，若 $\overline{BD}
+    = 3$，則 $\triangle BDE$ 面積$=$ ＿＿＿
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 418.0
+      - 183.72
+      - 511.46
+      - 234.78
+      auto_from:
+      - 416.0
+      - 179.74
+      - 512.48
+      - 238.43
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-4
+      title: 相似三角形的應用與三角比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-4 相似三角形的應用與三角比
+    labeled_by: ai
+  ai_answers:
+    gemini: \frac{54}{25}
+    qwen: "\frac{18}{5}"
+    gemini_high: \frac{54}{25}
+  answer:
+  - \frac{54}{25}
+  answer_status: ai_generated
+  answer_source: ai:majority
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 如右圖，有一根電線桿($\overline{AD}$)與 1 棵高 6 公尺樹木($\overline{CF}$)相距一段距離，分別在頂端 D 和
+    F 處用鋼索固定。若 $\overline{CD}$ 和 $\overline{AF}$ 相交於 E 點且 $\overline{BE} = 4$ 公尺，則電線桿長多少公尺？
+    ＿＿＿公尺
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s2_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 358.66
+      - 251.73
+      - 496.13
+      - 341.11
+      auto_from:
+      - 357.76
+      - 251.82
+      - 497.36
+      - 342.98
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-4
+      title: 相似三角形的應用與三角比
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-4 相似三角形的應用與三角比
+    labeled_by: ai
+  ai_answers:
+    gemini: '12'
+    qwen: '12'
+  answer:
+  - '12'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_龍津_數學_g9s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 如右圖，在 $\triangle ABC$ 中，E、F 分別是 $\overline{AB}$、$\overline{AC}$ 的中點，$\overline{BC}
+    = 6$，動點 P 在射線 $\overline{EF}$ 上，$\overline{BP}$ 交 $\overline{CE}$ 於 D 點。$\angle
+    CBP$ 的角平分線交 $\overline{CE}$ 於 Q 點，若 $\overline{CQ} = \frac{1}{3}\overline{CE}$
+    時，$\overline{EP} + \overline{BP} =$ ＿＿＿
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s2_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 397.29
+      - 368.86
+      - 472.95
+      - 458.68
+      auto_from:
+      - 396.4
+      - 369.03
+      - 473.84
+      - 461.78
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai
+  ai_answers:
+    gemini: '12'
+    qwen: '12'
+  answer:
+  - '12'
+  answer_status: ai_generated
+  answer_source: ai:gemini+qwen
+- id: doc_113_台中_龍津_數學_g9s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '在平面圖形中，當兩個多邊形的對應邊成比例且對應角相等時，就稱這兩個多邊形相似。
+
+    (1) 已知：四邊形 ABCD
+
+    求作：一四邊形與 ABCD 對應角相等，但對應邊不成比例'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 52.52
+      - 522.93
+      - 191.41
+      - 621.87
+      auto_from:
+      - 49.76
+      - 522.68
+      - 193.84
+      - 625.72
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai
+- id: doc_113_台中_龍津_數學_g9s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: '(2) 已知：五邊形 PQRST
+
+    求作：一五邊形與 PQRST 對應邊成比例，但對應角不相等'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 317.12
+      - 524.43
+      - 463.48
+      - 639.2
+      auto_from:
+      - 314.64
+      - 522.68
+      - 464.32
+      - 645.52
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai
+- id: doc_113_台中_龍津_數學_g9s1e1_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 2
+  stem: '(3) 已知：三角形 ABC
+
+    求作：三角形 ABC 的 3 倍放大圖'
+  assets:
+  - key: s3_3_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s3_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 67.69
+      - 693.89
+      - 157.76
+      - 758.07
+      auto_from:
+      - 66.56
+      - 688.21
+      - 158.56
+      - 766.7
+    crop_by: auto
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai
+- id: doc_113_台中_龍津_數學_g9s1e1_s3_4
+  section: 3
+  number: 4
+  type: calc
+  page: 2
+  stem: '(4) 已知：三角形 DEF
+
+    求作：三角形 DEF 的 $\frac{1}{3}$ 倍縮小圖'
+  assets:
+  - key: s3_4_f1
+    kind: figure
+    file: doc_113_台中_龍津_數學_g9s1e1/s3_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 351.04
+      - 680.29
+      - 528.16
+      - 780.16
+  review_note: 掃描件：無文字層可驗證，內容為影像辨識
+  source_ocr: true
+  tags:
+    chapter:
+      publisher: 翰林
+      book: 九上
+      subject: 數學
+      code: 1-3
+      title: 相似多邊形
+      chapter: 第1章 相似形與三角比
+    textbook: 九上 1-3 相似多邊形
+    labeled_by: ai

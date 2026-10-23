@@ -98,7 +98,9 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--codes-root", type=Path, required=True)
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--docs", type=Path, help="只處理這個檔案列出的卷（一行一個卷 id）")
     args = ap.parse_args()
+    only = set(args.docs.read_text(encoding="utf-8").split()) if args.docs else None
     q2c, _ = load_codes(args.codes_root)
     c2q = {c: q for q, c in q2c.items()}
     done = json.loads(LOG.read_text(encoding="utf-8")) if LOG.is_file() else []
@@ -107,6 +109,8 @@ def main() -> int:
     todo: dict[str, list[tuple[Path, dict]]] = {}
     for f in sorted(RESULTS.glob("*.json")):
         r = json.loads(f.read_text(encoding="utf-8"))
+        if only and r["doc"] not in only:
+            continue
         for it in r.get("errata") or []:
             if it.get("drop") or not it.get("sure") or not it.get("checked") or it.get("applied"):
                 continue

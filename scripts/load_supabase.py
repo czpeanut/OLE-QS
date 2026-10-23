@@ -52,9 +52,15 @@ def clean(v):
     return v
 
 
-def rows(con: sqlite3.Connection, table: str, doc_filter: str | None):
+def rows(con: sqlite3.Connection, table: str, doc_filter: str | None, docs: list[str] | None = None):
     where, args = "", ()
-    if doc_filter:
+    if docs:                                       # 只搬清單裡的卷（新加入的卷）
+        col = {"document": "id", "section": "document_id", "question": "document_id", "asset": "document_id"}.get(table)
+        marks = ",".join("?" * len(docs))
+        where = (f" where {col} in ({marks})" if col
+                 else f" where question_id in (select id from question where document_id in ({marks}))")
+        args = tuple(docs)
+    elif doc_filter:
         col = {"document": "id", "section": "document_id", "question": "document_id", "asset": "document_id"}.get(table)
         if col:
             where, args = f" where {col} like ?", (f"%{doc_filter}%",)
@@ -70,6 +76,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--db", type=Path, default=REPO / "data" / "oleqs.db")
     ap.add_argument("--only")
+    ap.add_argument("--docs-file", type=Path, help="只搬這個檔案列出的卷（一行一個卷 id）")
     ap.add_argument("--tables", help="只搬這些表（逗號分隔），預設全部")
     ap.add_argument("--replace-docs", action="store_true")
     ap.add_argument("--workers", type=int, default=6)
@@ -80,6 +87,7 @@ def main() -> int:
     H = {"Authorization": f"Bearer {key}", "apikey": key, "Content-Type": "application/json",
          "Prefer": "resolution=merge-duplicates,return=minimal"}
     con = sqlite3.connect(f"file:{args.db}?mode=ro", uri=True)
+    docs = args.docs_file.read_text(encoding="utf-8").split() if args.docs_file else None
     session = requests.Session()
 
     if args.replace_docs and args.only:
@@ -110,9 +118,10 @@ def main() -> int:
         t0, n = time.time(), 0
         if table == "question_search":
             src = ({"question_id": r["question_id"], "body": r["body"]} for r in rows(con, "question_fts", None)
-                   if not args.only or args.only in r["question_id"])
+                   if (not args.only or args.only in r["question_id"])
+                   and (not docs or r["question_id"].rsplit("_s", 1)[0] in docs))
         else:
-            src = rows(con, table, args.only)
+            src = rows(con, table, args.only, docs)
         with ThreadPoolExecutor(args.workers) as pool:
             futs, batch = [], []
             for r in src:
@@ -135,7 +144,7 @@ def main() -> int:
                 f.result()
         print(f"{table}: {n:,} 列，{time.time() - t0:.0f} 秒", flush=True)
 
-    if not args.only:
+    if not args.only:                              # 帶了明確 id 寫入，之後要把自增序號推到最大值之後
         r = session.post(f"{url}/rpc/oleqs_reset_sequences", headers=H, json={}, timeout=60)
         print("重設自增序號：", r.status_code)
     return 0
