@@ -30,6 +30,8 @@ SUBJECT_WORDS = [("理化", "自然", "理化"), ("化學", "自然", "理化"),
                  ("英語", "英語", None), ("數學", "數學", None), ("公民", "社會", "公民"), ("地理", "社會", "地理"),
                  ("歷史", "社會", "歷史"), ("社會", "社會", None)]
 ALIASES = {"甲中": "大甲", "日中": "日南", "格樓": "梧棲", "晚明": "曉明", "南": "日南"}
+SUBS = {"化學": "理化", "物理": "理化", "地球科學": "地科", "理化": "理化", "生物": "生物", "地科": "地科",
+        "歷史": "歷史", "地理": "地理", "公民": "公民"}           # 模型回答的子科 → 題庫用的子科
 CN = {"一": 1, "ㄧ": 1, "二": 2, "三": 3, "1": 1, "2": 2, "3": 3}
 # 檔名、資料夾與卷頭不一致、已看過卷頭確認的（檔名片段 → 以卷頭為準的欄位）
 OVERRIDES = {
@@ -106,6 +108,8 @@ def load_pages(root: Path, triage: dict) -> dict[str, list[dict]]:
         rel = str(p.relative_to(root))
         unit = str(Path(rel).parent) + "/[照片]" if p.suffix.lower() in IMAGES else rel
         pno = re.search(r"P(\d+)\.\w+$", p.name)                     # 照片頁以檔名的 P1、P2 排序
+        r = {**r, "sub_subject": SUBS.get(r.get("sub_subject"), r.get("sub_subject"))
+             if r.get("sub_subject") in SUBS or r.get("sub_subject") in SUBS.values() else None}
         files[unit].append({**r, "file": rel, "page": int(no),
                             "sort": (int(pno.group(1)) if pno else 0, p.name, int(no))})
     for v in files.values():
@@ -192,7 +196,10 @@ def meta_of(seg: list[dict], unit: str, multi: bool) -> dict:
     m["school_llm"] = llm_school
     m["city"] = city_of(first(seg, "school")) or "台中"
     levels = collections.Counter(p.get("level") for p in seg)
-    m["level"] = "senior" if (m.get("grade") or 0) >= 10 or levels["senior"] > levels["junior"] else "junior"
+    if m.get("grade") in (7, 8, 9):                  # 完全中學國中部卷頭寫「高級中學」，模型常判成高中
+        m["level"] = "junior"
+    else:
+        m["level"] = "senior" if (m.get("grade") or 0) >= 10 or levels["senior"] > levels["junior"] else "junior"
     m["handwriting"] = sum(1 for p in seg if p.get("handwriting"))
     m["cleaned"] = hints["cleaned"]
     m["answer_file"] = bool(re.search(r"(?<!無)ANS|解答|詳解|答案卷", seg[0]["file"].rsplit("/", 1)[-1], re.I))
