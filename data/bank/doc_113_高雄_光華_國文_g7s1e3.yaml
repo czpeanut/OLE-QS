@@ -665,14 +665,14 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: 下列「 」中的注音寫成國字後，何者字形前後相異？
+  stem: 下列「 」中的注音寫成國字後，何者字形前後相異？（原卷有誤，已修正）
   options:
   - label: A
     content: 一「ㄍㄨˇ」作氣「」/歡欣「ㄍㄨˇ」舞
   - label: B
     content: 守「ㄓㄨ」待兔/錙「ㄓㄨ」必較
   - label: C
-    content: 啟「ㄇㄥˊ」運動/「ㄇㄥ/」昧無知
+    content: 啟「ㄇㄥˊ」運動/「ㄇㄥˊ」昧無知
   - label: D
     content: 玫瑰花「ㄅㄢˋ」/辣豆「ㄅㄢˋ」醬
   tags:
@@ -692,6 +692,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 啟「ㄇㄥˊ」運動/「ㄇㄥ/」昧無知
+    to: 啟「ㄇㄥˊ」運動/「ㄇㄥˊ」昧無知
+    note: 注音二聲符號誤印為斜線：「啟「ㄇㄥˊ」運動/「ㄇㄥ/」昧無知」→「啟「ㄇㄥˊ」運動/「ㄇㄥˊ」昧無知」
+    by: review
 - id: doc_113_高雄_光華_國文_g7s1e3_s1_21
   section: 1
   number: 21

@@ -581,7 +581,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 右圖是參加環保志工同學的體重大次數分配折線圖，下列敘述何者錯誤？
+  stem: 右圖是參加環保志工同學的體重次數分配折線圖，下列敘述何者錯誤？
   options:
   - label: A
     content: 人數最多的是 50~60 公斤這組
@@ -627,6 +627,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 體重大次數分配折線圖
+    to: 體重次數分配折線圖
+    note: 多擷取了「大」字
+    by: review
+    extraction: true
 - id: doc_112_嘉義_北興_數學_g7s2e3_s1_14
   section: 1
   number: 14

@@ -252,7 +252,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 嘉萱在一本雜誌看到如下一段話：「1970年代這兩次能源危機使許多中小企業倒閉，幸賴政府早已推動□經濟建設，協助產業乘浪邁過危厄。」請問：手寫看到文章中的□是指那一項經濟建設？
+  stem: 嘉萱在一本雜誌看到如下一段話：「1970年代這兩次能源危機使許多中小企業倒閉，幸賴政府早已推動□經濟建設，協助產業乘浪邁過危厄。」請問：育萱看到文章中的□是指那一項經濟建設？
   options:
   - label: A
     content: 政府積極拓展外銷
@@ -281,6 +281,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問：手寫看到文章中的□是指那一項經濟建設？
+    to: 請問：育萱看到文章中的□是指那一項經濟建設？
+    note: 「育萱」誤植為「手寫」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s1_8
   section: 1
   number: 8
@@ -429,9 +435,9 @@ questions:
   - label: B
     content: 秉和：這時的兩岸關係已發展到民間交流時期
   - label: C
-    content: 苑瑜：「三通」是指通郵、通商、通信
+    content: 苑瑜：「三通」是指通郵、通商、通航
   - label: D
-    content: 翊珽：「一國」指的是中華民國。
+    content: 翊珽：「一國」指的是中華人民共和國。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -452,12 +458,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (C) 苑瑜：「三通」是指通郵、通商、通信 (D) 翊珽：「一國」指的是中華民國。
+    to: (C)苑瑜：「三通」是指通郵、通商、通航(D)翊珽：「一國」指的是中華人民共和國。
+    note: (C)通航誤為通信，(D)漏人民共和
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s1_13
   section: 1
   number: 13
   type: single
   page: 1
-  stem: 育銓隨家人到臺中逛街。當車子在大街小巷穿梭時，育銓發現臺中的街名如青島、河南、漢口……等名稱，於是育銓問老爸，老爸說這些都是大陸的地名。育銓想到歷史課時老師曾提到，請問：以下那一項是號稱的答案
+  stem: 育銓隨家人到臺中逛街。當車子在大街小巷穿梭時，育銓發現臺中的街名如青島、河南、漢口……等名稱，於是育銓問老爸，老爸說這些都是大陸的地名。育銓想到歷史課時老師曾提到，請問：以下那一項是正確的答案
   options:
   - label: A
     content: 本土化政策
@@ -486,6 +498,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問：以下那一項是號稱的答案
+    to: 請問：以下那一項是正確的答案
+    note: 「正確」誤植為「號稱」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s1_14
   section: 1
   number: 14
@@ -526,7 +544,7 @@ questions:
   number: 15
   type: single
   page: 1
-  stem: 當□首次以中華民國總統身份訪問新加坡的時候，由於兩國沒有正式外交關係，加上新加坡政府不願得罪中共，因而當地媒體以「來自臺灣的總統」稱之。當被問到媒體的稱呼時，□說出「不滿意但可接受」的名句，從此成了臺灣突破國際禁錮的敲磚石。當年兩岸依舊在國際場合爭唱哨門、互挖邦交國牆角，中華民國正面臨大陸流失邦交國的危機。□倡導務實靈活的外交策略，不拘泥於「漢賊不兩立」的傳統外交思維，有段時間確實讓中共疲於奔命。只不過，國際社會實在難以突破中共劃下的「一中原則」框架，或許也是□始至終的痛吧！請問□最適合填上何人？
+  stem: 當□首次以中華民國總統身份訪問新加坡的時候，由於兩國沒有正式外交關係，加上新加坡政府不願得罪中共，因而當地媒體以「來自臺灣的總統」稱之。當被問到媒體的稱呼時，□說出「不滿意但可接受」的名句，從此成了臺灣突破國際禁錮的敲磚石。當年兩岸依舊在國際場合爭唱主角、互挖邦交國牆角，中華民國正面臨大陸流失邦交國的危機。□倡導務實靈活的外交策略，不拘泥於「漢賊不兩立」的傳統外交思維，有段時間確實讓中共疲於奔命。只不過，國際社會實在難以突破中共劃下的「一中原則」框架，或許也是自□始至終的痛吧！請問□最適合填上何人？
   options:
   - label: A
     content: 蔣經國
@@ -555,6 +573,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當年兩岸依舊在國際場合爭唱哨門、互挖邦交國牆角……或許也是始至終的痛吧
+    to: 當年兩岸依舊在國際場合爭唱主角、互挖邦交國牆角……或許也是自始至終的痛吧
+    note: 「主角」誤為「哨門」，「自始至終」漏自
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s1_16
   section: 1
   number: 16
@@ -799,7 +823,7 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 近二、三十年來，我國政府以經濟實力為後盾，積極爭取參與國際組織與活動的機會，並派遣各種4技術團隊協助友邦。我國政府此舉的用意為何？
+  stem: 近二、三十年來，我國政府以經濟實力為後盾，積極爭取參與國際組織與活動的機會，並派遣各種技術團隊協助友邦。我國政府此舉的用意為何？
   options:
   - label: A
     content: 阻撓中共外交發展
@@ -828,12 +852,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 並派遣各種4技術團隊協助友邦
+    to: 並派遣各種技術團隊協助友邦
+    note: 多出數字「4」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s1_24
   section: 1
   number: 24
   type: single
   page: 2
-  stem: 臺灣的經濟發展，是以農業發展為根基，以農業帶來培養工業。請問：下列何項經濟政策的實施，是臺灣經濟型態逐漸由農業轉變為以工業為主ldap的關鍵時期？
+  stem: 臺灣的經濟發展，是以農業發展為根基，以農業培養工業。請問：下列何項經濟政策的實施，是臺灣經濟型態逐漸由農業轉變為以工業為主的關鍵時期？
   options:
   - label: A
     content: 進口替代
@@ -863,6 +893,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 以農業帶來培養工業。請問：下列何項經濟政策的實施，是臺灣經濟型態逐漸由農業轉變為以工業為主ldap的關鍵時期？
+    to: 以農業培養工業。請問：下列何項經濟政策的實施，是臺灣經濟型態逐漸由農業轉變為以工業為主的關鍵時期？
+    note: 多出「帶來」與英文字母「ldap」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s1_25
   section: 1
   number: 25
@@ -937,7 +973,7 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 十大建設期間中，所占比例最高的建設，是哪一方面ldap的建設？
+  stem: 十大建設期間中，所占比例最高的建設，是哪一方面的建設？
   options:
   - label: A
     content: 交通建設
@@ -966,6 +1002,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 是哪一方面ldap的建設？
+    to: 是哪一方面的建設？
+    note: 多出英文字母「ldap」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s1_28
   section: 1
   number: 28
@@ -1005,7 +1047,7 @@ questions:
   number: 29
   type: single
   page: 2
-  stem: 大仁哥的爺爺離開鄉福州已經40年左右，一直惦念故鄉的親人是否安好，如今政府的改變，終於可以讓爺爺回去探望家鄉的親人。請問：上述與下列哪一事件有關？
+  stem: 大仁哥的爺爺離開家鄉福州已經40年左右，一直惦念故鄉的親人是否安好，如今政府的改變，終於可以讓爺爺回去探望家鄉的親人。請問：上述與下列哪一事件有關？
   options:
   - label: A
     content: 政府推動新南向政策
@@ -1035,6 +1077,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 大仁哥的爺爺離開鄉福州已經40年左右
+    to: 大仁哥的爺爺離開家鄉福州已經40年左右
+    note: 漏「家」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s1_30
   section: 1
   number: 30
@@ -1211,7 +1259,7 @@ questions:
   number: 35
   type: single
   page: 2
-  stem: 臺灣的邦交國從60幾國到今日的12國，這與下列那件事史的發生有關？
+  stem: 臺灣的邦交國從60幾國到今日的12國，這與下列那件史事的發生有關？（原卷有誤，已修正）
   options:
   - label: A
     content: 韓戰的爆發
@@ -1241,6 +1289,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 這與下列那件事史的發生有關？
+    to: 這與下列那件史事的發生有關？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「這與下列那件事史的發生有關？」→「這與下列哪件史事的發生有關？」
+    by: review
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s2_36
   section: 2
   number: 36
@@ -1296,7 +1349,7 @@ questions:
   number: 38
   type: tf
   page: 2
-  stem: 中華人民共和國政府始終堅持一國兩制，並制定「國家統一網領」，仍不排除武力犯臺的可能性
+  stem: 中華人民共和國政府始終堅持一國兩制，並制定「國家統一綱領」，仍不排除武力犯臺的可能性
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1316,6 +1369,12 @@ questions:
   - X
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 並制定「國家統一網領」
+    to: 並制定「國家統一綱領」
+    note: 「綱」誤植為「網」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s2e3_s2_39
   section: 2
   number: 39

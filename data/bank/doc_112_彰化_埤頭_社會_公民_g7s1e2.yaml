@@ -186,7 +186,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 日前中國網路上出現多張，來自農村的催生標語，雖然意立良善，但表達的方式卻掀起爭議。如「一個兩個都是養，再來一個又何妨」、「要致富走凹凸路，多生孩子算得住」、「該生不生，後悔一生」等語。
+  stem: 日前中國網路上出現多張，來自農村的催生標語，雖然意旨良善，但表達的方式卻掀起爭議。如「一個兩個都是養，再來一個又何妨」、「要致富走凹凸路，多生孩子算得住」、「該生不生，後悔一生」等語。
   options:
   - label: A
     content: 經濟功能
@@ -217,6 +217,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 雖然意立良善，但表達的方式卻掀起爭議
+    to: 雖然意旨良善，但表達的方式卻掀起爭議
+    note: 「意旨」誤擷為「意立」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g7s1e2_s1_6
   section: 1
   number: 6
@@ -755,7 +761,7 @@ questions:
   type: single
   page: 2
   stem: 彰化縣生育獎勵金各鄉鎮有所不同，埤頭鄉每胎 3 千元，彰化市每胎 5 千元，福興鄉每胎 5 千元，永靖鄉每胎 5 千元，大村鄉每胎 6 千元，社頭鄉每胎
-    6 千元，鹿港鎮每胎 6 千 6 百元，北斗鎮每胎 1 萬元，伸港鄉坐月子津貼 1 萬 6 千元，上為我國地方政府以公權力來協助家庭發揮功能，根據內容判斷，最可能在發揮哪一項議題的功能？
+    6 千元，鹿港鎮每胎 6 千 6 百元，北斗鎮每胎 1 萬元，伸港鄉坐月子津貼 1 萬 6 千元，以上為我國地方政府以公權力來協助家庭發揮功能，根據內容判斷，最可能在發揮哪一項議題的功能？（原卷有誤，已修正）
   options:
   - label: A
     content: 弱勢家庭的協助
@@ -784,12 +790,17 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 上為我國地方政府以公權力
+    to: 以上為我國地方政府以公權力
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「上為我國地方政府以公權力」→「以上為我國地方政府以公權力」
+    by: review
 - id: doc_112_彰化_埤頭_社會_公民_g7s1e2_s3_22
   section: 3
   number: 22
   type: single
   page: 2
-  stem: 近年來國內虐童事件，全台市兒少保護通報數都增加，受虐兒童可依下列何種法律向地方法院請求禁止暴力父母的親權行使？
+  stem: 近年來國內虐童事件，全台各縣市兒少保護通報數都增加，受虐兒童可依下列何種法律向地方法院請求禁止暴力父母的親權行使？
   options:
   - label: A
     content: 家庭暴力防治法
@@ -819,6 +830,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 全台市兒少保護通報數都增加
+    to: 全台各縣市兒少保護通報數都增加
+    note: 漏「各縣」二字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g7s1e2_s3_23
   section: 3
   number: 23
@@ -949,7 +966,7 @@ questions:
   type: single
   page: 2
   stem: 卡瑪拉（Kamala）和阿瑪拉（Amala）是兩位於 1920 年，在印度米德納布爾，加爾各答西南部森林，被發現與狼群共生的年幼女童，她們被認為是較佳的野生兒童案例。根據
-    Singh 所述，卡瑪拉和阿瑪拉的生活習慣顯示出野生活生的行為。她們因為以四肢步行姿態而導致手掌及膝蓋磨成了厚厚的硬瘦皮，她們都不喜歡穿衣服，對陽光有厭惡症狀。有高於常人的夜視能力，敏銳的嗅覺及優越的聽覺。喜歡生肉的味道，食相像狗般將從碗中溢出到地上的食物舐乾淨。更甚者，她們有觸覺過敏症狀，不喜歡穿衣服，實際上看來她們對寒冷並不在意。兩姊妹舉止行為不像人類，可謂何種過程未成功？
+    Singh 所述，卡瑪拉和阿瑪拉的生活習慣顯示出野生活生的行為。她們因為以四肢步行姿態而導致手掌及膝蓋磨成了厚厚的硬繭皮，她們都不喜歡穿衣服，對陽光有厭惡症狀。有高於常人的夜視能力，敏銳的嗅覺及優越的聽覺。喜歡生肉的味道，食相像狗般將從碗中溢出到地上的食物舐乾淨。更甚者，她們有觸覺過敏症狀，不喜歡穿衣服，實際上看來她們對寒冷並不在意。兩姊妹舉止行為不像人類，可謂何種過程未成功？
   options:
   - label: A
     content: 教育化
@@ -978,6 +995,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 手掌及膝蓋磨成了厚厚的硬瘦皮
+    to: 手掌及膝蓋磨成了厚厚的硬繭皮
+    note: 「硬繭皮」誤擷為「硬瘦皮」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g7s1e2_s3_27
   section: 3
   number: 27
@@ -988,11 +1011,11 @@ questions:
   - label: A
     content: 虎爸規定就讀國中的養子，必須寫完功課才能去睡覺
   - label: B
-    content: 豹媽不讓小孩前去參加違法認證違反小孩最佳利益
+    content: 豹媽不讓小孩前去參加違法集會,並未違反小孩最佳利益
   - label: C
-    content: 趙婆要求就讀高中的女兒，出門必須告知去向和回家時間
+    content: 趙爸要求就讀高中的女兒，出門必須告知去向和回家時間
   - label: D
-    content: 林媽離婚後獨自扶養兒子，並富足工期完成大學學業
+    content: 林媽離婚後獨自扶養兒子，並省吃儉用完成大學學業
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1012,6 +1035,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 豹媽不讓小孩前去參加違法認證違反小孩最佳利益
+    to: 豹媽不讓小孩前去參加違法集會，並未違反小孩最佳利益
+    note: 選項(B)文字辨識錯誤；選項(C)「趙爸」誤擷為「趙婆」；選項(D)「省吃儉用」誤擷為「富足工期」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g7s1e2_s3_28
   section: 3
   number: 28
@@ -1104,10 +1133,10 @@ questions:
   number: 30
   type: single
   page: 2
-  stem: 老師在課堂上舉行「性別平等」答題競賽，答對的同學可以獲得一包餅乾最為獎勵，下列哪個答案最可能獲得獎勵？
+  stem: 老師在課堂上舉行「性別平等」答題競賽，答對的同學可以獲得一包餅乾作為獎勵，下列哪個答案最可能獲得獎勵？（原卷有誤，已修正）
   options:
   - label: A
-    content: 從事耗費體力的工作時，男生薪水應改比女生高
+    content: 從事耗費體力的工作時，男生薪水應該比女生高
   - label: B
     content: 只要願意，男生可以當護理師，女生也可以當貨車司機
   - label: C
@@ -1133,6 +1162,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 可以獲得一包餅乾最為獎勵
+    to: 可以獲得一包餅乾作為獎勵
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「可以獲得一包餅乾最為獎勵」→「可以獲得一包餅乾作為獎勵」；複核：原卷確實這樣印，可能是原卷錯字：「男生薪水應改比女生高」→「男生薪水應該比女生高」
+    by: review
 - id: doc_112_彰化_埤頭_社會_公民_g7s1e2_s3_31
   section: 3
   number: 31
@@ -1194,7 +1228,7 @@ questions:
   - label: A
     content: 任何一位家庭成員都可能成為暴力的受害者
   - label: B
-    content: 父母對子女施以不管管教是常見的家暴事件
+    content: 父母對子女施以不當管教是常見的家暴事件
   - label: C
     content: 對於不適任的父母，可依《家庭暴力防治法》向警察局申請保護令
   - label: D
@@ -1219,6 +1253,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 父母對子女施以不管管教是常見的家暴事件
+    to: 父母對子女施以不當管教是常見的家暴事件
+    note: 選項(B)「不當管教」誤擷為「不管管教」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g7s1e2_s3_33
   section: 3
   number: 33

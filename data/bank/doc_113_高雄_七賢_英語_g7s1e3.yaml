@@ -287,7 +287,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: Everyone is studying English now. 請依畫線部分，選出原問句。
+  stem: Everyone is <u>studying English</u> now. 請依畫線部分，選出原問句。
   options:
   - label: A
     content: What is everyone studying now?
@@ -315,6 +315,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: Everyone is studying English now. 請依畫線部分，選出原問句。
+    to: Everyone is <u>studying English</u> now. 請依畫線部分，選出原問句。
+    note: 原卷studying English有畫底線，擷取漏標
+    by: review
+    extraction: true
 - id: doc_113_高雄_七賢_英語_g7s1e3_s2_29
   section: 2
   number: 29

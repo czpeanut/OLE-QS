@@ -363,7 +363,7 @@ questions:
   stem: 下列「 」中的詞語，何者使用錯誤？
   options:
   - label: A
-    content: 與您的作品比起來，我的作品就「相形見絋」了。
+    content: 與您的作品比起來，我的作品就「相形見絀」了。
   - label: B
     content: 自從大地震後花蓮許多旅遊景點都是「門可羅雀」
   - label: C
@@ -387,6 +387,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 我的作品就「相形見絋」了。
+    to: 我的作品就「相形見絀」了。
+    note: 「絀」誤植為「絋」
+    by: review
+    extraction: true
 - id: doc_113_高雄_楠梓_國文_g7s1e2_s1_13
   section: 1
   number: 13
@@ -1127,6 +1133,19 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: '君問歸期未有期，巴山夜雨漲秋池。
+
+    何當共剪西窗燭，卻話巴山夜雨時。
+
+    注：①何當：何日，什麼時候。②卻話：指追憶、追談。
+
+    ——李商隱 夜雨寄北'
+  errata:
+  - from: 「何當共剪西窗燭，卻話巴山夜雨時。」這二句詩表達出什麼樣的心情？
+    to: 「何當共剪西窗燭，卻話巴山夜雨時。」這二句詩表達出什麼樣的心情？
+    note: 漏擷取題組(四)詩文及注釋
+    by: review
+    extraction: true
 - id: doc_113_高雄_楠梓_國文_g7s1e2_s2_34
   section: 2
   number: 34

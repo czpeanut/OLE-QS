@@ -821,7 +821,7 @@ questions:
   number: 32
   type: single
   page: 3
-  stem: （克漏字第32格）
+  stem: （克漏字第32格）（原卷有誤，已修正）
   options:
   - label: A
     content: These movies use music and dance to tell stories in a happy way.
@@ -830,7 +830,7 @@ questions:
   - label: C
     content: These movies show new ideas and take people on adventures in space.
   - label: D
-    content: These movies are about murder and crimes needing people to solve.
+    content: These movies are about murder and crimes needing people to solve.crime犯罪
   group_stem: "Movie Genres\n    Here are many kinds of movies, and each has its own\
     \ style.    28.__ movies make people happy.  They have funny characters and silly\
     \ situations.    29.__ movies tell exciting stories with real heroes, fights,\
@@ -860,6 +860,12 @@ questions:
       chapter: 綜合
     textbook: 七下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: needing people to solve.
+    to: needing people to solve.  crime 犯罪
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「needing people to solve.」→「needing people to solve.
+       crime 犯罪」
+    by: review
 - id: doc_113_新北_江翠_英語_g7s2e1_s5_33
   section: 5
   number: 33
@@ -1540,7 +1546,7 @@ questions:
   number: 58
   type: essay
   page: 4
-  stem: （3 分）Cody jumps rope in the gym twice a week.（用畫線部分造原問句）
+  stem: （3 分）Cody jumps rope in the gym <u>twice a week</u>.（用畫線部分造原問句）
   tags:
     chapter:
       publisher: null
@@ -1551,12 +1557,19 @@ questions:
       chapter: B2 七下
     textbook: 七下 英語 頻率副詞（always/usually/often/sometimes/seldom/never）+ How often
     labeled_by: ai
+  errata:
+  - from: （3 分）Cody jumps rope in the gym twice a week.（用畫線部分造原問句）
+    to: （3 分）Cody jumps rope in the gym <u>twice a week</u>.（用畫線部分造原問句）
+    note: 原卷「twice a week」有畫底線，擷取未標示造成無法作答
+    by: review
+    extraction: true
 - id: doc_113_新北_江翠_英語_g7s2e1_s8_59
   section: 8
   number: 59
   type: essay
   page: 4
-  stem: （2 分）We fly a kite and have a good time on Sundays.（將畫線部分用The girl 代替並改寫句子）
+  stem: （2分）<u>We</u> fly a kite and have a good time on Sundays.（將畫線部分用 The girl
+    代替並改寫句子）
   tags:
     chapter:
       publisher: null
@@ -1567,6 +1580,13 @@ questions:
       chapter: B2 七下
     textbook: 七下 英語 第三人稱單數動詞變化（+s/es/ies）+ does
     labeled_by: ai
+  errata:
+  - from: （2 分）We fly a kite and have a good time on Sundays.（將畫線部分用The girl 代替並改寫句子）
+    to: （2分）<u>We</u> fly a kite and have a good time on Sundays.（將畫線部分用 The girl
+      代替並改寫句子）
+    note: 原卷「We」有畫底線，擷取未標示造成無法作答
+    by: review
+    extraction: true
 shared_assets:
 - key: g5_25_27
   label: 題組附圖

@@ -1387,7 +1387,7 @@ questions:
   number: 38
   type: single
   page: 4
-  stem: 關於上文選民投票的選擇，可說明下列何者帶來的主影響？
+  stem: 關於上文選民投票的選擇，可說明下列何者帶來何者帶來的影響？
   options:
   - label: A
     content: 家庭的政黨立場
@@ -1421,6 +1421,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 帶來的主影響？
+    to: 帶來何者帶來的影響？
+    note: 原卷為「何者帶來的影響」，擷取成「主影響」
+    by: review
+    extraction: true
 - id: doc_111_嘉義_北興_社會_公民_g7s2e3_s2_39
   section: 2
   number: 39

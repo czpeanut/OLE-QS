@@ -267,7 +267,7 @@ questions:
   number: 2
   type: essay
   page: 1
-  stem: The players practice soccer every two days. (依畫線部分造原問句)
+  stem: The players practice soccer <u>every two days</u>. (依畫線部分造原問句)
   tags:
     textbook: 七下 英語 頻率副詞（always/usually/often/sometimes/seldom/never）+ How often
     labeled_by: ai
@@ -278,12 +278,18 @@ questions:
       code: B2-03
       title: 頻率副詞（always/usually/often/sometimes/seldom/never）+ How often
       chapter: B2 七下
+  errata:
+  - from: The players practice soccer every two days. (依畫線部分造原問句)
+    to: The players practice soccer <u>every two days</u>. (依畫線部分造原問句)
+    note: 漏標底線，題目要求依畫線部分造句卻無從辨認
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g7s2e1_s2_3
   section: 2
   number: 3
   type: essay
   page: 1
-  stem: Terry takes a bath after dinner.(依畫線部分造原問句)
+  stem: Terry <u>takes a bath</u> after dinner.(依畫線部分造原問句)
   tags:
     textbook: 七下 英語 第三人稱單數動詞變化（+s/es/ies）+ does
     labeled_by: ai
@@ -294,6 +300,12 @@ questions:
       code: B2-02
       title: 第三人稱單數動詞變化（+s/es/ies）+ does
       chapter: B2 七下
+  errata:
+  - from: Terry takes a bath after dinner.(依畫線部分造原問句)
+    to: Terry <u>takes a bath</u> after dinner.(依畫線部分造原問句)
+    note: 漏標底線，題目要求依畫線部分造句卻無從辨認
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g7s2e1_s3_1
   section: 3
   number: 1
@@ -1302,7 +1314,7 @@ questions:
   stem: What can we know from the reading?
   options:
   - label: A
-    content: You can see Tai Tzuying in the meet-and-greet in Kaohsiung.  meet-and-greet
+    content: You can see Tai Tzuying in the meet-and-greet in Kaohsiung. 🕮🕮 meet-and-greet
       見面會
   - label: B
     content: Tai Tzuying can play good tennis and write stories.
@@ -1358,6 +1370,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) You can see Tai Tzuying in the meet-and-greet in Kaohsiung.  meet-and-greet
+      見面會
+    to: (A) You can see Tai Tzuying in the meet-and-greet in Kaohsiung. 🕮🕮 meet-and-greet
+      見面會
+    note: 單字註解被誤併入(A)選項
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g7s2e1_s6_7
   section: 6
   number: 7

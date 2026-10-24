@@ -27,12 +27,12 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 下列對於親權的敘述，何者正確？
+  stem: 下列對於親權的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 父母對於未成年子女的管教並無範圍限制
   - label: B
-    content: 父母對於未成年子女僅負有養育長成人人的責任
+    content: 父母對於未成年子女僅負有養育長大成人的責任
   - label: C
     content: 父母教養子女意見不一時，以子女的意見為考量
   - label: D
@@ -55,6 +55,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：父母對於未成年子女僅負有養育長成人人的責任 → 父母對於未成年子女僅負有養育長大成人的責任
+    by: review
 - id: doc_112_彰化_福興_社會_公民_g7s1e2_s1_2
   section: 1
   number: 2
@@ -456,7 +461,7 @@ questions:
   - label: C
     content: 跨國婚姻家庭又稱兩地家庭
   - label: D
-    content: 重組家庭又稱為單親家庭
+    content: 重組家庭又稱為繼親家庭
   review_note: 答案卷 ['D']，Gemini 與 Qwen 一致判為 B
   source_ocr: true
   answer:
@@ -476,6 +481,12 @@ questions:
     gemini: B
     qwen: B
   answer_status: disputed
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：(D) 重組家庭又稱為單親家庭 → (D)重組家庭又稱為繼親家庭
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_公民_g7s1e2_s1_14
   section: 1
   number: 14
@@ -547,7 +558,7 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: 承小題（15題），若要「減緩」人口高齡化的趨勢，下列哪種方式最為可行？
+  stem: 承上題（15題），若要「減緩」人口高齡化的趨勢，下列哪種方式最為可行？
   options:
   - label: A
     content: 提高育兒補助，促使生育率提升
@@ -575,6 +586,12 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：承小題（15題） → 承上題（15題）
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_公民_g7s1e2_s1_17
   section: 1
   number: 17
@@ -930,8 +947,8 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 來自烏克蘭的瑞莎在獲得台灣國籍後，便成為我國的國民，而他符合也我國公民年齡的規定，因此具有參政權。下列有幾項是屬於公民擁有的參政權範圍？(甲)可以行時罷免權讓失職的公職人員下台
-    (乙)可以投票選總統 (丙)可以去銀行開戶 (丁)可以考汽機車駕照 (戊)可以領公投票
+  stem: 來自烏克蘭的瑞莎在獲得台灣國籍後，便成為我國的國民，而他也符合我國公民年齡的規定，因此具有參政權。下列有幾項是屬於公民擁有的參政權範圍？(甲)可以行使罷免權讓失職的公職人員下台
+    (乙)可以投票選總統 (丙)可以去銀行開戶 (丁)可以考汽機車駕照 (戊)可以領公投票（原卷有誤，已修正）
   options:
   - label: A
     content: 2項
@@ -959,6 +976,11 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：而他符合也我國公民年齡的規定，因此具有參政權。下列有幾項是屬於公民擁有的參政權範圍？(甲)可以行時罷免權 → 而他也符合我國公民年齡的規定，因此具有參政權。下列有幾項是屬於公民擁有的參政權範圍？(甲)可以行使罷免權
+    by: review
 - id: doc_112_彰化_福興_社會_公民_g7s1e2_s1_28
   section: 1
   number: 28

@@ -1344,7 +1344,7 @@ questions:
   number: 1
   type: fill
   page: 2
-  stem: Lily is reading a newspaper in the library. (依畫線部分造原問句)
+  stem: Lily is <u>reading a newspaper</u> in the library. (依畫線部分造原問句)
   review_note: 答案卷 ['What is Lily doing in the library?', 'What is Lily/ doing in
     the library?']，Gemini 與 Qwen 一致判為 What is Lily doing in the library?
   source_ocr: true
@@ -1366,6 +1366,12 @@ questions:
     gemini: What is Lily doing in the library?
     qwen: What is Lily doing in the library?
   answer_status: disputed
+  errata:
+  - from: Lily is reading a newspaper in the library. (依畫線部分造原問句)
+    to: Lily is <u>reading a newspaper</u> in the library. (依畫線部分造原問句)
+    note: 原卷 reading a newspaper 畫底線，擷取漏標畫線處無從作答
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_英語_g7s1e3_s6_2
   section: 6
   number: 2

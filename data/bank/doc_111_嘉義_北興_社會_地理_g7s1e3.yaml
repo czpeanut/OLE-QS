@@ -606,7 +606,7 @@ questions:
   stem: 承上題，「落不過田埂」是指下列哪一種降水特徵？
   options:
   - label: A
-    content: 雨時短
+    content: 雨時長雨勢弱
   - label: B
     content: 雨勢弱
   - label: C
@@ -632,6 +632,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 雨時短
+    to: (A)雨時長 (B)雨勢弱
+    note: 選項(A)原卷為「雨時長」，誤植為「雨時短」
+    by: review
+    extraction: true
 - id: doc_111_嘉義_北興_社會_地理_g7s1e3_s1_12
   section: 1
   number: 12

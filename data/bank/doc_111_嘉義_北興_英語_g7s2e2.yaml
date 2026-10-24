@@ -615,13 +615,13 @@ questions:
   stem: 'Nancy wants to make some strawberry jelly. Please help her put the following
     steps into the correct order.
 
-    a. Mix the jelly crytals and the water. correct 正確的 order 順序
+    a. Mix the jelly crystals and the water. correct 正確的 order 順序
 
     b. Put some ice cream beside the strawberry jelly.
 
     c. Wait until the strawberry jelly mixture cools. cool 冷卻
 
-    d. Put the strawberries into the bowl.'
+    d. Put the strawberries into the bowl.（原卷有誤，已修正）'
   options:
   - label: A
     content: b → a → c → d
@@ -684,6 +684,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Mix the jelly crytals and the water.
+    to: Mix the jelly crystals and the water.
+    note: crytals 拼錯，應為 crystals：「Mix the jelly crytals and the water.」→「Mix the jelly
+      crystals and the water.」
+    by: review
 - id: doc_111_嘉義_北興_英語_g7s2e2_s5_32
   section: 5
   number: 32

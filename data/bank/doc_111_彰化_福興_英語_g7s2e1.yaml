@@ -459,7 +459,7 @@ questions:
   number: 7
   type: fill
   page: 1
-  stem: 'B 中翻英 7% (第一題 1 分)
+  stem: 'B 中翻英 7% (一題 1 分)
 
     幾乎 ______'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -481,6 +481,12 @@ questions:
   - almost
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: B 中翻英 7% (第一題 1 分)
+    to: B 中翻英 7% (一題 1 分)
+    note: 原卷為「一題」，擷取誤作「第一題」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_英語_g7s2e1_s2_8
   section: 2
   number: 8

@@ -272,7 +272,7 @@ questions:
   number: 1
   type: essay
   page: 1
-  stem: Betty is reading an English book in her room. (依畫線部分造原問句)
+  stem: Betty is reading <u>an English book</u> in her room. (依畫線部分造原問句)
   tags:
     textbook: 七上 英語 現在進行式（be+Ving）+ What are you doing?
     labeled_by: ai
@@ -283,6 +283,12 @@ questions:
       code: B1-13
       title: 現在進行式（be+Ving）+ What are you doing?
       chapter: B1 七上
+  errata:
+  - from: Betty is reading an English book in her room. (依畫線部分造原問句)
+    to: Betty is reading <u>an English book</u> in her room. (依畫線部分造原問句)
+    note: 原卷「an English book」有畫底線，擷取未標示畫線處
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g7s1e3_s2_2
   section: 2
   number: 2

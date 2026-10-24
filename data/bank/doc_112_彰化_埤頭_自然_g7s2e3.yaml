@@ -559,7 +559,7 @@ questions:
   - label: A
     content: 小丑魚遇危險時可躲入海葵中，海葵可藉由小丑魚得多元的食物
   - label: B
-    content: 蘚魚附在大型海洋生物體上移動
+    content: 鮣魚附在大型海洋生物體上移動
   - label: C
     content: 菟絲子攀附在其他植物上，並吸取其養分
   - label: D
@@ -583,12 +583,18 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：(B) 蘚魚附在大型海洋生物體上移動 → (B)鮣魚附在大型海洋生物體上移動
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s2e3_s1_15
   section: 1
   number: 15
   type: single
   page: 1
-  stem: 池水優養化後一段時間，其中藻類大量死亡，下列何者最能表示池水中$\underline{的变化}$？
+  stem: 池水優養化後一段時間，其中藻類大量死亡，下列何者最能表示池水中的變化？
   options:
   - label: A
     content: ''
@@ -682,6 +688,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 池水優養化後一段時間，其中藻類大量死亡，下列何者最能表示池水中$\underline{的变化}$？
+    to: 池水優養化後一段時間，其中藻類大量死亡，下列何者最能表示池水中的變化？
+    note: 原卷為繁體「的變化」且無底線
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s2e3_s1_16
   section: 1
   number: 16
@@ -1360,7 +1372,7 @@ questions:
   - label: A
     content: 拉姆薩公約，是有關於溫室氣體
   - label: B
-    content: 蒙特婁議定書，是有關於保獲濕地
+    content: 蒙特婁議定書，是有關於保護濕地
   - label: C
     content: 華盛頓公約，避免國際貿易對瀕危野生動植物的生存造成威脅
   - label: D
@@ -1384,6 +1396,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：(B) 蒙特婁議定書，是有關於保獲濕地 → (B)蒙特婁議定書，是有關於保護濕地
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s2e3_s1_31
   section: 1
   number: 31

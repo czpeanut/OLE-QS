@@ -583,7 +583,7 @@ questions:
   number: 9
   type: fill
   page: 2
-  stem: 有一工程，每天有 9 人工作，20 天可以完工，若減少 3 人，需要__⑨__天才態完工 (假設每個人工作量都相同且每天工作量都固定)
+  stem: 有一工程，每天有 9 人工作，20 天可以完工，若減少 3 人，需要__⑨__天才能完工 (假設每個人工作量都相同且每天工作量都固定)
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -603,6 +603,12 @@ questions:
   - '30'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 需要__⑨__天才態完工
+    to: 需要__⑨__天才能完工
+    note: 「才能」誤植為「才態」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_數學_g7s2e2_s2_10
   section: 2
   number: 10
@@ -722,7 +728,7 @@ questions:
   page: 2
   stem: '(A) 每 100 公克價格為 25 元的魚，魚的重量 $x$ 公克，其價格為 $y$ 元。
 
-    (B) 全班學生 30 人，平成 $x$ 組，每組恰為 $y$ 人。
+    (B) 全班學生 30 人，平分成 $x$ 組，每組恰為 $y$ 人。
 
     (C) 全班學生 40 人，其中男生 $x$ 人與女生 $y$ 人。
 
@@ -752,6 +758,12 @@ questions:
   - ADF
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 全班學生 30 人，平成 x 組
+    to: 全班學生 30 人，平分成 x 組
+    note: 漏「分」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_數學_g7s2e2_s2_14
   section: 2
   number: 14
@@ -759,7 +771,7 @@ questions:
   page: 2
   stem: '(A) 每 100 公克價格為 25 元的魚，魚的重量 $x$ 公克，其價格為 $y$ 元。
 
-    (B) 全班學生 30 人，平成 $x$ 組，每組恰為 $y$ 人。
+    (B) 全班學生 30 人，平分成 $x$ 組，每組恰為 $y$ 人。
 
     (C) 全班學生 40 人，其中男生 $x$ 人與女生 $y$ 人。
 
@@ -789,6 +801,12 @@ questions:
   - BE
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 全班學生 30 人，平成 x 組
+    to: 全班學生 30 人，平分成 x 組
+    note: 漏「分」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_數學_g7s2e2_s3_1
   section: 3
   number: 1

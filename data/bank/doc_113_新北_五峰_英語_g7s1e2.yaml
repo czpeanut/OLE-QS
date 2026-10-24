@@ -43,10 +43,10 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: My brothers aren’t ______ home. They’re _____ Tainan now.
+  stem: My brothers aren’t ______ home. They’re _____ Tainan now.（原卷有誤，已修正）
   options:
   - label: A
-    content: ) X; in
+    content: ' X; in'
   - label: B
     content: at; at
   - label: C
@@ -71,6 +71,11 @@ questions:
       chapter: B1 七上
     textbook: 七上 英語 位置介系詞（in/on/under/behind/between/next to/near/in front of）
     labeled_by: ai
+  errata:
+  - from: (A) ) X; in
+    to: (A) X; in
+    note: 選項多印一個右括號：「(A) ) X; in」→「(A) X; in」
+    by: review
 - id: doc_113_新北_五峰_英語_g7s1e2_s1_2
   section: 1
   number: 2
@@ -1409,7 +1414,7 @@ questions:
   number: 39
   type: essay
   page: 2
-  stem: Your pen is under the chair.(依畫線部分造原問句)
+  stem: Your pen is <u>under the chair</u>.(依畫線部分造原問句)
   tags:
     chapter:
       publisher: null
@@ -1420,6 +1425,12 @@ questions:
       chapter: B1 七上
     textbook: 七上 英語 Where問句 + 回答方式
     labeled_by: ai
+  errata:
+  - from: Your pen is under the chair.(依畫線部分造原問句)
+    to: Your pen is <u>under the chair</u>.(依畫線部分造原問句)
+    note: under the chair 漏畫底線，無法辨認畫線處
+    by: review
+    extraction: true
 - id: doc_113_新北_五峰_英語_g7s1e2_s6_40
   section: 6
   number: 40
@@ -1441,7 +1452,7 @@ questions:
   number: 41
   type: essay
   page: 2
-  stem: Look at those rabbits. Those rabbits are cute.(用代名詞改寫畫線部分)
+  stem: Look at those rabbits. <u>Those rabbits</u> are cute.(用代名詞改寫畫線部分)
   tags:
     chapter:
       publisher: null
@@ -1452,12 +1463,18 @@ questions:
       chapter: B1 七上
     textbook: 七上 英語 受格代名詞（me/you/him/her/it/us/them）
     labeled_by: ai
+  errata:
+  - from: Look at those rabbits. Those rabbits are cute.(用代名詞改寫畫線部分)
+    to: Look at those rabbits. <u>Those rabbits</u> are cute.(用代名詞改寫畫線部分)
+    note: 第二個 Those rabbits 漏畫底線，無法辨認畫線處
+    by: review
+    extraction: true
 - id: doc_113_新北_五峰_英語_g7s1e2_s6_42
   section: 6
   number: 42
   type: essay
   page: 2
-  stem: My dog can stand on a ball. (依畫線部分造原問句)
+  stem: My dog can <u>stand on a ball</u>. (依畫線部分造原問句)
   tags:
     chapter:
       publisher: null
@@ -1468,6 +1485,12 @@ questions:
       chapter: B1 七上
     textbook: 七上 英語 助動詞 can（肯定/否定/問答）+ Wh-疑問句
     labeled_by: ai
+  errata:
+  - from: My dog can stand on a ball. (依畫線部分造原問句)
+    to: My dog can <u>stand on a ball</u>. (依畫線部分造原問句)
+    note: stand on a ball 漏畫底線，無法辨認畫線處
+    by: review
+    extraction: true
 - id: doc_113_新北_五峰_英語_g7s1e2_s7_43
   section: 7
   number: 43

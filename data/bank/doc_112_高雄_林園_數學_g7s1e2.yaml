@@ -496,7 +496,7 @@ questions:
   page: 2
   stem: '計算下列各式的值，並將結果化成最簡分數：
 
-    (1) $3\frac{5}{13}-[(-4\frac{19}{17})-\frac{21}{13}]=$ (7) 。'
+    (1) $3\frac{5}{13}-[(-\frac{19}{17})-\frac{21}{13}]=$ (7) 。'
   answer:
   - '2
 
@@ -519,6 +519,16 @@ questions:
     gemini: $\frac{172}{17}$
     qwen: $10\frac{2}{17}$
     gemini_high: \frac{172}{17}
+  errata:
+  - from: '計算下列各式的值，並將結果化成最簡分數：
+
+      (1) $3\frac{5}{13}-[(-4\frac{19}{17})-\frac{21}{13}]=$ (7) 。'
+    to: '計算下列各式的值，並將結果化成最簡分數：
+
+      (1) $3\frac{5}{13}-[(-\frac{19}{17})-\frac{21}{13}]=$ (7) 。'
+    note: 原卷為負17分之19，擷取多打了整數4
+    by: review
+    extraction: true
 - id: doc_112_高雄_林園_數學_g7s1e2_s2_8
   section: 2
   number: 8

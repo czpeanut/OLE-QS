@@ -278,7 +278,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 清朝將臺灣納入版圖後，行政區設置一府三縣。請問埠頭頭的位置若在清領時期應屬於哪一個行政區管轄？
+  stem: 清朝將臺灣納入版圖後，行政區設置一府三縣。請問埤頭鄉的位置若在清領時期應屬於哪一個行政區管轄？
   options:
   - label: A
     content: 臺灣縣
@@ -308,6 +308,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：請問埠頭頭的位置若在清領時期 → 請問埤頭鄉的位置若在清領時期
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e2_s1_8
   section: 1
   number: 8
@@ -398,7 +404,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 許智鐘正在整理歷史筆記，記錄了因「越海問題」人「劉銘傳」的時。「公元 1884 年。地：基隆、水、澎湖。影響：宣布台灣建省。」請問筆記是在描述哪場戰爭？
+  stem: 許智鐘正在整理歷史筆記，記錄了因「越海問題」入「劉銘傳」的詩。「西元 1884 年。地：基隆、淡水、澎湖。影響：宣布台灣建省。」請問筆記是在描述哪場戰爭？
   options:
   - label: A
     content: 甲午戰爭
@@ -427,6 +433,13 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：因「越海問題」人「劉銘傳」的時。「公元 1884 年。地：基隆、水、澎湖。 → 因「越海問題」入「劉銘傳」的詩。「西元
+      1884 年。地：基隆、淡水、澎湖。
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e2_s1_11
   section: 1
   number: 11
@@ -571,7 +584,7 @@ questions:
   number: 15
   type: single
   page: 1
-  stem: 右圖是臺灣考考古遺址中，同一文化層出土的四種器物。圖中何者最適合作為判斷該文化層所屬時代的證據？
+  stem: 右圖是臺灣考古遺址中，同一文化層出土的四種器物。圖中何者最適合作為判斷該文化層所屬時代的證據？
   options:
   - label: A
     content: 甲
@@ -616,6 +629,12 @@ questions:
     gemini_high: C
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：右圖是臺灣考考古遺址中 → 右圖是臺灣考古遺址中
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e2_s1_16
   section: 1
   number: 16
@@ -656,33 +675,27 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 貝島斯來自曾曾經在臺灣說起祖先曾經過在臺灣生活的故事，於是規劃了三天兩夜的臺灣之旅。訪問：根據右行行程景點，貝島斯應該來自哪一個國家？
+  stem: 貝島斯聽自祖父說起祖先曾經在臺灣生活的故事，於是規劃了三天兩夜的臺灣之旅。請問：根據行程規劃，貝島斯應該來自哪一個國家？
   options:
   - label: A
     content: 英國
   - label: B
-    content: 葡萄牙
+    content: 荷蘭
   - label: C
     content: 葡萄牙
   - label: D
     content: 西班牙
   assets:
-  - key: s1_17_f1
+  - key: s1_17_r10231623_1
     kind: figure
-    file: doc_112_彰化_埤頭_社會_歷史_g7s1e2/s1_17_f1.png
+    file: doc_112_彰化_埤頭_社會_歷史_g7s1e2/s1_17_r10231623_1.png
     crop:
       page: 1
       rect:
-      - 533.19
-      - 214.1
-      - 611.6
-      - 290.86
-      auto_from:
-      - 533.45
-      - 213.05
-      - 609.71
-      - 286.69
-    crop_by: auto
+      - 685.22
+      - 79.04
+      - 768.53
+      - 175.9
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -702,6 +715,13 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 貝島斯來自曾曾經在臺灣說起祖先曾經過在臺灣生活的故事，於是規劃了三天兩夜的臺灣之旅。訪問：根據右行行程景點，貝島斯應該來自哪一個國家？
+    to: 貝島斯聽自祖父說起祖先曾經在臺灣生活的故事，於是規劃了三天兩夜的臺灣之旅。請問：根據行程規劃，貝島斯應該來自哪一個國家？
+    note: 多字「曾」、「過」，「請問」誤作「訪問」，選項(B)(C)重複；原卷選項(B)(C)印重複，(B)應為荷蘭：「(B) 葡萄牙 (C) 葡萄牙」→「(B)
+      荷蘭 (C) 葡萄牙」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e2_s1_18
   section: 1
   number: 18
@@ -775,7 +795,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 「史前文化研討會」課程中，探討了圖山文化、大坌坑文化、卑南文化的相關內容。請問：此研討會的主題最可能為何者？
+  stem: 「史前文化研討會」課程中，探討了圓山文化、大坌坑文化、卑南文化的相關內容。請問：此研討會的主題最可能為何者？
   options:
   - label: A
     content: 臺南科學園區~南科遺址文化層
@@ -804,6 +824,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：探討了圖山文化 → 探討了圓山文化
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e2_s1_21
   section: 1
   number: 21
@@ -878,7 +904,7 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 新聞報導：「距離臺灣 9000 公里的紐西蘭，來了一群毛利青少年，他們特地去參觀臺東史前博物館，發現他們身上的玉項鍊，工具魚鉤、農具與鋸齒巴圖，跟展覽示廳陳列的考古遺址文物非常相似。」請問：報導所指考遺址為何？
+  stem: 新聞報導：「距離臺灣 9000 公里的紐西蘭，來了一群毛利青少年，他們特地去參觀臺東史前博物館，發現他們身上的玉項鍊，工具魚鉤、農具與鋸齒巴圖，跟展覽廳陳列的考古遺址文物非常相似。」請問：報導所指考古遺址為何？
   options:
   - label: A
     content: 長濱文化
@@ -907,12 +933,18 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：跟展覽示廳陳列的考古遺址文物非常相似。」請問：報導所指考遺址為何？ → 跟展覽廳陳列的考古遺址文物非常相似。」請問：報導所指考古遺址為何？
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e2_s1_24
   section: 1
   number: 24
   type: single
   page: 2
-  stem: 粘恩來到了南部旅遊，想要看看當年鄭氏在時期的與與興旺的地方。請問：琵恩應該不合往下列何處觀光？
+  stem: 粘恩來到了南部旅遊，想要看看當年鄭氏在時期的興旺的地方。請問：祐恩應該不會往下列何處觀光？
   options:
   - label: A
     content: 前鎮
@@ -940,6 +972,12 @@ questions:
     gemini_high: D
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：想要看看當年鄭氏在時期的與與興旺的地方。請問：琵恩應該不合往下列何處觀光？ → 想要看看當年鄭氏在時期的興旺的地方。請問：祐恩應該不會往下列何處觀光？
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e2_s1_25
   section: 1
   number: 25
@@ -1047,7 +1085,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 歷史老師上課時請四位同學等四張牌，每張牌上寫著臺灣相關事件，要同學們按其先後順序排列。以下是四張牌的內容：英淇—需有渡臺證照，單身男子才有機會來臺；秉銓—屏東在新拉港語造成新港文，積極教育原住民；秉錕—在臺灣開始現代化，舒澳—建立孔廟，提倡儒家文化。請問這四位同學登場的先後順序應是？
+  stem: 28.歷史老師上課時請四位同學拿著四張牌，每張牌上寫著臺灣相關事件，要同學們按其先後順序排列。以下是四張牌的內容：英淇—需有渡臺證照，單身男子才有機會來臺；秉銓—屏東在新拉港語造成新港文，積極教育原住民；秉錕—在臺灣開始現代化，舒澳—建立孔廟，提倡儒家文化。請問這四位同學登場的先後順序應是？
   options:
   - label: A
     content: 英淇、秉銓、秉錕、舒淇
@@ -1081,6 +1119,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：歷史老師上課時請四位同學等四張牌 → 28. 歷史老師上課時請四位同學拿著四張牌
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g7s1e2_s1_29
   section: 1
   number: 29
@@ -1235,7 +1279,7 @@ questions:
   number: 33
   type: single
   page: 2
-  stem: 「圖丁」的出現在，應與下列哪一事件有關？
+  stem: 「圖丁」的出現，應與下列哪一事件有關？
   options:
   - label: A
     content: 朱一貴事件
@@ -1265,6 +1309,12 @@ questions:
     gemini_high: D
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：「圖丁」的出現在，應與下列哪一事件有關？ → 「圖丁」的出現，應與下列哪一事件有關？
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_13_13
   label: 題組附圖
@@ -1275,16 +1325,11 @@ shared_assets:
   crop:
     page: 1
     rect:
-    - 303.13
+    - 314.81
     - 70.11
     - 388.76
     - 159.98
-    auto_from:
-    - 306.33
-    - 74.62
-    - 397.31
-    - 160.04
-  crop_by: auto
+  crop_by: human
 - key: g1_31_33
   label: 題組附圖
   kind: figure

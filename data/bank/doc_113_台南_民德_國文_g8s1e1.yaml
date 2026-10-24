@@ -753,7 +753,7 @@ questions:
   stem: 下列文句「 」中的詞語，何者使用最恰當？
   options:
   - label: A
-    content: 電影中的配樂「氣勢磅礡」，帶給觀眾極大的震撼
+    content: 電影中的配樂「氣勢磅礴」，帶給觀眾極大的震撼
   - label: B
     content: 林老先生日夜不休守在兒子的病榻前，「烏鳥私情」，令人感動
   - label: C
@@ -777,6 +777,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 電影中的配樂「氣勢磅礡」
+    to: 電影中的配樂「氣勢磅礴」
+    note: 「礴」誤植為「礡」
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_國文_g8s1e1_s3_5
   section: 3
   number: 5

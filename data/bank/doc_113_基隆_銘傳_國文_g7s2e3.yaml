@@ -229,7 +229,7 @@ questions:
   - label: C
     content: 「勝」利／「勝」任
   - label: D
-    content: 紅「量」／月「暈」
+    content: 紅「暈」／月「暈」
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -250,6 +250,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (D) 紅「量」／月「暈」
+    to: (D) 紅「暈」／月「暈」
+    note: 「暈」誤植為「量」
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e3_s2_9
   section: 2
   number: 9
@@ -503,7 +509,7 @@ questions:
   - label: A
     content: 阿榮：「庭院中的池塘清澈，水中藻荇隨波飄蕩。」
   - label: B
-    content: 阿媽媽：「月色皎潔如水，竹柏的影子縱橫交錯。」
+    content: 阿媽：「月色皎潔如水，竹柏的影子縱橫交錯。」
   - label: C
     content: 小軍：「明月照入窗戶，竹柏倒影如潑墨山水畫」
   - label: D
@@ -530,6 +536,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 阿媽媽：「月色皎潔如水
+    to: (B) 阿媽：「月色皎潔如水
+    note: 「阿媽」多打一字成「阿媽媽」
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e3_s3_17
   section: 3
   number: 17
@@ -544,7 +556,7 @@ questions:
   - label: C
     content: 明月映照於松柏之間實屬高雅，可惜適合一同觀景的同伴難尋。
   - label: D
-    content: 世間美景實則不少，但需要擇黃道吉日，方能自前往往賞景。
+    content: 世間美景實則不少，但需要擇黃道吉日，方能前往賞景。
   lesson_raw:
     title: 記承天夜遊
     basis: 引用蘇軾〈記承天夜遊〉課文原句
@@ -567,6 +579,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 方能自前往往賞景。
+    to: 方能前往賞景。
+    note: 多打「自」且「往」字重複
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e3_s3_18
   section: 3
   number: 18
@@ -908,7 +926,7 @@ questions:
   - label: A
     content: 採用事例，說明寵物遭棄養所造成的社會問題
   - label: B
-    content: 探對比手法，將西莎與罐頭上的狗作對照，凸顯其狼狽
+    content: 採對比手法，將西莎與罐頭上的狗作對照，凸顯其狼狽
   - label: C
     content: 全文採倒敘手法，回憶在蘇格蘭巧遇西莎的過程
   - label: D
@@ -935,6 +953,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 探對比手法
+    to: (B) 採對比手法
+    note: 「採」誤植為「探」
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e3_s3_28
   section: 3
   number: 28
@@ -977,7 +1001,7 @@ questions:
   number: 29
   type: single
   page: 3
-  stem: 〈另一個春天〉一文提到「後面的人不耐煩地抱怨這行動遲緩的老太太，她其實是聽到了，卻假裝不知道，紅著臉努力拖著胖身軀，一步一步往往上爬。」在這段文字中，老太太當下的心情應最接近於下列何者？
+  stem: 〈另一個春天〉一文提到「後面的人不耐煩地抱怨這行動遲緩的老太太，她其實是聽到了，卻假裝不知道，紅著臉努力拖著胖身軀，一步一步往上爬。」在這段文字中，老太太當下的心情應最接近於下列何者？
   options:
   - label: A
     content: 感到尷尬、難為情，卻捨不得放棄阿波羅神殿。
@@ -1009,6 +1033,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一步一步往往上爬。
+    to: 一步一步往上爬。
+    note: 多了一個「往」字
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s2e3_s3_30
   section: 3
   number: 30

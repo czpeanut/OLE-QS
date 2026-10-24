@@ -216,7 +216,7 @@ questions:
 
     | :--- | :--- | :--- | :--- | :--- |
 
-    | 特徵 | 岩岸，岬角與灣澳相關 | 沙岸，水淺，海岸平直 | 岩岸，海底礁石廣布 | 岩岸，水深、海岸曲折 |'
+    | 特徵 | 岩岸，岬角與灣澳相間 | 沙岸，水淺，海岸平直 | 岩岸，海底礁石廣布 | 岩岸，水深、海岸曲折 |'
   options:
   - label: A
     content: 甲
@@ -246,6 +246,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 岩岸，岬角與灣澳相關
+    to: 岩岸，岬角與灣澳相間
+    note: 原卷為「相間」，誤作「相關」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_地理_g7s1e2_s1_6
   section: 1
   number: 6
@@ -973,7 +979,7 @@ questions:
   number: 3
   type: fill
   page: 2
-  stem: 大雄望向廣闊大海時，發現海上有不遠處有一塊堤狀陸地（如圖中 A 區），請問其成因是內或外營力的作用？
+  stem: 大雄望向廣闊大海時，發現海上不遠處有一塊堤狀陸地（如圖中 A 區），請問其成因是內或外營力的作用？
   group_stem: 大雄到臺灣某海岸從事地理考察，到了當地發現如圖（九）的等高線圖，請根據此圖的地形特徵回答下列問題：
   shared_asset: g2_1_5
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -995,6 +1001,12 @@ questions:
   - 外營力
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 發現海上有不遠處有一塊堤狀陸地
+    to: 發現海上不遠處有一塊堤狀陸地
+    note: 多打了「有」字
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_地理_g7s1e2_s2_4
   section: 2
   number: 4

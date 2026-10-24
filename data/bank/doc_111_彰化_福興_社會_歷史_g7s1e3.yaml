@@ -258,7 +258,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 十八世紀末□□□括墾蛤仔難，是漢人越界開墾的實例。請問此人是？
+  stem: 十八世紀末□□□拓墾蛤仔難，是漢人越界開墾的實例。請問此人是？
   options:
   - label: A
     content: 鄭用錫
@@ -286,6 +286,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 十八世紀末□□□括墾蛤仔難，是漢人越界開墾的實例。
+    to: 十八世紀末□□□拓墾蛤仔難，是漢人越界開墾的實例。
+    note: 「拓墾」誤植為「括墾」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s1e3_s1_8
   section: 1
   number: 8
@@ -572,7 +578,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: □□是原住民傳統的簡單耕作方式，他們既不施施肥也不會澆水灌溉，植物養分全靠土壤，當地力耗盡就必須再換另一塊土地耕作。請問這是何種耕作方式？
+  stem: □□是原住民傳統的簡單耕作方式，他們既不施肥也不會澆水灌溉，植物養分全靠土壤，當地力耗盡就必須再換另一塊土地耕作。請問這是何種耕作方式？
   options:
   - label: A
     content: 農耕
@@ -601,6 +607,12 @@ questions:
     gemini: C
     qwen: B
     gemini_high: C
+  errata:
+  - from: 他們既不施施肥也不會澆水灌溉
+    to: 他們既不施肥也不會澆水灌溉
+    note: 多了一個「施」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s1e3_s1_17
   section: 1
   number: 17
@@ -639,7 +651,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 附圖分別是保存存在新竹和宜蘭的歷史文物,根據圖片內容判斷，可以反映當時台灣社會哪一情形？
+  stem: 附圖分別是保存在新竹和宜蘭的歷史文物,根據圖片內容判斷，可以反映當時台灣社會哪一情形？
   options:
   - label: A
     content: 移民來臺忙於拓墾
@@ -684,6 +696,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 附圖分別是保存存在新竹和宜蘭的歷史文物
+    to: 附圖分別是保存在新竹和宜蘭的歷史文物
+    note: 多了一個「存」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s1e3_s1_19
   section: 1
   number: 19
@@ -779,7 +797,7 @@ questions:
   - label: B
     content: 水圳不斷開發，彰化八堡圳規模最大
   - label: C
-    content: 大稻埕商賈繁繁，取代艋舺港口
+    content: 大稻埕商賈繁榮，取代艋舺港口
   - label: D
     content: 社會上械鬥與民變頻繁，治安很差。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -800,6 +818,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 大稻埕商賈繁繁，取代艋舺港口
+    to: 大稻埕商賈繁榮，取代艋舺港口
+    note: 「繁榮」誤植為「繁繁」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s1e3_s1_22
   section: 1
   number: 22
@@ -889,12 +913,12 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 阿嬌是清帝國晚期住在淡水的年輕女性，從你所學歷史知識來看，她的生活應該不會出現下列哪一遭遇？
+  stem: 阿嬌是清帝國晚期住在淡水的年輕女性，從你所學歷史知識來看，她的生活應該不會出現下列哪一遭遇？（原卷有誤，已修正）
   options:
   - label: A
     content: 遇到來淡水經商的外國人
   - label: B
-    content: 看到樟腦與山產由淡水出口責任海外
+    content: 看到樟腦與山產由淡水出口轉銷海外
   - label: C
     content: 因幫忙家計成為採茶女工
   - label: D
@@ -917,6 +941,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 看到樟腦與山產由淡水出口責任海外
+    to: 看到樟腦與山產由淡水出口轉銷海外
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「看到樟腦與山產由淡水出口責任海外」→「看到樟腦與山產由淡水出口轉銷海外」
+    by: review
 - id: doc_111_彰化_福興_社會_歷史_g7s1e3_s1_25
   section: 1
   number: 25
@@ -1024,7 +1053,7 @@ questions:
   stem: '下表是臺灣開港通商後，部分洋行在臺的營運狀況。若考慮當時商品產區與出口地，這些洋行最可能皆設置於圖中何處？
 
 
-    | 名稱主要 | 出口商品 |
+    | 名稱 | 主要出口商品 |
 
     | :--- | :--- |
 
@@ -1080,6 +1109,38 @@ questions:
     gemini: D
     qwen: B
     gemini_high: D
+  errata:
+  - from: '下表是臺灣開港通商後，部分洋行在臺的營運狀況。若考慮當時商品產區與出口地，這些洋行最可能皆設置於圖中何處？
+
+
+      | 名稱主要 | 出口商品 |
+
+      | :--- | :--- |
+
+      | 寶順洋行 | 茶 |
+
+      | 美利士洋行 | 樟腦 |
+
+      | 公泰洋行 | 樟腦 |
+
+      | 費爾·哈士迪斯洋行 | 樟腦、煤 |'
+    to: '下表是臺灣開港通商後，部分洋行在臺的營運狀況。若考慮當時商品產區與出口地，這些洋行最可能皆設置於圖中何處？
+
+
+      | 名稱 | 主要出口商品 |
+
+      | :--- | :--- |
+
+      | 寶順洋行 | 茶 |
+
+      | 美利士洋行 | 樟腦 |
+
+      | 公泰洋行 | 樟腦 |
+
+      | 費爾·哈士迪斯洋行 | 樟腦、煤 |'
+    note: 表格欄位名稱切分錯誤(主要出口商品)
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s1e3_s1_29
   section: 1
   number: 29

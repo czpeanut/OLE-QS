@@ -1205,7 +1205,7 @@ questions:
   number: 37
   type: single
   page: 4
-  stem: 逢年過節爸爸總會準備好茶招待親友，根據各店家門口貼的春聯內容判斷，應該選擇哪一家？
+  stem: 37.逢年過節爸爸總會準備好茶招待親友，根據各店家門口貼的春聯內容判斷，應該選擇哪一家？
   options:
   - label: A
     content: 瓦壺水沸邀清客／茗碗香騰遣睡魔
@@ -1232,6 +1232,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 逢年過節爸爸總會準備好茶招待親友，根據各店家門口貼的春聯內容判斷，應該選擇哪一家？
+    to: 37. 逢年過節爸爸總會準備好茶招待親友，根據各店家門口貼的春聯內容判斷，應該選擇哪一家？
+    note: 此題為單選題，被誤掛在買春聯題組短文下
+    by: review
+    extraction: true
 - id: doc_113_新北_丹鳳_國文_g8s1e3_s1_38
   section: 1
   number: 38
@@ -1285,7 +1291,7 @@ questions:
   - label: C
     content: 豬可以被用來做人體移植和運輸工具
   - label: D
-    content: 豬體的排泄物經過處理後，可製成替代能源
+    content: 豬的排泄物經過處理後，可製成替代能源
   group_stem: '荷蘭的一個藝術家，花了三年的時間，追蹤一頭豬被宰殺了之後，被物盡其用的程度，研究結果，令人嘆為觀止，原來豬的應用那麼廣泛，要說，豬讓世界維持運轉，也不為過。
 
     曼德絲瑪研究的那頭豬，沒有名字，只有編號，05049 號豬，被宰殺的時候，體重104 公斤。牠的屠體總共產生了185 種產品。裡面包括日常生活中不可或缺的肥皂、洗髮精、潤絲精、保養品、牙膏等。在發麵的時候使用的麵糰改良劑，是用豬毛裡面的一種蛋白質提煉，起司蛋糕、香草布丁、巧克力慕斯以及提拉米蘇等許多西點裡，會用到的吉利丁，以及啤酒、葡萄酒以及果汁製作過程中，用以過濾雜質的明膠過濾網，也是豬貢獻的。
@@ -1310,6 +1316,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 豬體的排泄物經過處理後，可製成替代能源
+    to: (D) 豬的排泄物經過處理後，可製成替代能源
+    note: 原卷為「豬的」，誤多「體」字
+    by: review
+    extraction: true
 - id: doc_113_新北_丹鳳_國文_g8s1e3_s1_40
   section: 1
   number: 40

@@ -73,6 +73,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_17
   section: 4
   number: 17
@@ -105,6 +106,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_18
   section: 4
   number: 18
@@ -137,6 +139,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_19
   section: 4
   number: 19
@@ -170,6 +173,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_20
   section: 4
   number: 20
@@ -202,6 +206,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_21
   section: 4
   number: 21
@@ -234,6 +239,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_22
   section: 4
   number: 22
@@ -267,6 +273,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_23
   section: 4
   number: 23
@@ -299,6 +306,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_24
   section: 4
   number: 24
@@ -332,6 +340,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_25
   section: 4
   number: 25
@@ -365,6 +374,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_26
   section: 4
   number: 26
@@ -398,6 +408,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_27
   section: 4
   number: 27
@@ -431,6 +442,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s4_28
   section: 4
   number: 28
@@ -438,7 +450,7 @@ questions:
   page: 3
   stem: "(   ) 28. Frank：You’re sweating (流汗) a lot. Do you want a cup of water? \
     \       \nWilson：Yes, please. ＿_________＿＿ \nFrank：That’s right. Taiwan is in\
-    \ the sun too long."
+    \ the sun too long.（原卷有誤，已修正）"
   options:
   - label: A
     content: It’s very cold.
@@ -447,7 +459,7 @@ questions:
   - label: C
     content: It’s raining again.
   - label: D
-    content: It’ really hot today.
+    content: It’s really hot today.
   tags:
     textbook: 七下 英語 對話與情境應答
     labeled_by: ai
@@ -465,6 +477,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) It’ really hot today.
+    to: (D) It’s really hot today.
+    note: It' 後漏印字母 s：「(D) It’ really hot today.」→「(D) It’s really hot today.」
+    by: review
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s5_29
   section: 5
   number: 29
@@ -481,6 +499,9 @@ questions:
   - label: D
     content: In winter.
   group_stem: '●第一組
+
+
+    Weather in Iceland
 
 
     | Spring | Summer |
@@ -514,6 +535,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: （  ）29. What’s the best time to enjoy the Northern Lights in Iceland?
+    to: （  ）29. What’s the best time to enjoy the Northern Lights in Iceland?
+    note: 題組短文漏了標題 Weather in Iceland
+    by: review
+    extraction: true
 - id: doc_111_嘉義_北興_英語_g7s2e3_s5_30
   section: 5
   number: 30
@@ -530,6 +557,9 @@ questions:
   - label: D
     content: In winter.
   group_stem: '●第一組
+
+
+    Weather in Iceland
 
 
     | Spring | Summer |
@@ -855,6 +885,7 @@ questions:
   - building
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s6_37
   section: 6
   number: 37
@@ -878,6 +909,7 @@ questions:
   - factory
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s6_38
   section: 6
   number: 38
@@ -902,6 +934,7 @@ questions:
   - check
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s6_39
   section: 6
   number: 39
@@ -925,6 +958,7 @@ questions:
   - anytime
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s6_40
   section: 6
   number: 40
@@ -949,6 +983,7 @@ questions:
   - germs
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s6_41
   section: 6
   number: 41
@@ -973,6 +1008,7 @@ questions:
   - activities
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_111_嘉義_北興_英語_g7s2e3_s7_42
   section: 7
   number: 42

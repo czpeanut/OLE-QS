@@ -173,7 +173,7 @@ questions:
   stem: 承上題，環狀剝去的樹皮應該包含圖(二)的哪些構造？
   options:
   - label: A
-    content: 甲到吉
+    content: 甲
   - label: B
     content: 甲到乙
   - label: C
@@ -202,6 +202,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (A) 甲到吉
+    to: (A)甲
+    note: 選項A原卷為「甲」，誤擷為「甲到吉」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s1e2_s1_6
   section: 1
   number: 6
@@ -664,7 +670,7 @@ questions:
   - label: B
     content: 丁因細胞較小可以穿透微血管
   - label: C
-    content: 犯罪現場採取消遺傳物質DNA，主要是取乙的細胞核
+    content: 犯罪現場採取遺傳物質DNA，主要是取乙的細胞核
   - label: D
     content: 血漿滲出血管後為組織液，回到淋巴管稱為淋巴。
   group_stem: 埤頭國中一年級新生小澤不久前在學校進行抽血檢查，用針抽取X血管的血液，害怕的差點哭出來，老師跟他們介紹醫院檢驗血液分析過程，如下圖。試回答下列問題：
@@ -688,6 +694,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 犯罪現場採取消遺傳物質DNA
+    to: 犯罪現場採取遺傳物質DNA
+    note: 原卷為「採取」，誤多字為「採取消」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s1e2_s1_19
   section: 1
   number: 19
@@ -703,7 +715,7 @@ questions:
     content: 茶葉蛋
   - label: D
     content: 礦泉水。
-  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒、盤、鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
+  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒一盤鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -723,6 +735,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 、盤、
+    to: 一盤
+    note: 題幹「一盤」誤擷為「、盤、」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s1e2_s1_20
   section: 1
   number: 20
@@ -738,7 +756,7 @@ questions:
     content: 礦泉水
   - label: D
     content: 肉乾。
-  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒、盤、鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
+  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒一盤鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -773,7 +791,7 @@ questions:
     content: 甘油、脂肪酸
   - label: D
     content: 纖維素。
-  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒、盤、鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
+  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒一盤鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -808,7 +826,7 @@ questions:
     content: 肉乾
   - label: D
     content: 香蕉。
-  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒、盤、鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
+  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒一盤鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -843,7 +861,7 @@ questions:
     content: 牛奶、馬鈴薯
   - label: D
     content: 優酪乳、魚。
-  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒、盤、鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
+  group_stem: 小芳週末全家到黑色奇萊山爬山，在車上先吃完早餐，早餐有銅鑼燒一盤鮮奶油、茶葉蛋2顆、礦泉水，餐後補充媽媽給的魚油，並準備一些登山常備糧食，有肉乾、堅果、香蕉：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -988,7 +1006,7 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 人體消化脈分泌的消化液可以分解醣類、蛋白質、脂質3種養分，其中X消化液可分解3種，Y消化液可分解2種，Z消化液可分解1種，請問何者正確？
+  stem: 人體消化腺分泌的消化液可以分解醣類、蛋白質、脂質3種養分，其中X消化液可分解3種，Y消化液可分解2種，Z消化液可分解1種，請問何者正確？
   options:
   - label: A
     content: X可能是唾液
@@ -1017,6 +1035,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 人體消化脈分泌的消化液
+    to: 人體消化腺分泌的消化液
+    note: 原卷為「消化腺」，誤擷為「消化脈」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s1e2_s1_28
   section: 1
   number: 28
@@ -1034,7 +1058,7 @@ questions:
     content: 血小板。
   group_stem: '有些住宅為求方便，將瓦斯熱水器裝設在浴室或是不通風的陽臺上，其實這是十分危險的行為，因此在冬季時，常會出現民眾瓦斯中毒而死亡的新聞。瓦斯燃燒不完全，會產生無色無臭的一氧化碳，人體吸入後，由於一氧化碳比氧氣更容易與血紅素結合，與一氧化碳結合後的血紅素便無法攜帶氧氣，組織細胞得不到氧氣，尤其心臟和腦部影響最大，嚴重時會造成死亡。若能及早發現，將病患送至醫院，仍可利用高壓氧進行治療，使血紅素恢復攜帶氧氣的能力。
 
-    資料來源：境中日報http://www.gogogo.tw'
+    資料來源：埤中日報http://www.gogogo.tw'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1060,6 +1084,11 @@ questions:
     note: 原卷印錯，「客易」應為「容易」
     by: ai_review
     extraction: true
+  - from: 境中日報
+    to: 埤中日報
+    note: 資料來源原卷為「埤中日報」，誤擷為「境中日報」；原卷印錯，「客易」應為「容易」：「由於一氧化碳比氧氣更客易與血紅素結合」→「由於一氧化碳比氧氣更容易與血紅素結合」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s1e2_s1_29
   section: 1
   number: 29
@@ -1077,7 +1106,7 @@ questions:
     content: 心臟和腦部缺氧。
   group_stem: '有些住宅為求方便，將瓦斯熱水器裝設在浴室或是不通風的陽臺上，其實這是十分危險的行為，因此在冬季時，常會出現民眾瓦斯中毒而死亡的新聞。瓦斯燃燒不完全，會產生無色無臭的一氧化碳，人體吸入後，由於一氧化碳比氧氣更容易與血紅素結合，與一氧化碳結合後的血紅素便無法攜帶氧氣，組織細胞得不到氧氣，尤其心臟和腦部影響最大，嚴重時會造成死亡。若能及早發現，將病患送至醫院，仍可利用高壓氧進行治療，使血紅素恢復攜帶氧氣的能力。
 
-    資料來源：境中日報http://www.gogogo.tw'
+    資料來源：埤中日報http://www.gogogo.tw'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1147,7 +1176,7 @@ questions:
   - label: C
     content: 增加氣氛
   - label: D
-    content: 可測量書之多寡。
+    content: 可測量糖之多寡。
   group_stem: 李苓在自然課進行唾液澱粉酶的影響實驗，實驗過程如下圖：將二支試管都加入本氏液
   shared_asset: g1_30_32
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1169,15 +1198,21 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 可測量書之多寡
+    to: 可測量糖之多寡
+    note: 選項D原卷為「糖」，誤擷為「書」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g7s1e2_s1_32
   section: 1
   number: 32
   type: single
   page: 2
-  stem: 推測A、B兩試管的顏色可能為何？
+  stem: 推測A、B兩試管的顏色可能為何？（原卷有誤，已修正）
   options:
   - label: A
-    content: 呈綠色、B呈藍色
+    content: A呈綠色、B呈藍色
   - label: B
     content: A呈黃色、B呈綠色
   - label: C
@@ -1205,6 +1240,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 呈綠色、B呈藍色
+    to: (A) A呈綠色、B呈藍色
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(A) 呈綠色、B呈藍色」→「(A) A呈綠色、B呈藍色」
+    by: review
 - id: doc_112_彰化_埤頭_自然_g7s1e2_s1_33
   section: 1
   number: 33

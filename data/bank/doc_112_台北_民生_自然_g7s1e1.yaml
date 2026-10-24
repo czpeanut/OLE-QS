@@ -651,12 +651,12 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: 單細胞生物與多細胞生物最重要的區別在於下列何者？
+  stem: 單細胞生物與多細胞生物最重要的區別在於下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 細胞大小
   - label: B
-    content: 適應環境能力的前弱
+    content: 適應環境能力的強弱
   - label: C
     content: 產生能量的強弱
   - label: D
@@ -680,6 +680,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (B) 適應環境能力的前弱
+    to: (B)適應環境能力的強弱
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(B) 適應環境能力的前弱」→「(B)適應環境能力的強弱」
+    by: review
 - id: doc_112_台北_民生_自然_g7s1e1_s1_17
   section: 1
   number: 17

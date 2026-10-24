@@ -365,7 +365,7 @@ questions:
   - label: C
     content: $1:\frac{2}{3}$
   - label: D
-    content: $\frac{3}{2}:1$
+    content: $\frac{2}{3}:1$
   tags:
     chapter:
       publisher: 翰林
@@ -385,6 +385,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 下列各選項中，哪些與 $30:20$ 是相等的比？________。
+    to: 下列各選項中，哪些與 $30:20$ 是相等的比？________。
+    note: 原卷D選項分數分子為2分母為3，誤植為3/2；且題型應為填充
+    by: review
+    extraction: true
 - id: doc_113_新北_蘆洲_數學_g7s2e2_s1_13
   section: 1
   number: 13
@@ -413,7 +419,7 @@ questions:
   number: 14
   type: fill
   page: 1
-  stem: 若 $(x+3)$ 與 $y$ 成正比，而且當 $x=0$ 時，$y=5$，則當 $x=-2$ 時，$y$＝＿＿
+  stem: 若 $(x+3)$ 與 $$ 成正比，而且當 $x=0$ 時，$y=5$，則當 $x=-2$ 時，$y$＝＿＿
   tags:
     chapter:
       publisher: 翰林
@@ -431,6 +437,12 @@ questions:
   - \frac{5}{3}
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若 $(x+3)$ 與 $y$ 成正比
+    to: 若(x＋3) 與   成正比
+    note: 原卷此處漏印y，擷取自行補上未知數y
+    by: review
+    extraction: true
 - id: doc_113_新北_蘆洲_數學_g7s2e2_s1_15
   section: 1
   number: 15

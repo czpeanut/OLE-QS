@@ -322,7 +322,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 「『陸放翁有一聯詩句：『傳呼快馬迎新月，卻上輕輿趁晚涼。』這是做地方官的風流。我在康橋時雖沒馬騎，沒轎子坐，卻也有我的風流：我常常在夕陽西晒時，騎了車迎著天邊扁大的日頭直追。」這段話的重點是何者？
+  stem: 「陸放翁有一聯詩句：『傳呼快馬迎新月，卻上輕輿趁晚涼。』這是做地方官的風流。我在康橋時雖沒馬騎，沒轎子坐，卻也有我的風流：我常常在夕陽西晒時，騎了車迎著天邊扁大的日頭直追。」這段話的重點是何者？
   options:
   - label: A
     content: 描繪夜晚的風光與活動
@@ -354,6 +354,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「『陸放翁有一聯詩句：『傳呼快馬
+    to: 「陸放翁有一聯詩句：『傳呼快馬
+    note: 題幹引號開頭多打了一個單引號「『」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s1e1_s1_10
   section: 1
   number: 10
@@ -470,7 +476,7 @@ questions:
   stem: 中國文字一字一義，但亦有一字本身並沒有意義，如：「琵」、「琶」，必須合成為「琵琶」才有意義。下列選項中，何者全部屬於這種情形？
   options:
   - label: A
-    content: 蹒跚、彷彿、尷尬
+    content: 蹣跚、彷彿、尷尬
   - label: B
     content: 垃圾、玻璃、天地
   - label: C
@@ -496,6 +502,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 蹒跚、彷彿、尷尬
+    to: (A) 蹣跚、彷彿、尷尬
+    note: 選項文字「蹣」誤植為簡體部首字「蹒」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s1e1_s1_14
   section: 1
   number: 14
@@ -682,7 +694,7 @@ questions:
   - label: C
     content: 不論是／去舊也好／迎新也好／一次炸裂／已然註定／我是要在／一個聲響裡誕生／一個聲響裡絕滅：太陽
   - label: D
-    content: 我就喜歡看你撐一把碧油傘／從水中升起／我向池心／輕輕扔過去一拉石子／你的臉便嘩然紅了起來：青蛙。
+    content: 我就喜歡看你撐一把碧油傘／從水中升起／我向池心／輕輕扔過去一粒石子／你的臉便嘩然紅了起來：青蛙。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -703,6 +715,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 輕輕扔過去一拉石子／你的臉便
+    to: 輕輕扔過去一粒石子／你的臉便
+    note: 選項 (D)「一粒」誤植為「一拉」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s1e1_s1_20
   section: 1
   number: 20

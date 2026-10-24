@@ -1011,12 +1011,12 @@ questions:
   type: single
   page: 2
   stem: Justin is tired today. He has a ball game in the afternoon, and he has English
-    and math homework to do in the evening. What day is today?
+    and math homework to do in the evening. What day is today?（原卷有誤，已修正）
   options:
   - label: A
     content: Monday
   - label: B
-    content: Thuesday
+    content: Tuesday
   - label: C
     content: Wednesday
   - label: D
@@ -1043,6 +1043,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (B) Thuesday
+    to: (B) Tuesday
+    note: 星期二拼字錯誤：「(B) Thuesday」→「(B) Tuesday」
+    by: review
 - id: doc_112_彰化_埤頭_英語_g7s1e2_s4_44
   section: 4
   number: 44
@@ -1283,7 +1288,7 @@ questions:
   number: 1
   type: essay
   page: 2
-  stem: My friends are painting with the markers. (依畫線造原問句)
+  stem: My friends are painting <u>with the markers</u>. (依畫線造原問句)
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1296,6 +1301,12 @@ questions:
       code: B1-13
       title: 現在進行式（be+Ving）+ What are you doing?
       chapter: B1 七上
+  errata:
+  - from: My friends are painting with the markers. (依畫線造原問句)
+    to: My friends are painting <u>with the markers</u>. (依畫線造原問句)
+    note: 原卷with the markers有畫底線，擷取未標示畫線處
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_英語_g7s1e2_s6_2
   section: 6
   number: 2

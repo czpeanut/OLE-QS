@@ -695,16 +695,16 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 植物學家在金門發現一種新的金門水韭，經過鑑定得知金門水韭與臺灣水韭為同種，而臺灣水韭的學名為Isoetes taiwanwnsis，則金門水韭的學名應為何？
+  stem: 植物學家在<u>金門</u>發現一種新的金門水韭，經過鑑定得知金門水韭與臺灣水韭為同種，而臺灣水韭的學名為 *Isoetes taiwanwnsis*，則金門水韭的學名應為何？
   options:
   - label: A
-    content: Isoetes taiwan-kingman
+    content: '*Isoetes taiwan-kingman*'
   - label: B
-    content: Isoetes taiwanwnsis
+    content: <u>Isoetes taiwanwnsis</u>
   - label: C
     content: Isoetes taiwanwnsis
   - label: D
-    content: Isoetes Taiwanwnsis
+    content: '*Isoetes Taiwanwnsis*'
   tags:
     chapter:
       publisher: 翰林
@@ -722,6 +722,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 植物學家在金門發現一種新的金門水韭，經過鑑定得知金門水韭與臺灣水韭為同種，而臺灣水韭的學名為Isoetes taiwanwnsis，則金門水韭的學名應為何？
+    to: 植物學家在<u>金門</u>發現一種新的金門水韭，經過鑑定得知金門水韭與臺灣水韭為同種，而臺灣水韭的學名為 *Isoetes taiwanwnsis*，則金門水韭的學名應為何？
+    note: 原卷B選項學名有畫底線以符學名規定，擷取遺漏致與C完全相同
+    by: review
+    extraction: true
 - id: doc_113_高雄_陽明_自然_g7s2e2_s1_20
   section: 1
   number: 20

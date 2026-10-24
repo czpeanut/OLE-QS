@@ -452,7 +452,7 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: 地圖中的方向標若為「
+  stem: 地圖中的方向標若為「」，則西方應位於地圖的哪一側？
   options:
   - label: A
     content: 上方
@@ -490,6 +490,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 地圖中的方向標若為「
+    to: 地圖中的方向標若為「」，則西方應位於地圖的哪一側？
+    note: 題幹文字在方向標符號後被截斷，漏掉後半句
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_社會_地理_g7s1e1_s1_17
   section: 1
   number: 17

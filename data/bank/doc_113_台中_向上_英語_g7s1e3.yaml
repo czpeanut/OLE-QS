@@ -656,10 +656,10 @@ questions:
   number: 19
   type: single
   page: 1
-  stem: 'Betty: ________ David: Is next Wednesday OK?'
+  stem: 'Betty: ________ David: Is next Wednesday OK?（原卷有誤，已修正）'
   options:
   - label: A
-    content: What day is you English class?
+    content: What day is your English class?
   - label: B
     content: When can we go to the movies?
   - label: C
@@ -683,6 +683,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) What day is you English class?
+    to: (A) What day is your English class?
+    note: you 應為所有格 your：「(A) What day is you English class?」→「(A) What day is your
+      English class?」
+    by: review
 - id: doc_113_台中_向上_英語_g7s1e3_s1_20
   section: 1
   number: 20

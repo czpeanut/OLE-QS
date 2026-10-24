@@ -10,7 +10,40 @@ const COMMANDS: Record<string, string> = {
   "\\gt": ">", "\\sim": "∼", "\\cong": "≅", "\\propto": "∝", "\\square": "□", "\\therefore": "∴",
   "\\because": "∵", "\\bot": "⊥", "\\Delta": "Δ", "\\mu": "μ", "\\Omega": "Ω", "\\lambda": "λ",
   "\\rho": "ρ", "\\%": "%", "\\,": " ", "\\ ": " ", "\\!": "",
+  // 化學、箭頭與其他常見符號
+  "\\rightleftharpoons": "⇌", "\\longrightarrow": "⟶", "\\Longrightarrow": "⟹", "\\to": "→", "\\uparrow": "↑",
+  "\\downarrow": "↓", "\\rightharpoonup": "⇀", "\\leftrightharpoons": "⇋", "\\Leftrightarrow": "⇔",
+  "\\fallingdotseq": "≒", "\\doteq": "≐", "\\equiv": "≡", "\\ll": "≪", "\\gg": "≫", "\\simeq": "≃",
+  "\\bigcirc": "◯", "\\bigstar": "★", "\\star": "⋆", "\\ominus": "⊖", "\\oplus": "⊕", "\\bigoplus": "⨁",
+  "\\otimes": "⊗", "\\odot": "⊙", "\\Box": "□", "\\blacksquare": "■", "\\blacktriangle": "▲", "\\vdots": "⋮",
+  "\\ddots": "⋱", "\\ell": "ℓ", "\\surd": "√", "\\mid": "∣", "\\vert": "|", "\\Vert": "‖", "\\frown": "⌒",
+  "\\gamma": "γ", "\\delta": "δ", "\\sigma": "σ", "\\phi": "φ", "\\varphi": "φ", "\\omega": "ω",
+  "\\epsilon": "ε", "\\varepsilon": "ε", "\\eta": "η", "\\Sigma": "Σ", "\\Pi": "Π", "\\Phi": "Φ",
+  "\\in": "∈", "\\notin": "∉", "\\subset": "⊂", "\\supset": "⊃", "\\cup": "∪", "\\cap": "∩",
+  "\\emptyset": "∅", "\\neg": "¬", "\\prime": "′", "\\quad": "\u2003", "\\qquad": "\u2003\u2003",
+  "\\implies": "⟹", "\\bullet": "•", "\\wedge": "∧", "\\vee": "∨", "\\langle": "⟨", "\\rangle": "⟩",
+  "\\blacktriangleright": "▶", "\\dashrightarrow": "⇢", "\\nearrow": "↗", "\\swarrow": "↙", "\\searrow": "↘",
+  "\\nwarrow": "↖", "\\newline": " ", "\\hline": "",
+  "\\;": " ", "\\:": " ", "\\{": "{", "\\}": "}", "\\#": "#", "\\&": "&", "\\_": "_",
 };
+// 排成正體的函數名
+const FUNCS = new Set(["\\sin", "\\cos", "\\tan", "\\cot", "\\sec", "\\csc", "\\log", "\\ln", "\\lim", "\\max", "\\min", "\\exp"]);
+// 只影響字級或樣式、內容照常輸出的命令
+const IGNORE = new Set(["\\Large", "\\large", "\\small", "\\normalsize", "\\displaystyle", "\\textstyle", "\\limits", "\\nolimits"]);
+// 弧：考卷 OCR 常寫成 \overparen、\overgroup、\widehat、\wideparen
+const ARCS = new Set(["\\overparen", "\\overgroup", "\\wideparen", "\\widehat", "\\overarc"]);
+const over = (mark: string, body: string) => `<span class="ovarr"><span class="arr">${mark}</span><span>${body}</span></span>`;
+
+// \begin{cases}…\end{cases} 這類環境：列以 \\ 分隔、欄以 & 分隔
+function env(name: string, body: string): string {
+  const rows = body.split(/\\\\(?:\[[^\]]*\])?/).map((r) => r.trim()).filter(Boolean)
+    .map((r) => r.split(/(?<!\\)&/).map((c) => latexToHtml(c.trim())));
+  if (name === "cases") return `<span class="cases">${rows.map((r) => `<span>${r.join(" ")}</span>`).join("")}</span>`;
+  if (name === "aligned" || name === "align" || name === "gathered")
+    return `<span class="rows">${rows.map((r) => `<span>${r.join("")}</span>`).join("")}</span>`;
+  const cls = name === "vmatrix" ? "mtx vbar" : name === "pmatrix" ? "mtx paren" : "mtx";
+  return `<span class="${cls}">${rows.map((r) => `<span class="mrow">${r.map((c) => `<span>${c}</span>`).join("")}</span>`).join("")}</span>`;
+}
 
 export function esc(s: unknown): string {
   return String(s ?? "").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]!);
@@ -43,6 +76,38 @@ export function latexToHtml(tex: string): string {
         out.push(`<span class="frac"><span class="num">${latexToHtml(num)}</span><span class="den">${latexToHtml(den)}</span></span>`);
         i = k; continue;
       }
+      if (cmd === "\\begin") {
+        const [name, j] = group(tex, after);
+        const close = tex.indexOf(`\\end{${name}}`, j);
+        let k = j;
+        if (name === "array" || name === "tabular") k = group(tex, j)[1];   // 欄位格式 {cc}
+        const body = close < 0 ? tex.slice(k) : tex.slice(k, close);
+        out.push(env(name, body));
+        i = close < 0 ? tex.length : close + `\\end{${name}}`.length; continue;
+      }
+      if (ARCS.has(cmd)) { const [b, j] = group(tex, after); out.push(over("⌒", latexToHtml(b))); i = j; continue; }
+      if (cmd === "\\vec") { const [b, j] = group(tex, after); out.push(over("→", latexToHtml(b))); i = j; continue; }
+      if (cmd === "\\overset" || cmd === "\\stackrel") {
+        const [a, j] = group(tex, after);
+        const [b, k] = group(tex, j);
+        out.push(over(/\\frown/.test(a) ? "⌒" : latexToHtml(a), latexToHtml(b))); i = k; continue;
+      }
+      if (cmd === "\\underset") {
+        const [a, j] = group(tex, after);
+        const [b, k] = group(tex, j);
+        out.push(`<span class="unarr"><span>${latexToHtml(b)}</span><span class="arr">${latexToHtml(a)}</span></span>`); i = k; continue;
+      }
+      if (cmd === "\\xrightarrow" || cmd === "\\xleftarrow" || cmd === "\\xrightleftharpoons") {
+        const [a, j] = group(tex, after);
+        out.push(over(latexToHtml(a), cmd === "\\xrightarrow" ? "⟶" : cmd === "\\xleftarrow" ? "⟵" : "⇌")); i = j; continue;
+      }
+      if (cmd === "\\underline") { const [b, j] = group(tex, after); out.push(`<span class="unl">${latexToHtml(b) || "\u2003"}</span>`); i = j; continue; }
+      if (cmd === "\\hspace" || cmd === "\\vspace" || cmd === "\\phantom") { const [, j] = group(tex, after); out.push(cmd === "\\vspace" ? "" : "\u2003"); i = j; continue; }
+      if (["\\mathbin", "\\mathrel", "\\operatorname", "\\rm"].includes(cmd)) {
+        const [b, j] = group(tex, after); out.push(`<span class="up">${latexToHtml(b)}</span>`); i = j; continue;
+      }
+      if (FUNCS.has(cmd)) { out.push(`<span class="up">${cmd.slice(1)}</span>`); i = after; continue; }
+      if (IGNORE.has(cmd)) { i = after; continue; }
       if (cmd === "\\sqrt") { const [b, j] = group(tex, after); out.push(`√<span class="sqrt">${latexToHtml(b)}</span>`); i = j; continue; }
       if (cmd === "\\overline") { const [b, j] = group(tex, after); out.push(`<span class="ovl">${latexToHtml(b)}</span>`); i = j; continue; }
       if (cmd === "\\overleftrightarrow" || cmd === "\\overrightarrow") {
@@ -55,7 +120,7 @@ export function latexToHtml(tex: string): string {
         const [b, j] = group(tex, after); out.push(`<span class="up">${latexToHtml(b)}</span>`); i = j; continue;
       }
       if (cmd === "\\text") { const [b, j] = group(tex, after); out.push(esc(b)); i = j; continue; }
-      if (cmd === "\\left" || cmd === "\\right") { i = after; continue; }
+      if (cmd === "\\left" || cmd === "\\right") { i = tex[after] === "." ? after + 1 : after; continue; }
       out.push(cmd in COMMANDS ? COMMANDS[cmd] : esc(cmd));       // 未知命令保留原樣
       i = after; continue;
     }
@@ -71,10 +136,15 @@ export function latexToHtml(tex: string): string {
   return out.join("");
 }
 
+// 題目裡的畫線處寫成 <u>…</u>（雙底線 <u class="dbl">…</u>）；其餘角括號一律當文字
+function underline(escaped: string): string {
+  return escaped.replace(/&lt;u( class="dbl")?&gt;/g, (_, d) => (d ? '<u class="dbl">' : "<u>")).replace(/&lt;\/u&gt;/g, "</u>");
+}
+
 function inline(md: string): string {
   return md.split(/\$([^$]*)\$/).map((chunk, i) =>
     i % 2 ? `<span class="math">${latexToHtml(chunk)}</span>`
-      : esc(chunk).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\n/g, "<br>"),
+      : underline(esc(chunk)).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\n/g, "<br>"),
   ).join("");
 }
 
@@ -117,6 +187,16 @@ table.md{border-collapse:collapse;margin:4px 0;font-size:.92em}
 table.md td,table.md th{border:1px solid currentColor;padding:1px 8px;text-align:center}
 .ovarr{display:inline-flex;flex-direction:column;align-items:center;line-height:1;vertical-align:-0.1em}
 .ovarr .arr{font-size:.7em;line-height:.8;font-style:normal}
+.unarr{display:inline-flex;flex-direction:column;align-items:center;line-height:1.1;vertical-align:top}
+.unarr .arr{font-size:.7em;font-style:normal}
+u{text-decoration:underline;text-underline-offset:.18em}u.dbl{text-decoration-style:double}
+.unl{display:inline-block;min-width:1.5em;border-bottom:1px solid currentColor;text-align:center}
+.cases{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:left;border-left:1.5px solid currentColor;border-radius:.7em 0 0 .7em;padding:0 .2em 0 .45em;margin:0 .15em}
+.rows{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:left}
+.mtx{display:inline-table;vertical-align:middle;margin:0 .2em}
+.mtx .mrow{display:table-row}.mtx .mrow>span{display:table-cell;padding:0 .4em;text-align:center}
+.mtx.vbar{border-left:1px solid currentColor;border-right:1px solid currentColor}
+.mtx.paren{border-left:1px solid currentColor;border-right:1px solid currentColor;border-radius:.6em}
 `;
 
 // 原卷題幹開頭的作答括號與題號（「( )16.」）：組卷後題號重編，留著會兩個題號並列

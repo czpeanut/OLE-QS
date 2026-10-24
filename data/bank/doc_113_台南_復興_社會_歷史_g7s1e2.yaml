@@ -108,7 +108,7 @@ questions:
   number: 21
   type: single
   page: 1
-  stem: 承第一題，下列何者是這場戰役帶來的後續影響？
+  stem: 承上題，下列何者是這場戰役帶來的後續影響？
   options:
   - label: A
     content: 宣布臺灣建省
@@ -137,6 +137,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承第一題，下列何者是這場戰役帶來的後續影響？
+    to: 承上題，下列何者是這場戰役帶來的後續影響？
+    note: 「承上題」誤植為「承第一題」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_歷史_g7s1e2_s1_22
   section: 1
   number: 22

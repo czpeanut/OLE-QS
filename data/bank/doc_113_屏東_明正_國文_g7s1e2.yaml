@@ -543,7 +543,7 @@ questions:
   - label: A
     content: 童年往事埋藏在記憶深處，一旦被觸動，便清楚呈現眼前
   - label: B
-    content: 童年瑣事像小花小草般細碎，想要記起來很不客易
+    content: 童年瑣事像小花小草般細碎，想要記起來很不容易
   - label: C
     content: 童年往事就如同四季更迭，不斷地在腦海中輪替出現
   - label: D
@@ -568,6 +568,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 想要記起來很不客易
+    to: 想要記起來很不容易
+    note: 「容易」誤植為「客易」
+    by: review
+    extraction: true
 - id: doc_113_屏東_明正_國文_g7s1e2_s2_9
   section: 2
   number: 9

@@ -38,7 +38,7 @@ questions:
   number: 1
   type: fill
   page: 1
-  stem: 廢「ㄔㄨㄥˊ」忘食
+  stem: 廢「ㄑㄧㄣˇ」忘食
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -59,12 +59,18 @@ questions:
   - 舂
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：廢「ㄔㄨㄥˊ」忘食 → 廢「ㄑㄧㄣˇ」忘食
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g7s2e3_s1_2
   section: 1
   number: 2
   type: fill
   page: 1
-  stem: 「ㄘˋ」延
+  stem: 「ㄒㄧㄝˋ」逅
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   group_stem: 一、國字注音
@@ -84,12 +90,18 @@ questions:
     gemini_high: 熾
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 「ㄘˋ」延
+    to: 「ㄒㄧㄝˋ」逅
+    note: 注音及文字擷取錯誤
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g7s2e3_s1_3
   section: 1
   number: 3
   type: fill
   page: 1
-  stem: 燭光搖「ㄊㄤˊ」
+  stem: 燭光搖「ㄧˋ」
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -110,6 +122,12 @@ questions:
   - 盪
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：燭光搖「ㄊㄤˊ」 → 燭光搖「ㄧˋ」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g7s2e3_s1_4
   section: 1
   number: 4
@@ -490,7 +508,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 阿尚參加字形辨識大賽，有一題是他沒有把握答對的題目，請你幫他選出字形不同的選項？
+  stem: 阿尚參加字形辨識大賽，有一題是他沒有把握答對的題目，請你幫他選出字形相同的選項？（原卷有誤，已修正）
   options:
   - label: A
     content: 「ㄆㄢ」登山界／土石坍「ㄊㄚ」
@@ -520,6 +538,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：請你幫他選出字形不同的選項？ → 請你幫他選出字形相同的選項？
+    by: review
 - id: doc_112_彰化_福興_國文_g7s2e3_s3_2
   section: 3
   number: 2
@@ -559,21 +582,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: '甲「無」興／「暗」示
-
-    乙「與」我／「與」共
-
-    丙「布」好／烏雲密「布」
-
-    丁「貢」獻／「渺」小
-
-    戊「倍」增／「茫」然
-
-    己「暗」自／飲「泣」
-
-    庚「泣」不成聲。
-
-    以上各組引號中的字，字義彼此相同者共有幾組？'
+  stem: (甲)「與」會者／時不我「與」 (乙)菜肴「布」好／烏雲密「布」 (丙)貢獻「渺」小／音信「渺」茫 (丁)暗自飲「泣」／「泣」不成聲。以上各組引號中的字，字義彼此相同者共有幾組？
   options:
   - label: A
     content: 一組
@@ -602,6 +611,26 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '甲「無」興／「暗」示
+
+      乙「與」我／「與」共
+
+      丙「布」好／烏雲密「布」
+
+      丁「貢」獻／「渺」小
+
+      戊「倍」增／「茫」然
+
+      己「暗」自／飲「泣」
+
+      庚「泣」不成聲。
+
+      以上各組引號中的字，字義彼此相同者共有幾組？'
+    to: (甲)「與」會者／時不我「與」 (乙)菜肴「布」好／烏雲密「布」 (丙)貢獻「渺」小／音信「渺」茫 (丁)暗自飲「泣」／「泣」不成聲。以上各組引號中的字，字義彼此相同者共有幾組？
+    note: 引號字與題目詞句錯置割裂
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g7s2e3_s3_4
   section: 3
   number: 4
@@ -649,7 +678,7 @@ questions:
   - label: A
     content: 庭中水井交映，竹柏藻荇高下錯雜
   - label: B
-    content: 承天寺水份映水，景色秀麗
+    content: 承天寺水竹映月，景色秀麗
   - label: C
     content: 月光皎潔，與竹柏之影交相掩映
   - label: D
@@ -676,6 +705,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：承天寺水份映水，景色秀麗 → 承天寺水竹映月，景色秀麗
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g7s2e3_s3_6
   section: 3
   number: 6
@@ -881,7 +916,7 @@ questions:
   - label: B
     content: 以外國家庭謝飯的例子起筆，藉以回憶兒時的經驗，思考謝天的含義
   - label: C
-    content: 內容不完全否定前人的說法，著有自己獨到的見解
+    content: 內容不完全否定前人的說法，並有自己獨到的見解
   - label: D
     content: 採取夾敘夾議的方式行文，使內容不至於呆板嚴肅
   lesson_raw:
@@ -906,6 +941,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：著有自己獨到的見解 → 並有自己獨到的見解
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g7s2e3_s3_12
   section: 3
   number: 12
@@ -1303,7 +1344,7 @@ questions:
   stem: 下列各組文句中，何者文意通暢，用詞最適當？
   options:
   - label: A
-    content: 本屆金馬獎頒獎典禮由屈原原始人再度主持，獻出螢幕處女秀
+    content: 本屆金馬獎頒獎典禮由陶晶瑩再度主持，獻出螢幕處女秀
   - label: B
     content: 真相難免會被隱藏，我們不可一味地相信眼見的一切
   - label: C
@@ -1329,6 +1370,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：由屈原原始人再度主持 → 由陶晶瑩再度主持
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g7s2e3_s4_9
   section: 4
   number: 9
@@ -1443,7 +1490,7 @@ questions:
   - label: B
     content: 對摺的情書，尋找花的住址
   - label: C
-    content: 現在／你是夏日程裡／最快樂的／水聲了
+    content: 現在／你是夏日裏／最快樂的／水聲了
   - label: D
     content: 冷豔洗空的季節／借植蘆葦／站個耶穌釘十字架的姿勢
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1465,6 +1512,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：你是夏日程裡／最快樂的 → 你是夏日裏／最快樂的
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g7s2e3_s4_13
   section: 4
   number: 13
@@ -1687,12 +1740,12 @@ questions:
   number: 4
   type: single
   page: 3
-  stem: 關於本文的敘述，何者正確？
+  stem: 關於本文的敘述，何者正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 百姓每天要捕一次魚
   - label: B
-    content: 使魚群飢餓，更容易捕獲
+    content: 使獺群飢餓，更容易捕獲
   - label: C
     content: 百姓主動給魚以控制水獺
   - label: D
@@ -1719,6 +1772,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：使魚群飢餓，更容易捕獲 → 使獺群飢餓，更容易捕獲
+    by: review
 - id: doc_112_彰化_福興_國文_g7s2e3_s5_5
   section: 5
   number: 5

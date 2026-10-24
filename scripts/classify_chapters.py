@@ -78,7 +78,7 @@ def load_units(curr: dict, grade: int, sem: int, subject: str, sub: str | None) 
     if subject == "社會":
         subs = [sub] if sub else ["歷史", "地理", "公民"]
     elif subject == "自然":
-        subs = [s for s in ("生物", "理化", "地科") if s in book]
+        subs = [sub] if sub in book else [s for s in ("生物", "理化", "地科") if s in book]   # 分科出卷的只給該科
     else:
         subs = [""]
     out = []

@@ -57,6 +57,7 @@ questions:
   - ㄐㄧㄝˊ
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_2
   section: 1
   number: 2
@@ -80,6 +81,7 @@ questions:
   - ㄐㄩˋ
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_3
   section: 1
   number: 3
@@ -103,6 +105,7 @@ questions:
   - ㄅㄧˋ
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_4
   section: 1
   number: 4
@@ -126,6 +129,7 @@ questions:
   - ㄓㄨㄛˊ
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_5
   section: 1
   number: 5
@@ -149,6 +153,7 @@ questions:
   - ㄐㄧㄢ
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_6
   section: 1
   number: 6
@@ -172,6 +177,7 @@ questions:
   - ㄆㄧˇ
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_7
   section: 1
   number: 7
@@ -195,6 +201,7 @@ questions:
   - 染
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_8
   section: 1
   number: 8
@@ -219,6 +226,7 @@ questions:
   - 頤
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_9
   section: 1
   number: 9
@@ -242,6 +250,7 @@ questions:
   - 囂
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_10
   section: 1
   number: 10
@@ -265,6 +274,7 @@ questions:
   - 褻
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_11
   section: 1
   number: 11
@@ -288,6 +298,7 @@ questions:
   - 讖
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s1_12
   section: 1
   number: 12
@@ -311,13 +322,16 @@ questions:
   - 齧
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s2_1
   section: 2
   number: 1
   type: matching
   page: 1
   stem: 忿狷
-  group_stem: 二、解釋
+  group_stem: '二、解釋（每題 2 分，共 26 分）
+
+    【參考選項】：請填寫代號'
   tags:
     chapter:
       publisher: 翰林
@@ -328,13 +342,58 @@ questions:
       chapter: null
     textbook: 八上 自學課一 世說新語選(一)坦腹東床(二)王藍田食雞子
     labeled_by: ai
+  options:
+  - label: A
+    content: 於是
+  - label: B
+    content: 放棄、丟下。
+  - label: C
+    content: 散步。
+  - label: D
+    content: 玩弄。
+  - label: E
+    content: 形容花紋鮮麗，光彩奪目。
+  - label: F
+    content: 發怒、生氣。
+  - label: G
+    content: 踩、踏。
+  - label: H
+    content: 嘆息聲。
+  - label: I
+    content: 憤怒急躁。
+  - label: J
+    content: 醒目耀眼。
+  - label: K
+    content: 難道、怎麼。
+  - label: L
+    content: 認為
+  - label: M
+    content: 水面的波紋。
+  - label: N
+    content: 幸虧、好在。
+  - label: O
+    content: 左顧右盼、神采飛揚的樣子。
+  - label: P
+    content: 高挺的樣子。
+  - label: Q
+    content: 咬。
+  - label: R
+    content: 為何、為什麼。
+  errata:
+  - from: 忿狷
+    to: 忿狷
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「二、解釋」→「【參考選項】：請填寫代號 A. 於是 B. 放棄、丟下。」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五福_國文_g8s1e3_s2_2
   section: 2
   number: 2
   type: matching
   page: 1
   stem: 蹓躂
-  group_stem: 二、解釋
+  group_stem: '二、解釋（每題 2 分，共 26 分）
+
+    【參考選項】：請填寫代號'
   tags:
     chapter:
       publisher: 翰林
@@ -351,7 +410,9 @@ questions:
   type: matching
   page: 1
   stem: 照眼
-  group_stem: 二、解釋
+  group_stem: '二、解釋（每題 2 分，共 26 分）
+
+    【參考選項】：請填寫代號'
   tags:
     chapter:
       publisher: 翰林
@@ -368,7 +429,9 @@ questions:
   type: matching
   page: 1
   stem: 斑斕
-  group_stem: 二、解釋
+  group_stem: '二、解釋（每題 2 分，共 26 分）
+
+    【參考選項】：請填寫代號'
   tags:
     chapter:
       publisher: 翰林
@@ -385,7 +448,9 @@ questions:
   type: matching
   page: 1
   stem: 「瞋」甚
-  group_stem: 二、解釋
+  group_stem: '二、解釋（每題 2 分，共 26 分）
+
+    【參考選項】：請填寫代號'
   tags:
     chapter:
       publisher: 翰林
@@ -402,7 +467,9 @@ questions:
   type: matching
   page: 1
   stem: 「幸」尚寬
-  group_stem: 二、解釋
+  group_stem: '二、解釋（每題 2 分，共 26 分）
+
+    【參考選項】：請填寫代號'
   tags:
     chapter:
       publisher: 翰林
@@ -419,7 +486,9 @@ questions:
   type: matching
   page: 1
   stem: 瞵視昂藏
-  group_stem: 二、解釋
+  group_stem: '二、解釋（每題 2 分，共 26 分）
+
+    【參考選項】：請填寫代號'
   tags:
     chapter:
       publisher: 翰林
@@ -446,6 +515,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s2_9
   section: 2
   number: 9
@@ -462,6 +532,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s2_10
   section: 2
   number: 10
@@ -478,6 +549,7 @@ questions:
       chapter: null
     textbook: 八上 自學課一 世說新語選(一)坦腹東床(二)王藍田食雞子
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s2_11
   section: 2
   number: 11
@@ -494,6 +566,7 @@ questions:
       chapter: null
     textbook: 八上 自學課一 世說新語選(一)坦腹東床(二)王藍田食雞子
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s2_12
   section: 2
   number: 12
@@ -510,6 +583,7 @@ questions:
       chapter: null
     textbook: 八上 自學課一 世說新語選(一)坦腹東床(二)王藍田食雞子
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s2_13
   section: 2
   number: 13
@@ -526,6 +600,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_1
   section: 3
   number: 1
@@ -555,6 +630,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_2
   section: 3
   number: 2
@@ -584,6 +660,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_3
   section: 3
   number: 3
@@ -613,6 +690,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_4
   section: 3
   number: 4
@@ -642,6 +720,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_5
   section: 3
   number: 5
@@ -671,6 +750,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_6
   section: 3
   number: 6
@@ -700,6 +780,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_7
   section: 3
   number: 7
@@ -729,6 +810,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_8
   section: 3
   number: 8
@@ -758,6 +840,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_9
   section: 3
   number: 9
@@ -787,6 +870,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s3_10
   section: 3
   number: 10
@@ -816,6 +900,7 @@ questions:
       chapter: null
     textbook: 八上 第四課 愛蓮說
     labeled_by: ai
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_1
   section: 4
   number: 1
@@ -848,6 +933,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_2
   section: 4
   number: 2
@@ -880,6 +966,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_3
   section: 4
   number: 3
@@ -912,6 +999,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_4
   section: 4
   number: 4
@@ -944,6 +1032,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_5
   section: 4
   number: 5
@@ -976,6 +1065,7 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_6
   section: 4
   number: 6
@@ -1008,6 +1098,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_7
   section: 4
   number: 7
@@ -1052,6 +1143,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_8
   section: 4
   number: 8
@@ -1084,6 +1176,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_9
   section: 4
   number: 9
@@ -1116,6 +1209,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_10
   section: 4
   number: 10
@@ -1180,6 +1274,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_11
   section: 4
   number: 11
@@ -1212,6 +1307,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_12
   section: 4
   number: 12
@@ -1245,6 +1341,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_13
   section: 4
   number: 13
@@ -1259,7 +1356,7 @@ questions:
   - label: C
     content: 抓小雞的鳶鷹，啾啾地叫著，在天空盤旋――從音樂的觀點描寫鳥類的叫聲，表現鳥鳴的韻律美
   - label: D
-    content: 像虹似的一下就消逝了――藉虹美麗多彩、瞬間消失的意象描寫鳥類的悄然離去，留給人無限迷惘
+    content: 像虹似的一下就消逝了――藉虹美麗多彩、瞬間消失的意象描寫鳥的悄然離去，留給人無限迷惘
   lesson_raw:
     title: 鳥
     basis: 題幹提及〈鳥〉一文
@@ -1281,6 +1378,13 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
+  errata:
+  - from: 描寫鳥類的悄然離去，留給人無限迷惘
+    to: 描寫鳥的悄然離去，留給人無限迷惘
+    note: 原卷為「鳥的」，擷取多字作「鳥類的」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_14
   section: 4
   number: 14
@@ -1316,6 +1420,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_15
   section: 4
   number: 15
@@ -1351,6 +1456,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_16
   section: 4
   number: 16
@@ -1386,6 +1492,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_17
   section: 4
   number: 17
@@ -1421,6 +1528,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_18
   section: 4
   number: 18
@@ -1453,6 +1561,7 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_19
   section: 4
   number: 19
@@ -1485,6 +1594,7 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s4_20
   section: 4
   number: 20
@@ -1519,6 +1629,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s5_1
   section: 5
   number: 1
@@ -1644,6 +1755,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s5_3
   section: 5
   number: 3
@@ -1728,6 +1840,7 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: null
 - id: doc_113_高雄_五福_國文_g8s1e3_s5_4
   section: 5
   number: 4

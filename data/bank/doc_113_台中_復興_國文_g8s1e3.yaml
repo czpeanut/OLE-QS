@@ -598,7 +598,7 @@ questions:
   - label: C
     content: 故事的高潮是蓋茲與舍月開始頻繁接觸後，將對彼此過往的誤解，開誠布公的坦承後，破除兩人的隔閡。
   - label: D
-    content: 情節中的飯勺象徵著東西兩家間的文化隔閡，而老藤也暗示這不同文化中的彆扭。
+    content: 故事情節中的飯勺象徵著東西兩家間的文化隔閡，而老藤也暗示這不同文化中的彆扭。
   lesson_raw:
     title: 拆牆
     basis: 題幹提及課名〈拆牆〉
@@ -621,6 +621,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D)情節中的飯勺象徵著東西兩家間的文化隔閡
+    to: (D)故事情節中的飯勺象徵著東西兩家間的文化隔閡
+    note: 選項(D)開頭漏了「故事」二字
+    by: review
+    extraction: true
 - id: doc_113_台中_復興_國文_g8s1e3_s1_17
   section: 1
   number: 17
@@ -1308,7 +1314,7 @@ questions:
 
     在棒球場上，有一種特殊的球員，叫做「救援投手」。
 
-    甲、他們是最接近沂火與爆炸的族類，
+    甲、他們是最接近活火與爆炸的族類，
 
     乙、動輒三、四小時的漫長比賽裡，
 
@@ -1348,6 +1354,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 甲、他們是最接近沂火與爆炸的族類，
+    to: 甲、他們是最接近活火與爆炸的族類，
+    note: 「活火」誤擷取為「沂火」
+    by: review
+    extraction: true
 - id: doc_113_台中_復興_國文_g8s1e3_s1_37
   section: 1
   number: 37

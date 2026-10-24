@@ -300,7 +300,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 日治時期的「蓬萊米」多運往哪一個港口輸出？因為港口位置關係，最新省運費。
+  stem: 日治時期的「蓬萊米」多運往哪一個港口輸出？因為港口位置關係，最節省運費。
   options:
   - label: A
     content: 基隆港
@@ -330,6 +330,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 因為港口位置關係，最新省運費。
+    to: 因為港口位置關係，最節省運費。
+    note: 原卷為「最節省運費」，誤擷為「最新省」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g7s2e1_s1_9
   section: 1
   number: 9
@@ -659,7 +665,7 @@ questions:
   number: 18
   type: single
   page: 1
-  stem: 日治時期先後有「台灣舊慣調查會」成立，對台灣的人口、歷史、地理、教育、宗教與風俗習慣進行了一連串的調查與研究，這些資料也成為當時臺灣總督府施政依據。請問斷這組織成立於哪一時期？
+  stem: 日治時期先後有「台灣舊慣調查會」成立，對台灣的人口、歷史、地理、教育、宗教與風俗習慣進行了一連串的調查與研究，這些資料也成為當時臺灣總督府施政依據。請判斷這組織成立於哪一時期？（原卷有誤，已修正）
   options:
   - label: A
     content: 無方針
@@ -688,6 +694,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問斷這組織成立於哪一時期？
+    to: 請判斷這組織成立於哪一時期？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「請問斷這組織成立於哪一時期？」→「請判斷這組織成立於哪一時期？」
+    by: review
 - id: doc_111_彰化_福興_社會_歷史_g7s2e1_s1_19
   section: 1
   number: 19
@@ -1235,7 +1246,7 @@ questions:
   stem: 皇民化運動時期正值哪一場戰爭發生之際？（原卷有誤，已修正）
   options:
   - label: A
-    content: 甲午戰爭
+    content: 甲午戰爭戰爭
   - label: B
     content: 清法戰爭
   - label: C
@@ -1266,6 +1277,10 @@ questions:
     to: (A) 甲午戰爭
     note: 選項漏印「戰爭」二字
     by: ai_review
+  - from: (A) 甲午
+    to: (A) 甲午戰爭
+    note: 選項漏印「戰爭」二字：「(A) 甲午」→「(A) 甲午戰爭」
+    by: review
 - id: doc_111_彰化_福興_社會_歷史_g7s2e1_s1_35
   section: 1
   number: 35

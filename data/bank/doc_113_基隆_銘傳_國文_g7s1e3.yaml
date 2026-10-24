@@ -145,7 +145,7 @@ questions:
   - label: A
     content: 我註足眺望碧藍如玉的湖水，心神陷入了沉思之中
   - label: B
-    content: 傲人做事若一味要求完美，反而會適得其反
+    content: 做人做事若一味要求完美，反而會適得其反
   - label: C
     content: 面對誘人的美食廣告，總是讓人十指大動，胃口大開
   - label: D
@@ -169,6 +169,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：(B) 傲人做事若一味要求完美 → (B) 做人做事若一味要求完美
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e3_s1_5
   section: 1
   number: 5
@@ -211,7 +217,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列語詞「」中的同音字，何者寫成國字後字形不相同？
+  stem: 下列語詞「」中的同音字，何者寫成國字後字形不相同？（原卷有誤，已修正）
   options:
   - label: A
     content: 「ㄅㄟ、ㄅㄟ」皆是／櫛「ㄅㄟ、」鱗次
@@ -220,7 +226,7 @@ questions:
   - label: C
     content: 以小人之心，「ㄉㄨㄛˋ」君子之腹／用心揣「ㄉㄨㄛˋ」
   - label: D
-    content: 與「ㄈㄣ」不已／群情激「ㄈㄣ」。
+    content: 興「ㄈㄣ」不已／群情激「ㄈㄣ」。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -241,6 +247,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：(D) 與「ㄈㄣ」不已 → (D) 興「ㄈㄣ」不已
+    by: review
 - id: doc_113_基隆_銘傳_國文_g7s1e3_s1_7
   section: 1
   number: 7
@@ -388,7 +399,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 關於〈兒時記趣〉一文，下列選項敘述，何者為非？
+  stem: 關於〈兒時記趣〉一文，下列選項敘述，何者<u>為非</u>？
   options:
   - label: A
     content: 「余憶童稚時，能張目對日，明察秋毫」一句並非想像力的運用
@@ -426,6 +437,11 @@ questions:
     to: (A) 「余憶童稚時，能張目對日，明察秋毫」
     note: 「億」印錯，應為「憶」
     by: ai_review
+    extraction: true
+  - from: 關於〈兒時記趣〉一文，下列選項敘述，何者為非？
+    to: 關於〈兒時記趣〉一文，下列選項敘述，何者<u>為非</u>？
+    note: 「億」印錯，應為「憶」：「(A) 「余億童稚時，能張目對日，明察秋毫」」→「(A) 「余憶童稚時，能張目對日，明察秋毫」」
+    by: review
     extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e3_s2_12
   section: 2
@@ -1492,7 +1508,7 @@ questions:
     content: 因菊花生長在秋季，所以令作者悠然避暑
   - label: D
     content: 本篇文章主要在推廣菊花茶的妙用。
-  group_stem: '而作為一款者，仲夏之際，我獨鍾愛菊花茶，是因為那樣一缽漂浮著菊花的澄淨之水，似乎具有一種溫和無邊的法力，能使人自酷熱煩躁的死谷中飛昇起來，就像一朵朵圓滿小巧的菊花，在水霧氤氳①之中，自杯底飛昇至淡綠的水面一樣。那時，所有棻②亂浮囂的意緒，忙迫勞形的人事，都化作寂淡的煙塵，自心頭遠去，因此，人雖仍在火熱熱的人間，但心境安閒，無異置身茂林修竹或一方荷亭之上，悠然避暑了。
+  group_stem: '而作為一飲者，仲夏之際，我獨鍾愛菊花茶，是因為那樣一缽漂浮著菊花的澄淨之水，似乎具有一種溫和無邊的法力，能使人自酷熱煩躁的死谷中飛昇起來，就像一朵朵圓滿小巧的菊花，在水霧氤氳①之中，自杯底飛昇至淡綠的水面一樣。那時，所有棻②亂浮囂的意緒，忙迫勞形的人事，都化作寂淡的煙塵，自心頭遠去，因此，人雖仍在火熱熱的人間，但心境安閒，無異置身茂林修竹或一方荷亭之上，悠然避暑了。
 
     ＊①氤氳：煙雲瀰漫的樣子。②棻：ㄈㄣ，紊亂。 節選自陳幸蕙《消夏——飛昇的菊花》'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1514,12 +1530,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：而作為一款者，仲夏之際，我獨鍾愛菊花茶 → 而作為一飲者，仲夏之際，我獨鍾愛菊花茶
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e3_s3_40
   section: 3
   number: 40
   type: single
   page: 4
-  stem: 文章中作者藉由菊花茶消暑，而菊花茶是秋天的植物。下列句子何者沒有用花來暗示季節？
+  stem: 文章中作者藉由菊花茶消暑，而菊花是秋天的植物。下列句子何者沒有用花來暗示季節？（原卷有誤，已修正）
   options:
   - label: A
     content: 故作小紅桃杏色，尚餘孤瘦雪霜枝
@@ -1529,7 +1551,7 @@ questions:
     content: 滿地黃花堆積，憔悴損，如今有誰堪摘
   - label: D
     content: 紅白蓮花開共塘，兩般顏色一般香。
-  group_stem: '而作為一款者，仲夏之際，我獨鍾愛菊花茶，是因為那樣一缽漂浮著菊花的澄淨之水，似乎具有一種溫和無邊的法力，能使人自酷熱煩躁的死谷中飛昇起來，就像一朵朵圓滿小巧的菊花，在水霧氤氳①之中，自杯底飛昇至淡綠的水面一樣。那時，所有棻②亂浮囂的意緒，忙迫勞形的人事，都化作寂淡的煙塵，自心頭遠去，因此，人雖仍在火熱熱的人間，但心境安閒，無異置身茂林修竹或一方荷亭之上，悠然避暑了。
+  group_stem: '而作為一飲者，仲夏之際，我獨鍾愛菊花茶，是因為那樣一缽漂浮著菊花的澄淨之水，似乎具有一種溫和無邊的法力，能使人自酷熱煩躁的死谷中飛昇起來，就像一朵朵圓滿小巧的菊花，在水霧氤氳①之中，自杯底飛昇至淡綠的水面一樣。那時，所有棻②亂浮囂的意緒，忙迫勞形的人事，都化作寂淡的煙塵，自心頭遠去，因此，人雖仍在火熱熱的人間，但心境安閒，無異置身茂林修竹或一方荷亭之上，悠然避暑了。
 
     ＊①氤氳：煙雲瀰漫的樣子。②棻：ㄈㄣ，紊亂。 節選自陳幸蕙《消夏——飛昇的菊花》'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1552,12 +1574,17 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: ''
+    to: ''
+    note: 原卷有誤已修正（審題回報）：而菊花茶是秋天的植物。下列句子何者沒有用花來暗示季節？ → 而菊花是秋天的植物。下列句子何者沒有用花來暗示季節？
+    by: review
 - id: doc_113_基隆_銘傳_國文_g7s1e3_s4_41
   section: 4
   number: 41
   type: fill
   page: 4
-  stem: 「ㄨㄟˊ」為壯觀
+  stem: 41.「ㄨㄟˋ」為壯觀
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1577,6 +1604,12 @@ questions:
   - 蔚
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ''
+    to: ''
+    note: 擷取錯誤已修正（審題回報）：「ㄨㄟˊ」為壯觀 → 41.「ㄨㄟˋ」為壯觀
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g7s1e3_s4_42
   section: 4
   number: 42

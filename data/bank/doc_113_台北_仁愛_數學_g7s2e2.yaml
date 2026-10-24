@@ -518,7 +518,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 有 $A$、$B$ 兩個完全相同的杯子，各裝不同量的水。若將 $A$ 杯中 $\frac{1}{7}$ 的水倒入 $B$ 杯，則兩杯的水位相等。設
+  stem: 有 $A$、$B$ 兩個完全相同的杯子，各裝不同量的水。若將 $A$ 杯中 $\frac{1}{7}$ 的水倒入 $B$ 杯，則兩杯的水位等高。設
     $A$ 杯原來的水量為 $a$，$B$ 杯原來的水量為 $b$，則 $\frac{a}{b} = $？
   options:
   - label: A
@@ -546,6 +546,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 則兩杯的水位相等。設 $A$ 杯原來
+    to: 則兩杯的水位等高。設A杯原來
+    note: 原卷為「水位等高」，擷取誤作「水位相等」
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_數學_g7s2e2_s1_14
   section: 1
   number: 14

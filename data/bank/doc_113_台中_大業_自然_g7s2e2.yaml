@@ -262,7 +262,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 根據(圖一)判斷，下列哪一組生物的親緣關係最遠?
+  stem: 根據(圖一)判斷，下列哪一組生物的親緣關係最遠？
   options:
   - label: A
     content: 甲、丙
@@ -289,6 +289,23 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s1_8_r10231623_1
+    kind: figure
+    file: doc_113_台中_大業_自然_g7s2e2/s1_8_r10231623_1.png
+    crop:
+      page: 1
+      rect:
+      - 494.31
+      - 511.88
+      - 696.82
+      - 660.2
+  errata:
+  - from: 根據(圖一)判斷，下列哪一組生物的親緣關係最遠?
+    to: 根據(圖一)判斷，下列哪一組生物的親緣關係最遠？
+    note: 題目需參考圖一，但漏附圖檔
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_自然_g7s2e2_s1_9
   section: 1
   number: 9
@@ -803,21 +820,38 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s1_22_r10231623_1
+    kind: figure
+    file: doc_113_台中_大業_自然_g7s2e2/s1_22_r10231623_1.png
+    crop:
+      page: 2
+      rect:
+      - 491.39
+      - 819.34
+      - 681.52
+      - 948.06
+  errata:
+  - from: 根據(圖四)的檢索表，請問丙可能是以什麼為分類依據？
+    to: 根據(圖四)的檢索表，請問丙可能是以什麼為分類依據？
+    note: 題目需參考圖四，但漏附圖檔
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_自然_g7s2e2_s1_23
   section: 1
   number: 23
   type: single
   page: 3
-  stem: '根據此動物分類階層表判斷，下列敘述何者正確?
+  stem: '根據此動物分類階層表判斷，下列敘述何者正確？
 
 
-    | 綱 | | | | 哺乳 | 哺乳 | |
+    | 綱 | | | | 哺乳 | 哺乳 | | |
 
-    | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+    | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
-    | 目 | 食肉 | | 食肉 | | | 鬚鯊 |
+    | 目 | 食肉 | | 食肉 | | | | 鬚鯊 |
 
-    | 科 | | 貓 | 貓 | 海豚 | 海豚 | 鯨鯊 |
+    | 科 | | 貓 | 貓 | 海豚 | | 海豚 | 鯨鯊 |
 
     | 屬 | 犬 | 豹 | | | 犬 | 駝海豚 | |
 
@@ -848,6 +882,36 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '根據此動物分類階層表判斷，下列敘述何者正確?
+
+
+      | 綱 | | | | 哺乳 | 哺乳 | |
+
+      | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+      | 目 | 食肉 | | 食肉 | | | 鬚鯊 |
+
+      | 科 | | 貓 | 貓 | 海豚 | 海豚 | 鯨鯊 |
+
+      | 屬 | 犬 | 豹 | | | 犬 | 駝海豚 | |
+
+      | 種 | '
+    to: '根據此動物分類階層表判斷，下列敘述何者正確？
+
+
+      | 綱 | | | | 哺乳 | 哺乳 | | |
+
+      | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+      | 目 | 食肉 | | 食肉 | | | | 鬚鯊 |
+
+      | 科 | | 貓 | 貓 | 海豚 | | 海豚 | 鯨鯊 |
+
+      | 屬 | 犬 | 豹 | | | 犬 | '
+    note: 表格「科」此列漏了一格空欄，導致後方欄位錯位
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_自然_g7s2e2_s1_24
   section: 1
   number: 24

@@ -165,7 +165,12 @@ def push_supabase(con: sqlite3.Connection, sk: dict[str, int]) -> None:
 
     def send(b):
         for attempt in range(6):
-            r = s.post(f"{url}/question", headers=H, data=json.dumps(b, ensure_ascii=False, default=str).encode(), timeout=300)
+            try:
+                r = s.post(f"{url}/question", headers=H, data=json.dumps(b, ensure_ascii=False, default=str).encode(),
+                           timeout=300)
+            except requests.RequestException:          # 代理偶爾斷線：等一下重送
+                time.sleep(2 ** attempt)
+                continue
             if r.status_code in (200, 201, 204):
                 return
             if r.status_code < 500 and r.status_code != 429:

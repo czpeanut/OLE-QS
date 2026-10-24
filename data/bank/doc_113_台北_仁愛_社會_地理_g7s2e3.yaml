@@ -591,7 +591,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 一個國家或地區的都市人口數占總人口數比例，稱為「都市化程度」，其歷程大致可分為三個階段，如附圖所示。圖中的「加速階段」最有可能是與下列哪一項因素有關？
+  stem: 一個國家或地區的都市人口數占總人口數比例，稱為「都市化程度」，其歷程大致可分為三個階段，如附圖所示。圖中的「加速階段」最有可能與下列哪一項因素有關？
   options:
   - label: A
     content: 社會福利完善
@@ -609,15 +609,10 @@ questions:
       page: 2
       rect:
       - 234.35
-      - 829.66
+      - 834.17
       - 367.83
-      - 988.96
-      auto_from:
-      - 237.6
-      - 832.91
-      - 362.62
-      - 955.64
-    crop_by: auto
+      - 952.6
+    crop_by: human
   answer:
   - C
   answer_source: answer_key_vlm
@@ -634,6 +629,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 圖中的「加速階段」最有可能是與下列哪一項因素有關？
+    to: 圖中的「加速階段」最有可能與下列哪一項因素有關？
+    note: 多打了「是」字
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_社會_地理_g7s2e3_s1_16
   section: 1
   number: 16

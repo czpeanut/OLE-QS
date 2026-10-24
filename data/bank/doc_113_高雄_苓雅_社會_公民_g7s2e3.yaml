@@ -91,7 +91,7 @@ questions:
   number: 43
   type: single
   page: 1
-  stem: 承上，比爾蓋茲預計推出的新一代馬桶，無需用到水，也不需要下水道，可將人類排泄物轉化為肥料、能源或循環水資源，藉此打造乾淨廁所、消滅有害病菌。若將來我國政府大力推廣此概念，其預算最有可能是編列在何種社會福利政策中？
+  stem: 承上，比爾蓋茲預計推出的新一代馬桶，無需用到水，也不需要下水道，可將人類排泄物轉化為肥料、能源或循環水資源，藉此打造乾淨廁所、消滅有害病菌。若將來我國政府大力推廣此概念，其預算最有可能編列在何種社會福利政策中？
   options:
   - label: A
     content: 社會保險
@@ -118,6 +118,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 其預算最有可能是編列在何種社會福利政策中？
+    to: 其預算最有可能編列在何種社會福利政策中？
+    note: 多字，原卷為「最有可能」無「是」字
+    by: review
+    extraction: true
 - id: doc_113_高雄_苓雅_社會_公民_g7s2e3_s1_44
   section: 1
   number: 44

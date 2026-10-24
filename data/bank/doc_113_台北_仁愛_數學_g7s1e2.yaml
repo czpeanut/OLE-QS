@@ -382,9 +382,9 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: '下列各數中，與39 互質的數有幾個？
+  stem: '下列各數中，與 $39$ 互質的數有幾個？
 
-    27、77、7×13、22×7×11、7×132×17'
+    $27$、$77$、$7 \times 13$、$2^2 \times 7 \times 11$、$7 \times 13^2 \times 17$'
   options:
   - label: A
     content: 1 個
@@ -411,6 +411,16 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '下列各數中，與39 互質的數有幾個？
+
+      27、77、7×13、22×7×11、7×132×17'
+    to: '下列各數中，與 $39$ 互質的數有幾個？
+
+      $27$、$77$、$7 \times 13$、$2^2 \times 7 \times 11$、$7 \times 13^2 \times 17$'
+    note: 原卷次方漏掉，誤植為22與132
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_數學_g7s1e2_s1_13
   section: 1
   number: 13

@@ -378,7 +378,7 @@ questions:
   number: 4
   type: essay
   page: 1
-  stem: The boy over there is Janet’s cousin.(依畫線部分造原問句)
+  stem: The boy over there is <u>Janet’s cousin</u>.(依畫線部分造原問句)
   tags:
     textbook: 七上 英語 Who問句
     labeled_by: ai
@@ -389,6 +389,12 @@ questions:
       code: B1-06
       title: Who問句
       chapter: B1 七上
+  errata:
+  - from: The boy over there is Janet’s cousin.(依畫線部分造原問句)
+    to: The boy over there is <u>Janet’s cousin</u>.(依畫線部分造原問句)
+    note: 原卷Janet's cousin有底線，擷取漏標致無從辨認
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g7s1e1_s3_5
   section: 3
   number: 5
@@ -1175,7 +1181,7 @@ questions:
   number: 7
   type: single
   page: 3
-  stem: According to (根據) to the reading, which is correct?
+  stem: According to (根據) the reading, which is correct?（原卷有誤，已修正）
   options:
   - label: A
     content: Monkeys have 60 votes.
@@ -1209,6 +1215,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: According to (根據) to the reading
+    to: According to (根據) the reading
+    note: 多印了一個to：「According to (根據) to the reading」→「According to (根據) the reading」
+    by: review
 - id: doc_113_屏東_中正_英語_g7s1e1_s7_8
   section: 7
   number: 8

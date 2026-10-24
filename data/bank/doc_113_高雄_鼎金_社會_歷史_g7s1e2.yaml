@@ -294,7 +294,7 @@ questions:
   number: 29
   type: single
   page: 1
-  stem: 考古學家在某處遺址中，看到許多陶器及石器的遺跡，因此斷言此遺址屬於「大坌坑文化」。請問：這位學者最優可能是因為哪個線索，才作此推斷？
+  stem: 考古學家在某處遺址中，看到許多陶器及石器的遺跡，因此斷言此遺址屬於「大坌坑文化」。請問：這位學者最有可能是因為哪個線索，才作此推斷？
   options:
   - label: A
     content: 皆為打製的石器
@@ -321,6 +321,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 這位學者最優可能是因為哪個線索
+    to: 這位學者最有可能是因為哪個線索
+    note: 「最有可能」誤植為「最優可能」
+    by: review
+    extraction: true
 - id: doc_113_高雄_鼎金_社會_歷史_g7s1e2_s1_30
   section: 1
   number: 30

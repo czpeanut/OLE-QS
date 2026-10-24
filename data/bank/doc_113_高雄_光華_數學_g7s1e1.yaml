@@ -444,7 +444,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 下圖數線上 $A$、$B$、$C$、$D$、$E$、$S$、$T$ 七點的坐標分別為 $-2$、$-1$、$0$、$1$、$2$、$s$、$t$。若數線上一點
+  stem: 下圖數線上 $A$、$B$、$C$、$D$、$E$、$S$、$T$ 七點的坐標分別為 $-2$、$-1$、$0$、$1$、$2$、$s$、$t$。若數線上有一點
     $R$，其坐標為 $|s-t+2|$，則 $R$ 會落在下列哪一線段上？
   options:
   - label: A
@@ -489,6 +489,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若數線上一點 $R$
+    to: 若數線上有一點 R
+    note: 漏了「有」字
+    by: review
+    extraction: true
 - id: doc_113_高雄_光華_數學_g7s1e1_s2_1
   section: 2
   number: 1

@@ -1395,8 +1395,28 @@ questions:
     content: L 代表低氣壓，通常是晴天，天氣晴朗穩定
   - label: C
     content: 冷鋒符號，代表冷氣團勢力較強，推著暖氣團前進，通常是冷濕的天氣
+    asset:
+      key: optC
+      file: doc_113_台南_民德_社會_地理_g7s1e3/s2_35_r10231632_2.png
+      crop:
+        page: 3
+        rect:
+        - 165.77
+        - 559.47
+        - 240.81
+        - 588.11
   - label: D
     content: 滯留鋒符號，代表冷暖氣團勢力相當，滯留時間越長，下雨的時間越長。
+    asset:
+      key: optD
+      file: doc_113_台南_民德_社會_地理_g7s1e3/s2_35_r10231632_3.png
+      crop:
+        page: 3
+        rect:
+        - 111.85
+        - 577.02
+        - 175.96
+        - 605.66
   group_stem: 【四】請依據甲乙丙丁四張地面天氣圖回答下列問題：
   shared_asset: g2_34_38
   tags:
@@ -1417,6 +1437,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 關於此種地面天氣圖中出現的各種符號，下列敘述何者正確？
+    to: 關於此種地面天氣圖中出現的各種符號，下列敘述何者正確？
+    note: 選項(C)與(D)文字前方缺漏了鋒面符號圖片
+    by: review
+    extraction: true
 - id: doc_113_台南_民德_社會_地理_g7s1e3_s2_36
   section: 2
   number: 36
@@ -1862,7 +1888,7 @@ shared_assets:
 - key: g2_34_38
   label: 題組附圖
   kind: figure
-  file: doc_113_台南_民德_社會_地理_g7s1e3/g2_34_38_f1.png
+  file: doc_113_台南_民德_社會_地理_g7s1e3/s2_35_r10231632_1.png
   used_by:
   - doc_113_台南_民德_社會_地理_g7s1e3_s2_34
   - doc_113_台南_民德_社會_地理_g7s1e3_s2_35
@@ -1872,15 +1898,10 @@ shared_assets:
   crop:
     page: 3
     rect:
-    - 78.33
-    - 363.71
-    - 203.45
-    - 488.17
-    auto_from:
-    - 75.93
-    - 361.31
-    - 205.85
-    - 486.0
+    - 44.82
+    - 360.3
+    - 696.94
+    - 496.26
   crop_by: auto
 - key: g2_43_45
   label: 題組附圖

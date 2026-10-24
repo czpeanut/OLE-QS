@@ -1497,7 +1497,7 @@ questions:
   number: 32
   type: single
   page: 3
-  stem: 某校校園長 1200 公尺，寬 1000 公尺，今欲將學校各建築物繪製於長 50 公分，寬 40 公分的紙上，為了使景物顯得清晰，最適合理使用下列哪一種比例尺？
+  stem: 某校校園長 1200 公尺，寬 1000 公尺，今欲將學校各建築物繪製於長 50 公分，寬 40 公分的紙上，為了使景物顯得清晰，最適合使用下列哪一種比例尺？（原卷有誤，已修正）
   options:
   - label: A
     content: 二千分之一
@@ -1527,12 +1527,17 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 最適合理使用下列哪一種比例尺？
+    to: 最適合使用下列哪一種比例尺？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「最適合理使用下列哪一種比例尺？」→「最適合使用下列哪一種比例尺？」
+    by: review
 - id: doc_113_彰化_福興_社會_地理_g7s1e1_s1_33
   section: 1
   number: 33
   type: single
   page: 3
-  stem: 我國由於四面環海，與鄰國的經濟海域有所重疊，政府為保障我國漁民的權益，必須強悍宣示主權。請問：當國軍在軍事實演習時，若棋盤操演的假想敵位於台灣西南方，欲進行海空軍聯合護漁，則其位置最可能為下列何者？
+  stem: 我國由於四面環海，與鄰國的經濟海域有所重疊，政府為保障我國漁民的權益，必須強悍宣示主權。請問：當國軍在軍事演習時，若棋盤操演的假想敵位於台灣西南方，欲進行海空軍聯合護漁，則其位置最可能為下列何者？
   options:
   - label: A
     content: ''
@@ -1625,6 +1630,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當國軍在軍事實演習時，若棋盤操演
+    to: 當國軍在軍事演習時，若棋盤操演
+    note: 多擷取「實」字
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_11_12
   label: 題組附圖

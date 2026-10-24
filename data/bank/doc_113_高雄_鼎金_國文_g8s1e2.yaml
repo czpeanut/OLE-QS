@@ -1355,7 +1355,7 @@ questions:
   - label: B
     content: 秋風「瑟瑟」中，唯菊花傲然挺立
   - label: C
-    content: 雷聲「潺潺」，獨自在家得他打開電視，試圖驅趕心中的恐懼
+    content: 雷聲「潺潺」，獨自在家的他打開電視，試圖驅趕心中的恐懼
   - label: D
     content: 走在國中校園裡，教室裡「啾啾」的讀書聲，令人充分感受到學子們的朝氣。
   tags:
@@ -1375,6 +1375,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 獨自在家得他打開電視
+    to: 獨自在家的他打開電視
+    note: 「的」誤植為「得」
+    by: review
+    extraction: true
 - id: doc_113_高雄_鼎金_國文_g8s1e2_s4_22
   section: 4
   number: 22

@@ -529,7 +529,7 @@ questions:
   number: 34
   type: single
   page: 1
-  stem: Who _______ over there? Mary, Tony and John are.
+  stem: 'Who _______ over there? Mary: Tony and John are.'
   options:
   - label: A
     content: runs
@@ -559,6 +559,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: over there? Mary, Tony and John are.
+    to: 'over there? Mary: Tony and John are.'
+    note: 原卷為冒號「:」，擷取誤植為逗號「,」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_英語_g7s1e3_s4_35
   section: 4
   number: 35

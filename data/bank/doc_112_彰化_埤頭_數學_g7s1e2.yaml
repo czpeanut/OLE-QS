@@ -346,13 +346,13 @@ questions:
   stem: $\frac{201}{200}$、$-\frac{199}{200}$、$-\frac{200}{199}$ 三數的大小次序為何？
   options:
   - label: A
-    content: $\frac{200}{199} > -\frac{201}{200} > -\frac{199}{200}$
+    content: $-\frac{199}{200} > -\frac{200}{199} > \frac{201}{200}$
   - label: B
     content: $\frac{201}{200} > -\frac{199}{200} > -\frac{200}{199}$
   - label: C
-    content: $\frac{199}{200} > -\frac{201}{200} > -\frac{200}{199}$
+    content: $-\frac{199}{200} > \frac{201}{200} > -\frac{200}{199}$
   - label: D
-    content: $\frac{200}{199} > -\frac{199}{200} > -\frac{201}{200}$
+    content: $-\frac{200}{199} > -\frac{199}{200} > \frac{201}{200}$
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -372,6 +372,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: $\frac{201}{200}$、$-\frac{199}{200}$、$-\frac{200}{199}$ 三數的大小次序為何？
+    to: $\frac{201}{200}$、$-\frac{199}{200}$、$-\frac{200}{199}$ 三數的大小次序為何？
+    note: 選項(A)、(C)、(D)數字顛倒或漏負號
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_數學_g7s1e2_s1_11
   section: 1
   number: 11
@@ -455,7 +461,7 @@ questions:
   - label: C
     content: $\frac{5^{8}}{5^{2}} = 5^{4}$
   - label: D
-    content: $((-6)^{3} \times (-3)^{3} = 18^{3}$
+    content: $(-6)^{3} \times (-3)^{3} = 18^{3}$
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -475,6 +481,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列哪一個等式是錯誤的？
+    to: 下列哪一個等式是錯誤的？
+    note: 選項(D)開頭多打了一個左括號
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_數學_g7s1e2_s2_1
   section: 2
   number: 1

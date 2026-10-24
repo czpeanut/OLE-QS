@@ -194,7 +194,7 @@ questions:
   number: 7
   type: fill
   page: 1
-  stem: 「ㄏㄢ」聯：
+  stem: 「ㄏㄢˋ」聯：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -215,12 +215,18 @@ questions:
   - 頷
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 「ㄏㄢ」聯：
+    to: 「ㄏㄢˋ」聯：
+    note: 注音漏了四聲符號「ˋ」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g7s2e1_s1_8
   section: 1
   number: 8
   type: fill
   page: 1
-  stem: 「ㄕㄨㄛˋ」酒：
+  stem: 「ㄗㄨㄣ」酒：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -239,6 +245,12 @@ questions:
     gemini_high: 縮
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 「ㄕㄨㄛˋ」酒：
+    to: 「ㄗㄨㄣ」酒：
+    note: 注音應為「ㄗㄨㄣ」誤作「ㄕㄨㄛˋ」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g7s2e1_s1_9
   section: 1
   number: 9
@@ -270,7 +282,7 @@ questions:
   number: 10
   type: fill
   page: 1
-  stem: 「ㄘㄢˊ」爛：
+  stem: 「ㄘㄢˋ」爛：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -291,6 +303,12 @@ questions:
   - 殘
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 「ㄘㄢˊ」爛：
+    to: 「ㄘㄢˋ」爛：
+    note: 注音應為四聲「ㄘㄢˋ」誤作「ㄘㄢˊ」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g7s2e1_s2_1
   section: 2
   number: 1
@@ -829,7 +847,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 「國破山河在,城春草木深。感時花濺淚,恨別鳥驚心。烽火連三月,家書抵萬金。白頭搔更短,渾欲不勝簪。詩中「城春草木深」的季節與下列何者所描述的相同?
+  stem: 「國破山河在,城春草木深。感時花濺淚,恨別鳥驚心。烽火連三月,家書抵萬金。白頭搔更短,渾欲不勝簪。」詩中「城春草木深」的季節與下列何者所描述的相同?（原卷有誤，已修正）
   options:
   - label: A
     content: 雪消門外千山綠
@@ -858,6 +876,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 白頭搔更短,渾欲不勝簪。詩中
+    to: 白頭搔更短，渾欲不勝簪。」詩中
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「白頭搔更短,渾欲不勝簪。詩中」→「白頭搔更短，渾欲不勝簪。」詩中」
+    by: review
 - id: doc_111_彰化_福興_國文_g7s2e1_s4_11
   section: 4
   number: 11
@@ -1002,7 +1025,7 @@ questions:
   number: 15
   type: single
   page: 3
-  stem: 白靈 詩的蝴蝶效應:「人生是一連串的偶然,偶然『開動』以後,無盡的『碰撞』於焉開展,更多的可能像細胞繁殖一樣,你給的養分多它繁殖得快,養分少它繁殖得緩。繁殖到某個階段,它總有機會產生突變,先是一兩個『不乖』的基因突地出現,晶亮了你的眼睛或腦筋,然後四五個七八個,然後你有種想從『舊瓶』掙脫而出再自生『新瓶』的衝動,那是一種『蛻化』的壓力,逼使你自己不想重蹈昨日之路、操昨日之舊業、站昨日之舊框、行昨日之所行,於紅是你就不是原來的你了,你可能黎明起床時煥然一新,卻也可能跌下牀沿一蹶委地。」根據此文,何者有誤?
+  stem: 白靈 詩的蝴蝶效應:「人生是一連串的偶然,偶然『開動』以後,無盡的『碰撞』於焉開展,更多的可能像細胞繁殖一樣,你給的養分多它繁殖得快,養分少它繁殖得緩。繁殖到某個階段,它總有機會產生突變,先是一兩個『不乖』的基因突地出現,晶亮了你的眼睛或腦筋,然後四五個七八個,然後你有種想從『舊瓶』掙脫而出再自生『新瓶』的衝動,那是一種『蛻化』的壓力,逼使你自己不想重蹈昨日之路、操昨日之舊業、站昨日之舊框、行昨日之所行,於是你就不是原來的你了,你可能黎明起床時煥然一新,卻也可能跌下牀沿一蹶委地。」根據此文,何者有誤?
   options:
   - label: A
     content: 「不想重蹈昨日之路、操昨日之舊業、站昨日之舊框、行昨日之所行」,用了排比句型,強調人已開始蛻變
@@ -1031,6 +1054,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 行昨日之所行,於紅是你就不是原來的你了
+    to: 行昨日之所行，於是你就不是原來的你了
+    note: 「於是」誤植為「於紅是」，多「紅」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g7s2e1_s4_16
   section: 4
   number: 16
@@ -1173,8 +1202,8 @@ questions:
   number: 20
   type: single
   page: 5
-  stem: 「有人認為文學是不著塵色的白裳,那是因為他遺忘了『現實』這一件緇衣,崇拜詩聖杜甫的人,不見得讀得懂杜詩,但我們不難想像,當杜甫自外訪友歸來,一進門問他老婆第一句話,也許是:『尚有油鹽否?』」根據文意、何者最符
-    本文作者的看法?
+  stem: 「有人認為文學是不著塵色的白裳,那是因為他遺忘了『現實』這一件緇衣,崇拜詩聖杜甫的人,不見得讀得懂杜詩,但我們不難想像,當杜甫自外訪友歸來,一進門問他老婆第一句話,也許是:『尚有油鹽否?』」根據文意、何者最符合
+    本文作者的看法?（原卷有誤，已修正）
   options:
   - label: A
     content: 偉大的詩人也須面對生活中的問題
@@ -1203,6 +1232,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據文意、何者最符 本文作者的看法?
+    to: 根據文意、何者最符合本文作者的看法？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「根據文意、何者最符 本文作者的看法?」→「根據文意、何者最符合本文作者的看法？」
+    by: review
 - id: doc_111_彰化_福興_國文_g7s2e1_s5_1
   section: 5
   number: 1

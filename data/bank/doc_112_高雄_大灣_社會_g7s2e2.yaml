@@ -1012,7 +1012,7 @@ questions:
   number: 28
   type: single
   page: 3
-  stem: 請問下列何者不是日治臺灣現代教育的原則？
+  stem: 請問下列何者<u>不是</u>日治臺灣現代教育的原則？
   options:
   - label: A
     content: 差別待遇
@@ -1022,7 +1022,9 @@ questions:
     content: 實用原則
   - label: D
     content: 普設大學。
-  group_stem: '甲：貫徹同化政策的主要機關，以教授日語為主。
+  group_stem: '下列分別是對日治時期三個不同教育階段學校的敘述：
+
+    甲：貫徹同化政策的主要機關，以教授日語為主。
 
     乙：以培育初級技術人才為主要目的，偏重職業教育。
 
@@ -1044,6 +1046,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問下列何者不是日治臺灣現代教育的原則？
+    to: 請問下列何者<u>不是</u>日治臺灣現代教育的原則？
+    note: 題組說明漏擷取前導說明文字「下列分別是對日治時期三個不同教育階段學校的敘述」
+    by: review
+    extraction: true
 - id: doc_112_高雄_大灣_社會_g7s2e2_s1_29
   section: 1
   number: 29
@@ -1059,7 +1067,9 @@ questions:
     content: 總督府醫學校
   - label: D
     content: 臺北帝國大學。
-  group_stem: '甲：貫徹同化政策的主要機關，以教授日語為主。
+  group_stem: '下列分別是對日治時期三個不同教育階段學校的敘述：
+
+    甲：貫徹同化政策的主要機關，以教授日語為主。
 
     乙：以培育初級技術人才為主要目的，偏重職業教育。
 

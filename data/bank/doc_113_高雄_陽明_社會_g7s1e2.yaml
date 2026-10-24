@@ -210,39 +210,27 @@ questions:
     content: 照片的右側有中央山脈，左側有海岸山脈
   - label: D
     content: 照片中若要放方向標，應該用表示。
+    asset:
+      key: optD
+      file: doc_113_高雄_陽明_社會_g7s1e2/s1_4_r10231630_2.png
+      crop:
+        page: 1
+        rect:
+        - 579.93
+        - 797.86
+        - 617.82
+        - 846.11
   assets:
-  - key: s1_4_f1
+  - key: s1_4_r10231630_1
     kind: figure
-    file: doc_113_高雄_陽明_社會_g7s1e2/s1_4_f1.png
+    file: doc_113_高雄_陽明_社會_g7s1e2/s1_4_r10231630_1.png
     crop:
       page: 1
       rect:
-      - 582.52
-      - 801.5
-      - 614.92
-      - 839.44
-      auto_from:
-      - 579.2
-      - 797.86
-      - 615.63
-      - 844.05
-    crop_by: auto
-  - key: s1_4_f2
-    kind: figure
-    file: doc_113_高雄_陽明_社會_g7s1e2/s1_4_f2.png
-    crop:
-      page: 1
-      rect:
-      - 246.2
-      - 839.18
-      - 540.89
-      - 988.93
-      auto_from:
-      - 240.21
-      - 825.73
+      - 242.4
+      - 836.05
       - 544.92
       - 994.72
-    crop_by: auto
   tags:
     chapter:
       publisher: 翰林
@@ -260,6 +248,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 花蓮玉里舊鐵路橋改建的玉富自行車道，因橋梁橫跨在兩個板塊的交界，花蓮縣政府遂在橋上設置板塊交界地標，近年成為著名的觀光打卡景點。圖(一)是阿杜暑假時在此地拍的照片，根據上述介紹以及圖(一)照片資訊，請問下列敘述何者正確？
+    to: 花蓮玉里舊鐵路橋改建的玉富自行車道，因橋梁橫跨在兩個板塊的交界，花蓮縣政府遂在橋上設置板塊交界地標，近年成為著名的觀光打卡景點。圖(一)是阿杜暑假時在此地拍的照片，根據上述介紹以及圖(一)照片資訊，請問下列敘述何者正確？
+    note: 選項(D)漏了方向標圖片
+    by: review
+    extraction: true
 - id: doc_113_高雄_陽明_社會_g7s1e2_s1_5
   section: 1
   number: 5

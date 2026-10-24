@@ -222,7 +222,7 @@ questions:
   number: 6
   type: single
   page: 3
-  stem: coffee shop do you go to, Louisa _____ Starbucks?
+  stem: _____ coffee shop do you go to, Louisa _____ Starbucks?
   options:
   - label: A
     content: Where; or
@@ -249,6 +249,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: coffee shop do you go to, Louisa _____ Starbucks?
+    to: _____ coffee shop do you go to, Louisa _____ Starbucks?
+    note: 句首漏掉填空底線
+    by: review
+    extraction: true
 - id: doc_112_高雄_林園_英語_g7s2e2_s4_7
   section: 4
   number: 7
@@ -721,8 +727,8 @@ questions:
   number: 19
   type: single
   page: 5
-  stem: Coco looks up（查閱）the word（字）ingredient in ABC Dictionary（字典）.  What can Coco
-    read in    ★    ?
+  stem: Coco looks up（查閱）the word（字）<u>ingredient</u> in ABC Dictionary（字典）. What
+    can Coco read in ★?
   options:
   - label: A
     content: a brush
@@ -758,6 +764,25 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s6_19_r10231624_1
+    kind: figure
+    file: doc_112_高雄_林園_英語_g7s2e2/s6_19_r10231624_1.png
+    crop:
+      page: 5
+      rect:
+      - 369.06
+      - 788.58
+      - 551.21
+      - 888.42
+  errata:
+  - from: Coco looks up（查閱）the word（字）ingredient in ABC Dictionary（字典）.  What can
+      Coco read in    ★    ?
+    to: Coco looks up（查閱）the word（字）<u>ingredient</u> in ABC Dictionary（字典）. What
+      can Coco read in ★?
+    note: 原卷右側附有字典條目圖片，擷取結果漏附圖
+    by: review
+    extraction: true
 - id: doc_112_高雄_林園_英語_g7s2e2_s6_20
   section: 6
   number: 20
