@@ -598,7 +598,7 @@ def cmd_collect(args) -> int:
 
 
 def cmd_publish(args) -> int:
-    """每站一個 ai.json：{papers: {doc: {at, n}}, q: {code: [{cats, note, sure}]}, missing: {doc: [...]}}"""
+    """每站一個 ai.json：{papers: {doc: {at, n, pend}}, q: {code: [{cats, note, sure}]}, missing: {doc: [...]}}"""
     q2c, q2s = load_codes(args.codes_root)
     c2q = {c: q for q, c in q2c.items()}
     by_doc: dict[str, list[str]] = {}
@@ -643,7 +643,10 @@ def cmd_publish(args) -> int:
                         "note": "原卷有校徽浮水印底圖，已拿掉浮水印、依原卷重新繪製附圖"})
         if r.get("missing"):
             site["missing"][doc] = r["missing"][:20]
-        site["papers"][doc] = {"at": r["at"], "n": n}
+        # 待審題：還沒改進題庫的初審意見（審題台依此列出待審清單、把待審的卷排在前面）
+        pend = sorted(c for c, items in site["q"].items()
+                      if c2q.get(c, "").startswith(doc + "_") and any(not x.get("applied") for x in items))
+        site["papers"][doc] = {"at": r["at"], "n": n, **({"pend": pend} if pend else {})}
     dest = OUT / "sites"
     for s, data in sites.items():
         p = dest / s / "ai.json"
