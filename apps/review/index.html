@@ -130,6 +130,10 @@ u{text-decoration:underline;text-underline-offset:.18em}u.dbl{text-decoration-st
 .report textarea{min-height:56px;resize:vertical}
 .report-note{font-size:13px;color:var(--pen)}
 .empty{color:var(--muted);padding:48px 0;text-align:center}
+.queue{border:1px solid var(--pen);border-radius:8px;padding:12px 14px;margin:8px 0 4px;background:var(--card)}
+.queue.done{border-color:var(--ok)}
+.queue ol{margin:8px 0 0;padding-left:22px;max-height:60vh;overflow:auto}
+.queue li{margin:4px 0}.queue a{color:var(--pen);cursor:pointer;text-decoration:underline}
 .drawer{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
 .drawer ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
 .drawer a{color:var(--pen);cursor:pointer;text-decoration:underline}
@@ -202,6 +206,44 @@ let reportDocs = new Map();  // 資料庫文件 ID -> 回報
 let aiok = new Map();        // 「審查無問題」：資料庫文件 ID（審題編號~審題者）-> {code, doc, by, at}
 const aiokCodes = () => new Set([...aiok.values()].map(x => x.code));
 const aiPending = code => (AI.q[code] || []).some(it => !it.applied);   // 初審意見裡還沒改進題庫的
+// 待審：初審意見還沒人「採用為回報」或按「審查無問題」的題目（ai.json 的 papers[doc].pend 是這份卷有待確認意見的題目）
+function todoOf(doc){
+  const pend = (AI.papers[doc] || {}).pend || [];
+  if (!pend.length) return [];
+  const okc = aiokCodes();
+  return pend.filter(c => !reports.has(c) && !okc.has(c));
+}
+function queueHTML(){
+  if (!INDEX) return "";
+  const rows = [];
+  INDEX.groups.forEach((g, gi) => g.papers.forEach(p => {
+    const n = todoOf(p.doc).length;
+    if (n) rows.push({gi, g, p, n});
+  }));
+  if (!rows.length) return Object.keys(AI.papers).length
+    ? `<div class="queue done"><b>這一站的初審意見都已確認完畢</b>（每題都已採用為回報或標記審查無問題）。</div>` : "";
+  const total = rows.reduce((a, r) => a + r.n, 0);
+  return `<div class="queue"><div class="row" style="justify-content:space-between"><b>待審清單：${rows.length} 份卷、${total} 題初審意見還沒確認</b>
+      <span class="sub">逐題「採用為回報」或「審查無問題」，處理完的卷會自動從清單消失</span></div>
+    <ol>${rows.map(r => `<li><a data-q-gi="${r.gi}" data-q-doc="${esc(r.p.doc)}">${esc(GRADE_NAME[r.g.grade])}・${esc(subjName(r.g))}・${r.g.year} 學年度${esc(EXAM_NAME[r.g.sem+"-"+r.g.exam])}・${esc(r.p.city)} ${esc(r.p.short)}</a>
+      <span class="chip ai">${r.n} 題待審</span></li>`).join("")}</ol></div>`;
+}
+function bindQueue(root){
+  root.querySelectorAll("[data-q-doc]").forEach(a => a.addEventListener("click", () => {
+    const g = INDEX.groups[+a.dataset.qGi];
+    $("#fGrade").value = g.grade; $("#fGrade").dispatchEvent(new Event("change"));
+    $("#fSubject").value = subjName(g); $("#fSubject").dispatchEvent(new Event("change"));
+    $("#fYear").value = g.year; $("#fYear").dispatchEvent(new Event("change"));
+    $("#fExam").value = `${g.sem}-${g.exam}`; $("#fExam").dispatchEvent(new Event("change"));
+    const doc = a.dataset.qDoc, todo = todoOf(doc);
+    openPaper(+a.dataset.qGi, doc, todo[0]);
+  }));
+}
+function renderQueue(){
+  if (current) return;                              // 已開卷時不蓋掉題目
+  $("#view").innerHTML = queueHTML() + `<div class="empty">從左側選一份考卷開始審題。<br>每一題右上角的六碼是審題編號，回報問題時用它指認題目。</div>`;
+  bindQueue($("#view"));
+}
 let userNs = null, ME = {id: null, name: ""};
 let NAMES = {};              // 審題者 ID -> 顯示名稱（每次從平台查，不存進資料庫）
 function who(id){ if (!id) return "（未記名）"; if (id === ME.id) return "你"; return NAMES[id] || "某位審題者"; }
@@ -222,6 +264,7 @@ async function refreshNames(){
 let reviewed = new Map();    // docKey -> {at}
 let AI = {papers: {}, q: {}, missing: {}};   // AI 初審結果（data/ai.json）：初審完成的卷、每題意見
 let onlyAi = false;
+let onlyTodo = false;          // 只看待審：初審意見還沒採用為回報、也沒標審查無問題的題目
 let hideRejected = false, onlyReported = false, onlyOcr = false, onlyDisputed = false;
 
 /* ── 文字渲染：Markdown（表格、粗體、換行）＋行內 $…$ 公式 ───────────── */
@@ -329,11 +372,13 @@ function listPapers(){
   const gi = selectedGroup();
   const box = $("#paperList");
   if (gi < 0) { box.innerHTML = '<div class="sub">沒有符合的考卷</div>'; return; }
-  box.innerHTML = INDEX.groups[gi].papers.map((p, i) => {
+  const papers = INDEX.groups[gi].papers.map(p => ({p, todo: todoOf(p.doc).length}))
+    .sort((a, b) => (b.todo > 0) - (a.todo > 0));                 // 還有初審意見待審的卷排在最上面
+  box.innerHTML = papers.map(({p, todo}) => {
     const nRep = countReports(p.doc);
     const done = reviewed.has(docKey(p.doc));
     return `<button class="paper-item" data-gi="${gi}" data-doc="${esc(p.doc)}" aria-current="${current && current.doc===p.doc}">
-      <span>${esc(p.city)} ${esc(p.short)} ${p.ocr?'<span class="chip warn">掃描</span>':''}${p.ext==='rule'?'<span class="chip">舊版</span>':''}${done?'<span class="chip ok">已審</span>':''}${AI.papers[p.doc]?`<span class="chip ai">初審完成${AI.papers[p.doc].n?"・"+AI.papers[p.doc].n+" 題待確認":""}</span>`:''}${nRep?`<span class="chip pen">${nRep} 題回報</span>`:''}</span>
+      <span>${esc(p.city)} ${esc(p.short)} ${p.ocr?'<span class="chip warn">掃描</span>':''}${p.ext==='rule'?'<span class="chip">舊版</span>':''}${done?'<span class="chip ok">已審</span>':''}${todo?`<span class="chip pen">${todo} 題待審</span>`:AI.papers[p.doc]?`<span class="chip ai">初審完成${AI.papers[p.doc].n?"・已確認":""}</span>`:''}${nRep?`<span class="chip pen">${nRep} 題回報</span>`:''}</span>
       <span class="n">${p.ok}/${p.n}</span></button>`;
   }).join("");
   box.querySelectorAll(".paper-item").forEach(b => b.addEventListener("click", () => openPaper(+b.dataset.gi, b.dataset.doc)));
@@ -372,6 +417,7 @@ function renderPaper(){
     <label><input type="checkbox" id="tRep" ${onlyReported?"checked":""}> 只看已回報</label>
     <label><input type="checkbox" id="tDis" ${onlyDisputed?"checked":""}> 只看答案待判定</label>
     <label><input type="checkbox" id="tAi" ${onlyAi?"checked":""}> 只看初審標記</label>
+    <label><input type="checkbox" id="tTodo" ${onlyTodo?"checked":""}> 只看待審</label>
     <button class="btn ${done?'':'pen'}" id="markDone" ${db?'':'disabled'}>${done?'取消「已審完」':'標記這份卷已審完'}</button>
     ${done ? `<span class="sub">${esc(who(done.by))}已標記審完</span>` : ""}
   </div>`;
@@ -383,6 +429,7 @@ function renderPaper(){
     if (onlyReported && !(reports.has(q.c) && open_(reports.get(q.c)))) continue;
     if (onlyDisputed && q.as !== "disputed") continue;
     if (onlyAi && !AI.q[q.c]) continue;
+    if (onlyTodo && !todoOf(P.doc).includes(q.c)) continue;
     if (q.s !== lastSec) { h += `<div class="section-title">${esc(secName[q.s] || ("第 " + q.s + " 大題"))}</div>`; lastSec = q.s; lastG = null; }
     if (q.g && q.g !== lastG && (q.sa || P.passages[q.g].trim() !== (secName[q.s] || "").trim())) {
       const figs = q.sa ? figHTML([q.sa], P) : "";
@@ -396,6 +443,7 @@ function renderPaper(){
   $("#tRep").addEventListener("change", e => { onlyReported = e.target.checked; renderPaper(); });
   $("#tDis").addEventListener("change", e => { onlyDisputed = e.target.checked; renderPaper(); });
   $("#tAi").addEventListener("change", e => { onlyAi = e.target.checked; renderPaper(); });
+  $("#tTodo").addEventListener("change", e => { onlyTodo = e.target.checked; renderPaper(); });
   $("#markDone").addEventListener("click", toggleDone);
   bindQuestionEvents();
 }
@@ -661,7 +709,9 @@ function renderReportStats(){
     <div class="stat"><b>${reviewed.size}</b><span>已審完的卷</span></div>
     <div class="stat"><b>${aiLeft}</b><span>初審意見未確認（共 ${pend.length} 題）</span></div>
     <div class="stat"><b>${Object.keys(AI.papers).length}</b><span>初審完成的卷</span></div>
-    <button class="btn" id="openDrawer" ${n?"":"disabled"}>回報清單</button>`;
+    <button class="btn" id="openDrawer" ${n?"":"disabled"}>回報清單</button>
+    <button class="btn pen" id="openQueue">待審清單</button>`;
+  const qb = $("#openQueue"); if (qb) qb.addEventListener("click", () => { current = null; renderQueue(); window.scrollTo({top:0}); });
   const b = $("#openDrawer"); if (b) b.addEventListener("click", openDrawer);
 }
 function openDrawer(){
@@ -697,7 +747,7 @@ async function jumpTo(code){
   $("#fSubject").value = subjName(G); $("#fSubject").dispatchEvent(new Event("change"));
   $("#fYear").value = G.year; $("#fYear").dispatchEvent(new Event("change"));
   $("#fExam").value = `${G.sem}-${G.exam}`; $("#fExam").dispatchEvent(new Event("change"));
-  hideRejected = false; onlyReported = false; onlyDisputed = false; onlyAi = false;
+  hideRejected = false; onlyReported = false; onlyDisputed = false; onlyAi = false; onlyTodo = false;
   await openPaper(gi, P.doc, code);
 }
 $("#jumpBtn").addEventListener("click", () => jumpTo($("#jump").value));
@@ -717,7 +767,7 @@ function rerenderKeepingScroll(force){
   const y = window.scrollY;
   const open = [...document.querySelectorAll(".report-slot form, .cropedit")];
   if (open.length && !force) { listPapers(); renderReportStats(); return; }  // 表單開著時不重繪題目，避免打到一半被清掉
-  listPapers(); renderReportStats(); renderPaper(); window.scrollTo({top:y});
+  listPapers(); renderReportStats(); renderPaper(); renderQueue(); window.scrollTo({top:y});
 }
 async function initDb(){
   const use = window.claude && window.claude.use ? window.claude.use.bind(window.claude) : null;
@@ -768,7 +818,7 @@ async function initDb(){
   renderReportStats();
   try { await loadIndex(); }
   catch(e){ $("#builtInfo").textContent = "題庫資料載入失敗，請重新整理頁面"; return; }
-  loadAi().then(() => { listPapers(); renderReportStats(); renderPaper(); });
+  loadAi().then(() => { listPapers(); renderReportStats(); renderPaper(); renderQueue(); });
   initDb();
   const h = location.hash.replace("#","");
   if (h && INDEX.codes[h.toUpperCase()] !== undefined) jumpTo(h);
