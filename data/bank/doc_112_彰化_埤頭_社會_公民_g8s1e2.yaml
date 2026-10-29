@@ -796,14 +796,7 @@ questions:
   number: 26
   type: single
   page: 1
-  stem: '某班公民課時，同學們扮演我國五院公職人員的角色，下列為四位同學扮演的角色，請問：何者扮演的角色是經過由專程程序所產生的？
-
-
-    | (A) 大法官 | (B) 立法院副院長 |
-
-    | :--- | :--- |
-
-    | (C) 考試院院長 | (D) 財政部長 |'
+  stem: 某班公民課時，同學們扮演我國五院公職人員的角色，下列為四位同學扮演的角色，請問：何者扮演的角色是經由互選程序所產生的？
   options:
   - label: A
     content: 大法官
@@ -833,6 +826,19 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '某班公民課時，同學們扮演我國五院公職人員的角色，下列為四位同學扮演的角色，請問：何者扮演的角色是經過由專程程序所產生的？
+
+
+      | (A) 大法官 | (B) 立法院副院長 |
+
+      | :--- | :--- |
+
+      | (C) 考試院院長 | (D) 財政部長 |'
+    to: 某班公民課時，同學們扮演我國五院公職人員的角色，下列為四位同學扮演的角色，請問：何者扮演的角色是經由互選程序所產生的？
+    note: 「互選」誤辨識為「專程」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g8s1e2_s3_27
   section: 3
   number: 27
@@ -926,7 +932,7 @@ questions:
   - label: A
     content: 兩者差異在行政權與監察權
   - label: B
-    content: 五權分立制度在補三權分立中立法權兼考試權所形成議會專制的流弊
+    content: 五權分立制度在補救三權分立中立法權兼監察權所形成議會專制的流弊
   - label: C
     content: 三權分立主要在限制人民的權利，五權分立主要在避免政府濫權
   - label: D
@@ -950,6 +956,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「權力分立」是民主國家對政府運作系統所採行的制度，而西方的三權分立與我國的五權分立兩種制度，其差異性為下列何者？
+    to: 「權力分立」是民主國家對政府運作系統所採行的制度，而西方的三權分立與我國的五權分立兩種制度，其差異性為下列何者？
+    note: 漏「救」字，且「監察權」誤植為「考試權」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g8s1e2_s3_30
   section: 3
   number: 30
@@ -1324,7 +1336,7 @@ questions:
   - label: C
     content: 立法院對行政院長提出不信任案，總統可在行政院長的呈請下解散立法院
   - label: D
-    content: 總統提名行政院長必須經過立法法院同意後才能任命。
+    content: 總統提名行政院長必須經過立法院同意後才能任命。
   group_stem: '◎ 2024 年總統大選在即，民進黨總統參選人已經登記完成，但國民黨、民眾黨「藍白合」卻卡關成了「藍白拖」，雖然彼此目標一致，都是政黨輪替、下架民進黨，並深知最後若仍落入三腳督，不僅白忙一場，政黨票也會流失，如今已至最後關頭，藍白合仍情勢不明。請問：
 
 
@@ -1372,6 +1384,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 2024年我國將舉行總統與立法委員的中央選舉，有關二者間的互動，下列何者正確？
+    to: 2024年我國將舉行總統與立法委員的中央選舉，有關二者間的互動，下列何者正確？
+    note: 多打了「法」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g8s1e2_s4_40
   section: 4
   number: 40

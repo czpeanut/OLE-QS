@@ -1049,14 +1049,14 @@ questions:
   stem: 圖中甲、乙、丙三類岩石依照順序應屬於下列何者？
   options:
   - label: A
-    content: 火成岩、變質岩
+    content: 火成岩、沉積岩、變質岩
   - label: B
     content: 火成岩、變質岩、沉積岩
   - label: C
     content: 沉積岩、變質岩、火成岩
   - label: D
     content: 沉積岩、火成岩、變質岩
-  group_stem: 圖中甲、乙、丙三類岩石依照順序應屬於下列何種岩石，稱為岩石循環，如下圖所示，請回答26-28
+  group_stem: ＊火成岩、沉積岩和變質岩三者間彼此有一定的關係，當時問和地質條件發生改變後，任何一類岩石都可以轉變為另一種岩石，稱為岩石循環，如下圖所示，請回答26~28
   shared_asset: g1_26_28
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1077,12 +1077,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 圖中甲、乙、丙三類岩石依照順序應屬於下列何者？
+    to: 圖中甲、乙、丙三類岩石依照順序應屬於下列何者？
+    note: 題組導言漏擷前半段，且誤植第26題題幹文字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e1_s1_27
   section: 1
   number: 27
   type: single
   page: 2
-  stem: 下列種岩石中，哪一個不屬於丙岩石經由高溫、高壓的變質作用後形成之岩石？
+  stem: 下列四種岩石中，哪一個不屬於丙岩石經由高溫、高壓的變質作用後形成之岩石？
   options:
   - label: A
     content: 大理岩
@@ -1092,7 +1098,7 @@ questions:
     content: 石灰岩
   - label: D
     content: 板岩
-  group_stem: 圖中甲、乙、丙三類岩石依照順序應屬於下列何種岩石，稱為岩石循環，如下圖所示，請回答26-28
+  group_stem: '*火成岩、沉積岩和變質岩三者間彼此有一定的關係，當時問和地質條件發生改變後，任何一類岩石都可以轉變為另一種岩石，稱為岩石循環，如下圖所示，請回答26~28'
   shared_asset: g1_26_28
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1118,6 +1124,11 @@ questions:
     to: 哪一個不屬於丙岩石經由高溫
     note: 多印一個「於」字
     by: ai_review
+    extraction: true
+  - from: 下列種岩石中，哪一個不屬於丙岩石經由高溫、高壓的變質作用後形成之岩石？
+    to: 下列四種岩石中，哪一個不屬於丙岩石經由高溫、高壓的變質作用後形成之岩石？
+    note: 漏了「四」字；多印一個「於」字：「哪一個不屬於於丙岩石經由高溫」→「哪一個不屬於丙岩石經由高溫」
+    by: review
     extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e1_s1_28
   section: 1
@@ -1366,7 +1377,7 @@ questions:
   number: 35
   type: single
   page: 2
-  stem: 志玲在表演馬術時，自馬背上跳起卻不遺掉在馬後，則馬的運動狀態為：
+  stem: 志玲在表演馬術時，自馬背上跳起卻不慎掉在馬後，則馬的運動狀態為：
   options:
   - label: A
     content: 靜止
@@ -1396,6 +1407,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 志玲在表演馬術時，自馬背上跳起卻不遺掉在馬後，則馬的運動狀態為：
+    to: 志玲在表演馬術時，自馬背上跳起卻不慎掉在馬後，則馬的運動狀態為：
+    note: 「不慎」誤植為「不遺」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e1_s1_36
   section: 1
   number: 36

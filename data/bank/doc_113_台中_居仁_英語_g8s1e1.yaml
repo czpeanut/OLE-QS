@@ -1268,7 +1268,7 @@ questions:
   number: 1
   type: essay
   page: 4
-  stem: Uncle Sam made Jamie hamburgers. (將底線改為代名詞並改寫句子) 2%
+  stem: Uncle Sam made <u>Jamie hamburgers</u>. (將底線改為代名詞並改寫句子) 2%
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1281,6 +1281,12 @@ questions:
       chapter: B3 八上
     textbook: 八上 英語 授與動詞（gave/sent/showed/wrote/made + 人 + 物）+ to/for
     labeled_by: ai
+  errata:
+  - from: Uncle Sam made Jamie hamburgers. (將底線改為代名詞並改寫句子) 2%
+    to: Uncle Sam made <u>Jamie hamburgers</u>. (將底線改為代名詞並改寫句子) 2%
+    note: 原卷「Jamie hamburgers」處劃有底線，漏標底線會無從辨認改寫目標
+    by: review
+    extraction: true
 - id: doc_113_台中_居仁_英語_g8s1e1_s8_2
   section: 8
   number: 2

@@ -361,7 +361,7 @@ questions:
   stem: 將濾液置於蒸發皿中加熱，最後得到白色顆粒的食鹽，其原理與下列何者相同？
   options:
   - label: A
-    content: 天氣熱於低溫下出現結晶
+    content: 天然於低溫下出現結晶
   - label: B
     content: 將海水於陽光下曝曬得到粗鹽
   - label: C
@@ -388,6 +388,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 將濾液置於蒸發皿中加熱，最後得到白色顆粒的食鹽，其原理與下列何者相同？
+    to: 將濾液置於蒸發皿中加熱，最後得到白色顆粒的食鹽，其原理與下列何者相同？
+    note: 原卷為「天然」，擷取誤作「天氣熱」
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_自然_理化_g8s1e1_s1_11
   section: 1
   number: 11
@@ -437,7 +443,7 @@ questions:
     content: 1.7 g/cm$^{3}$
   - label: D
     content: 1.2 g/cm$^{3}$
-  group_stem: "佳蓁進行測量液體密度的實驗，以量筒逐次裝不同體積的某液體，並以電子天平測量其質量，得到如下表的位置。試回答下列 12-13 問題。\n\
+  group_stem: "佳蓁進行測量液體密度的實驗，以量筒逐次裝不同體積的某液體，並以電子天平測量其質量，得到如下表的數據。試回答下列 12-13 問題。\n\
     \n| 液體體積 $V(\\text{cm}^{3})$ | 10 | 20 | 30 | 40 | 50 |\n| :--- | :---: | :---:\
     \ | :---: | :---: | :---: | \n| 質量 $m$ (g) | 27 | 39 | 51 | 63 | 75 |"
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -459,6 +465,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 由表中數據可得知某液體的密度為多少？
+    to: 由表中數據可得知某液體的密度為多少？
+    note: 原卷為「數據」，擷取誤作「位置」
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_自然_理化_g8s1e1_s1_13
   section: 1
   number: 13
@@ -474,7 +486,7 @@ questions:
     content: 12g
   - label: D
     content: 10g
-  group_stem: "佳蓁進行測量液體密度的實驗，以量筒逐次裝不同體積的某液體，並以電子天平測量其質量，得到如下表的位置。試回答下列 12-13 問題。\n\
+  group_stem: "佳蓁進行測量液體密度的實驗，以量筒逐次裝不同體積的某液體，並以電子天平測量其質量，得到如下表的數據。試回答下列 12-13 問題。\n\
     \n| 液體體積 $V(\\text{cm}^{3})$ | 10 | 20 | 30 | 40 | 50 |\n| :--- | :---: | :---:\
     \ | :---: | :---: | :---: | \n| 質量 $m$ (g) | 27 | 39 | 51 | 63 | 75 |"
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -960,7 +972,7 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: 阿元買了一瓶高粱，高粱瓶上貼著如下圖的標示，阿元在料理料理雞前將 200 mL 的高粱加入 800 mL 的水中，則下列何者為此混合液內酒精的含量？
+  stem: 阿元買了一瓶高粱，高粱瓶上貼著如下圖的標示，阿元在料理雞前將 200 mL 的高粱加入 800 mL 的水中，則下列何者為此混合液內酒精的含量？
   options:
   - label: A
     content: 580 mL
@@ -1006,12 +1018,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 阿元買了一瓶高粱，高粱瓶上貼著如下圖的標示，阿元在料理料理雞前將 200 mL 的高粱加入 800 mL 的水中，則下列何者為此混合液內酒精的含量？
+    to: 阿元買了一瓶高粱，高粱瓶上貼著如下圖的標示，阿元在料理雞前將 200 mL 的高粱加入 800 mL 的水中，則下列何者為此混合液內酒精的含量？
+    note: 多擷取「料理」二字
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_自然_理化_g8s1e1_s1_27
   section: 1
   number: 27
   type: single
   page: 2
-  stem: 小強以 60℃的水熱水配成一杯飽和的硝酸鉀水溶液，如圖(一)所示；將其靜置使水溶液溫度降至室溫，結果如圖(二)所示。若不考慮水的蒸發，則圖(二)溶液的狀態與降溫前後硝酸鉀的濃度變化應為下列何者？
+  stem: 小強以 60℃的熱水配成一杯飽和的硝酸鉀水溶液，如圖(一)所示；將其靜置使水溶液溫度降至室溫，結果如圖(二)所示。若不考慮水的蒸發，則圖(二)溶液的狀態與降溫前後硝酸鉀的濃度變化應為下列何者？
   options:
   - label: A
     content: 未飽和溶液，濃度變小
@@ -1057,6 +1075,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小強以 60℃的水熱水配成一杯飽和的硝酸鉀水溶液，如圖(一)所示；將其靜置使水溶液溫度降至室溫，結果如圖(二)所示。若不考慮水的蒸發，則圖(二)溶液的狀態與降溫前後硝酸鉀的濃度變化應為下列何者？
+    to: 小強以 60℃的熱水配成一杯飽和的硝酸鉀水溶液，如圖(一)所示；將其靜置使水溶液溫度降至室溫，結果如圖(二)所示。若不考慮水的蒸發，則圖(二)溶液的狀態與降溫前後硝酸鉀的濃度變化應為下列何者？
+    note: 多擷取「水」字
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_自然_理化_g8s1e1_s1_28
   section: 1
   number: 28
@@ -1259,7 +1283,7 @@ questions:
   number: 33
   type: single
   page: 2
-  stem: 某國空氣品質標準中，一氧化碳的平均指針訂為 25ppm，代表 $1\text{m}^{3}$ 空氣中含有的一氧化碳體積為多少？
+  stem: 某國空氣品質標準中，一氧化碳的平均指標訂為 25ppm，代表 $1\text{m}^{3}$ 空氣中含有的一氧化碳體積為多少？
   options:
   - label: A
     content: 25 立方公分($\text{cm}^{3}$)
@@ -1268,7 +1292,7 @@ questions:
   - label: C
     content: 25 立方微米($\mu\text{m}^{3}$)
   - label: D
-    content: 25 立方毫米($\text{nm}^{3}$)
+    content: 25 立方奈米($\text{nm}^{3}$)
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1288,6 +1312,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 某國空氣品質標準中，一氧化碳的平均指針訂為 25ppm，代表 $1\text{m}^{3}$ 空氣中含有的一氧化碳體積為多少？
+    to: 某國空氣品質標準中，一氧化碳的平均指標訂為 25ppm，代表 $1\text{m}^{3}$ 空氣中含有的一氧化碳體積為多少？
+    note: 題幹指標誤作指針；(D)奈米誤作毫米
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_自然_理化_g8s1e1_s1_34
   section: 1
   number: 34
@@ -1415,7 +1445,7 @@ questions:
   number: 37
   type: single
   page: 3
-  stem: 室溫為 25℃，小禹取兩個乾淨透明的保特瓶，分別裝半滿的 3℃冰開水及 70℃熱開水，最後將兩個瓶子以瓶蓋密封。過了幾分鐘之後，小禹最有可能是見到下列何種現象發生？
+  stem: 室溫為 25℃，小禹取兩個乾淨透明的保特瓶，分別裝半滿的 3℃冰開水及 70℃熱開水，最後將兩個瓶子以瓶蓋密封。過了幾分鐘之後，小禹最有可能見到下列何種現象發生？
   options:
   - label: A
     content: 兩個保特瓶外下半部都有附著小水珠
@@ -1444,6 +1474,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 室溫為 25℃，小禹取兩個乾淨透明的保特瓶，分別裝半滿的 3℃冰開水及 70℃熱開水，最後將兩個瓶子以瓶蓋密封。過了幾分鐘之後，小禹最有可能是見到下列何種現象發生？
+    to: 室溫為 25℃，小禹取兩個乾淨透明的保特瓶，分別裝半滿的 3℃冰開水及 70℃熱開水，最後將兩個瓶子以瓶蓋密封。過了幾分鐘之後，小禹最有可能見到下列何種現象發生？
+    note: 多擷取「是」字
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_自然_理化_g8s1e1_s1_38
   section: 1
   number: 38

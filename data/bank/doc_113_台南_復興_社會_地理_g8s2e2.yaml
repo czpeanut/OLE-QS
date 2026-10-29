@@ -222,7 +222,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 承小題，「蘇伊士運河」是國際重要的運輸航道，該運河連接下列哪兩處的海域？
+  stem: 承主題，「蘇伊士運河」是國際重要的運輸航道，該運河連接下列哪兩處的海域？
   options:
   - label: A
     content: 黑海、地中海
@@ -251,6 +251,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承小題，「蘇伊士運河」是國際重要的運輸航道，該運河連接下列哪兩處的海域？
+    to: 承主題，「蘇伊士運河」是國際重要的運輸航道，該運河連接下列哪兩處的海域？
+    note: 原卷作「承主題」，擷取誤作「承小題」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_地理_g8s2e2_s1_7
   section: 1
   number: 7
@@ -556,7 +562,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 圖(4)為西亞及北非地圖，圖中某地居民順應當地夏乾冬雨的氣候，將冬雨蓄水後灌溉種植葡萄、橄欖等作物，請問：上述地點最可能現在圖(4)中何處？
+  stem: 圖(4)為西亞及北非地圖，圖中某地居民順應當地夏乾冬雨的氣候，將冬雨蓄水後灌溉種植葡萄、橄欖等作物，請問：上述地點最可能出現在圖(4)中何處？
   options:
   - label: A
     content: 甲
@@ -567,23 +573,16 @@ questions:
   - label: D
     content: 丁
   assets:
-  - key: s1_14_f1
+  - key: s1_14_r10290704_1
     kind: figure
-    file: doc_113_台南_復興_社會_地理_g8s2e2/s1_14_f1.png
+    file: doc_113_台南_復興_社會_地理_g8s2e2/s1_14_r10290704_1.png
     crop:
       page: 2
       rect:
-      - 291.04
-      - 96.27
-      - 546.36
-      - 241.47
-      auto_from:
-      - 308.29
-      - 94.25
-      - 548.84
-      - 244.15
-    crop_by: auto
-    redrawn: 去除浮水印
+      - 302.59
+      - 93.66
+      - 548.12
+      - 244.79
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -603,6 +602,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 圖(4)為西亞及北非地圖，圖中某地居民順應當地夏乾冬雨的氣候，將冬雨蓄水後灌溉種植葡萄、橄欖等作物，請問：上述地點最可能現在圖(4)中何處？
+    to: 圖(4)為西亞及北非地圖，圖中某地居民順應當地夏乾冬雨的氣候，將冬雨蓄水後灌溉種植葡萄、橄欖等作物，請問：上述地點最可能出現在圖(4)中何處？
+    note: 擷取漏了「出」字；原卷有校徽浮水印底圖，已拿掉浮水印、依原卷重新繪製附圖
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_地理_g8s2e2_s1_15
   section: 1
   number: 15
@@ -760,7 +765,7 @@ questions:
   stem: 穆斯林每天必須朝向聖城進行五次禮拜，稱為「禮功」，請問此聖城指的是下列哪一個城市？
   options:
   - label: A
-    content: 伊斯斯坦堡
+    content: 伊斯坦堡
   - label: B
     content: 麥加
   - label: C
@@ -791,6 +796,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 穆斯林每天必須朝向聖城進行五次禮拜，稱為「禮功」，請問此聖城指的是下列哪一個城市？
+    to: 穆斯林每天必須朝向聖城進行五次禮拜，稱為「禮功」，請問此聖城指的是下列哪一個城市？
+    note: 原卷為「伊斯坦堡」，擷取多一「斯」字
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_地理_g8s2e2_s1_20
   section: 1
   number: 20

@@ -633,7 +633,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 如圖，大、小兩個同心圓的半徑分別為12、6，$\overline{AB}$、$\overline{CD}$分別為大、小兩圓上的一弦，若$\widehat{AB}$的長度為$4\pi$，則$\widehat{CD}$的長度為？
+  stem: 如圖，大、小兩個同心圓的半徑分別為12、6，$\widehat{AB}$、$\widehat{CD}$分別為大、小兩圓上的一弧，若$\widehat{AB}$的長度為$4\pi$，則$\widehat{CD}$的長度為？
   options:
   - label: A
     content: $4\pi$
@@ -679,6 +679,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，大、小兩個同心圓的半徑分別為12、6，$\overline{AB}$、$\overline{CD}$分別為大、小兩圓上的一弦，若$\widehat{AB}$的長度為$4\pi$，則$\widehat{CD}$的長度為？
+    to: 如圖，大、小兩個同心圓的半徑分別為12、6，$\widehat{AB}$、$\widehat{CD}$分別為大、小兩圓上的一弧，若$\widehat{AB}$的長度為$4\pi$，則$\widehat{CD}$的長度為？
+    note: 原卷為「一弧」且上方為弧線符號，誤作「一弦」與線段
+    by: review
+    extraction: true
 - id: doc_113_台中_順天_數學_g9s1e2_s1_14
   section: 1
   number: 14

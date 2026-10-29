@@ -254,7 +254,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 如圖(2)，已知 $\overline{AB}$ 的長是圓周長的 $\frac{1}{6}$，則 $\angle ACB+\angle ADB=?$【2-2】
+  stem: 如圖(2)，已知 $\wideparen{AB}$ 的長是圓周長的 $\frac{1}{6}$，則 $\angle ACB+\angle ADB=?$【2-2】
   options:
   - label: A
     content: $30^\circ$
@@ -298,6 +298,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖(2)，已知 $\overline{AB}$ 的長是圓周長的 $\frac{1}{6}$，則 $\angle ACB+\angle ADB=?$【2-2】
+    to: 如圖(2)，已知 $\wideparen{AB}$ 的長是圓周長的 $\frac{1}{6}$，則 $\angle ACB+\angle ADB=?$【2-2】
+    note: 原卷為弧AB，誤植為線段AB
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_數學_g9s1e2_s1_8
   section: 1
   number: 8
@@ -540,8 +546,8 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 第三關--「打彈珠」，本遊戲中學校設計出形如圖(7)的創意彈珠檯，已知創意彈珠檯圓形部分的半徑為 50 公分，$\overline{AB}=120^\circ$，$\overline{PA}$、$\overline{PB}$
-    為圓的兩條切線，請問兩個切點 $A$、$B$ 相距多少公分？ 【2-1】
+  stem: 第三關--「打彈珠」，本遊戲中學校設計出形如圖(7)的創意彈珠檯，已知創意彈珠檯圓形部分的半徑為 50 公分，$\overarc{AB}=120^\circ$，$\overleftrightarrow{PA}$、$\overleftrightarrow{PB}$為圓的兩條切線，請問兩個切點
+    $A$、$B$ 相距多少公分？ 【2-1】
   options:
   - label: A
     content: $50\sqrt{3}$
@@ -587,6 +593,14 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 第三關--「打彈珠」，本遊戲中學校設計出形如圖(7)的創意彈珠檯，已知創意彈珠檯圓形部分的半徑為 50 公分，$\overline{AB}=120^\circ$，$\overline{PA}$、$\overline{PB}$
+      為圓的兩條切線，請問兩個切點 $A$、$B$ 相距多少公分？ 【2-1】
+    to: 第三關--「打彈珠」，本遊戲中學校設計出形如圖(7)的創意彈珠檯，已知創意彈珠檯圓形部分的半徑為 50 公分，$\overarc{AB}=120^\circ$，$\overleftrightarrow{PA}$、$\overleftrightarrow{PB}$為圓的兩條切線，請問兩個切點
+      $A$、$B$ 相距多少公分？ 【2-1】
+    note: 原卷為弧AB及射線PA、PB，誤植為線段
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_數學_g9s1e2_s1_14
   section: 1
   number: 14
@@ -746,7 +760,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 如圖(11)，已知正六邊形 ABCDEF，正五邊形 AGHIJ 的頂點均在圓 $O$ 的圓周上，則 $\overline{BG}$ 的度數為何？ 【2-2】
+  stem: 如圖(11)，已知正六邊形 ABCDEF，正五邊形 AGHIJ 的頂點均在圓 O 的圓周上，則 $\overparen{BG}$ 的度數為何？ 【2-2】
   options:
   - label: A
     content: $8^\circ$
@@ -790,6 +804,13 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖(11)，已知正六邊形 ABCDEF，正五邊形 AGHIJ 的頂點均在圓 $O$ 的圓周上，則 $\overline{BG}$ 的度數為何？
+      【2-2】
+    to: 如圖(11)，已知正六邊形 ABCDEF，正五邊形 AGHIJ 的頂點均在圓 O 的圓周上，則 $\overparen{BG}$ 的度數為何？ 【2-2】
+    note: 原卷為弧BG，誤植為線段BG
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_數學_g9s1e2_s1_18
   section: 1
   number: 18
@@ -845,8 +866,8 @@ questions:
   number: 1
   type: fill
   page: 3
-  stem: 如圖(13)，兩圓交於 $A$、$B$ 兩點。若 $C$、$B$、$D$ 三點共線，且 $\overline{BC}=76^\circ$，$\angle
-    C=40^\circ$，則 $\overline{ABD}$ 的度數＝ ① 度【2-2】
+  stem: 如圖(13)，兩圓交於 $A$、$B$ 兩點。若 $C$、$B$、$D$ 三點共線，且 $\overgroup{BC}=76^\circ$，$\angle
+    C=40^\circ$，則 $\overgroup{ABD}$ 的度數＝ ① 度【2-2】
   assets:
   - key: s2_1_f1
     kind: figure
@@ -881,6 +902,14 @@ questions:
   - '204'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖(13)，兩圓交於 $A$、$B$ 兩點。若 $C$、$B$、$D$ 三點共線，且 $\overline{BC}=76^\circ$，$\angle
+      C=40^\circ$，則 $\overline{ABD}$ 的度數＝ ① 度【2-2】
+    to: 如圖(13)，兩圓交於 $A$、$B$ 兩點。若 $C$、$B$、$D$ 三點共線，且 $\overgroup{BC}=76^\circ$，$\angle
+      C=40^\circ$，則 $\overgroup{ABD}$ 的度數＝ ① 度【2-2】
+    note: 原卷為弧BC與弧ABD，誤植為線段
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_數學_g9s1e2_s2_2
   section: 2
   number: 2
@@ -928,7 +957,7 @@ questions:
   number: 3
   type: fill
   page: 3
-  stem: 如圖(15)，兩同心圓的半徑分別為 $6$、$15$，若 $\overline{CD}$ 的長度為 $4\pi$，若 $\overline{AB}$
+  stem: 如圖(15)，兩同心圓的半徑分別為 $6$、$15$，若 $\overgroup{CD}$ 的長度為 $4\pi$，若 $\overgroup{AB}$
     的長度為 ③ 。 【2-2】
   assets:
   - key: s2_3_f1
@@ -964,12 +993,20 @@ questions:
   - 10\pi
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖(15)，兩同心圓的半徑分別為 $6$、$15$，若 $\overline{CD}$ 的長度為 $4\pi$，若 $\overline{AB}$
+      的長度為 ③ 。 【2-2】
+    to: 如圖(15)，兩同心圓的半徑分別為 $6$、$15$，若 $\overgroup{CD}$ 的長度為 $4\pi$，若 $\overgroup{AB}$
+      的長度為 ③ 。 【2-2】
+    note: 原卷為弧CD與弧AB，誤植為線段
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_數學_g9s1e2_s2_4
   section: 2
   number: 4
   type: fill
   page: 3
-  stem: 如圖(16) ，$A$、$B$、$C$、$D$、$E$、$F$ 為圓上六個點，已知 $\overline{AF}=70^\circ$，$\overline{CD}=98^\circ$，則
+  stem: 如圖(16) ，$A$、$B$、$C$、$D$、$E$、$F$ 為圓上六個點，已知 $\overgroup{AF}=70^\circ$，$\overgroup{CD}=98^\circ$，則
     $\angle B+\angle E=$ ④ 度 【2-2】
   assets:
   - key: s2_4_f1
@@ -1006,6 +1043,14 @@ questions:
   - '96'
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 如圖(16) ，$A$、$B$、$C$、$D$、$E$、$F$ 為圓上六個點，已知 $\overline{AF}=70^\circ$，$\overline{CD}=98^\circ$，則
+      $\angle B+\angle E=$ ④ 度 【2-2】
+    to: 如圖(16) ，$A$、$B$、$C$、$D$、$E$、$F$ 為圓上六個點，已知 $\overgroup{AF}=70^\circ$，$\overgroup{CD}=98^\circ$，則
+      $\angle B+\angle E=$ ④ 度 【2-2】
+    note: 原卷為弧AF與弧CD，誤植為線段
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_數學_g9s1e2_s2_5
   section: 2
   number: 5
@@ -1169,8 +1214,8 @@ questions:
   number: 2
   type: calc
   page: 3
-  stem: 如圖，有一個圓通過 $\triangle ABC$ 的三個頂點，且 $\overline{BC}$ 的中垂線與 $\overline{AC}$ 相交於
-    $D$ 點，若 $\angle B=82^\circ$，$\angle C=48^\circ$，求 $\overline{AD}$ 的度數。
+  stem: 如圖，有一個圓通過 $\triangle ABC$ 的三個頂點，且 $\overparen{BC}$ 的中垂線與 $\overparen{AC}$
+    相交於 $D$ 點，若 $\angle B=82^\circ$，$\angle C=48^\circ$，求 $\overparen{AD}$ 的度數。
   assets:
   - key: s3_2_f1
     kind: figure
@@ -1198,3 +1243,11 @@ questions:
       chapter: 第2章 圓形
     textbook: 九上 2-2 圓心角與圓周角
     labeled_by: ai
+  errata:
+  - from: 如圖，有一個圓通過 $\triangle ABC$ 的三個頂點，且 $\overline{BC}$ 的中垂線與 $\overline{AC}$
+      相交於 $D$ 點，若 $\angle B=82^\circ$，$\angle C=48^\circ$，求 $\overline{AD}$ 的度數。
+    to: 如圖，有一個圓通過 $\triangle ABC$ 的三個頂點，且 $\overparen{BC}$ 的中垂線與 $\overparen{AC}$
+      相交於 $D$ 點，若 $\angle B=82^\circ$，$\angle C=48^\circ$，求 $\overparen{AD}$ 的度數。
+    note: 原卷為弧BC、弧AC、弧AD，誤植為線段
+    by: review
+    extraction: true

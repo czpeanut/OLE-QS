@@ -63,7 +63,7 @@ questions:
   number: 2
   type: fill
   page: 1
-  stem: 「ㄅㄢˋ」泊
+  stem: 「ㄉㄢˋ」泊
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -82,12 +82,18 @@ questions:
     gemini_high: 淡
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 「ㄅㄢˋ」泊
+    to: 「ㄉㄢˋ」泊
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「「ㄅㄢˋ」泊」→「2. 「ㄉㄢˋ」泊」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s2e2_s1_3
   section: 1
   number: 3
   type: fill
   page: 1
-  stem: 「ㄌㄨㄣˊ」罩
+  stem: 「ㄌㄨㄥˊ」罩
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -107,6 +113,12 @@ questions:
   - 籠
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「ㄌㄨㄣˊ」罩
+    to: 「ㄌㄨㄥˊ」罩
+    note: 注音「ㄌㄨㄥˊ」誤植為「ㄌㄨㄣˊ」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s2e2_s1_4
   section: 1
   number: 4
@@ -137,7 +149,7 @@ questions:
   number: 5
   type: fill
   page: 1
-  stem: 「ㄒㄩㄢ」章
+  stem: 「ㄒㄩㄣ」章
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -156,6 +168,12 @@ questions:
     gemini_high: 勳
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 「ㄒㄩㄢ」章
+    to: 「ㄒㄩㄣ」章
+    note: 注音「ㄒㄩㄣ」誤植為「ㄒㄩㄢ」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s2e2_s1_6
   section: 1
   number: 6
@@ -908,11 +926,11 @@ questions:
   - label: A
     content: 啁「ㄐㄧㄡ」／「ㄐㄧㄡ」出
   - label: B
-    content: 「ㄒㄩㄢ」然欲醉／「ㄒㄩㄢ」衣草
+    content: 「ㄒㄩㄣ」然欲醉／「ㄒㄩㄣ」衣草
   - label: C
     content: 「ㄔㄨㄥˇ」物／「ㄔㄨㄥˇ」愛
   - label: D
-    content: 「ㄓㄢˇ」前顧後／「ㄓㄢˇ」先生
+    content: 「ㄓㄢ」前顧後／「ㄓㄢ」先生
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -932,6 +950,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列各組詞語，何組詞語字形皆相同？
+    to: 下列各組詞語，何組詞語字形皆相同？
+    note: (B)注音誤植，(D)誤多出三聲符號
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s2e2_s5_2
   section: 5
   number: 2
@@ -940,9 +964,9 @@ questions:
   stem: 下列各組詞語，何組詞語讀音皆相同？
   options:
   - label: A
-    content: 「爨」時／古「剎」
+    content: 「霎」時／古「剎」
   - label: B
-    content: 「樂」章／「欒」樹
+    content: 「欒」章／「欒」樹
   - label: C
     content: 發「洩」／傾「瀉」
   - label: D
@@ -966,6 +990,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列各組詞語，何組詞語讀音皆相同？
+    to: 下列各組詞語，何組詞語讀音皆相同？
+    note: 「霎」字誤植為「爨」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s2e2_s5_3
   section: 5
   number: 3

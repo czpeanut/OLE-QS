@@ -768,7 +768,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: （ ）附圖為臺灣陽在一平中所見太陽在天空中位置的示意圖，甲、乙為正午時太陽到達最低和最高兩點。若某一天太陽的軌跡為「X－甲－Y」，則下列有關這一天敘述何者正確？
+  stem: 附圖為臺灣在一年中所見太陽在天空中位置的示意圖，甲、乙為正午時太陽到達最低和最高兩點。若某一天太陽的軌跡為「$\mathrm{X}$－甲－$\mathrm{Y}$」，則下列有關這一天敘述何者正確？
   options:
   - label: A
     content: 這一天太陽直射赤道
@@ -814,6 +814,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: （ ）附圖為臺灣陽在一平中所見太陽在天空中位置的示意圖，甲、乙為正午時太陽到達最低和最高兩點。若某一天太陽的軌跡為「X－甲－Y」，則下列有關這一天敘述何者正確？
+    to: 附圖為臺灣在一年中所見太陽在天空中位置的示意圖，甲、乙為正午時太陽到達最低和最高兩點。若某一天太陽的軌跡為「$\mathrm{X}$－甲－$\mathrm{Y}$」，則下列有關這一天敘述何者正確？
+    note: 多出「陽在」，「年」誤辨為「平」
+    by: review
+    extraction: true
 - id: doc_112_桃園_石門_自然_g9s1e3_s1_17
   section: 1
   number: 17
@@ -1752,7 +1758,7 @@ questions:
   number: 37
   type: single
   page: 4
-  stem: （ ）如附圖所示，海上一某小島有一條可連結到對岸沙灘的沙子道路，此道路每日都會因海水漲落而露出或淹沒。下列有關此道路與潮汐的描述何者正確？
+  stem: 如附圖所示，海上某小島有一條可連結到對岸沙灘的沙子道路，此道路每日都會因海水漲落而露出或淹沒。下列有關此道路與潮汐的描述何者正確？
   options:
   - label: A
     content: 此道路是在潮間帶的範圍內
@@ -1798,12 +1804,18 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: （ ）如附圖所示，海上一某小島有一條可連結到對岸沙灘的沙子道路，此道路每日都會因海水漲落而露出或淹沒。下列有關此道路與潮汐的描述何者正確？
+    to: 如附圖所示，海上某小島有一條可連結到對岸沙灘的沙子道路，此道路每日都會因海水漲落而露出或淹沒。下列有關此道路與潮汐的描述何者正確？
+    note: 原卷為「海上某小島」，誤多出「一」字
+    by: review
+    extraction: true
 - id: doc_112_桃園_石門_自然_g9s1e3_s1_38
   section: 1
   number: 38
   type: single
   page: 4
-  stem: （ ）皮丁奇計畫在1月3日和家人一起到海邊淨灘，出發前查了當地的潮汐時間如附圖。退潮期間較安全，適合從事淨灘活動，請問下列何者是最佳的淨灘時間？
+  stem: （ ）史丁奇計畫在1月3日和家人一起到海邊淨灘，出發前查了當地的潮汐時間如附圖。退潮期間較安全，適合從事淨灘活動，請問下列何者是最佳的淨灘時間？
   options:
   - label: A
     content: 清晨六點
@@ -1850,6 +1862,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: （ ）皮丁奇計畫在1月3日和家人一起到海邊淨灘，出發前查了當地的潮汐時間如附圖。退潮期間較安全，適合從事淨灘活動，請問下列何者是最佳的淨灘時間？
+    to: （ ）史丁奇計畫在1月3日和家人一起到海邊淨灘，出發前查了當地的潮汐時間如附圖。退潮期間較安全，適合從事淨灘活動，請問下列何者是最佳的淨灘時間？
+    note: 人名「史」誤辨為「皮」
+    by: review
+    extraction: true
 - id: doc_112_桃園_石門_自然_g9s1e3_s1_39
   section: 1
   number: 39

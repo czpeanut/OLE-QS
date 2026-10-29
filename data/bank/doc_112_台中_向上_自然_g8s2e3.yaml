@@ -146,7 +146,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 如下圖所示，以10公克重之力拉一固定在牆壁上的彈簧，彈簧伸長4公分。若彈簧的彈性限度是500公克重，則下列敘述何者錯誤？
+  stem: 如下圖所示，以10公克重之力拉一固定在牆壁上的彈簧，彈簧伸 4長公分。若彈簧的彈性限度是500公克重，則下列敘述何者錯誤？
   options:
   - label: A
     content: 彈簧同時受到牆壁向左的拉力與向右的作用力
@@ -190,6 +190,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如下圖所示，以10公克重之力拉一固定在牆壁上的彈簧，彈簧伸長4公分。若彈簧的彈性限度是500公克重，則下列敘述何者錯誤？
+    to: 如下圖所示，以10公克重之力拉一固定在牆壁上的彈簧，彈簧伸 4長公分。若彈簧的彈性限度是500公克重，則下列敘述何者錯誤？
+    note: 原卷字序印為「伸 4長公分」，擷取自行修正
+    by: review
+    extraction: true
 - id: doc_112_台中_向上_自然_g8s2e3_s1_5
   section: 1
   number: 5
@@ -1739,7 +1745,7 @@ questions:
   number: 36
   type: single
   page: 3
-  stem: 一U形管的截面積為1，內裝有密度為$13.6\text{ g/cm}^{3}$的水銀，兩端水銀面等高，今在右端玻璃管加入高為6.8 cm且密度為$1.0\text{g/cm}^{3}$的水，如附圖所示，則左端玻璃管水銀面高度h為多少cm？
+  stem: 一U形管的截面積為1，內裝有密度為13.6 g/的水銀，兩端水銀面等高，今在右端玻璃管加入高為6.8 cm且密度為$1.0\text{g/}$的水，如附圖所示，則左端玻璃管水銀面高度h為多少cm？
   options:
   - label: A
     content: '0.25'
@@ -1783,6 +1789,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一U形管的截面積為1，內裝有密度為$13.6\text{ g/cm}^{3}$的水銀，兩端水銀面等高，今在右端玻璃管加入高為6.8 cm且密度為$1.0\text{g/cm}^{3}$的水，如附圖所示，則左端玻璃管水銀面高度h為多少cm？
+    to: 一U形管的截面積為1，內裝有密度為13.6 g/的水銀，兩端水銀面等高，今在右端玻璃管加入高為6.8 cm且密度為$1.0\text{g/}$的水，如附圖所示，則左端玻璃管水銀面高度h為多少cm？
+    note: 原卷漏印單位cm3，擷取自行補上
+    by: review
+    extraction: true
 - id: doc_112_台中_向上_自然_g8s2e3_s2_37
   section: 2
   number: 37

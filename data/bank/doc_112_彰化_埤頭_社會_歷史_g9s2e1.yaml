@@ -129,7 +129,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 2020美國總統選舉中出現不少爭論，讓對政治有興趣的立中開始收集研究。他發現任歷史上有圖人因共和體制而成為國家領導人物，最後卻破壞共和體制。請問：下列那一組合正確？
+  stem: 2020美國總統選舉中出現不少爭論，讓對政治有興趣的立中開始收集研究。他發現歷史上有兩人因共和體制而成為國家領導人物，最後卻破壞共和體制。請問：下列那一組合正確？
   options:
   - label: A
     content: 羅伯斯比爾、段祺瑞
@@ -158,12 +158,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 2020美國總統選舉中出現不少爭論，讓對政治有興趣的立中開始收集研究。他發現任歷史上有圖人因共和體制而成為國家領導人物，最後卻破壞共和體制。請問：下列那一組合正確？
+    to: 2020美國總統選舉中出現不少爭論，讓對政治有興趣的立中開始收集研究。他發現歷史上有兩人因共和體制而成為國家領導人物，最後卻破壞共和體制。請問：下列那一組合正確？
+    note: 「歷史上有兩人」誤擷為「任歷史上有圖人」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: '寫皇上百萬中學堂挑戰社會科目題目如附表，請問：宥呈該如何回答才不會漏氣？
+  stem: '宥呈上百萬中學堂挑戰社會科目題目如附表，請問：宥呈該如何回答才不會漏氣？
 
 
     | 主題：工業革命之影響 |
@@ -203,6 +209,34 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '寫皇上百萬中學堂挑戰社會科目題目如附表，請問：宥呈該如何回答才不會漏氣？
+
+
+      | 主題：工業革命之影響 |
+
+      | :--- |
+
+      | 一、人口向都市集中的都市化現象。 |
+
+      | 二、工業國家爭奪海外殖民地。 |
+
+      | 三、？ |'
+    to: '宥呈上百萬中學堂挑戰社會科目題目如附表，請問：宥呈該如何回答才不會漏氣？
+
+
+      | 主題：工業革命之影響 |
+
+      | :--- |
+
+      | 一、人口向都市集中的都市化現象。 |
+
+      | 二、工業國家爭奪海外殖民地。 |
+
+      | 三、？ |'
+    note: 「宥」誤擷為「寫」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_6
   section: 1
   number: 6
@@ -412,7 +446,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 資料一：這是一個變動的年代，在這個世紀中，發生了影響後乘局勢的革命；資料二：在這個世紀中，人類的生產方式改變，因此造就後來的侵略行為。根據上述資料來判斷，則這個世紀是
+  stem: 資料一：這是一個變動的年代，在這個世紀中，發生了影響後世局勢的革命；資料二：在這個世紀中，人類的生產方式改變，因此造就後來的侵略行為。根據上述資料來判斷，則這個世紀是
   options:
   - label: A
     content: 十六世紀
@@ -442,6 +476,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 資料一：這是一個變動的年代，在這個世紀中，發生了影響後乘局勢的革命；資料二：在這個世紀中，人類的生產方式改變，因此造就後來的侵略行為。根據上述資料來判斷，則這個世紀是
+    to: 資料一：這是一個變動的年代，在這個世紀中，發生了影響後世局勢的革命；資料二：在這個世紀中，人類的生產方式改變，因此造就後來的侵略行為。根據上述資料來判斷，則這個世紀是
+    note: 「世」誤擷為「乘」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_13
   section: 1
   number: 13
@@ -589,7 +629,7 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 有位19世紀的英國詩人曾說，在義大利統一過程中，有三位當代人物對國家統一步作出重要的貢獻：加富爾相當於義大利的腦袋，主導外交策略；加里波底象徵義大利的利劍，達成軍事任務；下列何人則象徵義大利的靈魂，激發民族意識？
+  stem: 有位19世紀的英國詩人曾說，在義大利統一過程中，有三位當代人物對國家統一作出重要的貢獻：加富爾相當於義大利的腦袋，主導外交策略；加里波底象徵義大利的利劍，達成軍事任務；下列何人則象徵義大利的靈魂，激發民族意識？
   options:
   - label: A
     content: 俾斯麥
@@ -618,12 +658,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 有位19世紀的英國詩人曾說，在義大利統一過程中，有三位當代人物對國家統一步作出重要的貢獻：加富爾相當於義大利的腦袋，主導外交策略；加里波底象徵義大利的利劍，達成軍事任務；下列何人則象徵義大利的靈魂，激發民族意識？
+    to: 有位19世紀的英國詩人曾說，在義大利統一過程中，有三位當代人物對國家統一作出重要的貢獻：加富爾相當於義大利的腦袋，主導外交策略；加里波底象徵義大利的利劍，達成軍事任務；下列何人則象徵義大利的靈魂，激發民族意識？
+    note: 多擷取「步」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_18
   section: 1
   number: 18
   type: single
   page: 1
-  stem: 附圖描繪義大利紅衫軍的領袖，為薩丁尼亞國王穿靴子的情景。靴子象徵義大利，用來表示他將所征服的南部地區獻給國王的故事。這位曾在辭職電報上文，我服從（義大利文，我服從）一字引退的紅衫軍的領袖是何人？
+  stem: 附圖描繪義大利紅衫軍的領袖，為薩丁尼亞國王穿靴子的情景。靴子象徵義大利，用來表示他將所征服的南部地區獻給國王的故事。這位曾在辭職電報上以「obbedisco」（義大利文，我服從）一字引退的紅衫軍的領袖是何人？
   options:
   - label: A
     content: 加富爾
@@ -669,6 +715,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 附圖描繪義大利紅衫軍的領袖，為薩丁尼亞國王穿靴子的情景。靴子象徵義大利，用來表示他將所征服的南部地區獻給國王的故事。這位曾在辭職電報上文，我服從（義大利文，我服從）一字引退的紅衫軍的領袖是何人？
+    to: 附圖描繪義大利紅衫軍的領袖，為薩丁尼亞國王穿靴子的情景。靴子象徵義大利，用來表示他將所征服的南部地區獻給國王的故事。這位曾在辭職電報上以「obbedisco」（義大利文，我服從）一字引退的紅衫軍的領袖是何人？
+    note: 原文外文及引言誤擷為「文，我服從」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_19
   section: 1
   number: 19
@@ -747,7 +799,7 @@ questions:
   - label: A
     content: 奧國首相梅特涅派兵支持哥國獨立
   - label: B
-    content: 母國西班牙受因於拿破崙相關的戰爭中
+    content: 母國西班牙受困於拿破崙相關的戰爭中
   - label: C
     content: 美國華盛頓領導哥倫比亞的獨立戰爭
   - label: D
@@ -771,6 +823,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問下列何者是南美洲國家哥倫比亞在19世紀早期能順利獨立的助因？
+    to: 請問下列何者是南美洲國家哥倫比亞在19世紀早期能順利獨立的助因？
+    note: 「困」誤擷為「因」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_22
   section: 1
   number: 22
@@ -884,7 +942,7 @@ questions:
   - label: A
     content: 昱銓：議會制與啟蒙思想是美國獨立的主要淵源
   - label: B
-    content: 又菁：美獨立戰爭的導火線是徵稅問題
+    content: 又菁：美國獨立戰爭的導火線是徵稅問題
   - label: C
     content: 桓瑜：歐洲各國組成反對聯盟抵制美國獨立
   - label: D
@@ -908,6 +966,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 裕哲和同學聊關於美國獨立的相關歷史事件，請問下列哪一個同學的敘述是錯誤的呢？
+    to: 裕哲和同學聊關於美國獨立的相關歷史事件，請問下列哪一個同學的敘述是錯誤的呢？
+    note: 漏「國」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_26
   section: 1
   number: 26
@@ -952,7 +1016,7 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 電影《決戰時刻》其內容描述美國獨立戰爭的過程。影片中男主角有來自良友的盟友，協助民兵打這一場艱苦的戰爭。請問：這位盟友應該是來自於那一個國家？
+  stem: 電影《決戰時刻》其內容描述美國獨立戰爭的過程。影片中男主角有來自遠方的盟友，協助民兵打這一場艱苦的戰爭。請問：這位盟友應該是來自於那一個國家？
   options:
   - label: A
     content: 英國
@@ -981,6 +1045,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 電影《決戰時刻》其內容描述美國獨立戰爭的過程。影片中男主角有來自良友的盟友，協助民兵打這一場艱苦的戰爭。請問：這位盟友應該是來自於那一個國家？
+    to: 電影《決戰時刻》其內容描述美國獨立戰爭的過程。影片中男主角有來自遠方的盟友，協助民兵打這一場艱苦的戰爭。請問：這位盟友應該是來自於那一個國家？
+    note: 「遠方」誤擷為「良友」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_28
   section: 1
   number: 28
@@ -1056,7 +1126,7 @@ questions:
   number: 30
   type: single
   page: 2
-  stem: 請問：這個地區正式被定名為何人有關？
+  stem: 請問：這個地區正式被定名與何人有關？
   options:
   - label: A
     content: 哥倫布
@@ -1086,6 +1156,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問：這個地區正式被定名為何人有關？
+    to: 請問：這個地區正式被定名與何人有關？
+    note: 「與」誤擷為「為」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_31
   section: 1
   number: 31
@@ -1127,7 +1203,7 @@ questions:
   number: 32
   type: single
   page: 2
-  stem: 法國大革命的英雄拿破崙，是興貝多芬十分敬慕的對象，並為他譜寫英雄交響曲，但因發生某一事件使貝多芬怒大怒，將樂譜撕毀。請問：上文中的某事，應是下列哪一事件？
+  stem: 法國大革命的英雄拿破崙，是貝多芬十分敬慕的對象，並為他譜寫英雄交響曲，但因發生某一事件使貝多芬大怒，將樂譜撕毀。請問：上文中的某事，應是下列哪一事件？
   options:
   - label: A
     content: 拿破崙於滑鐵盧之役慘敗
@@ -1137,7 +1213,7 @@ questions:
     content: 拿破崙遠征俄國失敗
   - label: D
     content: 拿破崙傳播法國大革命的精神
-  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於2018年11月17日開始的抗議運動。近期也因為退休制度改革而引爆連輪業的罷地鐵大罷工……，民主根基深厚的話國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
+  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於 2018 年 11 月 17 日開始的抗議運動。近期也因為退休制度改革而引爆運輸業的罷地鐵大罷工……，民主根基深厚的法國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1157,6 +1233,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 法國大革命的英雄拿破崙，是興貝多芬十分敬慕的對象，並為他譜寫英雄交響曲，但因發生某一事件使貝多芬怒大怒，將樂譜撕毀。請問：上文中的某事，應是下列哪一事件？
+    to: 法國大革命的英雄拿破崙，是貝多芬十分敬慕的對象，並為他譜寫英雄交響曲，但因發生某一事件使貝多芬大怒，將樂譜撕毀。請問：上文中的某事，應是下列哪一事件？
+    note: 題組導言多處文字辨識錯誤；多擷取「興」字與「怒」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g9s2e1_s1_33
   section: 1
   number: 33
@@ -1172,7 +1254,7 @@ questions:
     content: 乙丙甲丁
   - label: D
     content: 甲乙丁丙
-  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於2018年11月17日開始的抗議運動。近期也因為退休制度改革而引爆連輪業的罷地鐵大罷工……，民主根基深厚的話國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
+  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於 2018 年 11 月 17 日開始的抗議運動。近期也因為退休制度改革而引爆運輸業的罷地鐵大罷工……，民主根基深厚的法國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1207,7 +1289,7 @@ questions:
     content: 戊
   - label: D
     content: 辛
-  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於2018年11月17日開始的抗議運動。近期也因為退休制度改革而引爆連輪業的罷地鐵大罷工……，民主根基深厚的話國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
+  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於 2018 年 11 月 17 日開始的抗議運動。近期也因為退休制度改革而引爆運輸業的罷地鐵大罷工……，民主根基深厚的法國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
   assets:
   - key: s1_34_f1
     kind: figure
@@ -1260,7 +1342,7 @@ questions:
     content: 七月革命
   - label: D
     content: 恐怖統治結束
-  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於2018年11月17日開始的抗議運動。近期也因為退休制度改革而引爆連輪業的罷地鐵大罷工……，民主根基深厚的話國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
+  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於 2018 年 11 月 17 日開始的抗議運動。近期也因為退休制度改革而引爆運輸業的罷地鐵大罷工……，民主根基深厚的法國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1295,7 +1377,7 @@ questions:
     content: 三級會議之後改成立國民會議
   - label: D
     content: 以巴黎市民攻陷巴士底監獄為開端
-  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於2018年11月17日開始的抗議運動。近期也因為退休制度改革而引爆連輪業的罷地鐵大罷工……，民主根基深厚的話國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
+  group_stem: 黃背心運動（法語：Mouvement des gilets jaunes）又稱黃馬甲運動，是法國一場於 2018 年 11 月 17 日開始的抗議運動。近期也因為退休制度改革而引爆運輸業的罷地鐵大罷工……，民主根基深厚的法國，人民對政府不滿而走上街頭抗爭似乎是家常便飯……，請回答下列問題：32-36
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:

@@ -1424,7 +1424,7 @@ questions:
   number: 39
   type: single
   page: 3
-  stem: 隨著消費者環保意識提升，一家瑞典家具公司也宣布在 2030 年轉型成為「循環企業」，自家的消費者可以把舊傢俱買回，然後再找到願意把舊家具帶回家的新主人，藉此傳遞不過度消費的理念。文中，瑞典企業的回收商品的策略，其主要目的為何？
+  stem: 隨著消費者環保意識提升，一家瑞典家具公司也宣布在 2030 年轉型成為「循環企業」，自家的消費者可以把舊家具買回，然後再找到願意把舊家具帶回家的新主人，藉此傳遞不過度消費的理念。文中，瑞典企業的回收商品的策略，其主要目的為何？
   options:
   - label: A
     content: 善盡企業責任
@@ -1453,6 +1453,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 隨著消費者環保意識提升，一家瑞典家具公司也宣布在 2030 年轉型成為「循環企業」，自家的消費者可以把舊傢俱買回，然後再找到願意把舊家具帶回家的新主人，藉此傳遞不過度消費的理念。文中，瑞典企業的回收商品的策略，其主要目的為何？
+    to: 隨著消費者環保意識提升，一家瑞典家具公司也宣布在 2030 年轉型成為「循環企業」，自家的消費者可以把舊家具買回，然後再找到願意把舊家具帶回家的新主人，藉此傳遞不過度消費的理念。文中，瑞典企業的回收商品的策略，其主要目的為何？
+    note: 原卷為「家具」，誤作「傢俱」
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_社會_g9s1e2_s1_40
   section: 1
   number: 40
@@ -1465,7 +1471,7 @@ questions:
   - label: B
     content: 廣告內容是為了提高企業形象
   - label: C
-    content: 第一代手機以降價成本方式賺取更多利潤
+    content: 第一代手機以降低成本方式賺取更多利潤
   - label: D
     content: 第二代手機以功能取勝
   assets:
@@ -1504,6 +1510,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 右圖為手機製造商「鳳梨手機」的行銷廣告，關於廣告內容的敘述，何者正確？
+    to: 右圖為手機製造商「鳳梨手機」的行銷廣告，關於廣告內容的敘述，何者正確？
+    note: 「低」誤植為「價」
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_社會_g9s1e2_s1_41
   section: 1
   number: 41
@@ -1512,13 +1524,13 @@ questions:
   stem: 葛山在超市買了一個平底鍋，一回到家就馬上拆封，卻發現平底鍋把手斷掉了。請問，葛山應如何爭取自己的權益？
   options:
   - label: A
-    content: 向公平交易委員會提出訴求
+    content: 可向公平交易委員會提出訴求
   - label: B
-    content: 主張七天猶豫期，退回商品
+    content: 可主張七天猶豫期，退回商品
   - label: C
-    content: 主張為瑕疵物品，要求換貨
+    content: 可主張為瑕疵物品，要求換貨
   - label: D
-    content: 向行政院消費者服務中心提出申訴
+    content: 可向行政院消費者服務中心提出申訴
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1538,6 +1550,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 葛山在超市買了一個平底鍋，一回到家就馬上拆封，卻發現平底鍋把手斷掉了。請問，葛山應如何爭取自己的權益？
+    to: 葛山在超市買了一個平底鍋，一回到家就馬上拆封，卻發現平底鍋把手斷掉了。請問，葛山應如何爭取自己的權益？
+    note: 選項開頭漏了「可」字
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_社會_g9s1e2_s1_42
   section: 1
   number: 42
@@ -1670,7 +1688,7 @@ questions:
   number: 45
   type: single
   page: 3
-  stem: 全球前十大自行車品牌，都要靠台灣開發的零件才能組裝出貨，幾乎沒有哪個國家、地區，可以撼動「台灣+台商」的自行車產業實力。依據上述文句推論，下列描述可能是台灣現況的說明？
+  stem: 全球前十大自行車品牌，都要靠台灣開發的零件才能組裝出貨，幾乎沒有哪個國家、地區，可以撼動「台灣+台商」的自行車產業實力。依據上述文句推論，下列描述何者可能是台灣現況的說明？
   options:
   - label: A
     content: 台灣在自行車生產具有優勢
@@ -1699,6 +1717,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 全球前十大自行車品牌，都要靠台灣開發的零件才能組裝出貨，幾乎沒有哪個國家、地區，可以撼動「台灣+台商」的自行車產業實力。依據上述文句推論，下列描述可能是台灣現況的說明？
+    to: 全球前十大自行車品牌，都要靠台灣開發的零件才能組裝出貨，幾乎沒有哪個國家、地區，可以撼動「台灣+台商」的自行車產業實力。依據上述文句推論，下列描述何者可能是台灣現況的說明？
+    note: 「蓬勃發展」誤打成「蓬勃發發」；複核：原卷確實這樣印，可能是原卷錯字：「下列描述可能是台灣現況的說明？」→「下列描述何者可能是台灣現況的說明？」
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_社會_g9s1e2_s1_46
   section: 1
   number: 46

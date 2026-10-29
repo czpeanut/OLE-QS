@@ -728,7 +728,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 以下是小柔的媽媽今天所有行程：早上先去醫院健康檢查，中午買了水餃給小柔吃，下午去美容院燙頭髮，晚上去逛街買鞋子。請問：上述畫雙底線的消費行為有幾項是屬於「勞務」？
+  stem: 以下是小柔的媽媽今天所有行程：早上先去<u class="dbl">醫院健康檢查</u>，中午買了<u>水餃</u>給小柔吃，下午去<u class="dbl">美容院燙頭髮</u>，晚上去逛街<u>買鞋子</u>。請問：上述<u>畫雙底線</u>的消費行為有幾項是屬於「勞務」？
   options:
   - label: A
     content: 一項
@@ -756,6 +756,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 以下是小柔的媽媽今天所有行程：早上先去醫院健康檢查，中午買了水餃給小柔吃，下午去美容院燙頭髮，晚上去逛街買鞋子。請問：上述畫雙底線的消費行為有幾項是屬於「勞務」？
+    to: 以下是小柔的媽媽今天所有行程：早上先去<u class="dbl">醫院健康檢查</u>，中午買了<u>水餃</u>給小柔吃，下午去<u class="dbl">美容院燙頭髮</u>，晚上去逛街<u>買鞋子</u>。請問：上述<u>畫雙底線</u>的消費行為有幾項是屬於「勞務」？
+    note: 原卷醫院健康檢查與美容院燙頭髮有畫雙底線，題目問畫線處卻漏標
+    by: review
+    extraction: true
 - id: doc_111_桃園_石門_社會_公民_g9s1e2_s1_21
   section: 1
   number: 21

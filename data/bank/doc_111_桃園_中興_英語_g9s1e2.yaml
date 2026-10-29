@@ -181,7 +181,7 @@ questions:
   - label: A
     content: would ask
   - label: B
-    content: has been asking him was asked
+    content: has been asking him
   - label: C
     content: is going to ask him
   - label: D
@@ -203,6 +203,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Grandpa went to the doctor and _______ to take the new medicine four times
+      a day.
+    to: Grandpa went to the doctor and _______ to take the new medicine four times
+      a day.
+    note: 選項(B)多出雜訊文字
+    by: review
+    extraction: true
 - id: doc_111_桃園_中興_英語_g9s1e2_s4_16
   section: 4
   number: 16

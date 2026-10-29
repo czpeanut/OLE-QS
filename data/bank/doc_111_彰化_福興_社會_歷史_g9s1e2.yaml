@@ -435,7 +435,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 而第一題出現的三種文字來看，其中甲地使用官方希臘文是代表甲地曾經被哪一國家統治過？
+  stem: 而上題出現的三種文字來看，其中甲地使用官方希臘文是代表甲地曾經被哪一國家統治過？
   options:
   - label: A
     content: 波斯帝國
@@ -465,6 +465,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 而第一題出現的三種文字來看，其中甲地使用官方希臘文是代表甲地曾經被哪一國家統治過？
+    to: 而上題出現的三種文字來看，其中甲地使用官方希臘文是代表甲地曾經被哪一國家統治過？
+    note: 原卷為「而上題」，擷取誤作「而第一題」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g9s1e2_s1_13
   section: 1
   number: 13

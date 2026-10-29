@@ -413,7 +413,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 一連續週期波通過介質中某一波時，該點作往復運動的位置坐標與時間關係曲線如附圖，下列敘述何者正確？
+  stem: 一連續週期波通過介質中某一點時，該點作往復運動的位置坐標與時間關係曲線如附圖，下列敘述何者正確？
   options:
   - label: A
     content: 振幅為 20 公分
@@ -458,6 +458,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 一連續週期波通過介質中某一波時，該點作往復運動的位置坐標與時間關係曲線如附圖，下列敘述何者正確？
+    to: 一連續週期波通過介質中某一點時，該點作往復運動的位置坐標與時間關係曲線如附圖，下列敘述何者正確？
+    note: 「某一點時」誤植為「某一波時」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_自然_g8s1e2_s1_9
   section: 1
   number: 9

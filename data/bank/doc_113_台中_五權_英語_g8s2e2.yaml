@@ -309,8 +309,10 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: "meat, we often eat a bowl of salad and some rice after a long day of working.\
-    \  \n  They all do good to our health."
+  stem: '_____ meat, we often eat a bowl of salad and some rice after a long day of
+    working.
+
+    They all do good to our health.'
   options:
   - label: A
     content: Cook
@@ -337,6 +339,16 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: "meat, we often eat a bowl of salad and some rice after a long day of working.\
+      \  \n  They all do good to our health."
+    to: '_____ meat, we often eat a bowl of salad and some rice after a long day of
+      working.
+
+      They all do good to our health.'
+    note: 漏了句首的填空底線
+    by: review
+    extraction: true
 - id: doc_113_台中_五權_英語_g8s2e2_s1_10
   section: 1
   number: 10

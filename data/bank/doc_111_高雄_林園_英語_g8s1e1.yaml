@@ -1461,8 +1461,11 @@ questions:
   number: 18
   type: essay
   page: 5
-  stem: "十一、依提示作答:（每題2 分，共10 分）\n3. Ethan:                                       \
-    \                             \nPenny: He got up at six this morning.  (請依畫線部分造原問句)"
+  stem: '十一、依提示作答:(每題2分,共10分)
+
+    3. Ethan:
+
+    Penny: He got up <u>at six</u> this morning. (請依畫線部分造原問句)'
   answer:
   - What time/When did he get up this morning?
   answer_source: answer_key_vlm
@@ -1476,6 +1479,17 @@ questions:
       code: B2-09
       title: Wh-疑問句（含過去式）
       chapter: B2 七下
+  errata:
+  - from: "十一、依提示作答:（每題2 分，共10 分）\n3. Ethan:                                     \
+      \                               \nPenny: He got up at six this morning.  (請依畫線部分造原問句)"
+    to: '十一、依提示作答:(每題2分,共10分)
+
+      3. Ethan:
+
+      Penny: He got up <u>at six</u> this morning. (請依畫線部分造原問句)'
+    note: 原卷「at six」有底線，題目要求依畫線造句，擷取漏標底線
+    by: review
+    extraction: true
 - id: doc_111_高雄_林園_英語_g8s1e1_s2_19
   section: 2
   number: 19

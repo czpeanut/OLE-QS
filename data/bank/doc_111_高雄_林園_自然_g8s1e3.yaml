@@ -501,7 +501,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 鋰原子的結構示意圖如附圖，圖中⚫為質子，⚪為電子，⨁為中子，下列何者為鋰原子的符號標示？
+  stem: 鋰原子的結構示意圖如附圖，圖中⚫為質子，⊖為電子，○為中子，下列何者為鋰原子的符號標示？
   options:
   - label: A
     content: $^{3}_{7}\text{Li}$
@@ -512,22 +512,16 @@ questions:
   - label: D
     content: $^{7}_{4}\text{Li}$。
   assets:
-  - key: s1_13_f1
+  - key: s1_13_r10290739_1
     kind: figure
-    file: doc_111_高雄_林園_自然_g8s1e3/s1_13_f1.png
+    file: doc_111_高雄_林園_自然_g8s1e3/s1_13_r10290739_1.png
     crop:
       page: 2
       rect:
-      - 400.22
-      - 615.89
-      - 509.6
-      - 722.01
-      auto_from:
-      - 395.67
-      - 616.91
-      - 511.2
-      - 726.55
-    crop_by: auto
+      - 396.69
+      - 611.96
+      - 511.78
+      - 726.23
   answer:
   - B
   answer_source: answer_key_vlm
@@ -544,6 +538,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 鋰原子的結構示意圖如附圖，圖中⚫為質子，⚪為電子，⨁為中子，下列何者為鋰原子的符號標示？
+    to: 鋰原子的結構示意圖如附圖，圖中⚫為質子，⊖為電子，○為中子，下列何者為鋰原子的符號標示？
+    note: 電子與中子圖示符號與原卷不符（原卷為⊖與○）
+    by: review
+    extraction: true
 - id: doc_111_高雄_林園_自然_g8s1e3_s1_14
   section: 1
   number: 14

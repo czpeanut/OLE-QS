@@ -647,7 +647,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 伊瓜蘇大瀑布是世界新七大自然奇景之一，號稱世界三大瀑布之一，名列聯合國世界自然遺產，也是南美最知名旅遊景點之一，該瀑布在兩季時的水量相當充足。附圖(圖七)為中南美洲氣候類型分布圖，依據位置判斷，該瀑布水量在下列哪一個時間最充沛？
+  stem: 伊瓜蘇大瀑布是世界新七大自然奇景之一，號稱世界三大瀑布之一，名列聯合國世界自然遺產，也是南美最知名旅遊景點之一，該瀑布在雨季時的水量相當充足。附圖(圖七)為中南美洲氣候類型分布圖，依據位置判斷，該瀑布水量在下列哪一個時間最充沛？
   options:
   - label: A
     content: 一月
@@ -693,6 +693,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 伊瓜蘇大瀑布是世界新七大自然奇景之一，號稱世界三大瀑布之一，名列聯合國世界自然遺產，也是南美最知名旅遊景點之一，該瀑布在兩季時的水量相當充足。附圖(圖七)為中南美洲氣候類型分布圖，依據位置判斷，該瀑布水量在下列哪一個時間最充沛？
+    to: 伊瓜蘇大瀑布是世界新七大自然奇景之一，號稱世界三大瀑布之一，名列聯合國世界自然遺產，也是南美最知名旅遊景點之一，該瀑布在雨季時的水量相當充足。附圖(圖七)為中南美洲氣候類型分布圖，依據位置判斷，該瀑布水量在下列哪一個時間最充沛？
+    note: 原卷為「雨季」，誤植為「兩季」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_社會_g9s1e2_s1_15
   section: 1
   number: 15
@@ -1452,7 +1458,7 @@ questions:
   - label: C
     content: 耶路撒冷
   - label: D
-    content: 伊斯斯坦堡
+    content: 伊斯坦堡
   group_stem: '〈二〉下列是對於某座著名建築的敘述，請閱讀後回答問題。
 
 
@@ -1480,6 +1486,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承上題，這座建築位於下列哪一個城市？
+    to: 承上題，這座建築位於下列哪一個城市？
+    note: 選項D多了一個「斯」字
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_社會_g9s1e2_s3_35
   section: 3
   number: 35

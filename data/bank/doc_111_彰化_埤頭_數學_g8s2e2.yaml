@@ -63,7 +63,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 一個三角形可能完整幾個直角？
+  stem: 一個三角形可能有幾個直角？
   options:
   - label: A
     content: 一個
@@ -92,6 +92,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一個三角形可能完整幾個直角？
+    to: 一個三角形可能有幾個直角？
+    note: 「有」誤植為「完整」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g8s2e2_s1_3
   section: 1
   number: 3
@@ -568,7 +574,7 @@ questions:
     $\triangle ACD \cong \triangle BCE$？
   options:
   - label: A
-    content: SAS
+    content: ASA
   - label: B
     content: SSS
   - label: C
@@ -611,6 +617,14 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，已知 $\triangle ABC$ 與 $\triangle CDE$ 為正三角形，連接 $\overline{AD}$ 及 $\overline{BE}$，則可根據哪一個全等性質說明
+      $\triangle ACD \cong \triangle BCE$？
+    to: 如右圖，已知 $\triangle ABC$ 與 $\triangle CDE$ 為正三角形，連接 $\overline{AD}$ 及 $\overline{BE}$，則可根據哪一個全等性質說明
+      $\triangle ACD \cong \triangle BCE$？
+    note: 選項(A)應為 ASA 誤作 SAS
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g8s2e2_s1_15
   section: 1
   number: 15

@@ -2327,16 +2327,17 @@ questions:
   number: 58
   type: single
   page: 5
-  stem: 根據神話，雅典娜女神在地上種植橄欖樹，從此雅典娜女神就成為雅典城邦的守護神。請問：下列關於雅典城邦的敘述，何者錯誤？
+  stem: 根據神話，雅典娜女神在地上種植橄欖樹，從此雅典娜女神就成為雅典城邦的守護神。請問：下列關於雅典城邦的敘述，何者<u>錯誤</u>？(甲)只要是公民不分男女均可參與政治活動
+    (乙)以抽籤方式選出官員 (丙)發展出陶片放逐法，放逐可能危害城邦的人 (丁)被視為民主政治的起源
   options:
   - label: A
-    content: 甲（只要是公民不分男女均可參與政治活動）
+    content: 甲
   - label: B
-    content: 乙（以抽籤方式選出官員）
+    content: 乙
   - label: C
-    content: 丙（發展出陶片放逐法，放逐可能危害城邦的人）
+    content: 丙
   - label: D
-    content: 丁（被視為民主政治的起源）。
+    content: 丁。
   tags:
     chapter:
       publisher: 翰林
@@ -2354,6 +2355,13 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據神話，雅典娜女神在地上種植橄欖樹，從此雅典娜女神就成為雅典城邦的守護神。請問：下列關於雅典城邦的敘述，何者錯誤？
+    to: 根據神話，雅典娜女神在地上種植橄欖樹，從此雅典娜女神就成為雅典城邦的守護神。請問：下列關於雅典城邦的敘述，何者<u>錯誤</u>？(甲)只要是公民不分男女均可參與政治活動
+      (乙)以抽籤方式選出官員 (丙)發展出陶片放逐法，放逐可能危害城邦的人 (丁)被視為民主政治的起源
+    note: 原卷題幹包含甲至丁之敘述，選項僅為代號；擷取將敘述併入選項
+    by: review
+    extraction: true
 - id: doc_113_屏東_明正_社會_g9s1e1_s3_59
   section: 3
   number: 59

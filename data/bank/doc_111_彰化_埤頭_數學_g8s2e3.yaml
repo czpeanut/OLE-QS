@@ -692,7 +692,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 如圖，甲、乙、丙、丁都是由四根等長的條所拼成的平行四邊形，則甲、乙、丙、丁面積的大小關係為何？
+  stem: 如圖，甲、乙、丙、丁都是由四根等長的木條所拼成的平行四邊形，則甲、乙、丙、丁面積的大小關係為何？
   options:
   - label: A
     content: 甲 > 乙 > 丙 > 丁
@@ -738,6 +738,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，甲、乙、丙、丁都是由四根等長的條所拼成的平行四邊形，則甲、乙、丙、丁面積的大小關係為何？
+    to: 如圖，甲、乙、丙、丁都是由四根等長的木條所拼成的平行四邊形，則甲、乙、丙、丁面積的大小關係為何？
+    note: 漏了「木」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g8s2e3_s1_14
   section: 1
   number: 14
@@ -846,9 +852,9 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 如圖，四邊形 $ABCD$ 為平行四邊形，$AG \perp DG$，且 $\overline{AG}$ 交 $\overline{BC}$ 於 $E$
-    點，$\overline{DG}$ 交 $\overline{BC}$ 於 $F$ 點，若 $\overline{AE} = 6$，$\overline{DG}
-    = 10$，求平行四邊形 $ABCD$ 面積為多少平方單位？
+  stem: 如圖，四邊形 $ABCD$ 為平行四邊形，$\overline{AG} \perp \overline{DG}$，且 $\overline{AG}$
+    交 $\overline{BC}$ 於 $E$ 點，$\overline{DG}$ 交 $\overline{BC}$ 於 $F$ 點，若 $\overline{AE}
+    = 6$，$\overline{DG} = 10$，求平行四邊形 $ABCD$ 面積為多少平方單位？
   options:
   - label: A
     content: '30'
@@ -894,6 +900,16 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，四邊形 $ABCD$ 為平行四邊形，$AG \perp DG$，且 $\overline{AG}$ 交 $\overline{BC}$ 於
+      $E$ 點，$\overline{DG}$ 交 $\overline{BC}$ 於 $F$ 點，若 $\overline{AE} = 6$，$\overline{DG}
+      = 10$，求平行四邊形 $ABCD$ 面積為多少平方單位？
+    to: '如圖，四邊形 $ABCD$ 為平行四邊形，$\overline{AG} \perp \overline{DG}$，且 $\overline{AG}$
+      交 $\overline{BC}$ 於 $E$ 點，$\overline{DG}$ 交 $\overline{BC}$ 於 $F$ 點，若 $\overline{AE}
+      = 6$，$\overline{DG} = 10$，求平行四邊形 $ABCD$ '
+    note: AG 與 DG 漏了線段符號（上橫線）
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g8s2e3_s1_17
   section: 1
   number: 17

@@ -205,7 +205,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 民國15~17年中國發生戰爭，15年誓師北伐完成統一 pid下列哪一位人物？
+  stem: 民國15~17年中國發生戰爭，15年誓師北伐完成統一是一下列哪一位人物？
   options:
   - label: A
     content: 蔣經國
@@ -236,6 +236,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 民國15~17年中國發生戰爭，15年誓師北伐完成統一 pid下列哪一位人物？
+    to: 民國15~17年中國發生戰爭，15年誓師北伐完成統一是一下列哪一位人物？
+    note: 「是一」誤辨識為「pid」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_歷史_g8s2e2_s1_7
   section: 1
   number: 7
@@ -776,7 +782,7 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 電影稻草人一片，描述台灣日治時代後期，一對佃農兄弟的故事，影片描述主人公翁的小孩，期待○○常常轟炸台灣，如此一來，它們才冇得到獎賞和有魚吃，請問影片中的○○是指那一國家？
+  stem: 電影稻草人一片，描述台灣日治時代後期，一對佃農兄弟的故事，影片描述主人公的小孩，期待○○常常轟炸台灣，如此一來，它們才有得到獎賞和有魚吃，請問影片中的○○是指那一國家？
   options:
   - label: A
     content: 日本
@@ -806,6 +812,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 電影稻草人一片，描述台灣日治時代後期，一對佃農兄弟的故事，影片描述主人公翁的小孩，期待○○常常轟炸台灣，如此一來，它們才冇得到獎賞和有魚吃，請問影片中的○○是指那一國家？
+    to: 電影稻草人一片，描述台灣日治時代後期，一對佃農兄弟的故事，影片描述主人公的小孩，期待○○常常轟炸台灣，如此一來，它們才有得到獎賞和有魚吃，請問影片中的○○是指那一國家？
+    note: 多字「主人公翁」，且「才有」誤作「才冇」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_歷史_g8s2e2_s1_23
   section: 1
   number: 23
@@ -1400,7 +1412,7 @@ questions:
   stem: 就四人的生平，下列哪一歷史事件，此四人皆經歷過或參與過？
   options:
   - label: A
-    content: 日本人侵山東，與中國簽訂二十一條要求
+    content: 日本入侵山東，與中國簽訂二十一條要求
   - label: B
     content: 日本發動九一八事變，佔領中國東北地區
   - label: C
@@ -1427,6 +1439,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 就四人的生平，下列哪一歷史事件，此四人皆經歷過或參與過？
+    to: 就四人的生平，下列哪一歷史事件，此四人皆經歷過或參與過？
+    note: 「入侵」誤作「人侵」
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_5_9
   label: 題組附圖

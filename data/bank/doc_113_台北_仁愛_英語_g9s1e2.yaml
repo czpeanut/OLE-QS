@@ -435,7 +435,7 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: The car has to be washed, it?
+  stem: The car has to be washed, _____ it?
   options:
   - label: A
     content: doesn’t
@@ -462,12 +462,18 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: The car has to be washed, it?
+    to: The car has to be washed, _____ it?
+    note: 題幹漏了填空底線
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_英語_g9s1e2_s3_24
   section: 3
   number: 24
   type: single
   page: 2
-  stem: All the fans of Black Pink want to know .
+  stem: All the fans of Black Pink want to know _____.
   options:
   - label: A
     content: when the concert will hold
@@ -494,12 +500,19 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: All the fans of Black Pink want to know .
+    to: All the fans of Black Pink want to know _____.
+    note: 題幹漏了填空底線
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_英語_g9s1e2_s3_25
   section: 3
   number: 25
   type: single
   page: 2
-  stem: I don’t know if Tommy to the party later, but if he , I’ll tell him the news.
+  stem: I don’t know if Tommy ______ to the party later, but if he ______, I’ll tell
+    him the news.
   options:
   - label: A
     content: comes; does
@@ -526,6 +539,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: I don’t know if Tommy to the party later, but if he , I’ll tell him the
+      news.
+    to: I don’t know if Tommy ______ to the party later, but if he ______, I’ll tell
+      him the news.
+    note: 題幹兩處填空底線均漏擷取
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_英語_g9s1e2_s3_26
   section: 3
   number: 26
@@ -595,7 +616,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: The computer by my grandpa for five years, but it doesn’t work now.
+  stem: The computer ______ by my grandpa for five years, but it doesn’t work now.
   options:
   - label: A
     content: is used
@@ -623,6 +644,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: The computer by my grandpa for five years, but it doesn’t work now.
+    to: The computer ______ by my grandpa for five years, but it doesn’t work now.
+    note: 題幹漏了填空底線
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_英語_g9s1e2_s3_29
   section: 3
   number: 29

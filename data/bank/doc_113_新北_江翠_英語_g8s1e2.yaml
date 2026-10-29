@@ -459,15 +459,15 @@ questions:
   stem: Which of the following underlined part(劃底線部分) is GRAMMATICALLY CORRECT(文法正確)?
   options:
   - label: A
-    content: Cody suddenly felt very hungry while doing reports, so he stopped to
-      cook food for himself.
+    content: Cody suddenly felt very hungry while doing reports, so <u>he stopped
+      to cook food for himself</u>.
   - label: B
-    content: Does it have a lot of and fun to fight different players online?
+    content: <u>Does it have a lot of and fun to fight</u> different players online?
   - label: C
-    content: Pro gamers learn more by practice fighting with one another.
+    content: Pro gamers learn more <u>by practice fighting</u> with one another.
   - label: D
-    content: Work from home can save you lots of time because you don’t have to think
-      about what to wear to work.
+    content: <u>Work from home</u> can save you lots of time because you don’t have
+      to think about what to wear to work.
   ai_answers:
     gemini: A
     qwen: A
@@ -485,6 +485,12 @@ questions:
       chapter: 綜合
     textbook: 八上 英語 其他文法（不在列表中的文法點）
     labeled_by: ai
+  errata:
+  - from: Which of the following underlined part(劃底線部分) is GRAMMATICALLY CORRECT(文法正確)?
+    to: Which of the following underlined part(劃底線部分) is GRAMMATICALLY CORRECT(文法正確)?
+    note: 題目要求判斷畫底線處，但選項中未標示畫底線部分
+    by: review
+    extraction: true
 - id: doc_113_新北_江翠_英語_g8s1e2_s5_24
   section: 5
   number: 24

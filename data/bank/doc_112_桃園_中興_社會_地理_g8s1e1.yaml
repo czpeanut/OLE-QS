@@ -419,7 +419,7 @@ questions:
   number: 7
   type: single
   page: 2
-  stem: 中國依地勢起伏分為三大階梯，請問：若以圖4 中剖面線加以判斷，所經過的地形區不包括下列何者？
+  stem: 中國依地勢起伏分為三大階梯，請問：若以圖 4 中剖面線加以判斷，所經過的地形區<u>不包括</u>下列何者？
   options:
   - label: A
     content: 青藏高原
@@ -447,6 +447,23 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  assets:
+  - key: s1_7_r10290734_1
+    kind: figure
+    file: doc_112_桃園_中興_社會_地理_g8s1e1/s1_7_r10290734_1.png
+    crop:
+      page: 2
+      rect:
+      - 519.89
+      - 72.37
+      - 687.46
+      - 216.59
+  errata:
+  - from: 中國依地勢起伏分為三大階梯，請問：若以圖4 中剖面線加以判斷，所經過的地形區不包括下列何者？
+    to: 中國依地勢起伏分為三大階梯，請問：若以圖 4 中剖面線加以判斷，所經過的地形區<u>不包括</u>下列何者？
+    note: 題幹提及圖4但未附圖
+    by: review
+    extraction: true
 - id: doc_112_桃園_中興_社會_地理_g8s1e1_s1_8
   section: 1
   number: 8

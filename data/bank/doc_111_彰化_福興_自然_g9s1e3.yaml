@@ -1158,7 +1158,7 @@ questions:
   - label: C
     content: 潮溼的手拔插頭，發生觸電的感覺
   - label: D
-    content: 切割後的保麗龍不易吸附於刀片上
+    content: 切割後的保麗龍易吸附於刀片上
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -1177,6 +1177,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 下列敘述，何者與靜電現象無關？
+    to: 下列敘述，何者與靜電現象無關？
+    note: 原卷為「易吸附」，擷取多打了「不」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_自然_g9s1e3_s1_25
   section: 1
   number: 25

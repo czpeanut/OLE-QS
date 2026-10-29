@@ -112,16 +112,16 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 孟純以最小刻度為 1mm 的直尺，測量書本寬度剛好為 35cm，請問下列何者為最適當的測量結果？
+  stem: 孟純以最小刻度為 $1\text{ mm}$ 的直尺，測量書本寬度剛好為 $35\text{ cm}$，請問下列何者為最正確的測量結果？
   options:
   - label: A
-    content: 35cm
+    content: $35\text{ cm}$
   - label: B
-    content: 35.0 cm
+    content: $35.0\text{ cm}$
   - label: C
-    content: 35.00 cm
+    content: $35.00\text{ cm}$
   - label: D
-    content: 35.000 cm
+    content: $35.000\text{ cm}$
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -141,6 +141,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 孟純以最小刻度為 1mm 的直尺，測量書本寬度剛好為 35cm，請問下列何者為最適當的測量結果？
+    to: 孟純以最小刻度為 $1\text{ mm}$ 的直尺，測量書本寬度剛好為 $35\text{ cm}$，請問下列何者為最正確的測量結果？
+    note: 「最正確」誤植為「最適當」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g8s1e1_s1_4
   section: 1
   number: 4
@@ -438,7 +444,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 阿家想要知道紅色的水性筆是由哪些顏色的顏料所組成，最適合理使用哪種方法進行實驗？
+  stem: 阿家想要知道紅色的水性筆是由哪些顏色的顏料所組成，最適合使用哪種方法進行實驗？
   options:
   - label: A
     content: 燃燒法
@@ -467,6 +473,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 阿家想要知道紅色的水性筆是由哪些顏色的顏料所組成，最適合理使用哪種方法進行實驗？
+    to: 阿家想要知道紅色的水性筆是由哪些顏色的顏料所組成，最適合使用哪種方法進行實驗？
+    note: 多打「理」字
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g8s1e1_s1_13
   section: 1
   number: 13
@@ -777,7 +789,7 @@ questions:
   type: single
   page: 2
   stem: 現今大氣中二氧化碳濃度約為 400ppm，工業環境二氧化碳濃度安全標準為 10000ppm。經實測在小客車未開窗，僅啟動冷氣，並使用車內循環狀態下，10
-    分鐘後二氧化碳濃度將飆升到 1645ppm，若將 1645ppm 改以百分比表示，則答案應為reader？
+    分鐘後二氧化碳濃度將飆升到 1645ppm，若將 1645ppm 改以百分比表示，則答案應為何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 16.45%
@@ -786,7 +798,7 @@ questions:
   - label: C
     content: 0.1645%
   - label: D
-    content: 0.0164.5%
+    content: 0.01645%
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -806,6 +818,13 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 現今大氣中二氧化碳濃度約為 400ppm，工業環境二氧化碳濃度安全標準為 10000ppm。經實測在小客車未開窗，僅啟動冷氣，並使用車內循環狀態下，10
+      分鐘後二氧化碳濃度將飆升到 1645ppm，若將 1645ppm 改以百分比表示，則答案應為reader？
+    to: 現今大氣中二氧化碳濃度約為 400ppm，工業環境二氧化碳濃度安全標準為 10000ppm。經實測在小客車未開窗，僅啟動冷氣，並使用車內循環狀態下，10
+      分鐘後二氧化碳濃度將飆升到 1645ppm，若將 1645ppm 改以百分比表示，則答案應為何者？（原卷有誤，已修正）
+    note: 「何者」誤植為「reader」；複核：原卷確實這樣印，可能是原卷錯字：「(D) 0.0164.5%」→「(D) 0.01645%」
+    by: review
 - id: doc_113_台南_復興_自然_g8s1e1_s1_22
   section: 1
   number: 22
@@ -1143,12 +1162,11 @@ questions:
   page: 3
   stem: '有 10 個形狀大小不同的固態純物質，分別測其質量和體積，並以質量為縱座標、體積為橫座標，標示在方格紙上，如圖二所示，試回答下列問題。
 
-    (1)由圖可知，此 10 個個體最少可分成( )種物質？
+    (1)由圖可知，此 10 個物體最少可分成(　　)種物質？
 
-    (2)若以天平測得一鋁塊的質量為 54.00g，以排水法測得體積為 $20.0\text{cm}^{3}$，根據這些數據，判斷上圖中的物體，主要成分可能是鋁的共有(
-    )個？
+    (2)若以天平測得一鋁塊的質量為 $54.00\text{g}$，以排水法測得體積為 $20.0\text{cm}^3$，根據這些數據，判斷上圖中的物體，主要成分可能是鋁的共有(　　)個？
 
-    (3)取一量筒內裝 150c.c. 的水，並將上題中的鋁塊放入量筒使其完全沉入水中，已知過程中水未溢出，則此時水面讀數為( )c.c.'
+    (3)取一量筒內裝 $150\text{c.c.}$ 的水，並將上題中的鋁塊放入量筒使其完全沉入水中，已知過程中水未溢出，則此時水面讀數為(　　)$\text{c.c.}$'
   assets:
   - key: s2_2_f1
     kind: figure
@@ -1179,6 +1197,25 @@ questions:
     gemini_high: 4；3；170
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: '有 10 個形狀大小不同的固態純物質，分別測其質量和體積，並以質量為縱座標、體積為橫座標，標示在方格紙上，如圖二所示，試回答下列問題。
+
+      (1)由圖可知，此 10 個個體最少可分成( )種物質？
+
+      (2)若以天平測得一鋁塊的質量為 54.00g，以排水法測得體積為 $20.0\text{cm}^{3}$，根據這些數據，判斷上圖中的物體，主要成分可能是鋁的共有(
+      )個？
+
+      (3)取一量筒內裝 150c.c'
+    to: '有 10 個形狀大小不同的固態純物質，分別測其質量和體積，並以質量為縱座標、體積為橫座標，標示在方格紙上，如圖二所示，試回答下列問題。
+
+      (1)由圖可知，此 10 個物體最少可分成(　　)種物質？
+
+      (2)若以天平測得一鋁塊的質量為 $54.00\text{g}$，以排水法測得體積為 $20.0\text{cm}^3$，根據這些數據，判斷上圖中的物體，主要成分可能是鋁的共有(　　)個？
+
+      (3)取一量筒'
+    note: 「物體」誤植為「個體」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g8s1e1_s2_3
   section: 2
   number: 3

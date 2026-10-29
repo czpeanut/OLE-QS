@@ -1545,7 +1545,8 @@ questions:
   page: 4
   stem: '用這樣的方式，他可以向人們展現人們已經對台灣造成甚麼傷害。4%
 
-    ____________, he was able to show people ____________ people ____________ to Taiwan.'
+
+    ＿＿＿＿＿＿＿＿＿＿＿＿, he was able to show people ＿＿＿＿＿＿＿＿＿＿＿＿ people'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -1565,6 +1566,18 @@ questions:
     gemini: In this way；what damage；have done
     qwen: In this way; what harm; had done
     gemini_high: In this way；what harm；had done
+  errata:
+  - from: '用這樣的方式，他可以向人們展現人們已經對台灣造成甚麼傷害。4%
+
+      ____________, he was able to show people ____________ people ____________ to
+      Taiwan.'
+    to: '用這樣的方式，他可以向人們展現人們已經對台灣造成甚麼傷害。4%
+
+
+      ＿＿＿＿＿＿＿＿＿＿＿＿, he was able to show people ＿＿＿＿＿＿＿＿＿＿＿＿ people'
+    note: 原卷結尾僅到people，無後續空格及to Taiwan
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_英語_g9s1e2_s5_2
   section: 5
   number: 2

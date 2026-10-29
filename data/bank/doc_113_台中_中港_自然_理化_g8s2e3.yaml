@@ -948,7 +948,7 @@ questions:
   - label: C
     content: 其壓力變大，且密度變大
   - label: D
-    content: 其壓力變小，而密度變大。
+    content: 其壓力變小，而密度變小。
   assets:
   - key: s1_21_f1
     kind: figure
@@ -985,6 +985,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，當注射筒的活塞向內推入使得桶內體積變小時，則下列有關桶內空氣的描述，何者正確？
+    to: 如右圖，當注射筒的活塞向內推入使得桶內體積變小時，則下列有關桶內空氣的描述，何者正確？
+    note: 選項(D)原卷為「密度變小」，誤植為「密度變大」
+    by: review
+    extraction: true
 - id: doc_113_台中_中港_自然_理化_g8s2e3_s1_22
   section: 1
   number: 22
@@ -1548,7 +1554,7 @@ questions:
   - label: A
     content: 大氣壓力太小
   - label: B
-    content: 10 公尺水的位置形成了真空
+    content: 10 公尺水的下方形成了真空
   - label: C
     content: 水井內的液體體積太小
   - label: D
@@ -1588,6 +1594,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 水井深度超過 10 公尺左右，手動抽水機就無法抽出水，主要為何種因素影響造成？
+    to: 水井深度超過 10 公尺左右，手動抽水機就無法抽出水，主要為何種因素影響造成？
+    note: 原卷為「的下方」，擷取誤作「的位置」
+    by: review
+    extraction: true
 - id: doc_113_台中_中港_自然_理化_g8s2e3_s1_34
   section: 1
   number: 34

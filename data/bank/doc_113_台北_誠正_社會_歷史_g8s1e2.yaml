@@ -1060,7 +1060,7 @@ questions:
   number: 29
   type: single
   page: 3
-  stem: 馬可波羅經由陸路，經過西亞、中亞到達中國，他在途中約會在哪裡歇息？
+  stem: 馬可波羅經由陸路，經過西亞、中亞到達中國，他在途中最有可能會在哪裡歇息？
   options:
   - label: A
     content: 市舶司
@@ -1089,6 +1089,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 馬可波羅經由陸路，經過西亞、中亞到達中國，他在途中約會在哪裡歇息？
+    to: 馬可波羅經由陸路，經過西亞、中亞到達中國，他在途中最有可能會在哪裡歇息？
+    note: 「有可能」誤植為「約」
+    by: review
+    extraction: true
 - id: doc_113_台北_誠正_社會_歷史_g8s1e2_s2_30
   section: 2
   number: 30

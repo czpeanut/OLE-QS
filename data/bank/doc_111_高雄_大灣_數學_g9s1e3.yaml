@@ -1058,7 +1058,7 @@ questions:
   type: single
   page: 3
   stem: 如附圖，$\triangle ABC$ 中，$\angle ACB=90^{\circ}$，$G$ 點為 $\triangle ABC$ 的重心，且
-    $\overline{CG}$ 交 $\overline{AB}$ 於 $M$ 點。若 $\overline{AC} = 12$，$\overline{BC}
+    $\overleftrightarrow{CG}$ 交 $\overline{AB}$ 於 $M$ 點。若 $\overline{AC} = 12$，$\overline{BC}
     = 9$，求 $\overline{CG}$ 的長度？
   options:
   - label: A
@@ -1103,6 +1103,16 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如附圖，$\triangle ABC$ 中，$\angle ACB=90^{\circ}$，$G$ 點為 $\triangle ABC$ 的重心，且
+      $\overline{CG}$ 交 $\overline{AB}$ 於 $M$ 點。若 $\overline{AC} = 12$，$\overline{BC}
+      = 9$，求 $\overline{CG}$ 的長度？
+    to: 如附圖，$\triangle ABC$ 中，$\angle ACB=90^{\circ}$，$G$ 點為 $\triangle ABC$ 的重心，且
+      $\overleftrightarrow{CG}$ 交 $\overline{AB}$ 於 $M$ 點。若 $\overline{AC} = 12$，$\overline{BC}
+      = 9$，求 $\overline{CG}$ 的長度？
+    note: 原卷為直線CG（雙向箭頭），擷取誤作線段
+    by: review
+    extraction: true
 - id: doc_111_高雄_大灣_數學_g9s1e3_s1_23
   section: 1
   number: 23

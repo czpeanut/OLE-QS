@@ -125,10 +125,10 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: ●代表碳原子、●代表氫原子，而右圖是甲、乙兩分子的分子模型，則對於甲、乙兩分子的敘述，下列何者錯誤？
+  stem: ●代表碳原子、○代表氫原子，而右圖是甲、乙兩分子的分子模型，則對於甲、乙兩分子的敘述，下列何者<u>錯誤</u>？
   options:
   - label: A
-    content: 甲的分子式為$CH_{4}$、乙的分子式為$C_{3}H_{6}$
+    content: 甲的分子式為$\mathrm{CH}_{4}$、乙的分子式為$\mathrm{C}_{3}\mathrm{H}_{6}$
   - label: B
     content: 甲是天然氣的主要成分、乙是液化石油氣的主要成分
   - label: C
@@ -169,6 +169,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ●代表碳原子、●代表氫原子，而右圖是甲、乙兩分子的分子模型，則對於甲、乙兩分子的敘述，下列何者錯誤？
+    to: ●代表碳原子、○代表氫原子，而右圖是甲、乙兩分子的分子模型，則對於甲、乙兩分子的敘述，下列何者<u>錯誤</u>？
+    note: 原卷為深色球與淺色球以區分碳氫，擷取皆作相同黑點無法區分
+    by: review
+    extraction: true
 - id: doc_111_桃園_中興_自然_g8s2e3_s1_5
   section: 1
   number: 5

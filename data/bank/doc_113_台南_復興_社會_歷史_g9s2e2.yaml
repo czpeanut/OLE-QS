@@ -577,7 +577,7 @@ questions:
   number: 34
   type: single
   page: 2
-  stem: 這個年代起，日本經濟惡劣至極點，最主要的原因可能 legacy 是什麼？
+  stem: 這個年代起，日本經濟惡劣至極點，最主要的原因可能是什麼？
   options:
   - label: A
     content: 全球大蕭條，使日本經濟因各國提高關稅而大受打擊
@@ -609,6 +609,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 這個年代起，日本經濟惡劣至極點，最主要的原因可能 legacy 是什麼？
+    to: 這個年代起，日本經濟惡劣至極點，最主要的原因可能是什麼？
+    note: 多出「legacy」英文字詞
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_歷史_g9s2e2_s1_35
   section: 1
   number: 35

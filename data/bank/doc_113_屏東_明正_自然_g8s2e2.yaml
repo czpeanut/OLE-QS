@@ -79,7 +79,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 氯化鈣（$\mathrm{CaCl_{2}}$）水溶液在導電時，水溶液中解離的情形與離子移動的方向，下列何者正確？（● 鈣離子 ● 氯離子）
+  stem: 氯化鈣（$\mathrm{CaCl_{2}}$）水溶液在導電時，水溶液中解離的情形與離子移動的方向，下列何者正確？（○ 鈣離子 ● 氯離子）
   options:
   - label: A
     content: ''
@@ -170,6 +170,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 氯化鈣（$\mathrm{CaCl_{2}}$）水溶液在導電時，水溶液中解離的情形與離子移動的方向，下列何者正確？（● 鈣離子 ● 氯離子）
+    to: 氯化鈣（$\mathrm{CaCl_{2}}$）水溶液在導電時，水溶液中解離的情形與離子移動的方向，下列何者正確？（○ 鈣離子 ● 氯離子）
+    note: 原卷鈣離子前為空心圓，擷取誤作實心圓
+    by: review
+    extraction: true
 - id: doc_113_屏東_明正_自然_g8s2e2_s1_3
   section: 1
   number: 3
@@ -698,8 +704,8 @@ questions:
   number: 18
   type: single
   page: 1
-  stem: 若$2\mathrm{K_{2}CrO_{4}}＋\mathrm{H_{2}SO_{4}} \rightleftharpoons \mathrm{K_{2}Cr_{2}O_{7}}＋\mathrm{H_{2}O}＋\mathrm{K_{2}SO_{4}}$
-    的反應已達平衡，且溶液呈黃色，則在平衡狀態下加入$\mathrm{H_{2}SO_{4}}$溶液，反應會有何變化？
+  stem: 若 $2\mathrm{KrCrO}_{4}+\mathrm{H}_{2}\mathrm{SO}_{4} \rightleftharpoons \mathrm{K}_{2}\mathrm{Cr}_{2}\mathrm{O}_{7}+\mathrm{H}_{2}\mathrm{O}+\mathrm{K}_{2}\mathrm{SO}_{4}$
+    的反應已達平衡，且溶液呈黃色，則在平衡狀態下加入 $\mathrm{H}_{2}\mathrm{SO}_{4}$ 溶液，反應會有何變化？
   options:
   - label: A
     content: 反應已達平衡，故平衡狀態不改變
@@ -708,7 +714,7 @@ questions:
   - label: C
     content: 反應會向右移動，溶液由黃色變橘紅色
   - label: D
-    content: 正反應速率等於逆反應速率
+    content: 正反應速率等於逆反應速率。
   tags:
     chapter:
       publisher: 翰林
@@ -726,6 +732,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若$2\mathrm{K_{2}CrO_{4}}＋\mathrm{H_{2}SO_{4}} \rightleftharpoons \mathrm{K_{2}Cr_{2}O_{7}}＋\mathrm{H_{2}O}＋\mathrm{K_{2}SO_{4}}$
+      的反應已達平衡，且溶液呈黃色，則在平衡狀態下加入$\mathrm{H_{2}SO_{4}}$溶液，反應會有何變化？
+    to: 若 $2\mathrm{KrCrO}_{4}+\mathrm{H}_{2}\mathrm{SO}_{4} \rightleftharpoons \mathrm{K}_{2}\mathrm{Cr}_{2}\mathrm{O}_{7}+\mathrm{H}_{2}\mathrm{O}+\mathrm{K}_{2}\mathrm{SO}_{4}$
+      的反應已達平衡，且溶液呈黃色，則在平衡狀態下加入 $\m
+    note: 原卷印2KrCrO4，擷取逕自改為K2CrO4
+    by: review
+    extraction: true
 - id: doc_113_屏東_明正_自然_g8s2e2_s1_19
   section: 1
   number: 19

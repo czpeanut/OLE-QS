@@ -229,7 +229,7 @@ questions:
   stem: 中南美洲有許多我國重要的邦交國。請問：該地區的位置敘述何者正確？
   options:
   - label: A
-    content: 位在西太平洋洋
+    content: 位在西太平洋岸
   - label: B
     content: 向西直行即可到達歐洲大陸
   - label: C
@@ -254,6 +254,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 中南美洲有許多我國重要的邦交國。請問：該地區的位置敘述何者正確？
+    to: 中南美洲有許多我國重要的邦交國。請問：該地區的位置敘述何者正確？
+    note: 原卷為「岸」，擷取誤作「洋」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_地理_g9s1e3_s1_8
   section: 1
   number: 8

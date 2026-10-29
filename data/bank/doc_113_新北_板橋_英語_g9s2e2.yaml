@@ -325,7 +325,7 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 'Nick: you finish your report before five o’clock?
+  stem: 'Nick: _____ you finish your report before five o’clock?
 
     Bill: I don’t think so. It’ll take me more than a day.'
   options:
@@ -354,6 +354,16 @@ questions:
       chapter: B1 七上
     textbook: 九下 英語 助動詞 can（肯定/否定/問答）+ Wh-疑問句
     labeled_by: ai
+  errata:
+  - from: 'Nick: you finish your report before five o’clock?
+
+      Bill: I don’t think so. It’ll take me more than a day.'
+    to: 'Nick: _____ you finish your report before five o’clock?
+
+      Bill: I don’t think so. It’ll take me more than a day.'
+    note: Nick 後方漏了填空底線
+    by: review
+    extraction: true
 - id: doc_113_新北_板橋_英語_g9s2e2_s2_26
   section: 2
   number: 26
@@ -424,7 +434,7 @@ questions:
   number: 28
   type: single
   page: 3
-  stem: Listening skills useful when we understand English.
+  stem: Listening skills ______ useful when we understand English.
   options:
   - label: A
     content: is
@@ -451,6 +461,12 @@ questions:
       chapter: B1 七上
     textbook: 九下 英語 be動詞(am/is/are) + 肯定/否定/Yes-No問答
     labeled_by: ai
+  errata:
+  - from: Listening skills useful when we understand English.
+    to: Listening skills ______ useful when we understand English.
+    note: skills 後方漏了填空底線
+    by: review
+    extraction: true
 - id: doc_113_新北_板橋_英語_g9s2e2_s2_29
   section: 2
   number: 29
@@ -715,8 +731,8 @@ questions:
   number: 37
   type: single
   page: 3
-  stem: Lily wasn’t sure if the man standing next to her was helped her during the
-    accident.
+  stem: Lily wasn’t sure if the man standing next to her was______ helped her during
+    the accident.
   options:
   - label: A
     content: the one who
@@ -743,6 +759,14 @@ questions:
       chapter: B5 九上
     textbook: 九下 英語 關係代名詞 who（修飾人）
     labeled_by: ai
+  errata:
+  - from: Lily wasn’t sure if the man standing next to her was helped her during the
+      accident.
+    to: Lily wasn’t sure if the man standing next to her was______ helped her during
+      the accident.
+    note: was 後方漏了填空底線
+    by: review
+    extraction: true
 - id: doc_113_新北_板橋_英語_g9s2e2_s2_38
   section: 2
   number: 38
@@ -1171,6 +1195,25 @@ questions:
       chapter: 綜合
     textbook: 九下 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  assets:
+  - key: s4_47_r10290659_1
+    kind: figure
+    file: doc_113_新北_板橋_英語_g9s2e2/s4_47_r10290659_1.png
+    crop:
+      page: 5
+      rect:
+      - 84.11
+      - 379.92
+      - 530.86
+      - 580.72
+  errata:
+  - from: If the flight takes off and lands on time according to the article and the
+      boarding pass, which of the following is wrong?
+    to: If the flight takes off and lands on time according to the article and the
+      boarding pass, which of the following is wrong?
+    note: 漏附原卷第5頁登機證圖片
+    by: review
+    extraction: true
 - id: doc_113_新北_板橋_英語_g9s2e2_s4_48
   section: 4
   number: 48

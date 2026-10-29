@@ -486,7 +486,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 有一三角形的三邊長分別為$\sqrt{3}$、$\sqrt[2]{3}$、3，則此三角形的面積為何？
+  stem: 有一三角形的三邊長分別為$\sqrt{3}$、$2\sqrt{3}$、3，則此三角形的面積為何？
   options:
   - label: A
     content: '3'
@@ -513,6 +513,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 有一三角形的三邊長分別為$\sqrt{3}$、$\sqrt[2]{3}$、3，則此三角形的面積為何？
+    to: 有一三角形的三邊長分別為$\sqrt{3}$、$2\sqrt{3}$、3，則此三角形的面積為何？
+    note: 原卷為2√3，誤植為根號二次方根號3
+    by: review
+    extraction: true
 - id: doc_112_嘉義_北興_數學_g8s1e2_s1_15
   section: 1
   number: 15

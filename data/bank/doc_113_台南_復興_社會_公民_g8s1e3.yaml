@@ -40,7 +40,7 @@ questions:
   stem: 小丸子與班上同學一起討論對於「政治參與」的看法，下列哪位的敘述最正確？
   options:
   - label: A
-    content: 美環：「關心時事不算法是一種政治參與。」
+    content: 美環：「關心時事不算是一種政治參與。」
   - label: B
     content: 花輪：「只有成為候選人才是政治參與。」
   - label: C
@@ -66,6 +66,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小丸子與班上同學一起討論對於「政治參與」的看法，下列哪位的敘述最正確？
+    to: 小丸子與班上同學一起討論對於「政治參與」的看法，下列哪位的敘述最正確？
+    note: 多出「不算法」三字
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_公民_g8s1e3_s1_2
   section: 1
   number: 2
@@ -259,7 +265,8 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 為了讓國人與外國旅客都可以更加認識與體會台灣這塊土地上的萬種風情，在2011建國百年之際，由天下雜誌、交通部觀光局等單位推出「微笑台灣319鄉」集徽章微笑護照，讓想要踏遍台灣足跡的人，可以到各個鄉鎮市區公所蓋章留念。歷經縣市改制後，319鄉也持續增加中。大學畢業的阿輝知道有這個活動後，也想要來趟環島之旅，而這次他只想去區公所蓋章，請問，他不到下列哪一個城市？
+  stem: 為了讓國人與外國旅客都可以更加認識與體會台灣這塊土地上的萬種風情，在 2011 建國百年之際，由天下雜誌、交通部觀光局等單位推出「微笑台灣 319
+    鄉」集徽章微笑護照，讓想要踏遍台灣足跡的人，可以到各個鄉鎮市區公所蓋章留念。歷經縣市改制後，319 鄉也持續增加中。大學畢業的阿輝知道有這個活動後，也想要來趟環島之旅，而這次他只想去區公所蓋章，請問，他<u>不該</u>到下列哪一個城市？
   options:
   - label: A
     content: 竹北市
@@ -289,6 +296,13 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 為了讓國人與外國旅客都可以更加認識與體會台灣這塊土地上的萬種風情，在2011建國百年之際，由天下雜誌、交通部觀光局等單位推出「微笑台灣319鄉」集徽章微笑護照，讓想要踏遍台灣足跡的人，可以到各個鄉鎮市區公所蓋章留念。歷經縣市改制後，319鄉也持續增加中。大學畢業的阿輝知道有這個活動後，也想要來趟環島之旅，而這次他只想去區公所蓋章，請問，他不到下列哪一個城市？
+    to: 為了讓國人與外國旅客都可以更加認識與體會台灣這塊土地上的萬種風情，在 2011 建國百年之際，由天下雜誌、交通部觀光局等單位推出「微笑台灣 319
+      鄉」集徽章微笑護照，讓想要踏遍台灣足跡的人，可以到各個鄉鎮市區公所蓋章留念。歷經縣市改制後，319 鄉也持續增加中。大學畢業的阿輝知道有這個活動後，也想要來趟環島之旅，而這次他只想去區公所蓋章，請問，他<u>不該</u>到下列哪一個城市？
+    note: 漏了「該」字
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_公民_g8s1e3_s1_8
   section: 1
   number: 8
@@ -329,7 +343,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 承小題，台南市政府興建捷運的資金來源不包括下列何者？
+  stem: 承小題，台南市政府興建捷運的資金來源<u>不包括</u>下列何者？
   options:
   - label: A
     content: 中央的資源挹注
@@ -359,6 +373,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承小題，台南市政府興建捷運的資金來源不包括下列何者？
+    to: 承小題，台南市政府興建捷運的資金來源<u>不包括</u>下列何者？
+    note: 「上」誤作「小」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_公民_g8s1e3_s1_10
   section: 1
   number: 10
@@ -549,7 +569,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 請問文中提到的投票年齡門檻，若是送在台灣，可以參加那一項投票？
+  stem: 請問文中提到的投票年齡門檻，若是在台灣，可以參加那一項投票？
   options:
   - label: A
     content: 總統選舉
@@ -601,12 +621,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問文中提到的投票年齡門檻，若是送在台灣，可以參加那一項投票？
+    to: 請問文中提到的投票年齡門檻，若是在台灣，可以參加那一項投票？
+    note: 「設」誤作「送」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_公民_g8s1e3_s1_16
   section: 1
   number: 16
   type: single
   page: 2
-  stem: 承小題，文中(甲)處的投票方式，若是移到台灣的選舉，已經明顯違反哪個投票原則？
+  stem: 承上題，文中(甲)處的投票方式，若是移到台灣的選舉，已經明顯違反哪個投票原則？
   options:
   - label: A
     content: 普通
@@ -658,6 +684,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承小題，文中(甲)處的投票方式，若是移到台灣的選舉，已經明顯違反哪個投票原則？
+    to: 承上題，文中(甲)處的投票方式，若是移到台灣的選舉，已經明顯違反哪個投票原則？
+    note: 「上」誤作「小」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_社會_公民_g8s1e3_s1_17
   section: 1
   number: 17

@@ -898,8 +898,8 @@ questions:
   number: 5
   type: fill
   page: 3
-  stem: 如右圖，$\triangle ABC$ 中，$\angle BAC＝90^\circ$，$AD \perp BC$，若$\overline{BD}＝4$，$\overline{CD}＝10$，試求$\overline{AD}
-    =$ ⑤ 。
+  stem: 如右圖，$\triangle ABC$ 中，$\angle BAC=90^\circ$，$\overline{AD} \perp \overline{BC}$，若
+    $\overline{BD}=4$，$\overline{CD}=10$，試求 $\overline{AD}=$ ⑤ 。
   assets:
   - key: s2_5_f1
     kind: figure
@@ -934,6 +934,14 @@ questions:
   - 2\sqrt{10}
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，$\triangle ABC$ 中，$\angle BAC＝90^\circ$，$AD \perp BC$，若$\overline{BD}＝4$，$\overline{CD}＝10$，試求$\overline{AD}
+      =$ ⑤ 。
+    to: 如右圖，$\triangle ABC$ 中，$\angle BAC=90^\circ$，$\overline{AD} \perp \overline{BC}$，若
+      $\overline{BD}=4$，$\overline{CD}=10$，試求 $\overline{AD}=$ ⑤ 。
+    note: AD與BC漏了線段符號（上橫線）
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e1_s2_6
   section: 2
   number: 6

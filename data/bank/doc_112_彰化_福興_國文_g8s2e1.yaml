@@ -241,7 +241,7 @@ questions:
   number: 9
   type: fill
   page: 1
-  stem: 「ㄎㄧㄠ」視昂藏
+  stem: 「ㄠˊ」視昂藏
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -262,12 +262,18 @@ questions:
   - 瞵
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 「ㄎㄧㄠ」視昂藏
+    to: 「ㄠˊ」視昂藏
+    note: 原卷為「ㄠˊ」，擷取誤作「ㄎㄧㄠ」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s2e1_s1_10
   section: 1
   number: 10
   type: fill
   page: 1
-  stem: 徘「ㄏㄞˊ」
+  stem: 徘「ㄏㄨㄞˊ」
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -287,6 +293,12 @@ questions:
   - 徊
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 徘「ㄏㄞˊ」
+    to: 徘「ㄏㄨㄞˊ」
+    note: 原卷為「ㄏㄨㄞˊ」，擷取漏了介音「ㄨ」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g8s2e1_s2_1
   section: 2
   number: 1

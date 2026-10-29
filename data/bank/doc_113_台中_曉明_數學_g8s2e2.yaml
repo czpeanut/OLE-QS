@@ -40,7 +40,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 已知小明家的地板全由同一形狀且大小相同的地磚緊密地舖成。若此地磚的形狀是一正多邊形，則下列何者不可能均此地磚的形狀？
+  stem: 已知小明家的地板全由同一形狀且大小相同的地磚緊密地舖成。若此地磚的形狀是一正多邊形，則下列何者不可能是有此地磚的形狀？
   options:
   - label: A
     content: 正三角形
@@ -69,6 +69,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 已知小明家的地板全由同一形狀且大小相同的地磚緊密地舖成。若此地磚的形狀是一正多邊形，則下列何者不可能均此地磚的形狀？
+    to: 已知小明家的地板全由同一形狀且大小相同的地磚緊密地舖成。若此地磚的形狀是一正多邊形，則下列何者不可能是有此地磚的形狀？
+    note: 錯字，「均」應為「是」
+    by: review
+    extraction: true
 - id: doc_113_台中_曉明_數學_g8s2e2_s1_2
   section: 1
   number: 2
@@ -471,7 +477,7 @@ questions:
     老師在批改時，留言寫道：「其實在 $\overline{DE}$ 邊上，找到一點 $G$ 替代點 $D$，就有 $\triangle ABC \cong \triangle
     GFE$ 囉！」
 
-    由上所述，試問下列哪一種作圖方式未必能找到點 $G$ 正確的位置？'
+    由上所述，試問下列哪一種作圖方式必能找到點 $G$ 正確的位置？'
   options:
   - label: A
     content: 以 $F$ 為圓心，$\overline{DF}$ 為半徑畫弧，交 $\overline{DE}$ 邊於 $G$
@@ -517,12 +523,28 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '花芝同學根據以下的三個邊角條件，在數學訂正本上畫出兩個三角形 $\triangle ABC$、$\triangle DEF$，如圖所示：
+
+      (1)$\overline{AB}=\overline{DF}$   (2)$\overline{BC}=\overline{EF}$   (3)$\angle
+      C=\angle E$
+
+      老師在批改時，留言寫道：「其實在 $\overline{DE}$ 邊上，找到'
+    to: '花芝同學根據以下的三個邊角條件，在數學訂正本上畫出兩個三角形 $\triangle ABC$、$\triangle DEF$，如圖所示：
+
+      (1)$\overline{AB}=\overline{DF}$   (2)$\overline{BC}=\overline{EF}$   (3)$\angle
+      C=\angle E$
+
+      老師在批改時，留言寫道：「其實在 $\overline{DE}$ 邊上，找到'
+    note: 多字，原卷為「必能」，擷取多加了「未」
+    by: review
+    extraction: true
 - id: doc_113_台中_曉明_數學_g8s2e2_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: 承第一題，若 $\angle C=\angle E=45^{\circ}$，$\overline{BC}=\overline{EF}=4\sqrt{2}$，$\overline{AC}=3$，則
+  stem: 承上題，若 $\angle C=\angle E=45^{\circ}$，$\overline{BC}=\overline{EF}=4\sqrt{2}$，$\overline{AC}=3$，則
     $\triangle ABC$ 與 $\triangle DEF$ 的面積相差多少平方單位？
   options:
   - label: A
@@ -552,6 +574,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承第一題，若 $\angle C=\angle E=45^{\circ}$，$\overline{BC}=\overline{EF}=4\sqrt{2}$，$\overline{AC}=3$，則
+      $\triangle ABC$ 與 $\triangle DEF$ 的面積相差多少平方單位？
+    to: 承上題，若 $\angle C=\angle E=45^{\circ}$，$\overline{BC}=\overline{EF}=4\sqrt{2}$，$\overline{AC}=3$，則
+      $\triangle ABC$ 與 $\triangle DEF$ 的面積相差多少平方單位？
+    note: 錯字，「第一題」應為「上題」
+    by: review
+    extraction: true
 - id: doc_113_台中_曉明_數學_g8s2e2_s2_1
   section: 2
   number: 1
@@ -1199,8 +1229,8 @@ questions:
     在 $\triangle ACE$ 與 $\triangle ADE$ 中，因為 $\overline{AC}=$＿＿①＿＿(已知)，$\overline{AE}=\overline{AE}$
     (共同邊)，
 
-    $\angle CAE=\angle$＿＿②＿＿ (CE 平分 $\angle CAD$)，根據＿＿③＿＿全等性質，得 $\triangle ACE \cong
-    \triangle ADE$。
+    $\angle CAE=\angle$＿＿②＿＿ ($\overline{AE}$ 平分 $\angle CAD$)，根據＿＿③＿＿全等性質，得 $\triangle
+    ACE \cong \triangle ADE$。
 
     (3) 請利用(2)的結果，說明 $\overline{BD} > \overline{BC}$。(2 分)'
   assets:
@@ -1232,3 +1262,17 @@ questions:
       chapter: 第3章 三角形的基本性質
     textbook: 八下 3-4 中垂線與角平分線性質
     labeled_by: ai
+  errata:
+  - from: '如下圖，$\overline{AC}$ 是 $\triangle ABC$ 與 $\triangle ACD$ 的共同邊，且 $\overline{AC}=\overline{AD}$。
+
+      (1) 請利用尺規作圖，畫出 $\angle CAD$ 的角平分線。(不用寫作法，但須保留作圖痕跡)(1 分)
+
+      (2) 設 $\angle CAD$ 的角平分線交 $\overline{BD}$ 於點 $E$，請'
+    to: '如下圖，$\overline{AC}$ 是 $\triangle ABC$ 與 $\triangle ACD$ 的共同邊，且 $\overline{AC}=\overline{AD}$。
+
+      (1) 請利用尺規作圖，畫出 $\angle CAD$ 的角平分線。(不用寫作法，但須保留作圖痕跡)(1 分)
+
+      (2) 設 $\angle CAD$ 的角平分線交 $\overline{BD}$ 於點 $E$，請'
+    note: 錯字與公式，「CE」應為「\overline{AE}」
+    by: review
+    extraction: true

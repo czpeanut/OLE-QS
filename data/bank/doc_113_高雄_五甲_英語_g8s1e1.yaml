@@ -1278,7 +1278,7 @@ questions:
   number: 2
   type: essay
   page: 5
-  stem: Johnny sent me the postcard last week. (將畫線部分改成代名詞改寫句子)
+  stem: Johnny sent me <u>the postcard</u> last week. (將畫線部分改成代名詞改寫句子)
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1291,6 +1291,12 @@ questions:
       chapter: B1 七上
     textbook: 八上 英語 受格代名詞（me/you/him/her/it/us/them）
     labeled_by: ai
+  errata:
+  - from: Johnny sent me the postcard last week. (將畫線部分改成代名詞改寫句子)
+    to: Johnny sent me <u>the postcard</u> last week. (將畫線部分改成代名詞改寫句子)
+    note: the postcard 漏標底線，無法辨認題幹所指畫線處
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_英語_g8s1e1_s7_3
   section: 7
   number: 3

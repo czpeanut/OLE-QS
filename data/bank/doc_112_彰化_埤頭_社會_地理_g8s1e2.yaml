@@ -27,7 +27,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 蘋果新款的 iPhone 15 可能因中國需求疲軟，最終會導致 iPhone 在中國的銷量還不如前一款，全球出貨量低於預期。上述現象在說明中國哪一特質？
+  stem: 蘋果新款的 iPhone 15 可能會因中國需求疲軟，最終會導致 iPhone 在中國的銷量還不如前一款，全球出貨量低於預期。上述現象在說明中國哪一特質？
   options:
   - label: A
     content: 設置經濟特區
@@ -56,6 +56,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 蘋果新款的 iPhone 15 可能因中國需求疲軟，最終會導致 iPhone 在中國的銷量還不如前一款，全球出貨量低於預期。上述現象在說明中國哪一特質？
+    to: 蘋果新款的 iPhone 15 可能會因中國需求疲軟，最終會導致 iPhone 在中國的銷量還不如前一款，全球出貨量低於預期。上述現象在說明中國哪一特質？
+    note: 漏了「的」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g8s1e2_s1_2
   section: 1
   number: 2
@@ -339,7 +345,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 根據上文推論，汙染物形成源頭可能反應哪一事實？
+  stem: 根據上文推論，汙染物形成的源頭可能反應哪一事實？
   options:
   - label: A
     content: 當地勞力密集產業眾多
@@ -370,6 +376,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據上文推論，汙染物形成源頭可能反應哪一事實？
+    to: 根據上文推論，汙染物形成的源頭可能反應哪一事實？
+    note: 漏了「的」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g8s1e2_s1_10
   section: 1
   number: 10
@@ -378,7 +390,7 @@ questions:
   stem: 依上文推論，影響汙染物傳播的盛行風向應為下列何者？
   options:
   - label: A
-    content: ↗
+    content: ↖
   - label: B
     content: ↗
   - label: C
@@ -406,12 +418,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 依上文推論，影響汙染物傳播的盛行風向應為下列何者？
+    to: 依上文推論，影響汙染物傳播的盛行風向應為下列何者？
+    note: (A) 選項箭頭方向應為 ↖
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g8s1e2_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 克拉瑪依依這個城市是因哪一種產業興致富？
+  stem: 克拉瑪依這個城市是因哪一種產業興致富？
   options:
   - label: A
     content: 農牧業
@@ -442,6 +460,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 克拉瑪依依這個城市是因哪一種產業興致富？
+    to: 克拉瑪依這個城市是因哪一種產業興致富？
+    note: 多了一個「依」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g8s1e2_s1_12
   section: 1
   number: 12
@@ -642,14 +666,14 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 跟上圖最為相關的敘述為何？
+  stem: 跟上圖最有相關的敘述為何？
   options:
   - label: A
     content: 中國經濟發展的空間範圍由沿海到內陸
   - label: B
     content: 工業發展由輕工業轉為高科技
   - label: C
-    content: 為丁拓展經濟版圖與其他國家成立自由貿易協定
+    content: 為了拓展經濟版圖與其他國家成立自由貿易協定
   - label: D
     content: 中國成為世界主要的對外投資國。
   group_stem: 工業發展的轉型，是中國近年經濟成長的主要動力，並以此強化他與世界的關聯，中國的工業經歷了一段轉型的歷程，請觀察兩張圖片的代表中國工業的轉型，思考並回答
@@ -674,6 +698,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 跟上圖最為相關的敘述為何？
+    to: 跟上圖最有相關的敘述為何？
+    note: 「丁」應為「了」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g8s1e2_s1_18
   section: 1
   number: 18
@@ -1309,7 +1339,7 @@ questions:
     content: 眾多便宜勞工
   - label: D
     content: 政府鼓勵企業對外投資。
-  group_stem: 陸資不只買台灣，也買全球。陸資在全球收購了哪些企業品牌？中國浙江金發江摩托在 2005 年 100%收購歐洲義大利貝乃尼 Benelli
+  group_stem: 陸資不只買台灣，也買全球。陸資在全球收購了哪些企業品牌？中國浙江錢江摩托在 2005 年 100%收購歐洲義大利貝乃尼 Benelli
     重機；而中國也是全球最大時尚精品市場，是各大品牌最重要戰場，透過投資併購，引進更多有潛力的知名品牌，同時透過合作，提升自家產品設計能力，除了上述重機品牌外，尚有歐洲珠寶品牌
     Folli Follie、義大利丹寧女裝品牌 Miss Sixty 母公司 Sixty 等集團。請問 35-36 題：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1331,6 +1361,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據上文推論，說明中國哪一特質？
+    to: 根據上文推論，說明中國哪一特質？
+    note: 「金發」應為「錢」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g8s1e2_s1_36
   section: 1
   number: 36
@@ -1346,7 +1382,7 @@ questions:
     content: 無須重新宣傳
   - label: D
     content: 設計新的品牌。
-  group_stem: 陸資不只買台灣，也買全球。陸資在全球收購了哪些企業品牌？中國浙江金發江摩托在 2005 年 100%收購歐洲義大利貝乃尼 Benelli
+  group_stem: 陸資不只買台灣，也買全球。陸資在全球收購了哪些企業品牌？中國浙江錢江摩托在 2005 年 100%收購歐洲義大利貝乃尼 Benelli
     重機；而中國也是全球最大時尚精品市場，是各大品牌最重要戰場，透過投資併購，引進更多有潛力的知名品牌，同時透過合作，提升自家產品設計能力，除了上述重機品牌外，尚有歐洲珠寶品牌
     Folli Follie、義大利丹寧女裝品牌 Miss Sixty 母公司 Sixty 等集團。請問 35-36 題：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識

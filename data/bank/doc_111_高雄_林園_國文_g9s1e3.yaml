@@ -709,7 +709,7 @@ questions:
   stem: 孟子說：「徵於色，發於聲，而後喻。」這句話的意思為何？
   options:
   - label: A
-    content: 察言觀色，發現別(冸)人情緒，才能有所惕勵
+    content: 察言觀色，發現別人情緒，才能有所惕勵
   - label: B
     content: 隨便生氣，聽人言語，可以左右他人
   - label: C
@@ -735,6 +735,12 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 孟子說：「徵於色，發於聲，而後喻。」這句話的意思為何？
+    to: 孟子說：「徵於色，發於聲，而後喻。」這句話的意思為何？
+    note: 原卷為「別人」，多擷取了「(冸)」
+    by: review
+    extraction: true
 - id: doc_111_高雄_林園_國文_g9s1e3_s4_9
   section: 4
   number: 9
@@ -1264,7 +1270,7 @@ questions:
   - label: A
     content: 想靠餽贈獲得朋友，就必須懂得施捨
   - label: B
-    content: 一個人要慷慨，才能接受別(冸)人的友誼
+    content: 一個人要慷慨，才能接受別人的友誼
   - label: C
     content: 能了解對方的需求，才是真正的朋友
   - label: D
@@ -1299,6 +1305,12 @@ questions:
     gemini: D
     qwen: C
     gemini_high: D
+  errata:
+  - from: 這段對話所蘊含的主旨，與下列哪一句話最接近？
+    to: 這段對話所蘊含的主旨，與下列哪一句話最接近？
+    note: 原卷為「別人」，多擷取了「(冸)」
+    by: review
+    extraction: true
 - id: doc_111_高雄_林園_國文_g9s1e3_s5_3
   section: 5
   number: 3
@@ -1314,8 +1326,9 @@ questions:
     content: 推己及人
   - label: D
     content: 從善如流
-  group_stem: 老吾老，以及人之老；幼吾幼，以及人之幼。天下可運於掌。詩云：「刑于寡妻，至于兄弟，以御于家邦。」言舉斯心加諸彼而已。故推恩足以保四海，不推恩無以保妻子。古之人所以大過人者無他焉，善推其所為而已矣。                                                                    （孟子
-    梁惠王上）
+  group_stem: '老吾老，以及人之老；幼吾幼，以及人之幼。天下可運於掌。詩云：「刑于寡妻，至于兄弟，以御于家邦。」言舉斯心加諸彼而已。故推恩足以保四海，不推恩無以保妻子。古之人所以大過人者無他焉，善推其所為而已矣。
+
+    （孟子 梁惠王上）'
   answer:
   - C
   answer_source: answer_key_vlm
@@ -1346,9 +1359,10 @@ questions:
   - label: C
     content: 闡述殷憂啟聖、多難興邦的道理
   - label: D
-    content: 以古今對比顯現政治手腕的差別(差冸)
-  group_stem: 老吾老，以及人之老；幼吾幼，以及人之幼。天下可運於掌。詩云：「刑于寡妻，至于兄弟，以御于家邦。」言舉斯心加諸彼而已。故推恩足以保四海，不推恩無以保妻子。古之人所以大過人者無他焉，善推其所為而已矣。                                                                    （孟子
-    梁惠王上）
+    content: 以古今對比顯現政治手腕的差別
+  group_stem: '老吾老，以及人之老；幼吾幼，以及人之幼。天下可運於掌。詩云：「刑于寡妻，至于兄弟，以御于家邦。」言舉斯心加諸彼而已。故推恩足以保四海，不推恩無以保妻子。古之人所以大過人者無他焉，善推其所為而已矣。
+
+    （孟子 梁惠王上）'
   answer:
   - A
   answer_source: answer_key_vlm
@@ -1365,12 +1379,18 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 關於文章，下列何者敘述正確？
+    to: 關於文章，下列何者敘述正確？
+    note: 原卷為「差別」，多擷取了「(差冸)」
+    by: review
+    extraction: true
 - id: doc_111_高雄_林園_國文_g9s1e3_s5_5
   section: 5
   number: 5
   type: single
   page: 4
-  stem: 下列何者符合作者於本文中所說的「忠厚之情」？
+  stem: 下列何者符合作者於本本文中所說的「忠厚之情」？
   options:
   - label: A
     content: 效法古人，關心百姓的福祉
@@ -1399,6 +1419,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 下列何者符合作者於本文中所說的「忠厚之情」？
+    to: 下列何者符合作者於本本文中所說的「忠厚之情」？
+    note: 原卷為「本本文中」，擷取漏一「本」字
+    by: review
+    extraction: true
 - id: doc_111_高雄_林園_國文_g9s1e3_s5_6
   section: 5
   number: 6

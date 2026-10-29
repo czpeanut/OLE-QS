@@ -1433,7 +1433,7 @@ questions:
   number: 3
   type: essay
   page: 5
-  stem: David made Emma two toy robots a week ago.（畫線部份改成代名詞，並改寫句子）
+  stem: David made Emma <u>two toy robots</u> a week ago.（畫線部份改成代名詞，並改寫句子）
   tags:
     chapter:
       publisher: null
@@ -1444,6 +1444,12 @@ questions:
       chapter: B3 八上
     textbook: 八上 英語 授與動詞（gave/sent/showed/wrote/made + 人 + 物）+ to/for
     labeled_by: ai
+  errata:
+  - from: David made Emma two toy robots a week ago.（畫線部份改成代名詞，並改寫句子）
+    to: David made Emma <u>two toy robots</u> a week ago.（畫線部份改成代名詞，並改寫句子）
+    note: 原卷 two toy robots 有畫底線，題目要求改畫線處但擷取未標底線
+    by: review
+    extraction: true
 - id: doc_113_高雄_五福_英語_g8s1e1_s8_1
   section: 8
   number: 1

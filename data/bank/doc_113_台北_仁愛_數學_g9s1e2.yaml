@@ -579,17 +579,17 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: '如右圖，五邊形ABCDE
+  stem: '如右圖，五邊形 $ABCDE$
 
     的頂點均在圓上，
 
-    若$\overline{AB} = \overline{BC}$，
+    若 $\overparen{AB} = \overparen{BC}$，
 
-    $\overline{CD} = \overline{DE} = \overline{EA}$，
+    $\overparen{CD} = \overparen{DE} = \overparen{EA}$，
 
-    且 $\overline{EA}= 60^{\circ}$，
+    且 $\overparen{EA} = 60^{\circ}$，
 
-    請問$\angle BCD= ?$？'
+    請問 $\angle BCD = $？'
   options:
   - label: A
     content: 120°
@@ -633,6 +633,32 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如右圖，五邊形ABCDE
+
+      的頂點均在圓上，
+
+      若$\overline{AB} = \overline{BC}$，
+
+      $\overline{CD} = \overline{DE} = \overline{EA}$，
+
+      且 $\overline{EA}= 60^{\circ}$，
+
+      請問$\angle BCD= ?$？'
+    to: '如右圖，五邊形 $ABCDE$
+
+      的頂點均在圓上，
+
+      若 $\overparen{AB} = \overparen{BC}$，
+
+      $\overparen{CD} = \overparen{DE} = \overparen{EA}$，
+
+      且 $\overparen{EA} = 60^{\circ}$，
+
+      請問 $\angle BCD = $？'
+    note: 原卷為弧EA，擷取誤為線段EA
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_數學_g9s1e2_s1_11
   section: 1
   number: 11
@@ -699,23 +725,21 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: '如右圖，A、B、C、D
+  stem: '如右圖，$A$、$B$、$C$、$D$
 
     為圓上四個點，請問下列
 
     選項何者正確？'
   options:
   - label: A
-    content: 連接$\overline{AB}$、$\overline{CD}$，若$\overline{AB} \parallel \overline{CD}$，則
-      $\overline{AB}= \overline{CD}$
+    content: 連接$\overline{AB}$、$\overline{CD}$，若$\overline{AB} // \overline{CD}$，則$\overgroup{AB}
+      = \overgroup{CD}$
   - label: B
-    content: 若$\overline{AD}= \overline{BC}$，則連接$\overline{AC}$、$\overline{BD}$所得交點必為圓心
+    content: 若$\overgroup{AD} = \overgroup{BC}$，則連接$\overline{AC}$、$\overline{BD}$所得交點必為圓心
   - label: C
-    content: 若$\overline{CD}= 2 \overline{BC}$，則$\overline{CD} = 2\overline{BC}$
+    content: 若$\overgroup{CD} = 2\overgroup{BC}$，則$\overline{CD} = 2\overline{BC}$
   - label: D
-    content: '若連接A、B、C、D 得圓內接梯形，則必為等
-
-      腰梯形'
+    content: 若連接$A$、$B$、$C$、$D$得圓內接梯形，則必為等腰梯形
   assets:
   - key: s1_12_f1
     kind: figure
@@ -750,6 +774,20 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如右圖，A、B、C、D
+
+      為圓上四個點，請問下列
+
+      選項何者正確？'
+    to: '如右圖，$A$、$B$、$C$、$D$
+
+      為圓上四個點，請問下列
+
+      選項何者正確？'
+    note: 原卷選項(A)(B)(C)為弧符號，擷取誤為線段符號
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_數學_g9s1e2_s1_13
   section: 1
   number: 13
@@ -759,24 +797,24 @@ questions:
 
     D、E、F 為圓上六個點，
 
-    已知$\overline{AF}= 160^{\circ}$，且
+    已知$\overparen{AF}= 160^{\circ}$，且
 
-    $\overline{AB}= \overline{BC}= \overline{CD}= \overline{DE}= \overline{EF}$，
+    $\overparen{AB}= \overparen{BC}= \overparen{CD}= \overparen{DE}= \overparen{EF}$，
 
-    小愛先在$\overline{AB}$上取一點P，然後
+    小愛先在$\overparen{AB}$上取一點P，然後
 
-    在$\overline{AF}$上取一點Q，若她想依序連接作出$\angle PQR= 60^{\circ}$
+    在$\overparen{AF}$上取一點Q，若她想依序連接作出$\angle PQR= 60^{\circ}$
 
     ，則$R$點應該取在哪一個弧上？'
   options:
   - label: A
-    content: $\overline{BC}$
+    content: $\overparen{BC}$
   - label: B
-    content: $\overline{CD}$
+    content: $\overparen{CD}$
   - label: C
-    content: $\overline{DE}$
+    content: $\overparen{DE}$
   - label: D
-    content: $\overline{EF}$
+    content: $\overparen{EF}$
   assets:
   - key: s1_13_f1
     kind: figure
@@ -811,6 +849,32 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如右圖，A、B、C、
+
+      D、E、F 為圓上六個點，
+
+      已知$\overline{AF}= 160^{\circ}$，且
+
+      $\overline{AB}= \overline{BC}= \overline{CD}= \overline{DE}= \overline{EF}$，
+
+      小愛先在$\overline{AB}$上取一點P，然後
+
+      在$\overline{AF}$上取一點Q，若她想依序連接作出$\angl'
+    to: '如右圖，A、B、C、
+
+      D、E、F 為圓上六個點，
+
+      已知$\overparen{AF}= 160^{\circ}$，且
+
+      $\overparen{AB}= \overparen{BC}= \overparen{CD}= \overparen{DE}= \overparen{EF}$，
+
+      小愛先在$\overparen{AB}$上取一點P，然後
+
+      在$\overparen{AF}$上取一點Q，若她想依序連接'
+    note: 原卷題幹與選項之符號皆為弧，擷取誤為線段
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_數學_g9s1e2_s1_14
   section: 1
   number: 14
@@ -1156,39 +1220,33 @@ questions:
 
     為圓$O$上兩弦，且
 
-    M、N 兩點分別為
+    $M$、$N$兩點分別為
 
     $\overline{AB}$、$\overline{AC}$的中點，
 
     若$\angle MON= 70^{\circ}$，
 
-    請問$\overline{BAC}-\angle BAC= ?$？'
+    請問$\overparen{BAC}-\angle BAC= ?$ 課本 2-1P105+2-2P119'
   options:
   - label: A
-    content: 30°
+    content: $30^{\circ}$
   - label: B
-    content: 40°
+    content: $40^{\circ}$
   - label: C
-    content: 50°
+    content: $50^{\circ}$
   - label: D
-    content: 60°
+    content: $60^{\circ}$
   assets:
-  - key: s1_20_f1
+  - key: s1_20_r10290638_1
     kind: figure
-    file: doc_113_台北_仁愛_數學_g9s1e2/s1_20_f1.png
+    file: doc_113_台北_仁愛_數學_g9s1e2/s1_20_r10290638_1.png
     crop:
       page: 4
       rect:
-      - 214.99
-      - 63.13
-      - 353.82
-      - 198.37
-      auto_from:
-      - 215.02
-      - 63.82
-      - 356.73
-      - 198.33
-    crop_by: auto
+      - 215.32
+      - 59.98
+      - 355.93
+      - 209.37
   tags:
     chapter:
       publisher: 翰林
@@ -1207,31 +1265,57 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '如右圖，$\overline{AB}$、$\overline{AC}$
+
+      為圓$O$上兩弦，且
+
+      M、N 兩點分別為
+
+      $\overline{AB}$、$\overline{AC}$的中點，
+
+      若$\angle MON= 70^{\circ}$，
+
+      請問$\overline{BAC}-\angle BAC= ?$？'
+    to: '如右圖，$\overline{AB}$、$\overline{AC}$
+
+      為圓$O$上兩弦，且
+
+      $M$、$N$兩點分別為
+
+      $\overline{AB}$、$\overline{AC}$的中點，
+
+      若$\angle MON= 70^{\circ}$，
+
+      請問$\overparen{BAC}-\angle BAC= ?$ 課本 2-1P105+2-2P119'
+    note: 原卷BAC上方為弧符號非線段，且擷取多出問號
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_數學_g9s1e2_s1_21
   section: 1
   number: 21
   type: single
   page: 4
-  stem: '如右圖，A、B、Q、
+  stem: '如右圖，$A$、$B$、$Q$、
 
-    C、D、P 為圓上六個點，
+    $C$、$D$、$P$ 為圓上六個點，
 
-    已知$\overline{AD} \parallel \overline{BC}$，
+    已知$\overline{AD} // \overline{BC}$，
 
-    且$\overline{AB}= 50^{\circ}$，
+    且$\overparen{AB} = 50^{\circ}$，
 
-    若$\angle APC-\angle BQD= 30^{\circ}$，
+    若$\angle APC - \angle BQD = 30^{\circ}$，
 
-    請問$\angle APC+ \angle BQD= ?$？'
+    請問$\angle APC + \angle BQD = ？$'
   options:
   - label: A
-    content: 150°
+    content: $150^{\circ}$
   - label: B
-    content: 160°
+    content: $160^{\circ}$
   - label: C
-    content: 170°
+    content: $170^{\circ}$
   - label: D
-    content: 180°
+    content: $180^{\circ}$
   assets:
   - key: s1_21_f1
     kind: figure
@@ -1266,12 +1350,38 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如右圖，A、B、Q、
+
+      C、D、P 為圓上六個點，
+
+      已知$\overline{AD} \parallel \overline{BC}$，
+
+      且$\overline{AB}= 50^{\circ}$，
+
+      若$\angle APC-\angle BQD= 30^{\circ}$，
+
+      請問$\angle APC+ \angle BQD= ?$？'
+    to: '如右圖，$A$、$B$、$Q$、
+
+      $C$、$D$、$P$ 為圓上六個點，
+
+      已知$\overline{AD} // \overline{BC}$，
+
+      且$\overparen{AB} = 50^{\circ}$，
+
+      若$\angle APC - \angle BQD = 30^{\circ}$，
+
+      請問$\angle APC + \angle BQD = ？$'
+    note: 原卷為弧AB，擷取誤為線段AB
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_數學_g9s1e2_s1_22
   section: 1
   number: 22
   type: single
   page: 4
-  stem: 請問$\overline{AB}$、$\overline{CD}$、$\overline{EF}$的長度連比為何？
+  stem: 請問$\wideparen{AB}$、$\wideparen{CD}$、$\wideparen{EF}$的長度連比為何？
   options:
   - label: A
     content: 4：6：9
@@ -1281,14 +1391,14 @@ questions:
     content: 8：18：27
   - label: D
     content: 16：36：81
-  group_stem: '請閱讀下列敘述後，回答第22~23 題
+  group_stem: '請閱讀下列敘述後，回答第 22~23 題
 
 
-    如下圖，已知$\overline{AB}$、$\overline{CD}$、$\overline{EF}$分別為圓$O_{1}$、圓$O_{2}$、圓$O_{3}$的弧，
+    如下圖，已知$\wideparen{AB}$、$\wideparen{CD}$、$\wideparen{EF}$分別為圓$O_{1}$、圓$O_{2}$、圓$O_{3}$的弧，
 
-    若圓$O_{1}$、圓$O_{2}$、圓$O_{3}$的半徑連比為2：2：3，
+    若圓$O_{1}$、圓$O_{2}$、圓$O_{3}$的半徑連比為$2：2：3$，
 
-    且$\angle AO_{1}B$、$\angle CO_{2}D$、$\angle EO_{3}F$的度數連比為2：3：3。'
+    且$\angle AO_{1}B$、$\angle CO_{2}D$、$\angle EO_{3}F$的度數連比為$2：3：3$。'
   shared_asset: g1_22_23
   tags:
     chapter:
@@ -1307,6 +1417,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請問$\overline{AB}$、$\overline{CD}$、$\overline{EF}$的長度連比為何？
+    to: 請問$\wideparen{AB}$、$\wideparen{CD}$、$\wideparen{EF}$的長度連比為何？
+    note: 原卷為弧符號，擷取誤為線段符號
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_數學_g9s1e2_s1_23
   section: 1
   number: 23
@@ -1324,14 +1440,14 @@ questions:
     content: 8：18：27
   - label: D
     content: 16：36：81
-  group_stem: '請閱讀下列敘述後，回答第22~23 題
+  group_stem: '請閱讀下列敘述後，回答第 22~23 題
 
 
-    如下圖，已知$\overline{AB}$、$\overline{CD}$、$\overline{EF}$分別為圓$O_{1}$、圓$O_{2}$、圓$O_{3}$的弧，
+    如下圖，已知$\wideparen{AB}$、$\wideparen{CD}$、$\wideparen{EF}$分別為圓$O_{1}$、圓$O_{2}$、圓$O_{3}$的弧，
 
-    若圓$O_{1}$、圓$O_{2}$、圓$O_{3}$的半徑連比為2：2：3，
+    若圓$O_{1}$、圓$O_{2}$、圓$O_{3}$的半徑連比為$2：2：3$，
 
-    且$\angle AO_{1}B$、$\angle CO_{2}D$、$\angle EO_{3}F$的度數連比為2：3：3。'
+    且$\angle AO_{1}B$、$\angle CO_{2}D$、$\angle EO_{3}F$的度數連比為$2：3：3$。'
   shared_asset: g1_22_23
   tags:
     chapter:
@@ -1420,7 +1536,7 @@ questions:
   number: 25
   type: single
   page: 4
-  stem: '如下圖，已知圓$O$半徑為10，$\overline{AB}= 60^{\circ}$，若小愛先
+  stem: '如下圖，已知圓$O$半徑為10，$\overgroup{AB}= 60^{\circ}$，若小愛先
 
     在圓$O$的弦$\overline{AB}$上取D、E 兩點，然後在半徑$\overline{OA}$、$\overline{OB}$
 
@@ -1470,6 +1586,24 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如下圖，已知圓$O$半徑為10，$\overline{AB}= 60^{\circ}$，若小愛先
+
+      在圓$O$的弦$\overline{AB}$上取D、E 兩點，然後在半徑$\overline{OA}$、$\overline{OB}$
+
+      上分別取C、F 兩點，再連接得到正方形CDEF。請
+
+      問正方形CDEF 的邊長為何？'
+    to: '如下圖，已知圓$O$半徑為10，$\overgroup{AB}= 60^{\circ}$，若小愛先
+
+      在圓$O$的弦$\overline{AB}$上取D、E 兩點，然後在半徑$\overline{OA}$、$\overline{OB}$
+
+      上分別取C、F 兩點，再連接得到正方形CDEF。請
+
+      問正方形CDEF 的邊長為何？'
+    note: 原卷為弧AB，擷取誤為線段AB
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_22_23
   label: 題組附圖

@@ -1180,11 +1180,11 @@ questions:
   - label: A
     content: 該游泳池池水的密度
   - label: B
-    content: 加拿大人口液中安賽蜜的平均濃度
+    content: 加拿大大人尿液中安賽蜜的平均濃度
   - label: C
     content: 該游泳池含有安賽蜜的總質量
   - label: D
-    content: 加拿大人口液的平均密度
+    content: 加拿大大人尿液的平均密度
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1204,6 +1204,26 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '一座游泳池裡有多少的尿？
+
+      安賽蜜是優酪乳中的甜味劑，不易被人體消化，會由尿液排出體外。研究團隊檢測加拿大游泳池的安賽蜜濃度，一座 84 萬公升游泳池的安賽蜜濃度為 $2.1 \times
+      10^{-7}\text{ g}/\text{L}$，再參考「……」，經換算後，可知該游泳池約含有 75 公升的尿液。
+
+      此濃度單位 g/L 表示每公升池水含有溶質的質量(g)
+
+      上述「……」所指的最可能為下列何者？'
+    to: '一座游泳池裡有多少的尿？
+
+      安賽蜜是優酪乳中的甜味劑，不易被人體消化，會由尿液排出體外。研究團隊檢測加拿大游泳池的安賽蜜濃度，一座 84 萬公升游泳池的安賽蜜濃度為 $2.1 \times
+      10^{-7}\text{ g}/\text{L}$，再參考「……」，經換算後，可知該游泳池約含有 75 公升的尿液。
+
+      此濃度單位 g/L 表示每公升池水含有溶質的質量(g)
+
+      上述「……」所指的最可能為下列何者？'
+    note: 原卷為「大人尿液」，擷取誤為「人口液」且漏「大」字
+    by: review
+    extraction: true
 - id: doc_113_台中_順天_自然_理化_g8s1e1_s2_40
   section: 2
   number: 40

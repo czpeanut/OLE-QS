@@ -369,7 +369,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 1789 年法國國王路易十六為了增稅問題召開三級會議，請問下列何者不屬於三級會議中的三個階級之一？
+  stem: 1789 年法國國王路易十六世為了增稅問題召開三級會議，請問下列何者<u>不屬於</u>三級會議中的三個階級之一？
   options:
   - label: A
     content: 工人階級
@@ -396,6 +396,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 1789 年法國國王路易十六為了增稅問題召開三級會議，請問下列何者不屬於三級會議中的三個階級之一？
+    to: 1789 年法國國王路易十六世為了增稅問題召開三級會議，請問下列何者<u>不屬於</u>三級會議中的三個階級之一？
+    note: 漏了「世」字
+    by: review
+    extraction: true
 - id: doc_111_桃園_中興_社會_歷史_g9s2e1_s1_12
   section: 1
   number: 12

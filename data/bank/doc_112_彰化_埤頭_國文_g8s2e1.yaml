@@ -1259,16 +1259,16 @@ questions:
   number: 39
   type: single
   page: 1
-  stem: 以下對話中，「 」內所使用的稱謂，何者完全正確？
+  stem: 以下對話中，「　」內所使用的稱謂，何者完全正確？
   options:
   - label: A
-    content: 王先生：「令郎」才高八斗，不知在何處高就？ 李先生：「小犬」大學剛畢業，正準備參加研究所的考試。
+    content: 王先生：「令郎」才高八斗，不知在何處高就？　李先生：「小犬」大學剛畢業，正準備參加研究所的考試。
   - label: B
-    content: 馬太太：聽說「貴宅」裝潢得非常漂亮！ 朱太太：哪裡哪裡！有空歡迎光臨「寒門」。
+    content: 馬太太：聽說「貴宅」裝潢得非常漂亮！　朱太太：哪裡哪裡！有空歡迎光臨「寒門」。
   - label: C
-    content: 趙小姐：「愚兄」前幾天還提起您呢！ 劉伯伯：「令堂」在家嗎？ 陳小弟：「家父」在書房，請稍待。
+    content: 趙小姐：「愚兄」前幾天還提起您呢！　孫小姐：好久沒有見到「令兄」了，請代我向他問好。
   - label: D
-    content: 趙小姐：「愚兄」前幾天還提起您呢！ 劉伯伯：「令堂」在家嗎？ 陳小弟：「家父」在書房，請稍待。
+    content: 劉伯伯：「令堂」在家嗎？　陳小弟：「家父」在書房，請稍待。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1288,6 +1288,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 以下對話中，「 」內所使用的稱謂，何者完全正確？
+    to: 以下對話中，「　」內所使用的稱謂，何者完全正確？
+    note: 原卷(C)與(D)分開，擷取將(C)(D)內容合併並重複出現在(D)
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g8s2e1_s3_40
   section: 3
   number: 40

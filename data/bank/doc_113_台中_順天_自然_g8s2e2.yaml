@@ -436,7 +436,7 @@ questions:
   - label: C
     content: 酒精燃燒生成二氧化碳和水
   - label: D
-    content: 鋼生鋼絲
+    content: 銅生銅綠
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -456,6 +456,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列反應何者是可逆反應？
+    to: 下列反應何者是可逆反應？
+    note: 原卷為「銅生銅綠」，誤植為「鋼生鋼絲」
+    by: review
+    extraction: true
 - id: doc_113_台中_順天_自然_g8s2e2_s1_12
   section: 1
   number: 12
@@ -1000,7 +1006,7 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: '下列有關鹼性質的4項敘述中，正確的有幾項？
+  stem: '下列有關鹼物質性質的4項敘述中，正確的有幾項？
 
     (甲)可以溶解油脂
 
@@ -1037,6 +1043,28 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '下列有關鹼性質的4項敘述中，正確的有幾項？
+
+      (甲)可以溶解油脂
+
+      (乙)廚房清潔劑通常是鹼性的
+
+      (丙)被螞蟻叮咬的腫痛，理論上可以塗氨水來舒緩
+
+      (丁)鹼性物質溶於水一定會解離出氫氧根離子。'
+    to: '下列有關鹼物質性質的4項敘述中，正確的有幾項？
+
+      (甲)可以溶解油脂
+
+      (乙)廚房清潔劑通常是鹼性的
+
+      (丙)被螞蟻叮咬的腫痛，理論上可以塗氨水來舒緩
+
+      (丁)鹼性物質溶於水一定會解離出氫氧根離子。'
+    note: 漏了「物」字
+    by: review
+    extraction: true
 - id: doc_113_台中_順天_自然_g8s2e2_s1_27
   section: 1
   number: 27

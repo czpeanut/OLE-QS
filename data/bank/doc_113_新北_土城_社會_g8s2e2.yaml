@@ -161,7 +161,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 日本製造的產品素來以品質優良和設計精良聞名於世，     可能在中華民國建國之後，日製品曾幾度在中國是滯銷的，甚至被抵制購買。請問哪一事件發生時，較不受影響？
+  stem: 日本製造的產品素來以品質優良和設計精良聞名於世，     可是在中華民國建國之後，日製品曾幾度在中國是滯銷的，甚至被抵制購買。請問哪一事件發生時，較不受影響？
   options:
   - label: A
     content: 五四運動
@@ -188,6 +188,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 日本製造的產品素來以品質優良和設計精良聞名於世，     可能在中華民國建國之後，日製品曾幾度在中國是滯銷的，甚至被抵制購買。請問哪一事件發生時，較不受影響？
+    to: 日本製造的產品素來以品質優良和設計精良聞名於世，     可是在中華民國建國之後，日製品曾幾度在中國是滯銷的，甚至被抵制購買。請問哪一事件發生時，較不受影響？
+    note: 原卷為「可是」，誤擷為「可能」
+    by: review
+    extraction: true
 - id: doc_113_新北_土城_社會_g8s2e2_s1_6
   section: 1
   number: 6
@@ -990,26 +996,16 @@ questions:
   - label: D
     content: 丁。
   assets:
-  - key: s1_27_f1
+  - key: s1_27_r10290654_1
     kind: figure
-    file: doc_113_新北_土城_社會_g8s2e2/s1_27_f1.png
+    file: doc_113_新北_土城_社會_g8s2e2/s1_27_r10290654_1.png
     crop:
       page: 3
       rect:
-      - 59.24
-      - 36.0
-      - 324.65
-      - 172.47
-  - key: s1_27_f2
-    kind: figure
-    file: doc_113_新北_土城_社會_g8s2e2/s1_27_f2.png
-    crop:
-      page: 3
-      rect:
-      - 208.47
-      - 173.45
-      - 345.93
-      - 294.22
+      - 210.18
+      - 174.49
+      - 352.96
+      - 292.89
   tags:
     chapter:
       publisher: 翰林
@@ -1027,6 +1023,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 西亞地區蘊藏豐富的石油資源，這些國家與世界其他產油國組成「石油輸出國家組織」，並透過組織協調各國的石油產量與國際油價。該組織西亞地區的會員國共同瀕臨的海域為何？
+    to: 西亞地區蘊藏豐富的石油資源，這些國家與世界其他產油國組成「石油輸出國家組織」，並透過組織協調各國的石油產量與國際油價。該組織西亞地區的會員國共同瀕臨的海域為何？
+    note: 原卷該題僅附圖1張，誤標為附圖2張
+    by: review
+    extraction: true
 - id: doc_113_新北_土城_社會_g8s2e2_s1_28
   section: 1
   number: 28

@@ -1041,6 +1041,23 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s3_41_r10290726_1
+    kind: figure
+    file: doc_113_桃園_桃園_英語_g8s1e3/s3_41_r10290726_1.png
+    crop:
+      page: 3
+      rect:
+      - 79.06
+      - 625.52
+      - 292.54
+      - 831.66
+  errata:
+  - from: 41. (   ) What can we know from the comic strip?
+    to: 41. (   ) What can we know from the comic strip?
+    note: 本題漫畫題缺少漫畫附圖
+    by: review
+    extraction: true
 - id: doc_113_桃園_桃園_英語_g8s1e3_s3_42
   section: 3
   number: 42
@@ -1912,10 +1929,7 @@ questions:
     content: Cinema Center.
   - label: D
     content: Regent’s Park.
-  group_stem: '(58-60)
-
-
-    📖 reception 接待處    ceremony 典禮     invitation 邀請卡'
+  group_stem: "(58-60)\n\n\U0001F4D6 reception 接待處\tceremony 典禮\tinvitation 邀請卡"
   shared_asset: g3_58_60
   tags:
     textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
@@ -1950,10 +1964,7 @@ questions:
     content: Alice and Mark took a walk in both Hyde Park and Regent’s Park before.
   - label: D
     content: Alice and Mark met each other on The Royal Exchange for the first time.
-  group_stem: '(58-60)
-
-
-    📖 reception 接待處    ceremony 典禮     invitation 邀請卡'
+  group_stem: "(58-60)\n\n\U0001F4D6 reception 接待處\tceremony 典禮\tinvitation 邀請卡"
   shared_asset: g3_58_60
   tags:
     textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
@@ -1977,7 +1988,7 @@ questions:
   number: 60
   type: single
   page: 7
-  stem: '60. (  ) Melody wants to buy a gift for Alice.
+  stem: 'Melody wants to buy a gift for Alice.
 
     These are the things she is looking at, and the clerk comes to her.
 
@@ -1988,13 +1999,10 @@ questions:
   - label: B
     content: Earrings.
   - label: C
-    content: A pillow.     📖 pillow 枕頭
+    content: "A pillow.\t\U0001F4D6 pillow 枕頭"
   - label: D
     content: A coffee set.
-  group_stem: '(58-60)
-
-
-    📖 reception 接待處    ceremony 典禮     invitation 邀請卡'
+  group_stem: "(58-60)\n\n\U0001F4D6 reception 接待處\tceremony 典禮\tinvitation 邀請卡"
   shared_asset: g3_58_60
   tags:
     textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
@@ -2014,6 +2022,31 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  assets:
+  - key: s3_60_r10290726_2
+    kind: figure
+    file: doc_113_桃園_桃園_英語_g8s1e3/s3_60_r10290726_2.png
+    crop:
+      page: 7
+      rect:
+      - 433.18
+      - 684.34
+      - 707.87
+      - 914.22
+  errata:
+  - from: '60. (  ) Melody wants to buy a gift for Alice.
+
+      These are the things she is looking at, and the clerk comes to her.
+
+      What is Melody going to buy in the end?'
+    to: 'Melody wants to buy a gift for Alice.
+
+      These are the things she is looking at, and the clerk comes to her.
+
+      What is Melody going to buy in the end?'
+    note: 漏擷取題目右側商品價格圖表及對話內容
+    by: review
+    extraction: true
 shared_assets:
 - key: g3_41_41
   label: 題組附圖
@@ -2097,7 +2130,7 @@ shared_assets:
 - key: g3_58_60
   label: 題組附圖
   kind: figure
-  file: doc_113_桃園_桃園_英語_g8s1e3/g3_58_60_f1.png
+  file: doc_113_桃園_桃園_英語_g8s1e3/s3_60_r10290726_1.png
   used_by:
   - doc_113_桃園_桃園_英語_g8s1e3_s3_58
   - doc_113_桃園_桃園_英語_g8s1e3_s3_59
@@ -2105,8 +2138,8 @@ shared_assets:
   crop:
     page: 7
     rect:
-    - 130.58
-    - 67.09
-    - 621.16
-    - 421.2
+    - 130.07
+    - 65.14
+    - 620.43
+    - 420.93
   redrawn: 去除浮水印

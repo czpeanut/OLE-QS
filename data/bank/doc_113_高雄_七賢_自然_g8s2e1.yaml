@@ -35,7 +35,7 @@ questions:
   stem: 附圖中，碳酸鈉溶液重x 克，氯化鈣溶液重y 克，整套裝置總重量z 克，則下列敘述何者正確？
   options:
   - label: A
-    content: 兩種溶液混合後，將產生淡黃色沉澱
+    content: 兩種溶液混合後後，將產生淡黃色沉澱
   - label: B
     content: 反應後，因有沉澱生成，故稱總重量大於z 克
   - label: C
@@ -76,6 +76,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 附圖中，碳酸鈉溶液重x 克，氯化鈣溶液重y 克，整套裝置總重量z 克，則下列敘述何者正確？
+    to: 附圖中，碳酸鈉溶液重x 克，氯化鈣溶液重y 克，整套裝置總重量z 克，則下列敘述何者正確？
+    note: 原卷為「混合後後」，擷取漏一「後」字
+    by: review
+    extraction: true
 - id: doc_113_高雄_七賢_自然_g8s2e1_s1_2
   section: 1
   number: 2
@@ -1092,7 +1098,7 @@ questions:
   number: 27
   type: single
   page: 3
-  stem: 若以微觀的原子及分子表示化學反應，工業上某種製造氫氣的反應示意圖如圖所示，其中圖示依序表示 C、H、O 三種不同的原子。關於甲、乙、丙、丁四種物質的敘述，下列何者有誤？
+  stem: 若以微觀的原子及分子表示化學反應，工業上某種製造氫氣的反應示意圖如圖所示，其中●、○、依序表示 C、H、O 三種不同的原子。關於甲、乙、丙、丁四種物質的敘述，下列何者有誤？
   options:
   - label: A
     content: 甲為化合物
@@ -1103,38 +1109,16 @@ questions:
   - label: D
     content: 丁為元素。
   assets:
-  - key: s1_27_f1
+  - key: s1_27_r10290650_1
     kind: figure
-    file: doc_113_高雄_七賢_自然_g8s2e1/s1_27_f1.png
+    file: doc_113_高雄_七賢_自然_g8s2e1/s1_27_r10290650_1.png
     crop:
       page: 3
       rect:
-      - 553.81
-      - 333.8
-      - 614.27
-      - 353.79
-      auto_from:
-      - 551.13
-      - 329.24
-      - 625.75
-      - 357.05
-    crop_by: auto
-  - key: s1_27_f2
-    kind: figure
-    file: doc_113_高雄_七賢_自然_g8s2e1/s1_27_f2.png
-    crop:
-      page: 3
-      rect:
-      - 202.03
-      - 398.63
-      - 520.59
-      - 465.04
-      auto_from:
-      - 197.02
-      - 397.31
-      - 522.98
-      - 465.38
-    crop_by: auto
+      - 195.65
+      - 399.51
+      - 522.06
+      - 465.3
   tags:
     chapter:
       publisher: 翰林
@@ -1152,6 +1136,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若以微觀的原子及分子表示化學反應，工業上某種製造氫氣的反應示意圖如圖所示，其中圖示依序表示 C、H、O 三種不同的原子。關於甲、乙、丙、丁四種物質的敘述，下列何者有誤？
+    to: 若以微觀的原子及分子表示化學反應，工業上某種製造氫氣的反應示意圖如圖所示，其中●、○、依序表示 C、H、O 三種不同的原子。關於甲、乙、丙、丁四種物質的敘述，下列何者有誤？
+    note: 漏了對應C、H、O三種原子的圖示符號
+    by: review
+    extraction: true
 - id: doc_113_高雄_七賢_自然_g8s2e1_s1_28
   section: 1
   number: 28

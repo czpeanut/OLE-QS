@@ -280,7 +280,7 @@ questions:
   number: 3
   type: essay
   page: 1
-  stem: It cost Clare NT$500 to buy the book. (依畫線部分造原問句)
+  stem: It cost Clare <u>NT$500</u> to buy the book. (依畫線部分造原問句)
   tags:
     textbook: 八上 英語 cost/spend/pay 花費金錢
     labeled_by: ai
@@ -291,6 +291,12 @@ questions:
       code: B3-14
       title: cost/spend/pay 花費金錢
       chapter: B3 八上
+  errata:
+  - from: It cost Clare NT$500 to buy the book. (依畫線部分造原問句)
+    to: It cost Clare <u>NT$500</u> to buy the book. (依畫線部分造原問句)
+    note: 未標示畫線處NT$500，無法得知依何處造句
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g8s1e3_s3_1
   section: 3
   number: 1

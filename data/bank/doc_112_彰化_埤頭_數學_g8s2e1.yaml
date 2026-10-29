@@ -625,7 +625,7 @@ questions:
   number: 3
   type: fill
   page: 2
-  stem: (3) $a$, $a+3$, ____ , ____ , $a+9$。
+  stem: (3) $a$, $a+3$, ＿＿＿, $a+9$。
   group_stem: 在下列空格中填入適當的數，使各數列成為等差數列：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -648,12 +648,18 @@ questions:
   - a+9
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (3) $a$, $a+3$, ____ , ____ , $a+9$。
+    to: (3) $a$, $a+3$, ＿＿＿, $a+9$。
+    note: 原卷只有一格空格，擷取多了一格
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_數學_g8s2e1_s2_4
   section: 2
   number: 4
   type: fill
   page: 2
-  stem: (1) $3, 12, 48$, ____ , ____ , $768$。
+  stem: (1) $3, 12, 48$, ____ , $768$。
   group_stem: 空格中填入適當的數，使數列成為等比數列。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -673,12 +679,18 @@ questions:
     gemini_high: 192；768
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: (1) $3, 12, 48$, ____ , ____ , $768$。
+    to: (1) $3, 12, 48$, ____ , $768$。
+    note: 原卷只有一格空格，擷取多了一格
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_數學_g8s2e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 2
-  stem: (2) $\frac{64}{81}$, $\frac{16}{27}$, $\frac{4}{9}$, ____ , ____ , $\frac{1}{4}$。
+  stem: (2) $\frac{64}{81}$, $\frac{16}{27}$, $\frac{4}{9}$, ＿＿＿ , $\frac{1}{4}$。
   group_stem: 空格中填入適當的數，使數列成為等比數列。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -698,6 +710,12 @@ questions:
     gemini_high: \frac{1}{3}；\frac{1}{4}
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: (2) $\frac{64}{81}$, $\frac{16}{27}$, $\frac{4}{9}$, ____ , ____ , $\frac{1}{4}$。
+    to: (2) $\frac{64}{81}$, $\frac{16}{27}$, $\frac{4}{9}$, ＿＿＿ , $\frac{1}{4}$。
+    note: 原卷只有一格空格，擷取多了一格
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_數學_g8s2e1_s2_6
   section: 2
   number: 6

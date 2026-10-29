@@ -1173,7 +1173,9 @@ questions:
   number: 31
   type: single
   page: 3
-  stem: 31、西方傳教士在華傳教期間，將西學輸入中國，主要包括物理、地理學、火藥、天文曆法等。而中國的佛家經典、園林建築、火器等，也透過傳教士傳到歐洲。一度形成歐洲的「中國熱」。以上畫雙線的敘述，錯誤有幾個？
+  stem: 31、西方傳教士在華傳教期間，將西學輸入中國，主要包括<u class="dbl">物理</u>、<u class="dbl">地理學</u>、<u
+    class="dbl">火藥</u>、<u class="dbl">天文曆法</u>等。而中國的<u class="dbl">佛家經典</u>、<u class="dbl">園林建築</u>、<u
+    class="dbl">火器</u>等，也透過傳教士傳到歐洲。一度形成歐洲的「中國熱」。以上畫雙線的敘述，錯誤有幾個？
   options:
   - label: A
     content: 一個
@@ -1200,6 +1202,14 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 31、西方傳教士在華傳教期間，將西學輸入中國，主要包括物理、地理學、火藥、天文曆法等。而中國的佛家經典、園林建築、火器等，也透過傳教士傳到歐洲。一度形成歐洲的「中國熱」。以上畫雙線的敘述，錯誤有幾個？
+    to: 31、西方傳教士在華傳教期間，將西學輸入中國，主要包括<u class="dbl">物理</u>、<u class="dbl">地理學</u>、<u
+      class="dbl">火藥</u>、<u class="dbl">天文曆法</u>等。而中國的<u class="dbl">佛家經典</u>、<u class="dbl">園林建築</u>、<u
+      class="dbl">火器</u>等，也透過傳教士
+    note: 漏標雙線處，導致無從辨認題目所問的「畫雙線的敘述」
+    by: review
+    extraction: true
 - id: doc_112_嘉義_北興_社會_歷史_g8s1e2_s1_32
   section: 1
   number: 32

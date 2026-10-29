@@ -385,7 +385,7 @@ questions:
   number: 9
   type: single
   page: 2
-  stem: 圖(四)為一長方體，請判斷 $\overline{BC}$ 與平面 $EFGH$ 的關係為何？
+  stem: 圖(四)為一長方體，請判斷 $\overleftrightarrow{BC}$ 與平面 $EFGH$ 的關係為何？
   options:
   - label: A
     content: 互相平行
@@ -429,6 +429,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 圖(四)為一長方體，請判斷 $\overline{BC}$ 與平面 $EFGH$ 的關係為何？
+    to: 圖(四)為一長方體，請判斷 $\overleftrightarrow{BC}$ 與平面 $EFGH$ 的關係為何？
+    note: 原卷為直線BC（雙向箭頭），擷取誤作線段BC
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s2e2_s1_10
   section: 1
   number: 10

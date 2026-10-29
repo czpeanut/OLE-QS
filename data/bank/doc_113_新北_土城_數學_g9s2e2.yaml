@@ -851,12 +851,12 @@ questions:
   number: 20
   type: single
   page: 4
-  stem: 如附圖所示，圖(十)為一圓錐體，圖(十一)為此圓錐體的展開圖，則下列敘述何者錯誤？(課本 3-1)
+  stem: 如附圖所示，圖(十)為一圓錐體，圖(十一)為此圓錐體的展開圖，則下列敘述何者<u>錯誤</u>？(課本 3-1)
   options:
   - label: A
     content: 圓 $O$ 的半徑為 3
   - label: B
-    content: $\overline{BC}$ 的弧長為 $6\pi$
+    content: $\overgroup{BC}$ 的弧長為 $6\pi$
   - label: C
     content: $\angle BAC=108^{\circ}$
   - label: D
@@ -895,6 +895,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如附圖所示，圖(十)為一圓錐體，圖(十一)為此圓錐體的展開圖，則下列敘述何者錯誤？(課本 3-1)
+    to: 如附圖所示，圖(十)為一圓錐體，圖(十一)為此圓錐體的展開圖，則下列敘述何者<u>錯誤</u>？(課本 3-1)
+    note: 原卷 BC 上方為弧長符號，擷取誤作線段符號
+    by: review
+    extraction: true
 - id: doc_113_新北_土城_數學_g9s2e2_s2_1
   section: 2
   number: 1

@@ -1135,7 +1135,7 @@ questions:
   page: 4
   stem: 如下圖，直線 $L$ 分別切圓 $O_{1}$、圓 $O_{2}$ 於 $A$ 點、$B$ 點，且 $\overline{O_{1}O_{2}}$
     分別交 $\overline{AB}$、圓 $O_{2}$ 於 $C$ 點、$D$ 點。已知直線 $L$ 的方程式為 $y = 2$，$O_{1}$ 坐標為
-    $(0, -1)$，$\overline{O_{1}O_{2}} = 15$，$D\overline{O_{2}} = 6$，則下列何者正確？
+    $(0, -1)$，$\overline{O_{1}O_{2}} = 15$，$\overline{DO_{2}} = 6$，則下列何者正確？
   options:
   - label: A
     content: '$\overline{AC} : \overline{BC} = 1 : 3$'
@@ -1177,6 +1177,16 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 如下圖，直線 $L$ 分別切圓 $O_{1}$、圓 $O_{2}$ 於 $A$ 點、$B$ 點，且 $\overline{O_{1}O_{2}}$
+      分別交 $\overline{AB}$、圓 $O_{2}$ 於 $C$ 點、$D$ 點。已知直線 $L$ 的方程式為 $y = 2$，$O_{1}$ 坐標為
+      $(0, -1)$，$\overline{O_{1}O_{2}} = 15$，$D\overl
+    to: 如下圖，直線 $L$ 分別切圓 $O_{1}$、圓 $O_{2}$ 於 $A$ 點、$B$ 點，且 $\overline{O_{1}O_{2}}$
+      分別交 $\overline{AB}$、圓 $O_{2}$ 於 $C$ 點、$D$ 點。已知直線 $L$ 的方程式為 $y = 2$，$O_{1}$ 坐標為
+      $(0, -1)$，$\overline{O_{1}O_{2}} = 15$，$\overli
+    note: 線段記號錯位，應覆蓋整個 DO2
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_數學_g9s1e2_s1_26
   section: 1
   number: 26

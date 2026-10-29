@@ -803,7 +803,7 @@ questions:
   number: 6
   type: fill
   page: 3
-  stem: 如右圖，已知$\overline{AB}=8$公分，以下列步驟作圖：(1)過$A$點任作射線$\overline{AX}$；(2)在射線$\overline{AX}$上依序取$C$、$D$、$E$三點使$\overline{AC}=\overline{CD}=\overline{DE}$；(3)連接$\overline{BE}$；(4)過$D$作$\overline{PD}
+  stem: 如右圖，已知$\overline{AB}=8$公分，以下列步驟作圖：(1)過$A$點任作射線$\vec{AX}$；(2)在射線$\vec{AX}$上依序取$C$、$D$、$E$三點使$\overline{AC}=\overline{CD}=\overline{DE}$；(3)連接$\overline{BE}$；(4)過$D$作$\overline{PD}
     // \overline{BE}$ 交$\overline{AB}$於$P$。則$\overline{AP}=$______公分。
   assets:
   - key: s2_6_f1
@@ -841,6 +841,14 @@ questions:
   - \frac{16}{3}
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，已知$\overline{AB}=8$公分，以下列步驟作圖：(1)過$A$點任作射線$\overline{AX}$；(2)在射線$\overline{AX}$上依序取$C$、$D$、$E$三點使$\overline{AC}=\overline{CD}=\overline{DE}$；(3)連接$\overline{BE}$；(4)過$D$作$\overline{PD}
+      // \overlin
+    to: 如右圖，已知$\overline{AB}=8$公分，以下列步驟作圖：(1)過$A$點任作射線$\vec{AX}$；(2)在射線$\vec{AX}$上依序取$C$、$D$、$E$三點使$\overline{AC}=\overline{CD}=\overline{DE}$；(3)連接$\overline{BE}$；(4)過$D$作$\overline{PD}
+      // \overline{BE}$ 交$\
+    note: 原卷AX上方為射線符號（單向箭頭），擷取誤作線段符號
+    by: review
+    extraction: true
 - id: doc_112_台北_民生_數學_g9s1e1_s2_7
   section: 2
   number: 7

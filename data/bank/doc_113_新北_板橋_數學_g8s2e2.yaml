@@ -549,7 +549,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 如右圖，$L_{1} // L_{2}$，若 $\angle 1 = 82^\circ$，$\angle 2 = 66^\circ$，且 $\overline{BO}$
+  stem: 如右圖，$L_{1} // L_{2}$，若 $\angle 1 = 82^\circ$，$\angle 2 = 66^\circ$，且 $\vec{BO}$
     平分 $\angle DBC$，則 $\angle 3 =$？度
   options:
   - label: A
@@ -594,6 +594,14 @@ questions:
     gemini: D
     qwen: C
     gemini_high: D
+  errata:
+  - from: 如右圖，$L_{1} // L_{2}$，若 $\angle 1 = 82^\circ$，$\angle 2 = 66^\circ$，且 $\overline{BO}$
+      平分 $\angle DBC$，則 $\angle 3 =$？度
+    to: 如右圖，$L_{1} // L_{2}$，若 $\angle 1 = 82^\circ$，$\angle 2 = 66^\circ$，且 $\vec{BO}$
+      平分 $\angle DBC$，則 $\angle 3 =$？度
+    note: 原卷為射線BO，擷取誤為線段BO
+    by: review
+    extraction: true
 - id: doc_113_新北_板橋_數學_g8s2e2_s1_14
   section: 1
   number: 14

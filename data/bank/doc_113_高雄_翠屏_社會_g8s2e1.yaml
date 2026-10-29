@@ -1213,7 +1213,7 @@ questions:
   number: 31
   type: single
   page: 7
-  stem: '有一部描繪武昌起事前 socket中國政治形勢變化的電影。
+  stem: '有一部描繪武昌起事前<u>後</u>，中國政治形勢變化的電影。
 
     下列哪一段介紹，最可能是電影的劇情？'
   options:
@@ -1242,6 +1242,16 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '有一部描繪武昌起事前 socket中國政治形勢變化的電影。
+
+      下列哪一段介紹，最可能是電影的劇情？'
+    to: '有一部描繪武昌起事前<u>後</u>，中國政治形勢變化的電影。
+
+      下列哪一段介紹，最可能是電影的劇情？'
+    note: 擷取誤植為socket且漏掉「後，」
+    by: review
+    extraction: true
 - id: doc_113_高雄_翠屏_社會_g8s2e1_s2_32
   section: 2
   number: 32
@@ -1492,9 +1502,22 @@ questions:
   number: 38
   type: single
   page: 8
-  stem: '圖 5 是不同時期臺灣官方曾經明文規定的節日。
+  stem: '<u>圖 5</u> 是不同時期臺灣官方曾經明文規定的節日。
 
-    根據內容判斷，其中何者最不可能是由日本統治時期的政府所指定？'
+    根據內容判斷，其中何者<u>最不可能</u>是由日本統治時期的政府所指定？
+
+
+    | 圖 5 | 節日 | 日期 |
+
+    | :---: | :---: | :---: |
+
+    | 甲 | 青年節<br>(紀念黃花岡之役) | 3 月 29 日 |
+
+    | 乙 | 海軍紀念日<br>(日俄戰爭勝利紀念) | 5 月 27 日 |
+
+    | 丙 | 臺灣神社祭 | 10 月 28 日 |
+
+    | 丁 | 明治節<br>(明治天皇誕生日) | 11 月 3 日 |'
   options:
   - label: A
     content: 甲
@@ -1521,6 +1544,27 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '圖 5 是不同時期臺灣官方曾經明文規定的節日。
+
+      根據內容判斷，其中何者最不可能是由日本統治時期的政府所指定？'
+    to: '<u>圖 5</u> 是不同時期臺灣官方曾經明文規定的節日。
+
+      根據內容判斷，其中何者<u>最不可能</u>是由日本統治時期的政府所指定？
+
+
+      | 圖 5 | 節日 | 日期 |
+
+      | :---: | :---: | :---: |
+
+      | 甲 | 青年節<br>(紀念黃花岡之役) | 3 月 29 日 |
+
+      | 乙 | 海軍紀念日<br>(日俄戰爭勝利紀念) | 5 月 27 日 |
+
+      | 丙 | 臺灣神社祭'
+    note: 漏附「圖5」表格圖片或內容
+    by: review
+    extraction: true
 - id: doc_113_高雄_翠屏_社會_g8s2e1_s2_39
   section: 2
   number: 39

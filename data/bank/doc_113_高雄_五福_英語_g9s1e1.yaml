@@ -938,7 +938,22 @@ questions:
   number: 4
   type: single
   page: 4
-  stem: Who is NOT talking about Sunny Hotel?
+  stem: 'Who is <u>NOT</u> talking about Sunny Hotel?
+
+
+    | Ivy: | Walking to the metro station is convenient, but its family room is too
+    small for four of us. |
+
+    | --- | --- |
+
+    | Alex: | The price for one night stay was less expensive. Best of all, I could
+    have free breakfast. |
+
+    | Zoe: | I have to meet up with my friends in the city center, so this hotel is
+    better for me. |
+
+    | Ben: | Going shopping is my favorite when I am on vacation. I decided to stay
+    at this hotel. |'
   options:
   - label: A
     content: Ivy
@@ -1023,6 +1038,20 @@ questions:
       chapter: 綜合
     textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: Who is NOT talking about Sunny Hotel?
+    to: 'Who is <u>NOT</u> talking about Sunny Hotel?
+
+
+      | Ivy: | Walking to the metro station is convenient, but its family room is
+      too small for four of us. |
+
+      | --- | --- |
+
+      | Alex: | The price for one night st'
+    note: 題幹漏擷取四人的發言內容
+    by: review
+    extraction: true
 - id: doc_113_高雄_五福_英語_g9s1e1_s4_5
   section: 4
   number: 5
@@ -1873,7 +1902,7 @@ questions:
   number: 2
   type: essay
   page: 6
-  stem: They have eaten all the Easter eggs this morning. (依畫線部分造原問句)
+  stem: They have eaten <u>all the Easter eggs</u> this morning. (依畫線部分造原問句)
   tags:
     chapter:
       publisher: null
@@ -1884,6 +1913,12 @@ questions:
       chapter: B5 九上
     textbook: 九上 英語 現在完成式 — 持續（since/for）+ 已完成（yet/already/just）
     labeled_by: ai
+  errata:
+  - from: They have eaten all the Easter eggs this morning. (依畫線部分造原問句)
+    to: They have eaten <u>all the Easter eggs</u> this morning. (依畫線部分造原問句)
+    note: 漏標原卷畫底線處「all the Easter eggs」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五福_英語_g9s1e1_s7_1
   section: 7
   number: 1

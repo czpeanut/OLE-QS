@@ -66,7 +66,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: Alan ran very fast, he still missed the school bus. He was late today!
+  stem: ＿＿＿ Alan ran very fast, he still missed the school bus. He was late today!
   options:
   - label: A
     content: Because
@@ -93,6 +93,12 @@ questions:
       chapter: B6 九下
     textbook: 九下 英語 複習連接詞 before/after/until/since/because/although/if
     labeled_by: ai
+  errata:
+  - from: Alan ran very fast, he still missed the school bus. He was late today!
+    to: ＿＿＿ Alan ran very fast, he still missed the school bus. He was late today!
+    note: 句首漏擷取空格（原卷以空格作為填空處）
+    by: review
+    extraction: true
 - id: doc_113_高雄_鼎金_英語_g9s2e2_s1_3
   section: 1
   number: 3

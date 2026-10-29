@@ -209,7 +209,7 @@ questions:
   number: 39
   type: single
   page: 1
-  stem: 根據附圖的新聞內容判斷，請問：汙漬遮蔽處最有可能是為何者？
+  stem: 根據附圖的新聞內容判斷，請問：汙漬遮蔽處最可能為何者？
   options:
   - label: A
     content: 立法院
@@ -254,6 +254,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 根據附圖的新聞內容判斷，請問：汙漬遮蔽處最有可能是為何者？
+    to: 根據附圖的新聞內容判斷，請問：汙漬遮蔽處最可能為何者？
+    note: 多擷取了「是」字
+    by: review
+    extraction: true
 - id: doc_113_新北_丹鳳_社會_公民_g8s1e3_s1_40
   section: 1
   number: 40

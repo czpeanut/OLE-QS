@@ -656,7 +656,8 @@ questions:
   number: 16
   type: single
   page: 3
-  stem: 熊大家裡煮飯，眼見朋友將一密度為$7.87\text{g/cm}^{3}$的均質實心鐵球，放入盛滿油之杯子中，發現裡面的油溢出300gw。已知油與鐵不相溶，且油的密度為$0.8\text{g/cm}^{3}$，則此鐵球所受浮力為多少？
+  stem: 熊大家裡煮飯，眼見朋友將一密度為$7.87\text{g/cm}^{3}$的均質實心鐵球，放入盛滿油之杯子中，發現裡面的油溢出 300gw。已知油與鐵不相溶，且油的密度為
+    $0.8\text{g/cm}^{3}$，則此鐵球所受浮力為多少？
   options:
   - label: A
     content: ($300\times 0.8$) gw
@@ -685,6 +686,13 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 熊大家裡煮飯，眼見朋友將一密度為$7.87\text{g/cm}^{3}$的均質實心鐵球，放入盛滿油之杯子中，發現裡面的油溢出300gw。已知油與鐵不相溶，且油的密度為$0.8\text{g/cm}^{3}$，則此鐵球所受浮力為多少？
+    to: 熊大家裡煮飯，眼見朋友將一密度為$7.87\text{g/cm}^{3}$的均質實心鐵球，放入盛滿油之杯子中，發現裡面的油溢出 300gw。已知油與鐵不相溶，且油的密度為
+      $0.8\text{g/cm}^{3}$，則此鐵球所受浮力為多少？
+    note: 漏了「在」字
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g9s2e2_s1_17
   section: 1
   number: 17

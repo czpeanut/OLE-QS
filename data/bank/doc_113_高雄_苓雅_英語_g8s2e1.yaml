@@ -619,17 +619,14 @@ questions:
   number: 34
   type: single
   page: 3
-  stem: "(   )34. Which sentence is CORRECT? \n       (A) Baseball is much popular\
-    \ than basketball in Taiwan. \n       (B) Emma’s bike is a little older than Sandra.\
-    \ \n       (C) Let’s listen to the latest news on the radio. \n       (D) The\
-    \ boys in the gym are stronger than that in the park."
+  stem: Which sentence is <u>CORRECT</u>?
   options:
   - label: A
     content: Baseball is much popular than basketball in Taiwan.
   - label: B
-    content: Emma’s bike is a little older than Sandra.
+    content: Emma's bike is a little older than Sandra.
   - label: C
-    content: Let’s listen to the latest news on the radio.
+    content: Let's listen to the latest news on the radio.
   - label: D
     content: The boys in the gym are stronger than that in the park.
   ai_answers:
@@ -649,6 +646,14 @@ questions:
       chapter: B4 八下
     textbook: 八下 英語 形容詞比較級（+er/more）+ than
     labeled_by: ai
+  errata:
+  - from: "(   )34. Which sentence is CORRECT? \n       (A) Baseball is much popular\
+      \ than basketball in Taiwan. \n       (B) Emma’s bike is a little older than\
+      \ Sandra. \n       (C) Let’s listen to the latest news o"
+    to: Which sentence is <u>CORRECT</u>?
+    note: 題幹多擷取了選項內容
+    by: review
+    extraction: true
 - id: doc_113_高雄_苓雅_英語_g8s2e1_s2_35
   section: 2
   number: 35

@@ -832,7 +832,7 @@ questions:
   - label: A
     content: 此地「風光」明媚，林木蓊鬱，受到中外遊客的喜愛／光彩
   - label: B
-    content: 球賽上，球技高超的他連轉和對手打成平局，真是棋逢「敵手」／拿手
+    content: 球賽上，球技高超的他連續和對手打成平局，真是棋逢「敵手」／拿手
   - label: C
     content: 他曾多次走訪歐洲各地大小不一、風格「迥異」的古城／不同
   - label: D
@@ -856,12 +856,18 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列文句「 」中的詞語經替換後，何者意思不變？
+    to: 下列文句「 」中的詞語經替換後，何者意思不變？
+    note: 「連袂」誤擷為「連轉」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s1e1_s2_31
   section: 2
   number: 31
   type: single
   page: 2
-  stem: 何處虛空神州」為敘事句，下列何者與之相同？
+  stem: 「何處望神州」為敘事句，下列何者與之相同？
   options:
   - label: A
     content: 交友是一件有益的事
@@ -870,7 +876,7 @@ questions:
   - label: C
     content: 他總是散發出十足的魅力
   - label: D
-    content: 這座新開幕的購物中心人潮洶湧
+    content: 這座新開幕的購物中心人潮洶湧。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -890,6 +896,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 何處虛空神州」為敘事句，下列何者與之相同？
+    to: 「何處望神州」為敘事句，下列何者與之相同？
+    note: 漏前引號且「望」誤擷為「虛空」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s1e1_s2_32
   section: 2
   number: 32
@@ -1347,7 +1359,7 @@ questions:
   - label: A
     content: 謹慎避免用錯學習方式而造成不可挽回的錯誤
   - label: B
-    content: 創立屬於自己的獨特風格才算單學習上的成就
+    content: 創立屬於自己的獨特風格才算是學習上的成就
   - label: C
     content: 了解適合自己的方式與風格將能更有效地於學習
   - label: D
@@ -1388,6 +1400,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「學習方式並不會限制你，但將適合自己的學習風格融入，將會事半功倍。」這句話的涵義，與下列何者最接近？
+    to: 「學習方式並不會限制你，但將適合自己的學習風格融入，將會事半功倍。」這句話的涵義，與下列何者最接近？
+    note: 「是」誤擷為「單」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s1e1_s3_45
   section: 3
   number: 45
@@ -1495,7 +1513,7 @@ questions:
     content: 萬里傳信予征夫
   - label: D
     content: 靈鵲乃是吉祥物
-  group_stem: '巨耐靈鶴多謾語，送喜何曾有憑據？幾度飛來活捉取，鎖上金籠休共語。
+  group_stem: '巨耐靈鵲多謾語，送喜何曾有憑據？幾度飛來活捉取，鎖上金籠休共語。
 
     比擬好心來送喜，誰知鎖我在金籠裡。欲他征夫早歸來，騰身卻放我向青雲裡。
 
@@ -1525,6 +1543,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 這闋詞是透過靈鵲和思婦的對話來表達「閨怨」的主題。思婦將靈鵲鎖在金籠裡的原因最可能是下列何者？
+    to: 這闋詞是透過靈鵲和思婦的對話來表達「閨怨」的主題。思婦將靈鵲鎖在金籠裡的原因最可能是下列何者？
+    note: 「靈鵲」誤擷為「靈鶴」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s1e1_s3_48
   section: 3
   number: 48
@@ -1540,7 +1564,7 @@ questions:
     content: 物是人非，不堪回首
   - label: D
     content: 睹物思人，悲從中來
-  group_stem: '巨耐靈鶴多謾語，送喜何曾有憑據？幾度飛來活捉取，鎖上金籠休共語。
+  group_stem: '巨耐靈鵲多謾語，送喜何曾有憑據？幾度飛來活捉取，鎖上金籠休共語。
 
     比擬好心來送喜，誰知鎖我在金籠裡。欲他征夫早歸來，騰身卻放我向青雲裡。
 

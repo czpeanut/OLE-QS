@@ -71,7 +71,7 @@ questions:
   - label: A
     content: $-30^{2}+5^{2}$
   - label: B
-    content: $-30^{2}-30\times (-5)+(-5)^{2}$
+    content: $(-30)^{2}-30\times (-5)+(-5)^{2}$
   - label: C
     content: $(-30)^{2}-2\times (-30)\times (-5)+(-5)^{2}$
   - label: D
@@ -95,6 +95,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: $(-30-5)^{2}$ 與下列哪一個算式相等？
+    to: $(-30-5)^{2}$ 與下列哪一個算式相等？
+    note: 選項(B)開頭原卷有括號(-30)²
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_數學_g8s1e1_s1_3
   section: 1
   number: 3
@@ -105,7 +111,7 @@ questions:
   - label: A
     content: $c>a>b$
   - label: B
-    content: $c>b>a$
+    content: $b>c>a$
   - label: C
     content: $c>b>a$
   - label: D
@@ -129,6 +135,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若 $a=\sqrt{101}$，$b=10$，$c=\sqrt{102}$，則 $a$、$b$、$c$ 的大小關係為何？
+    to: 若 $a=\sqrt{101}$，$b=10$，$c=\sqrt{102}$，則 $a$、$b$、$c$ 的大小關係為何？
+    note: 選項(B)原卷為b>c>a
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_數學_g8s1e1_s1_4
   section: 1
   number: 4

@@ -586,7 +586,7 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 網站上一個網站，只要網友登錄會員，就可以看到色情影片，不需要任何證明。網站負責人未能防範未滿18歲的少年下載收看色情影片，此行為已經觸犯下列何法？
+  stem: 網路上一個網站，只要網友登錄會員，就可以看到色情影片，不需要任何證明。網站負責人未能防範未滿 18 歲的少年下載收看色情影片，此行為已經觸犯下列何法？
   options:
   - label: A
     content: 《兒童及少年性剝削防制條例》
@@ -616,12 +616,18 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 網站上一個網站，只要網友登錄會員，就可以看到色情影片，不需要任何證明。網站負責人未能防範未滿18歲的少年下載收看色情影片，此行為已經觸犯下列何法？
+    to: 網路上一個網站，只要網友登錄會員，就可以看到色情影片，不需要任何證明。網站負責人未能防範未滿 18 歲的少年下載收看色情影片，此行為已經觸犯下列何法？
+    note: 「網路上」誤作「網站上」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_公民_g8s2e3_s3_18
   section: 3
   number: 18
   type: single
   page: 1
-  stem: 20歲的小泰與他4歲的阿強結夥偷竊，而18歲的阿妙在一旁把風，三人被逮捕後，誰會被移送到少年法院（庭）？
+  stem: 20歲的小泰與他14歲的阿強結夥偷竊，而18歲的阿妙在一旁把風，三人被逮捕後，誰會被移送到少年法院（庭）？
   options:
   - label: A
     content: 小泰
@@ -651,6 +657,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 20歲的小泰與他4歲的阿強結夥偷竊，而18歲的阿妙在一旁把風，三人被逮捕後，誰會被移送到少年法院（庭）？
+    to: 20歲的小泰與他14歲的阿強結夥偷竊，而18歲的阿妙在一旁把風，三人被逮捕後，誰會被移送到少年法院（庭）？
+    note: 漏了「1」，14歲誤作4歲
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_公民_g8s2e3_s3_19
   section: 3
   number: 19
@@ -759,7 +771,7 @@ questions:
   number: 22
   type: single
   page: 1
-  stem: '暑假到了，幾個朋友相約打工，在報上看到以下徵啟事。根據法令規定，下列哪一個人符合應徵標準？
+  stem: '暑假到了，幾個朋友相約打工，在報上看到以下的一則應徵啟事。根據法令規定，下列哪一個人符合應徵標準？
 
     ■上班時間：晚上9點～12點 ■享勞、健保、加班費
 
@@ -792,6 +804,20 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '暑假到了，幾個朋友相約打工，在報上看到以下徵啟事。根據法令規定，下列哪一個人符合應徵標準？
+
+      ■上班時間：晚上9點～12點 ■享勞、健保、加班費
+
+      ■工作內容：搬運建材用料 ■能扛重物、體力佳者較適合'
+    to: '暑假到了，幾個朋友相約打工，在報上看到以下的一則應徵啟事。根據法令規定，下列哪一個人符合應徵標準？
+
+      ■上班時間：晚上9點～12點 ■享勞、健保、加班費
+
+      ■工作內容：搬運建材用料 ■能扛重物、體力佳者較適合'
+    note: 漏了「的一則應」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_公民_g8s2e3_s3_23
   section: 3
   number: 23
@@ -918,7 +944,7 @@ questions:
   stem: 關於行政處分的敘述，下列何者正確？
   options:
   - label: A
-    content: 行政處分的分內容只對人民不利
+    content: 行政處分的內容只對人民不利
   - label: B
     content: 罰金、罰鍰都是行政處分的範圍
   - label: C
@@ -944,6 +970,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於行政處分的敘述，下列何者正確？
+    to: 關於行政處分的敘述，下列何者正確？
+    note: 多打了「分」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_公民_g8s2e3_s3_27
   section: 3
   number: 27
@@ -983,7 +1015,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 少年法院（庭）的法官認為少年不宜由法定代理人繼續教養的情形時，可安置於適當的福利、教養機構、醫療機構、執行過渡性教育或其他適當措施之處所以加輔導。下列何者不屬於上述的機構？
+  stem: 少年法院（庭）的法官認為少年不宜由法定代理人繼續教養的情形時，可安置於適當的福利、教養機構、醫療機構、執行過渡性教育或其他適當措施之處所以予以輔導。下列何者不屬於上述的機構？
   options:
   - label: A
     content: 育幼院
@@ -1013,6 +1045,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 少年法院（庭）的法官認為少年不宜由法定代理人繼續教養的情形時，可安置於適當的福利、教養機構、醫療機構、執行過渡性教育或其他適當措施之處所以加輔導。下列何者不屬於上述的機構？
+    to: 少年法院（庭）的法官認為少年不宜由法定代理人繼續教養的情形時，可安置於適當的福利、教養機構、醫療機構、執行過渡性教育或其他適當措施之處所以予以輔導。下列何者不屬於上述的機構？
+    note: 「予以」誤作「以加」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_公民_g8s2e3_s3_29
   section: 3
   number: 29
@@ -1110,7 +1148,8 @@ questions:
     content: 《姓名條例》與《噪音管制法》皆屬行政法
   - label: D
     content: 政府限制人民改名的次數屬於濫權的行為。
-  group_stem: '某知名迴轉壽司連鎖店推出優惠活動，姓名含有「鮭魚」兩字者可免費用餐，活動消息暴得後陸續有民眾至戶政機關辦理改名，至活動結束為止，有超過300人以「鮭魚」兩字改名。部分民眾、媒體將響應活動改名的行為稱為「鮭魚之亂」。
+  group_stem: '某知名迴轉壽司連鎖店推出優惠活動，姓名含有「鮭魚」兩字者可免費用餐，活動消息曝光後陸續有民眾至戶政機關辦理改名，至活動結束為止，有超過
+    300 人以「鮭魚」兩字改名。部分民眾、媒體將響應活動改名的行為稱為「鮭魚之亂」。
 
     在臺灣，改名的規定是依據《姓名條例》，如字義粗俗不雅、音譯過長或有特殊原因可申請改名，以三次為限。其他事由如與三親等以內直系尊親屬名字完全相同，或因宗教因素出世或還俗等則沒有次數限制。'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1132,6 +1171,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據以下報導內容判斷，下列敘述何者正確？
+    to: 根據以下報導內容判斷，下列敘述何者正確？
+    note: 短文「曝光後」誤作「暴得後」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_公民_g8s2e3_s3_32
   section: 3
   number: 32
@@ -1244,7 +1289,7 @@ questions:
   - label: A
     content: 小峰將偷竊得來的手機當作生日禮物送給小芝
   - label: B
-    content: 父親拿刀並欠下鉅款，小君向法院聲請拋棄繼承
+    content: 父親過世並欠下鉅款，小君向法院聲請拋棄繼承
   - label: C
     content: 阿暴搶劫便利商店
   - label: D
@@ -1268,3 +1313,9 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列哪一種行為要負行政責任？
+    to: 下列哪一種行為要負行政責任？
+    note: 「過世」誤作「拿刀」
+    by: review
+    extraction: true

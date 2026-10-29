@@ -1074,8 +1074,8 @@ questions:
   type: fill
   page: 4
   stem: 如右圖，王董有一塊鈍角三角形 $ABC$ 的地，已知 $\overline{AB} = 12$ 公尺，$\overline{AC} = 8$ 公尺，且
-    $\triangle ABC$ 的面積為 24 平方公尺。他想要擴大土地面積，於是從 $\angle BAC$ 的外角拉一條角平分線，交 $\overline{BC}$
-    延長線於 $D$ 點，那麼他新擴的 $\triangle ACD$ 面積為何？
+    $\triangle ABC$ 的面積為 24 平方公尺。他想要擴大土地面積，於是從 $\angle BAC$ 的外角拉一條角平分線，交 $\overrightarrow{BC}$
+    於 $D$ 點，那麼他新擴的 $\triangle ACD$ 面積為何？
   assets:
   - key: s2_9_f1
     kind: figure
@@ -1110,6 +1110,16 @@ questions:
   - '48'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，王董有一塊鈍角三角形 $ABC$ 的地，已知 $\overline{AB} = 12$ 公尺，$\overline{AC} = 8$ 公尺，且
+      $\triangle ABC$ 的面積為 24 平方公尺。他想要擴大土地面積，於是從 $\angle BAC$ 的外角拉一條角平分線，交 $\overline{BC}$
+      延長線於 $D$ 點，那麼他新擴的 $\triangle ACD$ 面積為何？
+    to: 如右圖，王董有一塊鈍角三角形 $ABC$ 的地，已知 $\overline{AB} = 12$ 公尺，$\overline{AC} = 8$ 公尺，且
+      $\triangle ABC$ 的面積為 24 平方公尺。他想要擴大土地面積，於是從 $\angle BAC$ 的外角拉一條角平分線，交 $\overrightarrow{BC}$
+      於 $D$ 點，那麼他新擴的 $\triangle ACD$ 面積
+    note: 原卷為射線BC符號，擷取寫成BC延長線
+    by: review
+    extraction: true
 - id: doc_113_高雄_五福_數學_g9s1e3_s2_10
   section: 2
   number: 10

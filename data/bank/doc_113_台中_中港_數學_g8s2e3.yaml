@@ -343,7 +343,7 @@ questions:
   type: fill
   page: 1
   stem: 如圖(5)，在梯形$ABCD$中，$\overline{AD} // \overline{BC}$且兩腰中點連線段$\overline{EF}=15$，$\overline{AH}
-    // \overline{DC}$，$\overline{AH}$交$\overline{EF}$於$G$且交$\overline{BC}$於$H$，$BH=10$，則$\overline{AD}=$
+    // \overline{DC}$，$\overline{AH}$交$\overline{EF}$於$G$且交$\overline{BC}$於$H$，$\overline{BH}=10$，則$\overline{AD}=$
     ⑩ 。
   assets:
   - key: s1_10_f1
@@ -381,6 +381,15 @@ questions:
   - '10'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖(5)，在梯形$ABCD$中，$\overline{AD} // \overline{BC}$且兩腰中點連線段$\overline{EF}=15$，$\overline{AH}
+      // \overline{DC}$，$\overline{AH}$交$\overline{EF}$於$G$且交$\overline{BC}$於$H$，$BH=10$，則$\overline{AD}=$
+      ⑩ 。
+    to: 如圖(5)，在梯形$ABCD$中，$\overline{AD} // \overline{BC}$且兩腰中點連線段$\overline{EF}=15$，$\overline{AH}
+      // \overline{DC}$，$\overline{AH}$交$\overline{EF}$於$G$且交$\overline{BC}$於$H$，$\overline{BH}=10$，則$\overline{AD}
+    note: BH上方漏了線段記號
+    by: review
+    extraction: true
 - id: doc_113_台中_中港_數學_g8s2e3_s1_11
   section: 1
   number: 11
@@ -691,7 +700,7 @@ questions:
   number: 18
   type: fill
   page: 2
-  stem: 如圖(13)，將一長方形$ABCD$的紙條以$\overline{EF}$為摺線向下左摺疊，若$\angle DPB'=48^{\circ}$，則$\angle
+  stem: 如圖(13)，將一張長方形$ABCD$的紙條以$\overline{EF}$為摺線向左下摺疊，若$\angle DPB'=48^{\circ}$，則$\angle
     1=$ ⑱ 度。
   assets:
   - key: s2_18_f1
@@ -730,6 +739,14 @@ questions:
   - '66'
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 如圖(13)，將一長方形$ABCD$的紙條以$\overline{EF}$為摺線向下左摺疊，若$\angle DPB'=48^{\circ}$，則$\angle
+      1=$ ⑱ 度。
+    to: 如圖(13)，將一張長方形$ABCD$的紙條以$\overline{EF}$為摺線向左下摺疊，若$\angle DPB'=48^{\circ}$，則$\angle
+      1=$ ⑱ 度。
+    note: 漏「張」字，且「向左下」誤植為「向下左」
+    by: review
+    extraction: true
 - id: doc_113_台中_中港_數學_g8s2e3_s2_19
   section: 2
   number: 19

@@ -1330,12 +1330,12 @@ questions:
   number: 24
   type: single
   page: 3
-  stem: 桌球選手在揮拍時可以視為一圓周運動，若去除擊球時的拍面變化和球的旋轉可能。如下圖所示，小林想以垂直拍面方向將球擊出並讓球落在桌角乙處，使對手回球不及，則小林應在圓周中的a、b、c、d選擇哪一個點擊球最適宜?
+  stem: 桌球選手在揮拍時可以視為一圓周運動，若去除擊球時的拍面變化和球的旋轉可能。如下圖所示，小林想以垂直拍面方向將球擊出並讓球落在桌角乙處，使對手回球不及，則小林應在圓周中的a、b、c、d選擇哪一個點擊球最適宜？
   options:
   - label: A
     content: a
   - label: B
-    content: b
+    content: c
   - label: C
     content: c
   - label: D
@@ -1374,6 +1374,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 桌球選手在揮拍時可以視為一圓周運動，若去除擊球時的拍面變化和球的旋轉可能。如下圖所示，小林想以垂直拍面方向將球擊出並讓球落在桌角乙處，使對手回球不及，則小林應在圓周中的a、b、c、d選擇哪一個點擊球最適宜?
+    to: 桌球選手在揮拍時可以視為一圓周運動，若去除擊球時的拍面變化和球的旋轉可能。如下圖所示，小林想以垂直拍面方向將球擊出並讓球落在桌角乙處，使對手回球不及，則小林應在圓周中的a、b、c、d選擇哪一個點擊球最適宜？
+    note: 原卷選項(B)印為c，擷取擅改為b
+    by: review
+    extraction: true
 - id: doc_113_台中_向上_自然_g9s2e2_s1_25
   section: 1
   number: 25
@@ -1527,7 +1533,7 @@ questions:
   number: 28
   type: single
   page: 4
-  stem: 阿傑上實驗課時，使用一個安培計和一個伏特計來測量一個電阻器的電阻，則下列哪個電路的接線圖是錯誤的？(電路中的 为電阻器，且安培計的電阻可忽略)
+  stem: 阿傑上實驗課時，使用一個安培計和一個伏特計來測量一個電阻器的電阻，則下列哪個電路的接線圖是錯誤的？(電路中的○—■—○為電阻器，且安培計的電阻可忽略)
   options:
   - label: A
     content: ''
@@ -1619,6 +1625,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 阿傑上實驗課時，使用一個安培計和一個伏特計來測量一個電阻器的電阻，則下列哪個電路的接線圖是錯誤的？(電路中的 为電阻器，且安培計的電阻可忽略)
+    to: 阿傑上實驗課時，使用一個安培計和一個伏特計來測量一個電阻器的電阻，則下列哪個電路的接線圖是錯誤的？(電路中的○—■—○為電阻器，且安培計的電阻可忽略)
+    note: 漏電阻符號，且「為」誤作簡體「为」
+    by: review
+    extraction: true
 - id: doc_113_台中_向上_自然_g9s2e2_s1_29
   section: 1
   number: 29

@@ -698,8 +698,8 @@ questions:
   number: 2
   type: fill
   page: 2
-  stem: 如上中左圖，D、E、F為 $\triangle ABC$ 三邊的中點，P、Q、R為 $\triangle DEF$ 三邊的中點。若 $\triangle
-    PQR$ 的面積為 5，則 $\triangle ABC$ 的面積為＿＿＿＿
+  stem: 如上中左圖，D、E、F為 $\triangle ABC$ 三邊的中點，P、C、R為△DEF三邊的中點。若 $\triangle PQR$ 的面積為
+    5，則 $\triangle ABC$ 的面積為＿＿＿＿
   assets:
   - key: s3_2_f1
     kind: figure
@@ -736,6 +736,14 @@ questions:
   - '80'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如上中左圖，D、E、F為 $\triangle ABC$ 三邊的中點，P、Q、R為 $\triangle DEF$ 三邊的中點。若 $\triangle
+      PQR$ 的面積為 5，則 $\triangle ABC$ 的面積為＿＿＿＿
+    to: 如上中左圖，D、E、F為 $\triangle ABC$ 三邊的中點，P、C、R為△DEF三邊的中點。若 $\triangle PQR$ 的面積為
+      5，則 $\triangle ABC$ 的面積為＿＿＿＿
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「P、Q、R為 $\triangle DEF$ 三邊的中點」→「P、C、R為△DEF三邊的中點」
+    by: review
+    extraction: true
 - id: doc_113_台中_大甲_數學_g9s1e1_s3_3
   section: 3
   number: 3

@@ -522,8 +522,8 @@ questions:
   number: 2
   type: fill
   page: 2
-  stem: 如圖，$L_1 \parallel L_2$，若 $\angle 1 = 80^\circ$，$\angle 2 = 60^\circ$，且 $\overline{BO}$
-    平分 $\angle DBC$，則 $\angle 3 = $____②____度。
+  stem: 如圖，$L_1 // L_2$，若 $\angle 1 = 80^\circ$，$\angle 2 = 60^\circ$，且 $\vec{BO}$
+    平分 $\angle DBC$，則 $\angle 3 =$ ____②____度。
   assets:
   - key: s2_2_f1
     kind: figure
@@ -559,6 +559,14 @@ questions:
   - '10'
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 如圖，$L_1 \parallel L_2$，若 $\angle 1 = 80^\circ$，$\angle 2 = 60^\circ$，且 $\overline{BO}$
+      平分 $\angle DBC$，則 $\angle 3 = $____②____度。
+    to: 如圖，$L_1 // L_2$，若 $\angle 1 = 80^\circ$，$\angle 2 = 60^\circ$，且 $\vec{BO}$
+      平分 $\angle DBC$，則 $\angle 3 =$ ____②____度。
+    note: 原卷 BO 上方為射線符號（箭頭），擷取誤作線段
+    by: review
+    extraction: true
 - id: doc_111_高雄_大灣_數學_g8s2e3_s2_3
   section: 2
   number: 3

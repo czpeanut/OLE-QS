@@ -306,8 +306,7 @@ questions:
   number: 8
   type: single
   page: 2
-  stem: 如右圖，圓 $O$ 分別與 $\overline{AB}$、$\overline{BC}$ 和 $\overline{AC}$ 切於 $D$、$E$、$F$
-    三點，下列選項何者錯誤？
+  stem: 如右圖，圓 $O$ 分別與 $\vec{AB}$、$\overline{BC}$ 和 $\vec{AC}$ 切於 $D$、$E$、$F$ 三點，下列選項何者<u>錯誤</u>？
   options:
   - label: A
     content: $\triangle ABC$ 必為等腰 $\triangle$
@@ -351,6 +350,13 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，圓 $O$ 分別與 $\overline{AB}$、$\overline{BC}$ 和 $\overline{AC}$ 切於 $D$、$E$、$F$
+      三點，下列選項何者錯誤？
+    to: 如右圖，圓 $O$ 分別與 $\vec{AB}$、$\overline{BC}$ 和 $\vec{AC}$ 切於 $D$、$E$、$F$ 三點，下列選項何者<u>錯誤</u>？
+    note: 原卷AB與AC上方為射線符號，誤植為線段符號
+    by: review
+    extraction: true
 - id: doc_113_新北_五峰_數學_g9s1e2_s1_9
   section: 1
   number: 9

@@ -218,16 +218,16 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 判斷下列何者$y$ 不是$x$ 的函數。
+  stem: 判斷下列何者$y$不是$x$的函數。
   options:
   - label: A
-    content: 一張方形的面積為24，長為$x$，寬為$y$
+    content: 一長方形的面積為 24，長為 $x$，寬為 $y$
   - label: B
     content: 閏年中，$x$ 代表月分，$y$ 代表月分對應的天數
   - label: C
-    content: 小華用360 元購買飲料，若每杯飲料$x$ 元、錢數剛好可以購買$y$ 杯
+    content: 小華用 360 元購買飲料，若每杯飲料 $x$ 元、錢數剛好可以購買 $y$ 杯
   - label: D
-    content: 班上30 名學生的血型為$x$，座號為$y$
+    content: 班上 30 名學生的血型為 $x$，座號為 $y$
   tags:
     chapter:
       publisher: 翰林
@@ -245,6 +245,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 判斷下列何者$y$ 不是$x$ 的函數。
+    to: 判斷下列何者$y$不是$x$的函數。
+    note: 「長方形」誤植為「張方形」
+    by: review
+    extraction: true
 - id: doc_113_新北_丹鳳_數學_g8s2e1_s2_1
   section: 2
   number: 1

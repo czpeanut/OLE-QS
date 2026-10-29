@@ -314,7 +314,7 @@ questions:
   number: 3
   type: essay
   page: 1
-  stem: Please buy me some ice cream. (將畫線部分用代名詞改寫句子)
+  stem: Please buy <u>me some ice cream</u>. (將畫線部分用代名詞改寫句子)
   tags:
     textbook: 八上 英語 受格代名詞（me/you/him/her/it/us/them）
     labeled_by: ai
@@ -325,6 +325,12 @@ questions:
       code: B1-11
       title: 受格代名詞（me/you/him/her/it/us/them）
       chapter: B1 七上
+  errata:
+  - from: Please buy me some ice cream. (將畫線部分用代名詞改寫句子)
+    to: Please buy <u>me some ice cream</u>. (將畫線部分用代名詞改寫句子)
+    note: 原卷me some ice cream有畫底線，擷取未標示畫線處
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g8s1e1_s3_1
   section: 3
   number: 1
@@ -891,8 +897,8 @@ questions:
     content: Visiting Eternal Gold Castle.
   group_stem: '(一) How do you usually spend your weekend?
 
-    Don’t just stay at home, order in, or binge-watch. Try having a STAYCATION and
-    visit local attractions in one day. The followings are the schedule for Mike’s
+    Don’t just stay at home, order in, or binge-watch. Try having a <u>STAYCATION</u>
+    and visit local attractions in one day. The followings are the schedule for Mike’s
     and Judy’s trips last Saturday.
 
 
@@ -950,8 +956,8 @@ questions:
     content: Mike bought some popular snacks.
   group_stem: '(一) How do you usually spend your weekend?
 
-    Don’t just stay at home, order in, or binge-watch. Try having a STAYCATION and
-    visit local attractions in one day. The followings are the schedule for Mike’s
+    Don’t just stay at home, order in, or binge-watch. Try having a <u>STAYCATION</u>
+    and visit local attractions in one day. The followings are the schedule for Mike’s
     and Judy’s trips last Saturday.
 
 
@@ -997,11 +1003,11 @@ questions:
   number: 3
   type: single
   page: 3
-  stem: 'A STAYCATION means you don’t have to go far away from home or stay at a hotel,
-    and you can still enjoy a wonderful vacation.
+  stem: '<u>A STAYCATION</u> means you don’t have to go far away from home or stay
+    at a hotel, and you can still enjoy a wonderful vacation.
 
 
-    According to that, who DID’T have a staycation yesterday?'
+    According to that, who DIDN’T have a staycation yesterday?'
   options:
   - label: A
     content: 'Amy: went to a temple and learned about the history of it.'
@@ -1013,8 +1019,8 @@ questions:
     content: 'Alice: went to a zoo and saw many cute animals.'
   group_stem: '(一) How do you usually spend your weekend?
 
-    Don’t just stay at home, order in, or binge-watch. Try having a STAYCATION and
-    visit local attractions in one day. The followings are the schedule for Mike’s
+    Don’t just stay at home, order in, or binge-watch. Try having a <u>STAYCATION</u>
+    and visit local attractions in one day. The followings are the schedule for Mike’s
     and Judy’s trips last Saturday.
 
 
@@ -1055,6 +1061,20 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 'A STAYCATION means you don’t have to go far away from home or stay at a
+      hotel, and you can still enjoy a wonderful vacation.
+
+
+      According to that, who DID’T have a staycation yesterday?'
+    to: '<u>A STAYCATION</u> means you don’t have to go far away from home or stay
+      at a hotel, and you can still enjoy a wonderful vacation.
+
+
+      According to that, who DIDN’T have a staycation yesterday?'
+    note: DIDN'T漏擷取字母N變DID'T
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g8s1e1_s6_4
   section: 6
   number: 4

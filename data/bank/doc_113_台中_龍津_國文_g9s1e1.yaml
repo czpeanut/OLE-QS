@@ -74,7 +74,7 @@ questions:
   - label: B
     content: 「覬」覦：ㄐㄧˋ
   - label: C
-    content: 「悅」惜：ㄨㄟˋ
+    content: 「惋」惜：ㄨㄟˋ
   - label: D
     content: 天崩地「坼」：ㄔㄜˋ
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -95,6 +95,12 @@ questions:
     gemini_high: C
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 下列「 」中的字，何者讀音正確？
+    to: 下列「 」中的字，何者讀音正確？
+    note: 原卷為「惋」惜非「悅」惜
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_國文_g9s1e1_s1_3
   section: 1
   number: 3
@@ -275,11 +281,11 @@ questions:
   stem: 下列「 」中的成語何者使用錯誤？
   options:
   - label: A
-    content: 這個工作團隊因為成員彼此互不信任，「補起藩籬」，終於解散了
+    content: 這個工作團隊因為成員彼此互不信任，「築起藩籬」，終於解散了
   - label: B
     content: 小疏忽往往釀成大禍，曲突徙薪才是「防微杜漸」的作法
   - label: C
-    content: 為了避免兔死狗烹的偶覬，他決定將這批價值連城的古董「玉石俱焚」，一把火通通燒了
+    content: 為了避免兔死狗烹的命運，他決定將這批價值連城的古董「玉石俱焚」，一把火通通燒了
   - label: D
     content: 這部電影中「烽火連天」、民不聊生的場景，拍攝得十分逼真
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -302,6 +308,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 下列「 」中的成語何者使用錯誤？
+    to: 下列「 」中的成語何者使用錯誤？
+    note: 原卷為「築起」藩籬非「補起」；原卷為「命運」非「偶覬」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_國文_g9s1e1_s1_9
   section: 1
   number: 9
@@ -580,14 +592,14 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 「年少萬兜鍪，坐斷東南戰未休。」孫權年紀輕輕即便領千軍萬馬，雄霸江東，諷刺了南宋未能的現況。下列選項，何者同樣具有諷刺意味？
+  stem: 「年少萬兜鍪，坐斷東南戰未休。」孫權年紀輕輕即便領千軍萬馬，雄霸江東，諷刺了南宋無能的現況。下列選項，何者同樣具有諷刺意味？
   options:
   - label: A
     content: 這是全民的勝利，並非我一人之力
   - label: B
     content: 你真大方啊！連這點錢都要計較
   - label: C
-    content: 你放心吧！女大十八變，變張靚面笛
+    content: 你放心吧！女大十八變，越變越美麗
   - label: D
     content: 娘（涼）什麼！老子都不老子呀！
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -609,6 +621,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「年少萬兜鍪，坐斷東南戰未休。」孫權年紀輕輕即便領千軍萬馬，雄霸江東，諷刺了南宋未能的現況。下列選項，何者同樣具有諷刺意味？
+    to: 「年少萬兜鍪，坐斷東南戰未休。」孫權年紀輕輕即便領千軍萬馬，雄霸江東，諷刺了南宋無能的現況。下列選項，何者同樣具有諷刺意味？
+    note: 原卷為「無能」非「未能」；原卷為「越變越美麗」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_國文_g9s1e1_s2_18
   section: 2
   number: 18
@@ -1091,12 +1109,12 @@ questions:
   number: 32
   type: single
   page: 3
-  stem: 「有一天，被迫停下來／也願晌成一大片／寬厚的土地」下列哪一選項可以形容這樣的心神？
+  stem: 「有一天，被迫停下來／也願躺成一大片／寬厚的土地」下列哪一選項可以形容這樣的心神？
   options:
   - label: A
     content: 生於憂患，死於安樂
   - label: B
-    content: 人飢己飢，搶己為人
+    content: 人飢己飢，捨己為人
   - label: C
     content: 鞠躬盡瘁，死而後已
   - label: D
@@ -1121,6 +1139,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 「有一天，被迫停下來／也願晌成一大片／寬厚的土地」下列哪一選項可以形容這樣的心神？
+    to: 「有一天，被迫停下來／也願躺成一大片／寬厚的土地」下列哪一選項可以形容這樣的心神？
+    note: 原卷為「躺成」非「晌成」；原卷為「捨己為人」非「搶己為人」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_國文_g9s1e1_s2_33
   section: 2
   number: 33
@@ -1160,7 +1184,7 @@ questions:
   number: 34
   type: single
   page: 3
-  stem: 「昨夜雨疏風驟，濃睡不消殘酒。試問捲簾人，卻道海棠依舊。知否？知否？應是綠肥紅瘦。」（李清照如夢令）關於這闕詞的說明，下列何者正確？
+  stem: 「昨夜雨疏風驟，濃睡不消殘酒。試問捲簾人，卻道海棠依舊。知否？知否？應是綠肥紅瘦。」（李清照如夢令）關於這闋詞的說明，下列何者正確？
   options:
   - label: A
     content: 「試問捲簾人」表現作者對海棠花凋零的關注
@@ -1189,6 +1213,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「昨夜雨疏風驟，濃睡不消殘酒。試問捲簾人，卻道海棠依舊。知否？知否？應是綠肥紅瘦。」（李清照如夢令）關於這闕詞的說明，下列何者正確？
+    to: 「昨夜雨疏風驟，濃睡不消殘酒。試問捲簾人，卻道海棠依舊。知否？知否？應是綠肥紅瘦。」（李清照如夢令）關於這闋詞的說明，下列何者正確？
+    note: 原卷為「闋」非「闕」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_國文_g9s1e1_s3_35
   section: 3
   number: 35

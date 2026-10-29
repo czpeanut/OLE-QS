@@ -662,16 +662,16 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 若甲元素原子對乙原子的原子質量比為 3：2，而乙元素對碳原子的質量比為 4：3，則：甲元素的原子量為？乙元素的原子量為？
+  stem: 若甲元素原子對乙元素的原子質量比為 $3:2$，而乙元素對碳原子的質量比為 $4:3$，則：甲元素的原子量為？乙元素的原子量為？
   options:
   - label: A
-    content: 甲＝24；乙＝16
+    content: 甲$=24$；乙$=16$
   - label: B
-    content: 甲＝16；乙＝24
+    content: 甲$=16$；乙$=24$
   - label: C
-    content: 甲＝4；乙＝9
+    content: 甲$=4$；乙$=9$
   - label: D
-    content: 甲＝9；乙＝4。
+    content: 甲$=9$；乙$=4$。
   answer:
   - A
   answer_source: answer_key_vlm
@@ -688,6 +688,12 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 若甲元素原子對乙原子的原子質量比為 3：2，而乙元素對碳原子的質量比為 4：3，則：甲元素的原子量為？乙元素的原子量為？
+    to: 若甲元素原子對乙元素的原子質量比為 $3:2$，而乙元素對碳原子的質量比為 $4:3$，則：甲元素的原子量為？乙元素的原子量為？
+    note: 「乙元素」誤植為「乙原子」
+    by: review
+    extraction: true
 - id: doc_111_桃園_中興_自然_g8s2e1_s1_20
   section: 1
   number: 20

@@ -431,7 +431,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 承小題，此人當年到哪一座城市查扣非法的鴉片呢？
+  stem: 承上題，此人當年到哪一座城市查扣非法的鴉片呢？
   options:
   - label: A
     content: 上海
@@ -459,6 +459,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 承小題，此人當年到哪一座城市查扣非法的鴉片呢？
+    to: 承上題，此人當年到哪一座城市查扣非法的鴉片呢？
+    note: 「承上題」誤植為「承小題」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_歷史_g8s1e3_s1_13
   section: 1
   number: 13
@@ -515,7 +521,7 @@ questions:
   type: single
   page: 1
   stem: 2022 全球瘋世足，卡達卯足全力舉辦本屆世界盃足球賽，其中的競爭最激烈的死亡之組 E 組，（分別是西班牙、哥斯大黎加、德國、日本）更是全球矚目焦點所在，請問這
-    E 組四個國家，曾參與過八國聯軍的有機國？
+    E 組四個國家，曾參與過八國聯軍的有幾國？
   options:
   - label: A
     content: '3'
@@ -545,6 +551,14 @@ questions:
     gemini: B
     qwen: B
   answer_status: disputed
+  errata:
+  - from: 2022 全球瘋世足，卡達卯足全力舉辦本屆世界盃足球賽，其中的競爭最激烈的死亡之組 E 組，（分別是西班牙、哥斯大黎加、德國、日本）更是全球矚目焦點所在，請問這
+      E 組四個國家，曾參與過八國聯軍的有機國？
+    to: 2022 全球瘋世足，卡達卯足全力舉辦本屆世界盃足球賽，其中的競爭最激烈的死亡之組 E 組，（分別是西班牙、哥斯大黎加、德國、日本）更是全球矚目焦點所在，請問這
+      E 組四個國家，曾參與過八國聯軍的有幾國？
+    note: 「有幾國」誤植為「有機國」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_歷史_g8s1e3_s1_15
   section: 1
   number: 15

@@ -748,9 +748,7 @@ questions:
   number: 33
   type: single
   page: 3
-  stem: '二、題組測驗(每題 2 分，共 40 分)
-
-    33. What does them mean in Carlin''s diary?'
+  stem: 33. What does <u>them</u> mean in Carlin’s diary?
   options:
   - label: A
     content: The interesting stories of Tainan.
@@ -780,6 +778,32 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: "[33- 35]\n\n**Carlin’s overseas working diary**\t**2024.06.23**\n\n\
+    Being an international volunteer in Tainan, this was my first weekend holiday\
+    \ during the volunteer period here. I was happy to have some free time to walk\
+    \ around and try more food in this beautiful city.\n\nTainan is one of the oldest\
+    \ cities in Taiwan and is famous for its historical sites and delicious food.\
+    \ I started my day by visiting the *Chihkan Tower*. The Dutch built this old building\
+    \ in the 17th century. The tower has a beautiful garden and a great view of the\
+    \ city. Then, I went to *Koxinga Shrine*. Koxinga was the hero fighting to drive\
+    \ out the Dutch from Taiwan. *Anping District* was also a good spot to stop by.\
+    \ I enjoyed the peaceful atmosphere at these historical places and learned a lot\
+    \ of interesting stories about Tainan.\n\nTainan really is a food lover’s paradise!\
+    \ When I was hungry, I tried some local dishes below this weekend and shared the\
+    \ photos of <u>them</u> with my family.\n\nThe taste of these dishes was amazing!\
+    \ By the end of the weekend, I felt so full and happy to enjoy these yummy dishes.\n\
+    \nTainan is full of history, and the food is so delicious, too. My family will\
+    \ come to visit me next month. I just can’t wait to take them to experience the\
+    \ magic power of Tainan.\n\n\U0001F4D6 overseas 海外的 international 國際的 volunteer\
+    \ 志工 the Dutch 荷蘭人 atmosphere 氣氛 local 當地的 sauce 醬料 ginger 薑 crispy 酥脆的"
+  errata:
+  - from: '二、題組測驗(每題 2 分，共 40 分)
+
+      33. What does them mean in Carlin''s diary?'
+    to: 33. What does <u>them</u> mean in Carlin’s diary?
+    note: 漏擷取第33-35題題組閱讀短文及圖片
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_英語_g8s1e3_s2_34
   section: 2
   number: 34
@@ -919,7 +943,7 @@ questions:
   number: 36
   type: single
   page: 4
-  stem: 36. The Lin family finished signing up Tainan 400 Marathon on September 29th.
+  stem: The Lin family finished signing up Tainan 400 Marathon on September 29th.
     Mr. and Mrs. Lin will join the full marathon. Their elementary school son will
     take part in the glory group. How much did they pay?
   options:
@@ -951,6 +975,36 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: "[36-38 ]\n### TAINAN 400 MARATHON\n**Date:** 6:00 am, Sunday, November\
+    \ $24^{\\text{th}}$, 2024  \n**Place:** Xinying Stadium  \n**Award:** Medals and\
+    \ rich gifts for the finishers.  \n\nTo celebrate Tainan's 400th anniversary in\
+    \ 2024, the city will host the Tainan 400 marathon. The theme \"*Tainan Together,\
+    \ Embracing the World*\" invites runners from around the world to experience Tainan's\
+    \ unique charm. The race will take runners through the five camps of Zheng Chenggong—Xinying,\
+    \ Jiuying, Xiaying, Zhongying, and Liuying. *Join us soon and win the great prizes!*\n\
+    \n| | Full Marathon (42 KM) | Half Marathon (21 KM) | Glory Group (5 KM) |\n|\
+    \ :--- | :---: | :---: | :---: |\n| **Price** | NT$1,400 | NT$1,000 | NT$600 |\n\
+    | **Age** | People under 18 are not allowed. | People under 18 are not allowed.\
+    \ | All ages<br>(under 18 with parents' permission) |\n| **Time Limit** | 6 Hours\
+    \ 30 minutes | 4 Hours | 1.5 Hours |\n| **Finisher Gifts** | Finisher Medal, Finisher\
+    \ E-certificate, Finisher Bag, Cotton T-shirt, Stickers | Finisher Medal, Finisher\
+    \ E-certificate, Finisher Bag, Cotton T-shirt, Stickers | Finisher Medal, Finisher\
+    \ E-certificate, Finisher Bag, Finisher Towel, Stickers |\n\n☆Join us here : https://www.joinnow.com.tw/\n\
+    1. Sign up before October $1^{\\text{st}}$, and you just need to pay half price.\
+    \ What's more, you may have a chance to win an Apple Watch SE.\n2. Be sure to\
+    \ sign up before October $20^{\\text{th}}$.\n\n**Service hotline: 0976-885-420\
+    \ (*please call during the period of 13:00~20:00*)**\n\n medal 獎章 anniversary\
+    \ 週年 host 主辦 embrace 擁抱 charm 魅力 allow 允許 permission 同意"
+  errata:
+  - from: '36. The Lin family finished signing up Tainan 400 Marathon on September
+      29th. Mr. and Mrs. Lin will join the full marathon. Their elementary school
+      son will take part in the glory group. How much did '
+    to: The Lin family finished signing up Tainan 400 Marathon on September 29th.
+      Mr. and Mrs. Lin will join the full marathon. Their elementary school son will
+      take part in the glory group. How much did they
+    note: 漏擷取第36-38題題組說明與路跑資訊表格
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_英語_g8s1e3_s2_37
   section: 2
   number: 37
@@ -1189,8 +1243,8 @@ questions:
   number: 42
   type: single
   page: 5
-  stem: 42. Which is the main reason why Adam likes living in Taiwan according to
-    the dialogue?
+  stem: Which is the main reason why Adam likes living in Taiwan according to the
+    dialogue?
   options:
   - label: A
     content: Food and drinks.
@@ -1219,6 +1273,48 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: 'Adam: Hey, Hailey! This is my third year in Taiwan. Do you know what
+    I love about living here?
+
+    Hailey: What is it, Adam? Is it the food?
+
+    Adam: Well, the food is great, but I''m talking about the convenience stores!
+    They''re everywhere --- 7-Eleven, Family Mart, Hi-Life, and OK Mart.
+
+    Hailey: Oh, I know! You can find one on almost every street corner. Why do you
+    like them?
+
+    Adam: They''re not just for snacks and drinks. Did you know you can pay bills,
+    buy train tickets, and even send packages there?
+
+    Hailey: Really? That''s so convenient! And they''re open 24/7, right?
+
+    Adam: You bet! Thanks to that, I am able to get something late at night or early
+    in the morning.
+
+    Hailey: How about the food? Have you tried anything special from the convenience
+    stores?
+
+    Adam: Yum! The food, like rice balls and lunch boxes, is tasty and not expensive.
+    I can always get a quick meal there when I don''t have time.
+
+    Hailey: Same here. See! Here is a bar chart showing why Taiwanese people like
+    convenience stores. Their opinions are similar to us!
+
+    Hailey: Well, people in Taiwan just can''t live without them! They truly help
+    a lot in our lives.
+
+
+    📖 bill 帳單  opinion 意見  similar 相似  location 地點  variety 多樣化  affordable 負擔的起  staff
+    員工'
+  errata:
+  - from: 42. Which is the main reason why Adam likes living in Taiwan according to
+      the dialogue?
+    to: Which is the main reason why Adam likes living in Taiwan according to the
+      dialogue?
+    note: 漏擷取第42-44題題組對話及長條圖
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_英語_g8s1e3_s2_43
   section: 2
   number: 43
@@ -1305,7 +1401,27 @@ questions:
     content: Would you like to design your own sneakers?
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
-  group_stem: 【Part II】紙筆測驗：80%
+  group_stem: 'A: Joe, your new sneakers look great on you!
+
+    B: Thanks. They are Under Armour’s new product of shoes. A 3D printer made them.
+
+    A: Did you say “3D-printed shoes”? Wow, that’s cool! How much did you spend on
+    them? _____45._____
+
+    B: Not really. The technology of 3D printing makes the production process easier
+    and faster. Because of that, the prices of the shoes become low. By the way, I
+    paid in cash and got 30% off.
+
+    A: That’s nice. I hope there will also be a 3D printer for houses. Then, _____46._____
+    What’s more, the houses won’t be so expensive. Common people like me will be able
+    to buy _____47._____.
+
+    B: Guess what? Your dream may already _____48._____! I read some news. It happened
+    in Kenya!
+
+    A: Are you serious? That would be wonderful!
+
+     technology 科技 production 生產 process 流程 cash 現金 common 普通的'
   tags:
     textbook: 八上 英語 對話與情境應答
     labeled_by: ai
@@ -1324,6 +1440,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '45.'
+    to: '45.'
+    note: 漏擷取第45-48題題組克漏字對話短文
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_英語_g8s1e3_s2_46
   section: 2
   number: 46
@@ -1448,7 +1570,18 @@ questions:
     content: break down
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
-  group_stem: 【Part II】紙筆測驗：80%
+  group_stem: "I am so happy that winter vacation is coming! Finally, I can <u>49.</u>\
+    \ from schoolwork. My parents decided to take me on a trip abroad to Japan. I\
+    \ am looking forward to it because I love Japan and there are so many things I\
+    \ want to do there.\n\tFirst, Japan <u>50.</u> its anime. I am a big fan of the\
+    \ comics *One Piece* and just can't wait to go shopping for some action figures\
+    \ in Akiba. Besides, I plan to visit famous places like temples and gardens and\
+    \ see as much beautiful scenery as I can. Of course, I won't miss a hot spring.\
+    \ It will be so nice to relax in the warm water in the cold winter.\n\t<u>51.</u>\
+    \ food, I really want to try Japanese dishes like sushi, ramen, and takoyaki.\
+    \ I've heard they are so delicious! I hope to have many fun memories and souvenirs\
+    \ <u>52.</u> the trip. This trip is going to be an unforgettable experience in\
+    \ my life!\n\U0001F4D6 anime 動漫 action figure 公仔 souvenir 紀念品"
   tags:
     textbook: 八上 英語 片語與慣用語
     labeled_by: ai
@@ -1467,6 +1600,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '49.'
+    to: '49.'
+    note: 漏擷取第49-52題題組克漏字短文
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_英語_g8s1e3_s2_50
   section: 2
   number: 50

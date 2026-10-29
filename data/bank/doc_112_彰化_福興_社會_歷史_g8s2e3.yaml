@@ -453,7 +453,7 @@ questions:
   - label: A
     content: 戰爭期間中國收回清末條約喪失的主權
   - label: B
-    content: 開羅宣言聲明日本地應將台灣歸還中華民國
+    content: 開羅宣言聲明日本應將台澎歸還中華民國
   - label: C
     content: 戰爭期間中國首都都在南京
   - label: D
@@ -477,6 +477,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini-only
+  errata:
+  - from: 關於中日戰爭的相關史實，何者需要修正？
+    to: 關於中日戰爭的相關史實，何者需要修正？
+    note: 選項(B)多出「地」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_歷史_g8s2e3_s1_14
   section: 1
   number: 14
@@ -942,7 +948,7 @@ questions:
   number: 27
   type: single
   page: 2
-  stem: 文化大革命不但在大陸境內造成深遠的影響，也對世界也造成一定程度的衝擊。請問：下列何者不是文革造成的影響？
+  stem: 文化大革命不但在中國境內造成深遠的影響，也對世界也造成一定程度的衝擊。請問：下列何者<u>不是</u>文革造成的影響？
   options:
   - label: A
     content: 擴大援助亞、非、拉丁美洲的共產武裝勢力
@@ -971,6 +977,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 文化大革命不但在大陸境內造成深遠的影響，也對世界也造成一定程度的衝擊。請問：下列何者不是文革造成的影響？
+    to: 文化大革命不但在中國境內造成深遠的影響，也對世界也造成一定程度的衝擊。請問：下列何者<u>不是</u>文革造成的影響？
+    note: 原卷為「中國境內」，誤作「大陸境內」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_歷史_g8s2e3_s1_28
   section: 1
   number: 28

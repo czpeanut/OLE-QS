@@ -166,7 +166,7 @@ questions:
   stem: 西周時一位住在城中的貴族，下列何者最可能是他的生活情況？
   options:
   - label: A
-    content: 依照身份等級，受到土地和階級
+    content: 依照身份等級，受封土地和人民
   - label: B
     content: 乘坐馬車到太學巡視
   - label: C
@@ -192,6 +192,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 西周時一位住在城中的貴族，下列何者最可能是他的生活情況？
+    to: 西周時一位住在城中的貴族，下列何者最可能是他的生活情況？
+    note: 「受封」錯成「受到」，「人民」錯成「階級」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍井_社會_歷史_g8s1e1_s1_6
   section: 1
   number: 6
@@ -969,7 +975,7 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: 「君王集軍政大權於一身，其下有輔助推動政務的宰相，以及漸趨系統化和專業化的文武官員，地方上的郡縣長官也由君王直接任命。這些大小官員大部分不再是憑藉血緣世襲的封建貴族，而是平民出身的士學之士。」上文最能說明中國歷史上何種情況的發展？
+  stem: 「君王集軍政大權於一身，其下有輔助推動政務的宰相，以及漸趨系統化和專業化的文武官員，地方上的郡縣長官也由君王直接任命。這些大小官員大部分不再是憑藉血緣世襲的封建貴族，而是平民出身的士人。」上文最能說明中國歷史上何種情況的發展？
   options:
   - label: A
     content: 封建的建立
@@ -998,6 +1004,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「君王集軍政大權於一身，其下有輔助推動政務的宰相，以及漸趨系統化和專業化的文武官員，地方上的郡縣長官也由君王直接任命。這些大小官員大部分不再是憑藉血緣世襲的封建貴族，而是平民出身的士學之士。」上文最能說明中國歷史上何種情況的發展？
+    to: 「君王集軍政大權於一身，其下有輔助推動政務的宰相，以及漸趨系統化和專業化的文武官員，地方上的郡縣長官也由君王直接任命。這些大小官員大部分不再是憑藉血緣世襲的封建貴族，而是平民出身的士人。」上文最能說明中國歷史上何種情況的發展？
+    note: 「士人」錯辨為「士學之士」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍井_社會_歷史_g8s1e1_s1_27
   section: 1
   number: 27
@@ -1037,7 +1049,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 東周時代，秦國任用何人變法，推行法治，獎勵軍功，以法治教信天下，使得秦國成為當時最強大的國家？
+  stem: 東周時代，秦國任用何人變法，推行法治，獎勵軍功，以法治教化天下，使得秦國成為當時最強大的國家？
   options:
   - label: A
     content: 歲政
@@ -1066,6 +1078,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 東周時代，秦國任用何人變法，推行法治，獎勵軍功，以法治教信天下，使得秦國成為當時最強大的國家？
+    to: 東周時代，秦國任用何人變法，推行法治，獎勵軍功，以法治教化天下，使得秦國成為當時最強大的國家？
+    note: 「化」錯成「信」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍井_社會_歷史_g8s1e1_s1_29
   section: 1
   number: 29
@@ -1105,7 +1123,7 @@ questions:
   number: 30
   type: single
   page: 2
-  stem: 秦漢兩朝對中國歷史影響深遠，關於兩者在政制制度上的敘述，下列何者正確？
+  stem: 秦漢兩朝對中國歷史影響深遠，關於兩者在政治制度上的敘述，下列何者正確？
   options:
   - label: A
     content: 兩者都推廣儒學
@@ -1134,6 +1152,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 秦漢兩朝對中國歷史影響深遠，關於兩者在政制制度上的敘述，下列何者正確？
+    to: 秦漢兩朝對中國歷史影響深遠，關於兩者在政治制度上的敘述，下列何者正確？
+    note: 「政治」錯成「政制」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍井_社會_歷史_g8s1e1_s1_31
   section: 1
   number: 31
@@ -1207,7 +1231,7 @@ questions:
   number: 33
   type: single
   page: 2
-  stem: 魏晉南北朝時代，門第排序非常受到重視，連皇帝都必須南北妥協。請問這樣的門第排序應是受下列何種制度影響的？
+  stem: 魏晉南北朝時代，門第排序非常受到重視，連皇帝都必須為其妥協。請問這樣的門第排序應是受下列何種制度影響的？
   options:
   - label: A
     content: 察舉制度
@@ -1236,12 +1260,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 魏晉南北朝時代，門第排序非常受到重視，連皇帝都必須南北妥協。請問這樣的門第排序應是受下列何種制度影響的？
+    to: 魏晉南北朝時代，門第排序非常受到重視，連皇帝都必須為其妥協。請問這樣的門第排序應是受下列何種制度影響的？
+    note: 「為其妥協」錯成「南北妥協」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍井_社會_歷史_g8s1e1_s1_34
   section: 1
   number: 34
   type: single
   page: 2
-  stem: 雅芬正在看一本歷史小說，書中描述某城市中人們以欣賞牡丹為樂，酒肆裡有胡姬侍陪，飲的是葡萄酒，吃的是胡餅，聽的是琵琶與箜篌，看的是胡旋舞，往來客商人有食、中國人、日本商人、西域胡人等等好不熱鬧。街上的婦女有做胡裝打扮的，也有身穿中個服飾的，也有那引人注目的小姑娘畫上胡妝，整個國族抹的紅豔豔的。請問：上述狀況最可能發生在何時？
+  stem: 雅芬正在看一本歷史小說，書中描述某城市中人們以欣賞牡丹為樂，酒肆裡有胡姬侍陪，飲的是葡萄酒，吃的是胡餅，聽的是琵琶與箜篌，看的是胡旋舞，往來客商人有大食人、中國人、日本商人、西域胡人等等好不熱鬧。街上的婦女有做胡裝打扮的，也有身穿中國服飾的，也有那引人注目的小姑娘畫上胡妝，整個面頰抹的紅豔豔的。請問：上述狀況最可能發生在何時？
   options:
   - label: A
     content: 秦朝
@@ -1270,12 +1300,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 雅芬正在看一本歷史小說，書中描述某城市中人們以欣賞牡丹為樂，酒肆裡有胡姬侍陪，飲的是葡萄酒，吃的是胡餅，聽的是琵琶與箜篌，看的是胡旋舞，往來客商人有食、中國人、日本商人、西域胡人等等好不熱鬧。街上的婦女有做胡裝打扮的，也有身穿中個服飾的，也有那引人注目的小姑娘畫上胡妝，整個國族抹的紅豔豔的。請問：上述狀況最可能發生在何時？
+    to: 雅芬正在看一本歷史小說，書中描述某城市中人們以欣賞牡丹為樂，酒肆裡有胡姬侍陪，飲的是葡萄酒，吃的是胡餅，聽的是琵琶與箜篌，看的是胡旋舞，往來客商人有大食人、中國人、日本商人、西域胡人等等好不熱鬧。街上的婦女有做胡裝打扮的，也有身穿中國服飾的，也有那引人注目的小姑娘畫上胡妝，整個面頰抹的紅豔豔的。請問：上述狀況最可能發生在何時？
+    note: 「有大食人」錯辨、「中國」錯成「中個」、「面頰」錯成「國族」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍井_社會_歷史_g8s1e1_s1_35
   section: 1
   number: 35
   type: single
   page: 2
-  stem: 西元311年，胡族匈奴人攻陷西晉首都洛陽，史稱「永嘉之禍」，下列何者非「永嘉之禍」以後的歷史發展無關？
+  stem: 西元311年，胡族匈奴人攻陷西晉首都洛陽，史稱「永嘉之禍」，下列何者與「永嘉之禍」以後的歷史發展無關？
   options:
   - label: A
     content: 封建制度就此沒落，平民崛起
@@ -1304,6 +1340,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 西元311年，胡族匈奴人攻陷西晉首都洛陽，史稱「永嘉之禍」，下列何者非「永嘉之禍」以後的歷史發展無關？
+    to: 西元311年，胡族匈奴人攻陷西晉首都洛陽，史稱「永嘉之禍」，下列何者與「永嘉之禍」以後的歷史發展無關？
+    note: 「與」錯成「非」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍井_社會_歷史_g8s1e1_s1_36
   section: 1
   number: 36
@@ -1316,7 +1358,7 @@ questions:
   - label: B
     content: 身毒
   - label: C
-    content: 伊明
+    content: 伊朗
   - label: D
     content: 羅馬帝國。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1338,6 +1380,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 漢朝的絲綢之路東起長安，西至大秦。請問：漢朝所稱的「大秦」是指當時哪一個國家？
+    to: 漢朝的絲綢之路東起長安，西至大秦。請問：漢朝所稱的「大秦」是指當時哪一個國家？
+    note: 選項C「朗」錯辨為「明」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍井_社會_歷史_g8s1e1_s1_37
   section: 1
   number: 37
@@ -1411,12 +1459,12 @@ questions:
   number: 39
   type: single
   page: 2
-  stem: 東周時期，各國為追求國家壯大紛紛在國內實施改革，然而秦滅諸權之後又創造了許多有利於統一個機制，影響之後的兩千年的中國歷史。請問：所謂「利於統一的機制」並不包括以下何者？
+  stem: 東周時期，各國為追求國家壯大紛紛在國內實施改革，然而秦滅諸侯之後又創造了許多有利於統一的機制，影響之後的兩千年的中國歷史。請問：所謂「利於統一的機制」並不包括以下何者？
   options:
   - label: A
     content: 以科舉考選人才
   - label: B
-    content: 推行縣制
+    content: 推行郡縣制
   - label: C
     content: 控制文化思想
   - label: D
@@ -1440,6 +1488,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 東周時期，各國為追求國家壯大紛紛在國內實施改革，然而秦滅諸權之後又創造了許多有利於統一個機制，影響之後的兩千年的中國歷史。請問：所謂「利於統一的機制」並不包括以下何者？
+    to: 東周時期，各國為追求國家壯大紛紛在國內實施改革，然而秦滅諸侯之後又創造了許多有利於統一的機制，影響之後的兩千年的中國歷史。請問：所謂「利於統一的機制」並不包括以下何者？
+    note: 「諸侯」錯成「諸權」、「統一的」錯成「統一個」、選項B漏「郡」字
+    by: review
+    extraction: true
 - id: doc_113_台中_龍井_社會_歷史_g8s1e1_s1_40
   section: 1
   number: 40

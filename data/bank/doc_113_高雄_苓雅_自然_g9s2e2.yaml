@@ -742,14 +742,14 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 在苓雅國中理化實驗室利用水銀(密度13.6 $\text{gw/cm}^{3}$)做托里切利實驗，若A點上方為真空，將試管分別垂直和傾斜放置如右圖之甲、乙，則下列敘述何者錯誤？
+  stem: 在苓雅國中理化實驗室利用水銀(密度$13.6\text{ gw/cm}^2$)做托里切利實驗，若A點上方為真空，將試管分別垂直和傾斜放置如右圖之甲、乙，則下列敘述何者<u>錯誤</u>？
   options:
   - label: A
     content: C點上方接近真空
   - label: B
-    content: B點所受的壓力為$1033.6\text{gw/cm}^{2}$
+    content: B點所受的壓力為$1033.6\text{gw/cm}^2$
   - label: C
-    content: 若將實驗裝置移到阿里山上，乙管的水銀垂直高度等於76 cm
+    content: 若將實驗裝置移到阿里山上，乙管的水銀垂直高度等於$76\text{ cm}$
   - label: D
     content: 若實驗時將水銀換成水，水柱將達到試管頂端。
   assets:
@@ -786,6 +786,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在苓雅國中理化實驗室利用水銀(密度13.6 $\text{gw/cm}^{3}$)做托里切利實驗，若A點上方為真空，將試管分別垂直和傾斜放置如右圖之甲、乙，則下列敘述何者錯誤？
+    to: 在苓雅國中理化實驗室利用水銀(密度$13.6\text{ gw/cm}^2$)做托里切利實驗，若A點上方為真空，將試管分別垂直和傾斜放置如右圖之甲、乙，則下列敘述何者<u>錯誤</u>？
+    note: 原卷單位次方印為2，擷取擅改為3
+    by: review
+    extraction: true
 - id: doc_113_高雄_苓雅_自然_g9s2e2_s1_20
   section: 1
   number: 20

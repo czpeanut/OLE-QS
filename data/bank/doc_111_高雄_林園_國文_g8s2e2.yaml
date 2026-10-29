@@ -897,10 +897,10 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 下列文句「 」中的詞語，何者意思兩兩相同？
+  stem: 下列文句「　」中的詞語，何者意思兩兩相同？
   options:
   - label: A
-    content: 項羽破釜沉舟，最後果然「大敗」章邯，取得勝利／這次比賽不幸「大敗」而歸，我們全體隊員都很難過
+    content: 項羽下令破釜沉舟，最後果然「大敗」章邯，取得勝利／這次比賽不幸「大敗」而歸，我們全體隊員都很難過
   - label: B
     content: 當時罐頭形制沒有「規範」，也尚未發展出開罐工具／皇室要遵守的「規範」很多，不只是表面的光鮮亮麗而已
   - label: C
@@ -925,6 +925,12 @@ questions:
     qwen: C
   answer_status: disputed
   review_note: 答案卷 ['B']，Gemini 與 Qwen 一致判為 C
+  errata:
+  - from: 下列文句「 」中的詞語，何者意思兩兩相同？
+    to: 下列文句「　」中的詞語，何者意思兩兩相同？
+    note: 選項(A)漏了「下令」二字
+    by: review
+    extraction: true
 - id: doc_111_高雄_林園_國文_g8s2e2_s4_15
   section: 4
   number: 15

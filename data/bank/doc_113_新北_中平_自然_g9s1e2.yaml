@@ -134,14 +134,14 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 已知木星上的重力加速度大小約為地球的2.5 倍，則在地球上質量100 kg 的物體在以下的情況，何者錯誤？
+  stem: 已知木星上的重力加速度大小約為地球的 2.5 倍，則在地球上質量 100 kg 的物體在以下的情況，何者錯誤？
   options:
   - label: A
     content: 此物在地球上的重量為 100 kgw
   - label: B
-    content: 此物在木星上的重量為250 kgw
+    content: 此物在木星上的重量為 250 kgw
   - label: C
-    content: 此物在木星上的質量為 100 kgw
+    content: 此物在木星上的質量為 100 kg
   - label: D
     content: 此物在木星上的質量與重量的數值相同。
   tags:
@@ -162,6 +162,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 已知木星上的重力加速度大小約為地球的2.5 倍，則在地球上質量100 kg 的物體在以下的情況，何者錯誤？
+    to: 已知木星上的重力加速度大小約為地球的 2.5 倍，則在地球上質量 100 kg 的物體在以下的情況，何者錯誤？
+    note: 原卷選項(C)為100 kg，擷取誤多加w
+    by: review
+    extraction: true
 - id: doc_113_新北_中平_自然_g9s1e2_s1_4
   section: 1
   number: 4
@@ -1181,7 +1187,10 @@ questions:
     content: 需改正整體最高車速，使其變更快
   - label: D
     content: 需改正出發之後的軌道最高點，使其變更高。
-  group_stem: 第一站：雲霄飛車 (假設整個系統遵守力學能守恆，且每次都以最大承重量出發)。
+  group_stem: '暑假期間，曉涵與她的同學們相約到最新開幕的科學遊樂園遊玩，在刺激的遊樂設施中也能學習到科學原理。過程中的告示牌也有一些錯誤給大家分析，若找出答案還能獲得精美禮物。請幫助曉涵回答下列題目：
+
+
+    第一站：雲霄飛車（假設整個系統遵守力學能守恆，且每次都以最大承重量出發）。'
   assets:
   - key: s3_26_f1
     kind: figure
@@ -1217,6 +1226,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 曉涵發現此告示牌僅有一項數據需要做修正。請問哪項數據需要修正，並且該如何修正呢？
+    to: 曉涵發現此告示牌僅有一項數據需要做修正。請問哪項數據需要修正，並且該如何修正呢？
+    note: 題組說明漏掉開頭的遊樂園情境導言
+    by: review
+    extraction: true
 - id: doc_113_新北_中平_自然_g9s1e2_s3_27
   section: 3
   number: 27

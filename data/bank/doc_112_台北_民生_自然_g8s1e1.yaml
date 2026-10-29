@@ -1099,7 +1099,7 @@ questions:
   number: 25
   type: single
   page: 3
-  stem: '已知：甲、乙兩物質的體積與密度數據如表所示。今若將甲物體放在上皿天平左端，乙物體放在右端，則天平哪一端會下降？（體積單位：$\text{cm}^{3}$；密度單位：$\text{g/cm}^{3}$）
+  stem: '已知：甲、乙兩物體的體積與密度數據如表所示。今若將甲物體放在上皿天平左端，乙物體放在右端，則天平哪一端會下降？（體積單位：$\text{cm}^{3}$；密度單位：$\text{g/cm}^{3}$）
 
 
     | 物質 | 甲 | 乙 |
@@ -1117,7 +1117,7 @@ questions:
   - label: C
     content: 一樣高
   - label: D
-    content: 無從判斷。
+    content: 無法判斷。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1137,6 +1137,30 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '已知：甲、乙兩物質的體積與密度數據如表所示。今若將甲物體放在上皿天平左端，乙物體放在右端，則天平哪一端會下降？（體積單位：$\text{cm}^{3}$；密度單位：$\text{g/cm}^{3}$）
+
+
+      | 物質 | 甲 | 乙 |
+
+      | :--- | :---: | :---: |
+
+      | 體積 | 20 | 90 |
+
+      | 密度 | 2 | 0.5 |'
+    to: '已知：甲、乙兩物體的體積與密度數據如表所示。今若將甲物體放在上皿天平左端，乙物體放在右端，則天平哪一端會下降？（體積單位：$\text{cm}^{3}$；密度單位：$\text{g/cm}^{3}$）
+
+
+      | 物質 | 甲 | 乙 |
+
+      | :--- | :---: | :---: |
+
+      | 體積 | 20 | 90 |
+
+      | 密度 | 2 | 0.5 |'
+    note: 「物體」誤擷取為「物質」；選項(D)「無法判斷」誤作「無從判斷」
+    by: review
+    extraction: true
 - id: doc_112_台北_民生_自然_g8s1e1_s1_26
   section: 1
   number: 26
@@ -1427,7 +1451,7 @@ questions:
     content: $1.0\text{ g/cm}^{3}$
   - label: D
     content: $0.5\text{ g/cm}^{3}$
-  group_stem: '[題組一] 憲宏把甲、乙兩種液體分別盛入燒杯，測其實量與體積，得到如右之關係圖，試回答下列問題：'
+  group_stem: '[題組一] 憲宏把甲、乙兩種液體分別盛入燒杯，測其質量與體積，得到如右之關係圖，試回答下列問題：'
   shared_asset: g2_33_34
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1448,6 +1472,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 甲液的密度為何？
+    to: 甲液的密度為何？
+    note: 題組說明「質量」誤作「實量」
+    by: review
+    extraction: true
 - id: doc_112_台北_民生_自然_g8s1e1_s2_34
   section: 2
   number: 34

@@ -1474,7 +1474,7 @@ questions:
   number: 27
   type: single
   page: 4
-  stem: 承小題，請問:針對小題的➊和➋，以下說明正確?
+  stem: 承上題，請問:針對上題的➊和➋，以下說明正確?
   options:
   - label: A
     content: ➊是權力
@@ -1503,6 +1503,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承小題，請問:針對小題的➊和➋，以下說明正確?
+    to: 承上題，請問:針對上題的➊和➋，以下說明正確?
+    note: 原卷「承上題」與「上題」誤植為「承小題」與「小題」
+    by: review
+    extraction: true
 - id: doc_112_台北_民生_社會_g8s1e1_s2_28
   section: 2
   number: 28
@@ -1923,33 +1929,27 @@ questions:
   number: 38
   type: single
   page: 5
-  stem: 圖(二)是民生國中晨光閱讀活動推薦書籍的書目，請問翻閱到第四篇社會制度篇時，應該會看到哪個主題呢?
+  stem: 圖(二)是民生國中晨光閱讀活動推薦書籍的書目，請問翻閱到第四篇社會制度篇時，應該會看到哪個主題呢？
   options:
   - label: A
     content: 封建制度的衰微
   - label: B
     content: 絲路貿易的源起
   - label: C
-    content: 李廉制度的發展
+    content: 孝廉制度的發展
   - label: D
     content: 世族集團的興起。
   assets:
-  - key: s2_38_f1
+  - key: s2_38_r10290658_1
     kind: figure
-    file: doc_112_台北_民生_社會_g8s1e1/s2_38_f1.png
+    file: doc_112_台北_民生_社會_g8s1e1/s2_38_r10290658_1.png
     crop:
       page: 5
       rect:
-      - 296.53
-      - 443.79
-      - 430.02
-      - 586.12
-      auto_from:
-      - 293.24
-      - 430.36
-      - 431.02
-      - 591.38
-    crop_by: auto
+      - 295.47
+      - 413.86
+      - 430.98
+      - 587.98
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1969,6 +1969,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 圖(二)是民生國中晨光閱讀活動推薦書籍的書目，請問翻閱到第四篇社會制度篇時，應該會看到哪個主題呢?
+    to: 圖(二)是民生國中晨光閱讀活動推薦書籍的書目，請問翻閱到第四篇社會制度篇時，應該會看到哪個主題呢？
+    note: 選項(C)「孝廉」誤植為「李廉」
+    by: review
+    extraction: true
 - id: doc_112_台北_民生_社會_g8s1e1_s2_39
   section: 2
   number: 39
@@ -2420,7 +2426,7 @@ questions:
   number: 50
   type: single
   page: 6
-  stem: 承小題，下列哪一歷史現象，與『丙時期』的發展有關?
+  stem: 承上題，下列哪一歷史現象，與『丙時期』的發展有關？
   options:
   - label: A
     content: 年輕人可以自由戀愛
@@ -2456,6 +2462,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承小題，下列哪一歷史現象，與『丙時期』的發展有關?
+    to: 承上題，下列哪一歷史現象，與『丙時期』的發展有關？
+    note: 原卷為「承上題」，誤植為「承小題」
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_1_3
   label: 題組附圖

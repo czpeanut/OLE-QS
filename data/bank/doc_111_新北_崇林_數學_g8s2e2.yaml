@@ -366,13 +366,13 @@ questions:
   page: 2
   stem: '如右圖，已知$\angle AOB = 90^{\circ}$，小崇利用尺規作圖做出$\angle EOF$，步驟如下：
 
-    ① 以O 點為圓心，取一適當長為半徑畫弧，交$\overline{OA}$、$\overline{OB}$於C、D 兩點
+    ①以 O 點為圓心，取一適當長為半徑畫弧，交$\overline{OA}$、$\overline{OB}$於 C、D 兩點
 
-    ② 以D 點為圓心，$\overline{OD}$為半徑畫弧，交前弧於E 點
+    ②以 D 點為圓心，$\overline{OD}$為半徑畫弧，交前弧於 E 點
 
-    ③ 連接$\overline{OE}$
+    ③連接$\vec{OE}$
 
-    ④ 分別以E、D 兩點為圓心，大於$\frac{1}{2}\overline{ED}$的相同長度為半徑畫弧，兩弧交於F 點
+    ④分別以 E、D 兩點為圓心，大於$\frac{1}{2}\overline{ED}$的相同長度為半徑畫弧，兩弧交於 F 點
 
     根據上述步驟與作圖痕跡判別$\angle EOF$的度數是多少度？'
   options:
@@ -418,6 +418,28 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如右圖，已知$\angle AOB = 90^{\circ}$，小崇利用尺規作圖做出$\angle EOF$，步驟如下：
+
+      ① 以O 點為圓心，取一適當長為半徑畫弧，交$\overline{OA}$、$\overline{OB}$於C、D 兩點
+
+      ② 以D 點為圓心，$\overline{OD}$為半徑畫弧，交前弧於E 點
+
+      ③ 連接$\overline{OE}$
+
+      ④ 分別以E、D 兩點為圓心，大於$\'
+    to: '如右圖，已知$\angle AOB = 90^{\circ}$，小崇利用尺規作圖做出$\angle EOF$，步驟如下：
+
+      ①以 O 點為圓心，取一適當長為半徑畫弧，交$\overline{OA}$、$\overline{OB}$於 C、D 兩點
+
+      ②以 D 點為圓心，$\overline{OD}$為半徑畫弧，交前弧於 E 點
+
+      ③連接$\vec{OE}$
+
+      ④分別以 E、D 兩點為圓心，大於$\frac'
+    note: 原卷為射線OE，擷取誤為線段OE
+    by: review
+    extraction: true
 - id: doc_111_新北_崇林_數學_g8s2e2_s1_10
   section: 1
   number: 10
@@ -732,8 +754,8 @@ questions:
   number: 6
   type: fill
   page: 3
-  stem: 如下圖，已知$\overline{DE}$是$\overline{AB}$的中垂線，$\overline{AC} = 10$，$\overline{BC}
-    = 6$，則$\triangle BCE$ 的周長為 （6） 。
+  stem: 如下圖，已知$\overleftrightarrow{DE}$是$\overline{AB}$的中垂線，$\overline{AC} = 10$，$\overline{BC}
+    = 6$，則$\triangle BCE$ 的周長為＿＿(6)＿＿。
   assets:
   - key: s2_6_f1
     kind: figure
@@ -768,6 +790,14 @@ questions:
   - '16'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如下圖，已知$\overline{DE}$是$\overline{AB}$的中垂線，$\overline{AC} = 10$，$\overline{BC}
+      = 6$，則$\triangle BCE$ 的周長為 （6） 。
+    to: 如下圖，已知$\overleftrightarrow{DE}$是$\overline{AB}$的中垂線，$\overline{AC} = 10$，$\overline{BC}
+      = 6$，則$\triangle BCE$ 的周長為＿＿(6)＿＿。
+    note: 原卷為直線DE，擷取誤為線段DE
+    by: review
+    extraction: true
 - id: doc_111_新北_崇林_數學_g8s2e2_s2_7
   section: 2
   number: 7
@@ -902,8 +932,8 @@ questions:
   number: 11
   type: fill
   page: 4
-  stem: 如圖，在 $\triangle ABC$ 中，$\angle B＝90^{\circ}$，$\overline{DE}$為$\overline{AC}$的中垂線。已知
-    $\overline{AB}＝3$，$\overline{AC}＝5$，則$\overline{AE}$長度為 （11） 。
+  stem: 如圖，在 $\triangle ABC$ 中，$\angle B=90^{\circ}$，$\overleftrightarrow{DE}$為$\overline{AC}$的中垂線。已知
+    $\overline{AB}=3$，$\overline{AC}=5$，則$\overline{AE}$長度為______ (11) ______。
   assets:
   - key: s2_11_f1
     kind: figure
@@ -938,3 +968,11 @@ questions:
   - \frac{25}{8}
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，在 $\triangle ABC$ 中，$\angle B＝90^{\circ}$，$\overline{DE}$為$\overline{AC}$的中垂線。已知
+      $\overline{AB}＝3$，$\overline{AC}＝5$，則$\overline{AE}$長度為 （11） 。
+    to: 如圖，在 $\triangle ABC$ 中，$\angle B=90^{\circ}$，$\overleftrightarrow{DE}$為$\overline{AC}$的中垂線。已知
+      $\overline{AB}=3$，$\overline{AC}=5$，則$\overline{AE}$長度為______ (11) ______。
+    note: 原卷為直線DE，擷取誤為線段DE
+    by: review
+    extraction: true

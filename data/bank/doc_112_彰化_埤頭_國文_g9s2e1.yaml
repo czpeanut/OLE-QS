@@ -186,7 +186,7 @@ questions:
   number: 7
   type: fill
   page: 1
-  stem: 剛正不「ㄜ」：
+  stem: 剛正不「ㄜ」：訛
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -207,6 +207,12 @@ questions:
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
   group_stem: null
+  errata:
+  - from: 剛正不「ㄜ」：
+    to: 剛正不「ㄜ」：訛
+    note: 漏擷取供判斷正誤的字「訛」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s1_8
   section: 1
   number: 8
@@ -238,7 +244,7 @@ questions:
   number: 9
   type: fill
   page: 1
-  stem: 「塑」造化育：
+  stem: 「塑」造化育：ㄕㄨㄛˋ
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -259,6 +265,12 @@ questions:
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
   group_stem: null
+  errata:
+  - from: 「塑」造化育：
+    to: 「塑」造化育：ㄕㄨㄛˋ
+    note: 漏擷取供判斷正誤的注音「ㄕㄨㄛˋ」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s1_10
   section: 1
   number: 10
@@ -316,7 +328,7 @@ questions:
   number: 12
   type: fill
   page: 1
-  stem: 薙蔥：
+  stem: 薙蔥：草木清脆茂盛的樣子。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   group_stem: 國字及注音、解釋
@@ -336,6 +348,12 @@ questions:
     gemini_high: 修剪蔥葉
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 薙蔥：
+    to: 薙蔥：草木清脆茂盛的樣子。
+    note: 漏擷取供判斷正誤的解釋文字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s1_13
   section: 1
   number: 13
@@ -468,10 +486,14 @@ questions:
   number: 18
   type: fill
   page: 1
-  stem: 澇頭：
+  stem: 澇頭：處事圓滑的人。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
-  group_stem: 國字及注音、解釋
+  group_stem: '一、下列〈甲〉國字及注音、〈乙〉解釋
+
+    正確者畫記（A），不正確者畫記（B），答案盲畫記在答案卡上，否則不予計分
+
+    〈乙〉解釋'
   tags:
     textbook: 第六冊（九下）第1次段考範圍
     labeled_by: ai
@@ -488,6 +510,12 @@ questions:
     gemini_high: 大水湧起處
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 澇頭：
+    to: 澇頭：處事圓滑的人。
+    note: 漏擷取供判斷正誤的解釋文字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s2_19
   section: 2
   number: 19
@@ -710,7 +738,7 @@ questions:
   - label: B
     content: 電影明星演員不是成功電影的必備條件，劇本與視聽效果更為重要
   - label: C
-    content: 道德因困境與混淆是非，是使生活進步的主因。
+    content: 電影的價值，在於讓觀眾透過觀影經驗自我反思
   - label: D
     content: 道德因困境與混淆是非，是使生活進步的主因。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -732,12 +760,18 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「電影呈現給觀眾的不應該是道德的是非而應是道德的困境，如此生活才能進步。高級的敘事藝術是混淆是非的，電影是視聽的敘事藝術，所以人類發明電影不是為了看明是非，而是審視自身。」（徐浩峰試打中包的世界觀）下列何者最接近本文的意旨？
+    to: 「電影呈現給觀眾的不應該是道德的是非而應是道德的困境，如此生活才能進步。高級的敘事藝術是混淆是非的，電影是視聽的敘事藝術，所以人類發明電影不是為了看明是非，而是審視自身。」（徐浩峰試打中包的世界觀）下列何者最接近本文的意旨？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(D) 道德因困境與混淆是非，是使生活進步的主因。」→「(D) 電影的價值，在於讓觀眾透過觀影經驗自我反思」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s2_26
   section: 2
   number: 26
   type: single
   page: 1
-  stem: 「體會真理的那一剎那，就像沐浴在冬裡的一陣暖陽，看見新生命綻放的那一抹笑顏，在青翠的草地上找到一朵鮮黃色的小花，感受思緒的琴弦彈出悅耳的旋律，在區化的思維裡揚起一陣金色的波浪——是閱讀過程中最令人感動的描抽。」這段文字的主旨，與下列何者最為接近？
+  stem: 「體會真理的那一剎那，就像沐浴在冬裡的一陣暖陽，看見新生命綻放的那一抹笑顏，在青翠的草地上找到一朵鮮黃色的小花，感受思緒的琴弦彈出悅耳的旋律，在硬化的思維裡揚起一陣金色的波浪——是閱讀過程中最令人感動的描摹。」這段文字的主旨，與下列何者最為接近？
   options:
   - label: A
     content: 讀書的心領神會，令人驚喜又難忘
@@ -767,6 +801,12 @@ questions:
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
   group_stem: null
+  errata:
+  - from: 「體會真理的那一剎那，就像沐浴在冬裡的一陣暖陽，看見新生命綻放的那一抹笑顏，在青翠的草地上找到一朵鮮黃色的小花，感受思緒的琴弦彈出悅耳的旋律，在區化的思維裡揚起一陣金色的波浪——是閱讀過程中最令人感動的描抽。」這段文字的主旨，與下列何者最為接近？
+    to: 「體會真理的那一剎那，就像沐浴在冬裡的一陣暖陽，看見新生命綻放的那一抹笑顏，在青翠的草地上找到一朵鮮黃色的小花，感受思緒的琴弦彈出悅耳的旋律，在硬化的思維裡揚起一陣金色的波浪——是閱讀過程中最令人感動的描摹。」這段文字的主旨，與下列何者最為接近？
+    note: 「硬化」誤作「區化」，「描摹」誤作「描抽」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s2_27
   section: 2
   number: 27
@@ -1057,11 +1097,11 @@ questions:
   - label: A
     content: 我殷切地「希望」能早日實現我的「希望」
   - label: B
-    content: 老師「清楚」地解釋說讓我「清楚」理解了
+    content: 老師「清楚」地解說讓我「清楚」理解了
   - label: C
     content: 這個「翻譯」官負責「翻譯」外電與公文
   - label: D
-    content: 選民將「代表」班上競選學生會「代表」。
+    content: 懷民將「代表」班上競選學生會「代表」。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1082,6 +1122,12 @@ questions:
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
   group_stem: null
+  errata:
+  - from: 下列「　」中的詞語，何者前後詞性相同？
+    to: 下列「　」中的詞語，何者前後詞性相同？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「選民將「代表」班上競選學生會「代表」」→「懷民將「代表」班上競選學生會「代表」」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s2_36
   section: 2
   number: 36
@@ -1297,7 +1343,7 @@ questions:
   number: 42
   type: single
   page: 2
-  stem: 根據〈聊齋誌異選一種梨〉一文，下列何者不是道士施法所造成結果？
+  stem: 根據〈聊齋誌異選─種梨〉一文，下列何者不是道士施法所造成結果？
   options:
   - label: A
     content: 有勾萌出，漸大
@@ -1306,7 +1352,7 @@ questions:
   - label: C
     content: 於臨路店索得沸瀋
   - label: D
-    content: 車上一靶亡。條而花，條而實，碩大芳馥，累累滿樹
+    content: 車上一靶亡
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1327,6 +1373,12 @@ questions:
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
   group_stem: null
+  errata:
+  - from: 根據〈聊齋誌異選一種梨〉一文，下列何者不是道士施法所造成結果？
+    to: 根據〈聊齋誌異選─種梨〉一文，下列何者不是道士施法所造成結果？
+    note: 選項內容錯置且合併錯誤
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s2_43
   section: 2
   number: 43
@@ -1489,9 +1541,7 @@ questions:
     content: 荷花
   - label: D
     content: 梅花。
-  group_stem: '或說天下未有兵甲時，常多刺客。李汧（ㄑㄧㄢ）公勉為開封尉，鞫獄，獄囚有意氣者，感勉求生，勉縱而逸之。後數歲，勉罷秩，客遊河北，偶見故囚。故囚喜迎歸，厚待之，告其妻曰：「此活我者，何以報德？」妻曰：「償兼千匹可乎？」曰：「未也。」妻曰：「二千匹可乎？」亦曰：「未也。」妻曰：「若此，不如殺之。」故囚心動。其僕哀勉，密告之。勉夜衣乘馬而逸。比夜半，行百餘里，至津店。店老父曰：「此多猛獸，何敢夜行？勉因話言。言未畢，梁上有入誓下，曰：「我幾誤殺長者！」乃去。未明，攜故囚夫妻二首，以示勉。
-
-    （李肇唐國史補故囚報李勉）'
+  group_stem: 冬前冬後幾村莊，溪北溪南兩履霜。樹頭樹底孤山上。冷風來何處香？忽相逢縞袂綃裳。酒醒寒驚夢，笛悽春斷腸，淡月昏黃。〈沉醉東風苦水仙子〉
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1511,6 +1561,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據本文所述，作者想要去尋找的是什麼花？
+    to: 根據本文所述，作者想要去尋找的是什麼花？
+    note: 此題為散曲題組，誤掛於後方李勉文言文題組短文之下
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_國文_g9s2e1_s2_48
   section: 2
   number: 48
@@ -1526,9 +1582,7 @@ questions:
     content: 若此，不如殺「之」—故囚
   - label: D
     content: 其僕哀勉，密告「之」—店老父。
-  group_stem: '或說天下未有兵甲時，常多刺客。李汧（ㄑㄧㄢ）公勉為開封尉，鞫獄，獄囚有意氣者，感勉求生，勉縱而逸之。後數歲，勉罷秩，客遊河北，偶見故囚。故囚喜迎歸，厚待之，告其妻曰：「此活我者，何以報德？」妻曰：「償兼千匹可乎？」曰：「未也。」妻曰：「二千匹可乎？」亦曰：「未也。」妻曰：「若此，不如殺之。」故囚心動。其僕哀勉，密告之。勉夜衣乘馬而逸。比夜半，行百餘里，至津店。店老父曰：「此多猛獸，何敢夜行？勉因話言。言未畢，梁上有入誓下，曰：「我幾誤殺長者！」乃去。未明，攜故囚夫妻二首，以示勉。
-
-    （李肇唐國史補故囚報李勉）'
+  group_stem: 冬前冬後幾村莊，溪北溪南兩履霜。樹頭樹底孤山上。冷風來何處香？忽相逢縞袂綃裳。酒醒寒驚夢，笛悽春斷腸，淡月昏黃。〈沉醉東風苦水仙子〉
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1563,9 +1617,7 @@ questions:
     content: 擔心李勉藉機勒索財物，不如先下手為強
   - label: D
     content: 驚訝妻子看透自己的心思，決定付諸行動。
-  group_stem: '或說天下未有兵甲時，常多刺客。李汧（ㄑㄧㄢ）公勉為開封尉，鞫獄，獄囚有意氣者，感勉求生，勉縱而逸之。後數歲，勉罷秩，客遊河北，偶見故囚。故囚喜迎歸，厚待之，告其妻曰：「此活我者，何以報德？」妻曰：「償兼千匹可乎？」曰：「未也。」妻曰：「二千匹可乎？」亦曰：「未也。」妻曰：「若此，不如殺之。」故囚心動。其僕哀勉，密告之。勉夜衣乘馬而逸。比夜半，行百餘里，至津店。店老父曰：「此多猛獸，何敢夜行？勉因話言。言未畢，梁上有入誓下，曰：「我幾誤殺長者！」乃去。未明，攜故囚夫妻二首，以示勉。
-
-    （李肇唐國史補故囚報李勉）'
+  group_stem: 冬前冬後幾村莊，溪北溪南兩履霜。樹頭樹底孤山上。冷風來何處香？忽相逢縞袂綃裳。酒醒寒驚夢，笛悽春斷腸，淡月昏黃。〈沉醉東風苦水仙子〉
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1601,9 +1653,7 @@ questions:
     content: 接受李勉的重金收買，決定放手一搏
   - label: D
     content: 認為囚犯夫婦忘恩負義，應該受懲治。
-  group_stem: '或說天下未有兵甲時，常多刺客。李汧（ㄑㄧㄢ）公勉為開封尉，鞫獄，獄囚有意氣者，感勉求生，勉縱而逸之。後數歲，勉罷秩，客遊河北，偶見故囚。故囚喜迎歸，厚待之，告其妻曰：「此活我者，何以報德？」妻曰：「償兼千匹可乎？」曰：「未也。」妻曰：「二千匹可乎？」亦曰：「未也。」妻曰：「若此，不如殺之。」故囚心動。其僕哀勉，密告之。勉夜衣乘馬而逸。比夜半，行百餘里，至津店。店老父曰：「此多猛獸，何敢夜行？勉因話言。言未畢，梁上有入誓下，曰：「我幾誤殺長者！」乃去。未明，攜故囚夫妻二首，以示勉。
-
-    （李肇唐國史補故囚報李勉）'
+  group_stem: 冬前冬後幾村莊，溪北溪南兩履霜。樹頭樹底孤山上。冷風來何處香？忽相逢縞袂綃裳。酒醒寒驚夢，笛悽春斷腸，淡月昏黃。〈沉醉東風苦水仙子〉
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:

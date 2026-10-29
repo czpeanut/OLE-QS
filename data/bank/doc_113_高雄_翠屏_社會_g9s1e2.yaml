@@ -1056,6 +1056,13 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: '**<u>圖1</u>是基督教教派演變示意圖。'
+  errata:
+  - from: 義大利傳教士利瑪竇於明末來到中國，除從事傳教工作外並與士大夫徐光啟合譯《幾何原本》，對中國影響很大。關於利瑪竇所屬的教派，應是
+    to: 義大利傳教士利瑪竇於明末來到中國，除從事傳教工作外並與士大夫徐光啟合譯《幾何原本》，對中國影響很大。關於利瑪竇所屬的教派，應是
+    note: 選項為圖中代號甲乙丙丁，需參照圖1但未附圖
+    by: review
+    extraction: true
 - id: doc_113_高雄_翠屏_社會_g9s1e2_s2_25
   section: 2
   number: 25
@@ -1121,6 +1128,23 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  assets:
+  - key: s2_26_r10290721_1
+    kind: figure
+    file: doc_113_高雄_翠屏_社會_g9s1e2/s2_26_r10290721_1.png
+    crop:
+      page: 5
+      rect:
+      - 22.19
+      - 128.18
+      - 554.08
+      - 319.72
+  errata:
+  - from: 圖中的「丁」教派的敘述，何者正確？
+    to: 圖中的「丁」教派的敘述，何者正確？
+    note: 題幹提及「圖中的丁教派」，需看圖1卻未附圖
+    by: review
+    extraction: true
 - id: doc_113_高雄_翠屏_社會_g9s1e2_s2_27
   section: 2
   number: 27
@@ -1153,6 +1177,23 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s2_27_r10290721_1
+    kind: figure
+    file: doc_113_高雄_翠屏_社會_g9s1e2/s2_27_r10290721_1.png
+    crop:
+      page: 5
+      rect:
+      - 22.19
+      - 128.18
+      - 555.27
+      - 347.5
+  errata:
+  - from: 圖中的「乙」教派的敘述，何者正確？
+    to: 圖中的「乙」教派的敘述，何者正確？
+    note: 題幹提及「圖中的乙教派」，需看圖1卻未附圖
+    by: review
+    extraction: true
 - id: doc_113_高雄_翠屏_社會_g9s1e2_s2_28
   section: 2
   number: 28

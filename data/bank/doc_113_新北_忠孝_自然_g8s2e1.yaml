@@ -576,7 +576,7 @@ questions:
   number: 15
   type: single
   page: 1
-  stem: 氫氧化鈉（NaOH）8.0 公克含有鈉多少公克？
+  stem: 氫氧化鈉（$\mathrm{NaOH}$）8.0 公克含有鈉
   options:
   - label: A
     content: '2.3'
@@ -585,7 +585,7 @@ questions:
   - label: C
     content: '4.0'
   - label: D
-    content: '4.6'
+    content: 4.6 公克。
   tags:
     chapter:
       publisher: 翰林
@@ -603,6 +603,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 氫氧化鈉（NaOH）8.0 公克含有鈉多少公克？
+    to: 氫氧化鈉（$\mathrm{NaOH}$）8.0 公克含有鈉
+    note: 題幹多加「多少公克？」，選項漏了單位「公克」
+    by: review
+    extraction: true
 - id: doc_113_新北_忠孝_自然_g8s2e1_s1_16
   section: 1
   number: 16

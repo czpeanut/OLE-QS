@@ -453,7 +453,7 @@ questions:
   - label: A
     content: 在馬蓋先額外添加糖之前，該糖水為未飽和水溶液
   - label: B
-    content: 若糖水達飽和，則可經過攪拌的過程，使深入更多的蒸發
+    content: 若糖水達飽和，則可經過攪拌的過程，使溶入更多的糖
   - label: C
     content: 若馬蓋先不慎將糖水溶液調得過甜，則可再加入水，以降低糖水濃度
   - label: D
@@ -486,6 +486,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承上題，糖完全溶解後，馬蓋先覺得第一次加的糖不夠，因此逐漸加入更多的糖，最後調整到他認為可以的份量。有關此過程，下列敘述何者錯誤？
+    to: 承上題，糖完全溶解後，馬蓋先覺得第一次加的糖不夠，因此逐漸加入更多的糖，最後調整到他認為可以的份量。有關此過程，下列敘述何者錯誤？
+    note: 「溶入更多的糖」誤為「深入更多的蒸發」
+    by: review
+    extraction: true
 - id: doc_113_台中_北勢_自然_理化_g8s1e1_s1_10
   section: 1
   number: 10
@@ -1005,7 +1011,7 @@ questions:
   - label: C
     content: 用最小刻度為公尺的捲尺，量出葉子長0.1公尺
   - label: D
-    content: 用最小刻度為公分的捲尺，量出長0.100公尺。
+    content: 用最小刻度為公分的捲尺，量出葉子長0.100公尺。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1025,6 +1031,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若用不同單位的尺去測量結果的紀錄，何者錯誤？
+    to: 若用不同單位的尺去測量結果的紀錄，何者錯誤？
+    note: 漏「葉子」二字
+    by: review
+    extraction: true
 - id: doc_113_台中_北勢_自然_理化_g8s1e1_s1_23
   section: 1
   number: 23
@@ -1213,7 +1225,7 @@ questions:
   - label: A
     content: 加熱時，若酒精燈高度不夠，可以用書本墊高
   - label: B
-    content: 加熱時，為了觀察蒸發皿內的變化，可以一直把在蒸發皿正上方近距離觀看
+    content: 加熱時，為了觀察蒸發皿內的變化，可以一直站在蒸發皿正上方近距離觀看
   - label: C
     content: 為防止食鹽晶體彈跳，可用漏斗蓋住蒸發皿
   - label: D
@@ -1252,6 +1264,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 在步驟己中，下列哪一項實驗操作方法是錯誤的？
+    to: 在步驟己中，下列哪一項實驗操作方法是錯誤的？
+    note: 「站在」誤為「把在」
+    by: review
+    extraction: true
 - id: doc_113_台中_北勢_自然_理化_g8s1e1_s1_28
   section: 1
   number: 28
@@ -1348,7 +1366,7 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: 試問該天氣瓶的雪花結晶長度為何(附標籤之間)?
+  stem: 試問該天氣瓶的雪花結晶長度為何(兩標籤之間)?
   options:
   - label: A
     content: 7.9cm
@@ -1404,14 +1422,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 試問該天氣瓶的雪花結晶長度為何(附標籤之間)?
+    to: 試問該天氣瓶的雪花結晶長度為何(兩標籤之間)?
+    note: 「兩標籤之間」誤為「附標籤之間」
+    by: review
+    extraction: true
 - id: doc_113_台中_北勢_自然_理化_g8s1e1_s1_31
   section: 1
   number: 31
   type: single
   page: 3
-  stem: '台中一所私立中學，發生實驗室爆炸意外，當時師生在進行「糖蛇」實驗，疑似操作不慎，造成三名國一學生燙傷送醫，其中最嚴重的女學生，脖子和臉部有10%二度燙傷。在國中小實驗室，經常看到的膨糖實驗，把糖和小蘇打粉混合（甲）後燃燒（乙），產生有如黑色長蛇的物體，實驗是為了讓學生知道，糖是碳水化合物可燃性，燃燒產生水、二氧化碳和黑色的碳，小蘇打受熱，分解出大量二氧化碳（丙），學生可觀察一邊燃燒，一邊冒出黑蛇的現象。
-
-    除了用糖和小蘇打粉混合後燃燒產生二氧化碳，有關二氧化碳的性質那些敘述是不正確的'
+  stem: 除了用糖和小蘇打粉混合後燃燒產生二氧化碳，有關二氧化碳的性質那些敘述是不正確的
   options:
   - label: A
     content: 是無色、無臭的氣體
@@ -1440,6 +1462,13 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: 台中一所私立中學，發生實驗室爆炸意外，當時師生在進行「糖蛇」實驗，疑似操作不慎，造成三名國一學生燙傷送醫，其中最嚴重的女學生，脖子和臉部有10%二度燙傷。在國中小實驗室，經常看到的膨糖實驗，把糖和小蘇打粉混合（甲）後燃燒（乙），產生有如黑色長蛇的物體，實驗是為了讓學生知道，糖是碳水化合物可燃性，燃燒產生水、二氧化碳和黑色的碳，小蘇打受熱，分解出大量二氧化碳（丙），學生可觀察一邊燃燒，一邊冒出黑蛇的現象。
+  errata:
+  - from: 台中一所私立中學，發生實驗室爆炸意外，當時師生在進行「糖蛇」實驗，疑似操作不慎，造成三名國一學生燙傷送醫，其中最嚴重的女學生，脖子和臉部有10%二度燙傷。在國中小實驗室，經常看到的膨糖實驗，把糖和小蘇打粉混合（甲）後燃燒（乙），產生有如黑色長蛇的物體，實驗是為了讓學生知道，糖是碳水化合物可燃性，燃燒產生水、二氧化碳和黑色的碳，小蘇打受熱，分解出大量二氧化碳（丙），學生可觀察一邊燃燒，一邊冒出黑蛇的
+    to: 除了用糖和小蘇打粉混合後燃燒產生二氧化碳，有關二氧化碳的性質那些敘述是不正確的
+    note: 短文為第31~36題共用說明，非第31題題幹
+    by: review
+    extraction: true
 - id: doc_113_台中_北勢_自然_理化_g8s1e1_s1_32
   section: 1
   number: 32
@@ -1530,7 +1559,7 @@ questions:
   number: 34
   type: single
   page: 3
-  stem: 若想利用上述裝置製造氧氣需要哪兩個材料？另外若想增加收集的氣氣要增加那些材料？
+  stem: 若想利用上述裝置製造氧氣需要哪兩個材料？另外若想增加收集的氧氣要增加那些材料？
   options:
   - label: A
     content: 二氧化錳、稀鹽酸；雙氧水
@@ -1559,6 +1588,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若想利用上述裝置製造氧氣需要哪兩個材料？另外若想增加收集的氣氣要增加那些材料？
+    to: 若想利用上述裝置製造氧氣需要哪兩個材料？另外若想增加收集的氧氣要增加那些材料？
+    note: 「氧氣」誤為「氣氣」
+    by: review
+    extraction: true
 - id: doc_113_台中_北勢_自然_理化_g8s1e1_s1_35
   section: 1
   number: 35
@@ -1709,7 +1744,7 @@ questions:
   - label: A
     content: 66.15ppm
   - label: B
-    content: 3307.5pm
+    content: 3307.5ppm
   - label: C
     content: 1323ppm
   - label: D
@@ -1736,12 +1771,18 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 試問首名死者家中搗米臼內殘留小米驗出托福松殘留多少ppm?
+    to: 試問首名死者家中搗米臼內殘留小米驗出托福松殘留多少ppm?
+    note: 單位漏一個p，應為ppm
+    by: review
+    extraction: true
 - id: doc_113_台中_北勢_自然_理化_g8s1e1_s1_40
   section: 1
   number: 40
   type: single
   page: 3
-  stem: 走問今有一成人體重60公斤，若誤食該遭汙染的小米多少克就會危及生命?
+  stem: 試問今有一成人體重60公斤，若誤食該遭汙染的小米多少克就會危及生命?
   options:
   - label: A
     content: 27毫克
@@ -1773,6 +1814,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 走問今有一成人體重60公斤，若誤食該遭汙染的小米多少克就會危及生命?
+    to: 試問今有一成人體重60公斤，若誤食該遭汙染的小米多少克就會危及生命?
+    note: 「試問」誤為「走問」
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_24_28
   label: 題組附圖

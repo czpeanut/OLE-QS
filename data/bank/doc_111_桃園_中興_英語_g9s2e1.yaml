@@ -889,16 +889,16 @@ questions:
   number: 36
   type: single
   page: 3
-  stem: 36.（ ）What is the reading mainly about?
+  stem: What is the reading mainly about?　*mainly 主要
   options:
   - label: A
     content: A musician and modern music.
   - label: B
-    content: A musician’s husband.
+    content: A musician's husband.
   - label: C
-    content: A musician’s family history.
+    content: A musician's family history.
   - label: D
-    content: A musician’s life.
+    content: A musician's life.
   group_stem: 'Many people know Robert Schumann was an important musician, but they
     do not know that his wife, Clara Wieck Schumann, was in fact more famous than
     he in their time.
@@ -909,8 +909,8 @@ questions:
 
     In 1840, Clara got married. She became very busy with the housework and her children.
     It was hard for her to find time to practice the piano. But Clara could never
-    forget her love for music; she felt she had to share it with other people. In
-    1842, Clara began to play in public again.
+    forget her love for music; she felt she had to share <u>it</u> with other people.
+    In 1842, Clara began to play in public again.
 
     When Robert died in 1856, Clara had to make money for their seven children by
     herself. She taught music and played the piano around Europe. During this hard
@@ -933,6 +933,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 36.（ ）What is the reading mainly about?
+    to: What is the reading mainly about?　*mainly 主要
+    note: 漏擷取題幹旁的註釋「*mainly 主要」
+    by: review
+    extraction: true
 - id: doc_111_桃園_中興_英語_g9s2e1_s3_37
   section: 3
   number: 37
@@ -958,8 +964,8 @@ questions:
 
     In 1840, Clara got married. She became very busy with the housework and her children.
     It was hard for her to find time to practice the piano. But Clara could never
-    forget her love for music; she felt she had to share it with other people. In
-    1842, Clara began to play in public again.
+    forget her love for music; she felt she had to share <u>it</u> with other people.
+    In 1842, Clara began to play in public again.
 
     When Robert died in 1856, Clara had to make money for their seven children by
     herself. She taught music and played the piano around Europe. During this hard
@@ -1007,8 +1013,8 @@ questions:
 
     In 1840, Clara got married. She became very busy with the housework and her children.
     It was hard for her to find time to practice the piano. But Clara could never
-    forget her love for music; she felt she had to share it with other people. In
-    1842, Clara began to play in public again.
+    forget her love for music; she felt she had to share <u>it</u> with other people.
+    In 1842, Clara began to play in public again.
 
     When Robert died in 1856, Clara had to make money for their seven children by
     herself. She taught music and played the piano around Europe. During this hard
@@ -1036,7 +1042,9 @@ questions:
   number: 39
   type: single
   page: 4
-  stem: 39.（ ）What does “it” mean in the third paragraph?
+  stem: 'What does “<u>it</u>” mean in the third paragraph?
+
+    *paragraph 段落'
   options:
   - label: A
     content: Money.
@@ -1056,8 +1064,8 @@ questions:
 
     In 1840, Clara got married. She became very busy with the housework and her children.
     It was hard for her to find time to practice the piano. But Clara could never
-    forget her love for music; she felt she had to share it with other people. In
-    1842, Clara began to play in public again.
+    forget her love for music; she felt she had to share <u>it</u> with other people.
+    In 1842, Clara began to play in public again.
 
     When Robert died in 1856, Clara had to make money for their seven children by
     herself. She taught music and played the piano around Europe. During this hard
@@ -1080,6 +1088,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 39.（ ）What does “it” mean in the third paragraph?
+    to: 'What does “<u>it</u>” mean in the third paragraph?
+
+      *paragraph 段落'
+    note: 漏擷取題幹旁的註釋「*paragraph 段落」
+    by: review
+    extraction: true
 - id: doc_111_桃園_中興_英語_g9s2e1_s3_40
   section: 3
   number: 40

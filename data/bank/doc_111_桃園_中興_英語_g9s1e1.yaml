@@ -629,33 +629,38 @@ questions:
   number: 26
   type: single
   page: 3
-  stem: On which website can you most likely (最可能) find the reading?
+  stem: 'On which website can you most likely (最可能) find the reading?
+
+
+    | Goggle |
+
+    | --- |'
   options:
   - label: A
     content: 'The Mama’s Restaurant｜ Our Seasonal Menu
 
-      www.themamas.com/menu
+      <u>www.themamas.com/menu</u>
 
       Want to eat healthy food? The Mama’s is ready to offer everything you wish.
       From healthy breakfast to dinner…'
   - label: B
     content: 'Culture in Haiti (海地) ｜ How The Locals Keep in Shape
 
-      www.welcometohaiti.org/culture
+      <u>www.welcometohaiti.org/culture</u>
 
       Fasting, an old and mysterious way to keep in shape, is now popular again in
       Haiti…'
   - label: C
     content: 'CCB News ｜Top 5 Killing Ways to Lose Weight
 
-      www.ccb.com/weeklynews
+      <u>www.ccb.com/weeklynews</u>
 
       Summer is coming! Thousands of people are searching for tips for losing weight.
       But watch out for these traps, or you may lose your health, not weight…'
   - label: D
     content: 'Health Clinic (診所) ｜ Ways to Lose Weight and Be Healthy
 
-      www.healthclinic.com/FAQ
+      <u>www.healthclinic.com/FAQ</u>
 
       Q: I want to lose weight in a healthy way. What should I do? A: You can try
       “fasting,” the most popular way…'
@@ -698,6 +703,17 @@ questions:
       chapter: 綜合
     textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: On which website can you most likely (最可能) find the reading?
+    to: 'On which website can you most likely (最可能) find the reading?
+
+
+      | Goggle |
+
+      | --- |'
+    note: 漏擷取模擬搜尋頁面頂端的「Goggle」
+    by: review
+    extraction: true
 - id: doc_111_桃園_中興_英語_g9s1e1_s4_27
   section: 4
   number: 27

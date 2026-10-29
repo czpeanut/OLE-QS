@@ -144,7 +144,7 @@ questions:
   - label: A
     content: 「ㄓㄠˋ」日出兮／夜「ㄓㄠˋ」暴部隊
   - label: B
-    content: 寒風「ㄑㄧㄥ」骨／「ㄑㄧㄥ」長莫及
+    content: 寒風「ㄅㄧㄢ」骨／「ㄅㄧㄢ」長莫及
   - label: C
     content: 「ㄌㄨˊ」火純青／南陽諸葛「ㄌㄨˊ」
   - label: D
@@ -167,6 +167,12 @@ questions:
     gemini_high: A
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 以下選項中的國字，何者完全相同？
+    to: 以下選項中的國字，何者完全相同？
+    note: 原卷注音為ㄅㄧㄢ，誤擷為ㄑㄧㄥ
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g9s1e1_s1_5
   section: 1
   number: 5
@@ -179,7 +185,7 @@ questions:
   - label: B
     content: 寒冬「ㄌㄚˋ」月／「ㄌㄚˋ」炬成灰
   - label: C
-    content: 「ㄧㄤˊ」一大國／中「ㄧㄤˊ」空調
+    content: 「ㄧㄤ」一大國／中「ㄧㄤ」空調
   - label: D
     content: 為官清「ㄌㄧㄢˊ」／物美價「ㄌㄧㄢˊ」
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -202,6 +208,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 以下選項中的國字，何者相同？
+    to: 以下選項中的國字，何者相同？
+    note: 原卷注音為一聲無調號，誤加二聲
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g9s1e1_s1_6
   section: 1
   number: 6
@@ -387,10 +399,10 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 下列文句，何者沒有冗詞贅字？
+  stem: 下列文句，何者<u>沒有</u>冗詞贅字？
   options:
   - label: A
-    content: 譚護理師向來十分關心注意飲食安問題，時常在節目上大聲疾呼
+    content: 譚護理師向來十分關心注意飲食安全問題，時常在節目上大聲疾呼
   - label: B
     content: 小貓掙脫擺脫牽繩，鑽進汽車底盤下，令在場的眾人捏一把冷汗
   - label: C
@@ -416,6 +428,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列文句，何者沒有冗詞贅字？
+    to: 下列文句，何者<u>沒有</u>冗詞贅字？
+    note: 漏掉「全」字
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g9s1e1_s1_12
   section: 1
   number: 12
@@ -557,7 +575,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 蘇軾〈惠崇春江晚景〉：「竹外桃花三兩枝，春江水暖鴨先知。蒌蒿滿地蘆芽短，正是河豚欲上時。」詞中所透露的季節，與下列何者相同？
+  stem: <u>蘇軾</u>〈惠崇春江晚景〉：「竹外桃花三兩枝，春江水暖鴨先知。蔞蒿滿地蘆芽短，正是河豚欲上時。」詞中所透露的季節，與下列何者相同？
   options:
   - label: A
     content: 萬里寒光生積雪，三邊曙色動危旌
@@ -586,6 +604,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 蘇軾〈惠崇春江晚景〉：「竹外桃花三兩枝，春江水暖鴨先知。蒌蒿滿地蘆芽短，正是河豚欲上時。」詞中所透露的季節，與下列何者相同？
+    to: <u>蘇軾</u>〈惠崇春江晚景〉：「竹外桃花三兩枝，春江水暖鴨先知。蔞蒿滿地蘆芽短，正是河豚欲上時。」詞中所透露的季節，與下列何者相同？
+    note: 「蔞」字誤擷為簡體字「蒌」
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g9s1e1_s1_17
   section: 1
   number: 17
@@ -1523,7 +1547,7 @@ questions:
 
     這不是我在瑞典開車第一次受到震撼教育了——瑞典政府長年以「零死亡願景」出發，無論是道路及法規的設計、對駕駛人的規範、對用路人的保障與保護、乃至於交通科技，均奠基於此邏輯之上，而這樣的願景，瑞典又是如何去執行的呢？
 
-    「一個都不能死」，在道路上死一個人圖太多，這樣的概念大抵解釋了瑞典政府在1997年通過的「交通零死亡願景」（Nollvision，或英文 Vision Zero）。
+    「一個都不能死」，在道路上死一個人都太多，這樣的概念大抵解釋了瑞典政府在1997年通過的「交通零死亡願景」（Nollvision，或英文 Vision Zero）。
 
     為了達成交通零死亡、無重傷的目標，「零死亡願景」包括3個大原則：
 
@@ -1561,6 +1585,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據本文，關於「交通零死亡願景」的敘述，以下何者正確？
+    to: 根據本文，關於「交通零死亡願景」的敘述，以下何者正確？
+    note: 題組短文中「都」誤擷為「圖」
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g9s1e1_s3_42
   section: 3
   number: 42
@@ -1592,7 +1622,7 @@ questions:
 
     這不是我在瑞典開車第一次受到震撼教育了——瑞典政府長年以「零死亡願景」出發，無論是道路及法規的設計、對駕駛人的規範、對用路人的保障與保護、乃至於交通科技，均奠基於此邏輯之上，而這樣的願景，瑞典又是如何去執行的呢？
 
-    「一個都不能死」，在道路上死一個人圖太多，這樣的概念大抵解釋了瑞典政府在1997年通過的「交通零死亡願景」（Nollvision，或英文 Vision Zero）。
+    「一個都不能死」，在道路上死一個人都太多，這樣的概念大抵解釋了瑞典政府在1997年通過的「交通零死亡願景」（Nollvision，或英文 Vision Zero）。
 
     為了達成交通零死亡、無重傷的目標，「零死亡願景」包括3個大原則：
 
@@ -1661,7 +1691,7 @@ questions:
 
     這不是我在瑞典開車第一次受到震撼教育了——瑞典政府長年以「零死亡願景」出發，無論是道路及法規的設計、對駕駛人的規範、對用路人的保障與保護、乃至於交通科技，均奠基於此邏輯之上，而這樣的願景，瑞典又是如何去執行的呢？
 
-    「一個都不能死」，在道路上死一個人圖太多，這樣的概念大抵解釋了瑞典政府在1997年通過的「交通零死亡願景」（Nollvision，或英文 Vision Zero）。
+    「一個都不能死」，在道路上死一個人都太多，這樣的概念大抵解釋了瑞典政府在1997年通過的「交通零死亡願景」（Nollvision，或英文 Vision Zero）。
 
     為了達成交通零死亡、無重傷的目標，「零死亡願景」包括3個大原則：
 

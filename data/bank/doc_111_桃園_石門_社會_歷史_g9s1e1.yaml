@@ -883,7 +883,7 @@ questions:
   number: 25
   type: single
   page: 3
-  stem: 承上題，下圖描述的情形，最有 alarm出現在哪一個時期？
+  stem: 承上題，下圖描述的情形，最有可能出現在哪一個時期？
   options:
   - label: A
     content: 王政
@@ -931,6 +931,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承上題，下圖描述的情形，最有 alarm出現在哪一個時期？
+    to: 承上題，下圖描述的情形，最有可能出現在哪一個時期？
+    note: 「可能」誤辨識為「alarm」
+    by: review
+    extraction: true
 - id: doc_111_桃園_石門_社會_歷史_g9s1e1_s2_26
   section: 2
   number: 26

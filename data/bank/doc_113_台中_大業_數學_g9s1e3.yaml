@@ -532,11 +532,11 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 如右圖，$I$ 點為$\triangle ABC$ 的內心，$\overline{AB}＝\overline{AC}$，若 $\overline{AP}
-    \perp \overline{BI}$ 於 $P$ 點，則下列敘述何者錯誤？
+  stem: 如右圖，$I$ 點為 $\triangle ABC$ 的內心，$\overline{AB} = \overline{AC}$，若 $\overline{AP}
+    \perp \overrightarrow{BI}$ 於 $P$ 點，則下列敘述何者<u>錯誤</u>？
   options:
   - label: A
-    content: $\triangle BAI$ 面積：$\triangle BID$ 面積＝$\overline{AB}：\overline{BD}$
+    content: '$\triangle BAI$ 面積：$\triangle BID$ 面積 $= \overline{AB} : \overline{BD}$'
   - label: B
     content: $\triangle BAP \sim \triangle BID$
   - label: C
@@ -577,6 +577,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，$I$ 點為$\triangle ABC$ 的內心，$\overline{AB}＝\overline{AC}$，若 $\overline{AP}
+      \perp \overline{BI}$ 於 $P$ 點，則下列敘述何者錯誤？
+    to: 如右圖，$I$ 點為 $\triangle ABC$ 的內心，$\overline{AB} = \overline{AC}$，若 $\overline{AP}
+      \perp \overrightarrow{BI}$ 於 $P$ 點，則下列敘述何者<u>錯誤</u>？
+    note: 原卷BI上方為射線符號非線段
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_數學_g9s1e3_s1_14
   section: 1
   number: 14
@@ -862,8 +870,8 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: 如右圖，圓 $O$ 的直徑 $\overline{AB}＝10$，$\overline{BD}＝\overline{DE}＝\overline{AE}$，且
-    $G$ 點為$\triangle ABC$ 的重心，則 $\overline{OG}＝$？
+  stem: 如右圖，圓 $O$ 的直徑 $\overline{AB}＝10$，$\overgroup{BD}＝\overgroup{DE}＝\overgroup{AE}$，且
+    $G$ 點為 $\triangle ABC$ 的重心，則 $\overline{OG}＝$？
   options:
   - label: A
     content: $\frac{10\sqrt{3}}{3}$
@@ -907,6 +915,14 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，圓 $O$ 的直徑 $\overline{AB}＝10$，$\overline{BD}＝\overline{DE}＝\overline{AE}$，且
+      $G$ 點為$\triangle ABC$ 的重心，則 $\overline{OG}＝$？
+    to: 如右圖，圓 $O$ 的直徑 $\overline{AB}＝10$，$\overgroup{BD}＝\overgroup{DE}＝\overgroup{AE}$，且
+      $G$ 點為 $\triangle ABC$ 的重心，則 $\overline{OG}＝$？
+    note: 原卷為弧BD、DE、AE非線段
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_數學_g9s1e3_s1_21
   section: 1
   number: 21

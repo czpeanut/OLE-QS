@@ -678,33 +678,27 @@ questions:
   number: 22
   type: single
   page: 1
-  stem: 原子是由中子、質子與電子三種基本粒子所組成。若以○和●分別代表中子、質子與電子，則下圖應為哪一種元素的示意圖？
+  stem: 原子是由中子、質子與電子三種基本粒子所組成。⊕ 若以○和●分別代表中子、質子與電子，則下圖應為哪一種元素的示意圖？
   options:
   - label: A
-    content: $\frac{7}{9}X$
+    content: $^{9}_{7}\mathrm{X}$
   - label: B
-    content: $\frac{7}{7}X$
+    content: $^{7}_{7}\mathrm{X}$
   - label: C
-    content: $\frac{9}{16}X$
+    content: $^{16}_{9}\mathrm{X}$
   - label: D
-    content: $\frac{7}{16}X$
+    content: $^{16}_{7}\mathrm{X}$
   assets:
-  - key: s3_22_f1
+  - key: s3_22_r10290728_1
     kind: figure
-    file: doc_113_新北_丹鳳_自然_g8s1e3/s3_22_f1.png
+    file: doc_113_新北_丹鳳_自然_g8s1e3/s3_22_r10290728_1.png
     crop:
       page: 1
       rect:
-      - 139.78
-      - 881.37
-      - 241.16
-      - 970.99
-      auto_from:
-      - 135.82
-      - 874.8
-      - 245.45
-      - 974.95
-    crop_by: auto
+      - 136.6
+      - 878.15
+      - 245.87
+      - 975.92
   tags:
     chapter:
       publisher: 翰林
@@ -722,6 +716,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 原子是由中子、質子與電子三種基本粒子所組成。若以○和●分別代表中子、質子與電子，則下圖應為哪一種元素的示意圖？
+    to: 原子是由中子、質子與電子三種基本粒子所組成。⊕ 若以○和●分別代表中子、質子與電子，則下圖應為哪一種元素的示意圖？
+    note: 漏了符號⊕，且選項元素符號的質量數與原子序被誤轉為分數
+    by: review
+    extraction: true
 - id: doc_113_新北_丹鳳_自然_g8s1e3_s3_23
   section: 3
   number: 23
