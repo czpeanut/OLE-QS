@@ -205,7 +205,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 民國15~17年中國發生戰爭，15年誓師北伐完成統一 pid下列哪一位人物？
+  stem: 民國15~17年中國發生戰爭，15年誓師北伐完成統一是一下列哪一位人物？
   options:
   - label: A
     content: 蔣經國
@@ -236,6 +236,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 民國15~17年中國發生戰爭，15年誓師北伐完成統一 pid下列哪一位人物？
+    to: 民國15~17年中國發生戰爭，15年誓師北伐完成統一是一下列哪一位人物？
+    note: 「是一」誤辨識為「pid」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_歷史_g8s2e2_s1_7
   section: 1
   number: 7
@@ -700,16 +706,16 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 中日戰爭一開始，是中國獨立與日戰爭，後因發生何事，使中日戰爭成為世界大戰一環？
+  stem: 中日戰爭一開始，是中國獨立與日戰爭，後因發生何事，使中日戰爭成為世界大戰一環？（原卷有誤，已修正）
   options:
   - label: A
-    content: 日本人侵山東
+    content: 日本入侵山東
   - label: B
-    content: 日本人侵南京
+    content: 日本入侵南京
   - label: C
-    content: 日本人侵東北
+    content: 日本入侵東北
   - label: D
-    content: 日本人侵珍珠港
+    content: 日本入侵珍珠港
   group_stem: 四、中日戰爭下，造成許多苦難的東亞人民，二次世界大戰亞洲戰場，主要是中國戰場與太平洋戰場，這場戰爭帶動了大陸、台灣、日本、韓國以及南洋地區的歷史記憶與創傷，也讓人體悟到人民才是戰火下最大的犧牲者……,請問：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -730,6 +736,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 日本人侵山東 (B) 日本人侵南京 (C) 日本人侵東北 (D) 日本人侵珍珠港
+    to: 日本入侵山東 (B)日本入侵南京 (C)日本入侵東北 (D)日本入侵珍珠港
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「日本人侵山東 (B) 日本人侵南京 (C) 日本人侵東北 (D) 日本人侵珍珠港」→「日本入侵山東 (B)日本入侵南京
+      (C)日本入侵東北 (D)日本入侵珍珠港」
+    by: review
 - id: doc_112_彰化_福興_社會_歷史_g8s2e2_s1_21
   section: 1
   number: 21
@@ -770,7 +782,7 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 電影稻草人一片，描述台灣日治時代後期，一對佃農兄弟的故事，影片描述主人公翁的小孩，期待○○常常轟炸台灣，如此一來，它們才冇得到獎賞和有魚吃，請問影片中的○○是指那一國家？
+  stem: 電影稻草人一片，描述台灣日治時代後期，一對佃農兄弟的故事，影片描述主人公的小孩，期待○○常常轟炸台灣，如此一來，它們才有得到獎賞和有魚吃，請問影片中的○○是指那一國家？
   options:
   - label: A
     content: 日本
@@ -800,6 +812,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 電影稻草人一片，描述台灣日治時代後期，一對佃農兄弟的故事，影片描述主人公翁的小孩，期待○○常常轟炸台灣，如此一來，它們才冇得到獎賞和有魚吃，請問影片中的○○是指那一國家？
+    to: 電影稻草人一片，描述台灣日治時代後期，一對佃農兄弟的故事，影片描述主人公的小孩，期待○○常常轟炸台灣，如此一來，它們才有得到獎賞和有魚吃，請問影片中的○○是指那一國家？
+    note: 多字「主人公翁」，且「才有」誤作「才冇」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_社會_歷史_g8s2e2_s1_23
   section: 1
   number: 23
@@ -1394,7 +1412,7 @@ questions:
   stem: 就四人的生平，下列哪一歷史事件，此四人皆經歷過或參與過？
   options:
   - label: A
-    content: 日本人侵山東，與中國簽訂二十一條要求
+    content: 日本入侵山東，與中國簽訂二十一條要求
   - label: B
     content: 日本發動九一八事變，佔領中國東北地區
   - label: C
@@ -1421,6 +1439,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 就四人的生平，下列哪一歷史事件，此四人皆經歷過或參與過？
+    to: 就四人的生平，下列哪一歷史事件，此四人皆經歷過或參與過？
+    note: 「入侵」誤作「人侵」
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_5_9
   label: 題組附圖

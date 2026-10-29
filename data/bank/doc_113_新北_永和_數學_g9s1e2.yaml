@@ -434,18 +434,18 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 如右圖，$\overparen{AB}$ 是半圓，$O$ 為 $\overline{AB}$ 的中點，$C$、$D$ 兩點在$\overparen{AB}$
-    上，且 $\overline{AD} \parallel \overline{OC}$，連接 $\overline{BC}$、$\overline{BD}$。若
-    $\angle BCD=134^{\circ}$，則$\overparen{CD}=$？(2-2)
+  stem: 如右圖，$\overparen{AB}$ 是半圓，$O$ 為 $\overline{AB}$ 的中點，$C$、$D$ 兩點在 $\overparen{AB}$
+    上，且 $\overline{AD} // \overline{OC}$，連接 $\overline{BC}$、$\overline{BD}$。若 $\overparen{BCD}=134^{\circ}$，則
+    $\overparen{CD}=$？(2-2)
   options:
   - label: A
-    content: 65°
+    content: $65^{\circ}$
   - label: B
-    content: 66°
+    content: $66^{\circ}$
   - label: C
-    content: 67°
+    content: $67^{\circ}$
   - label: D
-    content: 68°
+    content: $68^{\circ}$
   assets:
   - key: s1_10_f1
     kind: figure
@@ -481,6 +481,16 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 如右圖，$\overparen{AB}$ 是半圓，$O$ 為 $\overline{AB}$ 的中點，$C$、$D$ 兩點在$\overparen{AB}$
+      上，且 $\overline{AD} \parallel \overline{OC}$，連接 $\overline{BC}$、$\overline{BD}$。若
+      $\angle BCD=134^{\circ}$，則$\overparen{CD
+    to: 如右圖，$\overparen{AB}$ 是半圓，$O$ 為 $\overline{AB}$ 的中點，$C$、$D$ 兩點在 $\overparen{AB}$
+      上，且 $\overline{AD} // \overline{OC}$，連接 $\overline{BC}$、$\overline{BD}$。若 $\overparen{BCD}=134^{\circ}$，則
+      $\overparen{CD
+    note: 原卷為弧BCD（符號在BCD上方），擷取誤作角BCD
+    by: review
+    extraction: true
 - id: doc_113_新北_永和_數學_g9s1e2_s1_11
   section: 1
   number: 11

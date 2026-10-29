@@ -355,12 +355,12 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: (  )下列文句「」中的用字，何者完全正確？
+  stem: (  )下列文句「」中的用字，何者完全正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 等待模擬考成積公告的日子，讓人如坐針羶
   - label: B
-    content: 這家貴婦百貨盡是價格昂貴的泊來品，令人望而卻不
+    content: 這家貴婦百貨盡是價格昂貴的泊來品，令人望而卻步
   - label: C
     content: 市政府斥資邀請天后江蕙在跨年晚會上現唱，為民眾打造一場空前的音樂餉宴
   - label: D
@@ -382,6 +382,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 這家貴婦百貨盡是價格昂貴的泊來品，令人望而卻不
+    to: 這家貴婦百貨盡是價格昂貴的泊來品，令人望而卻步
+    note: 「望而卻不」應為「望而卻步」：「這家貴婦百貨盡是價格昂貴的泊來品，令人望而卻不」→「這家貴婦百貨盡是價格昂貴的泊來品，令人望而卻步」
+    by: review
 - id: doc_113_新北_崇林_國文_g9s1e3_s2_12
   section: 2
   number: 12

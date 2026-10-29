@@ -209,7 +209,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 如圖，$\overline{BE}$ 為 $\angle ABC$ 的角平分線，$\overline{DE}\parallel\overline{BC}$，若
+  stem: 如圖，$\overrightarrow{BE}$ 為 $\angle ABC$ 的角平分線，$\overline{DE} // \overline{BC}$，若
     $\triangle ADE$ 的周長為 12，$\overline{BE}=5$，求 $\triangle ABE$ 的周長=？
   options:
   - label: A
@@ -254,6 +254,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，$\overline{BE}$ 為 $\angle ABC$ 的角平分線，$\overline{DE}\parallel\overline{BC}$，若
+      $\triangle ADE$ 的周長為 12，$\overline{BE}=5$，求 $\triangle ABE$ 的周長=？
+    to: 如圖，$\overrightarrow{BE}$ 為 $\angle ABC$ 的角平分線，$\overline{DE} // \overline{BC}$，若
+      $\triangle ADE$ 的周長為 12，$\overline{BE}=5$，求 $\triangle ABE$ 的周長=？
+    note: BE上方為射線符號誤植為線段
+    by: review
+    extraction: true
 - id: doc_112_桃園_石門_數學_g9s1e3_s1_7
   section: 1
   number: 7

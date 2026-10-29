@@ -278,7 +278,9 @@ questions:
   number: 8
   type: single
   page: 2
-  stem: 根據上述，下列哪一個說法不正確？
+  stem: '什麼是數位性別暴力？行政院性別平等處指出，數位性別暴力是透過網路或數位方式，基於性別的暴力行為。
+
+    根據上述，下列哪一個說法<u>不正確</u>？'
   options:
   - label: A
     content: 任意散布他人私密影像，因為是在網路上所以不構成違法行為
@@ -289,22 +291,16 @@ questions:
   - label: D
     content: 資訊科技帶來便利的生活同時也出現問題。
   assets:
-  - key: s1_8_f1
+  - key: s1_8_r10290704_1
     kind: figure
-    file: doc_113_屏東_中正_社會_公民_g9s2e1/s1_8_f1.png
+    file: doc_113_屏東_中正_社會_公民_g9s2e1/s1_8_r10290704_1.png
     crop:
       page: 2
       rect:
-      - 54.91
-      - 153.91
-      - 614.8
-      - 400.82
-      auto_from:
-      - 53.35
-      - 151.53
-      - 616.25
-      - 397.31
-    crop_by: auto
+      - 52.1
+      - 148.71
+      - 616.69
+      - 400.22
   tags:
     chapter:
       publisher: 翰林
@@ -322,6 +318,14 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據上述，下列哪一個說法不正確？
+    to: '什麼是數位性別暴力？行政院性別平等處指出，數位性別暴力是透過網路或數位方式，基於性別的暴力行為。
+
+      根據上述，下列哪一個說法<u>不正確</u>？'
+    note: 漏擷取題幹開頭引言文字
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_社會_公民_g9s2e1_s1_9
   section: 1
   number: 9
@@ -663,13 +667,13 @@ questions:
     | 小正：『這影片好有趣！下載並上傳到其他平台分享給同學看！』 | (C)著作權 | (D)申請審查通過後 |'
   options:
   - label: A
-    content: 大中侵權項目為專利權
+    content: 專利權
   - label: B
-    content: 大中侵權權利取得時間為完成時即取得
+    content: 完成時即取得
   - label: C
-    content: 小正侵權項目為著作權
+    content: 著作權
   - label: D
-    content: 小正侵權權利取得時間為申請審查通過後
+    content: 申請審查通過後
   tags:
     chapter:
       publisher: 翰林
@@ -687,6 +691,28 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '下列敘述中的選項何者正確？
+
+      | 對話內容 | 侵權項目 | 權利取得時間 |
+
+      | --- | --- | --- |
+
+      | 大中：『買到仿冒名牌包了！太不甘心了，要上拍賣網站賣掉！』 | (A)專利權 | (B)完成時即取得 |
+
+      | 小正：『這影片好有趣！下載並上傳到其他平台分享給同學看！』 | (C)著作權 | (D)申請審查通過後 |'
+    to: '下列敘述中的選項何者正確？
+
+      | 對話內容 | 侵權項目 | 權利取得時間 |
+
+      | --- | --- | --- |
+
+      | 大中：『買到仿冒名牌包了！太不甘心了，要上拍賣網站賣掉！』 | (A)專利權 | (B)完成時即取得 |
+
+      | 小正：『這影片好有趣！下載並上傳到其他平台分享給同學看！』 | (C)著作權 | (D)申請審查通過後 |'
+    note: 原卷選項在表格內，擷取自行添加描述文字於選項中
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_社會_公民_g9s2e1_s1_20
   section: 1
   number: 20

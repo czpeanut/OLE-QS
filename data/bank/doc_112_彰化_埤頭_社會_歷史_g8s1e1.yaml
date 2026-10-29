@@ -33,7 +33,11 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 右圖是某出土文物上刻寫的銘文，依其內容意判斷，最可能是呈現下列何人的事蹟？
+  stem: '右圖是某出土文物上刻寫的銘文，依其內容意判斷，最可能是呈現下列何人的事蹟？
+
+    銘文大意：
+
+    二十六年，皇帝兼併天下諸侯，百姓生活安定。立號為皇帝，並下詔丞相隗狀、王綰二人，將原先各國不同的度量衡，加以統一。'
   options:
   - label: A
     content: 秦始皇
@@ -44,22 +48,16 @@ questions:
   - label: D
     content: 明太祖。
   assets:
-  - key: s1_1_f1
+  - key: s1_1_r10290649_1
     kind: figure
-    file: doc_112_彰化_埤頭_社會_歷史_g8s1e1/s1_1_f1.png
+    file: doc_112_彰化_埤頭_社會_歷史_g8s1e1/s1_1_r10290649_1.png
     crop:
       page: 1
       rect:
-      - 787.42
-      - 160.07
-      - 851.27
-      - 356.06
-      auto_from:
-      - 790.36
-      - 169.2
-      - 873.82
-      - 366.22
-    crop_by: auto
+      - 856.49
+      - 158.43
+      - 980.04
+      - 253.11
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -80,6 +78,16 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 右圖是某出土文物上刻寫的銘文，依其內容意判斷，最可能是呈現下列何人的事蹟？
+    to: '右圖是某出土文物上刻寫的銘文，依其內容意判斷，最可能是呈現下列何人的事蹟？
+
+      銘文大意：
+
+      二十六年，皇帝兼併天下諸侯，百姓生活安定。立號為皇帝，並下詔丞相隗狀、王綰二人，將原先各國不同的度量衡，加以統一。'
+    note: 漏擷取題目右側的「銘文大意」說明文字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_2
   section: 1
   number: 2
@@ -165,7 +173,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 西元2016年，一部以中國長城為題材的科幻片《長城》（The Great Wall）上映，內容家中外長期透過長城與科技武器，防守長城外的高古代怪獸「饕餮」。這概念與華夏民族長期透過長城抵抗北方的草原民族入侵相似。請問最初修築長城的目的是要抵禦哪個草原民族入侵？
+  stem: 西元 2016 年，一部以中國長城為題材的科幻片《長城》（The Great Wall）上映，內容描述中外長期透過長城與科技武器，防守長城外的古代怪獸「饕餮」。這概念與華夏民族長期透過長城抵抗北方的草原民族入侵相似。請問最初修築長城的目的是要抵禦哪個草原民族入侵？
   options:
   - label: A
     content: 匈奴
@@ -194,17 +202,23 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 西元2016年，一部以中國長城為題材的科幻片《長城》（The Great Wall）上映，內容家中外長期透過長城與科技武器，防守長城外的高古代怪獸「饕餮」。這概念與華夏民族長期透過長城抵抗北方的草原民族入侵相似。請問最初修築長城的目的是要抵禦哪個草原民族入侵？
+    to: 西元 2016 年，一部以中國長城為題材的科幻片《長城》（The Great Wall）上映，內容描述中外長期透過長城與科技武器，防守長城外的古代怪獸「饕餮」。這概念與華夏民族長期透過長城抵抗北方的草原民族入侵相似。請問最初修築長城的目的是要抵禦哪個草原民族入侵？
+    note: 「描述」誤作「家中」，「古代」前多「高」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_5
   section: 1
   number: 5
   type: single
   page: 1
-  stem: 歷史課一群熱愛歷史的同學正在討論中國古代世族會形成的原因。請問：下列何人的說法沒有世家大族？
+  stem: 歷史課一群熱愛歷史的同學正在討論中國古代世族會形成的原因。請問：下列何人的說法有誤？
   options:
   - label: A
-    content: 子瑄：「東漢逐漸形成以經學傳家的品官之仕。」
+    content: 子瑄：「東漢逐漸形成以經學傳家的世家大族。」
   - label: B
-    content: 昱維：「曹魏時期開始實施九品品官之仕。」
+    content: 昱維：「曹魏時期開始實施九品官人法。」
   - label: C
     content: 承隆：「魏晉時期世族鼎盛，世族掌控政治權力。」
   - label: D
@@ -228,6 +242,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 歷史課一群熱愛歷史的同學正在討論中國古代世族會形成的原因。請問：下列何人的說法沒有世家大族？
+    to: 歷史課一群熱愛歷史的同學正在討論中國古代世族會形成的原因。請問：下列何人的說法有誤？
+    note: 題幹漏字改意，(A)(B)選項文字擷取錯亂
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_6
   section: 1
   number: 6
@@ -242,7 +262,7 @@ questions:
   - label: C
     content: 西漢
   - label: D
-    content: 東朝。
+    content: 東漢
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -262,6 +282,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 俗話說：「士之子恆為士，工之子恆為工，商之子恆為商，農之子恆為農。」這種現象最可能存在於哪一個時代？
+    to: 俗話說：「士之子恆為士，工之子恆為工，商之子恆為商，農之子恆為農。」這種現象最可能存在於哪一個時代？
+    note: 選項文字「東漢」誤作「東朝」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_7
   section: 1
   number: 7
@@ -301,7 +327,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 雨璇喜歡看武俠小說，他決定在疫情趨緩後的暑假，搭乘機體驗絲路沿途的綺麗風光。請問：雨璇旅行的行程應是附圖中哪一路？
+  stem: 雨璇喜歡看武俠小說，他決定在疫情趨緩後的暑假，搭飛機體驗絲路沿途的綺麗風光。請問：雨璇旅行的行程應是附圖中哪一路？
   options:
   - label: A
     content: 甲
@@ -348,6 +374,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 雨璇喜歡看武俠小說，他決定在疫情趨緩後的暑假，搭乘機體驗絲路沿途的綺麗風光。請問：雨璇旅行的行程應是附圖中哪一路？
+    to: 雨璇喜歡看武俠小說，他決定在疫情趨緩後的暑假，搭飛機體驗絲路沿途的綺麗風光。請問：雨璇旅行的行程應是附圖中哪一路？
+    note: 「飛」誤作「乘」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_9
   section: 1
   number: 9
@@ -490,7 +522,7 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: 志孚是一位家境清寒的農家子弟，雖然沒有受過良好的教育，但是卻十分孝順父母、友愛兄弟，因此博得了家鄉父老的一致讚許。當地的西方首長聽聞了他的事蹟，便在當年度向朝廷舉薦人才時，將他列入推薦的名單。請問：志孚最有可能是生活在哪個時期？
+  stem: 志孚是一位家境清寒的農家子弟，雖然沒有受過良好的教育，但是卻十分孝順父母、友愛兄弟，因此博得了家鄉父老的一致讚許。當地的「地方」首長聽聞了他的事蹟，便在當年度向朝廷舉薦人才時，將他列入推薦的名單。請問：志孚最有可能生活在哪個時期？
   options:
   - label: A
     content: 商代
@@ -499,7 +531,7 @@ questions:
   - label: C
     content: 漢代
   - label: D
-    content: 魏晉南北朝。
+    content: 魏晉南北朝
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -519,6 +551,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 志孚是一位家境清寒的農家子弟，雖然沒有受過良好的教育，但是卻十分孝順父母、友愛兄弟，因此博得了家鄉父老的一致讚許。當地的西方首長聽聞了他的事蹟，便在當年度向朝廷舉薦人才時，將他列入推薦的名單。請問：志孚最有可能是生活在哪個時期？
+    to: 志孚是一位家境清寒的農家子弟，雖然沒有受過良好的教育，但是卻十分孝順父母、友愛兄弟，因此博得了家鄉父老的一致讚許。當地的「地方」首長聽聞了他的事蹟，便在當年度向朝廷舉薦人才時，將他列入推薦的名單。請問：志孚最有可能生活在哪個時期？
+    note: 「地方」誤作「西方」，且漏字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_14
   section: 1
   number: 14
@@ -533,7 +571,7 @@ questions:
   - label: C
     content: 戰功顯赫的大臣
   - label: D
-    content: 因孝順被譽為最高的百姓。
+    content: 因孝順被推崇為最高尚的百姓。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -553,6 +591,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 商朝、周朝建立以來，統治者為了管理新取得的疆土而推行封建制度，賜予被分封者土地及治理地方的權力，藉此穩固統治。請問：下列哪一人物不會是被分封的對象？
+    to: 商朝、周朝建立以來，統治者為了管理新取得的疆土而推行封建制度，賜予被分封者土地及治理地方的權力，藉此穩固統治。請問：下列哪一人物不會是被分封的對象？
+    note: 漏「尚」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_15
   section: 1
   number: 15
@@ -712,7 +756,7 @@ questions:
   number: 19
   type: single
   page: 1
-  stem: 宗倍若想要破解第一關「中國漢代的主耍外患，這個外患是來自哪個方位？又稱為什麽？」承樂可以怎麼回答？
+  stem: 宗倍若想要破解第一關「中國漢代的主要外患，這個外患是來自哪個方位？又稱為何？」承樂可以怎麼回答？
   options:
   - label: A
     content: 西方，犬戎
@@ -722,7 +766,8 @@ questions:
     content: 南方，羌
   - label: D
     content: 北方，匈奴。
-  group_stem: 宗倍與承樂最近迷上了一個新的線上遊戲「中國PK傳」，兩個經常半夜不睡連線組隊對戰，遊戲的內容呈現中國在過去歷史的發展中，與四周勢力的應對有不同的政策考量，請回答19-21題：
+  group_stem: 宗倍與承樂最近迷上了一個新的線上遊戲「中國PK傳」，兩個經常半夜不睡連線組隊對戰，遊戲的內容呈現中國在過去歷史的發展中，與四周勢力的應對有不同的政策考量，請回答
+    19~21 題：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -742,12 +787,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 宗倍若想要破解第一關「中國漢代的主耍外患，這個外患是來自哪個方位？又稱為什麽？」承樂可以怎麼回答？
+    to: 宗倍若想要破解第一關「中國漢代的主要外患，這個外患是來自哪個方位？又稱為何？」承樂可以怎麼回答？
+    note: 「主要」誤作「主耍」，「何」誤作「什麽」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_20
   section: 1
   number: 20
   type: single
   page: 2
-  stem: 宗倍發現，中國在唐太宗時代，國力強盛，對於西方遊牧民族的戰爭頗有進展，請問此北方民族應為下列何者？
+  stem: 宗倍發現，中國在唐太宗時代，國力強盛，對於北方遊牧民族的戰爭頗有進展，請問此北方民族應為下列何者？
   options:
   - label: A
     content: 鮮卑
@@ -757,7 +808,8 @@ questions:
     content: 西突厥
   - label: D
     content: 東突厥。
-  group_stem: 宗倍與承樂最近迷上了一個新的線上遊戲「中國PK傳」，兩個經常半夜不睡連線組隊對戰，遊戲的內容呈現中國在過去歷史的發展中，與四周勢力的應對有不同的政策考量，請回答19-21題：
+  group_stem: 宗倍與承樂最近迷上了一個新的線上遊戲「中國PK傳」，兩個經常半夜不睡連線組隊對戰，遊戲的內容呈現中國在過去歷史的發展中，與四周勢力的應對有不同的政策考量，請回答
+    19~21 題：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -777,6 +829,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 宗倍發現，中國在唐太宗時代，國力強盛，對於西方遊牧民族的戰爭頗有進展，請問此北方民族應為下列何者？
+    to: 宗倍發現，中國在唐太宗時代，國力強盛，對於北方遊牧民族的戰爭頗有進展，請問此北方民族應為下列何者？
+    note: 「北方」誤作「西方」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_21
   section: 1
   number: 21
@@ -792,7 +850,8 @@ questions:
     content: 天王
   - label: D
     content: 天可汗。
-  group_stem: 宗倍與承樂最近迷上了一個新的線上遊戲「中國PK傳」，兩個經常半夜不睡連線組隊對戰，遊戲的內容呈現中國在過去歷史的發展中，與四周勢力的應對有不同的政策考量，請回答19-21題：
+  group_stem: 宗倍與承樂最近迷上了一個新的線上遊戲「中國PK傳」，兩個經常半夜不睡連線組隊對戰，遊戲的內容呈現中國在過去歷史的發展中，與四周勢力的應對有不同的政策考量，請回答
+    19~21 題：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -817,7 +876,7 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 周王室東遷後，鄭國由於於勢強大，久不履行諸侯對天子的義務。依據周朝規定，封國國君三年不入朝進貢，即被視為叛逆。周王於是號召一些小國軍隊，合力討伐鄭國，結果為鄭國所敗，率軍親征的周王也中箭，差點被俘。請問：上述史實反映出何種政治上的變化？
+  stem: 周王室東遷後，鄭國由於國勢強大，久不履行諸侯對天子的義務。依據周朝規定，封國國君三年不入朝進貢，即被視為叛逆。周王於是號召一些小國軍隊，合力討伐鄭國，結果為鄭國所敗，率軍親征的周王也中箭，差點被俘。請問：上述史實反映出何種政治上的變化？
   options:
   - label: A
     content: 戰爭規模逐漸變小
@@ -846,6 +905,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 周王室東遷後，鄭國由於於勢強大，久不履行諸侯對天子的義務。依據周朝規定，封國國君三年不入朝進貢，即被視為叛逆。周王於是號召一些小國軍隊，合力討伐鄭國，結果為鄭國所敗，率軍親征的周王也中箭，差點被俘。請問：上述史實反映出何種政治上的變化？
+    to: 周王室東遷後，鄭國由於國勢強大，久不履行諸侯對天子的義務。依據周朝規定，封國國君三年不入朝進貢，即被視為叛逆。周王於是號召一些小國軍隊，合力討伐鄭國，結果為鄭國所敗，率軍親征的周王也中箭，差點被俘。請問：上述史實反映出何種政治上的變化？
+    note: 「勢力」誤作「於勢」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_23
   section: 1
   number: 23
@@ -1108,7 +1173,7 @@ questions:
   number: 30
   type: single
   page: 2
-  stem: 鮮卑族拓跋旦回憶年輕時政府曾遷移首都要到漢人文化薈萃之地，他配合政策不說鮮卑語，並把原本的名字「拓跋旦」改為「元旦」。請問：拓跋旦應生活在下列哪一朝代？
+  stem: 鮮卑族拓跋旦回憶年輕時政府曾遷移首都到漢人文化薈萃之地，他配合政策不說鮮卑語，並把原本的名字「拓跋旦」改為「元旦」。請問：拓跋旦應生活在下列哪一朝代？
   options:
   - label: A
     content: 隋
@@ -1137,6 +1202,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 鮮卑族拓跋旦回憶年輕時政府曾遷移首都要到漢人文化薈萃之地，他配合政策不說鮮卑語，並把原本的名字「拓跋旦」改為「元旦」。請問：拓跋旦應生活在下列哪一朝代？
+    to: 鮮卑族拓跋旦回憶年輕時政府曾遷移首都到漢人文化薈萃之地，他配合政策不說鮮卑語，並把原本的名字「拓跋旦」改為「元旦」。請問：拓跋旦應生活在下列哪一朝代？
+    note: 多「要」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e1_s1_31
   section: 1
   number: 31
@@ -1330,13 +1401,13 @@ questions:
   stem: 戰國時期，各國先後實施變法改革，當時改革如此頻繁的主要背景為何？
   options:
   - label: A
-    content: 社會富農貧富不均，人民要求政府推行變革
+    content: 社會貧富不均，人民要求政府推行變革
   - label: B
     content: 地方政府為求建設，要求中央政府推行變革
   - label: C
     content: 列國軍事競爭激烈，君主變法力求富國強兵
   - label: D
-    content: 游牧民族威脅各國，君王改革維護防安全。
+    content: 游牧民族威脅各國，君王改革維護國防安全。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1356,6 +1427,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 戰國時期，各國先後實施變法改革，當時改革如此頻繁的主要背景為何？
+    to: 戰國時期，各國先後實施變法改革，當時改革如此頻繁的主要背景為何？
+    note: (A)多「富農」二字，(D)漏「國」字
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_32_33
   label: 題組附圖

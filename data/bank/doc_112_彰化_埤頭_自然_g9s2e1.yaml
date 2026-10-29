@@ -111,7 +111,7 @@ questions:
 
     | :--- |
 
-    | 日本受到強烈帶氣旋通過的影響，造成嚴重災情。日本氣象廳預計此強烈低氣壓的影響將達3天，已經發布防強風及大浪的警報，並陸續沿海危險區域的民眾。 |'
+    | 日本受到強烈溫帶氣旋通過的影響，造成嚴重災情。日本氣象廳預計此強烈低氣壓的影響將達3天，已經發布防強風及大浪的警報，並陸續疏散沿海危險區域的民眾。 |'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -131,6 +131,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據此報導，下列有關溫帶氣旋特性的推論，何者最合理？
+    to: 根據此報導，下列有關溫帶氣旋特性的推論，何者最合理？
+    note: 短文漏「溫」字與「疏散」二字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s2e1_s1_4
   section: 1
   number: 4
@@ -141,7 +147,7 @@ questions:
   - label: A
     content: 此氣壓中心處為上升氣流
   - label: B
-    content: 此氣壓中心處壓數值為 1004 帕斯卡(Pa)
+    content: 此氣壓中心處氣壓數值為 1004 帕斯卡(Pa)
   - label: C
     content: 此氣壓中心處地面氣流向內逆時針旋入
   - label: D
@@ -182,6 +188,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下圖是某地的地面天氣圖，實線為等壓線，下列敘述何者正確？
+    to: 下圖是某地的地面天氣圖，實線為等壓線，下列敘述何者正確？
+    note: 選項(B)漏「氣」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s2e1_s1_5
   section: 1
   number: 5
@@ -991,14 +1003,14 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 關於氣團的敘述，下列何者正確？
+  stem: 關於甲氣團的敘述，下列何者正確？
   options:
   - label: A
     content: 勢力增大，其勢力延伸至臺灣時，此時臺灣吹西北風
   - label: B
-    content: 此氣團形成的氣壓系統附近逆時鐘方向流出
+    content: 此氣團形成的氣壓系統使附近的空氣逆時鐘方向流出
   - label: C
-    content: 此氣團中心空氣的空氣形成上升氣流
+    content: 此氣團中心處的空氣形成上升氣流
   - label: D
     content: 此氣團主要發源於蒙古及西伯利亞地區。
   group_stem: 下圖中甲、乙兩氣團為影響臺灣天氣的兩大氣團，試回答下列問題：
@@ -1022,6 +1034,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於氣團的敘述，下列何者正確？
+    to: 關於甲氣團的敘述，下列何者正確？
+    note: 題幹漏「甲」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s2e1_s1_24
   section: 1
   number: 24
@@ -1098,7 +1116,7 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: 氣象報導：「台灣明後天鋒面通過，將有陣雨或雷雨，並且氣溫驟降，將有機達到寒流等級，請多加保暖。」應該是參考了哪一張地面天氣圖？
+  stem: 氣象報導：「台灣明後天鋒面通過，將有陣雨或雷雨，並且氣溫驟降，將有機會達到寒流等級，請多加保暖。」應該是參考了哪一張地面天氣圖？
   options:
   - label: A
     content: 甲
@@ -1129,6 +1147,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 氣象報導：「台灣明後天鋒面通過，將有陣雨或雷雨，並且氣溫驟降，將有機達到寒流等級，請多加保暖。」應該是參考了哪一張地面天氣圖？
+    to: 氣象報導：「台灣明後天鋒面通過，將有陣雨或雷雨，並且氣溫驟降，將有機會達到寒流等級，請多加保暖。」應該是參考了哪一張地面天氣圖？
+    note: 題幹漏「會」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s2e1_s1_27
   section: 1
   number: 27
@@ -1286,7 +1310,7 @@ questions:
     content: 此颱風屬於低氣壓中心
   - label: D
     content: 宜蘭、蘇澳外海強風豪雨，波濤洶湧。
-  group_stem: 小奕由中央氣象局網站觀察颱風已在臺灣附近，若颱風繼續朝西偏北方向前進，試回答下列問題（註：圖中02代表1002百帕，以此類推）：
+  group_stem: 小奕由中央氣象局網站觀察颱風已在臺灣附近，若颱風繼續朝西偏北方向前進，試回答下列問題（註：圖中 02 代表 1002 百帕，以此類推）：
   shared_asset: g1_31_33
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1317,12 +1341,12 @@ questions:
   - label: A
     content: 地面風速不變，風向由北風轉為東風
   - label: B
-    content: 地面氣壓逐漸漸升高
+    content: 地面氣壓逐漸升高
   - label: C
     content: 當颱風中心經過北部海面又逢大潮，則可能成為「西北颱」，造成海水倒灌嚴重危害
   - label: D
-    content: 若颱風眼到達臺北地區，在此地將有最強大風雨。
-  group_stem: 小奕由中央氣象局網站觀察颱風已在臺灣附近，若颱風繼續朝西偏北方向前進，試回答下列問題（註：圖中02代表1002百帕，以此類推）：
+    content: 若颱風眼到達臺北地區，在此地將有最強大風雨
+  group_stem: 小奕由中央氣象局網站觀察颱風已在臺灣附近，若颱風繼續朝西偏北方向前進，試回答下列問題（註：圖中 02 代表 1002 百帕，以此類推）：
   shared_asset: g1_31_33
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1343,6 +1367,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若颱風漸漸接近基隆外海，則有關臺北地區的敘述何者正確？
+    to: 若颱風漸漸接近基隆外海，則有關臺北地區的敘述何者正確？
+    note: 選項(B)多打一個「漸」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s2e1_s1_33
   section: 1
   number: 33
@@ -1358,7 +1388,7 @@ questions:
     content: 氣壓
   - label: D
     content: 以上皆是。
-  group_stem: 小奕由中央氣象局網站觀察颱風已在臺灣附近，若颱風繼續朝西偏北方向前進，試回答下列問題（註：圖中02代表1002百帕，以此類推）：
+  group_stem: 小奕由中央氣象局網站觀察颱風已在臺灣附近，若颱風繼續朝西偏北方向前進，試回答下列問題（註：圖中 02 代表 1002 百帕，以此類推）：
   shared_asset: g1_31_33
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1467,7 +1497,7 @@ questions:
     content: 甲 > 乙
   - label: D
     content: 乙 > 丙 > 甲。
-  group_stem: 拿三根相同的圓形空心硬紙筒，分別以不同長度的漆包線纏繞如圖中之(甲)、(乙)、(丙)，加熱電通過相同電流於線圈後，試回答下列問題：
+  group_stem: 拿三根相同的圓形空心硬紙筒，分別以不同長度的漆包線纏繞如圖中之(甲)、(乙)、(丙)，加電池通以相同電流於線圈後，試回答下列問題：
   shared_asset: g1_36_37
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1496,14 +1526,14 @@ questions:
   stem: 在甲的圓形空心硬紙筒中，(a)加入一根鋁釘；(b)保持原狀；(c)加入一根沒有磁性的鐵釘。則通以相同電流於線圈後，在兩端吸引迴紋針的磁力大小順序為何？
   options:
   - label: A
-    content: j < b < a
+    content: c < b < a
   - label: B
     content: c > a > b
   - label: C
     content: c > b = a
   - label: D
     content: a = b = c。
-  group_stem: 拿三根相同的圓形空心硬紙筒，分別以不同長度的漆包線纏繞如圖中之(甲)、(乙)、(丙)，加熱電通過相同電流於線圈後，試回答下列問題：
+  group_stem: 拿三根相同的圓形空心硬紙筒，分別以不同長度的漆包線纏繞如圖中之(甲)、(乙)、(丙)，加電池通以相同電流於線圈後，試回答下列問題：
   shared_asset: g1_36_37
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1525,6 +1555,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 在甲的圓形空心硬紙筒中，(a)加入一根鋁釘；(b)保持原狀；(c)加入一根沒有磁性的鐵釘。則通以相同電流於線圈後，在兩端吸引迴紋針的磁力大小順序為何？
+    to: 在甲的圓形空心硬紙筒中，(a)加入一根鋁釘；(b)保持原狀；(c)加入一根沒有磁性的鐵釘。則通以相同電流於線圈後，在兩端吸引迴紋針的磁力大小順序為何？
+    note: 選項(A)的 c 誤植為 j
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s2e1_s1_38
   section: 1
   number: 38
@@ -1735,7 +1771,7 @@ questions:
   number: 44
   type: single
   page: 3
-  stem: 根據選文的資料。下列天氣圖，何者最適適合在臺灣上空進行人造雨的作業？
+  stem: 根據選文的資料。下列天氣圖，何者最適合在臺灣上空進行人造雨的作業？
   options:
   - label: A
     content: ''
@@ -1828,6 +1864,12 @@ questions:
     gemini_high: A
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 根據選文的資料。下列天氣圖，何者最適適合在臺灣上空進行人造雨的作業？
+    to: 根據選文的資料。下列天氣圖，何者最適合在臺灣上空進行人造雨的作業？
+    note: 題幹多打一個「適」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s2e1_s1_45
   section: 1
   number: 45

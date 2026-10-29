@@ -477,7 +477,7 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: '「車中有後至之老年人或婦人，男子必起立而讓之坐，讓座是一種美風，豈惟文明人所獨有耶？」
+  stem: '「車中有後至之老年人或婦人，男子必起立而讓之坐，讓座是一種美風，<u class="dbl">豈惟文明人所獨有耶？</u>」
 
     文中畫雙線處的含義，與下列何者最接近？'
   options:
@@ -506,6 +506,16 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '「車中有後至之老年人或婦人，男子必起立而讓之坐，讓座是一種美風，豈惟文明人所獨有耶？」
+
+      文中畫雙線處的含義，與下列何者最接近？'
+    to: '「車中有後至之老年人或婦人，男子必起立而讓之坐，讓座是一種美風，<u class="dbl">豈惟文明人所獨有耶？</u>」
+
+      文中畫雙線處的含義，與下列何者最接近？'
+    note: 原卷此句有畫雙底線，擷取未標註畫線處使題目無法作答
+    by: review
+    extraction: true
 - id: doc_113_新北_五峰_國文_g9s2e2_s1_15
   section: 1
   number: 15

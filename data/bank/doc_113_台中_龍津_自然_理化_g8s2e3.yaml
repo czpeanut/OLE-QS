@@ -36,12 +36,35 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: "柏豪將丁酸和乙醇倒入試管中混合，再滴入幾滴濃硫酸，接著把試管放入水中加熱3～5分鐘，如右圖所示；該反應的反應式如下：丁酸＋乙醇 $\\rightarrow$\
-    \ $\begin{array}{|c|}\n\\hline\n\\quad\n\\\\hline\n\\end{array}$ ＋水。關於產物 $\begin{array}{|c|}\n\
-    \\hline\n\\quad\n\\\\hline\n\\end{array}$ 的敘述，下列何者錯誤？"
+  stem: '柏豪將丁酸和乙醇倒入試管中混合，再滴入幾滴濃硫酸，接著把試管放入水中加熱3～5分鐘，如右圖所示；該反應的反應式如下：丁酸＋乙醇 $\rightarrow$
+    $\begin{array}{|c|}
+
+    \hline
+
+    \quad
+
+    \\hline
+
+    \end{array}$ ＋水。關於產物 $\begin{array}{|c|}
+
+    \hline
+
+    \quad
+
+    \\hline
+
+    \end{array}$ 的敘述，下列何者錯誤？'
   options:
   - label: A
-    content: "$\begin{array}{|c|}\n\\hline\n\\quad\n\\\\hline\n\\end{array}$ 為丁酸乙酯"
+    content: '$\begin{array}{|c|}
+
+      \hline
+
+      \quad
+
+      \\hline
+
+      \end{array}$ 為丁酸乙酯'
   - label: B
     content: 易溶於水
   - label: C
@@ -84,6 +107,31 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: "柏豪將丁酸和乙醇倒入試管中混合，再滴入幾滴濃硫酸，接著把試管放入水中加熱3～5分鐘，如右圖所示；該反應的反應式如下：丁酸＋乙醇 $\\rightarrow$\
+      \ $\begin{array}{|c|}\n\\hline\n\\quad\n\\\\hline\n\\end{array}$ ＋水。關於產物 $\b\
+      egin{array}{|c|}\n\\hline\n\\quad\n\\\\hline\n\\end{array}$ 的敘述，下列何者"
+    to: '柏豪將丁酸和乙醇倒入試管中混合，再滴入幾滴濃硫酸，接著把試管放入水中加熱3～5分鐘，如右圖所示；該反應的反應式如下：丁酸＋乙醇 $\rightarrow$
+      $\begin{array}{|c|}
+
+      \hline
+
+      \quad
+
+      \\hline
+
+      \end{array}$ ＋水。關於產物 $\begin{array}{|c|}
+
+      \hline
+
+      \quad
+
+      \\hline
+
+      \end{array}$ 的敘述，下列'
+    note: LaTeX語法漏了反斜線，誤成egin
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_自然_理化_g8s2e3_s1_2
   section: 1
   number: 2
@@ -558,7 +606,7 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: 下列有關宇宏描述力的作用結果，不需和物體接觸的有幾種？(甲)拉弓將弓箭射出；(乙)磁鐵作用吸引迴紋針；(丙)往上丟的物體受力落回地面；(丁)滾動的球受力作用用愈來愈慢；(戊)球浮在水面上；(己)摩擦後的塑膠板能吸引頭髮
+  stem: 下列有關宇宏描述力的作用結果，不需和物體接觸的有幾種？(甲)拉弓將弓箭射出；(乙)磁鐵作用吸引迴紋針；(丙)往上丟的物體受力落回地面；(丁)滾動的球受力作用愈來愈慢；(戊)球浮在水面上；(己)摩擦後的塑膠板能吸引頭髮
   options:
   - label: A
     content: '2'
@@ -587,6 +635,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列有關宇宏描述力的作用結果，不需和物體接觸的有幾種？(甲)拉弓將弓箭射出；(乙)磁鐵作用吸引迴紋針；(丙)往上丟的物體受力落回地面；(丁)滾動的球受力作用用愈來愈慢；(戊)球浮在水面上；(己)摩擦後的塑膠板能吸引頭髮
+    to: 下列有關宇宏描述力的作用結果，不需和物體接觸的有幾種？(甲)拉弓將弓箭射出；(乙)磁鐵作用吸引迴紋針；(丙)往上丟的物體受力落回地面；(丁)滾動的球受力作用愈來愈慢；(戊)球浮在水面上；(己)摩擦後的塑膠板能吸引頭髮
+    note: 多了一個「用」字
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_自然_理化_g8s2e3_s1_14
   section: 1
   number: 14
@@ -695,7 +749,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 宇杰看到一則小故事：古羅馬時期，人們常用動物來祭天，由於燒動物的時候要用到木材，木材的灰燼可減少土壤酸化之外，和動物的油脂混合後，產生了一種類似肥皂的東西，大雨把這些東西沖刷到當地婦女用來洗衣衣服的河流，她們發現衣服洗得更乾淨了。已知木材的灰燼溶液為鹼性；試判斷當時進行的反應，與何類型較無關？
+  stem: 宇杰看到一則小故事：古羅馬時期，人們常用動物來祭天，由於燒動物的時候要用到木材，木材的灰燼可減少土壤酸化之外，和動物的油脂混合後，產生了一種類似肥皂的東西，大雨把這些東西沖刷到當地婦女用來洗衣服的河流，她們發現衣服洗得更乾淨了。已知木材的灰燼溶液為鹼性；試判斷當時進行的反應，與何類型較無關？
   options:
   - label: A
     content: 酯化反應
@@ -725,6 +779,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 宇杰看到一則小故事：古羅馬時期，人們常用動物來祭天，由於燒動物的時候要用到木材，木材的灰燼可減少土壤酸化之外，和動物的油脂混合後，產生了一種類似肥皂的東西，大雨把這些東西沖刷到當地婦女用來洗衣衣服的河流，她們發現衣服洗得更乾淨了。已知木材的灰燼溶液為鹼性；試判斷當時進行的反應，與何類型較無關？
+    to: 宇杰看到一則小故事：古羅馬時期，人們常用動物來祭天，由於燒動物的時候要用到木材，木材的灰燼可減少土壤酸化之外，和動物的油脂混合後，產生了一種類似肥皂的東西，大雨把這些東西沖刷到當地婦女用來洗衣服的河流，她們發現衣服洗得更乾淨了。已知木材的灰燼溶液為鹼性；試判斷當時進行的反應，與何類型較無關？
+    note: 多了一個「衣」字
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_自然_理化_g8s2e3_s1_17
   section: 1
   number: 17
@@ -739,7 +799,7 @@ questions:
   - label: C
     content: 甲醚與乙醇的原子排列方式相同
   - label: D
-    content: 甲醚與乙醇的分子的分子量不同
+    content: 甲醚與乙醇的分子量不同
   assets:
   - key: s1_17_f1
     kind: figure
@@ -776,6 +836,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 少宏組甲醚與乙醇的分子結構模型如右圖所示，下列相關敘述何者正確？
+    to: 少宏組甲醚與乙醇的分子結構模型如右圖所示，下列相關敘述何者正確？
+    note: 多了一個「分子」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_自然_理化_g8s2e3_s1_18
   section: 1
   number: 18
@@ -1421,7 +1487,7 @@ questions:
   - label: B
     content: 植物纖維的主要成分為蛋白質
   - label: C
-    content: 合成纖維是將植物的纖維素溶解前後再抽成絲狀製成
+    content: 合成纖維是將植物的纖維素溶解後再抽成絲狀製成
   - label: D
     content: 天然纖維與人造纖維均屬於有機聚合物
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1443,6 +1509,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列關於冠宇對衣料纖維的敘述，何者正確？
+    to: 下列關於冠宇對衣料纖維的敘述，何者正確？
+    note: 多了一個「前」字
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_自然_理化_g8s2e3_s2_31
   section: 2
   number: 31
@@ -1667,7 +1739,7 @@ questions:
   number: 35
   type: single
   page: 3
-  stem: '如右圖所示，昱珉用不同接觸面做彈簧秤讀數實驗，木塊剛開始移動時的彈簧秤讀數如上表所示，哪一個接觸面最粗糙？
+  stem: '如右圖所示，昱珉用不同接觸面做摩擦力實驗，木塊剛開始移動時的彈簧秤讀數如上表所示，哪一個接觸面最粗糙？
 
 
     | 不同的接觸面 | 甲 | 乙 | 丙 | 丁 |
@@ -1714,6 +1786,26 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如右圖所示，昱珉用不同接觸面做彈簧秤讀數實驗，木塊剛開始移動時的彈簧秤讀數如上表所示，哪一個接觸面最粗糙？
+
+
+      | 不同的接觸面 | 甲 | 乙 | 丙 | 丁 |
+
+      | --- | --- | --- | --- | --- |
+
+      | 彈簧秤讀數 (gw) | 105 | 80 | 125 | 95 |'
+    to: '如右圖所示，昱珉用不同接觸面做摩擦力實驗，木塊剛開始移動時的彈簧秤讀數如上表所示，哪一個接觸面最粗糙？
+
+
+      | 不同的接觸面 | 甲 | 乙 | 丙 | 丁 |
+
+      | --- | --- | --- | --- | --- |
+
+      | 彈簧秤讀數 (gw) | 105 | 80 | 125 | 95 |'
+    note: 原卷為「摩擦力實驗」，誤植為表格標題字樣
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_自然_理化_g8s2e3_s2_36
   section: 2
   number: 36
@@ -2007,7 +2099,7 @@ questions:
   number: 43
   type: single
   page: 4
-  stem: 如右圖所示，傑將一木塊放在水平面上，同時受到$F_{1}$、$F_{2}$和摩擦力保持靜止，$F_{1}=10\text{kgw}$、$F_{2}=2\text{kgw}$，若移除$F_{2}$後，木塊仍保持靜止，木塊在水平方向所受到的合力大小及方向為何？
+  stem: 如右圖所示，楷傑將一木塊放在水平面上，同時受到$F_{1}$、$F_{2}$和摩擦力保持靜止，$F_{1}=10\text{kgw}$、$F_{2}=2\text{kgw}$，若移除$F_{2}$後，木塊仍保持靜止，木塊在水平方向所受到的合力大小及方向為何？
   options:
   - label: A
     content: 10kgw，方向向左
@@ -2053,6 +2145,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖所示，傑將一木塊放在水平面上，同時受到$F_{1}$、$F_{2}$和摩擦力保持靜止，$F_{1}=10\text{kgw}$、$F_{2}=2\text{kgw}$，若移除$F_{2}$後，木塊仍保持靜止，木塊在水平方向所受到的合力大小及方向為何？
+    to: 如右圖所示，楷傑將一木塊放在水平面上，同時受到$F_{1}$、$F_{2}$和摩擦力保持靜止，$F_{1}=10\text{kgw}$、$F_{2}=2\text{kgw}$，若移除$F_{2}$後，木塊仍保持靜止，木塊在水平方向所受到的合力大小及方向為何？
+    note: 漏了人名中的「楷」字
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_自然_理化_g8s2e3_s2_44
   section: 2
   number: 44
@@ -2258,7 +2356,7 @@ questions:
   group_stem: '頌恩閱讀文章雜誌時，看到以下一段文字，請在閱讀下列敘述後，回答問題：
 
 
-    西元2021年，國際知名海運的貨樞船擱淺在埃及 蘇伊士運河。這艘船因受到當地沙塵暴的強風吹襲，導致偏離航道進而與運河底部碰撞造成擱淺。由於河道窄小，其他船隻無法繞行通過，造成超過300艘船隻排隊等候。好不容易經過六天的搶救後，貨樞船才成功脫困，恢復運河的雙向航運'
+    西元2021年，國際知名海運的貨櫃船擱淺在埃及 蘇伊士運河。這艘船因受到當地沙塵暴的強風吹襲，導致偏離航道進而與運河底部碰撞造成擱淺。由於河道窄小，其他船隻無法繞行通過，造成超過300艘船隻排隊等候。好不容易經過六天的搶救後，貨櫃船才成功脫困，恢復運河的雙向航運'
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -2278,12 +2376,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一般船隻的側邊，都會標記著吃水深度，是指船舶在水中沉入水下部分的最大深度，下列哪一項因素<u>不會</u>影響吃水深度的變化？
+    to: 一般船隻的側邊，都會標記著吃水深度，是指船舶在水中沉入水下部分的最大深度，下列哪一項因素<u>不會</u>影響吃水深度的變化？
+    note: 短文中兩處「貨櫃船」均誤植為「貨樞船」
+    by: review
+    extraction: true
 - id: doc_113_台中_龍津_自然_理化_g8s2e3_s2_50
   section: 2
   number: 50
   type: single
   page: 4
-  stem: 關於文中戶提及的PS或PP的敘述，何者正確？
+  stem: 關於文中所提及的PS或PP的敘述，何者正確？
   options:
   - label: A
     content: 兩者都屬於耐高溫的網狀聚合物
@@ -2318,3 +2422,9 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於文中戶提及的PS或PP的敘述，何者正確？
+    to: 關於文中所提及的PS或PP的敘述，何者正確？
+    note: 「所」誤植為「戶」
+    by: review
+    extraction: true

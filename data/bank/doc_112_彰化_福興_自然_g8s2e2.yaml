@@ -188,30 +188,64 @@ questions:
   stem: 附圖為氯化氫水溶液中的離子示意圖，於此溶液中加入下列哪一杯氫氧化鈉水溶液，能恰好完全中和？
   options:
   - label: A
-    content: (A)
+    content: ''
+    asset:
+      key: optA
+      file: doc_112_彰化_福興_自然_g8s2e2/s1_5_r10290709_2.png
+      crop:
+        page: 1
+        rect:
+        - 151.83
+        - 489.69
+        - 233.1
+        - 566.14
   - label: B
-    content: (B)
+    content: ''
+    asset:
+      key: optB
+      file: doc_112_彰化_福興_自然_g8s2e2/s1_5_r10290709_3.png
+      crop:
+        page: 1
+        rect:
+        - 231.3
+        - 489.69
+        - 313.6
+        - 566.87
   - label: C
-    content: (C)
+    content: ''
+    asset:
+      key: optC
+      file: doc_112_彰化_福興_自然_g8s2e2/s1_5_r10290709_4.png
+      crop:
+        page: 1
+        rect:
+        - 312.82
+        - 489.69
+        - 397.19
+        - 566.87
   - label: D
-    content: (D)
+    content: ''
+    asset:
+      key: optD
+      file: doc_112_彰化_福興_自然_g8s2e2/s1_5_r10290709_5.png
+      crop:
+        page: 1
+        rect:
+        - 396.42
+        - 488.96
+        - 482.85
+        - 566.87
   assets:
-  - key: s1_5_f1
+  - key: s1_5_r10290709_1
     kind: figure
-    file: doc_112_彰化_福興_自然_g8s2e2/s1_5_f1.png
+    file: doc_112_彰化_福興_自然_g8s2e2/s1_5_r10290709_1.png
     crop:
       page: 1
       rect:
-      - 79.31
-      - 489.94
-      - 479.34
-      - 566.15
-      auto_from:
-      - 71.02
-      - 486.0
-      - 479.78
-      - 564.87
-    crop_by: auto
+      - 76.5
+      - 490.42
+      - 150.54
+      - 565.41
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -231,6 +265,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 附圖為氯化氫水溶液中的離子示意圖，於此溶液中加入下列哪一杯氫氧化鈉水溶液，能恰好完全中和？
+    to: 附圖為氯化氫水溶液中的離子示意圖，於此溶液中加入下列哪一杯氫氧化鈉水溶液，能恰好完全中和？
+    note: 選項為圖片，但漏標（選項為圖片）且未附圖檔
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_自然_g8s2e2_s1_6
   section: 1
   number: 6
@@ -560,8 +600,8 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: "以平衡「$\\text{A} + \\text{B} \rightleftharpoons \\text{C} + \\text{D} + \\\
-    text{熱量}$」而論，下列四種方法中，何者對增加 D 的產量無效？"
+  stem: 以平衡「$\text{A} + \text{B} \rightleftharpoons \text{C} + \text{D} + \text{熱量}$」而論，下列四種方法中，何者對增加
+    D 的產量無效？
   options:
   - label: A
     content: 增加 B
@@ -590,6 +630,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: "以平衡「$\\text{A} + \\text{B} \rightleftharpoons \\text{C} + \\text{D} + \\\
+      text{熱量}$」而論，下列四種方法中，何者對增加 D 的產量無效？"
+    to: 以平衡「$\text{A} + \text{B} \rightleftharpoons \text{C} + \text{D} + \text{熱量}$」而論，下列四種方法中，何者對增加
+      D 的產量無效？
+    note: 可逆反應雙箭號漏反斜線與r，變成ightleftharpoons
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_自然_g8s2e2_s1_14
   section: 1
   number: 14
@@ -1005,8 +1053,8 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 阿採取 1 L 的 0.5 M 氯化鋇（$BaCl_{2}$）水溶液與 1 L 的 0.5 M 硫酸鈉（$Na_{2}SO_{4}$）水溶液混合，立刻產生白色沉澱。他將溶液過濾，取出沉澱物進一步實驗，確認成分為硫酸鋇，含量為
-    0.5 莫耳，而過濾後的澄清濾液，經測試在室溫時具有良好的導電性，則濾液中「主要」的導電粒子為下列何者？
+  stem: 阿永取 1 L 的 0.5 M 氯化鋇（$BaCl_{2}$）水溶液與 1 L 的 0.5 M 硫酸鈉（$Na_{2}SO_{4}$）水溶液混合，立刻產生白色沉澱。他將溶液過濾，取出沉澱物進一步實驗，確認成分為硫酸鋇，含量為
+    0.5 莫耳，而過濾後的澄清濾液，經測試發現在室溫時具有良好的導電性，則濾液中「主要的」導電粒子為下列何者？
   options:
   - label: A
     content: $H^{+}$、$OH^{-}$
@@ -1035,6 +1083,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 阿採取 1 L 的 0.5 M 氯化鋇（$BaCl_{2}$）水溶液與 1 L 的 0.5 M 硫酸鈉（$Na_{2}SO_{4}$）水溶液混合，立刻產生白色沉澱。他將溶液過濾，取出沉澱物進一步實驗，確認成分為硫酸鋇，含量為
+      0.5 莫耳，而過濾後的澄清濾液，經測試在室溫時具有良好的導電性，則濾液中「主要」的導電粒子為下列何者？
+    to: 阿永取 1 L 的 0.5 M 氯化鋇（$BaCl_{2}$）水溶液與 1 L 的 0.5 M 硫酸鈉（$Na_{2}SO_{4}$）水溶液混合，立刻產生白色沉澱。他將溶液過濾，取出沉澱物進一步實驗，確認成分為硫酸鋇，含量為
+      0.5 莫耳，而過濾後的澄清濾液，經測試發現在室溫時具有良好的導電性，則濾液中「主要的」導電粒子為下列何者？
+    note: 「阿永取」誤辨識為「阿採取」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_自然_g8s2e2_s1_26
   section: 1
   number: 26
@@ -1322,17 +1378,21 @@ questions:
   stem: '附表為相同時間內酵素反應的實驗結果，由此實驗結果推論，下列何者是使此實驗反應中生成物質質量較多的主要關鍵？
 
 
-    | 試管 | 反應前溶液總體積 | 酵素體積 | 作用溫度 | 反應前的作用物質 | 反應後生成的物質 |
+    | 試管 | 反應前溶液總體積 | 酵素體積 | 作用溫度 | 反應前的待作用物質 | 反應後生成的物質 |
 
     | --- | --- | --- | --- | --- | --- |
 
-    | 甲 | 200 mL | 3 mL | 15℃ | 100 g | 25 g |
+    | 甲 | $200\text{ mL}$ | $3\text{ mL}$ | $15^\circ\text{C}$ | $100\text{ g}$ |
+    $25\text{ g}$ |
 
-    | 乙 | 200 mL | 6 mL | 15℃ | 100 g | 25 g |
+    | 乙 | $200\text{ mL}$ | $6\text{ mL}$ | $15^\circ\text{C}$ | $100\text{ g}$ |
+    $25\text{ g}$ |
 
-    | 丙 | 200 mL | 3 mL | 30℃ | 100 g | 50 g |
+    | 丙 | $200\text{ mL}$ | $3\text{ mL}$ | $30^\circ\text{C}$ | $100\text{ g}$ |
+    $50\text{ g}$ |
 
-    | 丁 | 200 mL | 6 mL | 30℃ | 100 g | 50 g |'
+    | 丁 | $200\text{ mL}$ | $6\text{ mL}$ | $30^\circ\text{C}$ | $100\text{ g}$ |
+    $50\text{ g}$ |'
   options:
   - label: A
     content: 作用溫度的高低
@@ -1361,6 +1421,28 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '附表為相同時間內酵素反應的實驗結果，由此實驗結果推論，下列何者是使此實驗反應中生成物質質量較多的主要關鍵？
+
+
+      | 試管 | 反應前溶液總體積 | 酵素體積 | 作用溫度 | 反應前的作用物質 | 反應後生成的物質 |
+
+      | --- | --- | --- | --- | --- | --- |
+
+      | 甲 | 200 mL | 3 mL | 15℃ | 100 g | 25 g |
+
+      | 乙 | 200 '
+    to: '附表為相同時間內酵素反應的實驗結果，由此實驗結果推論，下列何者是使此實驗反應中生成物質質量較多的主要關鍵？
+
+
+      | 試管 | 反應前溶液總體積 | 酵素體積 | 作用溫度 | 反應前的待作用物質 | 反應後生成的物質 |
+
+      | --- | --- | --- | --- | --- | --- |
+
+      | 甲 | $200\text{ mL}$ | $3\text{ mL}$ | $15^\circ\te'
+    note: 表格欄位漏「待」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_自然_g8s2e2_s1_33
   section: 1
   number: 33

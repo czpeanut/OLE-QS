@@ -545,7 +545,7 @@ questions:
   number: 12
   type: single
   page: 4
-  stem: 國民政府遷到臺灣後，為了讓人保留持著反攻大陸的目標，將許多地名改為具有國家意識形態的名稱。下列何者不符合上述原則？
+  stem: 國民政府遷到臺灣後，為了讓人保持著反攻大陸的目標，將許多地名改為具有國家意識形態的名稱。下列何者不符合上述原則？
   options:
   - label: A
     content: 桃園市復興區
@@ -574,6 +574,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 國民政府遷到臺灣後，為了讓人保留持著反攻大陸的目標，將許多地名改為具有國家意識形態的名稱。下列何者不符合上述原則？
+    to: 國民政府遷到臺灣後，為了讓人保持著反攻大陸的目標，將許多地名改為具有國家意識形態的名稱。下列何者不符合上述原則？
+    note: 多打「留」字，應為「人民保持著」
+    by: review
+    extraction: true
 - id: doc_113_台中_清水_社會_地理_g9s2e1_s1_13
   section: 1
   number: 13
@@ -1047,7 +1053,7 @@ questions:
   - label: A
     content: 食用原型食物
   - label: B
-    content: 購買色澤漂亮得商品
+    content: 購買色澤漂亮的商品
   - label: C
     content: 選擇有信譽廠商的產品
   - label: D
@@ -1104,6 +1110,14 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 2024.01.30 食藥署公布，從中國進口的「辣椒粉」有高達 2 萬 8903 公斤檢出蘇丹色素三號。接著陸續查驗出多樣辣椒粉或含有辣椒粉、胡椒粉、咖哩粉的加工食品中含有蘇丹紅，成為
+      2024 上半年臺灣食安大事件。下圖是關於蘇丹紅的簡介。請問該如何避免食用蘇丹紅食品？
+    to: 2024.01.30 食藥署公布，從中國進口的「辣椒粉」有高達 2 萬 8903 公斤檢出蘇丹色素三號。接著陸續查驗出多樣辣椒粉或含有辣椒粉、胡椒粉、咖哩粉的加工食品中含有蘇丹紅，成為
+      2024 上半年臺灣食安大事件。下圖是關於蘇丹紅的簡介。請問該如何避免食用蘇丹紅食品？
+    note: 原卷為「漂亮的商品」，誤植為「漂亮得」
+    by: review
+    extraction: true
 - id: doc_113_台中_清水_社會_地理_g9s2e1_s1_26
   section: 1
   number: 26

@@ -143,7 +143,7 @@ questions:
   stem: 「我們不應該不惜任何代價的去保護友誼，而因此使友誼受到玷汙。如果為了那更偉大的愛，必須犧牲友誼，那也是沒有辦法的事。」（泰戈爾）下列何者的行為，最符合這段文字中「為了那更偉大的愛，必須犧牲友誼」的狀況？
   options:
   - label: A
-    content: 桓謙想讓生病的老家紀早點回家休息，自願接手她未完成的工作
+    content: 桓謙想讓生病的家妃早點回家休息，自願接手她未完成的工作
   - label: B
     content: 婉婷身為檢察官，親手將犯罪的好友家豪繩之以法
   - label: C
@@ -169,6 +169,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「我們不應該不惜任何代價的去保護友誼，而因此使友誼受到玷汙。如果為了那更偉大的愛，必須犧牲友誼，那也是沒有辦法的事。」（泰戈爾）下列何者的行為，最符合這段文字中「為了那更偉大的愛，必須犧牲友誼」的狀況？
+    to: 「我們不應該不惜任何代價的去保護友誼，而因此使友誼受到玷汙。如果為了那更偉大的愛，必須犧牲友誼，那也是沒有辦法的事。」（泰戈爾）下列何者的行為，最符合這段文字中「為了那更偉大的愛，必須犧牲友誼」的狀況？
+    note: 原卷為「的家妃」，誤擷為「老家紀」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g9s2e2_s1_5
   section: 1
   number: 5
@@ -245,7 +251,7 @@ questions:
   stem: 下列文句「」中的字，何者讀音標示正確？
   options:
   - label: A
-    content: 他的笑「靨」如花，溫暖了每一個人的心：ㄧㄢ
+    content: 他的笑「靨」如花，溫暖了每一個人的心：ㄧㄢˇ
   - label: B
     content: 努力了這麼久，卻功虧一簣，真令人扼「腕」：ㄨㄢˇ
   - label: C
@@ -271,6 +277,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列文句「」中的字，何者讀音標示正確？
+    to: 下列文句「」中的字，何者讀音標示正確？
+    note: 選項(A)注音漏了第三聲符號
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g9s2e2_s1_8
   section: 1
   number: 8
@@ -1491,14 +1503,14 @@ questions:
   number: 42
   type: single
   page: 6
-  stem: 下列何者最可能是本詩所寄託的言外之意？
+  stem: 下列何者最可能是本詩所寄託的言外之意？（原卷有誤，已修正）
   options:
   - label: A
     content: 真正的不朽，是能禁得起風雨的考驗
   - label: B
     content: 花兒須經風霜洗禮，才能顯得更加嬌豔
   - label: C
-    content: 越貧的土地，越能襯托植物的美
+    content: 越貧瘠的土地，越能襯托植物的美
   - label: D
     content: 美不只有一種形式，缺陷也是一種美。
   group_stem: '群芳譜上只有你們的名字
@@ -1551,6 +1563,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 越貧的土地，越能襯托植物的美
+    to: 越貧瘠的土地，越能襯托植物的美
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「越貧的土地，越能襯托植物的美」→「越貧瘠的土地，越能襯托植物的美」
+    by: review
 - id: doc_111_彰化_福興_國文_g9s2e2_s2_43
   section: 2
   number: 43

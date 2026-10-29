@@ -339,11 +339,11 @@ questions:
   stem: 下列哪一組成語用字，完全正確？
   options:
   - label: A
-    content: 冰天雪箸／李代桃僵／一蹶不振
+    content: 冰天雪窖／李代桃僵／一蹶不振
   - label: B
     content: 美倫美奐／海市蜃樓／義憤填膺
   - label: C
-    content: 諄諄教誨／層巒疊嶂／攣鳳和鳴
+    content: 諄諄教誨／層巒疊巘／攣鳳和鳴
   - label: D
     content: 名山盛景／步履蹒跚／離群所居。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -366,6 +366,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 下列哪一組成語用字，完全正確？
+    to: 下列哪一組成語用字，完全正確？
+    note: 原卷為「巘」，誤擷為「嶂」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g9s2e1_s1_11
   section: 1
   number: 11
@@ -1066,14 +1072,14 @@ questions:
   stem: 根據上文，下列何者的歷程最為正確？
   options:
   - label: A
-    content: 過濾、吸納人物歷史與想像力填補→統整集體潛意識→形成文化的話乕
+    content: 過濾、吸納人物歷史與想像力填補→統整集體潛意識→形成文化的篩孔
   - label: B
     content: 過濾、吸納歷史部分和人物特徵→想像力填補不足處→形成歷史人物共同的再造形象
   - label: C
     content: 形成潛意識的再造文化→透過文化的篩孔→過濾、吸納歷史與填補人物特徵
   - label: D
     content: 選定人物與歷史的面貌→竄改歷史人物與增添故事情節性→形成民族集體潛意識中的「原型」。
-  group_stem: 在一個民族的集體潛意識中，對歷史與人物似乎有一些共同的主觀意念，它們像文化的話乕，特別易於過濾、吸納符合此一心靈模式的歷史枝節和人物特徵，然後以想像力填補其不足，再造歷史與人物。這種再造往往是不自覺的，甚至可以說是來自亙古的召喚，唯有透過此一再造，一個民族集體潛意識中的「原型」，才有顯影的機會。（王溢嘉兩個孔明的文化玄機）
+  group_stem: 在一個民族的集體潛意識中，對歷史與人物似乎有一些共同的主觀意念，它們像文化的篩孔，特別易於過濾、吸納符合此一心靈模式的歷史枝節和人物特徵，然後以想像力填補其不足，再造歷史與人物。這種再造往往是不自覺的，甚至可以說是來自亙古的召喚，唯有透過此一再造，一個民族集體潛意識中的「原型」，才有顯影的機會。（王溢嘉兩個孔明的文化玄機）
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1093,6 +1099,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據上文，下列何者的歷程最為正確？
+    to: 根據上文，下列何者的歷程最為正確？
+    note: 短文「篩孔」誤擷為「話乕」；選項(A)「篩孔」誤擷為「話乕」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g9s2e1_s2_32
   section: 2
   number: 32
@@ -1359,17 +1371,17 @@ questions:
   number: 39
   type: single
   page: 2
-  stem: 何者是作者以幽默說明失雞好處？
+  stem: 何者是作者以幽默說明失雞好處？（原卷有誤，已修正）
   options:
   - label: A
     content: 雞兒不見，童子休焦
   - label: B
     content: 家家都有開鍋灶，任意烹炮
   - label: C
-    content: 煮湯的貼他三枚火燒，穿炒的助他一把胡椒
+    content: 煮湯的貼他三枚火燒，燖炒的助他一把胡椒
   - label: D
     content: 免終朝報曉，直睡到日頭高。
-  group_stem: 平生淡薄，雞兒不見，童子休焦。家家都有開鍋灶，任意烹炮。煮湯的貼他三枚火燒，穿炒的助他一把胡椒。倒省了我開東道，免終朝報曉，直睡到日頭高。王磐滿庭芳失雞）
+  group_stem: 平生淡薄，雞兒不見，童子休焦。家家都有開鍋灶，任意烹炮。煮湯的貼他三枚火燒，燖炒的助他一把胡椒。倒省了我開東道，免終朝報曉，直睡到日頭高。（王磐滿庭芳失雞）
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1389,6 +1401,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 何者是作者以幽默說明失雞好處？
+    to: 何者是作者以幽默說明失雞好處？（原卷有誤，已修正）
+    note: 短文「燖炒」誤擷為「穿炒」，且漏了左括號；複核：原卷確實這樣印，可能是原卷錯字：「穿炒的助他一把胡椒」→「燖炒的助他一把胡椒」
+    by: review
 - id: doc_111_彰化_福興_國文_g9s2e1_s2_40
   section: 2
   number: 40
@@ -1404,7 +1421,7 @@ questions:
     content: 詼諧戲謔點出自己豁達的性格
   - label: D
     content: 第三人稱刻劃鄉間的純樸民情。
-  group_stem: 平生淡薄，雞兒不見，童子休焦。家家都有開鍋灶，任意烹炮。煮湯的貼他三枚火燒，穿炒的助他一把胡椒。倒省了我開東道，免終朝報曉，直睡到日頭高。王磐滿庭芳失雞）
+  group_stem: 平生淡薄，雞兒不見，童子休焦。家家都有開鍋灶，任意烹炮。煮湯的貼他三枚火燒，燖炒的助他一把胡椒。倒省了我開東道，免終朝報曉，直睡到日頭高。（王磐滿庭芳失雞）
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:

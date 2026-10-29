@@ -35,14 +35,14 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 下列文句，何者用字完全正確？
+  stem: 下列文句，何者用字完全正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 這起空難事件，機上乘客無一悻勉，令人悲痛萬分
   - label: B
     content: 食物若是保存不當，容易滋生黴菌
   - label: C
-    content: 當年圓純老師勤勉我的話，致今仍言猷在耳
+    content: 當年圓純老師勤勉我的話，至今仍言猶在耳
   - label: D
     content: 合歡山白雪愷愷，吸引許多遊客追雪而來。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -64,6 +64,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 致今仍言猷在耳
+    to: 至今仍言猶在耳
+    note: 「致今」「言猷」應為「至今」「言猶」：「致今仍言猷在耳」→「至今仍言猶在耳」
+    by: review
 - id: doc_111_彰化_福興_國文_g8s2e3_s1_2
   section: 1
   number: 2
@@ -707,11 +712,11 @@ questions:
   number: 20
   type: single
   page: 4
-  stem: '「宋河中府浮梁1，用鐵牛八繫之，一牛且數萬斤。治平中，水暴漲絕梁，牽牛沒於河。募能出之者。真定僧懷丙以二大舟實土，夾牛繫之，用大木為權衡2狀鉤牛，徐去其土，舟浮牛出。」根據這則故事，下列說明何者最不恰當？
+  stem: '「宋河中府浮梁1，用鐵牛八繫之，一牛且數萬斤。治平中，水暴漲絕梁，牽牛沒於河。募能出之者。真定僧懷丙以二大舟實土，夾牛掣之，用大木為權衡2狀鉤牛，徐去其土，舟浮牛出。」根據這則故事，下列說明何者最不恰當？
 
     註1.浮梁：浮橋 2.權衡：秤錘秤桿 3.吃水：船身低於水面的深度
 
-    （109會考補考）'
+    （109會考補考）（原卷有誤，已修正）'
   options:
   - label: A
     content: 鐵牛的設置是為了固定浮梁
@@ -740,6 +745,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 真定僧懷丙以二大舟實土，夾牛繫之
+    to: 真定僧懷丙以二大舟實土，夾牛掣之
+    note: 「繫」應為「掣」或原卷作「繫」但此處實土後鉤牽：「真定僧懷丙以二大舟實土，夾牛繫之」→「真定僧懷丙以二大舟實土，夾牛掣之」
+    by: review
 - id: doc_111_彰化_福興_國文_g8s2e3_s1_21
   section: 1
   number: 21

@@ -353,33 +353,27 @@ questions:
   type: single
   page: 2
   stem: 如圖(四)，$\overline{AB}$、$\overline{CD}$為圓$O$的直徑，$E$是圓$O$上一點，已知$\angle EAB=32^{\circ}$，$\angle
-    DBA=34^{\circ}$，則$\widehat{AD}-\angle CDE=？$
+    DBA=34^{\circ}$，則$\angle AOD-\angle CDE=？$
   options:
   - label: A
-    content: 5°
+    content: $5^{\circ}$
   - label: B
-    content: 4°
+    content: $4^{\circ}$
   - label: C
-    content: 3°
+    content: $3^{\circ}$
   - label: D
-    content: 2°
+    content: $2^{\circ}$
   assets:
-  - key: s1_8_f1
+  - key: s1_8_r10290713_1
     kind: figure
-    file: doc_112_彰化_福興_數學_g9s1e2/s1_8_f1.png
+    file: doc_112_彰化_福興_數學_g9s1e2/s1_8_r10290713_1.png
     crop:
       page: 2
       rect:
-      - 41.77
-      - 347.65
-      - 138.3
-      - 480.99
-      auto_from:
-      - 37.64
-      - 342.65
-      - 142.69
-      - 478.15
-    crop_by: auto
+      - 34.09
+      - 344.46
+      - 137.3
+      - 487.12
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -398,6 +392,14 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 如圖(四)，$\overline{AB}$、$\overline{CD}$為圓$O$的直徑，$E$是圓$O$上一點，已知$\angle EAB=32^{\circ}$，$\angle
+      DBA=34^{\circ}$，則$\widehat{AD}-\angle CDE=？$
+    to: 如圖(四)，$\overline{AB}$、$\overline{CD}$為圓$O$的直徑，$E$是圓$O$上一點，已知$\angle EAB=32^{\circ}$，$\angle
+      DBA=34^{\circ}$，則$\angle AOD-\angle CDE=？$
+    note: 原卷為角符號∠AOD，擷取誤作AD弧
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_數學_g9s1e2_s1_9
   section: 1
   number: 9

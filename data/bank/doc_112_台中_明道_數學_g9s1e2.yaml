@@ -1123,10 +1123,10 @@ questions:
   number: 25
   type: single
   page: 6
-  stem: 小玉在購物平台上買了4件原價皆為1111元的衣服，請問小玉使用哪一種折扣，這次最後結帳時付的金額最少？
+  stem: 小玉在購物平台上買了4件原價皆為1111元的衣服，請問小玉使用哪一種折扣，這次最後結帳時付的金額最少？（原卷有誤，已修正）
   options:
   - label: A
-    content: 滿3000元即享8折優惠，滿5000元場即享75折優惠。
+    content: 滿3000元即享8折優惠，滿5000元即享75折優惠。
   - label: B
     content: 消費滿千送百：滿1000元即贈送100元購物金，滿2000元即贈送200元購物金，以此類推，無上限，可立即折抵。
   - label: C
@@ -1153,6 +1153,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 滿 5000 元場即享 75 折優惠
+    to: 滿 5000 元即享 75 折優惠
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「滿 5000 元場即享 75 折優惠」→「滿 5000 元即享 75 折優惠」
+    by: review
 - id: doc_112_台中_明道_數學_g9s1e2_s1_26
   section: 1
   number: 26

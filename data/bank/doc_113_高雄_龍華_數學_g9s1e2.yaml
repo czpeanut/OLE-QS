@@ -62,7 +62,7 @@ questions:
   type: single
   page: 1
   stem: 如圖，設 $\overline{AB}$ 為圓 $O$ 的直徑，且 $\overline{CD} // \overline{AB}$，若 $\angle
-    OCD=50^{\circ}$，則 $\overline{BD}$ 的度數是多少？
+    OCD=50^{\circ}$，則 $\wideparen{BD}$ 的度數是多少？
   options:
   - label: A
     content: $50^{\circ}$
@@ -106,13 +106,21 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，設 $\overline{AB}$ 為圓 $O$ 的直徑，且 $\overline{CD} // \overline{AB}$，若 $\angle
+      OCD=50^{\circ}$，則 $\overline{BD}$ 的度數是多少？
+    to: 如圖，設 $\overline{AB}$ 為圓 $O$ 的直徑，且 $\overline{CD} // \overline{AB}$，若 $\angle
+      OCD=50^{\circ}$，則 $\wideparen{BD}$ 的度數是多少？
+    note: 原卷為弧記號，擷取誤為線段記號
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 如圖，阿佑設計了一個圓形徽章，若 $\overline{AB}$ 與 $\overline{CD}$ 的長度比為 $3:5$，圓 $O$ 的半徑為
-    $10$，$\angle AOB=72^{\circ}$，則 $\overline{CD}$ 的長度是多少？
+  stem: 如圖，阿佑設計了一個圓形徽章，若 $\overparen{AB}$ 與 $\overparen{CD}$ 的長度比為 $3:5$，圓 $O$ 的半徑為
+    $10$，$\angle AOB=72^{\circ}$，則 $\overparen{CD}$ 的長度是多少？
   options:
   - label: A
     content: $8\pi$
@@ -156,6 +164,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，阿佑設計了一個圓形徽章，若 $\overline{AB}$ 與 $\overline{CD}$ 的長度比為 $3:5$，圓 $O$ 的半徑為
+      $10$，$\angle AOB=72^{\circ}$，則 $\overline{CD}$ 的長度是多少？
+    to: 如圖，阿佑設計了一個圓形徽章，若 $\overparen{AB}$ 與 $\overparen{CD}$ 的長度比為 $3:5$，圓 $O$ 的半徑為
+      $10$，$\angle AOB=72^{\circ}$，則 $\overparen{CD}$ 的長度是多少？
+    note: 原卷弧 AB、弧 CD 均被誤作線段記號
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_4
   section: 1
   number: 4
@@ -244,7 +260,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 如圖，$\overline{AB}$ 的長是圓周的 $\frac{1}{6}$，則下列敘述何者不一定正確？
+  stem: 如圖，$\overgroup{AB}$ 的長是圓周的 $\frac{1}{6}$，則下列敘述何者<u>不一定</u>正確？
   options:
   - label: A
     content: $\angle CAD=\angle CBD$
@@ -288,20 +304,26 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，$\overline{AB}$ 的長是圓周的 $\frac{1}{6}$，則下列敘述何者不一定正確？
+    to: 如圖，$\overgroup{AB}$ 的長是圓周的 $\frac{1}{6}$，則下列敘述何者<u>不一定</u>正確？
+    note: 原卷為弧記號，擷取誤為線段記號
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 2
-  stem: 如圖，阿明在圓 $O$ 上取 $A$、$B$、$C$、$D$ 四點，使 $\overline{AB}:\overline{CD}=2:3$，$\overline{BC}=2\overline{AB}$，若
+  stem: 如圖，阿明在圓 $O$ 上取 $A$、$B$、$C$、$D$ 四點，使 $\overgroup{AB}:\overgroup{CD}=2:3$，$\overgroup{BC}=2\overgroup{AB}$，若
     $\angle COD=75^{\circ}$，則下列敘述何者錯誤？
   options:
   - label: A
-    content: $\overline{AB}:\overline{BC}:\overline{CD}=2:4:3$
+    content: $\overgroup{AB}:\overgroup{BC}:\overgroup{CD}=2:4:3$
   - label: B
     content: $\angle AOB=50^{\circ}$
   - label: C
-    content: $\overline{BC}=100^{\circ}$
+    content: $\overgroup{BC}=100^{\circ}$
   - label: D
     content: $\angle AOD=150^{\circ}$
   assets:
@@ -338,6 +360,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，阿明在圓 $O$ 上取 $A$、$B$、$C$、$D$ 四點，使 $\overline{AB}:\overline{CD}=2:3$，$\overline{BC}=2\overline{AB}$，若
+      $\angle COD=75^{\circ}$，則下列敘述何者錯誤？
+    to: 如圖，阿明在圓 $O$ 上取 $A$、$B$、$C$、$D$ 四點，使 $\overgroup{AB}:\overgroup{CD}=2:3$，$\overgroup{BC}=2\overgroup{AB}$，若
+      $\angle COD=75^{\circ}$，則下列敘述何者錯誤？
+    note: 題幹與選項之弧記號均被誤作線段記號
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_8
   section: 1
   number: 8
@@ -617,11 +647,11 @@ questions:
     交圓於 $C$、$D$ 兩點，若 $\angle P=50^{\circ}$，則下列選項何者錯誤？
   options:
   - label: A
-    content: $\overline{AC}=\overline{BD}$
+    content: $\overgroup{AC}=\overgroup{BD}$
   - label: B
-    content: $\overline{CD}=80^{\circ}$
+    content: $\overgroup{CD}=80^{\circ}$
   - label: C
-    content: $\overline{BD}=40^{\circ}$
+    content: $\overgroup{BD}=40^{\circ}$
   - label: D
     content: $\angle ABC=25^{\circ}$
   assets:
@@ -658,12 +688,20 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，$\overline{AB}$ 為圓 $O$ 的直徑，$\triangle PAB$ 為等腰三角形，且 $\overline{PA}=\overline{PB}$，$\overline{PA}$、$\overline{PB}$
+      交圓於 $C$、$D$ 兩點，若 $\angle P=50^{\circ}$，則下列選項何者錯誤？
+    to: 如圖，$\overline{AB}$ 為圓 $O$ 的直徑，$\triangle PAB$ 為等腰三角形，且 $\overline{PA}=\overline{PB}$，$\overline{PA}$、$\overline{PB}$
+      交圓於 $C$、$D$ 兩點，若 $\angle P=50^{\circ}$，則下列選項何者錯誤？
+    note: 選項 (A)(B)(C) 弧記號均被誤作線段記號
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_15
   section: 1
   number: 15
   type: single
   page: 3
-  stem: 如圖，圓周上 $A$、$B$、$C$ 三點把圓周分成 $3:4:5$ 的三個弧 $\overline{AB}$、$\overline{BC}$、$\overline{AC}$，則下列有關
+  stem: 如圖，圓周上 $A$、$B$、$C$ 三點把圓周分成 $3:4:5$ 的三個弧 $\overparen{AB}$、$\overparen{BC}$、$\overparen{AC}$，則下列有關
     $\triangle ABC$ 的敘述何者錯誤？
   options:
   - label: A
@@ -708,6 +746,14 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，圓周上 $A$、$B$、$C$ 三點把圓周分成 $3:4:5$ 的三個弧 $\overline{AB}$、$\overline{BC}$、$\overline{AC}$，則下列有關
+      $\triangle ABC$ 的敘述何者錯誤？
+    to: 如圖，圓周上 $A$、$B$、$C$ 三點把圓周分成 $3:4:5$ 的三個弧 $\overparen{AB}$、$\overparen{BC}$、$\overparen{AC}$，則下列有關
+      $\triangle ABC$ 的敘述何者錯誤？
+    note: 弧記號均被誤作線段記號
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_16
   section: 1
   number: 16
@@ -966,9 +1012,9 @@ questions:
   number: 21
   type: single
   page: 4
-  stem: 如圖，$\overline{AC}$、$\overline{BD}$ 皆為半圓，$\overline{AC}$ 與 $\overline{BD}$
-    相交於 $E$ 點，其中 $A$、$B$、$C$、$D$ 在同一直線上，且 $B$ 為 $\overline{AC}$ 的中點。若 $\overline{CE}=56^{\circ}$，則
-    $\overline{BE}$ 的度數為何？
+  stem: 如圖，$\overparen{AC}$、$\overparen{BD}$ 皆為半圓，$\overparen{AC}$ 與 $\overparen{BD}$
+    相交於 $E$ 點，其中 $A$、$B$、$C$、$D$ 在同一直線上，且 $B$ 為 $\overline{AC}$ 的中點。若 $\overparen{CE}=56^{\circ}$，則
+    $\overparen{BE}$ 的度數為何？
   options:
   - label: A
     content: $34^{\circ}$
@@ -1012,6 +1058,16 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，$\overline{AC}$、$\overline{BD}$ 皆為半圓，$\overline{AC}$ 與 $\overline{BD}$
+      相交於 $E$ 點，其中 $A$、$B$、$C$、$D$ 在同一直線上，且 $B$ 為 $\overline{AC}$ 的中點。若 $\overline{CE}=56^{\circ}$，則
+      $\overline{BE}$ 的度數為何？
+    to: 如圖，$\overparen{AC}$、$\overparen{BD}$ 皆為半圓，$\overparen{AC}$ 與 $\overparen{BD}$
+      相交於 $E$ 點，其中 $A$、$B$、$C$、$D$ 在同一直線上，且 $B$ 為 $\overline{AC}$ 的中點。若 $\overparen{CE}=56^{\circ}$，則
+      $\overparen{BE}$ 的度數為何？
+    note: 題幹中弧記號均被誤作線段記號
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_22
   section: 1
   number: 22
@@ -1070,15 +1126,15 @@ questions:
   stem: 有一直徑為 $\overline{AB}$ 的圓，且圓上有 $C$、$D$、$E$、$F$ 四點，其位置如圖所示。若 $\overline{AC}=6$，$\overline{AD}=8$，$\overline{AE}=5$，$\overline{AF}=9$，$\overline{AB}=10$，則下列弧長關係何者正確？
   options:
   - label: A
-    content: $\overline{AC}+\overline{AD}=\overline{AB}$，$\overline{AE}+\overline{AF}=\overline{AB}$
+    content: $\wideparen{AC}+\wideparen{AD}=\wideparen{AB}$，$\wideparen{AE}+\wideparen{AF}=\wideparen{AB}$
   - label: B
-    content: $\overline{AC}+\overline{AD}=\overline{AB}$，$\overline{AE}+\overline{AF}
-      \neq \overline{AB}$
+    content: $\wideparen{AC}+\wideparen{AD}=\wideparen{AB}$，$\wideparen{AE}+\wideparen{AF}
+      \neq \wideparen{AB}$
   - label: C
-    content: $\overline{AC}+\overline{AD} \neq \overline{AB}$，$\overline{AE}+\overline{AF}=\overline{AB}$
+    content: $\wideparen{AC}+\wideparen{AD} \neq \wideparen{AB}$，$\wideparen{AE}+\wideparen{AF}=\wideparen{AB}$
   - label: D
-    content: $\overline{AC}+\overline{AD} \neq \overline{AB}$，$\overline{AE}+\overline{AF}
-      \neq \overline{AB}$
+    content: $\wideparen{AC}+\wideparen{AD} \neq \wideparen{AB}$，$\wideparen{AE}+\wideparen{AF}
+      \neq \wideparen{AB}$
   assets:
   - key: s1_23_f1
     kind: figure
@@ -1114,6 +1170,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 有一直徑為 $\overline{AB}$ 的圓，且圓上有 $C$、$D$、$E$、$F$ 四點，其位置如圖所示。若 $\overline{AC}=6$，$\overline{AD}=8$，$\overline{AE}=5$，$\overline{AF}=9$，$\overline{AB}=10$，則下列弧長關係何者正確？
+    to: 有一直徑為 $\overline{AB}$ 的圓，且圓上有 $C$、$D$、$E$、$F$ 四點，其位置如圖所示。若 $\overline{AC}=6$，$\overline{AD}=8$，$\overline{AE}=5$，$\overline{AF}=9$，$\overline{AB}=10$，則下列弧長關係何者正確？
+    note: 選項中所有弧記號均被誤作線段記號
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_24
   section: 1
   number: 24
@@ -1169,7 +1231,7 @@ questions:
   type: single
   page: 5
   stem: 如圖，矩形 $ABCD$ 內有一灰色扇形 $EOF$，其中 $E$、$O$、$F$ 分別在 $\overline{AB}$、$\overline{BC}$、$\overline{CD}$
-    上，且 $\overline{EF}$ 與 $\overline{AD}$ 相切於 $G$ 點。若 $\overline{BO}=2$，$\overline{CO}=1$，$\angle
+    上，且 $\wideparen{EF}$ 與 $\overline{AD}$ 相切於 $G$ 點。若 $\overline{BO}=2$，$\overline{CO}=1$，$\angle
     EOF=90^{\circ}$，則矩形 $ABCD$ 的面積為何？
   options:
   - label: A
@@ -1214,22 +1276,32 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，矩形 $ABCD$ 內有一灰色扇形 $EOF$，其中 $E$、$O$、$F$ 分別在 $\overline{AB}$、$\overline{BC}$、$\overline{CD}$
+      上，且 $\overline{EF}$ 與 $\overline{AD}$ 相切於 $G$ 點。若 $\overline{BO}=2$，$\overline{CO}=1$，$\angle
+      EOF=90^{\cir
+    to: 如圖，矩形 $ABCD$ 內有一灰色扇形 $EOF$，其中 $E$、$O$、$F$ 分別在 $\overline{AB}$、$\overline{BC}$、$\overline{CD}$
+      上，且 $\wideparen{EF}$ 與 $\overline{AD}$ 相切於 $G$ 點。若 $\overline{BO}=2$，$\overline{CO}=1$，$\angle
+      EOF=90^{\ci
+    note: 原卷為弧 EF，擷取誤為線段 EF
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_26
   section: 1
   number: 26
   type: single
   page: 5
-  stem: 下圖表示 $A$、$B$、$C$、$D$ 四點在圓 $O$ 上的位置，其中 $\overline{AD}=180^{\circ}$，且 $\overline{AB}=\overline{BD}$，$\overline{BC}=\overline{CD}$。若在
-    $\overline{AB}$ 上取一點 $P$，在 $\overline{BD}$ 上取一點 $Q$，使得 $\angle APQ=130^{\circ}$，則下列敘述何者正確？
+  stem: 下圖表示 $A$、$B$、$C$、$D$ 四點在圓 $O$ 上的位置，其中 $\wideparen{AD}=180^{\circ}$，且 $\wideparen{AB}=\wideparen{BD}$，$\wideparen{BC}=\wideparen{CD}$。若在
+    $\wideparen{AB}$ 上取一點 $P$，在 $\wideparen{BD}$ 上取一點 $Q$，使得 $\angle APQ=130^{\circ}$，則下列敘述何者正確？
   options:
   - label: A
-    content: $Q$ 點在 $\overline{BC}$ 上，且 $\overline{BQ}>\overline{QC}$
+    content: $Q$ 點在 $\wideparen{BC}$ 上，且 $\wideparen{BQ}>\wideparen{QC}$
   - label: B
-    content: $Q$ 點在 $\overline{BC}$ 上，且 $\overline{BQ}<\overline{QC}$
+    content: $Q$ 點在 $\wideparen{BC}$ 上，且 $\wideparen{BQ}<\wideparen{QC}$
   - label: C
-    content: $Q$ 點在 $\overline{CD}$ 上，且 $\overline{CQ}>\overline{QD}$
+    content: $Q$ 點在 $\wideparen{CD}$ 上，且 $\wideparen{CQ}>\wideparen{QD}$
   - label: D
-    content: $Q$ 點在 $\overline{CD}$ 上，且 $\overline{CQ}<\overline{QD}$
+    content: $Q$ 點在 $\wideparen{CD}$ 上，且 $\wideparen{CQ}<\wideparen{QD}$
   assets:
   - key: s1_26_f1
     kind: figure
@@ -1264,13 +1336,21 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下圖表示 $A$、$B$、$C$、$D$ 四點在圓 $O$ 上的位置，其中 $\overline{AD}=180^{\circ}$，且 $\overline{AB}=\overline{BD}$，$\overline{BC}=\overline{CD}$。若在
+      $\overline{AB}$ 上取一點 $P$，在 $\overline{BD}$ 上取一點 $Q$，使得 $\angle APQ=13
+    to: 下圖表示 $A$、$B$、$C$、$D$ 四點在圓 $O$ 上的位置，其中 $\wideparen{AD}=180^{\circ}$，且 $\wideparen{AB}=\wideparen{BD}$，$\wideparen{BC}=\wideparen{CD}$。若在
+      $\wideparen{AB}$ 上取一點 $P$，在 $\wideparen{BD}$ 上取一點 $Q$，使得 $\angle
+    note: 題幹與選項中之弧記號均被誤作線段記號
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_27
   section: 1
   number: 27
   type: single
   page: 5
   stem: 如圖，有一圓 $O$ 通過 $\triangle ABC$ 的三個頂點。若 $\angle B=75^{\circ}$，$\angle C=60^{\circ}$，且
-    $\overline{BC}$ 的長度為 $5\pi$，則 $\overline{BC}$ 的長度為何？
+    $\overgroup{BC}$ 的長度為 $5\pi$，則 $\overline{BC}$ 的長度為何？
   options:
   - label: A
     content: $20$
@@ -1314,6 +1394,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，有一圓 $O$ 通過 $\triangle ABC$ 的三個頂點。若 $\angle B=75^{\circ}$，$\angle C=60^{\circ}$，且
+      $\overline{BC}$ 的長度為 $5\pi$，則 $\overline{BC}$ 的長度為何？
+    to: 如圖，有一圓 $O$ 通過 $\triangle ABC$ 的三個頂點。若 $\angle B=75^{\circ}$，$\angle C=60^{\circ}$，且
+      $\overgroup{BC}$ 的長度為 $5\pi$，則 $\overline{BC}$ 的長度為何？
+    note: 前者原卷為弧 BC，擷取誤為線段 BC
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_數學_g9s1e2_s1_28
   section: 1
   number: 28

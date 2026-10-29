@@ -1588,7 +1588,7 @@ questions:
   number: 37
   type: single
   page: 4
-  stem: 峯茗買了一杯夢幻漸層蝶豆花飲品，如圖請將分層中溶液的 pH 值，由大而小排列，下列何者正確？
+  stem: 峯茗買了一杯夢幻漸層蝶豆花飲品，如圖請將分層中溶液的 $\text{pH}$ 值，由大而小排列，下列何者正確？
   options:
   - label: A
     content: 甲丙乙
@@ -1617,6 +1617,23 @@ questions:
     qwen: D
   answer_status: disputed
   review_note: 答案卷 ['A']，Gemini 與 Qwen 一致判為 D
+  assets:
+  - key: s1_37_r10290725_1
+    kind: figure
+    file: doc_111_嘉義_北興_自然_g8s2e2/s1_37_r10290725_1.png
+    crop:
+      page: 4
+      rect:
+      - 612.43
+      - 37.28
+      - 677.26
+      - 179.44
+  errata:
+  - from: 峯茗買了一杯夢幻漸層蝶豆花飲品，如圖請將分層中溶液的 pH 值，由大而小排列，下列何者正確？
+    to: 峯茗買了一杯夢幻漸層蝶豆花飲品，如圖請將分層中溶液的 $\text{pH}$ 值，由大而小排列，下列何者正確？
+    note: 題幹提及「如圖」，原卷右側有飲料分層示意圖，漏附圖
+    by: review
+    extraction: true
 - id: doc_111_嘉義_北興_自然_g8s2e2_s1_38
   section: 1
   number: 38

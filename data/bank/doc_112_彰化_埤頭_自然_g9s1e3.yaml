@@ -149,10 +149,10 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 一部玩具車，需使用直流電源的電壓是 6 伏特，此玩具車共使用了 8 個電池，已知：每個電池的電壓為 1.5 伏特；則電池可能的連接方式為：
+  stem: 一部玩具車，需使用直流電源的電壓是 6 伏特，此玩具車共使用了 8 個電池，已知：每個電池的電壓為 1.5 伏特；則電池可能的連接方式為：（原卷有誤，已修正）
   options:
   - label: A
-    content: 全部並聯
+    content: 全部串聯
   - label: B
     content: 每 2 個電池串聯為一組，四組再並聯
   - label: C
@@ -177,6 +177,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: (C) 全部並聯
+    to: (C) 全部串聯
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(C) 全部並聯」→「(C) 全部串聯」
+    by: review
 - id: doc_112_彰化_埤頭_自然_g9s1e3_s1_5
   section: 1
   number: 5
@@ -673,7 +678,7 @@ questions:
   stem: 樂樂使用的三個電阻 $R_1$、$R_2$ 及 $R_3$ 做歐姆定律的實驗，所造成的三個電阻的電流與電壓的關係如附圖所示，由圖可以判斷三個電阻的大小關係為：
   options:
   - label: A
-    content: $R_3 > R_2 > R_1$
+    content: $R_1 > R_2 > R_3$
   - label: B
     content: $R_3 > R_2 > R_1$
   - label: C
@@ -716,6 +721,12 @@ questions:
     gemini: A
     qwen: A
   answer_status: disputed
+  errata:
+  - from: 樂樂使用的三個電阻 $R_1$、$R_2$ 及 $R_3$ 做歐姆定律的實驗，所造成的三個電阻的電流與電壓的關係如附圖所示，由圖可以判斷三個電阻的大小關係為：
+    to: 樂樂使用的三個電阻 $R_1$、$R_2$ 及 $R_3$ 做歐姆定律的實驗，所造成的三個電阻的電流與電壓的關係如附圖所示，由圖可以判斷三個電阻的大小關係為：
+    note: 選項(A)誤植為R3>R2>R1
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e3_s1_14
   section: 1
   number: 14
@@ -1029,14 +1040,14 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 樂樂新添購一台電磁爐，附圖為電磁爐的電器規格，請問下列敘述何者錯誤？
+  stem: 樂樂新添購一台電磁爐，附圖為電磁爐的電器規格，請問下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 此電磁爐應使用 110 伏特的電源
   - label: B
     content: 此電磁爐應使用交流電為電源
   - label: C
-    content: 使用此電磁爐，每秒會消耗 1100 焦耳的電能
+    content: 使用此電磁爐，每秒會消耗 1100×83% 焦耳的電能
   - label: D
     content: 使用此電磁爐，每秒會消耗 1100 焦耳的電能
   assets:
@@ -1068,6 +1079,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: (D) 使用此電磁爐，每秒會消耗 1100 焦耳的電能
+    to: (D) 使用此電磁爐，每秒會消耗 1100 × 83% 焦耳的電能
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(D) 使用此電磁爐，每秒會消耗 1100 焦耳的電能」→「(D) 使用此電磁爐，每秒會消耗 1100
+      × 83% 焦耳的電能」
+    by: review
 - id: doc_112_彰化_埤頭_自然_g9s1e3_s1_23
   section: 1
   number: 23
@@ -1433,8 +1450,8 @@ questions:
   - label: C
     content: 南極大陸上的企鵝將見日不落的永晝景象
   - label: D
-    content: 這一天天北半球晝長夜短
-  group_stem: ※附圖為某一天的大日照示意圖，試依圖回答下列問題：
+    content: 這一天北半球晝長夜短
+  group_stem: ※附圖為某一天的日照示意圖，試依圖回答下列問題：
   shared_asset: g1_32_33
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1454,6 +1471,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 關於右圖的敘述，何者正確？
+    to: 關於右圖的敘述，何者正確？
+    note: 選項(D)多了一個「天」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e3_s1_33
   section: 1
   number: 33
@@ -1639,11 +1662,11 @@ questions:
   - label: A
     content: 太陽從東邊地平線上升起
   - label: B
-    content: 處月亮正通過頭頂上方附近
+    content: B處月亮正通過頭頂上方附近
   - label: C
-    content: 處月亮在西南邊的地平線上
+    content: C處月亮在西南邊的地平線上
   - label: D
-    content: 處月亮已升起且高掛天空
+    content: D處月亮已升起且高掛天空
   group_stem: ※請根據附圖，回答下列問題：
   shared_asset: g1_36_39
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1664,6 +1687,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 如圖示，甲處的人可看到下列哪種自然現象？
+    to: 如圖示，甲處的人可看到下列哪種自然現象？
+    note: 選項(B)(C)(D)漏了代號A、C、D
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e3_s1_38
   section: 1
   number: 38

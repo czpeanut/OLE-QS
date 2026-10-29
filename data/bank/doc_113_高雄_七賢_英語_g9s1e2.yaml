@@ -1200,9 +1200,9 @@ questions:
   number: 27
   type: single
   page: 4
-  stem: Nick is a 9th grader in a junior high school and his sister, Sally, is a 7th
-    grader in the same school. She is new here and has some teething troubles at school.
-    What may Sally say to Nick?
+  stem: Nick is a 9<sup>th</sup> grader in a junior high school and his sister, Sally,
+    is a 7<sup>th</sup> grader in the same school. She is new here and has some <u>teething
+    troubles</u> at school. What may Sally say to Nick?
   options:
   - label: A
     content: I have the basketball club every two weeks, and I can’t wait to play
@@ -1216,35 +1216,47 @@ questions:
   - label: D
     content: Making friends and chatting with my classmates are the best moments during
       my school life.
-  group_stem: "Robots: friends or not?\n\nWhat is the future of artificial intelligence\
-    \ (AI)? Will it be possible for robots to be self-controlling? If so, when will\
-    \ \nthat happen and will it be a good thing? We asked four people what they thought.\
-    \ \n \nAmber: I would say that we are quite a long way off developing the computing\
-    \ power or AI, though I do think it will  \nhappen within the next thirty or forty\
-    \ years. We may stay in control of technology and it will help us solve  \nmany\
-    \ of the world’s problems. But, no one really knows what will happen if machines\
-    \ become smarter than \nhumans. They may help us or hurt us. I believe AI will\
-    \ make our life better, but whether it is true will be up to \nus. \n \nBilly:\
-    \ That something humans create can be better than us scares me a lot. Even now,\
-    \ scientists are teaching    \n          computers how to learn on their own.\
-    \ At some point in the future, they can develop faster. Humans    \n         \
-    \ develop step by step slowly and would be replaced by them. Shortly, there is\
-    \ the danger that robots will take  \n          over millions of human jobs and\
-    \ make lots of people lose their jobs. This could mean many people are poor and\
-    \  \n          the society is not safe. Besides, machines might decide the world\
-    \ would be better without humans. \n \nCody: Soon, we can put a computer inside\
-    \ our brain and raise our ability to move and to learn. This idea is going to\
-    \  প্রাচ\nbecome more common in our real life. AI is also widely used in the world\
-    \ around us. Although there have been a \nfew teething troubles: For example,\
-    \ one woman was sleeping on the floor and her hair was eaten by her robot \ncleaner.\
-    \ There have also been serious accidents with self-driving cars. However, as we\
-    \ know, developing comes \nat a cost. \n \nDoris: I am a member of the group Stop\
-    \ Killer Robots. Remember the movie where a robot stamps on human bodies \nand\
-    \ that is what’s happening right now: No-man machines are already being used to\
-    \ kill. The next step will be \n“murderbot,” following orders but deciding who\
-    \ to kill by themselves. It is clear to me that this would be \ndangerous for\
-    \ humans. We need to be very careful about what we ask machines to do. \n※control\
-    \ 控制  develop 發展   solve 解決     replace 取代     society 社會"
+  group_stem: 'Robots: friends or not?
+
+
+    What is the future of artificial intelligence (AI)? Will it be possible for robots
+    to be self-controlling? If so, when will that happen and will it be a good thing?
+    We asked four people what they thought.
+
+
+    Amber: I would say that we are quite a long way off developing the computing power
+    or AI, though I do think it will happen within the next thirty or forty years.
+    We may stay in control of technology and it will help us solve many of the world’s
+    problems. But, no one really knows what will happen if machines become smarter
+    than humans. They may help us or hurt us. I believe AI will make our life better,
+    but whether it is true will be up to us.
+
+
+    Billy: That something humans create can be better than us scares me a lot. Even
+    now, scientists are teaching computers how to learn on their own. At some point
+    in the future, they can develop faster. Humans develop step by step slowly and
+    would be replaced by them. Shortly, there is the danger that robots will take
+    over millions of human jobs and make lots of people lose their jobs. This could
+    mean many people are poor and the society is not safe. Besides, machines might
+    decide the world would be better without humans.
+
+
+    Cody: Soon, we can put a computer inside our brain and raise our ability to move
+    and to learn. This idea is going to become more common in our real life. AI is
+    also widely used in the world around us. Although there have been a few <u>teething
+    troubles</u>: For example, one woman was sleeping on the floor and her hair was
+    eaten by her robot cleaner. There have also been serious accidents with self-driving
+    cars. However, as we know, developing comes at a cost.
+
+
+    Doris: I am a member of the group Stop Killer Robots. Remember the movie where
+    a robot stamps on human bodies and that is what’s happening right now: No-man
+    machines are already being used to kill. The next step will be “murderbot,” following
+    orders but deciding who to kill by themselves. It is clear to me that this would
+    be dangerous for humans. We need to be very careful about what we ask machines
+    to do.
+
+    ※control 控制 develop 發展 solve 解決 replace 取代 society 社會'
   shared_asset: g4_27_28
   tags:
     textbook: 九上 英語 對話與情境應答
@@ -1263,6 +1275,16 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Nick is a 9th grader in a junior high school and his sister, Sally, is a
+      7th grader in the same school. She is new here and has some teething troubles
+      at school. What may Sally say to Nick?
+    to: 'Nick is a 9<sup>th</sup> grader in a junior high school and his sister, Sally,
+      is a 7<sup>th</sup> grader in the same school. She is new here and has some
+      <u>teething troubles</u> at school. What may '
+    note: 題組短文中多出了孟加拉文字符「প্রাচ」
+    by: review
+    extraction: true
 - id: doc_113_高雄_七賢_英語_g9s1e2_s4_28
   section: 4
   number: 28
@@ -1280,35 +1302,47 @@ questions:
     content: Cody and Doris.
   - label: D
     content: Billy and Cody.
-  group_stem: "Robots: friends or not?\n\nWhat is the future of artificial intelligence\
-    \ (AI)? Will it be possible for robots to be self-controlling? If so, when will\
-    \ \nthat happen and will it be a good thing? We asked four people what they thought.\
-    \ \n \nAmber: I would say that we are quite a long way off developing the computing\
-    \ power or AI, though I do think it will  \nhappen within the next thirty or forty\
-    \ years. We may stay in control of technology and it will help us solve  \nmany\
-    \ of the world’s problems. But, no one really knows what will happen if machines\
-    \ become smarter than \nhumans. They may help us or hurt us. I believe AI will\
-    \ make our life better, but whether it is true will be up to \nus. \n \nBilly:\
-    \ That something humans create can be better than us scares me a lot. Even now,\
-    \ scientists are teaching    \n          computers how to learn on their own.\
-    \ At some point in the future, they can develop faster. Humans    \n         \
-    \ develop step by step slowly and would be replaced by them. Shortly, there is\
-    \ the danger that robots will take  \n          over millions of human jobs and\
-    \ make lots of people lose their jobs. This could mean many people are poor and\
-    \  \n          the society is not safe. Besides, machines might decide the world\
-    \ would be better without humans. \n \nCody: Soon, we can put a computer inside\
-    \ our brain and raise our ability to move and to learn. This idea is going to\
-    \  প্রাচ\nbecome more common in our real life. AI is also widely used in the world\
-    \ around us. Although there have been a \nfew teething troubles: For example,\
-    \ one woman was sleeping on the floor and her hair was eaten by her robot \ncleaner.\
-    \ There have also been serious accidents with self-driving cars. However, as we\
-    \ know, developing comes \nat a cost. \n \nDoris: I am a member of the group Stop\
-    \ Killer Robots. Remember the movie where a robot stamps on human bodies \nand\
-    \ that is what’s happening right now: No-man machines are already being used to\
-    \ kill. The next step will be \n“murderbot,” following orders but deciding who\
-    \ to kill by themselves. It is clear to me that this would be \ndangerous for\
-    \ humans. We need to be very careful about what we ask machines to do. \n※control\
-    \ 控制  develop 發展   solve 解決     replace 取代     society 社會"
+  group_stem: 'Robots: friends or not?
+
+
+    What is the future of artificial intelligence (AI)? Will it be possible for robots
+    to be self-controlling? If so, when will that happen and will it be a good thing?
+    We asked four people what they thought.
+
+
+    Amber: I would say that we are quite a long way off developing the computing power
+    or AI, though I do think it will happen within the next thirty or forty years.
+    We may stay in control of technology and it will help us solve many of the world’s
+    problems. But, no one really knows what will happen if machines become smarter
+    than humans. They may help us or hurt us. I believe AI will make our life better,
+    but whether it is true will be up to us.
+
+
+    Billy: That something humans create can be better than us scares me a lot. Even
+    now, scientists are teaching computers how to learn on their own. At some point
+    in the future, they can develop faster. Humans develop step by step slowly and
+    would be replaced by them. Shortly, there is the danger that robots will take
+    over millions of human jobs and make lots of people lose their jobs. This could
+    mean many people are poor and the society is not safe. Besides, machines might
+    decide the world would be better without humans.
+
+
+    Cody: Soon, we can put a computer inside our brain and raise our ability to move
+    and to learn. This idea is going to become more common in our real life. AI is
+    also widely used in the world around us. Although there have been a few <u>teething
+    troubles</u>: For example, one woman was sleeping on the floor and her hair was
+    eaten by her robot cleaner. There have also been serious accidents with self-driving
+    cars. However, as we know, developing comes at a cost.
+
+
+    Doris: I am a member of the group Stop Killer Robots. Remember the movie where
+    a robot stamps on human bodies and that is what’s happening right now: No-man
+    machines are already being used to kill. The next step will be “murderbot,” following
+    orders but deciding who to kill by themselves. It is clear to me that this would
+    be dangerous for humans. We need to be very careful about what we ask machines
+    to do.
+
+    ※control 控制 develop 發展 solve 解決 replace 取代 society 社會'
   shared_asset: g4_27_28
   tags:
     textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）

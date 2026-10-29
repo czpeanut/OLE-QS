@@ -635,7 +635,7 @@ questions:
   number: 3
   type: essay
   page: 1
-  stem: People saw these lovely monkeys play in the zoo. (依畫線部份當主詞改寫句子)
+  stem: People saw <u>these lovely monkeys</u> play in the zoo. (依畫線部份當主詞改寫句子)
   tags:
     textbook: 九上 英語 感官動詞（see/watch/hear/listen to/feel + O + V/Ving）
     labeled_by: ai
@@ -646,6 +646,12 @@ questions:
       code: B4-08
       title: 感官動詞（see/watch/hear/listen to/feel + O + V/Ving）
       chapter: B4 八下
+  errata:
+  - from: People saw these lovely monkeys play in the zoo. (依畫線部份當主詞改寫句子)
+    to: People saw <u>these lovely monkeys</u> play in the zoo. (依畫線部份當主詞改寫句子)
+    note: 原卷 these lovely monkeys 有畫底線，題目需依畫線改寫卻未標示
+    by: review
+    extraction: true
 - id: doc_113_屏東_中正_英語_g9s1e2_s5_1
   section: 5
   number: 1
@@ -715,7 +721,7 @@ questions:
   number: 1
   type: single
   page: 2
-  stem: What is the main idea of the reading?
+  stem: What is the main idea of the reading?（原卷有誤，已修正）
   options:
   - label: A
     content: Taiwan has built many new incinerators to handle waste.
@@ -724,7 +730,7 @@ questions:
 
        decrease 減少'
   - label: C
-    content: The villlage head in Xinfeng is working to clean up the garbage mountain.
+    content: The village head in Xinfeng is working to clean up the garbage mountain.
   - label: D
     content: Taiwan is facing a serious waste problem with growing "garbage mountains."
   group_stem: 'How Much Trash Does Taiwan Create?
@@ -768,6 +774,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: The villlage head in Xinfeng is working
+    to: The village head in Xinfeng is working
+    note: villlage 拼字錯誤，應為 village：「The villlage head in Xinfeng is working」→「The
+      village head in Xinfeng is working」
+    by: review
 - id: doc_113_屏東_中正_英語_g9s1e2_s6_2
   section: 6
   number: 2

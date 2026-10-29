@@ -1210,25 +1210,19 @@ questions:
     content: 丙
   - label: D
     content: 丁。
-  group_stem: （二）附圖是中國水資源短缺省市圖。請問：
+  group_stem: null
   shared_asset: g2_28_31
   assets:
-  - key: s2_31_f1
+  - key: s2_31_r10290644_1
     kind: figure
-    file: doc_112_彰化_福興_社會_地理_g8s1e2/s2_31_f1.png
+    file: doc_112_彰化_福興_社會_地理_g8s1e2/s2_31_r10290644_1.png
     crop:
       page: 3
       rect:
-      - 321.71
-      - 408.43
-      - 482.07
-      - 544.58
-      auto_from:
-      - 319.42
-      - 410.07
-      - 482.73
-      - 541.31
-    crop_by: auto
+      - 318.53
+      - 406.74
+      - 484.23
+      - 547.73
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -1248,6 +1242,12 @@ questions:
     gemini: C
     qwen: 丁
     gemini_high: C
+  errata:
+  - from: 附圖為中國河川分布圖。請問長江位於圖中何處？
+    to: 附圖為中國河川分布圖。請問長江位於圖中何處？
+    note: 為獨立題目，不屬於題組（二）
+    by: review
+    extraction: true
 shared_assets:
 - key: g2_26_27
   label: 題組附圖

@@ -420,9 +420,9 @@ questions:
   stem: 關於時間的定義，何者正確？
   options:
   - label: A
-    content: 自然現象，復始特性的現象較適合用於計量時間
+    content: 有規律變化，復始特性的現象較適合用於計量時間
   - label: B
-    content: 自然現象，如：日冕，因有誤差，不適合用來描述時間
+    content: 自然現象，如：日晷，因有誤差，不適合用來描述時間
   - label: C
     content: 現今鐘錶…等計時工具，能精準描述時間，絲毫無誤差
   - label: D
@@ -446,6 +446,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於時間的定義，何者正確？
+    to: 關於時間的定義，何者正確？
+    note: (A)漏字錯字，(B)日晷誤作日冕
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g8s1e1_s1_12
   section: 1
   number: 12
@@ -456,7 +462,7 @@ questions:
   - label: A
     content: 白煙屬於水蒸氣
   - label: B
-    content: 蝦漿推擠過程，形狀改變，屬於中改曄
+    content: 蝦漿推擠過程，形狀改變，屬於物理變化
   - label: C
     content: 蝦漿煮者後變熟，屬於化學變化
   - label: D
@@ -497,6 +503,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 天冷煮火鍋，沸騰後觀看出陣陣白煙，將蝦漿推擠進入鍋中，過程現象解釋，何者正確？
+    to: 天冷煮火鍋，沸騰後觀看出陣陣白煙，將蝦漿推擠進入鍋中，過程現象解釋，何者正確？
+    note: 「物理變化」誤作「中改曄」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g8s1e1_s1_13
   section: 1
   number: 13
@@ -536,7 +548,7 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: (A)熔化前，兩杯質量一樣 (B)冰塊熔化後，兩杯的體積一樣 (C)冰塊全部熔化後，兩杯茶的濃度一樣 (D)冰塊熔化過程，茶的濃度會下降
+  stem: 試問下列何者正確？
   options:
   - label: A
     content: 熔化前，兩杯質量一樣
@@ -546,7 +558,7 @@ questions:
     content: 冰塊全部熔化後，兩杯茶的濃度一樣
   - label: D
     content: 冰塊熔化過程，茶的濃度會下降
-  group_stem: 到青草飲料店，點兩杯紅茶，一杯少冰，一杯普通冰量(註：冰密度=$1\text{g}/\text{cm}^{3}$，冰密度=$0.9\text{g}/\text{cm}^{3}$)，看著老闆都是舀等量的紅茶到杯中，再加水及冰塊。一杯水多冰少，一杯水少冰多(如右上圖)，直到整杯全滿才封膜(內部無空氣)。試問下列何者正確？
+  group_stem: 到青草飲料店，點兩杯紅茶，一杯少冰，一杯普通冰量(註：水密度=$1\text{g}/\text{cm}^{3}$，冰密度=$0.9\text{g}/\text{cm}^{3}$)，看著老闆都是舀等量的紅茶到杯中，再加水及冰塊。一杯水多冰少，一杯水少冰多(如右上圖)，直到整杯全滿才封膜(內部無空氣)。試問下列何者正確？
   shared_asset: g1_14_15
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -567,12 +579,18 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A)熔化前，兩杯質量一樣 (B)冰塊熔化後，兩杯的體積一樣 (C)冰塊全部熔化後，兩杯茶的濃度一樣 (D)冰塊熔化過程，茶的濃度會下降
+    to: 試問下列何者正確？
+    note: 題組短文中水密度誤植為冰密度；第14題題幹重複貼入選項
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g8s1e1_s1_15
   section: 1
   number: 15
   type: single
   page: 1
-  stem: 承上，將退冰中的飲料，擺在電子秤上，觀察冰熔化過程的讀數，何者正確(忽略外聚空氣冷凝的因素)？
+  stem: 承上，將退冰中的飲料，擺在電子秤上，觀察冰熔化過程的讀數，何者正確(忽略外界空氣冷凝的因素)？
   options:
   - label: A
     content: 讀數增加
@@ -582,7 +600,7 @@ questions:
     content: 讀數不變
   - label: D
     content: 讀數忽高忽低
-  group_stem: 到青草飲料店，點兩杯紅茶，一杯少冰，一杯普通冰量(註：冰密度=$1\text{g}/\text{cm}^{3}$，冰密度=$0.9\text{g}/\text{cm}^{3}$)，看著老闆都是舀等量的紅茶到杯中，再加水及冰塊。一杯水多冰少，一杯水少冰多(如右上圖)，直到整杯全滿才封膜(內部無空氣)。試問下列何者正確？
+  group_stem: 到青草飲料店，點兩杯紅茶，一杯少冰，一杯普通冰量(註：水密度=$1\text{g}/\text{cm}^{3}$，冰密度=$0.9\text{g}/\text{cm}^{3}$)，看著老闆都是舀等量的紅茶到杯中，再加水及冰塊。一杯水多冰少，一杯水少冰多(如右上圖)，直到整杯全滿才封膜(內部無空氣)。試問下列何者正確？
   shared_asset: g1_14_15
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -603,6 +621,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 承上，將退冰中的飲料，擺在電子秤上，觀察冰熔化過程的讀數，何者正確(忽略外聚空氣冷凝的因素)？
+    to: 承上，將退冰中的飲料，擺在電子秤上，觀察冰熔化過程的讀數，何者正確(忽略外界空氣冷凝的因素)？
+    note: 「外界」誤作「外聚」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g8s1e1_s1_16
   section: 1
   number: 16
@@ -685,7 +709,7 @@ questions:
   - label: C
     content: 蔗糖具多種元素，故其為混合物
   - label: D
-    content: 黑糖主成份為蔗糖，但乃含豐富的礦物質，故其為混合物
+    content: 黑糖主成份為蔗糖，但仍含豐富的礦物質，故其為混合物
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -706,6 +730,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 關於蔗糖，其性質敘述，何者較合理？
+    to: 關於蔗糖，其性質敘述，何者較合理？
+    note: 「仍」誤作「乃」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g8s1e1_s1_19
   section: 1
   number: 19
@@ -1260,7 +1290,7 @@ questions:
   number: 32
   type: single
   page: 2
-  stem: '將甲、乙、丙三質心物，分別測量出質量與體積，結果如右，並比對老師給的M-V圖(如右)，相關敘述，何者正確？
+  stem: '將甲、乙、丙三實心物，分別測量出質量與體積，結果如右，並比對老師給的M-V圖(如右)，相關敘述，何者正確？
 
 
     | 物體 | 質量(g) | 體積($\text{cm}^3$) |
@@ -1317,12 +1347,40 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '將甲、乙、丙三質心物，分別測量出質量與體積，結果如右，並比對老師給的M-V圖(如右)，相關敘述，何者正確？
+
+
+      | 物體 | 質量(g) | 體積($\text{cm}^3$) |
+
+      | :---: | :---: | :---: |
+
+      | 甲 | 60 | 40 |
+
+      | 乙 | 80 | 60 |
+
+      | 丙 | 120 | 80 |'
+    to: '將甲、乙、丙三實心物，分別測量出質量與體積，結果如右，並比對老師給的M-V圖(如右)，相關敘述，何者正確？
+
+
+      | 物體 | 質量(g) | 體積($\text{cm}^3$) |
+
+      | :---: | :---: | :---: |
+
+      | 甲 | 60 | 40 |
+
+      | 乙 | 80 | 60 |
+
+      | 丙 | 120 | 80 |'
+    note: 「實心」誤作「質心」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g8s1e1_s1_33
   section: 1
   number: 33
   type: single
   page: 2
-  stem: 將$10\text{g}$公克糖，溶解於$100\text{g}$克水中，對此溶液敘述，何者錯誤？
+  stem: 將10公克糖，溶解於100克水中，對此溶液敘述，何者錯誤？
   options:
   - label: A
     content: 溶質為$10\text{g}$
@@ -1351,6 +1409,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 將$10\text{g}$公克糖，溶解於$100\text{g}$克水中，對此溶液敘述，何者錯誤？
+    to: 將10公克糖，溶解於100克水中，對此溶液敘述，何者錯誤？
+    note: 多打了英文字母單位g
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g8s1e1_s1_34
   section: 1
   number: 34
@@ -1492,16 +1556,16 @@ questions:
   number: 38
   type: single
   page: 2
-  stem: 微粒直徑小於或等於2.5微米($\mu\text{m}$)的粒子，就稱為「PM 2.5」，相關敘述，何者正確？
+  stem: 微粒直徑小於或等於$2.5$微米（$\mu\text{m}$）的粒子，就稱為「PM 2.5」，相關敘述，何者正確？
   options:
   - label: A
-    content: 微米$\mu\text{m}$比奈米nm小
+    content: 微米$\mu\text{m}$比奈米$\text{nm}$小
   - label: B
     content: $2.5\mu\text{m}=2.5\times 10^{-6}\text{ m}$
   - label: C
-    content: $1\text{nm}=10^{6}\mu\text{m}$
+    content: $1\text{nm}=10^{-6}\mu\text{m}$
   - label: D
-    content: PM 2.5即為2.5奈米
+    content: PM 2.5即為$2.5$奈米
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1521,6 +1585,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 微粒直徑小於或等於2.5微米($\mu\text{m}$)的粒子，就稱為「PM 2.5」，相關敘述，何者正確？
+    to: 微粒直徑小於或等於$2.5$微米（$\mu\text{m}$）的粒子，就稱為「PM 2.5」，相關敘述，何者正確？
+    note: 次方漏了負號
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g8s1e1_s1_39
   section: 1
   number: 39
@@ -1584,7 +1654,7 @@ questions:
   - label: B
     content: 蜂蜜降溫，會有晶體析出，屬於溶解法
   - label: C
-    content: 將果汁滴到濾紙上，當開出現不同色素沉降，類似結晶法
+    content: 將果汁滴到濾紙上，展開出現不同色素沉降，類似結晶法
   - label: D
     content: 無意誤將鹽與綠豆混合，可用右圖色層分析法分離
   assets:
@@ -1623,6 +1693,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於混合物分離，何者正確？
+    to: 關於混合物分離，何者正確？
+    note: 「展開」誤作「當開」
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_14_15
   label: 題組附圖

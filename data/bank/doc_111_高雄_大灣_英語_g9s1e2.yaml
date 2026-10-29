@@ -712,12 +712,12 @@ questions:
   number: 2
   type: single
   page: 2
-  stem: What can we know about the poor boy?
+  stem: What can we know about the poor boy?（原卷有誤，已修正）
   options:
   - label: A
     content: He leaves the farmer’s house in the morning because he is mean.
   - label: B
-    content: He gives the farmer gifts because of the famer’s good mind.
+    content: He gives the farmer gifts because of the farmer’s good mind.
   - label: C
     content: He has met the farmer fifty times.
   - label: D
@@ -750,6 +750,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: because of the famer’s good mind.
+    to: because of the farmer’s good mind.
+    note: famer 漏字，應為 farmer：「because of the famer’s good mind.」→「because of the farmer’s
+      good mind.」
+    by: review
 - id: doc_111_高雄_大灣_英語_g9s1e2_s6_3
   section: 6
   number: 3

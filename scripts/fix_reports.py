@@ -51,9 +51,23 @@ DB = REPO / "data" / "oleqs.db"
 OUT = REPO / "out" / "fix_reports"
 MODEL = "gemini-3.7-flash"
 PHASE = "fix_reports"
+FIG_NOTE = re.compile(r"附圖|缺圖|漏圖|未附|圖[（(一二三四五六七八九十0-9]|圖片|圖表|示意圖|裁切|旋轉|顛倒")
 ROTATE_NOTE = re.compile(r"旋轉|顛倒|倒過來|轉向|轉正")
 STRUCT_NOTE = re.compile(r"錯置|題號|大題|小題|題型|題組|拆|合併|填充題|計算題|單選|非選|多選")
 STRUCTURAL = re.compile(r"錯置|順序|題號|漏題|漏擷取|整題|大題|合併|拆|移到|另一題|上一題|下一題")
+
+# 沒有原卷影像時（原卷檔不在手邊）：只依審題者寫的說明改字，不動附圖
+PROMPT_TEXT = """你是題庫校對人員。審題者對照原卷，回報題庫裡某一題的擷取有錯（見【審題回報】），
+但這裡沒有原卷影像。請**只依照審題回報寫明的問題**修正目前的擷取內容，輸出這一題修正後的內容。
+
+# 規則
+- 只改回報指出的地方，其他文字（含 LaTeX 寫法）一字不動；回報說得不夠明確、無法確定要怎麼改時，verdict 填 cannot。
+- 回報說某處有畫底線時，把該字詞用 <u>…</u> 包起來（雙底線 <u class="dbl">…</u>），前提是回報寫出了是哪些字。
+- 回報說多了字、漏了字、錯字、多擷取了選項內容等，照說明刪除或補上；補上的字必須是回報裡寫出來的。
+- group_stem 是題組共用的短文或說明，不屬於題組就填 null；options 依原順序列出（label 寫 A、B、C、D…）。
+- figures_changed 一律填 false。
+- verdict：fixed＝已依回報修正；already_ok＝目前內容已經是回報要的樣子；cannot＝回報沒寫清楚要改成什麼，或要看原卷才能改。
+- note 用一句話說明改了什麼，或為什麼不改。"""
 
 PROMPT = """你是題庫校對人員。附上的是一份國中段考考卷的頁面影像，以及題庫裡某一題目前的擷取內容；
 審題者回報這一題有問題（見【審題回報】）。請對照原卷影像，輸出這一題正確的擷取內容。
@@ -175,11 +189,14 @@ def cmd_run(args) -> int:
         by_id = {x["id"]: x for x in d.get("questions") or []}
         q = by_id.get(qid)
         pdf = pdf_of(d["document"], args.pdf_root)
-        if q is None or pdf is None:
-            return code, {"verdict": "cannot", "note": "找不到題目或原卷"}, 0.0
-        doc = fitz.open(pdf)
-        pages = pages_for(q, by_id, len(doc), args.wide)
-        parts = [{"text": PROMPT}]
+        if q is None:
+            return code, {"verdict": "cannot", "note": "找不到題目"}, 0.0
+        if pdf is None and any(FIG_NOTE.search(r["data"].get("note") or "") or STRUCT_NOTE.search(r["data"].get("note") or "")
+                               for r in rs):
+            return code, {"verdict": "cannot", "note": "沒有原卷可對照（附圖、題目結構類）"}, 0.0
+        doc = fitz.open(pdf) if pdf else None
+        pages = pages_for(q, by_id, len(doc), args.wide) if doc else []
+        parts = [{"text": PROMPT if doc else PROMPT_TEXT}]
         for i, p in enumerate(pages, start=1):
             img = doc[p - 1].get_pixmap(dpi=150).tobytes("jpeg", jpg_quality=82)
             parts += [{"text": f"\n【第{i}頁影像】（原卷第 {p} 頁）"},
@@ -190,7 +207,7 @@ def cmd_run(args) -> int:
         parts.append({"text": f"\n【題號】第 {q.get('number')} 題\n【目前的擷取內容】\n"
                               f"{json.dumps(current(q, shared), ensure_ascii=False, indent=1)}\n【審題回報】\n{notes}"})
         try:
-            out, model, usd = call_model(parts, MODEL, schema=SCHEMA, thinking="medium",
+            out, model, usd = call_model(parts, MODEL, schema=SCHEMA, thinking=args.thinking,
                                          fallback=[MODEL, "gemini-3.6-flash", "gemini-3.8-flash"])
         except Exception as exc:  # noqa: BLE001
             print(f"  {code} 失敗：{str(exc)[:120]}", flush=True)
@@ -240,6 +257,34 @@ def keep_errata(res: dict, q: dict) -> None:
         res["stem"] += MARK
 
 
+ARROW = re.compile(r"「([^「」]{2,})」\s*→\s*「([^「」]{2,})」")
+
+
+def apply_arrow(res: dict, q: dict) -> None:
+    """審題者採用了「原文」→「改正」的意見（多半是原卷印錯），模型卻照原卷抄回原文：直接照意見替換並註記原卷有誤。"""
+    if res.get("_arrow_done") or res.get("verdict") == "cannot":
+        return
+    res["_arrow_done"] = True
+    for r in res["_reports"]:
+        m = ARROW.search(r.get("note") or "")
+        if not m:
+            continue
+        got, fix = (re.sub(r"^\s*[(（][A-Z][)）]\s*", "", x) for x in m.groups())
+        if res.get("verdict") == "already_ok":
+            res.update(verdict="fixed", stem=q.get("stem") or "", group_stem=q.get("group_stem"),
+                       options=[{"label": o.get("label"), "content": o.get("content") or ""} for o in q.get("options") or []],
+                       figures_changed=False)
+        fields_ = [res, *(res.get("options") or [])]
+        if any(fix in (o.get(k) or "") for o in fields_ for k in ("stem", "group_stem", "content")):
+            continue
+        for o in fields_:
+            for k in ("stem", "group_stem", "content"):
+                if got in (o.get(k) or ""):
+                    o[k] = o[k].replace(got, fix)
+                    res["_errata_mark"] = res.get("_errata_mark") or bool(re.search(r"原卷|印錯|誤印|印成", r.get("note") or ""))
+                    res["note"] = f"依審題意見改正：{got} → {fix}"
+
+
 def judge(res: dict, q: dict) -> str | None:
     """自動檢查：回傳 None＝可寫回，否則是交人工的原因。"""
     if res.get("_manual"):
@@ -257,6 +302,9 @@ def judge(res: dict, q: dict) -> str | None:
     if q.get("type") in ("single", "multiple") and len(res.get("options") or []) < 2 <= len(q.get("options") or []) \
             and not STRUCTURAL.search(notes):
         return "選項被拿掉"
+    if q.get("options") and any(not plain(o.get("content")) for o in res.get("options") or []) \
+            and not res.get("figures_changed") and not any(plain(o.get("content")) == "" for o in q["options"]):
+        return "選項內容變成空白"
     if plain(res.get("group_stem")) == "" and plain(q.get("group_stem")) and not STRUCTURAL.search(notes):
         return "題組短文被拿掉"
     return None
@@ -273,7 +321,9 @@ def changed(res: dict, q: dict) -> bool:
 
 
 def results() -> list[tuple[str, dict]]:
-    return [(f.stem, json.loads(f.read_text(encoding="utf-8"))) for f in sorted(OUT.glob("*.json"))]
+    """模型的修正結果；沒送模型就判定改不了的（沒有原卷可對照等）沒有 _qid，不列入。"""
+    out = [(f.stem, json.loads(f.read_text(encoding="utf-8"))) for f in sorted(OUT.glob("*.json"))]
+    return [(c, r) for c, r in out if r.get("_qid")]
 
 
 def cmd_check(args) -> int:
@@ -284,6 +334,7 @@ def cmd_check(args) -> int:
         q = next((x for x in d["questions"] if x["id"] == res["_qid"]), None)
         if q:
             keep_errata(res, q)
+            apply_arrow(res, q)
         why = judge(res, q) if q else "找不到題目"
         if why:
             manual += 1
@@ -323,13 +374,26 @@ def fig_files(doc_id: str, q: dict, res: dict, pdf: Path) -> dict[str, list[tupl
     return out
 
 
+class RetrySession(requests.Session):
+    """代理偶爾斷線：連線錯誤等一下重送（PATCH／DELETE／POST 都是可重送的整筆寫入）。"""
+    def request(self, *a, **kw):
+        for attempt in range(6):
+            try:
+                return super().request(*a, **kw)
+            except requests.ConnectionError:
+                if attempt == 5:
+                    raise
+                time.sleep(2 ** attempt)
+
+
 def cmd_apply(args) -> int:
     load_env_file()
     only = set(args.only.split(",")) if args.only else None
     url, H = supa()
     H = {**H, "Prefer": "return=minimal"}
-    s = requests.Session()
-    con = sqlite3.connect(DB)
+    s = RetrySession()
+    con = sqlite3.connect(DB) if DB.is_file() else None          # 本機資料庫不在時只改 YAML 與 Supabase
+    sql = (lambda *a: con.execute(*a)) if con else (lambda *a: None)
     by_doc: dict[str, list[tuple[str, dict]]] = {}
     for code, res in results():
         if only and code not in only:
@@ -348,6 +412,7 @@ def cmd_apply(args) -> int:
             if q is None:
                 continue
             keep_errata(res, q)
+            apply_arrow(res, q)
             why = judge(res, q)
             notes = " ".join(r.get("note") or "" for r in res["_reports"])
             if (why == "模型判定目前內容正確" or (why is None and not changed(res, q))) and STRUCT_NOTE.search(notes):
@@ -363,6 +428,8 @@ def cmd_apply(args) -> int:
                       "assets": [a.get("file") for a in q.get("assets") or []]}
             old_gs = q.get("group_stem")
             q["stem"] = res["stem"] if res["stem"].strip() or not res.get("figures_changed") else "（題目見附圖）"
+            if res.get("_errata_mark") and not q["stem"].rstrip().endswith(MARK):
+                q["stem"] = q["stem"].rstrip() + MARK                 # 原卷印錯、依審題意見改正
             new_gs = res.get("group_stem") or None
             # 題組短文（或補充了內容的大題說明）改了就套用到整個題組；
             # 只是大題標題、而模型換成另一段標題時（例如這題被掛錯大題說明），只改這一題
@@ -401,59 +468,65 @@ def cmd_apply(args) -> int:
                 res["_uploads"] = [rel for v in figs.values() for rel, _ in v]
             q.setdefault("errata", []).append({"from": (before["stem"] or "")[:200], "to": (q["stem"] or "")[:200],
                                                "note": "；".join(r["note"] or "" for r in res["_reports"])[:200],
-                                               "by": "review", "extraction": True})
+                                               "by": "review", **({} if res.get("_errata_mark") else {"extraction": True})})
             # ── 資料庫 ──
             qid = q["id"]
             rn = f"擷取錯誤已修正（審題回報，重新對照原卷）：{res['note']}"[:500]
-            con.execute("update question set stem_md=?, review_note=? where id=?", (q["stem"], rn, qid))
+            sql("update question set stem_md=?, review_note=? where id=?", (q["stem"], rn, qid))
             s.patch(f"{url}/rest/v1/question", params={"id": f"eq.{qid}"}, headers=H,
                     json={"stem_md": q["stem"], "review_note": rn}, timeout=60).raise_for_status()
             if (q.get("group_stem") or None) != (old_gs or None):
                 if old_gs and shared_gs and new_gs:
-                    con.execute("update question set group_stem=? where document_id=? and group_stem=?",
+                    sql("update question set group_stem=? where document_id=? and group_stem=?",
                                 (q["group_stem"], doc_id, old_gs))
                     s.patch(f"{url}/rest/v1/question", params={"document_id": f"eq.{doc_id}",
                                                                  "group_stem": f"eq.{old_gs}"},
                             headers=H, json={"group_stem": q["group_stem"]}, timeout=60).raise_for_status()
                 else:
-                    con.execute("update question set group_stem=? where id=?", (q["group_stem"], qid))
+                    sql("update question set group_stem=? where id=?", (q["group_stem"], qid))
                     s.patch(f"{url}/rest/v1/question", params={"id": f"eq.{qid}"}, headers=H,
                             json={"group_stem": q["group_stem"]}, timeout=60).raise_for_status()
-            rows = con.execute("select id, label from option where question_id=? order by ord", (qid,)).fetchall()
+            if con:
+                rows = con.execute("select id, label from option where question_id=? order by ord", (qid,)).fetchall()
+            else:
+                rows = [(o["id"], o["label"]) for o in s.get(f"{url}/rest/v1/option", headers=H, timeout=60, params={
+                    "select": "id,label", "question_id": f"eq.{qid}", "order": "ord.asc"}).json()]
             if opts_replaced or len(rows) != len(q.get("options") or []):
-                con.execute("delete from option where question_id=?", (qid,))
+                sql("delete from option where question_id=?", (qid,))
                 s.delete(f"{url}/rest/v1/option", params={"question_id": f"eq.{qid}"}, headers=H,
                          timeout=60).raise_for_status()
                 new_rows = [{"question_id": qid, "label": o["label"], "content_md": o["content"],
                              "asset_file": (o.get("asset") or {}).get("file"), "ord": i}
                             for i, o in enumerate(q.get("options") or [])]
                 for r in new_rows:
-                    cur = con.execute("insert into option (question_id, label, content_md, asset_file, ord) "
-                                      "values (?, ?, ?, ?, ?)", tuple(r.values()))
-                    r["id"] = cur.lastrowid
+                    if con:
+                        cur = con.execute("insert into option (question_id, label, content_md, asset_file, ord) "
+                                          "values (?, ?, ?, ?, ?)", tuple(r.values()))
+                        r["id"] = cur.lastrowid
                 if new_rows:
                     s.post(f"{url}/rest/v1/option", headers=H, json=new_rows, timeout=60).raise_for_status()
             else:
                 for (oid, _), o in zip(rows, q.get("options") or []):
                     af = (o.get("asset") or {}).get("file")
-                    con.execute("update option set content_md=?, asset_file=? where id=?", (o["content"], af, oid))
+                    sql("update option set content_md=?, asset_file=? where id=?", (o["content"], af, oid))
                     s.patch(f"{url}/rest/v1/option", params={"id": f"eq.{oid}"}, headers=H,
                             json={"content_md": o["content"], "asset_file": af}, timeout=60).raise_for_status()
             if res.get("figures_changed") and pdf:
-                con.execute("delete from asset where question_id=? and scope='question'", (qid,))
+                sql("delete from asset where question_id=? and scope='question'", (qid,))
                 s.delete(f"{url}/rest/v1/asset", params={"question_id": f"eq.{qid}", "scope": "eq.question"},
                          headers=H, timeout=60).raise_for_status()
                 rows_a = [{"document_id": doc_id, "question_id": qid, "key": a["key"], "kind": "figure",
                            "scope": "question", "file": a["file"], "pending": 0} for a in q.get("assets") or []]
                 for r in rows_a:
-                    cur = con.execute("insert into asset (document_id, question_id, key, kind, scope, file, pending) "
-                                      "values (?, ?, ?, ?, ?, ?, ?)", tuple(r.values()))
-                    r["id"] = cur.lastrowid
+                    if con:
+                        cur = con.execute("insert into asset (document_id, question_id, key, kind, scope, file, pending) "
+                                          "values (?, ?, ?, ?, ?, ?, ?)", tuple(r.values()))
+                        r["id"] = cur.lastrowid
                 if rows_a:
                     s.post(f"{url}/rest/v1/asset", headers=H, json=rows_a, timeout=60).raise_for_status()
                 if figs.get("group") and q.get("shared_asset") in shared:
                     sa = shared[q["shared_asset"]]
-                    con.execute("update asset set file=? where document_id=? and key=? and scope='shared'",
+                    sql("update asset set file=? where document_id=? and key=? and scope='shared'",
                                 (sa["file"], doc_id, sa["key"]))
                     s.patch(f"{url}/rest/v1/asset", params={"document_id": f"eq.{doc_id}", "key": f"eq.{sa['key']}",
                                                               "scope": "eq.shared"},
@@ -467,10 +540,12 @@ def cmd_apply(args) -> int:
             done.append((code, res))
         if done:                                          # 整份卷寫完才記狀態：中斷時這份卷下次整份重做
             yp.write_text(yaml.safe_dump(d, allow_unicode=True, sort_keys=False), encoding="utf-8")
-            con.commit()
+            if con:
+                con.commit()
             for code, res in done:
                 (OUT / f"{code}.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
-    con.commit()
+    if con:
+        con.commit()
     finish(url, H, s)
     return 0
 
@@ -517,6 +592,7 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--only")
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--thinking", default="medium", choices=["minimal", "low", "medium", "high"])
     ap.add_argument("--wide", action="store_true", help="附上題目前後頁（重跑跨頁的題目）")
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args()

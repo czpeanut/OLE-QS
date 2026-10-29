@@ -413,7 +413,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 一連續週期波通過介質中某一波時，該點作往復運動的位置坐標與時間關係曲線如附圖，下列敘述何者正確？
+  stem: 一連續週期波通過介質中某一點時，該點作往復運動的位置坐標與時間關係曲線如附圖，下列敘述何者正確？
   options:
   - label: A
     content: 振幅為 20 公分
@@ -458,6 +458,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: 一連續週期波通過介質中某一波時，該點作往復運動的位置坐標與時間關係曲線如附圖，下列敘述何者正確？
+    to: 一連續週期波通過介質中某一點時，該點作往復運動的位置坐標與時間關係曲線如附圖，下列敘述何者正確？
+    note: 「某一點時」誤植為「某一波時」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_自然_g8s1e2_s1_9
   section: 1
   number: 9
@@ -1899,7 +1905,7 @@ questions:
   number: 37
   type: single
   page: 4
-  stem: 如附圖所示，自然老師拿了四個相同的水杯，加水後以棒輕敲水杯及以嘴唇貼著杯口吹氣，則聽到的音調最高為何？
+  stem: 如附圖所示，自然老師拿了四個相同的水杯，加水後以玻璃棒輕敲水杯及以嘴唇貼著杯口吹氣，則聽到的音調最高為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 以玻棒輕敲水杯以 a 最高，對杯口吹氣以 d 最高
@@ -1944,6 +1950,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 加水後以棒輕敲水杯及以嘴唇貼著杯口吹氣
+    to: 加水後以 玻璃棒輕敲水杯及以嘴唇貼著杯口吹氣
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「加水後以棒輕敲水杯及以嘴唇貼著杯口吹氣」→「加水後以 玻璃棒輕敲水杯及以嘴唇貼著杯口吹氣」
+    by: review
 - id: doc_112_彰化_福興_自然_g8s1e2_s2_38
   section: 2
   number: 38

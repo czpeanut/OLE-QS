@@ -557,7 +557,7 @@ questions:
   - label: B
     content: 音樂「ㄒㄩㄣ」陶：醺
   - label: C
-    content: 「ㄉㄨㄢˋ」斷市場：壟
+    content: 「ㄌㄨㄥˇ」斷市場：壟
   - label: D
     content: 「ㄑㄩ」縮身體：倦。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -579,6 +579,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 阿慶參加字形辨識大賽，有一題是他沒有把握答對的題目，請你幫他選出正確的選項？
+    to: 阿慶參加字形辨識大賽，有一題是他沒有把握答對的題目，請你幫他選出正確的選項？
+    note: (C)注音誤植，(D)「蜷」誤為「倦」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_2
   section: 3
   number: 2
@@ -625,7 +631,7 @@ questions:
   - label: B
     content: 大自然的威力巨大，人是如此渺小
   - label: C
-    content: 烏雲湧動，製捲而來，令人驚駭
+    content: 烏雲湧動，襲捲而來，令人驚駭
   - label: D
     content: 氣勢萬鈞的西北雨是當下唯一主宰。
   lesson_raw:
@@ -650,6 +656,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「遇到這樣氣勢萬鈞的大西北雨前奏，誰也不能逞英雄，因為此時在天地之間除了它是英雄之外，不准有第二個人是英雄。」這段話的含義和下列何者最接近？
+    to: 「遇到這樣氣勢萬鈞的大西北雨前奏，誰也不能逞英雄，因為此時在天地之間除了它是英雄之外，不准有第二個人是英雄。」這段話的含義和下列何者最接近？
+    note: 「襲捲」誤為「製捲」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_4
   section: 3
   number: 4
@@ -658,13 +670,13 @@ questions:
   stem: 下列有關田園之秋選一文的寫作手法分析，何者敘述正確？
   options:
   - label: A
-    content: 形式上是記敘文，內容上是應用文
+    content: 形式上是記敘文，內容上是應用文。
   - label: B
-    content: 文中提及「惡魔與妖巫之出世」所描寫的對象是雷電
+    content: 文中提及「惡魔與妖巫之出世」所描寫的對象是雷電。
   - label: C
-    content: 三、四段運用補敘技巧，使內容更加充實、完整
+    content: 三、四段運用補敘技巧，使內容更加充實、完整。
   - label: D
-    content: 文中「人」為主主角，「西北雨」為配角。
+    content: 文中「人」為主角，「西北雨」為配角。
   lesson_raw:
     title: 田園之秋選
     basis: 題目指明〈田園之秋選〉
@@ -687,6 +699,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列有關田園之秋選一文的寫作手法分析，何者敘述正確？
+    to: 下列有關田園之秋選一文的寫作手法分析，何者敘述正確？
+    note: 多打一個「主」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_5
   section: 3
   number: 5
@@ -731,11 +749,11 @@ questions:
   stem: 班上同學在討論「樂府詩、古詩、近體詩」的寫作規定，請問誰的說法最正確？
   options:
   - label: A
-    content: 蠟筆小新：三者皆為句式整齊之作，亦有用字之平仄限制
+    content: 蠟筆小新：三者皆為句式整齊之作，亦有用字之平仄限制。
   - label: B
-    content: 娜美：三者皆為韻文，必須押韻。唱
+    content: 娜美：三者皆為韻文，必須押韻。
   - label: C
-    content: 櫻桃小丸子：三者皆屬音樂文學，可配樂演唱
+    content: 櫻桃小丸子：三者皆屬音樂文學，可配樂演唱。
   - label: D
     content: 派大星：三者皆無句數、字數之限制。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -757,6 +775,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 班上同學在討論「樂府詩、古詩、近體詩」的寫作規定，請問誰的說法最正確？
+    to: 班上同學在討論「樂府詩、古詩、近體詩」的寫作規定，請問誰的說法最正確？
+    note: (B)選項末尾多出「唱」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_7
   section: 3
   number: 7
@@ -954,7 +978,7 @@ questions:
   - label: C
     content: 彎弓征戰作男兒，夢裡曾經與畫眉
   - label: D
-    content: 月落桂花開，歲歲花開與自攀。
+    content: 月落桂花開，歲歲花開獨自攀。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -974,6 +998,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 木蘭的孝行流傳千古，下列詩句中，何者即是以她為主角？
+    to: 木蘭的孝行流傳千古，下列詩句中，何者即是以她為主角？
+    note: 「獨自攀」誤為「與自攀」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_13
   section: 3
   number: 13
@@ -1256,7 +1286,7 @@ questions:
   stem: 請你選出讀音相同的選項？
   options:
   - label: A
-    content: 水庫乾「涸」／「涸」閭
+    content: 水庫乾「涸」／「涸」轍之鮒
   - label: B
     content: 過分挑「剔」／得到警「惕」
   - label: C
@@ -1283,6 +1313,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 請你選出讀音相同的選項？
+    to: 請你選出讀音相同的選項？
+    note: 原卷為「涸轍之鮒」，誤打為「涸閭」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_22
   section: 3
   number: 22
@@ -1291,13 +1327,13 @@ questions:
   stem: 請你選出字形相同的選項？
   options:
   - label: A
-    content: 「ㄏㄢˋ」象人口／「ㄏㄢˋ」動骨
+    content: 「ㄎㄨㄞˋ」炙人口／為人市「ㄎㄨㄞˋ」
   - label: B
-    content: 「ㄕㄨㄟˋ」服有力／「ㄕㄨㄟˋ」甘之如飴
+    content: 「ㄕˋ」甘之如「ㄕˋ」／「ㄕˋ」活動骨
   - label: C
-    content: 「ㄓㄠˋ」夜色寂／「ㄓㄠˋ」若晨星
+    content: 「ㄌㄧㄠˊ」夜色寂「ㄌㄧㄠˊ」／「ㄌㄧㄠˊ」若晨星
   - label: D
-    content: 「ㄏㄢˊ」笑大方／「ㄏㄢˊ」解壓力。
+    content: 「ㄧˊ」笑大方／「ㄧˊ」解壓力
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1316,6 +1352,12 @@ questions:
     gemini_high: C
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 請你選出字形相同的選項？
+    to: 請你選出字形相同的選項？
+    note: 第22題選項注音與文字辨識嚴重錯亂
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_23
   section: 3
   number: 23
@@ -1432,7 +1474,7 @@ questions:
   - label: C
     content: 骨肉至親的天性是與生俱來的，這種「不假辭色」便能傳達的親情也是人性中最誠摯的感情
   - label: D
-    content: 小劉平日對你是有求必應，其實是「項莊舞劍」，你還是得得多加提防啊。
+    content: 小劉平日對你是有求必應，其實是「項莊舞劍」，你還是得多加提防啊。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1453,6 +1495,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 郁美麗的作業簿上寫了四組文句，其中只有一組成語使用正確，請你選出？
+    to: 郁美麗的作業簿上寫了四組文句，其中只有一組成語使用正確，請你選出？
+    note: 多打一個「得」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_27
   section: 3
   number: 27
@@ -1465,7 +1513,7 @@ questions:
   - label: B
     content: 明軒「不但」待人有禮，「反而」熱心公益，經常擔任義交指揮交通
   - label: C
-    content: 「倘若」你想超越競爭對手，「一寧可」先征服自己
+    content: 「倘若」你想超越競爭對手，「寧可」先征服自己
   - label: D
     content: 「儘管」我喜歡戶外活動，「但是」無法接受幾近玩命的高空彈跳。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1487,6 +1535,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 善用連接詞能使文句更通順，語意更清楚。下列文句中，何者連接詞使用最正確？
+    to: 善用連接詞能使文句更通順，語意更清楚。下列文句中，何者連接詞使用最正確？
+    note: 多打一個「一」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_28
   section: 3
   number: 28
@@ -1629,14 +1683,14 @@ questions:
   number: 32
   type: single
   page: 3
-  stem: 透過具體生動的文字描寫將屬於某一感官的感覺轉移到另一感官上，啟發讀者的聯想，稱為「移覺」。例如「太陽又出來了，一片清新的空氣、鮮潔的色彩，彷彿聽見了貝多芬田園交響曲第四樂章羊人之歌。」這一段文句是以「聽覺印象」來描寫「視覺印象」的寫法。下列文句中，何者不是使用此一移覺的技巧？
+  stem: 透過具體生動的文字描寫將屬於某一感官的感覺轉移到另一感官上，啟發讀者的聯想，稱為「移覺」。例如「太陽又出來了，一片清新的空氣、鮮潔的色彩，彷彿聽見了貝多芬田園交響曲第四樂章牧羊人之歌。」這一段文句是以「聽覺印象」來描寫「視覺印象」的寫法。下列文句中，何者不是使用此一移覺的技巧？
   options:
   - label: A
-    content: 牛背上的牧童揮舞著一根樹枝，樹枝掛滿綠葉，歌謠般親切、柔和
+    content: 牛背上的牧童揮舞著一根樹枝，樹枝掛滿綠葉，歌謠般親切、柔和。
   - label: B
-    content: 上騰的炊煙彷彿是乘人歌們的祈禱，參差地翳入了天聽
+    content: 上騰的炊煙彷彿是農人們的祈禱，參差地翳入了天聽。
   - label: C
-    content: 她的笑聲像散落一地的銀幣，可以一出一撿起
+    content: 她的笑聲像散落一地的銀幣，可以一枚一枚撿起。
   - label: D
     content: 月色潺潺湲流在松林裡，低聲訴說她的心事。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1657,6 +1711,12 @@ questions:
     gemini_high: D
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 透過具體生動的文字描寫將屬於某一感官的感覺轉移到另一感官上，啟發讀者的聯想，稱為「移覺」。例如「太陽又出來了，一片清新的空氣、鮮潔的色彩，彷彿聽見了貝多芬田園交響曲第四樂章羊人之歌。」這一段文句是以「聽覺印象」來描寫「視覺印象」的寫法。下列文句中，何者不是使用此一移覺的技巧？
+    to: 透過具體生動的文字描寫將屬於某一感官的感覺轉移到另一感官上，啟發讀者的聯想，稱為「移覺」。例如「太陽又出來了，一片清新的空氣、鮮潔的色彩，彷彿聽見了貝多芬田園交響曲第四樂章牧羊人之歌。」這一段文句是以「聽覺印象」來描寫「視覺印象」的寫法。下列文句中，何者不是使用此一移覺的技巧？
+    note: 「農人們」誤為「乘人歌們」，「一枚一枚」誤為「一出一」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e2_s3_33
   section: 3
   number: 33

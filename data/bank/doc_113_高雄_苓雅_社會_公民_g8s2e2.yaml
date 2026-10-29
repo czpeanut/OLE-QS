@@ -59,7 +59,7 @@ questions:
   number: 42
   type: single
   page: 1
-  stem: 1949 年因國共情勢惡化，政府頒布戒嚴令限制人民各種自由，此後民眾可能未經公開審判便被拘留或槍決。請問畫線部分依照今日法律，此種做法將違背哪種原則？
+  stem: 1949 年因國共情勢惡化，政府頒布戒嚴令限制人民各種自由，此後民眾<u>可能未經公開審判便被拘留或槍決</u>。請問畫線部分依照今日法律，此種做法將違背哪種原則？
   options:
   - label: A
     content: 誠實信用原則
@@ -86,6 +86,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 1949 年因國共情勢惡化，政府頒布戒嚴令限制人民各種自由，此後民眾可能未經公開審判便被拘留或槍決。請問畫線部分依照今日法律，此種做法將違背哪種原則？
+    to: 1949 年因國共情勢惡化，政府頒布戒嚴令限制人民各種自由，此後民眾<u>可能未經公開審判便被拘留或槍決</u>。請問畫線部分依照今日法律，此種做法將違背哪種原則？
+    note: 原卷此處有畫底線，擷取漏標底線致無法辨識
+    by: review
+    extraction: true
 - id: doc_113_高雄_苓雅_社會_公民_g8s2e2_s1_43
   section: 1
   number: 43
@@ -512,7 +518,7 @@ questions:
   number: 53
   type: single
   page: 2
-  stem: 俄烏交戰之際，俄國快速立定新法，只要出現批評俄軍入侵烏克蘭言論，最高將被處以15 年徒刑。文中畫線處俄國民眾被限縮了何種權利？
+  stem: 俄烏交戰之際，俄國快速立定新法，<u>只要出現批評俄軍入侵烏克蘭言論</u>，最高將被處以 15 年徒刑。文中畫線處俄國民眾被限縮了何種權利？
   options:
   - label: A
     content: 秘密通訊自由權
@@ -539,6 +545,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 俄烏交戰之際，俄國快速立定新法，只要出現批評俄軍入侵烏克蘭言論，最高將被處以15 年徒刑。文中畫線處俄國民眾被限縮了何種權利？
+    to: 俄烏交戰之際，俄國快速立定新法，<u>只要出現批評俄軍入侵烏克蘭言論</u>，最高將被處以 15 年徒刑。文中畫線處俄國民眾被限縮了何種權利？
+    note: 原卷此處有畫底線，擷取漏標底線致無法辨識
+    by: review
+    extraction: true
 - id: doc_113_高雄_苓雅_社會_公民_g8s2e2_s1_54
   section: 1
   number: 54

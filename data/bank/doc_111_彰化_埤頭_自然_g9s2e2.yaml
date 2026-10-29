@@ -816,7 +816,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: ( )當小圓看到驚悚畫面時，兩眼直視但身體刻意保持不動，而小曹看到驚悚畫面時，則是擺大聲尖叫且用手遮眼，比較兩人從接受刺激到產生反應的相關敘述，下列何者最合理？
+  stem: ( )當小圓看到驚悚畫面時，兩眼直視但身體刻意保持不動，而小曹看到驚悚畫面時，則是大聲尖叫且用手遮眼，比較兩人從接受刺激到產生反應的相關敘述，下列何者最合理？
   options:
   - label: A
     content: 兩人的反應都是屬於反射作用
@@ -845,6 +845,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ( )當小圓看到驚悚畫面時，兩眼直視但身體刻意保持不動，而小曹看到驚悚畫面時，則是擺大聲尖叫且用手遮眼，比較兩人從接受刺激到產生反應的相關敘述，下列何者最合理？
+    to: ( )當小圓看到驚悚畫面時，兩眼直視但身體刻意保持不動，而小曹看到驚悚畫面時，則是大聲尖叫且用手遮眼，比較兩人從接受刺激到產生反應的相關敘述，下列何者最合理？
+    note: 多字，「擺」字為誤植
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_自然_g9s2e2_s1_21
   section: 1
   number: 21
@@ -1366,7 +1372,7 @@ questions:
   stem: ( )短文中提到溫室效應增強對環境的影響，不包含下列何者？
   options:
   - label: A
-    content: 改變水水分的蒸發數量
+    content: 改變水分的蒸發數量
   - label: B
     content: 影響浮游生物的繁殖
   - label: C
@@ -1393,3 +1399,9 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: ( )短文中提到溫室效應增強對環境的影響，不包含下列何者？
+    to: ( )短文中提到溫室效應增強對環境的影響，不包含下列何者？
+    note: 多字，多了一個「水」字
+    by: review
+    extraction: true

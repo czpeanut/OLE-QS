@@ -288,7 +288,7 @@ questions:
   type: single
   page: 2
   stem: 如圖(六)，正方形ABCD 與$\triangle EBC$ 中，$\overline{AD}$ 分別與$\overline{EB}$、$\overline{EC}$
-    相交於F 點、G 點。若$\triangle EBG$ 的面積為6，正方形ABCD 的面積為20，則$\overline{FG}$ 與$\overline{BC}$
+    相交於F 點、G 點。若$\triangle EBG$ 的面積為6，正方ABCD 的面積為20，則$\overline{FG}$ 與$\overline{BC}$
     的長度比為何？
   options:
   - label: A
@@ -316,6 +316,16 @@ questions:
       - 332.62
       - 370.36
     crop_by: auto
+  errata:
+  - from: 如圖(六)，正方形ABCD 與$\triangle EBC$ 中，$\overline{AD}$ 分別與$\overline{EB}$、$\overline{EC}$
+      相交於F 點、G 點。若$\triangle EBG$ 的面積為6，正方形ABCD 的面積為20，則$\overline{FG}$ 與$\overline{BC}$
+      的長度比為何？
+    to: 如圖(六)，正方形ABCD 與$\triangle EBC$ 中，$\overline{AD}$ 分別與$\overline{EB}$、$\overline{EC}$
+      相交於F 點、G 點。若$\triangle EBG$ 的面積為6，正方ABCD 的面積為20，則$\overline{FG}$ 與$\overline{BC}$
+      的長度比為何？
+    note: 原卷為「正方」，擷取多打了「形」字
+    by: review
+    extraction: true
 - id: doc_113_高雄_苓雅_數學_g9s1e1_s1_13
   section: 1
   number: 13
@@ -608,8 +618,8 @@ questions:
   number: 21
   type: single
   page: 3
-  stem: 如圖(十三)，$\triangle ABC$ 中，$\overline{DE} // \overline{BC}$，$\overline{AD}：$\overline{DB}＝5：3，則若$\triangle
-    ABC$ 面積為 32 平方公分，則$\triangle ADE$ 面積＝？
+  stem: 如圖(十三)，$\triangle ABC$ 中，$\overline{DE} // \overline{BC}$，$\overline{AD}：\overline{DB}=5：3$，則若
+    $\triangle ABC$ 面積為 $32$ 平方公分，則 $\triangle ADE$ 面積$=$？
   options:
   - label: A
     content: '12.5'
@@ -636,6 +646,14 @@ questions:
       - 191.99
       - 744.98
     crop_by: auto
+  errata:
+  - from: 如圖(十三)，$\triangle ABC$ 中，$\overline{DE} // \overline{BC}$，$\overline{AD}：$\overline{DB}＝5：3，則若$\triangle
+      ABC$ 面積為 32 平方公分，則$\triangle ADE$ 面積＝？
+    to: 如圖(十三)，$\triangle ABC$ 中，$\overline{DE} // \overline{BC}$，$\overline{AD}：\overline{DB}=5：3$，則若
+      $\triangle ABC$ 面積為 $32$ 平方公分，則 $\triangle ADE$ 面積$=$？
+    note: LaTeX數學模式語法錯誤，DB未包入公式
+    by: review
+    extraction: true
 - id: doc_113_高雄_苓雅_數學_g9s1e1_s1_22
   section: 1
   number: 22

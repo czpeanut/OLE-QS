@@ -535,12 +535,12 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 下列「 」中的字，何者讀音正確？
+  stem: 下列「　」中的字，何者讀音正確？
   options:
   - label: A
-    content: 「繆」思女神：ㄇㄡˊ
+    content: 「<u>繆</u>」思女神：ㄇㄡˊ
   - label: B
-    content: 「藕」神：ㄡ∨
+    content: 「藕」神：ㄡˇ
   - label: C
     content: 驚「惶」：ㄏㄨㄤ
   - label: D
@@ -563,6 +563,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 下列「 」中的字，何者讀音正確？
+    to: 下列「　」中的字，何者讀音正確？
+    note: 注音第三聲調符號誤植為∨：「(B) 「藕」神：ㄡ∨」→「(B) 「藕」神：ㄡˇ」
+    by: review
+    extraction: true
 - id: doc_113_台中_大業_國文_g8s2e1_s3_5
   section: 3
   number: 5

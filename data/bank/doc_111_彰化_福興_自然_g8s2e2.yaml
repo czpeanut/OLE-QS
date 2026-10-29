@@ -98,7 +98,7 @@ questions:
   type: single
   page: 1
   stem: 氯化鈣（$\mathrm{CaCl_{2}}$）在水溶液中完全解離成鈣離子（$\mathrm{Ca^{+2}}$）和氯離子（$\mathrm{Cl^{-}}$），若氯化鈣溶液中含有
-    $1$ 莫耳的鈣離子離子，則應含有多少莫耳的氯離子？
+    $1$ 莫耳的鈣離子，則應含有多少莫耳的氯離子？（原卷有誤，已修正）
   options:
   - label: A
     content: $0.25$ 莫耳
@@ -127,12 +127,17 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 含有 $1$ 莫耳的鈣離子離子，則應含有多少莫耳的氯離子？
+    to: 含有 1 莫耳的鈣離子，則應含有多少莫耳的氯離子？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「含有 $1$ 莫耳的鈣離子離子，則應含有多少莫耳的氯離子？」→「含有 1 莫耳的鈣離子，則應含有多少莫耳的氯離子？」
+    by: review
 - id: doc_111_彰化_福興_自然_g8s2e2_s1_4
   section: 1
   number: 4
   type: single
   page: 1
-  stem: 某一未知氣體的性質如下：(甲)無色；(乙)比空氣輕；(丙)易溶於水；(丁)可使潤溼的石蕊試紙呈藍色。則該氣體可能使什麼？
+  stem: 某一未知氣體的性質如下：(甲)無色；(乙)比空氣輕；(丙)易溶於水；(丁)可使潤溼的石蕊試紙呈藍色。則該氣體可能是什麼？
   options:
   - label: A
     content: $\mathrm{Cl_{2}}$
@@ -161,6 +166,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 某一未知氣體的性質如下：(甲)無色；(乙)比空氣輕；(丙)易溶於水；(丁)可使潤溼的石蕊試紙呈藍色。則該氣體可能使什麼？
+    to: 某一未知氣體的性質如下：(甲)無色；(乙)比空氣輕；(丙)易溶於水；(丁)可使潤溼的石蕊試紙呈藍色。則該氣體可能是什麼？
+    note: 「是」誤打為「使」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_自然_g8s2e2_s1_5
   section: 1
   number: 5

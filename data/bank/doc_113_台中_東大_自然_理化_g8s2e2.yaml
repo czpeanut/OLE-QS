@@ -397,7 +397,7 @@ questions:
     | 丁 | 中性 | 不反應 |'
   options:
   - label: A
-    content: 甲：氨化鈉、乙：硫酸、丙：葡萄糖、丁：氫氧化鈉
+    content: 甲：氯化鈉、乙：硫酸、丙：葡萄糖、丁：氫氧化鈉
   - label: B
     content: 甲：氫氧化鈣、乙：醋酸、丙：氯化鈉、丁：酒精
   - label: C
@@ -423,6 +423,40 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '甲、乙、丙、丁四化合物，經分析其性質，結果列表如下：
+
+      則有關甲、乙、丙、丁四物質之各選項，何者符合上表之性質？
+
+      | 化合物 | 以石蕊試紙檢測 | 水溶液通電 |
+
+      | --- | --- | --- |
+
+      | 甲 | 呈藍色 | 發生反應 |
+
+      | 乙 | 呈紅色 | 發生反應 |
+
+      | 丙 | 中性 | 發生反應 |
+
+      | 丁 | 中性 | 不反應 |'
+    to: '甲、乙、丙、丁四化合物，經分析其性質，結果列表如下：
+
+      則有關甲、乙、丙、丁四物質之各選項，何者符合上表之性質？
+
+      | 化合物 | 以石蕊試紙檢測 | 水溶液通電 |
+
+      | --- | --- | --- |
+
+      | 甲 | 呈藍色 | 發生反應 |
+
+      | 乙 | 呈紅色 | 發生反應 |
+
+      | 丙 | 中性 | 發生反應 |
+
+      | 丁 | 中性 | 不反應 |'
+    note: 「氯化鈉」誤植為「氨化鈉」
+    by: review
+    extraction: true
 - id: doc_113_台中_東大_自然_理化_g8s2e2_s1_8
   section: 1
   number: 8
@@ -462,7 +496,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: '小翰取甲、乙、丙三支試管，依照附表將鹽酸溶液與蒸餾水均勻混合配置溶液，並在同溫下，各加入一粒形狀、大小約略相同的貝殼殺，則何者產生氣泡的速率最快？
+  stem: '小翰取甲、乙、丙三支試管，依照附表將鹽酸溶液與蒸餾水均勻混合配置溶液，並在同溫下，各加入一粒形狀、大小約略相同的貝殼，則何者產生氣泡的速率最快？
 
     | 試管 | HCl | 蒸餾水 |
 
@@ -501,6 +535,32 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '小翰取甲、乙、丙三支試管，依照附表將鹽酸溶液與蒸餾水均勻混合配置溶液，並在同溫下，各加入一粒形狀、大小約略相同的貝殼殺，則何者產生氣泡的速率最快？
+
+      | 試管 | HCl | 蒸餾水 |
+
+      | --- | --- | --- |
+
+      | 甲 | 1 M，5 mL | 5 mL |
+
+      | 乙 | 1 M，5 mL | 8 mL |
+
+      | 丙 | 1 M，5 mL | 9 mL |'
+    to: '小翰取甲、乙、丙三支試管，依照附表將鹽酸溶液與蒸餾水均勻混合配置溶液，並在同溫下，各加入一粒形狀、大小約略相同的貝殼，則何者產生氣泡的速率最快？
+
+      | 試管 | HCl | 蒸餾水 |
+
+      | --- | --- | --- |
+
+      | 甲 | 1 M，5 mL | 5 mL |
+
+      | 乙 | 1 M，5 mL | 8 mL |
+
+      | 丙 | 1 M，5 mL | 9 mL |'
+    note: 「貝殼」後面多擷取了一個「殺」字
+    by: review
+    extraction: true
 - id: doc_113_台中_東大_自然_理化_g8s2e2_s1_10
   section: 1
   number: 10
@@ -1126,8 +1186,7 @@ questions:
   number: 25
   type: single
   page: 3
-  stem: "在密閉系統中，有關 $S_{2}O_{3}^{2-} + 2H^{+} \rightleftharpoons S_{O2} + H_{2}O +\
-    \ S$（黃色）的反應，下列哪些方式<u>無法</u>使黃色的硫增加呢？"
+  stem: 在密閉系統中，有關 $S_{2}O_{3}^{2-} + 2H^{+} \rightleftharpoons SO_{2} + H_{2}O + S$（黃色）的反應，下列哪些方式<u>無法</u>使黃色的硫增加呢？
   options:
   - label: A
     content: 在系統中加入醋酸
@@ -1156,6 +1215,13 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: "在密閉系統中，有關 $S_{2}O_{3}^{2-} + 2H^{+} \rightleftharpoons S_{O2} + H_{2}O\
+      \ + S$（黃色）的反應，下列哪些方式<u>無法</u>使黃色的硫增加呢？"
+    to: 在密閉系統中，有關 $S_{2}O_{3}^{2-} + 2H^{+} \rightleftharpoons SO_{2} + H_{2}O + S$（黃色）的反應，下列哪些方式<u>無法</u>使黃色的硫增加呢？
+    note: 二氧化硫化學式O變下標
+    by: review
+    extraction: true
 - id: doc_113_台中_東大_自然_理化_g8s2e2_s1_26
   section: 1
   number: 26

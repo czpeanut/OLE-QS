@@ -125,7 +125,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 某個朝代的教育重視儒家經學，熱習經學也是選拔官員的重要管道之一，上述朝代應為下列何者？
+  stem: 某個朝代的教育重視儒家經學，熟習經學也是選拔官員的重要管道之一，上述朝代應為下列何者？
   options:
   - label: A
     content: 周朝
@@ -154,6 +154,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 某個朝代的教育重視儒家經學，熱習經學也是選拔官員的重要管道之一，上述朝代應為下列何者？
+    to: 某個朝代的教育重視儒家經學，熟習經學也是選拔官員的重要管道之一，上述朝代應為下列何者？
+    note: 「熟習」誤打為「熱習」
+    by: review
+    extraction: true
 - id: doc_113_台中_中科_社會_歷史_g8s1e1_s1_4
   section: 1
   number: 4
@@ -597,14 +603,14 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 中國農業社會與北方草原民族常有互動，隨著北方草原民族持續南遷的形式不同，胡漢關係備受挑戰。西元 311 年，北方匈奴人南下爆發永嘉之禍，逼迫原來在黃河流域的漢人往南遷移。像這樣因戰爭所導致胡漢人口遷移的事件在中國歷史上發生三次。戰爭所導致的人口南遷，會產生什麼現象？
+  stem: 中國農業社會與北方草原民族常有互動，隨著北方草原民族持續南遷的形式不同，胡漢關係備受挑戰。西元 311 年，北方匈奴人南下爆發永嘉之禍，逼迫原來在黃河流域的漢人往南移遷移。像這樣因戰爭所導致胡漢人口遷移的事件在中國歷史上發生三次。戰爭所導致的人口南遷，會產生什麼現象？（原卷有誤，已修正）
   options:
   - label: A
     content: 中國政權一直在南方
   - label: B
     content: 胡漢民族爭端持續從未平息而始終無法文化融合
   - label: C
-    content: 中國經濟重心逐漸往南
+    content: 中國經濟重心逐漸南
   - label: D
     content: 戰爭是胡漢民族交流的唯一因素。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -626,6 +632,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 中國經濟重心逐漸往南
+    to: (C)中國經濟重心逐漸南移
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(C) 中國經濟重心逐漸往南」→「(C)中國經濟重心逐漸南移」
+    by: review
 - id: doc_113_台中_中科_社會_歷史_g8s1e1_s1_16
   section: 1
   number: 16
@@ -699,7 +710,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 世族的形成階段，到某時期評選多看中家世背景，也是最為興盛的階段。上述應是哪一個時期？
+  stem: 世族的形成階段，到某時期評選多看重家世背景，也是最為興盛的階段。上述應是哪一個時期？（原卷有誤，已修正）
   options:
   - label: A
     content: 甲
@@ -730,6 +741,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 評選多看中家世背景
+    to: 評選多看重家世背景
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「評選多看中家世背景」→「評選多看重家世背景」
+    by: review
 - id: doc_113_台中_中科_社會_歷史_g8s1e1_s2_19
   section: 2
   number: 19

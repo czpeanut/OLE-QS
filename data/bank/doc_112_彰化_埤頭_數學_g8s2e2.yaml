@@ -235,8 +235,8 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 如圖，$\triangle ABC$ 是一個三角形公園，其中 $\angle BAC = 100^{\circ}$，若文琪再度從 $Q$ 點出發，逆時針方向繞公園走。則經過
-    $B$、$C$ 點後到 $P$ 點，即轉彎兩次，則這兩次共轉了多少度？
+  stem: 如圖，$\triangle ABC$ 是一個三角形公園，其中 $\angle BAC = 100^{\circ}$，若文琪從 $Q$ 點出發，逆時針方向繞公園走。則經過
+    $B$、$C$ 點後到 $P$ 點，即轉彎兩次，則這兩次共轉了多少度？（原卷有誤，已修正）
   options:
   - label: A
     content: $80^{\circ}$
@@ -282,6 +282,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若文琪再度從 Q 點出發
+    to: 若文琪從 Q 點出發
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「若文琪再度從 Q 點出發」→「若文琪從 Q 點出發」
+    by: review
 - id: doc_112_彰化_埤頭_數學_g8s2e2_s1_7
   section: 1
   number: 7

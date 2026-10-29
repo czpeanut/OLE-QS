@@ -197,7 +197,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 民國初年中，國尚未統一，孫中山曾對外尋求外國的合作以協助國民革命。請問：下列哪一個列強對孫中山伸出援手？
+  stem: 民國初年，中國尚未統一，孫中山曾對外尋求外國的合作以協助國民革命。請問：下列哪一個列強對孫中山伸出援手？
   options:
   - label: A
     content: 英國
@@ -226,6 +226,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 民國初年中，國尚未統一，孫中山曾對外尋求外國的合作以協助國民革命。請問：下列哪一個列強對孫中山伸出援手？
+    to: 民國初年，中國尚未統一，孫中山曾對外尋求外國的合作以協助國民革命。請問：下列哪一個列強對孫中山伸出援手？
+    note: 標點錯位，逗號誤置於中國之間
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s2e2_s1_7
   section: 1
   number: 7
@@ -418,7 +424,7 @@ questions:
   - label: A
     content: 「停止內戰」是指停止軍閥混戰
   - label: B
-    content: 某位政治人物是指中正
+    content: 某位政治人物是指蔣中正
   - label: C
     content: 九一八事變後，由「安內」轉而「攘外」
   - label: D
@@ -442,6 +448,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 中國北伐完成後，某位政治人物呼籲：「全國各黨派放棄歧見，停止內戰、團結一致，共同抵禦外敵。」由此上述的內容判斷，下列何者正確？
+    to: 中國北伐完成後，某位政治人物呼籲：「全國各黨派放棄歧見，停止內戰、團結一致，共同抵禦外敵。」由此上述的內容判斷，下列何者正確？
+    note: 選項B漏「蔣」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s2e2_s1_13
   section: 1
   number: 13
@@ -634,7 +646,7 @@ questions:
   number: 18
   type: single
   page: 1
-  stem: 孫中山在《建國大綱》中提出，建國應成分成三個階段來進行，由軍政、訓政進而到憲政階段。請問：由軍政進入到訓政階段與何事有關？
+  stem: 孫中山在《建國大綱》中提出，建國應分成三個階段來進行，由軍政、訓政進而到憲政階段。請問：由軍政進入到訓政階段與何事有關？
   options:
   - label: A
     content: 誓師北伐
@@ -663,6 +675,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 孫中山在《建國大綱》中提出，建國應成分成三個階段來進行，由軍政、訓政進而到憲政階段。請問：由軍政進入到訓政階段與何事有關？
+    to: 孫中山在《建國大綱》中提出，建國應分成三個階段來進行，由軍政、訓政進而到憲政階段。請問：由軍政進入到訓政階段與何事有關？
+    note: 多「成」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s2e2_s1_19
   section: 1
   number: 19
@@ -846,7 +864,7 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 八年抗戰期間，國民政府為與日軍展開長期戰鬥，將重要的物資、工廠、行政機關都遷往大後方。請問：國民政府將省都遷移到右圖中何處？
+  stem: 八年抗戰期間，國民政府為與日軍展開長期戰鬥，將重要的物資、工廠、行政機關都遷往大後方。請問：國民政府將首都遷移到右圖中何處？
   options:
   - label: A
     content: 甲
@@ -893,12 +911,18 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 八年抗戰期間，國民政府為與日軍展開長期戰鬥，將重要的物資、工廠、行政機關都遷往大後方。請問：國民政府將省都遷移到右圖中何處？
+    to: 八年抗戰期間，國民政府為與日軍展開長期戰鬥，將重要的物資、工廠、行政機關都遷往大後方。請問：國民政府將首都遷移到右圖中何處？
+    note: 「首都」誤植為「省都」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s2e2_s1_25
   section: 1
   number: 25
   type: single
   page: 2
-  stem: 每年1月11日是「司法節」，其由來是因為中國與美國、英國簽訂了平等新約，廢除治外法權，讓百年來不平等條約從此完全廢除。請問上逑情況是發生在何時？
+  stem: 每年1月11日是「司法節」，其由來是因為中國與美國、英國簽訂了平等新約，廢除治外法權，讓百年來不平等條約從此完全廢除。請問上述情況是發生在何時？
   options:
   - label: A
     content: 聯俄容共期間
@@ -927,6 +951,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 每年1月11日是「司法節」，其由來是因為中國與美國、英國簽訂了平等新約，廢除治外法權，讓百年來不平等條約從此完全廢除。請問上逑情況是發生在何時？
+    to: 每年1月11日是「司法節」，其由來是因為中國與美國、英國簽訂了平等新約，廢除治外法權，讓百年來不平等條約從此完全廢除。請問上述情況是發生在何時？
+    note: 「上述」誤植為「上逑」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s2e2_s1_26
   section: 1
   number: 26
@@ -1012,7 +1042,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 張學良口述歷史中曾述及：「有人說，其實我不易懺，自己獨立的話，中國的情況反而比較好，東北可能可以保下來。那我當皇帝？為什麼我要服從呢！那我舅變成日本的傀儡了！」請問：張學良暢談的背景為何？
+  stem: 張學良口述歷史中曾述及：「有人說，其實我不易幟，自己獨立的話，中國的情況反而比較好，東北可能可以保下來。那我當皇帝？為什麼我要服從呢！那我豈變成日本的傀儡了！」請問：張學良暢談的背景為何？
   options:
   - label: A
     content: 不滿九一八事變
@@ -1042,6 +1072,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 張學良口述歷史中曾述及：「有人說，其實我不易懺，自己獨立的話，中國的情況反而比較好，東北可能可以保下來。那我當皇帝？為什麼我要服從呢！那我舅變成日本的傀儡了！」請問：張學良暢談的背景為何？
+    to: 張學良口述歷史中曾述及：「有人說，其實我不易幟，自己獨立的話，中國的情況反而比較好，東北可能可以保下來。那我當皇帝？為什麼我要服從呢！那我豈變成日本的傀儡了！」請問：張學良暢談的背景為何？
+    note: 「易幟」誤植為「不易懺」，「豈」誤植為「舅」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s2e2_s1_29
   section: 1
   number: 29
@@ -1115,7 +1151,7 @@ questions:
   number: 31
   type: single
   page: 2
-  stem: 靖頭國中舉辦校外教學，到歷史博物館參觀「蔣中正史蹟展覽」。請問：下列哪一事件的史料，不適合出現在展覽會場中？
+  stem: 埤頭國中舉辦校外教學，到歷史博物館參觀「蔣中正史蹟展覽」。請問：下列哪一事件的史料，不適合出現在展覽會場中？
   options:
   - label: A
     content: 武昌起義
@@ -1144,6 +1180,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 靖頭國中舉辦校外教學，到歷史博物館參觀「蔣中正史蹟展覽」。請問：下列哪一事件的史料，不適合出現在展覽會場中？
+    to: 埤頭國中舉辦校外教學，到歷史博物館參觀「蔣中正史蹟展覽」。請問：下列哪一事件的史料，不適合出現在展覽會場中？
+    note: 「埤」誤植為「靖」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s2e2_s1_32
   section: 1
   number: 32

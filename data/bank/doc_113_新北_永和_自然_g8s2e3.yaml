@@ -250,16 +250,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: '乙醇與甲醚的相關資料如表所示，下列哪個選項的敘述是正確的？
-
-
-    | 物質 | 甲醚 | 乙醇 |
-
-    | :--- | :--- | :--- |
-
-    | 熔點 | －141℃ | －114.3℃ |
-
-    | 沸點 | －24.8℃ | 78.4℃ |'
+  stem: 乙醇與甲醚的相關資料如表所示，下列哪個選項的敘述是正確的？
   options:
   - label: A
     content: 甲醚是無機化合物，乙醇是有機化合物
@@ -270,22 +261,16 @@ questions:
   - label: D
     content: 兩者完全燃燒皆會產生$CO_{2}$。
   assets:
-  - key: s1_8_f1
+  - key: s1_8_r10290727_1
     kind: figure
-    file: doc_113_新北_永和_自然_g8s2e3/s1_8_f1.png
+    file: doc_113_新北_永和_自然_g8s2e3/s1_8_r10290727_1.png
     crop:
       page: 1
       rect:
-      - 116.79
-      - 542.37
-      - 510.69
-      - 593.75
-      auto_from:
-      - 104.57
-      - 537.8
+      - 105.3
+      - 481.04
       - 568.7
       - 602.56
-    crop_by: auto
   answer:
   - D
   answer_source: answer_key_vlm
@@ -302,6 +287,21 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: '乙醇與甲醚的相關資料如表所示，下列哪個選項的敘述是正確的？
+
+
+      | 物質 | 甲醚 | 乙醇 |
+
+      | :--- | :--- | :--- |
+
+      | 熔點 | －141℃ | －114.3℃ |
+
+      | 沸點 | －24.8℃ | 78.4℃ |'
+    to: 乙醇與甲醚的相關資料如表所示，下列哪個選項的敘述是正確的？
+    note: 表格漏擷取「原子連接方式」一列
+    by: review
+    extraction: true
 - id: doc_113_新北_永和_自然_g8s2e3_s1_9
   section: 1
   number: 9

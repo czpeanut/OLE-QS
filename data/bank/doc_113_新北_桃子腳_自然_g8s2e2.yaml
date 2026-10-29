@@ -1162,7 +1162,7 @@ questions:
   number: 31
   type: single
   page: 3
-  stem: 若濃度均為0.l M 的500mL 水溶液，下列哪一杯水溶液所解離的粒子總數最多？
+  stem: 若濃度均為 0.1 M 的 500mL 水溶液，下列哪一杯水溶液所解離的粒子總數最多？
   options:
   - label: A
     content: $\text{C}_6\text{H}_{12}\text{O}_6$
@@ -1188,6 +1188,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 若濃度均為0.l M 的500mL 水溶液，下列哪一杯水溶液所解離的粒子總數最多？
+    to: 若濃度均為 0.1 M 的 500mL 水溶液，下列哪一杯水溶液所解離的粒子總數最多？
+    note: 數字「0.1」誤植為英文字母「0.l」
+    by: review
+    extraction: true
 - id: doc_113_新北_桃子腳_自然_g8s2e2_s2_32
   section: 2
   number: 32

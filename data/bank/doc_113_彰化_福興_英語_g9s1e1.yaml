@@ -462,7 +462,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: Mom is very angry that my sister ______ her room.
+  stem: Mom is very angry that my sister ______ her room.（原卷有誤，已修正）
   options:
   - label: A
     content: is not clean
@@ -471,7 +471,7 @@ questions:
   - label: C
     content: has not cleaned
   - label: D
-    content: has not be cleaned
+    content: has not been cleaned
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -491,6 +491,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) has not be cleaned
+    to: (D) has not been cleaned
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(D) has not be cleaned」→「(D) has not been cleaned」
+    by: review
 - id: doc_113_彰化_福興_英語_g9s1e1_s2_7
   section: 2
   number: 7

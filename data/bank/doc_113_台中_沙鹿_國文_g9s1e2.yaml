@@ -614,7 +614,7 @@ questions:
   - label: C
     content: 阿里山擁有壯麗的自然景觀，並蘊藏豐富的森林資源，不禁令人讚嘆處處是人定勝天的奇景
   - label: D
-    content: 從防波堤走出境，竟別有洞天！象鼻岩海岸在秋陽照耀之下，浪濤澎湃、海水澄澈。
+    content: 從防波堤走出去，竟別有洞天！象鼻岩海岸在秋陽照耀之下，浪濤澎湃、海水澄澈。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -634,6 +634,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列文句，何者使用最恰當？
+    to: 下列文句，何者使用最恰當？
+    note: 「走出去」誤植為「走出境」
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_國文_g9s1e2_s4_18
   section: 4
   number: 18
@@ -859,12 +865,12 @@ questions:
   number: 2
   type: single
   page: 2
-  stem: 〈春夜宴從弟桃花園序〉一文，篇幅雖短，但情意豐富多變，下列說明何者錯誤？
+  stem: 〈春夜宴從弟桃花園序〉一文，篇幅雖短，但情意豐富多變，下列說明何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 人生苦短，歡樂無多的感慨
   - label: B
-    content: 從篇名可以得知宴寫的季節、時間、活動、參與者、地點
+    content: 從篇名可以得知宴集的季節、時間、活動、參與者、地點
   - label: C
     content: 「群季俊秀，皆為惠連；吾人詠歌，獨慚康樂」：指諸弟都有謝惠連般優秀的才華，自慚詩才不如謝靈運
   - label: D
@@ -904,6 +910,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 從篇名可以得知宴寫的季節
+    to: 從篇名可以得知宴集的季節
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「從篇名可以得知宴寫的季節」→「從篇名可以得知宴集的季節」
+    by: review
 - id: doc_113_台中_沙鹿_國文_g9s1e2_s5_3
   section: 5
   number: 3

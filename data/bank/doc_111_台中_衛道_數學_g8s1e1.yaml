@@ -354,7 +354,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 計算 $\frac{\sqrt{9}}{\sqrt{12}}\cdot \sqrt{\frac{54}{12}}\times \sqrt{\frac{3}{2}}$
+  stem: 計算 $\frac{\sqrt{9}}{\sqrt{12}}\div \sqrt{\frac{54}{12}}\times \sqrt{\frac{3}{2}}$
     之值為何？
   options:
   - label: A
@@ -384,6 +384,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 計算 $\frac{\sqrt{9}}{\sqrt{12}}\cdot \sqrt{\frac{54}{12}}\times \sqrt{\frac{3}{2}}$
+      之值為何？
+    to: 計算 $\frac{\sqrt{9}}{\sqrt{12}}\div \sqrt{\frac{54}{12}}\times \sqrt{\frac{3}{2}}$
+      之值為何？
+    note: 原卷為除號，擷取誤為乘號點
+    by: review
+    extraction: true
 - id: doc_111_台中_衛道_數學_g8s1e1_s1_11
   section: 1
   number: 11

@@ -43,7 +43,7 @@ questions:
   stem: 下列敘述何者正確？
   options:
   - label: A
-    content: 坐標平面上，與原點相距 5 單位長ptr的點有4個
+    content: 坐標平面上，與原點相距 5 單位長的點有4個
   - label: B
     content: 坐標平面上，已知 $A(4,0)$，B點在 y 軸上，且 $\overline{AB}=5$，則B點坐標必為 $(0,3)$
   - label: C
@@ -69,6 +69,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列敘述何者正確？
+    to: 下列敘述何者正確？
+    note: 多出「ptr」三字
+    by: review
+    extraction: true
 - id: doc_112_台中_衛道_數學_g8s1e2_s1_2
   section: 1
   number: 2
@@ -889,9 +895,9 @@ questions:
   type: calc
   page: 3
   stem: '小薇去爬山，從 $A$ 點出發，沿著爬山步道（$A\rightarrow B\rightarrow C\rightarrow D$）往上爬，目的地是山頂（$D$
-    點），已知 $\overline{AB}$ 長度為 600 公尺，$\overline{BC}$ 長度為 1000 公尺，$CD$ 長度為 800 公尺，且
-    $\overline{AB}$ 與 $\overline{AE}$ 夾角為 $45^{\circ}$，$\overline{BC}$ 與 $\overline{BF}$
-    夾角為 $30^{\circ}$，$\overline{CD}$ 與 $\overline{CG}$ 夾角為 $60^{\circ}$，
+    點），已知 $\overline{AB}$ 長度為 600 公尺，$\overline{BC}$ 長度為 1000 公尺，$\overline{CD}$ 長度為
+    800 公尺，且 $\overline{AB}$ 與 $\overline{AE}$ 夾角為 $45^{\circ}$，$\overline{BC}$ 與
+    $\overline{BF}$ 夾角為 $30^{\circ}$，$\overline{CD}$ 與 $\overline{CG}$ 夾角為 $60^{\circ}$，
 
     【說明：坡度的計算：「垂直爬升高度」除以「水平面的移動距離」$\times 100\%$。例如：坡度 $12\%$ 表示水平位移 100 公尺，爬升 12
     公尺】
@@ -930,3 +936,13 @@ questions:
       chapter: 第2章 平方根與畢氏定理
     textbook: 八上 2-3 畢氏定理
     labeled_by: ai
+  errata:
+  - from: 小薇去爬山，從 $A$ 點出發，沿著爬山步道（$A\rightarrow B\rightarrow C\rightarrow D$）往上爬，目的地是山頂（$D$
+      點），已知 $\overline{AB}$ 長度為 600 公尺，$\overline{BC}$ 長度為 1000 公尺，$CD$ 長度為 800 公尺，且
+      $\overline{AB}$ 與 $\overline{AE}$ 夾角為 $4
+    to: 小薇去爬山，從 $A$ 點出發，沿著爬山步道（$A\rightarrow B\rightarrow C\rightarrow D$）往上爬，目的地是山頂（$D$
+      點），已知 $\overline{AB}$ 長度為 600 公尺，$\overline{BC}$ 長度為 1000 公尺，$\overline{CD}$
+      長度為 800 公尺，且 $\overline{AB}$ 與 $\overline{
+    note: CD 上方漏了線段符號頂線
+    by: review
+    extraction: true

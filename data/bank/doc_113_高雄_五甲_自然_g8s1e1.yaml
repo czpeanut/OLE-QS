@@ -301,7 +301,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 小玲以最小刻度為 $1\text{ cm}$ 的直尺，測量書本寬度剛好為 $20\text{ cm}$，請問下列何者為最適確的測量結果？
+  stem: 小玲以最小刻度為 $1\text{ cm}$ 的直尺，測量書本寬度剛好為 $20\text{ cm}$，請問下列何者為最正確的測量結果？
   options:
   - label: A
     content: $20\text{ cm}$
@@ -330,6 +330,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 小玲以最小刻度為 $1\text{ cm}$ 的直尺，測量書本寬度剛好為 $20\text{ cm}$，請問下列何者為最適確的測量結果？
+    to: 小玲以最小刻度為 $1\text{ cm}$ 的直尺，測量書本寬度剛好為 $20\text{ cm}$，請問下列何者為最正確的測量結果？
+    note: 「最正確」錯擷為「最適確」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g8s1e1_s1_10
   section: 1
   number: 10

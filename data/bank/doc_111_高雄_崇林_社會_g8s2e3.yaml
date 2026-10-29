@@ -60,14 +60,14 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 關於(甲)，應填入何者？
+  stem: 關於(甲)，應填入何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 訴願
   - label: B
     content: 請願
   - label: C
-    content: 是行政訴訟
+    content: 行政訴訟
   - label: D
     content: 仲裁。
   group_stem: 國家通訊傳播委員會 (NCC) 3 月22 日表示，亞太電信經營「企業便利簡訊服務」等 3 案件，因未依核准營運計畫落實用戶身分查核，明確違反電信管理法規定，分別罰款
@@ -89,6 +89,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 是行政訴訟
+    to: (C) 行政訴訟
+    note: 多印「是」字：「(C) 是行政訴訟」→「(C) 行政訴訟」
+    by: review
 - id: doc_111_高雄_崇林_社會_g8s2e3_s1_3
   section: 1
   number: 3

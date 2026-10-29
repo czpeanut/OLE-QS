@@ -1646,20 +1646,8 @@ questions:
   number: 40
   type: single
   page: 4
-  stem: 'Sarah is standing on the corner of Friedrich Road and Bundes Street. She
-    wants to go to the movie theater. Who can help her get there?
-
-    (A) Charlie: Go along Bundes Street for two blocks, and turn left on Moritz Street.
-    Go down the road, and it’s on your right.
-
-    (B) Shawn: Go down Bundes Street for one block, and turn right on Bahnhof Street.
-    Cross Albrecht Street, and it’s on your right.
-
-    (C) Taylor: Go along Friedrich Road for two blocks, and turn left on Rhein Street.
-    After you walk for two blocks, you can see it on your right.
-
-    (D) Sabrina: Go down Friedrich Road and turn left on Albrecht Street. After you
-    walk for two blocks, make a right turn. It’s on your right.'
+  stem: Sarah is standing on the corner of Friedrich Road and Bundes Street. She wants
+    to go to the movie theater. Who can help her get there?
   options:
   - label: A
     content: 'Charlie: Go along Bundes Street for two blocks, and turn left on Moritz
@@ -1691,6 +1679,16 @@ questions:
     gemini_high: D
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 'Sarah is standing on the corner of Friedrich Road and Bundes Street. She
+      wants to go to the movie theater. Who can help her get there?
+
+      (A) Charlie: Go along Bundes Street for two blocks, and turn left'
+    to: Sarah is standing on the corner of Friedrich Road and Bundes Street. She wants
+      to go to the movie theater. Who can help her get there?
+    note: ABCD四個選項重複擷取了一次
+    by: review
+    extraction: true
 shared_assets:
 - key: g2_32_35
   label: 題組附圖

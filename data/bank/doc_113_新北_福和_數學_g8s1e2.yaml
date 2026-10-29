@@ -547,7 +547,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 已知一直角三角形兩股長為 $a$ 和 21，斜邊長72，則$(\sqrt{288}+ 4a)(\sqrt{288}-4a)$之值與下列何者相等？〔2-3〕
+  stem: 已知一直角三角形兩股長為 $a$ 和 21，斜邊長 72，則 $(\sqrt{288+4a})(\sqrt{288-4a})$ 之值與下列何者相等？〔2-3〕
   options:
   - label: A
     content: '336'
@@ -574,6 +574,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 已知一直角三角形兩股長為 $a$ 和 21，斜邊長72，則$(\sqrt{288}+ 4a)(\sqrt{288}-4a)$之值與下列何者相等？〔2-3〕
+    to: 已知一直角三角形兩股長為 $a$ 和 21，斜邊長 72，則 $(\sqrt{288+4a})(\sqrt{288-4a})$ 之值與下列何者相等？〔2-3〕
+    note: 原卷根號涵蓋288+4a與288-4a，擷取根號只涵蓋288
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_數學_g8s1e2_s1_17
   section: 1
   number: 17

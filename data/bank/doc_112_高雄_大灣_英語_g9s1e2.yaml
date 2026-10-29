@@ -878,7 +878,7 @@ questions:
   type: single
   page: 3
   stem: 6. What may the special stamp on food say to warn people with nut allergies
-    not to eat?  warn 警告
+    not to eat?  warn 警告（原卷有誤，已修正）
   options:
   - label: A
     content: '"Be Very Careful."'
@@ -887,7 +887,7 @@ questions:
   - label: C
     content: '"Every Peanut."'
   - label: D
-    content: “May contains Peanuts.”
+    content: “May contain Peanuts.”
   group_stem: 'What''s an allergy? It''s when you eat something or your body touches
     something, your body doesn''t like it. It can make your body sick or let your
     skin or breathing have some problems. People can have allergies to many things,
@@ -924,6 +924,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) “May contains Peanuts.”
+    to: (D) “May contain Peanuts.”
+    note: 助動詞後接原形動詞，contains應為contain：「(D) “May contains Peanuts.”」→「(D) “May contain
+      Peanuts.”」
+    by: review
 - id: doc_112_高雄_大灣_英語_g9s1e2_s4_7
   section: 4
   number: 7

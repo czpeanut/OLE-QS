@@ -1502,7 +1502,7 @@ questions:
   number: 36
   type: single
   page: 6
-  stem: 36.____ As a nice teacher, what would you do for Betty?
+  stem: As a nice teacher, what would you do for Betty?
   options:
   - label: A
     content: Teach her how to get along well with others.
@@ -1546,6 +1546,23 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  assets:
+  - key: s7_36_r10290705_2
+    kind: figure
+    file: doc_112_高雄_林園_英語_g9s1e2/s7_36_r10290705_2.png
+    crop:
+      page: 6
+      rect:
+      - 348.66
+      - 859.78
+      - 674.35
+      - 980.27
+  errata:
+  - from: 36.____ As a nice teacher, what would you do for Betty?
+    to: As a nice teacher, what would you do for Betty?
+    note: 漏附右側 Betty 發言的對話框插圖，導致無法作答
+    by: review
+    extraction: true
 - id: doc_112_高雄_林園_英語_g9s1e2_s8_1
   section: 8
   number: 1
@@ -1802,8 +1819,9 @@ questions:
   number: 12
   type: calc
   page: 7
-  stem: "12. The mice knew how they could run away from the snake in the grass. (將畫線部分用不定詞片語改寫)\n\
-    \       The mice knew ___________________________ from the snake in the grass."
+  stem: "12. The mice knew <u>how they could run away</u> from the snake in the grass.\
+    \ (將畫線部分用不定詞片語改寫)\n       The mice knew ___________________________ from the snake\
+    \ in the grass."
   tags:
     textbook: 九上 英語 不定詞 to V 當受詞（want/need/plan/decide/learn）
     labeled_by: ai
@@ -1814,6 +1832,16 @@ questions:
       code: B3-04
       title: 不定詞 to V 當受詞（want/need/plan/decide/learn）
       chapter: B3 八上
+  errata:
+  - from: "12. The mice knew how they could run away from the snake in the grass.\
+      \ (將畫線部分用不定詞片語改寫)\n       The mice knew ___________________________ from the\
+      \ snake in the grass."
+    to: "12. The mice knew <u>how they could run away</u> from the snake in the grass.\
+      \ (將畫線部分用不定詞片語改寫)\n       The mice knew ___________________________ from the\
+      \ snake in the grass."
+    note: 題旨要求改寫畫線部分，但擷取結果未標出畫線處
+    by: review
+    extraction: true
 shared_assets:
 - key: g6_25_28
   label: 題組附圖
@@ -1840,7 +1868,7 @@ shared_assets:
 - key: g7_34_36
   label: 題組附圖
   kind: figure
-  file: doc_112_高雄_林園_英語_g9s1e2/g7_34_36_f1.png
+  file: doc_112_高雄_林園_英語_g9s1e2/s7_36_r10290705_1.png
   used_by:
   - doc_112_高雄_林園_英語_g9s1e2_s7_34
   - doc_112_高雄_林園_英語_g9s1e2_s7_35
@@ -1848,13 +1876,8 @@ shared_assets:
   crop:
     page: 6
     rect:
-    - 456.99
-    - 373.19
-    - 703.21
-    - 599.48
-    auto_from:
-    - 485.35
-    - 381.93
-    - 700.04
-    - 596.62
+    - 489.29
+    - 383.0
+    - 702.04
+    - 631.46
   crop_by: auto

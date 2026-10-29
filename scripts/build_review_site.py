@@ -109,7 +109,7 @@ def padded(pdf, crop: dict) -> tuple[str, dict] | None:
     if old:
         R |= fitz.Rect(old[0] - 4, old[1] - 4, old[2] + 4, old[3] + 4)
     R &= page.rect
-    dpi = min(200, MAX_WIDTH / (R.width / 72))
+    dpi = int(min(200, MAX_WIDTH / (R.width / 72)))       # 新版 PyMuPDF 只收整數
     pix = page.get_pixmap(dpi=dpi, clip=R)
     im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
     meta = {"pg": pno, "R": [round(v, 2) for v in (R.x0, R.y0, R.x1, R.y1)],

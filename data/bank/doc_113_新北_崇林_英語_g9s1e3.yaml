@@ -692,17 +692,23 @@ questions:
   page: 2
   stem: 'Choose the WRONG one. (課本)
 
-    With joy, Rose went home and told her mother about the experience she had.  When
-    Rose''s mom saw the jewels, she became exciting.'
+    <u>With joy</u>, Rose went home and told her mother <u>about the experience</u>
+    she had.  When Rose''s mom <u>saw the</u>
+
+    　　(A)　　　　　　　　　　　　　　　　　　　　　(B)　　　　　　　　　　　　　　　　　　　　　(C)
+
+    jewels, she <u>became exciting</u>.
+
+    　　　　　　　(D)'
   options:
   - label: A
     content: With joy
   - label: B
     content: about the experience
   - label: C
-    content: When
+    content: saw the
   - label: D
-    content: became exciting.
+    content: became exciting
   ai_answers:
     gemini: D
     qwen: D
@@ -720,6 +726,20 @@ questions:
       chapter: B5 九上
     textbook: 九上 英語 分詞當形容詞（-ed感受/-ing特質：interested/interesting）
     labeled_by: ai
+  errata:
+  - from: 'Choose the WRONG one. (課本)
+
+      With joy, Rose went home and told her mother about the experience she had.  When
+      Rose''s mom saw the jewels, she became exciting.'
+    to: 'Choose the WRONG one. (課本)
+
+      <u>With joy</u>, Rose went home and told her mother <u>about the experience</u>
+      she had.  When Rose''s mom <u>saw the</u>
+
+      　　(A)　　　　　　　　　　　　　　　　　　　　　(B)　　　　　　　　　　　　　　　　　　　　　(C'
+    note: 選項(C)在原卷標示於saw the下方，擷取誤為When
+    by: review
+    extraction: true
 - id: doc_113_新北_崇林_英語_g9s1e3_s1_22
   section: 1
   number: 22
@@ -1140,7 +1160,9 @@ questions:
   number: 33
   type: single
   page: 3
-  stem: （克漏字第33格）
+  stem: '（克漏字第33格）
+
+    regret 後悔'
   options:
   - label: A
     content: got nothing but regret
@@ -1182,6 +1204,14 @@ questions:
       chapter: 綜合
     textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: （克漏字第33格）
+    to: '（克漏字第33格）
+
+      regret 後悔'
+    note: 漏擷取字詞註釋「regret 後悔」
+    by: review
+    extraction: true
 - id: doc_113_新北_崇林_英語_g9s1e3_s2_34
   section: 2
   number: 34

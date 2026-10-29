@@ -1200,6 +1200,12 @@ questions:
     qwen: A
   answer_status: disputed
   review_note: 答案卷 ['B']，Gemini 與 Qwen 一致判為 A
+  errata:
+  - from: 住在大阪府的服部平次想要到東京都會區和柯南碰面，他若搭乘新幹線鐵路前往，由附圖判斷，應朝向下列哪一個方向前進？
+    to: 住在大阪府的服部平次想要到東京都會區和柯南碰面，他若搭乘新幹線鐵路前往，由附圖判斷，應朝向下列哪一個方向前進？
+    note: 應歸入「日本境內重要工業區分布圖」題組，漏歸題組導致缺圖
+    by: review
+    extraction: true
 - id: doc_111_桃園_內壢_社會_地理_g8s1e3_s1_34
   section: 1
   number: 34
@@ -1662,7 +1668,7 @@ shared_assets:
 - key: g1_30_33
   label: 題組附圖
   kind: figure
-  file: doc_111_桃園_內壢_社會_地理_g8s1e3/g1_30_33_f1.png
+  file: doc_111_桃園_內壢_社會_地理_g8s1e3/s1_33_r10290739_1.png
   used_by:
   - doc_111_桃園_內壢_社會_地理_g8s1e3_s1_30
   - doc_111_桃園_內壢_社會_地理_g8s1e3_s1_31
@@ -1671,15 +1677,10 @@ shared_assets:
   crop:
     page: 2
     rect:
-    - 430.11
-    - 702.71
-    - 630.26
-    - 842.34
-    auto_from:
-    - 427.09
-    - 701.67
-    - 632.95
-    - 840.11
+    - 428.05
+    - 701.85
+    - 633.49
+    - 845.03
   crop_by: auto
 - key: g1_34_35
   label: 題組附圖

@@ -1710,26 +1710,9 @@ questions:
   number: 8
   type: fill
   page: 4
-  stem: (1) 圖(十八)中的X 為哪種測量儀器？
+  stem: (1) 圖(十八)中的 X 為哪種測量儀器？答：【 (8) 】；Y 為哪種測量儀器？答：【 (9) 】。
   group_stem: 5. 圖(十八)為測量電阻大小的裝置圖，圖(十九)為按下開關後，伏特計與毫安培計讀數的放大圖，請回答以下問題：
   shared_asset: g2_8_12
-  assets:
-  - key: g2_8_12_x2
-    kind: figure
-    file: doc_112_高雄_大樹_自然_g9s1e3/g2_8_12_f2.png
-    crop:
-      page: 4
-      rect:
-      - 378.73
-      - 423.54
-      - 608.64
-      - 532.44
-      auto_from:
-      - 374.07
-      - 417.93
-      - 612.65
-      - 543.93
-    crop_by: auto
   tags:
     chapter:
       publisher: 翰林
@@ -1747,6 +1730,12 @@ questions:
   - 伏特計
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (1) 圖(十八)中的X 為哪種測量儀器？
+    to: (1) 圖(十八)中的 X 為哪種測量儀器？答：【 (8) 】；Y 為哪種測量儀器？答：【 (9) 】。
+    note: 原卷一題包含兩格，被拆成兩題
+    by: review
+    extraction: true
 - id: doc_112_高雄_大樹_自然_g9s1e3_s2_9
   section: 2
   number: 9
@@ -2178,16 +2167,16 @@ questions:
   number: 8
   type: single
   page: 5
-  stem: '(2) 附表為黃雨萱報告中所記錄的電流值，若根據圖(二十三)來判斷表中$I_{\text{甲}}>I_{\text{乙}}$ 是否合理，下列的判斷與論述何者最適當？
+  stem: '(2) 附表為黃雨萱報告中所記錄的電流值，若根據圖(二十三)來判斷表中 $I_{\text{甲}}>I_{\text{乙}}$ 是否合理，下列的判斷與論述何者最適當？
 
 
-    | 安培計代號 | 電流 |
+    | 安培計 | 代號 | 電流 |
 
-    | :---: | :---: |
+    | :---: | :---: | :---: |
 
-    | 甲 | $I_{\text{甲}}$ 200 mA |
+    | 甲 | $I_{\text{甲}}$ | 200 mA |
 
-    | 乙 | $I_{\text{乙}}$ 100 mA |'
+    | 乙 | $I_{\text{乙}}$ | 100 mA |'
   options:
   - label: A
     content: 合理，因為負極為電子流流出端，而甲較靠近電池負極，所以 $I_{\text{甲}}>I_{\text{乙}}$ 合理
@@ -2216,6 +2205,30 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '(2) 附表為黃雨萱報告中所記錄的電流值，若根據圖(二十三)來判斷表中$I_{\text{甲}}>I_{\text{乙}}$ 是否合理，下列的判斷與論述何者最適當？
+
+
+      | 安培計代號 | 電流 |
+
+      | :---: | :---: |
+
+      | 甲 | $I_{\text{甲}}$ 200 mA |
+
+      | 乙 | $I_{\text{乙}}$ 100 mA |'
+    to: '(2) 附表為黃雨萱報告中所記錄的電流值，若根據圖(二十三)來判斷表中 $I_{\text{甲}}>I_{\text{乙}}$ 是否合理，下列的判斷與論述何者最適當？
+
+
+      | 安培計 | 代號 | 電流 |
+
+      | :---: | :---: | :---: |
+
+      | 甲 | $I_{\text{甲}}$ | 200 mA |
+
+      | 乙 | $I_{\text{乙}}$ | 100 mA |'
+    note: 表格漏擷取「代號」欄位，合併錯誤
+    by: review
+    extraction: true
 shared_assets:
 - key: g2_1_2
   label: 題組附圖
@@ -2256,7 +2269,7 @@ shared_assets:
 - key: g2_8_12
   label: 題組附圖
   kind: figure
-  file: doc_112_高雄_大樹_自然_g9s1e3/g2_8_12_f1.png
+  file: doc_112_高雄_大樹_自然_g9s1e3/s2_8_r10290641_1.png
   used_by:
   - doc_112_高雄_大樹_自然_g9s1e3_s2_8
   - doc_112_高雄_大樹_自然_g9s1e3_s2_9
@@ -2266,15 +2279,10 @@ shared_assets:
   crop:
     page: 4
     rect:
-    - 166.94
-    - 424.19
-    - 281.75
-    - 554.68
-    auto_from:
-    - 163.31
-    - 424.15
-    - 285.38
-    - 550.15
+    - 156.3
+    - 419.12
+    - 618.24
+    - 546.83
   crop_by: auto
 - key: g3_1_3
   label: 題組附圖

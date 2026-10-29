@@ -40,7 +40,7 @@ questions:
   - label: A
     content: 「踹」門／「揣」測／「惴」慄難安
   - label: B
-    content: 「拎」背包／「伶」俐／「冷」冷冰聲
+    content: 「拎」背包／「伶」俐／「泠」泠水聲
   - label: C
     content: 腥「羶」／祭「壇」／如坐針「氈」
   - label: D
@@ -64,6 +64,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 以下選項中的字音，何者相同？
+    to: 以下選項中的字音，何者相同？
+    note: 「冽」誤擷取為「冷冰」
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g9s1e3_s1_2
   section: 1
   number: 2
@@ -658,7 +664,7 @@ questions:
   stem: 下列何者與「故鄉今夜思千里，霜鬢明朝又一年」詩意中提到的傳統節慶相同？
   options:
   - label: A
-    content: 千門開鎖萬燈明，正月月中動動帝京
+    content: 千門開鎖萬燈明，正月月中動帝京
   - label: B
     content: 七夕今宵看碧霄，牽牛織女渡河橋
   - label: C
@@ -685,6 +691,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 下列何者與「故鄉今夜思千里，霜鬢明朝又一年」詩意中提到的傳統節慶相同？
+    to: 下列何者與「故鄉今夜思千里，霜鬢明朝又一年」詩意中提到的傳統節慶相同？
+    note: 多了一個「動」字
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_國文_g9s1e3_s1_20
   section: 1
   number: 20
@@ -792,12 +804,12 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 紙風車劇團最後一場公演，地方人士紛紛致贈聯語祝賀。下列何者選項最不適用？
+  stem: 紙風車劇團最後一場公演，地方人士紛紛致贈聯語祝賀。下列何者選項最不適用？（原卷有誤，已修正）
   options:
   - label: A
     content: 頃刻間千秋事業，方丈地萬里江山；三五步行遍天下，六七人百萬雄兵
   - label: B
-    content: 鼓舞雙拳，打遍天下英雄，莫敢回頭；運動寸鐵，平宇內豪傑舛，誰不低頭
+    content: 鼓舞雙拳，打遍天下英雄，莫敢回頭；運動寸鐵，平宇內豪傑，誰不低頭
   - label: C
     content: 窮的富的，貴的賤的，睜睜眼看他怎的；歌斯舞斯，哭斯笑斯，點點頭原來如斯
   - label: D
@@ -822,6 +834,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 平宇內豪傑舛，誰不低頭
+    to: 平宇內豪傑，誰不低頭
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「平宇內豪傑舛，誰不低頭」→「平宇內豪傑，誰不低頭」
+    by: review
 - id: doc_113_基隆_銘傳_國文_g9s1e3_s1_24
   section: 1
   number: 24
@@ -1603,10 +1620,10 @@ questions:
   number: 44
   type: single
   page: 4
-  stem: 根據甲文，為什麼石簧會將水與石相互激盪出的聲響認為是雨聲？
+  stem: 根據甲文，為什麼石簣會將水與石相互激盪出的聲響認為是雨聲？（原卷有誤，已修正）
   options:
   - label: A
-    content: 因石簧期盼降雨
+    content: 因石簣期盼降雨
   - label: B
     content: 因連日有雨
   - label: C
@@ -1654,6 +1671,19 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '為什麼石簧會將水與石相互激盪出的聲響認為是雨聲？
+
+      (A) 因石簧期盼降雨'
+    to: '為什麼石簣會將水與石相互激盪出的聲響認為是雨聲？
+
+      (A) 因石簣期盼降雨'
+    note: '複核：原卷確實這樣印，可能是原卷錯字：「為什麼石簧會將水與石相互激盪出的聲響認為是雨聲？
+
+      (A) 因石簧期盼降雨」→「為什麼石簣會將水與石相互激盪出的聲響認為是雨聲？
+
+      (A) 因石簣期盼降雨」'
+    by: review
 - id: doc_113_基隆_銘傳_國文_g9s1e3_s3_45
   section: 3
   number: 45

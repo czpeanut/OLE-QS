@@ -804,7 +804,7 @@ questions:
   number: 8
   type: fill
   page: 2
-  stem: 如圖，$\square ABCD$ 中，$E$ 為 $\vec{CD}$ 上的一點，且 $\overline{AE}$ 與 $\overline{BC}$
+  stem: 如圖，$\square ABCD$ 中，$E$ 為 \s\up7(――→) 上的一點，且 $\overline{AE}$ 與 $\overline{BC}$
     交於 $F$ 點，若 $\overline{AB}=10$，$\overline{BF}=5$，$\overline{CF}=3$，則 $\overline{CE}=$【　　　　】。
   assets:
   - key: s2_8_f1
@@ -840,6 +840,14 @@ questions:
   - '6'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，$\square ABCD$ 中，$E$ 為 $\vec{CD}$ 上的一點，且 $\overline{AE}$ 與 $\overline{BC}$
+      交於 $F$ 點，若 $\overline{AB}=10$，$\overline{BF}=5$，$\overline{CF}=3$，則 $\overline{CE}=$【　　　　】。
+    to: 如圖，$\square ABCD$ 中，$E$ 為 \s\up7(――→) 上的一點，且 $\overline{AE}$ 與 $\overline{BC}$
+      交於 $F$ 點，若 $\overline{AB}=10$，$\overline{BF}=5$，$\overline{CF}=3$，則 $\overline{CE}=$【　　　　】。
+    note: 原卷印為方程式代碼，擷取擅自補上CD向量
+    by: review
+    extraction: true
 - id: doc_113_新北_蘆洲_數學_g9s1e1_s2_9
   section: 2
   number: 9

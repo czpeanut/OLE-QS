@@ -557,7 +557,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 附圖為20 世紀以來全球原油價格變化折線圖，由圖中可知「一」時期的油價呈現較低且平穩的走勢，此與何種原因最相關？
+  stem: 附圖為 20 世紀以來全球原油價格變化折線圖，由圖中可知「㈠」時期的油價呈現較低且平穩的走勢，此與何種原因最相關？
   options:
   - label: A
     content: 西方資本企業家掌握油價
@@ -601,6 +601,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 附圖為20 世紀以來全球原油價格變化折線圖，由圖中可知「一」時期的油價呈現較低且平穩的走勢，此與何種原因最相關？
+    to: 附圖為 20 世紀以來全球原油價格變化折線圖，由圖中可知「㈠」時期的油價呈現較低且平穩的走勢，此與何種原因最相關？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「由圖中可知「一」時期的油價」→「由圖中可知「①」時期的油價」
+    by: review
+    extraction: true
 - id: doc_113_台北_仁愛_社會_地理_g8s2e2_s1_15
   section: 1
   number: 15

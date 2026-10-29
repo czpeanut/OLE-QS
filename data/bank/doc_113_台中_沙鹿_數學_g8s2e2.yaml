@@ -441,7 +441,7 @@ questions:
   type: single
   page: 2
   stem: 如圖，$\triangle ABC$ 與 $\triangle DBE$ 中，$\overline{AC}$ 與 $\overline{DE}$ 相交於
-    $F$ 點。已知 $\overline{AB}=\overline{AD}$，$\overline{BC}=\overline{BE}$，$\overline{AC}=\overline{DE}$，$\angle
+    $F$ 點。已知 $\overline{AB}=\overline{BD}$，$\overline{BC}=\overline{BE}$，$\overline{AC}=\overline{DE}$，$\angle
     ABE=54^{\circ}$，$\angle DBC=160^{\circ}$，則 $\angle ABD=$？
   options:
   - label: A
@@ -488,6 +488,16 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，$\triangle ABC$ 與 $\triangle DBE$ 中，$\overline{AC}$ 與 $\overline{DE}$
+      相交於 $F$ 點。已知 $\overline{AB}=\overline{AD}$，$\overline{BC}=\overline{BE}$，$\overline{AC}=\overline{DE}$，$\angle
+      ABE=54^{\circ}$，
+    to: 如圖，$\triangle ABC$ 與 $\triangle DBE$ 中，$\overline{AC}$ 與 $\overline{DE}$ 相交於
+      $F$ 點。已知 $\overline{AB}=\overline{BD}$，$\overline{BC}=\overline{BE}$，$\overline{AC}=\overline{DE}$，$\angle
+      ABE=54^{\circ}$，
+    note: 原卷為 BD，誤作 AD
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_數學_g8s2e2_s1_12
   section: 1
   number: 12

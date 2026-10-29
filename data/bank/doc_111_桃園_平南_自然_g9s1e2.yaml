@@ -906,10 +906,10 @@ questions:
   number: 24
   type: single
   page: 3
-  stem: 若地球和太陽的質量都變成現在的3 倍，且地球到太陽的距離變成現在的2 倍，則地球和太陽的萬有引力變成現在的幾倍?
+  stem: 若地球和太陽的質量都變成現在的 3 倍，且地球到太陽的距離變成現在的 2 倍，則地球和太陽的萬有引力變成現在的幾倍？
   options:
   - label: A
-    content: $\frac{3}{2}$
+    content: $\frac{3}{4}$
   - label: B
     content: $\frac{9}{4}$
   - label: C
@@ -933,6 +933,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 若地球和太陽的質量都變成現在的3 倍，且地球到太陽的距離變成現在的2 倍，則地球和太陽的萬有引力變成現在的幾倍?
+    to: 若地球和太陽的質量都變成現在的 3 倍，且地球到太陽的距離變成現在的 2 倍，則地球和太陽的萬有引力變成現在的幾倍？
+    note: 選項(A)分母原卷為4，擷取誤植為2
+    by: review
+    extraction: true
 - id: doc_111_桃園_平南_自然_g9s1e2_s1_25
   section: 1
   number: 25
@@ -1002,12 +1008,12 @@ questions:
   number: 27
   type: single
   page: 3
-  stem: 有關岩石圈的敘述，下列何者正確?
+  stem: 有關岩石圈的敘述，下列何者正確？
   options:
   - label: A
     content: 由鑽探技術測出範圍
   - label: B
-    content: 和大 eslint地殼的範圍大致相同
+    content: 和大陸地殼的範圍大致相同
   - label: C
     content: 其下方為地核
   - label: D
@@ -1029,6 +1035,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 有關岩石圈的敘述，下列何者正確?
+    to: 有關岩石圈的敘述，下列何者正確？
+    note: 「陸」字誤植為「 eslint」
+    by: review
+    extraction: true
 - id: doc_111_桃園_平南_自然_g9s1e2_s1_28
   section: 1
   number: 28

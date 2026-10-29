@@ -1078,8 +1078,8 @@ questions:
   number: 41
   type: single
   page: 4
-  stem: 41. (  ) Amanda has to get to school before 7:10 this morning. On her way
-    to school, where can she buy her breakfast?
+  stem: Amanda has to get to school before 7:10 this morning. On her way to school,
+    where can she buy her breakfast?
   options:
   - label: A
     content: At Papa Marko’s.
@@ -1094,25 +1094,8 @@ questions:
     There are four food shops on Amanda’s way to school. Here are their ads.
 
 
-    📖 ad 廣告 handmade 手作的  taste 滋味'
+     ad 廣告 handmade 手作的 taste 滋味'
   shared_asset: g5_41_43
-  assets:
-  - key: g5_41_43_x2
-    kind: figure
-    file: doc_111_桃園_同德_英語_g8s1e3/g5_41_43_f2.png
-    crop:
-      page: 4
-      rect:
-      - 235.39
-      - 678.18
-      - 480.68
-      - 864.59
-      auto_from:
-      - 232.69
-      - 674.84
-      - 483.71
-      - 866.95
-    crop_by: auto
   tags:
     textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
@@ -1130,6 +1113,14 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 41. (  ) Amanda has to get to school before 7:10 this morning. On her way
+      to school, where can she buy her breakfast?
+    to: Amanda has to get to school before 7:10 this morning. On her way to school,
+      where can she buy her breakfast?
+    note: 本題無需附圖，地圖應附於第43題
+    by: review
+    extraction: true
 - id: doc_111_桃園_同德_英語_g8s1e3_s5_42
   section: 5
   number: 42
@@ -1151,7 +1142,7 @@ questions:
     There are four food shops on Amanda’s way to school. Here are their ads.
 
 
-    📖 ad 廣告 handmade 手作的  taste 滋味'
+     ad 廣告 handmade 手作的 taste 滋味'
   shared_asset: g5_41_43
   tags:
     textbook: 八上 英語 cost/spend/pay 花費金錢
@@ -1176,8 +1167,8 @@ questions:
   number: 43
   type: single
   page: 4
-  stem: 43. (  ) Amanda walks past these four shops every day on her way to school.
-    Look at the map. Which place is most likely to be Amanda’s school?
+  stem: (  ) Amanda walks past these four shops every day on her way to school. Look
+    at the map. Which place is most likely to be Amanda’s school?
   options:
   - label: A
     content: A.
@@ -1192,7 +1183,7 @@ questions:
     There are four food shops on Amanda’s way to school. Here are their ads.
 
 
-    📖 ad 廣告 handmade 手作的  taste 滋味'
+     ad 廣告 handmade 手作的 taste 滋味'
   shared_asset: g5_41_43
   tags:
     textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
@@ -1211,6 +1202,25 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s5_43_r10290734_2
+    kind: figure
+    file: doc_111_桃園_同德_英語_g8s1e3/s5_43_r10290734_2.png
+    crop:
+      page: 4
+      rect:
+      - 231.35
+      - 674.02
+      - 483.45
+      - 865.72
+  errata:
+  - from: 43. (  ) Amanda walks past these four shops every day on her way to school.
+      Look at the map. Which place is most likely to be Amanda’s school?
+    to: (  ) Amanda walks past these four shops every day on her way to school. Look
+      at the map. Which place is most likely to be Amanda’s school?
+    note: 題幹提及Look at the map但漏附地圖
+    by: review
+    extraction: true
 - id: doc_111_桃園_同德_英語_g8s1e3_s5_44
   section: 5
   number: 44
@@ -1549,7 +1559,7 @@ shared_assets:
 - key: g5_41_43
   label: 題組附圖
   kind: figure
-  file: doc_111_桃園_同德_英語_g8s1e3/g5_41_43_f1.png
+  file: doc_111_桃園_同德_英語_g8s1e3/s5_43_r10290734_1.png
   used_by:
   - doc_111_桃園_同德_英語_g8s1e3_s5_41
   - doc_111_桃園_同德_英語_g8s1e3_s5_42
@@ -1557,13 +1567,8 @@ shared_assets:
   crop:
     page: 4
     rect:
-    - 157.85
-    - 256.99
-    - 557.24
-    - 480.03
-    auto_from:
-    - 155.45
-    - 253.96
-    - 561.6
-    - 484.04
+    - 152.66
+    - 252.97
+    - 560.68
+    - 492.14
   crop_by: auto

@@ -1633,7 +1633,7 @@ questions:
 
     | :---: | :---: | :---: |
 
-    | 本氏液 | 甲 | |
+    | 本氏液 | 甲 | 乙 |
 
     | 碘液 | 丙 | 丁 |'
   options:
@@ -1664,6 +1664,30 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '曉明利用本氏液和碘液檢測麵條和蘋果是否含有葡萄糖與澱粉，附表中的甲、乙、丙、丁為檢測後的顏色變化，下列相關敘述何者錯誤？
+
+
+      | | 麵條 | 蘋果 |
+
+      | :---: | :---: | :---: |
+
+      | 本氏液 | 甲 | |
+
+      | 碘液 | 丙 | 丁 |'
+    to: '曉明利用本氏液和碘液檢測麵條和蘋果是否含有葡萄糖與澱粉，附表中的甲、乙、丙、丁為檢測後的顏色變化，下列相關敘述何者錯誤？
+
+
+      | | 麵條 | 蘋果 |
+
+      | :---: | :---: | :---: |
+
+      | 本氏液 | 甲 | 乙 |
+
+      | 碘液 | 丙 | 丁 |'
+    note: 表格中漏了「乙」
+    by: review
+    extraction: true
 - id: doc_113_台中_曉明_自然_生物_g9s1e1_s1_38
   section: 1
   number: 38
@@ -1789,7 +1813,7 @@ questions:
   number: 41
   type: single
   page: 5
-  stem: 附圖是細胞膜的構造模式圖，請問此圖的敘述：
+  stem: 附圖是細胞膜的構造模式圖，請問此圖的敘述何者正確？
   options:
   - label: A
     content: 甲是醣類，其功能與穩定細胞膜結構有關
@@ -1835,6 +1859,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 附圖是細胞膜的構造模式圖，請問此圖的敘述：
+    to: 附圖是細胞膜的構造模式圖，請問此圖的敘述何者正確？
+    note: 題幹漏了「何者正確？」
+    by: review
+    extraction: true
 - id: doc_113_台中_曉明_自然_生物_g9s1e1_s1_42
   section: 1
   number: 42
@@ -1993,12 +2023,12 @@ questions:
   number: 45
   type: single
   page: 5
-  stem: 根據此實驗結果，丙類細胞能進行下列哪些化學反應而存活？
+  stem: 根據此實驗結果，丙類細胞能進行下列哪些化學反應而存活？（原卷有誤，已修正）
   options:
   - label: A
     content: 僅能行呼吸作用
   - label: B
-    content: 僅能行發酵作用
+    content: 僅能行光合作用
   - label: C
     content: 僅能行發酵作用
   - label: D
@@ -2039,6 +2069,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: (C) 僅能行發酵作用
+    to: (C)僅能行光合作用
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(C) 僅能行發酵作用」→「(C)僅能行光合作用」
+    by: review
 - id: doc_113_台中_曉明_自然_生物_g9s1e1_s1_46
   section: 1
   number: 46

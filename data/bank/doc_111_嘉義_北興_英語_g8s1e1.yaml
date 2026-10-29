@@ -367,7 +367,7 @@ questions:
   number: 26
   type: single
   page: 3
-  stem: '(on the phone) Anna: Hi, this is Anna. May I speak to Elsa?  Elsa:         .'
+  stem: '(on the phone) Anna: Hi, this is Anna. May I speak to Elsa?  Elsa:         .（原卷有誤，已修正）'
   options:
   - label: A
     content: Does she have your number?
@@ -376,7 +376,7 @@ questions:
   - label: C
     content: Why don't you listen to me?
   - label: D
-    content: He is not here right row
+    content: He is not here right now
   tags:
     textbook: 八上 英語 對話與情境應答
     labeled_by: ai
@@ -394,6 +394,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) He is not here right row
+    to: (D) He is not here right now
+    note: row應為now：「(D) He is not here right row」→「(D) He is not here right now」
+    by: review
 - id: doc_111_嘉義_北興_英語_g8s1e1_s4_27
   section: 4
   number: 27

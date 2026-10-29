@@ -79,16 +79,16 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 如右圖，$\overline{BC}$ 為圓 $O$ 的直徑，$A$ 是圓周上一點，$\angle ABC=58^\circ$，則 $\overline{AC}=$？
+  stem: 如右圖，$\overline{BC}$ 為圓 $O$ 的直徑，$A$ 是圓周上一點，$\angle ABC=58^\circ$，則 $\widehat{AC}=$？
   options:
   - label: A
-    content: 58°
+    content: $58^\circ$
   - label: B
-    content: 29°
+    content: $29^\circ$
   - label: C
-    content: 122°
+    content: $122^\circ$
   - label: D
-    content: 116°。
+    content: $116^\circ$。
   assets:
   - key: s1_2_f1
     kind: figure
@@ -123,6 +123,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，$\overline{BC}$ 為圓 $O$ 的直徑，$A$ 是圓周上一點，$\angle ABC=58^\circ$，則 $\overline{AC}=$？
+    to: 如右圖，$\overline{BC}$ 為圓 $O$ 的直徑，$A$ 是圓周上一點，$\angle ABC=58^\circ$，則 $\widehat{AC}=$？
+    note: 原卷為弧AC記號，擷取誤植為線段
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g9s1e2_s1_3
   section: 1
   number: 3
@@ -586,16 +592,16 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 如右圖，平面上有圓 $O_1$、$O_2$、$O_3$、$O_4$ 四個圓，其半徑分別為 1、2、3、4，圖中 $\overline{AB}$、$\overline{CD}$、$\overline{EF}$、$\overline{GH}$，四個劣弧中哪一個弧的長度最大？
+  stem: 如右圖，平面上有圓 $O_1$、$O_2$、$O_3$、$O_4$ 四個圓，其半徑分別為 1、2、3、4，圖中 $\overparen{AB}$、$\overparen{CD}$、$\overparen{EF}$、$\overparen{GH}$，四個劣弧中哪一個弧的長度最大？
   options:
   - label: A
-    content: $\overline{AB}$
+    content: $\overparen{AB}$
   - label: B
-    content: $\overline{CD}$
+    content: $\overparen{CD}$
   - label: C
-    content: $\overline{EF}$
+    content: $\overparen{EF}$
   - label: D
-    content: $\overline{GH}$。
+    content: $\overparen{GH}$。
   assets:
   - key: s1_12_f1
     kind: figure
@@ -630,6 +636,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，平面上有圓 $O_1$、$O_2$、$O_3$、$O_4$ 四個圓，其半徑分別為 1、2、3、4，圖中 $\overline{AB}$、$\overline{CD}$、$\overline{EF}$、$\overline{GH}$，四個劣弧中哪一個弧的長度最大？
+    to: 如右圖，平面上有圓 $O_1$、$O_2$、$O_3$、$O_4$ 四個圓，其半徑分別為 1、2、3、4，圖中 $\overparen{AB}$、$\overparen{CD}$、$\overparen{EF}$、$\overparen{GH}$，四個劣弧中哪一個弧的長度最大？
+    note: 原卷各弧上方為弧記號，誤植為線段
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g9s1e2_s1_13
   section: 1
   number: 13
@@ -766,7 +778,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 如右圖，扇形 $OAB$ 中，$\angle AOB=45^\circ$，$\overline{OA}=6$，求 $\overline{AB}=$？
+  stem: 如右圖，扇形 $OAB$ 中，$\angle AOB=45^\circ$，$\overline{OA}=6$，求 $\overgroup{AB}=$？
   options:
   - label: A
     content: $\frac{3}{4}\pi$
@@ -810,6 +822,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，扇形 $OAB$ 中，$\angle AOB=45^\circ$，$\overline{OA}=6$，求 $\overline{AB}=$？
+    to: 如右圖，扇形 $OAB$ 中，$\angle AOB=45^\circ$，$\overline{OA}=6$，求 $\overgroup{AB}=$？
+    note: 原卷為弧AB記號，擷取誤植為線段
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g9s1e2_s1_17
   section: 1
   number: 17
@@ -964,7 +982,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: 如圖，$\overline{OB}=6$，$\overline{OD}=12$，請問 $\overline{CD}$ 的長度是 $\overline{AB}$
+  stem: 如圖，$\overline{OB}=6$，$\overline{OD}=12$，請問 $\wideparen{CD}$ 的長度是 $\wideparen{AB}$
     長度的多少倍？
   options:
   - label: A
@@ -1009,13 +1027,21 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，$\overline{OB}=6$，$\overline{OD}=12$，請問 $\overline{CD}$ 的長度是 $\overline{AB}$
+      長度的多少倍？
+    to: 如圖，$\overline{OB}=6$，$\overline{OD}=12$，請問 $\wideparen{CD}$ 的長度是 $\wideparen{AB}$
+      長度的多少倍？
+    note: 原卷CD與AB上方為弧記號，誤植為線段
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g9s1e2_s1_21
   section: 1
   number: 21
   type: single
   page: 2
-  stem: 如右圖，圓上六個點，若 $\overline{AD}=20^\circ$，$\overline{CF}=40^\circ$，則 $\angle ABC+\angle
-    DEF=$？
+  stem: 如右圖，圓上六個點，若 $\overparen{AD}=20^\circ$，$\overparen{CF}=40^\circ$，則 $\angle
+    ABC+\angle DEF=$？
   options:
   - label: A
     content: 160°
@@ -1060,22 +1086,29 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 如右圖，圓上六個點，若 $\overline{AD}=20^\circ$，$\overline{CF}=40^\circ$，則 $\angle
+      ABC+\angle DEF=$？
+    to: 如右圖，圓上六個點，若 $\overparen{AD}=20^\circ$，$\overparen{CF}=40^\circ$，則 $\angle
+      ABC+\angle DEF=$？
+    note: 原卷AD與CF上方為弧記號，誤植為線段
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g9s1e2_s1_22
   section: 1
   number: 22
   type: single
   page: 2
-  stem: 如右圖，$\overline{AB}$ 是圓 $O$ 的直徑，$\overline{AF} \parallel \overline{OH}$，$\angle
-    A=52^\circ$，$\overline{BH}=$？
+  stem: 如右圖，$\overline{AB}$ 是圓 $O$ 的直徑，$\overline{AF} // \overline{OH}$，$\angle A=52^\circ$，$\overparen{BH}=$？
   options:
   - label: A
-    content: 24°
+    content: $24^\circ$
   - label: B
-    content: 48°
+    content: $48^\circ$
   - label: C
-    content: 52°
+    content: $52^\circ$
   - label: D
-    content: 76°。
+    content: $76^\circ$。
   assets:
   - key: s1_22_f1
     kind: figure
@@ -1110,6 +1143,13 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如右圖，$\overline{AB}$ 是圓 $O$ 的直徑，$\overline{AF} \parallel \overline{OH}$，$\angle
+      A=52^\circ$，$\overline{BH}=$？
+    to: 如右圖，$\overline{AB}$ 是圓 $O$ 的直徑，$\overline{AF} // \overline{OH}$，$\angle A=52^\circ$，$\overparen{BH}=$？
+    note: 原卷BH上方為弧記號，誤植為線段
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_數學_g9s1e2_s1_23
   section: 1
   number: 23

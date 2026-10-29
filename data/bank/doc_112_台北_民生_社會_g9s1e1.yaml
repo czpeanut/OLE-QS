@@ -812,7 +812,7 @@ questions:
   - label: B
     content: ↖
   - label: C
-    content: ↗
+    content: ⇒
   - label: D
     content: ←
   group_stem: ※「丹麥政府於 2020 年批准兩座世界第一『能源島』興建，作為離岸風電的海上中樞，包括儲能與電力多元轉換設施等，預計在 2030 年完工。環繞能源島的是數百座離岸風機，全面運轉時所產生的電力遠超過丹麥全國所需，並且可將電能轉成氫能以製造綠色燃料，再出口供其他國家作為交通工具的動力。」請回答下列問題：
@@ -836,6 +836,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 環繞丹麥能源島的離岸風機主要仰賴何種盛行風向運轉？
+    to: 環繞丹麥能源島的離岸風機主要仰賴何種盛行風向運轉？
+    note: 原卷(C)為向右箭頭，誤擷取為右上箭頭
+    by: review
+    extraction: true
 - id: doc_112_台北_民生_社會_g9s1e1_s1_15
   section: 1
   number: 15
@@ -1545,7 +1551,7 @@ questions:
   number: 32
   type: single
   page: 4
-  stem: 台灣房價從 2008 年後開始攀升，之後建商不斷買地蓋房，許多民眾、公司也開始投資房地產，希望藉由房產的轉賣獲利。請問題文中的建商、民眾與公司的行為最適合作用下列何者來解釋？
+  stem: 台灣房價從 2008 年後開始攀升，之後建商不斷買地蓋房，許多民眾、公司也開始投資房地產，希望藉由房產的轉賣獲利。請問題文中的建商、民眾與公司的行為最適合用下列何者來解釋？
   options:
   - label: A
     content: 需求法則
@@ -1574,6 +1580,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 台灣房價從 2008 年後開始攀升，之後建商不斷買地蓋房，許多民眾、公司也開始投資房地產，希望藉由房產的轉賣獲利。請問題文中的建商、民眾與公司的行為最適合作用下列何者來解釋？
+    to: 台灣房價從 2008 年後開始攀升，之後建商不斷買地蓋房，許多民眾、公司也開始投資房地產，希望藉由房產的轉賣獲利。請問題文中的建商、民眾與公司的行為最適合用下列何者來解釋？
+    note: 多擷取一個「作」字
+    by: review
+    extraction: true
 - id: doc_112_台北_民生_社會_g9s1e1_s1_33
   section: 1
   number: 33
@@ -1949,7 +1961,7 @@ questions:
   number: 42
   type: single
   page: 5
-  stem: (甲)羅馬帝國 (乙)波斯帝國 (丙)亞歷山大帝帝國 自西元前五世紀左右，埃及便不斷被異族政權入侵，按統治的先後順序依次為
+  stem: (甲)羅馬帝國 (乙)波斯帝國 (丙)亞歷山大帝國 自西元前五世紀左右，埃及便不斷被異族政權入侵，按統治的先後順序依次為（原卷有誤，已修正）
   options:
   - label: A
     content: 甲乙丙
@@ -1978,6 +1990,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (丙)亞歷山大帝帝國
+    to: (丙)亞歷山大帝國
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(丙)亞歷山大帝帝國」→「(丙)亞歷山大帝國」
+    by: review
 - id: doc_112_台北_民生_社會_g9s1e1_s1_43
   section: 1
   number: 43

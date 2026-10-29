@@ -698,7 +698,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 請問圖（一）氣候圖最可能為哪一種氣候類型?
+  stem: 請問圖（一）氣候圖最可能為哪一種氣候類型？
   options:
   - label: A
     content: 副熱帶季風氣候
@@ -725,6 +725,23 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s2_19_r10290717_1
+    kind: figure
+    file: doc_113_新北_江翠_社會_g8s1e1/s2_19_r10290717_1.png
+    crop:
+      page: 2
+      rect:
+      - 539.48
+      - 498.47
+      - 690.99
+      - 662.26
+  errata:
+  - from: 請問圖（一）氣候圖最可能為哪一種氣候類型?
+    to: 請問圖（一）氣候圖最可能為哪一種氣候類型？
+    note: 題幹提及「圖（一）氣候圖」，漏附圖檔
+    by: review
+    extraction: true
 - id: doc_113_新北_江翠_社會_g8s1e1_s2_20
   section: 2
   number: 20

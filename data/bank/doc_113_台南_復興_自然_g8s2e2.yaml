@@ -41,7 +41,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 已知化合物 X 在水中是一種電解質，分析人員偵測只含化合物 X 的甲～丁四杯不同濃度的水溶液，並將化合物 X 解離出的陰、陽離子數目作圖，如附圖所示。由圖判斷下列何者最不可能可能是化合物
+  stem: 已知化合物 X 在水中是一種電解質，分析人員偵測只含化合物 X 的甲～丁四杯不同濃度的水溶液，並將化合物 X 解離出的陰、陽離子數目作圖，如附圖所示。由圖判斷下列何者最<u>不可能</u>是化合物
     X？
   options:
   - label: A
@@ -83,6 +83,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 已知化合物 X 在水中是一種電解質，分析人員偵測只含化合物 X 的甲～丁四杯不同濃度的水溶液，並將化合物 X 解離出的陰、陽離子數目作圖，如附圖所示。由圖判斷下列何者最不可能可能是化合物
+      X？
+    to: 已知化合物 X 在水中是一種電解質，分析人員偵測只含化合物 X 的甲～丁四杯不同濃度的水溶液，並將化合物 X 解離出的陰、陽離子數目作圖，如附圖所示。由圖判斷下列何者最<u>不可能</u>是化合物
+      X？
+    note: 多打了「可能」二字
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g8s2e2_s1_2
   section: 1
   number: 2
@@ -90,7 +98,7 @@ questions:
   page: 1
   stem: '氯化鈣 ($\\text{CaCl}_{2}$) 水溶液在導電時，水溶液中解離的情形與離子移動的方向，下列何者正確？
 
-    ( 鈣離子   氯離子 )  (四個選項電池正極均在右邊)'
+    (○鈣離子 ●氯離子)  (四個選項電池正極均在右邊)'
   options:
   - label: A
     content: ''
@@ -169,6 +177,16 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '氯化鈣 ($\\text{CaCl}_{2}$) 水溶液在導電時，水溶液中解離的情形與離子移動的方向，下列何者正確？
+
+      ( 鈣離子   氯離子 )  (四個選項電池正極均在右邊)'
+    to: '氯化鈣 ($\\text{CaCl}_{2}$) 水溶液在導電時，水溶液中解離的情形與離子移動的方向，下列何者正確？
+
+      (○鈣離子 ●氯離子)  (四個選項電池正極均在右邊)'
+    note: 漏了離子圖示符號「●」與「○」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g8s2e2_s1_3
   section: 1
   number: 3
@@ -1469,7 +1487,7 @@ questions:
   stem: 下列關於可逆反應的敘述，何者正確？
   options:
   - label: A
-    content: 反應速率愈大者，愈容易達成平衡
+    content: 反應速率愈大的反應，愈容易達成平衡
   - label: B
     content: 反應達成平衡後，反應物濃度必等於產物濃度
   - label: C
@@ -1495,14 +1513,18 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列關於可逆反應的敘述，何者正確？
+    to: 下列關於可逆反應的敘述，何者正確？
+    note: 原卷「的反應」被誤打為「者」
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g8s2e2_s3_31
   section: 3
   number: 31
   type: single
   page: 5
-  stem: '超夯變色飲料！由紫到藍漸層，看起來好夢幻。不過這麼鮮豔的顏色可別以為是加了色素，其實是這個叫做蝶豆花的植物在搞鬼。用水浸泡蝶豆花茶呈現藍色；但只要遇到檸檬汁呈酸性則變成紫色；如果加了鹼性物質又變成綠色了。蝶豆花是天然植物，喝起來沒有味道，是大自然的酸鹼指示劑，可利用它調配出像魔法般的夢幻飲品。試回答下列問題：
-
-    若取一杯紫色的蝶豆花茶加水稀釋，下列哪個圖形可以表示其 pH 值與溶液體積 (V) 的關係圖？'
+  stem: 若取一杯紫色的蝶豆花茶加水稀釋，下列哪一個圖形可以表示其 pH 值與溶液體積 (V) 的關係圖？
   options:
   - label: A
     content: ''
@@ -1595,6 +1617,15 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: 超夯變色飲料！由紫到藍漸層，看起來好夢幻。不過這麼鮮豔的顏色可別以為是加了色素，其實是這個叫做蝶豆花的植物在搞鬼。用水浸泡蝶豆花茶呈現藍色；但只要遇到檸檬汁呈酸性則變成紫色；如果加了鹼性物質又變成綠色了。蝶豆花是天然植物，喝起來沒有味道，是大自然的酸鹼指示劑，可利用它調配出像魔法般的夢幻飲品。試回答下列問題：
+  errata:
+  - from: '超夯變色飲料！由紫到藍漸層，看起來好夢幻。不過這麼鮮豔的顏色可別以為是加了色素，其實是這個叫做蝶豆花的植物在搞鬼。用水浸泡蝶豆花茶呈現藍色；但只要遇到檸檬汁呈酸性則變成紫色；如果加了鹼性物質又變成綠色了。蝶豆花是天然植物，喝起來沒有味道，是大自然的酸鹼指示劑，可利用它調配出像魔法般的夢幻飲品。試回答下列問題：
+
+      若取一杯紫色的蝶豆花茶加水稀釋，下列哪個圖形可以表示其 pH 值與溶液體積 (V) 的關'
+    to: 若取一杯紫色的蝶豆花茶加水稀釋，下列哪一個圖形可以表示其 pH 值與溶液體積 (V) 的關係圖？
+    note: 31～33題共用的題組短文被誤併入第31題題幹
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g8s2e2_s3_32
   section: 3
   number: 32
@@ -1904,9 +1935,7 @@ questions:
   number: 39
   type: fill
   page: 7
-  stem: '已知碳酸鈣 $\text{CaCO}_{3}$ 又稱灰石
-
-    下列哪一個選項可以讓石灰變灰石'
+  stem: 下列哪一個選項可以讓石灰變灰石
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1926,6 +1955,34 @@ questions:
   - 庚
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  group_stem: 已知碳酸鈣 $\text{CaCO}_{3}$ 又稱灰石
+  options:
+  - label: 甲
+    content: 加水
+  - label: 乙
+    content: 加二氧化碳
+  - label: 丙
+    content: 加硫酸
+  - label: 丁
+    content: 加硝酸
+  - label: 戊
+    content: 加鹽酸
+  - label: 己
+    content: 加氫氧化鈉
+  - label: 庚
+    content: 加水再加二氧化碳
+  - label: 辛
+    content: 加 1 份硝酸 3 份鹽酸
+  - label: 壬
+    content: 加熱
+  errata:
+  - from: '已知碳酸鈣 $\text{CaCO}_{3}$ 又稱灰石
+
+      下列哪一個選項可以讓石灰變灰石'
+    to: 下列哪一個選項可以讓石灰變灰石
+    note: 39與40題共用的選項甲～壬未擷取在39題，導致39題缺選項
+    by: review
+    extraction: true
 - id: doc_113_台南_復興_自然_g8s2e2_s4_40
   section: 4
   number: 40

@@ -617,7 +617,7 @@ questions:
   type: single
   page: 2
   stem: 如圖(六)，$A$、$B$ 分別為 $y=-\frac{3}{2}x^{2}$ 上的兩點，且 $\overline{AB} \perp y$ 軸。若
-    $\overline{AB}=4$，則 $\overline{AB}$ 的方程式為何？〔1-1〕
+    $\overline{AB}=4$，則 $\overleftrightarrow{AB}$ 的方程式為何？〔1-1〕
   options:
   - label: A
     content: $y=-3$
@@ -661,6 +661,14 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖(六)，$A$、$B$ 分別為 $y=-\frac{3}{2}x^{2}$ 上的兩點，且 $\overline{AB} \perp y$ 軸。若
+      $\overline{AB}=4$，則 $\overline{AB}$ 的方程式為何？〔1-1〕
+    to: 如圖(六)，$A$、$B$ 分別為 $y=-\frac{3}{2}x^{2}$ 上的兩點，且 $\overline{AB} \perp y$ 軸。若
+      $\overline{AB}=4$，則 $\overleftrightarrow{AB}$ 的方程式為何？〔1-1〕
+    note: 原卷後者上方為直線符號（雙向箭頭），擷取誤為線段符號
+    by: review
+    extraction: true
 - id: doc_113_新北_福和_數學_g9s2e1_s1_17
   section: 1
   number: 17

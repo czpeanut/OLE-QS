@@ -343,9 +343,7 @@ questions:
   page: 2
   stem: 'A: I''ve never got tired of watching movies.
 
-    B: _____
-
-    (A) So have I (B) Neither have I (C) I did, too (D) I didn''t, either'
+    B: ______'
   options:
   - label: A
     content: So have I
@@ -374,6 +372,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 'A: I''ve never got tired of watching movies.
+
+      B: _____
+
+      (A) So have I (B) Neither have I (C) I did, too (D) I didn''t, either'
+    to: 'A: I''ve never got tired of watching movies.
+
+      B: ______'
+    note: 題幹多擷取了選項內容
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_英語_g9s2e1_s6_2
   section: 6
   number: 2

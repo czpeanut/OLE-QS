@@ -311,8 +311,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: '如下圖(五)，不等長之兩對角線 $\overline{AC}$、$\overline{BD}$交於$O$點，且將四邊形ABCD分成甲、乙、丙、丁四個三角形。若$\overline{OA}
-    : \overline{OC} = \overline{OB} : \overline{OD} = 1 : 2$，則此四個三角形中，見此四個三角形的關係，下列敘述何者正確？'
+  stem: 如下圖(五)，不等長的兩對角線 $\overline{AC}$、$\overline{BD}$交於$O$點，且將四邊形$ABCD$分成甲、乙、丙、丁四個三角形。若$\overline{OA}:\overline{OC}=\overline{OB}:\overline{OD}=1:2$，則此四個三角形中，則此四個三角形的關係，下列敘述何者正確？
   options:
   - label: A
     content: 甲丙相似，乙丁相似
@@ -358,6 +357,13 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如下圖(五)，不等長之兩對角線 $\overline{AC}$、$\overline{BD}$交於$O$點，且將四邊形ABCD分成甲、乙、丙、丁四個三角形。若$\overline{OA}
+      : \overline{OC} = \overline{OB} : \overline{OD} = 1 : 2$，則此四個三角形中，見此四個三角形的關係，下列敘述何者正確？'
+    to: 如下圖(五)，不等長的兩對角線 $\overline{AC}$、$\overline{BD}$交於$O$點，且將四邊形$ABCD$分成甲、乙、丙、丁四個三角形。若$\overline{OA}:\overline{OC}=\overline{OB}:\overline{OD}=1:2$，則此四個三角形中，則此四個三角形的關係，下列敘述何者正確？
+    note: 「則」誤植為「見」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_數學_g9s1e1_s1_8
   section: 1
   number: 8

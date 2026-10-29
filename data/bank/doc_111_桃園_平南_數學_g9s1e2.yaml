@@ -38,17 +38,17 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 如圖，平面上圓 $O_{1}$、圓 $O_{2}$、圓 $O_{3}$、圓 $O_{4}$ 的半徑分別為 2、4、6、8。請問圖中 $\overline{AB}$、$\overline{CD}$、$\overline{EF}$、$\overline{GH}$
+  stem: 如圖，平面上圓 $O_{1}$、圓 $O_{2}$、圓 $O_{3}$、圓 $O_{4}$ 的半徑分別為 2、4、6、8。請問圖中 $\wideparen{AB}$、$\wideparen{CD}$、$\wideparen{EF}$、$\wideparen{GH}$
     四個劣弧中，哪一個弧的度數最小？
   options:
   - label: A
-    content: $\overline{AB}$
+    content: $\wideparen{AB}$
   - label: B
-    content: $\overline{CD}$
+    content: $\wideparen{CD}$
   - label: C
-    content: $\overline{EF}$
+    content: $\wideparen{EF}$
   - label: D
-    content: $\overline{GH}$
+    content: $\wideparen{GH}$
   assets:
   - key: s1_1_f1
     kind: figure
@@ -83,6 +83,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，平面上圓 $O_{1}$、圓 $O_{2}$、圓 $O_{3}$、圓 $O_{4}$ 的半徑分別為 2、4、6、8。請問圖中 $\overline{AB}$、$\overline{CD}$、$\overline{EF}$、$\overline{GH}$
+      四個劣弧中，哪一個弧的度數最小？
+    to: 如圖，平面上圓 $O_{1}$、圓 $O_{2}$、圓 $O_{3}$、圓 $O_{4}$ 的半徑分別為 2、4、6、8。請問圖中 $\wideparen{AB}$、$\wideparen{CD}$、$\wideparen{EF}$、$\wideparen{GH}$
+      四個劣弧中，哪一個弧的度數最小？
+    note: 弧符號誤植為線段符號（含選項）
+    by: review
+    extraction: true
 - id: doc_111_桃園_平南_數學_g9s1e2_s1_2
   section: 1
   number: 2
@@ -743,8 +751,8 @@ questions:
   number: 17
   type: single
   page: 3
-  stem: '如圖，圓 $B$ 分別與 $\overline{DP}$、$\overline{DQ}$ 和 $\overline{PQ}$ 切於 $A$、$C$、$R$
-    三點，已知 $\triangle DPQ$ 的周長為 18，則下列敘述正確的有幾個？
+  stem: '如圖，圓 $B$ 分別與 $\overleftrightarrow{DP}$、$\overleftrightarrow{DQ}$ 和 $\overline{PQ}$
+    切於 $A$、$C$、$R$ 三點，已知 $\triangle DPQ$ 的周長為 18，則下列敘述<u>正確</u>的有幾個？
 
 
     甲、$\overline{AD}=9$
@@ -798,6 +806,30 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '如圖，圓 $B$ 分別與 $\overline{DP}$、$\overline{DQ}$ 和 $\overline{PQ}$ 切於 $A$、$C$、$R$
+      三點，已知 $\triangle DPQ$ 的周長為 18，則下列敘述正確的有幾個？
+
+
+      甲、$\overline{AD}=9$
+
+      乙、四邊形 $ABCD$ 的對角線互相垂直平分
+
+      丙、$\overline{DP}=\overline{DQ}$
+
+      丁、'
+    to: '如圖，圓 $B$ 分別與 $\overleftrightarrow{DP}$、$\overleftrightarrow{DQ}$ 和 $\overline{PQ}$
+      切於 $A$、$C$、$R$ 三點，已知 $\triangle DPQ$ 的周長為 18，則下列敘述<u>正確</u>的有幾個？
+
+
+      甲、$\overline{AD}=9$
+
+      乙、四邊形 $ABCD$ 的對角線互相垂直平分
+
+      丙、$\ove'
+    note: DP與DQ上方直線符號誤植為線段符號
+    by: review
+    extraction: true
 - id: doc_111_桃園_平南_數學_g9s1e2_s1_18
   section: 1
   number: 18

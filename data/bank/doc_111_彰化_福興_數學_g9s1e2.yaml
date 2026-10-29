@@ -1031,8 +1031,8 @@ questions:
   number: 23
   type: fill
   page: 4
-  stem: 如(圖十五)，梅花颱風來襲，有棵樹被強風吹斷，此折斷的樹恰與地面形成一個直角三角形，風聞在樹根與頂端之間立了一根木棍 $\overline{MN}$，B、M、A
-    成一直線，若 $\overline{MN}=1.5$ 公尺，$\overline{BN}=3$ 公尺，$\overline{NC}=15$ 公尺，求原來的樹高為____公尺。
+  stem: 如(圖十五)，梅花颱風來襲，有棵樹被強風吹斷，此折斷的樹恰與地面形成一個直角三角形，風間在樹根與頂端之間立了一根木棍 $\overline{MN}$，B、M、A
+    成一直線，若 $\overline{MN}=1.5$ 公尺，$\overline{BN}=3$ 公尺，$\overline{NC}=15$ 公尺，求原來的樹高為____公尺。（原卷有誤，已修正）
   assets:
   - key: s1_23_f1
     kind: figure
@@ -1068,6 +1068,11 @@ questions:
   ai_answers:
     gemini: 9+9\sqrt{5}
     qwen: 9+9\sqrt{5}
+  errata:
+  - from: 直角三角形，風聞在樹根與頂端之間立了一根木棍
+    to: 直角三角形，風間在樹根與頂端之間立了一根木棍
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「直角三角形，風聞在樹根與頂端之間立了一根木棍」→「直角三角形，風間在樹根與頂端之間立了一根木棍」
+    by: review
 - id: doc_111_彰化_福興_數學_g9s1e2_s1_24
   section: 1
   number: 24

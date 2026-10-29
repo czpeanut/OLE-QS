@@ -72,7 +72,7 @@ questions:
   - label: C
     content: 足「ㄉㄤ」重任／考古探「ㄉㄤ」
   - label: D
-    content: 精神「ㄏㄨㄤˊ」鑠／「ㄏㄨㄤˊ」取獵物。
+    content: 精神「ㄐㄩㄝˊ」鑠／「ㄐㄩㄝˊ」取獵物。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -92,6 +92,12 @@ questions:
     gemini: A
     qwen: C
     gemini_high: B
+  errata:
+  - from: 阿兩參加字形辨識大賽，有一題是他沒有把握答對的題目，請你幫他選出字形相同的選項？
+    to: 阿兩參加字形辨識大賽，有一題是他沒有把握答對的題目，請你幫他選出字形相同的選項？
+    note: 注音「ㄐㄩㄝˊ」誤植為「ㄏㄨㄤˊ」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s1_3
   section: 1
   number: 3
@@ -244,7 +250,7 @@ questions:
   - label: A
     content: 人民要能盡忠職守，方能使國家處於不敗之地
   - label: B
-    content: 國內若無忠謙之士，政治將漸趨腐敗乃至滅亡
+    content: 國內若無忠諫之士，政治將漸趨腐敗乃至滅亡
   - label: C
     content: 國外若無強敵環伺，執政者則可專心施行內政
   - label: D
@@ -270,6 +276,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 關於「入則無法家拂士，出則無敵國外患者，國恆亡。」這段文句的詮釋，何者正確？
+    to: 關於「入則無法家拂士，出則無敵國外患者，國恆亡。」這段文句的詮釋，何者正確？
+    note: 「忠諫」誤植為「忠謙」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s1_8
   section: 1
   number: 8
@@ -489,13 +501,13 @@ questions:
   stem: 「夫束修自好者，豈無其人？經濟自期，抗懷千古者，亦所在多有。」這段文字的含意與下列何者最為接近？
   options:
   - label: A
-    content: 抗懷千古者多
-  - label: B
-    content: 與善人居，如入芝蘭之室，久而不聞其香
-  - label: C
-    content: 韜光養晦，方能凸顯自身氣節。
-  - label: D
     content: 彼眾昏之日，固未嘗無獨醒之人也
+  - label: B
+    content: 束脩自好者少，抗懷千古者多
+  - label: C
+    content: 與善人居，如入芝蘭之室，久而不聞其香
+  - label: D
+    content: 韜光養晦，方能凸顯自身氣節。
   lesson_raw:
     title: 寄弟墨書
     basis: 引用〈寄弟墨書〉課文原句
@@ -518,6 +530,12 @@ questions:
     gemini: D
     qwen: D
   answer_status: disputed
+  errata:
+  - from: 「夫束修自好者，豈無其人？經濟自期，抗懷千古者，亦所在多有。」這段文字的含意與下列何者最為接近？
+    to: 「夫束修自好者，豈無其人？經濟自期，抗懷千古者，亦所在多有。」這段文字的含意與下列何者最為接近？
+    note: (A)與(D)選項內容對調錯置
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s1_15
   section: 1
   number: 15
@@ -661,7 +679,7 @@ questions:
   number: 19
   type: single
   page: 1
-  stem: 「禹思天下有溺者，猶己溺之也；稷思天下有飢者，猶己飢之也，是以如是其急也。」上述文句所要傳達的精神為何？
+  stem: 「禹思天下有溺者，猶己溺之也；稷思天下有飢者，猶己飢之也，是以如是其急也。」上述文句所要傳達的精神為何？（原卷有誤，已修正）
   options:
   - label: A
     content: 人飢己飢，人溺己溺的胸懷
@@ -670,7 +688,7 @@ questions:
   - label: C
     content: 舉棋不定、猶豫不決的憂慮
   - label: D
-    content: 茅塞頓開、恍然大悟的明明。
+    content: 茅塞頓開、恍然大悟的明朗。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -689,6 +707,11 @@ questions:
   ai_answers:
     gemini: A
     qwen: A
+  errata:
+  - from: 茅塞頓開、恍然大悟的明明
+    to: 茅塞頓開、恍然大悟的明朗
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「茅塞頓開、恍然大悟的明明」→「茅塞頓開、恍然大悟的明朗」
+    by: review
 - id: doc_112_彰化_福興_國文_g9s1e3_s1_20
   section: 1
   number: 20
@@ -765,11 +788,11 @@ questions:
   - label: A
     content: 出遊非洲期間，我們一直過著非人生活
   - label: B
-    content: 參加辯論特使千辯萬話，無往不利
+    content: 參加辯論特訓使千辯萬話，無往不利
   - label: C
     content: 聲聲不息KTV即日起將舉辦感恩回饋活動，兩人同行，一人免費
   - label: D
-    content: 力拔山河，勁在不言中（拔比賽標語）。
+    content: 力拔山河，勁在不言中（拔河比賽標語）。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -789,6 +812,12 @@ questions:
     gemini: A
     qwen: D
     gemini_high: A
+  errata:
+  - from: 說話行文時，我們常借用同音或近音字形成新的詞語來表意，達到意想不到的文學趣味。下列文句中，何者未使用此一技巧？
+    to: 說話行文時，我們常借用同音或近音字形成新的詞語來表意，達到意想不到的文學趣味。下列文句中，何者未使用此一技巧？
+    note: (B)漏「訓」字，(D)漏「河」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s2_3
   section: 2
   number: 3
@@ -799,7 +828,7 @@ questions:
   - label: A
     content: 一「席」金融風暴颳過，社會的失業人口大增
   - label: B
-    content: 這一「棟」雕像矗立在寺廟廣場，顯得氣象壯嚴
+    content: 這一「棟」雕像矗立在寺廟廣場，顯得氣象莊嚴
   - label: C
     content: 這一「派」畫風在當代引發一股潮流，也對後世產生了巨大的影響
   - label: D
@@ -822,6 +851,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 下列引號中的量詞，何者使用最恰當？
+    to: 下列引號中的量詞，何者使用最恰當？
+    note: 「莊嚴」誤植為「壯嚴」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s2_4
   section: 2
   number: 4
@@ -1032,7 +1067,7 @@ questions:
   - label: B
     content: 德中雖然能言善道，其實是個「不學無術」的騙子
   - label: C
-    content: 你的能力如此卓越，公司懇缺的經理職位「非你莫屬」
+    content: 你的能力如此卓越，公司懸缺的經理職位「非你莫屬」
   - label: D
     content: 網路世界「無遠弗屆」，讓我們的生活更精彩、更豐富。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1053,12 +1088,18 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 語文中，有時會連用「兩個否定詞」來表示「肯定」的意思。如：我們是「無話不說」的知心好友。下列文句中，何者不是以「雙重否定」表「肯定」的文句？
+    to: 語文中，有時會連用「兩個否定詞」來表示「肯定」的意思。如：我們是「無話不說」的知心好友。下列文句中，何者不是以「雙重否定」表「肯定」的文句？
+    note: 「懸缺」誤植為「懇缺」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s2_11
   section: 2
   number: 11
   type: single
   page: 2
-  stem: 如果一個人只願意做『容易的事』，他的人生往往會困難重重；如果一個人願意面對並處理『困難的事』，他的人生就會變得很輕鬆。」由這段敘述可知
+  stem: 「如果一個人只願意做『容易的事』，他的人生往往會困難重重；如果一個人願意面對並處理『困難的事』，他的人生就會變得很輕鬆。」由這段敘述可知
   options:
   - label: A
     content: 缺乏規劃、行事魯莽，將使成功逐漸遠離
@@ -1067,7 +1108,7 @@ questions:
   - label: C
     content: 好逸惡勞、畏苦怕難，將使問題持續惡化
   - label: D
-    content: 眼高手低、好高驚遠，將使理想難以實現。
+    content: 眼高手低、好高騖遠，將使理想難以實現。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -1086,6 +1127,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 如果一個人只願意做『容易的事』，他的人生往往會困難重重；如果一個人願意面對並處理『困難的事』，他的人生就會變得很輕鬆。」由這段敘述可知
+    to: 「如果一個人只願意做『容易的事』，他的人生往往會困難重重；如果一個人願意面對並處理『困難的事』，他的人生就會變得很輕鬆。」由這段敘述可知
+    note: 「好高騖遠」誤植為「好高驚遠」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s2_12
   section: 2
   number: 12
@@ -1127,13 +1174,13 @@ questions:
   stem: 下列選項中，何者文意最接近？
   options:
   - label: A
-    content: 我們要拚命去爭取成功，但不要期望一定能成功／培養成功大居的美德，才能擁有高尚的人格
+    content: 我們要拚命去爭取成功，但不要期望一定能成功／培養成功大度的美德，才能擁有高尚的人格
   - label: B
     content: 我們捅的漏子叫失敗，別人捅的失敗叫捅漏子／錙銖必較的人，終究難成大器
   - label: C
     content: 把嘲笑視同啟發，把諷刺看做激勵／得失無需掛懷，但求無愧我心
   - label: D
-    content: 人生旅程中，如果你只是一個慕名的遊客，只是一個趕集的商人，你將會虛度一生／生命中最重妥的課題是過程，不是最終結果。
+    content: 人生旅程中，如果你只是一個慕名的遊客，只是一個趕集的商人，你將會虛度一生／生命中最重要的課題是過程，不是最終結果。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -1153,6 +1200,12 @@ questions:
     gemini: D
     qwen: C
     gemini_high: D
+  errata:
+  - from: 下列選項中，何者文意最接近？
+    to: 下列選項中，何者文意最接近？
+    note: (A)「大度」誤植「大居」，(D)「重要」誤植「重妥」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s2_14
   section: 2
   number: 14
@@ -1200,7 +1253,7 @@ questions:
   - label: C
     content: 情生意動／風起雲湧
   - label: D
-    content: 潛移默化／審情度勢。
+    content: 潛移默化／審時度勢。
   review_note: 答案卷 ['A']，Gemini 與 Qwen 一致判為 C
   source_ocr: true
   answer:
@@ -1220,6 +1273,12 @@ questions:
     gemini: C
     qwen: C
   answer_status: disputed
+  errata:
+  - from: 請你選出與「煙消雲散」一詞的詞性結構相同的選項？
+    to: 請你選出與「煙消雲散」一詞的詞性結構相同的選項？
+    note: 「審時度勢」誤植為「審情度勢」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s2_16
   section: 2
   number: 16
@@ -1230,7 +1289,7 @@ questions:
   - label: A
     content: 他們兩人「沆瀣一氣」，設計了這場騙局，行徑卑劣，令人髮指
   - label: B
-    content: 日月潭湖面波光粼粼，四周群山環抱，陶醉在此「千山萬水」的骨景中，猶如置身世外桃源
+    content: 日月潭湖面波光粼粼，四周群山環抱，陶醉在此「千山萬水」的背景中，猶如置身世外桃源
   - label: C
     content: 公司此次招考新進人員，因為錄取名額的限制，難免有「滄海遺珠」之憾
   - label: D
@@ -1253,6 +1312,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 古戴仁的作業簿上寫了四組成語造句，其中卻有一組出現錯誤，請你幫他指出？
+    to: 古戴仁的作業簿上寫了四組成語造句，其中卻有一組出現錯誤，請你幫他指出？
+    note: 「背景」誤植為「骨景」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s2_17
   section: 2
   number: 17
@@ -1301,7 +1366,7 @@ questions:
   - label: C
     content: 「一個浪／一個浪／無休止地撲過來／每一個浪都在它的腳下／被打成碎沫／它的身上滿是創傷／但依然含著微笑／看著海洋」——燈塔
   - label: D
-    content: 愍直的傻小子／幾度落髮／幾度還俗——山。
+    content: 憨直的傻小子／幾度落髮／幾度還俗」——山。
   review_note: 答案卷 ['D']，Gemini 與 Qwen 一致判為 C
   source_ocr: true
   answer:
@@ -1321,6 +1386,12 @@ questions:
     gemini: C
     qwen: C
   answer_status: disputed
+  errata:
+  - from: 下列文句歌詠對象之判別何者正確？
+    to: 下列文句歌詠對象之判別何者正確？
+    note: 「憨直」誤植為「愍直」
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_國文_g9s1e3_s2_19
   section: 2
   number: 19

@@ -290,7 +290,7 @@ questions:
   - label: B
     content: $F_{1}$ 和 $F_{2}$ 產生的力矩大小相等
   - label: C
-    content: $F_{1}$ 產生地力矩小於 $F_{2}$ 產生的力矩
+    content: $F_{1}$ 產生的力矩小於 $F_{2}$ 產生的力矩
   - label: D
     content: $F_{1}$ 產生順時鐘力矩，$F_{2}$ 產生的逆時鐘
   assets:
@@ -329,6 +329,12 @@ questions:
     gemini: C
     qwen: A
     gemini_high: C
+  errata:
+  - from: 如附圖所示，$F_{1}$ 和 $F_{2}$ 大小相等，同時作用於木棒上的同一點，下列敘述何者正確？
+    to: 如附圖所示，$F_{1}$ 和 $F_{2}$ 大小相等，同時作用於木棒上的同一點，下列敘述何者正確？
+    note: 「產生的」誤作「產生地」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_自然_g9s1e2_s1_9
   section: 1
   number: 9
@@ -769,7 +775,7 @@ questions:
   stem: 下列何種臺灣地質現象不能用板塊構造學說解釋？
   options:
   - label: A
-    content: 陽明山的大山地形
+    content: 陽明山的火山地形
   - label: B
     content: 荖濃溪的沖積扇
   - label: C
@@ -794,6 +800,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 下列何種臺灣地質現象不能用板塊構造學說解釋？
+    to: 下列何種臺灣地質現象不能用板塊構造學說解釋？
+    note: 「火山」誤植為「大山」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_自然_g9s1e2_s1_20
   section: 1
   number: 20
@@ -1052,7 +1064,7 @@ questions:
   - label: A
     content: 甲與丙是屬於相同板塊
   - label: B
-    content: 丙最靠近海溝，其岩石樣本年齡是三者中最老的一
+    content: 丙最靠近海溝，其岩石樣本年齡是三者中最老的
   - label: C
     content: 乙樣本的岩石年齡必較甲年輕
   - label: D
@@ -1093,6 +1105,12 @@ questions:
     gemini: C
     qwen: B
     gemini_high: C
+  errata:
+  - from: 附圖是海洋研究船航行區域的板塊邊界示意圖，某日研究船在甲、乙、丙三地採樣，下列有關三地的敘述，何者正確？
+    to: 附圖是海洋研究船航行區域的板塊邊界示意圖，某日研究船在甲、乙、丙三地採樣，下列有關三地的敘述，何者正確？
+    note: 選項(B)末尾多出「一」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_自然_g9s1e2_s1_28
   section: 1
   number: 28
@@ -1306,7 +1324,8 @@ questions:
     content: 桌面對滑車有支撐力，使滑車繼續作等加速度運動
   - label: D
     content: 作用力消失，滑車立即停止
-  group_stem: 2. 如附圖所示，小華做滑車實驗，滑車及每個砝碼的質量皆為 $100$ 公克，$OA=100$ 公分，$BC=80$ 公分（不計摩擦力），試回答下列問題：
+  group_stem: 2. 如附圖所示，小華做滑車實驗，滑車及每個砝碼的質量皆為 $100$ 公克，$\mathrm{OA}=100$ 公分，$\mathrm{BC}=80$
+    公分（不計摩擦力），試回答下列問題：
   shared_asset: g2_33_34
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1331,7 +1350,7 @@ questions:
   number: 34
   type: single
   page: 4
-  stem: 承小題，若將一砝碼由滑車上取下，加掛於細繩上（滑車上僅剩一個砝碼，細繩上有兩個砝碼），重複操作實驗，下列敘述何者正確？
+  stem: 承上題，若將一砝碼由滑車上取下，加掛於細繩上（滑車上僅剩一個砝碼，細繩上有兩個砝碼），重複操作實驗，下列敘述何者正確？
   options:
   - label: A
     content: 滑車總質量變小，所以滑車加速度變大
@@ -1341,7 +1360,8 @@ questions:
     content: 加掛砝碼於細繩上，拉力變大，滑車加速度變大
   - label: D
     content: 因滑車與砝碼個數不變，滑車的加速度不變
-  group_stem: 2. 如附圖所示，小華做滑車實驗，滑車及每個砝碼的質量皆為 $100$ 公克，$OA=100$ 公分，$BC=80$ 公分（不計摩擦力），試回答下列問題：
+  group_stem: 2. 如附圖所示，小華做滑車實驗，滑車及每個砝碼的質量皆為 $100$ 公克，$\mathrm{OA}=100$ 公分，$\mathrm{BC}=80$
+    公分（不計摩擦力），試回答下列問題：
   shared_asset: g2_33_34
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1361,6 +1381,12 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: 承小題，若將一砝碼由滑車上取下，加掛於細繩上（滑車上僅剩一個砝碼，細繩上有兩個砝碼），重複操作實驗，下列敘述何者正確？
+    to: 承上題，若將一砝碼由滑車上取下，加掛於細繩上（滑車上僅剩一個砝碼，細繩上有兩個砝碼），重複操作實驗，下列敘述何者正確？
+    note: 「承上題」誤植為「承小題」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_自然_g9s1e2_s2_35
   section: 2
   number: 35

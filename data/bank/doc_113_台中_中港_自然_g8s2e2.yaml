@@ -527,7 +527,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 在其他控制變因均相同下，將相同體積但濃度分別為 0.1M、0.2M、0.3 M 的鹽酸與顆粒大小及質量相同的大理岩反應，並測量反應速率(R)與溫度(T)的關係，試問其關係曲線感為下列何者？
+  stem: 在其他控制變因均相同下，將相同體積但濃度分別為 0.1M、0.2M、0.3 M 的鹽酸與顆粒大小及質量相同的大理岩反應，並測量反應速率(R)與溫度(T)的關係，試問其關係曲線應為下列何者？
   options:
   - label: A
     content: ''
@@ -614,6 +614,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在其他控制變因均相同下，將相同體積但濃度分別為 0.1M、0.2M、0.3 M 的鹽酸與顆粒大小及質量相同的大理岩反應，並測量反應速率(R)與溫度(T)的關係，試問其關係曲線感為下列何者？
+    to: 在其他控制變因均相同下，將相同體積但濃度分別為 0.1M、0.2M、0.3 M 的鹽酸與顆粒大小及質量相同的大理岩反應，並測量反應速率(R)與溫度(T)的關係，試問其關係曲線應為下列何者？
+    note: 原卷為「應為」，擷取誤作「感為」
+    by: review
+    extraction: true
 - id: doc_113_台中_中港_自然_g8s2e2_s1_16
   section: 1
   number: 16
@@ -1333,10 +1339,10 @@ questions:
   number: 33
   type: single
   page: 3
-  stem: '氮氣與氫氣在高溫高壓下製氨的化學反應為一可逆反應，其平衡反應是如下，若改變反應條件時，下列何者不會使反應式的平衡發生改變？
+  stem: '氮氣與氫氣在高溫高壓下製氨的化學反應為一可逆反應，其平衡反應式如下，若改變反應條件時，下列何者不會使反應式的平衡發生改變？
 
     $$\mathrm{N_{2} + 3H_{2}} \xrightleftharpoons[400^\circ\text{C }, 200\text{atm}]{\text{Fe}}
-    2\mathrm{NH_{3}}$$'
+    2\mathrm{NH_{3}}$$（原卷有誤，已修正）'
   options:
   - label: A
     content: 增加氮氣和氫氣的濃度
@@ -1365,6 +1371,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 其平衡反應是如下
+    to: 其平衡反應式如下
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「其平衡反應是如下」→「其平衡反應式如下」
+    by: review
 - id: doc_113_台中_中港_自然_g8s2e2_s1_34
   section: 1
   number: 34

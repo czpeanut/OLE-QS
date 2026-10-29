@@ -762,7 +762,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 非洲曾經有國家實施「種族隔離政策」，產生嚴重的族群問題，一直到1994年才由全民國選出第一任黑人總統，結束此政策。請問上文所指的國家位在圖中的何處？
+  stem: 非洲曾經有國家實施「種族隔離政策」，產生嚴重的族群問題，一直到1994年才由全體國民選出第一任黑人總統，結束此政策。請問上文所指的國家位在圖中的何處？
   options:
   - label: A
     content: 甲
@@ -793,6 +793,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 非洲曾經有國家實施「種族隔離政策」，產生嚴重的族群問題，一直到1994年才由全民國選出第一任黑人總統，結束此政策。請問上文所指的國家位在圖中的何處？
+    to: 非洲曾經有國家實施「種族隔離政策」，產生嚴重的族群問題，一直到1994年才由全體國民選出第一任黑人總統，結束此政策。請問上文所指的國家位在圖中的何處？
+    note: 「全體國民」誤作「全民國」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_地理_g8s2e3_s1_19
   section: 1
   number: 19
@@ -1118,7 +1124,7 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 若台灣暑假期間到圖中下方一乙區旅遊時，最可能遇到下列哪一種天氣現象？
+  stem: 若台灣暑假期間到圖中下方『乙』區旅遊時，最可能遇到下列哪一種天氣現象？（原卷有誤，已修正）
   options:
   - label: A
     content: 乾燥炎熱
@@ -1150,6 +1156,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 圖中下方一乙區
+    to: 圖中下方『乙』區
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「圖中下方一乙區」→「圖中下方『乙』區」
+    by: review
 - id: doc_111_彰化_埤頭_社會_地理_g8s2e3_s1_29
   section: 1
   number: 29
@@ -1325,6 +1336,23 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  assets:
+  - key: s1_31_r10290710_2
+    kind: figure
+    file: doc_111_彰化_埤頭_社會_地理_g8s2e3/s1_31_r10290710_2.png
+    crop:
+      page: 2
+      rect:
+      - 798.71
+      - 233.46
+      - 887.19
+      - 316.48
+  errata:
+  - from: 下圖為某種類型的氣候圖，此氣候類型最可能出現在下列哪一個地區？
+    to: 下圖為某種類型的氣候圖，此氣候類型最可能出現在下列哪一個地區？
+    note: 漏附圖（圖被誤配至第32題）
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_地理_g8s2e3_s1_32
   section: 1
   number: 32
@@ -1340,23 +1368,6 @@ questions:
     content: 進口橡膠、出口咖啡
   - label: D
     content: 進口小麥、出口咖啡。
-  assets:
-  - key: s1_32_f1
-    kind: figure
-    file: doc_111_彰化_埤頭_社會_地理_g8s2e3/s1_32_f1.png
-    crop:
-      page: 3
-      rect:
-      - 75.91
-      - 458.17
-      - 207.84
-      - 594.35
-      auto_from:
-      - 74.29
-      - 460.47
-      - 213.71
-      - 594.33
-    crop_by: auto
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1376,6 +1387,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 某經濟學家指出漠南非洲饑荒問題的癥結點—將最優良的耕地拿來種植經濟作物，以出口至國外市場，又從國外進口大量糧食作物。請問：漠南非洲主要的進、出口作物最可能為下列何者？
+    to: 某經濟學家指出漠南非洲饑荒問題的癥結點—將最優良的耕地拿來種植經濟作物，以出口至國外市場，又從國外進口大量糧食作物。請問：漠南非洲主要的進、出口作物最可能為下列何者？
+    note: 本題無圖，誤附第31題氣候圖
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_地理_g8s2e3_s1_33
   section: 1
   number: 33
@@ -1778,7 +1795,7 @@ shared_assets:
 - key: g1_24_31
   label: 題組附圖
   kind: figure
-  file: doc_111_彰化_埤頭_社會_地理_g8s2e3/g1_24_31_f1.png
+  file: doc_111_彰化_埤頭_社會_地理_g8s2e3/s1_31_r10290710_1.png
   used_by:
   - doc_111_彰化_埤頭_社會_地理_g8s2e3_s1_24
   - doc_111_彰化_埤頭_社會_地理_g8s2e3_s1_25
@@ -1791,15 +1808,10 @@ shared_assets:
   crop:
     page: 2
     rect:
-    - 171.57
-    - 58.17
-    - 376.28
-    - 351.69
-    auto_from:
-    - 173.45
-    - 54.0
-    - 368.51
-    - 356.07
+    - 173.46
+    - 54.27
+    - 356.86
+    - 224.71
   crop_by: auto
 - key: g1_36_38
   label: 題組附圖

@@ -472,7 +472,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 在某個下的夜晚，小凱看到閃電後，經過4秒才聽到雷聲，若當時的聲速為340公尺/秒，則打雷的地點距離小凱大約多少公尺？
+  stem: 在某個下雨的夜晚，小凱看到閃電後，經過4秒才聽到雷聲，若當時的聲速為340公尺/秒，則打雷的地點距離小凱大約多少公尺？
   options:
   - label: A
     content: '680'
@@ -500,6 +500,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 在某個下的夜晚，小凱看到閃電後，經過4秒才聽到雷聲，若當時的聲速為340公尺/秒，則打雷的地點距離小凱大約多少公尺？
+    to: 在某個下雨的夜晚，小凱看到閃電後，經過4秒才聽到雷聲，若當時的聲速為340公尺/秒，則打雷的地點距離小凱大約多少公尺？
+    note: 漏了「雨」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_自然_g8s1e2_s1_13
   section: 1
   number: 13

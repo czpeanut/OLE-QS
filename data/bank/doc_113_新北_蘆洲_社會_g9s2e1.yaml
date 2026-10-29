@@ -1662,7 +1662,7 @@ questions:
   number: 46
   type: single
   page: 5
-  stem: （請根據題組圖示回答問題）
+  stem: 下圖為 2015 年的某統計資料，圖中所呈現的全球議題，與下列何者最相關？
   options:
   - label: A
     content: 強勢文化席捲全球
@@ -1672,7 +1672,7 @@ questions:
     content: 國際移工受到歧視
   - label: D
     content: 人口販賣問題嚴重。
-  group_stem: 下圖為2015 年的某統計資料，圖中所呈現的全球議題，與下列何者最相關？
+  group_stem: null
   shared_asset: g1_46_47
   tags:
     chapter:
@@ -1691,6 +1691,23 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s1_46_r10290727_1
+    kind: figure
+    file: doc_113_新北_蘆洲_社會_g9s2e1/s1_46_r10290727_1.png
+    crop:
+      page: 5
+      rect:
+      - 110.38
+      - 855.5
+      - 295.4
+      - 1004.86
+  errata:
+  - from: （請根據題組圖示回答問題）
+    to: 下圖為 2015 年的某統計資料，圖中所呈現的全球議題，與下列何者最相關？
+    note: 原題幹被誤拆至題組說明，題幹被置換為提示文字
+    by: review
+    extraction: true
 - id: doc_113_新北_蘆洲_社會_g9s2e1_s1_47
   section: 1
   number: 47
@@ -1794,14 +1811,14 @@ questions:
   number: 50
   type: single
   page: 5
-  stem: 「由秘魯主辦的2024 年亞太經濟合作經濟領袖會議，針對各會員體共同遭遇包括地緣政治、全球情勢變化、疫情、能源、通貨膨脹、食品供應安全、產業供應鏈韌性及氣候變化等挑戰大家都很有關注如何因應與合作。」有關上述提及的國際組織，下列敘述何者正確？
+  stem: 「由秘魯主辦的 2024 年亞太經濟合作經濟領袖會議，針對各會員體共同遭遇包括地緣政治、全球情勢變化、疫情、能源、通貨膨脹、食品供應安全、產業供應鏈韌性及氣候變化等挑戰大家都很關注如何因應與合作。」有關上述提及的國際組織，下列敘述何者正確？
   options:
   - label: A
     content: 其性質為關注全球議題的全球性政府組織
   - label: B
-    content: 促進區域的經貿合作，英文縮寫為ASEAN
+    content: 促進區域的經貿合作，英文縮寫為 ASEAN
   - label: C
-    content: 我國已於1991 年，以中華台北的名稱加入
+    content: 我國已於 1991 年，以中華台北的名稱加入
   - label: D
     content: 我國不是會員國，曾以觀察員身分列席會議。
   tags:
@@ -1821,6 +1838,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「由秘魯主辦的2024 年亞太經濟合作經濟領袖會議，針對各會員體共同遭遇包括地緣政治、全球情勢變化、疫情、能源、通貨膨脹、食品供應安全、產業供應鏈韌性及氣候變化等挑戰大家都很有關注如何因應與合作。」有關上述提及的國際組織，下列敘述何者正確？
+    to: 「由秘魯主辦的 2024 年亞太經濟合作經濟領袖會議，針對各會員體共同遭遇包括地緣政治、全球情勢變化、疫情、能源、通貨膨脹、食品供應安全、產業供應鏈韌性及氣候變化等挑戰大家都很關注如何因應與合作。」有關上述提及的國際組織，下列敘述何者正確？
+    note: 擷取多出「有」字
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_11_12
   label: 題組附圖

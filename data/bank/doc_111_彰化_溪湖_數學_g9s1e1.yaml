@@ -586,9 +586,9 @@ questions:
   number: 3
   type: fill
   page: 1
-  stem: 如下圖，$\triangle ABC$ 中，$D$、$E$ 分別為 $\overline{AB}$、$\overline{AC}$ 上一點，且 $\overline{DE}
-    ∥ \overline{BC}$。若 $\overline{AD}=6$、$\overline{DB}=9$、$\overline{AE}=4$，則 $\overline{AC}$
-    的長度為{{1}}
+  stem: 如下圖，$\triangle ABC$ 中，$D$、$E$ 分別為 $\overline{AB}$、上一點，且 $\overline{DE} //
+    \overline{BC}$。若 $\overline{AD}=6$、$\overline{DB}=9$、$\overline{AE}=4$，則 $\overline{AC}$
+    的長度為
   assets:
   - key: s2_3_f1
     kind: figure
@@ -623,6 +623,16 @@ questions:
   - '10'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如下圖，$\triangle ABC$ 中，$D$、$E$ 分別為 $\overline{AB}$、$\overline{AC}$ 上一點，且
+      $\overline{DE} ∥ \overline{BC}$。若 $\overline{AD}=6$、$\overline{DB}=9$、$\overline{AE}=4$，則
+      $\overline{AC}$ 的長度為{{1}}
+    to: 如下圖，$\triangle ABC$ 中，$D$、$E$ 分別為 $\overline{AB}$、上一點，且 $\overline{DE} //
+      \overline{BC}$。若 $\overline{AD}=6$、$\overline{DB}=9$、$\overline{AE}=4$，則 $\overline{AC}$
+      的長度為
+    note: 原卷漏印「AC」，擷取自行補上
+    by: review
+    extraction: true
 - id: doc_111_彰化_溪湖_數學_g9s1e1_s2_4
   section: 2
   number: 4

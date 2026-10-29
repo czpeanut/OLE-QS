@@ -44,6 +44,7 @@ select,input[type=text],textarea{background:var(--card);border:1px solid var(--r
 .btn{white-space:nowrap}
 .btn:hover{border-color:var(--muted)}
 .btn.pen{background:var(--pen);border-color:var(--pen);color:#fff}
+.btn.ok{border-color:var(--ok);color:var(--ok)}
 .btn.ghost{background:transparent}
 .papers{display:flex;flex-direction:column;gap:2px}
 .paper-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;text-align:left;background:transparent;border:1px solid transparent;
@@ -257,6 +258,9 @@ let current = null;          // {gi, doc}
 let db = null;
 let reports = new Map();     // code -> [每位審題者的回報]
 let reportDocs = new Map();  // 資料庫文件 ID -> 回報
+let aiok = new Map();        // 「審查無問題」：資料庫文件 ID（審題編號~審題者）-> {code, doc, by, at}
+const aiokCodes = () => new Set([...aiok.values()].map(x => x.code));
+const aiPending = code => (AI.q[code] || []).some(it => !it.applied);   // 初審意見裡還沒改進題庫的
 let userNs = null, ME = {id: null, name: ""};
 let NAMES = {};              // 審題者 ID -> 顯示名稱（每次從平台查，不存進資料庫）
 function who(id){ if (!id) return "（未記名）"; if (id === ME.id) return "你"; return NAMES[id] || "某位審題者"; }
@@ -268,6 +272,7 @@ async function refreshNames(){
   for (const r of reportDocs.values()) if (r.by) ids.add(r.by);
   for (const r of reviewed.values()) if (r.by) ids.add(r.by);
   for (const r of crops.values()) if (r.by) ids.add(r.by);
+  for (const r of aiok.values()) if (r.by) ids.add(r.by);
   if (![...ids].some(i => !(i in NAMES))) return;
   const ps = await userNs.profiles([...ids]);
   for (const i of ids) NAMES[i] = (ps[i] && ps[i].name) || "";
@@ -468,8 +473,25 @@ function aiBoxHTML(q){
     (it.extraction ? (it.applied ? "擷取錯誤・已修正" : "擷取錯誤") : it.applied ? "原卷有誤・已修正" : "原卷可能有誤") : (it.sure ? "初審：確定" : "初審：可能");
   return `<div class="ai-box">${items.map(it => `<div class="it"><span class="chip ai">${tag(it)}</span>
       <b>${esc((it.cats || []).join("、"))}</b><span>${esc(it.note)}</span></div>`).join("")}
-    <div class="row">${items.some(it => !it.applied) ? `<button class="btn" type="button" data-adopt="${q.c}">採用為回報</button>` : ""}
-      <span class="src">AI 對照原卷的初審意見，確認後再回報；不正確就略過。「已修正」的原卷錯誤已改進題庫，題末加註「（原卷有誤，已修正）」</span></div></div>`;
+    <div class="row">${items.some(it => !it.applied) ? aiActionsHTML(q.c) : ""}
+      <span class="src">AI 對照原卷的初審意見：正確就「採用為回報」，看過覺得沒問題就按「審查無問題」，兩種都會記下這題已確認。「已修正」的原卷錯誤已改進題庫，題末加註「（原卷有誤，已修正）」</span></div></div>`;
+}
+function aiActionsHTML(code){
+  const oks = [...aiok.values()].filter(x => x.code === code);
+  const mine = ME && aiok.has(aiokId(code));
+  return `<button class="btn" type="button" data-adopt="${code}">採用為回報</button>
+    <button class="btn ${mine ? "" : "ok"}" type="button" data-aiok="${code}">${mine ? "取消「審查無問題」" : "審查無問題"}</button>
+    ${oks.length ? `<span class="chip ok">${esc(oks.map(x => who(x.by)).join("、"))}確認無問題</span>` : ""}`;
+}
+function aiokId(code){ return code + "~" + (ME ? ME.id : "anon"); }
+async function toggleAiOk(code){
+  if (!db) return;
+  const k = aiokId(code);
+  try {
+    if (aiok.has(k)) await db.collection("aiok").doc(k).delete();
+    else await db.collection("aiok").doc(k).set({code, doc: current && current.paper ? current.paper.doc : null,
+                                                   by: ME ? ME.id : null, at: new Date().toISOString()});
+  } catch(e){ /* 權限不足時按鈕沒有作用，由 banner 說明 */ }
 }
 function figHTML(ids, P){
   return ids.map(id => imgTag(id, P, "附圖", 320)).join("");
@@ -589,6 +611,7 @@ function questionHTML(q, P){
         ${r?`<span class="chip pen">${rs.length > 1 ? rs.length + " 人" : esc(who(rs[0].by))}回報：${esc(rcats.join("、") || "其他")}</span>`:''}
         ${done?`<span class="chip ok">回報已修正：${esc(rs[0].resolved.what || "")}</span>`:''}
         ${AI.q[q.c]?`<span class="chip ai">初審：${esc([...new Set(AI.q[q.c].flatMap(x => x.cats || []))].join("、"))}</span>`:''}
+        ${aiPending(q.c) && aiokCodes().has(q.c) && !rs.length ? '<span class="chip ok">初審意見已確認無問題</span>' : ''}
       </div>
       ${q.stem?`<div class="stem">${rich(q.stem)}</div>`:''}
       ${q.imgs && q.imgs.length ? `<div class="figs">${figHTML(q.imgs, P)}</div>` : ""}
@@ -614,6 +637,7 @@ function bindQuestionEvents(){
                                  note: items.map(x => x.note).join("；")});
   }));
   document.querySelectorAll("[data-crop]").forEach(b => b.addEventListener("click", () => openCropEditor(b)));
+  document.querySelectorAll("[data-aiok]").forEach(b => b.addEventListener("click", () => toggleAiOk(b.dataset.aiok)));
 }
 function focusQuestion(code){
   const el = document.getElementById("q-" + code);
@@ -687,10 +711,14 @@ async function toggleDone(){
 function renderReportStats(){
   const n = reports.size;
   const fixed = [...reports.values()].filter(rs => !open_(rs)).length;
+  // 初審意見逐題的處理狀態：採用為回報、審查無問題、還沒人看
+  const pend = Object.keys(AI.q).filter(aiPending), okc = aiokCodes();
+  const aiLeft = pend.filter(c => !reports.has(c) && !okc.has(c)).length;
   $("#reportStats").innerHTML = `
     <div class="stat"><b>${n - fixed}</b><span>待處理回報</span></div>
     <div class="stat"><b>${fixed}</b><span>回報已修正</span></div>
     <div class="stat"><b>${reviewed.size}</b><span>已審完的卷</span></div>
+    <div class="stat"><b>${aiLeft}</b><span>初審意見未確認（共 ${pend.length} 題）</span></div>
     <div class="stat"><b>${Object.keys(AI.papers).length}</b><span>初審完成的卷</span></div>
     <button class="btn" id="openDrawer" ${n?"":"disabled"}>回報清單</button>`;
   const b = $("#openDrawer"); if (b) b.addEventListener("click", openDrawer);
@@ -780,6 +808,11 @@ async function initDb(){
   }, () => {});
   db.collection("crops").onSnapshot(s => {
     crops = new Map(s.docs.map(d => [d.id, d.data()]));
+    refreshNames();
+    rerenderKeepingScroll();
+  }, () => {});
+  db.collection("aiok").onSnapshot(s => {
+    aiok = new Map(s.docs.map(d => [d.id, d.data()]));
     refreshNames();
     rerenderKeepingScroll();
   }, () => {});

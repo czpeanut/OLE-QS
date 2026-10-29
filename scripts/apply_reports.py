@@ -27,7 +27,7 @@ import requests
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from ai_review import RESULTS, load_codes  # noqa: E402
+from ai_review import RESULTS, SITES, load_codes  # noqa: E402
 from apply_errata import MARK, edits, fields, get, index_norm, put, replace_in  # noqa: E402
 from batch_api import _env  # noqa: E402
 
@@ -38,6 +38,7 @@ LOG = REPO / "out" / "review_applied.json"
 TEXTUAL = {"錯字或漏字", "選項錯誤", "題組或短文錯誤"}
 NOT_TEXT = re.compile(r"底線|畫線|雙線|圖|框|符號|○|●|錯置|順序|大題|題號|漏擷取|漏題|整題|表格")
 MAX_CHANGED = 8                     # 一筆修正最多改幾個字；更多的多半是引文有出入，交人工
+ARROW = re.compile(r"「([^「」]+)」\s*→\s*「([^「」]+)」")
 
 
 def supa():
@@ -59,13 +60,30 @@ def load_reports() -> list[dict]:
         off += 1000
 
 
-def ai_items() -> dict[str, list[tuple[str, dict]]]:
+def ai_items(codes_root: Path | None = None) -> dict[str, list[tuple[str, dict]]]:
     out: dict[str, list[tuple[str, dict]]] = {}
+    if not any(RESULTS.glob("*.json")) and codes_root:
+        return site_items(codes_root)
     for f in RESULTS.glob("*.json"):
         r = json.loads(f.read_text(encoding="utf-8"))
         for kind in ("issues", "errata"):
             for e in r.get(kind) or []:
                 out.setdefault(e["code"].strip().strip("[]"), []).append((kind, e))
+    return out
+
+
+def site_items(codes_root: Path) -> dict[str, list[tuple[str, dict]]]:
+    """本機沒有初審結果檔時，改用各站發佈的 ai.json：意見裡「原文」→「改正」的部分就是要改的地方。"""
+    out: dict[str, list[tuple[str, dict]]] = {}
+    for site in SITES:
+        f = codes_root / f"s{site}" / "data" / "ai.json"
+        if not f.is_file():
+            continue
+        for code, items in json.loads(f.read_text(encoding="utf-8")).get("q", {}).items():
+            for it in items:
+                m = ARROW.search(it.get("note") or "")
+                e = {**it, **({"got": m.group(1), "fix": m.group(2), "orig": m.group(2)} if m else {})}
+                out.setdefault(code, []).append(("errata" if it.get("kind") == "errata" else "issues", e))
     return out
 
 
@@ -77,7 +95,7 @@ def plan(rep: dict, items: list[tuple[str, dict]]) -> tuple[list[dict], str | No
         return [], "審題者自寫說明" if note else "沒有說明"
     fixes = []
     for kind, e in adopted:
-        if kind == "errata":
+        if kind == "errata" and e.get("got") and e.get("fix"):
             fixes.append({"got": e.get("got", ""), "fix": e.get("fix", ""), "mark": not e.get("extraction")})
         elif (set(e.get("cats") or []) <= TEXTUAL and e.get("orig") and e.get("got")
               and not NOT_TEXT.search(e.get("note", ""))):
@@ -126,7 +144,7 @@ def main() -> int:
     args = ap.parse_args()
     q2c, _ = load_codes(args.codes_root)
     c2q = {c: q for q, c in q2c.items()}
-    items = ai_items()
+    items = ai_items(args.codes_root)
     reports = [r for r in load_reports() if not (r["data"].get("resolved"))]
 
     by_doc: dict[str, list[tuple[dict, list[dict]]]] = {}
@@ -208,26 +226,36 @@ def main() -> int:
     url, H = supa()
     H = {**H, "Prefer": "return=minimal"}
     s = requests.Session()
-    con = sqlite3.connect(DB)
+    con = sqlite3.connect(DB) if DB.is_file() else None          # 本機資料庫不在時只改 YAML 與 Supabase
     for c in changes:
         a, b = c["before"], c["after"]
         rn = f"{c['kind']}已修正（審題回報）：{c['note']}"[:500]
-        con.execute("update question set stem_md=?, review_note=? where id=?", (b["stem"], rn, c["qid"]))
+        if con:
+            con.execute("update question set stem_md=?, review_note=? where id=?", (b["stem"], rn, c["qid"]))
         s.patch(f"{url}/rest/v1/question", params={"id": f"eq.{c['qid']}"}, headers=H,
                 json={"stem_md": b["stem"], "review_note": rn}, timeout=60).raise_for_status()
         if a["group_stem"] != b["group_stem"]:
-            con.execute("update question set group_stem=? where document_id=? and group_stem=?",
-                        (b["group_stem"], c["doc"], a["group_stem"]))
+            if con:
+                con.execute("update question set group_stem=? where document_id=? and group_stem=?",
+                            (b["group_stem"], c["doc"], a["group_stem"]))
             s.patch(f"{url}/rest/v1/question", params={"document_id": f"eq.{c['doc']}",
                                                          "group_stem": f"eq.{a['group_stem']}"},
                     headers=H, json={"group_stem": b["group_stem"]}, timeout=60).raise_for_status()
-        opts = con.execute("select id from option where question_id=? order by ord", (c["qid"],)).fetchall()
+        if a["options"] == b["options"]:
+            continue
+        if con:
+            opts = con.execute("select id from option where question_id=? order by ord", (c["qid"],)).fetchall()
+        else:
+            opts = [(o["id"],) for o in s.get(f"{url}/rest/v1/option", headers=H, timeout=60, params={
+                "select": "id", "question_id": f"eq.{c['qid']}", "order": "ord.asc"}).json()]
         for (oid,), old, new in zip(opts, a["options"], b["options"]):
             if old != new:
-                con.execute("update option set content_md=? where id=?", (new, oid))
+                if con:
+                    con.execute("update option set content_md=? where id=?", (new, oid))
                 s.patch(f"{url}/rest/v1/option", params={"id": f"eq.{oid}"}, headers=H,
                         json={"content_md": new}, timeout=60).raise_for_status()
-    con.commit()
+    if con:
+        con.commit()
     now = time.strftime("%Y-%m-%dT%H:%M:%S")
     for r, what in resolved:
         data = {**r["data"], "resolved": {"at": now, "by": "claude", "what": what}}

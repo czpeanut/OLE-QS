@@ -1534,7 +1534,7 @@ questions:
   number: 54
   type: single
   page: 5
-  stem: 54. Which of the following is the best for (54)?
+  stem: Which of the following is the best for (54)?
   options:
   - label: A
     content: Does the post ask you to show all your stories?
@@ -1544,7 +1544,9 @@ questions:
     content: Does the post excite you by sharing fresh ideas?
   - label: D
     content: Does the post see things from different ways?
-  group_stem: 【C】
+  group_stem: '【C】
+
+     biased 偏頗的 judge 判斷'
   shared_asset: g7_54_56
   ai_answers:
     gemini: D
@@ -1564,6 +1566,12 @@ questions:
       chapter: 綜合
     textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: 54. Which of the following is the best for (54)?
+    to: Which of the following is the best for (54)?
+    note: 題組短文漏擷取底部的單字注釋
+    by: review
+    extraction: true
 - id: doc_113_新北_永和_英語_g9s1e1_s7_55
   section: 7
   number: 55
@@ -1580,7 +1588,9 @@ questions:
     content: Make sure there are both information and ideas in the post.
   - label: D
     content: Try to check the post with examples, numbers, and studies.
-  group_stem: 【C】
+  group_stem: '【C】
+
+     biased 偏頗的 judge 判斷'
   shared_asset: g7_54_56
   ai_answers:
     gemini: C
@@ -1615,7 +1625,9 @@ questions:
     content: ③
   - label: D
     content: ④
-  group_stem: 【C】
+  group_stem: '【C】
+
+     biased 偏頗的 judge 判斷'
   shared_asset: g7_54_56
   ai_answers:
     gemini: D

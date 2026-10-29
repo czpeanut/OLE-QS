@@ -211,9 +211,9 @@ questions:
   - label: A
     content: 韓琦：聽說女真族已把咱們的皇帝抓走了
   - label: B
-    content: 張飛：最近街上出現婧審著，趕快去買來品嘗
+    content: 張飛：最近街上出現烤蕃薯，趕快去買來品嘗
   - label: C
-    content: 胡仁：要想通行，就得要出示雲胡拔、攣胡旋舞
+    content: 胡仁：要想通行，就得要出示通關牒、學胡旋舞
   - label: D
     content: 小展：聽說政府這回出海帶回了稀世珍寶—麒麟(長頸鹿)，咱們去瞧瞧吧！
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -235,6 +235,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 哆啦A夢乘坐時光機穿越中國各個朝代，以下是哆啦A夢在不同朝代所遇到的老百姓，請依他們所說的話判斷，哪位所生存的年代最晚？
+    to: 哆啦A夢乘坐時光機穿越中國各個朝代，以下是哆啦A夢在不同朝代所遇到的老百姓，請依他們所說的話判斷，哪位所生存的年代最晚？
+    note: 「烤蕃薯」誤作「婧審著」；「通關牒、跳胡旋舞」嚴重錯字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_7
   section: 1
   number: 7
@@ -274,7 +280,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 祖籍山西的臺灣首富郭台銘曾經花了 1000 萬美金，投資電影《白銀帝國》，這部電影內容改編自小說《白銀谷》，講述了_____時代富可敵國的山西票號「天成元」康氏父子之間的傳承和三角戀情。請問：這部電影所描述的時代背景最有可能在何時？
+  stem: 祖籍山西的臺灣首富郭台銘曾經花了 1000 萬美金，投資電影《白銀帝國》，這部電影內容改編自小說《白銀谷》，講述了清時代富可敵國的山西票號「天成元」康氏父子之間的傳承和三角戀情。請問：這部電影所描述的時代背景最有可能在何時？
   options:
   - label: A
     content: 魏晉南北朝
@@ -303,6 +309,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 祖籍山西的臺灣首富郭台銘曾經花了 1000 萬美金，投資電影《白銀帝國》，這部電影內容改編自小說《白銀谷》，講述了_____時代富可敵國的山西票號「天成元」康氏父子之間的傳承和三角戀情。請問：這部電影所描述的時代背景最有可能在何時？
+    to: 祖籍山西的臺灣首富郭台銘曾經花了 1000 萬美金，投資電影《白銀帝國》，這部電影內容改編自小說《白銀谷》，講述了清時代富可敵國的山西票號「天成元」康氏父子之間的傳承和三角戀情。請問：這部電影所描述的時代背景最有可能在何時？
+    note: 原卷印「清」，被擅改為底線
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_9
   section: 1
   number: 9
@@ -410,7 +422,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 資料一：清朝皇帝因支持改革而被囚禁；資料二：這場改革最後以政變收場；資料三：慈禧重行訓政；以上資料顯示是那一件歷史？
+  stem: 資料一：清朝皇帝因支持改革而被囚禁；資料二：這場改革最後以政變收場；資料三：慈禧重行訓政；以上資料顯示是那一件史實？
   options:
   - label: A
     content: 甲午戰爭
@@ -419,7 +431,7 @@ questions:
   - label: C
     content: 自強運動
   - label: D
-    content: 辛亥革命。
+    content: 甲午戰爭。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -439,6 +451,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 資料一：清朝皇帝因支持改革而被囚禁；資料二：這場改革最後以政變收場；資料三：慈禧重行訓政；以上資料顯示是那一件歷史？
+    to: 資料一：清朝皇帝因支持改革而被囚禁；資料二：這場改革最後以政變收場；資料三：慈禧重行訓政；以上資料顯示是那一件史實？
+    note: 「史實」誤作「歷史」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_13
   section: 1
   number: 13
@@ -453,7 +471,7 @@ questions:
   - label: C
     content: 阿拉伯水手
   - label: D
-    content: 大大利商人。
+    content: 義大利商人。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -473,6 +491,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 明末清初，促成中西文化交流的重要橋樑是何者？
+    to: 明末清初，促成中西文化交流的重要橋樑是何者？
+    note: 「義大利」誤作「大大利」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_14
   section: 1
   number: 14
@@ -580,7 +604,7 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 中國某個城市曾被稱為「四時電電鎮」，原因是當地出產的瓷器質量佳量多。此城市應是下列何者？
+  stem: 中國某個城市曾被稱為「四時雷電鎮」，原因是當地出產的瓷器質量佳量多。此城市應是下列何者？
   options:
   - label: A
     content: 江蘇盛澤鎮
@@ -609,6 +633,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 中國某個城市曾被稱為「四時電電鎮」，原因是當地出產的瓷器質量佳量多。此城市應是下列何者？
+    to: 中國某個城市曾被稱為「四時雷電鎮」，原因是當地出產的瓷器質量佳量多。此城市應是下列何者？
+    note: 「雷電」誤作「電電」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_18
   section: 1
   number: 18
@@ -750,7 +780,7 @@ questions:
   number: 22
   type: single
   page: 1
-  stem: 1662 年信仰某教人士在江西建昌府刻印出版了一本拉丁文書籍，書名為《中國的智慧》，內有孔子生平傳記，以及論語前丁文並行，後傳銷到歐洲，讓歐洲學界首度能較完整的了解中國儒學。請問：「某教」是指下列何者？
+  stem: 1662 年信仰某教人士在江西建昌府刻印出版了一本拉丁文書籍，書名為《中國的智慧》，內有孔子生平傳記，以及論語與拉丁文並行，後傳銷到歐洲，讓歐洲學界首度能較完整的了解中國儒學。請問：「某教」是指下列何者？
   options:
   - label: A
     content: 佛教
@@ -779,6 +809,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 1662 年信仰某教人士在江西建昌府刻印出版了一本拉丁文書籍，書名為《中國的智慧》，內有孔子生平傳記，以及論語前丁文並行，後傳銷到歐洲，讓歐洲學界首度能較完整的了解中國儒學。請問：「某教」是指下列何者？
+    to: 1662 年信仰某教人士在江西建昌府刻印出版了一本拉丁文書籍，書名為《中國的智慧》，內有孔子生平傳記，以及論語與拉丁文並行，後傳銷到歐洲，讓歐洲學界首度能較完整的了解中國儒學。請問：「某教」是指下列何者？
+    note: 「拉丁文」誤作「前丁文」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_23
   section: 1
   number: 23
@@ -823,7 +859,7 @@ questions:
   - label: A
     content: 皇上是明太祖
   - label: B
-    content: 古城國位於今馬來西亞
+    content: 占城國位於今馬來西亞
   - label: C
     content: 「西洋」所指範圍遠及大西洋一帶
   - label: D
@@ -847,6 +883,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 在中國福建某史蹟陳列館內，有塊石碑上記有：「皇上嘉其忠誠，命其人統率官校旗軍數萬人，乘巨舶百餘艘，貨幣往買之……自永樂三年奉使西洋，迨今七次，所歷番國，由占城國、爪哇國、三佛齊國、暹羅國，直逾南天竺、錫蘭山國……」有關石碑內容記述之事，下列敘述何者符合史實？
+    to: 在中國福建某史蹟陳列館內，有塊石碑上記有：「皇上嘉其忠誠，命其人統率官校旗軍數萬人，乘巨舶百餘艘，貨幣往買之……自永樂三年奉使西洋，迨今七次，所歷番國，由占城國、爪哇國、三佛齊國、暹羅國，直逾南天竺、錫蘭山國……」有關石碑內容記述之事，下列敘述何者符合史實？
+    note: 「占城國」誤作「古城國」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_25
   section: 1
   number: 25
@@ -1107,7 +1149,7 @@ questions:
   number: 32
   type: single
   page: 2
-  stem: 蔣廷黻《中國近代史綱》提到：「一場軍事戰爭的失敗還不是民族的致命傷，失敗以後還不明瞭失敗的理由，力圖改革，等到重另場戰爭又失敗了，才知道非學習西方不可，中華民族喪失了二十年的寶貴光陰。」他指的「二十年」是指？
+  stem: 蔣廷黻《中國近代史綱》提到：「一場軍事戰爭的失敗還不是民族的致命傷，失敗以後還不明瞭失敗的理由，力圖改革，等到另一場戰爭又失敗了，才知道非學習西方不可，中華民族喪失了二十年的寶貴光陰。」他指的「二十年」是指？
   options:
   - label: A
     content: 鴉片戰爭→英法聯軍
@@ -1137,6 +1179,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 蔣廷黻《中國近代史綱》提到：「一場軍事戰爭的失敗還不是民族的致命傷，失敗以後還不明瞭失敗的理由，力圖改革，等到重另場戰爭又失敗了，才知道非學習西方不可，中華民族喪失了二十年的寶貴光陰。」他指的「二十年」是指？
+    to: 蔣廷黻《中國近代史綱》提到：「一場軍事戰爭的失敗還不是民族的致命傷，失敗以後還不明瞭失敗的理由，力圖改革，等到另一場戰爭又失敗了，才知道非學習西方不可，中華民族喪失了二十年的寶貴光陰。」他指的「二十年」是指？
+    note: 「另一場」誤作「重另場」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_33
   section: 1
   number: 33
@@ -1237,7 +1285,7 @@ questions:
     content: 日本人
   - label: D
     content: 阿拉伯人。
-  group_stem: ◎下圖是 15 世紀的束西貿易路線。請回答 35~38 題
+  group_stem: ◎下圖是 15 世紀的東西貿易路線。請回答 35~38 題
   shared_asset: g1_35_38
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -1258,6 +1306,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 當時，某國商人將美洲獲得物資，運銷到中國，購買生絲和瓷器，形成「海上絲路」。請問：「海上絲路」的開闢者是哪國人？
+    to: 當時，某國商人將美洲獲得物資，運銷到中國，購買生絲和瓷器，形成「海上絲路」。請問：「海上絲路」的開闢者是哪國人？
+    note: 題組說明「東西」誤作「束西」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_36
   section: 1
   number: 36
@@ -1371,7 +1425,7 @@ questions:
   number: 39
   type: single
   page: 2
-  stem: 中國與日本各在哪一個國家的親逼威脅之下，打開門戶？
+  stem: 中國與日本各在哪一個國家的侵逼威脅之下，打開門戶？（原卷有誤，已修正）
   options:
   - label: A
     content: 英國、法國
@@ -1402,6 +1456,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 哪一個國家的親逼威脅之下
+    to: 哪一個國家的侵逼威脅之下
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「哪一個國家的親逼威脅之下」→「哪一個國家的侵逼威脅之下」
+    by: review
 - id: doc_112_彰化_埤頭_社會_歷史_g8s1e3_s1_40
   section: 1
   number: 40

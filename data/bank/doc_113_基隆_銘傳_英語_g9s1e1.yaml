@@ -570,10 +570,10 @@ questions:
   page: 2
   stem: 'Mom: Have you done your homework?
 
-    Boy: No, but I _____ after taking a shower.'
+    Boy: No, but I _____ after taking a shower.（原卷有誤，已修正）'
   options:
   - label: A
-    content: have't
+    content: haven't
   - label: B
     content: do
   - label: C
@@ -599,6 +599,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) have't
+    to: (A) haven't
+    note: have't 印錯，應為 haven't：「(A) have't」→「(A) haven't」
+    by: review
 - id: doc_113_基隆_銘傳_英語_g9s1e1_s5_32
   section: 5
   number: 32
@@ -804,7 +809,7 @@ questions:
   number: 35
   type: single
   page: 2
-  stem: Which is NOT true?
+  stem: Which is NOT true?（原卷有誤，已修正）
   options:
   - label: A
     content: There were seas and rivers on Mars before.
@@ -814,7 +819,7 @@ questions:
     content: People have never been to Mars before, but they may have a chance to
       live on Mars one day.
   - label: D
-    content: The oxgen level goes up before the factories make the heat for Mars.
+    content: The oxygen level goes up before the factories make the heat or Mars.
   group_stem: 'In 2004, two car-sized rovers landed on Mars to look for water and
     signs of the past life. The rovers gave people a lot of useful and important information.
     It was much warmer, and there were seas and rivers on Mars before.
@@ -866,6 +871,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: The oxgen level goes up before the factories make the heat f
+    to: 'The oxygen level goes up before the factories make the heat '
+    note: oxgen 拼錯，應為 oxygen：「The oxgen level goes up before the factories make the
+      heat f」→「The oxygen level goes up before the factories make the heat 」
+    by: review
 - id: doc_113_基隆_銘傳_英語_g9s1e1_s5_36
   section: 5
   number: 36
@@ -1437,7 +1448,7 @@ questions:
   number: 2
   type: essay
   page: 4
-  stem: Polly has been sick since last week. (依畫線部分造原問句)
+  stem: Polly has been sick <u>since last week.</u> (依畫線部分造原問句)
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1450,6 +1461,12 @@ questions:
       code: B3-15
       title: How long問句
       chapter: B3 八上
+  errata:
+  - from: Polly has been sick since last week. (依畫線部分造原問句)
+    to: Polly has been sick <u>since last week.</u> (依畫線部分造原問句)
+    note: 原卷「since last week」有畫底線，擷取漏標畫線處
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_英語_g9s1e1_s7_3
   section: 7
   number: 3

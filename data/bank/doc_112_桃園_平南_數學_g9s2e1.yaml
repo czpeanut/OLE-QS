@@ -38,7 +38,7 @@ questions:
   page: 1
   stem: '判斷下列各式中，$y$ 是 $x$ 的二次函數的共有幾個？
 
-    (甲) $y=\sqrt{2}x^{2}$ (乙) $y=5^{2}-x$ (丙) $y=2x$ (丁) $y=\frac{1}{x^{2}}$ (戊) $y=(x+2)(x-6)$
+    (甲) $y=\sqrt{2x^{2}}$ (乙) $y=5^{2}-x$ (丙) $y=2x$ (丁) $y=\frac{1}{x^{2}}$ (戊) $y=(x+2)(x-6)$
     (己) $y=|x^{2}|$'
   options:
   - label: A
@@ -67,6 +67,18 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '判斷下列各式中，$y$ 是 $x$ 的二次函數的共有幾個？
+
+      (甲) $y=\sqrt{2}x^{2}$ (乙) $y=5^{2}-x$ (丙) $y=2x$ (丁) $y=\frac{1}{x^{2}}$ (戊)
+      $y=(x+2)(x-6)$ (己) $y=|x^{2}|$'
+    to: '判斷下列各式中，$y$ 是 $x$ 的二次函數的共有幾個？
+
+      (甲) $y=\sqrt{2x^{2}}$ (乙) $y=5^{2}-x$ (丙) $y=2x$ (丁) $y=\frac{1}{x^{2}}$ (戊)
+      $y=(x+2)(x-6)$ (己) $y=|x^{2}|$'
+    note: 原卷根號涵蓋 2x²，擷取成根號只有 2
+    by: review
+    extraction: true
 - id: doc_112_桃園_平南_數學_g9s2e1_s1_2
   section: 1
   number: 2

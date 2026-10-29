@@ -38,7 +38,7 @@ questions:
   number: 1
   type: fill
   page: 1
-  stem: 不「ㄑㄧˊ」而過：
+  stem: 不「ㄑㄧˊ」而遇：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -57,6 +57,12 @@ questions:
     gemini_high: 祈
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 不「ㄑㄧˊ」而過：
+    to: 不「ㄑㄧˊ」而遇：
+    note: 「遇」誤植為「過」
+    by: review
+    extraction: true
 - id: doc_113_台中_大甲_國文_g8s2e2_s1_2
   section: 1
   number: 2
@@ -892,7 +898,7 @@ questions:
   - label: B
     content: 全文從第三人稱的角度敘事抒懷，筆調質樸生動
   - label: C
-    content: 透過山神的話說，傳達族人取用自然資源的生活哲學，也增添作品的神秘感
+    content: 透過山神的傳說，傳達族人取用自然資源的生活哲學，也增添作品的神秘感
   - label: D
     content: 提出賣水的想法，思考自然的多元利用
   lesson_raw:
@@ -917,6 +923,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 關於水神的指引一文的寫作手法，下列何者正確？
+    to: 關於水神的指引一文的寫作手法，下列何者正確？
+    note: 「傳說」誤植為「話說」
+    by: review
+    extraction: true
 - id: doc_113_台中_大甲_國文_g8s2e2_s4_7
   section: 4
   number: 7
@@ -1600,7 +1612,7 @@ questions:
   - label: C
     content: 中度颱風米雷正緩緩地向北臺灣快速移動，氣象局呼籲民眾慎防豪雨及土石流災變
   - label: D
-    content: 達賴喇嘛來臺訪問，並且為民眾祈福，所到之處，引起一陣旋風，大家都想要一眼芳澤
+    content: 達賴喇嘛來臺訪問，並且為民眾祈福，所到之處，引起一陣旋風，大家都想要一親芳澤
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1621,12 +1633,18 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 社會在傳媒的影響下，語言的粗糙失當屢見不鮮。下列各選項中的新聞報導，何者符合精確客觀，儘可能避免推論的報導原則？
+    to: 社會在傳媒的影響下，語言的粗糙失當屢見不鮮。下列各選項中的新聞報導，何者符合精確客觀，儘可能避免推論的報導原則？
+    note: 「一親芳澤」誤植為「一眼芳澤」
+    by: review
+    extraction: true
 - id: doc_113_台中_大甲_國文_g8s2e2_s4_27
   section: 4
   number: 27
   type: single
   page: 3
-  stem: 孔子曾在《論語》章節目述：「沽之哉！沽之哉！我待賈者也！」下列選項何者與其涵義相近？
+  stem: 孔子曾在《論語》章節自述：「沽之哉！沽之哉！我待賈者也！」下列選項何者與其涵義相近？（原卷有誤，已修正）
   options:
   - label: A
     content: 君子居必擇鄉，遊必就士
@@ -1658,6 +1676,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 孔子曾在《論語》章節目述
+    to: 孔子曾在《論語》章節自述
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「孔子曾在《論語》章節目述」→「孔子曾在《論語》章節自述」
+    by: review
 - id: doc_113_台中_大甲_國文_g8s2e2_s4_28
   section: 4
   number: 28

@@ -568,7 +568,7 @@ questions:
   number: 36
   type: single
   page: 2
-  stem: '36. ( )A :. Why didn''t you come to the party yesterday?
+  stem: '36. ( )A : Why didn''t you come to the party yesterday?
 
     B : I couldn''t join you ______ the big test today.'
   options:
@@ -599,6 +599,16 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '36. ( )A :. Why didn''t you come to the party yesterday?
+
+      B : I couldn''t join you ______ the big test today.'
+    to: '36. ( )A : Why didn''t you come to the party yesterday?
+
+      B : I couldn''t join you ______ the big test today.'
+    note: A 冒號後多了一個句號
+    by: review
+    extraction: true
 - id: doc_113_台中_中科_英語_g8s1e1_s5_37
   section: 5
   number: 37
@@ -784,15 +794,7 @@ questions:
   page: 2
   stem: '42. ( )Jack : How was your weekend?
 
-    Nina : Great.
-
-    (A) What else did you do?
-
-    (B) We''re going to Lukang now. Can you join us?
-
-    (C) I played a lot of computer games with my brother.
-
-    (D) My friends and I camped by the lake, but it wasn''t any fun.'
+    Nina : Great.'
   options:
   - label: A
     content: What else did you do?
@@ -821,6 +823,24 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '42. ( )Jack : How was your weekend?
+
+      Nina : Great.
+
+      (A) What else did you do?
+
+      (B) We''re going to Lukang now. Can you join us?
+
+      (C) I played a lot of computer games with my brother.
+
+      (D) My friends and I c'
+    to: '42. ( )Jack : How was your weekend?
+
+      Nina : Great.'
+    note: 選項 (A) 至 (D) 重複擷取了一次
+    by: review
+    extraction: true
 - id: doc_113_台中_中科_英語_g8s1e1_s6_43
   section: 6
   number: 43

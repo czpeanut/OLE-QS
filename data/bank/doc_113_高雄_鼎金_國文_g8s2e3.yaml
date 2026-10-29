@@ -269,8 +269,23 @@ questions:
   number: 1
   type: fill
   page: 1
-  stem: 悠悠：
-  group_stem: 二、解釋
+  stem: 悠悠：（原卷有誤，已修正）
+  group_stem: '參考答案：
+
+    ＊悠哉的樣子 ＊形容心情鬱結，面帶憂愁 ＊指漂亮美麗的風景(10%，每題1分)：請將答案書寫於答案卷上
+
+
+    參考答案：
+
+    ＊悠哉的樣子　＊形容心情鬱結，面帶憂愁　＊指漂亮美麗的風景　＊傾倒側翻
+
+    ＊開拓發展　＊沒有條理　＊形容奇特怪異、變化無定　＊因天氣寒冷而凍僵
+
+    ＊占據　＊不需要向外尋求　＊偏斜，此指酒壺傾斜的樣子　＊奇異、怪異
+
+    ＊斷裂　＊指四季的美好景色　＊光陰即逝，年歲將近　＊亂
+
+    ＊支付　＊長遠的樣子　＊沒有請假就跑出去　＊對人冷淡的樣子'
   tags:
     chapter:
       publisher: 翰林
@@ -287,6 +302,13 @@ questions:
     gemini_high: 漫長久遠的樣子
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: 悠悠：
+    to: 悠悠：（原卷有誤，已修正）
+    note: '複核：原卷確實這樣印，可能是原卷錯字：「二、解釋」→「參考答案：
+
+      ＊悠哉的樣子 ＊形容心情鬱結，面帶憂愁 ＊指漂亮美麗的風景」'
+    by: review
 - id: doc_113_高雄_鼎金_國文_g8s2e3_s2_2
   section: 2
   number: 2
@@ -499,7 +521,7 @@ questions:
   number: 1
   type: fill
   page: 1
-  stem: 君家何處住？(       )橫塘。停船暫借問，或恐是同鄉。 〈 長干行 崔顥 〉
+  stem: 君家何處住？(　　)橫塘。停船暫借問，或恐是同鄉。 〈<u>長干行</u> <u>崔顥</u>〉
   lesson_raw:
     title: 長干行
     basis: 題目引自崔顥〈長干行〉
@@ -521,6 +543,20 @@ questions:
   - 妾住在
   answer_status: ai_generated
   answer_source: ai:majority
+  group_stem: '三、詩句填充(8%，每題 1 分)：請將答案書寫於答案卷上
+
+
+    參考選項：
+
+    雙垂淚　　聖人　　幽愁　　泉流　　妾生在　　秋雁　　青天　　聖賢　　妾住在
+
+    君莫停　　流泉　　晴天　　憂愁　　杯莫停　　泉水　　秋月　　秋燕　　雙淚垂'
+  errata:
+  - from: 君家何處住？(       )橫塘。停船暫借問，或恐是同鄉。 〈 長干行 崔顥 〉
+    to: 君家何處住？(　　)橫塘。停船暫借問，或恐是同鄉。 〈<u>長干行</u> <u>崔顥</u>〉
+    note: 大題上方漏擷取共用的「參考選項」
+    by: review
+    extraction: true
 - id: doc_113_高雄_鼎金_國文_g8s2e3_s3_2
   section: 3
   number: 2
@@ -1846,7 +1882,7 @@ questions:
   number: 34
   type: single
   page: 6
-  stem: 讀了這篇文章後，幸敏覺得很有趣，但不了解文章中「揖」的字義，請問：若想查找「揖」的字義，幸敏找錯了哪一本工具書？
+  stem: 讀了這篇文章後，幸敏覺得很有趣，但不了解文章中「楫」的字義，請問：若想查找「楫」的字義，幸敏找錯了哪一本工具書？
   options:
   - label: A
     content: 重編國語辭典
@@ -1876,6 +1912,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 讀了這篇文章後，幸敏覺得很有趣，但不了解文章中「揖」的字義，請問：若想查找「揖」的字義，幸敏找錯了哪一本工具書？
+    to: 讀了這篇文章後，幸敏覺得很有趣，但不了解文章中「楫」的字義，請問：若想查找「楫」的字義，幸敏找錯了哪一本工具書？
+    note: 原文為舟楫，誤植為揖：「幸敏覺得很有趣，但不了解文章中「揖」的字義」→「幸敏覺得很有趣，但不了解文章中「楫」的字義」
+    by: review
+    extraction: true
 - id: doc_113_高雄_鼎金_國文_g8s2e3_s5_35
   section: 5
   number: 35

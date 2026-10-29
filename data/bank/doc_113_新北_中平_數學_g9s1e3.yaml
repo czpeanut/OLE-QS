@@ -417,7 +417,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 如圖，G 點為 $\triangle ABC$ 的重心，H 點在 $\overline{AD}$ 上，且 $\overline{GD}=\overline{DH}$，則下列何者的面積不等於
+  stem: 如圖，G 點為 $\triangle ABC$ 的重心，H 點在 $\overleftrightarrow{AD}$ 上，且 $\overline{GD}=\overline{DH}$，則下列何者的面積不等於
     $\triangle ABC$ 面積的二分之一？
   options:
   - label: A
@@ -462,6 +462,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖，G 點為 $\triangle ABC$ 的重心，H 點在 $\overline{AD}$ 上，且 $\overline{GD}=\overline{DH}$，則下列何者的面積不等於
+      $\triangle ABC$ 面積的二分之一？
+    to: 如圖，G 點為 $\triangle ABC$ 的重心，H 點在 $\overleftrightarrow{AD}$ 上，且 $\overline{GD}=\overline{DH}$，則下列何者的面積不等於
+      $\triangle ABC$ 面積的二分之一？
+    note: 原卷為直線AD（雙向箭頭），擷取誤作線段AD
+    by: review
+    extraction: true
 - id: doc_113_新北_中平_數學_g9s1e3_s1_11
   section: 1
   number: 11

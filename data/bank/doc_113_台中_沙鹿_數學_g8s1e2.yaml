@@ -684,8 +684,7 @@ questions:
   number: 10
   type: fill
   page: 2
-  stem: 化簡 $(-2\sqrt{3}+\sqrt{15})\div\sqrt{12}+4\sqrt{2}(\frac{1}{\sqrt{2}}-2\sqrt{2}-\sqrt{10})^2
-    =$ ＿＿＿＿＿ (化為最簡根式)
+  stem: 化簡 $(-2\sqrt{3}+\sqrt{15})\div\sqrt{12}+(2\sqrt{2}-\sqrt{10})^2 =$ ＿＿＿＿＿ (化為最簡根式)
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -705,6 +704,13 @@ questions:
   - -1+\frac{\sqrt{5}}{2}+58\sqrt{2}+24\sqrt{10}
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 化簡 $(-2\sqrt{3}+\sqrt{15})\div\sqrt{12}+4\sqrt{2}(\frac{1}{\sqrt{2}}-2\sqrt{2}-\sqrt{10})^2
+      =$ ＿＿＿＿＿ (化為最簡根式)
+    to: 化簡 $(-2\sqrt{3}+\sqrt{15})\div\sqrt{12}+(2\sqrt{2}-\sqrt{10})^2 =$ ＿＿＿＿＿ (化為最簡根式)
+    note: 多出4√2(1/√2等錯誤式子，原卷為+(2√2-√10)^2
+    by: review
+    extraction: true
 - id: doc_113_台中_沙鹿_數學_g8s1e2_s2_11
   section: 2
   number: 11

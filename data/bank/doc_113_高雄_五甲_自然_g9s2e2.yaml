@@ -181,7 +181,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 一載流導線垂直通過水平放置的紙板，如圖所示，紙板上的 a、b、c、d 四點與導線距離相等，將一磁針先放置在 a 點，再移動至其他位置，根據圖中所述磁針偏轉情形，磁針最可能移動至下列哪一位置？
+  stem: 一載流導線垂直通過水平放置的紙板，如圖所示，紙板上的 a、b、c、d 四點與導線距離相等，將一磁針先放置在 a 點，再移動至其他位置，根據圖中所示磁針偏轉情形，磁針最可能移動至下列哪一位置？
   options:
   - label: A
     content: c 點的南方
@@ -227,6 +227,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 一載流導線垂直通過水平放置的紙板，如圖所示，紙板上的 a、b、c、d 四點與導線距離相等，將一磁針先放置在 a 點，再移動至其他位置，根據圖中所述磁針偏轉情形，磁針最可能移動至下列哪一位置？
+    to: 一載流導線垂直通過水平放置的紙板，如圖所示，紙板上的 a、b、c、d 四點與導線距離相等，將一磁針先放置在 a 點，再移動至其他位置，根據圖中所示磁針偏轉情形，磁針最可能移動至下列哪一位置？
+    note: 「所示」誤植為「所述」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g9s2e2_s1_5
   section: 1
   number: 5
@@ -1194,7 +1200,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 附圖分別為在鑰匙上鍍銅和鋅銅電池的裝置示意圖。已知圖中的 $\Rightarrow$ 和 $\Rightarrow$ ，其中一個代表電子流動方向，另一個代表電流流動方向。依據圖中資訊判斷，鋅銅電池中乙電極進行的反應，應為下列何者？
+  stem: 附圖分別為在鑰匙上鍍銅和鋅銅電池的裝置示意圖。已知圖中的 $\blacktriangleright$ 和 $\Rightarrow$ ，其中一個代表電子流動方向，另一個代表電流流動方向。依據圖中資訊判斷，鋅銅電池中乙電極進行的反應，應為下列何者？
   options:
   - label: A
     content: $\mathrm{Zn} \rightarrow \mathrm{Zn}^{2+} + 2\mathrm{e}^{-}$
@@ -1241,6 +1247,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 附圖分別為在鑰匙上鍍銅和鋅銅電池的裝置示意圖。已知圖中的 $\Rightarrow$ 和 $\Rightarrow$ ，其中一個代表電子流動方向，另一個代表電流流動方向。依據圖中資訊判斷，鋅銅電池中乙電極進行的反應，應為下列何者？
+    to: 附圖分別為在鑰匙上鍍銅和鋅銅電池的裝置示意圖。已知圖中的 $\blacktriangleright$ 和 $\Rightarrow$ ，其中一個代表電子流動方向，另一個代表電流流動方向。依據圖中資訊判斷，鋅銅電池中乙電極進行的反應，應為下列何者？
+    note: 原卷為黑實心與白空心箭頭，被轉成相同符號無法區分
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g9s2e2_s1_19
   section: 1
   number: 19

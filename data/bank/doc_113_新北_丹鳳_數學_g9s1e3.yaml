@@ -669,8 +669,8 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 如圖十二，$\triangle ABC$ 中，三中線 $\overline{AD}$、$\overline{BE}$、$\overline{CF}$
-    交於 $G$ 點，$H$ 點在直線 $CF$ 上，且 $\overline{CG}=\overline{GH}$。若四邊形 $AHBG$ 的面積為 48，則
+  stem: 如圖十二，$\triangle ABC$ 中，三中線 $\overline{AD}$、$\overline{BE}$、$\overline{CF}G$
+    點，$H$ 點在 $\overline{CF}$ 上，且 $\overline{CG}=\overline{GH}$。若四邊形 $AHBG$ 的面積為 48，則
     $\triangle ABC$ 的面積為多少？
   options:
   - label: A
@@ -715,6 +715,16 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 如圖十二，$\triangle ABC$ 中，三中線 $\overline{AD}$、$\overline{BE}$、$\overline{CF}$
+      交於 $G$ 點，$H$ 點在直線 $CF$ 上，且 $\overline{CG}=\overline{GH}$。若四邊形 $AHBG$ 的面積為 48，則
+      $\triangle ABC$ 的面積為多少？
+    to: 如圖十二，$\triangle ABC$ 中，三中線 $\overline{AD}$、$\overline{BE}$、$\overline{CF}G$
+      點，$H$ 點在 $\overline{CF}$ 上，且 $\overline{CG}=\overline{GH}$。若四邊形 $AHBG$ 的面積為
+      48，則 $\triangle ABC$ 的面積為多少？
+    note: 原卷漏印「交於」，擷取自行補上「交於」二字
+    by: review
+    extraction: true
 - id: doc_113_新北_丹鳳_數學_g9s1e3_s1_18
   section: 1
   number: 18

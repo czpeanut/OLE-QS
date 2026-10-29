@@ -455,7 +455,7 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: Of course,there is        in the refrigerator.
+  stem: Of course,there is        in the refrigerator.（原卷有誤，已修正）
   options:
   - label: A
     content: nothing being stinky
@@ -464,7 +464,7 @@ questions:
   - label: C
     content: stinky nothing
   - label: D
-    content: stinky 0f nothing
+    content: stinky of nothing
   ai_answers:
     gemini: B
     qwen: B
@@ -482,6 +482,11 @@ questions:
       chapter: B4 八下
     textbook: 八下 英語 不定代名詞（one/each/some/many/most/both/all + of）
     labeled_by: ai
+  errata:
+  - from: (D) stinky 0f nothing
+    to: (D) stinky of nothing
+    note: of誤印為數字0f：「(D) stinky 0f nothing」→「(D) stinky of nothing」
+    by: review
 - id: doc_113_高雄_鼎金_英語_g8s2e3_s2_15
   section: 2
   number: 15
@@ -520,7 +525,7 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: of the girls here is Amy’s friend.They are also classmates.
+  stem: ______ of the girls here is Amy’s friend.They are also classmates.
   options:
   - label: A
     content: One
@@ -547,6 +552,12 @@ questions:
       chapter: B4 八下
     textbook: 八下 英語 不定代名詞（one/each/some/many/most/both/all + of）
     labeled_by: ai
+  errata:
+  - from: of the girls here is Amy’s friend.They are also classmates.
+    to: ______ of the girls here is Amy’s friend.They are also classmates.
+    note: 題幹開頭漏掉填空底線
+    by: review
+    extraction: true
 - id: doc_113_高雄_鼎金_英語_g8s2e3_s2_17
   section: 2
   number: 17
@@ -584,7 +595,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: James is busy,       he picks up trash on the beach on weekends.
+  stem: <u>　　</u> James is busy, <u>　　</u> he picks up trash on the beach on weekends.
   options:
   - label: A
     content: If;but
@@ -611,6 +622,12 @@ questions:
       chapter: B2 七下
     textbook: 八下 英語 連接詞 because/so + Why問句
     labeled_by: ai
+  errata:
+  - from: James is busy,       he picks up trash on the beach on weekends.
+    to: <u>　　</u> James is busy, <u>　　</u> he picks up trash on the beach on weekends.
+    note: 題幹開頭漏掉填空底線
+    by: review
+    extraction: true
 - id: doc_113_高雄_鼎金_英語_g8s2e3_s2_19
   section: 2
   number: 19
@@ -648,7 +665,7 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: girls like spiders(蜘蛛).They are scary to them.
+  stem: ______ girls like spiders(蜘蛛).They are scary to them.
   options:
   - label: A
     content: Few
@@ -675,6 +692,12 @@ questions:
       chapter: B2 七下
     textbook: 八下 英語 可數/不可數名詞 + 數量形容詞（many/much/a few/a little/some/any）
     labeled_by: ai
+  errata:
+  - from: girls like spiders(蜘蛛).They are scary to them.
+    to: ______ girls like spiders(蜘蛛).They are scary to them.
+    note: 題幹開頭漏掉填空底線
+    by: review
+    extraction: true
 - id: doc_113_高雄_鼎金_英語_g8s2e3_s3_21
   section: 3
   number: 21

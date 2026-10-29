@@ -155,7 +155,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 「他不過是個□□□□的莽夫,什麼事都想用蠻力解決。」上句中的□□□□應填入哪一個成語?
+  stem: 「他不過是個的□□□□莽夫，什麼事都想用蠻力解決。」上句中的□□□□應填入哪一個成語？
   options:
   - label: A
     content: 暴虎馮河
@@ -182,6 +182,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「他不過是個□□□□的莽夫,什麼事都想用蠻力解決。」上句中的□□□□應填入哪一個成語?
+    to: 「他不過是個的□□□□莽夫，什麼事都想用蠻力解決。」上句中的□□□□應填入哪一個成語？
+    note: 原卷「的」在空格前，擷取移至空格後
+    by: review
+    extraction: true
 - id: doc_113_台中_四育_國文_g9s2e1_s2_6
   section: 2
   number: 6
@@ -1633,7 +1639,7 @@ questions:
   - label: C
     content: 勾勒出生活艱困卻依然熱情的人物形象
   - label: D
-    content: 點出農村小孩為協助家計而無法上學的無奈。
+    content: 出農村小孩為協助家計而無法上學的無奈。
   group_stem: '(三)請閱讀下文,回答第 42~43 題:
 
     黃昏,往北港的縣道旁
@@ -1688,6 +1694,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據本詩,下列敘述何者正確?
+    to: 根據本詩,下列敘述何者正確?
+    note: 原卷作「出農村」，擷取多「點」字
+    by: review
+    extraction: true
 - id: doc_113_台中_四育_國文_g9s2e1_s3_44
   section: 3
   number: 44

@@ -1240,7 +1240,7 @@ questions:
     content: A bank is in the south of a supermarket.
   - label: D
     content: A hospital is in the east of some parking spaces.
-  group_stem: ''
+  group_stem: (五)(49-51)
   shared_asset: g2_49_51
   ai_answers:
     gemini: A
@@ -1258,6 +1258,12 @@ questions:
       chapter: 綜合
     textbook: 八上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: Which is true about the map?
+    to: Which is true about the map?
+    note: 原卷為題組(五)(49-51)共用地圖，漏題組說明且誤拆為單選
+    by: review
+    extraction: true
 - id: doc_113_高雄_龍華_英語_g8s1e3_s2_50
   section: 2
   number: 50
@@ -1562,7 +1568,7 @@ shared_assets:
 - key: g2_49_51
   label: 題組附圖
   kind: figure
-  file: doc_113_高雄_龍華_英語_g8s1e3/g2_49_51_f1.png
+  file: doc_113_高雄_龍華_英語_g8s1e3/s2_49_r10290726_1.png
   used_by:
   - doc_113_高雄_龍華_英語_g8s1e3_s2_49
   - doc_113_高雄_龍華_英語_g8s1e3_s2_50
@@ -1570,13 +1576,8 @@ shared_assets:
   crop:
     page: 6
     rect:
-    - 39.53
-    - 201.65
-    - 689.43
-    - 579.75
-    auto_from:
-    - 38.26
-    - 198.27
-    - 690.38
-    - 579.86
+    - 36.8
+    - 200.34
+    - 691.11
+    - 581.92
   crop_by: auto

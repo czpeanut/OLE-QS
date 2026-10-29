@@ -389,7 +389,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 關於軟流圈的敘述, 下列何者錯誤?
+  stem: 關於軟流圈的敘述, 下列何者錯誤?（原卷有誤，已修正）
   options:
   - label: A
     content: 軟流圈為橄欖岩組成
@@ -399,7 +399,7 @@ questions:
     content: 軟流圈為可流動的液態
   - label: D
     content: 軟流圈深度大約從 100 公里至 250 公里深
-  group_stem: 【題組】右圖直線為軟流圈構造, 請依右圖回答 10-13 題。
+  group_stem: 【題組】右圖剖面為軟流圈構造, 請依右圖回答 10-13 題。
   shared_asset: g1_10_13
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -420,6 +420,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 右圖直線為軟流圈構造, 請依右圖回答 10-13 題
+    to: 右圖剖面為軟流圈構造，請依右圖回答 10-13 題
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「右圖直線為軟流圈構造, 請依右圖回答 10-13 題」→「右圖剖面為軟流圈構造，請依右圖回答 10-13
+      題」
+    by: review
 - id: doc_112_桃園_文昌_自然_g9s1e2_s1_11
   section: 1
   number: 11
@@ -435,7 +441,7 @@ questions:
     content: 丙
   - label: D
     content: 無法判斷
-  group_stem: 【題組】右圖直線為軟流圈構造, 請依右圖回答 10-13 題。
+  group_stem: 【題組】右圖剖面為軟流圈構造, 請依右圖回答 10-13 題。
   shared_asset: g1_10_13
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -471,7 +477,7 @@ questions:
     content: 海洋地殼
   - label: D
     content: 大陸地殼和海洋地殼
-  group_stem: 【題組】右圖直線為軟流圈構造, 請依右圖回答 10-13 題。
+  group_stem: 【題組】右圖剖面為軟流圈構造, 請依右圖回答 10-13 題。
   shared_asset: g1_10_13
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -497,7 +503,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: '請問關於圖中「戊地」的描述, 哪一個選項描述完全正確?
+  stem: '請問關於圖中「戊地」的描述，哪一個選項描述完全正確？
 
 
     | | (A) | (B) | (C) | (D) |
@@ -518,7 +524,7 @@ questions:
     content: 如表 (C)
   - label: D
     content: 如表 (D)
-  group_stem: 【題組】右圖直線為軟流圈構造, 請依右圖回答 10-13 題。
+  group_stem: 【題組】右圖直線為軟流圈構造，請依右圖回答 10-13 題。
   shared_asset: g1_10_13
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -539,6 +545,34 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '請問關於圖中「戊地」的描述, 哪一個選項描述完全正確?
+
+
+      | | (A) | (B) | (C) | (D) |
+
+      | :--- | :--- | :--- | :--- | :--- |
+
+      | 名稱 | 中洋脊 | 中洋脊 | 海溝 | 火山島弧 |
+
+      | 岩石種類 | 安山岩 | 玄武岩 | 安山岩 | 玄武岩 |
+
+      | 地震類型 | 淺源地震為主 | 淺源地震為主 | 淺中深層地震皆有 | 淺中深層'
+    to: '請問關於圖中「戊地」的描述，哪一個選項描述完全正確？
+
+
+      | | (A) | (B) | (C) | (D) |
+
+      | :--- | :--- | :--- | :--- | :--- |
+
+      | 名稱 | 中洋脊 | 中洋脊 | 海溝 | 火山島弧 |
+
+      | 岩石種類 | 安山岩 | 玄武岩 | 安山岩 | 玄武岩 |
+
+      | 地震類型 | 淺源地震為主 | 淺源地震為主 | 淺中深層地震皆有 | 淺中深層地'
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「請問關於圖中「戊地」的描述」→「請問關於圖中「戊」的描述」
+    by: review
+    extraction: true
 - id: doc_112_桃園_文昌_自然_g9s1e2_s2_14
   section: 2
   number: 14

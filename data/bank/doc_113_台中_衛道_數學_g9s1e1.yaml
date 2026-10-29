@@ -355,7 +355,7 @@ questions:
   stem: 請判斷下列敘述何者正確？
   options:
   - label: A
-    content: 兩個內角均為 120° 的六邊形一定相似
+    content: 各個內角均為 120° 的六邊形一定相似
   - label: B
     content: $\triangle ABC$ 中，$D$、$E$、$F$ 分別為 $\overline{AB}$、$\overline{BC}$、$\overline{AC}$
       的中點，則 $\triangle DEF$ 周長＝$\frac{1}{2}\triangle ABC$ 周長
@@ -385,6 +385,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 請判斷下列敘述何者正確？
+    to: 請判斷下列敘述何者正確？
+    note: 「各個」誤植為「兩個」
+    by: review
+    extraction: true
 - id: doc_113_台中_衛道_數學_g9s1e1_s1_8
   section: 1
   number: 8

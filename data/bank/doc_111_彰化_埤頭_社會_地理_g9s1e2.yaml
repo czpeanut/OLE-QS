@@ -157,7 +157,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 附圖為某國以該國著名的景觀為主題所發行的郵票。這些郵票的發行國最所有可能下列哪項特色？
+  stem: 附圖為某國以該國著名的景觀為主題所發行的郵票。這些郵票的發行國最有可能有下列哪項特色？
   options:
   - label: A
     content: 如國產賓士車一樣搶眼的工業成就
@@ -196,6 +196,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 附圖為某國以該國著名的景觀為主題所發行的郵票。這些郵票的發行國最所有可能下列哪項特色？
+    to: 附圖為某國以該國著名的景觀為主題所發行的郵票。這些郵票的發行國最有可能有下列哪項特色？
+    note: 「最有可能有」誤植為「最所有可能」
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_地理_g9s1e2_s1_5
   section: 1
   number: 5
@@ -1031,7 +1037,7 @@ questions:
     content: 己
   - label: D
     content: 辛。
-  group_stem: 根據歐洲國家分布代號回答23-24 題：
+  group_stem: 根據歐洲國家分布代號回答 23-24 題：
   shared_asset: g1_23_24
   tags:
     chapter:
@@ -1066,7 +1072,7 @@ questions:
     content: 己
   - label: D
     content: 癸。
-  group_stem: 根據歐洲國家分布代號回答23-24 題：
+  group_stem: 根據歐洲國家分布代號回答 23-24 題：
   shared_asset: g1_23_24
   tags:
     chapter:
@@ -1091,6 +1097,11 @@ questions:
     to: (D) 癸。
     note: 圖中代號為癸，選項誤印為葵
     by: ai_review
+  - from: 本身蘊藏鐵礦與鄰國交換煤礦，發展鋼鐵、汽車、高鐵、航空等工業，另以服裝設計、化妝品等時尚產業行銷各國，上述最有可能位於附圖中何處？（原卷有誤，已修正）
+    to: 本身蘊藏鐵礦與鄰國交換煤礦，發展鋼鐵、汽車、高鐵、航空等工業，另以服裝設計、化妝品等時尚產業行銷各國，上述最有可能位於附圖中何處？（原卷有誤，已修正）
+    note: ''
+    by: review
+    extraction: true
 - id: doc_111_彰化_埤頭_社會_地理_g9s1e2_s1_25
   section: 1
   number: 25
@@ -1420,17 +1431,17 @@ shared_assets:
 - key: g1_23_24
   label: 題組附圖
   kind: figure
-  file: doc_111_彰化_埤頭_社會_地理_g9s1e2/g1_23_24_f1.png
+  file: doc_111_彰化_埤頭_社會_地理_g9s1e2/s1_24_r10290737_1.png
   used_by:
   - doc_111_彰化_埤頭_社會_地理_g9s1e2_s1_23
   - doc_111_彰化_埤頭_社會_地理_g9s1e2_s1_24
   crop:
-    page: 1
+    page: 2
     rect:
-    - 578.95
-    - 52.36
-    - 727.85
-    - 200.95
+    - 375.62
+    - 133.26
+    - 521.33
+    - 283.67
 - key: g1_25_28
   label: 題組附圖
   kind: figure

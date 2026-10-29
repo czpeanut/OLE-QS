@@ -707,12 +707,12 @@ questions:
   - label: D
     content: Tomb Sweeping Day.
   group_stem: 'People from different countries see death in different ways. In Taiwan,
-    we seldom talk about it, even on Tomb Sweeping Day, often on April 4th or 5th
-    of the calendar. People in Taiwan go to graveyards to clean their family members’
-    tombs and prepare lots of food for the dead to show their respect and love. In
-    Mexico, people there celebrate the Day of the Dead with joy. During the festival,
-    people there also sweep tombs, but they remember their dead relatives in a lively
-    way.
+    we seldom talk about <u>it</u>, even on Tomb Sweeping Day, often on April 4th
+    or 5th of the calendar. People in Taiwan go to graveyards to clean their family
+    members’ tombs and prepare lots of food for the dead to show their respect and
+    love. In Mexico, people there celebrate the Day of the Dead with joy. During the
+    festival, people there also sweep tombs, but <u>they remember their dead relatives
+    in a lively way</u>.
 
     Two years ago, I visited my friend, Rosa, in Mexico. I was there for the Day of
     the Dead on November first and second. We invited the spirits of her departed
@@ -750,8 +750,10 @@ questions:
   number: 4
   type: single
   page: 3
-  stem: 4. Which following is the example of “…remember their dead relatives in a
-    lively way…” ?
+  stem: 'Which following is the example of “…remember their dead relatives in a lively
+    way…” ?
+
+    pray 祈禱'
   options:
   - label: A
     content: Lisa cooks lots of food for her dead relatives.
@@ -762,12 +764,12 @@ questions:
   - label: D
     content: Kelly wears special clothes to join a party for the departed ancestors.
   group_stem: 'People from different countries see death in different ways. In Taiwan,
-    we seldom talk about it, even on Tomb Sweeping Day, often on April 4th or 5th
-    of the calendar. People in Taiwan go to graveyards to clean their family members’
-    tombs and prepare lots of food for the dead to show their respect and love. In
-    Mexico, people there celebrate the Day of the Dead with joy. During the festival,
-    people there also sweep tombs, but they remember their dead relatives in a lively
-    way.
+    we seldom talk about <u>it</u>, even on Tomb Sweeping Day, often on April 4th
+    or 5th of the calendar. People in Taiwan go to graveyards to clean their family
+    members’ tombs and prepare lots of food for the dead to show their respect and
+    love. In Mexico, people there celebrate the Day of the Dead with joy. During the
+    festival, people there also sweep tombs, but <u>they remember their dead relatives
+    in a lively way</u>.
 
     Two years ago, I visited my friend, Rosa, in Mexico. I was there for the Day of
     the Dead on November first and second. We invited the spirits of her departed
@@ -800,6 +802,16 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 4. Which following is the example of “…remember their dead relatives in
+      a lively way…” ?
+    to: 'Which following is the example of “…remember their dead relatives in a lively
+      way…” ?
+
+      pray 祈禱'
+    note: 漏了生詞注釋「pray 祈禱」
+    by: review
+    extraction: true
 - id: doc_111_高雄_大灣_英語_g8s2e1_s4_5
   section: 4
   number: 5
@@ -816,12 +828,12 @@ questions:
   - label: D
     content: The writer’s trip in Mexico.
   group_stem: 'People from different countries see death in different ways. In Taiwan,
-    we seldom talk about it, even on Tomb Sweeping Day, often on April 4th or 5th
-    of the calendar. People in Taiwan go to graveyards to clean their family members’
-    tombs and prepare lots of food for the dead to show their respect and love. In
-    Mexico, people there celebrate the Day of the Dead with joy. During the festival,
-    people there also sweep tombs, but they remember their dead relatives in a lively
-    way.
+    we seldom talk about <u>it</u>, even on Tomb Sweeping Day, often on April 4th
+    or 5th of the calendar. People in Taiwan go to graveyards to clean their family
+    members’ tombs and prepare lots of food for the dead to show their respect and
+    love. In Mexico, people there celebrate the Day of the Dead with joy. During the
+    festival, people there also sweep tombs, but <u>they remember their dead relatives
+    in a lively way</u>.
 
     Two years ago, I visited my friend, Rosa, in Mexico. I was there for the Day of
     the Dead on November first and second. We invited the spirits of her departed
@@ -870,12 +882,12 @@ questions:
   - label: D
     content: People in Taiwan sweep tombs on November first and second.
   group_stem: 'People from different countries see death in different ways. In Taiwan,
-    we seldom talk about it, even on Tomb Sweeping Day, often on April 4th or 5th
-    of the calendar. People in Taiwan go to graveyards to clean their family members’
-    tombs and prepare lots of food for the dead to show their respect and love. In
-    Mexico, people there celebrate the Day of the Dead with joy. During the festival,
-    people there also sweep tombs, but they remember their dead relatives in a lively
-    way.
+    we seldom talk about <u>it</u>, even on Tomb Sweeping Day, often on April 4th
+    or 5th of the calendar. People in Taiwan go to graveyards to clean their family
+    members’ tombs and prepare lots of food for the dead to show their respect and
+    love. In Mexico, people there celebrate the Day of the Dead with joy. During the
+    festival, people there also sweep tombs, but <u>they remember their dead relatives
+    in a lively way</u>.
 
     Two years ago, I visited my friend, Rosa, in Mexico. I was there for the Day of
     the Dead on November first and second. We invited the spirits of her departed
@@ -913,7 +925,7 @@ questions:
   number: 7
   type: single
   page: 3
-  stem: 7. What does the huge battery above probably look like?
+  stem: 7. What does the huge battery above probably look like? ✎huge 巨大的
   options:
   - label: A
     content: ''
@@ -1022,13 +1034,21 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 7. What does the huge battery above probably look like?
+    to: 7. What does the huge battery above probably look like? ✎huge 巨大的
+    note: 題幹漏了生詞注釋「huge 巨大的」
+    by: review
+    extraction: true
 - id: doc_111_高雄_大灣_英語_g8s2e1_s4_8
   section: 4
   number: 8
   type: single
   page: 3
-  stem: 8. Why did people in Switzerland want to build the huge battery according
+  stem: '8. Why did people in Switzerland want to build the huge battery according
     to the reading?
+
+    show off 炫耀 spot 景點'
   options:
   - label: A
     content: Because water energy wouldn’t produce pollution.
@@ -1073,6 +1093,16 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 8. Why did people in Switzerland want to build the huge battery according
+      to the reading?
+    to: '8. Why did people in Switzerland want to build the huge battery according
+      to the reading?
+
+      show off 炫耀 spot 景點'
+    note: 題幹漏了生詞注釋「show off 炫耀 spot 景點」
+    by: review
+    extraction: true
 - id: doc_111_高雄_大灣_英語_g8s2e1_s4_9
   section: 4
   number: 9
@@ -1238,7 +1268,7 @@ questions:
   number: 12
   type: single
   page: 4
-  stem: 12. What is better than sleeping late on weekends?
+  stem: What is better than sleeping late on weekends?  catching up on school 補課
   options:
   - label: A
     content: Taking short naps on weekdays.
@@ -1287,12 +1317,20 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 12. What is better than sleeping late on weekends?
+    to: What is better than sleeping late on weekends?  catching up on school 補課
+    note: 題幹漏了生詞注釋「catching up on school 補課」
+    by: review
+    extraction: true
 - id: doc_111_高雄_大灣_英語_g8s2e1_s4_13
   section: 4
   number: 13
   type: single
   page: 4
-  stem: 13. What is the main idea of this reading?
+  stem: '13. What is the main idea of this reading?
+
+    if 是否'
   options:
   - label: A
     content: Teenagers’ thought about the school starting time.
@@ -1342,6 +1380,14 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 13. What is the main idea of this reading?
+    to: '13. What is the main idea of this reading?
+
+      if 是否'
+    note: 題幹漏了生詞注釋「if 是否」
+    by: review
+    extraction: true
 - id: doc_111_高雄_大灣_英語_g8s2e1_s5_1
   section: 5
   number: 1

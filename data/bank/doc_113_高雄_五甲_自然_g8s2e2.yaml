@@ -233,7 +233,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 根據維基百科的資料顯示如下：「(一)<u>海洋因二氧化碳等非金屬氧化物的增加而酸化，影響海洋生態</u>，比如抑制洪堡烏賊的新陳代謝和淡菜的免疫反應及加速珊瑚白化。(二)海洋酸度增加還帶來了其他化學反應，如酸性離子增加，會減緩珊瑚蟲和浮游生物等海洋生物的成鈣過程，已經形成的鈣質也更容易溶解。」關於畫底線處內容的判斷，何者正確？
+  stem: 根據維基百科的資料顯示如下：「(一)<u>海洋因二氧化碳等非金屬氧化物的增加而酸化，影響海洋生態</u>，比如抑制洪堡烏賊的新陳代謝和淡菜的免疫反應及加速珊瑚白化。(二)<u>海洋酸度增加還帶來了其他化學反應，如酸性離子增加，會減緩珊瑚蟲和浮游生物等海洋生物的成鈣過程，已經形成的鈣質也更容易溶解。</u>」關於畫底線處內容的判斷，何者正確？
   options:
   - label: A
     content: (一)合理，海洋酸化讓海水 $\text{pH}$ 值增加
@@ -262,6 +262,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 根據維基百科的資料顯示如下：「(一)<u>海洋因二氧化碳等非金屬氧化物的增加而酸化，影響海洋生態</u>，比如抑制洪堡烏賊的新陳代謝和淡菜的免疫反應及加速珊瑚白化。(二)海洋酸度增加還帶來了其他化學反應，如酸性離子增加，會減緩珊瑚蟲和浮游生物等海洋生物的成鈣過程，已經形成的鈣質也更容易溶解。」關於畫底線處內容的判斷，何者正確？
+    to: 根據維基百科的資料顯示如下：「(一)<u>海洋因二氧化碳等非金屬氧化物的增加而酸化，影響海洋生態</u>，比如抑制洪堡烏賊的新陳代謝和淡菜的免疫反應及加速珊瑚白化。(二)<u>海洋酸度增加還帶來了其他化學反應，如酸性離子增加，會減緩珊瑚蟲和浮游生物等海洋生物的成鈣過程，已經形成的鈣質也更容易溶解。</u>」關於畫底線處內容的判斷，何者正確？
+    note: 原卷(二)整段有畫底線，擷取漏標底線
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g8s2e2_s1_8
   section: 1
   number: 8
@@ -1378,7 +1384,7 @@ questions:
   number: 4
   type: single
   page: 4
-  stem: (2)承小題，滴定管中應使用何種溶液？答：【 ④ 】。
+  stem: (2)承上題，滴定管中應使用何種溶液？答：【 ④ 】。
   options:
   - label: A
     content: 乙
@@ -1409,6 +1415,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (2)承小題，滴定管中應使用何種溶液？答：【 ④ 】。
+    to: (2)承上題，滴定管中應使用何種溶液？答：【 ④ 】。
+    note: 「承上題」誤植為「承小題」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g8s2e2_s2_5
   section: 2
   number: 5
@@ -1909,8 +1921,8 @@ questions:
   number: 16
   type: single
   page: 5
-  stem: (2)承小題，沛沛接著拔開橡皮塞，結果又看見氣泡從溶液中冒出，他推測是因為錐形瓶中的 $\text{CO}_{2}$ 散失，造成反應平衡被破壞，除此之外，沛沛還有其他推論如下，請判斷哪一項推論<u>不合理</u>？答：【
-    ⑯ 】。
+  stem: (2)承上題，沛沛接著拔開橡皮塞，結果又看見氣泡從溶液中冒出，他推測是因為錐形瓶中的 $\text{CO}_{2}$ 散失，造成反應平衡被破壞，除此之外，沛沛還有其他推論如下，請判斷哪一項推論<u>不合理</u>？答：【
+    ⑯ 】。（原卷有誤，已修正）
   options:
   - label: A
     content: 此時正反應速率大於逆反應速率
@@ -1946,12 +1958,17 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (2)承小題，沛沛接著拔開橡皮塞
+    to: (2)承上題，沛沛接著拔開橡皮塞
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(2)承小題，沛沛接著拔開橡皮塞」→「(2)承上題，沛沛接著拔開橡皮塞」
+    by: review
 - id: doc_113_高雄_五甲_自然_g8s2e2_s2_17
   section: 2
   number: 17
   type: fill
   page: 5
-  stem: 8. 已知溫度每升高 $10^\circ\text{C}$，反應速率就會變為原來的 $2$ 倍。今小哲取 $30^\circ\text{C}$、$0.1\text{M}$
+  stem: 8. 已知溫度每升高 $10^\circ\text{C}$，反應速率就會增為原來的 $2$ 倍。今小哲取 $30^\circ\text{C}$、$0.1\text{M}$
     的 $\text{Na}_{2}\text{S}_{2}\text{O}_{3}$ 溶液 $2\text{mL}$ 與錐形瓶中 $30^\circ\text{C}$、$1\text{M}$
     的 $\text{HCl}$ 溶液 $1\text{mL}$ 進行反應，發現經過 $152$ 秒後沉澱會將瓶底下所畫的圖案遮住。如欲縮短反應時間至 $19$
     秒內完成，則溶液的溫度需升至【 ⑰ 】$^\circ\text{C}$。
@@ -1974,6 +1991,16 @@ questions:
   - '60'
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 8. 已知溫度每升高 $10^\circ\text{C}$，反應速率就會變為原來的 $2$ 倍。今小哲取 $30^\circ\text{C}$、$0.1\text{M}$
+      的 $\text{Na}_{2}\text{S}_{2}\text{O}_{3}$ 溶液 $2\text{mL}$ 與錐形瓶中 $30^\circ\text{C}$、$1\text{M}$
+      的 $\text{HCl}$ 溶液 $
+    to: 8. 已知溫度每升高 $10^\circ\text{C}$，反應速率就會增為原來的 $2$ 倍。今小哲取 $30^\circ\text{C}$、$0.1\text{M}$
+      的 $\text{Na}_{2}\text{S}_{2}\text{O}_{3}$ 溶液 $2\text{mL}$ 與錐形瓶中 $30^\circ\text{C}$、$1\text{M}$
+      的 $\text{HCl}$ 溶液 $
+    note: 「增為」誤植為「變為」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_自然_g8s2e2_s2_18
   section: 2
   number: 18

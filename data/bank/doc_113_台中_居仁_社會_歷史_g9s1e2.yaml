@@ -891,7 +891,7 @@ questions:
   number: 27
   type: single
   page: 3
-  stem: 阿里巴巴是八世紀生活於巴格達的商人，請問他可能會由下列哪一種生活經驗？
+  stem: 阿里巴巴是八世紀生活於巴格達的商人，請問他可能會有下列哪一種生活經驗？
   options:
   - label: A
     content: 聽聞城內群眾熱烈討論造紙術的功用
@@ -900,7 +900,7 @@ questions:
   - label: C
     content: 在城內躲避西方基督教十字軍的進攻
   - label: D
-    content: 研讀翻譯成阿拉伯文的莎士比亞的作品《羅密歐與茱麗葉》︒
+    content: 研讀翻譯成阿拉伯文的莎士比亞的作品《羅密歐與茱麗葉》。
   tags:
     chapter:
       publisher: 翰林
@@ -918,6 +918,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 阿里巴巴是八世紀生活於巴格達的商人，請問他可能會由下列哪一種生活經驗？
+    to: 阿里巴巴是八世紀生活於巴格達的商人，請問他可能會有下列哪一種生活經驗？
+    note: 「會有」誤植為「會由」
+    by: review
+    extraction: true
 - id: doc_113_台中_居仁_社會_歷史_g9s1e2_s1_28
   section: 1
   number: 28

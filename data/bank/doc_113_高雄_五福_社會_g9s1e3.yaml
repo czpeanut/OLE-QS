@@ -1329,7 +1329,7 @@ questions:
   number: 33
   type: single
   page: 5
-  stem: 福斯汽車成立87年來，首度在德國關廠，員工相當不滿，發起萬人大罷工，工人示威遊行高舉「準備戰鬥」，請問畫線敘述與下列哪一項權利相同?
+  stem: 福斯汽車成立87年來，首度在德國關廠，員工相當不滿，發起萬人大罷工，<u>工人示威遊行高舉「準備戰鬥」</u>，請問畫線敘述與下列哪一項權利相同?
   options:
   - label: A
     content: 受教育的權利
@@ -1367,6 +1367,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 福斯汽車成立87年來，首度在德國關廠，員工相當不滿，發起萬人大罷工，工人示威遊行高舉「準備戰鬥」，請問畫線敘述與下列哪一項權利相同?
+    to: 福斯汽車成立87年來，首度在德國關廠，員工相當不滿，發起萬人大罷工，<u>工人示威遊行高舉「準備戰鬥」</u>，請問畫線敘述與下列哪一項權利相同?
+    note: 原卷此處有底線，擷取未標註畫線處，無從辨認
+    by: review
+    extraction: true
 - id: doc_113_高雄_五福_社會_g9s1e3_s1_34
   section: 1
   number: 34

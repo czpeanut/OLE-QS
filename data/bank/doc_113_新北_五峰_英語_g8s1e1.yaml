@@ -343,7 +343,8 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: Kevin went to South Africa the day before yesterday, he wasn’t home.
+  stem: _____ Kevin went to South Africa the day before yesterday, _____ he wasn’t
+    home.
   options:
   - label: A
     content: So; because
@@ -370,6 +371,13 @@ questions:
       chapter: B2 七下
     textbook: 八上 英語 連接詞 because/so + Why問句
     labeled_by: ai
+  errata:
+  - from: Kevin went to South Africa the day before yesterday, he wasn’t home.
+    to: _____ Kevin went to South Africa the day before yesterday, _____ he wasn’t
+      home.
+    note: 漏了句首與逗號後的兩處空格底線，無法辨識填空位置
+    by: review
+    extraction: true
 - id: doc_113_新北_五峰_英語_g8s1e1_s1_11
   section: 1
   number: 11
@@ -1212,7 +1220,7 @@ questions:
   number: 1
   type: essay
   page: 2
-  stem: 'Andy plays computer games every Sunday.
+  stem: 'Andy plays computer games <u>every Sunday</u>.
 
     ( 將畫線部分改成「昨天下午」，並改成否定句)'
   tags:
@@ -1225,12 +1233,22 @@ questions:
       chapter: B2 七下
     textbook: 八上 英語 過去式一般動詞（規則+不規則變化）+ Did問答
     labeled_by: ai
+  errata:
+  - from: 'Andy plays computer games every Sunday.
+
+      ( 將畫線部分改成「昨天下午」，並改成否定句)'
+    to: 'Andy plays computer games <u>every Sunday</u>.
+
+      ( 將畫線部分改成「昨天下午」，並改成否定句)'
+    note: 題目指示改畫線部分，但 every Sunday 漏標底線
+    by: review
+    extraction: true
 - id: doc_113_新北_五峰_英語_g8s1e1_s7_2
   section: 7
   number: 2
   type: essay
   page: 2
-  stem: 'Tom made the singer a cake.
+  stem: 'Tom made the singer <u>a cake</u>.
 
     ( 將畫線部分改成代名詞 )'
   tags:
@@ -1243,6 +1261,16 @@ questions:
       chapter: B3 八上
     textbook: 八上 英語 授與動詞（gave/sent/showed/wrote/made + 人 + 物）+ to/for
     labeled_by: ai
+  errata:
+  - from: 'Tom made the singer a cake.
+
+      ( 將畫線部分改成代名詞 )'
+    to: 'Tom made the singer <u>a cake</u>.
+
+      ( 將畫線部分改成代名詞 )'
+    note: 題目指示改畫線部分，但 a cake 漏標底線
+    by: review
+    extraction: true
 - id: doc_113_新北_五峰_英語_g8s1e1_s7_3
   section: 7
   number: 3

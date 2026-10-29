@@ -211,19 +211,7 @@ questions:
   number: 6
   type: fill
   page: 1
-  stem: '下列哪些選項為 $(x+3)(x-5)$ 和 $(x+4)(x-5)$ 的公因式？
-
-    (A) $x-5$
-
-    (B) $x+3$
-
-    (C) $x+4$
-
-    (D) $(x+3)(x-5)$
-
-    (E) $100$
-
-    (F) $\frac{1}{2}(x-5)$'
+  stem: 下列哪些選項為 $(x+3)(x-5)$ 和 $(x+4)(x-5)$ 的公因式？
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -244,6 +232,37 @@ questions:
   - AEF
   answer_status: ai_generated
   answer_source: ai:majority
+  options:
+  - label: A
+    content: $x-5$
+  - label: B
+    content: $x+3$
+  - label: C
+    content: $x+4$
+  - label: D
+    content: $(x+3)(x-5)$
+  - label: E
+    content: $100$
+  - label: F
+    content: $\frac{1}{2}(x-5)$
+  errata:
+  - from: '下列哪些選項為 $(x+3)(x-5)$ 和 $(x+4)(x-5)$ 的公因式？
+
+      (A) $x-5$
+
+      (B) $x+3$
+
+      (C) $x+4$
+
+      (D) $(x+3)(x-5)$
+
+      (E) $100$
+
+      (F) $\frac{1}{2}(x-5)$'
+    to: 下列哪些選項為 $(x+3)(x-5)$ 和 $(x+4)(x-5)$ 的公因式？
+    note: 本題提供選項且答案複選，題型應為多選題卻誤標為填充
+    by: review
+    extraction: true
 - id: doc_113_台中_居仁_數學_g8s1e2_s1_7
   section: 1
   number: 7

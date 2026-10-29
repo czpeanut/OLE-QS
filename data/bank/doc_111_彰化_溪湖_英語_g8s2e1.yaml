@@ -1196,7 +1196,7 @@ questions:
   number: 2
   type: essay
   page: 2
-  stem: 2. The music sounds wonderful. (依畫線部分造原問句)
+  stem: The music sounds <u>wonderful</u>. (依畫線部分造原問句)
   tags:
     textbook: 八下 英語 連綴動詞（look/sound/taste/smell/feel/become/get）
     labeled_by: ai
@@ -1207,6 +1207,12 @@ questions:
       code: B4-04
       title: 連綴動詞（look/sound/taste/smell/feel/become/get）
       chapter: B4 八下
+  errata:
+  - from: 2. The music sounds wonderful. (依畫線部分造原問句)
+    to: The music sounds <u>wonderful</u>. (依畫線部分造原問句)
+    note: 原卷wonderful有畫底線，擷取未標註畫線處
+    by: review
+    extraction: true
 - id: doc_111_彰化_溪湖_英語_g8s2e1_s5_3
   section: 5
   number: 3
@@ -1561,7 +1567,7 @@ questions:
   number: 2
   type: single
   page: 2
-  stem: 2. (    )
+  stem: 2. (    )（原卷有誤，已修正）
   options:
   - label: A
     content: swim in the dark.
@@ -1570,7 +1576,7 @@ questions:
   - label: C
     content: swim with other people around.
   - label: D
-    content: save a drowning perpon carefully.
+    content: save a drowning person carefully.
   group_stem: "1.   is great fun. However, many people drown every year.  \nTo keep\
     \ safe, here are some important water safety rules to \nknow.  \nFirst of all,\
     \ always   2.   When no one is with you, no one can \nsave you. Second, always\
@@ -1598,6 +1604,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: save a drowning perpon carefully.
+    to: save a drowning person carefully.
+    note: perpon拼錯，應為person：「save a drowning perpon carefully.」→「save a drowning person
+      carefully.」
+    by: review
 - id: doc_111_彰化_溪湖_英語_g8s2e1_s7_3
   section: 7
   number: 3
@@ -1687,7 +1699,7 @@ questions:
   number: 1
   type: single
   page: 3
-  stem: 1. (    ) What is Ask Dr. Wang mainly (主要地) about?
+  stem: 1. (    ) What is Ask Dr. Wang mainly (主要地) about?（原卷有誤，已修正）
   options:
   - label: A
     content: French fries and fried sweet potatoes.
@@ -1696,7 +1708,7 @@ questions:
   - label: C
     content: How to eat right.
   - label: D
-    content: To eat an agg every day for breakfast.
+    content: To eat an egg every day for breakfast.
   group_stem: "Do You Eat Right? \n                 Ask Dr. Wang \nQ \nDear Dr. Wang,\
     \ \nI love eating French fries because they taste so good. However, \nsome posts\
     \ I read on LINE say French fries are poisonous. Is the \nnews true? \n      \
@@ -1733,6 +1745,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: To eat an agg every day for breakfast.
+    to: To eat an egg every day for breakfast.
+    note: agg拼錯，應為egg：「To eat an agg every day for breakfast.」→「To eat an egg every
+      day for breakfast.」
+    by: review
 - id: doc_111_彰化_溪湖_英語_g8s2e1_s8_2
   section: 8
   number: 2

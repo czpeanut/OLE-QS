@@ -592,11 +592,11 @@ questions:
   - label: A
     content: talked ; saw
   - label: B
-    content: was talking ; was seeing
+    content: was talking ;  was seeing
   - label: C
-    content: talked ; was seeing
+    content: talked ;  was seeing
   - label: D
-    content: )was talking ; saw
+    content: was talking ;  saw
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   answer:
@@ -615,6 +615,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: Judy ____ with her Mom when I ____ her at the zoo last Saturday.
+    to: Judy ____ with her Mom when I ____ her at the zoo last Saturday.
+    note: 選項(D)內容開頭多出右括號
+    by: review
+    extraction: true
 - id: doc_112_彰化_福興_英語_g8s1e2_s3_7
   section: 3
   number: 7

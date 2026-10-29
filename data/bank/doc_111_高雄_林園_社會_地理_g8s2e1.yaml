@@ -204,7 +204,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 中南半島許多國家農業發達，是世界重要的稻米出口區。請問稻米主要生產在以下的那一種地形上，是當地的農業精華區？
+  stem: 中南半島許多國家農業發達，是世界重要的稻米出口區。請問稻米主要生產在以下的哪一種地形上，是當地的農業精華區？
   options:
   - label: A
     content: 沖積扇
@@ -230,6 +230,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: 中南半島許多國家農業發達，是世界重要的稻米出口區。請問稻米主要生產在以下的那一種地形上，是當地的農業精華區？
+    to: 中南半島許多國家農業發達，是世界重要的稻米出口區。請問稻米主要生產在以下的哪一種地形上，是當地的農業精華區？
+    note: 原卷為「哪一種」，擷取作「那一種」
+    by: review
+    extraction: true
 - id: doc_111_高雄_林園_社會_地理_g8s2e1_s1_7
   section: 1
   number: 7

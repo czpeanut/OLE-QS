@@ -30,7 +30,7 @@ questions:
     BAD=\angle CAE=90^{\circ}$，下面為證明 $\overline{BC}=\overline{DE}$ 的過程，其順序為何？
 
 
-    ① ∵ $\triangle BAC\cong\triangle DAE$ ( SAS 全等性質 )，
+    ① ∴ $\triangle BAC\cong\triangle DAE$ ( SAS 全等性質 )，
 
     ② 又 $\overline{AB}=\overline{AD}$，$\overline{AC}=\overline{AE}$，
 
@@ -82,6 +82,20 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '如圖，已知 $\overline{AB}=\overline{AD}$，$\overline{AC}=\overline{AE}$，$\angle
+      BAD=\angle CAE=90^{\circ}$，下面為證明 $\overline{BC}=\overline{DE}$ 的過程，其順序為何？
+
+
+      ① ∵ $\triangle BAC\cong\triangle DAE$ ( SAS 全等性質 )，'
+    to: '如圖，已知 $\overline{AB}=\overline{AD}$，$\overline{AC}=\overline{AE}$，$\angle
+      BAD=\angle CAE=90^{\circ}$，下面為證明 $\overline{BC}=\overline{DE}$ 的過程，其順序為何？
+
+
+      ① ∴ $\triangle BAC\cong\triangle DAE$ ( SAS 全等性質 )，'
+    note: 原卷為因此符號「∴」，擷取誤作「∵」
+    by: review
+    extraction: true
 - id: doc_113_新北_土城_數學_g9s1e3_s1_2
   section: 1
   number: 2

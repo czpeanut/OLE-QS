@@ -1393,16 +1393,16 @@ questions:
   number: 32
   type: single
   page: 4
-  stem: 已知氫原子的表達方式為 $_{1}^{1}\text{H}$，參考上表，下列原子的表達方式，何者正確？
+  stem: 已知氫原子的表達方式為 ${}_{1}^{1}\text{H}$，參考上表，下列原子的表達方式，何者正確？
   options:
   - label: A
-    content: 氘 $_{1}^{2}\text{H}$
+    content: 氘 ${}_{1}^{2}\text{H}$
   - label: B
-    content: 氚 $_{2}^{1}\text{H}$
+    content: 氚 ${}_{2}^{1}\text{H}$
   - label: C
-    content: 氦 $_{4}^{2}\text{H}$
+    content: 氦 ${}_{2}^{4}\text{H}$
   - label: D
-    content: 硼 $_{5}^{5}\text{B}$。
+    content: 硼 ${}_{5}^{5}\text{B}$。
   group_stem: '[閱讀 A]
 
     核分裂是運用中子撞擊原子核，使其由大原子核分裂成較小的原子核，此反應容易有放射性物質及連鎖反應失控的問題。而核融合是將兩個原子核（A 和 B）融合成一個比原來其中一個較重的新原子核（C），亦即
@@ -1444,6 +1444,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 已知氫原子的表達方式為 $_{1}^{1}\text{H}$，參考上表，下列原子的表達方式，何者正確？
+    to: 已知氫原子的表達方式為 ${}_{1}^{1}\text{H}$，參考上表，下列原子的表達方式，何者正確？
+    note: 質量數4在上標、原子序2在下標，擷取上下標顛倒
+    by: review
+    extraction: true
 - id: doc_113_基隆_銘傳_自然_g8s1e3_s2_33
   section: 2
   number: 33

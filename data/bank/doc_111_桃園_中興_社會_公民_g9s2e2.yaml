@@ -33,7 +33,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 依上述，各國多數投票通過要求俄羅斯從烏克蘭領土無條件撤出，文中***國際組織是下列何項組織？
+  stem: 依上文所述，各國多數投票通過要求俄羅斯從烏克蘭領土無條件撤出，文中***國際組織是下列何項組織？
   options:
   - label: A
     content: 聯合國
@@ -64,6 +64,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 依上述，各國多數投票通過要求俄羅斯從烏克蘭領土無條件撤出，文中***國際組織是下列何項組織？
+    to: 依上文所述，各國多數投票通過要求俄羅斯從烏克蘭領土無條件撤出，文中***國際組織是下列何項組織？
+    note: 原卷為「依上文所述」，漏了「文」字
+    by: review
+    extraction: true
 - id: doc_111_桃園_中興_社會_公民_g9s2e2_s1_2
   section: 1
   number: 2

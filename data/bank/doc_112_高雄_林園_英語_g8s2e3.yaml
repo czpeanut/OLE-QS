@@ -834,7 +834,9 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: （克漏字第26格）
+  stem: '（克漏字第26格）
+
+    valuable 有價值的'
   options:
   - label: A
     content: are the most valuable kinds
@@ -884,6 +886,14 @@ questions:
   ai_answers:
     gemini: C
     qwen: C
+  errata:
+  - from: （克漏字第26格）
+    to: '（克漏字第26格）
+
+      valuable 有價值的'
+    note: 選項A旁漏擷取單字註釋「valuable 有價值的」
+    by: review
+    extraction: true
 - id: doc_112_高雄_林園_英語_g8s2e3_s3_27
   section: 3
   number: 27
@@ -999,7 +1009,7 @@ questions:
   number: 29
   type: single
   page: 3
-  stem: What do squirrels love to do?
+  stem: What do squirrels love to do?（原卷有誤，已修正）
   options:
   - label: A
     content: Swim in the lake.
@@ -1009,7 +1019,7 @@ questions:
     content: Catch butterflies.
   - label: D
     content: Make a tree house.
-  group_stem: 'Squirrels in LinYuan Sinior High School
+  group_stem: 'Squirrels in LinYuan Senior High School
 
     Squirrels are special animals in Lin Yuan Sinior High School. They love to climb
     trees and play around in the field. Many students are interested in seeing these
@@ -1044,6 +1054,12 @@ questions:
   ai_answers:
     gemini: B
     qwen: B
+  errata:
+  - from: What do squirrels love to do?
+    to: What do squirrels love to do?（原卷有誤，已修正）
+    note: Senior誤印為Sinior：「Squirrels in LinYuan Sinior High School」→「Squirrels in
+      LinYuan Senior High School」
+    by: review
 - id: doc_112_高雄_林園_英語_g8s2e3_s3_30
   section: 3
   number: 30
@@ -1059,7 +1075,7 @@ questions:
     content: Seldom remembering things.
   - label: D
     content: Usually building a house in the tree
-  group_stem: 'Squirrels in LinYuan Sinior High School
+  group_stem: 'Squirrels in LinYuan Senior High School
 
     Squirrels are special animals in Lin Yuan Sinior High School. They love to climb
     trees and play around in the field. Many students are interested in seeing these
@@ -1109,7 +1125,7 @@ questions:
     content: Watch them run and jump.
   - label: D
     content: Enjoy the cuteness of the animal.
-  group_stem: 'Squirrels in LinYuan Sinior High School
+  group_stem: 'Squirrels in LinYuan Senior High School
 
     Squirrels are special animals in Lin Yuan Sinior High School. They love to climb
     trees and play around in the field. Many students are interested in seeing these

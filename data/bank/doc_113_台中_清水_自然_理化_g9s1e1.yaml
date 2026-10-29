@@ -707,7 +707,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 推甲乙兩物之功率，大小為何？
+  stem: F 推甲乙兩物之功率，大小為何？
   options:
   - label: A
     content: 甲＞乙
@@ -739,6 +739,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 推甲乙兩物之功率，大小為何？
+    to: F 推甲乙兩物之功率，大小為何？
+    note: 題幹開頭漏了「F 」
+    by: review
+    extraction: true
 - id: doc_113_台中_清水_自然_理化_g9s1e1_s1_19
   section: 1
   number: 19
@@ -963,7 +969,7 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 卡車剎車期間，摩擦力對卡車出做多少 $(\text{J})$ 的功？
+  stem: 卡車剎車期間，摩擦力對卡車做出多少 $(\text{J})$ 的功？
   options:
   - label: A
     content: $4500$
@@ -995,6 +1001,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 卡車剎車期間，摩擦力對卡車出做多少 $(\text{J})$ 的功？
+    to: 卡車剎車期間，摩擦力對卡車做出多少 $(\text{J})$ 的功？
+    note: 「做出」誤植為「出做」
+    by: review
+    extraction: true
 - id: doc_113_台中_清水_自然_理化_g9s1e1_s2_26
   section: 2
   number: 26
@@ -1268,7 +1280,7 @@ questions:
   - label: C
     content: 噴出的氣體給沖天炮的反作用力
   - label: D
-    content: 噴出的氣體施力於空氣，空氣給沖天炮的反作用
+    content: 噴出的氣體施力於空氣，空氣給沖天炮的反作用力
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1288,6 +1300,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 點燃沖天炮，沖天炮衝向空中。此過程中，沖天炮利用何種力升空？
+    to: 點燃沖天炮，沖天炮衝向空中。此過程中，沖天炮利用何種力升空？
+    note: 選項(D)結尾漏了「力」字
+    by: review
+    extraction: true
 - id: doc_113_台中_清水_自然_理化_g9s1e1_s2_34
   section: 2
   number: 34

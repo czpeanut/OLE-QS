@@ -704,10 +704,12 @@ questions:
   number: 31
   type: single
   page: 4
-  stem: 選出正確的選項
+  stem: 選出正確的選項<br>First, we took a bus to Hyde Park and <u>went watching birds there</u>.
+    Then we walked around the lake, and we went to Big Ben <u>by a metro</u>. When
+    the clock <u>hit twelve</u>, I <u>was busy to take pictures</u>.
   options:
   - label: A
-    content: went watching
+    content: went watching birds there
   - label: B
     content: by a metro
   - label: C
@@ -732,6 +734,14 @@ questions:
       chapter: 綜合
     textbook: 八上 英語 其他文法（不在列表中的文法點）
     labeled_by: ai
+  errata:
+  - from: 選出正確的選項
+    to: '選出正確的選項<br>First, we took a bus to Hyde Park and <u>went watching birds there</u>.
+      Then we walked around the lake, and we went to Big Ben <u>by a metro</u>. When
+      the clock <u>hit twelve</u>, I <u>was '
+    note: 選項(A)漏字birds there
+    by: review
+    extraction: true
 - id: doc_113_高雄_陽明_英語_g8s1e3_s4_32
   section: 4
   number: 32

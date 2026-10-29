@@ -26,8 +26,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 「距今約六百萬年前,臺灣島才逐漸抬升露出海面,而在早在一億五百萬年前,恐龍就滅絕了。」試根據上文判斷,下列何者的化石最不可能在臺灣島的岩層中發現?(A)陸生恐龍
-    (B)魚類 (C)貝類 (D)蝦蟹
+  stem: 「距今約六百萬年前，臺灣島才逐漸抬升露出海面，而早在六千五百萬年前，恐龍就滅絕了。」試根據上文判斷，下列何者的化石最不可能在臺灣島的岩層中發現？
   options:
   - label: A
     content: 陸生恐龍
@@ -56,6 +55,13 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「距今約六百萬年前,臺灣島才逐漸抬升露出海面,而在早在一億五百萬年前,恐龍就滅絕了。」試根據上文判斷,下列何者的化石最不可能在臺灣島的岩層中發現?(A)陸生恐龍
+      (B)魚類 (C)貝類 (D)蝦蟹
+    to: 「距今約六百萬年前，臺灣島才逐漸抬升露出海面，而早在六千五百萬年前，恐龍就滅絕了。」試根據上文判斷，下列何者的化石最不可能在臺灣島的岩層中發現？
+    note: 原卷為「而早在六千五百萬年前」誤作「而在早在一億五百萬年前」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e2_s1_2
   section: 1
   number: 2
@@ -147,16 +153,16 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 有關所圓周運動的敘述,何者正確?(A)是一種等加速度運動 (B)轉動愈快,需要的向心力愈大 (C)所受的向心力方向維持一定 (D)作圓周運動的物體其重量愈大,所需向心力愈小
+  stem: 有關圓周運動的敘述，何者正確？
   options:
   - label: A
     content: 是一種等加速度運動
   - label: B
-    content: 轉動愈快,需要的向心力愈大
+    content: 轉動愈快，需要的向心力愈大
   - label: C
     content: 所受的向心力方向維持一定
   - label: D
-    content: 作圓周運動的物體其重量愈大,所需向心力愈小
+    content: 作圓周運動的物體其重量愈大，所需向心力愈小
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -176,6 +182,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 有關所圓周運動的敘述,何者正確?(A)是一種等加速度運動 (B)轉動愈快,需要的向心力愈大 (C)所受的向心力方向維持一定 (D)作圓周運動的物體其重量愈大,所需向心力愈小
+    to: 有關圓周運動的敘述，何者正確？
+    note: 多擷取了「所」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e2_s1_5
   section: 1
   number: 5
@@ -1111,11 +1123,10 @@ questions:
   number: 28
   type: single
   page: 2
-  stem: 冰島位於大西洋的中洋脊上,有關冰島的敘述,下列何者正確?(A)此處的岩石主要受安山岩 (B)此處常有火山噴發 (C)此處常有地層受擠壓形成的褶皺山脈
-    (D)此處的岩石都是同一時期形成。
+  stem: 冰島位於大西洋的中洋脊上，有關冰島的敘述，下列何者正確？
   options:
   - label: A
-    content: 此處的岩石主要受安山岩
+    content: 此處的岩石主要是安山岩
   - label: B
     content: 此處常有火山噴發
   - label: C
@@ -1141,22 +1152,28 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 冰島位於大西洋的中洋脊上,有關冰島的敘述,下列何者正確?(A)此處的岩石主要受安山岩 (B)此處常有火山噴發 (C)此處常有地層受擠壓形成的褶皺山脈
+      (D)此處的岩石都是同一時期形成。
+    to: 冰島位於大西洋的中洋脊上，有關冰島的敘述，下列何者正確？
+    note: 「為」誤植為「受」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e2_s1_29
   section: 1
   number: 29
   type: single
   page: 2
-  stem: 臺灣有許多呈彎曲的岩層裸露出地表如附圖所示,下列有關此現象的敘述,何者正確?(A)此現象為泥沙順著原先高低起伏之地勢沉積形成 (B)礫岩顆粒較大所以沉積在砂岩與頁岩之下
-    (C)岩層受侵蝕作用產生下凹,受沉積作用形成突起 (D)此現象是在地下深處可塑性強大。
+  stem: 臺灣有許多呈彎曲的岩層裸露出地表如附圖所示，下列有關此現象的敘述，何者正確？
   options:
   - label: A
     content: 此現象為泥沙順著原先高低起伏之地勢沉積形成
   - label: B
     content: 礫岩顆粒較大所以沉積在砂岩與頁岩之下
   - label: C
-    content: 岩層受侵蝕作用產生下凹,受沉積作用形成突起
+    content: 岩層受侵蝕作用產生下凹，受沉積作用形成突起
   - label: D
-    content: 此現象是在地下深處可塑性強大。
+    content: 此現象是在地下深處可塑性大。
   assets:
   - key: s1_29_f1
     kind: figure
@@ -1187,6 +1204,13 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 臺灣有許多呈彎曲的岩層裸露出地表如附圖所示,下列有關此現象的敘述,何者正確?(A)此現象為泥沙順著原先高低起伏之地勢沉積形成 (B)礫岩顆粒較大所以沉積在砂岩與頁岩之下
+      (C)岩層受侵蝕作用產生下凹,受沉積作用形成突起 (D)此現象是在地下深處可塑性強大。
+    to: 臺灣有許多呈彎曲的岩層裸露出地表如附圖所示，下列有關此現象的敘述，何者正確？
+    note: 多擷取了「強」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_自然_g9s1e2_s1_30
   section: 1
   number: 30
@@ -2027,16 +2051,16 @@ questions:
   number: 50
   type: single
   page: 3
-  stem: 上文中的「A板塊」和「B板塊」分別是哪一個板塊?
+  stem: 上文中的「$\text{A}$ 板塊」和「$\text{B}$ 板塊」分別是哪一個板塊？
   options:
   - label: A
-    content: 歐亞板塊、B:菲律賓海板塊
+    content: $\text{A}$：歐亞板塊、$\text{B}$：菲律賓海板塊
   - label: B
-    content: 菲律賓海板塊、B:歐亞板塊
+    content: $\text{A}$：菲律賓海板塊、$\text{B}$：歐亞板塊
   - label: C
-    content: 歐亞板塊、B:印澳板塊
+    content: $\text{A}$：歐亞板塊、$\text{B}$：印澳板塊
   - label: D
-    content: 印澳板塊、B:歐亞板塊。
+    content: $\text{A}$：印澳板塊、$\text{B}$：歐亞板塊。
   group_stem: ※約 1000 萬年前,「A板塊」終於與「B板塊」碰撞在一起了!這次的碰撞,不但將當時位在台灣附近大陸棚上的沈積層與岩層推擠隆起,露出海面形成台灣島。此後,此兩板塊的持續擠壓下,台灣島一直持續地成長並抬升擴大,現在仍是如此。
   shared_asset: g1_50_50
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -2058,6 +2082,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 上文中的「A板塊」和「B板塊」分別是哪一個板塊?
+    to: 上文中的「$\text{A}$ 板塊」和「$\text{B}$ 板塊」分別是哪一個板塊？
+    note: 選項漏了「A:」
+    by: review
+    extraction: true
 shared_assets:
 - key: g1_37_39
   label: 題組附圖

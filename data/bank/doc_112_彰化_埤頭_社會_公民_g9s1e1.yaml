@@ -846,7 +846,7 @@ questions:
   - label: C
     content: 全面改種植白蘿蔔
   - label: D
-    content: 增加種植高麗菜的面積加種種植高麗菜的面積
+    content: 增加種植高麗菜的面積增加種植高麗菜的面積。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -866,6 +866,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 假設其他條件不變，當高麗菜價格上漲，種植高麗菜的農民可能會採取下列何種做法？
+    to: 假設其他條件不變，當高麗菜價格上漲，種植高麗菜的農民可能會採取下列何種做法？
+    note: 擷取錯字，原卷為「面增加種植」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_公民_g9s1e1_s3_28
   section: 3
   number: 28
@@ -1068,7 +1074,7 @@ questions:
   number: 33
   type: single
   page: 2
-  stem: 「機會成本是指做選擇時，放棄的選擇中價值最高(甲)者」，「最佳選擇是指機會成本最低(低)者」，甲、乙依序應填入？
+  stem: 「機會成本是指做選擇時，放棄的選擇中價值(甲)者」，「最佳選擇是指機會成本(乙)者」，甲、乙依序應填入？
   options:
   - label: A
     content: 高、高
@@ -1097,3 +1103,9 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 「機會成本是指做選擇時，放棄的選擇中價值最高(甲)者」，「最佳選擇是指機會成本最低(低)者」，甲、乙依序應填入？
+    to: 「機會成本是指做選擇時，放棄的選擇中價值(甲)者」，「最佳選擇是指機會成本(乙)者」，甲、乙依序應填入？
+    note: 多擷取了「最高」與「低」字
+    by: review
+    extraction: true

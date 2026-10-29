@@ -1413,7 +1413,8 @@ questions:
     \ a word, LINE is more than just an app for sending messages and stickers.\n \
     \   b. Besides, you can use LINE to raise money for those in need.\n    c. LINE\
     \ plays a meaningful part in people’s lives.\n    d. To start with, when you get\
-    \ into serious trouble, you can use LINE to save yourself."
+    \ into serious trouble, you can use LINE to save yourself.\n trouble 麻煩 detail\
+    \ 細節 concluding sentence 結論句"
   options:
   - label: A
     content: 1. b → 2. c → 3. a → 4. d
@@ -1422,7 +1423,7 @@ questions:
   - label: C
     content: 1. d → 2. c → 3. a → 4. b
   - label: D
-    content: 1. c → 2. b → 3. d → 4. A
+    content: 1. c → 2. b → 3. d → 4. a
   group_stem: "(B)\n\n  Are you sending messages and stickers to your friends on LINE\
     \ now? Do you know you can do more than that with the app? Here are several useful\
     \ and meaningful uses for LINE.\n  To begin with, LINE can save your life when\
@@ -1454,6 +1455,28 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s6_47_r10290733_1
+    kind: figure
+    file: doc_112_桃園_中興_英語_g9s1e1/s6_47_r10290733_1.png
+    crop:
+      page: 5
+      rect:
+      - 97.28
+      - 195.18
+      - 224.78
+      - 303.28
+  errata:
+  - from: "According to the reading, which is correct?  according to 根據\n    a. In\
+      \ a word, LINE is more than just an app for sending messages and stickers.\n\
+      \    b. Besides, you can use LINE to raise money for tho"
+    to: "According to the reading, which is correct?  according to 根據\n    a. In\
+      \ a word, LINE is more than just an app for sending messages and stickers.\n\
+      \    b. Besides, you can use LINE to raise money for tho"
+    note: 漏擷取漢堡結構圖、文字說明及單字註釋；末尾小寫 a 誤印為大寫 A：「(D) 1. c → 2. b → 3. d → 4. A」→「(D) 1.
+      c → 2. b → 3. d → 4. a」
+    by: review
+    extraction: true
 - id: doc_112_桃園_中興_英語_g9s1e1_s6_48
   section: 6
   number: 48

@@ -615,7 +615,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 「仲信百貨」的老闆將即期商品貼上「即將到期，特價出清」標籤，提醒消費者注意有效期限謹慎購買。請問老闆的行為符合下列何項權利行使原則？
+  stem: 「仲信百貨」的老闆將即期商品貼上「即將到期，特價出清」標籤，提醒消費者注意有效期限謹慎購買。請問老闆的行為符合下列何項權利行使原則？（原卷有誤，已修正）
   options:
   - label: A
     content: 誠實信用原則
@@ -624,7 +624,7 @@ questions:
   - label: C
     content: 消滅時效原則
   - label: D
-    content: 權利濫用禁止原則。
+    content: 權利禁止濫用原則。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -644,6 +644,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 權利濫用禁止原則。
+    to: (D)權利禁止濫用原則。
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(D) 權利濫用禁止原則。」→「(D)權利禁止濫用原則。」
+    by: review
 - id: doc_113_台中_順天_社會_公民_g8s2e1_s1_19
   section: 1
   number: 19
@@ -762,7 +767,7 @@ questions:
   - label: C
     content: 李成積欠行動電話費，被電信業者停話
   - label: D
-    content: 李想大量下載載版權影片，並上傳到部落格。
+    content: 李想大量下載版權影片，並上傳到部落格。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -782,6 +787,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 民事責任大致可分為侵權行為與債務不履行，下列哪一個事件屬於債務不履行責任？
+    to: 民事責任大致可分為侵權行為與債務不履行，下列哪一個事件屬於債務不履行責任？
+    note: 多擷取一個「載」字
+    by: review
+    extraction: true
 - id: doc_113_台中_順天_社會_公民_g8s2e1_s1_23
   section: 1
   number: 23
@@ -821,10 +832,10 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 下列何人簽訂的契約是不需要特別形式，雙方一致同意即可成立？
+  stem: 下列何人簽訂的契約是不需要特別形式，雙方一致同意即可成立？（原卷有誤，已修正）
   options:
   - label: A
-    content: 排隊 6 小時，總算搶到限量版的球
+    content: 排隊 6 小時，總算搶到限量版的球鞋
   - label: B
     content: 用畢生積蓄，買一棟夢想中的房子
   - label: C
@@ -850,6 +861,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 總算搶到限量版的球
+    to: 總算搶到限量版的球鞋
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「總算搶到限量版的球」→「總算搶到限量版的球鞋」
+    by: review
 - id: doc_113_台中_順天_社會_公民_g8s2e1_s1_25
   section: 1
   number: 25
@@ -896,7 +912,7 @@ questions:
   - label: B
     content: 雙方父母替子女決定婚約關係
   - label: C
-    content: 父親和子女簽報約定，拋棄親子關係
+    content: 父親和子女簽署約定，拋棄親子關係
   - label: D
     content: 婦女節時，餐飲業者推「女生限定下午茶」優惠活動。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -918,6 +934,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 只要契約內容不違反法律規定、公共秩序與善良風俗等，即具有法律效力。下列四種契約行為，依我國民法之規定，何者具法律效力？
+    to: 只要契約內容不違反法律規定、公共秩序與善良風俗等，即具有法律效力。下列四種契約行為，依我國民法之規定，何者具法律效力？
+    note: 原卷為「簽署約定」，誤植為「簽報約定」
+    by: review
+    extraction: true
 - id: doc_113_台中_順天_社會_公民_g8s2e1_s1_27
   section: 1
   number: 27
@@ -1003,7 +1025,7 @@ questions:
 
     | :--- | :---: | :---: | :---: | :---: |
 
-    | ①加入政黨 | 丙 | 丁 |
+    | ①加入政黨 | | | 丙 | 丁 |
 
     | ②報考公務人員考試 | 丁 | 丙 | 丁 | 乙 |
 
@@ -1056,6 +1078,30 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: '右圖是關於我國《憲法》中人民基本權利的分類，老師講解完後，舉出幾個例子，請同學判斷其屬於右圖的哪項基本權利。下列是四位同學的分類，何者正確？
+
+      | 例子 | (A)阿勳 | (B)小維 | (C)小彥 | (D)小智 |
+
+      | :--- | :---: | :---: | :---: | :---: |
+
+      | ①加入政黨 | 丙 | 丁 |
+
+      | ②報考公務人員考試 | 丁 | 丙 | 丁 | 乙 |
+
+      |'
+    to: '右圖是關於我國《憲法》中人民基本權利的分類，老師講解完後，舉出幾個例子，請同學判斷其屬於右圖的哪項基本權利。下列是四位同學的分類，何者正確？
+
+      | 例子 | (A)阿勳 | (B)小維 | (C)小彥 | (D)小智 |
+
+      | :--- | :---: | :---: | :---: | :---: |
+
+      | ①加入政黨 | | | 丙 | 丁 |
+
+      | ②報考公務人員考試 | 丁 | 丙 | 丁 | 乙'
+    note: 表格第一列阿勳與小維原為空白，擷取錯位填入丙、丁
+    by: review
+    extraction: true
 - id: doc_113_台中_順天_社會_公民_g8s2e1_s1_30
   section: 1
   number: 30

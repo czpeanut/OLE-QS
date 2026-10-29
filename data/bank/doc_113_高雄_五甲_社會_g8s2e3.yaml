@@ -530,6 +530,23 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  assets:
+  - key: s1_7_r10290729_1
+    kind: figure
+    file: doc_113_高雄_五甲_社會_g8s2e3/s1_7_r10290729_1.png
+    crop:
+      page: 1
+      rect:
+      - 545.12
+      - 711.47
+      - 692.95
+      - 888.0
+  errata:
+  - from: 附圖(四)為非洲氣候分區示意圖。請問：圖中丙區與戊區同樣位於赤道附近，但丙區終年溼熱，戊區卻十分涼爽。造成兩地氣候差異的原因為何？
+    to: 附圖(四)為非洲氣候分區示意圖。請問：圖中丙區與戊區同樣位於赤道附近，但丙區終年溼熱，戊區卻十分涼爽。造成兩地氣候差異的原因為何？
+    note: 題幹提及附圖(四)卻未附圖
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_社會_g8s2e3_s1_8
   section: 1
   number: 8
@@ -831,6 +848,23 @@ questions:
     gemini_high: C
   answer_status: disputed
   answer_source: ai:none
+  assets:
+  - key: s1_14_r10290729_1
+    kind: figure
+    file: doc_113_高雄_五甲_社會_g8s2e3/s1_14_r10290729_1.png
+    crop:
+      page: 2
+      rect:
+      - 538.57
+      - 435.42
+      - 687.13
+      - 621.25
+  errata:
+  - from: 專家預估再過 40 年，占全世界 $2/3$ 的可可豆出口國：迦納共和國、象牙海岸共和國，將面臨全球平均溫度上升 2℃的危機，屆時高溫乾燥的環境將不再適合可可樹的生長。而最直接的影響，就是「平價巧克力」將消失在市面上。根據上述，可可樹適合生長的環境主要位於附圖(七)何處？
+    to: 專家預估再過 40 年，占全世界 $2/3$ 的可可豆出口國：迦納共和國、象牙海岸共和國，將面臨全球平均溫度上升 2℃的危機，屆時高溫乾燥的環境將不再適合可可樹的生長。而最直接的影響，就是「平價巧克力」將消失在市面上。根據上述，可可樹適合生長的環境主要位於附圖(七)何處？
+    note: 題幹提及附圖(七)卻未附圖
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_社會_g8s2e3_s1_15
   section: 1
   number: 15
@@ -1175,7 +1209,7 @@ questions:
   - label: A
     content: 《中國與甲午戰爭》
   - label: B
-    content: 《中國與蘇聯治臺》
+    content: 《中國與蘇聯垮臺》
   - label: C
     content: 《毛澤東的政治運動》
   - label: D
@@ -1211,6 +1245,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 晴晴到中國旅遊時，途中看到好多人排隊在買紀念郵票，內容如附圖所示。如果晴晴想了解此郵票的由來，應可參考下列何本書籍？
+    to: 晴晴到中國旅遊時，途中看到好多人排隊在買紀念郵票，內容如附圖所示。如果晴晴想了解此郵票的由來，應可參考下列何本書籍？
+    note: 原卷為「垮臺」，誤擷為「治臺」
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_社會_g8s2e3_s2_24
   section: 2
   number: 24
@@ -1735,10 +1775,10 @@ questions:
   number: 38
   type: single
   page: 5
-  stem: 下列有關行政法規與行政責任的敘述，何者錯誤？
+  stem: 下列有關行政法規與行政責任的敘述，何者<u>錯誤</u>？
   options:
   - label: A
-    content: 行政責任是指因違反行政法因而應承擔的法律責任
+    content: 行政責任是指因違反行政法而應承擔的法律責任
   - label: B
     content: 只有行政機關有遵守行政法的義務
   - label: C
@@ -1764,6 +1804,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列有關行政法規與行政責任的敘述，何者錯誤？
+    to: 下列有關行政法規與行政責任的敘述，何者<u>錯誤</u>？
+    note: 多擷取「因」字
+    by: review
+    extraction: true
 - id: doc_113_高雄_五甲_社會_g8s2e3_s3_39
   section: 3
   number: 39

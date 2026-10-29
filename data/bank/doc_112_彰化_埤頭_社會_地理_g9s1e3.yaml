@@ -175,7 +175,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 大洋洲島國薩摩亞宣布，將時區從國際換日線的東方變更為西方，調整前薩摩亞的時區比雪梨快 3 小時，調整後會比雪梨慢 21 小時；調整後會往澳紐做生意，根據上文薩摩亞調整時區前後的位置變化應為附圖中何處？
+  stem: 大洋洲島國薩摩亞宣布，將時區從國際換日線的東方變更為西方，調整前薩摩亞的時區問比雪梨晚 21 小時；調整後會比雪梨快 3 小時，有利於與紐澳做生意，根據上文薩摩亞調整時區前後的位置變化應為附圖中何處？
   options:
   - label: A
     content: 乙到甲
@@ -221,6 +221,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 大洋洲島國薩摩亞宣布，將時區從國際換日線的東方變更為西方，調整前薩摩亞的時區比雪梨快 3 小時，調整後會比雪梨慢 21 小時；調整後會往澳紐做生意，根據上文薩摩亞調整時區前後的位置變化應為附圖中何處？
+    to: 大洋洲島國薩摩亞宣布，將時區從國際換日線的東方變更為西方，調整前薩摩亞的時區問比雪梨晚 21 小時；調整後會比雪梨快 3 小時，有利於與紐澳做生意，根據上文薩摩亞調整時區前後的位置變化應為附圖中何處？
+    note: 文字誤植且詞序相反
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g9s1e3_s1_6
   section: 1
   number: 6
@@ -260,7 +266,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 附圖為紐西蘭一級行政區（相當於臺灣的直轄市）分布圖，紐西蘭南島的面積大於北島，但第一級行政區南島只有 7 個，北島卻有 9 個。造成南島面積大，但行政區數量卻較少哪一現象有關？
+  stem: 附圖為紐西蘭一級行政區（相當於臺灣的直轄市）分布圖，紐西蘭南島的面積大於北島，但第一級行政區南島只有 7 個，北島卻有 9 個。造成南島面積大，但行政區數量卻較少與哪一現象有關？
   options:
   - label: A
     content: 北島的地形較複雜
@@ -306,6 +312,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 附圖為紐西蘭一級行政區（相當於臺灣的直轄市）分布圖，紐西蘭南島的面積大於北島，但第一級行政區南島只有 7 個，北島卻有 9 個。造成南島面積大，但行政區數量卻較少哪一現象有關？
+    to: 附圖為紐西蘭一級行政區（相當於臺灣的直轄市）分布圖，紐西蘭南島的面積大於北島，但第一級行政區南島只有 7 個，北島卻有 9 個。造成南島面積大，但行政區數量卻較少與哪一現象有關？
+    note: 漏了「與」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g9s1e3_s1_8
   section: 1
   number: 8
@@ -350,7 +362,7 @@ questions:
   stem: 澳洲受歷史背景影響，過去與歐洲國家的經貿往來較為密切，然而近年卻漸轉移市場重心，現今亞太地區已取代歐洲國家，成為澳洲重要的經濟夥伴。下列何者為造成上述轉變的原因？
   options:
   - label: A
-    content: 澳洲與祖國母國交惡
+    content: 澳洲與母國交惡
   - label: B
     content: 澳洲積極實施產業轉型
   - label: C
@@ -376,12 +388,18 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 澳洲受歷史背景影響，過去與歐洲國家的經貿往來較為密切，然而近年卻漸轉移市場重心，現今亞太地區已取代歐洲國家，成為澳洲重要的經濟夥伴。下列何者為造成上述轉變的原因？
+    to: 澳洲受歷史背景影響，過去與歐洲國家的經貿往來較為密切，然而近年卻漸轉移市場重心，現今亞太地區已取代歐洲國家，成為澳洲重要的經濟夥伴。下列何者為造成上述轉變的原因？
+    note: 選項(A)「英國」誤為「母國」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g9s1e3_s1_10
   section: 1
   number: 10
   type: single
   page: 1
-  stem: 中國鋼鐵股份有限公司（中鋼），中鋼公司的設立是為防止鋼鐵品依賴外國來源，再加上鋼鐵工業是一切工業之母，鋼鐵廠的興建對於建造船工業、汽車工業、重機械工業的發展都奠定良好的先天條件，中鋼所需的工業原料大多來自進口。根據上文推論，下列哪一國不是中鋼原料主要進口國？
+  stem: 中國鋼鐵股份有限公司（中鋼），中鋼公司的設立是為防止鋼鐵品依賴外國來源，再加上鋼鐵工業是一切工業之母，鋼鐵廠的興建對於造船工業、汽車工業、重機械工業的發展都奠定良好的先天條件，中鋼所需的工業原料大多來自進口。根據上文推論，下列哪一國不是中鋼原料主要進口國？
   options:
   - label: A
     content: 澳洲
@@ -410,6 +428,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 中國鋼鐵股份有限公司（中鋼），中鋼公司的設立是為防止鋼鐵品依賴外國來源，再加上鋼鐵工業是一切工業之母，鋼鐵廠的興建對於建造船工業、汽車工業、重機械工業的發展都奠定良好的先天條件，中鋼所需的工業原料大多來自進口。根據上文推論，下列哪一國不是中鋼原料主要進口國？
+    to: 中國鋼鐵股份有限公司（中鋼），中鋼公司的設立是為防止鋼鐵品依賴外國來源，再加上鋼鐵工業是一切工業之母，鋼鐵廠的興建對於造船工業、汽車工業、重機械工業的發展都奠定良好的先天條件，中鋼所需的工業原料大多來自進口。根據上文推論，下列哪一國不是中鋼原料主要進口國？
+    note: 多打了「建」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g9s1e3_s1_11
   section: 1
   number: 11
@@ -497,7 +521,7 @@ questions:
     content: 西班牙語
   - label: D
     content: 華語。
-  group_stem: 皮革是世上最普通、銷售最久的質料之一，而隨著環保意識抬頭，皮革商品受到的討論也越來越多，因為使用動物材質對環境造成壓力，不少人因而投入研究更永續的皮革材料，在中美洲就有一間公司運用在地的仙人掌，研發出純素皮革，讓事歉皮革製品的人有更友善環境的選擇。創辦人
+  group_stem: 皮革是世上最普通、銷售最久的質料之一，而隨著環保意識抬頭，皮革商品受到的討論也越來越多，因為使用動物材質對環境造成壓力，不少人因而投入研究更永續的皮革材料，在中美洲就有一間公司運用在地的仙人掌，研發出純素皮革，讓喜歡皮革製品的人有更友善環境的選擇。創辦人
     Lopez 指出，仙人掌不需什麼水分就能生長，而且在此處氣候乾熱遍地都是仙人掌，是此處的代表性植物。假設一間公司改以仙人掌做為原料，可以省下 20%的水消耗。」請問
     13-14 題：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -519,6 +543,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 文章中的公司，大部分員工應該講什麼語言？
+    to: 文章中的公司，大部分員工應該講什麼語言？
+    note: 題組短文中「喜愛」誤為「事歉」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g9s1e3_s1_14
   section: 1
   number: 14
@@ -534,7 +564,7 @@ questions:
     content: 副熱帶高壓
   - label: D
     content: 位處溫帶。
-  group_stem: 皮革是世上最普通、銷售最久的質料之一，而隨著環保意識抬頭，皮革商品受到的討論也越來越多，因為使用動物材質對環境造成壓力，不少人因而投入研究更永續的皮革材料，在中美洲就有一間公司運用在地的仙人掌，研發出純素皮革，讓事歉皮革製品的人有更友善環境的選擇。創辦人
+  group_stem: 皮革是世上最普通、銷售最久的質料之一，而隨著環保意識抬頭，皮革商品受到的討論也越來越多，因為使用動物材質對環境造成壓力，不少人因而投入研究更永續的皮革材料，在中美洲就有一間公司運用在地的仙人掌，研發出純素皮革，讓喜歡皮革製品的人有更友善環境的選擇。創辦人
     Lopez 指出，仙人掌不需什麼水分就能生長，而且在此處氣候乾熱遍地都是仙人掌，是此處的代表性植物。假設一間公司改以仙人掌做為原料，可以省下 20%的水消耗。」請問
     13-14 題：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -635,7 +665,7 @@ questions:
   number: 17
   type: single
   page: 1
-  stem: 新幾內亞島的地理環境特色應為被命名為下列何者？
+  stem: 新幾內亞島的地理環境特色應被命名為下列何者？（原卷有誤，已修正）
   options:
   - label: A
     content: 世界屋脊
@@ -667,6 +697,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 地理環境特色應為被命名為下列何者
+    to: 地理環境特色應被命名為下列何者
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「地理環境特色應為被命名為下列何者」→「地理環境特色應被命名為下列何者」
+    by: review
 - id: doc_112_彰化_埤頭_社會_地理_g9s1e3_s1_18
   section: 1
   number: 18
@@ -920,7 +955,7 @@ questions:
   number: 24
   type: single
   page: 2
-  stem: 圖中刂應位於哪一地形區內？
+  stem: 圖中ㄐ應位於哪一地形區內？
   options:
   - label: A
     content: 亞馬孫盆地
@@ -951,6 +986,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 圖中刂應位於哪一地形區內？
+    to: 圖中ㄐ應位於哪一地形區內？
+    note: 注音符號「ㄐ」誤植為部首「刂」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g9s1e3_s1_25
   section: 1
   number: 25
@@ -1335,7 +1376,7 @@ questions:
   number: 35
   type: single
   page: 2
-  stem: 該處生產可可、香蕉及甘蔗等作物，最有可能是符合哪一農牧業特色？
+  stem: 該處生產可可、香蕉及甘蔗等作物，最有可能符合哪一農牧業特色？
   options:
   - label: A
     content: 粗放式的經營
@@ -1366,6 +1407,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 該處生產可可、香蕉及甘蔗等作物，最有可能是符合哪一農牧業特色？
+    to: 該處生產可可、香蕉及甘蔗等作物，最有可能符合哪一農牧業特色？
+    note: 多打了「是」字
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g9s1e3_s1_36
   section: 1
   number: 36
@@ -1432,7 +1479,7 @@ questions:
   - label: B
     content: 針葉森林
   - label: C
-    content: 沙漠溪洲
+    content: 沙漠綠洲
   - label: D
     content: 冰蝕湖泊。
   group_stem: 澳洲的袋鼠有 65 種體型有大有小，其分布如附圖，請問 36-39 題：
@@ -1456,6 +1503,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 紅袋鼠所分布的地區最有可能看到下列哪一景觀？
+    to: 紅袋鼠所分布的地區最有可能看到下列哪一景觀？
+    note: 選項(C)「綠洲」誤植為「溪洲」
+    by: review
+    extraction: true
 - id: doc_112_彰化_埤頭_社會_地理_g9s1e3_s1_39
   section: 1
   number: 39

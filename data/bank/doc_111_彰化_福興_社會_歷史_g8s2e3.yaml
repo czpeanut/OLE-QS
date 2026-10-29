@@ -854,7 +854,7 @@ questions:
   - label: B
     content: 理念分歧
   - label: C
-    content: 中華美制蘇
+    content: 聯美制蘇
   - label: D
     content: 與蘇聯對抗。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -876,6 +876,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 中共建國初期面對蘇聯的外交策略為何？
+    to: 中共建國初期面對蘇聯的外交策略為何？
+    note: 原卷為「聯美制蘇」，誤植為「中華美制蘇」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g8s2e3_s1_25
   section: 1
   number: 25
@@ -1393,7 +1399,7 @@ questions:
   page: 2
   stem: '明清兩代，中國與其他國家的互動敘述，何者『為真』？
 
-    【甲】朝貢貿易是中國對外合法貿易型態
+    【甲】朝貢貿易是中國對外合法的貿易型態
 
     【乙】明末清初，西方耶穌會傳教士前來中國傳教
 
@@ -1426,6 +1432,24 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: '明清兩代，中國與其他國家的互動敘述，何者『為真』？
+
+      【甲】朝貢貿易是中國對外合法貿易型態
+
+      【乙】明末清初，西方耶穌會傳教士前來中國傳教
+
+      【丙】鄭和下西洋的海上探險最遠到達非洲東岸'
+    to: '明清兩代，中國與其他國家的互動敘述，何者『為真』？
+
+      【甲】朝貢貿易是中國對外合法的貿易型態
+
+      【乙】明末清初，西方耶穌會傳教士前來中國傳教
+
+      【丙】鄭和下西洋的海上探險最遠到達非洲東岸'
+    note: 漏了「的」字
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_社會_歷史_g8s2e3_s2_40
   section: 2
   number: 40

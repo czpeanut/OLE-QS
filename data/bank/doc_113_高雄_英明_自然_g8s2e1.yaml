@@ -790,7 +790,7 @@ questions:
   type: single
   page: 3
   stem: 火柴是以火柴頭與火柴盒側邊摩擦，產生熱能後，再促使火柴頭成分中的氯酸鉀（$\mathrm{KClO_{3}}$）和硫（S）反應燃燒，反應式為：$\mathrm{wKClO_{3}＋xS\rightarrow
-    yKCl＋zSO_{2}}$（其中w、x、y 和z 為反應式係數）若y＋z＝5，則上述反應式中哪兩個物質的係數總和為6？
+    yKCl＋＋zSO_{2}}$（其中w、x、y 和z 為反應式係數）若y＋z＝5，則上述反應式中哪兩個物質的係數總和為6？
   options:
   - label: A
     content: $\mathrm{KClO_{3}}$ 和KCl
@@ -817,6 +817,14 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 火柴是以火柴頭與火柴盒側邊摩擦，產生熱能後，再促使火柴頭成分中的氯酸鉀（$\mathrm{KClO_{3}}$）和硫（S）反應燃燒，反應式為：$\mathrm{wKClO_{3}＋xS\rightarrow
+      yKCl＋zSO_{2}}$（其中w、x、y 和z 為反應式係數）若y＋z＝5，則上述反應式中哪兩個物質的係數總和為6？
+    to: 火柴是以火柴頭與火柴盒側邊摩擦，產生熱能後，再促使火柴頭成分中的氯酸鉀（$\mathrm{KClO_{3}}$）和硫（S）反應燃燒，反應式為：$\mathrm{wKClO_{3}＋xS\rightarrow
+      yKCl＋＋zSO_{2}}$（其中w、x、y 和z 為反應式係數）若y＋z＝5，則上述反應式中哪兩個物質的係數總和為6？
+    note: 原卷式子中有兩個加號「＋＋」，擷取漏了一個加號
+    by: review
+    extraction: true
 - id: doc_113_高雄_英明_自然_g8s2e1_s1_22
   section: 1
   number: 22

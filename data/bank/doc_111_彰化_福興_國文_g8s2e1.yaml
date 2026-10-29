@@ -239,7 +239,7 @@ questions:
   number: 9
   type: fill
   page: 4
-  stem: 「ㄎㄡˊ」伏
+  stem: 「ㄑㄩㄢˊ」伏
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -260,6 +260,12 @@ questions:
   - 蜷
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 「ㄎㄡˊ」伏
+    to: 「ㄑㄩㄢˊ」伏
+    note: 注音「ㄩㄢ」誤植為「ㄡ」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e1_s1_10
   section: 1
   number: 10
@@ -551,7 +557,7 @@ questions:
   stem: 下列選項「　」中的字，何組字形相同？
   options:
   - label: A
-    content: 「ㄘㄢˊ」亮雙眼／舌「ㄘㄢˊ」蓮花
+    content: 「ㄘㄢˇ」亮雙眼／舌「ㄘㄢˋ」蓮花
   - label: B
     content: 心「ㄔˊ」神往／鬆「ㄔˊ」
   - label: C
@@ -577,6 +583,12 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 下列選項「　」中的字，何組字形相同？
+    to: 下列選項「　」中的字，何組字形相同？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(A) 「ㄘㄢˊ」亮雙眼／舌「ㄘㄢˊ」蓮花」→「(A)「ㄘㄢˇ」亮雙眼／舌「ㄘㄢˋ」蓮花」
+    by: review
+    extraction: true
 - id: doc_111_彰化_福興_國文_g8s2e1_s4_2
   section: 4
   number: 2

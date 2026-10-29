@@ -1246,28 +1246,32 @@ questions:
   - label: A
     content: 圖中 L 表示冷空氣
   - label: B
-    content: 圖中 表示冷鋒
+    content: 圖中 [IMAGE] 表示冷鋒
+    asset:
+      key: optB
+      file: doc_113_高雄_光華_自然_g9s2e1/s1_29_r10290713_2.png
+      crop:
+        page: 4
+        rect:
+        - 274.34
+        - 213.75
+        - 360.3
+        - 231.04
   - label: C
     content: A 點的氣溫較 B 點高
   - label: D
     content: A、B 間的鋒面移動是 A 向 B 移動。
   assets:
-  - key: s1_29_f1
+  - key: s1_29_r10290713_1
     kind: figure
-    file: doc_113_高雄_光華_自然_g9s2e1/s1_29_f1.png
+    file: doc_113_高雄_光華_自然_g9s2e1/s1_29_r10290713_1.png
     crop:
       page: 4
       rect:
-      - 327.26
-      - 103.07
-      - 459.51
-      - 216.68
-      auto_from:
-      - 323.02
-      - 102.11
-      - 462.44
-      - 221.89
-    crop_by: auto
+      - 324.62
+      - 98.17
+      - 462.31
+      - 218.66
   tags:
     chapter:
       publisher: 翰林
@@ -1286,6 +1290,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 附圖是北半球某地的天氣圖，有關此天氣圖之敘述，下列何者正確？
+    to: 附圖是北半球某地的天氣圖，有關此天氣圖之敘述，下列何者正確？
+    note: 選項(B)漏了原卷「圖中」後方的暖鋒符號
+    by: review
+    extraction: true
 - id: doc_113_高雄_光華_自然_g9s2e1_s1_30
   section: 1
   number: 30
@@ -1938,7 +1948,7 @@ questions:
     content: 吹向西南方的風
   - label: D
     content: 吹向東北方的風。
-  group_stem: (陸)、如圖表示各地區氣象站的地面資料，風向以符號表示，例如北風及東風分別標示為 、，試回答下列問題：
+  group_stem: (陸)、如圖表示各地區氣象站的地面資料，風向以符號表示，例如北風及東風分別標示為$\text{「}\!\begin{matrix}\circ\\\mid\end{matrix}\!\text{」}$、$\text{「}\!\circ\!-\text{」}$，試回答下列問題：
   shared_asset: g2_47_48
   tags:
     chapter:
@@ -1957,6 +1967,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 東南風指的是吹向何處的風？
+    to: 東南風指的是吹向何處的風？
+    note: 題組說明中漏了北風與東風的風向圖示符號
+    by: review
+    extraction: true
 - id: doc_113_高雄_光華_自然_g9s2e1_s2_48
   section: 2
   number: 48
@@ -2171,22 +2187,17 @@ shared_assets:
 - key: g2_47_48
   label: 題組附圖
   kind: figure
-  file: doc_113_高雄_光華_自然_g9s2e1/g2_47_48_f1.png
+  file: doc_113_高雄_光華_自然_g9s2e1/s2_47_r10290713_1.png
   used_by:
   - doc_113_高雄_光華_自然_g9s2e1_s2_47
   - doc_113_高雄_光華_自然_g9s2e1_s2_48
   crop:
     page: 6
     rect:
-    - 274.64
-    - 124.09
-    - 453.54
-    - 285.33
-    auto_from:
-    - 270.65
-    - 115.53
-    - 456.55
-    - 288.98
+    - 272.15
+    - 123.97
+    - 457.94
+    - 287.8
   crop_by: auto
 - key: g2_49_50
   label: 題組附圖
