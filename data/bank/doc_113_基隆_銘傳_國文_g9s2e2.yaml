@@ -134,10 +134,10 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 下列選項，何者沒有錯別字？
+  stem: 下列選項，何者沒有錯別字？（原卷有誤，已修正）
   options:
   - label: A
-    content: 在清涼的座位上，一邊瀏覽窗外數攸忽變幻的景致，一邊掇飲甘醇的咖啡
+    content: 在清涼的座位上，一邊瀏覽窗外攸忽變幻的景致，一邊掇飲甘醇的咖啡
   - label: B
     content: 「營養，營養，告訴我營養在哪裡？」無疑就是最淒勵的戰爭控訴了
   - label: C
@@ -164,6 +164,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 窗外數攸忽變幻
+    to: 窗外攸忽變幻
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「窗外數攸忽變幻」→「窗外攸忽變幻」
+    by: review
 - id: doc_113_基隆_銘傳_國文_g9s2e2_s1_5
   section: 1
   number: 5

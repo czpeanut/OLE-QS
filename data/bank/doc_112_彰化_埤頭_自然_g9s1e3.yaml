@@ -149,10 +149,10 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 一部玩具車，需使用直流電源的電壓是 6 伏特，此玩具車共使用了 8 個電池，已知：每個電池的電壓為 1.5 伏特；則電池可能的連接方式為：
+  stem: 一部玩具車，需使用直流電源的電壓是 6 伏特，此玩具車共使用了 8 個電池，已知：每個電池的電壓為 1.5 伏特；則電池可能的連接方式為：（原卷有誤，已修正）
   options:
   - label: A
-    content: 全部並聯
+    content: 全部串聯
   - label: B
     content: 每 2 個電池串聯為一組，四組再並聯
   - label: C
@@ -177,6 +177,11 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: (C) 全部並聯
+    to: (C) 全部串聯
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(C) 全部並聯」→「(C) 全部串聯」
+    by: review
 - id: doc_112_彰化_埤頭_自然_g9s1e3_s1_5
   section: 1
   number: 5
@@ -1029,14 +1034,14 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 樂樂新添購一台電磁爐，附圖為電磁爐的電器規格，請問下列敘述何者錯誤？
+  stem: 樂樂新添購一台電磁爐，附圖為電磁爐的電器規格，請問下列敘述何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
     content: 此電磁爐應使用 110 伏特的電源
   - label: B
     content: 此電磁爐應使用交流電為電源
   - label: C
-    content: 使用此電磁爐，每秒會消耗 1100 焦耳的電能
+    content: 使用此電磁爐，每秒會消耗 1100×83% 焦耳的電能
   - label: D
     content: 使用此電磁爐，每秒會消耗 1100 焦耳的電能
   assets:
@@ -1068,6 +1073,12 @@ questions:
   ai_answers:
     gemini: D
     qwen: D
+  errata:
+  - from: (D) 使用此電磁爐，每秒會消耗 1100 焦耳的電能
+    to: (D) 使用此電磁爐，每秒會消耗 1100 × 83% 焦耳的電能
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(D) 使用此電磁爐，每秒會消耗 1100 焦耳的電能」→「(D) 使用此電磁爐，每秒會消耗 1100
+      × 83% 焦耳的電能」
+    by: review
 - id: doc_112_彰化_埤頭_自然_g9s1e3_s1_23
   section: 1
   number: 23

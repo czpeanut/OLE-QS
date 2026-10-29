@@ -851,16 +851,16 @@ questions:
   number: 21
   type: single
   page: 1
-  stem: 下列成語的字形，何者完全正確？
+  stem: 下列成語的字形，何者完全正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 意興闌珊／延頸企踵／唾面自乾
   - label: B
-    content: 牽腸掛肚／老驥伏櫪／禁若寒蟬
+    content: 牽腸掛肚／老驥伏櫪／噤若寒蟬
   - label: C
-    content: 動輒得究／以鄰為壑／風馳電掣
+    content: 動輒得咎／以鄰為壑／風馳電掣
   - label: D
-    content: 馬齒徙增／滄海桑田／越俎代庖
+    content: 馬齒徒增／滄海桑田／越俎代庖
   tags:
     chapter:
       publisher: null
@@ -878,6 +878,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 禁若寒蟬
+    to: 噤若寒蟬
+    note: 噤印成禁：「禁若寒蟬」→「噤若寒蟬」；咎印成究：「動輒得究」→「動輒得咎」；徒印成徙：「馬齒徙增」→「馬齒徒增」
+    by: review
 - id: doc_113_台中_居仁_國文_g8s2e3_s3_22
   section: 3
   number: 22

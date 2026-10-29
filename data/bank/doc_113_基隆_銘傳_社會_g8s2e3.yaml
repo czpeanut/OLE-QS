@@ -1390,14 +1390,14 @@ questions:
   number: 31
   type: single
   page: 5
-  stem: 有關「家長未禁止兒少閱覽網路不良刊物及影片」，所需要承擔的法律責任，下列那位同學的敘述最為正確？
+  stem: 有關「家長未禁止兒少閱覽網路不良刊物及影片」，所需要承擔的法律責任，下列那位同學的敘述最為正確？（原卷有誤，已修正）
   options:
   - label: A
     content: 銘妘：該家長違反《少年事件處理法》
   - label: B
     content: 南嵐：該父母除了被科罰金，還須接受親職教育輔導
   - label: C
-    content: 欣穗：家長不會被處罰，指未受到訓誡
+    content: 欣穗：家長不會被處罰，只會受到訓誡
   - label: D
     content: 沁璇：違反兒少法的保護措施，可能處以罰鍰。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
@@ -1419,6 +1419,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) 欣穗：家長不會被處罰，指未受到訓誡
+    to: (C)欣穗：家長不會被處罰，只會受到訓誡
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(C) 欣穗：家長不會被處罰，指未受到訓誡」→「(C)欣穗：家長不會被處罰，只會受到訓誡」
+    by: review
 - id: doc_113_基隆_銘傳_社會_g8s2e3_s1_32
   section: 1
   number: 32

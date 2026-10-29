@@ -787,10 +787,10 @@ questions:
   type: single
   page: 2
   stem: Katie is a nurse and has a 3-month-old son, John. When can they get the free
-    shots?
+    shots?（原卷有誤，已修正）
   options:
   - label: A
-    content: 'Katie: December 9; John: Februay 3 ( next year)'
+    content: 'Katie: December 9; John: February 3 ( next year)'
   - label: B
     content: 'Katie: November 11; John: January 6 ( next year)'
   - label: C
@@ -829,6 +829,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 'John: Februay 3 ( next year)'
+    to: 'John: February 3 ( next year)'
+    note: 'Februay 拼錯，應為 February：「John: Februay 3 ( next year)」→「John: February 3
+      ( next year)」'
+    by: review
 - id: doc_113_屏東_中正_英語_g8s2e1_s6_2
   section: 6
   number: 2
@@ -1227,14 +1233,14 @@ questions:
   number: 9
   type: single
   page: 4
-  stem: What do we find out the books on the list?
+  stem: What do we find out the books on the list?（原卷有誤，已修正）
   options:
   - label: A
     content: Fire Mountains is a book about traveling.
   - label: B
     content: 101 Jokes has been popular for 10 years.
   - label: C
-    content: One book in the top five is for the officer workers.
+    content: One book in the top five is for the office workers.
   - label: D
     content: There are no books about animals on this year’s top ten.
   group_stem: '(四)
@@ -1297,6 +1303,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: One book in the top five is for the officer workers.
+    to: One book in the top five is for the office workers.
+    note: officer 誤打，應為 office：「One book in the top five is for the officer workers.」→「One
+      book in the top five is for the office workers.」
+    by: review
 - id: doc_113_屏東_中正_英語_g8s2e1_s6_10
   section: 6
   number: 10

@@ -1633,12 +1633,12 @@ questions:
   number: 44
   type: single
   page: 7
-  stem: 下列文句中，何者所表達的意境與（甲）完全不同？
+  stem: 下列文句中，何者所表達的意境與（甲）完全不同？（原卷有誤，已修正）
   options:
   - label: A
     content: 林花謝了春紅，太匆匆，無奈朝來寒雨晚來風。胭脂淚，相留醉，幾時重，自是人生長恨水長東
   - label: B
-    content: 雕欄玉砌應猶在，只是朱顏改。問君能有幾多愁，恰似一江春水向東流
+    content: 雕闌玉砌應猶在，只是朱顏改。問君能有幾多愁，恰似一江春水向東流
   - label: C
     content: 花明月暗籠輕霧，今宵好向郎邊去。剗襪步香階，手提金縷鞋。畫堂南畔見，一晌偎人顫
   - label: D
@@ -1664,6 +1664,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 雕欄玉砌應猶在，只是朱顏改。
+    to: 雕闌玉砌應猶在，只是朱顏改。
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「雕欄玉砌應猶在，只是朱顏改。」→「雕闌玉砌應猶在，只是朱顏改。」
+    by: review
 - id: doc_113_高雄_苓雅_國文_g9s1e1_s3_45
   section: 3
   number: 45

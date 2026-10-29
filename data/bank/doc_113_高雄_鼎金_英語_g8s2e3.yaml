@@ -455,7 +455,7 @@ questions:
   number: 14
   type: single
   page: 1
-  stem: Of course,there is        in the refrigerator.
+  stem: Of course,there is        in the refrigerator.（原卷有誤，已修正）
   options:
   - label: A
     content: nothing being stinky
@@ -464,7 +464,7 @@ questions:
   - label: C
     content: stinky nothing
   - label: D
-    content: stinky 0f nothing
+    content: stinky of nothing
   ai_answers:
     gemini: B
     qwen: B
@@ -482,6 +482,11 @@ questions:
       chapter: B4 八下
     textbook: 八下 英語 不定代名詞（one/each/some/many/most/both/all + of）
     labeled_by: ai
+  errata:
+  - from: (D) stinky 0f nothing
+    to: (D) stinky of nothing
+    note: of誤印為數字0f：「(D) stinky 0f nothing」→「(D) stinky of nothing」
+    by: review
 - id: doc_113_高雄_鼎金_英語_g8s2e3_s2_15
   section: 2
   number: 15

@@ -855,10 +855,10 @@ questions:
   page: 2
   stem: 'What lesson can we learn from this reading?
 
-    * wisdom 智慧'
+    * wisdom 智慧（原卷有誤，已修正）'
   options:
   - label: A
-    content: Action speak louder than words.
+    content: Actions speak louder than words.
   - label: B
     content: Cross the bridge when you come to it.
   - label: C
@@ -898,6 +898,12 @@ questions:
     gemini_high: C
   answer_status: disputed
   answer_source: ai:none
+  errata:
+  - from: (A) Action speak louder than words.
+    to: (A) Actions speak louder than words.
+    note: 諺語Action應為Actions：「(A) Action speak louder than words.」→「(A) Actions speak
+      louder than words.」
+    by: review
 - id: doc_113_台中_向上_英語_g9s2e2_s2_25
   section: 2
   number: 25
@@ -1838,7 +1844,7 @@ questions:
   page: 4
   stem: 'According to the information above, which is true?
 
-    ＊destination 目的地'
+    ＊destination 目的地（原卷有誤，已修正）'
   options:
   - label: A
     content: Ray lives near Cooper Zoo and works in Taft. He can take the train to
@@ -1846,7 +1852,7 @@ questions:
       1.
   - label: B
     content: Danny is a student in Hudson High School. He has to get to school before
-      half past seven in the morning. He can take Train No.82 from Cooper Park Staion
+      half past seven in the morning. He can take Train No.82 from Cooper Park Station
       to save his time after January 1.
   - label: C
     content: Ian and I will hike in Lakewood this Friday, January 9. We plan to get
@@ -1940,6 +1946,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: from Cooper Park Staion to save his time
+    to: from Cooper Park Station to save his time
+    note: Staion拼錯，應為Station：「from Cooper Park Staion to save his time」→「from Cooper
+      Park Station to save his time」
+    by: review
 - id: doc_113_台中_向上_英語_g9s2e2_s2_40
   section: 2
   number: 40

@@ -849,7 +849,7 @@ questions:
   number: 34
   type: single
   page: 3
-  stem: What is 'five-a-day' mean?
+  stem: What does 'five-a-day' mean?（原卷有誤，已修正）
   options:
   - label: A
     content: There are five nutrients in one food.
@@ -909,6 +909,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: What is 'five-a-day' mean?
+    to: What does 'five-a-day' mean?
+    note: 動詞為mean，助動詞is應改為does：「What is 'five-a-day' mean?」→「What does 'five-a-day'
+      mean?」
+    by: review
 - id: doc_112_台北_民生_英語_g8s1e1_s6_35
   section: 6
   number: 35

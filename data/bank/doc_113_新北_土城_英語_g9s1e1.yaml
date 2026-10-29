@@ -469,7 +469,7 @@ questions:
   number: 26
   type: single
   page: 2
-  stem: Breakfast _________ prepared by my father tomorrow morning.
+  stem: Breakfast _________ prepared by my father tomorrow morning.（原卷有誤，已修正）
   options:
   - label: A
     content: is
@@ -478,7 +478,7 @@ questions:
   - label: C
     content: will
   - label: D
-    content: is goint to
+    content: is going to
   ai_answers:
     gemini: B
     qwen: B
@@ -496,6 +496,11 @@ questions:
       chapter: B5 九上
     textbook: 九上 英語 被動語態（be+p.p.+by）
     labeled_by: ai
+  errata:
+  - from: (D) is goint to
+    to: (D) is going to
+    note: goint 拼錯，應為 going：「(D) is goint to」→「(D) is going to」
+    by: review
 - id: doc_113_新北_土城_英語_g9s1e1_s5_27
   section: 5
   number: 27
@@ -1084,7 +1089,7 @@ questions:
   number: 41
   type: single
   page: 3
-  stem: What is the reading mainly about?
+  stem: What is the reading mainly about?（原卷有誤，已修正）
   options:
   - label: A
     content: Wherever you go, be sure to use the V sign to everyone.
@@ -1093,7 +1098,7 @@ questions:
   - label: C
     content: It’s polite to use the V sign to people all over the world.
   - label: D
-    content: Getures are useful to understand people’s language. They can help you
+    content: Gestures are useful to understand people’s language. They can help you
       to understand a language.
   group_stem: 'When you are leaning a language, have you ever known that it’s also
     a good way to learn it from body language? Body language plays an important role
@@ -1132,6 +1137,12 @@ questions:
       chapter: 綜合
     textbook: 九上 英語 閱讀理解（短文、書信、圖表、廣告）
     labeled_by: ai
+  errata:
+  - from: (D) Getures are useful to understand people’s language.
+    to: (D) Gestures are useful to understand people’s language.
+    note: Getures 拼錯，應為 Gestures：「(D) Getures are useful to understand people’s language.」→「(D)
+      Gestures are useful to understand people’s language.」
+    by: review
 - id: doc_113_新北_土城_英語_g9s1e1_s7_42
   section: 7
   number: 42

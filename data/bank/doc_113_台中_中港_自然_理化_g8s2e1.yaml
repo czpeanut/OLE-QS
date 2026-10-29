@@ -906,7 +906,7 @@ questions:
   number: 23
   type: single
   page: 3
-  stem: 對於寶特瓶甲，下列何者<u>錯誤</u>？
+  stem: 對於寶特瓶甲，下列何者<u>錯誤</u>？（原卷有誤，已修正）
   options:
   - label: A
     content: 實驗前總質量＝實驗後總質量
@@ -915,7 +915,7 @@ questions:
   - label: C
     content: 反應中液面有氣泡產生
   - label: D
-    content: 過程中若寶特瓶沒有膨脹
+    content: 過程中寶特瓶沒有膨脹
   group_stem: 為了驗證「質量守恆定律」，在寶特瓶甲中丟入碳酸鈉($Na_{2}CO_{3}$)水溶液＋氯化鈣($CaCl_{2}$)水溶液、寶特瓶乙中丟入碎大理岩($CaCO_{3}$)＋鹽酸($HCl$)水溶液進行反應，分別量測兩個寶特瓶反應前後的質量是否有差別。經由實驗結果發現：寶特瓶甲的總質量沒變化，但寶特瓶乙的質量卻變少了。就以上結果，回答23～25題：
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
@@ -936,6 +936,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) 過程中若寶特瓶沒有膨脹
+    to: (D) 過程中寶特瓶沒有膨脹
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(D) 過程中若寶特瓶沒有膨脹」→「(D) 過程中寶特瓶沒有膨脹」
+    by: review
 - id: doc_113_台中_中港_自然_理化_g8s2e1_s1_24
   section: 1
   number: 24

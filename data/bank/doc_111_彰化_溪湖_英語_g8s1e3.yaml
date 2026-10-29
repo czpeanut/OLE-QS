@@ -1144,7 +1144,7 @@ questions:
   number: 50
   type: single
   page: 3
-  stem: What’s the price of the grilled chicken sandwich?
+  stem: What’s the price of the grilled chicken sandwich?（原卷有誤，已修正）
   options:
   - label: A
     content: NT$20
@@ -1153,7 +1153,7 @@ questions:
   - label: C
     content: NT$80
   - label: D
-    content: NT&100
+    content: NT100
   group_stem: '(一)
 
     Clerk: Hello. How may I help you?
@@ -1194,6 +1194,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (D) NT&100
+    to: (D) NT$100
+    note: 符號&應為貨幣符號$：「(D) NT&100」→「(D) NT$100」
+    by: review
 - id: doc_111_彰化_溪湖_英語_g8s1e3_s5_51
   section: 5
   number: 51

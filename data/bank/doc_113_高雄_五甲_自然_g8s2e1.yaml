@@ -1432,7 +1432,7 @@ questions:
   number: 35
   type: single
   page: 4
-  stem: 同樣 1 莫耳的氧氣和氫氣，哪一個原子個數較多？
+  stem: 同樣 1 莫耳的氧氣和氫氣，哪一個原子個數較多？（原卷有誤，已修正）
   options:
   - label: A
     content: 一樣多
@@ -1441,7 +1441,7 @@ questions:
   - label: C
     content: 氫氣
   - label: D
-    content: 不同的氣體氣體，無法比較。
+    content: 不同的氣體，無法比較。
   review_note: 掃描件：無文字層可驗證，內容為影像辨識
   source_ocr: true
   tags:
@@ -1461,6 +1461,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 不同的氣體氣體，無法比較
+    to: 不同的氣體，無法比較
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「不同的氣體氣體，無法比較」→「不同的氣體，無法比較」
+    by: review
 - id: doc_113_高雄_五甲_自然_g8s2e1_s1_36
   section: 1
   number: 36

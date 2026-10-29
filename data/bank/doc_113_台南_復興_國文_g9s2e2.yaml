@@ -1209,10 +1209,10 @@ questions:
   number: 28
   type: single
   page: 7
-  stem: 有關郵局代收貨款服務應加收之資費，下列說明何者錯誤？
+  stem: 有關郵局代收貨款服務應加收之資費，下列說明何者錯誤？（原卷有誤，已修正）
   options:
   - label: A
-    content: 代收貨款金額的上限是新臺50,000 元
+    content: 代收貨款金額的上限是新臺幣50,000 元
   - label: B
     content: 收件者若要求退還貨款，只能與寄件者聯繫
   - label: C
@@ -1249,6 +1249,11 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 代收貨款金額的上限是新臺50,000 元
+    to: 代收貨款金額的上限是新臺幣50,000 元
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「代收貨款金額的上限是新臺50,000 元」→「代收貨款金額的上限是新臺幣50,000 元」
+    by: review
 - id: doc_113_台南_復興_國文_g9s2e2_s2_29
   section: 2
   number: 29

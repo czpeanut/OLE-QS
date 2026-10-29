@@ -715,7 +715,7 @@ questions:
   number: 1
   type: single
   page: 2
-  stem: What is the main idea of the reading?
+  stem: What is the main idea of the reading?（原卷有誤，已修正）
   options:
   - label: A
     content: Taiwan has built many new incinerators to handle waste.
@@ -724,7 +724,7 @@ questions:
 
        decrease 減少'
   - label: C
-    content: The villlage head in Xinfeng is working to clean up the garbage mountain.
+    content: The village head in Xinfeng is working to clean up the garbage mountain.
   - label: D
     content: Taiwan is facing a serious waste problem with growing "garbage mountains."
   group_stem: 'How Much Trash Does Taiwan Create?
@@ -768,6 +768,12 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: The villlage head in Xinfeng is working
+    to: The village head in Xinfeng is working
+    note: villlage 拼字錯誤，應為 village：「The villlage head in Xinfeng is working」→「The
+      village head in Xinfeng is working」
+    by: review
 - id: doc_113_屏東_中正_英語_g9s1e2_s6_2
   section: 6
   number: 2

@@ -1250,14 +1250,14 @@ questions:
   number: 11
   type: single
   page: 4
-  stem: Which is Not true?
+  stem: Which is Not true?（原卷有誤，已修正）
   options:
   - label: A
     content: A blue Halloween bucket has become a sign for kids with special needs.
   - label: B
     content: The idea of a blue Halloween bucket is a new way to help peopole.
   - label: C
-    content: The idea of a blue Halloween candy bucket came from a mothetr who loves
+    content: The idea of a blue Halloween candy bucket came from a mother who loves
       her son.
   - label: D
     content: The idea of a blue Halloween bucket has been around for more than ten
@@ -1302,6 +1302,13 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: The idea of a blue Halloween bucket is a new way to help peo
+    to: The idea of a blue Halloween bucket is a new way to help peo
+    note: peopole 拼錯，應為 people：「The idea of a blue Halloween bucket is a new way to
+      help peo」→「The idea of a blue Halloween bucket is a new way to help peo」；mothetr
+      拼錯，應為 mother：「came from a mothetr who loves h
+    by: review
 shared_assets:
 - key: g5_6_8
   label: 題組附圖

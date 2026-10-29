@@ -1501,14 +1501,14 @@ questions:
   number: 45
   type: single
   page: 3
-  stem: What does "<u>love action</u>" mean?
+  stem: What does "<u>love action</u>" mean?（原卷有誤，已修正）
   options:
   - label: A
     content: Taking down the love locks.
   - label: B
     content: Taking photos on the bridge.
   - label: C
-    content: Hanging.love locks on the bridge.
+    content: Hanginglove locks on the bridge.
   - label: D
     content: Replacing the railings with glass.
   group_stem: 'Is Love Too Heavy?
@@ -1548,6 +1548,12 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (C) Hanging.love locks on the bridge.
+    to: (C) Hanging love locks on the bridge.
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(C) Hanging.love locks on the bridge.」→「(C) Hanging
+      love locks on the bridge.」
+    by: review
 - id: doc_113_台中_大甲_英語_g8s1e2_s6_46
   section: 6
   number: 46

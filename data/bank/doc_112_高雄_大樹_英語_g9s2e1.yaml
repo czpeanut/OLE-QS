@@ -1690,14 +1690,14 @@ questions:
   number: 43
   type: single
   page: 5
-  stem: Who can get the job as a cook?
+  stem: Who can get the job as a cook?（原卷有誤，已修正）
   options:
   - label: A
     content: Nina. She’s 25 years old and loves cooking.
   - label: B
     content: Ted. He’s 40 years and worked at a restaurant before.
   - label: C
-    content: Jane. She’s 36 and can speak good Enhlish.
+    content: Jane. She’s 36 and can speak good English.
   - label: D
     content: Nick. He’s 29 years old and can work only on weekdays.
   group_stem: D.
@@ -1719,6 +1719,12 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: Jane. She’s 36 and can speak good Enhlish.
+    to: Jane. She’s 36 and can speak good English.
+    note: Enhlish 應為 English：「Jane. She’s 36 and can speak good Enhlish.」→「Jane. She’s
+      36 and can speak good English.」
+    by: review
 - id: doc_112_高雄_大樹_英語_g9s2e1_s3_44
   section: 3
   number: 44

@@ -951,7 +951,7 @@ questions:
   number: 27
   type: single
   page: 4
-  stem: 本文最可能出自《浮生六記》的哪一起？
+  stem: 本文最可能出自《浮生六記》的哪一記？（原卷有誤，已修正）
   options:
   - label: A
     content: 浪遊記快
@@ -998,6 +998,11 @@ questions:
   - C
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 的哪一起？
+    to: 的哪一記？
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「的哪一起？」→「的哪一記？」
+    by: review
 - id: doc_112_彰化_福興_國文_g9s2e2_s1_28
   section: 1
   number: 28

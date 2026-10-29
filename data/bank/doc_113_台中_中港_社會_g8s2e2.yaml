@@ -1969,12 +1969,12 @@ questions:
   number: 49
   type: single
   page: 6
-  stem: 請問：根據以上資料，可以做出什麼推論？
+  stem: 請問：根據以上資料，可以做出什麼推論？（原卷有誤，已修正）
   options:
   - label: A
     content: 九一八事變時，國民政府因未出兵刺激日軍，而避免之後日本的侵略
   - label: B
-    content: 國民政府對日本人侵一直採取強硬反擊的態度
+    content: 國民政府對日本入侵一直採取強硬反擊的態度
   - label: C
     content: 西安事變後，張學良受到媒體界一致譴責
   - label: D
@@ -2015,6 +2015,11 @@ questions:
   - D
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: 國民政府對日本人侵一直採取強硬反擊的態度
+    to: 國民政府對日本入侵一直採取強硬反擊的態度
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「國民政府對日本人侵一直採取強硬反擊的態度」→「國民政府對日本入侵一直採取強硬反擊的態度」
+    by: review
 - id: doc_113_台中_中港_社會_g8s2e2_s3_50
   section: 3
   number: 50

@@ -1572,7 +1572,7 @@ questions:
   number: 39
   type: single
   page: 3
-  stem: 此考右圖，判斷甲側為上盤還是下盤？此為哪一種斷層？
+  stem: 參考右圖，判斷甲側為上盤還是下盤？此為哪一種斷層？（原卷有誤，已修正）
   options:
   - label: A
     content: 上盤，正斷層
@@ -1613,15 +1613,20 @@ questions:
   - B
   answer_status: ai_generated
   answer_source: ai:majority
+  errata:
+  - from: 此考右圖，判斷甲側
+    to: 參考右圖，判斷甲側
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「此考右圖，判斷甲側」→「參考右圖，判斷甲側」
+    by: review
 - id: doc_113_台中_沙鹿_自然_理化_g9s1e2_s4_40
   section: 4
   number: 40
   type: single
   page: 3
-  stem: 下圖為台灣附近的板塊構造圖，判斷以下推論，何者正確？
+  stem: 下圖為台灣附近的板塊構造圖，判斷以下推論，何者正確？（原卷有誤，已修正）
   options:
   - label: A
-    content: 綠島會移著板塊移動而逐漸靠近台灣
+    content: 綠島會隨著板塊移動而逐漸靠近台灣
   - label: B
     content: 西部的地震帶範圍比東部寬
   - label: C
@@ -1664,6 +1669,11 @@ questions:
   - A
   answer_status: ai_generated
   answer_source: ai:gemini+qwen
+  errata:
+  - from: (A) 綠島會移著板塊移動而逐漸靠近台灣
+    to: (A)綠島會隨著板塊移動而逐漸靠近台灣
+    note: 複核：原卷確實這樣印，可能是原卷錯字：「(A) 綠島會移著板塊移動而逐漸靠近台灣」→「(A)綠島會隨著板塊移動而逐漸靠近台灣」
+    by: review
 shared_assets:
 - key: g2_17_20
   label: 題組附圖
