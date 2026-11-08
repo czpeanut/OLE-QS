@@ -9,6 +9,14 @@
 > 只交檔案，不要改這個 repo 的 `data/bank/`、`data/export/`，也不要改 Supabase。
 > 金鑰放在 `.env.local`（不 commit），不要把金鑰或通行碼貼在對話或檔案裡。
 
+**工具**（`pip install pyyaml pymupdf pillow`；各程式加 `-h` 看完整用法）：
+
+| 程式 | 用途 | 見 |
+|---|---|---|
+| `scripts/images_to_pdf.py` | 照片卷依頁序合成 PDF（自動轉正、可指定某頁旋轉） | 第 1 節 |
+| `scripts/crop_figure.py` | 從原卷 PDF 裁附圖 PNG，並印出 YAML 要寫的 `crop` | 第 5 節 |
+| `scripts/check_bank_yaml.py` | 交件前自我檢查（格式、卷 id、附圖存在、品管剔除、題庫已有的卷） | 第 8 節 |
+
 ---
 
 ## 1. 交件內容
@@ -31,7 +39,8 @@ high_school/
 ```
 
 - **一份原卷 → 一個 YAML**。一個 PDF 裡有好幾科、好幾個年級、或「題目卷＋解答卷」的，要拆開。
-- 原卷是照片（JPG、PNG、HEIC）的，先依頁序合成一份 PDF 放進 `sources/`，`source_file` 指向這份 PDF，附圖位置也以它為準。
+- 原卷是照片（JPG、PNG、HEIC）的，先依頁序合成一份 PDF 放進 `sources/`，`source_file` 指向這份 PDF，附圖位置也以它為準：
+  `python scripts/images_to_pdf.py 照片資料夾/ -o sources/高一/數學/113/1-1/台中/台中一中.pdf`（HEIC 照片另需 `pip install pillow-heif`）。
 - 同一份卷有多個版本（原卷、清除字跡、重複下載）時只交一份，優先清除字跡的版本。
 - 交件前跑檢查（第 8 節）。
 
@@ -113,6 +122,15 @@ assets:
 ```
 
 - 用像素框換算：`rect = 像素框 × 72 ÷ DPI`。例：200 DPI 下框 `[200, 862, 806, 1264]` → `[72.0, 310.3, 290.2, 455.0]`。
+- `scripts/crop_figure.py` 會一次做完裁圖和換算，`--rect`（point）、`--px`（像素框＋`--px-dpi`）、`--box1000`（模型常用的 0～1000 正規化框）擇一：
+
+  ```bash
+  python scripts/crop_figure.py sources/高一/數學/113/1-1/台中/台中一中.pdf --page 1 \
+    --px 200 862 806 1264 --px-dpi 200 -o assets/doc_113_台中_台中一中_數學_g10s1e1/s1_3_f1.png
+  # → {"file": "...s1_3_f1.png", "size_px": [...], "crop": {"page": 1, "rect": [...]}}，crop 照抄進 YAML
+  ```
+
+  預設四周多留 3 point、以 220 DPI 輸出；`--rotate 90` 可把橫印的圖轉正。
 - 頁面若有旋轉（`/Rotate`），以**轉正後**看到的頁面座標為準；PyMuPDF 的 `page.rect` 與 `get_pixmap(clip=…)` 就是這個座標。
 - 選項是圖時放在該選項：`options: [{label: A, content: '', asset: {key: optA, file: …, crop: {…}}}]`。
 - 題組共用圖放最上層 `shared_assets`，`used_by` 列出用到它的每一題，各題寫 `shared_asset: <key>`。
@@ -150,6 +168,8 @@ assets:
   "extractor": "使用的模型或方法，例如 vlm:gemini-3.7-flash",
   "papers": [
     {"id": "doc_113_台中_台中一中_數學_g10s1e1", "source_file": "高一/數學/113/1-1/台中/台中一中.pdf",
+     "origin": "113-001.zip:高中部歷屆試題/高一數學/台中一中113上第一次段考.pdf",
+     "answer_origin": "113-001.zip:高中部歷屆試題/高一數學/台中一中113上第一次段考解答.pdf",
      "pages": 4, "questions": 22, "has_answer_key": true, "has_explanation": false,
      "notes": "第 3 頁右下角破損，第 18 題題幹有兩字看不清（已寫□）"}
   ],
@@ -160,13 +180,16 @@ assets:
 }
 ```
 
-`skipped` 請列出所有沒轉的原始檔與原因，題庫這邊用它確認沒有漏卷。
+- `origin`／`answer_origin`：**原始檔從哪來**（壓縮檔名或雲端資料夾＋檔內原路徑、原檔名，照抄不要改名），題庫這邊追溯來源用；照片卷列第一張照片的路徑即可。
+- `skipped` 請列出所有沒轉的原始檔與原因，題庫這邊用它確認沒有漏卷。
 
 ## 8. 交件前自我檢查
 
 ```bash
-python scripts/check_bank_yaml.py high_school/bank --assets high_school/assets
+python scripts/check_bank_yaml.py high_school/bank --assets high_school/assets --existing
 ```
+
+- `--existing` 比對 `data/export/papers.jsonl.gz`，列出題庫已經有的卷（目前全是國中卷，高中卷之後才會有）。
 
 - 檢查程式看到 `level: senior` 會改用高中規則：年級 10～12、高中子科、`course` 併入卷 id、單選允許 5 個選項。
 - 錯誤（✗）要全部修掉；提醒（△）裡「會被品管剔除」的題目也請盡量修正。

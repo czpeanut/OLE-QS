@@ -55,6 +55,10 @@ def check(path: Path, assets: Path | None) -> tuple[list[str], list[str], int, i
         err.append(f"document 缺少 {miss}")
     if m.get("subject") and m["subject"] not in SUBJECTS:
         err.append(f"subject 只能是 {sorted(SUBJECTS)}，寫的是「{m['subject']}」")
+    for k in ("grade", "academic_year_roc", "semester", "exam_seq"):
+        if m.get(k) is not None and not isinstance(m[k], int):
+            err.append(f"{k} 要寫整數，寫的是「{m[k]}」")
+            m[k] = None
     senior = m.get("level") == "senior" or (m.get("grade") or 0) >= 10
     subs = SUBS_SENIOR if senior else SUBS
     if m.get("sub_subject") and m.get("sub_subject") not in subs.get(m.get("subject"), set()):
@@ -109,7 +113,10 @@ def check(path: Path, assets: Path | None) -> tuple[list[str], list[str], int, i
             for f in files:
                 if f and not (assets / f).is_file():
                     err.append(f"{qid}：附圖檔不存在 {f}")
-        ok, why = evaluate(q, d)
+        try:
+            ok, why = evaluate(q, d)
+        except Exception as exc:  # noqa: BLE001  欄位型別不對時品管規則跑不動
+            ok, why = False, [f"品管檢查無法執行：{exc}"]
         if not ok:
             rejected += 1
             warn.append(f"{qid}：會被品管剔除（{'；'.join(why)}）")
