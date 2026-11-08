@@ -41,11 +41,14 @@ export function units(subject: string, sub: string | null, grade: number, semest
     .reduce((a, r) => a + r[6], 0);
   if (subject === "英語") {
     return english
-      // 列到這一冊為止教過的主題：後面的冊別常考前面的文法
-      .filter((t) => t.group === "綜合" || (t.grade as number) < grade ||
+      // 列到這一冊為止教過的文法主題（後面的冊別常考前面的文法），再列這一冊的第幾次段考（字彙、閱讀等依段考次分）；
+      // 綜合類只給模型歸類用，題目已改歸到段考範圍
+      .filter((t) => t.group !== "綜合")
+      .filter((t) => t.exam || (t.grade as number) < grade ||
                      ((t.grade as number) === grade && (t.semester as number) <= semester))
       .map((t) => ({ code: t.id as string, title: t.title as string, chapter: (t.group as string) ?? null, subject: "英語",
-                     lessons: (t.lessons as Record<string, string>) ?? {}, key: `英語|${t.id}`, count: n("英語", t.id as string) }));
+                     lessons: (t.lessons as Record<string, string>) ?? {}, key: `英語|${t.id}`, count: n("英語", t.id as string) }))
+      .filter((u) => !u.code.startsWith("E") || u.count > 0);     // 九下多半只有兩次段考
   }
   const book = junior[String(grade)]?.[String(semester)]?.[subject] ?? {};
   const subs = sub ? [sub] : SUBS[subject] ?? [""];

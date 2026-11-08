@@ -45,8 +45,9 @@ def units(subject: str, sub: str | None, grade: int, semester: int, publisher: s
         return [{"code": t["id"], "title": t["title"], "chapter": t.get("group"), "subject": "英語",
                  "lessons": t.get("lessons") or {}}
                 for t in english_topics()
-                # 列到這一冊為止教過的主題：後面的冊別常考前面的文法
-                if t.get("group") == "綜合" or (t["grade"], t["semester"]) <= (grade, semester)]
+                # 列到這一冊為止教過的文法主題，再列第幾次段考（字彙、閱讀等依段考次分；綜合類只給模型歸類用）
+                if t.get("group") != "綜合"
+                and (t.get("exam") or (t["grade"], t["semester"]) <= (grade, semester))]
     book = ((_junior().get(grade) or {}).get(semester) or {}).get(subject) or {}
     subs = [sub] if sub else (SUBS.get(subject) or [""])
     pub = publisher or "翰林"

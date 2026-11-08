@@ -3,6 +3,7 @@
 
     python scripts/check_bank_yaml.py <bank 資料夾或單一 YAML> [--assets <附圖根目錄>] [--existing]
 
+國中、高中卷都適用（高中卷依 document.level: senior 判斷，見 docs/HIGH_SCHOOL_HANDOFF.md）。
 會列出：缺必填欄位、卷 id／題目 id 不合規則、題型或大題不對、圖檔不存在、會被品管閘門剔除的題目
 （規則同 apps/api/quality.py）。--existing 再比對 data/export/papers.jsonl.gz，列出題庫已有的卷。
 只需要 pyyaml；有錯誤時結束碼為 1。
@@ -27,12 +28,16 @@ REQUIRED = ("id", "grade", "subject", "academic_year_roc", "semester", "exam_seq
             "school", "title", "exam_name", "sections")
 SUBJECTS = {"國文", "英語", "數學", "自然", "社會"}
 SUBS = {"自然": {"理化", "生物", "地科"}, "社會": {"歷史", "地理", "公民"}}
+# 高中（docs/HIGH_SCHOOL_HANDOFF.md）：自然分物理、化學、生物、地科，社會的公民是「公民與社會」
+SUBS_SENIOR = {"自然": {"物理", "化學", "生物", "地科"}, "社會": {"歷史", "地理", "公民與社會"}}
 TYPES = {"single", "multiple", "tf", "fill", "calc", "essay", "matching"}
 STATUS = {"verified", "ai_generated", "disputed", "missing"}
 
 
 def doc_id(m: dict) -> str:
     subj = m["subject"] + (f"_{m['sub_subject']}" if m.get("sub_subject") else "")
+    if m.get("course"):                              # 高中：數A／數B、選修課程
+        subj += f"_{m['course']}"
     return (f"doc_{m['academic_year_roc']}_{m['city']}_{m['school_short']}_{subj}"
             f"_g{m['grade']}s{m['semester']}e{m['exam_seq']}")
 
@@ -50,10 +55,14 @@ def check(path: Path, assets: Path | None) -> tuple[list[str], list[str], int, i
         err.append(f"document 缺少 {miss}")
     if m.get("subject") and m["subject"] not in SUBJECTS:
         err.append(f"subject 只能是 {sorted(SUBJECTS)}，寫的是「{m['subject']}」")
-    if m.get("sub_subject") and m.get("sub_subject") not in SUBS.get(m.get("subject"), set()):
+    senior = m.get("level") == "senior" or (m.get("grade") or 0) >= 10
+    subs = SUBS_SENIOR if senior else SUBS
+    if m.get("sub_subject") and m.get("sub_subject") not in subs.get(m.get("subject"), set()):
         err.append(f"sub_subject「{m['sub_subject']}」不屬於 {m.get('subject')}")
-    if m.get("grade") not in (7, 8, 9):
-        err.append(f"grade 應為 7、8、9，寫的是 {m.get('grade')}")
+    if m.get("grade") not in ((10, 11, 12) if senior else (7, 8, 9)):
+        err.append(f"grade 應為 {'10、11、12' if senior else '7、8、9'}，寫的是 {m.get('grade')}")
+    if senior and m.get("level") != "senior":
+        err.append("高中卷 document 要加 level: senior")
     if m.get("semester") not in (1, 2) or m.get("exam_seq") not in (1, 2, 3):
         err.append(f"semester 應為 1、2，exam_seq 應為 1～3（{m.get('semester')}, {m.get('exam_seq')}）")
     if "臺" in str(m.get("city", "")):

@@ -78,6 +78,10 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
     qtype = q.get("type")
     opts = q.get("options") or []
     expected = EXPECTED_OPTIONS.get(qtype)
+    # 高中卷的單選常是五選一（A～E）
+    senior = ((doc.get("document") or {}).get("grade") or 0) >= 10
+    if senior and qtype == "single" and len(opts) == 5:
+        expected = 5
     # 是非題卷面通常不印選項（作答寫 O／X），沒有選項是正常的；有印的才檢查數量
     if expected and len(opts) != expected and not (qtype == "tf" and not opts):
         reasons.append(f"{qtype} 題應有 {expected} 個選項，實際 {len(opts)} 個")
