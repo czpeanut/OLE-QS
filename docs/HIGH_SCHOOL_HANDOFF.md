@@ -182,19 +182,22 @@ assets:
 
 - `origin`／`answer_origin`：**原始檔從哪來**（壓縮檔名或雲端資料夾＋檔內原路徑、原檔名，照抄不要改名），題庫這邊追溯來源用；照片卷列第一張照片的路徑即可。
 - `skipped` 請列出所有沒轉的原始檔與原因，題庫這邊用它確認沒有漏卷。
+- `dropped`（每份卷）：因公式轉不出來等原因沒交的題號與原因，例如 `[{"number": 7, "reason": "MathType 物件無法轉 LaTeX"}]`。
 
 ## 8. 交件前自我檢查
 
 ```bash
-python scripts/check_bank_yaml.py high_school/bank --assets high_school/assets --existing --strict \
-  --issues-csv high_school/剩餘問題.csv
+python scripts/check_bank_yaml.py high_school/bank --assets high_school/assets \
+  --sources high_school/sources --existing --strict --issues-csv high_school/剩餘問題.csv
 ```
 
 - `--existing` 比對 `data/export/papers.jsonl.gz`，列出題庫已經有的卷（目前全是國中卷，高中卷之後才會有）。
 - 除了格式，也檢查內容是否完整（◇）：缺圖、缺表、選項混入、題組材料遺失、上下標遺失、題幹混入解答、圖檔沒被引用。
   `--strict` 時這些也算錯誤，**交件時結束碼必須是 0**。
   真的誤判的題目寫進 `manifest.json` 該卷的 `notes`（題號＋原因）。
-- 第一批成品的驗收意見與 Word 原檔的解析方法見 `docs/HIGH_SCHOOL_FIX_REQUEST.md`。
+- `--sources` 會照 crop 從原卷 PDF 重裁、和附圖比對，並比對原卷文字有沒有漏抄；也會擋占位文字、Word 欄位碼、
+  假表格、沒有 crop 的附圖、同圖多掛（需 `pip install pymupdf pillow`）。
+- 第一批成品的驗收意見見 `docs/HIGH_SCHOOL_FIX_REQUEST.md`；**第三輪（最後一輪）的要求見 `docs/HIGH_SCHOOL_ROUND3.md`**。
 
 - 檢查程式看到 `level: senior` 會改用高中規則：年級 10～12、高中子科、`course` 併入卷 id、單選允許 5 個選項。
 - 錯誤（✗）要全部修掉；提醒（△）裡「會被品管剔除」的題目也請盡量修正。

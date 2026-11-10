@@ -8,9 +8,11 @@
 （規則同 apps/api/quality.py）。--existing 再比對 data/export/papers.jsonl.gz，列出題庫已有的卷。
 
 另外檢查「格式正確但內容不完整」的題目（◇，見 CONTENT 說明），最後列出各類題數：
-缺圖、缺表、選項混入、題組材料遺失、上下標遺失、題幹混入解答、圖檔沒被引用。
+缺圖、缺表、選項混入、題組材料遺失、上下標遺失、題幹混入解答、圖檔沒被引用、占位文字、Word 欄位碼、
+表格可疑、附圖沒有 crop、附圖頁碼不符；加 --assets 再查同圖多掛、附圖空白或過小；
+加 --sources <原卷 PDF 根目錄> 再照 crop 回原卷比對附圖、比對原卷文字有沒有漏抄（需 pymupdf、pillow）。
 --strict 時這些也算錯誤；--issues-csv 檔名 會把每一題的問題寫成 CSV（題目 id、類別、說明）。
-只需要 pyyaml；有錯誤時結束碼為 1。
+基本檢查只需要 pyyaml；有錯誤時結束碼為 1。
 """
 
 from __future__ import annotations
@@ -46,7 +48,62 @@ CONTENT = {
     "上下標遺失": "數學、自然卷在 $…$ 以外出現 x2、10³ 寫成 103、H2O 這類上下標被攤平的寫法",
     "題幹混入解答": "題幹或題組文字裡出現「參考答案」「試題解析」「《答案》」",
     "圖檔沒被引用": "assets/{卷 id}/ 裡有 PNG，但 YAML 沒有任何一題引用它",
+    # ── 以下為第三輪加入：擋下「為了通過檢查而改內容」的做法 ──
+    "占位文字": "出現「詳見原卷」「圖略」「表略」這類占位字，內容其實沒補",
+    "Word欄位碼": "出現 EMBED Equation、EQ \\o、MERGEFORMAT 等 Word 欄位碼，公式或格式沒有轉出來",
+    "表格可疑": "Markdown 表格表頭是「項目｜內容」、只有表頭、各列欄數不一致、或八成以上是空格（沒照原卷轉）",
+    "附圖沒有crop": "附圖沒寫 crop，或 crop 格式不對（page 整數、rect 四個數字且 x1>x0、y1>y0）",
+    "附圖頁碼不符": "附圖的 crop.page 和題目的 page 差超過 1 頁，通常是圖掛錯題",
+    "同圖多掛": "同一個圖檔（內容相同）掛在兩題以上；題組共用圖要放 shared_assets",
+    "附圖空白或過小": "附圖寬不到 120 像素、高不到 40 像素，或幾乎整張空白",
+    "crop與圖檔不符": "（--sources）照 crop 從原卷 PDF 裁出來的區域和附圖 PNG 對不上",
+    "原卷文字遺漏": "（--sources）原卷 PDF 題目區的文字，在 YAML 裡找不到的比例太高（題目文字被刪掉或漏抄）",
 }
+PLACEHOLDER_RE = re.compile(r"詳見原卷|請見原卷|參見原卷|見原卷|[（(]\s*[圖表]\s*略\s*[)）]|[圖表]略|\[[圖表][^\]]{0,6}\]|此處有[圖表]")
+FIELD_RE = re.compile(r"[\x01\x13\x14\x15]|EMBED\s+\S|\bEQ\s*\\|\beq\s*\\|\\o\\al|\\o\s*\(|MERGEFORMAT|INCLUDEPICTURE|SHAPE\s+\\\*|HYPERLINK\s+\"")
+
+
+def table_issue(txt: str) -> str | None:
+    """Markdown 表格看起來沒照原卷轉時回傳原因。"""
+    blocks, cur = [], []
+    for line in txt.split("\n"):
+        if line.strip().startswith("|"):
+            s = line.strip()
+            cur.append(s[:s.rfind("|") + 1])           # 表格列最後一個 | 之後的附註不算
+        elif cur:
+            blocks.append(cur); cur = []
+    if cur:
+        blocks.append(cur)
+    for b in blocks:
+        rows = [r for r in b if not re.fullmatch(r"[|:\-\s]+", r)]
+        cells = [[c.strip() for c in r.strip("|").split("|")] for r in rows]
+        if not cells:
+            continue
+        if re.fullmatch(r"\|\s*項目\s*\|\s*內容\s*\|", rows[0]):
+            return "表頭是「項目｜內容」"
+        if len(rows) < 2:
+            return "只有表頭沒有資料列"
+        if len({len(c) for c in cells}) > 1:
+            return f"各列欄數不一致 {sorted({len(c) for c in cells})}"
+        flat = [c for r in cells for c in r]
+        if sum(1 for c in flat if not c) > len(flat) * 0.8:
+            return "八成以上是空格"
+    return None
+
+
+def asset_list(q: dict) -> list[dict]:
+    out = [a for a in q.get("assets") or [] if isinstance(a, dict)]
+    out += [o["asset"] for o in q.get("options") or [] if isinstance(o, dict) and isinstance(o.get("asset"), dict)]
+    return out
+
+
+def crop_ok(a: dict) -> bool:
+    c = a.get("crop")
+    if not isinstance(c, dict) or not isinstance(c.get("page"), int):
+        return False
+    r = c.get("rect")
+    return (isinstance(r, list) and len(r) == 4 and all(isinstance(v, (int, float)) for v in r)
+            and r[2] > r[0] and r[3] > r[1])
 FIG_RE = re.compile(r"下圖|如圖|附圖|右圖|左圖|上圖|圖[一二三四五六七八九十\(（]|圖\s*[0-9]|照片|地圖所示")
 TAB_RE = re.compile(r"下表|如表|附表|右表|上表|表[一二三四五六七八九十\(（]")
 GROUP_RE = re.compile(r"(由|根據|依據|依|從|閱讀)(上述|上文|上列|上段|上方|此段|這段|該段)")
@@ -85,7 +142,125 @@ def content_issues(q: dict, m: dict) -> list[tuple[str, str]]:
             break
     if hit := ANS_RE.search(txt):
         out.append(("題幹混入解答", f"出現「{hit.group()}」"))
+    every = txt + "\n" + "\n".join(o.get("content") or "" for o in opts) + "\n" + (q.get("explanation") or "")
+    if hit := PLACEHOLDER_RE.search(every):
+        out.append(("占位文字", f"出現「{hit.group()}」"))
+    if hit := FIELD_RE.search(every):
+        out.append(("Word欄位碼", f"出現「{hit.group()}」"))
+    if why := table_issue(txt):
+        out.append(("表格可疑", why))
+    for a in asset_list(q):
+        if not crop_ok(a):
+            out.append(("附圖沒有crop", str(a.get("file"))))
+        elif isinstance(q.get("page"), int) and abs(a["crop"]["page"] - q["page"]) > 1:
+            out.append(("附圖頁碼不符", f"{a.get('file')}：crop 第 {a['crop']['page']} 頁，題目在第 {q['page']} 頁"))
     return out
+
+
+# ── 需要讀圖檔／原卷 PDF 的檢查（--assets、--sources）─────────────────────────
+def image_issue(p: Path) -> str | None:
+    try:
+        from PIL import Image, ImageStat
+    except ImportError:
+        return None
+    try:
+        im = Image.open(p)
+        w, h = im.size
+        if w < 120 or h < 40:
+            return f"{w}×{h} 像素"
+        g = im.convert("L")
+        g.thumbnail((200, 200))
+        if ImageStat.Stat(g).stddev[0] < 4:
+            return "幾乎整張同一個顏色"
+    except Exception as exc:  # noqa: BLE001
+        return f"圖檔打不開：{exc}"
+    return None
+
+
+def _fitz():
+    try:
+        import pymupdf as fitz  # PyMuPDF 1.24 以後的名稱
+    except ImportError:
+        import fitz
+    return fitz
+
+
+def find_pdf(sources: Path, m: dict) -> Path | None:
+    for cand in (sources / (m.get("source_file") or "_"), sources / f"{m.get('id')}.pdf"):
+        if cand.is_file():
+            return cand
+    return None
+
+
+def _small_gray(im):
+    from PIL import ImageOps
+    g = ImageOps.autocontrast(im.convert("L"))
+    return g.resize((48, 48))
+
+
+def crop_matches(pdf, a: dict, png: Path) -> float | None:
+    """照 crop 從 PDF 裁圖，和 PNG 比相似度（-1～1）。"""
+    try:
+        fitz = _fitz()
+        from PIL import Image
+    except ImportError:
+        return None
+    c = a["crop"]
+    if not 1 <= c["page"] <= len(pdf):
+        return -1.0
+    page = pdf[c["page"] - 1]
+    r = fitz.Rect(*c["rect"]) & page.rect
+    if r.is_empty or r.width < 2 or r.height < 2:
+        return -1.0
+    pix = page.get_pixmap(dpi=72, clip=r, alpha=False)
+    a1 = _small_gray(Image.frombytes("RGB", (pix.width, pix.height), pix.samples))
+    a2 = _small_gray(Image.open(png).convert("RGB"))
+    x, y = list(a1.getdata()), list(a2.getdata())
+    mx, my = sum(x) / len(x), sum(y) / len(y)
+    sxy = sum((u - mx) * (v - my) for u, v in zip(x, y))
+    sx = sum((u - mx) ** 2 for u in x) ** 0.5
+    sy = sum((v - my) ** 2 for v in y) ** 0.5
+    return sxy / (sx * sy) if sx and sy else (1.0 if sx == sy else 0.0)
+
+
+def norm_text(s: str) -> str:
+    """只留中文字比對：題號、選項代號、括號、空白、公式寫法不同都不影響。"""
+    return re.sub(r"[^一-鿿]", "", s or "")
+
+
+# 卷末答案、解析區的開頭（之後的文字不算題目）
+ANSWER_HEAD = re.compile(r"《\s*答案\s*》|《\s*試題解析\s*》|(參考答案|試題解析|答案卷|解答卷)\s*$|^\s*【答案】", re.M)
+
+
+# 卷頭、作答說明、配分這類不必轉進 YAML 的行
+HEADER_LINE = re.compile(r"學年|學期|段考|期末考|期中考|月考|試題卷|試卷|班級|座號|姓名|命題|範圍|每題|共\s*\d+\s*分"
+                         r"|答錯|倒扣|作答|劃記|畫記|答案卡|答案卷|配分|得分|不予計分|選擇題|非選擇題|填充題|計算題|題組")
+
+
+def coverage(pdf, d: dict, n: int = 4) -> float | None:
+    """原卷 PDF 題目區（卷末答案區以前、扣掉卷頭與作答說明）的中文字，有多少比例出現在 YAML 裡。
+    以行為單位：一行的 n 字片段有六成以上找得到就算有抄到，依字數加權。"""
+    text = "\n".join(p.get_text() for p in pdf)
+    for m in ANSWER_HEAD.finditer(text):                 # 卷首說明也可能提到「答案卷」，只認後段出現的
+        if m.start() > len(text) * 0.3:
+            text = text[:m.start()]
+            break
+    lines = [norm_text(x) for x in text.split("\n") if not HEADER_LINE.search(x)]
+    lines = [x for x in lines if len(x) >= n]
+    total = sum(len(x) for x in lines)
+    if total < 150:
+        return None                                   # 掃描檔沒有文字層，或幾乎都是公式，無法比對
+    parts = []
+    for q in d.get("questions") or []:
+        parts += [q.get("group_stem") or "", q.get("stem") or "", q.get("explanation") or ""]
+        parts += [o.get("content") or "" for o in q.get("options") or [] if isinstance(o, dict)]
+    have = norm_text("\n".join(parts))
+    got = 0
+    for x in lines:
+        grams = [x[i:i + n] for i in range(len(x) - n + 1)]
+        if sum(1 for g in grams if g in have) >= 0.6 * len(grams):
+            got += len(x)
+    return got / total
 
 
 def doc_id(m: dict) -> str:
@@ -96,8 +271,14 @@ def doc_id(m: dict) -> str:
             f"_g{m['grade']}s{m['semester']}e{m['exam_seq']}")
 
 
-def check(path: Path, assets: Path | None) -> tuple[list[str], list[str], int, int, list[tuple[str, str, str]]]:
-    """回傳 (錯誤, 提醒, 題數, 會被剔除的題數, 內容問題 [(題目 id, 類別, 說明)])。"""
+CROP_MIN = 0.45          # crop 與 PNG 相似度低於此值視為對不上
+COVER_MIN = 0.90         # 原卷文字覆蓋率低於此值視為遺漏
+
+
+def check(path: Path, assets: Path | None, sources: Path | None = None,
+          hashes: dict | None = None) -> tuple[list[str], list[str], int, int, list[tuple[str, str, str]]]:
+    """回傳 (錯誤, 提醒, 題數, 會被剔除的題數, 內容問題 [(題目 id, 類別, 說明)])。
+    hashes：跨卷累積 {圖檔內容 md5: [(題目 id, 檔名)]}，用來找同圖多掛。"""
     err, warn, issues = [], [], []
     try:
         d = yaml.safe_load(path.read_text(encoding="utf-8"))
@@ -191,6 +372,32 @@ def check(path: Path, assets: Path | None) -> tuple[list[str], list[str], int, i
             rel = p.relative_to(assets).as_posix()
             if rel not in used:
                 issues.append((m["id"], "圖檔沒被引用", rel))
+    # 圖檔本身、同圖多掛、crop 對原卷
+    pdf = None
+    if sources:
+        if (pp := find_pdf(sources, m)) is None:
+            err.append(f"sources/ 找不到原卷 PDF（{m.get('source_file')} 或 {m.get('id')}.pdf）")
+        else:
+            pdf = _fitz().open(pp)
+            cov = coverage(pdf, d)
+            if cov is not None and cov < COVER_MIN:
+                issues.append((m.get("id", "?"), "原卷文字遺漏", f"原卷文字只有 {cov:.0%} 出現在 YAML（至少要 {COVER_MIN:.0%}）"))
+    if assets:
+        import hashlib
+        pairs = [(q.get("id", "?"), a) for q in qs for a in asset_list(q)]
+        pairs += [(f"{m.get('id')}:{a.get('key')}", a) for a in shared.values()]
+        for owner, a in pairs:
+            f = a.get("file")
+            if not f or not (assets / f).is_file():
+                continue
+            if why := image_issue(assets / f):
+                issues.append((owner, "附圖空白或過小", f"{f}：{why}"))
+            if hashes is not None:
+                hashes.setdefault(hashlib.md5((assets / f).read_bytes()).hexdigest(), []).append((owner, f))
+            if pdf is not None and crop_ok(a):
+                sim = crop_matches(pdf, a, assets / f)
+                if sim is not None and sim < CROP_MIN:
+                    issues.append((owner, "crop與圖檔不符", f"{f}：相似度 {sim:.2f}"))
     return err, warn, len(qs), rejected, issues
 
 
@@ -202,7 +409,10 @@ def main() -> int:
     ap.add_argument("--strict", action="store_true", help="內容問題（◇）也算錯誤")
     ap.add_argument("--issues-csv", type=Path, help="把每一題的內容問題寫成 CSV")
     ap.add_argument("--quiet", action="store_true", help="只印總結")
+    ap.add_argument("--sources", type=Path,
+                    help="原卷 PDF 根目錄：比對 crop 是否對得上附圖、原卷文字是否完整（需 pymupdf、pillow）")
     args = ap.parse_args()
+    hashes: dict = {}
     paths = sorted(args.target.glob("*.yaml")) if args.target.is_dir() else [args.target]
     have = set()
     if args.existing:
@@ -211,7 +421,7 @@ def main() -> int:
     n_err = n_q = n_rej = 0
     all_issues: list[tuple[str, str, str]] = []
     for p in paths:
-        err, warn, nq, rej, issues = check(p, args.assets)
+        err, warn, nq, rej, issues = check(p, args.assets, args.sources, hashes)
         n_q += nq
         n_rej += rej
         all_issues += issues
@@ -230,6 +440,15 @@ def main() -> int:
             if len(issues) > 30:
                 print(f"  ◇ …另有 {len(issues) - 30} 則內容問題")
         n_err += len(err)
+    for lst in hashes.values():                      # 同一張圖（內容相同）掛在兩個以上的地方
+        if len({o for o, _ in lst}) > 1:
+            for o, f in lst:
+                others = sorted({x for x, _ in lst if x != o})
+                all_issues.append((o, "同圖多掛", f"{f} 與 {others[0]}{' 等' if len(others) > 1 else ''} 相同"))
+    if hashes and not args.quiet:
+        dup = [x for x in all_issues if x[1] == "同圖多掛"]
+        for qid, k, v in dup[:30]:
+            print(f"  ◇ {qid}：{k}（{v}）")
     if args.issues_csv:
         import csv
         with args.issues_csv.open("w", encoding="utf-8-sig", newline="") as f:
