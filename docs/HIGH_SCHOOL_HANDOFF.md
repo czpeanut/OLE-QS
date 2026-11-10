@@ -186,13 +186,19 @@ assets:
 ## 8. 交件前自我檢查
 
 ```bash
-python scripts/check_bank_yaml.py high_school/bank --assets high_school/assets --existing
+python scripts/check_bank_yaml.py high_school/bank --assets high_school/assets --existing --strict \
+  --issues-csv high_school/剩餘問題.csv
 ```
 
 - `--existing` 比對 `data/export/papers.jsonl.gz`，列出題庫已經有的卷（目前全是國中卷，高中卷之後才會有）。
+- 除了格式，也檢查內容是否完整（◇）：缺圖、缺表、選項混入、題組材料遺失、上下標遺失、題幹混入解答、圖檔沒被引用。
+  `--strict` 時這些也算錯誤，**交件時結束碼必須是 0**。
+  真的誤判的題目寫進 `manifest.json` 該卷的 `notes`（題號＋原因）。
+- 第一批成品的驗收意見與 Word 原檔的解析方法見 `docs/HIGH_SCHOOL_FIX_REQUEST.md`。
 
 - 檢查程式看到 `level: senior` 會改用高中規則：年級 10～12、高中子科、`course` 併入卷 id、單選允許 5 個選項。
 - 錯誤（✗）要全部修掉；提醒（△）裡「會被品管剔除」的題目也請盡量修正。
+- 回報的完成數量以「實際交出的檔案」為準。
 
 ## 9. 題庫這邊收到後會做的事（供參考，不用你做）
 
