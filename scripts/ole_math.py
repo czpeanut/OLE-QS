@@ -16,6 +16,7 @@
 """
 from __future__ import annotations
 
+import functools
 import html
 import re
 import shutil
@@ -58,6 +59,11 @@ FULL = str.maketrans({"－": "-", "＋": "+", "＝": "=", "（": "(", "）": ")"
                       "×": r"\times ", "÷": r"\div ", "−": "-", "∙": r"\cdot ", "·": r"\cdot ", "°": r"^{\circ}"})
 
 
+class ToolsMissing(RuntimeError):
+    """這份卷有 MathType 4／5 的公式，但這個環境沒有 ruby／pandoc：整份卷留給有工具的環境做，不要部分轉換。"""
+
+
+@functools.lru_cache(maxsize=None)
 def available() -> str | None:
     """缺什麼工具就回傳說明；都在就回傳 None。"""
     if not shutil.which("ruby"):
@@ -177,6 +183,8 @@ def convert(bins: dict[str, bytes]) -> dict[str, str | None]:
             files.append(f)
             names[f.name] = k
         if files:
+            if (miss := available()):
+                raise ToolsMissing(f"含 MathType 公式 {len(files)} 個，{miss}")
             for fname, tex in mathml_to_latex(to_mathml(files)).items():
                 res[names[fname]] = normalize(tex)
     return res

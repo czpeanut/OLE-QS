@@ -11,14 +11,16 @@
   4. 附圖：用 Word 裡的版面尺寸到 PDF 找位置，從 PDF 裁 PNG（crop 一定對得上）
   5. 品管閘門（apps/api/quality.py）＋檢查程式（scripts/check_bank_yaml.py --sources）逐題檢查，
      不合格的題目剔除並列入 manifest 的 dropped；剔除超過 10% 或原卷文字覆蓋率不足的整卷不交，列入 skipped。
-不用模型、不花錢。需要：LibreOffice、pandoc、ruby（gem mathtype_to_mathml_plus pry nokogiri）、
-python 套件 pyyaml pymupdf pillow olefile。安裝方式見 docs/HIGH_SCHOOL_PIPELINE.md。
+不用模型、不花錢。需要：LibreOffice 正式版、三套中文字型、python 套件 pyyaml pymupdf pillow olefile；
+有 MathType 5 公式的卷另外要 pandoc、ruby（gem mathtype_to_mathml_plus pry nokogiri）。
+安裝方式見 docs/HIGH_SCHOOL_PIPELINE.md；`--check-env` 一次列出這個環境缺什麼。
 """
 from __future__ import annotations
 
 import argparse
 import datetime
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -27,7 +29,33 @@ import tempfile
 import traceback
 from pathlib import Path
 
-import yaml
+PIPELINE_VERSION = "v4.2"
+
+
+def missing_python() -> list[str]:
+    out = []
+    for mods, pip in ((("yaml",), "pyyaml"), (("pymupdf", "fitz"), "pymupdf"), (("olefile",), "olefile"),
+                      (("PIL",), "pillow")):
+        for m in mods:
+            try:
+                __import__(m)
+                break
+            except ImportError:
+                continue
+        else:
+            out.append(pip)
+    return out
+
+
+if __name__ == "__main__" and (_miss := missing_python()):
+    whl = Path(__file__).resolve().parent.parent / "offline" / "wheels"
+    print("Python 缺套件：" + "、".join(_miss))
+    print(f"  有網路：python3 -m pip install {' '.join(_miss)}")
+    if whl.is_dir():
+        print(f"  沒網路（用交接包附的離線套件）：python3 -m pip install --no-index --find-links {whl} {' '.join(_miss)}")
+    sys.exit(2)
+
+import yaml  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
@@ -97,10 +125,18 @@ FONT_MAP = {
           "Arial Unicode MS", "Malgun Gothic"],
 }
 REQUIRED_FONTS = [MING, KAI, HEI]
-FONTS_CONF = f"""<?xml version="1.0"?>
+# 交接包的 offline/fonts/ 附了這三套字型（AR PL：Arphic Public License；Noto：SIL OFL，都可自由散布），
+# 系統裝不了字型的環境直接用這個資料夾；也可以用 --fonts 或環境變數 OLEQS_FONT_DIR 指定別的資料夾。
+FONT_DIRS: list[Path] = []
+
+
+def fonts_conf(cache: Path) -> str:
+    dirs = "".join(f"\n  <dir>{d}</dir>" for d in FONT_DIRS)
+    return f"""<?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
-  <include ignore_missing="yes">/etc/fonts/fonts.conf</include>
+  <include ignore_missing="yes">/etc/fonts/fonts.conf</include>{dirs}
+  <cachedir>{cache}</cachedir>
   <alias binding="strong"><family>serif</family><prefer><family>{MING}</family></prefer></alias>
   <alias binding="strong"><family>sans-serif</family><prefer><family>Liberation Sans</family><family>{HEI}</family></prefer></alias>
   <match target="pattern"><test name="lang" compare="contains"><string>zh</string></test>
@@ -131,8 +167,7 @@ def setup_profile(profile: Path) -> dict:
            '</oor:items>\n')
     (user / "registrymodifications.xcu").write_text(xcu, encoding="utf-8")
     conf = profile / "fonts.conf"
-    conf.write_text(FONTS_CONF, encoding="utf-8")
-    import os
+    conf.write_text(fonts_conf(profile / "fc_cache"), encoding="utf-8")
     return {**os.environ, "FONTCONFIG_FILE": str(conf)}
 
 
@@ -836,7 +871,10 @@ def write_yaml(doc: dict, qs: list[dict], shared: list[dict], ypath: Path, out: 
 def reject(out: Path, pid: str, source_file: str) -> None:
     """不交的卷：YAML、附圖、PDF 移到 rejected/，留給人看原因。"""
     rej = out / "rejected"
-    for p in (out / "bank" / f"{pid}.yaml", out / "assets" / pid, out / "sources" / source_file):
+    paths = [out / "bank" / f"{pid}.yaml", out / "assets" / pid]
+    if source_file:                                     # 空字串時 sources/"" 就是整個 sources/，不能搬
+        paths.append(out / "sources" / source_file)
+    for p in paths:
         if p.exists():
             dst = rej / p.relative_to(out)
             dst.parent.mkdir(parents=True, exist_ok=True)
@@ -845,31 +883,35 @@ def reject(out: Path, pid: str, source_file: str) -> None:
             shutil.move(str(p), str(dst))
 
 
-def env_problems() -> list[str]:
+def env_report(env: dict) -> tuple[list[str], dict]:
+    """（擋住不能跑的問題, 環境資訊）。MathType 工具缺了不擋：含 MathType 4／5 公式的卷會標成「留待完整環境」。"""
     import ole_math
     out = []
-    if not (shutil.which("soffice") or shutil.which("libreoffice")):
-        out.append("找不到 LibreOffice（soffice）")
-    if (m := ole_math.available()):
-        out.append(m)
-    try:
-        import olefile  # noqa: F401
-    except ImportError:
-        out.append("Python 缺 olefile（python3 -m pip install olefile）")
-    fams = subprocess.run(["fc-list", ":", "family"], capture_output=True, text=True).stdout if shutil.which("fc-list") else ""
+    info: dict = {"python": sys.version.split()[0], "pymupdf": getattr(fitz, "VersionBind", "?"),
+                  "libreoffice": lo_version(), "fonts": REQUIRED_FONTS, "font_dirs": [str(d) for d in FONT_DIRS],
+                  "pipeline": PIPELINE_VERSION}
+    if not info["libreoffice"]:
+        out.append("找不到 LibreOffice（soffice）：apt-get install libreoffice-writer（要正式版 24.2 以上）")
+    elif re.search(r"Dev|alpha|beta", info["libreoffice"], re.I):
+        out.append(f"LibreOffice 是開發測試版（{info['libreoffice']}），請改裝正式版（24.2 以上）")
+    if not shutil.which("fc-list"):
+        out.append("找不到 fc-list（fontconfig）：apt-get install fontconfig")
+    fams = subprocess.run(["fc-list", ":", "family"], capture_output=True, text=True, env=env).stdout \
+        if shutil.which("fc-list") else ""
     for f in REQUIRED_FONTS:
         if f not in fams:
-            out.append(f"缺字型「{f}」（apt-get install fonts-arphic-uming fonts-arphic-ukai fonts-noto-cjk）；"
-                       "字型不同，PDF 分頁與附圖位置就和督察的結果不一樣")
-    v = lo_version()
-    if re.search(r"Dev|alpha|beta", v, re.I):
-        out.append(f"LibreOffice 是開發測試版（{v}），請改裝正式版（24.2 以上）")
-    return out
+            out.append(f"缺字型「{f}」：apt-get install fonts-arphic-uming fonts-arphic-ukai fonts-noto-cjk，"
+                       "或用交接包的 offline/fonts/（--fonts 指定）。字型不同，PDF 分頁與附圖位置就和督察的結果不一樣")
+    m = ole_math.available()
+    info["mathtype5"] = m is None
+    if m:
+        info["mathtype5_missing"] = m
+    return out, info
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--root", type=Path, required=True, help="校名來源題庫集中庫的本機資料夾（rel_path 的起點）")
+    ap.add_argument("--root", type=Path, help="校名來源題庫集中庫的本機資料夾（rel_path 的起點）")
     ap.add_argument("--out", type=Path, default=Path("high_school"))
     ap.add_argument("--tasks", type=Path, default=REPO / "data/high_school/round3_tasks.json")
     ap.add_argument("--subject", help="只做這一科（任務清單的 subject，例如 數學、物理、公民與社會）")
@@ -877,11 +919,30 @@ def main() -> int:
     ap.add_argument("--offset", type=int, default=0)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--keep-work", action="store_true", help="保留 _work/ 的中間檔（除錯用）")
+    ap.add_argument("--fonts", type=Path, help="額外的字型資料夾（系統沒裝 AR PL／Noto 字型時用交接包的 offline/fonts）")
+    ap.add_argument("--check-env", action="store_true", help="只檢查環境、列出缺什麼，不跑卷")
     a = ap.parse_args()
-    miss = env_problems()
-    if miss:
-        print("環境還沒裝好：\n  " + "\n  ".join(miss) + "\n安裝方式見 docs/HIGH_SCHOOL_PIPELINE.md 第 1 節")
-        return 2
+    for d in (a.fonts, os.environ.get("OLEQS_FONT_DIR"), REPO / "offline" / "fonts"):
+        if d and Path(d).is_dir() and Path(d).resolve() not in FONT_DIRS:
+            FONT_DIRS.append(Path(d).resolve())
+    profile = Path(tempfile.mkdtemp(prefix="lo_profile_"))
+    LO_ENV.update(setup_profile(profile))
+    miss, info = env_report(LO_ENV)
+    if a.check_env or miss:
+        print("環境資訊：")
+        for k, v in info.items():
+            print(f"  {k}: {v}")
+        if not info["mathtype5"]:
+            print("  ※ 沒有 MathType 轉換工具：沒有 MathType 4／5 公式的卷照常做；有的卷列入 skipped（deferred），"
+                  "留給有工具的環境，不影響其他卷")
+        print(("環境還沒裝好：\n  " + "\n  ".join(miss) + "\n安裝方式見 docs/HIGH_SCHOOL_PIPELINE.md 第 1 節")
+              if miss else "環境 OK，可以跑卷")
+        if miss:
+            return 2
+        if a.check_env:
+            return 0
+    if a.root is None:
+        ap.error("要指定 --root")
     tasks = json.loads(a.tasks.read_text(encoding="utf-8"))["papers"]
     if a.subject:
         tasks = [t for t in tasks if t["subject"] == a.subject]
@@ -896,9 +957,10 @@ def main() -> int:
     manifest = json.loads(mpath.read_text(encoding="utf-8")) if mpath.is_file() else {
         "produced_by": "scripts/word_pipeline.py", "extractor": "programmatic:word_pipeline", "papers": [], "skipped": []}
     manifest["produced_at"] = datetime.date.today().isoformat()
-    profile = Path(tempfile.mkdtemp(prefix="lo_profile_"))
-    LO_ENV.update(setup_profile(profile))
-    manifest["environment"] = {"libreoffice": lo_version(), "fonts": REQUIRED_FONTS, "pipeline": "v4.1"}
+    manifest["environment"] = info
+    import ole_math
+    # 留待完整環境（deferred）的卷不算做過：換到有 MathType 工具的環境再跑同一行就會補做
+    manifest["skipped"] = [s for s in manifest["skipped"] if not (s.get("deferred") and info["mathtype5"])]
     done = {p["id"] for p in manifest["papers"]} | {s.get("id") for s in manifest["skipped"]}
     for k, t in enumerate(tasks, 1):
         if t["id"] in done:
@@ -913,6 +975,10 @@ def main() -> int:
             paper = build(t, src, a.out, profile)
             paper["origin"] = f"校名來源題庫集中庫/{t['rel_path']}"
             entry = finalize(paper, a.out)
+        except ole_math.ToolsMissing as e:
+            manifest["skipped"].append({"id": t["id"], "file": t["rel_path"], "deferred": True,
+                                        "reason": f"留待完整環境：{e}"})
+            print(f"    … 留待完整環境：{e}")
         except Exception as e:                          # noqa: BLE001
             traceback.print_exc()
             reject(a.out, t["id"], "")

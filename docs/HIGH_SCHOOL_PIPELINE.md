@@ -22,7 +22,7 @@
 
 | 項目 | 結果 |
 |---|---|
-| 收件 | 28／28 份，1,018 題；剔除 24 題（2.4%，原因都寫在 manifest）。v4.1 固定字型後重跑 |
+| 收件 | 28／28 份，1,018 題；剔除 24 題（2.4%，原因都寫在 manifest）。v4.1 固定字型後重跑，v4.2 結果逐檔相同 |
 | 檢查程式 3.2 `--strict`（含原卷比對） | 錯誤 0 項 |
 | 對照督察驗收通過的試做卷 | 答案全部一致；屏東地理 Pilot-1 規則 A、B 全卷正確（50／50） |
 | 公式 | 樣本裡約 1,200 個 MathType／方程式編輯器公式全部轉成 LaTeX |
@@ -45,6 +45,26 @@ python3 -m pip install pyyaml pymupdf pillow olefile
   - 字型不同，PDF 的分頁和浮動圖位置就不同，附圖歸題的結果會和督察的不一樣（裁示 #007）。
 
 管線啟動時會自己檢查，缺字型或用了開發測試版會拒絕執行，並把 LibreOffice 版本寫進 manifest 的 `environment`。
+
+**先跑一次環境檢查**，它一次列出所有缺的東西：
+
+```bash
+python3 scripts/word_pipeline.py --check-env
+```
+
+## 1.1 沒有網路的環境（裁示 #008）
+
+雲端另有離線包 `OLE-QS_高中第三輪_離線安裝包_v4.2.zip`，解壓到交接包根目錄（和 `scripts/` 同一層），會多出 `offline/`：
+
+| 缺的東西 | 離線怎麼裝 |
+|---|---|
+| Python 套件（pymupdf、pillow、pyyaml、olefile） | `python3 -m pip install --no-index --find-links offline/wheels pymupdf pillow pyyaml olefile`（Python 3.10 以上、x86_64 Linux） |
+| 字型 AR PL UMing TW、AR PL UKai TW | 不用裝：管線自動使用 `offline/fonts/`（也可用 `--fonts <資料夾>` 指定） |
+| ruby、pandoc（MathType 5 公式工具） | **可以沒有**：沒有 MathType 4／5 公式的卷照常做；有的卷在 manifest 的 `skipped` 標 `deferred: true`、原因「留待完整環境」，不算失敗，之後在有工具的環境跑同一行指令會自動補做 |
+| LibreOffice 正式版 | 離線包沒附，必須事先就有 |
+
+- 字型資料夾和系統字型的結果完全相同（督察實測：題目、附圖逐檔相同，PDF 頁數相同）。
+- 樣本裡史地公、地科、國文都沒有 MathType 5 公式；數學、化學大多有，需要完整環境。
 
 ## 2. 原始檔
 
