@@ -12,6 +12,8 @@
 表格可疑、附圖沒有 crop、附圖頁碼不符；加 --assets 再查同圖多掛、附圖空白或過小；
 加 --sources <原卷 PDF 根目錄> 再照 crop 回原卷比對附圖、比對原卷文字有沒有漏抄（需 pymupdf、pillow）。
 --strict 時這些也算錯誤；--issues-csv 檔名 會把每一題的問題寫成 CSV（題目 id、類別、說明）。
+檢查程式的誤判，在 manifest.json 的 waivers 登記 [{"id": 題目 id, "category": 類別, "reason": 理由}]，
+登記的項目不計入 --strict，但會逐條列出給督察確認（manifest 預設讀 bank 資料夾上一層，或用 --manifest 指定）。
 基本檢查只需要 pyyaml；有錯誤時結束碼為 1。
 """
 
@@ -58,7 +60,9 @@ CONTENT = {
     "附圖空白或過小": "附圖寬不到 120 像素、高不到 40 像素，或幾乎整張空白",
     "crop與圖檔不符": "（--sources）照 crop 從原卷 PDF 裁出來的區域和附圖 PNG 對不上",
     "原卷文字遺漏": "（--sources）原卷 PDF 題目區的文字，在 YAML 裡找不到的比例太高（題目文字被刪掉或漏抄）",
+    "轉檔殘留": "出現 pandoc 等轉檔工具留下的標記：行首「> 」、\\( \\)、{.underline}、[]{…}、<!--、跳脫的 \\| 等",
 }
+LEFTOVER_RE = re.compile(r"(?m)^\s*>\s|\\\(|\\\)|\{\.(underline|mark|smallcaps)\}|\[\]\{|<!--|\\\||\\\*|\\_(?![{])")
 PLACEHOLDER_RE = re.compile(r"詳見原卷|請見原卷|參見原卷|見原卷|[（(]\s*[圖表]\s*略\s*[)）]|[圖表]略|\[[圖表][^\]]{0,6}\]|此處有[圖表]")
 FIELD_RE = re.compile(r"[\x01\x13\x14\x15]|EMBED\s+\S|\bEQ\s*\\|\beq\s*\\|\\o\\al|\\o\s*\(|MERGEFORMAT|INCLUDEPICTURE|SHAPE\s+\\\*|HYPERLINK\s+\"")
 
@@ -104,8 +108,10 @@ def crop_ok(a: dict) -> bool:
     r = c.get("rect")
     return (isinstance(r, list) and len(r) == 4 and all(isinstance(v, (int, float)) for v in r)
             and r[2] > r[0] and r[3] > r[1])
-FIG_RE = re.compile(r"下圖|如圖|附圖|右圖|左圖|上圖|圖[一二三四五六七八九十\(（]|圖\s*[0-9]|照片|地圖所示")
-TAB_RE = re.compile(r"下表|如表|附表|右表|上表|表[一二三四五六七八九十\(（]")
+FIG_RE = re.compile(r"下圖|如圖|附圖|右圖|左圖|上圖|圖[一二三四五六七八九十\(（]|圖\s*[0-9]|地圖所示"
+                    r"|(下列|以下|如|附|右|左|上|下|此|這|該)[兩二三四一]?[張幅]?照片|照片(中|所示|裡)")   # 「數位照片的檔案大小」不算
+TAB_RE = re.compile(r"下表|如表|附表|右表|上表"
+                    r"|(?<![代發外報列年課時])表[一二三四五六七八九十\(（]")   # 「代表一個」不算
 GROUP_RE = re.compile(r"(由|根據|依據|依|從|閱讀)(上述|上文|上列|上段|上方|此段|這段|該段)")
 ANS_RE = re.compile(r"參考答案|試題解析|【解析】|《答案》")
 # 數學式中被攤平的上下標：x2、y3、)2、×103、H2O；排除 $…$ 裡的 LaTeX 與年份等長數字
@@ -147,6 +153,9 @@ def content_issues(q: dict, m: dict) -> list[tuple[str, str]]:
         out.append(("占位文字", f"出現「{hit.group()}」"))
     if hit := FIELD_RE.search(every):
         out.append(("Word欄位碼", f"出現「{hit.group()}」"))
+    plain_every = re.sub(r"\$[^$]*\$", " ", every)          # $…$ 裡的 LaTeX 不算
+    if hit := LEFTOVER_RE.search(plain_every):
+        out.append(("轉檔殘留", "「" + " ".join(plain_every[max(0, hit.start() - 8):hit.end() + 8].split()) + "」"))
     if why := table_issue(txt):
         out.append(("表格可疑", why))
     for a in asset_list(q):
@@ -401,6 +410,42 @@ def check(path: Path, assets: Path | None, sources: Path | None = None,
     return err, warn, len(qs), rejected, issues
 
 
+def load_waivers(path: Path) -> list[dict]:
+    """manifest.json 的 waivers：[{id, category, reason}]，登記檢查程式的誤判。"""
+    if not path or not path.is_file():
+        return []
+    try:
+        m = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return []
+    return [w for w in m.get("waivers") or [] if isinstance(w, dict)]
+
+
+def apply_waivers(issues: list, waivers: list[dict]):
+    """回傳 (已豁免 [(id, 類別, 說明, 理由)], 剩下的問題, 無效登記說明)。
+    每筆登記要對應到一個實際被標出的問題（同 id、同類別），理由至少 10 個字。"""
+    bad, keep, waived, used = [], [], [], set()
+    index = {}
+    for i, w in enumerate(waivers):
+        why = str(w.get("reason") or "")
+        if not w.get("id") or w.get("category") not in CONTENT:
+            bad.append(f"第 {i + 1} 筆缺 id 或 category 不是檢查類別：{w}")
+        elif len(why) < 10:
+            bad.append(f"{w['id']}：{w['category']} 的理由太短（至少 10 個字寫清楚為什麼是誤判）")
+        else:
+            index[(w["id"], w["category"])] = (i, why)
+    for qid, k, v in issues:
+        if (qid, k) in index:
+            i, why = index[(qid, k)]
+            waived.append((qid, k, v, why)); used.add(i)
+        else:
+            keep.append((qid, k, v))
+    for (qid, k), (i, _) in index.items():
+        if i not in used:
+            bad.append(f"{qid}：{k} 沒有對應的檢查結果（已經不是問題就把這筆登記刪掉）")
+    return waived, keep, bad
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("target", type=Path)
@@ -411,7 +456,10 @@ def main() -> int:
     ap.add_argument("--quiet", action="store_true", help="只印總結")
     ap.add_argument("--sources", type=Path,
                     help="原卷 PDF 根目錄：比對 crop 是否對得上附圖、原卷文字是否完整（需 pymupdf、pillow）")
+    ap.add_argument("--manifest", type=Path,
+                    help="manifest.json（讀 waivers 誤判登記）；不給時自動找 bank 資料夾上一層的 manifest.json")
     args = ap.parse_args()
+    waivers = load_waivers(args.manifest or (args.target if args.target.is_dir() else args.target.parent).parent / "manifest.json")
     hashes: dict = {}
     paths = sorted(args.target.glob("*.yaml")) if args.target.is_dir() else [args.target]
     have = set()
@@ -449,13 +497,22 @@ def main() -> int:
         dup = [x for x in all_issues if x[1] == "同圖多掛"]
         for qid, k, v in dup[:30]:
             print(f"  ◇ {qid}：{k}（{v}）")
+    waived, all_issues, bad_w = apply_waivers(all_issues, waivers)
     if args.issues_csv:
         import csv
         with args.issues_csv.open("w", encoding="utf-8-sig", newline="") as f:
             w = csv.writer(f)
-            w.writerow(["題目或卷 id", "類別", "說明"])
-            w.writerows(all_issues)
+            w.writerow(["題目或卷 id", "類別", "說明", "已登記誤判理由"])
+            w.writerows([(*x, "") for x in all_issues] + [(q, k, v, why) for q, k, v, why in waived])
     print(f"\n{len(paths)} 份卷、{n_q} 題：錯誤 {n_err} 項；會被品管剔除 {n_rej} 題")
+    for w in bad_w:
+        print(f"  ✗ 誤判登記無效：{w}")
+    n_err += len(bad_w)
+    if waived:
+        print(f"已登記誤判（不計入 --strict，督察會逐條確認）：{len(waived)} 項")
+        if not args.quiet:
+            for qid, k, v, why in waived:
+                print(f"  ☐ {qid}：{k}（{v}）— 登記理由：{why}")
     by = {}
     for qid, k, v in all_issues:
         by.setdefault(k, set()).add(v if k == "圖檔沒被引用" else qid)   # 沒被引用的圖以張數計
