@@ -25,6 +25,8 @@ import zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 R = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}"
 LABEL = re.compile(r"（([A-E甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥一二三四五六七八九十ㄅ-ㄩ]|[0-9]{1,2}|十[一二三四五六七八九])）")
@@ -135,12 +137,30 @@ def run_parts(run, rel):
             yield "　", False, ""
         elif tag in (W + "br", W + "cr"):
             yield ("\n" if node.get(W + "type") == "page" else " "), False, ""
-        elif tag in (W + "drawing", W + "pict", W + "object") or tag.endswith("}AlternateContent"):
-            for blip in node.iter():
-                rid = blip.get(R + "embed") or blip.get(R + "id")
-                if rid and rid in rel and "media/" in rel[rid]:
-                    yield ("\x00IMG:" + rel[rid] + "\x00"), False, ""
-                    break
+        elif tag == W + "object":
+            ole = next((e.get(R + "id") for e in node.iter() if e.tag.endswith("}OLEObject")), None)
+            prev = next((e.get(R + "id") for e in node.iter() if e.tag.endswith("}imagedata")), None)
+            if ole in rel:
+                yield f"\x00OLE:{rel[ole]}\x01{rel.get(prev, '')}\x01{size(node)}\x00", False, ""
+            elif prev in rel:
+                yield f"\x00IMG:{rel[prev]}\x01{size(node)}\x00", False, ""
+        elif tag in (W + "drawing", W + "pict") or tag.endswith("}AlternateContent"):
+            media = next((rel[r] for e in node.iter() for r in (e.get(R + "embed"), e.get(R + "id"))
+                          if r in rel and "media/" in rel[r]), "")
+            yield f"\x00IMG:{media or 'shape'}\x01{size(node)}\x00", False, ""     # 沒有圖檔的是向量圖形（線條、文字方塊組成的圖）
+
+
+def size(node) -> str:
+    """圖在版面上的寬高（point），附圖對位用。"""
+    for e in node.iter():
+        if e.tag.endswith("}extent") and e.get("cx"):
+            return f"{int(e.get('cx')) / 12700:.1f}x{int(e.get('cy')) / 12700:.1f}"
+        st = e.get("style") or ""
+        w = re.search(r"width:([\d.]+)pt", st)
+        h = re.search(r"height:([\d.]+)pt", st)
+        if w and h:
+            return f"{float(w.group(1)):.1f}x{float(h.group(1)):.1f}"
+    return ""
 
 
 def runs(el):
@@ -199,24 +219,50 @@ def table(tbl, rel) -> str:
     return "\n".join(lines)
 
 
-def stream(path: Path):
+def stream(path: Path, math: bool = True):
+    """段落流。math=True 時把 MathType 物件轉成 $LaTeX$（需要 ole_math.py 的工具），轉不出來的寫 ⟦公式無法轉換⟧。"""
     with zipfile.ZipFile(path) as z:
         rel = rels(z)
         body = ET.fromstring(z.read("word/document.xml")).find(W + "body")
-    i = 0
-    for el in body:
-        if el.tag == W + "p":
-            kind, text = "p", paragraph(el, rel)
-        elif el.tag == W + "tbl":
-            kind, text = "table", table(el, rel)
-        else:
-            continue
-        images = re.findall(r"\x00IMG:([^\x00]+)\x00", text)
-        n = iter(range(1, len(images) + 1))
-        text = re.sub(r"\x00IMG:[^\x00]+\x00", lambda _: f"[圖{next(n)}]", text)
+        rows, i = [], 0
+        for el in body:
+            if el.tag == W + "p":
+                kind, text = "p", paragraph(el, rel)
+            elif el.tag == W + "tbl":
+                kind, text = "table", table(el, rel)
+            else:
+                continue
+            rows.append({"i": i, "kind": kind, "text": text})
+            i += 1
+        oles = sorted({m for r in rows for m in re.findall(r"\x00OLE:([^\x01\x00]+)\x01", r["text"])})
+        latex = {}
+        if math and oles:
+            import ole_math
+            latex = ole_math.convert({o: z.read(o) for o in oles if o in z.namelist()})
+
+    def ole(m: re.Match) -> str:
+        target, preview, sz = m.group(1), m.group(2), m.group(3)
+        tex = latex.get(target)
+        if tex:
+            return f"${tex}$"
+        if not math:
+            return "⟦公式⟧"
+        data_is_eq = target in latex                     # 是方程式但轉不出來
+        return "⟦公式無法轉換⟧" if data_is_eq else f"\x00IMG:{preview or 'shape'}\x01{sz}\x00"
+
+    for r in rows:
+        text = re.sub(r"\x00OLE:([^\x01\x00]+)\x01([^\x01\x00]*)\x01([^\x00]*)\x00", ole, r["text"])
+        images = []
+
+        def img(m: re.Match) -> str:
+            media, _, sz = m.group(1).partition("\x01")
+            images.append({"media": media, "size": sz})
+            return f"[圖{len(images)}]"
+
+        text = re.sub(r"\x00IMG:([^\x00]*)\x00", img, text)
+        text = re.sub(r"\$\s*\$", "", text)
         if text.strip() or images:
-            yield {"i": i, "kind": kind, "text": text, "images": images}
-        i += 1
+            yield {**r, "text": text, "images": images}
 
 
 def main() -> int:
