@@ -83,7 +83,71 @@ def meta(task: dict) -> dict:
     return doc
 
 
+# ── 轉檔環境：固定字型，每個環境排出同一份 PDF ──────────────────────────────
+# 原卷用 Windows 字型（新細明體、標楷體…），各環境沒有就各自找替代字，字寬不同、分頁不同，
+# 浮動圖的位置跟著變，附圖歸題的結果就不一樣。所以一律對到下面這幾套公開字型。
+MING, KAI, HEI = "AR PL UMing TW", "AR PL UKai TW", "Noto Sans CJK TC"
+FONT_MAP = {
+    MING: ["新細明體", "PMingLiU", "細明體", "MingLiU", "新細明體-ExtB", "PMingLiU-ExtB", "細明體-ExtB", "MingLiU-ExtB",
+           "華康標宋體", "華康中明體", "華康明體", "華康細明體", "華康粗明體", "文鼎中明", "文鼎細明", "文鼎粗明",
+           "MS Mincho", "ＭＳ 明朝", "SimSun", "宋体", "新宋体", "PMingLiU-ExtB"],
+    KAI: ["標楷體", "DFKai-SB", "BiauKai", "華康標楷體", "華康楷書體", "文鼎中楷", "文鼎特毛楷", "文鼎粗楷", "KaiTi", "楷体"],
+    HEI: ["華康中黑體", "華康粗黑體", "華康黑體", "華康細黑體", "文鼎中黑", "文鼎粗黑", "文鼎新粗黑", "文鼎細黑",
+          "微軟正黑體", "Microsoft JhengHei", "Microsoft YaHei", "微软雅黑", "DengXian", "等线", "SimHei", "黑体",
+          "Arial Unicode MS", "Malgun Gothic"],
+}
+REQUIRED_FONTS = [MING, KAI, HEI]
+FONTS_CONF = f"""<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <include ignore_missing="yes">/etc/fonts/fonts.conf</include>
+  <alias binding="strong"><family>serif</family><prefer><family>{MING}</family></prefer></alias>
+  <alias binding="strong"><family>sans-serif</family><prefer><family>Liberation Sans</family><family>{HEI}</family></prefer></alias>
+  <match target="pattern"><test name="lang" compare="contains"><string>zh</string></test>
+    <edit name="family" mode="prepend" binding="strong"><string>{MING}</string></edit></match>
+</fontconfig>
+"""
+
+
+def setup_profile(profile: Path) -> dict:
+    """LibreOffice 使用者設定（字型替換表）與 fontconfig 設定；回傳 soffice 要用的環境變數。"""
+    user = profile / "user"
+    user.mkdir(parents=True, exist_ok=True)
+    pairs = []
+    n = 0
+    for target, names in FONT_MAP.items():
+        for name in names:
+            pairs.append(f'<node oor:name="_{n}" oor:op="replace">'
+                         f'<prop oor:name="Always" oor:op="fuse"><value>true</value></prop>'
+                         f'<prop oor:name="OnScreenOnly" oor:op="fuse"><value>false</value></prop>'
+                         f'<prop oor:name="ReplaceFont" oor:op="fuse"><value>{name}</value></prop>'
+                         f'<prop oor:name="SubstituteFont" oor:op="fuse"><value>{target}</value></prop></node>')
+            n += 1
+    xcu = ('<?xml version="1.0" encoding="UTF-8"?>\n<oor:items xmlns:oor="http://openoffice.org/2001/registry" '
+           'xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\n'
+           '<item oor:path="/org.openoffice.Office.Common/Font/Substitution"><prop oor:name="Replacement" oor:op="fuse">'
+           '<value>true</value></prop></item>\n'
+           '<item oor:path="/org.openoffice.Office.Common/Font/Substitution/FontPairs">' + "".join(pairs) + '</item>\n'
+           '</oor:items>\n')
+    (user / "registrymodifications.xcu").write_text(xcu, encoding="utf-8")
+    conf = profile / "fonts.conf"
+    conf.write_text(FONTS_CONF, encoding="utf-8")
+    import os
+    return {**os.environ, "FONTCONFIG_FILE": str(conf)}
+
+
+def lo_version() -> str:
+    exe = shutil.which("soffice") or shutil.which("libreoffice")
+    if not exe:
+        return ""
+    r = subprocess.run([exe, "--version"], capture_output=True, text=True, timeout=120)
+    return r.stdout.strip()
+
+
 # ── 轉檔 ──────────────────────────────────────────────────────────────────
+LO_ENV: dict = {}
+
+
 def convert(src: Path, work: Path, profile: Path) -> tuple[Path, Path]:
     work.mkdir(parents=True, exist_ok=True)
     base = work / "paper"
@@ -93,7 +157,7 @@ def convert(src: Path, work: Path, profile: Path) -> tuple[Path, Path]:
 
     def lo(fmt: str, doc: Path) -> None:
         subprocess.run([exe, f"-env:UserInstallation=file://{profile}", "--headless", "--convert-to", fmt,
-                        "--outdir", str(work), str(doc)], capture_output=True, timeout=600)
+                        "--outdir", str(work), str(doc)], capture_output=True, timeout=600, env=LO_ENV or None)
 
     if src.suffix.lower() == ".doc":
         # 解析用：所有 EQ 欄位改寫（公式類寫成 ⟦EQ …⟧ 字面，docx_stream 轉 LaTeX）
@@ -321,7 +385,8 @@ class PdfFigures:
             if br.x1 < r.x0 - 5 or br.x0 > r.x1 + 5:
                 continue
             if 0 <= br.y0 - r.y1 <= 16 or 0 <= r.y0 - br.y1 <= 16:
-                r = r | br
+                # 只併入和圖左右重疊的那一段：同一行的「▲圖(一)　▲圖(二)」會是一個橫跨兩張圖的文字區塊
+                r = r | fitz.Rect(max(br.x0, r.x0), br.y0, min(br.x1, r.x1), br.y1)
         return r
 
     def crop(self, p: int, r: "fitz.Rect", png: Path) -> dict:
@@ -791,9 +856,14 @@ def env_problems() -> list[str]:
         import olefile  # noqa: F401
     except ImportError:
         out.append("Python 缺 olefile（python3 -m pip install olefile）")
-    fc = subprocess.run(["fc-list", ":lang=zh"], capture_output=True, text=True) if shutil.which("fc-list") else None
-    if fc is not None and not fc.stdout.strip():
-        out.append("系統沒有中文字型，LibreOffice 轉出的 PDF 會缺字（apt-get install fonts-noto-cjk）")
+    fams = subprocess.run(["fc-list", ":", "family"], capture_output=True, text=True).stdout if shutil.which("fc-list") else ""
+    for f in REQUIRED_FONTS:
+        if f not in fams:
+            out.append(f"缺字型「{f}」（apt-get install fonts-arphic-uming fonts-arphic-ukai fonts-noto-cjk）；"
+                       "字型不同，PDF 分頁與附圖位置就和督察的結果不一樣")
+    v = lo_version()
+    if re.search(r"Dev|alpha|beta", v, re.I):
+        out.append(f"LibreOffice 是開發測試版（{v}），請改裝正式版（24.2 以上）")
     return out
 
 
@@ -827,6 +897,8 @@ def main() -> int:
         "produced_by": "scripts/word_pipeline.py", "extractor": "programmatic:word_pipeline", "papers": [], "skipped": []}
     manifest["produced_at"] = datetime.date.today().isoformat()
     profile = Path(tempfile.mkdtemp(prefix="lo_profile_"))
+    LO_ENV.update(setup_profile(profile))
+    manifest["environment"] = {"libreoffice": lo_version(), "fonts": REQUIRED_FONTS, "pipeline": "v4.1"}
     done = {p["id"] for p in manifest["papers"]} | {s.get("id") for s in manifest["skipped"]}
     for k, t in enumerate(tasks, 1):
         if t["id"] in done:

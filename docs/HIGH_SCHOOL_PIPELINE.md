@@ -22,23 +22,29 @@
 
 | 項目 | 結果 |
 |---|---|
-| 收件 | 28／28 份，1,017 題；剔除 25 題（2.5%，原因都寫在 manifest） |
+| 收件 | 28／28 份，1,018 題；剔除 24 題（2.4%，原因都寫在 manifest）。v4.1 固定字型後重跑 |
 | 檢查程式 3.2 `--strict`（含原卷比對） | 錯誤 0 項 |
 | 對照督察驗收通過的試做卷 | 答案全部一致；屏東地理 Pilot-1 規則 A、B 全卷正確（50／50） |
 | 公式 | 樣本裡約 1,200 個 MathType／方程式編輯器公式全部轉成 LaTeX |
 | 速度 | 一份卷約 7 秒，1,506 份單機約 3 小時 |
+| 環境 | LibreOffice 24.2.7、字型 AR PL UMing／UKai TW、Noto Sans CJK TC |
 
 剔除的多半是原卷本身的狀況：三選一的單選題、選項畫在圖裡、兩張圖在 PDF 上疊在一起。這些照「寧可漏抓，不可錯抓」不收。
 
 ## 1. 安裝（每個環境一次）
 
 ```bash
-apt-get install -y libreoffice-writer pandoc ruby fonts-noto-cjk   # 中文字型一定要有，否則 PDF 缺字
+apt-get install -y libreoffice-writer pandoc ruby fonts-arphic-uming fonts-arphic-ukai fonts-noto-cjk
 gem install mathtype_to_mathml_plus pry nokogiri --no-document
 python3 -m pip install pyyaml pymupdf pillow olefile
 ```
 
-管線啟動時會自己檢查，缺什麼會列出來。
+- **LibreOffice 要用正式版**（24.2 以上），不要用 LibreOfficeDev、alpha、beta。
+- **三套中文字型都要有**：AR PL UMing TW、AR PL UKai TW、Noto Sans CJK TC。
+  - 原卷用的是 Windows 字型（新細明體、標楷體），管線會固定對到這三套。
+  - 字型不同，PDF 的分頁和浮動圖位置就不同，附圖歸題的結果會和督察的不一樣（裁示 #007）。
+
+管線啟動時會自己檢查，缺字型或用了開發測試版會拒絕執行，並把 LibreOffice 版本寫進 manifest 的 `environment`。
 
 ## 2. 原始檔
 
@@ -52,16 +58,18 @@ python3 -m pip install pyyaml pymupdf pillow olefile
 
 | 執行 agent | 科目（任務清單的 subject） | 份數 |
 |---|---|---|
-| Codex | 數學、物理、化學、生物 | 494＋124＋135＋102 |
-| worker-agent-phoenix-01 | 地理、公民與社會、歷史、地球科學、國文 | 83＋246＋240＋28＋14 |
+| Codex | 數學、物理、化學、生物 | 496＋126＋136＋106 |
+| worker-agent-phoenix-01 | 地理、公民與社會、歷史、地球科學、國文 | 94＋258＋246＋29＋15 |
 
-- 每批 50 份。第 1 批 `--offset 0 --limit 50`，第 2 批 `--offset 50 --limit 50`，依此類推。
-- 每科第 1 批交件就是 G2 關卡。
+份數以 `data/high_school/round3_tasks.json` 為準，共 1,506 份。
+
+- **每科第 1 批 15 份**（`--offset 0 --limit 15`），就是 G2 關卡，督察抽驗通過才繼續。
+- 之後每批 50 份：`--offset 15 --limit 50`、`--offset 65 --limit 50`，依此類推。
 
 ## 3.1 跑一批
 
 ```bash
-python scripts/word_pipeline.py --root <集中庫本機資料夾> --out out/數學_第1批 --subject 數學 --offset 0 --limit 50
+python scripts/word_pipeline.py --root <集中庫本機資料夾> --out out/數學_第1批 --subject 數學 --offset 0 --limit 15
 ```
 
 - `--subject`：任務清單的科目，可用的值有數學、物理、化學、生物、地球科學、國文、歷史、地理、公民與社會。
