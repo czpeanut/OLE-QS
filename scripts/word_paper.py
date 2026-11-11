@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 ZW = "​"
 IMG = re.compile(r"\[圖(\d+)\]")
+LEADIMG = r"(?:\[圖\d+\]|⟦IMG:\d+⟧)"                 # 段落開頭的附圖錨點（docx_stream 的 [圖n] 或 word_pipeline 的 ⟦IMG:n⟧）
 CN = "零一二三四五六七八九十"
 SECTION = re.compile(r"^(第\s*[壹貳參肆伍一二三四五]\s*部分|[壹貳參肆伍陸柒捌玖拾]+\s*[、.．]|[一二三四五六七八九十]{1,3}\s*[、.．])")
 SECTION_WORDS = re.compile(r"題|選擇|填充|計算|問答|作答|混合|非選|作圖|閱讀|題組")
@@ -63,7 +64,7 @@ def group_range(text: str) -> tuple[int, int, int, int] | None:
 def question_number(text: str) -> tuple[int, int] | None:
     """段落開頭的題號 → (題號, 題號後的位置)；開頭的 [圖n] 不算。"""
     t = plain(text)
-    lead = re.match(r"^(\s*\[圖\d+\]\s*)*\s*", t).end()
+    lead = re.match(rf"^(\s*{LEADIMG}\s*)*\s*", t).end()
     for rx in QSTART:
         m = rx.match(t[lead:])
         if m:
@@ -146,7 +147,7 @@ def parse(rows: list[dict]) -> dict:
             continue
         if qn and (qn[0] == expect or (qn[0] == 1 and sections[-1]["rows"] == [] and len(sections) > 1)):
             num, pos = qn
-            lead_imgs = "".join(IMG.findall(plain(text)[:pos]) and re.findall(r"\[圖\d+\]", plain(text)[:pos]))
+            lead_imgs = "".join(re.findall(LEADIMG, plain(text)[:pos]))
             cur_q = {"number": num, "section": len(sections), "rows": [{**r, "text": lead_imgs + strip_lead(text)}]}
             questions.append(cur_q)
             sections[-1]["rows"].append(r)
@@ -171,7 +172,7 @@ def parse(rows: list[dict]) -> dict:
 def strip_lead(text: str) -> str:
     """去掉段落開頭的 [圖n]、作答括號與題號，留下題幹。"""
     t = text.replace(ZW, "")
-    lead = re.match(r"^((?:<u>)?\s*\[圖\d+\]\s*(?:</u>)?)*\s*", t).end()
+    lead = re.match(rf"^((?:<u>)?\s*{LEADIMG}\s*(?:</u>)?)*\s*", t).end()
     t = t[lead:]
     for rx in QSTART:
         m = rx.match(plain(t))

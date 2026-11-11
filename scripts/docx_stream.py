@@ -132,7 +132,16 @@ def run_parts(run, rel):
     for node in run:
         tag = node.tag
         if tag == W + "t":
-            yield (node.text or "").replace("​", ""), under, script
+            t = (node.text or "").replace("\u200b", "")
+            if any("\uf000" <= ch <= "\uf0ff" for ch in t):           # 符號字型打的私用區字元
+                font = ""
+                if pr is not None and pr.find(W + "rFonts") is not None:
+                    f = pr.find(W + "rFonts")
+                    font = f.get(W + "ascii") or f.get(W + "hAnsi") or ""
+                t = "".join(sym_char(font, ord(ch)) if "\uf000" <= ch <= "\uf0ff" else ch for ch in t)
+            yield t, under, script
+        elif tag == W + "sym":                                  # 符號字型（Symbol、Wingdings）的字
+            yield sym_char(node.get(W + "font") or "", int(node.get(W + "char") or "0", 16)), under, script
         elif tag == W + "tab":
             yield "　", False, ""
         elif tag in (W + "br", W + "cr"):
@@ -148,6 +157,25 @@ def run_parts(run, rel):
             media = next((rel[r] for e in node.iter() for r in (e.get(R + "embed"), e.get(R + "id"))
                           if r in rel and "media/" in rel[r]), "")
             yield f"\x00IMG:{media or 'shape'}\x01{size(node)}\x00", False, ""     # 沒有圖檔的是向量圖形（線條、文字方塊組成的圖）
+
+
+SYMBOL_FONT = {0x41 + i: c for i, c in enumerate("ΑΒΧΔΕΦΓΗΙϑΚΛΜΝΟΠΘΡΣΤΥςΩΞΨΖ")}
+SYMBOL_FONT.update({0x61 + i: c for i, c in enumerate("αβχδεφγηιϕκλμνοπθρστυϖωξψζ")})
+SYMBOL_FONT.update({0xB4: "×", 0xB1: "±", 0xA3: "≤", 0xB3: "≥", 0xB9: "≠", 0xBB: "≈", 0xAE: "→", 0xAC: "←",
+                    0xAB: "↔", 0xB0: "°", 0xD0: "∠", 0x5E: "⊥", 0x2D: "−", 0xB7: "•", 0xD7: "⋅", 0xA5: "∞",
+                    0xB6: "∂", 0xD6: "√", 0xC6: "∅", 0xCE: "∈", 0xC7: "∩", 0xC8: "∪", 0xBA: "≡", 0x40: "≅",
+                    0x7E: "∼", 0xA2: "′", 0xB2: "″", 0xDE: "⇒", 0xDB: "⇔", 0xBE: "—", 0x5C: "∴", 0xA4: "/"})
+
+
+def sym_char(font: str, code: int) -> str:
+    """Word 的 w:sym 與私用區字元（U+F0xx）→ Unicode。認不出的字型寫 ⟦符號⟧，交給品管擋下。"""
+    c = code - 0xF000 if code >= 0xF000 else code
+    if "symbol" in font.lower():
+        return SYMBOL_FONT.get(c, chr(c) if 0x20 <= c < 0x7F else "⟦符號⟧")
+    if not font or "wingdings" not in font.lower() and "webdings" not in font.lower():
+        return chr(c) if 0x20 <= c < 0x7F else "⟦符號⟧"
+    return {0x6C: "●", 0x6E: "■", 0xA8: "□", 0xFC: "✓", 0xFB: "✗", 0x81: "①", 0x82: "②", 0x83: "③",
+            0x84: "④", 0x85: "⑤", 0x8C: "①", 0x8D: "②", 0x8E: "③", 0x8F: "④", 0x90: "⑤"}.get(c, "⟦符號⟧")
 
 
 def size(node) -> str:
