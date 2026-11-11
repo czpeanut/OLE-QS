@@ -108,11 +108,38 @@ def eq_latex(src: str) -> str:
     return out
 
 
-def eq_field(m: re.Match) -> str:
-    try:
-        return "$" + eq_latex(m.group(1).strip()).replace("\u3000", " ").strip() + "$"
-    except (EqError, RecursionError):
-        return m.group(0)
+INNER = re.compile(r"⟦\s*eq\s*([^⟦⟧]*)⟧", re.I)
+
+
+def eq_fields(s: str) -> str:
+    """⟦EQ …⟧ 由內而外轉 LaTeX（根號裡包分數這種巢狀欄位），最外層包 $…$；轉不了的整段照原樣留著。
+    ⟦VEC f⟧（字母疊箭頭圖）→ $\\vec{f}$。"""
+    s = re.sub(r"⟦VEC ([A-Za-z]{1,2})⟧", r"$\\vec{\1}$", s)
+    store: list[str] = []
+    for _ in range(5):
+        def conv(m: re.Match) -> str:
+            body = re.sub(r"\x02(\d+)\x03", lambda k: "\x04" + k.group(1) + "\x05", m.group(1).strip())
+            try:
+                tex = eq_latex(body).replace("\u3000", " ").strip()
+            except (EqError, RecursionError):
+                raise EqError(m.group(0))
+            store.append(tex)
+            return f"\x02{len(store) - 1}\x03"
+        try:
+            new = INNER.sub(conv, s)
+        except EqError:
+            return s
+        if new == s:
+            break
+        s = new
+
+    def restore(t: str) -> str:
+        for _ in range(6):
+            t = re.sub(r"\x04(\d+)\x05", lambda k: store[int(k.group(1))], t)
+        return t
+
+    store[:] = [restore(t) for t in store]
+    return re.sub(r"\x02(\d+)\x03", lambda k: "$" + store[int(k.group(1))] + "$", s)
 
 
 def rels(z: zipfile.ZipFile) -> dict[str, str]:
@@ -227,7 +254,7 @@ def paragraph(p, rel) -> str:
             buf += text
     flush()
     s = "".join(out).replace("</u><u>", "")
-    s = LIT.sub(eq_field, s)
+    s = eq_fields(s)
     return LABEL.sub(r"(\1)", s)
 
 

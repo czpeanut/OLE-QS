@@ -11,8 +11,9 @@
     soffice --headless --convert-to docx --outdir 輸出資料夾 輸出.doc
 
 改寫方式（需要 olefile：python3 -m pip install olefile）：
-1. 文字流裡的 EQ 欄位「\\x13 EQ … \\x15」換成同樣長度的顯示文字，不足的長度補零寬空白 U+200B（docx_stream.py 會刪掉）；
-2. 各欄位表（PlcFld）只移除 EQ 欄位的記錄，讓 LibreOffice 把那段當普通文字讀。
+1. 照片段表（piece table）讀出全文，EQ 欄位「\\x13 EQ … \\x15」換成同樣長度的顯示文字，
+   不足的長度補零寬空白 U+200B（docx_stream.py 會刪掉）；
+2. 各欄位表（PlcFld）只刪掉改寫過的那些 EQ 欄位的記錄，讓 LibreOffice 把那段當普通文字讀。
 長度不變，所以段落、字元格式（含底線）、圖片位置都不動；MathType（EMBED Equation）、頁碼等其他欄位原樣保留。
 規則：
   eq \\o\\al(　,12.)              → 12.          題號
@@ -67,76 +68,146 @@ def display(instr: str) -> str | None:
     return "⟦" + instr.replace(ZW, "") + "⟧"     # 其他 EQ：原指令照字面留給 docx_stream.py
 
 
-FIB_FLD = (16, 17, 18, 19, 48, 57, 59)   # FibRgFcLcb97 裡的欄位表：主文、頁首、註腳、註解、尾註、文字方塊、頁首文字方塊
+# FibRgFcLcb97 裡的欄位表 → 所屬的子文件（欄位表裡的 CP 是相對於子文件開頭）
+FIB_FLD = {16: "main", 18: "ftn", 17: "hdd", 19: "atn", 48: "edn", 57: "txbx", 59: "hdrtxbx"}
 FLT_EQ = 49                                # 欄位類型 EQ
+CLX = 33                                   # FibRgFcLcb97 的 fcClx（片段表）
 
 
-def fib_base(wd: bytes) -> int:
-    """FibRgFcLcb97 在 WordDocument 資料流裡的起點。"""
+def fib_base(wd: bytes) -> tuple[int, int]:
+    """(FibRgLw97 起點, FibRgFcLcb97 起點)。"""
     if wd[:2] != b"\xec\xa5":
         raise ValueError("不是 Word 97 以後的 .doc（FIB 識別碼不對）")
     csw = int.from_bytes(wd[32:34], "little")
     p = 34 + csw * 2
     cslw = int.from_bytes(wd[p:p + 2], "little")
-    return p + 2 + cslw * 4 + 2
+    return p + 2, p + 2 + cslw * 4 + 2
 
 
-def drop_eq_entries(wd: bytearray, ts: bytearray) -> int:
-    """從每張欄位表（PlcFld）移除 EQ 欄位的開始、分隔、結束三種記錄，其他欄位（EMBED 方程式、頁碼…）保留。"""
-    base, removed = fib_base(wd), 0
-    for idx in FIB_FLD:
-        at = base + idx * 8
+def subdoc_offsets(wd: bytes) -> dict[str, int]:
+    lw, _ = fib_base(wd)
+    ccp = [struct.unpack_from("<i", wd, lw + 4 * i)[0] for i in range(11)]
+    text, ftn, hdd, atn, edn, txbx = ccp[3], ccp[4], ccp[5], ccp[7], ccp[8], ccp[9]
+    return {"main": 0, "ftn": text, "hdd": text + ftn, "atn": text + ftn + hdd, "edn": text + ftn + hdd + atn,
+            "txbx": text + ftn + hdd + atn + edn, "hdrtxbx": text + ftn + hdd + atn + edn + txbx}
+
+
+def read_text(wd: bytes, ts: bytes) -> tuple[list[str], list[tuple[int, int]]]:
+    """照片段表（piece table）讀出全文：每個字元的 (WordDocument 資料流位元組位置, 寬度 1 或 2)。
+    Word 的文字在檔案裡不一定連續（快速存檔、編輯過的檔），只有照片段表讀才不會把欄位切斷。"""
+    _, rg = fib_base(wd)
+    fc, lcb = struct.unpack_from("<II", wd, rg + CLX * 8)
+    clx = ts[fc:fc + lcb]
+    k = 0
+    while k < len(clx) and clx[k] == 0x01:                 # Prc（格式資料），跳過
+        k += 3 + struct.unpack_from("<H", clx, k + 1)[0]
+    if k >= len(clx) or clx[k] != 0x02:
+        raise ValueError("讀不到片段表")
+    size = struct.unpack_from("<I", clx, k + 1)[0]
+    plc = clx[k + 5:k + 5 + size]
+    n = (size - 4) // 12
+    cps = struct.unpack_from(f"<{n + 1}i", plc, 0)
+    chars, where = [], []
+    for i in range(n):
+        raw = struct.unpack_from("<I", plc, 4 * (n + 1) + 8 * i + 2)[0]
+        compressed = bool(raw & 0x40000000)
+        fcp = raw & 0x3FFFFFFF
+        for j in range(cps[i + 1] - cps[i]):
+            if compressed:
+                at = fcp // 2 + j
+                chars.append(bytes(wd[at:at + 1]).decode("cp1252", errors="replace"))
+                where.append((at, 1))
+            else:
+                at = fcp + 2 * j
+                chars.append(bytes(wd[at:at + 2]).decode("utf-16-le", errors="replace"))
+                where.append((at, 2))
+    return chars, where
+
+
+def encode(ch: str, width: int) -> bytes | None:
+    if width == 2:
+        return ch.encode("utf-16-le")
+    try:
+        b = ch.encode("cp1252")
+        return b if len(b) == 1 else None
+    except UnicodeEncodeError:
+        return None
+
+
+def rewrite_text(wd: bytearray, chars: list[str], where: list[tuple[int, int]]) -> tuple[int, set[int], list[str]]:
+    """EQ 欄位（\\x13 EQ … \\x15）換成顯示文字，長度不變（不足補零寬空白；單位元組片段補空白）。
+    回傳 (改寫個數, 改寫過的欄位標記 CP, 略過的欄位)。"""
+    text = "".join(chars)
+    field = re.compile(r"\x13([^\x13\x14\x15]{1,300})\x15")
+    done, cps, skipped = 0, set(), []
+    for _ in range(4):                                      # 巢狀欄位：由內而外，最多四層
+        changed = False
+        for m in list(field.finditer(text)):
+            instr = m.group(1)
+            vec = re.fullmatch(r"\s*eq\s*\\o\s*\(\s*([A-Za-z]{1,2})\s*,\s*\x01\s*\)\s*", instr, re.I)
+            if vec:                                         # 字母疊一張小箭頭圖：物理卷的向量
+                new = "⟦VEC " + vec.group(1) + "⟧"
+            elif re.search(r"[\x00-\x1f\ufffd]", instr):
+                continue
+            else:
+                new = display(instr)
+            if new is None:
+                continue                                    # 不是 EQ（EMBED、HYPERLINK…）：保留給 LibreOffice
+            L = m.end() - m.start()
+            narrow = any(where[c][1] == 1 for c in range(m.start(), m.end()))
+            pad = " " if narrow else ZW
+            if new.startswith("⟦VEC"):
+                rep = pad * (L - len(new)) + new
+            elif new.startswith("⟦"):
+                rep = "⟦" + instr + "⟧"
+            elif len(new) <= L:
+                rep = pad * (L - len(new)) + new              # 靠右：原本顯示的參數在欄位尾端，沿用那裡的字元格式
+            else:
+                skipped.append(instr)
+                continue
+            data = [encode(ch, where[c][1]) for c, ch in zip(range(m.start(), m.end()), rep)]
+            if any(d is None for d in data):
+                skipped.append(instr)                       # 單位元組片段放不下中文
+                continue
+            for c, d in zip(range(m.start(), m.end()), data):
+                at = where[c][0]
+                wd[at:at + len(d)] = d
+            cps.update((m.start(), m.end() - 1))
+            text = text[:m.start()] + rep + text[m.end():]
+            done += 1
+            changed = True
+        if not changed:
+            break
+    return done, cps, skipped
+
+
+def drop_eq_entries(wd: bytearray, ts: bytearray, cps: set[int], chars: list[str]) -> int:
+    """欄位表（PlcFld）只刪掉已經改寫成文字的 EQ 欄位的記錄；沒改寫的欄位與其他欄位都保留。"""
+    _, rg = fib_base(wd)
+    offs = subdoc_offsets(wd)
+    removed = 0
+    for idx, sub in FIB_FLD.items():
+        at = rg + idx * 8
         fc, lcb = struct.unpack_from("<II", wd, at)
         if lcb < 10:
             continue
         n = (lcb - 4) // 6
-        cps = list(struct.unpack_from(f"<{n + 1}i", ts, fc))
+        cp = list(struct.unpack_from(f"<{n + 1}i", ts, fc))
         flds = [bytes(ts[fc + 4 * (n + 1) + 2 * i: fc + 4 * (n + 1) + 2 * i + 2]) for i in range(n)]
-        drop, stack = set(), []
+        drop = set()
         for i, f in enumerate(flds):
-            ch = f[0] & 0x1F
-            if ch == 0x13:
-                stack.append((i, f[1] == FLT_EQ))
-            elif ch == 0x14 and stack and stack[-1][1]:
+            a = cp[i] + offs[sub]
+            want = {0x13: "\x13", 0x15: "\x15"}.get(f[0] & 0x1F)
+            if a in cps and want and a < len(chars) and chars[a] == want:
                 drop.add(i)
-            elif ch == 0x15 and stack:
-                b, is_eq = stack.pop()
-                if is_eq:
-                    drop.update((b, i))
         if not drop:
             continue
         keep = [i for i in range(n) if i not in drop]
-        new = struct.pack(f"<{len(keep) + 1}i", *[cps[i] for i in keep], cps[n]) + b"".join(flds[i] for i in keep)
+        new = struct.pack(f"<{len(keep) + 1}i", *[cp[i] for i in keep], cp[n]) + b"".join(flds[i] for i in keep)
         ts[fc:fc + len(new)] = new
         struct.pack_into("<I", wd, at + 4, len(new) if keep else 0)
         removed += len(drop)
     return removed
-
-
-def rewrite_text(wd: bytearray) -> tuple[int, list[str]]:
-    """把文字流裡的 EQ 欄位（\\x13 EQ … \\x15）換成顯示文字＋零寬空白，長度不變。"""
-    n, skipped = 0, []
-    field = re.compile(r"\x13([^\x13\x14\x15]{1,300})\x15")
-    for off in (0, 0, 0, 1, 1, 1):                      # 文字可能從奇數位元組開始；重跑三次處理巢狀欄位
-        text = bytes(wd[off:]).decode("utf-16-le", errors="replace")
-        for m in field.finditer(text):
-            instr = m.group(1)
-            if re.search(r"[\x00-\x1f\ufffd]", instr):
-                continue                                # 二進位資料剛好含這些位元組，不是欄位
-            new = display(instr)
-            if new is None:
-                continue                                # 不是 EQ（EMBED、HYPERLINK…）：保留給 LibreOffice
-            if new.startswith("⟦"):
-                rep_s = "⟦" + m.group(0)[1:-1] + "⟧"
-            elif len(new) <= len(m.group(0)):
-                rep_s = ZW * (len(m.group(0)) - len(new)) + new     # 靠右：原本顯示的參數在欄位尾端，沿用那裡的字元格式
-            else:
-                skipped.append(instr)
-                continue
-            a = off + 2 * m.start()
-            wd[a:a + 2 * len(rep_s)] = rep_s.encode("utf-16-le")
-            n += 1
-    return n, skipped
 
 
 def flatten_file(src: Path, dst: Path) -> tuple[int, int, list[str]]:
@@ -146,8 +217,9 @@ def flatten_file(src: Path, dst: Path) -> tuple[int, int, list[str]]:
         wd = bytearray(ole.openstream("WordDocument").read())
         table = "1Table" if int.from_bytes(wd[0x0A:0x0C], "little") & 0x0200 else "0Table"
         ts = bytearray(ole.openstream(table).read())
-        n, skipped = rewrite_text(wd)
-        removed = drop_eq_entries(wd, ts)
+        chars, where = read_text(bytes(wd), bytes(ts))
+        n, cps, skipped = rewrite_text(wd, chars, where)
+        removed = drop_eq_entries(wd, ts, cps, chars)
         ole.write_stream("WordDocument", bytes(wd))
         ole.write_stream(table, bytes(ts))
     return n, removed, skipped

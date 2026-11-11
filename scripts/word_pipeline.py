@@ -115,7 +115,27 @@ def wrap_scripts(seg: str) -> str:
     return out
 
 
-def clean(text: str) -> str:
+ELEMENTS = set("""H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr
+Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os
+Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu""".split())
+CHEM = re.compile(r"(?<![A-Za-z0-9$\\{])((?:\(?(?:[A-Z][a-z]?\d*)+\)?\d*){1,10})(?![A-Za-z0-9}])")
+
+
+def chem_formulas(seg: str) -> str:
+    """自然科：原卷沒設下標的化學式（CO2、C6H5ONa、Fe2(SO4)3）→ $C_{6}H_{5}ONa$。
+    整段都要是合法元素符號、而且至少有一個數字，才當成化學式。"""
+    def fix(m: re.Match) -> str:
+        tok = m.group(1)
+        if not re.search(r"\d", tok) or not re.search(r"[A-Z]", tok):
+            return tok
+        syms = re.findall(r"[A-Z][a-z]?", tok)
+        if any(x not in ELEMENTS for x in syms) or re.fullmatch(r"[A-Z]\d", tok) and syms[0] not in ("H", "O", "N", "C"):
+            return tok
+        return "$" + re.sub(r"(?<=[A-Za-z)])(\d+)", r"_{\1}", tok) + "$"
+    return CHEM.sub(fix, seg)
+
+
+def clean(text: str, chem: bool = False) -> str:
     t = text.replace(wp.ZW, "").replace("　", " ")
     lines = []
     for line in t.split("\n"):
@@ -130,6 +150,8 @@ def clean(text: str) -> str:
     parts = t.split("$")
     for k in range(0, len(parts), 2):
         parts[k] = wrap_scripts(parts[k])
+        if chem:
+            parts[k] = chem_formulas(parts[k])
     t = "$".join(parts)
     t = re.sub(r"\$\$", "", t)                              # $a$$b$ → $ab$
     t = re.sub(r"<u>\s*</u>", "", t)
@@ -192,14 +214,20 @@ class PdfFigures:
                                 self.chars.append((pno, ch["bbox"][1]))
         self.cjk = "".join(cjk)
 
-    def find(self, text: str, start: int) -> tuple[int, int, float] | None:
-        """題幹開頭的中文字（不管標點、空白、換行）從 start 往後找 → (字串位置, 頁, y)。"""
+    def find(self, text: str, start: int, window: int = 2500) -> tuple[int, int, float] | None:
+        """題幹的中文字（不管標點、空白、換行）在 start 之後 window 字以內找 → (字串位置, 頁, y)。
+        用題幹裡不同位置的幾段字分別找，取最前面的命中，避免「下列敘述何者正確」這種常見句配到別題。"""
         key = norm_cjk(text)
         for n in (12, 8, 6):
             if len(key) < n:
                 continue
-            i = self.cjk.find(key[:n], start)
-            if i >= 0:
+            hits = []
+            for off in range(0, min(len(key) - n, 48) + 1, 4):
+                i = self.cjk.find(key[off:off + n], start, start + window + off + n)
+                if i >= 0 and i - off >= start - 2:
+                    hits.append(max(start, i - off))
+            if hits:
+                i = min(hits)
                 return i, self.chars[i][0], self.chars[i][1]
         return None
 
@@ -270,7 +298,8 @@ class PdfFigures:
     def crop(self, p: int, r: "fitz.Rect", png: Path) -> dict:
         page = self.doc[p]
         clip = fitz.Rect(r.x0 - 3, r.y0 - 3, r.x1 + 3, r.y1 + 3) & page.rect
-        pix = page.get_pixmap(dpi=220, clip=clip, alpha=False)
+        dpi = min(600, max(220, int(300 * 72 / max(clip.width, 1)) + 1))   # 寬至少 300 像素
+        pix = page.get_pixmap(dpi=dpi, clip=clip, alpha=False)
         png.parent.mkdir(parents=True, exist_ok=True)
         pix.save(str(png))
         return {"page": p + 1, "rect": [round(clip.x0, 2), round(clip.y0, 2), round(clip.x1, 2), round(clip.y1, 2)]}
@@ -301,6 +330,7 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
         r["text"] = re.sub(r"\[圖(\d+)\]", tok, r["text"])
         r["images"] = []
     parsed = wp.parse(rows)
+    chem = doc["subject"] == "自然"
 
     figs = PdfFigures(pdf)
     sections, questions, shared, dropped = [], [], [], []
@@ -308,7 +338,7 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
     for gi, g in enumerate(parsed["groups"]):
         raw = "\n".join(x["text"] for x in g["rows"] if not (x["kind"] == "table" and is_layout_table(x["text"])))
         g_imgs = [int(i) for x in g["rows"] for i in TOKEN.findall(x["text"])]
-        group_info[id(g)] = {"text": clean(TOKEN.sub("", raw)), "imgs": g_imgs, "g": g,
+        group_info[id(g)] = {"text": clean(TOKEN.sub("", raw), chem), "imgs": g_imgs, "g": g,
                              "head": f"第{g['from']}～{g['to']}題為題組"}
 
     sec_index = {}
@@ -336,11 +366,11 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
         if not opts_raw:
             topts = table_options(raw)
         stem_imgs = [int(i) for i in TOKEN.findall(stem_raw)]
-        stem = clean(TOKEN.sub("", stem_raw))
+        stem = clean(TOKEN.sub("", stem_raw), chem)
         options = []
         for o in opts_raw:
             imgs = [int(i) for i in TOKEN.findall(o["content"])]
-            content = clean(TOKEN.sub("", o["content"]))
+            content = clean(TOKEN.sub("", o["content"]), chem)
             options.append({"label": o["label"], "content": content, "_imgs": imgs})
         if topts:
             options = [{**o, "_imgs": []} for o in topts]
@@ -369,7 +399,7 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
 
     place_figures(questions, images, figs, shared, pid, out)
     attach_answers(parsed, questions)
-    attach_explanations(parsed, questions)
+    attach_explanations(parsed, questions, chem)
     sections = [{"ord": k, "name": v, "count": 0} for k, v in sorted(sec_index.items())]
     doc["sections"] = sections
     scope = next((clean(wp.plain(r["text"])) for r in parsed["head"] if re.search(r"範\s*圍", wp.plain(r["text"]))), None)
@@ -398,11 +428,19 @@ def place_figures(qs: list[dict], images: list[dict], figs: PdfFigures, shared: 
             cursor = hit[0] + 1
             q["_pos"] = (hit[1], hit[2])
             q["page"] = hit[1] + 1
+        elif cursor < len(figs.chars) and len(norm_cjk(q["stem"])) < 12:
+            # 題幹幾乎全是公式（中文太少，找不到）：用前一題之後的位置推估，頁碼可能差一頁
+            p, y = figs.chars[min(cursor, len(figs.chars) - 1)]
+            q["_pos"] = (p, y + 1)
+            q["_est"] = True
+            q["page"] = p + 1
         else:
             q["_reason"] = q["_reason"] or "在原卷 PDF 找不到這題的位置"
-    starts = [(k, q["_pos"]) for k, q in enumerate(qs) if q["_pos"]]
+    starts = [(k, q["_pos"]) for k, q in enumerate(qs) if q["_pos"] and not q.get("_est")]   # 推估的位置不拿來分圖
 
     def owner(p: int, r: "fitz.Rect", k0: int) -> int:
+        if qs[k0].get("_est"):
+            return k0
         c = (p, (r.y0 + r.y1) / 2)
         own = k0
         for k, pos in starts:
@@ -436,13 +474,14 @@ def place_figures(qs: list[dict], images: list[dict], figs: PdfFigures, shared: 
         for o, (lab, imgs) in zip(q.get("options", []), q["_opt_imgs"]):
             if not imgs:
                 continue
-            if len(imgs) > 1:
-                q["_reason"] = q["_reason"] or "選項有多張圖"
-                continue
-            hit = figs.locate(images[imgs[0]]["size"], pages)
-            if not hit:
+            hits = [figs.locate(images[i]["size"], pages) for i in imgs]
+            if any(h is None for h in hits) or len({h[0] for h in hits}) > 1:
                 q["_reason"] = q["_reason"] or "選項圖在原卷 PDF 找不到位置"
                 continue
+            r = hits[0][1]
+            for h in hits[1:]:                              # 一個選項由幾張小圖拼成：合成一張
+                r = r | h[1]
+            hit = (hits[0][0], r)
             key_ = f"s{sec}_{num}_opt{lab}"
             file = f"{pid}/{key_}.png"
             o["asset"] = {"key": key_, "file": file, "crop": figs.crop(hit[0], hit[1], out / "assets" / file)}
@@ -468,20 +507,28 @@ def place_figures(qs: list[dict], images: list[dict], figs: PdfFigures, shared: 
                 q["shared_asset"] = gk
                 gi["asset"]["used_by"].append(qid)
     for q in qs:
-        for k in ("_stem_imgs", "_opt_imgs", "_gi", "_pos"):
+        for k in ("_stem_imgs", "_opt_imgs", "_gi", "_pos", "_est"):
             q.pop(k, None)
 
 
-def attach_answers(parsed: dict, qs: list[dict]) -> None:
-    by_num = {}
+def entry_lookup(entries: list[dict], qs: list[dict]):
+    """題號 → 答案／解析文字。題號全卷不重複就照題號；各大題重新編號的，照大題順序一段對一段。"""
     nums = [q["number"] for q in qs]
-    entries = parsed["answers"]
     if len(set(nums)) == len(nums):
-        by_num = {a["number"]: a["text"] for a in entries}
-        get = lambda q: by_num.get(q["number"])          # noqa: E731
-    else:                                               # 題號重複（各大題重新編號）：照順序對
-        seq = [a["text"] for a in entries]
-        get = lambda q: seq[qs.index(q)] if len(seq) == len(qs) else None  # noqa: E731
+        by_num: dict[int, str] = {}
+        for e in entries:
+            by_num.setdefault(e["number"], e["text"])
+        return lambda q: by_num.get(q["number"])
+    secs = list(dict.fromkeys(q["section"] for q in qs))
+    blocks = list(dict.fromkeys(e["block"] for e in entries))
+    if len(secs) != len(blocks):
+        return lambda q: None
+    table = {(secs[k], e["number"]): e["text"] for k, b in enumerate(blocks) for e in entries if e["block"] == b}
+    return lambda q: table.get((q["section"], q["number"]))
+
+
+def attach_answers(parsed: dict, qs: list[dict]) -> None:
+    get = entry_lookup(parsed["answers"], qs)
     for q in qs:
         raw = get(q)
         if raw is None:
@@ -517,16 +564,13 @@ def attach_answers(parsed: dict, qs: list[dict]) -> None:
                 q["answer_source"] = "answer_key"
 
 
-def attach_explanations(parsed: dict, qs: list[dict]) -> None:
-    nums = [q["number"] for q in qs]
-    if len(set(nums)) != len(nums):
-        return
-    by_num = {e["number"]: e["text"] for e in parsed["explanations"]}
+def attach_explanations(parsed: dict, qs: list[dict], chem: bool = False) -> None:
+    get = entry_lookup(parsed["explanations"], qs)
     for q in qs:
-        t = by_num.get(q["number"])
+        t = get(q)
         if not t or "⟦圖⟧" in t or re.search(r"⟦", t):
             continue
-        t = clean(t)
+        t = clean(t, chem)
         if len(t) >= 4 and not bad_text(t) and not re.search(r"^\|", t, re.M):
             q["explanation"] = t
 
@@ -547,7 +591,7 @@ def finalize(paper: dict, out: Path) -> dict:
             ok, why = evaluate(q, {"document": doc, "shared_assets": paper["shared_assets"]})
             reason = None if ok else "；".join(why)
         if reason:
-            dropped.append({"number": q["number"], "section": q["section"], "reason": reason})
+            dropped.append({"number": q["number"], "section": q["section"], "reason": reason, "text": qtext(q)})
         else:
             keep.append(q)
     src_pdf = out / "sources" / doc["source_file"]
@@ -557,7 +601,7 @@ def finalize(paper: dict, out: Path) -> dict:
     ypath.parent.mkdir(parents=True, exist_ok=True)
     for _ in range(3):                                  # 檢查程式點名的題剔除後再檢查一次
         write_yaml(doc, keep, paper["shared_assets"], ypath, out)
-        err, warn, n, nbad, issues = cbk.check(ypath, out / "assets", out / "sources")
+        err, warn, n, nbad, issues = cbk.check(ypath, out / "assets", out / "sources", None, dropped_text(dropped))
         paper_level = [i for i in issues if i[0] == pid or not i[0].startswith(pid + "_")]
         bad_ids = {i[0] for i in issues if i[0].startswith(pid + "_")}
         bad_ids |= {e.split("：")[0].strip() for e in err if e.split("：")[0].strip().startswith(pid + "_")}
@@ -566,9 +610,9 @@ def finalize(paper: dict, out: Path) -> dict:
         for q in list(keep):
             if q["id"] in bad_ids:
                 why = "；".join(f"{c}：{d}" for i, c, d in issues if i == q["id"]) or "；".join(e for e in err if e.startswith(q["id"]))
-                dropped.append({"number": q["number"], "section": q["section"], "reason": why[:200]})
+                dropped.append({"number": q["number"], "section": q["section"], "reason": why[:200], "text": qtext(q)})
                 keep.remove(q)
-    err, warn, n, nbad, issues = cbk.check(ypath, out / "assets", out / "sources")
+    err, warn, n, nbad, issues = cbk.check(ypath, out / "assets", out / "sources", None, dropped_text(dropped))
     entry = {"id": pid, "source_file": doc["source_file"], "origin": paper.get("origin"),
              "questions": len(keep), "dropped": dropped, "has_answer_key": any(q.get("answer") for q in keep),
              "has_explanation": any(q.get("explanation") for q in keep),
@@ -584,6 +628,16 @@ def finalize(paper: dict, out: Path) -> dict:
         reject(out, pid, doc["source_file"])
         entry["skip_reason"] = problem
     return entry
+
+
+def qtext(q: dict) -> str:
+    """剔除題目的原文（題組材料＋題幹＋選項），寫進 manifest 的 dropped，檢查程式算覆蓋率用。"""
+    parts = [q.get("group_stem") or "", q.get("stem") or ""] + [o.get("content") or "" for o in q.get("options") or []]
+    return "\n".join(p for p in parts if p)
+
+
+def dropped_text(dropped: list[dict]) -> str:
+    return "\n".join(d.get("text") or "" for d in dropped)
 
 
 def write_yaml(doc: dict, qs: list[dict], shared: list[dict], ypath: Path, out: Path) -> None:

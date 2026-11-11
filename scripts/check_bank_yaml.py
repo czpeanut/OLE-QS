@@ -12,6 +12,7 @@
 表格可疑、附圖沒有 crop、附圖頁碼不符；加 --assets 再查同圖多掛、附圖空白或過小；
 加 --sources <原卷 PDF 根目錄> 再照 crop 回原卷比對附圖、比對原卷文字有沒有漏抄（需 pymupdf、pillow）。
 --strict 時這些也算錯誤；--issues-csv 檔名 會把每一題的問題寫成 CSV（題目 id、類別、說明）。
+manifest.json 各卷 dropped 申報剔除的題目（含 text 原文）算覆蓋率時不當成遺漏（3.2 版）。
 檢查程式的誤判，在 manifest.json 的 waivers 登記 [{"id": 題目 id, "category": 類別, "reason": 理由}]，
 登記的項目不計入 --strict，但會逐條列出給督察確認（manifest 預設讀 bank 資料夾上一層，或用 --manifest 指定）。
 基本檢查只需要 pyyaml；有錯誤時結束碼為 1。
@@ -246,9 +247,10 @@ HEADER_LINE = re.compile(r"學年|學期|段考|期末考|期中考|月考|試�
                          r"|答錯|倒扣|作答|劃記|畫記|答案卡|答案卷|配分|得分|不予計分|選擇題|非選擇題|填充題|計算題|題組")
 
 
-def coverage(pdf, d: dict, n: int = 4) -> float | None:
+def coverage(pdf, d: dict, n: int = 4, dropped_text: str = "") -> float | None:
     """原卷 PDF 題目區（卷末答案區以前、扣掉卷頭與作答說明）的中文字，有多少比例出現在 YAML 裡。
-    以行為單位：一行的 n 字片段有六成以上找得到就算有抄到，依字數加權。"""
+    以行為單位：一行的 n 字片段有六成以上找得到就算有抄到，依字數加權。
+    dropped_text：manifest 該卷 dropped 申報剔除的題目原文（第 3.2 版起），申報過的不算遺漏。"""
     text = "\n".join(p.get_text() for p in pdf)
     for m in ANSWER_HEAD.finditer(text):                 # 卷首說明也可能提到「答案卷」，只認後段出現的
         if m.start() > len(text) * 0.3:
@@ -263,7 +265,7 @@ def coverage(pdf, d: dict, n: int = 4) -> float | None:
     for q in d.get("questions") or []:
         parts += [q.get("group_stem") or "", q.get("stem") or "", q.get("explanation") or ""]
         parts += [o.get("content") or "" for o in q.get("options") or [] if isinstance(o, dict)]
-    have = norm_text("\n".join(parts))
+    have = norm_text("\n".join(parts) + "\n" + dropped_text)
     got = 0
     for x in lines:
         grams = [x[i:i + n] for i in range(len(x) - n + 1)]
@@ -285,7 +287,7 @@ COVER_MIN = 0.90         # 原卷文字覆蓋率低於此值視為遺漏
 
 
 def check(path: Path, assets: Path | None, sources: Path | None = None,
-          hashes: dict | None = None) -> tuple[list[str], list[str], int, int, list[tuple[str, str, str]]]:
+          hashes: dict | None = None, dropped_text: str = "") -> tuple[list[str], list[str], int, int, list[tuple[str, str, str]]]:
     """回傳 (錯誤, 提醒, 題數, 會被剔除的題數, 內容問題 [(題目 id, 類別, 說明)])。
     hashes：跨卷累積 {圖檔內容 md5: [(題目 id, 檔名)]}，用來找同圖多掛。"""
     err, warn, issues = [], [], []
@@ -388,7 +390,7 @@ def check(path: Path, assets: Path | None, sources: Path | None = None,
             err.append(f"sources/ 找不到原卷 PDF（{m.get('source_file')} 或 {m.get('id')}.pdf）")
         else:
             pdf = _fitz().open(pp)
-            cov = coverage(pdf, d)
+            cov = coverage(pdf, d, dropped_text=dropped_text)
             if cov is not None and cov < COVER_MIN:
                 issues.append((m.get("id", "?"), "原卷文字遺漏", f"原卷文字只有 {cov:.0%} 出現在 YAML（至少要 {COVER_MIN:.0%}）"))
     if assets:
@@ -408,6 +410,18 @@ def check(path: Path, assets: Path | None, sources: Path | None = None,
                 if sim is not None and sim < CROP_MIN:
                     issues.append((owner, "crop與圖檔不符", f"{f}：相似度 {sim:.2f}"))
     return err, warn, len(qs), rejected, issues
+
+
+def load_dropped(path: Path) -> dict[str, str]:
+    """manifest.json 各卷 dropped 申報的題目原文 {卷 id: 文字}，算覆蓋率時不當成遺漏。"""
+    if not path or not path.is_file():
+        return {}
+    try:
+        m = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return {}
+    return {p.get("id"): "\n".join(str(x.get("text") or "") for x in p.get("dropped") or [] if isinstance(x, dict))
+            for p in m.get("papers") or [] if isinstance(p, dict)}
 
 
 def load_waivers(path: Path) -> list[dict]:
@@ -459,7 +473,9 @@ def main() -> int:
     ap.add_argument("--manifest", type=Path,
                     help="manifest.json（讀 waivers 誤判登記）；不給時自動找 bank 資料夾上一層的 manifest.json")
     args = ap.parse_args()
-    waivers = load_waivers(args.manifest or (args.target if args.target.is_dir() else args.target.parent).parent / "manifest.json")
+    mpath = args.manifest or (args.target if args.target.is_dir() else args.target.parent).parent / "manifest.json"
+    waivers = load_waivers(mpath)
+    dropped = load_dropped(mpath)
     hashes: dict = {}
     paths = sorted(args.target.glob("*.yaml")) if args.target.is_dir() else [args.target]
     have = set()
@@ -469,7 +485,7 @@ def main() -> int:
     n_err = n_q = n_rej = 0
     all_issues: list[tuple[str, str, str]] = []
     for p in paths:
-        err, warn, nq, rej, issues = check(p, args.assets, args.sources, hashes)
+        err, warn, nq, rej, issues = check(p, args.assets, args.sources, hashes, dropped.get(p.stem, ""))
         n_q += nq
         n_rej += rej
         all_issues += issues

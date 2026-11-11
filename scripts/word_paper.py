@@ -36,7 +36,7 @@ QSTART = [
 ]
 ANSWER_HEAD = re.compile(r"《\s*(?:參考)?答\s*案\s*》|【\s*(?:參考)?答\s*案\s*】|^[\s－\-—=＝*＊]*(?:參考答案|試題答案|答案卷|標準答案|解答)[\s－\-—=＝*＊:：]*$|"
                          r"^[\s－\-—=＝]*(?:答案|解答)[\s－\-—=＝]*$|參考答案|試題答案")
-EXPLAIN_HEAD = re.compile(r"《\s*試題解析\s*》|《\s*解析\s*》|【\s*(?:試題)?解析\s*】|^[\s－\-—=＝]*(?:試題解析|詳解|解析)[\s－\-—=＝:：]*$")
+EXPLAIN_HEAD = re.compile(r"《\s*(?:試題)?(?:解析|詳解)\s*》|【\s*(?:試題)?(?:解析|詳解)\s*】|^[\s－\-—=＝]*(?:試題解析|詳解|解析)[\s－\-—=＝:：]*$")
 OPT = re.compile(r"[（(]\s*([A-E])\s*[）)]")
 ANS_BLANK_LINE = re.compile(r"^\s*(答|解|Ans)\s*[:：]?\s*$")
 
@@ -125,6 +125,12 @@ def parse(rows: list[dict]) -> dict:
     cur_q: dict | None = None
     cur_group: dict | None = None
     expect = 1
+    # 第 1 題之前、最後一個大題標題之後的文章（例如「一、閱讀測驗」後直接接文章）
+    last_sec = max((k for k, r in enumerate(head) if is_section(r["text"])), default=-1)
+    pre = [r for r in head[last_sec + 1:] if not is_instruction(r["text"])] if last_sec >= 0 else []
+    if pre and passage_like(pre):
+        cur_group = {"from": None, "to": None, "rows": pre, "section": 1, "implicit": True}
+        groups.append(cur_group)
     for r in body:
         text = r["text"]
         qn = question_number(text)
@@ -152,7 +158,10 @@ def parse(rows: list[dict]) -> dict:
             questions.append(cur_q)
             sections[-1]["rows"].append(r)
             expect = num + 1
-            if cur_group and not (cur_group["from"] <= num <= cur_group["to"]):
+            if cur_group and cur_group.get("implicit"):
+                cur_group["from"] = cur_group["from"] or num
+                cur_group["to"] = num
+            elif cur_group and not (cur_group["from"] <= num <= cur_group["to"]):
                 cur_group = None
             if cur_group:
                 cur_q["group"] = cur_group
@@ -160,13 +169,43 @@ def parse(rows: list[dict]) -> dict:
         # 一般段落：在題組材料區（題組標題之後、第一題之前）就是材料，否則併入目前這題
         if cur_group and (not cur_q or cur_q.get("group") is not cur_group):
             cur_group["rows"].append(r)
-        elif cur_q:
+        elif not cur_q:
+            # 大題標題後面直接接文章（沒有「第 X～Y 題為題組」）：隱含題組
+            if not is_instruction(text) and passage_like([r]):
+                cur_group = {"from": None, "to": None, "rows": [r], "section": len(sections), "implicit": True}
+                groups.append(cur_group)
+        elif options_complete(cur_q) and passage_like([r]) and not OPT.match(plain(text).strip()):
+            # 上一題選項已經完整，後面又出現長文：下一組題目的文章
+            cur_group = {"from": None, "to": None, "rows": [r], "section": len(sections), "implicit": True}
+            groups.append(cur_group)
+            cur_q = None
+        else:
             cur_q["rows"].append(r)
         sections[-1]["rows"].append(r)
-    answers = parse_entries(rows[ans_at:exp_at]) if ans_at < len(rows) else []
-    explanations = parse_entries(rows[exp_at:]) if exp_at < len(rows) else []
+    blocks = answer_blocks(rows[ans_at:]) if ans_at < len(rows) else []
+    answers = [dict(e, block=k) for k, b in enumerate(blocks) for e in parse_entries(b["ans"])]
+    explanations = [dict(e, block=k) for k, b in enumerate(blocks) for e in parse_entries(b["exp"])]
     return {"head": head, "sections": sections, "questions": questions, "groups": groups,
             "answers": answers, "explanations": explanations, "has_answer_zone": ans_at < len(rows)}
+
+
+def is_instruction(text: str) -> bool:
+    """作答說明（「說明：第1題至第20題…」「每題2分」），不是文章。"""
+    t = plain(text).strip()
+    return bool(re.match(r"^[※＊*]?\s*(說明|作答|注意|每題|答錯|本大題|請將|請依|請在|以下|下列各題)", t))
+
+
+def passage_like(rows: list[dict]) -> bool:
+    """像文章（共用材料）：中文字夠多（30 字以上），或有附圖。"""
+    cjk = sum(len(re.findall(r"[\u4e00-\u9fff]", plain(r["text"]))) for r in rows)
+    return cjk >= 30 or any(re.search(LEADIMG, r["text"]) for r in rows)
+
+
+def options_complete(q: dict) -> bool:
+    """這題的選項是不是已經到 (D) 或 (E)。"""
+    txt = "\n".join(r["text"] for r in q["rows"])
+    _, opts = split_options(txt)
+    return len(opts) >= 4
 
 
 def strip_lead(text: str) -> str:
@@ -193,6 +232,25 @@ def strip_lead(text: str) -> str:
             break
     t = re.sub(rf"^\s*{BLANK}", "", t)                    # 南一「12. (　)」題號後的作答括號
     return t
+
+
+def answer_blocks(zone: list[dict]) -> list[dict]:
+    """答案區依大題分段，每段再分答案與解析：
+    「一、單選題 → 1.(C) 2.(E) → 【解析】→ 1.… → 二、多選題 → 5.(C)(D) → 【解析】…」這種交錯的排法也認得。"""
+    blocks = [{"ans": [], "exp": []}]
+    mode = "ans"
+    for r in zone[1:]:
+        t = plain(r["text"]).strip()
+        if len(t) < 40 and (is_section(t) or re.match(r"^[一二三四五六七八九十壹貳參肆伍]+\s*[、.．]", t)):
+            if blocks[-1]["ans"] or blocks[-1]["exp"]:
+                blocks.append({"ans": [], "exp": []})
+            mode = "ans"
+            continue
+        if len(t) < 60 and EXPLAIN_HEAD.search(t):
+            mode = "exp"
+            continue
+        blocks[-1][mode].append(r)
+    return [b for b in blocks if b["ans"] or b["exp"]]
 
 
 def parse_entries(rows: list[dict]) -> list[dict]:
