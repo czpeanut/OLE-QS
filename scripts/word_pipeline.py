@@ -87,20 +87,29 @@ def meta(task: dict) -> dict:
 def convert(src: Path, work: Path, profile: Path) -> tuple[Path, Path]:
     work.mkdir(parents=True, exist_ok=True)
     base = work / "paper"
-    if src.suffix.lower() == ".doc":
-        doc = base.with_suffix(".doc")
-        flatten_doc_eq.flatten_file(src, doc)
-    else:
-        doc = base.with_suffix(src.suffix.lower())
-        shutil.copyfile(src, doc)
     exe = shutil.which("soffice") or shutil.which("libreoffice")
     if not exe:
         raise RuntimeError("找不到 LibreOffice（soffice）")
-    for fmt in ("docx", "pdf"):
-        if fmt == "docx" and doc.suffix == ".docx":
-            continue
+
+    def lo(fmt: str, doc: Path) -> None:
         subprocess.run([exe, f"-env:UserInstallation=file://{profile}", "--headless", "--convert-to", fmt,
                         "--outdir", str(work), str(doc)], capture_output=True, timeout=600)
+
+    if src.suffix.lower() == ".doc":
+        # 解析用：所有 EQ 欄位改寫（公式類寫成 ⟦EQ …⟧ 字面，docx_stream 轉 LaTeX）
+        doc = base.with_suffix(".doc")
+        flatten_doc_eq.flatten_file(src, doc, literal=True)
+        lo("docx", doc)
+        # 原卷 PDF 用：公式類 EQ 改寫成給人看的純文字（LibreOffice 不會排 EQ 公式，原樣會留白）
+        pdoc = work / "source.doc"
+        flatten_doc_eq.flatten_file(src, pdoc, literal=False)
+        lo("pdf", pdoc)
+        if (work / "source.pdf").is_file():
+            (work / "source.pdf").replace(base.with_suffix(".pdf"))
+    else:
+        doc = base.with_suffix(src.suffix.lower())
+        shutil.copyfile(src, doc)
+        lo("pdf", doc)
     docx, pdf = base.with_suffix(".docx"), base.with_suffix(".pdf")
     if not docx.is_file() or not pdf.is_file():
         raise RuntimeError("LibreOffice 轉檔失敗")
@@ -167,14 +176,16 @@ def bad_text(t: str) -> str | None:
 
 
 def is_layout_table(md: str) -> bool:
-    """只放圖和圖說的表格（排版用），不當成題目的表格。"""
+    """只放圖和圖說的表格（排版用），不當成題目的表格：文字格要是圖說，而且不比圖多太多。"""
     cells = [c.strip() for line in md.split("\n") if line.strip().startswith("|") and not re.match(r"^\|\s*-", line.strip())
              for c in line.strip().strip("|").split("|")]
-    cells = [c for c in cells if c]
-    if not cells or not any(TOKEN.search(c) for c in cells):
+    imgs = sum(len(TOKEN.findall(c)) for c in cells)
+    if not imgs:
         return False
-    return all(TOKEN.fullmatch(re.sub(r"\s", "", c)) or re.fullmatch(r"[▲▼△▽]?\s*[圖表]\s*[（(]?[一二三四五六七八九十0-9甲乙丙丁]*[）)]?.{0,12}", c)
-               or len(re.sub(r"⟦IMG:\d+⟧|\s", "", c)) <= 8 for c in cells)
+    texts = [re.sub(r"⟦IMG:\d+⟧|\s", "", c) for c in cells]
+    texts = [t for t in texts if t]
+    caption = re.compile(r"^[▲▼△▽]?[（(]?[圖表照][一二三四五六七八九十0-9（(）)甲乙丙丁]*.{0,10}$|^[（(]?[甲乙丙丁戊己A-Ea-e一二三四五]?[）)]?$")
+    return len(texts) <= 2 * imgs and all(caption.match(t) for t in texts)
 
 
 def table_options(text: str) -> list[dict] | None:
@@ -189,8 +200,9 @@ def table_options(text: str) -> list[dict] | None:
         if len(labs) >= 4 and [l for _, l, _ in labs] == list("ABCDE"[:len(labs)]):
             opts = []
             for k, lab, name in labs:
-                cells = [f"{r[0]}：{r[k]}" if r[0] else r[k] for r in rows[1:] if k < len(r)]
-                opts.append({"label": lab, "content": (name + "：" if name else "") + "；".join(cells)})
+                cells = [f"{r[0]}：{r[k]}" if r[0] else r[k] for r in rows[1:] if k < len(r) and r[k].strip()]
+                body = "；".join(cells)
+                opts.append({"label": lab, "content": (f"{name}（{body}）" if name and body else name or body)})
             return opts
     return None
 
@@ -211,8 +223,18 @@ class PdfFigures:
                         for ch in span["chars"]:
                             if "\u4e00" <= ch["c"] <= "\u9fff":
                                 cjk.append(ch["c"])
-                                self.chars.append((pno, ch["bbox"][1]))
+                                self.chars.append((pno, self.ykey(pno, ch["bbox"][0], ch["bbox"][1])))
         self.cjk = "".join(cjk)
+
+    def ykey(self, pno: int, x: float, y: float) -> float:
+        """閱讀順序的縱座標：橫式（寬大於高）的頁面當成左右兩欄，右欄排在左欄之後。"""
+        page = self.doc[pno].rect
+        if page.width > page.height * 1.15 and x > page.width / 2:
+            return y + 10000
+        return y
+
+    def center(self, p: int, r: "fitz.Rect") -> tuple[int, float]:
+        return p, self.ykey(p, (r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2)
 
     def find(self, text: str, start: int, window: int = 2500) -> tuple[int, int, float] | None:
         """題幹的中文字（不管標點、空白、換行）在 start 之後 window 字以內找 → (字串位置, 頁, y)。
@@ -278,6 +300,13 @@ class PdfFigures:
         if not best:
             return None
         _, p, r = best
+        kind0 = next(k for k, r2 in self.candidates(p) if tuple(r2) == tuple(r))
+        for kind, r2 in self.candidates(p):                  # 同一張圖的點陣框與向量框都算用掉（兩張不同的點陣圖可以重疊）
+            if kind == kind0:
+                continue
+            inter = r & r2
+            if not inter.is_empty and inter.get_area() > 0.5 * min(r.get_area(), r2.get_area()):
+                self.used.add((p, tuple(r2)))
         self.used.add((p, tuple(r)))
         return p, self.with_caption(p, r)
 
@@ -356,6 +385,7 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
             else:
                 parts.append(x["text"])
         raw = "\n".join(parts)
+        raw_all = raw
         stem_raw, opts_raw = wp.split_options(raw)
         if opts_raw and "\n" in opts_raw[-1]["content"].strip():
             # 最後一個選項只到它那一段；後面的段落（附圖、表格、浮動圖的錨點）屬於題目本身
@@ -391,6 +421,11 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
             rec["group_stem"] = gi["text"] or gi["head"]
         for t in [stem] + [o["content"] for o in options] + ([rec.get("group_stem", "")]):
             reason = reason or bad_text(t)
+        # 安全網：這題的內容裡又出現像下一題的題號開頭，表示切題切錯了（例如原卷漏打題號）
+        for line in raw.split("\n")[1:]:
+            m = re.match(r"^\s*(?:[（(][\s　]*[）)]\s*)?(\d{1,3})\s*[.．、]?[\s　]*(?:[（(][\s　]*[）)])?\s*[\u4e00-\u9fff「]", wp.plain(line))
+            if m and num < int(m.group(1)) <= num + 5 and len(wp.plain(line)) > 15:
+                reason = reason or f"題目切割可疑：內容裡出現「{m.group(1)}」開頭的段落"
         rec.update({"_stem_imgs": stem_imgs, "_opt_imgs": [(o["label"], o["_imgs"]) for o in options], "_gi": gi})
         rec["_reason"] = reason
         rec["_q"] = q
@@ -418,15 +453,17 @@ def cjk_key(text: str) -> str | None:
 
 
 def place_figures(qs: list[dict], images: list[dict], figs: PdfFigures, shared: list[dict], pid: str, out: Path) -> None:
-    """① 每題在 PDF 的起點（頁、y）② 每張圖在 PDF 的位置 ③ 依位置決定掛哪一題、裁圖。
-    浮動的圖常錨定在下一題的段落、再往上移到這一題旁邊，所以圖屬於哪一題看 PDF 位置，不看 Word 段落。"""
+    """附圖歸屬看 PDF 位置，不看 Word 段落（浮動圖常錨定在下一題或下一個題組標題，再往上移到這一題旁邊）。
+    ① 每題、每個題組文章在 PDF 的起點 ② 每張圖在 PDF 的位置 ③ 依位置決定歸屬 ④ 提到圖卻沒圖的題向鄰題借 ⑤ 裁圖。"""
+    import check_bank_yaml as cbk
+    # ① 位置
     cursor = 0
     for q in qs:
-        q["_pos"] = None
+        q["_pos"], q["_ci"] = None, cursor
         hit = figs.find(q["stem"], cursor) or figs.find((q["_gi"] or {}).get("text") or "", cursor)
         if hit:
             cursor = hit[0] + 1
-            q["_pos"] = (hit[1], hit[2])
+            q["_pos"], q["_ci"] = (hit[1], hit[2]), hit[0]
             q["page"] = hit[1] + 1
         elif cursor < len(figs.chars) and len(norm_cjk(q["stem"])) < 12:
             # 題幹幾乎全是公式（中文太少，找不到）：用前一題之後的位置推估，頁碼可能差一頁
@@ -441,7 +478,7 @@ def place_figures(qs: list[dict], images: list[dict], figs: PdfFigures, shared: 
     def owner(p: int, r: "fitz.Rect", k0: int) -> int:
         if qs[k0].get("_est"):
             return k0
-        c = (p, (r.y0 + r.y1) / 2)
+        c = figs.center(p, r)
         own = k0
         for k, pos in starts:
             if pos <= c:
@@ -449,17 +486,65 @@ def place_figures(qs: list[dict], images: list[dict], figs: PdfFigures, shared: 
         same_group = qs[own]["_gi"] is qs[k0]["_gi"]          # 不跨題組搬圖
         return own if abs(own - k0) <= 1 and same_group else k0
 
+    def pages_of(k: int) -> list[int]:
+        p0 = qs[k]["_pos"][0] if qs[k]["_pos"] else 0
+        return [p0, p0 + 1, p0 - 1]
+
+    # ② ③ 題目的圖
     stem_figs: dict[int, list] = {k: [] for k in range(len(qs))}
     for k, q in enumerate(qs):
         if not q["_pos"]:
             continue
-        pages = [q["_pos"][0], q["_pos"][0] + 1, q["_pos"][0] - 1]
         for i in q["_stem_imgs"]:
-            hit = figs.locate(images[i]["size"], pages)
+            hit = figs.locate(images[i]["size"], pages_of(k))
             if not hit:
                 q["_reason"] = q["_reason"] or "附圖在原卷 PDF 找不到位置"
                 continue
             stem_figs[owner(hit[0], hit[1], k)].append(hit)
+    # ② ③ 題組的圖：落在題組文章開頭之上的，屬於前一題
+    group_figs: dict[int, list] = {}
+    for k, q in enumerate(qs):
+        gi = q["_gi"]
+        if not gi or id(gi) in group_figs:
+            continue
+        hits = []
+        gstart = figs.find(gi["text"], qs[k - 1]["_ci"] if k else 0) if gi["text"] else None
+        gpos = (gstart[1], gstart[2]) if gstart else q["_pos"]
+        for i in gi["imgs"]:
+            hit = figs.locate(images[i]["size"], pages_of(k) + [pages_of(k)[0] - 2])
+            if not hit:
+                gi["fail"] = True
+                continue
+            c = figs.center(hit[0], hit[1])
+            if k and gpos and c < (gpos[0], gpos[1] - 4) and qs[k - 1]["_gi"] is not gi:
+                own = max([j for j, pos in starts if pos <= c and j < k] or [k - 1])
+                if k - own > 3 or qs[own]["_gi"] is gi:
+                    own = k - 1
+                stem_figs[own].append(hit)                   # 錨定在題組標題、其實浮在前面題目旁邊
+            else:
+                hits.append(hit)
+        group_figs[id(gi)] = hits
+    # ④ 提到圖卻沒有圖的題，向相鄰、同題組、自己沒提到圖的題借圖（浮動圖剛好落在兩題交界）
+    mentions = [bool(cbk.FIG_RE.search(q["stem"])) for q in qs]
+    for k, q in enumerate(qs):
+        if not mentions[k] or stem_figs[k] or (q["_gi"] and group_figs.get(id(q["_gi"]))):
+            continue
+        for j in (k + 1, k - 1):
+            if 0 <= j < len(qs) and stem_figs[j] and not mentions[j] and qs[j]["_gi"] is q["_gi"]:
+                stem_figs[k].append(stem_figs[j].pop(0 if j > k else -1))
+                break
+    # 兩張圖在 PDF 上疊在一起（LibreOffice 排版時擠在同一處）：裁出來會混到另一張，相關題目不收
+    placed = [(k, h) for k in stem_figs for h in stem_figs[k]] + \
+             [(k, h) for k, q in enumerate(qs) if q["_gi"] for h in group_figs.get(id(q["_gi"]), [])]
+    for a in range(len(placed)):
+        for b in range(a + 1, len(placed)):
+            (ka, (pa, ra)), (kb, (pb, rb)) = placed[a], placed[b]
+            if pa == pb and ra is not rb:
+                inter = ra & rb
+                if not inter.is_empty and inter.get_area() > 0.5 * min(ra.get_area(), rb.get_area()) and tuple(ra) != tuple(rb):
+                    for k in (ka, kb):
+                        qs[k]["_reason"] = qs[k]["_reason"] or "附圖在原卷 PDF 上和另一張圖重疊，裁不出正確的圖"
+    # ⑤ 裁圖
     for k, q in enumerate(qs):
         sec, num, qid = q["section"], q["number"], q["id"]
         hits = sorted(stem_figs[k], key=lambda h: (h[0], h[1].y0, h[1].x0))
@@ -470,45 +555,44 @@ def place_figures(qs: list[dict], images: list[dict], figs: PdfFigures, shared: 
             assets.append({"key": key_, "kind": "figure", "file": file, "crop": figs.crop(p, r, out / "assets" / file)})
         if assets:
             q["assets"] = assets
-        pages = [q["_pos"][0], q["_pos"][0] + 1, q["_pos"][0] - 1] if q["_pos"] else []
         for o, (lab, imgs) in zip(q.get("options", []), q["_opt_imgs"]):
             if not imgs:
                 continue
-            hits = [figs.locate(images[i]["size"], pages) for i in imgs]
-            if any(h is None for h in hits) or len({h[0] for h in hits}) > 1:
+            hits_o = [figs.locate(images[i]["size"], pages_of(k)) for i in imgs]
+            if any(h is None for h in hits_o) or len({h[0] for h in hits_o}) > 1:
                 q["_reason"] = q["_reason"] or "選項圖在原卷 PDF 找不到位置"
                 continue
-            r = hits[0][1]
-            for h in hits[1:]:                              # 一個選項由幾張小圖拼成：合成一張
+            r = hits_o[0][1]
+            for h in hits_o[1:]:                              # 一個選項由幾張小圖拼成：合成一張
                 r = r | h[1]
-            hit = (hits[0][0], r)
             key_ = f"s{sec}_{num}_opt{lab}"
             file = f"{pid}/{key_}.png"
-            o["asset"] = {"key": key_, "file": file, "crop": figs.crop(hit[0], hit[1], out / "assets" / file)}
+            o["asset"] = {"key": key_, "file": file, "crop": figs.crop(hits_o[0][0], r, out / "assets" / file)}
         gi = q["_gi"]
-        if gi and gi["imgs"]:
+        if gi and (gi["imgs"]):
             gk = f"g{sec}_{gi['g']['from']}_{gi['g']['to']}"
             if "asset" not in gi:
-                p0 = q["_pos"][0] if q["_pos"] else 0
-                hits = [figs.locate(images[i]["size"], [p0, p0 - 1, p0 + 1]) for i in gi["imgs"]]
-                if any(h is None for h in hits) or len({h[0] for h in hits}) > 1:
+                hits_g = group_figs.get(id(gi)) or []
+                if gi.get("fail") or (hits_g and len({h[0] for h in hits_g}) > 1):
                     gi["asset"] = None
+                elif not hits_g:
+                    gi["asset"] = False                       # 題組的圖都屬於前一題
                 else:
-                    r = hits[0][1]
-                    for h in hits[1:]:
+                    r = hits_g[0][1]
+                    for h in hits_g[1:]:
                         r = r | h[1]
                     file = f"{pid}/{gk}_f1.png"
                     gi["asset"] = {"key": gk, "label": "題組附圖", "kind": "figure", "file": file, "used_by": [],
-                                   "crop": figs.crop(hits[0][0], r, out / "assets" / file)}
+                                   "crop": figs.crop(hits_g[0][0], r, out / "assets" / file)}
                     shared.append(gi["asset"])
             if gi["asset"] is None:
                 q["_reason"] = q["_reason"] or "題組附圖在原卷 PDF 找不到位置或分在不同頁"
-            else:
+            elif gi["asset"]:
                 q["shared_asset"] = gk
                 gi["asset"]["used_by"].append(qid)
     for q in qs:
-        for k in ("_stem_imgs", "_opt_imgs", "_gi", "_pos", "_est"):
-            q.pop(k, None)
+        for key in ("_stem_imgs", "_opt_imgs", "_gi", "_pos", "_est", "_ci"):
+            q.pop(key, None)
 
 
 def entry_lookup(entries: list[dict], qs: list[dict]):
@@ -519,11 +603,20 @@ def entry_lookup(entries: list[dict], qs: list[dict]):
         for e in entries:
             by_num.setdefault(e["number"], e["text"])
         return lambda q: by_num.get(q["number"])
+    # 各大題重新編號：答案的每一段依序配給「題號都對得上」的下一個大題（答案區可能少了非選題那段）
     secs = list(dict.fromkeys(q["section"] for q in qs))
-    blocks = list(dict.fromkeys(e["block"] for e in entries))
-    if len(secs) != len(blocks):
-        return lambda q: None
-    table = {(secs[k], e["number"]): e["text"] for k, b in enumerate(blocks) for e in entries if e["block"] == b}
+    nums_of = {sec: {q["number"] for q in qs if q["section"] == sec} for sec in secs}
+    table, k = {}, 0
+    for b in dict.fromkeys(e["block"] for e in entries):
+        got = [e for e in entries if e["block"] == b]
+        want = {e["number"] for e in got}
+        while k < len(secs) and not want <= nums_of[secs[k]]:
+            k += 1
+        if k >= len(secs):
+            return lambda q: None                          # 對不起來就不填，不猜
+        for e in got:
+            table.setdefault((secs[k], e["number"]), e["text"])
+        k += 1
     return lambda q: table.get((q["section"], q["number"]))
 
 
@@ -558,6 +651,8 @@ def attach_answers(parsed: dict, qs: list[dict]) -> None:
             if re.fullmatch(r"[（(]?\s*[A-E]\s*[）)]?(\s*[、,，]?\s*[（(]?\s*[A-E]\s*[）)]?)*", ans or ""):
                 q["_reason"] = q.get("_reason") or "答案是選項代號，但文字裡找不到選項（選項多半畫在圖裡）"
                 continue
+            if not re.sub(r"[①-⑳❶-❿\s＿_（）()、,，.．:：答]", "", ans or ""):
+                continue                                  # 空白答案卷（只有 ①②、底線）
             if ans and len(ans) <= 80 and not re.search(r"⟦|\[圖", ans):
                 q["answer"] = [ans]
                 q["answer_status"] = "verified"
@@ -685,6 +780,23 @@ def reject(out: Path, pid: str, source_file: str) -> None:
             shutil.move(str(p), str(dst))
 
 
+def env_problems() -> list[str]:
+    import ole_math
+    out = []
+    if not (shutil.which("soffice") or shutil.which("libreoffice")):
+        out.append("找不到 LibreOffice（soffice）")
+    if (m := ole_math.available()):
+        out.append(m)
+    try:
+        import olefile  # noqa: F401
+    except ImportError:
+        out.append("Python 缺 olefile（python3 -m pip install olefile）")
+    fc = subprocess.run(["fc-list", ":lang=zh"], capture_output=True, text=True) if shutil.which("fc-list") else None
+    if fc is not None and not fc.stdout.strip():
+        out.append("系統沒有中文字型，LibreOffice 轉出的 PDF 會缺字（apt-get install fonts-noto-cjk）")
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--root", type=Path, required=True, help="校名來源題庫集中庫的本機資料夾（rel_path 的起點）")
@@ -696,10 +808,9 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--keep-work", action="store_true", help="保留 _work/ 的中間檔（除錯用）")
     a = ap.parse_args()
-    import ole_math
-    miss = ole_math.available()
+    miss = env_problems()
     if miss:
-        print("缺工具：" + miss)
+        print("環境還沒裝好：\n  " + "\n  ".join(miss) + "\n安裝方式見 docs/HIGH_SCHOOL_PIPELINE.md 第 1 節")
         return 2
     tasks = json.loads(a.tasks.read_text(encoding="utf-8"))["papers"]
     if a.subject:

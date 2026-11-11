@@ -23,7 +23,8 @@ CN = "零一二三四五六七八九十"
 SECTION = re.compile(r"^(第\s*[壹貳參肆伍一二三四五]\s*部分|[壹貳參肆伍陸柒捌玖拾]+\s*[、.．]|[一二三四五六七八九十]{1,3}\s*[、.．])")
 SECTION_WORDS = re.compile(r"題|選擇|填充|計算|問答|作答|混合|非選|作圖|閱讀|題組")
 GROUP = [
-    re.compile(r"第?\s*(\d{1,3})\s*[.．]?\s*(?:[、,，～~〜\-－–—至到]|\s)\s*(?:第\s*)?(\d{1,3})\s*[.．]?\s*題\s*(?:為|是|屬)?\s*題組"),
+    re.compile(r"[（(]\s*(\d{1,3})\s*[）)]\s*[、,，～~〜\-－–—至到]\s*[（(]\s*(\d{1,3})\s*[）)]\s*題"),   # (40)～(42)題為題組
+    re.compile(r"第?\s*(\d{1,3})\s*[.．]?\s*(?:[、,，～~〜\-－–—至到]|\s)\s*(?:第\s*)?(\d{1,3})\s*[.．]?\s*(?:題\s*(?:為|是|屬)?|為|是|屬)\s*題組"),
     re.compile(r"(?:閱讀|根據|依據|參考)[^。，,]{0,30}?(?:回答|作答)\s*第?\s*(\d{1,3})\s*[.．]?\s*[、,，～~〜\-－–至到]\s*(\d{1,3})\s*[.．]?\s*題"),
     re.compile(r"[（(【〔]\s*第?\s*(\d{1,3})\s*[.．]?\s*[、,，～~〜\-－–至到]\s*(\d{1,3})\s*[.．]?\s*題\s*[）)】〕]"),
 ]
@@ -32,6 +33,8 @@ QSTART = [
     re.compile(rf"^{BLANK}\s*(\d{{1,3}})\s*[.．、]"),                              # 翰林：（　）12.
     re.compile(rf"^(\d{{1,3}})\s*[.．、]\s*{BLANK}"),                               # 南一：12. (　)
     re.compile(r"^(\d{1,3})\s*[.．、](?![\d.．])"),                                 # 12. 題目
+    re.compile(r"^(\d{1,3})[ \u3000]+(?=[\u4e00-\u9fff「（(])"),                     # 12　題目（原卷漏打句點）
+    re.compile(rf"^{BLANK}\s*[（(]\s*(\d{{1,3}})\s*[）)]"),                          # (　)(41) 題目
     re.compile(r"^[（(]\s*(\d{1,3})\s*[）)](?![\d])"),                              # (12) 題目
 ]
 ANSWER_HEAD = re.compile(r"《\s*(?:參考)?答\s*案\s*》|【\s*(?:參考)?答\s*案\s*】|^[\s－\-—=＝*＊]*(?:參考答案|試題答案|答案卷|標準答案|解答)[\s－\-—=＝*＊:：]*$|"
@@ -46,7 +49,7 @@ def plain(s: str) -> str:
 
 
 def is_section(text: str) -> bool:
-    t = plain(text).strip()
+    t = re.sub(rf"^(\s*{LEADIMG}\s*)+", "", plain(text)).strip()      # 標題段落開頭錨著的圖不算
     return bool(SECTION.match(t)) and bool(SECTION_WORDS.search(t[:40])) and len(t) < 120
 
 
@@ -125,6 +128,7 @@ def parse(rows: list[dict]) -> dict:
     cur_q: dict | None = None
     cur_group: dict | None = None
     expect = 1
+    pending_imgs = ""
     # 第 1 題之前、最後一個大題標題之後的文章（例如「一、閱讀測驗」後直接接文章）
     last_sec = max((k for k, r in enumerate(head) if is_section(r["text"])), default=-1)
     pre = [r for r in head[last_sec + 1:] if not is_instruction(r["text"])] if last_sec >= 0 else []
@@ -137,24 +141,31 @@ def parse(rows: list[dict]) -> dict:
         if qn and qn[0] == 1 and expect > 1 and sections[-1]["rows"]:
             qn = None if not any(is_section(x["text"]) for x in sections[-1]["rows"][-1:]) else qn
         if is_section(text) and not qn:
-            sections.append({"name": plain(text).strip(), "rows": []})
+            lead = re.findall(LEADIMG, plain(text)[:20])
+            sections.append({"name": re.sub(rf"^(\s*{LEADIMG}\s*)+", "", plain(text)).strip(), "rows": []})
+            pending_imgs = "".join(lead)                    # 標題段落上錨的圖，交給下一題（位置再由 PDF 決定）
             cur_q = None
             cur_group = None
             continue
         g = group_range(text)
+        if g and qn and g[2] <= 4:
+            qn = None                                       # 段落開頭就是「21.～23.為題組」：是題組標題，不是第 21 題
         if g and not qn:
             a, b, s0, s1 = g
             rest = plain(text)[s1:].strip(" 　:：")
+            lead = "".join(re.findall(LEADIMG, plain(text)[:s1]))   # 錨定在題組標題段落的圖
             cur_group = {"from": a, "to": b, "rows": [], "section": len(sections)}
-            if rest:
-                cur_group["rows"].append({**r, "text": rest})
+            if rest or lead:
+                cur_group["rows"].append({**r, "text": lead + rest})
             groups.append(cur_group)
             cur_q = None
             continue
-        if qn and (qn[0] == expect or (qn[0] == 1 and sections[-1]["rows"] == [] and len(sections) > 1)):
+        jump = qn and expect < qn[0] <= expect + 2 and strong_start(text)    # 原卷漏了一個題號：往後對上，不讓後面整段被併進上一題
+        if qn and (qn[0] == expect or jump or (qn[0] == 1 and sections[-1]["rows"] == [] and len(sections) > 1)):
             num, pos = qn
             lead_imgs = "".join(re.findall(LEADIMG, plain(text)[:pos]))
-            cur_q = {"number": num, "section": len(sections), "rows": [{**r, "text": lead_imgs + strip_lead(text)}]}
+            cur_q = {"number": num, "section": len(sections), "rows": [{**r, "text": pending_imgs + lead_imgs + strip_lead(text)}]}
+            pending_imgs = ""
             questions.append(cur_q)
             sections[-1]["rows"].append(r)
             expect = num + 1
@@ -174,7 +185,8 @@ def parse(rows: list[dict]) -> dict:
             if not is_instruction(text) and passage_like([r]):
                 cur_group = {"from": None, "to": None, "rows": [r], "section": len(sections), "implicit": True}
                 groups.append(cur_group)
-        elif options_complete(cur_q) and passage_like([r]) and not OPT.match(plain(text).strip()):
+        elif r["kind"] == "p" and options_complete(cur_q) and passage_like([r], need_text=True) \
+                and not OPT.match(plain(text).strip()) and not refers_ahead(cur_q):
             # 上一題選項已經完整，後面又出現長文：下一組題目的文章
             cur_group = {"from": None, "to": None, "rows": [r], "section": len(sections), "implicit": True}
             groups.append(cur_group)
@@ -183,10 +195,26 @@ def parse(rows: list[dict]) -> dict:
             cur_q["rows"].append(r)
         sections[-1]["rows"].append(r)
     blocks = answer_blocks(rows[ans_at:]) if ans_at < len(rows) else []
-    answers = [dict(e, block=k) for k, b in enumerate(blocks) for e in parse_entries(b["ans"])]
-    explanations = [dict(e, block=k) for k, b in enumerate(blocks) for e in parse_entries(b["exp"])]
+    ans_b = [b["ans"] for b in blocks if b["ans"]]
+    exp_b = [b["exp"] for b in blocks if b["exp"]]
+    answers = [dict(e, block=k) for k, b in enumerate(ans_b) for e in parse_entries(b)]
+    explanations = [dict(e, block=k) for k, b in enumerate(exp_b) for e in parse_entries(b)]
+    # 大題底下只有一段沒編號的內容（例如非選題只有 (1)(2) 小題）：當成這一大題的第 1 題
+    for g in list(groups):
+        if g.get("implicit") and g["from"] is None and g["rows"]:
+            sec = g["section"]
+            if not any(q["section"] == sec for q in questions) and any(plain(r["text"]).strip() for r in g["rows"]):
+                questions.append({"number": 1, "section": sec, "rows": g["rows"], "unnumbered": True})
+                groups.remove(g)
+    questions.sort(key=lambda q: (q["section"], q["number"]))
     return {"head": head, "sections": sections, "questions": questions, "groups": groups,
             "answers": answers, "explanations": explanations, "has_answer_zone": ans_at < len(rows)}
+
+
+def strong_start(text: str) -> bool:
+    """明確的題目開頭（有作答括號，或題號後直接接題目文字），跳號時才敢接受。"""
+    t = re.sub(rf"^(\s*{LEADIMG}\s*)*", "", plain(text))
+    return bool(re.match(rf"^({BLANK}\s*\d{{1,3}}\s*[.．、]|\d{{1,3}}\s*[.．、]\s*{BLANK}|\d{{1,3}}\s*[.．、]\s*[\u4e00-\u9fff「（(])", t))
 
 
 def is_instruction(text: str) -> bool:
@@ -195,10 +223,15 @@ def is_instruction(text: str) -> bool:
     return bool(re.match(r"^[※＊*]?\s*(說明|作答|注意|每題|答錯|本大題|請將|請依|請在|以下|下列各題)", t))
 
 
-def passage_like(rows: list[dict]) -> bool:
-    """像文章（共用材料）：中文字夠多（30 字以上），或有附圖。"""
+def passage_like(rows: list[dict], need_text: bool = False) -> bool:
+    """像文章（共用材料）：中文字夠多（30 字以上）；need_text=False 時只有附圖也算。"""
     cjk = sum(len(re.findall(r"[\u4e00-\u9fff]", plain(r["text"]))) for r in rows)
-    return cjk >= 30 or any(re.search(LEADIMG, r["text"]) for r in rows)
+    return cjk >= 30 or (not need_text and any(re.search(LEADIMG, r["text"]) for r in rows))
+
+
+def refers_ahead(q: dict) -> bool:
+    """這題提到「下圖」「下表」「下文」，後面的材料是它自己的。"""
+    return bool(re.search(r"下(圖|表|文|列(圖|表|資料))|如下|附(圖|表)", plain(q["rows"][0]["text"])[:200]))
 
 
 def options_complete(q: dict) -> bool:
@@ -234,23 +267,43 @@ def strip_lead(text: str) -> str:
     return t
 
 
+GLOBAL_EXPLAIN = re.compile(r"《\s*(?:試題)?(?:解析|詳解)\s*》|^[\s－\-—=＝]*(?:試題解析|詳解)[\s－\-—=＝]*$")
+
+
 def answer_blocks(zone: list[dict]) -> list[dict]:
     """答案區依大題分段，每段再分答案與解析：
-    「一、單選題 → 1.(C) 2.(E) → 【解析】→ 1.… → 二、多選題 → 5.(C)(D) → 【解析】…」這種交錯的排法也認得。"""
-    blocks = [{"ans": [], "exp": []}]
-    mode = "ans"
+    - 「一、單選題 → 1.(C) 2.(E) → 【解析】→ 1.… → 二、多選題 → …」（每大題自己的解析）；
+    - 「《答案》各大題答案 … 《試題解析》各大題解析」（整卷一次）：《試題解析》之後全部算解析。
+    回傳 [{"ans": 答案段落, "exp": 解析段落}]，答案與解析各自依大題順序。"""
+    ans_blocks, exp_blocks = [[]], [[]]
+    mode, global_exp = "ans", False
     for r in zone[1:]:
         t = plain(r["text"]).strip()
+        if len(t) < 60 and GLOBAL_EXPLAIN.search(t):
+            global_exp, mode = True, "exp"
+            if exp_blocks[-1]:
+                exp_blocks.append([])
+            continue
         if len(t) < 40 and (is_section(t) or re.match(r"^[一二三四五六七八九十壹貳參肆伍]+\s*[、.．]", t)):
-            if blocks[-1]["ans"] or blocks[-1]["exp"]:
-                blocks.append({"ans": [], "exp": []})
-            mode = "ans"
+            if global_exp:
+                if exp_blocks[-1]:
+                    exp_blocks.append([])
+            else:
+                if ans_blocks[-1] or exp_blocks[-1]:
+                    ans_blocks.append([])
+                    exp_blocks.append([])
+                mode = "ans"
             continue
         if len(t) < 60 and EXPLAIN_HEAD.search(t):
             mode = "exp"
             continue
-        blocks[-1][mode].append(r)
-    return [b for b in blocks if b["ans"] or b["exp"]]
+        (exp_blocks if mode == "exp" else ans_blocks)[-1].append(r)
+    blocks = []
+    for k in range(max(len(ans_blocks), len(exp_blocks))):
+        a = ans_blocks[k] if k < len(ans_blocks) else []
+        e = exp_blocks[k] if k < len(exp_blocks) else []
+        blocks.append({"ans": a, "exp": e})
+    return blocks
 
 
 def parse_entries(rows: list[dict]) -> list[dict]:
@@ -265,7 +318,7 @@ def parse_entries(rows: list[dict]) -> list[dict]:
         parts.append(t)
     text = "\n".join(parts)
     out = []
-    marks = list(re.finditer(r"(?:(?<=\s)|^|(?<=[。）)\]]))(\d{1,3})\s*[.．、:：](?![\d])", text))
+    marks = list(re.finditer(r"(?:(?<=\s)|^|(?<=[。）)\]]))(\d{1,3})(?:\s*[.．、:：](?![\d])|[ \u3000]+(?=[（(]?[A-E][）)]?))", text))
     expect = None
     kept = []
     for m in marks:

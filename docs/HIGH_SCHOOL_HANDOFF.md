@@ -13,6 +13,7 @@
 
 | 程式 | 用途 | 見 |
 |---|---|---|
+| `scripts/word_pipeline.py` | **第三輪一律用這支**：原始 Word → 交件包（YAML＋附圖＋原卷 PDF＋manifest），自動檢查、自動剔除不合格題目 | `HIGH_SCHOOL_PIPELINE.md` |
 | `scripts/flatten_doc_eq.py` | **.doc 轉檔前必跑**：把 EQ 欄位（題號、選項代號、(甲)、題組標題）改寫成文字，否則 LibreOffice 轉出的 .docx／PDF 會掉字 | `HIGH_SCHOOL_G1_TECH.md` |
 | `scripts/docx_stream.py` | 把改寫後轉出的 .docx 讀成段落流（底線、上下標、表格、附圖位置、EQ 公式都已處理），解析器從這裡切題 | `HIGH_SCHOOL_G1_TECH.md` |
 | `scripts/images_to_pdf.py` | 照片卷依頁序合成 PDF（自動轉正、可指定某頁旋轉） | 第 1 節 |

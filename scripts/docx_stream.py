@@ -183,6 +183,10 @@ def run_parts(run, rel):
         elif tag in (W + "drawing", W + "pict") or tag.endswith("}AlternateContent"):
             media = next((rel[r] for e in node.iter() for r in (e.get(R + "embed"), e.get(R + "id"))
                           if r in rel and "media/" in rel[r]), "")
+            boxed = textbox_content(node, rel)
+            if boxed:
+                yield "\n" + boxed + "\n", False, ""          # 文字方塊裡的表格或整段文字：照文字輸出
+                continue
             yield f"\x00IMG:{media or 'shape'}\x01{size(node)}\x00", False, ""     # 沒有圖檔的是向量圖形（線條、文字方塊組成的圖）
 
 
@@ -203,6 +207,28 @@ def sym_char(font: str, code: int) -> str:
         return chr(c) if 0x20 <= c < 0x7F else "⟦符號⟧"
     return {0x6C: "●", 0x6E: "■", 0xA8: "□", 0xFC: "✓", 0xFB: "✗", 0x81: "①", 0x82: "②", 0x83: "③",
             0x84: "④", 0x85: "⑤", 0x8C: "①", 0x8D: "②", 0x8E: "③", 0x8F: "④", 0x90: "⑤"}.get(c, "⟦符號⟧")
+
+
+def textbox_content(node, rel) -> str:
+    """圖形裡的文字方塊：有表格就回傳 Markdown 表格；是一整段文字（中文 20 字以上，可以夾著圖）就照順序回傳文字與圖；
+    只有短標註（圖上的甲、乙、A、B）回傳空字串，整個圖形當成圖。AlternateContent 只看第一個版本。"""
+    boxes = [e for e in node.iter() if e.tag == W + "txbxContent"]
+    if not boxes:
+        return ""
+    seen, parts = set(), []
+    for box in boxes[:1] if node.tag.endswith("}AlternateContent") else boxes:
+        for el in box:
+            if el.tag == W + "tbl":
+                parts.append(table(el, rel))
+            elif el.tag == W + "p":
+                t = paragraph(el, rel)
+                if t.strip() and t not in seen:
+                    seen.add(t)
+                    parts.append(t)
+    text = "\n".join(p for p in parts if p.strip())
+    if any(p.lstrip().startswith("|") for p in parts):
+        return text
+    return text if len(re.findall(r"[\u4e00-\u9fff]", re.sub(r"\x00[^\x00]*\x00", "", text))) >= 20 else ""
 
 
 def size(node) -> str:

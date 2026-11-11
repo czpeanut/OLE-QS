@@ -38,6 +38,34 @@ PAREN = re.compile(r"\\o\s*\([^,]*,\s*\\l\(\([^)]*\)\)\s*,\s*[\u3000 ]*([^)]*?)[
 ARGS = re.compile(r"\\o(?:\\a[lrc])?\s*\((.*)\)\s*$", re.I | re.S)
 
 
+SUP = str.maketrans("0123456789+-−－()（）n", "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁻⁻⁽⁾⁽⁾ⁿ")
+SUB = str.maketrans("0123456789+-−－()（）", "₀₁₂₃₄₅₆₇₈₉₊₋₋₋₍₎₍₎")
+
+
+def plain_eq(instr: str) -> str | None:
+    """公式類 EQ 欄位 → 給人看的純文字（原卷 PDF 用）：\\f(17,3) → 17/3、\\r(,x) → √(x)、上下標用上下標字元。"""
+    import docx_stream
+    try:
+        tex = docx_stream.eq_latex(re.sub(r"^\s*eq\s*", "", instr, flags=re.I).strip())
+    except Exception:                                   # noqa: BLE001
+        return None
+    t = tex.replace("\u3000", " ")
+    for _ in range(6):
+        t0 = t
+        t = re.sub(r"\\frac\{([^{}]*)\}\{([^{}]*)\}", lambda m: (m.group(1).strip() if re.fullmatch(r"[\w.]+", m.group(1).strip()) else f"({m.group(1).strip()})")
+                   + "/" + (m.group(2).strip() if re.fullmatch(r"[\w.]+", m.group(2).strip()) else f"({m.group(2).strip()})"), t)
+        t = re.sub(r"\\sqrt\[([^{}\]]*)\]\{([^{}]*)\}", lambda m: f"{m.group(1).translate(SUP)}√({m.group(2).strip()})", t)
+        t = re.sub(r"\\sqrt\{([^{}]*)\}", lambda m: "√" + (m.group(1).strip() if re.fullmatch(r"\w+", m.group(1).strip()) else f"({m.group(1).strip()})"), t)
+        t = re.sub(r"\^\{([^{}]*)\}", lambda m: m.group(1).translate(SUP), t)
+        t = re.sub(r"_\{([^{}]*)\}", lambda m: m.group(1).translate(SUB), t)
+        t = re.sub(r"\\(?:boxed|overline|vec|overrightarrow|overleftrightarrow)\{([^{}]*)\}", r"\1", t)
+        t = re.sub(r"\\left|\\right\.?|\\begin\{\w+\}|\\end\{\w+\}", "", t)
+        if t == t0:
+            break
+    t = t.replace(r"\\", "；").replace("&", " ").replace(r"\{", "{").replace(r"\}", "}")
+    return None if "\\" in t or "{" in t and "}" not in t else re.sub(r"\s+", " ", t).strip()
+
+
 def circled(mark: str, n: str) -> str | None:
     if not n.isdigit() or not 1 <= int(n) <= 20:
         return None
@@ -65,6 +93,8 @@ def display(instr: str) -> str | None:
             c = circled(args[0], args[1]) or circled(args[1], args[0])
             if c:
                 return c
+            if set(args) <= {"A", "°", "˚", "o"} and "A" in args:
+                return "Å"                                  # 埃（長度單位）
     return "⟦" + instr.replace(ZW, "") + "⟧"     # 其他 EQ：原指令照字面留給 docx_stream.py
 
 
@@ -134,7 +164,7 @@ def encode(ch: str, width: int) -> bytes | None:
         return None
 
 
-def rewrite_text(wd: bytearray, chars: list[str], where: list[tuple[int, int]]) -> tuple[int, set[int], list[str]]:
+def rewrite_text(wd: bytearray, chars: list[str], where: list[tuple[int, int]], literal: bool = True) -> tuple[int, set[int], list[str]]:
     """EQ 欄位（\\x13 EQ … \\x15）換成顯示文字，長度不變（不足補零寬空白；單位元組片段補空白）。
     回傳 (改寫個數, 改寫過的欄位標記 CP, 略過的欄位)。"""
     text = "".join(chars)
@@ -156,6 +186,11 @@ def rewrite_text(wd: bytearray, chars: list[str], where: list[tuple[int, int]]) 
             L = m.end() - m.start()
             narrow = any(where[c][1] == 1 for c in range(m.start(), m.end()))
             pad = " " if narrow else ZW
+            if new.startswith("⟦") and not literal:
+                # 給原卷 PDF 用：LibreOffice 不會排 EQ 公式（會留白），改寫成看得懂的純文字
+                new = plain_eq(instr) if not new.startswith("⟦VEC") else new[5:-1] + "⃗"
+                if not new:
+                    continue
             if new.startswith("⟦VEC"):
                 rep = pad * (L - len(new)) + new
             elif new.startswith("⟦"):
@@ -210,7 +245,8 @@ def drop_eq_entries(wd: bytearray, ts: bytearray, cps: set[int], chars: list[str
     return removed
 
 
-def flatten_file(src: Path, dst: Path) -> tuple[int, int, list[str]]:
+def flatten_file(src: Path, dst: Path, literal: bool = True) -> tuple[int, int, list[str]]:
+    """literal=True：公式類 EQ 也改成 ⟦EQ …⟧ 字面（解析用）；False：只改題號、代號、題組標題（轉原卷 PDF 用）。"""
     import olefile
     shutil.copyfile(src, dst)
     with olefile.OleFileIO(str(dst), write_mode=True) as ole:
@@ -218,7 +254,7 @@ def flatten_file(src: Path, dst: Path) -> tuple[int, int, list[str]]:
         table = "1Table" if int.from_bytes(wd[0x0A:0x0C], "little") & 0x0200 else "0Table"
         ts = bytearray(ole.openstream(table).read())
         chars, where = read_text(bytes(wd), bytes(ts))
-        n, cps, skipped = rewrite_text(wd, chars, where)
+        n, cps, skipped = rewrite_text(wd, chars, where, literal)
         removed = drop_eq_entries(wd, ts, cps, chars)
         ole.write_stream("WordDocument", bytes(wd))
         ole.write_stream(table, bytes(ts))

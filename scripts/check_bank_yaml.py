@@ -109,7 +109,7 @@ def crop_ok(a: dict) -> bool:
     r = c.get("rect")
     return (isinstance(r, list) and len(r) == 4 and all(isinstance(v, (int, float)) for v in r)
             and r[2] > r[0] and r[3] > r[1])
-FIG_RE = re.compile(r"下圖|如圖|附圖|右圖|左圖|上圖|圖[一二三四五六七八九十\(（]|圖\s*[0-9]|地圖所示"
+FIG_RE = re.compile(r"下圖|如圖|附圖|右圖|左圖|上圖|圖[一二三四五六七八九十]|圖[(（]\s*[一二三四五六七八九十0-9]|圖\s*[0-9]|地圖所示"
                     r"|(下列|以下|如|附|右|左|上|下|此|這|該)[兩二三四一]?[張幅]?照片|照片(中|所示|裡)")   # 「數位照片的檔案大小」不算
 TAB_RE = re.compile(r"下表|如表|附表|右表|上表"
                     r"|(?<![代發外報列年課時])表[一二三四五六七八九十\(（]")   # 「代表一個」不算
