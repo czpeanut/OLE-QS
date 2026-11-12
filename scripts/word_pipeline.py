@@ -30,7 +30,7 @@ import traceback
 import zipfile
 from pathlib import Path
 
-PIPELINE_VERSION = "v4.6"
+PIPELINE_VERSION = "v4.7"
 
 
 def missing_python() -> list[str]:

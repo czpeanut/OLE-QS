@@ -14,6 +14,7 @@
 --strict 時這些也算錯誤；--issues-csv 檔名 會把每一題的問題寫成 CSV（題目 id、類別、說明）。
 manifest.json 各卷 dropped 申報剔除的題目（含 text 原文）算覆蓋率時不當成遺漏（3.2 版）。
 原卷有答案區（標題後真的有填答案），選擇／填充題卻不到一半附上答案，算錯誤（3.3 版，裁示 #009）。
+題幹、選項、題組材料、詳解的 <u></u> 不成對或巢狀，列為內容問題（3.4 版，裁示 #013）。
 檢查程式的誤判，在 manifest.json 的 waivers 登記 [{"id": 題目 id, "category": 類別, "reason": 理由}]，
 登記的項目不計入 --strict，但會逐條列出給督察確認（manifest 預設讀 bank 資料夾上一層，或用 --manifest 指定）。
 基本檢查只需要 pyyaml；有錯誤時結束碼為 1。
@@ -249,6 +250,16 @@ ANSWER_ZONE = re.compile(r"《\s*(?:參考)?答\s*案\s*》|【\s*(?:參考)?答
 ANSWER_TOKEN = re.compile(r"(?<!\d)\d{1,3}\s*[.．、:：]?\s*[（(]?\s*[A-E](?:\s*[、,，]?\s*[A-E]){0,4}\s*[）)]?(?![A-Za-z])")
 
 
+def u_balanced(v: str) -> bool:
+    """<u> 與 </u> 成對、不巢狀（3.4 版，裁示 #013）。"""
+    depth = 0
+    for t in re.findall(r"</?u>", v):
+        depth += 1 if t == "<u>" else -1
+        if depth not in (0, 1):
+            return False
+    return depth == 0
+
+
 def has_answer_zone(pdf) -> bool:
     """原卷 PDF 後段（前 30% 之後）有答案區標題，而且標題後面真的有「1. C」「5.(ACD)」這類答案
     （只印題號、沒填答案的空白答案卷不算）。"""
@@ -388,6 +399,10 @@ def check(path: Path, assets: Path | None, sources: Path | None = None,
                 if f and not (assets / f).is_file():
                     err.append(f"{qid}：附圖檔不存在 {f}")
         issues += [(qid, k, v) for k, v in content_issues(q, m)]
+        for fld, v in [("題幹", q.get("stem")), ("題組材料", q.get("group_stem")), ("詳解", q.get("explanation"))] + \
+                [(f"選項 {o.get('label')}", o.get("content")) for o in q.get("options") or [] if isinstance(o, dict)]:
+            if v and not u_balanced(str(v)):
+                issues.append((qid, "底線標記不成對", f"{fld}的 <u></u> 不成對或巢狀（選項多半從文章中間切開）"))
         try:
             ok, why = evaluate(q, d)
         except Exception as exc:  # noqa: BLE001  欄位型別不對時品管規則跑不動

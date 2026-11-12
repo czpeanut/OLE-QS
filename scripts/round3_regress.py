@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""高中管線回歸測試：用督察的 28 份基準卷跑 word_pipeline.py，題數、剔除數、答案數要和基準一模一樣。
+"""高中管線回歸測試：用督察的基準卷跑 word_pipeline.py，題數、剔除數、答案數要和基準一模一樣。
 
     python3 scripts/round3_regress.py --root <校名來源題庫集中庫 本機資料夾> --out out/regress [--ids doc_…,doc_…]
-    python3 scripts/round3_regress.py --list            # 列出 28 份基準原卷的雲端檔案 ID 與該放的路徑
+    python3 scripts/round3_regress.py --list            # 列出基準原卷的雲端檔案 ID 與該放的路徑
 
 基準在 data/high_school/regression_expect.json（裁示 #009、#010）。用途：
   - 新環境第一次跑：證明這個環境排出來的結果和督察一樣；
@@ -26,7 +26,7 @@ def main() -> int:
     ap.add_argument("--root", type=Path)
     ap.add_argument("--list", action="store_true", help="只列出基準原卷的雲端檔案 ID 與 rel_path，不跑")
     ap.add_argument("--out", type=Path, default=Path("out/regress"))
-    ap.add_argument("--ids", help="只測這幾份（逗號分隔）；預設全部 28 份")
+    ap.add_argument("--ids", help="只測這幾份（逗號分隔）；預設全部基準卷")
     a = ap.parse_args()
     base = json.loads((REPO / "data/high_school/regression_expect.json").read_text(encoding="utf-8"))["papers"]
     tasks = {t["id"]: t for t in json.loads((REPO / "data/high_school/round3_tasks.json").read_text(encoding="utf-8"))["papers"]}

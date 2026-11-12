@@ -87,7 +87,7 @@ def clean(s: str) -> str:
     return re.sub(r"\x13[^\x14\x15]*\x15|\x13[^\x15]*\x14|[\x00-\x1f\s\u3000]", "", s)
 
 
-def check(orig: Path, ypath: Path) -> list[str]:
+def check(orig: Path, ypath: Path, dropped_text: str = "") -> list[str]:
     body = question_area(doc_fields(orig)) if orig.suffix.lower() == ".doc" else ""
     d = yaml.safe_load(ypath.read_text(encoding="utf-8"))
     segs, seen = [], set()
@@ -135,7 +135,13 @@ def check(orig: Path, ypath: Path) -> list[str]:
         ws = lambda v: re.sub(r"[\s\u3000]", "", v)
         have_u = ws("".join(re.findall(r"<u>(.*?)</u>", "".join(v for *_, v in segs) + "".join(exps))))
         secs = ws("".join(str(x.get("name") or "") for x in (d.get("document") or {}).get("sections") or []))
+        # 只有選項代號「(A)」畫底線的不算；在 manifest 申報剔除的題目裡的也不算（另列出來）
+        under = [s for s in under if not re.fullmatch(r"[\s\u3000]*[（(][A-EＡ-Ｅ][)）][\s\u3000]*", s)]
         lack = [s for s in under if ws(s) not in have_u and ws(s) not in secs]
+        in_drop = [s for s in lack if ws(s) in ws(dropped_text)]
+        if in_drop:
+            print(f"  在剔除題裡（不算短少）{len(in_drop)} 段：" + "、".join(f"「{s[:12]}」" for s in in_drop[:8]))
+            lack = [s for s in lack if s not in in_drop]
         if lack:
             line = f"  底線少了 {len(lack)} 段：" + "、".join(f"「{s[:12]}」" for s in lack[:8])
             print(line)
@@ -143,6 +149,9 @@ def check(orig: Path, ypath: Path) -> list[str]:
     else:
         print("規則 B：找不到 .docx，也沒有 LibreOffice 可轉，略過")
     return problems
+
+
+DROPPED: dict[str, str] = {}
 
 
 def main() -> int:
@@ -158,6 +167,7 @@ def main() -> int:
         if manifest.is_file():
             for p in json.loads(manifest.read_text(encoding="utf-8")).get("papers") or []:
                 origin[p.get("id")] = str(p.get("origin") or p.get("source_origin") or "")
+                DROPPED[p.get("id")] = "\n".join(str(x.get("text") or "") for x in p.get("dropped") or [])
         files = {f.name: f for f in a.orig.rglob("*") if f.suffix.lower() in (".doc", ".docx")}
         pairs = []
         for y in sorted(a.yaml.glob("*.yaml")):
@@ -170,7 +180,7 @@ def main() -> int:
     bad = 0
     for o, y in pairs:
         print(f"== {y.name}  ←  {o.name}")
-        bad += bool(check(o, y))
+        bad += bool(check(o, y, DROPPED.get(y.stem, "")))
     print(f"\n{len(pairs)} 份卷，{bad} 份有短少")
     return 1 if bad else 0
 

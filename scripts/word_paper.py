@@ -44,6 +44,38 @@ OPT = re.compile(r"[（(]\s*([A-E])\s*[）)]")
 ANS_BLANK_LINE = re.compile(r"^\s*(答|解|Ans)\s*[:：]?\s*$")
 
 
+def fix_u(s: str) -> str:
+    """切開後的字串：去掉落單的 </u>，補上沒關的 </u>。"""
+    out, depth = [], 0
+    for part in re.split(r"(</?u>)", s):
+        if part == "<u>":
+            if depth:
+                continue
+            depth = 1
+        elif part == "</u>":
+            if not depth:
+                continue
+            depth = 0
+        out.append(part)
+    return "".join(out) + ("</u>" if depth else "")
+
+
+def orig_pos(s: str, k: int) -> int:
+    """plain(s) 的第 k 個字元，在 s（含 <u>、零寬字元）裡的位置。"""
+    i = n = 0
+    while i < len(s) and n < k:
+        m = re.match(r"</?u>", s[i:])
+        if m:
+            i += m.end()
+            continue
+        if s[i] != ZW:
+            n += 1
+        i += 1
+    while i < len(s) and s[i] == ZW:
+        i += 1
+    return i
+
+
 def plain(s: str) -> str:
     return re.sub(r"</?u>", "", s).replace(ZW, "")
 
@@ -157,7 +189,9 @@ def parse(rows: list[dict]) -> dict:
             qn = None                                       # 段落開頭就是「21.～23.為題組」：是題組標題，不是第 21 題
         if g and not qn:
             a, b, s0, s1 = g
-            rest = plain(text)[s1:].strip(" 　:：")
+            # 題組標題後面接的文章要保留 <u>：plain() 的位置對回原字串再切（高雄三民第 19～20 題）
+            rest = fix_u(text[orig_pos(text, s1):]).lstrip(" 　:：。．.，,、")
+            rest = re.sub(r"^(?:<u>)?\s*為?題組\s*(?:</u>)?[\s　:：，,。]*", "", rest)   # 「(40)～(42)為題組：閱讀下文…」
             lead = "".join(re.findall(LEADIMG, plain(text)[:s1]))   # 錨定在題組標題段落的圖
             cur_group = {"from": a, "to": b, "rows": [], "section": len(sections)}
             if rest or lead:
@@ -371,7 +405,9 @@ def flatten_answer_table(md: str) -> str:
 def split_options(text: str) -> tuple[str, list[dict]]:
     """題目文字 → (題幹, 選項)。選項代號要依序 A、B、C…，表格裡的代號不算。"""
     masked = mask(text)
-    pos = [(m.start(), m.end(), m.group(1)) for m in OPT.finditer(masked)]
+    # 「<u>(A)</u>」只有標號、畫底線：是文章裡的填空格，不是選項代號（高雄三民第二大題第 3 題）
+    pos = [(m.start(), m.end(), m.group(1)) for m in OPT.finditer(masked)
+           if not (text[max(0, m.start() - 3):m.start()] == "<u>" and text[m.end():m.end() + 4] == "</u>")]
     best = None
     for i, (s, e, lab) in enumerate(pos):
         if lab != "A":
@@ -386,6 +422,13 @@ def split_options(text: str) -> tuple[str, list[dict]]:
                 break
     if not best:
         return text, []
+    # 文中標號：文章裡用「<u>(A)…</u>」標出畫線句子，問哪一句正確（國文常見）。整篇文章留在題幹（含標號與底線），
+    # 選項是各標號後面那段畫線的文字；不能從標號切開文章（嘉義永慶國文第 14 題）。
+    inline = [re.match(r"([^<]*?)</u>", text[e:]) if text[max(0, s - 3):s] == "<u>" else None
+              for s, e, _ in best]
+    if len(best) >= 3 and all(inline) and all(m.group(1).strip(" 　") for m in inline):
+        return text.rstrip(), [{"label": lab, "content": m.group(1).strip(" 　")}
+                               for (s, e, lab), m in zip(best, inline)]
     stem = text[:best[0][0]].rstrip()
     opts = []
     for k, (s, e, lab) in enumerate(best):
