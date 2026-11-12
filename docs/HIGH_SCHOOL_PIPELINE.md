@@ -40,6 +40,7 @@ gem install mathtype_to_mathml_plus pry nokogiri --no-document
 python3 -m pip install pyyaml pymupdf pillow olefile
 ```
 
+- 管線會自己關掉 LibreOffice 的「MathType 轉 LibreOffice 公式」，公式一律保留原物件；所以裝不裝 LibreOffice Math、用官方版或發行版套件都一樣（裁示 #011）。
 - **LibreOffice 要用正式版**，不要用 LibreOfficeDev、alpha、beta。版本合不合格**以回歸測試為準**（裁示 #010）：督察用 24.2.7；PHOENIX 的 7.4.7 實測 12 份與基準一致。
 - **三套中文字型都要有**：AR PL UMing TW、AR PL UKai TW、Noto Sans CJK TC。
   - 原卷用的是 Windows 字型（新細明體、標楷體），管線會固定對到這三套。

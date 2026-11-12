@@ -27,9 +27,10 @@ import subprocess
 import sys
 import tempfile
 import traceback
+import zipfile
 from pathlib import Path
 
-PIPELINE_VERSION = "v4.4"
+PIPELINE_VERSION = "v4.5"
 
 
 def missing_python() -> list[str]:
@@ -164,6 +165,10 @@ def setup_profile(profile: Path) -> dict:
            '<item oor:path="/org.openoffice.Office.Common/Font/Substitution"><prop oor:name="Replacement" oor:op="fuse">'
            '<value>true</value></prop></item>\n'
            '<item oor:path="/org.openoffice.Office.Common/Font/Substitution/FontPairs">' + "".join(pairs) + '</item>\n'
+           # 公式一律保留成 OLE 物件：裝了 LibreOffice Math 的版本（例如官方發行版）預設會把 MathType／方程式編輯器
+           # 轉成 LibreOffice 公式（docx 變 m:oMath），管線讀不到，公式整個消失、排版也不同（裁示 #011）
+           '<item oor:path="/org.openoffice.Office.Common/Filter/Microsoft/Import"><prop oor:name="MathTypeToMath" oor:op="fuse">'
+           '<value>false</value></prop></item>\n'
            '</oor:items>\n')
     (user / "registrymodifications.xcu").write_text(xcu, encoding="utf-8")
     conf = profile / "fonts.conf"
@@ -444,6 +449,10 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
     pid = doc["id"]
     work = out / "_work" / pid
     docx, pdf = convert(src, work, profile)
+    with zipfile.ZipFile(docx) as z:
+        if "<m:oMath" in z.read("word/document.xml").decode("utf-8", "ignore"):
+            # 舊版 .doc 不可能有 OMML：一定是 LibreOffice 把公式物件轉掉了，公式會悄悄消失，整卷不做
+            raise EnvironmentError("LibreOffice 把公式物件轉成了 Math 公式（m:oMath），MathTypeToMath 設定沒生效；回報督察")
     rows = list(docx_stream.stream(docx))
     images: list[dict] = []
     for r in rows:                                      # [圖k]（段內編號）→ ⟦IMG:全卷編號⟧
