@@ -131,7 +131,7 @@ python scripts/round3_qa.py --batch <這批原始 .doc 所在資料夾> out/數�
 - 再人工抽 10 題對原卷 PDF，寫進 `SUPERVISOR_QA.md`。
 - `bank/`、`assets/`、`sources/`、`manifest.json`、兩份報告、`SUPERVISOR_QA.md` 打包成 `ROUND3_{科目}_第N批.zip`（用 Python `zipfile` 打包，中文檔名才不會亂碼），上傳「第三輪交件」。
 - 交件包超過上傳上限（例如 10MB）時，**檢查都通過後**才可分段上傳（裁示 #013）：
-  - `split -b 9000000 -d -a 2 ROUND3_國文_第1批.zip ROUND3_國文_第1批.zip.part`，各段放同一個資料夾；
+  - `split -b 5000000 -d -a 2 ROUND3_國文_第1批.zip ROUND3_國文_第1批.zip.part`（每段 ≤5MB，督察端才下載得到，裁示 #014），各段放同一個資料夾；
   - 回報整包的 SHA-256 與段數；監工用 `cat ROUND3_國文_第1批.zip.part* > ROUND3_國文_第1批.zip` 合併後比對 SHA-256。
 - 已知限制（裁示 #013）：國文「子題式題組」（一題底下 (1)(2)(3) 各帶選項）管線不支援，題目會被剔除；剔除超過 10% 的卷照規則不交，在 manifest 寫明原因即可。
 
