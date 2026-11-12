@@ -136,7 +136,9 @@ def normalize(tex: str) -> str | None:
     t = re.sub(r"\\operatorname\{(sin|cos|tan|cot|sec|csc|log|ln|lim|max|min|exp)\}", r"\\\1", t)
     t = re.sub(r"\^\{\\prime\}", "'", t)
     t = re.sub(r"(\^|_)([A-Za-z0-9])", r"\1{\2}", t)                    # x^2 → x^{2}
-    t = re.sub(r"\\left\\\{\s*\\begin\{matrix\}(.*?)\\end\{matrix\}\s*\\right\.", r"\\begin{cases}\1\\end{cases}", t, flags=re.S)
+    # 聯立式 → cases；pandoc 有時多包一層大括號：\left\{ { \begin{matrix} … \end{matrix}} \right.（Pilot-3 詳解）
+    t = re.sub(r"\\left\\\{\s*(\{\s*)?\\begin\{matrix\}(.*?)\\end\{matrix\}(?(1)\s*\})\s*\\right\.",
+               r"\\begin{cases}\2\\end{cases}", t, flags=re.S)
     t = re.sub(r"\s+", " ", t).strip()
     if not t or "{}" in re.sub(r"\\(begin|end)\{[a-z]+\}", "", t):
         return None                                                     # 有空的分子、分母、根號：轉換掉字
