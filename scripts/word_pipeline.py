@@ -30,7 +30,7 @@ import traceback
 import zipfile
 from pathlib import Path
 
-PIPELINE_VERSION = "v4.7"
+PIPELINE_VERSION = "v4.8"
 
 
 def missing_python() -> list[str]:
@@ -214,6 +214,8 @@ def convert(src: Path, work: Path, profile: Path) -> tuple[Path, Path]:
         doc = base.with_suffix(src.suffix.lower())
         shutil.copyfile(src, doc)
         lo("pdf", doc)
+    # Word 自動編號（題號、選項代號）不在文字裡；LibreOffice 的純文字輸出會把編號寫出來，docx_stream 拿來補回（裁示 #015）
+    lo("txt:Text (encoded):UTF8", doc)
     docx, pdf = base.with_suffix(".docx"), base.with_suffix(".pdf")
     if not docx.is_file() or not pdf.is_file():
         raise RuntimeError("LibreOffice 轉檔失敗")
@@ -300,7 +302,7 @@ def table_options(text: str) -> list[dict] | None:
         if len(rows) < 2:
             continue
         head = rows[0]
-        labs = [(k, m.group(1), c[m.end():].strip()) for k, c in enumerate(head) if (m := wp.OPT.match(c))]
+        labs = [(k, wp.half_label(m.group(1)), c[m.end():].strip()) for k, c in enumerate(head) if (m := wp.OPT.match(c))]
         if len(labs) >= 4 and [l for _, l, _ in labs] == list("ABCDE"[:len(labs)]):
             opts = []
             for k, lab, name in labs:
@@ -507,12 +509,21 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
         stem_imgs = [int(i) for i in TOKEN.findall(stem_raw)]
         stem = clean(TOKEN.sub("", stem_raw), chem)
         options = []
-        for o in opts_raw:
+        for k_o, o in enumerate(opts_raw):
             imgs = [int(i) for i in TOKEN.findall(o["content"])]
             content = clean(TOKEN.sub("", o["content"]), chem)
+            if k_o < len(opts_raw) - 1 and "\n" in content and not re.search(r"(?m)^\|", content):
+                # 不是最後一個選項：原卷把一個選項斷成兩段（台中二中公民第 11 題），併回一行。
+                # 最後一個選項不併，下一題的材料混進來時才抓得到。
+                content = re.sub(r"\s*\n\s*", "", content)
             options.append({"label": o["label"], "content": content, "_imgs": imgs})
         if topts:
             options = [{**o, "_imgs": []} for o in topts]
+        if len(options) < 2 and sec_type not in ("fill", "calc"):
+            labs = figure_option_labels(stem_raw, [images[i] for i in stem_imgs], docx)
+            if labs:
+                # 選項畫在題幹的圖或表裡（「下列何圖正確？」＋四張小圖）：照國中題庫慣例，選項文字寫代號
+                options = [{"label": l, "content": f"({l})", "_imgs": []} for l in labs]
         # 最後一個選項尾巴的句號（翰林「(D)甲丙。」）
         if options and options[-1]["content"].endswith("。") and not any(o["content"].endswith("。") for o in options[:-1]):
             options[-1]["content"] = options[-1]["content"][:-1].rstrip()
@@ -541,6 +552,16 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
         sec_index.setdefault(q["section"], sname)
         questions.append(rec)
 
+    # 題組標題寫了「第 6～8 題為題組」，卻一題也切不出來（題目填在表格格子裡）：列為剔除、附原文，不能無聲漏掉
+    have = {(q["section"], q["number"]) for q in questions}
+    missing = []
+    for g in parsed["groups"]:
+        if g.get("from") and g.get("to") and g["to"] - g["from"] <= 10:
+            lost = [n for n in range(g["from"], g["to"] + 1) if (g["section"], n) not in have]
+            text = group_info[id(g)]["text"]
+            for n in lost:
+                missing.append({"number": n, "section": g["section"], "text": text,
+                                "reason": f"題組標明第 {g['from']}～{g['to']} 題，這題拆不出來（多半是題目填在表格格子裡）"})
     place_figures(questions, images, figs, shared, pid, out)
     attach_answers(parsed, questions)
     attach_explanations(parsed, questions, chem)
@@ -552,7 +573,33 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
     # 答案區真的有填答案（排除只印題號、沒填答案的空白答案卷）
     filled = [e for e in parsed["answers"] if not BLANK_ANSWER.fullmatch(e["text"] or "")]
     return {"document": doc, "questions": questions, "shared_assets": shared, "pdf": pdf,
-            "has_answer_zone": parsed["has_answer_zone"] and len(filled) >= max(3, len(parsed["answers"]) / 2)}
+            "has_answer_zone": parsed["has_answer_zone"] and len(filled) >= max(3, len(parsed["answers"]) / 2) and not parsed.get("template_key"),
+            "template_key": bool(parsed.get("template_key")), "missing": missing}
+
+
+def figure_option_labels(stem_raw: str, imgs: list[dict], docx: Path) -> list[str]:
+    """題幹的圖（EMF／WMF 的文字紀錄）或 Markdown 表格第一欄裡，從 (A) 起連號的選項代號；至少 3 個才算。
+    點陣圖讀不到字，回傳空的，照舊剔除。"""
+    texts = []
+    for line in stem_raw.split("\n"):
+        if line.strip().startswith("|"):
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if cells:
+                texts.append(cells[0])
+    if not any(re.fullmatch(r"[（(]\s*A\s*[）)]", t) for t in texts):
+        texts = []
+        with zipfile.ZipFile(docx) as z:
+            names = set(z.namelist())
+            for im in imgs:
+                m = im.get("media") or ""
+                if m in names and m.lower().endswith((".wmf", ".emf")):
+                    texts.append("".join(docx_stream.metafile_text(z.read(m))))
+    found = re.findall(r"[（(]\s*([A-E])\s*[）)]", " ".join(texts))
+    labs = []
+    for l in found:
+        if ord(l) == ord("A") + len(labs):
+            labs.append(l)
+    return labs if len(labs) >= 3 else []
 
 
 def cjk_key(text: str) -> str | None:
@@ -627,18 +674,27 @@ def place_figures(qs: list[dict], images: list[dict], figs: PdfFigures, shared: 
                 gi["fail"] = True
                 continue
             c = figs.center(hit[0], hit[1])
+            own = None
             if k and gpos and c < (gpos[0], gpos[1] - 4) and qs[k - 1]["_gi"] is not gi:
                 own = max([j for j, pos in starts if pos <= c and j < k] or [k - 1])
                 if k - own > 3 or qs[own]["_gi"] is gi:
                     own = k - 1
-                stem_figs[own].append(hit)                   # 錨定在題組標題、其實浮在前面題目旁邊
+                # 錨定在題組標題、其實浮在前面題目旁邊（屏東地理第 19 題）。那一題沒提到圖表就不搬：
+                # 是 LibreOffice 把題組的圖排到題組文字上方（新北地科第 18～21 題，裁示 #015）
+                st = qs[own]["stem"]
+                if not (cbk.FIG_RE.search(st) or cbk.TAB_RE.search(st)):
+                    own = None
+            if own is not None:
+                stem_figs[own].append(hit)
             else:
                 hits.append(hit)
         group_figs[id(gi)] = hits
     # ④ 提到圖卻沒有圖的題，向相鄰、同題組、自己沒提到圖的題借圖（浮動圖剛好落在兩題交界）
-    mentions = [bool(cbk.FIG_RE.search(q["stem"])) for q in qs]
+    # 提到「表」的題也算要用自己的圖：表格常是內嵌物件，PDF 上就是一張圖（中興公民第 7 題的表曾被第 8 題借走，裁示 #015）
+    mentions = [bool(cbk.FIG_RE.search(q["stem"]) or cbk.TAB_RE.search(q["stem"])) for q in qs]
+    needs = [bool(cbk.FIG_RE.search(q["stem"]) or (cbk.TAB_RE.search(q["stem"]) and "|" not in q["stem"])) for q in qs]
     for k, q in enumerate(qs):
-        if not mentions[k] or stem_figs[k] or (q["_gi"] and group_figs.get(id(q["_gi"]))):
+        if not needs[k] or stem_figs[k] or (q["_gi"] and group_figs.get(id(q["_gi"]))):
             continue
         for j in (k + 1, k - 1):
             if 0 <= j < len(qs) and stem_figs[j] and not mentions[j] and qs[j]["_gi"] is q["_gi"]:
@@ -721,7 +777,12 @@ def entry_lookup(entries: list[dict], qs: list[dict]):
     for b in dict.fromkeys(e["block"] for e in entries):
         got = [e for e in entries if e["block"] == b]
         want = {e["number"] for e in got}
-        while k < len(secs) and not want <= nums_of[secs[k]]:
+        def fits(sec) -> bool:
+            # 答案的題號都在這一大題裡；或這一大題的題號都有答案、且占答案段一半以上
+            # （惠文地理第二大題：答案寫到第 8 題，6～8 題卻是填在表格裡、拆不出來）
+            have = nums_of[sec]
+            return want <= have or (have <= want and len(have) * 2 >= len(want))
+        while k < len(secs) and not fits(secs[k]):
             k += 1
         if k >= len(secs):
             break                                          # 後面的段落對不上任何大題：不用，但已對上的照用
@@ -734,7 +795,25 @@ def entry_lookup(entries: list[dict], qs: list[dict]):
 BLANK_ANSWER = re.compile(r"[①-⑳❶-❿\s＿_（）()、,，.．:：答]*")
 
 
+# 出版社範本裡的假答案（南一公民：不同學校的卷都是這一串，題數不合也照列）。對到就當成沒有答案，不能拿來當正解（裁示 #015）
+TEMPLATE_KEYS = ["ABBDCABADCADDDDBABDA"]
+
+
+def template_answer_key(entries: list[dict]) -> bool:
+    first = {}
+    for e in entries:
+        if 1 <= e["number"] <= 20 and e["number"] not in first:
+            m = re.match(r"\s*[（(]?\s*([A-E])\s*[）)]?\s*(?:$|\s)", e["text"] or "")
+            first[e["number"]] = m.group(1) if m else "?"
+    seq = "".join(first.get(k, "?") for k in range(1, 21))
+    return any(sum(a == b for a, b in zip(seq, t)) >= 16 for t in TEMPLATE_KEYS)
+
+
 def attach_answers(parsed: dict, qs: list[dict]) -> None:
+    if template_answer_key(parsed["answers"]):
+        parsed["answers"] = []
+        parsed["template_key"] = True
+        return
     get = entry_lookup(parsed["answers"], qs)
     for q in qs:
         raw = get(q)
@@ -751,6 +830,11 @@ def attach_answers(parsed: dict, qs: list[dict]) -> None:
             else:
                 letters = re.findall(r"([A-E])", re.sub(r"[^A-E或、,，()（）\s]", "", first))
                 rest = re.sub(r"[A-E或、,，()（）\s.．]", "", first)
+                if letters and len(rest) <= 2 and len(labels) < 4 and any(l not in labels for l in letters):
+                    # 三選一、二選一的題，答案卻是 (D)：原卷漏印選項或答案有誤（武陵地科第 29 題），不收
+                    q["_reason"] = q.get("_reason") or \
+                        f"原卷只有 {len(labels)} 個選項，答案區卻是 {''.join(letters)}：選項可能漏印或答案有誤"
+                    continue
                 if not letters or len(rest) > 2 or any(l not in labels for l in letters):
                     continue
                 if q["type"] == "single" and len(set(letters)) > 1 and "或" not in first:
@@ -762,11 +846,18 @@ def attach_answers(parsed: dict, qs: list[dict]) -> None:
             q["answer_source"] = "answer_key"
         else:
             ans = clean(first)
+            if ans and ans.startswith("|") and ans.rstrip().endswith("|"):
+                # 答案寫在表格一列裡（「| ✓多核心模式 | 理由… |」）：各格用「；」串起來，題號格不要
+                cells = [c.strip() for c in ans.strip().strip("|").split("|")]
+                cells = [c for c in cells if c and not re.fullmatch(r"\d{1,3}\s*[.．、]?", c)]
+                ans = "；".join(re.sub(r"\$\s*ˇ\s*\$", "✓", c) for c in cells)
             if re.fullmatch(r"[（(]?\s*[A-E]\s*[）)]?(\s*[、,，]?\s*[（(]?\s*[A-E]\s*[）)]?)*", ans or ""):
                 q["_reason"] = q.get("_reason") or "答案是選項代號，但文字裡找不到選項（選項多半畫在圖裡）"
                 continue
             if not re.sub(r"[①-⑳❶-❿\s＿_（）()、,，.．:：答]", "", ans or ""):
                 continue                                  # 空白答案卷（只有 ①②、底線）
+            if re.fullmatch(r"[（(]\s*[一二三四五六七八九十]+\s*[）)]", ans or ""):
+                continue                                  # 只是下一小節的標號「(二)」（空白答案卷「(一)1. 2. (二)1. 2.」，高雄女中國文）
             if ans and len(ans) <= 80 and not re.search(r"⟦|\[圖", ans):
                 q["answer"] = [ans]
                 q["answer_status"] = "verified"
@@ -790,8 +881,8 @@ def finalize(paper: dict, out: Path) -> dict:
     import check_bank_yaml as cbk
     doc = paper["document"]
     pid = doc["id"]
-    total = len(paper["questions"])
-    dropped = []
+    dropped = list(paper.get("missing") or [])
+    total = len(paper["questions"]) + len(dropped)
     keep = []
     for q in paper["questions"]:
         reason = q.pop("_reason", None)
@@ -829,6 +920,8 @@ def finalize(paper: dict, out: Path) -> dict:
     objective = [q for q in keep if q.get("type") in ("single", "multiple", "fill")]
     answered = [q for q in objective if q.get("answer")]
     entry["answer_zone"] = bool(paper.get("has_answer_zone"))
+    if paper.get("template_key"):
+        entry["note"] = "答案區是出版社範本的假答案（各校相同、題數不合），已捨棄，本卷視為沒有答案（裁示 #015）"
     entry["answered"] = f"{len(answered)}/{len(objective)}"
     problem = None
     if total == 0 or len(dropped) > total * DROP_LIMIT:

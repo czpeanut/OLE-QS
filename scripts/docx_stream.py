@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import json
 import re
+import struct
 import sys
 import zipfile
 from pathlib import Path
@@ -231,6 +232,41 @@ def textbox_content(node, rel) -> str:
     return text if len(re.findall(r"[\u4e00-\u9fff]", re.sub(r"\x00[^\x00]*\x00", "", text))) >= 20 else ""
 
 
+def metafile_text(b: bytes) -> list[str]:
+    """EMF／WMF 裡的文字紀錄，依繪製順序。選項畫在圖裡時，用來讀圖中的 (A)(B)(C) 代號（裁示 #015）。"""
+    out = []
+    if b[:4] == b"\x01\x00\x00\x00":                         # EMF
+        i = 0
+        while i + 8 <= len(b):
+            typ, size = struct.unpack_from("<II", b, i)
+            if size < 8:
+                break
+            if typ in (83, 84) and size >= 76:               # EMR_EXTTEXTOUTA / W
+                nchars, offstr = struct.unpack_from("<II", b, i + 36 + 8)
+                raw = b[i + offstr: i + offstr + nchars * (2 if typ == 84 else 1)]
+                out.append(raw.decode("utf-16-le" if typ == 84 else "cp950", "ignore"))
+            i += size
+        return out
+    i = 22 if b[:4] == b"\xd7\xcd\xc6\x9a" else 0           # 可置放 WMF 檔頭
+    if len(b) < i + 18:
+        return out
+    hsize = struct.unpack_from("<H", b, i + 2)[0] * 2
+    i += hsize
+    while i + 6 <= len(b):
+        size, fn = struct.unpack_from("<IH", b, i)
+        if size < 3:
+            break
+        if fn == 0x0A32:                                     # META_EXTTEXTOUT
+            y, x, n, opt = struct.unpack_from("<hhhH", b, i + 6)
+            p = i + 14 + (8 if opt & 0x6 else 0)
+            out.append(b[p:p + n].decode("cp950", "ignore"))
+        elif fn == 0x0521:                                   # META_TEXTOUT
+            n = struct.unpack_from("<h", b, i + 6)[0]
+            out.append(b[i + 8:i + 8 + n].decode("cp950", "ignore"))
+        i += size * 2
+    return out
+
+
 def size(node) -> str:
     """圖在版面上的寬高（point），附圖對位用。"""
     for e in node.iter():
@@ -300,15 +336,108 @@ def table(tbl, rel) -> str:
     return "\n".join(lines)
 
 
-def stream(path: Path, math: bool = True):
+def unwrap(body):
+    """body 的段落與表格；格子裡又放表格的外框表格（排版用）拆開，裡面的段落、表格依序輸出（台中二中公民答案公佈表）。"""
+    for el in body:
+        cells = el.findall(f"{W}tr/{W}tc") if el.tag == W + "tbl" else []
+        if el.tag == W + "tbl" and (el.find(f"{W}tr/{W}tc/{W}tbl") is not None or len(cells) == 1):
+            # 格子裡又放表格的外框表格，或只有一格的表格（加框的文章，嘉義高中公民題組）：拆開
+            for tr in el.findall(W + "tr"):
+                for tc in tr.findall(W + "tc"):
+                    yield from unwrap(tc)
+        elif el.tag in (W + "p", W + "tbl"):
+            yield el
+
+
+def numbered_styles(z: zipfile.ZipFile) -> set[str]:
+    """段落樣式本身帶 Word 自動編號的 styleId（含 basedOn 繼承）。"""
+    if "word/styles.xml" not in z.namelist():
+        return set()
+    root = ET.fromstring(z.read("word/styles.xml"))
+    base, own = {}, set()
+    for st in root.iter(W + "style"):
+        sid = st.get(W + "styleId")
+        b = st.find(W + "basedOn")
+        base[sid] = b.get(W + "val") if b is not None else None
+        n = st.find(f"{W}pPr/{W}numPr/{W}numId")
+        if n is not None and n.get(W + "val") not in (None, "0"):
+            own.add(sid)
+    out = set()
+    for sid in base:
+        cur, seen = sid, set()
+        while cur and cur not in seen:
+            if cur in own:
+                out.add(sid)
+                break
+            seen.add(cur)
+            cur = base.get(cur)
+    return out
+
+
+def is_numbered(p, styles: set[str]) -> bool:
+    n = p.find(f"{W}pPr/{W}numPr/{W}numId")
+    if n is not None:
+        return n.get(W + "val") not in (None, "0")
+    st = p.find(f"{W}pPr/{W}pStyle")
+    return st is not None and st.get(W + "val") in styles
+
+
+_KEEP = re.compile(r"[\u4e00-\u9fffA-Za-z0-9]")
+
+
+def _filt(s: str) -> str:
+    s = re.sub(r"\x00[^\x00]*\x00|\[圖\d+\]|</?u>", "", s)
+    return "".join(_KEEP.findall(s))
+
+
+class ListLabels:
+    """Word 自動編號的題號／代號：到 LibreOffice 純文字輸出（同一份文件）依序找同一段，取段落前面的編號。
+    編號完全照 LibreOffice 排版（與原卷 PDF 一致），不自己推算 Word 的編號規則。"""
+
+    def __init__(self, txt: Path | None):
+        self.lines = []
+        if txt and Path(txt).is_file():
+            self.lines = Path(txt).read_text(encoding="utf-8-sig", errors="replace").splitlines()
+        self.j = 0
+
+    def label(self, text: str) -> str:
+        key = _filt(text)[:6]
+        if len(key) < 2 or not self.lines:
+            return ""
+        for k in range(self.j, min(len(self.lines), self.j + 400)):
+            raw = self.lines[k]
+            f = _filt(raw)
+            idx = f.find(key)
+            if idx < 0:
+                continue
+            self.j = k + 1
+            if idx == 0 or idx > 10:
+                return ""
+            n = 0                                        # 第 idx 個保留字元在原行的位置
+            for pos, ch in enumerate(raw):
+                if _KEEP.match(ch):
+                    if n == idx:
+                        return raw[:pos].strip()
+                    n += 1
+            return ""
+        return ""
+
+
+def stream(path: Path, math: bool = True, txt: Path | None = None):
     """段落流。math=True 時把 MathType 物件轉成 $LaTeX$（需要 ole_math.py 的工具），轉不出來的寫 ⟦公式無法轉換⟧。"""
     with zipfile.ZipFile(path) as z:
         rel = rels(z)
         body = ET.fromstring(z.read("word/document.xml")).find(W + "body")
+        styles = numbered_styles(z)
+        labels = ListLabels(txt if txt is not None else Path(path).with_suffix(".txt"))
         rows, i = [], 0
-        for el in body:
+        for el in unwrap(body):
             if el.tag == W + "p":
                 kind, text = "p", paragraph(el, rel)
+                if is_numbered(el, styles):
+                    lab = labels.label(text)
+                    if lab:
+                        text = lab + " " + text
             elif el.tag == W + "tbl":
                 kind, text = "table", table(el, rel)
             else:

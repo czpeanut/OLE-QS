@@ -62,10 +62,10 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
     # 表面上是一段完整的中文句子，實際上算式已經不成立、無法作答。
     def unclosed_paren(t: str) -> bool:
         depth = 0
-        for c in t:
-            if c == "(":
+        for c in t:                                  # 全形、半形混用（「（……)」）算同一對
+            if c in "(（":
                 depth += 1
-            elif c == ")":
+            elif c in ")）":
                 depth -= 1
                 if depth < 0:
                     return True
@@ -82,6 +82,10 @@ def evaluate(q: dict, doc: dict) -> tuple[bool, list[str]]:
     senior = ((doc.get("document") or {}).get("grade") or 0) >= 10
     if senior and qtype == "single" and len(opts) == 5:
         expected = 5
+    # 高中卷也有三選一、二選一（「(A)甲 (B)乙 (C)一樣長」屏東地科第 16 題；「(A)A (B)B」嘉義女中地科第 34 題）：
+    # 代號正好是 A 起連號才算
+    if senior and qtype == "single" and [o.get("label") for o in opts] in (["A", "B"], ["A", "B", "C"]):
+        expected = len(opts)
     # 是非題卷面通常不印選項（作答寫 O／X），沒有選項是正常的；有印的才檢查數量
     if expected and len(opts) != expected and not (qtype == "tf" and not opts):
         reasons.append(f"{qtype} 題應有 {expected} 個選項，實際 {len(opts)} 個")

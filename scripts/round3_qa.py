@@ -39,22 +39,31 @@ def doc_fields(path: Path) -> str:
 def docx_underlines(path: Path) -> tuple[str, list[str]]:
     """.docx 的純文字與底線文字段（相鄰的底線 run 合併成一段；題組標題、空白作答格不算）。"""
     x = zipfile.ZipFile(path).read("word/document.xml").decode("utf-8")
-    text, segs = [], []
+    text, segs, n = [], [], 0
+    POS.clear()
     for para in re.findall(r"<w:p[ >].*?</w:p>", x, re.S):
-        cur = ""
+        cur, start = "", 0
         for r in re.findall(r"<w:r[ >].*?</w:r>", para, re.S):
             ts = "".join(re.findall(r"<w:t[^>]*>([^<]*)</w:t>", r))
             text.append(ts)
             if re.search(r'<w:u w:val="(?!none)', r):
+                if not cur:
+                    start = n
                 cur += ts
             elif cur:
-                segs.append(cur); cur = ""
+                segs.append(cur); POS.append(start); cur = ""
+            n += len(ts)
         if cur:
-            segs.append(cur)
+            segs.append(cur); POS.append(start)
         text.append("\n")
+        n += 1
     # 有字的底線段才算（中文、英文人名如 Bao、數字）；只有空白或底線符號的作答格不算
-    segs = [s for s in segs if re.search(r"[\u4e00-\u9fffA-Za-z0-9]", s) and "題組" not in s]
-    return "".join(text), segs
+    keep = [k for k, s in enumerate(segs) if re.search(r"[\u4e00-\u9fffA-Za-z0-9]", s) and "題組" not in s]
+    POS[:] = [POS[k] for k in keep]
+    return "".join(text), [segs[k] for k in keep]
+
+
+POS: list[int] = []        # docx_underlines 最近一次各段底線在全文的位置
 
 
 def to_docx(path: Path) -> Path | None:
@@ -79,7 +88,20 @@ def to_docx(path: Path) -> Path | None:
 
 def question_area(text: str) -> str:
     hits = [m.start() for m in ANS.finditer(text)]
-    hits = [h for h in hits if h > min(2000, len(text) * 0.3)]   # 卷頭的作答說明不算（短卷用全文 30% 當門檻）
+    # 也認管線（word_paper）的答案區標題，例如「…期末考試題答案」單獨一行（裁示 #015）
+    pos = 0
+    for line in text.split("\n"):
+        t = line.strip()
+        if t and len(t) < 60:
+            try:
+                sys.path.insert(0, str(Path(__file__).resolve().parent))
+                import word_paper
+                if word_paper.ANSWER_HEAD.search(word_paper.plain(t)):
+                    hits.append(pos)
+            except Exception:                                # noqa: BLE001
+                pass
+        pos += len(line) + 1
+    hits = sorted(h for h in hits if h > min(2000, len(text) * 0.3))   # 卷頭的作答說明不算（短卷用全文 30% 當門檻）
     return text[:hits[0]] if hits else text
 
 
@@ -91,7 +113,9 @@ def check(orig: Path, ypath: Path, dropped_text: str = "") -> list[str]:
     body = question_area(doc_fields(orig)) if orig.suffix.lower() == ".doc" else ""
     d = yaml.safe_load(ypath.read_text(encoding="utf-8"))
     segs, seen = [], set()
+    # 詳解、答案欄（非選題的評分說明常有底線）也算 YAML 的內容
     exps = [q.get("explanation") or "" for q in d.get("questions") or []]
+    exps += [str(a) for q in d.get("questions") or [] for a in (q.get("answer") or [])]
     for q in d.get("questions") or []:
         g = q.get("group_stem") or ""
         parts = [("題組", g)] if g and g not in seen else []
@@ -127,7 +151,9 @@ def check(orig: Path, ypath: Path, dropped_text: str = "") -> list[str]:
     if dx:
         dtext, under = docx_underlines(dx)
         dbody = question_area(dtext)
-        under = [s for s in under if s in dbody]
+        head = min(500, len(dbody) // 10)                # 卷頭（校名、科目、張數）的底線不是題目文字
+        # 依底線實際位置判斷在不在題目區（同一個詞在題目裡沒畫線、在答案區畫線，不算）
+        under = [s for s, at in zip(under, POS) if head <= at < len(dbody)]
         u = sum(len(re.findall(r"<u>", v)) for *_, v in segs)
         print(f"規則 B：原卷題目區底線文字 {len(under)} 段，YAML <u> {u} 段（段數僅供參考，下面列出的才是缺的）")
         # 依內容比對：原卷每段底線文字要在 YAML 的 <u> 裡找得到（題幹、選項、題組、解析都算）；
@@ -137,6 +163,10 @@ def check(orig: Path, ypath: Path, dropped_text: str = "") -> list[str]:
         secs = ws("".join(str(x.get("name") or "") for x in (d.get("document") or {}).get("sections") or []))
         # 只有選項代號「(A)」畫底線的不算；在 manifest 申報剔除的題目裡的也不算（另列出來）
         under = [s for s in under if not re.fullmatch(r"[\s\u3000]*[（(][A-EＡ-Ｅ][)）][\s\u3000]*", s)]
+        # 題組範圍標號（「第30-31」題為題組）、只有數字（「本試卷計 2 張」）、卷名裡的底線不是題目文字（裁示 #015）
+        doc_meta = ws(" ".join(str((d.get("document") or {}).get(k) or "") for k in ("title", "exam_name", "school")))
+        under = [s for s in under if not re.fullmatch(r"[\s\u3000]*第?\s*\d{1,3}\s*[-~～－至到、]\s*\d{1,3}\s*題?[\s\u3000]*", s)
+                 and not re.fullmatch(r"[\s\u3000\d]*", s) and ws(s) not in doc_meta]
         lack = [s for s in under if ws(s) not in have_u and ws(s) not in secs]
         in_drop = [s for s in lack if ws(s) in ws(dropped_text)]
         if in_drop:

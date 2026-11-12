@@ -15,6 +15,8 @@
 manifest.json 各卷 dropped 申報剔除的題目（含 text 原文）算覆蓋率時不當成遺漏（3.2 版）。
 原卷有答案區（標題後真的有填答案），選擇／填充題卻不到一半附上答案，算錯誤（3.3 版，裁示 #009）。
 題幹、選項、題組材料、詳解的 <u></u> 不成對或巢狀，列為內容問題（3.4 版，裁示 #013）。
+3.5 版（裁示 #015）：答案區是出版社範本的假答案時，不算原卷有答案區；「會議上表示」這類詞不算提到表；
+同圖多掛只比同一卷（不同學校共用出版社題目的同一張圖不算）。
 檢查程式的誤判，在 manifest.json 的 waivers 登記 [{"id": 題目 id, "category": 類別, "reason": 理由}]，
 登記的項目不計入 --strict，但會逐條列出給督察確認（manifest 預設讀 bank 資料夾上一層，或用 --manifest 指定）。
 基本檢查只需要 pyyaml；有錯誤時結束碼為 1。
@@ -113,7 +115,7 @@ def crop_ok(a: dict) -> bool:
             and r[2] > r[0] and r[3] > r[1])
 FIG_RE = re.compile(r"下圖|如圖|附圖|右圖|左圖|上圖|圖[一二三四五六七八九十]|圖[(（]\s*[一二三四五六七八九十0-9]|圖\s*[0-9]|地圖所示"
                     r"|(下列|以下|如|附|右|左|上|下|此|這|該)[兩二三四一]?[張幅]?照片|照片(中|所示|裡)")   # 「數位照片的檔案大小」不算
-TAB_RE = re.compile(r"下表|如表|附表|右表|上表"
+TAB_RE = re.compile(r"(?:下表|如表|附表|右表|上表)(?![示現達明態演揚白決彰露率情])"   # 「會議上表示」不算（裁示 #015）
                     r"|(?<![代發外報列年課時])表[一二三四五六七八九十\(（]")   # 「代表一個」不算
 GROUP_RE = re.compile(r"(由|根據|依據|依|從|閱讀)(上述|上文|上列|上段|上方|此段|這段|該段)")
 ANS_RE = re.compile(r"參考答案|試題解析|【解析】|《答案》")
@@ -266,8 +268,18 @@ def has_answer_zone(pdf) -> bool:
     text = "\n".join(p.get_text() for p in pdf)
     for m in ANSWER_ZONE.finditer(text):
         if m.start() > len(text) * 0.3 and len(ANSWER_TOKEN.findall(text[m.end():])) >= 3:
+            # 出版社範本的假答案（裁示 #015）不算答案區
+            first = {}
+            for t in re.findall(r"(?<!\d)(\d{1,2})\s*[.．、]\s*[（(]?\s*([A-E])(?![A-Za-z])", text[m.end():]):
+                first.setdefault(int(t[0]), t[1])
+            seq = "".join(first.get(k, "?") for k in range(1, 21))
+            if any(sum(a == b for a, b in zip(seq, tpl)) >= 16 for tpl in TEMPLATE_KEYS):
+                return False
             return True
     return False
+
+
+TEMPLATE_KEYS = ["ABBDCABADCADDDDBABDA"]      # 與 word_pipeline.TEMPLATE_KEYS 相同
 
 
 # 卷頭、作答說明、配分這類不必轉進 YAML 的行
@@ -541,8 +553,13 @@ def main() -> int:
             if len(issues) > 30:
                 print(f"  ◇ …另有 {len(issues) - 30} 則內容問題")
         n_err += len(err)
-    for lst in hashes.values():                      # 同一張圖（內容相同）掛在兩個以上的地方
-        if len({o for o, _ in lst}) > 1:
+    for lst_all in hashes.values():                  # 同一張圖（內容相同）掛在同一卷兩個以上的地方
+        by_paper: dict[str, list] = {}
+        for o, f in lst_all:                          # 不同卷用到同一張圖是出版社共用題，不算（3.5 版，裁示 #015）
+            by_paper.setdefault(str(f).split("/")[0], []).append((o, f))
+        for lst in by_paper.values():
+            if len({o for o, _ in lst}) <= 1:
+                continue
             for o, f in lst:
                 others = sorted({x for x, _ in lst if x != o})
                 all_issues.append((o, "同圖多掛", f"{f} 與 {others[0]}{' 等' if len(others) > 1 else ''} 相同"))
