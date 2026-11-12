@@ -15,6 +15,7 @@
 manifest.json 各卷 dropped 申報剔除的題目（含 text 原文）算覆蓋率時不當成遺漏（3.2 版）。
 原卷有答案區（標題後真的有填答案），選擇／填充題卻不到一半附上答案，算錯誤（3.3 版，裁示 #009）。
 題幹、選項、題組材料、詳解的 <u></u> 不成對或巢狀，列為內容問題（3.4 版，裁示 #013）。
+3.6 版（裁示 #016）：「原卷文字遺漏」「原卷有答案卻沒附答案」改為提醒，不算錯誤、不計入 --strict。
 3.5 版（裁示 #015）：答案區是出版社範本的假答案時，不算原卷有答案區；「會議上表示」這類詞不算提到表；
 同圖多掛只比同一卷（不同學校共用出版社題目的同一張圖不算）。
 檢查程式的誤判，在 manifest.json 的 waivers 登記 [{"id": 題目 id, "category": 類別, "reason": 理由}]，
@@ -436,12 +437,13 @@ def check(path: Path, assets: Path | None, sources: Path | None = None,
             pdf = _fitz().open(pp)
             cov = coverage(pdf, d, dropped_text=dropped_text)
             if cov is not None and cov < COVER_MIN:
-                issues.append((m.get("id", "?"), "原卷文字遺漏", f"原卷文字只有 {cov:.0%} 出現在 YAML（至少要 {COVER_MIN:.0%}）"))
+                # 3.6（裁示 #016）：只提醒、不擋。拆不出來的題已剔除，剩下的照交
+                warn.append(f"原卷文字遺漏：原卷文字只有 {cov:.0%} 出現在 YAML（參考值 {COVER_MIN:.0%}）")
             objective = [q for q in qs if q.get("type") in ("single", "multiple", "fill")]
             answered = [q for q in objective if q.get("answer")]
             if objective and len(answered) < len(objective) / 2 and has_answer_zone(pdf):
                 # Pilot-3（裁示 #009）：答案區對不上大題，15 題全沒答案卻 exit 0
-                err.append(f"原卷有答案區，但選擇／填充題只有 {len(answered)}／{len(objective)} 題附上答案")
+                warn.append(f"原卷有答案區，但選擇／填充題只有 {len(answered)}／{len(objective)} 題附上答案（3.6 起只提醒）")
     if assets:
         import hashlib
         pairs = [(q.get("id", "?"), a) for q in qs for a in asset_list(q)]

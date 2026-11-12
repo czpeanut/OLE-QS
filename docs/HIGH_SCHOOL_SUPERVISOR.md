@@ -47,7 +47,7 @@ G1 沒過，Codex 不開始理工 4 科。某科 G2 沒過，該科不做第 2 �
 
    有 `waivers` 的，逐條確認理由成立。
 
-2. **`round3_qa.py`**（新工具，在交接包 `scripts/`）：拿原始 Word 檔比對，結尾必須是「0 份有短少」：
+2. **`round3_qa.py`**（新工具，在交接包 `scripts/`）：拿原始 Word 檔比對。v4.9 起管線交件前已自動跑過並剔除有缺漏的題，這裡只供參考，**不是停工條件**（裁示 #016）：
 
    ```bash
    python scripts/round3_qa.py --batch <這批原始 .doc 所在資料夾> high_school/bank > high_school/qa_report.txt

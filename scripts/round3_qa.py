@@ -10,7 +10,7 @@
 - 規則 B：原卷有底線且不是空白的文字段數（題組標題不算），與 YAML 裡 <u>…</u> 的段數；
   需要同名 .docx，沒有的話自動用 LibreOffice（soffice）轉一份。
 原始檔請給 .doc（規則 A 只能讀 .doc）；原始檔本來就是 .docx 的，規則 A 會略過。
-結束碼：有短少時為 1。只用標準函式庫與 pyyaml。
+結束碼一律 0（裁示 #016：管線交件前已自動檢查並剔除有缺漏的題，這裡只供參考）。只用標準函式庫與 pyyaml。
 """
 
 from __future__ import annotations
@@ -109,7 +109,8 @@ def clean(s: str) -> str:
     return re.sub(r"\x13[^\x14\x15]*\x15|\x13[^\x15]*\x14|[\x00-\x1f\s\u3000]", "", s)
 
 
-def check(orig: Path, ypath: Path, dropped_text: str = "") -> list[str]:
+def check(orig: Path, ypath: Path, dropped_text: str = "", detail: dict | None = None) -> list[str]:
+    """detail 有給時填入 {"paren": {題號: [...]}, "under": [底線文字]}，管線用來剔除有缺漏的題（裁示 #016）。"""
     body = question_area(doc_fields(orig)) if orig.suffix.lower() == ".doc" else ""
     d = yaml.safe_load(ypath.read_text(encoding="utf-8"))
     segs, seen = [], set()
@@ -147,6 +148,8 @@ def check(orig: Path, ypath: Path, dropped_text: str = "") -> list[str]:
         line = f"  第 {n} 題缺括號：" + "、".join(sorted(missing[n]))
         print(line)
         problems.append(line)
+        if detail is not None:
+            detail.setdefault("paren", {})[n] = sorted(missing[n])
     dx = to_docx(orig)
     if dx:
         dtext, under = docx_underlines(dx)
@@ -176,6 +179,8 @@ def check(orig: Path, ypath: Path, dropped_text: str = "") -> list[str]:
             line = f"  底線少了 {len(lack)} 段：" + "、".join(f"「{s[:12]}」" for s in lack[:8])
             print(line)
             problems.append(line)
+            if detail is not None:
+                detail["under"] = list(lack)
     else:
         print("規則 B：找不到 .docx，也沒有 LibreOffice 可轉，略過")
     return problems
@@ -212,7 +217,8 @@ def main() -> int:
         print(f"== {y.name}  ←  {o.name}")
         bad += bool(check(o, y, DROPPED.get(y.stem, "")))
     print(f"\n{len(pairs)} 份卷，{bad} 份有短少")
-    return 1 if bad else 0
+    # 裁示 #016：管線交件前已自動跑過、有缺漏的題已剔除；這裡只供參考，結束碼一律 0，不作為停工條件
+    return 0
 
 
 if __name__ == "__main__":

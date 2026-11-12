@@ -10,7 +10,7 @@
   3. word_paper.py 切大題、題組、題目、選項，接答案與詳解
   4. 附圖：用 Word 裡的版面尺寸到 PDF 找位置，從 PDF 裁 PNG（crop 一定對得上）
   5. 品管閘門（apps/api/quality.py）＋檢查程式（scripts/check_bank_yaml.py --sources）逐題檢查，
-     不合格的題目剔除並列入 manifest 的 dropped；剔除超過 10% 或原卷文字覆蓋率不足的整卷不交，列入 skipped。
+     不合格的題目剔除並列入 manifest 的 dropped；剔除多少都照交（裁示 #016），只有一題不剩或卷層級錯誤才列入 skipped。
 不用模型、不花錢。需要：LibreOffice 正式版、三套中文字型、python 套件 pyyaml pymupdf pillow olefile；
 有 MathType 5 公式的卷另外要 pandoc、ruby（gem mathtype_to_mathml_plus pry nokogiri）。
 安裝方式見 docs/HIGH_SCHOOL_PIPELINE.md；`--check-env` 一次列出這個環境缺什麼。
@@ -30,7 +30,7 @@ import traceback
 import zipfile
 from pathlib import Path
 
-PIPELINE_VERSION = "v4.8"
+PIPELINE_VERSION = "v4.9"
 
 
 def missing_python() -> list[str]:
@@ -74,7 +74,6 @@ except ImportError:                                     # 舊版 PyMuPDF
 
 GRADE_NAME = {10: "高一", 11: "高二", 12: "高三"}
 SUBS = {"物理", "化學", "生物", "地科", "歷史", "地理", "公民與社會"}
-DROP_LIMIT = 0.10
 TOKEN = re.compile(r"⟦IMG:(\d+)⟧")
 
 
@@ -899,40 +898,101 @@ def finalize(paper: dict, out: Path) -> dict:
     shutil.copyfile(paper["pdf"], src_pdf)
     ypath = out / "bank" / f"{pid}.yaml"
     ypath.parent.mkdir(parents=True, exist_ok=True)
-    for _ in range(3):                                  # 檢查程式點名的題剔除後再檢查一次
-        write_yaml(doc, keep, paper["shared_assets"], ypath, out)
-        err, warn, n, nbad, issues = cbk.check(ypath, out / "assets", out / "sources", None, dropped_text(dropped))
-        paper_level = [i for i in issues if i[0] == pid or not i[0].startswith(pid + "_")]
-        bad_ids = {i[0] for i in issues if i[0].startswith(pid + "_")}
-        bad_ids |= {e.split("：")[0].strip() for e in err if e.split("：")[0].strip().startswith(pid + "_")}
-        if not bad_ids:
-            break
-        for q in list(keep):
-            if q["id"] in bad_ids:
-                why = "；".join(f"{c}：{d}" for i, c, d in issues if i == q["id"]) or "；".join(e for e in err if e.startswith(q["id"]))
-                dropped.append({"number": q["number"], "section": q["section"], "reason": why[:200], "text": qtext(q)})
-                keep.remove(q)
-    err, warn, n, nbad, issues = cbk.check(ypath, out / "assets", out / "sources", None, dropped_text(dropped))
+
+    def drop(q: dict, why: str) -> None:
+        dropped.append({"number": q["number"], "section": q["section"], "reason": why[:200], "text": qtext(q)})
+        keep.remove(q)
+
+    def checker_pass() -> tuple:
+        """檢查程式點名的題剔除，直到沒有題被點名（裁示 #016：題目層級的問題一律剔除，不擋整卷）。"""
+        for _ in range(20):
+            write_yaml(doc, keep, paper["shared_assets"], ypath, out)
+            res = cbk.check(ypath, out / "assets", out / "sources", None, dropped_text(dropped))
+            err, warn, n, nbad, issues = res
+            bad_ids = {i[0] for i in issues if i[0].startswith(pid + "_")}
+            bad_ids |= {e.split("：")[0].strip() for e in err if e.split("：")[0].strip().startswith(pid + "_")}
+            # 題組共用圖被點名（「卷id:g1_21_22」）：用到那張圖的題都剔除
+            shared_bad = {i[0].split(":", 1)[1]: f"題組附圖 {c}：{d}" for i, c, d in
+                          [(x[0], x[1], x[2]) for x in issues] if i.startswith(pid + ":")}
+            if not bad_ids and not shared_bad:
+                return res
+            for q in list(keep):
+                if q["id"] in bad_ids:
+                    drop(q, "；".join(f"{c}：{d}" for i, c, d in issues if i == q["id"])
+                         or "；".join(e for e in err if e.startswith(q["id"])))
+                elif q.get("shared_asset") in shared_bad:
+                    drop(q, shared_bad[q["shared_asset"]])
+        return res
+
+    err, warn, n, nbad, issues = checker_pass()
+    notes = []
+    # round3_qa（底線、括號代號）也在交件前跑：有缺漏的題剔除；對不到題的只記在 note（裁示 #016）
+    src = paper.get("src")
+    if src and keep:
+        try:
+            import io, contextlib
+            import round3_qa
+            norm = lambda v: re.sub(r"[\s\u3000$\\{}_^]|</?u>", "", v or "")
+            for _ in range(3):
+                detail: dict = {}
+                with contextlib.redirect_stdout(io.StringIO()):
+                    probs = round3_qa.check(Path(src), ypath, dropped_text(dropped), detail)
+                if not probs:
+                    break
+                bad: dict[str, str] = {}
+                for num, items in (detail.get("paren") or {}).items():
+                    for q in keep:
+                        if q["number"] == num:
+                            bad[q["id"]] = "round3_qa：括號代號缺漏 " + "、".join(items)[:80]
+                unmapped = []
+                for seg in detail.get("under") or []:
+                    w = norm(seg)
+                    hit = [q for q in keep if w and w in norm(qtext(q))]
+                    for q in hit:
+                        bad.setdefault(q["id"], f"round3_qa：底線「{seg[:20]}」沒有標出")
+                    if not hit:
+                        unmapped.append(seg)
+                if unmapped:
+                    notes.append("round3_qa 底線對不到題目：" + "、".join(f"「{x[:12]}」" for x in unmapped[:5]))
+                if not bad:
+                    break
+                for q in list(keep):
+                    if q["id"] in bad:
+                        drop(q, bad[q["id"]])
+                err, warn, n, nbad, issues = checker_pass()
+        except Exception as exc:                                   # noqa: BLE001
+            notes.append(f"round3_qa 沒有跑成：{type(exc).__name__}")
     entry = {"id": pid, "source_file": doc["source_file"], "origin": paper.get("origin"),
-             "questions": len(keep), "dropped": dropped, "has_answer_key": any(q.get("answer") for q in keep),
-             "has_explanation": any(q.get("explanation") for q in keep),
+             "questions": len(keep), "dropped": dropped,
              "pages": len(fitz.open(str(src_pdf)))}
     objective = [q for q in keep if q.get("type") in ("single", "multiple", "fill")]
     answered = [q for q in objective if q.get("answer")]
     entry["answer_zone"] = bool(paper.get("has_answer_zone"))
     if paper.get("template_key"):
-        entry["note"] = "答案區是出版社範本的假答案（各校相同、題數不合），已捨棄，本卷視為沒有答案（裁示 #015）"
+        notes.append("答案區是出版社範本的假答案（各校相同、題數不合），已捨棄，本卷視為沒有答案（裁示 #015）")
+    if entry["answer_zone"] and objective and len(answered) < len(objective) / 2:
+        # 答案區對不上大題：已附的少數答案也可能錯位，整卷拿掉答案照交（裁示 #016）
+        for q in keep:
+            for k in ("answer", "answer_status", "answer_source", "review_note"):
+                q.pop(k, None)
+        notes.append(f"原卷有答案區但只對上 {len(answered)}／{len(objective)} 題，答案全部不附（裁示 #016）")
+        err, warn, n, nbad, issues = checker_pass()
+        answered = []
+    notes += [w for w in warn if w.startswith("原卷文字遺漏")]
+    if notes:
+        entry["note"] = "；".join(notes)
+    entry["has_answer_key"] = any(q.get("answer") for q in keep)
+    entry["has_explanation"] = any(q.get("explanation") for q in keep)
     entry["answered"] = f"{len(answered)}/{len(objective)}"
+    # 裁示 #016：剔除多少都照交；只有一題都不剩、或 YAML 本身格式錯（卷層級錯誤）才不交
     problem = None
-    if total == 0 or len(dropped) > total * DROP_LIMIT:
-        problem = f"剔除 {len(dropped)}／{total} 題，超過 10%"
-    elif entry["answer_zone"] and objective and len(answered) < len(objective) / 2:
-        # 原卷有答案區，選擇／填充題卻大半沒附上答案：答案區對不上大題，是管線問題，不能當成「這份卷沒答案」交出去
-        problem = f"原卷有答案區，但選擇／填充題只附上 {len(answered)}／{len(objective)} 題答案（答案區對不上）"
+    if not keep:
+        problem = f"剔除後沒有題目可交（原有 {total} 題）"
     elif err:
         problem = "檢查程式錯誤：" + "；".join(err[:3])
     elif issues:
-        problem = "內容問題：" + "；".join(f"{c}" for _, c, _ in issues[:3])
+        # 對不到任何一題的卷層級問題（極少）：這份不交，批次照常（不讓整批 --strict 失敗）
+        problem = "內容問題（卷層級）：" + "；".join(f"{c}" for _, c, _ in issues[:3])
     if problem:
         reject(out, pid, doc["source_file"])
         entry["skip_reason"] = problem
@@ -1088,6 +1148,7 @@ def main() -> int:
         try:
             paper = build(t, src, a.out, profile)
             paper["origin"] = f"校名來源題庫集中庫/{t['rel_path']}"
+            paper["src"] = src
             entry = finalize(paper, a.out)
         except ole_math.ToolsMissing as e:
             manifest["skipped"].append({"id": t["id"], "file": t["rel_path"], "deferred": True,
