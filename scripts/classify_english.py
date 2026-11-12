@@ -77,10 +77,21 @@ def load_topics(path: Path) -> list[dict]:
     return yaml.safe_load(path.read_text(encoding="utf-8"))["topics"]
 
 
+EXAM_GROUP = "綜合"          # 歸到這一類的題目（字彙、閱讀…）改依原卷段考次分類
+
+
 def available(topics: list[dict], grade: int, sem: int) -> list[dict]:
-    """這份卷時已經教過的主題（沒標年級的一律列入）。"""
+    """這份卷時已經教過的主題（沒標年級的一律列入；段考範圍不給模型選）。"""
     now = (grade, sem)
-    return [t for t in topics if not t.get("grade") or (t["grade"], t.get("semester") or 1) <= now]
+    return [t for t in topics if not t.get("exam")
+            and (not t.get("grade") or (t["grade"], t.get("semester") or 1) <= now)]
+
+
+def exam_topic(topics: list[dict], t: dict | None, exam_seq: int | None) -> dict | None:
+    """字彙、片語、閱讀等非文法點的題目：改歸到原卷的「第N次段考」。"""
+    if t and t.get("group") == EXAM_GROUP and exam_seq:
+        return next((x for x in topics if x.get("exam") == exam_seq), t)
+    return t
 
 
 def build(path: Path, topics: list[dict], force: bool) -> tuple[str, str | None]:
@@ -126,7 +137,7 @@ def apply(path: Path, topics: list[dict], out: dict, model: str) -> int:
     book = f"{TERM[m['grade']]}{'上' if m['semester'] == 1 else '下'}"
     n = 0
     for i, q in enumerate(d.get("questions") or []):
-        t = by_id.get(picked.get(str(i), ""))
+        t = exam_topic(topics, by_id.get(picked.get(str(i), "")), m.get("exam_seq"))
         tags = q.get("tags") or {}
         tags["chapter"] = {"publisher": None, "book": book, "subject": "英語",
                            "code": t["id"] if t else None, "title": t["title"] if t else None,

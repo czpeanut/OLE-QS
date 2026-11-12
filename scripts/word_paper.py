@@ -1,0 +1,573 @@
+#!/usr/bin/env python3
+"""段落流（docx_stream.py 的輸出）→ 一份卷的結構：大題、題組、題目、選項、答案、詳解、附圖位置。
+
+規則式，不用模型（參考國中 extract.py 的原則：寧可漏抓，不可錯抓）：
+- 題號一定要連號（上一題＋1，新大題可以從 1 重新開始），不連號的段落當成上一題的內容；
+- 認不出結構的題目由 word_pipeline.py 的品管閘門剔除、列入 dropped，不猜。
+
+    python scripts/word_paper.py 卷.docx          # 測試用：印出解析結果（JSON）
+"""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+ZW = "​"
+IMG = re.compile(r"\[圖(\d+)\]")
+LEADIMG = r"(?:\[圖\d+\]|⟦IMG:\d+⟧)"                 # 段落開頭的附圖錨點（docx_stream 的 [圖n] 或 word_pipeline 的 ⟦IMG:n⟧）
+CN = "零一二三四五六七八九十"
+SECTION = re.compile(r"^(第\s*[壹貳參肆伍一二三四五]\s*部分|[壹貳參肆伍陸柒捌玖拾]+\s*[、.．]|[一二三四五六七八九十]{1,3}\s*[、.．])")
+SECTION_WORDS = re.compile(r"題|選擇|填充|計算|問答|作答|混合|非選|作圖|閱讀|題組")
+GROUP = [
+    re.compile(r"[（(]\s*(\d{1,3})\s*[）)]\s*[、,，～~〜\-－–—至到]\s*[（(]\s*(\d{1,3})\s*[）)]\s*題"),   # (40)～(42)題為題組
+    re.compile(r"第?\s*(\d{1,3})\s*[.．]?\s*(?:[、,，～~〜\-－–—至到]|\s)\s*(?:第\s*)?(\d{1,3})\s*[.．]?\s*(?:題\s*(?:為|是|屬)?|為|是|屬)\s*題組"),
+    re.compile(r"(?:閱讀|根據|依據|參考)[^。，,]{0,30}?(?:回答|作答)\s*(?:以下|下列)?\s*第?\s*(\d{1,3})\s*[.．]?\s*[、,，～~〜\-－–至到]\s*(\d{1,3})\s*[.．]?\s*題"),
+    re.compile(r"[（(【〔]\s*第?\s*(\d{1,3})\s*[.．]?\s*[、,，～~〜\-－–至到]\s*(\d{1,3})\s*[.．]?\s*題\s*[）)】〕]"),
+]
+GROUP_MARKED = re.compile(r"(?:回答|作答)\s*(?:以下|下列)?\s*第?\s*(\d{1,3})\s*[.．]?\s*[、,，～~〜\-－–至到]\s*(\d{1,3})\s*[.．]?\s*題")
+BLANK = r"[（(][\s　]*[）)]"
+QSTART = [
+    re.compile(rf"^{BLANK}\s*(\d{{1,3}})\s*[.．、]"),                              # 翰林：（　）12.
+    re.compile(rf"^(\d{{1,3}})\s*[.．、]\s*{BLANK}"),                               # 南一：12. (　)
+    re.compile(r"^(\d{1,3})\s*[.．、](?![\d.．])"),                                 # 12. 題目
+    re.compile(r"^(\d{1,3})[ \u3000]+(?=[\u4e00-\u9fff「（(])"),                     # 12　題目（原卷漏打句點）
+    re.compile(rf"^{BLANK}\s*[（(]\s*(\d{{1,3}})\s*[）)]"),                          # (　)(41) 題目
+    re.compile(r"^[（(]\s*(\d{1,3})\s*[）)](?![\d])"),                              # (12) 題目
+]
+ANSWER_HEAD = re.compile(r"《\s*(?:參考)?答\s*案\s*》|【\s*(?:參考)?答\s*案\s*】|^[\s－\-—=＝*＊]*(?:參考答案|試題答案|答案卷|標準答案|解答)[\s－\-—=＝*＊:：]*$|"
+                         r"^[\s－\-—=＝]*(?:答案|解答)[\s－\-—=＝]*$|參考答案|試題答案|參考解答|試題解答")
+EXPLAIN_HEAD = re.compile(r"《\s*(?:試題)?(?:解析|詳解)\s*》|【\s*(?:試題)?(?:解析|詳解)\s*】|^[\s－\-—=＝]*(?:試題解析|詳解|解析)[\s－\-—=＝:：]*$")
+OPT = re.compile(r"[（(]\s*([A-EＡ-Ｅ])\s*[）)]")          # 全形「(Ａ)」也算（嘉義女中地科第 26 題）
+# 原卷漏打括號的代號：「C)約一年」少左括號、「(B沒有河流侵蝕」少右括號。前面要是空白，
+# 而且正好是下一個該出現的代號才算（split_options 串代號時只接受依序的代號）
+OPT_LOOSE = re.compile(r"(?<=[ 　\t])(?:([B-E])\s*[）)](?=\s*\S)|[（(]([B-E])(?=[\u4e00-\u9fff]))")
+
+
+def half_label(c: str) -> str:
+    return chr(ord(c) - 0xFEE0) if "Ａ" <= c <= "Ｅ" else c
+ANS_BLANK_LINE = re.compile(r"^\s*(答|解|Ans)\s*[:：]?\s*$")
+
+
+def fix_u(s: str) -> str:
+    """切開後的字串：去掉落單的 </u>，補上沒關的 </u>。"""
+    out, depth = [], 0
+    for part in re.split(r"(</?u>)", s):
+        if part == "<u>":
+            if depth:
+                continue
+            depth = 1
+        elif part == "</u>":
+            if not depth:
+                continue
+            depth = 0
+        out.append(part)
+    return "".join(out) + ("</u>" if depth else "")
+
+
+def orig_pos(s: str, k: int) -> int:
+    """plain(s) 的第 k 個字元，在 s（含 <u>、零寬字元）裡的位置。"""
+    i = n = 0
+    while i < len(s) and n < k:
+        m = re.match(r"</?u>", s[i:])
+        if m:
+            i += m.end()
+            continue
+        if s[i] != ZW:
+            n += 1
+        i += 1
+    while i < len(s) and s[i] == ZW:
+        i += 1
+    return i
+
+
+def plain(s: str) -> str:
+    return re.sub(r"</?u>", "", s).replace(ZW, "")
+
+
+def is_section(text: str) -> bool:
+    t = re.sub(rf"^(\s*{LEADIMG}\s*)+", "", plain(text)).strip()      # 標題段落開頭錨著的圖不算
+    return bool(SECTION.match(t)) and bool(SECTION_WORDS.search(t[:40])) and len(t) < 120
+
+
+def group_range(text: str) -> tuple[int, int, int, int] | None:
+    t = plain(text)
+    # 「◎ 說明文字……請根據資料回答以下30-32題：」：題號範圍在長段落的句尾（南一卷，新北地科，裁示 #015）
+    marked = t.lstrip().startswith(("◎", "※"))
+    window = 400 if marked else 80
+    # 「◎」開頭的段落：「依圖回答47～50題」這類，回答前面接什麼都算（嘉義女中地科第 47～50 題，裁示 #018）
+    for g in GROUP + ([GROUP_MARKED] if marked else []):
+        m = g.search(t[:window])
+        if m:
+            a, b = int(m.group(1)), int(m.group(2))
+            if a < b <= a + 15:
+                return a, b, m.start(), m.end()
+    return None
+
+
+def question_number(text: str) -> tuple[int, int] | None:
+    """段落開頭的題號 → (題號, 題號後的位置)；開頭的 [圖n] 不算。"""
+    t = plain(text)
+    lead = re.match(rf"^(\s*{LEADIMG}\s*)*\s*", t).end()
+    for rx in QSTART:
+        m = rx.match(t[lead:])
+        if m:
+            return int(m.group(1)), lead + m.end()
+    return None
+
+
+def section_type(name: str) -> str | None:
+    n = plain(name)
+    if re.search(r"多選|多重選擇|複選", n):
+        return "multiple"
+    if re.search(r"單選|單一選擇|選擇題", n) and not re.search(r"非選", n):
+        return "single"
+    if re.search(r"填充|選填", n):
+        return "fill"
+    if re.search(r"非選|計算|問答|簡答|作圖|申論|手寫", n):
+        return "calc"
+    return None
+
+
+def dense_answers(t: str) -> bool:
+    """一整行都是「1.C 2.B 3.B…」：答案列表。"""
+    return len(re.findall(r"(?<!\d)\d{1,3}\s*[.．、]\s*[（(]?[A-E]{1,5}[）)]?(?![A-Za-z])", t)) >= 5 and \
+        len(re.sub(r"[\d\sA-E.．、（）()\u3000]", "", t)) < 10
+
+
+ANSWER_LINE = re.compile(r"^\s*1\s*[.．、]\s*[（(]?\s*[A-E]{1,5}\s*[）)]?(?:\s+\d{1,3}\s*[.．、]\s*[（(]?\s*[A-E]{1,5}\s*[）)]?)*\s*$")
+
+
+def find_answer_zone(rows: list[dict], first_q: int) -> tuple[int, int]:
+    """(答案區起點, 詳解區起點)；沒有就是 len(rows)。"""
+    n = len(rows)
+    ans = exp = n
+    for k in range(first_q + 1, n):
+        t = plain(rows[k]["text"]).strip()
+        if len(t) < 60 and ANSWER_HEAD.search(t):
+            ans = k
+            break
+    if ans == n:
+        # 沒有「參考答案」標題：一整行密集的「1.C 2.B 3.B…」就是答案區開頭，前一行若是大題標題一併算進去（台南長榮公民）
+        for k in range(first_q + 1, n):
+            t = plain(rows[k]["text"])
+            if dense_answers(t):
+                ans = k - 1 if k - 1 > first_q and is_section(rows[k - 1]["text"]) else k
+                break
+    if ans == n:
+        # 沒有標題、也不是密集答案列：卷末重複大題標題，下一段就是「1.B」這種只有答案的一行（新北生物，每題一行答案＋解析）。
+        # 大題標題前一段若是重複的卷名（「110學年度 第一學期 新北高中…」）一併算進去
+        for k in range(first_q + 1, n - 1):
+            if is_section(rows[k]["text"]) and ANSWER_LINE.match(plain(rows[k + 1]["text"])):
+                prev = plain(rows[k - 1]["text"]) if k - 1 > first_q else ""
+                ans = k - 1 if re.search(r"學年度|段考|期中考|期末考|月考|定期評量", prev) and len(prev) < 60 else k
+                break
+    for k in range(ans, n):
+        t = plain(rows[k]["text"]).strip()
+        if len(t) < 60 and EXPLAIN_HEAD.search(t):
+            exp = k
+            break
+    return ans, exp
+
+
+def parse(rows: list[dict]) -> dict:
+    """主流程。回傳 {prelude, sections, questions, groups, answers, explanations}。"""
+    # 1. 找題目區：第一個題號 1 的段落
+    first = next((k for k, r in enumerate(rows) if (q := question_number(r["text"])) and q[0] == 1), None)
+    if first is None:
+        raise ValueError("找不到第 1 題")
+    ans_at, exp_at = find_answer_zone(rows, first)
+    rows, ans_at, exp_at = relabel(rows, first, ans_at, exp_at)
+    head = rows[:first]
+    body = rows[first:ans_at]
+    # 卷頭最後一個大題標題也算（例如「一、單選題」在第 1 題之前）
+    sections: list[dict] = []
+    for r in head:
+        if is_section(r["text"]):
+            sections.append({"name": plain(r["text"]).strip(), "rows": []})
+    if not sections:
+        sections.append({"name": "", "rows": []})
+    sections = sections[-1:]                           # 卷頭只留最靠近第 1 題的大題標題
+
+    questions: list[dict] = []
+    groups: list[dict] = []
+    cur_q: dict | None = None
+    cur_group: dict | None = None
+    expect = 1
+    pending_imgs = ""
+    held: list[dict] = []       # 選項已完整、本題沒提到「表」時後面接的表格：先暫存，看下一題是不是「如表一」
+    # 第 1 題之前、最後一個大題標題之後的文章（例如「一、閱讀測驗」後直接接文章）
+    last_sec = max((k for k, r in enumerate(head) if is_section(r["text"])), default=-1)
+    pre = [r for r in head[last_sec + 1:] if not is_instruction(r["text"])] if last_sec >= 0 else []
+    if pre and passage_like(pre):
+        cur_group = {"from": None, "to": None, "rows": pre, "section": 1, "implicit": True}
+        groups.append(cur_group)
+    for r in body:
+        text = r["text"]
+        qn = question_number(text)
+        if held and not (qn and qn[0] == expect and mentions_table(text)):
+            for h in held:                                   # 下一題沒提到表（或不是下一題）：表格還給上一題
+                cur_q["rows"].append(h)
+            held = []
+        # 新大題重新從第 1 題編號；前面可以先有題組標題與文章（惠文地理第二大題，裁示 #015）
+        restart = bool(qn and qn[0] == 1 and expect > 1 and len(sections) > 1
+                       and not any(q["section"] == len(sections) for q in questions)
+                       and (not sections[-1]["rows"] or (cur_group and cur_group.get("from") == 1) or strong_start(text)))
+        if qn and qn[0] == 1 and expect > 1 and sections[-1]["rows"] and not restart:
+            qn = None if not any(is_section(x["text"]) for x in sections[-1]["rows"][-1:]) else qn
+        if is_section(text) and not qn:
+            lead = re.findall(LEADIMG, plain(text)[:20])
+            sections.append({"name": re.sub(rf"^(\s*{LEADIMG}\s*)+", "", plain(text)).strip(), "rows": []})
+            pending_imgs = "".join(lead)                    # 標題段落上錨的圖，交給下一題（位置再由 PDF 決定）
+            cur_q = None
+            cur_group = None
+            continue
+        g = group_range(text)
+        if g and qn and g[2] <= 4:
+            qn = None                                       # 段落開頭就是「21.～23.為題組」：是題組標題，不是第 21 題
+        if g and not qn:
+            a, b, s0, s1 = g
+            # 題組標題後面接的文章要保留 <u>：plain() 的位置對回原字串再切（高雄三民第 19～20 題）
+            rest = fix_u(text[orig_pos(text, s1):]).lstrip(" 　:：。．.，,、")
+            rest = re.sub(r"^(?:<u>)?\s*為?題組\s*(?:</u>)?[\s　:：，,。]*", "", rest)   # 「(40)～(42)為題組：閱讀下文…」
+            lead = "".join(re.findall(LEADIMG, plain(text)[:s1]))   # 錨定在題組標題段落的圖
+            before = re.sub(rf"^[\s◎※]*|{LEADIMG}", "", plain(text)[:s0]).strip()
+            before = re.sub(r"^[（(][一二三四五六七八九十]+[）)]\s*", "", before)
+            n_cjk = len(re.findall(r"[\u4e00-\u9fff]", before))
+            instruction = re.match(r"(閱讀|根據|依據|參考|請|試)", before) and n_cjk < 30   # 「(一)閱讀下列二文，回答…」只是指示
+            if n_cjk >= 6 and not instruction:
+                # 範圍前面還有說明文字（「◎ 附圖為地震波…請根據圖片回答27-29題」）：整段都是題組材料，不能只留範圍後面
+                rest = re.sub(r"^\s*[◎※]\s*", "", fix_u(text)).strip()
+                lead = ""
+            cur_group = {"from": a, "to": b, "rows": [], "section": len(sections)}
+            if rest or lead:
+                cur_group["rows"].append({**r, "text": lead + rest})
+            groups.append(cur_group)
+            cur_q = None
+            continue
+        jump = qn and expect < qn[0] <= expect + 2 and strong_start(text)    # 原卷漏了一個題號：往後對上，不讓後面整段被併進上一題
+        if qn and (qn[0] == expect or jump or restart):
+            num, pos = qn
+            lead_imgs = "".join(re.findall(LEADIMG, plain(text)[:pos]))
+            cur_q = {"number": num, "section": len(sections), "rows": [{**r, "text": pending_imgs + lead_imgs + strip_lead(text)}] + held}
+            held = []                                       # 暫存的表格是這題「如表一」的表（台中女中第 27 題）
+            pending_imgs = ""
+            questions.append(cur_q)
+            sections[-1]["rows"].append(r)
+            expect = num + 1
+            if cur_group and cur_group.get("implicit"):
+                cur_group["from"] = cur_group["from"] or num
+                cur_group["to"] = num
+            elif cur_group and not (cur_group["from"] <= num <= cur_group["to"]):
+                cur_group = None
+            if cur_group:
+                cur_q["group"] = cur_group
+            continue
+        # 一般段落：在題組材料區（題組標題之後、第一題之前）就是材料，否則併入目前這題
+        if cur_group and (not cur_q or cur_q.get("group") is not cur_group):
+            cur_group["rows"].append(r)
+        elif not cur_q:
+            # 大題標題後面直接接文章（沒有「第 X～Y 題為題組」）：隱含題組
+            if not is_instruction(text) and passage_like([r]):
+                cur_group = {"from": None, "to": None, "rows": [r], "section": len(sections), "implicit": True}
+                groups.append(cur_group)
+        elif r["kind"] == "p" and options_complete(cur_q) and not OPT.match(plain(text).strip()) and (
+                (passage_like([r], need_text=True) and not refers_ahead(cur_q))
+                or re.match(rf"^\s*(?:{LEADIMG}\s*)*[◎※]", plain(text))):
+            # 「◎ 附表是地質年代表及其代表化石，請回答下列問題：」：南一卷的題組標記，再短也是下一組的開頭（嘉義女中地科第 46 題，裁示 #018）
+            # 上一題選項已經完整，後面又出現長文：下一組題目的文章
+            cur_group = {"from": None, "to": None, "rows": [r], "section": len(sections), "implicit": True}
+            groups.append(cur_group)
+            cur_q = None
+        elif r["kind"] == "table" and options_complete(cur_q) and not mentions_table(cur_q["rows"][0]["text"]):
+            held.append(r)
+        else:
+            cur_q["rows"].append(r)
+        sections[-1]["rows"].append(r)
+    if held and cur_q:
+        cur_q["rows"] += held
+    blocks = answer_blocks(rows[ans_at:]) if ans_at < len(rows) else []
+    ans_b = [b["ans"] for b in blocks if b["ans"]]
+    exp_b = [b["exp"] for b in blocks if b["exp"]]
+    answers = [dict(e, block=k) for k, b in enumerate(ans_b) for e in parse_entries(b)]
+    explanations = [dict(e, block=k) for k, b in enumerate(exp_b) for e in parse_entries(b)]
+    if not explanations:
+        # 答案與解析寫在一起（「1.B⏎解析：…」）：第一行是答案，「解析：」後面是詳解（新北生物）
+        for e in answers:
+            first, sep, rest = (e["text"] or "").partition("\n")
+            m = re.match(r"\s*[【\[]?\s*(?:解析|詳解)\s*[】\]]?\s*[:：]?\s*", rest)
+            if sep and m and rest[m.end():].strip():
+                explanations.append(dict(e, text=rest[m.end():].strip()))
+    # 大題底下只有一段沒編號的內容（例如非選題只有 (1)(2) 小題）：當成這一大題的第 1 題
+    for g in list(groups):
+        if g.get("implicit") and g["from"] is None and g["rows"]:
+            sec = g["section"]
+            if not any(q["section"] == sec for q in questions) and any(plain(r["text"]).strip() for r in g["rows"]):
+                questions.append({"number": 1, "section": sec, "rows": g["rows"], "unnumbered": True})
+                groups.remove(g)
+    questions.sort(key=lambda q: (q["section"], q["number"]))
+    return {"head": head, "sections": sections, "questions": questions, "groups": groups,
+            "answers": answers, "explanations": explanations, "has_answer_zone": ans_at < len(rows)}
+
+
+LETTER_Q = re.compile(r"^(\s*(?:<u>)?\s*)([A-Z])\s*[.．](?![\d.．])\s*")
+PROBLEM_Q = re.compile(r"(?m)^(\s*)問題\s*(\d{1,2})\s*[:：.．]\s*")
+
+
+def relabel(rows: list[dict], first: int, ans_at: int, exp_at: int) -> tuple[list[dict], int, int]:
+    """數學卷的兩種題號改成一般題號，切題與答案對應照原規則走（台中一中數學，裁示 #018）：
+    「三、選填題」底下 A. B. C. 是各自獨立的題目 → 1. 2. 3.；混合題型的「問題1：」→ 1.。答案區同樣改寫。"""
+    # 共用文章與「問題1：」「問題2：」在同一段（Word 換行符號隔開）：在「問題N：」前切成新段落（段落有圖時不切，圖的編號是照段落算的）
+    split = []
+    for k, r in enumerate(rows):
+        parts = re.split(r"\s+(?=問題\s*\d{1,2}\s*[:：])", r["text"]) if first <= k and r["kind"] == "p" and not r.get("images") else [r["text"]]
+        for j, t in enumerate(parts):
+            split.append((k, {**r, "text": t} if len(parts) > 1 else r))
+    ans_at = next((j for j, (k, _) in enumerate(split) if k >= ans_at), len(split))
+    exp_at = next((j for j, (k, _) in enumerate(split) if k >= exp_at), len(split))
+    rows = [r for _, r in split]
+    out, fill = [], False
+    for k, r in enumerate(rows):
+        t = r["text"]
+        if is_section(t) or (k >= ans_at and re.match(r"^\s*[一二三四五六七八九十]+\s*[、.．]", plain(t))):
+            fill = "選填" in plain(t)
+            out.append(r)
+            continue
+        t = PROBLEM_Q.sub(lambda m: f"{m.group(1)}{m.group(2)}. ", t)
+        if fill and k >= first:
+            if k < ans_at:
+                t = LETTER_Q.sub(lambda m: f"{m.group(1)}{ord(m.group(2)) - 64}. ", t, count=1)
+            else:                                        # 答案區：「A. 144」「A.144　B.(4,－2)」
+                t = re.sub(r"(?<![A-Za-z0-9(（])([A-H])\s*[.．](?![.．])", lambda m: f"{ord(m.group(1)) - 64}. ", t)
+        out.append({**r, "text": t} if t != r["text"] else r)
+    return out, ans_at, exp_at
+
+
+def strong_start(text: str) -> bool:
+    """明確的題目開頭（有作答括號，或題號後直接接題目文字），跳號時才敢接受。"""
+    t = re.sub(rf"^(\s*{LEADIMG}\s*)*", "", plain(text))
+    return bool(re.match(rf"^({BLANK}\s*\d{{1,3}}\s*[.．、]|\d{{1,3}}\s*[.．、]\s*{BLANK}|\d{{1,3}}\s*[.．、]\s*[\u4e00-\u9fff「（(])", t))
+
+
+def is_instruction(text: str) -> bool:
+    """作答說明（「說明：第1題至第20題…」「每題2分」），不是文章。"""
+    t = plain(text).strip()
+    return bool(re.match(r"^[※＊*]?\s*(說明|作答|注意|每題|答錯|本大題|請將|請依|請在|以下|下列各題)", t))
+
+
+def passage_like(rows: list[dict], need_text: bool = False) -> bool:
+    """像文章（共用材料）：中文字夠多（30 字以上）；need_text=False 時只有附圖也算。"""
+    cjk = sum(len(re.findall(r"[\u4e00-\u9fff]", plain(r["text"]))) for r in rows)
+    return cjk >= 30 or (not need_text and any(re.search(LEADIMG, r["text"]) for r in rows))
+
+
+def refers_ahead(q: dict) -> bool:
+    """這題提到「下圖」「下表」「下文」，後面的材料是它自己的。"""
+    return bool(re.search(r"下(圖|表|文|列(圖|表|資料))|如下|附(圖|表)", plain(q["rows"][0]["text"])[:200]))
+
+
+def mentions_table(text: str) -> bool:
+    """題目提到表格（如表一、下表、表中、附表…）。"""
+    return bool(re.search(r"表[一二三四五六七八九十\d（(]|[如下上右左附此該]表|表中|表格|統計表", plain(text)[:300]))
+
+
+def options_complete(q: dict) -> bool:
+    """這題的選項是不是已經到 (D) 或 (E)。"""
+    txt = "\n".join(r["text"] for r in q["rows"])
+    _, opts = split_options(txt)
+    return len(opts) >= 4
+
+
+def strip_lead(text: str) -> str:
+    """去掉段落開頭的 [圖n]、作答括號與題號，留下題幹。"""
+    t = text.replace(ZW, "")
+    lead = re.match(rf"^((?:<u>)?\s*{LEADIMG}\s*(?:</u>)?)*\s*", t).end()
+    t = t[lead:]
+    for rx in QSTART:
+        m = rx.match(plain(t))
+        if m:
+            # 對回含 <u> 的原字串：題號區段不會有底線，直接用長度
+            cut = len(plain(t)[:m.end()])
+            k, seen = 0, 0
+            while seen < cut and k < len(t):
+                if t.startswith("<u>", k):
+                    k += 3
+                    continue
+                if t.startswith("</u>", k):
+                    k += 4
+                    continue
+                k += 1
+                seen += 1
+            t = t[k:]
+            break
+    t = re.sub(rf"^\s*{BLANK}", "", t)                    # 南一「12. (　)」題號後的作答括號
+    return t
+
+
+# 整卷一次的詳解區標題：《試題解析》、單獨一行「試題解析」，或卷名後面接「…數學科試題解析」「…詳解」（Pilot-3 興大附中）
+GLOBAL_EXPLAIN = re.compile(r"《\s*(?:試題)?(?:解析|詳解)\s*》|^[\s－\-—=＝]*(?:試題解析|詳解)[\s－\-—=＝]*$|"
+                            r"(?:試題|試卷|科)(?:解析|詳解)[\s－\-—=＝]*$|解答與解析[\s－\-—=＝]*$")
+
+
+def answer_blocks(zone: list[dict]) -> list[dict]:
+    """答案區依大題分段，每段再分答案與解析：
+    - 「一、單選題 → 1.(C) 2.(E) → 【解析】→ 1.… → 二、多選題 → …」（每大題自己的解析）；
+    - 「《答案》各大題答案 … 《試題解析》各大題解析」（整卷一次）：《試題解析》之後全部算解析。
+    回傳 [{"ans": 答案段落, "exp": 解析段落}]，答案與解析各自依大題順序。"""
+    ans_blocks, exp_blocks = [[]], [[]]
+    mode, global_exp = "ans", False
+    for r in (zone if zone and dense_answers(plain(zone[0]["text"])) else zone[1:]):   # 沒有標題時第一列就是答案
+        t = plain(r["text"]).strip()
+        if len(t) < 60 and GLOBAL_EXPLAIN.search(t):
+            global_exp, mode = True, "exp"
+            if exp_blocks[-1]:
+                exp_blocks.append([])
+            continue
+        if len(t) < 40 and (is_section(t) or re.match(r"^[一二三四五六七八九十壹貳參肆伍]+\s*[、.．]", t)):
+            if global_exp:
+                if exp_blocks[-1]:
+                    exp_blocks.append([])
+            else:
+                if ans_blocks[-1] or exp_blocks[-1]:
+                    ans_blocks.append([])
+                    exp_blocks.append([])
+                mode = "ans"
+            continue
+        if len(t) < 60 and EXPLAIN_HEAD.search(t):
+            mode = "exp"
+            continue
+        (exp_blocks if mode == "exp" else ans_blocks)[-1].append(r)
+    blocks = []
+    for k in range(max(len(ans_blocks), len(exp_blocks))):
+        a = ans_blocks[k] if k < len(ans_blocks) else []
+        e = exp_blocks[k] if k < len(exp_blocks) else []
+        blocks.append({"ans": a, "exp": e})
+    return blocks
+
+
+def parse_entries(rows: list[dict]) -> list[dict]:
+    """答案區、詳解區：依序找「題號. 內容」，表格式答案（題號列＋答案列）先攤平成同樣格式。"""
+    parts: list[str] = []
+    for r in rows:
+        t = r["text"]
+        if r["kind"] == "table":
+            t = flatten_answer_table(t)
+        if r.get("images"):
+            t = IMG.sub("⟦圖⟧", t)
+        parts.append(t)
+    text = "\n".join(parts)
+    out = []
+    marks = list(re.finditer(r"(?:(?<=\s)|^|(?<=[。）)\]]))(\d{1,3})(?:\s*[.．、:：](?![\d])|[ \u3000]+(?=[（(]?[A-E][）)]?))", text))
+    expect = None
+    kept = []
+    for m in marks:
+        n = int(m.group(1))
+        if expect is None or n == expect or n == 1 or (kept and n == kept[-1][0] + 1):
+            kept.append((n, m))
+            expect = n + 1
+    for k, (n, m) in enumerate(kept):
+        end = kept[k + 1][1].start() if k + 1 < len(kept) else len(text)
+        out.append({"number": n, "text": text[m.end():end].strip(" 　\n")})
+    return out
+
+
+def flatten_answer_table(md: str) -> str:
+    """「| 題號 | 1 | 2 |」「| 答案 | B | C |」這種表格 → 「1.B 2.C」。看不出結構就原樣回傳。"""
+    rows = [[c.strip() for c in line.strip().strip("|").split("|")] for line in md.split("\n")
+            if line.strip().startswith("|") and not re.match(r"^\|\s*-", line.strip())]
+    out = []
+    # 同一列「題號｜答案｜題號｜答案…」左右交替（台中二中公民答案公佈表）
+    pairs = []
+    for r in rows:
+        cells = list(r)
+        while cells and not cells[-1]:
+            cells.pop()
+        if not cells:
+            continue                                        # 全空的列
+        if len(cells) % 2:
+            cells.append("")
+        nums = cells[0::2]
+        if not nums or not all(re.fullmatch(r"\d{1,3}\.?", c) for c in nums if c) or not any(nums):
+            pairs = []
+            break
+        pairs += [f"{a.rstrip('.')}.{b}" for a, b in zip(cells[0::2], cells[1::2]) if a]
+    if len(pairs) >= 3:
+        return " ".join(pairs)
+    k = 0
+    while k + 1 < len(rows):
+        nums, vals = rows[k], rows[k + 1]
+        cells = [c for c in nums if c]
+        if cells and sum(bool(re.fullmatch(r"\d{1,3}\.?", c)) for c in cells) >= max(2, len(cells) - 1):
+            for a, b in zip(nums, vals):
+                if re.fullmatch(r"\d{1,3}\.?", a):
+                    out.append(f"{a.rstrip('.')}.{b}")
+            k += 2
+        else:
+            k += 1
+    return " ".join(out) if out else md
+
+
+def split_options(text: str) -> tuple[str, list[dict]]:
+    """題目文字 → (題幹, 選項)。選項代號要依序 A、B、C…，表格裡的代號不算。"""
+    masked = mask(text)
+    # 「<u>(A)</u>」只有標號、畫底線：是文章裡的填空格，不是選項代號（高雄三民第二大題第 3 題）
+    pos = [(m.start(), m.end(), half_label(m.group(1))) for m in OPT.finditer(masked)
+           if not (text[max(0, m.start() - 3):m.start()] == "<u>" and text[m.end():m.end() + 4] == "</u>")]
+    # 原卷漏打左括號的代號（「(B)約一個月　C)約一年」，屏東地科第 22 題）：前面是空白、後面是右括號，
+    # 而且正好是下一個該出現的代號才算（下面串代號時只接受依序的代號）
+    pos = sorted(pos + [(m.start(), m.end(), m.group(1) or m.group(2)) for m in OPT_LOOSE.finditer(masked)])
+    best = None
+    for i, (s, e, lab) in enumerate(pos):
+        if lab != "A":
+            continue
+        chain = [(s, e, lab)]
+        for s2, e2, lab2 in pos[i + 1:]:
+            if ord(lab2) == ord(chain[-1][2]) + 1:
+                chain.append((s2, e2, lab2))
+        if len(chain) >= 2 and (best is None or len(chain) >= len(best)):
+            best = chain
+            if len(chain) >= 4:
+                break
+    if not best:
+        return text, []
+    # 文中標號：文章裡用「<u>(A)…</u>」標出畫線句子，問哪一句正確（國文常見）。整篇文章留在題幹（含標號與底線），
+    # 選項是各標號後面那段畫線的文字；不能從標號切開文章（嘉義永慶國文第 14 題）。
+    inline = [re.match(r"([^<]*?)</u>", text[e:]) if text[max(0, s - 3):s] == "<u>" else None
+              for s, e, _ in best]
+    if len(best) >= 3 and all(inline) and all(m.group(1).strip(" 　") for m in inline):
+        return text.rstrip(), [{"label": lab, "content": m.group(1).strip(" 　")}
+                               for (s, e, lab), m in zip(best, inline)]
+    stem = text[:best[0][0]].rstrip()
+    opts = []
+    for k, (s, e, lab) in enumerate(best):
+        end = best[k + 1][0] if k + 1 < len(best) else len(text)
+        opts.append({"label": lab, "content": text[e:end].strip(" 　\n")})
+    return stem, opts
+
+
+def mask(text: str) -> str:
+    """把表格列與 $…$ 換成等長的空白，找選項代號時不看它們。"""
+    out = re.sub(r"\$[^$]*\$", lambda m: " " * len(m.group(0)), text)
+    out = re.sub(r"(?m)^\|.*$", lambda m: " " * len(m.group(0)), out)
+    return out
+
+
+def main() -> int:
+    import docx_stream
+    rows = list(docx_stream.stream(Path(sys.argv[1])))
+    res = parse(rows)
+    for q in res["questions"]:
+        txt = "\n".join(r["text"] for r in q["rows"])
+        stem, opts = split_options(txt)
+        print(q["section"], q["number"], ("G" if q.get("group") else " "), len(opts), stem[:60].replace("\n", "⏎"))
+    print("groups", [(g["from"], g["to"]) for g in res["groups"]])
+    print("sections", [s["name"][:20] for s in res["sections"]])
+    print("answers", [(a["number"], a["text"][:8]) for a in res["answers"]][:60])
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
