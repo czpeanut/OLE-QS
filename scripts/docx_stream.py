@@ -324,8 +324,13 @@ def table(tbl, rel) -> str:
     rows = []
     for tr in tbl.findall(W + "tr"):
         cells = []
+        gb = tr.find(f"{W}trPr/{W}gridBefore")
+        cells += [""] * int(gb.get(W + "val") or 0) if gb is not None else []
         for tc in tr.findall(W + "tc"):
             cells.append(" ".join(paragraph(p, rel) for p in tc.findall(W + "p")).replace("|", "｜").strip())
+            span = tc.find(f"{W}tcPr/{W}gridSpan")
+            # 橫向合併的格子（表頭「出發資訊」跨 3 欄）：後面補空格，欄位才對得齊（師大附中地理第 2 題，裁示 #018）
+            cells += [""] * (int(span.get(W + "val") or 1) - 1) if span is not None else []
         rows.append(cells)
     if not rows:
         return ""
@@ -340,7 +345,9 @@ def unwrap(body):
     """body 的段落與表格；格子裡又放表格的外框表格（排版用）拆開，裡面的段落、表格依序輸出（台中二中公民答案公佈表）。"""
     for el in body:
         cells = el.findall(f"{W}tr/{W}tc") if el.tag == W + "tbl" else []
-        if el.tag == W + "tbl" and (el.find(f"{W}tr/{W}tc/{W}tbl") is not None or len(cells) == 1):
+        boxed_tbl = el.tag == W + "tbl" and any(c.find(f".//{W}txbxContent/{W}tbl") is not None for c in cells)
+        if el.tag == W + "tbl" and (el.find(f"{W}tr/{W}tc/{W}tbl") is not None or len(cells) == 1 or boxed_tbl):
+            # 格子裡的段落夾著「文字方塊裡的表格」：LibreOffice 7.4 把兩欄文章排成這種外框（台中二中公民第 30～31 題，裁示 #018）
             # 格子裡又放表格的外框表格，或只有一格的表格（加框的文章，嘉義高中公民題組）：拆開
             for tr in el.findall(W + "tr"):
                 for tc in tr.findall(W + "tc"):
@@ -441,6 +448,14 @@ def stream(path: Path, math: bool = True, txt: Path | None = None):
             elif el.tag == W + "tbl":
                 kind, text = "table", table(el, rel)
             else:
+                continue
+            if kind == "p" and re.search(r"(?m)^\|", text):
+                # 段落裡夾著文字方塊表格（浮動表格）：拆成「段落、表格、段落」，表格自成一段（LibreOffice 7.4 的答案表，裁示 #018）
+                for seg in re.split(r"((?:^\|.*(?:\n|$))+)", text, flags=re.M):
+                    if seg.strip():
+                        tbl = seg.lstrip().startswith("|")
+                        rows.append({"i": i, "kind": "table" if tbl else "p", "text": seg.strip("\n") if tbl else seg.strip()})
+                        i += 1
                 continue
             rows.append({"i": i, "kind": kind, "text": text})
             i += 1

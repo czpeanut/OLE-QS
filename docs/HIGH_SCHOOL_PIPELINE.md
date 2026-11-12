@@ -13,7 +13,7 @@
 | 1. 改寫 EQ 欄位 | `flatten_doc_eq.py` | 照 Word 97 片段表改寫題號、選項代號、(甲)、題組標題，否則 LibreOffice 轉檔會吃掉它們 |
 | 2. 轉檔 | LibreOffice | 轉出 .docx（解析用）和原卷 PDF（`sources/`、附圖裁切用） |
 | 3. 段落流 | `docx_stream.py` | 底線 `<u>`、上下標、表格、附圖位置、符號字型 |
-| 4. 公式 | `ole_math.py`、`mtef3.py` | MathType 5 以上：公開的 Ruby gem `mathtype_to_mathml_plus`＋pandoc；Office 方程式編輯器 3.0：依公開 MTEF 3 規格解析。只輸出網站渲染器認得的 LaTeX |
+| 4. 公式 | `ole_math.py`、`mtef3.py`、`mtef5.py` | 純 Python（v5.0 起不需要 ruby、pandoc）：MathType 4／5 依公開 MTEF 5 規格、Office 方程式編輯器 3.0 依 MTEF 3 規格解析。只輸出網站渲染器認得的 LaTeX；公式是純圖片（WMF）的題剔除 |
 | 5. 切題 | `word_paper.py` | 大題、題號（必須連號）、題組（含沒有標題的閱讀文章）、選項、答案區、詳解 |
 | 6. 附圖 | `word_pipeline.py` | 用 Word 裡的圖片尺寸到 PDF 找位置，依每題在 PDF 的起點決定掛哪一題，從 PDF 裁 PNG（寬至少 300 像素） |
 | 7. 把關 | 品管閘門＋檢查程式 3.6＋round3_qa | 逐題檢查，不合格、難處理、底線或括號代號缺漏的題目一律剔除，寫進 manifest 的 `dropped`；**剔除多少都照交**（裁示 #016），只有一題不剩才不交。覆蓋率低、答案區對不上只寫進 manifest 的 `note`（答案對不上時整卷不附答案） |
@@ -35,8 +35,7 @@
 ## 1. 安裝（每個環境一次）
 
 ```bash
-apt-get install -y libreoffice-writer pandoc ruby fonts-arphic-uming fonts-arphic-ukai fonts-noto-cjk
-gem install mathtype_to_mathml_plus pry nokogiri --no-document
+apt-get install -y libreoffice-writer fonts-arphic-uming fonts-arphic-ukai fonts-noto-cjk      # v5.0 起不需要 ruby、pandoc
 python3 -m pip install pyyaml pymupdf pillow olefile
 ```
 
@@ -55,7 +54,7 @@ python3 scripts/round3_regress.py --root <集中庫本機資料夾> --out out/re
 ```
 
 - 基準原卷在集中庫，雲端搜尋不一定搜得到：`python3 scripts/round3_regress.py --list` 列出每份的雲端檔案 ID 與該放的路徑，照 ID 下載即可（知道連結就能讀）。
-- 可以用 `--ids` 只測自己科目的基準卷；沒有 ruby 的環境，數學類基準卷會列為「留待完整環境」，不算失敗。
+- 可以用 `--ids` 只測自己科目的基準卷。v5.0 起 MathType 公式都用 Python 轉，沒有 ruby 的環境也要 30 份全部相同。
 - 結束碼不是 0 就停下來，把輸出整段回報督察。
 
 **環境檢查**一次列出所有缺的東西：
@@ -72,7 +71,7 @@ python3 scripts/word_pipeline.py --check-env
 |---|---|
 | Python 套件（pymupdf、pillow、pyyaml、olefile） | `python3 -m pip install --no-index --find-links offline/wheels pymupdf pillow pyyaml olefile`（Python 3.10 以上、x86_64 Linux） |
 | 字型 AR PL UMing TW、AR PL UKai TW | 不用裝：管線自動使用 `offline/fonts/`（也可用 `--fonts <資料夾>` 指定） |
-| ruby、pandoc（MathType 5 公式工具） | **可以沒有**：沒有 MathType 4／5 公式的卷照常做；有的卷在 manifest 的 `skipped` 標 `deferred: true`、原因「留待完整環境」，不算失敗，之後在有工具的環境跑同一行指令會自動補做 |
+| ruby、pandoc | **v5.0 起不需要**：MathType 公式改用 `mtef5.py`（純 Python），不會再出現「留待完整環境」 |
 | LibreOffice 正式版 | 離線包沒附，必須事先就有 |
 
 - 字型資料夾和系統字型的結果完全相同（督察實測：題目、附圖逐檔相同，PDF 頁數相同）。
@@ -140,6 +139,8 @@ python scripts/round3_qa.py --batch <這批原始 .doc 所在資料夾> out/數�
   - 選項畫在點陣圖（JPEG、PNG）裡：讀不到代號，剔除；EMF／WMF 圖裡的 (A)(B)(C) 讀得到，會自動建立選項；
   - 題組的幾張圖分在不同頁、或 LibreOffice 把圖排壞（EMF 縮小、超寬的裁切圖放大變形）：剔除；
   - 南一「各校段考試題觀摩」部分卷的答案區是出版社範本的假答案（各校相同），管線自動捨棄，manifest 的 note 會註明，該卷視為沒有答案。
+  - 原卷附圖只是出版社的佔位框（框裡只寫「圖名：NS1H11-T21-7」）：沒有真正的圖，剔除（裁示 #018）；
+  - 公式是貼上的圖片（WMF）而不是公式物件：轉不成文字。句子中間夾著一行高（40pt 以下）小圖的題自動剔除（裁示 #018；台中二中數學 g10s2e3「在⟦圖⟧中，⟦圖⟧為⟦圖⟧的中點」）。
 
 ## 5. 不准做的事
 

@@ -12,7 +12,7 @@
   5. 品管閘門（apps/api/quality.py）＋檢查程式（scripts/check_bank_yaml.py --sources）逐題檢查，
      不合格的題目剔除並列入 manifest 的 dropped；剔除多少都照交（裁示 #016），只有一題不剩或卷層級錯誤才列入 skipped。
 不用模型、不花錢。需要：LibreOffice 正式版、三套中文字型、python 套件 pyyaml pymupdf pillow olefile；
-有 MathType 5 公式的卷另外要 pandoc、ruby（gem mathtype_to_mathml_plus pry nokogiri）。
+MathType 公式（第 3 版、第 5 版）都由純 Python 轉換（mtef3.py、mtef5.py），不需要 ruby、pandoc（v5.0 起）。
 安裝方式見 docs/HIGH_SCHOOL_PIPELINE.md；`--check-env` 一次列出這個環境缺什麼。
 """
 from __future__ import annotations
@@ -30,7 +30,7 @@ import traceback
 import zipfile
 from pathlib import Path
 
-PIPELINE_VERSION = "v4.9"
+PIPELINE_VERSION = "v5.0"
 
 
 def missing_python() -> list[str]:
@@ -75,6 +75,24 @@ except ImportError:                                     # 舊版 PyMuPDF
 GRADE_NAME = {10: "高一", 11: "高二", 12: "高三"}
 SUBS = {"物理", "化學", "生物", "地科", "歷史", "地理", "公民與社會"}
 TOKEN = re.compile(r"⟦IMG:(\d+)⟧")
+
+
+def inline_glyph_image(text: str, images: list[dict], max_h: float = 40.0, max_w: float = 110.0) -> bool:
+    """句子中間夾著一行高的小圖：原卷用圖片打公式或符號（不是 MathType 物件，台中二中數學 g10s2e3「在⟦圖⟧中，⟦圖⟧為⟦圖⟧的中點」）。
+    圖拿掉後文字殘缺，題目不收（裁示 #018）。表格逐格看。
+    寬的（「如下表：⟦圖⟧」貼成圖的表格，128～226pt）是真的附圖；寬不到 6pt 的是排版用的空白小圖，都不算。"""
+    for line in text.split("\n"):
+        cells = line.strip().strip("|").split("|") if line.lstrip().startswith("|") else [line]
+        for cell in cells:
+            for m in TOKEN.finditer(cell):
+                before = TOKEN.sub("", cell[:m.start()]).strip()
+                after = TOKEN.sub("", cell[m.end():]).strip()
+                if not before or not after:
+                    continue
+                hm = re.match(r"([\d.]+)x([\d.]+)$", images[int(m.group(1))].get("size") or "")
+                if hm and float(hm.group(2)) <= max_h and 6.0 <= float(hm.group(1)) <= max_w:
+                    return True
+    return False
 
 
 # ── 卷的出處 ──────────────────────────────────────────────────────────────
@@ -430,6 +448,11 @@ class PdfFigures:
                 r = r | fitz.Rect(max(br.x0, r.x0), br.y0, min(br.x1, r.x1), br.y1)
         return r
 
+    def placeholder(self, p: int, rect) -> bool:
+        """裁切範圍裡的文字只有「圖名：NS1H11-T21-7」這類編號：出版社排版用的佔位框。"""
+        t = self.doc[p].get_text("text", clip=fitz.Rect(rect)).strip()
+        return bool(re.fullmatch(r"圖\s*名\s*[:：]\s*[A-Za-z0-9][A-Za-z0-9\-_.]*", re.sub(r"\s+", "", t)))
+
     def crop(self, p: int, r: "fitz.Rect", png: Path) -> dict:
         page = self.doc[p]
         clip = fitz.Rect(r.x0 - 3, r.y0 - 3, r.x1 + 3, r.y1 + 3) & page.rect
@@ -540,6 +563,9 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
             rec["group_stem"] = gi["text"] or gi["head"]
         for t in [stem] + [o["content"] for o in options] + ([rec.get("group_stem", "")]):
             reason = reason or bad_text(t)
+        g_raw = "\n".join(x["text"] for x in q["group"]["rows"]) if gi else ""
+        if inline_glyph_image("\n".join([stem_raw, g_raw] + [o["content"] for o in opts_raw]), images):
+            reason = reason or "題目文字中夾著用圖片打的公式或符號，轉不出文字"
         # 安全網：這題的內容裡又出現像下一題的題號開頭，表示切題切錯了（例如原卷漏打題號）
         for line in raw.split("\n")[1:]:
             m = re.match(r"^\s*(?:[（(][\s　]*[）)]\s*)?(\d{1,3})\s*[.．、]?[\s　]*(?:[（(][\s　]*[）)])?\s*[\u4e00-\u9fff「]", wp.plain(line))
@@ -562,6 +588,15 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
                 missing.append({"number": n, "section": g["section"], "text": text,
                                 "reason": f"題組標明第 {g['from']}～{g['to']} 題，這題拆不出來（多半是題目填在表格格子裡）"})
     place_figures(questions, images, figs, shared, pid, out)
+    # 原卷附圖只是出版社的佔位框（框裡只寫「圖名：NS1H11-T21-7」）：沒有真正的圖，題目無法作答，剔除（台中女中公民，裁示 #018）
+    sh_crop = {a["key"]: a.get("crop") for a in shared}
+    for q in questions:
+        crops = [a.get("crop") for a in q.get("assets") or []] + [o["asset"].get("crop") for o in q.get("options") or [] if o.get("asset")]
+        if q.get("shared_asset"):
+            crops.append(sh_crop.get(q["shared_asset"]))
+        for c in crops:
+            if c and figs.placeholder(c["page"] - 1, c["rect"]):
+                q["_reason"] = q.get("_reason") or "原卷附圖是出版社的佔位框（只寫「圖名：編號」），沒有真正的圖"
     attach_answers(parsed, questions)
     attach_explanations(parsed, questions, chem)
     sections = [{"ord": k, "name": v, "count": 0} for k, v in sorted(sec_index.items())]
@@ -781,12 +816,20 @@ def entry_lookup(entries: list[dict], qs: list[dict]):
             # （惠文地理第二大題：答案寫到第 8 題，6～8 題卻是填在表格裡、拆不出來）
             have = nums_of[sec]
             return want <= have or (have <= want and len(have) * 2 >= len(want))
-        while k < len(secs) and not fits(secs[k]):
+        def by_order(sec) -> bool:
+            # 卷面題號接續（第二大題 7～10），答案區卻每大題重新從 1 編（1.AE 2.ACE…）：題數相同就照順序對（興大附中數學，裁示 #018）
+            return sorted(want) == list(range(1, len(want) + 1)) and len(want) == len(nums_of[sec]) and min(nums_of[sec]) > 1
+        while k < len(secs) and not fits(secs[k]) and not by_order(secs[k]):
             k += 1
         if k >= len(secs):
             break                                          # 後面的段落對不上任何大題：不用，但已對上的照用
-        for e in got:
-            table.setdefault((secs[k], e["number"]), e["text"])
+        if fits(secs[k]):
+            for e in got:
+                table.setdefault((secs[k], e["number"]), e["text"])
+        else:
+            order = sorted(nums_of[secs[k]])
+            for e in sorted(got, key=lambda e: e["number"]):
+                table.setdefault((secs[k], order[e["number"] - 1]), e["text"])
         k += 1
     return lambda q: table.get((q["section"], q["number"]))
 
@@ -855,6 +898,8 @@ def attach_answers(parsed: dict, qs: list[dict]) -> None:
                 continue
             if not re.sub(r"[①-⑳❶-❿\s＿_（）()、,，.．:：答]", "", ans or ""):
                 continue                                  # 空白答案卷（只有 ①②、底線）
+            if re.fullmatch(r"等級\s*\d+\s*[（(]\s*\d+\s*[-~～－]\s*\d+\s*分\s*[）)]", ans or ""):
+                continue                                  # 評分等級「等級2 (3-4分)」不是答案（台中二中公民第 36 題，裁示 #018）
             if re.fullmatch(r"[（(]\s*[一二三四五六七八九十]+\s*[）)]", ans or ""):
                 continue                                  # 只是下一小節的標號「(二)」（空白答案卷「(一)1. 2. (二)1. 2.」，高雄女中國文）
             if ans and len(ans) <= 80 and not re.search(r"⟦|\[圖", ans):
@@ -1076,10 +1121,7 @@ def env_report(env: dict) -> tuple[list[str], dict]:
         if f not in fams:
             out.append(f"缺字型「{f}」：apt-get install fonts-arphic-uming fonts-arphic-ukai fonts-noto-cjk，"
                        "或用交接包的 offline/fonts/（--fonts 指定）。字型不同，PDF 分頁與附圖位置就和督察的結果不一樣")
-    m = ole_math.available()
-    info["mathtype5"] = m is None
-    if m:
-        info["mathtype5_missing"] = m
+    info["mathtype5"] = True                           # v5.0 起 MathType 公式由 mtef5.py 轉換，不需要 ruby／pandoc
     return out, info
 
 

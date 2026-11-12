@@ -28,6 +28,7 @@ GROUP = [
     re.compile(r"(?:閱讀|根據|依據|參考)[^。，,]{0,30}?(?:回答|作答)\s*(?:以下|下列)?\s*第?\s*(\d{1,3})\s*[.．]?\s*[、,，～~〜\-－–至到]\s*(\d{1,3})\s*[.．]?\s*題"),
     re.compile(r"[（(【〔]\s*第?\s*(\d{1,3})\s*[.．]?\s*[、,，～~〜\-－–至到]\s*(\d{1,3})\s*[.．]?\s*題\s*[）)】〕]"),
 ]
+GROUP_MARKED = re.compile(r"(?:回答|作答)\s*(?:以下|下列)?\s*第?\s*(\d{1,3})\s*[.．]?\s*[、,，～~〜\-－–至到]\s*(\d{1,3})\s*[.．]?\s*題")
 BLANK = r"[（(][\s　]*[）)]"
 QSTART = [
     re.compile(rf"^{BLANK}\s*(\d{{1,3}})\s*[.．、]"),                              # 翰林：（　）12.
@@ -38,7 +39,7 @@ QSTART = [
     re.compile(r"^[（(]\s*(\d{1,3})\s*[）)](?![\d])"),                              # (12) 題目
 ]
 ANSWER_HEAD = re.compile(r"《\s*(?:參考)?答\s*案\s*》|【\s*(?:參考)?答\s*案\s*】|^[\s－\-—=＝*＊]*(?:參考答案|試題答案|答案卷|標準答案|解答)[\s－\-—=＝*＊:：]*$|"
-                         r"^[\s－\-—=＝]*(?:答案|解答)[\s－\-—=＝]*$|參考答案|試題答案")
+                         r"^[\s－\-—=＝]*(?:答案|解答)[\s－\-—=＝]*$|參考答案|試題答案|參考解答|試題解答")
 EXPLAIN_HEAD = re.compile(r"《\s*(?:試題)?(?:解析|詳解)\s*》|【\s*(?:試題)?(?:解析|詳解)\s*】|^[\s－\-—=＝]*(?:試題解析|詳解|解析)[\s－\-—=＝:：]*$")
 OPT = re.compile(r"[（(]\s*([A-EＡ-Ｅ])\s*[）)]")          # 全形「(Ａ)」也算（嘉義女中地科第 26 題）
 # 原卷漏打括號的代號：「C)約一年」少左括號、「(B沒有河流侵蝕」少右括號。前面要是空白，
@@ -95,8 +96,10 @@ def is_section(text: str) -> bool:
 def group_range(text: str) -> tuple[int, int, int, int] | None:
     t = plain(text)
     # 「◎ 說明文字……請根據資料回答以下30-32題：」：題號範圍在長段落的句尾（南一卷，新北地科，裁示 #015）
-    window = 400 if t.lstrip().startswith(("◎", "※")) else 80
-    for g in GROUP:
+    marked = t.lstrip().startswith(("◎", "※"))
+    window = 400 if marked else 80
+    # 「◎」開頭的段落：「依圖回答47～50題」這類，回答前面接什麼都算（嘉義女中地科第 47～50 題，裁示 #018）
+    for g in GROUP + ([GROUP_MARKED] if marked else []):
         m = g.search(t[:window])
         if m:
             a, b = int(m.group(1)), int(m.group(2))
@@ -135,7 +138,7 @@ def dense_answers(t: str) -> bool:
         len(re.sub(r"[\d\sA-E.．、（）()\u3000]", "", t)) < 10
 
 
-ANSWER_LINE = re.compile(r"^\s*1\s*[.．、]\s*[（(]?\s*[A-E]{1,5}\s*[）)]?\s*$")
+ANSWER_LINE = re.compile(r"^\s*1\s*[.．、]\s*[（(]?\s*[A-E]{1,5}\s*[）)]?(?:\s+\d{1,3}\s*[.．、]\s*[（(]?\s*[A-E]{1,5}\s*[）)]?)*\s*$")
 
 
 def find_answer_zone(rows: list[dict], first_q: int) -> tuple[int, int]:
@@ -177,6 +180,7 @@ def parse(rows: list[dict]) -> dict:
     if first is None:
         raise ValueError("找不到第 1 題")
     ans_at, exp_at = find_answer_zone(rows, first)
+    rows, ans_at, exp_at = relabel(rows, first, ans_at, exp_at)
     head = rows[:first]
     body = rows[first:ans_at]
     # 卷頭最後一個大題標題也算（例如「一、單選題」在第 1 題之前）
@@ -270,8 +274,10 @@ def parse(rows: list[dict]) -> dict:
             if not is_instruction(text) and passage_like([r]):
                 cur_group = {"from": None, "to": None, "rows": [r], "section": len(sections), "implicit": True}
                 groups.append(cur_group)
-        elif r["kind"] == "p" and options_complete(cur_q) and passage_like([r], need_text=True) \
-                and not OPT.match(plain(text).strip()) and not refers_ahead(cur_q):
+        elif r["kind"] == "p" and options_complete(cur_q) and not OPT.match(plain(text).strip()) and (
+                (passage_like([r], need_text=True) and not refers_ahead(cur_q))
+                or re.match(rf"^\s*(?:{LEADIMG}\s*)*[◎※]", plain(text))):
+            # 「◎ 附表是地質年代表及其代表化石，請回答下列問題：」：南一卷的題組標記，再短也是下一組的開頭（嘉義女中地科第 46 題，裁示 #018）
             # 上一題選項已經完整，後面又出現長文：下一組題目的文章
             cur_group = {"from": None, "to": None, "rows": [r], "section": len(sections), "implicit": True}
             groups.append(cur_group)
@@ -305,6 +311,39 @@ def parse(rows: list[dict]) -> dict:
     questions.sort(key=lambda q: (q["section"], q["number"]))
     return {"head": head, "sections": sections, "questions": questions, "groups": groups,
             "answers": answers, "explanations": explanations, "has_answer_zone": ans_at < len(rows)}
+
+
+LETTER_Q = re.compile(r"^(\s*(?:<u>)?\s*)([A-Z])\s*[.．](?![\d.．])\s*")
+PROBLEM_Q = re.compile(r"(?m)^(\s*)問題\s*(\d{1,2})\s*[:：.．]\s*")
+
+
+def relabel(rows: list[dict], first: int, ans_at: int, exp_at: int) -> tuple[list[dict], int, int]:
+    """數學卷的兩種題號改成一般題號，切題與答案對應照原規則走（台中一中數學，裁示 #018）：
+    「三、選填題」底下 A. B. C. 是各自獨立的題目 → 1. 2. 3.；混合題型的「問題1：」→ 1.。答案區同樣改寫。"""
+    # 共用文章與「問題1：」「問題2：」在同一段（Word 換行符號隔開）：在「問題N：」前切成新段落（段落有圖時不切，圖的編號是照段落算的）
+    split = []
+    for k, r in enumerate(rows):
+        parts = re.split(r"\s+(?=問題\s*\d{1,2}\s*[:：])", r["text"]) if first <= k and r["kind"] == "p" and not r.get("images") else [r["text"]]
+        for j, t in enumerate(parts):
+            split.append((k, {**r, "text": t} if len(parts) > 1 else r))
+    ans_at = next((j for j, (k, _) in enumerate(split) if k >= ans_at), len(split))
+    exp_at = next((j for j, (k, _) in enumerate(split) if k >= exp_at), len(split))
+    rows = [r for _, r in split]
+    out, fill = [], False
+    for k, r in enumerate(rows):
+        t = r["text"]
+        if is_section(t) or (k >= ans_at and re.match(r"^\s*[一二三四五六七八九十]+\s*[、.．]", plain(t))):
+            fill = "選填" in plain(t)
+            out.append(r)
+            continue
+        t = PROBLEM_Q.sub(lambda m: f"{m.group(1)}{m.group(2)}. ", t)
+        if fill and k >= first:
+            if k < ans_at:
+                t = LETTER_Q.sub(lambda m: f"{m.group(1)}{ord(m.group(2)) - 64}. ", t, count=1)
+            else:                                        # 答案區：「A. 144」「A.144　B.(4,－2)」
+                t = re.sub(r"(?<![A-Za-z0-9(（])([A-H])\s*[.．](?![.．])", lambda m: f"{ord(m.group(1)) - 64}. ", t)
+        out.append({**r, "text": t} if t != r["text"] else r)
+    return out, ans_at, exp_at
 
 
 def strong_start(text: str) -> bool:

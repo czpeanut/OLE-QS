@@ -95,6 +95,8 @@ def display(instr: str) -> str | None:
                 return c
             if set(args) <= {"A", "°", "˚", "o"} and "A" in args:
                 return "Å"                                  # 埃（長度單位）
+            if set(args) & set("○◯〇Oo0") and set(args) & {"／", "/", "∕", "|"}:
+                return "∅"                                  # ○ 疊 ／：空集合（台南二中數學第二大題第 8 題，裁示 #018）
     return "⟦" + instr.replace(ZW, "") + "⟧"     # 其他 EQ：原指令照字面留給 docx_stream.py
 
 

@@ -165,7 +165,7 @@ def mtef_version(data: bytes) -> int | None:
 
 def convert(bins: dict[str, bytes]) -> dict[str, str | None]:
     """{名稱: oleObject.bin 內容} → {名稱: LaTeX（不含 $）或 None}。
-    MTEF 第 3 版（Office 方程式編輯器 3.0）用 mtef3.py；第 4、5 版（MathType）用 Ruby gem＋pandoc。"""
+    MTEF 第 3 版（Office 方程式編輯器 3.0）用 mtef3.py；第 5 版（MathType 4、5）用 mtef5.py，都是純 Python。"""
     import mtef3
     res: dict[str, str | None] = {}                      # 只放公式；不是公式的物件（Excel、圖檔）不在結果裡
     with tempfile.TemporaryDirectory() as d:
@@ -180,15 +180,13 @@ def convert(bins: dict[str, bytes]) -> dict[str, str | None]:
                 except Exception:                       # noqa: BLE001
                     res[k] = None
                 continue
-            f = Path(d) / f"eq{i:05d}.bin"
-            f.write_bytes(data)
-            files.append(f)
-            names[f.name] = k
-        if files:
-            if (miss := available()):
-                raise ToolsMissing(f"含 MathType 公式 {len(files)} 個，{miss}")
-            for fname, tex in mathml_to_latex(to_mathml(files)).items():
-                res[names[fname]] = normalize(tex)
+            # MTEF 第 5 版（MathType 4／5）：純 Python 的 mtef5.py，不再需要 ruby／pandoc（裁示 #018）。
+            # 數學第 1 批 412 個公式和舊的 Ruby gem＋pandoc 結果逐一比對，一致（16 個只差大括號分組）。
+            try:
+                import mtef5
+                res[k] = normalize(mtef5.to_latex(data))
+            except Exception:                           # noqa: BLE001
+                res[k] = None                           # 轉不出來：那題列入 dropped
     return res
 
 
