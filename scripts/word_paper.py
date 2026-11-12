@@ -267,7 +267,9 @@ def strip_lead(text: str) -> str:
     return t
 
 
-GLOBAL_EXPLAIN = re.compile(r"《\s*(?:試題)?(?:解析|詳解)\s*》|^[\s－\-—=＝]*(?:試題解析|詳解)[\s－\-—=＝]*$")
+# 整卷一次的詳解區標題：《試題解析》、單獨一行「試題解析」，或卷名後面接「…數學科試題解析」「…詳解」（Pilot-3 興大附中）
+GLOBAL_EXPLAIN = re.compile(r"《\s*(?:試題)?(?:解析|詳解)\s*》|^[\s－\-—=＝]*(?:試題解析|詳解)[\s－\-—=＝]*$|"
+                            r"(?:試題|試卷|科)(?:解析|詳解)[\s－\-—=＝]*$|解答與解析[\s－\-—=＝]*$")
 
 
 def answer_blocks(zone: list[dict]) -> list[dict]:

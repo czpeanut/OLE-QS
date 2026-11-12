@@ -52,7 +52,8 @@ def docx_underlines(path: Path) -> tuple[str, list[str]]:
         if cur:
             segs.append(cur)
         text.append("\n")
-    segs = [s for s in segs if re.search(r"[\u4e00-\u9fff]", s) and "題組" not in s]
+    # 有字的底線段才算（中文、英文人名如 Bao、數字）；只有空白或底線符號的作答格不算
+    segs = [s for s in segs if re.search(r"[\u4e00-\u9fffA-Za-z0-9]", s) and "題組" not in s]
     return "".join(text), segs
 
 
@@ -68,15 +69,17 @@ def to_docx(path: Path) -> Path | None:
     if not exe:
         return None
     out = Path(tempfile.mkdtemp())
-    subprocess.run([exe, "--headless", "--convert-to", "docx", "--outdir", str(out), str(path)],
-                   capture_output=True, timeout=300)
+    profile = Path(tempfile.mkdtemp(prefix="lo_qa_"))        # 自己的設定檔：別的 LibreOffice 在跑也轉得出來
+    subprocess.run([exe, f"-env:UserInstallation={profile.as_uri()}", "--headless", "--convert-to", "docx",
+                    "--outdir", str(out), str(path)], capture_output=True, timeout=300)
+    shutil.rmtree(profile, ignore_errors=True)
     f = out / (path.stem + ".docx")
     return f if f.is_file() else None
 
 
 def question_area(text: str) -> str:
     hits = [m.start() for m in ANS.finditer(text)]
-    hits = [h for h in hits if h > 2000]                # 卷頭的作答說明不算
+    hits = [h for h in hits if h > min(2000, len(text) * 0.3)]   # 卷頭的作答說明不算（短卷用全文 30% 當門檻）
     return text[:hits[0]] if hits else text
 
 
@@ -88,6 +91,7 @@ def check(orig: Path, ypath: Path) -> list[str]:
     body = question_area(doc_fields(orig)) if orig.suffix.lower() == ".doc" else ""
     d = yaml.safe_load(ypath.read_text(encoding="utf-8"))
     segs, seen = [], set()
+    exps = [q.get("explanation") or "" for q in d.get("questions") or []]
     for q in d.get("questions") or []:
         g = q.get("group_stem") or ""
         parts = [("題組", g)] if g and g not in seen else []
@@ -95,9 +99,10 @@ def check(orig: Path, ypath: Path) -> list[str]:
         parts += [("題幹", q.get("stem") or "")]
         parts += [(o.get("label"), o.get("content") or "") for o in q.get("options") or []]
         for k, v in parts:
-            segs.append((q.get("number"), k, re.sub(r"[\s\u3000]|</?u>", "", v), v))
+            # 比對用：去掉空白、<u>、LaTeX 記號（「(2)$\\log_{3}$」→「(2)log3」）
+            segs.append((q.get("number"), k, re.sub(r"[\s\u3000$\\{}_^]|</?u>", "", v), v))
     problems = []
-    want = [m for m in FLD.finditer(body) if not re.fullmatch(r"[A-E]", m.group(1).strip("\u3000 "))]
+    want = [m for m in FLD.finditer(body) if not re.fullmatch(r"[A-EＡ-Ｅ]", m.group(1).strip("\u3000 "))]   # 選項代號不算
     have = sum(len(LABEL.findall(v)) for *_, v in segs)
     missing = collections.defaultdict(set)
     for m in want:
@@ -124,11 +129,15 @@ def check(orig: Path, ypath: Path) -> list[str]:
         dbody = question_area(dtext)
         under = [s for s in under if s in dbody]
         u = sum(len(re.findall(r"<u>", v)) for *_, v in segs)
-        print(f"規則 B：原卷題目區底線文字 {len(under)} 段，YAML <u> {u} 段")
-        if u < len(under):
-            have_u = "".join(re.findall(r"<u>(.*?)</u>", "".join(v for *_, v in segs)))
-            lack = [s for s in under if re.sub(r"[\s\u3000]", "", s) not in re.sub(r"[\s\u3000]", "", have_u)]
-            line = f"  底線少了 {len(under) - u} 段：" + "、".join(f"「{s[:12]}」" for s in lack[:8])
+        print(f"規則 B：原卷題目區底線文字 {len(under)} 段，YAML <u> {u} 段（段數僅供參考，下面列出的才是缺的）")
+        # 依內容比對：原卷每段底線文字要在 YAML 的 <u> 裡找得到（題幹、選項、題組、解析都算）；
+        # 大題說明（sections 名稱）裡的底線不轉成 <u>，出現在說明裡就不算缺
+        ws = lambda v: re.sub(r"[\s\u3000]", "", v)
+        have_u = ws("".join(re.findall(r"<u>(.*?)</u>", "".join(v for *_, v in segs) + "".join(exps))))
+        secs = ws("".join(str(x.get("name") or "") for x in (d.get("document") or {}).get("sections") or []))
+        lack = [s for s in under if ws(s) not in have_u and ws(s) not in secs]
+        if lack:
+            line = f"  底線少了 {len(lack)} 段：" + "、".join(f"「{s[:12]}」" for s in lack[:8])
             print(line)
             problems.append(line)
     else:

@@ -29,7 +29,7 @@ import tempfile
 import traceback
 from pathlib import Path
 
-PIPELINE_VERSION = "v4.2"
+PIPELINE_VERSION = "v4.3"
 
 
 def missing_python() -> list[str]:
@@ -540,8 +540,10 @@ def build(task: dict, src: Path, out: Path, profile: Path) -> dict:
     scope = next((clean(wp.plain(r["text"])) for r in parsed["head"] if re.search(r"範\s*圍", wp.plain(r["text"]))), None)
     if scope:
         doc["scope_note"] = re.sub(r"^.*?範\s*圍\s*[:：]?\s*", "", scope)[:120] or scope[:120]
+    # 答案區真的有填答案（排除只印題號、沒填答案的空白答案卷）
+    filled = [e for e in parsed["answers"] if not BLANK_ANSWER.fullmatch(e["text"] or "")]
     return {"document": doc, "questions": questions, "shared_assets": shared, "pdf": pdf,
-            "has_answer_zone": parsed["has_answer_zone"]}
+            "has_answer_zone": parsed["has_answer_zone"] and len(filled) >= max(3, len(parsed["answers"]) / 2)}
 
 
 def cjk_key(text: str) -> str | None:
@@ -713,11 +715,14 @@ def entry_lookup(entries: list[dict], qs: list[dict]):
         while k < len(secs) and not want <= nums_of[secs[k]]:
             k += 1
         if k >= len(secs):
-            return lambda q: None                          # 對不起來就不填，不猜
+            break                                          # 後面的段落對不上任何大題：不用，但已對上的照用
         for e in got:
             table.setdefault((secs[k], e["number"]), e["text"])
         k += 1
     return lambda q: table.get((q["section"], q["number"]))
+
+
+BLANK_ANSWER = re.compile(r"[①-⑳❶-❿\s＿_（）()、,，.．:：答]*")
 
 
 def attach_answers(parsed: dict, qs: list[dict]) -> None:
@@ -739,11 +744,11 @@ def attach_answers(parsed: dict, qs: list[dict]) -> None:
                 rest = re.sub(r"[A-E或、,，()（）\s.．]", "", first)
                 if not letters or len(rest) > 2 or any(l not in labels for l in letters):
                     continue
+                if q["type"] == "single" and len(set(letters)) > 1 and "或" not in first:
+                    continue                                # 單選題卻有多個代號：看不懂就不填
                 q["answer"] = sorted(set(letters))
                 if "或" in first:
                     q["review_note"] = "解答卷：" + "或".join(f"({l})" for l in letters) + "皆給分"
-                if q["type"] == "single" and len(q["answer"]) > 1 and "或" not in first:
-                    continue
             q["answer_status"] = "verified"
             q["answer_source"] = "answer_key"
         else:
@@ -812,9 +817,16 @@ def finalize(paper: dict, out: Path) -> dict:
              "questions": len(keep), "dropped": dropped, "has_answer_key": any(q.get("answer") for q in keep),
              "has_explanation": any(q.get("explanation") for q in keep),
              "pages": len(fitz.open(str(src_pdf)))}
+    objective = [q for q in keep if q.get("type") in ("single", "multiple", "fill")]
+    answered = [q for q in objective if q.get("answer")]
+    entry["answer_zone"] = bool(paper.get("has_answer_zone"))
+    entry["answered"] = f"{len(answered)}/{len(objective)}"
     problem = None
     if total == 0 or len(dropped) > total * DROP_LIMIT:
         problem = f"剔除 {len(dropped)}／{total} 題，超過 10%"
+    elif entry["answer_zone"] and objective and len(answered) < len(objective) / 2:
+        # 原卷有答案區，選擇／填充題卻大半沒附上答案：答案區對不上大題，是管線問題，不能當成「這份卷沒答案」交出去
+        problem = f"原卷有答案區，但選擇／填充題只附上 {len(answered)}／{len(objective)} 題答案（答案區對不上）"
     elif err:
         problem = "檢查程式錯誤：" + "；".join(err[:3])
     elif issues:

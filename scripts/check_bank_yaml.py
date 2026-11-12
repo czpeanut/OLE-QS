@@ -13,6 +13,7 @@
 加 --sources <原卷 PDF 根目錄> 再照 crop 回原卷比對附圖、比對原卷文字有沒有漏抄（需 pymupdf、pillow）。
 --strict 時這些也算錯誤；--issues-csv 檔名 會把每一題的問題寫成 CSV（題目 id、類別、說明）。
 manifest.json 各卷 dropped 申報剔除的題目（含 text 原文）算覆蓋率時不當成遺漏（3.2 版）。
+原卷有答案區（標題後真的有填答案），選擇／填充題卻不到一半附上答案，算錯誤（3.3 版，裁示 #009）。
 檢查程式的誤判，在 manifest.json 的 waivers 登記 [{"id": 題目 id, "category": 類別, "reason": 理由}]，
 登記的項目不計入 --strict，但會逐條列出給督察確認（manifest 預設讀 bank 資料夾上一層，或用 --manifest 指定）。
 基本檢查只需要 pyyaml；有錯誤時結束碼為 1。
@@ -240,6 +241,22 @@ def norm_text(s: str) -> str:
 
 # 卷末答案、解析區的開頭（之後的文字不算題目）
 ANSWER_HEAD = re.compile(r"《\s*答案\s*》|《\s*試題解析\s*》|(參考答案|試題解析|答案卷|解答卷)\s*$|^\s*【答案】", re.M)
+# 原卷「有答案區」：比 ANSWER_HEAD 嚴，不算「請寫在答案卷」這種作答說明
+ANSWER_ZONE = re.compile(r"《\s*(?:參考)?答\s*案\s*》|【\s*(?:參考)?答\s*案\s*】|(?:參考答案|標準答案|試題答案|解答卷)\s*$|"
+                         r"^\s*(?:答案|解答)\s*[:：]?\s*$", re.M)
+
+
+ANSWER_TOKEN = re.compile(r"(?<!\d)\d{1,3}\s*[.．、:：]?\s*[（(]?\s*[A-E](?:\s*[、,，]?\s*[A-E]){0,4}\s*[）)]?(?![A-Za-z])")
+
+
+def has_answer_zone(pdf) -> bool:
+    """原卷 PDF 後段（前 30% 之後）有答案區標題，而且標題後面真的有「1. C」「5.(ACD)」這類答案
+    （只印題號、沒填答案的空白答案卷不算）。"""
+    text = "\n".join(p.get_text() for p in pdf)
+    for m in ANSWER_ZONE.finditer(text):
+        if m.start() > len(text) * 0.3 and len(ANSWER_TOKEN.findall(text[m.end():])) >= 3:
+            return True
+    return False
 
 
 # 卷頭、作答說明、配分這類不必轉進 YAML 的行
@@ -393,6 +410,11 @@ def check(path: Path, assets: Path | None, sources: Path | None = None,
             cov = coverage(pdf, d, dropped_text=dropped_text)
             if cov is not None and cov < COVER_MIN:
                 issues.append((m.get("id", "?"), "原卷文字遺漏", f"原卷文字只有 {cov:.0%} 出現在 YAML（至少要 {COVER_MIN:.0%}）"))
+            objective = [q for q in qs if q.get("type") in ("single", "multiple", "fill")]
+            answered = [q for q in objective if q.get("answer")]
+            if objective and len(answered) < len(objective) / 2 and has_answer_zone(pdf):
+                # Pilot-3（裁示 #009）：答案區對不上大題，15 題全沒答案卻 exit 0
+                err.append(f"原卷有答案區，但選擇／填充題只有 {len(answered)}／{len(objective)} 題附上答案")
     if assets:
         import hashlib
         pairs = [(q.get("id", "?"), a) for q in qs for a in asset_list(q)]
