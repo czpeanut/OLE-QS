@@ -129,6 +129,7 @@ def parse(rows: list[dict]) -> dict:
     cur_group: dict | None = None
     expect = 1
     pending_imgs = ""
+    held: list[dict] = []       # 選項已完整、本題沒提到「表」時後面接的表格：先暫存，看下一題是不是「如表一」
     # 第 1 題之前、最後一個大題標題之後的文章（例如「一、閱讀測驗」後直接接文章）
     last_sec = max((k for k, r in enumerate(head) if is_section(r["text"])), default=-1)
     pre = [r for r in head[last_sec + 1:] if not is_instruction(r["text"])] if last_sec >= 0 else []
@@ -138,6 +139,10 @@ def parse(rows: list[dict]) -> dict:
     for r in body:
         text = r["text"]
         qn = question_number(text)
+        if held and not (qn and qn[0] == expect and mentions_table(text)):
+            for h in held:                                   # 下一題沒提到表（或不是下一題）：表格還給上一題
+                cur_q["rows"].append(h)
+            held = []
         if qn and qn[0] == 1 and expect > 1 and sections[-1]["rows"]:
             qn = None if not any(is_section(x["text"]) for x in sections[-1]["rows"][-1:]) else qn
         if is_section(text) and not qn:
@@ -164,7 +169,8 @@ def parse(rows: list[dict]) -> dict:
         if qn and (qn[0] == expect or jump or (qn[0] == 1 and sections[-1]["rows"] == [] and len(sections) > 1)):
             num, pos = qn
             lead_imgs = "".join(re.findall(LEADIMG, plain(text)[:pos]))
-            cur_q = {"number": num, "section": len(sections), "rows": [{**r, "text": pending_imgs + lead_imgs + strip_lead(text)}]}
+            cur_q = {"number": num, "section": len(sections), "rows": [{**r, "text": pending_imgs + lead_imgs + strip_lead(text)}] + held}
+            held = []                                       # 暫存的表格是這題「如表一」的表（台中女中第 27 題）
             pending_imgs = ""
             questions.append(cur_q)
             sections[-1]["rows"].append(r)
@@ -191,9 +197,13 @@ def parse(rows: list[dict]) -> dict:
             cur_group = {"from": None, "to": None, "rows": [r], "section": len(sections), "implicit": True}
             groups.append(cur_group)
             cur_q = None
+        elif r["kind"] == "table" and options_complete(cur_q) and not mentions_table(cur_q["rows"][0]["text"]):
+            held.append(r)
         else:
             cur_q["rows"].append(r)
         sections[-1]["rows"].append(r)
+    if held and cur_q:
+        cur_q["rows"] += held
     blocks = answer_blocks(rows[ans_at:]) if ans_at < len(rows) else []
     ans_b = [b["ans"] for b in blocks if b["ans"]]
     exp_b = [b["exp"] for b in blocks if b["exp"]]
@@ -232,6 +242,11 @@ def passage_like(rows: list[dict], need_text: bool = False) -> bool:
 def refers_ahead(q: dict) -> bool:
     """這題提到「下圖」「下表」「下文」，後面的材料是它自己的。"""
     return bool(re.search(r"下(圖|表|文|列(圖|表|資料))|如下|附(圖|表)", plain(q["rows"][0]["text"])[:200]))
+
+
+def mentions_table(text: str) -> bool:
+    """題目提到表格（如表一、下表、表中、附表…）。"""
+    return bool(re.search(r"表[一二三四五六七八九十\d（(]|[如下上右左附此該]表|表中|表格|統計表", plain(text)[:300]))
 
 
 def options_complete(q: dict) -> bool:

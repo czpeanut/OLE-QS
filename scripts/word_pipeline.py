@@ -29,7 +29,7 @@ import tempfile
 import traceback
 from pathlib import Path
 
-PIPELINE_VERSION = "v4.3"
+PIPELINE_VERSION = "v4.4"
 
 
 def missing_python() -> list[str]:

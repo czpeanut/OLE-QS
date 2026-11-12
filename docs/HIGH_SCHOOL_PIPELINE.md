@@ -22,7 +22,7 @@
 
 | 項目 | 結果 |
 |---|---|
-| 收件 | 28／28 份，1,018 題；剔除 24 題（2.4%，原因都寫在 manifest）。v4.3 重跑（Pilot-3 改用集中庫正本） |
+| 收件 | 28／28 份，1,019 題；剔除 23 題（2.2%，原因都寫在 manifest）。v4.4 重跑 |
 | 答案 | 有答案區的卷，選擇／填充題答案全部附上（manifest `answered`），逐題對原卷答案區 |
 | 檢查程式 3.3 `--strict`（含原卷比對） | 錯誤 0 項 |
 | 對照督察驗收通過的試做卷 | 答案全部一致；屏東地理 Pilot-1 規則 A、B 全卷正確（50／50） |
@@ -40,7 +40,7 @@ gem install mathtype_to_mathml_plus pry nokogiri --no-document
 python3 -m pip install pyyaml pymupdf pillow olefile
 ```
 
-- **LibreOffice 要用正式版**（24.2 以上），不要用 LibreOfficeDev、alpha、beta。
+- **LibreOffice 要用正式版**，不要用 LibreOfficeDev、alpha、beta。版本合不合格**以回歸測試為準**（裁示 #010）：督察用 24.2.7；PHOENIX 的 7.4.7 實測 12 份與基準一致。
 - **三套中文字型都要有**：AR PL UMing TW、AR PL UKai TW、Noto Sans CJK TC。
   - 原卷用的是 Windows 字型（新細明體、標楷體），管線會固定對到這三套。
   - 字型不同，PDF 的分頁和浮動圖位置就不同，附圖歸題的結果會和督察的不一樣（裁示 #007）。
@@ -53,6 +53,7 @@ python3 -m pip install pyyaml pymupdf pillow olefile
 python3 scripts/round3_regress.py --root <集中庫本機資料夾> --out out/regress
 ```
 
+- 基準原卷在集中庫，雲端搜尋不一定搜得到：`python3 scripts/round3_regress.py --list` 列出每份的雲端檔案 ID 與該放的路徑，照 ID 下載即可（知道連結就能讀）。
 - 可以用 `--ids` 只測自己科目的基準卷；沒有 ruby 的環境，數學類基準卷會列為「留待完整環境」，不算失敗。
 - 結束碼不是 0 就停下來，把輸出整段回報督察。
 
