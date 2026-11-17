@@ -1,0 +1,353 @@
+document:
+  id: doc_111_桃園_武陵_數學_g10s2e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 3
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 111學年度第2學期第3次定期評量 高一數學科試題
+  exam_name: 111學年度第2學期第3次定期評量
+  source_file: 高一/數學/111/2-3/桃園/武陵.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、混合題（共 12 分）
+    count: 3
+  - ord: 2
+    name: 二、單一選擇題（每題 5 分，共 10 分）
+    count: 2
+  - ord: 3
+    name: 三、多重選擇題（每題 8 分，答錯一個選項得 5 分，答錯兩個選項得 2 分，答錯三個選項以上或未作答者得 0 分，共 24 分）
+    count: 3
+  - ord: 4
+    name: 四、填充題（每格 6 分，共 54 分）
+    count: 8
+questions:
+- id: doc_111_桃園_武陵_數學_g10s2e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 請問：玩一次遊戲，擲出的結果是「5，5，5」的機率是？（單選題，3 分）
+  options:
+  - label: A
+    content: $\frac{90}{216}$
+  - label: B
+    content: $\frac{45}{216}$
+  - label: C
+    content: $\frac{15}{216}$
+  - label: D
+    content: $\frac{5}{216}$
+  - label: E
+    content: $\frac{1}{216}$
+  group_stem: '薩爾達公主為獎勵冒險者的辛勞，設計了一款骰子遊戲用來決定給予冒險者的獎金金額。此遊戲是投擲三顆公正的骰子一次，觀察點數的狀況，獎金的計算規則如下：
+
+    ．若三顆骰子點數皆相同，則給予該點數×1000 元的獎金。例如擲出「5，5，5」獎金為 5000 元。
+
+    ．若其中兩顆骰子點數相同，第三顆骰子不同點數時，則給予該相異點數×200 元的獎金。例如擲出「5，5，3」獎金為 600 元、擲出「3，4，3」獎金為 800 元。
+
+    ．若是三顆骰子點數皆不同，則一律給予獎金 100 元。'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '終邊$\overline{OP}$的標準位置角為 90°＋θ，又 P 在單位圓上
+
+    ⇒ P（cos（90°＋θ），sin（90°＋θ））
+
+    ⇒ P（－sinθ，cosθ）
+
+    故選(B)'
+- id: doc_111_桃園_武陵_數學_g10s2e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 請問：玩一次遊戲，獲得獎金 400 元的機率是？（單選題，3 分）
+  options:
+  - label: A
+    content: $\frac{90}{216}$
+  - label: B
+    content: $\frac{45}{216}$
+  - label: C
+    content: $\frac{15}{216}$
+  - label: D
+    content: $\frac{5}{216}$
+  - label: E
+    content: $\frac{1}{216}$
+  group_stem: '薩爾達公主為獎勵冒險者的辛勞，設計了一款骰子遊戲用來決定給予冒險者的獎金金額。此遊戲是投擲三顆公正的骰子一次，觀察點數的狀況，獎金的計算規則如下：
+
+    ．若三顆骰子點數皆相同，則給予該點數×1000 元的獎金。例如擲出「5，5，5」獎金為 5000 元。
+
+    ．若其中兩顆骰子點數相同，第三顆骰子不同點數時，則給予該相異點數×200 元的獎金。例如擲出「5，5，3」獎金為 600 元、擲出「3，4，3」獎金為 800 元。
+
+    ．若是三顆骰子點數皆不同，則一律給予獎金 100 元。'
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵sin38°＝cos52°且 tan52°＝$\frac{\sin 52^{^{\circ}}}{\cos 52^{^{\circ}}}$
+
+    ∴原式化為 2×$\frac{\sin 52^{^{\circ}}}{\cos 52^{^{\circ}}}$×cos52°－sin52°＝sin52°
+
+    故選(A)'
+- id: doc_111_桃園_武陵_數學_g10s2e3_s1_3
+  section: 1
+  number: 3
+  type: calc
+  page: 1
+  stem: 請問：玩一次遊戲，獲得獎金的期望值是多少元？（需詳列計算過程才給分）（計算題，6 分）
+  group_stem: '薩爾達公主為獎勵冒險者的辛勞，設計了一款骰子遊戲用來決定給予冒險者的獎金金額。此遊戲是投擲三顆公正的骰子一次，觀察點數的狀況，獎金的計算規則如下：
+
+    ．若三顆骰子點數皆相同，則給予該點數×1000 元的獎金。例如擲出「5，5，5」獎金為 5000 元。
+
+    ．若其中兩顆骰子點數相同，第三顆骰子不同點數時，則給予該相異點數×200 元的獎金。例如擲出「5，5，3」獎金為 600 元、擲出「3，4，3」獎金為 800 元。
+
+    ．若是三顆骰子點數皆不同，則一律給予獎金 100 元。'
+- id: doc_111_桃園_武陵_數學_g10s2e3_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 2
+  stem: 如右圖，圓 C 為坐標平面上以原點為圓心的單位圓。以 y 軸正向為始邊，廣義角θ的終邊與圓 C 相交於 P 點，則 P 點的坐標為何？
+  options:
+  - label: A
+    content: （－cosθ，－sinθ）
+  - label: B
+    content: （－sinθ，cosθ）
+  - label: C
+    content: （cosθ，sinθ）
+  - label: D
+    content: （sinθ，cosθ）
+  - label: E
+    content: （sinθ，－cosθ）
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_g10s2e3/s2_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 475.9
+      - 70.9
+      - 564.3
+      - 157.3
+- id: doc_111_桃園_武陵_數學_g10s2e3_s2_2
+  section: 2
+  number: 2
+  type: single
+  page: 2
+  stem: 試求 2 tan52°sin38°－sin52° 之值為何？
+  options:
+  - label: A
+    content: sin52°
+  - label: B
+    content: cos52°
+  - label: C
+    content: tan52°
+  - label: D
+    content: '0'
+  - label: E
+    content: $\frac{4}{5}$
+- id: doc_111_桃園_武陵_數學_g10s2e3_s3_1
+  section: 3
+  number: 1
+  type: multiple
+  page: 2
+  stem: 坐標平面上的四個標準位置角θ$_{1}$、θ$_{2}$、θ$_{3}$、θ$_{4}$，其終邊如右圖所示。試問下列哪些選項恆正確？
+  options:
+  - label: A
+    content: 0＜sinθ$_{1}$＜sinθ$_{2}$＜1
+  - label: B
+    content: ｜sinθ$_{3}$｜＜｜sinθ$_{1}$｜
+  - label: C
+    content: ｜tanθ$_{3}$｜＜｜tanθ$_{2}$｜
+  - label: D
+    content: tanθ$_{4}$＜－1
+  - label: E
+    content: cosθ$_{1}$＞cosθ$_{4}$＞cosθ$_{3}$＞cosθ$_{2}$
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_g10s2e3/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 488.4
+      - 308.9
+      - 564.3
+      - 390.8
+- id: doc_111_桃園_武陵_數學_g10s2e3_s3_2
+  section: 3
+  number: 2
+  type: multiple
+  page: 2
+  stem: 如右圖所示，△ABC 是直角三角形，且$\overline{AB}$＝12、$\overline{BC}$＝5、$\overline{DE}$＝6、 $\overline{CE}$＝5，已知 tan∠CED＝$\frac{\sqrt{7}}{3}$，試問下列選項哪些正確？
+  options:
+  - label: A
+    content: cos∠CED＝$\frac{\sqrt{7}}{4}$
+  - label: B
+    content: $\overline{CD}$＝4
+  - label: C
+    content: cos∠CDE＝$\frac{9}{16}$
+  - label: D
+    content: sin∠ADE＝－sin∠CDE
+  - label: E
+    content: △ADE 的面積是$\frac{135\sqrt{7}}{16}$
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_g10s2e3/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 472.75
+      - 437.2
+      - 564.15
+      - 516.1
+- id: doc_111_桃園_武陵_數學_g10s2e3_s3_3
+  section: 3
+  number: 3
+  type: multiple
+  page: 2
+  stem: 下列哪些選項的條件可以決定唯一的△ABC？
+  options:
+  - label: A
+    content: cosA＝$\frac{2}{3}$、sinB＝$\frac{\sqrt{3}}{2}$、$\overline{AB}$＝6
+  - label: B
+    content: cosB＝$-\frac{1}{4}$、$\overline{AB}$＝6、$\overline{AC}$＝7
+  - label: C
+    content: cosC＝$-\frac{1}{4}$、$\overline{AB}$＝6、$\overline{AC}$＝7
+  - label: D
+    content: ∠B＝40°、$\overline{AB}$＝6、$\overline{AC}$＝3
+  - label: E
+    content: ∠B＝40°、$\overline{AB}$＝6、$\overline{AC}$＝7
+- id: doc_111_桃園_武陵_數學_g10s2e3_s4_1
+  section: 4
+  number: 1
+  type: fill
+  page: 2
+  stem: sin（－120°）＋cos（－270°）＋tan660°＝＿＿＿＿。
+  answer:
+  - $-\frac{3\sqrt{3}}{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e3_s4_2
+  section: 4
+  number: 2
+  type: fill
+  page: 3
+  stem: 已知極坐標上三點 O[0，θ]、P[$2\sqrt{3}$，25°]、Q[6，265°]，其中θ為任意角。則△OPQ 的面積為＿＿＿＿。
+  answer:
+  - '9'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e3_s4_3
+  section: 4
+  number: 3
+  type: fill
+  page: 3
+  stem: '設 180°＜θ＜270°且 tanθ＝$\frac{2}{3}$，試求：
+
+    cos（90°＋θ）sin（180°－θ）＋cos（－θ）sin（90°－θ）＝＿＿＿＿。'
+  answer:
+  - $\frac{5}{13}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e3_s4_4
+  section: 4
+  number: 4
+  type: fill
+  page: 3
+  stem: 坐標平面上，通過原點且斜角為θ的直線 L，若點 P（1，cosθ）在 L 上，則 sinθ＝＿＿＿＿。
+  answer:
+  - $\frac{-1+\sqrt{5}}{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e3_s4_5
+  section: 4
+  number: 5
+  type: fill
+  page: 3
+  stem: 如右圖所示，已知∠ADC＝135°、∠ACB＝75°且$\overline{AC}$＝$5\sqrt{6}$，則 $\overline{BC}$＝＿＿＿＿。
+  assets:
+  - key: s4_5_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_g10s2e3/s4_5_f1.png
+    crop:
+      page: 3
+      rect:
+      - 474.4
+      - 210.9
+      - 564.3
+      - 292.8
+  answer:
+  - '15'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e3_s4_6
+  section: 4
+  number: 6
+  type: fill
+  page: 3
+  stem: 已知△ABC 中，$\overline{AB}$＝1 且$\overline{AC}$＝$\sqrt{3}$，若△ABC 的外接圓半徑是$\frac{3}{2}$， 則$\overline{BC}$＝＿＿＿＿。
+  answer:
+  - $\sqrt{6}$或$\frac{\sqrt{6}}{3}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e3_s4_7
+  section: 4
+  number: 7
+  type: fill
+  page: 3
+  stem: 有一個長方體如右圖所示，已知$\overline{OA}$＝20、$\overline{OB}$＝40、$\overline{OP}$＝24，D 點在 $\overline{AB}$上且滿足 2$\overline{AD}$＝3$\overline{BD}$。試求出從 D 點觀測 P 點的仰角大小，即 ∠ODP＝＿＿＿＿。（因為答案不是特殊角，請使用 $tan^{－1}$ 表示，例如： 欲寫 45° 則將之表示為 $tan^{－1}$(1)、60° 表示為 $tan^{－1}$（$\sqrt{3}$））
+  assets:
+  - key: s4_7_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_g10s2e3/s4_7_f1.png
+    crop:
+      page: 3
+      rect:
+      - 472.9
+      - 292.4
+      - 563.3
+      - 382.3
+  answer:
+  - $\tan ^{-1}\left( \frac{3\sqrt{10}}{10} \right)$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e3_s4_8
+  section: 4
+  number: 8
+  type: fill
+  page: 3
+  stem: 工程師林克將一塊長方形木板 ABCD 立在地面（如圖(一)），其中$\overline{AB}$＝9 且$\overline{BC}$＝24。今林克欲製作一個底座支架，故沿著$\overline{EF}$裁切木板並捨去△BEF 之後，再將木板斜放於地面（如圖(二)）。已知$\overline{BE}$＝3、$\overline{BF}$＝5，試問此時 D 點與地面的距離為＿＿＿＿。
+  assets:
+  - key: s4_8_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_g10s2e3/s4_8_f1.png
+    crop:
+      page: 3
+      rect:
+      - 190.45
+      - 429.2
+      - 274.55
+      - 528.45
+  - key: s4_8_f2
+    kind: figure
+    file: doc_111_桃園_武陵_數學_g10s2e3/s4_8_f2.png
+    crop:
+      page: 3
+      rect:
+      - 316.35
+      - 438.4
+      - 432.15
+      - 524.7
+  answer:
+  - $3\sqrt{34}$
+  answer_status: verified
+  answer_source: answer_key

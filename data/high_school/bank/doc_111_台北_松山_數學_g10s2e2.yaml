@@ -1,0 +1,446 @@
+document:
+  id: doc_111_台北_松山_數學_g10s2e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 2
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 111學年度第2學期第2次定期評量 高一數學科試題
+  exam_name: 111學年度第2學期第2次定期評量
+  source_file: 高一/數學/111/2-2/台北/松山.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 12 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，共 12 分）
+    count: 2
+  - ord: 3
+    name: 三、填充題（每格 6 分，共 66 分）
+    count: 8
+  - ord: 4
+    name: 四、混合題（共 10 分）
+    count: 1
+questions:
+- id: doc_111_台北_松山_數學_g10s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列哪個選項的答案<u>不是</u>$C_{3}^{5}$？
+  options:
+  - label: A
+    content: （x－$y^{2}$）$^{5}$ 展開式中 $x^{3}y^{4}$ 項的係數
+  - label: B
+    content: 從 5 本不同的書，任意挑選 3 本的方法數
+  - label: C
+    content: 設樣本空間 S＝｛ 1，2，3，4，5 ｝，S 中含有兩個樣本點的事件數
+  - label: D
+    content: 將 5 本不同的書，任意分給 3 人的方法數（書分完，每人所得不限）
+  - label: E
+    content: <u>小嵩</u>近日發生「缺蛋危機」，目前<u>小嵩</u>有 3 顆蛋，他計畫在下週一至週日的 7 天中，選擇其中 3 天吃蛋，若一天只能吃一顆蛋，且不能連續兩天吃蛋，求<u>小嵩</u>計畫的方法數
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：（x－$y^{2}$）$^{5}$ 展開後的一般項為$C_{k}^{5} (x)^{5-k}(-y^{2})^{k}$，k＝0，1，……，5
+
+    ∴$x^{3}y^{4}$ 項的係數為$C_{2}^{5}=C_{3}^{5}$
+
+    (B) ○
+
+    (C) ○：$C_{2}^{5}=C_{3}^{5}$
+
+    (D) ╳：每本書有 3 種分法，所求方法數為 $3^{5}$
+
+    (E) ○：以□□□□表示 4 天不吃蛋，由 5 個空隙選 3 天吃蛋
+
+    所求方法數為$C_{3}^{5}$
+
+    故選(D)'
+- id: doc_111_台北_松山_數學_g10s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 世界盃足球賽「決賽週」賽制如下：共有 32 隊參加，他們先分成八個小組（每組 4 隊）進行「單循環預賽」（小組內的每一隊需與其他隊各比賽一場），每組取前 2 名（小組賽中若有數隊積分相同則會以得失球數決定前 2 名，不再加賽）參加照排定的程序進行 16 強「單敗淘汰賽」（輸一場則淘汰），最後產生冠、亞軍和第三、四名（尚要打一場以決定第三、四名）。試問主辦單位共需安排幾場比賽？
+  options:
+  - label: A
+    content: 32 場
+  - label: B
+    content: 36 場
+  - label: C
+    content: 64 場
+  - label: D
+    content: 128 場
+  - label: E
+    content: 256 場
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '①分八組，每組 4 隊：$C_{2}^{4}$×8＝48（場）
+
+    ② 16 強取 8 強：8 場
+
+    ③ 8 強取 4 強：4 場
+
+    ④ 4 強取 2 強：2 場
+
+    ⑤冠、亞軍及第三、四名：各 1 場
+
+    主辦單位共需安排 48＋8＋4＋2＋（1＋1）＝64（場）
+
+    故選(C)'
+- id: doc_111_台北_松山_數學_g10s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 甲、乙、丙三人到旋轉壽司餐廳用餐。餐廳現有 8 種壽司，每種壽司僅剩 2 盤。假設每種壽司每個人至多只能拿 1 盤，用餐後發現每種壽司都至少有人拿了 1 盤。試問 3 人拿取壽司的組合共有幾種？
+  options:
+  - label: A
+    content: $7^{8}$
+  - label: B
+    content: $6^{8}$
+  - label: C
+    content: $5^{8}$
+  - label: D
+    content: $3^{8}$
+  - label: E
+    content: $2^{8}$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '每種壽司可能被拿 1 個或 2 個，共$C_{1}^{3}+C_{2}^{3}$＝6 種取法
+
+    因此 3 人拿取壽司的組合共有 $6^{8}$ 種，故選(B)'
+- id: doc_111_台北_松山_數學_g10s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列各敘述哪些正確？
+  options:
+  - label: A
+    content: 敘述「2023 是奇數且是質數」為「真」
+  - label: B
+    content: 若有兩集合 A、B，且 A $\subseteq$ B，則 A－B＝$\emptyset$
+  - label: C
+    content: 「$x^{2}$＞4」是「x＞2」的充分條件
+  - label: D
+    content: 設 n、k 為正整數，n$\geq$k$\geq$2 且 n－2$\geq$k，則$\frac{P_{k}^{n}}{k ！}=C_{k}^{n-2}+2C_{k-1}^{n-2}+C_{k-2}^{n-2}$
+  - label: E
+    content: 設 A、B、C 表三事件，且 P(A)＝P(B)＝P(C)＝$\frac{1}{3}$， P（A∩B）＝P（B∩C）＝$\frac{1}{6}$，A、C 為互斥事件，則 A、B、C 三事件中至少發生一件的機率為$\frac{2}{3}$
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：2023＝17×119 ⇒ 2023 是奇數，但不是質數
+
+    (B) ○：A－B＝A－（A∩B）＝A－A＝$\emptyset$
+
+    (C) ╳：x＞2 ⇒ $x^{2}$＞4 ∴「$x^{2}$＞4」是「x＞2」的必要條件
+
+    (D) ○：$C_{k}^{n-2}+2C_{k-1}^{n-2}+C_{k-2}^{n-2}$
+
+    ＝$(C_{k}^{n-2}+C_{k-1}^{n-2})+(C_{k-1}^{n-2}+C_{k-2}^{n-2})$
+
+    ＝$C_{k}^{n-1}+C_{k-1}^{n-1}=C_{k}^{n}=\frac{P_{k}^{n}}{k ！}$
+
+    (E) ○：P（A∪B∪C）
+
+    ＝P(A)＋P(B)＋P(C)－P（A∩B）－P（B∩C）－P（A∩C）＋P（A∩B∩C）
+
+    ＝$\frac{1}{3}+\frac{1}{3}+\frac{1}{3}-\frac{1}{6}-\frac{1}{6}-0+0=\frac{2}{3}$
+
+    其中 P（A∩C）＝P（$\emptyset$）＝0
+
+    P（A∩B∩C）＝P（（A∩C）∩B）＝P（$\emptyset$∩B）＝P（$\emptyset$）＝0
+
+    故選(B)(D)(E)'
+- id: doc_111_台北_松山_數學_g10s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 投擲一公正骰子三次，每次出現點數分別為 a、b、c，試問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: a＜b＜c 的機率是$\frac{5}{54}$
+  - label: B
+    content: a＋b＋c＝7 的機率是$\frac{5}{72}$
+  - label: C
+    content: a、b、c 中最大者為 4 的機率是$\frac{37}{216}$
+  - label: D
+    content: （a－1）（b－3）（c－5）＝0 的機率是$\frac{91}{216}$
+  - label: E
+    content: ∣a－2∣＋$\sqrt{b-2}$＋（c－2）$^{2}$＝1 的機率是$\frac{5}{216}$
+  answer:
+  - A
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：所求機率為$\frac{C_{3}^{6}\times 1}{6^{3}}=\frac{20}{216}=\frac{5}{54}$
+
+    (B) ○：a＋b＋c＝7，如右表
+
+    5.1 4.2 3.3 3.2
+
+    共$\frac{3 ！}{2 ！}+3 ！ +\frac{3 ！}{2 ！}+\frac{3 ！}{2 ！}$＝3＋6＋3＋3＝15
+
+    所求機率為$\frac{15}{6^{3}}=\frac{5}{72}$
+
+    (C) ○：1 個 4：$C_{1}^{3}$×3×3＝27
+
+    2 個 4：$C_{2}^{3}$×3＝9
+
+    3 個 4：1
+
+    共 27＋9＋1＝37
+
+    所求機率為$\frac{37}{6^{3}}=\frac{37}{216}$
+
+    (D) ○：（a－1）（b－3）（c－5）＝0$\Leftrightarrow$a＝1 或 b＝3 或 c＝5
+
+    P（a≠1 且 b≠3 且 c≠5）＝$\frac{5\times 5\times 5}{6^{3}}=\frac{125}{216}$
+
+    所求機率為 $1-\frac{125}{216}=\frac{91}{216}$
+
+    (E) ○：① a＝b＝2，c＝1 或 3 ⇒ 2 種
+
+    ② a＝c＝2，b＝3 ⇒ 1 種
+
+    ③ b＝c＝2，a＝1 或 3 ⇒ 2 種
+
+    所求機率為$\frac{2+1+2}{6^{3}}=\frac{5}{216}$
+
+    故選(A)(B)(C)(D)(E)'
+- id: doc_111_台北_松山_數學_g10s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 用 0，1，2，3，4，5 作成三位數，但數字不可重複，則由小而大排列，第 45 個數為＿＿＿＿。
+  answer:
+  - '310'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '① 1□□：5×4＝20（個）
+
+    ② 2□□：5×4＝20（個）
+
+    ③ 3 0 □：4 個
+
+    故第 45 個數為 310'
+- id: doc_111_台北_松山_數學_g10s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 設 n 為正整數，若$2000 < C_{0}^{2n+1}+C_{2}^{2n+1}+\ldots \ldots +C_{2n}^{2n+1} < 5000$，則 n＝＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（1＋x）$^{2n＋1}$＝$C_{0}^{2n+1}+C_{1}^{2n+1}x+C_{2}^{2n+1}x^{2}+C_{3}^{2n+1}x^{3}+\ldots \ldots +C_{2n+1}^{2n+1}x^{2n+1}$
+
+    x＝1 代入得
+
+    $2^{2n+1}=C_{0}^{2n+1}+C_{1}^{2n+1}+C_{2}^{2n+1}+C_{3}^{2n+1}+\ldots \ldots +C_{2n+1}^{2n+1}$……………①
+
+    x＝－1 代入得
+
+    0＝$C_{0}^{2n+1}-C_{1}^{2n+1}+C_{2}^{2n+1}-C_{3}^{2n+1}+\ldots \ldots -C_{2n+1}^{2n+1}$ ………………②
+
+    $\frac{①+②}{2}$得 $2^{2n}$＝$C_{0}^{2n+1}+C_{2}^{2n+1}+\ldots \ldots +C_{2n}^{2n+1}$
+
+    2000＜$C_{0}^{2n+1}+C_{2}^{2n+1}+\ldots \ldots +C_{2n}^{2n+1}$＜5000
+
+    ⇒ 2000＜$2^{2n}$＜5000 ⇒ 2n＝11 或 12
+
+    ∴n＝$\frac{11}{2}$（不合）或 6，故 n＝6'
+- id: doc_111_台北_松山_數學_g10s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 一袋中有編號 1～10 的黃色球 10 顆與編號 1～5 的紅色球 5 顆，假設每顆球被取出的機會均等，若從袋中一次取出 2 顆球，則取出顏色相異或號碼數乘積為奇數的機率為＿＿＿＿。
+  answer:
+  - $\frac{3}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 A 是顏色相異的事件，B 是號碼數乘積為奇數的事件
+
+    n（A∪B）＝n(A)＋n(B)－n（A∩B）
+
+    ＝10×5＋$C_{2}^{8}$－5×3
+
+    ＝50＋28－15＝63
+
+    故所求機率為$\frac{63}{C_{2}^{15}}=\frac{63}{105}=\frac{3}{5}$'
+- id: doc_111_台北_松山_數學_g10s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 如右圖，橫街 5 條，縱街 6 條，<u>東非</u>狒狒<u>阿東</u>由 A 取捷徑走到對角 B，若 C 處有香蕉園一定要經過，而 D 處有獵人設的陷阱不能過，試問<u>阿東</u>經過 C 點而不經過 D 點的走法有＿＿＿＿種。
+  assets:
+  - key: s3_4_f1
+    kind: figure
+    file: doc_111_台北_松山_數學_g10s2e2/s3_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 459.75
+      - 362.2
+      - 564.3
+      - 440.55
+  answer:
+  - '34'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'n（經過 C 且不經過 D）
+
+    ＝n（經過 C）－n（經過 C 且經過 D）
+
+    ＝$\frac{2 ！}{1 ！ 1 ！}\times \frac{7 ！}{3 ！ 4 ！}-\frac{2 ！}{1 ！ 1 ！}\times \frac{4 ！}{2 ！ 2 ！}\times \frac{3 ！}{1 ！ 2 ！}$
+
+    ＝2×35－2×6×3
+
+    ＝70－36＝34
+
+    故<u>阿東</u>經過 C 點而不經過 D 點的走法有 34 種'
+- id: doc_111_台北_松山_數學_g10s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知「2023 <u>大甲</u>媽祖繞境活動」共 10 天，目前有 10 位攝影師（甲、乙、丙、丁、戊、己、庚、辛、壬、癸）要完成此 10 天的攝影工作，一天只排一位攝影師且每天皆不同人，若第一天只能從甲、乙、丙、丁四人中產生，最後一天只能從甲、乙、辛、壬、癸五人中產生，且戊只能排第四天、己只能排第五天、庚只能排第六天，則排定攝影方案有 ＿＿＿＿種方法。
+  answer:
+  - '2160'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '①甲或乙排第一天：
+
+    $C_{1}^{2}\times C_{1}^{4}$
+
+    ②丙或丁排第一天：
+
+    $C_{1}^{2}\times C_{1}^{5}$
+
+    故排定攝影方案有 960＋1200＝2160（種）'
+- id: doc_111_台北_松山_數學_g10s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: <u>臺灣高鐵</u>從第 1 車到第 12 車共有 12 節車廂，為了加強服務乘客，要指定其中 4 節車廂設置自動販賣機。若設置自動販賣機的 4 節車廂要兩兩不相銜接，且第 6 車為商務車廂必定設置，則共有＿＿＿＿種方法。
+  answer:
+  - '40'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '第 6 車必設置 ⇒ 第 5、7 車不設置
+
+    ① n（第 1～4 車設置 2 節且第 8～12 車設置 1 節）＝$C_{2}^{3}\times C_{1}^{5}$＝15（種）
+
+    ② n（第 1～4 車設置 1 節且第 8～12 車設置 2 節）＝$C_{1}^{4}\times C_{2}^{4}$＝24（種）
+
+    ③ n（第 1～4 車設置 0 節且第 8～12 車設置 3 節）＝$C_{3}^{3}$＝1（種）
+
+    故共有 15＋24＋1＝40（種）'
+- id: doc_111_台北_松山_數學_g10s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: <u>小崧</u>買了一個雞蛋糕烤盤，如右圖所示，烤盤有三列三行共 9 格，烤盤不可轉動也不可以翻動。<u>小崧</u>準備了紅豆、奶油、起司三種內餡，每一格恰裝一種內餡，每一種內餡各三格，今<u>小崧</u>隨意將 9 格放上內餡，每種擺放的機率皆相等，則發生每一行和每一列的內餡皆不同的機率為＿＿＿＿。
+  assets:
+  - key: s3_7_f1
+    kind: figure
+    file: doc_111_台北_松山_數學_g10s2e2/s3_7_f1.png
+    crop:
+      page: 2
+      rect:
+      - 508.85
+      - 568.2
+      - 564.3
+      - 623.65
+  answer:
+  - $\frac{1}{140}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '先將紅豆放不同列不同行：3×2×1＝6
+
+    再將奶油放不同列不同行：2×1×1＝2
+
+    再將起司放不同列不同行：1
+
+    故所求機率為$\frac{6\times 2\times 1}{\frac{9 ！}{3 ！ 3 ！ 3 ！}}=\frac{12}{1680}=\frac{1}{140}$'
+- id: doc_111_台北_松山_數學_g10s2e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 'HBL 決賽開打，4 位男生（<u>小松</u>、<u>小高</u>、<u>小鬆</u>、<u>小糕</u>）和<u>小美</u>及其他 3 位女生，共 4 男 4 女，前往小巨蛋為學校球隊加油。試回答下列問題：
+
+    (1) 他們 8 人欲分坐兩輛計程車前往小巨蛋，若每輛計程車坐 4 人，不需管座位排列，其中<u>小松</u>、<u>小高</u>要求同車，則有＿＿＿＿種坐車方法。
+
+    (2) 到了小巨蛋門口，拿到贊助商發放之相同的汽水 3 瓶、相同的罐裝水 2 瓶，若 5 瓶需分完且每人最多拿到 1 瓶，則分給他們 8 人有＿＿＿＿種分法。
+
+    (3) 中場休息時，場中有個趣味競賽，規定每隊 5 人，<u>小松</u>、<u>小高</u>、<u>小鬆</u>、<u>小糕</u>、<u>小美</u>決定參加，他們 5 人贏得比賽，可拿到主辦方提供的獎品，獎品有瑪利歐公仔 4 個、路易吉公仔 3 個、奇諾比奧公仔 2 個，試問參加的 5 人每人可任選一個，選獎品的方法有＿＿＿＿種。
+
+    (4) 結束應援，8 人排成一列拍合照，若<u>小鬆</u>、<u>小糕</u>要排在一起，且<u>小松</u>要排在<u>小鬆</u>和<u>小糕</u>之前，且<u>小高</u>要排在<u>小鬆</u>和<u>小糕</u>之後，則有＿＿＿＿種直線排列的方法。'
+  answer:
+  - (1) 30；(2) 560；(3) 180；(4) 1680
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) $(C_{2}^{6}\times C_{4}^{4})$
+
+    (2) $C_{5}^{8}\times (C_{3}^{5}\times C_{2}^{2})$
+
+    (3) 瑪＋路＋奇＝5，各種可能如下表
+
+    4.1 4.0 3.2 3.1 3.0 2.3 2.2 2.1 1.3 1.2 0.3
+
+    故選獎品的方法有
+
+    $\frac{5 ！}{4 ！}$＋$\frac{5 ！}{4 ！}$＋$\frac{5 ！}{3 ！ 2 ！}$＋$\frac{5 ！}{3 ！}$＋$\frac{5 ！}{3 ！ 2 ！}$＋$\frac{5 ！}{2 ！ 3 ！}$＋$\frac{5 ！}{2 ！ 2 ！}$＋$\frac{5 ！}{2 ！ 2 ！}$＋$\frac{5 ！}{3 ！}$＋$\frac{5 ！}{2 ！ 2 ！}$＋$\frac{5 ！}{3 ！ 2 ！}$
+
+    ＝5＋5＋10＋20＋10＋10＋30＋30＋20＋30＋10＝180（種）
+
+    (4) $\frac{7 ！}{3 ！}$'
+- id: doc_111_台北_松山_數學_g10s2e2_s4_1
+  section: 4
+  number: 1
+  type: multiple
+  page: 3
+  stem: '<u>松山高中</u>舉辦園遊會，某攤位舉辦遊戲規則如下：有一顆不公正的正六面體骰子，其六面點數分別為 1、2、3、4、5、6，已知擲一次骰子，「擲出各點數的機率與該點數成正比」，依上述規則，試回答下列問題。
+
+    (1) 下列各敘述哪些正確？（多選，4 分，錯一個選項得 2 分，錯兩個選項以上不得分）
+
+    (2) 若每人參加此遊戲，擲一次骰子，若擲出 k 點可以得到獎金 21k 元，則獎金期望值為多少元？（5 分）
+
+    (3) 利用(2)說明，若玩一次此遊戲需付 100 元，是否公平？（1 分）'
+  options:
+  - label: A
+    content: 擲一次骰子，出現 1 點的機率為$\frac{1}{6}$
+  - label: B
+    content: 擲一次骰子，出現 5 點的機率為$\frac{5}{6}$
+  - label: C
+    content: 擲一次骰子，出現偶數點的機率比出現奇數點的機率大
+  - label: D
+    content: 擲一次骰子，出現奇數點的機率比出現質數點的機率大
+  - label: E
+    content: 擲一次骰子，出現的點數期望值是$\frac{13}{3}$點

@@ -1,0 +1,353 @@
+document:
+  id: doc_108_高雄_高師大附中_數學_g10s2e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 108
+  semester: 2
+  exam_seq: 2
+  city: 高雄
+  school_short: 高師大附中
+  school: 國立高雄師範大學附屬高級中學
+  title: 國立高雄師範大學附屬高級中學 108學年度第2學期第2次定期評量 高一數學科試題
+  exam_name: 108學年度第2學期第2次定期評量
+  source_file: 高一/數學/108/2-2/高雄/高師大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 8 分，共 16 分）
+    count: 2
+  - ord: 2
+    name: 二、填充題（共 66 分）
+    count: 10
+  - ord: 3
+    name: 三、混合題（共 18 分）
+    count: 2
+questions:
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 有一種細菌，每隔一個小時死亡 2 隻，剩下的分別分裂成 2 隻，設原有 5 隻細菌，令 n 個小時後的細菌數量為 $a_{n}$，且$b_{n}=a_{n+1}-a_{n}$，n 為正整數。下列敘述何者正確？
+  options:
+  - label: A
+    content: $a_{1}$＝6
+  - label: B
+    content: $b_{3}$＝8
+  - label: C
+    content: 數列〈 $a_{n}$ 〉為等差數列
+  - label: D
+    content: 數列〈 $b_{n}$ 〉為等比數列
+  - label: E
+    content: $a_{n}$－$b_{n}$＝4，n 為正整數
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '依題意得$\begin{cases}a_{0}=5 \\ a_{n}=2 (a_{n-1}-2) , n\geq 1\end{cases}$
+
+    $b_{n}$＝$a_{n+1}-a_{n}$＝$2a_{n}$－4－$a_{n}$＝$a_{n}$－4，n 為正整數
+
+    (A) ○：$a_{1}$＝2（5－2）＝6
+
+    (B) ○：$a_{2}$＝2（6－2）＝8，$a_{3}$＝2（8－2）＝12
+
+    故 $b_{3}$＝$a_{3}$－4＝8
+
+    (C) ╳：$a_{1}$＝6，$a_{2}$＝8，$a_{3}$＝12，非等差數列
+
+    (D) ○：因$a_{n+1}-4=2 (a_{n}-4)$，n ≥ 1
+
+    得$b_{n+1}=2b_{n}$，n ≥ 1，故〈 $b_{n}$ 〉為等比數列
+
+    (E) ○：$b_{n}$＝$a_{n}$－4 ⇒ $a_{n}$－$b_{n}$＝4，n 為正整數
+
+    故選(A)(B)(D)(E)'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: '某肥皂廠商推出一種新產品，在上市前以不同的單價 X（單位：十元）調查市場的需求量 Y（單位：萬盒）。調查結果如右表，下列敘述何者正確？
+
+    | X（十元） | 8 | 9 | 10 | 11 | 12 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | Y（萬盒） | 11 | 12 | 10 | 8 | 9 |'
+  options:
+  - label: A
+    content: X 的變異數為 2
+  - label: B
+    content: X 和 Y 的相關係數為 0.8
+  - label: C
+    content: Y 對 X 的迴歸直線斜率為 0.8
+  - label: D
+    content: Y 對 X 的迴歸直線通過點（10，10）
+  - label: E
+    content: 若單價定為 150 元，預估市場的需求量有 6 萬盒
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：μ$_{X}$＝10 ⇒ X 的變異數為$\sigma _{X}^{2}=\frac{1}{5} 〔 (-2)^{2}+(-1)^{2}+0^{2}+1^{2}+2^{2}〕$＝$\frac{1}{5}\times 10$＝2
+
+    (B) ╳：μ$_{Y}$＝10 ⇒ Y 的變異數為$\sigma _{Y}^{2}=\frac{1}{5} 〔1^{2}+2^{2}+0^{2}+(-2)^{2}+(-1)^{2}〕$＝$\frac{1}{5}\times 10$＝2
+
+    故 X 與 Y 的相關係數為 r＝$\frac{(-2)\times 1+(-1)\times 2+0\times 0+1\times (-2)+2\times (-1)}{\sqrt{10}\times \sqrt{10}}$＝$\frac{-8}{10}$＝－0.8
+
+    (C) ╳：Y 對 X 的迴歸直線斜率為$r\times \frac{\sigma _{Y}}{\sigma _{X}}=-0.8\times \frac{\sqrt{2}}{\sqrt{2}}=-0.8$
+
+    (D) ○：Y 對 X 的迴歸直線必通過（μ$_{X}$，μ$_{Y}$）＝（10，10）
+
+    (E) ○：Y 對 X 的迴歸直線方程式為 Y－10＝－0.8（X－10）
+
+    X＝15 代入得 Y＝－0.8×5＋10＝6
+
+    故單價定為 150 元時，預估市場的需求量有 6 萬盒
+
+    故選(A)(D)(E)'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 有兩個等差數列〈 $a_{n}$ 〉、〈 $b_{n}$ 〉前 n 項和的比為（2n＋4）：（3n－1），則$\frac{a_{7}+a_{13}}{b_{6}+b_{14}}$＝ ＿＿＿＿。
+  answer:
+  - $\frac{3}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由等差中項得 $a_{7}$＋$a_{13}$＝$2a_{10}$，$b_{6}$＋$b_{14}$＝$2b_{10}$
+
+    ∵$a_{1}$＋$a_{2}$＋……＋$a_{10}$＋……＋$a_{18}$＋$a_{19}$＝$2a_{10}$×9＋$a_{10}$＝$19a_{10}$，同理 $b_{1}$＋$b_{2}$＋……＋$b_{19}$＝$19b_{10}$
+
+    故$\frac{a_{7}+a_{13}}{b_{6}+b_{14}}$＝$\frac{2a_{10}}{2b_{10}}$＝$\frac{19a_{10}}{19b_{10}}$＝$\frac{a_{1}+a_{2}+\ldots \ldots +a_{19}}{b_{1}+b_{2}+\ldots \ldots +b_{19}}$＝$\frac{2\times 19+4}{3\times 19-1}$＝$\frac{42}{56}$＝$\frac{3}{4}$'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 設數列〈 $a_{n}$ 〉之首項 $a_{1}$＝1 且$a_{n+1}=a_{n}+6n^{2}+1$，n 為自然數，則一般項 $a_{n}$＝＿＿＿＿。
+  answer:
+  - $2n^{3}$－$3n^{2}$＋2n
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{n-1}+6\times (n-1)^{2}+1$
+
+    $a_{n}$＝1＋6〔$1^{2}$＋$2^{2}$＋……＋（n－1）$^{2}$〕＋（n－1）
+
+    ＝$n+6\times \frac{(n-1)n (2n-1)}{6}$＝n〔1＋（n－1）（2n－1）〕＝$2n^{3}$－$3n^{2}$＋2n，n ≥ 2
+
+    又 n＝1 代入 $a_{n}$＝$2n^{3}$－$3n^{2}$＋2n 得 $a_{1}$＝1
+
+    故 $a_{n}$＝$2n^{3}$－$3n^{2}$＋2n，n 為自然數'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 已知數列〈 $a_{n}$ 〉的前 n 項和 $S_{n}$＝$2a_{n}$－2020，n 為正整數，則前 5 項和 $S_{5}$＝＿＿＿＿。
+  answer:
+  - '62620'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 設等比級數$S_{n}=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\ldots \ldots +\frac{1}{2^{n-1}}$，若 $| 2-S_{n} | < \frac{1}{1000}$，則 n 的最小值為＿＿＿＿。
+  answer:
+  - '11'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$S_{n}$＝$1+\frac{1}{2}+\frac{1}{4}+\ldots \ldots +\frac{1}{2^{n-1}}$＝$\frac{1\times \left[ 1-\left( \frac{1}{2} \right) ^{n} \right]}{1-\frac{1}{2}}$＝$2 \left[ 1-\left( \frac{1}{2} \right) ^{n} \right]$
+
+    ⇒ ｜2－$S_{n}$｜＝$\left| 2-\left[ 2-2\left( \frac{1}{2} \right) ^{n} \right] \right|$＝$\frac{1}{2^{n-1}} < \frac{1}{1000}$
+
+    ⇒ $2^{n-1} > 1000$ ⇒ n－1 ≥ 10 ⇒ n ≥ 11
+
+    故 n 的最小值為 11'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 某人欲參加郵局教育儲蓄存款，年利率 6 ％，複利計算，若每年年初固定存入 10000 元，則第 10 年年底期滿後，結算本利和有＿＿＿＿元。（已知 $1.06^{10}$ ≈ 1.7908）
+  answer:
+  - '139708'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '第 1 年年底期滿本利和為 10000×（1＋6 ％）＝10000×1.06
+
+    第 2 年年底期滿本利和為（10000×1.06＋10000）×（1＋6 ％）
+
+    ＝10000×$1.06^{2}$＋10000×1.06
+
+    …
+
+    第 10 年年底期滿本利和為 10000×$1.06^{10}$＋10000×$1.06^{9}$＋……＋10000×1.06
+
+    ＝$10000\times \frac{1.06\times (1.06^{10}-1)}{1.06-1}$
+
+    又 $1.06^{10}$ ≈ 1.7908，故所求為$10000\times \frac{1.06\times 0.7908}{0.06}$＝139708（元）'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 某地區統計其三年來的人口成長率分別為 60 ％、20 ％、－10 ％，則此地區這三年的每年人口平均成長率為＿＿＿＿。
+  answer:
+  - 20 ％
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設平均成長率為 r
+
+    ⇒ （1＋r）$^{3}$＝（1＋0.6）×（1＋0.2）×（1－0.1）
+
+    ＝$\frac{2^{4}\times 2^{2}\times 3\times 3^{2}}{1000}$＝$\left( \frac{2^{2}\times 3}{10} \right) ^{3}$
+
+    ⇒ 1＋r＝1.2 ⇒ r＝0.2
+
+    故此地區這三年的每年人口平均成長率為 20 ％'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: '老師實施分組教學並對兩組同學進行測驗，兩組的分數如下：
+
+    第一組 30 人，平均分數 70 分，標準差 5 分；
+
+    第二組 20 人，平均分數 60 分，標準差 10 分。
+
+    若將這兩組學生成績合併，則：
+
+    (1) 新的算術平均數為＿＿＿＿分。
+
+    (2) 新的標準差為＿＿＿＿分。（用根式表示）'
+  answer:
+  - (1) 66；(2)$\sqrt{79}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 新算術平均數為μ''＝$\frac{30\times 70+20\times 60}{50}$＝$\frac{3300}{50}$＝66（分）
+
+    (2) 第一組數據平方和為 30×（$70^{2}$＋$5^{2}$）＝30×4925＝147750
+
+    第二組數據平方和為 20×（$60^{2}$＋$10^{2}$）＝20×3700＝74000
+
+    故新平方和為 147750＋74000＝221750
+
+    ⇒ 新標準差為$\sqrt{\frac{221750}{50}-66^{2}}$＝$\sqrt{4435-4356}$＝$\sqrt{79}$（分）'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: '某次考試，某班的數學成績不太理想，全班 30 位學生成績的算術平均數為 36 分，標準差為 12 分，全班最高也僅 66 分。數學老師決定將每位學生的原始成績 X 調整為成績 Y，作為成績的正式紀錄。
+
+    (1) 如果老師採取線型函數 y＝ax＋b 調整成績，並設定 Y 成績的最高分為 100 分，Y 成績的算術平均數為 60 分，則 Y 成績的標準差為＿＿＿＿分。
+
+    (2) 如果老師採取根式函數$y =10\sqrt{x}$調整成績，且經計算知 Y 成績的算術平均數為 59 分， 則 Y 成績的標準差為＿＿＿＿分。（用根式表示）'
+  answer:
+  - (1) 16；(2)$\sqrt{119}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) $\begin{cases}66a+b =100 \\ 36a+b =60\end{cases}$ ⇒ a＝$\frac{4}{3}$，b＝12 ⇒ $Y=\frac{4}{3}X+12$
+
+    故 Y 成績的標準差為σ$_{Y}$＝$\frac{4}{3}$σ$_{X}$＝16（分）
+
+    (2) 調整後分數平方和為 $y_{1}^{2}$＋$y_{2}^{2}$＋……＋$y_{30}^{2}$＝$100x_{1}$＋$100x_{2}$＋……＋$100x_{30}$
+
+    ＝100（$x_{1}$＋$x_{2}$＋……＋$x_{30}$）
+
+    ＝100×（30×36）＝108000
+
+    故 Y 成績的標準差為σ$_{Y}$＝$\sqrt{\frac{108000}{30}-59^{2}}$＝$\sqrt{3600-3481}$＝$\sqrt{119}$（分）'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 某班數學模擬考的成績平均為 8 級分，標準差為 2.5 級分；而數學期中考的成績平均為 64 分，標準差為 6 分。<u>小明</u>的數學模擬考與期中考成績分別為 7 級分與 60 分，試問相對於全班，<u>小明</u>哪一項的成績表現比較好？$■答$：＿＿＿＿。
+  answer:
+  - 模擬考
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '模擬考：$\frac{7-8}{2.5}=\frac{-10}{25}=-\frac{2}{5}$
+
+    期中考：$\frac{60-64}{6}=\frac{-4}{6}=-\frac{2}{3}$
+
+    ∵$-\frac{2}{3} < -\frac{2}{5}$
+
+    ∴模擬考的成績表現比較好'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: '西元 1897 年，<u>美國</u>物理學家<u>多貝爾</u>教授提出多貝爾定律，說明環境溫度（在某個範圍內）與某種蟋蟀叫聲頻率的關係。為了驗證這個定律，<u>小明</u>以 X 表示當時的環境溫度（攝氏），以 Y 表示叫聲頻率，記錄一組二維數據，並計算出平均數μ$_{X}$＝20，μ$_{Y}$＝110，標準差σ$_{X}$＝7，σ$_{Y}$＝49，相關係數 r＝0.95。試求：
+
+    (1) 當環境溫度為 28℃ 時，可預估蟋蟀叫聲頻率為＿＿＿＿。（四捨五入取到整數位）
+
+    (2) 如果將環境溫度 X（℃）改用華氏 X''（℉）表示，即$X'' =\frac{9}{5}X+32$，則 X'' 與 Y 的相關係數 r''＝＿＿＿＿。'
+  answer:
+  - (1) 163；(2) 0.95
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) Y 對 X 的迴歸直線方程式為$Y-110=0.95\times \frac{49}{7} (X-20)$ ⇒ Y－110＝6.65（X－20）
+
+    X＝28 代入得 Y＝6.65×8＋110＝163.2 ≈ 163
+
+    故可預估蟋蟀叫聲頻率為 163
+
+    (2) r''＝r＝0.95'
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s3_1
+  section: 3
+  number: 1
+  type: single
+  page: 2
+  stem: (1) 級數 1×2＋2×3＋3×4＋……＋n（n＋1）之值為何？（單選，5 分）
+  options:
+  - label: A
+    content: $n^{2}$＋3n－2
+  - label: B
+    content: n（$n^{2}$－n＋2）
+  - label: C
+    content: $\frac{n (n+1) (2n+1)}{3}$
+  - label: D
+    content: $\frac{n (n+1) (n+2)}{3}$
+  - label: E
+    content: $\frac{2n (n^{2}+2)}{3}$
+- id: doc_108_高雄_高師大附中_數學_g10s2e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: '設數列〈 $a_{n}$ 〉滿足 $a_{1}$＝1，$a_{n+1}=\frac{a_{n}}{a_{n}+1}$，其中 n 為自然數，
+
+    (1) 請推測一般項 $a_{n}$ 的值。（以 n 表示）（2 分）
+
+    (2) 試用數學歸納法證明(1)的結果。（6 分）'
+  group_stem: (2) 將柳丁堆垛成正三角形錐體，底盤是正三角形，每 3 個柳丁的空隙上方再放一個柳丁，如右圖。若要堆垛 15 層，共需要幾個柳丁？（5 分）
+  shared_asset: g3_2_2
+shared_assets:
+- key: g3_2_2
+  label: 題組附圖
+  kind: figure
+  file: doc_108_高雄_高師大附中_數學_g10s2e2/g3_2_2_f1.png
+  used_by:
+  - doc_108_高雄_高師大附中_數學_g10s2e2_s3_2
+  crop:
+    page: 2
+    rect:
+    - 333.5
+    - 561.6
+    - 564.3
+    - 623.15

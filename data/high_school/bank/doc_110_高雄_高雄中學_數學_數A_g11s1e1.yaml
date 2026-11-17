@@ -1,0 +1,181 @@
+document:
+  id: doc_110_高雄_高雄中學_數學_數A_g11s1e1
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 1
+  city: 高雄
+  school_short: 高雄中學
+  school: 高雄市立高雄高級中學
+  title: 高雄市立高雄高級中學 110學年度第1學期第1次定期評量 高二數學（數A）科試題
+  exam_name: 110學年度第1學期第1次定期評量
+  source_file: 高二/數學/110/1-1/高雄/高雄中學_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題6分，共18分，錯一個選項得3分，錯兩個選項得1分，三個以上得0分）
+    count: 3
+  - ord: 2
+    name: 二、填充題
+    count: 2
+  - ord: 3
+    name: 三、證明做圖題（共14分）
+    count: 2
+questions:
+- id: doc_110_高雄_高雄中學_數學_數A_g11s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設0＜θ＜$\frac{\pi}{2}$，若sinθ－cosθ＝$\frac{1}{2}$，則下列哪些選項正確？
+  options:
+  - label: A
+    content: sin 2θ＝$\frac{3}{4}$
+  - label: B
+    content: cos 2θ＝±$\frac{\sqrt{7}}{4}$
+  - label: C
+    content: sinθ＋cosθ＝$\frac{\sqrt{7}}{2}$
+  - label: D
+    content: tan$\frac{\theta}{2}$＝－2＋$\sqrt{7}$
+  - label: E
+    content: 已cos (θ－$\frac{\pi}{2}$)＝$\frac{\sqrt{7}+1}{4}$
+  answer:
+  - A
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○：( sinθ－cosθ)$^{2}$＝1－sin 2θ＝$\frac{1}{4}$ ⇒ cos 2θ＝$\frac{3}{4}$。 (B) ×：因為0＜θ＜$\frac{\pi}{2}$且sinθ＞cosθ，所以$\frac{\pi}{4}$＜θ＜$\frac{\pi}{2}$ ⇒ $\frac{\pi}{2}$＜2θ＜π ⇒ cosθ＝－$\frac{\sqrt{7}}{4}$。 (C) ○：( sinθ＋cosθ)$^{2}$＝1＋sinθ＝1＋$\frac{3}{4}$＝$\frac{7}{4}$ ⇒ sinθ＋cosθ＝$\frac{\sqrt{7}}{2}$。 (D) ○：解$\begin{cases}\sin \theta -\cos \theta =\frac{1}{2} \\ \sin \theta +\cos \theta =\frac{\sqrt{7}}{2}\end{cases}$ ⇒ $\begin{cases}\sin \theta =\frac{1+\sqrt{7}}{4} \\ \cos \theta =\frac{\sqrt{7}-1}{4}\end{cases}$， 又$\frac{\pi}{8}$＜$\frac{\theta}{2}$＜$\frac{\pi}{4}$，所以sin$\frac{\theta}{2}$＝$\sqrt{\frac{1-\cos \theta}{2}}$，cos$\frac{\theta}{2}$＝$\sqrt{\frac{1+\cos \theta}{2}}$， ⇒ tan$\frac{\theta}{2}$＝$\frac{\sin \frac{\theta}{2}}{\cos \frac{\theta}{2}}$＝$\sqrt{\frac{1-\cos \theta}{1+\cos \theta}}$＝$\sqrt{\frac{1-\frac{\sqrt{7}-1}{4}}{1+\frac{\sqrt{7}+1}{4}}}$＝$\sqrt{\frac{5-\sqrt{7}}{3+\sqrt{7}}}$＝$\sqrt{11-4\sqrt{7}}$＝$\sqrt{11-2\sqrt{28}}$＝$\sqrt{7}$－2。 (E) ○：cos (θ－$\frac{\pi}{2}$)＝sin
+    (π－θ)＝sinθ＝$\frac{1+\sqrt{7}}{4}$。 故選(A)(C)(D)(E)。
+- id: doc_110_高雄_高雄中學_數學_數A_g11s1e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 右圖為函數y＝a sin ( bx＋c )＋d的部分圖形，其中b＞0，－$\frac{\pi}{2}$ ≤ c ≤ $\frac{\pi}{2}$， A＝($\frac{1}{2}$ , 0 )，B＝($\frac{7}{6}$ , 0 )，則下列哪些選項正確？
+  options:
+  - label: A
+    content: a＝2
+  - label: B
+    content: y＝a sin ( bx＋c )＋d的週期為2
+  - label: C
+    content: c＝$\frac{\pi}{3}$
+  - label: D
+    content: 此函數圖形對稱於直線x＝$\frac{23}{6}$
+  - label: E
+    content: 將函數y＝a sin bx＋d水平右移$\frac{\pi}{3}$單位可得y＝a sin ( bx＋c )＋d
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_110_高雄_高雄中學_數學_數A_g11s1e1/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 486.9
+      - 208.85
+      - 625.1
+      - 340.3
+  answer:
+  - A
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○：a＝$\frac{1-(-3)}{2}$＝2。 (B) ○：承(A)可知，d＝－1， ⇒ y＝2 sin ( bx＋c )－1， ⇒ $\begin{cases}2\sin (\frac{b}{2}+c)-1=0 \\ 2\sin (\frac{7b}{b}+c)-1=0\end{cases}$ ⇒ $\begin{cases}\sin (\frac{b}{2}+c)=\frac{1}{2} \\ \sin (\frac{7b}{b}+c)=\frac{1}{2}\end{cases}$ ⇒ $\begin{cases}\frac{b}{2}+c=\frac{\pi}{6} \\ \frac{7b}{b}+c=\frac{5\pi}{6}\end{cases}$ ⇒ $\frac{2b}{3}$＝$\frac{2\pi}{3}$ ⇒ b＝π， 所以週期為$\frac{2\pi}{\pi}$＝2。 (C) ×：承(B)可得，$\frac{\pi}{2}$＋c＝$\frac{\pi}{6}$ ⇒ c＝－$\frac{\pi}{3}$。 (D) ○：承(C)可知，y＝2 sin (πx－$\frac{\pi}{3}$)－1， 將x＝$\frac{23}{6}$代入可得y＝2 sin ($\frac{23\pi}{6}$－$\frac{\pi}{3}$)－1＝2 sin$\frac{7\pi}{2}$－1＝－3， 所以圖形對稱直線x＝$\frac{23}{6}$。 (E) ×：因為y＝2 sin (πx－$\frac{\pi}{3}$)－1＝2 sin (π( x－$\frac{1}{3}$) )－1， 所以將y＝a sin bx＋d水平右移$\frac{1}{3}$單位可得y＝a sin ( bx＋c )＋d。 故選(A)(B)(D)。
+- id: doc_110_高雄_高雄中學_數學_數A_g11s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 關於下列函數週期的判斷，哪些選項正確？
+  options:
+  - label: A
+    content: f (x)＝sin (－2x＋5 )－1的週期為π
+  - label: B
+    content: f (x)＝( 2 sin x＋cos x ) ( sin x－2 cos x ) 的週期為π
+  - label: C
+    content: f (x)＝| tan x＋cot x ) | 的週期為π
+  - label: D
+    content: f (x)＝$sin^{3}$ x－$\frac{3}{4}$sin x的週期為2π
+  - label: E
+    content: f (x)＝$tan^{2}$ x＋100 tan x＋5π的週期為π
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○：週期為$\frac{2\pi}{|-2|}$＝π。 (B) ○：f (x)＝( 2 sin x＋cos x ) ( sin x－2 cos x )＝2 $sin^{2}$ x－2 $cos^{2}$ x－3 sin x cos x ＝－2 cos 2x－$\frac{3}{2}$sin 2x＝$\frac{3}{2}$sin ( 2x＋ψ)， 所以週期為$\frac{2\pi}{2}$＝π。 (C) ×：f ( x＋$\frac{\pi}{2}$)＝| tan ( x＋$\frac{\pi}{2}$)＋cot ( x＋$\frac{\pi}{2}$) |＝| cot (－x )＋tan (－x ) | ＝|－cot x－tan x |＝| tan x＋cot x |＝f (x)， 所以週期為$\frac{\pi}{2}$。 (D) ×：f (x)＝$sin^{3}$ x－$\frac{3}{4}$sin x＝－$\frac{1}{4}$(－$sin^{3}$ x＋3 sin x )＝－$\frac{1}{4}$sin 3x，所以週期為$\frac{2\pi}{3}$。 (E) ○：f ( x＋π)＝$tan^{2}$ ( x＋π)＋100 tan ( x＋π)＋5π＝$tan^{2}$ x＋100 tan x＋5π＝f (x)， 所以週期為π。 故選(A)(B)(E)。
+- id: doc_110_高雄_高雄中學_數學_數A_g11s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 設0＜x＜π，求所有滿足方程式4 $cos^{2}$ x＋2$\sqrt{3}$sin x cos x－2 $sin^{2}$ x＝4之解x＝？＿＿＿＿。
+  answer:
+  - $\frac{\pi}{6}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_高雄_高雄中學_數學_數A_g11s1e1_s2_11
+  section: 2
+  number: 11
+  type: single
+  page: 2
+  stem: 右圖為以O為圓心的兩同心圓，其半徑分別為1，2且A，B分別落在兩圓上， 若A點坐標為 ( a , b ) 且∠AOB＝120°，則B點坐標為下列哪個選項？
+  options:
+  - label: A
+    content: (－a－$\sqrt{3}$b ,－$\sqrt{3}$a－b )
+  - label: B
+    content: ( a－$\sqrt{3}$b ,$\sqrt{3}$a＋b )
+  - label: C
+    content: (－a－$\sqrt{3}$b ,$\sqrt{3}$a－b )
+  - label: D
+    content: (－a－$\sqrt{3}$b ,$\sqrt{3}$a＋b)
+  - label: E
+    content: ( a－$\sqrt{3}$b ,$\sqrt{3}$a－b )
+  assets:
+  - key: s2_11_f1
+    kind: figure
+    file: doc_110_高雄_高雄中學_數學_數A_g11s1e1/s2_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 515.8
+      - 252.2
+      - 660.8
+      - 390.4
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_高雄_高雄中學_數學_數A_g11s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 已知α，β，γ為銳角，若α＋β＋γ為＝$\frac{\pi}{2}$，試證tanαtanβ＋tanβtanγ＋tanγtanα＝1（5分）
+- id: doc_110_高雄_高雄中學_數學_數A_g11s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: '已知y＝cos x的圖形如下：
+
+    (1) 試利用y＝cos x的圖形做出y＝cos x－| cos x | 的圖形。（討論4分，做圖2分，直接作在下列圖上）
+
+    (2) 試利用y＝cos x－| cos x | 的圖形求出cos x－| cos x | ＝－$\frac{1}{6}$( x＋7 ) 有幾個實根？'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_110_高雄_高雄中學_數學_數A_g11s1e1/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 70.2
+      - 478.25
+      - 636.5
+      - 627.45

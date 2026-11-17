@@ -1,0 +1,399 @@
+document:
+  id: doc_110_台中_興大附中_數學_數甲_g12s1e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 110學年度第1學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 110學年度第1學期第2次定期評量
+  source_file: 高三/數學/110/1-2/台中/興大附中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 20 分）
+    count: 5
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 32 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 48 分）
+    count: 8
+questions:
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列哪個函數在 x＝1 處可微？（其中 [ x ] 表示不超過 x 的最大整數）
+  options:
+  - label: A
+    content: $f_{1}$（x）＝[ x ]
+  - label: B
+    content: $f_{2}$（x）＝$\frac{( x - 1 )^{2}}{| x - 1 |}$
+  - label: C
+    content: $f_{3}$（x）＝｜x－1｜
+  - label: D
+    content: $f_{4}$（x）＝x（x－1）
+  - label: E
+    content: $f_{5}$（x）＝x [ x ]
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：$f_{1}$（x）＝[ x ] 在 x＝1 不連續$\Rightarrow$不可微
+
+    (B)╳：$f_{2}$（x）在 x＝1 無定義，則必不可微
+
+    (C)╳：$\lim_{x \rightarrow 1^{+}} \frac{f_{3} ( x )- f_{3} ( 1 )}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{x - 1}{x - 1}$＝1，
+
+    $\lim_{x \rightarrow 1^{-}} \frac{f_{3} ( x )- f_{3} ( 1 )}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{-( x - 1 )}{x - 1}$＝－1，不相等，則不可微
+
+    (D)○：$f_{4}$（x）＝x（x－1）＝$x^{2}$－x
+
+    $f_{4}$''（x）＝2x－1，可微
+
+    (E)╳：$\lim_{x \rightarrow 1^{+}} \frac{f_{5} ( x )- f_{5} ( 1 )}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{x - 1}{x - 1}$＝1
+
+    $\lim_{x \rightarrow 1^{-}} \frac{f_{5} ( x )- f_{5} ( 1 )}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{0 - 1}{x - 1}$不存在
+
+    則不可微
+
+    故選(D)'
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: $\lim_{n \rightarrow \infty} \sum_{k =1}^{n} \frac{1}{n}\sqrt{1 - \left( \frac{k}{n} \right) ^{2}}$代表的值是下列哪一個選項？
+  options:
+  - label: A
+    content: 4π
+  - label: B
+    content: 2π
+  - label: C
+    content: π
+  - label: D
+    content: $\frac{\pi}{2}$
+  - label: E
+    content: $\frac{\pi}{4}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 若方程式 $2x^{3}$－$3x^{2}$－12x＋（5－k）＝0 有兩相異負根與一正根，則實數 k 的範圍為下列哪一個選項？
+  options:
+  - label: A
+    content: －15＜k＜12
+  - label: B
+    content: 5＜k＜12
+  - label: C
+    content: 0＜k＜12
+  - label: D
+    content: －12＜k＜15
+  - label: E
+    content: －12＜k＜5
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '若 f（x）＝$2x^{3}$－$3x^{2}$－12x＋（5－k）＝0 有兩相異負根與一正根
+
+    則波峰和波谷的 y 值異號且 f(0)＜0
+
+    f''（x）＝$6x^{2}$－6x－12＝6（x－2）（x＋1）
+
+    當 x＝－1 或 2 時，f''（x）＝0
+
+    則$\begin{cases}f ( -1 )f ( 2 )< 0 \\ f ( 0 )< 0\end{cases}\Rightarrow\begin{cases}( 12 -k ) ( -15 -k )< 0 \\ 5 -k < 0\end{cases}$
+
+    $\Rightarrow\begin{cases}( k - 12 ) ( k + 15 )< 0 \\ k > 5\end{cases}\Rightarrow\begin{cases}-15 < k < 12 \\ k > 5\end{cases}$
+
+    $\Rightarrow$5＜k＜12
+
+    故選(B)'
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 已知 0＜a＜2，若$\int_{0}^{1} | 3x - a |dx$＝$\frac{5}{6}$，則 a 的值為下列哪一個選項？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: $\frac{1}{2}$
+  - label: C
+    content: $\frac{5}{6}$
+  - label: D
+    content: $\frac{1}{3}$
+  - label: E
+    content: $\frac{5}{4}$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int_{0}^{1} | 3x -a |dx$＝$\int_{0}^{\frac{a}{3}} | 3x -a |dx$＋$\int_{\frac{a}{3}}^{1} | 3x -a |dx$＝$\int_{0}^{\frac{a}{3}} ( a - 3x )dx$＋$\int_{\frac{a}{3}}^{1} ( 3x -a )dx$
+
+    ＝$\left. \left( ax -\frac{3}{2}x^{2} \right) \right| _{0}^{\frac{a}{3}}$＋$\left. \left( \frac{3}{2}x^{2}-ax \right) \right| _{\frac{a}{3}}^{1}$
+
+    ＝$\left( \frac{a^{2}}{3}-\frac{a^{2}}{6} \right) + \left[ \left( \frac{3}{2}-a \right) - \left( \frac{a^{2}}{6}-\frac{a^{2}}{3} \right) \right]$
+
+    ＝$\frac{a^{2}}{6}$＋$\left( \frac{3}{2}-a +\frac{a^{2}}{6} \right)$＝$\frac{a^{2}}{3}$－a＋$\frac{3}{2}$＝$\frac{5}{6}$
+
+    $\Rightarrow2a^{2}$－6a＋4＝0$\Rightarrowa^{2}$－3a＋2＝0$\Rightarrow$（a－2）（a－1）＝0
+
+    ∵0＜a＜2 ∴a＝1
+
+    故選(A)'
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 若三次函數 f（x）＝$2x^{3}$－$\frac{13}{2}x^{2}$＋6x＋$\frac{1}{2}$，則下列哪個選項為此函數的切線方程式？
+  options:
+  - label: A
+    content: 3x＋2y＝0
+  - label: B
+    content: 2x＋3y＝0
+  - label: C
+    content: x＋y＝3
+  - label: D
+    content: x＋y＝2
+  - label: E
+    content: x＋y＝－1
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$6x^{2}$－13x＋6，令切點為（a，f（a））
+
+    (A) $6a^{2}$－13a＋6＝$-\frac{3}{2}$
+
+    $\Rightarrow12a^{2}$－26a＋15＝0 無實根
+
+    故 f（x）圖形上不存在斜率為$-\frac{3}{2}$之切線
+
+    (B) $6a^{2}$－13a＋6＝$-\frac{2}{3}\Rightarrow18a^{2}$－39a＋20＝0$\Rightarrow$（3a－4）（6a－5）＝0$\Rightarrow$a＝$\frac{4}{3}$或$\frac{5}{6}$
+
+    故切點為$\left( \frac{4}{3} , \frac{91}{54} \right)$或$\left( \frac{5}{6} , \frac{463}{216} \right)$，和（0，0）之直線斜率皆不為$-\frac{2}{3}$
+
+    (C)(D)(E) $6a^{2}$－13a＋6＝－1$\Rightarrow6a^{2}$－13a＋7＝0$\Rightarrow$（6a－7）（a－1）＝0$\Rightarrow$a＝$\frac{7}{6}$或 1
+
+    當 a＝$\frac{7}{6}$，切點為$\left( \frac{7}{6} , \frac{395}{216} \right)$，與選項不符合
+
+    當 a＝1，切點為（1，2），故切線方程式為 x＋y＝3
+
+    故選(C)'
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 若函數 f（x）＝$x^{3}$－$2x^{2}$＋x－1＝$a_{3}$（x－2）$^{3}$＋$a_{2}$（x－2）$^{2}$＋$a_{1}$（x－2）＋$a_{0}$，請選出正確的選項。
+  options:
+  - label: A
+    content: $a_{3}$＋$a_{2}$＝5
+  - label: B
+    content: $a_{1}$＝5
+  - label: C
+    content: $a_{0}$＝－1
+  - label: D
+    content: 在 y＝f（x）的圖形上，以點（2，1）為切點的切線斜率為 5
+  - label: E
+    content: 在 y＝f（x）的圖形上，極大值發生在 x＝1 處，極小值發生在 x＝$\frac{1}{3}$處
+  answer:
+  - A
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 設 k 為實數，則關於函數 f（x）＝$x^{3}$－$3x^{2}$＋5x＋k 的圖形，請選出正確的選項。
+  options:
+  - label: A
+    content: 圖形與任一水平直線恰有一交點
+  - label: B
+    content: 圖形有水平切線
+  - label: C
+    content: 若（p，q）在圖形上，則（2－p，6－q＋2k）也在圖形上
+    asset:
+      key: s2_2_optC
+      file: doc_110_台中_興大附中_數學_數甲_g12s1e2/s2_2_optC.png
+      crop:
+        page: 2
+        rect:
+        - 435.9
+        - 358.45
+        - 564.3
+        - 488.85
+  - label: D
+    content: 圖形有最高點，也有最低點
+  - label: E
+    content: 函數 f（x）在 x＝0 附近的一次近似為 y＝5x＋k
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵f''（x）＝$3x^{2}$－6x＋5 恆大於 0
+
+    ∴y＝f（x）的圖形和任一水平線恰有一交點
+
+    (B)╳：同(A)，故無水平切線
+
+    (C)○：f（x）＝（$x^{3}$－$3x^{2}$＋3x－1）＋2x＋k＋1
+
+    ＝（x－1）$^{3}$＋2（x－1）＋k＋3
+
+    可知對稱中心在（1，k＋3）
+
+    若（p，q）在圖形上，則對稱點（2－p，6－q＋2k）亦在圖形上
+
+    (D)╳：同(A)，故無最高、最低點
+
+    (E)○：∵f（x）＝（x－0）$^{3}$－3（x－0）$^{2}$＋5（x－0）＋k
+
+    ∴可知在 x＝0 附近之一次近似為 y＝5x＋k
+
+    故選(A)(C)(E)'
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 已知實係數多項式 f（x），滿足 f'（x）＝$x^{4}$－$2x^{2}$。請選出正確的選項。
+  options:
+  - label: A
+    content: f（x）的圖形只有一個反曲點
+  - label: B
+    content: 當 x＝$\sqrt{2}$時，y＝f（x）有極小值
+  - label: C
+    content: 當 x＞$\sqrt{2}$時，圖形為嚴格遞減的函數圖形
+  - label: D
+    content: f（－2）＞f（－3）
+  - label: E
+    content: 若 1＜α＜β＜$\sqrt{2}$，則 f'（α）＞f'（β）
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 若函數 f（x）＝$\sqrt{2x - x^{2}}$的最大值為 M，最小值為 m，求 M＋m＝＿＿＿＿。
+  answer:
+  - '1'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（x）＝$\sqrt{2x -x^{2}}$＝$\sqrt{-( x - 1 )^{2}+1}$
+
+    又 2x－$x^{2}\geq$0$\Rightarrow$x（x－2）$\leq$0$\Rightarrow$0$\leq$x$\leq$2
+
+    當 x＝1 時，f（x）有最大值 M＝1
+
+    當 x＝2 或 0 時，f（x）有最小值 m＝0
+
+    故 M＋m＝1'
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知多項式 f（x）滿足 f(3)＝0 且$\lim_{h \rightarrow 0} \frac{f ( 3 + 4h )}{h}$＝8，求 f'(3)＝＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 將區間 [ 0，3 ] 等分成 n 小段，設函數 f（x）＝$2x^{3}$ 的圖形與 x 軸，在此區間所圍成區域的上和為 $U_{n}$，求 $U_{3}$＝＿＿＿＿。
+  answer:
+  - '72'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: '設函數 f（x）＝$x^{2}$＋k（k$\geq$0）及三直線 x＝0、x＝2、y＝0 所圍成的區域面積為$\frac{20}{3}$，求 k＝
+
+    ＿＿＿＿。'
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 若$\int_{1}^{x} f ' ( t )dt$＝$x^{3}$＋$ax^{2}$＋b，且滿足 f'(1)＝5，試求 f''(1)＝＿＿＿＿。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 若 a，b 為實數，且滿足$\int_{-1}^{0} ( ax^{2}+2x )dx$＝b 與$\int_{0}^{1} ( ax^{2}+b )dx$＝5，求 a＋b＝＿＿＿＿。
+  answer:
+  - '11'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 函數 f（x）＝$x^{3}$－$\frac{3}{2}x^{2}$＋3x＋k，k 為任意實數，試求函數圖形上，兩條切線斜率 3 之切線間的距離為＿＿＿＿。
+  answer:
+  - $\frac{\sqrt{10}}{20}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數甲_g12s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 如右圖，已知 A、B 是 x 軸上兩點，C、D 是拋物線 y＝12－$x^{2}$ 上的兩點，且 ABCD 形成一個矩形，求此矩形的最大面積為＿＿＿＿。
+  assets:
+  - key: s3_8_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數甲_g12s1e2/s3_8_f1.png
+    crop:
+      page: 3
+      rect:
+      - 473.65
+      - 134.15
+      - 564.3
+      - 254.45
+  answer:
+  - '32'
+  answer_status: verified
+  answer_source: answer_key

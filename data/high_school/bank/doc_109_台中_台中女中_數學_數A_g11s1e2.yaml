@@ -1,0 +1,247 @@
+document:
+  id: doc_109_台中_台中女中_數學_數A_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 109
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 台中女中
+  school: 臺中市立臺中女子高級中等學校
+  title: 臺中市立臺中女子高級中等學校 109學年度第1學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 109學年度第1學期第2次定期評量
+  source_file: 高二/數學/109/1-2/台中/台中女中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 10 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題 10 分，共 30 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每格 5 分，共 50 分）
+    count: 10
+  - ord: 4
+    name: 四、混合題（共 10 分）
+    count: 1
+questions:
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設 x 與 y 的關係式為 y＝$20\times \log _{2}\left( \frac{x}{3} \right) ^{2}$，且當 x＝$x_{1}$、$x_{2}$ 時，其對應的 y 值分別為 $y_{1}$、$y_{2}$，其中 $x_{1}$、$x_{2}$ 皆為正實數。若 $x_{1}$＝$2x_{2}$，則對於 $y_{1}$ 與 $y_{2}$ 的關係，試選出正確的選項。
+  options:
+  - label: A
+    content: $y_{1}$＝$2y_{2}$
+  - label: B
+    content: $y_{1}$＝20 $log_{2}y_{2}$＋20
+  - label: C
+    content: $y_{1}$＝20 $log_{2}y_{2}$＋$log_{2}$20
+  - label: D
+    content: $y_{1}$＝$y_{2}$＋1
+  - label: E
+    content: $y_{1}$＝$y_{2}$＋40
+  explanation: '$y_{1}$＝$20\log _{2}\left( \frac{x_{1}}{3} \right) ^{2}$＝40（$log_{2}x_{1}$－$log_{2}$3） ……………①
+
+    $y_{2}$＝$20\log _{2}\left( \frac{x_{2}}{3} \right) ^{2}$＝40（$log_{2}x_{2}$－$log_{2}$3）……………②
+
+    ②－①得 $y_{2}$－$y_{1}$＝40（$log_{2}x_{2}$－$log_{2}x_{1}$）＝$40\log _{2}\frac{x_{2}}{x_{1}}$
+
+    又 $x_{1}$＝$2x_{2}\Rightarrowy_{2}$－$y_{1}$＝$40\log _{2}\frac{1}{2}$＝－40
+
+    $\Rightarrowy_{1}$＝$y_{2}$＋40，故選(E)'
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 已知定義在實數上的函數 f（x）滿足 f（x）＝$\begin{cases}\log _{2} ( 2 - x ) , x\leq 0 \\ f ( x - 1 ) - f ( x - 2 ) , x > 0\end{cases}$，則 f(3)＝？
+  options:
+  - label: A
+    content: －2
+  - label: B
+    content: －1
+  - label: C
+    content: '0'
+  - label: D
+    content: '1'
+  - label: E
+    content: '2'
+  explanation: '依題意得 f(0)＝$log_{2}$（2－0）＝1
+
+    且 f(3)＝f(2)－f(1)……………①
+
+    f(2)＝f(1)－f(0)……………②
+
+    ①＋②得 f(3)＝－f(0)＝－1，故選(B)'
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設集合 A＝｛x｜$log_{3}$（$x^{2}$－3x＋3）＜1，x$\in$R｝、B＝$\left\{ y \left| y = \sin \left( x + \frac{\pi}{2} \right) , x\in R \right. \right\}$，則 A 與 B 交集內的元素可為下列何者？
+  options:
+  - label: A
+    content: $- \frac{\pi}{2}$
+  - label: B
+    content: $\frac{1}{\pi}$
+  - label: C
+    content: $\frac{1}{e}$
+  - label: D
+    content: $log_{9}$5
+  - label: E
+    content: '5'
+  explanation: '$log_{3}$（$x^{2}$－3x＋3）＜1＝$log_{3}$3
+
+    $\Rightarrow\begin{cases}x^{2} - 3x + 3 < 3 \\ x^{2} - 3x + 3 > 0\end{cases}\Rightarrow\begin{cases}0 < x < 3 \\ x\in R\end{cases}\Rightarrow$0＜x＜3
+
+    故 A＝｛x｜0＜x＜3｝，又 B＝｛y｜－1$\leq$y$\leq$1｝$\Rightarrow$A∩B＝｛x｜0＜x$\leq$1｝
+
+    故選(B)(C)(D)'
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 已知 a＞0 且 a≠1，f（x）＝$a^{x}$，g（x）＝$log_{a}$x，則下列敘述何者正確？
+  options:
+  - label: A
+    content: 當 0＜a＜1 時，y＝f（x）為嚴格遞減函數
+  - label: B
+    content: 當 0＜a＜1 時，y＝f（x）函數圖形為凹口朝下
+  - label: C
+    content: y＝f（x）與 y＝g（x）圖形對稱於 y＝x
+  - label: D
+    content: 當 a＞1 時，$\frac{\log _{a}2018 + \log _{a}2019 + \log _{a}2020}{3}$＜$log_{a}$2019
+  - label: E
+    content: 當 a＞1 時，$\frac{a^{2018} + a^{2020}}{2}$＞$a^{2019}$
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 請問下列哪些方程式恰有 2 個實根？
+  options:
+  - label: A
+    content: sinx＝｜logx｜
+  - label: B
+    content: 1－$x^{2}$＝$log_{2}x^{2}$
+  - label: C
+    content: ｜2－x｜＝logx
+  - label: D
+    content: －｜$2^{x}$－6｜＝cosx
+  - label: E
+    content: $2^{x}$－$\sqrt{2}$＝sinx＋cosx
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 若方程式 $10^{x}$－2×$5^{x}$－3×$2^{x}$＋6＝0，則 x＝＿＿＿＿。
+  explanation: '原式$\Rightarrow2^{x}$×$5^{x}$－2×$5^{x}$－3×$2^{x}$＋6＝0$\Rightarrow$（$2^{x}$－2）（$5^{x}$－3）＝0
+
+    $\Rightarrow2^{x}$＝2 或 $5^{x}$＝3$\Rightarrow$x＝1 或 $log_{5}$3'
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知 log2$\approx$0.3010，log3$\approx$0.4771，log7$\approx$0.8451，若 $3^{100}$×$2^{50}$ 為 a 位正整數，其首位數字為 b，個位數字為 c，則 a＋b＋c＝＿＿＿＿。
+  explanation: 'log（$3^{100}$×$2^{50}$）＝100 log3＋50 log2$\approx$100×0.4771＋50×0.3010＝62.76
+
+    ∴a＝62＋1＝63，又 log5＜0.76＜log6$\Rightarrow$b＝5
+
+    ∵$2^{1}$ 的個位數字為 2，$2^{2}$ 的個位數字為 4，
+
+    $2^{3}$ 的個位數字為 8，$2^{4}$ 的個位數字為 6，
+
+    $2^{5}$ 的個位數字為 2，……
+
+    ∴4 個一循環$\Rightarrow2^{50}$ 的個位數字為 4
+
+    同理，$3^{1}$ 的個位數字為 3，$3^{2}$ 的個位數字為 9，
+
+    $3^{3}$ 的個位數字為 7，$3^{4}$ 的個位數字為 1，
+
+    $3^{5}$ 的個位數字為 3，……
+
+    也是 4 個一循環$\Rightarrow3^{100}$ 的個位數字為 1
+
+    所以 c＝4×1＝4
+
+    故 a＋b＋c＝63＋5＋4＝72'
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 滿足不等式（$3^{x}$＋5）（$2^{2x－1}$－8）$\left( x^{2} + ( 2\log 2 ) x + \log \frac{2}{5} \right)$＜0 之 x 的範圍為＿＿＿＿。
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設 2$\leq$x$\leq$32，已知函數 f（x）＝（$log_{2}$x）$^{2}$－4（$log_{2}$x）＋3 的最大值為 M，最小值為 N，則數對（M，N）＝＿＿＿＿。
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 設 x 為實數，若方程式$3^{2\log _{3}x} = 2x + 3$，則 x＝＿＿＿＿。
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 設 x 為實數，若方程式 2×（$4^{x}$＋$4^{－x}$）－5×（$2^{x}$＋$2^{－x}$）＋4＝0，則 x＝＿＿＿＿。
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 培養皿中有 A 菌及 B 菌兩種細菌，A 細菌每兩天增加為原來的兩倍，B 細菌的半衰期為 x 天，一開始 A 菌及 B 菌的數量相同，經過 12 天，A 菌是 B 菌的 1024 倍，則 x＝＿＿＿＿。
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 做某項試驗只有四種可能的結果，其發生的機率為 $log_{3}$k、$log_{9}$k、$\log _{9}\sqrt{k}$、$log_{81}$k，則實數 k＝＿＿＿＿。
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 已知$x = \frac{1}{\sqrt{2} + 1}$，則 $log_{8}$（$x^{3}$＋$x^{2}$－3x＋3）＝＿＿＿＿。
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 若方程式$x^{2\log x} = \frac{x^{3}}{10}$，則 x＝＿＿＿＿。
+- id: doc_109_台中_台中女中_數學_數A_g11s1e2_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 2
+  stem: '某銀行推出 10 年儲蓄專案如下：一次存 100 萬元、年利率為 2.5 ％、每年計息 2 次，十年後期滿一次領回本利和。
+
+    (1) 以單利計息，期滿一次領回本利和金額為多少？（單選題，4 分）
+
+    (2) 已知 log2$\approx$0.30102，log3$\approx$0.47712，log1.2825$\approx$0.10806，log1.2830$\approx$0.10823，log1.2835$\approx$0.10839，log1.2840$\approx$0.10857，log1.2845$\approx$0.10873。
+
+    以複利計算，期滿一次領回本利和金額為多少？四捨五入至千元。（計算題，6 分）'
+  options:
+  - label: A
+    content: 115 萬
+  - label: B
+    content: 120 萬
+  - label: C
+    content: 125 萬
+  - label: D
+    content: 130 萬
+  - label: E
+    content: 135 萬

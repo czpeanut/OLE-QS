@@ -1,0 +1,146 @@
+document:
+  id: doc_111_桃園_武陵_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 1
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 111學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 111學年度第1學期第1次定期評量
+  source_file: 高三/數學/111/1-1/桃園/武陵_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題：（每題8分，錯一個選項得5分，錯2個選項得2分，錯3個選項或未作答不得分）
+    count: 3
+  - ord: 2
+    name: 二、填充題：（每格6分，共60分） 參考數值：e＝$\lim_{n\rightarrow \infty} (1+\frac{1}{n})^{n}$
+    count: 5
+questions:
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 實數數列〈$a_{n}$〉,〈$b_{n}$〉,〈$c_{n}$〉,〈$d_{n}$〉各項皆不為零，已知$\lim_{n\rightarrow \infty}a_{n}$＝1，$\lim_{n\rightarrow \infty}b_{n}$＝0，〈$c_{n}$〉收斂，〈$d_{n}$〉發散，試選出敘述正確的選項。
+  options:
+  - label: A
+    content: $\lim_{n\rightarrow \infty} \frac{a_{n}}{b_{n}}$不存在
+  - label: B
+    content: $\lim_{n\rightarrow \infty} \frac{c_{n}}{b_{n}}$不存在
+  - label: C
+    content: $\lim_{n\rightarrow \infty} \frac{d_{n}}{c_{n}}$不存在
+  - label: D
+    content: $\lim_{n\rightarrow \infty} \frac{c_{n}}{d_{n}}$不存在
+  - label: E
+    content: $\lim_{n\rightarrow \infty}$($b_{n}$．$d_{n}$)＝0
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○。 (B) ×：例如$b_{n}$＝$\frac{1}{n}$，$c_{n}$＝$\frac{1}{n^{2}}\lim_{n\rightarrow \infty} \frac{c_{n}}{b_{n}}=\lim_{n\rightarrow \infty} \frac{1}{n}=0$。 (C) ○。 (D) ×：例如$c_{n}$＝$\frac{1}{n}$，$d_{n}$＝n $\lim_{n\rightarrow \infty} \frac{c_{n}}{d_{n}}=\lim_{n\rightarrow \infty} \frac{1}{n^{2}}=0$。 (E) ×：例如$b_{n}$＝$\frac{1}{n}$，$d_{n}$＝$n^{2}$ $\lim_{n\rightarrow \infty}$($b_{n}$．$d_{n}$)＝$\lim_{n\rightarrow \infty}$n＝$\infty$( 不存在 )。 故選(A)(C)。
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列無窮級數何者收斂？（[ ]為高斯符號）
+  options:
+  - label: A
+    content: $\sum_{k=1}^{\infty} \frac{1}{1+2+\ldots +k}$
+  - label: B
+    content: $\sum_{k=1}^{\infty} \frac{1}{\sqrt{k}+\sqrt{k+1}}$
+  - label: C
+    content: $0.\overline{9}$＋($0.\overline{9}$)$^{2}$＋($0.\overline{9}$)$^{3}$＋…＋($0.\overline{9}$)$^{n}$＋…
+  - label: D
+    content: 1－1＋2－2＋3－3＋4－4＋…＋(－1)$^{n－1}$．[$\frac{n+1}{2}$]＋…
+  - label: E
+    content: 1－1＋$\frac{1}{2}$－$\frac{1}{2}$＋$\frac{1}{3}$－$\frac{1}{3}$＋$\frac{1}{4}$－$\frac{1}{4}$＋…＋(－1)$^{n－1}$．$\frac{1}{\left[ \frac{n+1}{2} \right]}$＋…
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) 原式＝$\lim_{n\rightarrow \infty} \sum_{k=1}^{n} \frac{1}{1+2+\ldots +k}=\lim_{n\rightarrow \infty} \sum_{k=1}^{n} \frac{2}{k(k+1)}=\lim_{n\rightarrow \infty} \sum_{k=1}^{n} 2(\frac{1}{k}-\frac{1}{k+1})=\lim_{n\rightarrow \infty} 2(1-\frac{1}{n+1})=2$。 (B) 原式＝$\lim_{n\rightarrow \infty} \sum_{k=1}^{n} \frac{1}{\sqrt{k}+\sqrt{k+1}}=\lim_{n\rightarrow \infty} \sum_{k=1}^{n} (\sqrt{k+1}-\sqrt{k})=\lim_{n\rightarrow \infty} (\sqrt{n+1}-1)=\infty$( 不存在 )。 (C) $0.\overline{9}=\frac{9}{9}=1$ 原式＝1＋1＋1＋…＝$\infty$( 不存在 )。 (D) 首n項和$S_{n}$ $S_{2K}$＝0，$S_{2K－1}$＝K$\Rightarrow \lim_{n\rightarrow \infty}S_{n}$不存在。 (E) 首n項和$S_{n}$ $S_{2K}$＝0，$S_{2K－1}$＝$\frac{1}{k}\Rightarrow \lim_{n\rightarrow \infty}S_{n}$＝0。 故選(A)(E)。
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 函數f (x)＝$\sqrt{x}+\frac{1}{\sqrt{x}}$、g(x)＝$\sqrt{x}-\frac{1}{\sqrt{x}}$的定義域皆為正實數，函數h (x)＝|x|的定義域為實數，試選出敘述正確的選項。
+  options:
+  - label: A
+    content: f (x) 的值域為{y$\in$R | y ≥ 2}
+  - label: B
+    content: (f－g)(x) 為一對一函數
+  - label: C
+    content: ($\frac{f}{g}$)(x) 的定義域為{x$\in$R | x≠1}
+  - label: D
+    content: (f。h)(x) 的定義域為{x$\in$R | x≠0}
+  - label: E
+    content: (f。h)(x) 在其定義域內為偶函數
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) x＞0：f (x)＝$\sqrt{x}+\frac{1}{\sqrt{x}}$ ≥ $2\sqrt{\sqrt{x} \cdot \frac{1}{\sqrt{x}}}$＝2。 (B) ( f－g)(x)＝f (x)－g (x)＝$\frac{2}{\sqrt{x}}$為一對一函數。 (C) $(\frac{f}{g})(x)=\frac{f(x)}{g(x)}\Rightarrow$g (x)≠0$\Rightarrow$x≠1 定義域為{x | x＞0，但x≠1}。 (D) ( f。h)(x)＝f ( h(x) )＝$\sqrt{| x |}+\frac{1}{\sqrt{| x |}}$ 定義域為{x$\in$R| x≠0}。 (E) ( f。h)(－x)＝$\sqrt{| -x |}+\frac{1}{\sqrt{| -x |}}$＝( f。h)(x) 為偶函數。 選(A)(B)(D)(E)。
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 試求下列各值：（若其值不存在則寫不存在，題中的[ ]皆為高斯符號) (1) $\lim_{x\rightarrow 0} x\left[ \frac{1}{x} \right]$＝＿＿＿＿。 (2) $\lim_{x\rightarrow 1} \frac{x^{3}-\left[ x^{3} \right]}{x^{2}-\left[ x^{2} \right]}$＝＿＿＿＿。 (3) $\left[ \sqrt{1} \right] +\left[ \sqrt{2} \right] +\left[ \sqrt{3} \right] +\left[ \sqrt{4} \right] +\ldots +\left[ \sqrt{120} \right]$＝＿＿＿＿。 (4) $\lim_{n\rightarrow \infty} \frac{1+(1+\frac{1}{n})+(1+\frac{1}{n})^{2}+\ldots +(1+\frac{1}{n})^{n-1}}{n}$＝＿＿＿＿。 (5) $\lim_{n\rightarrow \infty} \frac{\left[ 1+\sin \frac{\pi}{12} \right] +\left[ 2+\sin \frac{2\pi}{12} \right] +\left[ 3+\sin \frac{3\pi}{12} \right] +\ldots +\left[ n+\sin \frac{n\pi}{12} \right]}{n^{2}}$＝＿＿＿＿。
+  answer:
+  - (1) 1；(2) 不存在；(3) 825；(4) e－1（1.718亦給分）；(5) $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: (1) 函數f (x)＝1＋$\sqrt{x^{2}-1}$且定義域為{x$\in$R | x ≤－1}，求f (x) 的反函數f $^{－1}$(x)＝＿＿＿＿。 (2) 承上，f $^{－1}$(x) 的定義域為＿＿＿＿。
+  answer:
+  - (1)$-\sqrt{x^{2}-2x+2}$；(2) {x$\in$R| x ≥ 1}
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) y＝1＋$\sqrt{x^{2}-1}$，x ≤－1 $\Rightarrow$ $x^{2}$－1＝(y－1)$^{2}$，y ≥ 1 $\Rightarrow$ $x^{2}$＝(y－1)$^{2}$＋1，y ≥ 1 $\Rightarrow$ x＝$-\sqrt{(y-1)^{2}+1}$，y ≥ 1 ∴ f $^{－1}$(x)＝$-\sqrt{(x-1)^{2}+1}$＝$-\sqrt{x^{2}-2x+2}$，x ≥ 1 (2) f $^{－1}$(x)的定義域為$\{x|x\geq 1\}$。
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設a為實數，若函數f (x)＝$\begin{cases}ax , x \geq -2 \\ \frac{| x^{2}-4 | - | x+2 |}{x+2} , x <-2\end{cases}$為連續函數，求a之值為＿＿＿＿。
+  answer:
+  - $\frac{3}{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知方程式$log_{2}$x－$\frac{x}{10}$＝0有兩正實根α , β，已知1＜α＜2，$2^{n}$＜β＜$2^{n＋1}$，其中n為正整數，求n之值為＿＿＿＿。
+  answer:
+  - '5'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: <u>小武</u>參加某個限定商品的抽獎，已知抽獎方式如下：第一次抽要付100元，每次抽中獎品的機率為$\frac{1}{6}$，若抽中則可拿到限定商品，若沒抽中可以選擇就此放棄抽獎機會，或是比上次多付100元的金額再抽一次。例如：第一次花費100元沒抽中，可再花費200元抽第二次，若第二次沒中則可再花費300元抽第三次，依此類推。假設<u>小武</u>身上有無限的資金且絕不放棄，會持續抽獎直到抽中限定商品為止，則<u>小武</u>所花費金額的期望值為＿＿＿＿元。
+  answer:
+  - '3600'
+  answer_status: verified
+  answer_source: answer_key

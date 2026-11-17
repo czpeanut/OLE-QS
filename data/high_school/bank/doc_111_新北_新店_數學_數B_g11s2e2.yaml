@@ -1,0 +1,261 @@
+document:
+  id: doc_111_新北_新店_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 2
+  city: 新北
+  school_short: 新店
+  school: 新北市立新店高級中學
+  title: 新北市立新店高級中學 111學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 111學年度第2學期第2次定期評量
+  source_file: 高二/數學/111/2-2/新北/新店_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多選題：（每題5分，錯一個選項得3分、錯兩個選項得1分，共20分）
+    count: 4
+  - ord: 2
+    name: 二、填充題：（每格4分，共72分）
+    count: 9
+  - ord: 3
+    name: 三、計算題：（共8分）
+    count: 1
+questions:
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 已知樣本空間S中有兩非空事件A與B，則下列敘述何者正確？
+  options:
+  - label: A
+    content: P(S)＝1
+  - label: B
+    content: 0＜P(A)＜1
+  - label: C
+    content: 若P(A∪B)＝1，則A與B是S的一組分割
+  - label: D
+    content: 兩事件A與B同時發生的機率P(A∩B)＝P(A)×P(B | A)
+  - label: E
+    content: P(A∪B)＝P(A)＋P(B)，則A與B為獨立事件
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○。 (B) ×：0＜P(A) ≤ 1。 (C) ×：必須再加上A∩B＝$\emptyset$。 (D) ○：P(A∩B)＝P(A)×$\frac{P(A\cap
+    B)}{P(A)}$＝P(A)P(B | A)。 (E) ×：若P(A∪B)＝P(A)＋P(B)，則P(A∩B)＝0 即A∩B＝$\emptyset$，此時A與B為互斥事件。
+    故選(A)(D)。
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列選項中的A、B兩事件，何者必獨立？
+  options:
+  - label: A
+    content: P(A)＝P
+  - label: B
+    content: (B) P(A | B)＝P(B | A)
+  - label: C
+    content: P(A∩B)＝P(A)×P(B | A)
+  - label: D
+    content: P(A∩B)＝P(A)×P(B)
+  - label: E
+    content: P(B | A)＝P(B)
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ×：若A∩B＝$\emptyset$，A≠$\emptyset$，B≠$\emptyset$，則P(A∩B)＝0≠P(A)P(B)
+    此時A , B兩事件不獨立。 (B) ×：P(A | B)＝P(B | A)$\Rightarrow \frac{P(A\cap B)}{P(B)}=\frac{P(A\cap
+    B)}{P(A)}\Rightarrow$P(A)＝P(B) A , B兩事件不一定獨立。 (C) ×：P(A∩B)＝P(A)×$\frac{P(A\cap
+    B)}{P(A)}$＝P(A)P(B | A) A , B兩事件不一定獨立。 (D) ○：若P(A∩B)＝P(A)P(B)，則A , B兩事件必獨立。 (E)
+    ○：若P(B | A)＝P(B)，則A , B兩事件獨立。 故選(D)(E)。
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 下列關於機率的敘述，何者正確？
+  options:
+  - label: A
+    content: 某日<u>阿澤</u>練習投籃，他總共投了50球，投進40球，可用$\frac{4}{5}$作為其命中率
+  - label: B
+    content: 承(1)，該機率為古典機率
+  - label: C
+    content: 承(1)，<u>阿澤</u>接下來再投10球，他一定會命中8球
+  - label: D
+    content: <u>小吳</u>對自己投籃很有自信，認為他的投籃命中率一定比<u>阿澤</u>高，其命中率可能是120％
+  - label: E
+    content: <u>老陳</u>覺得自己的投籃能力比<u>阿澤</u>差，其命中率只有$\frac{2}{5}$，此為主觀機率
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○。 (B) ×：該機率為客觀機率。 (C) ×：不一定。 (D) ×：命中率不能超過1。 (E) ○。 故選(A)(E)。
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 擲一均勻的硬幣5次，請問下列哪些正確？
+  options:
+  - label: A
+    content: 5次均正面的機率為$\frac{1}{32}$
+  - label: B
+    content: 恰3次正面的機率為$\frac{3}{5}$
+  - label: C
+    content: 5次中，依序為正面、正面、正面、反面、反面的機率為$\frac{C_{3}^{5}}{2^{5}}$
+  - label: D
+    content: 第5次剛好出現第3次正面的機率為$\frac{C_{2}^{4}}{2^{5}}$
+  - label: E
+    content: 若已知前4次均為正面，則第5次為反面的機率大於$\frac{1}{2}$
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○：5次的正面的機率＝($\frac{1}{2}$)$^{5}$＝$\frac{1}{32}$。 (B) ×：恰3次正面的機率＝$C_{3}^{5}(\frac{1}{2})^{3}(\frac{1}{2})^{2}=\frac{10}{32}=\frac{5}{16}$。
+    (C) ×：機率為$(\frac{1}{2})^{3}(\frac{1}{2})^{2}=\frac{1}{32}$。 (D) ○：機率為$C_{2}^{4}(\frac{1}{2})^{2}(\frac{1}{2})^{2}(\frac{1}{2})=\frac{C_{2}^{4}}{2^{5}}$。
+    (E) ×：機率為$\frac{(\frac{1}{2})^{4}\times \frac{1}{2}}{(\frac{1}{2})^{4}}=\frac{1}{2}$。
+    故選(A)(D)。
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 已知二年18班共有35人，第四次期中考英文及格有15人、數學及格有12人，兩科都及格有7人。若從班上任選一學生，試問： (1)此學生至少有一科及格的機率；
+    (2)已知此學生英文及格，求他數學也及格的機率； (3)已知此學生數學不及格，求他英文也不及格的機率。
+  answer:
+  - (1) $\frac{4}{7}$；(2) $\frac{7}{15}$；(3) $\frac{15}{23}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 在一箱24顆燈炮中，已知有5顆不良品，現逐一取出檢查，取出後不再放回。設每顆燈泡被取到的機率都相等，求： (1)第三顆取到不良品的機率； (2)若已知前三顆都取到良品，求第5顆也取到良品的機率。
+  answer:
+  - (1) $\frac{5}{24}$；(2) $\frac{16}{21}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) 所求機率＝$\frac{5}{24}$。 (2) 所求機率＝$\frac{\frac{19}{24}\times \frac{18}{23}\times
+    \frac{17}{22}\times \frac{16}{21}\times \frac{15}{20}+\frac{19}{24}\times \frac{18}{23}\times
+    \frac{17}{22}\times \frac{5}{21}\times \frac{16}{20}}{\frac{19}{24}\times \frac{18}{23}\times
+    \frac{17}{22}}=\frac{16}{21}\times \frac{15}{20}+\frac{5}{21}\times \frac{16}{20}=\frac{320}{420}=\frac{16}{21}$。
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設甲、乙兩人能解出數學問題的機率分別為0.2與0.3。已知兩人各自解同一題數學問題，且兩人解出與否為獨立事件，求： (1)恰一人解出的機率； (2)若已知恰一人解出，求是甲解出的機率。
+  answer:
+  - (1) $\frac{19}{50}$；(2) $\frac{7}{19}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設A , B分別表示解出數學問題的事件 (1) 所求機率＝P(A∩B')＋P(A'∩B)＝P(A)P(B')＋P(A')P(B)＝0.2×0.7＋0.8×0.3＝0.38＝$\frac{38}{100}=\frac{19}{50}$。
+    (2) 所求機率＝$\frac{0.2\times 0.7}{\frac{19}{50}}=\frac{\frac{7}{50}}{\frac{19}{50}}=\frac{7}{19}$。
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: '設A、B為樣本空間S中的兩事件，已知P(A)＝$\frac{3}{4}$、P(A∪B)＝$\frac{4}{5}$，求下列各條件中P(B)的值：
+
+    (1) A、B為互斥事件；
+
+    (2) A、B為獨立事件；
+
+    (3) P(A | B)＝$\frac{1}{4}$'
+  explanation: (1) A∩B＝$\emptyset \Rightarrow$P(A∩B)＝0 P(A∪B)＝P(A)＋P(B)－P(A∩B) $\Rightarrow
+    \frac{4}{5}=\frac{3}{4}$＋P(B)－0，故P(B)＝$\frac{4}{5}-\frac{3}{4}=\frac{1}{20}$。
+    (2) P(A∩B)＝P(A)P(B) P(A∪B)＝P(A)＋P(B)－P(A∩B)＝P(A)＋P(B)－P(A)P(B) $\Rightarrow \frac{4}{5}=\frac{3}{4}$＋P(B)－$\frac{3}{4}$P(B)
+    $\Rightarrow \frac{1}{4}$P(B)＝$\frac{1}{20}$，故P(B)＝$\frac{1}{5}$。 (3) P(A | B)＝$\frac{1}{4}\Rightarrow
+    \frac{P(A\cap B)}{P(B)}=\frac{1}{4}\Rightarrow$P(A∩B)＝$\frac{1}{4}$P(B) P(A∪B)＝P(A)＋P(B)－P(A∩B)＝P(A)＋P(B)－$\frac{1}{4}$P(B)
+    $\Rightarrow \frac{4}{5}=\frac{1}{4}$＋P(B)－$\frac{1}{4}$P(B) $\Rightarrow \frac{3}{4}$P(B)＝$\frac{1}{20}$，故P(B)＝$\frac{1}{15}$。
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 已知某飛彈每枚擊中目標的機率為75％，且每枚飛彈擊中目標與否為獨立事件。 (1)若同時發射3枚飛彈，求擊中目標（即至少中1枚）的機率； (2)若已知擊中目標，求3枚均擊中的機率；
+    (3)請問至少要同時發射多少枚飛彈，才能使擊中目標的機率不低於99.99％？
+  answer:
+  - (1) $\frac{63}{64}$；(2) $\frac{3}{7}$；(3) 7
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) 所求機率＝1－P(三枚皆不中)＝1－($\frac{1}{4}$)$^{3}$＝$\frac{63}{64}$。 (2) 所求機率＝$\frac{\frac{3}{4}\times
+    \frac{3}{4}\times \frac{3}{4}}{\frac{63}{64}}=\frac{27}{63}=\frac{3}{7}$。 (3)
+    設同時發射n枚飛彈， 依題意知1－$\left[ (1-\frac{3}{4})^{n} \right]$ ≥ 99.99％ $\Rightarrow (\frac{1}{4})^{n}$
+    ≤ 0.0001$\Rightarrow (\frac{1}{4})^{n}$ ≤ $\frac{1}{10000}$ 當n＝6時，$(\frac{1}{4})^{6}=(\frac{1}{2})^{12}=\frac{1}{4096}$＞$\frac{1}{10000}$
+    當n＝7時，$(\frac{1}{4})^{7}=(\frac{1}{2})^{14}=\frac{1}{16384}$＜$\frac{1}{10000}$
+    故至少要同時發射7枚飛彈。
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 甲、乙兩選手參加羽球單打比賽（不得和局），約定先勝3局者可得獎金7500元。設甲單局獲勝的機率為$\frac{2}{5}$，且每局的比賽結果互不影響。已知當比賽進行至甲勝兩局時，因故中止且不再比賽，則依若繼續比賽兩人贏得比賽的機率之比例來分配，求甲應分得多少獎金。
+  answer:
+  - '5880'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 電視台闖三關遊戲規則如下：答對每題獎金為1000元，並可繼續回答下一題，直到答錯或三題皆答完為止。若<u>小玉</u>答題的正確率為60％，且每題答對與否互不影響，求<u>小玉</u>獲得獎金的期望值。
+  answer:
+  - '1176'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 期望值＝1000×$\frac{3}{5}$×$\frac{2}{5}$＋2000×$\frac{3}{5}$×$\frac{3}{5}$×$\frac{2}{5}$＋3000×$\frac{3}{5}$×$\frac{3}{5}$×$\frac{3}{5}$
+    ＝240＋288＋648＝1176 (元)。
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 甲袋有3個黑球、2個白球；乙袋有4個黑球、2個白球；丙袋有3個黑球、1個白球。今擲一顆公正的骰子，若擲出1、2、3點，則從甲袋取2球；若擲出4、5點，則從乙袋取2球；若擲出6點，則從丙袋取2球。已知每球被取到的機率均相同，
+    (1)若從甲袋取2球，求2球均為黑球的機率； (2)在取出2球均為黑球的條件下，求此2球來自甲袋的機率。
+  answer:
+  - (1) $\frac{3}{10}$；(2) $\frac{9}{22}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 某肝炎檢驗技術，依分析報告指出：患肝炎的人經過檢驗後，有98％的機率被驗出有肝炎；沒患肝炎的人經過同樣的檢驗後，有3％的機率被驗出有肝炎。設一群人中有x％的人患有肝炎。已知從此群人中任選一人並加以檢驗，若此被驗出有肝炎但他未患有肝炎的機率為$\frac{1}{15}$，求x之值。
+  answer:
+  - '30'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_新北_新店_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 根據統計：某地區有5％的人罹患某肺炎，且患者經篩檢後呈現陽性機率為99％；未患此病的人經篩檢後呈現陰性的機率為99.6％。若計劃針對此區共10000人進行普篩，則：
+    (1)依據以上資料，完成底下的列聯表；（每格0.5分，共4分） (2)若從此地區任選一人，已知檢驗結果呈陽性，但此人實際上無病之機率；（2分） (3)若從此地區任選一人，求此人的檢驗結果呈陰性但實際上有病之機率。（2分）
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_111_新北_新店_數學_數B_g11s2e2/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 54.9
+      - 277.45
+      - 233.8
+      - 352.75

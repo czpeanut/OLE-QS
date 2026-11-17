@@ -1,0 +1,244 @@
+document:
+  id: doc_111_桃園_武陵_數學_數甲_g12s1e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 2
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 111學年度第1學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 111學年度第1學期第2次定期評量
+  source_file: 高三/數學/111/1-2/桃園/武陵_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題：（每題10分，答錯1選項得6分，錯2選項得2分，錯3選項以上得0分）
+    count: 2
+  - ord: 2
+    name: 二、填充題：（64分）
+    count: 10
+  - ord: 3
+    name: 三、計算作圖題：（共16分，需列計算過程，否則不計分）
+    count: 1
+questions:
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設f (x) 是實係數多項式函數，若a＜c＜d＜b，則下列哪些選項是正確的？
+  options:
+  - label: A
+    content: 若f (x) 在區間［a , b］上嚴格遞增，則f ' (c)＞0
+  - label: B
+    content: 若f ' (c)＝0，則f (x) 在x＝c處有極值
+  - label: C
+    content: 若f (x) 在x＝c處有極大值，則f ' (c)＝0
+  - label: D
+    content: 若f '' (c)＝0，則 ( c , f (c)) 是f (x) 圖形的反曲點
+  - label: E
+    content: 若f (x) 在x＝c處有極大值，在x＝d處有極小值，則f (c) ≥ f (d)
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ×：例f (x)＝$x^{3}\Rightarrow$ f ' (x)＝$3x^{2}$，但 f ' (0)＝0。 (B) ×：例f (x)＝$x^{3}\Rightarrow$ f ' (x)＝$3x^{2}$，f '' (x)＝6x $\Rightarrow$ f ' (0)＝0，( 0 , 0 ) 為反曲點 f (x)在x＝0處沒有極值。 (C) ○： (D) ×：例f (x)＝$x^{4}\Rightarrow$ f ' (x)＝$4x^{3}$，但 f ' (x)＝$12x^{2}$ $\Rightarrow$ f '' (0)＝0，( 0 , 0 ) 不是反曲點。 (E) ×：不能確定。 故選(C)。
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 已知三次實係數多項式函數f (x)＝$ax^{3}$＋$bx^{2}$＋cx＋d之導函數f ' (x) 的圖形如附圖， 試選出正確的選項。
+  options:
+  - label: A
+    content: a＜0
+  - label: B
+    content: f ($-\sqrt{2}$)＜f (0)
+  - label: C
+    content: b＞0
+  - label: D
+    content: f (－5)＋f (8)＞2 f (2)
+  - label: E
+    content: y＝f (x) 的圖形沒有反曲點
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_數甲_g12s1e2/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 496.75
+      - 184.2
+      - 663.9
+      - 329.8
+  - key: s1_2_f2
+    kind: figure
+    file: doc_111_桃園_武陵_數學_數甲_g12s1e2/s1_2_f2.png
+    crop:
+      page: 1
+      rect:
+      - 39.6
+      - 318.35
+      - 342.4
+      - 369.85
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 試求過拋物線$ℑ$：y＝$x^{2}$－4x＋1外一點P ( 4 ,－3 ) 的切線方程式＿＿＿＿。
+  group_stem: 第1～10題為題組
+  answer:
+  - y＝－3，y＝8x－35
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 已知函數f (x)＝$\frac{(x-5)(x+2)^{3}(x+4)^{2}}{3(2x-1)^{2}(12-x)^{3}}$，則f ' (5)＝＿＿＿＿。
+  group_stem: 第1～10題為題組
+  answer:
+  - $\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $f '(5)=\lim_{x\rightarrow 5} \frac{f(x)-f(5)}{x-5}=\lim_{x\rightarrow 5} \frac{(x+2)^{3}(x+4)^{2}}{3(2x-1)^{2}(12-x)^{3}}=\frac{7^{3} \cdot 9^{2}}{3 \cdot 9^{2} \cdot 7^{3}}=\frac{1}{3}$。
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設f (x)＝($x^{3}$－$2x^{2}$－7)$^{2}$，試求$\lim_{h\rightarrow 0} \frac{f(3-h)-f(3)}{h}$＝＿＿＿＿。
+  group_stem: 第1～10題為題組
+  answer:
+  - －60
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\lim_{h\rightarrow 0} \frac{f(3-h)-f(3)}{h}=\lim_{h\rightarrow 0} 〔-\frac{f(3-h)-f(3)}{(3-h)-3}〕$ ＝－f ' (3)＝－2($x^{3}$－$2x^{2}$－7)($3x^{2}$－4x) | $_{x＝3}$ ＝－2．2．15＝－60。
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 已知直線y＝7x－7與曲線y＝$x^{3}$＋$\frac{3}{2}x^{2}$＋x＋k有三個相異交點則實數k的範圍為＿＿＿＿。
+  group_stem: 第1～10題為題組
+  answer:
+  - －17＜k＜$-\frac{7}{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 設函數f (x)＝$ax^{3}$＋(3a＋2 )$x^{2}$＋12ax＋8是嚴格遞減函數，則實數a的範圍為＿＿＿＿。
+  group_stem: 第1～10題為題組
+  answer:
+  - a ≤ $-\frac{2}{9}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 設函數f (x)滿足f ($\sqrt{2}$)＝1 , f ' ($\sqrt{2}$)＝2 , f (2)＝－1 , f ' (2)＝－3，求$\lim_{x\rightarrow \sqrt{2}} \frac{x^{2}f(2)-2f(x^{2})}{x-\sqrt{2}}$＝＿＿＿＿。
+  group_stem: 第1～10題為題組
+  answer:
+  - $10\sqrt{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 設實係數多項式函數f (x)＝$ax^{4}$＋$bx^{3}$＋$cx^{2}$＋dx＋e，若$\lim_{x\rightarrow \infty} \frac{f(x)}{(x^{2}-1)(3x+1)}$＝1，$\lim_{x\rightarrow 1} \frac{f(x)}{x-1}$＝2且$\lim_{x\rightarrow 0} \frac{f(x)}{x}$存在， 則f (2)＝＿＿＿＿。
+  group_stem: 第1～10題為題組
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 實係數多項式函數Γ：y＝$ax^{3}$＋$bx^{2}$＋cx＋d的圖形與直線L切於 A ( 0 , 2 )，且另交於點B ( 3 ,－7 )，又C ( 2 , 7 )$\in$Γ＜如圖＞， 求a＋＋b＋c＋d＝＿＿＿＿。
+  group_stem: 第1～10題為題組
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_數甲_g12s1e2/s2_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 422.15
+      - 582.7
+      - 594.3
+      - 716.2
+  answer:
+  - $\frac{9}{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 1
+  stem: 多項式f (x)＝($x^{3}$－$2x^{2}$－1)$^{20}$除以(x－2)$^{2}$的餘式為＿＿＿＿。
+  group_stem: 第1～10題為題組
+  answer:
+  - －80x＋161
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 1
+  stem: 假設有一邊長為12公分之正三角形硬紙板，如下圖，若要從其三個角各截去一個大小相同的鳶形，以便摺成一無蓋的直三角柱形紙盒，當紙盒容積最大時，其紙盒高度為＿＿＿＿公分。
+  group_stem: 第1～10題為題組
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_數甲_g12s1e2/s2_10_f1.png
+    crop:
+      page: 1
+      rect:
+      - 55.0
+      - 735.7
+      - 162.2
+      - 828.7
+  answer:
+  - $\frac{2\sqrt{3}}{3}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 1
+  stem: 已知y＝f (x)＝$3x^{4}$－$8x^{3}$＋2為定義在閉區間$\left[ -1 , \frac{8}{3} \right]$上的函數，則： (1) 試求f (x) 所有的極大值與極小值。 (2) 試求f (x) 所有的反曲點坐標。 (3) 請在答案卷的方格紙＜x軸與y軸刻度非1：1＞上描繪y＝f (x) 的函數圖形並在圖上標示所有極值點與反曲點的坐標。 (4) 比較A＝f ($\frac{\pi}{3}$)＋f ($\frac{\pi}{6}$) 與B＝2f ($\frac{\pi}{4}$) 之大小關係並簡易說明理由。
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_數甲_g12s1e2/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 63.9
+      - 71.1
+      - 272.6
+      - 292.05

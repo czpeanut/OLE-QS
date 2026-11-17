@@ -1,0 +1,528 @@
+document:
+  id: doc_111_台中_興大附中_數學_g10s1e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 3
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 111學年度第1學期第3次定期評量 高一數學科試題
+  exam_name: 111學年度第1學期第3次定期評量
+  source_file: 高一/數學/111/1-3/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 8 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 32 分）
+    count: 4
+  - ord: 3
+    name: 三、填充題（每格 4 分，共 60 分）
+    count: 11
+questions:
+- id: doc_111_台中_興大附中_數學_g10s1e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 坐標平面上，拋物線 y＝$20x^{2}$－24x＋7 上一點 P，其 x 坐標為 log 5。下列哪個選項是正確的？
+  options:
+  - label: A
+    content: 點 P 在第一象限
+  - label: B
+    content: 點 P 在第二象限
+  - label: C
+    content: 點 P 在第三象限
+  - label: D
+    content: 點 P 在第四象限
+  - label: E
+    content: 點 P 在 x 軸上
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝$20x^{2}$－24x＋7＝（2x－1）（10x－7）
+
+    ∵5＝$\frac{10}{2}$＝$\frac{10}{10^{\log 2}}$＝$10^{1-\log 2}$≈$10^{1-0.3010}$＝$10^{0.6990}$
+
+    ∴log 5 ≈ log $10^{0.6990}$＝0.6990
+
+    則 2 log 5－1＞0，10 log 5－7＜0
+
+    ⇒（2 log5－1）（10 log5－7）＜0
+
+    得點 P 在第四象限，故選(D)'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: Bao 及 Derek 輪流在坐標平面上畫圖，當 Bao 在某些範圍將圖形畫在 x 軸下方時，則 Derek 在這些範圍必不能將圖形畫在 x 軸下方。此時，Bao 畫的圖形為 y＝$x^{2}$－x－6，Derek 畫的圖形為 y＝－$x^{2}$－kx＋10，試問有多少個整數 k 能滿足上述的限制？
+  options:
+  - label: A
+    content: 0 個
+  - label: B
+    content: 1 個
+  - label: C
+    content: 2 個
+  - label: D
+    content: 3 個
+  - label: E
+    content: 4 個
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝$x^{2}$－x－6＝（x－3）（x＋2）
+
+    可知 Bao 將圖形畫在 x 軸下方的範圍為－2＜x＜3
+
+    ∵y＝－$x^{2}$－kx＋10 開口向下
+
+    又由題意可知在 x＝－2 和 x＝3 之值需為正或 0
+
+    ∴$\begin{cases}-4+2k+10\geq 0 \\ -9-3k+10\geq 0\end{cases}$⇒$\begin{cases}k\geq -3 \\ k\leq \frac{1}{3}\end{cases}$
+
+    ⇒－3 ≤ k ≤$\frac{1}{3}$
+
+    共有－3，－2，－1，0 四個整數
+
+    故選(E)'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設二次函數 f（x）＝$ax^{2}$＋bx＋c 的圖形如右圖，則下列哪些選項的值必為正數？
+  options:
+  - label: A
+    content: b
+  - label: B
+    content: a＋b＋c
+  - label: C
+    content: 4a＋b
+  - label: D
+    content: $b^{2}$－4ac
+  - label: E
+    content: 2a＋b
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_111_台中_興大附中_數學_g10s1e3/s2_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 446.45
+      - 492.6
+      - 564.3
+      - 583.4
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵開口向上 ∴a＞0
+
+    又函數 f（x）的圖形過$\left( -\frac{1}{2} , 0 \right)$，$\left( \frac{5}{2} , 0 \right)$兩點
+
+    ⇒ f（x）＝$a\left( x+\frac{1}{2} \right) \left( x-\frac{5}{2} \right)$＝$ax^{2}$－2ax－$\frac{5}{4}a$
+
+    ⇒ b＝－2a，c＝－$\frac{5}{4}a$
+
+    (A) ╳：b＝－2a＜0
+
+    (B) ╳：a＋b＋c＝$-\frac{9}{4}a$＜0
+
+    (C) ○：4a＋b＝2a＞0
+
+    (D) ○：$b^{2}$－4ac＝（－2a）$^{2}$－4a$\left( -\frac{5}{4}a \right)$＝$9a^{2}$＞0
+
+    (E) ╳：2a＋b＝0
+
+    故選(C)(D)'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 已知一次函數 f（x）＝mx＋m，二次函數 g（x）＝－$x^{2}$－2x－2、h（x）＝$x^{2}$－2x＋1，若函數圖形 f（x）恆在 g（x）的上方且 f（x）恆在 h（x）的下方，則下列哪些選項中的 m 滿足以上條件？
+  options:
+  - label: A
+    content: m＝1
+  - label: B
+    content: m＝－2
+  - label: C
+    content: m＝$-\sqrt{2}$
+  - label: D
+    content: m＝－π
+  - label: E
+    content: m＝log$\frac{1}{7}$
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可知
+
+    $\begin{cases}mx+m >-x^{2}-2x-2 \\ mx+m <x^{2}-2x+1\end{cases}$，其中 x 為任意實數
+
+    ⇒$\begin{cases}x^{2}+(m+2)x+(m+2)> 0 \\ x^{2}+(-2-m)x+(1-m)> 0\end{cases}$
+
+    ∵$x^{2}$ 項係數 1＞0 且恆正
+
+    故判別式$\begin{cases}(m+2)^{2}-4 \cdot 1 \cdot (m+2)< 0 \\ (-2-m)^{2}-4 \cdot 1 \cdot (1-m)< 0\end{cases}$⇒$\begin{cases}m^{2}<4 \\ m^{2}+8m<0\end{cases}$⇒$\begin{cases}-2<m<2 \\ -8<m<0\end{cases}$
+
+    所求範圍為－2＜m＜0
+
+    又$\frac{1}{7}=7^{-1}=(10^{\log 7})^{-1}\approx (10^{0.8451})^{-1}=10^{-0.8451}$
+
+    ∴$\log \frac{1}{7}\approx \log 10^{-0.8451}=-0.8451$，僅選項(C)、(E)滿足
+
+    故選(C)(E)'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 已知 y＝f（x）為二次實係數多項式函數且 f（x）＝0 沒有實數解，則下列哪些選項的敘述正確？
+  options:
+  - label: A
+    content: f(0)＞0
+  - label: B
+    content: f(1)f（－1）＞0
+  - label: C
+    content: 不等式 f（x）＞0 的解為任意實數
+  - label: D
+    content: 不等式 f（x）．（x＋2）（x－3）＜0 的解為－2＜x＜3
+  - label: E
+    content: 不等式〔f（x）〕$^{2}$．（x＋2）（x－3）＜0 的解為－2＜x＜3
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可知，y＝f（x）為恆正或恆負
+
+    (A) ╳：不一定，y＝f（x）可能恆負
+
+    (B) ○：恆正或恆負皆滿足
+
+    (C) ╳：不一定，若恆負，則 f（x）＞0 無解
+
+    (D) ╳：不一定，若恆負，則
+
+    f（x）．（x＋2）（x－3）＜0
+
+    ⇒（x＋2）（x－3）＞0
+
+    ⇒ x＜－2 或 x＞3
+
+    (E) ○：∵［f（x）］$^{2}$ 必為恆正
+
+    ∴［f（x）］$^{2}$．（x＋2）（x－3）＜0
+
+    ⇒（x＋2）（x－3）＜0
+
+    ⇒－2＜x＜3
+
+    故選(B)(E)'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 設 f（x）是領導（首項）係數為正的三次多項式，f（x）除以（x－1）$^{3}$ 的餘式為 2x＋3，則下列哪些選項的敘述正確？
+  options:
+  - label: A
+    content: y＝f（x）的廣域（大域）特徵為函數 y＝g（x），此函數為一個遞增函數
+  - label: B
+    content: y＝f（x）圖形的對稱中心為（1，3）
+  - label: C
+    content: f（5－$\sqrt{3}$）＋f（－3＋$\sqrt{3}$）＝5
+  - label: D
+    content: 方程式 f（x）＝0 可能有三個相異實數解
+  - label: E
+    content: y＝f（x）與直線 3x－y＋2＝0 恰有三個相異交點
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可設 f（x）＝a（x－1）$^{3}$＋2x＋3＝a（x－1）$^{3}$＋2（x－1）＋5，其中 a＞0
+
+    (A) ○：y＝f（x）的廣域（大域）特徵即為 y＝$ax^{3}$
+
+    ∵a＞0 ∴y＝g（x）為遞增函數
+
+    (B) ╳：對稱中心應為（1，5）
+
+    (C) ╳：∵$\frac{(5-\sqrt{3})+(-3+\sqrt{3})}{2}$＝1 恰為對稱中心之 x 坐標
+
+    ∴$\frac{f(5-\sqrt{3})+f(-3+\sqrt{3})}{2}$即為對稱中心之 y 坐標 5
+
+    ⇒$f(5-\sqrt{3})+f(-3+\sqrt{3})$＝10
+
+    (D) ╳：∵f（x）＝a（x－1）$^{3}$＋2（x－1）＋5，其中 a＞0 且 2＞0
+
+    ∴f（x）＝0 僅有一個實數解
+
+    (E) ○：3x－y＋2＝0$\Leftrightarrow$y＝L（x）＝3x＋2
+
+    當 f（x）＝L（x）時，即
+
+    a（x－1）$^{3}$＋2x＋3＝3x＋2
+
+    ⇒ a（x－1）$^{3}$－x＋1＝0
+
+    ⇒ a（x－1）$^{3}$－（x－1）＝0
+
+    ⇒（x－1）〔a（x－1）$^{2}$－1〕＝0
+
+    ⇒（x－1）$\left[ (x-1)^{2}-\frac{1}{a} \right]$＝0
+
+    ⇒（x－1）$\left[ (x-1)^{2}-\left( \frac{1}{\sqrt{a}} \right) ^{2} \right]$＝0
+
+    ⇒（x－1）$\left( x-1-\frac{1}{\sqrt{a}} \right) \left( x-1+\frac{1}{\sqrt{a}} \right)$＝0
+
+    可知有三個相異實數解
+
+    即 y＝f（x）與直線 3x－y＋2＝0 恰有三個相異交點
+
+    故選(A)(E)'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 由於 Bao 老師在某次考試中下手太重，導致同學們成績普遍考 Bao 了！因此決定將同學們的分數透過一次函數 f（x）＝ax＋b 來做調整。已知原本考 92 分的同學被調整成 100 分；原本考 32 分的同學被調整成 60 分，則考 41 分的同學將會被調整成＿＿＿＿分。
+  answer:
+  - '66'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可知
+
+    $\begin{cases}92a+b=100 \cdots \cdots \cdots \cdots \cdots ① \\ 32a+b=60 \cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    ①－② 得 60a＝40 ⇒ a＝$\frac{2}{3}$，代回 ② 得 b＝$\frac{116}{3}$
+
+    可得一次函數 f（x）＝$\frac{2}{3}x+\frac{116}{3}$
+
+    將 x＝41 代入得 f(41)＝$\frac{2}{3}\times 41+\frac{116}{3}$＝66（分）'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 設某地區的某一段時間的溫度函數為 f（t）＝－$4t^{2}$＋12t＋12，其中 1 ≤ t ≤ 3，則這段期間內該地區的最大溫差為＿＿＿＿。
+  answer:
+  - '9'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（t）＝－$4t^{2}$＋12t＋12＝$-4\left( t^{2}-3t+\frac{9}{4} \right) +12+9$＝$-4\left( t-\frac{3}{2} \right) ^{2}+21$
+
+    當$t=\frac{3}{2}$時，有最大值$f\left( \frac{3}{2} \right)$＝21
+
+    當 t＝3 時，有最小值 f(3)＝12
+
+    故最大溫差為 21－12＝9'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知三次函數 f（x）＝$x^{3}$＋$ax^{2}$＋bx＋4 其對稱中心為（－1，k），二次函數 g（x）＝$ax^{2}$＋bx＋c 其對稱軸方程式為 x＝$-\frac{5}{6}$且過點（1，9），求實數序組（a，b，c，k）＝＿＿＿＿。
+  answer:
+  - （3，5，1，1）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1)三次函數 f（x）的對稱中心為$\left( -\frac{a}{3} , f\left( -\frac{a}{3} \right) \right)$
+
+    ∵對稱中心的 x 坐標為$-\frac{a}{3}$＝－1 ∴a＝3
+
+    (2)∵g（x）頂點的 x 坐標為$\frac{-b}{2a}$＝$-\frac{5}{6}$ ∴b＝5
+
+    (3) f（x）＝$x^{3}$＋$3x^{2}$＋5x＋4
+
+    x＝－1 代入得 k＝f（－1）＝－1＋3－5＋4＝1
+
+    (4)∵g（x）＝$3x^{2}$＋5x＋c 過點（1，9）
+
+    ∴9＝3＋5＋c ⇒ c＝1
+
+    故序組（a，b，c，k）＝（3，5，1，1）'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知三次函數 y＝f（x）＝$2x^{3}$＋$12x^{2}$＋9x＋5。若函數 g（x）＝$ax^{3}$＋px 的圖形經平移之後與 y＝f（x）的圖形重合，則實數 p 的值為＿＿＿＿。
+  answer:
+  - －15
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（x）＝$2x^{3}$＋$12x^{2}$＋9x＋5
+
+    ＝2（$x^{3}$＋$6x^{2}$＋12x＋8）＋9x＋5－24x－16
+
+    ＝2（x＋2）$^{3}$－15x－11
+
+    ＝2（x＋2）$^{3}$－15（x＋2）－11＋30
+
+    ＝2（x＋2）$^{3}$－15（x＋2）＋19
+
+    取 g（x）＝$2x^{3}$－15x，可經「向左平移 2 單位，向上平移 19 單位」得 f（x）
+
+    故 p＝－15'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 設 f（x）＝$x^{3}$＋$2x^{2}$－3x－1，則$f(\sqrt{3}-2)$＝＿＿＿＿。
+  answer:
+  - －7＋$4\sqrt{3}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 若三次多項式 f（x）滿足 f(1)＝f(2)＝3，f(3)＝13，f(4)＝45，則 f(5)＝＿＿＿＿。
+  answer:
+  - '111'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f(1)＝f(2)＝3 且 f（x）為三次多項式
+
+    ∴可令 f（x）＝（x－1）（x－2）（ax＋b）＋3
+
+    $\begin{cases}f(3)=13=2\times 1\times (3a+b)+3 \\ f(4)=45=3\times 2\times (4a+b)+3\end{cases}$
+
+    ⇒$\begin{cases}3a+b=5 \\ 4a+b=7\end{cases}$⇒$\begin{cases}a=2 \\ b=-1\end{cases}$
+
+    ∴f（x）＝（x－1）（x－2）（2x－1）＋3
+
+    故 f(5)＝4×3×9＋3＝111'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: '已知多項式 f（x）除以 x－1 的商式為 g（x），餘式為 3；
+
+    g（x）除以 x－2 的商式為 h（x），餘式為 2；
+
+    h（x）除以 x－3 的商式為 p（x），餘式為 1，
+
+    若 xf（x）除以（x－1）（x－2）（x－3）的餘式為 $ax^{2}$－bx＋c，則實數 a＝＿＿＿＿、 b＝＿＿＿＿、c＝＿＿＿＿。'
+  answer:
+  - 5；8；6
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 若多項式 $ax^{2}$＋（2b－a）x－2b 除以 $x^{2}$＋（2－a）x＋（a－2）得餘式為－4，則實數數對 （a，b）＝＿＿＿＿。
+  answer:
+  - （4，－2）
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: '若 f（x）＝（x－1）$^{6}$＋（x－1）$^{5}$＋（x－1）$^{4}$＋（x－1）$^{3}$＋（x－1）$^{2}$＋（x－1）＋1
+
+    ＝$a_{6}$（x－2）$^{6}$＋$a_{5}$（x－2）$^{5}$＋$a_{4}$（x－2）$^{4}$＋$a_{3}$（x－2）$^{3}$＋$a_{2}$（x－2）$^{2}$＋$a_{1}$（x－2）＋$a_{0}$，
+
+    則 $a_{2}$＋$a_{4}$＋$a_{6}$＝＿＿＿＿。'
+  answer:
+  - '57'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'x＝3 代入 f（x）得
+
+    $2^{6}$＋$2^{5}$＋$2^{4}$＋$2^{3}$＋$2^{2}$＋2＋1＝$a_{6}$＋$a_{5}$＋$a_{4}$＋$a_{3}$＋$a_{2}$＋$a_{1}$＋$a_{0}$
+
+    ⇒ $a_{0}$＋$a_{1}$＋$a_{2}$＋$a_{3}$＋$a_{4}$＋$a_{5}$＋$a_{6}$＝64＋32＋16＋8＋4＋2＋1＝127 …………①
+
+    x＝1 代入 f（x）得
+
+    0＋0＋0＋0＋0＋0＋1＝$a_{6}$－$a_{5}$＋$a_{4}$－$a_{3}$＋$a_{2}$－$a_{1}$＋$a_{0}$
+
+    ⇒ $a_{0}$－$a_{1}$＋$a_{2}$－$a_{3}$＋$a_{4}$－$a_{5}$＋$a_{6}$＝1 ……………………………………………②
+
+    x＝2 代入 f（x）得
+
+    1＋1＋1＋1＋1＋1＋1＝$a_{0}$ ⇒ $a_{0}$＝7
+
+    由 ①＋② 得 2（7＋$a_{2}$＋$a_{4}$＋$a_{6}$）＝128
+
+    ⇒ $a_{2}$＋$a_{4}$＋$a_{6}$＝57'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 已知 f（x）＝$x^{2}$＋ax＋b 是有理係數的二次多項式，其函數圖形如右圖。圖形與 x 軸正向交於 A、B 兩點，與 y 軸正向交於 C 點，原點為 O（0，0），且$\overline{OA}$：$\overline{OB}$：$\overline{OC}$＝2：14：7，則實數 a＝＿＿＿＿，b＝＿＿＿＿。
+  assets:
+  - key: s3_10_f1
+    kind: figure
+    file: doc_111_台中_興大附中_數學_g10s1e3/s3_10_f1.png
+    crop:
+      page: 3
+      rect:
+      - 478.1
+      - 88.85
+      - 562.65
+      - 194.2
+  answer:
+  - －4；$\frac{7}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令$\overline{OA}$＝2t，t＞0，則 A（2t，0），B（14t，0），C（0，7t）
+
+    可令 f（x）＝（x－2t）（x－14t）
+
+    ∵y＝f（x）過 C（0，7t）
+
+    ∴7t＝（0－2t）（0－14t）＝$28t^{2}$ ⇒ 7t（4t－1）＝0
+
+    ∵t＞0
+
+    ∴4t＝1 ⇒ t＝$\frac{1}{4}$
+
+    故 f（x）＝$\left( x-\frac{1}{2} \right) \left( x-\frac{7}{2} \right)$＝$x^{2}-4x+\frac{7}{4}$
+
+    ⇒ a＝－4，b＝$\frac{7}{4}$'
+- id: doc_111_台中_興大附中_數學_g10s1e3_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 3
+  stem: '某數學老師在演練多項式除法的時候，發現算出來的答案與正確答案不符，但老師非常肯定自己是沒有任何計算錯誤，後來同學們發現老師是漏寫及抄錯，被除式 f（x）的部分老師漏寫了四次項 $x^{4}$，除式的部分老師把 $x^{2}$＋x＋2 寫成 $x^{3}$＋$x^{2}$＋2x，以致於得到的餘式為 $3x^{2}$＋5x－5。經同學告知後，老師立刻重新計算，並且算出正確的餘式為＿＿＿＿。
+
+    12.2022 年首部突破全球十億美金票房的電影「捍衛戰士－獨行俠」，是時隔 36 年所推出的系列續集。其故事內容在描述美國海軍捍衛小組（TOP GUN）的訓練以及任務執行，而在電影最後進行攻擊任務執行之前，被召集回來的學員都要接受大量的相關極限訓練。其中有一段飛行在峽谷後段需將 F-18 戰機急拉飛越山壁，而將會面臨到俗稱的棺材角（Coffin corner），是極度危險的飛行動作。根據數據資料的模擬，右圖為此段飛行的某部分（從 A 點飛至 B 點），其剛好符合三次函數圖形的一部分。根據分析官所給出的資料顯示，A 點至 B 點的過程會垂直上升高度 20 單位（$\overline{PB}$長度），而此軌跡的中點 C 恰為三次函數圖形的對稱中心，在 C 點附近的圖形近似斜率為$\frac{1}{2}$的直線，在初始計算點 A 附近的圖形近似於斜率為$\frac{1}{4}$的直線。根據以上資訊，此段軌跡的水平飛行過程 （$\overline{AP}$長度）至少為＿＿＿＿單位。'
+  assets:
+  - key: s3_11_f1
+    kind: figure
+    file: doc_111_台中_興大附中_數學_g10s1e3/s3_11_f1.png
+    crop:
+      page: 3
+      rect:
+      - 418.95
+      - 289.2
+      - 563.45
+      - 384.6
+  answer:
+  - 5x－9
+  answer_status: verified
+  answer_source: answer_key

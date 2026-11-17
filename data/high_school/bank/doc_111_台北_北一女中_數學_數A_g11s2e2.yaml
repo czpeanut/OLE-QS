@@ -1,0 +1,316 @@
+document:
+  id: doc_111_台北_北一女中_數學_數A_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 2
+  city: 台北
+  school_short: 北一女中
+  school: 臺北市立第一女子高級中學
+  title: 臺北市立第一女子高級中學 111學年度第2學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 111學年度第2學期第2次定期評量
+  source_file: 高二/數學/111/2-2/台北/北一女中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 7 分，共 21 分；錯一個選項得 4 分，錯兩個選項得 1 分，錯三個選項以上或未作答者不給分）
+    count: 3
+  - ord: 2
+    name: 二、填充題（每題 6 分，共 66 分）
+    count: 11
+  - ord: 3
+    name: 三、混合題（共 13 分）
+    count: 1
+questions:
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列各選項中，請選出空間中的兩圖形為平行的。
+  options:
+  - label: A
+    content: $L_{1}$：$\frac{x-1}{1}$＝$\frac{y-6}{6}$＝$\frac{z-8}{8}$；$L_{2}$：$\frac{x-1}{1}$＝$\frac{y-6}{6}$＝$\frac{z+8}{8}$
+  - label: B
+    content: $L_{3}$：$\frac{x-1}{1}$＝$\frac{y-2}{2}$＝$\frac{z-3}{3}$；$L_{4}$：$\begin{cases}\frac{x-1}{1}=\frac{y+2}{2} \\ \frac{y+2}{2}=\frac{z-3}{3}\end{cases}$
+  - label: C
+    content: $L_{5}$：$\begin{cases}x=1+5t \\ y=0-4t \\ z=1+3t\end{cases}$，t ∈ R；$L_{6}$：$\begin{cases}x=1-5s \\ y=1+4s \\ z=1-3s\end{cases}$，s ∈ R
+  - label: D
+    content: $L_{7}$：x＝y＝z；$E_{1}$：5x－2y－3z＝7
+  - label: E
+    content: $E_{2}$：3x＋4y＋5z＝6；$E_{3}$：6x＋8y＋10z＝6
+  answer:
+  - A
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：兩直線方向向量平行，且 $L_{1}$ 上點（1，6，8）代入 $L_{2}$ 不合
+
+    所以 $L_{1}$//$L_{2}$
+
+    (B) ○：$L_{4}$：$\begin{cases}\frac{x-1}{1}=\frac{y+2}{2} \\ \frac{y+2}{2}=\frac{z-3}{3}\end{cases}$⇒$\frac{x-1}{1}=\frac{y+2}{2}=\frac{z-3}{3}$
+
+    兩直線方向向量平行，且 $L_{3}$ 上點（1，2，3）代入 $L_{4}$ 不合
+
+    所以 $L_{3}$//$L_{4}$
+
+    (C) ○：兩直線方向向量平行，且 $L_{5}$ 上點（1，0，1）代入 $L_{6}$：$\begin{cases}1=1-5s \\ 0=1+4s \\ 1=1-3s\end{cases}$不合
+
+    所以 $L_{5}$//$L_{6}$
+
+    (D) ○：直線 $L_{7}$ 方向向量$\vec{v_{7}}$＝（1，1，1），平面 $E_{1}$ 法向量$\vec{n_{1}}$＝（5，－2，－3）
+
+    ⇒$\vec{v_{7}}$．$\vec{n_{1}}$＝5－2－3＝0
+
+    又 $L_{7}$ 上點（0，0，0）代入平面 $E_{1}$ 不合
+
+    所以 $L_{7}$//$E_{1}$
+
+    (E) ○：兩平面法向量平行，且 $E_{2}$ 上點（2，0，0）代入 $E_{3}$ 不合
+
+    所以 $E_{2}$//$E_{3}$
+
+    故選(A)(B)(C)(D)(E)'
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 直線 L：$\frac{x-2}{2}$＝$\frac{y-1}{1}$＝$\frac{z-4}{4}$，請從下列選項中選出其圖形與直線 L 相同者。
+  options:
+  - label: A
+    content: $L_{1}$：$\frac{x}{2}=\frac{y}{1}=\frac{z}{4}$
+  - label: B
+    content: $L_{2}$：$\frac{x-2}{2}=\frac{1-y}{-1}=\frac{4-z}{-4}$
+  - label: C
+    content: $L_{3}$：$\begin{cases}\frac{x}{2}=\frac{y}{1} \\ \frac{y}{1}=\frac{z}{4}\end{cases}$
+  - label: D
+    content: $L_{4}$：$\begin{cases}x-3y+2=0 \\ 2x-z=0\end{cases}$
+  - label: E
+    content: $L_{5}$：$\begin{cases}x=-2t \\ y=-t \\ z=-4t\end{cases}$，t ∈ R
+  answer:
+  - A
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'L 之方向向量$\vec{v}$＝（2，1，4），L 上點 P（2，1，4）
+
+    (A) ○：$\vec{v_{1}}$＝（2，1，4）//$\vec{v}$，且點 P 代入 $L_{1}$ 合
+
+    (B) ○：$L_{2}$ 可表示為$\frac{x-2}{2}=\frac{y-1}{1}=\frac{z-4}{4}$，同 L
+
+    (C) ○：$L_{3}$ 可表示為$\frac{x}{2}=\frac{y}{1}=\frac{z}{4}$，同 $L_{1}$
+
+    (D) ╳：點 P 代入 x－3y＋2＝0 不合，得 $L_{4}$≠L
+
+    (E) ○：$\vec{v_{5}}$＝（－2，－1，－4）//$\vec{v}$，且點 P 代入 $L_{5}$ 得$\begin{cases}2=-2t \\ 1=-t \\ 4=-4t\end{cases}$⇒ t＝－1，合
+
+    故選(A)(B)(C)(E)'
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 空間坐標中，點 A（1，3，－2）是平面 E 上距離原點 O（0，0，0）最近的點，請選出下列正確的敘述。
+  options:
+  - label: A
+    content: 向量$\vec{n}$＝（1，3，－2）是平面 E 的法向量
+  - label: B
+    content: 點 A 也是平面 E 上距離點（2，6，－4）最近的點
+  - label: C
+    content: 平面 E 的方程式為 x＋3y－2z－14＝0
+  - label: D
+    content: 點（8，4，3）在平面 E 上
+  - label: E
+    content: 通過原點 O 與點（5，3，8）的直線和平面 E 相交
+  answer:
+  - A
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：依題意，$\overline{OA}$⊥E，得$\vec{OA}$＝（1，3，－2）//E 之法向量$\vec{n}$
+
+    (B) ○：令 B（2，6，－4）
+
+    ⇒$\vec{AB}$＝（1，3，－2）//$\vec{n}$⇒$\overline{AB}$⊥E
+
+    故點 A 也是平面 E 上距離點（2，6，－4）最近的點
+
+    (C) ○：令 E：x＋3y－2z＋k＝0
+
+    點 A（1，3，－2）代入得 E：x＋3y－2z－14＝0
+
+    (D) ○：（8，4，3）代入 x＋3y－2z－14＝0，合
+
+    (E)○：令 C（5，3，8）⇒$\vec{OC}$＝（5，3，8）
+
+    又$\vec{OC}$．$\vec{OA}$＝5＋9－16＝－2≠0，表$\overset{\leftarrow \rightarrow}{OC}$不平行 Ｅ，必相交
+
+    故選(A)(B)(C)(D)(E)'
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 已知 A（1，2，0），B（1，0，3），C（0，2，3），則平面 ABC 的方程式為＿＿＿＿。
+  answer:
+  - 6x＋3y＋2z＝12
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\vec{AB}$＝（0，－2，3），$\vec{AC}$＝（－1，0，3）
+
+    ∴平面 ABC 的法向量$\vec{n}$//$\vec{AB}$×$\vec{AC}$＝（－6，－3，－2）
+
+    取$\vec{n}$＝（6，3，2），又平面 ABC 通過點 A（1，2，0）
+
+    故平面 ABC 的方程式為 6x＋3y＋2z＝12'
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 點 A（1，1，2），點 B（－1，－1，－2），$\overset{\leftarrow \rightarrow}{AB}$與平面 E：2x＋y＋4z－1＝0 交於點 P，則$\overline{PA}$：$\overline{PB}$＝＿＿＿＿。
+  answer:
+  - 5：6
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 點 A（1，2，3），點 B（3，2，1），在平面 E：x＋y＋z－3＝0 上有一點 P 使得$\overline{PA}$＋$\overline{PB}$有最小值 m，則 m＝＿＿＿＿。
+  answer:
+  - $2\sqrt{5}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 直線 L 過點（5，4，3）且與直線 M：$\begin{cases}x+2y+3z=0 \\ 3x+2y+z=0\end{cases}$平行，若直線 L 的（對稱）比例式為 $\frac{x-c}{a}=\frac{y}{-2}=\frac{z-d}{b}$，則序組（a，b，c，d）＝＿＿＿＿。
+  answer:
+  - （1，1，7，5）
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 不共面兩直線 $L_{1}$：$\frac{x-2}{1}=\frac{y}{-1}=\frac{z-3}{1}$與 $L_{2}$：$\frac{x}{2}=\frac{y-4}{1}=\frac{z-7}{-1}$的距離為＿＿＿＿。
+  answer:
+  - $4\sqrt{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 直線 L：$\frac{x+2}{2}=\frac{y}{-1}=\frac{z-2}{-1}$，平面 E：x＋y＋z＝0。直線 L 為平面 E 與另一平面 F 的交線。M 是平面 E 上異於 L 的直線且 M 在平面 F 的正射影為 L，則平面 F 的方程式為＿＿＿＿。
+  answer:
+  - y－z＝－2
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 某校高一新生健康檢查的結果，體重超重者占 25 ％，患有心臟疾病者占 15 ％，兩者都有的占 5 ％。若已知 A 生體重超重，則他有心臟疾病的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{5}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 有一個過三關的遊戲，每位參賽者要依序過三關，過關者才能繼續參加下一關挑戰，每一關被淘汰的機率皆為$\frac{4}{5}$，且每一關通關與否互不影響。若已知<u>明妤</u>被淘汰，則她是在最後一關被淘汰的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{31}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: '某校桌球社團參加人員依性別與年級分，人數統計表如下：隨機從社團中抽樣，設 A，B 分別表抽到男生與抽到二年級學生的事件，若事件 A，B 為獨立事件，則數對（x，y）
+
+    ＝＿＿＿＿。
+
+    | 年級 性別 | 一年級 | 二年級 |
+
+    | --- | --- | --- |
+
+    | 男 | 30 | x |
+
+    | 女 | 20 | y |
+
+    | 合計 | 50 | 40 |'
+  answer:
+  - （24，16）
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 今有 2 顆黑球、2 顆白球、3 顆紅球共 7 顆大小相同的球排成一列。設事件 A 為 2 顆黑球相鄰的事件，而事件 B 為任 2 顆紅球都不相鄰的事件。則 P（B ∣ A'）＝＿＿＿＿。（A'：A 的餘事件）
+  answer:
+  - $\frac{8}{25}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 已知某地區有 40 ％的人口感染某傳染病。針對該傳染病的快篩試劑檢驗，有陽性或陰性兩結果。已知該試劑將染病者判為陽性的機率為 90 ％，將未染病者判為陰性的機率則為 80 ％。為降低該試劑將染病者誤判為陰性的情況，專家建議連續採檢三次且每次採檢互不影響。若單次採檢判為陰性者中，染病者的機率為 $p_{1}$；而連續採檢三次皆判為陰性者中，染病者的機率為 $p_{2}$。則$\frac{p_{1}}{p_{2}}$＝＿＿＿＿。（四捨五入至整數位）
+  answer:
+  - '59'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_數A_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: multiple
+  page: 3
+  stem: '一個標有 1 至 12 號格子的 12 格戳戳樂遊戲，每回遊戲以投擲一枚均勻銅板四次來決定要戳哪些格子。規則如下：
+
+    (一)第一次投擲銅板，若是正面，則戳 1 號格子；若是反面，則戳 3 號格子。
+
+    (二)第二、三、四次投擲銅板，若是正面，則所戳格子的號碼為前一次所戳格子的號碼加 1；若是反面，則所戳格子的號碼為前一次所戳格子的號碼加 3，依此類推。
+
+    例如：投擲銅板四次的結果依序為「正、反、反、正」，則會戳編號分別為 1、4、7、8 號的四個格子。假設 $p_{m}$ 代表在每回遊戲中 m 號格子被戳到的機率。
+
+    (1) 試選出正確的選項。（多選題，8 分）
+
+    (2) 在 6 號格子被戳到的條件下，5 號格子也被戳到的機率為＿＿＿＿。（填充題，5 分）'
+  options:
+  - label: A
+    content: $p_{2}$＝$\frac{1}{4}$
+  - label: B
+    content: $p_{3}$＝$\frac{5}{8}$
+  - label: C
+    content: $p_{4}$＝$\frac{1}{2}p_{1}+\frac{1}{2}p_{3}$
+  - label: D
+    content: $p_{6}$＝$\frac{1}{2}$
+  - label: E
+    content: $p_{8}$＞$p_{10}$

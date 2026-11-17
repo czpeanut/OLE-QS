@@ -1,0 +1,638 @@
+document:
+  id: doc_110_台中_興大附中_數學_g10s2e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 110學年度第2學期第1次定期評量 高一數學科試題
+  exam_name: 110學年度第2學期第1次定期評量
+  source_file: 高一/數學/110/2-1/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 25 分）
+    count: 5
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 40 分）
+    count: 5
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 35 分）
+    count: 6
+questions:
+- id: doc_110_台中_興大附中_數學_g10s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 等差數列〈$a_{n}$〉中共有 15 個項，此數列所有項的算術平均數為 6，現從中刪去兩個項，使剩下的 13 個項之算術平均數亦為 6，已知刪去者之其中一項為
+    $a_{9}$，則刪去之另一項為原數列〈$a_{n}$〉的第 k 項，求 k 值為何？
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: '4'
+  - label: C
+    content: '5'
+  - label: D
+    content: '6'
+  - label: E
+    content: '7'
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_g10s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '一數列〈$a_{n}$〉滿足$\begin{cases}a_{1}=\frac{1}{2} \\ a_{n+1}=\frac{4a_{n}-1}{9a_{n}-2}
+    , n 為自然數\end{cases}$，試求：
+
+    (1) $a_{2}$＝＿＿＿＿，$a_{3}$＝＿＿＿＿，$a_{4}$＝＿＿＿＿。
+
+    (2) 請推測 $a_{n}$＝＿＿＿＿，並證明你的推測是對的。
+
+    <u>小華</u>在練習這個題目的時候，分成下列幾個步驟：
+
+    步驟 1：$a_{2}=\frac{4\times \frac{1}{2}-1}{9\times \frac{1}{2}-2}=\frac{1}{\frac{5}{2}}=\frac{2}{5}$，
+
+    步驟 2：$a_{3}=\frac{4\times \frac{2}{5}-1}{9\times \frac{2}{5}-2}=\frac{\frac{3}{5}}{\frac{8}{5}}=\frac{3}{8}$，
+
+    步驟 3：$a_{4}=\frac{4\times \frac{3}{8}-1}{9\times \frac{3}{8}-2}=\frac{\frac{4}{8}}{\frac{11}{8}}=\frac{4}{11}$，
+
+    由步驟 1、2、3 推測$a_{n}=\frac{n}{3n-1}$，n 為自然數，
+
+    步驟 4：當 n＝1 時，$a_{1}=\frac{1}{2}$，原式成立， 設 n＝k 時，原式成立，即$a_{k}=\frac{k}{3k-1}$，k
+    為自然數，
+
+    步驟 5：當 n＝k＋1 時，$a_{k+1}=\frac{k+1}{3 (k+1)-1}=\frac{k+1}{3k+2}$，原式成立，
+
+    故由數學歸納法得證$a_{n}=\frac{n}{3n-1}$，n 為自然數。
+
+    請你幫<u>小華</u>檢查一下，他是否有做錯，並選出他錯在哪一個步驟？'
+  options:
+  - label: A
+    content: 步驟 1
+  - label: B
+    content: 步驟 3
+  - label: C
+    content: 步驟 4
+  - label: D
+    content: 步驟 5
+  - label: E
+    content: 全部答對
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '步驟 5：當 n＝k＋1 時 $a_{k＋1}$＝$\frac{4a_{k}-1}{9a_{k}-2}$＝$\frac{4\left(
+    \frac{k}{3k-1} \right) -1}{9\left( \frac{k}{3k-1} \right) -2}$＝$\frac{4k-(3k-1)}{9k-2
+    (3k-1)}$＝$\frac{k+1}{3k+2}$＝$\frac{(k+1)}{3 (k+1)-1}$亦成立
+
+    故選(D)'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 2
+  stem: '<u>錢</u>老闆急需用錢，打算向銀行借 10 萬元並在三個月後還清，他向銀行詢問利息的算法，銀行提出四個方案如下：
+
+    甲：月利率為 2 ％，每個月複利一次
+
+    乙：月利率為 2 ％，每半個月複利一次
+
+    丙：第一個月利率為 1 ％，第二個月為 2 ％，第三個月為 3 ％，每個月複利計息
+
+    丁：第一個月利率為 3 ％，第二個月為 2 ％，第三個月為 1 ％，每個月複利計息
+
+    這四個方案以哪一個方案對<u>錢</u>老闆<u>最不利</u>（即所還的本利和為最多）？'
+  options:
+  - label: A
+    content: 甲方案
+  - label: B
+    content: 乙方案
+  - label: C
+    content: 丙方案
+  - label: D
+    content: 丁方案
+  - label: E
+    content: 四個方案的本利和都一樣
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '甲：100000（1＋2 ％）$^{3}$＝100000×$1.02^{3}$
+
+    乙：100000（1＋1 ％）$^{6}$＝100000×$1.01^{6}$＝100000×（$1.01^{2}$）$^{3}$＝100000×$1.0201^{3}$
+
+    丙：100000（1＋1 ％）（1＋2 ％）（1＋3 ％）＝100000×1.01×1.02×1.03
+
+    丁：100000（1＋3 ％）（1＋2 ％）（1＋1 ％）＝100000×1.03×1.02×1.01
+
+    ∵1.03×1.01＜$1.02^{2}$
+
+    ∴乙＞甲＞丙＝丁，故選(B)'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 2
+  stem: '從班上抽選 5 位學生，調查期末考國文與英文成績如右表，已知該班國文成績最高分者為 100 分，請利用英文對國文的迴歸直線試推估其英文成績約幾分？
+
+    | 國文 | 62 | 78 | 87 | 85 | 88 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 英文 | 75 | 80 | 83 | 86 | 81 |'
+  options:
+  - label: A
+    content: 92 分
+  - label: B
+    content: 90 分
+  - label: C
+    content: 88 分
+  - label: D
+    content: 86 分
+  - label: E
+    content: 84 分
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設國文為 x，英文為 y
+
+    μ$_{x}$＝$\frac{62+78+87+85+88}{5}=80$，μ$_{y}$＝$\frac{75+80+83+86+81}{5}=81$
+
+    62.75 78.80 87.83 85.86 88.81
+
+    迴歸直線的斜率為$\frac{(-18) (-6) + (-2) (-1) + (7) (2) + (5) (5) + (8) (0)}{(-18)^{2}+(-2)^{2}+(7)^{2}+(5)^{2}+(8)^{2}}$＝$\frac{149}{466}$
+
+    ∴迴歸直線為 y－81＝$\frac{149}{466}$（x－80）
+
+    x＝100 代入得 y＝$\frac{149}{466}$（100－80）＋81＝87.39……
+
+    故選(C)'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 2
+  stem: 已知以下各選項資料的迴歸直線（最適直線）皆相同且皆為負相關，請選出相關係數最小的選項。
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: s1_5_optA
+      file: doc_110_台中_興大附中_數學_g10s2e1/s1_5_optA.png
+      crop:
+        page: 2
+        rect:
+        - 153.6
+        - 492.65
+        - 277.7
+        - 537.85
+  - label: B
+    content: ''
+    asset:
+      key: s1_5_optB
+      file: doc_110_台中_興大附中_數學_g10s2e1/s1_5_optB.png
+      crop:
+        page: 2
+        rect:
+        - 376.2
+        - 492.65
+        - 500.3
+        - 537.85
+  - label: C
+    content: ''
+    asset:
+      key: s1_5_optC
+      file: doc_110_台中_興大附中_數學_g10s2e1/s1_5_optC.png
+      crop:
+        page: 2
+        rect:
+        - 375.6
+        - 453.45
+        - 499.7
+        - 498.55
+  - label: D
+    content: ''
+    asset:
+      key: s1_5_optD
+      file: doc_110_台中_興大附中_數學_g10s2e1/s1_5_optD.png
+      crop:
+        page: 2
+        rect:
+        - 154.2
+        - 453.45
+        - 278.3
+        - 498.55
+  - label: E
+    content: ''
+    asset:
+      key: s1_5_optE
+      file: doc_110_台中_興大附中_數學_g10s2e1/s1_5_optE.png
+      crop:
+        page: 2
+        rect:
+        - 152.9
+        - 531.95
+        - 277.0
+        - 577.05
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) $r_{A}$＝$\frac{\left( 2-\frac{10}{3} \right) (1-5) +\left( 3-\frac{10}{3}
+    \right) (13-5) +\left( 5-\frac{10}{3} \right) (1-5)}{3\times \sigma _{x}\times
+    \sqrt{\frac{1}{3} (1^{2}+13^{2}+1^{2})-5^{2}}}=\frac{-4}{3\times \sigma _{x}\times
+    \sqrt{\frac{96}{3}}}$
+
+    (B) $r_{B}$＝$\frac{\left( 2-\frac{10}{3} \right) (3-5) +\left( 3-\frac{10}{3}
+    \right) (10-5) +\left( 5-\frac{10}{3} \right) (2-5)}{3\times \sigma _{x}\times
+    \sqrt{\frac{1}{3} (3^{2}+10^{2}+2^{2})-5^{2}}}=\frac{-4}{3\times \sigma _{x}\times
+    \sqrt{\frac{38}{3}}}$
+
+    (C) $r_{C}$＝$\frac{\left( 2-\frac{10}{3} \right) (7-5) +\left( 3-\frac{10}{3}
+    \right) (4-5) +\left( 5-\frac{10}{3} \right) (4-5)}{3\times \sigma _{x}\times
+    \sqrt{\frac{1}{3} (7^{2}+4^{2}+4^{2})-5^{2}}}=\frac{-4}{3\times \sigma _{x}\times
+    \sqrt{\frac{6}{3}}}$
+
+    (D) $r_{D}$＝$\frac{\left( 2-\frac{10}{3} \right) (5-5) +\left( 3-\frac{10}{3}
+    \right) (7-5) +\left( 5-\frac{10}{3} \right) (3-5)}{3\times \sigma _{x}\times
+    \sqrt{\frac{1}{3} (5^{2}+7^{2}+3^{2})-5^{2}}}=\frac{-4}{3\times \sigma _{x}\times
+    \sqrt{\frac{8}{3}}}$
+
+    (E) $r_{E}$＝$\frac{\left( 2-\frac{10}{3} \right) (9-5) +\left( 3-\frac{10}{3}
+    \right) (1-5) +\left( 5-\frac{10}{3} \right) (5-5)}{3\times \sigma _{x}\times
+    \sqrt{\frac{1}{3} (9^{2}+1^{2}+5^{2})-5^{2}}}=\frac{-4}{3\times \sigma _{x}\times
+    \sqrt{\frac{32}{3}}}$
+
+    ∴$r_{C}$＜$r_{D}$＜$r_{E}$＜$r_{B}$＜$r_{A}$，故選(C)'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: '九十一學年度指定科目考試約有 5 萬 4 千名考生報考「數學甲」，考生得分情形 （由低至高）如下表，第一列為得分範圍（均含下限不含上限，90～100
+    則包含下限與上限），第二列為得分在該區間之人數占全體考生之百分比（單位：％）。
+
+    | 0～10 | 10～20 | 20～30 | 30～40 | 40～50 | 50～60 | 60～70 | 70～80 | 80～90 | 90～100
+    |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | 10.45 | 8.18 | 11.85 | 14.96 | 16.0 | 15.28 | 10.81 | 7.06 | 3.84 | 1.57 |
+
+    試問下列有關該次考試考生得分之敘述有哪些是正確的？'
+  options:
+  - label: A
+    content: 全體考生得分之中位數在 40 分（含）與 50 分（不含）之間
+  - label: B
+    content: 全體考生得分（由低至高）之第一四分位數在 20 分（含）與 30 分（不含）之間
+  - label: C
+    content: 全體考生得分（由低至高）之第三四分位數在 50 分（含）與 60 分（不含）之間
+  - label: D
+    content: 不到三成的考生得分少於 30 分
+  - label: E
+    content: 如果將得分$\geq$60 分看成及格，則有四成以上的考生成績及格
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：（10.45＋8.18＋11.85＋14.96）％＜50 ％＜（10.45＋8.18＋11.85＋14.96＋16）％
+
+    ∴中位數在 40 分（含）與 50 分（不含）之間
+
+    (B) ○：（10.45＋8.18）％＜25 ％＜（10.45＋8.18＋11.85）％
+
+    ∴第一四分位數在 20 分（含）與 30 分（不含）之間
+
+    (C) ○：（10.45＋8.18＋11.85＋14.96＋16）％＜75 ％＜（10.45＋8.18＋11.85＋14.96＋16＋15.28）％
+
+    ∴第三四分位數在 50 分（含）與 60 分（不含）之間
+
+    (D) ╳：得分少於 30 分的有（10.45＋8.18＋11.85）％＝30.48 ％＞30 ％
+
+    (E) ╳：得分$\geq$60 分的有（10.81＋7.06＋3.84＋1.57）％＝23.28 ％＜40 ％
+
+    故選(A)(B)(C)'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 3
+  stem: 設各項都是實數的等差數列 $a_{1}$，$a_{2}$，$a_{3}$，……之公差為負實數α，試選出正確的選項。
+  options:
+  - label: A
+    content: 若 $b_{n}$＝－$a_{n}$，則 $b_{1}$＞$b_{2}$＞$b_{3}$＞……
+  - label: B
+    content: 若 $c_{n}$＝$a_{n}^{2}$，則 $c_{1}$＜$c_{2}$＜$c_{3}$＜……
+  - label: C
+    content: 若 $d_{n}$＝$a_{n}$＋$a_{n＋1}$，則 $d_{1}$，$d_{2}$，$d_{3}$，……是公差為 2α的等差數列
+  - label: D
+    content: 若 $e_{n}$＝$a_{n}$＋n，則 $e_{1}$，$e_{2}$，$e_{3}$，……是公差為α＋1 的等差數列
+  - label: E
+    content: 若 $f_{n}$ 為 $a_{1}$，$a_{2}$，……，$a_{n}$ 的算術平均數，則 $f_{1}$，$f_{2}$，$f_{3}$，……是公差為$\frac{\alpha}{2}$的等差數列
+  answer:
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '〈$a_{n}$〉的公差α為負，表示愈來愈小
+
+    (A) ╳：$a_{1}$＞$a_{2}$＞$a_{3}$＞…… ⇒ －$a_{1}$＜－$a_{2}$＜－$a_{3}$＜……，即 $b_{1}$＜$b_{2}$＜$b_{3}$＜……
+
+    (B) ╳：若 $a_{1}$＝3，$a_{2}$＝2，$a_{3}$＝1，…… ⇒ $a_{1}^{2}$＝9，$a_{2}^{2}$＝4，$a_{3}^{2}$＝1，……，即
+    $c_{1}$＞$c_{2}$＞$c_{3}$＞……
+
+    (C) ○：$d_{n＋1}$－$d_{n}$＝（$a_{n＋1}$＋$a_{n＋2}$）－（$a_{n}$＋$a_{n＋1}$）＝$a_{n＋2}$－$a_{n}$＝2α為定值
+
+    (D) ○：$e_{n＋1}$－$e_{n}$＝〔$a_{n＋1}$＋（n＋1）〕－（$a_{n}$＋n）＝α＋1 為定值
+
+    (E) ○：$f_{n＋1}$－$f_{n}$ ＝$\frac{a_{1}+\ldots \ldots +a_{n+1}}{n+1}-\frac{a_{1}+\ldots
+    \ldots +a_{n}}{n}$＝$\frac{a_{1}+a_{n+1}}{2}-\frac{a_{1}+a_{n}}{2}=\frac{1}{2}
+    (a_{n+1}-a_{n})=\frac{\alpha}{2}$為定值
+
+    故選(C)(D)(E)'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 3
+  stem: 已知 x 與 y 為相異的實數，則下列哪些數據的標準差與數據 x，x，y 的標準差相同？
+  options:
+  - label: A
+    content: x，y，y
+  - label: B
+    content: x，x，y，y
+  - label: C
+    content: x，x，x，y，y
+  - label: D
+    content: x，x，x，x，y，y
+  - label: E
+    content: x，x，x，x，x，y，y
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：將 x、x、y 同時乘（－1）得－x、－x，－y
+
+    再同時加上（x＋y）得 y、y、x，故 x、x、y 與 y、y、x 的標準差相同
+
+    (B) ╳
+
+    (C) ╳
+
+    (D) ○：設 x、x、y 的標準差為σ，x、x、x、x、y、y 的平均數與 x、x、y 的平均數相同
+
+    由標準差的定義得
+
+    σ＝$\sqrt{\frac{1}{3} (x^{2}+x^{2}+y^{2})-\mu ^{2}}$，σ$_{D}$＝$\sqrt{\frac{1}{6}
+    (x^{2}+x^{2}+x^{2}+x^{2}+y^{2}+y^{2})-\mu ^{2}}$ ∴σ$_{D}$＝σ
+
+    (E) ╳
+
+    故選(A)(D)'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 3
+  stem: 有一組二維數據（$x_{i}$，$y_{i}$），其中 y 對 x 的迴歸直線方程式為$y =\frac{3}{5}x+12$，且平均數μ$_{x}$＝60，而
+    y 對 x 的相關係數為 $r_{（x，y）}$，今有另一組二維數據（$s_{i}$，$t_{i}$），其中$s_{i}=-\frac{1}{3}x_{i}+15$，$t_{i}=\frac{1}{4}y_{i}+3$，若
+    t 對 s 的迴歸直線為 L：t＝a＋bs，則下列哪些是正確的選項？
+  options:
+  - label: A
+    content: $r_{（x，y）}$＞0
+  - label: B
+    content: t 對 s 的相關係數為$-\frac{1}{12}r_{(x , y)}$
+  - label: C
+    content: L 通過（－5，15）
+  - label: D
+    content: a＞0
+  - label: E
+    content: b＝$\frac{9}{20}$
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：資料大多在斜率為正的直線附近 ∴為正相關，即 $r_{（x，y）}$＞0
+
+    (B) ╳：$r_{（s，t）}$＝－$r_{（x，y）}$
+
+    (C) ○：迴歸直線必過資料中心，μ$_{x}$＝60 代入 y＝$\frac{3}{5}$x＋12 得 y＝$\frac{3}{5}$×60＋12＝48＝μ$_{y}$
+
+    則（μ$_{s}$，μ$_{t}$）＝$\left( -\frac{1}{3}\mu _{x}+15 , \frac{1}{4}\mu _{y}+3 \right)$＝$\left(
+    -\frac{1}{3}\times 60+15 , \frac{1}{4}\times 48+3 \right)$＝（－5，15）
+
+    (D) ○：b＝$r_{（s，t）}$×$\frac{\sigma _{t}}{\sigma _{s}}$＝－$r_{（x，y）}$×$\frac{\left|
+    \frac{1}{4} \right| \sigma _{y}}{\left| -\frac{1}{3} \right| \sigma _{x}}$＝$-\frac{3}{4}
+    \left( r _{(x , y)}\times \frac{\sigma _{y}}{\sigma _{x}} \right)$＝$-\frac{3}{4}\times
+    \frac{3}{5}=-\frac{9}{20}$
+
+    ∴L：t－15＝$-\frac{9}{20} (s+5)$ ⇒ $t =-\frac{9}{20}s+\frac{51}{4}$，得 a＝$\frac{51}{4}$＞0
+
+    (E) ╳：b＝$-\frac{9}{20}$
+
+    故選(A)(C)(D)'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s2_5
+  section: 2
+  number: 5
+  type: multiple
+  page: 3
+  stem: '給定 5 組（x，y）數據如右，設 y 對 x 的迴歸直
+
+    | x | 3 | 1 | 3 | t | 6 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | y | 1 | 2 | 3 | 4 | 5 |
+
+    線方程式為$y =\frac{1}{2}x+1$，請選出正確的選項。'
+  options:
+  - label: A
+    content: t＝3
+  - label: B
+    content: x 與 y 的相關係數為$\frac{1}{2}$
+  - label: C
+    content: x 的標準差大於 y 的標準差
+  - label: D
+    content: 設 x'＝2x＋1，y'＝3y－2，則 y' 對 x' 的迴歸直線方程式的斜率為$\frac{3}{4}$
+  - label: E
+    content: 設 x'＝2x＋1，y'＝3y－2，則 y' 對 x' 的迴歸直線方程式必過（9，7）
+  answer:
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'μ$_{x}$＝$\frac{3+1+3+t+6}{5}=\frac{13+t}{5}$，μ$_{y}$＝$\frac{1+2+3+4+5}{5}$＝3
+
+    由（μ$_{x}$，μ$_{y}$）在直線 y＝$\frac{1}{2}x$＋1 上 ⇒ $3=\frac{1}{2} \left( \frac{13+t}{5}
+    \right) +1$ ⇒ 13＋t＝20 ⇒ t＝7
+
+    (A) ╳：t＝7
+
+    (B) ╳：迴歸直線斜率為$\frac{1}{2}=r\times \frac{\sigma _{y}}{\sigma _{x}}$，因σ$_{x}$≠σ$_{y}$
+    ∴r≠$\frac{1}{2}$
+
+    (C) ○：x：1，3，3，6，7，y：1，2，3，4，5 ∴σ$_{x}$＞σ$_{y}$
+
+    (D) ○：迴歸直線斜率為 r''×$\frac{\sigma _{y}''}{\sigma _{x}''}$＝$r\times \frac{| 3 | \sigma
+    _{y}}{| 2 | \sigma _{x}}$＝$\frac{3}{2} \left( r\times \frac{\sigma _{y}}{\sigma
+    _{x}} \right) =\frac{3}{2}\times \frac{1}{2}=\frac{3}{4}$
+
+    (E) ○：迴歸直線必過資料中心 （μ$_{x}$''，μ$_{y}$''）＝（2μ$_{x}$＋1，3μ$_{y}$－2）＝（2×4＋1，3×3－2）＝（9，7）
+
+    故選(C)(D)(E)'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: '某校想要瞭解全校同學是否知道中央政府五院院長的姓名，出了一份考卷。該卷共有五個單選題，滿分 100 分，每題答對得 20 分答錯得零分，不倒扣。閱
+    卷完畢後，校方公布每題的答對率如右，請問此次 測驗全體受測同學的平均分數是＿＿＿＿分。
+
+    | 題號 | 一 | 二 | 三 | 四 | 五 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 答對率 | 90 ％ | 70 ％ | 40 ％ | 30 ％ | 60 ％ |'
+  answer:
+  - '58'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設全校學生數為 N 人，則
+
+    $\frac{20\times (N\times 90 ％) +20\times (N\times 70 ％) +20\times (N\times 40
+    ％) +20\times (N\times 30 ％) +20\times (N\times 60 ％)}{N}$
+
+    ＝20×90 ％＋20×70 ％＋20×40 ％＋20×30 ％＋20×60 ％＝18＋14＋8＋6＋12＝58
+
+    故此次測驗全體受測同學的平均分數是 58 分'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 4
+  stem: 從 1 到 n 的連續整數平方和為 $1^{2}$＋$2^{2}$＋$3^{2}$＋$4^{2}$＋……＋$n^{2}$＝$\frac{n (n+1)(2n+1)}{6}$，<u>小潔</u>誤記為$\frac{n
+    (n+1)(n+2)}{6}$，結果在使用公式計算 $1^{2}$＋$2^{2}$＋$3^{2}$＋$4^{2}$＋……＋$k^{2}$ 時得到錯誤的答案
+    969，請問 $1^{2}$＋$2^{2}$＋$3^{2}$＋$4^{2}$＋……＋$k^{2}$ 正確的和應為＿＿＿＿。
+  answer:
+  - '1785'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{k (k+1)(k+2)}{6}$＝969 ⇒ k（k＋1）（k＋2）＝6×3×323＝18×17×19 ⇒ k＝17
+
+    ∴$1^{2}$＋$2^{2}$＋$3^{2}$＋$4^{2}$＋……＋$k^{2}$＝$1^{2}$＋$2^{2}$＋……＋$17^{2}$＝$\frac{17\times
+    18\times 35}{6}$＝1785'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 4
+  stem: 設 99 個實數的中位數為 20，若增加一個比這 99 個數都還要大的數之後，中位數變成 23， 若增加一個比這 100 個數都還要大的數，求這 101
+    個實數的中位數為＿＿＿＿。
+  answer:
+  - '26'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 99 個實數由小而大依序為 $a_{1}$，$a_{2}$，……，$a_{99}$，得中位數為 $a_{50}$＝20
+
+    增加一個比這 99 個實數大的為 $a_{100}$，得中位數為$\frac{a_{50}+a_{51}}{2}$＝23 ⇒ $a_{51}$＝26
+
+    故所求的中位數為 $a_{51}$＝26'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 4
+  stem: 數列〈$a_{n}$〉定義如下：$a_{1}=\frac{1}{3}$，$a_{n+1}=\frac{1-a_{n}}{3-4a_{n}}$（n＝1，2，3，……），則
+    $a_{2022}$＝＿＿＿＿。
+  answer:
+  - $\frac{2022}{4045}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{1}=\frac{1}{3}$，$a_{2}=\frac{1-a_{1}}{3-4a_{1}}=\frac{1-\frac{1}{3}}{3-4\times
+    \frac{1}{3}}=\frac{\frac{2}{3}}{\frac{5}{3}}=\frac{2}{5}$，$a_{3}=\frac{1-a_{2}}{3-4a_{2}}=\frac{1-\frac{2}{5}}{3-4\times
+    \frac{2}{5}}=\frac{\frac{3}{5}}{\frac{7}{5}}=\frac{3}{7}$，……
+
+    得 $a_{n}$＝$\frac{n}{2n+1}$ ∴$a_{2022}$＝$\frac{2022}{2\times 2022+1}=\frac{2022}{4045}$'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 4
+  stem: 級數$\frac{3}{1^{2}}+\frac{5}{1^{2}+2^{2}}+\frac{7}{1^{2}+2^{2}+3^{2}}+\ldots
+    \ldots +\frac{101}{1^{2}+2^{2}+3^{2}+\ldots \ldots +50^{2}}$之和為＿＿＿＿。
+  answer:
+  - $\frac{100}{17}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 $a_{k}$＝$\frac{2k+1}{1^{2}+2^{2}+\ldots \ldots +k^{2}}=\frac{2k+1}{\frac{k
+    (k+1)(2k+1)}{6}}=\frac{6}{k (k+1)}=6\left( \frac{1}{k}-\frac{1}{k+1} \right)$
+
+    故$\frac{3}{1^{2}}+\frac{5}{1^{2}+2^{2}}+\frac{7}{1^{2}+2^{2}+3^{2}}+\ldots \ldots
+    +\frac{101}{1^{2}+2^{2}+3^{2}+\ldots \ldots +50^{2}}$
+
+    ＝$a_{1}$＋$a_{2}$＋……＋$a_{50}$＝$6 \left( \frac{1}{1}-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\ldots
+    \ldots +\frac{1}{50}-\frac{1}{51} \right)$＝$6 \left( 1-\frac{1}{51} \right) =\frac{6\times
+    50}{51}=\frac{100}{17}$'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 4
+  stem: 等差數列〈$a_{n}$〉前 25 項的「奇數項之和」比「偶數項之和」多了 150，前 50 項的「偶數項之和」比「奇數項之和」多了 150，則此數列的首項為＿＿＿＿。
+  answer:
+  - '78'
+  answer_status: verified
+  explanation: '$a_{1}$＋$a_{3}$＋……＋$a_{25}$＝$\frac{a_{1}+a_{25}}{2}\times 13$＝$\frac{a_{1}+(a_{1}+24d)}{2}\times
+    13$＝$\frac{2a_{1}+24d}{2}\times 13$＝13（$a_{1}$＋12d）
+
+    $a_{2}$＋$a_{4}$＋……＋$a_{24}$＝$\frac{a_{2}+a_{24}}{2}\times 12$＝$\frac{(a_{1}+d)+(a_{1}+23d)}{2}\times
+    12$＝$\frac{2a_{1}+24d}{2}\times 12$＝12（$a_{1}$＋12d）
+
+    兩式相減得 $a_{1}$＋12d＝150
+
+    $a_{2}$＋$a_{4}$＋……＋$a_{50}$＝$\frac{a_{2}+a_{50}}{2}\times 25$＝$\frac{(a_{1}+d)+(a_{1}+49d)}{2}\times
+    25$＝$\frac{2a_{1}+50d}{2}\times 25$＝25（$a_{1}$＋25d）
+
+    $a_{1}$＋$a_{3}$＋……＋$a_{49}$＝$\frac{a_{1}+a_{49}}{2}\times 25$＝$\frac{a_{1}+(a_{1}+48d)}{2}\times
+    25$＝$\frac{2a_{1}+48d}{2}\times 25$＝25（$a_{1}$＋24d）
+
+    兩式相減得 25d＝150 ⇒ d＝6 ∴$a_{1}$＝78
+
+    故此數列的首項為 78
+
+    〈另解〉
+
+    （$a_{1}$＋$a_{3}$＋……＋$a_{25}$）－（$a_{2}$＋$a_{4}$＋……＋$a_{24}$） ＝$a_{1}$＋（$a_{3}$－$a_{2}$）＋……＋（$a_{25}$－$a_{24}$）＝$a_{1}$＋12d＝150
+
+    （$a_{2}$＋$a_{4}$＋……＋$a_{50}$）－（$a_{1}$＋$a_{3}$＋……＋$a_{49}$） ＝（$a_{2}$－$a_{1}$）＋（$a_{4}$－$a_{3}$）＋……＋（$a_{50}$－$a_{49}$）＝25d＝150
+
+    ∴d＝6，$a_{1}$＝78
+
+    故此數列的首項為 78'
+- id: doc_110_台中_興大附中_數學_g10s2e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 4
+  stem: 9 個數值 1，1，1，1，1，1，1，1，x，其中 x 為正整數，若這 9 個數的標準差比 8 大，則 x 最小為＿＿＿＿。
+  answer:
+  - '27'
+  answer_status: verified

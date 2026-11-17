@@ -1,0 +1,166 @@
+document:
+  id: doc_110_桃園_武陵_數學_g10s1e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 2
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 110學年度第1學期第2次定期評量 高一數學科試題
+  exam_name: 110學年度第1學期第2次定期評量
+  source_file: 高一/數學/110/1-2/桃園/武陵.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、天使填充題（每格 5 分，共 25 分）
+    count: 5
+  - ord: 2
+    name: 二、計算證明題（共 17 分）
+    count: 1
+  - ord: 3
+    name: 三、惡魔填充題（每格 6 分，共 42 分）
+    count: 5
+  - ord: 4
+    name: 四、多重選擇題（每題 8 分，共 16 分。錯一個選項得 5 分，錯兩個選項得 2 分，錯三個以上不給分）
+    count: 2
+  scope_note: 第 2 章全 ＿＿＿年＿＿＿班 座號＿＿＿ 姓名
+questions:
+- id: doc_110_桃園_武陵_數學_g10s1e2_s1_1
+  section: 1
+  number: 1
+  type: fill
+  page: 1
+  stem: 坐標平面上，通過點（1，2）且斜率為 8 的直線方程式為＿＿＿＿。
+  explanation: 所求為 y－2＝8（x－1）⇒ 8x－y－6＝0
+- id: doc_110_桃園_武陵_數學_g10s1e2_s1_2
+  section: 1
+  number: 2
+  type: fill
+  page: 1
+  stem: 坐標平面上，A（1，2）到直線 L：5x－12y＝3 的距離為＿＿＿＿。
+  explanation: 所求為 d（A，L）＝$\frac{\left| 5 - 24 -3 \right|}{\sqrt{5^{2}+ (-12)^{2}}}$＝$\frac{22}{13}$
+- id: doc_110_桃園_武陵_數學_g10s1e2_s1_3
+  section: 1
+  number: 3
+  type: fill
+  page: 1
+  stem: 設 A（1，k）、B（3，0），若已知 A、B 兩點在直線 L：2x－3y＝4 的同側，則 k 的範圍為 ＿＿＿＿。
+  explanation: 'A、B 在 L：2x－3y－4＝0 同側 ⇔（2－3k－4）（6－0－4）＞0
+
+    得 3k＋2＜0 ⇒ k＜$-\frac{2}{3}$'
+- id: doc_110_桃園_武陵_數學_g10s1e2_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: 設 A（1，2）、B（3，－4），求以$\overline{AB}$為直徑的圓方程式為＿＿＿＿。
+  explanation: '$\overline{AB}$＝$\sqrt{2^{2}+ (-6)^{2}}$＝$2\sqrt{10}$⇒半徑＝$\sqrt{10}$
+
+    又圓心為 A、B 中點（2，－1）
+
+    故圓方程式為（x－2）$^{2}$＋（y＋1）$^{2}$＝10'
+- id: doc_110_桃園_武陵_數學_g10s1e2_s1_5
+  section: 1
+  number: 5
+  type: fill
+  page: 1
+  stem: 已知 P（2，4）在圓 C：$x^{2}$＋$y^{2}$＝20 上，求以 P 點為切點的切線方程式為＿＿＿＿。
+  explanation: '圓 C 的圓心為 O（0，0）⇒$m_{\overline{OP}}$＝$\frac{4 - 0}{2 - 0}$＝2
+
+    得切線斜率為$-\frac{1}{2}$
+
+    故所求切線方程式為 y－4＝$-\frac{1}{2}(x - 2)$⇒ x＋2y－10＝0'
+- id: doc_110_桃園_武陵_數學_g10s1e2_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 1
+  stem: '■在平面幾何中，任意給定一個三角形，它的重心（三中線交點）、外心（三邊中垂線交點）與垂心（三邊高或高的延長線交點）都會落在同一條直線上，這條直線就稱為此三角形的「尤拉線」。現在我們給定一個三角形，讓同學來驗證此事。
+
+    設 A（－4，1）、B（4，5）、C（5，－2）為坐標平面上三點，試回答下列問題：
+
+    (1)求△ABC 的重心坐標。（2 分）
+
+    (2)求△ABC 的外心坐標。（6 分）
+
+    (3)求△ABC 的垂心坐標。（6 分）
+
+    (4)證明此△ABC 的重心、外心及垂心在同一條直線上。（3 分）'
+  explanation: '設 L 之 x 截距為 a，y 截距為 b，其中 a，b＞0 ⇒ L：$\frac{x}{a}+\frac{y}{b}$＝1
+
+    又 L 通過（2，3）得$\frac{2}{a}+\frac{3}{b}$＝1
+
+    由$\frac{1}{2}ab$＝16 ⇒ ab＝32 ⇒ b＝$\frac{32}{a}$
+
+    將 b＝$\frac{32}{a}$代入$\frac{2}{a}+\frac{3}{b}$＝1 ⇒$\frac{2}{a}+\frac{3}{32}a$＝1 ⇒ $3a^{2}$－32a＋64＝0
+
+    ⇒（3a－8）（a－8）＝0 ⇒ a＝$\frac{8}{3}$或 8 ⇒ b＝12 或 4
+
+    故直線 L 的方程式為$\frac{3x}{8}+\frac{y}{12}$＝1 或$\frac{x}{8}+\frac{y}{4}$＝1'
+- id: doc_110_桃園_武陵_數學_g10s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 1
+  stem: 已知 P（3，1），若點 A 在 x 軸上，點 B 在直線 y＝x 上，求△PAB 周長的最小值為＿＿＿＿。
+- id: doc_110_桃園_武陵_數學_g10s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 1
+  stem: 已知一圓 C 和 $L_{1}$：3x－4y－3＝0，$L_{2}$：3x－4y＋7＝0、x 軸均相切，求圓 C 方程式為＿＿＿＿。
+- id: doc_110_桃園_武陵_數學_g10s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 1
+  stem: 設 x、y 滿足（x－2）$^{2}$＋$y^{2}$＝1 且 y ≥ 0，又$\frac{y - 5}{x - 7}$之最大值為 M，最小值為 m，試求數對 （M，m）＝＿＿＿＿。
+- id: doc_110_桃園_武陵_數學_g10s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 1
+  stem: 已知平面上兩圓 $C_{1}$：$x^{2}$＋$y^{2}$＝18，$C_{2}$：（x－7）$^{2}$＋（y－7）$^{2}$＝32，求兩圓上共有＿＿＿＿個點到直線 L：x－y＋4＝0 的距離為$2\sqrt{2}$。
+- id: doc_110_桃園_武陵_數學_g10s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 設直線 L：2x＋3y－27＝0 與圓 C：（x－1）$^{2}$＋（y－4）$^{2}$＝39 交於 A、B 兩點，且過 A、B 分別作此圓的切線。已知此兩切線交於一點 P，則 P 之坐標為＿＿＿＿。
+- id: doc_110_桃園_武陵_數學_g10s1e2_s4_1
+  section: 4
+  number: 1
+  type: multiple
+  page: 2
+  stem: 坐標平面上，給定一圓 C：$x^{2}$＋$y^{2}$－2x－4y－20＝0 及一直線 L：3x＋4y＋4＝0，請選出正確選項。
+  options:
+  - label: A
+    content: 圓 C 的圓心為（1，2），半徑為 25
+  - label: B
+    content: 圓 C 與直線 L 相交於兩點
+  - label: C
+    content: 若點 P 在圓 C 上，點 Q 為 P 對 L 之投影點，則$\overline{PQ}$的最大值為 8，最小值為 2
+  - label: D
+    content: 承(C)，當$\overline{PQ}$有最大值時，P 點坐標為（4，6）
+  - label: E
+    content: 承(C)，當$\overline{PQ}$有最小值時，Q 點坐標為$\left( -\frac{4}{5} , -\frac{2}{5} \right)$
+- id: doc_110_桃園_武陵_數學_g10s1e2_s4_2
+  section: 4
+  number: 2
+  type: multiple
+  page: 2
+  stem: 坐標平面上，設 A（1，1），B（－2，－3），C（13，－4），請選出正確選項。
+  options:
+  - label: A
+    content: 若 D 為△ABC 中，∠A 的內角平分線與$\overline{BC}$的交點，則 D 點坐標為$\left( \frac{39}{18} , \frac{-59}{18} \right)$
+  - label: B
+    content: 承(A)，直線 AD 的斜率為$\frac{11}{3}$
+  - label: C
+    content: 若 $L_{1}$ 為過 A、B 之直線，$L_{2}$ 為過 A、C 之直線，則 $L_{1}$，$L_{2}$ 的兩條角平分線會互相垂直
+  - label: D
+    content: 若△ABC 中，∠A 的外角平分線與直線 BC 交於 E，則直線 AE 的方程式為 y－1＝$\frac{3}{11}( x - 1 )$
+  - label: E
+    content: 承(A)，(D)，$\overline{DE}$＝$\frac{65}{72}\sqrt{226}$

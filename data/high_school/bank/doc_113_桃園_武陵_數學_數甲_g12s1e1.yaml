@@ -1,0 +1,148 @@
+document:
+  id: doc_113_桃園_武陵_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 113學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  source_file: 高三/數學/113/1-1/桃園/武陵_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 第一部分：多重選擇題（每題全對得8分，錯一個選項得5分，錯二個選項得2分，未作答得0分。占24分）
+    count: 2
+  - ord: 2
+    name: 第二部分：選填題（占65分）（如果極限不存在，請填入「不存在」）
+    count: 10
+  - ord: 3
+    name: 第三部分、計算題（占16分）
+    count: 2
+questions:
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列哪些選項的極限值或和<u>不存在</u>？
+  options:
+  - label: A
+    content: $\lim_{n \rightarrow \infty} ( \frac{5}{3} )^{n}( \frac{2}{5} )^{n - 1}$
+  - label: B
+    content: $\lim_{n \rightarrow \infty} \frac{n!}{n^{n}}$
+  - label: C
+    content: $\lim_{x \rightarrow 0} [x^{2}]$（[ ]為高斯符號）
+  - label: D
+    content: $\lim_{x \rightarrow 0} \frac{x^{2} - 2x}{|x|}$
+  - label: E
+    content: $\sum_{n = 1}^{\infty} \frac{1}{\sqrt{n + 1} + \sqrt{n}}$
+  explanation: (A) $\lim_{n \rightarrow \infty} ( \frac{5}{3} )^{n}( \frac{2}{5} )^{n - 1} = \lim_{n\rightarrow \infty} \frac{5^{n}\cdot 2^{n - 1}}{3^{n}\cdot 5^{n - 1}} = \lim_{n\rightarrow \infty} \frac{5}{2}( \frac{2}{3} )^{n} = 0$ (B) ∵$0\leq \frac{n!}{n^{n}}=\frac{1}{n}\cdot \frac{2}{n}\cdot \frac{3}{n}\cdot \cdots \cdot \frac{n - 1}{n}\cdot \frac{n}{n}\leq \frac{1}{n}\cdot 1\cdot 1\cdot \cdots \cdot 1 = \frac{1}{n}$ ∵$\lim_{n\rightarrow \infty} \frac{1}{n} = 0$，由夾擠定理知$\lim_{n \rightarrow \infty} \frac{n!}{n^{n}} = 0$ (C) 當－1＜x＜1時，[ $x^{2}$ ]＝0 ∴$\lim_{x \rightarrow 0} [x^{2}] = 0$ (D) $\lim_{x \rightarrow 0^{+}} \frac{x^{2} - 2x}{|x|} = \lim_{x\rightarrow 0^{+}} \frac{x^{2} - 2x}{x} = \lim_{x\rightarrow 0^{+}} (x - 2) = - 2\lim_{x \rightarrow 0^{-}} \frac{x^{2} - 2x}{|x|} = \lim_{x\rightarrow 0^{-}} \frac{x^{2} - 2x}{- x} = \lim_{x\rightarrow 0^{-}} ( - x + 2) = 2$ ∵$\lim_{x \rightarrow 0^{-}} \frac{x^{2} - 2x}{|x|}\neq \lim_{x\rightarrow 0^{+}} \frac{x^{2} - 2x}{|x|}$ ∴$\lim_{x \rightarrow
+    0} \frac{x^{2} - 2x}{|x|}$不存在 (E) $\sum_{n=1}^{m} \frac{1}{\sqrt{n + 1}+\sqrt{n}} = \sum_{n=1}^{m} \frac{\sqrt{n + 1} - \sqrt{n}}{(\sqrt{n + 1} + \sqrt{n})(\sqrt{n + 1} - \sqrt{n})} = \sum_{n=1}^{m} ( - \sqrt{n} + \sqrt{n + 1})= ( - \sqrt{1} + \sqrt{2}) + (-\sqrt{2} + \sqrt{3}) + ( - \sqrt{3} + \sqrt{4}) + \cdots + ( - \sqrt{m} + \sqrt{m + 1}) = - 1 + \sqrt{m + 1}$ ∴$\sum_{n = 1}^{\infty} \frac{1}{\sqrt{n + 1} + \sqrt{n}} = \lim_{m\rightarrow \infty}\sum_{n = 1}^{m} \frac{1}{\sqrt{n + 1} + \sqrt{n}} = \lim_{m\rightarrow \infty} ( - 1 + \sqrt{m + 1})$不存在 故選(D)(E)。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 已知函數$f(x) = \begin{cases}\frac{x^{2} - a}{x - 3},當x\neq 3時 \\ m ,當x = 3時\end{cases}$，$g(x) = \begin{cases}\frac{- x^{2} + b}{x + 7},當x\neq - 7時 \\ n ,當x = - 7時\end{cases}$，其中a，b，m，n∈R，試問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: 無論a , m為何值，$\lim_{x \rightarrow 3} f(x) = m$
+  - label: B
+    content: 無論b , n為何值，$\lim_{x \rightarrow 5} g(x) = g(5)$
+  - label: C
+    content: 當a＝9，b＝49時，$\lim_{x \rightarrow 2} f(x) + \lim_{x \rightarrow 2} g(x) = 10$
+  - label: D
+    content: 當a＝9，b＝49時$\lim_{x \rightarrow t} f(x) + \lim_{x \rightarrow t} g(x) = 10$，其中t∈R
+  - label: E
+    content: 若a＝9，b＝49且f (x)與g (x)皆為連續函數，則m＋n＝20
+  explanation: (A) 不一定，例如a＝9，m≠6，則$\lim_{x\rightarrow 3} f(x) = \lim_{x\rightarrow 3} \frac{x^{2} - 9}{x - 3} = \lim_{x\rightarrow 3} (x + 3) = 6\neq m$ (B) $\lim_{x\rightarrow 5} g(x) = \lim_{x\rightarrow 5} \frac{- x^{2} + b}{x + 7} = \frac{- 5^{2} +b}{5 + 7} = g(5)$ (C) $\lim_{x\rightarrow 2} f(x) + \lim_{x\rightarrow 2} g(x) = \lim_{x\rightarrow 2} \frac{x^{2} - 9}{x - 3} + \lim_{x\rightarrow 2} \frac{- x^{2} + 49}{x + 7} = \lim_{x\rightarrow 2} (x + 3) + \lim_{x\rightarrow 2} ( - x + 7) = (2 + 3) + ( - 2 + 7) = 10$ (D) $\lim_{x\rightarrow t} f(x) + \lim_{x\rightarrow t} g(x) = \lim_{x\rightarrow t} \frac{x^{2} - 9}{x - 3} + \lim_{x\rightarrow t} \frac{- x^{2} + 49}{x + 7} = \lim_{x\rightarrow t} (x + 3) + \lim_{x\rightarrow t} ( - x + 7) = (t + 3) + ( - t + 7) = 10$ (E) 若f (x)為連續函數，則$m = \lim_{x\rightarrow 3} f(x) = \lim_{x\rightarrow 3} \frac{x^{2} - 9}{x - 3} = \lim_{x\rightarrow 3} (x + 3) = 6$ 若g (x)為連續函數，則$n = \lim_{x\rightarrow - 7} \frac{- x^{2} + 49}{x + 7}=\lim_{x\rightarrow
+    - 7} ( - x + 7) = 14$ ∴ m＋n＝20 故選(B)(C)(D)(E)。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 求極限值$\lim_{n \rightarrow \infty} \frac{( - 1)^{n}}{n}$＝______。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 求極限值$\lim_{x \rightarrow 2} (\frac{x^{2} - 2x}{x^{2} - 5x + 6} + \frac{3x + 1}{x^{2} - 1})$＝______。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 已知數列〈$a_{n}$〉滿足：$a_{1}$＝1，$a_{n＋1}$＝$2a_{n}$－3，n∈N，試求$\lim_{n \rightarrow \infty} a_{n}$＝______。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 如右圖，在半徑為10的圓$C_{1}$內作一個內接正六邊形$A_{1}$，再作此正六邊形$A_{1}$的內切圓$C_{2}$， 在圓$C_{2}$內再作內接正六邊形$A_{2}$，如此繼續做下去。若$S_{n}$為前n個圓$C_{1}$ , $C_{2}$ , $C_{3}$ , ... , $C_{n}$ 的面積之和，則$\lim_{n \rightarrow \infty} S_{n}$＝______。
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_113_桃園_武陵_數學_數甲_g12s1e1/s2_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 552.15
+      - 782.75
+      - 676.8
+      - 892.65
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 若無窮級數x＋x ( 2x－5 )＋x ( 2x－5 )$^{2}$＋…＋x ( 2x－5 )$^{n－1}$＋…收斂，且其和為$\frac{- 5}{16x - 42}$， 則x＝______。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 若實函數g (x)為實函數f (x)＝( x－1 )$^{3}$＋3 ( x－1 )$^{2}$＋3 ( x－1 )的反函數，則g (x)＝_______。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 令$S_{n} = \sum_{k=1}^{n} \sqrt{3k(3k - 1)}$，則$\lim_{n \rightarrow \infty} \frac{S_{n}}{n^{2}}$＝______。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知數列〈$a_{n}$〉＝$\left\langle \frac{3^{n + 1} + 2^{n + 3}}{3^{n - 1}} \right\rangle$收斂至k，若希望| $a_{n}$－k |＜$10^{－8}$，則最小的正整數n＝_____。（log 2 ≈ 0.3010，log 3 ≈ 0.4771）
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 設無窮等比數列〈$a_{n}$〉的公比為r，且$\lim_{n \rightarrow \infty} \frac{a_{1} + a_{2} + a_{3} + \cdots + a_{n}}{7^{n}}$，試求數對( $a_{1}$ , r )＝______。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 一般來說，我們知道$\lim_{n \rightarrow \infty} ( 1 + \frac{1}{n} )^{n} = e$，試求極限值$\lim_{n \rightarrow \infty} ( \frac{2n}{2n + 3} )^{2n}$＝_______。
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 設多項式f (x)＝$x^{3}$＋$ax^{2}$＋16x，a＜0，已知f (x)＝0的解中，有二個相等的實根，試回答下二問題： (1)試求a值。（4分） (2)方程式f (x)＝－$3x^{2}$＋13x－5在哪些相鄰的整數之間有實根？（4分）
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 若a，b為實數且$\lim_{x \rightarrow 0} \frac{a - \cos bx}{x\sin bx} = \frac{1}{4}$，試回答下二問題： (1)試求a值。（4分） (2)試求b值。（4分） （可能用得到的公式：$\lim_{x \rightarrow \infty} \frac{\sin x}{x} = 0$，$\lim_{x \rightarrow \infty} \frac{\cos x}{x^{2}} = 0$，$\lim_{x \rightarrow 0} \frac{\sin x}{x} = 1$，$\lim_{x \rightarrow 0} (x\cos x) = 0$，$\lim_{x \rightarrow 0} \cos x = 1$，sin 2x＝2 sin x cos x， cos 2x＝$cos^{2}$ x－$sin^{2}$ x）

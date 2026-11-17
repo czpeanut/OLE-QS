@@ -1,0 +1,320 @@
+document:
+  id: doc_113_台北_明倫_數學_g10s1e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 台北
+  school_short: 明倫
+  school: 臺北市立明倫高級中學
+  title: 臺北市立明倫高級中學 113學年度第1學期第1次定期評量 高一數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  source_file: 高一/數學/113/1-1/台北/明倫.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 20 分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（每格 5 分，共 80 分）
+    count: 14
+questions:
+- id: doc_113_台北_明倫_數學_g10s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 對某數 N 取一次 log 後，其值為 x，再對此數 x 取一次 log 後，其值為 108，試問 N 是幾位數？
+  options:
+  - label: A
+    content: 108 位
+  - label: B
+    content: 108＋1 位
+  - label: C
+    content: $10^{108}$ 位
+  - label: D
+    content: $10^{108}$＋1 位
+  - label: E
+    content: $10^{10^{108}}$位
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'x＝logN ⇒ N＝$10^{x}$
+
+    又 108＝log x ⇒ x＝$10^{108}$ ⇒ N＝$10^{10^{108}}$⇒ N 的位數為 $10^{108}$＋1
+
+    故選(D)'
+- id: doc_113_台北_明倫_數學_g10s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設 a 為非零之有理數，b 為無理數。請從下列敘述中，選出正確選項：
+  options:
+  - label: A
+    content: $b^{2}$ 為有理數
+  - label: B
+    content: $\frac{a}{b}$為無理數
+  - label: C
+    content: $\frac{2a+b}{3}$為有理數
+  - label: D
+    content: $\frac{\sqrt{2}a+b}{\sqrt{2} +1}$為無理數
+  - label: E
+    content: 若$a+b\sqrt{2}$＝0，則 a＝b＝0
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：反例：b＝$\sqrt{2}$＋1 ⇒ $b^{2}$＝3＋2$\sqrt{2}$不為有理數
+
+    (B) ○：反設$\frac{a}{b}$＝k，其中 k 為有理數⇒ b＝$\frac{a}{k}$為有理數⇒矛盾，故$\frac{a}{b}$為無理數
+
+    (C) ╳：反例：a＝3，b＝$3\sqrt{3}$⇒$\frac{2a+b}{3}$＝2＋$\sqrt{3}$不為有理數
+
+    (D) ╳：反例：a＝2，b＝1－$\sqrt{2}$⇒$\frac{\sqrt{2}a+b}{\sqrt{2} +1}$＝$\frac{2\sqrt{2} +1-\sqrt{2}}{\sqrt{2} +1}$＝1 為有理數
+
+    (E) ╳：反例：a＝－2，b＝$\sqrt{2}$⇒ a＋b$\sqrt{2}$＝－2＋2＝0，但 a≠0，b≠0
+
+    故選(B)'
+- id: doc_113_台北_明倫_數學_g10s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: log0.000000123 的值介於哪兩個整數之間？
+  options:
+  - label: A
+    content: －6 與－5 之間
+  - label: B
+    content: －7 與－6 之間
+  - label: C
+    content: －8 與－7 之間
+  - label: D
+    content: －9 與－8 之間
+  - label: E
+    content: －10 與－9 之間
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵0.000000123＝1.23×$10^{－7}$
+
+    又 $10^{－8}$＜1.23×$10^{－7}$＜$10^{－7}$ ⇒－8＜log（1.23×$10^{－7}$）＜－7
+
+    故選(C)'
+- id: doc_113_台北_明倫_數學_g10s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 已知 k 是整數，且滿足 k＜$2\sqrt{2}$＋$\sqrt{3}$＜k＋1，試求 k 之值為
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: '4'
+  - label: C
+    content: '5'
+  - label: D
+    content: '6'
+  - label: E
+    content: '7'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\sqrt{2}$≈ 1.414，$\sqrt{3}$≈ 1.732
+
+    ⇒ 2$\sqrt{2}$＋$\sqrt{3}$≈ 2×1.414＋1.732＝4.56
+
+    ∴4＜2$\sqrt{2}$＋$\sqrt{3}$＜5 ⇒ k＝4
+
+    故選(B)'
+- id: doc_113_台北_明倫_數學_g10s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 已知$\sqrt{2}$為無理數。若 a，b 均為有理數，且（3＋$\sqrt{2}$）a＋（1－$\sqrt{2}$）b－9＋$\sqrt{2}$＝0，則 a＋b 的值為下列哪一個選項？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: '4'
+  - label: E
+    content: '5'
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（3＋$\sqrt{2}$）a＋（1－$\sqrt{2}$）b－9＋$\sqrt{2}$＝0
+
+    ⇒（3a＋b－9）＋（a－b＋1）$\sqrt{2}$＝0
+
+    ∵a，b 均為有理數 ∴3a＋b－9，a－b＋1 亦為有理數
+
+    ⇒$\begin{cases}3a+b-9=0 \\ a-b+1=0\end{cases}$⇒$\begin{cases}a=2 \\ b=3\end{cases}$⇒ a＋b＝5
+
+    故選(E)'
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 設（$4^{－1}$）$^{－2}$＝$2^{a}$ 且 $4^{－1}$＋$2^{－2}$＝$4^{b}$，則 log$\left( a\left( \frac{1}{b^{2}}+1 \right) ^{2} \right)$值為＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 在數線上，已知 A（x），B（y）為數線上兩點，且 x＜y。點 P(5)在$\overline{AB}$上，點 Q(35)在$\overline{AB}$外，且滿足$\overline{AP}$：$\overline{BP}$＝$\overline{AQ}$：$\overline{BQ}$＝5：3，則 x＋y＝＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 設（1＋$\sqrt{2}$）$^{2}$ 的整數部分為 a，小數部分為 b，則$a+\frac{1}{b}$＝＿＿＿＿。
+  answer:
+  - $\frac{11+\sqrt{2}}{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: $\frac{\left( 1+\frac{9}{3} \right) \times \left( 1+\frac{9}{4} \right) \times \cdots \cdots \times \left( 1+\frac{9}{7} \right)}{\left( 1+\frac{8}{5} \right) \times \left( 1+\frac{8}{6} \right) \times \cdots \cdots \times \left( 1+\frac{8}{9} \right)}$之值，用最簡分數表示得＿＿＿＿。
+  answer:
+  - $\frac{72}{17}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 若 a、b 為有理數，且 a＜b，試比較 A＝$\frac{a+b}{2}$，B＝$\frac{2a+b}{3}$，C＝$\frac{a+2b}{3}$，D＝$\frac{a+3b}{4}$， E＝$\frac{2a+3b}{5}$，求五個數的大小順序為＿＿＿＿。
+  answer:
+  - D＞C＞E＞A＞B
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 設 a＝$\frac{\sqrt{5}}{\sqrt{5} +2}$，b＝$\frac{\sqrt{5}}{\sqrt{5} -2}$，則 $a^{3}$＋$b^{3}$ 的值為＿＿＿＿。
+  answer:
+  - '850'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 試求$(\sqrt{8} )^{-\frac{2}{3}}$×（0.25）$^{－2.5}$×$\sqrt[4]{4}$×$\sqrt[6]{\frac{1}{8}}$的值為＿＿＿＿。
+  answer:
+  - '16'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知不等式$\begin{cases}| x-1 | <a \\ | 2x+3 | \geq b\end{cases}$的解為 2 ≤ x＜3，求數對（a，b）＝＿＿＿＿。
+  answer:
+  - （2，7）
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 不等式 2∣x－1∣＋x＜7 的解為＿＿＿＿。
+  answer:
+  - －5＜x＜3
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 設 a，b 為實數，已知∣2x＋a∣≤ b 的解為－8 ≤ x ≤ 2，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （6，10）
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 芮氏規模為地震大小的標度，芮氏規模每增加 1，釋放的能量約變為 32 倍。已知芮氏規模 7 所釋放的能量是芮氏規模 3 的 $2^{n}$ 倍，則 n 之值為＿＿＿＿。
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: '已知 t＝log7，求下列各數的值：
+
+    (1) $10^{t}$＝＿＿＿＿。
+
+    (2) $100^{t}$＋$10^{－t}$＝＿＿＿＿。'
+  answer:
+  - (1) 7；(2) $\frac{344}{7}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 設$\sqrt{a}$＝41，$\sqrt{b}$＝9，則$\log ((\sqrt{a-b} )\div 4)$的值為＿＿＿＿。
+  answer:
+  - '1'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_g10s1e1_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: 用圍籬沿著筆直的河岸圍一個矩形菜圃，其中靠河岸一邊不圍，只圍「三邊」，如右圖所示。已知圍籬的總長為 40 公尺，求此菜圃的最大面積為＿＿＿＿平方公尺，又此時的長、寬分別為 ＿＿＿＿公尺。
+  assets:
+  - key: s2_14_f1
+    kind: figure
+    file: doc_113_台北_明倫_數學_g10s1e1/s2_14_f1.png
+    crop:
+      page: 2
+      rect:
+      - 422.8
+      - 674.7
+      - 564.3
+      - 800.3
+  answer:
+  - 200；20、10
+  answer_status: verified
+  answer_source: answer_key

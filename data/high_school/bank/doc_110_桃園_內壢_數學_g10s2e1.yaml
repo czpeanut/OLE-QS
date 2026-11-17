@@ -1,0 +1,312 @@
+document:
+  id: doc_110_桃園_內壢_數學_g10s2e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 1
+  city: 桃園
+  school_short: 內壢
+  school: 桃園市立內壢高級中等學校
+  title: 桃園市立內壢高級中等學校 110學年度第2學期第1次定期評量 高一數學科試題
+  exam_name: 110學年度第2學期第1次定期評量
+  source_file: 高一/數學/110/2-1/桃園/內壢.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、填充題：
+    count: 18
+  - ord: 2
+    name: 二、計算證明題：
+    count: 1
+questions:
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_1
+  section: 1
+  number: 1
+  type: fill
+  page: 1
+  stem: 試求級數$\frac{3}{2}$＋$\frac{9}{4}$＋$\frac{25}{8}$＋$\frac{65}{16}$＋$\frac{161}{32}$＋$\frac{385}{64}$＋$\frac{897}{128}$＋$\frac{2049}{256}$＋$\frac{4609}{512}$＋$\frac{10241}{1024}$＝＿＿＿＿。（請化為帶分數）
+  answer:
+  - $55\frac{1023}{1024}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 原式＝(1＋$\frac{1}{2}$)＋(2＋$\frac{1}{4}$)＋(3＋$\frac{1}{8}$)＋…＋(10＋$\frac{1}{1024}$)＝(1＋2＋3＋…＋10)＋($\frac{1}{2}$＋$\frac{1}{4}$＋$\frac{1}{8}$＋…＋$\frac{1}{1024}$) ＝$\frac{10\times 11}{2}$＋$\frac{1}{2}$×$\frac{1-(\frac{1}{2})^{10}}{1-\frac{1}{2}}$＝55＋$\frac{1023}{1024}$＝$55\frac{1023}{1024}$。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_2
+  section: 1
+  number: 2
+  type: fill
+  page: 1
+  stem: 設數列〈$a_{n}$〉滿足遞迴關係式：$\begin{cases}a_{1}=3 \\ a_{n}=a_{n-1}+2^{n-1}-5n+1,n\geq 2\end{cases}$，試求$a_{10}$＝＿＿＿＿。
+  answer:
+  - '764'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_3
+  section: 1
+  number: 3
+  type: fill
+  page: 1
+  stem: 若數列〈$a_{n}$〉的前n項和$S_{n}$＝$n^{2}$－n，則$a_{10}$＝＿＿＿＿。
+  answer:
+  - '18'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $a_{10}$＝$S_{10}$－$S_{9}$＝($10^{2}$－10)－($9^{2}$－9)＝18。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: 擲一公正骰子90次，將其結果紀錄如下表，若此數據的中位數為Me，第30百分位為$P_{30}$，第三四分位數為$Q_{3}$， 試求數對 (Me, $P_{30}$, $Q_{3}$)＝＿＿＿＿。
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_110_桃園_內壢_數學_g10s2e1/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 202.15
+      - 316.8
+      - 249.85
+  answer:
+  - (3,2,5)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設90次的投擲結果由小至大依序為$x_{1}$, $x_{2}$, …, $x_{90}$,
+
+    ( i ) 90×$\frac{1}{2}$＝45 ⇒ Me＝$\frac{x_{45}+x_{46}}{2}$＝$\frac{3+3}{2}$＝3。
+
+    ($^{ }ii^{ }$) 90×$\frac{30}{100}$＝27 ⇒ $P_{30}$＝$\frac{x_{27}+x_{28}}{2}$＝$\frac{2+2}{2}$＝2。
+
+    ( iii ) 90×$\frac{3}{4}$＝67.5 ⇒ $Q_{3}$＝$x_{68}$＝5。
+
+    故 (Me, $P_{30}$, $Q_{3}$)＝(3, 2, 5)。'
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_5
+  section: 1
+  number: 5
+  type: fill
+  page: 1
+  stem: 下表為五位學生學測國文成績 ( X ) 與數學成績 ( Y )，試求兩者之間的相關係數r＝＿＿＿＿。（以小數表示）
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_110_桃園_內壢_數學_g10s2e1/s1_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 278.55
+      - 316.8
+      - 326.25
+  answer:
+  - －0.7
+  answer_status: verified
+  answer_source: answer_key
+  explanation: μ$_{x}$＝$\frac{13+11+10+12+14}{5}$＝12，μ$_{y}$＝$\frac{12+13+14+15+11}{5}$＝13 ⇒ $S_{xx}$＝$1^{2}$＋(－1)$^{2}$＋(－2)$^{2}$＋$0^{2}$＋$2^{2}$＝10，$S_{yy}$＝(－1)$^{2}$＋$0^{2}$＋$1^{2}$＋$2^{2}$＋(－2)$^{2}$＝10， $S_{xy}$＝1×(－1)＋(－1)×0＋(－2)×1＋0×2＋2×(－2)＝－7 故r＝$\frac{S_{xy}}{\sqrt{S_{xx}}\times \sqrt{S_{yy}}}$＝$\frac{-7}{\sqrt{10}\times \sqrt{10}}$＝－0.7。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_6
+  section: 1
+  number: 6
+  type: fill
+  page: 1
+  stem: 等差數列〈$a_{n}$〉滿足$a_{4}$＝8，$a_{11}$＝22，令$S_{n}$表示此數列前n項和，試求$\frac{1}{S_{1}}$＋$\frac{1}{S_{2}}$＋…＋$\frac{1}{S_{35}}$＝＿＿＿＿。
+  answer:
+  - $\frac{35}{36}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設公差為d，可知$\begin{cases}a_{4}=a_{1}+3d=8 \\ a_{11}=a_{1}+10d=22\end{cases}$⇒ $\begin{cases}a_{1}=2 \\ d=2\end{cases}$⇒ $S_{n}$＝$\frac{n \left[ 2\times 2+(n-1)\times 2 \right]}{2}$＝n (n＋1) ⇒$\frac{1}{S_{n}}$＝$\frac{1}{n (n+1)}$＝$\frac{1}{n}$－$\frac{1}{n+1}$，故$\frac{1}{S_{1}}$＋$\frac{1}{S_{2}}$＋…＋$\frac{1}{S_{35}}$＝(1－$\frac{1}{2}$)＋($\frac{1}{2}$－$\frac{1}{3}$)＋…＋($\frac{1}{35}$－$\frac{1}{36}$)＝1－$\frac{1}{36}$＝$\frac{35}{36}$。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_7
+  section: 1
+  number: 7
+  type: fill
+  page: 1
+  stem: 已知兩數據x與y的算術平均分別為μ$_{x}$＝13，μ$_{y}$＝17，標準差分別為σ$_{x}$＝2，σ$_{y}$＝4，兩者的相關係數r＝0.75，且y對x的最適合直線方程式為y＝ax＋b，試求數對 (a, b)＝＿＿＿＿。
+  answer:
+  - (1.5,－2.5)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知a＝$\frac{r\sigma _{y}}{\sigma _{x}}$＝$\frac{0.75\times 4}{2}$＝1.5，又迴歸直線必過點 (μ$_{x}$, μ$_{y}$)，所以13×1.5＋b＝17 ⇒ b＝－2.5，故 (a, b)＝(1.5,－2.5)。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_8
+  section: 1
+  number: 8
+  type: fill
+  page: 1
+  stem: 承第7題，若x＝15，則可預測y＝＿＿＿＿。
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: x＝15代入可得y＝1.5×15－2.5＝20。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 設等比數列〈$a_{n}$〉共有2022項，且每一項都是不為0的實數，若公比為r，$S_{n}$表示此數列前n項和，則下列哪些選項是正確的？＿＿＿＿。（全對才給分）
+  options:
+  - label: A
+    content: 若$a_{99}$＜$a_{100}$，則r＞1
+  - label: B
+    content: $a_{106}^{2}$＝$a_{105}$．$a_{107}$
+  - label: C
+    content: 若$S_{2022}$＞0，則r＞0
+  - label: D
+    content: 若$S_{2022}$＝0，則r＜0
+  - label: E
+    content: $S_{100}$，$S_{200}$，$S_{300}$三數成等比
+  explanation: (A) ×：若$a_{99}$＜$a_{100}$，則$a_{99}$＜$a_{99}$r，當$a_{99}$＜0時，r＜1。 (B) ○：因為$\frac{a_{107}}{a_{106}}$＝$\frac{a_{106}}{a_{105}}$＝r，所以$a_{106}^{2}$＝$a_{105}$．$a_{107}$。 (C) ×：反例：$a_{1}$＝1，r＝$\frac{-1}{2}$⇒ $S_{2022}$＝$a_{1}$×$\frac{1-r^{2022}}{1-r}$＝1×$\frac{1-(\frac{-1}{2})^{2022}}{1-(\frac{-1}{2})}$＞0。 (D) ○：若$S_{2022}$＝0，則r＝－1＜0。 (E) ×：應為$S_{100}$，$S_{200}$－$S_{100}$，$S_{300}$－$S_{200}$成等比。 故選(B)(D)。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_10
+  section: 1
+  number: 10
+  type: fill
+  page: 1
+  stem: 設圓$C_{1}$的半徑為1，作圓$C_{1}$的內接正三角形$T_{1}$，再作$T_{1}$的內切圓$C_{2}$，依此類推，可得$C_{1}$，$C_{2}$，$C_{3}$，…，若 $\frac{4\pi}{3}$－($C_{1}$＋$C_{2}$＋…＋$C_{n}$) 面積＜0.0001，則自然數n的最小值為＿＿＿＿。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_11
+  section: 1
+  number: 11
+  type: fill
+  page: 1
+  stem: 將一數列〈$a_{n}$〉分群：$(\frac{1}{1})$，$(\frac{2}{1},\frac{1}{2})$，$(\frac{3}{1},\frac{2}{2},\frac{1}{3})$，…，即為n個括號中的分子與分母的和為n＋1，其中$a_{1}$＝$\frac{1}{1}$，$a_{2}$＝$\frac{2}{1}$，$a_{3}$＝$\frac{1}{2}$，…，若$\frac{18}{19}$＝$a_{k}$，則k＝＿＿＿＿。
+  answer:
+  - '649'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 因為18＋19＝37，所以$a_{k}$位於第36個括號中的第19項，故k＝(1＋2＋…＋35)＋19＝$\frac{35\times 36}{2}$＋19＝649。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_12
+  section: 1
+  number: 12
+  type: fill
+  page: 1
+  stem: 某次測驗共有20題，每題5分，改完試卷後，全班算術平均數分數為45分，標準差10分，今將計分方式改為每題答對可得6分且一律再加10分，已知調整後無人超過100分，且調整後成績的平均數為M分，標準差為σ分，試求數對 (M, σ)＝＿＿＿＿。
+  answer:
+  - (64,12)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設原始分數為x分，調整後為y分，可知y＝$\frac{6}{5}x$＋10，μ$_{x}$＝45，σ$^{ }_{x}$＝10，所以M＝$\frac{6}{5}\mu _{x}$＋10＝$\frac{6}{5}$×45＋10＝64，σ＝$\frac{6}{5}\sigma _{x}$＝$\frac{6}{5}$×10＝12，故 (M, σ)＝(64, 12)。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_13
+  section: 1
+  number: 13
+  type: fill
+  page: 1
+  stem: 試求級數$4^{2}$＋$7^{2}$＋$10^{2}$＋…＋$61^{2}$＝＿＿＿＿。
+  answer:
+  - '27110'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $4^{2}$＋$7^{2}$＋$10^{2}$＋…＋$61^{2}$＝(1＋3×1)$^{2}$＋(1＋3×2)$^{2}$＋(1＋3×3)$^{2}$＋…＋(1＋3×20)$^{2}$ ＝($1^{2}$＋9×$1^{2}$＋2×3×1)＋($1^{2}$＋9×$2^{2}$＋2×3×2)＋($1^{2}$＋9×$3^{2}$＋2×3×3)＋…＋($1^{2}$＋9×$20^{2}$＋2×3×20) ＝20＋9 ($1^{2}$＋$2^{2}$＋…＋$20^{2}$)＋6 (1＋2＋…＋20) ＝20＋9×$\frac{20\times 21\times 42}{6}$＋6×$\frac{20\times 21}{2}$＝20＋25830＋1260＝27110。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_14
+  section: 1
+  number: 14
+  type: fill
+  page: 1
+  stem: 以下有四組二維數據，若其相關係數依序為$r_{1}$, $r_{2}$, $r_{3}$, $r_{4}$，試比較$r_{1}$, $r_{2}$, $r_{3}$, $r_{4}$之大小關係：＿＿＿＿。 ① ② ③ ④
+  assets:
+  - key: s1_14_f1
+    kind: figure
+    file: doc_110_桃園_內壢_數學_g10s2e1/s1_14_f1.png
+    crop:
+      page: 1
+      rect:
+      - 66.9
+      - 666.55
+      - 204.4
+      - 714.25
+  - key: s1_14_f2
+    kind: figure
+    file: doc_110_桃園_內壢_數學_g10s2e1/s1_14_f2.png
+    crop:
+      page: 1
+      rect:
+      - 222.5
+      - 666.55
+      - 360.0
+      - 714.25
+  - key: s1_14_f3
+    kind: figure
+    file: doc_110_桃園_內壢_數學_g10s2e1/s1_14_f3.png
+    crop:
+      page: 1
+      rect:
+      - 378.1
+      - 666.55
+      - 515.6
+      - 714.25
+  - key: s1_14_f4
+    kind: figure
+    file: doc_110_桃園_內壢_數學_g10s2e1/s1_14_f4.png
+    crop:
+      page: 1
+      rect:
+      - 533.7
+      - 666.55
+      - 671.2
+      - 714.25
+  answer:
+  - $r_{1}$＝$r_{3}$＞$r_{4}$＞$r_{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_15
+  section: 1
+  number: 15
+  type: fill
+  page: 1
+  stem: 設三筆資料 (1, 3), (2, a), (3, b) 的最適合直線方程式為y＝－x＋4，求對數 (a, b)＝＿＿＿＿。
+  answer:
+  - (2,1)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知μ$_{x}$＝$\frac{1+2+3}{3}$＝2，μ$_{y}$＝$\frac{3+a+b}{3}$，因為迴歸直線必過點 (μ$_{x}$, μ$_{y}$)，所以μ$_{y}$＝－μ$_{x}$＋4＝－2＋4＝2 ⇒$\frac{3+a+b}{3}$＝2 ⇒ a＋b＝3，$S_{xx}$＝(－1)$^{2}$＋$0^{2}$＋$1^{2}$＝2，$S_{xy}$＝(－1)×1＋0×(a－2)＋1×(b－2)＝b－3 ⇒ 斜率m＝$\frac{S_{xy}}{S_{xx}}$＝$\frac{b-3}{2}$＝－1 ⇒ b＝1 ⇒ a＝2，故數對 (a, b)＝(2, 1)。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_16
+  section: 1
+  number: 16
+  type: fill
+  page: 1
+  stem: 《九章算數》卷三的衰分術中有一道題：「今有女子善織，日自倍，五日織五尺…」意思是：有個擅長織布女子，每天織布的成果是前一日的2倍，5天下來共織了5尺，若依此規則，請問第7天織了＿＿＿＿尺。
+  answer:
+  - $\frac{320}{31}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設〈$a_{n}$〉為等比數列，其中r＝2，且$S_{5}$＝5，可得$S_{5}$＝$a_{1}$×$\frac{2^{5}-1}{2-1}$＝$31a_{1}$＝5 ⇒ $a_{1}$＝$\frac{5}{31}$⇒ $a_{7}$＝$a_{1}r^{6}$＝$\frac{5}{31}$×$2^{6}$＝$\frac{320}{31}$， 故第7天織了$\frac{320}{31}$尺。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_17
+  section: 1
+  number: 17
+  type: fill
+  page: 1
+  stem: 某次考試，甲班的數學成績不理想，全班30位學生成績的算術平均數為36分，標準差為12分，於是老師決定將每位學生的原始成績 (x分) 開根號再乘以10當作新分數 (y分)，即y＝10$\sqrt{x}$，且經過計算後得到y成績的算術平均數為59分，而y成績的標準差最接近正整數n，求n＝＿＿＿＿。
+  answer:
+  - '11'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知μ$_{x}$＝36，𝜎$_{x}$＝12，μ$_{y}$＝59，因為y＝10$\sqrt{x}$，所以$y^{2}$＝100x ⇒ 𝜎$_{y}$＝$\sqrt{\frac{1}{30}(y_{1}^{2}+y_{2}^{2}+\cdots +y_{30}^{2})-\mu _{y}^{2}}$＝$\sqrt{\frac{1}{30}(100x_{1}+100x_{2}+\cdots +100x_{30})-59^{2}}$＝$\sqrt{100\times \frac{x_{1}+x_{2}+\cdots +x_{30}}{30}-3481}$ ＝$\sqrt{100\times 36-3481}$＝$\sqrt{119}\approx 11$， 故n＝11。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s1_18
+  section: 1
+  number: 18
+  type: fill
+  page: 1
+  stem: 在3與27之間插入2022個相異正數$a_{1}$, $a_{2}$, …, $a_{2022}$，使得3, $a_{1}$, $a_{2}$, …, $a_{2022}$, 27形成一個等比數列，若此2022個正數$a_{1}$, $a_{2}$, …, $a_{2022}$的乘積為$3^{m}$，則正整數m＝＿＿＿＿。
+  answer:
+  - '4044'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知$a_{1}$×$a_{2022}$＝$a_{2}$×$a_{2021}$＝…＝$a_{1011}$×$a_{1012}$＝3×27＝$3^{4}$ ⇒ $a_{1}$×$a_{2}$×…×$a_{2022}$＝($3^{4}$)$^{1011}$＝$3^{4044}$，故m＝4044。
+- id: doc_110_桃園_內壢_數學_g10s2e1_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 1
+  stem: '古代陣法「魚鱗陣」中士兵的排列方法如下：第一列有1人，第二列有3人，第三列有5人，…，以此類推，後面每一列都比前面一列多2人，設$a_{n}$是前n列士兵的「總人數」，試回答以下問題：
+
+    $^{ }$(1) 若此數列〈$a_{n}$〉的遞迴關係式：$\begin{cases}a_{1}=1 \\ a_{n}=a_{n-1}+M,n\geq 2\end{cases}$，試求M（以n表示）。
+
+    $^{ }$(2) 試寫出$a_{n}$的一般式以n表示。
+
+    $^{ }$(3) 請以數學歸納法證明(2)中之結果。'
+  answer:
+  - (1) 2n－1；(2) $a_{n}$＝$n^{2}$；(3) $a_{n}$＝$n^{2}$
+  answer_status: verified
+  answer_source: answer_key

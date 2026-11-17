@@ -1,0 +1,311 @@
+document:
+  id: doc_111_台北_北一女中_數學_g10s2e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 3
+  city: 台北
+  school_short: 北一女中
+  school: 臺北市立第一女子高級中學
+  title: 臺北市立第一女子高級中學 111學年度第2學期第3次定期評量 高一數學科試題
+  exam_name: 111學年度第2學期第3次定期評量
+  source_file: 高一/數學/111/2-3/台北/北一女中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 10 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（共 10 分）
+    count: 1
+  - ord: 3
+    name: 三、填充題（配分如下表，共 80 分）
+    count: 14
+questions:
+- id: doc_111_台北_北一女中_數學_g10s2e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: $P_{1}$ 為任意擲兩個均勻銅板，恰好出現一正面的機率；$P_{2}$ 為任意擲四顆公正骰子， 恰有 2 顆出現偶數的機率；$P_{3}$ 為任意擲三顆公正骰子，恰有一顆出現質數的機率。下列敘述何者正確？
+  options:
+  - label: A
+    content: $P_{1}$＝$P_{2}$
+  - label: B
+    content: $P_{2}$＝$\frac{1}{2}$
+  - label: C
+    content: $P_{2}$＝$P_{3}$
+  - label: D
+    content: $P_{3}$＞0.4
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$P_{1}$＝$\frac{2}{2^{2}}=\frac{1}{2}$
+
+    $P_{2}$＝$\frac{(C_{2}^{4}\times 3\times 3)\times 3\times 3}{6^{4}}=\frac{3}{8}$
+
+    $P_{3}$＝$\frac{(C_{1}^{3}\times 3)\times 3\times 3}{6^{3}}=\frac{3}{8}$＝0.375
+
+    故選(C)'
+- id: doc_111_台北_北一女中_數學_g10s2e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 已知 n＝7200，則下列敘述何者正確？
+  options:
+  - label: A
+    content: n 的正因數有 56 個
+  - label: B
+    content: n 的正因數中為完全平方數的有 10 個
+  - label: C
+    content: n 的正因數中所有為完全立方數的和為 8
+  - label: D
+    content: n 的正因數中是 4 的倍數但不是 5 的倍數者有 12 個
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'n＝7200＝$2^{5}$×$3^{2}$×$5^{2}$，正因數形如 $2^{a}$×$3^{b}$×$5^{c}$
+
+    (A) ╳：a＝0，1，2，3，4，5，b＝0，1，2，c＝0，1，2
+
+    ∴有（5＋1）（2＋1）（2＋1）＝54 個
+
+    (B) ╳：a＝0，2，4，b＝0，2，c＝0，2
+
+    使得正因數為完全平方數 ∴有 3×2×2＝12 個
+
+    (C) ╳：a＝0，3，b＝0，c＝0
+
+    使得正因數為完全立方數，這些數為 $2^{0}$×$3^{0}$×$5^{0}$，$2^{3}$×$3^{0}$×$5^{0}$
+
+    ∴和為 1＋8＝9
+
+    (D) ○：a＝2，3，4，5，b＝0，1，2，c＝0，1，2，使得正因數為 4 的倍數
+
+    a＝2，3，4，5，b＝0，1，2，c＝1，2，使得正因數為 20 的倍數
+
+    ∴所求為 4×3×3－4×3×2＝12 個
+
+    故選(D)'
+- id: doc_111_台北_北一女中_數學_g10s2e3_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 將 4 個男生（甲、乙、丙、丁）、4 個女生（戊、己、庚、辛）共 8 個學生任意分為下列各組別。請問下列選項哪些是正確的？
+  options:
+  - label: A
+    content: 分為 4 人一組的兩個小組，共有 35 種
+  - label: B
+    content: 分為 2 人一組，每組皆為相同性別的四個小組，共有 36 種
+  - label: C
+    content: 分為 2 人一組，每組皆有一男一女，隨意分配表演四齣不同的英文話劇 A、B、C、D，共有 576 種
+  - label: D
+    content: 分為 3 人，3 人，2 人的三個小組，隨意分配去掃三個外掃區 P、Q、R，共有 280 種
+  - label: E
+    content: 分為 4 人，2 人，2 人的三個小組，其中甲、乙兩人恰在同一組，共有 60 種
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 1
+  stem: 校慶運動會競賽，老師從班上有意參加的 4 名女生及 6 名男生中欲選出 6 人參加啦啦隊比賽，且依規定男、女生人數要均等，則共有＿＿＿＿種組隊方法。
+  answer:
+  - '80'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 1
+  stem: '將 3 寫成若干個自然數的和有 3，2＋1，1＋2，1＋1＋1 這四種方法（只寫 3 也算是一種方法，且規定順序不同視為不同方法，例如：2＋1，1＋2
+    這兩種是不同的方法）。
+
+    試問將 5 寫成若干個自然數的和有＿＿＿＿種方法。'
+  answer:
+  - '16'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 1
+  stem: 計算$C_{3}^{4}$＋$C_{3}^{5}$＋$C_{3}^{6}$＋……＋$C_{3}^{16}$＋$C_{3}^{17}$＝＿＿＿＿。
+  answer:
+  - '3059'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 1
+  stem: 若用 0，1，2，3，4，5，6 共 7 個數字作成三位數，但數字不重複。其中 4 的倍數有＿＿＿＿個。
+  answer:
+  - '52'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 求$\left( 2x^{2}-\frac{1}{x} \right) ^{12}\left( x+\frac{1}{10} \right)$的展開式中的常數項為＿＿＿＿。
+  answer:
+  - '792'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: '右圖為棋盤式街道，是由 20 個 1×1 小正方形與 1 個 2×2 大正方形所組成，小綠沿著街道以走捷徑的方式由 A 地到 B 地，試問：
+
+    (1) 右圖共有＿＿＿＿個正方形。
+
+    (2) 若小綠必須經過 R 且經過 Q，則有＿＿＿＿種不同的走法。
+
+    (3) 若小綠不經過 P，Q，R 三點任一點之走法有＿＿＿＿種。'
+  assets:
+  - key: s3_6_f1
+    kind: figure
+    file: doc_111_台北_北一女中_數學_g10s2e3/s3_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 457.4
+      - 106.0
+      - 564.3
+      - 179.9
+  answer:
+  - (1) 39；(2) 36；(3) 17
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 將「鳳凰臺上鳳凰遊」七字全取作排列，其中相同的字都不相鄰有＿＿＿＿種方法。
+  answer:
+  - '660'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 若一個四位數中有兩個數字以上相同的數，稱為「遜密碼」；例如：3<u>44</u>5，<u>2211</u>，<u>5</u>3<u>55</u> 都是遜密碼，今用
+    1，2，3，4，5 五個數字，作出數字可重複的四位數，其中會出現「遜密碼」的機率為＿＿＿＿。
+  answer:
+  - $\frac{101}{125}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 假設風、雲、雷、電四個人想要以猜拳（剪刀、石頭、布）決定誰去買飲料，試求四人只有猜拳一次但卻不分勝負時有＿＿＿＿種狀況。
+  answer:
+  - '39'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 箱子中有六個相同的球，分別標示號碼 1、2、3、5、6、9。若自箱子中一次取出兩球， A 表兩球編號和為 8 的事件，B 表兩球編號差為 4 的事件，則
+    A 與 B 中恰一事件發生的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{5}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 2
+  stem: 如右圖，在 4×4 的棋盤方格中，隨機任取三個格子，則選出的三個格子不在同一行也不在同一列的機率為＿＿＿＿。
+  assets:
+  - key: s3_11_f1
+    kind: figure
+    file: doc_111_台北_北一女中_數學_g10s2e3/s3_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 500.9
+      - 365.85
+      - 564.3
+      - 429.25
+  answer:
+  - $\frac{6}{35}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 2
+  stem: 甲、乙、丙、丁、戊、己共 6 人由左到右排成一列，若甲不排最左邊，乙不排最右邊，且甲、乙兩人不相鄰，則共有＿＿＿＿種不同的排法。
+  answer:
+  - '312'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_13
+  section: 3
+  number: 13
+  type: fill
+  page: 2
+  stem: '如右圖，已知正六邊形 ABCDEF 的中心點為 O，試問：
+
+    (1) 圖中 A、B、C、D、E、F、O 這七個點共可決定＿＿＿＿個三角形。
+
+    (2) 若在這 6 個頂點與中心點分別填入 1，2，3，4，5，6，7 七個整數， 每一整數只被使用一次，且使得位於對角線 AOD、BOE 與 COF 上的數字和皆相等。試問要完成這樣的安排方式，共有＿＿＿＿種方法。'
+  assets:
+  - key: s3_13_f1
+    kind: figure
+    file: doc_111_台北_北一女中_數學_g10s2e3/s3_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 473.3
+      - 440.85
+      - 564.3
+      - 523.45
+  answer:
+  - (1) 32；(2) 144
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_北一女中_數學_g10s2e3_s3_14
+  section: 3
+  number: 14
+  type: fill
+  page: 2
+  stem: '某遊戲的規則為同時擲兩顆公正骰子一次，若所得的點數恰滿足下列(A)或(B)兩個條件之一，可得到獎金 900 元；若兩個條件都同時滿足時，則共得 1800
+    元獎金；若兩個條件都不滿足，則無獎金。
+
+    條件(A)：兩顆點數和為 7。
+
+    條件(B)：至少有一顆點數為 6。
+
+    則小翔玩此遊戲獲得獎金的期望值為＿＿＿＿元。'
+  answer:
+  - '425'
+  answer_status: verified

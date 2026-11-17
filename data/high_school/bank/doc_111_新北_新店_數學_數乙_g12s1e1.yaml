@@ -1,0 +1,371 @@
+document:
+  id: doc_111_新北_新店_數學_數乙_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 1
+  city: 新北
+  school_short: 新店
+  school: 新北市立新店高級中學
+  title: 新北市立新店高級中學 111學年度第1學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 111學年度第1學期第1次定期評量
+  source_file: 高三/數學/111/1-1/新北/新店_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 8 分，錯一個選項得 5 分，錯兩個選項 2 分，錯三個選項以上得 0 分，共 40 分）
+    count: 5
+  - ord: 2
+    name: 二、填充題：依答對格數給分
+    count: 7
+  scope_note: 龍騰版單元一、二 ＿＿＿年＿＿＿班 座號＿＿＿ 姓名
+questions:
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列選項中的無窮數列哪些是收斂的？
+  options:
+  - label: A
+    content: $\left\langle \left( \frac{\sqrt{5}}{2} \right) ^{n} \right\rangle$
+  - label: B
+    content: 〈（－1）$^{n}$〉
+  - label: C
+    content: 〈（$0.\overline{3}$＋$0.\overline{7}$）$^{n}$〉
+  - label: D
+    content: 〈$\sqrt[n]{309}$〉
+  - label: E
+    content: $\left\langle \frac{(-1)^{n}}{n^{2}} \right\rangle$
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：公比 r＝$\frac{\sqrt{5}}{2}$
+
+    ∵│r│＞1 ∴數列$\left\langle \left( \frac{\sqrt{5}}{2} \right) ^{n} \right\rangle$發散
+
+    (B) ╳：∵公比 r＝－1 ∴數列〈（－1）$^{n}$〉發散
+
+    (C) ╳：$0.\overline{3} +0.\overline{7} =\frac{3}{9}+\frac{7}{9}=\frac{10}{9}$
+
+    公比 r＝$\frac{10}{9}$
+
+    ∵│r│＞1 ∴數列〈（$0.\overline{3} +0.\overline{7}$）$^{n}$〉發散
+
+    (D) ○：$\lim_{n\rightarrow \infty} \sqrt[n]{309}$＝$\lim_{n\rightarrow \infty} 309^{\frac{1}{n}}$＝1
+
+    (E) ○：$\lim_{n\rightarrow \infty} \frac{(-1)^{n}}{n^{2}}$＝0
+
+    故選(D)(E)'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列選項的敘述哪些正確？
+  options:
+  - label: A
+    content: $\sum_{n=1}^{4} n=\sum_{i=0}^{3} (i+1)=\sum_{k=0}^{\infty} 5 \cdot \left( \frac{1}{2} \right) ^{k}$
+  - label: B
+    content: 若$\lim_{n\rightarrow \infty} a_{n}=1$，則$\lim_{n\rightarrow \infty} a_{2n}=1$
+  - label: C
+    content: 已知〈$a_{n}$〉為收斂數列、〈$b_{n}$〉為發散數列，則$\left\langle \frac{a_{n}}{b_{n}} \right\rangle$必為收斂數列
+  - label: D
+    content: 無窮數列〈$x^{n}$〉的收斂條件為－1＜x＜1
+  - label: E
+    content: 若函數 f（x）在 x＝3 連續，則$\lim_{x\rightarrow 3^{+}} f(x)=\lim_{x\rightarrow 3^{-}} f(x)$
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：$\sum_{n=1}^{4} n$＝1＋2＋3＋4＝10
+
+    $\sum_{i=0}^{3} (i+1)$＝1＋2＋3＋4＝10
+
+    $\sum_{k=0}^{\infty} 5 \cdot \left( \frac{1}{2} \right) ^{k}$＝$5\left( \left( \frac{1}{2} \right) ^{0}+\left( \frac{1}{2} \right) ^{1}+\left( \frac{1}{2} \right) ^{2}+\cdots \cdots \right)$＝5×$\frac{1}{1-\frac{1}{2}}$＝10
+
+    (B) ○
+
+    (C) ╳：若〈$a_{n}$〉＝〈$1^{n}$〉，〈$b_{n}$〉＝〈（－1）$^{n}$〉
+
+    則$\left\langle \frac{a_{n}}{b_{n}} \right\rangle$＝〈（－1）$^{n}$〉為發散數列
+
+    (D) ╳：收斂條件應為－1＜x ≤ 1
+
+    (E) ○
+
+    故選(A)(B)(E)'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 關於函數的敘述，下列選項哪些正確？
+  options:
+  - label: A
+    content: f（x）＝$\frac{1}{x}$與 g（x）＝$\frac{1}{│ x │}$的定義域相同
+  - label: B
+    content: f（x）＝$\sqrt{x^{2}+4x-5}$的值域為{ y ∈ R│y ≥ 0 }
+  - label: C
+    content: f（x）＝$x^{5}$－2 是奇函數
+  - label: D
+    content: f（x）＝cosx 與 g（x）＝5 都是偶函數
+  - label: E
+    content: 若 f（x）＝x＋1，g（x）＝2x，則（g。f）（x）＝2x＋1
+  answer:
+  - A
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：定義域皆為{ x│x≠0 }
+
+    (B) ○
+
+    (C) ╳：f（－x）＝（－x）$^{5}$－2＝－$x^{5}$－2≠－f（x）
+
+    ∴f（x）＝$x^{5}$－2 不是奇函數
+
+    (D)○：∵f（－x）＝cos（－x）＝cosx＝f（x）
+
+    g（－x）＝5＝g（x）
+
+    ∴f（x）＝cosx 和 g（x）＝5 都是偶函數
+
+    (E) ╳：（g。f）（x）＝g（x＋1）＝2（x＋1）＝2x＋2
+
+    故選(A)(B)(D)'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: '已知數列〈$c_{n}$〉滿足以下性質：
+
+    甲：$c_{n}$ ≤ $\frac{4n^{2}}{2n^{2}+1}$；乙：$c_{n}$ ≤ 2；丙：$c_{n}$ ≥ $\frac{2n}{n+1}$；丁：$c_{n}$ ≤ 2n＋8。
+
+    使用下列何者可以求出$\lim_{n\rightarrow \infty} c_{n}$的值？'
+  options:
+  - label: A
+    content: 甲與乙
+  - label: B
+    content: 乙與丙
+  - label: C
+    content: 丙與丁
+  - label: D
+    content: 甲與丙
+  - label: E
+    content: 乙與丁
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n\rightarrow \infty} \frac{4n^{2}}{2n^{2}+1}$＝$\lim_{n\rightarrow \infty} \frac{4}{2+\frac{1}{n^{2}}}$＝2
+
+    $\lim_{n\rightarrow \infty} \frac{2n}{n+1}$＝$\lim_{n\rightarrow \infty} \frac{2}{1+\frac{1}{n}}$＝2
+
+    ∴乙和丙，甲和丙可求出$\lim_{n\rightarrow \infty} c_{n}$的值
+
+    故選(B)(D)'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 2
+  stem: 右圖為函數 y＝f（x）的圖形，下列選項哪些正確？
+  options:
+  - label: A
+    content: $\lim_{x\rightarrow 2} f(x)$不存在
+  - label: B
+    content: $\lim_{x\rightarrow 1} f(x)$＝1
+  - label: C
+    content: $\lim_{x\rightarrow -2^{-}} f(x)=\lim_{x\rightarrow 1} f(x)$
+  - label: D
+    content: f（－3）＝f(4)
+  - label: E
+    content: 函數 f（x）在 x＝3 處連續
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_111_新北_新店_數學_數乙_g12s1e1/s1_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 418.0
+      - 48.6
+      - 564.3
+      - 146.8
+  answer:
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：$\lim_{x\rightarrow 2} f(x)$＝3
+
+    (B) ╳：$\lim_{x\rightarrow 1} f(x)$＝2
+
+    (C) ○：$\lim_{x\rightarrow -2^{-}} f(x)$＝$\lim_{x\rightarrow 1} f(x)$＝2
+
+    (D) ○：f（－3）＝f(4)＝1
+
+    (E) ○
+
+    故選(C)(D)(E)'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '下列各極限若存在，請算出「極限值」，否則請寫「不存在」：
+
+    (1)$\lim_{n\rightarrow \infty} \left( 3+\frac{316}{n} \right)$＝＿＿＿＿。
+
+    (2)$\lim_{n\rightarrow \infty} \frac{3^{n}+7^{n}}{{7^{n}}^{+1}}$＝＿＿＿＿。
+
+    (3)$\lim_{n\rightarrow \infty} \left( \frac{n^{2}+1}{2n-1}-\frac{n^{2}-1}{2n+1} \right)$＝＿＿＿＿。
+
+    (4)$\lim_{x\rightarrow 0} \frac{│ x │}{x}$＝＿＿＿＿。
+
+    (5)$\lim_{x\rightarrow -3} \frac{x^{2}+2x-3}{3+x}$＝＿＿＿＿。
+
+    (6)$\lim_{x\rightarrow -1} \frac{2x^{2}-x+3}{x^{2}+2x+1}$＝＿＿＿＿。'
+  answer:
+  - (1) 3；(2)$\frac{1}{7}$；(3)$\frac{1}{2}$；(4)不存在；(5)－4；(6) 不存在
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1)$\lim_{n\rightarrow \infty} \left( 3+\frac{316}{n} \right)$＝3
+
+    (2)$\lim_{n\rightarrow \infty} \frac{3^{n}+7^{n}}{{7^{n}}^{+1}}$＝$\lim_{n\rightarrow \infty} \frac{\left( \frac{3}{7} \right) ^{n}+1}{7}$＝$\frac{1}{7}$
+
+    (3)$\lim_{n\rightarrow \infty} \left( \frac{n^{2}+1}{2n-1}-\frac{n^{2}-1}{2n+1} \right)$＝$\lim_{n\rightarrow \infty} \frac{2n^{2}+4n}{4n^{2}-1}$＝$\lim_{n\rightarrow \infty} \frac{2+\frac{4}{n}}{4-\frac{1}{n^{2}}}$＝$\frac{1}{2}$
+
+    (4)$\lim_{x\rightarrow 0^{-}} \frac{│ x │}{x}$＝$\lim_{x\rightarrow 0^{-}} \frac{-x}{x}$＝－1
+
+    $\lim_{x\rightarrow 0^{+}} \frac{│ x │}{x}$＝$\lim_{x\rightarrow 0^{+}} \frac{x}{x}$＝1
+
+    ∵$\lim_{x\rightarrow 0^{-}} \frac{│ x │}{x}$≠$\lim_{x\rightarrow 0^{+}} \frac{│ x │}{x}$
+
+    ∴此極限不存在
+
+    (5)$\lim_{x\rightarrow -3} \frac{x^{2}+2x-3}{3+x}$＝$\lim_{x\rightarrow -3} \frac{(x-1)(x+3)}{3+x}$＝$\lim_{x\rightarrow -3} (x-1)$＝－4
+
+    (6)$\lim_{x\rightarrow -1} \frac{2x^{2}-x+3}{x^{2}+2x+1}$＝$\lim_{x\rightarrow -1} \left( 2+\frac{-5x+1}{x^{2}+2x+1} \right)$，此極限不存在'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 設數列$\left\langle \left( \frac{3x-1}{2} \right) ^{n} \right\rangle$收斂，則 x 的範圍為＿＿＿＿。
+  answer:
+  - $-\frac{1}{3}$＜x ≤ 1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '－1＜$\frac{3x-1}{2}$ ≤ 1 ⇒－2＜3x－1 ≤ 2
+
+    ⇒－1＜3x ≤ 3
+
+    ⇒$-\frac{1}{3}$＜x ≤ 1'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 若$\lim_{n\rightarrow \infty} \frac{an^{5}+3bn+3}{2n-7}$＝3，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （0，2）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n\rightarrow \infty} \frac{an^{5}+3bn+3}{2n-7}$＝3，此極限存在 ∴a＝0
+
+    ⇒$\lim_{n\rightarrow \infty} \frac{3bn+3}{2n-7}$＝$\lim_{n\rightarrow \infty} \frac{3b+\frac{3}{n}}{2-\frac{7}{n}}$＝3
+
+    ⇒$\frac{3b}{2}$＝3 ⇒ b＝2
+
+    故數對（a，b）＝（0，2）'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知一無窮等比級數的和為 4，第二項為 1，若首項為 a、公比為 r，則 a＋r＝＿＿＿＿。
+  answer:
+  - $\frac{5}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '公比 r＝$\frac{1}{a}$
+
+    無窮等比級數的和為$\frac{a}{1-\frac{1}{a}}$＝4
+
+    ⇒ $a^{2}$－4a＋4＝0
+
+    ⇒（a－2）$^{2}$＝0
+
+    ⇒ a＝2，r＝$\frac{1}{2}$
+
+    ∴a＋r＝2＋$\frac{1}{2}$＝$\frac{5}{2}$'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 設函數 f（x）＝$\begin{cases}2x+a , x>-1 \\ b , x=-1 \\ -x^{2}+5x-3 , x<-1\end{cases}$為連續函數，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （－7，－9）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x\rightarrow -1^{-}} f(x)$＝$\lim_{x\rightarrow -1^{-}} (-x^{2}+5x-3)$＝－9
+
+    $\lim_{x\rightarrow -1^{+}} f(x)$＝$\lim_{x\rightarrow -1^{+}} (2x+a)$＝－2＋a
+
+    ∵f（x）為連續函數
+
+    ∴$\lim_{x\rightarrow -1^{-}} f(x)$＝$\lim_{x\rightarrow -1^{+}} f(x)$＝f（－1）
+
+    ⇒－9＝－2＋a＝b
+
+    故數對（a，b）＝（－7，－9）'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 設對任意實數 x，3x＋1 ≤ f（x）≤ $x^{2}$－x＋4，則$\lim_{x\rightarrow 1} f(x)$＝＿＿＿＿。
+  answer:
+  - '4'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\lim_{x\rightarrow 1} (3x+1)$＝4 且$\lim_{x\rightarrow 1} (x^{2}-x+4)$＝4
+
+    由夾擠定理得$\lim_{x\rightarrow 1} f(x)$＝4'
+- id: doc_111_新北_新店_數學_數乙_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 f（x）為三次多項式，且$\lim_{x\rightarrow -1} \frac{f(x)}{x+1}$＝－2，$\lim_{x\rightarrow 1} \frac{f(x)}{x-1}$＝10，則$\lim_{x\rightarrow 0} \frac{f(x)}{x-2}$＝＿＿＿＿。
+  answer:
+  - $\frac{3}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\lim_{x\rightarrow -1} \frac{f(x)}{x+1}$＝－2，$\lim_{x\rightarrow 1} \frac{f(x)}{x-1}$＝10
+
+    ∴f（－1）＝0 且 f(1)＝0
+
+    設 f（x）＝（x＋1）（x－1）（ax＋b）
+
+    $\lim_{x\rightarrow -1} \frac{f(x)}{x+1}$＝$\lim_{x\rightarrow -1}$（（x－1）（ax＋b））＝2a－2b＝－2 ⇒ a－b＝－1………①
+
+    $\lim_{x\rightarrow 1} \frac{f(x)}{x-1}$＝$\lim_{x\rightarrow 1}$（（x＋1）（ax＋b））＝2a＋2b＝10 ⇒ a＋b＝5 ……………②
+
+    由①、②得 a＝2，b＝3 ∴f（x）＝（x＋1）（x－1）（2x＋3）
+
+    故$\lim_{x\rightarrow 0} \frac{f(x)}{x-2}$＝$\lim_{x\rightarrow 0} \frac{(x+1)(x-1)(2x+3)}{x-2}$＝$\frac{3}{2}$'

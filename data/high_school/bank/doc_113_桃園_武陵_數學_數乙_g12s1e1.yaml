@@ -1,0 +1,208 @@
+document:
+  id: doc_113_桃園_武陵_數學_數乙_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 113學年度第1學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  source_file: 高三/數學/113/1-1/桃園/武陵_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 第一部分：多重選擇題（每題8分，共32分，答錯一個選項得5分，答錯兩個選項得2分，答錯三個選項以上或未作答者得0分）
+    count: 4
+  - ord: 2
+    name: 第二部分：選填題（每格5分，共60分）
+    count: 5
+questions:
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列各選項中，何者的極限存在？
+  options:
+  - label: A
+    content: $\lim_{n\rightarrow \infty} ( - 1 )^{n}$
+  - label: B
+    content: $\lim_{n\rightarrow \infty} (n + ( \frac{- 1}{3} )^{n})$
+  - label: C
+    content: $\lim_{n\rightarrow \infty} ( \frac{\sqrt{8}}{\pi} )^{n}$
+  - label: D
+    content: $\sum_{n=1}^{\infty} ( \frac{100}{99} )^{n}$
+  - label: E
+    content: $\sum_{n=1}^{\infty} ( \frac{2^{n}-3^{n}}{5^{n}} )$
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)〈(－1)$^{n}$〉：－1 , 1 , －1 , 1 , －1 , 1 , …為發散數列 ∴$\lim_{n\rightarrow \infty} ( - 1 )^{n}$不存在 (B)〈n〉為發散數列，$〈 ( \frac{- 1}{3} )^{n} 〉$為收斂數列，若$〈 n + (\frac{- 1}{3})^{n} 〉$收斂，則$n = ( n + ( \frac{- 1}{3} )^{n}) - ( \frac{- 1}{3} )^{n}$為發散，矛盾， 故$\lim_{n\rightarrow \infty} ( n + ( \frac{- 1}{3} )^{n} )$不存在 (C)∵$\sqrt{8}$＜3＜π ∴$\frac{\sqrt{8}}{\pi}$＜1 ∴$〈 ( \frac{\sqrt{8}}{\pi} )^{n} 〉$是公比介於(－1 , 1 )之間的等比數列 故$\lim_{n\rightarrow \infty} ( \frac{\sqrt{8}}{\pi} )^{n} = 0$ (D)$〈 ( \frac{100}{99} )^{n} 〉$是公比大於1的等比數列 ∴$\sum_{n=1}^{\infty} ( \frac{100}{99} )^{n}$不存在 (E) $\sum_{n=1}^{\infty} \frac{2^{n} - 3^{n}}{5^{n}}=\sum_{n=1}^{\infty} ( \frac{2}{5} )^{n} - \sum_{n=1}^{\infty} ( \frac{3}{5} )^{n} =\frac{\frac{2}{5}}{1 - \frac{2}{5}} - \frac{\frac{2}{5}}{1 - \frac{3}{5}} = \frac{2}{3} - \frac{3}{2} = - \frac{5}{6}$ 故選(C)(E)。
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 已知函數y＝f (x)的圖形如圖，選出正確的選項。
+  options:
+  - label: A
+    content: $\lim_{x\rightarrow 0} f(x)$極限存在
+  - label: B
+    content: $\lim_{x\rightarrow 2} f(x)$極限存在
+  - label: C
+    content: $\lim_{x\rightarrow 0^{-}} f(x) = \lim_{x\rightarrow 1} f(x)$
+  - label: D
+    content: f (x)在x＝1處連續
+  - label: E
+    content: f (x)在x＝3處連續
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_113_桃園_武陵_數學_數乙_g12s1e1/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 445.65
+      - 290.3
+      - 570.95
+      - 405.1
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)(B) f (x)在x＝0和x＝2的左極限和右極限不同 ∴ $\lim_{x\rightarrow 0} f(x)$和$\lim_{x\rightarrow 2} f(x)$不存在 (C) $\lim_{x\rightarrow 0^{-}} f(x) = \lim_{x\rightarrow 1} f(x) = 2$ (D) 由圖形知$\lim_{x\rightarrow 1} f(x) = 2\neq f(1) = 1$，f (x)在x＝1不連續 (E) $\lim_{x\rightarrow 3} f(x)$＝f ( 3 )＝2 ∴ f (x)在x＝3連續 故選(C)(E)。
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 下列各選項中，何者的極限存在？（註：[ x ]為高斯符號）
+  options:
+  - label: A
+    content: $\lim_{x\rightarrow 3} \frac{[ x - 3 ]}{x - 3}$
+  - label: B
+    content: $\lim_{x\rightarrow \pi} \frac{[ x - 3 ]}{x - 3}$
+  - label: C
+    content: $\lim_{x\rightarrow 1} \frac{|x - 1|}{x - 1}$
+  - label: D
+    content: $\lim_{x\rightarrow - 1} \frac{|x - 1|}{x - 1}$
+  - label: E
+    content: $\lim_{x\rightarrow 2} [\frac{2}{x}]$
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)當x∈ [ 2 , 3 )時[ x－3 ]＝－1，當x∈[ 3 , 4 )時[ x－3 ]＝0 ∴$\frac{[ x - 3 ]}{x - 3}$→∞，當x→$3^{－}$，$\frac{[ x - 3 ]}{x - 3}$＝0，當x→$3^{＋}$ ∴$\lim_{x\rightarrow 3} \frac{[x-3]}{x-3}$不存在 (B) $\lim_{x\rightarrow \pi} \frac{[ x - 3 ]}{x - 3} = \frac{0}{\pi - 3} = 0$ (C) $\frac{|x - 1|}{x - 1} = \begin{cases}1 , x > 1 \\ -1 , x < 1\end{cases}$ ∴$\lim_{x\rightarrow 1} \frac{|x - 1|}{x - 1}$不存在 (D) $\lim_{x\rightarrow - 1} \frac{|x - 1|}{x - 1} = \frac{| - 1 - 1|}{- 1 - 1}=\frac{2}{- 2} =- 1$ (E) $\lim_{x\rightarrow 2^{-}} x [ \frac{x}{2} ]$＝2．1＝2，$\lim_{x\rightarrow 2^{+}} x [ \frac{x}{2} ]$＝2．0＝0 ∴$\lim_{x\rightarrow 2} x [ \frac{2}{x} ]$不存在 故選(B)(D)。
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 已知函數f滿足$\lim_{x\rightarrow 1} \frac{f(x)}{x - 1}$＝6，下列哪些敘述正確？
+  options:
+  - label: A
+    content: $\lim_{x\rightarrow 1} (\frac{f(x)}{x - 1} + \frac{x - 1}{x}) = 6$
+  - label: B
+    content: $\lim_{x\rightarrow 1} \frac{f(x)}{2(x - 1)} = 3$
+  - label: C
+    content: $\lim_{x\rightarrow 1} \frac{f(x)}{(x - 1)^{2}} = 6$
+  - label: D
+    content: $\lim_{x\rightarrow 1} f(x) = 0$
+  - label: E
+    content: $\lim_{x\rightarrow 1} (x\cdot f(x)) = f(1)$
+  answer:
+  - A
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) $\lim_{x\rightarrow 1} (\frac{f(x)}{x - 1} + \frac{x - 1}{x}) = \lim_{x\rightarrow 1} \frac{f(x)}{x - 1} + \lim_{x\rightarrow 1} \frac{x - 1}{x} = 6 + \frac{1 - 1}{1} = 6 + 0 = 6$ (B) $\lim_{x\rightarrow 1} \frac{f(x)}{2 ( x - 1 )} = \frac{1}{2}\lim_{x\rightarrow 1} \frac{f(x)}{x - 1} = \frac{1}{2}\times 6 = 3$ (C) 若$\lim_{x\rightarrow 1} \frac{f(x)}{( x - 1 )^{2}}$存在，設值為k，則$\lim_{x\rightarrow 1} \frac{f(x)}{x - 1} = \lim_{x\rightarrow 1} ( ( x - 1 )\cdot \frac{f(x)}{(x - 1)^{2}}) = \lim_{x\rightarrow 1} ( x - 1 )\cdot \lim_{x\rightarrow 1} \frac{f(x)}{(x - 1)^{2}} = 0\cdot k = 0$矛盾， 故$\lim_{x\rightarrow 1} \frac{f(x)}{( x - 1 )^{2}}$不存在。 (D) $\lim_{x\rightarrow 1} f(x) = \lim_{x\rightarrow 1} ( ( x - 1 )\cdot \frac{f(x)}{x - 1}) = \lim_{x\rightarrow 1} ( x - 1 )\cdot \lim_{x\rightarrow 1} \frac{f(x)}{x - 1} = 0\cdot 6 = 0$。 (E) 若f (x)在x＝1不連續，則f ( 1 )≠$\lim_{x\rightarrow 1} f(x)$＝0，則$\lim_{x\rightarrow 1} ( xf(x) ) = \lim_{x\rightarrow 1} x\cdot \lim_{x\rightarrow 1} f(x)
+    = 1\cdot 0$≠f( 1 )。 故選(A)(B)(D)。
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知首項為a，公比為$0.\overline{12}$的無窮等比級數和為33，求首項a的值為________。
+  answer:
+  - f為[ a , b ]上的連續函數
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知f (x)＝$\sqrt{x + 9}$，g (x)＝－$x^{2}$＋x－3，則： (1) ($\frac{f}{g}$＋g。f ) (0)＝________。 (2) 若( f。g ) (x)的定義域為{ x | x ∈ R，p ≤ x ≤ q }，則( p , q )＝_______。
+  answer:
+  - 三根分別在落在(－3,－2)、(－1 , 0 )、( 1 , 2 ) 之間
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 設函數f (x)＝$\begin{cases}- x^{2} + 5 , x< - 1 \\ \frac{a}{x + 2} - 1 , - 1\leq x<3 \\ bx + 9 , x\geq 3\end{cases}$，若f在實數上為連續函數，則( a , b )＝_______。
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知對任意實數x，函數f滿足－$2x^{2}$＋10x－8 ≤ f (x)．( x＋2 ) ≤ 2x，則$\lim_{x\rightarrow 2} f(x)=$_______。
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: <u>天命人</u>踏上尋找大聖根器的旅程時，不慎闖入了一個螺旋曲線迷宮。該迷宮的設計方式是：『設O為x軸上的原點，以O為圓心，半徑為4畫一個<u>上半圓</u>，交x軸於A (－4)、B (4)兩點後，以B、O的中點$X_{1}$為圓心，畫一個<u>下半圓</u>，如圖(一)所示；再以O、$X_{1}$的中點$X_{2}$為圓心，畫一個<u>上半圓</u>，如圖(二)所示；接著以$X_{1}$、$X_{2}$的中點$X_{3}$為圓心，畫一個<u>下半圓</u>，如圖(三)所示。循此規律，持續以$X_{n－2}$、$X_{n－1}$的中點n為圓心（n＝3 , 4 , 5 , …）交錯畫出<u>下、上半圓形</u>，便可得到一條由無窮多個半圓形所組成的螺旋曲線。』 圖(一) 圖(二) 圖(三) 圖(n) (1)若以A點為起點，沿著這條螺旋曲線一直向內行走，試問曲線的總長度為_______。 (2)依上述規則可知，圓心$X_{1}$在x軸上的坐標為2，圓心$X_{2}$在x軸上的坐標為1，試問$\lim_{n\rightarrow \infty} X_{n}$在x軸上的坐標為_______。
+  assets:
+  - key: s2_6_f1
+    kind: figure
+    file: doc_113_桃園_武陵_數學_數乙_g12s1e1/s2_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 58.05
+      - 406.75
+      - 180.85
+      - 472.4
+  - key: s2_6_f2
+    kind: figure
+    file: doc_113_桃園_武陵_數學_數乙_g12s1e1/s2_6_f2.png
+    crop:
+      page: 2
+      rect:
+      - 180.95
+      - 406.75
+      - 303.75
+      - 472.4
+  - key: s2_6_f3
+    kind: figure
+    file: doc_113_桃園_武陵_數學_數乙_g12s1e1/s2_6_f3.png
+    crop:
+      page: 2
+      rect:
+      - 303.85
+      - 406.75
+      - 426.65
+      - 472.4
+  - key: s2_6_f4
+    kind: figure
+    file: doc_113_桃園_武陵_數學_數乙_g12s1e1/s2_6_f4.png
+    crop:
+      page: 2
+      rect:
+      - 426.75
+      - 406.75
+      - 549.55
+      - 472.4

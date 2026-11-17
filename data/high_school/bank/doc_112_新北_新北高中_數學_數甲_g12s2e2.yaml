@@ -1,0 +1,302 @@
+document:
+  id: doc_112_新北_新北高中_數學_數甲_g12s2e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 2
+  city: 新北
+  school_short: 新北高中
+  school: 新北市立新北高級中學
+  title: 新北市立新北高級中學 112學年度第2學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 112學年度第2學期第2次定期評量
+  source_file: 高三/數學/112/2-2/新北/新北高中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 8 分，共 32 分；多或少一選項扣 3 分）
+    count: 4
+  - ord: 2
+    name: 二、填充題（每格 5 分，共 55 分）
+    count: 11
+  - ord: 3
+    name: 三、計算題（共 13 分）
+    count: 2
+questions:
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 如右圖，複數 z 在複數平面上對應的點 P 在單位圓 O 的內部，試問下列哪一個點最有可能是複數$\frac{1}{z^{2}}$所對應的點？
+  options:
+  - label: A
+    content: A
+  - label: B
+    content: B
+  - label: C
+    content: C
+  - label: D
+    content: D
+  - label: E
+    content: E
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_112_新北_新北高中_數學_數甲_g12s2e2/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 476.6
+      - 127.8
+      - 563.9
+      - 213.2
+  explanation: '令 z＝r（cosθ＋i sinθ）
+
+    ∵P（z）在圓內
+
+    ∴0＜r＜1，且 135°＜θ＜180°
+
+    $\frac{1}{z^{2}}$＝$\frac{1}{r^{2} (\cos 2\theta +i\sin 2\theta )}$＝$\frac{1}{r^{2}} (\cos 2\theta -i\sin 2\theta )$＝$\frac{1}{r^{2}} 〔\cos (- 2\theta )+i\sin (- 2\theta )〕$
+
+    又$\frac{1}{r^{2}}$＞1 且－360°＜－2θ＜－270°
+
+    ∴複數$\frac{1}{z^{2}}$所對應的點在單位圓 O 的外部，且在第一象限
+
+    故選(B)
+
+    【另解】
+
+    設複數 z＝a＋bi，其中－1＜a＜0，0＜b＜1 且∣a∣＞∣b∣
+
+    $z^{2}$＝（a＋bi）$^{2}$＝（$a^{2}$－$b^{2}$）＋（2ab）i
+
+    $\frac{1}{z^{2}}$＝$\frac{1}{(a^{2} -b^{2})+(2ab)i}$＝$\frac{a^{2} -b^{2}}{(a^{2} +b^{2})^{2}}+\frac{- 2ab}{(a^{2} +b^{2})^{2}}i$，其中
+
+    ∵∣a∣＞∣b∣ ∴$a^{2}$－$b^{2}$＞0，－2ab＞0
+
+    可知其對應的點位於第一象限
+
+    故選(B)'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: f（x）為三次實係數多項式，若 1－i 為方程式 f（x）＝0 的一根，則下列敘述哪些正確？
+  options:
+  - label: A
+    content: f（1＋i）＝0
+  - label: B
+    content: f（2＋i）≠0
+  - label: C
+    content: 沒有實數 x 滿足 f（$x^{3}$）＝x
+  - label: D
+    content: 沒有實數 x 滿足 f（$x^{5}$）＝0
+  explanation: '(A)○：∵f（x）＝0 為一實係數多項式方程式，且 1－i 為方程式 f（x）＝0 的一根
+
+    ∴1＋i 為其另一根
+
+    故 f（1＋i）＝0
+
+    (B)○：承(A) ∵第三根必為實根
+
+    ∴f（2＋i）≠0
+
+    (C)╳：方程式 f（$x^{3}$）－x＝0 為九次實係數多項式方程式，其至少有一實根
+
+    (D)╳：方程式 f（$x^{5}$）＝0 為十五次實係數多項式方程式，其至少有一實根
+
+    故選(A)(B)'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 設複數 z＝$\frac{\sqrt{3}}{2}+\frac{1}{2}i$，請選出正確的選項。
+  options:
+  - label: A
+    content: ∣z∣＝1
+  - label: B
+    content: z 的主輻角為 225°
+  - label: C
+    content: ∣$z^{99}$∣＝99
+  - label: D
+    content: $z^{500}$＝$z^{8}$
+  - label: E
+    content: 將 z，$z^{3}$，$z^{5}$ 標在複數平面上，以原點為中心依逆時針方向用線段連接，可得一個正三角形
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 設 z 是 $x^{5}$＝1 的複數根且 z≠1，則下列哪些選項正確？
+  options:
+  - label: A
+    content: ∣z∣＝1
+  - label: B
+    content: 1＋z＋$z^{2}$＋$z^{3}$＋$z^{4}$＝0
+  - label: C
+    content: ∣z－1∣＜1
+  - label: D
+    content: z＋$z^{4}$ 為實數
+  - label: E
+    content: （1－z）（1－$z^{2}$）（1－$z^{3}$）（1－$z^{4}$）＝4
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 假設$1 + \sqrt{2}i$是複係數方程式 $x^{2}$－3x＋k＝0 的一根，試求 k 值為＿＿＿＿。
+  explanation: '將 x＝$1 + \sqrt{2}i$代入 $x^{2}$－3x＋k＝0
+
+    得$(1+\sqrt{2}i)^{2} - 3 (1+\sqrt{2}i)+k$＝0$\Rightarrow$k＝$4 + \sqrt{2}i$'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 複數－2＋2i 的極式為＿＿＿＿。（以主輻角型式作答）
+  explanation: －2＋2i＝$2\sqrt{2} \left( -\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}i \right)$＝$2\sqrt{2} \left( \cos \frac{3\pi}{4}+i\sin \frac{3\pi}{4} \right)$
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設 z＝$\frac{(\cos 10^{^{\circ}} +i\sin 10^{^{\circ}})^{4} (\cos 70^{^{\circ}} -i\sin 70^{^{\circ}})^{3}}{(-\cos 130^{^{\circ}} +i\sin 130^{^{\circ}})}$，則 z 的主輻角為＿＿＿＿度。
+  explanation: 'z＝$\frac{(\cos 10^{^{\circ}} +i\sin 10^{^{\circ}})^{4} (\cos 70^{^{\circ}} -i\sin 70^{^{\circ}})^{3}}{(-\cos 130^{^{\circ}} +i\sin 130^{^{\circ}})}$
+
+    ＝$\frac{(\cos 40^{^{\circ}} +i\sin 40^{^{\circ}})(\cos 290^{^{\circ}} +i\sin 290^{^{\circ}})^{3}}{(\cos 50^{^{\circ}} +i\sin 50^{^{\circ}})}$
+
+    ＝$\frac{(\cos 40^{^{\circ}} +i\sin 40^{^{\circ}})(\cos 870^{^{\circ}} +i\sin 870^{^{\circ}})}{(\cos 50^{^{\circ}} +i\sin 50^{^{\circ}})}$
+
+    ＝cos860°＋i sin860°＝cos140°＋i sin140°
+
+    故 z 的主輻角為 140°'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 化簡$(- 1 + \sqrt{3}i)^{6}$＝＿＿＿＿。
+  explanation: '$(- 1 + \sqrt{3}i)^{6}$＝$\left[ 2 \left( -\frac{1}{2}+\frac{\sqrt{3}}{2}i \right) \right] ^{6}$＝$2^{6} \left( \cos \frac{2\pi}{3}+i\sin \frac{2\pi}{3} \right) ^{6}$
+
+    ＝64（cos4π＋i sin4π）＝64'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 若α，β為 $x^{2}$＋6x＋4＝0 的兩根，則$\frac{\sqrt{\beta}}{\sqrt{\alpha}}+\frac{\sqrt{\alpha}}{\sqrt{\beta}}$＝＿＿＿＿。
+  explanation: '∵α，β 為 $x^{2}$＋6x＋4＝0 的兩根
+
+    ∴α＋β＝－6 且 αβ＝4，表 α＜0，β＜0
+
+    $\frac{\sqrt{\beta}}{\sqrt{\alpha}}+\frac{\sqrt{\alpha}}{\sqrt{\beta}}$＝$\frac{(\sqrt{\beta})^{2} +(\sqrt{\alpha})^{2}}{- \sqrt{\alpha \beta}}$＝$\frac{\alpha +\beta}{- \sqrt{\alpha \beta}}$＝$\frac{- 6}{- 2}$＝3'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 已知 f（x）＝$5x^{3}$－$2x^{2}$＋4x＋3，試求 f（1－2i）＝＿＿＿＿。
+  explanation: '∵〔x－（1－2i）〕〔x－（1＋2i）〕＝0$\Rightarrowx^{2}$－2x＋5＝0
+
+    ∴1＋2i，1－2i 為方程式 $x^{2}$－2x＋5＝0 之兩根
+
+    由除法原理知 f（x）＝$5x^{3}$－$2x^{2}$＋4x＋3＝（$x^{2}$－2x＋5）（5x＋8）＋（－5x－37）
+
+    ∴f（1－2i）＝－5（1－2i）－37＝－42＋10i'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 a，b 為實數，且多項式方程式 $x^{3}$＋$ax^{2}$＋bx－13＝0 有一根為 3＋2i，試求 a＋b 的值為 ＿＿＿＿。
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知實係數多項式函數 f（x）＝$x^{3}$＋$ax^{2}$＋bx＋c，若 f'（x）＝0 的兩根為 3，1，且 f（x）＝0 有 3 個實根，則 c 的範圍為＿＿＿＿。
+  explanation: '∵f''（x）＝$3x^{2}$＋2ax＋b＝0 之兩根為 3，1
+
+    ∴f''（x）＝3（x－3）（x－1）＝$3x^{2}$－12x＋9
+
+    $\Rightarrow$a＝－6，b＝9，即 f（x）＝$x^{3}$－$6x^{2}$＋9x＋c
+
+    ∵f（x）＝0 有 3 個實根
+
+    ∴f(3)f(1)＜0
+
+    $\Rightarrow$（27－54＋27＋c）（1－6＋9＋c）＜0
+
+    $\Rightarrow$c（c＋4）＜0
+
+    $\Rightarrow$－4＜c＜0'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 如右圖，在正六邊形 ABCDEF 中，已知 A 點在原點（0，0），且 B 點坐標為（2，2），試求 C 點坐標為＿＿＿＿。
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_112_新北_新北高中_數學_數甲_g12s2e2/s2_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 452.6
+      - 196.6
+      - 564.3
+      - 299.55
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 令 z＝$1 + \sqrt{3}i$，關於 z，$z^{2}$，$z^{3}$ 三點在複數平面上所形成的三角形面積是 ＿＿＿＿。
+  explanation: 'z＝$1 + \sqrt{3}i$＝$2 \left( \frac{1}{2}+\frac{\sqrt{3}}{2}i \right)$＝2（cos60°＋i sin60°）
+
+    $z^{2}$＝〔2（cos60°＋i sin60°）〕$^{2}$＝4（cos120°＋i sin120°）＝$- 2 + 2\sqrt{3}i$
+
+    $z^{3}$＝〔2（cos60°＋i sin60°）〕$^{3}$＝8（cos180°＋i sin180°）＝－8
+
+    設此三點在直角坐標平面分別表示為$A (1 , \sqrt{3})$，$B (- 2 , 2\sqrt{3})$，C（－8，0）
+
+    則$\vec{AB}=(- 3 , \sqrt{3})$，$\vec{AC}=(- 9 , - \sqrt{3})$
+
+    故所求為$\frac{1}{2} ∣ \left| \begin{matrix}- 3 & - 9 \\ \sqrt{3} & - \sqrt{3}\end{matrix} \right| ∣ = 6\sqrt{3}$'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 設 a，b ∈ R，複數 $z_{1}$＝a＋i，$z_{2}$＝2－bi，若∣$z_{1}$∣＝2∣$z_{2}$∣，$\frac{z_{1}}{z_{2}}$的主輻角為π，試求數對（a，b）＝＿＿＿＿。
+  explanation: '∵∣$z_{1}$∣＝2∣$z_{2}$∣$\Rightarrow\frac{∣ z_{1} ∣}{∣ z_{2} ∣}$＝$\left| \frac{z_{1}}{z_{2}} \right|$＝2，且$\frac{z_{1}}{z_{2}}$的主輻角為π
+
+    ∴$\frac{z_{1}}{z_{2}}$＝2（cosπ＋i sinπ）＝－2
+
+    $\frac{z_{1}}{z_{2}}$＝$\frac{a +i}{2 -bi}$＝－2
+
+    $\Rightarrow$a＋i＝－4＋2bi
+
+    ∵a，b 為實數
+
+    ∴a＝－4，b＝$\frac{1}{2}$
+
+    故數對（a，b）＝$\left( - 4 , \frac{1}{2} \right)$'
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 試求－8i 的三次方根。（答案請以複數的標準式 a＋bi，a，b ∈ R 來表示）（6 分）
+- id: doc_112_新北_新北高中_數學_數甲_g12s2e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 假設原點為 O，將複數－8i 的所有三次方根在複數平面上標示（3 分），可以得到一個正三角形，試求此三角形面積為何？（4 分）

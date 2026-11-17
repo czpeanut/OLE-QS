@@ -1,0 +1,336 @@
+document:
+  id: doc_110_台中_興大附中_數學_數B_g11s2e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 3
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 110學年度第2學期第3次定期評量 高二數學（數B）科試題
+  exam_name: 110學年度第2學期第3次定期評量
+  source_file: 高二/數學/110/2-3/台中/興大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 8 分，共 40 分）
+    count: 5
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，共 12 分；答錯一個選項得 3.6 分，答錯兩個選項得 1.2 分，答錯三個選項以上得 0 分）
+    count: 2
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 48 分）
+    count: 8
+questions:
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設 A，B 為樣本空間 S 中的兩事件，若 P
+  options:
+  - label: A
+    content: ＝$\frac{1}{2}$，P（A∪B）＝$\frac{3}{4}$，P（B'）＝$\frac{5}{8}$，則 P（A｜B）＝？(A) $\frac{1}{3}$
+  - label: B
+    content: $\frac{1}{4}$
+  - label: C
+    content: $\frac{1}{5}$
+  - label: D
+    content: $\frac{2}{3}$
+  - label: E
+    content: $\frac{3}{4}$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P(B)＝1－P（B''）＝$\frac{3}{8}$
+
+    又 P（A∪B）＝P(A)＋P(B)－P（A∩B）
+
+    ⇒$\frac{3}{4}$＝$\frac{1}{2}$＋$\frac{3}{8}$－P（A∩B）
+
+    ⇒ P（A∩B）＝$\frac{1}{8}$
+
+    故 P（A｜B）＝$\frac{P (A\cap B)}{P (B)}$＝$\frac{\frac{1}{8}}{\frac{3}{8}}$＝$\frac{1}{3}$
+
+    故選(A)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 彩票公司每天開獎一次，從 1、2、3 三個號碼中隨機開出一個。開獎時，如果開出的號碼和前一天相同，就要重開，直到開出與前一天不同的號碼為止。如果在第一天開出的號碼是 3，則在第五天開出號碼同樣是 3 的機率是多少？
+  options:
+  - label: A
+    content: $\frac{1}{8}$
+  - label: B
+    content: $\frac{1}{4}$
+  - label: C
+    content: $\frac{3}{8}$
+  - label: D
+    content: $\frac{1}{2}$
+  - label: E
+    content: $\frac{5}{8}$
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 已知袋中有 3 個白球、2 個紅球。今從袋中每次取出一球連取三次，試問取後放回，則取出的三球中恰有兩個白球的機率是多少？
+  options:
+  - label: A
+    content: $\frac{87}{125}$
+  - label: B
+    content: $\frac{74}{125}$
+  - label: C
+    content: $\frac{67}{125}$
+  - label: D
+    content: $\frac{57}{125}$
+  - label: E
+    content: $\frac{54}{125}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求＝$\frac{C_{2}^{3}\times 3^{2}\times 2}{5^{3}}$＝$\frac{54}{125}$
+
+    故選(E)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 2
+  stem: 甲、乙兩人打靶，甲平均每五發中四發，乙平均每四發中三發，今甲、乙兩人對同一靶，各射擊兩發，若每一發命中與否互不相關，求靶剛好被打中三發的機率是多少？
+  options:
+  - label: A
+    content: $\frac{19}{50}$
+  - label: B
+    content: $\frac{21}{50}$
+  - label: C
+    content: $\frac{23}{50}$
+  - label: D
+    content: $\frac{27}{50}$
+  - label: E
+    content: $\frac{29}{50}$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求＝P（甲 1 乙 2）＋P（甲 2 乙 1）
+
+    ＝$C_{1}^{2}\times \left( \frac{4}{5} \right) \times \left( \frac{1}{5} \right) \times \left( \frac{3}{4} \right) ^{2}+\left( \frac{4}{5} \right) ^{2}\times C_{1}^{2}\times \left( \frac{3}{4} \right) \times \left( \frac{1}{4} \right)$
+
+    ＝$\frac{72 + 96}{400}$
+
+    ＝$\frac{21}{50}$
+
+    故選(B)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 2
+  stem: 根據過去紀錄知，某疫苗工廠檢驗其產品的過程中，將良品檢驗為不良品的機率為 0.20，將不良品檢驗為良品的機率為 0.16。又知該產品中，不良品占 5 ％，良品占 95 ％。若一件產品被檢驗為良品，但該產品實際上為不良品的機率是多少？
+  options:
+  - label: A
+    content: $\frac{7}{69}$
+  - label: B
+    content: $\frac{3}{97}$
+  - label: C
+    content: $\frac{1}{47}$
+  - label: D
+    content: $\frac{1}{96}$
+  - label: E
+    content: $\frac{3}{47}$
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 設 A 和 B 為獨立事件且 P
+  options:
+  - label: A
+    content: ＝$\frac{1}{3}$，P（A'∩B'）＝$\frac{2}{5}$，則下列何者正確？(A) P
+  - label: B
+    content: ＝$\frac{2}{5}$(B) P（A｜B）＝$\frac{1}{3}$
+  - label: C
+    content: P（B'｜A）＝$\frac{3}{5}$
+  - label: D
+    content: P（B'｜A'）＝$\frac{3}{5}$
+  - label: E
+    content: P（A'｜B）＝$\frac{1}{3}$
+  answer:
+  - A
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵A，B 獨立
+
+    ∴A''，B'' 獨立
+
+    故 P（A''∩ B''）＝P（A''）×P（B''）
+
+    ⇒$\frac{2}{5}$＝$\left( 1-\frac{1}{3} \right) \times ( 1 -P (B ) )$
+
+    ⇒ P(B)＝$\frac{2}{5}$
+
+    (B)○：P（A｜B）＝P(A)＝$\frac{1}{3}$
+
+    (C)○：P（B''｜A）＝P（B''）＝$\frac{3}{5}$
+
+    (D)○：P（B''｜A''）＝P（B''）＝$\frac{3}{5}$
+
+    (E)╳：P（A''｜B）＝P（A''）＝$\frac{2}{3}$
+
+    故選(A)(B)(C)(D)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 3
+  stem: 有一數學問題，甲能解出的機率為$\frac{1}{2}$，乙能解出的機率為$\frac{1}{3}$，今兩人同解此題，且互不影響，則下列何者正確？
+  options:
+  - label: A
+    content: 甲、乙均解出的機率為$\frac{1}{6}$
+  - label: B
+    content: 恰有一人解出的機率為$\frac{1}{2}$
+  - label: C
+    content: 甲、乙均解不出的機率為$\frac{1}{3}$
+  - label: D
+    content: 此問題被解出的機率為$\frac{2}{3}$
+  - label: E
+    content: 若已知恰有一人解出，則其為甲解出的機率為$\frac{2}{3}$
+  answer:
+  - A
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：$\frac{1}{2}\times \frac{1}{3}$＝$\frac{1}{6}$
+
+    (B)○：$\left( 1-\frac{1}{2} \right) \times \frac{1}{3}+\frac{1}{2}\times \left( 1-\frac{1}{3} \right)$＝$\frac{1}{2}\times \frac{1}{3}+\frac{1}{2}\times \frac{2}{3}$＝$\frac{1}{2}$
+
+    (C)○：$\left( 1 -\frac{1}{2} \right) \left( 1 -\frac{1}{3} \right)$＝$\frac{1}{3}$
+
+    (D)○：1－P（甲乙均解不出）＝1－$\frac{1}{3}$＝$\frac{2}{3}$
+
+    (E)○：$\frac{\frac{1}{2}\times \left( 1-\frac{1}{3} \right)}{\left( 1-\frac{1}{2} \right) \times \frac{1}{3}+\frac{1}{2}\times \left( 1-\frac{1}{3} \right)}$＝$\frac{\frac{1}{2}\times \frac{2}{3}}{\frac{1}{2}\times \frac{1}{3}+\frac{1}{2}\times \frac{2}{3}}$＝$\frac{2}{3}$
+
+    故選(A)(B)(C)(D)(E)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: 已知<u>阿明</u>投籃的命中率是$\frac{7}{10}$，每次投中與否互不影響，如果<u>阿明</u>連續投籃 n 次，至少一次進球的機率大於 0.99，求最小正整數 n＝＿＿＿＿。
+  answer:
+  - '4'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '1－$\left( \frac{3}{10} \right) ^{n}$＞0.99
+
+    ⇒$\left( \frac{3}{10} \right) ^{n}$＜0.01
+
+    當 n＝3，$\left( \frac{3}{10} \right) ^{3}$＝$\frac{27}{1000}$＞0.01
+
+    n＝4，$\left( \frac{3}{10} \right) ^{4}$＝$\frac{81}{10000}$＜0.01
+
+    最小正整數 n＝4'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 某校高二第二次月考數學科共 10 題，選項均為 5 選 1 的選擇題，某人 10 題會做 6 題且必答對，其餘 4 題均用猜的，則答對時是真正會答的機率為＿＿＿＿。
+  answer:
+  - $\frac{15}{17}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: '患有某疾病經檢驗判斷，結果依據如下：
+
+    患有該病的人檢驗為陽性的機率為 0.96；不患該病的人，則檢驗為陽性的機率為 0.01。今對某地區人口進行此項檢驗，已知經檢驗後為陽性，且真正患有該病的機率為$\frac{80}{100}$，求此地區患有該疾病者占全部人口的＿＿＿＿％。'
+  answer:
+  - '4'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 某一家庭有兩個小孩，若已知兩個小孩中至少有一個男孩，求兩個均為男孩的機率為＿＿＿＿。（設每一個小孩為男孩或女孩的機會均等）
+  answer:
+  - $\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 甲說實話的機率為$\frac{2}{3}$，乙說實話的機率為$\frac{4}{5}$，一袋中裝有 5 顆白球、3 顆紅球，每球被取中的機會均等。今從袋中任取一球，若甲、乙兩人均說是紅球，則此球是白球的機率為＿＿＿＿。
+  answer:
+  - $\frac{5}{29}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 某燈泡公司有北、中、南三廠，產量比率為 30 ％、30 ％、40 ％，各廠產品不合格的比率依次為 1.5 ％、1.2 ％、1 ％。某次在總倉庫中任意抽查產品一個，若此產品經檢驗為不合格，則此燈泡為北廠出品的機率為＿＿＿＿。
+  answer:
+  - $\frac{45}{121}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 擲一顆公正的骰子兩次，設 A 表示第一次擲出奇數點的事件，B 表示兩次點數和等於 8 點的事件，則 P（B｜A）＝＿＿＿＿。
+  answer:
+  - $\frac{1}{9}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e3_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 如右圖為一電路圖，其中 A、B、C 均為電器開關，已知每個開關電流通過的機率分別為$\frac{1}{2}$、$\frac{2}{3}$、$\frac{3}{4}$，且各開關操作獨立，則求電流流通的機率為＿＿＿＿。
+  assets:
+  - key: s3_8_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數B_g11s2e3/s3_8_f1.png
+    crop:
+      page: 3
+      rect:
+      - 456.95
+      - 675.35
+      - 563.35
+      - 759.25
+  answer:
+  - $\frac{5}{6}$
+  answer_status: verified
+  answer_source: answer_key

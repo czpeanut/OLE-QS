@@ -1,0 +1,434 @@
+document:
+  id: doc_111_台中_興大附中_數學_數甲_g12s1e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 111學年度第1學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 111學年度第1學期第2次定期評量
+  source_file: 高三/數學/111/1-2/台中/興大附中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 20 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題 10 分，共 30 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 50 分）
+    count: 10
+questions:
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: $\int_{-2}^{1} ( x +│ x │+ 1 )dx$之值為何？
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '5'
+  - label: C
+    content: '6'
+  - label: D
+    content: '7'
+  - label: E
+    content: '8'
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int_{-2}^{1} ( x +│ x │+ 1 )dx$＝$\int_{-2}^{0} 〔 x +( -x )+ 1 〕dx$＋$\int_{0}^{1} ( x +x + 1 )dx$
+
+    ＝$\left. x \right| _{-2}^{0}$＋$\left. ( x^{2}+x ) \right| _{0}^{1}$＝2＋2＝4
+
+    故選(A)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 令 f（x）＝x（x＋1）（$x^{3}$＋2），試問有多少個實數 a 滿足$\int_{0}^{a} f ' ( x )dx$＝0？
+  options:
+  - label: A
+    content: 1 個
+  - label: B
+    content: 2 個
+  - label: C
+    content: 3 個
+  - label: D
+    content: 4 個
+  - label: E
+    content: 5 個
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由微積分基本定理知，$\int_{0}^{a} f '' ( x )dx$＝f（a）－f(0)
+
+    $\Rightarrow$a（a＋1）（$a^{3}$＋2）＝0$\Rightarrow$a＝0 或－1 或$\sqrt[3]{-2}$，有 3 個實根
+
+    故選(C)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: '設 f（x）為實係數三次多項式函數。已知五個方程式的相異實根個數如下表所述：
+
+    | 方程式 | 相異實根的個數 |
+
+    | --- | --- |
+
+    | f（x）－20＝0 | 1 |
+
+    | f（x）－10＝0 | 1 |
+
+    | f（x）＝0 | 3 |
+
+    | f（x）＋10＝0 | 3 |
+
+    | f（x）＋20＝0 | 1 |
+
+    關於 f（x）的極小值α，試問下列哪一個選項是正確的？（$註$：極小值是指相對極小值，或稱為局部極小值）'
+  options:
+  - label: A
+    content: α不存在
+  - label: B
+    content: －20＜α＜－10
+  - label: C
+    content: －10＜α＜0
+  - label: D
+    content: 0＜α＜10
+  - label: E
+    content: 10＜α＜20
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 設函數 f（x）＝$x^{2}$ 之圖形與直線 x＝0，x＝1 及 y＝0 所圍成的圖形區域為 R，若在 x 軸上，將 x＝0 至 x＝1 之線段 n 等分，並分別在這些等分點上作上矩形，則這些上矩形的總和（即上和）$U_{n}$ 為下列何者？
+  options:
+  - label: A
+    content: $\frac{1}{3}-\frac{1}{2n}+\frac{1}{6n^{2}}$
+  - label: B
+    content: $\frac{1}{2}-\frac{1}{3n}+\frac{1}{6n^{2}}$
+  - label: C
+    content: $\frac{1}{3}+\frac{1}{2n}+\frac{1}{6n^{2}}$
+  - label: D
+    content: $\frac{1}{2}+\frac{1}{3n}+\frac{1}{6n^{2}}$
+  - label: E
+    content: $\frac{1}{2}+\frac{1}{3n}-\frac{1}{6n^{2}}$
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '因 f（x）＝$x^{2}$ 的圖形在 [ 0，1 ] 為遞增
+
+    故第 k 等分區域（k＝1，2，……，n）的上矩形面積為$\left( \frac{k}{n} \right) ^{2}$×$\frac{1}{n}$
+
+    得 $U_{n}$＝$\sum_{k =1}^{n} \left( \frac{k}{n} \right) ^{2}\times \frac{1}{n}$＝$\frac{1}{n^{3}}\sum_{k =1}^{n} k^{2}$＝$\frac{1}{n^{3}}$×$\frac{n ( n + 1 ) ( 2n + 1 )}{6}$＝$\frac{2n^{3}+ 3n^{2}+n}{6n^{3}}$＝$\frac{1}{3}$＋$\frac{1}{2n}$＋$\frac{1}{6n^{2}}$
+
+    故選(C)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 設三次函數 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d 的圖形如右所示，則下列哪些選項正確？
+  options:
+  - label: A
+    content: a＞0
+  - label: B
+    content: b＜0
+  - label: C
+    content: c＜0
+  - label: D
+    content: d＞0
+  - label: E
+    content: $b^{2}$－3ac＜0
+  group_stem: 說明：錯一個選項得 6 分，錯兩個選項得 2 分，錯 3 個選項以上不得分。
+  shared_asset: g2_1_3
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：因函數圖形由左而右一直下降，得 a＜0
+
+    (B)╳：反曲點的 x 坐標為$\frac{-b}{3a}$，又$\frac{-b}{3a}$＞0 且 a＜0，得 b＞0
+
+    (C)○：f''（x）＝$3ax^{2}$＋2bx＋c$\Rightarrow$f''(0)＝c 表 f（x）在 x＝0 之切線斜率
+
+    由題圖知，c＜0
+
+    (D)○：f(0)＝d＞0
+
+    (E)╳：因 f（x）無極值，f''（x）＝$3ax^{2}$＋2bx＋c 之判別式不為正
+
+    $\Rightarrow$（2b）$^{2}$－4×3a×c$\leq$0$\Rightarrowb^{2}$－3ac$\leq$0
+
+    故選(C)(D)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: '已知一個 n 次實係數多項式 f（x）滿足下列性質：
+
+    當 x＜0 時，f''（x）＜0 且 f''''（x）＞0；
+
+    當 0＜x＜1 時，f''（x）＜0 且 f''''（x）＜0；
+
+    當 1＜x＜4 時，f''（x）＜0 且 f''''（x）＞0；
+
+    當 x＞4 時，f''（x）＞0 且 f''''（x）＞0。
+
+    請選出正確的選項。'
+  options:
+  - label: A
+    content: f'(2)＞f'(3)
+  - label: B
+    content: f（x）在 x＝4 時有最小值
+  - label: C
+    content: f（x）的圖形只有一個反曲點
+  - label: D
+    content: n 可能為 3
+  - label: E
+    content: f（x）的最高次項係數必為正
+  group_stem: 說明：錯一個選項得 6 分，錯兩個選項得 2 分，錯 3 個選項以上不得分。
+  shared_asset: g2_1_3
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 考慮坐標平面上函數 y＝$x^{3}$＋2x＋4 的圖形（x 為任意實數），試問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: 圖形有最高點，也有最低點
+  - label: B
+    content: 圖形有水平切線
+  - label: C
+    content: $x^{3}$＋2x＋1000＝0 恰有一個實數解
+  - label: D
+    content: 若（a，b）在圖形上，則（－a，－b＋8）也在圖形上
+  - label: E
+    content: 圖形與三直線 x＝0，x＝1，y＝0 所圍成的區域之面積大於 6
+  group_stem: 說明：錯一個選項得 6 分，錯兩個選項得 2 分，錯 3 個選項以上不得分。
+  shared_asset: g2_1_3
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝$x^{3}$＋2x＋4$\Rightarrow$y''＝$3x^{2}$＋2＝0 無實數解$\Rightarrow$y'' 恆正
+
+    $\Rightarrow$y＝$x^{3}$＋2x＋4 為遞增函數
+
+    又 y''''＝6x＝0$\Rightarrow$x＝0 為反曲點的 x 坐標
+
+    (A)╳：y＝$x^{3}$＋2x＋4 為遞增函數
+
+    故無最大值（即最高點）與最小值（即最低點）
+
+    (B)╳：y''＝0 無實數解，故無水平切線
+
+    (C)○：$x^{3}$＋2x＋1000 亦為遞增函數，故 $x^{3}$＋2x＋1000＝0 恰有一個實數解
+
+    (D)○：反曲點為（0，4）
+
+    又（a，b）對（0，4）之對稱點為（－a，－b＋8）
+
+    得（－a，－b＋8）也在圖形上
+
+    (E)╳：∵當 0$\leq$x$\leq$1 時，$x^{3}$＋2x＋4＞0
+
+    ∴面積為$\int_{0}^{1} ( x^{3}+ 2x+4 )dx$＝$\left. \left( \frac{1}{4}x^{4}+x^{2}+ 4x \right) \right| _{0}^{1}$＝$\frac{1}{4}$＋1＋4＝$\frac{21}{4} < 6$
+
+    故選(C)(D)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 設某一質點做直線運動，x 秒時的速度為 V（x）（公尺／秒），其中 V（x）＝$x^{2}$＋x－2，試求此質點從 x＝1 秒至 x＝4 秒的位移為＿＿＿＿公尺。
+  answer:
+  - $\frac{45}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '此質點從 x＝1 秒至 x＝4 秒的位移為
+
+    $\int_{1}^{4} ( x^{2}+x - 2 )dx$＝$\left. \left( \frac{1}{3}x^{3}+\frac{1}{2}x^{2}- 2x \right) \right| _{1}^{4}$＝$\left( \frac{64}{3}+\frac{16}{2}-8 \right)$－$\left( \frac{1}{3}+\frac{1}{2}-2 \right)$＝$\frac{64}{3}$＋$\frac{7}{6}$＝$\frac{45}{2}$（公尺）'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: '如右圖，設函數 f（x）的圖形與 x 軸、直線 x＝a，x＝b 圍成的四個區域 $R_{1}$，$R_{2}$，$R_{3}$，$R_{4}$ 中，其面積分別為 4，8，6，5，試求
+
+    $\int_{a}^{b} f ( x )dx$＋$\int_{a}^{b} | f ( x ) |dx$＝＿＿＿＿。'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_111_台中_興大附中_數學_數甲_g12s1e2/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 432.4
+      - 602.35
+      - 564.3
+      - 729.75
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int_{a}^{b} f ( x )dx$＝$R_{1}$ 面積－$R_{2}$ 面積＋$R_{3}$ 面積－$R_{4}$ 面積＝4－8＋6－5＝－3
+
+    $\int_{a}^{b} | f ( x ) |dx$＝$R_{1}$ 面積＋$R_{2}$ 面積＋$R_{3}$ 面積＋$R_{4}$ 面積＝4＋8＋6＋5＝23
+
+    故$\int_{a}^{b} f ( x )dx$＋$\int_{a}^{b} | f ( x ) |dx$＝－3＋23＝20'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 若 f（x）＝$ax^{3}$＋$bx^{2}$＋c 的圖形有反曲點（－1，1），且在 x＝－1 處的切線斜率為 3，則序組（a，b，c）＝＿＿＿＿。
+  answer:
+  - （－1，－3，3）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$3ax^{2}$＋2bx，f''''（x）＝6ax＋2b
+
+    f（x）有反曲點（－1，1）$\Rightarrow\begin{cases}f ( -1 )= 1 \\ f '''' ( -1 )= 0\end{cases}\Rightarrow\begin{cases}-a +b +c = 1 \\ -6a + 2b = 0\end{cases}$
+
+    又 f（x）在 x＝－1 處的切線斜率為 3$\Rightarrow$f''（－1）＝3
+
+    $\Rightarrow$3a－2b＝3
+
+    解$\begin{cases}-a +b +c = 1 \\ -3a +b = 0 \\ 3a -2b = 3\end{cases}\Rightarrow\begin{cases}a =-1 \\ b =-3 \\ c = 3\end{cases}$
+
+    故序組（a，b，c）＝（－1，－3，3）'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設 A（0，1）為一定點，P 為拋物線 y＝$x^{2}$－x 上之動點，則$\overline{PA}$的最小值為＿＿＿＿。
+  answer:
+  - $\frac{\sqrt{5}}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 P（t，$t^{2}$－t）
+
+    $\Rightarrow\overline{PA}^{2}$＝$t^{2}$＋（$t^{2}$－t－1）$^{2}$＝$t^{2}$＋$t^{4}$＋$t^{2}$＋1－$2t^{3}$－$2t^{2}$＋2t
+
+    ＝$t^{4}$－$2t^{3}$＋2t＋1
+
+    令 f（t）＝$t^{4}$－$2t^{3}$＋2t＋1$\Rightarrow$f''（t）＝$4t^{3}$－$6t^{2}$＋2＝0$\Rightarrow2t^{3}$－$3t^{2}$＋1＝0
+
+    $\Rightarrow$（t－1）（$2t^{2}$－t－1）＝0$\Rightarrow$（t－1）$^{2}$（2t＋1）＝0
+
+    $\Rightarrow$t＝1 或$-\frac{1}{2}$
+
+    又當 t＜$-\frac{1}{2}$時，f''（t）＜0 且 t＞$-\frac{1}{2}$時，f''（t）＞0
+
+    $\Rightarrow$f（t）在 t＝$-\frac{1}{2}$時有最小值為$f \left( -\frac{1}{2} \right)$＝$\frac{1}{16}$－2×$\left( -\frac{1}{8} \right)$＋（－1）＋1＝$\frac{5}{16}$
+
+    故$\overline{PA}$的最小值為$\sqrt{\frac{5}{16}}$＝$\frac{\sqrt{5}}{4}$'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 有一顆半徑為 2 公吋的球形西瓜浸漬水裡，西瓜浮出水面 1 公吋，求西瓜在水面下之部分體積為＿＿＿＿立方公吋。
+  answer:
+  - 9π
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: $\lim_{n \rightarrow \infty} \frac{1^{5}+ 2^{5}+ 3^{5}+\ldots \ldots +n^{5}}{n^{6}}$之值為＿＿＿＿。
+  answer:
+  - $\frac{1}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \frac{1^{5}+ 2^{5}+\ldots \ldots +n^{5}}{n^{6}}$＝$\lim_{n \rightarrow \infty} \frac{1}{n} \left[ \left( \frac{1}{n} \right) ^{5}+\left( \frac{2}{n} \right) ^{5}+\ldots \ldots +\left( \frac{n}{n} \right) ^{5} \right]$
+
+    ＝$\int_{0}^{1} x^{5}dx$＝$\left. \frac{1}{6}x^{6} \right| _{0}^{1}$＝$\frac{1}{6}$'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 f（x）＝$x^{110}$＋$x^{109}$＋$x^{108}$＋……＋x－111，則$\lim_{x \rightarrow 1} \frac{\int_{1}^{x} f ( t )dt}{x - 1}$＝＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 設 a，b 為實數，f（x）為 5 次實係數多項式且其最高次項係數為 a。若 f（x）滿足$\int_{b}^{x} f ( t )dt$＝$\frac{3}{2}$（$x^{2}$＋2x＋2）$^{3}$－$\frac{3}{2}$，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （9，－1）
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 曲線 y－x＝6，y－$x^{3}$＝0 及 y＋x＝0 所圍成封閉區域的面積為＿＿＿＿。
+  answer:
+  - '19'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 將 y＝$x^{2}$ 與 y＝$\frac{3}{4}x^{2}$＋$\frac{1}{4}$所圍成之區域繞 x 軸旋轉，所得旋轉體之體積為＿＿＿＿。
+  answer:
+  - $\frac{\pi}{5}$
+  answer_status: verified
+  answer_source: answer_key
+shared_assets:
+- key: g2_1_3
+  label: 題組附圖
+  kind: figure
+  file: doc_111_台中_興大附中_數學_數甲_g12s1e2/g2_1_3_f1.png
+  used_by:
+  - doc_111_台中_興大附中_數學_數甲_g12s1e2_s2_1
+  - doc_111_台中_興大附中_數學_數甲_g12s1e2_s2_2
+  - doc_111_台中_興大附中_數學_數甲_g12s1e2_s2_3
+  crop:
+    page: 2
+    rect:
+    - 460.4
+    - 87.4
+    - 564.3
+    - 191.3

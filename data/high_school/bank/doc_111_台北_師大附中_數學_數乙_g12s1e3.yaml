@@ -1,0 +1,257 @@
+document:
+  id: doc_111_台北_師大附中_數學_數乙_g12s1e3
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 3
+  city: 台北
+  school_short: 師大附中
+  school: 國立臺灣師範大學附屬高級中學
+  title: 國立臺灣師範大學附屬高級中學 111學年度第1學期第3次定期評量 高三數學（數乙）科試題
+  exam_name: 111學年度第1學期第3次定期評量
+  source_file: 高三/數學/111/1-3/台北/師大附中_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 30 分）
+    count: 4
+  - ord: 2
+    name: 二、填充題（每格 7 分，共 70 分）
+    count: 5
+questions:
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 試判斷下列哪些單項式的定積分值正確？
+  options:
+  - label: A
+    content: $\int_{0}^{1} 1 dx$＝1
+  - label: B
+    content: $\int_{0}^{1} x dx$＝$\frac{1}{2}$
+  - label: C
+    content: $\int_{0}^{1} x^{2}dx$＝$\frac{1}{3}$
+  - label: D
+    content: $\int_{0}^{1} x^{3}dx$＝$\frac{1}{4}$
+  - label: E
+    content: $\int_{0}^{1} x^{4}dx$＝$\frac{1}{5}$
+  answer:
+  - A
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：$\int_{0}^{1} 1 dx$＝$\left. x \right| _{0}^{1}$＝1－0＝1
+
+    (B) ○：$\int_{0}^{1} x dx$＝$\left. \frac{1}{2}x^{2} \right| _{0}^{1}$＝$\frac{1}{2}$（$1^{2}$－$0^{2}$）＝$\frac{1}{2}$
+
+    (C) ○：$\int_{0}^{1} x^{2} dx$＝$\left. \frac{1}{3}x^{3} \right| _{0}^{1}$＝$\frac{1}{3}$（$1^{3}$－$0^{3}$）＝$\frac{1}{3}$
+
+    (D) ○：$\int_{0}^{1} x^{3} dx$＝$\left. \frac{1}{4}x^{4} \right| _{0}^{1}$＝$\frac{1}{4}$（$1^{4}$－$0^{4}$）＝$\frac{1}{4}$
+
+    (E) ○：$\int_{0}^{1} x^{4} dx$＝$\left. \frac{1}{5}x^{5} \right| _{0}^{1}$＝$\frac{1}{5}$（$1^{5}$－$0^{5}$）＝$\frac{1}{5}$
+
+    故選(A)(B)(C)(D)(E)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e3_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 若 g（x）為連續函數 f（x）的一個反導函數，則下列關係式哪些恆成立？
+  options:
+  - label: A
+    content: 微分 g'（x）＝f（x）
+  - label: B
+    content: 導函數 f'（x）＝g（x）
+  - label: C
+    content: 不定積分$\int f(x) dx$＝g（x）
+  - label: D
+    content: 定積分$\int_{a}^{b} f(x) dx$＝$\left. g(x) \right| _{a}^{b}$＝g（b）－g（a）
+  - label: E
+    content: 定積分$\left| \int_{a}^{b} f(x) dx \right|$之值表示函數 y＝f（x）的圖形在區間 [a，b] 與 x 軸所圍區域的面積
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○(B) ╳(C) ╳：∵g（x）為 f（x）的一個反導函數
+
+    ∴g''（x）＝f（x）
+
+    即$\int f(x) dx$＝g（x）＋C，其中 C 為任意常數
+
+    (D) ○
+
+    (E) ╳：反例：若 f（x）＝sinx，a＝－π，b＝π
+
+    $\left| \int_{-\pi}^{\pi} \sin x dx \right|$＝0，但其不等於在區間 [－π，π] 和 x 軸所圍區域面積
+
+    故選(A)(D)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e3_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 2
+  stem: 已知某商品的需求函數與供給函數如右圖，請挑選出正確的敘述。
+  options:
+  - label: A
+    content: 區塊甲的面積代表消費者剩餘
+  - label: B
+    content: 區塊乙的面積代表生產者剩餘
+  - label: C
+    content: 代表消費者剩餘的區塊面積＝代表生產者剩餘的區塊面積
+  - label: D
+    content: 區塊（乙＋丙＋丁）的面積代表該商品的市場總剩餘
+  - label: E
+    content: 理論上，從需求函數與供給函數的交點可得該商品市場供需平衡時的銷售量與銷售價格
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_111_台北_師大附中_數學_數乙_g12s1e3/s1_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 437.9
+      - 69.8
+      - 564.3
+      - 175.25
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○
+
+    (B) ○
+
+    (C) ╳：不一定
+
+    (D) ╳：市場總剩餘為區塊（甲＋乙）的面積
+
+    (E) ○
+
+    故選(A)(B)(E)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e3_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 2
+  stem: 已知函數 f（x）＝$x^{3}$－x、g（x）＝$x^{3}$ 與 h（x）＝x 的圖形如右圖，則下列哪些敘述正確？
+  options:
+  - label: A
+    content: y＝f（x）與 y＝g（x）圖形的對稱中心皆為原點（0，0）
+  - label: B
+    content: y＝f（x）在 x＝0 附近的一次近似為 y＝x
+  - label: C
+    content: y＝f（x）與 x 軸有三個相異交點
+  - label: D
+    content: y＝f（x）的圖形與 x 軸所圍封閉區域的面積為$2\int_{0}^{1} f(x) dx$
+  - label: E
+    content: 承(D)，該面積＝g（x）與 h（x）圖形所圍封閉區域的面積
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_111_台北_師大附中_數學_數乙_g12s1e3/s1_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 463.25
+      - 238.6
+      - 564.3
+      - 337.8
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 若不定積分$\int (1538x+1537) dx$＝$ax^{2}$＋bx＋C，其中 C 為任意常數，試求 b－a＝＿＿＿＿。
+  answer:
+  - '768'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int (1538x+1537) dx$＝$769x^{2}$＋1537x＋C
+
+    ∴b－a＝1537－769＝768'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: '已知二次不等式 f（x）＝$3x^{2}$＋mx＋n ≤ 0 的解區間為 [－1，1]，試求下列各值：
+
+    (1) 數對（m，n）＝＿＿＿＿。
+
+    (2) 定積分$\int_{-1}^{1} f(x) dx$＝＿＿＿＿。'
+  answer:
+  - (1)（0，－3）；(2)－4
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) ∵f（x）＝$3x^{2}$＋mx＋n ≤ 0 的解為－1 ≤ x ≤ 1
+
+    ⇒ 3（x＋1）（x－1）≤ 0 ⇒ $3x^{2}$－3 ≤ 0
+
+    ∴數對（m，n）＝（0，－3）
+
+    (2)$\int_{-1}^{1} f(x) dx$＝$\int_{-1}^{1} (3x^{2}-3) dx$＝$\left. (x^{3}-3x) \right| _{-1}^{1}$＝（1－3）－〔（－1）＋3〕＝－4'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: '如右示意圖，已知三次函數 f（x）＝$x^{3}$ 與二次函數 g（x）＝$2x^{2}$ 的圖形交於相異兩點 P（α，β）、Q（γ，δ），試求下列各值：
+
+    (1) α＋β＋γ＋δ＝＿＿＿＿。
+
+    (2) 兩圖形所圍封閉區域的面積為＿＿＿＿。'
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_111_台北_師大附中_數學_數乙_g12s1e3/s2_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 482.0
+      - 531.85
+      - 564.3
+      - 649.05
+  answer:
+  - (1) 10；(2)$\frac{4}{3}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: '已知台 G 店小農出產一款有機環保芳香奈米精油，當銷售 x 瓶時，其需求函數為 D（x）＝360－0.04x（單位：元），供給函數為 S（x）＝0.16x（單位：元）。若在市場供需均衡的狀態下，試求與該精油相關的下列數值：
+
+    (1) 均衡產量為＿＿＿＿瓶。
+
+    (2) 均衡價格為＿＿＿＿元。
+
+    (3) 消費者剩餘為＿＿＿＿元。
+
+    (4) 生產者剩餘為＿＿＿＿元。'
+  answer:
+  - (1) 1800；(2) 288；(3) 64800；(4) 259200；(5) 324000
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 總剩餘為＿＿＿＿元。

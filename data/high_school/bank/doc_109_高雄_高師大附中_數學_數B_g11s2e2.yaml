@@ -1,0 +1,331 @@
+document:
+  id: doc_109_高雄_高師大附中_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 2
+  city: 高雄
+  school_short: 高師大附中
+  school: 國立高雄師範大學附屬高級中學
+  title: 國立高雄師範大學附屬高級中學 109學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 109學年度第2學期第2次定期評量
+  source_file: 高二/數學/109/2-2/高雄/高師大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、 單選題：
+    count: 4
+  - ord: 2
+    name: 二、 多選題：
+    count: 2
+  - ord: 3
+    name: 三、 填充題：
+    count: 11
+  - ord: 4
+    name: 四、 計算題：
+    count: 1
+questions:
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: '有三個袋子A，B，C，各袋中有黑球、白球、紅球個數如附表，依機會均等的原則先任選一袋，再由袋中任取一球，在取出的球為黑球的條件下，此球取自B袋的機率為
+
+    | 袋 球 | A | B | C |
+
+    | --- | --- | --- | --- |
+
+    | 黑球 | 3 | 2 | 2 |
+
+    | 白球 | 4 | 8 | 3 |
+
+    | 紅球 | 5 | 6 | 3 |'
+  options:
+  - label: A
+    content: $\frac{5}{24}$
+  - label: B
+    content: $\frac{1}{4}$
+  - label: C
+    content: $\frac{1}{5}$
+  - label: D
+    content: $\frac{5}{12}$
+  - label: E
+    content: $\frac{7}{24}$
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 取自B袋 | 取出黑球 )＝$\frac{\frac{1}{3}\times \frac{2}{16}}{\frac{1}{3}\times \frac{3}{12}+\frac{1}{3}\times \frac{2}{16}+\frac{1}{3}\times \frac{2}{8}}$＝$\frac{1}{5}$， 故選(B)
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 若事件A，B是獨立且A$\subseteq$B，P
+  options:
+  - label: A
+    content: ＞0，則 (A) P
+  - label: B
+    content: ＝0 (B) P (B)＝$\frac{1}{4}$
+  - label: C
+    content: P (B)＝$\frac{1}{2}$
+  - label: D
+    content: P (B)＝1
+  - label: E
+    content: P (B)不確定
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ×：因為P (A)＞0，且A$\subseteq$B，所以P (B)＞0 (B) ×：因為A，B獨立，所以P (A) P (B)＝P ( A∩B )，又A$\subseteq$B， 因此P ( A∩B )＝P (A) ⇒ P (A) P (B)＝P (A) ⇒ P (B)＝1 (C) ×：承(B)，可知錯誤 (D)○：承(B)，可知正確 (E)○：承(B)，可知錯誤 故選(D)
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 某班有45位同學，因同學學習認真，為班級榮譽團結一致，老師特製45張彩券投入摸彩箱內作為獎勵，其中10張有獎，其餘35張沒有獎，試問下列敘述何者正確？
+  options:
+  - label: A
+    content: <u>小美</u>吵著第一個抽，她認為第一個中獎的機會最大
+  - label: B
+    content: <u>小美</u>第一個抽沒中，<u>阿喜</u>第二個抽，他心中暗喜，中獎的機會提高了
+  - label: C
+    content: 第一個沒中，第二個<u>阿喜</u>果真中了，第三個<u>阿三</u>心想：一個沒中，一個中了，互相抵消，並不影響原中獎機率
+  - label: D
+    content: <u>小胖</u>最後一個抽，但在他抽之前，10張有獎彩券已全被摸出，於是他抗議不公平，一開始他就認為最後一個抽的人，中獎機會最低
+  - label: E
+    content: 事實上，在抽獎前每位同學中獎機會均為$\frac{1}{45}$，與順序無關
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ×：先抽或後抽中獎機會均為$\frac{10}{45}$ (B)○：P ( <u>阿喜</u>中奬 | <u>小美</u>沒中獎 )＝$\frac{10}{44}$＝$\frac{5}{22}$＞$\frac{10}{45}$，所以中獎機會提高 (C) ×：P ( <u>阿三</u>中獎 | 第1人沒中且第2人抽中 )＝$\frac{9}{43}$≠$\frac{10}{45}$ (D) ×：承(A)可知錯誤 (E) ×：承(A)可知錯誤 故選(B)
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 一袋中有60個燈泡，其中有8個是壞的，現在逐個檢查，不再放回，求第三次取到不良品的機率為
+  options:
+  - label: A
+    content: $\frac{2}{15}$
+  - label: B
+    content: $\frac{4}{15}$
+  - label: C
+    content: $\frac{13}{15}$
+  - label: D
+    content: $\frac{104}{885}$
+  - label: E
+    content: $\frac{52}{885}$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 第三次取到不良品 )＝P ( 第一次取到不良品 )＝$\frac{8}{60}$＝$\frac{2}{15}$ 故選(A)
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列關於機率的敘述，哪些是適當的？
+  options:
+  - label: A
+    content: <u>大雄</u>數學小考沒有一次超過60分，他覺得這次期中考數學及格的機率是90％
+  - label: B
+    content: <u>阿福</u>認為投擲一個圖釘，針尖朝上的機率為0.4，針尖朝下的機率為0.7，
+  - label: C
+    content: <u>靜香</u>假設硬幣出現正、反兩面的機會均等，擲出正面的機率應該是0.5
+  - label: D
+    content: <u>大雄</u>覺得自己考上前三志願的機率50％，考上第一志願的機率為60％
+  - label: E
+    content: 任取一個特殊硬幣，連擲1000次，正面出現300次，則再投擲一次此硬幣，出現正面的機率約為0.3
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)○：屬於主觀機率 (B) ×：朝上與朝下的機率總和應為1 (C)○：因為出現正面或反面的機率總和為1，且兩者出現的機率均等，所以出現正面的機率為0.5 (D) ×：考上第一志願的機率不應該超過考上前三志願的機率 (E)○：屬於客觀機率，其機率約為$\frac{300}{1000}$＝0.3 故選(A)(C)(E)
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列敘述哪些是正確的？
+  options:
+  - label: A
+    content: 若A，B為獨立事件，則A'，B也是獨立事件
+  - label: B
+    content: 設P (A)＞0且P (B)＞0，則P ( A∩B )＝P (B)．P ( A | B )＝P (A)．P ( B | A )
+  - label: C
+    content: 設P (A)＞0且P (B)＞0，若事件A，B為獨立事件，則P ( A | B )＝P (A)且P ( B | A )＝P (B)
+  - label: D
+    content: 若A，B為獨立事件，B，C為獨立事件，則A，C也是獨立事件
+  - label: E
+    content: 若事件A，B為互斥事件，則事件A，B為獨立事件
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)○：若A，B為獨立事件，則P (A) P (B)＝P ( A∩B ) ⇒ P ( A'∩B )＝P (B)－P ( A∩B ) ＝P (B)－P (A) P (B)＝P (B) ( 1－P (A) ) ＝P (A' ) P (B)，即A'與B為獨立事件 (B)○：P (B)．P ( A | B )＝P (B)×$\frac{P(A\cap B)}{P(B)}$＝P ( A∩B )，P (A)．P ( B | A )＝P (A)×$\frac{P(A\cap B)}{P(A)}$＝P ( A∩B ) (C)○：若A，B為獨立事件，則P (A) P (B)＝P ( A∩B ) P ( A | B )＝$\frac{P(A\cap B)}{P(B)}$＝$\frac{P(A)P(B)}{P(B)}$＝P (A)， P ( B | A )＝$\frac{P(A\cap B)}{P(A)}$＝$\frac{P(A)P(B)}{P(A)}$＝P (B) (D) ×：A與C不一定為獨立事件 (E) ×：A與C不一定為獨立事件 故選(A)(B)(C)
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 1
+  stem: 設A，B表二事件，若P ( A∪B )＝$\frac{3}{5}$，P ( A∩B )＝$\frac{1}{5}$，P ( B' )＝$\frac{2}{5}$，則P ( B' | A )＝＿＿＿＿。
+  answer:
+  - '0'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( A∪B )＋P (A)＋P (B)－P ( A∩B ) ⇒ $\frac{3}{5}$＝P (A)＋$\frac{3}{5}$－$\frac{1}{5}$ ⇒ P (A)＝$\frac{1}{5}$ 故P ( B' | A )＝$\frac{P(A\cap B')}{P(A)}$＝$\frac{P(A)-P(A\cap B)}{P(A)}$＝$\frac{\frac{1}{5}-\frac{1}{5}}{\frac{1}{5}}$＝0
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 1
+  stem: 附圖為一電路圖，其中A，B，C為通電開關，彼此互不影響，其個別通電機率為p，則電流自甲流至乙的機率為＿＿＿＿。
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_109_高雄_高師大附中_數學_數B_g11s2e2/s3_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 66.9
+      - 698.45
+      - 200.25
+      - 751.4
+  answer:
+  - p＋$p^{2}$－$p^{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: p ( 甲流至乙 )＝1－p ( 上不通且下不通 )＝1－p ( 上不通 ) p ( 下不通 ) ＝1－( 1－$p^{2}$ ) ( 1－p )＝p＋$p^{2}$－$p^{3}$
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 1
+  stem: 甲乙說真話的機率為$\frac{7}{10}$，$\frac{9}{10}$，今袋中有3白球，7黑球，由丙任取一球，給甲乙分別看過，今對此球顏色而言，甲說是白的，乙說是黑的，問此時甲說實話之機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{10}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 甲說實話 | 甲說白且乙說黑 )＝$\frac{\frac{3}{10}\times \frac{7}{10}\times \frac{1}{10}}{\frac{3}{10}\times \frac{7}{10}\times \frac{1}{10}+\frac{7}{10}\times \frac{3}{10}\times \frac{9}{10}}=\frac{1}{10}$
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 1
+  stem: 有甲、乙兩個錢袋，甲袋裝有金幣1個與銀幣5個；乙袋裝有銀幣3個。今由甲袋取出3個錢幣放入乙袋，再由乙袋取出4個錢幣放入甲袋，則金幣在乙袋的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{6}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 1
+  stem: '某大學科系有45位學校推薦及個人申請名額。已知錄取的相關數據如附表，令A表示學校推薦的事件，B表示錄取女生的事件，若A與B為獨立事件，則x－y＝＿＿＿＿。
+
+    |  | 推薦 | 申請 |
+
+    | --- | --- | --- |
+
+    | 男 | 15 | 12 |
+
+    | 女 | x | y |'
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知15＋12＋x＋y＝45 ⇒ x＋y＝18 因為A與B為獨立事件，所以P ( A∩B )＝P (A) P (B) ⇒ $\frac{15+x}{45}\times \frac{x+y}{45}=\frac{x}{45}$ ⇒ 18 ( 15＋x )＝45x ⇒ x＝10，y＝8，故x－y＝10－8＝2
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 1
+  stem: 今有一闖三關之遊戲，第一關通過後才能闖第二關，第二關通過後才能闖第三關，各關通過之機率分別為$\frac{3}{6}$，$\frac{2}{6}$，$\frac{1}{6}$，今知甲未能過關，問甲是在第二關或第二關以後敗陣之機率為＿＿＿＿。
+  answer:
+  - $\frac{17}{35}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 甲在第二關或第二關以後敗陣 | 甲未能過關 ) $=\frac{\frac{3}{6}\times \frac{4}{6}+\frac{3}{6}\times \frac{2}{6}\times \frac{5}{6}}{1-\frac{3}{6}\times \frac{2}{6}\times \frac{1}{6}}=\frac{102}{210}=\frac{17}{35}$
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 某公司共有5個工廠，各工廠的產量都一樣，且所生產的產品都放進同一倉庫中，由過去的經驗知道，第R個工廠的產品不良率為$\frac{2R}{65}$，其中R＝1，2，3，4，5。為了檢驗倉庫中這一批產品的品質，從倉庫中任意抽出一件，若為不良品，則此不良品是來自第二個工廠的機率為＿＿＿＿。
+  answer:
+  - $\frac{2}{15}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 不良品來自第二個工廠 | 不良品 ) $=\frac{\frac{1}{5}\times \frac{4}{65}}{\frac{1}{5}\times \frac{2}{65}+\frac{1}{5}\times \frac{4}{65}+\frac{1}{5}\times \frac{6}{65}+\frac{1}{5}\times \frac{8}{65}+\frac{1}{5}\times \frac{10}{65}}=\frac{4}{30}=\frac{2}{15}$
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 某實驗室欲評估血液偵測老年癡呆症技術的誤判率（即偵測錯誤的機率）。共有760人接受此血液偵測技術實驗，實驗前已知樣本中有735人未患老年癡呆症。實驗後，血液偵測判斷為未患老年癡呆症者有665人，其中真正未患老年癡呆症有660人。試問此血液偵測技術的誤判率為＿＿＿＿。
+  answer:
+  - $\frac{2}{19}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 實驗室透過驗血來測試肝炎，85％的肝炎患者都是呈陽性反應，而5％的非肝炎患者也會呈陽性反應。今任選一人驗血，若驗後呈陽性反應，則此人患有肝炎的機率為0.6，則實際患有肝炎者占全體人口的比率為＿＿＿＿。
+  answer:
+  - $\frac{3}{37}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 宴會在場的50位賓客有人偷了主人的珠寶，由於賓客身上都沒有珠寶，而且他們都不承認偷竊。警方決定動用測謊機，並且只問客人一個問題：「你有沒有偷珠寶？」已知若某人說謊，則測謊器顯示他說謊的機率為92％；若某人誠實，則測謊器顯示他誠實的機率是88％。若最後測謊器顯示有10人說謊，則真正的竊賊有＿＿＿＿人。
+  answer:
+  - '5'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 2
+  stem: 某疫病可分為兩種類型：第一類占$\frac{3}{4}$，可藉由藥物A治療，其每一次療程成功的機率為$\frac{2}{3}$，且每次療程成功與否互相獨立；其餘為第二類，藥物A治療完全無效。現在不知患者所患疾病的類型，且用藥物A第一次療程失敗的情況下，進行第二次療程成功的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 第二次成功 | 用藥物A第一次失敗 )$=\frac{\frac{3}{4}\times \frac{1}{3}\times \frac{6}{3}}{\frac{3}{4}\times \frac{1}{3}+\frac{1}{4}}=\frac{6}{9+9}=\frac{1}{3}$
+- id: doc_109_高雄_高師大附中_數學_數B_g11s2e2_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 2
+  stem: '設8支籤中有3支籤是有獎的，今有甲、乙、丙三人，按甲、乙、丙的順序各抽出一支籤，抽出後不再放回。試回答下列問題：
+
+    (1) 甲、乙均抽中有獎籤的機率為何？( 單選 )'
+  options:
+  - label: A
+    content: $\frac{3}{8}$
+  - label: B
+    content: $\frac{2}{7}$
+  - label: C
+    content: $\frac{9}{56}$
+  - label: D
+    content: $\frac{9}{64}$
+  - label: E
+    content: $\frac{3}{28}$。 (2) 恰一人中獎的機率為何？ (3) 試求在乙中獎的條件下，恰有一人中獎的機率為何？

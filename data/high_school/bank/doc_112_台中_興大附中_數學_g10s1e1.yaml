@@ -1,0 +1,365 @@
+document:
+  id: doc_112_台中_興大附中_數學_g10s1e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 112學年度第1學期第1次定期評量 高一數學科試題
+  exam_name: 112學年度第1學期第1次定期評量
+  source_file: 高一/數學/112/1-1/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 20 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 24 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 48 分）
+    count: 8
+  - ord: 4
+    name: 四、計算題（共 8 分）
+    count: 1
+questions:
+- id: doc_112_台中_興大附中_數學_g10s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 已知 a＝$10^{－log8}$，b＝$10^{－2 log4}$，c＝$10^{－4 log2}$，d＝$10^{－8 log1}$，則 a，b，c，d 的大小關係為何？
+  options:
+  - label: A
+    content: a＝b＝c＝d
+  - label: B
+    content: a＝d＞b＝c
+  - label: C
+    content: d＞a＞c＞b
+  - label: D
+    content: d＞a＞b＝c
+  - label: E
+    content: d＞a＞b＞c
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_g10s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 將$\frac{166}{495}$化成小數後，若小數後第 n 位數字為 $a_{n}$，則 $a_{1}$＋$a_{2}$＋……＋$a_{20}$＝？
+  options:
+  - label: A
+    content: '51'
+  - label: B
+    content: '61'
+  - label: C
+    content: '69'
+  - label: D
+    content: '75'
+  - label: E
+    content: '78'
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '使用長除法如右，得$\frac{166}{495}$＝$0.3\overline{35}$
+
+    ⇒ $a_{1}$＝3，$a_{2}$＋$a_{3}$＝$a_{4}$＋$a_{5}$＝……＝$a_{18}$＋$a_{19}$＝8
+
+    又 $a_{20}$＝3
+
+    故 $a_{1}$＋$a_{2}$＋……＋$a_{20}$＝3＋8×9＋3＝78
+
+    故選(E)'
+- id: doc_112_台中_興大附中_數學_g10s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 一位 Nikola Slavkovic 的科學愛好研究家在 youtube 影片中表示，若一張紙厚度約 0.0001 公尺，紙對折一次，厚度翻倍，以此推論得到，對折 30 次大約 100 公里高的厚度。已知地球距離月球 384400 公里，根據 Nikola Slavkovic 的推論，請問最少對折幾次可以超過地球到月球的距離？
+  options:
+  - label: A
+    content: '40'
+  - label: B
+    content: '42'
+  - label: C
+    content: '44'
+  - label: D
+    content: '46'
+  - label: E
+    content: '48'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意知 0.0001×$2^{30}$×$\frac{1}{1000}$≈ 100 公里
+
+    且對折 k 次後的厚度為 0.0001×$2^{k}$×$\frac{1}{1000}$公里
+
+    令 0.0001×$2^{k}$×$\frac{1}{1000}$＝384400 公里
+
+    ⇒$\left( 0.0001\times 2^{30}\times \frac{1}{1000} \right) \times 2^{k-30}=384400$⇒ $2^{k－30}$ ≈ 3844
+
+    又 $2^{11}$＝2048＜3844＜4096＝$2^{12}$
+
+    ∴11＜k－30＜12 ⇒ 41＜k＜42
+
+    最少對折 42 次
+
+    故選(B)'
+- id: doc_112_台中_興大附中_數學_g10s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 設 x，y 為實數，｜x－7｜＜4，｜y－4｜＜2，使｜xy－40｜＜k 成立之最小 k 值為何？
+  options:
+  - label: A
+    content: '18'
+  - label: B
+    content: '26'
+  - label: C
+    content: '34'
+  - label: D
+    content: '40'
+  - label: E
+    content: '66'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\begin{cases}| x-7 | < 4 \\ | y-4 | < 2\end{cases}$⇒$\begin{cases}-4<x-7< 4 \\ -2<y-4< 2\end{cases}$⇒$\begin{cases}3 <x < 11 \\ 2 <y < 6\end{cases}$
+
+    ⇒ 6＜xy＜66
+
+    ⇒－34＜xy－40＜26
+
+    得｜xy－40｜＜34 ⇒ 最小 k 值為 34
+
+    故選(C)'
+- id: doc_112_台中_興大附中_數學_g10s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 已知 a，b 為非零實數，且 a＜b，請選出恆成立的選項。
+  options:
+  - label: A
+    content: a＜$\frac{a+b}{4}$＜b
+  - label: B
+    content: $\frac{3a+b}{4}$＜$\frac{2a+b}{3}$
+  - label: C
+    content: 若 n＝$\frac{b}{a}$，則 n 為有理數
+  - label: D
+    content: 可找到 a，b 使得 a＋b$\sqrt{2}$＝0 成立
+  - label: E
+    content: 若 0＜a＜b，則$\frac{a+b}{2}$的最小值為$\sqrt{ab}$
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_g10s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 關於絕對值求解問題的敘述，試選出正確的選項。
+  options:
+  - label: A
+    content: ｜x－1｜＝2 恰有 2 個解
+  - label: B
+    content: ｜x－1｜＋｜x＋1｜＝1 恰有 2 個解
+  - label: C
+    content: ｜x－1｜＋｜x＋1｜＝2 恰有 2 個解
+  - label: D
+    content: 若 a 為非零實數，則｜ax－1｜≤ 2 的解為$\frac{-1}{a}$ ≤ x ≤$\frac{3}{a}$
+  - label: E
+    content: 承(D)，｜ax－1｜≤ 2 和｜－ax＋1｜≤ 2 的解相同
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：∵｜x－1｜＝2 ⇒ x－1＝± 2 ∴x＝3 或－1
+
+    (B) ╳：∵｜x－1｜＋｜x＋1｜≥｜1－（－1）｜＝2 ∴無解
+
+    (C) ╳：當－1 ≤ x ≤ 1 時，｜x－1｜＋｜x＋1｜＝2
+
+    ∴有無限多組解
+
+    (D) ╳：反例：當 a＝－1 時，｜－x－1｜≤ 2 之解為－3 ≤ x ≤ 1
+
+    並非$\frac{-1}{-1}$≤ x ≤$\frac{3}{-1}$
+
+    (E) ○：絕對值內變號不影響答案
+
+    故選(A)(E)'
+- id: doc_112_台中_興大附中_數學_g10s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 已知 $10^{1.3617}$ ≈ 23，則下列選項哪些正確？
+  options:
+  - label: A
+    content: log23 ≈ 1.3617
+  - label: B
+    content: log46 ≈ 2.7234
+  - label: C
+    content: $10^{0.3617}$ ≈ 2.3
+  - label: D
+    content: $23^{10}$ 為 14 位數
+  - label: E
+    content: $23^{－10}$ 化成小數後第 13 位開始不為 0
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：log23 ≈ $log10^{1.3617}$＝1.3617
+
+    (B) ╳：∵$10^{1.3617}$ ≈ 23
+
+    ∴（$10^{1.3617}$）$^{2}$ ≈ $23^{2}$ ⇒ $10^{2.7234}$ ≈ 529
+
+    即 log529 ≈ 2.7234≠log46
+
+    (C) ○：$10^{0.3617}$＝$\frac{10^{1.3617}}{10}$≈$\frac{23}{10}$＝2.3
+
+    (D) ○：$23^{10}$ ≈ （$10^{1.3617}$）$^{10}$＝$10^{13.617}$＝$10^{0.617}$×$10^{13}$ ⇒ 14 位數
+
+    (E) ╳：承(D)，$23^{－10}$＝（$23^{10}$）$^{－1}$＝$10^{－13.617}$＝$10^{0.383}$×$10^{－14}$
+
+    ⇒ 小數點後第 14 位開始不為 0
+
+    故選(A)(C)(D)'
+- id: doc_112_台中_興大附中_數學_g10s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 設正實數 x 的小數部分為 b，若 $x^{2}$＝9－4$\sqrt{2}$，則$\frac{1}{b}$＝＿＿＿＿。
+  answer:
+  - $\frac{\sqrt{2} + 1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x^{2}$＝9－$4\sqrt{2}$⇒ x＝$\sqrt{9-4\sqrt{2}}$＝$\sqrt{9-2\sqrt{8}}$＝$\sqrt{8}$－1＝2$\sqrt{2}$－1
+
+    又$\sqrt{4}$－1＜$\sqrt{8}$－1＜$\sqrt{9}$－1 ⇒ 1＜2$\sqrt{2}$－1＜2
+
+    即 x 的整數部分為 1
+
+    ⇒ b＝（2$\sqrt{2}$－1）－1＝2$\sqrt{2}$－2
+
+    故$\frac{1}{b}$＝$\frac{1}{2\sqrt{2}-2}$＝$\frac{2\sqrt{2}+2}{8-4}$＝$\frac{\sqrt{2} + 1}{2}$'
+- id: doc_112_台中_興大附中_數學_g10s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 若 $2^{x}$＋$2^{－x}$＝$\sqrt{5}$，試求$\frac{8^{x}+8^{-x}}{4^{x}+4^{-x}}$＝＿＿＿＿。
+  answer:
+  - $\frac{2\sqrt{5}}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（$2^{x}$＋$2^{－x}$）$^{2}$＝$4^{x}$＋$4^{－x}$＋2＝5 ⇒ $4^{x}$＋$4^{－x}$＝3
+
+    又 $8^{x}$＋$8^{－x}$＝（$2^{x}$＋$2^{－x}$）（$4^{x}$－1＋$4^{－x}$）＝$\sqrt{5}$×（3－1）＝2$\sqrt{5}$
+
+    故所求為$\frac{2\sqrt{5}}{3}$'
+- id: doc_112_台中_興大附中_數學_g10s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 若不等式｜ax＋3｜≤ b 的解為－3 ≤ x ≤ 7，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - $\left( -\frac{3}{2} , \frac{15}{2} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '－3 ≤ x ≤ 7 ∵中點$\frac{(-3)+7}{2}$＝2 且－3－2 ≤ x－2 ≤ 7－2 ⇒｜x－2｜≤ 5
+
+    同乘以$\left| -\frac{3}{2} \right|$，得$\left| -\frac{3}{2}x+3 \right|$≤$\frac{15}{2}$
+
+    ∴a＝$-\frac{3}{2}$，b＝$\frac{15}{2}$
+
+    故數對（a，b）＝$\left( -\frac{3}{2} , \frac{15}{2} \right)$'
+- id: doc_112_台中_興大附中_數學_g10s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設 x，y 為實數，且（2.3）$^{x}$＝（2.3×$10^{5}$）$^{y}$＝10，則$\frac{1}{x}-\frac{1}{y}$＝＿＿＿＿。
+  answer:
+  - －5
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_g10s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 滿足 n 為偶數且 0.3 ≤ logn＜1.5 的整數 n 共有＿＿＿＿個。（已知 2≈ $10^{0.3010}$，$\sqrt{10}$≈ 3.16）
+  answer:
+  - '15'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_g10s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 求所有滿足等式 4｜x－57｜＝3｜x－78｜之實數 x 的和為＿＿＿＿。
+  answer:
+  - '60'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_g10s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: '國內 59 歲超級馬拉松好手羅維銘連續兩年成功完賽紐約「超越自我 3100 英里跑挑戰賽」
+
+    （Self-Transcendence 3100 Mile Race），每天從早上 6 點到午夜 12 點，一直繞著紐約皇后區愛迪生高中周邊，重複繞完 5649 圈即完成賽事，完跑里程，足以環臺灣 5 圈。Lu 想透過科學方法來了解自己能否跑這麼久，根據數據的擬合得到，Lu 跑 t 小時後，他剩下的能量為初始的（100×$a^{t}$）％，其中 a 為常數。若當他跑 1.5 小時（t＝1.5）後，Lu 剩下初始一半的能量，則跑 3 小時 45 分後，Lu 剩下的能量為初始的＿＿＿＿％。（四捨五入至小數點後第一位，已知$\sqrt{2}$≈ 1.414，$\sqrt{3}$≈ 1.732）'
+  answer:
+  - '17.7'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_g10s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 如右圖所示，△ABC 與△BCD 均為直角三角形，∠CAB＝∠BCD＝90°，$\overline{AB}$＝3，$\overline{AC}$＝4，$\overline{BC}$＝5。令 P 為$\overline{AD}$上一點，對線段$\overline{BC}$做垂線，分別與線段$\overline{AC}$、$\overline{BC}$交於 Q、R 兩點，求當$\overline{PQ}$×$\overline{QR}$為最大時，此時$\overline{PQ}$長為＿＿＿＿。
+  assets:
+  - key: s3_8_f1
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e1/s3_8_f1.png
+    crop:
+      page: 3
+      rect:
+      - 449.8
+      - 54.15
+      - 564.3
+      - 124.55
+  answer:
+  - $\frac{10}{3}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_g10s1e1_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: 解方程式｜x－2｜＋｜3x＋1｜＝9。（8 分）

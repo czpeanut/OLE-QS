@@ -1,0 +1,440 @@
+document:
+  id: doc_111_台中_興大附中_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 111學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 111學年度第1學期第1次定期評量
+  source_file: 高三/數學/111/1-1/台中/興大附中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 16 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，共 6 分）
+    count: 1
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 78 分）
+    count: 13
+questions:
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 試求$\lim_{n \rightarrow \infty} \frac{\left( \frac{10}{11} \right) ^{n}}{\left( \frac{9}{10} \right) ^{n}+ \left( \frac{11}{12} \right) ^{n}}$＝？
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: '1'
+  - label: C
+    content: $\frac{1}{2}$
+  - label: D
+    content: '2'
+  - label: E
+    content: 不存在
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{9}{10}$＜$\frac{10}{11}$＜$\frac{11}{12}$，原式的分子、分母同除以$\left( \frac{11}{12} \right) ^{n}$得
+
+    $\lim_{n \rightarrow \infty} \frac{\left( \frac{10}{11} \right) ^{n}}{\left( \frac{9}{10} \right) ^{n}+ \left( \frac{11}{12} \right) ^{n}}$＝$\lim_{n \rightarrow \infty} \frac{\left( \frac{10\times 12}{11^{2}} \right) ^{n}}{\left( \frac{9\times 12}{10\times 11} \right) ^{n}+ 1}$＝$\frac{0}{0 + 1}$＝0
+
+    故選(A)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 試求$\lim_{x \rightarrow 0} \frac{2x}{\tan 7x}$＝？
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: '1'
+  - label: C
+    content: $\frac{2}{7}$
+  - label: D
+    content: $\frac{7}{2}$
+  - label: E
+    content: 不存在
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow 0} \frac{2x}{\tan 7x}$＝$\lim_{x \rightarrow 0} \frac{2x \cos 7x}{\sin 7x}$＝$\lim_{x \rightarrow 0} \left( \frac{2}{7}\times \frac{7x}{\sin 7x}\times \cos 7x \right)$＝$\frac{2}{7}$×1×1＝$\frac{2}{7}$
+
+    故選(C)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 試求$\lim_{n \rightarrow \infty} \left( \frac{1}{\sqrt{2n^{2}+1}}+\frac{1}{\sqrt{2n^{2}+2}}+\cdots \cdots +\frac{1}{\sqrt{2n^{2}+n}} \right)$＝？
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: '1'
+  - label: C
+    content: $\frac{1}{2}$
+  - label: D
+    content: $\frac{1}{\sqrt{2}}$
+  - label: E
+    content: 不存在
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \frac{n}{\sqrt{2n^{2}+n}}$＜$\lim_{n \rightarrow \infty} \left( \frac{1}{\sqrt{2n^{2}+1}}+\frac{1}{\sqrt{2n^{2}+2}}+\cdots \cdots +\frac{1}{\sqrt{2n^{2}+n}} \right)$＜$\lim_{n \rightarrow \infty} \frac{n}{\sqrt{2n^{2}+1}}$
+
+    又$\lim_{n \rightarrow \infty} \frac{n}{\sqrt{2n^{2}+n}}$＝$\lim_{n \rightarrow \infty} \frac{1}{\sqrt{2+\frac{1}{n}}}$＝$\frac{1}{\sqrt{2}}$
+
+    $\lim_{n \rightarrow \infty} \frac{n}{\sqrt{2n^{2}+1}}$＝$\lim_{n \rightarrow \infty} \frac{1}{\sqrt{2+\frac{1}{n^{2}}}}$＝$\frac{1}{\sqrt{2}}$
+
+    由夾擠定理得$\lim_{n \rightarrow \infty} \left( \frac{1}{\sqrt{2n^{2}+1}}+\frac{1}{\sqrt{2n^{2}+2}}+\cdots \cdots +\frac{1}{\sqrt{2n^{2}+n}} \right)$＝$\frac{1}{\sqrt{2}}$
+
+    故選(D)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 試求$\lim_{x \rightarrow \infty} ( \sqrt{x + \sqrt{x + \sqrt{x}}} - \sqrt{x} )$＝？
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: '1'
+  - label: C
+    content: $\frac{1}{2}$
+  - label: D
+    content: $\frac{1}{4}$
+  - label: E
+    content: 不存在
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow \infty} ( \sqrt{x + \sqrt{x + \sqrt{x}}} - \sqrt{x} )$＝$\lim_{x \rightarrow \infty} \frac{( \sqrt{x + \sqrt{x + \sqrt{x}}} - \sqrt{x} ) ( \sqrt{x + \sqrt{x + \sqrt{x}}} + \sqrt{x} )}{\sqrt{x + \sqrt{x + \sqrt{x}}} + \sqrt{x}}$ ＝$\lim_{x \rightarrow \infty} \frac{( \sqrt{x + \sqrt{x + \sqrt{x}}} )^{2}-( \sqrt{x} )^{2}}{\sqrt{x + \sqrt{x + \sqrt{x}}} + \sqrt{x}}$＝$\lim_{x \rightarrow \infty} \frac{\sqrt{x + \sqrt{x}}}{\sqrt{x + \sqrt{x + \sqrt{x}}}+ \sqrt{x}}$ ＝$\lim_{x \rightarrow \infty} \frac{\sqrt{1+\frac{\sqrt{x}}{x}}}{\sqrt{1+\frac{\sqrt{x + \sqrt{x}}}{x}} + 1}$＝$\frac{1}{1+1}$＝$\frac{1}{2}$
+
+    故選(C)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列各極限哪些存在？
+  options:
+  - label: A
+    content: $\lim_{x \rightarrow 1} \frac{x | x |- 1}{x - 1}$
+  - label: B
+    content: $\lim_{x \rightarrow 0} x \sin \frac{1}{x}$
+  - label: C
+    content: $\lim_{x \rightarrow 0} \frac{1 - \cos x}{x}$
+  - label: D
+    content: $\lim_{x \rightarrow 0} f ( x )$，其中 f（x）＝$\begin{cases}1 , x 為有理數 \\ 0 , x 為無理數\end{cases}$
+  - label: E
+    content: $\sum_{n =1}^{\infty} ( \sqrt{n+1} - \sqrt{n} )$
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：$\lim_{x \rightarrow 1^{+}} \frac{x | x |- 1}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{x ( x )- 1}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{x^{2}- 1}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} ( x + 1 )$＝2
+
+    $\lim_{x \rightarrow 1^{-}} \frac{x | x |- 1}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{x ( x )- 1}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{x^{2}- 1}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} ( x + 1 )$＝2
+
+    ∴$\lim_{x \rightarrow 1} \frac{x | x |- 1}{x - 1}$＝2
+
+    (B)○：$\lim_{x \rightarrow 0} \left| x \sin \frac{1}{x} \right|\leq\lim_{x \rightarrow 0} | x |$＝0$\left( \because \left| \sin \frac{1}{x} \right| \leq 1 \right)$
+
+    由夾擠定理知，$\lim_{x \rightarrow 0} \left| x \sin \frac{1}{x} \right|$＝0 ∴$\lim_{x \rightarrow 0} x \sin \frac{1}{x}$＝0
+
+    (C)○：$\lim_{x \rightarrow 0} \frac{1-\cos x}{x}$＝$\lim_{x \rightarrow 0} \frac{( 1-\cos x ) ( 1+\cos x )}{x ( 1+\cos x )}$＝$\lim_{x \rightarrow 0} \frac{1-\cos ^{2}x}{x ( 1+\cos x )}$
+
+    ＝$\lim_{x \rightarrow 0} \frac{\sin ^{2}x}{x ( 1+\cos x )}$＝$\lim_{x \rightarrow 0} \left( \frac{\sin x}{x}\times \frac{\sin x}{1+\cos x} \right)$＝1×$\frac{0}{1 + 1}$＝0
+
+    (D)╳：x 為有理數時，$\lim_{x \rightarrow 0} f ( x )$＝$\lim_{x \rightarrow 0} 1$＝1
+
+    x 為無理數時，$\lim_{x \rightarrow 0} f ( x )$＝$\lim_{x \rightarrow 0} 0$＝0
+
+    ∴$\lim_{x \rightarrow 0} f ( x )$不存在
+
+    (E)╳：$\sum_{n =1}^{\infty} ( \sqrt{n + 1} - \sqrt{n} )$＝$\lim_{k \rightarrow \infty} \sum_{n =1}^{k} ( \sqrt{n + 1} - \sqrt{n} )$
+
+    ＝$\lim_{k \rightarrow \infty} 〔 ( \sqrt{2} - \sqrt{1} ) + ( \sqrt{3} - \sqrt{2} ) + ( \sqrt{4} - \sqrt{3} ) + ( \sqrt{5} - \sqrt{4} ) +\cdots \cdots + ( \sqrt{k+1} - \sqrt{k} ) 〕$
+
+    ＝$\lim_{k \rightarrow \infty} ( \sqrt{k+1} - \sqrt{1} )$不存在
+
+    故選(A)(B)(C)'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 求級數 1×31＋2×28＋3×25＋4×22＋……＋20×（－26）＝＿＿＿＿。（每一項都是兩等差數列逐項相乘）
+  answer:
+  - －1470
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 求$\lim_{x \rightarrow 0} \frac{( x + 1 )^{20}- 1}{x}$＝＿＿＿＿。
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow 0} \frac{( x + 1 )^{20}- 1}{x}$＝$\lim_{x \rightarrow 0} \frac{( 1 +C_{1}^{20}x +C_{2}^{20}x^{2}+\cdots \cdots +C_{20}^{20}x^{20} )- 1}{x}$
+
+    ＝$\lim_{x \rightarrow 0} \frac{C_{1}^{20}x +C_{2}^{20}x^{2}+\cdots \cdots +C_{20}^{20}x^{20}}{x}$
+
+    ＝$\lim_{x \rightarrow 0} ( C_{1}^{20}+C_{2}^{20}x +C_{3}^{20}x^{2}+\cdots \cdots +C_{20}^{20}x^{19} )$
+
+    ＝$C_{1}^{20}$＝20'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 若$\lim_{x \rightarrow -2} \frac{f ( x )}{x^{2}}$＝1，則$\lim_{x \rightarrow -2} \left( f ( x )+\frac{f ( x )}{x} \right)$＝＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow -2} \frac{f ( x )}{x^{2}}$＝1$\Rightarrow\frac{f ( -2 )}{( -2 )^{2}}$＝1$\Rightarrow$f（－2）＝4
+
+    ∴$\lim_{x \rightarrow -2} \left( f ( x )+\frac{f ( x )}{x} \right)$＝f（－2）＋$\frac{f ( -2 )}{-2}$＝4＋$\frac{4}{-2}$＝2'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 若$\lim_{x \rightarrow -1} \frac{2x^{2}+ax +b}{x^{2}-x - 2}$＝$\frac{5}{3}$，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （－1，－3）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow -1} \frac{2x^{2}+ax +b}{x^{2}-x - 2}$＝$\lim_{x \rightarrow -1} \frac{2x^{2}+ax +b}{( x + 1 ) ( x - 2 )}$＝$\frac{5}{3}\Rightarrow$x＋1 為 $2x^{2}$＋ax＋b 的因式
+
+    $\Rightarrow$2（－1）$^{2}$＋a（－1）＋b＝0$\Rightarrow$b＝a－2 ……（＊）
+
+    （＊）代回原式得
+
+    $\lim_{x \rightarrow -1} \frac{2x^{2}+ax +( a - 2 )}{( x + 1 ) ( x - 2 )}$＝$\lim_{x \rightarrow -1} \frac{2 ( x^{2}- 1 )+a ( x + 1 )}{( x + 1 ) ( x - 2 )}$
+
+    ＝$\lim_{x \rightarrow -1} \frac{2 ( x - 1 )+a}{x - 2}$＝$\frac{2 ( -1 - 1 )+a}{-1 - 2}$＝$\frac{5}{3}$
+
+    $\Rightarrow\frac{-4 +a}{-3}$＝$\frac{5}{3}\Rightarrow$a＝－1
+
+    代回（＊）得 b＝－3
+
+    ∴數對（a，b）＝（－1，－3）'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 若$\lim_{x \rightarrow 0} \frac{\sqrt{ax +b} - 2}{x}$＝1，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （4，4）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow 0} \frac{\sqrt{ax +b} - 2}{x}$＝1$\Rightarrow\sqrt{a ( 0 )+b}$－2＝0$\Rightarrow\sqrt{b}$＝2$\Rightarrow$b＝4
+
+    $\lim_{x \rightarrow 0} \frac{\sqrt{ax + 4} - 2}{x}$＝$\lim_{x \rightarrow 0} \frac{( \sqrt{ax + 4} - 2 ) ( \sqrt{ax + 4} + 2 )}{x ( \sqrt{ax + 4} + 2 )}$＝$\lim_{x \rightarrow 0} \frac{ax}{x ( \sqrt{ax + 4} + 2 )}$
+
+    ＝$\lim_{x \rightarrow 0} \frac{a}{\sqrt{ax + 4} + 2}$＝$\frac{a}{\sqrt{4} + 2}$＝1$\Rightarrow$a＝4
+
+    ∴數對（a，b）＝（4，4）'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 謝爾賓斯基地毯（Sierpinski carpet）是<u>波蘭</u>數學家<u>謝爾賓斯基</u>（Sierpinski，1882～1969）在 1916 年提出的一種碎形結構：如下圖，邊長為 6 單位長的正方形，第一次將其平分成 9 塊（九宮格形），然後挖去中間一塊；第二次再將剩餘各塊各平分成 9 塊，分別去掉中間各一塊，以此類推。設第 n 次挖去之正方形面積和為 $a_{n}$，則$\sum_{n =1}^{\infty} a_{n}$＝＿＿＿＿。
+  assets:
+  - key: s3_6_f1
+    kind: figure
+    file: doc_111_台中_興大附中_數學_數甲_g12s1e1/s3_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 97.5
+      - 343.0
+      - 203.2
+      - 448.7
+  - key: s3_6_f2
+    kind: figure
+    file: doc_111_台中_興大附中_數學_數甲_g12s1e1/s3_6_f2.png
+    crop:
+      page: 2
+      rect:
+      - 209.3
+      - 343.0
+      - 315.0
+      - 448.7
+  - key: s3_6_f3
+    kind: figure
+    file: doc_111_台中_興大附中_數學_數甲_g12s1e1/s3_6_f3.png
+    crop:
+      page: 2
+      rect:
+      - 321.1
+      - 343.0
+      - 426.8
+      - 448.7
+  - key: s3_6_f4
+    kind: figure
+    file: doc_111_台中_興大附中_數學_數甲_g12s1e1/s3_6_f4.png
+    crop:
+      page: 2
+      rect:
+      - 432.9
+      - 343.0
+      - 538.6
+      - 448.7
+  answer:
+  - '36'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{1}$＝（$6^{2}$）×$\frac{1}{9}$，$a_{2}$＝$\left( 6^{2}\times \frac{8}{9} \right)$×$\frac{1}{9}$，$a_{3}$＝$\left( 6^{2}\times \frac{8}{9}\times \frac{8}{9} \right)$×$\frac{1}{9}$，……
+
+    $\sum_{n =1}^{\infty} a_{n}$＝$\sum_{n =1}^{\infty} \left( 6^{2}\times \frac{1}{9} \right) \left( \frac{8}{9} \right) ^{n - 1}$＝$6^{2}$×$\frac{1}{9}$×$\frac{1}{1 -\frac{8}{9}}$＝$6^{2}$＝36'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 若 a，b 為實數，欲使函數 f（x）＝$\begin{cases}ax -b , x\leq 1 \\ x^{2}+bx + 4 , x > 1\end{cases}$為一連續且可微分函數，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （－1，－3）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '①連續：$\lim_{x \rightarrow 1^{-}} f ( x )$＝$\lim_{x \rightarrow 1^{+}} f ( x )\Rightarrow\lim_{x \rightarrow 1^{-}} ( ax -b )$＝$\lim_{x \rightarrow 1^{+}} ( x^{2}+bx + 4 )$
+
+    $\Rightarrow$a－b＝1＋b＋4$\Rightarrow$a－2b＝5
+
+    ②可微：$\lim_{x \rightarrow 1^{-}} \frac{f ( x )-f ( 1 )}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{f ( x )-f ( 1 )}{x - 1}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{-}} \frac{( ax -b )-( a -b )}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{( x^{2}+bx + 4 )-( 1 +b + 4 )}{x - 1}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{-}} \frac{a ( x - 1 )}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{( x^{2}- 1 )+b ( x - 1 )}{x - 1}$
+
+    $\Rightarrow$a＝2＋b$\Rightarrow$a－b＝2
+
+    由①、②得數對（a，b）＝（－1，－3）'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 設 f（x）＝（$2x^{2}$＋3）（$x^{3}$－2x＋2），則 f'（－1）＝＿＿＿＿。
+  answer:
+  - －7
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝（$2x^{2}$＋3）''（$x^{3}$－2x＋2）＋（$2x^{2}$＋3）（$x^{3}$－2x＋2）''
+
+    ＝4x（$x^{3}$－2x＋2）＋（$2x^{2}$＋3）（$3x^{2}$－2）
+
+    ∴f''（－1）＝4（－1）〔（－1）$^{3}$－2（－1）＋2〕＋〔2（－1）$^{2}$＋3〕〔3（－1）$^{2}$－2〕
+
+    ＝（－4）×3＋5×1＝－12＋5＝－7'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 設 f（x）＝$\frac{2x + 1}{x^{2}+ 4x + 1}$，則 f'(0)＝＿＿＿＿。
+  answer:
+  - －2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$\frac{( 2x + 1 ) '' ( x^{2}+ 4x + 1 )-( 2x + 1 ) ( x^{2}+ 4x + 1 ) ''}{( x^{2}+ 4x + 1 )^{2}}$
+
+    ＝$\frac{2 ( x^{2}+ 4x + 1 )-( 2x + 1 ) ( 2x + 4 )}{( x^{2}+ 4x + 1 )^{2}}$
+
+    ∴f''(0)＝$\frac{2\times 1 - 1\times 4}{1^{2}}$＝－2'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 試求過函數 f（x）＝（2x－1）$^{4}$＋1 上一點 P（1，2）的切線方程式為＿＿＿＿。
+  answer:
+  - y＝8x－6
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝〔（2x－1）$^{4}$＋1〕''＝4（2x－1）$^{3}$×2＝8（2x－1）$^{3}$
+
+    $\Rightarrow$f''(1)＝8（2×1－1）$^{3}$＝8
+
+    ∴切線方程式為 y－2＝8（x－1）$\Rightarrow$y＝8x－6'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 2
+  stem: 求函數 f（x）＝－$x^{3}$＋$3x^{2}$＋2x 的圖形之所有切線中，斜率最大之切線方程式為＿＿＿＿。
+  answer:
+  - y＝5x－1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝（－$x^{3}$＋$3x^{2}$＋2x）''＝－$3x^{2}$＋6x＋2＝－3（x－1）$^{2}$＋5
+
+    x＝1 時，f''（x）有最大值為 5
+
+    又 f(1)＝－1＋3＋2＝4
+
+    ∴斜率最大的切線方程式為 y－4＝5（x－1）$\Rightarrow$y＝5x－1'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 2
+  stem: 試求 f（x）＝$x^{10}$＋2x＋1 在 x＝1 附近的一次近似為＿＿＿＿。
+  answer:
+  - y＝12x－8
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝（$x^{10}$＋2x＋1）''＝$10x^{9}$＋2$\Rightarrow$f''(1)＝10＋2＝12
+
+    又 f(1)＝1＋2＋1＝4
+
+    所求即 x＝1 處之切線
+
+    ∴在 x＝1 附近的一次近似為 y－4＝12（x－1）$\Rightarrow$y＝12x－8'
+- id: doc_111_台中_興大附中_數學_數甲_g12s1e1_s3_13
+  section: 3
+  number: 13
+  type: fill
+  page: 2
+  stem: 設 P 點為 f（x）＝$x^{2}$－8 圖形外一點，已知過 P 點的切線有兩條，其斜率分別為 3，－5，試求 P 點的坐標為＿＿＿＿。
+  answer:
+  - $\left( -\frac{1}{2} , -\frac{47}{4} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設切點為 Q（a，$a^{2}$－8），f''（x）＝2x$\Rightarrow$f''（a）＝2a＝3 或－5
+
+    a＝$\frac{3}{2}$時，切點為$\left( \frac{3}{2} , -\frac{23}{4} \right)\Rightarrow$切線方程式為 y－$\left( -\frac{23}{4} \right)$＝$3 \left( x -\frac{3}{2} \right)\Rightarrow$12x－4y＝41
+
+    a＝$-\frac{5}{2}$時，切點為$\left( -\frac{5}{2} , -\frac{7}{4} \right)\Rightarrow$切線方程式為 y－$\left( -\frac{7}{4} \right)$＝$-5 \left[ x - \left( -\frac{5}{2} \right) \right]\Rightarrow$20x＋4y＝－57
+
+    $\begin{cases}12x - 4y = 41 \\ 20x + 4y =-57\end{cases}\Rightarrow$x＝$-\frac{1}{2}$，y＝$-\frac{47}{4}$
+
+    故 P 點坐標為$\left( -\frac{1}{2} , -\frac{47}{4} \right)$'

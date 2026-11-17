@@ -1,0 +1,562 @@
+document:
+  id: doc_108_台北_大同_數學_g10s2e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 108
+  semester: 2
+  exam_seq: 1
+  city: 台北
+  school_short: 大同
+  school: 臺北市立大同高級中學
+  title: 臺北市立大同高級中學 108學年度第2學期第1次定期評量 高一數學科試題
+  exam_name: 108學年度第2學期第1次定期評量
+  source_file: 高一/數學/108/2-1/台北/大同.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、是非題（每題 3 分，共 12 分）
+    count: 4
+  - ord: 2
+    name: 二、單一選擇題（每題 4 分，共 8 分）
+    count: 2
+  - ord: 3
+    name: 三、多重選擇題（每題 7 分，共 28 分）
+    count: 3
+  - ord: 4
+    name: 四、填充題（每題 5 分，共 35 分）
+    count: 7
+  - ord: 5
+    name: 五、計算題（共 17 分）
+    count: 3
+questions:
+- id: doc_108_台北_大同_數學_g10s2e1_s1_1
+  section: 1
+  number: 1
+  type: calc
+  page: 1
+  stem: 若已知數列〈 $a_{n}$ 〉的前四項分別為$a_{1}=3$，$a_{2}=\frac{3}{2}$，$a_{3}=\frac{3}{4}$，$a_{4}=\frac{3}{8}$，則$a_{5}=\frac{3}{16}$。
+  answer:
+  - ╳
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ╳：此數列未必為等比數列，$a_{5}$ 可為任意數
+- id: doc_108_台北_大同_數學_g10s2e1_s1_2
+  section: 1
+  number: 2
+  type: calc
+  page: 1
+  stem: 若〈 $a_{n}$ 〉為一等比數列，則$a_{n}^{2}=a_{n-2}\times a_{n+2}$。
+  answer:
+  - ○
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '○：設首項 $a_{1}$，公比為 r，則
+
+    $a_{n-2}\times a_{n+2}$＝$a_{1}r^{n-3}\times a_{1}r^{n+1}$＝$(a_{1}r^{n-1})^{2}$＝$a_{n}^{2}$'
+- id: doc_108_台北_大同_數學_g10s2e1_s1_3
+  section: 1
+  number: 3
+  type: calc
+  page: 1
+  stem: 已知一組數據 $x_{1}$，$x_{2}$，……，$x_{n}$ 的平均數為 78，將某一筆數據從 58 增加為 69 與另一筆數據從 87 減少為 76，其他不變，則數據的標準差增加。
+  answer:
+  - ╳
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '╳：設 $x_{1}$＝58，$x_{1}$''＝69，$x_{2}$＝87，$x_{2}$''＝76，且調整後的平均數亦為 78
+
+    ⇒（58－78）$^{2}$＋（87－78）$^{2}$＋（$x_{3}$－78）$^{2}$＋……＋（$x_{n}$－78）$^{2}$ ＞（69－78）$^{2}$＋（76－78）$^{2}$＋（$x_{3}$－78）$^{2}$＋……＋（$x_{n}$－78）$^{2}$
+
+    故標準差變小'
+- id: doc_108_台北_大同_數學_g10s2e1_s1_4
+  section: 1
+  number: 4
+  type: calc
+  page: 1
+  stem: <u>大同高中</u>的<u>小陳</u>同學對於老師的提問回答道：「因為最適直線（迴歸直線）的斜率為$a=r\frac{\sigma _{y}}{\sigma _{x}}$，所以若一組二維數據的相關係數愈大，則最適直線（迴歸直線）的斜率就愈大」。請問<u>小陳</u>同學的論述是否正確？
+  answer:
+  - ╳
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ╳：還需要考慮σ$_{x}$ 與σ$_{y}$ 的大小
+- id: doc_108_台北_大同_數學_g10s2e1_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 1
+  stem: 從 0 開始，依照先向上，再向右，再向下，再向右的規律將所有整數依序排列如右圖，請問下列哪一個選項是由 2019 經 2020 到 2021 的圖形？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: s2_1_optA
+      file: doc_108_台北_大同_數學_g10s2e1/s2_1_optA.png
+      crop:
+        page: 1
+        rect:
+        - 154.2
+        - 395.9
+        - 198.0
+        - 440.2
+  - label: B
+    content: ''
+    asset:
+      key: s2_1_optB
+      file: doc_108_台北_大同_數學_g10s2e1/s2_1_optB.png
+      crop:
+        page: 1
+        rect:
+        - 237.55
+        - 396.05
+        - 281.85
+        - 440.1
+  - label: C
+    content: ''
+    asset:
+      key: s2_1_optC
+      file: doc_108_台北_大同_數學_g10s2e1/s2_1_optC.png
+      crop:
+        page: 1
+        rect:
+        - 321.55
+        - 396.15
+        - 365.85
+        - 439.95
+  - label: D
+    content: ''
+    asset:
+      key: s2_1_optD
+      file: doc_108_台北_大同_數學_g10s2e1/s2_1_optD.png
+      crop:
+        page: 1
+        rect:
+        - 406.2
+        - 395.9
+        - 450.25
+        - 440.2
+  - label: E
+    content: ''
+    asset:
+      key: s2_1_optE
+      file: doc_108_台北_大同_數學_g10s2e1/s2_1_optE.png
+      crop:
+        page: 1
+        rect:
+        - 488.9
+        - 396.15
+        - 532.95
+        - 439.95
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_108_台北_大同_數學_g10s2e1/s2_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 338.3
+      - 316.1
+      - 564.3
+      - 370.9
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_108_台北_大同_數學_g10s2e1_s2_2
+  section: 2
+  number: 2
+  type: single
+  page: 1
+  stem: '若某年度的指考，全體考生的英文平均 81 分，標準差 4 分；數學平均 64 分，標準差 10 分。假設某大學的指考分發入學是採計當年度指考英文與數學「標準化」後分數的加總，再以擇優錄取方式，錄取 1 人。右表是<u>大陳</u>、<u>小時</u>、<u>阿中</u>、<u>阿豪</u>、<u>讚讚</u>等五位同學今年度指考的英文與數學成績，試問該校系應錄取哪一位同學？
+
+    | 科目 | 英文成績 | 數學成績 |
+
+    | --- | --- | --- |
+
+    | <u>大陳</u> | 89 | 60 |
+
+    | <u>小時</u> | 77 | 84 |
+
+    | <u>阿中</u> | 80 | 62 |
+
+    | <u>阿豪</u> | 85 | 69 |
+
+    | <u>讚讚</u> | 79 | 74 |'
+  options:
+  - label: A
+    content: <u>大陳</u>
+  - label: B
+    content: <u>小時</u>
+  - label: C
+    content: <u>阿中</u>
+  - label: D
+    content: <u>阿豪</u>
+  - label: E
+    content: <u>讚讚</u>
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '標準化成績＝$\frac{原成績-平均}{標準差}$
+
+    將原成績標準化後如右表
+
+    <u>大陳</u>總和最高，故選(A)'
+- id: doc_108_台北_大同_數學_g10s2e1_s3_1
+  section: 3
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列哪些選項是正確的？
+  options:
+  - label: A
+    content: 已知有一等差數列的第 3 項和第 8 項分別為 9 和 44，則此數列的首項為－5
+  - label: B
+    content: 一等比數列前 4 項的和是 5，前 12 項的和是 285，則前 8 項的和是 40
+  - label: C
+    content: 此級數 1×2＋2×3＋3×4＋……＋9×10 之和為 320
+  - label: D
+    content: 設〈 $a_{n}$ 〉是等差數列，則$\langle 3^{a_{n}}\rangle$為等比數列
+  - label: E
+    content: 設〈 $a_{n}$ 〉是等差數列，則$\langle a_{n}+a_{n+1}\rangle$亦為等差數列
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：公差$d=\frac{44-9}{8-3}=7$，故首項為 9－7×2＝－5
+
+    (B) ╳：依題意得$\begin{cases}\frac{a_{1} (1-r^{4})}{1-r}=5 \\ \frac{a_{1} (1-r^{12})}{1-r}=285\end{cases}$
+
+    兩式相除得$\frac{1-r^{12}}{1-r^{4}}=57=\frac{5}{1-r^{4}}$
+
+    ⇒ $r^{8}$＋$r^{4}$＋1＝57 ⇒ $r^{8}$＋$r^{4}$－56＝0 ⇒ $r^{4}$＝7 或－8
+
+    $r^{4}$＝7
+
+    ⇒ $\frac{a_{1}}{1-r}=\frac{5}{1-r^{4}}=\frac{5}{1-7}=-\frac{5}{6}$，前 8 項的和為$\frac{a_{1} (1-r^{8})}{1-r}$＝$-\frac{5}{6}\times (1-7^{2})$＝40
+
+    $r^{4}$＝－8
+
+    ⇒ $\frac{a_{1}}{1-r}=\frac{5}{1-r^{4}}=\frac{5}{1+8}=\frac{5}{9}$，前 8 項的和為$\frac{a_{1} (1-r^{8})}{1-r}$＝$\frac{5}{9}\times 〔1-(-8)^{2}〕$＝－35
+
+    故前 8 項的和是 40 或－35
+
+    〈另解〉
+
+    $S_{4}$，$S_{8}$－$S_{4}$，$S_{12}$－$S_{8}$ 成等比
+
+    ⇒ （$S_{8}$－5）$^{2}$＝5×（285－$S_{8}$）
+
+    ⇒ $S_{8}^{2}$－$5S_{8}$－1400＝0 ⇒ （S－40）（S＋35）＝0 ⇒ $S_{8}$＝40 或－35
+
+    (C) ╳：1×2＋2×3＋……＋9×10
+
+    ＝（$1^{2}$＋1）＋（$2^{2}$＋2）＋……＋（$9^{2}$＋9）
+
+    ＝（$1^{2}$＋$2^{2}$＋……＋$9^{2}$）＋（1＋2＋……＋9）
+
+    ＝$\frac{9\times 10\times 19}{6}+\frac{9\times 10}{2}$＝285＋45＝330
+
+    (D) ○：$\frac{3^{a_{n+1}}}{3^{a_{n}}}=3^{a_{n+1}-a_{n}}=3^{d}$，其中 d 為$\langle a_{n}\rangle$的公差，$3^{d}$ 為定值
+
+    故$\langle 3^{a_{n}}\rangle$為等比數列
+
+    (E) ○：（$a_{n＋1}$＋$a_{n＋2}$）－（$a_{n}$＋$a_{n＋1}$）＝（$a_{n＋1}$－$a_{n}$）＋（$a_{n＋2}$－$a_{n＋1}$）
+
+    ＝d＋d＝2d
+
+    故〈 $a_{n}$＋$a_{n＋1}$ 〉為等差數列
+
+    故選(A)(D)(E)'
+- id: doc_108_台北_大同_數學_g10s2e1_s3_3
+  section: 3
+  number: 3
+  type: multiple
+  page: 2
+  stem: '下列五組數據資料，試問哪些選項正確？
+
+    甲：1、2、3、4、5
+
+    乙：4、5、6、7、8
+
+    丙：2、4、6、8、10
+
+    丁：1、3、5、7、9
+
+    戊：2、2、4、4、6、6、8、8、10、10'
+  options:
+  - label: A
+    content: 甲、乙的平均數相同
+  - label: B
+    content: 乙、丙的中位數相同
+  - label: C
+    content: 丙、戊的第 30 百分位數 $P_{30}$ 相同
+  - label: D
+    content: 丙、丁的標準差相同
+  - label: E
+    content: 丁、戊的標準差相同
+  answer:
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '乙＝甲＋3，丙＝2×甲，丁＝2×甲－1
+
+    (A) ╳：μ$_{乙}$＝μ$_{甲}$＋3
+
+    (B) ○：$Me_{乙}$＝$Me_{丙}$＝6
+
+    (C) ○：$5\times \frac{30}{100}=1.5$，故 $P_{30丙}$＝4
+
+    $10\times \frac{30}{100}=3$，故 $P_{30戊}$＝$\frac{4+4}{2}$＝4
+
+    (D) ○：丙＝丁＋1 ⇒ σ$_{丙}$＝σ$_{丁}$
+
+    (E) ○：σ$_{丁}$＝σ$_{丙}$，又σ$_{丙}$＝σ$_{戊}$，故σ$_{丁}$＝σ$_{戊}$
+
+    故選(B)(C)(D)(E)'
+- id: doc_108_台北_大同_數學_g10s2e1_s3_4
+  section: 3
+  number: 4
+  type: multiple
+  page: 2
+  stem: 若數列〈 $a_{n}$ 〉滿足遞迴關係式$\begin{cases}a_{1}=1 \\ a_{n}=a_{n-1}+n^{2}-1 , n\geq 2\end{cases}$，此數列的級數和定義為 $S_{n}$＝$a_{1}$＋$a_{2}$＋$a_{3}$＋……＋$a_{n}$，則以下敘述哪些正確？
+  options:
+  - label: A
+    content: $a_{5}$＝57
+  - label: B
+    content: $a_{n}$＝$\frac{n (n+1) (2n+1)}{6}-n+1$，n ≥ 1
+  - label: C
+    content: $a_{n}$＝$S_{n}$－$S_{n－1}$，n ≥ 2
+  - label: D
+    content: $S_{1}$＝5
+  - label: E
+    content: $S_{5}$＝95
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_108_台北_大同_數學_g10s2e1_s4_1
+  section: 4
+  number: 1
+  type: fill
+  page: 2
+  stem: '數學小知識：康托爾集（Cantor set）是由<u>德國</u>數學家<u>康托爾</u>提出，並且奠定了現代點集拓樸學的基礎。所謂的康托爾三分點集的建構法如下 （如右圖）：
+
+    第一步，將一條長度為 1 單位的線段去掉中間三分之一。
+
+    第二步，把剩下的所有線段再去掉中間三分之一。
+
+    第三步之後，重複上一步驟的動作。
+
+    如此的不斷去掉線段的中間三分之一後，所剩下的部分就稱為康托爾三分點集。
+
+    若此建構法進行到第九步時，剩下的線段共有 m 條，線段的總長度為 n 單位，試求數對（m，n）＝＿＿＿＿。（以指數形式表示之）'
+  assets:
+  - key: s4_1_f1
+    kind: figure
+    file: doc_108_台北_大同_數學_g10s2e1/s4_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 332.75
+      - 548.05
+      - 564.3
+      - 648.5
+  answer:
+  - $\left( 2^{9} , \frac{2^{9}}{3^{9}} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 $a_{k}$，$b_{k}$ 分別表示第 k 步時，剩下的線段數與總長度，則
+
+    $a_{1}$＝2，$a_{2}$＝4，$a_{3}$＝8，……
+
+    $b_{1}$＝$\frac{1}{3}\times 2$，$b_{2}$＝$\left( \frac{1}{3} \right) ^{2}\times 2^{2}$，$b_{3}$＝$\left( \frac{1}{3} \right) ^{3}\times 2^{3}$，……
+
+    故 $a_{9}$＝$2^{9}$，$b_{9}$＝$\left( \frac{1}{3} \right) ^{9}\times 2^{9}$＝$\frac{2^{9}}{3^{9}}$
+
+    ⇒ 數對（m，n）＝$\left( 2^{9} , \frac{2^{9}}{3^{9}} \right)$'
+- id: doc_108_台北_大同_數學_g10s2e1_s4_2
+  section: 4
+  number: 2
+  type: fill
+  page: 2
+  stem: 等差數列〈 $a_{n}$ 〉，其公差為正數，滿足 $a_{1}$＋$a_{2}$＋$a_{3}$＋……＋$a_{15}$＝0 且 ｜$a_{1}$｜＋｜$a_{2}$｜＋｜$a_{3}$｜＋……＋｜$a_{15}$｜＝112，則 $a_{5}$＝＿＿＿＿。
+  answer:
+  - －6
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{1}$＋$a_{2}$＋……＋$a_{15}$＝0 ⇒ $15a_{8}$＝0 ⇒ $a_{8}$＝0
+
+    令公差為 d，d＞0
+
+    ⇒ ｜$a_{1}$｜＋｜$a_{2}$｜＋……＋｜$a_{15}$｜＝｜－7d｜＋｜－6d｜＋……＋｜6d｜＋｜7d｜＝112
+
+    ⇒ 56d＝112 ⇒ d＝2
+
+    故 $a_{5}$＝$a_{8}$－3d＝－6'
+- id: doc_108_台北_大同_數學_g10s2e1_s4_3
+  section: 4
+  number: 3
+  type: fill
+  page: 2
+  stem: 求級數$\frac{1^{3}}{1}+\frac{1^{3}+2^{3}}{1+2}+\frac{1^{3}+2^{3}+3^{3}}{1+2+3}+\ldots \ldots +\frac{1^{3}+2^{3}+3^{3}+\ldots \ldots +k^{3}}{1+2+3+\ldots \ldots +k}+\ldots \ldots +\frac{1^{3}+2^{3}+3^{3}+\ldots \ldots +23^{3}}{1+2+3+\ldots \ldots +23}$的和＝＿＿＿＿。
+  answer:
+  - '2300'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\frac{1^{3}+2^{3}+\ldots \ldots +k^{3}}{1+2+\ldots \ldots +k}$＝$\frac{\left[ \frac{k (k+1)}{2} \right] ^{2}}{\frac{k (k+1)}{2}}$＝$\frac{k (k+1)}{2}$＝$\frac{1}{2} (k^{2}+k)$
+
+    ∴所求為$\frac{1}{2} 〔 (1^{2}+1) + (2^{2}+2)+\ldots \ldots +(23^{2}+23) 〕$
+
+    ＝$\frac{1}{2} 〔 (1^{2}+2^{2}+\ldots \ldots +23^{2}) + (1+2+\ldots \ldots +23) 〕$
+
+    ＝$\frac{1}{2} \left( \frac{23\times 24\times 47}{6}+\frac{23\times 24}{2} \right)$
+
+    ＝$\frac{1}{2} (4324+276)$
+
+    ＝2300'
+- id: doc_108_台北_大同_數學_g10s2e1_s4_4
+  section: 4
+  number: 4
+  type: fill
+  page: 3
+  stem: 設三數 $a_{1}$，$a_{2}$，$a_{3}$ 為公差大於 0 的等差數列且和為 30，若此三數 $a_{1}$＋4，$a_{2}$＋2，$a_{3}$＋2 成等比數列，請問原等差數列 $a_{1}$，$a_{2}$，$a_{3}$ 之公差為＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令公差為 d ⇒ $a_{2}$－d＋$a_{2}$＋$a_{2}$＋d＝30 ⇒ $a_{2}$＝10
+
+    又 10－d＋4，10＋2，10＋d＋2 成等比數列
+
+    故 $12^{2}$＝（14－d）（12＋d） ⇒ d $^{2}$－2d－24＝0 ⇒ d＝6 或－4
+
+    ∵d＞0 ∴d＝6'
+- id: doc_108_台北_大同_數學_g10s2e1_s4_5
+  section: 4
+  number: 5
+  type: fill
+  page: 3
+  stem: 已知有一組 11 筆的數據，從小到大排列恰好為一等差數列且公差為 d，則這組數據的變異數σ$^{2}$ 為＿＿＿＿。（以 d 表示之）
+  answer:
+  - 10d $^{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵此 11 筆數據 $a_{1}$ ≤ $a_{2}$ ≤ …… ≤ $a_{11}$ 成等差
+
+    ∴平均數為 $a_{6}$
+
+    故σ$^{2}$＝$\frac{(a_{1}-a_{6})^{2}+(a_{2}-a_{6})^{2}+\ldots \ldots +(a_{11}-a_{6})^{2}}{11}$
+
+    ＝$\frac{(25d^{2}+16d^{2}+9d^{2}+4d^{2}+d^{2})\times 2}{11}$
+
+    ＝$\frac{110d^{2}}{11}$＝10d $^{2}$'
+- id: doc_108_台北_大同_數學_g10s2e1_s4_6
+  section: 4
+  number: 6
+  type: fill
+  page: 3
+  stem: '下表是 109 學年度學科能力測驗數學科級分人數累計表。定義頂標、前標、均標、後標、底標分別為第 88、75、50、25、12 百分位數考生的級分。設此次考試的數學科頂標為 a 級分，均標為 b 級分，試求 a＋b＝＿＿＿＿。
+
+    | 級分 |  | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | 數學 | 人數 | 14,489 | 11,334 | 8,828 | 8,891 | 9,098 | 8,050 | 9,400 | 9,173 |
+
+    |  | 累計人數 | 129,087 | 114,598 | 103,264 | 94,436 | 85,545 | 76,447 | 68,397 | 58,997 |
+
+    | 級分 |  | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+
+    | 數學 | 人數 | 7,804 | 9,107 | 9,116 | 8,330 | 8,928 | 5,336 | 1,147 | 56 |
+
+    |  | 累計人數 | 49,824 | 42,020 | 32,913 | 23,797 | 15,467 | 6,539 | 1,203 | 56 |'
+  answer:
+  - '23'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '總人數為 129087 人
+
+    ∵$129087\times \frac{88}{100}$＝113596.56
+
+    ∴$P_{88}$ 為由低至高第 113597 位的成績
+
+    又 113597＞103264（13 級分累積人數） ∴a＝14
+
+    ∵$129087\times \frac{50}{100}$＝64543.5
+
+    ∴$P_{50}$ 為由低至高第 64544 位的成績
+
+    又 64544＞58997（8 級分累積人數） ∴b＝9
+
+    故 a＋b＝23'
+- id: doc_108_台北_大同_數學_g10s2e1_s4_7
+  section: 4
+  number: 7
+  type: fill
+  page: 3
+  stem: <u>大同高中</u>的<u>阿中</u>老師將班上 50 名學生分為甲、乙兩組，甲組學生 30 人，數學段考成績平均 72 分，標準差 8 分；乙組學生 20 人，平均 67 分，標準差 7 分，則全班 50 人的標準差為 ＿＿＿＿分。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令甲組成績為 $x_{1}$，$x_{2}$，……，$x_{30}$ 分，乙組成績為 $x_{31}$，$x_{32}$，……，$x_{50}$ 分
+
+    ⇒ $x_{1}$＋$x_{2}$＋……＋$x_{30}$＝72×30＝2160，$x_{31}$＋$x_{32}$＋……＋$x_{50}$＝67×20＝1340
+
+    ⇒ $\frac{x_{1}+x_{2}+\ldots \ldots +x_{50}}{50}=\frac{2160+1340}{50}=70$
+
+    又 $x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{30}^{2}$＝30×（$72^{2}$＋$8^{2}$）＝157440
+
+    $x_{31}^{2}$＋$x_{32}^{2}$＋……＋$x_{50}^{2}$＝20×（$67^{2}$＋$7^{2}$）＝90760
+
+    故 $x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{50}^{2}$＝248200 ⇒ 標準差為$\sqrt{\frac{248200}{50}-70^{2}}$＝$\sqrt{64}$＝8（分）'
+- id: doc_108_台北_大同_數學_g10s2e1_s5_1
+  section: 5
+  number: 1
+  type: calc
+  page: 3
+  stem: '設數列〈 $a_{n}$ 〉滿足遞迴關係式$\begin{cases}a_{1}=9 \\ (n-1)a_{n}=(n+1)a_{n-1}-2 , n\geq 2\end{cases}$，
+
+    (1) 請求出 $a_{2}$、$a_{3}$ 之值，並依前 4 項之結果推測一般項 $a_{n}$ 為何？（4 分）'
+  answer:
+  - $(n-1)a_{n}=(n+1)a_{n-1}-2$ ⇒ $a_{n}=\frac{n+1}{n-1}a_{n-1}-\frac{2}{n-1}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_108_台北_大同_數學_g10s2e1_s5_2
+  section: 5
+  number: 2
+  type: calc
+  page: 3
+  stem: '請用數學歸納法驗證推測之結果。（5 分）
+
+    2.某公司記錄了一月至五月的廣告金額與銷售金額如下表（單位：百萬元），試求：
+
+    | 月分 | 一 | 二 | 三 | 四 | 五 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 廣告金額 x | 2 | 4 | 3 | 6 | 5 |
+
+    | 銷售金額 y | 70 | 80 | 75 | 85 | 90 |
+
+    (1) 廣告金額與銷售金額的相關係數。（4 分）
+
+    (2) y 對 x 的最適直線（迴歸直線）方程式。（3 分）'
+  answer:
+  - (1)
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_108_台北_大同_數學_g10s2e1_s5_3
+  section: 5
+  number: 3
+  type: calc
+  page: 3
+  stem: 若廣告金額為 10（百萬元）時，預測銷售金額應為多少（百萬元）？（1 分）

@@ -1,0 +1,332 @@
+document:
+  id: doc_110_高雄_三民_數學_數乙_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 1
+  city: 高雄
+  school_short: 三民
+  school: 高雄市立三民高級中學
+  title: 高雄市立三民高級中學 110學年度第1學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 110學年度第1學期第1次定期評量
+  source_file: 高三/數學/110/1-1/高雄/三民_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 選擇題
+    count: 15
+questions:
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: fill
+  page: 1
+  stem: 設隨機變數X的機率質量函數P (X＝k)＝a$(\frac{1}{3})^{k}$，k＝1，2，3，4， (1) 求a的值＝＿＿＿＿＿。 (2) 求P (X＜3) 的值＝＿＿＿＿＿。
+  answer:
+  - (1)$\frac{81}{40}$；(2)$\frac{9}{10}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$P(X=1)=a(\frac{1}{3})^{1}$,$P(X=2)=a(\frac{1}{3})^{2}$
+
+    (1) $P(X=1)+P(X=2)+P(X=3)+P(X=4)=a(\frac{1}{3})^{1}+a(\frac{1}{3})^{2}+a(\frac{1}{3})^{3}+a(\frac{1}{3})^{4}=a\times \frac{27+9+3+1}{81}=\frac{40}{81}a=1\therefore a=\frac{81}{40}$。
+
+    (2)$P(X<3)=P(X=1)+P(X=2)=\frac{81}{40}\times \frac{1}{3}+\frac{81}{40}\times \frac{1}{9}=\frac{9}{10}$。'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: fill
+  page: 1
+  stem: 設隨機變數X表示投擲一不公正骰子出現的點數，P (X＝k) 表示隨機變數X取值為k的機率，已知X的機率分布如下表：(X，y為未知常數） 又知X的期望值等於3。 (1) 試求 (X , y)＝＿＿＿＿＿。 (2) 投擲此骰子兩次，試求點數和為4的機率＝＿＿＿＿＿。
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_110_高雄_三民_數學_數乙_g12s1e1/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 175.45
+      - 419.2
+      - 221.55
+  answer:
+  - (1)$(\frac{1}{3},\frac{1}{12})$；(2)$\frac{1}{16}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x+y+y+x+y+y=1\Rightarrow 2x+4y=1$
+
+    (1) $E(X)=x\times 1+y\times 2+y\times 3+x\times 4+y\times 5+y\times 6=5x+16y=3$，和$2x+4y=1$兩者聯立，
+
+    得$x=\frac{1}{3},y=\frac{1}{12}\therefore (x,y)=(\frac{1}{3},\frac{1}{12})$
+
+    (2) 點數和為4，可能為$\begin{matrix}\frac{1}{3}\times \frac{1}{12}+\frac{1}{12}\times \frac{1}{12}+\frac{1}{12}\times \frac{1}{3}=\frac{1}{16} \\ (1+3) (2+2) (3+1)\end{matrix}$。'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 丟一枚均勻的硬幣4次，令隨機變數X表示出現正面的次數，下列敘述何者正確？(多選)
+  options:
+  - label: A
+    content: 隨機變數X所有可能值共有4種
+  - label: B
+    content: P (X＝2)＝$\frac{1}{2}$
+  - label: C
+    content: P (X ≤ 2)＝$\frac{11}{16}$
+  - label: D
+    content: P (2 ≤ X＜4)＝$\frac{5}{8}$
+  - label: E
+    content: P (X＜2)＝P (X＞2)
+  answer:
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '丟4次,所以正面次數$X=0,1,2,3,4$
+
+    (A) ×：有5種情形。 (B) ×：$P(X=2)=C_{2}^{4}(\frac{1}{2})^{2}(\frac{1}{2})^{2}=\frac{6}{16}=\frac{3}{8}$。
+
+    (C) ○：$P(X\leq 2)=P(X=0)+P(X=1)+P(X=2)=C_{0}^{4}(\frac{1}{2})^{4}(\frac{1}{2})^{0}+C_{1}^{4}(\frac{1}{2})^{3}(\frac{1}{2})^{1}+C_{2}^{4}(\frac{1}{2})^{2}(\frac{1}{2})^{2}=\frac{1+4+6}{16}=\frac{11}{16}$。
+
+    (D) ○：$P(2\leq X<4)=P(X=2)+P(X=3)=C_{2}^{4}(\frac{1}{2})^{2}(\frac{1}{2})^{2}+C_{3}^{4}(\frac{1}{2})^{1}(\frac{1}{2})^{3}=\frac{6+4}{16}=\frac{5}{8}$。 (E) ○：$P(X<2)=P(X=0)+P(X=1)$，$P(X>2)=P(X=4)+P(X=3)\therefore P(X<2)=P(X>2)$
+
+    故選(C)(D)(E)。'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: 投擲三個公正之硬幣，若擲出三正面可得20元，擲出二正面可得10元，擲出一正面可得5元，為使此賭局公平，則三個硬幣中一個正面都不出現時應賠＿＿＿＿＿元。
+  answer:
+  - '65'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$P(三正面)=(\frac{1}{2})^{3}=\frac{1}{8}$，$P(兩正面)=C_{2}^{3}(\frac{1}{2})^{1}(\frac{1}{2})^{2}=\frac{3}{8}$，$P(一正面)=C_{1}^{3}(\frac{1}{2})^{2}(\frac{1}{2})^{1}=\frac{3}{8}$，$P(無正面)=(\frac{1}{2})^{3}=\frac{1}{8}$
+
+    $\therefore 賭局公正\Rightarrow E=0$，設無正面時賠$x$元
+
+    $\therefore \frac{1}{8}\times 20+\frac{3}{8}\times 10+\frac{3}{8}\times 5+\frac{1}{8}\times (-x)=065-x=0\Rightarrow x=65$元。'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_5
+  section: 1
+  number: 5
+  type: fill
+  page: 1
+  stem: 甲、乙二人作對局遊戲（假設二人獲勝之機率均等），先勝三局者可得賭注獎金1000元，若進行至甲勝兩局乙勝一局時發生緊急事故，遊戲必須中止，依照公平原則，將獎金分給2人，問甲應得獎金＿＿＿＿＿元。
+  answer:
+  - '750'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 設隨機變數X的期望值E(X)＝2，變異數Var(X)＝9，以符號E(aX＋b)，Var(aX＋b) 分別表示隨機變數aX＋b的期望值與變異數。請選出正確的選項：
+  options:
+  - label: A
+    content: E(X $^{2}$)＝4
+  - label: B
+    content: E(2X＋1)＝5
+  - label: C
+    content: Var(2X＋1)＝18
+  - label: D
+    content: E(108X)＝E(－108X)
+  - label: E
+    content: Var(108X)＝Var(－108X)
+  explanation: '$\because Var(X)=E(X^{2})-\left[ E(X) \right] ^{2}\Rightarrow 9=E(X^{2})-2^{2}\Rightarrow E(X^{2})=13$ (A) ×：若$Y=aX+b\Rightarrow E(Y)=aE(X)+b$ 錯誤。 (B) ○：$E(2X+1)=2E(X)+1=5$ 正確。
+
+    (C) ×：$\because Var(2X+1)=2^{2}Var(X)=4\times 9=36\therefore$ 錯誤。
+
+    (D) ×：$E(108X)=108E(X)$，$E(-108X)=-108E(X)\therefore$不相等。 (E) ○：$Var(108X)=108^{2}Var(X) ,Var(-108X)=(-108)^{2}Var(X)$ 兩者相等
+
+    故選(B)(E)'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_7
+  section: 1
+  number: 7
+  type: fill
+  page: 1
+  stem: 近來景氣低迷、治安敗壞、竊案頻傳，某保險公司擬計針對購買價值100萬的新車車主推出失竊險，若新車在保險期間失竊即全額賠償。已知新車在一年內失竊的機率為0.2%，且每一張保單的管銷成本為500元，若保險公司希望一張保單獲利的期望值為600元，則應將保險一年的保費訂為＿＿＿＿＿元。
+  answer:
+  - '3100'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設保費訂為$x$元
+
+    $E=(x-500)\times 99.8\%+(x-500-1000000)\times 0.2\%=600\therefore x=3100元$。'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_8
+  section: 1
+  number: 8
+  type: fill
+  page: 1
+  stem: 分科測驗數學考科中，多重選擇題每題有A，B，C，D，E五個選項，其中至少有一個選項是正確的。其計分方式為：「每題答對得8分，只錯一個選項可得4.8分，錯兩個選項可得1.6分，答錯多於2個選項或所有選項均未作答者，該題以零分計算。」今有一題你只確定選項A是正確的，其餘選項則隨意猜測，那麼依此計分方式，該題得分的期望值為＿＿＿＿＿分。（化為最簡分數）
+  answer:
+  - '1.85'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $(\frac{1}{2})^{4}\times 8+C_{1}^{4}\times (\frac{1}{2})^{4}\times 4.8+C_{2}^{4}\times (\frac{1}{2})^{4}\times 1.6=\frac{1}{16}\times (8+19.2+9.6)=1.85(分)$。
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 1
+  stem: 隨機變數X是一個參數為 (20,0.2) 的二項分布（即重複操作成功機率為0.2的伯努利試驗20次，20次中成功的次數為X），請選出正確的選項。
+  options:
+  - label: A
+    content: X的期望值為6
+  - label: B
+    content: X的標準差小於2
+  - label: C
+    content: X＝4時的機率最大
+  - label: D
+    content: P(X＝5)＝P(X＝15)
+  - label: E
+    content: P(X＝7)＞P(X＝9)
+  explanation: '$X\sim B(20,0.2)$
+
+    (A) ×：$E(X)=np=20\times 0.2=4$ 錯誤。 (B) ○：$\sigma (X)=\sqrt{20\times 0.2\times 0.8}=\sqrt{3.2}<\sqrt{4}=2$ 正確。
+
+    (C) ○：二項分布機率最大發生在期望值時, $E(X)=np=20\times 0.2=4\therefore$ 正確。
+
+    (D) ×：$P(X=5)=C_{5}^{20}(\frac{4}{5})^{15}(\frac{1}{5})^{5},P(X=15)=C_{15}^{20}(\frac{4}{5})^{5}(\frac{1}{5})^{15}$不相等 $\therefore$錯誤。 (E) ○：$P(X=7)=C_{7}^{20}(\frac{4}{5})^{13}(\frac{1}{5})^{7},P(X=9)=C_{9}^{20}(\frac{4}{5})^{11}(\frac{1}{5})^{9}P(X=7)>P(X=9)\therefore$ 正確。
+
+    故選(B) (C) (E)'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_10
+  section: 1
+  number: 10
+  type: fill
+  page: 1
+  stem: 在參數是 (n,P) 的二項分布中，（即重複做成功機率為P的伯努利試驗n次），設隨機變數X表示成功的次數，若期望值E(X)＝75次且標準差σ(X)＝$\frac{15}{2}$次，則次數n＝＿＿＿＿＿。
+  answer:
+  - '300'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\therefore E(X)=np=75$
+
+    $\sigma (X)=\sqrt{np\times (1-p)}=\frac{15}{2}$
+
+    $\frac{\sqrt{np(1-p)}}{\sqrt{np}}=\frac{\frac{15}{2}}{\sqrt{75}}=\frac{\sqrt{3}}{2}$，$\sqrt{1-p}=\sqrt{\frac{3}{4}}\therefore p=\frac{1}{4}\therefore n\times \frac{1}{4}=75,n=300$。'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_11
+  section: 1
+  number: 11
+  type: single
+  page: 1
+  stem: 擲1枚均勻硬幣4次，恰好出現n次正面的機率為$a_{n}$；擲1枚均勻硬幣8次，恰好出現n次正面的機率為$b_{n}$，試問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: $b_{0}$，$b_{1}$，…，$b_{8}$中的最大值為$b_{4}$
+  - label: B
+    content: $a_{0}$，$a_{1}$，…，$a_{4}$中的最大值為$a_{2}$
+  - label: C
+    content: $a_{2}$＞$b_{4}$
+  - label: D
+    content: $b_{2}$＝$b_{6}$
+  - label: E
+    content: $a_{3}$＞$b_{3}$
+  explanation: '1枚硬幣丟4次： $a_{0}=(\frac{1}{2})^{4}=\frac{1}{16}$，$a_{1}=C_{1}^{4}(\frac{1}{2})^{3}(\frac{1}{2})^{1}=\frac{1}{4}$，$a_{2}=C_{2}^{4}(\frac{1}{2})^{2}(\frac{1}{2})^{2}=\frac{3}{8}$
+
+    $a_{3}=C_{3}^{4}(\frac{1}{2})^{1}(\frac{1}{2})^{3}=\frac{1}{4}$，$a_{4}=C_{4}^{4}(\frac{1}{2})^{4}=\frac{1}{16}$
+
+    1枚硬幣丟8次： $b_{0}=(\frac{1}{2})^{8}=\frac{1}{256}$，$b_{1}=C_{1}^{8}(\frac{1}{2})^{7}(\frac{1}{2})=\frac{8}{256}$，$b_{2}=C_{2}^{8}(\frac{1}{2})^{6}(\frac{1}{2})^{2}=\frac{28}{256}$
+
+    $b_{3}=C_{3}^{8}(\frac{1}{2})^{5}(\frac{1}{2})^{3}=\frac{56}{256}$，$b_{4}=C_{4}^{8}(\frac{1}{2})^{4}(\frac{1}{2})^{4}=\frac{70}{256}$
+
+    $b_{5}=C_{5}^{8}(\frac{1}{2})^{3}(\frac{1}{2})^{5}=\frac{56}{256}$，$b_{6}=C_{6}^{8}(\frac{1}{2})^{2}(\frac{1}{2})^{6}=\frac{28}{256}$
+
+    $b_{7}=C_{7}^{8}(\frac{1}{2})^{1}(\frac{1}{2})^{7}=\frac{8}{256}$，$b_{8}=C_{8}^{8}(\frac{1}{2})^{8}=\frac{1}{256}$
+
+    (A) ○：$b_{4}$最大。
+
+    (B) ○：$a_{2}$最大
+
+    (C) ○：$a_{2}=\frac{3}{8}=\frac{96}{256}>\frac{70}{256}=b_{4}$最大
+
+    (D) ○：$b_{2}=b_{6}$
+
+    (E) ○：$a_{3}=\frac{1}{4}=\frac{64}{256}>\frac{56}{256}=b_{3}$
+
+    故選(A)(B)(C)(D)(E)。'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_12
+  section: 1
+  number: 12
+  type: fill
+  page: 1
+  stem: 設小龍投籃200次的進球次數期望值為120次，在每次投籃的結果都是獨立的情形下，試求小龍投籃四次， (1) 投籃四次中，至少中一次的機率＝＿＿＿＿＿。 (2) 第4次投籃恰進第三球的機率＝＿＿＿＿＿。
+  answer:
+  - (1) $\frac{609}{625}$；(2)$\frac{81}{625}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\because X\sim B(n,p)$
+
+    $\therefore E(X)=np=200\times p=120,p=\frac{120}{200}=\frac{3}{5}\because X\sim B(200,\frac{3}{5})$
+
+    (1) $P (至少中一次)=1-P (均沒中)=1-(\frac{2}{5})^{4}=1-\frac{16}{625}=\frac{609}{625}$ (2) 1 , 2, 3, 4
+
+    ○ × ○ ○
+
+    $C_{2}^{3}(\frac{3}{5})^{2}(\frac{2}{5})\times \frac{3}{5}=\frac{81}{625}$'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_13
+  section: 1
+  number: 13
+  type: fill
+  page: 1
+  stem: '(1) 夜市的彈珠檯遊戲（如附圖），若每次彈珠均由入口O進入， 由ABCDE五個出口掉出， 已知彈珠在各分支處選擇前進方向的機率相等， 試求：彈珠由出口C掉出的機率：＿＿＿＿＿
+
+    (2) 承上題，若每局遊戲可丟80顆彈珠，一次丟一顆且彈珠與彈珠間互相不影響，80顆丟完後若有X顆彈珠由出口C掉出，則可得X元獎金；若重複此遊戲多局之後，所得獎金X的平均數為μ，標準差為σ，則序對 (μ,σ)＝＿＿＿＿＿。'
+  assets:
+  - key: s1_13_f1
+    kind: figure
+    file: doc_110_高雄_三民_數學_數乙_g12s1e1/s1_13_f1.png
+    crop:
+      page: 1
+      rect:
+      - 476.45
+      - 737.55
+      - 555.6
+      - 828.35
+  answer:
+  - (1)$\frac{3}{8}$；(2)$(30,\frac{5\sqrt{3}}{2})$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) (A) $(\frac{1}{2})^{4}=\frac{1}{16}$ (B) $C_{1}^{4}(\frac{1}{2})^{3}(\frac{1}{2})^{1}=\frac{4}{16}$ (C) $C_{2}^{4}(\frac{1}{2})^{2}(\frac{1}{2})^{2}=\frac{6}{16}=\frac{3}{8}$
+
+    (2) $X\sim B(80,\frac{3}{8})\therefore E(X)=np=80\times \frac{3}{8}=30=\mu$
+
+    $\sigma (X)=\sqrt{np\times (1-p)}=\sqrt{80\times \frac{3}{8}\times \frac{5}{8}}=\frac{5\sqrt{3}}{2}\therefore (\mu ,\sigma )=(30,\frac{5\sqrt{3}}{2})$'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_14
+  section: 1
+  number: 14
+  type: fill
+  page: 1
+  stem: 一箱子中有10個燈泡，其中有3個是壞的，今從箱子中逐次一一取出試驗，取出不再放回，一直取到一個好的為止，試求取出燈泡個數的(1)期望值＝＿＿＿＿＿ ，(2)變異數＝＿＿＿＿＿。
+  answer:
+  - (1)$\frac{10}{7}$；(2)$\frac{30}{49}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$p=\frac{7}{10},X\sim G(\frac{7}{10})\therefore E(X)=\frac{1}{P}=\frac{1}{\frac{7}{10}}=\frac{10}{7}$
+
+    $Var(X)=\frac{1-P}{P^{2}}=\frac{\frac{3}{10}}{(\frac{7}{10})^{2}}=\frac{30}{49}$'
+- id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_15
+  section: 1
+  number: 15
+  type: fill
+  page: 1
+  stem: 慈幼社為籌措活動經費，計畫在園遊會中發售一款9宮格刮刮樂（如右圖所示）， 每張的9個空格裡有3個6、3個7、3個8。買家從中住意刮開3格（超過3格則 不予兌獎），若刮中3個相同號碼，則可得該數字100倍的獎金（例如：刮中3個6， 可得600元獎金）。此刮刮樂售價為每張60元，則該社團每張刮刮樂獲利的期望值 為＿＿＿＿＿元。
+  assets:
+  - key: s1_15_f1
+    kind: figure
+    file: doc_110_高雄_三民_數學_數乙_g12s1e1/s1_15_f1.png
+    crop:
+      page: 1
+      rect:
+      - 549.05
+      - 874.4
+      - 654.05
+      - 979.4
+  answer:
+  - －35
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $E=\frac{C_{3}^{3}\times 600+C_{3}^{3}\times 700+C_{3}^{3}\times 800}{C_{3}^{9}}-60=\frac{2100}{84}-60=-35$

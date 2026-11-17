@@ -1,0 +1,422 @@
+document:
+  id: doc_111_高雄_高雄女中_數學_數A_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 2
+  city: 高雄
+  school_short: 高雄女中
+  school: 高雄市立高雄女子高級中學
+  title: 高雄市立高雄女子高級中學 111學年度第2學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 111學年度第2學期第2次定期評量
+  source_file: 高二/數學/111/2-2/高雄/高雄女中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 7 分，共 28 分）
+    count: 4
+  - ord: 2
+    name: 二、填充題（共 72 分）
+    count: 13
+questions:
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 空間中有兩條直線分別為 $L_{1}$：$\frac{x-3}{1}=\frac{y-7}{2}=\frac{z+8}{-2}$與 $L_{2}$：$\frac{x}{2}=\frac{y-1}{-3}=\frac{2+z}{-6}$，下列敘述哪些正確？
+  options:
+  - label: A
+    content: $L_{1}$ 與 $L_{2}$ 為兩條不共平面的歪斜線
+  - label: B
+    content: $L_{1}$ 與 $L_{2}$ 為兩條共平面的相交直線
+  - label: C
+    content: $L_{1}$ 與 $L_{2}$ 的交點為（0，1，－2）
+  - label: D
+    content: 若 $L_{1}$ 與 $L_{2}$ 的夾角為 θ，則 cosθ＝$\pm \frac{8}{21}$
+  - label: E
+    content: 包含 $L_{1}$ 與 $L_{2}$ 的平面方程式為 18x－2y＋7z＝16
+  answer:
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '整理 $L_{2}$：$\frac{x}{2}=\frac{y-1}{-3}=\frac{z+2}{-6}$
+
+    ∴$L_{1}$ 方向向量為$\vec{v_{1}}$＝（1，2，－2），$L_{2}$ 方向向量為$\vec{v_{2}}$＝（2，－3，－6）
+
+    (A) ╳：∵$\vec{v_{1}}$不平行$\vec{v_{2}}$
+
+    ∴$L_{1}$，$L_{2}$ 為相交或歪斜
+
+    設 $L_{1}$：$\begin{cases}x=3+t \\ y=7+2t \\ z=-8-2t\end{cases}$，t ∈ R，$L_{2}$：$\begin{cases}x=2s \\ y=1-3s \\ z=-2-6s\end{cases}$，s ∈ R
+
+    若兩線有交點，則存在 t、s 使得
+
+    $\begin{cases}3+t=2s \\ 7+2t=1-3s \\ -8-2t=-2-6s\end{cases}$
+
+    ⇒$\begin{cases}t-2s=-3 \\ 2t+3s=-6 \\ t-3s=-3\end{cases}$⇒$\begin{cases}t=-3 \\ s=0\end{cases}$
+
+    故兩線相交，且交於（0，1，－2）
+
+    (B) ○：同(A)
+
+    (C) ○：同(A)
+
+    (D) ○：cosθ＝$\pm \frac{\vec{v_{1}} \cdot \vec{v_{2}}}{| \vec{v_{1}} | | \vec{v_{2}} |}=\pm \frac{2-6+12}{3 \cdot 7}=\pm \frac{8}{21}$
+
+    (E) ╳：$\vec{v_{1}}$×$\vec{v_{2}}$＝（－18，2，－7）//（18，－2，7）
+
+    且平面上過（0，1，－2）
+
+    所求平面方程式為 18x－2y＋7z＝－16
+
+    故選(B)(C)(D)'
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: '在某次飛行旅途中，機上乘客調查如下表，今自乘客中隨機挑選 1 人，若每個人被挑選到的機率相同，設選到男性的事件為 M，選到中國人的事件為 C，下列敘述哪些正確？
+
+    |  | 男性 | 女性 | 合計 |
+
+    | --- | --- | --- | --- |
+
+    | 中國人 | 65 |  | 94 |
+
+    | 外國人 |  | 56 |  |
+
+    | 合計 |  | 85 | 305 |'
+  options:
+  - label: A
+    content: P（C ∣ M）＝$\frac{13}{44}$
+  - label: B
+    content: P（M ∣
+  - label: C
+    content: ＝$\frac{65}{94}$(C) P（M ∩ C）＝$\frac{13}{61}$
+  - label: D
+    content: P（M ∪ C）＝$\frac{249}{305}$
+  - label: E
+    content: P(C)＝$\frac{94}{305}$
+  answer:
+  - A
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '可先填表如下
+
+    65.155 29.56 94.211
+
+    (A) ○：P（C ∣ M）＝$\frac{65}{220}=\frac{13}{44}$
+
+    (B) ○：P（M ∣ C）＝$\frac{65}{94}$
+
+    (C) ○：P（M ∩ C）＝$\frac{65}{305}=\frac{13}{61}$
+
+    (D) ○：P（M ∪ C）＝$\frac{65+155+29}{305}=\frac{249}{305}$
+
+    (E) ○：P(C)＝$\frac{94}{305}$
+
+    故選(A)(B)(C)(D)(E)'
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 設 20 支籤中有 5 支籤是有獎的，今有甲、乙、丙、……、癸等十人依序各抽出一支籤，抽出後不放回，下列敘述哪些正確？
+  options:
+  - label: A
+    content: 已知甲中獎的情形下，乙也中獎的機率為$\frac{4}{19}$
+  - label: B
+    content: 癸中獎的機率小於甲中獎的機率
+  - label: C
+    content: 乙中獎而且丙也中獎的機率為$\frac{1}{19}$
+  - label: D
+    content: 丙中獎的機率為$\frac{1}{4}$
+  - label: E
+    content: 已知甲乙都中獎的情形下，丙不中獎的機率為$\frac{5}{144}$
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：P（乙中∣甲中）＝$\frac{\frac{5}{20}\times \frac{4}{19}}{\frac{5}{20}}=\frac{4}{19}$
+
+    (B) ╳：中獎機率相同
+
+    (C) ○：P（乙中∩丙中）＝P（甲中∩乙中∩丙中）＋P（甲不中∩乙中∩丙中）
+
+    ＝$\frac{5}{20}\times \frac{4}{19}\times \frac{3}{18}+\frac{15}{20}\times \frac{5}{19}\times \frac{4}{18}=\frac{1}{19}$
+
+    (D) ○：P（丙中）＝P（甲中）＝$\frac{5}{20}=\frac{1}{4}$
+
+    (E) ╳：P（丙不中∣甲乙中）＝$\frac{\frac{5}{20}\times \frac{4}{19}\times \frac{15}{18}}{\frac{5}{20}\times \frac{4}{19}}=\frac{15}{18}=\frac{5}{6}$
+
+    故選(A)(C)(D)'
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 2
+  stem: 已知長方體 ABCD－EFGH 中頂點坐標 A（1，1，2）、直線 AC：$\begin{cases}3x-2y=1 \\ z=2\end{cases}$與直線 FH：$\begin{cases}3x+2y=17 \\ z=10\end{cases}$，則下列敘述哪些正確？
+  options:
+  - label: A
+    content: $\overline{AC}$的中點坐標為（3，4，2）
+  - label: B
+    content: $\overline{FH}$的中點坐標為（4，3，10）
+  - label: C
+    content: E 的坐標為（1，1，10）
+  - label: D
+    content: 長方形 ABCD 的面積為 24
+  - label: E
+    content: 長方體 ABCD－EFGH 的體積為 144
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_111_高雄_高雄女中_數學_數A_g11s2e2/s1_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 485.75
+      - 52.3
+      - 559.55
+      - 139.2
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：由題意可知直線 BD 即為$\begin{cases}3x+2y=17 \\ z=2\end{cases}$
+
+    故$\overline{AC}$中點為直線 AC 與直線 BD 交點（3，4，2）
+
+    (B) ╳：$\overline{FH}$中點為$\overline{AC}$中點往 z 方向上移 8 單位，即（3，4，10）
+
+    (C) ○：E 為 A 往 z 方向上移 8 單位，即（1，1，10）
+
+    (D) ○：令$\overline{AC}$中點為 P（3，4，2）
+
+    則$\vec{PA}$＝（－2，－3，0），且∣$\vec{PA}$∣＝$\sqrt{(-2)^{2}+(-3)^{2}+0^{2}}$＝$\sqrt{13}$
+
+    ∵直線 BD 在平面 3x＋2y＝17 及平面 z＝2 上 ∴可設$\vec{PD}$＝k（－2，3，0），k ∈ R
+
+    又∣$\vec{PD}$∣＝∣$\vec{PA}$∣＝$\sqrt{13}$，可得k＝$\pm 1$（－1 不合，由右手法則可知 k＝－1時為$\vec{PB}$）
+
+    故$\vec{PD}$＝（－2，3，0），即（1，7，2）為 D
+
+    故 ABCD 面積＝4△APD 面積＝4．$\frac{1}{2}$．∣$\vec{PA}$×$\vec{PD}$∣
+
+    ＝2 ∣（－2，－3，0）×（－2，3，0）∣＝2×12＝24
+
+    (E) ╳：體積為 24×8＝192
+
+    故選(A)(C)(D)'
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 若一平面 E 過 P（1，1，－2），平面 E 與平面 $E_{1}$：2x－y＋z＝1 和平面 $E_{2}$：4x－y＋3z＝4 均垂直，則平面 E 的方程式為 ax＋by＋cz＝4，試求 a＋b＋c 的值為＿＿＿＿。
+  answer:
+  - '1'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設平面 E、$E_{1}$、$E_{2}$ 的法向量分別為$\vec{n}$、$\vec{n_{1}}$、$\vec{n_{2}}$
+
+    ∵$\vec{n}$⊥$\vec{n_{1}}$且$\vec{n}$⊥$\vec{n_{2}}$
+
+    ∴$\vec{n}$//$\vec{n_{1}}$×$\vec{n_{2}}$＝（2，－1，1）×（4，－1，3）
+
+    ＝（－2，－2，2）//（1，1，－1）
+
+    ∵平面 E 過 P（1，1，－2）
+
+    ∴平面 E 的方程式為 x＋y－z＝4
+
+    得序組（a，b，c）＝（1，1，－1）
+
+    故 a＋b＋c＝1＋1－1＝1'
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 空間中有一個四面體為 APQR。若$\overline{AP}$、$\overline{AQ}$、$\overline{AR}$兩兩互相垂直，且$\overline{AP}$＝2、$\overline{AQ}$＝4、 $\overline{AR}$＝6，則 A 到平面 PQR 之距離為＿＿＿＿。
+  answer:
+  - $\frac{12}{7}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '建立坐標系，設 A（0，0，0），P（2，0，0），Q（0，4，0），R（0，0，6）
+
+    則平面 PQR：$\frac{x}{2}+\frac{y}{4}+\frac{z}{6}=1$
+
+    ⇒ 6x＋3y＋2z－12＝0
+
+    所求為$\frac{| 6\times 0+3\times 0+2\times 0-12 |}{\sqrt{6^{2}+3^{2}+2^{2}}}=\frac{12}{7}$'
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知空間中三點為 A（1，0，－1）、B（0，1，－2）、C（2，3，0），則△ABC 的外接圓面積為＿＿＿＿。
+  answer:
+  - $\frac{99\pi}{32}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意知$\vec{AB}$＝（－1，1，－1），$\vec{AC}$＝（1，3，1），$\vec{BC}$＝（2，2，2）
+
+    則△ABC 面積＝$\frac{1}{2}$∣$\vec{AB}$×$\vec{AC}$∣
+
+    ＝$\frac{1}{2}$∣（4，0，－4）∣＝$\frac{1}{2} \cdot 4\sqrt{2}$＝$2\sqrt{2}$
+
+    又△ABC 面積＝$\frac{1}{2}$．∣$\vec{AB}$∣∣$\vec{AC}$∣sin（∠CAB）
+
+    ⇒$2\sqrt{2}$＝$\frac{1}{2} \cdot \sqrt{3} \cdot \sqrt{11}$．sin（∠CAB）
+
+    ⇒ sin（∠CAB）＝$\frac{4\sqrt{2}}{\sqrt{33}}$
+
+    ∵$\frac{\overline{BC}}{\sin (\angle CAB)}$＝2R
+
+    ∴R＝$\frac{1}{2} \cdot \frac{\sqrt{12}}{\frac{4\sqrt{2}}{\sqrt{33}}}=\frac{3\sqrt{22}}{8}$
+
+    所求為$R^{2}\pi =\frac{9 \cdot 22}{64}\pi =\frac{99\pi}{32}$'
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知空間中有兩平面 $E_{1}$：$\sqrt{6}x+y+z+1$＝0 與 $E_{2}$：y＋z－7＝0，則 $E_{1}$ 與 $E_{2}$ 的鈍角角平分面方程式為$\sqrt{6}x+by+cz+d$＝0，試求序組（b，c，d）＝＿＿＿＿。
+  answer:
+  - （－1，－1，15）
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '醫學上有某種診斷方式，從過去的經驗可以知道罹患癌症的人，經過檢驗後發現有癌症的可能性為 0.9，不患癌症的人經過同樣的檢驗發現有癌症的可能性為 0.05，假設一群人中有 6 ％的人患有癌症。現從此群人中任選一人而加以檢驗，請回答下列問題：
+
+    (1) 檢驗出有癌症的機率為＿＿＿＿。
+
+    (2) 檢驗出有癌症，但此人的確有癌症的機率為＿＿＿＿。'
+  answer:
+  - (1) $\frac{101}{1000}$；(2) $\frac{54}{101}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '丟擲一個公正的骰子兩次，以 A 表示第一次點數大於第二次點數的事件，B 表示兩次點數和為偶數的事件，試問：
+
+    (1) P（B ∣ A）＝＿＿＿＿。
+
+    (2) P（A ∣ B）＝＿＿＿＿。'
+  answer:
+  - (1) $\frac{2}{5}$；(2) $\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 A（1，1，1），B（2，3，4），C（3，2，1），動點 P 在線段$\overline{AB}$上移動。若$\vec{PC}$．$\vec{AP}$的最小值為 m，最大值為 M，則數對（m，M）＝＿＿＿＿。
+  answer:
+  - $\left( -10 , \frac{2}{7} \right)$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 如右圖，A、B、C、D 四個開關各自獨立，每個開關暢通的機率皆為$\frac{1}{3}$。若水自左側（L）到右側（R）暢通無阻的機率為$\frac{b}{81}$則 b 的值為＿＿＿＿。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_111_高雄_高雄女中_數學_數A_g11s2e2/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 414.8
+      - 561.4
+      - 564.3
+      - 649.95
+  answer:
+  - '19'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 一個抽獎活動依排隊順序抽獎，輪到抽獎的人有一次抽獎的機會，抽獎方式為丟擲一枚均勻銅板，正面為中獎，反面為沒中獎。若獎品有四份，活動直到四份獎品都被抽中為止。試問已知排在第五位的人可以抽獎的情況下，排在第六位可以抽獎的機率為＿＿＿＿。
+  answer:
+  - $\frac{13}{15}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 空間中三點 A（2，2，0），B（3，1，0），C（1，3，1），P 點為空間中任意的動點，若 P 點和△ABC 所形成的三角錐 P－ABC 之體積固定為$\sqrt{2}$，試求 P 點所形成的圖形方程式為 ＿＿＿＿。
+  answer:
+  - x＋y＝$4\pm 6\sqrt{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 空間中有一點 P（2，0，2），直線 $L_{1}$：$\frac{x-3}{2}=\frac{y}{-1}=\frac{z}{-1}$與直線 $L_{2}$：$\frac{x}{1}=\frac{y+4}{3}=\frac{z+a}{-1}$，若平面 $E_{1}$ 包含 P 與 $L_{1}$，平面 $E_{2}$ 包含 P 與 $L_{2}$，且 $E_{1}$⊥$E_{2}$，則 a＝＿＿＿＿。
+  answer:
+  - －2
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 3
+  stem: 在空間中，直線 $L_{1}$：$\frac{x}{1}=\frac{y}{-1}=\frac{z}{-3}$與直線 $L_{2}$：$\frac{x-2}{1}=\frac{y+1}{-2}=\frac{z}{-1}$，若 P 點在直線 $L_{1}$ 上，Q 點和 R 點在直線 $L_{2}$ 上且△PQR 為正三角形，則△PQR 面積最小值為＿＿＿＿。
+  answer:
+  - $\frac{32\sqrt{3}}{45}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 3
+  stem: 如右圖，一正立方體 ABCD－EFGH 的邊長為 12，其中 P 為$\overline{BC}$的中點，Q 在$\overline{CG}$上且$\overline{CQ}$＝9，過點 A、P、Q 的平面為與該正立方體的截面為五邊形，則此五邊形的面積為＿＿＿＿。
+  assets:
+  - key: s2_13_f1
+    kind: figure
+    file: doc_111_高雄_高雄女中_數學_數A_g11s2e2/s2_13_f1.png
+    crop:
+      page: 3
+      rect:
+      - 483.55
+      - 107.8
+      - 564.3
+      - 189.4
+  answer:
+  - $23\sqrt{61}$
+  answer_status: verified
+  answer_source: answer_key

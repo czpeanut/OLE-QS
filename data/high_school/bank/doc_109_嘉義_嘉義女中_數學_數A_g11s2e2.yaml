@@ -1,0 +1,414 @@
+document:
+  id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 2
+  city: 嘉義
+  school_short: 嘉義女中
+  school: 國立嘉義女子高級中學
+  title: 國立嘉義女子高級中學 109學年度第2學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 109學年度第2學期第2次定期評量
+  source_file: 高二/數學/109/2-2/嘉義/嘉義女中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 12 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，錯 1 個選項扣 2 分，扣至該題 0 分為止。共 24 分）
+    count: 4
+  - ord: 3
+    name: 三、填充題（每格 6 分，共 54 分）
+    count: 8
+  - ord: 4
+    name: 四、混合題（共 10 分）（第(2)小題為計算題，請列出詳細的計算過程，否則不予以計分；第(1)、(3)小題為填充題，請直接寫出適當的答案）
+    count: 1
+  scope_note: B4 2-1～3-2
+questions:
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 坐標空間中有兩直線 $L_{1}$：$\frac{x-3}{2}=\frac{y-2}{-1}=\frac{z-1}{-4}$，$L_{2}$：2x＝3y＝6z，則 $L_{1}$ 與 $L_{2}$ 之關係為何？
+  options:
+  - label: A
+    content: 兩平行線
+  - label: B
+    content: 兩重合直線
+  - label: C
+    content: 兩歪斜線
+  - label: D
+    content: 交於一點且互相垂直的兩直線
+  - label: E
+    content: 交於一點但不垂直的兩直線
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 $L_{1}$：$\frac{x-3}{2}=\frac{y-2}{-1}=\frac{z-1}{-4}=t$
+
+    ∴$\begin{cases}x=2t+3 \\ y=-t+2 \\ z=-4t+1\end{cases}$，t ∈ R
+
+    令 $L_{2}$：2x＝3y＝6z＝s
+
+    ∴$\begin{cases}x=\frac{s}{2} \\ y=\frac{s}{3} \\ z=\frac{s}{6}\end{cases}$，s ∈ R
+
+    ∴$\begin{cases}2t+3=\frac{s}{2} \\ -t+2=\frac{s}{3}\end{cases}$ ∴$\begin{cases}4t-s=-6 \cdots \cdots \cdots \cdots \cdots ① \\ -3t-s=-6 \cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    由①－②得 7t＝0 ∴t＝0，s＝6
+
+    t＝0 代入 ∴（x，y，z）＝（3，2，1）
+
+    s＝6 代入 ∴（x，y，z）＝（3，2，1）
+
+    ∴$L_{1}$，$L_{2}$ 相交於點（3，2，1）
+
+    又$\vec{L_{1}}=(2 , -1 , -4)$，$L_{2}$：$\frac{x}{\frac{1}{2}}=\frac{y}{\frac{1}{3}}=\frac{z}{\frac{1}{6}}$ ∴$\vec{L_{2}}=\left( \frac{1}{2} , \frac{1}{3} , \frac{1}{6} \right)$
+
+    ∵$\vec{L_{1}} \cdot \vec{L_{2}}$＝（2，－1，－4）．$\left( \frac{1}{2} , \frac{1}{3} , \frac{1}{6} \right)$
+
+    ＝$2\times \frac{1}{2}+(-1)\times \frac{1}{3}+(-4)\times \frac{1}{6}$＝$1-\frac{1}{3}-\frac{2}{3}$＝0
+
+    ∴$\vec{L_{1}}$⊥$\vec{L_{2}}$
+
+    ∴$L_{1}$，$L_{2}$ 為交於一點且互相垂直的兩直線
+
+    故選(D)'
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 投擲一顆公正的骰子兩次，若第一次出現的點數為 a，第二次出現的點數為 b，則在 a＋b＝8 的條件下，第二次出現 3 點的機率為何？
+  options:
+  - label: A
+    content: $\frac{1}{6}$
+  - label: B
+    content: $\frac{1}{3}$
+  - label: C
+    content: $\frac{1}{5}$
+  - label: D
+    content: $\frac{2}{3}$
+  - label: E
+    content: $\frac{5}{6}$
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'a＋b＝8：（2，6），（3，5），（4，4），（5，3），（6，2）
+
+    a＋b＝8 且 b＝3：（5，3）
+
+    ∴P（b＝3｜a＋b＝8）＝$\frac{n (a+b=8 且 b=3)}{n (a+b=8)}$＝$\frac{1}{5}$
+
+    故選(C)'
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 已知坐標空間中四點 A（3，4，5），B（－1，0，1），C（1，－1，1）， D（2，－1，0），則下列敘述哪些正確？
+  options:
+  - label: A
+    content: △BCD 之面積為$\sqrt{6}$
+  - label: B
+    content: D 點到$\overset{\leftarrow \rightarrow}{BC}$之距離為$\frac{1}{5}\sqrt{30}$
+  - label: C
+    content: 平面 BCD 的方程式為 x＋2y＋z＝0
+  - label: D
+    content: 點 A 到平面 BCD 的距離為$\frac{8}{3}\sqrt{6}$
+  - label: E
+    content: 四面體 A－BCD 的體積為$\frac{3}{8}$
+  answer:
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 已知坐標空間中有一點 P（3，1，－2），直線 L：$\frac{x+1}{a}=\frac{y-2}{b}=\frac{z-3}{c}$及平面 E：3x－y＋2z＝k，則下列敘述哪些為真？
+  options:
+  - label: A
+    content: 若點 P 在平面 E 上，則 k＝12
+  - label: B
+    content: 若直線 L 與平面 E 恰有一交點，則 3a－b＋2c≠0
+  - label: C
+    content: 若直線 L 在平面 E 上，則 k＝1
+  - label: D
+    content: 若直線 L 垂直平面 E，則 2b＋c＝0
+  - label: E
+    content: 若直線 L 平行平面 E，則 3a－b＋2c≠0
+  answer:
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：若點 P（3，1，－2）在平面 E 上，將 P（3，1，－2）代入 E：3x－y＋2z＝k
+
+    ∴k＝3×3－1＋2×（－2）＝4
+
+    (B) ○：若直線 L 與平面 E 恰有一交點，則 L$//＼$E ∴$\vec{L} \cdot \vec{n}\neq 0$
+
+    ∴（a，b，c）．（3，－1，2）≠0 ∴3a－b＋2c≠0
+
+    (C) ○：若直線 L 在平面 E 上，因為 L 過點 Q（－1，2，3），則 Q（－1，2，3）必在平面
+
+    E：3x－y＋2z＝k 上
+
+    ∴k＝3×（－1）－2＋2×3＝－3－2＋6＝1
+
+    (D) ○：若直線 L 垂直平面 E，則$\vec{L}$//$\vec{n}$ ∴（a，b，c）//（3，－1，2）
+
+    ∴$\frac{b}{-1}=\frac{c}{2}$ ∴2b＝－c ∴2b＋c＝0
+
+    (E) ╳：若直線 L 平行平面 E，則$\vec{L}$⊥$\vec{n}$ ∴$\vec{L}$．$\vec{n}$＝0
+
+    ∴（a，b，c）．（3，－1，2）＝0 ∴3a－b＋2c＝0
+
+    故選(B)(C)(D)'
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 符號 P(C)代表事件 C 發生的機率，符號 P（C｜D）代表在事件 D 發生的條件下，事件 C 發生的機率。今設 A，B 為樣本空間中的兩個事件，且 A，B 互為獨立事件，已知 P
+  options:
+  - label: A
+    content: ＝P
+  - label: B
+    content: ＝0.6。請選出正確的選項：(A) P（A∪B）＝0.84(B) P（A ∩ B）＝0.3
+  - label: C
+    content: P（A｜B）＝0.6
+  - label: D
+    content: P（A｜B）＝P（B｜A）
+  - label: E
+    content: A，B 是互斥事件
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：∵A，B 互為獨立事件 ∴P（A ∩ B）＝P(A)×P(B)＝0.6×0.6＝0.36
+
+    ∴P（A∪B）＝P(A)＋P(B)－P（A ∩ B）＝0.6＋0.6－0.36＝0.84
+
+    (B) ╳：由(A)知 P（A ∩ B）＝0.36
+
+    (C) ○：P（A｜B）＝$\frac{P (A \cap B)}{P (B)}=\frac{P (A)\times P (B)}{P (B)}$＝P(A)＝0.6
+
+    (D) ○：∵P（A｜B）＝$\frac{P (A \cap B)}{P (B)}=\frac{P (A)\times P (B)}{P (B)}$＝P(A)＝0.6
+
+    又 P（B｜A）＝$\frac{P (B \cap A)}{P (A)}=\frac{P (B)\times P (A)}{P (A)}$＝P(B)＝0.6
+
+    ∴P（A｜B）＝P（B｜A）
+
+    (E) ╳：∵P（A ∩ B）＝0.36≠0 ∴A ∩ B≠∅ ∴A，B 非互斥事件
+
+    故選(A)(C)(D)'
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 坐標空間中有一平面 P 過（0，0，0），（1，2，3）及（－1，2，3）三點。試選出正確的選項：
+  options:
+  - label: A
+    content: 向量（0，2，3）與平面 P 垂直
+  - label: B
+    content: 平面 P 與 xy 平面平行
+  - label: C
+    content: 點（0，4，6）在平面 P 上
+  - label: D
+    content: 平面 P 包含 x 軸
+  - label: E
+    content: 點（1，1，1）到平面 P 的距離是$\frac{4}{13}\sqrt{13}$
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：令 O（0，0，0），A（1，2，3），B（－1，2，3）
+
+    ∴$\vec{OA}=(1 , 2 , 3)$，$\vec{OB}=(-1 , 2 , 3)$
+
+    $\vec{OA}\times \vec{OB}$＝（1，2，3）×（－1，2，3）
+
+    ＝$\left( \left| \begin{matrix}2 & 3 \\ 2 & 3\end{matrix} \right| , \left| \begin{matrix}3 & 1 \\ 3 & -1\end{matrix} \right| , \left| \begin{matrix}1 & 2 \\ -1 & 2\end{matrix} \right| \right)$
+
+    ＝（0，－6，4）＝－2（0，3，－2）
+
+    ∴取平面 P 的法向量$\vec{n_{1}}=(0 , 3 , -2)$
+
+    令平面 P：0．x＋3y－2z＝k 過（0，0，0） ∴k＝0
+
+    ∴P：0．x＋3y－2z＝0
+
+    ∵（0，2，3）．（0，3，－2）＝0×0＋2×3＋3×（－2）＝0
+
+    ∴向量（0，2，3）⊥$\vec{n_{1}}$ ∴向量（0，2，3）與平面 P 平行
+
+    (B) ╳：∵xy 平面：0．x＋0．y＋1．z＝0 ∴$\vec{n_{2}}=(0 , 0 , 1)$
+
+    ∵$\vec{n_{1}}=(0 , 3 , -2)//＼(0 , 0 , 1)=\vec{n_{2}}$
+
+    ∴平面 P 與 xy 平面相交成一直線
+
+    (C) ○：將（0，4，6）代入 0．x＋3y－2z＝0×0＋3×4－2×6＝0
+
+    ∴（0，4，6）在平面 P 上
+
+    (D) ○：x 軸上的點參數式為$\begin{cases}x=t \\ y=0 \\ z=0\end{cases}$，t ∈ R
+
+    代入 0．x＋3y－2z＝0×t＋3×0－2×0＝0，恆成立
+
+    ∴平面 P 包含 x 軸
+
+    (E) ╳：令 Q（1，1，1）
+
+    ∴d（Q，平面 P）＝$\frac{│ 0\times 1+3\times 1-2\times 1 │}{\sqrt{0^{2}+3^{2}+(-2)^{2}}}$＝$\frac{│ 0+3-2 │}{\sqrt{0+9+4}}$＝$\frac{1}{\sqrt{13}}$＝$\frac{1}{13}\sqrt{13}$
+
+    故選(C)(D)'
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: '下表為某骰子投擲若干次各點數出現的次數統計表：
+
+    | 點數 | 1 | 2 | 3 | 4 | 5 | 6 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | 次數 | 10 | 10 | 15 | 15 | 25 | 20 |
+
+    依據此表之數據，出現 1 點的機率為 a，出現奇數點的機率為 b，則 a－b＝＿＿＿＿。'
+  answer:
+  - $-\frac{8}{19}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 坐標空間中，設 P，Q 為平面 3x－2y－2z＝1 上兩點且滿足$\overline{PQ}$＝7，另取空間中兩點 P'，Q'滿足向量$\vec{PP'}=\vec{QQ'}=(-3 , 4 , 6)$。當向量$\vec{PQ}=(2 , b , c)$時，會使得平行四邊形 PQQ'P' 面積最大。則數對（b，c）＝＿＿＿＿。
+  answer:
+  - （6，－3）
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 空間中有三點 A（2，4，5）、B（2，－6，3）、C（0，－4，1）。若直線 L 通過 A 點並與直線 BC 相交且垂直，則 L 和直線 BC 的交點坐標為＿＿＿＿。
+  answer:
+  - $\left( -\frac{2}{3} , -\frac{10}{3} , \frac{1}{3} \right)$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 右圖的電路圖中有四個開關，以 A、B、C、D 表示。電流通過各開關的機率分別為 0.5、0.4、0.3、0.6，如右圖所示，若各開關的操作獨 立，則電流從左端 L 流到右端 R 的機率為＿＿＿＿。
+  assets:
+  - key: s3_4_f1
+    kind: figure
+    file: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2/s3_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 447.55
+      - 701.15
+      - 564.25
+      - 749.25
+  answer:
+  - '0.344'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: '如右圖，在坐標空間中，A，B，C，D，E，F，G，H 為正立方體的八個頂點，已知其中四個點的坐標 A（0，0，0），B（6，0，0），D（0，6，0）及 E（0，0，6），P 在$\overline{CG}$上且$\overline{CP} : \overline{PG}$＝1：5， R 在$\overline{EH}$上且$\overline{ER} : \overline{RH}$＝1：1，Q 在$\overline{AD}$上。若空間中通過 P，Q， R 這三點的平面，與直線 AG 不相交，則 Q 點的 y 坐標為＿＿＿＿。'
+  assets:
+  - key: s3_5_f1
+    kind: figure
+    file: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2/s3_5_f1.png
+    crop:
+      page: 3
+      rect:
+      - 442.55
+      - 70.65
+      - 563.2
+      - 187.35
+  answer:
+  - $\frac{15}{11}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: H：x－y＋z＝2 為坐標空間中一平面，L 為平面 H 上的一直線。已知點 P（2，1，1）為 L 上距離原點 O 最近的點，則 L 的方向向量為（2，＿＿＿＿，＿＿＿＿）。
+  answer:
+  - －1；－3
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 某國中全校只有 80 位學生，其中男生有 45 位，女生有 35 位，男生中血型為 O 型者有 10 人，女生中血型為 O 型者有 27 人，今由全校學生中任意選取 1 人，以 B 表選到男生的事件，以 G 表選到女生的事件，以 O 表選到血型為 O 型之學生的事件，則 P（G｜O）＝＿＿＿＿。
+  answer:
+  - $\frac{27}{37}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 設甲射擊的命中率為$\frac{4}{5}$，今甲、乙兩人同射一靶，每人各射擊一發，且射擊時彼此互不影響，已知靶面恰中一發，由甲命中的機率為$\frac{28}{31}$，則乙射擊的命中率為＿＿＿＿。
+  answer:
+  - $\frac{3}{10}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s4_1
+  section: 4
+  number: 1
+  type: fill
+  page: 3
+  stem: '<u>阿中</u>將一個邊長為 6 公分的正立方體木塊，沿 Q、R、S 三點鋸下四面體 PQRS（如右圖），剩下的木塊以截面 QRS 為底放在地上，已知$\overline{PQ}$＝4 公分，$\overline{PR}$＝x 公分，$\overline{PS}$＝2 公分，且已知四面體 PQRS 體積為$\frac{8}{3}$立方公分，則：
+
+    (1) x 值為＿＿＿＿公分。（3 分）（填充題，不須計算過程）
+
+    (2) 包含 Q、R、S 三點的平面方程式為何？（5 分）（請列出詳細的計算過程，否則不予以計分）（方程式請以 ax＋by＋cz＝d 呈現，其中 a＞0）
+
+    (3) 承上題，此平面方程式與平面 x＋y＝1 的夾角為＿＿＿＿。（2 分）（填充題，不須計算過程）（全對才給分）'
+  assets:
+  - key: s4_1_f1
+    kind: figure
+    file: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2/s4_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 455.45
+      - 422.25
+      - 564.3
+      - 541.8

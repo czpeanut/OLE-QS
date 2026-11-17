@@ -1,0 +1,245 @@
+document:
+  id: doc_111_桃園_武陵_數學_數甲_g12s1e3
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 3
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 111學年度第1學期第3次定期評量 高三數學（數甲）科試題
+  exam_name: 111學年度第1學期第3次定期評量
+  source_file: 高三/數學/111/1-3/桃園/武陵_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 10 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題全對得 10 分，錯一個選項得 6 分，錯兩個選項得 2 分，沒作答得 0 分，共 20 分）
+    count: 1
+  - ord: 3
+    name: 三、填充題（共 50 分）
+    count: 8
+  - ord: 4
+    name: 四、混合題（每小題 5 分，共 20 分）
+    count: 2
+questions:
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設 f（x）為多項式，且 deg（f（x））≥ 3，若 g（x）＝$\int_{0}^{x} t \cdot f ( t )dt$＋$x\int_{x}^{1} f ( t )dt$，則 g''（x）為下列哪一個函數？
+  options:
+  - label: A
+    content: f（x）
+  - label: B
+    content: －f（x）
+  - label: C
+    content: xf（x）
+  - label: D
+    content: －xf（x）
+  - label: E
+    content: $x^{2}$f（x）
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'g（x）＝$\int_{0}^{x} t \cdot f ( t )dt$－$x\int_{1}^{x} f ( t )dt$
+
+    g''（x）＝xf（x）－$\int_{1}^{x} f ( t )dt$－x．f（x）
+
+    ＝$-\int_{1}^{x} f ( t )dt$
+
+    g''''（x）＝－f（x）
+
+    故選(B)'
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設某一質點在數線上運動，時刻 t 時的速度為 v（t）＝$3t^{2}$＋63（公尺∕秒），則此一質點從時刻 t＝1 秒至時刻 t＝2 秒的位移為多少公尺？
+  options:
+  - label: A
+    content: 30 公尺
+  - label: B
+    content: 40 公尺
+  - label: C
+    content: 50 公尺
+  - label: D
+    content: 60 公尺
+  - label: E
+    content: 70 公尺
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求為$\int_{1}^{2} ( 3t^{2}+ 63 )dt$
+
+    ＝$\left. ( t^{3}+ 63t ) \right| _{1}^{2}$
+
+    ＝（8＋126）－（1＋63）＝70
+
+    故選(E)'
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設函數 f（x）＝1－$x^{2}$ 的圖形與直線 x＝0，x＝1 及 x 軸所圍成的區域為 R。將閉區間 [ 0，1 ] 等分成 n 等分，並設上和為 $U_{n}$，下和為 $L_{n}$。試選出正確的選項。
+  options:
+  - label: A
+    content: $U_{6}$＜$U_{3}$
+  - label: B
+    content: $L_{6}$＜$L_{3}$
+  - label: C
+    content: $L_{6}$＜$U_{6}$
+  - label: D
+    content: $\lim_{n \rightarrow \infty} L_{n}$＝$\lim_{n \rightarrow \infty} U_{n}$
+    asset:
+      key: s2_1_optD
+      file: doc_111_桃園_武陵_數學_數甲_g12s1e3/s2_1_optD.png
+      crop:
+        page: 1
+        rect:
+        - 459.75
+        - 594.35
+        - 564.3
+        - 698.9
+  - label: E
+    content: R 的面積為$\frac{2}{3}$
+  answer:
+  - A
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：當 n 愈大，則 $U_{n}$ 愈小
+
+    (B)╳；當 n 愈大，則 $L_{n}$ 愈大
+
+    (C)○：上和必大於下和
+
+    (D)○：∵y＝f（x）為連續函數
+
+    ∴$\lim_{n \rightarrow \infty} L_{n}$＝$\lim_{n \rightarrow \infty} U_{n}$
+
+    (E)○：R 的面積為$\int_{0}^{1} ( 1-x^{2} )dx$
+
+    ＝$\left. \left( x -\frac{1}{3}x^{3} \right) \right| _{0}^{1}$＝$\left( 1 -\frac{1}{3} \right) - 0$＝$\frac{2}{3}$
+
+    故選(A)(C)(D)(E)'
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: '試求下列定積分的值：
+
+    (1) $\int_{-2}^{2} ( 3x^{2} - 4x + 1 )dx$＝＿＿＿＿。
+
+    (2) $\int_{2}^{6} \sqrt{x^{2}- 8x + 16} dx$＝＿＿＿＿。'
+  answer:
+  - (1) 20；(2) 4
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知 f（x）＝$3x^{2}$＋2x．$( \int_{1}^{2} f ( x )dx )$＋1 為一多項式，則 f（x）＿＿＿＿。
+  answer:
+  - $3x^{2}$－8x＋1
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 在 xy 平面上，函數 y＝x 與 y＝$x^{3}$ 兩圖形所圍成區域的面積為＿＿＿＿。
+  answer:
+  - $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 在 xy 平面上，直線 3x＋y＝18 與兩曲線 y＝$x^{2}$、y＝$3x^{2}$ 在第一象限所圍出的封閉區域面積為 ＿＿＿＿。
+  answer:
+  - $\frac{19}{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 設三次函數 f（x）＝$x^{3}$＋$ax^{2}$＋bx 在 x＝$\frac{1}{\sqrt{3}}$處有極小值$-\frac{2\sqrt{3}}{9}$，且曲線 y＝f（x）與 x 軸所圍成的封閉區域為Γ，試問將Γ 繞 x 軸旋轉一圈，所得的旋轉體體積為＿＿＿＿。
+  answer:
+  - $\frac{16}{105}\pi$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 在 xy 平面上，拋物線 y＝－$x^{2}$ 與直線 x－y－2＝0 所圍出的封閉區域，繞 x 軸的旋轉體的體積為＿＿＿＿。
+  answer:
+  - $\frac{72}{5}\pi$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 f（x）為多項式，且滿足 $x^{2}$f（x）＝$\frac{3}{5}x^{5}-\frac{1}{3}x^{3}+ 2\int_{1}^{x} t \cdot f ( t )dt$，試求 f（x）＝＿＿＿＿。
+  answer:
+  - $x^{3}$－x＋$\frac{4}{15}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 在 xy 平面上，將圓 C：（x－3）$^{2}$＋（y－2）$^{2}$＝1 繞直線 L：3x＋4y－2＝0 旋轉所得之立體體積為＿＿＿＿。
+  answer:
+  - 6π$^{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 2
+  stem: 'n$\in$N，設 $1^{5}$，$2^{5}$，$3^{5}$，……，$n^{5}$ 等 n 個數的算術平均數為 M（n）。
+
+    (1) 試求$\lim_{n \rightarrow \infty} \frac{M ( n )}{n^{5}}$之值。（計算題）
+
+    (2) 試說明$\frac{M ( n )}{n^{5}}\geq \frac{1}{6}$。（提示：可用黎曼和）'
+- id: doc_111_桃園_武陵_數學_數甲_g12s1e3_s4_2
+  section: 4
+  number: 2
+  type: calc
+  page: 2
+  stem: '空間坐標系中，點 A（1，1，1），B（1，0，0)，P 為線段$\overline{AB}$上的動點，今將所有的動點 P，以 z 軸為中心軸，繞 z 軸旋轉一圈，它們的軌跡構成一曲面Γ，試回答下列問題。
+
+    (1) 平面 z＝t（0 ≤ t ≤ 1），與曲面Γ 所截的圓面積為何？（以 t 表示之）（計算題）
+
+    (2) 曲面Γ 與平面 z＝0、z＝1 所圍出的封閉立體空間的體積為何？（計算題）'
+  answer:
+  - (1) $\overline{AB}$：$\begin{cases}x = 1 \\ y =t \\ z =t\end{cases}$，0 ≤ t ≤ 1
+  answer_status: verified
+  answer_source: answer_key

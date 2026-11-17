@@ -1,0 +1,492 @@
+document:
+  id: doc_111_台中_興大附中_數學_數A_g11s2e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 3
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 111學年度第2學期第3次定期評量 高二數學（數A）科試題
+  exam_name: 111學年度第2學期第3次定期評量
+  source_file: 高二/數學/111/2-3/台中/興大附中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 24 分。每題有 5 個選項，其中只有一個是正確或最適當的選項。各題答對者，得 6 分，答錯、未作答者該題以零分計算）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 40 分）
+    count: 5
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 36 分）
+    count: 6
+questions:
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設 c 為實數使得三元一次方程組$\begin{cases}x -y+z =0 \\ 2x +cy +3z =1 \\ 3x - 3y +cz =0\end{cases}$無解。試選出 c 之值。
+  options:
+  - label: A
+    content: －3
+  - label: B
+    content: －2
+  - label: C
+    content: '0'
+  - label: D
+    content: '2'
+  - label: E
+    content: '3'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 考慮矩陣$A =\left[ \begin{matrix}a & b \\ c & -a\end{matrix} \right]$，其中 a、b、c 為實數且行列式 det
+  options:
+  - label: A
+    content: ＝－1。試問行列式 det（A－$A^{－1}$）之值為下列哪一個選項？(A) 0
+  - label: B
+    content: '1'
+  - label: C
+    content: '2'
+  - label: D
+    content: '3'
+  - label: E
+    content: '4'
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$A^{－1}$＝$\frac{1}{-1}\left[ \begin{matrix}-a & -b \\ -c & a\end{matrix} \right]$＝$\left[ \begin{matrix}a & b \\ c & -a\end{matrix} \right]$
+
+    A－$A^{－1}$＝$\left[ \begin{matrix}a & b \\ c & -a\end{matrix} \right]$－$\left[ \begin{matrix}a & b \\ c & -a\end{matrix} \right]$＝$\left[ \begin{matrix}0 & 0 \\ 0 & 0\end{matrix} \right]$⇒ det（A－$A^{－1}$）＝0
+
+    故選(A)'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 已知 A、B、C 皆為二階方陣，O 為二階零矩陣，I 為二階單位方陣，下列敘述何者正確？
+  options:
+  - label: A
+    content: AB＝BA
+  - label: B
+    content: 若 AB＝AC 且 A≠O，則 B＝C
+  - label: C
+    content: A（B＋C）＝AB，則 AC＝O
+  - label: D
+    content: （A＋B）$^{2}$＝$A^{2}$＋2AB＋$B^{2}$
+  - label: E
+    content: 若 $A^{2}$＝－I，則（ABA）$^{5}$＝－$AB^{5}$A
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：不一定
+
+    (B) ╳：不一定，除非 det(A)≠0
+
+    (C) ○：A（B＋C）＝AB＋AC＝AB ⇒ AC＝O
+
+    (D) ╳：（A＋B）$^{2}$＝$A^{2}$＋AB＋BA＋$B^{2}$
+
+    當 AB≠BA 時，（A＋B）$^{2}$≠$A^{2}$＋2AB＋$B^{2}$
+
+    (E) ╳：（ABA）$^{5}$＝ABAABAABAABAABA
+
+    ＝AB（－I）B（－I）B（－I）B（－I）BA
+
+    ＝$AB^{5}$A
+
+    故選(C)'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 在坐標平面上，將點 A（1，k）先水平推移 y 坐標的$\frac{1}{2}$倍，再以原點為中心，沿著 x 軸方向伸縮為 2 倍，沿著 y 軸方向伸縮為 4 倍，得點 A'（t，12），試求 t 值為何？
+  options:
+  - label: A
+    content: －1
+  - label: B
+    content: '1'
+  - label: C
+    content: '3'
+  - label: D
+    content: '5'
+  - label: E
+    content: '8'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可知，
+
+    $\left[ \begin{matrix}2 & 0 \\ 0 & 4\end{matrix} \right]\left[ \begin{matrix}1 & \frac{1}{2} \\ 0 & 1\end{matrix} \right]\left[ \begin{matrix}1 \\ k\end{matrix} \right]$＝$\left[ \begin{matrix}t \\ 12\end{matrix} \right]$
+
+    ⇒$\left[ \begin{matrix}2 & 1 \\ 0 & 4\end{matrix} \right] \left[ \begin{matrix}1 \\ k\end{matrix} \right]$＝$\left[ \begin{matrix}t \\ 12\end{matrix} \right]$
+
+    ⇒$\left[ \begin{matrix}2+k \\ 4k\end{matrix} \right]$＝$\left[ \begin{matrix}t \\ 12\end{matrix} \right]$
+
+    ⇒$\begin{cases}2+k =t \\ 4k =12\end{cases}$⇒$\begin{cases}t = 5 \\ k = 3\end{cases}$
+
+    故選(D)'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設 a，b ∈ R，下列有關線性方程組$\begin{cases}x +2y -3z =1 \\ x +3y -2z =0 \\ x +ay +bz =1\end{cases}$的敘述哪些是正確的？
+  options:
+  - label: A
+    content: 若此線性方程組有解，則 a－b≠5
+  - label: B
+    content: 存在不只一組數對（a，b）使得此線性方程組有無限多解
+  - label: C
+    content: 存在不只一組數對（a，b）使得此線性方程組無解
+  - label: D
+    content: 若此線性方程組有無限多解，則 $a^{3}$＋$b^{3}$＝35
+  - label: E
+    content: 若此線性方程組有無限多解，則 2x＋$y^{2}$＋$z^{2}$ 的最小值為－11
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\begin{cases}x +2y -3z =1 \cdots \cdots \cdots \cdots \cdots ① \\ x +3y -2z =0 \cdots \cdots \cdots \cdots \cdots ② \\ x +ay +bz =1 \cdots \cdots \cdots \cdots \cdots ③\end{cases}$，由②－①且③－①得$\begin{cases}y +z =-1 \\ (a - 2)y+(b + 3)z = 0\end{cases}$
+
+    ❶當$\frac{a - 2}{1}$≠$\frac{b + 3}{1}$，即 a－b≠5 時，有唯一解
+
+    ❷當$\frac{a - 2}{1}$＝$\frac{b + 3}{1}$＝$\frac{0}{-1}$，即 a＝2，b＝－3 時，有無限多組解
+
+    ❸當$\frac{a - 2}{1}$＝$\frac{b + 3}{1}$≠$\frac{0}{-1}$，即 a≠2，b≠－3，a－b＝5 時，無解
+
+    (A) ╳：可能 a＝2，b＝－3
+
+    (B) ╳：僅有一組數對（a，b）＝（2，－3）
+
+    (C) ○：由❸可知有無限多組
+
+    (D) ╳：$2^{3}$＋（－3）$^{3}$＝8－27＝－19
+
+    (E) ○：有無限多組解時$\begin{cases}y +z =-1 \\ x + 2y -3z =1\end{cases}$
+
+    令 z＝t，則 y＝－1－t，x＝3＋5t
+
+    ⇒ 2x＋$y^{2}$＋$z^{2}$＝6＋10t＋$t^{2}$＋2t＋1＋$t^{2}$
+
+    ＝$2t^{2}$＋12t＋7＝2（t＋3）$^{2}$－11
+
+    當 t＝－3 時，有最小值－11
+
+    故選(C)(E)'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 二階方陣 A 滿足$A\left[ \begin{matrix}7 \\ 3\end{matrix} \right]$＝$\left[ \begin{matrix}-1 \\ 4\end{matrix} \right]$，$A\left[ \begin{matrix}2 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}3 \\ -1\end{matrix} \right]$，下列哪些選項正確？
+  options:
+  - label: A
+    content: $A\left[ \begin{matrix}6 \\ 3\end{matrix} \right]$＝$\left[ \begin{matrix}6 \\ -3\end{matrix} \right]$
+  - label: B
+    content: $A\left[ \begin{matrix}1 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}-10 \\ 7\end{matrix} \right]$
+  - label: C
+    content: $A\left[ \begin{matrix}0 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}23 \\ 15\end{matrix} \right]$
+  - label: D
+    content: $A\left[ \begin{matrix}7 & 2 \\ 3 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 3 \\ 4 & -1\end{matrix} \right]$
+  - label: E
+    content: $A=\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$時，a＋b＋c＋d＝－5
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：∵A＝$\left[ \begin{matrix}-1 \\ 4\end{matrix} \right] \left[ \begin{matrix}7 \\ 3\end{matrix} \right] ^{-1}$，A＝$\left[ \begin{matrix}3 \\ -1\end{matrix} \right] \left[ \begin{matrix}2 \\ 1\end{matrix} \right] ^{-1}$
+
+    ∴A＝$\left[ \begin{matrix}-1 & 3 \\ 4 & -1\end{matrix} \right] \left[ \begin{matrix}7 & 2 \\ 3 & 1\end{matrix} \right] ^{-1}$
+
+    ＝$\left[ \begin{matrix}-1 & 3 \\ 4 & -1\end{matrix} \right]\left[ \begin{matrix}1 & -2 \\ -3 & 7\end{matrix} \right]$＝$\left[ \begin{matrix}-10 & 23 \\ 7 & -15\end{matrix} \right]$
+
+    則$A\left[ \begin{matrix}6 \\ 3\end{matrix} \right]$＝$\left[ \begin{matrix}-10 & 23 \\ 7 & -15\end{matrix} \right]\left[ \begin{matrix}6 \\ 3\end{matrix} \right]$＝$\left[ \begin{matrix}9 \\ -3\end{matrix} \right]$
+
+    (B) ○：由(A)可知
+
+    $A\left[ \begin{matrix}1 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}-10 & 23 \\ 7 & -15\end{matrix} \right]\left[ \begin{matrix}1 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}-10 \\ 7\end{matrix} \right]$
+
+    (C) ╳：由(A)可知
+
+    $A\left[ \begin{matrix}0 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}-10 & 23 \\ 7 & -15\end{matrix} \right]\left[ \begin{matrix}0 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}23 \\ -15\end{matrix} \right]$
+
+    (D) ○：由題意可知
+
+    $A\left[ \begin{matrix}7 & 2 \\ 3 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 3 \\ 4 & -1\end{matrix} \right]$
+
+    (E) ╳：由(A)可知
+
+    $A=\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$＝$\left[ \begin{matrix}-10 & 23 \\ 7 & -15\end{matrix} \right]$
+
+    則 a＋b＋c＋d＝（－10）＋23＋7＋（－15）＝5
+
+    故選(B)(D)'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 兩二階方陣 A，B，A 表示平面上對直線 L：y＝$-\sqrt{3}x$的鏡射變換，且$AB=\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$。下列哪些選項正確？
+  options:
+  - label: A
+    content: AB＝BA
+  - label: B
+    content: A＋B＝O
+  - label: C
+    content: －A 是 B 的反方陣
+  - label: D
+    content: 方陣 B 所表示的平面變換將點（1，0）對應到點$\left( 0 , \frac{\sqrt{3}}{2} \right)$
+  - label: E
+    content: 方陣 B 所表示的平面變換為對直線 L：y＝$\sqrt{3}$x 的鏡射
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '直線 L 和正 x 軸夾 120°
+
+    則 A＝$\left[ \begin{matrix}\cos 240^{^{\circ}} & \sin 240^{^{\circ}} \\ \sin 240^{^{\circ}} & -\cos 240^{^{\circ}}\end{matrix} \right]$＝$\left[ \begin{matrix}-\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ -\frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right]$
+
+    又 $A^{－1}$＝$\left[ \begin{matrix}-\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ -\frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right]$且 AB＝－I
+
+    故 B＝－$A^{－1}$＝$\left[ \begin{matrix}\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & -\frac{1}{2}\end{matrix} \right]$＝－A
+
+    (A) ○：AB＝A（－A）＝－$A^{2}$，BA＝（－A）A＝－$A^{2}$
+
+    (B) ○：A＋B＝A＋（－A）＝O
+
+    (C) ○：∵B＝－$A^{－1}$
+
+    ∴$B^{－1}$＝（－$A^{－1}$）$^{－1}$＝－A
+
+    (D) ╳：$\left[ \begin{matrix}\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & -\frac{1}{2}\end{matrix} \right]\left[ \begin{matrix}1 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{1}{2} \\ \frac{\sqrt{3}}{2}\end{matrix} \right]$
+
+    (E) ╳：B＝$\left[ \begin{matrix}\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & -\frac{1}{2}\end{matrix} \right]$＝$\left[ \begin{matrix}\cos 60^{^{\circ}} & \sin 60^{^{\circ}} \\ \sin 60^{^{\circ}} & -\cos 60^{^{\circ}}\end{matrix} \right]$
+
+    表示對 y＝tan30°×x＝$\frac{1}{\sqrt{3}}$x 的鏡射
+
+    故選(A)(B)(C)'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 設二階實係數方陣 A 代表坐標平面的一個鏡射變換且滿足$A^{3}=\left[ \begin{matrix}0 & -1 \\ -1 & 0\end{matrix} \right]$；另設二階實係數方陣 B 代表坐標平面的一個（以原點為中心的）旋轉變換且滿足$B^{3}=\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$，試選出正確的選項。
+  options:
+  - label: A
+    content: A 只有一種可能
+  - label: B
+    content: B 只有一種可能
+  - label: C
+    content: AB＝BA
+  - label: D
+    content: 二階方陣 AB 代表坐標平面的一個旋轉變換
+  - label: E
+    content: $BABA=\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：∵A 為鏡射變換
+
+    ∴$A^{2}$＝I
+
+    故 A＝$A^{3}=\left[ \begin{matrix}0 & -1 \\ -1 & 0\end{matrix} \right]$
+
+    (B) ╳：設$B=\left[ \begin{matrix}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{matrix} \right]$
+
+    則$B^{3}=\left[ \begin{matrix}\cos 3\theta & -\sin 3\theta \\ \sin 3\theta & \cos 3\theta\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$
+
+    ⇒ 3θ＝180°＋360°k，k ∈ Z
+
+    ⇒ θ＝60°＋120°k，k ∈ Z
+
+    當 k 除以 3 餘 0 時，$B=\left[ \begin{matrix}\cos 60^{^{\circ}} & -\sin 60^{^{\circ}} \\ \sin 60^{^{\circ}} & \cos 60^{^{\circ}}\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right]$
+
+    當 k 除以 3 餘 1 時，$B=\left[ \begin{matrix}\cos 180^{^{\circ}} & -\sin 180^{^{\circ}} \\ \sin 180^{^{\circ}} & \cos 180^{^{\circ}}\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$
+
+    當 k 除以 3 餘 2 時，$B=\left[ \begin{matrix}\cos 300^{^{\circ}} & -\sin 300^{^{\circ}} \\ \sin 300^{^{\circ}} & \cos 300^{^{\circ}}\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{1}{2} & \frac{\sqrt{3}}{2} \\ -\frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right]$，共 3 種可能
+
+    (C) ╳：反例：取$B=\left[ \begin{matrix}\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right]$，則$AB=\left[ \begin{matrix}0 & -1 \\ -1 & 0\end{matrix} \right]\left[ \begin{matrix}\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right]$＝$\left[ \begin{matrix}-\frac{\sqrt{3}}{2} & -\frac{1}{2} \\ -\frac{1}{2} & \frac{\sqrt{3}}{2}\end{matrix} \right]$
+
+    $BA=\left[ \begin{matrix}\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right]\left[ \begin{matrix}0 & -1 \\ -1 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{\sqrt{3}}{2} & -\frac{1}{2} \\ -\frac{1}{2} & -\frac{\sqrt{3}}{2}\end{matrix} \right]$
+
+    故 AB≠BA
+
+    (D) ╳：反例：由(C)可知 AB 和 BA 非旋轉變換，而是鏡射變換
+
+    (E) ○：∵A 為鏡射變換，B 為旋轉變換
+
+    ∴BA 為鏡射變換 ⇒（BA）$^{2}$＝BABA＝I
+
+    故選(A)(E)'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s2_5
+  section: 2
+  number: 5
+  type: multiple
+  page: 2
+  stem: 已知 A、B 是兩個 2×2 的轉移矩陣，試問下列矩陣哪些是轉移矩陣？
+  options:
+  - label: A
+    content: $A^{2}$
+  - label: B
+    content: A＋B
+  - label: C
+    content: AB
+  - label: D
+    content: $\frac{1}{2}$（$A^{2}$＋$B^{2}$）
+  - label: E
+    content: 4（$A^{2}$＋$B^{2}$）
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：轉移矩陣乘以轉移矩陣亦為轉移矩陣，故 $A^{2}$＝A．A 為轉移矩陣
+
+    (B) ╳：應為$\frac{A+B}{2}$
+
+    (C) ○：轉移矩陣乘以轉移矩陣亦為轉移矩陣，故 A．B 為轉移矩陣
+
+    (D) ○：∵$A^{2}$，$B^{2}$ 為轉移矩陣
+
+    ∴$\frac{A^{2}+B^{2}}{2}$亦為轉移矩陣
+
+    (E) ╳：應為$\frac{A^{2}+B^{2}}{2}$
+
+    故選(A)(C)(D)'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: 已知矩陣$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$的反方陣為$\left[ \begin{matrix}3 & \sqrt{5} \\ 2 & \sqrt{7}\end{matrix} \right]$，求聯立方程式$\begin{cases}ax+by=2 \\ cx+dy=0\end{cases}$之解（x，y）＝＿＿＿＿。
+  answer:
+  - （6，4）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}2 \\ 0\end{matrix} \right]$
+
+    ⇒$\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] ^{-1}\left[ \begin{matrix}2 \\ 0\end{matrix} \right]$
+
+    ＝$\left[ \begin{matrix}3 & \sqrt{5} \\ 2 & \sqrt{7}\end{matrix} \right]\left[ \begin{matrix}2 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}6 \\ 4\end{matrix} \right]$
+
+    故（x，y）＝（6，4）'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 已知$P=\left[ \begin{matrix}\cos (-25^{^{\circ}}) & \sin (-25^{^{\circ}}) \\ -\sin (-25^{^{\circ}}) & \cos (-25^{^{\circ}})\end{matrix} \right]\left[ \begin{matrix}\sqrt{3} & 0 \\ 0 & \sqrt{3}\end{matrix} \right]\left[ \begin{matrix}\cos 20^{^{\circ}} & -\sin 20^{^{\circ}} \\ \sin 20^{^{\circ}} & \cos 20^{^{\circ}}\end{matrix} \right]$，且 M＝$P^{4}$，△ABC 的三頂點坐標為 A（3，1），B（1，3），C（－2，－2），則△ABC 經二階方陣 M 線性變換後的面積為＿＿＿＿。
+  answer:
+  - '648'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P＝$\left[ \begin{matrix}\cos 25^{^{\circ}} & -\sin 25^{^{\circ}} \\ \sin 25^{^{\circ}} & \cos 25^{^{\circ}}\end{matrix} \right]\sqrt{3}\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]\left[ \begin{matrix}\cos 20^{^{\circ}} & -\sin 20^{^{\circ}} \\ \sin 20^{^{\circ}} & \cos 20^{^{\circ}}\end{matrix} \right]$
+
+    ＝$\sqrt{3}\left[ \begin{matrix}\cos 45^{^{\circ}} & -\sin 45^{^{\circ}} \\ \sin 45^{^{\circ}} & \cos 45^{^{\circ}}\end{matrix} \right]$
+
+    $P^{4}$＝$9\left[ \begin{matrix}\cos 180^{^{\circ}} & -\sin 180^{^{\circ}} \\ \sin 180^{^{\circ}} & \cos 180^{^{\circ}}\end{matrix} \right]$⇒ det（$P^{4}$）＝81
+
+    又$\vec{AB}$＝（－2，2），$\vec{AC}$＝（－5，－3）
+
+    △ABC＝$\frac{1}{2} | \left| \begin{matrix}-2 & -5 \\ 2 & -3\end{matrix} \right| |$＝8
+
+    ∵∣det（$P^{4}$）∣＝$\frac{\triangle ABC 線性變換後的面積}{\triangle ABC 面積}$
+
+    ∴△ABC 線性變換後的面積為 8×81＝648'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 矩陣 A 滿足$A\left[ \begin{matrix}p & q \\ 0 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}2 & -5 \\ 3 & 1\end{matrix} \right]$，$A\left[ \begin{matrix}0 & 0 \\ r & s\end{matrix} \right]$＝$\left[ \begin{matrix}6 & 2 \\ -1 & 4\end{matrix} \right]$，$A\left[ \begin{matrix}-p & -q \\ 3r & 3s\end{matrix} \right]$＝B＝$〔b_{ij}〕_{2\times 2}$，則 $b_{12}$＋$b_{22}$＝＿＿＿＿。
+  answer:
+  - '22'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可知
+
+    ⇒$\begin{cases}A\left[ \begin{cases}p \\ 0\end{cases} \right] =\left[ \begin{cases}2 \\ 3\end{cases} \right] \\ A\left[ \begin{cases}q \\ 0\end{cases} \right] =\left[ \begin{cases}-5 \\ 1\end{cases} \right] \\ A\left[ \begin{cases}0 \\ r\end{cases} \right] =\left[ \begin{cases}6 \\ -1\end{cases} \right] \\ A\left[ \begin{cases}0 \\ s\end{cases} \right] =\left[ \begin{cases}2 \\ 4\end{cases} \right]\end{cases}$⇒$\begin{cases}A\left[ \begin{cases}-p \\ 0\end{cases} \right] =\left[ \begin{cases}-2 \\ -3\end{cases} \right] \\ A\left[ \begin{cases}-q \\ 0\end{cases} \right] =\left[ \begin{cases}5 \\ -1\end{cases} \right] \\ A\left[ \begin{cases}0 \\ 3r\end{cases} \right] =\left[ \begin{cases}18 \\ -3\end{cases} \right] \\ A\left[ \begin{cases}0 \\ 3s\end{cases} \right] =\left[ \begin{cases}6 \\ 12\end{cases} \right]\end{cases}$
+
+    ⇒$A\left[ \begin{matrix}-p \\ 3r\end{matrix} \right]$＝$\left[ \begin{matrix}-2 \\ -3\end{matrix} \right]$＋$\left[ \begin{matrix}18 \\ -3\end{matrix} \right]$＝$\left[ \begin{matrix}16 \\ -6\end{matrix} \right]$
+
+    $A\left[ \begin{matrix}-q \\ 3s\end{matrix} \right]$＝$\left[ \begin{matrix}5 \\ -1\end{matrix} \right]$＋$\left[ \begin{matrix}6 \\ 12\end{matrix} \right]$＝$\left[ \begin{matrix}11 \\ 11\end{matrix} \right]$
+
+    ⇒$A\left[ \begin{matrix}-p & -q \\ 3r & 3s\end{matrix} \right]$＝$\left[ \begin{matrix}16 & 11 \\ -6 & 11\end{matrix} \right]$＝$\left[ \begin{matrix}b_{11} & b_{12} \\ b_{21} & b_{22}\end{matrix} \right]$
+
+    故 $b_{12}$＋$b_{22}$＝11＋11＝22'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 化學實驗課時，老師要同學做稀釋的實驗。有甲、乙兩支大瓶子，開始時兩瓶分別裝有$\frac{3}{4}$公升和$\frac{1}{4}$公升的溶液，依照下列的規則操作每一輪的動作：先將甲瓶的溶液倒出一半到乙瓶，再將乙瓶的溶液倒出一半到甲瓶。則第二輪之後，乙瓶中的溶液有＿＿＿＿公升。
+  answer:
+  - $\frac{21}{64}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 已知 a、b 為實數，且方程組$\begin{cases}ax + 5y + 12z =4 \\ x +ay +\frac{8}{3}z =7 \\ 3x + 8y +az =1\end{cases}$恰有一組解，又此方程組經過一系列的高斯消去法運算後，原來的增廣矩陣可化為$\left[ \begin{matrix}1 & 2 & b & 7 \\ 0 & b & 5 & -5 \\ 0 & 0 & b & 0\end{matrix} \right]$，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - $\left( 2 , \frac{1}{2} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可知$\begin{cases}ax + 5y + 12z =4 \\ x +ay +\frac{8}{3}z =7 \\ 3x + 8y +az =1\end{cases}$⇒$\begin{cases}x + 2y +bz =7 \\ by + 5z =-5 \\ bz =0\end{cases}$
+
+    ∵恰有一組解且 bz＝0
+
+    ∴z＝0
+
+    故可改寫為$\begin{cases}ax + 5y = 4 \cdots \cdots \cdots \cdots \cdots ① \\ x +ay =7 \cdots \cdots \cdots \cdots \cdots ② \\ 3x + 8y =1 \cdots \cdots \cdots \cdots \cdots ③\end{cases}$⇒$\begin{cases}x + 2y =7 \cdots \cdots \cdots \cdots \cdots ④ \\ by =-5 \cdots \cdots \cdots \cdots \cdots ⑤ \\ 0 = 0\end{cases}$
+
+    解③、④可得$\begin{cases}3x + 8y = 1 \\ x + 2y = 7\end{cases}$⇒$\begin{cases}x =27 \\ y =-10\end{cases}$
+
+    代入①、⑤可得$\begin{cases}27a = 54 \\ -10b =-5\end{cases}$⇒$\begin{cases}a = 2 \\ b =\frac{1}{2}\end{cases}$
+
+    故數對（a，b）＝$\left( 2 , \frac{1}{2} \right)$'
+- id: doc_111_台中_興大附中_數學_數A_g11s2e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 設 a，b，c，d 為實數，已知矩陣$\left[ \begin{matrix}a & b & 16 & -9 \\ c & d & -7 & 5\end{matrix} \right]$經過列運算後得$\left[ \begin{matrix}0 & 1 & -3 & 2 \\ 1 & 0 & 2 & -1\end{matrix} \right]$，則 b 的值為＿＿＿＿。
+  answer:
+  - －2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '先將（16，－9）寫成（－3，2）和（2，－1）的線性組合
+
+    令 $x_{1}$（－3，2）＋$y_{1}$（2，－1）＝（16，－9）
+
+    ⇒$\begin{cases}-3x_{1}+2y_{1}=16 \\ 2x_{1}-y_{1}=-9\end{cases}$⇒$\begin{cases}x_{1}=-2 \\ y_{1}=5\end{cases}$
+
+    則（a，b）＝－2（0，1）＋5（1，0）＝（5，－2）
+
+    故 b＝－2'

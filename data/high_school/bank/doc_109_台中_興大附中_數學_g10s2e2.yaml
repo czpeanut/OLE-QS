@@ -1,0 +1,336 @@
+document:
+  id: doc_109_台中_興大附中_數學_g10s2e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 109學年度第2學期第2次定期評量 高一數學科試題
+  exam_name: 109學年度第2學期第2次定期評量
+  source_file: 高一/數學/109/2-2/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 30 分）
+    count: 5
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 16 分）
+    count: 2
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 54 分）
+    count: 8
+questions:
+- id: doc_109_台中_興大附中_數學_g10s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 疫情影響，餐廳生意大不如前，為了節省成本、共體時艱，甲與乙兩位員工休無薪假，甲員工每週排休 2 天，乙員工每週排休 3 天，若每天最多只能有一位員工排休，則一週 7 天的排休方式有幾種？
+  options:
+  - label: A
+    content: 21 種
+  - label: B
+    content: 35 種
+  - label: C
+    content: 210 種
+  - label: D
+    content: 350 種
+  - label: E
+    content: 441 種
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '甲 甲 乙 乙 乙 ╳ ╳ 排列
+
+    所求有$\frac{7 ！}{2 ！ 3 ！ 2 ！}=210$（種），故選(C)'
+- id: doc_109_台中_興大附中_數學_g10s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 某畢業班由 9 位同學負責畢旅規劃，這 9 人平分成 A、B、C 三組，每位同學都會被分配到其中一組，而甲、乙兩位同學一定要在同一組。則這 9 位同學總共有幾種分組方式？
+  options:
+  - label: A
+    content: 70 種
+  - label: B
+    content: 140 種
+  - label: C
+    content: 210 種
+  - label: D
+    content: 420 種
+  - label: E
+    content: 2520 種
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\frac{C_{1}^{7}\times C_{3}^{6}\times C_{3}^{3}}{2 ！}\times 3 ！$，故選(D)
+- id: doc_109_台中_興大附中_數學_g10s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 考慮有理數$\frac{n}{m}$，其中 m，n 為正整數且 1 ≤ mn ≤ 7。則這樣的數值$\left( 例如\frac{1}{2}與\frac{2}{4}同值 , 只算一個 \right)$共有幾個？
+  options:
+  - label: A
+    content: 14 個
+  - label: B
+    content: 15 個
+  - label: C
+    content: 16 個
+  - label: D
+    content: 17 個
+  - label: E
+    content: 18 個
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台中_興大附中_數學_g10s2e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 從 AAABBCC 七個字母中選四個出來排成一列，則排法共有多少種？
+  options:
+  - label: A
+    content: 52 種
+  - label: B
+    content: 58 種
+  - label: C
+    content: 62 種
+  - label: D
+    content: 66 種
+  - label: E
+    content: 72 種
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '① 3 同 1 異：$C_{1}^{1}\times C_{1}^{2}\times \frac{4 ！}{3 ！ 1 ！}=8$
+
+    ② 2 同 2 同：$C_{2}^{3}\times \frac{4 ！}{2 ！ 2 ！}=18$
+
+    ③ 2 同 2 異：$C_{1}^{3}\times C_{2}^{2}\times \frac{4 ！}{2 ！}=36$
+
+    共有 8＋18＋36＝62（種）
+
+    故選(C)'
+- id: doc_109_台中_興大附中_數學_g10s2e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 在右圖 5×5 黑白相間的固定棋盤中，任意選取 1 黑方格與 1 白方格。選出的黑方格與白方格不在同一行也不在同一列，則選擇的方法有多少種？
+  options:
+  - label: A
+    content: 96 種
+  - label: B
+    content: 112 種
+  - label: C
+    content: 120 種
+  - label: D
+    content: 126 種
+  - label: E
+    content: 156 種
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_109_台中_興大附中_數學_g10s2e2/s1_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 458.9
+      - 543.3
+      - 564.3
+      - 648.7
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $C_{1}^{12}\times C_{1}^{8}=96$，故選(A)
+- id: doc_109_台中_興大附中_數學_g10s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 將 9 個男生與 8 個女生共 17 個人排成一列，下列哪些敘述是正確的？
+  options:
+  - label: A
+    content: 男生排在一起，女生也排在一起的排法有 9！×8！種
+  - label: B
+    content: 女生排在一起的排法有 10！×8！種
+  - label: C
+    content: 男女相間隔的排法有 9！×8！種
+  - label: D
+    content: 女生不排首位的排法有 17！－16！種
+  - label: E
+    content: 男生不排首位也不排末位的排法有$P_{2}^{8}\times 15 ！$種
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台中_興大附中_數學_g10s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: '公益彩券大樂透的玩家購買每張彩券時，都可以從 01～49 中選擇 6 個號碼進行投注，開獎時也會隨機開出 6 個中獎號碼，若玩家投注的 6 個號碼與開獎的 6 個中獎號碼相同，就可中頭獎。今<u>阿傑</u>共投注 4 張彩券：
+
+    第 1 張彩券投注 01～06 號；
+
+    第 2 張彩券從 01～07 當中隨意選 6 個號碼投注；
+
+    第 3 張彩券從 01～08 當中隨意選 6 個號碼投注；
+
+    第 4 張彩券從 01～09 當中隨意選 6 個號碼投注。
+
+    試問下列哪些選項是正確的？'
+  options:
+  - label: A
+    content: 第 1 張彩券和第 2 張彩券號碼相同的機率為$\frac{1}{7}$
+  - label: B
+    content: 第 4 張彩券中頭獎的機率大於第 1 張彩券中頭獎的機率
+  - label: C
+    content: 第 3 張彩券和第 4 張彩券號碼相同的機率為$\frac{1}{C_{6}^{9}}$
+  - label: D
+    content: 第 1 張彩券中頭獎的機率為$\frac{1}{C_{6}^{49}}$
+  - label: E
+    content: 第 3 張彩券中頭獎的機率大於第 1 張彩券中頭獎的機率
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：$\frac{1}{C_{6}^{7}}=\frac{1}{7}$
+
+    (B) ╳：皆為$\frac{1}{C_{6}^{49}}$
+
+    (C) ○
+
+    (D) ○
+
+    (E) ╳：同(B)
+
+    故選(A)(C)(D)'
+- id: doc_109_台中_興大附中_數學_g10s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 設 x 為整數，且 A 表示滿足不等式 $3x^{2}$－10x－25 ≤ 0 的解所形成的集合，則集合 A 的部分集合（子集）共有＿＿＿＿個。
+  answer:
+  - '128'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台中_興大附中_數學_g10s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 將 5 件不相同的獎品，全分給甲、乙、丙三人，每人可兼得或不得，若規定每人至多得 3 件，則有＿＿＿＿種不同的分法。
+  answer:
+  - '210'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'n（任意）－n（有人 5 件）－n（有人 4 件）
+
+    ＝$3^{5}-C_{1}^{3}\times 1-(C_{1}^{3}\times C_{4}^{5}) (C_{1}^{2}\times C_{1}^{1})$＝243－3－30＝210（種）'
+- id: doc_109_台中_興大附中_數學_g10s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設 a＞0 且已知$\left( ax+\frac{1}{x^{2}} \right) ^{6}$之展開式中，常數項為 240，則 a＝＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left( ax+\frac{1}{x^{2}} \right) ^{6}$的每一項形如$C_{k}^{6} (ax)^{6-k}\left( \frac{1}{x^{2}} \right) ^{k}$＝$C_{k}^{6}a^{6-k}x^{(6-k)-2k}$
+
+    常數項即 $x^{0}$ 項 ⇒ 6－3k＝0 ⇒ k＝2
+
+    由常數項為$240=C_{2}^{6}a^{6-2}$ ⇒ $a^{4}$＝16 ⇒ a＝± 2（負不合）'
+- id: doc_109_台中_興大附中_數學_g10s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 有 A，B，C，D，……，I 共 9 個玩具必須平分成三堆，每堆 3 個。若 A 跟 B 必須放在同一堆，C 跟 D 必須放在不同堆，則可能的分法共有＿＿＿＿種。
+  answer:
+  - '50'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '① AB＋C 同堆或 AB＋D 同堆：$\frac{C_{3}^{6}\times C_{3}^{3}}{2 ！}\times 2$＝20
+
+    ② AB 與 C，D 不同堆：$C_{1}^{5}\times C_{2}^{4}\times C_{2}^{2}$＝30
+
+    故可能的分法共有 50 種'
+- id: doc_109_台中_興大附中_數學_g10s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 因應 COVID-19 政府管制的口罩政策，身分證字號最末一碼為偶數者，能在「星期二、四、六、日」這四天中任一天買口罩，若為奇數，則在「星期一、三、五、日」其中的一天購買。已知甲、乙、丙三人中，甲、乙的身分證字號最末一碼為奇數，丙為偶數。若此三人在這星期的相異三天買了口罩，請問他們可能購買的日期共有＿＿＿＿種排列情形。
+  answer:
+  - '42'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '①丙選星期日：$1\times (C_{2}^{3}\times 2 ！ )=6$
+
+    ②甲或乙選星期日：$(C_{1}^{2}\times C_{1}^{3})\times C_{1}^{3}=18$
+
+    ③皆不選星期日：$(C_{2}^{3}\times 2 ！ )\times C_{1}^{3}=18$
+
+    故共有 6＋18＋18＝42（種）'
+- id: doc_109_台中_興大附中_數學_g10s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 橋牌社有 4 位男生與 2 位女生。若老師從這 6 人中隨機指派 3 人參加校際橋牌比賽，則此 3 人中有男生也有女生的機率為＿＿＿＿。
+  answer:
+  - $\frac{4}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '可能情形為 2 男 1 女或 1 男 2 女
+
+    所求機率為$\frac{C_{2}^{4}\times C_{1}^{2}+C_{1}^{4}\times C_{2}^{2}}{C_{3}^{6}}$＝$\frac{12+4}{20}$＝$\frac{16}{20}$＝$\frac{4}{5}$'
+- id: doc_109_台中_興大附中_數學_g10s2e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 甲、乙、丙三個高中的一年級分別有 3、4、5 個班級。從這 12 個班級中選出一班參加國文抽考，再從未被抽中的班級選出一班參加英文抽考。則參加抽考的兩個班級在同一個學校的機率為＿＿＿＿。
+  answer:
+  - $\frac{19}{66}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 所求機率為$\frac{C_{2}^{3}\times 2 ！ +C_{2}^{4}\times 2 ！ +C_{2}^{5}\times 2 ！}{C_{1}^{12}\times C_{1}^{11}}$＝$\frac{(3+6+10)\times 2 ！}{12\times 11}$＝$\frac{19}{66}$
+- id: doc_109_台中_興大附中_數學_g10s2e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 同時丟擲紅、橙、黃、綠、藍、紫六顆公正的骰子，其骰子朝上的點數分別為 x、y、z、p、 q、r，若已知 x＋y＋z－p－q－r＝14 的機率為$\frac{a}{6^{6}}$，則 a＝＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '①當 x＋y＋z＝18，p＋q＋r＝4 時
+
+    機率為$\frac{1\times 3}{6^{6}}$
+
+    ②當 x＋y＋z＝17，p＋q＋r＝3 時
+
+    機率為$\frac{3\times 1}{6^{6}}$
+
+    則機率為$\frac{3+3}{6^{6}}$＝$\frac{6}{6^{6}}$，故 a＝6'

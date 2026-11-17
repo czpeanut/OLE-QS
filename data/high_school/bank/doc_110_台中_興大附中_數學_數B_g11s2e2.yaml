@@ -1,0 +1,365 @@
+document:
+  id: doc_110_台中_興大附中_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 110學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 110學年度第2學期第2次定期評量
+  source_file: 高二/數學/110/2-2/台中/興大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 25 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 40 分）
+    count: 4
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 35 分）
+    count: 7
+questions:
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 已知兩個二階方陣相等：$\left[ \begin{matrix}a +b & d \\ c & a -b\end{matrix} \right]$＝$\left[ \begin{matrix}5 & 2 \\ 4 & 1\end{matrix} \right]$，求實數 b 之值？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: '4'
+  - label: E
+    content: 以上皆非
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\begin{cases}a +b = 5\cdots \cdots \cdots \cdots \cdots ① \\ a -b = 1 \cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    b＝$\frac{①-②}{2}$＝2
+
+    故選(B)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 已知有兩個二階方陣：X＝$\left[ \begin{matrix}1 & 2 \\ 3 & 4\end{matrix} \right]$，Y＝$\left[ \begin{matrix}6 & 2 \\ 3 & 9\end{matrix} \right]$。則下列哪一個選項的敘述為<u>錯誤</u>？
+  options:
+  - label: A
+    content: X＋Y 可以運算
+  - label: B
+    content: 2X－Y 可以運算
+  - label: C
+    content: X 有乘法反方陣
+  - label: D
+    content: XY＝YX 成立
+  - label: E
+    content: X 的反方陣為$\left[ \begin{matrix}4 & -2 \\ -3 & 1\end{matrix} \right]$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) X、Y 皆為二階方陣，故可相加
+
+    (B) X、Y 皆為二階方陣，故可作係數積及相加減
+
+    (C) ∵1×4－2×3≠0，故 X 有乘法反方陣
+
+    (D) XY＝$\left[ \begin{matrix}12 & 20 \\ 30 & 42\end{matrix} \right]$，YX＝$\left[ \begin{matrix}12 & 20 \\ 30 & 42\end{matrix} \right]$，故 XY＝YX
+
+    (E)$X^{-1}$＝$\frac{1}{-2}\left[ \begin{matrix}4 & -2 \\ -3 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}-2 & 1 \\ \frac{3}{2} & -\frac{1}{2}\end{matrix} \right]$
+
+    故選(E)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 試問$\left[ \begin{matrix}4 & 5 & 6\end{matrix} \right] \left[ \begin{matrix}2 \\ 3 \\ -1\end{matrix} \right]$等於下列哪一個選項？
+  options:
+  - label: A
+    content: '[17]'
+  - label: B
+    content: $\left[ \begin{matrix}2 \\ 3 \\ -1\end{matrix} \right] \left[ \begin{matrix}4 & 5 & 6\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}8 & 10 & 12 \\ 12 & 15 & 18 \\ -4 & -5 & -6\end{matrix} \right]$
+  - label: D
+    content: 無法相乘運算
+  - label: E
+    content: 以上皆非
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left[ \begin{matrix}4 & 5 & 6\end{matrix} \right] \left[ \begin{matrix}2 \\ 3 \\ -1\end{matrix} \right]$＝$\left[ 4 \cdot 2 + 5 \cdot 3 + 6 \cdot (-1 ) \right]$＝[17]
+
+    故選(A)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 2
+  stem: 設 A 為 2×2 階矩陣，且對任意實數 x、y，則 A$\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}-y \\ x\end{matrix} \right]$均成立。試求矩陣 $A^{2}\left[ \begin{matrix}1 \\ 2\end{matrix} \right]$＝？
+  options:
+  - label: A
+    content: $\left[ \begin{matrix}-2 \\ -1\end{matrix} \right]$
+  - label: B
+    content: $\left[ \begin{matrix}2 \\ -1\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}-1 \\ -2\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}1 \\ -2\end{matrix} \right]$
+  - label: E
+    content: 以上皆非
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$A^{2}\left[ \begin{matrix}1 \\ 2\end{matrix} \right]$＝A$\left( A\left[ \begin{matrix}1 \\ 2\end{matrix} \right] \right)$＝A$\left[ \begin{matrix}-2 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}-1 \\ -2\end{matrix} \right]$
+
+    故選(C)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 設 A、B、C 皆為二階方陣，I 為二階單位方陣，O 為二階零方陣，則下列敘述哪些恆成立？
+  options:
+  - label: A
+    content: 若 AB＝I，則 BA＝I
+  - label: B
+    content: （A＋I）$^{2}$＝$A^{2}$＋2A＋I
+  - label: C
+    content: $A^{2}$－$B^{2}$＝（A＋B）（A－B）
+  - label: D
+    content: 若 AB＝O，則 A＝O 或 B＝O
+  - label: E
+    content: 若 A 有乘法反方陣，且 AB＝CA，則 B＝C
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 3
+  stem: 設 n 階方陣 A＝$\left[ \begin{matrix}a_{11} & a_{12} & a_{13} & a_{14} & \cdots & a_{1n} \\ a_{21} & a_{22} & a_{23} & a_{24} & \cdots & a_{2n} \\ a_{31} & a_{32} & a_{33} & a_{34} & \cdots & a_{3n} \\ a_{41} & a_{42} & a_{43} & a_{44} & \cdots & a_{4n} \\ ⋮ & ⋮ & ⋮ & ⋮ & ⋮ & ⋮ \\ a_{n1} & a_{n2} & a_{n3} & a_{n4} & \cdots & a_{nn}\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 4 & 9 & 16 & \cdots & \cdots \\ 2 & 3 & 8 & 15 & \cdots & \cdots \\ 5 & 6 & 7 & 14 & \cdots & \cdots \\ 10 & 11 & 12 & 13 & \cdots & \cdots \\ ⋮ & ⋮ & ⋮ & ⋮ & ⋮ & ⋮ \\ \cdots & \cdots & \cdots & \cdots & \cdots & \cdots\end{matrix} \right]$，其各元 $a_{ij}$ 均為自然數，觀察規律，則下列哪些選項是正確的？
+  options:
+  - label: A
+    content: A 中第 1 列第 5 行的元是 25
+  - label: B
+    content: A 中第 5 列第 2 行的元是 19
+  - label: C
+    content: $a_{45}$＝21
+  - label: D
+    content: $a_{46}$＝33
+  - label: E
+    content: 若 $a_{mn}$＝1024，那麼數對（m，n）＝（1，32）
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：$a_{15}$＝25
+
+    (B)╳：$a_{52}$＝18
+
+    (C)╳：$a_{45}$＝22
+
+    (D)○：$a_{11}$＝1，$a_{22}$＝3，$a_{33}$＝7，$a_{44}$＝13，$a_{55}$＝21，$a_{66}$＝31
+
+    ⇒ $a_{56}$＝32，$a_{46}$＝33
+
+    (E)○：$a_{11}$＝$1^{2}$，$a_{12}$＝$2^{2}$，$a_{13}$＝$3^{2}$，$a_{14}$＝$4^{2}$，……，$a_{1，32}$＝$32^{2}$＝$2^{10}$＝1024
+
+    故選(A)(D)(E)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 3
+  stem: 設 A＝$\left[ \begin{matrix}-1 & -3 \\ 1 & 2\end{matrix} \right]$，I 為二階單位方陣，O 為二階零方陣，則下列選項哪些是正確的？
+  options:
+  - label: A
+    content: $A^{2}$＝$\left[ \begin{matrix}-2 & -3 \\ 1 & 1\end{matrix} \right]$
+  - label: B
+    content: $A^{3}$＝I
+  - label: C
+    content: $A^{6}$＝－I
+  - label: D
+    content: $A^{3}$＋$A^{6}$＝O
+  - label: E
+    content: $A^{98}$＝A
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：$A^{2}$＝$\left[ \begin{matrix}-1 & -3 \\ 1 & 2\end{matrix} \right] \left[ \begin{matrix}-1 & -3 \\ 1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}-2 & -3 \\ 1 & 1\end{matrix} \right]$
+
+    (B)╳：$A^{3}$＝$AA^{2}$＝$\left[ \begin{matrix}-1 & -3 \\ 1 & 2\end{matrix} \right] \left[ \begin{matrix}-2 & -3 \\ 1 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$＝－I
+
+    (C)╳：由(B)，$A^{6}$＝（$A^{3}$）$^{2}$＝（－I）$^{2}$＝I
+
+    (D)○：$A^{3}$＋$A^{6}$＝（－I）＋I＝O
+
+    (E)╳：$A^{98}$＝（$A^{6}$）$^{16}$．$A^{2}$＝$A^{2}$≠A
+
+    故選(A)(D)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: multiple
+  page: 4
+  stem: 設 M 是一個 3×2 階的矩陣，已知 M$\left[ \begin{matrix}0 & 2 \\ 0 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}0 & 2 \\ 0 & 4 \\ 0 & 6\end{matrix} \right]$，且 M$\left[ \begin{matrix}0 & 0 \\ 3 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 0 \\ 3 & 0 \\ 5 & 0\end{matrix} \right]$，則下列選項哪些是正確的？
+  options:
+  - label: A
+    content: M$\left[ \begin{matrix}0 \\ 2\end{matrix} \right]$＝$\left[ \begin{matrix}6 \\ 4 \\ 2\end{matrix} \right]$
+  - label: B
+    content: M$\left[ \begin{matrix}1 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}1 \\ 2 \\ 3\end{matrix} \right]$
+  - label: C
+    content: M$\left[ \begin{matrix}0 \\ 3\end{matrix} \right]$＝$\left[ \begin{matrix}1 \\ 3 \\ 5\end{matrix} \right]$
+  - label: D
+    content: M$\left[ \begin{matrix}0 & 2 \\ 3 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 2 \\ 3 & 4 \\ 5 & 6\end{matrix} \right]$
+  - label: E
+    content: 3M＝$\left[ \begin{matrix}3 & 1 \\ 6 & 3 \\ 9 & 5\end{matrix} \right]$
+  answer:
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'M$\left[ \begin{matrix}0 & 2 \\ 0 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}0 & 2 \\ 0 & 4 \\ 0 & 6\end{matrix} \right]$……………①
+
+    M$\left[ \begin{matrix}0 & 0 \\ 3 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 0 \\ 3 & 0 \\ 5 & 0\end{matrix} \right]$ ……………②
+
+    ①＋②得 M$\left[ \begin{matrix}0 & 2 \\ 3 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 2 \\ 3 & 4 \\ 5 & 6\end{matrix} \right]$
+
+    ∴M＝$\left[ \begin{matrix}1 & 2 \\ 3 & 4 \\ 5 & 6\end{matrix} \right] \left[ \begin{matrix}0 & 2 \\ 3 & 0\end{matrix} \right] ^{-1}$＝$\left[ \begin{matrix}1 & 2 \\ 3 & 4 \\ 5 & 6\end{matrix} \right] \cdot \left( \frac{1}{-6}\left[ \begin{matrix}0 & -2 \\ -3 & 0\end{matrix} \right] \right)$
+
+    ＝$\left[ \begin{matrix}1 & 2 \\ 3 & 4 \\ 5 & 6\end{matrix} \right] \left[ \begin{matrix}0 & \frac{1}{3} \\ \frac{1}{2} & 0\end{matrix} \right]$
+
+    ＝$\left[ \begin{matrix}1 & \frac{1}{3} \\ 2 & 1 \\ 3 & \frac{5}{3}\end{matrix} \right]$
+
+    (A)╳：M$\left[ \begin{matrix}0 \\ 2\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{2}{3} \\ 2 \\ \frac{10}{3}\end{matrix} \right]$
+
+    (B)○
+
+    (C)○
+
+    (D)○
+
+    (E)○：3M＝$3\left[ \begin{matrix}1 & \frac{1}{3} \\ 2 & 1 \\ 3 & \frac{5}{3}\end{matrix} \right]$＝$\left[ \begin{matrix}3 & 1 \\ 6 & 3 \\ 9 & 5\end{matrix} \right]$
+
+    故選(B)(C)(D)(E)'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 4
+  stem: 設二階方陣 A，B 滿足 A＋2B＝$\left[ \begin{matrix}0 & 5 \\ 7 & 3\end{matrix} \right]$且 2A－3B＝$\left[ \begin{matrix}7 & 3 \\ -7 & -8\end{matrix} \right]$，若 A＝$\left[ \begin{matrix}x & y \\ z & w\end{matrix} \right]$，求實數 w 值＝ ＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$A + 2B =\left[ \begin{matrix}0 & 5 \\ 7 & 3\end{matrix} \right] \cdots \cdots \cdots \cdots \cdots \cdots \cdots ①$
+
+    $2A -3B =\left[ \begin{matrix}7 & 3 \\ -7 & -8\end{matrix} \right] \cdots \cdots \cdots \cdots \cdots ②$
+
+    ①×3＋②×2 得 7A＝3$\left[ \begin{matrix}0 & 5 \\ 7 & 3\end{matrix} \right]$＋2$\left[ \begin{matrix}7 & 3 \\ -7 & -8\end{matrix} \right]$
+
+    ＝$\left[ \begin{matrix}14 & 21 \\ 7 & -7\end{matrix} \right]$
+
+    ∴A＝$\left[ \begin{matrix}2 & 3 \\ 1 & -1\end{matrix} \right]$＝$\left[ \begin{matrix}x & y \\ z & w\end{matrix} \right]$
+
+    所求 w＝－1'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 4
+  stem: 設兩個二階方陣：A＝$\left[ \begin{matrix}2 & m \\ 3 & n\end{matrix} \right]$，I＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$，已知 $A^{2}$＝I，求實數 m＋n 之值＝＿＿＿＿。
+  answer:
+  - －3
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 4
+  stem: 設 A，B 都是 3×2 階矩陣，且 A＝[$a_{ij}$]，B＝[$b_{ij}$]，已知 $a_{ij}$＝i＋j，$b_{ij}$＝3i－2j，令 X＝A＋B＝[$x_{ij}$]，則 $x_{32}$＝＿＿＿＿。
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $x_{32}$＝$a_{32}$＋$b_{32}$＝（3＋2）＋（3．3－2．2）＝5＋5＝10
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 4
+  stem: 設 A 是二階方陣，已知 A$\left[ \begin{matrix}0 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}4 \\ 5\end{matrix} \right]$，且 A$\left[ \begin{matrix}1 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}7 \\ 9\end{matrix} \right]$，若 A＝$\left[ \begin{matrix}\alpha & \beta \\ \gamma & \theta\end{matrix} \right]$，求實數 α＋θ＝ ＿＿＿＿。
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: A$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}7 & 4 \\ 9 & 5\end{matrix} \right]$＝$\left[ \begin{matrix}\alpha & \beta \\ \gamma & \theta\end{matrix} \right]$ ∴α＋θ＝7＋5＝12
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 4
+  stem: <u>俄</u> <u>烏</u>兩國交戰，某一位情報人員將一組四位數密碼 abcd 傳送給聯合國，但只知會聯合國該密碼符合二階方陣的等式如下：$\left[ \begin{matrix}2 & -1 \\ -3 & 2\end{matrix} \right] \left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 2 \\ 2 & 1\end{matrix} \right]$，求此組四位數密碼 abcd 為 ＿＿＿＿。
+  answer:
+  - '4578'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$＝$\left[ \begin{matrix}2 & -1 \\ -3 & 2\end{matrix} \right] ^{-1}\left[ \begin{matrix}1 & 2 \\ 2 & 1\end{matrix} \right]$＝$\frac{1}{1}\left[ \begin{matrix}2 & 1 \\ 3 & 2\end{matrix} \right] \left[ \begin{matrix}1 & 2 \\ 2 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}4 & 5 \\ 7 & 8\end{matrix} \right]$
+
+    所求密碼為 4578'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 4
+  stem: 已知方陣$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$的乘法反方陣為$\left[ \begin{matrix}-1 & 2 \\ 1 & -1\end{matrix} \right]$，則二元一次聯立方程式$\begin{cases}ax +by =-1 \\ cx +dy =-2\end{cases}$的解 （x，y）＝＿＿＿＿。
+  answer:
+  - （－3，1）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] ^{-1}\left[ \begin{matrix}-1 \\ -2\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 2 \\ 1 & -1\end{matrix} \right] \left[ \begin{matrix}-1 \\ -2\end{matrix} \right]$＝$\left[ \begin{matrix}-3 \\ 1\end{matrix} \right]$
+
+    所求（x，y）＝（－3，1）'
+- id: doc_110_台中_興大附中_數學_數B_g11s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 5
+  stem: 設 X、Y、Z 均為二階方陣，已知 XY＝$\left[ \begin{matrix}2 & 0 \\ 0 & 5\end{matrix} \right]$，ZY＝$\left[ \begin{matrix}0 & 1 \\ 1 & 0\end{matrix} \right]$且 X＋Z＝$\left[ \begin{matrix}7 & 9 \\ 3 & 4\end{matrix} \right]$，若 Y＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$，求實數 d＝＿＿＿＿。
+  answer:
+  - '32'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'XY＋ZY＝（X＋Z）Y＝$\left[ \begin{matrix}7 & 9 \\ 3 & 4\end{matrix} \right]$Y＝$\left[ \begin{matrix}2 & 1 \\ 1 & 5\end{matrix} \right]$
+
+    ∴Y＝$\left[ \begin{matrix}7 & 9 \\ 3 & 4\end{matrix} \right] ^{-1}\left[ \begin{matrix}2 & 1 \\ 1 & 5\end{matrix} \right]$＝$\frac{1}{1}\left[ \begin{matrix}4 & -9 \\ -3 & 7\end{matrix} \right] \left[ \begin{matrix}2 & 1 \\ 1 & 5\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & -41 \\ 1 & 32\end{matrix} \right]$＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$
+
+    所求 d＝32'

@@ -1,0 +1,486 @@
+document:
+  id: doc_111_台北_師大附中_數學_數乙_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 1
+  city: 台北
+  school_short: 師大附中
+  school: 國立臺灣師範大學附屬高級中學
+  title: 國立臺灣師範大學附屬高級中學 111學年度第1學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 111學年度第1學期第1次定期評量
+  source_file: 高三/數學/111/1-1/台北/師大附中_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 12 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，答錯 1、2 個選項分別得 4、2 分，其餘得 0 分，共 48 分）
+    count: 8
+  - ord: 3
+    name: 三、填充題（每格 7 分，共 28 分）
+    count: 3
+  - ord: 4
+    name: 四、混合題（每格 6 分，共 12 分）
+    count: 1
+  scope_note: 選修數學乙（上）第一章 ＿＿＿年＿＿＿班 座號＿＿＿ 姓名
+questions:
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 擷取浙江圖書館館藏之摛藻堂抄本《四庫全書薈要》收錄的《莊子》〈天下篇〉，若將其中「一尺之捶，日取其半，萬世不竭」的詞句視為數學無窮等比級數的描述，則關於所取之捶的總長度 S＝$\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}$＋……，下列敘述何者一定正確？
+  options:
+  - label: A
+    content: S＞1 尺
+  - label: B
+    content: S＝1 尺
+  - label: C
+    content: S＜1 尺
+  - label: D
+    content: S ≈ 1 尺
+  - label: E
+    content: 無法判定
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: S＝$\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}$＋……＝$\frac{\frac{1}{2}}{1-\frac{1}{2}}$＝1，故選(B)
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 在選修數乙極限單元的某一節課堂上，身高 175 公分的<u>小附</u>若有所思地提問：老師，按照這個定理的說法，我的身高必定在某個時刻剛剛好是$\sqrt{3}$公尺嗎？<u>小附</u>在上述提問所說的「這個定理」，應該是指下列哪一個定理？
+  options:
+  - label: A
+    content: 畢氏定理
+  - label: B
+    content: 勘根定理
+  - label: C
+    content: 介值（中間值）定理
+  - label: D
+    content: 夾擠定理
+  - label: E
+    content: 均值定裡
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 由題目可知為介值定理，故選(C)
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 關於下列數列的極限值，試挑選出正確的選項。
+  options:
+  - label: A
+    content: $\lim_{n\rightarrow \infty} \frac{1}{n}$＝0
+  - label: B
+    content: $\lim_{n\rightarrow \infty} 7^{(-n)}$＝－∞
+  - label: C
+    content: $\lim_{n\rightarrow \infty} (-1)^{n}$＝± 1
+  - label: D
+    content: $\lim_{n\rightarrow \infty} \sqrt[n]{2022}$＝1
+  - label: E
+    content: $\lim_{n\rightarrow \infty} \sin (n\pi )$＝0
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○
+
+    (B) ╳：$\lim_{n\rightarrow \infty} 7^{(-n)}$＝$\lim_{n\rightarrow \infty} \left( \frac{1}{7} \right) ^{n}$＝0
+
+    (C) ╳：極限不存在
+
+    (D) ○：$\lim_{n\rightarrow \infty} \sqrt[n]{2022}$＝$\lim_{n\rightarrow \infty} (2022)^{\frac{1}{n}}$＝1
+
+    (E) ○
+
+    故選(A)(D)(E)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 已知等比數列〈$a_{n}$〉的首項 $a_{1}$＝0.9，公比 r＝0.1，若以級數 $S_{n}$ 表示為 $S_{n}$＝$\sum_{k=1}^{n} a_{k}$，試挑選出正確的敘述。
+  options:
+  - label: A
+    content: $a_{n}$＜1
+  - label: B
+    content: $S_{n}$＜1
+  - label: C
+    content: $\lim_{n\rightarrow \infty} a_{n}$＝0
+  - label: D
+    content: $\lim_{n\rightarrow \infty} S_{n}$＝1
+  - label: E
+    content: $S_{n}$＜$0.\overline{9}$
+  answer:
+  - A
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：$a_{n}$＝0.9×（0.1）$^{n－1}$＜1
+
+    (B) ○：$S_{n}$＝$\frac{0.9〔1-(0.1)^{n}〕}{1-0.1}$＝1－（0.1）$^{n}$＜1
+
+    (C) ○：$\lim_{n\rightarrow \infty} a_{n}$＝$\lim_{n\rightarrow \infty}$（0.9×（0.1）$^{n－1}$）＝0
+
+    (D) ○：$\lim_{n\rightarrow \infty} S_{n}$＝$\lim_{n\rightarrow \infty}$（1－（0.1）$^{n}$）＝1
+
+    (E) ○：設 x＝$0.\overline{9}$ ……………①
+
+    10x＝$9.\overline{9}$ ……………②
+
+    ②－①得 9x＝9 ⇒ x＝1
+
+    故 $S_{n}$＜$0.\overline{9}$＝1
+
+    故選(A)(B)(C)(D)(E)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 下列關於高斯函數 Γ：y＝[x]的敘述，正確的有哪些？
+  options:
+  - label: A
+    content: Γ 的定義域為｛ x｜x ∈ R ｝
+  - label: B
+    content: Γ 的值域為｛ y｜y ∈ N ｝
+  - label: C
+    content: Γ 為連續函數
+  - label: D
+    content: $\lim_{x\rightarrow 1537^{-}} [x]$＝1537
+  - label: E
+    content: $\lim_{x\rightarrow 1538^{+}} [x]$＝1538
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○
+
+    (B) ╳：Γ 的值域為｛ y｜y ∈ Z ｝
+
+    (C) ╳：Γ 非連續函數
+
+    (D) ╳：$\lim_{x\rightarrow 1537^{-}}$[x]＝1536
+
+    (E) ○
+
+    故選(A)(E)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 下列關於函數 Γ：y＝$\sqrt{x}$的敘述，正確的有哪些？
+  options:
+  - label: A
+    content: Γ 的定義域為｛ x｜x ∈ R，x ≥ 0 ｝
+  - label: B
+    content: Γ 的值域為[0，∞）
+  - label: C
+    content: Γ 為連續函數
+  - label: D
+    content: Γ 的圖形為拋物線的一部分
+  - label: E
+    content: $\lim_{x\rightarrow 0} \sqrt{x}$＝0
+  answer:
+  - A
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：x ≥ 0，故 Γ 的定義域為｛ x｜x ∈ R，x ≥ 0｝
+
+    (B) ○：y＝$\sqrt{x}\geq 0$，故 Γ 的值域為[0，∞）
+
+    (C) ○
+
+    (D) ○：y＝$\sqrt{x}$的圖形即為 $y^{2}$＝x 的部分圖形
+
+    (E) ○
+
+    故選(A)(B)(C)(D)(E)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: multiple
+  page: 2
+  stem: 下列關於倒數函數 Γ：y＝$\frac{1}{x}$的敘述，正確的有哪些？
+  options:
+  - label: A
+    content: Γ 的定義域為｛ x｜x ∈ R，x≠0 ｝
+  - label: B
+    content: Γ 的值域為（－∞，∞）
+  - label: C
+    content: Γ 不是連續函數
+  - label: D
+    content: Γ 的圖形為雙曲線
+  - label: E
+    content: Γ 為偶函數
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○
+
+    (B) ╳：Γ 的值域為（－∞，0）∪（0，∞）
+
+    (C) ╳：Γ 是連續函數
+
+    (D) ○
+
+    (E) ╳：令 f（x）＝$\frac{1}{x}$
+
+    ∵f（－x）＝－$\frac{1}{x}$＝－f（x）
+
+    ∴Γ 為奇函數
+
+    故選(A)(D)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: multiple
+  page: 2
+  stem: 在坐標平面上，下列哪些曲線的圖形一定符合函數圖形的特性？
+  options:
+  - label: A
+    content: 圓
+  - label: B
+    content: 橢圓
+  - label: C
+    content: 開口向上的拋物線
+  - label: D
+    content: 開口左右的雙曲線
+  - label: E
+    content: 正弦函數
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '函數圖形需符合：一對一，多對一
+
+    故選(C)(E)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: multiple
+  page: 2
+  stem: 若函數符合 f（－x）＝－f（x）的條件，則稱 f（x）是一個奇函數。試在下列選項中，挑選出奇函數。
+  options:
+  - label: A
+    content: f（x）＝｜x｜
+  - label: B
+    content: f（x）＝x－$x^{3}$
+  - label: C
+    content: f（x）＝$2^{x}$
+  - label: D
+    content: f（x）＝log x
+  - label: E
+    content: f（x）＝sin x
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：f（－x）＝｜－x｜＝｜x｜＝f（x），其為偶函數
+
+    (B) ○：f（－x）＝（－x）－（－x）$^{3}$＝－x＋$x^{3}$＝－（x－$x^{3}$）＝－f（x），其為奇函數
+
+    (C) ╳：f（－x）＝$2^{－x}$≠f（x）
+
+    f（－x）＝$2^{－x}$≠－f（x）
+
+    其非奇函數，亦非偶函數
+
+    (D) ╳：f（－x）＝log（－x）≠－f（x）
+
+    f（－x）＝log（－x）≠f（x）
+
+    其非奇函數，亦非偶函數
+
+    (E) ○：f（－x）＝sin（－x）＝－sinx＝－f（x），其為奇函數
+
+    故選(B)(E)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s2_8
+  section: 2
+  number: 8
+  type: multiple
+  page: 2
+  stem: 已知連續函數 f（x），若$\frac{f(x_{1})+f(x_{2})}{2}$ ≥ $f\left( \frac{x_{1}+x_{2}}{2} \right)$，則稱 f（x）的圖形為凹口向上。試在下列選項中，挑選出凹口向上的函數。
+  options:
+  - label: A
+    content: f（x）＝$x^{2}$
+  - label: B
+    content: f（x）＝$x^{3}$
+  - label: C
+    content: f（x）＝$2^{x}$
+  - label: D
+    content: f（x）＝log x
+  - label: E
+    content: f（x）＝cos x
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○
+
+    (B) ╳：當 x＜0 時，f（x）的圖形凹口向下
+
+    (C) ○
+
+    (D) ╳：f（x）＝logx 的圖形凹口向下
+
+    (E) ╳：f（x）＝cosx 並非恆為凹口向上
+
+    故選(A)(C)'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: <u>小附</u>將算式 27＋64＋125＋216＋343＋512＋729 以 Σ 符號簡記為$\sum_{k=a}^{b} k^{3}$，則 a＋b＝＿＿＿＿。
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: '承上題，若<u>小附</u>又將 Σ 算式改寫為$\left( \sum_{k=1}^{b} k \right) ^{2}-\left( \sum_{k=1}^{c} k \right) ^{2}$，則：
+
+    (1) b－c＝＿＿＿＿。
+
+    (2) 該算式的總和應為＿＿＿＿。'
+  answer:
+  - (1) 7；(2) 2016
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\sum_{k=3}^{9} k^{3}$＝$\left( \sum_{k=1}^{9} k^{3} \right) -\left( \sum_{k=1}^{2} k^{3} \right)$＝$\left( \sum_{k=1}^{9} k \right) ^{2}-\left( \sum_{k=1}^{2} k \right) ^{2}$
+
+    (1) b－c＝9－2＝7
+
+    (2)$\left( \frac{9\times 10}{2} \right) ^{2}-\left( \frac{2\times 3}{2} \right) ^{2}$＝$45^{2}$－$3^{2}$＝2016'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: '右圖是<u>小附</u>利用電腦繪圖軟體 GeoGebra 設計的附中畢業戰袍的圖飾。其 V 字型的構圖設計，是先將正方形旋轉 45 度，然後選取對邊中點的連線將正方形 4 等分（圖 1），再移除最上方的小正方形，同時將左、右兩個小正方形塗上黑色（圖 2）。接下來<u>小附</u>改以最下方的小正方形為目標，重複上述圖 1 至圖 2 的所有動作，完成圖 3 的設計。仿此作圖流程，<u>小附</u>可陸續繪得圖 4、圖 5、……的設計稿如下。
+
+    若以 $A_{2}$、$A_{3}$、$A_{4}$、$A_{5}$、……分別代表圖 2、圖 3、圖 4、圖 5、……中黑色塊的面積之和，則當 n 的數量夠大時，圖 n 中黑色塊的面積之和 $A_{n}$ 約為圖 1 大正方形面積的＿＿＿＿倍。'
+  assets:
+  - key: s3_3_f1
+    kind: figure
+    file: doc_111_台北_師大附中_數學_數乙_g12s1e1/s3_3_f1.png
+    crop:
+      page: 3
+      rect:
+      - 474.4
+      - 311.3
+      - 564.05
+      - 380.0
+  - key: s3_3_f2
+    kind: figure
+    file: doc_111_台北_師大附中_數學_數乙_g12s1e1/s3_3_f2.png
+    crop:
+      page: 3
+      rect:
+      - 102.7
+      - 416.6
+      - 533.4
+      - 526.4
+  answer:
+  - $\frac{2}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令圖 1 中，每一小塊正方形面積為 1
+
+    則 $A_{2}$＝2×1＝2×(1)
+
+    $A_{3}$＝2×1＋2×$\left( \frac{1}{2} \right) ^{2}$＝2×$\left( 1+\frac{1}{4} \right)$
+
+    $A_{4}$＝2×1＋2×$\left( \frac{1}{2} \right) ^{2}$＋2×$\left( \frac{1}{2} \right) ^{4}$＝2×$\left( 1+\frac{1}{4}+\frac{1}{16} \right)$
+
+    …
+
+    $A_{n}$＝2×$\left( 1+\frac{1}{4}+\left( \frac{1}{4} \right) ^{2}+\cdots \cdots +\left( \frac{1}{4} \right) ^{n-2} \right)$
+
+    ＝2×$\frac{1\times \left( 1-\left( \frac{1}{4} \right) ^{n-1} \right)}{1-\frac{1}{4}}$＝$\frac{8}{3}-\frac{8}{3}\times \left( \frac{1}{4} \right) ^{n-1}$
+
+    ∴$\lim_{n\rightarrow \infty} A_{n}$＝$\lim_{n\rightarrow \infty} \left( \frac{8}{3}-\frac{8}{3}\times \left( \frac{1}{4} \right) ^{n-1} \right)$＝$\frac{8}{3}$
+
+    故所求為$\frac{8}{3}$÷4＝$\frac{2}{3}$'
+- id: doc_111_台北_師大附中_數學_數乙_g12s1e1_s4_1
+  section: 4
+  number: 1
+  type: fill
+  page: 4
+  stem: '■ 2019 年開館的臺南美術館二館，是由 2014 年榮獲普利茲克獎（建築界的諾貝爾獎）的<u>日本</u>建築師<u>坂茂</u>先生設計。其綠能建築的規劃兼顧城市美學、在地元素與低碳生態。美術館外觀的鋼架藉由二十面體的五角錐來象徵臺南市花（鳳凰花），建體的結構以垂直堆疊、錯位的長方體空間，提供自由彈性的參觀動線。屋頂採用「碎形幾何」的設計，以因應<u>臺南</u>炎熱的天候。當太陽以不同角度照射時，碎形屋頂可模擬大樹般的遮蔭效果。
+
+    上述報導所提的「碎形幾何」是指謝爾賓斯基三角形，其演變步驟如下：
+
+    A.取一個實心的正三角形 $a_{0}$。
+
+    B.沿各邊中點挖除中心的小正三角形得 $a_{1}$。
+
+    C.剩餘 3 個小正三角形重複上述動作得 $a_{2}$、$a_{3}$、……。
+
+    若將平面上謝爾賓斯基三角形挖空的概念套用在空間中的正四面體上，可得謝爾賓斯基三角錐，其演變步驟如下：
+
+    A.取一個實心的正四面體 $b_{0}$。
+
+    B.沿各稜邊中點挖除中心的小正八面體得 $b_{1}$。
+
+    C.剩餘 4 個小正四面體重複上述動作得 $b_{2}$、$b_{3}$、……。
+
+    試計算下列各值：
+
+    (1) 若 $a_{0}$ 的邊長為 16，則 $a_{3}$ 的面積＝＿＿＿＿。
+
+    (2) 若 $b_{0}$ 的邊長為 12，則 $b_{2}$ 的體積＝＿＿＿＿。
+
+    參考公式：正三角形的面積＝$\frac{\sqrt{3}}{4}a^{2}$；正四面體的體積＝$\frac{\sqrt{2}}{12}a^{3}$。'
+  assets:
+  - key: s4_1_f1
+    kind: figure
+    file: doc_111_台北_師大附中_數學_數乙_g12s1e1/s4_1_f1.png
+    crop:
+      page: 4
+      rect:
+      - 117.35
+      - 232.6
+      - 500.75
+      - 309.05
+  - key: s4_1_f2
+    kind: figure
+    file: doc_111_台北_師大附中_數學_數乙_g12s1e1/s4_1_f2.png
+    crop:
+      page: 4
+      rect:
+      - 181.2
+      - 398.2
+      - 436.9
+      - 475.85

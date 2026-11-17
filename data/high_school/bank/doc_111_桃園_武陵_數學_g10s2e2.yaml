@@ -1,0 +1,216 @@
+document:
+  id: doc_111_桃園_武陵_數學_g10s2e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 2
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 111學年度第2學期第2次定期評量 高一數學科試題
+  exam_name: 111學年度第2學期第2次定期評量
+  source_file: 高一/數學/111/2-2/桃園/武陵.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、填充題（每格 5 分，共 90 分）
+    count: 14
+questions:
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_1
+  section: 1
+  number: 1
+  type: fill
+  page: 1
+  stem: '設有甲、乙、丙、丁、戊等 5 人排成一列，試求下列的排法數：
+
+    (1) 甲乙相鄰且丙丁不相鄰的排法有＿＿＿＿種。
+
+    (2) 甲不排首且乙不排末的排法有＿＿＿＿種。
+
+    (3) 甲在乙左方，且丙在丁左方的排法有＿＿＿＿種。（左方不一定相鄰）
+
+    (4) 甲恰與乙丙兩人中的某一人相鄰的排法有＿＿＿＿種。'
+  answer:
+  - (1) 24；(2) 78；(3) 30；(4) 72
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) n（甲乙相鄰）－n（甲乙相鄰且丙丁相鄰）
+
+    ＝4！×2！－3！×2！×2！＝48－24＝24（種）
+
+    (2) n（全部）－n（甲排首）－n（乙排末）＋n（甲排首且乙排末）
+
+    ＝5！－4！－4！＋3！＝120－24－24＋6＝78（種）
+
+    (3) 將甲乙視為相同物，丙丁視為相同物
+
+    所求有$\frac{5 ！}{2 ！ 2 ！}$＝30（種）
+
+    (4) n（甲乙相鄰）＋n（甲丙相鄰）－2×n（甲乙且甲丙相鄰）
+
+    ＝4！×2！＋4！×2！－2×（2×3！）＝48＋48－24＝72（種）'
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_2
+  section: 1
+  number: 2
+  type: fill
+  page: 1
+  stem: 若$\left( x^{2}-\frac{a}{x} \right) ^{8}$的展開式中，$x^{7}$ 項的係數為－448，則常數 a＝＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '展開後一般項為 $C_{k}^{8} (x^{2})^{8-k}\left( -\frac{a}{x} \right) ^{k}$＝$C_{k}^{8} (-a)^{k}x^{16-3k}$
+
+    ⇒ 16－3k＝7 ⇒ k＝3
+
+    得 $C_{3}^{8}$×（－a）$^{3}$＝－448
+
+    ⇒ －$56a^{3}$＝－448 ⇒ $a^{3}$＝8 ⇒ a＝2'
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_3
+  section: 1
+  number: 3
+  type: fill
+  page: 1
+  stem: 為慶祝百年校慶，學校舉辦園遊會，並且消費滿百元，即贈送刮刮樂彩券一張，此彩券共有六格，上面印有 2 個 20，2 個 40，1 個 60，1 個 80，且數字排列是隨機排列，今規定只能刮取 2 格，否則作廢，若刮中數字和恰為 100 時，可獲得獎品百年校慶紀念小書包 1 個，則 1 張刮刮樂彩券刮取時，可獲獎的機率為＿＿＿＿。
+  answer:
+  - $\frac{4}{15}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: 數學能力競賽試題，只有三大題。已知參加競賽的學生中，發現每個人都至少答對 1 題，且答對第一題的有 24 人，答對第二題的有 26 人，答對第三題的有 22 人，答對第一、二題的有 8 人，答對第一、三題的有 10 人，答對第二、三題的有 11 人。又只答對一題的人數與答對兩題以上的人數相等，則參加競賽的學生有＿＿＿＿人。
+  answer:
+  - '46'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_5
+  section: 1
+  number: 5
+  type: fill
+  page: 1
+  stem: 美女<u>靜香</u>有 A、B、C、D、E、F 共六位追求者，她下星期一到星期五每天晚上會選擇一位追求者約會，但不連續兩天和同一位追求者約會。在這些追求者中<u>靜香</u>對 A 先生最有感覺，因此她至少會有 2 天跟 A 先生約會，而且其中有 2 天為下星期一和星期五，試問<u>靜香</u>在下星期安排約會人選的方法有＿＿＿＿種。
+  answer:
+  - '105'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_6
+  section: 1
+  number: 6
+  type: fill
+  page: 1
+  stem: 求和：$C_{2}^{5}+C_{2}^{6}+C_{2}^{7}+C_{2}^{8}+C_{2}^{9}+\cdots \cdots +C_{2}^{20}$＝＿＿＿＿。
+  answer:
+  - '1320'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_7
+  section: 1
+  number: 7
+  type: fill
+  page: 1
+  stem: 有一隻青蛙有一個奇怪的習慣，它只會在右方正六邊形上的 6 個頂點跳來跳去，且每次跳動只會跳到逆時針方向的間隔點或順時針方向的相鄰點，例如：現在在 A 點，則下一次可能跳到 C 點或跳到 F 點。今這隻青蛙從 A 點開始出發，若它想要跳動 5 次後到達 B 點，試問這隻青蛙跳動的方法有 ＿＿＿＿種。
+  assets:
+  - key: s1_7_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_g10s2e2/s1_7_f1.png
+    crop:
+      page: 1
+      rect:
+      - 479.75
+      - 518.8
+      - 566.3
+      - 591.85
+  answer:
+  - '16'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_8
+  section: 1
+  number: 8
+  type: fill
+  page: 1
+  stem: '甲、乙、丙、……等 10 人中，要指派 4 人去出公差，試回答下列問題：
+
+    (1) 4 人中若有甲就一定要有乙，則指派 4 人的方法有＿＿＿＿種。
+
+    (2) 若每人被指派到的機會均等，則 4 人中甲乙丙至少有兩人的機率為＿＿＿＿。'
+  answer:
+  - (1) 154；(2) $\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_9
+  section: 1
+  number: 9
+  type: fill
+  page: 1
+  stem: <u>胖虎</u>記錄上週星期一到星期五的午餐情況。記憶中：牛肉麵、大滷麵、咖哩飯各吃一次，排骨飯吃了 2 次，但沒有連續兩天吃麵食，沒有連續兩天吃排骨飯，且每天午餐只吃一種餐點。試問<u>胖虎</u>上週星期一到星期五的午餐有＿＿＿＿種可能的情況。
+  answer:
+  - '24'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_10
+  section: 1
+  number: 10
+  type: fill
+  page: 1
+  stem: 有紅、黃、白三種色球各 10 顆，與綠色的球 3 顆，今從 33 顆球中取 4 顆球排成一列，試問至少有一顆紅球的排法有＿＿＿＿種。（同顏色的球視為相同）
+  answer:
+  - '175'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_11
+  section: 1
+  number: 11
+  type: fill
+  page: 1
+  stem: 老師請 8 位同學自行分成若干組，單獨 1 人為一組也可以，但最多只能分成五組，並要求任意兩組的人數和不能超過 4 人，試問 8 位同學符合規定的分組情形有＿＿＿＿種可能。
+  answer:
+  - '525'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_12
+  section: 1
+  number: 12
+  type: fill
+  page: 2
+  stem: 將 a，a，b，b 四個字母全排入右方 3×3 的方格中，每個方格最多只能排入 1 個字母，若相同的字母既不同行，也不同列，則排法有＿＿＿＿種。（方格的圖形不能旋轉，也不能翻轉）
+  assets:
+  - key: s1_12_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_g10s2e2/s1_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 508.9
+      - 53.9
+      - 564.3
+      - 109.3
+  answer:
+  - '198'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_13
+  section: 1
+  number: 13
+  type: fill
+  page: 2
+  stem: 箱子裡有若干顆紅球與藍球，球總顆數不超過 112 顆，今從箱中任取 2 球，每顆球被取到的機會均等，若取出 2 球是同色球的機率為$\frac{1}{2}$，則箱子裡球的總顆數共有＿＿＿＿種可能情形。
+  answer:
+  - '9'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_111_桃園_武陵_數學_g10s2e2_s1_14
+  section: 1
+  number: 14
+  type: fill
+  page: 2
+  stem: <u>出木杉</u>在週休二日安排讀書計畫複習國、英、數三科：將週六、週日各分成早、中、晚共六個時段。每天安排一個時段休息，兩個時段唸書，每個時段只複習一科，同一天的連續時段不複習同一科，週休二日裡國、英、數三科都要複習，試問可安排出＿＿＿＿種讀書計畫。
+  answer:
+  - '252'
+  answer_status: verified
+  answer_source: answer_key

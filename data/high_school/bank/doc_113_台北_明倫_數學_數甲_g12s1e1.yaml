@@ -1,0 +1,433 @@
+document:
+  id: doc_113_台北_明倫_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 台北
+  school_short: 明倫
+  school: 臺北市立明倫高級中學
+  title: 臺北市立明倫高級中學 113學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  source_file: 高三/數學/113/1-1/台北/明倫_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（共 25 分。所有選項均答對得 5 分；答錯 1 個選項得 3 分；答錯 2 個選項得 1 分；答錯多於 2 個選項或所有選項均未作答者，該題以零分計算）
+    count: 4
+  - ord: 2
+    name: 二、填充題（每格 5 分，共 85 分）
+    count: 15
+  scope_note: 1-1 ～ 1-4 ＿＿＿年＿＿＿班 座號＿＿＿ 姓名
+questions:
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列敘述何者為真？（[ ] 為高斯符號）
+  options:
+  - label: A
+    content: '[ 0.999999 ]＝$[ 0.\overline{9} ]$'
+  - label: B
+    content: $\lim_{x \rightarrow 0} \frac{| x^{2}-x + 1 |-| 2x - 1 |}{x}$＝1
+  - label: C
+    content: 無窮等比級數之和$0.\overline{7} + 0.4\overline{6} +\ldots \ldots$＝$\frac{35}{18}$
+  - label: D
+    content: $\lim_{n \rightarrow \infty} \left( \frac{1}{n^{2}}+\frac{2}{n^{2}}+\frac{3}{n^{2}}+\ldots \ldots +\frac{n}{n^{2}}+\frac{n + 1}{n^{2}} \right)$＝0
+  - label: E
+    content: 若 $a_{n}$＝$\left( 1 +\frac{1}{n} \right) ^{n}$，則$( \lim_{n \rightarrow \infty} [ a_{n} ] )- 2 > 0$
+  answer:
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：[ 0.999999 ]＝0，$[ 0.\overline{9} ]$＝[ 1 ]＝1
+
+    (B)○：$\lim_{x \rightarrow 0} \frac{| x^{2}-x + 1 |-| 2x - 1 |}{x}$＝$\lim_{x \rightarrow 0} \frac{( x^{2}-x + 1 )-( -( 2x - 1 ) )}{x}$＝$\lim_{x \rightarrow 0} \frac{x^{2}+x}{x}$
+
+    ＝$\lim_{x \rightarrow 0} ( x + 1 )$＝1
+
+    (C)○：無窮等比級數$0.\overline{7} + 0.4\overline{6} +\ldots \ldots$＝$\frac{7}{9}+\frac{46 - 4}{90}+\ldots \ldots$＝$\frac{7}{9}+\frac{42}{90}+\ldots \ldots$＝$\frac{\frac{7}{9}}{1-\frac{3}{5}}$＝$\frac{35}{18}$
+
+    (D)╳：$\lim_{n \rightarrow \infty} \left( \frac{1}{n^{2}}+\frac{2}{n^{2}}+\frac{3}{n^{2}}+\ldots \ldots +\frac{n}{n^{2}}+\frac{n + 1}{n^{2}} \right)$
+
+    ＝$\lim_{n \rightarrow \infty} \frac{1 + 2 + 3 +\ldots \ldots +n +( n + 1 )}{n^{2}}$＝$\lim_{n \rightarrow \infty} \frac{\frac{( n + 1 ) ( n + 2 )}{2}}{n^{2}}$＝$\lim_{n \rightarrow \infty} \frac{n^{2}+ 3n + 2}{2n^{2}}$＝$\frac{1}{2}$
+
+    (E)╳：$( \lim_{n \rightarrow \infty} [ a_{n} ] )- 2$＝$\lim_{n \rightarrow \infty} [ 2.\ldots ] - 2$＝2－2＝0
+
+    故選(B)(C)'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 若函數 f（x）在－1 ≤ x ≤ 3 的定義如圖，則下列敘述何者為真？
+  options:
+  - label: A
+    content: $\lim_{x \rightarrow 0} f ( x )$＝f(0)
+  - label: B
+    content: $\lim_{x \rightarrow 1^{-}} f ( x )$＝2
+  - label: C
+    content: $\lim_{x \rightarrow 2} f ( x )$＝f(2)
+  - label: D
+    content: f(2)＝1
+  - label: E
+    content: $\lim_{x \rightarrow 2} f ( x )$不存在
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_台北_明倫_數學_數甲_g12s1e1/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 457.9
+      - 555.15
+      - 564.3
+      - 660.55
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：$\lim_{x \rightarrow 0} f ( x )$＝0＝f(0)
+
+    (B)○：$\lim_{x \rightarrow 1^{-}} f ( x )$＝2
+
+    (C)╳：$\lim_{x \rightarrow 2} f ( x )$＝1≠f(2)＝2
+
+    (D)╳：f(2)＝2
+
+    (E)╳：∵$\lim_{x \rightarrow 2^{-}} f ( x )$＝$\lim_{x \rightarrow 2^{+}} f ( x )$＝1
+
+    ∴$\lim_{x \rightarrow 2} f ( x )$＝1
+
+    故選(A)(B)'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 已知函數 f（x）＝[ 2x ] 在 x＝a 處連續，試選出可能的 a 值，其中 [ ] 為高斯符號。
+  options:
+  - label: A
+    content: π
+  - label: B
+    content: $8.\overline{9}$
+  - label: C
+    content: cos30°
+  - label: D
+    content: tan45°
+  - label: E
+    content: $\log \sqrt{10}$
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 2
+  stem: 下列敘述何者恆為真？
+  options:
+  - label: A
+    content: 若 f（x）在 x＝a 連續，則 $\lim_{x \rightarrow a} f ( x )$存在
+  - label: B
+    content: 若$\lim_{x \rightarrow a} f ( x )$存在，則 f（x）在 x＝a 連續
+  - label: C
+    content: 若 f（a）存在，則$\lim_{x \rightarrow a} f ( x )$＝f（a）
+  - label: D
+    content: 若$\lim_{x \rightarrow a} f ( x )$＝f（a），則 f（x）在 x＝a 連續
+  - label: E
+    content: 若 f（x）在 x＝a 連續，則$\lim_{x \rightarrow a} f ( x )$＝f（a）
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 2
+  stem: 試問下列哪一個數列的極限值最大？$答$：＿＿＿＿。
+  options:
+  - label: A
+    content: $\left\langle \frac{7n + 1}{n} \right\rangle$
+  - label: B
+    content: $\left\langle \frac{( 7n + 1 ) ( n + 2 )}{n^{2}+n + 1} \right\rangle$
+  - label: C
+    content: $\left\langle \left( \frac{2n - 2}{n} \right) \left( \frac{19n + 1}{5n} \right) \right\rangle$
+  - label: D
+    content: $\left\langle \frac{7^{n +1}+ 7^{n -1}+ 2}{7^{n}+ 1} \right\rangle$
+  - label: E
+    content: $\left\langle 5 + \left( 1 +\frac{1}{n} \right) ^{n} \right\rangle$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)$\lim_{n \rightarrow \infty} \frac{7n + 1}{n}$＝7
+
+    (B)$\lim_{n \rightarrow \infty} \frac{( 7n + 1 ) ( n + 2 )}{n^{2}+n + 1}$＝7
+
+    (C)$\lim_{n \rightarrow \infty} \left( \left( \frac{2n - 2}{n} \right) \left( \frac{19n + 1}{5n} \right) \right)$＝$\frac{38}{5}$＝7.6
+
+    (D)$\lim_{n \rightarrow \infty} \frac{7^{n +1}+ 7^{n -1}+ 2}{7^{n}+ 1}$＝7＋$\frac{1}{7}\approx$7.14
+
+    (E)$\lim_{n \rightarrow \infty} \left( 5 + \left( 1 +\frac{1}{n} \right) ^{n} \right)$＝5＋e$\approx$5＋2.71828＝7.71828
+
+    故選(E)'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 求$\lim_{n \rightarrow \infty} \frac{1 + 2 + 3 + 4 +\ldots \ldots +( 3n - 1 )+ 3n}{2 + 5 + 8 + 11 +\ldots \ldots +( 3n - 1 )}$之值為＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \frac{1 + 2 + 3 + 4 +\ldots \ldots +( 3n - 1 )+ 3n}{2 + 5 + 8 + 11 +\ldots \ldots +( 3n - 1 )}$
+
+    ＝$\lim_{n \rightarrow \infty} \frac{\frac{3n ( 1 + 3n )}{2}}{\frac{n ( 2 +( 3n - 1 ) )}{2}}$＝$\lim_{n \rightarrow \infty} \frac{3n ( 3n + 1 )}{n ( 3n + 1 )}$＝3'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 求值：試求$\lim_{n \rightarrow \infty} \left( \frac{1}{\sqrt{2n^{2}+1}}+\frac{1}{\sqrt{2n^{2}+2}}+\ldots \ldots +\frac{1}{\sqrt{2n^{2}+n}} \right)$＝＿＿＿＿。
+  answer:
+  - $\frac{\sqrt{2}}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \frac{n}{\sqrt{2n^{2}+n}}$ ≤ $\lim_{n \rightarrow \infty} \left( \frac{1}{\sqrt{2n^{2}+1}}+\frac{1}{\sqrt{2n^{2}+2}}+\ldots \ldots +\frac{1}{\sqrt{2n^{2}+n}} \right)$ ≤ $\lim_{n \rightarrow \infty} \frac{n}{\sqrt{2n^{2}+1}}$
+
+    又$\lim_{n \rightarrow \infty} \frac{n}{\sqrt{2n^{2}+n}}$＝$\frac{1}{\sqrt{2}}$，$\lim_{n \rightarrow \infty} \frac{n}{\sqrt{2n^{2}+1}}$＝$\frac{1}{\sqrt{2}}$
+
+    由夾擠定理得$\lim_{n \rightarrow \infty} \left( \frac{1}{\sqrt{2n^{2}+1}}+\frac{1}{\sqrt{2n^{2}+2}}+\ldots \ldots +\frac{1}{\sqrt{2n^{2}+n}} \right)$＝$\frac{1}{\sqrt{2}}$＝$\frac{\sqrt{2}}{2}$'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: '求值：$[ \sqrt{1} ]$＋$[ \sqrt{2} ]$＋$[ \sqrt{3} ]$＋$[ \sqrt{4} ]$＋……＋$[ \sqrt{99} ]$＋$[ \sqrt{100} ]$＝＿＿＿＿。（題中的 [ ]
+
+    皆為高斯符號）'
+  answer:
+  - '625'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 若$\lim_{n \rightarrow \infty} \left( \frac{3n^{2}+ 2n + 1}{n - 1}-an -b \right)$＝0，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （3，5）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \left( \frac{3n^{2}+ 2n + 1}{n - 1}-an -b \right)$＝$\lim_{n \rightarrow \infty} \left( 3n +\frac{5n + 1}{n - 1}-an -b \right)$＝0
+
+    ∴a＝3，b＝5
+
+    故數對（a，b）＝（3，5）'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 求值：$\lim_{n \rightarrow \infty} \frac{1+\left( 1 +\frac{1}{n} \right) +\left( 1 +\frac{1}{n} \right) ^{2}+\ldots \ldots +\left( 1 +\frac{1}{n} \right) ^{n -1}}{n}$＝＿＿＿＿。
+  answer:
+  - e－1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \frac{1+\left( 1 +\frac{1}{n} \right) +\left( 1 +\frac{1}{n} \right) ^{2}+\ldots \ldots +\left( 1 +\frac{1}{n} \right) ^{n -1}}{n}$
+
+    ＝$\lim_{n \rightarrow \infty} \frac{\frac{1\times \left[ \left( 1 +\frac{1}{n} \right) ^{n}- 1 \right]}{\left( 1+\frac{1}{n} \right) - 1}}{n}$
+
+    ＝$\lim_{n \rightarrow \infty} \left[ \left( 1 +\frac{1}{n} \right) ^{n}- 1 \right]$＝e－1'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 求無窮級數$\frac{2}{5}+\frac{14}{5^{2}}+\frac{62}{5^{3}}+\ldots \ldots +\frac{4^{n}- 2}{5^{n}}+\ldots \ldots$的和為＿＿＿＿。
+  answer:
+  - $\frac{7}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{2}{5}+\frac{14}{5^{2}}+\frac{62}{5^{3}}+\ldots \ldots +\frac{4^{n}- 2}{5^{n}}+\ldots \ldots$
+
+    ＝$\sum_{k =1}^{\infty} \frac{4^{k}- 2}{5^{k}}$＝$\sum_{k =1}^{\infty} \left( \frac{4}{5} \right) ^{k}- 2\times \sum_{k =1}^{\infty} \left( \frac{1}{5} \right) ^{k}$
+
+    ＝$\frac{\frac{4}{5}}{1 -\frac{4}{5}}- 2\times \frac{\frac{1}{5}}{1 -\frac{1}{5}}$＝$4 -\frac{1}{2}$＝$\frac{7}{2}$'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 定義函數 f（x）＝$\begin{cases}3x - 2 , x\geq 5 \\ x^{2}+| x | , -5\leq x < 5 \\ -3x + 2 , x < -5\end{cases}$，則 f(8)＋f（－6）＋f（f(3)）＝＿＿＿＿。
+  answer:
+  - '76'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f(8)＋f（－6）＋f（f(3)）＝（3×8－2）＋（－3×（－6）＋2）＋f（$3^{2}$＋｜3｜）
+
+    ＝22＋20＋f(12)
+
+    ＝42＋（3×12－2）
+
+    ＝42＋34＝76'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: '若函數 f（x）＝$x^{3}$－$3x^{2}$＋8x－6，g（x）＝x－1，則
+
+    (1)$\left( \frac{f}{g} \right) ( x )$的定義域為＿＿＿＿。（請用集合表示）
+
+    (2)$\left( \frac{f}{g} \right) ( x )$的值域為＿＿＿＿。（請用集合表示）
+
+    (3)$\lim_{x \rightarrow 1} \left( \frac{f}{g} \right) ( x )$＝＿＿＿＿。'
+  answer:
+  - (1)｛x｜x$\in$R，x≠1｝；(2)｛y｜y$\in$R，y＞5｝；(3) 5
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1)$\left( \frac{f}{g} \right) ( x )$＝$\frac{x^{3}- 3x^{2}+ 8x - 6}{x - 1}$，其定義域為｛x｜x$\in$R，x≠1｝
+
+    (2)$\left( \frac{f}{g} \right) ( x )$＝$\frac{x^{3}- 3x^{2}+ 8x - 6}{x - 1}$＝$x^{2}$－2x＋6＝（x－1）$^{2}$＋5
+
+    ∵x≠1 ∴其值域為｛y｜y$\in$R，y＞5｝
+
+    (3)$\lim_{x \rightarrow 1} \left( \frac{f}{g} \right) ( x )$＝$\lim_{x \rightarrow 1} ( x^{2}- 2x + 6 )$＝$1^{2}$－2＋6＝5'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 若 f（x）＝$10^{x＋1}$＋100 的反函數為 g（x），則 g（x）＝＿＿＿＿。
+  answer:
+  - log（x－100）－1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'x＝$10^{g（x）＋1}$＋100$\Rightarrow$x－100＝$10^{g（x）＋1}\Rightarrow$g（x）＋1＝log（x－100）
+
+    $\Rightarrow$g（x）＝log（x－100）－1'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 3
+  stem: 試求$\lim_{x \rightarrow 2} \left( \frac{18}{x - 2}-\frac{9x + 36}{( x - 2 ) ( x + 1 )} \right)$＝＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow 2} \left( \frac{18}{x - 2}-\frac{9x + 36}{( x - 2 ) ( x + 1 )} \right)$＝$\lim_{x \rightarrow 2} \frac{18 ( x + 1 )-( 9x + 36 )}{( x - 2 ) ( x + 1 )}$＝$\lim_{x \rightarrow 2} \frac{9x - 18}{( x - 2 ) ( x + 1 )}$
+
+    ＝$\lim_{x \rightarrow 2} \frac{9 ( x - 2 )}{( x - 2 ) ( x + 1 )}$＝$\lim_{x \rightarrow 2} \frac{9}{( x + 1 )}$＝3'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 3
+  stem: 設 f（x）為三次多項式，若$\lim_{x \rightarrow 1} \frac{f ( x )}{x^{2}- 3x + 2}$＝2 且$\lim_{x \rightarrow 2} \frac{f ( x )}{x^{2}- 3x + 2}$＝3，則$\lim_{x \rightarrow 3} f ( x )$＝＿＿＿＿。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由$\lim_{x \rightarrow 1} \frac{f ( x )}{x^{2}- 3x + 2}$＝2 及$\lim_{x \rightarrow 2} \frac{f ( x )}{x^{2}- 3x + 2}$＝3 可知，f（x）有因式 x－1 及 x－2
+
+    因此可設 f（x）＝（x－1）（x－2）（ax＋b）
+
+    則$\lim_{x \rightarrow 1} \frac{f ( x )}{x^{2}- 3x + 2}$＝$\lim_{x \rightarrow 1} \frac{( x - 1 ) ( x - 2 ) ( ax +b )}{( x - 1 ) ( x - 2 )}$＝$\lim_{x \rightarrow 1} ( ax +b )$＝2$\Rightarrow$a＋b＝2 ……………①
+
+    $\lim_{x \rightarrow 2} \frac{f ( x )}{x^{2}- 3x + 2}$＝$\lim_{x \rightarrow 2} \frac{( x - 1 ) ( x - 2 ) ( ax +b )}{( x - 1 ) ( x - 2 )}$＝$\lim_{x \rightarrow 2} ( ax +b )$＝3$\Rightarrow$2a＋b＝3 …………②
+
+    由①、②得 a＝1，b＝1
+
+    故$\lim_{x \rightarrow 3} f ( x )$＝$\lim_{x \rightarrow 3} ( ( x - 1 ) ( x - 2 ) ( x + 1 ) )$＝2×1×4＝8'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 3
+  stem: 設 a，b 是實數，若$\lim_{x \rightarrow -2} \frac{x^{2}+x +a}{x + 2}$＝b，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （－2，－3）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵極限值存在
+
+    ∴（－2）$^{2}$＋（－2）＋a＝0$\Rightarrow$a＝－2
+
+    由$\lim_{x \rightarrow -2} \frac{x^{2}+x - 2}{x + 2}$＝$\lim_{x \rightarrow -2} \frac{( x - 1 ) ( x + 2 )}{x + 2}$＝$\lim_{x \rightarrow -2} ( x - 1 )$＝－3＝b
+
+    故數對（a，b）＝（－2，－3）'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 3
+  stem: 設一無窮等比級數的和等於－2，此級數之首項為 $a_{1}$，其第二項為$\frac{3}{2}$，令 $S_{n}$＝$a_{1}$＋$a_{2}$＋…＋$a_{n}$ 為此級數之前 n 項部分和，設滿足$| S_{n}-( -2 ) | < \frac{1}{10^{4}}$的 n 至少應為 k，則數對（$a_{1}$，k）＝ ＿＿＿＿。
+  answer:
+  - （－3，15）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設公比為 r，則$\begin{cases}\frac{a_{1}}{1 -r}=-2 \ldots \ldots \ldots \ldots \ldots ① \\ a_{1}r =\frac{3}{2} \ldots \ldots \ldots \ldots \ldots \ldots ②\end{cases}$
+
+    $\frac{②}{①}$得 r（1－r）＝$-\frac{3}{4}\Rightarrow4r^{2}$－4r－3＝0$\Rightarrow$（2r＋1）（2r－3）＝0
+
+    $\Rightarrow$r＝$-\frac{1}{2}$或$\frac{3}{2}\left( \frac{3}{2}\geq 1 , 故不合 \right)$
+
+    因此 r＝$-\frac{1}{2}$，代入②得$-\frac{1}{2}a_{1}$＝$\frac{3}{2}\Rightarrowa_{1}$＝－3
+
+    ∵$S_{n}$＝$-3 - 3 \left( -\frac{1}{2} \right) - 3 \left( -\frac{1}{2} \right) ^{2}-\ldots \ldots - 3 \left( -\frac{1}{2} \right) ^{n -1}$
+
+    ＝$\frac{-3 \left( 1 - \left( -\frac{1}{2} \right) ^{n} \right)}{1 - \left( -\frac{1}{2} \right)}$＝$-2 \left( 1 - \left( -\frac{1}{2} \right) ^{n} \right)$＝$-2 + 2 \left( -\frac{1}{2} \right) ^{n}$
+
+    ∴｜$S_{n}$－（－2）｜＝$\left| -2 + 2 \left( -\frac{1}{2} \right) ^{n}+ 2 \right|$＝$2\times \frac{1}{2^{n}}$＝$\frac{1}{2^{n-1}} < \frac{1}{10^{4}}$
+
+    $\Rightarrow2^{n－1}$＞10000
+
+    ∵$2^{13}$＝8192，$2^{14}$＝16384
+
+    ∴n－1 ≥ 14，得 n ≥ 15，即 n 至少應為 15
+
+    故所求數對（$a_{1}$，k）＝（－3，15）'
+- id: doc_113_台北_明倫_數學_數甲_g12s1e1_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 3
+  stem: 如圖，ABCD 是邊長為 4 的正方形，連接正方形 ABCD 各邊的中點，可得四個等面積的正方形，將左下方的正方形塗成灰色，再連接右上方正方形各邊的中點，重複這樣的步驟會得到無窮多個正方形，試求所有灰色正方形面積的和為＿＿＿＿。
+  assets:
+  - key: s2_15_f1
+    kind: figure
+    file: doc_113_台北_明倫_數學_數甲_g12s1e1/s2_15_f1.png
+    crop:
+      page: 3
+      rect:
+      - 450.4
+      - 327.15
+      - 564.3
+      - 447.05
+  answer:
+  - $\frac{16}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '第一個灰色正方形面積為$\left( \frac{4}{2} \right) ^{2}$＝4，第二個灰色正方形面積為$\left( \frac{4}{4} \right) ^{2}$＝1，第三個灰色正方形面積為$\left( \frac{4}{8} \right) ^{2}$＝$\frac{1}{4}$，以此類推，第 n 個灰色正方形面積為$\left( \frac{4}{2^{n}} \right) ^{2}$＝$\frac{1}{2^{2n -4}}$
+
+    所有灰色正方形面積和為首項 4，公比 r 為$\frac{1}{4}$的收斂無窮等比級數，即為$\frac{4}{1 -\frac{1}{4}}$＝$\frac{16}{3}$
+
+    註：直觀可看出灰色正方形占全部的$\frac{1}{3}$（左上方、左下方、右下方三個正方形中，皆挑選左下方的正方形塗灰色）
+
+    ∴所求面積和為$\frac{1}{3}\times 4^{2}$＝$\frac{16}{3}$'

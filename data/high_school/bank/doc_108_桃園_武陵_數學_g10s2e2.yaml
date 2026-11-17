@@ -1,0 +1,311 @@
+document:
+  id: doc_108_桃園_武陵_數學_g10s2e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 108
+  semester: 2
+  exam_seq: 2
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 108學年度第2學期第2次定期評量 高一數學科試題
+  exam_name: 108學年度第2學期第2次定期評量
+  source_file: 高一/數學/108/2-2/桃園/武陵.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、綜合題型（共 28 分）
+    count: 2
+  - ord: 2
+    name: 二、填充題（共 56 分）
+    count: 8
+  - ord: 3
+    name: 三、多重選擇題（每題 8 分，共 16 分）
+    count: 2
+questions:
+- id: doc_108_桃園_武陵_數學_g10s2e2_s1_1
+  section: 1
+  number: 1
+  type: calc
+  page: 1
+  stem: '寒假在家<u>小宇</u>打算看兩部電視劇，〈史內克〉有 5 集，每集 1 個小時，〈鬼不來電〉有 6 集，每集 30 分鐘。他安排在星期一到星期四每天 13：00～15：00 看兩小時，每個電視劇集數都須按順序看且該集必須看完才能看別集，也不能把〈史內克〉一集分兩天看。（下表是其中一種安排方法）
+
+    |  | 星期一 | 星期二 | 星期三 | 星期四 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 13：00～13：30 | 鬼不來電 | 史內克 | 史內克 | 鬼不來電 |
+
+    | 13：30～14：00 | 鬼不來電 |  |  | 史內克 |
+
+    | 14：00～14：30 | 鬼不來電 | 史內克 | 史內克 |  |
+
+    | 14：30～15：00 | 鬼不來電 |  |  | 鬼不來電 |
+
+    (1) 若其中一天看了 4 集〈鬼不來電〉，則整週的安排有多少可能？（5 分）
+
+    (2) 若每天都有看〈史內克〉，則整週的安排有多少可能？（5 分）'
+  answer:
+  - (1) 若其中一天看了 4 集〈鬼不來電〉
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_108_桃園_武陵_數學_g10s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '圖論是數學的一個分支，以點、線、箭頭、……等符號來記錄資訊，並從圖形討論它的性質。據聞最早是<u>尤拉</u>在研究〈哥尼斯堡通過七座橋問題〉時，利用圖形來簡化問題。下面介紹幾個範例：
+
+    (1) 若以點表示 A、B、C、D、E 五人，兩人互相認識即以兩點之間的連線表示，否則則不畫線，如右圖範例代表：AB 兩人互相認識、BC 兩人互相認識、……、AE 兩人互不相識。問今有 5 人排隊買口罩，此 5 人相識的情形有多少可能？（單選，4 分）'
+  options:
+  - label: A
+    content: $C_{2}^{5}$
+  - label: B
+    content: $P_{2}^{5}$
+  - label: C
+    content: $2^{5}$
+  - label: D
+    content: $2^{10}$
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_108_桃園_武陵_數學_g10s2e2/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 489.6
+      - 413.7
+      - 564.3
+      - 472.0
+- id: doc_108_桃園_武陵_數學_g10s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 將$\left( 17x-\frac{1}{17x} \right) ^{8}$展開之後，常數項應為＿＿＿＿。
+  answer:
+  - '70'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left( 17x -\frac{1}{17x} \right) ^{8}$之一般項為
+
+    $C_{k}^{8}(17x)^{k}\left( -\frac{1}{17x} \right) ^{8-k}$＝$C_{k}^{8}17^{k}x^{k}\left( -\frac{1}{17} \right) ^{8-k}x^{k-8}$
+
+    ＝$(-1)^{8-k}C_{k}^{8}17^{k}17^{k-8}x^{2k-8}$
+
+    ＝$(-1)^{8-k}C_{k}^{8}17^{2k-8}x^{2k-8}$
+
+    2k－8＝0 ⇒ k＝4
+
+    k＝4 代入得常數項為$(-1)^{4}C_{4}^{8}17^{0}= 70$'
+- id: doc_108_桃園_武陵_數學_g10s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 電視節目有一種遊戲，甲有 6 張卡片 A、B、C、D、E、F，主持人也有同樣的 6 張卡片。主持人會選擇最少 1 張最多 5 張卡片放入信封，甲也會選擇最少 1 張最多 5 張卡片放入信封。兩個信封打開後，卡片合起來恰好 A、B、C、D、E、F 各 1 張即可獲得獎金，兩人的信封符合這樣的情況共有＿＿＿＿種。
+  answer:
+  - '62'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '考慮主持人的狀況，甲只需挑選剩下的卡片即可得到獎金
+
+    又主持人有$C_{1}^{6} +C_{2}^{6} +\ldots \ldots +C_{5}^{6}$＝$2^{6} -C_{0}^{6} -C_{6}^{6}$＝62 種情況
+
+    故符合所求的情況共有 62 種'
+- id: doc_108_桃園_武陵_數學_g10s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 某天週日的上午 4 小時下午 3 小時，<u>小智</u>打算下列 7 個活動各做 1 小時。這 7 個活動是， 「讀英語雜誌、寫週記、追電視劇、做模型、上色模型、整理衣櫃、陪爸爸下棋」。讀英語雜誌一定要在早上，做模型一定要在上色模型之前（可以間隔一段時間）。問這 7 小時的安排共有＿＿＿＿種可能。
+  answer:
+  - '1440'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 7 個活動依序為 A～G，則題意為「A 在前 4 且 D 在 E 前」
+
+    先選擇 A 的位置，再將「○○BCFG」做排列，再將 D、E 填入○
+
+    故共有$4\times \frac{6 ！}{2 ！}\times 1$＝4×360＝1440 種可能'
+- id: doc_108_桃園_武陵_數學_g10s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: <u>佐助</u>、<u>小櫻</u>、<u>鳴人</u>參加老師的考驗，每個人的得分是 0，1，2，……，10 其中之一的分數 （有可能同分），若<u>佐助</u>的分數比兩人都高，問三人所得的分數有＿＿＿＿種可能。
+  answer:
+  - '385'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求為 n（<u>小櫻</u>、<u>鳴人</u>同分）＋n（<u>小櫻</u>、<u>鳴人</u>不同分）
+
+    ＝$C_{2}^{11}+ C_{3}^{11}\times 2!$＝55＋165×2＝55＋330＝385（種）'
+- id: doc_108_桃園_武陵_數學_g10s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 百貨公司 1 樓與 2 樓之間有 3 座（相異）可以向上走也能向下走的樓梯，2 座（相異）只能向下的手扶梯，向上的手扶梯皆故障無法使用。甲、乙兩人從 1 樓上 2 樓時從 5 條路中選擇不同的路，兩人從 2 樓下 1 樓時也選擇不同的路，兩人各自上樓下樓也是不同的路。問兩人上下樓共有＿＿＿＿種可能。
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_108_桃園_武陵_數學_g10s2e2/s2_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 221.5
+      - 491.7
+      - 396.6
+      - 531.9
+  answer:
+  - '78'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_108_桃園_武陵_數學_g10s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 三臺不同的黑色手機，兩臺不同的白色手機，一臺紅色手機，將此六臺不同手機放在櫃子上排成一列展示，同色不相鄰的情形有＿＿＿＿種。
+  answer:
+  - '120'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_108_桃園_武陵_數學_g10s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: '<u>波波</u>到速食店幫朋友買餐點，菜單如下共有 10 種餐點，他有 A、B、C 類的折價券各 1 張，D 類的折價券 4 張（每張折價券只能購買 1 個餐），<u>波波</u>用了 4 張折價券買了 4 種不一樣的餐，問他買的餐點共有＿＿＿＿種可能。
+
+    | A | 牛肉漢堡餐、嫩煎雞腿餐 |
+
+    | --- | --- |
+
+    | B | 炸雞腿餐、烤雞餐 |
+
+    | C | 墨西哥捲餅餐、蝦堡餐 |
+
+    | D | 雞塊餐、起司蛋堡餐、燒肉堡餐、炸魚排餐 |'
+  answer:
+  - '129'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '以 D 的數量分以下情形討論：
+
+    $D_{1}$：$C_{1}^{4} \times C_{3}^{3}$×$2^{3}$＝32（種）
+
+    $D_{2}$：$C_{2}^{4} \times C_{2}^{3} \times 2^{2}$＝6×3×4＝72（種）
+
+    $D_{3}$：$C_{3}^{4} \times C_{1}^{3} \times 2$＝24（種）
+
+    $D_{4}$：1 種
+
+    故共有 32＋72＋24＋1＝129（種）'
+- id: doc_108_桃園_武陵_數學_g10s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: <u>阿中</u>、<u>阿淳</u>、<u>阿浩</u>三人坐鎮指揮中心，在星期一到星期六的上午與下午各有一人值班，每天早上與下午必須不同人值班。已知這六天他們三人正好都值班了 4 次，問這六天的值班可能情形共有＿＿＿＿種。
+  answer:
+  - '5760'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '依序將三人設為 A、B、C
+
+    則此 6 天的分組必為
+
+    （A，B），（A，B），（A，C），（A，C），（B，C），（B，C）
+
+    故共有$\frac{6 ！}{2 ！ 2 ！ 2 ！}$×$2^{6}$＝90×64＝5760（種）'
+- id: doc_108_桃園_武陵_數學_g10s2e2_s3_1
+  section: 3
+  number: 1
+  type: multiple
+  page: 3
+  stem: <u>小傑</u>、<u>拉拉</u>、<u>阿力</u>三人同班，班上共有 30 人，若從班上選出 10 人去大隊接力
+  options:
+  - label: A
+    content: 包含<u>小傑</u>的情形有$C_{9}^{29}$種
+  - label: B
+    content: 不包含<u>小傑</u>的情形有$C_{10}^{29}$種
+  - label: C
+    content: 恰好包含<u>小傑</u>、<u>拉拉</u>、<u>阿力</u>其中一人的情形有$3\times C_{9}^{29}$種
+  - label: D
+    content: <u>小傑</u>、<u>拉拉</u>、<u>阿力</u>三人都被選到的情形有$C_{7}^{27}$種
+  - label: E
+    content: 所有的情形有$C_{10}^{27}+3C_{9}^{27}+3C_{8}^{27}+C_{7}^{27}$種
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：先選<u>小傑</u>後，再選 9 位：$C_{9}^{29}$（種）
+
+    (B) ○：排除<u>小傑</u>後，再選 10 位：$C_{10}^{29}$（種）
+
+    (C) ╳：3 人挑 1 人後，再從剩下 27 人選 9 人：$3\times C_{9}^{27}$（種）
+
+    (D) ○：3 人都被選到，再從剩下 27 人選 7 人：$1\times C_{7}^{27}$（種）
+
+    (E) ○：討論 3 人之中被挑選 0、1、2、3 人情況
+
+    共有$C_{10}^{27} +3C_{9}^{27}+ 3 C_{8}^{27} +C_{7}^{27}$（種）
+
+    故選(A)(B)(D)(E)'
+- id: doc_108_桃園_武陵_數學_g10s2e2_s3_2
+  section: 3
+  number: 2
+  type: multiple
+  page: 3
+  stem: 某班級 50 位學生，段考數學、英文、國文及格的人數分別為 43、37、27 人。現假設數學和英文皆及格的有 x 人。請選出正確的選項。
+  options:
+  - label: A
+    content: 數學及格或英文及格的人數為 80－x 人
+  - label: B
+    content: 數學和英文皆及格的人數，至少有 30 人
+  - label: C
+    content: 數學及格但英文不及格的人數為 37－x 人
+  - label: D
+    content: 數學及格但英文不及格的人數至多有 13 人
+  - label: E
+    content: 三科都及格的人數至少有 7 人
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：n（數及格或英及格）
+
+    ＝n（數及格）＋n（英及格）－n（數及格且英及格）
+
+    ＝43＋37－x＝80－x
+
+    (B) ○：∵80－x ≤ 50 ∴30 ≤ x
+
+    故數學和英文皆及格的人數至少有 30 人
+
+    (C) ╳：n（數及格且英不及格）＝n（數及格）－n（數及格且英及格）
+
+    ＝43－x
+
+    (D) ○：∵30 ≤ x
+
+    ∴－30 ≥ －x
+
+    ⇒ 43－x ≤ 43－30＝13
+
+    故數學及格但英文不及格的人數至多有 13 人
+
+    (E) ○：三科都及格的最少情況為「數及格且英及格」和「國及格」重疊的最少
+
+    故至少有 30＋27－50＝7（人）
+
+    故選(A)(B)(D)(E)'

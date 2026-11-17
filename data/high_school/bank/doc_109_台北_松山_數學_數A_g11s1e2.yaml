@@ -1,0 +1,253 @@
+document:
+  id: doc_109_台北_松山_數學_數A_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 109
+  semester: 1
+  exam_seq: 2
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 109學年度第1學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 109學年度第1學期第2次定期評量
+  source_file: 高二/數學/109/1-2/台北/松山_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單選題
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題
+    count: 2
+  - ord: 3
+    name: 三、 填充題
+    count: 10
+  - ord: 4
+    name: 四、 混合題
+    count: 2
+questions:
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 若$log_{ 3}$ a＝2，$log_{ 4}$ b＝2，試問$log_{ 5}$ ( a＋b ) 最接近的整數為何？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: '4'
+  - label: E
+    content: '5'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\begin{cases}\log _{3}a=2 \\ \log _{4}b=2\end{cases}$ ⇒ $\begin{cases}a=3^{2}=9 \\ b=4^{2}=16\end{cases}$ ⇒ $log_{ 5}$ ( a＋b )＝$log_{ 5}$ ( 9＋16 )＝$log_{ 5}$ 25＝2， 故選(B)。
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 有一詐騙集團宣稱投資某商品，固定每年的年報酬率為100%，並以每日複利計算。若投資此商品1萬元，經過10年後可得到的本利和最接近下列哪個選項？
+  options:
+  - label: A
+    content: 1千萬
+  - label: B
+    content: 5千萬
+  - label: C
+    content: 1億
+  - label: D
+    content: 2億
+  - label: E
+    content: 3億
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 10年後的本利和為 $10^{4}$ ( 1＋$\frac{1}{365}$)$^{3650}$＝$10^{4}$ ( ( 1＋$\frac{1}{365}$)$^{365}$ )$^{10}$ ≈ $10^{4}$．$e^{10}$ ≈ $10^{4}$．( 2.7 )$^{10}$， ＝$10^{4}$．( $3^{3}$．$10^{－1}$ )$^{10}$＝$3^{30}$．$10^{－6}$ ≈ ( $10^{04771}$ )$^{30}$．$10^{－6}$＝$10^{8.313}$， ＝$10^{0.313}$．$10^{8}$ ≈ 2．$10^{8}$， 故選(D)。
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 試問下列選項中，哪些函數圖形的凹口是向下的？
+  options:
+  - label: A
+    content: y＝$2^{x}$
+  - label: B
+    content: y＝－$2^{x}$
+  - label: C
+    content: y＝$2^{－x}$
+  - label: D
+    content: y＝$log_{ 2}$ x
+  - label: E
+    content: y＝$log_{ 2}$ (－x )
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 一種注射藥劑在病人血液中的量須維持在600mg以上，否則病人就會有生命危險。現給某病人注射這種藥劑2400mg，如果藥在血液中以每2小時20%的比例衰減，試問下列選項何者正確？
+  options:
+  - label: A
+    content: 注射後4小時，此病人血液中的藥量約為1536mg。
+  - label: B
+    content: 注射後4小時，此病人血液中的藥量約為1920mg。
+  - label: C
+    content: 注射後大約經過6小時，病人需補打下一劑。
+  - label: D
+    content: 注射後大約經過9小時，病人需補打下一劑。
+  - label: E
+    content: 注射後大約經過12小時，病人需補打下一劑。
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○：4小時後的藥量約為2400×$(0.8)^{\frac{4}{2}}$＝2400×0.64＝1536 ( mg )。 (B) ×：承(A)可知，錯誤。 (C) ×：2400×$(0.8)^{\frac{t}{2}}$≥ 600 ⇒ $(0.8)^{\frac{t}{2}}$≥$\frac{1}{4}$⇒ log$(0.8)^{\frac{t}{2}}$≥ log$\frac{1}{4}$⇒ $\frac{t}{2}$( 3log 2－1 ) ≥ －2 log 2 $\frac{t}{2}$×( 3×3.301－1 ) ≥ －2×0.301 ⇒ t ≤ 12.4， 所以約經過12小時，病人需補打下一劑。 (D) ×：承(C)可知，錯誤。 (E) ○：承(C)可知，正確。 故選(A)(E)。
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 1
+  stem: 試求$2^{ log 2}$．$2^{ log 5}$＝＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 1
+  stem: 已知log 20的首數與尾數分別為a與b，求a－b＝＿＿＿＿。
+  answer:
+  - log 5
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 1
+  stem: 若要使「以$log_{ 2}$ x為底數時，$\log _{\frac{1}{2}}$( x－2 ) 的對數」有意義，則x的範圍為 ＿＿＿＿。
+  answer:
+  - 2＜x＜3
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 1
+  stem: 試問方程式x＋$log_{0.8}$ x＝0的解有＿＿＿＿個。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 1
+  stem: 已知平面上A，B兩點在直線L的投影點分別為A'與B'，若$\overline{AA'}$＝$log_{ 2}$ 3，$\overline{BB'}$＝$log_{ 4}$ 3且$\overline{A'B'}$＝$log_{ 3}$ 8，求四邊形AA'B'B面積為＿＿＿＿。
+  answer:
+  - $\frac{9}{4}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 1
+  stem: 將函數f (x)＝$(\frac{1}{10})^{x^{2}-3x-7}$的圖形向下平移0.001，試求平移後的圖形與x軸的交點坐標為＿＿＿＿。
+  answer:
+  - ( 5 , 0 )，(－2 , 0 )
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 1
+  stem: 試求聯立方程式$\begin{cases}\log _{2}(x-1)+\log _{2}(y-2)=3 \\ \log _{2}(x-2)-\log _{2}(y-1)=0\end{cases}$的解 ( x , y )＝＿＿＿＿。
+  answer:
+  - ( 5 , 4 )
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 1
+  stem: 已知方程式$4^{x}$－8．$2^{x}$＋k＝0的一根為$log_{ 2}$ 5，試求另一根x＝＿＿＿＿。
+  answer:
+  - $log_{ 2}$ 3
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 1
+  stem: 已知過點P ( 0 , 4 ) 且與直線L：y＝x垂直的直線，分別交f (x)＝$a^{x}$與g (x)＝$log_{ a}$ x兩圖形於A，B兩點，若$\overline{PA}$＝$\sqrt{2}$，則$\overline{PB}$＝＿＿＿＿。
+  answer:
+  - 3$\sqrt{2}$
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 1
+  stem: 已知x＞1，試求y＝( $log_{ 3}$ 3x )$^{2}$＋( $log_{ x}$ 3x )$^{2}$最小值為＿＿＿＿。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 1
+  stem: 已知下列選項中有一個是「班佛定律」以x為首位數字的數出現機率約為y的關係式，請根據上述數據判斷出是哪一個選項？(單選)
+  options:
+  - label: A
+    content: y＝log ( x＋1 )
+  - label: B
+    content: y＝0.3－log x
+  - label: C
+    content: y＝log ($\frac{x+1}{x}$)
+  - label: D
+    content: y＝log ($\frac{5}{2}$－$\frac{x}{2}$)
+  group_stem: 「班佛定律」是在說明一堆從實際生活得出的數據中，以1為首位數字的數出現機率約為30.1%，以2為首位數字的數出現機率約為17.6%，並非直覺認為的皆是$\frac{1}{9}$。「班佛定律」可用於檢查各種數據是否造假，使用條件有2點，第一是數據至少要有3000筆以上，第二是不能有人為操控。當一組數據是自然產生，排序會接近班佛定律的「理想曲線」，該定律經常用於檢查會計、金融以及選舉有無造假。根據上述，回答下列問題。
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ×：y＝log ( 1＋1 )＝log 2 ≈ 0.301，y＝log ( 2＋1 )＝log 3 ≈ 0.4771 ( 不合 )。 (B) ×：y＝0.3－log 1＝0.3，y＝0.3－log 2 ≈ 0.3－0.301＝－0.001 ( 不合 )。 (C) ○：y＝log ($\frac{1+1}{1}$)＝log 2 ≈0.301，y＝log ($\frac{2+1}{2}$)＝log 3－log 2 ≈ 0.4771－0.301＝0.1761。 (D) ×：因為$\frac{5}{2}$－$\frac{x}{2}$＞0，所以x＜5 ( 不合 )。 故選(C)。
+- id: doc_109_台北_松山_數學_數A_g11s1e2_s4_2
+  section: 4
+  number: 2
+  type: calc
+  page: 1
+  stem: 在2020年某國總統大選造假爭議不斷，有人分析某位候選人在某地區的所有開票所的得票數，發現得票數是以4為首位數字的開票所大約有970個，根據「班佛定律」推測，得票數是以6為首位數字的開票所大約有幾個？
+  group_stem: 「班佛定律」是在說明一堆從實際生活得出的數據中，以1為首位數字的數出現機率約為30.1%，以2為首位數字的數出現機率約為17.6%，並非直覺認為的皆是$\frac{1}{9}$。「班佛定律」可用於檢查各種數據是否造假，使用條件有2點，第一是數據至少要有3000筆以上，第二是不能有人為操控。當一組數據是自然產生，排序會接近班佛定律的「理想曲線」，該定律經常用於檢查會計、金融以及選舉有無造假。根據上述，回答下列問題。
+  answer:
+  - 670個
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設以6為首位數字的開票所大約有k個， 可知$\frac{\log (\frac{4+1}{4})}{\log (\frac{6+1}{6})}$＝$\frac{970}{k}$， ⇒ k＝$\frac{970\log \frac{7}{6}}{\log \frac{5}{4}}$＝$\frac{970 (\log 7-\log 2-\log 3)}{\log 5-2\log 2}$ ≈ $\frac{970 (0.8451-0.301-0.4771)}{0.699-2\times 0.301}$＝670， 故大約有670個。

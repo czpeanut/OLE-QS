@@ -1,0 +1,425 @@
+document:
+  id: doc_112_台中_興大附中_數學_數B_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 112學年度第1學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 112學年度第1學期第2次定期評量
+  source_file: 高二/數學/112/1-2/台中/興大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 15 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，共 30 分，每題至少有一個選項是正確的，錯一個選項得 3.6 分，錯兩個選項得 1.2 分，錯三個選項以上得 0 分）
+    count: 5
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 45 分）
+    count: 9
+  - ord: 4
+    name: 四、計算題（每題配分標示於題末，共 10 分）
+    count: 1
+questions:
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設 a＝$log_{2}$3，b＝$\log _{\frac{1}{2}}\frac{1}{4}$，c＝$log_{4}$7，則下列敘述何者正確？
+  options:
+  - label: A
+    content: a＞b＞c
+  - label: B
+    content: a＞c＞b
+  - label: C
+    content: b＞a＞c
+  - label: D
+    content: b＞c＞a
+  - label: E
+    content: c＞a＞b
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '將 a，b，c 的底數換成 2，再比較真數大小
+
+    則 a＝$log_{2}$3，b＝$\log _{\frac{1}{2}}\frac{1}{4}$＝$\log _{2^{-1}}4^{-1}$＝$\frac{-1}{-1}$ $log_{2}$4＝$log_{2}$4，
+
+    c＝$log_{4}$7＝$\log _{4^{\frac{1}{2}}}7^{\frac{1}{2}}$＝$\log _{2}\sqrt{7}$
+
+    又$\sqrt{7}$＜3＜4 ⇒ $\log _{2}\sqrt{7}$＜$log_{2}$3＜$log_{2}$4
+
+    ⇒ c＜a＜b
+
+    故選(C)'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設 a、b 皆為正數且滿足 loga＋logb＝2，求 a＋b 的最小值為？
+  options:
+  - label: A
+    content: '2'
+  - label: B
+    content: '10'
+  - label: C
+    content: '20'
+  - label: D
+    content: '100'
+  - label: E
+    content: '200'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵loga＋logb＝2
+
+    ∴logab＝2 ⇒ ab＝$10^{2}$＝100
+
+    又 a，b＞0，由算幾不等式知
+
+    $\frac{a+b}{2}\geq \sqrt{ab}$ ⇒ $\frac{a+b}{2}\geq \sqrt{100}$，得 a＋b$\geq$20
+
+    故選(C)'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 投擲一顆公正骰子（每一面出現的機會均等），則需連續投擲幾次，才能使至少出現一次 5 點的機率不低於 0.7？
+  options:
+  - label: A
+    content: '6'
+  - label: B
+    content: '7'
+  - label: C
+    content: '8'
+  - label: D
+    content: '9'
+  - label: E
+    content: '10'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列哪些選項正確？
+  options:
+  - label: A
+    content: $\log _{\sqrt{2}}1$＝0
+  - label: B
+    content: $log_{0.01}$100＝－2
+  - label: C
+    content: $\log _{9}3\sqrt{3} =\frac{3}{4}$
+  - label: D
+    content: $log_{8}$32＝4
+  - label: E
+    content: $3^{2 \log _{3}4}$＝4
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 若 $5^{x}$＝6，$12^{y}$＝6，則下列哪些選項的值和$\frac{x}{y}$相等？
+  options:
+  - label: A
+    content: $log_{5}$12
+  - label: B
+    content: $log_{12}$5
+  - label: C
+    content: $log_{5}$3＋$log_{5}$4
+  - label: D
+    content: $\frac{\log 12}{\log 5}$
+  - label: E
+    content: $\frac{\log 5}{\log 12}$
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 下列敘述哪些正確？
+  options:
+  - label: A
+    content: 函數 y＝$log_{5}$x 與 y＝$\log _{\frac{1}{5}}x$對稱於 y 軸
+  - label: B
+    content: 函數 y＝$log_{5}$x 與 y＝－$log_{5}$x 對稱於 x 軸
+  - label: C
+    content: 函數 y＝$5^{x}$ 與 y＝$-\left( \frac{1}{5} \right) ^{x}$對稱於 x 軸
+  - label: D
+    content: 函數 y＝$5^{x}$ 與 y＝$log_{5}$x 對稱於 y＝x
+  - label: E
+    content: 函數 y＝$5^{－x}$ 與 y＝－$log_{5}$x 對稱於 y＝x
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: a＝$\frac{3}{2}$，b＝$log_{3}$5，c＝$log_{5}$12，d＝$\log _{2}\sqrt{3}$，e＝$\log _{6}\frac{1}{2}$，下列哪些選項正確？
+  options:
+  - label: A
+    content: a＞c＞b
+  - label: B
+    content: b＞c＞d
+  - label: C
+    content: c＞a＞d
+  - label: D
+    content: b＞d＞e
+  - label: E
+    content: e 的值最小
+  answer:
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s2_5
+  section: 2
+  number: 5
+  type: multiple
+  page: 2
+  stem: 在同一個坐標平面上，下列哪些選項的圖形可以由 y＝logx 的圖形利用平移得來？
+  options:
+  - label: A
+    content: y＝log（x－2）
+  - label: B
+    content: y＝log10x
+  - label: C
+    content: y＝$\log \frac{1}{x}$
+  - label: D
+    content: y＝$\log \frac{x}{2}$
+  - label: E
+    content: y＝log（2x＋10）
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 已知 x＝$log_{3}$2，求 $9^{x}$＋$3^{－x}$ 的值為＿＿＿＿。
+  answer:
+  - $\frac{9}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'x＝$log_{3}$2 代入 $9^{x}$＋$3^{－x}$ 得
+
+    $9^{\log _{3}2}$＋$3^{-\log _{3}2}$＝$(3^{\log _{3}2})^{2}$＋$(3^{\log _{3}2})^{-1}$＝$2^{2}$＋$2^{－1}$＝$\frac{9}{2}$'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 方程式 log（x＋1）＋log（2x－1）＝1＋log（x－1）的整數解為＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'log（x＋1）＋log（2x－1）＝1＋log（x－1）
+
+    ⇒ log（x＋1）（2x－1）＝log10（x－1）
+
+    ⇒ （x＋1）（2x－1）＝10（x－1）
+
+    ⇒ $2x^{2}$－9x＋9＝0 ⇒ （2x－3）（x－3）＝0
+
+    ⇒ x＝$\frac{3}{2}$或 3
+
+    ∵真數＞0
+
+    ∴x＋1＞0，2x－1＞0，x－1＞0，且 x 為整數
+
+    故 x＝3'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 化學上的 pH 值用來表示溶液的氫離子濃度，溶液的氫離子濃度若為 x（莫耳／升），則定義－logx 為溶液的 pH 值。可樂的 pH 值為 3.5，咖啡的 pH 值為 5，試問可樂的氫離子濃度為咖啡氫離子濃度的＿＿＿＿倍。
+  answer:
+  - $10\sqrt{10}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令可樂的氫離子濃度為 $x_{A}$，咖啡的氫離子濃度為 $x_{B}$
+
+    則$\begin{cases}-\log x_{A}=3.5 \\ -\log x_{B}=5\end{cases} \Rightarrow \begin{cases}x_{A}=10^{-3.5} \ldots \ldots \ldots \ldots \ldots ① \\ x_{B}=10^{-5} \ldots \ldots \ldots \ldots \ldots \ldots ②\end{cases}$
+
+    由$\frac{①}{②}$得$\frac{x_{A}}{x_{B}}$＝$\frac{10^{-3.5}}{10^{-5}}$＝$10^{1.5}$＝$10\sqrt{10}$
+
+    故可樂的氫離子濃度為咖啡氫離子濃度的$10\sqrt{10}$倍'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 若∣logk－2∣＜log4，試問這樣的整數 k 共有＿＿＿＿個。
+  answer:
+  - '374'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∣logk－2∣＜log4
+
+    ⇒ －log4＜logk－2＜log4
+
+    ⇒ 2－log4＜logk＜2＋log4，又 2＝log100
+
+    ⇒ $\log \frac{100}{4}$＜logk＜log100×4
+
+    ⇒ log25＜logk＜log400
+
+    ⇒ 25＜k＜400
+
+    故有 400－25－1＝374 個'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 求（$log_{2}$5）×（$log_{5}$8＋$log_{25}$16）的值為＿＿＿＿。
+  answer:
+  - '5'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（$log_{2}$5）×（$log_{5}$8＋$log_{25}$16）
+
+    ＝（$log_{2}$5）×（$log_{5}2^{3}$＋$\log _{5^{2}}2^{4}$）
+
+    ＝（$log_{2}$5）×（3 $log_{5}$2＋$\frac{4}{2}$ $log_{5}$2）
+
+    ＝$log_{2}$5×5 $log_{5}$2＝5'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 一曲線 y＝$\left( \frac{1}{3} \right) ^{x}$分別與兩直線 $L_{1}$：y＝4，$L_{2}$：y＝36 交於 P、Q 兩點，則直線 PQ 的斜率為 ＿＿＿＿。
+  answer:
+  - －16
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 P（$x_{1}$，4），Q（$x_{2}$，36）
+
+    $\begin{cases}4=\left( \frac{1}{3} \right) ^{x_{1}} \ldots \ldots \ldots \ldots \ldots ① \\ 36 =\left( \frac{1}{3} \right) ^{x_{2}}\ldots \ldots \ldots \ldots \ldots ②\end{cases}$
+
+    由$\frac{②}{①}$得 9＝$\left( \frac{1}{3} \right) ^{x_{2}-x_{1}}$ ⇒ $3^{2}$＝$3^{-(x_{2}-x_{1})}$ ⇒ $3^{x_{1}-x_{2}}$＝$3^{2}$
+
+    ⇒ $x_{1}$－$x_{2}$＝2
+
+    故$m_{\overline{PQ}}=\frac{4-36}{x_{1}-x_{2}}=\frac{-32}{2}$＝－16
+
+    〈另解〉
+
+    $\begin{cases}4=\left( \frac{1}{3} \right) ^{x_{1}} \Rightarrow x_{1}=\log _{\frac{1}{3}}4 \ldots \ldots \ldots \ldots \ldots \ldots ① \\ 36 =\left( \frac{1}{3} \right) ^{x_{2}} \Rightarrow x_{2}=\log _{\frac{1}{3}}36 \ldots \ldots \ldots \ldots \ldots ②\end{cases}$
+
+    由②－①得 $x_{2}$－$x_{1}$＝$\log _{\frac{1}{3}}36-\log _{\frac{1}{3}}4$
+
+    ＝$\log _{\frac{1}{3}}\frac{36}{4}$＝$\log _{3^{-1}}3^{2}$＝－2
+
+    故$m_{\overline{PQ}}=\frac{36-4}{x_{2}-x_{1}}=\frac{32}{-2}$＝－16'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 不等式 $log_{2}$（$log_{2}$x）＜$\frac{1}{\log _{3}6}+\frac{1}{\log _{12}6}$的解為＿＿＿＿＜x＜＿＿＿＿。
+  answer:
+  - 1；16
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\frac{1}{\log _{3}6}+\frac{1}{\log _{12}6}$＝$log_{6}$3＋$log_{6}$12＝$log_{6}$36＝2
+
+    ∴$log_{2}$（$log_{2}$x）＜$\frac{1}{\log _{3}6}+\frac{1}{\log _{12}6}$ ⇒ $log_{2}$（$log_{2}$x）＜$log_{2}$4
+
+    ⇒ 0＜$log_{2}$x＜4
+
+    ⇒ $log_{2}$1＜$log_{2}$x＜$log_{2}$16
+
+    ⇒ 1＜x＜16'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知一奈米為 $10^{－9}$ 米，若某種病毒的直徑為 x 米，且 logx＝－7.2219，試求此病毒的直徑約為＿＿＿＿奈米。
+  answer:
+  - '60'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'logx＝－7.2219
+
+    ⇒ x＝$10^{－7.2219}$＝$10^{0.7781}$×$10^{－8}$
+
+    又 log2＋log3$\approx$0.3010＋0.4771
+
+    ⇒ log6$\approx$0.7781 ⇒ 6$\approx10^{0.7781}$
+
+    故 x$\approx$6×$10^{－8}$ 米＝60 奈米'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 聲音的強度 I（瓦特／平方公尺）和所測得的分貝 D（dB）的關係是 D＝10．$\log \frac{I}{I_{0}}$，其中 $I_{0}$ 是一個固定強度，則 60 支 60 分貝的汽笛聲音強度是 100 支 50 分貝的汽笛聲音強度的 ＿＿＿＿倍。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 1 支 60 分貝的汽笛聲音強度為 $I_{1}$ ⇒ 60 支強度為 $60I_{1}$
+
+    1 支 50 分貝的汽笛聲音強度為 $I_{2}$ ⇒ 100 支強度為 $100I_{2}$
+
+    則 60＝$10 \log \frac{I_{1}}{I_{0}}$ ⇒ 6＝$\log \frac{I_{1}}{I_{0}}$
+
+    ⇒ $\frac{I_{1}}{I_{0}}$＝$10^{6}$ ⇒ $I_{1}$＝$10^{6}I_{0}$
+
+    且 50＝$10 \log \frac{I_{2}}{I_{0}}$ ⇒ 5＝$\log \frac{I_{2}}{I_{0}}$
+
+    ⇒ $\frac{I_{2}}{I_{0}}$＝$10^{5}$ ⇒ $I_{2}$＝$10^{5}I_{0}$
+
+    故所求為$\frac{60I_{1}}{100I_{2}}=\frac{60\times 10^{6}I_{0}}{100\times 10^{5}I_{0}}$＝6（倍）'
+- id: doc_112_台中_興大附中_數學_數B_g11s1e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '某公司為了響應節能減碳政策，決定每年依固定的比率 4 ％逐年減少二氧化碳排放量。試回答下列各問題：
+
+    (1) 求 log8 的近似值到小數點後第 4 位。（2 分）
+
+    (2) 求 log96 的近似值到小數點後第 4 位。（2 分）
+
+    (3) 至少要多少年（取整數年數），該公司的二氧化碳排放量才會低於目前排放量的 80 ％？ （6 分）'
