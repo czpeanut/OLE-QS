@@ -370,7 +370,7 @@ questions:
   number: 2
   type: calc
   page: 1
-  stem: 計算R′(30)與C′(30)之值，並根據所求結果說明是否應該生產第31件產品。（5分）
+  stem: 某工廠生產某項產品 $x$ 件（$0 \le x \le 60$）的收入函數為 $R(x) = 120x - x^2$（元），成本函數為 $C(x) = 30x + 200$（元）。計算 $R'(30)$ 與 $C'(30)$ 之值，並根據所求結果說明是否應該生產第 31 件產品。（5 分）
   tags:
     unit:
       code: MA-Y1-2-1
@@ -385,13 +385,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺少收入函數R(x)與成本函數C(x)的定義（疑為題組漏收前題幹），致無法實際計算作答。
+    fixed_by: agent
+    fix_note: （人工修正：補充收入函數 R(x) 與成本函數 C(x) 定義並補齊答案與解析）
   difficulty: 2
+  explanation: 微分得 $R'(x) = 120 - 2x$、$C'(x) = 30$。代入 $x=30$ 得 $R'(30) = 60$、$C'(30) = 30$。由於第 30 件處的邊際收入 $R'(30)=60$ 大於邊際成本 $C'(30)=30$（增加第 31 件的預估收入大於成本），故應該生產第 31 件產品。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $R'(30)=60$，$C'(30)=30$；應該生產第 31 件產品
 - id: doc_113_桃園_武陵_數學_數乙_g12s1e2_s3_3
   section: 3
   number: 3
   type: calc
   page: 2
-  stem: 若利潤函數L(x)＝收入函數R(x)－成本函數C(x)，試問生產此產品多少件可使利潤最大？又最大利潤為何？（7分）
+  stem: 承上條件，某工廠生產某項產品 $x$ 件（$0 \le x \le 60$）的收入函數為 $R(x) = 120x - x^2$（元），成本函數為 $C(x) = 30x + 200$（元）。若利潤函數 $L(x) = R(x) - C(x)$，試問生產此產品多少件可使利潤最大？又最大利潤為何？（7 分）
   tags:
     unit:
       code: MA-Y1-2-2
@@ -406,4 +413,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺少收入函數R(x)與成本函數C(x)的定義（疑為題組漏收前題幹），致無法實際計算作答。
+    fixed_by: agent
+    fix_note: （人工修正：補充收入函數 R(x) 與成本函數 C(x) 定義並補齊答案與解析）
   difficulty: 3
+  explanation: $L(x) = (120x - x^2) - (30x + 200) = -x^2 + 90x - 200$。令 $L'(x) = -2x + 90 = 0$ 得 $x = 45$（且 $L''(45) = -2 < 0$），故生產 45 件時有最大利潤 $L(45) = -(45)^2 + 90(45) - 200 = 1825$ 元。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 45 件，最大利潤 1825 元

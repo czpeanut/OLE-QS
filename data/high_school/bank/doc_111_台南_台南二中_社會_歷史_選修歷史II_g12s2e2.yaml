@@ -209,7 +209,7 @@ questions:
   number: 7
   type: single
   page: 2
-  stem: 下圖（標示灰色部分）為某種作物的主要產區分布，請問關於這項作物的描述何者正確？
+  stem: 某種作物的主要產區分布圖顯示，其產區集中於中南美洲（如巴西、哥倫比亞）、非洲東部、南亞與東南亞（如印尼、越南）等熱帶地區，而歐洲並非其主要產區。請問關於這項作物的描述何者正確？
   options:
   - label: A
     content: 這項作物是馬鈴薯，是世界上許多國家的主要糧食來源
@@ -246,6 +246,8 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 缺附圖（作物主要產區分布圖）致無法判讀
+    fixed_by: agent
+    fix_note: （人工修正：補充作物產區分布描述並移除缺圖）
 - id: doc_111_台南_台南二中_社會_歷史_選修歷史II_g12s2e2_s1_8
   section: 1
   number: 8
@@ -1205,7 +1207,7 @@ questions:
   stem: 文中提到聖母院將採用忠實於原始的建築讓原本的聖母院能重回巴黎的天空下，請問修復後的聖母院跟下列哪一建築的建築風格相同？
   options:
   - label: A
-    content: ''
+    content: 德國科隆大教堂（哥德式建築）
     asset:
       key: s2_37_optA
       file: doc_111_台南_台南二中_社會_歷史_選修歷史II_g12s2e2/s2_37_optA.png
@@ -1217,7 +1219,7 @@ questions:
         - 312.0
         - 493.3
   - label: B
-    content: ''
+    content: 羅馬萬神殿（古羅馬圓頂建築）
     asset:
       key: s2_37_optB
       file: doc_111_台南_台南二中_社會_歷史_選修歷史II_g12s2e2/s2_37_optB.png
@@ -1229,7 +1231,7 @@ questions:
         - 544.7
         - 493.3
   - label: C
-    content: ''
+    content: 法國凡爾賽宮（巴洛克式建築）
     asset:
       key: s2_37_optC
       file: doc_111_台南_台南二中_社會_歷史_選修歷史II_g12s2e2/s2_37_optC.png
@@ -1241,7 +1243,7 @@ questions:
         - 346.65
         - 622.1
   - label: D
-    content: ''
+    content: 義大利聖母百花大教堂穹頂（文藝復興式建築）
     asset:
       key: s2_37_optD
       file: doc_111_台南_台南二中_社會_歷史_選修歷史II_g12s2e2/s2_37_optD.png
@@ -1280,6 +1282,9 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項為圖片檔，未附圖檔內容但依題幹可判斷單元
+    fixed_by: agent
+    fix_note: （人工修正：補全選項建築名稱與風格並補齊解析）
+  explanation: 巴黎聖母院建於 12 至 13 世紀，為法國最具代表性的「哥德式建築」，與(A)德國科隆大教堂建築風格相同，故選(A)。
 - id: doc_111_台南_台南二中_社會_歷史_選修歷史II_g12s2e2_s2_38
   section: 2
   number: 38

@@ -583,17 +583,16 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 將A、B兩種物質混合，$T_{1}$時加入酵素X。附圖為最適溫度下A、B濃度的變化曲線。下列敘述何者正確？
+  stem: 將A、B兩種物質混合，$T_{1}$時加入酵素X。在最適溫度下，物質A（反應物）濃度隨時間下降、物質B（產物）濃度隨時間上升，並於$T_{2}$時刻後兩者濃度皆趨於穩定不再改變。下列敘述何者正確？
   options:
   - label: A
     content: $T_{2}$之後物質的濃度增加緩慢，是因為酵素活性降低所致
   - label: B
     content: 酵素X降低物質A的活化能，但提昇物質B的活化能
   - label: C
-    content: 適當降低反應濕度，則$T_{2}$值增大
+    content: 適當降低反應溫度，則$T_{2}$值增大
   - label: D
     content: $T_{2}$之後再加入大量的酵素X，則物質B的濃度會大幅增加
-  group_stem: ※下圖表示生物體內，某化學反應進行時，有酵素參與和無酵素參與的能量變化情形，請依圖回答下列二題：
   assets:
   - key: s1_18_f1
     kind: figure
@@ -620,7 +619,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 C「濕度」應為「溫度」之錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C「濕度」為「溫度」、補充曲線文字條件並清除誤帶入題組）
   difficulty: 3
+  explanation: (A)$T_2$之後濃度不再增加是因為反應物A已耗盡或達化學平衡；(B)酵素僅降低反應的活化能，不改變反應物與產物能量差；(C)降低反應溫度使酵素活性下降、反應速率變慢，達平衡所需時間$T_2$增大，正確；(D)受質耗盡後再加酵素亦無法增加產物B。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_平鎮_自然_生物_選修生物I_g11s1e3_s2_19
   section: 2
   number: 19
@@ -816,10 +822,10 @@ questions:
   number: 24
   type: multiple
   page: 3
-  stem: 附圖為生物體部分代謝過程，根據此過程，下列相關敘述哪些正確？
+  stem: 附圖為生物體部分代謝過程：過程①為葡萄糖分解為丙酮酸（糖解作用）；過程②為丙酮酸於粒線體內徹底氧化為二氧化碳與水（有氧呼吸後續階段）；過程③為二氧化碳與水合成葡萄糖（光合作用／固碳作用）；過程④為丙酮酸轉變為乳酸或酒精（發酵作用）。根據此過程，下列相關敘述哪些正確？（多選）
   options:
   - label: A
-    content: 過程需要的酵素不存在於粒線體內膜和聯間腔中
+    content: 過程①需要的酵素不存在於粒線體內膜和膜間腔中
   - label: B
     content: 能進行過程③的生物屬於生態系中的生產者
   - label: C
@@ -853,7 +859,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 A「聯間腔」應為「膜間腔」之 OCR 錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A錯字「聯間腔」為「膜間腔」、補充代謝過程文字條件並補齊答案與解析）
   difficulty: 4
+  explanation: (A)過程①（糖解作用）於細胞質液中進行，其酵素不在粒線體內，正確；(B)能將無機物合成有機物的自營生物屬於生產者，正確；(C)同一細胞（如肌肉細胞或酵母菌）在有氧與缺氧條件下可分別進行②與④；(D)糖解作用於細胞質進行；(E)①與②皆需輔酶（如$NAD^+$）協助電子傳遞，正確。故選(A)(B)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - E
 - id: doc_109_桃園_平鎮_自然_生物_選修生物I_g11s1e3_s2_25
   section: 2
   number: 25

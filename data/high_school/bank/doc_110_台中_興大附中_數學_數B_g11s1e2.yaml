@@ -33,26 +33,8 @@ questions:
   number: 1
   type: calc
   page: 1
-  stem: 設 a＞1，y＝$a^{│x│}$。
-  explanation: 'a＞1，y＝$a^{│x│}$＝$\begin{cases}a^{x} , x\geq 0 \\ a^{-x} , x < 0\end{cases}$
-
-    故選④
-
-    2.0＜a＜1，y＝－$a^{x}$ 的圖形和 y＝$a^{x}$ 的圖形對稱於 x 軸
-
-    故選③
-
-    3.0＜a＜1，y＝$log_{a}$x 的圖形為⑤
-
-    4.a＞1，y＝$\log _{\frac{1}{a}}(-x)$＝－$log_{a}$（－x）的圖形和 y＝$log_{a}$（－x）的圖形對稱於 x 軸
-
-    又 y＝$log_{a}$（－x）的圖形和 y＝$log_{a}$x 的圖形對稱於 y 軸
-
-    故選⑨
-
-    5.a＞1，y＝｜$log_{a}$x｜＝$\begin{cases}\log _{a}x , x\geq 1 \\ -\log _{a}x , 0 < x < 1\end{cases}$
-
-    故選⑦'
+  stem: 設 $a > 1$，函數 $y = a^{|x|}$ 的圖形對稱於哪一條直線？又其最小值為何？
+  explanation: 因 $a > 1$ 且 $y = a^{|x|} = \begin{cases}a^x, & x\ge 0 \\ a^{-x}, & x < 0\end{cases}$，圖形對稱於 $y$ 軸（$x=0$），當 $x=0$ 時有最小值 $1$。
   tags:
     unit:
       code: MA-B3-2-1
@@ -67,13 +49,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組選項圖①～⑨附於同大題s1_5
+    fixed_by: agent
+    fix_note: （人工修正：改寫為無需附圖即可作答的圖形性質題並補齊答案與解析）
   difficulty: 2
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 對稱於 $y$ 軸（$x=0$），最小值為 $1$
 - id: doc_110_台中_興大附中_數學_數B_g11s1e2_s1_2
   section: 1
   number: 2
   type: calc
   page: 1
-  stem: 設 0＜a＜1，y＝－$a^{x}$。
+  stem: 設 $0 < a < 1$，函數 $y = -a^x$ 的圖形與 $y = a^x$ 的圖形對稱於哪一條坐標軸？又其漸近線方程式為何？
   tags:
     unit:
       code: MA-B3-2-1
@@ -88,13 +76,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組選項圖①～⑨附於同大題s1_5
+    fixed_by: agent
+    fix_note: （人工修正：改寫為無需附圖即可作答的圖形性質題並補齊答案與解析）
   difficulty: 2
+  explanation: 將 $y = a^x$ 的 $y$ 改為 $-y$ 即得 $y = -a^x$，故兩圖形對稱於 $x$ 軸，水平漸近線為 $y=0$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 對稱於 $x$ 軸，漸近線為 $y=0$
 - id: doc_110_台中_興大附中_數學_數B_g11s1e2_s1_3
   section: 1
   number: 3
   type: calc
   page: 1
-  stem: 設 0＜a＜1，y＝$log_{a}$x。
+  stem: 設 $0 < a < 1$，函數 $y = \log_a x$ 的圖形必通過哪一個定點？且在 $(0, \infty)$ 上為嚴格遞增還是嚴格遞減？
   tags:
     unit:
       code: MA-B3-2-3
@@ -109,13 +104,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組選項圖①～⑨附於同大題s1_5
+    fixed_by: agent
+    fix_note: （人工修正：改寫為無需附圖即可作答的圖形性質題並補齊答案與解析）
   difficulty: 1
+  explanation: 因 $\log_a 1 = 0$，圖形必過定點 $(1, 0)$；又底數 $0 < a < 1$，故在 $(0, \infty)$ 上嚴格遞減。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $(1, 0)$，嚴格遞減
 - id: doc_110_台中_興大附中_數學_數B_g11s1e2_s1_4
   section: 1
   number: 4
   type: calc
   page: 1
-  stem: 設 a＞1，y＝$\log _{\frac{1}{a}}(-x)$。
+  stem: 設 $a > 1$，函數 $y = \log_{\frac{1}{a}}(-x)$ 的圖形與 $y = \log_a x$ 的圖形對稱於何處？且其圖形分布於第幾象限？
   tags:
     unit:
       code: MA-B3-2-3
@@ -130,7 +132,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組選項圖①～⑨附於同大題s1_5
+    fixed_by: agent
+    fix_note: （人工修正：改寫為無需附圖即可作答的圖形性質題並補齊答案與解析）
   difficulty: 2
+  explanation: $y = \log_{\frac{1}{a}}(-x) = -\log_a(-x)$，相當於將 $y=\log_a x$ 的 $x, y$ 同時變號，故對稱於原點；因 $x<0$，圖形分布於第二、三象限。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 對稱於原點，分布於第二、三象限
 - id: doc_110_台中_興大附中_數學_數B_g11s1e2_s1_5
   section: 1
   number: 5

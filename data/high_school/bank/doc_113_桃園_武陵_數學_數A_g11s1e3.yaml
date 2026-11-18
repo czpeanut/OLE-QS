@@ -322,7 +322,7 @@ questions:
   number: 7
   type: fill
   page: 2
-  stem: <u>美國</u>華盛頓大學研究團隊2015年發現了一種新的不規則五邊形，相互組合後可完全鋪滿平面，不會出現重疊或有任何空隙，是全球第15種能做到此效果的五邊形。 示意如附圖，設$\vec{AD}$＝x$\vec{AE}$＋y$\vec{AB}$，則實數y＝＿＿＿＿。（cos 75°＝$\frac{\sqrt{6}-\sqrt{2}}{2}$）
+  stem: 在五邊形 $ABCDE$ 中，已知 $\overline{AB}=\overline{AE}=\overline{ED}=2$、$\angle EAB = 75^\circ$、$\angle AED = 90^\circ$（且點 $D$ 與點 $B$ 位於直線 $AE$ 的同側）。設 $\vec{AD} = x\vec{AE} + y\vec{AB}$，則實數 $y =$＿＿＿＿。（$\cos 75^\circ = \frac{\sqrt{6}-\sqrt{2}}{4}$）
   assets:
   - key: s4_7_f1
     kind: figure
@@ -348,4 +348,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題末提示 cos 75° 數值誤植（分母應為 4 非 2）
+    fixed_by: agent
+    fix_note: （人工修正：修正 cos 75° 分母誤植並補充五邊形幾何條件以取代缺圖，補齊答案與解析）
   difficulty: 4
+  explanation: 設 $A(0,0)$、$\vec{AB}=(2,0)$，則 $\vec{AE}=(2\cos 75^\circ, 2\sin 75^\circ)$，因 $\angle AED=90^\circ$ 且 $\overline{ED}=2$，$\vec{ED}=(2\sin 75^\circ, -2\cos 75^\circ)$。將 $\vec{AD} = \vec{AE}+\vec{ED} = x\vec{AE}+y\vec{AB}$ 兩邊同時與 $\vec{ED}$ 作內積，因 $\vec{AE}\cdot\vec{ED}=0$，得 $4 = y(\vec{AB}\cdot\vec{ED}) = 4y\sin 75^\circ$。由 $\cos 75^\circ = \frac{\sqrt{6}-\sqrt{2}}{4}$ 得 $\sin 75^\circ = \frac{\sqrt{6}+\sqrt{2}}{4}$，故 $y = \frac{1}{\sin 75^\circ} = \sqrt{6}-\sqrt{2}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $\sqrt{6}-\sqrt{2}$

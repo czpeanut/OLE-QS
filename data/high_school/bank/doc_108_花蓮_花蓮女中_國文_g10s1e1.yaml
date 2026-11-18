@@ -334,6 +334,8 @@ questions:
     content: 「聖人無常師」謂聖人的教育方法變化無常，因材施教，故能啟迪後進，因此大家都向聖人學習
   - label: C
     content: 「郯子之徒，其賢不及孔子」謂郯子的學生比不上孔子優秀，這就是為何孔子能夠被稱為聖人的原因
+  - label: D
+    content: 「道之所存，師之所存也」指只要對方懂得道理，不論年齡大小與身分貴賤，都可以向他學習
   tags:
     unit:
       code: ZH-1-5-1
@@ -345,6 +347,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(D)疑漏列
+    fixed_by: agent
+    fix_note: （人工修正：補齊漏列之選項D與答案解析）
+  explanation: A 錯誤，意指以地位卑微者為師就覺得羞恥，以官位高者為師又近於諂媚；B 錯誤，意指聖人沒有固定的老師（到處向人學習）；C 錯誤，「之徒」指「這一類人」，即郯子等四位老師的才德比不上孔子，孔子仍虛心請教。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_108_花蓮_花蓮女中_國文_g10s1e1_s1_14
   section: 1
   number: 14
@@ -713,16 +722,26 @@ questions:
   number: 27
   type: single
   page: 3
-  stem: 下列為歸有光的履歷表，請就下列敘述，選出正確的選項：
+  stem: '下列為歸有光的履歷表：
+
+    【姓名】歸有光，字熙甫，號震川，人稱震川先生。
+
+    【生卒】明武宗正德元年～明穆宗隆慶五年（1506－1571）。
+
+    【經歷】八歲喪母，九歲能屬文，二十歲應試不第，三十五歲中舉人，此後八次會試落第，期間移居嘉定安亭江上讀書講學二十餘年，六十歲方中進士，官至南京太僕寺丞。
+
+    【文學成就】明代「唐宋派」古文大家，與王慎中、唐順之齊名；主張「文必秦漢」的復古派（前後七子）盛行時，他力主師法唐宋古文，散文平淡自然、深情動人。
+
+    請就下列敘述，選出正確的選項：'
   options:
   - label: A
-    content: (A)
+    content: 歸有光年少即中進士，仕途平步青雲，晚年退隱安亭講學
   - label: B
-    content: (B)
+    content: 歸有光與韓愈、柳宗元同列「唐宋古文八大家」
   - label: C
-    content: (C)
+    content: 歸有光為明代「唐宋派」代表作家，晚年六十歲方考中進士，散文以樸實真摯著稱
   - label: D
-    content: (D)
+    content: 歸有光力倡「文必秦漢，詩必盛唐」的復古主張
   assets:
   - key: s1_27_f1
     kind: figure
@@ -745,6 +764,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹與選項附圖（履歷表）缺漏，無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補回歸有光履歷表與四選項文字內容，移除缺圖並補齊答案與解析）
+  explanation: 歸有光八次會試落第，六十歲才中進士（A 錯誤）；他是明代人，非唐宋八大家（B 錯誤）；他反對前後七子的復古主張，力主師法唐宋散文，為明代唐宋派大家（C 正確、D 錯誤）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_108_花蓮_花蓮女中_國文_g10s1e1_s1_28
   section: 1
   number: 28

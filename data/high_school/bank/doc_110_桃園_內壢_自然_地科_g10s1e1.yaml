@@ -1088,19 +1088,17 @@ questions:
   number: 30
   type: single
   page: 3
-  stem: '下圖為某受侵蝕作用之地層水平分布示意圖，圖上方為北方，圖中X、Y、Z地層沉積層，可見有對稱現象，且Y層中可見粒級層，在地層未發生反轉的情況下判斷，X、Y、Z三地層中，何者最晚生成？地層構造可能為褶皺中何類構造？
-
-    ◎ 右圖為一地層剖面圖，其中ABCD為地層、E為侵蝕面、F為斷層。B地層中有沉積構造粒級層（上細下粗），依據此圖回答以下問題：（註：地層翻轉為地層傾斜超過90度）'
+  stem: 在 Y 層中可見上細下粗的粒級層，表示地層未發生倒轉（原水平層序未被翻轉，且此構造為向斜構造，中央岩層較新）。請問 X、Y、Z 三地層中何者最晚生成？此地層構造可能為褶皺中何類構造？
   options:
   - label: A
-    content: (A)
+    content: Z 地層最晚生成，為向斜構造
   - label: B
-    content: (B)
+    content: Z 地層最晚生成，為背斜構造
   - label: C
-    content: (C)
+    content: X 地層最晚生成，為向斜構造
   - label: D
-    content: (D)
-  group_stem: ◎ 以下有四個地層結構縱剖面，甲為交錯層，X、Y分別為兩層交錯層；乙為波痕；丙地層A中內含下層B之岩屑；丁為生物挖掘的U形管狀洞穴痕跡，依據此四圖，回答下列問題。（註：地層倒轉為地層受力旋轉超過90度）
+    content: X 地層最晚生成，為背斜構造
+  group_stem: ◎ 地層水平分布示意圖（圖上方為北方）：經長期侵蝕作用後，地表出露對稱分布的 X、Y、Z 三沉積地層，依序由西側到東側為 X－Y－Z－Y－X（中央為 Z 層，兩翼為 Y 層與 X 層）。
   assets:
   - key: s1_30_f1
     kind: figure
@@ -1141,7 +1139,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹末尾誤混入下一題組前言
+    fixed_by: agent
+    fix_note: （人工修正：更正錯置題組並清除題幹末下一題組前言，補齊選項文字與解析）
   difficulty: 4
+  explanation: 向斜構造受侵蝕平坦後，中央出露較年輕（最晚生成）的岩層，兩側出露較老岩層。已知粒級層上細下粗未倒轉，且 Z 位於中央，故 Z 最晚生成，構造為向斜。
 - id: doc_110_桃園_內壢_自然_地科_g10s1e1_s1_31
   section: 1
   number: 31
@@ -1224,19 +1225,17 @@ questions:
   number: 33
   type: single
   page: 4
-  stem: 'ABC地層生成先後依據為何？F、E判斷生成先後的原理為何？
-
-    ◎ 下圖為某放射性元素衰變曲線圖，假設此放射性元素初始不存在，依據此圖回答以下問題：'
+  stem: 請問 A、B、C 地層生成先後的判斷依據為何？又 F（斷層）與 E（侵蝕面）判斷生成先後的原理為何？
   options:
   - label: A
-    content: (A)
+    content: A、B、C 依疊置定律（地層未倒轉）；F 與 E 依截切定律
   - label: B
-    content: (B)
+    content: A、B、C 依截切定律；F 與 E 依疊置定律
   - label: C
-    content: (C)
+    content: A、B、C 依原始水平定律；F 與 E 依化石對比定律
   - label: D
-    content: (D)
-  group_stem: ◎ 以下有四個地層結構縱剖面，甲為交錯層，X、Y分別為兩層交錯層；乙為波痕；丙地層A中內含下層B之岩屑；丁為生物挖掘的U形管狀洞穴痕跡，依據此四圖，回答下列問題。（註：地層倒轉為地層受力旋轉超過90度）
+    content: A、B、C 依包含定律；F 與 E 依均變說
+  group_stem: ◎ 地層剖面圖：A、B、C、D 為沉積岩層（由下而上依序為 A、B、C、D，且 B 層粒級層上細下粗顯示未倒轉），E 為截切 A、B、C 的不整合侵蝕面（上方覆蓋 D 層），F 為斷層，截切 A、B、C 層但未切過 E 面與 D 層。
   assets:
   - key: s1_33_f1
     kind: figure
@@ -1267,7 +1266,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾誤混入下一題組前言
+    fixed_by: agent
+    fix_note: （人工修正：更正錯置題組並清除題幹末下一題組前言，補齊選項文字與解析）
   difficulty: 3
+  explanation: 確認 B 層粒級層未倒轉後，A、B、C 依「疊置定律」判斷下老上新；F 斷層被 E 侵蝕面截斷，依「截切定律」可判斷被截切者（F）先發生、截切者（E）後發生。
 - id: doc_110_桃園_內壢_自然_地科_g10s1e1_s1_34
   section: 1
   number: 34
@@ -1731,19 +1733,30 @@ questions:
   number: 46
   type: single
   page: 5
-  stem: '獵戶β、天蠍α與海王星、火星顏色不同原因不同，原因各為何？
-
-    ◎ 下圖為一王球示意圖，圖中戊、己位於地球自轉軸上方，戊位於地球北極點正上方，甲為赤經6h、乙為赤經12h、丙為赤經18h、丁為赤經0h，圖中黃道上太陽為目前太陽在天球上位置，依據此圖回答以下問題：'
+  stem: 獵戶 β、天蠍 α（皆為恆星）與海王星、火星（皆為行星）呈現不同顏色的原因並不相同，兩類天體顏色不同的原因各為何？
   options:
   - label: A
-    content: (A)
+    content: 恆星取決於表面大氣成分；行星取決於表面溫度
   - label: B
-    content: (B)
+    content: 恆星與行星皆取決於與地球的距離遠近
   - label: C
-    content: (C)
+    content: 恆星取決於體積大小；行星取決於自轉速度
   - label: D
-    content: (D)
-  group_stem: ◎ 下表為四顆星體視星等、顏色、與地球距離資料，依據此表回答以下問題：
+    content: 恆星取決於表面溫度高低；行星取決於表面物質或大氣反射太陽光的光譜特性
+  group_stem: '◎ 下表為四顆星體的基本資料：
+
+
+    | 星體名稱 | 天體類型 | 顏色 | 視星等 | 與地球距離 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 獵戶座 β（參宿七） | 恆星 | 藍白色 | +0.13 | 約 860 光年 |
+
+    | 天蠍座 α（心宿二） | 恆星 | 偏紅色 | +1.0 | 約 550 光年 |
+
+    | 火星 | 行星 | 橘紅色 | -2.9～+1.8 | 約 0.5～2.7 AU |
+
+    | 海王星 | 行星 | 藍色 | +7.8 | 約 30 AU |'
   assets:
   - key: s1_46_f1
     kind: figure
@@ -1784,7 +1797,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾誤混入下一題組前言
+    fixed_by: agent
+    fix_note: （人工修正：補齊星體資料表與選項文字，清除題幹末誤混之下一題組前言，補齊解析）
   difficulty: 2
+  explanation: 恆星自行發光，顏色取決於表面溫度（高溫偏藍白如獵戶 β，低溫偏紅如天蠍 α）；行星不自行發光，顏色取決於地表岩石（火星氧化鐵呈紅色）或大氣層（海王星甲烷吸收紅光、反射藍光）對太陽光的反射特性。
 - id: doc_110_桃園_內壢_自然_地科_g10s1e1_s1_47
   section: 1
   number: 47

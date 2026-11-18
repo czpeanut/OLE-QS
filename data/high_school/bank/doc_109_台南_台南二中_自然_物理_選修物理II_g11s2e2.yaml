@@ -571,7 +571,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 如右圖，$m_{1}$＝4kg、$m_{2}$＝6kg，取重力加速度g＝10 m／$s^{2}$，不計摩擦力且忽略滑輪與繩子質量，則兩物體的質心的加速度量值為多少rn／$s^{2}$？
+  stem: 一輕繩跨過固定於天花板的定滑輪，兩端分別鉛直懸掛 $m_{1}＝4$ kg 與 $m_{2}＝6$ kg 的兩物體，取重力加速度 $g＝10$ m／$s^{2}$，不計摩擦力且忽略滑輪與繩子質量，則兩物體的質心加速度量值為多少 m／$s^{2}$？
   options:
   - label: A
     content: '0.25'
@@ -603,9 +603,9 @@ questions:
       - 675.0
       - 681.6
   answer:
-  - D
-  answer_status: verified
-  answer_source: answer_key
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-1-3
@@ -620,7 +620,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「rn／s^{2}」疑為「m／s^{2}」之OCR誤植
+    fixed_by: agent
+    fix_note: （人工修正：補充定滑輪懸掛條件、修正單位OCR誤植並更正答案為B與解析）
   difficulty: 3
+  explanation: 兩物體加速度量值為 $a＝\frac{m_{2}-m_{1}}{m_{1}+m_{2}}g＝\frac{6-4}{6+4}\times 10＝2.0$ m／$s^{2}$（$m_{1}$ 向上、$m_{2}$ 向下）。系統質心加速度量值 $a_{cm}＝\frac{|m_{2}a - m_{1}a|}{m_{1}+m_{2}}＝\frac{6\times 2 - 4\times 2}{10}＝0.4$ m／$s^{2}$。故選(B)。
+  review_note: 原答案卷答案 ['D']，執行 agent 修正為 ['B']
 - id: doc_109_台南_台南二中_自然_物理_選修物理II_g11s2e2_s1_18
   section: 1
   number: 18

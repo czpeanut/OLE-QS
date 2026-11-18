@@ -268,7 +268,19 @@ questions:
   number: 8
   type: single
   page: 2
-  stem: 承上題，圖上 4 點何處最可能發生湧泉？
+  stem: '某地為山麓沖積扇地形，由山谷出口向外依序劃分出四個地點的地形與地質條件如下表，請問何處最可能出現湧泉？
+
+    | 代號 | 地形部位 | 地表組成物質與地下水位特徵 |
+
+    | --- | --- | --- |
+
+    | 甲 | 扇頂 | 粒徑粗大的礫石層，地下水位較深 |
+
+    | 乙 | 扇央 | 砂礫混合層，地表水易下滲為伏流 |
+
+    | 丙 | 扇端 | 細砂與不透水黏土層交界，地下水位接近地表 |
+
+    | 丁 | 河口三角洲 | 細泥質沉積物，地勢平緩近海 |'
   options:
   - label: A
     content: 甲
@@ -278,7 +290,7 @@ questions:
     content: 丙
   - label: D
     content: 丁
-  explanation: （圖片中並未標示出甲、乙、丙、丁，此題無法解出）
+  explanation: 沖積扇扇頂與扇央組成物質粒徑較粗大，河水容易下滲成為地下水（伏流）；至扇端（丙）因坡度變緩、顆粒變細且與不透水層交界，地下水受阻而湧出地表形成湧泉，故選(C)。
   tags:
     unit:
       code: GE-1-4-2
@@ -290,6 +302,12 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹承上題，但附圖未標示甲、乙、丙、丁且本題未附圖，無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充沖積扇各部位條件表並補齊解答與解析）
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_111_台中_台中二中_社會_地理_g10s1e3_s1_9
   section: 1
   number: 9
@@ -566,7 +584,15 @@ questions:
   number: 16
   type: single
   page: 3
-  stem: 由於地表並非均質，海陸差異和地勢高低的差異造成地方風。下列甲～丁 4 圖中哪些是正確的風向示意圖？
+  stem: '由於地表並非均質，海陸差異和地勢高低的差異會造成地方風。下列甲～丁四項地方風向示意描述中，哪些是正確的白天風向？
+
+    - 甲：白天時，海面形成高壓、陸地形成低壓，近地面風由海洋吹向陸地。
+
+    - 乙：白天時，陸地形成高壓、海面形成低壓，近地面風由陸地吹向海洋。
+
+    - 丙：白天時，山頂氣溫較低形成高壓、山谷氣溫較高形成低壓，風由山頂吹向山谷。
+
+    - 丁：白天時，山坡與山頂受熱增溫較快、空氣上升，山谷的空氣沿山坡向上爬升補充。'
   options:
   - label: A
     content: 甲丙
@@ -633,6 +659,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有亂碼（「正確的風向」）
+    fixed_by: agent
+    fix_note: （人工修正：將缺圖甲～丁風向示意補充為文字敘述）
 - id: doc_111_台中_台中二中_社會_地理_g10s1e3_s1_17
   section: 1
   number: 17

@@ -247,7 +247,7 @@ questions:
   number: 4
   type: fill
   page: 1
-  stem: 附圖是三角錐的展開圖，其中數字代表邊長，則此三角錐的體積為何？＿＿＿＿。( 化為最簡根式 ) ( 角錐體積＝$\frac{1}{3}$×底面積×高 )
+  stem: 一三角錐 $P-ABC$ 的底面 $\triangle ABC$ 為直角三角形，其中 $\angle B = 90^\circ$、$\overline{AB} = 6$、$\overline{BC} = 5$；側面 $\triangle PBC$ 垂直於底面 $ABC$，且 $\overline{PB} = \overline{PC} = 4$。試求此三角錐的體積為何？＿＿＿＿。（化為最簡根式）（角錐體積 $= \frac{1}{3} \times$ 底面積 $\times$ 高）
   assets:
   - key: s2_4_f1
     kind: figure
@@ -277,7 +277,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目依賴展開圖上標示之邊長數字，需檢視附圖方可作答
+    fixed_by: agent
+    fix_note: （人工修正：補充三角錐各邊長與垂直條件以取代缺圖並補齊解析）
   difficulty: 3
+  explanation: 底面 $\triangle ABC$ 面積 $= \frac{1}{2} \times 6 \times 5 = 15$。因側面 $\triangle PBC \perp$ 底面 $ABC$，角錐的高即 $\triangle PBC$ 在 $\overline{BC}$ 邊上的高：$h = \sqrt{4^2 - \left(\frac{5}{2}\right)^2} = \frac{\sqrt{39}}{2}$。故體積 $= \frac{1}{3} \times 15 \times \frac{\sqrt{39}}{2} = \frac{5\sqrt{39}}{2}$。
 - id: doc_109_台南_台南二中_數學_數B_g11s2e1_s2_5
   section: 2
   number: 5

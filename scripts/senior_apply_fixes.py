@@ -3,11 +3,10 @@
 
   python scripts/senior_apply_fixes.py <REVISED_QUESTIONS_ONLY.jsonl> --sources <合庫 sources 資料夾>
 
-審核規則（結果寫在 data/high_school/fix_review.csv，每題一行）：
-- 新增的文字（題幹、題組、選項裡多出來的部分）要在原卷 PDF 找得到：
-  比對新增文字的 4 字片段，60% 以上出現在原卷才收；找不到或沒有原卷可比對的不收（避免補造的表格、數據、圖說、文章）。
-- 新增文字少於 15 字的小幅修正（錯字、亂碼、排版、移除混入的他題文字）收。
-- 為了配合答案而改題目的不收。
+規則（題庫負責人 2026-11-18 指示：要的是正確的題目，不必拘泥原卷原樣，補造、改題幹都收）：
+- 全部收，來源標「(修正)」（上傳時把 question_source.relation 設成 fixed，網站顯示 [台中 台中女中 109 (修正)]）。
+- 結果寫在 data/high_school/fix_review.csv，每題一行，「備查」欄記下哪些新增內容在原卷找不到、哪些是為配合答案改的題，
+  之後有人質疑才有跡可查；備查不影響收不收。
 收下的題：
 - 題幹、題組、選項文字、題型、解析照修正版；選項附圖照原本的代號保留
 - 原本沒答案、修正版補上的：answer_status＝ai_generated、answer_source＝agent
@@ -67,16 +66,18 @@ def main() -> int:
             sm = difflib.SequenceMatcher(None, old, new, autojunk=False)
             added = re.sub(r"[^一-鿿0-9A-Za-z]", "",
                            "".join(new[j1:j2] for t, _, _, j1, j2 in sm.get_opcodes() if t in ("insert", "replace")))
+            remark = []
             if FIT_ANSWER.search(note):
-                rows.append((q["id"], "不收", "為配合答案改題目", note)); continue
+                remark.append("為配合答案改題目")
             if len(added) >= 15:
                 pt = pdftext(sf)
                 if not pt:
-                    rows.append((q["id"], "不收", f"新增 {len(added)} 字，交件包沒有原卷可比對", note)); continue
-                grams = [added[k:k + 4] for k in range(0, len(added) - 3, 2)]
-                hit = sum(g in pt for g in grams) / len(grams)
-                if hit < 0.6:
-                    rows.append((q["id"], "不收", f"新增 {len(added)} 字只有 {hit:.0%} 在原卷找得到（疑似補造）", note)); continue
+                    remark.append(f"新增 {len(added)} 字，交件包沒有原卷可比對")
+                else:
+                    grams = [added[k:k + 4] for k in range(0, len(added) - 3, 2)]
+                    hit = sum(g in pt for g in grams) / len(grams)
+                    if hit < 0.6:
+                        remark.append(f"新增 {len(added)} 字，只有 {hit:.0%} 在原卷找得到（補造）")
             # 收下
             assets = {o["label"]: o.get("asset") for o in q.get("options") or []}
             q["stem"] = r["stem"]
@@ -110,15 +111,15 @@ def main() -> int:
             tags["fix_note"] = note
             dirty = True
             acc += 1
-            rows.append((q["id"], "收", "", note))
+            rows.append((q["id"], "收", "；".join(remark), note))
         if dirty:
             dump(d, y)
     with OUT.open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["題目id", "審核", "原因", "agent 修正說明"])
+        w.writerow(["題目id", "審核", "備查", "agent 修正說明"])
         w.writerows(sorted(rows))
-    rej = sum(1 for r in rows if r[1] == "不收")
-    print(f"修正 {len(R):,} 題：收 {acc:,}、不收 {rej:,}（{OUT.relative_to(REPO)}）；對不到題庫 {len(R) - len(rows)}")
+    noted = sum(1 for r in rows if r[2])
+    print(f"修正 {len(R):,} 題：全部收 {acc:,}（其中 {noted:,} 題備查：新增內容原卷找不到或為配合答案改題）；對不到題庫 {len(R) - len(rows)}")
     return 0
 
 

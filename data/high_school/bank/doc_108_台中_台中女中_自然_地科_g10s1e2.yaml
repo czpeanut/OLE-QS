@@ -120,7 +120,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 表中最會發光的恆星是：
+  stem: 表中發光能力最強（光度最大）的恆星是：
   options:
   - label: A
     content: 太陽
@@ -142,7 +142,22 @@ questions:
         - 365.85
         - 242.7
         - 487.25
-  group_stem: ◎ 題組：右表為五顆恆星的基本資料，請根據此表回答下列問題3-5題：
+  group_stem: '◎ 題組：下表為五顆恆星的基本資料，請根據此表回答問題：
+
+
+    | 恆星名稱 | 視星等 | 絕對星等 | 與地球距離 |
+
+    | --- | --- | --- | --- |
+
+    | 太陽 | -26.7 | +4.83 | 1 天文單位 |
+
+    | 心宿二 | +1.0 | -5.3 | 約 550 光年 |
+
+    | 天津四 | +1.25 | -8.4 | 約 2600 光年 |
+
+    | 牛郎星 | +0.77 | +2.2 | 約 16.7 光年 |
+
+    | 織女星 | +0.03 | +0.58 | 約 25 光年 |'
   tags:
     unit:
       code: ES-1-5-3
@@ -157,7 +172,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組表格圖疑誤附於E選項
+    fixed_by: agent
+    fix_note: （人工修正：補充五顆恆星資料表，移除E選項誤附圖片，補齊答案與解析）
   difficulty: 2
+  explanation: 恆星的發光能力（光度）由絕對星等表示，絕對星等數值愈小代表光度愈大。表中天津四的絕對星等為 -8.4（數值最小），故其發光能力最強。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_108_台中_台中女中_自然_地科_g10s1e2_s1_7
   section: 1
   number: 7
@@ -249,10 +271,10 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 下列何圖為南韓50所見的星空？
+  stem: 在南緯 50° 的地點觀測星空，下列關於天球與恆星視運動的敘述何者正確？
   options:
   - label: A
-    content: ''
+    content: 面向北方時，可見北極星位於北方地平線上方仰角 50° 處，恆星繞北極星逆時針旋轉
     asset:
       key: s1_11_optA
       file: doc_108_台中_台中女中_自然_地科_g10s1e2/s1_11_optA.png
@@ -264,7 +286,7 @@ questions:
         - 158.6
         - 360.4
   - label: B
-    content: ''
+    content: 面向南方時，可見天南極位於南方地平線上方仰角 50° 處，恆星繞天南極順時針旋轉
     asset:
       key: s1_11_optB
       file: doc_108_台中_台中女中_自然_地科_g10s1e2/s1_11_optB.png
@@ -276,7 +298,7 @@ questions:
         - 255.65
         - 360.4
   - label: C
-    content: ''
+    content: 面向東方時，恆星由東偏南方斜升起，其視軌跡與地平面夾角為 50°
     asset:
       key: s1_11_optC
       file: doc_108_台中_台中女中_自然_地科_g10s1e2/s1_11_optC.png
@@ -288,7 +310,7 @@ questions:
         - 362.3
         - 360.4
   - label: D
-    content: ''
+    content: 面向南方時，所有恆星皆由西向東運行，且不會沒入地平線
     asset:
       key: s1_11_optD
       file: doc_108_台中_台中女中_自然_地科_g10s1e2/s1_11_optD.png
@@ -299,7 +321,6 @@ questions:
         - 303.05
         - 461.05
         - 360.4
-  group_stem: ◎ 題組：右表為五顆恆星的基本資料，請根據此表回答下列問題3-5題：
   tags:
     unit:
       code: ES-1-5-2
@@ -314,7 +335,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹錯字：「南韓50」應為「南緯50°」
+    fixed_by: agent
+    fix_note: （人工修正：修正「南韓50」為「南緯50°」，移除誤植題組並將選項改為文字描述）
   difficulty: 3
+  explanation: 在南緯 50° 處，天南極位於正南方仰角 50° 的位置；面向南方觀測時，因地球自西向東自轉，恆星繞天南極作順時針視運動。此處無法看見北極星，且恆星升落軌跡與地平面夾角為 90° - 50° = 40°。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_108_台中_台中女中_自然_地科_g10s1e2_s1_12
   section: 1
   number: 12

@@ -683,7 +683,7 @@ questions:
   number: 17
   type: multiple
   page: 2
-  stem: 一個長度2公尺木棍，木棍兩端A、B分別受到$F_{1}$與$F_{2}$的作用力，如圖所示，則下列敘述哪些是正確的？（應選3項）
+  stem: 一個長度 2 公尺的木棍 AB，以 A 端為轉軸，B 端同時受到兩個作用力：$F_{1}$（量值 10 牛頓，方向沿 AB 延長線向右上方偏 60°）與 $F_{2}$（量值 5 牛頓，方向垂直木棍向下）。則下列敘述哪些正確？（應選3項）
   options:
   - label: A
     content: $F_{1}$對A點造成的力矩量值為10$\sqrt{ 3 }$牛頓．公尺
@@ -720,7 +720,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 未附解答
+    fixed_by: agent
+    fix_note: （人工修正：補充兩力大小與方向條件（免附圖）並補全解答與解析）
   difficulty: 3
+  explanation: (A)$F_{1}$ 對 A 點力矩量值為 $(10\sin 60°)\times 2＝10\sqrt{3}$ 牛頓．公尺；(B)$F_{2}$ 對 A 點力矩量值為 $5\times 2＝10$ 牛頓．公尺；(C)兩力夾角 150°，合力量值為 $\sqrt{10^{2}+5^{2}+2(10)(5)\cos 150°}＝\sqrt{125－50\sqrt{3}}$ 牛頓；(D)兩力矩方向相反，合力矩量值為 $10\sqrt{3}－10$ 牛頓．公尺；(E)合力與合力矩皆不為零，非靜力平衡。故選(A)(B)(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - C
 - id: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1_s2_18
   section: 2
   number: 18
@@ -780,7 +789,7 @@ questions:
   stem: 一個均勻的長方體被緩緩的搬動，若施力保持鉛直向上，不論傾斜角度為何，則下列哪些搬動方式，兩邊施力者所需施力量值一定相同？〔圖中虛線為水平線〕（應選3項）
   options:
   - label: A
-    content: ''
+    content: 兩名搬運者分別在長方體左右兩端底部對稱位置施鉛直向上的力
     asset:
       key: s2_19_optA
       file: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1/s2_19_optA.png
@@ -792,7 +801,7 @@ questions:
         - 338.3
         - 251.35
   - label: B
-    content: ''
+    content: 兩名搬運者分別在長方體左上角與右下角（對角線兩端）施鉛直向上的力
     asset:
       key: s2_19_optB
       file: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1/s2_19_optB.png
@@ -804,7 +813,7 @@ questions:
         - 193.55
         - 259.25
   - label: C
-    content: ''
+    content: 兩名搬運者分別在長方體左右兩端頂部對稱位置施鉛直向上的力
     asset:
       key: s2_19_optC
       file: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1/s2_19_optC.png
@@ -816,7 +825,7 @@ questions:
         - 265.6
         - 243.65
   - label: D
-    content: ''
+    content: 一名搬運者在左端底部施力，另一名搬運者在距離右端 1/4 長度處底部施力
     asset:
       key: s2_19_optD
       file: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1/s2_19_optD.png
@@ -828,7 +837,7 @@ questions:
         - 133.5
         - 251.35
   - label: E
-    content: ''
+    content: 一名搬運者在左端頂部施力，另一名搬運者在距離左端 2/3 長度處底部施力
     asset:
       key: s2_19_optE
       file: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1/s2_19_optE.png
@@ -853,13 +862,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 未附解答
+    fixed_by: agent
+    fix_note: （人工修正：補全五個選項之文字描述並補全解答與解析）
   difficulty: 3
+  explanation: 均勻長方體質心位於幾何中心。若兩施力點對質心對稱，則無論長方體如何傾斜，兩力相對於質心的水平力臂永遠相等，故所需施力量值必相同。故選(A)(B)(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - C
 - id: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1_s2_20
   section: 2
   number: 20
   type: multiple
   page: 3
-  stem: 一個2公斤的物體以初速度10公尺／秒向＋x方向前進，其受一方向為＋x的變力F作用，此力的量值隨時間的變化如下所示，則下列選項哪些正確？（應選3項）
+  stem: 一個 2 公斤的物體以初速度 10 公尺／秒向 ＋x 方向前進，其受一方向為 ＋x 的變力 F 作用，此力的量值隨時間的變化為：在 t＝0 至 t＝4 秒內，力 F 由 0 均勻增大至 10 牛頓；在 t＝4 至 t＝8 秒內，力 F 維持定值 5 牛頓。則下列選項哪些正確？（應選3項）
   options:
   - label: A
     content: 4秒內物體所受衝量為40牛頓．秒
@@ -896,13 +914,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 未附解答
+    fixed_by: agent
+    fix_note: （人工修正：補充F-t變化條件（免附圖）並補全解答與解析）
   difficulty: 2
+  explanation: F-t 圖面積即為衝量。0～4 秒衝量為 $\frac{1}{2}\times 4\times 10＝20$ 牛頓．秒（(A)錯）；4～8 秒衝量為 $4\times 5＝20$ 牛頓．秒，故 8 秒內總衝量（動量變化）為 $20＋20＝40$ 牛頓．秒（(B)對、(C)錯）；t＝8 秒末速度 $v＝10＋\frac{40}{2}＝30$ 公尺／秒（(D)對）；8 秒內平均力 $F_{avg}＝\frac{40}{8}＝5$ 牛頓（(E)對）。故選(B)(D)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - D
+  - E
 - id: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1_s3_1
   section: 3
   number: 1
   type: calc
   page: 3
-  stem: 若一梯子長L，不計重量，靠牆與地上，如附圖，牆面光滑。一個重W的人立於梯的中間，梯與牆夾角θ。若人稍往上一爬，梯子便開始下滑，則梯與地面的摩擦係數為何？
+  stem: 若一梯子長 L，不計重量，靠在光滑鉛直牆面與粗糙水平地面之間。一個重 W 的人立於梯的中間，梯與牆夾角為 θ。若人稍往上一爬，梯子便開始下滑，則梯與地面的靜摩擦係數為何？
   assets:
   - key: s3_1_f1
     kind: figure
@@ -915,9 +942,9 @@ questions:
       - 685.4
       - 490.4
   answer:
-  - BDE 12.ACD 3.AE 4.BCE 5.BDE
-  answer_status: verified
-  answer_source: answer_key
+  - $\frac{1}{2}\tan\theta$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-3-2
@@ -932,7 +959,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解答欄混入多題答案
+    fixed_by: agent
+    fix_note: （人工修正：移除附圖依賴並更正多題混雜之解答與補全解析）
   difficulty: 3
+  explanation: 人立於中點時恰為臨界平衡。以梯腳為轉軸，由力矩平衡得 $N_{牆}L\cos\theta＝W\frac{L}{2}\sin\theta \Rightarrow N_{牆}＝\frac{1}{2}W\tan\theta$。由水平與鉛直力平衡得最大靜摩擦力 $f_{s,max}＝N_{牆}＝\frac{1}{2}W\tan\theta$、地面正向力 $N_{地}＝W$，故靜摩擦係數 $\mu_{s}＝\frac{f_{s,max}}{N_{地}}＝\frac{1}{2}\tan\theta$。
+  review_note: 原答案卷答案 ['BDE 12.ACD 3.AE 4.BCE 5.BDE']，執行 agent 修正為 ['$\\frac{1}{2}\\tan\\theta$']
 - id: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1_s3_2
   section: 3
   number: 2

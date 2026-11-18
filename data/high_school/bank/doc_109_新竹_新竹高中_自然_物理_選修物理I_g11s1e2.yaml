@@ -176,10 +176,10 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 如圖所示，一重量20 kgw且長度5 m的細桿以一旋鈕固定於垂直牆面上，距固定牆面的點右端4 m處以一光滑的支點A撐住，並於左端施力30 kgw的外力，方向如圖所示。若此系統保持靜力平衡，則下列敘述何者正確？
+  stem: 一重量 20 kgw 且長度 5 m 的均勻細桿水平放置，右端以一旋鈕固定於垂直牆面上，距固定牆面點（右端）4 m 處以一光滑的支點 A 由下方撐住，並於左端施以鉛直向下 30 kgw 的外力。若此系統保持靜力平衡，則下列敘述何者正確？
   options:
   - label: A
-    content: 外力對牆面固定點之力矩量值為l50 kgw．m
+    content: 外力對牆面固定點之力矩量值為 150 kgw．m
   - label: B
     content: A點對木桿之作用力量值為44 kgw
   - label: C
@@ -187,7 +187,7 @@ questions:
   - label: D
     content: 旋鈕施予細桿之作用力量值為30 kgw
   - label: E
-    content: 旋鈕對細桿之作用力相對於細桿左端點的力矩量值為l70 kgw．m
+    content: 旋鈕對細桿之作用力相對於細桿左端點的力矩量值為 170 kgw．m
   assets:
   - key: s1_6_f1
     kind: figure
@@ -217,7 +217,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(A)「l50」、(E)「l70」疑為「150」、「170」之OCR誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A、E數值OCR誤植、補充細桿配置條件並補全解析）
   difficulty: 3
+  explanation: (A)外力 30 kgw 距牆面固定點（右端）5 m，力矩量值為 $30\times 5＝150$ kgw．m。由對右端點力矩平衡得 $N_{A}\times 4＝20\times 2.5＋30\times 5＝200 \Rightarrow N_{A}＝50$ kgw（(B)錯）；旋鈕鉛直向下作用力為 $50－20－30＝0$（(C)(D)(E)錯）。故選(A)。
 - id: doc_109_新竹_新竹高中_自然_物理_選修物理I_g11s1e2_s1_7
   section: 1
   number: 7
@@ -396,12 +399,12 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 一質量m的質點於距水平高度H處以特定速度水平拋射，並於第一次落地後於地面進行完整的斜向拋射運動。已知水平地面光滑，且第一次落地點與拋射點之水平距離為$\frac{5}{ 4 }$H，請問下列敘述何者正確？（重力加速度量值g）
+  stem: 一質量 m 的質點於距水平地面高度 H 處以特定速度水平拋射，並於第一次落地後與地面發生彈性碰撞，隨即進行完整的斜向拋射運動。已知水平地面光滑，且第一次落地點與拋射點之水平距離為 $\frac{5}{4}H$，請問下列敘述何者正確？（重力加速度量值 g）
   options:
   - label: A
-    content: 質點拋射時的初速度為$\sqrt{ \frac{25}{ 32 }gH }$
+    content: 質點拋射時的初速度為 $\sqrt{\frac{25}{16}gH}$
   - label: B
-    content: 因地面光滑、故質點第一次落地前後速度量傳不變
+    content: 因地面光滑且為彈性碰撞，故質點第一次落地前後速度量值不變
   - label: C
     content: 質點自拋射後至第二次落地的時間為2$\sqrt{ \frac{2H}{ g } }$
   - label: D
@@ -437,7 +440,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項(B)「速度量傳」疑為「速度量值」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B錯字、區分選項A數值確保單選唯一並補全解析）
   difficulty: 4
+  explanation: 水平拋射落地時間 $t＝\sqrt{\frac{2H}{g}}$，初速 $v_{0}＝\frac{5H/4}{t}＝\sqrt{\frac{25}{32}gH}$（(A)錯）；因地面光滑且為彈性碰撞，水平速度不變、鉛直速度僅反向而量值不變，故第一次落地前後速度量值不變（(B)對）。故選(B)。
 - id: doc_109_新竹_新竹高中_自然_物理_選修物理I_g11s1e2_s1_12
   section: 1
   number: 12

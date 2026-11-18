@@ -28,7 +28,15 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 1大氣壓下，取均為5克的甲、乙、丙三種固態純物質，以相同的穩定熱源分別加熱，其溫度與加熱時間關係圖如附圖所示，試回答下列選項何者正確：
+  stem: '1大氣壓下，取均為 5 克的甲、乙、丙三種固態純物質，以相同的穩定熱源分別加熱，其溫度與加熱時間關係如下：
+
+    甲：0～200 秒由 0℃ 升至熔點 60℃，200～500 秒維持 60℃ 熔化；
+
+    乙：0～300 秒由 0℃ 升至熔點 40℃，300～700 秒維持 40℃ 熔化；
+
+    丙：0～400 秒由 －10℃ 升至熔點 20℃，400～900 秒維持 20℃ 熔化。
+
+    試回答下列選項何者正確：'
   options:
   - label: A
     content: 熔點：丙＞乙＞甲
@@ -70,13 +78,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（加熱曲線圖），無法讀取溫度與時間作答
+    fixed_by: agent
+    fix_note: （人工修正：以文字補充加熱曲線溫度與時間數據取代缺圖）
   difficulty: 3
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 水的相圖如附圖所示，則下列敘述哪一個選項<u>不正確</u>？
+  stem: 已知水的三相點位於 0.01℃、0.006 atm，正常沸點為 100℃（1 atm），正常凝固點為 0℃（1 atm），且水的固液共存線斜率為負（即加壓使冰熔點降低）。下列敘述哪一個選項<u>不正確</u>？
   options:
   - label: A
     content: 欲使液態水汽化，可以加熱或減壓
@@ -118,6 +128,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（水的三相圖）
+    fixed_by: agent
+    fix_note: （人工修正：以文字補充水的相圖關鍵特徵取代缺圖）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e3_s1_3
   section: 1
@@ -160,7 +172,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 一容積可變的容器內，在27℃量得水蒸氣壓變化如圖所示，在1 L時容器中再裝入氮氣（$N_{2}$）900 mmHg，下列敘述何者正確？
+  stem: 一容積可變的容器內，在 27℃ 下裝有定量純水，量得水蒸氣壓隨體積變化關係如下：當容器體積在 1 L 至 10 L 之間時，水蒸氣壓維持定值 27 mmHg（此時容器內尚有液態水）；當體積大於 10 L 時，液態水完全汽化，水蒸氣壓與體積成反比下降。若在 1 L 時容器中再裝入氮氣（$N_{2}$）900 mmHg，下列敘述何者正確？
   options:
   - label: A
     content: 15 L時液體水重約0.26 g
@@ -201,7 +213,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（水蒸氣壓對體積變化圖），無法讀取數據作答
+    fixed_by: agent
+    fix_note: （人工修正：以文字補充水蒸氣壓隨體積變化數據取代缺圖並補齊解析）
   difficulty: 3
+  explanation: 10 L 時液態水剛好完全汽化，$P_{H2O}=27\text{ mmHg}$。在 3 L 時尚有液態水，故 $P_{H2O}=27\text{ mmHg}$，$P_{N2}=900\times \frac{1}{3}=300\text{ mmHg}$，總壓 $= 300+27=327\text{ mmHg}$（C正確）。15 L 時無液態水（A錯誤），總壓 $= \frac{900}{15}+27\times \frac{10}{15} = 60+18 = 78\text{ mmHg}$（B錯誤）；10 L 時總壓 $= 90+27 = 117\text{ mmHg}$（E錯誤）。故選(C)。
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e3_s1_5
   section: 1
   number: 5
@@ -349,7 +364,7 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 25℃時，如圖所示，將純水以滴管注入乙汞槽中的玻璃管內；及將含某非揮發性、非電解質溶質X且重量百分率濃度為60%的水溶液以滴管注入丙汞槽中的玻璃管內，分別與甲比較。試問X的分子量為多少？
+  stem: 25℃時，有三支倒立於汞槽中的玻璃管氣壓計（管頂皆為真空）：甲管未注入任何液體，汞柱高 760 mm；乙管以滴管注入少量純水（達氣液平衡且仍有液態水），汞柱下降至 736 mm；丙管以滴管注入含某非揮發性、非電解質溶質 X 且重量百分率濃度為 60% 的水溶液（達氣液平衡且仍有溶液），汞柱下降至 744 mm。試問 X 的分子量為多少？
   options:
   - label: A
     content: '48'
@@ -391,6 +406,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（汞槽玻璃管高度圖），無法讀取蒸氣壓數值作答
+    fixed_by: agent
+    fix_note: （人工修正：以文字補充甲乙丙三管汞柱高度數據取代缺圖）
   difficulty: 3
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e3_s1_10
   section: 1
@@ -514,7 +531,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 如圖所示，在a處分別置人一滴(甲) 2.0m葡萄糖溶液；(乙) 1.0m蔗糖溶液；(丙)純水；(丁)乙醇，平衡後水銀柱高度h由大而小的順序為下列何者？
+  stem: 將玻璃管倒立於水銀槽中作為氣壓計，若在管底（a處）分別置入一滴 (甲) 2.0 m 葡萄糖溶液；(乙) 1.0 m 蔗糖溶液；(丙) 純水；(丁) 乙醇，使其浮至管頂真空處並達氣液平衡，平衡後管內外水銀柱高度差 h 由大而小的順序為下列何者？
   options:
   - label: A
     content: 甲>乙>丙>丁
@@ -556,16 +573,18 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 缺附圖（水銀氣壓計示意圖）
+    fixed_by: agent
+    fix_note: （人工修正：以文字描述水銀氣壓計實驗裝置取代缺圖）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e3_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 右圖為各取等重甲、乙、丙固體物質分別各溶於1公斤水，測其水溶液的凝固點(℃)與濃度關係，則下列何者正確？
+  stem: 各取 10 克甲、乙、丙三種非電解質固體物質分別溶於 1 公斤水，測其水溶液的凝固點（℃）與溶質加入質量之關係皆為通過 (0 g, 0℃) 的直線，且在加入等重溶質時，凝固點下降度數大小順序為：丙＞乙＞甲。則下列何者正確？
   options:
   - label: A
-    content: 甲乙丙物質依序硫酸鉀（$K_{2}SO_{4}$）、丙三醇（$C_{3}H_{8}O_{3}$）、葡萄糖（$C_{6}H_{12}O_{6}$）
+    content: 甲乙丙物質依序為硫酸鉀（$K_{2}SO_{4}$）、丙三醇（$C_{3}H_{8}O_{3}$）、葡萄糖（$C_{6}H_{12}O_{6}$）
   - label: B
     content: 甲乙丙物質依序為葡萄糖（$C_{6}H_{12}O_{6}$）、丙三醇（$C_{3}H_{8}O_{3}$）、尿素（CO($NH_{2}$)$_{2}$）
   - label: C
@@ -573,7 +592,7 @@ questions:
   - label: D
     content: 甲乙丙物質依序為食鹽水（NaCl）、硫酸鉀（$K_{2}SO_{4}$）、蔗糖（$C_{12}H_{22}O_{11}$）
   - label: E
-    content: 凝固點(℃)與濃度可繪製
+    content: 凝固點（℃）與溶質莫耳數的關係圖中，三物質的直線斜率皆不相同
     asset:
       key: s1_14_optE
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e3/s1_14_optE.png
@@ -613,24 +632,27 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（凝固點與濃度關係圖）及(E)選項圖片，無法作答
+    fixed_by: agent
+    fix_note: （人工修正：以文字描述凝固點關係圖並改寫選項E取代缺圖，同時補齊解析）
   difficulty: 3
+  explanation: 等質量的非電解質溶於等重水中，分子量愈小者莫耳數愈多、重量莫耳濃度 $C_{m}$ 愈大，凝固點下降愈多。葡萄糖（180）＞丙三醇（92）＞尿素（60），故凝固點下降度數：尿素（丙）＞丙三醇（乙）＞葡萄糖（甲）。選(B)。
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e3_s1_15
   section: 1
   number: 15
   type: single
   page: 2
-  stem: 附圖為760mmHg下，萘的苯溶液之重量莫耳濃度與沸點的關係圖。下列敘述何者<u>錯誤</u>？
+  stem: 在 760 mmHg 下，測得萘的苯溶液之重量莫耳濃度（$C_{m}$）與沸點呈線性關係：當 $C_{m}=0$ 時沸點為 80℃；在 B 點（$C_{m}=0.40\text{ m}$）時，溶液沸點為 81.0℃。下列敘述何者<u>錯誤</u>？
   options:
   - label: A
     content: 純苯之正常沸點為80℃
   - label: B
     content: 苯的莫耳沸點上升常數$K_{b}$＝2.5℃／m
   - label: C
-    content: B點的溶液組成為51.2g／1.00 kg苯，則業的莫耳質量為128g
+    content: B點的溶液組成為51.2g／1.00 kg苯，則萘的莫耳質量為128g
   - label: D
-    content: 改以禁的環己烷溶液作圖，直線的斜率會改變
+    content: 改以萘的環己烷溶液作圖，直線的斜率會改變
   - label: E
-    content: 改以蒸的環己烷溶液作圖，直線的斜率不變
+    content: 改以萘的環己烷溶液作圖，直線的斜率不變
   assets:
   - key: s1_15_f1
     kind: figure
@@ -660,7 +682,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（沸點與濃度關係圖），無法讀取數據作答；且多處錯字
+    fixed_by: agent
+    fix_note: （人工修正：以文字補充沸點與濃度數據取代缺圖、修正選項錯字並補齊解析）
   difficulty: 3
+  explanation: 由 $C_{m}=0$ 沸點為 80℃ 知(A)正確；$\Delta T_{b}=81.0-80.0=1.0=K_{b}\times 0.40 \Rightarrow K_{b}=2.5\text{ ℃/m}$(B正確)；$0.40\text{ mol}$ 萘重 51.2 g，莫耳質量 $= 51.2/0.40 = 128\text{ g/mol}$(C正確)；改變溶劑則 $K_{b}$ 改變，斜率改變(D正確、E錯誤)。故選(E)。
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e3_s2_16
   section: 2
   number: 16
@@ -815,7 +840,22 @@ questions:
   number: 20
   type: multiple
   page: 3
-  stem: 甲、乙、丙三種純物質的飽和蒸氣壓（mmHg）與溫度的關係如附表所示，則下列敘述哪些正確？
+  stem: '甲、乙、丙三種純物質的飽和蒸氣壓（mmHg）與溫度的關係如下表所示：
+
+    | 溫度（℃） | 甲（mmHg） | 乙（mmHg） | 丙（mmHg） |
+
+    | --- | --- | --- | --- |
+
+    | 25 | 200 | 24 | 5 |
+
+    | 50 | 500 | 92 | 25 |
+
+    | 75 | 700 | 289 | 80 |
+
+    | 100 | 1200 | 760 | 240 |
+
+
+    則下列敘述哪些正確？'
   options:
   - label: A
     content: 正常沸點最高者為甲
@@ -859,6 +899,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附表（飽和蒸氣壓與溫度關係表），無法讀取數據作答
+    fixed_by: agent
+    fix_note: （人工修正：補充飽和蒸氣壓與溫度關係表取代缺圖）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e3_s2_21
   section: 2
@@ -938,7 +980,7 @@ questions:
   number: 23
   type: multiple
   page: 3
-  stem: 藉由凝固點下降實驗以推求尿素的分子量，實驗裝置如圖，實驗數據如下： 蒸餾水100mL，尿素($NH_{2}$)$_{2}$CO質量為6.00g 試回答下列問題哪些正確？（水的Kr=1.86℃/m）
+  stem: 藉由凝固點下降實驗以推求尿素的分子量，實驗將裝有尿素水溶液的中試管置於大試管中（空氣浴）再置入冷劑中冷卻，實驗數據如下：蒸餾水 100 mL（100 g），尿素 $(NH_{2})_{2}CO$ 質量為 6.00 g；冷卻曲線顯示純水凝固點為 0.00℃，尿素水溶液的最低過冷點（甲處）為 －2.10℃，回升後的平緩凝固點為 －1.74℃。試回答下列問題哪些正確？（水的 $K_{f}=1.86\text{ ℃/m}$）
   options:
   - label: A
     content: 裝有尿素水溶液的中試管需先置於一大試管中，再置入冷劑中，其目的為不直接與冷劑接觸，可使冷卻較均勻且降溫速率較慢
@@ -990,4 +1032,7 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（實驗裝置與冷卻曲線圖），無法讀取實驗數據作答
+    fixed_by: agent
+    fix_note: （人工修正：以文字補充實驗裝置與冷卻曲線數據取代缺圖並補齊解析）
   difficulty: 3
+  explanation: (A)空氣浴可使降溫均勻且較緩慢，正確；(B)甲處為過冷最低點，非平衡凝固點；(C)凝固點下降度數為 $1.74\text{℃}$；(D)由 $\Delta T_{f}=1.74=1.86\times \frac{6.00/M}{0.100}$，得實驗分子量 $M \approx 64.14$；(E)相對誤差 $= \frac{|64.14-60.0|}{60.0}\times 100\% \approx 6.9\% \approx 7\%$，正確。故選(A)(E)。

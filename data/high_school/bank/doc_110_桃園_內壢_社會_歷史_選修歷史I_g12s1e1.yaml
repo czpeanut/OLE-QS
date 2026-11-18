@@ -342,7 +342,17 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 右圖為十六、十七世紀時，美洲、歐洲與非洲三地區間的三角貿易圖。請根據你的歷史知識，判斷下列甲、乙、丙地分別為何者？
+  stem: '下表為十六、十七世紀時，美洲、歐洲與非洲三地區（代號甲、乙、丙）間的大西洋三角貿易流向。請根據你的歷史知識，判斷下列甲、乙、丙地分別為何者？
+
+    | 貿易路線 | 主要輸出商品 |
+
+    | --- | --- |
+
+    | 甲 → 丙 | 槍枝、紡織品、酒類等工業製品 |
+
+    | 丙 → 乙 | 黑人奴隸 |
+
+    | 乙 → 甲 | 蔗糖、菸草、棉花、貴金屬等原料與農產品 |'
   options:
   - label: A
     content: 甲美洲、乙歐洲、丙非洲
@@ -374,6 +384,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(B)有亂碼（「丙洲」疑為「丙非洲」）
+    fixed_by: agent
+    fix_note: （人工修正：將缺圖補充為三角貿易流向表並補齊解答與解析）
+  explanation: 大西洋三角貿易中，歐洲（甲）輸出工業製品至非洲（丙）換取奴隸，再將黑人奴隸運往美洲（乙）種植園，最後將美洲蔗糖、菸草、棉花等運回歐洲，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_桃園_內壢_社會_歷史_選修歷史I_g12s1e1_s1_14
   section: 1
   number: 14

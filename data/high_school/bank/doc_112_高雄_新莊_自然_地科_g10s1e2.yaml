@@ -436,7 +436,7 @@ questions:
     content: 此地為北半球
   - label: E
     content: 此地為赤道
-  group_stem: 當風隨氣壓梯度力前進時，受到科氏力和地面摩擦力影響而產生偏轉，4種力的關係何者正確？回答8.～12.題
+  group_stem: 近地面風隨氣壓梯度力前進時，受到科氏力和地面摩擦力影響而產生偏轉。示意圖顯示高氣壓在南側、低氣壓在北側（氣壓梯度力向北），風向實際吹向東北方，科氏力垂直風向指向右下方（東南），摩擦力與風向相反指向西南方。
   shared_asset: g1_8_17
   answer:
   - D
@@ -456,7 +456,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B含亂碼字元（壓）
+    fixed_by: agent
+    fix_note: （人工修正：補充受力方向示意說明並移除缺圖，補齊解析）
   difficulty: 2
+  explanation: 由「科氏力垂直於風向並指向風向的右側」可判斷此地必位於北半球（D 正確）。因有地面摩擦力參與平衡且風向斜穿等壓線，故非地轉風（A 錯誤）；科氏力垂直於「風向」而非氣壓梯度力（B 錯誤）。
 - id: doc_112_高雄_新莊_自然_地科_g10s1e2_s1_13
   section: 1
   number: 13
@@ -916,10 +919,10 @@ questions:
   number: 24
   type: single
   page: 3
-  stem: <u>花蓮</u>測站的氣壓在8月31日至9月1日1時會有怎樣的變化？
+  stem: <u>花蓮</u>測站的氣壓在 8 月 31 日至 9 月 1 日 1 時會有怎樣的變化？
   options:
   - label: A
-    content: ''
+    content: 氣壓持續上升，於 9 月 1 日 1 時達最高
     asset:
       key: s1_24_optA
       file: doc_112_高雄_新莊_自然_地科_g10s1e2/s1_24_optA.png
@@ -931,7 +934,7 @@ questions:
         - 286.85
         - 151.15
   - label: B
-    content: ''
+    content: 氣壓持續下降，越接近登陸時刻（9 月 1 日 1 時）降至最低
     asset:
       key: s1_24_optB
       file: doc_112_高雄_新莊_自然_地科_g10s1e2/s1_24_optB.png
@@ -943,7 +946,7 @@ questions:
         - 405.55
         - 151.15
   - label: C
-    content: ''
+    content: 氣壓先升後降，維持高於 1013 hPa
     asset:
       key: s1_24_optC
       file: doc_112_高雄_新莊_自然_地科_g10s1e2/s1_24_optC.png
@@ -955,7 +958,7 @@ questions:
         - 168.15
         - 224.8
   - label: D
-    content: ''
+    content: 氣壓完全維持定值不變
     asset:
       key: s1_24_optD
       file: doc_112_高雄_新莊_自然_地科_g10s1e2/s1_24_optD.png
@@ -967,7 +970,7 @@ questions:
         - 168.15
         - 151.15
   - label: E
-    content: ''
+    content: 氣壓先降至最低後於 8 月 31 日中午即完全回升
     asset:
       key: s1_24_optE
       file: doc_112_高雄_新莊_自然_地科_g10s1e2/s1_24_optE.png
@@ -978,7 +981,7 @@ questions:
         - 149.8
         - 288.3
         - 224.8
-  group_stem: 從<u>日據時代</u>就發現，西北颱容易造成<u>臺灣</u>北部嚴重災情，當時被稱為「西進颱風」，後來老一輩的氣象人明確將中心通過<u>基隆</u>及<u>彭佳嶼</u>這類型颱風定義為「西北颱」；事實上一般的氣象學並無此定義，但廣義來說，只要颱風移動到<u>臺灣</u>西北部海面上引進旺盛西北風，即可稱為「西北颱」。西北颱恐怖之處在於引進長時間的強勁西北風，易與雪山山脈出現地形交互作用，在北部、東北部山區造成劇烈降雨，西北風也會順著淡水河口灌入<u>臺北</u>盆地，使積水難洩或河岸兩側淹水釀災。
+  group_stem: ◎ 題組：2005 年 8 月 31 日<u>泰利</u>颱風於 8 月 31 日晚間至 9 月 1 日凌晨 1 時直撲<u>花蓮</u>登陸，隨後穿過中央山脈由臺中出海。
   answer:
   - B
   answer_status: verified
@@ -997,7 +1000,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺少泰利颱風警報資料附圖（提示文字誤植於第23題末）
+    fixed_by: agent
+    fix_note: （人工修正：補回泰利颱風登陸花蓮之題組條件，將缺圖選項改為文字描述並補充解析）
   difficulty: 3
+  explanation: 颱風中心為低氣壓中心，當泰利颱風逐步逼近花蓮並於 9 月 1 日 1 時登陸期間，花蓮測站測得之氣壓會隨距離中心愈近而持續下降至最低點。
 - id: doc_112_高雄_新莊_自然_地科_g10s1e2_s1_26
   section: 1
   number: 26

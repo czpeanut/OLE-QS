@@ -279,8 +279,10 @@ questions:
   - label: B
     content: 乙為蛋白質，流體鑲嵌模式中，其位置會改變
   - label: C
-    content: 甲為鹽類 (B)戊為磷脂質
-  group_stem: 左下圖是細胞中常見分子構造圖，A、B代表此分子中所含不同化學結構；右下圖為細胞膜的構造模式圖，甲～丁代表其中所含組成分子，請根據此圖回答下列三題：
+    content: 甲為醣類，常位於細胞膜外側
+  - label: D
+    content: 戊為磷脂質，排列成雙層構成細胞膜主體
+  group_stem: 細胞膜的流體鑲嵌模式圖中，甲為位於膜外側與蛋白質或脂質結合的醣類、乙為貫穿磷脂雙層的蛋白質、丙為膜上位置可隨膜流動而改變的蛋白質、戊為構成雙層基本架構的磷脂質。請根據此圖回答下列問題：
   shared_asset: g1_7_9
   tags:
     unit:
@@ -296,7 +298,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 C 夾雜選項 B 文字且缺選項 D
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖細胞膜構造文字條件、修正選項C與補齊選項D，補齊答案與解析）
   difficulty: 2
+  explanation: 根據細胞膜的流體鑲嵌模型，膜上的磷脂質與多數蛋白質（包含乙與丙）皆可進行側向移動，並非固定不動，故(A)錯誤，選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_桃園_平鎮_自然_生物_選修生物I_g11s1e1_s1_10
   section: 1
   number: 10
@@ -1181,18 +1190,35 @@ questions:
 - id: doc_109_桃園_平鎮_自然_生物_選修生物I_g11s1e1_s4_2
   section: 4
   number: 2
-  type: single
+  type: calc
   page: 5
-  stem: 選出下列適合的配對（各小題第一格由A～D選一，第二格由甲～丁選一）
+  stem: '請為下列四種生物分子選出適合的分子式配對（第一格由A～D選一，第二格由甲～丁選一）：
+
+    (甲)生物細胞內含量最多的有機物
+
+    (乙)構成遺傳訊息（或能量貨幣相關核苷酸）
+
+    (丙)生物體能量貯存的主要形式
+
+    (丁)生物體能量供應的主要形式
+
+
+    (1)蛋白質：＿＿＿，＿＿＿。
+
+    (2)醣類：＿＿＿，＿＿＿。
+
+    (3)脂質：＿＿＿，＿＿＿。
+
+    (4)核酸（核苷酸）：＿＿＿，＿＿＿。'
   options:
   - label: A
-    content: $C_{12}H_{22}O_{11}$ (甲)生物細胞內含量最多的有機物
+    content: $C_{12}H_{22}O_{11}$
   - label: B
-    content: $C_{10}H_{16}O_{13}N_{5}P_{3}$ (乙)構成遺傳訊息
+    content: $C_{10}H_{16}O_{13}N_{5}P_{3}$
   - label: C
-    content: $C_{57}H_{105}O_{6}$ (丙)生物體能量貯存的主要形式
+    content: $C_{57}H_{105}O_{6}$
   - label: D
-    content: $C_{500}H_{1400}O_{120}N_{75}S_{2}$ (丁)生物體能量供應的主要形式 (1)蛋白質：＿＿＿，＿＿＿。 (2)酶類：＿＿＿，＿＿＿。 (3)脂質：＿＿＿，＿＿＿。 (4)核酸：＿＿＿，＿＿＿
+    content: $C_{500}H_{1400}O_{120}N_{75}S_{2}$
   tags:
     unit:
       code: BI-S1-1-1
@@ -1207,7 +1233,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 小題 (2)「酶類」應為「醣類」之 OCR 錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正錯字「酶類」為「醣類」、整理題幹與選項格式並補齊答案與解析）
   difficulty: 3
+  explanation: 蛋白質含C、H、O、N、S，且為細胞內含量最多的有機物(D、甲)；雙醣分子式為$C_{12}H_{22}O_{11}$，為能量供應主要形式(A、丁)；三酸甘油酯氧原子比例低、為能量貯存主要形式(C、丙)；$C_{10}H_{16}O_{13}N_5P_3$為ATP（核苷酸），具C、H、O、N、P(B、乙)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) D，甲；(2) A，丁；(3) C，丙；(4) B，乙
 shared_assets:
 - key: g1_7_9
   label: 題組附圖

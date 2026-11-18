@@ -319,9 +319,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: '根據上述圖文，A重劃選區的作法最可能造成以下何種結果？
-
-    (三)下表為我國某次選舉結果：'
+  stem: 根據上述圖文，A重劃選區的作法最可能造成以下何種結果？
   options:
   - label: A
     content: 選區劃分只考量政黨利益，會損害到部分選民的利益
@@ -331,7 +329,7 @@ questions:
     content: 地方議會總席次變少，大黨間為爭取席次而惡性競爭
   - label: D
     content: 導致地方議會的意見分歧，易造成政治不穩定的狀況
-  group_stem: (二)A為某國地方政府的行政首長，A近期簽署一項法案，將地方議會選區重劃和改選，而下圖是該地部分選區長期以來民對政黨的支持比率，以及本次選區重劃前、後地方議會的常變化圖。
+  group_stem: (二)A為某國地方政府的行政首長，A近期簽署一項法案，將地方議會選區重劃和改選。該地部分選區長期以來選民對政黨的支持比率相當穩定，但在本次選區重劃後，原本支持率相近的選區被刻意切割或集中，使執政黨在總得票率未大幅變動的情況下，於地方議會獲得遠高於其得票比例的席次。
   shared_asset: g2_13_18
   tags:
     unit:
@@ -344,6 +342,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾誤黏下一題組標題「(三)下表為我國某次選舉結果：」
+    fixed_by: agent
+    fix_note: （人工修正：移除題幹末尾多餘標題「(三)下表為我國某次選舉結果：」、修正題組漏字並補充選區重劃結果與答案解析）
+  explanation: 此種為特定政黨利益而刻意操縱選區邊界的「傑利蠑螈」（Gerrymandering）選區劃分方式，違反票票等值原則，損害部分選民的投票效力與代表權，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_111_台南_瀛海_社會_公民與社會_g10s1e2_s2_17
   section: 2
   number: 17

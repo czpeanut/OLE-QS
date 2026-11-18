@@ -1153,18 +1153,33 @@ questions:
   number: 33
   type: multiple
   page: 3
-  stem: <u>香菇</u>同學上課打瞌睡，關於光合作用中，光反應和碳反應的比較表格，有幾處抄寫錯誤，試問是下列何者？
+  stem: '<u>香菇</u>同學上課打瞌睡，整理光合作用中光反應和碳反應的比較表格時有一處抄寫錯誤（如下表），試問錯誤之處是下列哪一項？
+
+
+    | 項目 | 光反應 | 碳反應 |
+
+    | --- | --- | --- |
+
+    | (A) 發生場所 | 葉綠體類囊體膜 | 葉綠體基質 |
+
+    | (B) 是否需光 | 必須有光 | 不需光直接參與 |
+
+    | (C) 能量來源 | 光能 | 光反應產生的ATP與NADPH |
+
+    | (D) 主要產物 | 葡萄糖與氧氣 | 水與二氧化碳 |
+
+    | (E) 參與酵素 | 具光系統與ATP合成酶 | 具固碳酵素（如Rubisco） |'
   options:
   - label: A
-    content: (A)
+    content: (A) 發生場所
   - label: B
-    content: (B)
+    content: (B) 是否需光
   - label: C
-    content: (C)
+    content: (C) 能量來源
   - label: D
-    content: (D)
+    content: (D) 主要產物
   - label: E
-    content: (E)
+    content: (E) 參與酵素
   answer:
   - D
   answer_status: verified
@@ -1183,7 +1198,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺比較表格附圖，選項僅存(A)~(E)無法完整作答
+    fixed_by: agent
+    fix_note: （人工修正：補齊缺失之光合作用比較表格與選項內容，補齊解析）
   difficulty: 2
+  explanation: 光反應的主要產物為ATP、NADPH與氧氣（水光解）；碳反應的主要產物為醣類（如三碳糖／葡萄糖），而非水與二氧化碳，故(D)錯誤，選(D)。
 - id: doc_110_高雄_鳳山_自然_生物_g10s2e1_s2_34
   section: 2
   number: 34

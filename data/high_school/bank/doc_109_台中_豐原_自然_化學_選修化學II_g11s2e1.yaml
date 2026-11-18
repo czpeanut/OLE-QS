@@ -535,7 +535,22 @@ questions:
   number: 18
   type: single
   page: 1
-  stem: 試問二氧化矽、硫酸鏌、氨、鈦四種物質依序為何？
+  stem: '下表為甲、乙、丙、丁四種物質的物理性質比較：
+
+    | 物質 | 熔點（℃） | 固態導電性 | 熔融態導電性 | 備註 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 甲 | 1124 | 否 | 是 | 溶於水可導電 |
+
+    | 乙 | 1668 | 是 | 是 | 具延展性 |
+
+    | 丙 | 1710 | 否 | 否 | 質地堅硬 |
+
+    | 丁 | －77.7 | 否 | 否 | 常溫常壓為氣體 |
+
+
+    試問二氧化矽、硫酸鎂、氨、鈦四種物質依序為何？'
   options:
   - label: A
     content: 丙乙丁甲
@@ -570,7 +585,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「硫酸鏌」誤植，應為「硫酸鎂」
+    fixed_by: agent
+    fix_note: （人工修正：更正題幹硫酸鎂錯字並以表格補充缺圖條件與答案解析）
   difficulty: 3
+  explanation: 二氧化矽為共價網狀固體，高熔點且固、液態皆不導電（丙）；硫酸鎂為離子晶體，高熔點且熔融態可導電（甲）；氨為分子化合物，熔點極低且不導電（丁）；鈦為金屬晶體，高熔點且固、液態皆可導電（乙）。依序為丙甲丁乙，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_台中_豐原_自然_化學_選修化學II_g11s2e1_s1_19
   section: 1
   number: 19
@@ -674,10 +696,23 @@ questions:
   number: 22
   type: single
   page: 2
-  stem: 甲、乙、丙為週期表中第三列的三種元素，附圖表示其游離能與夫去電子數目的關係。下列有關甲、乙、丙元素的敘述，哪一選項正確？
+  stem: '甲、乙、丙為週期表中第三週期的三種元素，下表為其前五次游離能（kJ/mol）數值：
+
+    | 元素 | $IE_{1}$ | $IE_{2}$ | $IE_{3}$ | $IE_{4}$ | $IE_{5}$ |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 甲 | 738 | 1451 | 7733 | 10543 | 13630 |
+
+    | 乙 | 786 | 1577 | 3232 | 4356 | 16091 |
+
+    | 丙 | 496 | 4562 | 6912 | 9543 | 13354 |
+
+
+    下列有關甲、乙、丙元素的敘述，哪一選項正確？'
   options:
   - label: A
-    content: 甲的原子羊徑比丙大
+    content: 甲的原子半徑比丙大
   - label: B
     content: 乙的電負度比丙小
   - label: C
@@ -709,7 +744,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「夫去」為「失去」誤植；選項A「羊徑」為「半徑」誤植
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹與選項錯字並以游離能表補充缺圖條件與答案解析）
   difficulty: 3
+  explanation: 由游離能劇增處可判斷價電子數：甲為第2族Mg，乙為第14族Si，丙為第1族Na。(A)原子半徑：Na(丙)＞Mg(甲)；(B)電負度：Si(乙)＞Na(丙)；(C)Si與O形成$SiO_{2}$共價網狀固體，具有高熔點與高沸點，正確；(D)$Na_{2}O$溶於水生成NaOH，呈鹼性。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_台中_豐原_自然_化學_選修化學II_g11s2e1_s2_23
   section: 2
   number: 23

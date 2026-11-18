@@ -31,7 +31,7 @@ questions:
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_1
   section: 1
   number: 1
-  type: calc
+  type: single
   page: 1
   stem: 2021年1月1日起，政府正式開放含「萊客多巴胺」 （俗稱瘦肉精）的美國豬肉、放寬30月齡以上的美國牛肉進口，多數民眾害怕吃到萊豬，反而帶動本土豬肉價格上漲。若阿民便當店僅販售雞腿飯與豬排飯兩種便當，皆使用本土雞肉與豬隻作為主菜來源，在其他條件不變且暫不調整便當價格的情況下，最可能如何調整每日所生產的便當數量？
   assets:
@@ -56,6 +56,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖
+    fixed_by: agent
+    fix_note: （人工修正：補全缺圖之便當產量調整文字選項並補齊解答與解析）
+  options:
+  - label: A
+    content: 減少豬排飯的產量、增加雞腿飯的產量
+  - label: B
+    content: 增加豬排飯的產量、減少雞腿飯的產量
+  - label: C
+    content: 同時增加豬排飯與雞腿飯的產量
+  - label: D
+    content: 同時減少豬排飯與雞腿飯的產量
+  explanation: 本土豬肉價格上漲使豬排飯生產成本提高、利潤下降；在資源有限且便當售價不變下，店家將減少豬排飯產量，並將資源轉向生產相對利潤較高的雞腿飯，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_2
   section: 1
   number: 2
@@ -86,7 +102,21 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 下表為X國生產可樂與果汁兩種商品的生產可能組合。有關該生產可能組合的敘述，何者正確？
+  stem: '下表為X國生產可樂與果汁兩種商品的生產可能組合。有關該生產可能組合的敘述，何者正確？
+
+    | 組合 | 可樂（單位） | 果汁（單位） |
+
+    | --- | --- | --- |
+
+    | 甲 | 30 | 0 |
+
+    | 乙 | 27 | 4 |
+
+    | 丙 | 22 | 8 |
+
+    | 丁 | 14 | 11 |
+
+    | 戊 | 0 | 12 |'
   options:
   - label: A
     content: 從組合甲一路到組合戊時，代表X國生產可樂的技術逐漸進步
@@ -117,6 +147,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺表，無法核算數值
+    fixed_by: agent
+    fix_note: （人工修正：補充X國可樂與果汁生產可能組合表並補齊解答與解析）
+  explanation: (A)誤，同一條PPC代表技術水準固定；(B)誤；(C)正，由組合丁（14, 11）移動至戊（0, 12），生產第12單位果汁必須放棄14單位可樂，機會成本高於先前各單位果汁（甲→乙平均0.75、乙→丙平均1.25、丙→丁平均2.67）；(D)誤，PPC上各點皆有效率，不能以兩商品數量直接相加判斷優劣。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_4
   section: 1
   number: 4
@@ -147,7 +184,17 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 英國己於2020年1月 31日正式退出歐盟，隨後進人脫歐過渡期，許多專家都關注英國在脫歐後對全球經貿的影響，下表為我國與英國主要貿易交流內容： 關於臺、英國際貿易之相關敘述，下列何者正確？
+  stem: '英國已於2020年1月31日正式退出歐盟，隨後進入脫歐過渡期，許多專家都關注英國在脫歐後對全球經貿的影響，下表為我國與英國主要貿易交流內容：
+
+    | 貿易方向 | 主要代表商品 |
+
+    | --- | --- |
+
+    | 臺灣出口至英國 | 非動力二輪腳踏車、積體電路、電腦零組件 |
+
+    | 英國出口至臺灣 | 威士忌等烈酒、醫療器材、汽車零組件 |
+
+    關於臺、英國際貿易之相關敘述，下列何者正確？'
   options:
   - label: A
     content: 我國生產非動力二輪腳踏車機會成本低於英國
@@ -179,6 +226,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺表，無法判斷貿易內容
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字、補充臺英貿易交流表並補齊解答與解析）
+  explanation: 臺灣出口非動力二輪腳踏車至英國，表示臺灣生產該產品之機會成本低於英國，具比較利益(A)。(B)臺灣出口積體電路，故英國在積體電路上不具比較利益；(C)貿易逆差未必有損經濟福祉；(D)進口烈酒係因比較利益分工，非國內完全無生產者。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_6
   section: 1
   number: 6
@@ -209,7 +263,7 @@ questions:
   number: 7
   type: single
   page: 2
-  stem: 右圖是農夫小韓的生產可能曲線（PPC），在固定的資源與技術下，他可以同時生產小玉西瓜和白玉苦瓜，請問圖中的A、B、C、D、E五點代表的意義，何者正確？
+  stem: 農夫小韓的生產可能曲線（PPC）在固定的資源與技術下，可以同時生產小玉西瓜和白玉苦瓜。圖中各點位置如下：A、B、C三點位於PPC線上；D點位於PPC線之外；E點位於PPC線之內。請問A、B、C、D、E五點代表的意義，何者正確？
   options:
   - label: A
     content: A、B、C、E四點皆表示小韓已經充分利用生產要素
@@ -240,6 +294,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺圖，無法判斷各點位置
+    fixed_by: agent
+    fix_note: （人工修正：補充生產可能曲線五點位置說明並補齊解答與解析）
+  explanation: (A)誤，E點位於PPC之內，尚未充分利用要素；(B)誤，D點為現有資源技術下無法達成的組合，而非無效率；(C)正，灌溉設備故障導致產能未能充分發揮或要素受損，可能使原本線上之A點退縮至線內之E點；(D)誤，由E點回到線上僅須提升資源利用效率，移動至線外D點才需擴增資源或技術進步。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_8
   section: 1
   number: 8
@@ -420,7 +481,19 @@ questions:
   number: 15
   type: single
   page: 3
-  stem: 下表是某國國內芒果冰的供給與需求，請根據此表，判斷下列何者正確？
+  stem: '下表是某國國內芒果冰的供給與需求，請根據此表，判斷下列何者正確？
+
+    | 價格（元） | 需求量（萬份） | 供給量（萬份） |
+
+    | --- | --- | --- |
+
+    | 90 | 8 | 20 |
+
+    | 80 | 10 | 16 |
+
+    | 70 | 12 | 12 |
+
+    | 60 | 16 | 8 |'
   options:
   - label: A
     content: 該國的芒果冰均衡價格應為80元
@@ -452,6 +525,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺表，無法核對數據
+    fixed_by: agent
+    fix_note: （人工修正：補充芒果冰供需表並補齊解答與解析）
+  explanation: 由表可知均衡價格為70元（需求量＝供給量＝12萬份），故(A)(C)錯；最高願花80元購買者可獲得80－70＝10元消費者剩餘，(B)錯；第16萬份芒果冰的消費者願付價格為60元，生產者願售價格為80元，若生產交易將使社會損失80－60＝20元淨效益，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_16
   section: 1
   number: 16
@@ -548,7 +628,7 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 陸客市場一直佔台灣旅遊業中重要比例，不過最近卻傳出，很多旅行社包括雄獅等大型業者都開始少接陸客團，因為團費實在被砍的太低，大陸客來台，一個人包吃包住包交通，只收約台幣六到七百元，賠本的生意乾脆就不要接了，請問右圖中哪些價格與數量的組合對生產者來說可謂「賠本的生意」？
+  stem: 陸客市場一直佔台灣旅遊業中重要比例，不過最近卻傳出，很多旅行社包括雄獅等大型業者都開始少接陸客團，因為團費實在被砍得太低，大陸客來台，一個人包吃包住包交通，只收約台幣六到七百元，賠本的生意乾脆就不要接了。若下述五點相對於旅行社供給線（最低願售價格線）的位置分別為：甲、乙位於供給線上方；丙位於供給線上；丁、戊位於供給線下方。請問哪些價格與數量的組合對生產者來說可謂「賠本的生意」？
   options:
   - label: A
     content: 甲丙
@@ -579,12 +659,25 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹缺圖，無法判斷甲～戊位置
+    fixed_by: agent
+    fix_note: （人工修正：補充供給線與甲至戊五點位置關係並補齊解答與解析）
+  explanation: 供給線代表生產者在各產量下所願意接受的最低價格（邊際成本）。當價格與數量組合位於供給線「下方」（丁、戊）時，代表售價低於生產者的最低願售價格，即為賠本生意，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_20
   section: 1
   number: 20
   type: single
   page: 3
-  stem: 甲國近年來每單位奶油的價格變動資料如右圖所示，若甲國沒有奶油的進出口，請問下列推論何者最為合理？
+  stem: '甲國近年來每單位奶油的價格變動資料如下表所示，若甲國沒有奶油的進出口，請問下列推論何者最為合理？
+
+    | 年份 | 2016 | 2017 | 2018 | 2019 | 2020 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 價格（元／單位） | 65 | 72 | 60 | 60 | 60 |'
   options:
   - label: A
     content: 政府可能實施價格管制，可以提高經濟效率
@@ -615,6 +708,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺圖，無法判斷價格變動趨勢
+    fixed_by: agent
+    fix_note: （人工修正：補充奶油價格變動表並補齊解答與解析）
+  explanation: 2016至2017年奶油價格皆高於60元，2018年起價格固定維持在60元不再上漲，最合理的推論是政府實施有效價格上限，將奶油價格上限設為60元，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_21
   section: 1
   number: 21
@@ -643,7 +743,7 @@ questions:
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_22
   section: 1
   number: 22
-  type: calc
+  type: single
   page: 4
   stem: 環保署於2020年底提出《溫室氣體減量及管理法》(簡稱溫管法）修法草案，環保署長受訪首度透露，其中企業最關注的碳費制度，收費對象將鎖定年排碳量2.5萬噸以上的排碳大戶，包括台電、中油等共290家，同時也將搭配溫室氣體排放效能標準，訂定碳費差別費率。請問未來這項政策執行後，排碳大戶的產品供需市場應該會怎麼移動？
   assets:
@@ -668,6 +768,22 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項缺圖
+    fixed_by: agent
+    fix_note: （人工修正：補全缺圖之供需移動文字選項並補齊解答與解析）
+  options:
+  - label: A
+    content: 供給線右移、需求線不變，均衡價格下跌
+  - label: B
+    content: 供給線左移、需求線不變，均衡價格上漲
+  - label: C
+    content: 供給線不變、需求線右移，均衡價格上漲
+  - label: D
+    content: 供給線不變、需求線左移，均衡價格下跌
+  explanation: 對排碳大戶課徵碳費屬於政府將外部成本內部化（庇古稅概念），會提高企業生產成本，使產品供給減少（供給線左移），進而導致均衡價格上漲、均衡數量減少，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_23
   section: 1
   number: 23
@@ -730,7 +846,7 @@ questions:
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_25
   section: 1
   number: 25
-  type: calc
+  type: single
   page: 4
   stem: 廠商為了能提早出貨，盡速完成訂單，於是開發新的生產線，此時的供給變化應該如何呈現？
   group_stem: 從可消毒的衣櫃到客製化冰箱，新冠疫情促進家庭的防疫設備需求，消費者開始願意在保持居家清潔方面花大筆錢，過去依賴家庭幫傭的家庭開始花錢在洗碗機、機器人吸塵機等非人際接觸的清潔方式。知名電子企業表示，至2020年底空氣清淨機的海外銷售有望超過去年的5倍，具有除菌功能的衣櫃訂單甚至排到隔年才能出貨，為此公司還必須新增生產線，準備將產品推向更多市場。
@@ -756,6 +872,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖
+    fixed_by: agent
+    fix_note: （人工修正：補全缺圖之供給變化文字選項並補齊解答與解析）
+  options:
+  - label: A
+    content: 供給線向右移動（供給增加）
+  - label: B
+    content: 供給線向左移動（供給減少）
+  - label: C
+    content: 沿著同一條供給線向右上方移動（供給量增加）
+  - label: D
+    content: 沿著同一條供給線向左下方移動（供給量減少）
+  explanation: 廠商開發新的生產線擴充產能，屬於非價格因素導致產出能力提升，將使「供給增加」，在圖形上表現為整條供給線向右移動，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_26
   section: 1
   number: 26
@@ -789,7 +921,7 @@ questions:
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_27
   section: 1
   number: 27
-  type: calc
+  type: single
   page: 5
   stem: 假設X產品為教育服務，Y產品為醫療服務，則故事中那位「假」發明家的發明，最有可能使美國的PPC線出現何種變化？
   group_stem: '分析核磁共振資料是一件複雜且困難的工作，但美國一位發明家發明了一套新儀器，讓分析變得更快速、更簡單、收費更低廉，使得醫療成本大幅降低。一時之間，各地的核磁共振資料如雪片般飛來，但無論資料有多少，這臺神奇的儀器總是能跑出正確無誤的分析結果。
@@ -819,12 +951,28 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖
+    fixed_by: agent
+    fix_note: （人工修正：補全缺圖之PPC移動文字選項並補齊解答與解析）
+  options:
+  - label: A
+    content: PPC線整體平行向外移動
+  - label: B
+    content: PPC線在X軸（教育服務）截距不變，沿Y軸（醫療服務）向外擴張
+  - label: C
+    content: PPC線在Y軸（醫療服務）截距不變，沿X軸（教育服務）向外擴張
+  - label: D
+    content: PPC線整體向內移動
+  explanation: 將核磁共振與讀片分析外包給成本較低之海外醫師，相當於提升了美國在「醫療服務（Y軸）」的生產效率與產能，但未改變「教育服務（X軸）」的最大產能，故PPC線X軸截距不變、Y軸截距向外擴張，選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_28
   section: 1
   number: 28
   type: single
   page: 5
-  stem: 請問根據圖中的生產可能曲線圖，以下敘述何者正確？
+  stem: 請問根據上述生產可能組合，以下敘述何者正確？
   options:
   - label: A
     content: 蘭蘭有生產氣炸鍋的絕對利益，但不具比較利益
@@ -834,7 +982,15 @@ questions:
     content: 蘭蘭生產一臺氣炸鍋的機會成本較大，具絕對利益
   - label: D
     content: 唐唐生產一臺電鍋的機會成本較小，具有比較利益
-  group_stem: 假設唐唐跟蘭蘭在同樣的資源和技術下都可以生產電鍋與氣炸鍋，電鍋他們各自的生產可能曲線（PPC）如圖所示
+  group_stem: '假設唐唐跟蘭蘭在同樣的資源和技術下都可以生產電鍋與氣炸鍋，他們各自的最大產量如下表所示：
+
+    | 生產者 | 僅生產電鍋（臺） | 僅生產氣炸鍋（臺） |
+
+    | --- | --- | --- |
+
+    | 唐唐 | 20 | 10 |
+
+    | 蘭蘭 | 12 | 24 |'
   shared_asset: g1_28_29
   tags:
     unit:
@@ -847,6 +1003,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組缺圖，無法比較數值
+    fixed_by: agent
+    fix_note: （人工修正：補充唐唐與蘭蘭生產可能組合表、修正題組錯字並補齊解答與解析）
+  explanation: 唐唐生產電鍋20＞12具絕對利益，生產1臺電鍋機會成本為0.5臺氣炸鍋；蘭蘭生產氣炸鍋24＞10具絕對利益，生產1臺電鍋機會成本為2臺氣炸鍋。因唐唐生產電鍋機會成本較小（0.5＜2），具有電鍋之比較利益，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_29
   section: 1
   number: 29
@@ -862,7 +1025,15 @@ questions:
     content: 電鍋和氣炸鍋的總產量會比尚未分工前還多
   - label: D
     content: 唐唐從國外網站進口更多氣炸鍋的周邊配件
-  group_stem: 假設唐唐跟蘭蘭在同樣的資源和技術下都可以生產電鍋與氣炸鍋，電鍋他們各自的生產可能曲線（PPC）如圖所示
+  group_stem: '假設唐唐跟蘭蘭在同樣的資源和技術下都可以生產電鍋與氣炸鍋，他們各自的最大產量如下表所示：
+
+    | 生產者 | 僅生產電鍋（臺） | 僅生產氣炸鍋（臺） |
+
+    | --- | --- | --- |
+
+    | 唐唐 | 20 | 10 |
+
+    | 蘭蘭 | 12 | 24 |'
   shared_asset: g1_28_29
   tags:
     unit:
@@ -875,6 +1046,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組缺圖，但依題意可判斷單元
+    fixed_by: agent
+    fix_note: （人工修正：補充唐唐與蘭蘭生產可能組合表並補齊解答與解析）
+  explanation: 依據比較利益法則，唐唐專業生產電鍋、蘭蘭專業生產氣炸鍋後進行交換，資源配置更有效率，兩者之總產量將大於分工前各自生產之總和，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s1_30
   section: 1
   number: 30
@@ -994,7 +1172,19 @@ questions:
   number: 34
   type: multiple
   page: 6
-  stem: 下表為阿凱對於某國口罩市場所進行的調查，其中左半部的供給、需求價量關係是在新冠肺炎（COVID-19）爆發前的資料，右半部的供給、需求價量關係則是在疫情爆發後的資料。根據表中資料，有關該國口罩市場的敘述，下列哪些正確？
+  stem: '下表為阿凱對於某國口罩市場所進行的調查，其中左半部的供給、需求價量關係是在新冠肺炎（COVID-19）爆發前的資料，右半部的供給、需求價量關係則是在疫情爆發後的資料。根據表中資料，有關該國口罩市場的敘述，下列哪些正確？（多選）
+
+    | 價格（元／片） | 疫情前需求量（萬片） | 疫情前供給量（萬片） | 疫情後需求量（萬片） | 疫情後供給量（萬片） |
+
+    | --- | --- | --- | --- | --- |
+
+    | 4 | 40 | 20 | 70 | 20 |
+
+    | 6 | 30 | 30 | 60 | 30 |
+
+    | 8 | 20 | 40 | 50 | 40 |
+
+    | 10 | 10 | 50 | 40 | 50 |'
   options:
   - label: A
     content: 新冠肺炎疫情爆發，將會使該國口罩市場的需求增加
@@ -1028,12 +1218,35 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺表，無法核對數據
+    fixed_by: agent
+    fix_note: （人工修正：補充疫情前後口罩供需調查表並補齊解答與解析）
+  explanation: 由表可知：(A)正，疫情後各價位需求量均增加（需求右移）；(B)誤，供給量不變；(C)誤，均衡價格由6元升至8～10元之間，均衡數量由30萬片增至40～50萬片之間；(D)正，疫情後售價8元時需求量50萬片＞供給量40萬片，供不應求；(E)正，均衡價格上升。故選(A)(D)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - D
+  - E
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s2_35
   section: 2
   number: 35
   type: multiple
   page: 6
-  stem: 小華有天到農場購買草莓，小華的願付價格、農場老闆的願售價格如表格所示。請間依據下表，下列哪些敘述正確？
+  stem: '小華有天到農場購買草莓，假設當時草莓市場價格為每斤50元，小華的願付價格、農場老闆的願售價格如下表所示。請問依據下表，下列哪些敘述正確？（多選）
+
+    | 數量（斤） | 小華願付價格（元） | 老闆願售價格（元） |
+
+    | --- | --- | --- |
+
+    | 第1斤 | 65 | 40 |
+
+    | 第2斤 | 60 | 45 |
+
+    | 第3斤 | 55 | 50 |
+
+    | 第4斤 | 50 | 55 |
+
+    | 第5斤 | 45 | 60 |'
   options:
   - label: A
     content: 隨著小華消費的數量增加，個人額外增加的滿足感會愈大
@@ -1067,6 +1280,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺表，無法核對數據
+    fixed_by: agent
+    fix_note: （人工修正：補充草莓願付願售價格表、修正題幹錯字「請間」並補齊解答與解析）
+  explanation: (A)誤，依邊際效用遞減法則，消費數量愈多，額外增加的滿足感愈小；(B)正，買2斤之消費者剩餘＝(65－50)＋(60－50)＝25元；(C)誤，賣3斤之生產者剩餘＝(50－40)＋(50－45)＋(50－50)＝15元；(D)正，第5斤市價50元高於願付價格45元，不會購買；(E)誤，第3斤市價50元等於願售價格50元，老闆願意賣出。故選(B)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - D
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s2_36
   section: 2
   number: 36
@@ -1099,16 +1320,32 @@ questions:
   number: 37
   type: multiple
   page: 6
-  stem: '下表是星星國手機市場的供需表。若星星國政府認為由於手機的普遍導致人民產生「科技冷漠」，因此試圖推動價格下限，希望民眾減少購買手機，將生活重心放在人與人之間的相處。依據本文及表中的數據，下列哪些選項正確？
+  stem: '下表是星星國手機市場的供需表。若星星國政府認為由於手機的普遍導致人民產生「科技冷漠」，因此試圖推動價格下限，希望民眾減少購買手機，將生活重心放在人與人之間的相處。依據本文及表中的數據，下列哪些選項正確？（多選）
 
-    (E)將下限定在10,000元所產生的無謂損失將比規定在15,000元來得大'
+    | 價格（元） | 需求量（萬臺） | 供給量（萬臺） |
+
+    | --- | --- | --- |
+
+    | 10,000 | 8 | 2 |
+
+    | 15,000 | 6 | 4 |
+
+    | 20,000 | 5 | 5 |
+
+    | 25,000 | 4 | 6 |
+
+    | 30,000 | 2 | 8 |'
   options:
   - label: A
     content: 若政府想達到其目的，設一個有效的價格下限，可將下限設在25,000元
   - label: B
     content: 若該國政府將價格下限定在15,000元，將產生2萬臺的供不應求
   - label: C
-    content: 該國政府是想要透過直接管制的方式，降低手機產生的外部成本 (C)將下限定在30,000元所產生的無謂損失將比規定在25,000 元來得大
+    content: 該國政府是想要透過直接管制的方式，降低手機產生的外部成本
+  - label: D
+    content: 將下限定在30,000元所產生的無謂損失將比規定在25,000元來得大
+  - label: E
+    content: 將下限定在10,000元所產生的無謂損失將比規定在15,000元來得大
   assets:
   - key: s2_37_f1
     kind: figure
@@ -1141,6 +1378,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺表且選項排版錯位
+    fixed_by: agent
+    fix_note: （人工修正：補充星星國手機市場供需表、修正選項錯位與重複標號並補齊解答與解析）
+  explanation: 市場均衡價格為20,000元、均衡數量5萬臺。(A)正，將價格下限設於25,000元（高於均衡價）屬有效價格下限，交易量縮減為4萬臺，可減少購買；(B)誤，15,000元低於均衡價為無效價格下限；(C)誤，價格管制屬間接價格誘因干預而非直接禁令管制；(D)正，價格下限愈高（30,000＞25,000），交易量縮減愈多，無謂損失愈大；(E)誤，10,000與15,000均為無效價格下限，無謂損失皆為0。故選(A)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - D
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s2e2_s3_1
   section: 3
   number: 1

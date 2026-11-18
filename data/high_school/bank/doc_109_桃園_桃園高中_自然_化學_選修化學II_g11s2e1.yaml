@@ -516,7 +516,9 @@ questions:
   number: 16
   type: single
   page: 1
-  stem: 在氮原，電子存在之軌域改變如下時，哪一個驟為ΔH＞0？6s $──→$ 5d $──→$ 4f $──→$ 3d $──→$ 4s $──→$ 3p
+  stem: '在氮原子中，電子存在之軌域改變如下時，哪一個步驟為ΔH＞0？
+
+    (1) 6s → 5d；(2) 5d → 4f；(3) 4f → 3d；(4) 3d → 4s；(5) 4s → 3p'
   options:
   - label: A
     content: (1)
@@ -542,13 +544,33 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「氮原」、「哪一個驟」，且箭頭步驟標示(1)~(5)缺漏
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字與步驟編號(1)~(5)並補齊答案解析）
   difficulty: 2
+  explanation: 氮為多電子原子，軌域能量順序依 $(n+l)$ 規則為 $3p < 4s < 3d < 6s < 4f < 5d$。僅步驟(1)由 $6s(n+l=6)$ 躍遷至 $5d(n+l=7)$ 為能量升高（$\Delta H > 0$）。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_桃園_桃園高中_自然_化學_選修化學II_g11s2e1_s1_17
   section: 1
   number: 17
   type: single
   page: 1
-  stem: 科學家密立坎所提出的電負度量度法：$E_{N}$＝$\frac{ | IE |＋| EA | }{ 2 }$。此量值除以一個適當因子即與鮑林之電負度值相同。已知右列數，則此三原子的非金屬性大小次序為何？
+  stem: '科學家密立坎所提出的電負度量度法：$E_{N}$＝$\frac{ | IE |＋| EA | }{ 2 }$。此量值除以一個適當因子即與鮑林之電負度值相同。已知下表三原子的游離能（IE）與電子親和力（EA）數據（kJ/mol）：
+
+    | 原子 | $|IE|$ | $|EA|$ |
+
+    | --- | --- | --- |
+
+    | X | 496 | 53 |
+
+    | Y | 1681 | 328 |
+
+    | Z | 1086 | 122 |
+
+
+    則此三原子的非金屬性大小次序為何？'
   options:
   - label: A
     content: Z＜Y＜X
@@ -584,7 +606,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「右列數」數據表疑併入選項E附圖中
+    fixed_by: agent
+    fix_note: （人工修正：補充數據表、清除選項E多餘附圖並補齊答案解析）
   difficulty: 2
+  explanation: 計算密立坎電負度指標：$E_{N}(X) = (496+53)/2 = 274.5$，$E_{N}(Y) = (1681+328)/2 = 1004.5$，$E_{N}(Z) = (1086+122)/2 = 604.0$。電負度愈大非金屬性愈強，故非金屬性大小為 $X < Z < Y$。選(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - E
 - id: doc_109_桃園_桃園高中_自然_化學_選修化學II_g11s2e1_s1_18
   section: 1
   number: 18

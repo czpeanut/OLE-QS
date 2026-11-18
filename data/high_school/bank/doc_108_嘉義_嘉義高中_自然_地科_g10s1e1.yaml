@@ -359,16 +359,16 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: <u>詩詩</u>在小學時參加過<u>美國</u>的恐龍考察旅遊，記得曾看過附圖，圖中呈現了地球歷史上最顯著的五次大滅絕事件和生物「科」的數目變化之情形，請問在圖中哪一次大滅絕事件發生後，恐龍才逐漸興盛，並成為地球上主要的物種？
+  stem: <u>詩詩</u>在小學時參加過<u>美國</u>的恐龍考察旅遊，記得曾看過地質歷史上的五次生物大滅絕事件（依序為：1. 奧陶紀末、2. 泥盆紀末、3. 二疊紀末、4. 三疊紀末、5. 白堊紀末）。請問在哪一次大滅絕事件發生後，恐龍才逐漸興盛，並成為中生代地球上主要的物種？
   options:
   - label: A
-    content: 第1次
+    content: 第 1 次
   - label: B
-    content: 第2次
+    content: 第 2 次
   - label: C
-    content: 第3次
+    content: 第 3 次
   - label: D
-    content: 第4次 (B)第5次
+    content: 第 4 次
     asset:
       key: s1_10_optD
       file: doc_108_嘉義_嘉義高中_自然_地科_g10s1e1/s1_10_optD.png
@@ -379,6 +379,8 @@ questions:
         - 41.8
         - 218.7
         - 153.85
+  - label: E
+    content: 第 5 次
   answer:
   - C
   answer_status: verified
@@ -397,7 +399,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D與E粘連誤植為「(B)第5次」
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項D與E，移除optD附圖並於題幹補充五次大滅絕順序與解析）
   difficulty: 2
+  explanation: 第 3 次大滅絕（約 2.5 億年前的二疊紀末大滅絕）使大量古生代海洋與陸生生物（如三葉蟲）滅絕，之後進入中生代（三疊紀、侏羅紀、白堊紀），爬蟲類與恐龍開始興盛並稱霸地球。
 - id: doc_108_嘉義_嘉義高中_自然_地科_g10s1e1_s1_11
   section: 1
   number: 11
@@ -1864,7 +1869,7 @@ questions:
   number: 50
   type: single
   page: 5
-  stem: 若假設P波波速5km／s，S波波速3km／s，請問甲測站與震源之距離約為多少km？( 每一大格為20秒 )
+  stem: 已知甲測站震波圖上 P 波與 S 波到達的時間差為 2 大格（每一大格為 20 秒）。若假設 P 波波速 5 km／s，S 波波速 3 km／s，請問甲測站與震源之距離約為多少 km？
   options:
   - label: A
     content: '80'
@@ -1892,7 +1897,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 屬前題題組子題，本筆資料未附前文與震波圖
+    fixed_by: agent
+    fix_note: （人工修正：補充前題震波圖時間差條件（2大格=40秒）與解析）
   difficulty: 2
+  explanation: P 波與 S 波到達時間差 $\Delta t = 2 \times 20 = 40$ 秒。設震源距為 $d$，則 $\frac{d}{3} - \frac{d}{5} = 40 \Rightarrow \frac{2d}{15} = 40 \Rightarrow d = 300\text{ km}$。
 shared_assets:
 - key: g1_46_48
   label: 題組附圖

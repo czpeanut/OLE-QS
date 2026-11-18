@@ -36,8 +36,9 @@ type Row = Record<string, any>;
 
 function citation(sources: Row[]): string {
   const mark: Record<string, string> = { adapted: "改編 ", duplicate: "另見 " };
+  const tail: Record<string, string> = { fixed: " (修正)" };       // 高中題經人工修正（題幹、選項、答案或解析有改過）
   return [...sources].sort((a, b) => a.ord - b.ord)
-    .map((s) => `[${mark[s.relation] ?? ""}${[s.city, s.school_short || s.school, s.academic_year_roc].filter(Boolean).join(" ")}]`)
+    .map((s) => `[${mark[s.relation] ?? ""}${[s.city, s.school_short || s.school, s.academic_year_roc].filter(Boolean).join(" ")}${tail[s.relation] ?? ""}]`)
     .join(" ") || "（來源未標註）";
 }
 

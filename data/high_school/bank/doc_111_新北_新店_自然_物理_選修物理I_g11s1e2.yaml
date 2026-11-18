@@ -231,7 +231,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 將質量分別為1 kg、3 kg及2 kg的ABC三物體相互接觸，置於光滑的水平面上，分別於左、右兩邊施以水平力20N及8N，如圖所示。則BC間的作用力之量值為多少N？
+  stem: 將質量分別為 1 kg、3 kg 及 2 kg 的 A、B、C 三物體由左至右依序相互接觸，置於光滑的水平面上，分別於 A 的左側與 C 的右側施以水平向右 20 N 及水平向左 8 N 的推力。則 B、C 間的作用力之量值為多少 N？
   options:
   - label: A
     content: '2'
@@ -243,7 +243,6 @@ questions:
     content: '12'
   - label: E
     content: '18'
-  group_stem: <u>題組：1～2</u> 自地面以53°仰角50 m／s速率將一個足球斜向踢出，最後足球再度落回地面。設重力加速度g＝10 m／$s^{2}$，則：
   assets:
   - key: s1_6_f1
     kind: figure
@@ -273,13 +272,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤套題組1~2之group_stem，實際為獨立題目
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、補充排列順序（免附圖）並補全解析）
   difficulty: 2
+  explanation: 系統整體向右加速度 $a＝\frac{20-8}{1+3+2}＝2$ m／$s^{2}$。單獨分析 C 物體：$N_{BC}－8＝2\times 2 \Rightarrow N_{BC}＝12$ N。故選(D)。
 - id: doc_111_新北_新店_自然_物理_選修物理I_g11s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 右圖中ABC三物體與桌面間的摩擦力分別為1N、3N、2N，則細繩張力$T_{1}$的量值為多少N？
+  stem: 質量分別為 1 kg、3 kg、2 kg 的 A、B、C 三物體由左至右以細繩連接置於水平桌面上，三物體與桌面間的動摩擦力分別為 1 N、3 N、2 N，$T_{1}$ 為 B 與 C 之間的細繩張力。今在 C 的右端施以 27 N 的水平向右拉力使三物體一起向右加速運動，則細繩張力 $T_{1}$ 的量值為多少 N？
   options:
   - label: A
     content: '17'
@@ -291,7 +293,6 @@ questions:
     content: '12'
   - label: E
     content: '19'
-  group_stem: <u>題組：1～2</u> 自地面以53°仰角50 m／s速率將一個足球斜向踢出，最後足球再度落回地面。設重力加速度g＝10 m／$s^{2}$，則：
   assets:
   - key: s1_7_f1
     kind: figure
@@ -321,7 +322,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤套題組1~2之group_stem，實際為獨立題目
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、補充施力與繩張力位置（免附圖）並補全解析）
   difficulty: 2
+  explanation: 整體向右加速度 $a＝\frac{27-(1+3+2)}{1+3+2}＝\frac{21}{6}＝3.5$ m／$s^{2}$。將 A、B 視為一體（總質量 4 kg，總摩擦 4 N）：$T_{1}－4＝4\times 3.5 \Rightarrow T_{1}＝18$ N。故選(B)。
 - id: doc_111_新北_新店_自然_物理_選修物理I_g11s1e2_s1_8
   section: 1
   number: 8

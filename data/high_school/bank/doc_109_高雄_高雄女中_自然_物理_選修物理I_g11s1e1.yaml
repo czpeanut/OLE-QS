@@ -31,7 +31,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 已知電阻的因次為$\frac{ML^{2}T^{－3}}{ A^{2} }$，磁場的因次為$\frac{TM^{－2}}{ A }$。（L：長度。M：質量。T：時間。A：電流）考慮如圖的線路，右邊是質量為m而長度為l的金屬棒，可以在導線上滑動形成導通的迴路，且滑動時摩擦力可忽略不計。將整個迴路放置於量值為B、方向為射入紙面（以 × 表示）的均勻磁場中，除了電阻R外，假設此迴路其餘部分的電阻皆可忽略。如果金屬棒有一初速v，則經過一段特定時間t＝0.69τ之後，金屬棒的速率就會減半成v／2，而且τ大致上與初速無關。其原理是因為電磁戚應：金屬棒的運動造成迴路的磁通量改變，產生應電流，而此電流讓運動中的金屬棒，在磁場中受到一反向的磁力，因此會減速，且應電流在電阻R上會產生功率消耗。τ由時間的因次求得，下列何者為τ的表示式？
+  stem: 已知電阻的因次為 $\frac{ML^{2}T^{-3}}{A^{2}}$，磁場的因次為 $\frac{MT^{-2}}{A}$（L：長度，M：質量，T：時間，A：電流）。考慮一導線迴路接有電阻 R，右邊為質量 m 而長度 l 的金屬棒，可在導線上無摩擦滑動形成導通迴路。將整個迴路置於量值為 B、垂直射入紙面的均勻磁場中，其餘部分電阻忽略不計。若金屬棒具初速 v，經過特定時間 $t＝0.69\tau$ 後速率減半成 $v/2$，且 $\tau$ 與初速無關。由時間的因次求得，下列何者為 $\tau$ 的表示式？
   options:
   - label: A
     content: $\frac{mR}{ l^{2}B^{2} }$
@@ -55,9 +55,9 @@ questions:
       - 254.3
       - 322.15
   answer:
-  - D
-  answer_status: verified
-  answer_source: answer_key
+  - A
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S1-1-3
@@ -72,7 +72,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹磁場因次誤植為TM^{-2}/A（應為MT^{-2}/A），且答案D與因次推導結果A不符
+    fixed_by: agent
+    fix_note: （人工修正：修正磁場因次與錯字、更正答案為A並補全解析）
   difficulty: 3
+  explanation: 檢驗(A) $\frac{mR}{l^{2}B^{2}}$ 的因次：$\frac{M\cdot(ML^{2}T^{-3}A^{-2})}{L^{2}\cdot(M^{2}T^{-4}A^{-2})}＝\frac{M^{2}L^{2}T^{-3}A^{-2}}{M^{2}L^{2}T^{-4}A^{-2}}＝T$，符合時間因次。故選(A)。
+  review_note: 原答案卷答案 ['D']，執行 agent 修正為 ['A']
 - id: doc_109_高雄_高雄女中_自然_物理_選修物理I_g11s1e1_s1_2
   section: 1
   number: 2

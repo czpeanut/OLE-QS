@@ -248,7 +248,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 承上題，隨著甲蟲由碗底逐漸上爬，在未發生滑動之前，其上爬過程中，摩擦力如何變化？
+  stem: 承一隻重量為 mg 的甲蟲沿半徑為 R 的半球形碗內面由碗底逐漸上爬之情境，在未發生滑動之前，其上爬過程中摩擦力如何變化？
   options:
   - label: A
     content: 靜摩擦力變大，最大靜摩擦力變大
@@ -260,14 +260,11 @@ questions:
     content: 靜摩擦力變大，最大靜摩擦力變小
   - label: E
     content: 靜摩擦力變小，最大靜摩擦力變大
-  group_stem: '<u>第1.～2.題為題組</u>
-
-    一人在水平地面上，以相同大小的力F＝mg，分別以斜向上拉及斜向下推等兩種施力方式於行李箱，行李箱的質量為m，重力加速度量值為g，若拉力及推力與水平面的夾角皆為θ，如圖所示。已知行李箱與地面的靜摩擦係數為0.50，動摩擦係數為0.40，且sinθ＝0.60，cosθ＝0.80，'
   shared_asset: g1_1_20
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
+  - D
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-3-2
@@ -282,13 +279,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem誤植第1~2題題組文字，不影響本題作答
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、補全獨立情境並更正答案為D與解析）
   difficulty: 2
+  explanation: 由碗底上爬時，與鉛直線夾角 $\theta$ 變大。靜摩擦力 $f_{s}＝mg\sin\theta$ 隨 $\theta$ 變大而變大；正向力 $N＝mg\cos\theta$ 隨 $\theta$ 變大而變小，故最大靜摩擦力 $f_{s,max}＝\mu_{s}N$ 變小。故選(D)。
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['D']
 - id: doc_109_高雄_高雄女中_自然_物理_選修物理I_g11s1e2_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 水平桌面上有A、B兩塊三角形木塊堆疊在一起，A、B間的接觸面完全光滑，B呈靜止狀態，如圖，A、B兩木塊的重量分別為W與3W，則這時A、B之間的相互作用力量值為何？
+  stem: 粗糙水平桌面上有 B、A 兩塊三角形木塊堆疊在一起（B 在下，其斜面傾角為 30° 且向右下方傾斜；A 置於 B 的斜面上），A、B 間的接觸面完全光滑，B 呈靜止狀態而 A 沿斜面下滑。已知 A、B 兩木塊的重量分別為 W 與 3W，則這時 A、B 之間的相互作用力量值為何？
   options:
   - label: A
     content: $\frac{1}{ 2 }$W
@@ -300,9 +301,6 @@ questions:
     content: $\frac{2}{ \sqrt{ 3 } }$W
   - label: E
     content: 2W
-  group_stem: '<u>第1.～2.題為題組</u>
-
-    一人在水平地面上，以相同大小的力F＝mg，分別以斜向上拉及斜向下推等兩種施力方式於行李箱，行李箱的質量為m，重力加速度量值為g，若拉力及推力與水平面的夾角皆為θ，如圖所示。已知行李箱與地面的靜摩擦係數為0.50，動摩擦係數為0.40，且sinθ＝0.60，cosθ＝0.80，'
   assets:
   - key: s1_7_f1
     kind: figure
@@ -316,9 +314,9 @@ questions:
       - 626.55
   shared_asset: g1_1_20
   answer:
-  - C
-  answer_status: verified
-  answer_source: answer_key
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-3-2
@@ -333,13 +331,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem誤植第1~2題題組文字，不影響本題作答
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、補充斜面傾角條件（免附圖）並更正答案為B與解析）
   difficulty: 3
+  explanation: A、B 接觸面光滑，相互作用力僅有正向力。垂直斜面方向無加速度，故正向力 $N_{AB}＝W\cos 30°＝\frac{\sqrt{3}}{2}W$。故選(B)。
+  review_note: 原答案卷答案 ['C']，執行 agent 修正為 ['B']
 - id: doc_109_高雄_高雄女中_自然_物理_選修物理I_g11s1e2_s1_8
   section: 1
   number: 8
   type: single
   page: 1
-  stem: 承上題，關於地面和B之間的作用力何者正確？
+  stem: 承上題（A 重 W 沿 B 的 30° 光滑斜面向右下方自由下滑，B 重 3W 靜止於水平地面），關於地面和 B 之間的作用力何者正確？
   options:
   - label: A
     content: B受地面的摩擦力向右，B受地面正向力量值小於4W
@@ -351,14 +353,11 @@ questions:
     content: B受地面的摩擦力向左，B受地面正向力量值等於4W
   - label: E
     content: B受地面的摩擦力為零，B受地面正向力量值等於4W
-  group_stem: '<u>第1.～2.題為題組</u>
-
-    一人在水平地面上，以相同大小的力F＝mg，分別以斜向上拉及斜向下推等兩種施力方式於行李箱，行李箱的質量為m，重力加速度量值為g，若拉力及推力與水平面的夾角皆為θ，如圖所示。已知行李箱與地面的靜摩擦係數為0.50，動摩擦係數為0.40，且sinθ＝0.60，cosθ＝0.80，'
   shared_asset: g1_1_20
   answer:
-  - D
-  answer_status: verified
-  answer_source: answer_key
+  - A
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-3-2
@@ -373,7 +372,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem誤植第1~2題題組文字，不影響本題作答
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、補充上題情境並更正答案為A與解析）
   difficulty: 3
+  explanation: A 對 B 的正向力 $N_{AB}＝\frac{\sqrt{3}}{2}W$ 指向左下方，故 B 受地面向右的靜摩擦力以平衡水平分力；地面正向力 $N_{地}＝3W＋N_{AB}\cos 30°＝3W＋\frac{3}{4}W＝3.75W＜4W$。故選(A)。
+  review_note: 原答案卷答案 ['D']，執行 agent 修正為 ['A']
 - id: doc_109_高雄_高雄女中_自然_物理_選修物理I_g11s1e2_s1_10
   section: 1
   number: 10
@@ -482,7 +485,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 承上題，兩人站在梯上的位置不變，隨著圖中的θ角增加，在不滑動的情況下，則地面施予梯子之靜摩擦力大小如何變化？
+  stem: 承上題（一無重梯子斜靠於光滑鉛直牆面與粗糙水平地面之間，梯與牆面夾角為 θ，兩人站在梯上的位置不變），隨著圖中梯與牆面的夾角 θ 增加，在不滑動的情況下，地面施予梯子之靜摩擦力大小如何變化？
   options:
   - label: A
     content: 變大
@@ -494,14 +497,11 @@ questions:
     content: 先變大再變小
   - label: E
     content: 先變小再變大
-  group_stem: '<u>第1.～2.題為題組</u>
-
-    一人在水平地面上，以相同大小的力F＝mg，分別以斜向上拉及斜向下推等兩種施力方式於行李箱，行李箱的質量為m，重力加速度量值為g，若拉力及推力與水平面的夾角皆為θ，如圖所示。已知行李箱與地面的靜摩擦係數為0.50，動摩擦係數為0.40，且sinθ＝0.60，cosθ＝0.80，'
   shared_asset: g1_1_20
   answer:
-  - B
-  answer_status: verified
-  answer_source: answer_key
+  - A
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-3-2
@@ -516,7 +516,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem誤植第1~2題題組文字，不影響本題作答
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、補充上題情境並更正答案為A與解析）
   difficulty: 3
+  explanation: 由上題可知靜摩擦力 $f_{s}＝\frac{5}{4}W\tan\theta$，當 $\theta$ 增加時 $\tan\theta$ 變大，故靜摩擦力變大。故選(A)。
+  review_note: 原答案卷答案 ['B']，執行 agent 修正為 ['A']
 - id: doc_109_高雄_高雄女中_自然_物理_選修物理I_g11s1e2_s1_13
   section: 1
   number: 13
@@ -708,7 +712,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 承上題，車外觀察者見小球對地的初速與水平的夾角α，則下列何者正確？
+  stem: 承上題（平板車向右等速 $v$，小球相對車以初速 $v$ 向右上方夾角 $\theta$ 拋出，且 $\tan\theta＝\frac{3}{4}$），車外觀察者見小球對地的初速與水平的夾角為 α，則下列何者正確？
   options:
   - label: A
     content: α＞45°＞θ
@@ -720,14 +724,11 @@ questions:
     content: 45°＞θ＞α
   - label: E
     content: 無法得知
-  group_stem: '<u>第1.～2.題為題組</u>
-
-    一人在水平地面上，以相同大小的力F＝mg，分別以斜向上拉及斜向下推等兩種施力方式於行李箱，行李箱的質量為m，重力加速度量值為g，若拉力及推力與水平面的夾角皆為θ，如圖所示。已知行李箱與地面的靜摩擦係數為0.50，動摩擦係數為0.40，且sinθ＝0.60，cosθ＝0.80，'
   shared_asset: g1_1_20
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
+  - D
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S1-2-4
@@ -742,13 +743,17 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: group_stem誤植第1~2題題組文字，不影響本題作答
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、補充上題情境並更正答案為D與解析）
   difficulty: 3
+  explanation: 車外觀察者見小球對地水平初速 $v_{x}＝v＋\frac{4}{5}v＝\frac{9}{5}v$，鉛直初速 $v_{y}＝\frac{3}{5}v$，故 $\tan\alpha＝\frac{v_{y}}{v_{x}}＝\frac{3}{9}＝\frac{1}{3}$。因 $\frac{1}{3}＜\frac{3}{4}＜1$，即 $\tan\alpha＜\tan\theta＜\tan 45°$，故 $45°＞\theta＞\alpha$。故選(D)。
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['D']
 - id: doc_109_高雄_高雄女中_自然_物理_選修物理I_g11s1e2_s1_19
   section: 1
   number: 19
   type: single
   page: 2
-  stem: 長度20 cm，力常數k＝2 gw／cm的完全相同之彈簧兩條a，b（質量不計），質量20 g之重物m、n兩個如圖連接在彈簧上，彈簧a之上端固定於A，重物n放在平台B上，全體保持鉛直，A、B之距離為50 cm時，重物n作用於平台之力為？（m、n的厚度不計）
+  stem: 長度 20 cm、力常數 k＝2 gw／cm 的完全相同之彈簧兩條 a、b（質量不計），與質量 20 g 之重物 m、n 兩個依序鉛直串接：彈簧 a 上端固定於天花板 A、下端接重物 m，重物 m 下方接彈簧 b，彈簧 b 下端接重物 n，重物 n 放在平台 B 上，全體保持鉛直。當 A、B 之距離為 50 cm 時，重物 n 作用於平台 B 之力為何？（m、n 的厚度不計）
   options:
   - label: A
     content: '0'
@@ -760,9 +765,6 @@ questions:
     content: '20'
   - label: E
     content: 25 gw
-  group_stem: '<u>第1.～2.題為題組</u>
-
-    一人在水平地面上，以相同大小的力F＝mg，分別以斜向上拉及斜向下推等兩種施力方式於行李箱，行李箱的質量為m，重力加速度量值為g，若拉力及推力與水平面的夾角皆為θ，如圖所示。已知行李箱與地面的靜摩擦係數為0.50，動摩擦係數為0.40，且sinθ＝0.60，cosθ＝0.80，'
   assets:
   - key: s1_19_f1
     kind: figure
@@ -793,7 +795,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem誤植第1~2題題組文字，不影響本題作答
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、補充串接結構條件（免附圖）並補全解析）
   difficulty: 3
+  explanation: 兩彈簧原長共 40 cm，現 A、B 相距 50 cm，故總伸長量 $x_{a}＋x_{b}＝10$ cm。對重物 m 力平衡：$k x_{a}＝mg＋k x_{b} \Rightarrow 2(x_{a}－x_{b})＝20 \Rightarrow x_{a}－x_{b}＝10$ cm。聯立解得 $x_{a}＝10$ cm、$x_{b}＝0$ cm，即彈簧 b 無形變。重物 n 僅受重力與平台正向力平衡，故作用於平台之力為 20 gw。故選(D)。
 - id: doc_109_高雄_高雄女中_自然_物理_選修物理I_g11s1e2_s1_20
   section: 1
   number: 20

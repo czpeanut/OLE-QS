@@ -777,7 +777,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 一對平行金屬板間距d，有一均勻電場。今質量為m的點電荷，以初速$v_{0}$由其中一板的表面出發，如右圖所示。已知點電荷到達另一板的表面時，其速度恰好為零，若不計重力作用，則兩板間的電場大小及方向各為何？
+  stem: 一對水平放置的平行金屬板間距 d，板間有一均勻電場。今質量為 m、電量為 ＋q（q＞0）的點電荷，以初速 $v_{0}$ 由下板表面鉛直向上出發，已知點電荷到達上板表面時，其速度恰好為零，若不計重力作用，則兩板間的電場大小及方向各為何？
   options:
   - label: A
     content: 電場$\frac{mv_{0}^{2}}{2q}$，電場方向由下而上
@@ -818,7 +818,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹漏植點電荷電量符號 q
+    fixed_by: agent
+    fix_note: （人工修正：補全漏印電量符號q、補充上下板方向條件（免附圖）並補全解析）
   difficulty: 2
+  explanation: 正電荷向上運動減速至零，表示所受電力向下，故電場方向由上而下。由功能定理：$qEd＝\frac{1}{2}mv_{0}^{2} \Rightarrow E＝\frac{mv_{0}^{2}}{2dq}$。故選(B)。
 - id: doc_113_新北_新北高中_自然_物理_選修物理V_g12s1e3_s1_20
   section: 1
   number: 20

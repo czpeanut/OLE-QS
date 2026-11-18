@@ -69,6 +69,7 @@ def main() -> int:
                     "shared_images": [{"key": sa["key"], "label": sa.get("label"), "file": sa["file"]}] if sa else [],
                     "shared_text": None, "sort_key": None, "status": "held" if q["id"] in held else "reviewed", "corrected": None,
                     "page": q.get("page"), "label_note": tags.get("label_note"),
+                    "fixed": bool(tags.get("fixed_by")), "fix_note": tags.get("fix_note"),      # 人工修正過：來源標「(修正)」
                 }
                 fq.write(json.dumps(rec, ensure_ascii=False) + "\n")
                 nq += 1

@@ -430,7 +430,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 乙骨憂太正在撰寫一份歷史報告，報告中的某個段落是以 1940 年所提出附圖做為論述的基礎，請問這個段落的主題最有可能為何？
+  stem: 乙骨憂太正在撰寫一份歷史報告，報告中的某個段落是以 1940 年日本所提出「以日本與臺灣為中心、圓圈向外擴散涵蓋東亞與東南亞」的地圖做為論述基礎，請問這個段落的主題最有可能為何？
   options:
   - label: A
     content: 韓戰
@@ -467,6 +467,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹提及「附圖」但缺附圖，不過年份與選項仍可作答
+    fixed_by: agent
+    fix_note: （人工修正：補充地圖範圍描述並移除缺圖）
 - id: doc_111_屏東_屏東高中_社會_歷史_g10s2e3_s1_14
   section: 1
   number: 14
@@ -1236,7 +1238,7 @@ questions:
   number: 36
   type: single
   page: 5
-  stem: 附圖是對某組織的概略介紹，由此介紹的內容來加以判斷，此組織應該是
+  stem: 某國際組織的簡介資料顯示：「成立於 1954 年，由美國主導簽署《馬尼拉條約》而建立，旨在於冷戰期間圍堵共產勢力在東南亞的擴張；然而成員國中真正的東南亞國家僅有菲律賓與泰國，成效不彰，最終於 1977 年解散。」由此介紹的內容來加以判斷，此組織應該是
   options:
   - label: A
     content: 華沙公約組織
@@ -1273,6 +1275,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（組織介紹圖卡），僅憑題幹文字無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充國際組織簡介內容並移除缺圖）
 - id: doc_111_屏東_屏東高中_社會_歷史_g10s2e3_s1_37
   section: 1
   number: 37
@@ -1382,7 +1386,7 @@ questions:
   number: 40
   type: single
   page: 6
-  stem: 附圖為一幅政治宣傳漫畫，描述某個時期倫理關係的重大改變。請問這幅漫畫最可能出現在下列哪一個運動期間？
+  stem: 某時期的一幅政治宣傳漫畫描繪子女手持大字報與紅寶書批鬥父母，顯示傳統家庭孝道與倫理關係的重大改變。請問這幅漫畫最可能出現在下列哪一個運動期間？
   options:
   - label: A
     content: 新文化運動
@@ -1419,6 +1423,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（政治宣傳漫畫），僅憑題幹文字難以確認具體運動名稱
+    fixed_by: agent
+    fix_note: （人工修正：補充宣傳漫畫內容描述並移除缺圖）
 - id: doc_111_屏東_屏東高中_社會_歷史_g10s2e3_s1_41
   section: 1
   number: 41
@@ -1528,7 +1534,7 @@ questions:
   number: 44
   type: single
   page: 7
-  stem: 附圖是說明近年來東亞地區的重要爭議，由圖中所標示出的範圍來加以判斷，此圖所表示的應該是
+  stem: 某張標示近年來東亞地區重要爭議的地圖，範圍涵蓋中國大陸以南、中南半島以東、菲律賓以西與婆羅洲以北的海域（包含西沙群島與南沙群島），由圖中所標示出的範圍來加以判斷，此圖所表示的應該是
   options:
   - label: A
     content: 釣魚臺列島衝突
@@ -1565,6 +1571,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（東亞爭議範圍地圖），僅憑題幹文字無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充爭議海域地理範圍描述並移除缺圖）
 - id: doc_111_屏東_屏東高中_社會_歷史_g10s2e3_s1_45
   section: 1
   number: 45
@@ -1715,7 +1723,7 @@ questions:
   number: 49
   type: multiple
   page: 8
-  stem: 附圖是某一國際組織的分布地圖，關於這個組織的敘述下列哪些正確？
+  stem: 某國際組織的分布地圖顯示，其成員國幾乎涵蓋整個環太平洋地區（包含美國、日本、中國、澳洲、臺灣、東協諸國與智利等），關於這個組織的敘述下列哪些正確？
   options:
   - label: A
     content: SEATO 是這個組織的縮寫
@@ -1755,3 +1763,5 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（國際組織分布地圖），僅憑題幹文字無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充成員國分布範圍描述並移除缺圖）

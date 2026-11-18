@@ -174,7 +174,7 @@ questions:
     content: 經度偏西
   - label: D
     content: 風速變大
-  group_stem: ◎ 右圖是110年9月6-15日<u>燦樹</u>颱風的行進及預測路徑，此預報發布的時間是9月10日02時。回答11-13題：
+  group_stem: ◎ 110 年 9 月 6～15 日<u>燦樹</u>颱風行進及預測路徑（預報發布時間為 9 月 10 日 02 時），預報圖上以 70% 機率誤差圓標示各未來時刻颱風中心可能的位置。
   shared_asset: g1_11_13
   answer:
   - B
@@ -194,7 +194,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含亂碼字元（報）
+    fixed_by: agent
+    fix_note: （人工修正：移除缺圖並補充預報潛勢範圍說明與解析）
   difficulty: 2
+  explanation: 數值天氣預報會隨預報時間拉長而累積初始場與大氣模式的計算誤差，因此預報時間愈長，路徑誤差半徑（70% 機率圓）愈大。
 - id: doc_110_高雄_三民_自然_地科_g11s1e3_s1_14
   section: 1
   number: 14

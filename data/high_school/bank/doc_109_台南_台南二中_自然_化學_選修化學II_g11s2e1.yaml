@@ -381,7 +381,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 將氫原子的電子依下列兩種情況激發，試問n值為若干？
+  stem: 將氫原子的電子依下列兩種情況激發：(1) 由基態（$n=1$）激發至第 $n$ 能階，吸收能量為 $\Delta E_{1}$；(2) 由第 $n$ 能階激發至游離態（$n=\infty$），吸收能量為 $\Delta E_{2}$。已知 $\Delta E_{1}：\Delta E_{2} = 8：1$，試問 $n$ 值為若干？
   options:
   - label: A
     content: '3'
@@ -421,7 +421,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹缺兩種激發情況之文字或附圖，無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏之激發條件、清除選項E多餘附圖欄位並補齊解析）
   difficulty: 3
+  explanation: 由氫原子能階公式：$\Delta E_{1} \propto (1 - \frac{1}{n^{2}})$，$\Delta E_{2} \propto \frac{1}{n^{2}}$。依題意 $\frac{1 - 1/n^{2}}{1/n^{2}} = n^{2} - 1 = 8$，解得 $n = 3$。故選(A)。
 - id: doc_109_台南_台南二中_自然_化學_選修化學II_g11s2e1_s1_12
   section: 1
   number: 12

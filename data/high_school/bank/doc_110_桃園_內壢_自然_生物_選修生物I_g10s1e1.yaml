@@ -896,13 +896,13 @@ questions:
     content: 檸檬酸循環
   - label: D
     content: 葡萄糖分解
-  group_stem: 第23～26題為題組
+  group_stem: 細胞有氧呼吸過程示意圖中，葡萄糖於細胞質經糖解作用產生丙酮酸，丙酮酸進入粒線體基質轉變為乙醯輔酶A後，進入編號26的循環反應，該反應會釋出二氧化碳並產生NADH與FADH2。據此回答下列問題：
   shared_asset: g1_23_26
   answer:
-  - B
-  answer_status: verified
-  answer_source: answer_key
-  explanation: 此循環於粒腺體基質中反應，且會產生二氧化碳，因此可以推知為檸檬酸循環
+  - C
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 編號26的循環反應發生於粒線體基質中且會釋放二氧化碳，為檸檬酸循環（克氏循環），故選(C)。
   tags:
     unit:
       code: BI-S1-2-2
@@ -917,7 +917,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案標示為B（碳反應），與解析所述檸檬酸循環（C）矛盾
+    fixed_by: agent
+    fix_note: （人工修正：補充有氧呼吸循環文字條件並更正矛盾答案為C）
   difficulty: 2
+  review_note: 原答案卷答案 ['B']，執行 agent 修正為 ['C']
 - id: doc_110_桃園_內壢_自然_生物_選修生物I_g10s1e1_s1_27
   section: 1
   number: 27

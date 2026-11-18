@@ -276,7 +276,11 @@ questions:
   number: 8
   type: fill
   page: 1
-  stem: 某飲料店推出滿百享折扣的活動，只要購買的飲料總金額超過一百元即可玩幸運轉盤一次。 已知<u>小黃</u>訂了120元的飲料，可以獲得玩一次幸運轉盤的機會，試問： (1) 該次<u>小黃</u>付款的期望值為＿＿＿＿。 (2) 若<u>小黃</u>愛上這個獎勵制度，連續一星期（7天）每天都來玩一次轉盤賭賭運氣，則轉到一獎的次數標準差為＿＿＿＿。
+  stem: '某飲料店推出滿百享折扣的活動，只要購買的飲料總金額超過一百元即可玩幸運轉盤一次。轉盤獎項如下：一等獎（五折，機率 $0.1$）、二等獎（八折，機率 $0.2$）、三等獎（折價 10 元，機率 $0.3$）、銘謝惠顧（付原價，機率 $0.4$）。已知小黃訂了 $120$ 元的飲料，可以獲得玩一次幸運轉盤的機會，試問：
+
+    (1) 該次小黃付款的期望值為＿＿＿＿元。
+
+    (2) 若小黃連續一星期（7 天）每天都來玩一次轉盤，則轉到一等獎的次數標準差為＿＿＿＿。'
   assets:
   - key: s1_8_f1
     kind: figure
@@ -289,16 +293,12 @@ questions:
       - 360.4
       - 674.85
   answer:
-  - (1) 10.2(元)；(2) 107.7
-  answer_status: verified
-  answer_source: answer_key
-  explanation: '(1)$E(X)=0.1\times (120\times 0.5)+0.2\times (120\times 0.8)+0.3\times (120-10)+0.4\times (-120)=10.2$(元)
+  - (1) $106.2$ 元；(2) $\frac{3\sqrt{7}}{10}$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: '(1) 付款期望值 $= 0.1(60) + 0.2(96) + 0.3(110) + 0.4(120) = 6 + 19.2 + 33 + 48 = 106.2$ 元。
 
-    (2)$p_{1}=\frac{1}{10},E(X)=7\times \frac{1}{10}=\frac{7}{10}$
-
-    $E(X^{2})=\frac{1}{10}\times 60^{2}+\frac{2}{10}\times 96^{2}+\frac{3}{10}\times 110^{2}+\frac{4}{10}\times (-120)^{2}=\frac{1}{10}\times 115932=11593.2$
-
-    $\sigma (X)=\sqrt{Var(X)}=\sqrt{11593.2-0.49}=\sqrt{11592.71}\approx 107.7$'
+    (2) 轉到一等獎次數 $X \sim B(7, 0.1)$，標準差 $\sigma = \sqrt{7\times 0.1\times 0.9} = \frac{3\sqrt{7}}{10}$。'
   tags:
     unit:
       code: MA-J2-1-1
@@ -313,7 +313,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 第(2)小題題目問「轉到一獎的次數標準差」，但詳解與答案誤算為單次付款金額之標準差
+    fixed_by: agent
+    fix_note: （人工修正：補充轉盤機率條件取代缺圖，更正第(1)(2)小題答案與解析）
   difficulty: 3
+  review_note: 原答案卷答案 ['(1) 10.2(元)；(2) 107.7']，執行 agent 修正為 ['(1) $106.2$ 元；(2) $\\frac{3\\sqrt{7}}{10}$']
 - id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_9
   section: 1
   number: 9

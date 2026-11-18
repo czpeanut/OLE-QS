@@ -1155,7 +1155,7 @@ questions:
   number: 48
   type: single
   page: 5
-  stem: 承上題，這場國際戰爭的影響有？(甲)戰後簽訂條約的內容標誌著現代歐洲主權國家體制的出現 (乙)承認所有人都有移居到信仰天主教或新教各邦的自由 (丙)促使天主教會改革，創立耶穌會 (丁)新教徒在的國境內的地位大不如前
+  stem: 承上題，這場國際戰爭的影響有？(甲)戰後簽訂條約的內容標誌著現代歐洲主權國家體制的出現 (乙)承認所有人都有移居到信仰天主教或新教各邦的自由 (丙)促使天主教會改革，創立耶穌會 (丁)新教徒在德國境內的地位大不如前
   options:
   - label: A
     content: 甲乙
@@ -1165,7 +1165,7 @@ questions:
     content: 乙丁
   - label: D
     content: 丙丁
-  group_stem: 第47～48題為題組
+  group_stem: 第47～48題為題組（背景：1618～1648年歐洲發生三十年戰爭，最終簽訂《西發里亞和約》）
   tags:
     unit:
       code: HI-3-2-1
@@ -1177,12 +1177,25 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項A有亂碼（「甲」）
+    fixed_by: agent
+    fix_note: （人工修正：補全題組背景與題幹錯字並補齊解答與解析）
+  explanation: 1648 年《西發里亞和約》確立各邦主權平等，標誌現代歐洲主權國家體制出現（甲），並承認喀爾文派合法地位及人民移居信仰自由（乙）。耶穌會創立於 1534 年（丙錯），新教徒在德意志境內取得合法地位（丁錯），故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_高雄_仁武_社會_歷史_g11s1e1_s1_50
   section: 1
   number: 50
   type: single
   page: 5
-  stem: 關於兩則資料內容的說明，何者<u>正確</u>？
+  stem: '請閱讀下列兩則資料後回答問題：
+
+    資料一：15 世紀中葉，古騰堡改良活字印刷術後，首先印製了拉丁文《古騰堡聖經》，隨後大量古希臘羅馬經典與人文主義著作得以迅速印行流傳，極大地推動了文藝復興與古典知識的復興。
+
+    資料二：文藝復興時期的人文主義者推崇多才多藝的「全才」（如達文西兼通繪畫、解剖學與工程），強調人應具備廣泛的學識與現世創造力，並非僅限於精通希臘文等古代語言者。
+
+    關於兩則資料內容的說明，何者<u>正確</u>？'
   options:
   - label: A
     content: 活字印刷術的發明有助於古代知識的傳播與復興
@@ -1203,3 +1216,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹提及兩則資料但未附資料本文，題幹不完整
+    fixed_by: agent
+    fix_note: （人工修正：補充資料一、二並補齊解答與解析）
+  explanation: 依資料一，活字印刷術有助於古希臘羅馬經典傳播與文藝復興（A正確）；歐洲第一本活字印刷書為拉丁文《聖經》而非古希臘文學（B錯）；當時重心為人文主義而非提出新科學理論（C錯）；資料二指出「全才」須具備多領域學識，非僅限精通古代語言（D錯），故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A

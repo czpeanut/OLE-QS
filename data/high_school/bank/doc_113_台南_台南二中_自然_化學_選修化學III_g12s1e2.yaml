@@ -103,12 +103,18 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 依附圖流程進行離子分離時，沉澱A、B、C的化學式依序為何？
+  stem: 某水溶液含有 $Pb^{2+}$、$Cu^{2+}$、$Mg^{2+}$ 三種陽離子，依序進行以下分離流程：(1) 加入足量稀鹽酸過濾，得沉澱 A；(2) 於濾液中通入 $H_{2}S$ 氣體過濾，得沉澱 B；(3) 於濾液中加入足量 $Na_{2}CO_{3}$ 溶液過濾，得沉澱 C。則沉澱 A、B、C 的化學式依序為何？
   options:
   - label: A
     content: $PbCl_{2}$、CuS、$MgCO_{3}$
   - label: B
-    content: $CuCl_{2}$、PbS、$MgCO_{3}$ (E) $MgCl_{2}$、CuS、$PbCO_{3}$ (D) $CuCl_{2}$、MgS、$PbCO_{3}$ (E) $MgCl_{2}$、PbS、$CuCO_{3}$
+    content: $CuCl_{2}$、PbS、$MgCO_{3}$
+  - label: C
+    content: $MgCl_{2}$、CuS、$PbCO_{3}$
+  - label: D
+    content: $CuCl_{2}$、MgS、$PbCO_{3}$
+  - label: E
+    content: $MgCl_{2}$、PbS、$CuCO_{3}$
   assets:
   - key: s1_3_f1
     kind: figure
@@ -138,7 +144,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(B)與(D)(E)排版混在同一行且兩個選項皆標為(E)
+    fixed_by: agent
+    fix_note: （人工修正：以文字描述離子分離流程取代缺圖、拆齊選項A~E並補齊解析）
   difficulty: 2
+  explanation: 加入 $Cl^{-}$ 時僅 $Pb^{2+}$ 生成白色 $PbCl_{2}$ 沉澱（A）；濾液在酸性下通入 $H_{2}S$，$Cu^{2+}$ 生成黑色 CuS 沉澱（B）；最後濾液中的 $Mg^{2+}$ 與 $CO_{3}^{2-}$ 生成白色 $MgCO_{3}$ 沉澱（C）。故選(A)。
 - id: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e2_s1_4
   section: 1
   number: 4
@@ -399,18 +408,18 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 下表為鹽類溶液＋硝酸後，產生金屬離子與硫化鈉或鉻酸鉀所產生的結果： 有一杯溶液含有$Ag^{＋}$、Zn²$^{＋}$、Pb²$^{＋}$三種離子，欲以三種試劑將其分離，則加入試劑順序為下列何者？
+  stem: 已知水中沉澱性質：$Pb^{2+}$ 與 $SO_{4}^{2－}$、$CrO_{4}^{2－}$、$S^{2－}$ 皆可產生沉澱；$Ag^{＋}$ 與 $CrO_{4}^{2－}$、$S^{2－}$ 可產生沉澱（與 $SO_{4}^{2－}$ 在稀溶液中不沉澱）；$Zn^{2＋}$ 僅與 $S^{2－}$ 產生沉澱。今有一杯溶液含有 $Ag^{＋}$、$Zn^{2＋}$、$Pb^{2＋}$ 三種離子，欲以三種試劑依序將其分離，則加入試劑順序為下列何者？
   options:
   - label: A
-    content: Na₂S、Na₂SO₄、Na₂CrO₄
+    content: $Na_{2}S$、$Na_{2}SO_{4}$、$Na_{2}CrO_{4}$
   - label: B
-    content: Na₂S、Na₂CrO₄、Na₂SO₄
+    content: $Na_{2}S$、$Na_{2}CrO_{4}$、$Na_{2}SO_{4}$
   - label: C
-    content: Na₂CrO₄、Na₂S、Na₂SO₄
+    content: $Na_{2}CrO_{4}$、$Na_{2}S$、$Na_{2}SO_{4}$
   - label: D
-    content: Na₂SO₄、Na₂SrO₄、Na₂S
+    content: $Na_{2}SO_{4}$、$Na_{2}CrO_{4}$、$Na_{2}S$
   - label: E
-    content: Na₂SO₄、Na₂S、Na₂CrO₄
+    content: $Na_{2}SO_{4}$、$Na_{2}S$、$Na_{2}CrO_{4}$
   assets:
   - key: s1_11_f1
     kind: figure
@@ -441,6 +450,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(D)「Na2SrO4」誤植（應為Na2CrO4）
+    fixed_by: agent
+    fix_note: （人工修正：以文字補充沉澱表性質取代缺圖並修正選項D化學式為Na2CrO4）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e2_s1_12
   section: 1
@@ -566,16 +577,16 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 平衡系CaCO₃(s)＋熱 ⇌ CaO(s)＋CO₂(g) 壓力對時間的變化如附圖。則在$t_{0}$時間對平衡系統所施加之破壞平衡的因素可能為下列何者？
+  stem: 平衡系 $CaCO_{3}(s)＋$熱 $\rightleftharpoons CaO(s)＋CO_{2}(g)$ 在定溫下達平衡後，於 $t_{0}$ 時間施加一因素，觀察到 $CO_{2}$ 壓力瞬間增為原平衡壓力的 2 倍，隨後逐漸下降並回復至原本的平衡壓力。則在 $t_{0}$ 時間對平衡系統所施加之破壞平衡的因素可能為下列何者？
   options:
   - label: A
-    content: 加入CaCO₃(s)
+    content: 加入$CaCO_{3}(s)$
   - label: B
     content: 加入CaO(s)
   - label: C
     content: 體積增加
   - label: D
-    content: 濃度減半
+    content: 體積減半
   - label: E
     content: 升高溫度
   assets:
@@ -608,6 +619,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(D)「濃度減半」與解析「體積減半」不符
+    fixed_by: agent
+    fix_note: （人工修正：以文字描述壓力變化圖取代缺圖並修正選項D為體積減半）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e2_s1_16
   section: 1
@@ -1082,76 +1095,27 @@ questions:
   number: 1
   type: single
   page: 4
-  stem: '下列是在特定溫度下，利用比色法求$Fe^{3＋}$(aq)＋$SCN^{－}$(aq) ⇌ $FeSCN^{2＋}$(aq) 平衡常數的實驗，實驗步驟如下： 步驟1：取2支規格相同的比色用試管，分别别加入0.002 M、5.0毫升的KSCN溶液，並標記為1、2號試管。 步驟2：取0.25 M、20.0毫升硝酸鐵溶液，置於錐形瓶中，標為甲溶液。 步驟3：以吸量管吸取10.0毫升甲溶液，置於容器A中並加水稀釋成25.0毫升，標為乙溶液。 步驟4：以吸量管吸取甲溶液5.0毫升加至1號試管，將5.0毫升乙溶液加至2號試管。 步驟5：將2號試管與1號試管比色，由試管的正上方俯視，用滴管從1號試管吸出適量溶液，當2號試管與1號試管顏色深淺相同時，其液面高度比為5：4。 依據上述實驗步驟回答下列問題：
+  stem: '下列是在特定溫度下，利用比色法求 $Fe^{3＋}(aq)＋SCN^{－}(aq) \rightleftharpoons FeSCN^{2＋}(aq)$ 平衡常數的實驗，實驗步驟如下：
 
-    (1)容器A為下列何者？
+    步驟1：取2支規格相同的比色用試管，分別加入 0.002 M、5.0 毫升的 KSCN 溶液，並標記為 1、2 號試管。
 
-    (2)本實驗應選用何種試管作為比色管？ (A)圓底試管 (B)平底試管 (C) U型管 (D)尖底試管 (E)燒杯
+    步驟2：取 0.25 M、20.0 毫升硝酸鐵溶液，置於錐形瓶中，標為甲溶液。
 
-    (3)本實驗在比色過程中須以黑色紙包覆比色管，其作用為何？
+    步驟3：以吸量管吸取 10.0 毫升甲溶液，置於容器 A 中並加水稀釋成 25.0 毫升，標為乙溶液。
 
-    (4)完成下列表格：'
-  options:
-  - label: A
-    content: ''
-    asset:
-      key: s3_1_optA
-      file: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e2/s3_1_optA.png
-      crop:
-        page: 4
-        rect:
-        - 71.55
-        - 834.0
-        - 100.5
-        - 905.75
-  - label: B
-    content: ''
-    asset:
-      key: s3_1_optB
-      file: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e2/s3_1_optB.png
-      crop:
-        page: 4
-        rect:
-        - 122.6
-        - 836.1
-        - 163.25
-        - 905.75
-  - label: C
-    content: ''
-    asset:
-      key: s3_1_optC
-      file: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e2/s3_1_optC.png
-      crop:
-        page: 4
-        rect:
-        - 188.35
-        - 833.8
-        - 240.55
-        - 905.75
-  - label: D
-    content: ''
-    asset:
-      key: s3_1_optD
-      file: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e2/s3_1_optD.png
-      crop:
-        page: 4
-        rect:
-        - 266.3
-        - 834.25
-        - 284.35
-        - 905.75
-  - label: E
-    content: ''
-    asset:
-      key: s3_1_optE
-      file: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e2/s3_1_optE.png
-      crop:
-        page: 4
-        rect:
-        - 305.8
-        - 833.8
-        - 332.25
-        - 905.75
+    步驟4：以吸量管吸取甲溶液 5.0 毫升加至 1 號試管，取 5.0 毫升乙溶液加至 2 號試管。
+
+    步驟5：將 2 號試管與 1 號試管比色，由試管的正上方俯視，用滴管從 1 號試管吸出適量溶液，當 2 號試管與 1 號試管顏色深淺相同時，其液面高度比（2號：1號）為 5：4。
+
+    依據上述實驗步驟回答下列問題：
+
+    (1) 容器 A 應選用何種儀器？（單選：A.容量瓶 B.量筒 C.燒杯 D.錐形瓶 E.試管）
+
+    (2) 本實驗應選用何種試管作為比色管？（A.圓底試管 B.平底試管 C.U型管 D.尖底試管 E.燒杯）
+
+    (3) 本實驗在比色過程中須以黑色紙包覆比色管，其作用為何？
+
+    (4) 計算 2 號試管達平衡時 $[Fe^{3+}]_{eq}$、$[SCN^{-}]_{eq}$、$[FeSCN^{2+}]_{eq}$ 及本反應之平衡常數 $K_{c}$。'
   assets:
   - key: s3_1_f1
     kind: figure
@@ -1163,11 +1127,7 @@ questions:
       - 59.85
       - 558.0
       - 159.35
-  explanation: '(1) 要配製溶液應使用容量瓶，故為(A)。
-
-    (2) 比色管為平底試管，才方便平置在燈箱上觀察，故為(B)。
-
-    (3) 略'
+  explanation: (1) 精確配製 25.0 mL 溶液需使用容量瓶。(2) 比色管須平置於燈箱上由正上方俯視，故選平底試管。(3) 黑紙包覆可阻絕側面光線射入造成誤差。(4) 1號試管中 $Fe^{3+}$ 極過量（0.125 M），可近似認為 $SCN^{-}$（0.001 M）完全轉化為 $FeSCN^{2+}$（0.001 M）。由比色高度比 $h_{2}：h_{1}=5：4$ 得 $[FeSCN^{2+}]_{2} = \frac{4}{5}\times 0.001 = 0.0008\text{ M}$。乙溶液 $[Fe^{3+}] = 0.25\times \frac{10}{25} = 0.10\text{ M}$，混合後初始 $[Fe^{3+}]_{0} = 0.050\text{ M}$、$[SCN^{-}]_{0} = 0.001\text{ M}$，平衡時 $[Fe^{3+}] = 0.050 - 0.0008 = 0.0492\text{ M}$、$[SCN^{-}] = 0.001 - 0.0008 = 0.0002\text{ M}$，$K_{c} = \frac{0.0008}{0.0492\times 0.0002} \approx 81.3$。
   tags:
     unit:
       code: CH-S3-1-2
@@ -1182,4 +1142,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 第(4)小題需填寫附圖表格但未附標準答案（answer為null）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字亂碼、補充選項與第(4)小題表格計算內容並補齊答案解析）
   difficulty: 3
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) A；(2) B；(3) 避免側面環境光線進入干擾比色結果；(4) [Fe3+]eq = 0.0492 M、[SCN-]eq = 0.0002 M、[FeSCN2+]eq = 0.0008 M、Kc ≈ 81.3

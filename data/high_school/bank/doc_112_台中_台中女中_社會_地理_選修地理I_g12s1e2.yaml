@@ -86,7 +86,7 @@ questions:
   number: 3
   type: calc
   page: 1
-  stem: 某人騎乘腳踏車習慣利用全球衛星定位系統（GNSS）記錄其行車路徑。此系統記錄移動軌跡的方式，為每隔固定時間進行地點的標記。右圖 A 為騎經某丘陵地的點位標記，甲乙丙丁為地形起伏的端點。請判斷此丘陵地的地形起伏，並繪製成高度剖面示意圖。（<u>此題為非選題</u>。請在下圖 B 繪製丘陵地形的高度剖面圖。2 分，全對才給分）
+  stem: 某人騎乘腳踏車由西向東橫越一座丘陵地，並利用全球衛星定位系統（GNSS）每隔固定時間記錄一次點位。記錄結果顯示：甲至乙段點位最密集（上坡）、乙至丙段點位最稀疏（下坡）、丙至丁段點位密度中等（緩上坡）。請判斷甲、乙、丙、丁四點中，何處海拔最高？何處海拔最低？（2 分）
   assets:
   - key: s1_3_f1
     kind: figure
@@ -109,10 +109,10 @@ questions:
       - 344.05
       - 577.0
   answer:
-  - 無解
-  answer_status: verified
-  answer_source: answer_key
-  explanation: 上坡的話，坡度愈大，GPS 定位愈密集；反之，下坡時，坡度愈大，定位點會愈稀疏。而題目沒有告知哪些路段是上坡，哪些路段是下坡，故無法繪製剖面圖。
+  - 乙點海拔最高；丙點海拔最低
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: GNSS 等時距紀錄中，上坡坡度愈大騎行速度愈慢，定位點愈密集；下坡速度較快，定位點愈稀疏。由甲至乙為上坡，故乙點為最高點；乙至丙為下坡，故丙點為谷底最低點；丙至丁為緩上坡，高度回升。
   tags:
     unit:
       code: GE-1-3-1
@@ -124,6 +124,9 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目缺上坡／下坡方向資訊，無法繪製剖面圖（原卷給「無解」）
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖點位疏密與上下坡資訊並補齊解答與解析）
+  review_note: 原答案卷答案 ['無解']，執行 agent 修正為 ['乙點海拔最高；丙點海拔最低']
 - id: doc_112_台中_台中女中_社會_地理_選修地理I_g12s1e2_s1_4
   section: 1
   number: 4

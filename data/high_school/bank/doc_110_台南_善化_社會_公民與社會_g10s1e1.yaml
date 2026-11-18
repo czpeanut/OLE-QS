@@ -252,7 +252,15 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 「自由之家」公布2019年世界自由度調查報告，其中有兩張圖表呈現中國與西藏的自由度現況，請問，如何判讀這兩張圖表上的數據最為合宜？
+  stem: '「自由之家」公布2019年世界自由度調查報告（1分為最自由，7分為最不自由），中國與西藏的自由度現況如下表，請問，如何判讀這兩筆數據最為合宜？
+
+    | 地區 | 政治權利（PR） | 公民自由（CL） | 整體評級 |
+
+    | --- | --- | --- | --- |
+
+    | 中國 | 7 | 6 | 不自由 |
+
+    | 西藏 | 7 | 7 | 不自由 |'
   options:
   - label: A
     content: 中國在公民自由的現況比西藏來得差
@@ -283,6 +291,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹提及「兩張圖表」，但題幹未附圖（僅選項D有附圖檔）
+    fixed_by: agent
+    fix_note: （人工修正：補充2019年自由之家中國與西藏數據表，補齊解答與解析）
+  explanation: 由表可知，中國與西藏在政治權利（PR）項目同為7分（最不自由），兩者表現程度相同，故選(D)。西藏公民自由為7分，比中國的6分更差。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_台南_善化_社會_公民與社會_g10s1e1_s1_12
   section: 1
   number: 12
@@ -773,7 +788,15 @@ questions:
   number: 31
   type: single
   page: 3
-  stem: 下表是某兩個國家的概況資料，以此判斷，該資料最適合說明下列哪種現代國家的特色？
+  stem: '下表是某兩個國家的概況資料，以此判斷，該資料最適合說明下列哪種現代國家的特色？
+
+    | 國家 | 國土面積 | 人口數 | 聯合國大會表決權 |
+
+    | --- | --- | --- | --- |
+
+    | 諾魯 | 約21平方公里 | 約1萬人 | 1票 |
+
+    | 美國 | 約983萬平方公里 | 約3.3億人 | 1票 |'
   options:
   - label: A
     content: 主權獨立平等
@@ -804,6 +827,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹提及「下表」，但題幹未附圖表（僅選項D有附圖檔）
+    fixed_by: agent
+    fix_note: （人工修正：補充兩國面積、人口與聯合國投票權對照表，補齊解答與解析）
+  explanation: 無論國家領土大小或人口多寡，凡具備完整國家構成要素之主權國家，在國際法上均享有平等地位（聯合國大會皆為一國一票），充分體現「主權獨立平等」的特色，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_台南_善化_社會_公民與社會_g10s1e1_s1_32
   section: 1
   number: 32

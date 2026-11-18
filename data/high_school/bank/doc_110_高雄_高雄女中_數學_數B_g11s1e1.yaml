@@ -48,7 +48,7 @@ questions:
   number: 2
   type: fill
   page: 1
-  stem: 如附圖，一個半徑為6的六分之一圖，內部有一內切圓， 求陰影區域的面積為＿＿＿＿。
+  stem: 一個半徑為 $6$、圓心角為 $60^\circ$ 的六分之一圓扇形，內部有一內切圓（同時與兩半徑及圓弧相切），試求其中一側「夾在圓弧、單側半徑與內切圓之間」的單一角落陰影區域面積為＿＿＿＿。
   assets:
   - key: s2_2_f1
     kind: figure
@@ -78,7 +78,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖無法確認陰影區域，且「六分之一圖」疑為「六分之一圓」筆誤
+    fixed_by: agent
+    fix_note: （人工修正：修正「六分之一圖」為「六分之一圓」並明確描述陰影區域以取代缺圖，補齊解析）
   difficulty: 3
+  explanation: 設內切圓半徑為 $r$，由 $\frac{r}{\sin 30^\circ} + r = 6$ 得 $r = 2$。扇形面積為 $6\pi$，內切圓面積為 $4\pi$，靠近圓心的區域面積為 $2\cdot\frac{1}{2}(2)(2\sqrt{3}) - \frac{1}{3}\pi(2^2) = 4\sqrt{3} - \frac{4}{3}\pi$。故單側角落陰影面積為 $\frac{1}{2}\left[6\pi - 4\pi - \left(4\sqrt{3} - \frac{4}{3}\pi\right)\right] = \frac{5}{3}\pi - 2\sqrt{3}$。
 - id: doc_110_高雄_高雄女中_數學_數B_g11s1e1_s2_3
   section: 2
   number: 3

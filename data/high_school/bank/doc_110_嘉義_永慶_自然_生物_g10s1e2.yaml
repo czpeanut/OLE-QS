@@ -1244,18 +1244,18 @@ questions:
   number: 32
   type: multiple
   page: 3
-  stem: 血友病屬性聯遺傳，右圖為血友病之譜系圖，□代表正常男性，○代表正常女性，■代表血友病男性，●代表血友病女性，下列哪些敘述是正確的？ （X代表正常之染色體，x代表有血友病基因）
+  stem: 血友病屬性聯隱性遺傳（$X^H$代表正常對偶基因，$X^h$代表血友病基因）。某家族血友病譜系如下：第一代為正常男性（個體1）與正常女性（個體2）；其子代包含患病男性（個體3）、正常男性（個體4）、正常女性（個體5）及正常男性（個體6）；個體5與正常男性（個體7）結婚，生下正常女性（個體8）與患病男性（個體12）。下列哪些敘述是正確的？（多選）
   options:
   - label: A
-    content: 個體2之基因型為XX
+    content: 個體2之基因型為$X^HX^H$
   - label: B
-    content: 4與7皆不可能生下血友病的女兒
+    content: 個體4與7皆不可能生下血友病的女兒
   - label: C
-    content: 個體8之基因型可能為XX或Xx
+    content: 個體8之基因型可能為$X^HX^H$或$X^HX^h$
   - label: D
-    content: 個體4與7之基因型
+    content: 個體4與7之基因型皆為$X^HY$
   - label: E
-    content: 個體12之基因型為XX
+    content: 個體12之基因型為$X^HY$
   assets:
   - key: s2_32_f1
     kind: figure
@@ -1287,7 +1287,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D「個體4與7之基因型」敘述不完整
+    fixed_by: agent
+    fix_note: （人工修正：補齊選項D完整敘述並補充譜系圖文字條件，附解析）
   difficulty: 3
+  explanation: (A)個體2生下患病兒子（個體3，$X^hY$），故個體2必為帶因者$X^HX^h$；(B)個體4與7皆為正常男性（$X^HY$），必遺傳$X^H$給女兒，故女兒不會患血友病，正確；(C)個體5生下患病兒子12，故個體5為$X^HX^h$，與正常男性7（$X^HY$）所生之正常女兒8基因型為$X^HX^H$或$X^HX^h$，正確；(D)正確；(E)個體12為患病男性，基因型為$X^hY$。故選(B)(C)(D)。
 - id: doc_110_嘉義_永慶_自然_生物_g10s1e2_s2_33
   section: 2
   number: 33
@@ -1626,7 +1629,7 @@ questions:
     content: 有一半是白眼
   - label: E
     content: 全為綠眼
-  group_stem: ◎ <u>小嵐</u>對某一種蝴蝶進行雜交實驗，雜交的親代分别為紫翅白眼與黄翅綠眼的純品系個體，交配產生的$F_{2}$子代共1355隻，右圖為$F_{2}$子代個別表徵的統計數目。 試根據右圖回答下列問題：
+  group_stem: ◎ <u>小嵐</u>對某一種蝴蝶進行雜交實驗，雜交的親代分別為紫翅白眼與黃翅綠眼的純品系個體，交配產生的$F_1$全體自交後產生$F_2$子代共1355隻，統計結果如下：紫翅共1016隻、黃翅共339隻；白眼共338隻、青眼共678隻、綠眼共339隻（眼色為不完全顯性）。試根據上述資料回答下列問題：
   shared_asset: g4_42_45
   tags:
     unit:
@@ -1642,7 +1645,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原卷未附答案
+    fixed_by: agent
+    fix_note: （人工修正：補充F2實驗數據文字條件並補齊答案A與解析）
   difficulty: 3
+  explanation: $F_2$紫翅：黃翅約為3：1，可知紫翅為顯性、黃翅為隱性，故$F_1$全為紫翅；眼色於$F_2$呈1：2：1（白：青：綠），為不完全顯性，故$F_1$全為青眼。因此$F_1$表徵全為紫翅，選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_嘉義_永慶_自然_生物_g10s1e2_s4_44
   section: 4
   number: 44

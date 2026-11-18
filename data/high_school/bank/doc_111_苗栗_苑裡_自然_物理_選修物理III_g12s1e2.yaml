@@ -707,7 +707,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 附圖中，甲、乙、丙、丁為空氣中四種聲波的波形，下列敘述哪一項正確？
+  stem: 在相同時間軸內，甲、乙、丙、丁為空氣中四種聲波的波形紀錄：甲振動 2 次、振幅 2 單位；乙振動 4 次、振幅 2 單位；丙振動 2 次、振幅 3 單位；丁振動 2 次、振幅 1 單位，且甲與丁的波形形狀不同。下列敘述哪一項正確？
   options:
   - label: A
     content: 丙的響度大於丁
@@ -742,7 +742,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer欄位為null
+    fixed_by: agent
+    fix_note: （人工修正：補充四種聲波波形數據（免附圖）並補全解答與解析）
   difficulty: 2
+  explanation: (A)響度取決於振幅，丙的振幅（3 單位）大於丁（1 單位），故丙響度大於丁；(B)音調取決於頻率，甲頻率小於乙，故甲音調低於乙；(C)波形不同表示音色不同；(D)空氣中聲波速率僅與介質溫度等條件有關，相同介質中速率相同。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_111_苗栗_苑裡_自然_物理_選修物理III_g12s1e2_s1_16
   section: 1
   number: 16

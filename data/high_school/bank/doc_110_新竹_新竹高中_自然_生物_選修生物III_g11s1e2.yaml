@@ -755,18 +755,27 @@ questions:
   number: 24
   type: multiple
   page: 3
-  stem: 附表為肺與骨骼肌內血紅素含氧飽和度的相關數據，根據此表，下列敘述哪些正確？（應選2項）
+  stem: '附表為肺與骨骼肌內血紅素含氧飽和度的相關數據，根據此表，下列敘述哪些正確？（應選2項）
+
+
+    | 氧分壓（mmHg） | 20 | 40 | 60 | 80 | 100 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 肺部血紅素含氧飽和度（%） | 35 | 75 | 90 | 96 | 98 |
+
+    | 骨骼肌血紅素含氧飽和度（%） | 25 | 60 | 82 | 92 | 95 |'
   options:
   - label: A
-    content: 氧分壓與肺的血紅素含氣飽和度呈正相關關係
+    content: 氧分壓與肺的血紅素含氧飽和度呈正相關關係
   - label: B
     content: 氧分壓與骨骼肌的血紅素含氧飽和度呈正比關係
   - label: C
-    content: 骨骼肌在20 mm-Hg時血紅素含飽和度較40 mm-Hg時更高
+    content: 骨骼肌在20 mmHg時血紅素含氧飽和度較40 mmHg時更高
   - label: D
-    content: 在60 mm-Hg時，骨骼肌的血紅素與氧氣的親和力較肺更低
+    content: 在60 mmHg時，骨骼肌的血紅素與氧氣的親和力較肺更低
   - label: E
-    content: 當氧分壓為120 mm-Hg時，骨骼肌的血紅素含氧飽和度必為100％
+    content: 當氧分壓為120 mmHg時，骨骼肌的血紅素含氧飽和度必為100％
     asset:
       key: s2_24_optE
       file: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e2/s2_24_optE.png
@@ -777,7 +786,7 @@ questions:
         - 419.85
         - 290.5
         - 559.45
-  explanation: (B)正相關 (C) 低 (E)資料不足，無法判斷
+  explanation: (A)氧分壓愈高，含氧飽和度愈高，呈正相關，正確；(B)氧解離曲線呈S型非線性，並非正比；(C)20 mmHg（25%）低於40 mmHg（60%）；(D)在60 mmHg下骨骼肌飽和度（82%）低於肺部（90%），顯示因玻爾效應使骨骼肌中血紅素對氧親和力較低，正確；(E)表中未測120 mmHg且受pH與溫度影響未必達100%。故選(A)(D)。
   tags:
     unit:
       code: BI-S3-3-1
@@ -792,7 +801,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹提及附表但缺附表圖檔（僅選項E附圖），影響數值判讀
+    fixed_by: agent
+    fix_note: （人工修正：補齊附表數據、修正選項文字並移除選項E附圖，補齊答案）
   difficulty: 3
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - D
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e2_s2_25
   section: 2
   number: 25

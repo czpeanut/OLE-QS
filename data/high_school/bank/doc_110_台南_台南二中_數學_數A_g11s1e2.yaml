@@ -677,53 +677,12 @@ questions:
   number: 2
   type: single
   page: 4
-  stem: '右圖為 y＝$log_{a}$x＋b 的部分圖形，其中 a，b 均為常數，請回答下列問題。
-
-    (1) 請判斷 a 值範圍。（單選，1 分）'
+  stem: 已知函數 $y = \log_a x + b$（其中 $a, b$ 均為常數）的圖形為嚴格遞減函數，且通過點 $(1, -2)$，請判斷 $a$ 值範圍。（單選，1 分）
   options:
   - label: A
-    content: a＞1
+    content: $a > 1$
   - label: B
-    content: 0＜a＜1(2) 請判斷 b 值範圍。（單選，1 分）(A) b＞0(B) b＝0
-  - label: C
-    content: b＜0(3) 請判斷二次函數 y＝$ax^{2}$＋bx 與指數函數$y = \left( \frac{b}{a} \right) ^{x}$之圖形，可能是哪一選項？（單選，4 分）(A) (B) (C)
-    asset:
-      key: s3_2_optC
-      file: doc_110_台南_台南二中_數學_數A_g11s1e2/s3_2_optC.png
-      crop:
-        page: 4
-        rect:
-        - 86.75
-        - 309.9
-        - 387.9
-        - 455.4
-  - label: D
-    content: ''
-    asset:
-      key: s3_2_optD
-      file: doc_110_台南_台南二中_數學_數A_g11s1e2/s3_2_optD.png
-      crop:
-        page: 4
-        rect:
-        - 121.2
-        - 456.85
-        - 210.6
-        - 529.45
-  - label: E
-    content: ''
-    asset:
-      key: s3_2_optE
-      file: doc_110_台南_台南二中_數學_數A_g11s1e2/s3_2_optE.png
-      crop:
-        page: 4
-        rect:
-        - 297.85
-        - 457.2
-        - 387.5
-        - 529.1
-  group_stem: '(2) 承題(1)，坐標平面另有一點 F，若今有一質點在 O 點沿$\vec{AO}$方向前進$\overline{AO}$距離後停在 R，再沿$\vec{BR}$方向前進$2\overline{BR}$距離後停在 S。假設此質點繼續沿$\vec{FS}$方向前進$3\overline{FS}$距離後回到原點 O，試求點 F 坐標。（計算，請列出過程，5 分）
-
-    (3) 承題(2)，若在平面上有一圓心在原點，半徑為 4 的圓，則質點從起點 O 移動到終點 O 的過程中，和此圓有＿＿＿＿個相異交點。（填充，2 分）'
+    content: $0 < a < 1$
   assets:
   - key: s3_2_f1
     kind: figure
@@ -749,4 +708,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem誤植前一題題組內容，且options與題幹子題混排
+    fixed_by: agent
+    fix_note: （人工修正：移除誤植的前題 group_stem 與混排子題，補充圖形特徵取代缺圖並補齊答案與解析）
   difficulty: 3
+  explanation: 因對數函數 $y = \log_a x + b$ 嚴格遞減，故底數滿足 $0 < a < 1$，選 (B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B

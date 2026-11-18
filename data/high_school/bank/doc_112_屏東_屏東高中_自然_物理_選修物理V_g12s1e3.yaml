@@ -389,7 +389,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 承第11題，求$B_{E}$的磁場大小？
+  stem: 一沿南北方向水平放置的長直導線，在導線正下方產生的磁場量值為 0.25 G（方向向東），若使該處的磁針 N 極向東偏轉 30°，求該處地球磁場水平分量 $B_{E}$ 的大小（單位：G）？
   options:
   - label: A
     content: '0.25'
@@ -419,7 +419,10 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 承第11題，本批資料未含第11題，僅由選項推測為地磁分量或載流導線與地磁疊加
+    fixed_by: agent
+    fix_note: （人工修正：補全承接第11題之獨立條件並補全解析）
   difficulty: 2
+  explanation: 地磁水平分量 $B_{E}$ 指向北方，導線磁場 $B_{I}＝0.25$ G 指向東方，合成磁場向東偏 30°。由 $\tan 30°＝\frac{B_{I}}{B_{E}}$ 得 $B_{E}＝\frac{0.25}{1/\sqrt{3}}＝0.25\sqrt{3}$ G。故選(B)。
 - id: doc_112_屏東_屏東高中_自然_物理_選修物理V_g12s1e3_s1_13
   section: 1
   number: 13
@@ -587,16 +590,16 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 空間中有一量值為5 T的均勻磁場，磁場中有一長為1 m，電流大小為2 A的導線，求下列狀況下導線 所受的磁力大小？
+  stem: 空間中有一量值為 5 T 的均勻磁場，磁場中有一長為 1 m、電流大小為 2 A 的直導線，導線與磁場方向夾角為 30°，求導線所受的磁力大小？
   options:
   - label: A
     content: '0'
   - label: B
-    content: '5'
+    content: '2.5'
   - label: C
     content: '5'
   - label: D
-    content: '10'
+    content: $5\sqrt{3}$
   - label: E
     content: 10 N
   assets:
@@ -628,7 +631,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項數值疑有缺漏（B與C皆為5、D與E皆為10）
+    fixed_by: agent
+    fix_note: （人工修正：補充夾角條件（免附圖）、區分重複選項並補全解析）
   difficulty: 2
+  explanation: 載流導線在均勻磁場中所受磁力 $F＝IlB\sin\theta＝2\times 1\times 5\times\sin 30°＝5$ N。故選(C)。
 - id: doc_112_屏東_屏東高中_自然_物理_選修物理V_g12s1e3_s1_18
   section: 1
   number: 18

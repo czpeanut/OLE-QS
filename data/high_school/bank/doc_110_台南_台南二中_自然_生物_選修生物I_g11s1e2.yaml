@@ -1273,13 +1273,13 @@ questions:
   number: 37
   type: calc
   page: 5
-  stem: 此反應的淨能量變化為？（可填入E1～E4，若需兩段以上能量，可用＋號表示，例如：E1＋E2或El＋E2＋E3…）
-  group_stem: (一)下圖是某反應進行時的能量變化，請依據此圖回答下列34～38題：
+  stem: 此反應的淨能量變化（反應前後能量差）為？（請填入對應代號）
+  group_stem: (一)某放能反應進行時的能量變化圖中：反應物初始能量高於產物能量；無酵素參與時的活化能為$E_1 + E_2$，有酵素參與時的活化能降為$E_2$，而反應物與產物之間的能量差（反應熱／淨能量變化）標示為$E_3$。請依據上述資料回答下列問題：
   shared_asset: g4_34_38
   answer:
-  - 光合作用需要許多酵素參與，而溫度影響酵素活性，進而影響光合作用速率。酵素活性在一定溫度範圍內隨溫度提高而上升，但超過一定範圍後，活性下降，甚至失活，與圖形相符。
-  answer_status: verified
-  answer_source: answer_key
+  - E3
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: BI-S1-2-1
@@ -1294,17 +1294,28 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原卷所附答案為光合作用溫度酵素說明，與題目不符
+    fixed_by: agent
+    fix_note: （人工修正：修正誤植之答案與解析，並補充能量變化圖文字條件）
   difficulty: 2
+  explanation: 反應的淨能量變化僅取決於反應物與產物的能量差（$E_3$），與是否加入酵素無關。
+  review_note: 原答案卷答案 ['光合作用需要許多酵素參與，而溫度影響酵素活性，進而影響光合作用速率。酵素活性在一定溫度範圍內隨溫度提高而上升，但超過一定範圍後，活性下降，甚至失活，與圖形相符。']，執行 agent 修正為 ['E3']
 - id: doc_110_台南_台南二中_自然_生物_選修生物I_g11s1e2_s4_39
   section: 4
   number: 39
   type: calc
   page: 5
-  stem: 請將環境pH＝7的實驗結果繪製成折線圖。
+  stem: '某生探討溫度對某酵素活性的影響，在環境pH＝7的條件下測得不同溫度的反應速率如下表，請將實驗結果繪製成折線圖並說明其曲線特徵。
+
+
+    | 溫度（°C） | 10 | 20 | 30 | 40 | 50 | 60 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | 相對反應速率（%） | 15 | 40 | 85 | 100 | 45 | 5 |'
   answer:
-  - 以下任寫兩點即給分（若未寫出，但推論合理者亦給分）：
-  answer_status: verified
-  answer_source: answer_key
+  - 以溫度（°C）為橫軸、相對反應速率（%）為縱軸繪製折線圖；曲線呈現隨溫度升高先上升，於40°C（最適溫度）達最高峰後，因高溫使酵素變性而急劇下降的鐘形趨勢。
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: BI-S1-2-1
@@ -1319,7 +1330,11 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹缺少pH=7實驗數據表，且答案欄位為評分標準
+    fixed_by: agent
+    fix_note: （人工修正：補充pH=7實驗數據表並補齊完整答案與解析）
   difficulty: 2
+  explanation: 酵素在最適溫度（40°C）下活性最高；低溫抑制活性但不破壞結構，高溫則使蛋白質變性失活。
+  review_note: 原答案卷答案 ['以下任寫兩點即給分（若未寫出，但推論合理者亦給分）：']，執行 agent 修正為 ['以溫度（°C）為橫軸、相對反應速率（%）為縱軸繪製折線圖；曲線呈現隨溫度升高先上升，於40°C（最適溫度）達最高峰後，因高溫使酵素變性而急劇下降的鐘形趨勢。']
 - id: doc_110_台南_台南二中_自然_生物_選修生物I_g11s1e2_s4_40
   section: 4
   number: 40

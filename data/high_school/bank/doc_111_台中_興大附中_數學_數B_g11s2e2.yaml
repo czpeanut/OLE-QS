@@ -258,9 +258,9 @@ questions:
 - id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_1
   section: 2
   number: 1
-  type: single
+  type: multiple
   page: 2
-  stem: 分別調整各舞臺聚光燈的角度，如右圖所示，已知每個聚光燈照射的燈光形成直圓錐狀，且地板與天花板平行。選出聚光燈所有可能在地板上照亮區域邊界的圖形。
+  stem: 舞臺上有三盞聚光燈，每個聚光燈照射的燈光形成直圓錐狀，且地板與天花板平行。第一盞垂直向下照射地板；第二盞斜向照射地板，且光錐軸線與母線均不平行於地板；第三盞斜向照射地板，且光錐有一條母線貼齊天花板（平行於地板）。選出聚光燈所有可能在地板上照亮區域邊界的圖形。
   options:
   - label: A
     content: 圓
@@ -269,7 +269,7 @@ questions:
   - label: C
     content: 拋物線
   - label: D
-    content: 雙曲線。$■答$：＿＿＿＿
+    content: 雙曲線
   assets:
   - key: s2_1_f1
     kind: figure
@@ -302,7 +302,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(D)夾雜作答提示文字
+    fixed_by: agent
+    fix_note: （人工修正：修正題型為 multiple、移除選項 D 作答提示文字、補充光錐角度條件取代缺圖並補齊答案）
   difficulty: 2
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - C
 - id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_2
   section: 2
   number: 2

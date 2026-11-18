@@ -735,9 +735,7 @@ questions:
   number: 1
   type: fill
   page: 2
-  stem: '如圖所示，一木塊置於水平桌面上，木塊質量4.5 kg，施力F＝25 N，且F與水平成37°仰角。木塊與桌面間的靜摩擦係數μ$_{s}$＝0.6、動摩擦係數μ$_{k}$＝0.5，設重力加速度量值g＝10 m/$s^{2}$，則：
-
-    (1) 桌面施於木塊的正向力為＿＿＿N，木塊所受的摩擦力為＿＿＿N。'
+  stem: 一木塊置於水平桌面上，木塊質量 4.5 kg，以一與水平成 37° 俯角斜向右下推木塊，施力大小 F＝25 N。木塊與桌面間的靜摩擦係數 $\mu_{s}＝0.6$、動摩擦係數 $\mu_{k}＝0.5$，設重力加速度量值 g＝10 m/$s^{2}$，則桌面施於木塊的正向力為＿＿＿ N，木塊所受的摩擦力為＿＿＿ N。
   assets:
   - key: s3_1_f1
     kind: figure
@@ -750,9 +748,9 @@ questions:
       - 682.7
       - 567.0
   answer:
-  - (1) 60 (N)；20 (N)；(2) 40 (N)；$\frac{10}{3}$ (m/$s^{2}$)
-  answer_status: verified
-  answer_source: answer_key
+  - 正向力 60 N；摩擦力 20 N
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-3-1
@@ -767,13 +765,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer欄同時包含第(1)(2)小題答案，第(2)小題題幹位於下一題
+    fixed_by: agent
+    fix_note: （人工修正：修正「仰角」為俯角、拆離第(2)小題答案並補全解析）
   difficulty: 3
+  explanation: 正向力 $N＝mg＋F\sin 37°＝45＋25\times 0.6＝60$ N。最大靜摩擦力 $f_{s,max}＝\mu_{s}N＝0.6\times 60＝36$ N；水平推力分量 $F_{x}＝25\cos 37°＝20$ N＜$36$ N，木塊靜止，故靜摩擦力 $f_{s}＝20$ N。
+  review_note: 原答案卷答案 ['(1) 60 (N)；20 (N)；(2) 40 (N)；$\\frac{10}{3}$ (m/$s^{2}$)']，執行 agent 修正為 ['正向力 60 N；摩擦力 20 N']
 - id: doc_111_新北_新店_自然_物理_選修物理II_g11s2e1_s3_2
   section: 3
   number: 2
   type: fill
   page: 2
-  stem: 若施力F增為75 N，則木塊所受的摩擦力為＿＿＿N，加速度為＿＿＿m/$s^{2}$。
+  stem: 承一質量 4.5 kg 的木塊置於水平桌面上，受一與水平成 37° 俯角斜向右下推的外力 F（靜摩擦係數 $\mu_{s}＝0.6$、動摩擦係數 $\mu_{k}＝0.5$，g＝10 m/$s^{2}$）。若施力 F 增為 75 N，則木塊所受的摩擦力為＿＿＿ N，加速度為＿＿＿ m/$s^{2}$。
   tags:
     unit:
       code: PH-S2-3-1
@@ -788,7 +790,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 承上一題(s3_1)，answer欄為null（答案併於上一題answer欄中）
+    fixed_by: agent
+    fix_note: （人工修正：補充上題完整條件並補全解答與解析）
   difficulty: 3
+  explanation: 正向力 $N＝45＋75\sin 37°＝45＋45＝90$ N。最大靜摩擦力 $f_{s,max}＝0.6\times 90＝54$ N；水平推力分量 $F_{x}＝75\cos 37°＝60$ N＞$54$ N，木塊開始滑動。動摩擦力 $f_{k}＝\mu_{k}N＝0.5\times 90＝45$ N，加速度 $a＝\frac{60-45}{4.5}＝\frac{15}{4.5}＝\frac{10}{3}$ m/$s^{2}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 摩擦力 45 N；加速度 $\frac{10}{3}$ m/$s^{2}$
 - id: doc_111_新北_新店_自然_物理_選修物理II_g11s2e1_s3_3
   section: 3
   number: 3

@@ -630,9 +630,9 @@ questions:
 - id: doc_109_高雄_高師大附中_數學_數B_g11s1e3_s4_1
   section: 4
   number: 1
-  type: calc
+  type: multiple
   page: 3
-  stem: 如圖所示，$\overline{OB}$為正六邊形其中一邊，△OAB 為正三角形，若以 O 為始點發射光束，則下列哪些光束的終點會落在正六邊形的內部？（6 分）（答錯一選項可得 3 分，錯二選項以上則不給分。無作圖者亦不給分）
+  stem: 高雄流行音樂中心建築包含正六邊形造型元素。設 $OBCDEF$ 為正六邊形，$\triangle OAB$ 為正三角形（$A$ 為正六邊形之中心），若以 $O$ 為始點發射光束至終點 $P$，則下列哪些光束的終點 $P$ 會落在正六邊形的內部（不含邊界）？
   group_stem: '高雄流行音樂中心（Kaohsiung Music Center），興建計畫名為海洋文化及流行音樂中心，基地位於<u>高雄港</u> 11-15 號碼頭（<u>光榮碼頭</u>與<u>真愛碼頭</u>，含<u>苓雅寮車場</u>），占地約 11.89 公頃，經國際競圖後，西班牙 Manuel Alvarez Monteserin Lahoz 的設計採用多樣豐富的海洋意象因而獲得首獎，主題內容包含以六角形珊瑚礁形狀為屋頂的海洋文化展示中心，及大量幾何圖形為元素，造型相當前衛的海音館。2020 年底搭配跨百光年活動吸引全球目光。
 
     元旦連假的一個晚上，小如和小玫在此巧遇，看著美麗的建築和燈光秀，她們不禁討論起數學……'
@@ -701,7 +701,37 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項內容為純附圖，文字欄位未列出選項
+    fixed_by: agent
+    fix_note: （人工修正：補充向量選項文字取代純圖選項，修正題型為 multiple 並補齊答案與解析）
   difficulty: 3
+  options:
+  - label: A
+    content: $\vec{OP} = \frac{1}{2}\vec{OA} + \frac{1}{2}\vec{OB}$
+  - label: B
+    content: $\vec{OP} = 2\vec{OA} - \vec{OB}$
+  - label: C
+    content: $\vec{OP} = \frac{1}{3}\vec{OA} + \frac{1}{3}\vec{OB}$
+  - label: D
+    content: $\vec{OP} = \frac{3}{2}\vec{OA} + \frac{1}{2}\vec{OB}$
+  - label: E
+    content: $\vec{OP} = \vec{OA} + \frac{1}{2}\vec{OB}$
+  explanation: '因 $A$ 為正六邊形中心，故 $\vec{OC} = \vec{OA}+\vec{OB}$、$\vec{OD}=2\vec{OA}$、$\vec{OE}=2\vec{OA}-\vec{OB}$、$\vec{OF}=\vec{OA}-\vec{OB}$。
+
+    (A) 在 $\overline{AB}$ 中點（內部）。
+
+    (B) 即頂點 $E$（邊界）。
+
+    (C) 在 $\triangle OAB$ 內部。
+
+    (D) $\frac{1}{2}\vec{OD}+\frac{1}{2}\vec{OC}$，為 $\overline{CD}$ 中點（邊界）。
+
+    (E) $\frac{1}{2}\vec{OA}+\frac{1}{2}\vec{OC}$，為 $\overline{AC}$ 中點（內部）。故選 (A)(C)(E)。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - C
+  - E
 - id: doc_109_高雄_高師大附中_數學_數B_g11s1e3_s4_2
   section: 4
   number: 2

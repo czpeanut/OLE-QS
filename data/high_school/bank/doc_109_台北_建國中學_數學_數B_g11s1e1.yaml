@@ -232,19 +232,7 @@ questions:
   number: 1
   type: multiple
   page: 1
-  stem: '（ ）1.如右圖，以邊長為 4 的正三角形 ABC 之每邊為直徑作三個半圓，兩兩分別交於 D，E，F 點。試選出正確的選項。
-
-    （ ）2.右圖為三角函數 y＝3 sin（ax－b）的部分圖形，其中 a＞0，則下列各項敘述哪些正確？
-
-    (A) B（0，－3）
-
-    (B) b＝$\frac{\pi}{6}$
-
-    (C)$C \left( \frac{5\pi}{6} , 0 \right)$
-
-    (D) y 的週期為$\frac{2\pi}{3}$
-
-    (E)其圖形可由 y＝3 sin3x 向右平移$\frac{\pi}{6}$而得'
+  stem: 以邊長為 4 的正三角形 $ABC$ 之每邊為直徑在 $\triangle ABC$ 內部作三個半圓，兩兩分別交於各邊中點 $D$、$E$、$F$（其中 $D \in \overline{BC}$、$E \in \overline{AC}$、$F \in \overline{AB}$）。設套色區域為以 $D, E, F$ 為頂點之勒洛三角形（即 $\triangle DEF$ 與分別以 $\overline{DE}, \overline{EF}, \overline{FD}$ 為弦的三個圓心角 $60^\circ$ 的弓形所圍成之區域），試選出正確的選項。
   options:
   - label: A
     content: $\overparen{AF}$弧長是$\frac{\pi}{3}$
@@ -283,9 +271,15 @@ questions:
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: '(A) ╳：∵∠AEF＝$\frac{\pi}{3}$且$\overline{AE}$＝2
+  explanation: '(A) ×：$\angle AEF = \frac{\pi}{3}$ 且半徑 $\overline{AE}=2$，故 $\overparen{AF}$ 弧長為 $2\times\frac{\pi}{3} = \frac{2\pi}{3}$。
 
-    ∴$\overparen{AF}$弧長為'
+    (B) ○：扇形 $AFE$ 面積為 $\frac{1}{2}\times 2^2 \times \frac{\pi}{3} = \frac{2\pi}{3}$。
+
+    (C) ○：$\triangle DEF$ 為邊長 $2$ 的正三角形，面積為 $\frac{\sqrt{3}}{4}\times 2^2 = \sqrt{3}$。
+
+    (D) ×：套色區域周長為 $3 \times \frac{2\pi}{3} = 2\pi$。
+
+    (E) ○：套色區域面積為 $3\left(\frac{2\pi}{3} - \sqrt{3}\right) + \sqrt{3} = 2\pi - 2\sqrt{3}$。'
   tags:
     unit:
       code: MA-B3-1-1
@@ -300,6 +294,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹誤將第2小題題目（y=3sin(ax-b)圖形）併入第1小題，選項與解答僅對應第1題
+    fixed_by: agent
+    fix_note: （人工修正：移除誤併入的第2小題文字，補充中點與套色區域定義以取代缺圖，並補齊解析）
   difficulty: 3
 - id: doc_109_台北_建國中學_數學_數B_g11s1e1_s3_1
   section: 3

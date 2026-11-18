@@ -33,10 +33,10 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: A, B, C, D為平面上相異四點（A不在直線BC上），若21＝$\frac{3}{4}\vec{AB}$＋$\frac{1}{4}\vec{AC}$，則下列何者可能為A, B, C, D所形成的圖形？
+  stem: $A, B, C, D$ 為平面上相異四點（$A$ 不在直線 $BC$ 上），若 $2\vec{AD} = \frac{3}{4}\vec{AB} + \frac{1}{4}\vec{AC}$，則下列何者正確描述 $A, B, C, D$ 所形成的圖形位置關係？
   options:
   - label: A
-    content: ''
+    content: $D$ 點在直線 $BC$ 上，且 $\overline{BD}:\overline{CD} = 1:3$
     asset:
       key: s1_1_optA
       file: doc_111_台北_松山_數學_數A_g11s1e3/s1_1_optA.png
@@ -48,7 +48,7 @@ questions:
         - 175.0
         - 259.6
   - label: B
-    content: ''
+    content: $D$ 點在直線 $BC$ 上，且 $\overline{BD}:\overline{CD} = 3:1$
     asset:
       key: s1_1_optB
       file: doc_111_台北_松山_數學_數A_g11s1e3/s1_1_optB.png
@@ -60,7 +60,7 @@ questions:
         - 300.9
         - 256.85
   - label: C
-    content: ''
+    content: 射線 $AD$ 交 $\overline{BC}$ 於 $D'$，滿足 $D$ 為 $\overline{AD'}$ 中點且 $\overline{BD'}:\overline{CD'} = 3:1$
     asset:
       key: s1_1_optC
       file: doc_111_台北_松山_數學_數A_g11s1e3/s1_1_optC.png
@@ -72,7 +72,7 @@ questions:
         - 409.05
         - 262.15
   - label: D
-    content: ''
+    content: 射線 $DA$ 交 $\overline{BC}$ 於 $D'$，滿足 $A$ 為 $\overline{DD'}$ 中點且 $\overline{BD'}:\overline{CD'} = 1:3$
     asset:
       key: s1_1_optD
       file: doc_111_台北_松山_數學_數A_g11s1e3/s1_1_optD.png
@@ -84,7 +84,7 @@ questions:
         - 526.5
         - 269.8
   - label: E
-    content: ''
+    content: 射線 $AD$ 交 $\overline{BC}$ 於 $D'$，滿足 $D$ 為 $\overline{AD'}$ 中點且 $\overline{BD'}:\overline{CD'} = 1:3$
     asset:
       key: s1_1_optE
       file: doc_111_台北_松山_數學_數A_g11s1e3/s1_1_optE.png
@@ -95,7 +95,7 @@ questions:
         - 133.95
         - 639.75
         - 266.55
-  explanation: 令2$\vec{AD}$＝$\frac{3}{4}\vec{AB}$＋$\frac{1}{4}\vec{AC}$＝$\vec{AD'}$ ⇒ $\vec{AD'}$＝2$\vec{AD}$ ∴B, C, D’共線且$\overline{BD'}$：$\overline{CD'}$＝1：3 故圓形選(E)。
+  explanation: 令 $\vec{AD'} = \frac{3}{4}\vec{AB} + \frac{1}{4}\vec{AC}$，則 $D'$ 在 $\overline{BC}$ 上且 $\overline{BD'}:\overline{CD'} = 1:3$，又 $\vec{AD'} = 2\vec{AD}$，故 $D$ 為 $\overline{AD'}$ 中點，選 (E)。
   tags:
     unit:
       code: MA-A3-3-1
@@ -110,7 +110,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹向量符號誤植（21 應為 2\vec{AD}）
+    fixed_by: agent
+    fix_note: （人工修正：修正向量符號「21」為「2AD」並將純圖選項改寫為文字描述，補齊答案）
   difficulty: 2
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - E
 - id: doc_111_台北_松山_數學_數A_g11s1e3_s1_2
   section: 1
   number: 2

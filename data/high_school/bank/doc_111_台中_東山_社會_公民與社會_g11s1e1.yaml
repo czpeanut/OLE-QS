@@ -301,7 +301,7 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 右圖為市場經濟活動流程圖。假設因疫情導致消費人潮大減，許多「＿＿＿＿」為了節省人事成本，選擇採行無薪假制度或推動裁員政策，衝擊了「＿＿＿＿」（指某個市場）的需求。請問上述兩個引號中的內容，應該分別對應又途中的何處？
+  stem: 在市場經濟活動流程圖中，甲為廠商、乙為家計單位、丙為生產要素市場、丁為商品市場。假設因疫情導致消費人潮大減，許多「＿＿＿＿」為了節省人事成本，選擇採行無薪假制度或推動裁員政策，衝擊了「＿＿＿＿」（指某個市場）的需求。請問上述兩個引號中的內容，應該分別對應圖中的何處？
   options:
   - label: A
     content: 乙丁
@@ -333,6 +333,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末錯字「又途」應為「右圖」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「又途」為「圖」、補充流程圖代號說明並補充答案與解析）
+  explanation: 廠商（甲）為節省人事成本而採行無薪假或裁員，直接減少對勞動力的僱用，衝擊了「生產要素市場（丙）」中的勞動需求。答案選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_111_台中_東山_社會_公民與社會_g11s1e1_s1_12
   section: 1
   number: 12

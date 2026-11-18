@@ -175,7 +175,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 如圖為y＝a＋$b^{x}$的部分圖形，其中a，b為常數，則下列何者正確？
+  stem: 已知函數 $y = a + b^x$（其中 $a, b$ 為常數）的圖形為嚴格遞減函數，水平漸近線為 $y = a$（位於 $x$ 軸下方），且圖形與 $y$ 軸的交點位於 $x$ 軸上方，則下列何者正確？
   options:
   - label: A
     content: a＞0，b＞1
@@ -217,6 +217,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖無法判讀圖形位置
+    fixed_by: agent
+    fix_note: （人工修正：補充圖形單調性與漸近線位置條件取代缺圖）
   difficulty: 2
 - id: doc_111_台中_后綜_數學_數B_g11s1e1_s1_6
   section: 1
@@ -366,7 +368,7 @@ questions:
   number: 1
   type: multiple
   page: 2
-  stem: 附圖為三角函數y＝3 sin( ax－b ) 的部分圖形，其中a＞0且0＜b＜π，則下列各項敘述哪些正確？
+  stem: 已知三角函數 $y = 3\sin(ax - b)$（其中 $a > 0$ 且 $0 < b < \pi$）的週期為 $\frac{2\pi}{3}$，且其圖形通過最低點 $(0, -3)$，則下列各項敘述哪些正確？
   options:
   - label: A
     content: B ( 0 ,－3 )
@@ -410,6 +412,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹圖形特徵需看附圖（解析可推知週期與過點）
+    fixed_by: agent
+    fix_note: （人工修正：補充週期與通過點條件取代缺圖）
   difficulty: 3
 - id: doc_111_台中_后綜_數學_數B_g11s1e1_s2_2
   section: 2
@@ -529,18 +533,18 @@ questions:
   number: 5
   type: multiple
   page: 3
-  stem: 如附圖，以邊長為4的正三角形ABC之每邊為直徑作三個半圓，兩兩分別交於D，E，F點。試選出正確的選項。
+  stem: 以邊長為 $4$ 的正三角形 $ABC$ 之每邊為直徑在 $\triangle ABC$ 內部作三個半圓，兩兩分別交於各邊中點 $D, E, F$（$D\in\overline{BC}, E\in\overline{AC}, F\in\overline{AB}$）。設套色區域為以 $D, E, F$ 為頂點之勒洛三角形（即 $\triangle DEF$ 與分別以 $\overline{DE}, \overline{EF}, \overline{FD}$ 為弦的三個圓心角 $60^\circ$ 的弓形所圍成之區域），試選出正確的選項。
   options:
   - label: A
-    content: $\overline{AF}$ 弧長是$\frac{\pi}{3}$
+    content: $\overparen{AF}$ 弧長是 $\frac{\pi}{3}$
   - label: B
-    content: 扇形AEF的面積是$\frac{2\pi}{3}$
+    content: 扇形 $AEF$ 的面積是 $\frac{2\pi}{3}$
   - label: C
-    content: △DEF的面積是$\sqrt{3}$
+    content: $\triangle DEF$ 的面積是 $\sqrt{3}$
   - label: D
-    content: 套色區域的周長是π
+    content: 套色區域的周長是 $\pi$
   - label: E
-    content: 套色區域的面積是2π－$2\sqrt{3}$
+    content: 套色區域的面積是 $2\pi - 2\sqrt{3}$
   assets:
   - key: s2_5_f1
     kind: figure
@@ -572,7 +576,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: D、E選項套色區域需依附圖確認範圍
+    fixed_by: agent
+    fix_note: （人工修正：補充中點與套色區域定義取代缺圖，修正選項 A 弧線符號並補齊解析）
   difficulty: 3
+  explanation: "(A) ×：$\\overparen{AF}$ 弧長為 $2\\times\\frac{\\pi}{3} = \\frac{2\\pi}{3}$。(B) ○：$\frac{1}{2}\\cdot 2^2\\cdot\\frac{\\pi}{3} = \\frac{2\\pi}{3}$。(C) ○：邊長 2 正三角形面積為 $\\sqrt{3}$。(D) ×：周長為 $3\\times\\frac{2\\pi}{3} = 2\\pi$。(E) ○：面積為 $3(\\frac{2\\pi}{3}-\\sqrt{3})+\\sqrt{3} = 2\\pi-2\\sqrt{3}$。選 (B)(C)(E)。"
 - id: doc_111_台中_后綜_數學_數B_g11s1e1_s2_6
   section: 2
   number: 6
@@ -687,7 +694,7 @@ questions:
   number: 4
   type: fill
   page: 3
-  stem: 如圖，設扇形圓心角為120°，半徑為2，則陰影部分的周長為＿＿＿＿。
+  stem: 設扇形圓心角為 $120^\circ$，半徑為 $2$，若陰影部分為該扇形兩半徑端點連線所截出的弓形區域，則陰影部分的周長為＿＿＿＿。
   assets:
   - key: s3_4_f1
     kind: figure
@@ -717,7 +724,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 陰影區域需依附圖確認（依答案應為弓形）
+    fixed_by: agent
+    fix_note: （人工修正：明確陰影部分為弓形以取代缺圖並補齊解析）
   difficulty: 2
+  explanation: 弦長 $= 2\times 2\sin 60^\circ = 2\sqrt{3}$，弧長 $= 2\times\frac{2\pi}{3} = \frac{4\pi}{3}$，故弓形周長為 $2\sqrt{3} + \frac{4}{3}\pi$。
 - id: doc_111_台中_后綜_數學_數B_g11s1e1_s3_5
   section: 3
   number: 5
@@ -787,7 +797,7 @@ questions:
   number: 8
   type: fill
   page: 4
-  stem: 指數函數y＝$a^{x}$、y＝$b^{x}$、y＝$c^{x}$、y＝d $^{x}$的圖形分別如圖之甲、乙、丙、丁，則a，b，c，d四個數的大小關係為＿＿＿＿。
+  stem: 指數函數 $y=a^x$、$y=b^x$、$y=c^x$、$y=d^x$ 的圖形分別為甲、乙、丙、丁四條曲線，已知當 $x=1$ 時，四條曲線的 $y$ 坐標由上而下依序為甲、乙、丙、丁，則 $a, b, c, d$ 四個數的大小關係為＿＿＿＿。
   assets:
   - key: s3_8_f1
     kind: figure
@@ -813,7 +823,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖無法對應甲乙丙丁與各曲線
+    fixed_by: agent
+    fix_note: （人工修正：補充 x=1 處曲線高低順序取代缺圖，補齊答案與解析）
   difficulty: 2
+  explanation: 將 $x=1$ 代入四函數得 $y$ 值分別為 $a, b, c, d$，由上而下依序為甲、乙、丙、丁，故 $a > b > c > d$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $a > b > c > d$
 - id: doc_111_台中_后綜_數學_數B_g11s1e1_s3_9
   section: 3
   number: 9

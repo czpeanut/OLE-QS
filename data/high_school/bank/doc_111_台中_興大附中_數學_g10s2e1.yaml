@@ -457,7 +457,11 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 缺少題組前言（a_1與遞迴關係式遺失），無法獨立作答
+    fixed_by: agent
+    fix_note: （人工修正：補齊題組前言（首項與遞迴式）並補齊解析）
   difficulty: 1
+  group_stem: 已知數列 $\langle a_n \rangle$ 滿足 $a_1 = \frac{1}{2}$，且對所有正整數 $n \ge 1$，皆有 $a_{n+1} = \frac{1}{2 - a_n}$，試回答下列問題：
+  explanation: $a_2 = \frac{1}{2 - 1/2} = \frac{2}{3}$，$a_3 = \frac{1}{2 - 2/3} = \frac{3}{4}$。
 - id: doc_111_台中_興大附中_數學_g10s2e1_s4_2
   section: 4
   number: 2
@@ -482,7 +486,11 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 缺少題組前言（a_1與遞迴關係式遺失），須依第(1)小題結果推測
+    fixed_by: agent
+    fix_note: （人工修正：補齊題組前言並補齊解析）
   difficulty: 2
+  group_stem: 已知數列 $\langle a_n \rangle$ 滿足 $a_1 = \frac{1}{2}$，且對所有正整數 $n \ge 1$，皆有 $a_{n+1} = \frac{1}{2 - a_n}$，試回答下列問題：
+  explanation: 由 $a_1=\frac{1}{2}, a_2=\frac{2}{3}, a_3=\frac{3}{4}$，推測 $a_n = \frac{n}{n+1}$。
 - id: doc_111_台中_興大附中_數學_g10s2e1_s4_3
   section: 4
   number: 3
@@ -503,4 +511,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺少題組前言（遞迴關係式遺失），僅能依(1)(2)推知為數學歸納法證明
+    fixed_by: agent
+    fix_note: （人工修正：補齊題組前言並補齊答案與解析）
   difficulty: 3
+  group_stem: 已知數列 $\langle a_n \rangle$ 滿足 $a_1 = \frac{1}{2}$，且對所有正整數 $n \ge 1$，皆有 $a_{n+1} = \frac{1}{2 - a_n}$，試回答下列問題：
+  explanation: '(1) 當 $n=1$ 時，$a_1 = \frac{1}{1+1} = \frac{1}{2}$，成立。
+
+    (2) 設 $n=k$（$k\ge 1$）時成立，即 $a_k = \frac{k}{k+1}$。則當 $n=k+1$ 時，$a_{k+1} = \frac{1}{2 - \frac{k}{k+1}} = \frac{k+1}{2k+2-k} = \frac{k+1}{k+2}$，亦成立。由數學歸納法得證。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 略（數學歸納法證明）

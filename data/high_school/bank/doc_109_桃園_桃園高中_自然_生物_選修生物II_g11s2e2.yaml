@@ -451,17 +451,16 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 為探究影響光合作用強度的因素，將同一品種玉米的置於25℃條件培養，實驗結果如附圖所示。下列相關敘述，何者<u>錯誤</u>？
+  stem: 為探究影響光合作用強度的因素，將同一品種玉米置於25°C條件下培養，分別控制土壤含水量（40%～60%或80%）與施肥與否，測定不同光照強度下的$CO_2$吸收量。實驗結果顯示：在低光照（B點）時，各組$CO_2$吸收量隨光照增強而線性上升；達高光照（C、D點）後曲線趨於平緩，且80%含水量下施肥組的$CO_2$吸收量顯著高於未施肥組，但40%～60%含水量下施肥與未施肥兩組曲線幾乎重疊。下列相關敘述，何者<u>錯誤</u>？
   options:
   - label: A
-    content: 與D或相比，B點條件下限制玉米$CO_{2}$吸收量的因素是光照強度
+    content: 與D點相比，B點條件下限制玉米$CO_{2}$吸收量的因素是光照強度
   - label: B
-    content: 光照強度為C點條件下限制玉米$CO_{2}$吸收量的主要因素
+    content: 光照強度並非C點條件下限制玉米$CO_{2}$吸收量的主要因素
   - label: C
     content: 實驗結果表明，在土壤含水量40%—60%的條件下施肥效果明顯
   - label: D
     content: 本實驗所涉及的因素外，從增加光合面積的角度考慮，採取合理密植措施能提高玉米的光能利用率
-  group_stem: 園園想利用葉綠體進行光反應時會釋出電子，以及DCPIP接受電子後會變色的特性，來瞭解植物光反應的過程（附圖）。園園首先將切碎的菠菜葉片加入0.5 M蔗糖溶液，打碎後離心，取得綠色的葉綠體懸浮液，此懸浮液具有葉綠體的正常功能。然後，進行A～D試管的實驗，其結果如表所示。
   assets:
   - key: s1_13_f1
     kind: figure
@@ -475,9 +474,9 @@ questions:
       - 713.55
   shared_asset: g1_11_14
   answer:
-  - D
-  answer_status: verified
-  answer_source: answer_key
+  - C
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: BI-S2-3-2
@@ -492,7 +491,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 A「D或」應為「D點」之錯字
+    fixed_by: agent
+    fix_note: （人工修正：清除誤帶入之前題組文字、修正選項A錯字「D或」為「D點」並補齊實驗條件，更正答案為C）
   difficulty: 3
+  explanation: 在土壤含水量40%～60%的條件下，水分為限制因子，施肥與未施肥組的$CO_2$吸收量無明顯差異（施肥效果不明顯）；在80%含水量時施肥效果才顯著，故(C)錯誤，選(C)。
+  review_note: 原答案卷答案 ['D']，執行 agent 修正為 ['C']
 - id: doc_109_桃園_桃園高中_自然_生物_選修生物II_g11s2e2_s1_14
   section: 1
   number: 14
@@ -1385,7 +1388,7 @@ questions:
   number: 36
   type: multiple
   page: 5
-  stem: 根據乙圖，在光、暗時段，植物葉肉細胞的ABA在葉綠體（chloroplast）、細胞質（cytosol）與類囊膜（thylakoid）之間的轉移，下列敘述何者正確？
+  stem: 研究顯示植物葉肉細胞的離層酸（ABA）在光、暗時段會於葉綠體（chloroplast）、細胞質（cytosol）與類囊體（thylakoid）之間轉移：弱酸性的ABAH可自由通透膜構造，而解離態的$ABA^-$則不易通過膜。白天照光時，葉綠體基質因$H^+$被泵入類囊體腔而呈現較鹼的環境（pH約8.0），使進入葉綠體基質的ABAH解離為$ABA^-$並累積於葉綠體內；夜晚黑暗時，葉綠體基質pH下降，ABAH重新形成並擴散出葉綠體至細胞質。下列敘述何者正確？（多選）
   options:
   - label: A
     content: ABAH容易進出葉綠體，$ABA^{－}$則否
@@ -1416,7 +1419,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹提及「根據乙圖」但未附圖
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖ABA與葉綠體pH變化文字條件並附解析）
   difficulty: 4
+  explanation: (A)未帶電的ABAH脂溶性較高，易進出葉綠體膜，帶負電的$ABA^-$則否，正確；(B)白天照光時葉綠體基質較鹼，類囊體腔較酸；(D)類囊膜兩側的$H^+$濃度梯度高時，可驅動ATP合成酶合成ATP，正確；(E)黑暗時基質pH較低，促使ABA釋出至細胞質進而引起氣孔關閉。故選(A)(D)。
 - id: doc_109_桃園_桃園高中_自然_生物_選修生物II_g11s2e2_s2_37
   section: 2
   number: 37
@@ -1528,10 +1534,8 @@ questions:
   number: 40
   type: calc
   page: 6
-  stem: '若另做一個J組實驗，以未知IAA濃度（X）處理後，測得乙器官生長了11公分。請問J組實驗中，X最可能的數值應該落於A～I哪兩組之間？
-
-    二、桃桃利用90％的丙酮萃取地瓜葉中的色素，再利用石油醚及丙酮體積比9：1的展開液進行濾紙層析法，結果觀察如附圖。請回答下列題目：'
-  group_stem: 一、某生做實驗想探討添加IAA對植物根和莖生長的影響。該生將實驗分成A～I組，每組10顆綠豆，分別泡置於不同濃度的IAA中，兩天後分別測量各組的根和莖增長的平均長度，但是記錄時忘記標示何者是根何者是莖，只好以先以甲、乙代替。
+  stem: 若另做一個J組實驗，以未知IAA濃度（X）處理後，測得乙器官生長了11公分（已知濃度位於高濃度抑制區之前）。請問J組實驗中，X最可能的數值應該落於A～I哪兩組之間？
+  group_stem: 一、某生做實驗想探討添加IAA（生長素）對植物根和莖生長的影響。該生將實驗分成A～I組（IAA濃度由A至I依序遞增：$10^{-11}$、$10^{-10}$、$10^{-9}$、$10^{-8}$、$10^{-7}$、$10^{-6}$、$10^{-5}$、$10^{-4}$、$10^{-3}$ M），每組10顆綠豆，分別浸泡於不同濃度的IAA中，兩天後測量各組甲（根）、乙（莖）增長的平均長度，其中G組（$10^{-5}$ M）乙器官生長10公分、H組（$10^{-4}$ M）乙器官生長12公分、I組（$10^{-3}$ M）乙器官生長8公分。請回答下列問題：
   shared_asset: g3_38_43
   answer:
   - GH之間
@@ -1551,7 +1555,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾誤連入下一題組之標題「二、桃桃利用90％的丙酮...」
+    fixed_by: agent
+    fix_note: （人工修正：移除題幹誤連入之後續題組標題並補齊實驗數據條件與解析）
   difficulty: 3
+  explanation: 乙器官（莖）在G組（$10^{-5}$ M）生長10公分、H組（$10^{-4}$ M）生長12公分，測得生長11公分的未知濃度X應介於G組與H組之間。
 - id: doc_109_桃園_桃園高中_自然_生物_選修生物II_g11s2e2_s3_41
   section: 3
   number: 41

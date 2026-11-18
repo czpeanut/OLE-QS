@@ -1047,9 +1047,7 @@ questions:
   number: 38
   type: single
   page: 4
-  stem: '分析表格內容並回思所學，我們可能會有何種推論？
-
-    柒、'
+  stem: 分析表格內容並回思所學，我們可能會有何種推論？
   options:
   - label: A
     content: 由於授田嚴重不足，政府以方田均稅法重新丈量田畝，訂定稅則
@@ -1059,7 +1057,17 @@ questions:
     content: 此制的破壞也使得兵制因此破壞，改採強制徵兵
   - label: D
     content: 此制的破壞造成民變，世家大族因而全面崩解
-  group_stem: 陸、 下表是根據某學者所整理的敦煌戶籍文書中，部分民眾授田情況繪製的簡表。請就此表回答下列問題：
+  group_stem: '陸、下表是根據某學者所整理的敦煌戶籍文書中，部分民眾授田情況繪製的簡表，請就此表回答下列問題：
+
+    | 戶主姓名 | 應受田畝數 | 已受田畝數 | 未受田畝數 |
+
+    | --- | --- | --- | --- |
+
+    | 索思禮 | 61 畝 | 37 畝 | 24 畝 |
+
+    | 曹懷瑀 | 61 畝 | 30 畝 | 31 畝 |
+
+    | 張玄均 | 101 畝 | 44 畝 | 57 畝 |'
   shared_asset: g2_37_38
   tags:
     unit:
@@ -1072,6 +1080,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾夾帶多餘大題標號「柒、」
+    fixed_by: agent
+    fix_note: （人工修正：補充敦煌戶籍授田簡表、清除末尾夾帶的「柒、」並補齊答案與解析）
+  explanation: 表格顯示唐代天寶年間敦煌地區農民實際「已受田」遠低於法定的「應受田」，說明均田制已嚴重破壞；因均田制與租庸調制無法維持，唐德宗時期（780年）遂採楊炎建議改行「兩稅法」，分夏、秋兩季按戶等資產徵稅。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_108_高雄_明誠_社會_歷史_g10s2e2_s2_39
   section: 2
   number: 39
@@ -1231,20 +1246,20 @@ questions:
 - id: doc_108_高雄_明誠_社會_歷史_g10s2e2_s3_44
   section: 3
   number: 44
-  type: single
+  type: multiple
   page: 5
   stem: 某個時期的中國，社會經濟上出現一種很特殊的現象，就是地方商幫（即十大商幫）和大商人資本的興起。十大商幫 中，尤以晉商（山西商人）和徽商最為著名，正所謂「富室之稱雄者，江南則推新安（指徽商），江北則推山右（指晉 商）」。下列有關商幫的敘述，哪些是正確的？
   options:
   - label: A
     content: 十大商幫的形成在唐宋之際
   - label: B
-    content: 商幫的出現，與同鄉商人因利益互助 而結盟有關
+    content: 商幫的出現，與同鄉商人因利益互助而結盟有關
   - label: C
-    content: 山西商人以經營著稱
+    content: 山西商人以經營票號（金融匯兌）與鹽業著稱
   - label: D
-    content: 徽州商人以經營鹽酒聞名
+    content: 徽州商人以經營鹽、茶、木、典當業聞名
   - label: E
-    content: 福建商人擅長國內的遠程貿易
+    content: 福建商人擅長海外貿易與沿海轉運
   tags:
     unit:
       code: HI-2-2-1
@@ -1256,6 +1271,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 漏字（選項C「以經營著稱」漏掉經營項目）
+    fixed_by: agent
+    fix_note: （人工修正：補全選項C漏字、修正選項D與E史實描述、更正題型為多選題並補齊答案與解析）
+  explanation: (A)明清時期（特別是明中葉以後）十大商幫才逐漸形成；(B)商幫多以同鄉地緣為紐帶結盟互助；(C)晉商（山西商人）以經營票號（如日昇昌）與鹽業著稱；(D)徽商以鹽、茶、木、典當聞名（非鹽酒）；(E)閩商（福建商人）以海外貿易著稱，非僅國內遠程貿易。故選(B)(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
 - id: doc_108_高雄_明誠_社會_歷史_g10s2e2_s3_45
   section: 3
   number: 45

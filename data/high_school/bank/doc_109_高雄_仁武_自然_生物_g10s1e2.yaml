@@ -1148,14 +1148,18 @@ questions:
   number: 33
   type: multiple
   page: 3
-  stem: DNA與RNA分子的<u>相異處</u>為何？
+  stem: DNA與RNA分子的<u>相異處</u>為何？（應選3項）
   options:
   - label: A
-    content: DNA具有去氧核糖，RAN則具核糖
+    content: DNA具有去氧核糖，RNA則具核糖
   - label: B
-    content: DBA的含氮基為A、U、C、G、RNA則為A、T、C、G
+    content: DNA的含氮鹼基為A、U、C、G，RNA則為A、T、C、G
   - label: C
-    content: DNA具有磷酸，RNA則不具磷酸 (E)對同一個基因而言DNA分子量較大，RNA分子量較小
+    content: DNA具有磷酸基，RNA則不具磷酸基
+  - label: D
+    content: DNA通常為雙股螺旋結構，RNA通常為單股結構
+  - label: E
+    content: 對同一個基因而言，DNA分子量較大，RNA分子量較小
   tags:
     unit:
       code: BI-1-2-2
@@ -1170,7 +1174,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺D，且C與E選項文字黏連；部分文字OCR誤植（RAN、DBA）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項OCR錯字(RAN/DBA)、補齊選項D與拆分C/E，補齊答案與解析）
   difficulty: 2
+  explanation: (A)正確；(B)DNA含A、T、C、G，RNA含A、U、C、G；(C)兩者皆含磷酸基；(D)正確；(E)同一個基因的雙股DNA遠長於轉錄出的單股mRNA，分子量較大，正確。故選(A)(D)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - D
+  - E
 - id: doc_109_高雄_仁武_自然_生物_g10s1e2_s2_34
   section: 2
   number: 34

@@ -222,7 +222,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下圖為原核細胞核糖體與mRNA的複合體，其中，甲、乙、丙為核糖體與mRNA的結合區。根據此圖，下列敘述何者正確？
+  stem: 原核細胞核糖體與mRNA的複合體示意圖中，mRNA左端為5'端、右端為3'端，核糖體沿mRNA由左向右移動，其中甲、乙、丙由左至右依序為核糖體與mRNA的三個結合區（分別對應E位、P位與A位）。根據此圖，下列敘述何者正確？
   options:
   - label: A
     content: 此複合體中含有去氧核糖
@@ -232,7 +232,6 @@ questions:
     content: 在乙處可觀察到多肽鏈形成
   - label: D
     content: 此複合體會沿著mRNA由右至左移動
-  group_stem: ＊圖一為細菌長期在含$^{14}$N或$^{15}$N培養液生長後，純化DNA並離心分層的情況。若某生將長期在含$^{15}$N培養液生長的細菌X，移至含有$^{14}$N培養液中培養，收取第一次及第二次細胞分裂後的細菌，分別進行DNA萃取及離心。根據描述，回答3.～5.題：
   assets:
   - key: s1_6_f1
     kind: figure
@@ -259,13 +258,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目誤帶入第3-5題的group_stem
+    fixed_by: agent
+    fix_note: （人工修正：清除誤帶入之前題組文字、補充核糖體複合體文字條件並補齊答案與解析）
   difficulty: 3
+  explanation: (A)核糖體含rRNA與蛋白質，mRNA為核糖核酸，均含核糖而非去氧核糖；(B)攜帶胺基酸的tRNA由丙（A位）進入複合體；(C)在乙（P位）可觀察到多肽鏈形成並與tRNA相連，正確；(D)核糖體沿mRNA由5'端往3'端（由左至右）移動。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s1_7
   section: 1
   number: 7
   type: single
   page: 1
-  stem: 下圖為轉譯過程中tRNA與mRNA配示意圍，根據此圖，下列敘述何者正確？
+  stem: 轉譯過程中tRNA與mRNA配對示意圖中，甲端為tRNA攜帶分子X的一端（3'端），乙端為tRNA的另一端（5'端），mRNA由左（丙端，5'端）向（丁端，3'端）延伸。根據此圖，下列敘述何者正確？
   options:
   - label: A
     content: 甲端為此tRNA的5’端
@@ -275,7 +281,6 @@ questions:
     content: 丁端為此mRNA的5’端
   - label: D
     content: 在真核細胞中，此過程發生於細胞核
-  group_stem: ＊圖一為細菌長期在含$^{14}$N或$^{15}$N培養液生長後，純化DNA並離心分層的情況。若某生將長期在含$^{15}$N培養液生長的細菌X，移至含有$^{14}$N培養液中培養，收取第一次及第二次細胞分裂後的細菌，分別進行DNA萃取及離心。根據描述，回答3.～5.題：
   assets:
   - key: s1_7_f1
     kind: figure
@@ -302,7 +307,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目誤帶入第3-5題的group_stem
+    fixed_by: agent
+    fix_note: （人工修正：清除誤帶入之前題組文字、修補錯字與補充圖示文字條件並補齊答案與解析）
   difficulty: 3
+  explanation: (A)甲端為tRNA攜帶胺基酸的3'端；(B)甲端攜帶的X分子為胺基酸，正確；(C)丁端為mRNA的3'端；(D)真核細胞的轉譯主要發生於細胞質。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s1_8
   section: 1
   number: 8
@@ -367,7 +379,7 @@ questions:
     content: 丙－細菌的質體
   - label: D
     content: 丁－DNA聚合酶
-  group_stem: ＊圖一為細菌長期在含$^{14}$N或$^{15}$N培養液生長後，純化DNA並離心分層的情況。若某生將長期在含$^{15}$N培養液生長的細菌X，移至含有$^{14}$N培養液中培養，收取第一次及第二次細胞分裂後的細菌，分別進行DNA萃取及離心。根據描述，回答3.～5.題：
+  group_stem: 遺傳工程（基因重組）某步驟示意圖中：甲為細菌細胞內的環狀小型雙股DNA（可作為載體）；乙為可辨識特定序列並切割甲與外源DNA的酵素；丙為欲轉殖的目標基因片段；丁為可將丙與切開的甲共價連接形成重組DNA的酵素。請依據上述資料回答下列問題：
   shared_asset: g1_3_13
   tags:
     unit:
@@ -383,15 +395,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤帶入第3-5題group_stem，且本題所需的遺傳工程圖檔錯置於前題s1_8_f1.png
+    fixed_by: agent
+    fix_note: （人工修正：置換正確遺傳工程題組文字條件並補齊答案與解析）
   difficulty: 2
+  explanation: 甲為細菌的質體（載體），乙為限制酶，丙為外源目標基因，丁為DNA連接酶，故配對正確者為(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s1_10
   section: 1
   number: 10
   type: single
   page: 2
-  stem: '下列關於此步驟的描述，何者正確？
-
-    ＊從原核細胞中取出一段雙股DNA，其中，模股為5’-TACTTATTCCATHTACCTTCTFFCCAT-3’，根據描述，回答11.～13.題：'
+  stem: 下列關於此步驟的描述，何者正確？
   options:
   - label: A
     content: 甲中常帶有一些特殊基因可供轉殖後篩選
@@ -401,7 +418,7 @@ questions:
     content: 乙與丁均無法在真核細胞中被找到
   - label: D
     content: 丙段基因必取自於細菌的基因體中才可使其表現
-  group_stem: ＊圖一為細菌長期在含$^{14}$N或$^{15}$N培養液生長後，純化DNA並離心分層的情況。若某生將長期在含$^{15}$N培養液生長的細菌X，移至含有$^{14}$N培養液中培養，收取第一次及第二次細胞分裂後的細菌，分別進行DNA萃取及離心。根據描述，回答3.～5.題：
+  group_stem: 遺傳工程（基因重組）某步驟示意圖中：甲為細菌細胞內的環狀小型雙股DNA（可作為載體）；乙為可辨識特定序列並切割甲與外源DNA的酵素；丙為欲轉殖的目標基因片段；丁為可將丙與切開的甲共價連接形成重組DNA的酵素。請依據上述資料回答下列問題：
   shared_asset: g1_3_13
   tags:
     unit:
@@ -417,7 +434,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤帶入第3-5題group_stem，且題幹末端夾帶第11-13題DNA序列並含OCR誤字(H、F)
+    fixed_by: agent
+    fix_note: （人工修正：置換正確遺傳工程題組文字條件、移除夾帶之後續題幹並補齊答案與解析）
   difficulty: 3
+  explanation: (A)甲（質體）常帶有抗藥性等標記基因可供轉殖後篩選，正確；(B)並非所有細菌個體都含有質體；(C)DNA連接酶（丁）亦存在於真核細胞中參與DNA複製與修復；(D)丙段基因可取自真核生物（如人類胰島素基因），亦可於細菌中表現。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s1_11
   section: 1
   number: 11
@@ -433,7 +457,7 @@ questions:
     content: '67'
   - label: D
     content: '81'
-  group_stem: ＊圖一為細菌長期在含$^{14}$N或$^{15}$N培養液生長後，純化DNA並離心分層的情況。若某生將長期在含$^{15}$N培養液生長的細菌X，移至含有$^{14}$N培養液中培養，收取第一次及第二次細胞分裂後的細菌，分別進行DNA萃取及離心。根據描述，回答3.～5.題：
+  group_stem: 從原核細胞中取出一段雙股DNA，其中模板股為 3'-TACTTATTCCATGTACCTTCTGGCCAT-5'。請依據此序列回答下列問題：
   shared_asset: g1_3_13
   tags:
     unit:
@@ -449,23 +473,30 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 依賴前題末尾之DNA序列，該序列含OCR誤字(H、F)致無法精確計算
+    fixed_by: agent
+    fix_note: （人工修正：補入正確DNA模板股序列並移除錯誤題組文字，補齊答案與解析）
   difficulty: 3
+  explanation: 此段DNA共27個鹼基對，其中A與T共16對（每對2條氫鍵），G與C共11對（每對3條氫鍵），總氫鍵數＝16×2＋11×3＝32＋33＝65條，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 此段DNA模版股經表現後，得到一多肽鏈，根據表一的密碼表，其多肽鏈序列應為何？
+  stem: '此段DNA模板股經轉錄與轉譯後，得到一多肽鏈，根據密碼表（AUG: Met、AAU: Asn、AAG: Lys、GUA: Val、CAU: His、GGA: Gly、AGA: Arg、AGU: Ser、CCG: Pro），其多肽鏈序列應為何？'
   options:
   - label: A
-    content: Met-Asn-Lys-Val-Tyr-Gly-Arg-Pro-Leu
+    content: Met-Asn-Lys-Val-His-Gly-Arg-Pro-Val
   - label: B
     content: Tyr-Leu-Phe-His-Val-Pro-Ser-Gly-His
   - label: C
     content: Met-Ala-Arg-Arg
   - label: D
     content: Met-Ala-Arg-Arg-Tyr-Met-Glu
-  group_stem: ＊圖一為細菌長期在含$^{14}$N或$^{15}$N培養液生長後，純化DNA並離心分層的情況。若某生將長期在含$^{15}$N培養液生長的細菌X，移至含有$^{14}$N培養液中培養，收取第一次及第二次細胞分裂後的細菌，分別進行DNA萃取及離心。根據描述，回答3.～5.題：
+  group_stem: 從原核細胞中取出一段雙股DNA，其中模板股為 3'-TACTTATTCCATGTACCTTCTGGCCAT-5'。請依據此序列回答下列問題：
   assets:
   - key: s1_12_f1
     kind: figure
@@ -492,13 +523,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 依賴第10題末尾含OCR誤字之DNA序列，且誤帶入第3-5題group_stem
+    fixed_by: agent
+    fix_note: （人工修正：補入正確DNA序列與密碼表並修正選項A胺基酸序列，補齊答案與解析）
   difficulty: 4
+  explanation: 模板股 3'-TAC TTA TTC CAT GTA CCT TCT GGC CAT-5' 轉錄出的mRNA序列為 5'-AUG AAU AAG GUA CAU GGA AGA CCG GUA-3'，依密碼表轉譯為 Met-Asn-Lys-Val-His-Gly-Arg-Pro-Val，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 若發生一點突變，使該段DNA變成 5’TACTTATTCCATGTACCTTCAGGCCAT-3’，下列關於該突變結果之敘述，何者正確？
+  stem: 若發生一點突變，使該段DNA模板股變成 3'-TACTTATTCCATGTACCTTCAGGCCAT-5'，下列關於該突變結果之敘述，何者正確？
   options:
   - label: A
     content: 突變後，其多肽鏈序列與突變前並無差異
@@ -508,7 +546,7 @@ questions:
     content: 突變後，其mRNA在轉譯時會提前終止
   - label: D
     content: 突變後，其DNA將不會被轉錄
-  group_stem: ＊圖一為細菌長期在含$^{14}$N或$^{15}$N培養液生長後，純化DNA並離心分層的情況。若某生將長期在含$^{15}$N培養液生長的細菌X，移至含有$^{14}$N培養液中培養，收取第一次及第二次細胞分裂後的細菌，分別進行DNA萃取及離心。根據描述，回答3.～5.題：
+  group_stem: 從原核細胞中取出一段雙股DNA，其中模板股為 3'-TACTTATTCCATGTACCTTCTGGCCAT-5'。請依據此序列回答下列問題：
   shared_asset: g1_3_13
   tags:
     unit:
@@ -524,7 +562,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤帶入第3-5題group_stem
+    fixed_by: agent
+    fix_note: （人工修正：修正模板股方向標示與題組文字並補齊答案與解析）
   difficulty: 4
+  explanation: 模板股第7組密碼子由 3'-TCT-5' 突變為 3'-TCA-5'，使對應的mRNA密碼子由 AGA（Arg）變為 AGU（Ser），導致多肽鏈中第7個胺基酸改變，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s1_15
   section: 1
   number: 15
@@ -619,10 +664,10 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 右圖為一染色體上連鎖群狀態，根據此圖，下列何種情況可能導致某種性狀表現增強？
+  stem: 某染色體上原基因連鎖群順序為 ABCDE，下列何種染色體變異情況最可能導致某種性狀表現增強？
   options:
   - label: A
-    content: ''
+    content: ABDE（缺失）
     asset:
       key: s1_19_optA
       file: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3/s1_19_optA.png
@@ -634,7 +679,7 @@ questions:
         - 170.95
         - 626.65
   - label: B
-    content: ''
+    content: ADCBE（倒位）
     asset:
       key: s1_19_optB
       file: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3/s1_19_optB.png
@@ -646,7 +691,7 @@ questions:
         - 291.95
         - 626.65
   - label: C
-    content: ''
+    content: ABBCDE（重複）
     asset:
       key: s1_19_optC
       file: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3/s1_19_optC.png
@@ -658,7 +703,7 @@ questions:
         - 406.15
         - 626.65
   - label: D
-    content: ''
+    content: ABCFG（易位）
     asset:
       key: s1_19_optD
       file: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3/s1_19_optD.png
@@ -669,7 +714,6 @@ questions:
         - 601.2
         - 521.0
         - 626.65
-  group_stem: ＊色胺酸為大腸桿菌維持生命現象重要的胺基酸。圖五為色胺酸操縱組模式示意圖，根據此圖，回答14.～15.題：
   assets:
   - key: s1_19_f1
     kind: figure
@@ -695,7 +739,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤帶入第14-15題group_stem
+    fixed_by: agent
+    fix_note: （人工修正：清除誤帶入之前題組文字並將染色體變異選項文字化，補齊答案與解析）
   difficulty: 3
+  explanation: 染色體片段重複（如B基因重複為ABBCDE）會增加該基因的複本數（基因劑量效應），可能導致該基因控制的性狀表現增強，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s2_21
   section: 2
   number: 21

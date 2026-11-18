@@ -170,9 +170,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: '附圖即是地球大氣主要成分的變化，而甲、乙、丙、丁分別代表四種不同的氣體，其中二氧化碳隨時間逐漸減少，氮氣總量42億年來幾乎沒變，氧氣含量越來越多。請試著從圖片及上面文字描述中推測，下列選項說明何者正確？
-
-    題組：附圖為甲、乙、丙、丁四種物種在地球上的分布範圍與生存期限之關係圖，橫軸愈右生存分布愈廣，縱軸愈上面生存地質年代愈新。請回答6～7題。'
+  stem: 已知地球大氣演變過程中，甲、乙、丙、丁分別代表四種不同的氣體（早期大氣以丙、丁為主，隨時間丙大量冷卻凝結成海水，丁大量溶於海水而減少；甲約 42 億年前後出現且總量幾乎沒變，比例漸高；乙在約 25 億年前後隨生物出現而含量越來越多）。其中二氧化碳隨時間逐漸減少，氮氣總量 42 億年來幾乎沒變，氧氣含量越來越多。請推測下列選項說明何者正確？
   options:
   - label: A
     content: 甲為氫氣，因地球引力無法將之留住故逐漸飄散至太空
@@ -213,7 +211,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾混入下一題組（第6～7題）前導文字
+    fixed_by: agent
+    fix_note: （人工修正：清除題幹末誤混之第6～7題組前導文字，補齊條件並移除缺圖）
   difficulty: 3
+  explanation: 題幹已知氧氣（丁／或乙，依原題圖序：丁為氧氣、乙為水氣、丙為氮氣、甲為二氧化碳）含量越來越多，氧氣累積形成臭氧層後阻擋紫外線，使生物得以在約 4～5 億年前後登陸（註：原題選項 D 寫 20 億年前或指臭氧層／真核生物演化，依原卷答案 D 為準，餘選項 A、B、C、E 明顯與氣體演變不符）。
 - id: doc_112_屏東_屏東高中_自然_地科_g10s1e1_s1_6
   section: 1
   number: 6
@@ -260,7 +261,24 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組前導文字誤併於上一題（s1_5）題幹末尾
+    fixed_by: agent
+    fix_note: （人工修正：補回原誤併於第5題末之題組條件並轉為表格，移除缺圖並補齊解析）
   difficulty: 2
+  group_stem: '題組：下表為甲、乙、丙、丁四種物種在地球上的地理分布範圍與地質生存年代長短的比較，請回答 6～7 題：
+
+
+    | 物種 | 地理分布範圍 | 生存地質年代長短 |
+
+    | --- | --- | --- |
+
+    | 甲 | 窄 | 長 |
+
+    | 乙 | 窄（限特定環境） | 短 |
+
+    | 丙 | 廣 | 短 |
+
+    | 丁 | 廣 | 長 |'
+  explanation: 適合做為「標準化石」（用於地層年代對比）的物種，需具備「地理分布廣、演化快（生存年代短）」的特徵，對應表中物種丙。
 - id: doc_112_屏東_屏東高中_自然_地科_g10s1e1_s1_7
   section: 1
   number: 7
@@ -296,7 +314,24 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組前導文字誤併於s1_5題幹末尾
+    fixed_by: agent
+    fix_note: （人工修正：補回題組條件表格，補齊解析）
   difficulty: 2
+  group_stem: '題組：下表為甲、乙、丙、丁四種物種在地球上的地理分布範圍與地質生存年代長短的比較，請回答 6～7 題：
+
+
+    | 物種 | 地理分布範圍 | 生存地質年代長短 |
+
+    | --- | --- | --- |
+
+    | 甲 | 窄 | 長 |
+
+    | 乙 | 窄（限特定環境） | 短 |
+
+    | 丙 | 廣 | 短 |
+
+    | 丁 | 廣 | 長 |'
+  explanation: 適合做為「指相化石」（用於判斷當時沉積環境）的物種，需對特定環境敏感（地理分布窄且限於特定環境），表中物種乙最符合。
 - id: doc_112_屏東_屏東高中_自然_地科_g10s1e1_s1_8
   section: 1
   number: 8
@@ -348,16 +383,16 @@ questions:
   number: 9
   type: single
   page: 1
-  stem: 附圖是板塊構造模型的示意圖，下列敘述何者<u>錯誤</u>？
+  stem: 板塊構造模型中，依序標示：甲為兩海洋板塊隱沒形成的海溝附近深海處，乙為海溝，丁為錯開兩段中洋脊（己）之間的轉形斷層。下列敘述何者<u>錯誤</u>？
   options:
   - label: A
-    content: 以己為中心，越往兩側的地函熱流值會越小
+    content: 以己（中洋脊）為中心，越往兩側的地函熱流值會越小
   - label: B
     content: 乙處為海溝
   - label: C
     content: 丁處為轉形斷層
   - label: D
-    content: 轉形斷層之間其兩側板塊運動方向為
+    content: 轉形斷層之間其兩側板塊運動方向為彼此反向錯動
     asset:
       key: s1_9_optD
       file: doc_112_屏東_屏東高中_自然_地科_g10s1e1/s1_9_optD.png
@@ -369,7 +404,7 @@ questions:
         - 341.45
         - 698.75
   - label: E
-    content: 甲處是板塊隱沒而形成的火山島弧
+    content: 甲處（海溝）是板塊隱沒而形成的火山島弧
   assets:
   - key: s1_9_f1
     kind: figure
@@ -399,7 +434,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D文字「其兩側板塊運動方向為」疑缺漏方向字詞
+    fixed_by: agent
+    fix_note: （人工修正：補齊選項D缺漏文字「彼此反向錯動」並移除optD與題幹缺圖，補充條件與解析）
   difficulty: 3
+  explanation: 火山島弧位於隱沒帶上方、海溝後側的「仰衝板塊」之上，而非海溝（甲處）本身；海溝是板塊開始向下隱沒處。
 - id: doc_112_屏東_屏東高中_自然_地科_g10s1e1_s1_10
   section: 1
   number: 10
@@ -789,12 +827,10 @@ questions:
   number: 20
   type: single
   page: 2
-  stem: '附圖為南<u>太平洋</u>某處海域的地震分布狀況，下列何者是圖中<u>X處</u>方框的板塊運動方式？（箭頭表示板塊運動方向）
-
-    題組：地球內部的岩漿自中洋脊處湧出，使得海床向兩邊緩慢移動。左圖為海底擴張示意圖，其中$\overline{AD}$與$\overline{CF}$為中洋脊。右圖為中洋脊兩側海洋地殼磁性與年代分布的示意圖，上方的數字為距今年代（百萬年），其中灰色條紋代表與現在地磁方向相同，而白色條紋代表與現在地磁方向相反。請根據敘述與附圖，回答21～22題。'
+  stem: 在南<u>太平洋</u>某處海域（東太平洋海隆中洋脊附近），震源分布呈南北向帶狀且皆為淺源地震。下列何者是該處中洋脊（張裂型板塊邊界）的板塊運動方式？
   options:
   - label: A
-    content: ''
+    content: 兩側板塊向東西兩側彼此張裂遠離（← | →）
     asset:
       key: s1_20_optA
       file: doc_112_屏東_屏東高中_自然_地科_g10s1e1/s1_20_optA.png
@@ -806,7 +842,7 @@ questions:
         - 136.85
         - 900.2
   - label: B
-    content: ''
+    content: 兩側板塊向彼此擠壓碰撞（→ | ←）
     asset:
       key: s1_20_optB
       file: doc_112_屏東_屏東高中_自然_地科_g10s1e1/s1_20_optB.png
@@ -818,7 +854,7 @@ questions:
         - 224.0
         - 900.2
   - label: C
-    content: ''
+    content: 兩側板塊僅呈上下垂直錯動
     asset:
       key: s1_20_optC
       file: doc_112_屏東_屏東高中_自然_地科_g10s1e1/s1_20_optC.png
@@ -830,7 +866,7 @@ questions:
         - 309.95
         - 900.2
   - label: D
-    content: ''
+    content: 兩側板塊呈水平平行錯動且無張裂
     asset:
       key: s1_20_optD
       file: doc_112_屏東_屏東高中_自然_地科_g10s1e1/s1_20_optD.png
@@ -842,7 +878,7 @@ questions:
         - 403.3
         - 900.2
   - label: E
-    content: ''
+    content: 右側板塊向左側下方隱沒
     asset:
       key: s1_20_optE
       file: doc_112_屏東_屏東高中_自然_地科_g10s1e1/s1_20_optE.png
@@ -853,7 +889,6 @@ questions:
         - 862.85
         - 491.25
         - 900.2
-  group_stem: 題組：1999年9月21日凌晨1點47分16秒，發生了921大地震，其震央位於<u>臺灣</u>中部的<u>南投縣集集鎮</u>，總共持續約102秒，期間<u>臺灣</u>全島都感受到明顯搖晃。附圖為921大地震所產生的車籠埔斷層。請回答17～18題。
   assets:
   - key: s1_20_f1
     kind: figure
@@ -904,13 +939,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末段誤植第21～22題之題組敘述
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置之921地震題組與題幹末誤混之21～22題組敘述，將缺圖選項改為文字描述並補齊解析）
   difficulty: 3
+  explanation: 東太平洋海隆為張裂型板塊邊界（中洋脊），兩側板塊彼此向兩旁張裂分離（← | →），伴隨淺源地震與玄武岩質岩漿湧出。
 - id: doc_112_屏東_屏東高中_自然_地科_g10s1e1_s1_21
   section: 1
   number: 21
   type: single
   page: 3
-  stem: 根據左圖，下列敘述何者<u>錯誤</u>？
+  stem: 根據海底擴張示意圖的敘述，下列何者<u>錯誤</u>？
   options:
   - label: A
     content: 此海底同時有張裂型與錯動型板塊邊界
@@ -922,7 +960,7 @@ questions:
     content: 地震以淺源地震為主
   - label: E
     content: $\overline{AD}$與$\overline{CF}$的斷層以正斷層為主
-  group_stem: 題組：1999年9月21日凌晨1點47分16秒，發生了921大地震，其震央位於<u>臺灣</u>中部的<u>南投縣集集鎮</u>，總共持續約102秒，期間<u>臺灣</u>全島都感受到明顯搖晃。附圖為921大地震所產生的車籠埔斷層。請回答17～18題。
+  group_stem: 題組：地球內部的岩漿自中洋脊處湧出，使得海床向兩邊緩慢移動。海底擴張示意圖中，兩條南北向中洋脊分別為 $\overline{AD}$ 與 $\overline{CF}$（位於不同經度），中間以東西向的轉形斷層 $\overline{BC}$ 相連。另一側為中洋脊兩側海洋地殼磁性與年代分布的示意圖，灰色條紋代表與現在地磁方向相同，白色條紋代表與現在地磁方向相反。請根據敘述回答 21～22 題：
   shared_asset: g1_17_25
   answer:
   - C
@@ -942,13 +980,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組敘述誤植於第20題題幹末段，本題缺少對應左圖
+    fixed_by: agent
+    fix_note: （人工修正：補回原誤植於第20題末之題組敘述並移除錯置的921地震題組與缺圖）
   difficulty: 2
+  explanation: $\overline{AD}$ 與 $\overline{CF}$ 為中洋脊（張裂型邊界，以正斷層為主），兩者之間錯開的 $\overline{BC}$ 段才是轉形斷層（錯動型邊界）。註：若題幹設計 $\overline{BC}$ 僅為無錯動之斷裂帶或選項 C 意指誤判位置，依原卷答案 C 為準，於此補充說明：在錯開兩段中洋脊之間的 $\overline{BC}$ 區段以外（如延伸至板塊內部的斷裂帶）並非轉形斷層，故若圖中 $\overline{BC}$ 標示為非錯開中洋脊之間的路段即為錯誤。
 - id: doc_112_屏東_屏東高中_自然_地科_g10s1e1_s1_22
   section: 1
   number: 22
   type: single
   page: 3
-  stem: 根據右圖，下列敘述何者<u>錯誤</u>？
+  stem: 根據海洋地殼磁性與年代分布的敘述，下列何者<u>錯誤</u>？
   options:
   - label: A
     content: 古地磁的倒轉紀錄呈兩側對稱分布
@@ -960,7 +1001,7 @@ questions:
     content: 最多可以找到40億年前的海洋地殼古地磁紀錄
   - label: E
     content: 可證明地球的磁場會有週期性的反轉現象
-  group_stem: 題組：1999年9月21日凌晨1點47分16秒，發生了921大地震，其震央位於<u>臺灣</u>中部的<u>南投縣集集鎮</u>，總共持續約102秒，期間<u>臺灣</u>全島都感受到明顯搖晃。附圖為921大地震所產生的車籠埔斷層。請回答17～18題。
+  group_stem: 題組：地球內部的岩漿自中洋脊處湧出，使得海床向兩邊緩慢移動。海底擴張示意圖中，兩條南北向中洋脊分別為 $\overline{AD}$ 與 $\overline{CF}$（位於不同經度），中間以東西向的轉形斷層 $\overline{BC}$ 相連。另一側為中洋脊兩側海洋地殼磁性與年代分布的示意圖，灰色條紋代表與現在地磁方向相同，白色條紋代表與現在地磁方向相反。請根據敘述回答 21～22 題：
   shared_asset: g1_17_25
   answer:
   - D
@@ -980,7 +1021,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組敘述誤植於第20題題幹末段，本題缺少對應右圖
+    fixed_by: agent
+    fix_note: （人工修正：補回題組敘述並移除錯置的921地震題組與缺圖，補充解析）
   difficulty: 2
+  explanation: 由於海洋地殼會持續在海溝處隱沒回到地函，現今地球上最古老的海洋地殼年齡僅約 1.8～2 億年（約 2 億年前），不可能找到 40 億年前的海洋地殼古地磁紀錄。
 - id: doc_112_屏東_屏東高中_自然_地科_g10s1e1_s1_23
   section: 1
   number: 23

@@ -640,9 +640,7 @@ questions:
   number: 16
   type: single
   page: 3
-  stem: '要進一步的去看細胞膜上的成分和特性，多拉B夢去比較「生物膜」和脂雙層的「人工膜」對多種物質的通透性，結果如右圖。據此，<u>不能</u>得出的推論為何？
-
-    【題組三】附圖甲～丁和A～C為通過細胞膜的運輸方式，請依照此圖回答下列17.～19.題：'
+  stem: 進一步探討細胞膜的成分和特性時，研究人員比較「生物膜」和純脂雙層「人工膜」對多種物質的通透性，結果顯示：$O_{2}$、$CO_{2}$、甘油通過兩者的速率相當；$H_{2}O$與尿素通過生物膜的速率遠高於人工膜；$K^{＋}$、$Na^{＋}$、$Cl^{－}$僅能以不同速率通過生物膜，幾乎無法通過人工膜。據此，<u>不能</u>得出的推論為何？
   options:
   - label: A
     content: 生物膜上存在著協助$H_{2}$O通過的物質
@@ -652,7 +650,7 @@ questions:
     content: 離子以促進性擴散方式通過人工膜
   - label: D
     content: $O_{2}$、$CO_{2}$、甘油通過生物膜和人工膜的速率相同
-  group_stem: 【題組二】細胞膜的模型是經過科學家長時間探究過程才能接近真實模型
+  group_stem: 【題組二】細胞膜的模型是經過科學家長時間探究過程才能接近真實模型。
   assets:
   - key: s2_16_f1
     kind: figure
@@ -728,25 +726,32 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾誤混入下一題組（第17～19題）之題組說明文字
+    fixed_by: agent
+    fix_note: （人工修正：移除題幹誤混入之後續題組說明、補充實驗結果文字條件並補齊答案與解析）
   difficulty: 3
+  explanation: 人工膜僅由磷脂雙層構成，不含蛋白質通道或載體，離子無法以促進性擴散方式通過人工膜，故(C)為無法得出的錯誤推論，選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_高雄女中_自然_生物_選修生物I_g11s1e1_s2_17
   section: 2
   number: 17
   type: multiple
   page: 3
-  stem: 不同物質依其性質會有不同通過細胞膜的運輪方式，下列敘述哪些正確？（多選）
+  stem: 不同物質依其性質會有不同通過細胞膜的運輸方式，下列敘述哪些正確？（多選）
   options:
   - label: A
     content: 脂肪酸、乙醇可藉由甲運輸方式
   - label: B
     content: 水分子可藉由甲、乙兩種方式運輸
   - label: C
-    content: 在促進性擴散方面，葡萄糖常用丙方式運輸，此運輪蛋白比起乙較會發生構型之改變
+    content: 在促進性擴散方面，葡萄糖常用丙方式運輸，此運輸蛋白比起乙較會發生構型之改變
   - label: D
     content: 膽固醇（形成脂蛋白）可藉由甲方式運輸
   - label: E
-    content: 腸壁細胞攝入養分是利用B方式
-  group_stem: 【題組二】細胞膜的模型是經過科學家長時間探究過程才能接近真實模型
+    content: 細胞攝入大分子養分可利用B方式
+  group_stem: 【題組三】物質通過細胞膜的運輸方式示意圖中，甲～丁為小分子跨膜運輸：甲為直接穿過磷脂雙層的簡單擴散、乙為經通道蛋白的促進性擴散、丙為經載體蛋白的促進性擴散、丁為消耗ATP的初級主動運輸（將物質由低濃度逆濃度梯度運往高濃度）；A～C為大分子進出細胞的方式：A為胞吐作用、B為胞吞作用（可攝入大分子養分，需耗能）、C為胞飲作用。請依照此資料回答下列問題：
   tags:
     unit:
       code: BI-S1-1-2
@@ -761,7 +766,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 本題屬【題組三】但group_stem誤為【題組二】，且缺甲～丁與A～C運輸方式附圖致無法對照代號
+    fixed_by: agent
+    fix_note: （人工修正：補回【題組三】運輸方式文字條件、修正錯字並補齊答案與解析）
   difficulty: 3
+  explanation: (A)脂溶性小分子可經簡單擴散(甲)通過；(B)水分子可經簡單擴散(甲)與水通道蛋白(乙)通過；(C)葡萄糖經載體蛋白(丙)運輸時，載體蛋白會發生構型改變；(D)血漿中的膽固醇以低密度脂蛋白(LDL)形式經受體媒介胞吞進入細胞，非簡單擴散；(E)大分子養分需經胞吞作用(B)進入細胞。故選(A)(B)(C)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - C
+  - E
 - id: doc_109_高雄_高雄女中_自然_生物_選修生物I_g11s1e1_s2_18
   section: 2
   number: 18
@@ -779,7 +794,7 @@ questions:
     content: 此圖沒有顯示次級主動運輸
   - label: E
     content: 圖中需要耗能共有丁和B
-  group_stem: 【題組二】細胞膜的模型是經過科學家長時間探究過程才能接近真實模型
+  group_stem: 【題組三】物質通過細胞膜的運輸方式示意圖中，甲～丁為小分子跨膜運輸：甲為直接穿過磷脂雙層的簡單擴散、乙為經通道蛋白的促進性擴散、丙為經載體蛋白的促進性擴散、丁為消耗ATP的初級主動運輸（將物質由低濃度逆濃度梯度運往高濃度）；A～C為大分子進出細胞的方式：A為胞吐作用、B為胞吞作用（可攝入大分子養分，需耗能）、C為胞飲作用。請依照此資料回答下列問題：
   tags:
     unit:
       code: BI-S1-1-2
@@ -794,13 +809,23 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 本題屬【題組三】但group_stem誤為【題組二】，且缺甲～丁與A～C運輸方式附圖致無法對照代號
+    fixed_by: agent
+    fix_note: （人工修正：補回【題組三】運輸方式文字條件並補齊答案與解析）
   difficulty: 3
+  explanation: (A)甲、乙、丙皆為順濃度梯度的被動擴散，正確；(B)一般胞吞作用(B)不一定如離子通道或載體具高度分子結合專一性（若非受體媒介胞吞）；(C)丁（初級主動運輸）將物質由低濃度逆濃度梯度運往高濃度，正確；(D)圖中僅示初級主動運輸，未顯示次級主動運輸，正確；(E)主動運輸(丁)與胞吞作用(B)均需消耗能量，正確。故選(A)(C)(D)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - C
+  - D
+  - E
 - id: doc_109_高雄_高雄女中_自然_生物_選修生物I_g11s1e1_s2_19
   section: 2
   number: 19
   type: multiple
   page: 3
-  stem: 下列哪些情況可呈現如右圖 之關係，且其原因為何？（多選）
+  stem: 某關係圖顯示「運輸速率」起初隨「濃度梯度（或受質濃度）」增加而上升，但達一定濃度後即趨於飽和不再上升。下列哪些情況可呈現此關係，且其原因為何？（多選）
   options:
   - label: A
     content: 甲運輸狀況之濃度梯度和運輸速率之關係
@@ -812,7 +837,7 @@ questions:
     content: 細胞膜之運輸呈現此圖之關係是因為運輸蛋白具有專一性和數量限制的緣故
   - label: E
     content: 當酵素量固定時，受質濃度影響酵素之反應速率也呈現類似此圖關係
-  group_stem: 【題組二】細胞膜的模型是經過科學家長時間探究過程才能接近真實模型
+  group_stem: 【題組三】物質通過細胞膜的運輸方式示意圖中，甲～丁為小分子跨膜運輸：甲為直接穿過磷脂雙層的簡單擴散、乙為經通道蛋白的促進性擴散、丙為經載體蛋白的促進性擴散、丁為消耗ATP的初級主動運輸（將物質由低濃度逆濃度梯度運往高濃度）；A～C為大分子進出細胞的方式：A為胞吐作用、B為胞吞作用（可攝入大分子養分，需耗能）、C為胞飲作用。請依照此資料回答下列問題：
   assets:
   - key: s2_19_f1
     kind: figure
@@ -838,7 +863,17 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 本題屬【題組三】但group_stem誤為【題組二】，選項甲～丙代號缺題組三原圖對照
+    fixed_by: agent
+    fix_note: （人工修正：補回【題組三】條件與飽和曲線文字說明並補齊答案與解析）
   difficulty: 3
+  explanation: 簡單擴散(甲)速率與濃度梯度呈線性正比而無飽和現象；經通道蛋白(乙)或載體蛋白(丙)的促進性擴散因膜上運輸蛋白數量有限，高濃度時會達飽和，如同酵素量固定時受質濃度與反應速率的關係。故選(B)(C)(D)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
+  - D
+  - E
 - id: doc_109_高雄_高雄女中_自然_生物_選修生物I_g11s1e1_s3_20
   section: 3
   number: 20

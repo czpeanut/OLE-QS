@@ -52,10 +52,10 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 米姑既會做米粉，又能做米線，於是他選擇開店做生意。若米姑目前的生產組合為M，請問當米粉漲價時，將對他的生產可能曲線圖形造成何種影響？
+  stem: 米姑既會做米粉（縱軸），又能做米線（橫軸），於是他選擇開店做生意。若米姑目前的生產組合為M，請問當米粉漲價時，將對他的生產可能曲線圖形造成何種影響？
   options:
   - label: A
-    content: ''
+    content: 生產可能曲線位置不變，生產組合點從M點沿曲線向縱軸（米粉）方向移動
     asset:
       key: s1_2_optA
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_2_optA.png
@@ -67,7 +67,7 @@ questions:
         - 187.95
         - 277.7
   - label: B
-    content: ''
+    content: 生產可能曲線整體向右上方外移
     asset:
       key: s1_2_optB
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_2_optB.png
@@ -79,7 +79,7 @@ questions:
         - 605.6
         - 277.7
   - label: C
-    content: ''
+    content: 生產可能曲線僅沿縱軸（米粉）方向外移
     asset:
       key: s1_2_optC
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_2_optC.png
@@ -91,7 +91,7 @@ questions:
         - 326.95
         - 277.7
   - label: D
-    content: ''
+    content: 生產可能曲線整體向左下方內移
     asset:
       key: s1_2_optD
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_2_optD.png
@@ -113,15 +113,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅為圖片，未附圖檔內容
+    fixed_by: agent
+    fix_note: （人工修正：補充橫縱軸定義與四選項文字描述，補齊解答與解析）
+  explanation: 生產可能曲線取決於生產資源與技術水準。產品價格（米粉漲價）變動不會使生產可能曲線移動，僅會誘使生產者增加米粉產量、減少米線產量，沿既有生產可能曲線向縱軸方向移動，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 若有A、B兩種產品，並以實線代表甲國的生產可能曲線，虛線代表乙國的生產可能曲線。若兩國的物價水準相同，請問在何種情況下，兩國「無法」發揮比較利益進行專業化分工？
+  stem: 若有A（橫軸）、B（縱軸）兩種產品，並以實線代表甲國的生產可能曲線，虛線代表乙國的生產可能曲線。若兩國的物價水準相同，請問在何種情況下，兩國「無法」發揮比較利益進行專業化分工？
   options:
   - label: A
-    content: ''
+    content: 實線與虛線為兩條斜率相同的平行直線
     asset:
       key: s1_3_optA
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_3_optA.png
@@ -133,7 +140,7 @@ questions:
         - 169.25
         - 378.3
   - label: B
-    content: ''
+    content: 實線與虛線為兩條斜率不同的直線且相交
     asset:
       key: s1_3_optB
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_3_optB.png
@@ -145,7 +152,7 @@ questions:
         - 290.25
         - 378.3
   - label: C
-    content: ''
+    content: 實線與虛線皆為外凸曲線且各點斜率不同
     asset:
       key: s1_3_optC
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_3_optC.png
@@ -157,7 +164,7 @@ questions:
         - 411.25
         - 378.3
   - label: D
-    content: ''
+    content: 實線為陡峭直線、虛線為平緩直線
     asset:
       key: s1_3_optD
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_3_optD.png
@@ -179,6 +186,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅為圖片，未附圖檔內容
+    fixed_by: agent
+    fix_note: （人工修正：補充橫縱軸定義與四選項文字描述，補齊解答與解析）
+  explanation: 生產可能曲線的斜率代表機會成本。當兩國生產可能曲線為斜率相同的平行直線時，代表兩國生產A、B產品的機會成本完全相同，不具比較利益差異，因此無法透過專業化分工與貿易互利，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_4
   section: 1
   number: 4
@@ -334,7 +348,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 圖為經濟活動流程圖，圖中虛線代表產品或生產要素的流動，實線則代表金錢的流動。小米試著為甲、乙、丙、丁四個角落的流程各舉一例，請問哪個例子正確？
+  stem: 經濟活動流程圖中，虛線代表產品或生產要素的流動，實線則代表金錢的流動；上方為產品市場、下方為生產要素市場、左方為家計單位、右方為廠商。四個角落分別為：角落甲（左上，家計單位提供生產要素給要素市場）、角落乙（右上，廠商在產品市場販售商品與勞務）、角落丙（右下，廠商在要素市場雇用生產要素）、角落丁（左下，家計單位在產品市場購買商品與勞務）。小米試著為甲、乙、丙、丁四個角落的流程各舉一例，請問哪個例子正確？
   options:
   - label: A
     content: 角落丙：哥哥到巷口的便利超商買飲料
@@ -366,12 +380,27 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺經濟活動流程圖，無法核對甲～丁位置
+    fixed_by: agent
+    fix_note: （人工修正：補充經濟活動流程圖四角位置說明，移除缺圖並補齊解答與解析）
+  explanation: 隔壁糕餅店屬於廠商，製作芋泥蛋糕販售是在產品市場提供商品，符合角落乙（B）。(A)哥哥買飲料屬家計單位在產品市場消費（角落丁）；(C)車行老闆買便當屬家計單位消費（角落丁）；(D)早餐店增聘人手屬廠商在要素市場雇用要素（角落丙）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 俱佳家具行請了老吳和老王兩位師傅，兩人各自獨立製作床或沙發所需的天數如表格。若兩人必須分工，一人負責製作一種家具，請問下列相關敘述何者正確？
+  stem: '俱佳家具行請了老吳和老王兩位師傅，兩人各自獨立製作1張床或1組沙發所需的天數如下表。若兩人必須分工，一人負責製作一種家具，請問下列相關敘述何者正確？
+
+    | 師傅 | 製作1張床所需天數 | 製作1組沙發所需天數 |
+
+    | --- | --- | --- |
+
+    | 老吳 | 6天 | 2天 |
+
+    | 老王 | 4天 | 4天 |'
   options:
   - label: A
     content: 老王造一張床的機會成本是兩組沙發
@@ -403,12 +432,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺表格，無法核對數據
+    fixed_by: agent
+    fix_note: （人工修正：補充老吳與老王製作天數表，移除缺圖並補齊解答與解析）
+  explanation: 老吳造1組沙發需2天、造1張床需6天，故造1組沙發的機會成本為 2÷6 ＝ 1/3張床，(B)正確。老王造1張床的機會成本為 4÷4 ＝ 1組沙發，(A)錯；老吳造沙發只需2天（快於老王的4天），故老吳具絕對利益，(C)錯；老吳造沙發機會成本（1/3張床）低於老王（1張床），故老吳具比較利益，(D)錯。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 冠狀肺炎肆虐之初，國內熔噴不織布原料目前雖夠日產2千萬張外科口罩所需，但因為要移部分去做醫療用的N95口罩，實際不夠。若圖為PPC，縱軸為我國外科口罩生產數額量，橫軸代表N95口罩生產數量，則下列何者敘述較為正確？
+  stem: 冠狀肺炎肆虐之初，國內熔噴不織布原料目前雖夠日產2千萬張外科口罩所需，但因為要移部分去做醫療用的N95口罩，實際不夠。若圖為外凸（凹向原點）的生產可能曲線（PPC），縱軸為我國外科口罩生產數量，橫軸代表N95口罩生產數量，曲線上由左上至右下依序有A、B、C、D、E、F六點，而G點位於曲線內部（生產資源未充分利用），則下列何者敘述較為正確？
   options:
   - label: A
     content: A點因專業化生產，可發揮規模經濟的效果，因此其生產效率較B點還高
@@ -440,12 +476,31 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺附圖，無法核對 A～G 點位置
+    fixed_by: agent
+    fix_note: （人工修正：補充PPC形狀與A至G點位置說明，移除缺圖並補齊解答與解析）
+  explanation: 在外凸（凹向原點）的PPC上，隨著N95口罩產量增加，其機會成本遞增。因此C到D間平均每生產一個N95口罩所減少的外科口罩數量，較D到E點間少，(D)正確。(A)PPC線上各點皆具生產效率，無高低之分；(B)產能充分調動應落在PPC線上而非內部的G點；(C)兩產品之機會成本皆隨各自產量增加而遞增。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_13
   section: 1
   number: 13
   type: single
   page: 2
-  stem: 圖是某甲生產A、B兩種產品的生產可能曲線，根據該圖，下列敘述何者正確？
+  stem: '下表為某甲生產A、B兩種產品的生產可能曲線（PPC）上的各生產組合（m、n、o、p），根據該表，下列敘述何者正確？
+
+    | 生產組合 | A產品（個） | B產品（個） |
+
+    | --- | --- | --- |
+
+    | m | 10 | 0 |
+
+    | n | 9 | 3 |
+
+    | o | 6 | 6 |
+
+    | p | 0 | 9 |'
   options:
   - label: A
     content: 某甲每生產1個A產品，都須放棄1個B產品
@@ -477,6 +532,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺附圖，無法核對 m～p 點與數值
+    fixed_by: agent
+    fix_note: （人工修正：補充生產組合表，移除缺圖並補齊解答與解析）
+  explanation: 由表可見，B產品從0增至3個時放棄1個A（平均每個B成本1/3個A），從6增至9個時放棄6個A（平均每個B成本2個A），故生產第1個B產品的機會成本低於第8個，(B)正確。(A)機會成本遞增而非固定1:1；(C)m點在PPC上，生產效率與n、o、p相同；(D)從n轉為p，A產品從9個減為0個，機會成本為9個A產品。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_14
   section: 1
   number: 14
@@ -640,7 +702,7 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: 請問消費者實際購買東西時，其價格與購買量的關係「不可能」落在圖中的哪一點？
+  stem: 在商品市場的供需圖中（橫軸為數量、縱軸為價格），甲點位於需求線上（高於均衡價格）、乙點為供需均衡點、丙點位於需求線左側（低於均衡價格之限購數量）、丁點位於需求線右上方（價格高於消費者願付價格）。請問消費者實際購買東西時，其價格與購買量的關係「不可能」落在圖中的哪一點？
   options:
   - label: A
     content: 甲
@@ -672,6 +734,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺附圖，無法核對甲～丁位置
+    fixed_by: agent
+    fix_note: （人工修正：補充供需圖甲乙丙丁四點位置說明，移除缺圖並補齊解答與解析）
+  explanation: 消費者實際購買的數量不會超過其在該價格下願意且能夠購買的最大數量（即不可能落在需求線右側或願付價格之上）。丁點位於需求線右上方，超出消費者的願付價格與需求量，故不可能落於丁點，選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_21
   section: 1
   number: 21
@@ -879,10 +948,10 @@ questions:
   number: 28
   type: single
   page: 4
-  stem: 某生進行研究時發現，農村年輕人口外流，農民因而選擇種植成功率較高的香蕉，導致生產供過於求、價格低迷。政府後來祭出「休耕廢園」政策，才使價格稍稍回升。若D代表市場對香蕉的需求且固定不變，S1代表香蕉最初的供給線、S2代表農民廣種香蕉後的供給線、S3代表政府採行休耕廢園政策後，香蕉價格略有起色的供給線。則下列哪個圖形符合上述內容？
+  stem: 某生進行研究時發現，農村年輕人口外流，農民因而選擇種植成功率較高的香蕉，導致生產供過於求、價格低迷。政府後來祭出「休耕廢園」政策，才使價格稍稍回升。若D代表市場對香蕉的需求且固定不變，S1代表香蕉最初的供給線、S2代表農民廣種香蕉後的供給線、S3代表政府採行休耕廢園政策後，香蕉價格略有起色的供給線。則下列哪個圖形變化符合上述內容？
   options:
   - label: A
-    content: ''
+    content: 需求線D不變，供給線先由S1向右移至S2，再由S2向左移至S3
     asset:
       key: s1_28_optA
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_28_optA.png
@@ -894,7 +963,7 @@ questions:
         - 189.45
         - 564.2
   - label: B
-    content: ''
+    content: 需求線D不變，供給線先由S1向左移至S2，再由S2向右移至S3
     asset:
       key: s1_28_optB
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_28_optB.png
@@ -906,7 +975,7 @@ questions:
         - 613.1
         - 564.2
   - label: C
-    content: ''
+    content: 供給線不變，需求線先向右移動再向左移動
     asset:
       key: s1_28_optC
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_28_optC.png
@@ -918,7 +987,7 @@ questions:
         - 330.45
         - 564.2
   - label: D
-    content: ''
+    content: 供給線向右移動的同時，需求線也向右移動
     asset:
       key: s1_28_optD
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_28_optD.png
@@ -940,6 +1009,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅為圖片，未附圖檔內容
+    fixed_by: agent
+    fix_note: （人工修正：補充四選項文字描述，補齊解答與解析）
+  explanation: 農民廣種香蕉使供給增加，供給線由S1向右移至S2（價格下跌）；政府實施休耕廢園使供給減少，供給線由S2向左移至S3（價格回升），故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_29
   section: 1
   number: 29
@@ -948,7 +1024,7 @@ questions:
   stem: 研究顯示，老牙刷上的細菌比馬桶還多。而牙刷業者也指出，消費者使用牙刷常「一刷到底」，往往用半年到1年至牙刷變形才換新。業者建議，為保持口腔衛生，最好每三個月換一次牙刷。若上述消息廣為流傳，則牙刷市場的供需圖可能發生何種變化？
   options:
   - label: A
-    content: ''
+    content: 供給線不變，需求線向右移動（均衡價格上升、均衡數量增加）
     asset:
       key: s1_29_optA
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_29_optA.png
@@ -960,7 +1036,7 @@ questions:
         - 193.45
         - 725.7
   - label: B
-    content: ''
+    content: 供給線不變，需求線向左移動（均衡價格下跌、均衡數量減少）
     asset:
       key: s1_29_optB
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_29_optB.png
@@ -972,7 +1048,7 @@ questions:
         - 627.6
         - 725.7
   - label: C
-    content: ''
+    content: 需求線不變，供給線向右移動（均衡價格下跌、均衡數量增加）
     asset:
       key: s1_29_optC
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_29_optC.png
@@ -984,7 +1060,7 @@ questions:
         - 337.95
         - 725.7
   - label: D
-    content: ''
+    content: 需求線不變，供給線向左移動（均衡價格上升、均衡數量減少）
     asset:
       key: s1_29_optD
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_29_optD.png
@@ -1006,6 +1082,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅為圖片，未附圖檔內容
+    fixed_by: agent
+    fix_note: （人工修正：補充四選項文字描述，補齊解答與解析）
+  explanation: 消費者縮短更換牙刷的週期，使市場對牙刷的需求增加，需求線向右移動，進而推升均衡價格與均衡數量，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_30
   section: 1
   number: 30
@@ -1122,7 +1205,7 @@ questions:
   stem: 由上所述，若以蔥花麵包生產數量為縱軸，以芋頭麵包生產數量為橫軸，烘焙王麵包店的生產可能曲線（PPC）會如何呈現？
   options:
   - label: A
-    content: ''
+    content: 連接縱軸500與橫軸500的負斜率直線
     asset:
       key: s1_34_optA
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_34_optA.png
@@ -1134,7 +1217,7 @@ questions:
         - 181.25
         - 406.5
   - label: B
-    content: ''
+    content: 連接縱軸500與橫軸500的外凸（凹向原點）曲線
     asset:
       key: s1_34_optB
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_34_optB.png
@@ -1146,7 +1229,7 @@ questions:
         - 313.65
         - 406.5
   - label: C
-    content: ''
+    content: 連接縱軸500與橫軸500的內凹（凸向原點）曲線
     asset:
       key: s1_34_optC
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_34_optC.png
@@ -1158,7 +1241,7 @@ questions:
         - 446.65
         - 406.5
   - label: D
-    content: ''
+    content: 通過原點的正斜率直線
     asset:
       key: s1_34_optD
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_34_optD.png
@@ -1181,6 +1264,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅為圖片，未附圖檔內容
+    fixed_by: agent
+    fix_note: （人工修正：補充四選項文字描述，補齊解答與解析）
+  explanation: 每增加1個蔥花麵包固定減少1個芋頭麵包，代表機會成本固定（1:1），故生產可能曲線為連接縱軸500與橫軸500的負斜率直線，選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_35
   section: 1
   number: 35
@@ -1248,7 +1338,7 @@ questions:
     content: '1.5'
   - label: D
     content: '2.5'
-  group_stem: 黑熊部落與百步蛇部落共同居住在某一處山林裡，假若他們的生產活動主要分成獵山豬與種小米兩種，圖為黑熊部落及百步蛇部落的生產可能曲線。（黑熊部落為虛線，百步蛇部落為實線）
+  group_stem: 黑熊部落與百步蛇部落共同居住在某一處山林裡，假若他們的生產活動主要分成獵山豬與種小米兩種。若將資源全部投入生產：黑熊部落每天可獵10單位山豬或種20單位小米；百步蛇部落每天可獵20單位山豬或種20單位小米（兩部落之生產可能曲線皆為直線）。
   shared_asset: g1_37_38
   tags:
     unit:
@@ -1261,6 +1351,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組缺 PPC 圖，無法計算交換比例
+    fixed_by: agent
+    fix_note: （人工修正：補充兩部落生產可能曲線數據，移除缺圖並補齊解答與解析）
+  explanation: 黑熊部落獵1單位山豬的機會成本為2單位小米（20÷10），百步蛇部落獵1單位山豬的機會成本為1單位小米（20÷20）。兩部落自願分工交易的貿易條件必須介於兩者機會成本之間（1＜1單位山豬交換的小米＜2），選項中僅1.5符合，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_38
   section: 1
   number: 38
@@ -1293,10 +1390,10 @@ questions:
   number: 39
   type: single
   page: 5
-  stem: 若以生產可能曲線圖表示三陽工業生產汽車與機車的狀況，則三陽機車的生產技術日益進步，將造成何種變動？
+  stem: 若以生產可能曲線圖表示三陽工業生產汽車（橫軸）與機車（縱軸）的狀況，則三陽機車的生產技術日益進步，將造成何種變動？
   options:
   - label: A
-    content: ''
+    content: 生產可能曲線沿縱軸（機車）向外擴張，橫軸（汽車）截距不變
     asset:
       key: s1_39_optA
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_39_optA.png
@@ -1308,7 +1405,7 @@ questions:
         - 176.45
         - 125.7
   - label: B
-    content: ''
+    content: 生產可能曲線沿橫軸（汽車）向外擴張，縱軸（機車）截距不變
     asset:
       key: s1_39_optB
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_39_optB.png
@@ -1320,7 +1417,7 @@ questions:
         - 561.1
         - 125.7
   - label: C
-    content: ''
+    content: 生產可能曲線整體向內收縮
     asset:
       key: s1_39_optC
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_39_optC.png
@@ -1332,7 +1429,7 @@ questions:
         - 562.1
         - 251.7
   - label: D
-    content: ''
+    content: 生產可能曲線位置不變，僅生產點沿曲線移動
     asset:
       key: s1_39_optD
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_39_optD.png
@@ -1355,15 +1452,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅為圖片，未附圖檔內容
+    fixed_by: agent
+    fix_note: （人工修正：補充橫縱軸定義與四選項文字描述，補齊解答與解析）
+  explanation: 僅機車生產技術進步會提升機車的最大產能，汽車最大產能不變，故生產可能曲線沿縱軸（機車）向外擴張，橫軸截距不變，選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_40
   section: 1
   number: 40
   type: single
   page: 6
-  stem: 三陽工業受訪表示，近年來公司全心貫注於機車的研發與創新。若該公司將更多的研發資源從汽車移轉給機車，並將部分汽車生產線改成機車生產線，則三陽工業的生產可能曲線將如何變動？
+  stem: 三陽工業受訪表示，近年來公司全心貫注於機車的研發與創新。若該公司將更多的研發資源從汽車移轉給機車，並將部分汽車生產線改成機車生產線（總資源未增加），則以汽車為橫軸、機車為縱軸的生產可能曲線圖將如何變動？
   options:
   - label: A
-    content: ''
+    content: 生產可能曲線位置不變，生產組合點沿曲線向縱軸（機車）方向移動
     asset:
       key: s1_40_optA
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_40_optA.png
@@ -1375,7 +1479,7 @@ questions:
         - 177.45
         - 251.7
   - label: B
-    content: ''
+    content: 生產可能曲線沿縱軸（機車）向外擴張
     asset:
       key: s1_40_optB
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_40_optB.png
@@ -1387,7 +1491,7 @@ questions:
         - 305.45
         - 251.7
   - label: C
-    content: ''
+    content: 生產可能曲線沿橫軸（汽車）向內收縮
     asset:
       key: s1_40_optC
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_40_optC.png
@@ -1399,7 +1503,7 @@ questions:
         - 432.45
         - 125.7
   - label: D
-    content: ''
+    content: 生產可能曲線整體向外擴張
     asset:
       key: s1_40_optD
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_40_optD.png
@@ -1422,6 +1526,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅為圖片，未附圖檔內容
+    fixed_by: agent
+    fix_note: （人工修正：補充橫縱軸定義與四選項文字描述，補齊解答與解析）
+  explanation: 將既有生產資源由汽車移轉至機車，並未改變總資源與技術上限，因此生產可能曲線本身不移動，僅生產組合點沿著原曲線向縱軸（機車）方向移動，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_41
   section: 1
   number: 41
@@ -1484,7 +1595,7 @@ questions:
   stem: 請問疫情加劇會對「另類宅經濟商品」的供需造成何種變化？
   options:
   - label: A
-    content: ''
+    content: 供給線不變，需求線向右移動（均衡價格上升、均衡數量增加）
     asset:
       key: s1_43_optA
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_43_optA.png
@@ -1496,7 +1607,7 @@ questions:
         - 167.1
         - 820.95
   - label: B
-    content: ''
+    content: 供給線不變，需求線向左移動（均衡價格下跌、均衡數量減少）
     asset:
       key: s1_43_optB
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_43_optB.png
@@ -1508,7 +1619,7 @@ questions:
         - 285.1
         - 820.95
   - label: C
-    content: ''
+    content: 需求線不變，供給線向右移動（均衡價格下跌、均衡數量增加）
     asset:
       key: s1_43_optC
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_43_optC.png
@@ -1520,7 +1631,7 @@ questions:
         - 403.1
         - 820.95
   - label: D
-    content: ''
+    content: 需求線不變，供給線向左移動（均衡價格上升、均衡數量減少）
     asset:
       key: s1_43_optD
       file: doc_109_高雄_新莊_社會_公民與社會_g11s1e1/s1_43_optD.png
@@ -1543,6 +1654,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅為圖片，未附圖檔內容
+    fixed_by: agent
+    fix_note: （人工修正：補充四選項文字描述，補齊解答與解析）
+  explanation: 居家防疫與保持社交距離使民眾對冷凍調理包、罐頭、泡麵等宅經濟商品的需求大增，需求線向右移動，導致均衡價格與均衡數量皆上升，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_44
   section: 1
   number: 44

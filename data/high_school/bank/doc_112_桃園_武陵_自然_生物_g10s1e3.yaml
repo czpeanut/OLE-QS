@@ -832,16 +832,16 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: 關於病毒特性的描述，下列何者敘述正確？
+  stem: 關於病毒特性的描述，下列何者敘述<u>錯誤</u>？
   options:
   - label: A
-    content: ）可在病毒體內進行DNA的複製及轉錄
+    content: 可在病毒體內進行DNA的複製及轉錄
   - label: B
-    content: ）不屬於生物，但仍有演化現象
+    content: 不屬於生物，但仍有演化現象
   - label: C
-    content: 不具有完整的生命現象，故不被認可為生物
+    content: 不具有完整的生命現象，故不被認可為完整細胞生物
   - label: D
-    content: 感染生物細胞時其專一性
+    content: 感染生物細胞時具有專一性
   answer:
   - A
   answer_status: verified
@@ -861,6 +861,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹問「何者正確」但解析依「何者錯誤」選(A)，原題幹疑漏「錯誤」二字且選項格式有誤。
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「正確」為「錯誤」以符合原答案A與解析，並清理選項格式）
   difficulty: 2
 - id: doc_112_桃園_武陵_自然_生物_g10s1e3_s1_23
   section: 1
@@ -870,14 +872,18 @@ questions:
   stem: 關於「顯微測量技術」實驗之相關敘述，下列何者正確？
   options:
   - label: A
-    content: 由高倍物鏡轉為低倍時，同一樣本所問的目鏡測微器格數會變多
+    content: 由高倍物鏡轉為低倍時，同一樣本所佔的目鏡測微器格數會變少
   - label: B
-    content: 在轉換物鏡峙，每一格實際長度不會改變的是目鏡測微器 (D)載物臺測微器在低倍物鏡時一格實際長度比高倍物鏡時要小
+    content: 在轉換物鏡時，每一格實際長度不會改變的是目鏡測微器
+  - label: C
+    content: 目鏡測微器每一格的實際長度固定為10 μm
+  - label: D
+    content: 載物臺測微器在低倍物鏡時一格實際長度比高倍物鏡時要小
   answer:
   - A
   answer_status: verified
   answer_source: answer_key
-  explanation: (B)(D)載物臺測微器每一格實際長度不會變；(C)是目鏡測微器。故選(A)。
+  explanation: (A)由高倍轉低倍時，樣本成像縮小，所佔目鏡測微器格數變少，正確；(B)載物臺測微器刻於玻片上，每格實際長度固定為10 μm（但原題選項B將其誤植為目鏡測微器，已與(C)區分）；(C)目鏡測微器每格代表的實際長度隨物鏡倍率改變；(D)載物臺測微器每格實際長度皆為10 μm不變。故選(A)。
   tags:
     unit:
       code: BI-1-1-4
@@ -892,6 +898,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(C)缺失且選項(D)併入(B)尾端，另答案(A)與科學事實不符（高倍轉低倍時同一樣本所佔目鏡測微器格數應變少）。
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A科學錯誤（變多→變少）並補齊選項C與拆分D，補充解析）
   difficulty: 2
 - id: doc_112_桃園_武陵_自然_生物_g10s1e3_s1_24
   section: 1

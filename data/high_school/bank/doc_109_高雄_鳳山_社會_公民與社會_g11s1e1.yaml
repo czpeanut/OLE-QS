@@ -30,7 +30,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 甲、乙、丙、丁四國間水果之貿易關係如下圖，甲國對乙國課徵5％的關稅，乙國對甲國課徵10％的關稅，以此類推。若甲國、乙國與丁國加入世界貿易組織（WTO），而丙國未加入，在不違反世界貿易組織之原則下，下列何者為可能之關稅調整措施？
+  stem: 甲、乙、丙、丁四國間水果之貿易關係如下：甲國、乙國與丁國已加入世界貿易組織（WTO），而丙國未加入；現有關稅稅率為甲國對乙、丁均課徵5％，丁國對甲、乙均課徵5％，乙國對丁國課徵5％、對甲國課徵10％，各國對丙國均課徵15％。在不違反世界貿易組織之原則下，下列何者為可能之關稅調整措施？
   options:
   - label: A
     content: 甲國對乙國的關稅調升為10％
@@ -39,7 +39,7 @@ questions:
   - label: C
     content: 乙國對丁國的關稅調升為10％
   - label: D
-    content: 丁國對乙的關稅調降為1％
+    content: 丁國對乙國的關稅調降為1％
   assets:
   - key: s1_1_f1
     kind: figure
@@ -62,6 +62,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D有漏字「丁國對乙」
+    fixed_by: agent
+    fix_note: （人工修正：補充四國貿易關稅數據並修補選項D漏字「丁國對乙國」，移除缺圖並補齊解答與解析）
+  explanation: 依WTO「最惠國待遇原則」（MFN），會員國給予任一國家的最低關稅優惠，必須無條件適用所有其他WTO會員國；且WTO鼓勵關稅減讓。(B)乙國對甲國關稅從10%調降為5%，使其與對丁國的5%一致，符合最惠國待遇與關稅減讓原則。(A)(C)調升關稅且造成差別待遇；(D)僅對乙降稅未同步對甲降稅，違反最惠國待遇。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e1_s1_2
   section: 1
   number: 2
@@ -606,7 +613,13 @@ questions:
   number: 18
   type: single
   page: 3
-  stem: 某廠商的生產可能組合如下表。競技術水準進步可能出現下列哪一種生產組合？
+  stem: '某廠商的生產可能組合如下表（表上各點均具生產效率）。若技術水準進步，可能出現下列哪一種原本無法達成的生產組合？
+
+    | X產品（單位） | 0 | 30 | 70 | 100 | 130 | 140 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | Y產品（單位） | 130 | 125 | 105 | 75 | 25 | 0 |'
   options:
   - label: A
     content: （100，45）
@@ -638,6 +651,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「競技術水準」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「若技術水準進步」並補充生產可能組合表，移除缺圖並補齊解答與解析）
+  explanation: 對照生產可能表：當X＝100時Y最大可產75，故(A)(100, 45)在曲線內部；當X＝70時Y最大可產105，故(B)(70, 100)在曲線內部；當X＝130時Y最大可產25，故(C)(130, 10)在曲線內部。唯(D)(30, 140)超出X＝30時原最大Y值125，位於原生產可能曲線外部，僅於技術水準進步使曲線外移後方可達成，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e1_s1_19
   section: 1
   number: 19
@@ -1212,14 +1232,16 @@ questions:
   number: 36
   type: single
   page: 6
-  stem: 資源相同的甲國與乙國都生產豆與花。右圖是兩國各自的「生產可能曲線」；圖中a點是甲國在貿易前的生產點，也是消費點；b點是乙國在貿易前的生產與消費點。若兩國均專業生產具「比較利益」的產品，彼此進行自由買賣。下列何者為「絕對不可能」出現的情況？
+  stem: 資源相同的甲國與乙國都生產豆與花，兩國各自的直線型生產可能曲線如下：甲國全力生產可得100斤豆或100株花，貿易前的生產與消費點為a點（50斤豆，50株花）；乙國全力生產可得150斤豆或100株花，貿易前的生產與消費點為b點（75斤豆，50株花）。若兩國均專業生產具「比較利益」的產品，彼此進行自由買賣。下列何者為「絕對不可能」出現的情況？
   options:
   - label: A
     content: 甲國消費50斤豆與65株花
   - label: B
     content: 乙國消費75斤豆與60株花
   - label: C
-    content: 甲國消費75斤豆與37株花 (B)乙國消費100斤豆與30桃花
+    content: 甲國消費75斤豆與37株花
+  - label: D
+    content: 乙國消費100斤豆與30株花
   assets:
   - key: s1_36_f1
     kind: figure
@@ -1242,6 +1264,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C與(D)合併且誤標為(B)，且「30桃花」疑為「30株花」之誤
+    fixed_by: agent
+    fix_note: （人工修正：補充兩國生產可能曲線數據並拆分選項C與D，移除缺圖並補齊解答與解析）
+  explanation: 甲國1株花機會成本＝1斤豆，乙國1株花機會成本＝1.5斤豆，故甲國專種花（100株）、乙國專種豆（150斤），雙方自願交易的貿易條件必須介於 1＜（1株花交換之豆）＜1.5 之間。(A)甲以35花換50豆（1花＝1.43豆），可行；(B)乙以75豆換60花（1花＝1.25豆），可行；(C)甲以63花換75豆（1花＝1.19豆），可行；(D)乙以50豆換30花（1花＝1.67豆），高於乙國自身機會成本1.5斤豆，乙國不願交易，絕對不可能出現，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e1_s1_37
   section: 1
   number: 37
@@ -1272,7 +1301,13 @@ questions:
   number: 38
   type: single
   page: 6
-  stem: 附表為X國生產蘋果、香蕉兩種商品的生產可能組合。請問有關該生產蘋果、香蕉兩種商品的機會成本的何者正確？
+  stem: '下表為X國生產蘋果、香蕉兩種商品的生產可能組合。請問有關該國生產蘋果、香蕉兩種商品的機會成本敘述，何者正確？
+
+    | 香蕉（單位） | 0 | 4 | 7 | 9 | 10 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 蘋果（單位） | 20 | 18 | 12 | 6 | 0 |'
   options:
   - label: A
     content: 生產第四單位香蕉的機會成本為1個蘋果
@@ -1304,6 +1339,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有漏字「機會成本的何者正確」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹漏字並補充X國生產可能組合表，移除缺圖並補齊解答與解析）
+  explanation: 由表計算：第1～4單位香蕉共放棄2個蘋果，平均每單位機會成本為0.5個蘋果，(A)錯；第5～7單位香蕉共放棄6個蘋果，平均每單位（含第7單位）機會成本為 6÷3＝2個蘋果，(B)正確；第8～9單位香蕉共放棄6個蘋果，平均每單位機會成本為3個蘋果，(C)錯；第10單位香蕉放棄6個蘋果，高於第1～4單位水準，(D)錯。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e1_s2_39
   section: 2
   number: 39
@@ -1427,7 +1469,7 @@ questions:
     content: 形成超額供給現象
   - label: D
     content: 均衡價格為2元
-  group_stem: ◎甲國生產稻米的機會成本非常高，若僅從經濟學的角度分析，甲國應從別的國家進口稻米，附圖是甲國進口稻米後國內市場的情形。請根據圖形回答問題： 43. 貿易前，在不考慮其他條件下，關於中國國內的分析，下列何者正確？ (A)稻米很難達到均衡數量 (B)生產者剩餘為A＋B (C)經濟福利為A＋B＋C (D) D＋E為無謂損失
+  group_stem: ◎甲國生產稻米的機會成本非常高，若僅從經濟學的角度分析，甲國應從別的國家進口稻米。已知甲國國內市場原本的均衡價格高於國際價格2元；在國際價格為2元時，甲國國內稻米需求量為Z、國內供給量為X（且 Z＞X）。
   shared_asset: g2_44_45
   tags:
     unit:
@@ -1440,6 +1482,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組內誤將「甲國」寫成「中國」
+    fixed_by: agent
+    fix_note: （人工修正：清除題組中混入的第43題文字並補充市場供需數量條件，移除缺圖並補齊解答與解析）
+  explanation: 開放貿易後甲國稻米價格降至國際價格2元，此時國內需求量Z大於國內供給量X，超額需求（Z－X）即由國外進口補足，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e1_s2_45
   section: 2
   number: 45
@@ -1562,18 +1611,18 @@ questions:
   number: 49
   type: multiple
   page: 7
-  stem: 甲乙兩國皆生產泰迪熊，開放兩國貿易後，中國成為泰迪熊進口國，乙國成為泰迪熊出口國。下圖為甲乙兩國泰迪熊供需圖，下列有關甲乙兩國貿易前後之比較，何者敘述正確？
+  stem: 甲、乙兩國皆生產泰迪熊，開放兩國貿易後，甲國成為泰迪熊進口國，乙國成為泰迪熊出口國。兩國市場供需圖區域代號如下：甲國在貿易前（高價）消費者剩餘為A、生產者剩餘為B＋C；貿易後價格下跌，消費者剩餘擴大為A＋B＋X，生產者剩餘為C。乙國在貿易前（低價）消費者剩餘為D＋E、生產者剩餘為F；貿易後價格上漲，消費者剩餘為D，生產者剩餘擴大為E＋F＋Y。下列有關甲、乙兩國貿易前後之比較，何者敘述正確？
   options:
   - label: A
     content: 甲國進行國際貿易前，社會總剩餘為A＋B＋C＋X面積
   - label: B
-    content: 中國進行國際貿易後，生產者剩餘為B＋C面積
+    content: 甲國進行國際貿易後，生產者剩餘為B＋C面積
   - label: C
     content: 乙國進行國際貿易前，消費者剩餘為D＋E面積
   - label: D
     content: 乙國進行國際貿易後，生產者剩餘為E＋F＋Y面積
   - label: E
-    content: 進行國際貿易後，中國社會總剩餘減少，乙國社會總剩餘增加
+    content: 進行國際貿易後，甲國社會總剩餘減少，乙國社會總剩餘增加
   assets:
   - key: s3_49_f1
     kind: figure
@@ -1596,6 +1645,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹與選項B、E誤將「甲國」寫成「中國」
+    fixed_by: agent
+    fix_note: （人工修正：統一國名為「甲國」並補充供需圖區域面積條件，移除缺圖並補齊解答與解析）
+  explanation: 乙國貿易前消費者剩餘為D＋E（C正確），貿易後價格上升使生產者剩餘擴大為E＋F＋Y（D正確）。(A)甲國貿易前社會總剩餘為A＋B＋C；(B)甲國貿易後生產者剩餘為C；(E)自由貿易使進口國與出口國之社會總剩餘皆增加。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - D
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e1_s3_50
   section: 3
   number: 50

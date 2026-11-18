@@ -1128,16 +1128,18 @@ questions:
   number: 32
   type: multiple
   page: 3
-  stem: 以下圖方程式而言，下列敘哪些正確？（應選3項）
+  stem: 下圖為細胞內兩種重要代謝反應的方程式：甲為 $6CO_2 + 6H_2O \xrightarrow{\text{光能}} C_6H_{12}O_6 + 6O_2$；乙為 $C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O + \text{能量}$。下列敘述哪些正確？（應選3項）
   options:
   - label: A
     content: 甲為光合作用，乙為細胞呼吸
   - label: B
     content: 甲為放能反應，乙為吸能反應
   - label: C
-    content: 甲反應最後生成ATP
+    content: 甲反應最後淨生成大量ATP供應細胞其他部位使用
   - label: D
-    content: 甲為合成作用（同化代謝），乙為分解作用（異化代謝） (B)在真核細胞內，甲發生於葉綠體，乙發生於粒線體
+    content: 甲為合成作用（同化代謝），乙為分解作用（異化代謝）
+  - label: E
+    content: 在真核細胞內，甲發生於葉綠體，乙主要發生於粒線體
   assets:
   - key: s2_32_f1
     kind: figure
@@ -1163,7 +1165,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項E遺失（併入選項D）
+    fixed_by: agent
+    fix_note: （人工修正：補充代謝方程式文字條件、拆分選項D與E並補齊答案與解析）
   difficulty: 2
+  explanation: 甲為光合作用（吸能、同化代謝，於真核葉綠體進行，主要產物為葡萄糖）；乙為有氧呼吸（放能、異化代謝，主要於粒線體進行）。故選(A)(D)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - D
+  - E
 - id: doc_110_高雄_仁武_自然_生物_g10s1e1_s2_33
   section: 2
   number: 33

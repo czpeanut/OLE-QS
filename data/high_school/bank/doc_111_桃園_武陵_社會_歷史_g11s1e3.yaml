@@ -630,7 +630,7 @@ questions:
   number: 26
   type: single
   page: 3
-  stem: 阿皮在一本書上看到右邊的地圖，請問根據你的歷史知識判斷，這張地圖的主題最有可能是？
+  stem: 阿皮在一本書上看到一張標示 16 至 19 世紀大西洋兩岸路線的地圖，圖中箭頭從西非幾內亞灣一帶密集出發，橫越大西洋前往巴西、加勒比海地區與北美南部，並標示了各時期被強制運輸的人口數量統計。請問根據你的歷史知識判斷，這張地圖的主題最有可能是？
   options:
   - label: A
     content: 大西洋奴隸貿易
@@ -651,6 +651,13 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 題幹提及「右邊的地圖」但缺附圖，無法單憑文字判斷地圖主題
+    fixed_by: agent
+    fix_note: （人工修正：補充地圖路線與統計描述並補齊解答與解析）
+  explanation: 16 至 19 世紀自西非橫越大西洋輸往巴西、加勒比海與北美南部的強制人口運輸路線，即為「大西洋奴隸貿易」（黑奴貿易），故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_111_桃園_武陵_社會_歷史_g11s1e3_s1_27
   section: 1
   number: 27

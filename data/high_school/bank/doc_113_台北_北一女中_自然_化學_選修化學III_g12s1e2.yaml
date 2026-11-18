@@ -240,7 +240,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 承上題，豪豪想在實驗室裡將相同濃度的碳酸與氫氧化鈉混合以模擬人體內的血液系統，則兩溶液所需的體積比（$V_{碳酸}$：$V_{氫氧化鈉}$）為若干？（碳酸與氫氧化鈉混合之反應式：$H_{2}CO_{3}$＋NaOH → $NaHCO_{3}$＋$H_{2}$O）
+  stem: 承上題，豪豪想在實驗室裡將相同濃度的碳酸與氫氧化鈉混合以模擬人體內的血液系統，則兩溶液所需的體積比（$V_{碳酸}$：$V_{氫氧化鈉}$）為若干？（碳酸與氫氧化鈉混合之反應式：$H_{2}CO_{3}$＋NaOH → $NaHCO_{3}$＋$H_{2}O$）
   options:
   - label: A
     content: 1：11
@@ -252,7 +252,7 @@ questions:
     content: 9：10
   - label: E
     content: 5：1
-  group_stem: 第6～7題為題組
+  group_stem: 第6～7題為題組：人體血液的 pH 值約為 7.4（$[H^{+}] = 4.0\times 10^{-8}\text{ M}$），主要緩衝系統為 $H_{2}CO_{3}/HCO_{3}^{-}$，已知 $H_{2}CO_{3}$ 的 $K_{a1} = 6.0\times 10^{-7}$。
   answer:
   - C
   answer_status: verified
@@ -271,7 +271,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組缺第6題題幹（承上題），無法得知目標pH或緩衝比例
+    fixed_by: agent
+    fix_note: （人工修正：補齊第6題血液緩衝條件於題組題幹並補齊解析）
   difficulty: 3
+  explanation: 由緩衝溶液公式 $[H^{+}] = K_{a1}\frac{[H_{2}CO_{3}]}{[HCO_{3}^{-}]}$，代入得 $\frac{[HCO_{3}^{-}]}{[H_{2}CO_{3}]} = \frac{6.0\times 10^{-7}}{4.0\times 10^{-8}} = 15$。設加入 NaOH 體積為 15 V，生成 15 mol 份之 $HCO_{3}^{-}$，剩餘 1 mol 份之 $H_{2}CO_{3}$，故原碳酸需體積 16 V，體積比 $V_{\text{碳酸}}：V_{\text{氫氧化鈉}} = 16：15$。選(C)。
 - id: doc_113_台北_北一女中_自然_化學_選修化學III_g12s1e2_s1_8
   section: 1
   number: 8

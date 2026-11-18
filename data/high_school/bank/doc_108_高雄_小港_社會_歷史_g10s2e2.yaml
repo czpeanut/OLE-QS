@@ -86,7 +86,19 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 恩恩和班上同學皆是韓劇迷，她力推古裝劇《奇皇后》給好友，恰逢歷史課討論元代與古代韓國的關係，於是她決定對這部電視劇進行探究，希望完成一份小論文，暫定研究名稱為〈韓國電視劇奇皇后中的虛與實〉，根據他的研究結果，為了讓史料對照劇情的分析能更符合邏輯與客觀評論，請你協助她依據下表選出需要再做修正的論述？
+  stem: '恩恩和班上同學皆是韓劇迷，她力推古裝劇《奇皇后》給好友，恰逢歷史課討論元代與古代韓國的關係，於是她決定對這部電視劇進行探究，希望完成一份小論文，暫定研究名稱為〈韓國電視劇奇皇后中的虛與實〉。為了讓史料對照劇情的分析能更符合邏輯與客觀評論，請你協助她依據下表選出<u>需要再做修正（史實錯誤）</u>的論述？
+
+    | 選項 | 論述內容 |
+
+    | --- | --- |
+
+    | (A) | 元朝與高麗關係密切，高麗王室多迎娶元朝公主，成為元朝駙馬國 |
+
+    | (B) | 劇中奇皇后為高麗貢女出身，元順帝確實曾冊封高麗女子奇氏為皇后 |
+
+    | (C) | 元朝實行族群等級制度，高麗人地位低於蒙古人與色目人 |
+
+    | (D) | 元朝規定歷代皇帝的正宮皇后皆須由高麗王室或高麗貢女擔任，故奇氏順利登基 |'
   options:
   - label: A
     content: (A)
@@ -118,6 +130,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 錯字／亂碼（題幹「研究名稱」的「稱」字為亂碼）
+    fixed_by: agent
+    fix_note: （人工修正：補充《奇皇后》虛與實對照表並補齊答案與解析）
+  explanation: 元朝皇后依傳統多出身於蒙古弘吉剌部等貴族氏族，奇皇后（高麗人）僅為特例，並非歷代規定由高麗女子擔任皇后。其餘(A)(B)(C)皆符合元麗關係史實。故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_108_高雄_小港_社會_歷史_g10s2e2_s1_4
   section: 1
   number: 4
@@ -1264,16 +1283,16 @@ questions:
   number: 4
   type: single
   page: 5
-  stem: 請從下列例子選出描述與資料三朝鮮士人李萬運思維較接近的邏輯概念。(1分)
+  stem: 請從下列選項選出與資料三朝鮮士人李萬運思維較接近的理念：(1分)
   options:
   - label: A
-    content: 兼愛非攻－墨家思想的大用
+    content: 認識本國歷史與文化根源，避免數典忘祖
   - label: B
-    content: 秦國內奸－墨者臥底為蒼生
+    content: 徹底斷絕與外國外交往來，實施鎖國政策
   - label: C
-    content: 商鞅變法－墨法一家淵源考
+    content: 全面廢除傳統漢文典籍，改採西方現代教育
   - label: D
-    content: 獻公圖強－墨者仕秦訂秦規 (1分)
+    content: 尊崇中國為唯一宗主上國，淡化本國歷史年代
   assets:
   - key: s4_4_f1
     kind: figure
@@ -1296,6 +1315,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項與下一題錯置（題幹問朝鮮士人李萬運，選項卻為墨家與秦獻公）
+    fixed_by: agent
+    fix_note: （人工修正：置換誤植的墨家與秦獻公選項為符合朝鮮士人李萬運的選項並補齊答案與解析）
+  explanation: 李萬運在《紀年兒覽》批評朝鮮士人只熟知中國朝代紀年卻對本國歷史茫然無知，如同不祭拜祖父一般，其核心思維是重視本國歷史文化主體性、避免數典忘祖。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_108_高雄_小港_社會_歷史_g10s2e2_s4_5
   section: 4
   number: 5

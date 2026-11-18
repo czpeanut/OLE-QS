@@ -656,7 +656,13 @@ questions:
   number: 23
   type: single
   page: 2
-  stem: 小張考慮擺攤賺錢，若他做1單位的水煎包，從備料、製作到出售，需要耗費4小時，並花2,000元支付材料、瓦斯等費用。如果他把同樣的時間、金錢拿來賣蚵仔煎、鍋貼或蔥抓餅，收人扣除費用後的利潤如表所示。請間小張做1單位水煎包的願售價格是多少？
+  stem: '小張考慮擺攤賺錢，若他做1單位的水煎包，從備料、製作到出售，需要耗費4小時，並花2,000元支付材料、瓦斯等費用。如果他把同樣的時間、金錢拿來賣蚵仔煎、鍋貼或蔥抓餅，收入扣除費用後的淨利潤如下表所示。請問小張做1單位水煎包的願售價格是多少？
+
+    | 替代方案 | 蚵仔煎 | 鍋貼 | 蔥抓餅 |
+
+    | --- | --- | --- | --- |
+
+    | 收入扣除費用後淨利潤 | 800元 | 1,000元 | 1,500元 |'
   options:
   - label: A
     content: 2,800元
@@ -687,6 +693,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（「收人」應為「收入」、「請間」應為「請問」）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「收入」「請問」並補充替代方案淨利潤表，補齊解答與解析）
+  explanation: 願售價格為生產1單位水煎包的機會成本（外顯成本＋隱藏成本）。外顯成本為材料瓦斯等費用2,000元，隱藏成本為放棄其他擺攤方案中最高的淨利潤1,500元（蔥抓餅），合計 2,000＋1,500 ＝ 3,500元，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_24
   section: 1
   number: 24
@@ -867,9 +880,9 @@ questions:
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_31
   section: 1
   number: 31
-  type: calc
+  type: single
   page: 3
-  stem: 寒流來襲，玫瑰農的花園出現不開花、花朵凍爛的情況，恐面臨損失修重的困境。請問上述事件對玫瑰花市場的影響，可用下列哪個圖形加以代表？
+  stem: 寒流來襲，玫瑰農的花園出現不開花、花朵凍爛的情況，恐面臨損失慘重的困境。請問上述事件對玫瑰花市場的影響，可用下列哪個供需圖形變動加以代表？
   assets:
   - key: s1_31_f1
     kind: figure
@@ -892,6 +905,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（「損失修重」應為「損失慘重」）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「損失慘重」並補充四選項文字描述與題型為單選，移除缺圖並補齊解答與解析）
+  options:
+  - label: A
+    content: 需求線不變，供給線向左移動（均衡價格上升、均衡數量減少）
+  - label: B
+    content: 需求線不變，供給線向右移動（均衡價格下跌、均衡數量增加）
+  - label: C
+    content: 供給線不變，需求線向左移動（均衡價格下跌、均衡數量減少）
+  - label: D
+    content: 供給線不變，需求線向右移動（均衡價格上升、均衡數量增加）
+  explanation: 寒害造成玫瑰花產量大減，屬於供給減少，供給線向左移動，導致市場均衡價格上升、均衡數量減少，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_32
   section: 1
   number: 32
@@ -1234,12 +1263,12 @@ questions:
   number: 44
   type: single
   page: 4
-  stem: 右圖中為某產品市場供需的樣貌，請問下列各事件何者與圖中最為相符？
+  stem: 某產品市場供需圖顯示「供給線不變，需求線向左移動（均衡價格下跌、均衡數量減少）」，請問下列各事件何者與此變動最為相符？
   options:
   - label: A
     content: 臺北珠寶大展，貴婦消費力創下新高
   - label: B
-    content: 新禽流感威脅，華東地區禽鳥忘人問津
+    content: 新禽流感威脅，華東地區禽鳥乏人問津
   - label: C
     content: 天津大爆炸，周遭房屋急於求售的數量大增
   - label: D
@@ -1266,6 +1295,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B有錯字（「忘人問津」應為「乏人問津」）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項B錯字「乏人問津」並補充供需圖變動條件，移除缺圖並補齊解答與解析）
+  explanation: 新禽流感威脅使消費者不敢購買禽鳥，市場需求減少（需求線左移），均衡價格與數量皆下跌，(B)符合。(A)需求線右移；(C)供給線右移；(D)價格下降使需求量增加（沿需求線移動）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_45
   section: 1
   number: 45

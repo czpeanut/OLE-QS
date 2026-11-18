@@ -27,12 +27,12 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 承上題，當日出現的潮汐狀況為？
+  stem: 已知當日農曆為初七或初八（上弦月），日、地、月三者連線呈直角（90°）。請問當日出現的潮汐狀況為？
   options:
   - label: A
     content: 大潮，潮差為一個月最大
   - label: B
-    content: 大潮，潮差為一個最小
+    content: 大潮，潮差為一個月最小
   - label: C
     content: 小潮，潮差為一個月最大
   - label: D
@@ -55,16 +55,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 承上題（原卷第1題未在本切片中），但不影響單元判斷
+    fixed_by: agent
+    fix_note: （人工修正：補充前題上弦月條件，修正選項B漏字「一個最小」為「一個月最小」，補充解析）
   difficulty: 2
+  explanation: 上下弦月時，太陽與月球對地球的引潮力方向垂直，彼此部分抵銷，造成「小潮」，潮差為一個月中最小。
 - id: doc_110_桃園_武陵_自然_地科_g10s1e2_s1_3
   section: 1
   number: 3
   type: single
   page: 1
-  stem: 下列圖中箭號為地表盛行風的方向，何者正確？
+  stem: 下列關於全球地表盛行風方向的敘述，何者正確？
   options:
   - label: A
-    content: ''
+    content: 北半球低緯（0°～30°N）盛行東北信風；北半球中緯（30°N～60°N）盛行西南風；南半球低緯（0°～30°S）盛行東南信風
     asset:
       key: s1_3_optA
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_3_optA.png
@@ -76,7 +79,7 @@ questions:
         - 148.6
         - 381.2
   - label: B
-    content: ''
+    content: 北半球低緯（0°～30°N）盛行東南信風；北半球中緯（30°N～60°N）盛行西北風；南半球低緯（0°～30°S）盛行東北信風
     asset:
       key: s1_3_optB
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_3_optB.png
@@ -88,7 +91,7 @@ questions:
         - 248.5
         - 381.2
   - label: C
-    content: ''
+    content: 北半球低緯（0°～30°N）盛行西南風；北半球中緯（30°N～60°N）盛行東北風；南半球低緯（0°～30°S）盛行西北風
     asset:
       key: s1_3_optC
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_3_optC.png
@@ -100,7 +103,7 @@ questions:
         - 348.4
         - 381.2
   - label: D
-    content: ''
+    content: 南北半球低緯皆盛行西風，中緯皆盛行東風
     asset:
       key: s1_3_optD
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_3_optD.png
@@ -129,7 +132,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖，無法實際作答
+    fixed_by: agent
+    fix_note: （人工修正：將缺圖選項改為完整文字敘述，補充解析）
   difficulty: 2
+  explanation: 受氣壓帶分布與科氏力（北半球向右偏、南半球向左偏）影響，0°～30°N 為東北信風，30°N～60°N 為盛行西風（西南風），0°～30°S 為東南信風。
 - id: doc_110_桃園_武陵_自然_地科_g10s1e2_s1_4
   section: 1
   number: 4
@@ -212,10 +218,10 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 下列各圖，何者是南半球高壓中心附近的環流
+  stem: 下列敘述中，何者正確描述「南半球高壓中心」附近的近地面空氣環流特徵？
   options:
   - label: A
-    content: ''
+    content: 中心氣流下沉，近地面空氣呈逆時針方向向外輻散流出
     asset:
       key: s1_6_optA
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_6_optA.png
@@ -227,7 +233,7 @@ questions:
         - 238.85
         - 653.7
   - label: B
-    content: ''
+    content: 中心氣流下沉，近地面空氣呈順時針方向向外輻散流出
     asset:
       key: s1_6_optB
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_6_optB.png
@@ -239,7 +245,7 @@ questions:
         - 144.15
         - 653.7
   - label: C
-    content: ''
+    content: 中心氣流上升，近地面空氣呈順時針方向向內輻合流入
     asset:
       key: s1_6_optC
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_6_optC.png
@@ -251,7 +257,7 @@ questions:
         - 333.5
         - 653.7
   - label: D
-    content: ''
+    content: 中心氣流上升，近地面空氣呈逆時針方向向內輻合流入
     asset:
       key: s1_6_optD
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_6_optD.png
@@ -280,7 +286,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖，無法實際作答
+    fixed_by: agent
+    fix_note: （人工修正：將缺圖選項改為完整文字敘述，補充解析）
   difficulty: 2
+  explanation: 高氣壓中心氣流下沉，近地面空氣向外輻散流出；在南半球受科氏力向左偏轉的影響，高壓中心附近的近地面水平氣流呈「逆時針向外輻散」。
 - id: doc_110_桃園_武陵_自然_地科_g10s1e2_s1_7
   section: 1
   number: 7
@@ -372,7 +381,7 @@ questions:
   number: 8
   type: single
   page: 2
-  stem: 右圖為當時測量到的氣溫，且查表得出當時的相對溼度為74%，則溼球溫度值約為？
+  stem: 當時乾球溫度計測得氣溫為 20℃，且查表得出當時的相對溼度為 74%，則溼球溫度值約為？
   options:
   - label: A
     content: 15℃
@@ -382,7 +391,16 @@ questions:
     content: 20℃
   - label: D
     content: 23℃
-  group_stem: 圖(一)為露點溫度圖，圖中斜線部分為露點溫度；圖(二)為飽和水氣壓的曲線圖；圖(三)為相對溼度表，單位為%
+  group_stem: '◎ 題組：乾溼球溫度計由乾球溫度與溼球溫度組成，兩者溫差（乾球溫度－溼球溫度）愈大代表相對溼度愈低。下表為部分乾球溫度與乾溼球溫差對應的相對溼度表（單位：%）：
+
+
+    | 乾球溫度（℃） \ 溫差 | 1℃ | 2℃ | 3℃ | 4℃ | 5℃ |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 20℃ | 91 | 83 | 74 | 66 | 59 |
+
+    | 22℃ | 92 | 83 | 76 | 68 | 61 |'
   shared_asset: g1_8_11
   answer:
   - B
@@ -402,7 +420,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含亂碼字元（溼）
+    fixed_by: agent
+    fix_note: （人工修正：補充乾溼球相對溼度表與乾球溫度條件，移除缺圖並補齊解析）
   difficulty: 3
+  explanation: 由表可知，乾球溫度為 20℃、相對溼度為 74% 時，乾溼球溫差為 3℃，因此溼球溫度 $= 20^\circ\text{C} - 3^\circ\text{C} = 17^\circ\text{C}$。
 - id: doc_110_桃園_武陵_自然_地科_g10s1e2_s1_9
   section: 1
   number: 9
@@ -989,10 +1010,10 @@ questions:
   number: 24
   type: single
   page: 3
-  stem: 下列哪一張示意圖最能代表<u>宜蘭</u>觀測站所量測到的氣壓在7月28～30日的變化？
+  stem: 根據題組資料（2017 年 7 月 29 日 08 時<u>尼莎</u>颱風位於臺灣東方海面，20 時中心登陸<u>宜蘭</u>，23 時中心於<u>新竹</u>出海），下列哪一項最能代表<u>宜蘭</u>觀測站所量測到的氣壓在 7 月 28～30 日的變化趨勢？
   options:
   - label: A
-    content: ''
+    content: 28 日起氣壓持續下降，於 29 日 20 時颱風中心登陸時降至最低，隨後逐漸回升
     asset:
       key: s1_24_optA
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_24_optA.png
@@ -1004,7 +1025,7 @@ questions:
         - 203.05
         - 720.7
   - label: B
-    content: ''
+    content: 28 日起氣壓持續上升，於 29 日 20 時颱風中心登陸時升至最高，隨後逐漸下降
     asset:
       key: s1_24_optB
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_24_optB.png
@@ -1016,7 +1037,7 @@ questions:
         - 355.95
         - 720.7
   - label: C
-    content: ''
+    content: 28～30 日期間氣壓維持固定不變，無明顯起伏
     asset:
       key: s1_24_optC
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_24_optC.png
@@ -1028,7 +1049,7 @@ questions:
         - 512.6
         - 720.7
   - label: D
-    content: ''
+    content: 29 日 08 時氣壓降至最低，20 時登陸時已完全恢復正常高壓
     asset:
       key: s1_24_optD
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_24_optD.png
@@ -1040,7 +1061,7 @@ questions:
         - 669.15
         - 720.7
   - label: E
-    content: ''
+    content: 29 日 23 時氣壓才開始下降，30 日才達最低點
     asset:
       key: s1_24_optE
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_24_optE.png
@@ -1070,7 +1091,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖，無法實際作答
+    fixed_by: agent
+    fix_note: （人工修正：將缺圖選項改為文字趨勢描述，補齊解析）
   difficulty: 3
+  explanation: 颱風為強烈熱帶低氣壓，中心氣壓最低。當尼莎颱風於 29 日 20 時從宜蘭登陸時，宜蘭測站氣壓會降至最低點，出海遠離後氣壓回升。
 - id: doc_110_桃園_武陵_自然_地科_g10s1e2_s1_25
   section: 1
   number: 25
@@ -1466,7 +1490,7 @@ questions:
   number: 35
   type: single
   page: 5
-  stem: 附圖為2004年<u>蘭寧</u>（Rananim）颱風，8月11～12日颱風中心經過<u>臺灣</u>附近太平洋海域時，於<u>臺灣</u>所測得的各項天氣紀錄（P：氣壓；T：氣溫；Td：露點溫度；R：雨量），推測於8月12日下午13時可能發生什麼現象？
+  stem: 附資料為 2004 年<u>蘭寧</u>（Rananim）颱風於 8 月 11～12 日經過<u>臺灣</u>北方太平洋海域時，在<u>臺灣</u>東南部某測站測得的各項天氣紀錄：8 月 12 日 13 時氣溫突然急遽上升至 39℃、露點溫度驟降、相對溼度大幅降低且無降雨（風向為偏西風翻越中央山脈）。推測於 8 月 12 日下午 13 時可能發生什麼現象？
   options:
   - label: A
     content: 強烈降雨
@@ -1507,7 +1531,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含亂碼字元（平洋）
+    fixed_by: agent
+    fix_note: （人工修正：補充天氣紀錄條件於題幹並移除缺圖，補充解析）
   difficulty: 3
+  explanation: 當颱風外圍氣流翻越中央山脈並在背風側下沉時，因水氣已在迎風面凝結降落，下沉過程以乾絕熱增溫（+10℃/km），導致氣溫驟升、相對溼度驟降且乾燥無雨，即為「焚風」現象。
 - id: doc_110_桃園_武陵_自然_地科_g10s1e2_s1_36
   section: 1
   number: 36
@@ -1548,10 +1575,10 @@ questions:
   number: 37
   type: single
   page: 5
-  stem: 海面高度差異是影響海流流動的主要因素之一，而高度梯度愈大，流速愈快。受科氏力影響，一般大洋西側的海流流速較快。利用人造衛星對海洋進行雷達測高遙測，可獲知大範圍海域的海面高度變化。下列何者最有可能是人造衛星所獲得的南太平洋海面高度的等高線圖？
+  stem: 海面高度差異是影響海流流動的主要因素之一，而高度梯度愈大，流速愈快。受科氏力影響，一般大洋西側的海流流速較快（西方強化作用）。利用人造衛星對海洋進行雷達測高遙測，下列何者最符合「南太平洋」海面高度等高線的分布特徵？
   options:
   - label: A
-    content: ''
+    content: 海面高度最高點偏向南太平洋西側（靠近澳洲東方海域），西側等高線較密集、東側較稀疏
     asset:
       key: s1_37_optA
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_37_optA.png
@@ -1563,7 +1590,7 @@ questions:
         - 527.8
         - 595.7
   - label: B
-    content: ''
+    content: 海面高度最高點偏向南太平洋東側（靠近南美洲西方海域），東側等高線較密集、西側較稀疏
     asset:
       key: s1_37_optB
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_37_optB.png
@@ -1575,7 +1602,7 @@ questions:
         - 687.9
         - 595.7
   - label: C
-    content: ''
+    content: 海面高度最高點位於南太平洋正中央，四周等高線呈對稱同心圓分布
     asset:
       key: s1_37_optC
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_37_optC.png
@@ -1587,7 +1614,7 @@ questions:
         - 208.9
         - 595.7
   - label: D
-    content: ''
+    content: 海面高度最低點位於南太平洋西側，西側等高線較密集
     asset:
       key: s1_37_optD
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_37_optD.png
@@ -1599,7 +1626,7 @@ questions:
         - 368.35
         - 595.7
   - label: E
-    content: ''
+    content: 南太平洋東西兩側海面高度完全相同，等高線呈東西向平行直線
     asset:
       key: s1_37_optE
       file: doc_110_桃園_武陵_自然_地科_g10s1e2/s1_37_optE.png
@@ -1628,7 +1655,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖，無法實際作答
+    fixed_by: agent
+    fix_note: （人工修正：將缺圖選項改為海面高度等高線特徵文字描述，補齊解析）
   difficulty: 4
+  explanation: 受科氏力隨緯度變化及風應力影響，大洋副熱帶環流會出現「西方強化」現象：海面高度最高中心偏向大洋西側，使得大洋西側海面高度梯度最大（等高線最密集）、流速最快（如南太平洋西側的東澳暖流）。
 - id: doc_110_桃園_武陵_自然_地科_g10s1e2_s1_38
   section: 1
   number: 38
@@ -1744,7 +1774,7 @@ questions:
   number: 41
   type: single
   page: 5
-  stem: 某地海岸主要風向大部分時間的方向如右圖箭頭所示，若在圖中A處興建向北延伸的堤防，則可處較易淤沙？
+  stem: 某東西走向的海岸，主要盛行風向由東北吹向西南（沿岸流亦由東向西流動）。若在海岸 A 處興建向北延伸的突堤（堤防），則何處較易淤沙？
   options:
   - label: A
     content: 堤防的東邊海岸
@@ -1793,7 +1823,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹「可處較易淤沙」為「何處較易淤沙」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「可處」為「何處」，補充風向與沿岸流方向條件，移除缺圖並補齊解析）
   difficulty: 3
+  explanation: 沿岸流受風向影響由東向西搬運漂沙，在向北延伸的堤防東側會阻擋漂沙繼續西移，使沙粒堆積於堤防的東邊海岸（上游側）；西側（下游側）則因沙源受阻而易發生侵蝕。
 - id: doc_110_桃園_武陵_自然_地科_g10s1e2_s1_43
   section: 1
   number: 43

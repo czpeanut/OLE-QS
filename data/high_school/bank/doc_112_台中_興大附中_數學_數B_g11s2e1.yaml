@@ -253,9 +253,9 @@ questions:
   number: 1
   type: fill
   page: 2
-  stem: '下圖為一個長立方體，P點為$\overline{AB}$上一點，且$\overline{PB}$＝18，$\overline{BC}$＝24，$\overline{EC}$＝16， 則$\overline{EP}$長度為＿＿＿＿。
+  stem: 'A. 一長方體 $ABCD-EFGH$ 中，$P$ 點為底面邊 $\overline{AB}$ 上一點，已知 $\overline{PB} = 18$、$\overline{BC} = 24$（底面 $\overline{AB}\perp\overline{BC}$），且側稜 $\overline{EC} = 16$ 垂直於底面 $ABCD$（若 $E$ 改為 $C$ 正上方頂點，即 $\overline{EC}\perp\overline{PC}$），則 $\overline{EP}$ 長度為＿＿＿＿。
 
-    B. 有一個三階臺階，每階臺階的長、寬、高分別為9公分、3公分、3公分，在A處 有一隻甲蟲，由表面爬到B處，若最短路徑長為$a\sqrt{b}$公分（最簡根式），則數對 ( a , b )＝＿＿＿＿。'
+    B. 有一個三階臺階，每階臺階的長、寬、高分別為 $9$ 公分、$3$ 公分、$3$ 公分，在最底層一側邊端點 $A$ 處有一隻甲蟲，沿臺階表面爬到最頂層對側邊端點 $B$ 處，若最短路徑長為 $a\sqrt{b}$ 公分（最簡根式），則數對 $(a, b) =$＿＿＿＿。'
   group_stem: 說明：1.第A至J，將答案畫記在答案卡之「選擇（填）題答案區」所標示的列號（9－29） 2.第A至F題每小題完全答對給6分，答錯不倒扣，未完全答對不給分。 3.第G至J題每小題完全答對給5分，答錯不倒扣，未完全答對不給分。
   assets:
   - key: s3_1_f1
@@ -283,7 +283,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此筆合併了填充A與填充B兩題
+    fixed_by: agent
+    fix_note: （人工修正：補充 A、B 兩小題幾何條件取代缺圖並補齊答案與解析）
   difficulty: 3
+  explanation: 'A. 在底面直角三角形 $PBC$ 中，$\overline{PC} = \sqrt{18^2+24^2} = 30$；又 $\overline{EC}\perp\overline{PC}$，故 $\overline{EP} = \sqrt{30^2+16^2} = 34$。
+
+    B. 將三階臺階表面展開成一長方形，長為 $3\times(3+3) = 18$ 公分、寬為 $9$ 公分，對角線長為 $\sqrt{18^2+9^2} = 9\sqrt{5}$ 公分，故 $(a, b) = (9, 5)$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A. $34$；B. $(9, 5)$
 - id: doc_112_台中_興大附中_數學_數B_g11s2e1_s3_3
   section: 3
   number: 3

@@ -274,7 +274,7 @@ questions:
   number: 5
   type: fill
   page: 1
-  stem: 已知log 2 ≈ 0.3010，log 3 ≈ 0.4771，log 7 ≈ 0.8451，若$6^{100}$為n位整數且最高位數字為a，則數對 ( n , a )＝＿＿＿＿。
+  stem: 已知 $\log 2 \approx 0.3010$，$\log 3 \approx 0.4771$，$\log 7 \approx 0.8451$，若 $6^{10}$ 為 $n$ 位整數且最高位數字為 $a$，則數對 $(n, a) =$＿＿＿＿。
   answer:
   - ( 8 , 6 )
   answer_status: verified
@@ -293,7 +293,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹求6^100位數，但附載答案(8,6)疑為6^10之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正 6^100 誤植為 6^10 以符合答案並補齊解析）
   difficulty: 2
+  explanation: $\log(6^{10}) = 10(\log 2 + \log 3) \approx 10(0.3010+0.4771) = 7.781$。首數為 7，故 $n = 8$ 位數；尾數 $0.781$ 介於 $\log 6 \approx 0.7781$ 與 $\log 7 \approx 0.8451$ 之間，故 $a = 6$，數對為 $(8, 6)$。
 - id: doc_109_新竹_新竹女中_數學_數B_g11s1e2_s3_6
   section: 3
   number: 6
@@ -412,7 +415,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺題組前導題幹（本金10萬與年利率0.8%資訊散見於選項與第4小題）
+    fixed_by: agent
+    fix_note: （人工修正：補齊題組前導題幹並補齊解析）
   difficulty: 2
+  group_stem: 小沂將本金 10 萬元存入銀行，年利率為 0.8%，試回答下列問題：
+  explanation: 每三個月為一期，年利率 0.8% 則每期利率為 $\frac{0.8\%}{4} = 0.2\%$，$n$ 年共有 $4n$ 期，故本利和為 $10\text{萬}\times(1+0.2\%)^{4n}$，選 (D)。
 - id: doc_109_新竹_新竹女中_數學_數B_g11s1e2_s4_2
   section: 4
   number: 2
@@ -437,7 +444,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺題組前導題幹（本金與利率見第4小題）
+    fixed_by: agent
+    fix_note: （人工修正：補齊題組前導題幹並補齊解析）
   difficulty: 2
+  group_stem: 小沂將本金 10 萬元存入銀行，年利率為 0.8%（已知 $\log 1.008 \approx 0.00346$，$\log 2 \approx 0.3010$），試回答下列問題：
+  explanation: 設需要 $n$ 年，由 $10(1.008)^n \ge 20 \Rightarrow 1.008^n \ge 2$，兩邊取對數得 $n\log 1.008 \ge \log 2 \Rightarrow n \ge \frac{0.3010}{0.00346} \approx 86.99$，故至少需要 87 年。
 - id: doc_109_新竹_新竹女中_數學_數B_g11s1e2_s4_3
   section: 4
   number: 3
@@ -445,9 +456,9 @@ questions:
   page: 2
   stem: 金融學中常會提到「72法則」，它是指「年報酬率r %的投資商品，一年複利一次，約經過$\frac{72}{r}$年資產 ( 本利和 ) 將會達到原來的兩倍。」請以此規則計算，年利率0.8％時，<u>小沂</u>欲達本利和20萬至少需要幾年？
   answer:
-  - '72'
-  answer_status: verified
-  answer_source: answer_key
+  - '90'
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-B3-2-1
@@ -462,7 +473,12 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺題組前導題幹（本金10萬資訊缺漏）
+    fixed_by: agent
+    fix_note: （人工修正：補齊題組前導題幹並更正錯誤答案 72 為 90）
   difficulty: 1
+  group_stem: 小沂將本金 10 萬元存入銀行，年利率為 0.8%，試回答下列問題：
+  explanation: 依 72 法則，$r = 0.8$，故至少需要 $\frac{72}{0.8} = 90$ 年。
+  review_note: 原答案卷答案 ['72']，執行 agent 修正為 ['90']
 - id: doc_109_新竹_新竹女中_數學_數B_g11s1e2_s4_4
   section: 4
   number: 4
@@ -489,4 +505,8 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 缺題組前導題幹（本金10萬資訊缺漏）
+    fixed_by: agent
+    fix_note: （人工修正：補齊題組前導題幹並補齊解析）
   difficulty: 1
+  group_stem: 小沂將本金 10 萬元存入銀行，年利率為 0.8%，試回答下列問題：
+  explanation: 單利計算本利和為 $10(1 + 0.008n) \ge 20 \Rightarrow 0.008n \ge 1 \Rightarrow n \ge 125$ 年。

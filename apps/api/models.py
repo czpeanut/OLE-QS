@@ -376,7 +376,8 @@ class QuestionSource(Base):
             city, short = split_school(self.school)
         bits = [b for b in (city, short, str(self.academic_year_roc)) if b]
         mark = {"adapted": "改編 ", "duplicate": "另見 "}.get(self.relation, "")
-        return f"[{mark}{' '.join(bits)}]"
+        tail = {"fixed": " (修正)"}.get(self.relation, "")
+        return f"[{mark}{' '.join(bits)}{tail}]"
 
 
 class Tag(Base):

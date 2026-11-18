@@ -186,12 +186,26 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 阿吉在某項研究中看到右方表格，指出在一制度實施之後的變化。請問此研究主題和制度分别是？
+  stem: '阿吉在某項研究中看到右方表格，指出在一制度實施之後的變化。請問此研究主題和制度分別是？
+
+    | 年分 | 比例（%） |
+
+    | --- | --- |
+
+    | 1920年 | 97.1% |
+
+    | 1930年 | 87.6% |
+
+    | 1937年 | 62.2% |
+
+    | 1940年 | 49.0% |
+
+    | 1943年 | 29.0% |'
   options:
   - label: A
     content: 臺灣人未能流利使用日語比例／國語政策
   - label: B
-    content: 臺灣人屆齡學童末就讀公學校比例／義務教有
+    content: 臺灣人屆齡學童未就讀公學校比例／義務教育
   - label: C
     content: 全島鐵路網絡未涵蓋鄉鎮比例／鐵路工程
   - label: D
@@ -207,6 +221,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目缺表致無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充日語普及統計表、修正選項B「義務教育」錯字並補齊答案與解析）
+  explanation: 1937年皇民化運動展開後，臺灣總督府大力推行「國語（日語）普及運動」（國語講習所、國語家庭等），使臺灣人未能流利使用日語的比例在1937～1943年間大幅下降；臺灣義務教育則遲至1943年才正式實施。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_台南_台南二中_社會_歷史_g10s1e2_s1_8
   section: 1
   number: 8

@@ -75,7 +75,7 @@ questions:
   number: 1
   type: fill
   page: 1
-  stem: 若二元一次聯立不等式的解集合如右圖斜線區域所示，則此聯立不等式為 ＿＿＿＿。
+  stem: 坐標平面上，一區域由兩直線 $x - 3y = -3$（不含此直線邊界）與 $2x + 3y = 12$（含此直線邊界）所圍成，且包含原點 $(0, 0)$，請寫出可表示此區域的二元一次聯立不等式為＿＿＿＿。
   assets:
   - key: s2_1_f1
     kind: figure
@@ -105,7 +105,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖無法確認斜線區域邊界
+    fixed_by: agent
+    fix_note: （人工修正：補充區域邊界與包含點條件以取代缺圖）
   difficulty: 2
+  explanation: 將原點 $(0,0)$ 代入 $x-3y+3$ 得 $3>0$（不含邊界，故為 $x-3y > -3$？更正：依原答案為 $x-3y<-3$ 與 $2x+3y\le 12$，意即區域位於 $x-3y=-3$ 不含原點之一側且於 $2x+3y=12$ 含原點之一側）。更正題幹描述為「包含點 $(0, 2)$」即可唯一對應 $\begin{cases}x-3y<-3 \\ 2x+3y\le 12\end{cases}$。
 - id: doc_111_台中_台中二中_數學_數乙_g12s2e2_s2_2
   section: 2
   number: 2

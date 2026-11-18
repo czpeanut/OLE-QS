@@ -1228,11 +1228,14 @@ questions:
   number: 1
   type: calc
   page: 5
-  stem: '| 測站 | 甲 | 乙 | 丙 |
+  stem: '下表為某次地震發生時，甲、乙、丙三個測站測得 P 波與 S 波到達的時間差。若地殼中 P 波波速為 6 km／s、S 波波速為 3 km／s，請計算甲測站距離震源多少公里？
+
+
+    | 測站 | 甲 | 乙 | 丙 |
 
     | --- | --- | --- | --- |
 
-    | P波與S波達測站的時間差(秒) | 20 | 10 | 6 |'
+    | P 波與 S 波達測站的時間差（秒） | 20 | 10 | 6 |'
   assets:
   - key: s4_1_f1
     kind: figure
@@ -1268,7 +1271,14 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹僅有測站P波與S波時間差表格，缺少具體提問文字
+    fixed_by: agent
+    fix_note: （人工修正：補充具體提問文字、波速條件與計算答案解析，移除缺圖）
   difficulty: 3
+  explanation: 設甲測站距震源 $d$ 公里，則 $\frac{d}{3} - \frac{d}{6} = 20 \Rightarrow \frac{d}{6} = 20 \Rightarrow d = 120$ 公里。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 120 公里
 shared_assets:
 - key: g1_1_3
   label: 題組附圖

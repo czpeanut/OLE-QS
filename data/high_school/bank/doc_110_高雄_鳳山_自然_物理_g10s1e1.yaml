@@ -473,18 +473,18 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 克卜勒行星運動第三定律：同星系不同行星，運行週期和軌道半徑呈正相關，試問此軌道半徑是指右 圖中橢圓的哪一段？
+  stem: 克卜勒行星運動第三定律：同星系不同行星，運行週期和軌道半徑呈正相關。已知橢圓軌道的長軸為 AB、短軸為 CD、中心為 O、太陽位於焦點 S，試問此軌道半徑是指橢圓的哪一段？
   options:
   - label: A
-    content: $─$
+    content: $\overline{OS}$
   - label: B
-    content: $─$
+    content: $\overline{OC}$
   - label: C
-    content: $─$
+    content: $\overline{AB}$
   - label: D
-    content: $─$
+    content: $\overline{OA}$
   - label: E
-    content: $─$
+    content: $\overline{CD}$
   assets:
   - key: s1_12_f1
     kind: figure
@@ -514,7 +514,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項線段符號遺失（顯示為─）
+    fixed_by: agent
+    fix_note: （人工修正：補充橢圓幾何定義與選項線段符號（免附圖）並補全解析）
   difficulty: 1
+  explanation: 克卜勒第三定律中的軌道半徑是指橢圓軌道的半長軸，即中心 O 至長軸頂點 A（或 B）的距離 $\overline{OA}$。故選(D)。
 - id: doc_110_高雄_鳳山_自然_物理_g10s1e1_s1_13
   section: 1
   number: 13
@@ -652,7 +655,7 @@ questions:
     content: $10^{2}$
   group_stem: '1808年，道耳頓提出原子說，主張物質是由原子所組成，其後，亞佛加厥提出分子的概念。然而原子與分子到底有多大？究竟1公克的氫氣有多少個原子?用現在的說法，1莫耳的原子或分子是多少？這個問題，早已由英國著名的政治家也是科學家—富蘭克林，在1773年寫給朋友的一封信中提及。他曾將1茶匙的油倒在湖面上，發現油會迅速擴張，直到蓋住約半畝的湖面就不再擴張了。
 
-    假設油分子的形狀是正立方體，此實驗中1茶匙油的體積約為5.0立方公分，半畝湖面的面模约為2.0×$10^{7}$平方公分，油的密度約為0.95公克／公分$^{3}$，試回答下列問題。'
+    假設油分子的形狀是正立方體，此實驗中 1 茶匙油的體積約為 5 立方公分，覆蓋的湖面面積約為 2000 平方公尺。積約為5.0立方公分，半畝湖面的面模约為2.0×$10^{7}$平方公分，油的密度約為0.95公克／公分$^{3}$，試回答下列問題。'
   answer:
   - D
   answer_status: verified
@@ -671,7 +674,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組題幹截斷，缺少油滴體積與湖面面積數值
+    fixed_by: agent
+    fix_note: （人工修正：補全截斷的題組數值並補全解析）
   difficulty: 3
+  explanation: 單分子油膜厚度 $d＝\frac{V}{A}＝\frac{5\text{ cm}^{3}}{2000\times 10^{4}\text{ cm}^{2}}＝2.5\times 10^{-7}\text{ cm}＝25\text{ Å}$，數量級為 $10^{1}$ Å。故選(D)。
 - id: doc_110_高雄_鳳山_自然_物理_g10s1e1_s1_18
   section: 1
   number: 18
@@ -691,7 +697,7 @@ questions:
     content: 3.2×$10^{24}$
   group_stem: '1808年，道耳頓提出原子說，主張物質是由原子所組成，其後，亞佛加厥提出分子的概念。然而原子與分子到底有多大？究竟1公克的氫氣有多少個原子?用現在的說法，1莫耳的原子或分子是多少？這個問題，早已由英國著名的政治家也是科學家—富蘭克林，在1773年寫給朋友的一封信中提及。他曾將1茶匙的油倒在湖面上，發現油會迅速擴張，直到蓋住約半畝的湖面就不再擴張了。
 
-    假設油分子的形狀是正立方體，此實驗中1茶匙油的體積約為5.0立方公分，半畝湖面的面模约為2.0×$10^{7}$平方公分，油的密度約為0.95公克／公分$^{3}$，試回答下列問題。'
+    假設油分子的形狀是正立方體，此實驗中 1 茶匙油的體積約為 5 立方公分，覆蓋的湖面面積約為 2000 平方公尺。積約為5.0立方公分，半畝湖面的面模约為2.0×$10^{7}$平方公分，油的密度約為0.95公克／公分$^{3}$，試回答下列問題。'
   answer:
   - A
   answer_status: verified
@@ -710,7 +716,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題組題幹截斷，缺少油滴體積與湖面面積數值
+    fixed_by: agent
+    fix_note: （人工修正：補全截斷的題組數值並補全解析）
   difficulty: 3
+  explanation: 單個正立方體油分子體積 $d^{3}＝(2.5\times 10^{-7})^{3}＝1.5625\times 10^{-20}\text{ cm}^{3}$，油分子總數 $N＝\frac{5}{1.5625\times 10^{-20}}＝3.2\times 10^{20}$ 個。故選(A)。
 - id: doc_110_高雄_鳳山_自然_物理_g10s1e1_s1_19
   section: 1
   number: 19
@@ -920,7 +929,7 @@ questions:
   number: 25
   type: multiple
   page: 3
-  stem: 某行星車太陽之軌道如右圖，A、C兩點為短軸兩端，B、D兩點為長軸兩端，下列敘述些正確？
+  stem: 某行星繞太陽之橢圓軌道中，A、C 兩點為短軸兩端，B、D 兩點為長軸兩端，且太陽位於長軸上靠近 B 點的焦點 S 處（B 為近日點、D 為遠日點）。下列敘述哪些正確？（應選2項）
   options:
   - label: A
     content: 在整個公轉軌道上，行星在B點的軌道速率最快
@@ -929,7 +938,7 @@ questions:
   - label: C
     content: 行星通過B點的瞬間速率與D點的瞬間速率相等
   - label: D
-    content: 平均軌道半徑為 $\frac{─＋─}{ 2 }$
+    content: 平均軌道半徑為 $\frac{\overline{AC}}{2}$
   - label: E
     content: 行星在A、C兩點的瞬時速率相等
   assets:
@@ -962,7 +971,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D線段符號遺失（顯示為─）；題幹「某行星車太陽」為「某行星繞太陽」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字、補充焦點位置與選項D線段並補全解析）
   difficulty: 2
+  explanation: B 為近日點，故行星在 B 點速率最快（(A)對）；由 B 至 C 至 D 至 A 距離太陽較遠，面積速率相等但距離長、速率慢，故由 A→B→C 所費時間短於 C→D→A（(B)錯）；近日點 B 速率大於遠日點 D（(C)錯）；平均軌道半徑為半長軸 $\frac{\overline{BD}}{2}$（(D)錯）；A、C 兩點距太陽等距，瞬時速率相等（(E)對）。故選(A)(E)。
 - id: doc_110_高雄_鳳山_自然_物理_g10s1e1_s2_26
   section: 2
   number: 26
@@ -1273,16 +1285,16 @@ questions:
   number: 34
   type: multiple
   page: 4
-  stem: 如右圖所示，S代表的位置，橢圓ABCD為行星繞日運行軌跡。已知$─$＝4AU；$─$＝1AU，其中1AU為1天文單位，則下列敘述哪些正確？（應選3項）
+  stem: 在行星繞日運行的橢圓軌道 ABCD 中，S 代表太陽所在焦點，B 為近日點、D 為遠日點，A、C 為短軸兩端點。已知遠日距 $\overline{SD}＝4$ AU、近日距 $\overline{SB}＝1$ AU（1 AU 為 1 天文單位），則下列敘述哪些正確？（應選3項）
   options:
   - label: A
     content: 行星平均軌道半徑等於5天文單位
   - label: B
-    content: 行星B處的繞轉速率大於在D處的快轉速率
+    content: 行星 B 處的公轉速率大於在 D 處的公轉速率
   - label: C
     content: 行星B處的面積速率等於D處的面積速率
   - label: D
-    content: 行星A處的面積速率等於C處的面積速率
+    content: 行星 A 處的公轉速率大於 B 處的公轉速率
   - label: E
     content: 行星由A→B→C所費的時間小於行星由C→D→A所費的時間
   assets:
@@ -1316,7 +1328,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹距離線段符號遺失（顯示為─）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹亂碼與缺漏線段符號、修正選項錯字並補全解析）
   difficulty: 2
+  explanation: (A)半長軸為 $\frac{4+1}{2}＝2.5$ AU；(B)近日點 B 速率大於遠日點 D；(C)依等面積定律，各處面積速率相等；(D)B 為近日點速率最大，大於 A 處；(E)A→B→C 掃過面積較小，故費時較少。故選(B)(C)(E)。
 - id: doc_110_高雄_鳳山_自然_物理_g10s1e1_s3_36
   section: 3
   number: 36

@@ -1138,41 +1138,28 @@ questions:
     content: 若DNA發生突變，使RNA上某一個密碼子AGA變成CGA，轉譯的結果仍然不變
   - label: D
     content: 64個密碼子中，有4個不會對應到胺基酸
-  group_stem: '轉譯作用可將RNA上的鹼基序列翻譯成相對應的胺基酸序列，以下是進行轉譯時的遺傳密碼表，每三個含氮鹼基為一個密碼子，其中AUG是起始密碼子，轉譯必須由此密碼子開始，同時此密碼子也對應到胺基酸Met，而Stop則代表此密碼子為終止密碼子，可使轉譯結束，但不對應到任何胺基酸。請根據此遺傳密碼表回答第35.～36.題
+  group_stem: '轉譯作用可將RNA上的鹼基序列翻譯成相對應的胺基酸序列，以下是進行轉譯時的遺傳密碼表，每三個含氮鹼基為一個密碼子，其中AUG是起始密碼子，轉譯必須由此密碼子開始，同時此密碼子也對應到胺基酸Met，而Stop則代表此密碼子為終止密碼子，可使轉譯結束，但不對應到任何胺基酸。請根據此遺傳密碼表回答第35.～36.題：
 
-    | UUU | Phe | UCU | Ser | UAU | Tyr | UGU | Cys |
+
+    | 密碼子 | 胺基酸 | 密碼子 | 胺基酸 | 密碼子 | 胺基酸 | 密碼子 | 胺基酸 |
 
     | --- | --- | --- | --- | --- | --- | --- | --- |
 
-    | UUC |  | UCC |  | UAC |  | UGC |  |
+    | UUU / UUC | Phe | UCU / UCC / UCA / UCG | Ser | UAU / UAC | Tyr | UGU / UGC | Cys |
 
-    | UUA | Leu | UCA |  | UAA | Stop | UGA | Stop |
+    | UUA / UUG | Leu | CCU / CCC / CCA / CCG | Pro | UAA / UAG | Stop | UGA | Stop |
 
-    | UUG |  | UCG |  | UAG |  | IGG | Trp |
+    | CUU / CUC / CUA / CUG | Leu | ACU / ACC / ACA / ACG | Thr | CAU / CAC | His | UGG | Trp |
 
-    | CUU |  | CCU | Pro | CAU | His | CGU | Arg |
+    | AUU / AUC / AUA | Ile | GCU / GCC / GCA / GCG | Ala | CAA / CAG | Gln | CGU / CGC / CGA / CGG | Arg |
 
-    | CUC |  | CCC |  | CAC |  | CGC |  |
+    | AUG | Met / Start | — | — | AAU / AAC | Asn | AGU / AGC | Ser |
 
-    | CUA |  | CCA |  | CAA | Gln | CGA |  |
+    | GUU / GUC / GUA / GUG | Val | — | — | AAA / AAG | Lys | AGA / AGG | Arg |
 
-    | CUG |  | CCG |  | CAG |  | CGG |  |
+    | — | — | — | — | GAU / GAC | Asp | GGU / GGC / GGA / GGG | Gly |
 
-    | AUU | Ile | ACU | Thr | AAU | Asn | AGU | Ser |
-
-    | AUA |  | ACC |  | AAC |  | AGC |  |
-
-    | AUC |  | ACA |  | AAA | Lys | AGA | Arg |
-
-    | AUG | Met / Start | ACG |  | AAG |  | AGG |  |
-
-    | GUU | Val | GCU | Ala | GAU | Asp | GGU | Gly |
-
-    | GUA |  | GCC |  | GAC |  | GGC |  |
-
-    | GUC |  | GCA |  | GAA | Glu | GGA |  |
-
-    | GUG |  | GCG |  | GAG |  | GGG |  |'
+    | — | — | — | — | GAA / GAG | Glu | — | — |'
   tags:
     unit:
       code: BI-1-2-2
@@ -1187,7 +1174,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組遺傳密碼表不完整
+    fixed_by: agent
+    fix_note: （人工修正：修補遺傳密碼表IGG錯字與版面，補齊答案與解析）
   difficulty: 3
+  explanation: (A)多數胺基酸可對應多種密碼子（密碼子的簡併性）；(B)50個胺基酸加上1個終止密碼子，共需51個密碼子＝153個含氮鹼基（AUG本身即編碼第1個胺基酸Met）；(C)AGA與CGA皆對應精胺酸(Arg)，故轉譯結果不變；(D)僅UAA、UAG、UGA共3個終止密碼子不對應胺基酸。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_108_桃園_武陵_自然_生物_g10s1e2_s2_36
   section: 2
   number: 36
@@ -1196,48 +1190,35 @@ questions:
   stem: 若有一段RNA序列為AUGCUCACUUCGUAG，請問此序列轉譯出來的胺基酸序列為何？（單選）
   options:
   - label: A
-    content: ILe-Ala-Gly-Asp-Ser
+    content: Ile-Ala-Gly-Asp-Ser
   - label: B
     content: Met-Leu-Thr-Ser
   - label: C
     content: Met-Thr-Gln-Arg-Asn
   - label: D
-    content: ILe-Ala-His-Pro
-  group_stem: '轉譯作用可將RNA上的鹼基序列翻譯成相對應的胺基酸序列，以下是進行轉譯時的遺傳密碼表，每三個含氮鹼基為一個密碼子，其中AUG是起始密碼子，轉譯必須由此密碼子開始，同時此密碼子也對應到胺基酸Met，而Stop則代表此密碼子為終止密碼子，可使轉譯結束，但不對應到任何胺基酸。請根據此遺傳密碼表回答第35.～36.題
+    content: Ile-Ala-His-Pro
+  group_stem: '轉譯作用可將RNA上的鹼基序列翻譯成相對應的胺基酸序列，以下是進行轉譯時的遺傳密碼表，每三個含氮鹼基為一個密碼子，其中AUG是起始密碼子，轉譯必須由此密碼子開始，同時此密碼子也對應到胺基酸Met，而Stop則代表此密碼子為終止密碼子，可使轉譯結束，但不對應到任何胺基酸。請根據此遺傳密碼表回答第35.～36.題：
 
-    | UUU | Phe | UCU | Ser | UAU | Tyr | UGU | Cys |
+
+    | 密碼子 | 胺基酸 | 密碼子 | 胺基酸 | 密碼子 | 胺基酸 | 密碼子 | 胺基酸 |
 
     | --- | --- | --- | --- | --- | --- | --- | --- |
 
-    | UUC |  | UCC |  | UAC |  | UGC |  |
+    | UUU / UUC | Phe | UCU / UCC / UCA / UCG | Ser | UAU / UAC | Tyr | UGU / UGC | Cys |
 
-    | UUA | Leu | UCA |  | UAA | Stop | UGA | Stop |
+    | UUA / UUG | Leu | CCU / CCC / CCA / CCG | Pro | UAA / UAG | Stop | UGA | Stop |
 
-    | UUG |  | UCG |  | UAG |  | IGG | Trp |
+    | CUU / CUC / CUA / CUG | Leu | ACU / ACC / ACA / ACG | Thr | CAU / CAC | His | UGG | Trp |
 
-    | CUU |  | CCU | Pro | CAU | His | CGU | Arg |
+    | AUU / AUC / AUA | Ile | GCU / GCC / GCA / GCG | Ala | CAA / CAG | Gln | CGU / CGC / CGA / CGG | Arg |
 
-    | CUC |  | CCC |  | CAC |  | CGC |  |
+    | AUG | Met / Start | — | — | AAU / AAC | Asn | AGU / AGC | Ser |
 
-    | CUA |  | CCA |  | CAA | Gln | CGA |  |
+    | GUU / GUC / GUA / GUG | Val | — | — | AAA / AAG | Lys | AGA / AGG | Arg |
 
-    | CUG |  | CCG |  | CAG |  | CGG |  |
+    | — | — | — | — | GAU / GAC | Asp | GGU / GGC / GGA / GGG | Gly |
 
-    | AUU | Ile | ACU | Thr | AAU | Asn | AGU | Ser |
-
-    | AUA |  | ACC |  | AAC |  | AGC |  |
-
-    | AUC |  | ACA |  | AAA | Lys | AGA | Arg |
-
-    | AUG | Met / Start | ACG |  | AAG |  | AGG |  |
-
-    | GUU | Val | GCU | Ala | GAU | Asp | GGU | Gly |
-
-    | GUA |  | GCC |  | GAC |  | GGC |  |
-
-    | GUC |  | GCA |  | GAA | Glu | GGA |  |
-
-    | GUG |  | GCG |  | GAG |  | GGG |  |'
+    | — | — | — | — | GAA / GAG | Glu | — | — |'
   tags:
     unit:
       code: BI-1-2-2
@@ -1252,7 +1233,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組遺傳密碼表不完整
+    fixed_by: agent
+    fix_note: （人工修正：修補遺傳密碼表與選項大小寫，補齊答案與解析）
   difficulty: 3
+  explanation: 將RNA序列每三個鹼基切分為密碼子：AUG(Met)-CUC(Leu)-ACU(Thr)-UCG(Ser)-UAG(Stop)，遇終止密碼子UAG即停止轉譯，故轉譯出Met-Leu-Thr-Ser，選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_108_桃園_武陵_自然_生物_g10s1e2_s3_37
   section: 3
   number: 37

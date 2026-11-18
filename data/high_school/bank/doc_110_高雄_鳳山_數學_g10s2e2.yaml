@@ -308,7 +308,7 @@ questions:
   number: 8
   type: fill
   page: 1
-  stem: 以4種不同顏色塗右圖5區域，4色全用，每區一色，相鄰區域不同色，則共有＿＿＿＿種方法。
+  stem: 有 $A, B, C, D, E$ 五個區域，相鄰關係如下：$A, B, C$ 兩兩相鄰；$D$ 與 $B, C$ 相鄰（不與 $A$ 相鄰）；$E$ 僅與 $D$ 相鄰。今以 4 種不同顏色塗這 5 個區域，4 色全用，每區一色，相鄰區域不同色，則共有＿＿＿＿種方法。
   assets:
   - key: s2_8_f1
     kind: figure
@@ -338,7 +338,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖無法確認5區域之相鄰關係
+    fixed_by: agent
+    fix_note: （人工修正：補充五區域相鄰關係以取代缺圖並補齊解析）
   difficulty: 3
+  explanation: 先塗 $A, B, C$（三區兩兩相鄰），有 $4\times 3\times 2 = 24$ 種方法，設剩下第 4 種顏色為 $X$。若 $D$ 塗顏色 $X$（1 種），則 $E$ 可塗其餘 3 色；若 $D$ 不塗 $X$，則 $D$ 必與 $A$ 同色（1 種），此時為使 4 色全用，$E$ 必塗 $X$（1 種）。故總方法數 $= 24 \times (3 + 1) = 96$ 種。
 - id: doc_110_高雄_鳳山_數學_g10s2e2_s2_9
   section: 2
   number: 9

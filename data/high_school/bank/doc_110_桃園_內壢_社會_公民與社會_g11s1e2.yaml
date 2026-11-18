@@ -278,7 +278,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 假設市場需求曲線如下圖所示，請從下列事件中，分析何者是正確的？
+  stem: 假設市場需求曲線有 $D_a$ 與 $D_b$ 兩條負斜率直線，其中 $D_b$ 位於 $D_a$ 的右側（代表需求增加時曲線由 $D_a$ 右移至 $D_b$）。請從下列事件中，分析何者是正確的？
   options:
   - label: A
     content: 當石油價格上漲，替代品「煤」的需求曲線會從原$D_{a}$右移到$D_{b}$
@@ -309,6 +309,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D有亂碼字元（需求曲）
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏需求曲線圖形位置說明並補充答案與解析）
+  explanation: 石油與煤互為替代品，當石油價格上漲時，消費者減少購買石油並轉而購買煤，使煤的「需求增加」，需求曲線由 $D_a$ 右移至 $D_b$，故(A)正確。(B)石油與汽車為互補品，油價上漲會使汽車需求減少（左移）；(C)經濟衰退時所得減少，劣等財的需求會增加（由 $D_a$ 右移至 $D_b$）；(D)鋼鐵與雞肉無關聯性，鋼鐵漲價不會使雞肉需求曲線右移。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e2_s1_9
   section: 1
   number: 9
@@ -1159,7 +1166,16 @@ questions:
     content: 甲乙丁戊
   - label: D
     content: 乙丙丁戊
-  group_stem: ◎小青對幸福國口罩市場進行調查訪問並分析供給、需求價量關係，如下表所示：
+  group_stem: '◎小青對幸福國口罩市場進行調查訪問並分析供給、需求價量關係，如下表所示：
+
+
+    | 價格（元） | 4 | 6 | 8 | 10 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 需求量（個） | 80 | 60 | 55 | 30 |
+
+    | 供給量（個） | 40 | 60 | 80 | 100 |'
   shared_asset: g2_34_35
   tags:
     unit:
@@ -1172,6 +1188,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹有亂碼字元（何者正）
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏口罩市場供需價量表格並補充答案與解析）
+  explanation: 由表可知市場均衡價格為 6 元、均衡數量為 60 個。(甲)價格 4 元時，需求量 80 大於供給量 40，出現超額需求，正確；(乙)價格由 4 元升至 8 元，買方願意購買數量減少且價格上升，消費者剩餘應減少而非增加，錯誤；(丙)價格 10 元時，供給量 100 大於需求量 30，出現超額供給，正確；(丁)價格由 6 元升至 8 元（成交量由 60 減至 55），因售價大幅提高，生產者剩餘增加，正確；(戊)價格由 10 元降至 8 元，成交量增且價格下降，消費者剩餘增加，正確。答案選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e2_s3_36
   section: 3
   number: 36

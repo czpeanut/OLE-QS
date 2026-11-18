@@ -942,15 +942,21 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 缺題組題幹與附圖
+    fixed_by: agent
+    fix_note: （人工修正：補充基因表現題組文字條件並補齊答案C與解析）
   difficulty: 2
+  group_stem: 細胞內基因表現流程示意圖中，細胞核內的DNA（甲）經轉錄作用形成mRNA，mRNA進入細胞質與核糖體結合，將胺基酸序列轉譯合成產物乙。請回答下列問題：
+  explanation: DNA經轉錄形成mRNA，再經核糖體轉譯將胺基酸合成多肽鏈（蛋白質），故產物乙為蛋白質，選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_高雄_新莊_自然_生物_g10s1e3_s2_30
   section: 2
   number: 30
   type: single
   page: 3
-  stem: '關於產物乙在生物體內能扮演的角色，何者<u>錯誤</u>？
-
-    題組B'
+  stem: 關於產物乙在生物體內能扮演的角色，何者<u>錯誤</u>？
   options:
   - label: A
     content: 組成生物體的結構
@@ -974,7 +980,15 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 缺題組題幹與附圖
+    fixed_by: agent
+    fix_note: （人工修正：補充基因表現題組文字條件、移除殘留標籤「題組B」並補齊答案D與解析）
   difficulty: 2
+  group_stem: 細胞內基因表現流程示意圖中，細胞核內的DNA（甲）經轉錄作用形成mRNA，mRNA進入細胞質與核糖體結合，將胺基酸序列轉譯合成產物乙。請回答下列問題：
+  explanation: 蛋白質（乙）可作為結構蛋白、酵素或激素（如胰島素），但生物的遺傳物質為核酸（DNA或RNA），並非蛋白質，故(D)錯誤，選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_高雄_新莊_自然_生物_g10s1e3_s2_31
   section: 2
   number: 31

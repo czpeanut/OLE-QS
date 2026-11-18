@@ -190,7 +190,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 一網球與牆面碰鐘如圖，若$v_{1}$＝40 m／s，$v_{2}$＝30 m／s，θ$_{1}$＝37°，θ$_{2}$＝53°，球與牆接觸時間為0. 01 s，則在接觸期間球之平均加速度量值為若干m／$s^{2}$？
+  stem: 一網球與牆面碰撞，入射速度 $v_{1}＝40$ m／s、方向與牆面夾角 $\theta_{1}＝37°$，反彈後沿相同切線方向前進，反彈速度 $v_{2}＝30$ m／s、方向與牆面夾角 $\theta_{2}＝53°$。若球與牆接觸時間為 0.01 s，則在接觸期間球之平均加速度量值為若干 m／$s^{2}$？
   options:
   - label: A
     content: '500'
@@ -214,9 +214,9 @@ questions:
       - 112.2
       - 597.5
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
+  - E
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S1-3-2
@@ -231,7 +231,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「碰鐘」應為「碰撞」之錯字，不影響作答
+    fixed_by: agent
+    fix_note: （人工修正：修正「碰鐘」錯字、補充入射與反彈角度定義並更正答案為E與解析）
   difficulty: 3
+  explanation: 沿牆面平行方向速度變化 $\Delta v_{\parallel}＝30\cos 53°－40\cos 37°＝18－32＝－14$ m／s；垂直牆面方向（取反彈方向為正）速度變化 $\Delta v_{\perp}＝30\sin 53°－(－40\sin 37°)＝24＋24＝48$ m／s。速度變化量值 $|\Delta\vec{v}|＝\sqrt{(-14)^{2}+48^{2}}＝50$ m／s，平均加速度量值 $a＝\frac{50}{0.01}＝5000$ m／$s^{2}$。故選(E)。
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['E']
 - id: doc_109_高雄_鳳山_自然_物理_選修物理I_g11s1e1_s1_6
   section: 1
   number: 6

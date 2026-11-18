@@ -27,7 +27,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 有一均匀材質的木箱立於粗糙地面，小明欲拉動此木箱，則以下列各方法恰拉動木箱時的施力大小順序為何？（箭頭代表施力方向）
+  stem: 有一均勻材質的木箱立於粗糙地面（靜摩擦係數為 0.2），小明欲拉動或推動此木箱，共有四種施力方式：$F_{1}$ 為水平向右拉、$F_{2}$ 為水平向右推、$F_{3}$ 為與水平面夾 30° 角斜向右下推、$F_{4}$ 為與水平面夾 30° 角斜向右上拉。則以這四種方式恰拉動或推動木箱時的施力大小順序為何？
   options:
   - label: A
     content: $F_{3}$＞$F_{1}$＝$F_{2}$＞$F_{4}$
@@ -57,7 +57,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺圖（無附圖檔案，題幹提及箭頭代表施力方向，無法判斷F1~F4方向）
+    fixed_by: agent
+    fix_note: （人工修正：補充四種施力方向文字條件（免附圖）並補全解析）
   difficulty: 3
+  explanation: $F_{1}$ 與 $F_{2}$ 均為水平施力，正向力等於物重 $mg$，故 $F_{1}＝F_{2}＝\mu_{s}mg$；$F_{3}$ 斜向下推會增加正向力，所需施力最大；$F_{4}$ 斜向上拉會減少正向力，所需施力最小。因此 $F_{3}＞F_{1}＝F_{2}＞F_{4}$。故選(A)。
 - id: doc_108_嘉義_嘉義高中_自然_物理_g10s1e2_s1_5
   section: 1
   number: 5
@@ -131,7 +134,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 在下列各圖中，(甲)、(丙)為磁針位於長直導線正下方，(乙)(丁)為磁針位在長直導線正上方，已知(甲)圖中電流為由北向南，則下列敘述何者<u>錯誤</u>？
+  stem: 在四個實驗裝置中，(甲)、(丙)為磁針位於水平長直導線正下方，(乙)、(丁)為磁針位於水平長直導線正上方（導線皆沿南北方向放置）。已知(甲)圖中電流由北向南且磁針 N 極向東偏，(乙)圖磁針 N 極向東偏，(丙)圖磁針 N 極向西偏，(丁)圖磁針 N 極向西偏。則下列敘述何者<u>錯誤</u>？
   options:
   - label: A
     content: 將(甲)圖的導線垂直提離磁針，則磁針N會逆時鐘轉
@@ -140,7 +143,7 @@ questions:
   - label: C
     content: (丙)圖導線的電流方向為由南向北
   - label: D
-    content: (丁)圖導線的電流方向為由南向北 (甲) (乙) (丙) (丁)
+    content: (丁)圖導線的電流方向為由南向北
   answer:
   - D
   answer_status: verified
@@ -159,7 +162,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺圖（無附圖檔案，題幹提及甲乙丙丁各圖，無法依圖作答）
+    fixed_by: agent
+    fix_note: （人工修正：補充四組實驗磁針偏轉條件、修正選項D冗餘文字並補全解析）
   difficulty: 3
+  explanation: 由安培右手定則：電流由南向北時，導線正上方磁場向東（對應(乙)圖）、正下方磁場向西（對應(丙)圖）；電流由北向南時，導線正上方磁場向西（對應(丁)圖）、正下方磁場向東（對應(甲)圖）。將(甲)圖導線垂直提離磁針，磁針受導線磁場減弱而轉回北方，即逆時鐘轉動，故(A)(B)(C)皆正確，(D)錯誤。故選(D)。
 - id: doc_108_嘉義_嘉義高中_自然_物理_g10s1e2_s1_8
   section: 1
   number: 8
@@ -305,7 +311,15 @@ questions:
   number: 13
   type: single
   page: 1
-  stem: 下列甲、乙、丙三線圈中，哪些會沿順時鐘方向轉動？
+  stem: '下列甲、乙、丙三個矩形線圈置於水平方向的均勻磁場中，從紙面正前方觀察，各線圈左、右兩側導線的電流與磁場方向分別為：
+
+    甲：磁場向右，左側導線電流垂直射出紙面、右側導線電流垂直射入紙面；
+
+    乙：磁場向右，左側導線電流垂直射入紙面、右側導線電流垂直射出紙面；
+
+    丙：磁場向左，左側導線電流垂直射入紙面、右側導線電流垂直射出紙面。
+
+    請問哪些線圈會沿順時鐘方向轉動？'
   options:
   - label: A
     content: 甲、乙
@@ -333,7 +347,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺圖（無附圖檔案，無法判斷甲乙丙三線圈電流與磁場方向）
+    fixed_by: agent
+    fix_note: （人工修正：補充三線圈電流與磁場方向文字敘述（免附圖）並補全解析）
   difficulty: 3
+  explanation: 由右手開掌定則判斷各邊受力方向：甲線圈左側受力向上、右側受力向下，形成順時鐘轉動；乙線圈左側受力向下、右側受力向上，形成逆時鐘轉動；丙線圈左側受力向上、右側受力向下，形成順時鐘轉動。故選(C)。
 - id: doc_108_嘉義_嘉義高中_自然_物理_g10s1e2_s1_14
   section: 1
   number: 14
@@ -409,18 +426,18 @@ questions:
   number: 21
   type: single
   page: 2
-  stem: 在水波槽實驗中，兩振動頻率相同，振幅相同的點波源相距d＝3λ（λ：波長），如圖所示為某瞬時之干涉狀態。圖中各線條為波峰，A、B、C、D是水面上的四個位置，依次發生哪種類型的干涉？
+  stem: 在水波槽實驗中，兩振動頻率相同、振幅與相位皆相同的點波源相距 $d＝3\lambda$（$\lambda$：波長）。水面上有 A、B、C、D 四個位置，其到兩點波源的波程差依序分別為 $0$、$\frac{1}{2}\lambda$、$\frac{3}{2}\lambda$、$2\lambda$，則 A、B、C、D 依序發生哪種類型的干涉？
   options:
   - label: A
-    content: (A)
+    content: 建設性干涉、建設性干涉、破壞性干涉、破壞性干涉
   - label: B
-    content: (B)
+    content: 破壞性干涉、建設性干涉、破壞性干涉、建設性干涉
   - label: C
-    content: (C)
+    content: 破壞性干涉、破壞性干涉、建設性干涉、建設性干涉
   - label: D
-    content: (D)
+    content: 建設性干涉、破壞性干涉、破壞性干涉、建設性干涉
   - label: E
-    content: (E)
+    content: 建設性干涉、破壞性干涉、建設性干涉、破壞性干涉
   assets:
   - key: s1_21_f1
     kind: figure
@@ -450,7 +467,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項內容僅為(A)~(E)，具體干涉類型可能附於圖檔或遺漏
+    fixed_by: agent
+    fix_note: （人工修正：補充四點波程差條件與完整選項文字（免附圖）並補全解析）
   difficulty: 3
+  explanation: 兩同相點波源之波程差為波長整數倍（$n\lambda$）時發生建設性干涉，為半波長奇數倍（$(n＋\frac{1}{2})\lambda$）時發生破壞性干涉。A（$0$）與 D（$2\lambda$）為建設性干涉，B（$\frac{1}{2}\lambda$）與 C（$\frac{3}{2}\lambda$）為破壞性干涉。故選(D)。
 - id: doc_108_嘉義_嘉義高中_自然_物理_g10s1e2_s1_22
   section: 1
   number: 22

@@ -185,12 +185,12 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 亮晶晶國政府為了保護國內的汽車工業，設定進口車的進口數量($\boxed{Q}$)，其圖形如下園所示，請問：下列敘述何者正確？
+  stem: 亮晶晶國政府為了保護國內的汽車工業，設定進口車的進口數量配額（$\boxed{Q}$）。在供需圖形中（縱軸為價格、橫軸為數量）：$A$ 為國內需求曲線的縱軸截距，$B$ 為國內供給曲線的縱軸截距，$E$ 為封閉經濟下的國內均衡點；實施進口配額後，國內價格高於世界價格，其價格線與縱軸交於 $G$ 點、與國內供給曲線交於 $Y$ 點、與國內需求曲線交於 $X$ 點（$H$ 為世界價格線與縱軸之交點）。請問：下列敘述何者正確？
   options:
   - label: A
     content: 消費者剩餘為△AXG
   - label: B
-    content: 生産者剩餘為△BYH
+    content: 生產者剩餘為△BYH
   - label: C
     content: 社會福利為△AEB
   - label: D
@@ -216,6 +216,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（如下園所示）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「如下園所示」與選項B「生産者」、補充配額供需圖形條件並補充答案與解析）
+  explanation: 依題述座標定義，實施進口配額後國內市場價格為 $G$ 點水準，需求曲線下方與價格線 $GX$ 上方所圍區域 $\triangle AXG$ 即為消費者剩餘，故(A)正確。(B)國內生產者剩餘應為 $\triangle BYG$，非 $\triangle BYH$；(C)$\triangle AEB$ 為封閉經濟之總剩餘，實施配額後仍有部分貿易利得（但低於自由貿易）；(D)進口配額會導致無謂損失。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s1_7
   section: 1
   number: 7
@@ -271,12 +278,12 @@ questions:
   number: 9
   type: single
   page: 2
-  stem: 桃園社會住宅「中路二號」已開放有需求的民眾來申請，但是申請社會住宅是有條件限制的，因此有「僧多粥少」的問題。若是市府為了保障租屋民眾的權益，規定所有的租屋市場租金價格為$P_{1}$。下圖為桃園市租屋市場之供需圖，以下述何者正確？
+  stem: 桃園社會住宅「中路二號」已開放有需求的民眾來申請，但是申請社會住宅是有條件限制的，因此有「僧多粥少」的問題。若是市府為了保障租屋民眾的權益，規定所有的租屋市場租金價格上限為 $P_{1}$（低於市場均衡租金 $P_{0}$；在租屋市場供需圖中，$C$ 為需求曲線的縱軸截距，$E$ 為均衡點）。以下敘述何者正確？
   options:
   - label: A
-    content: 設定$P_{1}$為價格上限後，消費者剩餘為圖中$CP_{0 }$E所夾的面積
+    content: 設定$P_{1}$為價格上限後，消費者剩餘為圖中$CP_{0}$E所夾的面積
   - label: B
-    content: 政府設定房租租金格上限，可改善租屋市場供需失衡問題
+    content: 政府設定房租租金價格上限，可改善租屋市場供需失衡問題
   - label: C
     content: 將價格訂在$P_{1}$可讓社會總剩餘提升，達到經濟效率最大境界
   - label: D
@@ -302,6 +309,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（以下述何者正確）、選項B錯字（失問題）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項B錯字、補充租金上限圖形條件並補充答案與解析）
+  explanation: 政府設定低於均衡價格 $P_0$ 的租金上限 $P_1$ 後，需求量將大於供給量（超額需求），易衍生黑市交易與搶租問題，故(D)正確。(A)$\triangle CP_0E$ 為自由市場均衡下之消費者剩餘，設上限後消費者剩餘為梯形而非該三角形；(B)租金上限會加劇供不應求的失衡現象；(C)價格管制會產生無謂損失，使社會總剩餘下降。答案選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s1_10
   section: 1
   number: 10
@@ -537,7 +551,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 臺灣的手搖杯飲料店被驗出茶飲中殘留農藥，由於手搖飲料店市場相當廳大，本地茶產量根本供不應求，所以有65％的茶葉要從國外進口。根據農委會統計，進口茶中近7成是從越南進口茶葉。下圖為越南的茶葉供需圖，$P^{*}$是原本的均衡價格，請問當其開始出口後，生產者剩餘可能為下列何者？
+  stem: 臺灣的手搖杯飲料店被驗出茶飲中殘留農藥，由於手搖飲料店市場相當龐大，本地茶產量根本供不應求，所以有65％的茶葉要從國外進口。根據農委會統計，進口茶中近7成是從越南進口茶葉。在越南的茶葉供需圖中，$P^{*}$ 是原本的國內均衡價格，此時消費者剩餘為「甲＋乙」、生產者剩餘為「丙＋丁」；當越南開始出口茶葉（國際價格高於 $P^{*}$，於 $P^{*}$ 與國際價格線之間、供給曲線左側與需求曲線右側所夾的出口新增剩餘為「戊」）後，越南的生產者剩餘應為下列何者？
   options:
   - label: A
     content: 甲
@@ -568,17 +582,24 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（相當廳大）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「相當廳大」、補充越南茶葉出口供需圖區域代號說明並補充答案與解析）
+  explanation: 當越南成為茶葉出口國後，國內茶葉價格由原均衡價格 $P^{*}$ 上漲至國際價格，國內消費者剩餘由「甲＋乙」縮減為「甲」，而生產者剩餘則由原本的「丙＋丁」擴大為「乙＋丙＋丁＋戊」（包含原屬消費者的「乙」以及出口新增的貿易利得「戊」）。答案選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s1_19
   section: 1
   number: 19
   type: single
   page: 3
-  stem: 下列哪一個選項的敘述符合圖中的概念？
+  stem: 附圖為供給曲線上某一點沿著同一條供給曲線向右上方移動之圖形（表示供給量增加），請問下列哪一個選項的敘述符合圖中的概念？
   options:
   - label: A
     content: 衛生紙的價格上漲，讓廠商提供更多的衛生紙來販售
   - label: B
-    content: 台灣人喜歡唱手搖飲，賣手搖飲的店家愈來愈多
+    content: 台灣人喜歡喝手搖飲，賣手搖飲的店家愈來愈多
   - label: C
     content: 智慧型手機的生產技術提升，使其供給增加
   - label: D
@@ -604,6 +625,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B有錯字（喜歡唱手搖飲）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B錯字「喜歡唱手搖飲」、補充缺漏圖形概念說明並補充答案與解析）
+  explanation: 沿著同一條供給曲線向右上方移動代表「供給量增加」，係因商品自身價格上漲所致。(A)衛生紙本身價格上漲使廠商提供更多數量，屬於供給量增加，符合圖意；(B)(C)皆屬於非價格因素導致整條供給曲線右移（「供給增加」）；(D)蘋果與橘子若為生產替代品，蘋果漲價反而會使橘子供給減少。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s1_20
   section: 1
   number: 20
@@ -740,7 +768,20 @@ questions:
   number: 24
   type: single
   page: 4
-  stem: 下表是叮叮國和噹噹國國內某種水果的市場供需賣料，請問：若進行此種水果的國際貿易，則兩國之間的國際均衡價格為何？
+  stem: '下表是叮叮國和噹噹國國內某種水果的市場供需資料，請問：若進行此種水果的國際貿易，則兩國之間的國際均衡價格為何？
+
+
+    | 價格（元） | 叮叮國需求量 | 叮叮國供給量 | 噹噹國需求量 | 噹噹國供給量 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 2000 | 80 | 20 | 100 | 10 |
+
+    | 4000 | 60 | 40 | 80 | 30 |
+
+    | 6000 | 40 | 60 | 60 | 40 |
+
+    | 8000 | 20 | 80 | 40 | 50 |'
   options:
   - label: A
     content: 2000元
@@ -771,6 +812,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（供需賣料）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「供需賣料」及亂碼、補充兩國水果供需表並補充答案與解析）
+  explanation: 由表計算兩國在各價格下的超額供給或超額需求：當價格為 6,000 元時，叮叮國供給量 60 大於需求量 40，可出口超額供給 20 單位；同時噹噹國需求量 60 大於供給量 40，需進口超額需求 20 單位。兩國進出口數量恰好相等，市場達成國際貿易均衡，故國際均衡價格為 6,000 元。答案選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s1_25
   section: 1
   number: 25
@@ -919,10 +967,10 @@ questions:
   number: 30
   type: single
   page: 4
-  stem: 公民老師在黑板上畫出一張生產可能曲線(PPC)如附圖，根據生產可能曲線的內涵，下列敘述何者正確？
+  stem: 公民老師在黑板上畫出一張凹向原點的生產可能曲線(PPC)，其中甲點位於曲線內部、乙點位於曲線上、丙點位於曲線外部。根據生產可能曲線的內涵，下列敘述何者正確？
   options:
   - label: A
-    content: 此生產可能曲線的邊際機成本呈現遞減情形
+    content: 此生產可能曲線的邊際機會成本呈現遞減情形
   - label: B
     content: 甲、乙、丙都是目前可生產出的組合
   - label: C
@@ -951,6 +999,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項A有錯字（邊際機成本）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A錯字「邊際機成本」、補充生產可能曲線各點位置說明並補充答案與解析）
+  explanation: (A)凹向原點的生產可能曲線代表邊際機會成本「遞增」；(B)位於曲線外部的丙點在現有資源與技術下無法生產；(C)位於曲線上的是乙點而非丙點；(D)颱風造成生產資源毀損，整體生產力下降，整條生產可能曲線會向內移動，正確。答案選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s1_31
   section: 1
   number: 31
@@ -1064,7 +1119,7 @@ questions:
   number: 35
   type: single
   page: 5
-  stem: 附圖中的A市場裡最可能有下列哪種情況發生？
+  stem: 在經濟循環圖中，A市場為連接廠商與家計單位的「商品市場」，則A市場裡最可能有下列哪種情況發生？
   options:
   - label: A
     content: 鞋廠僱用外籍移工
@@ -1096,6 +1151,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項B有亂碼字元（貸款給企業）
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏經濟循環圖A市場定義並補充答案與解析）
+  explanation: 商品市場是買賣最終商品與勞務的市場。(D)富二代向航空公司訂購飛機屬於最終商品交易，發生在商品市場。(A)僱用移工與(C)租用土地屬於生產要素市場；(B)銀行貸款與購買股票屬於金融市場。答案選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s2_36
   section: 2
   number: 36
@@ -1326,8 +1388,17 @@ questions:
   number: 44
   type: calc
   page: 5
-  stem: 若學校規定便當價格不可高於50元時，此時熱食部便當市場將產生下列何種變化？ (0)供不應求 (B)供過於求 (C)消費者剩餘增加 (D)生產者剩餘増加
-  group_stem: ◎附表為內壢高中熱食部不同便當價位的供給量和需求量表，請依附表回答下列問題
+  stem: 若學校規定便當價格不可高於50元時，此時熱食部便當市場將產生下列何種變化？
+  group_stem: '◎附表為內壢高中熱食部不同便當價位的供給量和需求量表，請依附表回答下列問題：
+
+
+    | 便當價格（元） | 40 | 50 | 60 | 70 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 需求量（個） | 300 | 250 | 200 | 150 |
+
+    | 供給量（個） | 100 | 150 | 200 | 250 |'
   shared_asset: g2_43_45
   tags:
     unit:
@@ -1340,6 +1411,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(A)標記誤植為(0)
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A誤植標記「(0)」與選項D錯字「増加」、補充便當供需表並補充答案與解析）
+  options:
+  - label: A
+    content: 供不應求
+  - label: B
+    content: 供過於求
+  - label: C
+    content: 消費者剩餘增加
+  - label: D
+    content: 生產者剩餘增加
+  explanation: 由表可知市場均衡價格為 60 元。當學校設定價格上限為 50 元（低於均衡價格）時，需求量（250個）大於供給量（150個），熱食部便當市場將產生「供不應求」（超額需求 100 個）的現象。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s2_45
   section: 2
   number: 45

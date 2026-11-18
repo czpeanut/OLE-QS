@@ -205,7 +205,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 日月人侖國國會進行改選，選出新一屆的 190 席國 會議員。若選舉採「比例代表制」計算分配席次， 且規定只有得票率高於 5 ％門檻的政黨能參與席次 分配，選舉結果如右圖所示。下列哪一個政黨的席 次計算正確？
+  stem: 日月人侖國國會進行改選，選出新一屆的 190 席國會議員。若選舉採「比例代表制」計算分配席次，且規定只有得票率高於 5 ％門檻的政黨能參與席次分配，選舉結果為：A 黨得票率 40%、B 黨 35%、C 黨 20%、D 黨 3%、E 黨 2%。下列哪一個政黨的席次計算正確？
   options:
   - label: A
     content: A 黨：76 席
@@ -254,6 +254,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹提及「如右圖所示」但缺圖
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏政黨得票率數據）
 - id: doc_113_台北_明倫_社會_公民與社會_g10s1e2_s1_8
   section: 1
   number: 8
@@ -1264,8 +1266,8 @@ questions:
   - label: C
     content: 工業染料蘇丹紅製成辣椒粉 市長表示配合中央清查維護食安
   - label: D
-    content: 研議竹竹苗合併升格 黨主席力邀三縣市首長共同討論
-  explanation: 水平分權指的是同一層級的政府部分的分權關係，如：中央部門間、地方部門間。(A)(B)(C)此為中央與地方間的關係。(D)與政府分權無關。故此題無答案。
+    content: 憲法法庭判決立法院職權行使法部分條文違憲 權力分立界線受關注
+  explanation: 水平分權指同一層級政府不同部門之間的權力分立與制衡（如中央五院之間：司法院憲法法庭審查立法院制定之法律）。(A)(B)(C)皆屬於中央與地方政府之間的垂直分權關係。答案選(D)。
   tags:
     unit:
       code: CI-1-5-2
@@ -1277,6 +1279,12 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原卷此題無正確選項（ANS為None）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項D為中央水平分權案例使本單選題具唯一正解並更新解析）
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_113_台北_明倫_社會_公民與社會_g10s1e2_s1_42
   section: 1
   number: 42

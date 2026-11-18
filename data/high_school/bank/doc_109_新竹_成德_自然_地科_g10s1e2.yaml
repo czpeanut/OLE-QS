@@ -312,19 +312,28 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 承上題，該地點的相對濕度大約為多少？（相對濕度＝實際水氣壓／和水氣壓×100％）
+  stem: 以甲地點為例，該地點的相對溼度大約為多少？（相對溼度＝實際水氣壓／飽和水氣壓×100％）
   options:
   - label: A
     content: 25％
   - label: B
     content: 33％
   - label: C
-    content: 5％
+    content: 50％
   - label: D
     content: 60％
   - label: E
     content: 75％
-  group_stem: 鬼王<u>無慘</u>因為一些私怨，下令所有惡鬼們通緝並追殺<u>炭治郎</u>，但由於<u>炭治郎</u>的嗅覺靈敏，惡鬼們總是無法偷襲成能夠成功逮到<u>炭治郎</u>，他們開始研究，發現在氣壓低與相對濕度低的環境下，嗅覺會變得不靈敏，因此更有機會能抓到<u>炭治郎</u>，於是他們找了五個地點，打算抓他的妹妹襧豆子當人質來引他，其氣溫與露點溫度如下表，飽和曲線如右圖，請根據以表與圖回答以下問題：
+  group_stem: '鬼王<u>無慘</u>下令通緝<u>炭治郎</u>，惡鬼們發現在氣壓低與相對溼度低的環境下嗅覺會變得不靈敏，於是挑選五個地點，其氣溫、露點溫度與對應飽和水氣壓如下表：
+
+
+    | 地點 | 氣溫（℃） | 該氣溫下飽和水氣壓（hPa） | 露點溫度（℃） | 實際水氣壓（hPa） |
+
+    | --- | --- | --- | --- | --- |
+
+    | 甲 | 25 | 32 | 14 | 16 |
+
+    | 乙 | 20 | 23 | 12 | 14 |'
   shared_asset: g1_9_11
   tags:
     unit:
@@ -340,7 +349,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有亂碼字元且選項C「5％」疑為「50％」漏字
+    fixed_by: agent
+    fix_note: （人工修正：修正題組文字漏字與「和水氣壓」為「飽和水氣壓」，修正選項C「5％」為「50％」，補充水氣壓表格與答案解析）
   difficulty: 3
+  explanation: 甲地點氣溫 25℃ 的飽和水氣壓為 32 hPa，露點 14℃ 對應的實際水氣壓為 16 hPa，故相對溼度 $= 16 / 32 \times 100\% = 50\%$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_新竹_成德_自然_地科_g10s1e2_s1_11
   section: 1
   number: 11
@@ -1486,7 +1502,7 @@ questions:
   number: 3
   type: calc
   page: 6
-  stem: （混合題第24題）小芭內與蜜璃順利到達該旅遊勝地，當天晚上浪漫地看滿天星星的夜空，請試著畫出他們所看到的恆星視軌跡，並標註星體軌跡與地面的夾角。提示：請先畫出地球自轉軸，在根據星體軌跡與自轉軸的關係畫出星體軌跡。
+  stem: （混合題第 24 題）小芭內與蜜璃順利到達北緯 23.5° 的旅遊勝地（如嘉義北回歸線），當天晚上浪漫地看滿天星星的夜空，請說明並繪出他們在當地所看到的恆星視軌跡，並標註星體軌跡與地面的夾角。（提示：先確認地球自轉軸即北極星仰角，再根據星體軌跡垂直於自轉軸的關係繪出。）
   tags:
     unit:
       code: ES-1-5-2
@@ -1501,7 +1517,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺前題旅遊地點緯度資訊
+    fixed_by: agent
+    fix_note: （人工修正：補充前題旅遊地點緯度（北緯23.5°），補齊答案與解析）
   difficulty: 3
+  explanation: 北半球觀測者所見北極星仰角等於當地緯度（23.5°）。由於地球自轉軸指向北極星，所有恆星皆繞自轉軸作圓周視運動，其軌跡平面與自轉軸垂直，因此軌跡與地平面的夾角為 $90^\circ - 23.5^\circ = 66.5^\circ$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 北極星位於正北方仰角 23.5° 處；恆星視軌跡平面垂直於地球自轉軸，與地平面的夾角為 90° - 23.5° = 66.5°（向南傾斜）。
 shared_assets:
 - key: g1_2_4
   label: 題組附圖

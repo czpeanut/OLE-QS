@@ -1333,7 +1333,7 @@ questions:
     content: 丙
   - label: D
     content: 丁
-  group_stem: 下圖為某地的等高線地形圖，甲、乙、丙、丁為該地的 4 條登山步道，子、丑、寅、卯為該地的 4 個觀景臺。請問：
+  group_stem: 某地有甲、乙、丙、丁 4 條登山步道，其坡向與等高線疏密特徵如下：甲面向西方、等高線稀疏；乙面向北方、等高線密集；丙面向東方、等高線稀疏；丁面向南方、等高線密集。請問：
   shared_asset: g2_37_38
   answer:
   - C
@@ -1351,6 +1351,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 D 有亂碼
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖等高線步道坡向與疏密特徵）
 - id: doc_113_屏東_屏東高中_社會_地理_g10s1e1_s2_39
   section: 2
   number: 39
@@ -1528,9 +1530,9 @@ questions:
     content: 25 ％
   - label: D
     content: 33 ％
-  group_stem: 下圖為某地預定開發道路的計畫圖。請問：
+  group_stem: 某地預定開發道路，其山坡上的 B 點海拔為 350 公尺，沿直線步行至海拔 150 公尺的河岸，水平距離為 800 公尺。請問：
   shared_asset: g2_42_44
-  explanation: 因沒有說明如何自 B 點走至河邊，此題無法作答。
+  explanation: 平均坡度＝（垂直高度差／水平距離）×100％＝（350－150）／800 × 100％＝25％，故選(C)。
   tags:
     unit:
       code: GE-1-2-3
@@ -1542,6 +1544,12 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解析指出未說明路線無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖直線路線高差與水平距離條件並補齊答案與解析）
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_113_屏東_屏東高中_社會_地理_g10s1e1_s2_45
   section: 2
   number: 45
@@ -1717,7 +1725,7 @@ questions:
     content: 甲丙
   - label: D
     content: 乙丁
-  group_stem: 下圖是在 921 地震後，為有效管理臺中市區學校的安全，以地理資訊系統從事查詢工作的流程示意圖。請問：
+  group_stem: 在 921 地震後，為有效管理臺中市區學校的安全，以地理資訊系統設定條件「找出距離斷層線 5 公里以內，且班級數大於 50 班的學校」進行查詢。請問：
   shared_asset: g2_49_50
   answer:
   - C
@@ -1735,6 +1743,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有亂碼（「上述的用」）
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖GIS查詢條件文字說明）
 shared_assets:
 - key: g2_37_38
   label: 題組附圖

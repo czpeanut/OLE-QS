@@ -302,7 +302,25 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 甲國的2019年國民所得相關資料如下（單位：億元）。請問甲國2019年的GDP為多少億元？
+  stem: '甲國的2019年國民所得相關資料如下表（單位：億元）。請問甲國2019年的GDP為多少億元？
+
+    | 項目 | 金額（億元） |
+
+    | --- | --- |
+
+    | 民間消費支出（C） | 70 |
+
+    | 國內投資毛額（I） | 25 |
+
+    | 政府購買支出（G） | 20 |
+
+    | 商品與勞務出口（X） | 30 |
+
+    | 商品與勞務進口（M） | 25 |
+
+    | 政府移轉性支付 | 10 |
+
+    | 本國人在國外生產要素所得 | 15 |'
   options:
   - label: A
     content: '110'
@@ -334,6 +352,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺統計表，無法計算數據
+    fixed_by: agent
+    fix_note: （人工修正：補充國民所得資料表，移除缺圖並補齊解答與解析）
+  explanation: 國內生產毛額（GDP）以支出面計算公式為：GDP ＝ C ＋ I ＋ G ＋ (X － M)。代入數值：70 ＋ 25 ＋ 20 ＋ (30 － 25) ＝ 120（億元）。「政府移轉性支付」未涉及當期商品或勞務生產，「本國人在國外生產要素所得」屬於GNI而非GDP，兩者皆不計入GDP。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_小港_社會_公民與社會_g11s2e3_s1_13
   section: 1
   number: 13

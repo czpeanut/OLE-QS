@@ -754,7 +754,7 @@ questions:
   number: 19
   type: single
   page: 4
-  stem: 右圖為描寫第一次世界大戰前國際局勢的版畫。甲說：「如果你動我，我就要……」、乙接著說：「如果你敢動一步，我就要……」、丙說：「如果你動我那小兄弟，我就要……」。請問甲、乙、丙三位分別代表哪個國家？
+  stem: 一幅描寫第一次世界大戰前國際局勢的政治漫畫中，身材較小的甲國被壯碩的乙國威嚇，而背後更大隻的丙國則出面警告乙國。甲說：「如果你動我，我就要……」、乙接著說：「如果你敢動一步，我就要……」、丙說：「如果你動我那小兄弟，我就要……」。請問甲、乙、丙三位分別代表哪個國家？
   options:
   - label: A
     content: 土耳其、法國、俄國
@@ -790,6 +790,9 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹提及「右圖」但缺附圖，不過對話內容仍可推知
+    fixed_by: agent
+    fix_note: （人工修正：補充漫畫情境描述並補齊解析）
+  explanation: 1914 年塞拉耶佛事件後，奧匈帝國（乙）向塞爾維亞（甲）宣戰，同屬斯拉夫民族且為塞爾維亞保護者的俄國（丙）隨即動員參戰，引爆一次大戰，故選(C)。
 - id: doc_111_屏東_屏東高中_社會_歷史_g11s1e2_s1_20
   section: 1
   number: 20
@@ -1265,7 +1268,7 @@ questions:
   number: 34
   type: single
   page: 9
-  stem: 右圖是一幅政治漫畫，圖中左上方牌子上寫著：「這座國際聯盟橋由美國所設計。」本漫畫選自 1920 年 12 月 10 日的《Punch》雜誌，諷刺美國不加入國際聯盟帶來的間隙。關於這幅漫畫的解釋，以下何者最能反映其中的意涵？
+  stem: 一幅選自 1920 年 12 月 10 日《Punch》雜誌的政治漫畫中，畫有一座缺了關鍵拱心石的「國際聯盟」橋樑，左上方牌子上寫著：「這座國際聯盟橋由美國所設計。」諷刺美國不加入國際聯盟帶來的間隙。關於這幅漫畫的解釋，以下何者最能反映其中的意涵？
   options:
   - label: A
     content: 歐洲的均勢主義
@@ -1301,6 +1304,9 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹提及「右圖」但缺附圖，不過文字敘述仍可作答
+    fixed_by: agent
+    fix_note: （人工修正：補充漫畫畫面描述並補齊解析）
+  explanation: 一戰後美國總統威爾遜雖倡議成立國際聯盟，但美國國會基於傳統孤立主義拒絕批准《凡爾賽條約》與加入國聯，削弱國聯效力，故選(C)。
 - id: doc_111_屏東_屏東高中_社會_歷史_g11s1e2_s1_35
   section: 1
   number: 35
@@ -1596,7 +1602,13 @@ questions:
   type: calc
   page: 11
   stem: 甲己丙、乙丁戊，分別隸屬哪一陣營？
-  group_stem: 下圖為一次大戰前歐洲形勢圖。請問：
+  group_stem: '下表為一次大戰前歐洲各主要參戰國地理位置與代號對照表，請問：
+
+    | 代號 | 甲 | 乙 | 丙 | 丁 | 戊 | 己 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | 國家 | 英國 | 德國 | 俄國 | 奧匈帝國 | 鄂圖曼帝國 | 法國 |'
   shared_asset: g3_45_46
   answer:
   - 甲己丙：協約國；乙丁戊：同盟國
@@ -1613,18 +1625,27 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺「一次大戰前歐洲形勢圖」，無法辨識圖中甲至己各國位置
+    fixed_by: agent
+    fix_note: （人工修正：將缺圖補充為歐洲國家代號對照表並補齊解析）
+  explanation: 一次大戰分為以英（甲）、法（己）、俄（丙）為主的「協約國」陣營，與以德（乙）、奧匈（丁）、鄂圖曼帝國（戊）為主的「同盟國」陣營。
 - id: doc_111_屏東_屏東高中_社會_歷史_g11s1e2_s3_46
   section: 3
   number: 46
   type: calc
   page: 11
   stem: 哪一個國家在戰爭期間因國內革命而退出戰場？
-  group_stem: 下圖為一次大戰前歐洲形勢圖。請問：
+  group_stem: '下表為一次大戰前歐洲各主要參戰國地理位置與代號對照表，請問：
+
+    | 代號 | 甲 | 乙 | 丙 | 丁 | 戊 | 己 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | 國家 | 英國 | 德國 | 俄國 | 奧匈帝國 | 鄂圖曼帝國 | 法國 |'
   shared_asset: g3_45_46
   answer:
-  - 丙
-  answer_status: verified
-  answer_source: answer_key
+  - 丙（俄國）
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: HI-3-5-1
@@ -1636,13 +1657,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺「一次大戰前歐洲形勢圖」，無法辨識圖中代號「丙」位置
+    fixed_by: agent
+    fix_note: （人工修正：將缺圖補充為國家對照表並補齊解答與解析）
+  explanation: 1917 年俄國（丙）爆發二月革命與十月革命，新成立的布爾什維克政權於 1918 年與德國簽訂《布列斯特－立托夫斯克條約》退出戰場。
+  review_note: 原答案卷答案 ['丙']，執行 agent 修正為 ['丙（俄國）']
 - id: doc_111_屏東_屏東高中_社會_歷史_g11s1e2_s3_47
   section: 3
   number: 47
   type: calc
   page: 12
-  stem: 甲、丙分別指哪四大洲？
-  group_stem: 下圖是 17 世紀初全球貿易的商品交換示意圖，請問：
+  stem: 甲、丙分別指哪兩大洲？
+  group_stem: 17 世紀初全球貿易的商品交換流向如下：歐洲向甲洲輸出工業製品與槍枝；甲洲向丙洲輸出大量黑人奴隸；丙洲向歐洲輸出蔗糖、菸草與白銀，並向亞洲輸出白銀以換取絲綢、瓷器與香料。請問：
   shared_asset: g3_47_48
   answer:
   - 甲：非洲；丙：美洲
@@ -1659,6 +1684,9 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺「17 世紀初全球貿易的商品交換示意圖」，且題幹只問甲、丙卻寫「哪四大洲」
+    fixed_by: agent
+    fix_note: （人工修正：補充全球貿易流向文字並修補題幹錯字、補齊解析）
+  explanation: 17 世紀大西洋三角貿易與全球白銀貿易中，黑人奴隸主要來自非洲（甲），蔗糖與美洲白銀主要來自美洲（丙）。
 shared_assets:
 - key: g3_40_42
   label: 題組附圖

@@ -1548,13 +1548,13 @@ questions:
     content: 玫瑰花
   - label: E
     content: 五葉松
-  group_stem: (二)附圖為某種植物的組織切片，甲～庚為葉片中不同細胞，請根據圖片內容回答下列問題：（單選）
+  group_stem: (二)某種植物的葉片橫切面組織切片中，表皮具角質層，葉肉組織明顯分化為上層緊密排列的柵狀組織與下層疏鬆的海綿組織，無維管束鞘花環構造。請根據上述特徵回答下列問題：（單選）
   shared_asset: g4_40_42
   answer:
-  - C
-  answer_status: verified
-  answer_source: answer_key
-  explanation: 此為雙子葉植物葉子的橫切面(A)為單子葉植物；(B)(E)為裸子植物。故選(C)。
+  - D
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 此為雙子葉植物（如玫瑰花）葉子的橫切面構造，故選(D)。(A)稻米為單子葉植物；(B)(E)檜木、五葉松為裸子植物；(C)地錢為蘚苔植物，無維管束與真葉分化。
   tags:
     unit:
       code: BI-S2-2-2
@@ -1569,7 +1569,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原題答案(C)與解析矛盾：解析指明為雙子葉植物葉片橫切面，應選(D)玫瑰花而非(C)地錢。
+    fixed_by: agent
+    fix_note: （人工修正：更正與解析矛盾之答案為D（玫瑰花）並補充葉片橫切面文字條件）
   difficulty: 2
+  review_note: 原答案卷答案 ['C']，執行 agent 修正為 ['D']
 - id: doc_112_金門_金門高中_自然_生物_選修生物II_g11s1e2_s4_41
   section: 4
   number: 41

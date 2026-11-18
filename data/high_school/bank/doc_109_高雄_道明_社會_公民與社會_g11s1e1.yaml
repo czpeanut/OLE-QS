@@ -335,16 +335,24 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 附表為園遊會生產紅茶與綠茶兩種商品的生產可能組合。有關該生產可能組合的敘述，下列何者正確？
+  stem: '下表為園遊會生產紅茶與綠茶兩種商品的生產可能組合（甲～戊）。有關該生產可能組合的敘述，下列何者正確？
+
+    | 生產組合 | 甲 | 乙 | 丙 | 丁 | 戊 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 紅茶（單位） | 0 | 1 | 2 | 3 | 4 |
+
+    | 綠茶（單位） | 12 | 11 | 9 | 6 | 0 |'
   options:
   - label: A
-    content: 生產第12單位綠茶的機會成本與生產第1～5單位綠茶的水準相同，顯示機會成本不變
+    content: 生產第12單位綠茶的機會成本與生產第1～6單位綠茶的水準相同，顯示機會成本不變
   - label: B
     content: 組合乙的紅茶、綠茶產量低於組合甲，故園遊會不會以組合乙生產
   - label: C
     content: 生產第4單位紅茶的機會成本，高於生產其他單位紅茶之水準
   - label: D
-    content: 組合丁的紅茶、綠茶總量高於組合戊，故組合丁的效率高於組合成
+    content: 組合丁的紅茶、綠茶總量高於組合戊，故組合丁的效率高於組合戊
   assets:
   - key: s1_13_f1
     kind: figure
@@ -367,6 +375,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D有錯字「組合成」
+    fixed_by: agent
+    fix_note: （人工修正：補充生產可能組合表並修正選項D錯字「組合戊」，移除缺圖並補齊解答與解析）
+  explanation: 由表計算每增產1單位紅茶所需放棄的綠茶：第1單位為1、第2單位為2、第3單位為3、第4單位為6，故生產第4單位紅茶的機會成本最高，(C)正確。(A)第12單位綠茶放棄1單位紅茶，第1～6單位綠茶共放棄1單位紅茶，水準不同；(B)組合乙紅茶產量高於組合甲；(D)同在生產可能曲線上各點效率相同。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_道明_社會_公民與社會_g11s1e1_s1_14
   section: 1
   number: 14
@@ -657,16 +672,24 @@ questions:
   number: 24
   type: single
   page: 4
-  stem: 附表是友志與友慧每小時製作雞蛋糕與紅豆餅的產量，請根據表中資訊判斷，下列敘述何者正確？
+  stem: '下表是友志與友慧每小時製作雞蛋糕與紅豆餅的產量，請根據表中資訊判斷，下列敘述何者正確？
+
+    | 生產者 | 雞蛋糕（個／小時） | 紅豆餅（個／小時） |
+
+    | --- | --- | --- |
+
+    | 友志 | 20 | 30 |
+
+    | 友慧 | 20 | 40 |'
   options:
   - label: A
     content: 友慧無論在生產雞蛋糕或紅豆餅均具有比較利益
   - label: B
-    content: 友志應專心生產紅豆餅，友慧專心生產雞糕較符合比較利益法則
+    content: 友志應專心生產紅豆餅，友慧專心生產雞蛋糕較符合比較利益法則
   - label: C
     content: 友志生產1個雞蛋糕的機會成本為3／2個紅豆餅
   - label: D
-    content: 反慧生產1個紅豆餅的機會成本為5／4個雞蛋糕
+    content: 友慧生產1個紅豆餅的機會成本為5／4個雞蛋糕
   assets:
   - key: s1_24_f1
     kind: figure
@@ -689,6 +712,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B有漏字「雞糕」、選項D有錯字「反慧」
+    fixed_by: agent
+    fix_note: （人工修正：補充友志與友慧產量表並修正選項B、D錯字，移除缺圖並補齊解答與解析）
+  explanation: 友志每小時可做20個雞蛋糕或30個紅豆餅，故生產1個雞蛋糕的機會成本為 30÷20 ＝ 3/2個紅豆餅，(C)正確。友志1個紅豆餅機會成本為2/3個雞蛋糕，友慧1個紅豆餅為1/2個雞蛋糕、1個雞蛋糕為2個紅豆餅，故友志應專做雞蛋糕、友慧專做紅豆餅，(A)(B)(D)皆誤。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_道明_社會_公民與社會_g11s1e1_s1_25
   section: 1
   number: 25
@@ -727,14 +757,22 @@ questions:
   number: 26
   type: single
   page: 4
-  stem: 甲、乙兩國原本沒有貿易，雙方各自生產布、米兩種產品，每單位價格如附表。假若兩國治談自由貿易，在不考慮其他情況下，可能會發生哪些情形？
+  stem: '甲、乙兩國原本沒有貿易，雙方各自生產布、米兩種產品，每單位價格如下表。假若兩國洽談自由貿易，在不考慮其他情況下，可能會發生哪些情形？
+
+    | 國家 | 布（每單位價格） | 米（每單位價格） |
+
+    | --- | --- | --- |
+
+    | 甲國 | 60元 | 80元 |
+
+    | 乙國 | 100元 | 50元 |'
   options:
   - label: A
     content: 甲國的布商會面臨倒閉危機
   - label: B
     content: 甲國的稻農會反對自由貿易政策
   - label: C
-    content: 乙國的布商會支援自由貿易政策
+    content: 乙國的布商會支持自由貿易政策
   - label: D
     content: 兩國布價米價均會因自由貿易而下降
   assets:
@@ -759,6 +797,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「治談」、選項C「支援」疑為支持之誤
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹與選項錯字並補充兩國布米價格表，移除缺圖並補齊解答與解析）
+  explanation: 貿易前甲國布價較低、乙國米價較低，開放自由貿易後，甲國將出口布、進口低價米；乙國將出口米、進口低價布。因此甲國稻農面臨進口米低價競爭而利益受損，會反對自由貿易政策，選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_道明_社會_公民與社會_g11s1e1_s1_27
   section: 1
   number: 27
@@ -825,7 +870,15 @@ questions:
   number: 29
   type: single
   page: 5
-  stem: 小明與小華每週生產香蕉與稻米的產量如附表，若兩國專業分工生產兩星期，會增加多少的產量？
+  stem: '小明與小華每週全力生產香蕉或芭樂的產量如下表。若分工前兩人各花1週生產香蕉、1週生產芭樂；分工後兩人依比較利益各自專業生產兩星期，總產量會增加多少？
+
+    | 生產者 | 每週全力生產香蕉（斤） | 每週全力生產芭樂（斤） |
+
+    | --- | --- | --- |
+
+    | 小明 | 10 | 6 |
+
+    | 小華 | 6 | 6 |'
   options:
   - label: A
     content: 香蕉增加6斤
@@ -857,12 +910,31 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹寫「稻米」，選項寫「芭樂」不一致
+    fixed_by: agent
+    fix_note: （人工修正：統一題幹與選項水果名稱為「芭樂」並補充產量表，移除缺圖並補齊解答與解析）
+  explanation: 分工前（各生產1週香蕉、1週芭樂）：合計產出香蕉 10＋6＝16斤、芭樂 6＋6＝12斤。計算機會成本：小明生產1斤香蕉放棄0.6斤芭樂，小華生產1斤香蕉放棄1斤芭樂，故小明具香蕉比較利益、小華具芭樂比較利益。分工後（小明做2週香蕉、小華做2週芭樂）：合計產出香蕉 20斤、芭樂 12斤，香蕉增加4斤，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_道明_社會_公民與社會_g11s1e1_s1_30
   section: 1
   number: 30
-  type: calc
+  type: single
   page: 5
-  stem: 附圖是甲乙丙丁四人生產包子與饅頭的生產可能曲線。依據附圖判斷，何者最適合生產包子？
+  stem: '下表是甲、乙、丙、丁四人全力生產包子或饅頭的最大產量（四人之生產可能曲線皆為直線）。依據比較利益法則判斷，何者最適合專業生產包子？
+
+    | 生產者 | 全部資源生產包子（個） | 全部資源生產饅頭（個） |
+
+    | --- | --- | --- |
+
+    | 甲 | 10 | 20 |
+
+    | 乙 | 15 | 15 |
+
+    | 丙 | 20 | 10 |
+
+    | 丁 | 12 | 18 |'
   assets:
   - key: s1_30_f1
     kind: figure
@@ -885,12 +957,28 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺選項內容（僅有題幹與附圖）
+    fixed_by: agent
+    fix_note: （人工修正：補充四人產量表與四選項並修正題型為單選，移除缺圖並補齊解答與解析）
+  options:
+  - label: A
+    content: 甲
+  - label: B
+    content: 乙
+  - label: C
+    content: 丙
+  - label: D
+    content: 丁
+  explanation: 比較四人每生產1個包子的機會成本：甲為2個饅頭、乙為1個饅頭、丙為0.5個饅頭、丁為1.5個饅頭。丙生產包子的機會成本最低，最具有比較利益，故最適合生產包子，選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_道明_社會_公民與社會_g11s1e1_s1_31
   section: 1
   number: 31
-  type: calc
+  type: single
   page: 5
-  stem: 甲、乙生產X、Y兩種產品，下列何種情況可能使兩者無法決定如何分工？
+  stem: 甲、乙兩人皆可生產X、Y兩種產品，下列何種情況可能使兩者無法決定如何分工？
   assets:
   - key: s1_31_f1
     kind: figure
@@ -913,6 +1001,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺選項內容（僅有題幹與附圖）
+    fixed_by: agent
+    fix_note: （人工修正：補充四選項並修正題型為單選，移除缺圖並補齊解答與解析）
+  options:
+  - label: A
+    content: 甲、乙兩人的生產可能曲線斜率完全相同（機會成本相同）
+  - label: B
+    content: 甲在X與Y兩種產品的產量上皆高於乙，但斜率不同
+  - label: C
+    content: 甲只會生產X產品，乙只會生產Y產品
+  - label: D
+    content: 甲的生產可能曲線較乙更靠近原點，但斜率不同
+  explanation: 比較利益分工的基礎在於雙方生產同一產品的「機會成本不同」。若兩人直線型生產可能曲線斜率完全相同，代表機會成本完全相等，即無法決定如何分工互利，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_道明_社會_公民與社會_g11s1e1_s1_32
   section: 1
   number: 32

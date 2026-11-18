@@ -83,6 +83,7 @@ def build() -> int:
     init_db()
     kept = total = 0
     patterns: list[tuple[str, str]] = []
+    fixed_ids: list[str] = []
     with get_session() as s:
         for y in sorted(BANK.glob("*.yaml")):
             d = yaml.safe_load(y.read_text())
@@ -101,6 +102,8 @@ def build() -> int:
                              "textbook": t.get("textbook"), "labeled_by": "agent"}
                 if t.get("pattern"):
                     patterns.append((q["id"], t["pattern"]["key"]))
+                if t.get("fixed_by"):
+                    fixed_ids.append(q["id"])
                 qs.append(q)
             if not qs:
                 continue
@@ -109,6 +112,8 @@ def build() -> int:
             kept += st["kept"]
             s.commit()
     con = sqlite3.connect(DB)
+    # 經人工修正的題：來源標「(修正)」（網站顯示 [台中 台中女中 109 (修正)]）
+    con.executemany("update question_source set relation = 'fixed' where question_id = ?", [(i,) for i in fixed_ids])
     con.executemany("insert into tag (question_id, axis, value, is_primary, labeled_by) "
                     "select ?, 'pattern', ?, 1, 'agent' where exists (select 1 from question where id = ? and status != 'rejected')",
                     [(q, p, q) for q, p in patterns])
@@ -121,13 +126,18 @@ def build() -> int:
     return 0
 
 
-def upload(workers: int = 4) -> int:
+def upload(only: str | None = None) -> int:
     url, H = env()
     url += "/rest/v1"
     s = requests.Session()
     con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
     con.row_factory = sqlite3.Row
     docs = [r["id"] for r in con.execute("select id from document")]
+    if only == "fixed":        # 只傳有修正題的卷（來源標記或內容有變）；其他卷不動
+        docs = [r[0] for r in con.execute("select distinct document_id from question q join question_source s "
+                                          "on s.question_id = q.id where s.relation = 'fixed'")]
+    q_docs = ",".join("'" + d.replace("'", "''") + "'" for d in docs)
+    print(f"這次傳 {len(docs)} 卷", flush=True)
     if any(int(r["grade"]) < 10 for r in con.execute("select grade from document")):
         sys.exit("暫存資料庫裡有國中卷，停止")
 
@@ -189,14 +199,14 @@ def upload(workers: int = 4) -> int:
             yield {k: (v.replace("\x00", "") if isinstance(v, str) else v) for k, v in d.items()}
 
     plan = [
-        ("document", "select * from document", False, (), (), "resolution=merge-duplicates,return=minimal"),
-        ("section", "select * from section", True, (), (), "return=minimal"),
-        ("question", "select * from question", False, ("answer", "uncertain_spans"), (), "resolution=merge-duplicates,return=minimal"),
-        ("option", "select * from option", True, (), (), "return=minimal"),
-        ("asset", "select * from asset", True, ("bbox", "used_by"), ("pending",), "return=minimal"),
-        ("question_source", "select * from question_source", True, (), (), "return=minimal"),
-        ("tag", "select * from tag", True, (), ("is_primary",), "return=minimal"),
-        ("question_search", "select question_id, body from question_fts", False, (), (), "resolution=merge-duplicates,return=minimal"),
+        ("document", f"select * from document where id in ({q_docs})", False, (), (), "resolution=merge-duplicates,return=minimal"),
+        ("section", f"select * from section where document_id in ({q_docs})", True, (), (), "return=minimal"),
+        ("question", f"select * from question where document_id in ({q_docs})", False, ("answer", "uncertain_spans"), (), "resolution=merge-duplicates,return=minimal"),
+        ("option", f"select * from option where question_id in (select id from question where document_id in ({q_docs}))", True, (), (), "return=minimal"),
+        ("asset", f"select * from asset where document_id in ({q_docs})", True, ("bbox", "used_by"), ("pending",), "return=minimal"),
+        ("question_source", f"select * from question_source where question_id in (select id from question where document_id in ({q_docs}))", True, (), (), "return=minimal"),
+        ("tag", f"select * from tag where question_id in (select id from question where document_id in ({q_docs}))", True, (), ("is_primary",), "return=minimal"),
+        ("question_search", f"select question_id, body from question_fts where question_id in (select id from question where document_id in ({q_docs}))", False, (), (), "resolution=merge-duplicates,return=minimal"),
     ]
     for table, sql, drop, jc, bc, prefer in plan:
         t0, n, batch = time.time(), 0, []
@@ -250,13 +260,13 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest="cmd", required=True)
     sp.add_parser("build")
-    sp.add_parser("upload")
+    u = sp.add_parser("upload"); u.add_argument("--only", choices=["fixed"], help="只傳有修正題的卷")
     f = sp.add_parser("figures"); f.add_argument("--assets", type=Path, required=True)
     a = ap.parse_args()
     if a.cmd == "build":
         return build()
     if a.cmd == "upload":
-        return upload()
+        return upload(a.only)
     return figures(a.assets)
 
 

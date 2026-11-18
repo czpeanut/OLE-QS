@@ -480,18 +480,20 @@ questions:
   number: 2
   type: single
   page: 2
-  stem: 「QQ彈」在t＝5的體積瞬時變化率為下列哪一選項。（單選題，4 分）
+  stem: 一球體「QQ彈」的半徑隨時間 $t$（秒）變化，已知在 $t=5$ 時其半徑為 $10$ 公分，且此時半徑正以每秒 $3$ 公分的速率縮小，試問「QQ彈」在 $t=5$ 的體積瞬時變化率為下列哪一選項？（單選題，4 分）
   options:
   - label: A
-    content: 每秒減少990π立方公分
+    content: 每秒減少 $990\pi$ 立方公分
   - label: B
-    content: 每秒增加990π立方公分
+    content: 每秒增加 $990\pi$ 立方公分
   - label: C
-    content: 每秒減少1110π立方公分
+    content: 每秒減少 $1110\pi$ 立方公分
   - label: D
-    content: 每秒增加1110π立方公分
+    content: 每秒增加 $1110\pi$ 立方公分
   - label: E
-    content: 每秒減少1200π立方公分 (F) 每秒增加1200π立方公分
+    content: 每秒減少 $1200\pi$ 立方公分
+  - label: F
+    content: 每秒增加 $1200\pi$ 立方公分
   tags:
     unit:
       code: MA-J1-2-1
@@ -506,7 +508,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(F)誤併入選項(E)中
+    fixed_by: agent
+    fix_note: （人工修正：分離選項 F 並補充球體半徑變化條件，補齊答案與解析）
   difficulty: 2
+  explanation: 球體體積 $V = \frac{4}{3}\pi r^3$，對時間 $t$ 微分得 $\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$。代入 $r=10, \frac{dr}{dt}=-3$ 得 $V'(5) = 4\pi(100)(-3) = -1200\pi$，即每秒減少 $1200\pi$ 立方公分，選 (E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - E
 - id: doc_110_台北_松山_數學_數甲_g12s1e2_s4_3
   section: 4
   number: 3

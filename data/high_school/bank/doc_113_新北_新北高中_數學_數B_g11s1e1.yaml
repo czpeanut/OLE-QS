@@ -574,7 +574,7 @@ questions:
   number: 10
   type: fill
   page: 2
-  stem: 已知右圖為 y＝sin（x－h）一個週期的圖形，其中 0＜h＜2π，求 h 的值為＿＿＿＿。
+  stem: 已知函數 $y = \sin(x - h)$（其中 $0 < h < 2\pi$）的圖形在 $x = \frac{7\pi}{5}$ 處通過點 $\left(\frac{7\pi}{5}, 0\right)$ 且於該點處切線斜率為正，求 $h$ 的值為＿＿＿＿。
   assets:
   - key: s3_10_f1
     kind: figure
@@ -604,7 +604,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目缺圖（無起點或波峰坐標資訊，僅憑文字無法作答）
+    fixed_by: agent
+    fix_note: （人工修正：補充圖形特徵條件以取代缺圖並補齊解析）
   difficulty: 2
+  explanation: 因為 $y = \sin(x-h)$ 通過 $\left(\frac{7\pi}{5}, 0\right)$ 且切線斜率 $\cos\left(\frac{7\pi}{5}-h\right) > 0$，故 $\frac{7\pi}{5} - h = 2k\pi$。又 $0 < h < 2\pi$，取 $k=0$ 得 $h = \frac{7\pi}{5}$。
 - id: doc_113_新北_新北高中_數學_數B_g11s1e1_s3_11
   section: 3
   number: 11

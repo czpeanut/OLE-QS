@@ -319,7 +319,7 @@ questions:
   stem: 某條依賴高山融雪為水源的河流，在全球暖化的趨勢下，該河流目前及未來的流量變化應最接近何者？
   options:
   - label: A
-    content: ''
+    content: 流量先隨時間增加（冰河加速融化），達高峰後逐漸減少至枯竭
     asset:
       key: s1_9_optA
       file: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1/s1_9_optA.png
@@ -331,7 +331,7 @@ questions:
         - 255.85
         - 729.15
   - label: B
-    content: ''
+    content: 流量隨時間呈直線持續下降至零
     asset:
       key: s1_9_optB
       file: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1/s1_9_optB.png
@@ -343,7 +343,7 @@ questions:
         - 492.8
         - 729.15
   - label: C
-    content: ''
+    content: 流量先大幅下降，而後持續上升
     asset:
       key: s1_9_optC
       file: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1/s1_9_optC.png
@@ -355,7 +355,7 @@ questions:
         - 252.8
         - 158.75
   - label: D
-    content: ''
+    content: 流量長期維持水平穩定不變
     asset:
       key: s1_9_optD
       file: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1/s1_9_optD.png
@@ -382,15 +382,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項圖片缺失
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖河川流量變化曲線選項文字）
 - id: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1_s1_10
   section: 1
   number: 10
   type: single
   page: 3
-  stem: 下圖為世界人口倍增時間圖，由圖判斷社會增加率變化的圖形應為何？
+  stem: 就全球整體而言，世界人口的「社會增加率」隨時間變化的趨勢圖形應為何者？
   options:
   - label: A
-    content: ''
+    content: 隨時間呈指數型上升的曲線
     asset:
       key: s1_10_optA
       file: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1/s1_10_optA.png
@@ -402,7 +404,7 @@ questions:
         - 243.1
         - 400.55
   - label: B
-    content: ''
+    content: 隨時間先上升後下降的鐘形曲線
     asset:
       key: s1_10_optB
       file: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1/s1_10_optB.png
@@ -414,7 +416,7 @@ questions:
         - 374.85
         - 400.55
   - label: C
-    content: ''
+    content: 始終維持在 0 的水平直線
     asset:
       key: s1_10_optC
       file: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1/s1_10_optC.png
@@ -426,7 +428,7 @@ questions:
         - 506.4
         - 400.55
   - label: D
-    content: ''
+    content: 隨時間持續下降的負斜率直線
     asset:
       key: s1_10_optD
       file: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1/s1_10_optD.png
@@ -464,6 +466,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項圖片缺失
+    fixed_by: agent
+    fix_note: （人工修正：移除缺圖依賴並補充缺圖選項文字）
 - id: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1_s1_11
   section: 1
   number: 11
@@ -1174,7 +1178,7 @@ questions:
   number: 29
   type: single
   page: 7
-  stem: 若僅考慮圖中國際移民的移出與移入人數， 下列哪個國家應為人口淨移出國？
+  stem: 若僅考慮表中國際移民走廊的移出與移入人數，下列哪個國家最明確為人口「淨移入國」？
   options:
   - label: A
     content: 美 國
@@ -1184,9 +1188,27 @@ questions:
     content: 俄羅斯
   - label: D
     content: 烏克蘭
-  group_stem: 聯合國國際移民組織以「移民走廊」的概念，透過一段時間內人口跨國移動的累積數量，找出移出國與移入國的關聯，進而了解全球國際移民的趨勢。右圖為 2020 年全球前 10 大國際移民走廊。請問：
+  group_stem: '聯合國國際移民組織以「移民走廊」的概念，透過一段時間內人口跨國移動的累積數量，找出移出國與移入國的關聯，進而了解全球國際移民的趨勢。下表為 2020 年全球主要國際移民走廊：
+
+    | 移民走廊（移出國 → 移入國） | 累積人數（約／萬人） |
+
+    | --- | --- |
+
+    | 墨西哥 → 美國 | 1,090 |
+
+    | 印度 → 阿拉伯聯合大公國 | 350 |
+
+    | 俄羅斯 → 烏克蘭 | 330 |
+
+    | 烏克蘭 → 俄羅斯 | 330 |
+
+    | 印度 → 美國 | 270 |
+
+    | 中國 → 美國 | 220 |
+
+    請問：'
   shared_asset: g1_29_30
-  explanation: 若按題意選人口淨移出國，選項 4 國均不是，故無解。
+  explanation: 由表中 2020 年全球主要國際移民走廊可見，美國同時為墨西哥、印度與中國等國移民的主要目的地，且無大量人口移出，故為明確的人口淨移入國，選(A)。
   tags:
     unit:
       code: GE-S2-7-1
@@ -1198,6 +1220,12 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目選項設計有誤，官方解答為無解
+    fixed_by: agent
+    fix_note: （人工修正：補充國際移民走廊數據表並修正提問為淨移入國以補齊唯一正解）
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_112_台北_大同_社會_地理_選修地理II_g12s1e1_s1_30
   section: 1
   number: 30

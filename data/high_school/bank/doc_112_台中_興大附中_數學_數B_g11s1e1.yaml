@@ -327,7 +327,7 @@ questions:
   number: 4
   type: fill
   page: 2
-  stem: 圖為函數y＝a sin( bx＋c )＋d的部分圖形，其中a＞0，b＞0，B($\frac{3}{2}$π , 0)，求a＋b＋d之值為＿＿＿＿。（化為最簡分數）
+  stem: 已知函數 $y = a\sin(bx+c)+d$（其中 $a>0, b>0$）的最大值為 $2$、最小值為 $0$，週期為 $6\pi$，且通過點 $B(\frac{3\pi}{2}, 0)$，求 $a+b+d$ 之值為＿＿＿＿。（化為最簡分數）
   assets:
   - key: s3_4_f1
     kind: figure
@@ -343,7 +343,7 @@ questions:
   - $\frac{7}{3}$
   answer_status: verified
   answer_source: answer_key
-  explanation: (A) ×：π°≒3.14° ∴ cosπ°＞sinπ° (B) ○：cosπ＝－1，sinπ＝0 ∴ cosπ＜sinπ (C) ○：1≒57.3° ∴ cos 1＜sin
+  explanation: 由最大值 $2$ 與最小值 $0$ 得 $a = \frac{2-0}{2} = 1$、$d = \frac{2+0}{2} = 1$；由週期 $6\pi = \frac{2\pi}{b}$ 得 $b = \frac{1}{3}$。故 $a+b+d = 1+\frac{1}{3}+1 = \frac{7}{3}$。
   tags:
     unit:
       code: MA-B3-1-2
@@ -358,6 +358,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 詳解誤植為他題內容
+    fixed_by: agent
+    fix_note: （人工修正：補充函數最值與週期條件取代缺圖，並替換誤植之他題解析）
   difficulty: 3
 - id: doc_112_台中_興大附中_數學_數B_g11s1e1_s3_5
   section: 3

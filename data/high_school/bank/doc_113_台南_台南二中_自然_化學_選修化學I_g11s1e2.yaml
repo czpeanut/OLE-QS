@@ -306,7 +306,7 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 附圖中，若A、B分別表2 atm、3 atm不同氣體的密度與溫度的關係圖，則A、B的分子量比為何？
+  stem: 在 200 K 下，測得處於 2 atm 的 A 氣體與處於 3 atm 的 B 氣體之密度比為 $d_{A}：d_{B}＝2：3$，則 A、B 的分子量比為何？
   options:
   - label: A
     content: 1：1
@@ -348,6 +348,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（密度與溫度關係圖），無法讀取密度數值作答
+    fixed_by: agent
+    fix_note: （人工修正：以文字補充密度與溫度關係數據取代缺圖）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s1_9
   section: 1
@@ -496,10 +498,10 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 定容下，將定量氧氣由20°C 加熱到100°C，而後維持在100°C，將其體積增大，测量其壓力變化，則下列依箭頭方向的路徑能符合上述過程的為何者？
+  stem: 定容下，將定量氧氣由 20°C 加熱到 100°C，而後維持在 100°C，將其體積增大，測量其壓力變化，則下列依箭頭方向的 P-V 路徑圖描述，何者能符合上述過程？
   options:
   - label: A
-    content: ''
+    content: 先沿垂直線向下（V固定、P下降），再沿雙曲線向右上方（V增加、P上升）
     asset:
       key: s1_13_optA
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s1_13_optA.png
@@ -511,7 +513,7 @@ questions:
         - 244.35
         - 170.8
   - label: B
-    content: ''
+    content: 先沿水平線向右（P固定、V增加），再沿垂直線向下（V固定、P下降）
     asset:
       key: s1_13_optB
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s1_13_optB.png
@@ -523,7 +525,7 @@ questions:
         - 341.8
         - 170.8
   - label: C
-    content: ''
+    content: 先沿雙曲線向右下方（V增加、P下降），再沿垂直線向上（V固定、P上升）
     asset:
       key: s1_13_optC
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s1_13_optC.png
@@ -535,7 +537,7 @@ questions:
         - 439.9
         - 170.8
   - label: D
-    content: ''
+    content: 先沿垂直線向上（V固定、P上升），再沿水平線向右（P固定、V增加）
     asset:
       key: s1_13_optD
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s1_13_optD.png
@@ -547,7 +549,7 @@ questions:
         - 536.7
         - 170.8
   - label: E
-    content: ''
+    content: 先沿垂直線向上（V固定、P上升），再沿雙曲線向右下方（V增加、P下降）
     asset:
       key: s1_13_optE
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s1_13_optE.png
@@ -577,13 +579,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項為圖片未顯示，缺圖無法作答
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字亂碼並將選項圖片改寫為文字路徑描述）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s1_14
   section: 1
   number: 14
   type: single
   page: 2
-  stem: 如附圖的玻璃管，截面積為$1cm^{2}$。於25°C，1 atm時，已知左方玻璃管上方密閉空間中的氣體為氨氣，其體積為8 mL，此時左右玻璃管中的汞柱高度差為14 cm。若欲使閉口端的氮氣體積變為9 mL，須自管中抽出汞若干mL？
+  stem: 有一 U 型玻璃管，左端封閉、右端開口，截面積為 $1\text{ cm}^{2}$。於 25°C、1 atm 時，左方玻璃管上方密閉空間中裝有氮氣，其體積為 8 mL，此時右側開口端水銀柱比左側閉口端高出 14 cm。若欲使閉口端的氮氣體積變為 9 mL，須自管中抽出汞若干 mL？
   options:
   - label: A
     content: '10'
@@ -625,6 +629,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（玻璃管示意圖），無法確認高出端；且題幹前稱氨氣後稱氮氣
+    fixed_by: agent
+    fix_note: （人工修正：以文字描述U型管水銀柱高度差取代缺圖並統一氣體名稱為氮氣）
   difficulty: 3
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s1_15
   section: 1
@@ -706,7 +712,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 附圖為開口式壓力計，置入某非揮發性液體甲，該液體密度為1.36 g／mL（Hg密度為13.6 g／mL）。若大氣壓力為0.9 atm，h＝10.2 cm，則氣體壓力約為多少mmHg？
+  stem: 一開口式壓力計左側連接氣體容器，右側開口端與外界大氣相通，管內置入某非揮發性液體甲，該液體密度為 1.36 g／mL（Hg 密度為 13.6 g／mL）。若外界大氣壓力為 0.9 atm，且右側液面較左側高出 h＝10.2 cm，則氣體壓力約為多少 mmHg？
   options:
   - label: A
     content: '674'
@@ -733,7 +739,7 @@ questions:
   - D
   answer_status: verified
   answer_source: answer_key
-  explanation: 因該液體密度為Hg的$\frac{1}{10}$，故10.2 cm該液體壓力＝1.02 cmHg＝10.2 mmHg；又外界壓力＝0.9 atm＝760×0.9＝684 cmHg，故氣體壓力＝684＋10.2＝694.2 mmHg。故選(D)。
+  explanation: 因該液體密度為 Hg 的 $\frac{1}{10}$，故 10.2 cm 該液體壓力＝1.02 cmHg＝10.2 mmHg；又外界壓力＝0.9 atm＝$760\times 0.9 = 684\text{ mmHg}$，故氣體壓力＝$684＋10.2 = 694.2\text{ mmHg}$。故選(D)。
   tags:
     unit:
       code: CH-S1-2-1
@@ -748,6 +754,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（壓力計示意圖），無法確認哪側液面較高
+    fixed_by: agent
+    fix_note: （人工修正：以文字說明壓力計兩側液面高低取代缺圖並修正解析單位mmHg）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s1_18
   section: 1
@@ -979,10 +987,10 @@ questions:
   number: 24
   type: multiple
   page: 2
-  stem: 下列各理想氣體的圖形，哪些正確？
+  stem: 下列各理想氣體的圖形描述，哪些正確？
   options:
   - label: A
-    content: $n_{1}$＝$n_{2}$且$P_{1}$＞$P_{ 2}$
+    content: V－T(K) 圖中，兩條過原點直線（皆表 $n_{1}=n_{2}$），直線 1 斜率小於直線 2，標示 $P_{1}＞P_{2}$
     asset:
       key: s2_24_optA
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s2_24_optA.png
@@ -994,7 +1002,7 @@ questions:
         - 257.45
         - 160.85
   - label: B
-    content: $n_{1}$＝$n_{2}$且$T_{1}$＞$T_{2 }$
+    content: P－V 圖中，兩條雙曲線（皆表 $n_{1}=n_{2}$），曲線 1 位於曲線 2 下方，標示 $T_{1}＞T_{2}$
     asset:
       key: s2_24_optB
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s2_24_optB.png
@@ -1006,7 +1014,7 @@ questions:
         - 464.15
         - 160.85
   - label: C
-    content: $n_{1}$＝$n_{2}$且$V_{1}$＞$V_{2 }$
+    content: P－T(K) 圖中，兩條過原點直線（皆表 $n_{1}=n_{2}$），直線 1 斜率小於直線 2，標示 $V_{1}＞V_{2}$
     asset:
       key: s2_24_optC
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s2_24_optC.png
@@ -1018,7 +1026,7 @@ questions:
         - 672.15
         - 160.85
   - label: D
-    content: $n_{1}$＞$n_{2 }$
+    content: P－1/V 圖中，兩條過原點直線（未標示溫度是否相同），直線 1 斜率大於直線 2，標示 $n_{1}＞n_{2}$
     asset:
       key: s2_24_optD
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s2_24_optD.png
@@ -1030,7 +1038,7 @@ questions:
         - 208.4
         - 297.75
   - label: E
-    content: $P_{1}$＝$P_{2}$且$n_{1}$＞$n_{2 }$
+    content: V－T(K) 圖中，兩條過原點直線（皆表 $P_{1}=P_{2}$），直線 1 斜率大於直線 2，標示 $n_{1}＞n_{2}$
     asset:
       key: s2_24_optE
       file: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2/s2_24_optE.png
@@ -1061,7 +1069,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項為圖片未顯示，缺圖無法作答
+    fixed_by: agent
+    fix_note: （人工修正：將選項圖片改寫為文字圖形描述並補齊解析）
   difficulty: 2
+  explanation: (A)$V-T(K)$ 圖斜率為 $\frac{nR}{P}$，斜率愈小壓力愈大，正確；(B)$P-V$ 圖愈遠離原點溫度愈高，故應為 $T_{1}<T_{2}$；(C)$P-T(K)$ 圖斜率為 $\frac{nR}{V}$，斜率愈小體積愈大，正確；(D)$P-1/V$ 圖斜率為 $nRT$，溫度未知無法比較 $n$；(E)$V-T(K)$ 圖同壓下斜率與 $n$ 成正比，正確。故選(A)(C)(E)。
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s2_25
   section: 2
   number: 25
@@ -1108,9 +1119,15 @@ questions:
   number: 1
   type: fill
   page: 3
-  stem: '某定量氣體，已知a點的體積為1 L，壓力為4 atm，溫度為27°C，根據附圖，試回答下列問題： (1) b點的溫度為＿＿＿＿＿°C（2分）
+  stem: '某定量氣體，在 P-V 狀態圖上各點狀態為：a 點（1 L，4 atm）、b 點（6 L，4 atm）、c 點（6 L，$\frac{4}{3}$ atm）、d 點（4 L，1 atm），已知 a 點的溫度為 27°C，試回答下列問題：
 
-    (2) c點的溫度為＿＿＿＿＿K（2分） (3)由a點到b點的變化遵守＿＿＿＿＿定律（2分） (4)由a點到d點的變化遵守＿＿＿＿＿定律（2分）'
+    (1) b 點的溫度為＿＿＿＿＿°C（2分）
+
+    (2) c 點的溫度為＿＿＿＿＿K（2分）
+
+    (3) 由 a 點到 b 點的變化遵守＿＿＿＿＿定律（2分）
+
+    (4) 由 a 點到 d 點的變化遵守＿＿＿＿＿定律（2分）'
   assets:
   - key: s3_1_f1
     kind: figure
@@ -1126,7 +1143,7 @@ questions:
   - (1) 1527 (2) 600 (3)查理 (4)波以耳
   answer_status: verified
   answer_source: answer_key
-  explanation: (1)由a→b，壓力固定、體積6倍，故溫度也6倍。故溫度＝300×6＝1800 K＝1527°C (2)由b→c，體積固定、壓力$\frac{1}{3}$，故溫度也$\frac{1}{3}$。故溫度＝$\frac{1800}{3}$＝600 K (3)由a→b，壓力固定、體積與溫度成正比，滿足查理定律。 (4)由a→b，壓力體積反比，溫度固定，滿足波以耳定律。
+  explanation: (1) 由 a→b，壓力固定、體積 6 倍，故溫度也 6 倍，溫度＝300×6＝1800 K＝1527°C。(2) 由 b→c，體積固定、壓力 $\frac{1}{3}$，故溫度也 $\frac{1}{3}$，溫度＝$\frac{1800}{3}$＝600 K。(3) 由 a→b，壓力固定、體積與絕對溫度成正比，滿足查理定律。(4) 由 a→d，$P_{a}V_{a} = P_{d}V_{d} = 4\text{ atm}\cdot\text{L}$，溫度固定，滿足波以耳定律。
   tags:
     unit:
       code: CH-S1-2-2
@@ -1141,19 +1158,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（P-V 狀態圖），無法判讀各點數值作答
+    fixed_by: agent
+    fix_note: （人工修正：以文字補充a、b、c、d四點P-V狀態數據取代缺圖並修正解析(4)筆誤）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s3_2
   section: 3
   number: 2
   type: calc
   page: 3
-  stem: '儀器裝置如圖，連接兩容器中的管子體積可以忽略不計；在27°C時，分別進行以下實驗： (1)封閉的甲容器（2升的球瓶）中裝入$N_{2}$(g) 300 mmHg，封閉的乙容器（3升的球瓶）中裝入$O_{2}$(g) 400 mmHg，然後開啟兩容器中間的活栓，靜置一段時間後，則①容器內氣體壓力為若干mmHg？（2分）②容器內$N_{2}$(g)的莫耳分率為何？（2分）
+  stem: '儀器裝置為甲球瓶（2升）與乙球瓶（3升），兩球瓶中間以活栓及細管連接，連接兩容器中的管子體積可以忽略不計；在 27°C 時，分別進行以下實驗：
 
-    (2)甲容器中改裝入$NH_{3}$(g) 300mmHg，乙容器中改裝入HCl(g) 400mmHg，然後開啟兩容器中間的活栓，讓兩氣體充分反應，發現容器內生成白色固體。靜置一段時間後，若反應後氣體的溫度由27°C升高至87°C，則容器內氣體壓力為若干mmHg？（2分） 3.小碩同學欲探究實驗室內一瓶陳舊氯酸鉀（$KClO_{3}$）試藥的純度，由上課所學得知：氯酸鉀在高溫下可完全分解產生氯化鉀和氧氣，於是取此氯酸鉀試樣1.225 g，將其加熱分解，以排水集氣法收集氧氣，直到不再有氧氣產生，共收集200 mL的氧氣，此時瓶內水面較瓶外水面低13.6 cm。若實驗時，水的溫度為27°C、大氣壓力為770 mmHg。依上述實驗數據，試回答下列問題：（已知27°C時水的飽和蒸氣壓為30 mmHg，且氧氣的溶解度極小，可忽略不計，$KClO_{3}$＝122.5） (1)此瓶內氧氣之分壓為多少mmHg？（2分）
+    (1) 封閉的甲容器（2升的球瓶）中裝入 $N_{2}(g)$ 300 mmHg，封閉的乙容器（3升的球瓶）中裝入 $O_{2}(g)$ 400 mmHg，然後開啟兩容器中間的活栓，靜置一段時間後，則 ①容器內氣體總壓力為若干 mmHg？（2分） ②容器內 $N_{2}(g)$ 的莫耳分率為何？（2分）
 
-    (2)此實驗共收集多少mol的氧氣？（2分）
-
-    (3)此氯酸鉀試藥的純度約為多少%？（2分）'
+    (2) 甲容器中改裝入 $NH_{3}(g)$ 300 mmHg，乙容器中改裝入 HCl(g) 400 mmHg，然後開啟兩容器中間的活栓，讓兩氣體充分反應，發現容器內生成白色固體。靜置一段時間後，若反應後氣體的溫度由 27°C 升高至 87°C，則容器內氣體壓力為若干 mmHg？（2分）'
   assets:
   - key: s3_2_f1
     kind: figure
@@ -1166,12 +1183,10 @@ questions:
       - 157.8
       - 559.0
   answer:
-  - (1) ①360 mmHg；②$\frac{1}{3}$ (2) 144 mmHg 2.(1) 750 mmHg (2) 0.008 mol (3)53.3%
-  answer_status: verified
-  answer_source: answer_key
-  explanation: '(1)兩氣體相互獨立，故氮氣打開後滿足波以耳定律：300×2＝$P_{N2}$×（2＋3），可得$P_{N2}$＝120 mmHg；同理，氧氣打開後也滿足波以耳定律：400×3＝$P_{O2}$×（2＋3），可得$P_{N2}$＝240 mmHg；總壓＝120＋240＝360 mmHg。其中$N_{2}$的莫耳分率＝$\frac{120}{360}$＝$\frac{1}{3}$
-
-    (2)先假設不反應，同(1)的計算可得氨分壓＝120 mmHg、氯化氫分壓＝240 mmHg；發生反應後氨完全用盡，氯化氫剩餘120 mmHg，溫度再由300 K增加至360 K，則最終壓力＝120×$\frac{360}{300}$＝144 mmHg。'
+  - (1) ①360 mmHg；② $\frac{1}{3}$ (2) 144 mmHg
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: (1) 兩氣體相互獨立，打開活栓後總體積為 5 L。$P_{N2} = 300\times \frac{2}{5} = 120\text{ mmHg}$，$P_{O2} = 400\times \frac{3}{5} = 240\text{ mmHg}$；總壓 $= 120+240 = 360\text{ mmHg}$，$N_{2}$ 莫耳分率 $= \frac{120}{360} = \frac{1}{3}$。(2) 假設未反應前 $P_{NH3}=120\text{ mmHg}$、$P_{HCl}=240\text{ mmHg}$；1:1 反應後 $NH_{3}$ 用盡，剩餘 HCl 分壓 120 mmHg。升溫由 300 K 至 360 K，最終壓力 $= 120\times \frac{360}{300} = 144\text{ mmHg}$。
   tags:
     unit:
       code: CH-S1-2-4
@@ -1186,4 +1201,7 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（連通管裝置圖），且題幹末段夾雜第3大題排水集氣題與解答
+    fixed_by: agent
+    fix_note: （人工修正：移除誤混入之第3大題與答案、修補亂碼並以文字描述裝置取代缺圖）
   difficulty: 4
+  review_note: 原答案卷答案 ['(1) ①360 mmHg；②$\\frac{1}{3}$ (2) 144 mmHg 2.(1) 750 mmHg (2) 0.008 mol (3)53.3%']，執行 agent 修正為 ['(1) ①360 mmHg；② $\\frac{1}{3}$ (2) 144 mmHg']

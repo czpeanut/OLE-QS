@@ -1388,7 +1388,7 @@ questions:
   number: 43
   type: single
   page: 4
-  stem: 關於複式顯微鏡的操作請根據圖中所提供的標示，判斷下列5名學生的操作何者正確？
+  stem: 關於複式顯微鏡的操作，圖中標示：1為目鏡、3為旋轉盤（物鏡轉換器）、4為載物臺、7為粗調節輪、9為光圈、10為反光鏡。請判斷下列5名學生的操作何者正確？
   options:
   - label: A
     content: 小臻：扳動圖中的3轉換物鏡倍率
@@ -1414,7 +1414,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹提及圖中標示（1、3、4、7、9、10），但缺附圖致無法對應構造作答
+    fixed_by: agent
+    fix_note: （人工修正：補充複式顯微鏡構造標示文字條件並補齊答案與解析）
   difficulty: 2
+  explanation: (A)應扳動旋轉盤（3）切換不同倍率的物鏡，不可直接握住物鏡轉動，正確；(B)目鏡應使用拭鏡紙擦拭；(C)光圈與反光鏡用於調節亮度而非移動玻片；(D)高倍物鏡觀察時應使用細調節輪；(E)玻片標本應先在桌面染色蓋上蓋玻片後再置於載物臺上觀察。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_高雄女中_自然_生物_g10s1e1_s4_45
   section: 4
   number: 45

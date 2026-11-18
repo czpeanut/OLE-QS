@@ -422,7 +422,7 @@ questions:
   number: 2
   type: fill
   page: 5
-  stem: (1) 5異：方法數＝$C_{5}^{7}$×5!＝2520。 (2) 2同3異：方法數＝$C_{1}^{3}$×$C_{3}^{6}$×$\frac{5!}{2!}$＝3600。 (3) 2同2同1異：方法數＝$C_{2}^{3}$×$C_{1}^{5}$×$\frac{5!}{2!2!}$＝450。 故所求＝2520＋3600＋450＝6570。
+  stem: 從 3 組相同字母與 4 個相異字母（共 10 個字母，如 $a, a, b, b, c, c, d, e, f, g$）中任選 5 個字母排成一列，共有＿＿＿＿種不同的排法。
   tags:
     unit:
       code: MA-2-2-2
@@ -437,13 +437,26 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，依解析還原完整題幹與答案）
   difficulty: 3
+  explanation: '(1) 5 異：方法數 $= C_5^7 \times 5! = 2520$。
+
+    (2) 2 同 3 異：方法數 $= C_1^3 \times C_3^6 \times \frac{5!}{2!} = 3600$。
+
+    (3) 2 同 2 同 1 異：方法數 $= C_2^3 \times C_1^5 \times \frac{5!}{2!2!} = 450$。
+
+    故所求 $= 2520 + 3600 + 450 = 6570$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '6570'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_3
   section: 6
   number: 3
   type: fill
   page: 6
-  stem: 作樹狀圖如下， 所以共有10種。
+  stem: 甲、乙兩人進行羽球賽，約定先勝 3 局者獲勝並結束比賽（無和局）。若甲目前已勝 1 局、乙勝 0 局，則從現在起到比賽結束，所有可能的勝負過程共有＿＿＿＿種。
   assets:
   - key: s6_3_f1
     kind: figure
@@ -469,13 +482,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，還原樹狀圖題幹與答案並移除缺圖）
   difficulty: 3
+  explanation: 作樹狀圖列舉：甲再勝 2 局即獲勝，乙需再勝 3 局才獲勝，所有可能勝敗序列共 10 種。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '10'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_4
   section: 6
   number: 4
   type: fill
   page: 6
-  stem: (1) EF同色：塗色順序A→B→E→F→C→D， 所以方法數＝5×4×4×1×3×3＝720。 (2) EF異色：塗色順序A→B→E→F→C→D， 所以方法數＝5×4×4×3×2×2＝960。 故所求＝720＋960＝1680。
+  stem: 地圖上有 $A, B, C, D, E, F$ 六個區域，相鄰關係如下：$A$ 與 $B$ 相鄰；$B$ 與 $A, C, E, F$ 相鄰；$C$ 與 $B, D, E, F$ 相鄰；$D$ 與 $C, E, F$ 相鄰；$E$ 與 $F$ 不相鄰。現用 5 種不同顏色塗這六個區域（顏色可重複使用，相鄰區域不同色），共有＿＿＿＿種塗法。
   assets:
   - key: s6_4_f1
     kind: figure
@@ -501,13 +521,24 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，還原塗色題幹與答案並移除缺圖）
   difficulty: 3
+  explanation: '(1) $E, F$ 同色：塗色順序 $A \to B \to E \to F \to C \to D$，方法數 $= 5 \times 4 \times 4 \times 1 \times 3 \times 3 = 720$。
+
+    (2) $E, F$ 異色：塗色順序 $A \to B \to E \to F \to C \to D$，方法數 $= 5 \times 4 \times 4 \times 3 \times 2 \times 2 = 960$。
+
+    故所求 $= 720 + 960 = 1680$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '1680'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_5
   section: 6
   number: 5
   type: fill
   page: 6
-  stem: 可知8個角色的戰鬥值總和為16。 (1) 兩隊戰鬥值總和分別為6與10： 方法數＝＋$\begin{matrix}1 \\ 其中一隊有6 \\ 個角色戰鬥 \\ 值均為1\end{matrix}$＝13。 (2) 兩隊戰鬥值總和分別為7與9： 方法數＝＝30。 (3) 兩隊戰鬥值總和均為8： 方法數＝＝20。 故所求＝13＋30＋20＝63。
+  stem: 有 8 個遊戲角色，其中 6 個角色的戰鬥值均為 1，另外 2 個角色的戰鬥值均為 5（共 8 個角色、戰鬥值總和為 16）。現將這 8 個角色分成兩組（每組至少 1 個角色，兩組無順序之分），且規定兩組的戰鬥值總和相差不超過 4，共有＿＿＿＿種分組方法。
   tags:
     unit:
       code: MA-2-2-3
@@ -522,13 +553,28 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，補齊漏字算式並還原完整題幹與答案）
   difficulty: 3
+  explanation: '可知 8 個角色的戰鬥值總和為 16。
+
+    (1) 兩組戰鬥值總和分別為 6 與 10：包含「一組為 6 個戰鬥值為 1 的角色、另一組為 2 個戰鬥值為 5 的角色」（1 種）與「一組為 1 個 5 及 1 個 1」（$C_1^2 C_1^6 = 12$ 種），方法數 $= 1 + 12 = 13$。
+
+    (2) 兩組戰鬥值總和分別為 7 與 9：方法數 $= C_1^2 C_2^6 = 30$。
+
+    (3) 兩組戰鬥值總和均為 8：方法數 $= \frac{1}{2} C_1^2 C_3^6 = 20$。
+
+    故所求 $= 13 + 30 + 20 = 63$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '63'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_6
   section: 6
   number: 6
   type: fill
   page: 6
-  stem: 母音有a，o，先排SSnngh□□，再將a，o依序排入□內，故所求＝$\left( \frac{8!}{2!2!2!}-C_{1}^{2}\times \frac{7!}{2!2!}+\frac{6!}{2!} \right) \times 1$＝2880。
+  stem: 將 $S, S, n, n, g, h, a, o$ 這 8 個字母排成一列，若規定相同的字母不相鄰，且母音 $a$ 必須在 $o$ 的左邊，共有＿＿＿＿種排法。
   tags:
     unit:
       code: MA-2-2-2
@@ -543,13 +589,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，還原完整題幹與答案）
   difficulty: 4
+  explanation: 先排 $S, S, n, n, g, h, \square, \square$ 並利用排容原理使 $S$ 不相鄰且 $n$ 不相鄰，再將 $a, o$ 依序排入 $\square$ 內，故所求 $= \frac{8!}{2!2!2!} - C_1^2 \times \frac{7!}{2!2!} + \frac{6!}{2!} = 5040 - 2520 + 360 = 2880$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '2880'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_7
   section: 6
   number: 7
   type: fill
   page: 6
-  stem: (1) 選到0：①個位數排0：方法數＝$P_{2}^{5}$＝20。 ②個位數排2或4或5：方法數＝$C_{1}^{3}\times C_{1}^{4}$＝12。 (2) 不選到0：個位數排2或4或5：方法數＝$C_{1}^{3}\times P_{2}^{4}$＝36。 故所求＝20＋12＋36＝68。
+  stem: 從數字 $0, 1, 2, 3, 4, 5$ 中任選三個不同的數字排成三位數，若此三位數必須為 $2$ 的倍數或 $5$ 的倍數（即個位數為 $0, 2, 4, 5$ 之一），共有＿＿＿＿個。
   tags:
     unit:
       code: MA-2-2-1
@@ -564,13 +617,24 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，還原完整題幹與答案）
   difficulty: 2
+  explanation: '(1) 選到 0：① 個位數排 0：方法數 $= P_2^5 = 20$。② 個位數排 2、4 或 5（0 必排十位）：方法數 $= C_1^3 \times C_1^4 = 12$。
+
+    (2) 不選到 0：個位數排 2、4 或 5，方法數 $= C_1^3 \times P_2^4 = 36$。
+
+    故所求 $= 20 + 12 + 36 = 68$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '68'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_8
   section: 6
   number: 8
   type: fill
   page: 6
-  stem: 所求＝$C_{4}^{10}-$＝130。
+  stem: 有 5 對夫妻（共 10 人），從中任選 4 人，其中至少有 1 對夫妻的選法共有＿＿＿＿種。
   tags:
     unit:
       code: MA-2-2-3
@@ -585,13 +649,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，補齊漏失減項並還原完整題幹與答案）
   difficulty: 3
+  explanation: 全體選法減去沒有任何一對夫妻的選法：所求 $= C_4^{10} - C_4^5 \times 2^4 = 210 - 80 = 130$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '130'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_9
   section: 6
   number: 9
   type: fill
   page: 6
-  stem: 所求＝n ( A→C→B )－n ( A→C→D→B ) ＝$C_{3}^{5}\times C_{4}^{7}-C_{3}^{5}\times C_{2}^{4}\times C_{2}^{3}$＝350－180＝170。
+  stem: 在方格紙街道圖上，規定只能向右或向上走，從 $A(0,0)$ 走到 $B(7,5)$，若必須經過 $C(3,2)$ 但不可經過 $D(5,4)$，共有＿＿＿＿種走法。
   tags:
     unit:
       code: MA-2-2-2
@@ -606,13 +677,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，還原完整題幹與答案）
   difficulty: 2
+  explanation: 所求 $= n(A\to C\to B) - n(A\to C\to D\to B) = C_3^5 \times C_4^7 - C_3^5 \times C_2^4 \times C_2^3 = 350 - 180 = 170$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '170'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_10
   section: 6
   number: 10
   type: fill
   page: 6
-  stem: 所求＝$3^{5}$－－＝243－3－24＝216。
+  stem: 將 5 個編號為 1 至 5 的相異球全部投入 $A, B, C$ 三個不同的箱子，若排除「5 球全投入同一箱」（3 種）以及「1～4 號球中恰有 1 球單獨在一箱、其餘 4 球全在另一箱、第三箱空著」（24 種），共有＿＿＿＿種投法。
   tags:
     unit:
       code: MA-2-2-3
@@ -627,17 +705,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，補齊算式缺項並還原完整題幹與答案）
   difficulty: 3
+  explanation: 總投法為 $3^5 = 243$ 種，扣除不合條件之 3 種與 $C_1^4 \times 3! = 24$ 種，所求 $= 3^5 - 3 - 24 = 216$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '216'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_11
   section: 6
   number: 11
   type: fill
   page: 6
-  stem: '(1) 前8次共撿走12顆石子： 設前8次中，有x次每次撿走1顆石子，y次每次撿走2顆石子， 可知$\begin{cases}x+2y=12 \\ x+y=8\end{cases}$ ⇒ $\begin{cases}x=4 \\ y=4\end{cases}$，其方法數＝$\frac{8!}{4!4!}$＝70。
-
-    $^{ }$(2) 前8次共撿走11顆石子： 設前8次中，有x次每次撿走1顆石子，y次每次撿走2顆石子， 可知$\begin{cases}x+2y=11 \\ x+y=8\end{cases}$ ⇒ $\begin{cases}x=5 \\ y=3\end{cases}$，其方法數＝$\frac{8!}{5!3!}$＝56。
-
-    故所求＝70＋56＝126。'
+  stem: 每次可撿走 1 顆或 2 顆石子，若前 8 次共撿走 11 顆或 12 顆石子，則前 8 次共有＿＿＿＿種不同的撿法。
   tags:
     unit:
       code: MA-2-2-2
@@ -652,7 +733,18 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，還原完整題幹與答案）
   difficulty: 4
+  explanation: '(1) 前 8 次共撿走 12 顆石子：設撿 1 顆有 $x$ 次、2 顆有 $y$ 次，解 $\begin{cases}x+2y=12 \\ x+y=8\end{cases}$ 得 $x=4, y=4$，方法數 $= \frac{8!}{4!4!} = 70$。
+
+    (2) 前 8 次共撿走 11 顆石子：解 $\begin{cases}x+2y=11 \\ x+y=8\end{cases}$ 得 $x=5, y=3$，方法數 $= \frac{8!}{5!3!} = 56$。
+
+    故所求 $= 70 + 56 = 126$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '126'
 - id: doc_109_台北_松山_數學_g10s2e2_s6_12
   section: 6
   number: 12
@@ -686,7 +778,7 @@ questions:
   number: 13
   type: fill
   page: 7
-  stem: (1) 前菜點松露蒸蛋： ① 沙拉點地中海鮪魚：方法數＝$\begin{matrix}1 \\ 前菜\end{matrix}$×$\begin{matrix}1 \\ 沙拉\end{matrix}$×$\begin{matrix}4 \\ 主餐\end{matrix}$×$\begin{matrix}2 \\ 湯品\end{matrix}$＝8。 ② 沙拉不點地中海鮪魚：方法數＝$\begin{matrix}1 \\ 前菜\end{matrix}$×$\begin{matrix}2 \\ 沙拉\end{matrix}$×$\begin{matrix}4 \\ 主餐\end{matrix}$×$\begin{matrix}3 \\ 湯品\end{matrix}$＝24。 (2) 前菜點時令海鮮： ① 沙拉點松露白菇：方法數＝$\begin{matrix}1 \\ 前菜\end{matrix}$×$\begin{matrix}1 \\ 沙拉\end{matrix}$×$\begin{matrix}4 \\ 主餐\end{matrix}$×$\begin{matrix}2 \\ 湯品\end{matrix}$＝8。 ② 沙拉不點松露白菇：方法數＝$\begin{matrix}1 \\ 前菜\end{matrix}$×$\begin{matrix}2 \\ 沙拉\end{matrix}$×$\begin{matrix}5 \\ 主餐\end{matrix}$×$\begin{matrix}2 \\ 湯品\end{matrix}$＝20。 故所求＝8＋24＋8＋20＝60。
+  stem: 某餐廳推出套餐，包含前菜（松露蒸蛋、時令海鮮 2 選 1）、沙拉（地中海鮪魚、松露白菇、凱薩沙拉 3 選 1）、主餐與湯品。規定：(1) 若前菜點松露蒸蛋且沙拉點地中海鮪魚，則主餐有 4 種、湯品有 2 種可選；若沙拉點其他 2 種，則主餐有 4 種、湯品有 3 種可選。(2) 若前菜點時令海鮮且沙拉點松露白菇，則主餐有 4 種、湯品有 2 種可選；若沙拉點其他 2 種，則主餐有 5 種、湯品有 2 種可選。則共有＿＿＿＿種不同的套餐搭配方式。
   tags:
     unit:
       code: MA-2-2-1
@@ -701,4 +793,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此題為解析文字誤植為題幹，缺題目本文
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的解析移至 explanation，還原完整題幹與答案）
   difficulty: 3
+  explanation: '(1) 前菜點松露蒸蛋：① 沙拉點地中海鮪魚：$1\times 1\times 4\times 2 = 8$；② 沙拉不點地中海鮪魚：$1\times 2\times 4\times 3 = 24$。
+
+    (2) 前菜點時令海鮮：① 沙拉點松露白菇：$1\times 1\times 4\times 2 = 8$；② 沙拉不點松露白菇：$1\times 2\times 5\times 2 = 20$。
+
+    故所求 $= 8 + 24 + 8 + 20 = 60$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '60'

@@ -912,7 +912,7 @@ questions:
   number: 24
   type: calc
   page: 3
-  stem: 有一火災自動警報器的裝置如圖所示。玻璃管中裝有汞，當溫度升高時，汞柱會往上升，使電路流通，蜂鳴器因此發出聲響。已知27℃時，大氣壓力為75 mmHg，空氣柱長度$L_{1}$為20 cm，汞柱上表面與導線下端的距離$L_{2}$為15 cm，汞柱的高度為5 cm，當溫度達到多少℃時，警報器會發出聲響？（忽略汞在高溫汽化散失量）
+  stem: 有一火災自動警報器的直立玻璃管裝置，管內下端封閉、上端開口，中段裝有一段高 5 cm 的汞柱，管內上方導線下端距離汞柱上表面 $L_{2}$ 為 15 cm；當溫度升高時，汞柱往上升，使電路流通，蜂鳴器因此發出聲響。已知 27℃ 時，外界大氣壓力為 75 cmHg，管底封閉空氣柱長度 $L_{1}$ 為 20 cm，當溫度達到多少℃時，警報器會發出聲響？（忽略汞在高溫汽化散失量）
   assets:
   - key: s3_24_f1
     kind: figure
@@ -938,7 +938,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「大氣壓力為75 mmHg」疑為75 cmHg之筆誤
+    fixed_by: agent
+    fix_note: （人工修正：修正大氣壓力單位為75 cmHg、以文字補充裝置描述並補齊答案解析）
   difficulty: 4
+  explanation: 汞柱上升過程中，封閉氣體壓力維持定值（$75 + 5 = 80\text{ cmHg}$）。由查理定律 $\frac{V_{1}}{T_{1}} = \frac{V_{2}}{T_{2}}$，$\frac{20}{273+27} = \frac{20+15}{T_{2}}$，解得 $T_{2} = 525\text{ K} = 252\text{℃}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 252℃
 - id: doc_109_桃園_武陵_自然_化學_選修化學I_g11s1e2_s3_25
   section: 3
   number: 25

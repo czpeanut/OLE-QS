@@ -1007,7 +1007,7 @@ questions:
   number: 25
   type: multiple
   page: 3
-  stem: 抽取人類血液加入抗凝血劑後，使其自然沉澱分離二部分，如附圖所示，圖中甲與乙之比較，下列哪些正確？
+  stem: 抽取人類血液加入抗凝血劑後，經離心或靜置使其沉澱分離成二部分：上層淡黃色液體為甲，下層暗紅色沉澱物為乙。關於甲與乙之比較，下列哪些正確？
   options:
   - label: A
     content: 甲中含有運輸氧氣之血紅素，乙中含有運輸氧氣之紅血球
@@ -1019,9 +1019,6 @@ questions:
     content: 甲總體積大於乙總體積
   - label: E
     content: 甲呈淡黃色，乙呈紅色
-  group_stem: '(22-23)繪製某生的心搏週期與心電圖，如下圖所示，圖(二)中甲、乙、丙代表不同的階段，圖(二)中P、QRS、T代表不同波段。試根據此圖回答下列問題。
-
-    圖(一)心搏週期圖 (二)心電圖'
   assets:
   - key: s2_25_f1
     kind: figure
@@ -1056,6 +1053,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤附前題組之group_stem
+    fixed_by: agent
+    fix_note: （人工修正：移除誤附前題組之group_stem與附圖，補充甲、乙文字條件）
   difficulty: 2
 - id: doc_111_台中_豐原_自然_生物_選修生物III_g11s1e2_s2_26
   section: 2
@@ -1741,14 +1740,14 @@ questions:
   stem: 根據附圖，在何時可以聽到心音？
   options:
   - label: A
-    content: w和x
+    content: W和X
   - label: B
-    content: w和y
+    content: W和Y
   - label: C
-    content: y和z
+    content: Y和Z
   - label: D
-    content: y和z
-  group_stem: 下圖顯示二次心搏週期中，左心房、左心室和大動脈內的壓力變化圖，圖中V、W、X、Y、Z分別代表不同的時間點。請參考題圖回答下列問題：
+    content: V和X
+  group_stem: 下圖顯示二次心搏週期中，左心房、左心室和大動脈內的壓力變化圖，一次完整心搏週期歷時0.8秒；圖中W、X、Y、Z分別代表一個心搏週期中連續的四個關鍵時間點：W為心室開始收縮使左心室壓超過左心房壓（房室瓣關閉）、X為左心室壓超過主動脈壓（半月瓣開啟）、Y為心室舒張初期左心室壓低於主動脈壓（半月瓣關閉）、Z為左心室壓低於左心房壓（房室瓣開啟）。請參考上述條件回答下列問題：
   shared_asset: g3_41_43
   answer:
   - B
@@ -1769,15 +1768,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C與D內容重複
+    fixed_by: agent
+    fix_note: （人工修正：補充心搏週期時間點文字條件、修正選項D重複內容）
   difficulty: 3
 - id: doc_111_台中_豐原_自然_生物_選修生物III_g11s1e2_s3_43
   section: 3
   number: 43
   type: single
   page: 5
-  stem: '此人的心跳速率為多少？
-
-    (四)'
+  stem: 此人的心跳速率為多少？
   options:
   - label: A
     content: 48次／分
@@ -1787,7 +1786,7 @@ questions:
     content: 60次／分
   - label: D
     content: 75次／分
-  group_stem: 下圖顯示二次心搏週期中，左心房、左心室和大動脈內的壓力變化圖，圖中V、W、X、Y、Z分別代表不同的時間點。請參考題圖回答下列問題：
+  group_stem: 下圖顯示二次心搏週期中，左心房、左心室和大動脈內的壓力變化圖，一次完整心搏週期歷時0.8秒；圖中W、X、Y、Z分別代表一個心搏週期中連續的四個關鍵時間點：W為心室開始收縮使左心室壓超過左心房壓（房室瓣關閉）、X為左心室壓超過主動脈壓（半月瓣開啟）、Y為心室舒張初期左心室壓低於主動脈壓（半月瓣關閉）、Z為左心室壓低於左心房壓（房室瓣開啟）。請參考上述條件回答下列問題：
   shared_asset: g3_41_43
   answer:
   - D
@@ -1808,6 +1807,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末有「(四)」殘字
+    fixed_by: agent
+    fix_note: （人工修正：移除題幹末尾殘字「(四)」並補充心搏週期時間文字條件）
   difficulty: 2
 - id: doc_111_台中_豐原_自然_生物_選修生物III_g11s1e2_s3_45
   section: 3

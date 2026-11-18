@@ -291,19 +291,17 @@ questions:
   number: 8
   type: single
   page: 2
-  stem: '位於甲地觀察星空，下列四顆恆星哪一顆一年四季夜間均看不到（恆星之赤經、赤緯資料如下）？
-
-    ◎ 下圖為地球繞行太陽相對黃道十二宮位置圖，假設每個黃道上星座視角均為30度，且春分點位於雙魚座中心，依據此圖回答以下問題：'
+  stem: 位於甲地（北極點）觀察星空，下列四顆恆星哪一顆一年四季夜間均看不到？
   options:
   - label: A
-    content: (A)
+    content: 赤經 6 h、赤緯 +45°
   - label: B
-    content: (B)
+    content: 赤經 12 h、赤緯 -20°
   - label: C
-    content: (C)
+    content: 赤經 18 h、赤緯 +10°
   - label: D
-    content: (D)
-  group_stem: ◎ 下圖為四地區觀察星空運行軌跡示意圖，圖中實虛線為星體運行軌跡。甲圖可見北極星位於天頂；乙圖北極星位於北方地平線上，星體運行剖面和地平面垂直；丙圖看不見北極星星體運行剖面和地平線交角50度；丁圖北極星位於北方仰角40度，依據四圖回答以下問題：
+    content: 赤經 0 h、赤緯 +89°
+  group_stem: ◎ 觀察星空運行軌跡：甲地可見北極星位於天頂（北極點，北緯 90°）；乙地北極星位於北方地平線上（赤道，緯度 0°）；丙地看不見北極星，星體軌跡與地平面夾角 50°（南緯 40°）；丁地北極星位於北方仰角 40°（北緯 40°）。
   assets:
   - key: s1_8_f1
     kind: figure
@@ -344,7 +342,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾誤混入下一題組前言
+    fixed_by: agent
+    fix_note: （人工修正：清除題幹末誤混之下一題組前言，補齊四選項恆星赤經赤緯與解析）
   difficulty: 3
+  explanation: 甲地北極星位於天頂，即為地球北極點（北緯 90°）。在北極點只能看見天球北半球（赤緯 0°～+90°）的星體，所有赤緯小於 0°（南天球）的恆星終年位於地平線以下，永遠看不到。
 - id: doc_110_桃園_內壢_自然_地科_g10s1e2_s1_9
   section: 1
   number: 9
@@ -715,19 +716,17 @@ questions:
   number: 22
   type: single
   page: 4
-  stem: '晚間21時（晚上9點）後看到一半的月亮，可能為上弦月還是下弦月？此月亮在21時位置應為何？（子午線為南北連線，星體經過子午線為一天中星體出現位置最高的時候）
-
-    ◎ 下圖為各波段大氣透明度圖，圖中ABC波段為大氣窗口，依據此圖回答以下問題：'
+  stem: 晚間 21 時（晚上 9 點）看到半圓形的月亮，該月相可能為上弦月還是下弦月？此時此月亮在天空中的位置應為何？
   options:
   - label: A
-    content: (A)
+    content: 下弦月，位於東方地平線附近
   - label: B
-    content: (B)
+    content: 上弦月，位於東方地平線附近
   - label: C
-    content: (C)
+    content: 上弦月，位於西方天空（過子午線與西方地平線之間）
   - label: D
-    content: (D)
-  group_stem: ◎ 下圖為日月地相對位置圖，圖中A～H為月球位置，甲乙丙丁為地球上的點，若地球自轉方向如箭頭為逆時針轉，依據此圖回答以下問題：
+    content: 下弦月，位於西方地平線附近
+  group_stem: ◎ 日月地相對位置：月球繞地球逆時針公轉（由北極上空俯視），地球亦逆時針自轉。
   assets:
   - key: s1_22_f1
     kind: figure
@@ -758,7 +757,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾誤混入下一題組前言
+    fixed_by: agent
+    fix_note: （人工修正：清除題幹末誤混之下一題組前言，補齊選項文字與解析）
   difficulty: 3
+  explanation: 上弦月約於中午 12 時東升、18 時過子午線（最高點）、24 時西落，因此晚間 21 時可見於偏西方天空；下弦月則於 24 時才東升，21 時看不到。
 - id: doc_110_桃園_內壢_自然_地科_g10s1e2_s1_23
   section: 1
   number: 23
@@ -890,19 +892,17 @@ questions:
   number: 26
   type: single
   page: 4
-  stem: '若要觀察黑洞、日冕（溫度百萬K），最好使用下列哪一支太空望遠鏡？其觀測電磁波波段為何？
-
-    ◎ 太陽系內有許多種類星體所組成，包含恆星、行星、矮行星、一些小型天體（彗星、小行星）及衛星。太陽系外也有許多恆星、星團、星系等天體，依據理論宇宙生成於大霹靂，請依說明回答以下問題：'
+  stem: 若要觀察黑洞吸積盤或太陽日冕（溫度高達百萬 K），最好使用下列哪一支太空望遠鏡？其主要觀測的電磁波波段為何？
   options:
   - label: A
-    content: (A)
+    content: 韋伯太空望遠鏡（JWST），主要觀測無線電波
   - label: B
-    content: (B)
+    content: 哈伯太空望遠鏡（HST），主要觀測微波
   - label: C
-    content: (C)
+    content: 錢卓拉太空望遠鏡（Chandra），主要觀測 X 射線
   - label: D
-    content: (D)
-  group_stem: ◎ 下圖為日月地相對位置圖，圖中A～H為月球位置，甲乙丙丁為地球上的點，若地球自轉方向如箭頭為逆時針轉，依據此圖回答以下問題：
+    content: 史匹哲太空望遠鏡（Spitzer），主要觀測伽瑪射線
+  group_stem: ◎ 大氣透明度與太空望遠鏡觀測波段：地球大氣僅對可見光與部分無線電波有較高透明度（大氣窗口），X 射線與大部分紅外線則會被大氣吸收，需仰賴太空望遠鏡觀測。
   assets:
   - key: s1_26_f1
     kind: figure
@@ -933,7 +933,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾誤混入下一題組前言
+    fixed_by: agent
+    fix_note: （人工修正：更正錯置題組並清除題幹末誤混之下一題組前言，補齊選項文字與解析）
   difficulty: 2
+  explanation: 黑洞吸積盤與百萬 K 高溫的太陽日冕會輻射極高能量的 X 射線，須使用專門觀測 X 射線波段的錢卓拉（Chandra）X 射線太空望遠鏡。
 - id: doc_110_桃園_內壢_自然_地科_g10s1e2_s1_27
   section: 1
   number: 27
@@ -1304,18 +1307,16 @@ questions:
   number: 36
   type: single
   page: 5
-  stem: '若海表面空氣32℃未達飽和，風吹至山坡抬升至1公里高處開始下雨，下至山頂都有雨，已知此山高3公里，若僅考慮空氣絕熱膨脹作用，則山頂溫度約為幾℃？過山風沉降至海拔0公尺，氣溫又為幾℃？【提示：上山溼絕熱（水氣達飽和）－6℃／km；乾絕熱（水氣未達飽和）－10℃／km】
-
-    ◎ 大氣層分布於地球表面，保護地表生物。下圖為大氣壓力與離地高度的關係圖，依據此圖回答以下問題：'
+  stem: 若海表面空氣 32℃ 未達飽和，風吹至山坡抬升至 1 公里高處開始飽和並下雨，下至山頂都有雨。已知此山高 3 公里，若僅考慮空氣絕熱膨脹／壓縮作用，則山頂溫度約為幾℃？過山風沉降至背風側海拔 0 公尺處，氣溫又約為幾℃？【提示：上山溼絕熱（水氣達飽和）－6℃／km；乾絕熱（水氣未達飽和）±10℃／km】
   options:
   - label: A
-    content: (A)
+    content: 山頂 14℃，過山後 32℃
   - label: B
-    content: (B)
+    content: 山頂 10℃，過山後 40℃
   - label: C
-    content: (C)
+    content: 山頂 12℃，過山後 42℃
   - label: D
-    content: (D)
+    content: 山頂 2℃，過山後 32℃
   group_stem: ◎ 雲的組成為冰晶及小水滴，為水氣凝結而成。霧依據成因區分為鋒面霧、平流霧、輻射霧及上坡霧；雨則區分為地形雨、對流雨及鋒面雨，依據此說明回答以下問題：
   assets:
   - key: s1_36_f1
@@ -1346,7 +1347,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾誤混入下一題組前言
+    fixed_by: agent
+    fix_note: （人工修正：清除題幹末誤混之下一題組前言，補齊選項文字與解析）
   difficulty: 4
+  explanation: 0→1 km（未飽和，乾絕熱）：$32 - 10 \times 1 = 22^\circ\text{C}$；1→3 km（飽和降雨，溼絕熱）：$22 - 6 \times 2 = 10^\circ\text{C}$（山頂溫度）。過山後水氣已減少，下沉 3 km 全程未飽和（乾絕熱增溫）：$10 + 10 \times 3 = 40^\circ\text{C}$（焚風效應）。
 - id: doc_110_桃園_內壢_自然_地科_g10s1e2_s1_37
   section: 1
   number: 37

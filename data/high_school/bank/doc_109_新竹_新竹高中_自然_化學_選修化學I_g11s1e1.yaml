@@ -936,7 +936,7 @@ questions:
   number: 25
   type: multiple
   page: 3
-  stem: 銅銀化學電池如附圖，下列敘述何者正確？（原子量：N＝14、S＝32、Cu＝64、Ag＝108）
+  stem: 銅銀化學電池裝置為：左杯銅片插入硫酸銅水溶液、右杯銀片插入硝酸銀水溶液，兩杯以鹽橋連接，外電路導線連接銅片與銀片，且導線上箭頭方向由銅片指向銀片。下列敘述哪些正確？（原子量：N＝14、S＝32、Cu＝64、Ag＝108）
   options:
   - label: A
     content: 圖中箭頭方向為電流流向
@@ -960,10 +960,10 @@ questions:
       - 232.15
       - 333.3
   answer:
+  - B
   - C
-  - D
-  answer_status: verified
-  answer_source: answer_key
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: CH-S4-2-1
@@ -978,7 +978,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D有輕微亂碼（游向極）
+    fixed_by: agent
+    fix_note: （人工修正：以文字描述電池裝置取代缺圖並更正答案為BC與補齊解析）
   difficulty: 3
+  explanation: (A)導線上箭頭由銅片指向銀片，為電子流向，電流方向相反；(B)銅活性大於銀，銅為陽極（負極）發生氧化反應：$Cu \rightarrow Cu^{2+} + 2e^{-}$，正確；(C)放電 1 mol 電子時，銅極減少 $0.5 \times 64 = 32\text{ g}$，銀極析出 $1 \times 108 = 108\text{ g}$，總重增加 $108 - 32 = 76\text{ g}$，正確；(D)鹽橋中陰離子游向負極（陽極）；(E)$Cl^{-}$ 會與 $Ag^{+}$ 生成 AgCl 沉澱，不可用 $NH_{4}Cl$。故選(B)(C)。
+  review_note: 原答案卷答案 ['C', 'D']，執行 agent 修正為 ['B', 'C']
 - id: doc_109_新竹_新竹高中_自然_化學_選修化學I_g11s1e1_s2_26
   section: 2
   number: 26

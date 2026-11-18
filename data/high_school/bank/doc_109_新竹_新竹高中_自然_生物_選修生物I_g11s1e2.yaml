@@ -1366,7 +1366,20 @@ questions:
   number: 41
   type: multiple
   page: 4
-  stem: 附表為果蠅4種性狀及其基因位置，下列相關敘述哪些正確？（應選二項）
+  stem: '附表為果蠅4種性狀及其基因位置，下列相關敘述哪些正確？（應選二項）
+
+
+    | 性狀 | 顯性性狀（基因） | 隱性性狀（基因） | 基因所在染色體 |
+
+    | --- | --- | --- | --- |
+
+    | 眼色 | 紅眼（W） | 白眼（w） | X染色體 |
+
+    | 翅長 | 長翅（V） | 短翅（v） | 第2號染色體 |
+
+    | 體色 | 灰體（B） | 黑體（b） | 第2號染色體 |
+
+    | 剛毛 | 長剛毛（R） | 短剛毛（r） | 第3號染色體 |'
   options:
   - label: A
     content: 若有一雄果蠅眼色為紅眼，則基因型為WW或Ww
@@ -1375,7 +1388,7 @@ questions:
   - label: C
     content: 若有一雌果蠅基因型為VvBb，V和b連鎖，在沒有發生互換的情形下，可產生VB和vb二種配子
   - label: D
-    content: 若有一雌果蠅基因型為VvBb，在有發生互換的情形下，可產生VB、Vb、Vb和vb四種配子
+    content: 若有一雌果蠅基因型為VvBb，在有發生互換的情形下，可產生VB、Vb、vB和vb四種配子
   - label: E
     content: 若親代果蠅基因型為VvRr×vvrr，則子代表現型及比例為長翅長剛毛：長翅短剛毛：短翅長剛毛：短翅短剛毛＝1：1：1：1
   assets:
@@ -1403,7 +1416,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D「VB、Vb、Vb和vb」有重複誤植（應為vB）
+    fixed_by: agent
+    fix_note: （人工修正：補充果蠅性狀基因位置表、修正選項D重複誤植為vB並補齊答案與解析）
   difficulty: 4
+  explanation: (A)眼色基因位於X染色體上，雄果蠅紅眼基因型應為$X^WY$；(B)白眼雌果蠅($X^wX^w$)的白眼基因分別來自卵子與精子；(C)V與b連鎖時，無互換只能產生Vb和vB兩種配子；(D)發生互換後可產生VB、Vb、vB、vb四種配子，正確；(E)V/v與R/r位於不同對同源染色體上，符合獨立分配律，試交後代比例為1：1：1：1，正確。故選(D)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
+  - E
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e2_s1_42
   section: 1
   number: 42

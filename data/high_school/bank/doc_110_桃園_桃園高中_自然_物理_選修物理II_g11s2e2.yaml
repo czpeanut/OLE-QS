@@ -783,11 +783,11 @@ questions:
   number: 2
   type: calc
   page: 2
-  stem: 今若桌子下方繩的一端改用手握住B物，緩慢向下拉0.5 m，則桌上物體的角速度的量值會變成【 】。（3分）
+  stem: 一光滑水平桌面上有一質量 m＝1 kg 的物體，以細繩穿過桌面中央的小孔，連接下方懸掛的物體 B（質量 M＝1 kg）。最初桌上物體以半徑 r＝1 m 作等速圓周運動，已知重力加速度 $g＝10$ m／$s^{2}$。今若桌子下方繩的一端改用手握住，將繩緩慢向下拉 0.5 m（使圓周運動半徑變為 0.5 m），則桌上物體的角速度量值會變成＿＿＿ rad／s。
   answer:
-  - (1) $\frac{3}{2}\sqrt{gr}$
-  answer_status: verified
-  answer_source: answer_key
+  - $4\sqrt{10}$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-1-4
@@ -802,7 +802,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 參考答案格式疑誤植（題組作功400J反推末角速度應為40 rad/s）
+    fixed_by: agent
+    fix_note: （人工修正：補充完整前情提要並更正答案與補全解析）
   difficulty: 3
+  explanation: 最初圓周運動向心力由 B 物重力提供：$mr\omega_{0}^{2}＝Mg \Rightarrow 1\times 1\times \omega_{0}^{2}＝10 \Rightarrow \omega_{0}＝\sqrt{10}$ rad／s。下拉過程中繩張力通過轉軸不產生力矩，系統角動量守恆：$mr^{2}\omega_{0}＝m(\frac{r}{2})^{2}\omega \Rightarrow \omega＝4\omega_{0}＝4\sqrt{10}$ rad／s。
+  review_note: 原答案卷答案 ['(1) $\\frac{3}{2}\\sqrt{gr}$']，執行 agent 修正為 ['$4\\sqrt{10}$']
 - id: doc_110_桃園_桃園高中_自然_物理_選修物理II_g11s2e2_s3_3
   section: 3
   number: 3

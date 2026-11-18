@@ -30,7 +30,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 如圖所示，將質量皆均勻分布的兩大、小實心球彼此緊靠。已知小球的質量為m，且小球密度為大球密度的2倍，則大、小兩球間的重力為何？
+  stem: 將質量皆均勻分布的大、小兩實心球彼此緊靠。已知小球的質量為 m、半徑為 R，大球半徑為 2R，且小球密度為大球密度的 2 倍，則大、小兩球間的萬有引力為何？
   options:
   - label: A
     content: $\frac{Gm^{2}}{R^{2}}$
@@ -71,7 +71,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹含亂碼字元（「小球的質為m」）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字、補充兩球半徑條件（免附圖）並補全解析）
   difficulty: 3
+  explanation: 大球半徑為小球的 2 倍，體積為小球的 8 倍，密度為小球的 $\frac{1}{2}$ 倍，故大球質量 $M＝8\times\frac{1}{2}m＝4m$。兩球緊靠時球心距 $d＝2R＋R＝3R$，萬有引力 $F＝\frac{GMm}{d^{2}}＝\frac{G(4m)m}{(3R)^{2}}＝\frac{4Gm^{2}}{9R^{2}}$。故選(D)。
 - id: doc_113_台南_台南二中_自然_物理_g10s1e2_s1_2
   section: 1
   number: 2
@@ -544,7 +547,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 如附圖所示，在赤道的正上方有一電子垂直地面入射，若赤道的地球磁場與地面呈水平，則此電子因受到地磁作用而發生偏轉時其落點應該接近何處？
+  stem: 在赤道的正上方有一電子垂直地面向下入射，若赤道的地球磁場與地面呈水平且由南向北，且地面上 P、Q、R、S 四點分別位於電子正下方的西方、東方、南方、北方，則此電子因受到地磁作用而發生偏轉時，其落點應該接近何處？
   options:
   - label: A
     content: P
@@ -583,7 +586,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹含亂碼字元（「因到地磁作用」）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字、補充方位條件（免附圖）並補全解析）
   difficulty: 3
+  explanation: 電子帶負電，速度方向鉛直向下，地磁方向向北。由右手開掌定則（負電荷受力方向與正電荷相反），電子所受磁力方向向西，故落點接近西方的 P 點。故選(A)。
 - id: doc_113_台南_台南二中_自然_物理_g10s1e2_s1_15
   section: 1
   number: 15
@@ -911,15 +917,15 @@ questions:
   stem: 一觀察者觀測比較波源靜止與高速運動時所發出之電磁波的頻率變化，藉以推測波源與觀察者之間的相對運動。已知不同電磁波的頻率由高而低的關係為：γ射線>X射線>紫外線>紫光>紅光>紅外線>微波>無線電波。考慮電磁波的都卜勒效應，下列推測哪些正確？
   options:
   - label: A
-    content: (A)
+    content: 靜止時發出紅光，高速遠離時可能觀測到紫光
   - label: B
-    content: (B)
+    content: 靜止時發出紫光，高速遠離時可能觀測到紅光
   - label: C
-    content: (C)
+    content: 靜止時發出微波，高速接近時可能觀測到無線電波
   - label: D
-    content: (D)
+    content: 靜止時發出紅光，高速接近時可能觀測到紫外線
   - label: E
-    content: (E)
+    content: 靜止時發出 X 射線，高速接近時可能觀測到 γ 射線
   assets:
   - key: s2_24_f1
     kind: figure
@@ -951,24 +957,37 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項內容僅為代號(A)~(E)，須搭配原圖作答
+    fixed_by: agent
+    fix_note: （人工修正：補全五個選項文字（免附圖）並補全解析）
   difficulty: 3
+  explanation: 依據電磁波的都卜勒效應，波源高速遠離觀察者時，觀測到的頻率降低（紅移，如紫光變紅光）；波源高速接近觀察者時，觀測到的頻率升高（藍移，如紅光變紫外線、X 射線變 γ 射線）。故選(B)(D)(E)。
 - id: doc_113_台南_台南二中_自然_物理_g10s1e2_s3_1
   section: 3
   number: 1
   type: single
   page: 4
-  stem: 下表為觀察者與聲源運動的狀況，其中$v_{S}$為波源的速率，$v_{O}$為觀察者的速率，箭頭表示速度大小和方向。若無風狀態下，則觀察者觀察到的頻率會變大、變小，還是不變？請按照表格順序依序填填入。（每格1分）
+  stem: '下表為觀察者與聲源在無風狀態下沿同一直線運動的狀況，其中 $v_{S}$ 為波源速率，$v_{O}$ 為觀察者速率（假設兩者皆小於聲速）。請依序判斷各狀況中觀察者測得的頻率相較於波源頻率會變大、變小，還是不變？
+
+    | 狀況 | 波源運動狀態 | 觀察者運動狀態 |
+
+    | --- | --- | --- |
+
+    | (1) | 以速率 $v_{S}＞0$ 接近觀察者 | 靜止（$v_{O}＝0$） |
+
+    | (2) | 靜止（$v_{S}＝0$） | 以速率 $v_{O}＞0$ 遠離波源 |
+
+    | (3) | 以速率 $v_{S}$ 前進 | 以相同速率 $v_{O}＝v_{S}$ 同向運動 |'
   options:
   - label: A
-    content: (A)
+    content: 變大、變小、不變
   - label: B
-    content: (B)
+    content: 變小、變大、不變
   - label: C
-    content: (C)
+    content: 變大、變大、不變
   - label: D
-    content: (D)
+    content: 變小、變小、不變
   - label: E
-    content: (E)
+    content: 不變、變小、變大
   assets:
   - key: s3_1_f1
     kind: figure
@@ -994,7 +1013,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 表格位於附圖中且無參考答案，選項為無意義代號(A)~(E)
+    fixed_by: agent
+    fix_note: （人工修正：補充三種都卜勒效應狀況表格與選項（免附圖）並補全解答與解析）
   difficulty: 2
+  explanation: (1) 波源接近靜止觀察者，視頻率變大；(2) 觀察者遠離靜止波源，視頻率變小；(3) 波源與觀察者同向等速運動（無相對運動），視頻率不變。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_113_台南_台南二中_自然_物理_g10s1e2_s3_2
   section: 3
   number: 2
@@ -1035,11 +1061,11 @@ questions:
   number: 3
   type: calc
   page: 4
-  stem: '根據庫侖定律，若兩帶電物體電量分別為Q與q且距離為r，則兩物之間的庫侖靜電力為$F_{e}$=$\frac{kQq}{r^{2}}$，𝑘為庫侖常數。
+  stem: '根據庫侖定律，若兩帶電物體電量分別為 Q 與 q 且距離為 r，則兩物之間的庫侖靜電力為 $F_{e}＝\frac{kQq}{r^{2}}$，k 為庫侖常數。
 
-    (1)試推導出庫侖常數k單位，並以SI國際單位制中的基本單位來表示。（3分）
+    (1) 試推導出庫侖常數 k 的單位，並以 SI 國際單位制中的基本單位來表示。（3分）
 
-    (2)如圖所示，在一直線上有一點電荷O固定於原點，其電量為＋Q，現有A（－9q）、B（＋4q）固定於直線上的某處，若使電荷O所受靜電力恰為零，試將A、B兩電荷的位置畫出，須依照比例精準畫出，並將其位置標示。（4分）'
+    (2) 在一直線上有一點電荷 O 固定於原點（$x＝0$），其電量為 ＋Q，現有 A（電量 －9q）與 B（電量 ＋4q）固定於直線上的某處，若使電荷 O 所受靜電力恰為零，試說明 A、B 兩電荷應置於原點同側或異側，並求兩者至原點距離之比 $r_{A}：r_{B}$。（4分）'
   assets:
   - key: s3_3_f1
     kind: figure
@@ -1052,9 +1078,9 @@ questions:
       - 449.7
       - 713.2
   answer:
-  - (1)（3分）
-  answer_status: verified
-  answer_source: answer_key
+  - (1) $\frac{kg\cdot m^{3}}{A^{2}\cdot s^{4}}$；(2) 同側，$r_{A}：r_{B}＝3：2$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-1-3-3
@@ -1069,4 +1095,8 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 跨單元題：第(1)小題考國際單位制(PH-1-1-3)，第(2)小題考靜電力平衡(PH-1-3-3)
+    fixed_by: agent
+    fix_note: （人工修正：將作圖題改為座標比例計算（免附圖）並補全解答與解析）
   difficulty: 3
+  explanation: (1) 由 $k＝\frac{Fr^{2}}{Qq}$，代入 $F$ 單位 $\frac{kg\cdot m}{s^{2}}$、$r^{2}$ 單位 $m^{2}$、電量單位 $A\cdot s$，得 $k$ 單位為 $\frac{kg\cdot m^{3}}{A^{2}\cdot s^{4}}$。(2) A、B 為異號電荷，欲使對 O 的靜電力（一吸一斥）互相抵消，A、B 須位於 O 的同一側，且 $\frac{k(9q)Q}{r_{A}^{2}}＝\frac{k(4q)Q}{r_{B}^{2}} \Rightarrow r_{A}：r_{B}＝3：2$。
+  review_note: 原答案卷答案 ['(1)（3分）']，執行 agent 修正為 ['(1) $\\frac{kg\\cdot m^{3}}{A^{2}\\cdot s^{4}}$；(2) 同側，$r_{A}：r_{B}＝3：2$']

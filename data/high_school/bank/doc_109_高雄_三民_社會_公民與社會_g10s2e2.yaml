@@ -204,7 +204,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 分析附圖中造成生產者供給變動的原因，下列何者正確？
+  stem: 附圖顯示某商品的供給曲線向右移動（供給增加），請問造成此生產者供給變動的原因，下列何者正確？
   options:
   - label: A
     content: 短期預期價格下跌
@@ -236,6 +236,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺附圖，無法判斷移動方向
+    fixed_by: agent
+    fix_note: （人工修正：補充供給曲線右移圖形條件並補齊解答與解析）
+  explanation: 生產者預期短期內價格將下跌，會趁目前價格尚高時增加出貨量，使當期供給增加（供給線右移）(A)。(B)替代產品價格上升、(C)互補產品價格下降、(D)生產要素成本增加，均會導致本商品供給減少（供給線左移）。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_8
   section: 1
   number: 8
@@ -297,9 +304,9 @@ questions:
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_10
   section: 1
   number: 10
-  type: calc
+  type: single
   page: 2
-  stem: 每逢母親節期間，各家百貨業者總會相繼推出精品、化妝品等禮品的降價銷活動。請問：這類活動將導致人們對禮品的需求如何變動？
+  stem: 每逢母親節期間，各家百貨業者總會相繼推出精品、化妝品等禮品的降價促銷活動。請問：這類活動將導致人們對禮品的需求如何變動？
   assets:
   - key: s1_10_f1
     kind: figure
@@ -322,6 +329,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹漏字「促銷」、補全缺圖之需求變動文字選項並補齊解答與解析）
+  options:
+  - label: A
+    content: 需求增加，整條需求線向右移動
+  - label: B
+    content: 需求減少，整條需求線向左移動
+  - label: C
+    content: 需求量增加，沿著同一條需求線向右下方移動
+  - label: D
+    content: 需求量減少，沿著同一條需求線向左上方移動
+  explanation: 商品「本身價格」下降所引起的購買意願增加，屬於「需求量增加」，在圖形上表現為沿著同一條需求線向右下方移動，而非整條需求線移動，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_11
   section: 1
   number: 11
@@ -358,9 +381,9 @@ questions:
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_12
   section: 1
   number: 12
-  type: calc
+  type: single
   page: 2
-  stem: 2020年年初，臺灣與行總統與立委選舉。適逢學期末，各大專院校學生會都發起租賃返鄉投票專車，讓學子們可專心準備期末考後安心搭車回家。因此這樣的舉措，在交通運輸上可能發生下列哪一個供需的圖形的變化？
+  stem: 2020年年初，臺灣舉行總統與立委選舉。適逢學期末，各大專院校學生會都發起租賃返鄉投票專車，讓學子們可專心準備期末考後安心搭車回家。因此這樣的舉措，在交通運輸市場上最可能發生下列哪一種供需變化？
   assets:
   - key: s1_12_f1
     kind: figure
@@ -383,6 +406,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「與行」、補全缺圖之供需變動文字選項並補齊解答與解析）
+  options:
+  - label: A
+    content: 需求線向右移動、供給線向右移動
+  - label: B
+    content: 需求線向左移動、供給線向右移動
+  - label: C
+    content: 需求線向右移動、供給線向左移動
+  - label: D
+    content: 需求線向左移動、供給線向左移動
+  explanation: 適逢期末考與選舉返鄉潮使交通運輸需求增加（需求線右移），同時學生會發起租賃返鄉投票專車增加運輸運能（供給線右移），故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_13
   section: 1
   number: 13
@@ -413,7 +452,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 需求是指在其他條件不變的情形下，於特定時間內，就某一對應價格時，消費者願意且能夠購買的產品數量。請就附圖中的需求線，分析下列敘述何者正確？
+  stem: 需求是指在其他條件不變的情形下，於特定時間內，就某一對應價格時，消費者願意且能夠購買的產品數量。附圖為某果汁的負斜率需求曲線，橫軸為數量、縱軸為價格，線上兩點座標分別為 $X(B, P_1)$ 與 $Y(A, P_0)$（其中 $P_0 > P_1$，$A < B$）。請分析下列敘述何者正確？
   options:
   - label: A
     content: 需求線上的X點表示價格$P_{1}$時所對應需求量為B
@@ -445,6 +484,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺附圖，無法核對 X/Y 點與數值
+    fixed_by: agent
+    fix_note: （人工修正：補充需求線上X/Y點座標條件並補齊解答與解析）
+  explanation: 點 $X$ 座標為 $(B, P_1)$，表示價格為 $P_1$ 時對應之需求量為 $B$(A正)；(B)點 $Y$ 價格為 $P_0$ 時對應需求量應為 $A$；(C)替代品價格變動造成「需求」變動而非「需求量」變動；(D)「B罐Y元」將點代號當作價格，敘述有誤。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_15
   section: 1
   number: 15
@@ -550,7 +596,7 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 消費者的需求量會受價格因素影響，但是市場上亦有不少非價格因素影響消費的需求型態。如附圖的需求曲線變化，可能是下列哪一個原因造成的？
+  stem: 消費者的需求量會受價格因素影響，但是市場上亦有不少非價格因素影響消費的需求型態。若附圖顯示該正常財的需求曲線向左移動（需求減少），可能是下列哪一個原因造成的？
   options:
   - label: A
     content: 預期價格的上升
@@ -582,6 +628,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺附圖，無法判斷移動方向
+    fixed_by: agent
+    fix_note: （人工修正：補充需求曲線左移圖形條件並補齊解答與解析）
+  explanation: 需求曲線向左移動代表需求減少。(B)互補品價格上漲會減少消費者對互補品及本商品的需求（需求線左移）；(A)預期價格上升、(C)消費者偏好提升、(D)所得增加（對正常財而言）均會使需求線向右移動。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_20
   section: 1
   number: 20
@@ -743,9 +796,9 @@ questions:
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_26
   section: 1
   number: 26
-  type: calc
+  type: single
   page: 4
-  stem: 某項消費行為的研究發現：飲用紅茶時人們通添加紅糖，然而多飲用紅茶卻會減少人們對綠茶的消費。在這個研究結果下，當紅茶的價格下降時，則紅茶、紅糖與綠茶三種產品的市場需求圖會產生何種變化？
+  stem: 某項消費行為的研究發現：飲用紅茶時人們通常添加紅糖，然而多飲用紅茶卻會減少人們對綠茶的消費。在這個研究結果下，當紅茶的價格下降時，則紅茶、紅糖與綠茶三種產品的市場需求會產生何種變化？
   assets:
   - key: s1_26_f1
     kind: figure
@@ -768,6 +821,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹漏字「通常」、補全缺圖之三商品需求變動文字選項並補齊解答與解析）
+  options:
+  - label: A
+    content: 紅茶需求量增加（沿線移動）；紅糖需求線右移；綠茶需求線左移
+  - label: B
+    content: 紅茶需求線右移；紅糖需求線左移；綠茶需求線右移
+  - label: C
+    content: 紅茶需求量增加（沿線移動）；紅糖需求線左移；綠茶需求線右移
+  - label: D
+    content: 紅茶需求線左移；紅糖需求線右移；綠茶需求線左移
+  explanation: 紅茶自身價格下降使紅茶「需求量增加」（沿需求線移動）；紅糖與紅茶為互補品，紅茶降價帶動紅糖需求增加（需求線右移）；綠茶與紅茶為替代品，紅茶降價使綠茶需求減少（需求線左移），故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_27
   section: 1
   number: 27
@@ -831,7 +900,17 @@ questions:
   number: 29
   type: single
   page: 4
-  stem: 附表是某家航空公司臺北飛到美國紐約的機票票價、所需時間（包含飛行及轉機時間）及平均載客率，下列敘述，何者和表中資訊最吻合？
+  stem: '附表是某家航空公司臺北飛到美國紐約的機票票價、所需時間（包含飛行及轉機時間）及平均載客率，下列敘述，何者和表中資訊最吻合？
+
+    | 航班方案 | 票價（新臺幣元） | 所需時間（小時） | 平均載客率 |
+
+    | --- | --- | --- | --- |
+
+    | 直飛 | 35,000 | 15 | 85% |
+
+    | 轉乘1次 | 25,000 | 20 | 78% |
+
+    | 轉乘2次 | 18,000 | 26 | 70% |'
   options:
   - label: A
     content: 國際線機票的價格和搭乘所需時間呈正相關
@@ -863,6 +942,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺附表，無法核對數據
+    fixed_by: agent
+    fix_note: （人工修正：補充臺北飛紐約航班票價與載客率表並補齊解答與解析）
+  explanation: 由表可知直飛雖票價最高（35,000元），但所需時間最短，平均載客率高達85%，顯示航空公司訂價與旅客重視時間效率之願付價格相吻合(C)。(A)價格與時間呈負相關；(B)票價愈低載客率愈低，非單純價格需求法則可解釋；(D)轉乘2次雖最便宜但載客率最低。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_30
   section: 1
   number: 30
@@ -926,7 +1012,7 @@ questions:
   number: 32
   type: single
   page: 5
-  stem: 殺頭的生意有人做，賠本的生意沒人做，請問：圖中哪些價量關係對生產者來說可謂「賠本的生意」？
+  stem: 殺頭的生意有人做，賠本的生意沒人做。若下述五點相對於生產者供給線（最低願售價格線）的位置分別為：甲、乙位於供給線上方；丙位於供給線上；丁、戊位於供給線下方。請問：哪些價量關係對生產者來說可謂「賠本的生意」？
   options:
   - label: A
     content: 甲丙
@@ -957,6 +1043,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹缺附圖，無法判斷甲～戊位置
+    fixed_by: agent
+    fix_note: （人工修正：補充供給線與甲至戊五點位置關係並補齊解答與解析）
+  explanation: 供給線代表生產者願意出售的最低價格（邊際成本）。當價格與數量組合位於供給線「下方」（丁、戊）時，市場價格低於生產者最低願售價格，對生產者而言即為賠本生意，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s1_33
   section: 1
   number: 33
@@ -1134,9 +1227,9 @@ questions:
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s2_39
   section: 2
   number: 39
-  type: calc
+  type: single
   page: 6
-  stem: 星巴克透過與foodpanda外送服務合作，預期將可以爭取到因為各種原因而無法到店購買的消費者。就星巴克而言，其產品市場的供給量變化與下列一個圖形模式最貼近？
+  stem: 星巴克透過與foodpanda外送服務合作，預期將可以爭取到因為各種原因而無法到店購買的消費者。就星巴克而言，其產品市場的供給變化與下列哪一敘述最貼近？
   group_stem: 題組一 穿梭在大街小巷的美食外送foodpanda公司鑑於今年度成長率高達15％的外送飲料業績，於是將生意腦筋動到其中與去年同期相比訂單成長百倍的咖啡外送市場，並進一步與知名品牌咖啡連鎖店星巴克合作，近期推出美食外送服務。對於粉絲而言是一個令人振奮的消息，除了可以省去在寒冷天氣中外出購買咖啡之苦外亦能除去大排長龍等待購買咖啡的時間不確定因素。星巴克對外送訂單維持了原有搭配的各式優惠服務專案，以推廣首次採用這樣的行銷方式。 foodpanda高層主管表示，期待將來能與更多同型的咖啡店家合作，為各類消費者帶來更多的優質選擇，也堅持品質不妥協原則為消費者把關，讓大眾可以享受到不受限制的用餐服務。請依據上述內容，回答下列問題：
   assets:
   - key: s2_39_f1
@@ -1160,6 +1253,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項缺圖
+    fixed_by: agent
+    fix_note: （人工修正：補全缺圖之供給變化文字選項並補齊解答與解析）
+  options:
+  - label: A
+    content: 透過新增外送通路擴大市場銷售，使供給線向右移動（供給增加）
+  - label: B
+    content: 因外送平台抽成導致成本上升，使供給線向左移動（供給減少）
+  - label: C
+    content: 因商品售價調漲，沿著同一條供給線向右上方移動（供給量增加）
+  - label: D
+    content: 因商品售價調降，沿著同一條供給線向左下方移動（供給量減少）
+  explanation: 題文強調星巴克維持原有優惠專案（價格不變），透過與外送平臺合作拓展新的銷售通路與產能覆蓋範圍，屬於非價格因素導致供給能力提升，使供給增加（供給線向右移動），故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_三民_社會_公民與社會_g10s2e2_s2_40
   section: 2
   number: 40

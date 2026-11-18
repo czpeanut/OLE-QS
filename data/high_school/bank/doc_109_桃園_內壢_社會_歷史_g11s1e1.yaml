@@ -1018,7 +1018,9 @@ questions:
   number: 39
   type: single
   page: 4
-  stem: 1789年的四月，該國選出了第一任總統，該總統在日記中寫著：「雖然我欣然為祖國服務，卻沒有把握不辜負祖國的期待。」請問，此國為何國？
+  stem: '某張18世紀末政治局勢地圖標示了四個國家：A為英國、B為法國、C為美國、D為西班牙。
+
+    1789年的四月，其中一國選出了第一任總統，該總統在日記中寫著：「雖然我欣然為祖國服務，卻沒有把握不辜負祖國的期待。」請問，此國在圖中代號為何？'
   options:
   - label: A
     content: A
@@ -1039,12 +1041,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項為地圖代號 A/B/C/D，本題未附題組地圖致無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充地圖國家代號對照並補齊答案與解析）
+  explanation: 1789年4月喬治．華盛頓當選並宣誓就任美利堅合眾國（代號C）第一任總統。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_內壢_社會_歷史_g11s1e1_s1_40
   section: 1
   number: 40
   type: single
   page: 4
-  stem: 同一時間，另一個國家正在選舉參加三級會議的地方代表，這個國家已經一百多年沒有召開三級會議討論國家大政了。這次會議起因為國王想向貴族徵稅，貴族要求開會決定。請問，此國為何國？
+  stem: 承上題（A為英國、B為法國、C為美國、D為西班牙），同一時間，另一個國家正在選舉參加三級會議的地方代表，這個國家已經一百多年（自1614年以來）沒有召開三級會議討論國家大政了。這次會議起因為國王想向貴族徵稅，貴族要求開會決定。請問，此國在圖中代號為何？
   options:
   - label: A
     content: A
@@ -1065,6 +1074,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項為地圖代號 A/B/C/D，本題未附題組地圖致無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充地圖國家代號對照並補齊答案與解析）
+  explanation: 1789年法國（代號B）國王路易十六為解決財政危機，召開自1614年以來已175年未曾召開的三級會議，最終引爆法國大革命。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_桃園_內壢_社會_歷史_g11s1e1_s1_41
   section: 1
   number: 41

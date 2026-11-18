@@ -901,11 +901,11 @@ questions:
   number: 2
   type: calc
   page: 3
-  stem: 若軌道非光滑但水平地面光滑，則當小球m滑離軌道底端之瞬間，小球m與木塊M水平動量大小是否相等？為什麼？（3分）
+  stem: 一質量為 M 的木塊靜置於光滑水平地面上，木塊上有一曲面軌道，今將質量為 m 的小球自軌道頂端靜止釋放。若軌道非光滑但水平地面光滑，則當小球 m 滑離軌道底端之瞬間，小球 m 與木塊 M 水平動量大小是否相等？為什麼？（3分）
   answer:
-  - (1)$\frac{1}{5}$
-  answer_status: verified
-  answer_source: answer_key
+  - 相等。因水平地面光滑，小球與木塊所組成的系統在水平方向不受外力作用，故水平總動量守恆（恆為零），因此滑離瞬間兩者水平動量大小相等、方向相反。
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-1-2
@@ -920,7 +920,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 標準答案欄錯植為(1)1/5，題目本身完整可答
+    fixed_by: agent
+    fix_note: （人工修正：補充木塊與軌道前提、更正錯置答案並補全解析）
   difficulty: 3
+  explanation: 摩擦力為系統內力，不影響系統總動量；水平地面光滑無外力，故系統水平方向動量守恆，初總動量為零，滑離瞬間兩者水平動量大小必相等。
+  review_note: 原答案卷答案 ['(1)$\\frac{1}{5}$']，執行 agent 修正為 ['相等。因水平地面光滑，小球與木塊所組成的系統在水平方向不受外力作用，故水平總動量守恆（恆為零），因此滑離瞬間兩者水平動量大小相等、方向相反。']
 - id: doc_110_高雄_高雄中學_自然_物理_選修物理II_g12s1e1_s3_3
   section: 3
   number: 3

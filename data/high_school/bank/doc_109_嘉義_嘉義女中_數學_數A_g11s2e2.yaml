@@ -443,7 +443,7 @@ questions:
   number: 4
   type: fill
   page: 2
-  stem: 右圖的電路圖中有四個開關，以 A、B、C、D 表示。電流通過各開關的機率分別為 0.5、0.4、0.3、0.6，如右圖所示，若各開關的操作獨 立，則電流從左端 L 流到右端 R 的機率為＿＿＿＿。
+  stem: 一電路圖中有四個開關 $A、B、C、D$，電流通過各開關的機率分別為 $0.5、0.4、0.3、0.6$。電路結構為「$A$ 與 $B$ 串聯」再與「$C$ 與 $D$ 串聯」並聯。若各開關的操作獨立，則電流從左端 $L$ 流到右端 $R$ 的機率為＿＿＿＿。
   assets:
   - key: s3_4_f1
     kind: figure
@@ -473,7 +473,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目依賴電路圖之串並聯結構，需檢視附圖方可計算
+    fixed_by: agent
+    fix_note: （人工修正：補充電路串並聯結構條件以取代缺圖並補齊解析）
   difficulty: 2
+  explanation: $A$ 與 $B$ 串聯通過機率為 $0.5\times 0.4 = 0.2$；$C$ 與 $D$ 串聯通過機率為 $0.3\times 0.6 = 0.18$。兩路並聯，故電流通過機率 $= 1 - (1-0.2)(1-0.18) = 1 - 0.8\times 0.82 = 0.344$。
 - id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s3_5
   section: 3
   number: 5

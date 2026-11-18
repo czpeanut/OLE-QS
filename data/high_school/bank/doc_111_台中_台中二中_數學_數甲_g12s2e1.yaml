@@ -449,7 +449,7 @@ questions:
   number: 5
   type: fill
   page: 2
-  stem: 圖(一)為一花瓶，其側面的截面圖為雙曲線，如圖(二)所示。其中頸部$\overline{AB}$為雙曲線的貫軸，且與$\overline{ST}$、$\overline{PQ}$互相平行。已知$\overline{AB}$＝12 公分，$\overline{ST}$＝18 公分，$\overline{PQ}$＝42 公分，且$\overline{AB}$與$\overline{ST}$的距離為 15 公分，求花瓶的高為＿＿＿＿公分。
+  stem: 一花瓶側面的截面圖為雙曲線。其中頸部 $\overline{AB}$ 為雙曲線的貫軸，且瓶口 $\overline{ST}$ 與瓶底 $\overline{PQ}$ 互相平行，分別位於 $\overline{AB}$ 的兩側並與 $\overline{AB}$ 平行。已知 $\overline{AB} = 12$ 公分，$\overline{ST} = 18$ 公分，$\overline{PQ} = 42$ 公分，且 $\overline{AB}$ 與 $\overline{ST}$ 的距離為 $15$ 公分，求花瓶的高為＿＿＿＿公分。
   assets:
   - key: s3_5_f1
     kind: figure
@@ -485,7 +485,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖無法確認PQ與AB、ST之相對位置
+    fixed_by: agent
+    fix_note: （人工修正：補充瓶口與瓶底相對位置條件取代缺圖，補齊答案與解析）
   difficulty: 4
+  explanation: 以 $\overline{AB}$ 中點為原點、$\overline{AB}$ 所在直線為 $x$ 軸建立坐標系，則 $a = 6$，雙曲線為 $\frac{x^2}{36} - \frac{y^2}{b^2} = 1$。代入 $T(9, 15)$ 得 $\frac{81}{36} - \frac{225}{b^2} = 1 \Rightarrow b^2 = 180$。代入瓶底 $Q(21, y)$ 得 $\frac{441}{36} - \frac{y^2}{180} = 1 \Rightarrow y^2 = 2025 \Rightarrow |y| = 45$。因 $\overline{ST}$ 與 $\overline{PQ}$ 在貫軸兩側，花瓶高為 $15 + 45 = 60$ 公分。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '60'
 - id: doc_111_台中_台中二中_數學_數甲_g12s2e1_s3_6
   section: 3
   number: 6

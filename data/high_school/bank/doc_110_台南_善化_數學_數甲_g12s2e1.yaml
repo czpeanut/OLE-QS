@@ -490,7 +490,13 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 某飲料店推出滿百享折扣的活動，只要購買的飲料總金額超過一百元即可玩幸運轉盤一次。 小美訂了120元的飲料，可以玩一次幸運轉盤。 (1) 小美這次需付原價的機率？＿＿＿＿
+  stem: '某飲料店推出滿百享折扣的活動，只要購買的飲料總金額超過一百元即可玩幸運轉盤一次。轉盤獎項如下：一等獎（五折，機率 $0.1$）、二等獎（八折，機率 $0.5$）、三等獎（折價 10 元，機率 $0.2$）、銘謝惠顧（付原價，機率 $0.2$）。小美訂了 $120$ 元的飲料，可以玩一次幸運轉盤。
+
+    (1) 小美這次需付原價的機率為何？（單選）
+
+    (2) 該次小美付款的期望值為何？
+
+    (3) 若小美連續一星期（7 天）每天都來玩一次轉盤，則轉到一獎的次數標準差為何？'
   options:
   - label: A
     content: '0.1'
@@ -501,7 +507,7 @@ questions:
   - label: D
     content: '0.4'
   - label: E
-    content: 0.5 (2) 該次小美付款的期望值為何？＿＿＿＿ (3) 若小美連續一星期都來玩一次轉盤，則轉到一獎的次數標準差為何？＿＿＿＿
+    content: '0.5'
   assets:
   - key: s3_5_f1
     kind: figure
@@ -513,7 +519,11 @@ questions:
       - 901.65
       - 416.6
       - 949.35
-  explanation: (1) $1-0.1-0.5-0.2=0.2$，故選(B)。 (2) $0.1\times (120\times 0.5)+0.5\times (120\times 0.8)+0.2\times (120-10)+0.2\times 120=100$(元)。 (3) $n=7,P=\frac{1}{10}\therefore E(X)=np=7\times \frac{1}{10}=\frac{7}{10}$，$\sigma =\sqrt{np(1-p)}=\sqrt{7\times \frac{1}{10}\times \frac{9}{10}}=\frac{3\sqrt{7}}{10}$
+  explanation: '(1) $1-0.1-0.5-0.2 = 0.2$，故選 (B)。
+
+    (2) 期望值 $= 0.1(60) + 0.5(96) + 0.2(110) + 0.2(120) = 100$ 元。
+
+    (3) $X \sim B(7, \frac{1}{10})$，標準差 $\sigma = \sqrt{7\times\frac{1}{10}\times\frac{9}{10}} = \frac{3\sqrt{7}}{10}$。'
   tags:
     unit:
       code: MA-J2-1-1
@@ -528,7 +538,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹「飲料」有缺字，且第(3)小題跨二項分布標準差
+    fixed_by: agent
+    fix_note: （人工修正：補充轉盤機率條件取代缺圖，分離選項 E 混入的題目並補齊第(1)小題答案）
   difficulty: 3
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_台南_善化_數學_數甲_g12s2e1_s3_6
   section: 3
   number: 6

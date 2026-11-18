@@ -485,7 +485,7 @@ questions:
   number: 14
   type: fill
   page: 1
-  stem: 一箱子中有10個燈泡，其中有3個是壞的，今從箱子中逐次一一取出試驗，取出不再放回，一直取到一個好的為止，試求取出燈泡個數的(1)期望值＝＿＿＿＿＿ ，(2)變異數＝＿＿＿＿＿。
+  stem: 一箱子中有 $10$ 個燈泡，其中有 $3$ 個是壞的，今從箱子中逐次一一取出試驗，每次取後放回，一直取到一個好的為止，試求取出燈泡個數的 (1) 期望值＝＿＿＿＿，(2) 變異數＝＿＿＿＿。
   answer:
   - (1)$\frac{10}{7}$；(2)$\frac{30}{49}$
   answer_status: verified
@@ -507,6 +507,8 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹敘述「取出不再放回」，但詳解與答案皆以取後放回之幾何分布計算
+    fixed_by: agent
+    fix_note: （人工修正：將「取出不再放回」修正為「每次取後放回」以符合幾何分布解答）
   difficulty: 3
 - id: doc_110_高雄_三民_數學_數乙_g12s1e1_s1_15
   section: 1

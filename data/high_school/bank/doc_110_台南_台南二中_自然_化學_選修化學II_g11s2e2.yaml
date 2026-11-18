@@ -1026,7 +1026,19 @@ questions:
   number: 3
   type: calc
   page: 3
-  stem: 完成下列表格：
+  stem: '完成下列表格（寫出各分子中心原子的混成軌域與分子形狀）：
+
+    | 分子 | 中心原子混成軌域 | 中心原子孤對電子對數 | 分子形狀 |
+
+    | --- | --- | --- | --- |
+
+    | $CH_{4}$ | (1) | (2) | (3) |
+
+    | $NH_{3}$ | (4) | (5) | (6) |
+
+    | $H_{2}O$ | (7) | (8) | (9) |
+
+    | $CO_{2}$ | (10) | (11) | (12) |'
   assets:
   - key: s3_3_f1
     kind: figure
@@ -1052,4 +1064,11 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 題幹僅有「完成下列表格：」，題目內容全在附圖中
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖表格題幹與完整答案解析）
   difficulty: 3
+  explanation: $CH_{4}$、$NH_{3}$、$H_{2}O$ 中心原子周圍皆有4對電子（$sp^{3}$ 混成），分別具 0、1、2 對孤對電子，形狀依序為正四面體、三角錐形、彎曲形；$CO_{2}$ 中心碳有2對電子（$sp$ 混成），無孤對電子，為直線形。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) sp3 (2) 0 (3) 正四面體 (4) sp3 (5) 1 (6) 三角錐形 (7) sp3 (8) 2 (9) 彎曲形 (10) sp (11) 0 (12) 直線形

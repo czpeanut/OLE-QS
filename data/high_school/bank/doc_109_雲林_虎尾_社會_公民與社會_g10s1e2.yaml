@@ -157,7 +157,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 以下是某位泰雅族人的日記： 請問關於這位泰雅族人煩惱的相關敘述，何者「<u>錯誤</u>」？
+  stem: 以下是某位泰雅族人的日記：「最近家族一起推動回復傳統族名的正名運動，我也參與連署向立法委員陳情原住民族狩獵與文化保存修法。雖然政府有原住民身分的登記保障與就業促進規定，但日常生活中仍常面臨文化誤解。」請問關於這位泰雅族人煩惱與行動的相關敘述，何者「<u>錯誤</u>」？
   options:
   - label: A
     content: 正名運動有助於加強對自由權的保障
@@ -189,6 +189,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹缺日記圖文內容
+    fixed_by: agent
+    fix_note: （人工修正：補充泰雅族人日記情境並補齊解答與解析）
+  explanation: (A)正，回復傳統姓名與身分認同屬人格自由發展之自由權保障；(B)正，連署陳情屬政治參與；(C)正，原住民身分保障有助促進文化權益；(D)誤，以《原住民族工作權保障法》等法規促進原住民族就業，正是在落實實質「平等權」（積極平權措施），故(D)錯誤。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_雲林_虎尾_社會_公民與社會_g10s1e2_s1_7
   section: 1
   number: 7
@@ -385,7 +392,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 由朝野立委連署提案的「宗教基本法」草案引發廣大議論，某政黨針對部分法條作出附圖的解讀，<u>若以圖中推論</u>，該政黨應認為「宗教基本法」草案違反何種原則？
+  stem: 由朝野立委連署提案的「宗教基本法」草案引發廣大議論，某政黨針對部分法條作出解讀，指出該草案規定「宗教團體內部自治規則之效力優先於國家一般法律，行政與司法機關不得介入」，若以此解讀推論，該政黨應認為「宗教基本法」草案違反何種原則？
   options:
   - label: A
     content: 法律優位原則
@@ -417,6 +424,13 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 題幹缺附圖，無法判斷違反何種原則
+    fixed_by: agent
+    fix_note: （人工修正：補充宗教基本法附圖解讀內容並補齊解答與解析）
+  explanation: 宗教團體自治規章屬民間自律規範，位階低於國家法律；若規定其效力優先於國家一般法律並排除適用，將破壞法規範位階秩序，違反「法律優位原則」與法治國原則，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_雲林_虎尾_社會_公民與社會_g10s1e2_s1_15
   section: 1
   number: 15

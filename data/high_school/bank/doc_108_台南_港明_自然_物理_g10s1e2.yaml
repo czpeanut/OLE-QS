@@ -272,7 +272,15 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 已知氯、氯及鉀三種元素的符號、原子序和質量數如表所示。請參考表中分析有關三種中性原子的敘述中，何者是正確的？
+  stem: '已知氯、氬及鉀三種元素的符號、原子序和質量數如下表所示。請參考表中資料分析，有關此三種中性原子的敘述中，何者正確？
+
+    | 元素 | 氯（Cl） | 氬（Ar） | 鉀（K） |
+
+    | --- | --- | --- | --- |
+
+    | 原子序 | 17 | 18 | 19 |
+
+    | 質量數 | 35 | 40 | 39 |'
   options:
   - label: A
     content: 中子數以氯最少
@@ -281,7 +289,7 @@ questions:
   - label: C
     content: 中子數三者一樣多
   - label: D
-    content: 電子數以氨最少
+    content: 電子數以氬最少
   assets:
   - key: s1_10_f1
     kind: figure
@@ -307,7 +315,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹及選項有錯字：「氯、氯及鉀」、「以氨最少」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項錯字、補充元素數據表並補全解答與解析）
   difficulty: 2
+  explanation: 中性原子中，質子數＝電子數＝原子序，中子數＝質量數－原子序。三者質子數（電子數）為氯17、氬18、鉀19；中子數為氯18、氬22、鉀20，故中子數以氯最少。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_108_台南_港明_自然_物理_g10s1e2_s1_11
   section: 1
   number: 11

@@ -55,7 +55,15 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 玟龍在整理班會議題時，覺得與公民課中討論的社會正義有關，請依(甲)、(乙)、(丙)的順序，在下列選項中幫她找出正確的配對？
+  stem: '玟龍在整理班會議題時，覺得與公民課中討論的社會正義有關，其整理的(甲)、(乙)、(丙)三項班會議題如下：
+
+    (甲) 班會表決班服款式時，必須依照會議規範讓雙方充分討論後再以多數決通過
+
+    (乙) 班費結餘款應優先補助低收入戶同學參加畢業旅行
+
+    (丙) 破壞教室門窗的同學須負責修繕賠償並執行愛校服務
+
+    請依(甲)、(乙)、(丙)的順序，在下列選項中幫她找出正確的配對？'
   options:
   - label: A
     content: 程序正義、分配正義、匡正正義
@@ -87,6 +95,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏(甲)(乙)(丙)班會議題描述並補充答案與解析）
+  explanation: (甲)強調決策與表決過程的公開、公正與合理性，屬於「程序正義」；(乙)強調資源分配應照顧弱勢需求以達實質公平，屬於「分配正義」；(丙)強調對不法或損害行為給予相稱之懲罰與賠償，屬於「匡正正義」。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_高雄_鳳山_社會_公民與社會_g10s1e1_s1_3
   section: 1
   number: 3
@@ -192,7 +207,16 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 若僅依據我國《憲法增修條文》及《臺灣地區與大陸地區人民關係條例》的相關內容，並對應下表來界定「中華民國」的領土及主權，則最合理的推論為？
+  stem: '若僅依據我國《憲法增修條文》及《臺灣地區與大陸地區人民關係條例》的相關內容，並對應下表來界定「中華民國」的領土及主權，則最合理的推論為？
+
+
+    | 地區 | 政府目前實際有效管轄權（統治權） | 憲法與條例名義規範範圍 |
+
+    | --- | --- | --- |
+
+    | 臺灣地區（臺澎金馬） | 甲 | 丙 |
+
+    | 大陸地區 | 乙 | 丁 |'
   options:
   - label: A
     content: 甲乙兩者皆應填入「有」
@@ -224,6 +248,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附表，選項A有亂碼字元（乙）
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏領土與主權對照表格並補充答案與解析）
+  explanation: 依我國《憲法增修條文》及《臺灣地區與大陸地區人民關係條例》規定，我國目前實際有效統治範圍僅及於「臺灣地區」（甲應填「有」），而並未實際統治「大陸地區」（乙應填「無」）；但就憲法與兩岸條例名義上之主權及領土範圍而言，兩者仍均涵蓋在內（丙、丁皆為「有」）。答案選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_高雄_鳳山_社會_公民與社會_g10s1e1_s1_8
   section: 1
   number: 8
@@ -382,13 +413,13 @@ questions:
   stem: 請問有關形式平等與實質平等的比較，下列哪個選項正確？
   options:
   - label: A
-    content: (A)
+    content: 形式平等強調「相同事物相同對待」，不考慮個別差異；實質平等強調「合理差別待遇」，針對弱勢或差異給予不同保障
   - label: B
-    content: (B)
+    content: 形式平等依個人需求分配資源；實質平等則要求所有人領取完全相同金額的補助
   - label: C
-    content: (C)
+    content: 形式平等僅適用於刑事訴訟程序；實質平等僅適用於民事契約關係
   - label: D
-    content: (D)
+    content: 形式平等又稱為結果平等；實質平等又稱為齊頭式平等
   assets:
   - key: s1_14_f1
     kind: figure
@@ -411,6 +442,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附表
+    fixed_by: agent
+    fix_note: （人工修正：補全缺漏選項文字並補充答案與解析）
+  explanation: 形式平等（齊頭式平等）指法律上不問條件差異一律給予相同對待；實質平等（合理差別待遇）則考量個人在生理、社會或經濟條件上的差異，對弱勢者給予適當扶助或保障（如身障者保障名額），以達成真正的公平。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_高雄_鳳山_社會_公民與社會_g10s1e1_s1_15
   section: 1
   number: 15
@@ -941,7 +979,16 @@ questions:
     content: 西藏獲得滿分所以整體表現排名第一
   - label: D
     content: 兩者在政治權利上的表現程度都一樣
-  group_stem: 「自由之家」公布2019年世界自由度調查報告，其中有兩張圖表呈現中國與西藏的自由度現況，請問：
+  group_stem: '「自由之家」（Freedom House）公布2019年世界自由度調查報告，中國與西藏的自由度評比如下（等級 1 為最自由、7 為最不自由）：
+
+
+    | 地區 | 整體自由度評級 | 政治權利等級（1～7） | 公民自由等級（1～7） | 總分（滿分100） |
+
+    | --- | --- | --- | --- | --- |
+
+    | 中國 | 不自由 | 7 | 6 | 11 |
+
+    | 西藏 | 不自由 | 7 | 7 | 1 |'
   shared_asset: g2_35_36
   tags:
     unit:
@@ -954,6 +1001,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 缺附圖
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏自由之家2019年評比數據表並補充答案與解析）
+  explanation: 由表可知，中國與西藏在「政治權利」等級皆為最差的第 7 級（表現程度一樣），故(D)正確。(A)(B)西藏公民自由第 7 級、總分 1 分，比中國第 6 級、11 分更差；(C)兩者均遠低於滿分。答案選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_高雄_鳳山_社會_公民與社會_g10s1e1_s2_36
   section: 2
   number: 36
@@ -969,7 +1023,16 @@ questions:
     content: 西藏受到一國兩制影響而享有較高的公民自由權利
   - label: D
     content: 中國在經濟改革開放後帶動了兩者政治權利的進展
-  group_stem: 「自由之家」公布2019年世界自由度調查報告，其中有兩張圖表呈現中國與西藏的自由度現況，請問：
+  group_stem: '「自由之家」（Freedom House）公布2019年世界自由度調查報告，中國與西藏的自由度評比如下（等級 1 為最自由、7 為最不自由）：
+
+
+    | 地區 | 整體自由度評級 | 政治權利等級（1～7） | 公民自由等級（1～7） | 總分（滿分100） |
+
+    | --- | --- | --- | --- | --- |
+
+    | 中國 | 不自由 | 7 | 6 | 11 |
+
+    | 西藏 | 不自由 | 7 | 7 | 1 |'
   shared_asset: g2_35_36
   tags:
     unit:
@@ -982,6 +1045,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 缺附圖
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏自由之家2019年評比數據表並補充答案與解析）
+  explanation: 西藏總分僅 1 分、政治權利與公民自由均為最差的第 7 級，顯示中國對西藏在宗教、言論與政治等各方面的管控程度，比在中國境內其他地區（總分11分、公民自由6級）還更為嚴密。答案選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_高雄_鳳山_社會_公民與社會_g10s1e1_s2_37
   section: 2
   number: 37

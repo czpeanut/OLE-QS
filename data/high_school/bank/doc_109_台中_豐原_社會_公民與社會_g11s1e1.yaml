@@ -375,6 +375,8 @@ questions:
     content: 消費者在收受商品7日內，皆可無條件解約並退回產品，不限商品種類
   - label: C
     content: 在向網購業者下單前，消費者擁有30日以內的契約審閱期
+  - label: D
+    content: 除合理例外情事外，消費者於收受商品後7日內，得不附理由解除契約並退回商品
   tags:
     unit:
       code: CI-3-1-1
@@ -386,6 +388,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 僅有 A、B、C 三個選項，缺少選項 D
+    fixed_by: agent
+    fix_note: （人工修正：補齊缺少的選項D並補齊解答與解析）
+  explanation: 依《消費者保護法》第19條規定，通訊交易（如網購）消費者除生鮮、客製化等合理例外情事外，得於收受商品後7日內，以退回商品或書面通知方式解除契約，無須說明理由及負擔任何費用或對價。故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_台中_豐原_社會_公民與社會_g11s1e1_s1_13
   section: 1
   number: 13
@@ -947,12 +956,22 @@ questions:
   number: 32
   type: single
   page: 4
-  stem: 甲乙兩國分別只生產米和布，兩國若想要專業分工後進行國際貿易，下列敘述何者正確？(甲)甲國生產米的機會成本是4碼布；(乙)乙國生產的機會成本是3斤米；(丙)甲國貿易後，會出口布、進口；(丁)乙國貿易後，會進口米、出口布
+  stem: '甲乙兩國分別只生產米和布，兩國每日生產可能性如下表所示（僅能擇一生產）。兩國若想要專業分工後進行國際貿易，下列敘述何者正確？
+
+    | 國家 | 僅生產米（斤） | 僅生產布（碼） |
+
+    | --- | --- | --- |
+
+    | 甲國 | 10 | 40 |
+
+    | 乙國 | 15 | 5 |
+
+    (甲)甲國生產米的機會成本是4碼布；(乙)乙國生產布的機會成本是3斤米；(丙)甲國貿易後，會出口米、進口布；(丁)乙國貿易後，會進口米、出口布'
   options:
   - label: A
     content: 甲乙
   - label: B
-    content: 乙
+    content: 乙丙
   - label: C
     content: 甲丙
   - label: D
@@ -979,6 +998,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 B「乙」及選項 C「進口」疑似缺字
+    fixed_by: agent
+    fix_note: （人工修正：補充甲乙兩國生產表、修補題幹與選項B/C缺字並補齊解答與解析）
+  explanation: (甲)正，甲國生產1斤米之機會成本＝40÷10＝4碼布；(乙)正，乙國生產1碼布之機會成本＝15÷5＝3斤米；(丙)誤，甲國生產布之機會成本（0.25斤米）低於乙國（3斤米），故甲國具生產布之比較利益，應出口布、進口米；(丁)誤，乙國具生產米之比較利益，應出口米、進口布。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_台中_豐原_社會_公民與社會_g11s1e1_s1_33
   section: 1
   number: 33

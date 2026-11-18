@@ -305,7 +305,7 @@ questions:
   number: 22
   type: fill
   page: 2
-  stem: 如附圖所示，$_{1}$的量值為200 N，$_{2}$的量值為150 N。若以一輕木棒的左端為轉軸，則此一木棒所受的合力矩為＿＿＿m．N。
+  stem: 一輕木棒長度為 2 m，以左端為轉軸 O，在距離左端 1 m 處受垂直木棒向上的力 $F_{1}＝200$ N 作用，在右端（距離左端 2 m 處）受垂直木棒向下的力 $F_{2}＝150$ N 作用，則此木棒所受的合力矩量值為＿＿＿ m．N。
   assets:
   - key: s1_22_f1
     kind: figure
@@ -331,7 +331,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「_{1}」「_{2}」漏印力符號F
+    fixed_by: agent
+    fix_note: （人工修正：補全漏印力符號與施力位置條件（免附圖）並補全解答與解析）
   difficulty: 2
+  explanation: 以左端為轉軸，$F_{1}$ 產生逆時鐘力矩 $200\times 1＝200$ m．N，$F_{2}$ 產生順時鐘力矩 $150\times 2＝300$ m．N，故合力矩量值為 $|200－300|＝100$ m．N（順時鐘方向）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '100'
 - id: doc_109_屏東_屏東高中_自然_物理_選修物理II_g11s2e1_s1_23
   section: 1
   number: 23

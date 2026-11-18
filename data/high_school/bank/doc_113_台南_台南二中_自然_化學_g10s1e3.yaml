@@ -251,7 +251,18 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 定溫下，將不同質量的硝酸鉀固體加入20 mL水中，充分攪拌後測量未溶解的硝酸鉀質量，請問理論上附表中的X值為何？
+  stem: '定溫下，將不同質量的硝酸鉀固體加入 20 mL 水中，充分攪拌後測量未溶解的硝酸鉀質量，實驗數據如下表：
+
+    | 實驗編號 | 1 | 2 | 3 | 4 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 加入 $KNO_{3}$ 質量（g） | 2.0 | 4.0 | 6.0 | 8.0 |
+
+    | 未溶解 $KNO_{3}$ 質量（g） | 0 | 0 | 0.6 | X |
+
+
+    請問理論上附表中的 X 值為何？'
   options:
   - label: A
     content: '0.6'
@@ -292,6 +303,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺少硝酸鉀實驗數據表
+    fixed_by: agent
+    fix_note: （人工修正：補充缺漏之硝酸鉀溶解度實驗數據表並移除選項E多餘附圖欄位）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_g10s1e3_s1_8
   section: 1

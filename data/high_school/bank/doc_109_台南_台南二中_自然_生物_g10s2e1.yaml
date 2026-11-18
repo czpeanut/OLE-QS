@@ -1420,7 +1420,7 @@ questions:
   - label: A
     content: 動物
   - label: B
-    content: 植物（填代號，1分）
+    content: 植物
   answer:
   - A
   answer_status: verified
@@ -1439,7 +1439,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖致無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖細胞構造文字條件並清理選項文字）
   difficulty: 2
+  group_stem: 某真核細胞構造示意圖中，細胞外圍僅有細胞膜而無細胞壁，細胞內不含葉綠體與大型中央液胞，且具有中心粒（中心體）；圖中標示a～f六種構造分別為：a為高基氏體、b為平滑內質網、c為溶體、d為粒線體、e為細胞核（具雙層核膜）、f為核糖體（無膜構造）。請依據上述資料回答下列問題：
+  explanation: 該細胞具中心粒，且無細胞壁、葉綠體與大型中央液胞，故為動物細胞，選(A)。
 - id: doc_109_台南_台南二中_自然_生物_g10s2e1_s4_39
   section: 4
   number: 39
@@ -1447,9 +1451,9 @@ questions:
   page: 5
   stem: 承上題，請簡述你判斷的依據。（兩點，各2分）
   answer:
-  - 以下任寫兩點即給分（若未寫出，但推論合理者亦給分）：
-  answer_status: verified
-  answer_source: answer_key
+  - 1. 具有中心粒（或溶體）；2. 缺乏細胞壁、葉綠體與大型中央液胞（任寫兩點即可）
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: BI-1-1-1
@@ -1464,17 +1468,18 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖致無法作答且參考答案不完整
+    fixed_by: agent
+    fix_note: （人工修正：補充缺圖細胞構造文字條件並補齊完整參考答案）
   difficulty: 3
+  group_stem: 某真核細胞構造示意圖中，細胞外圍僅有細胞膜而無細胞壁，細胞內不含葉綠體與大型中央液胞，且具有中心粒（中心體）；圖中標示a～f六種構造分別為：a為高基氏體、b為平滑內質網、c為溶體、d為粒線體、e為細胞核（具雙層核膜）、f為核糖體（無膜構造）。請依據上述資料回答下列問題：
+  explanation: 高等植物細胞具細胞壁、葉綠體與大型中央液胞且無中心粒；動物細胞則具中心粒與溶體，且無細胞壁與葉綠體。
+  review_note: 原答案卷答案 ['以下任寫兩點即給分（若未寫出，但推論合理者亦給分）：']，執行 agent 修正為 ['1. 具有中心粒（或溶體）；2. 缺乏細胞壁、葉綠體與大型中央液胞（任寫兩點即可）']
 - id: doc_109_台南_台南二中_自然_生物_g10s2e1_s4_40
   section: 4
   number: 40
   type: calc
   page: 5
-  stem: '編號a～f中，哪些具有單層膜？（填代號，全對才給分，２分）
-
-    (三)請依下方圖文回答41.～44.題
-
-    下圖為顯微鏡構造（圖一）與安裝於該顯微鏡的三個物鏡（圖二），且已知三個物鏡的倍率為4X、10X與40X。'
+  stem: 編號a～f中，哪些具有單層膜？（填代號，全對才給分，2分）
   assets:
   - key: s4_40_f1
     kind: figure
@@ -1510,13 +1515,21 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含下一題組前導文字
+    fixed_by: agent
+    fix_note: （人工修正：移除題幹誤帶入之後續題組文字，補充細胞構造文字條件並補齊答案）
   difficulty: 2
+  group_stem: 某真核細胞構造示意圖中，細胞外圍僅有細胞膜而無細胞壁，細胞內不含葉綠體與大型中央液胞，且具有中心粒（中心體）；圖中標示a～f六種構造分別為：a為高基氏體、b為平滑內質網、c為溶體、d為粒線體、e為細胞核（具雙層核膜）、f為核糖體（無膜構造）。請依據上述資料回答下列問題：
+  explanation: a（高基氏體）、b（平滑內質網）、c（溶體）均為單層膜胞器；d（粒線體）與e（細胞核）為雙層膜構造；f（核糖體）為無膜構造。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - a、b、c
 - id: doc_109_台南_台南二中_自然_生物_g10s2e1_s4_41
   section: 4
   number: 41
   type: fill
   page: 5
-  stem: 若需將觀察畫面往右下方移動，需調整何者？＿＿＿＿（填代號，1分）
+  stem: 若需將觀察畫面中的物像往右下方移動，需將載物臺上的玻片往哪一方向移動？（1分）
   tags:
     unit:
       code: BI-1-1-4
@@ -1531,7 +1544,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組圖文附於第40題，本題缺前導題幹
+    fixed_by: agent
+    fix_note: （人工修正：補回前導題組文字說明並補齊答案與解析）
   difficulty: 2
+  group_stem: 複式顯微鏡構造（圖一）各代號如下：甲為目鏡、乙為旋轉盤（物鏡轉換器）、丙為物鏡、丁為載物臺、戊為粗調節輪、己為細調節輪、庚為光圈、辛為反光鏡。安裝於旋轉盤上的三個物鏡（圖二）分別標示為A、B、C，其鏡筒長度依序為A最短（4X）、B次之（10X）、C最長（40X）。請依據上述資料回答下列問題：
+  explanation: 複式顯微鏡所見影像為上下、左右皆顛倒的虛像，欲使視野中的物像往右下方移動，應將玻片標本往反方向（左上方）移動。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 左上方
 - id: doc_109_台南_台南二中_自然_生物_g10s2e1_s4_42
   section: 4
   number: 42
@@ -1552,7 +1573,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組圖文附於第40題，本題缺前導題幹
+    fixed_by: agent
+    fix_note: （人工修正：補回前導題組文字說明並補齊答案與解析）
   difficulty: 1
+  group_stem: 複式顯微鏡構造（圖一）各代號如下：甲為目鏡、乙為旋轉盤（物鏡轉換器）、丙為物鏡、丁為載物臺、戊為粗調節輪、己為細調節輪、庚為光圈、辛為反光鏡。安裝於旋轉盤上的三個物鏡（圖二）分別標示為A、B、C，其鏡筒長度依序為A最短（4X）、B次之（10X）、C最長（40X）。請依據上述資料回答下列問題：
+  explanation: 總放大倍率＝目鏡倍率×物鏡倍率＝15×4＝60倍。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '60'
 - id: doc_109_台南_台南二中_自然_生物_g10s2e1_s4_43
   section: 4
   number: 43
@@ -1573,7 +1602,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組圖文附於第40題，本題缺前導題幹
+    fixed_by: agent
+    fix_note: （人工修正：補回前導題組文字說明並補齊答案與解析）
   difficulty: 2
+  group_stem: 複式顯微鏡構造（圖一）各代號如下：甲為目鏡、乙為旋轉盤（物鏡轉換器）、丙為物鏡、丁為載物臺、戊為粗調節輪、己為細調節輪、庚為光圈、辛為反光鏡。安裝於旋轉盤上的三個物鏡（圖二）分別標示為A、B、C，其鏡筒長度依序為A最短（4X）、B次之（10X）、C最長（40X）。請依據上述資料回答下列問題：
+  explanation: 更換高倍鏡時，應先轉動旋轉盤（乙）切換物鏡，再轉動細調節輪（己）微調焦距至畫面清晰，不可轉動粗調節輪以免壓碎玻片。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 乙
+  - 己
 - id: doc_109_台南_台南二中_自然_生物_g10s2e1_s4_44
   section: 4
   number: 44
@@ -1594,7 +1632,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組圖文附於第40題，本題缺前導題幹
+    fixed_by: agent
+    fix_note: （人工修正：補回前導題組文字說明並補齊答案與解析）
   difficulty: 2
+  group_stem: 複式顯微鏡構造（圖一）各代號如下：甲為目鏡、乙為旋轉盤（物鏡轉換器）、丙為物鏡、丁為載物臺、戊為粗調節輪、己為細調節輪、庚為光圈、辛為反光鏡。安裝於旋轉盤上的三個物鏡（圖二）分別標示為A、B、C，其鏡筒長度依序為A最短（4X）、B次之（10X）、C最長（40X）。請依據上述資料回答下列問題：
+  explanation: 物鏡A為4X（低倍鏡），放大倍率最小、視野範圍最大，因此能觀察到最多的細胞數目。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 shared_assets:
 - key: g4_36_37
   label: 題組附圖

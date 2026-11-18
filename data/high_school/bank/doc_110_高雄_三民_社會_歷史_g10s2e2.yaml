@@ -679,7 +679,19 @@ questions:
   number: 26
   type: single
   page: 3
-  stem: 阿華在圖書館找到一分文件，裡面夾著一張清朝中葉人口數量統計圖，請問下列何者最可能是文件中對此圖表的解釋？
+  stem: '阿華在圖書館找到一份文件，裡面夾著一張清朝中葉官方統計人口數量表（如下），請問下列何者最可能是文件中對此圖表的解釋？
+
+    | 年代 | 官方統計人口數（約略） |
+
+    | --- | --- |
+
+    | 乾隆 6 年（1741 年） | 1.43 億人 |
+
+    | 乾隆 55 年（1790 年） | 3.01 億人 |
+
+    | 道光 30 年（1850 年） | 4.30 億人 |
+
+    | 咸豐 10 年（1860 年） | 約 2.60 億人（部分省分未報） |'
   options:
   - label: A
     content: 乾隆至道光年間人口大量增加，全國生活水準亦持續提升
@@ -700,6 +712,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺清朝中葉人口數量統計圖
+    fixed_by: agent
+    fix_note: （人工修正：補充清代人口統計表並補齊解答與解析）
+  explanation: 乾隆至道光年間人口快速成長，反而造成土地與糧食壓力（非生活水準持續提升或糧食外銷）；道光末至咸豐年間統計人口驟減，主因太平天國戰亂與流民遷徙導致戶口無法正常查報，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_高雄_三民_社會_歷史_g10s2e2_s1_27
   section: 1
   number: 27
@@ -1145,6 +1164,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組缺閱讀資料
+    fixed_by: agent
+    fix_note: （人工修正：補充題組閱讀資料並補齊解答與解析）
+  group_stem: ◎資料一：1870年代美國經濟陷入蕭條，加州等地白人勞工失業嚴重。由於早期來美的華人勞工勤奮且願接受較低工資，在鐵路修築、礦業與製造業上成為白人勞工的競爭對手，引發白人勞工與工會強烈不滿，反華排華浪潮高漲。最終美國國會於 1882 年通過《排華法案》，明定禁止華人勞工入境美國十年，並禁止華人歸化取得美國公民身分。請回答下列問題：
+  explanation: 依資料一所述，美國《排華法案》的社會經濟背景為華工工資低廉，使白人勞工認為工作機會遭到剝奪，進而推動排華立法，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_高雄_三民_社會_歷史_g10s2e2_s3_6
   section: 3
   number: 6
@@ -1162,6 +1189,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組缺資料一
+    fixed_by: agent
+    fix_note: （人工修正：補充題組閱讀資料並補齊解答與解析）
+  group_stem: ◎資料一：1870年代美國經濟陷入蕭條，加州等地白人勞工失業嚴重。由於早期來美的華人勞工勤奮且願接受較低工資，在鐵路修築、礦業與製造業上成為白人勞工的競爭對手，引發白人勞工與工會強烈不滿，反華排華浪潮高漲。最終美國國會於 1882 年通過《排華法案》，明定禁止華人勞工入境美國十年，並禁止華人歸化取得美國公民身分。請回答下列問題：
+  explanation: 依據資料一，1882 年美國《排華法案》對華人的兩項主要限制為：禁止華工入境十年，以及禁止華人歸化成為美國公民。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) 禁止華人勞工入境美國（為期十年）；(2) 禁止華人歸化取得美國公民身分。
 - id: doc_110_高雄_三民_社會_歷史_g10s2e2_s3_7
   section: 3
   number: 7

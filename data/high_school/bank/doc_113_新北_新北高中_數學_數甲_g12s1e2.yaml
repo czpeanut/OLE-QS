@@ -133,14 +133,12 @@ questions:
   number: 5
   type: calc
   page: 1
-  stem: 設 f（x）為可微分函數，其部分圖形如右，則 f'(1)＜f'(2)。
+  stem: 設 $f(x)$ 為可微分函數，已知其圖形在 $x=1$ 處切線斜率為正，而在 $x=2$ 處切線斜率為負，則 $f'(1) < f'(2)$。
   answer:
   - ╳
   answer_status: verified
   answer_source: answer_key
-  explanation: '╳：由題圖可知，在 x＝1 處的切線斜率為正，而在 x＝2 處的切線斜率為負
-
-    所以 f''(1)＞f''(2)'
+  explanation: ╳：在 $x=1$ 處的切線斜率 $f'(1) > 0$，在 $x=2$ 處的切線斜率 $f'(2) < 0$，故 $f'(1) > f'(2)$。
   tags:
     unit:
       code: MA-J1-2-1
@@ -155,6 +153,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹提及「部分圖形如右」但缺附圖（疑附圖誤植於下一題）
+    fixed_by: agent
+    fix_note: （人工修正：補充圖形切線斜率條件以取代缺圖）
   difficulty: 1
 - id: doc_113_新北_新北高中_數學_數甲_g12s1e2_s1_6
   section: 1

@@ -506,7 +506,7 @@ questions:
   number: 8
   type: fill
   page: 2
-  stem: 哥德式建築常使用尖拱設計，附圖是其中一種稱為四分之一拱的外觀設計。下半部是一矩形ABCD，上半部則是以$\overline{AB}$的四等分點為圓心，半徑為$\frac{3}{4}\overline{AB}$的兩條相等圓弧$︵$及$︵$所組成。已知$\overline{AB}$＝8，過P點分別作切線PE與PF，試求cos∠EPF＝＿＿＿＿。
+  stem: 哥德式建築常使用尖拱設計，其中一種稱為四分之一拱的外觀設計：下半部是一矩形 $ABCD$，上半部則是以 $\overline{AB}$ 的四等分點 $O_1, O_2$（其中 $O_1$ 靠近 $A$、$O_2$ 靠近 $B$）為圓心，半徑為 $\frac{3}{4}\overline{AB}$ 的兩條相等圓弧 $\overparen{PB}$（以 $O_1$ 為圓心）及 $\overparen{PA}$（以 $O_2$ 為圓心）在上方交於 $P$ 點所組成。已知 $\overline{AB} = 8$，過 $P$ 點分別作兩圓弧的切線 $PE$ 與 $PF$（向兩側下方延伸），試求 $\cos\angle EPF =$＿＿＿＿。
   assets:
   - key: s3_8_f1
     kind: figure
@@ -519,9 +519,9 @@ questions:
       - 344.8
       - 476.1
   answer:
-  - $\frac{-7}{9}$
-  answer_status: verified
-  answer_source: answer_key
+  - $-\frac{7}{9}$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-B3-3-2
@@ -536,7 +536,11 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹圓弧符號處僅留「︵」（疑漏弧名，可參照附圖）
+    fixed_by: agent
+    fix_note: （人工修正：補齊圓弧名稱與幾何定義以取代缺圖並補齊解析）
   difficulty: 4
+  explanation: 由題意，兩圓心距離 $\overline{O_1 O_2} = \frac{1}{2}\overline{AB} = 4$，半徑 $\overline{O_1 P} = \overline{O_2 P} = \frac{3}{4}(8) = 6$。在 $\triangle O_1 P O_2$ 中，由餘弦定理得 $\cos\angle O_1 P O_2 = \frac{6^2+6^2-4^2}{2\times 6\times 6} = \frac{56}{72} = \frac{7}{9}$。因切線 $PE \perp O_1 P$、$PF \perp O_2 P$，故 $\angle EPF = 180^\circ - \angle O_1 P O_2$，得 $\cos\angle EPF = -\frac{7}{9}$。
+  review_note: 原答案卷答案 ['$\\frac{-7}{9}$']，執行 agent 修正為 ['$-\\frac{7}{9}$']
 - id: doc_109_桃園_武陵_數學_數B_g11s1e3_s4_1
   section: 4
   number: 1

@@ -388,7 +388,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 附圖是元帝國與四大汗國的分布圖。請問哪兩個國家最可能改信伊斯蘭教？
+  stem: 在元帝國與四大汗國的分布圖中，代號分別代表：甲（大元帝國／中國本部）、乙（察合台汗國／中亞）、丙（窩闊台汗國／阿爾泰山一帶）、丁（伊兒汗國／西亞波斯一帶）、戊（欽察汗國／俄羅斯草原）。請問哪兩個汗國因位於西亞與俄羅斯草原，最先且最徹底地改信伊斯蘭教並定為國教？
   options:
   - label: A
     content: 甲丙
@@ -420,6 +420,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖，無法辨識圖中甲乙丙丁戊所指汗國
+    fixed_by: agent
+    fix_note: （人工修正：補充四大汗國代號說明並補齊解答與解析）
+  explanation: 西亞波斯的伊兒汗國（丁，合贊汗於 1295 年改信）與俄羅斯草原的欽察汗國（戊，月即別汗於 1313 年定為國教）先後全面伊斯蘭化，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_111_基隆_中山_社會_歷史_g11s1e2_s1_16
   section: 1
   number: 16
@@ -573,21 +580,9 @@ questions:
 - id: doc_111_基隆_中山_社會_歷史_g11s1e2_s1_22
   section: 1
   number: 22
-  type: calc
+  type: single
   page: 2
-  stem: '附表為奥米亞王朝與阿拔斯王朝的比較表，請問下列選項何者正確？
-
-    |  | 奥米亞王朝 | 阿拔斯王朝 |
-
-    | --- | --- | --- |
-
-    | (A)教義 | 什葉派 | 遜尼派 |
-
-    | (B)首都 | 巴格達 | 大馬士革 |
-
-    | (C)疆域 | 横跨歐、亞、非 | 橫跨歐、亞 |
-
-    | (D)政治 | 堅持阿拉伯主義 | 任用波斯人擔任官僚 |'
+  stem: 附表為奧米亞王朝與阿拔斯王朝的比較表，請問下列選項何者正確？
   tags:
     unit:
       code: HI-3-3-1
@@ -599,6 +594,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹表格有亂碼（「政」應為「政治」）
+    fixed_by: agent
+    fix_note: （人工修正：修正題型與選項格式並補齊解答與解析）
+  options:
+  - label: A
+    content: 教義：奧米亞王朝為什葉派；阿拔斯王朝為遜尼派
+  - label: B
+    content: 首都：奧米亞王朝為巴格達；阿拔斯王朝為大馬士革
+  - label: C
+    content: 疆域：奧米亞王朝橫跨歐、亞、非；阿拔斯王朝橫跨歐、亞
+  - label: D
+    content: 政治：奧米亞王朝堅持阿拉伯主義；阿拔斯王朝任用波斯人擔任官僚
+  explanation: 奧米亞王朝以阿拉伯人為統治核心、首都在大馬士革、疆域橫跨歐亞非；阿拔斯王朝由波斯人支持建國，重用波斯人擔任官僚並遷都巴格達（兩王朝皆屬遜尼派），故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_111_基隆_中山_社會_歷史_g11s1e2_s1_23
   section: 1
   number: 23

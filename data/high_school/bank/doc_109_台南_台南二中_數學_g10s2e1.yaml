@@ -529,20 +529,20 @@ questions:
 - id: doc_109_台南_台南二中_數學_g10s2e1_s7_2
   section: 7
   number: 2
-  type: single
+  type: multiple
   page: 5
-  stem: 設原始成績為x分，調分後為y分，且滿足y＝ax＋b， 可知$\begin{cases}70a+b=90 \\ 40a+b=63\end{cases}$ ⇒ $\begin{cases}a=\frac{9}{10} \\ b=27\end{cases}$ ⇒ y＝$\frac{9}{10}$x＋27。
+  stem: 某班某次數學段考最高分為 70 分、最低分為 20 分，老師決定以線性函數 $y = ax + b$（$x$ 為原始成績，$y$ 為調分後成績）進行調分，使得原本 70 分調為 90 分、40 分調為 63 分，試選出正確的選項。
   options:
   - label: A
-    content: ×：y＝$\frac{9}{10}$×20＋27＝45，所以最低分為45分。
+    content: 調分後的最低分為 40 分
   - label: B
-    content: ○：調分後的全距＝90－45＝45，原始成績的全距＝70－20＝50，所以調分後全距變小。
+    content: 調分後的全距變小
   - label: C
-    content: ×：$\delta _{y}^{2}=(\frac{9}{10}) \delta _{x}^{2}=0.81 \delta _{x}^{2}$，所以調分後的變異數為原本的0.81倍。
+    content: 調分後的變異數為原本的 $0.9$ 倍
   - label: D
-    content: ○：設原始成績與調分後的第1四分位數分別為$m_{x}$，$m_{y}$， 可知$m_{y}$＝$\frac{9}{10}m_{x}$＋27，因為$m_{x }$≤ 70， 所以$m_{y}$－$m_{x}$＝27－$\frac{1}{10}m_{x}$ ≥ 20＞0，即調分後的第1四分位數較大。
+    content: 調分後的第 1 四分位數較大
   - label: E
-    content: ○：因為直線y＝$\frac{9}{10}$x＋27的斜率為$\frac{9}{10}$＞0，所以調分前後分數的相關係數為1。 故選(B)(D)(E)。
+    content: 調分前後分數的相關係數為 $1$
   tags:
     unit:
       code: MA-2-3-1
@@ -557,7 +557,26 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹、選項與答案並修正題型為 multiple）
   difficulty: 2
+  explanation: '設 $y = ax+b$，解 $\begin{cases}70a+b=90 \\ 40a+b=63\end{cases}$ 得 $a=\frac{9}{10}, b=27$，即 $y=\frac{9}{10}x+27$。
+
+    (A) ×：最低分為 $\frac{9}{10}\times 20+27=45$ 分。
+
+    (B) ○：調分後全距 $=90-45=45 < 50$。
+
+    (C) ×：變異數為原本的 $(\frac{9}{10})^2 = 0.81$ 倍。
+
+    (D) ○：$m_y - m_x = 27 - \frac{1}{10}m_x \ge 20 > 0$。
+
+    (E) ○：斜率 $\frac{9}{10}>0$，相關係數為 $1$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - D
+  - E
 - id: doc_109_台南_台南二中_數學_g10s2e1_s8_1
   section: 8
   number: 1
@@ -591,7 +610,7 @@ questions:
   number: 2
   type: fill
   page: 5
-  stem: a＋b＋c＝3b＝36 ⇒ b＝12， 設公差為d，可知a＝12－d，c＝12＋d ⇒ 13－d，16，55＋d成等比數列 ⇒ $16^{2}$＝( 13－d ) ( 55＋d )＝－$d^{2}$－42d＋715 ⇒ $d^{2}$＋42d－459＝0 ⇒ ( d－9 ) ( d＋51 )＝0 ⇒ d＝－51或9。 (i) d＝－51時，a＝12－(－51 )＝63，c＝12＋(－51 )＝－39。 (ii) d＝9時，a＝12－9＝3，c＝12＋9＝21。 故 ( a , b , c )＝( 63 , 12 ,－39 ) 或 ( 3 , 12 , 21 )。
+  stem: 已知三數 $a, b, c$ 成等差數列且其和為 $36$，若將此三數依序分別加上 $1, 4, 43$ 後形成等比數列，求數對 $(a, b, c) =$＿＿＿＿。
   tags:
     unit:
       code: MA-2-1-1
@@ -606,13 +625,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 2
+  explanation: 由 $a+b+c=3b=36$ 得 $b=12$。設公差為 $d$，則 $a=12-d, c=12+d$。依題意 $13-d, 16, 55+d$ 成等比數列，故 $16^2 = (13-d)(55+d) \Rightarrow d^2+42d-459=0 \Rightarrow (d-9)(d+51)=0$，得 $d=9$ 或 $-51$，故 $(a,b,c) = (63,12,-39)$ 或 $(3,12,21)$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $(63, 12, -39)$ 或 $(3, 12, 21)$
 - id: doc_109_台南_台南二中_數學_g10s2e1_s8_3
   section: 8
   number: 3
   type: fill
   page: 5
-  stem: 所求＝100＋116＋…＋500＝$\frac{51\times (100+500)}{2}$＝15300。
+  stem: 求 $100$ 到 $500$ 之間（含）所有除以 $8$ 餘 $4$ 的整數總和為＿＿＿＿。
   tags:
     unit:
       code: MA-2-1-2
@@ -627,13 +653,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，修正數列第二項筆誤並還原題幹與答案）
   difficulty: 2
+  explanation: 所求數列為 $100, 108, 116, \dots, 500$，共 $\frac{500-100}{8}+1 = 51$ 項，總和 $= \frac{51\times(100+500)}{2} = 15300$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '15300'
 - id: doc_109_台南_台南二中_數學_g10s2e1_s8_4
   section: 8
   number: 4
   type: fill
   page: 5
-  stem: 所求＝6000×( 1＋0.005)$^{20}$＋6000×( 1＋0.005)$^{19}$＋…＋6000×( 1＋0.005) ＝6000×( 1.005＋$1.005^{2}$＋…＋$1.005^{20}$ ) ＝6000×1.005×$\frac{1.005^{20}-1}{1.005-1}$ ≈ 6030×$\frac{1.1-1}{0.005}$＝120600 (元)。
+  stem: 每月月初存入 $6000$ 元，月利率 $0.5\%$，按月複利計算，則第 $20$ 個月月底的本利和約為＿＿＿＿元。（已知 $1.005^{20} \approx 1.1$）
   tags:
     unit:
       code: MA-2-1-2
@@ -648,13 +681,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 3
+  explanation: 所求 $= 6000(1.005 + 1.005^2 + \cdots + 1.005^{20}) = 6000\times 1.005\times\frac{1.005^{20}-1}{1.005-1} \approx 6030\times\frac{1.1-1}{0.005} = 120600$（元）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '120600'
 - id: doc_109_台南_台南二中_數學_g10s2e1_s8_5
   section: 8
   number: 5
   type: fill
   page: 6
-  stem: 利用累加法 所以$a_{n}$＝3＋6 ( $2^{2}$＋$3^{2}$＋…＋$n^{2}$ )－2 ( 2＋3＋…＋n )＋( n－1 ) ＝6 ( $1^{2}$＋$2^{2}$＋…＋$n^{2}$ )－2 ( 1＋2＋…＋n )＋( n－2 ) ＝6×$\frac{n (n+1) (2n+1)}{6}$－2×$\frac{n (n+1)}{2}$＋( n－2 ) ＝( $2n^{3}$＋$3n^{2}$＋n )－( $n^{2}$＋n )＋( n－2 ) ＝$2n^{3}$＋$2n^{2}$＋n－2。
+  stem: 設數列 $\langle a_n \rangle$ 滿足 $a_1 = 3$，且對所有正整數 $n \ge 2$ 皆有 $a_n - a_{n-1} = 6n^2 - 2n + 1$，求一般項 $a_n =$＿＿＿＿。
   assets:
   - key: s8_5_f1
     kind: figure
@@ -680,13 +720,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案並移除缺圖）
   difficulty: 3
+  explanation: 利用累加法，$a_n = 3 + 6(2^2+3^2+\cdots+n^2) - 2(2+3+\cdots+n) + (n-1) = 6\cdot\frac{n(n+1)(2n+1)}{6} - 2\cdot\frac{n(n+1)}{2} + (n-2) = 2n^3+2n^2+n-2$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $2n^3+2n^2+n-2$
 - id: doc_109_台南_台南二中_數學_g10s2e1_s8_6
   section: 8
   number: 6
   type: fill
   page: 6
-  stem: 國文的標準化分數：$\frac{75-70}{3}$＝$\frac{5}{3}$， 英文的標準化分數：$\frac{80-76}{2}$＝2， 數學的標準化分數：$\frac{50-45}{2.5}$＝2， 所以<u>小銘</u>的國文表現最差。
+  stem: 小銘某次段考國文、英文、數學三科成績分別為 $75$ 分、$80$ 分、$50$ 分；已知全班這三科的平均分數分別為 $70$ 分、$76$ 分、$45$ 分，標準差分別為 $3$ 分、$2$ 分、$2.5$ 分。若以標準化分數衡量表現，請問小銘哪一科表現最差？＿＿＿＿
   tags:
     unit:
       code: MA-2-3-1
@@ -701,13 +748,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 2
+  explanation: 國文標準化分數 $\frac{75-70}{3}=\frac{5}{3}$；英文 $\frac{80-76}{2}=2$；數學 $\frac{50-45}{2.5}=2$。故小銘的國文表現最差。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 國文
 - id: doc_109_台南_台南二中_數學_g10s2e1_s8_7
   section: 8
   number: 7
   type: fill
   page: 6
-  stem: 可知$r_{甲}$＞0，$r_{乙}$＝0，$r_{丙}$＞0，$r_{丁}$＜0，$r_{戊}$＜0， 因為甲的散布圖較丙的散布圖更集中於一斜直線， 所以$r_{丙}$＜$r_{甲}$，同理$r_{丁}$＜$r_{戊}$， 故$r_{甲}$＞$r_{丙}$＞$r_{乙}$＞$r_{戊}$＞$r_{丁}$。
+  stem: 有甲、乙、丙、丁、戊五組數據的散布圖，其中甲呈高度正相關（點幾乎落在一斜率為正的直線上）、丙呈中度正相關、乙無明顯線性相關（$r_乙=0$）、戊呈中度負相關、丁呈高度負相關（點幾乎落在一斜率為負的直線上），試比較五組數據相關係數 $r_甲, r_乙, r_丙, r_丁, r_戊$ 之大小關係：＿＿＿＿。
   tags:
     unit:
       code: MA-2-3-2
@@ -722,7 +776,14 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，補充散布圖特徵以還原完整題幹與答案）
   difficulty: 2
+  explanation: 可知 $r_甲 > 0, r_乙 = 0, r_丙 > 0, r_丁 < 0, r_戊 < 0$，又甲較丙集中於正斜率直線、丁較戊集中於負斜率直線，故 $r_甲 > r_丙 > r_乙 > r_戊 > r_丁$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $r_甲 > r_丙 > r_乙 > r_戊 > r_丁$
 - id: doc_109_台南_台南二中_數學_g10s2e1_s8_8
   section: 8
   number: 8
@@ -756,7 +817,7 @@ questions:
   number: 9
   type: fill
   page: 6
-  stem: 設自然組的成績為x分，社會組的成積為y分， 可知μ$_{x}$＝76，μ$_{y}$＝52，δ$_{x}$＝5，δ$_{y}$＝7， 所以μ＝$\frac{400\times 67+200\times 52}{400+200}$＝62，δ$_{x}^{2}$＝$\frac{1}{400}$( $x_{1}^{2}$＋$x_{2}^{2}$＋…＋$x_{400}^{2}$ )－μ$_{x}^{2}$ ⇒ $x_{1}^{2}$＋$x_{2}^{2}$＋…＋$x_{400}^{2}$＝400 ( μ$_{x}^{2}$＋δ$_{x}^{2}$ )＝400 ( $67^{2}$＋$5^{2}$ )＝1805600， 同理$y_{1}^{2}$＋$y_{2}^{2}$＋…＋$y_{200}^{2}$＝200 ( μ$_{y}^{2}$＋δ$_{y}^{2}$ )＝200 ( $52^{2}$＋$7^{2}$ )＝550600， 因此可得δ$^{2}$＝$\frac{1}{600}$( 1805600＋550600 )－$62^{2}$＝3927－3844＝83， 故 ( μ , δ$^{2}$ )＝( 62 , 83 )。
+  stem: 某校高三有自然組 $400$ 人與社會組 $200$ 人，某次模擬考自然組平均成績為 $67$ 分、標準差為 $5$ 分；社會組平均成績為 $52$ 分、標準差為 $7$ 分。試求全體 $600$ 人的平均成績 $\mu$ 與變異數 $\sigma^2$，則數對 $(\mu, \sigma^2) =$＿＿＿＿。
   tags:
     unit:
       code: MA-2-3-1
@@ -771,13 +832,26 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，修正自然組平均筆誤並還原題幹與答案）
   difficulty: 3
+  explanation: $\mu = \frac{400\times 67 + 200\times 52}{600} = 62$；$\sum x_i^2 = 400(67^2+5^2) = 1805600$，$\sum y_i^2 = 200(52^2+7^2) = 550600$，故 $\sigma^2 = \frac{1805600+550600}{600} - 62^2 = 3927 - 3844 = 83$，即 $(\mu, \sigma^2) = (62, 83)$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $(62, 83)$
 - id: doc_109_台南_台南二中_數學_g10s2e1_s9_1
   section: 9
   number: 1
   type: calc
   page: 6
-  stem: (1) 可知μ$_{x}$＝54，μ$_{y}$＝390。 $S_{xx}$＝(－1)$^{2}$＋(－1)$^{2}$＋(－2)$^{2}$＋$1^{2}$＋$3^{2}$＝16， $S_{yy}$＝(－10)$^{2}$＋(－30)$^{2}$＋$0^{2}$＋(－10)$^{2}$＋$50^{2}$＝3600， $S_{xy}$＝(－1)×(－10)＋(－1)×(－30)＋(－2)×0＋1×(－10)＋3×50＝180， 所以x與y的相關係數r＝$\frac{S_{xy}}{\sqrt{S_{xx}}\times \sqrt{S_{yy}}}$＝$\frac{180}{\sqrt{16}\times \sqrt{3600}}$＝$\frac{180}{4\times 60}$＝$\frac{3}{4}$。 (2) 最適直線的斜率m＝$\frac{S_{xy}}{S_{xx}}$＝$\frac{180}{16}$＝$\frac{45}{4}$ ⇒ y－390＝$\frac{45}{4}$( x－54 )， 故最適直線方程式為y＝$\frac{45}{4}$x－$\frac{435}{2}$。 (3) y＝$\frac{45}{4}$×50－$\frac{435}{2}$＝345，所以預測指考成績為345分。
+  stem: '已知 5 位學生的學測數學級分（轉為百分制 $x$）與指考成績（$y$）如下：$(53, 380)$、$(53, 360)$、$(52, 390)$、$(55, 380)$、$(57, 440)$。試回答下列問題：
+
+    (1) 求 $x$ 與 $y$ 的相關係數 $r$。
+
+    (2) 求 $y$ 對 $x$ 的最適直線（迴歸直線）方程式。
+
+    (3) 若某生 $x=50$，試預測其指考成績 $y$。'
   assets:
   - key: s9_1_f1
     kind: figure
@@ -803,13 +877,30 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，補充數據表以還原完整題幹與答案並移除缺圖）
   difficulty: 3
+  explanation: '(1) $\mu_x=54, \mu_y=390$，$S_{xx}=16, S_{yy}=3600, S_{xy}=180$，故 $r = \frac{180}{\sqrt{16}\sqrt{3600}} = \frac{3}{4}$。
+
+    (2) 斜率 $m = \frac{180}{16} = \frac{45}{4}$，最適直線為 $y - 390 = \frac{45}{4}(x-54)$，即 $y = \frac{45}{4}x - \frac{435}{2}$。
+
+    (3) 代入 $x=50$ 得 $y = \frac{45}{4}(50) - \frac{435}{2} = 345$ 分。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) $\frac{3}{4}$；(2) $y = \frac{45}{4}x - \frac{435}{2}$；(3) 345 分
 - id: doc_109_台南_台南二中_數學_g10s2e1_s9_2
   section: 9
   number: 2
   type: calc
   page: 7
-  stem: (1) $a_{2}$＝$2a_{1}$＋2＝6 ⇒ $2a_{3}$＝$3a_{2}$＋2＝20 ⇒ $a_{3}$＝10 ⇒ $3a_{4}$＝$4a_{3}$＋2＝42 ⇒ $a_{4}$＝14。 (2) 因為$a_{1}$＝2＝4×1－2，$a_{2}$＝6＝4×2－2，$a_{3}$＝10＝4×3－2，$a_{4}$＝14＝4×4－2，所以猜測$a_{n}$＝4n－2，故選(B)。 (3) (i) n＝1時，$a_{1}$＝4×1－2＝2，所以成立。 (ii) 假設n＝k時成立，即$a_{k}$＝4k－2， $^{ }$ 則n＝k＋1時，$a_{k＋1}$＝$\frac{k+1}{k}a_{k}$＋$\frac{2}{k}$＝$\frac{k+1}{k}$×( 4k－2 )＋$\frac{2}{k}$＝$\frac{4k^{2}+2k}{k}$＝4k＋2＝4 ( k＋1 )－2，所以成立。 故由數學歸納法得證$a_{n}$＝4n－2。
+  stem: '設數列 $\langle a_n \rangle$ 滿足 $a_1 = 2$，且對所有正整數 $k \ge 1$，皆有 $k a_{k+1} = (k+1) a_k + 2$。試回答下列問題：
+
+    (1) 求 $a_2, a_3, a_4$ 之值。
+
+    (2) 推測一般項 $a_n$ 的公式。
+
+    (3) 利用數學歸納法證明你的推測。'
   tags:
     unit:
       code: MA-2-1-1
@@ -824,4 +915,15 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 3
+  explanation: '(1) $a_2 = 2a_1+2=6$；$2a_3 = 3a_2+2=20 \Rightarrow a_3=10$；$3a_4 = 4a_3+2=42 \Rightarrow a_4=14$。
+
+    (2) 推測 $a_n = 4n-2$。
+
+    (3) 當 $n=1$ 時，$a_1 = 4(1)-2=2$ 成立；設 $n=k$ 時 $a_k=4k-2$ 成立，則 $n=k+1$ 時 $a_{k+1} = \frac{k+1}{k}(4k-2) + \frac{2}{k} = \frac{4k^2+2k}{k} = 4k+2 = 4(k+1)-2$ 亦成立。由數學歸納法得證 $a_n = 4n-2$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) $a_2=6, a_3=10, a_4=14$；(2) $a_n = 4n-2$；(3) 略（數學歸納法證明）

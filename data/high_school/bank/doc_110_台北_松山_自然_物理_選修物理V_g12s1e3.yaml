@@ -332,11 +332,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: '如圖所示，空間有一矩形線框abcd和一根很長的通電直導線ef，直導線與線框在同一水平桌面上，直導線的電流方向由f至e，則矩形線框從左邊平移到右邊的整個過程中：
-
-    題組8-10
-
-    有一個單匝線圈置於磁場中，已知通過此線圈面的磁通量為φ$_{B}$＝$t^{ 2}$－2t＋4（Wb），則：'
+  stem: 空間有一矩形線框 abcd（頂點依順時鐘順序標記）和一根很長的鉛直通電直導線 ef，直導線與線框在同一水平桌面上，直導線的電流方向由下而上（f 至 e）。則矩形線框從直導線右側平移到左側的整個過程中：
   options:
   - label: A
     content: 線框中，應電流的方向先為abcda，然後adcba，再abcda
@@ -348,9 +344,6 @@ questions:
     content: 線框中，應電流的方向始終為abcda
   - label: E
     content: 當移到ab及cd邊與ef的距離恰好相等處時，應電流為0
-  group_stem: '如右圖所示，一磁鐵棒從一螺線管上方穿過螺線管的過程中，如螺線管兩端接上一微安培計，設重力加
-
-    速度為g。試回答下列各題：'
   assets:
   - key: s1_7_f1
     kind: figure
@@ -381,7 +374,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組題幹錯置：附有第5-6題組題幹，且題末誤併入題組8-10題幹
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組與誤併之題組8-10文字、補充線框移動條件並補全解析）
   difficulty: 3
+  explanation: 電流由 f 至 e 時，右側磁場垂直射入紙面、左側磁場垂直射出紙面。線框自右側接近導線時，射入磁通量增加，由冷次定律產生逆時鐘應電流 adcba；線框跨過導線中線時，射入減少而射出增加，產生順時鐘應電流 abcda；線框進入左側遠離導線時，射出減少，產生逆時鐘應電流 adcba。故選(B)。
 - id: doc_110_台北_松山_自然_物理_選修物理V_g12s1e3_s1_8
   section: 1
   number: 8
@@ -399,9 +395,7 @@ questions:
     content: '3'
   - label: E
     content: '4'
-  group_stem: '如右圖所示，一磁鐵棒從一螺線管上方穿過螺線管的過程中，如螺線管兩端接上一微安培計，設重力加
-
-    速度為g。試回答下列各題：'
+  group_stem: 有一個單匝線圈置於磁場中，已知通過此線圈面的磁通量為 $\phi_{B}＝t^{2}－2t＋4$（Wb），則：
   shared_asset: g1_5_12
   answer:
   - D
@@ -422,6 +416,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組題幹錯置：共用第5-6題組題幹，實際題組題幹誤置於第7題末
+    fixed_by: agent
+    fix_note: （人工修正：更正為正確的題組8-10題幹）
   difficulty: 2
 - id: doc_110_台北_松山_自然_物理_選修物理V_g12s1e3_s1_9
   section: 1
@@ -440,15 +436,13 @@ questions:
     content: '3'
   - label: E
     content: '4'
-  group_stem: '如右圖所示，一磁鐵棒從一螺線管上方穿過螺線管的過程中，如螺線管兩端接上一微安培計，設重力加
-
-    速度為g。試回答下列各題：'
+  group_stem: 有一個單匝線圈置於磁場中，已知通過此線圈面的磁通量為 $\phi_{B}＝t^{2}－2t＋4$（Wb），則：
   shared_asset: g1_5_12
   answer:
   - A
   answer_status: verified
   answer_source: answer_key
-  explanation: 平均感應電動勢$^{－}$＝$\frac{ Δφ_{B} }{ Δt }$＝$\frac{ φ_{B }(2)－φ_{B }(0) }{ 2－0 }$＝$\frac{ (2^{2}－2×2＋4)－(0－0＋4) }{ 2 }$＝0。答案選(A)。
+  explanation: 平均感應電動勢 $\bar{\varepsilon}＝\frac{\Delta\phi_{B}}{\Delta t}＝\frac{\phi_{B}(2)－\phi_{B}(0)}{2－0}＝\frac{(2^{2}-2\times 2+4)-(0-0+4)}{2}＝0$。故選(A)。
   tags:
     unit:
       code: PH-S4-3-1
@@ -463,6 +457,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組題幹錯置：共用第5-6題組題幹，實際題組題幹誤置於第7題末
+    fixed_by: agent
+    fix_note: （人工修正：更正為正確的題組8-10題幹並修補解析符號）
   difficulty: 2
 - id: doc_110_台北_松山_自然_物理_選修物理V_g12s1e3_s1_10
   section: 1
@@ -481,9 +477,7 @@ questions:
     content: '3'
   - label: E
     content: '4'
-  group_stem: '如右圖所示，一磁鐵棒從一螺線管上方穿過螺線管的過程中，如螺線管兩端接上一微安培計，設重力加
-
-    速度為g。試回答下列各題：'
+  group_stem: 有一個單匝線圈置於磁場中，已知通過此線圈面的磁通量為 $\phi_{B}＝t^{2}－2t＋4$（Wb），則：
   shared_asset: g1_5_12
   answer:
   - C
@@ -504,15 +498,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組題幹錯置：共用第5-6題組題幹，實際題組題幹誤置於第7題末
+    fixed_by: agent
+    fix_note: （人工修正：更正為正確的題組8-10題幹）
   difficulty: 2
 - id: doc_110_台北_松山_自然_物理_選修物理V_g12s1e3_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: '如右圖所示，磁場強度為0.1T，若導線AD以10m／s的速度向右，圖中AD＝1m，R＝10Ω，
-
-    若導線等速運動，線圈內應電流為多少A？'
+  stem: 在一均勻磁場（強度 0.1 T，方向垂直射入紙面）中，有一固定 U 型金屬軌道，其左端接有一電阻 R＝10 Ω，軌道上跨接一可滑動直導線 AD（長度 AD＝1 m）。若導線 AD 以 10 m／s 的速度向右等速運動，則線圈內應電流為多少 A？
   options:
   - label: A
     content: '0.02'
@@ -524,9 +518,6 @@ questions:
     content: '0.10'
   - label: E
     content: '0.16'
-  group_stem: '如右圖所示，一磁鐵棒從一螺線管上方穿過螺線管的過程中，如螺線管兩端接上一微安培計，設重力加
-
-    速度為g。試回答下列各題：'
   assets:
   - key: s1_11_f1
     kind: figure
@@ -540,9 +531,9 @@ questions:
       - 901.1
   shared_asset: g1_5_12
   answer:
-  - C
-  answer_status: verified
-  answer_source: answer_key
+  - D
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S4-3-1
@@ -557,15 +548,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組題幹錯置：誤附第5-6題組題幹，但本題題幹獨立完整
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、補充迴路條件並更正答案為D與解析）
   difficulty: 2
+  explanation: 動生電動勢 $\varepsilon＝Blv＝0.1\times 1\times 10＝1.0$ V，線圈內應電流 $I＝\frac{\varepsilon}{R}＝\frac{1.0}{10}＝0.10$ A。故選(D)。
+  review_note: 原答案卷答案 ['C']，執行 agent 修正為 ['D']
 - id: doc_110_台北_松山_自然_物理_選修物理V_g12s1e3_s1_12
   section: 1
   number: 12
   type: single
   page: 1
-  stem: '在一均勻磁場B中，置放一長度為l，電阻為R的導線ab，導線和磁場方向垂直。若導線以等速v垂直於導線和磁場方向運動，如圖所示。則下列敘述何者正確？
-
-    題組13-18'
+  stem: 在一垂直射入紙面的均勻磁場 B 中，置放一鉛直放置（a 在上、b 在下）、長度為 l、電阻為 R 的直導線 ab，導線和磁場方向垂直。若導線以等速 v 向右（垂直於導線和磁場方向）運動，則下列敘述何者正確？
   options:
   - label: A
     content: 導線上若有正電荷，將會受到向a端之電力
@@ -577,9 +570,6 @@ questions:
     content: 導線上會產生應電場E＝vB，方向由a指向b
   - label: E
     content: 導線上會產生應電流I＝$\frac{ lvB }{ R }$
-  group_stem: '如右圖所示，一磁鐵棒從一螺線管上方穿過螺線管的過程中，如螺線管兩端接上一微安培計，設重力加
-
-    速度為g。試回答下列各題：'
   assets:
   - key: s1_12_f1
     kind: figure
@@ -611,6 +601,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組題幹錯置：誤附第5-6題組題幹且題末含「題組13-18」字樣
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組與「題組13-18」字樣並補充方向條件）
   difficulty: 3
 - id: doc_110_台北_松山_自然_物理_選修物理V_g12s1e3_s1_13
   section: 1

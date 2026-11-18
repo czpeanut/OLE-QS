@@ -182,9 +182,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: '請問X血管中B層的肌肉屬於下圖甲乙丙的哪一種？控制這裡肌肉收縮的運動神經又屬於哪一類？
-
-    <u>題組第6-7題</u>：下圖為部分血液在人體一個完整循環中某些變化。請依圖回答'
+  stem: 請問X血管中B層的肌肉屬於甲、乙、丙的哪一種？控制這裡肌肉收縮的運動神經又屬於哪一類？
   options:
   - label: A
     content: 甲，體神經
@@ -194,7 +192,7 @@ questions:
     content: 丙，自律神經
   - label: D
     content: 甲，自律神經
-  group_stem: <u>題組第3-5題</u>：下圖顯示人體某一個組織內三種類別的血管。（各血管不是依相同比例畫出）
+  group_stem: <u>題組第3-5題</u>：下圖顯示人體某一個組織內三種類別的血管（其中X血管為管壁較厚且富含B層平滑肌的小動脈），以及三種肌肉組織示意圖：甲為紡錘形單核無橫紋的平滑肌、乙為分支圓柱狀具橫紋的心肌、丙為長圓柱狀多核具橫紋的骨骼肌。請依上述資料回答問題：
   assets:
   - key: s1_5_f1
     kind: figure
@@ -255,7 +253,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹末誤混入第6-7題題組導言
+    fixed_by: agent
+    fix_note: （人工修正：移除混入之第6-7題組導言與附圖，補充血管與肌肉組織文字條件）
   difficulty: 3
+  explanation: 血管壁的肌肉層為平滑肌（甲），受自律神經（交感與副交感神經）支配，不受大腦意識控制，故選(D)。
 - id: doc_112_高雄_高雄女中_自然_生物_選修生物III_g12s1e1_s1_6
   section: 1
   number: 6
@@ -386,17 +387,16 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 附圖為局部腎元之示意圖，「甲」和「乙」為血液中的兩類成分，成分圖像大小非依相同比例畫出。下列選項何者正確？
+  stem: 附圖為局部腎元（絲球體與鮑氏囊）之示意圖，「甲」為體積較大且無法通過濾過膜的成分（如血球與血漿蛋白），「乙」為可通過濾過膜進入鮑氏囊腔的小分子成分（如水、葡萄糖、胺基酸、尿素與無機鹽）。下列敘述何者正確？
   options:
   - label: A
-    content: (A)
+    content: 甲為尿素，乙為血漿蛋白
   - label: B
-    content: (B)
+    content: 甲為紅血球與血漿蛋白，乙為葡萄糖與無機鹽
   - label: C
-    content: (C)
+    content: 甲與乙皆會隨濾液進入近曲小管
   - label: D
-    content: (D)
-  group_stem: <u>題組第8-9题</u>：下方左圖X為人類循環系統其中一部分的示意圖，下方左圖Y為小腸內壁表面的顯微切片示意圖，請根據兩圖回答題組
+    content: 甲可經主動運輸進入鮑氏囊腔
   assets:
   - key: s1_17_f1
     kind: figure
@@ -436,13 +436,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹誤混入第8-9題題組導言
+    fixed_by: agent
+    fix_note: （人工修正：移除誤混入之第8-9題組導言與附圖，補充選項與局部腎元文字條件）
   difficulty: 3
+  explanation: 腎小球過濾作用時，血球與大型血漿蛋白（甲）無法通過微血管壁與鮑氏囊內壁，留於血液中；水、葡萄糖、無機鹽等小分子（乙）則被濾入鮑氏囊腔，故選(B)。
 - id: doc_112_高雄_高雄女中_自然_生物_選修生物III_g12s1e1_s1_24
   section: 1
   number: 24
   type: single
   page: 3
-  stem: 附圖為<u>小希</u>在休息狀態下肺內的壓力變化圖，下列相關敘述何者正確？
+  stem: <u>小希</u>在休息狀態下肺內的壓力變化曲線圖中，a為吸氣開始瞬間（肺內壓等於大氣壓）、a→b時肺內壓下降至低於大氣壓、b→c時肺內壓逐漸回升至大氣壓（吸氣結束）、c→d時肺內壓升高大於大氣壓（呼氣過程）。下列相關敘述何者正確？
   options:
   - label: A
     content: 呼吸頻率為12次／分
@@ -452,7 +455,6 @@ questions:
     content: a-b時肺在擴大中
   - label: D
     content: c-d時肋骨上舉
-  group_stem: <u>題組第8-9题</u>：下方左圖X為人類循環系統其中一部分的示意圖，下方左圖Y為小腸內壁表面的顯微切片示意圖，請根據兩圖回答題組
   assets:
   - key: s1_24_f1
     kind: figure
@@ -482,7 +484,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹誤混入第8-9題題組導言
+    fixed_by: agent
+    fix_note: （人工修正：移除誤混入之第8-9題組導言與附圖，補充肺內壓曲線文字條件）
   difficulty: 3
+  explanation: a→b時段肺內壓低於大氣壓，係因橫膈與外肋間肌收縮使胸腔與肺部正在擴大，空氣由外界流入肺內，故選(C)。
 - id: doc_112_高雄_高雄女中_自然_生物_選修生物III_g12s1e1_s1_27
   section: 1
   number: 27
@@ -491,14 +496,13 @@ questions:
   stem: 有關神經與內分泌系統的比較，下列敘述何者<u>錯誤</u>？
   options:
   - label: A
-    content: (A)
+    content: 神經系統傳遞速度較內分泌系統快
   - label: B
-    content: (B)
+    content: 神經系統的作用持續時間較內分泌系統長、作用範圍較廣
   - label: C
-    content: (C)
+    content: 神經系統主要藉神經衝動與神經傳導物質傳遞訊息
   - label: D
-    content: (D)
-  group_stem: <u>題組第8-9题</u>：下方左圖X為人類循環系統其中一部分的示意圖，下方左圖Y為小腸內壁表面的顯微切片示意圖，請根據兩圖回答題組
+    content: 內分泌系統主要藉血液運送激素至目標細胞
   assets:
   - key: s1_27_f1
     kind: figure
@@ -528,7 +532,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹誤混入第8-9題題組導言
+    fixed_by: agent
+    fix_note: （人工修正：移除誤混入之第8-9題組導言與附圖，補齊比較選項(A)～(D)）
   difficulty: 2
+  explanation: 神經系統反應迅速但作用時間較短、範圍較局部；內分泌系統作用較慢但持續時間較長、影響範圍較廣，故(B)錯誤，選(B)。
 - id: doc_112_高雄_高雄女中_自然_生物_選修生物III_g12s1e1_s2_31
   section: 2
   number: 31

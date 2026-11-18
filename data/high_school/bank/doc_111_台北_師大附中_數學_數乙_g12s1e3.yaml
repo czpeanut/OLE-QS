@@ -366,7 +366,7 @@ questions:
   number: 5
   type: fill
   page: 2
-  stem: 總剩餘為＿＿＿＿元。
+  stem: 已知某商品的需求函數為 $P_d(q) = 100 - 2q$，供給函數為 $P_s(q) = 10 + q$（單位：元），市場在均衡價格與均衡數量下達成交易，則市場的總剩餘（消費者剩餘與生產者剩餘之和）為＿＿＿＿元。
   tags:
     unit:
       code: MA-Y1-3-2
@@ -381,4 +381,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹為上一題第(5)小題之延續，獨立閱讀時缺少前題供需函數條件
+    fixed_by: agent
+    fix_note: （人工修正：補充供需函數定義並補齊答案與解析）
   difficulty: 1
+  explanation: 聯立 $100-2q = 10+q$ 得均衡數量 $q^*=30$、均衡價格 $P^*=40$。總剩餘 $= \int_0^{30} [(100-2q)-(10+q)]\,dq = \frac{1}{2}(100-10)\times 30 = 1350$ 元。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '1350'

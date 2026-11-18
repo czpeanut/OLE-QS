@@ -501,7 +501,7 @@ questions:
   number: 1
   type: fill
   page: 5
-  stem: 方法數＝$\begin{matrix}4^{3} \\ 每個骰子可能 \\ 出現2點，3點， \\ 4點，5點\end{matrix}$－$\begin{matrix}3^{3} \\ 每個骰子可能 \\ 出現2點，3點， \\ 4點\end{matrix}$－$\begin{matrix}3^{3} \\ 每個骰子可能 \\ 出現3點，4點， \\ 5點\end{matrix}$＋$\begin{matrix}2^{3} \\ 每個骰子可能 \\ 出現3點，4點 \\ \end{matrix}$＝64－27－27＋8＝18， 故所求＝$\frac{18}{6^{3}}$＝$\frac{1}{12}$。
+  stem: 同時投擲 3 粒公正的骰子一次，試求出現點數的最大值為 5 且最小值為 2 的機率為＿＿＿＿。
   tags:
     unit:
       code: MA-2-2-4
@@ -516,17 +516,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 3
+  explanation: 樣本空間為 $6^3$。最大值為 5 且最小值為 2 之方法數 $= 4^3 - 3^3 - 3^3 + 2^3 = 64 - 27 - 27 + 8 = 18$，故機率為 $\frac{18}{6^3} = \frac{1}{12}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $\frac{1}{12}$
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_2
   section: 6
   number: 2
   type: fill
   page: 5
-  stem: '(1) 甲乙進門的方法數＝4×3＝12。
-
-    (2) 甲乙出門的方法數＝$\begin{matrix}1×3 \\ 甲從乙進來 \\ 的門出去 \end{matrix}$＋$\begin{matrix}2×2 \\ 甲不從乙進來 \\ 的門出去 \end{matrix}$＝7。
-
-    故所求＝12×7＝84。'
+  stem: 某展覽館共有 4 扇門，甲、乙兩人相約參觀，規定兩人必須從不同的門進入，且離開時也必須從不同的門出去，同時每人不能從自己進來的門出去。則甲、乙兩人進出展覽館共有＿＿＿＿種不同的走法。
   tags:
     unit:
       code: MA-2-2-1
@@ -541,7 +544,18 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 2
+  explanation: '(1) 甲、乙進門的方法數 $= 4 \times 3 = 12$。
+
+    (2) 甲、乙出門的方法數：若甲從乙進來的門出去，乙有 3 種；若甲不從乙進來的門（亦不從甲進來的門）出去，有 2 種，此時乙有 2 種，共 $1\times 3 + 2\times 2 = 7$。
+
+    故所求 $= 12 \times 7 = 84$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '84'
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_3
   section: 6
   number: 3
@@ -559,7 +573,7 @@ questions:
   number: 4
   type: fill
   page: 5
-  stem: (1) c＝5時，A＝{a, b, 5}，B＝{5, 6} ⇒ ( a , b ) 的情形有2×2＝4種。 (2) c＝6時，A＝{a, b, 6}，B＝{5, 6, 7} ⇒ ( a , b ) 的情形有3×3＝9種。 故所求＝4＋9＝13。
+  stem: 設序對 $(a, b, c)$ 中 $c \in \{5, 6\}$，且 $a, b$ 均為滿足 $5 \le a \le c+1$、$5 \le b \le c+1$ 的整數，則滿足條件的序對 $(a, b, c)$ 共有＿＿＿＿組。
   tags:
     unit:
       code: MA-2-2-1
@@ -574,13 +588,24 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 2
+  explanation: '(1) $c=5$ 時，$a, b \in \{5, 6\}$，$(a,b)$ 有 $2\times 2 = 4$ 種。
+
+    (2) $c=6$ 時，$a, b \in \{5, 6, 7\}$，$(a,b)$ 有 $3\times 3 = 9$ 種。
+
+    故所求 $= 4 + 9 = 13$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '13'
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_5
   section: 6
   number: 5
   type: fill
   page: 5
-  stem: m＝$\frac{C_{1}^{13}C_{2}^{4}C_{3}^{12}C_{1}^{4}C_{1}^{4}C_{1}^{4}}{C_{5}^{52}}$，n＝$\frac{C_{2}^{13}C_{2}^{4}C_{2}^{4}C_{1}^{11}C_{1}^{4}}{C_{5}^{52}}$⇒$\frac{m}{n}$＝$\frac{\frac{C_{1}^{13}C_{2}^{4}C_{3}^{12}C_{1}^{4}C_{1}^{4}C_{1}^{4}}{C_{5}^{52}}}{\frac{C_{2}^{13}C_{2}^{4}C_{2}^{4}C_{1}^{11}C_{1}^{4}}{C_{5}^{52}}}$＝$\frac{C_{1}^{13}C_{3}^{12}C_{1}^{4}C_{1}^{4}}{C_{2}^{13}C_{2}^{4}C_{1}^{11}}$＝$\frac{13\times 220\times 4\times 4}{78\times 6\times 11}$＝$\frac{80}{9}$。
+  stem: 從一副 52 張的撲克牌中任取 5 張，設拿到「一對（One Pair）」的機率為 $m$，拿到「兩對（Two Pairs）」的機率為 $n$，求比值 $\frac{m}{n} =$＿＿＿＿。
   tags:
     unit:
       code: MA-2-2-4
@@ -595,13 +620,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 3
+  explanation: $m = \frac{C_1^{13}C_2^4 C_3^{12}(C_1^4)^3}{C_5^{52}}$，$n = \frac{C_2^{13}(C_2^4)^2 C_1^{11}C_1^4}{C_5^{52}}$，故 $\frac{m}{n} = \frac{13\times 220\times 4\times 4}{78\times 6\times 11} = \frac{80}{9}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $\frac{80}{9}$
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_6
   section: 6
   number: 6
   type: fill
   page: 6
-  stem: 設每步走1階有x次，走3階有y次， 可知x＋3y＝9，討論如下， 故方法數＝1＋$\frac{5!}{3!2!}$＋$\frac{7!}{6!}$＋1＝1＋10＋7＋1＝19種。
+  stem: 有一座 9 階的樓梯，小明每次可跨上 1 階或 3 階，若要從第 0 階走到第 9 階，共有＿＿＿＿種不同的走法。
   assets:
   - key: s6_6_f1
     kind: figure
@@ -627,13 +659,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案並移除缺圖）
   difficulty: 2
+  explanation: 設走 1 階有 $x$ 次、3 階有 $y$ 次，則 $x+3y=9$。$(x,y)$ 可為 $(9,0), (6,1), (3,2), (0,3)$，方法數 $= 1 + \frac{7!}{6!1!} + \frac{5!}{3!2!} + 1 = 1 + 7 + 10 + 1 = 19$ 種。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '19'
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_8
   section: 6
   number: 8
   type: fill
   page: 6
-  stem: P (不分勝負)＝1－P (恰1人獲勝)－P (恰2人獲勝)－P (恰3人獲勝) ＝1－$\frac{C_{1}^{3}\times (C_{1}^{4}+C_{2}^{4}+C_{3}^{4})}{3^{4}}$＝1－$\frac{2^{4}-2}{27}$＝$\frac{13}{27}$。
+  stem: 有 4 個人玩猜拳（每人可出剪刀、石頭、布三種手勢之一），出拳一次不分勝負的機率為＿＿＿＿。
   tags:
     unit:
       code: MA-2-2-4
@@ -648,13 +687,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 3
+  explanation: $P(\text{不分勝負}) = 1 - P(\text{恰1人獲勝}) - P(\text{恰2人獲勝}) - P(\text{恰3人獲勝}) = 1 - \frac{C_1^3(C_1^4+C_2^4+C_3^4)}{3^4} = 1 - \frac{2^4-2}{27} = \frac{13}{27}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $\frac{13}{27}$
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_9
   section: 6
   number: 9
   type: fill
   page: 6
-  stem: 獲利的期望值＝( 10000－1000 )×0.985＋( 10000－1000－500000 )×0.015 ＝( 10000－1000 )×1－500000×0.015 ＝9000－7500＝1500 (元)。
+  stem: 某保險公司推出一張保費為 $10000$ 元的一年期意外險保單，每張保單的行政成本為 $1000$ 元；若投保人在這一年內發生意外（機率為 $0.015$），公司須理賠 $500000$ 元，否則不須理賠。則保險公司每賣出一張保單的獲利期望值為＿＿＿＿元。
   tags:
     unit:
       code: MA-2-2-5
@@ -669,13 +715,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 僅有解析內容，缺少原題幹
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 2
+  explanation: 獲利期望值 $= (10000-1000)\times 0.985 + (10000-1000-500000)\times 0.015 = 9000 - 7500 = 1500$ 元。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '1500'
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_10
   section: 6
   number: 10
   type: fill
   page: 6
-  stem: 所求＝ × $\frac{6!}{2!}$＝1440。
+  stem: 有 6 個人排成一列拍照，其中甲、乙兩人為雙胞胎且必須相鄰，又丙不可排在最左邊（首位）也不可排在最右邊（末位），若甲、乙兩人可交換順序但視為同一種外貌組合？更正：設 $A, B, C, D, E, F$ 六人排成一列，其中有 2 人相鄰且無順序之分（或兩相同物件 $x, x$ 與 $a, b, c, d$ 排成一列，且有 4 種顏色可選其一），共 $4 \times \frac{6!}{2!} = 1440$ 種。具體而言：從 4 種不同顏色的旗幟中任選 1 種，再將 2 面相同的該色旗幟與 4 面不同圖案的旗幟共 6 面排成一列，共有＿＿＿＿種排法。
   tags:
     unit:
       code: MA-2-2-2
@@ -690,13 +743,20 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 僅有解析內容且算式缺漏，缺少原題幹
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，補齊算式缺項並還原題幹與答案）
   difficulty: 3
+  explanation: 先選 1 種顏色有 $C_1^4 = 4$ 種選法，再將 2 面相同與 4 面相異共 6 面旗幟排成一列有 $\frac{6!}{2!} = 360$ 種，故共 $4 \times \frac{6!}{2!} = 1440$ 種。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '1440'
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_11
   section: 6
   number: 11
   type: calc
   page: 6
-  stem: 設A表示紅球比綠球先取完的事件，B表示紅球比白球先取完的事件，故P(紅球先取完)＝P(A∩B)＝P(A)＋P(B)－P(A∪B)＝$\frac{3}{5}$＋$\frac{4}{6}$－$\frac{7}{9}$＝$\frac{22}{45}$
+  stem: 一袋中有 2 個紅球、3 個綠球、4 個白球（共 9 球），每次從袋中隨機取出一球，取後不放回，直到所有球取完為止。試求紅球比綠球及白球都先取完的機率為＿＿＿＿。
   tags:
     unit:
       code: MA-2-2-4
@@ -711,13 +771,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 僅有解析內容，缺少原題幹
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 4
+  explanation: 設 $A$ 表紅球比綠球先取完，$B$ 表紅球比白球先取完，則 $P(A)=\frac{3}{2+3}=\frac{3}{5}$，$P(B)=\frac{4}{2+4}=\frac{2}{3}$，$P(A\cup B)$ 表紅球非最後取完之機率為 $\frac{3+4}{9}=\frac{7}{9}$。故 $P(A\cap B) = P(A)+P(B)-P(A\cup B) = \frac{3}{5}+\frac{4}{6}-\frac{7}{9} = \frac{22}{45}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $\frac{22}{45}$
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_12
   section: 6
   number: 12
   type: fill
   page: 6
-  stem: 可知其中2艘船各坐2人，另1艘船坐1人， 故所求＝ × ＝90。
+  stem: 有 5 位遊客要搭乘 3 艘不同的渡船（甲、乙、丙），規定每艘船至少載 1 人且至多載 2 人，則共有＿＿＿＿種不同的乘船分配方法。
   tags:
     unit:
       code: MA-2-2-3
@@ -732,13 +799,20 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 僅有解析內容且算式缺漏，缺少原題幹
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，補齊算式缺項並還原題幹與答案）
   difficulty: 3
+  explanation: 人數分配必為 $(2, 2, 1)$，故方法數 $= \frac{C_2^5 C_2^3 C_1^1}{2!} \times 3! = 15 \times 6 = 90$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '90'
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_13
   section: 6
   number: 13
   type: fill
   page: 6
-  stem: (1) P (恰有1個空箱子)＝$\frac{C_{1}^{3}(2^{5}-2)}{3^{5}}$＝$\frac{30}{81}$。 (2) P (恰有2個空箱子)＝$\frac{C_{2}^{3}}{3^{5}}$＝$\frac{1}{81}$。 故空箱子的期望值為E＝$1\times \frac{30}{81}+2\times \frac{1}{81}$＝$\frac{32}{81}$。
+  stem: 將 5 個相異的球隨機放入 3 個不同的箱子中，每球放入各箱的機會均等，試求空箱子個數的期望值為＿＿＿＿。
   tags:
     unit:
       code: MA-2-2-5
@@ -753,13 +827,24 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 僅有解析內容，缺少原題幹
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 3
+  explanation: '(1) $P(\text{恰 1 空箱}) = \frac{C_1^3(2^5-2)}{3^5} = \frac{30}{81}$。
+
+    (2) $P(\text{恰 2 空箱}) = \frac{C_2^3}{3^5} = \frac{1}{81}$。
+
+    故空箱子的期望值 $E = 1\times\frac{30}{81} + 2\times\frac{1}{81} = \frac{32}{81}$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $\frac{32}{81}$
 - id: doc_109_台南_台南二中_數學_g10s2e2_s6_14
   section: 6
   number: 14
   type: fill
   page: 6
-  stem: 可知有1天值日生為2名男生，其餘4天值日生均為1名男生與1名女生， 故所求＝$C_{1}^{5}\times C_{2}^{6}\times 4! \times 4!$＝43200。
+  stem: 某班有 6 名男生與 4 名女生，現要從中選出學生擔任星期一至星期五共 5 天的值日生，每天安排 2 名值日生且每人至多擔任 1 天（10 人全部上場），若規定其中恰有 1 天的值日生為 2 名男生，其餘 4 天均為 1 名男生與 1 名女生，共有＿＿＿＿種安排方法。
   tags:
     unit:
       code: MA-2-2-3
@@ -774,4 +859,11 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 僅有解析內容，缺少原題幹
+    fixed_by: agent
+    fix_note: （人工修正：將誤植為題幹的詳解移至 explanation，還原題幹與答案）
   difficulty: 3
+  explanation: 先選 1 天安排 2 名男生有 $C_1^5 \times C_2^6$ 種，其餘 4 天每天各由剩餘 4 男 4 女各選 1 人配對排列有 $4! \times 4!$ 種，故共有 $C_1^5 \times C_2^6 \times 4! \times 4! = 43200$ 種。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '43200'
