@@ -102,7 +102,7 @@ questions:
   number: 15
   type: fill
   page: 2
-  stem: 靜止於光滑水平軌道上的台車、質量M、長度L，台車的前端站立一質量m的人，如圖所示，若此人向後走至台車尾端後停止，則台中移動的位移為若干？
+  stem: 靜止於光滑水平軌道上的台車，質量 M、長度 L，台車的前端站立一質量 m 的人。若此人向後走至台車尾端後停止，則台車移動的位移量值為若干？
   assets:
   - key: s1_15_f1
     kind: figure
@@ -128,7 +128,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「台中移動」疑為「台車移動」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正「台中」錯字、移除附圖依賴並補全解答與解析）
   difficulty: 2
+  explanation: 系統在水平方向不受外力，質心位置保持不動。設台車向前移動位移量值為 $x$，則人向後對地位移量值為 $L－x$，由 $m(L－x)＝Mx$，解得 $x＝\frac{mL}{M+m}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $\frac{mL}{M+m}$
 - id: doc_109_屏東_屏東高中_自然_物理_選修物理II_g11s2e1_s1_16
   section: 1
   number: 16

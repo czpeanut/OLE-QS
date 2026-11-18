@@ -102,7 +102,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 將氣體緩緩加入連接閉口式壓力計的容器中，直到B管水銀面較A管高150mm（如圖），在1大氣壓下，若改用開口式壓力計，則兩管水銀面為何？
+  stem: 將氣體緩緩加入連接閉口式壓力計的容器中，直到 B 管（閉口端）水銀面較 A 管（連接容器端）高 150 mm，在 1 大氣壓下，若改用開口式壓力計，則兩管水銀面為何？
   options:
   - label: A
     content: 高度差依然不變
@@ -144,6 +144,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖（壓力計示意圖），無法確認兩管連接位置
+    fixed_by: agent
+    fix_note: （人工修正：以文字明確說明兩管連接位置取代缺圖）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s1_4
   section: 1
@@ -645,7 +647,7 @@ questions:
   - B
   answer_status: verified
   answer_source: answer_key
-  explanation: 體積逸出百分率（逸出率）＝$\frac{體積增加量}{膨脹後的體積}$＝$\frac{V_{2}-V_{1}}{V_{2}}$，又依照查理定律，V、T(K)成正比，故可改寫為$\frac{T_{2}-T_{1}}{T_{2}}$。因此可帶入：$\frac{1}{3}$＝$\frac{T_{2}-300}{T_{2}}$，得$T_{2}$＝450 K＝277℃。故選(B)。
+  explanation: 體積逸出百分率（逸出率）＝$\frac{體積增加量}{膨脹後的體積}$＝$\frac{V_{2}-V_{1}}{V_{2}}$，又依照查理定律，V、T(K)成正比，故可改寫為 $\frac{T_{2}-T_{1}}{T_{2}}$。因此代入：$\frac{1}{3}$＝$\frac{T_{2}-300}{T_{2}}$，得 $T_{2}$＝450 K＝177℃。故選(B)。
   tags:
     unit:
       code: CH-S1-2-3
@@ -660,6 +662,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解析計算 T2=450 K 誤寫為 277℃（正確為 177℃）
+    fixed_by: agent
+    fix_note: （人工修正：更正解析攝氏溫度換算筆誤為177℃）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s1_16
   section: 1
@@ -894,7 +898,7 @@ questions:
   number: 22
   type: multiple
   page: 2
-  stem: 有同體積的氦氣（27°C），氮氣（77°C）及二氧化碳（127°C）三氣體，在等壓下時，下列比值哪些正確？（He＝4，N＝14，C＝12，O＝16。上述三種氣體皆視為理想氣體，而答案之比值皆為氮氣：氮氣：二氧化碳）（提示：氣體分子的平均動能：$E_{K}$＝$\frac{3RT}{2}$＝$\frac{1}{2}Mv^{2}$）
+  stem: 有同體積的氦氣（27°C），氮氣（77°C）及二氧化碳（127°C）三氣體，在等壓下時，下列比值哪些正確？（He＝4，N＝14，C＝12，O＝16。上述三種氣體皆視為理想氣體，而答案之比值皆為氦氣：氮氣：二氧化碳）（提示：氣體分子的平均動能：$E_{K}$＝$\frac{3RT}{2}$＝$\frac{1}{2}Mv^{2}$）
   options:
   - label: A
     content: 氣體莫耳數比為$\frac{1}{27}$：$\frac{1}{77}$：$\frac{1}{127}$
@@ -926,7 +930,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「氮氣：氮氣：二氧化碳」應為「氦氣：氮氣：二氧化碳」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹氦氣誤植與亂碼並補齊解析）
   difficulty: 3
+  explanation: 由 $PV=nRT$，同 P、V 下 $n \propto \frac{1}{T(K)}$，莫耳數比與分子數比為 $\frac{1}{300}：\frac{1}{350}：\frac{1}{400}$（A錯誤、B正確）。原子數比需乘以各分子原子數（1、2、3），為 $\frac{1}{300}：\frac{2}{350}：\frac{3}{400}$（C正確）。由 $d=\frac{PM}{RT}$，密度比為 $\frac{4}{300}：\frac{28}{350}：\frac{44}{400}$（D正確）。平均動能與絕對溫度成正比，為 $300：350：400$（E錯誤）。故選(B)(C)(D)。
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s2_23
   section: 2
   number: 23
@@ -943,7 +950,7 @@ questions:
   - label: D
     content: 高壓低溫條件下，真實氣體行為較能符合理想氣體
   - label: E
-    content: 同溫同壓下的真實氣體中，最接近理想氣體的是氮氣
+    content: 同溫同壓下的真實氣體中，最接近理想氣體的是氦氣
   answer:
   - C
   - E
@@ -963,7 +970,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 (E)「氮氣」疑為「氦氣」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正選項E氮氣誤植為氦氣並補齊解析）
   difficulty: 1
+  explanation: (A)真實氣體在高壓低溫下偏離理想氣體；(B)理想氣體分子有質量但體積忽略不計；(C)分子間作用力愈大、本身體積愈大，偏差愈大，正確；(D)低壓高溫下最接近理想氣體；(E)氦氣分子體積最小、分子間作用力極弱，最接近理想氣體，正確。故選(C)(E)。
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s2_24
   section: 2
   number: 24
@@ -1060,13 +1070,13 @@ questions:
   stem: 下列五組氣體中，哪些<u>不適宜</u>用來說明道耳頓分壓定律？
   options:
   - label: A
-    content: $NH_{3}$、$HC_{1}$
+    content: $NH_{3}$、HCl
   - label: B
     content: NO、$O_{2}$
   - label: C
-    content: $H_{2}$、 $F_{2}$
+    content: $H_{2}$、$F_{2}$
   - label: D
-    content: $H_{2}O_{2}$
+    content: $H_{2}$、$O_{2}$
   - label: E
     content: CO、$O_{2}$
   answer:
@@ -1089,7 +1099,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 (A)「$HC_1$」、(D)「$H_2O_2$」排版誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A與D排版誤植並補齊解析）
   difficulty: 1
+  explanation: 道耳頓分壓定律適用於混合後在常溫下不發生化學反應的氣體。(A)$NH_{3}$ 與 HCl 反應生成 $NH_{4}Cl$ 固體；(B)NO 與 $O_{2}$ 反應生成 $NO_{2}$；(C)$H_{2}$ 與 $F_{2}$ 在室溫暗處即可劇烈反應生成 HF；(D)(E)常溫下不反應。故選(A)(B)(C)。
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e2_s3_1
   section: 3
   number: 1

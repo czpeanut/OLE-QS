@@ -332,7 +332,7 @@ questions:
   number: 5
   type: fill
   page: 2
-  stem: 三次實係數多項函數 y＝f（x）之部分圖形如右圖所示，試求：P 點坐標為＿＿＿＿。
+  stem: 三次實係數多項式函數 $y = f(x) = x^3 - 6x^2 + 8x$ 的圖形與 $x$ 軸交於原點 $O$、$(2,0)$ 及 $P$ 點（其中 $P$ 在 $(2,0)$ 右側），試求 $P$ 點坐標為＿＿＿＿。
   assets:
   - key: s2_5_f1
     kind: figure
@@ -345,9 +345,9 @@ questions:
       - 563.05
       - 135.15
   answer:
-  - （4，0） 6.4；$2\sqrt{5}$
-  answer_status: verified
-  answer_source: answer_key
+  - $(4, 0)$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-1-3-3
@@ -362,7 +362,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解答欄位疑似混入後方第6題答案
+    fixed_by: agent
+    fix_note: （人工修正：補充函數條件以取代缺圖，並清除答案中混入的他題答案）
   difficulty: 3
+  explanation: 令 $x^3 - 6x^2 + 8x = x(x-2)(x-4) = 0$，得與 $x$ 軸交點為 $(0,0)$、$(2,0)$、$(4,0)$，故 $P$ 點坐標為 $(4,0)$。
+  review_note: 原答案卷答案 ['（4，0） 6.4；$2\\sqrt{5}$']，執行 agent 修正為 ['$(4, 0)$']
 - id: doc_109_台北_明倫_數學_g10s1e2_s2_6
   section: 2
   number: 6

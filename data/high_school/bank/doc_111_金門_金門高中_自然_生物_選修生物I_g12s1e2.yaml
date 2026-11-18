@@ -336,10 +336,10 @@ questions:
   - label: D
     content: 高基氏體
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
-  explanation: 酵素成分為蛋白質，核糖體是製造蛋白質的地方。故選(A)。
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 酵素的化學本質主要為蛋白質，在細胞內是由核糖體負責將胺基酸轉譯合成蛋白質（酵素），故選(B)。
   tags:
     unit:
       code: BI-S1-1-2
@@ -354,7 +354,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案標示A與解析「核糖體(B)」不符
+    fixed_by: agent
+    fix_note: （人工修正：更正矛盾答案為B並修正解析結尾）
   difficulty: 1
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['B']
 - id: doc_111_金門_金門高中_自然_生物_選修生物I_g12s1e2_s1_10
   section: 1
   number: 10
@@ -1816,22 +1819,22 @@ questions:
 - id: doc_111_金門_金門高中_自然_生物_選修生物I_g12s1e2_s3_48
   section: 3
   number: 48
-  type: single
+  type: multiple
   page: 6
   stem: 造成慢性骨髓性白血病的BCR-ABL蛋白，會磷酸化下游的蛋白質，進一步開啟或關閉相關基因的功能，試問可能發生下列哪些情況？（2個答案）
   options:
   - label: A
     content: 進行細胞分裂的基因被關閉
   - label: B
-    content: 進行細胞分裂的基因被開故
+    content: 進行細胞分裂的基因被開啟
   - label: C
     content: 進行DNA修復的基因被開啟
   - label: D
-    content: 進行細胞凋亡的基因被開放
+    content: 進行細胞凋亡的基因被開啟
   - label: E
     content: 進行細胞凋亡的基因被關閉
   group_stem: 「我不是藥神」是2018年中國的一部現實主義題材劇情片，影片改編自於2015年發生的陸勇案，講述一名印度神油店的老問從印度走私代購一種用於治療癌症之藥物「Gleevec」的仿製藥的經歷。「Gleevec」是在多各種癌症治療中使用的一種酪胺酸激酶抑制劑。到2011年，該藥已被美國FDA批准用於治療10種不同癌症。「Gleevec」最顯著的療效是用於慢性骨髓性白血病，此種白血病的病因多為位於第9和22對的染色體各自斷裂一小段互換連接，造成骨髓幹細胞功能出現異常，製造大量不正常白血球，此種轉位的染色體又稱為「費城染色體」。費城染色體導致了兩段基因ABL與BCR接在一起，產生一融合蛋白稱為自BCR-ABL。1980年代OwenWitte等學者研究發現BCR-ABL蛋白是一種不正常活化之酪胺酸激錄（tyrosinekinase），會造成細胞大量的增殖和分裂，此為慢性骨髓性白血病的重要致病機轉。「Gleevec」可與酪胺酸激酶活性位置結合，可以有效地抑制，使磷酸化反應無法被催化，從而抑制不正常的白血球增生。
-  explanation: 根據內文，BCR-ABL蛋白是一種不正常活化之酪胺酸機酶，會造成細胞大量的增殖和分裂。故選(B)(E)。
+  explanation: BCR-ABL融合蛋白為持續活化的酪胺酸激酶，會促使促進細胞分裂增殖的基因開啟，同時抑制（關閉）細胞凋亡相關基因，導致白血球異常大量增生，故選(B)(E)。
   tags:
     unit:
       code: BI-S1-1-3
@@ -1846,7 +1849,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 未提供標準答案（僅解析欄有選B、E）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B、D錯字、調整題型為multiple並補齊答案B、E）
   difficulty: 2
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - E
 - id: doc_111_金門_金門高中_自然_生物_選修生物I_g12s1e2_s3_49
   section: 3
   number: 49

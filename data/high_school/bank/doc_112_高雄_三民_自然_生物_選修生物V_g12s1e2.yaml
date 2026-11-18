@@ -705,7 +705,7 @@ questions:
   - label: B
     content: 馬陸
   - label: C
-    content: 生笙
+    content: 地衣
   - label: D
     content: 菟絲子
   - label: E
@@ -729,7 +729,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C「生笙」疑為「地衣」或「苔蘚」之OCR錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C錯字「生笙」為「地衣」並補充解析）
   difficulty: 3
+  explanation: 生產者（自營生物）能利用光能將非生命世界的無機物（如$CO_2$、水）合成有機物進入食物網，為溝通生命與非生命世界物質循環的關鍵橋梁。鐵線蕨（蕨類）與地衣（含光合共生藻／藍綠菌）為生產者；馬陸為消費者／碎屑食者，菟絲子為寄生性消費者，黏菌為分解者／消費者。故選(A)(C)。
 - id: doc_112_高雄_三民_自然_生物_選修生物V_g12s1e2_s2_20
   section: 2
   number: 20
@@ -1466,7 +1469,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含錯字（的用）
+    fixed_by: agent
+    fix_note: （人工修正：補齊解析）
   difficulty: 2
+  explanation: (A)僅自營生物可利用光能（光合作用）或化學能（化能合成）將無機物轉變為儲存化學能的有機物，正確；(B)自營生物亦會經呼吸作用分解有機物取得ATP；(C)能量傳遞效率約10%；(D)最終能量主要經各階層呼吸作用散失為熱能；(E)深海熱泉等處存在化能自營生物。故選(A)。
 - id: doc_112_高雄_三民_自然_生物_選修生物V_g12s1e2_s4_40
   section: 4
   number: 40
@@ -2049,9 +2055,9 @@ questions:
 - id: doc_112_高雄_三民_自然_生物_選修生物V_g12s1e2_s7_55
   section: 7
   number: 55
-  type: single
+  type: multiple
   page: 7
-  stem: 下列哪些因素變動會使生態系趨向較穩定之狀態？
+  stem: 下列哪些因素變動會使生態系趨向較穩定之狀態？（多選）
   options:
   - label: A
     content: 春天植物之固碳量大幅上升
@@ -2078,7 +2084,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解答缺漏
+    fixed_by: agent
+    fix_note: （人工修正：調整題型為multiple並補齊答案B、D與解析）
   difficulty: 3
+  explanation: 根據本文，相似物種形成功能群可提供功能互補（B），且群集均勻度增加代表物種組成較均衡（D），皆有助於維持與提升生態系的穩定度與回復力，故選(B)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - D
 - id: doc_112_高雄_三民_自然_生物_選修生物V_g12s1e2_s7_56
   section: 7
   number: 56
@@ -2126,9 +2140,9 @@ questions:
 - id: doc_112_高雄_三民_自然_生物_選修生物V_g12s1e2_s7_57
   section: 7
   number: 57
-  type: single
+  type: multiple
   page: 8
-  stem: 哪些是深海熱泉硫化菌的特徵？
+  stem: 哪些是深海熱泉硫化菌的特徵？（多選）
   options:
   - label: A
     content: 細胞壁的成分是纖維素
@@ -2155,13 +2169,21 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解答缺漏
+    fixed_by: agent
+    fix_note: （人工修正：調整題型為multiple並補齊答案B、D與解析）
   difficulty: 2
+  explanation: (A)硫化菌為原核生物，細胞壁成分為肽聚糖而非纖維素；(B)硫化菌進行化能合成製造有機物，扮演生態系生產者的角色，正確；(C)原核生物行無性二分裂，不行減數分裂；(D)硫化菌與硝化菌皆為化學自營菌，扮演生產者角色，正確；(E)深海熱泉硫化菌為嗜熱菌，酵素最適溫度遠高於人類（37°C）。故選(B)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - D
 - id: doc_112_高雄_三民_自然_生物_選修生物V_g12s1e2_s7_58
   section: 7
   number: 58
-  type: single
+  type: multiple
   page: 8
-  stem: 下列有關深海熱泉生態系的敘述，哪些較合理？
+  stem: 下列有關深海熱泉生態系的敘述，哪些較合理？（多選）
   options:
   - label: A
     content: 濾食者為最高階消費者
@@ -2188,7 +2210,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解答缺漏
+    fixed_by: agent
+    fix_note: （人工修正：調整題型為multiple並補齊答案B、C、E與解析）
   difficulty: 3
+  explanation: (A)濾食者多為初級消費者；(B)因地熱持續供應硫化氫，生物可於原地永續生存，正確；(C)深海無光不能行光合作用產氧，消費者呼吸所需氧氣來自海流帶入的表層溶氧，正確；(D)硫化菌具細胞膜；(E)深海熱泉無陽光，生產者為化能自營菌，所有生物皆不含葉綠體與葉綠素，正確。故選(B)(C)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
+  - E
 - id: doc_112_高雄_三民_自然_生物_選修生物V_g12s1e2_s8_59
   section: 8
   number: 59

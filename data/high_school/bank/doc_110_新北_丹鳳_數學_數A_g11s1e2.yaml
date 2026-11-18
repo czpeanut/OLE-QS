@@ -479,31 +479,9 @@ questions:
   - (1) 3；(2) $log_{2}$3
   answer_status: verified
   answer_source: answer_key
-  explanation: '(1) ∵$log_{3}$（x－1）＝$log_{9}$（x＋1）
+  explanation: '(1) 真數 $x-1>0, x+1>0 \Rightarrow x>1$，由 $(x-1)^2 = x+1 \Rightarrow x^2-3x=0$，得 $x=3$。
 
-    ①真數 x－1＞0$\Rightarrow$x＞1
-
-    ②真數 x＋1＞0$\Rightarrow$x＞－1
-
-    ③ $\log _{3^{2}}(x - 1)^{2}$＝$log_{9}$（x＋1）$\Rightarrow$（x－1）$^{2}$＝x＋1
-
-    $\Rightarrowx^{2}$－2x＋1＝x＋1
-
-    $\Rightarrowx^{2}$－3x＝0
-
-    $\Rightarrow$x（x－3）＝0 ∴x＝0 或 3
-
-    由①、②、③知 x＝3
-
-    (2) ∵$4^{x＋1}$－10．$2^{x}$－6＝0
-
-    $\Rightarrow$4．$4^{x}$－10．$2^{x}$－6＝0$\Rightarrow$2．（$2^{x}$）$^{2}$－5．（$2^{x}$）－3＝0
-
-    因式分解得（2．$2^{x}$＋1）（$2^{x}$－3）＝0
-
-    又（2．$2^{x}$＋1）恆正
-
-    $\Rightarrow2^{x}$＝3$\Rightarrow$x＝$log_{2}$3'
+    (2) $4(2^x)^2 - 10(2^x) - 6 = 0 \Rightarrow (2\cdot 2^x + 1)(2^x - 3) = 0$，因 $2^x > 0$，故 $2^x = 3 \Rightarrow x = \log_2 3$。'
   tags:
     unit:
       code: MA-A3-2-3
@@ -518,6 +496,8 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 第(2)小題為指數方程式（MA-A3-2-1）
+    fixed_by: agent
+    fix_note: （人工修正：補齊被截斷之第(2)小題解析）
   difficulty: 2
 - id: doc_110_新北_丹鳳_數學_數A_g11s1e2_s3_3
   section: 3
@@ -529,41 +509,9 @@ questions:
     (1) 若 2．$3^{2x}$－11．$3^{x}$＋5＜0，則 x 的解範圍為＿＿＿＿。
 
     (2) 若 $log_{5}$（$x^{2}$＋1）＋$log_{0.2}$（x＋1）＞0，則 x 的解範圍為＿＿＿＿。'
-  explanation: '(1) 2．$3^{2x}$－11．$3^{x}$＋5＜0
+  explanation: '(1) $(2\cdot 3^x - 1)(3^x - 5) < 0 \Rightarrow \frac{1}{2} < 3^x < 5 \Rightarrow -\log_3 2 < x < \log_3 5$。
 
-    $\Rightarrow$2．（$3^{x}$）$^{2}$－11．（$3^{x}$）＋5＜0
-
-    因式分解得（2．$3^{x}$－1）（$3^{x}$－5）＜0
-
-    $\Rightarrow\frac{1}{2}$＜$3^{x}$＜5
-
-    $\Rightarrow\log _{3}\frac{1}{2}$＜$log_{3}3^{x}$＜$log_{3}$5
-
-    $\Rightarrow$－$log_{3}$2＜x＜$log_{3}$5
-
-    (2) ①真數 x＋1＞0$\Rightarrow$x＞－1
-
-    ② $log_{5}$（$x^{2}$＋1）＋$log_{0.2}$（x＋1）＞$log_{5}$1
-
-    $\Rightarrow\frac{\log (x^{2} + 1)}{\log 5} + \frac{\log (x + 1)}{\log \frac{1}{5}}$＞$log_{5}$1
-
-    $\Rightarrow\frac{\log (x^{2} + 1)}{\log 5} - \frac{\log (x + 1)}{\log 5}$＞$log_{5}$1
-
-    $\Rightarrowlog_{5}$（$x^{2}$＋1）－$log_{5}$（x＋1）＞$log_{5}$1
-
-    $\Rightarrow\log _{5}\frac{x^{2} + 1}{x + 1}$＞$log_{5}$1
-
-    $\Rightarrow\frac{x^{2} + 1}{x + 1}$＞1
-
-    $\Rightarrowx^{2}$＋1＞x＋1
-
-    $\Rightarrowx^{2}$－x＞0
-
-    $\Rightarrow$x（x－1）＞0
-
-    $\Rightarrow$x＞1 或 x＜0
-
-    由①、②知－1＜x＜0 或 x＞1'
+    (2) 真數條件 $x+1 > 0 \Rightarrow x > -1$。原式即 $\log_5(x^2+1) - \log_5(x+1) > 0 \Rightarrow x^2+1 > x+1 \Rightarrow x(x-1) > 0 \Rightarrow x < 0$ 或 $x > 1$。與 $x>-1$ 取交集得 $-1 < x < 0$ 或 $x > 1$。'
   tags:
     unit:
       code: MA-A3-2-3
@@ -578,7 +526,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 第(1)小題為指數不等式（MA-A3-2-1）
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案與被截斷之第(2)小題解析）
   difficulty: 2
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) $-\log_3 2 < x < \log_3 5$；(2) $-1 < x < 0$ 或 $x > 1$
 - id: doc_110_新北_丹鳳_數學_數A_g11s1e2_s3_4
   section: 3
   number: 4

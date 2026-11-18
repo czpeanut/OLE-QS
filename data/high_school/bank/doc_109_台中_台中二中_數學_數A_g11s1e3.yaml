@@ -180,9 +180,7 @@ questions:
   number: 4
   type: fill
   page: 1
-  stem: '坐標平面上 A（－4，a），B（b，5），C（14，2）三點共線，若 A 不在 B、C 之間，且
-
-    $\overline{AB} : \overline{AC}$＝2：3，則 a＋b＝＿＿＿＿。'
+  stem: '坐標平面上 $A(-4, a)$，$B(b, 5)$，$C(14, 2)$ 三點共線，若 $A$ 不在 $B$、$C$ 之間，且 $\overline{AB} : \overline{AC} = 2 : 3$，則 $a+b =$＿＿＿＿。'
   tags:
     unit:
       code: MA-A3-3-1
@@ -197,7 +195,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾有亂碼字元
+    fixed_by: agent
+    fix_note: （人工修正：清除題幹格式並補齊答案與解析）
   difficulty: 2
+  explanation: 因 $A$ 不在 $B, C$ 之間且 $\overline{AB} < \overline{AC}$，故 $B$ 在 $\overline{AC}$ 上，即 $\vec{AB} = \frac{2}{3}\vec{AC}$。得 $(b+4, 5-a) = \frac{2}{3}(18, 2-a)$，解得 $b+4=12 \Rightarrow b=8$，$5-a = \frac{4-2a}{3} \Rightarrow a=11$，故 $a+b = 19$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '19'
 - id: doc_109_台中_台中二中_數學_數A_g11s1e3_s2_5
   section: 2
   number: 5
@@ -514,7 +519,7 @@ questions:
   number: 8
   type: fill
   page: 2
-  stem: 坐標平面上 O 為原點，若點 G（3，－1）為△ABC 的重心，且$| \vec{GA} | = 3$，$| \vec{GB} | = 4 | \vec{GC} | = \sqrt{11}$，則$| \vec{OA} + \vec{OB} + \vec{OC} |$＝＿＿＿＿。
+  stem: 坐標平面上 $O$ 為原點，若點 $G(3, -1)$ 為 $\triangle ABC$ 的重心，且 $|\vec{GA}| = 3$，$|\vec{GB}| = 4$，$|\vec{GC}| = \sqrt{11}$，則 $|\vec{OA}+\vec{OB}+\vec{OC}| =$＿＿＿＿。
   tags:
     unit:
       code: MA-A3-3-2
@@ -529,4 +534,11 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹疑漏逗號（|GB|=4與|GC|=\sqrt{11}之間）
+    fixed_by: agent
+    fix_note: （人工修正：補齊漏掉的逗號並補齊答案與解析）
   difficulty: 4
+  explanation: 因 $G$ 為重心，故 $\vec{OA}+\vec{OB}+\vec{OC} = 3\vec{OG} = 3(3,-1) = (9,-3)$，所求長度為 $\sqrt{9^2+(-3)^2} = 3\sqrt{10}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $3\sqrt{10}$

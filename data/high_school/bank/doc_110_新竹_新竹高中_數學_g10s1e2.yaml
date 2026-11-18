@@ -492,9 +492,9 @@ questions:
   page: 1
   stem: 設A ( 1 , 5 )，B ( 3 , 9 )，C ( 5 , 1 )，求△ABC的外接圓的面積＝＿＿＿＿。
   answer:
-  - ($\frac{16}{3}$,$\frac{16}{3}$)
-  answer_status: verified
-  answer_source: answer_key
+  - $\frac{170}{9}\pi$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-1-2-2
@@ -509,7 +509,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 參考答案誤植為外心坐標 (16/3, 16/3)，與題目所求「外接圓面積」不符
+    fixed_by: agent
+    fix_note: （人工修正：更正答案（外接圓面積而非外心坐標）並補齊解析）
   difficulty: 3
+  explanation: 設外心為 $(h, k)$，由 $O$ 到 $A(1,5), B(3,9), C(5,1)$ 等距列式解得外心為 $(\frac{16}{3}, \frac{16}{3})$。外接圓半徑平方 $R^2 = (\frac{16}{3}-1)^2 + (\frac{16}{3}-5)^2 = \frac{169+1}{9} = \frac{170}{9}$，故外接圓面積為 $\frac{170}{9}\pi$。
+  review_note: 原答案卷答案 ['($\\frac{16}{3}$,$\\frac{16}{3}$)']，執行 agent 修正為 ['$\\frac{170}{9}\\pi$']
 - id: doc_110_新竹_新竹高中_數學_g10s1e2_s3_11
   section: 3
   number: 11

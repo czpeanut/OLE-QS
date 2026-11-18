@@ -274,7 +274,7 @@ questions:
   number: 5
   type: fill
   page: 2
-  stem: 設$\vec{a}$＝( $x_{1}$ , $y_{1}$ )，$\vec{b}$＝( $x_{2}$ , $y_{2}$ )，$\vec{c}$＝( $x_{3}$ , $y_{3}$ )，若，( 3$\vec{a}$)．$\vec{b}$＝$\vec{a}$．$\vec{c}$＝12，$\left| \begin{matrix}2x_{1} & 2y_{1} \\ 3x_{1}+x_{2} & 3y_{1}+y_{2}\end{matrix} \right|$＝6，$\left| \begin{matrix}x_{1}+2_{1} & 2x_{1}+3y_{1} \\ x_{2}+2y_{3} & 2x_{3}+3y_{3}\end{matrix} \right|$＝5，則 |$\vec{b}$|：|$\vec{c}$|＝＿＿＿＿。
+  stem: '設 $\vec{a}=(x_1, y_1)$、$\vec{b}=(x_2, y_2)$、$\vec{c}=(x_3, y_3)$，若 $(3\vec{a})\cdot\vec{b} = \vec{a}\cdot\vec{c} = 12$，$\left|\begin{matrix}2x_1 & 2y_1 \\ 3x_1+x_2 & 3y_1+y_2\end{matrix}\right| = 6$，$\left|\begin{matrix}x_1+2y_1 & 2x_1+3y_1 \\ x_3+2y_3 & 2x_3+3y_3\end{matrix}\right| = 5$，則 $|\vec{b}| : |\vec{c}| =$＿＿＿＿。'
   tags:
     unit:
       code: MA-A3-3-2
@@ -289,7 +289,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 第二個二階行列式疑似印刷或OCR漏字錯字（x_1+2_1、x_2+2y_3），影響作答
+    fixed_by: agent
+    fix_note: （人工修正：修正行列式印刷漏字與誤植，並補齊答案與解析）
   difficulty: 4
+  explanation: 由已知得 $\vec{a}\cdot\vec{b}=4$，$\vec{a}\cdot\vec{c}=12$。第一式行列式化簡為 $2\left|\begin{matrix}x_1 & y_1 \\ x_2 & y_2\end{matrix}\right| = 6 \Rightarrow \left|\begin{matrix}x_1 & y_1 \\ x_2 & y_2\end{matrix}\right| = 3$。第二式行列式等於 $\left|\begin{matrix}x_1 & y_1 \\ x_3 & y_3\end{matrix}\right|\left|\begin{matrix}1 & 2 \\ 2 & 3\end{matrix}\right| = -\left|\begin{matrix}x_1 & y_1 \\ x_3 & y_3\end{matrix}\right| = 5$，故 $\left|\begin{matrix}x_1 & y_1 \\ x_3 & y_3\end{matrix}\right| = -5$。利用 $|\vec{u}|^2|\vec{v}|^2 = (\vec{u}\cdot\vec{v})^2 + (\det[\vec{u},\vec{v}])^2$，得 $|\vec{a}||\vec{b}| = \sqrt{4^2+3^2} = 5$，$|\vec{a}||\vec{c}| = \sqrt{12^2+(-5)^2} = 13$，故 $|\vec{b}|:|\vec{c}| = 5:13$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '$5 : 13$'
 - id: doc_113_桃園_武陵_數學_數A_g11s1e3_s4_6
   section: 4
   number: 6

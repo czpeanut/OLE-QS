@@ -307,12 +307,10 @@ questions:
   page: 2
   stem: 坐標平面上有兩條平行直線，它們的 x 截距相差 12，y 截距相差 16，則這兩條平行直線的距離為＿＿＿＿。（答案請化為最簡）
   answer:
-  - $\frac{48}{5}$ 4.9 5.4x－3y－32＝0 或 4x－3y＋18＝0 6.（2，－2） 7.（13，3）
-  answer_status: verified
-  answer_source: answer_key
-  explanation: '設兩平行線 $L_{1}$，$L_{2}$，如右圖所示
-
-    $\RightarrowL_{1}$，$L_{2}$ 的距離 d＝$\frac{16\times 12}{\sqrt{16^{2}+12^{2}}}=\frac{16\times 12}{20}=\frac{48}{5}$'
+  - $\frac{48}{5}$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 設兩平行線 $L_1, L_2$ 與坐標軸截距差分別為 $12$ 與 $16$，兩線間距相當於兩股長為 $12$ 與 $16$ 之直角三角形斜邊上的高：$d = \frac{16 \times 12}{\sqrt{16^2+12^2}} = \frac{192}{20} = \frac{48}{5}$。
   tags:
     unit:
       code: MA-1-2-1
@@ -327,7 +325,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解答欄位混入後續題號答案
+    fixed_by: agent
+    fix_note: （人工修正：清除答案中混入的後續題號答案，修正解析缺圖用語與 LaTeX）
   difficulty: 2
+  review_note: 原答案卷答案 ['$\\frac{48}{5}$ 4.9 5.4x－3y－32＝0 或 4x－3y＋18＝0 6.（2，－2） 7.（13，3）']，執行 agent 修正為 ['$\\frac{48}{5}$']
 - id: doc_109_台北_北一女中_數學_g10s1e2_s3_4
   section: 3
   number: 4

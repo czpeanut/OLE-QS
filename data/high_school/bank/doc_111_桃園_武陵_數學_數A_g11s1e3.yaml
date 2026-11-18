@@ -515,7 +515,6 @@ questions:
   stem: '(1) 設 O 為△ABC 的外心，試證明$\vec{AO} \cdot \vec{AB}=\frac{1}{2} ∣ \vec{AB} ∣^{2}$。（3 分）
 
     (2) △ABC 中，$\overline{AB} = 6$，$\overline{BC} = 2\sqrt{7}$，$\overline{CA} = 4$，O 為△ABC 的外心，若$\vec{AO}=x\vec{AB}+y\vec{AC}$，試求數對（x，y）。（5 分）'
-  group_stem: (2) 園遊會時，小昕想在校園中 P 處設置一甜點攤位，為了方便明道樓、崇德樓及 K 書中心的同學前往，決定設立在明道樓、崇德樓位置的連線上，並且距離 K 書中心最近的位置處，試求攤位的坐標。（5 分）
   tags:
     unit:
       code: MA-A3-3-2
@@ -530,4 +529,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem誤植上一題（奇異果高中甜點攤位）之子題，本題stem為獨立完整之外心向量題
+    fixed_by: agent
+    fix_note: （人工修正：移除誤植的前題 group_stem 並補齊答案與解析）
   difficulty: 4
+  explanation: '(1) 過外心 $O$ 作 $\overline{OM}\perp\overline{AB}$ 於 $M$，則 $M$ 為 $\overline{AB}$ 中點，故 $\vec{AO}\cdot\vec{AB} = \vec{AM}\cdot\vec{AB} = \frac{1}{2}|\vec{AB}|^2$。
+
+    (2) 由餘弦定理得 $\vec{AB}\cdot\vec{AC} = \frac{6^2+4^2-(2\sqrt{7})^2}{2} = 12$。將 $\vec{AO} = x\vec{AB}+y\vec{AC}$ 分別與 $\vec{AB}, \vec{AC}$ 作內積，得 $\begin{cases}36x+12y=18 \\ 12x+16y=8\end{cases} \Rightarrow \begin{cases}6x+2y=3 \\ 3x+4y=2\end{cases}$，解得 $x=\frac{4}{9}, y=\frac{1}{6}$，故 $(x, y) = (\frac{4}{9}, \frac{1}{6})$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) 略（投影證明）；(2) $(\frac{4}{9}, \frac{1}{6})$

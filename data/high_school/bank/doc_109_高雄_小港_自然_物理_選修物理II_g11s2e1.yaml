@@ -409,7 +409,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 將鐵絲坳成L型並懸吊，如圖所示。鐵絲較長的一邊長度為較短一邊的4倍長，若懸吊後鐵絲的短邊與鉛直夾角為θ，則θ的正切值tanθ為何？
+  stem: 將均勻鐵絲拗成 L 型並自直角轉角處懸吊，鐵絲較長的一邊長度為較短一邊的 4 倍長，若懸吊後鐵絲的短邊與鉛直夾角為 θ，則 θ 的正切值 tanθ 為何？
   options:
   - label: A
     content: '16'
@@ -450,7 +450,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「θ則」有微缺字/亂碼，不影響作答
+    fixed_by: agent
+    fix_note: （人工修正：修正錯字、補充懸吊位置條件（免附圖）並補全解析）
   difficulty: 3
+  explanation: 設短邊長 L、質量 m（質心距轉角 $L/2$），長邊長 4L、質量 4m（質心距轉角 $2L$）。懸吊平衡時兩邊對轉角的重力力矩平衡：$m\cdot\frac{L}{2}\sin\theta＝4m\cdot 2L\cos\theta \Rightarrow \tan\theta＝16$。故選(A)。
 - id: doc_109_高雄_小港_自然_物理_選修物理II_g11s2e1_s1_12
   section: 1
   number: 12

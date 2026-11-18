@@ -293,7 +293,7 @@ questions:
   - label: C
     content: 安可與傑憲、安可與智傑，還有智傑與傑楷之間的買賣契約均具有法律效力
   - label: D
-    content: 安可與傑靈之間的買賣契約成立，因此傑憲具有向傑楷要求交付遊戲機之權
+    content: 安可與傑憲之間的買賣契約成立，因此傑憲具有向傑楷要求交付遊戲機之權
   tags:
     unit:
       code: CI-3-1-2
@@ -305,6 +305,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 錯字：選項(D)「傑靈」
+    fixed_by: agent
+    fix_note: （人工修正：修正選項D錯字「傑靈」為「傑憲」並補齊解答與解析）
+  explanation: 買賣契約屬不要式諾成契約（債權行為），只要雙方意思表示合致即成立生效，故一物數賣時三份買賣契約均有效成立(C)。(D)傑憲僅得向安可主張債務不履行損害賠償，不得直接向善意受讓之第三人傑楷請求交付。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s1e2_s1_11
   section: 1
   number: 11
@@ -371,7 +378,7 @@ questions:
   - label: B
     content: 教育資源的投入會產生外部效益，因此會導致這項投入量高於社會的最適投入數量
   - label: C
-    content: 違規工廠所生產產品的價格，將社會福利最大時候的價格高
+    content: 違規工廠所生產產品的價格，將比社會福利最大時候的價格高
   - label: D
     content: 教育資源的投入量如果不足，社會福利水準無法達到最佳狀態
   tags:
@@ -385,6 +392,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字：選項(C)「將社會福利」
+    fixed_by: agent
+    fix_note: （人工修正：修補選項C漏字並補齊解答與解析）
+  explanation: (A)誤，具外部成本時市場產量會「高於」社會最適數量；(B)誤，具外部效益時市場投入量會「低於」社會最適數量；(C)誤，未將外部成本內部化時產品價格「低於」社會最適價格；(D)正，教育具外部效益，投入不足將導致社會福利無法達到最大。故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s1e2_s1_14
   section: 1
   number: 14
@@ -584,7 +598,7 @@ questions:
   number: 21
   type: single
   page: 3
-  stem: 某量販後向媒體透露衛生紙將在3月漲價的訊息，並趁此推出自家品牌衛生紙「限時」特價，1串130抽×12包只要100元。業者原本預計全臺會賣7萬串，沒想到開賣不到半小時就賣了10萬串，出現缺貨情形。現場民眾大排長龍不願離去，抗議業者不補貨，「限時變限量」。請問就量販店及消費者而言，下列何者最為正確？
+  stem: 某量販店向媒體透露衛生紙將在3月漲價的訊息，並趁此推出自家品牌衛生紙「限時」特價，1串130抽×12包只要100元。業者原本預計全臺會賣7萬串，沒想到開賣不到半小時就賣了10萬串，出現缺貨情形。現場民眾大排長龍不願離去，抗議業者不補貨，「限時變限量」。請問就量販店及消費者而言，下列何者最為正確？
   options:
   - label: A
     content: 衛生紙每串100元時，會有10萬串的需求量
@@ -605,6 +619,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字：「某量販後」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「某量販後」並補齊解答與解析）
+  explanation: 量販店以特價100元開賣不到半小時即售出10萬串，代表在100元價格下業者提供的「供給量」為10萬串(C)。因現場仍有民眾排隊買不到，實際需求量應大於10萬串，惟無法從題意確知實際需求量與短缺額為3萬串（7萬串僅為業者原先預估銷量）。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s1e2_s1_22
   section: 1
   number: 22
@@ -748,14 +769,14 @@ questions:
   number: 27
   type: single
   page: 4
-  stem: 如果要消除上一題所提到的「狀況」，下列何者是治本的做法？
+  stem: 如果要消除烤全雞賠本搶購的狀況，下列何者是治本的做法？
   options:
   - label: A
     content: 提高該商品的售價到成本
   - label: B
-    content: 直接結束該商品的銷售量
+    content: 直接結束該商品的銷售
   - label: C
-    content: 消費者每個人只限購一雙
+    content: 消費者每個人只限購一隻
   - label: D
     content: 依會員等級收不同的價格
   group_stem: 美式賣場好○多是許多民眾購買生活用品及各式生食、熟食的首選，尤其是「招牌烤全雞」總讓民眾搶購，由於烤雞不僅價格低廉、份量大，且價錢甚至比未烹煮的生雞肉還便宜，好○多賣場也承認是賠本賣，但是所謂「賠本的生意沒人做」，為何好○多要如此呢？根據外媒報導，原因在於希望利用烤雞吸引消費者進場，而店內動線特意將烤雞放置在賣場深處，讓顧客在前往購買烤雞的過程中，忍不住「順手」多拿了其他商品。
@@ -770,6 +791,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字：選項(C)「只限購一雙」
+    fixed_by: agent
+    fix_note: （人工修正：補全題幹「上一題」指涉並修正選項B/C錯字及補齊解答與解析）
+  explanation: 烤雞因售價低於成本而造成賠本與超額需求搶購，治本之道為提高售價至成本以上以反映市場均衡，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s1e2_s1_28
   section: 1
   number: 28
@@ -827,7 +855,7 @@ questions:
   number: 32
   type: multiple
   page: 5
-  stem: 許多漫畫影音出租店會提供優惠價或折扣，吸引顧客預先儲值金額，這些預收的儲值金額，可為店家提供額外的利息收入，亦可讓顧客在休閒時，優先想到出租店，而排擠選擇其他休閒的意願，同時增加冷門創作的出租機會，一舉數得。關於漫畫影音出租店的相關敘述，何者正確？
+  stem: 許多漫畫影音出租店會提供優惠價或折扣，吸引顧客預先儲值金額，這些預收的儲值金額，可為店家提供額外的利息收入，亦可讓顧客在休閒時，優先想到出租店，而排擠選擇其他休閒的意願，同時增加冷門創作的出租機會，一舉數得。關於漫畫影音出租店的相關敘述，何者正確？（多選）
   options:
   - label: A
     content: 出租店在生產要素市場提供勞務
@@ -850,6 +878,14 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 亂碼：選項(C)「出租店的的」
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C錯字「出租店的的」並補齊解答與解析）
+  explanation: (A)誤，廠商在產品市場提供商品或服務；(B)誤，員工在生產要素市場提供勞動；(C)正，廠商以追求利潤極大為目標；(D)正，提供折扣降低價格以吸引更多消費，符合需求法則；(E)誤，預先儲值會改變消費偏好與預算配置，可能使需求線移動。故選(C)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - D
 - id: doc_109_桃園_武陵_社會_公民與社會_g11s1e2_s2_33
   section: 2
   number: 33

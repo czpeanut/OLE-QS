@@ -271,18 +271,18 @@ questions:
   number: 6
   type: multiple
   page: 2
-  stem: 設 A、B 為兩事件，且 P
+  stem: 設 $A, B$ 為兩事件，且 $P(A)=\frac{1}{3}$，$P(B)=\frac{2}{5}$，$P(A\cup B)=\frac{1}{2}$，則下列選項何者正確？
   options:
   - label: A
-    content: ＝$\frac{1}{3}$，P
+    content: $P(A\cap B) = \frac{7}{30}$
   - label: B
-    content: ＝$\frac{2}{5}$，P（A∪B）＝$\frac{1}{2}$，則下列選項何者正確？(A) P（A∩B）＝$\frac{7}{30}$(B) P（B∣A）＝$\frac{1}{3}$
+    content: $P(B\mid A) = \frac{1}{3}$
   - label: C
-    content: P（A∣B）＝$\frac{7}{12}$
+    content: $P(A\mid B) = \frac{7}{12}$
   - label: D
-    content: P（B∣A'）＝$\frac{1}{3}$
+    content: $P(B\mid A') = \frac{1}{3}$
   - label: E
-    content: P（B'∣A'）＝$\frac{3}{4}$
+    content: $P(B'\mid A') = \frac{3}{4}$
   answer:
   - A
   - C
@@ -303,7 +303,18 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹與選項排版錯位（題幹中的 P(A)、P(B) 被誤切為選項 A、B）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹截斷與選項 A、B 排版錯位並補齊解析）
   difficulty: 2
+  explanation: '(A) ○：$P(A\cap B) = \frac{1}{3}+\frac{2}{5}-\frac{1}{2} = \frac{7}{30}$。
+
+    (B) ×：$P(B\mid A) = \frac{7/30}{1/3} = \frac{7}{10}$。
+
+    (C) ○：$P(A\mid B) = \frac{7/30}{2/5} = \frac{7}{12}$。
+
+    (D) ×：$P(B\mid A'') = \frac{2/5-7/30}{2/3} = \frac{1}{4}$。
+
+    (E) ○：$P(B''\mid A'') = 1 - \frac{1}{4} = \frac{3}{4}$。選 (A)(C)(E)。'
 - id: doc_112_台北_明倫_數學_數B_g11s2e2_s2_1
   section: 2
   number: 1

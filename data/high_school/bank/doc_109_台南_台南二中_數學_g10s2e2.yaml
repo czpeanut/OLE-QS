@@ -279,7 +279,7 @@ questions:
   number: 10
   type: fill
   page: 2
-  stem: 某天放假的上午4小時下午3小時，小美打算以下7個活動各做1小時，7個活動分別是『算數學、捏陶土、洗澡、追電視劇、寫作文、遛狗、彈鋼琴』其中捏陶土一定要在洗澡之前 ( 可以隔一段時間 )，算數學一定要在早上。請問這7小時的行程共有幾種不同安排？＿＿＿＿
+  stem: 某天放假的上午 4 小時、下午 3 小時，小美打算進行以下 7 個活動各 1 小時：『算數學、捏陶土、洗澡、追電視劇、寫作業、遛狗、彈鋼琴』，其中捏陶土一定要在洗澡之前（可以隔一段時間），算數學一定要在早上。請問這 7 小時的行程共有幾種不同安排？＿＿＿＿
   tags:
     unit:
       code: MA-2-2-2
@@ -294,7 +294,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有亂碼（寫作業）
+    fixed_by: agent
+    fix_note: （人工修正：修正亂碼「寫作文」並補齊答案與解析）
   difficulty: 3
+  explanation: 先安排「算數學」在上午 4 個時段中選 1 個，有 4 種選法；剩下 6 個活動排入剩餘 6 個時段，且「捏陶土」在「洗澡」之前，有 $\frac{6!}{2!} = 360$ 種排法。故共有 $4 \times 360 = 1440$ 種安排。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '1440'
 - id: doc_109_台南_台南二中_數學_g10s2e2_s2_11
   section: 2
   number: 11

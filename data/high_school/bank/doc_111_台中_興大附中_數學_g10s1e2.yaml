@@ -382,9 +382,9 @@ questions:
   page: 2
   stem: 已知△ABC 的 A（1，－2）與 B（－3，0），C 在 y 軸正向上，△ABC 的外心 O 在 x 軸上，則 C 點坐標為＿＿＿＿。
   answer:
-  - （0，$\sqrt{6}$） 5.7 6.（5，7） 7.1；0；3 8.$\frac{40}{7}$
-  answer_status: verified
-  answer_source: answer_key
+  - $(0, \sqrt{6})$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-1-2-2
@@ -399,7 +399,11 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題目解答欄位誤將第4至8題答案全數串接於此題
+    fixed_by: agent
+    fix_note: （人工修正：清除答案中混入的後續題號答案並補齊解析）
   difficulty: 3
+  explanation: 設外心 $O(t, 0)$，由 $\overline{OA}^2 = \overline{OB}^2$ 得 $(t-1)^2+4 = (t+3)^2 \Rightarrow t = -\frac{1}{2}$。半徑平方 $R^2 = (-\frac{1}{2}+3)^2 = \frac{25}{4}$。設 $C(0, y)$（$y>0$），由 $(-\frac{1}{2})^2 + y^2 = \frac{25}{4}$ 得 $y = \sqrt{6}$，故 $C(0, \sqrt{6})$。
+  review_note: 原答案卷答案 ['（0，$\\sqrt{6}$） 5.7 6.（5，7） 7.1；0；3 8.$\\frac{40}{7}$']，執行 agent 修正為 ['$(0, \\sqrt{6})$']
 - id: doc_111_台中_興大附中_數學_g10s1e2_s3_5
   section: 3
   number: 5

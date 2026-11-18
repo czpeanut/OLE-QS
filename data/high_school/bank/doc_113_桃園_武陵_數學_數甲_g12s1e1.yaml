@@ -265,7 +265,7 @@ questions:
   number: 9
   type: fill
   page: 2
-  stem: 設無窮等比數列〈$a_{n}$〉的公比為r，且$\lim_{n \rightarrow \infty} \frac{a_{1} + a_{2} + a_{3} + \cdots + a_{n}}{7^{n}}$，試求數對( $a_{1}$ , r )＝______。
+  stem: 設無窮等比數列 $\langle a_n \rangle$ 的公比為 $r$，且 $\lim_{n \to \infty} \frac{a_1 + a_2 + a_3 + \cdots + a_n}{7^n} = 2$，試求數對 $(a_1, r) =$＿＿＿＿。
   tags:
     unit:
       code: MA-J1-1-1
@@ -280,7 +280,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹極限式缺少等號與極限值，條件不足無法作答。
+    fixed_by: agent
+    fix_note: （人工修正：補齊極限等式右側數值並補齊答案與解析）
   difficulty: 3
+  explanation: 若 $r=1$ 則極限為 $0$；若 $r \neq 1$ 則分子為 $\frac{a_1(r^n-1)}{r-1}$。欲使 $\lim_{n\to\infty} \frac{a_1(r^n-1)}{(r-1)7^n} = 2$ 為非零有限數，必有 $r = 7$，此時極限為 $\frac{a_1}{7-1} = \frac{a_1}{6} = 2 \Rightarrow a_1 = 12$，故數對為 $(12, 7)$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $(12, 7)$
 - id: doc_113_桃園_武陵_數學_數甲_g12s1e1_s2_10
   section: 2
   number: 10

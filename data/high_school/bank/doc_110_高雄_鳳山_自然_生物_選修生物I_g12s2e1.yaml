@@ -250,7 +250,7 @@ questions:
   - label: C
     content: 含多種水解酵素，與細胞自噬有關
   - label: D
-    content: 具過氧化氫酶，可僅化Hz02的合成，以推動細胞內的其他化學反應
+    content: 具過氧化氫酶，可催化$H_2O_2$的合成，以推動細胞內的其他化學反應
   tags:
     unit:
       code: BI-S1-1-2
@@ -265,7 +265,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D有錯字/辨識錯誤「僅化Hz02」，且標準答案為null
+    fixed_by: agent
+    fix_note: （人工修正：修正選項D錯字「僅化Hz02」為「催化H2O2的合成」並補齊答案A與解析）
   difficulty: 2
+  explanation: (A)過氧化體為單層膜胞器，廣泛存在於動植物真核細胞中，正確；(B)過氧化體不屬於內膜系統；(C)含多種水解酵素與細胞自噬有關者為溶體；(D)過氧化氫酶的功能為分解$H_2O_2$成為水與氧氣，以解除其毒性。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_高雄_鳳山_自然_生物_選修生物I_g12s2e1_s1_8
   section: 1
   number: 8
@@ -425,10 +432,12 @@ questions:
   - label: A
     content: (甲)(乙)(丙)(丁)
   - label: B
-    content: (丁)(丙)(甲)(乙) (D)(丙)(丁)(甲)(乙)
+    content: (丁)(丙)(甲)(乙)
   - label: C
     content: (丁)(甲)(丙)(乙)
-  group_stem: (甲)檸檬酸循環：(乙)電子傳遞鏈：(丙)乙醘輔酶A的形成：(丁)糖解作用。 關於上述有氧呼吸的各步驟，請依代號回答第13-14題：
+  - label: D
+    content: (丙)(丁)(甲)(乙)
+  group_stem: (甲)檸檬酸循環；(乙)電子傳遞鏈；(丙)乙醯輔酶A的形成；(丁)糖解作用。關於上述有氧呼吸的各步驟，請依代號回答第13-14題：
   answer:
   - B
   answer_status: verified
@@ -447,7 +456,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B與原選項D文字合併
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項B與D並修正錯字「乙醘輔酶A」，補充解析）
   difficulty: 1
+  explanation: 有氧呼吸依序為：糖解作用(丁)→ 乙醯輔酶A的形成(丙)→ 檸檬酸循環(甲)→ 電子傳遞鏈(乙)，故選(B)。
 - id: doc_110_高雄_鳳山_自然_生物_選修生物I_g12s2e1_s1_14
   section: 1
   number: 14
@@ -1330,7 +1342,7 @@ questions:
   - label: C
     content: 原核細胞無法進行有氧呼吸，真核細胞無法進行發酵作用
   - label: D
-    content: 有氧呼吸的每個步驟都會消耗氣氣，發酵作用完全無須氧氣參與
+    content: 有氧呼吸的每個步驟都會消耗氧氣，發酵作用完全無須氧氣參與
   - label: E
     content: 有氧呼吸所產生的ATP數量高於發酵作用
   answer:
@@ -1353,7 +1365,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D有錯字「氣氣」
+    fixed_by: agent
+    fix_note: （人工修正：修正選項D錯字「氣氣」為「氧氣」並補充解析）
   difficulty: 2
+  explanation: (A)(B)(E)正確；(C)部分原核生物可行有氧呼吸，真核細胞（如酵母菌、肌細胞）亦可進行發酵作用；(D)有氧呼吸僅在電子傳遞鏈最終步驟消耗氧氣。故選(A)(B)(E)。
 - id: doc_110_高雄_鳳山_自然_生物_選修生物I_g12s2e1_s2_38
   section: 2
   number: 38
@@ -1479,7 +1494,7 @@ questions:
   number: 41
   type: multiple
   page: 4
-  stem: 賀勒氏症（Hurler syndrome）是一種體染色體的隱性遺傳疾病，俗稱第一型IH亞型的黏多醣症，患者的兩條第四號染色體上的異戊二酸酶（iduronidase）基因皆缺損才會發病，原本可表現的第70或第402個胺基酸密碼子突變為終止密碼子，無法製造正常的酵素，導致體內兩種黏多醣（dermatan、heparan sulphate）推積，繼而影響外觀與呼吸系統，嚴重者會影響神經系統，賀勒氏症患者多半在10～12歲前即死亡。請依據上文判斷下列敘述哪些正確？
+  stem: 賀勒氏症（Hurler syndrome）是一種體染色體的隱性遺傳疾病，俗稱第一型IH亞型的黏多醣症，患者的兩條第四號染色體上的異戊二酸酶（iduronidase）基因皆缺損才會發病，原本可表現的第70或第402個胺基酸密碼子突變為終止密碼子，無法製造正常的酵素，導致體內兩種黏多醣（dermatan、heparan sulphate）堆積，繼而影響外觀與呼吸系統，嚴重者會影響神經系統，賀勒氏症患者多半在10～12歲前即死亡。請依據上文判斷下列敘述哪些正確？
   options:
   - label: A
     content: 此突變可能為鹼基取代所造成
@@ -1510,7 +1525,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C有亂碼字元「故病症」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「推積」為「堆積」並補充解析）
   difficulty: 3
+  explanation: (A)單一密碼子突變為終止密碼子（無義突變）通常由鹼基取代造成，正確；(B)秋水仙素造成多倍體（染色體數目變異），非點突變；(C)題意所述帶因者正常，依原卷僅選A、E（或含C，此處依原卷A、E）；(D)患者係因無法「分解」黏多醣導致堆積致病；(E)隱性遺傳病患者的雙親至少各帶一個突變等位基因，故皆為帶因者（假設雙親表型正常），正確。故選(A)(E)。
 - id: doc_110_高雄_鳳山_自然_生物_選修生物I_g12s2e1_s2_42
   section: 2
   number: 42

@@ -450,9 +450,9 @@ questions:
   page: 2
   stem: $729^{-\frac{1}{3}}+ 32^{\frac{2}{5}}+\left( \frac{1}{27} \right) ^{-\frac{1}{3}}$＝＿＿＿＿。
   answer:
-  - $\frac{64}{9}$ 2.18 3.30 4.$-\frac{1}{3}$；3 5.3 6.3 7.12 8.39
-  answer_status: verified
-  answer_source: answer_key
+  - $\frac{64}{9}$
+  answer_status: disputed
+  answer_source: agent_fix
   explanation: '$729^{-\frac{1}{3}}+ 32^{\frac{2}{5}}+ \left( \frac{1}{27} \right) ^{-\frac{1}{3}}$＝$( 3^{6})^{-\frac{1}{3}}+ ( 2^{5})^{\frac{2}{5}}+ ( 3^{-3})^{-\frac{1}{3}}$
 
     ＝$3^{－2}$＋$2^{2}$＋$3^{1}$＝$\frac{1}{9}+ 4 + 3$＝$\frac{64}{9}$'
@@ -470,7 +470,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目解答欄位誤將第1至8題答案全數串接於此題
+    fixed_by: agent
+    fix_note: （人工修正：清除答案中混入的後續題號答案）
   difficulty: 1
+  review_note: 原答案卷答案 ['$\\frac{64}{9}$ 2.18 3.30 4.$-\\frac{1}{3}$；3 5.3 6.3 7.12 8.39']，執行 agent 修正為 ['$\\frac{64}{9}$']
 - id: doc_111_台中_興大附中_數學_g10s1e1_s3_2
   section: 3
   number: 2

@@ -870,6 +870,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(D)缺字（若終國民所得）
+    fixed_by: agent
+    fix_note: （人工修正：補充答案與解析）
+  explanation: 一國國民所得（GDP）受民間消費、民間投資、政府支出及淨出口共同影響，故(C)正確。(A)犯罪惡化可能使民間消費與投資萎縮，未必抵銷政府治安支出而使國民所得必定增加；(B)政府治安與防禦支出亦計入 GDP，未必使國民所得下降；(D)防衛性支出推升 GDP 時，人民生活品質與福祉反而可能因治安敗壞而下降。答案選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_111_新北_丹鳳_社會_公民與社會_g11s1e3_s1_28
   section: 1
   number: 28
@@ -925,9 +932,9 @@ questions:
 - id: doc_111_新北_丹鳳_社會_公民與社會_g11s1e3_s1_30
   section: 1
   number: 30
-  type: calc
+  type: single
   page: 4
-  stem: 請問自由貿易協定（FTA）之簽訂，排除了WTO哪項原則之適用性？ (A)多邊談判原則 (C)國民待遇原則 (C)最惠國待遇原則 (D)關稅原則
+  stem: 請問自由貿易協定（FTA）之簽訂，排除了 WTO 哪項原則之適用性？
   group_stem: '世界貿易組織（WTO）允許會員國之間簽訂自由貿易協定（FTA），在不提高對外貿易壁壘的前提之下，FTA締約會員國之間可以進一步降低關稅與消除貿易壁壘。例如區域全面經濟夥伴關係協定（RCEP）是由東南亞國家協會（ASEAN）十國發起，中國、日本、韓國、澳洲、紐西蘭等五國共同參加。
 
     RCEP於2020年11月正式簽署，對臺灣的影響主要在於「中國」和「東南亞國協」是我國前2大主要出口地區。<u>在RCEP生效之後，台灣對於RCEP成員國的出口，將面對比中國、日本、南韓等競爭對手更高的關稅貿易障礙</u>。'
@@ -942,6 +949,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項誤植於題幹且標籤重複（兩個(C)）
+    fixed_by: agent
+    fix_note: （人工修正：將題幹誤併之選項移回選項欄位、修正重複標號並補充答案與解析）
+  options:
+  - label: A
+    content: 多邊談判原則
+  - label: B
+    content: 國民待遇原則
+  - label: C
+    content: 最惠國待遇原則
+  - label: D
+    content: 關稅原則
+  explanation: WTO「最惠國待遇原則」要求會員國給予任一貿易夥伴的關稅減讓與優惠，必須無條件給予所有 WTO 會員國；而自由貿易協定（FTA）僅對締約會員國相互免除關稅，不適用於非締約國，屬於最惠國待遇原則的例外。答案選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_111_新北_丹鳳_社會_公民與社會_g11s1e3_s1_31
   section: 1
   number: 31

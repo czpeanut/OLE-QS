@@ -55,7 +55,7 @@ questions:
   stem: 下列何種情況是由「看不見的手」所操作的成果？
   options:
   - label: A
-    content: 計程車到達目的地後，機器顯示150元，山料刷卡150元
+    content: 計程車到達目的地後，機器顯示150元，乘客刷卡150元
   - label: B
     content: 香蕉生產過剩，農委會啟動收購機制，1公斤5元收購次級品來堆肥
   - label: C
@@ -73,6 +73,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項 A 含錯字（山料刷卡）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項A錯字「乘客刷卡」，補齊解答與解析）
+  explanation: 「看不見的手」指市場價格機能。計程車依市場費率計價並完成交易屬於市場機制運作（A）；(B)政府收購農產品、(C)政府配給口罩、(D)政府訂定基本工資，皆屬於政府干預市場（「看得見的手」）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s1_3
   section: 1
   number: 3
@@ -165,12 +172,12 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 環保署推動「禁用塑膠吸管」政策，規定政府部門、學校、百貨購物中心、運鎖速食店等4大場所，內用餐飲皆不得提供1次性塑膠吸管。業者若被發現違規，第一次會先行勸導，但如果再次查訪仍未改善，最高可處6,000元罰鍰。政府的限塑政策，與下列何項政策的效果相同？
+  stem: 環保署推動「禁用塑膠吸管」政策，規定政府部門、學校、百貨購物中心、連鎖速食店等4大場所，內用餐飲皆不得提供1次性塑膠吸管。業者若被發現違規，第一次會先行勸導，但如果再次查訪仍未改善，最高可處6,000元罰鍰。政府的限塑政策，與下列何項政策的效果相同？
   options:
   - label: A
     content: 立法院修法針對酒駕再犯導致重傷者，處3年以上、10年以下有期徒刑
   - label: B
-    content: 環保局對未使用專用垃圾袋者，依廢棄物清理法》可處1,200元罰鍰
+    content: 環保局對未使用專用垃圾袋者，依《廢棄物清理法》可處1,200元罰鍰
   - label: C
     content: 經濟部能源局提供節能家電補助方案：冷氣冰箱汰舊換新補助3,000元
   - label: D
@@ -186,6 +193,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含錯字（運鎖速食店）；選項 B 缺前引號
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「連鎖速食店」與選項B缺引號，補齊解答與解析）
+  explanation: 題幹中對違規業者處以罰鍰屬於「行政罰」（負向誘因），藉以提高違規成本。(B)依《廢棄物清理法》處罰鍰亦屬行政罰與負向誘因，效果相同。(A)屬刑罰；(C)屬正向誘因（經濟補助）；(D)屬便民服務措施。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s1_7
   section: 1
   number: 7
@@ -200,7 +214,7 @@ questions:
   - label: C
     content: 國際分工導致開發中國家的生態環境破壞
   - label: D
-    content: 工業國拒絕處理空氣汙染將發國際衝突
+    content: 工業國拒絕處理空氣汙染將引發國際衝突
   tags:
     unit:
       code: CI-3-6-1
@@ -212,6 +226,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 D 缺字（將發）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項D漏字「將引發」，補齊解答與解析）
+  explanation: 題幹指出全球室內外空氣汙染導致人類平均預期壽命縮短，空氣治理成為全球各國新興健康議題，說明跨國環境汙染影響公民健康，已成為國家治理的重要範疇，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s1_8
   section: 1
   number: 8
@@ -292,7 +313,15 @@ questions:
   number: 11
   type: single
   page: 2
-  stem: 四位同學要合作一起完成公民報告，他們正討論應該如何進行分工。根據他們四位的說法，哪些人具有正確的分工觀念？ 小新：我是全組最擅長表達的人，所以由我上臺報告最具有絕對利益 妮妮：我打字速度比查資料還快，所以我來打報告的機會成本會較高 風間：我查資料速度是全組最快，所以在本組中我查資料與比較利益 阿呆：雖然我各方面都不如你們，但是我和你們一組會對大家都有利
+  stem: '四位同學要合作一起完成公民報告，他們正討論應該如何進行分工。根據他們四位的說法，哪些人具有正確的觀念？
+
+    小新：我是全組最擅長表達的人，所以由我上臺報告最具有絕對利益
+
+    妮妮：我打字速度比查資料還快，所以我來打報告的機會成本會較高
+
+    風間：我查資料速度是全組最快，所以在本組中我查資料具有比較利益
+
+    阿呆：雖然我各方面都不如你們，但是我和你們一組會對大家都有利'
   options:
   - label: A
     content: 小新、風間
@@ -313,6 +342,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 D 含亂碼字元（風間阿呆）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹與選項排版，補齊解答與解析）
+  explanation: 小新擅長表達，上臺報告產出效率最高，確實具有「絕對利益」；阿呆雖無絕對利益，但依比較利益法則分工合作，仍可增加整體產出使大家受惠，故小新與阿呆正確。妮妮打字快於查資料，打報告的機會成本應「較低」；風間速度最快只代表具「絕對利益」，不一定具「比較利益」。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s1_12
   section: 1
   number: 12
@@ -630,6 +666,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含亂碼字元（貼補用）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「貼補家用」，補齊解答與解析）
+  explanation: (甲)讀完4年大學須支付學費5萬×4＝20萬元，屬於外顯成本，正確；(乙)110.4萬元（2.3萬×12×4）是選擇讀大學所放棄的工作薪資，屬讀大學的隱藏成本，非工作的外顯成本；(丙)讀大學的機會成本＝外顯成本20萬＋隱藏成本110.4萬＝130.4萬元；(丁)選擇工作而放棄的大學文憑與大學生活屬隱藏成本，正確。故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s1_22
   section: 1
   number: 22
@@ -660,7 +703,7 @@ questions:
   number: 24
   type: single
   page: 3
-  stem: 公營事業民營企業相比，常被視為較無效率，原因之一出在員工的薪資。公營事業員工，不論業績表現優缺的報酬都相同，與民營企業員工講求績效的激勵制度不同，因此，在企業經營上的表現就有差異。就公營事業和民營企業的員工待遇說明，下列何者正確？
+  stem: 公營事業與民營企業相比，常被視為較無效率，原因之一出在員工的薪資。公營事業員工，不論業績表現優缺的報酬都相同，與民營企業員工講求績效的激勵制度不同，因此，在企業經營上的表現就有差異。就公營事業和民營企業的員工待遇說明，下列何者正確？
   options:
   - label: A
     content: 公營事業的員工因為工作時間較長，環境較差，失去工作誘因
@@ -681,6 +724,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹缺字（公營事業民營企業相比）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹漏字「與」，補齊解答與解析）
+  explanation: 民營企業透過績效獎金等正向誘因激勵員工，員工會因業績好獲得更高報酬而更努力工作，進而提升公司整體績效，故選(C)。(A)公營事業並非因工時長環境差而無誘因；(B)激勵制度有助提升企業競爭力；(D)缺乏績效誘因反而容易降低積極性。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s1_25
   section: 1
   number: 25
@@ -762,7 +812,7 @@ questions:
   number: 28
   type: single
   page: 4
-  stem: 各國在蘭花市場中的競爭，對於全球的蘭花生產上，會造成哪些影響？ (甲)專業的蘭花農，可以藉由不斷學習累積，提升生產技術 (乙)蘭花市場愈大，就可以提升專業化程度，分工會更精細 (丙)以各國的蘭花生產來看，要專業生產就要提高生產成本 (丁)透過各國專業生產蘭花，將使全球產量增加，福社提升
+  stem: 各國在蘭花市場中的競爭，對於全球的蘭花生產上，會造成哪些影響？ (甲)專業的蘭花農，可以藉由不斷學習累積，提升生產技術 (乙)蘭花市場愈大，就可以提升專業化程度，分工會更精細 (丙)以各國的蘭花生產來看，要專業生產就要提高生產成本 (丁)透過各國專業生產蘭花，將使全球產量增加，福祉提升
   options:
   - label: A
     content: 甲乙丁
@@ -784,6 +834,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項（丁）含錯字（福社）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「福祉」，補齊解答與解析）
+  explanation: 依比較利益與專業化分工原理，專業生產可透過邊做邊學提升技術（甲）、市場規模擴大有助深化分工（乙），並能增加全球總產量與經濟福祉（丁）。專業分工應是「降低」而非提高單位生產成本，故(丙)錯誤。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s1_29
   section: 1
   number: 29
@@ -811,6 +868,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組含亂碼字元（遠通訊）
+    fixed_by: agent
+    fix_note: （人工修正：修補題組亂碼「指出」，補齊解答與解析）
+  explanation: 由文中可知，臺灣為電子零組件主要供應國，中國則是全球重要的電子產品組裝地，故兩岸分工中，臺灣在「電子零組件生產」具比較利益，中國在「組裝」具比較利益。(B)稱我國對組裝較具比較利益與事實相反，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s1_30
   section: 1
   number: 30
@@ -1072,6 +1136,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 C 含亂碼字元（相關議）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項C亂碼「會議」，補齊解答與解析）
+  explanation: 由文中「認同將臺灣納入全球公衛及防疫體系的急迫性及必要性」可知(B)正確。(A)文中強調「絕不意謂我方不須繼續爭取」；(C)WHO僅研議線上參與若干會議，非以觀察員身分參與；(D)文中是指「始不致成為全球防疫的漏洞」，非承認我國是漏洞。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s1_40
   section: 1
   number: 40
@@ -1131,7 +1202,7 @@ questions:
   number: 2
   type: calc
   page: 6
-  stem: 「咖啡生產國在栽種咖啡具有何項優勢」和「佐證題文之描述」須同時作答始計分。 根據一讀通過的《人工生殖法》修正草案，要實施代孕生殖，必須符合以下其中1項條件，包括：1.妻無子宮。2.妻子數宮、免疫疾病或其他事實，難以孕育子女。3.妻因懷孕或分娩有嚴重危及生命之虞。另一方面，若委託者需使用他人精子或卵子，不得使用代孕者的卵子，或代孕者配偶的精子。 由於代孕者只是代理懷孕，所生的子女與胎兒並無血緣關係，因此依照血緣原則，代孕出生的子女，依法屬於委託者的子女。但如果委託者夫妻在胎兒出生前死亡，那麼胎兒出生後，代孕者有優先收養的權利，但收養程式仍應依《民法》及《兒童及少年福利與權益保障法》的規定辦理。 資料來源：遊資芸（2020）。代理孕母在臺灣有希望了！《人工生殖法》一讀通過，可給酬金，三大醫學問題搶先看。取自https://www.mombaby.com.tw/articles/17190
+  stem: 請根據上文回答：「咖啡生產國在栽種咖啡具有何項優勢？」和「佐證題文之描述為何？」（須同時作答始計分）
   group_stem: 由國際咖啡組織（International Coffee Organization；ICO）與全世界的咖啡協會一起在2014年3月決議，在2015年10月1日舉辦世界咖啡節。從此以後，世界咖啡日統一定在每年的10月1日。每到這一天，全球的企業、餐廳或門市等，提供免費咖啡或優惠折扣。全球每年消耗的咖啡量高達6000億杯咖啡，大量的需求量之下，光是以咖啡為主要生產的國家就已經超過60國，像是巴西、印度、哥倫比亞等國的咖啡出口，更是全國總出口收入的50％以上。 資料來源：Amber Chan（2018）。為什麼選在今天？關於「世界咖啡日」你該知道的三件事。取自https://www.gq.com.tw/life/content-37399
   assets:
   - key: s2_2_f1
@@ -1155,6 +1226,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹後半段混入下一題組《人工生殖法》文章
+    fixed_by: agent
+    fix_note: （人工修正：清除誤植於題幹末段之《人工生殖法》文章並明確子題問法，補齊解答與解析）
+  explanation: 各國依氣候與自然資源稟賦專注於生產自身機會成本較低的農作物，即為「比較利益」與專業化分工的展現；文中指出巴西、印度、哥倫比亞等國咖啡出口占總出口收入50%以上，正是專業生產並透過國際貿易獲利的具體佐證。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) 比較利益（專業化生產優勢）；(2) 題文提到全球以咖啡為主要生產的國家超過60國，且巴西、印度、哥倫比亞等國的咖啡出口占全國總出口收入的50%以上，顯示各國將資源集中於咖啡生產與出口。
 - id: doc_109_高雄_三民_社會_公民與社會_g11s1e1_s2_3
   section: 2
   number: 3

@@ -200,9 +200,7 @@ questions:
   number: 7
   type: fill
   page: 1
-  stem: '居禮夫人所發現的元素鐳-226 的半衰期大約 1600 年，則現有 32 克的鐳-226，經過 6400 年後，則重量會變為＿＿＿＿克。
-
-    $8.3^{99}$ 的個位數字為＿＿＿＿。'
+  stem: 居禮夫人所發現的元素鐳-226 的半衰期大約 1600 年，則現有 32 克的鐳-226，經過 6400 年後，重量會變為＿＿＿＿克。
   answer:
   - '2'
   answer_status: verified
@@ -221,7 +219,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題末混入另一題（8. 3^{99} 的個位數字）
+    fixed_by: agent
+    fix_note: （人工修正：移除題末混入的他題文字並補齊解析）
   difficulty: 1
+  explanation: $6400 \div 1600 = 4$ 個半衰期，剩餘重量為 $32 \times \left(\frac{1}{2}\right)^4 = 2$ 克。
 - id: doc_109_台中_豐原_數學_數B_g11s1e1_s1_9
   section: 1
   number: 9

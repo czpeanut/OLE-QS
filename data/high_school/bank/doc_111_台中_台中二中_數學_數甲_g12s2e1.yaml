@@ -422,9 +422,9 @@ questions:
   page: 2
   stem: 坐標平面上，拋物線Γ$_{1}$：（x－1）$^{2}$＝32（y＋4），橢圓Γ$_{2}$ 的兩焦點就是拋物線Γ$_{1}$ 的頂點與焦點，Γ$_{2}$ 的長軸長為 10，求橢圓Γ$_{2}$ 的方程式為＿＿＿＿。（答案請用標準式回答）
   answer:
-  - $\frac{(x - 1)^{2}}{9}+\frac{y^{2}}{25}= 1$ 5.60 6.54 7.10
-  answer_status: verified
-  answer_source: answer_key
+  - $\frac{(x-1)^2}{9} + \frac{y^2}{25} = 1$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-J2-3-2
@@ -439,7 +439,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案欄後方夾雜多餘數字「5.60 6.54 7.10」
+    fixed_by: agent
+    fix_note: （人工修正：清除答案中夾帶的多餘數字並補齊解析）
   difficulty: 3
+  explanation: 拋物線 $(x-1)^2 = 32(y+4)$ 的頂點為 $(1, -4)$、焦點為 $(1, 4)$，故橢圓中心為 $(1, 0)$、$c=4$。又長軸長 $2a=10 \Rightarrow a=5$，得 $b^2 = 5^2 - 4^2 = 9$，橢圓方程式為 $\frac{(x-1)^2}{9} + \frac{y^2}{25} = 1$。
+  review_note: 原答案卷答案 ['$\\frac{(x - 1)^{2}}{9}+\\frac{y^{2}}{25}= 1$ 5.60 6.54 7.10']，執行 agent 修正為 ['$\\frac{(x-1)^2}{9} + \\frac{y^2}{25} = 1$']
 - id: doc_111_台中_台中二中_數學_數甲_g12s2e1_s3_5
   section: 3
   number: 5

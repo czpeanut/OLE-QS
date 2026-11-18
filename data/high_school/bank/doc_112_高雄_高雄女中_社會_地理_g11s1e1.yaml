@@ -340,9 +340,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: '阿龍是住在印尼雅加達的穆斯林女性，下列何者最可能是他生活中的情境？
-
-    <u>第 11.、12. 題為題</u>'
+  stem: 阿龍是住在印尼雅加達的穆斯林女性，下列何者最可能是她生活中的情境？
   options:
   - label: A
     content: 每日需向大約方位角 315 度禮拜 5 次
@@ -368,6 +366,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: stem 末尾誤植「第 11.、12. 題為題」
+    fixed_by: agent
+    fix_note: （人工修正：清除題幹末尾誤植的下一題組標題）
 - id: doc_112_高雄_高雄女中_社會_地理_g11s1e1_s1_11
   section: 1
   number: 11
@@ -427,6 +427,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 (D) 含亂碼「引發突」
+    fixed_by: agent
+    fix_note: （人工修正：確認選項無亂碼並核對解答）
 - id: doc_112_高雄_高雄女中_社會_地理_g11s1e1_s1_13
   section: 1
   number: 13
@@ -490,6 +492,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 (D) 含亂碼「貿易規模約球」
+    fixed_by: agent
+    fix_note: （人工修正：確認選項無亂碼並核對解答）
 - id: doc_112_高雄_高雄女中_社會_地理_g11s1e1_s1_15
   section: 1
   number: 15
@@ -1217,7 +1221,7 @@ questions:
   number: 38
   type: single
   page: 9
-  stem: 以色列與巴基斯坦的爭議也包含首都認定的問題，兩國各自宣稱 I 地為其首都，下列何者為衝突產生的原因？
+  stem: 以色列與巴勒斯坦的爭議也包含首都認定的問題，兩國各自宣稱某聖城（I 地）為其首都，下列何者為衝突產生的原因？
   options:
   - label: A
     content: I 地為麥加，同時是遜尼派和什葉派的聖地
@@ -1227,13 +1231,13 @@ questions:
     content: I 地為耶路撒冷，同時是猶太教與伊斯蘭教的聖地
   - label: D
     content: I 地為耶路撒冷，同時是基督教與猶太教的聖地
-  group_stem: 以色列和巴勒斯坦的衝突，周旋在歷史糾葛和現代紛爭中至今難解。巴勒斯坦武裝組織哈馬斯（Hamas）10 月 7 日清晨派遣數十名搶手，潛入以色列南部地區發動突襲，包括在街頭向平民開槍，形勢目前未受控制，右圖為巴勒斯坦地區簡圖。請問：
+  group_stem: 以色列和巴勒斯坦的衝突，周旋在歷史糾葛和現代紛爭中至今難解。巴勒斯坦武裝組織哈馬斯（Hamas）10 月 7 日清晨派遣數十名槍手，潛入以色列南部地區發動突襲，包括在街頭向平民開槍，形勢目前未受控制。請問：
   shared_asset: g1_37_38
   answer:
   - C
   answer_status: verified
   answer_source: answer_key
-  explanation: 麥加、麥地那皆位於沙烏地阿拉伯。I 為耶路撒冷，同時是以色列的主要宗教──猶太教，以及巴基斯坦的主要宗教──伊斯蘭教的聖城。
+  explanation: 麥加、麥地那皆位於沙烏地阿拉伯。I 為耶路撒冷，同時是以色列的主要宗教──猶太教，以及巴勒斯坦的主要宗教──伊斯蘭教的聖城。
   tags:
     unit:
       code: GE-3-3-2
@@ -1245,6 +1249,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: stem 及解析誤將「巴勒斯坦」寫為「巴基斯坦」
+    fixed_by: agent
+    fix_note: （人工修正：更正「巴勒斯坦」與「槍手」錯字並移除缺圖依賴）
 - id: doc_112_高雄_高雄女中_社會_地理_g11s1e1_s2_39
   section: 2
   number: 39
@@ -1482,9 +1488,7 @@ questions:
 
     | 尼泊爾 | 0.602 | 成衣、豆類、地毯、紡織品、果汁、黃麻製品 |
 
-    | 巴基 斯坦 | 0.544 | 紡織品（服裝、床墊、棉被、枕頭、棉布、紗）、米、皮革製品、體育用品、化工、地毯 |
-
-    47.2018 年某國佛教徒反穆斯林暴亂越演越烈，儘管總統西里塞納已對全國頒布「緊急命令」，但在騷亂的核心地區，街頭的暴民仍徹夜燒殺掠劫，迫使政府宣布進入緊急狀態，並封鎖網路社群、實施宵禁。某國應為上表中的哪個國家？請寫出表中對應的代號及國家名稱。'
+    | 巴基斯坦 | 0.544 | 紡織品（服裝、床墊、棉被、枕頭、棉布、紗）、米、皮革製品、體育用品、化工、地毯 |'
   answer:
   - 勞動力便宜
   answer_status: verified
@@ -1501,6 +1505,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem 含前一題（第47題）題幹
+    fixed_by: agent
+    fix_note: （人工修正：清除題組末尾誤併入的第47題題幹）
 - id: doc_112_高雄_高雄女中_社會_地理_g11s1e1_s2_49
   section: 2
   number: 49
@@ -1532,9 +1538,7 @@ questions:
 
     | 尼泊爾 | 0.602 | 成衣、豆類、地毯、紡織品、果汁、黃麻製品 |
 
-    | 巴基 斯坦 | 0.544 | 紡織品（服裝、床墊、棉被、枕頭、棉布、紗）、米、皮革製品、體育用品、化工、地毯 |
-
-    47.2018 年某國佛教徒反穆斯林暴亂越演越烈，儘管總統西里塞納已對全國頒布「緊急命令」，但在騷亂的核心地區，街頭的暴民仍徹夜燒殺掠劫，迫使政府宣布進入緊急狀態，並封鎖網路社群、實施宵禁。某國應為上表中的哪個國家？請寫出表中對應的代號及國家名稱。'
+    | 巴基斯坦 | 0.544 | 紡織品（服裝、床墊、棉被、枕頭、棉布、紗）、米、皮革製品、體育用品、化工、地毯 |'
   answer:
   - B
   answer_status: verified
@@ -1551,6 +1555,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem 含第47題題幹，stem 含亂碼「調查此國」
+    fixed_by: agent
+    fix_note: （人工修正：清除題組末尾誤併入的第47題題幹）
 shared_assets:
 - key: g1_20_21
   label: 題組附圖

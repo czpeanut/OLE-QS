@@ -65,10 +65,10 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 考慮矩陣$A =\left[ \begin{matrix}a & b \\ c & -a\end{matrix} \right]$，其中 a、b、c 為實數且行列式 det
+  stem: 考慮矩陣 $A = \begin{bmatrix}a & b \\ c & -a\end{bmatrix}$，其中 $a, b, c$ 為實數且行列式 $\det(A) = -1$。試問行列式 $\det(A - A^{-1})$ 之值為下列哪一個選項？
   options:
   - label: A
-    content: ＝－1。試問行列式 det（A－$A^{－1}$）之值為下列哪一個選項？(A) 0
+    content: '0'
   - label: B
     content: '1'
   - label: C
@@ -100,6 +100,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹與選項(A)文字排版錯位
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹截斷與選項 A 排版錯位）
   difficulty: 2
 - id: doc_111_台中_興大附中_數學_數A_g11s2e3_s1_3
   section: 1

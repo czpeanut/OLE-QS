@@ -875,10 +875,10 @@ questions:
   number: 21
   type: multiple
   page: 3
-  stem: 下列有關過氧化能的敘述，哪些較正確？
+  stem: 下列有關過氧化體的敘述，哪些較正確？（多選）
   options:
   - label: A
-    content: 具有分解過氧化氮的酵素可幫助生物體分解代謝作用所產生的$H_{2}O_{2}$
+    content: 具有分解過氧化氫的酵素可幫助生物體分解代謝作用所產生的$H_{2}O_{2}$
   - label: B
     content: 為單層膜之胞器，動植物細胞皆有
   - label: C
@@ -901,7 +901,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「過氧化能」為「過氧化體」之OCR誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「過氧化能」與選項A「過氧化氮」錯字並補齊答案與解析）
   difficulty: 2
+  explanation: (A)(B)(C)(E)皆正確；(D)過氧化氫酶分解$H_2O_2$產生的氣泡為氧氣($O_2$)，而非二氧化碳。故選(A)(B)(C)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - C
+  - E
 - id: doc_109_高雄_高雄女中_自然_生物_選修生物I_g11s1e1_s3_22
   section: 3
   number: 22

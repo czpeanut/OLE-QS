@@ -358,9 +358,9 @@ questions:
   page: 2
   stem: 已知$\frac{7a5b}{36}$為一整數，且 7a5b 為完全平方數，求$0. \overline{ab}$化為分數之值為＿＿＿＿。
   answer:
-  - $\frac{2}{33}$ 5.2000 6.45 7.19729
-  answer_status: verified
-  answer_source: answer_key
+  - $\frac{2}{33}$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-1-1-1
@@ -375,7 +375,11 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 答案欄「$\frac{2}{33}$ 5.2000 6.45 7.19729」疑似混入後續題號答案
+    fixed_by: agent
+    fix_note: （人工修正：清除答案中混入的後續題號答案並補齊解析）
   difficulty: 3
+  explanation: 四位數 $7a5b$ 為 $36$ 的倍數且為完全平方數，測試 $84^2 = 7056 = 36\times 196$ 符合，故 $a=0, b=6$，得 $0.\overline{06} = \frac{6}{99} = \frac{2}{33}$。
+  review_note: 原答案卷答案 ['$\\frac{2}{33}$ 5.2000 6.45 7.19729']，執行 agent 修正為 ['$\\frac{2}{33}$']
 - id: doc_110_台北_北一女中_數學_g10s1e1_s3_5
   section: 3
   number: 5

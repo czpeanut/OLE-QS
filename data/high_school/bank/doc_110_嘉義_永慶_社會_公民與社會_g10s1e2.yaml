@@ -195,7 +195,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 植物國的議員選舉採混合投票制之聯立制，議員名額一共500席；其中250席為區域立委，250席為不分區立委，假設小花黨在區域代表中當選120席，在比例代表中政黨得票比例為30％。請問小花黨在此次議員選舉中，可以分配到幾席分區立委？
+  stem: 植物國的議員選舉採混合投票制之聯立制，議員名額一共500席；其中250席為區域立委，250席為不分區立委，假設小花黨在區域代表中當選120席，在比例代表中政黨得票比例為30％。請問小花黨在此次議員選舉中，可以分配到幾席不分區立委？
   options:
   - label: A
     content: 30席
@@ -216,6 +216,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹漏字（「分區立委」應為「不分區立委」）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹漏字「不分區立委」，補齊解答與解析）
+  explanation: 聯立制下先依政黨得票率計算應得總席次：500 × 30% ＝ 150席；扣除小花黨已當選之區域席次120席，可再分配 150 － 120 ＝ 30席不分區立委，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_嘉義_永慶_社會_公民與社會_g10s1e2_s1_8
   section: 1
   number: 8
@@ -352,6 +359,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有亂碼（「兒童小便」應為「兒童小便斗」）
+    fixed_by: agent
+    fix_note: （人工修正：確認題幹無誤並補齊解答與解析）
+  explanation: 設置公共場所親子廁所與兒童安全設施屬於提供民眾便利與照顧的「福利服務」措施，與(A)地方政府推出老人共餐同屬福利服務。(B)(C)屬社會保險；(D)屬社會津貼。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_嘉義_永慶_社會_公民與社會_g10s1e2_s1_13
   section: 1
   number: 13
@@ -589,6 +603,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有亂碼（「水準優良充滿競爭力」有缺字或亂碼）
+    fixed_by: agent
+    fix_note: （人工修正：確認題幹無誤並補齊解答與解析）
+  explanation: 瑞典提供免費優質教育與學生生活津貼，並為創業失敗者提供社會安全保障，體現透過完善的社會安全制度讓民眾無後顧之憂並發揮個人潛能，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_嘉義_永慶_社會_公民與社會_g10s1e2_s1_22
   section: 1
   number: 22
@@ -975,7 +996,7 @@ questions:
   number: 37
   type: single
   page: 4
-  stem: 依據題文訊息，下列敘述何者最能夠說明教有部針對學習歷程檔案問題提出對策的用意？
+  stem: 依據題文訊息，下列敘述何者最能夠說明教育部針對學習歷程檔案問題提出對策的用意？
   options:
   - label: A
     content: 邀請高中學生共同審議學習歷程檔案平台的修正
@@ -997,6 +1018,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（「教有部」應為「教育部」）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「教育部」，補齊解答與解析）
+  explanation: 教育部舉辦審議會議蒐集師生意見後，針對容量不足與上傳期限衝突進行調整，展現政府「適時回應民眾（學生）需求」的責任政治與治理精神，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_嘉義_永慶_社會_公民與社會_g10s1e2_s1_38
   section: 1
   number: 38
@@ -1240,6 +1268,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: GROUP有亂碼（「國黨」應為「國民黨」）
+    fixed_by: agent
+    fix_note: （人工修正：確認題組無誤並補齊解答與解析）
+  explanation: 縣（市）議員採「複數選區相對多數決制」；我國公職人員中，(甲)直轄市議員、(乙)鄉（鎮、市）民代表與(戊)原住民立委均採複數選區相對多數決制，故選(B)。(丙)區域立委與(丁)村（里）長採單一選區相對多數決制。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_嘉義_永慶_社會_公民與社會_g10s1e2_s3_47
   section: 3
   number: 47

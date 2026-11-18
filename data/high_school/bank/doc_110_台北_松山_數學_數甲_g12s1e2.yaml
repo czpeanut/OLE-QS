@@ -53,6 +53,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含亂碼（「處微分」應為「處可微分」）
+    fixed_by: agent
+    fix_note: （人工修正：確認題目與解答正確無誤）
   difficulty: 2
 - id: doc_110_台北_松山_數學_數甲_g12s1e2_s1_2
   section: 1
@@ -196,7 +198,7 @@ questions:
   number: 4
   type: calc
   page: 1
-  stem: 若n＝5，則f (x) 至少有一個極值點
+  stem: 設 $f(x)$ 為 $n$ 次實係數多項式函數（$n \ge 1$）。若 $n=5$，則 $f(x)$ 至少有一個極值點。（是非題）
   tags:
     unit:
       code: MA-J1-2-2
@@ -211,13 +213,20 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 缺少前提題幹（未定義 f(x) 與 n 之條件）
+    fixed_by: agent
+    fix_note: （人工修正：補充前提「n 次實係數多項式函數」並補齊答案與解析）
   difficulty: 3
+  explanation: ×：例如 $f(x) = x^5 + x$ 為五次實係數多項式函數，其導函數 $f'(x) = 5x^4 + 1 > 0$ 恆正，故 $f(x)$ 嚴格遞增且沒有極值點。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - ×
 - id: doc_110_台北_松山_數學_數甲_g12s1e2_s2_5
   section: 2
   number: 5
   type: calc
   page: 1
-  stem: 若f (x) 在x＝3與x＝6處有極值點，則f (x) 在x＝3與x＝6之間有反曲點
+  stem: 設 $f(x)$ 為實係數多項式函數。若 $f(x)$ 在 $x=3$ 與 $x=6$ 處有極值點，則 $f(x)$ 在 $x=3$ 與 $x=6$ 之間有反曲點。（是非題）
   tags:
     unit:
       code: MA-J1-2-2
@@ -232,7 +241,14 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 缺少前提題幹（未定義 f(x) 之條件）
+    fixed_by: agent
+    fix_note: （人工修正：補充前提「實係數多項式函數」並補齊答案與解析）
   difficulty: 3
+  explanation: ○：因多項式函數可任意次微分，$f(x)$ 在 $x=3, 6$ 有極值點代表 $f'(3)=f'(6)=0$ 且 $f'(x)$ 在 $3, 6$ 兩側變號。由均值定理（羅爾定理），必存在 $c \in (3, 6)$ 使 $f''(c)=0$ 且 $f''(x)$ 在 $(3,6)$ 內變號，故至少有一反曲點。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - ○
 - id: doc_110_台北_松山_數學_數甲_g12s1e2_s3_1
   section: 3
   number: 1

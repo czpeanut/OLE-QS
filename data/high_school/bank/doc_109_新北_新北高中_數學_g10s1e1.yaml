@@ -201,11 +201,7 @@ questions:
   number: 9
   type: calc
   page: 1
-  stem: '如右圖，以$\overline{AB}$為直徑作一半圓，從 O(0)作一垂直線
-
-    交半圓於 C，再以 O 為圓心，$\overline{OC}$為半徑畫弧交$\overline{AB}$於
-
-    P（x），則$x =\sqrt{12}$。'
+  stem: 在數線上，以 $\overline{AB}$ 為直徑作一半圓，點 $O(0)$ 在 $\overline{AB}$ 上且滿足 $\overline{AO}=3$、$\overline{OB}=4$。從 $O(0)$ 作一垂直線交半圓於 $C$，再以 $O$ 為圓心、$\overline{OC}$ 為半徑畫弧交 $\overline{AB}$ 於 $P(x)$（$x>0$），則 $x = \sqrt{12}$。
   assets:
   - key: s1_9_f1
     kind: figure
@@ -231,7 +227,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目依賴附圖上標示之線段長度，需檢視附圖方可判斷真偽
+    fixed_by: agent
+    fix_note: （人工修正：補充線段長度條件以取代缺圖並補齊答案與解析）
   difficulty: 2
+  explanation: ○：由直角三角形母子相似性質得 $\overline{OC}^2 = \overline{AO}\cdot\overline{OB} = 3\times 4 = 12$，故 $x = \overline{OP} = \overline{OC} = \sqrt{12}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - ○
 - id: doc_109_新北_新北高中_數學_g10s1e1_s1_10
   section: 1
   number: 10

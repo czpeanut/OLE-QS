@@ -1262,7 +1262,7 @@ questions:
   number: 35
   type: multiple
   page: 3
-  stem: 某段雙股DNA分子具有20個嘌呤與100個磷酸根，已知DNA一圈（一個完整的螺旋）共有3.4 nm，請問以下敘述哪些正確？
+  stem: 某段雙股DNA分子具有20個腺嘌呤（A）與100個磷酸根，已知DNA一圈（一個完整的螺旋，含10個鹼基對）長度為3.4 nm，請問以下敘述哪些正確？
   options:
   - label: A
     content: 內含50個核糖
@@ -1273,7 +1273,7 @@ questions:
   - label: D
     content: 雙股間有120個氫鍵
   - label: E
-    content: DNA全長約170 nm
+    content: DNA全長約17 nm
   answer:
   - B
   - E
@@ -1293,7 +1293,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「20個嘌呤與100個磷酸根」數值有誤（雙股100個磷酸根應有50個嘌呤）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「20個嘌呤」為「20個腺嘌呤」及螺旋長度單位為17 nm以確保科學正確性）
   difficulty: 3
+  explanation: 100個磷酸根代表100個核苷酸（50個鹼基對）。A＝T＝20，G＝C＝(100－40)/2＝30。雙股間氫鍵數＝20×2＋30×3＝130條；50個鹼基對共有5圈，全長＝5×3.4＝17 nm；DNA含去氧核糖而非核糖。故選(B)(E)。
 - id: doc_111_桃園_武陵_自然_生物_選修生物I_g12s1e2_s2_36
   section: 2
   number: 36

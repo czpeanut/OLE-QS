@@ -392,7 +392,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 取20克的金屬X氧化物（XO），在適當條件下與足量的硫酸完全反應，產生60克的$XSO_{4}$和m克的$H_{2}$O，反應式為：XO＋$H_{2}SO_{4}$→$XSO_{4}$＋$H_{2}$O，此反應式的係數已平衡，則M應為下列哪一種金屬？
+  stem: 取20克的金屬X氧化物（XO），在適當條件下與足量的硫酸完全反應，產生60克的$XSO_{4}$和m克的$H_{2}$O，反應式為：XO＋$H_{2}SO_{4}$→$XSO_{4}$＋$H_{2}$O，此反應式的係數已平衡，則X應為下列哪一種金屬？
   options:
   - label: A
     content: Be
@@ -423,6 +423,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末「則M應為」中之 M 應為 X 之筆誤
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹末M誤植為X）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學I_g11s1e1_s1_11
   section: 1
@@ -935,7 +937,7 @@ questions:
     content: 1：2：1：1
   - label: E
     content: 2：1：2：1
-  explanation: (1)方程式：$CaC_{2}$(s)＋$2H_{2}$O(l) → Ca(OH)$_{2}$(aq)＋$C_{2}H_{2}$(g) (2)$CaC_{2}$莫耳數＝$\frac{96}{64}$＝1.5 mol、水莫耳數＝$\frac{72}{18}$＝4 mol，故碳化鈣為限量試劑，反應後可生成1.5 mol的氫氧化鈣與1.5 mol的乙炔，並剩餘1 mol的水。而實際產生的乙炔為1 mol，故產率為66.7％。 (3)由式1×(1)＋式2×(－1)可得2C(s)＋$H_{2}$(g) → $C_{2}H_{2}$(g)，ΔH＝302－75＝227 kJ。 (4)由式1×(－1)＋式3×(－1)＋式5×($\frac{1}{2}$)可得$C_{2}H_{2}$(g)＋$\frac{5}{2}O_{2}$(g) → $2CO_{2}$(g)＋$H_{2}$O(l)，ΔH＝－302＋572－3142×$\frac{1}{2}$＝－1301 kJ。 (5)乙炔燃燒熱＝－1301 kJ／mol，乙烷燃燒熱＝－1571 kJ／mol。假設乙炔＝x mol、乙烷＝1－x mol，則可得燃燒總放熱＝1301x＋1571（1－x）＝1409，可得x＝0.6。
+  explanation: (1) 平衡反應式為 $CaC_{2}(s)＋2H_{2}O(l) \rightarrow Ca(OH)_{2}(aq)＋C_{2}H_{2}(g)$，故 $x:y:m:n = 1:2:1:1$，選(D)。
   tags:
     unit:
       code: CH-S1-1-2
@@ -950,4 +952,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組僅收錄第(1)小題且 answer 為 null
+    fixed_by: agent
+    fix_note: （人工修正：補齊第(1)小題答案為D並移除多餘之他題解析）
   difficulty: 1
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D

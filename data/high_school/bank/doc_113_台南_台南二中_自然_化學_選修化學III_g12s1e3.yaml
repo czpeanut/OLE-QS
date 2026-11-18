@@ -44,7 +44,7 @@ questions:
   - B
   answer_status: verified
   answer_source: answer_key
-  explanation: 硝酸（$HNO_{3}$）中只有一個可解離的$H^{＋}$，故為單質子酸。故選(C)。
+  explanation: 硝酸（$HNO_{3}$）中只有一個可解離的 $H^{＋}$，故為單質子酸。故選(B)。
   tags:
     unit:
       code: CH-S3-3-2
@@ -59,13 +59,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解析末句誤寫「故選(C)」（正確答案為(B)）
+    fixed_by: agent
+    fix_note: （人工修正：修正解析末句選項為B）
   difficulty: 1
 - id: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e3_s1_2
   section: 1
   number: 2
   type: single
   page: 1
-  stem: 知1.0 M某弱酸溶液中之日濃度與1×$10^{－3}$ M HCI(aq)中之$H^{＋}$濃度相等，則該弱酸之解離常數（$K_{a}$）為多少？
+  stem: 已知 1.0 M 某弱酸溶液中之 [$H^{＋}$] 濃度與 $1\times 10^{－3}$ M HCl(aq) 中之 [$H^{＋}$] 濃度相等，則該弱酸之解離常數（$K_{a}$）為多少？
   options:
   - label: A
     content: $10^{－2}$
@@ -81,7 +83,7 @@ questions:
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: 弱酸解離方程式（單位皆為M）： $\rightleftharpoons$ 可得$\frac{x^{2}}{1.0 - x}$＝$K_{a}$。又x＝$10^{－3}$，因1.0≫x，則可得1.0－x≒1，解得$K_{a}$＝$10^{－6}$。故選(E)。
+  explanation: 弱酸解離方程式 $HA \rightleftharpoons H^{+} + A^{-}$，平衡時 $[H^{+}]=[A^{-}]=10^{-3}\text{ M}$，$[HA]=1.0-10^{-3}\approx 1.0\text{ M}$，則 $K_{a} = \frac{(10^{-3})^{2}}{1.0} = 10^{-6}$。故選(E)。
   tags:
     unit:
       code: CH-S3-3-4
@@ -96,6 +98,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹OCR誤植「中之日濃度」（應為「中之[H+]濃度」）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹OCR亂碼並補齊解析公式）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e3_s1_3
   section: 1
@@ -370,7 +374,7 @@ questions:
   - C
   answer_status: verified
   answer_source: answer_key
-  explanation: 加入的氫氧化鈉莫耳數為醋酸的莫耳數的一半，故有一半的醋酸會被中和成醋酸根。則此系統中[$CH_{3}$COOH]：[$CH_{3}COO^{－}$]＝1：1，則[$H^{＋}$]＝$K_{a}$，pH＝$pK_{a}$＝5－log2＝0.3。故選(C)。
+  explanation: "加入的氫氧化鈉莫耳數為醋酸莫耳數的一半，故有一半的醋酸被中和成醋酸根。此緩衝系統中 $[CH_{3}COOH]：[CH_{3}COO^{-}] = 1：1$，則 $[H^{+}] = K_{a}$，$\text{pH} = \\text{p}K_{a} = 5 - \\log 2 = 4.7$。故選(C)。"
   tags:
     unit:
       code: CH-S3-3-6
@@ -385,6 +389,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解析末句誤寫「pH=pKa=5-log2=0.3」（應為4.7）
+    fixed_by: agent
+    fix_note: （人工修正：更正解析pH計算結果為4.7）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e3_s1_11
   section: 1
@@ -478,7 +484,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 25℃下，一燒杯內盛有1.0×10 $M^{－8}$的鹽酸，有關此溶液的敘述，下列何者正確？
+  stem: 25℃下，一燒杯內盛有 $1.0\times 10^{－8}$ M 的鹽酸，有關此溶液的敘述，下列何者正確？
   options:
   - label: A
     content: '[$H^{＋}$]為1.0×$10^{－8}$ M'
@@ -509,6 +515,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「1.0×10 $M^{－8}$」排版誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹濃度指數排版）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e3_s1_13
   section: 1
@@ -608,7 +616,9 @@ questions:
   - label: C
     content: d＜c＜b＜a
   - label: D
-    content: c＜a＜d＜b (B) c＜a＜b＜d
+    content: c＜a＜d＜b
+  - label: E
+    content: c＜a＜b＜d
   answer:
   - D
   answer_status: verified
@@ -628,6 +638,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 (D) 排版多出「(B) c＜a＜b＜d」
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項D中誤混入之選項並補齊E選項）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e3_s1_16
   section: 1
@@ -814,18 +826,18 @@ questions:
   number: 21
   type: multiple
   page: 2
-  stem: 下列混合液，哪些可作為緩沖溶液？
+  stem: 下列混合液，哪些可作為緩衝溶液？
   options:
   - label: A
-    content: $CH_{3}$COOH(an)（過量）＋NaOH(aq)
+    content: $CH_{3}$COOH(aq)（過量）＋NaOH(aq)
   - label: B
-    content: $CH_{3}$COONa(an)＋$CH_{3}$COOH(aq)
+    content: $CH_{3}$COONa(aq)＋$CH_{3}$COOH(aq)
   - label: C
-    content: HCl(an)＋NaOH(an)
+    content: HCl(aq)＋NaOH(aq)
   - label: D
-    content: HCl(ag)（過量）
+    content: HCl(aq)＋$NH_{3}$(aq)（過量）
   - label: E
-    content: $CH_{3}$COOH(en)（通量）＋HCl(ag)
+    content: $CH_{3}$COOH(aq)（過量）＋HCl(aq)
   answer:
   - A
   - B
@@ -847,6 +859,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 (D) 疑漏字（缺弱鹼成分），且多處 (an)/(en) 錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項(aq)與過量錯字並補齊選項D缺失之NH3(aq)成分）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_選修化學III_g12s1e3_s2_22
   section: 2

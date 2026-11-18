@@ -567,7 +567,7 @@ questions:
   - label: B
     content: 9,000元
   - label: C
-    content: 8,00元
+    content: 8,000元
   - label: D
     content: 7,000元
   tags:
@@ -581,6 +581,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C錯字（8,00元）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C錯字「8,00元」為「8,000元」並補充答案與解析）
+  explanation: 機會成本是指進行某項選擇時，所放棄的其他選項中價值最高者。阿呆選擇將套房租給乙（9,000元），其所放棄的甲、丙、丁三個選項中，以甲願意支付的 1 萬元租金最高，故機會成本為 1 萬元。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e1_s1_24
   section: 1
   number: 24

@@ -821,7 +821,9 @@ questions:
   - label: C
     content: 肝臟
   - label: D
-    content: 腎臟 (D)睪丸
+    content: 腎臟
+  - label: E
+    content: 睪丸
   tags:
     unit:
       code: BI-S3-1-1
@@ -836,7 +838,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D與E合併誤植為「腎臟 (D)睪丸」
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項D與E並補齊答案與解析）
   difficulty: 1
+  explanation: 心臟與肺臟位於胸腔內；肝臟與腎臟位於腹腔（腎臟位於腹膜後腔）；睪丸位於體外陰囊內。故選(C)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - D
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g12s1e1_s2_23
   section: 2
   number: 23

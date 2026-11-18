@@ -563,7 +563,7 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 索隆是剛畢業的社會新鮮人，最近得到兩個工作機會，如果去甲公司上班月薪5萬元，但交通費支出每個月2萬元。如果去乙公司上班月薪4萬元，但交通費支出每個月2萬元。如果去乙公司上班月薪4萬元，但交通費支出每個月5千元。請問：索隆該如何選擇最好，而其機會成本又是多少？
+  stem: 索隆是剛畢業的社會新鮮人，最近得到兩個工作機會，如果去甲公司上班月薪5萬元，但交通費支出每個月2萬元；如果去乙公司上班月薪4萬元，但交通費支出每個月5千元。請問：索隆該如何選擇最好，而其機會成本又是多少？
   options:
   - label: A
     content: 選擇甲工作：機會成本是3萬5千元
@@ -572,7 +572,7 @@ questions:
   - label: C
     content: 選擇乙工作：機會成本5.5萬元
   - label: D
-    content: 選擇乙工作：機會成本是5萬元
+    content: 選擇乙工作：機會成本是3萬5千元
   tags:
     unit:
       code: CI-3-2-1
@@ -584,6 +584,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹中乙公司交通費重複敘述且金額前後不一致（2萬元 vs 5千元）
+    fixed_by: agent
+    fix_note: （人工修正：刪除題幹重複矛盾語句、修正選項D數值並補齊解答與解析）
+  explanation: 甲工作淨收益＝5萬元－2萬元＝3萬元；乙工作淨收益＝4萬元－5千元＝3萬5千元。選擇乙工作淨收益較高（3.5萬元＞3萬元），其機會成本＝外顯成本（乙交通費5千元）＋隱藏成本（放棄甲工作的淨收益3萬元）＝3萬5千元。故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_台中_豐原_社會_公民與社會_g11s1e1_s1_20
   section: 1
   number: 20

@@ -320,7 +320,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 有關鹽酸與氯氣的反應下列敘述何者正確？
+  stem: 有關漂白水與鹽酸的反應，下列敘述何者正確？
   options:
   - label: A
     content: NaOCl發生氧化反應產生$Cl_{2}$
@@ -332,11 +332,11 @@ questions:
     content: 產生氣體後溶液pH值逐漸降低
   - label: E
     content: HCl為還原劑
-  group_stem: 過年前總會大掃除，漂白水跟鹽酸是居家常用清潔藥劑，但千萬不可混用，原因是市售漂白水主要為NaClO，當其與鹽酸相混時，會立即反應產生氯氣，氯氣極容易與人體的黏膜結合產生酸，造成呼吸道、眼睛黏膜的傷害。鹽酸與氯氣反應之反應式如下： NaOC(aq)＋2 HCl(aq) → $Cl_{2}$(g)＋$H_{2}$O(l)＋NaCl(aq)
+  group_stem: 過年前總會大掃除，漂白水跟鹽酸是居家常用清潔藥劑，但千萬不可混用，原因是市售漂白水主要為NaClO，當其與鹽酸相混時，會立即反應產生氯氣，氯氣極容易與人體的黏膜結合產生酸，造成呼吸道、眼睛黏膜的傷害。漂白水與鹽酸反應之反應式如下： NaOCl(aq)＋2 HCl(aq) → $Cl_{2}$(g)＋$H_{2}$O(l)＋NaCl(aq)
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
+  - E
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: CH-1-3-5
@@ -351,7 +351,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有輕微錯字（大除、NaOC）
+    fixed_by: agent
+    fix_note: （人工修正：修補題組化學式NaOCl與題幹錯字，並更正答案為E與補齊解析）
   difficulty: 2
+  explanation: 反應中 NaOCl 的 Cl 氧化數由 ＋1 降至 0（還原反應，NaOCl為氧化劑）；HCl 的 Cl 氧化數由 －1 升至 0（氧化反應，HCl為還原劑）。此為氧化還原反應而非酸鹼中和，且消耗鹽酸使 pH 上升。故選(E)。
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['E']
 - id: doc_109_新竹_新竹高中_自然_化學_g10s1e3_s1_11
   section: 1
   number: 11

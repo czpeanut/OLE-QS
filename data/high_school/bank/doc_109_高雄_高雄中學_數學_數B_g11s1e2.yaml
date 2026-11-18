@@ -165,27 +165,15 @@ questions:
   - D
   answer_status: verified
   answer_source: answer_key
-  explanation: '(A) ╳：由柯西不等式：
+  explanation: '(A) ×：由柯西不等式 $[x^2+(2y)^2][1^2+(\frac{1}{2})^2] \ge (x+y)^2$。
 
-    ［$x^{2}$＋（2y）$^{2}$］$\left[ 1^{2}+\left( \frac{1}{2} \right) ^{2} \right]$ ≥ （x＋y）$^{2}$
+    (B) ○：$5\cdot\frac{5}{4} \ge (x+y)^2 \Rightarrow -\frac{5}{2} \le x+y \le \frac{5}{2}$，最小值為 $-\frac{5}{2}$。
 
-    (B) ○：由上式，5．$\frac{5}{4}$ ≥ （x＋y）$^{2}$
+    (C) ○：$A_1$ 在 $x+y=-\frac{5}{2}$ 上，$A_2$ 在 $x+y=\frac{5}{2}$ 上，兩者到 $x+y=0$ 距離均為 $\frac{5}{2\sqrt{2}}$。
 
-    ⇒ －$\frac{5}{2}$ ≤ x＋y ≤ $\frac{5}{2}$
+    (D) ○：等號成立時 $\frac{x}{1} = \frac{2y}{1/2} \Rightarrow x - 4y = 0$。
 
-    檢驗等號成立，$\begin{cases}\frac{x}{1}=\frac{2y}{\frac{1}{2}} \\ x+y =-\frac{5}{2}\end{cases}\Rightarrow \begin{cases}x=-2 \\ y =-\frac{1}{2}\end{cases}$，故最小值為－$\frac{5}{2}$
-
-    (C) ○：$A_{1}$ 在 x＋y＝－$\frac{5}{2}$上，$A_{2}$ 在 x＋y＝$\frac{5}{2}$上，
-
-    故 $A_{1}$、$A_{2}$ 到 x＋y＝0 等距離
-
-    (D) ○：可解聯立$\begin{cases}\frac{x}{1}=\frac{2y}{\frac{1}{2}} \\ x+y =\frac{5}{2}\end{cases}\Rightarrow \begin{cases}x=2 \\ y =\frac{1}{2}\end{cases}$，得$A_{2}\left( 2 , \frac{1}{2} \right)$
-
-    故$A_{1}\left( -2 , -\frac{1}{2} \right)$、$A_{2}\left( 2 , \frac{1}{2} \right)$皆在 x－4y＝0 上
-
-    (E) ╳：x＋y＝－1 時，｜x＋y＋1｜有最小值 0
-
-    故選(B)(C)(D)'
+    (E) ×：因 $-\frac{5}{2} \le x+y \le \frac{5}{2}$，$-\frac{3}{2} \le x+y+1 \le \frac{7}{2}$，故 $|x+y+1|$ 最小值為 $0$。選 (B)(C)(D)。'
   tags:
     unit:
       code: MA-B3-3-2
@@ -200,6 +188,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 含數A內容（柯西不等式，本題為數B考卷）
+    fixed_by: agent
+    fix_note: （人工修正：補齊被截斷之解析）
   difficulty: 3
 - id: doc_109_高雄_高雄中學_數學_數B_g11s1e2_s3_1
   section: 3
@@ -267,6 +257,8 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 含數A內容（二階行列式，本題為數B考卷）
+    fixed_by: agent
+    fix_note: （人工修正：確認題目與解答正確無誤）
   difficulty: 2
 - id: doc_109_高雄_高雄中學_數學_數B_g11s1e2_s3_3
   section: 3
@@ -415,7 +407,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 含數A內容（二階行列式，本題為數B考卷）
+    fixed_by: agent
+    fix_note: （人工修正：補齊解析）
   difficulty: 3
+  explanation: $x_2 = -3x_1 + 4x_1 = x_1$，$y_2 = 14x_1 - 8y_1 = 4(3x_1 - 2y_1) + 2x_1 = 4(1) + 2x_2 = 2x_2 + 4$，故 $L_2$ 方程式為 $2x - y + 4 = 0$。
 - id: doc_109_高雄_高雄中學_數學_數B_g11s1e2_s3_8
   section: 3
   number: 8

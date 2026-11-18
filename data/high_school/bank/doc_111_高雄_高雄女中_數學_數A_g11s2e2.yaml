@@ -95,28 +95,28 @@ questions:
   number: 2
   type: multiple
   page: 1
-  stem: '在某次飛行旅途中，機上乘客調查如下表，今自乘客中隨機挑選 1 人，若每個人被挑選到的機率相同，設選到男性的事件為 M，選到中國人的事件為 C，下列敘述哪些正確？
+  stem: '在某次飛行旅途中，機上乘客調查如下表，今自乘客中隨機挑選 1 人，若每個人被挑選到的機率相同，設選到男性的事件為 $M$，選到中國人的事件為 $C$，下列敘述哪些正確？
 
-    |  | 男性 | 女性 | 合計 |
+    | | 男性 | 女性 | 合計 |
 
     | --- | --- | --- | --- |
 
-    | 中國人 | 65 |  | 94 |
+    | 中國人 | 65 | | 94 |
 
-    | 外國人 |  | 56 |  |
+    | 外國人 | | 56 | |
 
-    | 合計 |  | 85 | 305 |'
+    | 合計 | | 85 | 305 |'
   options:
   - label: A
-    content: P（C ∣ M）＝$\frac{13}{44}$
+    content: $P(C\mid M) = \frac{13}{44}$
   - label: B
-    content: P（M ∣
+    content: $P(M\mid C) = \frac{65}{94}$
   - label: C
-    content: ＝$\frac{65}{94}$(C) P（M ∩ C）＝$\frac{13}{61}$
+    content: $P(M\cap C) = \frac{13}{61}$
   - label: D
-    content: P（M ∪ C）＝$\frac{249}{305}$
+    content: $P(M\cup C) = \frac{249}{305}$
   - label: E
-    content: P(C)＝$\frac{94}{305}$
+    content: $P(C) = \frac{94}{305}$
   answer:
   - A
   - B
@@ -154,6 +154,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(B)(C)因「∣」符號切分導致格式錯位
+    fixed_by: agent
+    fix_note: （人工修正：修正亂碼並修復選項 B、C 排版錯位）
   difficulty: 2
 - id: doc_111_高雄_高雄女中_數學_數A_g11s2e2_s1_3
   section: 1

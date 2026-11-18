@@ -150,7 +150,7 @@ questions:
   number: 3
   type: fill
   page: 1
-  stem: 如右圖，一正五邊形ABCDE，其中$\overline{AD}$和$\overline{BE}$交於F。若$\overline{AF}$＝1，則$\overline{AB}$長度為何？
+  stem: 有一正五邊形 $ABCDE$，其中對角線 $\overline{AD}$ 和 $\overline{BE}$ 交於 $F$。若 $\overline{AF} = 1$，則 $\overline{AB}$ 長度為何？
   assets:
   - key: s2_3_f1
     kind: figure
@@ -180,7 +180,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 卷別為數B第三冊第1次段考，但本題實考數B第四冊黃金比例（正五邊形對角線比例）
+    fixed_by: agent
+    fix_note: （人工修正：移除缺圖依賴並補齊解析）
   difficulty: 2
+  explanation: 在正五邊形 $ABCDE$ 中，$\angle EAB = 108^\circ$，由對稱性得 $\angle EAD = \angle ABE = 36^\circ$，故 $\angle FAB = 72^\circ$、$\angle AFB = 72^\circ$，得 $\overline{BF} = \overline{AB}$；同理 $\triangle AFE$ 為等腰三角形，得 $\overline{FE} = \overline{AF} = 1$。又 $\triangle ABF \sim \triangle EBA$，故 $\frac{\overline{AB}}{\overline{AF}} = \frac{\overline{BE}}{\overline{AB}} \Rightarrow \overline{AB}^2 = \overline{AB} + 1$，解正根得 $\overline{AB} = \frac{1+\sqrt{5}}{2}$。
 - id: doc_109_台北_北一女中_數學_數B_g11s1e1_s2_4
   section: 2
   number: 4

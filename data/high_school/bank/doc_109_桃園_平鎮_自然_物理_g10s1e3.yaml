@@ -121,14 +121,16 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 電子通過雙狹縫產生的干涉條紋，需用電子的
+  stem: 電子通過雙狹縫產生的干涉條紋，需用電子的何種性質方可解釋？
   options:
   - label: A
     content: 波動性
   - label: B
     content: 粒子性
   - label: C
-    content: 粒子性 方可解釋
+    content: 靜電性
+  - label: D
+    content: 磁性
   answer:
   - A
   answer_status: verified
@@ -147,7 +149,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B與C文字重複（均為粒子性），但不影響作答
+    fixed_by: agent
+    fix_note: （人工修正：重整選項避免B、C重複並補全解析）
   difficulty: 1
+  explanation: 干涉與繞射為波的特徵，電子通過雙狹縫產生干涉條紋證明了電子具有波動性（物質波）。故選(A)。
 - id: doc_109_桃園_平鎮_自然_物理_g10s1e3_s1_5
   section: 1
   number: 5
@@ -1005,7 +1010,7 @@ questions:
   number: 33
   type: single
   page: 2
-  stem: 如圖所示，一單擺左右來回擺動，擺錘受有重力W、擺線的張力T與空氣阻力R。下列有關此三力對擺錘作功的敘述何者正確？
+  stem: 一單擺左右來回擺動，擺錘受有重力 W、擺線的張力 T 與空氣阻力 R。下列有關此三力對擺錘作功的敘述何者正確？
   options:
   - label: A
     content: W一定作正功，T一定作負功
@@ -1046,7 +1051,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「三」有微缺字/亂碼（應為「三力」），不影響作答
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹微缺字、移除附圖依賴並補全解析）
   difficulty: 2
+  explanation: 擺線張力 T 恆與擺錘瞬時速度方向垂直，故 T 一定不作功；空氣阻力 R 恆與速度方向相反，故 R 一定作負功；重力 W 在下降時作正功、上升時作負功。故選(B)。
 - id: doc_109_桃園_平鎮_自然_物理_g10s1e3_s1_34
   section: 1
   number: 34

@@ -25,6 +25,7 @@ REPO = Path(__file__).resolve().parent.parent
 BANK = REPO / "data/high_school/bank"
 NOTES = REPO / "data/high_school/label_notes.csv"
 HOLD = REPO / "data/high_school/upload_holdback.csv"
+FIXES = REPO / "data/high_school/fix_review.csv"
 DB = REPO / "out/senior_upload.db"
 # 同圖多掛待人工確認（景美化學 31～33 已確認是原卷共用圖，不暫緩）
 SHARED_FIG_PENDING = ["doc_112_高雄_三民_自然_生物_選修生物I_g11s1e2_s3_40", "doc_112_高雄_三民_自然_生物_選修生物I_g11s1e2_s3_41",
@@ -41,8 +42,12 @@ def env() -> tuple[str, dict]:
 
 def holdback() -> dict[str, str]:
     hold: dict[str, str] = {}
+    fixed = set()
+    if FIXES.is_file():                       # 執行 agent 手動修正、審核收下的題（scripts/senior_apply_fixes.py）
+        fixed = {r["題目id"] for r in csv.DictReader(FIXES.open(encoding="utf-8")) if r["審核"] == "收"}
     for r in csv.DictReader(NOTES.open(encoding="utf-8")):
-        hold[r["題目id"]] = "分章節備註：" + r["備註"]
+        if r["題目id"] not in fixed:
+            hold[r["題目id"]] = "分章節備註：" + r["備註"]
     for q in SHARED_FIG_PENDING:
         hold.setdefault(q, "同圖多掛待確認")
     groups: dict[tuple[str, str], list[str]] = {}
@@ -127,6 +132,7 @@ def upload(workers: int = 4) -> int:
         sys.exit("暫存資料庫裡有國中卷，停止")
 
     def call(method: str, table: str, params=None, body=None, prefer="return=minimal"):
+        last = ""
         for attempt in range(6):
             try:
                 r = s.request(method, f"{url}/{table}", params=params, timeout=300,
@@ -136,16 +142,30 @@ def upload(workers: int = 4) -> int:
                     return
                 if r.status_code < 500 and r.status_code != 429:
                     raise RuntimeError(f"{method} {table}: {r.status_code} {r.text[:300]}")
-            except requests.RequestException:
-                pass
+                last = f"{r.status_code} {r.text[:200]}"
+            except requests.RequestException as e:
+                last = str(e)[:200]
             time.sleep(2 ** attempt)
-        raise RuntimeError(f"{method} {table} 重試失敗")
+        raise RuntimeError(f"{method} {table} 重試失敗：{last}")
 
     # 1. 清掉這些高中卷在線上的舊資料（題目刪除時選項、附圖、出處、標籤、搜尋文字級聯刪除）
-    for i in range(0, len(docs), 40):
-        chunk = "in.(" + ",".join(docs[i:i + 40]) + ")"
-        for t in ("question", "asset", "section"):
-            call("DELETE", t, {"document_id": chunk})
+    # 一卷一卷刪：一次刪多卷會超過資料庫的執行時間上限（級聯刪除選項、標籤、搜尋文字）
+    from concurrent.futures import ThreadPoolExecutor
+
+    def wipe(doc_id: str) -> None:
+        # 級聯刪除整卷會逾時：先分批刪子表，再刪題目
+        r = s.get(f"{url}/question", params={"select": "id", "document_id": f"eq.{doc_id}"}, headers=H, timeout=120)
+        r.raise_for_status()
+        ids = [x["id"] for x in r.json()]
+        for i in range(0, len(ids), 25):
+            chunk = "in.(" + ",".join(f'"{x}"' for x in ids[i:i + 25]) + ")"
+            for t in ("option", "tag", "question_source", "question_search", "asset", "paper_item"):
+                call("DELETE", t, {"question_id": chunk})
+            call("DELETE", "question", {"id": chunk})
+        for t in ("asset", "section"):
+            call("DELETE", t, {"document_id": f"eq.{doc_id}"})
+    with ThreadPoolExecutor(3) as pool:
+        list(pool.map(wipe, docs))
     print(f"已清除 {len(docs)} 卷的舊資料", flush=True)
 
     def rows(sql: str, drop_id: bool, json_cols=(), bool_cols=()):

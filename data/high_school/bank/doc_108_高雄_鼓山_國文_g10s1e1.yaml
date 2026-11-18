@@ -170,13 +170,13 @@ questions:
   stem: 下列文句「 」中的成語，運用「錯誤」的是：
   options:
   - label: A
-    content: 她為人「虎視耽耽」，處世精明幹練，行事果決，可謂女中豪傑
+    content: 她為人「虎視眈眈」，處世精明幹練，行事果決，可謂女中豪傑
   - label: B
     content: 王課長仗著自己是經理的親戚，在公司「肆無忌憚」，為所欲為
   - label: C
     content: 小明投進致勝三分球，「揚眉瞬目」地訴說他的豐功偉業
   - label: D
-    content: 王大哥「桀驚不馴」，行事我行我素，從不聽從父母的規勸
+    content: 王大哥「桀驁不馴」，行事我行我素，從不聽從父母的規勸
   tags:
     unit:
       code: ZH-1-14-2
@@ -188,6 +188,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(D)「桀驚不馴」疑為「桀驁不馴」之錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A「耽耽」為「眈眈」、選項D「桀驚不馴」為「桀驁不馴」，補齊答案與解析）
+  explanation: 「虎視眈眈」形容像老虎一樣貪婪、凶狠地注視著，伺機奪取，為貶義詞，不可用來稱讚他人精明幹練（A 運用錯誤）。B「肆無忌憚」、C「揚眉瞬目」（得意自喜的樣子）、D「桀驁不馴」皆使用恰當。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_108_高雄_鼓山_國文_g10s1e1_s1_7
   section: 1
   number: 7
@@ -686,15 +693,15 @@ questions:
   - label: A
     content: 吾妻來歸。時至軒中，從余問古事，或憑几學書
   - label: B
-    content: 余肩牖而居，久之，能以足音辨人
+    content: 余扃牖而居，久之，能以足音辨人
   - label: C
     content: 庭有枇杷樹，吾妻死之年所手植也，今已亭亭如蓋矣
   - label: D
     content: 吾兒，久不見若影，何竟日默默在此，大類女郎也
   answer:
-  - D
-  answer_status: verified
-  answer_source: answer_key
+  - C
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: ZH-1-10-1
@@ -706,6 +713,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(B)「肩牖」疑為「扃牖」之錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B錯字「肩牖」為「扃牖」，更正錯誤答案D為C並補充解析）
+  explanation: C 選項描寫看見亡妻生前親手種植的枇杷樹如今已「亭亭如蓋」，藉樹的繁茂反襯物是人非，最能表現「睹物思人」之情。註：原答案誤植為 D，已更正為 C。
+  review_note: 原答案卷答案 ['D']，執行 agent 修正為 ['C']
 - id: doc_108_高雄_鼓山_國文_g10s1e1_s1_24
   section: 1
   number: 24
@@ -1175,11 +1186,7 @@ questions:
   number: 10
   type: multiple
   page: 4
-  stem: '有關「吾十有五而志於學」一章的文句解釋，何者正確
-
-    三、默寫，請依原文填入。
-
-    聖人無常師………………如是而已。'
+  stem: 有關「吾十有五而志於學」一章的文句解釋，何者正確？
   options:
   - label: A
     content: 「三十而立」：三十歲時就能明道守禮，懂得立身處世之道
@@ -1193,10 +1200,11 @@ questions:
     content: 「七十而從心所欲，不踰矩」：七十歲時能隨心意行事，而不會踰越法度
   answer:
   - A
+  - B
   - D
   - E
-  answer_status: verified
-  answer_source: answer_key
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: ZH-1-12-3
@@ -1208,3 +1216,7 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末混入「三、默寫，請依原文填入。聖人無常師………………如是而已。」
+    fixed_by: agent
+    fix_note: （人工修正：清除題幹末誤混之「三、默寫，請依原文填入」雜訊，更正答案ADE為ABDE並補充解析）
+  explanation: A、B、D、E 解釋皆正確。C 錯誤，「五十而知天命」是指理解上天賦予自己的道德使命與人生大義，積極承擔，而非消極「逆來順受、隨遇而安」。註：原答案漏列 B，已更正為 ABDE。
+  review_note: 原答案卷答案 ['A', 'D', 'E']，執行 agent 修正為 ['A', 'B', 'D', 'E']

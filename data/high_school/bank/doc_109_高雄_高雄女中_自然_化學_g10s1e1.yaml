@@ -170,7 +170,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 甲狀腺癌的治療方式中，可口服放射性碘（$\begin{matrix}131 \\ 53\end{matrix}$I）治療腫瘤，則此碘原子核內的中子數與核子電子數之差為
+  stem: 甲狀腺癌的治療方式中，可口服放射性碘（$^{131}_{53}$I）治療腫瘤，則此碘原子核內的中子數與核外電子數之差為
   options:
   - label: A
     content: '0'
@@ -183,9 +183,9 @@ questions:
   - label: E
     content: '131'
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: CH-1-1-4
@@ -200,7 +200,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「核子電子數」疑為「核外電子數」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹核外電子數錯字並更正答案為B（25）與補齊解析）
   difficulty: 1
+  explanation: $^{131}_{53}$I 中質子數＝核外電子數＝53，中子數 $= 131 - 53 = 78$，兩者之差為 $78 - 53 = 25$。故選(B)。
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['B']
 - id: doc_109_高雄_高雄女中_自然_化學_g10s1e1_s1_6
   section: 1
   number: 6
@@ -634,11 +638,11 @@ questions:
   - label: D
     content: RbF
   - label: E
-    content: $BcCl_{2}$
+    content: $BeCl_{2}$
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: CH-1-2-2
@@ -653,7 +657,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(E)「$BcCl_{2}$」疑為「$BeCl_{2}$」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正選項E為BeCl2並更正答案為B與補齊解析）
   difficulty: 2
+  explanation: 鈣為＋2價（$Ca^{2+}$）、硫為－2價（$S^{2-}$），形成離子化合物化學式應為 CaS，而非 $Ca_{2}S$。故選(B)。
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['B']
 - id: doc_109_高雄_高雄女中_自然_化學_g10s1e1_s1_18
   section: 1
   number: 18

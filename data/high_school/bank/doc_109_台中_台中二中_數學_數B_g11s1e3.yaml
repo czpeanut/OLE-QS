@@ -257,15 +257,15 @@ questions:
   number: 7
   type: fill
   page: 2
-  stem: '已知 A（3，4），B（－3，6），C（6，8），則：
+  stem: '已知 $A(3, 4)$，$B(-3, 6)$，$C(6, 8)$，則：
 
-    (1) $\vec{AB}$．$\vec{AC}$＝＿＿＿＿。
+    (1) $\vec{AB}\cdot\vec{AC} =$＿＿＿＿。
 
-    (2) cos∠BAC＝＿＿＿＿。
+    (2) $\cos\angle BAC =$＿＿＿＿。
 
-    (3) $\vec{AB}$在$\vec{AC}$上的正射影為＿＿＿＿。
+    (3) $\vec{AB}$ 在 $\vec{AC}$ 上的正射影為＿＿＿＿。
 
-    (4) P 為△ABC 內一點，且△PAB、△PBC、△PAC 面積相等，則 P 點坐標為＿＿＿＿。'
+    (4) $P$ 為 $\triangle ABC$ 內一點，且 $\triangle PAB$、$\triangle PBC$、$\triangle PAC$ 面積相等，則 $P$ 點坐標為＿＿＿＿。'
   tags:
     unit:
       code: MA-B3-3-2
@@ -280,7 +280,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹中坐標間有亂碼字元（）
+    fixed_by: agent
+    fix_note: （人工修正：清理題幹格式並補齊答案與解析）
   difficulty: 3
+  explanation: '$\vec{AB}=(-6,2)$、$\vec{AC}=(3,4)$。
+
+    (1) $\vec{AB}\cdot\vec{AC} = -18+8 = -10$。
+
+    (2) $\cos\angle BAC = \frac{-10}{\sqrt{40}\cdot 5} = -\frac{1}{\sqrt{10}} = -\frac{\sqrt{10}}{10}$。
+
+    (3) 正射影 $= \frac{-10}{25}(3,4) = (-\frac{6}{5}, -\frac{8}{5})$。
+
+    (4) $P$ 為重心，坐標為 $\left(\frac{3-3+6}{3}, \frac{4+6+8}{3}\right) = (2, 6)$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) $-10$；(2) $-\frac{\sqrt{10}}{10}$；(3) $(-\frac{6}{5}, -\frac{8}{5})$；(4) $(2, 6)$
 - id: doc_109_台中_台中二中_數學_數B_g11s1e3_s2_8
   section: 2
   number: 8

@@ -289,9 +289,9 @@ questions:
   number: 3
   type: fill
   page: 2
-  stem: '有一半徑為2、球心在原點的球面，球面上有兩點A ( 0 , 0 , 2 )、B ($\sqrt{3}$ , 0 ,－1 )，若有一隻螞蟻在球面上由A點爬至B點，則其所爬之最短距離為＿＿＿＿π。
+  stem: 'C. 有一半徑為 $2$、球心在原點的球面，球面上有兩點 $A(0, 0, 2)$、$B(\sqrt{3}, 0, -1)$，若有一隻螞蟻在球面上由 $A$ 點爬至 $B$ 點，則其所爬之最短距離為＿＿＿＿ $\pi$。
 
-    D. 如圖，設空間中一點A在平面E上投影為B，P、Q均在平面E上，平面APQ與 平面BPQ所交成的兩面角為45°，且∠APQ＝60°，$\overline{PA}$＝8，則$\overline{PA}$在平面E上之 正射影長為＿＿＿＿。'
+    D. 設空間中一點 $A$ 在平面 $E$ 上投影為 $B$，$P, Q$ 均在平面 $E$ 上，平面 $APQ$ 與平面 $BPQ$ 所交成的兩面角為 $45^\circ$，且 $\angle APQ = 60^\circ$，$\overline{PA} = 8$，則 $\overline{PA}$ 在平面 $E$ 上之正射影長（即 $\overline{PB}$）為＿＿＿＿。'
   group_stem: 說明：1.第A至J，將答案畫記在答案卡之「選擇（填）題答案區」所標示的列號（9－29） 2.第A至F題每小題完全答對給6分，答錯不倒扣，未完全答對不給分。 3.第G至J題每小題完全答對給5分，答錯不倒扣，未完全答對不給分。
   assets:
   - key: s3_3_f1
@@ -319,7 +319,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 此筆合併了填充C（球面距離）與填充D（正射影長）兩題
+    fixed_by: agent
+    fix_note: （人工修正：移除多餘附圖依賴並補齊答案與解析）
   difficulty: 3
+  explanation: 'C. $\cos\angle AOB = \frac{\vec{OA}\cdot\vec{OB}}{2\times 2} = \frac{-2}{4} = -\frac{1}{2} \Rightarrow \angle AOB = \frac{2\pi}{3}$，最短球面距離為 $2\times\frac{2\pi}{3} = \frac{4}{3}\pi$。
+
+    D. 過 $B$ 作 $\overline{BH}\perp\overline{PQ}$ 於 $H$，由三垂線定理知 $\overline{AH}\perp\overline{PQ}$。在 $\triangle APH$ 中，$\overline{AH} = 8\sin 60^\circ = 4\sqrt{3}$；在 $\triangle ABH$ 中，$\overline{AB} = \overline{AH}\sin 45^\circ = 2\sqrt{6}$。故 $\overline{PB} = \sqrt{8^2-(2\sqrt{6})^2} = 2\sqrt{10}$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C. $\frac{4}{3}$；D. $2\sqrt{10}$
 shared_assets:
 - key: g3_1_5
   label: 題組附圖

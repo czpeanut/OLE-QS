@@ -329,35 +329,31 @@ questions:
   stem: 設 P（X）表示事件 X 發生的機率，而 P（X ∣ Y）表示在事件 Y 發生的條件下，事件 X 發生的機率。今有 2 顆黑球、2 顆白球、3 顆紅球共 7 顆大小相同的球排成一列。設事件 A 為 2 顆白球相鄰的事件，事件 B 為 2 顆白球不相鄰的事件，而事件 C 為任 2 顆紅球都不相鄰的事件。試選出正確的選項。
   options:
   - label: A
-    content: P(A)＜P
+    content: $P(A) < P(B)$
   - label: B
-    content: (B) P
+    content: $P(C) = \frac{3}{7}$
   - label: C
-    content: ＝$\frac{3}{7}$(C) 2P（C ∣ A）＋5P（C ∣ B）＜2
+    content: $2P(C\mid A) + 5P(C\mid B) < 2$
   - label: D
-    content: P（C ∣ A）＞0.2
+    content: $P(C\mid A) > 0.2$
   - label: E
-    content: P（C ∣ B）＞0.3
+    content: $P(C\mid B) > 0.3$
   answer:
   - A
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: '$P(A)=\frac{\frac{6！}{2！3！}}{\frac{7！}{2！2！3！}}=\frac{2}{7} , P(B)=1-P(A)=\frac{5}{7} , P(C)=\frac{\frac{4！}{2！2！}\times C_{3}^{5}}{\frac{7！}{2！2！3！}}=\frac{2}{7}$
+  explanation: '$P(A) = \frac{6!/(2!3!)}{7!/(2!2!3!)} = \frac{2}{7}$，$P(B) = \frac{5}{7}$，$P(C) = \frac{\frac{4!}{2!2!}\cdot C_3^5}{210} = \frac{60}{210} = \frac{2}{7}$。
 
-    (A) ○
+    (A) ○：$P(A)=\frac{2}{7} < \frac{5}{7}=P(B)$。
 
-    (B) ╳：$P(C)=\frac{2}{7}$
+    (B) ×：$P(C)=\frac{2}{7}$。
 
-    (C) ╳：P（C ∣ A）＝$\frac{\frac{3！}{2！}\times C_{3}^{4}}{\frac{6！}{2！3！}}=\frac{1}{5}$，P（C ∣ B）＝$\frac{\frac{4！}{2！2！}\times C_{3}^{5}-\frac{3！}{2！}\times C_{3}^{4}}{\frac{7！}{2！2！3！}-\frac{6！}{2！3！}}=\frac{48}{150}=\frac{8}{25}$
+    (C) ×：$P(C\mid A)=\frac{\frac{3!}{2!}\cdot C_3^4}{60}=\frac{12}{60}=\frac{1}{5}$，$P(C\mid B)=\frac{60-12}{150}=\frac{48}{150}=\frac{8}{25}$，故 $2(\frac{1}{5})+5(\frac{8}{25})=2$。
 
-    ⇒ 2P（C ∣ A）＋5P（C ∣ B）＝$\frac{2}{5}+\frac{8}{5}=2$
+    (D) ×：$P(C\mid A)=0.2$。
 
-    (D) ╳：P（C ∣ A）＝$\frac{1}{5}$＝0.2
-
-    (E) ○：P（C ∣ B）＝$\frac{8}{25}$＝0.32＞0.3
-
-    故選(A)(E)'
+    (E) ○：$P(C\mid B)=0.32 > 0.3$。選 (A)(E)。'
   tags:
     unit:
       code: MA-A4-3-1
@@ -372,6 +368,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(A)(B)(C)排版錯位
+    fixed_by: agent
+    fix_note: （人工修正：修正選項 A、B、C 排版錯位並補齊被截斷之解析）
   difficulty: 4
 - id: doc_110_台中_興大附中_數學_數A_g11s2e2_s3_1
   section: 3
@@ -591,4 +589,7 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含亂碼字元（800 人受）
+    fixed_by: agent
+    fix_note: （人工修正：補齊解析）
   difficulty: 2
+  explanation: 樣本共 800 人，陰性 700 人中真正未確診 690 人、偽陰性 $700-690=10$ 人；真正未確診共 750 人，故偽陽性 $750-690=60$ 人。誤判率為 $\frac{10+60}{800} = \frac{7}{80}$。

@@ -668,7 +668,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 未附解答
+    fixed_by: agent
+    fix_note: （人工修正：補全解答與解析）
   difficulty: 3
+  explanation: 木塊可等速率下滑，表示動摩擦力 $f_{k}＝mg\sin\theta$，即 $\mu_{k}＝\tan\theta$。(A)動摩擦力應為 $mg\sin\theta$；(B)上滑時正向力不變，動摩擦力仍為 $mg\sin\theta$；(C)上滑時合力為 $mg\sin\theta＋f_{k}＝2mg\sin\theta$，加速度量值為 $2g\sin\theta$；(D)由 $0＝v^{2}－2(2g\sin\theta)s$，得最大位移 $s＝\frac{v^{2}}{4g\sin\theta}$；(E)因靜摩擦係數 $\mu_{s} \ge \mu_{k}＝\tan\theta$，在最高點時最大靜摩擦力 $\ge mg\sin\theta$，木塊一定會靜止不動。故選(B)(D)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - D
+  - E
 - id: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1_s2_17
   section: 2
   number: 17
@@ -717,7 +726,7 @@ questions:
   number: 18
   type: multiple
   page: 2
-  stem: 如圖所示，重量為W的木塊A，以水平外力F將木塊緊壓於一鉛直牆面上，讓木塊保持靜止不動。木塊所受的摩擦力設為f，方向錯直向上；牆而施於木塊的止向力為N，方向為水平向右。今讓F作用於木塊中點並逐漸將量值增大，則下列哪些正確？（應選2項）
+  stem: 重量為 W 的木塊 A，以水平向左的外力 F 將木塊緊壓於一鉛直牆面上，讓木塊保持靜止不動。木塊所受的摩擦力設為 f，方向鉛直向上；牆面施於木塊的正向力為 N，方向為水平向右。今讓 F 作用於木塊幾何中心並逐漸將量值增大，則下列哪些正確？（應選2項）
   options:
   - label: A
     content: N逐漸變大
@@ -754,7 +763,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 未附解答
+    fixed_by: agent
+    fix_note: （人工修正：修正錯字、補充施力位置方向（免附圖）並補全解答與解析）
   difficulty: 4
+  explanation: 木塊靜止，水平方向 $N＝F$，故 F 增大時 N 逐漸變大；鉛直方向 $f＝W$ 不變，合力恆為零。以木塊幾何中心為轉軸，W 與 F 力矩為零，f 產生順時鐘力矩，故 N 須在幾何中心下方產生等大逆時鐘力矩；當 N 變大時，其力臂須變小，故正向力作用點逐漸上升趨近中心。故選(A)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - E
 - id: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1_s2_19
   section: 2
   number: 19
@@ -1003,7 +1020,11 @@ questions:
   number: 5
   type: calc
   page: 3
-  stem: 均勻棍長2L、質量2rn，一端以細繩懸吊，另一端置於水平光滑地面，且與水平夾角θ，如右圖，重力加速度為g，求 (1)繩張力與地面給予棍的正向力為多少？ (2)當θ放大兩倍時，繩張力與地面給予棍的正向力為多少？
+  stem: '均勻棍長 2L、質量 2m，一端以鉛直細繩懸吊，另一端置於水平光滑地面，且棍與水平地面夾角為 θ，重力加速度為 g，求：
+
+    (1) 繩張力與地面給予棍的正向力為多少？
+
+    (2) 當 θ 放大兩倍（且 $2\theta＜90°$）時，繩張力與地面給予棍的正向力為多少？'
   assets:
   - key: s3_5_f1
     kind: figure
@@ -1029,7 +1050,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「2rn」疑為「2m」之OCR誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正「2rn」誤植、補充鉛直細繩條件並補全解答與解析）
   difficulty: 4
+  explanation: 因地面光滑無水平摩擦力，繩張力 $T$ 與地面正向力 $N$ 皆為鉛直向上，由力平衡得 $T＋N＝2mg$。以均勻棍質心為轉軸，由力矩平衡得 $T(L\cos\theta)＝N(L\cos\theta) \Rightarrow T＝N＝mg$，與夾角 $\theta$ 無關，故 $\theta$ 放大兩倍時兩力仍皆為 $mg$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) 繩張力 $mg$，地面正向力 $mg$；(2) 繩張力 $mg$，地面正向力 $mg$
 - id: doc_109_新北_新店_自然_物理_選修物理II_g11s2e1_s3_6
   section: 3
   number: 6

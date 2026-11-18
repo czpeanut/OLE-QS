@@ -528,7 +528,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 未附解答
+    fixed_by: agent
+    fix_note: （人工修正：補全解答與解析）
   difficulty: 2
+  explanation: 當書本靜止不掉落時，依靠的是靜摩擦力抵抗重力，且「最大靜摩擦力」須大於或等於 200 公克重，並無「最大動摩擦力」之物理名詞。故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_新竹_新竹高中_自然_物理_g10s1e1_s1_14
   section: 1
   number: 14
@@ -1057,13 +1064,7 @@ questions:
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: '(A)速度（m／s）；(B)加速度（m／$s^{2}$）；(C)瓦特（kg．$m^{2}$／$s^{3}$）；(D)牛頓（kg．m／$s^{2}$）；(E)焦耳（J）＝（kg．$m^{2}$／$s^{3}$） 大K原器為與質量（kg）之定義
-
-    28. $\begin{matrix}210 \\ 84\end{matrix}$Po ⇒ 質子數：84，中子數：126，質量數：210，電子數：84 $\begin{matrix}226 \\ 88\end{matrix}$Ra ⇒ 質子數：88，中子數：138，質量數：226，電子數：88 (A) 138－126＝22；(B) 88－84＝4；(C) 88－84＝4；(D)兩元素質子數不同，中子數不同，非為同位素； (E) 226×3－210×3＝48.
-
-    29. (C)$\vec{a}$，$\vec{v}$反向時，則速率變慢；(D)等加速度運動軌跡可為直線或拋物線；(E)快慢一定，方向若改變則具有加速度。
-
-    30. (B) $f_{k}$＝1 N；(C) F＝1 N，物仍靜止受靜摩擦力$f_{s}$＝F＝1 N；(E) F＝3 N時，物體滑動，a＝$\frac{ 3－1 }{ 2 }$＝1 m／$s^{2}$'
+  explanation: (A)速度（m／s）；(B)加速度（m／$s^{2}$）；(C)瓦特（kg．$m^{2}$／$s^{3}$）；(D)牛頓（kg．m／$s^{2}$）；(E)焦耳（kg．$m^{2}$／$s^{2}$）。大K原器為質量（kg）之定義基準，故與質量有關者為瓦特、牛頓、焦耳。故選(C)(D)(E)。
   tags:
     unit:
       code: PH-1-1-3
@@ -1078,6 +1079,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解析欄混入第28、29題部分解析文字
+    fixed_by: agent
+    fix_note: （人工修正：清除解析中混入的他題文字並修正焦耳單位）
   difficulty: 2
 - id: doc_109_新竹_新竹高中_自然_物理_g10s1e1_s2_27
   section: 2

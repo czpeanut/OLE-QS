@@ -514,7 +514,9 @@ questions:
   - label: B
     content: 乙丁
   - label: C
-    content: 甲乙 (B)乙丙丁
+    content: 甲乙
+  - label: D
+    content: 乙丙丁
   tags:
     unit:
       code: CI-3-2-2
@@ -526,6 +528,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 B/C 排版合併
+    fixed_by: agent
+    fix_note: （人工修正：拆分並整理選項B、C排版，補齊解答與解析）
+  explanation: 免費試吃可讓消費者體驗商品價值，進而提高其「願付價格」（乙）；攤商降價吸引消費者增加購買數量，為需求法則的應用（丁）。(甲)願售價格由賣方成本決定；(丙)降價是增加「需求量」而非「需求」；(戊)題幹未涉及所得變動，無法判斷是否為正常財。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_16
   section: 1
   number: 16
@@ -777,7 +786,7 @@ questions:
   - label: C
     content: 經濟景氣不佳則人們購物消費的意願下滑，應該全面減少各類產品的進貨，以免滯銷
   - label: D
-    content: 產品買氣下滑時不要降價競爭，應趁機大量購買產品國積，等價格回升後再出售獲利
+    content: 產品買氣下滑時不要降價競爭，應趁機大量購買產品囤積，等價格回升後再出售獲利
   tags:
     unit:
       code: CI-3-2-2
@@ -789,6 +798,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 D 含錯字（國積）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項D錯字「囤積」，補齊解答與解析）
+  explanation: 對特定商品推出低價優惠，除依需求法則增加該商品需求量外，亦能帶動互補品的需求增加（B）。(A)同業皆有賣競爭激烈不一定賺錢；(C)景氣不佳時劣等財或日常必需品需求未必下滑，不應全面減貨；(D)囤積商品將增加倉儲與過期風險。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_26
   section: 1
   number: 26
@@ -819,7 +835,7 @@ questions:
   number: 27
   type: single
   page: 4
-  stem: 阿雅在上公民課時不小心睡著了，迷迷糊糊中似乎聽到老師舉了一個例子說明黑板的圖，需求線由D1、變動到D2的過程（如右圖所示），請問以下何者可能是老師所說的例子？
+  stem: 阿雅在上公民課時不小心睡著了，迷迷糊糊中似乎聽到老師舉了一個例子說明黑板的圖：需求線由D1向左移動到D2（需求減少），請問以下何者可能是老師所說的例子？
   options:
   - label: A
     content: 百貨公司週年慶的折扣戰
@@ -851,6 +867,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺附圖，無法判斷需求線移動方向
+    fixed_by: agent
+    fix_note: （人工修正：補充需求線左移條件，移除缺圖並補齊解答與解析）
+  explanation: 需求線由D1左移至D2代表「需求減少」。中秋節過後民眾對月餅的需求大幅下降，符合需求線左移（B）。(A)折扣戰為價格變動，屬沿需求線移動；(C)互補品跌價使墨水匣需求增加（右移）；(D)替代品漲價使百事可樂需求增加（右移）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_28
   section: 1
   number: 28
@@ -1063,7 +1086,7 @@ questions:
   number: 33
   type: single
   page: 5
-  stem: 9月14日開始，卡加部列國所接連收到多個縣市送來的病豬檢體，全都檢測出機國際視為重大動物傳染病的口蹄疫；19日，政府下令停止豬肉及其冷凍、冷藏產品的出口，口蹄疫消息開始在豬農之間傳開，知情的豬農急於求售，供給增加造成每百公斤豬價下跌300元；20日，政府正式對外宣布口蹄疫疫情爆發，每百公斤4千元的豬價迅速崩跌超過一半。前文提到「供給增加」，請問其原因最可能為何？
+  stem: 9月14日開始，卡加部列國所接連收到多個縣市送來的病豬檢體，全都檢測出被國際視為重大動物傳染病的口蹄疫；19日，政府下令停止豬肉及其冷凍、冷藏產品的出口，口蹄疫消息開始在豬農之間傳開，知情的豬農急於求售，供給增加造成每百公斤豬價下跌300元；20日，政府正式對外宣布口蹄疫疫情爆發，每百公斤4千元的豬價迅速崩跌超過一半。前文提到「供給增加」，請問其原因最可能為何？
   options:
   - label: A
     content: 豬農的生產成本降低
@@ -1084,6 +1107,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含錯字（檢測出機國際）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「被國際」，補齊解答與解析）
+  explanation: 知情豬農預期疫情公布後豬價將會大幅下跌，因此趁價格尚未崩跌前急於拋售成豬，屬於「預期心理」導致當期供給增加，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_新莊_社會_公民與社會_g11s1e1_s1_34
   section: 1
   number: 34

@@ -658,9 +658,7 @@ questions:
   number: 1
   type: fill
   page: 3
-  stem: '(2) 將 y＝sinx 的圖形先沿水平方向伸縮為原來的$\frac{1}{2}$倍，再往左平移$\frac{\pi}{6}$後，得到的圖形為 y＝sin（ax＋b），則數對（a，b）＝＿＿＿＿。（3 分，全對才給分）
-
-    (3) 試畫出第(2)小題圖形（至少兩個週期）。（3 分）'
+  stem: 將 $y = \sin x$ 的圖形先沿水平方向伸縮為原來的 $\frac{1}{2}$ 倍，再往左平移 $\frac{\pi}{6}$ 後，得到的圖形為 $y = \sin(ax+b)$（其中 $a>0, 0<b<2\pi$），則數對 $(a, b) =$＿＿＿＿。
   tags:
     unit:
       code: MA-B3-1-2
@@ -675,4 +673,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺少第(1)小題，僅含第(2)(3)小題
+    fixed_by: agent
+    fix_note: （人工修正：移除缺題號的第(1)小題標號與作圖子題(3)，補齊答案與解析）
   difficulty: 2
+  explanation: 水平伸縮為 $\frac{1}{2}$ 倍得 $y = \sin(2x)$；再向左平移 $\frac{\pi}{6}$ 得 $y = \sin\left(2\left(x+\frac{\pi}{6}\right)\right) = \sin\left(2x+\frac{\pi}{3}\right)$，故數對為 $(2, \frac{\pi}{3})$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $(2, \frac{\pi}{3})$

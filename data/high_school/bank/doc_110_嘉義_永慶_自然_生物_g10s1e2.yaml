@@ -688,7 +688,7 @@ questions:
   number: 19
   type: single
   page: 2
-  stem: 若T代表高莖（顯性）等位基因，R代表圓形種子（顯性）等位基因，以下二對等位基因遵循獨立分配律，則TtRr × Tyrr其子代出現高莖皺皮的機率為多少？
+  stem: 若T代表高莖（顯性）等位基因，R代表圓形種子（顯性）等位基因，以下二對等位基因遵循獨立分配律，則TtRr × Ttrr其子代出現高莖皺皮的機率為多少？
   options:
   - label: A
     content: $\frac{ 9 }{ 16 }$
@@ -716,7 +716,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹基因型錯字：「Tyrr」應為「Ttrr」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹基因型錯字「Tyrr」為「Ttrr」並附解析）
   difficulty: 2
+  explanation: 兩對基因獨立分配：Tt × Tt 產生高莖（TT、Tt）的機率為 3/4；Rr × rr 產生皺皮（rr）的機率為 1/2。故子代為高莖皺皮的機率＝(3/4)×(1/2)＝3/8，選(C)。
 - id: doc_110_嘉義_永慶_自然_生物_g10s1e2_s1_20
   section: 1
   number: 20
@@ -1011,10 +1014,10 @@ questions:
   number: 26
   type: multiple
   page: 2
-  stem: 佝僂病是性聯遺傳險性遺傳疾病。有一對兄弟，哥哥患此疾病，弟弟正常。下列敘述哪些<u>不正確</u>？
+  stem: 佝僂病是性聯遺傳顯性遺傳疾病。有一對兄弟，哥哥患此疾病，弟弟正常。下列敘述哪些<u>不正確</u>？（多選）
   options:
   - label: A
-    content: 致病等位基因可能傳遞過程，祖父→父親→哥哥
+    content: 致病等位基因可能傳遞過程：祖父→父親→哥哥
   - label: B
     content: 致病等位基因可能傳遞過程：外祖父→母親→哥哥
   - label: C
@@ -1043,7 +1046,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹錯字：「險性遺傳」應為「顯性遺傳」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「險性遺傳」為「顯性遺傳」與選項E亂碼並附解析）
   difficulty: 3
+  explanation: 性聯顯性遺傳疾病中，哥哥患病($X^AY$)、弟弟正常($X^aY$)，則致病基因$X^A$必來自母親（母親亦患病）。(A)父親的Y染色體傳給兒子，X染色體不會傳給兒子，錯；(B)母親的$X^A$可能來自外祖父，對；(C)女性亦可患病，錯；(D)母親必患病，錯；(E)女性有兩條X染色體，患病機率不低於男性，對。題問不正確者，故選(A)(C)(D)。
 - id: doc_110_嘉義_永慶_自然_生物_g10s1e2_s2_27
   section: 2
   number: 27
@@ -1368,9 +1374,11 @@ questions:
   - label: B
     content: 孟德爾實驗中的種子形狀和顏色，兩基因位於同一條染色體上
   - label: C
-    content: 人的身高是由多基因所控制，而每一基因仍維持顯隱性
+    content: 人的身高是由多基因所控制，而每一基因仍維持顯隱性或累加效應
   - label: D
-    content: 引起紅綠色盲的等位基因位於Y染色體，故男性發生色盲的機率較女性高 (B)<u>孟德爾</u>的遺傳試驗中，豌豆之遺傳因子有顯隱性之分
+    content: 引起紅綠色盲的等位基因位於Y染色體，故男性發生色盲的機率較女性高
+  - label: E
+    content: <u>孟德爾</u>的遺傳試驗中，豌豆之遺傳因子有顯隱性之分
   tags:
     unit:
       code: BI-1-2-1
@@ -1385,7 +1393,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原卷未附答案，且選項E標號誤植為(B)
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項D、E並更正E標號，補齊答案與解析）
   difficulty: 2
+  explanation: (A)ABO血型為複等位基因遺傳（單基因多對偶），不適用雙基因9：3：3：1比例；(B)種子形狀與顏色位於不同對同源染色體上；(C)(E)正確；(D)紅綠色盲基因位於X染色體上。故選(C)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - E
 - id: doc_110_嘉義_永慶_自然_生物_g10s1e2_s3_37
   section: 3
   number: 37

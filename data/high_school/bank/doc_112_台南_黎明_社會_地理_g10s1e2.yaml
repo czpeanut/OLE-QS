@@ -963,10 +963,10 @@ questions:
     content: 若地面範圍面積一樣，則其資料量大於 SPOT4
   group_stem: 不同的人造衛星所獲得的影像解析會有所不同，例如 SPOT5 衛星黑白影像的空間解析度為 5 m，SPOT4 衛星黑白影像空間解析度為 10 m。請問：
   answer:
-  - C
-  answer_status: verified
-  answer_source: answer_key
-  explanation: (A)衛星影像皆以網格模式記錄。(B)網格邊長愈短，解析度愈高，故 SPOT5 解析度較 SPOT4 高。(D) SPOT5 網格較 SPOT4 小，同範圍需要更多網格記錄，故資料量較大。
+  - D
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: (A)衛星影像皆以網格模式記錄。(B)網格邊長愈短，解析度愈高，故 SPOT5 解析度較 SPOT4 高。(C)衛星影像可透過空間對位與其他圖層進行疊圖分析。(D) SPOT5 網格較 SPOT4 小，同範圍需要更多網格記錄，故資料量較大，選(D)。
   tags:
     unit:
       code: GE-1-3-1
@@ -978,6 +978,9 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案標示C與解析說明D正確不符
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案為D並補充選項C解析）
+  review_note: 原答案卷答案 ['C']，執行 agent 修正為 ['D']
 - id: doc_112_台南_黎明_社會_地理_g10s1e2_s2_31
   section: 2
   number: 31

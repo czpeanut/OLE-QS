@@ -504,7 +504,7 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 2015年甲之元配去世後，甲依乙女的要求辦理宴會，公開宣布兩人結婚。但因為女兒與養子丁的反對，甲並未與乙辦理婚姻登記，2016年初甲因病去世，留下與弟弟共同掌管之家族企業。有關遺產繼承問題，下列敘述何者正確？
+  stem: 2015年甲之元配去世後，甲依乙女的要求辦理宴會，公開宣布兩人結婚。但因為女兒丙與養子丁的反對，甲並未與乙辦理婚姻登記，2016年初甲因病去世，留下與弟弟戊共同掌管之家族企業。有關遺產繼承問題，下列敘述何者正確？
   options:
   - label: A
     content: 甲死亡時，如已認領與乙所生之子己，則其繼承人有三人
@@ -525,6 +525,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字：「因為女兒與養子丁」漏標號丙
+    fixed_by: agent
+    fix_note: （人工修正：補齊題幹漏字「丙」「戊」並補齊解答與解析）
+  explanation: (A)正，甲與乙未辦理結婚登記故婚姻不成立，乙非配偶；甲若已認領非婚生子女己，則第一順位繼承人為女兒丙、養子丁（與親生子女同）及已認領之子己，共3人；(B)誤，乙非合法配偶；(C)誤，應為「特留分」；(D)誤，有第一順位繼承人時，第三順位之弟弟戊無繼承權。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_桃園_內壢_社會_公民與社會_g11s1e3_s1_19
   section: 1
   number: 19
@@ -949,6 +956,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 亂碼：「社會引了」
+    fixed_by: agent
+    fix_note: （人工修正：補齊解答與解析）
+  explanation: GDP中的政府消費支出（G）指政府購買當期生產之最終財貨與勞務（如軍人伙食、公務員薪資、購買辦公文具）；(B)償債資金屬於債務清償與移轉性支付，未創造當期生產價值，不計入GDP，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_桃園_內壢_社會_公民與社會_g11s1e3_s1_36
   section: 1
   number: 36
@@ -979,7 +993,7 @@ questions:
   number: 37
   type: single
   page: 4
-  stem: 鴻海公司從日本進口一批1億元的零組件，組裝後售予宏基電腦得到10億元；宏碁電腦再加工製成平板電腦賣給PChome，得款18億元；PChome再將該批平板電腦賣出，得款36億元。請問這個生產流程對於臺灣GDP的貢獻是多少億元？
+  stem: 鴻海公司從日本進口一批1億元的零組件，組裝後售予宏碁電腦得到10億元；宏碁電腦再加工製成平板電腦賣給PChome，得款18億元；PChome再將該批平板電腦賣出，得款36億元。請問這個生產流程對於臺灣GDP的貢獻是多少億元？
   options:
   - label: A
     content: '35'
@@ -1000,6 +1014,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字：「宏基電腦」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「宏基電腦」並補齊解答與解析）
+  explanation: 進口零組件1億元屬國外生產，應予扣除；最終產品銷售額36億元減去進口中間財1億元＝35億元（或以各階段附加價值加總：(10－1)＋(18－10)＋(36－18)＝9＋8＋18＝35億元），故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_桃園_內壢_社會_公民與社會_g11s1e3_s1_38
   section: 1
   number: 38
@@ -1243,7 +1264,7 @@ questions:
   number: 47
   type: multiple
   page: 5
-  stem: 將一國國內生產毛額（GDP）除以該國的總人口數，即為平均每人國內生產毛額（平均每人GDP），用來代表一國人民的經濟福祉。但是，人民的經濟福祉不應只由享有的商品或服務價值來衡量，所以聯合國和世界銀行推出綠色國民所得，盡可能納入更多衡量指標，作為經濟福祉指標的修正。在其他條件不變下，下列何者將提高平均每人GDP？
+  stem: 將一國國內生產毛額（GDP）除以該國的總人口數，即為平均每人國內生產毛額（平均每人GDP），用來代表一國人民的經濟福祉。但是，人民的經濟福祉不應只由享有的商品或服務價值來衡量，所以聯合國和世界銀行推出綠色國民所得，盡可能納入更多衡量指標，作為經濟福祉指標的修正。在其他條件不變下，下列何者將提高平均每人GDP？（多選）
   options:
   - label: A
     content: 人口成長率增加
@@ -1266,12 +1287,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 亂碼：「經福祉」
+    fixed_by: agent
+    fix_note: （人工修正：補齊解答與解析）
+  explanation: 平均每人GDP＝總GDP÷總人口。(C)經濟成長率增加與(D)平均工資提高均使總GDP增加，進而提高平均每人GDP；(A)人口增加會稀釋平均每人GDP；(B)移轉性支出不計入GDP；(E)環境品質未直接計入傳統GDP。故選(C)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - D
 - id: doc_109_桃園_內壢_社會_公民與社會_g11s1e3_s2_48
   section: 2
   number: 48
   type: multiple
   page: 5
-  stem: 大圓國地方首長開心對外宣布，外國菸商將到當地設立工廠，開始生產香菸販售之後，連同出口的部分，一年將可以為國家創造數千萬元的GDP，對國家帶來重大貢獻。數個民間團體反對這項計畫，批評外國菸廠的「貢獻」並沒有該首長所說的GDP數字那麼多。請問下列哪些可能是民間團體所持的理由？
+  stem: 大園國地方首長開心對外宣布，外國菸商將到當地設立工廠，開始生產香菸販售之後，連同出口的部分，一年將可以為國家創造數千萬元的GDP，對國家帶來重大貢獻。數個民間團體反對這項計畫，批評外國菸廠的「貢獻」並沒有該首長所說的GDP數字那麼多。請問下列哪些可能是民間團體所持的理由？（多選）
   options:
   - label: A
     content: 出口的香菸屬於國外的消費，不計入大園國的GDP
@@ -1294,12 +1323,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字：「大園國」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「大圓國」並補齊解答與解析）
+  explanation: GDP僅衡量市場交易產值，未反映外部成本與負面福祉：(C)環境汙染未自GDP扣除、(D)未考量香菸對國民健康之損害。故選(C)(D)。(A)出口計入GDP、(B)境內外商產出依屬地原則計入本國GDP、(E)合法香菸非地下經濟。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - D
 - id: doc_109_桃園_內壢_社會_公民與社會_g11s1e3_s2_49
   section: 2
   number: 49
   type: multiple
   page: 6
-  stem: 若國際食用油市場有甲乙丙三國，甲乙兩國每年都從國進口食用油，但甲乙兩國間並無食用油貿易。乙國發生假油事件，使其國產食用油銷售量慘跌，並使得由丙國進口數量大增，導致丙國食用油的國內及出口價格攀升。根據以上條件，有關三國食用油市場消費者與生產者剩餘和社會福祉的變動，下列敘述哪些正確？
+  stem: 若國際食用油市場有甲乙丙三國，甲乙兩國每年都從丙國進口食用油，但甲乙兩國間並無食用油貿易。乙國發生假油事件，使其國產食用油銷售量慘跌，並使得由丙國進口數量大增，導致丙國食用油的國內及出口價格攀升。根據以上條件，有關三國食用油市場消費者與生產者剩餘和社會福祉的變動，下列敘述哪些正確？（多選）
   options:
   - label: A
     content: 甲國消費者剩餘上升
@@ -1310,7 +1347,7 @@ questions:
   - label: D
     content: 丙國消費者剩餘下降
   - label: E
-    content: 兩國的社會福祉下降
+    content: 丙國的社會福祉下降
   tags:
     unit:
       code: CI-3-5-2
@@ -1322,18 +1359,21 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字：「從國進口」、「兩國的社會福祉」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹漏字「丙國」與選項E錯字並補齊解答與解析）
+  explanation: 國際食用油價格攀升：(A)誤，甲國為進口國，價格上漲使消費者剩餘下降；(B)正，甲國國內油價隨之上漲使生產者剩餘上升；(C)正，乙國國產油需求慘跌使生產者剩餘下降；(D)正，丙國國內價格上漲使消費者剩餘下降；(E)誤，丙國為出口國，生產者剩餘增加幅大於消費者剩餘減少幅，社會福祉上升。故選(B)(C)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
+  - D
 - id: doc_109_桃園_內壢_社會_公民與社會_g11s1e3_s2_50
   section: 2
   number: 50
   type: multiple
   page: 6
-  stem: '某甲因婚期將至，於是親自到家具行選購多套家具，商定送貨日期並完成付款後就離去，但隔日家具送達後，某甲心生後悔，於是以「猶豫期」的規定，向店家要求退貨，但店家拒絕。請依我國相關法律的規定，分析下列敘述何者正確？
-
-    【知識補給站】
-
-    民法修正案三讀離婚後財產分配法官得依家事勞動等調整
-
-    2020／12／30'
+  stem: 某甲因婚期將至，於是親自到家具行選購多套家具，商定送貨日期並完成付款後就離去，但隔日家具送達後，某甲心生後悔，於是以「猶豫期」的規定，向店家要求退貨，但店家拒絕。請依我國相關法律的規定，分析下列敘述何者正確？（多選）
   options:
   - label: A
     content: 此買賣消費行為，適用《消費者保護法》的規定，因此有猶豫期的保障
@@ -1356,3 +1396,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末誤植「【知識補給站】...」新聞剪貼
+    fixed_by: agent
+    fix_note: （人工修正：移除題幹混入之知識補給站剪貼並補齊解答與解析）
+  explanation: 某甲係親自前往實體家具行挑選購買，非屬通訊交易（網購）或訪問交易，故不適用《消費者保護法》第19條7日無條件退貨（猶豫期）之規定(C)；若非屬定型化契約條款爭議且商品無瑕疵，店家可依法拒絕退貨(D)。故選(C)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - D

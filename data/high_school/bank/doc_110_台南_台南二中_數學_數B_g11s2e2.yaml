@@ -198,12 +198,12 @@ questions:
   number: 2
   type: fill
   page: 1
-  stem: 設$A_{n}=\left[ \begin{matrix}1^{n} & 2^{n} \\ 3^{n} & 4^{n}\end{matrix} \right]$，則$A_{1}$＋$2A_{2}$＋$3A_{2}$＝＿＿＿＿。
+  stem: 設 $A_n = \begin{bmatrix}1^n & 2^n \\ 3^n & 4^n\end{bmatrix}$，則 $A_1 + 2A_2 + 3A_3 =$＿＿＿＿。
   answer:
   - $\left[ \begin{matrix}6 & 34 \\ 102 & 228\end{matrix} \right]$
   answer_status: verified
   answer_source: answer_key
-  explanation: $A_{1}$＋$2A_{2}$＋$3A_{3}$ ＝$\left[ \begin{matrix}1 & 2 \\ 3 & 4\end{matrix} \right] +2\left[ \begin{matrix}1 & 4 \\ 9 & 16\end{matrix} \right] +3\left[ \begin{matrix}1 & 8 \\ 27 & 64\end{matrix} \right]$ ＝$\left[ \begin{matrix}1 & 2 \\ 3 & 4\end{matrix} \right] +\left[ \begin{matrix}2 & 8 \\ 18 & 32\end{matrix} \right] +\left[ \begin{matrix}3 & 24 \\ 81 & 192\end{matrix} \right]$ ＝$\left[ \begin{matrix}6 & 34 \\ 102 & 228\end{matrix} \right]$。
+  explanation: $A_1 + 2A_2 + 3A_3 = \begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix} + 2\begin{bmatrix}1 & 4 \\ 9 & 16\end{bmatrix} + 3\begin{bmatrix}1 & 8 \\ 27 & 64\end{bmatrix} = \begin{bmatrix}6 & 34 \\ 102 & 228\end{bmatrix}$。
   tags:
     unit:
       code: MA-B4-3-1
@@ -218,6 +218,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹 3A_2 應為 3A_3（詳解以 3A_3 計算）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「3A_2」筆誤為「3A_3」並補齊被截斷之解析）
   difficulty: 1
 - id: doc_110_台南_台南二中_數學_數B_g11s2e2_s2_3
   section: 2
@@ -453,7 +455,7 @@ questions:
   number: 1
   type: calc
   page: 2
-  stem: 若$A=\left[ a_{ij} \right] _{2\times 2}$，則矩陣A可逆。（是非題，2分）
+  stem: 若 $A = [a_{ij}]_{2\times 2}$，其中 $a_{ij} = i \cdot j^3$，則矩陣 $A$ 可逆。（是非題，2 分）
   answer:
   - ×
   answer_status: verified
@@ -473,13 +475,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹漏列矩陣元素通式 a_ij = i * j^3 之定義（詳解有使用）
+    fixed_by: agent
+    fix_note: （人工修正：補齊矩陣元素通式 a_ij = i * j^3）
   difficulty: 2
 - id: doc_110_台南_台南二中_數學_數B_g11s2e2_s3_3
   section: 3
   number: 3
   type: calc
   page: 2
-  stem: 若$A=\left[ a_{ij} \right] _{10\times 10}$，求A中所有元的和？（非選擇題，8分）
+  stem: 若 $A = [a_{ij}]_{10\times 10}$，其中 $a_{ij} = i \cdot j^3$，求 $A$ 中所有元的和？（非選擇題，8 分）
   answer:
   - '166375'
   answer_status: verified
@@ -499,4 +503,6 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹漏列矩陣元素通式 a_ij = i * j^3 之定義（詳解有使用）
+    fixed_by: agent
+    fix_note: （人工修正：補齊矩陣元素通式 a_ij = i * j^3）
   difficulty: 3

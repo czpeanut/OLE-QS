@@ -703,7 +703,7 @@ questions:
   number: 36
   type: multiple
   page: 4
-  stem: <u>小波</u>是生物醫學領域的研究生，正在進行一種脂溶性流感藥物的研發，此藥物可讓身體有效吸呼，並抑制流感病毒的感染情形，請問此藥物若在小腸被吸收且須在肺泡微血管中發揮影響，關於吸收與發揮藥效的過程，下列敘述哪些正確？
+  stem: <u>小波</u>是生物醫學領域的研究生，正在進行一種脂溶性流感藥物的研發，此藥物可讓身體有效吸收，並抑制流感病毒的感染情形，請問此藥物若在小腸被吸收且須在肺泡微血管中發揮影響，關於吸收與發揮藥效的過程，下列敘述哪些正確？
   options:
   - label: A
     content: 此藥物透過被動運輸進行小腸上皮細胞
@@ -735,7 +735,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹「吸呼」疑為「吸收」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「吸呼」為「吸收」並補充解析）
   difficulty: 3
+  explanation: 脂溶性藥物以簡單擴散（被動運輸）進入小腸絨毛上皮細胞，經包裝後以胞吐作用釋出進入乳糜管（淋巴管），經胸管匯入左鎖骨下靜脈→上大靜脈→右心房→右心室→肺動脈→肺泡微血管，不經絨毛微血管與肝門靜脈。故選(A)(B)(E)。
 - id: doc_112_高雄_高雄女中_自然_生物_選修生物III_g12s1e1_s2_37
   section: 2
   number: 37
@@ -898,9 +901,7 @@ questions:
   number: 41
   type: single
   page: 4
-  stem: '下列關於組織與其適合的玻片製作方式的配合，何者<u>錯誤</u>？
-
-    <u>閱讀題1：</u>'
+  stem: 下列關於組織與其適合的玻片製作方式的配合，何者<u>錯誤</u>？
   options:
   - label: A
     content: 血液－抹片法
@@ -928,7 +929,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項後誤混入閱讀題1標題
+    fixed_by: agent
+    fix_note: （人工修正：移除選項後混入之閱讀題1標題，修正選項D亂碼並補充解析）
   difficulty: 2
+  explanation: 折撕法主要用於撕取植物葉片下表皮觀察保衛細胞與表皮細胞，不適用於骨骼肌（骨骼肌通常以切片法或撕片分離肌纖維染色觀察），故選(D)。
 - id: doc_112_高雄_高雄女中_自然_生物_選修生物III_g12s1e1_s3_42
   section: 3
   number: 42
@@ -976,9 +980,7 @@ questions:
   number: 43
   type: single
   page: 5
-  stem: '現在有一種可以直接抑制抗利尿激素的多囊腎口服藥物，這對患者有什麼好處？
-
-    <u>閱讀題2：</u>'
+  stem: 現在有一種可以直接抑制抗利尿激素的多囊腎口服藥物，這對患者有什麼好處？
   options:
   - label: A
     content: 可以使水泡更快地生長
@@ -1015,7 +1017,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項後誤混入閱讀題2標題
+    fixed_by: agent
+    fix_note: （人工修正：移除選項後混入之閱讀題2標題並補充解析）
   difficulty: 2
+  explanation: 由本文可知多喝水減少抗利尿激素分泌可抑制水泡生長，故抑制抗利尿激素的口服藥物能有效抑制水泡生長、延緩多囊腎惡化速度，選(B)。
 - id: doc_112_高雄_高雄女中_自然_生物_選修生物III_g12s1e1_s3_44
   section: 3
   number: 44
@@ -1039,9 +1044,9 @@ questions:
 
     如果缺乏內在因子，就無法吸收維生素$B_{12}$，而如果維生素$B_{12}$被排泄到糞便中，它就無法再循環。因此，缺乏內在因子的人比素食者或攝取不足的人更容易出現$B_{12}$缺乏症狀，這可能導致神經損傷和貧血等嚴重後果。在攝取大量維生素$B_{12}$時，多餘的維生素$B_{12}$會從尿液排出，但通常只有在注射大量維生素$B_{12}$時才會發生這種情況。此外，過多的維生素$B_{12}$也可能排泄到糞便中，主要來自未被吸收的食物部分、膽汁中的維生素$B_{12}$、細胞剝落、腸胃道分泌、腸道細菌合成的維生 素$B_{12}$以及其他流失方式。研究表明，每天排泄的維生素$B_{12}$約佔總體含量的0.1至0.2％，而惡性貧血患者可能排泄0.2％的維生素$B_{12}$。'
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
+  - C
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: BI-S3-2-2
@@ -1056,7 +1061,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題組文章截斷但可依題文與選項作答
+    fixed_by: agent
+    fix_note: （人工修正：更正與本文矛盾之錯誤答案為C並補充解析）
   difficulty: 3
+  explanation: 依本文所述：食物中的維生素$B_{12}$在胃中先與R蛋白結合；進入小腸後R蛋白被分解，維生素$B_{12}$與胃壁細胞分泌的「內在因子」結合後才被小腸上皮細胞吸收；吸收後於血液中再與「轉鈷胺素II」結合進行運輸。故選(C)。
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['C']
 - id: doc_112_高雄_高雄女中_自然_生物_選修生物III_g12s1e1_s3_45
   section: 3
   number: 45

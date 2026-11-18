@@ -127,7 +127,7 @@ questions:
   number: 2
   type: fill
   page: 1
-  stem: 化簡$\frac{(\log _{5}\sqrt{2})\cdot (\log _{7}9)}{(\log _{5}\frac{1}{3})\cdot (\log _{7}\sqrt[3]{4})}$，則x＝＿＿＿＿。
+  stem: 化簡 $\frac{(\log_5\sqrt{2})\cdot(\log_7 9)}{(\log_5\frac{1}{3})\cdot(\log_7\sqrt[3]{4})} =$＿＿＿＿。
   answer:
   - －$\frac{3}{2}$
   answer_status: verified
@@ -146,7 +146,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末誤植「則x＝」
+    fixed_by: agent
+    fix_note: （人工修正：移除題末誤植的「則x＝」並補齊解析）
   difficulty: 2
+  explanation: 原式 $= \frac{\frac{1}{2}\log_5 2 \cdot 2\log_7 3}{-\log_5 3 \cdot \frac{2}{3}\log_7 2} = \frac{\log_5 2 \cdot \log_7 3}{-\frac{2}{3}\log_5 3 \cdot \log_7 2} = -\frac{3}{2}$。
 - id: doc_110_桃園_武陵_數學_數A_g11s1e1_s2_3
   section: 2
   number: 3

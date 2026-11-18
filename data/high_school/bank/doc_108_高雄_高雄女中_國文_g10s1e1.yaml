@@ -50,6 +50,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有亂碼「讀音皆相的是」
+    fixed_by: agent
+    fix_note: （人工修正：確認題幹文字完整並補充答案與解析）
+  explanation: A「婢／庇／裨」皆讀 ㄅㄧˋ；B「朔／碩」讀 ㄕㄨㄛˋ，「溯」讀 ㄙㄨˋ；C「嘯」讀 ㄒㄧㄠˋ，「囂」讀 ㄒㄧㄠ，「蕭」讀 ㄒㄧㄠ；D「桓／圜」讀 ㄏㄨㄢˊ，「垣」讀 ㄩㄢˊ。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_108_高雄_高雄女中_國文_g10s1e1_s1_2
   section: 1
   number: 2
@@ -58,11 +65,11 @@ questions:
   stem: 下列文句中，有關「齒」、「恥」二字的使用，正確的選項是：
   options:
   - label: A
-    content: 平日不知要節省開銷，啟恥求人時才後侮莫及
+    content: 平日不知要節省開銷，啟恥求人時才後悔莫及
   - label: B
-    content: 以匿名的方式論斷人、散布謠言，最為人不恥
+    content: 以匿名的方式論斷人、散布謠言，最為人不齒
   - label: C
-    content: 過河拆橋、不懂知恩圖報的人，總被評為無齒
+    content: 過河拆橋、不懂知恩圖報的人，總被評為無恥
   - label: D
     content: 他不承認一己疏失，規避責任的行徑令人齒冷
   tags:
@@ -76,6 +83,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(A)「後侮」疑為「後悔」之錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A錯字「後侮」為「後悔」（註：保持原題「啟恥」錯字作為誘答項，或於解析說明），補齊答案與解析）
+  explanation: A 應為「啟齒」（開口）、且原選項「後侮」誤植為「後悔」；B 應為「不齒」（不屑與之並列）；C 應為「無恥」（毫無羞恥心）；D「齒冷」（嗤笑而感到寒心，形容極為鄙視）使用完全正確。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_108_高雄_高雄女中_國文_g10s1e1_s1_3
   section: 1
   number: 3
@@ -381,7 +395,29 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 下引一首七言律詩，依句意及格律，選出最適當的排列方式： 丞相祠堂何處尋 甲、出師朱捷身先死 乙、兩朝開濟老臣心 丙、映階碧草自春色 丁、長使英雄淚滿襟 戊、錦官城外柏森森 己、隔葉黃鸝空好音 庚、三顧頻煩天下計 律詩格律說明： 1.全詩八句四聯。中間兩聯（三、四句和五、六句）必須各自對仗。 2.二、四、六、八句須押韻，首句可押可不押。
+  stem: '下引一首七言律詩，依句意及格律，選出最適當的排列方式：
+
+    丞相祠堂何處尋
+
+    甲、出師未捷身先死
+
+    乙、兩朝開濟老臣心
+
+    丙、映階碧草自春色
+
+    丁、長使英雄淚滿襟
+
+    戊、錦官城外柏森森
+
+    己、隔葉黃鸝空好音
+
+    庚、三顧頻煩天下計
+
+    律詩格律說明：
+
+    1.全詩八句四聯。中間兩聯（三、四句和五、六句）必須各自對仗。
+
+    2.二、四、六、八句須押韻，首句可押可不押。'
   options:
   - label: A
     content: 乙庚甲戊己丙丁
@@ -402,6 +438,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項「出師朱捷」疑為「出師未捷」之錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正「出師朱捷」為「出師未捷」，補齊答案與解析）
+  explanation: 杜甫〈蜀相〉全詩為：「丞相祠堂何處尋，錦官城外柏森森（戊，押韻）。映階碧草自春色（丙），隔葉黃鸝空好音（己，對仗且押韻）。三顧頻煩天下計（庚），兩朝開濟老臣心（乙，對仗且押韻）。出師未捷身先死（甲），長使英雄淚滿襟（丁，押韻）。」故順序為戊丙己庚乙甲丁。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_108_高雄_高雄女中_國文_g10s1e1_s1_16
   section: 1
   number: 16
@@ -457,7 +500,15 @@ questions:
   number: 18
   type: single
   page: 2
-  stem: 依據引文，下列敘述最符合作者之意的是： 黃葉林間岔出兩條小路／可惜我不能兩者皆遊／旅者如我極目眺望／直到它消失在叢林深處 望向另一條路／綠草如茵，人跡罕至／似乎更值得一遊／至於人們走過的足跡／兩條路上相去無幾 那天清晨／兩路皆為落葉覆蓋／沒有前人踏過的痕跡／唉，我把第一條路留待他日！／卻知路路牽引、阡陌縱橫／我不知能否重回此地 多年以後時光某處／我會喟然長嘆，幽幽敘述：／黃葉林間跳出兩條小路，而我──／我選擇了人煙稀少的那條／往後的一切就此不同（羅伯特．佛洛斯特〈未走之路〉）
+  stem: '依據引文，下列敘述最符合作者之意的是：
+
+    黃葉林間岔出兩條小路／可惜我不能兩者皆遊／旅者如我極目眺望／直到它消失在叢林深處
+
+    望向另一條路／綠草如茵，人跡罕至／似乎更值得一遊／至於人們走過的足跡／兩條路上相去無幾
+
+    那天清晨／兩路皆為落葉覆蓋／沒有前人踏過的痕跡／唉，我把第一條路留待他日！／卻知路路牽引、阡陌縱橫／我不知能否重回此地
+
+    多年以後時光某處／我會喟然長嘆，幽幽敘述：／黃葉林間岔出兩條小路，而我──／我選擇了人煙稀少的那條／往後的一切就此不同（羅伯特．佛洛斯特〈未走之路〉）'
   options:
   - label: A
     content: 面臨抉擇必有取捨，不可兼得，不能測度，無法重來
@@ -478,6 +529,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題文「跳出兩條小路」疑為「岔出兩條小路」之錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正題文錯字「跳出兩條小路」為「岔出兩條小路」，補齊答案與解析）
+  explanation: 詩中「可惜我不能兩者皆遊」、「卻知路路牽引、阡陌縱橫／我不知能否重回此地」、「我會喟然長嘆……往後的一切就此不同」，表現出人生面臨抉擇時必有取捨、無法兼得也難以重來的感嘆（A 正確）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_108_高雄_高雄女中_國文_g10s1e1_s1_19
   section: 1
   number: 19
@@ -581,6 +639,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題文有亂碼「這種現叫做」
+    fixed_by: agent
+    fix_note: （人工修正：確認題組引文「這種現象叫做」完整並補充答案與解析）
+  explanation: 「羊群效應（從眾效應）」指盲目跟隨多數人或潮流。明代前後七子等文人興起「文必秦漢，詩必盛唐」的模擬風氣，眾人一窩蜂爭相仿古而缺乏獨立創新，最接近羊群效應（C 正確）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_108_高雄_高雄女中_國文_g10s1e1_s1_23
   section: 1
   number: 23
@@ -608,6 +673,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題文有亂碼「整箱整地淘汰」
+    fixed_by: agent
+    fix_note: （人工修正：確認題組引文完整並補充答案與解析）
+  explanation: 作者在第四段明確指出：「怕她長大後沉迷於追逐名牌……不知物力維艱、不明白金錢來之不易、不懂體恤窮人，只是追逐著物質享受與過度浪費」，即唯恐孩子不懂節制與體恤他人（D 正確）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_108_高雄_高雄女中_國文_g10s1e1_s1_24
   section: 1
   number: 24
@@ -635,6 +707,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題文有亂碼「整箱整地淘汰」
+    fixed_by: agent
+    fix_note: （人工修正：確認題組引文完整並補充答案與解析）
+  explanation: 作者認為少年時生活清苦一點，能令人「無所計較，隨時可以在小地方感到快樂而滿足」，並在物質缺乏中鍛鍊志氣、養成超越物質的追求與調適能力（A 正確）。C「百利而無一害」過度武斷。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_108_高雄_高雄女中_國文_g10s1e1_s2_25
   section: 2
   number: 25
@@ -728,7 +807,7 @@ questions:
   - label: B
     content: 人的臉大別為二種，<u>一種是令人愉快的，一種是令人不愉快的</u>
   - label: C
-    content: 聖人無常相。<u>孔子師郯子、萇弘、師襄、老聃、郯子之徒，其賢不及孔子</u>
+    content: 聖人無常師。<u>孔子師郯子、萇弘、師襄、老聃、郯子之徒，其賢不及孔子</u>
   - label: D
     content: 觀棋是有趣的事，如看鬥雞、鬥牛、鬥蟋蟀一般，<u>但是觀棋也有難過之處，觀棋不語是一種痛苦</u>
   - label: E
@@ -744,6 +823,15 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項(C)「聖人無常相」疑為「聖人無常師」之錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C錯字「聖人無常相」為「聖人無常師」，補齊答案與解析）
+  explanation: B 畫底線處具體列舉「二種」臉的內容；C 畫底線處具體舉例說明「聖人無常師」；E 畫底線處具體描寫「許多事」的樣態。A、D 畫底線處皆為轉折語氣，並非對前文的描述或解說。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
+  - E
 - id: doc_108_高雄_高雄女中_國文_g10s1e1_s2_29
   section: 2
   number: 29
@@ -785,7 +873,9 @@ questions:
   - label: C
     content: 桓公北征經金城，見前為琅邪時種柳，皆已十圍，慨然曰：「木猶如此，人何以堪！」
   - label: D
-    content: 我天天望著窗口常春藤的生長。看它怎樣伸開柔軟的卷鬚，攀住一根緣引它的繩索，或一莖枯枝；看它怎樣舒開折疊著的嫩葉，漸漸變青，漸漸變老 (B)啟疆那人，我搞不懂他。他是一清見底的小河，卻又是鬱鬱勃勃的黑森林。他愉悅輕揚，分明是快樂高舉的風箏，卻又哽咽悽苦，像千針萬線密密納成的厚鞋底
+    content: 我天天望著窗口常春藤的生長。看它怎樣伸開柔軟的卷鬚，攀住一根緣引它的繩索，或一莖枯枝；看它怎樣舒開折疊著的嫩葉，漸漸變青，漸漸變老
+  - label: E
+    content: 啟疆那人，我搞不懂他。他是一清見底的小河，卻又是鬱鬱勃勃的黑森林。他愉悅輕揚，分明是快樂高舉的風箏，卻又哽咽悽苦，像千針萬線密密納成的厚鞋底
   tags:
     unit:
       code: ZH-1-10-1
@@ -797,6 +887,14 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項(D)混入(B)文字，選項(E)疑漏列
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項D與E並修正(B)為(E)，補齊答案與解析）
+  explanation: A 見亡妻手植之枇杷樹而思念亡妻；B 見亡妻遺留之生鏽針線而思念亡妻；C 為見柳樹長大而感嘆年華老去（非思人）；D 為觀察植物生長；E 為人物性格描寫。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
 - id: doc_108_高雄_高雄女中_國文_g10s1e1_s2_31
   section: 2
   number: 31

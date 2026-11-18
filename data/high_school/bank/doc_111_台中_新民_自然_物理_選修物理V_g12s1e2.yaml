@@ -346,7 +346,13 @@ questions:
   number: 9
   type: calc
   page: 2
-  stem: 一質量為m的帶電小球，以長為l的絕緣細線懸吊於兩鉛直平行板之間。平行板內有一均勻電場，設重力加速度為g。小球平衡時，細線與鉛直方向成37°，如附圖所示。若將小球移至使細線與鉛垂方向成53°，然後將小球由靜止釋放，當小球又擺至O點時，則： (1)重力位能變化為若干？ (2)電力位能變化為若干？ (3)小球的速度量值為若干？
+  stem: '一質量為 m 的帶電小球，以長為 l 的絕緣細線懸吊於兩鉛直平行板之間。平行板內有一水平均勻電場，設重力加速度為 g。小球靜力平衡時（設為 O 點），細線與鉛直方向成 37°。若將小球移至使細線與鉛垂方向成 53°，然後由靜止釋放，當小球擺回至平衡位置 O 點時，則：
+
+    (1) 重力位能變化為若干？
+
+    (2) 電力位能變化為若干？
+
+    (3) 小球的速度量值為若干？'
   assets:
   - key: s1_9_f1
     kind: figure
@@ -359,9 +365,9 @@ questions:
       - 688.9
       - 403.5
   answer:
-  - (1)$-\frac{1}{5}mg$；(2)$\frac{3}{20}mg$；(3)$\sqrt{\frac{1}{10}g}$
-  answer_status: verified
-  answer_source: answer_key
+  - (1) $-\frac{1}{5}mgl$；(2) $\frac{3}{20}mgl$；(3) $\sqrt{\frac{1}{10}gl}$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S4-1-3
@@ -376,7 +382,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 參考答案漏寫細線長度符號l
+    fixed_by: agent
+    fix_note: （人工修正：補充O點定義、補全答案符號l並補全解析）
   difficulty: 4
+  explanation: 平衡時 $qE＝mg\tan 37°＝\frac{3}{4}mg$。由 53° 擺至 37°：(1)$\Delta U_{g}＝-mgl(\cos 37°－\cos 53°)＝-mgl(\frac{4}{5}-\frac{3}{5})＝-\frac{1}{5}mgl$；(2)$\Delta U_{e}＝+qEl(\sin 53°－\sin 37°)＝\frac{3}{4}mgl(\frac{4}{5}-\frac{3}{5})＝\frac{3}{20}mgl$；(3)由能量守恆 $\frac{1}{2}mv^{2}＝-(\Delta U_{g}+\Delta U_{e})＝\frac{1}{20}mgl \Rightarrow v＝\sqrt{\frac{1}{10}gl}$。
+  review_note: 原答案卷答案 ['(1)$-\\frac{1}{5}mg$；(2)$\\frac{3}{20}mg$；(3)$\\sqrt{\\frac{1}{10}g}$']，執行 agent 修正為 ['(1) $-\\frac{1}{5}mgl$；(2) $\\frac{3}{20}mgl$；(3) $\\sqrt{\\frac{1}{10}gl}$']
 - id: doc_111_台中_新民_自然_物理_選修物理V_g12s1e2_s1_10
   section: 1
   number: 10

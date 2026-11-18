@@ -473,12 +473,10 @@ questions:
   page: 2
   stem: 設log 100x＝－6.2115，則x從小數點後第m位開始出現不為0的數字，此數字為n，則數對 ( m , n )＝＿＿＿＿。 （已知log 2 ≈ 0.3010，log 3 ≈ 0.4771，log 7 ≈ 0.8451）
   answer:
-  - ( 9 , 6 ) I. 370
-  answer_status: verified
-  answer_source: answer_key
-  explanation: 'log 100x＝2＋log x＝－6.2115 ⇒ log x＝－8.2115＝(－9 )＋0.7885 log 6≒0.3010＋0.4771＝0.7781 log 7≒0.8451 ∴ x為純小數，小數點後第9位始不為0，其值為6，得 ( m , n )＝( 9 , 6 )
-
-    I. L (t)＝a．( 1－$10^{－bt}$ ) 得L (1)＝a ( 1－$10^{－b}$ )＝160 L (2)＝a ( 1－$10^{－2b}$ )＝280 相除：1＋$10^{－b}$＝$\frac{280}{160}$＝$\frac{7}{4}$ ⇒ $10^{－b}$＝$\frac{3}{4}$，a＝640 ∴ L (t)＝640 ( 1－($\frac{3}{4}$)$^{t}$ ) 得L (3)＝640 ( 1－($\frac{3}{4}$)$^{3}$ )＝640 ( 1－$\frac{27}{64}$)＝370'
+  - $(9, 6)$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: $\log 100x = 2 + \log x = -6.2115 \Rightarrow \log x = -8.2115 = -9 + 0.7885$。因 $\log 6 \approx 0.7781 < 0.7885 < \log 7 \approx 0.8451$，故 $x$ 從小數點後第 9 位開始出現不為 0 的數字 $6$，即 $(m, n) = (9, 6)$。
   tags:
     unit:
       code: MA-B3-2-2
@@ -493,7 +491,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案與詳解欄混入下一題內容
+    fixed_by: agent
+    fix_note: （人工修正：清除答案與解析中混入的下一題內容）
   difficulty: 2
+  review_note: 原答案卷答案 ['( 9 , 6 ) I. 370']，執行 agent 修正為 ['$(9, 6)$']
 - id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_9
   section: 3
   number: 9

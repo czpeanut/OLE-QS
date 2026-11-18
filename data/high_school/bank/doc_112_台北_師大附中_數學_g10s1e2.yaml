@@ -35,20 +35,20 @@ questions:
   stem: 設三直線Ｌ$_{1}$：3x－2y＝0，$L_{2}$：x＋2y＝0，$L_{3}$可以圍成一個三角形，則$L_{3}$可能為下列選項中的哪一個？
   options:
   - label: A
-    content: $\frac{x}{2}$－$\frac{y}{3}$＝1
+    content: $\frac{x}{2} - \frac{y}{3} = 1$
   - label: B
-    content: 3x＋6y－9＝0
+    content: $3x+6y-9=0$
   - label: C
-    content: $\sqrt{3}$＋y＝0
+    content: $\sqrt{3}x + y = 0$
   - label: D
-    content: －$\frac{x}{2}$－y＋23＝0
+    content: $-\frac{x}{2} - y + 23 = 0$
   - label: E
-    content: 2x－y＝1
+    content: $2x - y = 1$
   answer:
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: 解$\begin{cases}3x-2y=0 \\ x+2y=0\end{cases}$ ⇒ $\begin{cases}x=0 \\ y=0\end{cases}$，即$L_{1}$與$L_{2}$交於一點 ( 0 , 0 )， 可知$m_{L1}$＝$\frac{3}{2}$，$m_{L2}$＝$\frac{-1}{2}$ 。 (1) ×：因為$\frac{x}{2}$－$\frac{y}{3}$＝1的斜率為$\frac{3}{2}$，所以與$L_{1}$平行，無法圍成一個三角形。 (2) ×：因為3x＋6y－9＝0的斜率為$\frac{-1}{2}$，所以與$L_{2}$平行，無法圍成一個三角形。 (3) ×：因為$\sqrt{3}$x＋y＝0通過點 ( 0 , 0 )，所以與$L_{1}$, $L_{2}$交於一點，無法圍成一個三角形。 (4) ×：因為－$\frac{x}{2}$－y＋23＝0的斜率為－$\frac{1}{2}$，所以與$L_{2}$平行，無法圍成一個三角形。 (5) ○：因為2x－y＝1的斜率為2，所以與$L_{1}$, $L_{2}$均不平行，且2x－y＝1不通過點 ( 0 , 0 )，因此可圍成一個三角形。 故選(E)。
+  explanation: $L_1$ 與 $L_2$ 交於 $(0,0)$，斜率分別為 $\frac{3}{2}$ 與 $-\frac{1}{2}$。(A) 斜率 $\frac{3}{2}$ 平行 $L_1$；(B) 斜率 $-\frac{1}{2}$ 平行 $L_2$；(C) 過 $(0,0)$ 三線共點；(D) 斜率 $-\frac{1}{2}$ 平行 $L_2$；(E) 斜率 $2$ 且不過 $(0,0)$，可圍成三角形，選 (E)。
   tags:
     unit:
       code: MA-1-2-1
@@ -63,6 +63,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(C)漏字 x（原為 $\sqrt{3}$＋y＝0，應為 $\sqrt{3}x$＋y＝0）
+    fixed_by: agent
+    fix_note: （人工修正：補齊選項 C 漏字 x 並補齊被截斷之解析）
   difficulty: 2
 - id: doc_112_台北_師大附中_數學_g10s1e2_s1_2
   section: 1

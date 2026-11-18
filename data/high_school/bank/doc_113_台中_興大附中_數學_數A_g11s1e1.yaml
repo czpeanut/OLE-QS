@@ -441,7 +441,7 @@ questions:
   number: 5
   type: fill
   page: 3
-  stem: 如右圖，坐標平面上△OAB 中，O 為原點，兩邊$\overline{OA}$、$\overline{OB}$的斜率分別為－3 與 4。現以 O 為中心，將△OAB 順時針旋轉得到△OA'B'，若 B' 點落在 x 軸上，則$\overline{OA'}$的斜率為＿＿＿＿。
+  stem: 在坐標平面上 $\triangle OAB$ 中，$O$ 為原點，$A$ 在第二象限、$B$ 在第一象限，兩邊 $\overline{OA}$、$\overline{OB}$ 的斜率分別為 $-3$ 與 $4$。現以 $O$ 為中心，將 $\triangle OAB$ 順時針旋轉得到 $\triangle OA'B'$，若 $B'$ 點落在 $x$ 軸正向，則 $\overline{OA'}$ 的斜率為＿＿＿＿。
   assets:
   - key: s3_5_f1
     kind: figure
@@ -454,9 +454,9 @@ questions:
       - 564.3
       - 292.2
   answer:
-  - $\frac{7}{11}$ 6.260° 7.$\sqrt{43}$ 8.$8\sqrt{7}$
-  answer_status: verified
-  answer_source: answer_key
+  - $\frac{7}{11}$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-A3-1-3
@@ -471,7 +471,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer 欄位混入第6～8題答案
+    fixed_by: agent
+    fix_note: （人工修正：補充 A、B 象限條件並移除缺圖依賴，清除混入答案並補齊解析）
   difficulty: 3
+  explanation: 設 $\overline{OA}$ 與 $\overline{OB}$ 的廣義角分別為 $\theta_A \in (\frac{\pi}{2}, \pi)$、$\theta_B \in (0, \frac{\pi}{2})$，則 $\tan\theta_A = -3$、$\tan\theta_B = 4$。順時針旋轉 $\theta_B$ 後，$\overline{OA'}$ 的方向角為 $\theta_A - \theta_B$，其斜率為 $\tan(\theta_A - \theta_B) = \frac{-3-4}{1+(-3)(4)} = \frac{7}{11}$。
+  review_note: 原答案卷答案 ['$\\frac{7}{11}$ 6.260° 7.$\\sqrt{43}$ 8.$8\\sqrt{7}$']，執行 agent 修正為 ['$\\frac{7}{11}$']
 - id: doc_113_台中_興大附中_數學_數A_g11s1e1_s3_6
   section: 3
   number: 6

@@ -480,19 +480,9 @@ questions:
   - (1) $\frac{473}{729}$；(2) $\frac{473}{729}$
   answer_status: verified
   answer_source: answer_key
-  explanation: '(1) ∵小明前 4 球皆投進籃框
+  explanation: '(1) 前 4 球全中，後 6 球至少中 2 球即及格，機率 $= 1 - C_0^6(\frac{2}{3})^6 - C_1^6(\frac{1}{3})(\frac{2}{3})^5 = 1 - \frac{64+192}{729} = \frac{473}{729}$。
 
-    ∴小明後 6 球中，至少投進 2 球即及格
-
-    所求為$1 -C_{0}^{6} \left( \frac{2}{3} \right) ^{6}-C_{1}^{6} \left( \frac{1}{3} \right) ^{1} \left( \frac{2}{3} \right) ^{5}$＝$\frac{473}{729}$
-
-    (2) ∵及格時，即停止投球
-
-    ∴投進第 2 球就結束
-
-    所求為$\left( \frac{1}{3} \right) ^{2}$＋$\left( \frac{1}{3}\times \frac{2}{3}\times \frac{1}{3} \right) \times 2$＋$\left( \frac{1}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{1}{3} \right) \times 3$＋$\left( \frac{1}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{1}{3} \right) \times 4$ ＋$\left( \frac{1}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{1}{3} \right) \times 5$
-
-    ＝$\frac{1}{9}+\frac{4}{27}+\frac{4}{27}+\frac{32}{243}+\frac{80}{729}$＝$\frac{473}{729}$'
+    (2) 「60 分即停止」與「全投完 10 球後至少 60 分」為同一事件，故機率亦為 $\frac{473}{729}$。'
   tags:
     unit:
       code: MA-Y2-1-2
@@ -507,6 +497,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含亂碼（球）
+    fixed_by: agent
+    fix_note: （人工修正：補齊被截斷之解析）
   difficulty: 3
 - id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_8
   section: 2
@@ -644,15 +636,13 @@ questions:
   number: 2
   type: fill
   page: 3
-  stem: '打桌球一小時收費 30 元，可消耗熱量 300 卡路里；游泳一小時收費 50 元，可消耗熱量 450 卡路里。小明每週最多能抽出 8 小時運動，又希望總花費不超過 300 元，能消耗最多熱量。假設每週打桌球 x 小時，游泳 y 小時，則：
+  stem: '打桌球一小時收費 $30$ 元，可消耗熱量 $300$ 卡路里；游泳一小時收費 $50$ 元，可消耗熱量 $450$ 卡路里。小明每週最多能抽出 $8$ 小時運動，又希望總花費不超過 $300$ 元，能消耗最多熱量。假設每週打桌球 $x$ 小時，游泳 $y$ 小時，則：
 
-    (1) 目標函數 P＝＿＿＿＿。（填充題，1 分）
+    (1) 目標函數 $P =$＿＿＿＿。（填充題，1 分）
 
-    (2) 根據題意列出二元一次不等式。（計算題，3 分）
+    (2) 根據題意列出二元一次聯立不等式。（計算題，3 分）
 
-    (3) 畫出可行解區域。（作圖題，3 分）
-
-    (4) 每週打桌球＿＿＿＿小時，游泳＿＿＿＿小時，能消耗最多熱量＿＿＿＿卡路里。（填充題，一格 1 分，共 3 分）'
+    (3) 每週打桌球＿＿＿＿小時，游泳＿＿＿＿小時，能消耗最多熱量＿＿＿＿卡路里。（填充題，一格 1 分，共 3 分）'
   assets:
   - key: s3_2_f1
     kind: figure
@@ -665,9 +655,9 @@ questions:
       - 356.25
       - 716.15
   answer:
-  - (1) 目標函數 P＝300x＋450y
-  answer_status: verified
-  answer_source: answer_key
+  - (1) $300x+450y$；(2) $x\ge 0, y\ge 0, x+y\le 8, 30x+50y\le 300$；(3) $5$ 小時、$3$ 小時、$2850$ 卡路里
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-Y2-3-1
@@ -682,4 +672,12 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含亂碼（費）
+    fixed_by: agent
+    fix_note: （人工修正：移除作圖子題與缺圖依賴，補齊各小題答案與解析）
   difficulty: 2
+  explanation: '(1) 目標函數 $P = 300x + 450y$。
+
+    (2) 限制條件為 $\begin{cases}x \ge 0, y \ge 0 \\ x + y \le 8 \\ 30x + 50y \le 300\end{cases}$。
+
+    (3) 可行解區域頂點為 $(0,0), (8,0), (0,6), (5,3)$。代入目標函數得 $P(8,0)=2400$、$P(0,6)=2700$、$P(5,3)=1500+1350=2850$（最大），故每週打桌球 5 小時、游泳 3 小時，可消耗最多 2850 卡路里。'
+  review_note: 原答案卷答案 ['(1) 目標函數 P＝300x＋450y']，執行 agent 修正為 ['(1) $300x+450y$；(2) $x\\ge 0, y\\ge 0, x+y\\le 8, 30x+50y\\le 300$；(3) $5$ 小時、$3$ 小時、$2850$ 卡路里']

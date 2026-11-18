@@ -224,21 +224,29 @@ questions:
   stem: 設O ( 0 , 0 )，A ( 1 , 3 )，B (－8 , 6 )，$\vec{u}$＝$\vec{OA}$，$\vec{v}$＝$\vec{AB}$，$\vec{w}$＝x$\vec{u}$＋y$\vec{v}$，其中x，y為實數。試問下列哪些敘述是正確的？
   options:
   - label: A
-    content: $\vec{v}$＝( 9 ,－3 )
+    content: $\vec{v} = (9, -3)$
   - label: B
-    content: sin∠OAB＝－1
+    content: $\sin\angle OAB = -1$
   - label: C
-    content: 若$\vec{u}$．$\vec{w}$＝$\vec{v}$．$\vec{w}$，則x＝9y
+    content: 若 $\vec{u}\cdot\vec{w} = \vec{v}\cdot\vec{w}$，則 $x = 9y$
   - label: D
-    content: A到直線$←→$的距離為3$\sqrt{10}$
+    content: $A$ 到直線 $\overleftrightarrow{BO}$ 的距離為 $3\sqrt{10}$
   - label: E
-    content: 若x＋y＝0，則$\vec{u}$，$\vec{w}$張開所形成的平行四邊形面積與$\vec{v}$，$\vec{w}$張開所形成的平行四邊形面積相等
+    content: 若 $x+y=0$，則 $\vec{u}, \vec{w}$ 張開所形成的平行四邊形面積與 $\vec{v}, \vec{w}$ 張開所形成的平行四邊形面積相等
   answer:
   - C
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: (A) ×：$\vec{v}$＝$\vec{AB}$＝(－9 , 3 )≠( 9 ,－3 )。 (B) ×：因為0° ≤ ∠OAB ≤ 180°，所以sin∠OAB ≥ 0，即sin∠OAB≠－1。 (C) ○：若$\vec{u}$．$\vec{w}$＝$\vec{v}$．$\vec{w}$，則 ($\vec{u}$－$\vec{v}$)．$\vec{w}$＝0， ⇒ ($\vec{u}$－$\vec{v}$)．( x$\vec{u}$＋y$\vec{v}$)＝x |$\vec{u}$|$^{2}$－y |$\vec{v}$|$^{2}$＋(－x＋y )$\vec{u}$．$\vec{v}$＝10x－90y＝0， ⇒ x＝9y。 (D) ×：可知$\overleftrightarrow{BO}$：3x＋4y＝0 ⇒ d ( A ,$\overleftrightarrow{BO}$)＝$\frac{|3\times 1+4\times 3|}{\sqrt{1^{2}+4^{2}}}$＝3。 (E) ○：若x＋y＝0，則y＝－x ⇒ $\vec{w}$＝x$\vec{u}$－x$\vec{v}$， ⇒ | x |＝$\frac{\vec{w}與\vec{v}所張成的平行四邊形面積}{\vec{u}與\vec{v}所張成的平行四邊形面積}$，|－x |＝$\frac{\vec{w}與\vec{u}所張成的平行四邊形面積}{\vec{u}與\vec{v}所張成的平行四邊形面積}$， 所以$\vec{u}$，$\vec{v}$所張成的平行四邊形面積與$\vec{v}$，$\vec{w}$所張成的平行四邊形面積相等。 故選(C)(E)。
+  explanation: '(A) ×：$\vec{v} = \vec{AB} = (-9, 3)$。
+
+    (B) ×：$0^\circ \le \angle OAB \le 180^\circ \Rightarrow \sin\angle OAB \ge 0$。
+
+    (C) ○：$\vec{u}\cdot\vec{w} = \vec{v}\cdot\vec{w} \Rightarrow (\vec{u}-\vec{v})\cdot(x\vec{u}+y\vec{v}) = x|\vec{u}|^2 - y|\vec{v}|^2 + (-x+y)\vec{u}\cdot\vec{v} = 10x - 90y = 0 \Rightarrow x = 9y$（因 $\vec{u}\cdot\vec{v} = 0$）。
+
+    (D) ×：$\overleftrightarrow{BO}: 3x+4y=0$，$d(A, \overleftrightarrow{BO}) = \frac{|3+12|}{5} = 3 \neq 3\sqrt{10}$。
+
+    (E) ○：$x+y=0 \Rightarrow \vec{w} = x(\vec{u}-\vec{v})$，兩平行四邊形面積均為 $|x||\det[\vec{u}, \vec{v}]|$，相等。'
   tags:
     unit:
       code: MA-A3-3-2
@@ -253,6 +261,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(D)「A到直線$←→$的距離」缺漏點名稱（應為直線 BO）
+    fixed_by: agent
+    fix_note: （人工修正：補齊選項 D 漏失的直線名稱 BO 並補齊被截斷之解析）
   difficulty: 4
 - id: doc_109_台北_北一女中_數學_數A_g11s1e3_s2_7
   section: 2

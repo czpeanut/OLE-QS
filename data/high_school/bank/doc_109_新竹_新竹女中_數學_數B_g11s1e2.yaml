@@ -246,7 +246,7 @@ questions:
   number: 3
   type: fill
   page: 1
-  stem: 視星等是用來衡量天體亮度的一種規格，其與天體光度的關係式如下： 若視星等m的天體光度為$F_{m}$，則m＝－2.5 log$\frac{F_{m}}{F_{0}}$，其中$F_{0}$為織女星的光度。 已知A天體視星等為$m_{A}$，B天體視星等為$m_{B}$，且A天體光度為B天體光度的$10^{－8}$天體光度的$10^{－8}$倍，則$m_{A}$－$m_{B}$＝＿＿＿＿。
+  stem: 視星等是用來衡量天體亮度的一種規格，其與天體光度的關係式如下：若視星等 $m$ 的天體光度為 $F_m$，則 $m = -2.5\log\frac{F_m}{F_0}$，其中 $F_0$ 為織女星的光度。已知 $A$ 天體視星等為 $m_A$，$B$ 天體視星等為 $m_B$，且 $A$ 天體光度為 $B$ 天體光度的 $10^{-8}$ 倍，則 $m_A - m_B =$＿＿＿＿。
   answer:
   - '20'
   answer_status: verified
@@ -265,7 +265,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「10^-8天體光度的10^-8倍」文字重複贅字
+    fixed_by: agent
+    fix_note: （人工修正：移除重複贅字並補齊解析）
   difficulty: 2
+  explanation: $m_A - m_B = -2.5\log\frac{F_A}{F_0} - (-2.5\log\frac{F_B}{F_0}) = -2.5\log\frac{F_A}{F_B} = -2.5\log 10^{-8} = 20$。
 - id: doc_109_新竹_新竹女中_數學_數B_g11s1e2_s3_5
   section: 3
   number: 5

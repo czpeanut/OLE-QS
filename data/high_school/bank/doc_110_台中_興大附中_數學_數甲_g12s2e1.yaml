@@ -246,9 +246,9 @@ questions:
 - id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s2_7
   section: 2
   number: 7
-  type: single
+  type: multiple
   page: 1
-  stem: 某科系宣稱該系新生男女錄取的比例相等。今檢定男女錄取的比例，並列出前三個步驟如下： ①假設「男女錄取的比例相等」； ②確立檢定統計量為「隨機抽取11名新生中女生的人數」； ③設定顯著水準為0.05。 已知隨機變數X表示女生的人數，根據附表，試選出隨機變數X的拒絕域。
+  stem: 某科系宣稱該系新生男女錄取的比例相等。今檢定男女錄取的比例，並列出前三個步驟如下：①假設「男女錄取的比例相等」；②確立檢定統計量為「隨機抽取 11 名新生中女生的人數 $X$」；③設定顯著水準為 $0.05$。已知 $X \sim B(11, \frac{1}{2})$，且 $P(X=0)=P(X=11)\approx 0.00049$、$P(X=1)=P(X=10)\approx 0.00537$、$P(X=2)=P(X=9)\approx 0.02686$，試選出隨機變數 $X$ 的拒絕域。
   options:
   - label: A
     content: '0'
@@ -286,7 +286,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 假設檢定拒絕域屬於二項分布應用
+    fixed_by: agent
+    fix_note: （人工修正：補齊二項分布機率值取代缺表，修正題型為 multiple 並補齊答案）
   difficulty: 2
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - D
+  - E
 - id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s2_8
   section: 2
   number: 8

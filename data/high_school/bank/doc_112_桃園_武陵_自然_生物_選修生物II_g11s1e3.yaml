@@ -237,10 +237,10 @@ questions:
   - label: D
     content: 無法確定
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
-  explanation: 甲品種的卵子與乙品種精子受精，故兩品種口味皆有。故選(A)。
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 梨為假果，食用的果肉部分主要由母本（甲品種）的花托（2n體細胞組織）發育而來，其基因型與性狀完全由甲品種決定，不受乙品種花粉影響（花粉僅影響種子內的胚與胚乳），故仍為甲品種的口味，選(B)。
   tags:
     unit:
       code: BI-S2-4-1
@@ -255,7 +255,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原題答案(A)與解析有誤：梨的食用果肉由花托/子房壁（母本2n組織）發育而來，應仍為甲品種口味(B)。
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案為B與錯誤解析（果肉由母本花托發育而來））
   difficulty: 2
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['B']
 - id: doc_112_桃園_武陵_自然_生物_選修生物II_g11s1e3_s1_7
   section: 1
   number: 7
@@ -697,7 +700,7 @@ questions:
   number: 18
   type: single
   page: 3
-  stem: LAA具有促進細胞體積變大的功能，此機制稱之為酸生長假說，請問反應過程中的酸化，主要藉由能造成何種反應來促進生長？
+  stem: IAA具有促進細胞體積變大的功能，此機制稱之為酸生長假說，請問反應過程中的酸化，主要藉由能造成何種反應來促進生長？
   options:
   - label: A
     content: 分解纖維素
@@ -726,6 +729,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「LAA」為「IAA」之誤植。
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「LAA」為「IAA」）
   difficulty: 2
 - id: doc_112_桃園_武陵_自然_生物_選修生物II_g11s1e3_s1_19
   section: 1

@@ -114,18 +114,18 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 下列哪一個橢圓是以$F_{1}$，$F_{2}$為兩焦點的橢圓？
+  stem: 已知兩焦點為 $F_1(-4, 0)$、$F_2(4, 0)$，下列哪一個橢圓是以 $F_1, F_2$ 為兩焦點的橢圓？
   options:
   - label: A
-    content: $F_{1}$
+    content: '$\Gamma_1: \frac{x^2}{25} + \frac{y^2}{16} = 1$'
   - label: B
-    content: $F_{2}$
+    content: '$\Gamma_2: \frac{x^2}{16} + \frac{y^2}{9} = 1$'
   - label: C
-    content: $F_{3}$
+    content: '$\Gamma_3: \frac{x^2}{25} + \frac{y^2}{9} = 1$'
   - label: D
-    content: $F_{4}$
+    content: '$\Gamma_4: \frac{x^2}{9} + \frac{y^2}{25} = 1$'
   - label: E
-    content: $F_{5}$
+    content: '$\Gamma_5: \frac{x^2}{16} + \frac{y^2}{25} = 1$'
   assets:
   - key: s1_3_f1
     kind: figure
@@ -141,7 +141,7 @@ questions:
   - C
   answer_status: verified
   answer_source: answer_key
-  explanation: 觀察圖中, 通過$F_{1},F_{2}$的長軸長10個單位長 $\therefore \Gamma _{3}$的短軸頂點到$F_{1},F_{2}$距離和亦為10個單位長 $\therefore \Gamma _{3}$是此圖的橢圓，故選(C)
+  explanation: '$F_1(-4,0), F_2(4,0)$ 在 $x$ 軸上且 $c=4$，故 $a^2 - b^2 = c^2 = 16$。檢驗各選項僅 $\Gamma_3: \frac{x^2}{25}+\frac{y^2}{9}=1$ 滿足 $25-9=16$，故選 (C)。'
   tags:
     unit:
       code: MA-J2-3-2
@@ -156,6 +156,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項內容誤植為 $F_1$～$F_5$（依解析應為 $\Gamma_1$～$\Gamma_5$）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項名稱為 Γ1～Γ5 並補充橢圓方程式取代缺圖）
   difficulty: 2
 - id: doc_110_新北_新北高中_數學_數甲_g12s1e2_s2_1
   section: 2
@@ -203,11 +205,11 @@ questions:
   - label: A
     content: 可能沒有交點
   - label: B
-    content: 沒有交點，則必為4個
+    content: 若非沒有交點，則必為 4 個交點
   - label: C
-    content: 若A＞B，且B＝9時，則沒有交點
+    content: 若 $A>B$，且 $B=9$ 時，則沒有交點
   - label: D
-    content: 若A＞B，且B ≥ 16時，有4個交點
+    content: 若 $A>B$，且 $B\ge 16$ 時，有 4 個交點
   answer:
   - A
   - D
@@ -227,7 +229,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項(B)文字「沒有交點，則必為4個」疑似漏字（應為「若非沒有交點…」）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項 B 漏字並補齊解析）
   difficulty: 3
+  explanation: (A) ○：當 $A < 16$ 時無交點。(B) ×：當 $A = 16$ 時相切於 $(\pm 4, 0)$，恰有 2 個交點。(C) ×：若 $A > 16$ 且 $B=9$，有 4 個交點。(D) ○：若 $A > B \ge 16$，則 $A > 16$，兩圖形必交於 4 點。選 (A)(D)。
 - id: doc_110_新北_新北高中_數學_數甲_g12s1e2_s2_3
   section: 2
   number: 3

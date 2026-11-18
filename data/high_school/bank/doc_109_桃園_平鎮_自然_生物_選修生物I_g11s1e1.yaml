@@ -34,7 +34,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 如果三個脂肪酸（分子式：$C_{6}H_{22}O_{2}$）分子與一個甘油（分子式：$C_{3}H_{8}O_{3}$）分子可以形成一個脂肪分子，則此分子的分子式為下列何者？
+  stem: 如果三個脂肪酸（分子式：$C_{16}H_{22}O_{2}$）分子與一個甘油（分子式：$C_{3}H_{8}O_{3}$）分子可以形成一個脂肪分子，則此分子的分子式為下列何者？
   options:
   - label: A
     content: $C_{51}H_{68}O_{6}$
@@ -58,7 +58,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹脂肪酸分子式疑誤植為 C_6H_22O_2（應為 C_16H_32O_2）
+    fixed_by: agent
+    fix_note: （人工修正：修正脂肪酸分子式OCR誤植為C16H22O2並補齊答案與解析）
   difficulty: 3
+  explanation: 三個脂肪酸與一個甘油進行脫水縮合反應形成三酸甘油酯（脂肪），過程中脫去3分子水($H_2O$)。碳原子數＝3×16＋3＝51；氫原子數＝3×22＋8－3×2＝68；氧原子數＝3×2＋3－3×1＝6，故分子式為$C_{51}H_{68}O_{6}$，選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_桃園_平鎮_自然_生物_選修生物I_g11s1e1_s1_2
   section: 1
   number: 2
@@ -302,9 +309,9 @@ questions:
   - label: B
     content: 幾丁質是一種含有氮的多醣類
   - label: C
-    content: 動物體內含有的多醣有澱粉和肝酶
+    content: 動物體內含有的多醣有澱粉和肝醣
   - label: D
-    content: 植物體內是以澱粉的形式來運輸酶類
+    content: 植物體內是以澱粉的形式來運輸醣類
   - label: E
     content: 蔗糖是由兩個葡萄糖脫去一分子水所形成
   tags:
@@ -321,7 +328,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 C、D「肝酶／酶類」疑為「肝醣／醣類」之 OCR 錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C、D錯字「肝酶／酶類」為「肝醣／醣類」並補齊答案與解析）
   difficulty: 2
+  explanation: (A)細胞直接利用的能量貨幣為ATP；(B)幾丁質為含氮多醣（N-乙醯葡萄胺聚合物），正確；(C)動物體內不含澱粉；(D)植物體內主要以蔗糖形式運輸醣類；(E)蔗糖由一分子葡萄糖與一分子果糖縮合而成。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_桃園_平鎮_自然_生物_選修生物I_g11s1e1_s1_11
   section: 1
   number: 11
@@ -445,7 +459,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 人的血紅素蛋白Hb由四個蛋白質次單元組成，每個血紅素蛋白均由四個蛋白質次單元加上中心的一個亞號（$Fe^{2＋}$）離子組成，請問上述中的「單獨每個蛋白質次單元的立體構形」是在指蛋白質的幾級結構？
+  stem: 人的血紅素蛋白Hb由四個蛋白質次單元組成，每個血紅素蛋白均由四個蛋白質次單元加上中心的亞鐵（$Fe^{2＋}$）離子組成，請問上述中的「單獨每個蛋白質次單元的立體構形」是在指蛋白質的幾級結構？
   options:
   - label: A
     content: 一級結構
@@ -469,7 +483,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「亞號」應為「亞鐵」之 OCR 錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「亞號」為「亞鐵」並補齊答案與解析）
   difficulty: 2
+  explanation: 單一條多肽鏈折疊形成的三維立體構形為蛋白質的三級結構；四個次單元組合成完整的血紅素則屬於四級結構，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_平鎮_自然_生物_選修生物I_g11s1e1_s1_16
   section: 1
   number: 16
@@ -931,7 +952,7 @@ questions:
   number: 31
   type: single
   page: 4
-  stem: 進子通道是由何種物質組成？
+  stem: 離子通道是由何種物質組成？
   options:
   - label: A
     content: 礦物質
@@ -956,7 +977,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「進子通道」為「離子通道」之錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「進子通道」為「離子通道」並補齊答案與解析）
   difficulty: 1
+  explanation: 細胞膜上的離子通道是由貫穿磷脂雙層的跨膜蛋白質所組成，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_平鎮_自然_生物_選修生物I_g11s1e1_s3_32
   section: 3
   number: 32
@@ -1027,11 +1055,11 @@ questions:
   - label: A
     content: HDL-C濃度高，LDL-C濃度高
   - label: B
-    content: HDL-C濃度高，LDL-C濕度低
+    content: HDL-C濃度高，LDL-C濃度低
   - label: C
     content: HDL-C濃度低，LDL-C濃度高
   - label: D
-    content: HDL-C濃度低，LDL-C濕度低
+    content: HDL-C濃度低，LDL-C濃度低
   group_stem: ◎閱讀二 膽固醇是細胞膜的重要成分，也是膽鹽及許多固醇類激素的前驅物質，人體內的膽固醇約三分之二與長鏈脂肪酸結合，並經由脂蛋白運送，血液中膽固醇濃度的正常範圍約150～250 mg／L。三酸甘油酯是脂肪組織的重要成分，也是儲存能量的方式，在人體內經由脂蛋白運送，血液中的三酸甘油酯濃度正常範圍約120～190 mg／dL。 高密度脂蛋白膽固醇（HDL-C）為脂蛋白的一種，約含50％蛋白質、20％膽固醇、30％磷脂及少量三酸甘油酯，主要作用可將多餘膽固醇帶到肝臟代謝或排出體外。若血中高密度脂蛋白膽固醇濃度低於35 mg／dL，罹患心血管疾病的機率將增高。低密度脂蛋白膽固醇（LDL-C）也為脂蛋白的一種，約含20％蛋白質、52％膽固醇、22％磷脂及6％三酸甘油酯，主要作用為將膽固醇由肝臟帶到周邊組織去利用，如果LDL-C濃度高於160 mg／dL，可能會堆積在血管中引起動脈硬化。近來發現氧化的LDL-C是具傷害性的成分，它可影響血管內皮細胞的功能，並誘發巨噬細胞的生成。巨噬細胞接著產生許多氧化性自由基使LDL-C被氧化，再更一進步吞噬LDL-C，逐漸轉變成充滿膽固醇的細胞，而壞死的巨噬細胞對血管內壁又會再度造成傷害。
   tags:
     unit:
@@ -1047,7 +1075,14 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項 B、D「濕度」應為「濃度」之 OCR 錯字
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B、D錯字「濕度」為「濃度」並補齊答案與解析）
   difficulty: 2
+  explanation: HDL-C可將多餘膽固醇帶回肝臟代謝，LDL-C過高則易沉積於血管壁；故HDL-C濃度低且LDL-C濃度高時，最易罹患心血管疾病，選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_平鎮_自然_生物_選修生物I_g11s1e1_s3_35
   section: 3
   number: 35

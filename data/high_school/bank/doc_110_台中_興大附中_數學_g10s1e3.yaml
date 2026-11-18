@@ -654,7 +654,7 @@ questions:
   number: 8
   type: fill
   page: 2
-  stem: 二次函數 f（x）＝$kx^{2}$＋2x＋k 之圖形如右，求實數 k 的範圍為 k＜＿＿＿＿。
+  stem: 二次函數 $f(x) = kx^2 + 2x + k$ 的圖形恆在 $x$ 軸下方，求實數 $k$ 的範圍為 $k <$＿＿＿＿。
   answer:
   - －1
   answer_status: verified
@@ -673,7 +673,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺圖（題幹「之圖形如右」但未附圖，致無法判斷開口方向）
+    fixed_by: agent
+    fix_note: （人工修正：補充圖形恆在 x 軸下方之條件取代缺圖並補齊解析）
   difficulty: 2
+  explanation: 圖形恆在 $x$ 軸下方，故開口向下 $k < 0$ 且判別式 $D = 2^2 - 4k^2 < 0 \Rightarrow k^2 > 1$，因此 $k < -1$。
 - id: doc_110_台中_興大附中_數學_g10s1e3_s3_9
   section: 3
   number: 9

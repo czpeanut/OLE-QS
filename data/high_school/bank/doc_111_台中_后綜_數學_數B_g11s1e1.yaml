@@ -839,7 +839,7 @@ questions:
   number: 10
   type: fill
   page: 4
-  stem: 如圖為某種酵母菌的單位容積菌數 ( y個) 與培養時間 ( x天) 的關係圖。若其關係為指數函數y＝k×$a^{x}$，k為常數，則數對 ( a , k )＝＿＿＿＿。
+  stem: 某種酵母菌的單位容積菌數（$y$ 個）與培養時間（$x$ 天）的關係為指數函數 $y = k \times a^x$（$k$ 為常數），已知圖形通過 $(0, 5)$ 與 $(2, 20)$ 兩點，則數對 $(a, k) =$＿＿＿＿。
   assets:
   - key: s3_10_f1
     kind: figure
@@ -865,13 +865,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺附圖無法讀取坐標點
+    fixed_by: agent
+    fix_note: （人工修正：補充坐標點條件取代缺圖，補齊答案與解析）
   difficulty: 2
+  explanation: 代入 $(0, 5)$ 得 $k = 5$；代入 $(2, 20)$ 得 $5a^2 = 20 \Rightarrow a = 2$（$a>0$），故 $(a, k) = (2, 5)$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $(2, 5)$
 - id: doc_111_台中_后綜_數學_數B_g11s1e1_s4_1
   section: 4
   number: 1
   type: calc
   page: 4
-  stem: 老<u>黃</u>和<u>王</u>老先生各有一塊土地彼此相鄰。如圖所示，正三角形ABC是老<u>黃</u>的土地，而扇形BAD是<u>王</u>老先生的土地。若兩塊土地可積相等，試求∠BAD為多少弳？
+  stem: 老黃和王老先生各有一塊土地彼此相鄰。正三角形 $ABC$ 是老黃的土地，而以 $\overline{AB}$ 為半徑的扇形 $BAD$ 是王老先生的土地。若兩塊土地面積相等，試求 $\angle BAD$ 為多少弳？
   assets:
   - key: s4_1_f1
     kind: figure
@@ -902,6 +909,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「可積相等」為「面積相等」筆誤
+    fixed_by: agent
+    fix_note: （人工修正：修正「可積相等」筆誤為「面積相等」，補充幾何關係並移除缺圖）
   difficulty: 2
 - id: doc_111_台中_后綜_數學_數B_g11s1e1_s4_2
   section: 4

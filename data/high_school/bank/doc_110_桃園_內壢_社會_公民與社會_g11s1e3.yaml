@@ -307,12 +307,12 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 某新款智慧型手機上市引起排隊購買潮。若此手機售為15000元，櫻木心中最高願意支付3000元託人排隊代買，經與有意代買之三井、赤木商討，最後由三井收取櫻木代買費用1500元，為櫻木購得此手機。請問以下有關機會成本的設算，何者正確？
+  stem: 某新款智慧型手機上市引起排隊購買潮。若此手機售價為15000元，櫻木心中最高願意支付3000元託人排隊代買，經與有意代買之三井、赤木商討，最後由三井收取櫻木代買費用1500元，為櫻木購得此手機。請問以下有關機會成本的設算，何者正確？
   options:
   - label: A
     content: 櫻木自己排隊買手機之機會成本至少高於3000元
   - label: B
-    content: 櫻木購買此智慧型手機的機成本為18000元
+    content: 櫻木購買此智慧型手機的機會成本為18000元
   - label: C
     content: 三井為人排隊代買手機之機會成本為2000元
   - label: D
@@ -328,6 +328,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（售為15000元）、選項B錯字（機成本）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項B錯字並補充答案與解析）
+  explanation: 櫻木最高願意支付 3,000 元請人代買，表示其自行排隊的時間與精力等機會成本至少高於 3,000 元，故(A)正確。(B)櫻木實際支付 15,000＋1,500＝16,500 元，非 18,000 元；(C)三井願以 1,500 元代買，其機會成本應低於或等於 1,500 元；(D)赤木未接單僅表示其機會成本高於 1,500 元，無法推論大於 4,500 元。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s1_11
   section: 1
   number: 11
@@ -854,7 +861,7 @@ questions:
   number: 28
   type: single
   page: 4
-  stem: 化學原料工廠在製造過程中排放水廢水汙染河川，當地居民受不了河川有如臭水溝般的散發出惡臭，請來相關政府官員來解決此問題。請問：此時政府管制為以下何種原因？
+  stem: 化學原料工廠在製造過程中排放廢水汙染河川，當地居民受不了河川有如臭水溝般的散發出惡臭，請來相關政府官員來解決此問題。請問：此時政府管制為以下何種原因？
   options:
   - label: A
     content: 人為獨占
@@ -875,6 +882,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（排放水廢水）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「排放水廢水」並補充答案與解析）
+  explanation: 工廠排放廢水汙染河川，將生產成本轉嫁給社會大眾承擔，屬於「負外部性」（外部成本），使市場無法達成資源配置效率，即為「市場失靈」，因此需要政府介入管制。答案選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s1_29
   section: 1
   number: 29
@@ -1026,7 +1040,7 @@ questions:
   - label: C
     content: 若採限定繼承的方式，繼承財產、不繼承債務
   - label: D
-    content: 若依限定繼承的方武，則需另外支付債務差額
+    content: 若依限定繼承的方式，則需另外支付債務差額
   tags:
     unit:
       code: CI-3-1-4
@@ -1038,6 +1052,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D有錯字（方武）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項D錯字「方武」並補充答案與解析）
+  explanation: 父親遺產僅20萬元但債務高達500萬元（負債大於資產），採「拋棄繼承」可將遺產與債務一併拋棄，省去後續清償與清算程序，對魯夫最有利，故(A)正確。(B)拋棄繼承不能單獨拋棄債務而繼承遺產；(C)現行《民法》採概括繼承有限責任（限定繼承），仍須以所得遺產（20萬元）為限清償債務，並非完全不繼承債務；(D)限定繼承無須以自身財產支付差額。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s1_35
   section: 1
   number: 35
@@ -1080,9 +1101,7 @@ questions:
   number: 36
   type: single
   page: 5
-  stem: '若白雲沒有預留遺囑，白雲過世後，其遺産繼承人為下列哪些人？(甲)百合(乙)白天(西)白雪(丁)
-
-    白霧(戊)白霜(己)黃蓮(庚)陳皮(辛)陳風'
+  stem: 若白雲沒有預留遺囑，白雲過世後，其遺產繼承人為下列哪些人？(甲)百合；(乙)白天；(丙)白雪；(丁)白霧；(戊)白霜；(己)黃蓮；(庚)陳皮；(辛)陳風
   options:
   - label: A
     content: 甲乙丙
@@ -1104,6 +1123,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（「(西)白雪」，應為（丙））
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「(西)白雪」與「遺産」並補充答案與解析）
+  explanation: 依《民法》第1138條及第1144條，配偶百合有相互繼承遺產之權；第一順位法定繼承人為直系血親卑親屬，包含親生子女白天、白雪，以及依《民法》第1077條與婚生子女權利義務相同之養女白霧。孫輩白霜、陳風因父母尚在，無代位繼承權；媳婦黃蓮、女婿陳皮為姻親，無繼承權。故繼承人為甲、乙、丙、丁。答案選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s2_37
   section: 2
   number: 37
@@ -1209,6 +1235,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有亂碼字元（民眾擇網購）
+    fixed_by: agent
+    fix_note: （人工修正：補充答案與解析）
+  explanation: 網路購物屬於《消費者保護法》規範的通訊交易，受該法保障且原則上享有收受商品後7日內無條件退貨解約權，故(D)正確、而(C)錯誤。(A)實體與網路購物均受《消費者保護法》保障，非僅以《公平交易法》保障實體購物；(B)實體購物可實際檢視商品，掌握之資訊通常較網路購物多。答案選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_桃園_內壢_社會_公民與社會_g11s1e3_s2_41
   section: 2
   number: 41

@@ -195,7 +195,7 @@ questions:
   number: 21
   type: single
   page: 1
-  stem: 某電為量為q、質量為m的帶電粒子，被速電壓V由靜而加速，此帶電粒子的物質波波長為2λ。若加速電壓變成4倍，則帶電粒子的物質波波長會變成
+  stem: 某電量為 q、質量為 m 的帶電粒子，被加速電壓 V 由靜止加速，此帶電粒子的物質波波長為 2λ。若加速電壓變成 4 倍，則帶電粒子的物質波波長會變成：
   options:
   - label: A
     content: λ
@@ -203,6 +203,10 @@ questions:
     content: 2λ
   - label: C
     content: 4λ
+  - label: D
+    content: "$\frac{\\lambda}{2}$"
+  - label: E
+    content: "$\frac{\\lambda}{4}$"
   answer:
   - A
   answer_status: verified
@@ -221,7 +225,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹微誤字：「電為量」「被速電壓」「由靜而加速」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字並補全解析）
   difficulty: 2
+  explanation: 物質波波長 $\lambda＝\frac{h}{p}＝\frac{h}{\sqrt{2mqV}} \propto \frac{1}{\sqrt{V}}$。當加速電壓 $V$ 增為 4 倍時，物質波波長變為原來的 $\frac{1}{2}$ 倍，即 $2\lambda\times\frac{1}{2}＝\lambda$。故選(A)。
 - id: doc_110_台南_台南二中_自然_物理_選修物理V_g12s2e3_s2_22
   section: 2
   number: 22

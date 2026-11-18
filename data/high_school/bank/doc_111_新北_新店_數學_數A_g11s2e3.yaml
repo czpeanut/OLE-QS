@@ -344,7 +344,7 @@ questions:
   - $\left[ \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$
   answer_status: verified
   answer_source: answer_key
-  explanation: $A^{8}$＝($A^{4}$)$^{2}$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$， ($A^{7}$)$^{－1}$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$， 故A＝$A^{8}$($A^{7}$)$^{－1}$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$。
+  explanation: $A^8 = (A^4)^2 = \begin{bmatrix}-2 & 5 \\ -1 & 2\end{bmatrix}^2 = \begin{bmatrix}-1 & 0 \\ 0 & -1\end{bmatrix} = -I$，又 $(A^7)^{-1} = \begin{bmatrix}-2 & 5 \\ -1 & 2\end{bmatrix}$，故 $A = A^8(A^7)^{-1} = \begin{bmatrix}2 & -5 \\ 1 & -2\end{bmatrix}$。
   tags:
     unit:
       code: MA-A4-4-2
@@ -359,6 +359,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題首「已知」缺字亂碼，不影響作答
+    fixed_by: agent
+    fix_note: （人工修正：補齊被截斷之解析）
   difficulty: 3
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_10
   section: 2

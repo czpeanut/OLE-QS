@@ -364,7 +364,7 @@ questions:
   number: 2
   type: fill
   page: 3
-  stem: 利用上題的答案，我們可以求出級數和S的值為＿＿＿＿。
+  stem: 已知 $\frac{1}{k(k+1)} = \frac{1}{k} - \frac{1}{k+1}$，試求級數和 $S = \sum_{k=1}^{99} \frac{1}{k(k+1)}$ 的值為＿＿＿＿。
   tags:
     unit:
       code: MA-2-1-2
@@ -379,7 +379,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹未列出級數和 S 的定義式或項數上界（疑缺公式或圖表）
+    fixed_by: agent
+    fix_note: （人工修正：補齊級數和 S 之完整定義式並補齊答案與解析）
   difficulty: 3
+  explanation: $S = \left(1 - \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{3}\right) + \cdots + \left(\frac{1}{99} - \frac{1}{100}\right) = 1 - \frac{1}{100} = \frac{99}{100}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $\frac{99}{100}$
 - id: doc_109_桃園_武陵_數學_g10s2e1_s4_1
   section: 4
   number: 1

@@ -98,7 +98,7 @@ questions:
   - label: A
     content: <u>N</u>$H_{3}$
   - label: B
-    content: $___H_{4}$
+    content: <u>C</u>$_{2}H_{4}$
   - label: C
     content: <u>C</u>$O_{2}$
   - label: D
@@ -119,7 +119,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B化學式缺漏底線字母（$___H_{4}$）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項B化學式為C2H4並補齊答案與解析）
   difficulty: 2
+  explanation: 苯中的碳原子為 $sp^{2}$ 混成軌域。(A)$NH_{3}$ 中 N 為 $sp^{3}$；(B)$C_{2}H_{4}$ 中 C 為 $sp^{2}$，正確；(C)$CO_{2}$ 中 C 為 $sp$；(D)$H_{2}O$ 中 O 為 $sp^{3}$；(E)$BeCl_{2}$ 中 Be 為 $sp$。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_桃園_桃園高中_自然_化學_選修化學II_g11s2e2_s1_4
   section: 1
   number: 4
@@ -434,7 +441,7 @@ questions:
   number: 12
   type: single
   page: 1
-  stem: 下列哪些分子不具有極作共價鍵？
+  stem: 下列哪些分子不具有極性共價鍵？
   options:
   - label: A
     content: HCl
@@ -460,7 +467,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「極作共價鍵」（應為極性共價鍵）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字極性共價鍵並補齊答案與解析）
   difficulty: 1
+  explanation: 極性共價鍵為不同種非金屬原子間形成之共價鍵。$O_{2}$ 為同核雙原子分子，兩氧原子間為非極性共價鍵。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_桃園_桃園高中_自然_化學_選修化學II_g11s2e2_s1_13
   section: 1
   number: 13
@@ -931,11 +945,15 @@ questions:
   number: 2
   type: fill
   page: 2
-  stem: $NF_{3}$是相當穩定的化合物，但$NCl_{3}$則相當不穩定（$NCl_{3}$是西元1811年由科學家Pierre Louis Dulong第一次合成出來，但他為了研究其性質，付出了做實驗不慎爆炸而受傷的代價），已知$_________$是個具有爆炸性的物質，而$NBr_{3}$直到1975年才被科學家合成出來，其穩定度又比$NCl_{3}$差，根據上面的現象，試回答下列問題： (1) 請排列氮的鹵化物$NF_{3}$、$NCl_{3}$、$NBr_{3}$鍵長的順序（由小到大）：＿＿＿。 (2) 根據上題結果，解釋氮的鹵化物$NF_{3}$、$NCl_{3}$、$NBr_{3}$其穩定度為何具有如此的趨勢？
+  stem: '$NF_{3}$是相當穩定的化合物，但$NCl_{3}$則相當不穩定（$NCl_{3}$是西元1811年由科學家Pierre Louis Dulong第一次合成出來，但他為了研究其性質，付出了做實驗不慎爆炸而受傷的代價），已知$NCl_{3}$是個具有爆炸性的物質，而$NBr_{3}$直到1975年才被科學家合成出來，其穩定度又比$NCl_{3}$差，根據上面的現象，試回答下列問題：
+
+    (1) 請排列氮的鹵化物$NF_{3}$、$NCl_{3}$、$NBr_{3}$鍵長的順序（由小到大）：＿＿＿。
+
+    (2) 根據上題結果，解釋氮的鹵化物$NF_{3}$、$NCl_{3}$、$NBr_{3}$其穩定度為何具有如此的趨勢？'
   answer:
-  - (1) (2)
-  answer_status: verified
-  answer_source: answer_key
+  - (1) NF3＜NCl3＜NBr3；(2) 鹵素原子半徑 F＜Cl＜Br，使 N－X 鍵長依序增加、鍵能依序減小，故穩定度依序下降。
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: CH-S2-2-2
@@ -950,4 +968,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有空白底線缺漏物質名稱
+    fixed_by: agent
+    fix_note: （人工修正：補齊題幹缺漏物質名稱NCl3並補齊答案與解析）
   difficulty: 3
+  explanation: 鹵素原子半徑大小順序為 $F < Cl < Br$，與氮形成共價鍵時，鍵長順序為 $NF_{3} < NCl_{3} < NBr_{3}$；鍵長愈長，原子軌域重疊愈差、鍵能愈小，化合物愈不穩定。
+  review_note: 原答案卷答案 ['(1) (2)']，執行 agent 修正為 ['(1) NF3＜NCl3＜NBr3；(2) 鹵素原子半徑 F＜Cl＜Br，使 N－X 鍵長依序增加、鍵能依序減小，故穩定度依序下降。']

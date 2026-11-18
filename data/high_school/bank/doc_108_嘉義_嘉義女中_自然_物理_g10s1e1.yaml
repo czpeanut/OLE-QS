@@ -167,16 +167,16 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 當前熱門的十七世紀的科學家牛頓，最早發現萬物間彼此相吸的道理，根據牛頓的重力理論，質量為$M_{1}$與$M_{2}$的兩物體，若相距為r，其間的引力可以數學式表為F＝$\frac{GM_{1}M_{2}}{r^{2}}$，G為重力常數。請問在國際單位制（SI制）中，常數G的單位為下面哪一項？
+  stem: 十七世紀的科學家牛頓最早發現萬物間彼此相吸的道理，根據牛頓的重力理論，質量為 $M_{1}$ 與 $M_{2}$ 的兩物體，若相距為 r，其間的引力可以數學式表為 $F＝\frac{GM_{1}M_{2}}{r^{2}}$，G 為重力常數。請問在國際單位制（SI制）中，常數 G 的單位為下面哪一項？
   options:
   - label: A
     content: $\frac{m^{3}}{kg\cdot s^{2}}$
   - label: B
     content: $\frac{m^{3}}{kg^{2}\cdot s^{2}}$
   - label: C
-    content: $\frac{m^{3}}{kg^{2}\cdot s^{2}}$
+    content: $\frac{m^{2}}{kg\cdot s^{2}}$
   - label: D
-    content: $\frac{m^{3}}{kg^{2}\cdot s^{2}}$
+    content: $\frac{kg\cdot m^{3}}{s^{2}}$
   - label: E
     content: $\frac{kg\cdot s}{m^{3}}$
   answer:
@@ -197,7 +197,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B、C、D內容重複
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹亂碼、區分重複選項並補全解析）
   difficulty: 2
+  explanation: 由 $G＝\frac{Fr^{2}}{M_{1}M_{2}}$，代入力的單位 $\frac{kg\cdot m}{s^{2}}$、距離單位 $m$、質量單位 $kg$，可得 $G$ 的單位為 $\frac{(kg\cdot m/s^{2})\cdot m^{2}}{kg^{2}}＝\frac{m^{3}}{kg\cdot s^{2}}$。故選(A)。
 - id: doc_108_嘉義_嘉義女中_自然_物理_g10s1e1_s1_6
   section: 1
   number: 6

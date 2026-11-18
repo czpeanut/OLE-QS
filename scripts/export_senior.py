@@ -18,7 +18,9 @@ FORMAT = {"single": "choice", "multiple": "choice", "fill": "fill", "calc": "app
 
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
-    nq = nu = nimg = 0
+    nq = nu = nimg = nheld = 0
+    hold_csv = ROOT / "data/high_school/upload_holdback.csv"          # 暫緩上站的題：status＝held
+    held = {l.split(",")[0] for l in hold_csv.read_text(encoding="utf-8").splitlines()[1:]} if hold_csv.is_file() else set()
     with gzip.open(OUT / "questions.jsonl.gz", "wt", encoding="utf-8", compresslevel=9) as fq, \
             gzip.open(OUT / "papers.jsonl.gz", "wt", encoding="utf-8", compresslevel=9) as fp:
         for y in sorted(BANK.glob("*.yaml")):
@@ -65,11 +67,12 @@ def main() -> int:
                     "textbook_tags": [tags["textbook"]] if tags.get("textbook") else [],
                     "images": imgs,
                     "shared_images": [{"key": sa["key"], "label": sa.get("label"), "file": sa["file"]}] if sa else [],
-                    "shared_text": None, "sort_key": None, "status": "reviewed", "corrected": None,
+                    "shared_text": None, "sort_key": None, "status": "held" if q["id"] in held else "reviewed", "corrected": None,
                     "page": q.get("page"), "label_note": tags.get("label_note"),
                 }
                 fq.write(json.dumps(rec, ensure_ascii=False) + "\n")
                 nq += 1
+                nheld += q["id"] in held
                 nu += bool(u)
                 nimg += len(imgs) + len(rec["shared_images"]) + sum(bool(o["image"]) for o in rec["options"])
     tax = OUT / "taxonomy"
@@ -86,7 +89,7 @@ def main() -> int:
     (OUT / "manifest.json").write_text(json.dumps({
         "schema_version": 1, "level": "senior", "exported_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
         "source": "data/high_school/bank（第三輪萃取＋人工校對＋逐題分章節）",
-        "questions": nq, "papers": papers, "questions_usable": nq, "questions_with_unit": nu, "images": nimg,
+        "questions": nq, "papers": papers, "questions_usable": nq - nheld, "questions_held": nheld, "questions_with_unit": nu, "images": nimg,
     }, ensure_ascii=False, indent=1))
     print(f"{papers} 卷、{nq:,} 題（有單元 {nu:,}）、附圖 {nimg:,} → {OUT}")
     return 0

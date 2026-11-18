@@ -439,17 +439,11 @@ questions:
     content: '250'
   - label: D
     content: '300'
-  group_stem: '山豬有 3 位好朋友：田鼠、黑狗、果子狸，4 人住家的坐標與地址分別如下表所示，下圖為 4 人住家範圍分布地圖。請問：
+  group_stem: '山豬有 3 位好朋友：田鼠、黑狗、果子狸，4 人住家的橫麥卡托二度分帶投影（TM2）坐標與地址分別如下表所示。請問：
 
-    ▼ 4 人住家的坐標與地址
-
-    |  |  |  |  |
+    | 住家 | N 坐標（m） | E 坐標（m） | 地址 |
 
     | --- | --- | --- | --- |
-
-    | 住家 |  |  |  |
-
-    | 橫麥卡托二度分帶投影坐標地址 | N 坐標（m） |  | E 坐標（m） |
 
     | 山豬 | 2583138 | 190128 | 中正路 60 號 |
 
@@ -457,11 +451,7 @@ questions:
 
     | 黑狗 | 2582988 | 190086 | 七賢街 100 號 |
 
-    | 果子狸 | 2583088 | 190308 | 中正路 8 號 |
-
-    |  |  |  |  |
-
-    ▲ 4 人住家範圍分布地圖'
+    | 果子狸 | 2583088 | 190308 | 中正路 8 號 |'
   shared_asset: g1_11_14
   tags:
     unit:
@@ -474,6 +464,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺標準答案
+    fixed_by: agent
+    fix_note: （人工修正：整理坐標表格並補齊答案與解析）
+  explanation: 承上題，山豬家至果子狸家的直線距離約為 186.8 公尺，最接近選項(B) 200 公尺。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_111_雲林_虎尾_社會_地理_選修地理I_g12s2e1_s1_14
   section: 1
   number: 14

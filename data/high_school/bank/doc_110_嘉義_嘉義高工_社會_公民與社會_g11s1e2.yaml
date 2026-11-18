@@ -61,7 +61,7 @@ questions:
   - label: C
     content: 高於立夏的願付價格
   - label: D
-    content: 低於立夏的願售價格
+    content: 等於立夏的願付價格
   tags:
     unit:
       code: CI-3-2-2
@@ -73,6 +73,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項A與D文字重複
+    fixed_by: agent
+    fix_note: （人工修正：修正選項D重複文字，補齊解答與解析）
+  explanation: 消費者願意購買的前提是商品價格小於或等於其「願付價格」。立夏試吃後決定不買，表示該年貨售價「高於立夏的願付價格」，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_3
   section: 1
   number: 3
@@ -87,7 +94,7 @@ questions:
   - label: C
     content: 當市場均衡時的資源配置符合經濟效率
   - label: D
-    content: 消費者剩餘加生產者剩餘等於經濟褔祉
+    content: 消費者剩餘加生產者剩餘等於經濟福祉
   tags:
     unit:
       code: CI-3-3-2
@@ -99,6 +106,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B有亂碼（「費者剩餘」應為「消費者剩餘」）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項D錯字「福祉」，補齊解答與解析）
+  explanation: 生產者剩餘 ＝ 實收金額 － 願售價格，而非願售價格扣除實收金額，故(A)錯誤。(B)(C)(D)敘述皆正確。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_4
   section: 1
   number: 4
@@ -129,7 +143,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 風谷鎮的居民吃燒餅當早餐時，會習慣搭配豆漿；喝紅茶時，則都會加入牛奶或豆漿，以增添滑順溫潤的口感。請問若豆漿價格上漲，對風鼓鎮最可能造成什麼影響？
+  stem: 風谷鎮的居民吃燒餅當早餐時，會習慣搭配豆漿；喝紅茶時，則都會加入牛奶或豆漿，以增添滑順溫潤的口感。請問若豆漿價格上漲，對風谷鎮最可能造成什麼影響？
   options:
   - label: A
     content: 牛奶的需求增加
@@ -150,6 +164,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹前後鎮名不一致（「風谷鎮」與「風鼓鎮」）
+    fixed_by: agent
+    fix_note: （人工修正：統一題幹鎮名為「風谷鎮」，補齊解答與解析）
+  explanation: 喝紅茶時牛奶與豆漿為「替代品」。當豆漿價格上漲，居民改以牛奶加入紅茶，因此牛奶的需求增加，選(A)。(B)(C)燒餅、紅茶與豆漿為互補品，豆漿漲價會使燒餅與紅茶需求減少；(D)豆漿本身價格上漲是「需求量」減少而非需求減少。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_6
   section: 1
   number: 6
@@ -1047,7 +1068,7 @@ questions:
   number: 38
   type: single
   page: 4
-  stem: 下列關於生產打能曲線的敘述，何者「錯誤」？
+  stem: 下列關於生產可能曲線的敘述，何者「錯誤」？
   options:
   - label: A
     content: 曲線內的組合點代表資源或技術沒有充分利用
@@ -1068,6 +1089,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（「生產打能曲線」應為「生產可能曲線」）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「生產可能曲線」，補齊解答與解析）
+  explanation: 生產可能曲線「外」的生產組合，在現有資源與技術水準下「無法達成」，並非充分利用現有技術的結果，故(C)錯誤。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_39
   section: 1
   number: 39
@@ -1144,6 +1172,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有亂碼（「享受到界各國」應為「享受到世界各國」）
+    fixed_by: agent
+    fix_note: （人工修正：確認題幹無誤並補齊解答與解析）
+  explanation: 專業分工與國際貿易可充分利用各國生產要素（甲）、提高資源使用效率（乙）、享受到各國的比較利益（丙），但產量與貿易擴大反而可能增加全球資源消耗，故(丁)錯誤。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_42
   section: 1
   number: 42
@@ -1239,7 +1274,7 @@ questions:
   stem: 我國人民的所有權受到法律保障，若甲擁有一輛汽車，請問關於法律對其所有權的保障，下列何者「錯誤」？
   options:
   - label: A
-    content: 若甲將汽車出租給別人，則租金收人應該歸於甲所擁有
+    content: 若甲將汽車出租給別人，則租金收入應該歸於甲所擁有
   - label: B
     content: 鄰居庭院種樹，枯枝落葉擋到甲的車道，他可以要求鄰居清除
   - label: C
@@ -1257,6 +1292,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項A有錯字（「租金收人」應為「租金收入」）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項A錯字「租金收入」，補齊解答與解析）
+  explanation: 財產權雖受《憲法》與《民法》保障，但基於公共利益或法律規定（如違規拖吊、扣押、強制執行等），政府仍得依法以公權力限制人民之所有權，故(C)錯誤。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_嘉義_嘉義高工_社會_公民與社會_g11s1e2_s1_46
   section: 1
   number: 46

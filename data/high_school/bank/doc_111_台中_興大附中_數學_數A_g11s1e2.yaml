@@ -210,7 +210,7 @@ questions:
   number: 6
   type: multiple
   page: 1
-  stem: '發生地震時，因為距離與地形在週遭各地所感受到的震度是不同的，因此每次地震發生時，會利用儀器觀測得到的地動加速度PGA ( cm / $sec^{2}$ ) 與地動速度 PGV ( cm / sec )，換算得到不同地區的地震震度等級，一般是採用整數表示。從2020年1月1日起，中央氣象局採用新的地震震度分級，將原來的5級與6級，再分成5弱、5強、6弱、6強，如下表：
+  stem: '發生地震時，因為距離與地形在週遭各地所感受到的震度是不同的，因此每次地震發生時，會利用儀器觀測得到的地動加速度 PGA（$\text{cm}/\text{sec}^2$）與地動速度 PGV（$\text{cm}/\text{sec}$），換算得到不同地區的地震震度等級，一般是採用整數表示。從 2020 年 1 月 1 日起，中央氣象局採用新的地震震度分級，將原來的 5 級與 6 級，再分成 5 弱、5 強、6 弱、6 強，如下表：
 
     | 舊制 | 0級 | 1級 | 2級 | 3級 | 4級 |
 
@@ -218,7 +218,7 @@ questions:
 
     | 新制 | 0級 | 1級 | 2級 | 3級 | 4級 |
 
-    | I值 | 0 ≤ I＜0.5 | 0.5 ≤ I＜1.5 | 1.5 ≤ I＜2.5 | 2.5 ≤ I＜3.5 | 3.5 ≤ I＜4.5 |
+    | I值 | $0 \le I < 0.5$ | $0.5 \le I < 1.5$ | $1.5 \le I < 2.5$ | $2.5 \le I < 3.5$ | $3.5 \le I < 4.5$ |
 
     | 舊制 | 5級 |  | 6級 |  | 7級 |
 
@@ -226,9 +226,9 @@ questions:
 
     | 新制 | 5弱 | 5強 | 6弱 | 6強 | 7級 |
 
-    | I值 | 4.5 ≤ I＜5.0 | 5.0 ≤ I＜5.5 | 5.5 ≤ I＜6.0 | 6.0 ≤ I＜6.5 | 6.5 ≤ I |
+    | I值 | $4.5 \le I < 5.0$ | $5.0 \le I < 5.5$ | $5.5 \le I < 6.0$ | $6.0 \le I < 6.5$ | $6.5 \le I$ |
 
-    0～4級依據地表強震儀觀測PGA決定，使用公式 $I_{1}$＝2.00×log (PGA)＋0.7…①；5～7級依據地表強震儀觀測PGV決定，使用公式 $I_{2}$＝2.14×log (PGA)＋1.89…②，地震震度先以PGA換算，當計算震度5度以上時，改以PGV進行計算，但若計算PGV震度小於4級時，將將震度定為4級。根據上述資料，下列哪些地區的地震資料其強度會被中央氣象局公告為6強？'
+    0～4 級依據地表強震儀觀測 PGA 決定，使用公式 $I_1 = 2.00\times\log(\text{PGA})+0.7$…①；5～7 級依據地表強震儀觀測 PGV 決定，使用公式 $I_2 = 2.14\times\log(\text{PGV})+1.89$…②，地震震度先以 PGA 換算，當計算震度 5 度以上時，改以 PGV 進行計算，但若計算 PGV 震度小於 4 級時，將震度定為 4 級。根據上述資料，下列哪些地區的地震資料其強度會被中央氣象局公告為 6 強？'
   options:
   - label: A
     content: PGA＝50，PGV＝70
@@ -260,6 +260,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 公式②題幹誤植為log(PGA)，實際應為log(PGV)
+    fixed_by: agent
+    fix_note: （人工修正：修正公式②誤植「log(PGA)」為「log(PGV)」）
   difficulty: 3
 - id: doc_111_台中_興大附中_數學_數A_g11s1e2_s3_1
   section: 3
@@ -417,9 +419,9 @@ questions:
   page: 2
   stem: 設x、y、z＞1，若 log $_{x}$ a＝24，log $_{y}$ a＝40，log $_{xyz}$ a＝12，求 log $_{z}$ a＝＿＿＿＿。
   answer:
-  - 60 I. 2 J. 35 K. $\frac{1}{3}$ L. 6
-  answer_status: verified
-  answer_source: answer_key
+  - '60'
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-A3-2-2
@@ -434,7 +436,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目解答欄位誤將後面I至L題答案串接於此題
+    fixed_by: agent
+    fix_note: （人工修正：清除答案中混入的後續題答案並補齊解析）
   difficulty: 2
+  explanation: 由換底公式得 $\log_a x = \frac{1}{24}$、$\log_a y = \frac{1}{40}$、$\log_a(xyz) = \frac{1}{12}$。故 $\log_a z = \frac{1}{12} - \frac{1}{24} - \frac{1}{40} = \frac{1}{60}$，因此 $\log_z a = 60$。
+  review_note: 原答案卷答案 ['60 I. 2 J. 35 K. $\\frac{1}{3}$ L. 6']，執行 agent 修正為 ['60']
 - id: doc_111_台中_興大附中_數學_數A_g11s1e2_s3_9
   section: 3
   number: 9

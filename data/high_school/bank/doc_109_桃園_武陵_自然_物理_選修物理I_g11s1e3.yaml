@@ -376,9 +376,9 @@ questions:
   - label: E
     content: 以上皆非
   answer:
-  - C
-  answer_status: verified
-  answer_source: answer_key
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S1-5-2
@@ -393,7 +393,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題庫原標答案C與物理事實不符（應為B：速度最小、加速度最大），但不影響分類
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案為B並補全解析）
   difficulty: 1
+  explanation: 在簡諧運動中，當物體位於端點（位置量值最大）時，瞬時速度為零（量值最小），而回復力與加速度量值皆達最大。故選(B)。
+  review_note: 原答案卷答案 ['C']，執行 agent 修正為 ['B']
 - id: doc_109_桃園_武陵_自然_物理_選修物理I_g11s1e3_s1_10
   section: 1
   number: 10
@@ -688,7 +692,7 @@ questions:
   number: 19
   type: single
   page: 3
-  stem: 設地球半徑為R，平均密度ρ，在地表附近繞地球運轉的衛星質量為m，若衛星週期為R，且G為萬有引力常數，則ρ$T^{ 2}$為多少？
+  stem: 設地球半徑為 R，平均密度 ρ，在地表附近繞地球運轉的衛星質量為 m，若衛星週期為 T，且 G 為萬有引力常數，則 $\rho T^{2}$ 為多少？
   options:
   - label: A
     content: $\frac{ 4π }{ G }$
@@ -701,9 +705,9 @@ questions:
   - label: E
     content: $\frac{ π }{ 4G }$
   answer:
-  - D
-  answer_status: verified
-  answer_source: answer_key
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S1-6-3
@@ -718,7 +722,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹誤植「若衛星週期為R」（應為T），不影響作答
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹符號誤植、更正答案為B並補全解析）
   difficulty: 3
+  explanation: 由萬有引力提供向心力：$\frac{GMm}{R^{2}}＝m\frac{4\pi^{2}R}{T^{2}}$，代入地球質量 $M＝\rho\cdot\frac{4}{3}\pi R^{3}$，化簡得 $\frac{4}{3}\pi G\rho＝\frac{4\pi^{2}}{T^{2}}$，故 $\rho T^{2}＝\frac{3\pi}{G}$。故選(B)。
+  review_note: 原答案卷答案 ['D']，執行 agent 修正為 ['B']
 - id: doc_109_桃園_武陵_自然_物理_選修物理I_g11s1e3_s2_21
   section: 2
   number: 21

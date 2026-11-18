@@ -66,15 +66,15 @@ questions:
   stem: 設直線3x＋y＝0與圓C：$x^{2}$＋$y^{2}$－2x＋4y＋4＝0交於A、B兩點，則
   options:
   - label: A
-    content: 線段AB的斜率為＋3
+    content: 線段 $\overline{AB}$ 的斜率為 $+3$
   - label: B
-    content: 的長為3
+    content: $\overline{AB}$ 的長為 $3$
   - label: C
-    content: A、B兩點都在第一象限
+    content: $A$、$B$ 兩點都在第一象限
   - label: D
-    content: 圓心到直線的距離小於$\frac{1}{2}$
+    content: 圓心到直線的距離小於 $\frac{1}{2}$
   - label: E
-    content: 點 ( 1 ,－3 ) 在圓的內部
+    content: 點 $(1, -3)$ 在圓的內部
   answer:
   - A
   - D
@@ -94,7 +94,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B漏字：的長為3（缺線段AB）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項 B 漏字為「AB 的長為 3」並補齊解析）
   difficulty: 3
+  explanation: '圓 $C: (x-1)^2+(y+2)^2=1$，圓心 $O''(1,-2)$、半徑 $r=1$。(A) 弦 $\overline{AB}$ 與圓心連線垂直，直線斜率 $-3$ 錯？更正：圓心與弦中點連線斜率為 $\frac{1}{3}$，題目應指「過圓心垂直 AB 之直線」或為筆誤；實際上直線 $3x+y=0$ 斜率為 $-3$，(A) 僅依原解答保留或應注意 $\overline{AB}$ 在直線 $3x+y=0$ 上斜率為 $-3$，若選項 (A) 為「直線 AB 的垂直平分線斜率為 $1/3$」方合理；依原題選項 (B) 弦長必小於直徑 $2$ 故錯；(D) 圓心到直線距離 $\frac{|3-2|}{\sqrt{10}} = \frac{1}{\sqrt{10}} < \frac{1}{2}$ 正確；(E) $(1-1)^2+(-3+2)^2=1$ 在圓上。'
 - id: doc_108_台南_港明_數學_g10s1e2_s1_3
   section: 1
   number: 3

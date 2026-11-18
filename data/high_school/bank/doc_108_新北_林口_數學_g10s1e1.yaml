@@ -101,18 +101,18 @@ questions:
   number: 3
   type: multiple
   page: 1
-  stem: 已知a，b為相異正數，x，y為異於0之實數，設ax＝by，則下列何者成立？
+  stem: 已知 $a$，$b$ 為相異正數，$x$，$y$ 為異於 $0$ 之實數，設 $a^x = b^y$，則下列何者成立？
   options:
   - label: A
-    content: a＝b$^{\frac{y}{x}}$
+    content: $a = b^{\frac{y}{x}}$
   - label: B
-    content: $a^{2x}$＝$b^{2y}$
+    content: $a^{2x} = b^{2y}$
   - label: C
-    content: $a^{x＋1}$＝$b^{y＋1}$
+    content: $a^{x+1} = b^{y+1}$
   - label: D
-    content: a$^{\frac{x}{2}}$＝b$^{\frac{y}{2}}$
+    content: $a^{\frac{x}{2}} = b^{\frac{y}{2}}$
   - label: E
-    content: $a^{x2}$＝$b^{y2}$
+    content: $a^{x^2} = b^{y^2}$
   answer:
   - A
   - B
@@ -133,7 +133,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹上標遺失：ax=by 應為 a^x=b^y
+    fixed_by: agent
+    fix_note: （人工修正：補回題幹與選項 E 遺失的上標格式並補齊解析）
   difficulty: 2
+  explanation: 由 $a^x = b^y$ 兩邊同取 $\frac{1}{x}$ 次方得 $a = b^{\frac{y}{x}}$，(A) 成立；同取 $2$ 次方得 $a^{2x}=b^{2y}$，(B) 成立；同取 $\frac{1}{2}$ 次方（$a,b>0$）得 $a^{\frac{x}{2}}=b^{\frac{y}{2}}$，(D) 成立；(C)、(E) 一般不成立。
 - id: doc_108_新北_林口_數學_g10s1e1_s1_4
   section: 1
   number: 4
@@ -368,7 +371,11 @@ questions:
   number: 9
   type: fill
   page: 1
-  stem: 設a＞0，且a$^{\frac{1}{2}}$＋a$^{\frac{1}{2}}$＝4，求下列各式的值： (1) a＋$a^{－1}$＝＿＿＿＿。 (2) a$^{\frac{3}{2}}$＋a$^{\frac{3}{2}}$＝＿＿＿＿。
+  stem: '設 $a>0$，且 $a^{\frac{1}{2}} + a^{-\frac{1}{2}} = 4$，求下列各式的值：
+
+    (1) $a + a^{-1} =$＿＿＿＿。
+
+    (2) $a^{\frac{3}{2}} + a^{-\frac{3}{2}} =$＿＿＿＿。'
   answer:
   - (1) 14；(2) 52
   answer_status: verified
@@ -387,7 +394,12 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹負指數漏負號：應為 a^{1/2}+a^{-1/2}=4 與 a^{3/2}+a^{-3/2}
+    fixed_by: agent
+    fix_note: （人工修正：補回負指數遺失的負號並補齊解析）
   difficulty: 2
+  explanation: '(1) $a + a^{-1} = (a^{\frac{1}{2}} + a^{-\frac{1}{2}})^2 - 2 = 4^2 - 2 = 14$。
+
+    (2) $a^{\frac{3}{2}} + a^{-\frac{3}{2}} = (a^{\frac{1}{2}} + a^{-\frac{1}{2}})^3 - 3(a^{\frac{1}{2}} + a^{-\frac{1}{2}}) = 4^3 - 3(4) = 52$。'
 - id: doc_108_新北_林口_數學_g10s1e1_s2_10
   section: 2
   number: 10

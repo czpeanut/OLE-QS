@@ -161,7 +161,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 已知k為實數，方程式$x^{2}$＋y－2kx－2 ( k－1 )y＋$3k^{2}$－8k＋9＝0的圖形為一圓，則k的範圍為下列哪一個選項？
+  stem: 已知 $k$ 為實數，方程式 $x^2+y^2-2kx-2(k-1)y+3k^2-8k+9=0$ 的圖形為一圓，則 $k$ 的範圍為下列哪一個選項？
   options:
   - label: A
     content: －2＜k＜0
@@ -189,7 +189,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹漏字：y 漏掉平方（應為 y^2）
+    fixed_by: agent
+    fix_note: （人工修正：補齊題幹漏掉的 y^2 平方項並補齊解析）
   difficulty: 2
+  explanation: 判別式 $(-2k)^2 + [-2(k-1)]^2 - 4(3k^2-8k+9) > 0 \Rightarrow 4k^2 + 4k^2 - 8k + 4 - 12k^2 + 32k - 36 > 0 \Rightarrow -4k^2 + 24k - 32 > 0 \Rightarrow k^2 - 6k + 8 < 0 \Rightarrow 2 < k < 4$，選 (C)。
 - id: doc_108_屏東_屏東高中_數學_g10s1e2_s2_1
   section: 2
   number: 1
@@ -464,7 +467,7 @@ questions:
   number: 6
   type: fill
   page: 1
-  stem: 求滿足不等式 ($x^{2}$＋$y^{2}$－1) ( x＋y＝－2x－3 )＜0之所有解所形成之區域面積為aπ，a＝＿＿＿＿。
+  stem: 求滿足不等式 $(x^2+y^2-1)(x^2+y^2-2x-3) < 0$ 之所有解所形成之區域面積為 $a\pi$，$a =$＿＿＿＿。
   answer:
   - '3'
   answer_status: verified
@@ -483,7 +486,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹公式誤植：(x+y=-2x-3) 應為二次圓式
+    fixed_by: agent
+    fix_note: （人工修正：修正第二個圓方程式誤植並補齊解析）
   difficulty: 3
+  explanation: '兩圓分別為 $C_1: x^2+y^2=1$（圓心 $(0,0)$、半徑 $1$）與 $C_2: (x-1)^2+y^2=4$（圓心 $(1,0)$、半徑 $2$）。因連心線長 $1 = 2-1$，$C_1$ 內切於 $C_2$，不等式表在 $C_2$ 內且在 $C_1$ 外之區域，面積為 $4\pi - \pi = 3\pi$，故 $a=3$。'
 - id: doc_108_屏東_屏東高中_數學_g10s1e2_s3_7
   section: 3
   number: 7

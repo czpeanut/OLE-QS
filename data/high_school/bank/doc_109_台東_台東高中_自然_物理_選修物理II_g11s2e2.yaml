@@ -363,7 +363,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 兩個原靜止的物體，質量與所受的外力分別為$m_{1}$＝3kg，$_{1}$＝$i$＋6$j$ (N)；$m_{2}$＝2kg，$_{2}$＝4$i$＋14$j$ (N)，則此系統的質心加速度量值為多少m／$s^{2}$？
+  stem: 兩個原靜止的物體，質量與所受的外力分別為 $m_{1}＝3$ kg，$\vec{F}_{1}＝\hat{i}＋6\hat{j}$ (N)；$m_{2}＝2$ kg，$\vec{F}_{2}＝4\hat{i}＋14\hat{j}$ (N)，則此系統的質心加速度量值為多少 m／$s^{2}$？
   options:
   - label: A
     content: '0'
@@ -376,9 +376,9 @@ questions:
   - label: E
     content: '5'
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
+  - D
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S2-1-3
@@ -393,7 +393,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「_{1}」「_{2}」漏印力符號F
+    fixed_by: agent
+    fix_note: （人工修正：補全漏印力符號並更正答案為D與解析）
   difficulty: 2
+  explanation: 質心加速度 $\vec{a}_{cm}＝\frac{\vec{F}_{1}+\vec{F}_{2}}{m_{1}+m_{2}}＝\frac{(1+4)\hat{i}+(6+14)\hat{j}}{3+2}＝\hat{i}＋4\hat{j}$（m／$s^{2}$），量值 $|\vec{a}_{cm}|＝\sqrt{1^{2}+4^{2}}＝\sqrt{17}$ m／$s^{2}$。故選(D)。
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['D']
 - id: doc_109_台東_台東高中_自然_物理_選修物理II_g11s2e2_s1_11
   section: 1
   number: 11

@@ -573,9 +573,6 @@ questions:
     content: 基因突變
   - label: D
     content: 瓶頸效應
-  group_stem: '第1.～3.題為題組
-
-    有關演化的專有名詞如下：(甲)定向天擇(乙)分歧天擇(丙)穩定天擇(丁)瓶頭效應(戊)創始者效應，請根據以上名詞回答下列第1-3題：'
   assets:
   - key: s1_15_f1
     kind: figure
@@ -601,7 +598,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 無解答（answer為null）
+    fixed_by: agent
+    fix_note: （人工修正：移除誤掛之第1～3題組與附圖，補齊答案B與解析）
   difficulty: 2
+  explanation: 在只有10隻親代的小族群中，隨機交配取樣會導致等位基因頻率發生隨機波動，最終使A1固定(1)或消失(0)，此現象稱為遺傳漂變，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_112_桃園_內壢_自然_生物_選修生物V_g12s2e1_s1_16
   section: 1
   number: 16
@@ -2074,9 +2078,7 @@ questions:
   number: 48
   type: single
   page: 6
-  stem: '熱帶雨林中的動物中，哪種避難所或庇護的形式應最少見？
-
-    (二)請閱讀下文，並依此回答第49.～50.題'
+  stem: 熱帶雨林中的動物中，哪種避難所或庇護的形式應最少見？
   options:
   - label: A
     content: 善於奔跑躲避掠食者
@@ -2105,7 +2107,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹末段混入下一題組（第49-50題）之題組說明
+    fixed_by: agent
+    fix_note: （人工修正：移除題幹末段混入之後續題組說明並附解析）
   difficulty: 2
+  explanation: 熱帶雨林樹木高大茂密、藤蔓與林下植物繁多，不利於大型動物高速長距離奔跑，故「善於奔跑躲避掠食者」較少見（多見於草原），選(A)。
 - id: doc_112_桃園_內壢_自然_生物_選修生物V_g12s2e1_s3_49
   section: 3
   number: 49

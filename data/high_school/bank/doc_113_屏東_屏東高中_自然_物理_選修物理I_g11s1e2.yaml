@@ -632,7 +632,7 @@ questions:
   number: 15
   type: single
   page: 2
-  stem: 如圖所示，將質量m＝6 kg的木塊置於質量M＝14 kg、斜角為37°的光滑斜面上。若斜面以75 m／$s^{2}$的加速度向右運動。欲使物體不沿斜面滑動，且g＝10 m／$s^{2}$，則所受的正向力為多少N？
+  stem: 將質量 m＝6 kg 的木塊置於質量 M＝14 kg、斜角為 37° 的光滑斜面上。若斜面以 7.5 m／$s^{2}$ 的加速度向右運動，欲使物體不沿斜面滑動，且 g＝10 m／$s^{2}$，則木塊所受的正向力為多少 N？
   options:
   - label: A
     content: '30'
@@ -673,7 +673,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹加速度「75 m／s²」疑為「7.5 m／s²」之漏植小數點筆誤
+    fixed_by: agent
+    fix_note: （人工修正：修正加速度小數點筆誤（75→7.5）、移除附圖依賴並補全解析）
   difficulty: 3
+  explanation: 木塊隨斜面一起向右加速且不沿斜面滑動，故木塊鉛直方向合力為零：$N\cos 37°＝mg \Rightarrow N＝\frac{6\times 10}{0.8}＝75$ N（水平方向 $N\sin 37°＝75\times 0.6＝45$ N $= ma$，恰符合 $a＝7.5$ m／$s^{2}$）。故選(C)。
 - id: doc_113_屏東_屏東高中_自然_物理_選修物理I_g11s1e2_s1_16
   section: 1
   number: 16

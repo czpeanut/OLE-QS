@@ -901,7 +901,7 @@ questions:
     (2) 寫出混合氣體中各氣體的莫耳數。
 
     (3) 混合氣體完全燃燒時共放熱多少千焦？'
-  explanation: (1) 注意狀態須為25 ℃下的狀態，甲烷燃燒熱＝(二氧化碳生成熱＋2×水生成熱)－(甲烷生成熱)＝(－394)＋2×(－285)－(－75)＝－889 kJ／mol。 (2) 假設甲烷＝x mol、一氧化碳＝y mol、氫氣＝z mol。則x＋y＋z＝0.4 （8.96 L氣體在STP下相當於0.04 mol） 完全燃燒後可得到x＋y mol的二氧化碳、2x＋z mol的水，故x＋y＝0.3、2x＋z＝0.3。可解得x＝z＝0.1、y＝0.2。 (3) 甲烷燃燒熱＝－889 kJ／mol、一氧化碳燃燒熱＝－280 kJ／mol、氫氣燃燒熱＝－285 kJ／mol。故燃燒放熱＝0.1×889＋0.2×280＋0.1×285＝173.4 kJ。
+  explanation: (1) 甲烷燃燒熱 $= (-394) + 2\times(-285) - (-75) = -889\text{ kJ/mol}$。(2) 8.96 L 氣體在 STP 下為 $\frac{8.96}{22.4} = 0.4\text{ mol}$。設甲烷 $x$、一氧化碳 $y$、氫氣 $z$，則 $x+y+z=0.4$、$x+y=0.3$、$2x+z=0.3$，解得 $x=z=0.1\text{ mol}$、$y=0.2\text{ mol}$。(3) 總放熱 $= 0.1\times 889 + 0.2\times 280 + 0.1\times 285 = 173.4\text{ kJ}$。
   tags:
     unit:
       code: CH-S1-1-3
@@ -916,7 +916,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 解析(2)「8.96 L相當於0.04 mol」筆誤，應為0.4 mol
+    fixed_by: agent
+    fix_note: （人工修正：更正解析0.04 mol筆誤為0.4 mol並補齊答案）
   difficulty: 4
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) CH4(g)＋2O2(g) → CO2(g)＋2H2O(l) ΔH＝－889 kJ/mol；(2) CH4 0.1 mol、CO 0.2 mol、H2 0.1 mol；(3) 173.4 kJ
 - id: doc_112_台南_台南二中_自然_化學_選修化學I_g11s1e1_s3_27
   section: 3
   number: 27

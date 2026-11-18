@@ -66,15 +66,15 @@ questions:
   stem: 設ψ＝$\frac{1+\sqrt{5}}{2}$，下列敘述哪些正確？
   options:
   - label: A
-    content: 一個矩形如果截掉以寬為邊長的正方形後，所剩的矩形與原矩形相似，則此原矩形的長寬比為ψ
+    content: 一個矩形如果截掉以寬為邊長的正方形後，所剩的矩形與原矩形相似，則此原矩形的長寬比為 $\psi$
   - label: B
-    content: 將一條線段分成兩段不等長的線段，如果「較長線段與較短線段的比值」等於「整條線段與較長線段的比值」，則此比值為ψ
+    content: 將一條線段分成兩段不等長的線段，如果「較長線段與較短線段的比值」等於「整條線段與較長線段的比值」，則此比值為 $\psi$
   - label: C
-    content: 如果a，b，c三個正數依序成等比，且滿足a＝b＋c，則公比為ψ
+    content: 如果 $a, b, c$ 三個正數依序成等比，且滿足 $a=b+c$，則公比為 $\psi$
   - label: D
-    content: 等腰三角形△ABC，D在$\overline{AB}$上，若頂角∠BAC＝360°，且$\overline{BC}$＝$\overline{CD}$＝1，則$\overline{BD}$＝ψ
+    content: 等腰三角形 $\triangle ABC$，$D$ 在 $\overline{AB}$ 上，若頂角 $\angle BAC = 36^\circ$，且 $\overline{BC}=\overline{CD}=1$，則 $\overline{BD}=\psi$
   - label: E
-    content: ψ＝1＋$\frac{1}{\phi}$＝1＋$\frac{1}{1+\frac{1}{\phi}}$
+    content: $\psi = 1 + \frac{1}{\psi} = 1 + \frac{1}{1+\frac{1}{\psi}}$
   answer:
   - A
   - B
@@ -95,7 +95,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D「360°」應為「36°」誤植，選項E符號「\phi」與題幹「\psi」不一致
+    fixed_by: agent
+    fix_note: （人工修正：修正選項 D 角度誤植「360°」為「36°」與選項 E 符號一致性，補齊解析）
   difficulty: 2
+  explanation: "(A) ○：$\frac{L}{W}=\\frac{W}{L-W} \\Rightarrow (\\frac{L}{W})^2 - \\frac{L}{W} - 1 = 0 \\Rightarrow \\frac{L}{W}=\\psi$。\n(B) ○：黃金分割定義。\n(C) ×：設公比 $r>0$，由 $a=b+c$ 得 $1 = r + r^2$，解得 $r = \\frac{\\sqrt{5}-1}{2} = \\frac{1}{\\psi}$。\n(D) ×：$\\triangle BCD$ 亦為頂角 $36^\\circ$ 的等腰三角形，故 $\\overline{BD} = \\frac{1}{\\psi}$。\n(E) ○：由 $\\psi^2 = \\psi + 1$ 兩邊同除 $\\psi$ 得 $\\psi = 1 + \\frac{1}{\\psi}$。"
 - id: doc_109_台南_台南二中_數學_數B_g11s2e1_s1_3
   section: 1
   number: 3

@@ -399,6 +399,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末有亂碼字元
+    fixed_by: agent
+    fix_note: （人工修正：移除多餘附圖依賴）
   difficulty: 3
 - id: doc_111_桃園_武陵_數學_g10s1e1_s3_2
   section: 3
@@ -407,9 +409,9 @@ questions:
   page: 2
   stem: 影印店中常用的最大影印紙是A3，將長邊對折裁成兩半後就是家中印表機的A4影印紙。用相同方法把A4再裁一半，就是A5以此類推。 A.(計算題)已知A3，A4，…這類型號的影印紙的長寬比例，對半裁切後依然維持相同的長寬比。請問長與寬的比值必須要是多少？ B.(計算題)A5紙的寬度約為14.85公分，估計A3紙的長度約為多少公分 [$\sqrt{2}$ ≈ 1.414 , $\sqrt{3}$ ≈ 1.732 , $\frac{\sqrt{5}+1}{2}$ ≈ 1.618](計算時使用題目給的數值位數，取答案時四捨五入至3位有效數字)
   answer:
-  - A. 4% B. 6%
-  answer_status: verified
-  answer_source: answer_key
+  - A. $\sqrt{2}$；B. $42.0$ 公分
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-1-1-2
@@ -424,4 +426,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案與題目不符（答案欄為「A. 4% B. 6%」）
+    fixed_by: agent
+    fix_note: （人工修正：更正與題目不符的答案並補齊解析）
   difficulty: 2
+  explanation: 'A. 設長為 $L$、寬為 $W$，對半裁切後長為 $W$、寬為 $\frac{L}{2}$，由 $\frac{L}{W} = \frac{W}{L/2}$ 得 $L^2 = 2W^2 \Rightarrow \frac{L}{W} = \sqrt{2}$。
+
+    B. A5 紙長約 $14.85\times 1.414 \approx 21.0$ 公分，A3 紙長為 A5 紙長的 2 倍，即 $2 \times 14.85 \times 1.414 \approx 42.0$ 公分。'
+  review_note: 原答案卷答案 ['A. 4% B. 6%']，執行 agent 修正為 ['A. $\\sqrt{2}$；B. $42.0$ 公分']

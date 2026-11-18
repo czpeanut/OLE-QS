@@ -630,9 +630,9 @@ questions:
   - label: E
     content: 物體運動的最大速率為40π cm／s
   answer:
-  - B
-  answer_status: verified
-  answer_source: answer_key
+  - D
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S1-5-2
@@ -647,7 +647,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題庫原標答案B與正確解答D不符（平衡點加速度應為0且速率最大），但不影響分類
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案為D並補全解析）
   difficulty: 3
+  explanation: 彈力常數 $k＝2$ N／cm＝$200$ N／m，質量 $m＝2$ kg，週期 $T＝2\pi\sqrt{\frac{m}{k}}＝2\pi\sqrt{\frac{2}{200}}＝\frac{\pi}{5}$ 秒。從端點釋放到平衡點的最短時間為 $\frac{T}{4}＝\frac{\pi}{20}$ 秒。故選(D)。
+  review_note: 原答案卷答案 ['B']，執行 agent 修正為 ['D']
 - id: doc_109_高雄_道明_自然_物理_選修物理I_g11s1e3_s1_15
   section: 1
   number: 15

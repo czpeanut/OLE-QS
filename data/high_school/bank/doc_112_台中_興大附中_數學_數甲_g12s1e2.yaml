@@ -572,7 +572,7 @@ questions:
   number: 8
   type: fill
   page: 3
-  stem: 求極限$\frac{( 1^{2}+2^{2}+\ldots \ldots +n^{2} ) ( 1^{5}+2^{5}+\ldots \ldots +n^{5} )}{( 1^{3}+2^{3}+\ldots \ldots +n^{3} ) ( 1^{4}+2^{4}+\ldots \ldots +n^{4} )}$＝＿＿＿＿。
+  stem: 求極限 $\lim_{n\to\infty} \frac{(1^2+2^2+\cdots+n^2)(1^5+2^5+\cdots+n^5)}{(1^3+2^3+\cdots+n^3)(1^4+2^4+\cdots+n^4)} =$＿＿＿＿。
   answer:
   - $\frac{10}{9}$
   answer_status: verified
@@ -591,4 +591,7 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹漏印極限符號 lim
+    fixed_by: agent
+    fix_note: （人工修正：補齊極限符號 lim_{n→∞} 並補齊解析）
   difficulty: 3
+  explanation: 利用冪次和領導項 $\sum_{k=1}^n k^p \sim \frac{n^{p+1}}{p+1}$，原極限 $= \frac{\frac{1}{3}\cdot\frac{1}{6}}{\frac{1}{4}\cdot\frac{1}{5}} = \frac{20}{18} = \frac{10}{9}$。

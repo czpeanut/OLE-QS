@@ -171,7 +171,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 湖泊中的溶氧量是量度水體品質的一個重要指標，水質愈純淨、溶氧愈達飽和，愈適合多種水生動物生存。已知某湖泊中的溶氧量為80 mg／L，假設湖水密度為10 g／$cm^{3}$，則該湖泊所含氧氣的體積莫耳濃度為多少M？
+  stem: 湖泊中的溶氧量是量度水體品質的一個重要指標，水質愈純淨、溶氧愈達飽和，愈適合多種水生動物生存。已知某湖泊中的溶氧量為 80 mg／L，假設湖水密度為 1.0 g／$cm^{3}$，則該湖泊所含氧氣的體積莫耳濃度為多少 M？
   options:
   - label: A
     content: '0.00001'
@@ -203,6 +203,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹誤植「密度為10 g/cm3」（應為1.0 g/cm3），但不影響體積莫耳濃度計算
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹湖水密度為1.0 g/cm3）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_g10s1e3_s1_6
   section: 1
@@ -241,6 +243,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 延續第5題，解析以密度1.0 g/cm3計算得0.008%
+    fixed_by: agent
+    fix_note: （人工修正：確認依第100題修正後題意與解答皆正確）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_g10s1e3_s1_7
   section: 1
@@ -454,7 +458,7 @@ questions:
   number: 11
   type: single
   page: 1
-  stem: 現有某酸水溶液濃度50％，若欲加水配製成10％、密度1.1g／$cm^{2}$的溶液1.0L，則需加入蒸餾水若干g？
+  stem: 現有某酸水溶液濃度 50％，若欲加水配製成 10％、密度 1.1 g／$cm^{3}$ 的溶液 1.0 L，則需加入蒸餾水若干 g？
   options:
   - label: A
     content: '660'
@@ -470,7 +474,7 @@ questions:
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: 稀釋後溶液體積＝1000 mL，重量＝1100 g。故10％的水溶液中共有110 g的溶質、990 g的溶劑。故在原本的50％溶液中，需取220 g的濃溶液（當中有100 g溶質、100 g溶劑），再加入880 g的水。故選(E)。
+  explanation: 稀釋後溶液體積＝1000 mL，重量＝1100 g。故 10％ 的水溶液中共有 110 g 的溶質、990 g 的溶劑。在原本的 50％ 溶液中，需取 220 g 的濃溶液（當中有 110 g 溶質、110 g 溶劑），再加入 $1100 - 220 = 880\text{ g}$ 的水。故選(E)。
   tags:
     unit:
       code: CH-1-3-2
@@ -485,6 +489,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹密度單位誤植為「g/cm2」；解析取220g含100g溶質筆誤（應為110g）
+    fixed_by: agent
+    fix_note: （人工修正：修正密度單位為g/cm3並更正解析中之溶質質量筆誤）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_g10s1e3_s1_12
   section: 1
@@ -695,7 +701,7 @@ questions:
   number: 17
   type: single
   page: 2
-  stem: 有甲和乙兩杯鹽酸溶液，已知甲杯的pH＝a，乙杯的pH＝a＋1。下列有關甲和乙兩杯鹽酸溶液的推論何者正確？
+  stem: 有甲和乙兩杯鹽酸溶液，已知甲杯的 pH＝a，乙杯的 pH＝a＋1。推論：①甲杯中的氫離子濃度是乙杯中的 10 倍。 ②甲杯中鹽酸的濃度是乙杯的 10 倍。 ③中和等量的 NaOH 時，所需甲、乙兩鹽酸的體積關係為 $V_{甲} = \frac{1}{10}V_{乙}$。 ④乙杯中的氫氧離子濃度是甲杯中的 10 倍。下列有關甲和乙兩杯鹽酸溶液的推論何者正確？
   options:
   - label: A
     content: ①③
@@ -706,7 +712,7 @@ questions:
   - label: D
     content: ①②③④
   - label: E
-    content: ①④ 推論：①甲杯中的氫離子濃度是乙杯中的10倍。 ②甲杯中鹽酸的濃度是乙杯的10倍。 ③中和等量的NaOH時，所需甲乙兩鹽酸的體積()關係為：10／Vz。 ④乙杯中的氫氧離子濃度是甲杯中的10倍
+    content: ①④
   answer:
   - D
   answer_status: verified
@@ -726,6 +732,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 推論③原卷OCR有亂碼「10／Vz」
+    fixed_by: agent
+    fix_note: （人工修正：將推論內容移回題幹並修正第③點OCR亂碼）
   difficulty: 2
 - id: doc_113_台南_台南二中_自然_化學_g10s1e3_s1_18
   section: 1
@@ -1092,7 +1100,7 @@ questions:
   number: 26
   type: multiple
   page: 3
-  stem: 從實驗室取出一瓶濃硫酸（$H_{2}SO_{4}$），在瓶外的標籤上有下列的資訊： ①重量百分率濃度為98％、②密度為1.84g／$cm^{2}$、③分子量為98。 若要配製密度為1.4g／$cm^{2}$、體積莫耳濃度為4.6 M的硫酸溶液400毫升，則哪些敘述正確？
+  stem: 從實驗室取出一瓶濃硫酸（$H_{2}SO_{4}$），在瓶外的標籤上有下列的資訊： ①重量百分率濃度為 98％、②密度為 1.84 g／$cm^{3}$、③分子量為 98。 若要配製密度為 1.4 g／$cm^{3}$、體積莫耳濃度為 4.6 M 的硫酸溶液 400 毫升，則哪些敘述正確？
   options:
   - label: A
     content: 原來瓶中濃硫酸濃度為18.4 M
@@ -1110,7 +1118,7 @@ questions:
   - D
   answer_status: verified
   answer_source: answer_key
-  explanation: (A)可假設原溶液體積1 L，則重量＝1840 g，當中有1840×0.98 g的硫酸，相當於$\frac{1840\times 0.98}{98}$ mol，即18.4 mol，又溶液為一公升，故體積莫耳濃度為18.4 M；$(B)_{1}$％＝10000 ppm，故正確；(C)稀釋後：400 mL、4.6 M、溶質莫耳數＝1.84 mol，故需取18.4 M的硫酸100 mL，但配製方式有錯，應該要先將濃硫酸加入些許蒸餾水後再補水至400 mL；(D)正確操作方法；(E)稀釋後：400 mL、密度＝1.4 g／$cm^{3}$，故可得知溶液重量＝60 g，又溶質共1.84 mol，故重量百分濃度＝$\frac{1.84\times 98}{560}$×100％＝32.2％。故選(A)(B)(D)。
+  explanation: (A)假設原溶液體積 1 L，重量＝1840 g，含 $1840\times 0.98\text{ g}$ 硫酸，相當於 $\frac{1840\times 0.98}{98} = 18.4\text{ mol}$，濃度為 18.4 M，正確；(B) 1％＝10000 ppm，98％＝980000 ppm，正確；(C)應將 100 mL 濃硫酸緩緩加入少量蒸餾水中冷卻後，再加水定容至 400 mL，不可直接加 300 g 水；(D)稀釋濃硫酸須將酸緩緩加入水中，正確；(E)稀釋後溶液總重 $= 400\times 1.4 = 560\text{ g}$，重量百分濃度 $= \frac{1.84\times 98}{560}\times 100\% = 32.2\%$。故選(A)(B)(D)。
   tags:
     unit:
       code: CH-1-3-2
@@ -1125,6 +1133,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹密度單位誤植為「g/cm2」；解析中(E)溶液重量誤植為「60 g」（應為560 g）
+    fixed_by: agent
+    fix_note: （人工修正：修正密度單位為g/cm3並更正解析溶液重量筆誤為560 g）
   difficulty: 3
 - id: doc_113_台南_台南二中_自然_化學_g10s1e3_s2_27
   section: 2

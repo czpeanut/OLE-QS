@@ -656,9 +656,11 @@ questions:
   - label: B
     content: '1'
   - label: C
-    content: $\sqrt{ 2 }$
+    content: $\sqrt{2}$
   - label: D
-    content: $\frac{1}{ \sqrt{ 2 } }$ (B) 2
+    content: $\frac{1}{\sqrt{2}}$
+  - label: E
+    content: '2'
   answer:
   - A
   answer_status: verified
@@ -677,7 +679,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D與B排版合併
+    fixed_by: agent
+    fix_note: （人工修正：拆分合併選項並補全解析）
   difficulty: 4
+  explanation: 中間時刻速度為平均速度 $v_{1}＝\frac{v_{0}+v}{2}$，位移中點速度為方均根速度 $v_{2}＝\sqrt{\frac{v_{0}^{2}+v^{2}}{2}}$。由 $\frac{v_{1}}{v_{2}}＝\frac{1}{\sqrt{2}}$，平方化簡得 $\frac{(v_{0}+v)^{2}}{4}＝\frac{v_{0}^{2}+v^{2}}{4} \Rightarrow 2v_{0}v＝0$，因末速不為零，故初速 $v_{0}＝0$。故選(A)。
 - id: doc_110_高雄_高雄女中_自然_物理_選修物理I_g11s1e1_s1_16
   section: 1
   number: 16

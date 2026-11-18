@@ -31,7 +31,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 定溫下，A(g)＋B(g)＝2C(g)＋2D(g)的反應達到平互衡時，有關此時平衡狀態的敘述，下列何者<u>錯誤</u>？
+  stem: 定溫下，A(g)＋B(g) $\rightleftharpoons$ 2C(g)＋2D(g) 的反應達到平衡時，有關此時平衡狀態的敘述，下列何者<u>錯誤</u>？
   options:
   - label: A
     content: A的消耗速率等於A的生成速率
@@ -47,7 +47,7 @@ questions:
   - C
   answer_status: verified
   answer_source: answer_key
-  explanation: 布洛酸，代表在溶液中會丟出氫離子。以水而言，丟出氫離子的產物為$OH^{-}$，故選(E)。
+  explanation: 平衡時各物種濃度維持定值（D正確），正逆反應速率相等（A、B正確），且平衡常數 $K_{c} = \frac{[C]^{2}[D]^{2}}{[A][B]}$ 為定值，開根號亦為常數（E正確）；但各物種平衡濃度比不一定等於反應係數比 1：1：2：2（C錯誤）。故選(C)。
   tags:
     unit:
       code: CH-S3-1-1
@@ -62,6 +62,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「平互衡」為錯字，且解析欄位疑誤植他題內容，但不影響本題判斷
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹平衡錯字並更正誤植之他題解析）
   difficulty: 2
 - id: doc_110_台南_台南二中_自然_化學_選修化學III_g12s1e1_s1_3
   section: 1
@@ -225,7 +227,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 在某溫度時，$PbI_{2}$(s)的$K_{甲}$為2.5×$10^{－9}$，在此溫度下，取2×$10^{－3}$ M的NaI溶液，與同體積未知濃度的Pb($NO_{3}$)$_{2}$溶液充分混合，若欲使之生成$PbI_{2}$(s)沉澱，則此Pb($NO_{3}$)$_{2}$溶液的濃度至少應高於多少M？
+  stem: 在某溫度時，$PbI_{2}$(s)的$K_{sp}$為2.5×$10^{－9}$，在此溫度下，取2×$10^{－3}$ M的NaI溶液，與同體積未知濃度的Pb($NO_{3}$)$_{2}$溶液充分混合，若欲使之生成$PbI_{2}$(s)沉澱，則此Pb($NO_{3}$)$_{2}$溶液的濃度至少應高於多少M？
   options:
   - label: A
     content: 6.25×$10^{－6}$
@@ -255,7 +257,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「$K_{甲}$」疑為「$K_{sp}$」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹Ksp誤植並補齊解析）
   difficulty: 3
+  explanation: 等體積混合後 $[I^{-}] = 1.0\times 10^{-3}\text{ M}$。欲產生沉澱需 $[Pb^{2+}][I^{-}]^{2} > K_{sp}$，即 $[Pb^{2+}] > \frac{2.5\times 10^{-9}}{(10^{-3})^{2}} = 2.5\times 10^{-3}\text{ M}$。因混合前體積為一半，原 $Pb(NO_{3})_{2}$ 濃度至少應高於 $5.0\times 10^{-3}\text{ M}$。故選(B)。
 - id: doc_110_台南_台南二中_自然_化學_選修化學III_g12s1e1_s1_13
   section: 1
   number: 13

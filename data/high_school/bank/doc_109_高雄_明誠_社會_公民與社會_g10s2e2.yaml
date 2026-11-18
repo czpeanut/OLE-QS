@@ -58,7 +58,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 臺灣每逢選舉常會出現知名人士為候選人站臺，以獲得選民的支持。會出垷這種情況，主要是因民意具有下列何種現象？
+  stem: 臺灣每逢選舉常會出現知名人士為候選人站臺，以獲得選民的支持。會出現這種情況，主要是因民意具有下列何種現象？
   options:
   - label: A
     content: 易受到文化背景的影響
@@ -79,6 +79,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「出垷」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「出現」，補齊解答與解析）
+  explanation: 知名人士在特定領域或社群具高聲望與影響力，即「意見領袖」，其公開表態常能引導選民態度，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s1_3
   section: 1
   number: 3
@@ -87,7 +94,7 @@ questions:
   stem: 「複數選區相對多數制」意指一個選舉區可選出2位以上的當選者，選民投一票給屬意的候選人，最終依應選的席次數目，由票最高的前幾名候選人依序當選。當前我國公職人員選舉中，哪一項為複數選區相對多數制？
   options:
   - label: A
-    content: 地方行首長
+    content: 地方行政首長
   - label: B
     content: 高雄市市議員
   - label: C
@@ -105,6 +112,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項A有漏字「地方行首長」
+    fixed_by: agent
+    fix_note: （人工修正：修補選項A漏字「地方行政首長」，補齊解答與解析）
+  explanation: 我國地方民意代表（如直轄市、縣市議員）選舉採複數選區相對多數決制，故選(B)。(A)(C)採單一選區相對多數決制；(D)監察委員由總統提名、經立法院同意任命。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s1_4
   section: 1
   number: 4
@@ -183,7 +197,7 @@ questions:
   number: 6
   type: single
   page: 1
-  stem: 學者分析，選舉制度往往會影響政黨與候選人競爭的方式，通常在單一選區制度之下政黨之間的競爭較明顯，而容易產生政黨內部競爭的則是複制選區制度。請問：形成此種競爭差異的主要因素為何？
+  stem: 學者分析，選舉制度往往會影響政黨與候選人競爭的方式，通常在單一選區制度之下政黨之間的競爭較明顯，而容易產生政黨內部競爭的則是複數選區制度。請問：形成此種競爭差異的主要因素為何？
   options:
   - label: A
     content: 各選區應當選名額
@@ -204,6 +218,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「複制選區」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「複數選區制度」，補齊解答與解析）
+  explanation: 單一選區每區僅選出1人，政黨通常只提名1位候選人，故呈現政黨間競爭；複數選區每區應當選名額為2人以上，政黨為爭取多席常提名多位候選人，導致同黨同志在同選區相互競爭，故主因為「各選區應當選名額」，選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s1_7
   section: 1
   number: 7
@@ -284,7 +305,7 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 馬來西亞自1957年獨立以來，長期處於一黨專政、黨國不分的政治結構之中，2018年國會下議院選舉後，希望聯盟終結國陣（及其前身「聯盟」）長達並國世紀的政權。根據杜佛傑法則，在2018年之前馬來西亞的下議院選舉比較可能採取何種選舉制度？
+  stem: 馬來西亞自1957年獨立以來，長期處於一黨專政、黨國不分的政治結構之中，2018年國會下議院選舉後，希望聯盟終結國陣（及其前身「聯盟」）長達半個世紀的政權。根據杜佛傑法則，在2018年之前馬來西亞的下議院選舉比較可能採取何種選舉制度？
   options:
   - label: A
     content: 比例代表制
@@ -305,12 +326,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「並國世紀」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「半個世紀」，補齊解答與解析）
+  explanation: 依杜佛傑法則，單一選區相對多數決制具有機械效應與心理效應，有利於大黨並容易形成兩黨制或一黨優勢體系，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s1_11
   section: 1
   number: 11
   type: single
   page: 2
-  stem: 2018年支持反同性婚姻公投一案獲得765萬同意票，公投結果通過；但立法院仍依《司法院釋字第748號解釋施行法》，仿2019年通過亞洲第一部「同婚法」，下列有關敘述何者正確？
+  stem: 2018年支持反同性婚姻公投一案獲得765萬同意票，公投結果通過；但立法院仍依《司法院釋字第748號解釋施行法》，於2019年通過亞洲第一部「同婚法」，下列有關敘述何者正確？
   options:
   - label: A
     content: 公投結果等同法律位階，而大法官釋憲的結果等同《憲法》位階，因此，釋憲的位階高於公投結果的位階
@@ -331,6 +359,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹有錯字「仿2019年」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「於2019年」，補齊解答與解析）
+  explanation: 大法官解釋憲法（釋字第748號）具有相當於憲法之效力，高於公民投票通過之法律或重大政策位階，(A)正確。(B)(C)(D)公投結果仍須受憲法拘束，不得違背憲法保障基本人權之意旨。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s1_12
   section: 1
   number: 12
@@ -436,7 +471,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 2016美濃大地震造成臺南的重大傷亡，而受災戶房屋半倒、全倒者所在多雲，導致居民無家可歸11慶幸的是我國在急難處理上已有相關的配套，受災戶在緊急狀況下可以接受政府哪項社會安全制度的支援？
+  stem: 2016美濃大地震造成臺南的重大傷亡，而受災戶房屋半倒、全倒者所在多有，導致居民無家可歸。慶幸的是我國在急難處理上已有相關的配套，受災戶在緊急狀況下可以接受政府哪項社會安全制度的支援？
   options:
   - label: A
     content: 失業補助
@@ -457,12 +492,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「所在多雲」、「11慶幸」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「所在多有」與亂碼「11」，補齊解答與解析）
+  explanation: 針對突發災害或急難事故提供的災害救助與急難救助，屬於社會安全制度中的「社會救助」，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s1_17
   section: 1
   number: 17
   type: single
   page: 2
-  stem: 2008年，我國國民年金保險正式上路，象徵我國正式跨入全民有保險的新里程碑。請問：在政府規劃完敕的社畣保險制度下，下列相關敘述何者最為正確？
+  stem: 2008年，我國國民年金保險正式上路，象徵我國正式跨入全民有保險的新里程碑。請問：在政府規劃完整的社會保險制度下，下列相關敘述何者最為正確？
   options:
   - label: A
     content: 社會保險透過國家立法，採取強制投保的方式
@@ -483,6 +525,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「完敕」、「社畣」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「完整的社會保險」，補齊解答與解析）
+  explanation: 社會保險由國家立法強制納保以分散社會風險（A）。(B)社會保險具所得重分配與自助互助精神，並非繳愈多領愈多；(C)保費由個人、雇主與政府共同分攤，財源相對穩定；(D)政府處理貧窮的最後防線是「社會救助」。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s1_18
   section: 1
   number: 18
@@ -600,7 +649,7 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: 社會學家亞莉．霍希爾德（Arlie Hochschild）在第二輪班（The Second Shift）一書中指出：「已婚女性如果就對，她不僅白天要外出工作，晚上回家後還得繼續第二輪班的工作操持家務，對許多職業婦女而言，沒有下班這回事，因為下班後仍要上『做家務』的班。」據此，「第一輪班工作」具有何種特性？
+  stem: 社會學家亞莉．霍希爾德（Arlie Hochschild）在第二輪班（The Second Shift）一書中指出：「已婚女性如果就業，她不僅白天要外出工作，晚上回家後還得繼續第二輪班的工作操持家務，對許多職業婦女而言，沒有下班這回事，因為下班後仍要上『做家務』的班。」據此，「第一輪班工作」具有何種特性？
   options:
   - label: A
     content: 屬於婦女特有的責任
@@ -621,12 +670,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「如果就對」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「如果就業」，補齊解答與解析）
+  explanation: 「第一輪班」指白天外出從事有酬的市場勞動，發生在「公領域」中，故選(B)。(A)非婦女特有；(C)家務勞動為第二輪班；(D)「具市場交易價值」亦可描述有酬工作，但相較下社會學課綱強調公私領域區分，(B)為標準敘述。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s1_23
   section: 1
   number: 23
   type: single
   page: 3
-  stem: 市場經濟的男為有償的服務，家務勞動者為無償的服務，然而家務勞動可促成整個社會的經濟發展，為國家培育未來的勞動力，因此家務勞動又稱為？
+  stem: 市場經濟的勞動為有償的服務，家務勞動者為無償的服務，然而家務勞動可促成整個社會的經濟發展，為國家培育未來的勞動力，因此家務勞動又稱為？
   options:
   - label: A
     content: 再生產勞動
@@ -647,6 +703,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「男為有償」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「勞動為有償」，補齊解答與解析）
+  explanation: 家務勞動照顧家庭成員並培育未來勞動力，維繫勞動力的再生產，故稱為「再生產勞動」，選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s1_24
   section: 1
   number: 24
@@ -840,7 +903,7 @@ questions:
   - label: B
     content: 社會安全制度是一種保護民眾減少生活風險的機制
   - label: C
-    content: 直接由㣔政機關處理，不需由國會機關審議
+    content: 直接由行政機關處理，不需由國會機關審議
   - label: D
     content: 法令的修正，不需相關的民間團體參與
   group_stem: (一)人的一生都不可避免會遭遇社會風險，為了民眾生活的穩定，同時降低國家施政與經濟發展的負擔，社會安全制度醞 釀而生。到了二十世紀，社會安全制度的發展，從解決「貧窮」的問題，已被視為維持人類生存的基本權利，因此各個 國家以自己的文化規劃多種適當的社會安全制度以照顧人民的基本生活。（10分）
@@ -855,6 +918,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C有錯字「㣔政機關」
+    fixed_by: agent
+    fix_note: （人工修正：修補選項C錯字「行政機關」，補齊解答與解析）
+  explanation: 社會安全制度旨在透過社會保險、社會救助與社會津貼等機制，分攤個人與家庭面臨的疾病、失業、老年等生活風險，保障基本生活，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_明誠_社會_公民與社會_g10s2e2_s3_32
   section: 3
   number: 32

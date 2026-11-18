@@ -308,19 +308,16 @@ questions:
   number: 8
   type: single
   page: 2
-  stem: '假設某種生物的DNA中有五種鹼基，其遺傳密碼子由四個鹼基決定，則該種生物最多能有多少種不同的遺傳密碼子？
-
-    ＊下圖為遺傳工程某步驟示意圖，根據此圖，回答9.、10.題：'
+  stem: 假設某種生物的DNA中有五種鹼基，其遺傳密碼子由四個鹼基決定，則該種生物最多能有多少種不同的遺傳密碼子？
   options:
   - label: A
-    content: $5_{4}$
+    content: $5^{4}$
   - label: B
-    content: $4_{5}$
+    content: $4^{5}$
   - label: C
-    content: $3_{4}$
+    content: $3^{4}$
   - label: D
-    content: $3_{5}$
-  group_stem: ＊圖一為細菌長期在含$^{14}$N或$^{15}$N培養液生長後，純化DNA並離心分層的情況。若某生將長期在含$^{15}$N培養液生長的細菌X，移至含有$^{14}$N培養液中培養，收取第一次及第二次細胞分裂後的細菌，分別進行DNA萃取及離心。根據描述，回答3.～5.題：
+    content: $3^{5}$
   assets:
   - key: s1_8_f1
     kind: figure
@@ -347,7 +344,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤帶入第3-5題group_stem，題幹末端夾帶第9-10題引言，選項次方誤植為下標
+    fixed_by: agent
+    fix_note: （人工修正：清除誤帶入之前題組與後續引言、修正選項次方格式並補齊答案與解析）
   difficulty: 2
+  explanation: 密碼子的4個位置各有5種鹼基可選擇，故最多有 $5 \times 5 \times 5 \times 5 = 5^4$ 種不同的遺傳密碼子，選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s1_9
   section: 1
   number: 9
@@ -567,9 +571,7 @@ questions:
   number: 16
   type: single
   page: 3
-  stem: '人體皮膚若大量暴露在紫外光時，皮膚細胞內的DNA最可能出現下列何種現象？
-
-    ＊下圖為某人之核型分析圖，圖中數字代表染色體編號，根據此圖，回答17.、18.題：'
+  stem: 人體皮膚若大量暴露在紫外光時，皮膚細胞內的DNA最可能出現下列何種現象？
   options:
   - label: A
     content: 含氮鹼基A與A發生鏈結
@@ -579,7 +581,6 @@ questions:
     content: 含氮鹼基C與C發生鍵結
   - label: D
     content: 基因發生框移突變
-  group_stem: ＊色胺酸為大腸桿菌維持生命現象重要的胺基酸。圖五為色胺酸操縱組模式示意圖，根據此圖，回答14.～15.題：
   assets:
   - key: s1_16_f1
     kind: figure
@@ -605,7 +606,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤帶入第14-15題group_stem，且題幹末端夾帶第17-18題引言
+    fixed_by: agent
+    fix_note: （人工修正：清除誤帶入之前題組與後續題幹文字並補齊答案與解析）
   difficulty: 2
+  explanation: 紫外光照射會使DNA同一股上相鄰的胸腺嘧啶（T）之間形成共價鍵結（胸腺嘧啶雙體），阻礙DNA複製與轉錄，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s1_19
   section: 1
   number: 19
@@ -693,10 +701,10 @@ questions:
   number: 21
   type: multiple
   page: 3
-  stem: 某段變股DNA分子具有30個腺嘌呤
+  stem: 某段雙股DNA分子具有30個腺嘌呤（A）與100個磷酸基，已知DNA轉一個完整的螺旋長度為3.4 nm（含10個鹼基對），下列關於此段DNA的敘述，哪些正確？（應選2項）
   options:
   - label: A
-    content: 與上100個磷酸基，已知DNA轉一個完整的螺旋長度為34 nm，下列關於此段DNA的敘述，哪些正確？（應選2項） (A)內含100個核糖
+    content: 內含100個核糖
   - label: B
     content: 內含30個胸腺嘧啶（T）
   - label: C
@@ -719,7 +727,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「雙股」誤植為「變股」，且後半句被截斷併入選項A
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字與斷句錯位並補齊答案與解析）
   difficulty: 3
+  explanation: (A)DNA含去氧核糖而非核糖；(B)根據鹼基互補配對，A＝T＝30，正確；(C)100個磷酸基代表100個核苷酸（50個鹼基對），G＝C＝(100－60)/2＝20；(D)50個鹼基對÷10個鹼基對/圈＝5圈，正確；(E)長度＝5×3.4＝17 nm。故選(B)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - D
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s2_22
   section: 2
   number: 22
@@ -916,7 +932,7 @@ questions:
   - label: D
     content: 多倍體在植物中不常見，但在動物常見
   - label: E
-    content: 生殖細胞若發生倒拉可能導致不孕
+    content: 生殖細胞若發生倒位可能導致不孕
   assets:
   - key: s2_27_f1
     kind: figure
@@ -952,7 +968,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項E「倒位」誤植為「倒拉」
+    fixed_by: agent
+    fix_note: （人工修正：修正選項E錯字「倒拉」為「倒位」並補齊答案與解析）
   difficulty: 3
+  explanation: (A)自然界中存在單倍體動物，如雄蜂、雄蟻；(B)正確；(C)秋水仙素可抑制紡錘絲形成，使染色體套數加倍，正確；(D)多倍體在植物中常見，在動物中罕見；(E)倒位會造成減數分裂聯會異常，產生不平衡配子而可能導致不孕，正確。故選(B)(C)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
+  - E
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s2_29
   section: 2
   number: 29
@@ -968,6 +993,8 @@ questions:
     content: DNA連接酶
   - label: D
     content: DNA聚合酶
+  - label: E
+    content: RNA聚合酶
   tags:
     unit:
       code: BI-S1-4-1
@@ -982,7 +1009,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅列4項(A~D)卻要求應選3項
+    fixed_by: agent
+    fix_note: （人工修正：補齊選項E使多選題結構完整並補齊答案與解析）
   difficulty: 3
+  explanation: 進行DNA損傷修復（如切除修復）時，需由核酸分解酶切除受損的核苷酸片段，再由DNA聚合酶以互補股為模板合成新片段，最後由DNA連接酶連接缺口，故選(B)(C)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
+  - D
 - id: doc_109_新竹_新竹高中_自然_生物_選修生物I_g11s1e3_s2_30
   section: 2
   number: 30

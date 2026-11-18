@@ -62,7 +62,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 火車在同一直線的軌道上各以10公尺秒之速率相向而行，一鳥以20公尺等速率飛行，當二車相距20公尺時，鳥自一車飛至另一車，到達後即飛回原車，再繼續來回飛行。在二車相撞前鳥共飛行多少路徑長？
+  stem: 兩列火車在同一直線軌道上各以 10 公尺／秒之速率相向而行，一隻鳥以 20 公尺／秒的等速率飛行，當二車相距 20 公尺時，鳥自一車飛至另一車，到達後即飛回原車，再繼續來回飛行。在二車相撞前，鳥共飛行多少公尺的路徑長？
   options:
   - label: A
     content: '10'
@@ -71,7 +71,9 @@ questions:
   - label: C
     content: '30'
   - label: D
-    content: 40 (B) 50 公尺
+    content: '40'
+  - label: E
+    content: '50'
   answer:
   - B
   answer_status: verified
@@ -90,7 +92,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹漏字「10公尺秒」、選項D格式有誤「40 (B) 50 公尺」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹漏字、拆分合併選項並補全解析）
   difficulty: 3
+  explanation: 兩車相對速率為 10＋10＝20 公尺／秒，相撞所需時間為 20÷20＝1 秒。鳥以 20 公尺／秒等速率飛行 1 秒，共飛行 20×1＝20 公尺。故選(B)。
 - id: doc_108_台南_長榮_自然_物理_g10s1e2_s1_5
   section: 1
   number: 5
@@ -206,13 +211,13 @@ questions:
   - label: A
     content: 能量
   - label: B
-    content: 質麗
+    content: 質量
   - label: C
     content: 加速度
   - label: D
     content: 速度
   - label: E
-    content: 衡量
+    content: 重量
   answer:
   - B
   answer_status: verified
@@ -231,7 +236,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項錯字：「質麗」應為「質量」
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B錯字並補全解析）
   difficulty: 1
+  explanation: 質量是物體慣性大小的量度，質量愈大，慣性愈大，愈不容易改變其運動狀態（速度）。故選(B)。
 - id: doc_108_台南_長榮_自然_物理_g10s1e2_s1_10
   section: 1
   number: 10
@@ -353,9 +361,9 @@ questions:
   - label: E
     content: 490 牛頓
   answer:
-  - B
-  answer_status: verified
-  answer_source: answer_key
+  - C
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-1-2-3
@@ -370,7 +378,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案B為980牛頓疑與題幹10公斤重(應為98牛頓)不符
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案為C並補全解析）
   difficulty: 2
+  explanation: 物體等速下降時所受合力為零，空氣阻力量值等於物重，即 10 公斤重＝10×9.8＝98 牛頓。故選(C)。
+  review_note: 原答案卷答案 ['B']，執行 agent 修正為 ['C']
 - id: doc_108_台南_長榮_自然_物理_g10s1e2_s1_15
   section: 1
   number: 15
@@ -483,7 +495,7 @@ questions:
   number: 21
   type: multiple
   page: 2
-  stem: 克卜勒行星運動第二定律中所指的軌道半徑尺，為太陽與行星的
+  stem: 克卜勒行星運動第三定律中所指的平均軌道半徑 R，為太陽與行星的：
   options:
   - label: A
     content: 最長距離
@@ -514,7 +526,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹錯字：「第二定律」應為「第三定律」、「軌道半徑尺」應為「軌道半徑R」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「第二定律」與「半徑尺」錯字並補全解析）
   difficulty: 2
+  explanation: 克卜勒第三定律中的軌道半徑 R 為橢圓軌道的半長軸，其長度亦等於行星與太陽之間最長距離（遠日距）與最短距離（近日距）的算術平均值。故選(B)(C)。
 - id: doc_108_台南_長榮_自然_物理_g10s1e2_s2_22
   section: 2
   number: 22

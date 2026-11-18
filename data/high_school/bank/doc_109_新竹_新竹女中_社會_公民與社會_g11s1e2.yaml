@@ -437,16 +437,16 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 假設某產品市場上，P代表價格，Q代表數量，且市場需求函數為$Q_{d}$＝600－4P，市場供給函數為0＝150＋6P。若政府介入進行價格管制，會發生何種影響？
+  stem: 假設某產品市場上，P代表價格，Q代表數量，且市場需求函數為 $Q_d = 600 - 4P$，市場供給函數為 $Q_s = 150 + 6P$。若政府介入進行價格管制，會發生何種影響？
   options:
   - label: A
     content: 當政府限制價格不能低於35元時，對市場均衡沒有影響
   - label: B
     content: 當政府限制價格不能低於55元，將發生供不應求
   - label: C
-    content: 政府限制價格不能高於35，將發生供過於求
+    content: 政府限制價格不能高於35元，將發生供過於求
   - label: D
-    content: 政府限制價格不能高於40，對市場均衡沒有影響
+    content: 政府限制價格不能高於40元，對市場均衡沒有影響
   tags:
     unit:
       code: CI-3-3-3
@@ -458,6 +458,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹供給函數「Qs＝150＋6P」誤植為「0＝150＋6P」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹供給函數錯字「0＝150＋6P」與選項錯字並補齊解答與解析）
+  explanation: 令 $Q_d = Q_s$，即 $600 - 4P = 150 + 6P$，解得均衡價格 $P^* = 45$ 元，均衡數量 $Q^* = 420$。(A)限制價格不能低於35元屬價格下限，因低於均衡價格45元，屬無效價格下限，對市場均衡無影響；(B)價格下限55元高於45元，將造成供過於求；(C)價格上限35元低於45元，將造成供不應求；(D)價格上限40元低於45元，將造成供不應求。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_新竹_新竹女中_社會_公民與社會_g11s1e2_s1_14
   section: 1
   number: 14

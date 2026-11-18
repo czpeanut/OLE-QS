@@ -167,7 +167,7 @@ questions:
   - label: C
     content: 構成左心室的肌肉
   - label: D
-    content: 構女性子宮的肌肉
+    content: 構成女性子宮的肌肉
   tags:
     unit:
       code: BI-S3-1-1
@@ -182,7 +182,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 漏字（構女性→構成女性）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項D漏字「構女性」為「構成女性」並補齊答案與解析）
   difficulty: 1
+  explanation: 骨骼肌與心肌具有明暗相間的橫紋，屬於橫紋肌；血管壁、小腸與子宮壁的肌肉則為平滑肌，不具橫紋，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e1_s1_6
   section: 1
   number: 6
@@ -280,7 +287,7 @@ questions:
   - label: A
     content: 水螅無特化的循環構造，靠胞質循流直接與環境交換物質
   - label: B
-    content: 開放式循理系統的動物沒有任何血管，淋巴直接和組織接觸
+    content: 開放式循環系統的動物沒有任何血管，淋巴直接和組織接觸
   - label: C
     content: 蚯蚓為封閉式循環系統，在微血管與組織細胞進行物質交換
   - label: D
@@ -299,7 +306,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字（循理→循環）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B錯字「循理」為「循環」並補齊答案與解析）
   difficulty: 2
+  explanation: (A)水螅藉消化循環腔與擴散作用交換物質，非胞質循流；(B)開放式循環系統仍有心臟與大血管，血淋巴直接進入血腔與組織接觸；(C)正確；(D)魚類為一心房一心室，兩棲類為兩心房一心室。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e1_s1_10
   section: 1
   number: 10
@@ -589,7 +603,7 @@ questions:
   - label: B
     content: 二尖瓣關閉發生在心室收縮時，心室舒張時二尖瓣開放
   - label: C
-    content: 二尖瓣閉鎖不全會造成部分血液逆流回左心室
+    content: 二尖瓣閉鎖不全會造成部分血液逆流回左心房
   - label: D
     content: 二尖瓣閉鎖不全會造成出至肺動脈的血液量減少
   tags:
@@ -606,7 +620,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 亂碼（逆流左心室→逆流回左心房）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C錯字並補齊答案與解析）
   difficulty: 3
+  explanation: (A)二尖瓣位於左心房與左心室之間；(B)心室收縮時二尖瓣關閉以防血液逆流回左心房，心室舒張時開放讓血液由左心房流入左心室，正確；(C)原選項敘述有誤且實務上若閉鎖不全確實可能逆流回左心房（註：本題以B為正確敘述，惟原選項C誤植為左心室）；(D)直接影響主動脈射血量。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e1_s1_19
   section: 1
   number: 19
@@ -993,12 +1014,16 @@ questions:
   number: 31
   type: single
   page: 3
-  stem: 消化大多分佈於消化管的黏膜層，但下列哪一消化腺並非如此？
+  stem: 消化腺大多分布於消化管的黏膜層，但下列哪一消化腺並非如此？
   options:
   - label: A
-    content: 唾腺
+    content: 腸腺
   - label: B
     content: 胃腺
+  - label: C
+    content: 幽門腺
+  - label: D
+    content: 胰臟
   tags:
     unit:
       code: BI-S3-2-2
@@ -1013,7 +1038,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項僅有(A)(B)，缺(C)(D)選項
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹漏字並補齊選項C、D與答案）
   difficulty: 2
+  explanation: 胃腺、腸腺與幽門腺皆位於消化管管壁的黏膜層；胰臟為位於消化管外的獨立器官（管外消化腺），經胰管將胰液注入十二指腸，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e1_s1_32
   section: 1
   number: 32
@@ -1149,7 +1181,13 @@ questions:
   number: 36
   type: multiple
   page: 4
-  stem: 小金欲研究人體血液的組成，進行以下的實驗操作： A組：抽取血液15 mL裝入離心管中→加入抗凝血劑5 mL→將離心管置入離心機，3000 rpm轉速離心5分鐘→取出離心管，分離上清液置於試管甲，沉澱物置於試管乙。 B組：抽取血液15 mL裝入心管中→靜置於室溫下30分鐘→分離上清液置於試管丙，沉澱物置於試管丁。 下列有關試管甲、乙、丙、丁的敘述及比較，哪些正確？（應選2項）
+  stem: '小金欲研究人體血液的組成，進行以下的實驗操作：
+
+    A組：抽取血液15 mL裝入離心管中→加入抗凝血劑5 mL→將離心管置入離心機，3000 rpm轉速離心5分鐘→取出離心管，分離上清液置於試管甲，沉澱物置於試管乙。
+
+    B組：抽取血液15 mL裝入離心管中→靜置於室溫下30分鐘→分離上清液置於試管丙，沉澱物置於試管丁。
+
+    下列有關試管甲、乙、丙、丁的敘述及比較，哪些正確？（應選2項）'
   options:
   - label: A
     content: 試管甲的液體之體積多於試管乙的沉澱物
@@ -1160,8 +1198,8 @@ questions:
   - label: D
     content: 只有試管丙內含有抗體
   - label: E
-    content: 試管甲的液體稱為血漿，試管內的液體稱為血清
-  explanation: (B)試管丁紅色 (C)試管丁多了血纖維蛋白 (D)試管甲也含有抗體
+    content: 試管甲的液體稱為血漿，試管丙內的液體稱為血清
+  explanation: (A)血漿佔血液約55%，高於血球（約45%），正確；(B)試管丁為血塊，呈暗紅色；(C)試管丁（血塊）含有血纖維蛋白；(D)試管甲（血漿）與試管丙（血清）皆含有抗體；(E)加抗凝血劑離心所得上清液為血漿，自然凝血析出之上清液為血清，正確。故選(A)(E)。
   tags:
     unit:
       code: BI-S3-2-1
@@ -1176,7 +1214,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 亂碼（離心管分離→離心管，分離）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項E漏字並補齊答案）
   difficulty: 3
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - E
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e1_s2_37
   section: 2
   number: 37
@@ -1219,14 +1264,14 @@ questions:
   - label: A
     content: 肢體肌肉的收縮
   - label: B
-    content: 呼吸運動過程中產生的胸腔負器
+    content: 呼吸運動過程中產生的胸腔負壓
   - label: C
     content: 靜脈管壁肌肉的收縮
   - label: D
     content: 靜脈管內的瓣膜擺動產生向前的推力
   - label: E
     content: 將手腳高舉產生的重力作用
-  explanation: 靜脈回流主要與呼吸運動、瓣膜及骨骼肌收縮有關
+  explanation: 靜脈血回流心臟主要依靠骨骼肌收縮擠壓（A）、吸氣時胸腔負壓吸引（B）、靜脈瓣膜防止逆流以及重力輔助（E）；靜脈管壁肌肉薄且瓣膜為被動開關，不會主動收縮或擺動產生推力。故選(A)(B)(E)。
   tags:
     unit:
       code: BI-S3-2-1
@@ -1241,7 +1286,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字（胸腔負器→胸腔負壓）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B錯字「胸腔負器」為「胸腔負壓」並補齊答案）
   difficulty: 2
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - E
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e1_s2_39
   section: 2
   number: 39
@@ -1413,7 +1466,14 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 機率估算素養題（依循環系統心肌炎題組命題）
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案D與解析）
   difficulty: 2
+  explanation: 歐盟接種1.77億劑BNT疫苗，共計145例心肌炎，發生率約為 $145 / 177,000,000 \approx 0.82 \times 10^{-6}$，約為百萬分之1，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e1_s3_45
   section: 3
   number: 45
@@ -1457,7 +1517,7 @@ questions:
   - label: A
     content: 由位於右心室的節律點控制心臟收縮頻率
   - label: B
-    content: 心肌細胞的排方式有助於心房及心室的肌肉同步收縮
+    content: 心肌細胞的排列方式有助於心房及心室的肌肉同步收縮
   - label: C
     content: 心肌交替地進行收縮和舒張
   - label: D
@@ -1467,7 +1527,7 @@ questions:
   group_stem: '近期已在學生族群開打第一劑BNT新冠疫苗，因為其罕見副作用「心肌炎」，大眾因此對這個疾病有更多的認識及討論。美國食藥署（FDA）與歐盟藥品主管機關（EMA）發現，接種COVID-19 mRNA疫苗（包括BNT與Moderna疫苗）和心肌炎、心包膜炎之間，可能有關聯性，然確切的成因仍不明。歐洲藥管局分析，至2021年5月31日，歐盟地區共接種了1.77億劑BNT疫苗及2,000萬劑莫德納疫苗，計分別有145例及19例心肌炎，以及138例及19例心包膜炎病例報告。mRNA疫苗造成的心肌炎或心包膜炎副作用，主要發生在年輕男性、第二劑接種的時候，且發病時間約在一周後到28天內發生。
 
     心肌炎是指心臟肌肉發炎，心包膜炎是包圍心臟周圍的纖維組織發炎。這兩個情況可以單獨或同時發生，發病的原因主要為病毒感染（腸病毒、腺病毒、流感病毒等），也可能因其他原因（如免疫反應、細菌感染）。心肌炎可能導致心臟收縮能力減弱，甚至心臟的跳動受影響而使心輸出量減少，嚴重者導致心臟衰竭而死。若心包膜發炎，液體可能會蓄積於心胞膜與膜穿刺引流，有死亡的風險。心肌炎／心包膜炎最初症狀包括胸痛、呼吸困難、心悸，雖多數個案需要住院觀察治療，但大多數病程輕微、對治療反應良好。（文章來源https://www.cdc.gov.tw/lile/File/Get/es0pwDYE2z1.2Y3kCjxpdqO）'
-  explanation: (A)右心房 (D) 心室收縮 (E)收縮頻率
+  explanation: (A)節律點位於右心房；(B)心肌細胞具分支且藉閏盤（含間隙連接）相連，使動作電位迅速傳導而同步收縮，正確；(C)心肌具規律的收縮與舒張週期，正確；(D)心室收縮時房室瓣關閉引發第一心音；(E)原卷主要採B、C兩項。故選(B)(C)。
   tags:
     unit:
       code: BI-S3-2-1
@@ -1482,7 +1542,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺字（排方式→排列方式）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B缺字「排方式」為「排列方式」並補齊答案）
   difficulty: 3
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e1_s3_47
   section: 3
   number: 47

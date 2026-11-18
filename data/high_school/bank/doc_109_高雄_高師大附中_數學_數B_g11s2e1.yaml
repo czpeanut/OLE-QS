@@ -618,11 +618,9 @@ questions:
 - id: doc_109_高雄_高師大附中_數學_數B_g11s2e1_s4_1
   section: 4
   number: 1
-  type: single
+  type: multiple
   page: 2
-  stem: '金字塔為地球上非常偉大的建築之一，不僅外觀特殊，更是古埃及文明的法老王的陵墓，其構造底部為一正方形，旁邊有四個三角形。
-
-    (1) 附圖是一個正四角錐( 底面ABCD為正方形，其餘四面均為等腰三角形 )，直線EH為正四角錐的高，下列哪些選項是正確的？'
+  stem: 金字塔為地球上非常偉大的建築之一，其構造底部為一正方形，旁邊有四個三角形。設正四角錐 $E-ABCD$ 的底面 $ABCD$ 為正方形，其餘四個側面均為等腰三角形，$H$ 為正方形 $ABCD$ 的中心，直線 $EH$ 為正四角錐的高，下列哪些選項是正確的？
   options:
   - label: A
     content: 直線AB與直線DE平行
@@ -659,16 +657,31 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「其餘面」缺字（應為「其餘側面」），且為多選題形式但標為單選、無答案
+    fixed_by: agent
+    fix_note: （人工修正：補齊「其餘四個側面」缺字與幾何條件取代缺圖，修正題型為 multiple 並補齊答案與解析）
   difficulty: 2
+  explanation: '(A) ×：直線 $AB$ 與直線 $DE$ 為歪斜線。
+
+    (B) ×：直線 $AD$ 與直線 $BC$ 平行。
+
+    (C) ○：直線 $AE$ 與直線 $BC$ 歪斜，不相交。
+
+    (D) ×：直線 $BE$ 與直線 $DE$ 交於 $E$ 點，必共平面。
+
+    (E) ○：直線 $EH$ 垂直底面於中心 $H$，與底面邊直線 $AD$ 不相交亦不平行，故歪斜。選 (C)(E)。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - E
 - id: doc_109_高雄_高師大附中_數學_數B_g11s2e1_s4_2
   section: 4
   number: 2
   type: fill
   page: 2
-  stem: '(1) 球面上任一點與球心的連線會交球面於另一點，亦即位於球體直徑兩端的點，這兩點互稱為對蹠點 ( 如附圖所示連線 的甲、乙兩點 )。已知<u>臺北</u>的位置25°N，121.5°E，求<u>臺北</u>的對蹠點位置的經緯度＿＿＿＿。
+  stem: '(1) 球面上任一點與球心的連線會交球面於另一點，亦即位於球體直徑兩端的兩點互稱為對蹠點。已知臺北的位置為 $25^\circ\text{N}$，$121.5^\circ\text{E}$，求臺北的對蹠點位置的經緯度：＿＿＿＿。
 
-    (2) 已知赤道經距約為110 km，則在台北所在的緯度線上的經距為＿＿＿＿km。( 參考數值sin25°＝0.6224，cos25°＝0.9063 )'
-  group_stem: (2) 有一正四角錐底面為正方形，而四個側面為等腰三角形，若側面與底面夾角為45°，則任相鄰兩側面之夾角為＿＿＿＿。
+    (2) 已知赤道經距約為 $110\text{ km}$，則在臺北所在的緯度線上的經距為＿＿＿＿ $\text{km}$。（參考數值 $\sin 25^\circ \approx 0.4226$，$\cos 25^\circ \approx 0.9063$）'
   assets:
   - key: s4_2_f1
     kind: figure
@@ -698,4 +711,9 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem殘留前題(2)題幹，本題實為經緯度與對蹠點問題
+    fixed_by: agent
+    fix_note: （人工修正：移除殘留的前題 group_stem、清除缺圖與亂碼，補齊解析）
   difficulty: 2
+  explanation: '(1) 緯度南北互換得 $25^\circ\text{S}$，經度為 $180^\circ - 121.5^\circ = 58.5^\circ\text{W}$。
+
+    (2) $110 \times \cos 25^\circ = 110 \times 0.9063 = 99.693\text{ km}$。'

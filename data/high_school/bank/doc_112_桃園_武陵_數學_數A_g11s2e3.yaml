@@ -379,11 +379,11 @@ questions:
   number: 2
   type: single
   page: 2
-  stem: '在坐標平面上，二階方陣M對應的線性變換是將點P ( cos θ , sin θ ) 變換到點P'' ( cos θ , 0 )；將點Q (－sin θ, cos θ ) 變換到點Q'' ( 0 , cos θ )，其中$\frac{\pi}{2}$ ≤ θ＜π。若k為非零實數，使得$M^{ 3}$＝kI，其中I為二階單位方陣。試回答下列問題：
+  stem: '在坐標平面上，二階方陣 $M$ 對應的線性變換是將點 $P(\cos\theta, \sin\theta)$ 變換到點 $P''(\cos\theta, 0)$；將點 $Q(-\sin\theta, \cos\theta)$ 變換到點 $Q''(0, \cos\theta)$，其中 $\frac{\pi}{2} \le \theta < \pi$。若 $k$ 為非零實數，使得 $M^3 = kI$，其中 $I$ 為二階單位方陣。試回答下列問題：
 
-    (1) 二階方陣M對應的線性變換是下列哪一個選項？( 單選 )
+    (1) 二階方陣 $M$ 對應的線性變換是下列哪一個選項？（單選，2 分）
 
-    (2) 求θ值與k值。 ( 6分 )'
+    (2) 求 $\theta$ 值與 $k$ 值。（6 分）'
   options:
   - label: A
     content: 旋轉
@@ -394,10 +394,7 @@ questions:
   - label: D
     content: 伸縮與鏡射的合成
   - label: E
-    content: 推移 ( 2分 )
-  group_stem: '(2) 把從狀態j經過一次操作後變成狀態i的機率記為$p_{ij}$，例如(1)的機率就是$p_{12}$，由此可得一個2×2的方陣P＝[ $p_{ij}$ ]$_{2×2}$，關於方陣P的敘述，請選出正確選項。( 多選 ) (A) $p_{12}$＝$p_{21}$ (B) $p_{11}$＋$p_{12}$＝1 (C) det (P)＜0 (D)方陣$P^{2}$是轉移矩陣 (E)方陣$P^{－1}$是轉移矩陣 ( 4分，錯一個得2分，錯兩個以上得0分 )
-
-    (3) 若一開始手上拿的是紅球，則操作3次後，手上還是紅球的機率為何？ ( 4分 )'
+    content: 推移
   tags:
     unit:
       code: MA-A4-4-3
@@ -412,4 +409,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem誤植前一題轉移矩陣子題(2)(3)，與題幹線性變換無關
+    fixed_by: agent
+    fix_note: （人工修正：移除誤植的 group_stem，清理選項配分文字並補齊答案與解析）
   difficulty: 4
+  explanation: '(1) $M\begin{bmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{bmatrix} = \begin{bmatrix}\cos\theta & 0 \\ 0 & \cos\theta\end{bmatrix} = \cos\theta \cdot I$，故 $M = \cos\theta \cdot R(-\theta) = (-\cos\theta)\cdot R(\pi - \theta)$，為伸縮與旋轉的合成，選 (C)。
+
+    (2) 由 $M^3 = \cos^3\theta \cdot R(-3\theta) = kI$ 且 $k \neq 0$，知 $\cos\theta \neq 0$ 且 $\sin(-3\theta) = 0$。因 $\frac{\pi}{2} < \theta < \pi$，得 $\frac{3\pi}{2} < 3\theta < 3\pi$，故 $3\theta = 2\pi \Rightarrow \theta = \frac{2\pi}{3}$，此時 $k = \cos^3\frac{2\pi}{3} = \left(-\frac{1}{2}\right)^3 = -\frac{1}{8}$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C

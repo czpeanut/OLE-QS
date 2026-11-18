@@ -659,25 +659,25 @@ questions:
 - id: doc_110_新竹_竹東_數學_數B_g11s2e1_s4_1
   section: 4
   number: 1
-  type: single
+  type: multiple
   page: 2
   stem: '所謂<u>對蹠點</u>是指球面上任一點舆球心的連線，在球面的另一端與球面的交點。例如，從地表上某一點P與地心連線，這條線穿過地心後，會與地表在另一端交於一點Q，這個交點Q就是P的<u>對蹠點</u>。因此，我們可以說，球體直徑兩端的點，互為<u>對蹠點</u>。 請根據以上說明，回答下列問題：
 
     (1)已知甲地位於東經75度，北緯30度，選出甲地在地球面上的<u>對蹠點</u>為'
   options:
   - label: A
-    content: 西經75度
+    content: 西經 75 度
   - label: B
-    content: 西經105度
+    content: 西經 105 度
   - label: C
-    content: 西經15度
+    content: 西經 15 度
   - label: D
-    content: 北緯30度
+    content: 北緯 30 度
   - label: E
-    content: 南緯30度 (F)南緯60度 ＿＿＿＿（全對才給分，6分）
-  explanation: '(1)甲在東經75度，北緯30度 （利用對稱於球心的概念）， 其對蹠點在西經180°－75°＝105度， 南緯30度， 故選(B)(E)。
-
-    (2)承(1)， <u>小諭</u>在東經75°，北緯30°， <u>小筠</u>在西經105°，南緯30°， 兩者緯線所在圓半徑相同， <u>小諭</u>與<u>小筠</u>移動速率比為1：4， 第一次在同一條經線上： （75°＋α）＋（105°＋4α）＝360° ⇒ α＝36° 此時經線為東經111°。'
+    content: 南緯 30 度
+  - label: F
+    content: 南緯 60 度
+  explanation: 甲在東經 75 度、北緯 30 度，其對蹠點在西經 $180^\circ - 75^\circ = 105$ 度、南緯 30 度，故選 (B)(E)。
   tags:
     unit:
       code: MA-B4-1-1
@@ -692,7 +692,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題型為複選題但標為 single，且選項(F)被併入選項(E)文字中，解答欄位為空（解析有寫選BE）
+    fixed_by: agent
+    fix_note: （人工修正：修正題型為 multiple、分離選項 F 並補齊答案）
   difficulty: 2
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - E
 - id: doc_110_新竹_竹東_數學_數B_g11s2e1_s4_2
   section: 4
   number: 2
@@ -713,4 +720,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解答欄位為空（解析於 s4_1 中，答案為東經111°）
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案與解析）
   difficulty: 3
+  explanation: 小諭在東經 $75^\circ$、北緯 $30^\circ$ 向東，小筠在西經 $105^\circ$、南緯 $30^\circ$ 向西，兩者緯線圓半徑相同，移動速率比為 $1:4$。第一次在同一條經線上時 $(75^\circ + \alpha) + (105^\circ + 4\alpha) = 360^\circ \Rightarrow \alpha = 36^\circ$，此時經線為東經 $75^\circ + 36^\circ = 111^\circ$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 東經 $111^\circ$

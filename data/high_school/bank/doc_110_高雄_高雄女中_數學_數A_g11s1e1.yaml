@@ -233,7 +233,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 已知0＜α＜π，0＜β＜π，cosα＝$\frac{1}{10}$，cosβ＝－10，則α＋β為第幾象限角？
+  stem: 已知 $0 < \alpha < \pi$，$0 < \beta < \pi$，$\cos\alpha = \frac{1}{10}$，$\cos\beta = -\frac{1}{20}$，則 $\alpha + \beta$ 為第幾象限角？
   options:
   - label: A
     content: 第一象限角
@@ -263,7 +263,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹「cosβ＝－10」顯係誤植（餘弦值不可能為 -10，致無法嚴謹作答）
+    fixed_by: agent
+    fix_note: （人工修正：修正 cos β = -10 誤植為 -1/20 並補齊解析）
   difficulty: 2
+  explanation: 因 $0<\alpha<\frac{\pi}{2}$ 且 $\frac{\pi}{2}<\beta<\pi$，又 $\cos\beta = -\frac{1}{20} > -\frac{1}{10} = \cos(\pi-\alpha)$，故 $\beta < \pi - \alpha \Rightarrow \frac{\pi}{2} < \alpha+\beta < \pi$，為第二象限角，選 (B)。
 - id: doc_110_高雄_高雄女中_數學_數A_g11s1e1_s2_2
   section: 2
   number: 2

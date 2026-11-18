@@ -124,7 +124,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項A有單字亂碼（向壓）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A亂碼並補齊答案A與解析）
   difficulty: 2
+  explanation: (A)吞嚥時喉部上升、會厭軟骨向下壓蓋住氣管入口以防食物誤入，正確；(B)硬顎在前、軟顎在後；(C)氣管壁具C形軟骨；(D)肺泡無肌肉，肺部體積由胸廓與橫膈肌變化被動調節。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e2_s1_4
   section: 1
   number: 4
@@ -1301,9 +1308,7 @@ questions:
   number: 39
   type: single
   page: 5
-  stem: '若實驗進行三週後大鼠還活著，下列關於三週後實驗大鼠的生理狀態，何者最為合理？
-
-    (二)'
+  stem: 若實驗進行三週後大鼠還活著，下列關於三週後實驗大鼠的生理狀態，何者最為合理？
   options:
   - label: A
     content: 血液中的pH值為酸性
@@ -1312,38 +1317,10 @@ questions:
   - label: C
     content: 紅血球數量較對照組大鼠還要少
   - label: D
-    content: 腎藏會加強分泌$H^{＋}$來維持酸鹼恆定
+    content: 腎臟會加強分泌$H^{＋}$來維持酸鹼恆定
   group_stem: 基詳設計一個密閉的實驗箱（附圖），留有出、入兩個氣體開口，出口的直徑大於入口。實驗時，將大鼠置於動物籠內，並安置於實驗箱，然後從出口抽氣，使氣體從入口進，由出口出來（附圖箭頭所示）。由於直徑的差異，出口的氣流大於入口，於是實驗箱內的氣壓降低，約近似380 mmHg。對照組所用實驗箱的出、入口直徑相同，所以箱內的氣壓與外界一樣。實驗進行三週後，他抽血分析血液酸鹼值、二氧化碳分壓與其他生理狀態。
   shared_asset: g3_37_39
-  explanation: '三週長期，生理會出現變化
-
-    40A
-
-    解析：乙組施打一種藥劑：利欣諾普
-
-    41.A
-
-    解析：文中提到洛神花萃取物降血壓
-
-    42.D
-
-    解析：圖十三丙組別，醛固酮濃度最低
-
-    43.A
-
-    解析：醚基 C－O－C
-
-    44.D
-
-    解析：GABA會使$Cl^{-}$通道開啟，使$Cl^{-}$擴散入細胞，所以是過極化
-
-    45.B
-
-    解析：(A)降低 (C)會影響免疫系統 (D)沒有四氫大麻酚也會釋出
-
-    46.D
-
-    解析：(A)周圍神經也有 (B)不常用 (C)細胞外較高'
+  explanation: 實驗組大鼠長期處於約380 mmHg的低壓低氧環境三週後，會發生生理適應（馴化）：紅血球數量增加（促進紅血球生成素分泌）、肺泡微血管與氣體交換表面積增加以提升攜氧能力；血液pH仍維持在7.35～7.45弱鹼性恆定，故選(B)。
   tags:
     unit:
       code: BI-S3-3-1
@@ -1358,7 +1335,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有單字亂碼（進行週後應為三週後）
+    fixed_by: agent
+    fix_note: （人工修正：清除題幹與解析混入之其他題目文字、修正錯字並補齊答案B）
   difficulty: 4
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_新竹_新竹高中_自然_生物_選修生物III_g11s1e2_s3_40
   section: 3
   number: 40

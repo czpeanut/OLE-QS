@@ -319,13 +319,20 @@ questions:
   - label: E
     content: $log_{a}$ $x^{4}$＝2 $log_{a}$ $x^{2}$
   answer:
-  - B
   - C
   - D
   - E
-  answer_status: verified
-  answer_source: answer_key
-  explanation: (A) ×：$log_{ a}$ $x^{2}$＝$\frac{\log x^{2}}{\log a}$＝$\frac{2\log |x|}{\log a}$＝2 $log_{ a}$ | x |。 (B) ○：$log_{ a}$ xy＝$\frac{\log xy}{\log a}$＝$\frac{\log x+\log y}{\log a}$＝$log_{ a}$ x＋$log_{ a}$ y。 (C) ○：因為"x ∈ R，$x^{2}$＋x＋1＞恆成立， 所以承(A)可知，$log_{ a}$ ( $x^{2}$＋x＋1 )$^{2}$＝2 $log_{ a}$ ( $x^{2}$＋x＋1 )。 (D) ○：承(C)可知，正確。 (E) ○：承(C)可知，$log_{ a}$ $x^{4}$＝$log_{ a}$ ( $x^{2}$ )$^{2}$＝2 $log_{ a}$ $x^{2}$。 故選(B)(C)(D)(E)。
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: '(A) ×：$\log_a x^2 = 2\log_a |x|$。
+
+    (B) ×：當 $x, y$ 皆為負數時，$xy > 0$ 使 $\log_a(xy)$ 有意義，但 $\log_a x$ 與 $\log_a y$ 均無意義。
+
+    (C) ○：因 $\forall x\in\mathbb{R}$，$x^2+x+1 > 0$ 恆成立，故等式成立。
+
+    (D) ○：因 $x^2+1 > 0$ 恆成立，故等式成立。
+
+    (E) ○：因 $x\neq 0$ 時 $x^2 > 0$ 恆成立，故 $\log_a x^4 = \log_a (x^2)^2 = 2\log_a x^2$。'
   tags:
     unit:
       code: MA-A3-2-2
@@ -340,7 +347,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 詳解(B)未考慮x,y皆為負數時log(x),log(y)無意義
+    fixed_by: agent
+    fix_note: （人工修正：更正答案（排除 B）並修正解析）
   difficulty: 2
+  review_note: 原答案卷答案 ['B', 'C', 'D', 'E']，執行 agent 修正為 ['C', 'D', 'E']
 - id: doc_109_桃園_內壢_數學_數A_g11s1e3_s2_3
   section: 2
   number: 3
@@ -664,4 +674,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 第(2)小題為問答題，選項僅對應第(1)小題
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案與兩小題之完整解析）
   difficulty: 2
+  explanation: '(1) (A) 未必成立（未限定 $x>0, y>0$）；(B) ○：$\log_{10} 32.616 = 1 + \log_{10} 3.2616$，首數為 1；(C) ×：首數為 $-5$；(D) $0.4232$ 為近似值；(E) ×：$d > d_0$ 時為負。故選 (B)。
+
+    (2) 北極星：$M_P = 2 + 5\log_{10}\frac{32.616}{431} \approx 2 + 5(0.5134 - 2.6345) = -8.6055$；織女星：$M_V = 0 + 5\log_{10}\frac{32.616}{26.5} \approx 5(1.5134 - 1.4232) = 0.451$。因絕對星等越小越亮，故北極星比較亮。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B

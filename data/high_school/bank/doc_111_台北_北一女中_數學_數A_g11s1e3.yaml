@@ -378,9 +378,9 @@ questions:
   page: 3
   stem: 在坐標平面上，O（0，0），B（2，0），$\overline{OA}$＝10，若 cos∠AOB＝－0.8，則$\vec{OA}$在$\vec{OB}$上的正射影為＿＿＿＿。
   answer:
-  - （－8，0） 2.14 3.34 4.0 5.$4\pi ^{2} - 18\sqrt{3}\pi +\frac{81}{2}$
-  answer_status: verified
-  answer_source: answer_key
+  - $(-8, 0)$
+  answer_status: disputed
+  answer_source: agent_fix
   explanation: '所求為$\left( \frac{\vec{OA} \cdot \vec{OB}}{∣ \vec{OB} ∣^{2}} \right) \vec{OB}$＝$\left( \frac{∣ \vec{OA} ∣∣ \vec{OB} ∣ \cos \angle AOB}{∣ \vec{OB} ∣^{2}} \right) \vec{OB}$
 
     ＝$\left( \frac{∣ \vec{OA} ∣ \cos \angle AOB}{∣ \vec{OB} ∣} \right) \vec{OB}$
@@ -402,7 +402,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer 欄位誤將後續第 2～5 題答案串接在一起
+    fixed_by: agent
+    fix_note: （人工修正：清除答案中混入的後續題號答案）
   difficulty: 2
+  review_note: 原答案卷答案 ['（－8，0） 2.14 3.34 4.0 5.$4\\pi ^{2} - 18\\sqrt{3}\\pi +\\frac{81}{2}$']，執行 agent 修正為 ['$(-8, 0)$']
 - id: doc_111_台北_北一女中_數學_數A_g11s1e3_s3_2
   section: 3
   number: 2

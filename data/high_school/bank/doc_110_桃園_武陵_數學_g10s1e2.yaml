@@ -148,28 +148,22 @@ questions:
   number: 1
   type: calc
   page: 1
-  stem: '■在平面幾何中，任意給定一個三角形，它的重心（三中線交點）、外心（三邊中垂線交點）與垂心（三邊高或高的延長線交點）都會落在同一條直線上，這條直線就稱為此三角形的「尤拉線」。現在我們給定一個三角形，讓同學來驗證此事。
+  stem: '在平面幾何中，任意給定一個三角形，它的重心（三中線交點）、外心（三邊中垂線交點）與垂心（三邊高或高的延長線交點）都會落在同一條直線上，這條直線就稱為此三角形的「尤拉線」。設 $A(-4, 1)$、$B(4, 5)$、$C(5, -2)$ 為坐標平面上三點，試回答下列問題：
 
-    設 A（－4，1）、B（4，5）、C（5，－2）為坐標平面上三點，試回答下列問題：
+    (1) 求 $\triangle ABC$ 的重心坐標。（2 分）
 
-    (1)求△ABC 的重心坐標。（2 分）
+    (2) 求 $\triangle ABC$ 的外心坐標。（6 分）
 
-    (2)求△ABC 的外心坐標。（6 分）
+    (3) 求 $\triangle ABC$ 的垂心坐標。（6 分）
 
-    (3)求△ABC 的垂心坐標。（6 分）
+    (4) 證明此 $\triangle ABC$ 的重心、外心及垂心在同一條直線上。（3 分）'
+  explanation: '(1) 重心 $G = \left(\frac{-4+4+5}{3}, \frac{1+5-2}{3}\right) = \left(\frac{5}{3}, \frac{4}{3}\right)$。
 
-    (4)證明此△ABC 的重心、外心及垂心在同一條直線上。（3 分）'
-  explanation: '設 L 之 x 截距為 a，y 截距為 b，其中 a，b＞0 ⇒ L：$\frac{x}{a}+\frac{y}{b}$＝1
+    (2) $\overline{AB}$ 中垂線為 $2x+y=3$，$\overline{BC}$ 中垂線為 $x-7y=-6$，聯立解得外心 $O(1, 1)$。
 
-    又 L 通過（2，3）得$\frac{2}{a}+\frac{3}{b}$＝1
+    (3) 過 $A$ 垂直 $\overline{BC}$ 之直線為 $x-7y=-11$，過 $B$ 垂直 $\overline{AC}$ 之直線為 $3x-y=7$，聯立解得垂心 $H(3, 2)$。
 
-    由$\frac{1}{2}ab$＝16 ⇒ ab＝32 ⇒ b＝$\frac{32}{a}$
-
-    將 b＝$\frac{32}{a}$代入$\frac{2}{a}+\frac{3}{b}$＝1 ⇒$\frac{2}{a}+\frac{3}{32}a$＝1 ⇒ $3a^{2}$－32a＋64＝0
-
-    ⇒（3a－8）（a－8）＝0 ⇒ a＝$\frac{8}{3}$或 8 ⇒ b＝12 或 4
-
-    故直線 L 的方程式為$\frac{3x}{8}+\frac{y}{12}$＝1 或$\frac{x}{8}+\frac{y}{4}$＝1'
+    (4) 直線 $OH$ 斜率 $= \frac{2-1}{3-1} = \frac{1}{2}$，直線 $OG$ 斜率 $= \frac{4/3-1}{5/3-1} = \frac{1}{2}$，故 $O, G, H$ 三點共線。'
   tags:
     unit:
       code: MA-1-2-1
@@ -184,7 +178,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解析與題幹不符（解析為截距式求直線與面積）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹亂碼、替換誤植之他題解析並補齊答案）
   difficulty: 4
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) $(\frac{5}{3}, \frac{4}{3})$；(2) $(1, 1)$；(3) $(3, 2)$；(4) 略（三點共線於 $x-2y+1=0$）
 - id: doc_110_桃園_武陵_數學_g10s1e2_s3_3
   section: 3
   number: 3

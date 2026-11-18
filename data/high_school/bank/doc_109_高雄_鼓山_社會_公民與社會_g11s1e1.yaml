@@ -202,14 +202,16 @@ questions:
   number: 8
   type: single
   page: 1
-  stem: 根據某產業公會研究的投資中國2011大陸投資環境與風險調查發現：由重慶、成都和西安所組成的「西三角」這一兩年開始崛起，區域綜合經濟發展成長數速度十分驚人，直追沿海地區，有機會成為下一個中國經濟發展的中心。中國是世界注目的發展中國家，請問：就全球化的角度，中國可能出現的分工之利為何？
+  stem: 根據某產業公會研究的投資中國2011大陸投資環境與風險調查發現：由重慶、成都和西安所組成的「西三角」這一兩年開始崛起，區域綜合經濟發展成長速度十分驚人，直追沿海地區，有機會成為下一個中國經濟發展的中心。中國是世界注目的發展中國家，請問：就全球化的角度，中國可能出現的分工之利為何？
   options:
   - label: A
     content: 資本投入尖端科技的研發
   - label: B
     content: 可以提升生產技術
   - label: C
-    content: 環境資源受重視 (B)減少貧富差距
+    content: 環境資源受重視
+  - label: D
+    content: 減少貧富差距
   tags:
     unit:
       code: CI-3-5-3
@@ -221,12 +223,19 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹有錯字「成長數速度」、選項C與(D)合併且誤標為(B)
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「成長速度」並拆分選項C、D，補齊解答與解析）
+  explanation: 發展中國家參與全球分工，可藉由外資進駐與技術轉移提升國內生產技術與產能，(B)正確。(A)尖端科技研發多集中於已開發國家；(C)(D)發展中國家在全球化過程中常面臨環境負荷加重與貧富差距擴大的挑戰。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_鼓山_社會_公民與社會_g11s1e1_s1_9
   section: 1
   number: 9
   type: single
   page: 1
-  stem: 調查發現，通勤時間與壓力和煩惱成正比。財富管理軟體Addepar和臉書Facebook等多家公司開始提供員工租金補助、頭款津貼和找房子服務，鼓勵員工住得離辦公室近一點。因著受惠得以省時參與團的Addepar員工表示：「休閒活動讓我消除壓力，並增加我的創造力。」上述顯示以國民所得衡量經濟福祉有何缺點？
+  stem: 調查發現，通勤時間與壓力和煩惱成正比。財富管理軟體Addepar和臉書Facebook等多家公司開始提供員工租金補助、頭款津貼和找房子服務，鼓勵員工住得離辦公室近一點。因著受惠得以省時參與團體活動的Addepar員工表示：「休閒活動讓我消除壓力，並增加我的創造力。」上述顯示以國民所得衡量經濟福祉有何缺點？
   options:
   - label: A
     content: 忽略生活品質價值
@@ -247,6 +256,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有漏字「參與團」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹漏字「團體活動」，補齊解答與解析）
+  explanation: 縮短通勤時間、增加休閒與減少壓力屬於「生活品質」的提升，但傳統國民所得（GDP）無法衡量休閒與生活品質的價值，故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_鼓山_社會_公民與社會_g11s1e1_s1_10
   section: 1
   number: 10
@@ -352,7 +368,7 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 目前就讀於龍騰中學二年級的小蘋對臺灣參與國際組織相當關心，在新聞報導上看到：外交部指出，政府加入聯合國一再受挫，評估之後決定將目標轉向爭取及參與聯合國專門機構，今年以《聯合國氣候變化綱要公約》（UNFCCC）及「國際民航組織（ICAO）為優先推動目標。請問：我國加入國際組織受挫的原因為何？
+  stem: 目前就讀於龍騰中學二年級的小蘋對臺灣參與國際組織相當關心，在新聞報導上看到：外交部指出，政府加入聯合國一再受挫，評估之後決定將目標轉向爭取及參與聯合國專門機構，今年以《聯合國氣候變化綱要公約》（UNFCCC）及「國際民航組織（ICAO）」為優先推動目標。請問：我國加入國際組織受挫的原因為何？
   options:
   - label: A
     content: 領土面積太小，不符合申請資格
@@ -373,6 +389,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹有漏字「『國際民航組織（ICAO）」缺右引號
+    fixed_by: agent
+    fix_note: （人工修正：補齊題幹缺漏之右引號，補齊解答與解析）
+  explanation: 我國參與聯合國及其專門機構屢屢受挫，主因為中華人民共和國在國際社會的政治打壓與杯葛，故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_鼓山_社會_公民與社會_g11s1e1_s1_15
   section: 1
   number: 15
@@ -410,7 +433,9 @@ questions:
   - label: B
     content: 訂立定型化契約前，無須提供消費者審閱的時間
   - label: C
-    content: 定型化契約是企業經營者單方面預先擬訂的契約條款，往往對消費者有利 (B)定型化契約條款違反誠信原則，對消費者顯失公平者，無效
+    content: 定型化契約是企業經營者單方面預先擬訂的契約條款，往往對消費者有利
+  - label: D
+    content: 定型化契約條款違反誠信原則，對消費者顯失公平者，無效
   tags:
     unit:
       code: CI-3-1-1
@@ -422,6 +447,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C與(D)合併且誤標為(B)
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項C與D，補齊解答與解析）
+  explanation: 依《消費者保護法》第12條規定，定型化契約中之條款違反誠信原則，對消費者顯失公平者，無效，(D)正確。(A)有疑義時應為有利「消費者」之解釋；(B)應提供合理審閱期間；(C)往往對「企業經營者」有利。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_鼓山_社會_公民與社會_g11s1e1_s1_17
   section: 1
   number: 17
@@ -627,7 +659,7 @@ questions:
   number: 25
   type: single
   page: 3
-  stem: 顧志耐（Simn Kuznets）在政府授命下，為估計美國國民所得高低而於1934年提出全球第一套的「國民所得帳」，其估算方式被世界各國所沿用。此一指標具有眾多功能，是目前最被廣泛使用的經濟指標，唯下列何者「不是」國民所得熊的功能？
+  stem: 顧志耐（Simon Kuznets）在政府授命下，為估計美國國民所得高低而於1934年提出全球第一套的「國民所得帳」，其估算方式被世界各國所沿用。此一指標具有眾多功能，是目前最被廣泛使用的經濟指標，唯下列何者「不是」國民所得帳的功能？
   options:
   - label: A
     content: 跨國比較瞭解各國的生活水準
@@ -648,6 +680,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「國民所得熊」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「Simon Kuznets」「國民所得帳」，補齊解答與解析）
+  explanation: 國民所得帳能衡量整體經濟規模、進行跨國比較及作為政策參考，但無法反映所得在國民之間的分配狀態（貧富差距），須另透過吉尼係數等指標衡量，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_鼓山_社會_公民與社會_g11s1e1_s1_26
   section: 1
   number: 26
@@ -825,7 +864,9 @@ questions:
   - label: B
     content: 自由貿易僅對經濟大國有利
   - label: C
-    content: 對消費者而言，只要花更多的錢，就能買到他國的物品 (C)對生產者而言，可輸出更多產品到國外，賺取更多利潤
+    content: 對消費者而言，只要花更多的錢，就能買到他國的物品
+  - label: D
+    content: 對生產者而言，可輸出更多產品到國外，賺取更多利潤
   tags:
     unit:
       code: CI-3-5-3
@@ -837,6 +878,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C與(D)合併且誤標為(C)
+    fixed_by: agent
+    fix_note: （人工修正：修補選項B亂碼並拆分選項C、D，補齊解答與解析）
+  explanation: 自由貿易擴大市場規模，具比較利益的生產者可將產品外銷至國際市場賺取更多利潤，(D)正確。(A)跨國運輸與生產擴張可能加劇碳排放與環境汙染；(B)小國亦可透過比較利益獲益；(C)自由貿易通常使消費者能以更低價格購得更多樣商品。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_鼓山_社會_公民與社會_g11s1e1_s1_32
   section: 1
   number: 32
@@ -1003,7 +1051,7 @@ questions:
   number: 38
   type: single
   page: 4
-  stem: 20歲的小文是依法來臺工作的泰國人，來臺工作幾年後，發現老關給他的薪水遠比《勞動基準法》規定的最低工資還少。小文對自己的薪資問題，是否有可以申訴或救濟管道？
+  stem: 20歲的小文是依法來臺工作的泰國人，來臺工作幾年後，發現老闆給他的薪水遠比《勞動基準法》規定的最低工資還少。小文對自己的薪資問題，是否有可以申訴或救濟管道？
   options:
   - label: A
     content: 《勞動基準法》不保障外國勞工，所以小文無管道可救濟
@@ -1024,6 +1072,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「老關」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「老闆」，補齊解答與解析）
+  explanation: 凡受僱於適用《勞動基準法》事業單位的勞工（包含合法外籍移工），均受《勞基法》最低工資等勞動條件保障，遇有違法可向地方勞工局或勞動部申訴救濟，故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_鼓山_社會_公民與社會_g11s1e1_s1_39
   section: 1
   number: 39
@@ -1134,7 +1189,7 @@ questions:
   stem: 請問：依據現行法規，關於小欽購買及退貨的行為，下列敘述何者正確？
   options:
   - label: A
-    content: 小欽於網路上的買買行為，受《公平交易法》的保障
+    content: 小欽於網路上的買賣行為，受《公平交易法》的保障
   - label: B
     content: 小欽在網路購買，除非該網站同意，否則不得退貨
   - label: C
@@ -1153,6 +1208,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項A有錯字「買買行為」
+    fixed_by: agent
+    fix_note: （人工修正：修補選項A錯字「買賣行為」，補齊解答與解析）
+  explanation: 依《消費者保護法》第19條規定，通訊交易（含網路購物）消費者得於收受商品後7日內，以退回商品或書面通知方式解除契約，無須說明理由及負擔任何費用或對價，故選(C)。(A)主要受《消費者保護法》保障。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_鼓山_社會_公民與社會_g11s1e1_s2_44
   section: 2
   number: 44

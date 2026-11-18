@@ -133,48 +133,24 @@ questions:
   number: 3
   type: multiple
   page: 1
-  stem: 設 A、B 為樣本空間 S 中的兩事件，P
+  stem: 設 $A, B$ 為樣本空間 $S$ 中的兩事件，$P(A)=\frac{1}{3}$，$P(A\cup B)=\frac{2}{3}$，則下列何者正確？
   options:
   - label: A
-    content: ＝$\frac{1}{3}$，P（A∪B）＝$\frac{2}{3}$，則下列何者正確？(A) P
+    content: $P(B)$ 的最大值為 $\frac{1}{3}$
   - label: B
-    content: 的最大值為$\frac{1}{3}$(B)若 A、B 為獨立事件，則 P(B)＝$\frac{1}{2}$
+    content: 若 $A, B$ 為獨立事件，則 $P(B) = \frac{1}{2}$
   - label: C
-    content: 若 A、B 為獨立事件，則 P（A｜B）＝$\frac{1}{3}$
+    content: 若 $A, B$ 為獨立事件，則 $P(A\mid B) = \frac{1}{3}$
   - label: D
-    content: 若 A、B 為互斥事件，則 P（A∩B）＝$\frac{1}{6}$
+    content: 若 $A, B$ 為互斥事件，則 $P(A\cap B) = \frac{1}{6}$
   - label: E
-    content: 若 A、B 為互斥事件，則 P（B｜A'）＝$\frac{1}{3}$
+    content: 若 $A, B$ 為互斥事件，則 $P(B\mid A') = \frac{1}{3}$
   answer:
   - B
   - C
   answer_status: verified
   answer_source: answer_key
-  explanation: '(A)╳：當 A$\subseteq$B，則 P(B)＝P（A∪B）＝$\frac{2}{3}$
-
-    (B)○：若 A，B 獨立，P（A∩B）＝P(A)×P(B)
-
-    則 P（A∪B）＝P(A)＋P(B)－P(A)×P(B)
-
-    ⇒$\frac{2}{3}$＝$\frac{1}{3}$＋P(B)－$\frac{1}{3}$P(B)
-
-    ⇒ P(B)＝$\frac{1}{2}$
-
-    (C)○：P（A｜B）＝P(A)＝$\frac{1}{3}$
-
-    (D)╳：若 A，B 互斥，P（A∩B）＝0
-
-    (E)╳：P（A∪B）＝P(A)＋P(B)－P（A∩B）
-
-    ⇒$\frac{2}{3}$＝$\frac{1}{3}$＋P(B)－0
-
-    ⇒ P(B)＝$\frac{1}{3}$
-
-    又 P（B｜A''）＝$\frac{P (B\cap A'' )}{P (A'' )}$＝$\frac{P (B ) - P (A\cap B )}{\frac{2}{3}}$
-
-    ＝$\frac{\frac{1}{3}-0}{\frac{2}{3}}$＝$\frac{1}{2}$
-
-    故選(B)(C)'
+  explanation: "(A) ×：$P(B) \\le P(A\\cup B) = \\frac{2}{3}$。\n(B) ○：$\frac{2}{3} = \\frac{1}{3} + P(B) - \\frac{1}{3}P(B) \\Rightarrow P(B) = \\frac{1}{2}$。\n(C) ○：$P(A\\mid B) = P(A) = \\frac{1}{3}$。\n(D) ×：互斥則 $P(A\\cap B) = 0$。\n(E) ×：$P(B) = \\frac{1}{3}$，故 $P(B\\mid A') = \\frac{1/3}{2/3} = \\frac{1}{2}$。選 (B)(C)。"
   tags:
     unit:
       code: MA-B4-2-1
@@ -189,6 +165,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹與選項(A)(B)文字斷行錯位（P(A)與P(B)之括號遺漏或錯置），不影響作答
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹截斷與選項 A、B 排版錯位，補齊被截斷之解析）
   difficulty: 3
 - id: doc_110_桃園_武陵_數學_數B_g11s2e3_s2_1
   section: 2

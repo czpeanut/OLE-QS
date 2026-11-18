@@ -191,7 +191,7 @@ questions:
   number: 1
   type: fill
   page: 1
-  stem: 請將整數 1，2，3，4，5 填入右圖的 5 個框框中，滿足圖中的等式，其中$i = \sqrt{- 1}$，一個格子只能填一個數字，且填過的數字不重覆。（寫出一種正確的答案即可！）
+  stem: 請將整數 $1, 2, 3, 4, 5$ 填入等式 $(□ + □i) + (□ + □i) = 7 + □i$ 的 5 個框框中，其中 $i = \sqrt{-1}$，一個格子只能填一個數字，且填過的數字不重複。（寫出一種正確的答案即可！）
   assets:
   - key: s2_1_f1
     kind: figure
@@ -217,7 +217,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 需看附圖等式作答；題幹有亂碼（不覆）
+    fixed_by: agent
+    fix_note: （人工修正：補充複數等式取代缺圖，修正亂碼並補齊答案與解析）
   difficulty: 2
+  explanation: 實部相加為 $2+5=7$，虛部相加為 $1+3=4$，故 $(2+1i)+(5+3i)=7+4i$ 恰好使用 $1, 2, 3, 4, 5$ 各一次。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $(2 + 1i) + (5 + 3i) = 7 + 4i$
 - id: doc_112_台中_台中二中_數學_數甲_g12s2e1_s2_2
   section: 2
   number: 2

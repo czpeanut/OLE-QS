@@ -45,9 +45,9 @@ questions:
   - label: D
     content: S
   answer:
-  - C
-  answer_status: verified
-  answer_source: answer_key
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: BI-S1-4-1
@@ -62,7 +62,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原題答案(C)與課綱事實不符：梅瑟生與史達爾DNA半保留複製實驗標記的是N（15N），非P。
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案為B（N同位素）並補充解析）
   difficulty: 1
+  explanation: 梅瑟生（Meselson）與史達爾（Stahl）利用氮的穩定同位素$^{15}\text{N}$與$^{14}\text{N}$標記細菌DNA，藉由氯化銫密度梯度離心證實DNA為半保留複製，故選(B)。
+  review_note: 原答案卷答案 ['C']，執行 agent 修正為 ['B']
 - id: doc_112_苗栗_苑裡_自然_生物_選修生物I_g11s1e3_s1_2
   section: 1
   number: 2

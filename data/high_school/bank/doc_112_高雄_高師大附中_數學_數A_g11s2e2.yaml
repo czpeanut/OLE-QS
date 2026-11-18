@@ -264,18 +264,18 @@ questions:
   number: 5
   type: multiple
   page: 2
-  stem: 設一樣本空間 U 至少包含兩事件 A、B，其中 P
+  stem: 設一樣本空間 $U$ 至少包含兩事件 $A$、$B$，其中 $P(A)=x$，$P(B)=y$，且 $P(A\mid B)=\frac{1}{2}$，$P(B\mid A)=\frac{2}{3}$，下列哪些選項正確？
   options:
   - label: A
-    content: ＝x，P
+    content: $x:y = 4:3$
   - label: B
-    content: ＝y 且 P（A∣B）＝$\frac{1}{2}$，P（B∣A）＝$\frac{2}{3}$，下列哪些選項正確？(A) x：y＝4：3(B) x ≤$\frac{3}{5}$
+    content: $x \le \frac{3}{5}$
   - label: C
-    content: y ≤$\frac{2}{5}$
+    content: $y \le \frac{2}{5}$
   - label: D
-    content: 若 A、B 為獨立事件，則 x＝$\frac{1}{2}$
+    content: 若 $A$、$B$ 為獨立事件，則 $x = \frac{1}{2}$
   - label: E
-    content: 若 A、B 為獨立事件，則 P（A∩B）＝$\frac{2}{3}$
+    content: 若 $A$、$B$ 為獨立事件，則 $P(A\cap B) = \frac{2}{3}$
   answer:
   - B
   - D
@@ -295,7 +295,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹與選項排版錯亂（P(A)=x、P(B)=y 被誤拆為選項 A、B）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項排版錯亂並補齊解析）
   difficulty: 3
+  explanation: '由條件機率得 $P(A\cap B) = \frac{1}{2}y = \frac{2}{3}x$，故 $x:y = 3:4$，(A) 錯誤。
+
+    又 $P(A\cup B) = x + y - P(A\cap B) = x + \frac{4}{3}x - \frac{2}{3}x = \frac{5}{3}x \le 1$，得 $x \le \frac{3}{5}$ 且 $y \le \frac{4}{5}$，故 (B) 正確、(C) 錯誤。
+
+    若 $A, B$ 獨立，則 $x = P(A) = P(A\mid B) = \frac{1}{2}$，$y = \frac{2}{3}$，此時 $P(A\cap B) = xy = \frac{1}{3}$，故 (D) 正確、(E) 錯誤。'
 - id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_1
   section: 2
   number: 1

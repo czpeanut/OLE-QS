@@ -33,7 +33,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 2018下半年中國爆發非洲豬瘟，引起周圍國家的緊張。尤其臺灣即將在2019年解除長達21年來的「口蹄疫疫區」標籤，豬肉終於可恢復外銷，自然對疫情更加關注。非洲豬瘟的病原體為非洲豬瘟病毒，遺傳物質為DAN；口蹄疫的病原體則為RNA病毒。若在實驗室中不慎將兩種病毒的檢體搞混，下列何種遺傳物質的檢測方式<u>無法</u>辨別這兩種不同的病毒？
+  stem: 2018下半年中國爆發非洲豬瘟，引起周圍國家的緊張。尤其臺灣即將在2019年解除長達21年來的「口蹄疫疫區」標籤，豬肉終於可恢復外銷，自然對疫情更加關注。非洲豬瘟的病原體為非洲豬瘟病毒，遺傳物質為DNA；口蹄疫的病原體則為RNA病毒。若在實驗室中不慎將兩種病毒的檢體搞混，下列何種遺傳物質的檢測方式<u>無法</u>辨別這兩種不同的病毒？
   options:
   - label: A
     content: 檢測含氮鹼基種類
@@ -57,7 +57,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「DNA」誤植為「DAN」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「DAN」錯字為「DNA」並補齊答案與解析）
   difficulty: 2
+  explanation: DNA與RNA的含氮鹼基種類（T vs U）、五碳醣種類（去氧核糖 vs 核糖）及核苷酸序列皆不同，唯有磷酸基種類完全相同，故無法以檢測磷酸基來辨別，選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_桃園_平鎮_自然_生物_g10s1e3_s1_2
   section: 1
   number: 2
@@ -501,7 +508,7 @@ questions:
   number: 16
   type: single
   page: 2
-  stem: 比較人體的上皮細胞和神經細胞，下列何者完全相同？甲、DBA的構造，乙、ATPA的構造，丙、染色體數目，丁、RNA的數目，戊、酵素種類。
+  stem: 比較人體的上皮細胞和神經細胞，下列何者完全相同？甲、DNA的構造，乙、ATP的構造，丙、染色體數目，丁、RNA的數目，戊、酵素種類。
   options:
   - label: A
     content: 甲丙戊
@@ -510,7 +517,7 @@ questions:
   - label: C
     content: 乙丙戊
   - label: D
-    content: 甲乙丁
+    content: 甲乙丙
   tags:
     unit:
       code: BI-1-2-2
@@ -525,7 +532,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「DNA」誤植為「DBA」，「ATP」誤植為「ATPA」，且選項B與D重複
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「DBA」、「ATPA」錯字與選項D重複內容並補齊答案與解析）
   difficulty: 2
+  explanation: 同一人體的上皮細胞與神經細胞皆由同一個受精卵經有絲分裂分化而來，因此兩者的DNA構造（甲）、ATP分子構造（乙）與染色體數目（丙）完全相同；但因細胞分化時表現的基因不同，RNA數目（丁）與酵素種類（戊）會有所差異。故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_桃園_平鎮_自然_生物_g10s1e3_s1_17
   section: 1
   number: 17

@@ -256,14 +256,14 @@ questions:
   number: 10
   type: single
   page: 1
-  stem: 二十年前的一樁富商綁架撕票案，讓徐自強人生中大半的歲月在監獄中度過，最初警方循線逮捕的是黃春棋，但被警方刑求的他卻供出一個檢方無證據證明徐自強犯罪的白白書，且拒絕出庭作證，使徐自強無權替自己辯護，經歷9次更審、5次非常上訴，並做成釋字第582號解釋。徐自強最終在高等法院參酌釋字第582號解釋後獲判無罪。請問：根據上述情境，何者可能為釋字第582號解釋所提及之人權保障內容？
+  stem: 二十年前的一樁富商綁架撕票案，讓徐自強人生中大半的歲月在監獄中度過，最初警方循線逮捕的是黃春棋，但被警方刑求的他卻供出一個檢方無證據證明徐自強犯罪的自白書，且拒絕出庭作證，使徐自強無權替自己辯護，經歷9次更審、5次非常上訴，並做成釋字第582號解釋。徐自強最終在高等法院參酌釋字第582號解釋後獲判無罪。請問：根據上述情境，何者可能為釋字第582號解釋所提及之人權保障內容？
   options:
   - label: A
     content: 將法務部檢察官的羈押權回歸法官
   - label: B
     content: 對被告自白的證據採嚴格認定標準
   - label: C
-    content: 宣告警察自行裁決拘留之權力違惠
+    content: 宣告警察自行裁決拘留之權力違憲
   - label: D
     content: 犯人權益受重大侵害時得提起訴訟
   tags:
@@ -277,6 +277,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹錯字：「白白書」應為「自白書」；選項(C)錯字：「違惠」應為「違憲」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字「白白書」及選項C「違惠」並補充答案與解析）
+  explanation: 司法院釋字第582號解釋針對共同被告之自白，闡明為確保被告詰問證人之憲法訴訟權，共同被告之自白不得作為有罪判決之唯一證據，仍應經嚴格證據調查與對質詰問程序，故選(B)。(A)為釋字第392號；(C)為釋字第166號、第251號；(D)受刑人訴訟權為釋字第755號等。答案選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_高雄_鳳山_社會_公民與社會_選修公民與社會II_g12s2e1_s1_11
   section: 1
   number: 11
@@ -387,7 +394,7 @@ questions:
   - label: A
     content: 店主可依消費契約關係，要求甲清償所欠小吃店之全部餐費
   - label: B
-    content: 店主為懲罰甲之詐騙行為，可要求甲付餐費五十倍之達約金
+    content: 店主為懲罰甲之詐騙行為，可要求甲付餐費五十倍之違約金
   - label: C
     content: 店主除可要求甲清償所欠小吃店之餐費外，尚可要求甲精神賠償
   - label: D
@@ -403,6 +410,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項(B)錯字：「達約金」應為「違約金」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹缺字「甲之形貌」與選項B錯字「達約金」並補充答案與解析）
+  explanation: 甲點餐消費即與店主成立買賣／消費契約，依契約關係店主有權請求甲給付所欠全部餐費，故(A)正確。(B)雙方並無五十倍懲罰性違約金之約定；(C)單純財產權受損害未侵害人格權，不得請求精神賠償；(D)將人綑綁鎖在廁所已逾越必要程度，構成刑法妨害自由罪且不符民法自助行為要件。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_高雄_鳳山_社會_公民與社會_選修公民與社會II_g12s2e1_s1_16
   section: 1
   number: 16
@@ -415,7 +429,7 @@ questions:
   - label: B
     content: 搜書包的行為有侵害學生隱私權、人格權與財產權之疑慮
   - label: C
-    content: 若學生因被查到賦物而遭退學處分，經申訴後不服可直接提出行政訴訟
+    content: 若學生因被查到贓物而遭退學處分，經申訴後不服可直接提出行政訴訟
   - label: D
     content: 教官的做法符合增進公共利益之必要，無侵害學生權利之虞
   tags:
@@ -429,6 +443,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項(C)錯字：「賦物」應為「贓物」
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C錯字「賦物」並補充答案與解析）
+  explanation: 學生亦為憲法基本權利主體，享有隱私權與人格權；未經學生同意或缺乏法定正當程序即全面搜查書包，有侵害學生隱私權、人格權與財產權之疑慮，故(B)正確。(A)未成年人同樣受憲法基本權保障；(C)退學處分屬行政處分，不服校內申訴後須先經「訴願」再提起行政訴訟；(D)全面無差別搜書包不符比例原則。答案選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_高雄_鳳山_社會_公民與社會_選修公民與社會II_g12s2e1_s1_17
   section: 1
   number: 17
@@ -1106,7 +1127,7 @@ questions:
   - label: C
     content: 交通罰單是屬於行政處分的行政行為
   - label: D
-    content: 警察依照《警察職椎行使法》行使職權
+    content: 警察依照《警察職權行使法》行使職權
   - label: E
     content: 罰單上寫著「不服舉發者，應於接獲本單15日內，向處罰機關陳述」屬於正當程序的一部分
   tags:
@@ -1120,6 +1141,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(D)錯字：「警察職椎行使法」應為「警察職權行使法」
+    fixed_by: agent
+    fix_note: （人工修正：修正選項D錯字「警察職椎行使法」並補充答案與解析）
+  explanation: (C)交通罰單係行政機關針對特定交通違規事件對外直接發生法律效果之單方決定，屬「行政處分」，正確；(E)載明陳述意見期限保障當事人程序參與權，屬於正當法律程序，正確。(A)違規時間、地點與事實未載明違反「明確性原則」；(B)裁量罰鍰應符合比例原則與平等原則；(D)交通違規舉發係依《道路交通管理處罰條例》而非《警察職權行使法》。答案選(C)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - E
 - id: doc_110_高雄_鳳山_社會_公民與社會_選修公民與社會II_g12s2e1_s2_44
   section: 2
   number: 44
@@ -1260,7 +1289,7 @@ questions:
   number: 49
   type: multiple
   page: 5
-  stem: 近年來，桃園陸續發生建商一屋二賣，並將房屋所有權移轉給後手之消費者，讓預售屋的前手消費者付了大筆自備款，房子卻無法交屋的糾紛。下列哪些訴願前置程序的敘述正確？
+  stem: 近年來，桃園陸續發生建商一屋二賣，並將房屋所有權移轉給後手之消費者，讓預售屋的前手消費者付了大筆自備款，房子卻無法交屋的糾紛。下列關於此民事買賣糾紛的敘述，哪些正確？
   options:
   - label: A
     content: 為了防止不肖建商一屋二賣，消費者可採取預告登記預防措施
@@ -1283,6 +1312,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹敘述有誤：「訴願前置程序」與選項「一屋二賣」內容不符
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹誤植之「訴願前置程序」為民事買賣糾紛並補充答案與解析）
+  explanation: (A)預售屋買受人可辦理預告登記，防止建商將房屋移轉給第三人，正確；(B)兩個買賣契約均屬有效之債權契約，依債權平等性原則，兩者權利立於平等地位，正確；(C)後手依法登記取得所有權，前手原則上不得對後手主張侵權行為，錯誤；(D)建商無法依約交屋給前手，應負給付不能之債務不履行損害賠償責任，正確；(E)債權無排他與優先效力，並非先訂約者即優先取得所有權，錯誤。答案選(A)(B)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - D
 - id: doc_110_高雄_鳳山_社會_公民與社會_選修公民與社會II_g12s2e1_s2_50
   section: 2
   number: 50

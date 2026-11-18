@@ -678,6 +678,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原卷為選修化學I，本題實際考選修化學IV氧化數計算
+    fixed_by: agent
+    fix_note: （人工修正：確認題目與答案無誤（屬選修化學IV範圍））
   difficulty: 2
 - id: doc_112_台南_台南女中_自然_化學_選修化學I_g11s1e1_s2_15
   section: 2
@@ -716,7 +718,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原卷為選修化學I，本題實際考選修化學IV自身氧化還原平衡
+    fixed_by: agent
+    fix_note: （人工修正：補齊解析）
   difficulty: 3
+  explanation: 反應中 Cl 同時由 0 價降為 －1 價（$Cl^{-}$）與升為 ＋5 價（$ClO_{3}^{-}$），為自身氧化還原反應（A正確）。平衡方程式為 $3Cl_{2} + 6OH^{-} \rightarrow 5Cl^{-} + ClO_{3}^{-} + 3H_{2}O$，係數總和為 $3+6+5+1+3=18$（B錯誤）；$ClO_{3}^{-}$ 為被氧化產物（C錯誤）；$Cl_{2}$ 同時為氧化劑與還原劑（D正確），其中作為氧化劑生成 $5Cl^{-}$ 占總消耗 $Cl_{2}$ 的 $\frac{5}{6}$（E正確）。故選(A)(D)(E)。
 - id: doc_112_台南_台南女中_自然_化學_選修化學I_g11s1e1_s2_16
   section: 2
   number: 16
@@ -1058,7 +1063,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原卷為選修化學I，本題實際考選修化學IV半反應平衡法
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案與半反應平衡解析）
   difficulty: 3
+  explanation: 還原半反應：$Cr_{2}O_{7}^{2-} + 14H^{+} + 6e^{-} \rightarrow 2Cr^{3+} + 7H_{2}O$；氧化半反應：$3(H_{2}O_{2} \rightarrow O_{2} + 2H^{+} + 2e^{-})$。兩式相加消去電子與部分 $H^{+}$，得 $Cr_{2}O_{7}^{2-}(aq) + 3H_{2}O_{2}(aq) + 8H^{+}(aq) \rightarrow 2Cr^{3+}(aq) + 3O_{2}(g) + 7H_{2}O(l)$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - Cr2O7^2－(aq)＋3H2O2(aq)＋8H＋(aq) → 2Cr3＋(aq)＋3O2(g)＋7H2O(l)
 - id: doc_112_台南_台南女中_自然_化學_選修化學I_g11s1e1_s3_25
   section: 3
   number: 25

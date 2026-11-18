@@ -237,41 +237,33 @@ questions:
   number: 3
   type: multiple
   page: 2
-  stem: 符號 P(C)代表事件 C 發生的機率，符號 P（C｜D）代表在事件 D 發生的條件下，事件 C 發生的機率。今設 A，B 為樣本空間中的兩個事件，且 A，B 互為獨立事件，已知 P
+  stem: 符號 $P(C)$ 代表事件 $C$ 發生的機率，符號 $P(C\mid D)$ 代表在事件 $D$ 發生的條件下，事件 $C$ 發生的機率。今設 $A$，$B$ 為樣本空間中的兩個事件，且 $A$，$B$ 互為獨立事件，已知 $P(A) = P(B) = 0.6$。請選出正確的選項：
   options:
   - label: A
-    content: ＝P
+    content: $P(A\cup B) = 0.84$
   - label: B
-    content: ＝0.6。請選出正確的選項：(A) P（A∪B）＝0.84(B) P（A ∩ B）＝0.3
+    content: $P(A\cap B) = 0.3$
   - label: C
-    content: P（A｜B）＝0.6
+    content: $P(A\mid B) = 0.6$
   - label: D
-    content: P（A｜B）＝P（B｜A）
+    content: $P(A\mid B) = P(B\mid A)$
   - label: E
-    content: A，B 是互斥事件
+    content: $A$，$B$ 是互斥事件
   answer:
   - A
   - C
   - D
   answer_status: verified
   answer_source: answer_key
-  explanation: '(A) ○：∵A，B 互為獨立事件 ∴P（A ∩ B）＝P(A)×P(B)＝0.6×0.6＝0.36
+  explanation: '(A) ○：$P(A\cap B)=0.36$，$P(A\cup B)=0.6+0.6-0.36=0.84$。
 
-    ∴P（A∪B）＝P(A)＋P(B)－P（A ∩ B）＝0.6＋0.6－0.36＝0.84
+    (B) ×：$P(A\cap B)=0.36$。
 
-    (B) ╳：由(A)知 P（A ∩ B）＝0.36
+    (C) ○：$P(A\mid B)=P(A)=0.6$。
 
-    (C) ○：P（A｜B）＝$\frac{P (A \cap B)}{P (B)}=\frac{P (A)\times P (B)}{P (B)}$＝P(A)＝0.6
+    (D) ○：$P(A\mid B)=P(B\mid A)=0.6$。
 
-    (D) ○：∵P（A｜B）＝$\frac{P (A \cap B)}{P (B)}=\frac{P (A)\times P (B)}{P (B)}$＝P(A)＝0.6
-
-    又 P（B｜A）＝$\frac{P (B \cap A)}{P (A)}=\frac{P (B)\times P (A)}{P (A)}$＝P(B)＝0.6
-
-    ∴P（A｜B）＝P（B｜A）
-
-    (E) ╳：∵P（A ∩ B）＝0.36≠0 ∴A ∩ B≠∅ ∴A，B 非互斥事件
-
-    故選(A)(C)(D)'
+    (E) ×：$P(A\cap B)=0.36 \neq 0$，非互斥事件。'
   tags:
     unit:
       code: MA-A4-3-1
@@ -286,6 +278,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹與選項(A)(B)排版斷行錯位，P(A)與P(B)符號遺失
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項排版錯位並補齊被截斷之解析）
   difficulty: 2
 - id: doc_109_嘉義_嘉義女中_數學_數A_g11s2e2_s2_4
   section: 2

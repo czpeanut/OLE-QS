@@ -375,7 +375,6 @@ questions:
     content: '7200'
   - label: E
     content: '216'
-  group_stem: 長度為L的梯子斜靠在光滑的牆壁上，梯子和鉛直牆面之間的夾角為37°，一人重W，站在梯上距梯子底端L/4處，梯子與地面間之靜摩擦係數為0.8，梯子靜止不動，且<u>梯子的重量可以忽略不計</u>。試回答下列問題：
   shared_asset: g1_7_12
   answer:
   - B
@@ -395,7 +394,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤套題組7-8之group_stem，實際為獨立題目
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組與附圖並補全解析）
   difficulty: 2
+  explanation: 初速 $v_{1}＝72$ km/h＝20 m/s，反向末速 $v_{2}＝-144$ km/h＝-40 m/s。由衝量等於動量變化：$F_{avg}\Delta t＝m|v_{2}－v_{1}| \Rightarrow F_{avg}\times 0.10＝0.1\times |-40－20|＝6 \Rightarrow F_{avg}＝60$ N。故選(B)。
 - id: doc_111_新北_新店_自然_物理_選修物理II_g11s2e1_s1_10
   section: 1
   number: 10
@@ -413,7 +415,6 @@ questions:
     content: '2.5'
   - label: E
     content: '6'
-  group_stem: 長度為L的梯子斜靠在光滑的牆壁上，梯子和鉛直牆面之間的夾角為37°，一人重W，站在梯上距梯子底端L/4處，梯子與地面間之靜摩擦係數為0.8，梯子靜止不動，且<u>梯子的重量可以忽略不計</u>。試回答下列問題：
   shared_asset: g1_7_12
   answer:
   - A
@@ -433,13 +434,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤套題組7-8之group_stem，實際為獨立題目
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、修補亂碼並補全解析）
   difficulty: 3
+  explanation: 設跳出後臺車對地速度為 $v'$，則貓對地速度為 $v'＋16$。由水平動量守恆：$(55＋5＋20)\times 2.0＝(55＋20)v'＋5(v'＋16) \Rightarrow 160＝80v'＋80 \Rightarrow v'＝1$ m/s。故選(A)。
 - id: doc_111_新北_新店_自然_物理_選修物理II_g11s2e1_s1_11
   section: 1
   number: 11
   type: single
   page: 1
-  stem: 在光滑水平面上，有質量為0.9 kg的靜止木塊。今以某玩具槍射出一質量為0.l kg、初速30 m/s的塑膠子彈，水平射擊木塊後，塑膠子彈以15 m/s的速率反彈，如圖所示。則木塊的末速為何？
+  stem: 在光滑水平面上，有質量為 0.9 kg 的靜止木塊。今以某玩具槍射出一質量為 0.1 kg、初速 30 m/s 的塑膠子彈，水平射擊木塊後，塑膠子彈以 15 m/s 的速率反彈，則木塊的末速為何？
   options:
   - label: A
     content: '1'
@@ -451,7 +455,6 @@ questions:
     content: '5'
   - label: E
     content: 6 m/s
-  group_stem: 長度為L的梯子斜靠在光滑的牆壁上，梯子和鉛直牆面之間的夾角為37°，一人重W，站在梯上距梯子底端L/4處，梯子與地面間之靜摩擦係數為0.8，梯子靜止不動，且<u>梯子的重量可以忽略不計</u>。試回答下列問題：
   assets:
   - key: s1_11_f1
     kind: figure
@@ -482,13 +485,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤套題組7-8之group_stem，實際為獨立題目
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組、修正OCR誤植與移除附圖依賴並補全解析）
   difficulty: 2
+  explanation: 由水平動量守恆：$0.1\times 30＋0＝0.1\times (-15)＋0.9v \Rightarrow 3＝-1.5＋0.9v \Rightarrow v＝5$ m/s。故選(D)。
 - id: doc_111_新北_新店_自然_物理_選修物理II_g11s2e1_s1_12
   section: 1
   number: 12
   type: single
   page: 2
-  stem: 一砲彈以初速$v_{0}$＝50 m/s，沿仰角θ＝53°的方向發射。砲彈在最高點時，爆炸成為質量比為1：1的A、B兩碎塊，爆炸之後B碎塊自靜止作自由落體運動。若忽略空氣阻力，下列關於爆裂瞬間A碎塊的敘述，哪些正確？
+  stem: 一砲彈以初速 $v_{0}＝50$ m/s，沿仰角 θ＝53° 的方向發射。砲彈在最高點時，爆炸成為質量比為 1：1 的 A、B 兩碎塊，爆炸之後 B 碎塊自靜止作自由落體運動。若忽略空氣阻力，下列關於爆裂瞬間 A 碎塊的敘述，何者正確？
   options:
   - label: A
     content: 鉛直方向的速率為45 m/s
@@ -500,7 +506,6 @@ questions:
     content: 作鉛直上拋運動
   - label: E
     content: 作斜向拋射運動
-  group_stem: 長度為L的梯子斜靠在光滑的牆壁上，梯子和鉛直牆面之間的夾角為37°，一人重W，站在梯上距梯子底端L/4處，梯子與地面間之靜摩擦係數為0.8，梯子靜止不動，且<u>梯子的重量可以忽略不計</u>。試回答下列問題：
   assets:
   - key: s1_12_f1
     kind: figure
@@ -531,7 +536,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 誤套題組7-8之group_stem，實際為獨立題目
+    fixed_by: agent
+    fix_note: （人工修正：清除錯置題組與附圖並補全解析）
   difficulty: 3
+  explanation: 砲彈在最高點速度僅有水平分量 $v_{x}＝50\cos 53°＝30$ m/s。爆炸瞬間內力遠大於重力，動量守恆：$(m+m)\times 30＝m v_{A}＋m(0) \Rightarrow v_{A}＝60$ m/s（水平方向），之後作水平拋射運動。故選(C)。
 - id: doc_111_新北_新店_自然_物理_選修物理II_g11s2e1_s2_13
   section: 2
   number: 13

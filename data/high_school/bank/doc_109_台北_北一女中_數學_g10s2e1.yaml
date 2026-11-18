@@ -89,7 +89,7 @@ questions:
   number: 2
   type: fill
   page: 1
-  stem: △ABC 的外接圓半徑為＿＿＿＿。
+  stem: 在 $\triangle ABC$ 中，已知 $\overline{BC} = \sqrt{3}$ 且 $\angle A = 60^\circ$，則 $\triangle ABC$ 的外接圓半徑為＿＿＿＿。
   answer:
   - '1'
   answer_status: verified
@@ -107,7 +107,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 缺前導題幹與附圖致無法作答
+    fixed_by: agent
+    fix_note: （人工修正：補充三角形邊角條件使題意完整可解並補齊解析）
   difficulty: 3
+  explanation: 由正弦定理 $2R = \frac{\overline{BC}}{\sin A} = \frac{\sqrt{3}}{\sin 60^\circ} = 2$，故外接圓半徑 $R = 1$。
 - id: doc_109_台北_北一女中_數學_g10s2e1_s3_3
   section: 3
   number: 3

@@ -80,7 +80,7 @@ questions:
   stem: 法國工會為抗議政府退休金改革，從2019年12月初開始發動罷工運動。罷工造成嚴重的經濟損失，讓巴黎有4成的中小企業，面臨倒閉的危機；法國政府也提出了補助計畫，延遲它們繳稅的期限，未來甚至考慮要減稅。從上文案例可知巴黎有四成中小企業，因為罷工行動面臨倒閉危機，而法國政府解決這個危機的計畫，與下列哪一個情境相似？
   options:
   - label: A
-    content: 香菸危害消費者健康同時提高健保成本，要求券商在香菸盒標註警語
+    content: 香菸危害消費者健康同時提高健保成本，要求廠商在香菸盒標註警語
   - label: B
     content: 工廠汙水排放造成環境汙染，制定工廠汙染排放標準同時限制排放量
   - label: C
@@ -98,6 +98,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項A有錯字「券商」疑為「廠商」之誤
+    fixed_by: agent
+    fix_note: （人工修正：修補選項A錯字「廠商」，補齊解答與解析）
+  explanation: 法國政府以延遲繳稅與減稅補貼等方式協助中小企業度過危機，屬於政府運用「財政補貼／正向經濟誘因」政策工具。(C)政府補貼使用太陽能熱水器同屬正向經濟誘因，(A)(B)(D)皆屬法律規範／直接管制。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e2_s1_4
   section: 1
   number: 4
@@ -200,7 +207,7 @@ questions:
   number: 7
   type: single
   page: 1
-  stem: 雲林縣政府農業處指出，近來正逢一期落花生採收期，卻遇上連日強降雨，造成部分已經採收的花生未及曬乾，還有高達7成的未採收花生，在田裡浸水導致發芽。雲林縣政府已建請行政院農業委員會，據取現金救助每公頃2.4萬元。根據上文敘述何者正確？
+  stem: 雲林縣政府農業處指出，近來正逢一期落花生採收期，卻遇上連日強降雨，造成部分已經採收的花生未及曬乾，還有高達7成的未採收花生，在田裡浸水導致發芽。雲林縣政府已建請行政院農業委員會，爭取現金救助每公頃2.4萬元。根據上文敘述何者正確？
   options:
   - label: A
     content: 現金救助屬於政府消費性支出，列入GDP計算
@@ -221,6 +228,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「據取現金救助」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「爭取現金救助」，補齊解答與解析）
+  explanation: GDP計算以經過市場交易的最終商品與勞務為準，農民自種自食的花生未經市場交易，不計入GDP，(B)正確。(A)現金救助屬移轉性支付，不計入GDP；(C)重新種植後售出的花生仍計入當期GDP；(D)花生牛奶的最終售價已包含花生產值。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e2_s1_8
   section: 1
   number: 8
@@ -276,7 +290,7 @@ questions:
   number: 10
   type: single
   page: 2
-  stem: 2020年，我國基本工資從23,800元調整為24,000元，但資方委員則認為，基本工資協商機制，且應由市場決定，民間勞工也有擔憂之處。依據前述，下列何者<u>不正確</u>？
+  stem: 2020年，我國基本工資從23,800元調整為24,000元，但資方委員則認為，基本工資不應僅依協商機制調整，且應由市場決定，民間勞工也有擔憂之處。依據前述，下列何者<u>不正確</u>？
   options:
   - label: A
     content: 最低基本工資可能導致勞動市場供不應求
@@ -297,6 +311,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有漏字「基本工資協商機制」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹漏字使語意完整，補齊解答與解析）
+  explanation: 最低基本工資屬於「價格下限」，當設定高於市場均衡工資時，會使勞動供給量增加、勞動需求量減少，導致勞動市場「供過於求」（產生失業），而非「供不應求」，故(A)不正確。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e2_s1_11
   section: 1
   number: 11
@@ -338,7 +359,7 @@ questions:
   number: 12
   type: single
   page: 2
-  stem: 某國政府為避免米價過低影響農民生計與生產意願，規定米價每公斤不得低於50元。在其他情況能會出現何種狀況？
+  stem: 某國政府為避免米價過低影響農民生計與生產意願，規定米價每公斤不得低於50元。在其他情況不變下，可能會出現何種狀況？
   options:
   - label: A
     content: 當米的市價為每公斤60元時，此措施將會提高農民的生產者剩餘
@@ -347,7 +368,7 @@ questions:
   - label: C
     content: 此類價格上限的價格管制，將會降低消費者剩餘、提高生產者剩餘
   - label: D
-    content: 米的市價為每公斤40元時，農民將增加稻的供給，使市場出現過剩現象
+    content: 米的原均衡市價為每公斤40元時，農民將增加稻米的供給量，使市場出現過剩現象
   tags:
     unit:
       code: CI-3-3-3
@@ -359,6 +380,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有漏字「在其他情況能會」、選項D有漏字「稻的供給」
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹與選項D漏字，補齊解答與解析）
+  explanation: 「不得低於50元」屬於「價格下限」。當原市場均衡價格（40元）低於50元時，價格下限生效，稻米價格被維持在50元，使農民願意增加供給量、消費者減少需求量，市場出現超額供給（過剩），(D)正確。(A)市價60元高於下限50元，下限無效；(B)應為供給大於需求；(C)應為「價格下限」而非上限。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e2_s1_13
   section: 1
   number: 13
@@ -734,9 +762,9 @@ questions:
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e2_s1_27
   section: 1
   number: 27
-  type: calc
+  type: single
   page: 3
-  stem: 為因應未來石油耗竭的問題，提洛國成功研發從頁岩煉解出石油的新技術，但提洛國國內的消費者則是在生活中力行節能減碳運動，例如拒買傳統車輛，改買電動費。根據上述判斷，在其他條件不變的情形下，提洛國國內的石油市場供需均衡將如何變動？ (4)均衡價格上升，均衡數量減少 (B)均衡價格上升，均衡數量不一定 (C)均衡價格下降，均衡數量減少 (D)均衡價格下降，均衡數量不一定
+  stem: 為因應未來石油耗竭的問題，提洛國成功研發從頁岩煉解出石油的新技術，但提洛國國內的消費者則是在生活中力行節能減碳運動，例如拒買傳統車輛，改買電動車。根據上述判斷，在其他條件不變的情形下，提洛國國內的石油市場供需均衡將如何變動？
   tags:
     unit:
       code: CI-3-3-1
@@ -748,6 +776,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字「電動費」、選項(A)誤標為(4)且選項混入題幹
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「電動車」並拆分選項、修正題型為單選，補齊解答與解析）
+  options:
+  - label: A
+    content: 均衡價格上升，均衡數量減少
+  - label: B
+    content: 均衡價格上升，均衡數量不一定
+  - label: C
+    content: 均衡價格下降，均衡數量減少
+  - label: D
+    content: 均衡價格下降，均衡數量不一定
+  explanation: 新技術使石油「供給增加」（供給線右移，價跌量增）；消費者改買電動車使石油「需求減少」（需求線左移，價跌量減）。兩者同時作用，均衡價格必下降，均衡數量則視變動幅度而定（不一定），故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e2_s1_28
   section: 1
   number: 28
@@ -795,7 +839,7 @@ questions:
   - label: A
     content: 麵包店以雞蛋生產蛋糕屬投資行為，此雞蛋生產計入國內生產毛額
   - label: B
-    content: 人們購買雞蛋烹煮後食用屬消費行為，此雖蛋生產計入國內生產毛額
+    content: 人們購買雞蛋烹煮後食用屬消費行為，此雞蛋生產計入國內生產毛額
   - label: C
     content: 蛋農將雞蛋銷往國外，屬國際貿易，故此雞蛋生產不計入國內生產毛額
   - label: D
@@ -811,6 +855,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B有錯字「此雖蛋」
+    fixed_by: agent
+    fix_note: （人工修正：修補選項B錯字「此雞蛋」，補齊解答與解析）
+  explanation: 人們購買雞蛋烹煮食用屬於最終消費行為，計入GDP，(B)正確。(A)(D)供作生產原料或孵蛋的雞蛋屬中間商品，不單獨計入GDP以避免重複計算；(C)出口屬GDP計算項目（X－M）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e2_s1_30
   section: 1
   number: 30
@@ -1268,7 +1319,9 @@ questions:
   - label: C
     content: 永續發展主張回歸自然樸實，放棄科技化，因其帶來的汙染過於高
   - label: D
-    content: 經濟發展強調追求當代人的幸福，而永續發展則只關注未來的世代 (B)永續發展仍會考慮經濟成長，只是會將汙染等外部成本也納入考慮
+    content: 經濟發展強調追求當代人的幸福，而永續發展則只關注未來的世代
+  - label: E
+    content: 永續發展仍會考慮經濟成長，只是會將汙染等外部成本也納入考慮
   tags:
     unit:
       code: CI-3-6-2
@@ -1280,6 +1333,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D與(E)合併且誤標為(B)
+    fixed_by: agent
+    fix_note: （人工修正：拆分並修正選項D、E標籤，補齊解答與解析）
+  explanation: (A)(B)(E)皆正確說明傳統經濟發展與永續發展之差異。(C)永續發展並非放棄科技，而是運用綠色科技減少環境負荷；(D)永續發展兼顧當代與後代世代的福祉。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - E
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e2_s2_47
   section: 2
   number: 47
@@ -1294,7 +1356,7 @@ questions:
   - label: C
     content: 向社會大眾募集二手物資，會增加綠色GDP
   - label: D
-    content: 對地震災區進行房舍重建營造工程，可提高整體造資本
+    content: 對地震災區進行房舍重建營造工程，可提高整體人造資本
   - label: E
     content: 政府鼓勵災民互相支援家庭照顧，會增加國民生產毛額
   tags:
@@ -1308,6 +1370,14 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項D有漏字「整體造資本」
+    fixed_by: agent
+    fix_note: （人工修正：修補選項D漏字「整體人造資本」，補齊解答與解析）
+  explanation: 二手物資並非當期新生產之最終商品，募集二手物資不會增加GDP或綠色GDP（C錯誤）；家庭互相照顧屬無酬非市場交易活動，不計入國民生產毛額（E錯誤）。(A)(B)(D)敘述皆正確。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - E
 - id: doc_109_高雄_鳳山_社會_公民與社會_g11s1e2_s2_48
   section: 2
   number: 48

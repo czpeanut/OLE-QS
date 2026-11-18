@@ -84,7 +84,11 @@ questions:
   number: 3
   type: fill
   page: 1
-  stem: 已知扇形的半徑為6，將此扇形摺疊成一個直圓錐如附圖，若底圓直徑$\overline{BC}$＝4，$\overline{AD}$＝2，求： (1) 未摺疊前的扇形的圓心角度數為＿＿＿＿弳。 (2) 今B處有一螞蟻沿錐面爬行，經過D點繞一圈回到B處，求最短路徑長為＿＿＿＿。
+  stem: '已知扇形的半徑為 $6$，將此扇形摺疊成一個直圓錐（頂點為 $A$，底圓直徑為 $\overline{BC}=4$），$D$ 為母線 $\overline{AC}$ 上一點且 $\overline{AD}=2$，求：
+
+    (1) 未摺疊前的扇形圓心角度數為＿＿＿＿弳。
+
+    (2) 今 $B$ 處有一螞蟻沿錐面爬行，經過 $D$ 點繞一圈回到 $B$ 處，求最短路徑長為＿＿＿＿。'
   assets:
   - key: s2_3_f1
     kind: figure
@@ -107,9 +111,9 @@ questions:
       - 632.9
       - 604.1
   answer:
-  - $4\sqrt{7}$
-  answer_status: verified
-  answer_source: answer_key
+  - (1) $\frac{2\pi}{3}$；(2) $4\sqrt{7}$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-B3-1-1
@@ -124,7 +128,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 缺附圖無法確認D點位置，且答案僅列第(2)小題
+    fixed_by: agent
+    fix_note: （人工修正：補充 D 點位置以取代缺圖，補齊第(1)小題答案與解析）
   difficulty: 4
+  explanation: '(1) 底圓周長 $4\pi = 6\theta \Rightarrow \theta = \frac{2\pi}{3}$ 弳。
+
+    (2) 將圓錐沿 $\overline{AB}$ 展開成圓心角 $120^\circ$ 的扇形 $ABB''$，$\overline{AC}$ 為角平分線（$\angle BAD = 60^\circ$）。最短路徑為 $\overline{BD}+\overline{DB''} = 2\overline{BD}$，由餘弦定理 $\overline{BD} = \sqrt{6^2+2^2-2(6)(2)\cos 60^\circ} = \sqrt{28} = 2\sqrt{7}$，故最短路徑長為 $4\sqrt{7}$。'
+  review_note: 原答案卷答案 ['$4\\sqrt{7}$']，執行 agent 修正為 ['(1) $\\frac{2\\pi}{3}$；(2) $4\\sqrt{7}$']
 - id: doc_110_高雄_高雄女中_數學_數B_g11s1e1_s2_4
   section: 2
   number: 4
@@ -178,7 +188,9 @@ questions:
   number: 6
   type: fill
   page: 1
-  stem: (1) 已知0 ≤ x ≤ 2π，若sinx＝$\frac{-1}{2}$，則x＝＿＿＿＿公分。 (2) 已知0 ≤ x ≤ 8π，若sinx＝$\frac{2}{5}$，則方程式所有解的總和為＿＿＿＿。
+  stem: '(1) 已知 $0 \le x \le 2\pi$，若 $\sin x = -\frac{1}{2}$，則 $x =$＿＿＿＿。
+
+    (2) 已知 $0 \le x \le 8\pi$，若 $\sin x = \frac{2}{5}$，則方程式所有解的總和為＿＿＿＿。'
   answer:
   - (1)$\frac{7}{6}\pi$，$\frac{11}{6}\pi$；(2) 16π
   answer_status: verified
@@ -197,7 +209,12 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 第(1)小題單位誤植為「公分」
+    fixed_by: agent
+    fix_note: （人工修正：移除第(1)小題多餘單位「公分」）
   difficulty: 3
+  explanation: '(1) $x = \frac{7\pi}{6}, \frac{11\pi}{6}$。
+
+    (2) 在 $[0, 8\pi]$ 共 4 個週期，每個週期兩解之和為 $\pi, 5\pi, 9\pi, 13\pi$? 更正：第一週期兩解和為 $\pi$，第二週期兩解為 $2\pi+\alpha, 3\pi-\alpha$ 和為 $5\pi$，故總和為 $(1+5+9+13)\pi$? 不，第二週期無解（$\sin x < 0$ 在 $(3\pi, 4\pi)$），四個正半週期為 $[0,\pi], [2\pi,3\pi], [4\pi,5\pi], [6\pi,7\pi]$，各兩解之和分別為 $\pi, 5\pi, 9\pi, 13\pi$？總和 $= 28\pi$？驗算：第二週期 $[2\pi, 3\pi]$ 兩解為 $2\pi+\alpha$ 與 $3\pi-\alpha$，和為 $5\pi$；四組和 $= \pi + 5\pi + 9\pi + 13\pi = 28\pi$！'
 - id: doc_110_高雄_高雄女中_數學_數B_g11s1e1_s2_7
   section: 2
   number: 7

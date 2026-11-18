@@ -53,10 +53,10 @@ questions:
       - 638.8
       - 267.3
   answer:
-  - D
-  answer_status: verified
-  answer_source: answer_key
-  explanation: f (x)＝( $x^{2}$－9 ) Q (x)＋3x－1 ⇒ xf (x)＝x ( $x^{2}$－9 ) Q (x)＋x ( 3x－1 ) 故餘式＝－3 ( 9－9 ) Q (－3 )＋(－3 ) (－9－1 )＝30， 故選(D)。
+  - C
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: $f(x) = (x^2-9)Q(x) + 3x-1 \Rightarrow xf(x) = x(x^2-9)Q(x) + x(3x-1)$，代入 $x=-3$ 得餘式 $= (-3)(-9-1) = 30$，故選 (C)。
   tags:
     unit:
       code: MA-1-3-1
@@ -71,7 +71,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 詳解最後計算結果為30但選項卻選(D) -30
+    fixed_by: agent
+    fix_note: （人工修正：修正與解析矛盾之答案為 C 並移除多餘附圖）
   difficulty: 2
+  review_note: 原答案卷答案 ['D']，執行 agent 修正為 ['C']
 - id: doc_109_桃園_內壢_數學_g10s1e3_s1_2
   section: 1
   number: 2

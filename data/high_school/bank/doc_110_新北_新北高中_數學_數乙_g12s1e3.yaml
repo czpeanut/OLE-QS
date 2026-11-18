@@ -378,7 +378,7 @@ questions:
   number: 15
   type: fill
   page: 1
-  stem: 設A為正實數，滿足$\frac{(a+i)(3-i)}{|3+4i|}$＝2，試求A的值＝＿＿＿＿。
+  stem: 設 $A$ 為正實數，滿足 $\frac{(A+i)(3-i)}{|3+4i|} = 2$，試求 $A$ 的值 $=$＿＿＿＿。
   answer:
   - '3'
   answer_status: verified
@@ -397,7 +397,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹未知數大小寫混用（A 與 a）
+    fixed_by: agent
+    fix_note: （人工修正：統一題幹未知數為 A 並補齊解析）
   difficulty: 2
+  explanation: 分母 $|3+4i| = 5$，故 $(A+i)(3-i) = 10 \Rightarrow (3A+1) + (3-A)i = 10$。因 $A$ 為實數，虛部 $3-A=0 \Rightarrow A=3$。
 - id: doc_110_新北_新北高中_數學_數乙_g12s1e3_s1_16
   section: 1
   number: 16

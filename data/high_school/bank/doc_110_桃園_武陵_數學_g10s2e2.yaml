@@ -191,20 +191,12 @@ questions:
   number: 7
   type: fill
   page: 1
-  stem: <u>森森</u>擲一顆公正骰子，骰出的點數有幾個正因數就可得多少錢。試求：<u>森森</u>擲一次骰子所得金額的期望值為＿＿＿＿元。
+  stem: 森森擲一顆公正骰子，骰出的點數有幾個正因數就可得多少錢。試求：森森擲一次骰子所得金額的期望值為＿＿＿＿元。
   answer:
   - $\frac{7}{3}$
   answer_status: verified
   answer_source: answer_key
-  explanation: '點數 1.2 3.4 5.6 1.2 2.3 2.4
-
-    ∴所求期望值為 1×$\frac{1}{6}$＋2×$\frac{1}{6}$＋2×$\frac{1}{6}$＋3×$\frac{1}{6}$＋2×$\frac{1}{6}$＋4×$\frac{1}{6}$
-
-    ＝（1＋2＋2＋3＋2＋4）×$\frac{1}{6}$
-
-    ＝$\frac{14}{6}$
-
-    ＝$\frac{7}{3}$（元）'
+  explanation: 點數 $1, 2, 3, 4, 5, 6$ 的正因數個數分別為 $1, 2, 2, 3, 2, 4$，故期望值 $= \frac{1+2+2+3+2+4}{6} = \frac{14}{6} = \frac{7}{3}$ 元。
   tags:
     unit:
       code: MA-2-2-5
@@ -219,6 +211,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹含亂碼字元（多錢）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹亂碼並整理表格格式）
   difficulty: 2
 - id: doc_110_桃園_武陵_數學_g10s2e2_s1_8
   section: 1

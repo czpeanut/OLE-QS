@@ -29,10 +29,16 @@ questions:
   page: 1
   stem: 求下列各函數極限值：（若極限值不存在，則填入「不存在」） (1) $\lim_{x\rightarrow -2} (x^{2}-2x-3)^{4}$＝＿＿＿＿。 (2) $\lim_{x\rightarrow 3} \frac{x^{3}-27}{x-3}$＝＿＿＿＿。 (3) $\lim_{x\rightarrow 1} (\frac{2}{x-1}-\frac{6}{x^{2}+x-2})$＝＿＿＿＿。 (4) $\lim_{x\rightarrow 0^{+}} \frac{| |x|-x|}{x}$＝＿＿＿＿。
   answer:
-  - ×
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ×：反例：$a_{n}$＝(－1)$^{n}$ ⇒ $a_{n}^{2}$＝(－1)$^{2n}$＝1，所以< $a_{n}^{2}$ >收斂，但< $a_{n}$ >發散。
+  - (1) $625$；(2) $27$；(3) $\frac{2}{3}$；(4) $0$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: '(1) $((-2)^2 - 2(-2) - 3)^4 = 5^4 = 625$。
+
+    (2) $\lim_{x\to 3}(x^2+3x+9) = 27$。
+
+    (3) $\lim_{x\to 1}\frac{2(x+2)-6}{(x-1)(x+2)} = \lim_{x\to 1}\frac{2}{x+2} = \frac{2}{3}$。
+
+    (4) 當 $x>0$ 時 $|x|=x$，故 $\lim_{x\to 0^+}\frac{||x|-x|}{x} = \lim_{x\to 0^+} 0 = 0$。'
   tags:
     unit:
       code: MA-Y1-1-2
@@ -47,7 +53,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer與explanation誤植為是非題答案，與填充題幹不符
+    fixed_by: agent
+    fix_note: （人工修正：更正誤植為是非題的答案與解析）
   difficulty: 2
+  review_note: 原答案卷答案 ['×']，執行 agent 修正為 ['(1) $625$；(2) $27$；(3) $\\frac{2}{3}$；(4) $0$']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e1_s1_2
   section: 1
   number: 2
@@ -55,9 +64,9 @@ questions:
   page: 1
   stem: 求下列各數列極限值：（若極限值不存在，則填入「不存在」） (1) $\lim_{n\rightarrow \infty} \frac{1^{2}+3^{2}+5^{2}+\cdots +(2n-1)^{2}}{4n^{3}}$＝＿＿＿＿。 (2) $\lim_{n\rightarrow \infty} \frac{3^{n}+7^{n+1}}{(-5)^{n}+7^{n-1}}$＝＿＿＿＿。 (3) $\lim_{n\rightarrow \infty} \tan \frac{(4n+1)\pi}{4}$＝＿＿＿＿。
   answer:
-  - ○
-  answer_status: verified
-  answer_source: answer_key
+  - (1) $\frac{1}{3}$；(2) $49$；(3) $1$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-Y1-1-1
@@ -72,7 +81,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer誤植為是非題答案，與填充題幹不符
+    fixed_by: agent
+    fix_note: （人工修正：更正誤植為是非題的答案並補齊解析）
   difficulty: 2
+  explanation: '(1) 分子領導項為 $\frac{4}{3}n^3$，分母為 $4n^3$，故極限為 $\frac{1}{3}$。
+
+    (2) 分子分母同除 $7^n$ 得 $\frac{7}{1/7} = 49$。
+
+    (3) $\tan\frac{(4n+1)\pi}{4} = \tan(n\pi+\frac{\pi}{4}) = 1$，極限為 $1$。'
+  review_note: 原答案卷答案 ['○']，執行 agent 修正為 ['(1) $\\frac{1}{3}$；(2) $49$；(3) $1$']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e1_s1_3
   section: 1
   number: 3
@@ -80,10 +97,10 @@ questions:
   page: 1
   stem: 若一無窮等比級數和為49，其前兩項和為48，則前四項和為＿＿＿＿。
   answer:
-  - ×
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ×：反例：$a_{n}$＝2，$b_{n}$＝1＋$\frac{1}{n}$，$c_{n}$＝2＋$\frac{1}{n}$ ⇒ $b_{n}$ ≤ $a_{n}$ ≤ $c_{n}$ ⇒ $\lim_{n\rightarrow \infty} b_{n}$＝1，$\lim_{n\rightarrow \infty} c_{n}$＝2 ⇒ $\lim_{n\rightarrow \infty} b_{n}$≠$\lim_{n\rightarrow \infty} c_{n}$，但< $a_{n}$ >收斂。
+  - $\frac{2400}{49}$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 設首項 $a_1$、公比 $r$（$|r|<1$），由 $\frac{a_1}{1-r}=49$ 與 $a_1(1+r)=48$ 相乘得 $49(1-r^2)=48 \Rightarrow r^2 = \frac{1}{49}$。前四項和為 $\frac{a_1(1-r^4)}{1-r} = 49(1 - \frac{1}{2401}) = \frac{2400}{49}$。
   tags:
     unit:
       code: MA-Y1-1-1
@@ -98,18 +115,21 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer與explanation誤植為是非題答案，與填充題幹不符
+    fixed_by: agent
+    fix_note: （人工修正：更正誤植為是非題的答案與解析）
   difficulty: 2
+  review_note: 原答案卷答案 ['×']，執行 agent 修正為 ['$\\frac{2400}{49}$']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e1_s1_4
   section: 1
   number: 4
   type: fill
   page: 1
-  stem: 對任意正整數n，兩函數y＝$x^{2}$＋n與y＝4nx的圖形相交於$P_{n}$、$Q_{n}$兩點，試求＝$\lim_{x\rightarrow \infty} \frac{\overline{P_{n}Q_{n}}^{2}}{n^{4}}$＝＿＿＿＿。
+  stem: 對任意正整數 $n$，兩函數 $y=x^2+n$ 與 $y=4nx$ 的圖形相交於 $P_n$、$Q_n$ 兩點，試求 $\lim_{n\to\infty} \frac{\overline{P_n Q_n}^2}{n^4} =$＿＿＿＿。
   answer:
-  - ×
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ×：反例：$a_{n}$＝(－1)$^{n}$，$b_{n}$＝(－1)$^{n＋1}$ ⇒ $a_{n}$＋$b_{n}$＝(－1)$^{n}$＋(－1)$^{n＋1}$＝0，$a_{n}b_{n}$＝(－1)$^{n}$‧(－1)$^{n＋1}$＝(－1)$^{2n＋1}$＝－1， 所以< $a_{n}$＋$b_{n}$ >收斂，< $a_{n}b_{n}$ >收斂，但< $a_{n}$ >發散。
+  - '256'
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 聯立 $x^2-4nx+n=0$，設兩根 $x_1, x_2$，則 $(x_1-x_2)^2 = 16n^2-4n$。又 $P_n, Q_n$ 在 $y=4nx$ 上，故 $\overline{P_n Q_n}^2 = (1+16n^2)(16n^2-4n)$，除以 $n^4$ 取極限得 $16\times 16 = 256$。
   tags:
     unit:
       code: MA-Y1-1-1
@@ -124,7 +144,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer與explanation誤植為是非題答案，且題幹極限變數誤寫為x→∞（應為n→∞）
+    fixed_by: agent
+    fix_note: （人工修正：修正極限變數誤寫為 x→∞ 為 n→∞，更正誤植為是非題的答案與解析）
   difficulty: 3
+  review_note: 原答案卷答案 ['×']，執行 agent 修正為 ['256']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e1_s1_5
   section: 1
   number: 5
@@ -132,10 +155,10 @@ questions:
   page: 1
   stem: 多項式f (x)滿足$\lim_{x\rightarrow 3} \frac{f(x)}{x+1}$＝2，$\lim_{x\rightarrow 2} \frac{f(x)-8}{(x-2)}$＝3且$\lim_{n\rightarrow \infty} \frac{f(n)}{2n^{3}-15n+79}$＝－1，試求$\lim_{x\rightarrow -1} f(x)$＝＿＿＿＿。
   answer:
-  - ×
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ×：反例：$a_{n}$＝(－1)$^{n}$ ⇒ $\frac{1}{a_{n}}$＝$\frac{1}{(-1)^{n}}$，所以<$\frac{1}{a_{n}}$>發散，且< $a_{n}$ >發散。
+  - '44'
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 由 $\lim_{n\to\infty}\frac{f(n)}{2n^3-15n+79}=-1$ 知 $f(x)$ 為首項係數 $-2$ 的三次多項式；由 $\lim_{x\to 2}\frac{f(x)-8}{x-2}=3$ 知 $f(2)=8, f'(2)=3$，故可設 $f(x) = -2(x-2)^3 + p(x-2)^2 + 3(x-2) + 8$。又 $\lim_{x\to 3}\frac{f(x)}{x+1}=2 \Rightarrow f(3)=8$，代入得 $-2+p+3+8=8 \Rightarrow p=-1$。故 $\lim_{x\to -1}f(x) = f(-1) = -2(-27) - 9 - 9 + 8 = 44$。
   tags:
     unit:
       code: MA-Y1-1-2
@@ -150,7 +173,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer與explanation誤植為是非題答案，與填充題幹不符
+    fixed_by: agent
+    fix_note: （人工修正：更正誤植為是非題的答案與解析）
   difficulty: 3
+  review_note: 原答案卷答案 ['×']，執行 agent 修正為 ['44']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e1_s1_6
   section: 1
   number: 6
@@ -158,9 +184,9 @@ questions:
   page: 1
   stem: 已知$\lim_{x\rightarrow 0} \frac{\sin x}{x}$＝1且y＝cos x為連續函數，試求$\lim_{x\rightarrow 0} \frac{\cos x-1}{x}$＝＿＿＿＿。
   answer:
-  - ○
-  answer_status: verified
-  answer_source: answer_key
+  - '0'
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-Y1-1-2
@@ -175,13 +201,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer誤植為是非題答案，與填充題幹不符
+    fixed_by: agent
+    fix_note: （人工修正：更正誤植為是非題的答案並補齊解析）
   difficulty: 3
+  explanation: $\lim_{x\to 0}\frac{\cos x - 1}{x} = \lim_{x\to 0}\frac{-2\sin^2(x/2)}{x} = \lim_{x\to 0}\left(-\sin\frac{x}{2}\right)\cdot\frac{\sin(x/2)}{x/2} = 0\times 1 = 0$。
+  review_note: 原答案卷答案 ['○']，執行 agent 修正為 ['0']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e1_s1_7
   section: 1
   number: 7
   type: fill
   page: 2
-  stem: 圖(1)為半徑1的圓，在其內部置入3個大小相等且兩兩外切的小圓，而每一個小圓又與圖(1)的大圓內切，所得的圖形為圖(2)。接著，在圖(2)的每一個小圓中再置入3個大小相等且兩兩外切更小的圓，而每一個更小的圓又與其在圖(1)中包覆的小圓內切，所得的圓形為圖(3)。按此步驟繼續下去，可得圖形(4)…。設$S_{n}$為圖(n)中大大小小所有圓的面積總和，若 $\lim_{n\rightarrow \infty} S_{n}$＝$\frac{\pi}{a}$，則a＝＿＿＿＿。 圖(1) 圖(2) 圖(3) 圖(4)
+  stem: 圖(1)為半徑 $1$ 的圓，在其內部置入 $3$ 個大小相等且兩兩外切的小圓，而每一個小圓又與圖(1)的大圓內切，所得的圖形為圖(2)。接著，在圖(2)的每一個小圓中再置入 $3$ 個大小相等且兩兩外切更小的圓，依此步驟繼續下去。設 $S_n$ 為第 $n$ 個圖形中大大小小所有圓的面積總和，若 $\lim_{n\to\infty} S_n = \frac{\pi}{a}$，則 $a =$＿＿＿＿。
   assets:
   - key: s1_7_f1
     kind: figure
@@ -224,10 +254,10 @@ questions:
       - 468.0
       - 254.45
   answer:
-  - ×
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ×：$0.1\overline{9}$＝$\frac{19-1}{90}$＝0.2。
+  - $36\sqrt{3}-62$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 設第一層 3 個小圓半徑為 $r$，由 $\frac{2r}{\sqrt{3}}+r = 1$ 得 $r = 2\sqrt{3}-3$。每層面積和為前一層的 $3r^2 = 3(21-12\sqrt{3}) = 63-36\sqrt{3}$ 倍，故 $\lim_{n\to\infty}S_n = \frac{\pi}{1-(63-36\sqrt{3})} = \frac{\pi}{36\sqrt{3}-62}$，得 $a = 36\sqrt{3}-62$。
   tags:
     unit:
       code: MA-Y1-1-1
@@ -242,7 +272,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer與explanation誤植為是非題答案，與填充題幹不符
+    fixed_by: agent
+    fix_note: （人工修正：移除多餘附圖標示與誤植為是非題的答案與解析）
   difficulty: 4
+  review_note: 原答案卷答案 ['×']，執行 agent 修正為 ['$36\\sqrt{3}-62$']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e1_s2_1
   section: 2
   number: 1

@@ -225,7 +225,7 @@ questions:
   number: 6
   type: fill
   page: 1
-  stem: 在坐標平面上，A ( a , r )、B ( b , s ) 為y＝log x上之兩點，其中a＜b，已知$\overline{AB}$斜率為$\frac{1}{9}$，$\overline{AB}$＝$\sqrt{82}$。且C ( r , a )、 D ( s , b ) 為y＝$10^{x}$上之兩點，求$←→$直線方程式。
+  stem: 在坐標平面上，$A(a, r)$、$B(b, s)$ 為 $y = \log x$ 上之兩點，其中 $a < b$，已知 $\overline{AB}$ 斜率為 $\frac{1}{9}$，$\overline{AB} = \sqrt{82}$，且 $C(r, a)$、$D(s, b)$ 為 $y = 10^x$ 上之兩點，求直線 $\overleftrightarrow{CD}$ 方程式。
   answer:
   - y＝9x＋1
   answer_status: verified
@@ -244,7 +244,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「$←→$直線方程式」缺漏點名稱（應為直線 CD）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹亂碼與漏失的直線名稱 CD，補齊解析）
   difficulty: 3
+  explanation: 由斜率 $\frac{s-r}{b-a} = \frac{1}{9}$ 且 $(b-a)^2 + (s-r)^2 = 82$，得 $b-a = 9, s-r = 1$，故 $s = r+1, b = a+9$。又 $10^r = a, 10^{r+1} = a+9 \Rightarrow 10a = a+9 \Rightarrow a=1, r=0$。因此 $C(0, 1), D(1, 10)$，直線 $\overleftrightarrow{CD}$ 方程式為 $y = 9x + 1$。
 - id: doc_109_台北_北一女中_數學_數A_g11s1e1_s2_7
   section: 2
   number: 7

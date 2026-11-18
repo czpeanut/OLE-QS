@@ -142,10 +142,12 @@ questions:
   page: 1
   stem: 計算下列各式的值 (1) $\frac{1}{\log _{2}100}$＋$\frac{1}{\log _{5}100}$＝＿＿＿＿。 (2) ( $log_{2}$ 3－$log_{2}$ 9 )×( $log_{3}$ 4＋$log_{9}$ 2 )＝＿＿＿＿。
   answer:
-  - $\frac{1}{2}$
-  answer_status: verified
-  answer_source: answer_key
-  explanation: (1) $\frac{1}{\log _{2}100}+\frac{1}{\log _{5}100}=\frac{\log 2}{\log 100}+\frac{\log 5}{\log 100}=\frac{\log 10}{\log 100}=\frac{1}{2}$ (2) ( $log_{2}$ 3－$log_{2}$ 9 )×( $log_{3}$ 4＋$log_{9}$ 2 )＝$(\frac{\log 3}{\log 2}-\frac{\log 9}{\log 2})\times (\frac{\log 4}{\log 3}+\frac{\log 2}{\log 9})=\frac{-\log 3}{\log 2}\times (\frac{2\log 2}{\log 3}+\frac{\log 2}{2\log 3})=-(2+\frac{1}{2})=-\frac{5}{2}$
+  - (1) $\frac{1}{2}$；(2) $-\frac{5}{2}$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: '(1) $\frac{1}{\log_2 100}+\frac{1}{\log_5 100} = \frac{\log 2 + \log 5}{\log 100} = \frac{1}{2}$。
+
+    (2) $(\log_2 3 - \log_2 9)(\log_3 4 + \log_9 2) = \frac{-\log 3}{\log 2}\left(\frac{2\log 2}{\log 3} + \frac{\log 2}{2\log 3}\right) = -\left(2+\frac{1}{2}\right) = -\frac{5}{2}$。'
   tags:
     unit:
       code: MA-B3-2-2
@@ -160,7 +162,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案僅列(1)，第(2)小題答案錯位至下一題
+    fixed_by: agent
+    fix_note: （人工修正：補齊第(2)小題答案與被截斷之解析）
   difficulty: 2
+  review_note: 原答案卷答案 ['$\\frac{1}{2}$']，執行 agent 修正為 ['(1) $\\frac{1}{2}$；(2) $-\\frac{5}{2}$']
 - id: doc_109_台中_台中二中_數學_數B_g11s2e2_s2_2
   section: 2
   number: 2
@@ -168,9 +173,9 @@ questions:
   page: 1
   stem: 若x＝log 2，則$100^{x}$－( 0.1 )$^{x}$＝＿＿＿＿。
   answer:
-  - －$\frac{5}{2}$
-  answer_status: verified
-  answer_source: answer_key
+  - $\frac{7}{2}$
+  answer_status: disputed
+  answer_source: agent_fix
   explanation: 因為x＝log 2，所以$10^{x}$＝2 ⇒ $100^{x}$－( 0.1 )$^{x}$＝( $10^{2}$ )$^{x}$－( $10^{－1}$ )$^{x}$＝( $10^{x}$ )$^{2}$－( $10^{x}$ )$^{－1}$＝$2^{2}$－$2^{－1}$＝4－$\frac{1}{2}$＝$\frac{7}{2}$
   tags:
     unit:
@@ -186,7 +191,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案欄位錯位（誤載前一題(2)答案）
+    fixed_by: agent
+    fix_note: （人工修正：更正錯位之答案）
   difficulty: 2
+  review_note: 原答案卷答案 ['－$\\frac{5}{2}$']，執行 agent 修正為 ['$\\frac{7}{2}$']
 - id: doc_109_台中_台中二中_數學_數B_g11s2e2_s2_3
   section: 2
   number: 3
@@ -194,9 +202,9 @@ questions:
   page: 1
   stem: 實數A、B滿足log A＝3.9、log B＝7.8，則log ( A＋$\sqrt{B}$ )的值最接近的正整數為n，求n＝＿＿＿＿。
   answer:
-  - $\frac{7}{2}$
-  answer_status: verified
-  answer_source: answer_key
+  - '4'
+  answer_status: disputed
+  answer_source: agent_fix
   explanation: 可知A＝$10^{3.9}$，B＝$10^{7.8}$ ⇒ log ( A＋$\sqrt{B}$ )＝log ( $10^{3.9}$＋$10^{3.9}$ )＝log ( 2．$10^{3.9}$ ) ＝3.9＋log 2$\approx$3.9＋0.301＝4.201$\approx$4 故n＝4
   tags:
     unit:
@@ -212,7 +220,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案欄位錯位（誤載前一題答案）
+    fixed_by: agent
+    fix_note: （人工修正：更正錯位之答案）
   difficulty: 3
+  review_note: 原答案卷答案 ['$\\frac{7}{2}$']，執行 agent 修正為 ['4']
 - id: doc_109_台中_台中二中_數學_數B_g11s2e2_s2_4
   section: 2
   number: 4
@@ -220,10 +231,12 @@ questions:
   page: 1
   stem: 解下列指對數方程式： (1) $log_{3}$ x＝9×$log_{x}$ 3：＿＿＿＿。 (2) log ( $10^{x}$－1000 )＝$\frac{x}{2}$＋1＋log 9：＿＿＿＿。
   answer:
-  - '4'
-  answer_status: verified
-  answer_source: answer_key
-  explanation: (1) $\frac{\log x}{\log 3}=9\times \frac{\log 3}{\log x}$ ⇒ ( log x )$^{2}$＝9．( log 3 )$^{2}$ ⇒ log x＝±3 log 3＝±log 27 故x＝27或$\frac{1}{27}$ (2) log ( $10^{x}$－1000 )＝$\log 10^{\frac{x}{2}+1+\log 9}$ ⇒ $(10^{\frac{x}{2}})^{2}-1000=10^{\frac{x}{2}+\log 90}$ ⇒ $(10^{\frac{1}{2}})^{2}=1000=90\cdot 10^{\frac{x}{2}}$ ⇒ $(10^{\frac{x}{2}})^{2}-90\cdot 10^{\frac{x}{2}}-1000=0$ ⇒ $(10^{\frac{x}{2}}-100)(10^{\frac{x}{2}}+10)=0$ ⇒ $10^{\frac{x}{2}}=100=10^{2}$ ⇒ $\frac{x}{2}$＝2 ⇒ x＝4
+  - (1) $27$ 或 $\frac{1}{27}$；(2) $4$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: '(1) $\frac{\log x}{\log 3} = 9\frac{\log 3}{\log x} \Rightarrow (\log x)^2 = 9(\log 3)^2 \Rightarrow \log x = \pm\log 27 \Rightarrow x = 27$ 或 $\frac{1}{27}$。
+
+    (2) $10^x - 1000 = 90\cdot 10^{\frac{x}{2}} \Rightarrow (10^{\frac{x}{2}}-100)(10^{\frac{x}{2}}+10)=0 \Rightarrow 10^{\frac{x}{2}} = 100 \Rightarrow x = 4$。'
   tags:
     unit:
       code: MA-B3-2-3
@@ -238,7 +251,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案欄位錯位（誤載前一題答案）
+    fixed_by: agent
+    fix_note: （人工修正：更正錯位之答案並補齊被截斷之解析）
   difficulty: 3
+  review_note: 原答案卷答案 ['4']，執行 agent 修正為 ['(1) $27$ 或 $\\frac{1}{27}$；(2) $4$']
 - id: doc_109_台中_台中二中_數學_數B_g11s2e2_s2_5
   section: 2
   number: 5
@@ -246,9 +262,9 @@ questions:
   page: 1
   stem: 解下列指對數不等式： (1) $4^{x}$－5×$2^{x}$＋4 ≤ 0：＿＿＿＿。 (2) log ( x＋1 ) ≤ 3：＿＿＿＿。
   answer:
-  - x＝27或$\frac{1}{27}$
-  answer_status: verified
-  answer_source: answer_key
+  - (1) $0 \le x \le 2$；(2) $-1 < x \le 999$
+  answer_status: disputed
+  answer_source: agent_fix
   explanation: (1) ( $2^{x}$ )$^{2}$－5．$2^{x}$＋4 ≤ 0 ⇒ ( $2^{x}$－1 ) ( $2^{x}$－4 ) ≤ 0 ⇒ 1 ≤ $2^{x}$ ≤ 4 ⇒ 0 ≤ x ≤ 2 (2) 對數有意義的條件為x＋1＞0 ⇒ x＞－1 解log ( x＋1 ) ≤ 3 ⇒ x＋1 ≤ $10^{3}$ ⇒ x ≤ 999 故－1＜x ≤ 999
   tags:
     unit:
@@ -264,13 +280,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案欄位錯位（誤載前一題(1)答案）
+    fixed_by: agent
+    fix_note: （人工修正：更正錯位之答案）
   difficulty: 3
+  review_note: 原答案卷答案 ['x＝27或$\\frac{1}{27}$']，執行 agent 修正為 ['(1) $0 \\le x \\le 2$；(2) $-1 < x \\le 999$']
 - id: doc_109_台中_台中二中_數學_數B_g11s2e2_s2_6
   section: 2
   number: 6
   type: fill
   page: 1
-  stem: 附圖為y＝$9^{x}$圖形。設P、Q分別為直線y＝2、y＝6和y＝$9^{x}$的交點，求直線$\overleftrightarrow{PQ}$的斜率為＿＿＿＿。
+  stem: 設 $P$、$Q$ 分別為直線 $y=2$、$y=6$ 和指數函數 $y=9^x$ 圖形的交點，求直線 $\overleftrightarrow{PQ}$ 的斜率為＿＿＿＿。
   assets:
   - key: s2_6_f1
     kind: figure
@@ -283,9 +302,9 @@ questions:
       - 138.8
       - 628.95
   answer:
-  - x＝4
-  answer_status: verified
-  answer_source: answer_key
+  - '8'
+  answer_status: disputed
+  answer_source: agent_fix
   explanation: 可知P ( $log_{9}$ 2 , 2 )，Q ( $log_{9}$ 6 , 6 )，所以直線$\overleftrightarrow{PQ}$的斜率為 $m=\frac{6-2}{\log _{9}6-\log _{9}2}=\frac{4}{\frac{\log 6}{\log 9}-\frac{\log 2}{\log 9}}=\frac{4\log 9}{\log 3}=\frac{8\log 3}{\log 3}=8$
   tags:
     unit:
@@ -301,7 +320,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案欄位錯位（誤載前一題(2)答案）
+    fixed_by: agent
+    fix_note: （人工修正：移除缺圖依賴並更正錯位之答案）
   difficulty: 2
+  review_note: 原答案卷答案 ['x＝4']，執行 agent 修正為 ['8']
 - id: doc_109_台中_台中二中_數學_數B_g11s2e2_s2_7
   section: 2
   number: 7
@@ -309,9 +331,9 @@ questions:
   page: 1
   stem: 實驗室發現在水中當細菌甲是細菌乙的千倍以上時，有利於孑孓的生長。根據過往經驗可知細菌甲每3天增長為原來的4倍，細菌乙每2天增長為原來的2倍。若現在取相同數量的細菌甲、乙進行培養，則 t 天後即可發展成利於孑孓的生長環境，則t的最小正整數值為＿＿＿＿。
   answer:
-  - 0 ≤ x ≤ 2
-  answer_status: verified
-  answer_source: answer_key
+  - '60'
+  answer_status: disputed
+  answer_source: agent_fix
   explanation: 依題意可知$\frac{4^{\frac{t}{3}}}{2^{\frac{t}{2}}}\geq 1000$ ⇒ $\frac{2^{\frac{2t}{3}}}{2^{\frac{t}{2}}}\geq 1000$ ⇒ $2^{\frac{2t}{3}-\frac{t}{2}}\geq 1000$ ⇒ $2^{\frac{t}{6}}\geq 1000$ ⇒ $\log 2^{\frac{t}{6}}\geq \log 1000$ ⇒ $\frac{t}{6}\log 2\geq 3$ ⇒ $t\geq \frac{18}{\log 2}\approx \frac{18}{0.301}\approx 59.8$ 故t的最小正整數值為60
   tags:
     unit:
@@ -327,15 +349,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案欄位錯位（誤載前題不等式答案）
+    fixed_by: agent
+    fix_note: （人工修正：更正錯位之答案）
   difficulty: 3
+  review_note: 原答案卷答案 ['0 ≤ x ≤ 2']，執行 agent 修正為 ['60']
 - id: doc_109_台中_台中二中_數學_數B_g11s2e2_s3_2
   section: 3
   number: 2
-  type: single
+  type: multiple
   page: 2
-  stem: 'S公司於2020年11月19日於全球發行最新的次世代遊戲主機PS5，在上市之前公司內部以對數函數y＝$log_{a}$ ( x＋k ) 來預估上市後一個月內的銷售總數量 ( 如右圖所示 )，此函數表示從銷售日算起x天後 ( 0 ≤ x ≤ 30 )，共可賣出y百萬台主機，其中a、k為常數。
-
-    (1) 根據文中的對數函數與圖形，請選出正確的選項？( 多重選擇題 )'
+  stem: S 公司於 2020 年 11 月 19 日於全球發行最新的次世代遊戲主機 PS5，在上市之前公司內部以對數函數 $y = \log_a(x+k)$ 來預估上市後一個月內的銷售總數量，此函數表示從銷售日算起 $x$ 天後（$0 \le x \le 30$），共可賣出 $y$ 百萬台主機，其中 $a$、$k$ 為常數。已知此函數圖形通過 $(0, 0)$ 與 $(1, 2)$ 兩點，請選出正確的選項？（多重選擇題）
   options:
   - label: A
     content: k＜0
@@ -358,11 +381,15 @@ questions:
       - 89.8
       - 159.25
       - 198.4
-  explanation: '(2) 十年後本利和為$10^{4}$×( 1＋0.08 )$^{10}$＋$10^{4}$×( 1＋0.08 )$^{9}$＋……＋$10^{4}$×( 1＋0.08 ) ＝$10^{4}$ ( 1.08＋$1.08^{2}$＋……＋$1.08^{10}$ ) ＝$10^{4}$×1.08×$\frac{1.08^{10}-1}{1.08-1}\approx\frac{10^{4}\times 1.08\times (2.16-1)}{0.08}$＝156600 故<u>阿兩</u>一共可得156600元
+  explanation: '(A) ×：代入 $(0,0)$ 得 $\log_a k = 0 \Rightarrow k = 1 > 0$。
 
-    2. (1) (A) ×：將 ( 0 , 0 ) 代入可得$log_{a}$ k＝0 ⇒ k＝1＞0 (B)○：將 ( 1 , 2 ) 代入可得$log_{a}$ 2＝2 ⇒ a＝$\sqrt{2}$ ⇒ 0＜a＜1.5 (C) ×：承(B)可知錯誤 (D) ×：因為a＝$\sqrt{2}$＜10，所以當1 ≤ x ≤ 30時，y＝log ( x＋k ) 恆在y＝$log_{a}$ ( x＋k ) 圖形的下方 (E)○：因為k＝1，所以將y＝$log_{a}$ x的圖形向左平移1單位可得y＝$log_{a}$ ( x＋k ) 的圖形，即當1 ≤ x ≤ 30時，y＝$log_{a}$ x恆在y＝$log_{a}$ ( x＋k ) 圖形的下方 故選(B)(E)
+    (B) ○：代入 $(1,2)$ 得 $\log_a 2 = 2 \Rightarrow a = \sqrt{2} \approx 1.414$，故 $0 < a < 1.5$。
 
-    (2) 依題意可知$\log _{\sqrt{2}}$( x＋1 ) ≥ 10 ⇒ x＋1 ≥ $(\sqrt{2})^{10}$＝$2^{5}$＝32 ⇒ x ≥ 31 所以至少要31天，故營銷部門無法達成這個目標'
+    (C) ×：承 (B)，$a < 1.5$。
+
+    (D) ×：當 $1 \le x \le 30$ 時，$x+1 > 1$ 且 $10 > \sqrt{2}$，故 $\log(x+1) < \log_{\sqrt{2}}(x+1)$。
+
+    (E) ○：當 $1 \le x \le 30$ 時，$x < x+1$ 且 $a = \sqrt{2} > 1$，故 $\log_a x < \log_a(x+1)$。'
   tags:
     unit:
       code: MA-B3-2-3
@@ -377,4 +404,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹為多重選擇題但type為single；解析混入前題內容
+    fixed_by: agent
+    fix_note: （人工修正：修正題型為 multiple、補充通過點坐標取代缺圖、清除解析混入之前題內容並補齊答案）
   difficulty: 3
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - E

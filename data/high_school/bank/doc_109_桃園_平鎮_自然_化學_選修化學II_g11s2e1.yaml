@@ -666,7 +666,9 @@ questions:
   number: 19
   type: multiple
   page: 2
-  stem: 對氫原子與氧原子而言，其電子在下列哪些能階的轉移皆需要吸收能量？ 2s $──→$ 2p $──→$ 3d $──→$ 4s $──→$ 5p $──→$ 5s
+  stem: '對氫原子與氧原子而言，其電子在下列哪些能階的轉移皆需要吸收能量？
+
+    (a) 2s → 2p；(b) 2p → 3d；(c) 3d → 4s；(d) 4s → 5p；(e) 5p → 5s'
   options:
   - label: A
     content: a
@@ -692,7 +694,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹箭頭上方代號(a~e)缺漏
+    fixed_by: agent
+    fix_note: （人工修正：補齊轉移步驟代號(a)~(e)與答案解析）
   difficulty: 3
+  explanation: 氫原子軌域能階僅與主量子數 $n$ 有關（$2s=2p < 3d < 4s < 5s=5p$）；氧原子為多電子原子，依 $(n+l)$ 規則：$2s < 2p < 4s < 3d < 5s < 5p$。(a)對氫能量不變；(b)$2p \rightarrow 3d$ 對兩者皆升階吸能；(c)$3d \rightarrow 4s$ 對氧降階放能；(d)$4s \rightarrow 5p$ 對兩者皆升階吸能；(e)$5p \rightarrow 5s$ 不吸能。故選(B)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - D
 - id: doc_109_桃園_平鎮_自然_化學_選修化學II_g11s2e1_s2_20
   section: 2
   number: 20

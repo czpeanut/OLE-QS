@@ -696,13 +696,19 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 素養應用題（整數同餘/韓信點兵），非 108 課綱多項式單元核心範圍
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案）
   difficulty: 3
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '380'
 - id: doc_109_苗栗_苑裡_數學_g10s1e3_s3_12
   section: 3
   number: 12
   type: fill
   page: 2
-  stem: 已知<u>苗栗縣</u>第四選區要選出 9 個議員，第四選區歷來的票數約有<u>竹南</u> 6 萬 5 千萬、<u>後龍</u> 3 萬票、<u>造橋</u> 1 萬票，共約有 10 萬 5 千票。假設對一個區域進行一周的競選活動約可以使非支持者中 3 ％變支持者，則最少花＿＿＿＿週進行競選活動就可以當選。（一週只能對一個區域進行競選活動，可以對同區域重複進行競選活動，且假設剛開始全部都是非支持者。）
+  stem: 已知苗栗縣第四選區要選出 9 個議員，第四選區歷來的票數約有竹南 6 萬 5 千票、後龍 3 萬票、造橋 1 萬票，共約有 10 萬 5 千票。假設對一個區域進行一週的競選活動約可以使非支持者中 $3\%$ 變支持者，則最少花＿＿＿＿週進行競選活動就可以保證當選。（一週只能對一個區域進行競選活動，可以對同區域重複進行競選活動，且假設剛開始全部都是非支持者。）
   tags:
     unit:
       code: MA-1-1-4
@@ -717,7 +723,14 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 題幹「竹南 6 萬 5 千萬」疑為「6 萬 5 千票」之筆誤；屬跨單元素養題
+    fixed_by: agent
+    fix_note: （人工修正：修正「6 萬 5 千萬」筆誤為「6 萬 5 千票」並補齊答案與解析）
   difficulty: 4
+  explanation: 應選 9 席，保證當選至少需超過總票數的 $\frac{1}{10}$，即 $105000 \div 10 = 10500$ 票以上。集中資源於人數最多的竹南（65000 票），$n$ 週後支持者數為 $65000(1 - 0.97^n) > 10500 \Rightarrow 0.97^n < \frac{109}{130} \approx 0.8385$。因 $0.97^5 \approx 0.8587$、$0.97^6 \approx 0.8330 < 0.8385$，故最少需 6 週。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '6'
 - id: doc_109_苗栗_苑裡_數學_g10s1e3_s3_13
   section: 3
   number: 13
@@ -738,4 +751,11 @@ questions:
     labeled_by: agent
     label_confidence: low
     label_note: 跨領域素養題（物理煞車距離計算）
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案與解析）
   difficulty: 3
+  explanation: 單位換算：$90\text{ km/h} = 25\text{ m/s}$，$54\text{ km/h} = 15\text{ m/s}$。反應時間內拓海移動 $25\times 0.6 = 15$ 公尺；拓海煞車距離 $S_1 = \frac{25^2}{16} = \frac{625}{16}$ 公尺；前車煞車距離 $S_2 = \frac{15^2}{16} = \frac{225}{16}$ 公尺。故最少距離為 $15 + \frac{625}{16} - \frac{225}{16} = 15 + 25 = 40$ 公尺。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - '40'

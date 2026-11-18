@@ -1230,7 +1230,7 @@ questions:
   number: 31
   type: multiple
   page: 4
-  stem: 已知火箭中的液態燃料聯胺（$H_{2}H_{4}$）與氧化劑四氧化二氮（$N_{2}O_{4}$）反應，會生成氮氣與水。取64克$N_{2}O_{4}$與46克$N_{2}O_{4}$充分反應，下列敘述何者正確？（原子量：H＝1，N＝14，O＝16）
+  stem: 已知火箭中的液態燃料聯胺（$N_{2}H_{4}$）與氧化劑四氧化二氮（$N_{2}O_{4}$）反應，會生成氮氣與水。取64克$N_{2}H_{4}$與46克$N_{2}O_{4}$充分反應，下列敘述哪些正確？（原子量：H＝1，N＝14，O＝16）
   options:
   - label: A
     content: 以最簡整數係數平衡化學反應式後，各項物質之係數總和為10
@@ -1262,7 +1262,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「$H_{2}H_{4}$」應為「$N_{2}H_{4}$」，「64克$N_{2}O_{4}$」應為「64克$N_{2}H_{4}$」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：更正題幹聯胺化學式與反應物質量誤植並補齊解析）
   difficulty: 3
+  explanation: 平衡方程式為 $2N_{2}H_{4} + N_{2}O_{4} \rightarrow 3N_{2} + 4H_{2}O$，係數和為 10（A正確）。64 g $N_{2}H_{4} = 2\text{ mol}$、46 g $N_{2}O_{4} = 0.5\text{ mol}$，限量試劑為 $N_{2}O_{4}$（B正確），生成 $1.5\text{ mol } N_{2}$（STP下為 $33.6\text{ L}$，D錯誤）與 $2\text{ mol } H_{2}O$（$36\text{ g}$，E正確）；實際參與反應質量為 $32+46=78\text{ g}$（C錯誤）。故選(A)(B)(E)。
 - id: doc_110_台中_台中二中_自然_化學_選修化學I_g11s1e1_s2_32
   section: 2
   number: 32

@@ -895,7 +895,7 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 將一小球自a處垂直上拋，到最高處b，再上墜至原處，下列哪一項正確？（空氣阻力忽略不計）
+  stem: 將一小球自 a 處垂直上拋，到最高處 b，再下墜至原處，下列哪一項正確？（空氣阻力忽略不計）
   options:
   - label: A
     content: 小球由a → b所受合力向上，由b → a所受合力向下
@@ -935,7 +935,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹錯字：「再上墜至原處」應為「再下墜至原處」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字並補全解析）
   difficulty: 2
+  explanation: 小球在空中僅受重力作用，故整個過程中（包含上升、最高點及下降）加速度皆為重力加速度 $g$，方向恆鉛直向下，大小及方向均相同。故選(C)。
 - id: doc_108_嘉義_嘉義高中_自然_物理_g10s1e1_s2_1
   section: 2
   number: 1
@@ -1123,7 +1126,7 @@ questions:
   number: 6
   type: multiple
   page: 3
-  stem: '甲、乙、丙、丁為原子或離子，其所含的質子、中子與電子的數目如下表。試單就下表的數據，判斷下列相關的敘述，哪些正確？（應選3項）
+  stem: '甲、乙、丙、丁為原子或離子，其所含的質子、中子與電子的數目如下表。試單就下表的數據，判斷下列相關的敘述，哪些正確？（應選2項）
 
     |  | 甲 | 乙 | 丙 | 丁 |
 
@@ -1164,7 +1167,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹要求「應選3項」，但標準答案僅列A、E共2項
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹應選項目數為2項並補全解析）
   difficulty: 2
+  explanation: 同位素為質子數相同但中子數不同的同一元素原子。甲、乙質子數均為2（中子數分別為1、2），互為同位素；丙、丁質子數均為3（中子數分別為3、4），互為同位素；乙、丁質子數等於電子數，皆為中性原子而非離子。故選(A)(E)。
 - id: doc_108_嘉義_嘉義高中_自然_物理_g10s1e1_s2_7
   section: 2
   number: 7

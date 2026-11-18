@@ -539,7 +539,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer欄位為null
+    fixed_by: agent
+    fix_note: （人工修正：補全解答與解析）
   difficulty: 1
+  explanation: 惠更斯原理指出：波前上的每一點可視為一個新的點波源，各自向外發出球面子波，這些子波的包絡面即為下一時刻的新波前，適用於光波、聲波及水波等各種波動，且波行進方向垂直於波前。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_111_苗栗_苑裡_自然_物理_選修物理III_g12s1e2_s1_11
   section: 1
   number: 11
@@ -661,10 +668,10 @@ questions:
   number: 14
   type: single
   page: 2
-  stem: 生活中大自然有許多特別的現象，像是在一場大雪過後，四周環境的噪音就會突然戚覺較為減弱了許多。你認為下列推論比較正確的是何者？
+  stem: 生活中大自然有許多特別的現象，像是在一場大雪過後，四周環境的噪音就會突然感覺較為減弱了許多。你認為下列推論比較正確的是何者？
   options:
   - label: A
-    content: 噪音會被白色的的物體吸收，因此大雪後噪音較低
+    content: 噪音會被白色的物體吸收，因此大雪後噪音較低
   - label: B
     content: 大雪後大地表面光滑，噪音被反射
   - label: C
@@ -687,7 +694,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer欄位為null
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項錯字並補全解答與解析）
   difficulty: 1
+  explanation: 剛落下的積雪結構蓬鬆且充滿許多細小孔隙，當聲波傳入雪層孔隙時會因多次反射與摩擦而消耗能量（吸音作用），使環境噪音明顯減弱。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_111_苗栗_苑裡_自然_物理_選修物理III_g12s1e2_s1_15
   section: 1
   number: 15
@@ -795,7 +809,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer欄位為null
+    fixed_by: agent
+    fix_note: （人工修正：補全解答與解析）
   difficulty: 1
+  explanation: 管笛吹出的特定頻率聲波與吉他琴弦或共鳴箱的自然頻率相同時，會引發共振（共鳴）現象，使吉他弦隨之振動並發出聲音。故選(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - E
 - id: doc_111_苗栗_苑裡_自然_物理_選修物理III_g12s1e2_s1_18
   section: 1
   number: 18
@@ -871,18 +892,18 @@ questions:
   number: 20
   type: single
   page: 3
-  stem: 光自折射率為1.5之玻璃內以60°之入射角射於另一種液體之界面上，恰可發生全反射，則： (1) 折射角為幾度？
+  stem: 光自折射率為 1.5 之玻璃內以 60° 之入射角射於另一種液體之界面上，恰可發生全反射（即臨界角為 60°），則該液體之折射率為何？
   options:
   - label: A
-    content: 0°
+    content: $\frac{3\sqrt{3}}{4}$
   - label: B
-    content: 30°
+    content: $\frac{3\sqrt{3}}{2}$
   - label: C
-    content: 60°
+    content: $\frac{\sqrt{3}}{2}$
   - label: D
-    content: 45°
+    content: $\sqrt{3}$
   - label: E
-    content: 90° (2) 該液體之折射率為何？ (A)$\frac{3\sqrt{3}}{4}$ (B)$\frac{3\sqrt{3}}{2}$ (C)$\frac{\sqrt{3}}{2}$ (D)$\sqrt{3}$ (E)$\frac{2\sqrt{3}}{3}$
+    content: $\frac{2\sqrt{3}}{3}$
   answer:
   - A
   answer_status: verified
@@ -901,7 +922,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 第(2)小題題幹與選項併於(1)之options中，且answer僅給['A']
+    fixed_by: agent
+    fix_note: （人工修正：拆離合併的第(1)(2)小題為完整單題並補全解析）
   difficulty: 2
+  explanation: 由司乃耳定律，$1.5\sin 60°＝n_{液}\sin 90° \Rightarrow n_{液}＝1.5\times\frac{\sqrt{3}}{2}＝\frac{3\sqrt{3}}{4}$。故選(A)。
 - id: doc_111_苗栗_苑裡_自然_物理_選修物理III_g12s1e2_s1_21
   section: 1
   number: 21
@@ -942,9 +966,7 @@ questions:
   number: 22
   type: single
   page: 3
-  stem: '下面哪一種波的傳播，<u>不需要</u>依賴介質？
-
-    題組「共鳴空氣柱」實驗題組'
+  stem: 下面哪一種波的傳播，<u>不需要</u>依賴介質？
   options:
   - label: A
     content: 水波
@@ -953,7 +975,7 @@ questions:
   - label: C
     content: 光波
   - label: D
-    content: 地震渡
+    content: 地震波
   - label: E
     content: 聲波
   answer:
@@ -974,7 +996,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: stem末尾誤混入下一題「題組『共鳴空氣柱』實驗題組」標題
+    fixed_by: agent
+    fix_note: （人工修正：移除題幹誤混入的題組標題、修正選項D錯字並補全解析）
   difficulty: 1
+  explanation: 光波屬於電磁波，可以在真空中傳播，不需要依賴介質；水波、繩波、地震波與聲波皆為力學波（機械波），必須依賴介質傳播。故選(C)。
 - id: doc_111_苗栗_苑裡_自然_物理_選修物理III_g12s1e2_s1_23
   section: 1
   number: 23

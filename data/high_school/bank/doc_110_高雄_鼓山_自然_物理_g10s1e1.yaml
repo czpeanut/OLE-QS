@@ -157,7 +157,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: <u>阿蘭</u>看到理化課本上水銀的密度表示為13.6公克／公分$^{3}$，若改以國際單位制的基本單位表示，則純水密度數值為何？
+  stem: <u>阿蘭</u>看到理化課本上水銀的密度表示為 13.6 公克／公分$^{3}$，若改以國際單位制的基本單位表示，則水銀密度數值為何？
   options:
   - label: A
     content: '13.6'
@@ -166,7 +166,9 @@ questions:
   - label: C
     content: '1360'
   - label: D
-    content: 13600 (D)136000 千克／米$^{3}$
+    content: '13600'
+  - label: E
+    content: 136000 千克／米$^{3}$
   answer:
   - D
   answer_status: verified
@@ -185,7 +187,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹誤將「水銀密度」寫為「純水密度」，且選項D與下一選項合併
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「純水」錯字、拆分選項並補全解析）
   difficulty: 2
+  explanation: $13.6\text{ g/cm}^{3}＝13.6\times\frac{10^{-3}\text{ kg}}{10^{-6}\text{ m}^{3}}＝13600\text{ kg/m}^{3}$。故選(D)。
 - id: doc_110_高雄_鼓山_自然_物理_g10s1e1_s1_5
   section: 1
   number: 5
@@ -828,11 +833,12 @@ questions:
   - label: E
     content: 兩力同時產生、同時消失
   answer:
+  - A
   - B
   - E
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ( (C)(D)作用於不同物體上，不可抵消
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 作用力與反作用力大小相等、方向相反，同時產生、同時消失，但分別作用於兩個不同物體上，故無法互相抵消。故選(A)(B)(E)。
   tags:
     unit:
       code: PH-1-2-2
@@ -847,7 +853,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹寫應選3項但參考答案僅列B、E（A亦應正確）
+    fixed_by: agent
+    fix_note: （人工修正：更正標準答案補入A並修補解析）
   difficulty: 1
+  review_note: 原答案卷答案 ['B', 'E']，執行 agent 修正為 ['A', 'B', 'E']
 - id: doc_110_高雄_鼓山_自然_物理_g10s1e1_s3_23
   section: 3
   number: 23

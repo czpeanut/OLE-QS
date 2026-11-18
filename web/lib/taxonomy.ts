@@ -7,7 +7,7 @@ import seniorData from "./data/senior.json";
 export const SUBJECTS = ["國文", "英語", "數學", "自然", "社會"];
 export const SUBS: Record<string, string[]> = { 自然: ["生物", "理化", "地科"], 社會: ["歷史", "地理", "公民"] };
 export const PUBLISHERS = ["翰林", "康軒", "南一"];
-export const BOOKS: [number, number, string][] = [[7, 1, "七上"], [7, 2, "七下"], [8, 1, "八上"], [8, 2, "八下"], [9, 1, "九上"], [9, 2, "九下"],
+export const BOOKS: [number, number, string][] = [[7, 1, "國一上"], [7, 2, "國一下"], [8, 1, "國二上"], [8, 2, "國二下"], [9, 1, "國三上"], [9, 2, "國三下"],
   [10, 1, "高一上"], [10, 2, "高一下"], [11, 1, "高二上"], [11, 2, "高二下"], [12, 1, "高三上"], [12, 2, "高三下"]];
 // 高中：分科不同（理化分成物理、化學），單元用跨版本的標準單元（data/curriculum/senior.yaml），版本欄是「標準」
 export const SENIOR_SUBS: Record<string, string[]> = { 自然: ["物理", "化學", "生物", "地科"], 社會: ["歷史", "地理", "公民與社會"] };

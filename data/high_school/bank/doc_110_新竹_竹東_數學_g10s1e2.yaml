@@ -169,15 +169,15 @@ questions:
   stem: 給定兩多項式f (x) 與g (x)，下列選項哪些正確？
   options:
   - label: A
-    content: 若deg ( f (x) )＝deg ( g (x) )＝m，則deg ( f (x)＋g (x) )＝m
+    content: 若 $\deg(f(x)) = \deg(g(x)) = m$，則 $\deg(f(x)+g(x)) = m$
   - label: B
-    content: 若deg ( f (x) )＝m，deg ( g (x) )＝m，則deg ( f (x)×g (x) )＝m＋n
+    content: 若 $\deg(f(x)) = m$，$\deg(g(x)) = n$，則 $\deg(f(x)\times g(x)) = m+n$
   - label: C
-    content: 若g (x)≠0，則deg ( f (x)×g (x) )＞deg ( f (x) )
+    content: 若 $g(x)\neq 0$，則 $\deg(f(x)\times g(x)) > \deg(f(x))$
   - label: D
-    content: 已知g (x)≠0，若f (x) 除以g (x)，會得到唯一的商式q (x) 及餘式r (x) 且f (x)＝g (x)×q (x)＋r (x)，其中 deg ( r (x) )＜deg ( q (x) ) 或是r (x)＝0
+    content: 已知 $g(x)\neq 0$，若 $f(x)$ 除以 $g(x)$，會得到唯一的商式 $q(x)$ 及餘式 $r(x)$ 且 $f(x)=g(x)\times q(x)+r(x)$，其中 $\deg(r(x)) < \deg(g(x))$ 或是 $r(x)=0$
   - label: E
-    content: 已知f (x) 除以g (x) 的商式為q (x)，餘式為r (x)，則deg ( q (x) )存在，且deg ( f (x) )＝deg ( g (x) )＋deg ( q (x) )
+    content: 已知 $f(x)$ 除以 $g(x)$ 的商式為 $q(x)$，餘式為 $r(x)$，則 $\deg(q(x))$ 存在，且 $\deg(f(x)) = \deg(g(x))+\deg(q(x))$
   answer:
   - B
   - D
@@ -198,6 +198,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(B)「deg(g(x))=m」誤植（依結論 m+n 應為 n）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項 B 誤植與亂碼，修正選項 D 餘式次數條件）
   difficulty: 2
 - id: doc_110_新竹_竹東_數學_g10s1e2_s2_2
   section: 2
@@ -378,9 +380,8 @@ questions:
     content: f (x) 的最小值為5
   answer:
   - D
-  - E
-  answer_status: verified
-  answer_source: answer_key
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-1-3-2
@@ -395,7 +396,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 參考答案誤植為(D)(E)（應僅為(D)，該二次函數開口向下有最大值 5 而非最小值）
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案為 D 並補齊解析）
   difficulty: 2
+  explanation: 配方得 $f(x) = -\frac{1}{3}(x-3)^2 + 5$。(A) ×：應為 $(x-3)^2$。(B) ×：對稱軸為 $x=3$。(C) ×：$(6-a, b)$ 會在圖形上。(D) ○：頂點 $(3,5)$ 向左 3、向下 5 後移至 $(0,0)$。(E) ×：開口向下，最大值為 5。故選 (D)。
+  review_note: 原答案卷答案 ['D', 'E']，執行 agent 修正為 ['D']
 - id: doc_110_新竹_竹東_數學_g10s1e2_s3_1
   section: 3
   number: 1
@@ -501,9 +506,9 @@ questions:
   page: 2
   stem: 試求 ( $x^{2}$＋x＋1 ) ( x－1 ) ( x－2 ) ( x－3 )$^{2}$ ( x－4 )$^{3}$ ≥ 0的解為＿＿＿＿。
   answer:
-  - 1 ≤ x ≤ 2或x＝4或x ≥ 4
-  answer_status: verified
-  answer_source: answer_key
+  - $1 \le x \le 2$ 或 $x=3$ 或 $x \ge 4$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-1-3-4
@@ -518,7 +523,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 參考答案「1≤x≤2或x＝4或x≥4」誤植（應為「1≤x≤2 或 x=3 或 x≥4」）
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案並補齊解析）
   difficulty: 3
+  explanation: 因 $x^2+x+1 > 0$ 恆成立，$(x-3)^2 \ge 0$，且不等式包含等號，故 $x=3$ 亦為解。奇數次方因式 $(x-1)(x-2)(x-4) \ge 0$ 得 $1 \le x \le 2$ 或 $x \ge 4$，合併得 $1 \le x \le 2$ 或 $x=3$ 或 $x \ge 4$。
+  review_note: 原答案卷答案 ['1 ≤ x ≤ 2或x＝4或x ≥ 4']，執行 agent 修正為 ['$1 \\le x \\le 2$ 或 $x=3$ 或 $x \\ge 4$']
 - id: doc_110_新竹_竹東_數學_g10s1e2_s3_7
   section: 3
   number: 7
@@ -550,9 +559,9 @@ questions:
   page: 2
   stem: 若三次多項式f ( x－2 ) ≥ 0的解為－1 ≤ x ≤ 3或x ≥ 7，試求f (x)＜0的解為＿＿＿＿。
   answer:
-  - x ≤ －3或1 ≤ x ≤ 5
-  answer_status: verified
-  answer_source: answer_key
+  - $x < -3$ 或 $1 < x < 5$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-1-3-4
@@ -567,7 +576,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 參考答案等號與負號有誤（f(x)<0 解應為 x<-3 或 1<x<5）
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案並補齊解析）
   difficulty: 3
+  explanation: $f(x-2) \ge 0$ 的解為 $-1 \le x \le 3$ 或 $x \ge 7$，令 $t = x-2$，則 $f(t) \ge 0$ 的解為 $-3 \le t \le 1$ 或 $t \ge 5$。故 $f(x) < 0$ 的解為 $x < -3$ 或 $1 < x < 5$。
+  review_note: 原答案卷答案 ['x ≤ －3或1 ≤ x ≤ 5']，執行 agent 修正為 ['$x < -3$ 或 $1 < x < 5$']
 - id: doc_110_新竹_竹東_數學_g10s1e2_s3_9
   section: 3
   number: 9

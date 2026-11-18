@@ -332,9 +332,11 @@ questions:
   number: 1
   type: fill
   page: 2
-  stem: '已知 sinθ＋cosθ＝$\frac{1}{3}$，試求下列各值：
+  stem: '已知 $\sin\theta + \cos\theta = \frac{1}{3}$，試求下列各值：
 
-    (1) sin2θ＝＿＿＿＿。'
+    (1) $\sin 2\theta =$＿＿＿＿。
+
+    (2) $\cos 4\theta =$＿＿＿＿。'
   answer:
   - (1)$-\frac{8}{9}$；(2)$-\frac{47}{81}$
   answer_status: verified
@@ -353,7 +355,12 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹缺第(2)小題內容
+    fixed_by: agent
+    fix_note: （人工修正：補齊第(2)小題題幹並補齊解析）
   difficulty: 2
+  explanation: '(1) 將 $\sin\theta+\cos\theta=\frac{1}{3}$ 兩邊平方得 $1 + \sin 2\theta = \frac{1}{9} \Rightarrow \sin 2\theta = -\frac{8}{9}$。
+
+    (2) $\cos 4\theta = 1 - 2\sin^2 2\theta = 1 - 2\left(-\frac{8}{9}\right)^2 = 1 - \frac{128}{81} = -\frac{47}{81}$。'
 - id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_3
   section: 3
   number: 3

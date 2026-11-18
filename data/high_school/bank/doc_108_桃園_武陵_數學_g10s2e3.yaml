@@ -439,22 +439,7 @@ questions:
   number: 3
   type: calc
   page: 2
-  stem: 設坐標平面上有兩直線 $L_{1}$：$x-\sqrt{3}y =0$，$L_{2}$：x＋y＝0。若兩直線夾角為θ，則 tanθ之值為何？（有兩解，需有計算過程才給分，直接背出答案者不予計分）（5 分）
-  group_stem: '如右圖所示，ABCD 是一矩形，$\overline{AB} =1$。設α、β是兩銳角且 0°＜α＋β＜90°，在$\overline{BC}$，$\overline{CD}$上分別取一點 E，F，使得∠BAE＝α，∠EAF＝β且$\overline{AE}\perp \overline{EF}$。試回答下列各題。
-
-    (1) 請問下列哪些選項正確？（多選，5 分）
-
-    (A)$\overline{BE} =\tan \alpha$
-
-    (B)$\overline{AE} =\frac{1}{\sin \alpha}$
-
-    (C)$\overline{EF} =\frac{\tan \beta}{\sin \alpha}$
-
-    (D)$\overline{EC} =\tan \beta$
-
-    (E)$\overline{CF} =\tan \alpha \tan \beta$
-
-    (2) 試利用右上圖及第(1)題結果，證明$\tan (\alpha +\beta )=\frac{\tan \alpha +\tan \beta}{1-\tan \alpha \tan \beta}$。（提示：觀察△ADF）（2 分）'
+  stem: '設坐標平面上有兩直線 $L_1: x - \sqrt{3}y = 0$，$L_2: x + y = 0$。若兩直線夾角為 $\theta$，則 $\tan\theta$ 之值為何？（有兩解，需有計算過程才給分）（5 分）'
   shared_asset: g3_3_3
   tags:
     unit:
@@ -470,7 +455,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 高一考題出現和差角公式（屬數A第三冊 MA-A3-1-3）
+    fixed_by: agent
+    fix_note: （人工修正：移除誤植的前題 group_stem 與附圖，補齊答案與解析）
   difficulty: 3
+  explanation: $L_1$ 斜率 $m_1 = \frac{1}{\sqrt{3}}$（傾角 $30^\circ$），$L_2$ 斜率 $m_2 = -1$（傾角 $135^\circ$）。兩直線夾角為 $135^\circ - 30^\circ = 105^\circ$ 或 $75^\circ$，故 $\tan\theta = \pm\tan 75^\circ = \pm(2+\sqrt{3})$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $2+\sqrt{3}$ 或 $-(2+\sqrt{3})$
 shared_assets:
 - key: g3_3_3
   label: 題組附圖

@@ -717,7 +717,7 @@ questions:
   number: 18
   type: multiple
   page: 2
-  stem: 如右圖所示，某人在一固定高度的平臺上進行水平拋射物體的實驗。假如不考慮空氣阻力的影響，則下列敘述何者正確？（應選2項）
+  stem: 某人在一固定高度的平臺上進行水平拋射物體的實驗。假如不考慮空氣阻力的影響，則下列敘述哪些正確？（應選2項）
   options:
   - label: A
     content: 水平速度加大時，物體落地的時間變長
@@ -728,7 +728,9 @@ questions:
   - label: D
     content: 物體質量加大時，物體落地的時間變長
   - label: E
-    content: 物體質量加大時，物體落地的時間變短 (F)物體質量改變時，物體落地的時間不變
+    content: 物體質量加大時，物體落地的時間變短
+  - label: F
+    content: 物體質量改變時，物體落地的時間不變
   assets:
   - key: s2_18_f1
     kind: figure
@@ -742,8 +744,9 @@ questions:
       - 715.55
   answer:
   - C
-  answer_status: verified
-  answer_source: answer_key
+  - F
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: PH-S1-3-3
@@ -758,7 +761,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(F)併在E字串中，且題幹寫應選2項但answer僅給['C']
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項F、移除附圖依賴並更正答案為C、F與解析）
   difficulty: 1
+  explanation: 平拋運動的落地時間僅取決於鉛直高度與重力加速度（$t＝\sqrt{\frac{2h}{g}}$），與水平初速度及物體質量均無關。故選(C)(F)。
+  review_note: 原答案卷答案 ['C']，執行 agent 修正為 ['C', 'F']
 - id: doc_111_新北_新店_自然_物理_選修物理I_g11s1e1_s2_19
   section: 2
   number: 19
@@ -861,7 +868,7 @@ questions:
   number: 3
   type: calc
   page: 3
-  stem: 小球自斜面頂端以10 m／s水平拋射，如右圖所示，求經幾秒後小球落在斜面上？（g＝10 m／$s^{2}$）
+  stem: 小球自傾角為 45° 的斜面頂端以 10 m／s 水平拋射，求經幾秒後小球落在斜面上？（g＝10 m／$s^{2}$）
   assets:
   - key: s3_3_f1
     kind: figure
@@ -887,13 +894,20 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer欄位為null
+    fixed_by: agent
+    fix_note: （人工修正：補充斜面傾角45°（免附圖）並補全解答與解析）
   difficulty: 3
+  explanation: 設經 t 秒落於斜面上，則水平位移 $x＝v_{0}t＝10t$，鉛直位移 $y＝\frac{1}{2}gt^{2}＝5t^{2}$。因落點在 45° 斜面上，滿足 $\tan 45°＝\frac{y}{x}＝\frac{5t^{2}}{10t}＝1$，解得 $t＝2$ s。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 2 s
 - id: doc_111_新北_新店_自然_物理_選修物理I_g11s1e1_s3_4
   section: 3
   number: 4
   type: calc
   page: 3
-  stem: 將一小球以10 m／s速率鉛直上拋，如右圖所示，求經幾秒後小球落在地面上？（g＝10 m／$s^{2}$）
+  stem: 將一小球自離地面高度 15 m 的平台邊緣以 10 m／s 速率鉛直上拋，求經幾秒後小球落在地面上？（g＝10 m／$s^{2}$）
   assets:
   - key: s3_4_f1
     kind: figure
@@ -929,7 +943,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: answer欄位為null
+    fixed_by: agent
+    fix_note: （人工修正：補充初始高度15 m（免附圖）並補全解答與解析）
   difficulty: 2
+  explanation: 取向上為正，位移 $y＝-15$ m。由 $y＝v_{0}t－\frac{1}{2}gt^{2}$ 得 $-15＝10t－5t^{2} \Rightarrow t^{2}－2t－3＝0$，解得 $t＝3$ s（負根不合）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 3 s
 shared_assets:
 - key: g1_14_15
   label: 題組附圖

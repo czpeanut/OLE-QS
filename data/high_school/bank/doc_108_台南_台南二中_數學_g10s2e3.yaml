@@ -146,7 +146,7 @@ questions:
   number: 3
   type: fill
   page: 1
-  stem: 比較下列各數的大小：a＝cos°，b＝cos 310°，c＝sin 440° ＿＿＿＿。
+  stem: 比較下列各數的大小：$a = \cos 30^\circ$，$b = \cos 310^\circ$，$c = \sin 440^\circ$：＿＿＿＿。
   answer:
   - c＞a＞b
   answer_status: verified
@@ -165,7 +165,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹漏字：a＝cos° 缺少角度數值
+    fixed_by: agent
+    fix_note: （人工修正：補齊 a = cos 30° 角度數值並補齊解析）
   difficulty: 2
+  explanation: $b = \cos 310^\circ = \cos 50^\circ$，$c = \sin 440^\circ = \sin 80^\circ = \cos 10^\circ$。因餘弦函數在 $[0^\circ, 90^\circ]$ 嚴格遞減，故 $\cos 10^\circ > \cos 30^\circ > \cos 50^\circ$，即 $c > a > b$。
 - id: doc_108_台南_台南二中_數學_g10s2e3_s2_4
   section: 2
   number: 4
@@ -383,7 +386,7 @@ questions:
   number: 11
   type: fill
   page: 2
-  stem: 地面上有A、B二點和一塔，已知有一塔高100$\sqrt{3}$公尺，且點A在塔的正西方、點B在塔的東360°南，某人自塔頂測得點A , 點B之俯角分別為60°與30°﹐則A和B的距離為＿＿＿＿公尺。
+  stem: 地面上有 $A$、$B$ 二點和一塔，已知有一塔高 $100\sqrt{3}$ 公尺，且點 $A$ 在塔的正西方、點 $B$ 在塔的東 $60^\circ$ 南，某人自塔頂測得點 $A$、點 $B$ 之俯角分別為 $60^\circ$ 與 $30^\circ$，則 $A$ 和 $B$ 的距離為＿＿＿＿公尺。
   answer:
   - 100$\sqrt{13}$
   answer_status: verified
@@ -402,7 +405,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹方位角誤植為東360°南
+    fixed_by: agent
+    fix_note: （人工修正：修正方位角誤植「東360°南」為「東60°南」並補齊解析）
   difficulty: 3
+  explanation: 設塔底為 $O$，則 $\overline{OA} = \frac{100\sqrt{3}}{\tan 60^\circ} = 100$ 公尺，$\overline{OB} = \frac{100\sqrt{3}}{\tan 30^\circ} = 300$ 公尺，且 $\angle AOB = 180^\circ - 60^\circ = 120^\circ$。由餘弦定理得 $\overline{AB} = \sqrt{100^2 + 300^2 - 2(100)(300)\cos 120^\circ} = 100\sqrt{1 + 9 + 3} = 100\sqrt{13}$ 公尺。
 - id: doc_108_台南_台南二中_數學_g10s2e3_s2_12
   section: 2
   number: 12

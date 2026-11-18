@@ -105,7 +105,7 @@ questions:
   number: 4
   type: calc
   page: 1
-  stem: 因應美中貿易戰衝擊，臺商紛紛轉移生產布局，政府也積極推出臺商回流方案補助。如果原先臺灣的生產可能曲線為PPC1，資訊產業回流後臺灣的生產可能曲線為PPC2，則下列何者最有可能是臺灣生產可能曲線變動的情形？
+  stem: 因應美中貿易戰衝擊，臺商紛紛轉移生產布局，政府也積極推出臺商回流方案補助。如果原先臺灣的生產可能曲線為 $PPC_1$，資訊產業回流後臺灣的生產可能曲線為 $PPC_2$，請問 $PPC_2$ 相較於 $PPC_1$ 最有可能呈現何種變動情形？
   assets:
   - key: s1_4_f1
     kind: figure
@@ -128,6 +128,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 缺選項附圖
+    fixed_by: agent
+    fix_note: （人工修正：將缺附圖選項改寫為文字作答題並補充答案與解析）
+  explanation: 臺商回流為臺灣帶來資金、技術、設備與人才等生產要素投入，屬於整體生產資源與技術水準提升，因此生產可能曲線會由 $PPC_1$ 向外（右上方）移動至 $PPC_2$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 生產可能曲線由 $PPC_1$ 整條向外（右上方）平移至 $PPC_2$（資訊產品與其他產品之最大可能產能擴大）
 - id: doc_110_高雄_明誠_社會_公民與社會_g11s1e1_s1_5
   section: 1
   number: 5
@@ -724,9 +731,9 @@ questions:
   - label: A
     content: 90,000、85,620、90,000
   - label: B
-    content: 90,000、85,620、90,000
+    content: 85,620、90,000、85,620
   - label: C
-    content: 85,620、97,845、102.225
+    content: 85,620、97,845、102,225
   - label: D
     content: 175,620、97,845、102,225
   group_stem: 【題組一】阿信在這一波新冠肺炎疫情衝擊下，遭到公司資遣，資遣費共領了150萬元，阿信的理財苦惱是目前還背負房貸約500萬元左右，這150萬元的資遣費，阿信至少有3種選擇：把錢存銀行、把錢拿去做投資，或是拿去還房貸。首先，如果把150萬元做銀行定存，以目前銀行一年期定存利率計算，一年能領取12,225元的定存利息；如果阿信把150萬元拿去做投資買進配息債基金，以配息率6%計算，一年可以領到配息90,000元：若是拿150萬元償還房貸，阿信每個月可以減少7,135元的房貸支出，一年可省下85,620元。
@@ -741,6 +748,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項A與B文字完全相同，選項C數字「102.225」疑誤植小數點
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B重複及選項C小數點誤植並補充答案與解析）
+  explanation: 三種選擇的一年收益（或節省支出）分別為：銀行定存 12,225 元、配息債基金 90,000 元、償還房貸 85,620 元。機會成本為所放棄選項中價值最高者：選擇「銀行定存」的機會成本為 90,000 元；選擇「配息債基金」的機會成本為 85,620 元；選擇「償還房貸」的機會成本為 90,000 元。答案選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_高雄_明誠_社會_公民與社會_g11s1e1_s1_28
   section: 1
   number: 28
@@ -804,6 +818,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D缺圖
+    fixed_by: agent
+    fix_note: （人工修正：補充答案與解析）
+  explanation: 裁併偏鄉小校的理由在於少子化下學生人數過少，維持小校營運使每位學生分攤的教育經費與資源過高，將預算轉投入其他用途效益更大，反映維持偏鄉小校的「機會成本較高」，故(B)正確。(A)(C)忽略居民與就學的多元效用與權益；(D)經費多寡與稀少性概念無此直接推論。答案選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_高雄_明誠_社會_公民與社會_g11s1e1_s2_1
   section: 2
   number: 1
@@ -901,7 +922,7 @@ questions:
   number: 6
   type: calc
   page: 4
-  stem: 請列舉政府提供<u>金錢誘因</u>及<u>非金錢誘因</u>對行為產生的影響【30字以内，各占2分】
+  stem: 請列舉政府提供<u>金錢誘因</u>及<u>非金錢誘因</u>對行為產生的影響【30字以內，各占2分】
   assets:
   - key: s2_6_f1
     kind: figure
@@ -924,3 +945,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 有附圖檔名但題幹未引用
+    fixed_by: agent
+    fix_note: （人工修正：移除未引用之圖檔欄位、修正字元並補充答案與解析）
+  explanation: 金錢誘因（如租稅減免、消費補助、違規罰鍰）直接改變個人的貨幣收支與機會成本，進而引導行為；非金錢誘因（如表揚頒獎、公開揭露、道德勸說）則訴諸榮譽感、利他心理或社會壓力來促進行為改變。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 金錢誘因：透過補貼或罰鍰改變經濟成本效益；非金錢誘因：透過榮譽或道德勸說影響心理認同。

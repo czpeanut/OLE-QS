@@ -1032,9 +1032,7 @@ questions:
   page: 4
   stem: '懷海德教授曾在《美國物理期刊》中提到：「一張骨牌能推倒另一張比它大的骨牌。」若第 1 張骨牌的重量為 3 公克，之後每一張骨牌的重量皆為前一張骨牌重量的 2 倍。試回答以下問題：
 
-    (1) 從第幾張骨牌開始，這張骨牌的重量會超過 100 公克？（單選題）（3 分）
-
-    （F） 9'
+    (1) 從第幾張骨牌開始，這張骨牌的重量會超過 100 公克？（單選題）（3 分）'
   options:
   - label: A
     content: '4'
@@ -1046,7 +1044,6 @@ questions:
     content: '7'
   - label: E
     content: '8'
-  group_stem: (2) 設 100 支汽笛合鳴的聲音強度為 1 支汽笛獨鳴的 100 倍，試問 100 支汽笛合鳴的噪音為多少分貝？（4 分）
   tags:
     unit:
       code: MA-B3-2-1
@@ -1061,4 +1058,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem誤植上一題(第43題)之第(2)小題
+    fixed_by: agent
+    fix_note: （人工修正：移除誤植的 group_stem 與多餘選項 (F)，補齊答案與解析）
   difficulty: 2
+  explanation: 第 $n$ 張骨牌重量為 $a_n = 3 \cdot 2^{n-1}$。由 $3 \cdot 2^{n-1} > 100$ 得 $2^{n-1} > \frac{100}{3} \approx 33.33$，因為 $2^5 = 32$、$2^6 = 64$，故 $n-1 \ge 6$，即 $n \ge 7$，選 (D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D

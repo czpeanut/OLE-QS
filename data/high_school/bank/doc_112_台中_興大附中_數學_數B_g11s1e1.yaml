@@ -69,7 +69,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 已知在0 ≤ x ≤ 4π範圍內，方程式sin x ≤－的解為α≤ x ≤β或γ≤ x ≤δ，求 (β－α)＋(δ＋γ)之值為下列何者？
+  stem: 已知在 $0 \le x \le 4\pi$ 範圍內，不等式 $\sin x \le -\frac{\sqrt{3}}{2}$ 的解為 $\alpha \le x \le \beta$ 或 $\gamma \le x \le \delta$，求 $(\beta - \alpha) + (\delta - \gamma)$ 之值為下列何者？
   options:
   - label: A
     content: $\frac{\pi}{3}$
@@ -99,7 +99,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「sin x ≤－」漏失數值
+    fixed_by: agent
+    fix_note: （人工修正：補齊不等式右側數值 -√3/2 並修正區間長度差號，補齊解析）
   difficulty: 3
+  explanation: 在 $[0, 4\pi]$ 內，解為 $\frac{4\pi}{3} \le x \le \frac{5\pi}{3}$ 或 $\frac{10\pi}{3} \le x \le \frac{11\pi}{3}$，故 $(\beta-\alpha)+(\delta-\gamma) = \frac{\pi}{3}+\frac{\pi}{3} = \frac{2\pi}{3}$，選 (B)。
 - id: doc_112_台中_興大附中_數學_數B_g11s1e1_s1_3
   section: 1
   number: 3
@@ -446,9 +449,9 @@ questions:
   page: 2
   stem: 求x軸、y軸、直線x＝6π與函數y＝7＋sin x的圖形所圍成的面積為＿＿＿＿π平方單位。
   answer:
-  - 42 I. $\frac{3}{5}$ J. 48
-  answer_status: verified
-  answer_source: answer_key
+  - '42'
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-B3-1-2
@@ -463,7 +466,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案欄含選填題號殘留字元
+    fixed_by: agent
+    fix_note: （人工修正：清除答案中殘留的選填題號並補齊解析）
   difficulty: 3
+  explanation: $y = 7 + \sin x$ 在一個週期 $[0, 2\pi]$ 內的平均高度為 $7$（因 $\int_0^{2\pi} \sin x\,dx = 0$），故在 $[0, 6\pi]$ 上所圍面積為 $7 \times 6\pi = 42\pi$，填入 $42$。
+  review_note: 原答案卷答案 ['42 I. $\\frac{3}{5}$ J. 48']，執行 agent 修正為 ['42']
 - id: doc_112_台中_興大附中_數學_數B_g11s1e1_s3_9
   section: 3
   number: 9

@@ -110,7 +110,7 @@ class Bank:
         needle = text.lower() if text else None
         out = []
         for q in self.questions:
-            if not include_rejected and q["status"] == "rejected":
+            if not include_rejected and q["status"] in ("rejected", "held"):      # held：高中暫緩上站的題
                 continue
             if subject and q["subject"] != subject:
                 continue
@@ -328,7 +328,7 @@ def main() -> int:
     bank = Bank()
     if a.cmd == "stats":
         m = bank.manifest
-        qs = [q for q in bank.questions if q["status"] != "rejected"]
+        qs = [q for q in bank.questions if q["status"] not in ("rejected", "held")]
         by = defaultdict(int)
         for q in qs:
             by[(q["subject"], q["grade"])] += 1

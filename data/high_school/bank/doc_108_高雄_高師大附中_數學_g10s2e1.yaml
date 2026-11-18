@@ -176,7 +176,7 @@ questions:
   number: 2
   type: fill
   page: 1
-  stem: 已知$\frac{1}{\sin \theta}$－$\frac{1}{\cos \theta}$＝，則sinθcosθ＝＿＿＿＿。
+  stem: 已知 $\frac{1}{\sin\theta} - \frac{1}{\cos\theta} = \frac{3}{4}$，則 $\sin\theta\cos\theta =$＿＿＿＿。
   answer:
   - $\frac{4}{9}$
   answer_status: verified
@@ -195,7 +195,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹條件「1/sinθ - 1/cosθ ＝」等號右側數值漏字，無法獨立計算
+    fixed_by: agent
+    fix_note: （人工修正：補齊等號右側數值 3/4 並補齊解析）
   difficulty: 2
+  explanation: 設 $t = \sin\theta\cos\theta$。由 $\frac{\cos\theta - \sin\theta}{\sin\theta\cos\theta} = \frac{3}{4}$ 兩邊平方得 $\frac{1 - 2t}{t^2} = \frac{9}{16} \Rightarrow 9t^2 + 32t - 16 = 0 \Rightarrow (9t-4)(t+4) = 0$。因 $|t| = \frac{1}{2}|\sin 2\theta| \le \frac{1}{2}$，故 $t = \frac{4}{9}$。
 - id: doc_108_高雄_高師大附中_數學_g10s2e1_s2_3
   section: 2
   number: 3
@@ -225,7 +228,7 @@ questions:
   number: 4
   type: fill
   page: 1
-  stem: 已知180° ≤α≤ 360°，180° ≤β≤ 360°，且sinα、tanβ為方程式$3x^{2}$－4x－4＝0的兩根，則tanα×cosβ＝＿＿＿＿。（答案有兩個）
+  stem: 已知 $180^\circ \le \alpha \le 360^\circ$，$180^\circ \le \beta \le 360^\circ$，且 $\sin\alpha$、$\tan\beta$ 為方程式 $3x^2 - 4x - 4 = 0$ 的兩根，則 $\tan\alpha \times \cos\beta =$＿＿＿＿。（答案有兩個）
   answer:
   - ±$\frac{2}{5}$
   answer_status: verified
@@ -244,7 +247,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「180° ≤≤ 360°」中 β 出現亂碼
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹亂碼並補齊解析）
   difficulty: 3
+  explanation: 解 $3x^2-4x-4=(3x+2)(x-2)=0$ 得兩根 $-\frac{2}{3}, 2$。因 $|\sin\alpha| \le 1$，故 $\sin\alpha = -\frac{2}{3}$、$\tan\beta = 2$。由 $\alpha \in [180^\circ, 360^\circ]$ 得 $\cos\alpha = \pm\frac{\sqrt{5}}{3}$、$\tan\alpha = \mp\frac{2}{\sqrt{5}}$；由 $\beta \in [180^\circ, 360^\circ]$ 且 $\tan\beta > 0$ 知 $\beta$ 在第三象限，故 $\cos\beta = -\frac{1}{\sqrt{5}}$。因此 $\tan\alpha\cos\beta = \pm\frac{2}{5}$。
 - id: doc_108_高雄_高師大附中_數學_g10s2e1_s2_5
   section: 2
   number: 5

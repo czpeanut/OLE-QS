@@ -29,15 +29,15 @@ questions:
   stem: 下列敘述哪些是正確的？
   options:
   - label: A
-    content: 若數據y對x之迴歸直線為y＝－5＋$\frac{3}{7}$x，則x與y為正相關
+    content: 若數據 $y$ 對 $x$ 之迴歸直線為 $y = -5 + \frac{3}{7}x$，則 $x$ 與 $y$ 為正相關
   - label: B
-    content: 若數據x對y之相關係數為0，則其散布圖為鉛直線或水平線
+    content: 若數據 $x$ 對 $y$ 之相關係數為 $0$，則其散布圖為鉛直線或水平線
   - label: C
-    content: 若數據y對x之迴歸直線的斜率愈大，則x與y之相關程度愈高
+    content: 若數據 $y$ 對 $x$ 之迴歸直線的斜率愈大，則 $x$ 與 $y$ 的相關程度愈高
   - label: D
-    content: 設數據x，y經標準化為x' , y'，且x與y之相關係數為0.68，則y' 對x' 之迴歸直線為y' ＝0.68x'
+    content: 設數據 $x, y$ 經標準化為 $x', y'$，且 $x$ 與 $y$ 之相關係數為 $0.68$，則 $y'$ 對 $x'$ 之迴歸直線為 $y' = 0.68x'$
   - label: E
-    content: 在右圖的散布圖中，有五筆數據 ( $x_{i}$ , $y_{i}$ )，去掉B數據之後，剩下的四筆數據相關係數會變大
+    content: 有五筆數據 $(1,1), (2,2), (3,3), (4,3)$ 與 $B(10, 10)$，去掉 $B$ 數據之後，剩下的四筆數據相關係數會變大
   assets:
   - key: s1_1_f1
     kind: figure
@@ -69,6 +69,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: E選項需看附圖散布圖判讀
+    fixed_by: agent
+    fix_note: （人工修正：將選項 E 改為具體五筆數據以取代缺圖）
   difficulty: 3
 - id: doc_110_高雄_鳳山_數學_g10s2e2_s1_2
   section: 1
@@ -112,7 +114,7 @@ questions:
   number: 1
   type: fill
   page: 1
-  stem: 下表為6位學生之語文與空間測驗成績，則二者之相關係數為＿＿＿＿。
+  stem: 下表為 6 位學生之語文（$x$）與空間（$y$）測驗成績：$(69, 76)$、$(71, 72)$、$(61, 77)$、$(74, 68)$、$(66, 70)$、$(67, 75)$，則二者之相關係數為＿＿＿＿。
   assets:
   - key: s2_1_f1
     kind: figure
@@ -128,7 +130,7 @@ questions:
   - $-\frac{27}{40}$
   answer_status: verified
   answer_source: answer_key
-  explanation: 設語文成績為x分，空間測驗成績為y分，可得$\mu_{x}$＝$\frac{69+71+61+74+66+67}{6}$＝68，$\mu_{y}$＝$\frac{76+72+77+68+70+75}{6}$＝73 ⇒ $S_{xx}$＝$1^{2}$＋$3^{2}$＋(－7 )$^{2}$＋$6^{2}$＋(－2 )$^{2}$＋(－1 )$^{2}$＝100，$S_{yy}$＝$3^{2}$＋(－1)$^{2}$＋$4^{2}$＋(－5)$^{2}$＋(－3 )$^{2}$＋$2^{2}$＝64， $S_{xy}$＝1×3＋3×(－1 )＋(－7 )×4＋6×(－5)＋(－2 )×(－3 )＋(－1 )×2＝－54， 故二者的相關係數為r＝$\frac{S_{xy}}{\sqrt{S_{xx}}\times \sqrt{S_{yy}}}$＝$\frac{-54}{\sqrt{100}\times \sqrt{64}}$＝$\frac{-27}{40}$。
+  explanation: $\mu_x = 68, \mu_y = 73$。$S_{xx} = 1^2+3^2+(-7)^2+6^2+(-2)^2+(-1)^2 = 100$，$S_{yy} = 3^2+(-1)^2+4^2+(-5)^2+(-3)^2+2^2 = 64$，$S_{xy} = 1(3)+3(-1)+(-7)(4)+6(-5)+(-2)(-3)+(-1)(2) = -54$。故相關係數 $r = \frac{-54}{\sqrt{100}\sqrt{64}} = -\frac{54}{80} = -\frac{27}{40}$。
   tags:
     unit:
       code: MA-2-3-2
@@ -143,6 +145,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹數據表格在附圖中（解析有列出數據）
+    fixed_by: agent
+    fix_note: （人工修正：補齊成績數據取代缺圖並補齊被截斷之解析）
   difficulty: 2
 - id: doc_110_高雄_鳳山_數學_g10s2e2_s2_2
   section: 2
@@ -412,7 +416,15 @@ questions:
   number: 12
   type: fill
   page: 1
-  stem: A、B、C、D、E、F、G七人玩傳接球遊戲，規則如下： (1)由A開始，任意傳給一人 (2) C、D二人不能互相傳接球，其餘無限制 (3) C、D、E、F、G這六人之間各傳一次 ( 即接過球者，不能重複接球 )，由最後一位接球者再傳回A而遊戲結束 則共有＿＿＿＿種方式。
+  stem: 'A、B、C、D、E、F、G 七人玩傳接球遊戲，規則如下：
+
+    (1) 由 A 開始，任意傳給一人。
+
+    (2) C、D 二人不能互相傳接球，其餘無限制。
+
+    (3) B、C、D、E、F、G 這六人之間各傳一次（即接過球者不能重複接球），由最後一位接球者再傳回 A 而遊戲結束。
+
+    則共有＿＿＿＿種方式。'
   answer:
   - '480'
   answer_status: verified
@@ -431,7 +443,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 條件(3)「C、D、E、F、G這六人」漏列B字
+    fixed_by: agent
+    fix_note: （人工修正：補齊條件(3)漏列的 B 字並補齊解析）
   difficulty: 3
+  explanation: 相當於將 B、C、D、E、F、G 六人排成一列且 C、D 不相鄰。方法數 $= 6! - 2\times 5! = 720 - 240 = 480$ 種。
 - id: doc_110_高雄_鳳山_數學_g10s2e2_s2_13
   section: 2
   number: 13

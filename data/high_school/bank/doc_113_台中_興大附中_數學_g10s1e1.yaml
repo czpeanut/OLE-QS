@@ -109,7 +109,7 @@ questions:
   number: 3
   type: single
   page: 1
-  stem: 設 a、b、c 皆為有理數，且滿足 $3^{3x}$＝$9^{y}$＝$\left( \frac{1}{81} \right) ^{z}$，若 x＋y＋z＝14，則 z 值等於多少？
+  stem: 設 $x$、$y$、$z$ 皆為有理數，且滿足 $3^{3x} = 9^y = \left(\frac{1}{81}\right)^z$，若 $x+y+z=14$，則 $z$ 值等於多少？
   options:
   - label: A
     content: －6
@@ -139,7 +139,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹筆誤將「x、y、z」寫成「a、b、c 皆為有理數」
+    fixed_by: agent
+    fix_note: （人工修正：將題幹變數筆誤「a、b、c」修正為「x、y、z」並補齊解析）
   difficulty: 2
+  explanation: 由 $3^{3x} = 3^{2y} = 3^{-4z}$ 得 $3x = 2y = -4z$，令其等於 $12k$，則 $x=4k, y=6k, z=-3k$。代入 $x+y+z=7k=14$ 得 $k=2$，故 $z=-6$，選 (A)。
 - id: doc_113_台中_興大附中_數學_g10s1e1_s1_4
   section: 1
   number: 4

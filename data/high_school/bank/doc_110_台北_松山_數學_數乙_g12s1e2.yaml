@@ -114,7 +114,7 @@ questions:
   number: 3
   type: multiple
   page: 1
-  stem: 下列敘述何者下確？
+  stem: 下列敘述何者正確？
   options:
   - label: A
     content: 若$\lim_{x\rightarrow a}$f (x) 存在，則$\lim_{x\rightarrow a^{-}}$f (x)＝$\lim_{x\rightarrow a^{+}}$f (x)
@@ -145,7 +145,18 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹錯字（「下確」應為「正確」）
+    fixed_by: agent
+    fix_note: （人工修正：修正錯字「下確」為「正確」並補齊解析）
   difficulty: 2
+  explanation: '(A) ○：極限存在則左右極限存在且相等。
+
+    (B) ×：左右極限存在但未必相等。
+
+    (C) ×：需 $f$ 在 $g(a)$ 處連續方保證合成函數在 $x=a$ 連續。
+
+    (D) ×：連續未必可微（如 $f(x)=|x-a|$）。
+
+    (E) ○：函數在 $x=a$ 連續的定義。'
 - id: doc_110_台北_松山_數學_數乙_g12s1e2_s1_4
   section: 1
   number: 4
@@ -349,9 +360,9 @@ questions:
 
     (2) 以邊際收入函數$f^{ }$'' (x) ≈ f (x＋1)－f (x) 來估算，售價31元比售價30元的總收入增加或減少多少元？'
   answer:
-  - (1) f (x)＝$x^{3}$－$90x^{2}$＋2400x ；(2) 減少300元；(3)最大總收入為20000元，此時每個玩具售價為20元
-  answer_status: verified
-  answer_source: answer_key
+  - (1) $f(x) = x^3 - 90x^2 + 2400x$；(2) 減少 $300$ 元
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-Y1-2-2
@@ -366,13 +377,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案欄含第(3)小題答案，第(3)小題題幹被拆分至下一題
+    fixed_by: agent
+    fix_note: （人工修正：移除答案中第(3)小題答案並補齊解析）
   difficulty: 2
+  explanation: '(1) 總收入 $f(x) = x(x^2-90x+2400) = x^3 - 90x^2 + 2400x$。
+
+    (2) $f''(x) = 3x^2 - 180x + 2400$，代入 $x=30$ 得 $f''(30) = 2700 - 5400 + 2400 = -300$，故估計減少 300 元。'
+  review_note: 原答案卷答案 ['(1) f (x)＝$x^{3}$－$90x^{2}$＋2400x ；(2) 減少300元；(3)最大總收入為20000元，此時每個玩具售價為20元']，執行 agent 修正為 ['(1) $f(x) = x^3 - 90x^2 + 2400x$；(2) 減少 $300$ 元']
 - id: doc_110_台北_松山_數學_數乙_g12s1e2_s3_3
   section: 3
   number: 3
   type: calc
   page: 1
-  stem: 最大總收入及此時每個玩具的售價。
+  stem: 工廠製造並銷售一款玩具，當每個玩具售價為 $x$ 元時，銷售量為 $x^2-90x+2400$ 個，其中 $15 \le x \le 45$。試求最大總收入及此時每個玩具的售價。
   tags:
     unit:
       code: MA-Y1-2-2
@@ -387,4 +404,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原題第(3)小題被拆分為獨立題，缺少前題題幹情境
+    fixed_by: agent
+    fix_note: （人工修正：補齊前題情境至題幹，並補齊答案與解析）
   difficulty: 2
+  explanation: 總收入 $f(x) = x^3 - 90x^2 + 2400x$，$f'(x) = 3(x-20)(x-40)$。在閉區間 $[15, 45]$ 上檢驗臨界點與端點：$f(15)=19125$、$f(20)=20000$、$f(40)=16000$、$f(45)=16875$。故最大總收入為 20000 元，此時每個玩具售價為 20 元。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - 最大總收入為 $20000$ 元，此時每個玩具售價為 $20$ 元

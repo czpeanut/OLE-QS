@@ -179,7 +179,13 @@ questions:
   number: 3
   type: fill
   page: 1
-  stem: 設隨機變數X表示投擲一不公正骰子出現的點數，P (X＝$x_{k}$)表示隨機變數X取值為$x_{k}$的機率。已知X的機率分布表如下：（x，y為未知常數） 已知X的期望值等於$\frac{13}{4}$，試求： (1) 數對 (x,y)。 (2) 投擲此骰子兩次，點數和為3的機率。 (3) X的變異數。
+  stem: '設隨機變數 $X$ 表示投擲一不公正骰子出現的點數，已知 $P(X=1)=P(X=4)=x$，且 $P(X=2)=P(X=3)=P(X=5)=P(X=6)=y$（$x, y$ 為常數）。若 $X$ 的期望值等於 $\frac{13}{4}$，試求：
+
+    (1) 數對 $(x, y)$。
+
+    (2) 投擲此骰子兩次，點數和為 $3$ 的機率。
+
+    (3) $X$ 的變異數。'
   assets:
   - key: s2_3_f1
     kind: figure
@@ -195,15 +201,11 @@ questions:
   - (1)$(\frac{1}{4},\frac{1}{8})$；(2)$\frac{1}{16}$；(3)$\frac{47}{16}$
   answer_status: verified
   answer_source: answer_key
-  explanation: '$x+y+y+x+y+y=1\Rightarrow 2x+4y=1$
+  explanation: '由機率總和 $2x+4y=1$ 與期望值 $5x+16y=\frac{13}{4}$ 聯立解得 $(1) (x, y) = (\frac{1}{4}, \frac{1}{8})$。
 
-    $E(X)=1\times x+2\times y+3\times y+4\times x+5\times y+6\times y=\frac{13}{4}\Rightarrow 5x+16y=\frac{13}{4}$
+    (2) 點數和為 3 為 $(1,2)$ 或 $(2,1)$，機率 $= 2\times\frac{1}{4}\times\frac{1}{8} = \frac{1}{16}$。
 
-    (1) 聯立得到 $\therefore x=\frac{1}{4} ,y=\frac{1}{8}\Rightarrow (x,y)=(\frac{1}{4},\frac{1}{8})$
-
-    (2) 點數和為3的情形為: 2+1, 1+2 則$P=\frac{1}{4}\times \frac{1}{8}+\frac{1}{8}\times \frac{1}{4}=\frac{1}{16}$
-
-    (3)$Var(X)=E(X^{2})-\left[ E(X) \right] ^{2}=1^{2}\times \frac{1}{4}+2^{2}\times \frac{1}{8}+9\times \frac{1}{8}+16\times \frac{1}{4}+25\times \frac{1}{8}+36\times \frac{1}{8}-(\frac{13}{4})^{2}=\frac{108}{8}-\frac{169}{16}=\frac{47}{16}$'
+    (3) $E(X^2) = \frac{1}{4}(1^2+4^2) + \frac{1}{8}(2^2+3^2+5^2+6^2) = \frac{17}{4} + \frac{74}{8} = \frac{54}{4} = \frac{27}{2}$，故 $\text{Var}(X) = \frac{27}{2} - (\frac{13}{4})^2 = \frac{216-169}{16} = \frac{47}{16}$。'
   tags:
     unit:
       code: MA-Y2-1-1
@@ -218,6 +220,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹機率分布表在附圖中（解析可推知各點機率）
+    fixed_by: agent
+    fix_note: （人工修正：補充機率分布條件取代缺圖並補齊被截斷之解析）
   difficulty: 3
 - id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_4
   section: 2
@@ -329,7 +333,7 @@ questions:
   number: 8
   type: fill
   page: 1
-  stem: 隨機變數X的機率分布表如下： 其中0 ≤ p ≤ 1，若X的變異數Var (X)的最大值為M，最小值為m，求數對 (M,m)。
+  stem: 隨機變數 $X$ 只取值 $0$ 或 $1$，且滿足 $P(X=1)=p$、$P(X=0)=1-p$（其中 $0 \le p \le 1$）。若 $X$ 的變異數 $\text{Var}(X)$ 的最大值為 $M$，最小值為 $m$，求數對 $(M, m)$。
   assets:
   - key: s2_8_f1
     kind: figure
@@ -366,6 +370,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹機率分布表在附圖中（解析可推知為伯努利分布）
+    fixed_by: agent
+    fix_note: （人工修正：補充伯努利分布條件以取代缺圖）
   difficulty: 3
 - id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_9
   section: 2

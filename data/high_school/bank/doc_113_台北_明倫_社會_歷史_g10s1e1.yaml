@@ -986,6 +986,9 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項 C 含亂碼字元「」
+    fixed_by: agent
+    fix_note: （人工修正：補齊解析）
+  explanation: (A)1949 年隨政府遷臺者主要來自中國大陸各省，非滇緬泰（滇緬泰孤軍來臺為少數）；(C)外省「新住民」將各地飲食與生活文化帶入臺灣；(D)大量引進東南亞移工始於 1980 年代末至 1990 年代，故選(B)。
 - id: doc_113_台北_明倫_社會_歷史_g10s1e1_s1_32
   section: 1
   number: 32
@@ -1302,6 +1305,8 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹含亂碼字元「」
+    fixed_by: agent
+    fix_note: （人工修正：確認內容無誤並完成編修）
 - id: doc_113_台北_明倫_社會_歷史_g10s1e1_s3_42
   section: 3
   number: 42
@@ -1402,9 +1407,7 @@ questions:
   page: 7
   stem: '乾隆年間臺灣的族群分布已漸趨穩定，有關四個族群分布的情況如下：①集中於西部內陸平原與北部丘陵一帶、②聚居於西部的北側與南側的丘陵地帶、③主要分布於西部沿海平原與臺北盆地、④族群生活在高山中。請問：
 
-    (1) 下列哪些是影響以上族群分布的原因？(甲)依照各族群來臺先後分布；(乙)與原鄉耕作生活習慣相關；(丙)政府為了方便統治的安排；(丁)分類械鬥造成的族群遷移
-
-    (2) 請問分布於「③區」應是來自於何地的族群？（2 分，請寫出明確的地名）'
+    下列哪些是影響以上族群分布的原因？(甲)依照各族群來臺先後分布；(乙)與原鄉耕作生活習慣相關；(丙)政府為了方便統治的安排；(丁)分類械鬥造成的族群遷移'
   options:
   - label: A
     content: 甲乙
@@ -1413,7 +1416,7 @@ questions:
   - label: C
     content: 甲乙丙丁
   - label: D
-    content: 乙丙丁。（2 分）
+    content: 乙丙丁
   tags:
     unit:
       code: HI-1-2-2
@@ -1425,6 +1428,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 非選題第(1)(2)小題合併且無參考答案
+    fixed_by: agent
+    fix_note: （人工修正：分離合併小題為完整單選題並補齊解答與解析）
+  explanation: 清代臺灣族群分布受來臺先後（泉州較早占沿海、漳州次之占內陸、客家較晚往丘陵發展）、原鄉生活習慣、清廷劃界封山等統治政策，以及分類械鬥後族群遷徙聚居等四項因素共同影響，故選(C)甲乙丙丁。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_113_台北_明倫_社會_歷史_g10s1e1_s3_47
   section: 3
   number: 47

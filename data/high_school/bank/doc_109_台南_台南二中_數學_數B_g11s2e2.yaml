@@ -102,25 +102,33 @@ questions:
   number: 1
   type: multiple
   page: 1
-  stem: 設A、B為樣本空間S中的兩事件，P
+  stem: 設 $A$、$B$ 為樣本空間 $S$ 中的兩事件，$P(A)=\frac{1}{4}$，$P(B)=\frac{5}{6}$，$P(A\cup B)=\frac{11}{12}$，試問下列哪些選項是正確的？
   options:
   - label: A
-    content: ＝$\frac{1}{4}$，P
+    content: $P(A\cap B) = \frac{1}{12}$
   - label: B
-    content: ＝$\frac{5}{6}$，P ( A∪B )＝$\frac{11}{12}$，試問下列哪些選項是正確的？ (A) P ( A∩B )＝$\frac{1}{12}$ (B) P ( B | A )＝$\frac{2}{3}$
+    content: $P(B\mid A) = \frac{2}{3}$
   - label: C
-    content: P ( A | B )＝$\frac{2}{5}$
+    content: $P(A\mid B) = \frac{2}{5}$
   - label: D
-    content: P ( A' | B' )＝$\frac{1}{2}$
+    content: $P(A'\mid B') = \frac{1}{2}$
   - label: E
-    content: P ( B | A' )＝$\frac{8}{9}$( A'、B'分別表示A、B的餘事件 )
+    content: $P(B\mid A') = \frac{8}{9}$（$A'$、$B'$ 分別表示 $A$、$B$ 的餘事件）
   answer:
   - B
   - D
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: (A) ×：P ( A∪B )＝P (A)＋P (B)－P ( A∩B ) ⇒ $\frac{11}{12}=\frac{1}{4}+\frac{5}{6}-P(A\cap B)$ ⇒ P ( A∩B )＝$\frac{1}{6}$ (B)○：P ( B | A )$=\frac{P(A\cap B)}{P(A)}=\frac{\frac{1}{6}}{\frac{1}{4}}=\frac{2}{3}$ (C) ×：P ( A | B )$=\frac{P(A\cap B)}{P(B)}=\frac{\frac{1}{6}}{\frac{5}{6}}=\frac{1}{5}$ (D)○：P ( A' | B' )$=\frac{P(A'\cap B')}{P(B')}=\frac{P(A\cup B')}{P(B')}=\frac{1-P(A\cup B)}{1-P(B)}=\frac{1-\frac{11}{12}}{1-\frac{5}{6}}=\frac{1}{2}$ (E)○：P ( B | A' )$=\frac{P(A'\cap B)}{P(A')}=\frac{P(B)-P(A\cap B)}{1-P(A)}=\frac{\frac{5}{6}-\frac{1}{6}}{1-\frac{1}{4}}=\frac{\frac{2}{3}}{\frac{3}{4}}=\frac{8}{9}$ 故選(B)(D)(E)
+  explanation: '(A) ×：$P(A\cap B) = \frac{1}{4}+\frac{5}{6}-\frac{11}{12} = \frac{1}{6}$。
+
+    (B) ○：$P(B\mid A) = \frac{1/6}{1/4} = \frac{2}{3}$。
+
+    (C) ×：$P(A\mid B) = \frac{1/6}{5/6} = \frac{1}{5}$。
+
+    (D) ○：$P(A''\mid B'') = \frac{1-P(A\cup B)}{1-P(B)} = \frac{1/12}{1/6} = \frac{1}{2}$。
+
+    (E) ○：$P(B\mid A'') = \frac{P(B)-P(A\cap B)}{1-P(A)} = \frac{5/6 - 1/6}{3/4} = \frac{8}{9}$。'
   tags:
     unit:
       code: MA-B4-2-1
@@ -135,6 +143,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹與選項(A)(B)排版斷行錯位，P(A)與P(B)符號遺失
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項排版斷行錯位並補齊被截斷之解析）
   difficulty: 2
 - id: doc_109_台南_台南二中_數學_數B_g11s2e2_s2_2
   section: 2
@@ -144,21 +154,29 @@ questions:
   stem: 設一袋中有6個白球及4個紅球，每次從此袋中任意取出一球，每球被取到的機會均等，取後不放回，連續取四次。設A表第一次取到白球的事件，B表第三次取到白球的事件，C表取四次球中恰有三次為白球的事件，則下列哪些選項是正確的？
   options:
   - label: A
-    content: P
+    content: $P(B) = \frac{3}{5}$
   - label: B
-    content: ＝$\frac{3}{5}$ (B) P ( B | A )＝$\frac{5}{9}$
+    content: $P(B\mid A) = \frac{5}{9}$
   - label: C
-    content: P ( C | A )＝$\frac{5}{21}$
+    content: $P(C\mid A) = \frac{5}{21}$
   - label: D
-    content: 事件A與事件B為獨立事件
+    content: 事件 $A$ 與事件 $B$ 為獨立事件
   - label: E
-    content: P ( C | A∩B )＝$\frac{2}{7}$
+    content: $P(C\mid A\cap B) = \frac{2}{7}$
   answer:
   - A
   - B
   answer_status: verified
   answer_source: answer_key
-  explanation: (A)○：P(B)＝$\frac{6}{10}$＝$\frac{3}{5}$ (B)○：P ( B | A )＝$\frac{5}{9}$ (C) ×：P ( C | A )＝$\frac{5}{9}\times \frac{4}{8}\times \frac{4}{7}+\frac{5}{9}\times \frac{4}{8}\times \frac{4}{7}+\frac{4}{9}\times \frac{5}{8}\times \frac{4}{7}=\frac{10}{21}$ (D) ×：P ( B | A )≠P(B) ⇒ A與B不為獨立事件 (E) ×：P ( C | A∩B )＝$\frac{P(A\cap B\cap C)}{P(A\cap B)}=\frac{\frac{6}{10}\times \frac{5}{9}\times \frac{4}{8}\times \frac{4}{7}+\frac{6}{10}\times \frac{4}{9}\times \frac{5}{8}\times \frac{4}{7}}{\frac{6}{10}\times \frac{5}{9}}=\frac{4}{7}$ 故選(A)(B)
+  explanation: '(A) ○：$P(B) = \frac{6}{10} = \frac{3}{5}$。
+
+    (B) ○：$P(B\mid A) = \frac{5}{9}$。
+
+    (C) ×：$P(C\mid A) = 3\times\frac{5}{9}\times\frac{4}{8}\times\frac{4}{7} = \frac{10}{21}$。
+
+    (D) ×：$P(B\mid A) \neq P(B)$，非獨立事件。
+
+    (E) ×：$P(C\mid A\cap B) = \frac{C_1^2 \times 4 \times 4}{8\times 7} = \frac{4}{7}$。'
   tags:
     unit:
       code: MA-B4-2-1
@@ -173,6 +191,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項(A)(B)排版斷行錯位，P(B)符號遺失
+    fixed_by: agent
+    fix_note: （人工修正：修正選項 A、B 排版錯位並補齊被截斷之解析）
   difficulty: 3
 - id: doc_109_台南_台南二中_數學_數B_g11s2e2_s2_3
   section: 2

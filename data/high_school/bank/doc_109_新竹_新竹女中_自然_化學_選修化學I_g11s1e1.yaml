@@ -133,7 +133,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 已知硝酸鉀（$KNO_{3}$）莫耳溶解熱為＋35 kJ／mol。若今在卡計中裝入93.94毫升的蒸餾水，測得溫度為24℃；並取6.06克硝酸鉀固體（0.06莫耳$KNO_{3}$），倒入含93.94毫升蒸餾水之卡計中，密閉並插上溫度計，迅速攪拌使硝酸鉀完全溶解（如附圖所示）達平衡時溫度為t ℃，假設硝酸鉀水溶液的比熱為4.2 J／g℃、水的比重為1，且卡計的絕熱效果極佳，無熱散失；反應後的溫度t應為何？（式量：$KNO_{3}$＝101） ssssssssss
+  stem: 已知硝酸鉀（$KNO_{3}$）莫耳溶解熱為＋35 kJ／mol。若今在卡計中裝入93.94毫升的蒸餾水，測得溫度為24℃；並取6.06克硝酸鉀固體（0.06莫耳$KNO_{3}$），倒入含93.94毫升蒸餾水之卡計中，密閉並插上溫度計，迅速攪拌使硝酸鉀完全溶解，達平衡時溫度為t ℃，假設硝酸鉀水溶液的比熱為4.2 J／g℃、水的比重為1，且卡計的絕熱效果極佳，無熱散失；反應後的溫度t應為何？（式量：$KNO_{3}$＝101）
   options:
   - label: A
     content: '5'
@@ -157,9 +157,9 @@ questions:
       - 199.6
       - 528.15
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
+  - C
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: CH-S1-1-3
@@ -174,7 +174,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末尾有多餘字元 ssssssssss
+    fixed_by: agent
+    fix_note: （人工修正：清除題幹亂碼與多餘字元、移除缺圖並更正答案為C（19℃）與補齊解析）
   difficulty: 3
+  explanation: 溶液總質量 $= 93.94 + 6.06 = 100\text{ g}$。溶解吸熱 $Q = 0.06 \times 35\text{ kJ} = 2100\text{ J}$。由 $Q = m s \Delta T$，$2100 = 100 \times 4.2 \times \Delta T \Rightarrow \Delta T = 5\text{℃}$。因溶解為吸熱反應，末溫 $t = 24 - 5 = 19\text{℃}$。故選(C)。
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['C']
 - id: doc_109_新竹_新竹女中_自然_化學_選修化學I_g11s1e1_s1_5
   section: 1
   number: 5
@@ -515,7 +519,7 @@ questions:
   number: 13
   type: single
   page: 2
-  stem: 如附圖所示之某一開口容器中裝有氮氣，當溫度由27℃加熱至177℃時，則逸出此容器的氮氣，占原有氮氣多少百分比？
+  stem: 某一開口容器中裝有氮氣，當溫度由27℃加熱至177℃時（容器體積膨脹忽略不計），則逸出此容器的氮氣，占原有氮氣多少百分比？
   options:
   - label: A
     content: '50'
@@ -556,7 +560,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有輕微亂碼（原有氣）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹亂碼、移除無必要之附圖並補齊解析）
   difficulty: 2
+  explanation: 開口容器壓力固定，由查理定律 $V \propto T(K)$，$T_{1} = 300\text{ K}$，$T_{2} = 450\text{ K}$，氣體體積膨脹為原來的 $\frac{450}{300} = 1.5$ 倍，故逸出比例為 $\frac{1.5 - 1}{1.5} = \frac{1}{3} \approx 33.3\%$。故選(B)。
 - id: doc_109_新竹_新竹女中_自然_化學_選修化學I_g11s1e1_s1_14
   section: 1
   number: 14
@@ -1004,10 +1011,10 @@ questions:
   - label: E
     content: 分子的平均運動速率
   answer:
-  - C
-  - D
-  answer_status: verified
-  answer_source: answer_key
+  - A
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: CH-S1-2-2
@@ -1022,7 +1029,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有輕微亂碼（於溫度不變下）
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案為AB並補齊解析）
   difficulty: 2
+  explanation: 定溫下定量氣體之平均動能、分子平均速率與 $PV$ 乘積皆維持不變；當壓力減半時，由波以耳定律可知體積變為2倍（B改變），氣體密度 $d = m/V$ 變為一半（A改變）。故選(A)(B)。
+  review_note: 原答案卷答案 ['C', 'D']，執行 agent 修正為 ['A', 'B']
 - id: doc_109_新竹_新竹女中_自然_化學_選修化學I_g11s1e1_s2_26
   section: 2
   number: 26

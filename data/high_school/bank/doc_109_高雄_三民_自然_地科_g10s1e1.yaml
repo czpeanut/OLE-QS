@@ -1065,9 +1065,9 @@ questions:
 - id: doc_109_高雄_三民_自然_地科_g10s1e1_s1_32
   section: 1
   number: 32
-  type: calc
+  type: single
   page: 4
-  stem: 地質學家如何推斷臺灣地區的板塊立體構造？ 從地表鑽井下探 (B)根據臺灣地區的震央分布狀況 (C)根據臺灣地區的震波速度狀況 (D)根據臺灣地區的震源分布狀況
+  stem: 地質學家如何推斷臺灣地區的板塊立體構造（如隱沒帶位置與深度）？
   tags:
     unit:
       code: ES-1-2-2
@@ -1082,7 +1082,23 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原為單選題但options為空，選項(A)~(D)混入題幹且缺(A)標記
+    fixed_by: agent
+    fix_note: （人工修正：將選項從題幹分離並補齊(A)標籤，改type為single，補齊答案與解析）
   difficulty: 2
+  options:
+  - label: A
+    content: 從地表鑽井下探
+  - label: B
+    content: 根據臺灣地區的震央分布狀況
+  - label: C
+    content: 根據臺灣地區的震波速度狀況
+  - label: D
+    content: 根據臺灣地區的震源分布狀況
+  explanation: 地震的「震源」具有深度資訊，將臺灣地區大量地震的震源位置（經緯度與深度）繪製於三維空間中，即可顯現板塊隱沒的傾斜帶（班尼奧夫帶）與立體構造；震央僅為地表投影，無法得知深部立體構造。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_109_高雄_三民_自然_地科_g10s1e1_s2_35
   section: 2
   number: 35

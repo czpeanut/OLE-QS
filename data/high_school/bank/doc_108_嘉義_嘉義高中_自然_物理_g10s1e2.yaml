@@ -559,7 +559,7 @@ questions:
   number: 25
   type: single
   page: 2
-  stem: 考慮四個繞地球運轉的人造衛星：衛星甲作半徑為R的圓周運動；衛星乙作半徑為2R的圓周運動；衛星丙作近地點距離R、遠地點距離2R的橢圓軌道運動；衛星工作近地點、遠地點4R的橢圓軌道運動。試問哪一個衛星的運 轉週期最長？
+  stem: 考慮四個繞地球運轉的人造衛星：衛星甲作半徑為 R 的圓周運動；衛星乙作半徑為 2R 的圓周運動；衛星丙作近地點距離 R、遠地點距離 2R 的橢圓軌道運動；衛星丁作近地點距離 R、遠地點距離 4R 的橢圓軌道運動。試問哪一個衛星的運轉週期最長？
   options:
   - label: A
     content: 甲
@@ -589,7 +589,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹錯字：「衛星工作近地點」應為「衛星丁作近地點」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字並補全解析）
   difficulty: 3
+  explanation: 由克卜勒第三定律，$T^{2} \propto a^{3}$（$a$ 為半長軸）。四顆衛星的半長軸分別為：甲 $= R$、乙 $= 2R$、丙 $= \frac{R＋2R}{2}＝1.5R$、丁 $= \frac{R＋4R}{2}＝2.5R$。衛星丁的半長軸最大，故運轉週期最長。故選(D)。
 - id: doc_108_嘉義_嘉義高中_自然_物理_g10s1e2_s2_31
   section: 2
   number: 31
@@ -674,9 +677,9 @@ questions:
   - label: B
     content: 頻率為2赫茲
   - label: C
-    content: 過期2秒
+    content: 週期為2秒
   - label: D
-    content: 波速為40公分秒
+    content: 波速為40公分／秒
   - label: E
     content: 振幅為2公尺
   answer:
@@ -699,7 +702,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C、D錯字漏字：「過期2秒」、「40公分秒」
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C、D錯字漏字並補全解析）
   difficulty: 3
+  explanation: 兩船一在波峰一在波谷，中間隔著兩個波峰，故相距 $2.5\lambda＝2$ 公尺，波長 $\lambda＝0.8$ 公尺＝80 公分；每 2 秒上下搖晃一次，故週期 $T＝2$ 秒、頻率 $f＝0.5$ 赫茲；波速 $v＝\frac{\lambda}{T}＝\frac{80}{2}＝40$ 公分／秒；題目未提供波峰至平衡位置的高度差，無法得知振幅為 2 公尺。故選(A)(C)(D)。
 - id: doc_108_嘉義_嘉義高中_自然_物理_g10s1e2_s2_37
   section: 2
   number: 37
@@ -773,16 +779,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹漏字：「火車鐵軌上」有亂碼
+    fixed_by: agent
+    fix_note: （人工修正：補全解析）
   difficulty: 2
+  explanation: 火車、汽車加速行駛及人走路時，車輪或腳向後推地面（或鐵軌），地面給予向前的靜摩擦力作為推動物體前進的動力；物體沿斜面下滑及推動書櫃時，摩擦力皆阻礙物體運動。故選(A)(C)(D)。
 - id: doc_108_嘉義_嘉義高中_自然_物理_g10s1e2_s2_40
   section: 2
   number: 40
   type: multiple
   page: 4
-  stem: 下列關於戴流導線在空間中所產生之磁場的敘述，何者正確？（應選2項）
+  stem: 下列關於載流導線在空間中所產生之磁場的敘述，何者正確？（應選2項）
   options:
   - label: A
-    content: 一鉛直載流宣導線其電流由下而上流經導線，則在導線東側的磁場指向南方
+    content: 一鉛直載流直導線其電流由下而上流經導線，則在導線東側的磁場指向南方
   - label: B
     content: 載流導線在空間中所產生的磁力線為同心圓，且愈靠近直導線磁力線的密度愈大
   - label: C
@@ -810,4 +819,7 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹錯字：「戴流導線」、「載流宣導線」
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項A錯字並補全解析）
   difficulty: 2
+  explanation: (A)由安培右手定則，電流向上時東側磁場指向北方；(B)載流長直導線周圍磁力線為同心圓，愈靠近導線磁場愈強、磁力線愈密；(C)長直螺線管內部磁場 $B＝\mu_{0}nI$，與電流成正比；(D)右手定則中大拇指為電流方向、四指環繞為磁場方向；(E)螺線管外部磁場遠弱於內部磁場。故選(B)(C)。

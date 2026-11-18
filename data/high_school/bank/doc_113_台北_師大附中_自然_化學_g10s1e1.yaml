@@ -1377,9 +1377,9 @@ questions:
   page: 5
   stem: 寫出下列化學式：(1)氮化鎂 (2)過錳酸鉀 (3)硝酸鈉 (4)硫化銀
   answer:
-  - (1) $Mg_{3}N_{2}$ (2) $KMnO_{4}$ (3) $NaNO_{2}$ (4) $Ag_{2}$S
-  answer_status: verified
-  answer_source: answer_key
+  - (1) $Mg_{3}N_{2}$ (2) $KMnO_{4}$ (3) $NaNO_{3}$ (4) $Ag_{2}$S
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: CH-1-2-2
@@ -1394,7 +1394,11 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 解答(3)硝酸鈉誤植為NaNO2（應為NaNO3）
+    fixed_by: agent
+    fix_note: （人工修正：更正第(3)小題硝酸鈉化學式為NaNO3並補齊解析）
   difficulty: 1
+  explanation: (1) 鎂為 +2 價、氮為 -3 價，化學式為 $Mg_{3}N_{2}$；(2) 過錳酸根為 $MnO_{4}^{-}$，化學式為 $KMnO_{4}$；(3) 硝酸根為 $NO_{3}^{-}$，化學式為 $NaNO_{3}$；(4) 銀為 +1 價、硫為 -2 價，化學式為 $Ag_{2}S$。
+  review_note: 原答案卷答案 ['(1) $Mg_{3}N_{2}$ (2) $KMnO_{4}$ (3) $NaNO_{2}$ (4) $Ag_{2}$S']，執行 agent 修正為 ['(1) $Mg_{3}N_{2}$ (2) $KMnO_{4}$ (3) $NaNO_{3}$ (4) $Ag_{2}$S']
 - id: doc_113_台北_師大附中_自然_化學_g10s1e1_s3_6
   section: 3
   number: 6

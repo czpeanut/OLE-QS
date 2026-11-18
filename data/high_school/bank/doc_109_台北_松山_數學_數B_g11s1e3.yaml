@@ -356,7 +356,7 @@ questions:
   number: 5
   type: fill
   page: 1
-  stem: 如圖，欲利用圓角製作一個水滴設計圖，給定圓C的半徑6，當圓C與兩垂直直線y＝±x相切，設其圓心在y軸上，試求其切點B的坐標：＿＿＿＿。
+  stem: 欲利用圓角製作一個水滴設計圖，給定圓 $C$ 的半徑為 6，圓 $C$ 與兩垂直直線 $y = \pm x$ 相切，設其圓心在 $y$ 軸負向上，試求其位於第四象限之切點 $B$ 的坐標：＿＿＿＿。
   assets:
   - key: s3_5_f1
     kind: figure
@@ -369,9 +369,9 @@ questions:
       - 283.75
       - 919.4
   answer:
-  - ( 3$\sqrt{2}$,－3$\sqrt{2}$)
-  answer_status: verified
-  answer_source: answer_key
+  - $(3\sqrt{2}, -3\sqrt{2})$
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-1-2-3
@@ -386,7 +386,11 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹有亂碼（試求切點B）
+    fixed_by: agent
+    fix_note: （人工修正：補充圓心位置與切點象限以取代缺圖並補齊解析）
   difficulty: 2
+  explanation: 設圓心為 $(0, k)$（$k<0$），由點到直線 $x-y=0$ 距離 $\frac{|k|}{\sqrt{2}} = 6$ 得 $k = -6\sqrt{2}$。第四象限切點在直線 $y=-x$ 上，設為 $(t, -t)$（$t>0$），由 $(t-0)^2 + (-t+6\sqrt{2})^2 = 36$ 解得 $t = 3\sqrt{2}$，故切點 $B$ 為 $(3\sqrt{2}, -3\sqrt{2})$。
+  review_note: 原答案卷答案 ['( 3$\\sqrt{2}$,－3$\\sqrt{2}$)']，執行 agent 修正為 ['$(3\\sqrt{2}, -3\\sqrt{2})$']
 - id: doc_109_台北_松山_數學_數B_g11s1e3_s3_6
   section: 3
   number: 6

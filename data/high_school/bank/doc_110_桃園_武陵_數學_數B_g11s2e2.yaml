@@ -31,18 +31,18 @@ questions:
   number: 2
   type: multiple
   page: 1
-  stem: 設 A、B、C 均為二階方陣，I 為二階單位方陣，O 為二階零矩陣，det
+  stem: 設 $A, B, C$ 均為二階方陣，$I$ 為二階單位方陣，$O$ 為二階零矩陣，$\det(A)$ 表矩陣 $A$ 的行列式值，試選出正確的選項。
   options:
   - label: A
-    content: 表矩陣 A 的行列式值，試選出正確的選項。(A) A（B＋C）＝AB＋CA
+    content: $A(B+C) = AB + CA$
   - label: B
-    content: AI＝IA 必不成立
+    content: $AI = IA$ 必不成立
   - label: C
-    content: （AB）C＝A（BC）
+    content: $(AB)C = A(BC)$
   - label: D
-    content: 若 det(A)≠0，且 AB＝AC，則 B＝C
+    content: 若 $\det(A)\neq 0$，且 $AB = AC$，則 $B = C$
   - label: E
-    content: 若 AB＝O，則 A＝O 或 B＝O
+    content: 若 $AB = O$，則 $A = O$ 或 $B = O$
   answer:
   - C
   - D
@@ -75,6 +75,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項A夾帶題幹文字，選項E含亂碼字元「�」（應為「若」），不影響作答
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹截斷與選項 A 排版錯位）
   difficulty: 2
 - id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_1
   section: 2

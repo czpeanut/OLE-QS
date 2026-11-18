@@ -27,7 +27,7 @@ questions:
   number: 1
   type: multiple
   page: 1
-  stem: 設實係數三次函數f (x)＝$ax^{3}$＋$bx^{2}$＋cx＋d嚴格遞減，其圖形如右，請選出正確的選項。
+  stem: 設實係數三次函數 $f(x) = ax^3+bx^2+cx+d$ 嚴格遞減，且其圖形的反曲點在 $y$ 軸右側、與 $y$ 軸交於正向，請選出正確的選項。
   options:
   - label: A
     content: a > 0
@@ -53,7 +53,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目敘述「其圖形如右」但缺少附圖，無法判別反曲點位置及y截距等係數b、c、d之正負
+    fixed_by: agent
+    fix_note: （人工修正：補充反曲點與 y 截距位置條件取代缺圖，補齊答案與解析）
   difficulty: 3
+  explanation: 因三次函數嚴格遞減，故 $a < 0$ 且 $f'(x) = 3ax^2+2bx+c \le 0$ 恆成立，即 $b^2-3ac \le 0$（(A)(E) 均錯）。反曲點橫坐標 $-\frac{b}{3a} > 0$ 且 $a<0$，故 $b > 0$（(B) 正確）。又 $b^2-3ac \le 0$ 且 $a<0$ 得 $c \le \frac{b^2}{3a} < 0$（(C) 錯）。與 $y$ 軸交於正向得 $f(0) = d > 0$（(D) 正確）。選 (B)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - D
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e2_s1_2
   section: 1
   number: 2
@@ -103,10 +111,10 @@ questions:
   page: 1
   stem: 已知多項式函數f (x)滿足$\lim_{x\rightarrow 1} \frac{f(x)}{x-1}$＝3，求 (1) f’ (1)的值為＿＿＿＿。 (2) $\lim_{h\rightarrow 0} \frac{f(1-h)}{8h}$＝＿＿＿＿。（若極限值不存在，答案請寫「不存在」）
   answer:
-  - ×
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ×：$\lim_{x\rightarrow 1^{4}} \frac{f(x)-f(1)}{x-1}$＝$\lim_{x\rightarrow 1^{4}} \frac{(x-1)-0}{x-1}$＝1，$\lim_{x\rightarrow 1^{-}} \frac{f(x)-f(1)}{x-1}$＝$\lim_{x\rightarrow 1^{-}} \frac{(1-x)-0}{x-1}$＝－1， 因為$\lim_{x\rightarrow 1^{+}} \frac{f(x)-f(1)}{x-1}$≠$\lim_{x\rightarrow 1^{-}} \frac{f(x)-f(1)}{x-1}$，所以f’ (1)不存在。
+  - (1) $3$；(2) $-\frac{3}{8}$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 由 $\lim_{x\to 1}\frac{f(x)}{x-1}=3$ 知 $f(1)=0$ 且 $f'(1)=3$。故 (1) $f'(1)=3$；(2) $\lim_{h\to 0}\frac{f(1-h)-f(1)}{8h} = -\frac{1}{8}f'(1) = -\frac{3}{8}$。
   tags:
     unit:
       code: MA-Y1-2-1
@@ -121,7 +129,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案與詳解錯置為是非題
+    fixed_by: agent
+    fix_note: （人工修正：更正錯置為是非題的答案與解析）
   difficulty: 2
+  review_note: 原答案卷答案 ['×']，執行 agent 修正為 ['(1) $3$；(2) $-\\frac{3}{8}$']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e2_s2_2
   section: 2
   number: 2
@@ -129,10 +140,10 @@ questions:
   page: 1
   stem: 若函數f (x)＝$ax^{3}$＋3x在點 ( 1, f (1)) 的切線與直線x＋6y＝3垂直，則實數a＝＿＿＿＿。
   answer:
-  - ○
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ○：f’ (0)＝$\lim_{x\rightarrow 0} \frac{f(x)-f(0)}{x-0}$＝$\lim_{x\rightarrow 0} \frac{(1-x)-1}{x}$＝$\lim_{x\rightarrow 0} \frac{-x}{x}$＝－1。
+  - '1'
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: $f'(x)=3ax^2+3$，在 $x=1$ 處切線斜率為 $3a+3$。因切線與 $x+6y=3$（斜率 $-\frac{1}{6}$）垂直，故 $3a+3=6 \Rightarrow a=1$。
   tags:
     unit:
       code: MA-Y1-2-1
@@ -147,7 +158,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案與詳解錯置為是非題
+    fixed_by: agent
+    fix_note: （人工修正：更正錯置為是非題的答案與解析）
   difficulty: 2
+  review_note: 原答案卷答案 ['○']，執行 agent 修正為 ['1']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e2_s2_3
   section: 2
   number: 3
@@ -155,10 +169,10 @@ questions:
   page: 1
   stem: 設函數f (x)＝$x^{3}$－$6x^{2}$＋9x＋3，求圖形上切線斜率最小的直線方程式為＿＿＿＿。（請以一般式ax＋by＋c＝0填答）
   answer:
-  - ×
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ×：反例：f (x)＝$x^{3}$ ⇒ f’ (x)＝$3x^{2}$ ⇒ f’ (0)＝0，f (x)的圖形在x＝0處有水平切線，但 (0, f (0) ) 不為極大值，也不為極小值。
+  - $3x+y-11=0$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: $f'(x) = 3x^2-12x+9 = 3(x-2)^2 - 3$，當 $x=2$ 時切線斜率有最小值 $-3$，切點為 $(2, f(2))=(2, 5)$，切線方程式為 $y-5=-3(x-2)$，即 $3x+y-11=0$。
   tags:
     unit:
       code: MA-Y1-2-1
@@ -173,7 +187,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 答案與詳解錯置為是非題
+    fixed_by: agent
+    fix_note: （人工修正：更正錯置為是非題的答案與解析）
   difficulty: 3
+  review_note: 原答案卷答案 ['×']，執行 agent 修正為 ['$3x+y-11=0$']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e2_s2_4
   section: 2
   number: 4
@@ -181,10 +198,10 @@ questions:
   page: 1
   stem: 已知生產x件產品的收入函數為f (x)＝－$x^{3}$＋$24x^{2}$＋108x＋5（元），則收入達到最大時的產量為＿＿＿＿件。
   answer:
-  - ○
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ○：多項式函數在閉區間上必有最大值與最小值。
+  - '18'
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: $f'(x) = -3x^2+48x+108 = -3(x-18)(x+2) = 0$，因產量 $x > 0$，故在 $x=18$ 件時收入達到最大。
   tags:
     unit:
       code: MA-Y1-2-2
@@ -199,7 +216,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案與詳解錯置為是非題
+    fixed_by: agent
+    fix_note: （人工修正：更正錯置為是非題的答案與解析）
   difficulty: 2
+  review_note: 原答案卷答案 ['○']，執行 agent 修正為 ['18']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e2_s2_5
   section: 2
   number: 5
@@ -207,10 +227,10 @@ questions:
   page: 2
   stem: 已知三次函數f (x)＝$ax^{3}$－$3x^{2}$＋( a＋2 )x＋7嚴格遞減，則實數a的範圍為＿＿＿＿。
   answer:
-  - ×
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ×：反例：f (x)＝$x^{4}$ ⇒ f’ (x)＝$4x^{3}$ ⇒ f’’ (x)＝$12x^{2}$ ⇒ f’’ (0)＝0，但 (0, f (0) ) 不為反曲點。
+  - $a \le -3$
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 三次函數嚴格遞減需 $a < 0$ 且 $f'(x) = 3ax^2-6x+(a+2) \le 0$ 恆成立，即判別式 $36 - 12a(a+2) \le 0 \Rightarrow a^2+2a-3 \ge 0 \Rightarrow a\ge 1$ 或 $a\le -3$，與 $a<0$ 取交集得 $a \le -3$。
   tags:
     unit:
       code: MA-Y1-2-2
@@ -225,7 +245,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案與詳解錯置為是非題
+    fixed_by: agent
+    fix_note: （人工修正：更正錯置為是非題的答案與解析）
   difficulty: 3
+  review_note: 原答案卷答案 ['×']，執行 agent 修正為 ['$a \\le -3$']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e2_s2_6
   section: 2
   number: 6
@@ -233,10 +256,10 @@ questions:
   page: 2
   stem: 若實係數三次函數f (x)在x＝－3有極小值－24，且(－1,－8 )是f (x)圖形的反曲點，則f (1)＝＿＿＿＿。
   answer:
-  - ○
-  answer_status: verified
-  answer_source: answer_key
-  explanation: ○：第10件產品所增加的成本為C (10)－C (9) ≈ C’ (9)。
+  - '8'
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 三次函數圖形對稱於反曲點 $(-1, -8)$，因在 $x=-3$ 有極小值 $-24$，故在對稱位置 $x = 2(-1)-(-3) = 1$ 處有極大值 $f(1) = 2(-8)-(-24) = 8$。
   tags:
     unit:
       code: MA-Y1-2-2
@@ -251,7 +274,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案與詳解錯置為是非題
+    fixed_by: agent
+    fix_note: （人工修正：更正錯置為是非題的答案與解析）
   difficulty: 3
+  review_note: 原答案卷答案 ['○']，執行 agent 修正為 ['8']
 - id: doc_111_桃園_武陵_數學_數乙_g12s1e2_s2_7
   section: 2
   number: 7

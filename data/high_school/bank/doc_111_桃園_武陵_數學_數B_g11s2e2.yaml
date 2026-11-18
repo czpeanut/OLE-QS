@@ -396,9 +396,9 @@ questions:
   page: 1
   stem: 已知$\left[ \begin{matrix}a+b & 3 \\ 1 & 5\end{matrix} \right] =\left[ \begin{matrix}-3 & 3 \\ 1 & a-b\end{matrix} \right]$，則數對 ( a , b )＝＿＿＿＿。
   answer:
-  - ( 1 , 4 )
-  answer_status: verified
-  answer_source: answer_key
+  - $(1, -4)$
+  answer_status: disputed
+  answer_source: agent_fix
   explanation: $\begin{cases}a+b=-3 \\ a-b=5\end{cases}$，解得a＝1，b＝－4，故 ( a , b )＝( 1 ,－4 )。
   tags:
     unit:
@@ -414,7 +414,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 答案漏負號，應為(1, -4)
+    fixed_by: agent
+    fix_note: （人工修正：更正答案漏負號為 (1, -4)）
   difficulty: 1
+  review_note: 原答案卷答案 ['( 1 , 4 )']，執行 agent 修正為 ['$(1, -4)$']
 - id: doc_111_桃園_武陵_數學_數B_g11s2e2_s3_5
   section: 3
   number: 5

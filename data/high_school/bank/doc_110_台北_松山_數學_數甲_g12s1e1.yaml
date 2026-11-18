@@ -289,11 +289,11 @@ questions:
   number: 8
   type: fill
   page: 1
-  stem: 若正整數n滿足$\sum_{k=1}^{\infty} k(k^{2}-1)=420$，則n值為＿＿＿＿。
+  stem: 若正整數 $n$ 滿足 $\sum_{k=1}^{n} k(k^2-1) = 420$，則 $n$ 值為＿＿＿＿。
   answer:
-  - 5×6×7×8
-  answer_status: verified
-  answer_source: answer_key
+  - '6'
+  answer_status: disputed
+  answer_source: agent_fix
   tags:
     unit:
       code: MA-2-1-2
@@ -308,13 +308,17 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹級數上限誤植為無窮大（應為 n），且答案欄誤植為乘積算式
+    fixed_by: agent
+    fix_note: （人工修正：修正級數上限誤植「∞」為「n」並更正答案為 6，補齊解析）
   difficulty: 3
+  explanation: $\sum_{k=1}^n (k-1)k(k+1) = \frac{(n-1)n(n+1)(n+2)}{4} = 420 \Rightarrow (n-1)n(n+1)(n+2) = 1680 = 5\times 6\times 7\times 8$，故 $n = 6$。
+  review_note: 原答案卷答案 ['5×6×7×8']，執行 agent 修正為 ['6']
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_9
   section: 2
   number: 9
   type: fill
   page: 1
-  stem: 已知$\lim_{n\rightarrow 5} \frac{\sqrt{x+k}-3}{x-5}=\alpha$，其中α為實數，求數對 ( k , α )＝＿＿＿＿。
+  stem: 已知 $\lim_{x \to 5} \frac{\sqrt{x+k}-3}{x-5} = \alpha$，其中 $\alpha$ 為實數，求數對 $(k, \alpha) =$＿＿＿＿。
   answer:
   - ( 4 , $\frac{1}{6}$ )
   answer_status: verified
@@ -333,7 +337,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 極限變數誤植為 n（應為 x→5）
+    fixed_by: agent
+    fix_note: （人工修正：修正極限變數誤植「n」為「x」並補齊解析）
   difficulty: 2
+  explanation: 分母趨近 0 且極限存在，故分子趨近 0，得 $\sqrt{5+k}-3=0 \Rightarrow k=4$。分子有理化得 $\lim_{x\to 5} \frac{x-5}{(x-5)(\sqrt{x+4}+3)} = \frac{1}{6}$，故 $(k, \alpha) = (4, \frac{1}{6})$。
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_10
   section: 2
   number: 10

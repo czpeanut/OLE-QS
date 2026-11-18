@@ -655,6 +655,9 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 題幹「那個年代�史事」有亂碼「�」
+    fixed_by: agent
+    fix_note: （人工修正：補充解析）
+  explanation: 林懷民創立雲門舞集（1973年）、愛國電影（如《梅花》、《八百壯士》）與校園民歌風潮皆為1970年代；解除報禁（1988年）與開放黨禁（1987年解嚴後）則屬於1980年代末期。故選(D)。
 - id: doc_108_桃園_振聲_社會_歷史_g10s1e2_s1_22
   section: 1
   number: 22
@@ -1130,11 +1133,6 @@ questions:
     content: 1960年代
   - label: D
     content: 1970年代
-  group_stem: '2. （素養）請仔細閱讀下列四段歌詞，並回答相關問題： 甲：「請借問播田的田庄阿伯啊，人塊講繁華都市臺北對叨去，阮就是無依偎可憐的女兒，自細漢著來離開父母的身邊」─陳芬蘭《孤女的願望》 乙：「加拿大木材來，澳洲的石啊來，荷蘭的紅毛土，磚仔用臺南土，攏乎咱摻摻做伙。嘿咻嘿咻，每間攏是臺灣製造、臺灣製造」─伍佰《臺灣製造》 丙：「牛郎織女伊兩人，年年有相會，怎麼你若一去全然無回，放棄阮孤單一個」─紀露霞《望你早歸》 丁：「澎湖灣，澎湖灣，外婆的澎湖灣，有我許多童年幻想：陽光、沙灘、海浪、仙人掌，還有一位老船長」─潘安邦《外婆的澎湖灣》
-
-    (1) 請問上述四段歌詞，出現的時間順序應為 (A) 丙甲丁乙 (B) 丁丙乙甲 (C) 乙丁甲丙 (D) 甲丙乙丁
-
-    (2) 請問乙的出現與下列哪一作品屬於同時期的創作？ (A) 鄧雨賢作曲：「雨夜花，雨夜花，受風雨吹落地」 (B) 葉啟田：「三分天注定，七分靠打拼，愛拼才會贏」 (C) 蔡琴：「但願那海風再起，只為那浪花的手，恰似你的溫柔」 (D) 周杰倫：「聽媽媽的話，別讓她受傷，想快快長大，才能保護她」'
   tags:
     unit:
       code: HI-1-6-1
@@ -1146,6 +1144,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem混入他題題組（臺灣流行歌詞順序），與stem（戰後公地放領）無關
+    fixed_by: agent
+    fix_note: （人工修正：清除混入之流行歌詞題組並補齊答案與解析）
+  explanation: 政府於1951年起大規模實施「公地放領」，將公有耕地以優惠地價賣給現耕佃農使其成為自耕農，屬於1950年代初期臺灣土地改革的重要措施。故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_108_桃園_振聲_社會_歷史_g10s1e2_s2_4
   section: 2
   number: 4
@@ -1163,7 +1168,6 @@ questions:
     content: 「朱印船」是日本到臺灣商貿的民間走私船
   - label: D
     content: 荷蘭人未占領臺灣之前，臺灣與日本已有商貿往來
-  group_stem: (2) 阿土的朋友勸阿土別高興得太早，現在是政府給你們好處，未來政府發展工業需要資本，你們也要貢獻，這敘述指的是哪件事？ (A) 發行四大公營事業股票 (B) 幣制改革 (C) 肥料換穀 (D) 設加工出口區
   tags:
     unit:
       code: HI-1-5-1
@@ -1175,6 +1179,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem混入他題子題（肥料換穀），與stem（豐臣秀吉與朱印船貿易）無關
+    fixed_by: agent
+    fix_note: （人工修正：清除混入之前題子題文字並補齊答案與解析）
+  explanation: 引文指出豐臣秀吉時期（16世紀末）日本長崎與臺灣已有「朱印船」及中國戎克船往來貿易，顯示在1624年荷蘭人占領臺灣以前，臺日之間已存在商貿互動。故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_108_桃園_振聲_社會_歷史_g10s1e2_s2_5
   section: 2
   number: 5
@@ -1192,7 +1203,6 @@ questions:
     content: 1856年
   - label: D
     content: 1870年
-  group_stem: (2) 16、17世紀，日本政府曾派兵攻打臺灣，但為何1630年代後，日人在臺灣的活動幾近絕跡？ (A) 明廷派兵防守臺灣，宣示主權 (B) 日本積極西進，侵略朝鮮，「無暇南顧」 (C) 荷蘭、西班牙已經分別占領臺灣南部、北部 (D) 德川幕府實行「鎖國政策」
   tags:
     unit:
       code: HI-1-5-2
@@ -1204,16 +1214,19 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem混入前題子題（德川幕府鎖國），與stem（臺灣開港後茶葉貿易家書）無關；stem有亂碼「�」
+    fixed_by: agent
+    fix_note: （人工修正：清除混入之前題子題文字並補齊答案與解析）
+  explanation: 信中提及「領事館的新工作」與「各國商人搶購茶葉運往美國」，反映1860年代臺灣開港通商後，外國領事館設立及臺灣烏龍茶外銷美國的盛況，故最可能寫於1870年。故選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_108_桃園_振聲_社會_歷史_g10s1e2_s2_6
   section: 2
   number: 6
   type: single
   page: 4
-  stem: '（素養）「每日思念你一人，未得通相見，親像鴛鴦水鴨不時相隨，無疑會來拆分離，……，怎樣你若一去全然無回，放捨阮孤單一個。……，阮只好來拜託月娘，替阮講乎伊知，講阮暝日悲傷流目屎，希望你早一日返來。」─《望你早歸》。請問：
-
-    (1) 這首《望你早歸》歌曲得以風靡全臺的原因，是因為它反映了以下何種時代背景？
-
-    (2) 《望你早歸》風靡全臺是於下列哪一時期開始？ (A) 1910年代 (B) 1920年代 (C) 1940年代 (D) 1960年代'
+  stem: （素養）「每日思念你一人，未得通相見，親像鴛鴦水鴨不時相隨，無疑會來拆分離，……，怎樣你若一去全然無回，放捨阮孤單一個。……，阮只好來拜託月娘，替阮講乎伊知，講阮暝日悲傷流目屎，希望你早一日返來。」─《望你早歸》。請問：這首《望你早歸》歌曲得以風靡全臺的原因，是因為它反映了以下何種時代背景？
   options:
   - label: A
     content: 第一次大戰結束後，大量青年學子赴日留學，家中妻小表達思念之情
@@ -1223,7 +1236,6 @@ questions:
     content: 皇民化時期，超過十二萬臺籍日本兵滯留南洋，家人盼其早歸
   - label: D
     content: 第二次大戰結束後大量臺人到美國留學，家人期待學成歸國
-  group_stem: (2) 艾爾除了可能見到信中提及的景象之外，以下什麼景象也是他可以看到或經歷到的？ (A) 他因為工作的關係而認識李春生 (B) 他可能有機會到長老教會中學去教授英語 (C) 他可以搭乘火車到打狗遊歷 (D) 當時最大的商業團體是泉郊
   tags:
     unit:
       code: HI-1-7-1
@@ -1235,6 +1247,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem混入前題子題（艾爾家書後續），與stem（《望你早歸》時代背景）無關
+    fixed_by: agent
+    fix_note: （人工修正：清除混入之他題子題與多餘第(2)小題並補齊答案與解析）
+  explanation: 《望你早歸》發表於1946年（戰後初期），歌詞抒發家屬思念二戰期間被日本徵召赴南洋作戰、戰後仍滯留海外未歸的臺籍日本兵之情懷，引起全臺強烈共鳴。故選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_108_桃園_振聲_社會_歷史_g10s1e2_s2_7
   section: 2
   number: 7
@@ -1252,7 +1271,6 @@ questions:
     content: 1980年代
   - label: D
     content: 1990年代
-  group_stem: (2) 艾爾除了可能見到信中提及的景象之外，以下什麼景象也是他可以看到或經歷到的？ (A) 他因為工作的關係而認識李春生 (B) 他可能有機會到長老教會中學去教授英語 (C) 他可以搭乘火車到打狗遊歷 (D) 當時最大的商業團體是泉郊
   tags:
     unit:
       code: HI-1-7-1
@@ -1264,3 +1282,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: group_stem混入他題子題（艾爾家書後續），與stem（人間佛教）無關
+    fixed_by: agent
+    fix_note: （人工修正：清除混入之他題子題文字並補齊答案與解析）
+  explanation: 戰後臺灣佛教的現代化轉型與「人間佛教」的真正開展始於1960年代：如1966年證嚴法師創立佛教克難慈濟功德會、1967年星雲法師開創佛光山等。故選(A)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A

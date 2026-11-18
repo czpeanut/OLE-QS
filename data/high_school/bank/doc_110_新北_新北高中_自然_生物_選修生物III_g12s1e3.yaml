@@ -842,7 +842,7 @@ questions:
   stem: 某生測量正常實驗白鼠的血漿、鮑氏囊（腔）過濾液與尿液的成分，以進行腎臟功能的研究。下列結果何者最有可能因實驗操作錯誤所造成？
   options:
   - label: A
-    content: 蛋白質濃度：血獎＞鮑氏囊過濾液＝尿液
+    content: 蛋白質濃度：血漿＞鮑氏囊過濾液＝尿液
   - label: B
     content: 葡萄糖濃度：血漿＝鮑氏囊過濾液＞尿液
   - label: C
@@ -863,7 +863,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字（血獎→血漿）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項A錯字「血獎」為「血漿」並補齊答案D與解析）
   difficulty: 3
+  explanation: 血漿中的尿素經腎小球過濾進入鮑氏囊時，濃度與血漿相等（血漿＝鮑氏囊過濾液）；隨後在腎小管與集尿管大量再吸收水分，使尿液中尿素濃度大幅濃縮上升（遠大於鮑氏囊過濾液），故(D)最可能為操作錯誤所致，選(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_新北_新北高中_自然_生物_選修生物III_g12s1e3_s1_29
   section: 1
   number: 29
@@ -1077,7 +1084,7 @@ questions:
   - label: C
     content: 空氣
   - label: D
-    content: 濾波
+    content: 淋巴
   tags:
     unit:
       code: BI-S3-3-1
@@ -1092,7 +1099,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字（選項D濾波）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項D錯字「濾波」為「淋巴」並補齊答案B與解析）
   difficulty: 2
+  explanation: 位於延腦的中樞化學受器主要藉由偵測腦脊髓液中的$H^+$濃度（間接反映血液$CO_2$分壓變化）來調控呼吸頻率與深度，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_新北_新北高中_自然_生物_選修生物III_g12s1e3_s1_36
   section: 1
   number: 36
@@ -1199,7 +1213,7 @@ questions:
   - label: A
     content: 血壓下降將導致分泌腎素
   - label: B
-    content: 腎素是由人球小動脈分泌的激素
+    content: 腎素是由入球小動脈分泌的激素
   - label: C
     content: 腎素使血管收縮素原變為血管收縮素
   - label: D
@@ -1220,7 +1234,17 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字（人球小動脈→入球小動脈）
+    fixed_by: agent
+    fix_note: （人工修正：修正選項B錯字「人球小動脈」為「入球小動脈」並補齊答案與解析）
   difficulty: 3
+  explanation: (A)(B)(C)(E)皆正確（腎素由入球小動脈壁的近腎絲球細胞分泌）；(D)血管收縮素刺激「腎上腺皮質」分泌醛固酮，而非髓質。故選(A)(B)(C)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - C
+  - E
 - id: doc_110_新北_新北高中_自然_生物_選修生物III_g12s1e3_s2_40
   section: 2
   number: 40
@@ -1568,12 +1592,12 @@ questions:
   number: 51
   type: multiple
   page: 5
-  stem: Hb和$O_{2}$在下列哪些形下易結合為$Hb_{2}$？
+  stem: Hb和$O_{2}$在下列哪些情形下易結合為$HbO_{2}$？（多選）
   options:
   - label: A
     content: $CO_{2}$濃度升高
   - label: B
-    content: $O_{2}$度增高
+    content: $O_{2}$分壓（濃度）增高
   - label: C
     content: 代謝率上升
   - label: D
@@ -1594,7 +1618,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 錯字（形下→情形下；Hb2→HbO2）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項B錯字漏字並補齊答案與解析）
   difficulty: 2
+  explanation: 血紅素（Hb）在氧分壓較高、$CO_2$濃度較低、pH值較高（較鹼）及溫度較低的環境（如肺泡微血管）下，對氧氣的親和力增加，易結合形成氧合血紅素（$HbO_2$），故選(B)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - E
 - id: doc_110_新北_新北高中_自然_生物_選修生物III_g12s1e3_s2_52
   section: 2
   number: 52
@@ -1724,7 +1756,7 @@ questions:
   number: 56
   type: multiple
   page: 5
-  stem: 有關動物排除含氮療物（氨、尿素、尿酸）之敘述，下列哪些正確？
+  stem: 有關動物排除含氮廢物（氨、尿素、尿酸）之敘述，下列哪些正確？（多選）
   options:
   - label: A
     content: 毒性最強的含氮廢物是尿素
@@ -1733,7 +1765,7 @@ questions:
   - label: C
     content: 尿酸對水的溶解度很低，在飽和狀態下會沉澱，形成固體結晶排出體外
   - label: D
-    content: 人體的尿素在腎臓中形成
+    content: 人體的尿素在腎臟中形成
   - label: E
     content: 體內含氮廢物若為氨的型式，則需要最多的水來排除
   tags:
@@ -1750,15 +1782,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 亂碼（療物→廢物；尿→尿素）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹「療物」與選項D「腎臓」錯字並補齊答案與解析）
   difficulty: 2
+  explanation: (A)毒性最強的含氮廢物為氨；(B)(C)(E)正確；(D)人體的尿素主要在肝臟經尿素循環形成，再由腎臟過濾排出。故選(B)(C)(E)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
+  - E
 - id: doc_110_新北_新北高中_自然_生物_選修生物III_g12s1e3_s2_57
   section: 2
   number: 57
   type: multiple
   page: 5
-  stem: '請問抗利尿素（ADH）有何特性？如何影響人類的恆定性？
-
-    三、素養（3小，共5分）'
+  stem: 請問抗利尿素（ADH）有何特性？如何影響人類的恆定性？（多選）
   options:
   - label: A
     content: 由腦垂腺分泌、其滲透壓受器可引起口渴的感覺
@@ -1784,7 +1823,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹末混入下一大題標題
+    fixed_by: agent
+    fix_note: （人工修正：移除題幹末尾混入之下一大題標題並補齊答案與解析）
   difficulty: 3
+  explanation: (A)ADH由下視丘神經分泌細胞製造、儲存於腦垂腺後葉，並由下視丘的滲透壓受器感測後引起口渴與釋放ADH；(B)(C)(D)正確；(E)ADH可增加腎小管與集尿管對水分的再吸收，減少尿量。故選(B)(C)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
+  - C
+  - D
 - id: doc_110_新北_新北高中_自然_生物_選修生物III_g12s1e3_s2_58
   section: 2
   number: 58

@@ -101,7 +101,9 @@ questions:
   - label: C
     content: 甲烷
   - label: D
-    content: 氨氣 (B)二氧化碳
+    content: 氨氣
+  - label: E
+    content: 二氧化碳
   tags:
     unit:
       code: ES-1-1-2
@@ -116,7 +118,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D與E粘連誤植為「(B)二氧化碳」
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項D與E並修正誤植標籤(B)為(E)，補齊答案與解析）
   difficulty: 2
+  explanation: 太陽星雲早期的主要氣體成分以氫氣、氦氣為主，並含有少量甲烷與氨氣等較輕的氣體，因早期地球重力與高溫無法留住而散逸；二氧化碳主要來自地球形成後的火山噴發（原始大氣之後的次生大氣）。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - E
 - id: doc_108_嘉義_嘉義高中_自然_地科_g10s1e1_s1_4
   section: 1
   number: 4
@@ -155,7 +164,7 @@ questions:
   number: 5
   type: single
   page: 1
-  stem: 我們藉由對觀察哪些組成猜測35億年地球氣體主要組成？ (甲)星際介質氣體 (乙)類木行星大氣 (丙)金星及火星大氣 (丁)地球火山氣體。
+  stem: 我們藉由觀察哪些組成來推測 35 億年前地球大氣的主要組成？（甲）星際介質氣體 （乙）類木行星大氣 （丙）金星及火星大氣 （丁）地球火山氣體。
   options:
   - label: A
     content: 甲乙
@@ -164,7 +173,9 @@ questions:
   - label: C
     content: 甲丁
   - label: D
-    content: 乙丁 (B)丙丁
+    content: 乙丁
+  - label: E
+    content: 丙丁
   tags:
     unit:
       code: ES-1-1-2
@@ -179,7 +190,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D與E粘連誤植為「(B)丙丁」
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項D與E並修正誤植標籤(B)為(E)，補齊答案與解析）
   difficulty: 2
+  explanation: 地球早期次生大氣主要由地球內部火山噴發釋出（丁），且與同屬類地行星且未經生物大規模改造的金星、火星大氣（丙，以二氧化碳、氮氣為主）組成相近。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - E
 - id: doc_108_嘉義_嘉義高中_自然_地科_g10s1e1_s1_6
   section: 1
   number: 6
@@ -505,7 +523,9 @@ questions:
   - label: C
     content: 寒武紀後期地球受到隕石的撞擊，造成生物大滅絕
   - label: D
-    content: 寒武紀早期出現大量骨骼較硬的生物，化石種類與數量快速增加 (D)寒武紀早期因超新星爆炸，巨大的碎片掉落到地球，形成廣大的隕石坑
+    content: 寒武紀早期出現大量具有硬殼或骨骼的生物，化石種類與數量快速增加
+  - label: E
+    content: 寒武紀早期因超新星爆炸，巨大的碎片掉落到地球，形成廣大的隕石坑
   answer:
   - D
   answer_status: verified
@@ -524,7 +544,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D與E粘連重複標籤(D)
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項D與E並修正重複標籤(D)為(E)，補充解析）
   difficulty: 1
+  explanation: 約 5.4 億年前的「寒武紀大爆發」，是指在極短地質時間內，海洋中湧現大量具硬殼與外骨骼的多細胞無脊椎動物，留下極為豐富的化石紀錄。
 - id: doc_108_嘉義_嘉義高中_自然_地科_g10s1e1_s1_15
   section: 1
   number: 15
@@ -986,7 +1009,9 @@ questions:
   - label: C
     content: 岩石具可塑性
   - label: D
-    content: 由液態物質組成 (D)其密度比地核小
+    content: 由液態物質組成
+  - label: E
+    content: 其密度比地核小
   answer:
   - D
   answer_status: verified
@@ -1005,7 +1030,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D與E粘連重複標籤(D)
+    fixed_by: agent
+    fix_note: （人工修正：拆分選項D與E並修正重複標籤(D)為(E)，補充解析）
   difficulty: 2
+  explanation: 軟流圈位於上部地函（約 100～250 公里深處），S 波仍可通過，故主要為固態（僅約 1%～5% 部分熔融），在高溫高壓下具有可塑性而非完全液態。
 - id: doc_108_嘉義_嘉義高中_自然_地科_g10s1e1_s1_28
   section: 1
   number: 28
@@ -1569,7 +1597,7 @@ questions:
   - label: B
     content: 澎湖群島
   - label: C
-    content: 龜山鳥
+    content: 龜山島
   - label: D
     content: 大屯火山群
   answer:
@@ -1590,7 +1618,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項C錯字：「龜山鳥」應為「龜山島」
+    fixed_by: agent
+    fix_note: （人工修正：修正選項C錯字「龜山鳥」為「龜山島」，補充解析）
   difficulty: 2
+  explanation: 臺灣本島北部（大屯火山群）、龜山島與綠島皆位於板塊隱沒聚合帶附近，火山岩以安山岩為主；澎湖群島則屬大陸邊緣張裂環境，火山岩以玄武岩為主。
 - id: doc_108_嘉義_嘉義高中_自然_地科_g10s1e1_s1_43
   section: 1
   number: 43

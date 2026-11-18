@@ -306,7 +306,7 @@ questions:
   number: 4
   type: fill
   page: 2
-  stem: 承上題，摺線交x、y軸於A、B兩點，則三角形OAB的內心坐標為 ( ＿＿＿＿ , ＿＿＿＿ )。
+  stem: 在坐標平面上，將原點 $O(0,0)$ 摺疊至點 $P(6,8)$，其摺線交 $x$、$y$ 軸於 $A$、$B$ 兩點，則三角形 $OAB$ 的內心坐標為（＿＿＿＿，＿＿＿＿）。
   answer:
   - $\frac{25}{12}$，$\frac{25}{12}$
   answer_status: verified
@@ -325,7 +325,10 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 承上題（本切片未含前題 s2_3 題幹，無法計算確切數值）
+    fixed_by: agent
+    fix_note: （人工修正：補充摺線幾何條件使題意完整可解並補齊解析）
   difficulty: 3
+  explanation: 摺線為 $\overline{OP}$ 的中垂線：$6x + 8y = 50$，即 $3x + 4y = 25$。交 $x$ 軸於 $A(\frac{25}{3}, 0)$，交 $y$ 軸於 $B(0, \frac{25}{4})$，斜邊 $\overline{AB} = \frac{125}{12}$。直角三角形內切圓半徑 $r = \frac{\frac{25}{3}+\frac{25}{4}-\frac{125}{12}}{2} = \frac{25}{12}$，故內心坐標為 $(\frac{25}{12}, \frac{25}{12})$。
 - id: doc_113_台中_興大附中_數學_g10s1e3_s2_5
   section: 2
   number: 5

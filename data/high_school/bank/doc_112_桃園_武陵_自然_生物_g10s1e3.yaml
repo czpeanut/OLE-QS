@@ -75,10 +75,10 @@ questions:
   - label: D
     content: 不能確定
   answer:
-  - A
-  answer_status: verified
-  answer_source: answer_key
-  explanation: 肌肉細胞為雙股，若其中一股為A＋T/G＋C，另一股則為T＋A/C＋G，所以（A＋T/G＋C）× 2＝1.26，卵細胞為單股，故1.26÷2＝0.63。故選(A)。
+  - B
+  answer_status: disputed
+  answer_source: agent_fix
+  explanation: 同一生物體的肌肉細胞（2n）與卵細胞（n）內部的DNA皆為雙股螺旋結構，均嚴格遵守A＝T、G＝C的鹼基互補配對原則，因此(A+T)/(G+C)的比值在配子與體細胞中完全相同，仍為1.26，故選(B)。
   tags:
     unit:
       code: BI-1-2-2
@@ -93,7 +93,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 原題答案與解析有誤：卵細胞DNA仍為雙股，(A+T)/(G+C)比值應為1.26（解析誤當單股除以2得0.63，且選項A為0.063）。
+    fixed_by: agent
+    fix_note: （人工修正：更正錯誤答案為B與錯誤解析（卵細胞DNA仍為雙股））
   difficulty: 2
+  review_note: 原答案卷答案 ['A']，執行 agent 修正為 ['B']
 - id: doc_112_桃園_武陵_自然_生物_g10s1e3_s1_3
   section: 1
   number: 3

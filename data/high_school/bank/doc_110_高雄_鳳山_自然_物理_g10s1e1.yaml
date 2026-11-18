@@ -65,7 +65,7 @@ questions:
   number: 2
   type: single
   page: 1
-  stem: 一物體由靜止起動以5m/$s^{2}$的加速度作等加速度運動，先90公尺需多少秒？
+  stem: 一物體由靜止起動，以 5 m/$s^{2}$ 的加速度作等加速度運動，行進 90 公尺需多少秒？
   options:
   - label: A
     content: '3'
@@ -95,7 +95,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹「先90公尺」應為「行90公尺」之誤植
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹錯字並補全解析）
   difficulty: 1
+  explanation: 由 $s＝\frac{1}{2}at^{2}$ 得 $90＝\frac{1}{2}\times 5\times t^{2} \Rightarrow t^{2}＝36 \Rightarrow t＝6$ 秒。故選(D)。
 - id: doc_110_高雄_鳳山_自然_物理_g10s1e1_s1_3
   section: 1
   number: 3

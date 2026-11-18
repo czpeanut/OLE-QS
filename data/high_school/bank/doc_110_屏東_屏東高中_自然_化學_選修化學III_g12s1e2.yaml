@@ -138,7 +138,7 @@ questions:
   number: 4
   type: single
   page: 1
-  stem: 在25℃時，某水溶液中的[$H^{＋}$] [$OH^{－}$]＝400，則[$H^{＋}$]為多少M？
+  stem: 在25℃時，某水溶液中的 $\frac{[H^{＋}]}{[OH^{－}]}$＝400，則 [$H^{＋}$] 為多少 M？
   options:
   - label: A
     content: 2.0×$10^{－6}$
@@ -168,7 +168,10 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹[H+][OH-]=400疑漏除號，應為[H+]/[OH-]=400
+    fixed_by: agent
+    fix_note: （人工修正：補回題幹除號並補齊解析）
   difficulty: 2
+  explanation: 25℃時 $[H^{+}][OH^{-}] = 10^{-14}$。聯立 $\frac{[H^{+}]}{[OH^{-}]} = 400$，相乘得 $[H^{+}]^{2} = 400\times 10^{-14} = 4.0\times 10^{-12}$，開根號得 $[H^{+}] = 2.0\times 10^{-6}\text{ M}$。故選(A)。
 - id: doc_110_屏東_屏東高中_自然_化學_選修化學III_g12s1e2_s1_6
   section: 1
   number: 6

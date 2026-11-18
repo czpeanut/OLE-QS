@@ -67,18 +67,18 @@ questions:
   number: 2
   type: multiple
   page: 1
-  stem: 若A、B為獨立事件，且P
+  stem: 若 $A$、$B$ 為獨立事件，且 $P(A)=\frac{1}{3}$，$P(A\cap B)=\frac{2}{15}$，則下列選項哪些正確？
   options:
   - label: A
-    content: ＝$\frac{1}{3}$，P ( A∩B )＝$\frac{2}{15}$，則下列選項哪些正確？ (A) P
+    content: $P(B) = \frac{2}{5}$
   - label: B
-    content: ＝$\frac{2}{5}$ (B) P ( A | B )＝$\frac{2}{3}$
+    content: $P(A\mid B) = \frac{2}{3}$
   - label: C
-    content: P ( B | A' )＝$\frac{2}{5}$
+    content: $P(B\mid A') = \frac{2}{5}$
   - label: D
-    content: P ( A | A∩B )＝$\frac{1}{3}$
+    content: $P(A\mid A\cap B) = \frac{1}{3}$
   - label: E
-    content: P ( A'∩B' )＝$\frac{2}{5}$
+    content: $P(A'\cap B') = \frac{2}{5}$
   answer:
   - A
   - C
@@ -100,6 +100,8 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹選項文字斷裂（P(A)、P(B)括號脫落）
+    fixed_by: agent
+    fix_note: （人工修正：修正題幹與選項 P(A)、P(B) 排版斷裂）
   difficulty: 2
 - id: doc_109_台北_松山_數學_數B_g11s2e2_s1_3
   section: 1

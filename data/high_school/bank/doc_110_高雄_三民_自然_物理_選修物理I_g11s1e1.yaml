@@ -741,16 +741,18 @@ questions:
   number: 19
   type: multiple
   page: 3
-  stem: 甲、乙兩球位於同一鉛直線上，其高度分別為$h_{1}$＝10.0 m、$h_{2}$＝8.2 m，如圖所示，將甲、乙兩球分別以$v_{1}$及$v_{2}$的初速度沿同一水平方向拋出，若$v_{1}$＝10.0 m／s，且甲球抛出後1秒，恰好在P點與乙球相撞，則乙球必須在何時以多大的$v_{2}$拋出（g＝10公尺／秒$^{2}$）？
+  stem: 甲、乙兩球位於同一鉛直線上，其高度分別為 $h_{1}＝10.0$ m、$h_{2}＝8.2$ m，將甲、乙兩球分別以 $v_{1}$ 及 $v_{2}$ 的初速度沿同一水平方向拋出，若 $v_{1}＝10.0$ m／s，且甲球拋出後 1 秒，恰好在 P 點與乙球相撞，則乙球必須在何時以多大的 $v_{2}$ 拋出？（g＝10 公尺／$秒^{2}$，應選2項）
   options:
   - label: A
     content: 乙球必須與甲球同時拋出
   - label: B
-    content: 乙球必須在甲球抛出後0.6秒拋出
+    content: 乙球必須在甲球拋出後 0.6 秒拋出
   - label: C
-    content: 乙球必須在甲球抛出後0.2秒拋出
+    content: 乙球必須在甲球拋出後 0.2 秒拋出
   - label: D
-    content: 乙球的初速度$v_{2}$必須為12.5 m／s (C)乙球的初速度$v_{2}$必須為25 m／s
+    content: 乙球的初速度 $v_{2}$ 必須為 12.5 m／s
+  - label: E
+    content: 乙球的初速度 $v_{2}$ 必須為 25 m／s
   assets:
   - key: s2_19_f1
     kind: figure
@@ -776,7 +778,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項D與C合併且缺少標準答案
+    fixed_by: agent
+    fix_note: （人工修正：拆分合併選項、移除附圖依賴並補全解答與解析）
   difficulty: 4
+  explanation: 1 秒後 P 點位置為 $x＝10.0\times 1＝10.0$ m，高度 $y＝10.0－\frac{1}{2}(10)(1)^{2}＝5.0$ m。乙球須下落 $8.2－5.0＝3.2$ m，所需時間 $t_{2}＝\sqrt{\frac{2\times 3.2}{10}}＝0.8$ s，故乙球須在甲球拋出後 $1－0.8＝0.2$ s 拋出，且初速度 $v_{2}＝\frac{10.0}{0.8}＝12.5$ m／s。故選(C)(D)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
+  - D
 - id: doc_110_高雄_三民_自然_物理_選修物理I_g11s1e1_s3_20
   section: 3
   number: 20

@@ -137,6 +137,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項B有亂碼（「生」應為「生產」）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項B亂碼「生產」，補齊解答與解析）
+  explanation: 兩國依比較利益專業分工並進行貿易，可擴大消費可能範圍，取得更多樣或更低價的商品，有助於滿足消費者需求，(D)正確。(A)即使一國具雙重絕對利益，只要機會成本不同仍可依比較利益分工；(B)應生產機會成本較「低」的產品；(C)無須增加資源即可透過分工增加總產量。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - D
 - id: doc_110_台南_長榮_社會_公民與社會_g11s1e1_s1_5
   section: 1
   number: 5
@@ -393,6 +400,13 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 選項B有亂碼（「間」應為「間接」）
+    fixed_by: agent
+    fix_note: （人工修正：修補選項B亂碼「間接」，補齊解答與解析）
+  explanation: 教育提升整體國民公民素養與社會資本，屬於政府開辦義務教育所產生的外部效益（間接效益），(A)正確。(B)軟硬體設施與(D)正式教職員薪資皆為政府編列預算支付的「直接成本」；(C)教師自主學習非政府直接支出。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
 - id: doc_110_台南_長榮_社會_公民與社會_g11s1e1_s1_15
   section: 1
   number: 15
@@ -679,9 +693,9 @@ questions:
 - id: doc_110_台南_長榮_社會_公民與社會_g11s1e1_s1_25
   section: 1
   number: 25
-  type: calc
+  type: single
   page: 3
-  stem: 阿KEN有一筆200,000元的現金，假設他將錢存在銀行，一年有5%的利息收入。他的好朋友納豆最近急需現金周轉，因此向阿KEN借錢，若阿KEN決定無息將200,000元借給納豆1年，請問：他的機會成本是多少？ (B)210,000元 (B)200,000元 (C)10,000元 (D)O元
+  stem: 阿KEN有一筆200,000元的現金，假設他將錢存在銀行，一年有5%的利息收入。他的好朋友納豆最近急需現金周轉，因此向阿KEN借錢，若阿KEN決定無息將200,000元借給納豆1年，請問：他的機會成本是多少？
   tags:
     unit:
       code: CI-3-2-1
@@ -693,6 +707,22 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 選項未拆出且選項(A)誤植為(B)、「0元」誤植為「O元」
+    fixed_by: agent
+    fix_note: （人工修正：拆分併入題幹之選項並修正標籤(A)與數值「0元」、修正題型為單選，補齊解答與解析）
+  options:
+  - label: A
+    content: 210,000元
+  - label: B
+    content: 200,000元
+  - label: C
+    content: 10,000元
+  - label: D
+    content: 0元
+  explanation: 無息借錢給朋友1年（假設1年後歸還本金200,000元），所放棄的是存入銀行的1年利息收入：200,000 × 5% ＝ 10,000元，故機會成本為10,000元，選(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - C
 - id: doc_110_台南_長榮_社會_公民與社會_g11s1e1_s1_26
   section: 1
   number: 26
@@ -845,7 +875,7 @@ questions:
   number: 31
   type: single
   page: 3
-  stem: 某銀行的經理年薪為200萬元，因為壓力大，近期有考應跳糟其他同業，對方開價年薪180萬元，但他也有考應離職後代理之前自己使用的保健食品，並預估收入可以有300萬元。請問：該銀行經理如選擇繼續待在原公司，則其機會成本為何？
+  stem: 某銀行的經理年薪為200萬元，因為壓力大，近期有考慮跳槽其他同業，對方開價年薪180萬元，但他也有考慮離職後代理之前自己使用的保健食品，並預估收入可以有300萬元。請問：該銀行經理如選擇繼續待在原公司，則其機會成本為何？
   options:
   - label: A
     content: 200萬元
@@ -866,6 +896,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題幹有錯字（「考應」應為「考慮」、「跳糟」應為「跳槽」）
+    fixed_by: agent
+    fix_note: （人工修正：修補題幹錯字「考慮」「跳槽」，補齊解答與解析）
+  explanation: 選擇繼續待在原公司，所放棄的其他選項為「跳槽同業（180萬元）」與「代理保健食品（300萬元）」，機會成本為放棄選項中價值最高者，即300萬元，故選(B)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - B
 - id: doc_110_台南_長榮_社會_公民與社會_g11s1e1_s1_32
   section: 1
   number: 32

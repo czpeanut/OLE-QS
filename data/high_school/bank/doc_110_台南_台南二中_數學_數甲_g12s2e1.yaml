@@ -53,7 +53,16 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 高三下數甲第一次段考出現高三上積分（旋轉體體積）題型
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案與解析）
   difficulty: 2
+  explanation: 旋轉體體積 $S = \pi\int_0^1 [f(x)]^2\,dx$。代入各選項得：(A) $\frac{\pi}{2}$；(B) $\frac{\pi}{3}$；(C) $\frac{\pi}{5}$；(D) $\frac{\pi}{7}$；(E) $\frac{\pi}{9}$。大於 $\frac{\pi}{7}$ 者為 (A)(B)(C)。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - A
+  - B
+  - C
 - id: doc_110_台南_台南二中_數學_數甲_g12s2e1_s1_2
   section: 1
   number: 2
@@ -274,7 +283,7 @@ questions:
   number: 2
   type: fill
   page: 2
-  stem: 水族館繪製一條魚的圖案，是利用了兩函數 f（x）＝$\frac{1}{4}x^{2}+ 1$， g（x）＝$-\frac{1}{4}x^{2}+ 3$的圖形與 x＝－3 所圍成，如右圖陰影部分所 示。試問：魚的面積是＿＿＿＿平方單位。
+  stem: 水族館繪製一條魚的圖案，是利用兩函數 $f(x) = \frac{1}{4}x^2+1$、$g(x) = -\frac{1}{4}x^2+3$ 的圖形與直線 $x = -3$ 所圍成的封閉區域。試問：魚的面積是＿＿＿＿平方單位。
   assets:
   - key: s2_2_f1
     kind: figure
@@ -300,7 +309,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 高三下數甲第一次段考出現高三上積分（兩曲線圍成面積）題型
+    fixed_by: agent
+    fix_note: （人工修正：移除缺圖依賴並補齊答案與解析）
   difficulty: 2
+  explanation: 聯立 $f(x)=g(x)$ 得交點 $x=\pm 2$。在 $[-3,-2]$ 上 $f(x)\ge g(x)$，面積為 $\int_{-3}^{-2}(\frac{1}{2}x^2-2)\,dx = \frac{7}{6}$；在 $[-2,2]$ 上 $g(x)\ge f(x)$，面積為 $\int_{-2}^2(2-\frac{1}{2}x^2)\,dx = \frac{16}{3}$。總面積 $= \frac{7}{6}+\frac{16}{3} = \frac{13}{2}$。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $\frac{13}{2}$
 - id: doc_110_台南_台南二中_數學_數甲_g12s2e1_s2_3
   section: 2
   number: 3
@@ -480,7 +496,16 @@ questions:
     labeled_by: agent
     label_confidence: medium
     label_note: 高三下數甲第一次段考出現高三上微積分（重根與曲線圍成面積）題型
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案與解析）
   difficulty: 3
+  explanation: '(1) $f''(x) = 3x^2 - 6x = 3x(x-2) = 0$ 得 $x=0$ 或 $2$。因 $k>0$ 且 $f(0)=k>0$，重根必發生於 $x=2$，故 $f(2) = 8-12+k=0 \Rightarrow k=4$。
+
+    (2) 聯立 $x^3-3x^2+4=4$ 得 $x=0, 3$，面積 $= \int_0^3 (3x^2-x^3)\,dx = \left[x^3-\frac{x^4}{4}\right]_0^3 = 27 - \frac{81}{4} = \frac{27}{4}$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) $4$；(2) $\frac{27}{4}$
 - id: doc_110_台南_台南二中_數學_數甲_g12s2e1_s2_11
   section: 2
   number: 11
@@ -501,7 +526,14 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 高三下數甲第一次段考出現高三上積分（旋轉體體積）題型
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案與解析）
   difficulty: 4
+  explanation: 球半徑 $2$、圓洞半徑 $\sqrt{3}$，故球心在木板上方 $\sqrt{2^2-(\sqrt{3})^2} = 1$ 公分處。露出部分為 $y \in [-1, 2]$ 之球缺，體積 $V = \pi\int_{-1}^2 (4-y^2)\,dy = \pi\left[4y-\frac{y^3}{3}\right]_{-1}^2 = 9\pi$ 立方公分。
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - $9\pi$
 - id: doc_110_台南_台南二中_數學_數甲_g12s2e1_s2_12
   section: 2
   number: 12
@@ -546,4 +578,13 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 高三下數甲第一次段考出現高三上積分（面積分割與旋轉體體積）題型
+    fixed_by: agent
+    fix_note: （人工修正：補齊答案與解析）
   difficulty: 4
+  explanation: '(1) $\Omega$ 面積 $= \frac{1}{6}(4-0)^3 = \frac{32}{3}$。直線 $y=cx$ 與拋物線交於 $x=0$ 及 $x=4-c$，左側面積 $= \frac{1}{6}(4-c)^3 = \frac{1}{8}\cdot\frac{32}{3} = \frac{4}{3} \Rightarrow (4-c)^3 = 8 \Rightarrow c=2$。
+
+    (2) 繞 $x$ 軸旋轉體積 $V = \pi\int_0^2 [(-x^2+4x)^2 - (2x)^2]\,dx = \pi\int_0^2 (x^4-8x^3+12x^2)\,dx = \frac{32}{5}\pi$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - (1) $2$；(2) $\frac{32}{5}\pi$

@@ -553,9 +553,13 @@ questions:
   number: 1
   type: single
   page: 2
-  stem: '設8支籤中有3支籤是有獎的，今有甲、乙、丙三人，按甲、乙、丙的順序各抽出一支籤，抽出後不再放回。試回答下列問題：
+  stem: '設 8 支籤中有 3 支籤是有獎的，今有甲、乙、丙三人，按甲、乙、丙的順序各抽出一支籤，抽出後不再放回。試回答下列問題：
 
-    (1) 甲、乙均抽中有獎籤的機率為何？( 單選 )'
+    (1) 甲、乙均抽中有獎籤的機率為何？（單選）
+
+    (2) 恰一人中獎的機率為何？
+
+    (3) 試求在乙中獎的條件下，恰有一人中獎的機率為何？'
   options:
   - label: A
     content: $\frac{3}{8}$
@@ -566,7 +570,7 @@ questions:
   - label: D
     content: $\frac{9}{64}$
   - label: E
-    content: $\frac{3}{28}$。 (2) 恰一人中獎的機率為何？ (3) 試求在乙中獎的條件下，恰有一人中獎的機率為何？
+    content: $\frac{3}{28}$
   tags:
     unit:
       code: MA-B4-2-1
@@ -581,4 +585,15 @@ questions:
     labeled_by: agent
     label_confidence: high
     label_note: 題目含(1)(2)(3)三小題但僅標為單選題且無答案
+    fixed_by: agent
+    fix_note: （人工修正：分離混入選項 E 的第(2)(3)小題至題幹，補齊第(1)小題答案與三小題完整解析）
   difficulty: 3
+  explanation: '(1) $\frac{3}{8} \times \frac{2}{7} = \frac{3}{28}$，選 (E)。
+
+    (2) $\frac{C_1^3 C_2^5}{C_3^8} = \frac{30}{56} = \frac{15}{28}$。
+
+    (3) $P(\text{乙中}) = \frac{3}{8}$，$P(\text{僅乙中}) = \frac{5\times 3\times 4}{8\times 7\times 6} = \frac{5}{28}$，故所求條件機率 $= \frac{5/28}{3/8} = \frac{10}{21}$。'
+  answer_status: ai_generated
+  answer_source: agent
+  answer:
+  - E
