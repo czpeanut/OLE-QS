@@ -1,0 +1,586 @@
+document:
+  id: doc_113_台北_明倫_數學_數A_g11s1e1
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 台北
+  school_short: 明倫
+  school: 臺北市立明倫高級中學
+  title: 臺北市立明倫高級中學 113學年度第1學期第1次定期評量 高二數學（數A）科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  source_file: 高二/數學/113/1-1/台北/明倫_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 8 分）
+    count: 1
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，共 36 分。錯一個選項得 4 分，錯兩個選項得 2 分，錯三個選項或不作答不給分）
+    count: 4
+  - ord: 3
+    name: 三、填充題（每格 4 分，共 56 分）
+    count: 10
+questions:
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 令 a＝sin（π$^{2}$），試問下列哪一個選項是對的？
+  options:
+  - label: A
+    content: a＝－1
+  - label: B
+    content: －1＜a＜$-\frac{1}{2}$
+  - label: C
+    content: $-\frac{1}{2}$＜a＜0
+  - label: D
+    content: 0＜a＜$\frac{1}{2}$
+  - label: E
+    content: $\frac{1}{2}$＜a＜1
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'π$^{2}\approx$3.14π＝3π＋0.14π
+
+    ∵0.14π＝0.14×180°＝25.2°
+
+    ∴可知 π$^{2}\approx$3×180°＋25.2°，與 205.2°為同界角
+
+    $\Rightarrow$180°＜π$^{2}$＜210°
+
+    $\Rightarrow-\frac{1}{2}$＜sin（π$^{2}$）＜0
+
+    $\Rightarrow-\frac{1}{2}$＜a＜0
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T02
+      name: 弧度角象限與三角比大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列哪些函數的圖形，可由 y＝sinx 的圖形經左右或上下平移而得？
+  options:
+  - label: A
+    content: y＝sin2x
+  - label: B
+    content: y＝cosx
+  - label: C
+    content: y＝sinx－2
+  - label: D
+    content: y＝cosx＋3
+  - label: E
+    content: y＝－sinx
+  answer:
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：y＝sin2x 的週期為 π，與 y＝sinx 的週期為 2π不同，無法平移得到
+
+    (B)○：y＝sinx $\xrightarrow{向左平移 \frac{\pi}{2} 單位}$ y＝$\sin \left( x +\frac{\pi}{2} \right)$＝cosx
+
+    (C)○：y＝sinx $\xrightarrow{向下平移 2 單位}$ y＝sinx－2
+
+    (D)○：y＝sinx $\xrightarrow{向左平移 \frac{\pi}{2} 單位}$ y＝cosx $\xrightarrow{向上平移 3 單位}$ y＝cosx＋3
+
+    (E)○：y＝sinx $\xrightarrow{向左平移 \pi 單位}$ y＝sin（x＋π）＝－sinx
+
+    故選(B)(C)(D)(E)'
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T11
+      name: 誘導公式與週期平移重合求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 下列哪些敘述是正確的？
+  options:
+  - label: A
+    content: 1 弳＝57°
+  - label: B
+    content: sin2＞sin1＞sin3
+  - label: C
+    content: 坐標平面上，30 弳的最小正同界角是 4.88 弳
+  - label: D
+    content: sin30＝$\frac{1}{2}$
+  - label: E
+    content: cosπ＜cosπ°
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：1 弳$\approx$57°
+
+    (B)○：2 弳$\approx$114°，1 弳$\approx$57°，3 弳$\approx$171°
+
+    $\Rightarrow$sin2＞sin1＞sin3
+
+    (C)╳：∵30－8π$\approx$30－8×3.14＝4.88
+
+    30－10π$\approx$30－10×3.14＝－1.4
+
+    ∴30 弳的最小正同界角是 30－8π弳
+
+    (D)╳：應為 sin30°＝$\frac{1}{2}$
+
+    (E)○：cosπ＝－1，cosπ°$\approx$cos3.14°＞0
+
+    $\Rightarrow$cosπ＜cosπ°
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T01
+      name: 角度弧度換算與同界角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 已知 x 為實數，下列各選項中的方程式何者會有實數解？
+  options:
+  - label: A
+    content: 2 sinx＋cosx＝－2
+  - label: B
+    content: $\frac{\sin x}{\cos x}= 100$
+  - label: C
+    content: 4 cosx－sinx＝－4
+  - label: D
+    content: cosx－2 sinx＝3
+  - label: E
+    content: sinx＝tanx
+  answer:
+  - A
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：2 sinx＋cosx＝－2
+
+    $\Rightarrow$2 sinx＝－2－cosx
+
+    $\Rightarrow$4 $sin^{2}$x＝4＋4 cosx＋$cos^{2}$x
+
+    $\Rightarrow$4（1－$cos^{2}$x）＝4＋4 cosx＋$cos^{2}$x
+
+    $\Rightarrow$5 $cos^{2}$x＋4 cosx＝0
+
+    $\Rightarrow$cosx（5 cosx＋4）＝0
+
+    $\Rightarrow$cosx＝0 或$-\frac{4}{5}$，x 有實數解
+
+    (B)○：$\frac{\sin x}{\cos x}$＝tanx＝100，x 有實數解
+
+    (C)○：4 cosx－sinx＝－4
+
+    $\Rightarrow$4 cosx＝sinx－4
+
+    $\Rightarrow$16 $cos^{2}$x＝$sin^{2}$x－8 sinx＋16
+
+    $\Rightarrow$16（1－$sin^{2}$x）＝$sin^{2}$x－8 sinx＋16
+
+    $\Rightarrow$17 $sin^{2}$x－8 sinx＝0
+
+    $\Rightarrow$sinx（17 sinx－8）＝0
+
+    $\Rightarrow$sinx＝0 或$\frac{8}{17}$，x 有實數解
+
+    (D)╳：cosx－2 sinx＝3
+
+    $\Rightarrow$3＋2 sinx＝cosx
+
+    $\Rightarrow$9＋12 sinx＋4 $sin^{2}$x＝$cos^{2}$x＝1－$sin^{2}$x
+
+    $\Rightarrow$5 $sin^{2}$x＋12 sinx＋8＝0
+
+    ∵D＝$12^{2}$－4×5×8＜0
+
+    ∴sinx 沒有實數解$\Rightarrow$x 沒有實數解
+
+    (E)○：sinx＝tanx＝$\frac{\sin x}{\cos x}$
+
+    當 sinx＝0，即 x＝kπ時有實數解
+
+    故選(A)(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T03
+      name: 正餘弦疊合求極值與解判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s2_6
+  section: 2
+  number: 6
+  type: multiple
+  page: 2
+  stem: 下列哪些敘述是正確的？
+  options:
+  - label: A
+    content: a＝$\cos 66^{^{\circ}} + \sqrt{3}\sin 66^{^{\circ}}$和 b＝$\cos 86^{^{\circ}} + \sqrt{3}\sin 86^{^{\circ}}$，a 比較接近 2
+  - label: B
+    content: sin17°cos103°＋cos17°sin103°＝$\frac{1}{2}$
+  - label: C
+    content: $\sin \frac{2\pi}{3}\cos \frac{\pi}{6}+\cos \frac{3\pi}{2}\sin \frac{5\pi}{6}+\tan \frac{5\pi}{4}\sin \frac{7\pi}{6}$＝2
+  - label: D
+    content: cos120°＝$\sqrt{\frac{1 +\cos 240^{^{\circ}}}{2}}$
+  - label: E
+    content: 4 $cos^{3}$40°－3 cos40°＋1＝$\frac{1}{2}$
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：a＝$\cos 66^{^{\circ}} + \sqrt{3}\sin 66^{^{\circ}}$
+
+    ＝$2 \left( \frac{1}{2}\cos 66^{^{\circ}} +\frac{\sqrt{3}}{2}\sin 66^{^{\circ}} \right)$
+
+    ＝2 sin（66°＋30°）＝2 sin96°
+
+    b＝$\cos 86^{^{\circ}} + \sqrt{3}\sin 86^{^{\circ}}$
+
+    ＝$2 \left( \frac{1}{2}\cos 86^{^{\circ}} +\frac{\sqrt{3}}{2}\sin 86^{^{\circ}} \right)$
+
+    ＝2 sin（86°＋30°）＝2 sin116°
+
+    ∵sin116°＜sin96°＜sin90°＝1
+
+    $\Rightarrow$a 較接近 2
+
+    (B)╳：sin17°cos103°＋cos17°sin103°＝sin（17°＋103°）＝sin120°＝$\frac{\sqrt{3}}{2}$
+
+    (C)╳：$\sin \frac{2\pi}{3}\cos \frac{\pi}{6}+\cos \frac{3\pi}{2}\sin \frac{5\pi}{6}+\tan \frac{5\pi}{4}\sin \frac{7\pi}{6}$
+
+    ＝$\frac{\sqrt{3}}{2}\times \frac{\sqrt{3}}{2}+ 0\times \frac{1}{2}+ 1\times \left( -\frac{1}{2} \right)$＝$\frac{1}{4}$
+
+    (D)╳：cos120°＜0，$\sqrt{\frac{1 +\cos 240^{^{\circ}}}{2}}$＞0，cos120°≠$\sqrt{\frac{1 +\cos 240^{^{\circ}}}{2}}$
+
+    (E)○：4 $cos^{3}$40°－3 cos40°＋1＝cos120°＋1
+
+    ＝$-\frac{1}{2}+ 1$＝$\frac{1}{2}$
+
+    故選(A)(E)'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T02
+      name: 和差角公式化簡與求值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: '已知 sinθ＋cosθ＝$\frac{1}{3}$，試求下列各值：
+
+    (1) sin2θ＝＿＿＿＿。'
+  answer:
+  - (1)$-\frac{8}{9}$；(2)$-\frac{47}{81}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T03
+      name: 二倍角與三倍角公式計算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹缺第(2)小題內容
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 如圖(二)，遊樂區中有一圓形摩天輪，中心高 22 公尺，直徑 40 公尺，逆時針方向運轉一圈需時 12 分鐘。設摩天輪開始運轉時，甲車廂恰在離地最近的位置上，若將高度以 y（公尺）表示，時間以 t（分鐘）表示，則 y 與 t 之關係可以方程式$y =a\sin \left( bt -\frac{\pi}{2} \right) +c$表示，其中 a＞0，b＞0，則序組（a，b，c）為＿＿＿＿。
+  assets:
+  - key: s3_3_f1
+    kind: figure
+    file: doc_113_台北_明倫_數學_數A_g11s1e1/s3_3_f1.png
+    crop:
+      page: 3
+      rect:
+      - 383.45
+      - 177.4
+      - 502.85
+      - 308.8
+  - key: s3_3_f2
+    kind: figure
+    file: doc_113_台北_明倫_數學_數A_g11s1e1/s3_3_f2.png
+    crop:
+      page: 3
+      rect:
+      - 152.15
+      - 214.2
+      - 239.65
+      - 301.7
+  answer:
+  - $\left( 20 , \frac{\pi}{6} , 22 \right)$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T04
+      name: 週期性生活現象三角建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 已知θ為兩直線 $L_{1}$：3x＋y＝0 與 $L_{2}$：5x－y＝0 的夾角，試求 tanθ的值＝＿＿＿＿。（有兩解）
+  answer:
+  - $\pm \frac{4}{7}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T01
+      name: 正切和差角公式與兩線夾角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 試求方程式 sinx＝$-\frac{x}{12}$解的個數有＿＿＿＿個。
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T03
+      name: 三角方程式實根與交點數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 試求$\frac{\sqrt{3}}{\cos 10^{^{\circ}}}-\frac{1}{\sin 10^{^{\circ}}}$的值＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T02
+      name: 和差角公式化簡與求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 有一扇形的半徑為 r，鈍角圓心角為θ，若此扇形的周長為 12，面積為 9，則數對（r，θ）為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T05
+      name: 扇形弧長面積與比例應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 國慶典禮設計了戰機噴射彩煙的表演，預計讓一架戰機通過總統府正上方後，開始直線飛行並依序噴出紅、藍、綠三種不同顏色的彩煙。戰機開始噴煙後，距離地面的高度固定為 900 公尺，且在總統府觀禮臺的貴賓看到三種顏色的彩煙有一樣的視角θ（不考慮人的身高及觀禮臺的高度），如示意圖(四)，已知紅色彩煙的長度為 300 公尺，則綠色彩煙的長度為 ＿＿＿＿公尺。
+  assets:
+  - key: s3_10_f1
+    kind: figure
+    file: doc_113_台北_明倫_數學_數A_g11s1e1/s3_10_f1.png
+    crop:
+      page: 3
+      rect:
+      - 148.7
+      - 619.0
+      - 243.15
+      - 713.45
+  - key: s3_10_f2
+    kind: figure
+    file: doc_113_台北_明倫_數學_數A_g11s1e1/s3_10_f2.png
+    crop:
+      page: 3
+      rect:
+      - 398.9
+      - 637.4
+      - 487.35
+      - 712.15
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T05
+      name: 幾何圖形和差角與倍角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 3
+  stem: 已知△ABC 中，$\overline{AB}$＝4，$\overline{BC}$＝6，且∠A＝2∠C，則$\overline{AC}$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T03
+      name: 二倍角與三倍角公式計算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 3
+  stem: 設－π$\leq$x$\leq$π，則滿足方程式 cos2x＝$\frac{\sqrt{3}}{2}$的解 x＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T03
+      name: 三角方程式實根與交點數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e1_s3_13
+  section: 3
+  number: 13
+  type: fill
+  page: 3
+  stem: 若 x＝α 時，函數 f（x）＝4 sinx－3 cosx＋1 有最大值，則 cosα＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T01
+      name: 正餘弦基本疊合與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

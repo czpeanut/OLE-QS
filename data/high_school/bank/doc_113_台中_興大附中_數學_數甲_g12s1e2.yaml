@@ -1,0 +1,636 @@
+document:
+  id: doc_113_台中_興大附中_數學_數甲_g12s1e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 113學年度第1學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  source_file: 高三/數學/113/1-2/台中/興大附中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 24 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 24 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 40 分）
+    count: 8
+  - ord: 4
+    name: 四、計算題（共 12 分）
+    count: 1
+questions:
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 如圖所示，已知 y＝f（x）的圖形和 x 軸交於（0，0）， （1，0），（2，0），（3，0）四點，且分別與 x 軸所圍 的面積 $R_{1}$＝3，$R_{2}$＝5，$R_{3}$＝7，則$\int_{0}^{3} f ( x )dx$值為何？
+  options:
+  - label: A
+    content: '5'
+  - label: B
+    content: '7'
+  - label: C
+    content: '9'
+  - label: D
+    content: '10'
+  - label: E
+    content: '15'
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_113_台中_興大附中_數學_數甲_g12s1e2/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 447.4
+      - 166.85
+      - 564.3
+      - 241.75
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int_{0}^{3} f ( x )dx$＝$\int_{0}^{1} f ( x )dx$＋$\int_{1}^{2} f ( x )dx$＋$\int_{2}^{3} f ( x )dx$
+
+    ＝$R_{1}$－$R_{2}$＋$R_{3}$
+
+    ＝3－5＋7＝5
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T10
+      name: 定積分幾何意義與基本性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 若 f'（x）＝x（x－3），則下列敘述何者正確？
+  options:
+  - label: A
+    content: f(0)＝0
+  - label: B
+    content: f(2)＜f(3)
+  - label: C
+    content: f（x）的圖形沒有反曲點
+  - label: D
+    content: f（x）的圖形在區間（2，3）為凹口向上
+  - label: E
+    content: f（x）的圖形在區間（1，2）為凹口向上
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$x^{2}$－3x＝x（x－3）＝0$\Rightarrow$x＝0 或 3
+
+    f''''（x）＝2x－3＝0$\Rightarrow$x＝$\frac{3}{2}$
+
+    依 f''（x）、f''''（x）正負製表可得
+
+    $\frac{3}{2}$
+
+    (A)╳：條件不足無法求得 f(0)
+
+    (B)╳：f(2)＞f(3)
+
+    (C)╳：f（x）的圖形有反曲點$\left( \frac{3}{2} , f\left( \frac{3}{2} \right) \right)$
+
+    (D)○
+
+    (E)╳：f（x）的圖形在區間$\left( 1 , \frac{3}{2} \right)$為凹口向下
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 設 f（x）＝$\int_{2}^{x} \sqrt{2t - 1} dt$，則 f'(4)＝？
+  options:
+  - label: A
+    content: $2( \sqrt{7} - \sqrt{3} )$
+  - label: B
+    content: $\sqrt{7} - \sqrt{3}$
+  - label: C
+    content: $2\sqrt{7}$
+  - label: D
+    content: $\frac{\sqrt{7}}{2}$
+  - label: E
+    content: $\sqrt{7}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（x）＝$\int_{2}^{x} \sqrt{2t - 1} dt$，由微積分基本定理可知 f''（x）＝$\sqrt{2x - 1}$
+
+    $\Rightarrow$f''(4)＝$\sqrt{7}$
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T04
+      name: 微積分基本定理微分應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 設 a 為不為零之實數，若 f（x）＝$\frac{1}{3}x^{3}+\frac{a + 2}{2}x^{2}+ 2ax +a$為三次多項式，則 y＝f（x）圖形<u>不可能</u>在下列哪個區間為遞增？
+  options:
+  - label: A
+    content: '[ －2024，－113 ]'
+  - label: B
+    content: '[ －113，－8 ]'
+  - label: C
+    content: '[ －8，－1 ]'
+  - label: D
+    content: '[ －1，3 ]'
+  - label: E
+    content: '[ 3，10 ]'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T09
+      name: 導函數圖形與係數正負幾何判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 設函數 f（x）＝$\sqrt{1 -x^{2}}$，g（x）＝－$x^{2}$＋1，並設 R 為函數 f（x）與函數 g（x）的圖形與 x＝－1，x＝1 圍成的區域，則下列選項哪些正確？
+  options:
+  - label: A
+    content: 積分$\int_{-1}^{1} f ( x )dx$＝π
+  - label: B
+    content: 積分$\int_{-1}^{1} g ( x )dx$＝$\frac{4}{3}$
+  - label: C
+    content: 當－1 ≤ x ≤ 1 時，f（x）≥ g（x）
+  - label: D
+    content: 區域 R 的面積為$\pi -\frac{4}{3}$
+  - label: E
+    content: 區域 R 繞 x 軸所得的旋轉體體積為$\frac{4}{15}\pi$
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：$\int_{-1}^{1} f ( x )dx$＝半徑為 1 的半圓面積＝$\frac{1}{2}\pi$
+
+    (B)○：$\int_{-1}^{1} ( -x^{2}+ 1 )dx$＝$\left. \left( -\frac{1}{3}x^{3}+x \right) \right| _{-1}^{1}$＝$-\frac{1}{3}+ 1 - \left( \frac{1}{3}- 1 \right)$＝$\frac{4}{3}$
+
+    (C)○：由－1 ≤ x ≤ 1，可推得 0 ≤ 1－$x^{2}$ ≤ 1
+
+    ∴$1 -x^{2}\leq \sqrt{1 -x^{2}}$
+
+    (D)╳：由(A)(B)(C)可知，區域 R 的面積為$\frac{1}{2}\pi -\frac{4}{3}$
+
+    (E)○：$\int_{-1}^{1} \pi ( ( f ( x ) )^{2}-( g ( x ) )^{2} )dx$
+
+    ＝$2\pi \int_{0}^{1} ( ( 1 -x^{2} )-( 1 -x^{2} )^{2} )dx$
+
+    ＝$2\pi \int_{0}^{1} ( -x^{4}+x^{2} )dx$
+
+    ＝$2\pi \left. \left( -\frac{1}{5}x^{5}+\frac{1}{3}x^{3} \right) \right| _{0}^{1}$
+
+    ＝$2\pi \left( \frac{1}{3}-\frac{1}{5} \right)$＝$\frac{4}{15}\pi$
+
+    故選(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T06
+      name: 定積分求旋轉體體積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 設 y＝f（x）＝$x^{4}$＋$ax^{3}$＋$bx^{2}$＋cx 為一個四次多項式，其中 a，b，c 為實數，請選出正確的選項。
+  options:
+  - label: A
+    content: f（x）＝0 必有實數解
+  - label: B
+    content: f'（x）＝0 必有實數解
+  - label: C
+    content: y＝f（x）圖形至少有一個反曲點
+  - label: D
+    content: 由 y＝f（x）圖形和 x＝0、x＝1 以及 x 軸所圍出來的區域面積為$\frac{1}{5}+\frac{a}{4}+\frac{b}{3}+\frac{c}{2}$
+  - label: E
+    content: $\int_{0}^{1} | f ( x ) |dx$＝$\left| \frac{1}{5}+\frac{a}{4}+\frac{b}{3}+\frac{c}{2} \right|$
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵f(0)＝0 ∴f（x）＝0 至少有一解 x＝0
+
+    (B)○：∵f''（x）＝$4x^{3}$＋$3ax^{2}$＋2bx＋c ∴三次多項式函數 f''（x）＝0 至少有一實數解
+
+    (C)╳：反例：若 a＝b＝c＝0，此時 f（x）＝$x^{4}$，圖形無反曲點
+
+    (D)╳：條件不足無法求解，因為無法確定範圍內的 f（x）是正或負
+
+    (E)╳：條件不足無法求解，因為無法確定範圍內的 f（x）是正或負
+
+    故選(A)(B)'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 設一個三次多項式 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d＝a（x－h）$^{3}$＋p（x－h）＋k，其中 a， b，c，d，p，h，k 均為實數，且 a≠0，則下列選項哪些正確？
+  options:
+  - label: A
+    content: h＝$\frac{b}{3a}$
+  - label: B
+    content: p＝$3ah^{2}$＋2bh
+  - label: C
+    content: y＝f（x）在點（0，d）的切線斜率為 c
+  - label: D
+    content: 若 ap＞0，則 $b^{2}$－3ac＜0
+  - label: E
+    content: 若 $b^{2}$－3ac ≤ 0，則 ap＞0
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：h＝$-\frac{b}{3a}$
+
+    (B)╳：f''（x）＝$3ax^{2}$＋2bx＋c＝3a（x－h）$^{2}$＋p
+
+    x＝h 代入$\Rightarrow$p＝$3ah^{2}$＋2bh＋c
+
+    (C)○：切線斜率為 f''(0)＝c
+
+    (D)○：若 ap＞0，則 y＝f（x）恆為遞增函數或恆為遞減函數，且 f''（h）≠0
+
+    $\Rightarrowb^{2}$－3ac＜0
+
+    (E)╳：$b^{2}$－3ac＝0 時，p＝0$\Rightarrow$ap＝0
+
+    故選(C)(D)'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T04
+      name: 泰勒展開與函數綜合性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 已知多項式 f（x）＝$x^{4}$－$6x^{3}$＋$6x^{2}$＋5x－1 在（α，f（α））及（β，f（β））為 y＝f（x）圖形的反曲點，則 α＋β＝＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$4x^{3}$－$18x^{2}$＋12x＋5，
+
+    f''''（x）＝$12x^{2}$－36x＋12＝12（$x^{2}$－3x＋1）＝0$\Rightarrow$x＝$\frac{3\pm \sqrt{5}}{2}$
+
+    所求α＋β＝$\frac{3 - \sqrt{5}}{2}+\frac{3 + \sqrt{5}}{2}$＝3'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 若$\int_{1}^{3} ( 3x^{2}+ax + 1 )dx$＝24，則實數 a＝＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int_{1}^{3} ( 3x^{2}+ax + 1 )dx$＝$\left. \left( x^{3}+\frac{a}{2}x^{2}+x \right) \right| _{1}^{3}$＝24
+
+    $\Rightarrow\left( 27 +\frac{9a}{2}+ 3 \right) - \left( 1 +\frac{a}{2}+ 1 \right)$＝24
+
+    $\Rightarrow$4a＝－4
+
+    故 a＝－1'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T02
+      name: 多項式定積分與待定係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 設三次函數 f（x）＝$ax^{3}$＋$ax^{2}$＋（a－1）x＋7 恆為遞增函數，則實數 a 範圍為 a ≥ ＿＿＿＿。
+  answer:
+  - $\frac{3}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f（x）恆為遞增函數 ∴f''（x）≥ 0 恆成立
+
+    而 f''（x）＝$3ax^{2}$＋2ax＋（a－1）
+
+    即 $3ax^{2}$＋2ax＋（a－1）≥ 0 恆成立
+
+    $\Rightarrow\begin{cases}3a > 0 \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots ① \\ D = ( 2a )^{2}- 4 \cdot 3a \cdot ( a - 1 )\leq 0 \ldots \ldots \ldots ②\end{cases}$
+
+    $\Rightarrow\begin{cases}a > 0 \\ a^{2}- 3a^{2}+ 3a\leq 0\end{cases}\Rightarrow\begin{cases}a > 0 \\ a ( 2a-3 )\geq 0\end{cases}$
+
+    $\Rightarrow\begin{cases}a > 0 \\ a\geq \frac{3}{2} 或 a\leq 0\end{cases}$
+
+    故$a\geq \frac{3}{2}$'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T07
+      name: 二次導函數判別式定單調與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設函數 f（x）＝$2x^{2}$ 的圖形與 x 軸，x＝0 及 x＝2 所圍成的區域為 R，若在區間 [ 0，2 ] 等分成 n 段，並分別在這些等分點上作上矩形，若這些上矩形的總和（即上和）為 $U_{n}$，則 $U_{4}$＝ ＿＿＿＿。
+  answer:
+  - $\frac{15}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$U_{4}$＝$\frac{1}{2}\times f\left( \frac{1}{2} \right)$＋$\frac{1}{2}\times f ( 1 )$＋$\frac{1}{2}\times f\left( \frac{3}{2} \right)$＋$\frac{1}{2}\times f ( 2 )$
+
+    ＝$\frac{1}{2} \left[ 2\times \left( \frac{1}{2} \right) ^{2}+ 2\times 1^{2}+ 2\times \left( \frac{3}{2} \right) ^{2}+ 2\times 2^{2} \right]$
+
+    ＝$\frac{1}{4}+ 1 +\frac{9}{4}+ 4$＝$\frac{15}{2}$'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 試求$\int_{0}^{3} ( \sqrt{x^{2}- 2x + 1} +x^{2} )dx$＝＿＿＿＿。
+  answer:
+  - $\frac{23}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T03
+      name: 分段與絕對值函數定積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 已知多項式 f（x）滿足 f''（x）＝－6x＋4，若 y＝f（x）在 x＝1 有局部極值 3，則 f（－2）＝ ＿＿＿＿。
+  answer:
+  - '21'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f''''（x）＝－6x＋4，
+
+    ∴設 f''（x）＝－$3x^{2}$＋4x＋k
+
+    又 y＝f（x）在 x＝1 有局部極值$\Rightarrow$f''(1)＝0
+
+    $\Rightarrow$－3＋4＋k＝0$\Rightarrow$k＝－1
+
+    ∴f''（x）＝－$3x^{2}$＋4x－1
+
+    設 f（x）＝－$x^{3}$＋$2x^{2}$－x＋c
+
+    又 f(1)＝3$\Rightarrow$－1＋2－1＋c＝3$\Rightarrow$c＝3
+
+    故 f（x）＝－$x^{3}$＋$2x^{2}$－x＋3
+
+    所求 f（－2）＝8＋8＋2＋3＝21'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T03
+      name: 導函數積分反推原函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 已知 R 為函數 f（x）＝－$x^{2}$＋2 的圖形與 x 軸所圍成的區域，則 R 繞 x 軸所得的旋轉體體積為＿＿＿＿。
+  answer:
+  - $\frac{64\sqrt{2}}{15}\pi$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T06
+      name: 定積分求旋轉體體積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 試求極限$\lim_{n \rightarrow \infty} \left( \frac{2}{n} \right) ^{6}( 1^{5}+2^{5}+\ldots \ldots +n^{5} )$＝＿＿＿＿。
+  answer:
+  - $\frac{32}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \left( \frac{2}{n} \right) ^{6}( 1^{5}+2^{5}+\ldots \ldots +n^{5} )$
+
+    ＝$2^{6}\times \lim_{n \rightarrow \infty} \frac{1}{n} \left[ \left( \frac{1}{n} \right) ^{5}+ \left( \frac{2}{n} \right) ^{5}+\ldots \ldots + \left( \frac{n}{n} \right) ^{5} \right]$
+
+    ＝$64\times \int_{0}^{1} x^{5}dx$＝$\left. 64\times \frac{1}{6}x^{6} \right| _{0}^{1}$＝$64\times \frac{1}{6}$＝$\frac{32}{3}$'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '■ Bao 在練習學測考古題時，寫到類似題如下：「平面上兩點 A、B 之距離為 6，以 A 為圓心作一半徑為 r（0＜r＜6）的圓Γ，過 B 作圓Γ的切線，切點（之一）為 P。當 r 變動時，△PAB 的面積最大可能值為何？」
+
+    (1) 請用 r 表示△PAB 的面積。（4 分）
+
+    (2) 承第(1)題，請用「微分」的方法及「一階（或二階）檢定法」求出，當 r 為多少時，△PAB 面積有最大值為何？（8 分）'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T05
+      name: 幾何圖形與函數極值應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

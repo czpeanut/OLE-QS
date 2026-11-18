@@ -1,0 +1,578 @@
+document:
+  id: doc_112_台中_興大附中_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 112學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 112學年度第2學期第2次定期評量
+  source_file: 高二/數學/112/2-2/台中/興大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 60 分）
+    count: 8
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，共 12 分；答錯一個選項得 4 分，答錯兩個選項得 2 分，答錯三個選項以上或未作答者得 0 分）
+    count: 2
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 18 分）
+    count: 3
+  - ord: 4
+    name: 四、混合題（共 10 分）
+    count: 1
+questions:
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 某工廠有三部機器 A、B、C 產量分別占全部的 60 ％、30 ％、10 ％，又設 A、B、C 三部機器所生產的不良品率依次為 2 ％、3 ％、4 ％，從全部產品中任取一產品，發現其為不良品，則此不良品來自 A 機器的機率為何？
+  options:
+  - label: A
+    content: $\frac{3}{5}$
+  - label: B
+    content: $\frac{12}{25}$
+  - label: C
+    content: $\frac{9}{25}$
+  - label: D
+    content: $\frac{4}{25}$
+  - label: E
+    content: $\frac{7}{25}$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T01
+      name: 貝氏定理與條件事後機率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 袋中有大小相同的紅球 3 顆與白球 2 顆，從中任取 3 顆球，在至少取出 2 顆紅球的情況下，3 顆皆為紅球的條件機率為何？
+  options:
+  - label: A
+    content: $\frac{1}{4}$
+  - label: B
+    content: $\frac{1}{5}$
+  - label: C
+    content: $\frac{1}{6}$
+  - label: D
+    content: $\frac{1}{7}$
+  - label: E
+    content: $\frac{1}{8}$
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（至少 2 紅）＝P（3 紅）＋P（2 紅 1 白）
+
+    ＝$\frac{C_{3}^{3}}{C_{3}^{5}}$＋$\frac{C_{2}^{3}\times C_{1}^{2}}{C_{3}^{5}}$＝$\frac{7}{10}$
+
+    所求為$\frac{\frac{1}{10}}{\frac{7}{10}}$＝$\frac{1}{7}$
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 設 A、B 為獨立事件，且 P
+  options:
+  - label: A
+    content: ＝$\frac{1}{4}$，P（A∪B）＝$\frac{1}{2}$，則 P（A∩B）的值為何？(A) $\frac{1}{4}$
+  - label: B
+    content: $\frac{1}{3}$
+  - label: C
+    content: $\frac{1}{2}$
+  - label: D
+    content: $\frac{1}{6}$
+  - label: E
+    content: $\frac{1}{12}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵A、B 為獨立事件
+
+    ∴P（A∩B）＝P(A)P(B)
+
+    則 P（A∪B）＝P(A)＋P(B)－P（A∩B）
+
+    ⇒$\frac{1}{2}$＝$\frac{1}{4}$＋P(B)－$\frac{1}{4}$P(B)
+
+    ⇒ P(B)＝$\frac{1}{3}$
+
+    P（A∩B）＝$\frac{1}{4}\times \frac{1}{3}$＝$\frac{1}{12}$
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹與選項A文字斷行錯位
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 2
+  stem: 甲、乙、丙、丁、戊 5 人排成一列，則在丙、丁相鄰的情況下，甲、乙也相鄰的條件機率為何？
+  options:
+  - label: A
+    content: $\frac{1}{6}$
+  - label: B
+    content: $\frac{1}{5}$
+  - label: C
+    content: $\frac{1}{4}$
+  - label: D
+    content: $\frac{1}{3}$
+  - label: E
+    content: $\frac{1}{2}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'n（丙丁相鄰）＝4！×2！＝48
+
+    又 n（甲乙相鄰且丙丁相鄰）＝3！×2！×2！＝24
+
+    所求為$\frac{24}{48}$＝$\frac{1}{2}$
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 3
+  stem: 甲、乙兩位警察射擊一嫌犯，已知甲的命中率為$\frac{3}{4}$，乙的命中率為$\frac{2}{3}$，今甲、乙兩位警察同時對嫌犯各開一槍，且互不影響，試求此嫌犯被擊中的機率為何？
+  options:
+  - label: A
+    content: $\frac{5}{12}$
+  - label: B
+    content: $\frac{7}{12}$
+  - label: C
+    content: $\frac{2}{3}$
+  - label: D
+    content: $\frac{3}{4}$
+  - label: E
+    content: $\frac{11}{12}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（被擊中）＝1－P（甲、乙均未擊中）
+
+    ＝1－$\frac{1}{4}\times \frac{1}{3}$＝$\frac{11}{12}$
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 3
+  stem: 有甲、乙兩個袋子，甲袋內有 1 顆黑球 2 顆白球，乙袋內有 1 顆白球 3 顆黑球，今擲一均勻硬幣 1 次，若出現正面，則從甲袋抽出一球，若出現反面，則從乙袋抽出一球。已知取出的是白球，則此白球是取自乙袋的機率最接近下列哪個數？
+  options:
+  - label: A
+    content: '0.1'
+  - label: B
+    content: '0.3'
+  - label: C
+    content: '0.5'
+  - label: D
+    content: '0.7'
+  - label: E
+    content: '0.8'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T03
+      name: 貝氏定理與袋球抽樣事後機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s1_9
+  section: 1
+  number: 9
+  type: single
+  page: 3
+  stem: 一種檢驗某傳染病的儀器，依過去的經驗得知：患此病的人有 90 ％ 的機率經此儀器檢驗會呈陽性反應；不患此病的人也有 5 ％的機率會被誤檢而呈現陽性反應。假設某地區有 10 ％ 的人罹患此病，從此地中任選一人接受檢驗，若檢驗結果呈陽性反應，則此人確實罹患該病的機率最接近下列哪個數？
+  options:
+  - label: A
+    content: '0.4'
+  - label: B
+    content: '0.5'
+  - label: C
+    content: '0.7'
+  - label: D
+    content: '0.9'
+  - label: E
+    content: '0.1'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T04
+      name: 貝氏定理與醫學篩檢誤判反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s1_10
+  section: 1
+  number: 10
+  type: single
+  page: 3
+  stem: 某手機廠牌生產的 10 個新手機中有 3 個不良品，今隨機抽驗，每次取 1 個，取出的產品不再放回，則第四次取到不良品的機率為何？
+  options:
+  - label: A
+    content: $\frac{6}{11}$
+  - label: B
+    content: $\frac{7}{13}$
+  - label: C
+    content: $\frac{5}{9}$
+  - label: D
+    content: $\frac{3}{10}$
+  - label: E
+    content: $\frac{7}{16}$
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 4
+  stem: 袋中有 2 顆白球、1 顆黑球，今自袋中隨機取球，設每顆球被取到的機率都相等，則下列敘述何者正確？
+  options:
+  - label: A
+    content: 一次取兩球，恰為一白球一黑球的機率為$\frac{2}{3}$
+  - label: B
+    content: 一次取一球，取後放回，共取兩次，恰為一白球一黑球的機率為$\frac{2}{9}$
+  - label: C
+    content: 一次取一球，取後不放回，共取兩次，恰為一白球一黑球的機率為$\frac{1}{3}$
+  - label: D
+    content: 一次取一球，取後放回，則第二次取到的是白球的機率為$\frac{2}{3}$
+  - label: E
+    content: 一次取一球，取後不放回，則第二次取到的是黑球的機率為$\frac{1}{3}$
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：$\frac{C_{1}^{2}\times C_{1}^{1}}{C_{2}^{3}}$＝$\frac{2}{3}$
+
+    (B)╳：P（1 白 1 黑）＝P（先白再黑）＋P（先黑再白）＝$\frac{2}{3}\times \frac{1}{3}+\frac{1}{3}\times \frac{2}{3}$＝$\frac{4}{9}$
+
+    (C)╳：P（1 白 1 黑）＝P（先白再黑）＋P（先黑再白）＝$\frac{2}{3}\times \frac{1}{2}+\frac{1}{3}\times \frac{2}{2}$＝$\frac{2}{3}$
+
+    (D)○：P（第二次取到白球）＝P（第一次取到白球）＝$\frac{2}{3}$
+
+    (E)○：P（第二次取到黑球）＝P（第一次取到黑球）＝$\frac{1}{3}$
+
+    故選(A)(D)(E)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 4
+  stem: 設 A，B 為兩事件，且 P
+  options:
+  - label: A
+    content: ＝$\frac{1}{3}$，P
+  - label: B
+    content: ＝$\frac{2}{5}$，P（A∪B）＝$\frac{1}{2}$，則下列何者正確？(A) P（A∩B）＝$\frac{7}{30}$(B) P（B∣A）＝$\frac{1}{3}$
+  - label: C
+    content: P（A∣B）＝$\frac{7}{12}$
+  - label: D
+    content: P（B∣A'）＝$\frac{1}{3}$
+  - label: E
+    content: P（B'∣A'）＝$\frac{3}{4}$
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：P（A∪B）＝P(A)＋P(B)－P（A∩B）
+
+    ⇒$\frac{1}{2}$＝$\frac{1}{3}+\frac{2}{5}$－P（A∩B）⇒ P（A∩B）＝$\frac{7}{30}$
+
+    (B)╳：P（B∣A）＝$\frac{P ( A\cap B )}{P (A )}$＝$\frac{\frac{7}{30}}{\frac{1}{3}}$＝$\frac{7}{10}$
+
+    (C)○：P（A∣B）＝$\frac{P ( A\cap B )}{P (B )}$＝$\frac{\frac{7}{30}}{\frac{2}{5}}$＝$\frac{7}{12}$
+
+    (D)╳：P（B∣A''）＝$\frac{P ( A''\cap B )}{P (A'' )}$＝$\frac{P ( B ) - P ( A\cap B )}{1 -P (A )}$＝$\frac{\frac{2}{5}-\frac{7}{30}}{1 -\frac{1}{3}}$＝$\frac{1}{4}$
+
+    (E)○：P（B''∣A''）＝$\frac{P ( A''\cap B'' )}{P (A'' )}$＝$\frac{P ( ( A\cup B ) '' )}{1 -P (A )}$＝$\frac{1 -P (A\cup B )}{1 -P (A )}$＝$\frac{\frac{1}{2}}{\frac{2}{3}}$＝$\frac{3}{4}$
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T09
+      name: 條件機率定義與集合運算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹與選項AB文字斷行錯位
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 4
+  stem: 某職業棒球總冠軍賽為 5 戰 3 勝制且不得和局，設甲隊每場贏球機率為$\frac{2}{3}$，且每場比賽結果互不影響。已知甲隊前兩場皆勝，則最後甲隊贏得比賽的機率為＿＿＿＿。
+  answer:
+  - $\frac{26}{27}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T12
+      name: 獨立重複試驗與比賽勝率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 4
+  stem: 袋中有 3 顆紅球、4 顆白球、5 顆黑球，設每顆球被取到的機率都相等，今自袋中每次取出一球，取出後不放回，直到所有球全部取出為止，試求紅球先取完的機率為＿＿＿＿。
+  answer:
+  - $\frac{25}{56}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（紅球先取完）＝P（紅球比白球先取完）＋P（紅球比黑球先取完）
+
+    －P（紅球比白球或黑球先取完）
+
+    又 P（紅球比白球先取完）＝$\frac{C_{1}^{4}\times 6!}{7!}$＝$\frac{4}{7}$（不考慮黑球，只看紅、白球中，且球均視為不同，最後一個為白球之機率）
+
+    P（紅球比黑球先取完）＝$\frac{C_{1}^{5}\times 7!}{8!}$＝$\frac{5}{8}$（做法和紅球比白球先取完相似）
+
+    P（紅球比白球或黑球先取完）＝$\frac{C_{1}^{4}\times 11!+C_{1}^{5}\times 11!}{12!}$＝$\frac{9}{12}$（最後一顆為白球或黑球）
+
+    故所求為$\frac{4}{7}+\frac{5}{8}-\frac{9}{12}$＝$\frac{32 + 35 - 42}{56}$＝$\frac{25}{56}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 4
+  stem: 如右圖為一電路圖，其中 A、B、C 均為電器開關，已知每個開關電流通過的機率分別為$\frac{1}{2}$、$\frac{2}{3}$、$\frac{3}{4}$，且各開關操作獨立，試求在電流流通的條件下，電流只從 A、B 處流通的機率為＿＿＿＿。
+  assets:
+  - key: s3_3_f1
+    kind: figure
+    file: doc_112_台中_興大附中_數學_數B_g11s2e2/s3_3_f1.png
+    crop:
+      page: 4
+      rect:
+      - 464.75
+      - 658.6
+      - 564.3
+      - 737.35
+  answer:
+  - $\frac{1}{10}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（只從 A、B 流通）＝$\frac{1}{2}\times \frac{2}{3}\times \frac{1}{4}$＝$\frac{1}{12}$
+
+    P（只從 C 流通）＝$\left( 1 -\frac{1}{2}\times \frac{2}{3} \right) \times \frac{3}{4}$＝$\frac{1}{2}$
+
+    P（A、B 與 C 都流通）＝$\frac{1}{2}\times \frac{2}{3}\times \frac{3}{4}$＝$\frac{1}{4}$
+
+    故所求為$\frac{\frac{1}{12}}{\frac{1}{12}+\frac{1}{2}+\frac{1}{4}}$＝$\frac{\frac{1}{12}}{\frac{1 + 6 + 3}{12}}$＝$\frac{1}{10}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數B_g11s2e2_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 5
+  stem: '甲、乙二人同時解一數學題，其能解出的機率分別為$\frac{3}{4}$、$\frac{1}{3}$。今二人各自獨立解此題，試回答下列各題：
+
+    (1) 此題二人都解不出的機率為何？（單選，3 分）
+
+    (2) 已知此題只被一人解出的條件下，則由甲解出的機率為何？（7 分）'
+  options:
+  - label: A
+    content: $\frac{1}{4}$
+  - label: B
+    content: $\frac{3}{5}$
+  - label: C
+    content: $\frac{1}{6}$
+  - label: D
+    content: $\frac{3}{7}$
+  - label: E
+    content: $\frac{2}{7}$
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

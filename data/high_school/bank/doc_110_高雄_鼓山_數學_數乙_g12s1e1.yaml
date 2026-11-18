@@ -1,0 +1,499 @@
+document:
+  id: doc_110_高雄_鼓山_數學_數乙_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 1
+  city: 高雄
+  school_short: 鼓山
+  school: 高雄市立鼓山高級中學
+  title: 高雄市立鼓山高級中學 110學年度第1學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 110學年度第1學期第1次定期評量
+  source_file: 高三/數學/110/1-1/高雄/鼓山_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題：
+    count: 2
+  - ord: 2
+    name: 二、填充題：
+    count: 12
+  - ord: 3
+    name: 三、計算作圖題：
+    count: 1
+questions:
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 丟一個公正的硬幣3次，令隨機變數X表示出現正面的次數。則下列何者正確？
+  options:
+  - label: A
+    content: X所有可能的取值共有4種
+  - label: B
+    content: P (X ≤ 1)＝$\frac{3}{8}$
+  - label: C
+    content: P (X ≥ 1)＝$\frac{7}{8}$
+  - label: D
+    content: P (X＞2)＝$\frac{3}{8}$
+  - label: E
+    content: P (1＜X ≤ 3)＝$\frac{1}{2}$
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) X可能零次，一次，兩次，三次，共有4種 $\therefore$正確
+
+    (B)$P(X\leq 1)=P(X=0)+P(X=1)=(\frac{1}{2})^{3}+C_{1}^{3}(\frac{1}{2})^{1}(\frac{1}{2})^{2}=\frac{1}{8}+\frac{3}{8}=\frac{1}{2}\therefore$錯誤
+
+    (C)$P(X\geq 1)=1-P(X<1)=1-(\frac{1}{2})^{3}=\frac{7}{8}\therefore$正確
+
+    (D)$P(X>2)=1-P(X\leq 1)=1-\frac{1}{2}=\frac{1}{2}\therefore$錯誤
+
+    (E) $P(1<X\leq 3)=P(X=2)+P(X=3)=C_{2}^{3}(\frac{1}{2})^{1}(\frac{1}{2})^{2}+C_{3}^{3}(\frac{1}{2})^{3}=\frac{3}{8}+\frac{1}{8}=\frac{1}{2}\therefore$正確
+
+    故選(A)(C)(E)。'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T07
+      name: 二項分布試驗判別與單項機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 二項分布X～B (25,0.4)，請問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: X的可能值有25個
+  - label: B
+    content: X＝12與X＝14的機率相同
+  - label: C
+    content: X＝9與X＝11的機率相同
+  - label: D
+    content: X的期望值是10
+  - label: E
+    content: X的標準差小於3
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) X可能26種 $\therefore$錯誤
+
+    (B)$P(X=14)=C_{14}^{25}(\frac{4}{10})^{14}(\frac{6}{10})^{11},P(X=12)=C_{12}^{25}(\frac{4}{10})^{12}(\frac{6}{10})^{13}$不相同 $\therefore$錯誤
+
+    (C)$P(X=9)=C_{9}^{25}(\frac{4}{10})^{9}(\frac{6}{10})^{16},P(X=11)=C_{11}^{25}(\frac{4}{10})^{11}(\frac{6}{10})^{14}$不相同 $\therefore$錯誤
+
+    (D)$E(X)=25\times 0.4=10\therefore$正確
+
+    (E)$\sigma (X)=\sqrt{25\times \frac{4}{10}\times \frac{6}{10}}=\sqrt{6}<\sqrt{9}=3\therefore$正確
+
+    故選(D)(E)。'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T08
+      name: 二項分布眾數比較與停止機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 設一箱中有標記1號、2號、…、n號，大小相同的球各一顆，每球被取中之機會均等，今從箱中任取一顆球，令隨機變數X表抽中球的號碼，試求隨機變數X的(1)期望值與(2)變異數。
+  answer:
+  - (1)$\frac{n+1}{2}$；(2)$\frac{n^{2}-1}{12}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1)$E(X)=\frac{1}{n}\times 1+\frac{1}{n}\times 2+\frac{1}{n}\times 3+..+\frac{1}{n}\times n=\frac{1}{n}\times \frac{n(n+1)}{2}=\frac{n+1}{2}$
+
+    (2) $\therefore Var(X)=E(X^{2})-\left[ E(X) \right] ^{2}=\frac{1}{n}\times (1^{2}+2^{2}+..+n^{2})-(\frac{n+1}{2})^{2}=\frac{n^{2}-1}{12}$'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T03
+      name: 離散隨機變數變異數與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 設隨機變數X表示一週內某汽車經銷商賣出汽車的數目，而f (x)為X的機率質量函數，若f (x)＝$\begin{cases}\frac{ax^{2}}{x!} ,x=1,2,3,4 \\ 0 ,x為其他值\end{cases}$，求a值。
+  answer:
+  - $\frac{6}{31}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x=1\Rightarrow \frac{a}{1}$，$x=2\Rightarrow \frac{4a}{2}$，$x=3\Rightarrow \frac{9a}{6}=\frac{3a}{2}$，$x=4\Rightarrow \frac{16a}{24}=\frac{2a}{3}$
+
+    $\therefore a+2a+\frac{3a}{2}+\frac{2a}{3}=1\Rightarrow 31a=6\Rightarrow a=\frac{6}{31}$。'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T01
+      name: 離散隨機變數機率分布表
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設隨機變數X表示投擲一不公正骰子出現的點數，P (X＝$x_{k}$)表示隨機變數X取值為$x_{k}$的機率。已知X的機率分布表如下：（x，y為未知常數） 已知X的期望值等於$\frac{13}{4}$，試求： (1) 數對 (x,y)。 (2) 投擲此骰子兩次，點數和為3的機率。 (3) X的變異數。
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_110_高雄_鼓山_數學_數乙_g12s1e1/s2_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 360.95
+      - 404.4
+      - 406.35
+  answer:
+  - (1)$(\frac{1}{4},\frac{1}{8})$；(2)$\frac{1}{16}$；(3)$\frac{47}{16}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x+y+y+x+y+y=1\Rightarrow 2x+4y=1$
+
+    $E(X)=1\times x+2\times y+3\times y+4\times x+5\times y+6\times y=\frac{13}{4}\Rightarrow 5x+16y=\frac{13}{4}$
+
+    (1) 聯立得到 $\therefore x=\frac{1}{4} ,y=\frac{1}{8}\Rightarrow (x,y)=(\frac{1}{4},\frac{1}{8})$
+
+    (2) 點數和為3的情形為: 2+1, 1+2 則$P=\frac{1}{4}\times \frac{1}{8}+\frac{1}{8}\times \frac{1}{4}=\frac{1}{16}$
+
+    (3)$Var(X)=E(X^{2})-\left[ E(X) \right] ^{2}=1^{2}\times \frac{1}{4}+2^{2}\times \frac{1}{8}+9\times \frac{1}{8}+16\times \frac{1}{4}+25\times \frac{1}{8}+36\times \frac{1}{8}-(\frac{13}{4})^{2}=\frac{108}{8}-\frac{169}{16}=\frac{47}{16}$'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T05
+      name: 期望值與變異數反推未知參數
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹機率分布表在附圖中（解析可推知各點機率）
+  difficulty: 3
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 袋中有紅色代幣4枚、綠色代幣9枚以及藍色代幣若干枚。每一枚紅色、綠色、藍色代幣分別可兌換50元、20元及10元。現從袋中取出代幣1枚或2枚，每一枚代幣被取出的機率均等。設隨機變數X代表取出1枚代幣可兌換的金額（單位：元）；隨機變數Y代表取出2枚代幣可兌換的金額（單位：元）。已知X的期望值為20，試問： (1) 藍色代幣有多少枚？ (2) P (Y ≤ 50)。
+  answer:
+  - (1)12；(2)$\frac{7}{10}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 設藍色有$x$枚，$E(X)=\frac{4}{x+13}\times 50+\frac{9}{x+13}\times 20+\frac{x}{x+13}\times 10=20$
+
+    $\frac{380+10x}{x+13}=20 ,x=12$
+
+    (2)$\begin{matrix}Y\leq 50 20+20 20+10 10+10 \\ P(Y\leq 50)=P(Y=40)+P(Y=30)+P(Y=20)=\frac{C_{2}^{9}}{C_{2}^{25}}+\frac{C_{1}^{9}C_{1}^{12}}{C_{2}^{25}}+\frac{C_{2}^{12}}{C_{2}^{25}}=\frac{210}{300}=\frac{7}{10}\end{matrix}$'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T05
+      name: 期望值與變異數反推未知參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 一袋中有10個球，其中4個球上標記10，6個球上標記5，試問：從袋中任取2球，求數字和的期望值。
+  answer:
+  - '14'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $E(X)=\frac{C_{2}^{4}}{C_{2}^{10}}\times 20+\frac{C_{1}^{4}C_{1}^{6}}{C_{2}^{10}}\times 15+\frac{C_{2}^{6}}{C_{2}^{10}}\times 10=14$
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T02
+      name: 離散型隨機變數期望值計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 有實力能相等的甲、乙兩人進行比賽，規定先勝3場者可得獎金1000元，今比賽2場，甲均得勝，但因故停止不再比賽，試問甲應分配多少獎金才算公平？
+  answer:
+  - 875元
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T07
+      name: 公平賭局與賽局中止獎金分配
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: <u>小南</u>在農場中栽種了n株植物，各株植物存活與否互不影響，且存活的機率均為P，設X表存活的株數，今已知X的期望值為90000，標準差為240，試求數對 (n,p)。
+  answer:
+  - $(250000,0.36)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$E(X)=np=90000,\sigma =\sqrt{np(1-p)}=240$
+
+    $np(1-p)=57600np=90000$ 兩式相除得$1-p=0.64\Rightarrow p=0.36\therefore n\times 0.36=90000\Rightarrow n=250000\therefore (n,p)=(250000,0.36)$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T09
+      name: 由期望值與變異數反推參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 隨機變數X的機率分布表如下： 其中0 ≤ p ≤ 1，若X的變異數Var (X)的最大值為M，最小值為m，求數對 (M,m)。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_110_高雄_鼓山_數學_數乙_g12s1e1/s2_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 659.65
+      - 234.4
+      - 705.05
+  answer:
+  - $(\frac{1}{4},0)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$E(X)=1\times p+0\times (1-p)=p$
+
+    $\therefore Var(X)=E(X^{2})-\left[ E(X) \right] ^{2}=1^{2}\times p-p^{2}=-(p^{2}-p)=-(p-\frac{1}{2})^{2}+\frac{1}{4}\leq \frac{1}{4}$
+
+    $\therefore M=\frac{1}{4}$
+
+    當$p=0$時, $Var(X)=0=m$, $\therefore (M,m)=(\frac{1}{4},0)$'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T03
+      name: 離散隨機變數變異數與標準差
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹機率分布表在附圖中（解析可推知為伯努利分布）
+  difficulty: 3
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 1
+  stem: 某資訊公司為促銷一新款電腦，舉辦抽獎活動，每位已付款購買之顧客，可自摸彩箱中隨機抽取一球，其中模彩箱內有一個紅球、四個白球。若顧客抽中紅球，則全額退費；若顧客抽到白球，則無優待。已知共有400位顧客參加此模彩活動，令Y表抽中紅球獲免費購買此新款電腦的人數，試求： (1) Y的期望值 (2) Y的標準差
+  answer:
+  - (1)80；(2)8
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $E(Y)=400\times \frac{1}{5}=80,\sigma _{Y}=\sqrt{400\times \frac{1}{5}\times \frac{4}{5}}=8$
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T02
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 1
+  stem: 對於某個硬幣，我們懷疑它是否公正，假設投擲一枚硬幣6次，出現4次以上正面，我們判定此硬幣非公正硬幣。若此枚硬幣為公正硬幣時，判定錯誤機率為何？
+  answer:
+  - $\frac{11}{32}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$P(非公正)=P(4次正面)+P(5次正面)+P(6次正面)$
+
+    $=C_{4}^{6}(\frac{1}{2})^{4}(\frac{1}{2})^{2}+C_{5}^{6}(\frac{1}{2})^{1}(\frac{1}{2})^{5}+C_{6}^{6}(\frac{1}{2})^{6}=\frac{15+6+1}{64}=\frac{22}{64}=\frac{11}{32}$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T05
+      name: 二項檢定與拒絕域判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 1
+  stem: '(1) 同時擲出3個均勻股子，設出現三個點數為連續整數的事件為A，試求P (A)。
+
+    (2) 將(1)中的試驗連做5次，若事件A發生了X次，試求E (X)。'
+  answer:
+  - (1)$\frac{1}{9}$；(2)$\frac{5}{9}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1)$A=\left\{ (123),(234),(345),(456) \right\}$
+
+    $P(A)=\frac{3!+3!+3!+3!}{6^{3}}=\frac{24}{216}=\frac{4}{36}=\frac{1}{9}$
+
+    (2) $X\sim B(5,\frac{1}{9}),E(X)=5\times \frac{1}{9}=\frac{5}{9}$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T02
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 1
+  stem: 某次數學測驗共有25題單選題，每題有5個選項，某生完全憑猜測作答，每題都有作答，其答對題數的期望值為μ與標準差σ。則數對 (μ,σ) 為何？
+  answer:
+  - $(5,2)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$X\sim B(25,\frac{1}{5}),\mu =E(X)=np=25\times \frac{1}{5}=5$
+
+    $\sigma (X)=\sqrt{np(1-p)}=\sqrt{25\times \frac{1}{5}\times \frac{4}{5}}=2\therefore (\mu ,\sigma )=(5,2)$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T02
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_高雄_鼓山_數學_數乙_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 1
+  stem: 丟一個公正的銅板6次，隨機變數X表示出現正面的次數。 (1) 試求X的機率分布。 (2) 請畫出X的機率質量函數圖。 (3) 求正面出現的次數等於多少時，機率最高。
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T03
+      name: 二項分布最大機率項判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

@@ -1,0 +1,697 @@
+document:
+  id: doc_109_台中_興大附中_數學_g10s2e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 109學年度第2學期第1次定期評量 高一數學科試題
+  exam_name: 109學年度第2學期第1次定期評量
+  source_file: 高一/數學/109/2-1/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 24 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 24 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 42 分）
+    count: 7
+  - ord: 4
+    name: 四、混合題（共 10 分）
+    count: 1
+questions:
+- id: doc_109_台中_興大附中_數學_g10s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 假設在小巨蛋球館觀看籃球比賽，已知<u>小延</u>坐在紫色區的席位共有 20 排的座位，此區每一排都比其前一排多 k 個座位。<u>小延</u>坐在第 10 排，他發現第 10 排與第 11 排共有 235 個座位。則此巨蛋球場的紫色區總共有多少個座位？
+  options:
+  - label: A
+    content: 2200 個
+  - label: B
+    content: 2350 個
+  - label: C
+    content: 2460 個
+  - label: D
+    content: 2510 個
+  - label: E
+    content: 條件不足，無法計算
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令第 1 排到第 20 排的座位數量分別為 $a_{1}$，$a_{2}$，……，$a_{20}$
+
+    且$a_{n+1}=a_{n}+k$，n＝1，2，……，19
+
+    即〈$a_{n}$〉為等差數列
+
+    ∵$a_{10}$＋$a_{11}$＝235
+
+    ∴紫色區共有 $a_{1}$＋$a_{2}$＋……＋$a_{19}$＋$a_{20}$
+
+    ＝（$a_{1}$＋$a_{20}$）＋（$a_{2}$＋$a_{19}$）＋……＋（$a_{10}$＋$a_{11}$）
+
+    ＝10（$a_{10}$＋$a_{11}$）＝2350 個座位
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T08
+      name: 等差數列性質與前n項求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_g10s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設數列〈$a_{n}$〉的前 n 項和為 $n^{2}$＋1，其中 n 為正整數，求 $a_{1}$＋$a_{2021}$ 之值＝？
+  options:
+  - label: A
+    content: '4040'
+  - label: B
+    content: '4041'
+  - label: C
+    content: '4042'
+  - label: D
+    content: '4043'
+  - label: E
+    content: 以上皆非
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可知 $S_{n}$＝$n^{2}$＋1
+
+    ∵$a_{1}$＝$S_{1}$＝$1^{2}$＋1＝2
+
+    $a_{2021}$＝$S_{2021}$－$S_{2020}$＝（$2021^{2}$＋1）－（$2020^{2}$＋1）＝4041
+
+    ∴$a_{1}$＋$a_{2021}$＝4043
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T04
+      name: 級數和S_n反求一般項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_g10s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 請問級數$\left( 1-\frac{0}{20} \right) \left( 1-\frac{1}{20} \right) +\left( 1-\frac{1}{20} \right) \left( 1-\frac{2}{20} \right) +\ldots \ldots +\left( 1-\frac{n}{20} \right) \left( 1-\frac{n+1}{20} \right) +\ldots \ldots+\left( 1-\frac{19}{20} \right) \left( 1-\frac{20}{20} \right)$的和＝？
+  options:
+  - label: A
+    content: $\frac{133}{20}$
+  - label: B
+    content: $\frac{135}{20}$
+  - label: C
+    content: $\frac{137}{20}$
+  - label: D
+    content: $\frac{139}{20}$
+  - label: E
+    content: $\frac{141}{20}$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left( 1-\frac{0}{20} \right) \left( 1-\frac{1}{20} \right) +\left( 1-\frac{1}{20} \right) \left( 1-\frac{2}{20} \right) +\ldots \ldots +\left( 1-\frac{19}{20} \right) \left( 1-\frac{20}{20} \right)$
+
+    ＝$\left( 1-\frac{1}{20}-\frac{0}{20}+\frac{0\times 1}{20^{2}} \right) +\left( 1-\frac{2}{20}-\frac{1}{20}+\frac{1\times 2}{20^{2}} \right) +\ldots \ldots +\left( 1-\frac{20}{20}-\frac{19}{20}+\frac{19\times 20}{20^{2}} \right)$
+
+    ＝$(1+1+\ldots \ldots +1) -\frac{1}{20} (1+2+\ldots \ldots +19+20) -\frac{1}{20} (0+1+\ldots \ldots +19) +\frac{1}{20^{2}} (0\times 1+1\times 2+\ldots \ldots +19\times 20)$
+
+    ＝$20-\frac{1}{20}\times \frac{20\times 21}{2}-\frac{1}{20}\times \frac{19\times 20}{2}+\frac{1}{20^{2}} 〔 (0^{2}+0) + (1^{2}+1)+\ldots \ldots +(19^{2}+19) 〕$
+
+    ＝$20-\frac{1}{20}\times \frac{20\times 21}{2}-\frac{1}{20}\times \frac{19\times 20}{2}+\frac{1}{20^{2}} 〔 (0^{2}+1^{2}+\ldots \ldots +19^{2}) + (0+1+\ldots \ldots +19) 〕$
+
+    ＝$20-\frac{1}{20}\times \frac{20\times 21}{2}-\frac{1}{20}\times \frac{19\times 20}{2}+\frac{1}{20^{2}} \left( \frac{19\times 20\times 39}{6}+\frac{19\times 20}{2} \right)$
+
+    ＝$20-\frac{21}{2}-\frac{19}{2}+\frac{133}{20}=\frac{133}{20}$
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T14
+      name: 通項多項式展開與線性求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_g10s2e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 三年甲班 35 人某次考試數學成績 x（分）與英文成績 y（分）成績的散布圖如右圖，每個點代表一位學生的成績，請選出正確的選項。
+  options:
+  - label: A
+    content: 數學成績與英文成績的相關係數大於 0
+  - label: B
+    content: 數學成績的中位數大於英文成績的中位數
+  - label: C
+    content: 數學成績的標準差大於 30 分
+  - label: D
+    content: 兩科總分大於 160 分者超過 5 位
+  - label: E
+    content: 若將每人的數學成績都加 5 分，且每人的英文成績都減 5 分，則這兩科新成績的相關係數仍然不變
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_109_台中_興大附中_數學_g10s2e1/s2_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 423.9
+      - 92.4
+      - 564.3
+      - 226.8
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：由題圖為「左下到右上」的趨勢可知
+
+    相關係數大於 0
+
+    (B) ╳：由左至右數點可知數學成績的中位數略大於 60 分
+
+    由下至上數點可知英文成績的中位數為 70 分
+
+    故數學成績的中位數小於英文成績的中位數
+
+    (C) ╳：數學平均約為 60～70 分，全距約為 90 分左右，標準差應小於 30 分
+
+    (D) ╳：繪製一條 x＋y＝160 的直線後
+
+    直線右邊的點可知有 4 位
+
+    (E) ○：平移不影響相關係數
+
+    故選(A)(E)'
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T01
+      name: 散布圖判讀與相關係數估計
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_g10s2e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: '下表是 2011 年至 2018 年某國總就業人口與農業就業人口的部分相關數據，各年度的人口以人數計，有些是以千人計，有些是以萬人計，例如 2011 年總就業人口為 1,070.9 萬人，65 歲以上男性農業就業人口為 69.1 千人。試根據下表資料選出正確的選項。
+
+    |  | 就業人口 |  |  | 男性農業就業人口按年齡別分 |  |  |  |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | 年別 | 總就業 人口 （萬人） | 農業就業人口 （萬人） | 男性農業就業人口（千人） | 39 歲以下（千人） | 40～49 歲（千人） | 50～64 歲（千人） | 65 歲以上（千人） |
+
+    | 2011 年 | 1,070.9 | 54.2 | 386.3 | 67.6 | 85.4 | 164.2 | 69.1 |
+
+    | 2012 年 | 1,086.0 | 54.4 | 394.9 | 67.5 | 87.0 | 169.5 | 70.9 |
+
+    | 2013 年 | 1,096.7 | 54.4 | 391.5 | 66.6 | 83.9 | 171.3 | 69.7 |
+
+    | 2014 年 | 1,107.9 | 54.8 | 391.2 | 65.8 | 79.8 | 173.0 | 72.6 |
+
+    | 2015 年 | 1,119.8 | 55.5 | 403.1 | 71.7 | 76.9 | 181.3 | 73.2 |
+
+    | 2016 年 | 1,126.7 | 55.7 | 404.5 | 77.4 | 77.4 | 176.4 | 73.3 |
+
+    | 2017 年 | 1,135.2 | 55.7 | 405.1 | 73.9 | 78.1 | 178.3 | 74.8 |
+
+    | 2018 年 | 1,143.4 | 56.1 | 415.1 | 72.0 | 78.8 | 184.9 | 79.4 |'
+  options:
+  - label: A
+    content: 從 2013 年至 2018 年，39 歲以下的男性農業就業人口逐年遞減
+  - label: B
+    content: 從 2013 年至 2018 年，50 歲至 64 歲之男性農業就業人口逐年遞增
+  - label: C
+    content: 表中，每一年的男性農業就業人口占總就業人口的比率都大於百分之五
+  - label: D
+    content: 表中，每一年 50 歲至 64 歲之男性農業就業人口都多於 49 歲以下之男性農業就業人口
+  - label: E
+    content: 就 65 歲以上之男性農業就業人口而言，2018 年比 2011 年增加了超過一萬人
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：由題表可知 2014～2015 年、2015～2016 年都沒遞減
+
+    (B) ╳：由題表可知 2015～2016 年沒遞增
+
+    (C) ╳：每年就業人口皆大於 1000 萬，若要大於 5 ％，則需大於 50 萬人
+
+    但每年男性農業就業人口皆小於 50 萬，故不合
+
+    (D) ○：由題表可知每年男性農業就業人口中 「50～64 歲」皆大於「39 歲以下」與「40～49 歲」的總和
+
+    (E) ○：79.4－69.1＝10.3（千人）＞10000 人
+
+    故選(D)(E)'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T06
+      name: 統計圖表判讀與比率比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_g10s2e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 有 20 筆數據（$x_{i}$，$y_{i}$），i＝1，2，……，20。已知其平均μ$_{x}$＝3，μ$_{y}$＝5，且 x 與 y 的相關係數 r＝0.8，若 y 對 x 的迴歸直線 L 通過點（2，1）。試問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: L 通過點（3，5）
+  - label: B
+    content: L 的斜率為 0.8
+  - label: C
+    content: L 方程式為 y＝4x－7
+  - label: D
+    content: x 的標準差大於 y 的標準差
+  - label: E
+    content: 若 $P_{i}$＝$2x_{i}$＋5 且 $Q_{i}$＝$3y_{i}$＋1，則 Q 對 P 之迴歸直線的斜率大於 L 的斜率
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '迴歸直線必過（μ$_{x}$，μ$_{y}$）＝（3，5）
+
+    由 L 過（3，5）、（2，1），可知 L：4x－y＝7
+
+    (A) ○
+
+    (B) ╳：L 的斜率應為 4
+
+    (C) ○
+
+    (D) ╳：∵$4=r\times \frac{\sigma _{y}}{\sigma _{x}}=0.8\times \frac{\sigma _{y}}{\sigma _{x}}$
+
+    ∴$\frac{\sigma _{y}}{\sigma _{x}}=5$ ⇒ σ$_{x}$＜σ$_{y}$
+
+    (E) ○：$\begin{cases}P =2x+5 \\ Q =3y+1\end{cases}$ ⇒ $\begin{cases}x =\frac{1}{2} (P-5) \\ y =\frac{1}{3} (Q-1)\end{cases}$ 代入 4x－y＝7 得
+
+    $4\left[ \frac{1}{2} (P-5) \right] -\frac{1}{3} (Q-1)=7$ ⇒ $2 (P-5)-\frac{1}{3} (Q-1)=7$ ⇒ $\frac{1}{3} (Q-1)=2P-17$
+
+    ⇒ Q＝6P－50，斜率為 6，大於 L 的斜率 4
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T04
+      name: 迴歸直線過平均點與殘差性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_g10s2e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: 用黑、白兩色的正六邊形地磚有規律的拼成若干圖形，如右圖所示。依此規律可畫第 4 圖、第 5 圖、……，並設 $a_{n}$ 為第 n 圖中白色地磚的總數（例如 $a_{1}$＝6，$a_{2}$＝10，$a_{3}$＝14）。求 $a_{100}$＝＿＿＿＿。
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_109_台中_興大附中_數學_g10s2e1/s3_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 333.4
+      - 71.0
+      - 564.3
+      - 127.4
+  answer:
+  - '402'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{1}$＝4×1＋2
+
+    $a_{2}$＝4×2＋2
+
+    $a_{3}$＝4×3＋2
+
+    …
+
+    故 $a_{100}$＝4×100＋2＝402'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T04
+      name: 圖形與數字陣列規律計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_g10s2e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: <u>小延</u>年初向銀行借款 10000 元，每年複利計算一次，預定兩年還清。若<u>小延</u>第一年年底還 5200 元，第二年年底還 5253 元後還清，則此次借款的年利率為＿＿＿＿％。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令年利率為 r，則
+
+    第一年年底欠款 10000（1＋r）元
+
+    還 5200 元後剩 10000（1＋r）－5200 元
+
+    第二年年底欠款 10000（1＋r）$^{2}$－5200（1＋r）元
+
+    還 5253 元後剩 10000（1＋r）$^{2}$－5200（1＋r）－5253＝0
+
+    ⇒ $10000r^{2}$＋14800r－453＝0
+
+    ⇒ （100r－3）（100r＋151）＝0
+
+    ⇒ $r =\frac{3}{100}或-\frac{151}{100}$（不合）
+
+    故借款的年利率為 3 ％'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T05
+      name: 分期付款與貸款攤還
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_g10s2e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: '某次學科能力測驗數學科級分人數累計表，如下表所示。我們定義此次成績的「頂標、前標、均標、後標、底標」分別為「第 88、75、50、25、12 百分位數」考生的級分。若此次考試的數學科頂標為 x 級分、均標為 y 級分，則求整數數對（x，y）＝＿＿＿＿。
+
+    | 級分 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | 人數 | 3,700 | 4,630 | 5,766 | 5,919 | 7,891 | 9,198 | 8,931 | 10,317 |
+
+    | 累計人數 | 134,495 | 130,795 | 126,165 | 120,399 | 114,480 | 106,589 | 97,391 | 88,460 |
+
+    | 級分 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+
+    | 人數 | 10,690 | 10,823 | 14,298 | 16,533 | 14,033 | 9,732 | 1,975 | 59 |
+
+    | 累計人數 | 78,143 | 67,320 | 56,630 | 42,332 | 25,799 | 11,766 | 2,034 | 59 |'
+  answer:
+  - （12，6）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$134495\times \frac{88}{100}=118355.6$，可知 x＝12
+
+    $134495\times \frac{50}{100}=67247.5$，可知 y＝6
+
+    故整數數對（x，y）＝（12，6）'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T01
+      name: 集中趨勢與百分位數累計計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_g10s2e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 已知一組資料 $x_{1}$，$x_{2}$，……，$x_{10}$ 的算術平均數為 6，且 $x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{10}^{2}$＝400，A 為任意實數，試求（$x_{1}$－A）$^{2}$＋（$x_{2}$－A）$^{2}$＋……＋（$x_{10}$－A）$^{2}$ 的最小值為＿＿＿＿。
+  answer:
+  - '40'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（$x_{1}$－A）$^{2}$＋（$x_{2}$－A）$^{2}$＋……＋（$x_{10}$－A）$^{2}$
+
+    ＝$10A^{2}$－2A（$x_{1}$＋$x_{2}$＋……＋$x_{10}$）＋（$x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{10}^{2}$）
+
+    ＝$10A^{2}$－120A＋400
+
+    ＝10（$A^{2}$－12A＋36）＋400－360
+
+    ＝10（A－6）$^{2}$＋40
+
+    當 A＝6 時，有最小值為 40'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T02
+      name: 變異數標準差計算與增減變動
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_g10s2e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 二年乙班有 40 人參加英文考試，老師計算成績後，得全班的平均分數為 51 分，標準差為$\sqrt{3}$分。但教務處通知：考試當節有一位考生不僅攜帶寵物「蜜袋鼯」進教室擾亂秩序，還利用行動裝置作弊，其原分數 40 分應改為 0 分。而其他 39 位考生因當節考試延長 5 分鐘收卷，故不調整分數。那麼修正後此班 40 位同學考試的標準差為＿＿＿＿分。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 40 人的分數為 $x_{1}$，$x_{2}$，……，$x_{40}$，其中 $x_{40}$＝40
+
+    則$\begin{cases}\frac{x_{1}+x_{2}+\ldots \ldots +x_{39}+40}{40}=51 \\ \frac{x_{1}^{2}+x_{2}^{2}+\ldots \ldots +x_{39}^{2}+40^{2}}{40}-51^{2}=3\end{cases}$ ⇒ $\begin{cases}x_{1}+x_{2}+\ldots \ldots +x_{39}=50\times 40 \\ x_{1}^{2}+x_{2}^{2}+\ldots \ldots +x_{39}^{2}=40\times 2564\end{cases}$
+
+    若 $x_{40}$ 改為 0
+
+    重新計算 $x_{1}$，$x_{2}$，……，$x_{39}$，0 的平均為$\frac{50\times 40+0}{40}=50$（分）
+
+    標準差為$\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\ldots \ldots +x_{39}^{2}+0^{2}}{40}-50^{2}}$＝$\sqrt{\frac{40\times 2564+0}{40}-2500}$＝$\sqrt{64}$＝8（分）'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T02
+      name: 變異數標準差計算與增減變動
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_g10s2e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: '一年丙班的<u>小花</u>，其前五次的數學週考成績（y 分）與當週上網時數（x 小時）之統計表如右。
+
+    | 當週上網時數（x） | 8 | 10 | 7 | 9 | 6 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 數學週考成績（y） | 70 | 60 | 90 | 50 | 80 |
+
+    根據最小平方法得迴歸直線方程式，若<u>小花</u>在本週上網 7.5 小時，預測其本週數學週考成績為＿＿＿＿分。'
+  answer:
+  - '74'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'μ$_{x}$＝8，μ$_{y}$＝70
+
+    0.2 0.－10 0.4 0.100 0.－20
+
+    迴歸直線為$y-70=\frac{-80}{10} (x-8)$
+
+    ⇒ y－70＝－8（x－8）
+
+    x＝7.5 代入得 y＝－8×（－0.5）＋70＝74
+
+    故預測其本週數學週考成績為 74 分'
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T02
+      name: 相關係數與迴歸直線直接計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_g10s2e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 右表中的每一橫列由左至右的四個數皆成等差數列，而每一直行由上而下的四個數皆成等比數列且公比皆為 r，若 $c_{1}$＜$c_{2}$，則 $d_{4}$ 之值＝＿＿＿＿。
+  assets:
+  - key: s3_7_f1
+    kind: figure
+    file: doc_109_台中_興大附中_數學_g10s2e1/s3_7_f1.png
+    crop:
+      page: 3
+      rect:
+      - 466.9
+      - 520.3
+      - 564.3
+      - 617.7
+  answer:
+  - '216'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令第一列公差為 d，則
+
+    $\begin{cases}12=r (2+d) \ldots \ldots \ldots \ldots \ldots ① \\ 54=r^{2}(2+2d)\ldots \ldots \ldots \ldots \ldots ②\end{cases}$
+
+    $\frac{①^{2}}{②}$得$\frac{12^{2}}{54}=\frac{r^{2}(2+d)^{2}}{r^{2}(2+2d)}$ ⇒ $\frac{8}{3}=\frac{(2+d)^{2}}{2+2d}$
+
+    ⇒ 8（2＋2d）＝3（2＋d）$^{2}$
+
+    ⇒ $3d^{2}$－4d－4＝0
+
+    ⇒ （3d＋2）（d－2）＝0
+
+    ⇒ $d=-\frac{2}{3}或 2$
+
+    ∵$c_{1}$＜$c_{2}$
+
+    ∴$2r^{2}$＜（2＋d）$r^{2}$ ⇒ d＞0
+
+    則 d＝2，代回①得 r＝3
+
+    故 $d_{4}$＝（2＋3d）$r^{3}$＝8×27＝216'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_g10s2e1_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '設數列〈$a_{n}$〉滿足：$a_{1}=\frac{1}{3}$且$a_{n}=\frac{1+a_{n-1}}{3-a_{n-1}}$（n 為大於或等於 2 的正整數）。
+
+    (1) 猜測 $a_{2021}$ 之值為何？（單選，2 分）
+
+    | (A)$\frac{2019}{2022}$ | (B)$\frac{1010}{1011}$ |
+
+    | --- | --- |
+
+    | (C)$\frac{2021}{2022}$ | (D)$\frac{2020}{2023}$ |
+
+    (E)$\frac{2021}{2023}$
+
+    (2) 利用 $a_{2}$、$a_{3}$、$a_{4}$ 的值，推測數列〈$a_{n}$〉一般項的通式。（以 n 表示）（2 分）
+
+    (3) 承(2)，利用數學歸納法，證明你的推測是正確的。（6 分）'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T03
+      name: 數學歸納法猜測與倍數證明
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

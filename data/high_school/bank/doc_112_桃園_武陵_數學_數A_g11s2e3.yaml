@@ -1,0 +1,415 @@
+document:
+  id: doc_112_桃園_武陵_數學_數A_g11s2e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 3
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 112學年度第2學期第3次定期評量 高二數學（數A）科試題
+  exam_name: 112學年度第2學期第3次定期評量
+  source_file: 高二/數學/112/2-3/桃園/武陵_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題：（每題8分，錯一個選項得5分，錯二個選項得2分，錯三個選項以上得0分）
+    count: 1
+  - ord: 2
+    name: 二、填充題：(配分如下)
+    count: 11
+  - ord: 3
+    name: 三、混合題：共18分
+    count: 2
+questions:
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 袋中有大小相同的3顆紅球與2顆白球，自袋中任取一球 ( 每球被取到的機會均等 )，取後放回，取球五次，記錄每次所取出的顏色結果。令A表示取球過程中有連續三次恰好抽中「紅球、紅球、白球」的事件，B表示取球過程中有連續三次恰好抽中「紅球、白球、白球」的事件，請問下列哪些選項是正確？
+  options:
+  - label: A
+    content: P (A)＝$\frac{54}{125}$
+  - label: B
+    content: A和B為獨立事件
+  - label: C
+    content: A和B為互斥事件
+  - label: D
+    content: P ( B | A )＝$\frac{4}{15}$
+  - label: E
+    content: P ( B | A' )＝$\frac{11}{15}$
+  explanation: 'A：紅，紅，白 紅，白， B：紅，白，白 紅，紅， (A) P (A)＝$\frac{3! \times (3 \cdot 3 \cdot 2) \cdot 3 \cdot 2}{5^{5}}$＝$\frac{3^{4} \cdot 2^{3}}{5^{5}}$ (B) (C) P (B)＝$\frac{\frac{3!}{2!1!} \times (3 \cdot 2 \cdot 2) \cdot 3 \cdot 3}{5^{5}}$＝$\frac{3^{4} \cdot 2^{2}}{5^{5}}$ ∵ A∩B＝{紅紅白白紅，紅紅紅白白} ∴ P ( A∩B )＝$\frac{(3 \cdot 3 \cdot 2) \cdot 2 \cdot 3+3 \cdot (3 \cdot 3 \cdot 2) \cdot 2}{5^{5}}$＝$\frac{3^{3} \cdot 2^{3}}{5^{5}}$≠0
+
+    且P ( A∩B )≠P (A) P (B)，得A , B不互斥，不獨立 (D) P ( B | A )＝$\frac{P(A\cap B)}{P(A)}$＝$\frac{1}{3}$ (E) P ( B | A'' )＝$\frac{P(A''\cap B)}{P(A'')}$＝$\frac{P(B)-P(A\cap B)}{1-P(A)}$＝$\frac{108}{2477}$。
+
+    【註】沒有選項可選'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T01
+      name: 條件機率定義與樣本篩選
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 設A是m×n階矩陣，B是3×6階矩陣，若AB有意義且矩陣AB的元共有24個，求數對 ( m , n ) 為＿＿＿＿。
+  answer:
+  - ( 4 , 3 )
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $A_{m×n}$ $B_{3×6}$有意義 ⇒ n＝3，AB為m×6階 AB的元有24個 ⇒ 24＝m×6 ⇒ m＝4 ∴ ( m , n )＝( 4 , 3 )。
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T02
+      name: 矩陣乘法與方陣冪次規律
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 已知聯立方程式$\begin{cases}2x-y+4z=5 \\ 3x+2y+z=4 \\ 5x+y+kz=3\end{cases}$無解，求實數k值為＿＿＿＿。
+  answer:
+  - '5'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\begin{cases}2x-y+4z=5\cdots \cdots \cdots ① \\ 3x+2y+z=4\cdots \cdots \cdots ② \\ 5x+y+kz=3 \cdots \cdots \cdots ③\end{cases}$ ①×2＋② 7x＋9z＝14 ③×2－② 7x＋( 2k－1 ) z＝2 無解 ⇔ 9＝2k－1 ∴ k＝5。
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T02
+      name: 含參三元聯立方程組解的討論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 已知矩陣A , B滿足A＋B＝$\left[ \begin{matrix}3 & 3 \\ 1 & 0\end{matrix} \right]$，A－B＝$\left[ \begin{matrix}1 & -3 \\ 5 & 2\end{matrix} \right]$，AB＝$\left[ \begin{matrix}2 & 6 \\ 1 & 8\end{matrix} \right]$，BA＝$\left[ \begin{matrix}11 & 3 \\ -7 & -1\end{matrix} \right]$，求$A^{2}$－$B^{2}$＝＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}9 & 0 \\ 9 & 6\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ( A＋B ) ( A－B )＝$A^{2}$－AB＋BA－$B^{2}$ ∴ $A^{2}$－$B^{2}$＝$\left[ \begin{matrix}3 & 3 \\ 1 & 0\end{matrix} \right]\left[ \begin{matrix}1 & -3 \\ 5 & 2\end{matrix} \right]$＋$\left[ \begin{matrix}2 & 6 \\ 1 & 8\end{matrix} \right]$－$\left[ \begin{matrix}11 & 3 \\ -7 & -1\end{matrix} \right]$ ＝$\left[ \begin{matrix}18 & -3 \\ 1 & -3\end{matrix} \right]$＋$\left[ \begin{matrix}2 & 6 \\ 1 & 8\end{matrix} \right]$－$\left[ \begin{matrix}11 & 3 \\ -7 & -1\end{matrix} \right]$ ＝$\left[ \begin{matrix}9 & 0 \\ 9 & 6\end{matrix} \right]$。
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T06
+      name: 矩陣乘法代數性質與交換律判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: '某校數學模擬考評分後將全校同學依總分由高到低排序：前30％的同學屬於甲組，後20％的同學屬於丙組，其餘的同學
+
+    屬於乙組。進一步分析同學的答題情形，得到計算題答對率如下表：
+
+    試問從計算題答對的同學中任選一人，此人屬於乙組的機率為＿＿＿＿。'
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_112_桃園_武陵_數學_數A_g11s2e3/s2_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 233.2
+      - 706.05
+      - 510.7
+      - 759.65
+  answer:
+  - $\frac{20}{39}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 乙｜計算題答對 ) ＝$\frac{50\%\times 80\%}{30\%\times 100\%+50\%\times 80\%+20\%\times 40\%}$ ＝$\frac{40}{78}$＝$\frac{20}{39}$。
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 設k為整數，若坐標平面上的△PQR經矩陣A＝$\left[ \begin{matrix}k & 5 \\ -1 & k-5\end{matrix} \right]$線性變換後對應的圖形為△P'Q'R'，且三角形面積保持不變，則滿足條件的所有整數k值的總和為＿＿＿＿。
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: △P'Q'R'之面積＝( △PQR之面積 )×| det A | 面積不變 ⇒ 1＝| det A |＝|$\left| \begin{matrix}k & 5 \\ -1 & k-5\end{matrix} \right|$| ∴ $k^{ 2}$－5k＋5＝±1 ⇒ $k^{ 2}$－5k＋4＝0或$k^{ 2}$－5k＋6＝0 ⇒ k＝1 , 4 , 2或3，所求總和為10。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T06
+      name: 線性變換面積縮放與行列式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 甲、乙兩選手參加5戰3勝制 ( 即先勝3場者贏得比賽，每場沒有和局 ) 的桌球單打比賽。已知乙選手單場獲勝的機率為$\frac{1}{4}$且每場的比賽結果互不影響，求乙選手贏得比賽的機率為＿＿＿＿。
+  answer:
+  - $\frac{53}{512}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T04
+      name: 多輪賽局與獲勝機率分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知甲袋內有3顆紅球、1顆白球；乙袋內有2顆紅球。今從甲袋中取出一球放入乙袋，再從乙袋中取出一球放回甲袋。設每球被取到的機率都相等，求操作完後甲袋仍有3個紅球、1個白球的機率為＿＿＿＿。
+  answer:
+  - $\frac{5}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T01
+      name: 條件機率定義與樣本篩選
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知增廣矩陣$\left[ \begin{matrix}2 & 1 & 3 \\ 1 & 5 & -2 \\ -3 & 1 & -4\end{matrix} \left| \begin{matrix}2 \\ 11 \\ 5\end{matrix} \right. \right]$經過列運算後，得$\left[ \begin{matrix}1 & 5 & -2 \\ 0 & 1 & -2 \\ 0 & 0 & 1\end{matrix} \left| \begin{matrix}11 \\ b \\ a\end{matrix} \right. \right]$，求數對 ( a , b ) 為＿＿＿＿。
+  answer:
+  - ( 1 , 1 )
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T01
+      name: 高斯消去法與增廣矩陣列運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 設P (X) 表示事件X發生的機率，而P ( X | Y ) 表示在事件Y發生的條件下，事件X發生的機率。今有2顆黑球、2顆白球、3顆紅球共7顆大小相同的球排成一列。設事件A為2顆黑球不相鄰的事件，而事件B為任2顆紅球都不相鄰的事件，求P ( A | B )＝＿＿＿＿。
+  answer:
+  - $\frac{2}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T01
+      name: 條件機率定義與樣本篩選
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 設矩陣A＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$滿足A＋$A^{－1}$＝O，其中O＝$\left[ \begin{matrix}0 & 0 \\ 0 & 0\end{matrix} \right]$。若方程組$\begin{cases}ax+by=3 \\ cx+dy=4\end{cases}$恰有唯一解為$\begin{cases}x=1 \\ y=-2\end{cases}$，則a＋b＋c＋d之值為＿＿＿＿。
+  answer:
+  - '1'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T03
+      name: 反矩陣存在條件與求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 已知矩陣A＝$\left[ \begin{matrix}3 & 2 \\ 4 & 1\end{matrix} \right]$，矩陣B＝$\left[ \begin{matrix}3 & 1 \\ 1 & -2\end{matrix} \right]$且C為二階方陣，若ACA＋BCB＝ACB＋BCA＋I，其中I＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$， 則矩陣C為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T04
+      name: 矩陣方程與聯立矩陣求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s3_1
+  section: 3
+  number: 1
+  type: single
+  page: 2
+  stem: '( 題目雖長但不難，請不要輕易放棄！) <u>小明</u>使用4顆相同的紅色球和與2顆相同的黑色球共6顆球與一個球袋做機率實驗。將5顆球放袋中，1顆球拿在手上，因此會出現以下兩種狀況；袋中有3顆紅色球，2顆黑色球，手上拿著1顆紅色球，我們將這種情況稱為狀態1；袋中有4顆紅色球，1顆黑色球，手上拿著1顆黑色球，我們將這種情況稱為狀態2。 現在開始操作：自袋中取出1球 ( 每球被取到機會均等 )，再將原本手中拿著的球放回袋中，而袋中剛抽出來的球拿在手上，這樣稱做一次操作，每次操作可能會改變原來的狀態也可能不會改變原來的狀態。試回答下列問題：
+
+    (1) 如果袋中的球是4紅1黑 ( 狀態2 )，請問經過一次操作後袋中會變成3紅2黑 ( 狀態1 ) 的機率為何？'
+  options:
+  - label: A
+    content: $\frac{4}{5}$
+  - label: B
+    content: $\frac{3}{5}$
+  - label: C
+    content: $\frac{2}{5}$
+  - label: D
+    content: $\frac{1}{5}$
+  - label: E
+    content: 0 ( 2分)
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T02
+      name: 馬可夫鏈多步轉移與穩定態
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_數A_g11s2e3_s3_2
+  section: 3
+  number: 2
+  type: single
+  page: 2
+  stem: '在坐標平面上，二階方陣M對應的線性變換是將點P ( cos θ , sin θ ) 變換到點P'' ( cos θ , 0 )；將點Q (－sin θ, cos θ ) 變換到點Q'' ( 0 , cos θ )，其中$\frac{\pi}{2}$ ≤ θ＜π。若k為非零實數，使得$M^{ 3}$＝kI，其中I為二階單位方陣。試回答下列問題：
+
+    (1) 二階方陣M對應的線性變換是下列哪一個選項？( 單選 )
+
+    (2) 求θ值與k值。 ( 6分 )'
+  options:
+  - label: A
+    content: 旋轉
+  - label: B
+    content: 鏡射
+  - label: C
+    content: 伸縮與旋轉的合成
+  - label: D
+    content: 伸縮與鏡射的合成
+  - label: E
+    content: 推移 ( 2分 )
+  group_stem: '(2) 把從狀態j經過一次操作後變成狀態i的機率記為$p_{ij}$，例如(1)的機率就是$p_{12}$，由此可得一個2×2的方陣P＝[ $p_{ij}$ ]$_{2×2}$，關於方陣P的敘述，請選出正確選項。( 多選 ) (A) $p_{12}$＝$p_{21}$ (B) $p_{11}$＋$p_{12}$＝1 (C) det (P)＜0 (D)方陣$P^{2}$是轉移矩陣 (E)方陣$P^{－1}$是轉移矩陣 ( 4分，錯一個得2分，錯兩個以上得0分 )
+
+    (3) 若一開始手上拿的是紅球，則操作3次後，手上還是紅球的機率為何？ ( 4分 )'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T05
+      name: 線性變換複合與伸縮推移
+    labeled_by: agent
+    label_confidence: high
+    label_note: group_stem誤植前一題轉移矩陣子題(2)(3)，與題幹線性變換無關
+  difficulty: 4

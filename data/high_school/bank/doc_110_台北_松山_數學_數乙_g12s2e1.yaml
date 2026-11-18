@@ -1,0 +1,497 @@
+document:
+  id: doc_110_台北_松山_數學_數乙_g12s2e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 1
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 110學年度第2學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 110學年度第2學期第1次定期評量
+  source_file: 高三/數學/110/2-1/台北/松山_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 12 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，錯一個選項得 4 分、錯兩個選項得 2 分、錯三個選項以上或未作答不給分，共 18 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每格 6 分，虛數以 a＋bi，a，b 為實數的形式作答，共 60 分）
+    count: 7
+  - ord: 4
+    name: 四、計算題（共 10 分）
+    count: 1
+questions:
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 若方程式 $x^{2}$－3x＋k＝0 有兩個共軛虛根，則實數 k 可以為哪一個數？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+    asset:
+      key: s1_1_optC
+      file: doc_110_台北_松山_數學_數乙_g12s2e1/s1_1_optC.png
+      crop:
+        page: 1
+        rect:
+        - 462.4
+        - 263.4
+        - 564.3
+        - 365.3
+  - label: D
+    content: －1
+  - label: E
+    content: －2
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵方程式 $x^{2}$－3x＋k＝0 有兩個共軛虛根
+
+    ∴判別式為（－3）$^{2}$－4×1×k＜0$\Rightarrowk > \frac{9}{4}$
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-Y2-2-2
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 多項式方程式的根
+      std: true
+    textbook: 選修數學乙（下） 多項式方程式的根
+    pattern:
+      key: MA-Y2-2-2:T01
+      name: 複數域一元二次方程式求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 複數平面上，若 $z_{1}$，$z_{2}$ 所對應的點位置，如右圖所示，則 $z_{2}$－$z_{1}$ 所對應的點位置，最可能是哪一個位置？
+  options:
+  - label: A
+    content: A
+  - label: B
+    content: B
+  - label: C
+    content: C
+  - label: D
+    content: D
+  - label: E
+    content: E
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_110_台北_松山_數學_數乙_g12s2e1/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 445.9
+      - 392.25
+      - 564.3
+      - 493.05
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 $z_{1}$＝a＋bi，$z_{2}$＝c＋di，其中 a，b，c，d 為實數
+
+    $\Rightarrowz_{2}$－$z_{1}$＝（c－a）＋（d－b）i
+
+    ∵a＜c＜0 且 b＞0＞d
+
+    ∴c－a＞0，d－b＜0，又 d－b＜d
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-Y2-2-1
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 複數與複數平面
+      std: true
+    textbook: 選修數學乙（下） 複數與複數平面
+    pattern:
+      key: MA-Y2-2-1:T10
+      name: 複數平面幾何意義與距離
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 若（x，y）滿足聯立不等式$\begin{cases}3x -y\geq -1 \\ x -2y\leq 3 \\ 2x +y\leq 6\end{cases}$，則下列哪些選項正確？
+  options:
+  - label: A
+    content: （2，1）滿足聯立不等式
+  - label: B
+    content: y 的最大值為 3
+  - label: C
+    content: －2x＋y 的最大值為 3
+  - label: D
+    content: x，y 均為整數的（x，y）共有 13 組
+  - label: E
+    content: 滿足聯立不等式的區域面積為 10
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T02
+      name: 可行解區域頂點與面積計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 關於複數的運算和性質，試選出正確的選項。
+  options:
+  - label: A
+    content: $\sqrt{-3}\times \sqrt{-5}$＝$\sqrt{15}$
+  - label: B
+    content: $\frac{\sqrt{-2}}{\sqrt{-5}}$＝$\sqrt{\frac{2}{5}}$
+  - label: C
+    content: ｜3＋5i｜＞｜2＋5i｜
+  - label: D
+    content: 3＋5i＞2＋5i
+  - label: E
+    content: $i^{20}$＜$i^{22}$
+  answer:
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-2-1
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 複數與複數平面
+      std: true
+    textbook: 選修數學乙（下） 複數與複數平面
+    pattern:
+      key: MA-Y2-2-1:T08
+      name: 複數四則運算與共軛化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 已知 f（x）＝$x^{3}$＋$3x^{2}$－9x－6，試選出正確的選項。
+  options:
+  - label: A
+    content: f（x）＝0 恰有一個正根大於 1
+  - label: B
+    content: f（x）＝0 在－3 與 0 之間恰有一個負根
+  - label: C
+    content: f（x）＝0 有兩個虛根
+  - label: D
+    content: f（x）＝0 有三個實根
+  - label: E
+    content: 不存在任何實數 x 使得 f（x）＝5
+  answer:
+  - A
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-2-2
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 多項式方程式的根
+      std: true
+    textbook: 選修數學乙（下） 多項式方程式的根
+    pattern:
+      key: MA-Y2-2-2:T03
+      name: 勘根定理與實根區間判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: '已知一個線性規劃問題的可行解區域為四邊形 ABCD 及其內部，頂 點分別為 A（0，6），B（8，12），C（11，3），D（4，1），如右圖。若目標函數 P＝ax＋by＋8（a，b 為實數）在四邊形 ABCD 的邊界上一點（9，9）有最大值 80。試求：
+
+    (1) 數對（a，b）＝＿＿＿＿。
+
+    (2) P＝ax＋by＋8 的最小值為＿＿＿＿。'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_110_台北_松山_數學_數乙_g12s2e1/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 442.15
+      - 198.05
+      - 564.3
+      - 271.45
+  answer:
+  - (1)（6，2）；(2) 20
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) ∵（9，9）在$\overline{BC}$上
+
+    由平行線法可知目標函數 P 在點（9，9），B（8，12），C（11，3）的值皆為 80
+
+    $\Rightarrow\begin{cases}9a + 9b + 8 = 80 \\ 8a + 12b + 8 = 80\end{cases}$
+
+    解得 a＝6，b＝2，故數對（a，b）＝（6，2）
+
+    (2) 承(1)，目標函數 P＝6x＋2y＋8
+
+    由平行線法可知，最小值發生在 A（0，6），故最小值為 2×6＋8＝20'
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T10
+      name: 由極值發生頂點反推目標係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 化簡$\overline{3i + 2} +\frac{3 - 4i}{1 + 2i}$＝＿＿＿＿。
+  answer:
+  - 1－5i
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\overline{3i + 2} +\frac{3 - 4i}{1 + 2i}$＝$( 2 - 3i )+\frac{3 - 4i}{1 + 2i}\times \frac{1 - 2i}{1 - 2i}$
+
+    ＝$( 2 - 3i )+\frac{3 - 6i - 4i - 8}{5}$＝$( 2 - 3i )+\frac{- 5 - 10i}{5}$＝1－5i'
+  tags:
+    unit:
+      code: MA-Y2-2-1
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 複數與複數平面
+      std: true
+    textbook: 選修數學乙（下） 複數與複數平面
+    pattern:
+      key: MA-Y2-2-1:T08
+      name: 複數四則運算與共軛化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知 z 為複數且（1＋i）z＋（2－3i）$\overline{z}$＝1－8i，則 z＝＿＿＿＿。
+  answer:
+  - 3＋2i
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 z＝a＋bi
+
+    （1＋i）（a＋bi）＋（2－3i）（a－bi）＝1－8i
+
+    $\Rightarrow$（a－b）＋（a＋b）i＋（2a－3b）＋（－3a－2b）i＝1－8i
+
+    $\Rightarrow$（3a－4b）＋（－2a－b）i＝1－8i
+
+    解$\begin{cases}3a - 4b = 1 \\ -2a -b =-8\end{cases}$，可得 a＝3，b＝2 ∴z＝3＋2i'
+  tags:
+    unit:
+      code: MA-Y2-2-1
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 複數與複數平面
+      std: true
+    textbook: 選修數學乙（下） 複數與複數平面
+    pattern:
+      key: MA-Y2-2-1:T07
+      name: 複數相等條件與實虛部求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知 z 為複數且（1＋z）i＋（2－3z）$\overline{i}$＝1－3z，則｜z｜＝＿＿＿＿。
+  answer:
+  - $\frac{\sqrt{2}}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-2-1
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 複數與複數平面
+      std: true
+    textbook: 選修數學乙（下） 複數與複數平面
+    pattern:
+      key: MA-Y2-2-1:T01
+      name: 複數四則運算與實虛部相等
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知 z 為複數且滿足聯立方程式$\begin{cases}| z - 4 |+| z + 3i |= 5 \\ | z - 4 |=| z + 3i |\end{cases}$，則 z＝＿＿＿＿。
+  answer:
+  - $2 -\frac{3}{2}i$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-2-1
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 複數與複數平面
+      std: true
+    textbook: 選修數學乙（下） 複數與複數平面
+    pattern:
+      key: MA-Y2-2-1:T10
+      name: 複數平面幾何意義與距離
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: '若$1+\sqrt{2}$是方程式 $2x^{2}$－6x＋k＝0 的一個根，則：
+
+    (1) 方程式的另一根為＿＿＿＿。
+
+    (2) k＝＿＿＿＿。'
+  answer:
+  - (1) $2 - \sqrt{2}$；(2) $2\sqrt{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-2-2
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 多項式方程式的根
+      std: true
+    textbook: 選修數學乙（下） 多項式方程式的根
+    pattern:
+      key: MA-Y2-2-2:T02
+      name: 根與係數關係及負數開方
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: '設 f（x）＝$2x^{3}$－$5x^{2}$＋12x－5，則：
+
+    (1) f（2＋i）＝＿＿＿＿。
+
+    (2) 已知 1＋2i 是方程式 f（x）＝0 的一個根，則 f（x）＝0 的實根為＿＿＿＿。'
+  answer:
+  - (1) 8＋14i；(2) $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-2-2
+      book: 選修數學乙（下）
+      chapter: 複數與方程式
+      title: 多項式方程式的根
+      std: true
+    textbook: 選修數學乙（下） 多項式方程式的根
+    pattern:
+      key: MA-Y2-2-2:T07
+      name: 已知共軛虛根反求三次方程式實根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數乙_g12s2e1_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 2
+  stem: '某公司招聘員工，共有 1600 人參加筆試。筆試場地借用學校的教室，該校可使用的大教室有 50 間，每間可容納 40 人，每間租金 500 元；小教室有 40 間，每間可容納 20 人，每間租金 200 元，考慮監考人員的限制，筆試教室總數不能超過 55 間。設租借大教室 x 間，小教室 y 間，試依下列步驟，求最節省場地租金的租借方式。
+
+    (1) 列出目標函數。（1 分）
+
+    (2) 列出限制條件的聯立不等式。（2 分）
+
+    (3) 畫出可行解區域並標示頂點坐標。（3 分）
+
+    (4) 利用頂點法或平行線法求最節省場地租金的租借方式，及此時的場地租金。（4 分）'
+  assets:
+  - key: s4_1_f1
+    kind: figure
+    file: doc_110_台北_松山_數學_數乙_g12s2e1/s4_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 253.9
+      - 675.4
+      - 364.2
+      - 787.6
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T04
+      name: 資源配比與成本最佳化建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -1,0 +1,399 @@
+document:
+  id: doc_109_台北_明倫_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 2
+  city: 台北
+  school_short: 明倫
+  school: 臺北市立明倫高級中學
+  title: 臺北市立明倫高級中學 109學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 109學年度第2學期第2次定期評量
+  source_file: 高二/數學/109/2-2/台北/明倫_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、 單選題：
+    count: 5
+  - ord: 2
+    name: 二、 多選題：
+    count: 1
+  - ord: 3
+    name: 三、 填充題：
+    count: 5
+  - ord: 4
+    name: 四、 計算題：
+    count: 1
+questions:
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 爸爸帶2歲的小悠玩打地鼠機，玩三次後分別將第一、二、三次各地洞中地鼠出現的次數以矩陣A、B、C表示，其中A＝$\left[ \begin{matrix}2 & 9 & 8 \\ 2 & 8 & 9 \\ 9 & 5 & 0\end{matrix} \right]$、B＝$\left[ \begin{matrix}3 & 5 & 7 \\ 7 & 6 & 4 \\ 6 & 4 & 1\end{matrix} \right]$、C＝$\left[ \begin{matrix}7 & 6 & 4 \\ 1 & 8 & 2 \\ 8 & 1 & 1\end{matrix} \right]$。因為小悠反應不夠快，他的專注力只能打相鄰的兩個地鼠，若以地鼠累積三次出現的次數為依據，爸爸應該建議小悠專心打哪兩個洞的地鼠，小悠會比較有成就感？
+  options:
+  - label: A
+    content: 第1、4號
+  - label: B
+    content: 第3、6號
+  - label: C
+    content: 第4、7號
+  - label: D
+    content: 第5、6號
+  - label: E
+    content: 第6、9號
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_109_台北_明倫_數學_數B_g11s2e2/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 185.75
+      - 179.35
+      - 278.3
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: A＋B＋C＝$\left[ \begin{matrix}2+3+7 & 9+5+6 & 8+7+4 \\ 2+7+1 & 8+6+8 & 9+4+2 \\ 9+6+8 & 5+4+1 & 0+1+1\end{matrix} \right]$＝$\left[ \begin{matrix}13 & 20 & 19 \\ 10 & 22 & 15 \\ 23 & 10 & 2\end{matrix} \right]$ (A) 第1，4號出現的總次數＝13＋10＝23 (B) 第3，6號出現的總次數＝19＋15＝34 (C) 第4，7號出現的總次數＝10＋23＝33 (D) 第5，6號出現的總次數＝22＋15＝37 (E) 第6，9號出現的總次數＝15＋2＝17 故選(D)
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T01
+      name: 矩陣列式與基本加減純量積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設A＝$\left[ \begin{matrix}3 & 2 \\ 1 & 1\end{matrix} \right]$，B＝$\left[ \begin{matrix}2 & 6 \\ 3 & k\end{matrix} \right]$，若 ( A＋B )$^{2}$＝$A^{2}$＋2AB＋$B^{2}$，則k值為下列哪一選項？
+  options:
+  - label: A
+    content: －6
+  - label: B
+    content: －5
+  - label: C
+    content: －4
+  - label: D
+    content: '4'
+  - label: E
+    content: '5'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 因為 ( A＋B )$^{2}$＝$A^{2}$＋2AB＋$B^{2}$，所以AB＝BA ⇒ $\left[ \begin{matrix}3 & 2 \\ 1 & 1\end{matrix} \right] \left[ \begin{matrix}2 & 6 \\ 3 & k\end{matrix} \right] =\left[ \begin{matrix}2 & 6 \\ 3 & k\end{matrix} \right] \left[ \begin{matrix}3 & 2 \\ 1 & 1\end{matrix} \right]$ ⇒ $\left[ \begin{matrix}12 & 18+2k \\ 5 & 6+k\end{matrix} \right] =\left[ \begin{matrix}12 & 10 \\ 9+k & 6+k\end{matrix} \right]$ ⇒ $\begin{cases}18+2k=10 \\ 5=9+k\Rightarrow k=-4\end{cases}$，故選(C)
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T02
+      name: 矩陣乘法與交換律條件求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 設A＝$\left[ \begin{matrix}0 & -1 \\ 1 & -1\end{matrix} \right]$。若$A^{101}$＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$，則b之值為下列哪一個選項？
+  options:
+  - label: A
+    content: －2
+  - label: B
+    content: －1
+  - label: C
+    content: '0'
+  - label: D
+    content: '1'
+  - label: E
+    content: '2'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $A^{2}$＝$\left[ \begin{matrix}0 & -1 \\ 1 & -1\end{matrix} \right] \left[ \begin{matrix}0 & -1 \\ 1 & -1\end{matrix} \right] =\left[ \begin{matrix}-1 & 1 \\ -1 & 0\end{matrix} \right]$ ⇒ $A^{3}$＝$\left[ \begin{matrix}-1 & 1 \\ -1 & 0\end{matrix} \right] \left[ \begin{matrix}0 & -1 \\ 1 & -1\end{matrix} \right] =\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$＝Ｉ ⇒ $A^{101}$＝( $A^{3}$ )$^{33}A^{2}$＝$I^{33}A^{2}$＝$A^{2}$＝$\left[ \begin{matrix}-1 & 1 \\ -1 & 0\end{matrix} \right] =\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$ ⇒ b＝1，故選(D)
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T03
+      name: 矩陣高次方規律與週期推算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 令I＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$，A＝$\left[ \begin{matrix}1 & 1 \\ 3 & 4\end{matrix} \right]$，B＝I＋A＋$A^{－1}$，試選出代表BA的選項？
+  options:
+  - label: A
+    content: $\left[ \begin{matrix}4 & -1 \\ -3 & 1\end{matrix} \right]$
+  - label: B
+    content: $\left[ \begin{matrix}1 & 1 \\ 3 & 4\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}6 & 6 \\ 18 & 24\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}6 & 0 \\ 0 & 6\end{matrix} \right]$
+  - label: E
+    content: $\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: BA＝( I＋A＋$A^{－1}$ )A＝A＋$A^{2}$＋I＝$\left[ \begin{matrix}1 & 1 \\ 3 & 4\end{matrix} \right] +\left[ \begin{matrix}1 & 1 \\ 3 & 4\end{matrix} \right] \left[ \begin{matrix}1 & 1 \\ 3 & 4\end{matrix} \right] +\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right] =\left[ \begin{matrix}1 & 1 \\ 3 & 4\end{matrix} \right] +\left[ \begin{matrix}4 & 5 \\ 15 & 19\end{matrix} \right] +\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right] =\left[ \begin{matrix}6 & 6 \\ 18 & 24\end{matrix} \right]$，故選(C)
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 1
+  stem: 已知I＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$，J＝$\left[ \begin{matrix}2 & 2 \\ 2 & 2\end{matrix} \right]$，且 ( I＋J )$^{3}$＝aI＋bJ，則實數a＋b之值為下列哪一個選項？
+  options:
+  - label: A
+    content: '32'
+  - label: B
+    content: '26'
+  - label: C
+    content: '9'
+  - label: D
+    content: '8'
+  - label: E
+    content: '2'
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $J^{2}$＝$\left[ \begin{matrix}2 & 2 \\ 2 & 2\end{matrix} \right] \left[ \begin{matrix}2 & 2 \\ 2 & 2\end{matrix} \right] =\left[ \begin{matrix}8 & 8 \\ 8 & 8\end{matrix} \right] =4J$ ⇒ $J^{3}$＝16J ⇒ ( I＋J )$^{3}$＝I＋$C_{1}^{3}J+C_{2}^{3}J^{2}+C_{3}^{3}J^{3}$＝I＋3J＋12J＋16J＝I＋31J ⇒ $\begin{cases}a=1 \\ b=31\end{cases}$ ⇒ a＋b＝1＋31＝32，故選(A)
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T03
+      name: 矩陣高次方規律與週期推算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設A＝$\left[ \begin{matrix}a+1 & 3 \\ 2 & a+2\end{matrix} \right]$，其中a為下列哪一個選項之值，可使矩體A為不可逆方陣？
+  options:
+  - label: A
+    content: －1
+  - label: B
+    content: '1'
+  - label: C
+    content: －4
+  - label: D
+    content: '4'
+  - label: E
+    content: －2
+  answer:
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: det A＝$\left| \begin{matrix}a+1 & 3 \\ 2 & a+2\end{matrix} \right|$＝( $a^{2}$＋3a＋2 )－6＝$a^{2}$＋3a－4＝( a－1 ) ( a＋4 )＝0 ⇒ a＝－4，1 故選(B)(C)
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T04
+      name: 二階反方陣存在判別與求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 1
+  stem: 給定矩陣A＝[ $a_{ij}$ ]$_{2×3}$，其中$a_{ij}$＝2i＋j，試求矩陣A。
+  explanation: $a_{11}$＝2×1＋1＝3，$a_{12}$＝2×1＋2＝4，$a_{13}$＝2×1＋3＝5，$a_{21}$＝2×2＋1＝5，$a_{22}$＝2×2＋2＝6，$a_{23}$＝2×2＋3＝7 故A＝$\left[ \begin{matrix}\begin{matrix}3 & 4 & 5\end{matrix} \\ \begin{matrix}5 & 6 & 7\end{matrix}\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T01
+      name: 矩陣列式與基本加減純量積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 1
+  stem: 已知A、B均為二階方陣，若A－B＝$\left[ \begin{matrix}-2 & 0 \\ 3 & 3\end{matrix} \right]$且A＋B＝$\left[ \begin{matrix}2 & 2 \\ 1 & 3\end{matrix} \right]$，試求矩陣$A^{2}$－$B^{2}$。
+  answer:
+  - $\left[ \begin{matrix}-1 & 1 \\ 8 & 12\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: A＝$\frac{1}{2}$( ( A－B )＋( A＋B ) )＝$\frac{1}{2}(\left[ \begin{matrix}-2 & 0 \\ 3 & 3\end{matrix} \right] +\left[ \begin{matrix}2 & 2 \\ 1 & 3\end{matrix} \right] )=\frac{1}{2}\left[ \begin{matrix}0 & 2 \\ 4 & 6\end{matrix} \right] =\left[ \begin{matrix}0 & 1 \\ 2 & 3\end{matrix} \right]$， B＝$\frac{1}{2}$( ( A＋B )－( A－B ) )＝$\frac{1}{2}-(\left[ \begin{matrix}2 & 2 \\ 1 & 3\end{matrix} \right] -\left[ \begin{matrix}-2 & 0 \\ 3 & 3\end{matrix} \right] )=\frac{1}{2}\left[ \begin{matrix}4 & 2 \\ -2 & 0\end{matrix} \right] =\left[ \begin{matrix}2 & 1 \\ -1 & 0\end{matrix} \right]$ ⇒ $A^{2}$＝$\left[ \begin{matrix}0 & 1 \\ 2 & 3\end{matrix} \right] \left[ \begin{matrix}0 & 1 \\ 2 & 3\end{matrix} \right]$＝$\left[ \begin{matrix}2 & 3 \\ 6 & 11\end{matrix} \right]$，$B^{2}$＝$\left[ \begin{matrix}2 & 1 \\ -1 & 0\end{matrix} \right] \left[ \begin{matrix}2 & 1 \\ -1 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}3 & 2 \\ -2 & -1\end{matrix} \right]$ ⇒ $A^{2}$－$B^{2}$＝$\left[ \begin{matrix}2 & 3 \\ 6 & 11\end{matrix} \right]$－$\left[ \begin{matrix}3 & 2 \\ -2 & -1\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 1 \\ 8 & 12\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T02
+      name: 矩陣乘法與交換律條件求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 1
+  stem: 設A、B、C為二階方陣，已知AB＝$\left[ \begin{matrix}0 & -1 \\ -2 & -1\end{matrix} \right]$，AC＝$\left[ \begin{matrix}-5 & -6 \\ 9 & 14\end{matrix} \right]$且B＋C＝$\left[ \begin{matrix}3 & 1 \\ 4 & 4\end{matrix} \right]$，試求矩陣A。
+  answer:
+  - $\left[ \begin{matrix}1 & -2 \\ -3 & 4\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: A ( B＋C )＝AB＋AC＝$\left[ \begin{matrix}0 & -1 \\ -2 & -1\end{matrix} \right]$＋$\left[ \begin{matrix}-5 & -6 \\ 9 & 14\end{matrix} \right]$＝$\left[ \begin{matrix}-5 & -7 \\ 7 & 13\end{matrix} \right]$ ⇒ A＝$\left[ \begin{matrix}-5 & -7 \\ 7 & 13\end{matrix} \right] \left[ \begin{matrix}3 & 1 \\ 4 & 4\end{matrix} \right] ^{-1}$＝$\frac{1}{8}\left[ \begin{matrix}-5 & -7 \\ 7 & 13\end{matrix} \right] \left[ \begin{matrix}4 & -1 \\ -4 & 3\end{matrix} \right]$＝$\frac{1}{8}\left[ \begin{matrix}8 & -16 \\ -24 & 32\end{matrix} \right]$＝$\left[ \begin{matrix}1 & -2 \\ -3 & 4\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 1
+  stem: 已知A為二階方陣，滿足$A^{3}$＝$\left[ \begin{matrix}3 & 2 \\ 2 & 1\end{matrix} \right]$且$A^{5}$＝$\left[ \begin{matrix}8 & 5 \\ 5 & 3\end{matrix} \right]$，試求矩陣$A^{4}$。
+  answer:
+  - $\left[ \begin{matrix}5 & 3 \\ 3 & 2\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $A^{2}A^{3}$＝$A^{5}$ ⇒ $A^{2}$＝$A^{5}$ ( $A^{3}$ )$^{－1}$＝$\left[ \begin{matrix}8 & 5 \\ 5 & 3\end{matrix} \right] \left[ \begin{matrix}3 & 2 \\ 2 & 1\end{matrix} \right] ^{-1}$＝－$\left[ \begin{matrix}8 & 5 \\ 5 & 3\end{matrix} \right] \left[ \begin{matrix}1 & -2 \\ -2 & 3\end{matrix} \right]$＝－$\left[ \begin{matrix}-2 & -1 \\ -1 & -1\end{matrix} \right]$＝$\left[ \begin{matrix}2 & 1 \\ 1 & 1\end{matrix} \right]$ ⇒ $A^{4}$＝$\left[ \begin{matrix}2 & 1 \\ 1 & 1\end{matrix} \right] \left[ \begin{matrix}2 & 1 \\ 1 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}5 & 3 \\ 3 & 2\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 1
+  stem: 經實驗證實，每一隻好菌1秒可以吃掉一隻壞菌並增生為原來的兩倍，但同時間內剩餘的壞菌每1秒亦會繁殖為原來的兩倍。例如：現有1隻好菌、10隻壞菌，1秒後好菌變成2隻、壞菌18隻，2秒後好菌有4隻、壞菌32隻，以此類推。設n秒後好菌數以$a_{n}$表之，壞菌數以$b_{n}$表示，且設$\left[ \begin{matrix}a_{n+1} \\ b_{n+1}\end{matrix} \right] =\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] \left[ \begin{matrix}a_{n} \\ b_{n}\end{matrix} \right]$，試求矩陣$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$。
+  answer:
+  - $\left[ \begin{matrix}2 & 0 \\ -2 & 2\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 依題意可知$\begin{cases}a_{n+1}=2a_{n} \\ b_{n+1}=2(b_{n}-a_{n})\end{cases}$ ⇒ $\left[ \begin{matrix}a_{n+1} \\ b_{n+1}\end{matrix} \right] =\left[ \begin{matrix}2 & 0 \\ -2 & 2\end{matrix} \right] \left[ \begin{matrix}a_{n} \\ b_{n}\end{matrix} \right]$，故$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] =\left[ \begin{matrix}2 & 0 \\ -2 & 2\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-B4-3-2
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4B 矩陣的應用
+    pattern:
+      key: MA-B4-3-2:T01
+      name: 狀態遞迴列式與轉移矩陣建構
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_明倫_數學_數B_g11s2e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 2
+  stem: 設x，c為實數，方陣A＝$\left[ \begin{matrix}3 & 2 \\ -2 & x\end{matrix} \right]$、B＝$\left[ \begin{matrix}3 & -2 \\ 2 & x\end{matrix} \right]$。已知A的反方陣恰好是B的c倍（其中c≠0），則 (1) 試以x來表示A的反方陣。 (2) 求數對 ( x , c )。
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T04
+      name: 二階反方陣存在判別與求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

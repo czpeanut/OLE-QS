@@ -1,0 +1,813 @@
+document:
+  id: doc_109_台南_台南二中_數學_g10s2e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 1
+  city: 台南
+  school_short: 台南二中
+  school: 國立臺南第二高級中學
+  title: 國立臺南第二高級中學 109學年度第2學期第1次定期評量 高一數學科試題
+  exam_name: 109學年度第2學期第1次定期評量
+  source_file: 高一/數學/109/2-1/台南/台南二中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、選擇題：【15%，每題5分，每題至少一個正確的選項，答錯一個選項可得3分，答錯兩個選項可得1分，錯3個以上或未作答者得0分】
+    count: 3
+  - ord: 2
+    name: 二、填充題：【60%】
+    count: 9
+  - ord: 3
+    name: 三、綜合題：【25%，除了第二題的(1)、(2)外皆需寫出詳細計算過程，否則不予計分】
+    count: 2
+  - ord: 5
+    name: 二、填充題：
+    count: 6
+  - ord: 6
+    name: 三、綜合題
+    count: 2
+  - ord: 7
+    name: 一、選擇題
+    count: 1
+  - ord: 8
+    name: 二、填充題
+    count: 9
+  - ord: 9
+    name: 三、綜合題
+    count: 2
+questions:
+- id: doc_109_台南_台南二中_數學_g10s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 已知〈$a_{n}$〉為等比數列，其中$a_{1}$＝1且公比為實數，下列敘述何者正確？
+  options:
+  - label: A
+    content: 若$a_{100}$＞0，則$a_{101}$＞0
+  - label: B
+    content: 若$a_{100}$＞0，則$a_{1000}$＞0
+  - label: C
+    content: 若$a_{99}$＞0，則$a_{100}$＞0
+  - label: D
+    content: 若$a_{100}$＜0，則$a_{99}$＋$a_{100}$＜0
+  - label: E
+    content: 若$a_{98}$＜0，則$a_{1}$＋$a_{2}$＋…＋$a_{99}$＞0
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T06
+      name: 數列定義判別與單調正負分析
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 某班有32名學生，某次小考全班平均40分，最高分70分，最低分20分。現今將全班成績做線性調分使其平均為63分，最高為90分，則下列選項何者正確？
+  options:
+  - label: A
+    content: 調分後最低分為46分
+  - label: B
+    content: 調分後全距變小
+  - label: C
+    content: 調分後的變異數為原本的0.9倍
+  - label: D
+    content: 調分後的第1四分位數變為原本的第1四分位數大
+  - label: E
+    content: 調分前的分數與調分後的分數，其相關係數為1
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 某班全部25人，其身高 ( x ) 與體重 ( y ) 的算術平均數分別為μ$_{x}$＝165 ( 公分 )、μ$_{y}$＝65 ( 公斤 )，標準差分別為σ$_{x}$＝0.2 ( 公分 )、σ$_{y}$＝0.5 ( 公斤 )，相關係數γ＝0.1，則下列敘述何者正確？
+  options:
+  - label: A
+    content: y對x的最適直線斜率為0.1
+  - label: B
+    content: y對x的最適直線為y＝$\frac{1}{4}$x＋$\frac{95}{4}$
+  - label: C
+    content: y對x的最適直線必通過( 165 , 65 )
+  - label: D
+    content: 由y對x的最適直線可以確定，若有人的身高為175公分，其體重必為66公斤
+  - label: E
+    content: 若將身高的單位改成英呎，體重的單位改成磅，則身高與體重的相關係數依然為0.1 ( 1英呎＝30.48公分，1磅＝0.4536公斤)
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T03
+      name: 線性變換對相關與迴歸影響
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 級數和$1^{3}$＋$3^{3}$＋$5^{3}$＋$7^{3}$＋…＋( 2k－1 )$^{3}$＋…＋$19^{3}$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T02
+      name: Sigma高次方與分項對消
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 已知a , b , c為等差數列，和為36且a＋1，b＋4，c＋43為等比數列，求( a , b , c )＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 求100到500的正整數中，所有除以8餘4的數的總和＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T08
+      name: 等差數列性質與前n項求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: <u>小明</u>為了籌備結婚基金而參加某家銀行的儲蓄專案，該專案採固定利率制，月利率0.5％，每個月複利1次並於每個月的最後一天計息。若<u>小明</u>每個月的第一天均存入6000元，試問第20個月結算後的本利和為＿＿＿＿( $1.005^{20}$近似於1.1 )。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T03
+      name: 複利儲蓄與等比費率求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知一數列〈$a_{n}$〉滿足$\begin{cases}a_{1}=3 \\ a_{n}=a_{n-1}+6n^{2}-2n+1 , n\geq 2\end{cases}$，求一般項$a_{n}$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T02
+      name: 遞迴關係推算與累加求通項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 已知<u>小銘</u>這次期中考的國文、英文、數學的分數分別為75、80、50，而這三科班上的平均數與標準差如表所示，請問在這次期中考中，<u>小銘 </u>科表現得最差。
+  assets:
+  - key: s2_6_f1
+    kind: figure
+    file: doc_109_台南_台南二中_數學_g10s2e1/s2_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 280.0
+      - 272.85
+      - 448.5
+      - 361.75
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 下列有五組二維數據的散布圖，其相關係數分別為$r_{甲}$、$r_{乙}$、$r_{丙}$、$r_{丁}$、$r_{戊}$。 請比較這5個相關係數的大小＿＿＿＿。
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_109_台南_台南二中_數學_g10s2e1/s2_7_f1.png
+    crop:
+      page: 2
+      rect:
+      - 54.9
+      - 438.3
+      - 137.1
+      - 519.3
+  - key: s2_7_f2
+    kind: figure
+    file: doc_109_台南_台南二中_數學_g10s2e1/s2_7_f2.png
+    crop:
+      page: 2
+      rect:
+      - 210.15
+      - 438.5
+      - 291.9
+      - 519.3
+  - key: s2_7_f3
+    kind: figure
+    file: doc_109_台南_台南二中_數學_g10s2e1/s2_7_f3.png
+    crop:
+      page: 2
+      rect:
+      - 286.0
+      - 438.5
+      - 367.75
+      - 519.3
+  - key: s2_7_f4
+    kind: figure
+    file: doc_109_台南_台南二中_數學_g10s2e1/s2_7_f4.png
+    crop:
+      page: 2
+      rect:
+      - 361.85
+      - 438.5
+      - 443.35
+      - 519.3
+  - key: s2_7_f5
+    kind: figure
+    file: doc_109_台南_台南二中_數學_g10s2e1/s2_7_f5.png
+    crop:
+      page: 2
+      rect:
+      - 131.2
+      - 439.5
+      - 216.05
+      - 519.3
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T01
+      name: 散布圖判讀與相關係數估計
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 有兩組數據$x_{1}$ , $x_{2}$ ,…, $x_{6}$與$y_{1}$ , $y_{2}$ ,…, $y_{6}$，其中μ$_{x}$＝6，μ$_{y}$＝70，$x_{1}^{2}$＋$x_{2}^{2}$＋…＋$x_{6}^{2}$＝276，σ$_{y}$＝$\sqrt{10}$， $x_{1}y_{1}$＋$x_{2}y_{2}$＋…＋$x_{6}y_{6}$＝2480，求x與y的相關係數＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T06
+      name: 統計量與平方和求相關迴歸
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 某校高二數學第一次期中考自然組平均67分，標準差5分；社會組平均52分，標準差7分。已知該校自然組有400人，社會組200人。假設全校數學總分平均為μ，標準差為σ，求(μ,σ$^{2}$ )＝＿＿＿＿( $67^{2}$＝4489，$52^{2}$＝2704)。
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T04
+      name: 分組資料合併與缺漏數據反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '今年 ( 110年 ) 學測剛結束，許多高三同學正積極的準備第二階段面試，但亦有些同學學測考得不盡理想或者防範未然進而開始準備指考。有老師想分析過往參加指考的同學的總成績 ( 國英數甲及物理化學 ) 是否與學測的總級分 ( 國英數自 ) 有關，以下為去年 ( 109年 ) 該位老師收集的部分學生資料，試以該資料回答下列各題。 (1) 求學測成績 ( x ) 與指考成績 ( y ) 的相關係數。( 10分 )
+
+    (2) 試求y對x的最適直線方程式。( 3分 )
+
+    (3) 若有一位T生去年 ( 109年 ) 學測考了50級分，試用 (2) 所求出的最適直線方程式預測其指考應該考了幾分？ ( 2分 )'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_109_台南_台南二中_數學_g10s2e1/s3_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 138.9
+      - 41.85
+      - 423.3
+      - 141.25
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T02
+      name: 相關係數與迴歸直線直接計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s3_2
+  section: 3
+  number: 2
+  type: single
+  page: 3
+  stem: '已知一數列〈$a_{n}$〉的遞迴關係式為$\begin{cases}a_{1}=2 \\ (n-1)a_{n}=na_{n-1}+2 , n\geq 2\end{cases}$。 (1) 求$a_{4}$＝＿＿＿＿。( 此題不須寫出過程，2分 )
+
+    (2) $a_{n}$的一般式為？( 單選題，此題不須寫出過程，1分 )
+
+    (3) 請用數學歸納法證明你在(2)所選的答案是正確的。( 7分 )
+
+    國立臺南二中109學年度第二學期一年級 第一次期中考 數學科 答案'
+  options:
+  - label: A
+    content: $5n-3$
+  - label: B
+    content: $4n-2$
+  - label: C
+    content: $2^{n-1}+1$
+  - label: D
+    content: $2^{n+1}-2$
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T03
+      name: 數學歸納法猜測與倍數證明
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s5_2
+  section: 5
+  number: 2
+  type: fill
+  page: 3
+  stem: ( 3 , 12 , 21 ) 或 ( 63 , 12 ,－39 )
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 原卷答案區被誤拆為獨立題目（僅有答案數值，無題幹）
+- id: doc_109_台南_台南二中_數學_g10s2e1_s5_4
+  section: 5
+  number: 4
+  type: fill
+  page: 3
+  stem: '120600'
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 原卷答案區被誤拆為獨立題目（僅有答案數值，無題幹）
+- id: doc_109_台南_台南二中_數學_g10s2e1_s5_5
+  section: 5
+  number: 5
+  type: fill
+  page: 3
+  stem: $2n^{3}$＋$2n^{2}$＋n－2
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 原卷答案區被誤拆為獨立題目（僅有答案數值，無題幹）
+- id: doc_109_台南_台南二中_數學_g10s2e1_s5_7
+  section: 5
+  number: 7
+  type: fill
+  page: 3
+  stem: $r_{甲}$＞$r_{丙}$＞$r_{乙}$＞$r_{戊}$＞$r_{丁}$
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 原卷答案區被誤拆為獨立題目（僅有答案數值，無題幹）
+- id: doc_109_台南_台南二中_數學_g10s2e1_s5_8
+  section: 5
+  number: 8
+  type: fill
+  page: 3
+  stem: －$\frac{2}{3}$
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 原卷答案區被誤拆為獨立題目（僅有答案數值，無題幹）
+- id: doc_109_台南_台南二中_數學_g10s2e1_s5_9
+  section: 5
+  number: 9
+  type: fill
+  page: 3
+  stem: ( 62 , 83 )
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 原卷答案區被誤拆為獨立題目（僅有答案數值，無題幹）
+- id: doc_109_台南_台南二中_數學_g10s2e1_s6_1
+  section: 6
+  number: 1
+  type: calc
+  page: 3
+  stem: (1) $S_{xx}$＝16，$S_{yy}$＝3600，$S_{xy}$＝180，$r_{xy}$＝$\frac{S_{xy}}{\sqrt{S_{xx}}\sqrt{S_{yy}}}$＝$\frac{3}{4}$；(2) y－390＝$\frac{45}{4}$( x－54 )；(3) 345分
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 原卷答案區被誤拆為獨立題目（僅有答案數值，無題幹）
+- id: doc_109_台南_台南二中_數學_g10s2e1_s6_2
+  section: 6
+  number: 2
+  type: calc
+  page: 3
+  stem: '(1) 14；(2) (B)；(3) 詳見解析
+
+    國立臺南二中109學年度第二學期一年級 第一次期中考 數學科 詳解'
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 原卷答案區被誤拆為獨立題目（僅有答案數值，無題幹）
+- id: doc_109_台南_台南二中_數學_g10s2e1_s7_2
+  section: 7
+  number: 2
+  type: single
+  page: 5
+  stem: 設原始成績為x分，調分後為y分，且滿足y＝ax＋b， 可知$\begin{cases}70a+b=90 \\ 40a+b=63\end{cases}$ ⇒ $\begin{cases}a=\frac{9}{10} \\ b=27\end{cases}$ ⇒ y＝$\frac{9}{10}$x＋27。
+  options:
+  - label: A
+    content: ×：y＝$\frac{9}{10}$×20＋27＝45，所以最低分為45分。
+  - label: B
+    content: ○：調分後的全距＝90－45＝45，原始成績的全距＝70－20＝50，所以調分後全距變小。
+  - label: C
+    content: ×：$\delta _{y}^{2}=(\frac{9}{10}) \delta _{x}^{2}=0.81 \delta _{x}^{2}$，所以調分後的變異數為原本的0.81倍。
+  - label: D
+    content: ○：設原始成績與調分後的第1四分位數分別為$m_{x}$，$m_{y}$， 可知$m_{y}$＝$\frac{9}{10}m_{x}$＋27，因為$m_{x }$≤ 70， 所以$m_{y}$－$m_{x}$＝27－$\frac{1}{10}m_{x}$ ≥ 20＞0，即調分後的第1四分位數較大。
+  - label: E
+    content: ○：因為直線y＝$\frac{9}{10}$x＋27的斜率為$\frac{9}{10}$＞0，所以調分前後分數的相關係數為1。 故選(B)(D)(E)。
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s8_1
+  section: 8
+  number: 1
+  type: fill
+  page: 5
+  stem: $1^{3}$＋$3^{3}$＋$5^{3}$＋…＋$19^{3}$＝( $1^{3}$＋$2^{3}$＋…＋$19^{3}$ )－( $2^{3}$＋$4^{3}$＋…＋$18^{3}$ ) ＝$(\frac{19\times (19+1)}{2})^{2}$－8 ( $1^{3}$＋$2^{3}$＋…＋$9^{3}$ )＝36100－8×$(\frac{9\times (9+1)}{2})^{2}$ ＝36100－16200＝19900。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T02
+      name: Sigma高次方與分項對消
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s8_2
+  section: 8
+  number: 2
+  type: fill
+  page: 5
+  stem: a＋b＋c＝3b＝36 ⇒ b＝12， 設公差為d，可知a＝12－d，c＝12＋d ⇒ 13－d，16，55＋d成等比數列 ⇒ $16^{2}$＝( 13－d ) ( 55＋d )＝－$d^{2}$－42d＋715 ⇒ $d^{2}$＋42d－459＝0 ⇒ ( d－9 ) ( d＋51 )＝0 ⇒ d＝－51或9。 (i) d＝－51時，a＝12－(－51 )＝63，c＝12＋(－51 )＝－39。 (ii) d＝9時，a＝12－9＝3，c＝12＋9＝21。 故 ( a , b , c )＝( 63 , 12 ,－39 ) 或 ( 3 , 12 , 21 )。
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s8_3
+  section: 8
+  number: 3
+  type: fill
+  page: 5
+  stem: 所求＝100＋116＋…＋500＝$\frac{51\times (100+500)}{2}$＝15300。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T08
+      name: 等差數列性質與前n項求和
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s8_4
+  section: 8
+  number: 4
+  type: fill
+  page: 5
+  stem: 所求＝6000×( 1＋0.005)$^{20}$＋6000×( 1＋0.005)$^{19}$＋…＋6000×( 1＋0.005) ＝6000×( 1.005＋$1.005^{2}$＋…＋$1.005^{20}$ ) ＝6000×1.005×$\frac{1.005^{20}-1}{1.005-1}$ ≈ 6030×$\frac{1.1-1}{0.005}$＝120600 (元)。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T03
+      name: 複利儲蓄與等比費率求和
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s8_5
+  section: 8
+  number: 5
+  type: fill
+  page: 6
+  stem: 利用累加法 所以$a_{n}$＝3＋6 ( $2^{2}$＋$3^{2}$＋…＋$n^{2}$ )－2 ( 2＋3＋…＋n )＋( n－1 ) ＝6 ( $1^{2}$＋$2^{2}$＋…＋$n^{2}$ )－2 ( 1＋2＋…＋n )＋( n－2 ) ＝6×$\frac{n (n+1) (2n+1)}{6}$－2×$\frac{n (n+1)}{2}$＋( n－2 ) ＝( $2n^{3}$＋$3n^{2}$＋n )－( $n^{2}$＋n )＋( n－2 ) ＝$2n^{3}$＋$2n^{2}$＋n－2。
+  assets:
+  - key: s8_5_f1
+    kind: figure
+    file: doc_109_台南_台南二中_數學_g10s2e1/s8_5_f1.png
+    crop:
+      page: 6
+      rect:
+      - 54.9
+      - 123.15
+      - 379.1
+      - 224.75
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T02
+      name: 遞迴關係推算與累加求通項
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s8_6
+  section: 8
+  number: 6
+  type: fill
+  page: 6
+  stem: 國文的標準化分數：$\frac{75-70}{3}$＝$\frac{5}{3}$， 英文的標準化分數：$\frac{80-76}{2}$＝2， 數學的標準化分數：$\frac{50-45}{2.5}$＝2， 所以<u>小銘</u>的國文表現最差。
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s8_7
+  section: 8
+  number: 7
+  type: fill
+  page: 6
+  stem: 可知$r_{甲}$＞0，$r_{乙}$＝0，$r_{丙}$＞0，$r_{丁}$＜0，$r_{戊}$＜0， 因為甲的散布圖較丙的散布圖更集中於一斜直線， 所以$r_{丙}$＜$r_{甲}$，同理$r_{丁}$＜$r_{戊}$， 故$r_{甲}$＞$r_{丙}$＞$r_{乙}$＞$r_{戊}$＞$r_{丁}$。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T01
+      name: 散布圖判讀與相關係數估計
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_g10s2e1_s8_8
+  section: 8
+  number: 8
+  type: fill
+  page: 6
+  stem: 可知δ$_{y}^{2}$＝$\frac{1}{6}$( $y_{1}^{2}$＋$y_{2}^{2}$＋…＋$y_{6}^{2}$ )－μ$_{y}^{2}$ ⇒ $y_{1}^{2}$＋$y_{2}^{2}$＋…＋$y_{6}^{2}$＝6 ( μ$_{y}^{2}$＋δ$_{y}^{2}$ )＝6 ( $70^{2}$＋($\sqrt{10}$)$^{2}$ )＝29460 ⇒ δx＝$\sqrt{\frac{1}{6}(x_{1}^{2}+x_{2}^{2}+\cdots +x_{6}^{2})-\mu x^{2}}$＝$\sqrt{\frac{1}{6}\times 276-6^{2}}$＝$\sqrt{46-36}$＝$\sqrt{10}$， 故x與y的相關係數r＝$\frac{S_{xy}}{n\delta _{x}\delta _{y}}$＝$\frac{2480-6\times 6\times 70}{6\times \sqrt{10}\times \sqrt{10}}$＝$\frac{-2}{3}$。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T06
+      name: 統計量與平方和求相關迴歸
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s8_9
+  section: 8
+  number: 9
+  type: fill
+  page: 6
+  stem: 設自然組的成績為x分，社會組的成積為y分， 可知μ$_{x}$＝76，μ$_{y}$＝52，δ$_{x}$＝5，δ$_{y}$＝7， 所以μ＝$\frac{400\times 67+200\times 52}{400+200}$＝62，δ$_{x}^{2}$＝$\frac{1}{400}$( $x_{1}^{2}$＋$x_{2}^{2}$＋…＋$x_{400}^{2}$ )－μ$_{x}^{2}$ ⇒ $x_{1}^{2}$＋$x_{2}^{2}$＋…＋$x_{400}^{2}$＝400 ( μ$_{x}^{2}$＋δ$_{x}^{2}$ )＝400 ( $67^{2}$＋$5^{2}$ )＝1805600， 同理$y_{1}^{2}$＋$y_{2}^{2}$＋…＋$y_{200}^{2}$＝200 ( μ$_{y}^{2}$＋δ$_{y}^{2}$ )＝200 ( $52^{2}$＋$7^{2}$ )＝550600， 因此可得δ$^{2}$＝$\frac{1}{600}$( 1805600＋550600 )－$62^{2}$＝3927－3844＝83， 故 ( μ , δ$^{2}$ )＝( 62 , 83 )。
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T04
+      name: 分組資料合併與缺漏數據反推
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s9_1
+  section: 9
+  number: 1
+  type: calc
+  page: 6
+  stem: (1) 可知μ$_{x}$＝54，μ$_{y}$＝390。 $S_{xx}$＝(－1)$^{2}$＋(－1)$^{2}$＋(－2)$^{2}$＋$1^{2}$＋$3^{2}$＝16， $S_{yy}$＝(－10)$^{2}$＋(－30)$^{2}$＋$0^{2}$＋(－10)$^{2}$＋$50^{2}$＝3600， $S_{xy}$＝(－1)×(－10)＋(－1)×(－30)＋(－2)×0＋1×(－10)＋3×50＝180， 所以x與y的相關係數r＝$\frac{S_{xy}}{\sqrt{S_{xx}}\times \sqrt{S_{yy}}}$＝$\frac{180}{\sqrt{16}\times \sqrt{3600}}$＝$\frac{180}{4\times 60}$＝$\frac{3}{4}$。 (2) 最適直線的斜率m＝$\frac{S_{xy}}{S_{xx}}$＝$\frac{180}{16}$＝$\frac{45}{4}$ ⇒ y－390＝$\frac{45}{4}$( x－54 )， 故最適直線方程式為y＝$\frac{45}{4}$x－$\frac{435}{2}$。 (3) y＝$\frac{45}{4}$×50－$\frac{435}{2}$＝345，所以預測指考成績為345分。
+  assets:
+  - key: s9_1_f1
+    kind: figure
+    file: doc_109_台南_台南二中_數學_g10s2e1/s9_1_f1.png
+    crop:
+      page: 6
+      rect:
+      - 69.9
+      - 830.85
+      - 394.1
+      - 912.05
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T02
+      name: 相關係數與迴歸直線直接計算
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_g10s2e1_s9_2
+  section: 9
+  number: 2
+  type: calc
+  page: 7
+  stem: (1) $a_{2}$＝$2a_{1}$＋2＝6 ⇒ $2a_{3}$＝$3a_{2}$＋2＝20 ⇒ $a_{3}$＝10 ⇒ $3a_{4}$＝$4a_{3}$＋2＝42 ⇒ $a_{4}$＝14。 (2) 因為$a_{1}$＝2＝4×1－2，$a_{2}$＝6＝4×2－2，$a_{3}$＝10＝4×3－2，$a_{4}$＝14＝4×4－2，所以猜測$a_{n}$＝4n－2，故選(B)。 (3) (i) n＝1時，$a_{1}$＝4×1－2＝2，所以成立。 (ii) 假設n＝k時成立，即$a_{k}$＝4k－2， $^{ }$ 則n＝k＋1時，$a_{k＋1}$＝$\frac{k+1}{k}a_{k}$＋$\frac{2}{k}$＝$\frac{k+1}{k}$×( 4k－2 )＋$\frac{2}{k}$＝$\frac{4k^{2}+2k}{k}$＝4k＋2＝4 ( k＋1 )－2，所以成立。 故由數學歸納法得證$a_{n}$＝4n－2。
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T03
+      name: 數學歸納法猜測與倍數證明
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 原卷詳解被誤拆為獨立題目（無題幹）
+  difficulty: 3

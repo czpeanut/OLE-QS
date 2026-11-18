@@ -1,0 +1,786 @@
+document:
+  id: doc_108_高雄_高雄女中_數學_g10s2e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 108
+  semester: 2
+  exam_seq: 2
+  city: 高雄
+  school_short: 高雄女中
+  school: 高雄市立高雄女子高級中學
+  title: 高雄市立高雄女子高級中學 108學年度第2學期第2次定期評量 高一數學科試題
+  exam_name: 108學年度第2學期第2次定期評量
+  source_file: 高一/數學/108/2-2/高雄/高雄女中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 16 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題 5 分，共 15 分）
+    count: 1
+  - ord: 3
+    name: 三、填充題（每題 4 分，共 56 分）
+    count: 14
+  - ord: 4
+    name: 四、計算與證明題（共 13 分）
+    count: 1
+questions:
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 各位小斑馬，現在請伸出你的左手，從大拇指開始，按照右圖的方式依序數數字：1，2，3，4，5，6，7，8，9，10，……。當你數到 109 時，所指的是哪根手指頭？
+  options:
+  - label: A
+    content: 大拇指
+  - label: B
+    content: 食指
+  - label: C
+    content: 中指
+  - label: D
+    content: 無名指
+  - label: E
+    content: 小指
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_108_高雄_高雄女中_數學_g10s2e2/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 436.35
+      - 130.5
+      - 564.3
+      - 242.05
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '大姆指數字依序為 1，9，17，……，是公差為 8 的等差數列
+
+    又$\frac{109-1}{8}$＝13 …… 4，故 109 為大姆指之後的第 4 個手指
+
+    即為小指，故選(E)'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T02
+      name: 遞迴關係推算與累加求通項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 相傳<u>印度</u>舍罕王想重賞發明西洋棋的宰相。宰相希望的獎賞是：在棋盤的第 1 格放 1 粒麥子，第 2 格放 2 粒麥子，接下來的每一格麥子數皆為前一格的兩倍，直到放滿 64 格；並以這棋盤上的所有麥子作為獎賞。已知 $2^{128}$ 是 39 位數，那麼宰相共得到的麥子粒數為幾位數？
+  options:
+  - label: A
+    content: 10 位
+  - label: B
+    content: 20 位
+  - label: C
+    content: 30 位
+  - label: D
+    content: 40 位
+  - label: E
+    content: 50 位
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_108_高雄_高雄女中_數學_g10s2e2/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 444.3
+      - 278.15
+      - 564.3
+      - 398.15
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所有麥子數的和為 1＋2＋……＋$2^{63}$＝$\frac{1\times (2^{64}-1)}{2-1}$＝$2^{64}$－1
+
+    又 $2^{128}$＝a×$10^{38}$，其中 1 ≤ a＜10
+
+    ⇒ $2^{64}$＝$\sqrt{2^{128}}$＝$\sqrt{a}\times 10^{19}$，且 $1\leq \sqrt{a} < \sqrt{10} < 10$
+
+    得 $2^{64}$ 為 19＋1 位數 ⇒ $2^{64}$－1 為 20 位數，故選(B)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T07
+      name: 等比級數求和與不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 某班共有 36 人，某次月考全班數學的平均成績是 60 分，標準差為 S 分。但成績結算後，才發現有兩位學生成績登錄有誤，有一位是 80 分卻登錄為 50 分；另一位是 65 分卻登錄為 95 分。更正之後重新算得標準差為 S' 分，試問 S' 與 S 之間，有下列哪種大小關係？
+  options:
+  - label: A
+    content: S'＝S
+  - label: B
+    content: S'＜S－5
+  - label: C
+    content: S＋5＜S'
+  - label: D
+    content: S－5 ≤ S'＜S
+  - label: E
+    content: S＜S' ≤ S＋5
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 M 為原分數平方和，M'' 為更正後分數平方和
+
+    因平均皆為 60 分，得$\begin{cases}M=36\times (60^{2}+S^{2}) \ldots \ldots \ldots \ldots \ldots ① \\ M''=36\times (60^{2}+S''^{2})\ldots \ldots \ldots \ldots \ldots ②\end{cases}$
+
+    又 M''＝M－$50^{2}$＋$80^{2}$－$95^{2}$＋$65^{2}$＝M＋130×30－160×30＝M－900 ⇒ M－M''＝900
+
+    ①－②得 M－M''＝36（S $^{2}$－S'' $^{2}$）
+
+    ⇒ 900＝36（S $^{2}$－S'' $^{2}$）
+
+    ⇒ 25＝S $^{2}$－S'' $^{2}$
+
+    ⇒ S'' $^{2}$＝S $^{2}$－25
+
+    ⇒ $S''=\sqrt{S^{2}-25} < S$且$S''=\sqrt{S^{2}-25} =\sqrt{(S+5) (S-5)}$ ≥ $\sqrt{(S-5)^{2}} =S-5$
+
+    ⇒ S－5 ≤ S''＜S
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T02
+      name: 變異數標準差計算與增減變動
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: '有一次測驗甲、乙、丙、丁、戊 5 個人的數學、物理、化學的成績如右表。已知數學與物理的相關係數為 0.7，那麼數學與化學的相關係數為多少？
+
+    | 學生 成績 | 甲 | 乙 | 丙 | 丁 | 戊 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 數學 | 80 | 90 | 85 | 70 | 75 |
+
+    | 物理 | 80 | 75 | 70 | 60 | 65 |
+
+    | 化學 | 70 | 66 | 62 | 54 | 58 |'
+  options:
+  - label: A
+    content: '0.5'
+  - label: B
+    content: '0.6'
+  - label: C
+    content: '0.7'
+  - label: D
+    content: '0.8'
+  - label: E
+    content: '0.9'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令數學為 x，物理為 y，化學為 z
+
+    $z_{i}=\frac{4}{5}y_{i}+6$，其中 i＝1，2，……，5 依序表示甲～戊
+
+    則物理與化學成績之間有線性關係
+
+    ⇒ $r_{xz}$＝$r_{xy}$＝0.7，故選(C)'
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T03
+      name: 線性變換對相關與迴歸影響
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: '老師欲瞭解學生使用手機的時數與定期考排名之間的關係，所以抽查 5 位學生每天使用手機的時數 x（單位：小時）與班上定期考排名 y（單位：名次）的情形如上表所示。已知 y 的算術平均數為 10，且兩組數據的相關係數為 0.8，試選出正確的選項。
+
+    | x | 1.2 | 1.4 | 1.6 | 1.8 | 2 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | y | 9 | 8 | a | b | 11 |'
+  options:
+  - label: A
+    content: a＞b
+  - label: B
+    content: σ$_{x}$＜σ$_{y}$
+  - label: C
+    content: 若每天使用手機的時數單位改為分鐘，則兩組數據的相關係數仍為 0.8
+  - label: D
+    content: 由相關係數為 0.8＞0 可知：若每天使用手機的時數增加，則班上定期考排名會增加（退步）
+  - label: E
+    content: 由 y 對 x 的最適直線可推測：若每天使用手機的時數減少 1 小時，則班上定期考排名會進步 4 名
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'μ$_{x}$＝$\frac{1.2+1.4+1.6+1.8+2}{5}$＝1.6，μ$_{y}$＝$\frac{9+8+a+b+11}{5}$＝10 ⇒ 28＋a＋b＝50 ⇒ a＋b＝22
+
+    （$x_{1}$－μ$_{x}$）$^{2}$＋（$x_{2}$－μ$_{x}$）$^{2}$＋……＋（$x_{5}$－μ$_{x}$）$^{2}$
+
+    ＝（1.2－1.6）$^{2}$＋（1.4－1.6）$^{2}$＋（1.6－1.6）$^{2}$＋（1.8－1.6）$^{2}$＋（2－1.6）$^{2}$＝0.4
+
+    （$y_{1}^{2}$＋$y_{2}^{2}$＋……＋$y_{5}^{2}$）－5×μ$_{y}^{2}$
+
+    ＝$9^{2}$＋$8^{2}$＋$a^{2}$＋$b^{2}$＋$11^{2}$－5×$10^{2}$＝$a^{2}$＋$b^{2}$－234
+
+    （$x_{1}y_{1}$＋$x_{2}y_{2}$＋……＋$x_{5}y_{5}$）－5×μ$_{x}$×μ$_{y}$
+
+    ＝10.8＋11.2＋1.6a＋1.8b＋22－5×1.6×10＝1.6a＋1.8b－36
+
+    ∵$\frac{1.6a+1.8b-36}{\sqrt{0.4}\sqrt{a^{2}+b^{2}-234}}=0.8$ ……………①
+
+    又 a＝11，b＝11 代入①不合（r ≈ 0.78）
+
+    a＝12，b＝10 代入①不合（r＝0.6）
+
+    a＝10，b＝12 代入①合
+
+    (A) ╳：a＝10＜b＝12
+
+    (B) ○：$\sigma _{x}=\sqrt{\frac{0.4}{5}} =\frac{\sqrt{2}}{5}$，$\sigma _{y}=\sqrt{\frac{10}{5}} =\sqrt{2}$
+
+    ⇒ σ$_{x}$＜σ$_{y}$
+
+    (C) ○：x''＝60x ⇒ r''＝r＝0.8
+
+    (D) ╳：由題表且 a＝10，b＝12 得知名次未必增加
+
+    (E) ○：m＝$r\times \frac{\sigma _{y}}{\sigma _{x}}$＝$0.8\times \frac{\sqrt{2}}{\frac{\sqrt{2}}{5}}$＝4
+
+    故可推測 x 減 1，y 會減 4，即進步 4 名
+
+    故選(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T07
+      name: 相關係數與迴歸反推未知數據
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 若一直角三角形之三邊長成等差數列，且最短邊之長為 9，則此直角三角形的面積為＿＿＿＿。
+  answer:
+  - '54'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令公差為 d，則（9＋2d）$^{2}$＝$9^{2}$＋（9＋d）$^{2}$ ⇒ 81＋36d＋4d $^{2}$＝81＋81＋18d＋d $^{2}$ ⇒ 3d $^{2}$＋18d－81＝0 ⇒ d $^{2}$＋6d－27＝0 ⇒ （d－3）（d＋9）＝0 ⇒ d＝3 或－9（不合）
+
+    故面積為$\frac{1}{2}\times 9\times (9+3)=54$'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 若一長方體之長、寬、高成等比數列，且體積為 8、表面積為 32，則此長方體的邊長總和為 ＿＿＿＿。
+  answer:
+  - '32'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令長、寬、高分別為$\frac{a}{r}$、a、ar，則
+
+    $\frac{a}{r}\times a\times ar =8$ ⇒ $a^{3}$＝8 ⇒ a＝2
+
+    又$\frac{2}{r}\times 2+\frac{2}{r}\times 2r+2\times 2r =\frac{32}{2}$ ⇒ $\frac{4}{r}+4+4r =16$ ⇒ $r+\frac{1}{r}=3$
+
+    故所求為$\left( \frac{2}{r}+2+2r \right) \times 4$＝$\left[ 2+2 \left( r+\frac{1}{r} \right) \right] \times 4$＝$(2+2\times 3)\times 4$＝32'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 設三正數成等差數列，其和為 30，若此三數依次加上 1、6、47 後，則成等比數列，試求原來的三個數中最大的數為＿＿＿＿。
+  answer:
+  - '17'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令三正數為 a－d，a，a＋d，則
+
+    a－d＋a＋a＋d＝30
+
+    ⇒ 3a＝30 ⇒ a＝10
+
+    故 10－d＋1，10＋6，10＋d＋47 成等比數列
+
+    ⇒ $16^{2}$＝（11－d）（57＋d） ⇒ d $^{2}$＋46d－371＝0
+
+    ⇒ （d－7）（d＋53）＝0 ⇒ d＝7 或－53
+
+    但 d＝－53 時，a＋d＝－43＜0，不合
+
+    故 d＝7，原來的三個數中最大的數為 10＋7＝17'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 數列〈 $a_{n}$ 〉的一般項 $a_{n}$＝$n^{2}$＋n＋41，當 n 最小為＿＿＿＿時，$a_{n}$ 不是質數。
+  answer:
+  - '40'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{n}$＝n（n＋1）＋41
+
+    當 n＝41 或 n＋1＝41，即 n＝40 或 41 時
+
+    $a_{40}$＝40×41＋41＝$41^{2}$，非質數
+
+    $a_{41}$＝41×42＋41＝41×43，非質數
+
+    故 n 最小為 40'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T07
+      name: 數列整數條件、共同項與枚舉
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: <u>中國</u>古代《孫子算經》書中有一題：「今有出門望見九堤、堤有九木、木有九枝、枝有九巢、巢有九禽、禽有九雛、雛有九毛、毛有九色，問各有幾何？」假設題目中的雛（幼鳥）共有 $a^{n}$ 隻，若 a 為正整數且 0＜n＜10，則數對（a，n）＝＿＿＿＿。
+  answer:
+  - （9，6）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 依題意，共有雛 $9^{6}$ 隻，故數對（a，n）＝（9，6）
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: <u>中國</u>古代《九章算術》書中有一題：「今有女子善織，日自倍，五日織五尺，問日織幾何？」題意是說：「有位女子善於織布，每日織布的數量都比前日多一倍，若五日共織了五尺的布，則每天織布的數量各多少？」試求這位女子第一日應織的長度為＿＿＿＿尺。
+  answer:
+  - $\frac{5}{31}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令第一日長度為 $a_{1}$，則
+
+    $a_{1}$＋$2a_{1}$＋$4a_{1}$＋$8a_{1}$＋$16a_{1}$＝5
+
+    ⇒ $31a_{1}$＝5 ⇒ $a_{1}$＝$\frac{5}{31}$（尺）'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T07
+      name: 等比級數求和與不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 數列〈 $a_{n}$ 〉滿足 $a_{1}$＝3 且$a_{n+1}=\frac{1}{2}a_{n}+3$，若 $| a_{n}-6 | < \frac{1}{1000}$，則 n 最小為＿＿＿＿。
+  answer:
+  - '13'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{n+1}-6=\frac{1}{2}a_{n}+3-6$ ⇒ $a_{n+1}-6=\frac{1}{2} (a_{n}-6)$
+
+    由上式可發現，$a_{1}$－6，$a_{2}$－6，……，$a_{n}$－6，……成等比數列
+
+    且公比為$\frac{1}{2}$，又 $a_{1}$－6＝－3
+
+    ∴$a_{n}-6=(-3)\times \left( \frac{1}{2} \right) ^{n-1}$ ⇒ $| a_{n}-6 |=3\times \left( \frac{1}{2} \right) ^{n-1} < \frac{1}{1000}$
+
+    ⇒ $\left( \frac{1}{2} \right) ^{n-1} < \frac{1}{3000}$ ⇒ $2^{n-1} > 3000$ ⇒ n－1 ≥ 12 ⇒ n ≥ 13
+
+    故 n 最小為 13
+
+    $8.1^{2}$＋$3^{2}$＋$5^{2}$＋……＋$29^{2}$＝（$1^{2}$＋$2^{2}$＋$3^{2}$＋……＋$29^{2}$）－（$2^{2}$＋$4^{2}$＋……＋$28^{2}$）
+
+    ＝（$1^{2}$＋$2^{2}$＋……＋$29^{2}$）－4（$1^{2}$＋$2^{2}$＋……＋$14^{2}$）
+
+    ＝$\frac{29\times 30\times 59}{6}-4\times \frac{14\times 15\times 29}{6}$＝8555－4060＝4495
+
+    9.所求為 1000000×〔（1＋3 ％）$^{3}$－（1＋3×3 ％）〕
+
+    ＝1000000×（1.092727－1.09）＝2727（元）
+
+    10.$\left( 1-\frac{r}{100} \right) \left( 1-\frac{90}{100} \right) \left( 1-\frac{80}{100} \right) = \left( 1-\frac{80}{100} \right) ^{3}$
+
+    ⇒ $\left( 1-\frac{r}{100} \right) \times \frac{1}{10}\times \frac{2}{10}=\left( \frac{2}{10} \right) ^{3}$ ⇒ $1-\frac{r}{100}=\frac{4}{10}$ ⇒ r＝60
+
+    11.總共有 1＋2＋……＋100＝$\frac{100\times 101}{2}$＝5050 個數值
+
+    ⇒ 5050×0.75＝3787.5，故 $Q_{3}$ 為第 3788 個數值
+
+    設 $Q_{3}$＝k ⇒ 1＋2＋……＋（k－1）＜3788 ⇒ k（k－1）＜7576
+
+    又 87×86＝7482，88×87＝7656
+
+    故 k＝87＝$Q_{3}$
+
+    12.設 $x_{1}$，$x_{2}$，……，$x_{35}$ 為原來的分數，$x_{36}$＝72，$x_{36}$''＝0
+
+    ⇒ $x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{36}^{2}$＝36×（$60^{2}$＋$22^{2}$）＝147024
+
+    ⇒ 新平方和為 $x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{35}^{2}$＋$x_{36}$'' $^{2}$＝147024－$72^{2}$＝141840
+
+    又新平均為$\frac{36\times 60-72}{36}=58$
+
+    故新標準差為$\sqrt{\frac{141840}{36}-58^{2}} =\sqrt{576} =24$（分）
+
+    13.相對表現一樣 ⇒ 兩次標準化數據相同
+
+    令第二次定期考數學 x 分
+
+    ⇒ $\frac{66-60}{18}=\frac{x-50}{15}$ ⇒ $\frac{6}{18}=\frac{x-50}{15}$ ⇒ 3x－150＝15 ⇒ x＝55
+
+    故<u>小芬</u>第二次定期考的數學成績為 55 分
+
+    14.μ$_{x}$＝$\frac{520}{8}$＝65，μ$_{y}$＝$\frac{400}{8}$＝50
+
+    ⇒ （$x_{1}$－μ$_{x}$）$^{2}$＋（$x_{2}$－μ$_{x}$）$^{2}$＋……＋（$x_{8}$－μ$_{x}$）$^{2}$
+
+    ＝$x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{8}^{2}$－nμ$_{x}^{2}$＝37200－8×$65^{2}$＝3400
+
+    （$x_{1}$－μ$_{x}$）（$y_{1}$－μ$_{y}$）＋（$x_{2}$－μ$_{x}$）（$y_{2}$－μ$_{y}$）＋……＋（$x_{8}$－μ$_{x}$）（$y_{8}$－μ$_{y}$）
+
+    ＝$x_{1}y_{1}$＋$x_{2}y_{2}$＋……＋$x_{8}y_{8}$－nμ$_{x}$μ$_{y}$＝28800－8×65×50＝2800
+
+    故 y 對 x 的最適直線方程式為$y-50=\frac{2800}{3400} (x-65)$ ⇒ $y-50=\frac{14}{17} (x-65)$
+
+    ⇒ x＝82 代入得$y =\frac{14}{17}\times 17+50=64$，故推測數學成績為 64 分'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T02
+      name: 遞迴關係推算與累加求通項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 求連續正奇數的平方和：$1^{2}$＋$3^{2}$＋$5^{2}$＋……＋$29^{2}$＝＿＿＿＿。
+  answer:
+  - '4495'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T02
+      name: Sigma高次方與分項對消
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: <u>阿花</u>準備向銀行貸款 1 百萬元來開一間小吃店，其年利率為 3 ％，約定三年期滿一次還清貸款的本利和。銀行貸款一般以複利（每年複利一次）計息還款，但受到疫情影響，消費者減少外出，造成餐飲業的營運衝擊，<u>阿花</u>正好符合政府推出的優惠貸款資格，改以單利計息還款。試問在此優惠下，<u>阿花</u>在三年期滿還款時可以比一般複利計息少繳＿＿＿＿元。
+  answer:
+  - '2727'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T03
+      name: 複利儲蓄與等比費率求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 因疫情肆虐全球，世界多數國家採取嚴格的封閉措施，導致某旅行社連續三個月的營收成長率分別為－r ％、－90 ％、－80 ％，若這三個月的每月平均成長率為－80 ％，則正數 r＝＿＿＿＿。
+  answer:
+  - '60'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T05
+      name: 幾何平均數與平均成長率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 3
+  stem: 一群數值 1，2，2，3，3，3，……，k，k，……，k（有 k 個 k），……，100，100，……，100（有 100 個 100），則此群數值資料的第 3 四分位數 $Q_{3}$ 為＿＿＿＿。
+  answer:
+  - '87'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T01
+      name: 集中趨勢與百分位數累計計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 3
+  stem: 某班有 36 位學生，第一次定期考數學成績的算術平均數是 60 分，標準差是 22 分，後來因某生被檢舉作弊且經查證屬實，故將此生原來的 72 分改為 0 分且記大過乙次，求後來全班新的標準差為＿＿＿＿分。
+  answer:
+  - '24'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T02
+      name: 變異數標準差計算與增減變動
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_13
+  section: 3
+  number: 13
+  type: fill
+  page: 3
+  stem: 已知<u>小芬</u>第一次定期考數學成績為 66 分，她們班的算術平均數是 60 分，標準差是 18 分；第二次定期考的數學成績，她們班的算術平均數是 50 分，標準差是 15 分。老師說<u>小芬</u>第一次定期考和第二次定期考的數學成績在班上的相對表現一樣，則<u>小芬</u>第二次定期考的數學成績為＿＿＿＿分。
+  answer:
+  - '55'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s3_14
+  section: 3
+  number: 14
+  type: fill
+  page: 3
+  stem: 設某班 8 位同學平均每天研讀數學的時間 x（單位：分鐘）與數學成績 y（單位：分）所構 成的二維數據（$x_{i}$，$y_{i}$），i＝1，2，……，8，整理得下面的數據：$x_{1}$＋$x_{2}$＋……＋$x_{8}$＝520， $y_{1}$＋$y_{2}$＋……＋$y_{8}$＝400，$x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{8}^{2}$＝37200，$y_{1}^{2}$＋$y_{2}^{2}$＋……＋$y_{8}^{2}$＝22400， $x_{1}y_{1}$＋$x_{2}y_{2}$＋……＋$x_{8}y_{8}$＝28800。若<u>阿婷</u>也在該班，平均每天研讀數學的時間為 82 分鐘， 試以所得之 y 對 x 的最適直線推測她的數學成績為＿＿＿＿分。
+  answer:
+  - '64'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T06
+      name: 統計量與平方和求相關迴歸
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '設數列〈 $a_{n}$ 〉滿足遞迴式$\begin{cases}a_{1}=9 \\ (n-1)a_{n}=(n+1)a_{n-1}-2 , n\geq 2\end{cases}$，試回答下列問題。
+
+    (1) 試求 $a_{2}$、$a_{3}$、$a_{4}$ 的數值，並求一般項 $a_{n}$。（4 分）
+
+    (2) 證明第(1)題的推測。（9 分）'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T03
+      name: 數學歸納法猜測與倍數證明
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

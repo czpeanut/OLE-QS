@@ -1,0 +1,584 @@
+document:
+  id: doc_110_桃園_武陵_數學_數A_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 2
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 110學年度第2學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 110學年度第2學期第2次定期評量
+  source_file: 高二/數學/110/2-2/桃園/武陵_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題全對得 10 分，錯一個選項得 6 分，錯兩個選項得 2 分）
+    count: 3
+  - ord: 2
+    name: 二、填充題（共 60 分）
+    count: 8
+  - ord: 3
+    name: 三、混合題（共 10 分）
+    count: 1
+questions:
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 空間坐標系中有一平面 E 過 O（0，0，0）、A（－2，1，2）、B（2，2，1）三點，試選出正確的選項。
+  options:
+  - label: A
+    content: 平面 E 與平面 x－2y＋2z＝1 平行
+  - label: B
+    content: 平面 E 與平面 2x＋y－2z＝10 的銳夾角小於 60°
+  - label: C
+    content: 點 P（3，1，1）到平面 E 的距離為 1
+  - label: D
+    content: 直線 L：$\frac{x}{1}=\frac{y-1}{-2}=\frac{z-2}{2}$與平面 E 平行
+  - label: E
+    content: 若點 Q（3，－2，1）至平面 E 的投影點為（a，b，c），則 $a^{2}$＋$b^{2}$＋$c^{2}$＝5
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\vec{OA}$＝（－2，1，2），$\vec{OB}$＝（2，2，1）
+
+    $\vec{n_{E}}$//$\vec{OA}$×$\vec{OB}$＝（－3，6，－6）//（1，－2，2）
+
+    故 E：x－2y＋2z＝0
+
+    (A) ○：明顯為真
+
+    (B) ╳：令 F：2x＋y－2z＝10，$\vec{n_{F}}=(2 , 1 , -2)$
+
+    令兩法向量夾角為 θ
+
+    則 cosθ＝$\pm \frac{\vec{n_{E}} \cdot \vec{n_{F}}}{| \vec{n_{E}} | | \vec{n_{F}} |}=\pm \frac{2-2-4}{3 \cdot 3}=\pm \frac{-4}{9}$
+
+    銳夾角之 cos 值為$\frac{4}{9}$，小於 cos60°＝$\frac{1}{2}$
+
+    ⇒ 銳夾角＞60°
+
+    (C) ○：d（P，E）＝$\frac{| 3-2\times 1+2\times 1 |}{\sqrt{1^{2}+(-2)^{2}+2^{2}}}=\frac{3}{3}=1$
+
+    (D) ╳：直線方向向量$\vec{L}=(1 , -2 , 2)$
+
+    ∵$\vec{n_{E}} \cdot \vec{L}=(1 , -2 , 2) \cdot (1 , -2 , 2)=9\neq 0$
+
+    ∴直線 L 與平面 E 不平行
+
+    (E) ○：令 Q 到平面 E 上的投影點 R＝（3，－2，1）＋t（1，－2，2）＝（3＋t，－2－2t，1＋2t）
+
+    ∵R 在 E 上
+
+    ∴（3＋t）－2（－2－2t）＋2（1＋2t）＝0 ⇒ t＝－1
+
+    ⇒ R（2，0，－1）
+
+    故 $a^{2}$＋$b^{2}$＋$c^{2}$＝$2^{2}$＋$0^{2}$＋（－1）$^{2}$＝5
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 關於方程組$\begin{cases}x-y-z=3 \\ x+y+3z=1 \\ 5x+y+az=b\end{cases}$的解，下列哪些選項是正確的？
+  options:
+  - label: A
+    content: 若方程組有解，則 a≠7
+  - label: B
+    content: 若 a＝6，則方程組恰一組解
+  - label: C
+    content: 若方程組無解，則 b≠9
+  - label: D
+    content: 若 b≠9，則方程組無解
+  - label: E
+    content: 若方程組有無限多組解，則行列式$\left| \begin{matrix}1 & -1 & -1 \\ 1 & 1 & 3 \\ 5 & 1 & a\end{matrix} \right| =0$
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\begin{cases}x-y-z=3 \cdots \cdots \cdots \cdots \cdots ① \\ x+y+3z=1 \cdots \cdots \cdots \cdots \cdots ② \\ 5x+y+az=b\cdots \cdots \cdots \cdots \cdots ③\end{cases}$
+
+    $\begin{cases}①+②: 2x+2z=4 \\ ①+③: 6x+(a-1)z=(b+3)\end{cases}\Rightarrow \begin{cases}x+z=2 \\ 6x+(a-1)z=(b+3)\end{cases}$
+
+    若$\frac{1}{6}\neq \frac{1}{a-1}$⇒ a≠7，恰一組解
+
+    若$\frac{1}{6}=\frac{1}{a-1}=\frac{2}{b+3}$⇒ a＝7，b＝9，無限多組解
+
+    若$\frac{1}{6}=\frac{1}{a-1}\neq \frac{2}{b+3}$⇒ a＝7，b≠9，無解
+
+    (A) ╳：不一定，可能（a，b）＝（7，9）
+
+    (B) ○：∵a≠7
+
+    ∴恰一組解
+
+    (C) ○：由以上可知 b≠9
+
+    (D) ╳：不一定，若 a≠7，b≠9 時，則方程組恰一組解
+
+    (E) ○：$\left| \begin{matrix}1 & -1 & -1 \\ 1 & 1 & 3 \\ 5 & 1 & a\end{matrix} \right| =2a-14=0\Rightarrow a=7$
+
+    由以上可知為真
+
+    故選(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T02
+      name: 含參三元聯立方程組解的討論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 空間中有一直線 L：$\begin{cases}x=1+5t \\ y=2 \\ z=3-3t\end{cases}$，t ∈ R，則下列有關直線 L 的敘述，哪些是正確的？
+  options:
+  - label: A
+    content: L 與 zx 平面平行
+  - label: B
+    content: L 與 yz 平面垂直
+  - label: C
+    content: L 與 y 軸平行
+  - label: D
+    content: L 與 z 軸互為歪斜線
+  - label: E
+    content: 直線$\begin{cases}3x+y+5z=20 \\ y=2\end{cases}$與 L 為同一條直線
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：$E_{zx}$：y＝0，$\vec{n_{zx}}$＝（0，1，0）
+
+    $\vec{L}$＝（5，0，－3），L 上有一點 A（1，2，3）
+
+    ∵$\vec{n_{zx}} \cdot \vec{L}=0$且 A 不在 $E_{zx}$ 上
+
+    ∴L 與 zx 平面平行
+
+    (B) ╳：$E_{yz}$：x＝0，$\vec{n_{yz}}=(1 , 0 , 0)$
+
+    ∵$\vec{n_{yz}} \cdot \vec{L}=5$
+
+    ∴L 與 yz 平面交一點
+
+    (C) ╳：$\vec{L_{y}}$＝（0，1，0）$//＼\vec{L}$
+
+    故 L 不與 y 軸平行
+
+    (D) ○：z 軸：$\begin{cases}x=0 \\ y=0 \\ z=s\end{cases}$，s ∈ R
+
+    ∵$\vec{L_{z}}=(0 , 0 , 1)//＼\vec{L}$
+
+    ∴L 與 z 軸為相交或歪斜
+
+    計算$\begin{cases}1+5t=0 \\ 2=0 \\ 3-3t=s\end{cases}$無解，故兩線歪斜
+
+    (E) ○：∵L 在 3x＋y＋5z＝20 上，亦在 y＝2 上
+
+    且 3x＋y＋5z＝20 和 y＝2 交一線
+
+    ∴$\begin{cases}3x+y+5z=20 \\ y=2\end{cases}$與 L 為同一直線
+
+    故選(A)(D)(E)'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T02
+      name: 空間兩直線位置關係與共面
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 若矩陣$A=\left[ \begin{matrix}1 & 2 \\ 2 & 1\end{matrix} \right]$、$B=\left[ \begin{matrix}2 & 0 \\ 1 & -2\end{matrix} \right]$，則 $A^{2}$＋2AB＋$B^{2}$＝＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}17 & -4 \\ 14 & 5\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$A^{2}=\left[ \begin{matrix}1 & 2 \\ 2 & 1\end{matrix} \right] \left[ \begin{matrix}1 & 2 \\ 2 & 1\end{matrix} \right] =\left[ \begin{matrix}5 & 4 \\ 4 & 5\end{matrix} \right]$
+
+    $AB=\left[ \begin{matrix}1 & 2 \\ 2 & 1\end{matrix} \right] \left[ \begin{matrix}2 & 0 \\ 1 & -2\end{matrix} \right] =\left[ \begin{matrix}4 & -4 \\ 5 & -2\end{matrix} \right]$
+
+    $B^{2}=\left[ \begin{matrix}2 & 0 \\ 1 & -2\end{matrix} \right] \left[ \begin{matrix}2 & 0 \\ 1 & -2\end{matrix} \right] =\left[ \begin{matrix}4 & 0 \\ 0 & 4\end{matrix} \right]$
+
+    $A^{2}+2AB+B^{2}=\left[ \begin{matrix}17 & -4 \\ 14 & 5\end{matrix} \right]$'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T06
+      name: 矩陣乘法代數性質與交換律判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: '已知直線$L : \frac{x-1}{2}=\frac{y-2}{-3}=\frac{z-4}{-2}$與點 A（2，1，－2），則 A 至直線 L 的投影點坐標為＿＿＿＿。'
+  answer:
+  - （3，－1，2）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 L 上投影點 B（1＋2t，2－3t，4－2t）
+
+    ∵$\vec{AB} \cdot \vec{L}=0$
+
+    ∴（2t－1，－3t＋1，－2t＋6）．（2，－3，－2）＝0
+
+    ⇒ 4t－2＋9t－3＋4t－12＝0
+
+    ⇒ t＝1
+
+    故 B（3，－1，2）'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T03
+      name: 點到空間直線距離與投影點
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 如右圖，ABCD－EFGH 為正立方體，其中直線$\overset{\leftarrow \rightarrow}{AC}$的方程式為 $\frac{x-3}{3}=\frac{y-8}{-1}=\frac{z-3}{1}$，直線$\overset{\leftarrow \rightarrow}{FH}$的方程式為$\frac{x+3}{-3}=\frac{y+7}{2}=\frac{z-6}{4}$，試問：此正立方體的邊長為＿＿＿＿。
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_110_桃園_武陵_數學_數A_g11s2e2/s2_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 484.55
+      - 124.05
+      - 561.15
+      - 200.65
+  answer:
+  - $3\sqrt{30}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求即為兩線公垂線段長度
+
+    $\vec{L_{AC}}=(3 , -1 , 1) , \vec{L_{FH}}=(-3 , 2 , 4)$
+
+    $\overset{-⃑}{n_{EFGH}}$//$\vec{L_{AC}}\times \vec{L_{FH}}$＝（－6，－15，3）//（2，5，－1）
+
+    故平面 EFGH：2x＋5y－z＝－47
+
+    所求為 d（（3，8，3），平面 EFGH）
+
+    ＝$\frac{| 2\times 3+5\times 8-3+47 |}{\sqrt{2^{2}+5^{2}+(-1)^{2}}}=\frac{90}{\sqrt{30}}=3\sqrt{30}$'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T05
+      name: 直線在立體圖形中的幾何應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 設直線 L：$\begin{cases}3x+y-z+1=0 \\ x+y+z=0\end{cases}$，平面 E：2x－y－3z＋1＝0，若平面 F 包含直線 L 且與平面 E 垂直，則平面 F 的方程式為＿＿＿＿。
+  answer:
+  - 7x＋5y＋3z＋1＝0
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 z＝0，$\begin{cases}3x+y=-1 \\ x+y=0\end{cases}\Rightarrow \begin{cases}x=-\frac{1}{2} \\ y=\frac{1}{2}\end{cases}$
+
+    故 L 過$\left( -\frac{1}{2} , \frac{1}{2} , 0 \right)$
+
+    又$\vec{L}$//（3，1，－1）×（1，1，1）＝（2，－4，2）//（1，－2，1）
+
+    ∵F 包含 L 且 F⊥E
+
+    ∴$\vec{n_{F}}$//$\vec{L}\times \vec{n_{E}}$＝（1，－2，1）×（2，－1，－3）＝（7，5，3）
+
+    且 F 過$\left( -\frac{1}{2} , \frac{1}{2} , 0 \right)$
+
+    故平面 F 的方程式為 7x＋5y＋3z＋1＝0'
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知矩陣 A 滿足$A\times \left[ \begin{matrix}1 \\ 2 \\ 3\end{matrix} \right] =\left[ \begin{matrix}5 \\ 2 \\ 5\end{matrix} \right] , A\times \left[ \begin{matrix}4 \\ 6 \\ 2\end{matrix} \right] =\left[ \begin{matrix}3 \\ 7 \\ 5\end{matrix} \right] , A\times \left[ \begin{matrix}5 \\ 1 \\ 4\end{matrix} \right] =\left[ \begin{matrix}6 \\ 7 \\ 8\end{matrix} \right]$；試求$A\times \left[ \begin{matrix}5 & 10 \\ 8 & 2 \\ 5 & 8\end{matrix} \right]$＝＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}8 & 12 \\ 9 & 14 \\ 10 & 16\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令$a\left[ \begin{matrix}1 \\ 2 \\ 3\end{matrix} \right] +b\left[ \begin{matrix}4 \\ 6 \\ 2\end{matrix} \right] +c\left[ \begin{matrix}5 \\ 1 \\ 4\end{matrix} \right] =\left[ \begin{matrix}5 \\ 8 \\ 5\end{matrix} \right]$
+
+    ⇒$\begin{cases}a+4b+5c=5 \\ 2a+6b+c=8 \\ 3a+2b+4c=5\end{cases}\Rightarrow \begin{cases}2b+9c=2 \\ 10b+11c=10\end{cases}\Rightarrow \begin{cases}b=1 \\ c=0\end{cases}$⇒ a＝1
+
+    故$A\left[ \begin{matrix}5 \\ 8 \\ 5\end{matrix} \right] =A\left[ \begin{matrix}1 \\ 2 \\ 3\end{matrix} \right] +A\left[ \begin{matrix}4 \\ 6 \\ 2\end{matrix} \right] =\left[ \begin{matrix}5 \\ 2 \\ 5\end{matrix} \right] +\left[ \begin{matrix}3 \\ 7 \\ 5\end{matrix} \right] =\left[ \begin{matrix}8 \\ 9 \\ 10\end{matrix} \right]$
+
+    又$A\left[ \begin{matrix}10 \\ 2 \\ 8\end{matrix} \right] =2A\left[ \begin{matrix}5 \\ 1 \\ 4\end{matrix} \right] =2\left[ \begin{matrix}6 \\ 7 \\ 8\end{matrix} \right] =\left[ \begin{matrix}12 \\ 14 \\ 16\end{matrix} \right]$，故$A\left[ \begin{matrix}5 & 10 \\ 8 & 2 \\ 5 & 8\end{matrix} \right] =\left[ \begin{matrix}8 & 12 \\ 9 & 14 \\ 10 & 16\end{matrix} \right]$'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T04
+      name: 矩陣方程與聯立矩陣求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 已知空間中兩直線 $L_{1}$：$\begin{cases}x=1+t \\ y=-2+3t \\ z=-1+2t\end{cases}$，t ∈ R，$L_{2}$：$\frac{x-3}{2}=\frac{y-3}{4}=\frac{z+2}{a}$，若 $L_{1}$ 與 $L_{2}$ 交於一點，則包含 $L_{1}$ 與 $L_{2}$ 的平面方程式為＿＿＿＿。
+  answer:
+  - 13x－5y＋z＝22
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設交點 P（1＋t，－2＋3t，－1＋2t）
+
+    ∵P 在 $L_{2}$ 上
+
+    ∴$\frac{t-2}{2}=\frac{3t-5}{4}=\frac{2t+1}{a}$
+
+    ⇒$\begin{cases}4t-8=6t-10 \\ a(t-2)=4t+2\end{cases}\Rightarrow \begin{cases}t=1 \\ a=-6\end{cases}$
+
+    $\vec{L_{1}}=(1 , 3 , 2)$，$\vec{L_{2}}$＝（2，4，－6）//（1，2，－3）
+
+    故所求平面 E 法向量$\vec{E}=\vec{L_{1}}\times \vec{L_{2}}$＝（－13，5，－1）//（13，－5，1）
+
+    又 E 過（1，－2，－1）
+
+    故 E：13x－5y＋z＝22'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T07
+      name: 兩直線參數聯立求交點與角平分線
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 在空中飛行至 P（9，21，45）的蒼蠅，受到玻璃屋內一顆燈泡吸引，隨即快速朝位在 O（0，0，0）的燈泡直線飛去，突然碰的一聲撞暈在透亮的玻璃屋頂上一點 Q。雖然頭頂還有星星在打轉，但仍對那顆具有吸引力的燈泡念念不忘，不久便打起精神繼續尋找進入屋內的路徑。於是，在此屋頂上，以一點 A（－5，3，17）為圓心，$\overline{AQ}$長為半徑的圓形路徑上爬行。或許是暈眩感尚未消除，由 Q 開始才繞行$\frac{1}{4}$圈至 C 點時就爬不動了。若此片玻璃屋頂所在的平面方程式為 x－3y－2z＝－48，試問 C 的坐標為＿＿＿＿。（有兩解）
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_110_桃園_武陵_數學_數A_g11s2e2/s2_7_f1.png
+    crop:
+      page: 2
+      rect:
+      - 456.3
+      - 366.45
+      - 564.3
+      - 495.75
+  explanation: '$\vec{L_{OP}}$＝（9，21，45）//（3，7，15）
+
+    故直線 OP：$\begin{cases}x=3t \\ y=7t \\ z=15t\end{cases}$，t ∈ R
+
+    令 Q（3t，7t，15t）
+
+    ∵Q 在 x－3y－2z＝－48 上
+
+    ∴3t－21t－30t＝－48 ⇒ t＝1
+
+    故 Q（3，7，15）
+
+    計算$\vec{AQ}=(8 , 4 , -2)$，$| \vec{AQ} | =2\sqrt{21}$
+
+    ∵$\vec{AC}$⊥$\vec{AQ}$且$\vec{AC}$⊥（1，－3，－2）
+
+    ∴$\vec{AC}$//$\vec{AQ}$×（1，－3，－2）＝（－14，14，－28）//（1，－1，2）
+
+    ∵$| \vec{AC} |$＝$| \vec{AQ} | =2\sqrt{21}$
+
+    ∴$\vec{AC}=\pm \frac{2\sqrt{21}}{\sqrt{6}}(1 , -1 , 2)=\pm (\sqrt{14} , -\sqrt{14} , 2\sqrt{14})$
+
+    ⇒$C=(-5 , 3 , 17)\pm (\sqrt{14} , -\sqrt{14} , 2\sqrt{14})$
+
+    ＝$(-5+\sqrt{14} , 3-\sqrt{14} , 17+2\sqrt{14})$或$(-5-\sqrt{14} , 3+\sqrt{14} , 17-2\sqrt{14})$'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T06
+      name: 直線與平面交點及投影求解
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: '已知 a，b，c，$x_{1}$，$y_{1}$，$z_{1}$，$x_{2}$，$y_{2}$，$z_{2}$ 皆為實數，且$\left( \left| \begin{matrix}b & c \\ y_{1} & z_{1}\end{matrix} \right| , \left| \begin{matrix}c & a \\ z_{1} & x_{1}\end{matrix} \right| , \left| \begin{matrix}a & b \\ x_{1} & y_{1}\end{matrix} \right| \right) =(2 , 3 , 1)$，
+
+    $\left( \left| \begin{matrix}b & c \\ y_{2} & z_{2}\end{matrix} \right| , \left| \begin{matrix}c & a \\ z_{2} & x_{2}\end{matrix} \right| , \left| \begin{matrix}a & b \\ x_{2} & y_{2}\end{matrix} \right| \right) =(5 , 6 , 4)$。若空間中，平面 E 方程式為 ax＋by＋cz＝1，且原點 O 到平面 E 的距離為$\frac{\sqrt{6}}{12}$，則 abc 的值為＿＿＿＿。'
+  answer:
+  - ± 16
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵（a，b，c）×（$x_{1}$，$y_{1}$，$z_{1}$）＝（2，3，1）
+
+    （a，b，c）×（$x_{2}$，$y_{2}$，$z_{2}$）＝（5，6，4）
+
+    ∴（a，b，c）//（2，3，1）×（5，6，4）＝（6，－3，－3）
+
+    令（a，b，c）＝（2t，－t，－t）
+
+    又$\frac{1}{\sqrt{a^{2}+b^{2}+c^{2}}}=\frac{\sqrt{6}}{12}$
+
+    $\Rightarrow 12=\sqrt{6} \cdot \sqrt{a^{2}+b^{2}+c^{2}}\Rightarrow a^{2}+b^{2}+c^{2}=24$
+
+    ∴$4t^{2}$＋$t^{2}$＋$t^{2}$＝24 ⇒ $6t^{2}$＝24 ⇒ $t^{2}$＝4 ⇒ t＝± 2
+
+    故 abc＝$2t^{3}$＝± 16'
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T03
+      name: 點到平面距離與對稱極值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數A_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: multiple
+  page: 2
+  stem: '設 A、B、C、X 皆為二階方陣，且$C=\left[ \begin{matrix}0 & 1 \\ 2 & 0\end{matrix} \right]$，試回答下列問題：
+
+    (1)若 XC＝CX，則 X 可能為下列哪些矩陣？（多選，全對得 4 分，錯一個選項得 2 分）
+
+    (2)若 AC＝CA 且 BC＝CB，試證：AB＝BA。（6 分） 解：'
+  options:
+  - label: A
+    content: $\left[ \begin{matrix}1 & 4 \\ 2 & 1\end{matrix} \right]$
+  - label: B
+    content: $\left[ \begin{matrix}1 & 2 \\ 4 & 1\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}-2 & 3 \\ 6 & -2\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+  - label: E
+    content: $\left[ \begin{matrix}a & b \\ 2b & a\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T06
+      name: 矩陣乘法代數性質與交換律判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

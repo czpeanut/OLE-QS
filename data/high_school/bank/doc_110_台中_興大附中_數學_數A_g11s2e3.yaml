@@ -1,0 +1,597 @@
+document:
+  id: doc_110_台中_興大附中_數學_數A_g11s2e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 3
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 110學年度第2學期第3次定期評量 高二數學（數A）科試題
+  exam_name: 110學年度第2學期第3次定期評量
+  source_file: 高二/數學/110/2-3/台中/興大附中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 12 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 16 分）
+    count: 1
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 72 分）
+    count: 12
+questions:
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設 A 為 3×3 矩陣，且對任意實數 a，b，c，$A\left[ \begin{matrix}a \\ b \\ c\end{matrix} \right] =\left[ \begin{matrix}c \\ a \\ b\end{matrix} \right]$均成立，試問$A^{2}\left[ \begin{matrix}1 \\ 0 \\ -1\end{matrix} \right]$為何？
+  options:
+  - label: A
+    content: $\left[ \begin{matrix}0 \\ -1 \\ 1\end{matrix} \right]$
+  - label: B
+    content: $\left[ \begin{matrix}-1 \\ 1 \\ 0\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}1 \\ 0 \\ -1\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}0 \\ 1 \\ -1\end{matrix} \right]$
+  - label: E
+    content: $\left[ \begin{matrix}-1 \\ 0 \\ 1\end{matrix} \right]$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$A\left[ \begin{matrix}a \\ b \\ c\end{matrix} \right] =\left[ \begin{matrix}c \\ a \\ b\end{matrix} \right]$⇒$A=\left[ \begin{matrix}0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{matrix} \right]$
+
+    ∴$A^{2}\left[ \begin{matrix}1 \\ 0 \\ -1\end{matrix} \right] =\left[ \begin{matrix}0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{matrix} \right] ^{2}\left[ \begin{matrix}1 \\ 0 \\ -1\end{matrix} \right]$
+
+    ＝$\left[ \begin{matrix}0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{matrix} \right] \left[ \begin{matrix}0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{matrix} \right] \left[ \begin{matrix}1 \\ 0 \\ -1\end{matrix} \right]$ ＝$\left[ \begin{matrix}0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{matrix} \right] \left[ \begin{matrix}-1 \\ 1 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}0 \\ -1 \\ 1\end{matrix} \right]$
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T02
+      name: 矩陣乘法與方陣冪次規律
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 某國情報員會用矩陣來交換密碼，首先用 2×1 階矩陣進行編碼：a 以$\left[ \begin{matrix}0 \\ 1\end{matrix} \right]$表示，b 以$\left[ \begin{matrix}0 \\ 2\end{matrix} \right]$表示，c 以$\left[ \begin{matrix}0 \\ 3\end{matrix} \right]$表示，……，z 以$\left[ \begin{matrix}2 \\ 6\end{matrix} \right]$表示，例如：單字“ cat ”就會以$\left[ \begin{matrix}0 & 0 & 2 \\ 3 & 1 & 0\end{matrix} \right]$表示。今天情報員要約定一個地點見面，為了保密，將地點名稱的前四個字母以矩陣 X 表示，透過計算 AX 的加密動作後，傳出矩陣$\left[ \begin{matrix}9 & 3 & 18 & 15 \\ 6 & 2 & 12 & 10\end{matrix} \right]$，該情報員拿出加密矩陣$A=\left[ \begin{matrix}1 & 3 \\ 1 & 2\end{matrix} \right]$，則下列哪一個選項為情報員約定見面的地點？
+  options:
+  - label: A
+    content: 公園（<u>gard</u>en）
+  - label: B
+    content: 花店（<u>Flow</u>er）
+  - label: C
+    content: 咖啡廳（<u>cafe</u>）
+  - label: D
+    content: 速食店（<u>fast</u>food）
+  - label: E
+    content: 圖書館（<u>libr</u>ary）
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$AX=\left[ \begin{matrix}9 & 3 & 18 & 15 \\ 6 & 2 & 12 & 10\end{matrix} \right]$
+
+    ⇒ X＝$A^{-1}\left[ \begin{matrix}9 & 3 & 18 & 15 \\ 6 & 2 & 12 & 10\end{matrix} \right]$
+
+    ＝$\left[ \begin{matrix}1 & 3 \\ 1 & 2\end{matrix} \right] ^{-1}\left[ \begin{matrix}9 & 3 & 18 & 15 \\ 6 & 2 & 12 & 10\end{matrix} \right]$
+
+    ＝$\frac{1}{-1}\left[ \begin{matrix}2 & -3 \\ -1 & 1\end{matrix} \right] \left[ \begin{matrix}9 & 3 & 18 & 15 \\ 6 & 2 & 12 & 10\end{matrix} \right]$
+
+    ＝$\left[ \begin{matrix}-2 & 3 \\ 1 & -1\end{matrix} \right] \left[ \begin{matrix}9 & 3 & 18 & 15 \\ 6 & 2 & 12 & 10\end{matrix} \right] =\left[ \begin{matrix}0 & 0 & 0 & 0 \\ 3 & 1 & 6 & 5\end{matrix} \right]$，表示 cafe
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T05
+      name: 矩陣密碼編譯與線性建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設二階實係數方陣 A 代表坐標平面的一個鏡射變換且滿足$A^{3}=\left[ \begin{matrix}0 & -1 \\ -1 & 0\end{matrix} \right]$；另設二階實係數方陣 B 代表坐標平面的一個（以原點為中心的）旋轉變換且滿足$B^{4}=\left[ \begin{matrix}0 & -1 \\ 1 & 0\end{matrix} \right]$，試選出正確的選項。
+  options:
+  - label: A
+    content: A 恰有三種可能
+  - label: B
+    content: B 恰有四種可能
+  - label: C
+    content: AB＝BA
+  - label: D
+    content: 二階方陣 AB 代表坐標平面的一個鏡射變換
+  - label: E
+    content: ABAB＝$BABA=\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：A 代表坐標平面的一個鏡射變換且滿足$A^{3}=\left[ \begin{matrix}0 & -1 \\ -1 & 0\end{matrix} \right]$
+
+    由$A^{2}=\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+
+    ∴$A^{3}$＝$AA^{2}$＝AI＝$A=\left[ \begin{matrix}0 & -1 \\ -1 & 0\end{matrix} \right]$
+
+    (B) ○：B 代表坐標平面的一個（以原點為中心的）旋轉變換且滿足$B^{4}=\left[ \begin{matrix}0 & -1 \\ 1 & 0\end{matrix} \right]$
+
+    設$B=\left[ \begin{matrix}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{matrix} \right]$
+
+    ⇒$B^{4}=\left[ \begin{matrix}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{matrix} \right] ^{4}=\left[ \begin{matrix}\cos 4\theta & -\sin 4\theta \\ \sin 4\theta & \cos 4\theta\end{matrix} \right] =\left[ \begin{matrix}0 & -1 \\ 1 & 0\end{matrix} \right]$
+
+    ∴4θ＝90°＋360°．k ⇒ θ＝22.5°＋90°．k，k＝0，1，2，3
+
+    (C) ╳：AB＝$\left[ \begin{matrix}0 & -1 \\ -1 & 0\end{matrix} \right] \left[ \begin{matrix}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{matrix} \right] =\left[ \begin{matrix}-\sin \theta & -\cos \theta \\ -\cos \theta & \sin \theta\end{matrix} \right]$
+
+    BA＝$\left[ \begin{matrix}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{matrix} \right] \left[ \begin{matrix}0 & -1 \\ -1 & 0\end{matrix} \right] =\left[ \begin{matrix}\sin \theta & -\cos \theta \\ -\cos \theta & -\sin \theta\end{matrix} \right]$
+
+    ∴AB≠BA
+
+    (D) ○：由(C)，AB＝$\left[ \begin{matrix}-\sin \theta & -\cos \theta \\ -\cos \theta & \sin \theta\end{matrix} \right] =\left[ \begin{matrix}\cos (270^{^{\circ}}-\theta ) & \sin (270^{^{\circ}}-\theta ) \\ \sin (270^{^{\circ}}-\theta ) & -\cos (270^{^{\circ}}-\theta )\end{matrix} \right]$
+
+    ∴代表坐標平面的一個鏡射變換
+
+    (E) ○：ABAB＝（AB）（AB）＝$\left[ \begin{matrix}-\sin \theta & -\cos \theta \\ -\cos \theta & \sin \theta\end{matrix} \right] \left[ \begin{matrix}-\sin \theta & -\cos \theta \\ -\cos \theta & \sin \theta\end{matrix} \right] =\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+
+    BABA＝（BA）（BA）＝$\left[ \begin{matrix}\sin \theta & -\cos \theta \\ -\cos \theta & -\sin \theta\end{matrix} \right] \left[ \begin{matrix}\sin \theta & -\cos \theta \\ -\cos \theta & -\sin \theta\end{matrix} \right] =\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T05
+      name: 線性變換複合與伸縮推移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: <u>小興</u>先寫出方程組$\begin{cases}ax-y+4z=3 \\ x-by+3z=1 \\ 2x+y+cz=3\end{cases}$的增廣矩陣，再化簡到$\left[ \begin{matrix}1 & -3 & 5 & 5 \\ 0 & 1 & 2 & 5 \\ 0 & 0 & 1 & 2\end{matrix} \right]$，計算過程均無錯誤，試求序組（a，b，c）＝＿＿＿＿。
+  answer:
+  - （2，3，3）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left[ \begin{matrix}1 & -3 & 5 & 5 \\ 0 & 1 & 2 & 5 \\ 0 & 0 & 1 & 2\end{matrix} \right]$表示$\begin{cases}x-3y+5z=5 \\ y+2z=5 \\ z=2\end{cases}$的增廣矩陣
+
+    ⇒$\begin{cases}x=-2 \\ y=1 \\ z=2\end{cases}$
+
+    代回$\begin{cases}ax-y+4z=3 \\ x-by+3z=1 \\ 2x+y+cz=3\end{cases}$，得$\begin{cases}a(-2)-(1)+4(2)=3 \\ (-2)-b(1)+3(2)=1 \\ 2(-2)+(1)+c(2)=3\end{cases}$
+
+    ∴$\begin{cases}a=2 \\ b=3 \\ c=3\end{cases}$
+
+    故序組（a，b，c）＝（2，3，3）'
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T07
+      name: 化簡矩陣回代解反推係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: '有甲、乙、丙三種合金，各自金、銀、鉛含量的百分比如下表：
+
+    | 種類 | 金 | 銀 | 鉛 |
+
+    | --- | --- | --- | --- |
+
+    | 甲 | 50 ％ | 20 ％ | 10 ％ |
+
+    | 乙 | 20 ％ | 50 ％ | 10 ％ |
+
+    | 丙 | 30 ％ | 10 ％ | 40 ％ |
+
+    現在要用這三種合金冶煉金、銀、鉛含量相同的新合金 216 克，則甲、乙、丙合金分別應各取＿＿＿＿克、＿＿＿＿克、＿＿＿＿克。（假設冶煉過程未發生含量增減等變化）'
+  answer:
+  - 8；88；120
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設甲、乙、丙合金分別應各取 x 克、y 克、z 克，且 x＋y＋z＝216
+
+    又$\left( \frac{50}{100} \right) x+\left( \frac{20}{100} \right) y+\left( \frac{30}{100} \right) z$＝$\left( \frac{20}{100} \right) x+\left( \frac{50}{100} \right) y+\left( \frac{10}{100} \right) z$＝$\left( \frac{10}{100} \right) x+\left( \frac{10}{100} \right) y+\left( \frac{40}{100} \right) z$
+
+    ⇒ 5x＋2y＋3z＝2x＋5y＋z＝x＋y＋4z
+
+    ⇒$\begin{cases}5x+2y+3z=x+y+4z \\ 2x+5y+z=x+y+4z\end{cases}$ ⇒$\begin{cases}4x+y-z=0 \\ x+4y-3z=0\end{cases}$
+
+    解$\begin{cases}x+y+z=216 \\ 4x+y-z=0 \\ x+4y-3z=0\end{cases}$
+
+    ∴x＝8，y＝88，z＝120
+
+    故甲、乙、丙合金分別應各取 8 克、88 克、120 克'
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T03
+      name: 三元一次聯立方程組應用與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 考慮每個元（或稱元素）只能是 0 或 1 的 2×4 階矩陣，且它的第一列與第二列不相同且各列的元素不能全為零，這樣的矩陣共有＿＿＿＿個。
+  answer:
+  - '210'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T01
+      name: 矩陣加法係數積與計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設 a，b，c，d，e，x，y，z 皆為實數，考慮矩陣相乘：$\left[ \begin{matrix}a & b \\ c & d \\ 1 & 2\end{matrix} \right] \left[ \begin{matrix}-3 & 5 & 7 \\ -4 & 4 & e\end{matrix} \right] =\left[ \begin{matrix}3 & x & 7 \\ 0 & y & 7 \\ -11 & z & 23\end{matrix} \right]$，則 y＝＿＿＿＿。
+  answer:
+  - '14'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '①$〔\begin{matrix}1 & 2\end{matrix}〕\left[ \begin{matrix}7 \\ e\end{matrix} \right]$＝23 ⇒ 7＋2e＝23 ⇒ e＝8
+
+    ②$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] \left[ \begin{matrix}-3 & 7 \\ -4 & 8\end{matrix} \right] =\left[ \begin{matrix}3 & 7 \\ 0 & 7\end{matrix} \right]$
+
+    ⇒$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] =\left[ \begin{matrix}3 & 7 \\ 0 & 7\end{matrix} \right] \left[ \begin{matrix}-3 & 7 \\ -4 & 8\end{matrix} \right] ^{-1}$＝$\left[ \begin{matrix}3 & 7 \\ 0 & 7\end{matrix} \right] \cdot \frac{1}{4}\left[ \begin{matrix}8 & -7 \\ 4 & -3\end{matrix} \right]$
+
+    ＝$\frac{1}{4}\left[ \begin{matrix}52 & -42 \\ 28 & -21\end{matrix} \right] =\left[ \begin{matrix}13 & -\frac{21}{2} \\ 7 & -\frac{21}{4}\end{matrix} \right]$
+
+    得$\left[ \begin{matrix}13 & -\frac{21}{2} \\ 7 & -\frac{21}{4} \\ 1 & 2\end{matrix} \right] \left[ \begin{matrix}-3 & 5 & 7 \\ -4 & 4 & 8\end{matrix} \right] =\left[ \begin{matrix}3 & x & 7 \\ 0 & y & 7 \\ -11 & z & 23\end{matrix} \right]$
+
+    ∴y＝$7\times 5-\frac{21}{4}\times 4$＝14'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T03
+      name: 反矩陣存在條件與求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: '設 A 是二階方陣，滿足$A\left[ \begin{matrix}9 \\ 4\end{matrix} \right] =\left[ \begin{matrix}1 \\ 5\end{matrix} \right]$，$A\left[ \begin{matrix}7 \\ 3\end{matrix} \right] =\left[ \begin{matrix}2 \\ 1\end{matrix} \right]$，若$A=\left[ \begin{matrix}1 & 2 \\ 5 & 1\end{matrix} \right] \left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$，則
+
+    a＋$b^{2}$＝＿＿＿＿。'
+  answer:
+  - '46'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由$A\left[ \begin{matrix}9 \\ 4\end{matrix} \right] =\left[ \begin{matrix}1 \\ 5\end{matrix} \right]$，$A\left[ \begin{matrix}7 \\ 3\end{matrix} \right] =\left[ \begin{matrix}2 \\ 1\end{matrix} \right]$
+
+    ⇒$A\left[ \begin{matrix}9 & 7 \\ 4 & 3\end{matrix} \right] =\left[ \begin{matrix}1 & 2 \\ 5 & 1\end{matrix} \right]$⇒$A=\left[ \begin{matrix}1 & 2 \\ 5 & 1\end{matrix} \right] \left[ \begin{matrix}9 & 7 \\ 4 & 3\end{matrix} \right] ^{-1}$
+
+    ∴$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] =\left[ \begin{matrix}9 & 7 \\ 4 & 3\end{matrix} \right] ^{-1}$＝$\frac{1}{-1}\left[ \begin{matrix}3 & -7 \\ -4 & 9\end{matrix} \right]$＝$\left[ \begin{matrix}-3 & 7 \\ 4 & -9\end{matrix} \right]$
+
+    所求 a＋$b^{2}$＝（－3）＋$7^{2}$＝46'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T03
+      name: 反矩陣存在條件與求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 設兩方陣 A，B，滿足$A+B=\left[ \begin{matrix}0 & 5 \\ 1 & 8\end{matrix} \right]$，$A-B=\left[ \begin{matrix}4 & 1 \\ 1 & 0\end{matrix} \right]$，試求$A^{2}-B^{2}=\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$，則 a＋b＋c＋d＝＿＿＿＿。
+  answer:
+  - '26'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'A＝$\frac{1}{2}$（（A＋B）＋（A－B））＝$\left[ \begin{matrix}2 & 3 \\ 1 & 4\end{matrix} \right]$
+
+    B＝$\frac{1}{2}$（（A＋B）－（A－B））＝$\left[ \begin{matrix}-2 & 2 \\ 0 & 4\end{matrix} \right]$
+
+    ∴$A^{2}$－$B^{2}$＝$\left[ \begin{matrix}2 & 3 \\ 1 & 4\end{matrix} \right] ^{2}-\left[ \begin{matrix}-2 & 2 \\ 0 & 4\end{matrix} \right] ^{2}=\left[ \begin{matrix}7 & 18 \\ 6 & 19\end{matrix} \right] -\left[ \begin{matrix}4 & 4 \\ 0 & 16\end{matrix} \right] =\left[ \begin{matrix}3 & 14 \\ 6 & 3\end{matrix} \right]$
+
+    所求 a＋b＋c＋d＝3＋14＋6＋3＝26'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T04
+      name: 矩陣方程與聯立矩陣求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: '已知$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$是一個轉移矩陣，並且其行列式（值）為$-\frac{3}{7}$，則
+
+    a＋d＝＿＿＿＿。'
+  answer:
+  - $\frac{4}{7}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '① $\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$是一個轉移矩陣⇒$\begin{cases}a , b , c , d\geq 0 \\ a+c=1 \\ b+d=1\end{cases}$⇒ bc＝（1－d）（1－a）
+
+    ② 行列式（值）為$-\frac{3}{7}$⇒ ad－bc＝$-\frac{3}{7}$⇒ bc＝ad＋$\frac{3}{7}$
+
+    由①、②，（1－d）（1－a）＝ad＋$\frac{3}{7}$⇒ 1－（a＋d）＋ad＝ad＋$\frac{3}{7}$
+
+    ∴a＋d＝$1-\frac{3}{7}=\frac{4}{7}$'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T01
+      name: 轉移矩陣定義與性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: '如右圖，已知圓內接正六邊形 ABCDEF 中，O（0，0）為圓心，且
+
+    A（4，2），則 C 點坐標＿＿＿＿。'
+  assets:
+  - key: s3_8_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數A_g11s2e3/s3_8_f1.png
+    crop:
+      page: 3
+      rect:
+      - 439.15
+      - 53.65
+      - 564.3
+      - 167.35
+  answer:
+  - $(-2-\sqrt{3} , -1+2\sqrt{3})$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$C=\left[ \begin{matrix}\cos 120^{^{\circ}} & -\sin 120^{^{\circ}} \\ \sin 120^{^{\circ}} & \cos 120^{^{\circ}}\end{matrix} \right] A=\left[ \begin{matrix}-\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & -\frac{1}{2}\end{matrix} \right] \left[ \begin{matrix}4 \\ 2\end{matrix} \right] =\left[ \begin{matrix}-2-\sqrt{3} \\ -1+2\sqrt{3}\end{matrix} \right]$
+
+    故 C 點坐標為$(-2-\sqrt{3} , -1+2\sqrt{3})$'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T03
+      name: 平面旋轉變換矩陣與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: '設直線 L：$\sqrt{3}x+y=0$，則點 P（2，4）對直線 L 之對稱點坐標為
+
+    ＿＿＿＿。'
+  answer:
+  - $(-1-2\sqrt{3} , 2-\sqrt{3})$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'L：y＝$-\sqrt{3}x$⇒ 斜率 tanθ＝$-\sqrt{3}$⇒ 斜角 θ＝－60°
+
+    ∴P''＝$\left[ \begin{matrix}\cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta\end{matrix} \right] P$
+
+    ＝$\left[ \begin{matrix}\cos 2(-60^{^{\circ}}) & \sin 2(-60^{^{\circ}}) \\ \sin 2(-60^{^{\circ}}) & -\cos 2(-60^{^{\circ}})\end{matrix} \right] \left[ \begin{matrix}2 \\ 4\end{matrix} \right]$＝$\left[ \begin{matrix}-\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ -\frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right] \left[ \begin{matrix}2 \\ 4\end{matrix} \right]$＝$\left[ \begin{matrix}-1-2\sqrt{3} \\ 2-\sqrt{3}\end{matrix} \right]$
+
+    故對稱點坐標為$(-1-2\sqrt{3} , 2-\sqrt{3})$'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T04
+      name: 平面鏡射變換矩陣與對稱
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: '「沉默螺旋」是由德國政治學家<u>伊莉莎白．諾爾－諾伊曼</u>（Elisabeth Noelle－Neumann）於 1974 年提出的一個政治學領域的概念，內容是：「如果人們覺得自己的觀點是公眾中的少數，將不願意說出自己的看法；反之，如果覺得自己與多數人的意見一致，則更會大聲的說出來。形成少數的聲量愈來愈小，多數的聲量愈來愈大的趨勢。」
+
+    在做民調時，往往因為個人隱私、涉及非法行為或與一般傳統觀念有所衝突，造成受訪者會拒絕回答或隱瞞事實，造成調查結果有所偏差。為了避免發生上述的問題，在做調查時可採用隨機作答（Randomized Response Technique）的方法來蒐集資料，其做法如下：
+
+    某高中要調查所有同學對於畢業旅行遊玩路線的意願，但不想讓大家知道彼此間做的選擇，所以請同學依照下表回答 A、B 即可，最後依調查結果，利用聯立方程式可求得各路線的支持人數。
+
+    | 路線 生日月份 | 甲 | 乙 |
+
+    | --- | --- | --- |
+
+    | 1～8 月 | A | B |
+
+    | 9～12 月 | B | A |
+
+    比如調查結果顯示回答 A 的人數共有 900 人、回答 B 的人數共有 600 人，可假設選擇甲路線共有 x 人、乙路線共有 y 人，則若按照生日月份的占比（即無論選擇甲路線或乙路線，1～8 月與 9～12 月的人數比皆視為 2：1），列出方程組後，解得 x 之值為＿＿＿＿。'
+  answer:
+  - '1200'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\begin{cases}\frac{2}{3}x+\frac{1}{3}y=900 \\ \frac{1}{3}x+\frac{2}{3}y=600\end{cases}$⇒$\begin{cases}2x+y=2700 \\ x+2y=1800\end{cases}$⇒ x＝1200，y＝300
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T03
+      name: 三元一次聯立方程組應用與極值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 3
+  stem: '設有 A，B 兩支大瓶子，開始時，A 瓶裝有 a 公升的純酒精，B 瓶裝有 b 公升的礦泉水，每一輪操作都是先將 A 瓶的溶液倒出一半到 B 瓶，然後再將 B 瓶的溶液倒出$\frac{1}{3}$回 A 瓶（不考慮酒精與水混合後體積的縮小）。設 n 輪操作後，A 瓶有 $a_{n}$ 公升的溶液，B 瓶有 $b_{n}$ 公升的溶液，已知二階方陣$\left[ \begin{matrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{matrix} \right]$滿足$\left[ \begin{matrix}a_{n} \\ b_{n}\end{matrix} \right] =\left[ \begin{matrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{matrix} \right] ^{n}\left[ \begin{matrix}a \\ b\end{matrix} \right]$。
+
+    當 a＝2，b＝1 時，在第二輪操作後，A 瓶的溶液中約有＿＿＿＿％的酒精。（四捨五入至小數點後第一位）'
+  answer:
+  - '71.4'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left[ \begin{matrix}a_{1} \\ b_{1}\end{matrix} \right] =\left[ \begin{matrix}\frac{1}{2}a+\frac{1}{3}\left( \frac{1}{2}a+b \right) \\ \frac{2}{3}\left( \frac{1}{2}a+b \right)\end{matrix} \right] =\left[ \begin{matrix}\frac{2}{3}a+\frac{1}{3}b \\ \frac{1}{3}a+\frac{2}{3}b\end{matrix} \right] =\left[ \begin{matrix}\frac{2}{3} & \frac{1}{3} \\ \frac{1}{3} & \frac{2}{3}\end{matrix} \right] \left[ \begin{matrix}a \\ b\end{matrix} \right]$
+
+    $\left[ \begin{matrix}a_{2} \\ b_{2}\end{matrix} \right] =\left[ \begin{matrix}\frac{2}{3} & \frac{1}{3} \\ \frac{1}{3} & \frac{2}{3}\end{matrix} \right] \left[ \begin{matrix}a_{1} \\ b_{1}\end{matrix} \right] =\left[ \begin{matrix}\frac{2}{3} & \frac{1}{3} \\ \frac{1}{3} & \frac{2}{3}\end{matrix} \right] \left[ \begin{matrix}\frac{2}{3}a+\frac{1}{3}b \\ \frac{1}{3}a+\frac{2}{3}b\end{matrix} \right] =\left[ \begin{matrix}\frac{5}{9}a+\frac{4}{9}b \\ \frac{4}{9}a+\frac{5}{9}b\end{matrix} \right]$
+
+    第二輪操作後，A 瓶的溶液中酒精百分比為$\frac{\frac{5}{9}a}{\frac{5}{9}a+\frac{4}{9}b}=\frac{\frac{5}{9}(2)}{\frac{5}{9}(2)+\frac{4}{9}(1)}$
+
+    $=\frac{10}{14}$＝0.7142…… ≈ 71.4 ％'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T02
+      name: 馬可夫鏈多步轉移與穩定態
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_110_台中_興大附中_數學_數A_g11s2e3_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 3
+  stem: 設一個袋子中，有 2 個白球和 1 個紅球，而手中持有 1 個白球，今自袋中任取 1 球，然後再將手中原有的球放入袋中，取球機會均等，重複此一試驗。試求第二次試驗後，袋中是 2 個白球 1 個紅球之機率為＿＿＿＿。
+  answer:
+  - $\frac{7}{9}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設狀態 $S_{1}$：袋中 2 白 1 紅，$S_{2}$：袋中 3 白，初始狀態$X_{0}=\left[ \begin{matrix}1 \\ 0\end{matrix} \right]$
+
+    P（$S_{1}$ → $S_{1}$）＝$\frac{2}{3}$×1＝$\frac{2}{3}$，P（$S_{2}$ → $S_{1}$）＝1×1＝1
+
+    P（$S_{1}$ → $S_{2}$）＝$\frac{1}{3}$×1＝$\frac{1}{3}$，P（$S_{2}$ → $S_{2}$）＝0
+
+    第二次試驗後，$X_{2}$＝$\left[ \begin{matrix}\frac{2}{3} & 1 \\ \frac{1}{3} & 0\end{matrix} \right] ^{2}\left[ \begin{matrix}1 \\ 0\end{matrix} \right] =\left[ \begin{matrix}\frac{2}{3} & 1 \\ \frac{1}{3} & 0\end{matrix} \right] \left[ \begin{matrix}\frac{2}{3} & 1 \\ \frac{1}{3} & 0\end{matrix} \right] \left[ \begin{matrix}1 \\ 0\end{matrix} \right] =\left[ \begin{matrix}\frac{2}{3} & 1 \\ \frac{1}{3} & 0\end{matrix} \right] \left[ \begin{matrix}\frac{2}{3} \\ \frac{1}{3}\end{matrix} \right] =\left[ \begin{matrix}\frac{7}{9} \\ \frac{2}{9}\end{matrix} \right]$
+
+    ∴袋中是 2 個白球 1 個紅球（狀態 $S_{1}$）之機率為$\frac{7}{9}$'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T02
+      name: 馬可夫鏈多步轉移與穩定態
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

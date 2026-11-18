@@ -1,0 +1,527 @@
+document:
+  id: doc_109_高雄_高雄中學_數學_數A_g11s1e1
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 109
+  semester: 1
+  exam_seq: 1
+  city: 高雄
+  school_short: 高雄中學
+  school: 高雄市立高雄高級中學
+  title: 高雄市立高雄高級中學 109學年度第1學期第1次定期評量 高二數學（數A）科試題
+  exam_name: 109學年度第1學期第1次定期評量
+  source_file: 高二/數學/109/1-1/高雄/高雄中學_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 5 分，共 10 分）
+    count: 2
+  - ord: 2
+    name: 二、填充題（共 75 分）
+    count: 13
+  - ord: 3
+    name: 三、計算題（共 15 分）
+    count: 2
+questions:
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 試問下列選項中的方程式，哪些恰有兩個相異實根？
+  options:
+  - label: A
+    content: sinx＋cosx＝1，其中 0$\leq$x$\leq$π
+  - label: B
+    content: πsinx＝x，其中－π$\leq$x$\leq$π
+  - label: C
+    content: 5＝tanx，其中 0$\leq$x$\leq$2π
+  - label: D
+    content: $x^{2}$＝sinx，其中－2π$\leq$x$\leq$2π
+  - label: E
+    content: 2 cos2x＝｜cosx｜＋｜sinx｜，其中－π$\leq$x$\leq$π
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T03
+      name: 三角方程式實根與交點數
+    labeled_by: agent
+    label_confidence: high
+    label_note: 選項(E)區間「π≤x≤π」疑缺負號
+  difficulty: 4
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 考慮函數 f（x）＝$\sqrt{3}$cosx＋sinx＋2，請問下列選項何者正確？
+  options:
+  - label: A
+    content: f（x）是奇函數
+  - label: B
+    content: f（x）的週期是 2π
+  - label: C
+    content: 若 x 為任意實數，f（x）有最小值 0
+  - label: D
+    content: 在$\frac{\pi}{6}\leq x\leq \frac{7\pi}{6}$，f（x）是遞增函數
+  - label: E
+    content: x＝$\frac{\pi}{6}$是 f（x）的對稱軸
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（x）＝$\sqrt{3}$cosx＋sinx＋2＝$2\sin \left( x + \frac{\pi}{3} \right) + 2$
+
+    (A)╳：f（－x）≠－f（x）$\Rightarrow$非奇函數
+
+    (B)○：週期為 2π
+
+    (C)○：最小值為 2×（－1）＋2＝0
+
+    (D)╳：x＝$\frac{\pi}{6}$時有最大值，x＝$\frac{7\pi}{6}$時有最小值
+
+    $\Rightarrow$f（x）在$\frac{\pi}{6}\leq x\leq \frac{7\pi}{6}$為遞減
+
+    (E)○：∵$f\left( \frac{\pi}{6} \right)$＝4 為最大值$\Rightarrowx = \frac{\pi}{6}$為 f（x）的對稱軸
+
+    故選(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T04
+      name: 疊合後圖形對稱與單調性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 比較 cos1，cos2，cos3 之大小關係為＿＿＿＿。
+  answer:
+  - cos1＞cos2＞cos3
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵cosx 在[0，π]為遞減函數，又 1＜2＜3
+
+    ∴cos1＞cos2＞cos3'
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T06
+      name: 圖形平移伸縮與對稱性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: '已知函數 f（x）的圖形是由函數 g（x）＝cosx 經過以下步驟變換得到。
+
+    ①將 g（x）圖形上所有點的縱坐標伸長為原來的 5 倍，（橫坐標不變），得到 k（x）。
+
+    ②將 k（x）圖形上所有點的橫坐標伸長為原來的 3 倍，（縱坐標不變），得到 q（x）。
+
+    ③將 q（x）圖形上所有點向右平移$\frac{\pi}{3}$單位長，得到 f（x）。
+
+    試求 f（x）＝＿＿＿＿，f（x）的週期為＿＿＿＿。'
+  answer:
+  - 5 cos$\left( \frac{1}{3}x - \frac{\pi}{9} \right)$；6π
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T02
+      name: 三角函數圖形平移與伸縮
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設 0$\leq$x$\leq$π，則滿足不等式$- 1\leq \sqrt{3}\sin x + \cos x\leq \sqrt{3}$之 x 的範圍為＿＿＿＿。
+  answer:
+  - 0$\leq$x$\leq\frac{\pi}{6}$或$\frac{\pi}{2}\leq$x$\leq$π
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T05
+      name: 限域正餘弦疊合求極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 已知△ABC 中，$\overline{AB} = 4$，$\overline{BC} = 6$且∠A＝2∠C，則$\overline{AC}$＝＿＿＿＿。
+  answer:
+  - '5'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T05
+      name: 幾何圖形和差角與倍角
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: '在數學中，擺線（Cycloid）被定義為，一個圓在一條直線上滾動時，圓邊界上一定點所形成的軌跡。擺線也是最速降線問題和等時降落問題的解，示意圖如下。
+
+    現有一個半徑為 2 公分的圓形硬幣，與地面垂直接觸於 A 點，現沿著地面向右滾動了 20 公分，此時 A 點離地面高 a cosx＋k 公分，試求序組（a，x，k）＝＿＿＿＿。'
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_109_高雄_高雄中學_數學_數A_g11s1e1/s2_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 138.6
+      - 695.3
+      - 479.5
+      - 780.6
+  answer:
+  - （－2，10，2）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T04
+      name: 週期性生活現象三角建模
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 若 sinx－cosx＝$\frac{1}{2}$，則 sin3x＋cos3x＝＿＿＿＿。
+  answer:
+  - $- \frac{5}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T03
+      name: 二倍角與三倍角公式計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: '已知$\frac{\pi}{6}\leq$x$\leq$π，若 f（x）＝sin2x－4（sinx＋cosx）
+
+    (1) 令 t＝sinx＋cosx，求 t 的範圍為＿＿＿＿。
+
+    (2) 求當 x＝m 時，f（x）有最小值 n，試求數對（m，n）＝＿＿＿＿。'
+  answer:
+  - (1)$- 1\leq t\leq \sqrt{2}$；(2)$\left( \frac{\pi}{4} , 1 - 4\sqrt{2} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T02
+      name: 對稱換元法求三角極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: x 為實數，函數 y＝$\frac{3 - \sin x}{2 + \cos x}$有最大值 M，最小值 m，試求數對（M，m）＝＿＿＿＿。
+  answer:
+  - $\left( \frac{6 + 2\sqrt{3}}{3} , \frac{6 - 2\sqrt{3}}{3} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T03
+      name: 正餘弦疊合求極值與解判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 如右圖（此為參考圖），圖中 ABCD 為圓內接四邊形，$\overline{BC} = 3$， $\overline{CD} = 5$，∠BCD＝2∠BDC，試求 sin∠BAD＝＿＿＿＿。
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_109_高雄_高雄中學_數學_數A_g11s1e1/s2_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 462.4
+      - 199.05
+      - 564.3
+      - 292.5
+  answer:
+  - $\frac{2\sqrt{2}}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T05
+      name: 幾何圖形和差角與倍角
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 試求（1＋tan1°）（1＋tan2°）（1＋tan3°）……（1＋tan42°）（1＋tan43°） ×（1＋tan44°）＝＿＿＿＿。
+  answer:
+  - $2^{22}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T02
+      name: 和差角公式化簡與求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 設$\overline{AB} = 4$，在包含$\overline{AB}$之平面上滿足∠APB$\geq\frac{\pi}{3}$之點所形成區域面積為 ＿＿＿＿。
+  answer:
+  - $\frac{64\pi}{9} + \frac{8\sqrt{3}}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T08
+      name: 弓形與多圓交集複合面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: '如右圖（此為參考圖），半圓 O 的半徑為 1，A 為直徑延長線上一點，
+
+    $\overline{OA} = 2$，B 為半圓上任一點，以$\overline{AB}$為一邊做正三角形 ABC，求四邊形 OACB 面積的最大值為＿＿＿＿。'
+  assets:
+  - key: s2_12_f1
+    kind: figure
+    file: doc_109_高雄_高雄中學_數學_數A_g11s1e1/s2_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 461.0
+      - 347.75
+      - 564.3
+      - 421.05
+  answer:
+  - $2 + \frac{5\sqrt{3}}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T07
+      name: 幾何圖形列式與三角疊合極值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: <u>小雄</u>最近去博物館參觀畫展，其中有一幅巨大壁畫高 9 公尺，其下端距離地面 4.7 公尺，<u>小雄</u>眼睛距地面 1.7 公尺，則他應該站在離牆 x 公尺觀賞畫作，才可得最大視角θ。試求此時的 x，tanθ，並用數對（x，tanθ）表示為＿＿＿＿。
+  answer:
+  - $\left( 6 , \frac{3}{4} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T10
+      name: 幾何圖形與和差角公式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '(1) 試利用倍角公式及三倍角公式推導五倍角公式，並以 sin5θ＝a $sin^{5}$θ＋b $sin^{3}$θ＋c sinθ表示。（7 分）
+
+    (2) 利用五倍角公式求出 sin18°＝？（3 分）'
+  answer:
+  - (1) sin5θ＝sin（3θ＋2θ）＝sin3θcos2θ＋cos3θsin2θ
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T03
+      name: 二倍角與三倍角公式計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_109_高雄_高雄中學_數學_數A_g11s1e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: 設α，β，γ為三角形 ABC 的三內角，若 tanγ＝$\frac{\sin \alpha + \sin \beta}{\cos \alpha + \cos \beta}$且 sin（β－α）＝cosγ，求三角形 ABC 三內角的度數。（5 分）
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T02
+      name: 和差角公式化簡與求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

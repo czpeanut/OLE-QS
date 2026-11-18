@@ -1,0 +1,638 @@
+document:
+  id: doc_110_台北_松山_數學_數B_g11s2e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 3
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 110學年度第2學期第3次定期評量 高二數學（數B）科試題
+  exam_name: 110學年度第2學期第3次定期評量
+  source_file: 高二/數學/110/2-3/台北/松山_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 30 分；錯一個選項得 4 分，錯兩個選項得 2 分，錯三個選項以上或未作答得零分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（每格 5 分，共 60 分）
+    count: 9
+  - ord: 3
+    name: 三、混合題（共 10 分）
+    count: 1
+questions:
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設 A、B、C 都是二階方陣，O 是二階零方陣，則下列哪些敘述恆正確？
+  options:
+  - label: A
+    content: AB＝BA
+  - label: B
+    content: （A＋I）$^{2}$＝$A^{2}$＋2A＋I
+  - label: C
+    content: 若 AB＝O，則 A＝O 或 B＝O
+  - label: D
+    content: 若 A＋B＝A＋C，則 B＝C
+  - label: E
+    content: （AB）$^{－1}$＝$A^{－1}B^{－1}$
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：矩陣乘法不具交換性
+
+    (B)○：∵AI＝IA＝A ∴（A＋I）$^{2}$＝（A＋I）（A＋I）＝$A^{2}$＋AI＋IA＋$I^{2}$
+
+    ＝$A^{2}$＋2A＋I
+
+    (C)╳：反例：A＝$\left[ \begin{matrix}1 & 0 \\ 0 & 0\end{matrix} \right]$，B＝$\left[ \begin{matrix}0 & 0 \\ 1 & 0\end{matrix} \right]$⇒ AB＝O
+
+    (D)○：∵A＋（－A）＝O（零矩陣）
+
+    ∴A＋B＝A＋C ⇒（－A）＋A＋B＝（－A）＋A＋C ⇒ B＝C
+
+    (E)╳：∵$ABB^{－1}A^{－1}$＝$AIA^{－1}$＝$AA^{－1}$＝I
+
+    ∴（AB）$^{－1}$＝$B^{－1}A^{－1}$
+
+    故選(B)(D)'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 一種密碼編寫技術是使用二階方陣作為密碼傳遞的加密矩陣，將原始訊息的數字明文經過加密矩陣的乘法偽裝成數字亂碼後傳遞，收到數字亂碼的人再利用解密矩陣的乘法轉譯為數字明文。若以下列 5 個二階方陣作為加密矩陣，哪幾個將導致數字亂碼無法轉譯為數字明文？
+  options:
+  - label: A
+    content: $\left[ \begin{matrix}1 & 2 \\ 3 & 1\end{matrix} \right]$
+  - label: B
+    content: $\left[ \begin{matrix}1 & 2 \\ 4 & 8\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}9 & 0 \\ 3 & 1\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}-8 & 6 \\ 12 & -9\end{matrix} \right]$
+  - label: E
+    content: $\left[ \begin{matrix}96 & 97 \\ 98 & 99\end{matrix} \right]$
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '利用矩陣乘法加密，則需要利用乘法反矩陣解密。
+
+    設加密矩陣 A＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$，若 ad－bc＝0
+
+    ⇒乘法反矩陣不存在，可能造成不同數字亂碼，
+
+    但得到相同結果，導致無法解密
+
+    例：〔4 －1〕$\left[ \begin{matrix}1 & 2 \\ 4 & 8\end{matrix} \right]$＝〔8 －2〕$\left[ \begin{matrix}1 & 2 \\ 4 & 8\end{matrix} \right]$＝〔0 0〕
+
+    又(B)(D)選項乘法反矩陣不存在
+
+    故選(B)(D)'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T04
+      name: 二階反方陣存在判別與求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 坐標平面上，關於二階方陣 A 所造成的變換，下列哪些敘述正確？
+  options:
+  - label: A
+    content: 原點經過 A 變換後還是原點
+  - label: B
+    content: 一直線經過 A 變換後可能是一直線
+  - label: C
+    content: 一直線經過 A 變換後可能是一點
+  - label: D
+    content: 一點經過 A 變換後必會換位置
+  - label: E
+    content: 一非零向量經過 A 變換後必是一非零向量
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：$A\left[ \begin{matrix}0 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}0 \\ 0\end{matrix} \right]$
+
+    (B)○：若 A＝I，則直線 L 經 A 變換後不變
+
+    (C)○：例：A＝$\left[ \begin{matrix}1 & 0 \\ 0 & 0\end{matrix} \right]$，則$A\left[ \begin{matrix}2 \\ 0\end{matrix} \right]$＝$A\left[ \begin{matrix}2 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}2 \\ 0\end{matrix} \right]$
+
+    會將直線 x＝2 變換成一點（2，0）
+
+    (D)╳：若 A＝I，則點變換後均不改變位置
+
+    (E)╳：反例同(C)，其中 P（2，0），Q（2，1）⇒$\vec{PQ}$＝（0，1）
+
+    但變換後為零向量
+
+    故選(A)(B)(C)'
+  tags:
+    unit:
+      code: MA-B4-3-2
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4B 矩陣的應用
+    pattern:
+      key: MA-B4-3-2:T04
+      name: 平面線性變換與旋轉伸縮矩陣
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 已知二階方陣 A＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$滿足$A\left[ \begin{matrix}1 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}5 \\ 2\end{matrix} \right]$，$A\left[ \begin{matrix}1 \\ 2\end{matrix} \right]$＝$\left[ \begin{matrix}7 \\ 4\end{matrix} \right]$。請選出正確的選項。
+  options:
+  - label: A
+    content: ad－bc＝6
+  - label: B
+    content: $A^{2}$＝5A－$6I_{2}$
+  - label: C
+    content: $A\left[ \begin{matrix}1 \\ 3\end{matrix} \right]$＝$\left[ \begin{matrix}9 \\ 6\end{matrix} \right]$
+  - label: D
+    content: $A^{－1}$＝$\left[ \begin{matrix}2 & -2 \\ 0 & 3\end{matrix} \right]$
+  - label: E
+    content: $〔\begin{matrix}1 & 1\end{matrix}〕A$＝$〔\begin{matrix}5 & 7\end{matrix}〕$
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$A\left[ \begin{matrix}1 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}5 \\ 2\end{matrix} \right]$，$A\left[ \begin{matrix}1 \\ 2\end{matrix} \right]$＝$\left[ \begin{matrix}7 \\ 4\end{matrix} \right]$
+
+    ∴$A\left[ \begin{matrix}1 & 1 \\ 1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}5 & 7 \\ 2 & 4\end{matrix} \right]$⇒ A＝$\left[ \begin{matrix}5 & 7 \\ 2 & 4\end{matrix} \right] \left[ \begin{matrix}1 & 1 \\ 1 & 2\end{matrix} \right] ^{-1}$
+
+    ⇒ A＝$\left[ \begin{matrix}5 & 7 \\ 2 & 4\end{matrix} \right] \left[ \begin{matrix}2 & -1 \\ -1 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}3 & 2 \\ 0 & 2\end{matrix} \right]$
+
+    (A)○：3×2－2×0＝6
+
+    (B)○：$A^{2}$＝$\left[ \begin{matrix}3 & 2 \\ 0 & 2\end{matrix} \right] \left[ \begin{matrix}3 & 2 \\ 0 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}9 & 10 \\ 0 & 4\end{matrix} \right]$，且 5A－$6I_{2}$＝$\left[ \begin{matrix}15 & 10 \\ 0 & 10\end{matrix} \right]$－$\left[ \begin{matrix}6 & 0 \\ 0 & 6\end{matrix} \right]$＝$\left[ \begin{matrix}9 & 10 \\ 0 & 4\end{matrix} \right]$
+
+    故 $A^{2}$＝5A－$6I_{2}$
+
+    (C)○：$A\left[ \begin{matrix}1 \\ 3\end{matrix} \right]$＝$\left[ \begin{matrix}3 & 2 \\ 0 & 2\end{matrix} \right] \left[ \begin{matrix}1 \\ 3\end{matrix} \right]$＝$\left[ \begin{matrix}9 \\ 6\end{matrix} \right]$
+
+    (D)╳：$A^{－1}$＝$\frac{1}{6}\left[ \begin{matrix}2 & -2 \\ 0 & 3\end{matrix} \right]$
+
+    (E)╳：〔1 1〕$\left[ \begin{matrix}3 & 2 \\ 0 & 2\end{matrix} \right]$＝〔3 4〕
+
+    故選(A)(B)(C)'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 2
+  stem: 空間中，已知直圓錐面 Γ 與平面 E 的截痕為圓，且以下所有平面皆不通過直圓錐面的頂點，則下列哪些敘述正確？
+  options:
+  - label: A
+    content: 若平面 $E_{1}$//E，則Γ 與平面 $E_{1}$ 的截痕也是圓
+  - label: B
+    content: 若 Γ 與平面 $E_{2}$ 的截痕是圓，則 $E_{2}$ 與Γ 的每條母線都有交點
+  - label: C
+    content: 若平面 $E_{3}$⊥E，則Γ 與平面 $E_{3}$ 的截痕是雙曲線
+  - label: D
+    content: 若平面 $E_{4}$ 與平面 E 所夾銳角為 15°，則Γ 與平面 $E_{4}$ 的截痕是橢圓
+  - label: E
+    content: 若平面 $E_{5}$ 與平面 E 所夾銳角為 75°，則Γ 與平面 $E_{5}$ 的截痕是雙曲線
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：E//$E_{1}$，又 $E_{1}$ 不通過頂點 ∴$E_{1}$ 垂直軸⇒截痕為圓
+
+    (B)○
+
+    (C)○：∵$E_{3}$⊥E，且 $E_{3}$ 不通過頂點 ∴$E_{3}$ 平行軸⇒截痕為雙曲線
+
+    (D)╳：若軸與母線夾 75°角，則為拋物線（也可能為雙曲線）
+
+    (E)╳：若軸與母線夾 15°角，則為拋物線（也可能為橢圓）
+
+    故選(A)(B)(C)'
+  tags:
+    unit:
+      code: MA-B4-4-1
+      book: 數學4B
+      chapter: 圓錐曲線
+      title: 圓錐曲線
+      std: true
+    textbook: 數學4B 圓錐曲線
+    pattern:
+      key: MA-B4-4-1:T01
+      name: 平面截直圓錐面截痕判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 令 A＝$\left[ \begin{matrix}k & 1 \\ 2 & k - 1\end{matrix} \right]$，若乘法反方陣 $A^{－1}$ 不存在，則實數 k＝＿＿＿＿。
+  answer:
+  - －1 或 2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$A^{－1}$ 不存在
+
+    ∴k（k－1）－1×2＝0 ⇒ $k^{2}$－k－2＝0 ⇒ k＝2 或－1'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T04
+      name: 二階反方陣存在判別與求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知二元一次聯立方程式$\begin{cases}ax +by = 1 \\ cx +dy =-2\end{cases}$。若$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] \left[ \begin{matrix}2 & 3 \\ 3 & 4\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$，則數對（x，y）＝ ＿＿＿＿。
+  answer:
+  - （－4，－5）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] \left[ \begin{matrix}2 & 3 \\ 3 & 4\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+
+    ∴$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] ^{-1}$＝$\left[ \begin{matrix}2 & 3 \\ 3 & 4\end{matrix} \right]$
+
+    ⇒$\begin{cases}ax +by = 1 \\ cx +dy =-2\end{cases}$⇒$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] \left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}1 \\ -2\end{matrix} \right]$⇒$\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right] ^{-1}\left[ \begin{matrix}1 \\ -2\end{matrix} \right]$＝$\left[ \begin{matrix}2 & 3 \\ 3 & 4\end{matrix} \right] \left[ \begin{matrix}1 \\ -2\end{matrix} \right]$
+
+    ⇒$\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}-4 \\ -5\end{matrix} \right]$
+
+    故數對（x，y）＝（－4，－5）'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T06
+      name: 線性方程組的矩陣表示與求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: '設二階方陣 A＝$\left[ \begin{matrix}3 & 1 \\ 5 & 2\end{matrix} \right]$。
+
+    (1)已知 A 將 Q 對應到 Q''（2，1），則 Q 的坐標為＿＿＿＿。
+
+    (2)已知 A 將直線 L：y＝2x 對應到直線 M，則直線 M 的方程式為＿＿＿＿。'
+  answer:
+  - (1)（3，－7）；(2) y＝$\frac{9}{5}x$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) $A^{－1}$＝$\left[ \begin{matrix}3 & 1 \\ 5 & 2\end{matrix} \right] ^{-1}$＝$\frac{1}{6 - 5}\left[ \begin{matrix}2 & -1 \\ -5 & 3\end{matrix} \right]$＝$\left[ \begin{matrix}2 & -1 \\ -5 & 3\end{matrix} \right]$
+
+    令 Q（x，y）⇒$\left[ \begin{matrix}3 & 1 \\ 5 & 2\end{matrix} \right] \left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}2 \\ 1\end{matrix} \right]$⇒$\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}2 & -1 \\ -5 & 3\end{matrix} \right] \left[ \begin{matrix}2 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}3 \\ -7\end{matrix} \right]$
+
+    故 Q 坐標為（3，－7）
+
+    (2)取 L 上兩點 O（0，0）及 P（1，2）
+
+    ⇒$\left[ \begin{matrix}3 & 1 \\ 5 & 2\end{matrix} \right] \left[ \begin{matrix}0 \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}0 \\ 0\end{matrix} \right]$，$\left[ \begin{matrix}3 & 1 \\ 5 & 2\end{matrix} \right] \left[ \begin{matrix}1 \\ 2\end{matrix} \right]$＝$\left[ \begin{matrix}5 \\ 9\end{matrix} \right]$
+
+    得 O''（0，0），P''（5，9）為 M 上兩點
+
+    故 M 的方程式為 y＝$\frac{9}{5}x$'
+  tags:
+    unit:
+      code: MA-B4-3-2
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4B 矩陣的應用
+    pattern:
+      key: MA-B4-3-2:T04
+      name: 平面線性變換與旋轉伸縮矩陣
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 設二階方陣 A＝$\left[ \begin{matrix}0 & 1 \\ 0 & 1\end{matrix} \right]$，I＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$。利用$\left[ \begin{matrix}1 & 1 \\ 0 & 2\end{matrix} \right]$＝I＋A，試將$\left[ \begin{matrix}1 & 1 \\ 0 & 2\end{matrix} \right] ^{10}$表示成 aI＋bA（a，b 為實數）的形式，則數對（a，b）為＿＿＿＿。
+  answer:
+  - （1，1023）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'A＝$\left[ \begin{matrix}0 & 1 \\ 0 & 1\end{matrix} \right]$⇒ $A^{2}$＝$\left[ \begin{matrix}0 & 1 \\ 0 & 1\end{matrix} \right]$＝A，可得 $A^{n}$＝A，其中 n 為自然數
+
+    又$\left[ \begin{matrix}1 & 1 \\ 0 & 2\end{matrix} \right] ^{10}$＝（I＋A）$^{10}$，由二項式定理知
+
+    （I＋A）$^{10}$＝I＋$C_{1}^{10}$A＋$C_{2}^{10}A^{2}$＋……＋$C_{10}^{10}A^{10}$
+
+    ＝I＋（$C_{1}^{10}$＋$C_{2}^{10}$＋……＋$C_{10}^{10}$）A
+
+    又$C_{1}^{10}$＋$C_{2}^{10}$＋……＋$C_{10}^{10}$＝$2^{10}$－$C_{0}^{10}$＝1023
+
+    故數對（a，b）＝（1，1023）'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T03
+      name: 矩陣高次方規律與週期推算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知二階方陣 A 滿足 $A^{3}$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$，則 $A^{5}$＝$\left[ \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$，求二階方陣 A 為＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$A^{6}$＝（$A^{3}$）$^{2}$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right] \left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$
+
+    且（$A^{5}$）$^{－1}$＝$\frac{1}{-4 - (-5 )}\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$
+
+    ∴A＝$A^{6}$（$A^{5}$）$^{－1}$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right] \left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '已知二階方陣 A＝$\left[ \begin{matrix}4 & -3 \\ 2 & -1\end{matrix} \right]$，P＝$\left[ \begin{matrix}1 & 3 \\ 1 & 2\end{matrix} \right]$，二階方陣 B 滿足 PB＝AP。試求：
+
+    (1)二階方陣 B 為＿＿＿＿。
+
+    (2)二階方陣 $A^{5}$ 為＿＿＿＿。'
+  explanation: '(1) PB＝AP ⇒ $P^{－1}$PB＝$P^{－1}$AP
+
+    ⇒ B＝$P^{－1}$AP＝$\frac{1}{2 - 3}\left[ \begin{matrix}2 & -3 \\ -1 & 1\end{matrix} \right] \left[ \begin{matrix}4 & -3 \\ 2 & -1\end{matrix} \right] \left[ \begin{matrix}1 & 3 \\ 1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 0 \\ 0 & 2\end{matrix} \right]$
+
+    (2)方法一：∵PB＝AP ⇒ A＝$PBP^{－1}$ ⇒ $A^{5}$＝$PB^{5}P^{－1}$
+
+    又 $B^{5}$＝$\left[ \begin{matrix}1 & 0 \\ 0 & 32\end{matrix} \right]$
+
+    ∴$A^{5}$＝$\left[ \begin{matrix}1 & 3 \\ 1 & 2\end{matrix} \right] \left[ \begin{matrix}1 & 0 \\ 0 & 32\end{matrix} \right] \left[ \begin{matrix}-2 & 3 \\ 1 & -1\end{matrix} \right]$＝$\left[ \begin{matrix}94 & -93 \\ 62 & -61\end{matrix} \right]$
+
+    方法二：直接乘開'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T03
+      name: 矩陣高次方規律與週期推算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 P、Q、R 為二階方陣，已知 PQ＝$\left[ \begin{matrix}2 & 0 \\ 12 & 0\end{matrix} \right]$，PR＝$\left[ \begin{matrix}1 & 3 \\ 4 & 12\end{matrix} \right]$且 Q＋R＝$\left[ \begin{matrix}1 & 0 \\ 3 & 3\end{matrix} \right]$，則 P＝＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}0 & 1 \\ 4 & 4\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: '右圖中直圓錐的高為$\sqrt{3}$，V 為頂點，底圓的直徑$\overline{PQ}$＝2，A 為$\overline{VP}$的中點。
+
+    (1)若一平面通過 A、Q 兩點且與此直圓錐面截出的圖形為一個完整的封閉曲線，則此平面與直圓錐底面所夾的銳角為＿＿＿＿。
+
+    (2)若一平面通過 A 點且與此直圓錐面截出的圖形為拋物線，則此平面與直圓錐底面所夾的銳角為＿＿＿＿。'
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_110_台北_松山_數學_數B_g11s2e3/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 466.55
+      - 607.1
+      - 565.75
+      - 704.0
+  answer:
+  - (1) 30°；(2) 60°
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-4-1
+      book: 數學4B
+      chapter: 圓錐曲線
+      title: 圓錐曲線
+      std: true
+    textbook: 數學4B 圓錐曲線
+    pattern:
+      key: MA-B4-4-1:T06
+      name: 截面與旋轉角度範圍計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 一手電筒燈罩的張角為 30°，使照射的燈光形成直圓錐狀，且照在地面上形成的區域邊緣為一圓，如圖(一)所示。若將手電筒旋轉一銳角θ，使其在地面上形成之照亮區域邊緣為雙曲線的一部分，如圖(二)所示，此時 k°＜θ＜90°，則 k＝＿＿＿＿。
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_110_台北_松山_數學_數B_g11s2e3/s2_9_f1.png
+    crop:
+      page: 2
+      rect:
+      - 393.35
+      - 713.05
+      - 557.15
+      - 808.1
+  answer:
+  - '75'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-4-1
+      book: 數學4B
+      chapter: 圓錐曲線
+      title: 圓錐曲線
+      std: true
+    textbook: 數學4B 圓錐曲線
+    pattern:
+      key: MA-B4-4-1:T06
+      name: 截面與旋轉角度範圍計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e3_s3_1
+  section: 3
+  number: 1
+  type: single
+  page: 3
+  stem: '某大學數學系的微積分課程總成績計算方式如下：
+
+    ① 期中考考 2 次，分別占總成績的 25 ％。
+
+    ② 期末考占總成績的 30 ％。
+
+    ③ 平時成績占總成績的 20 ％。
+
+    當期末要結算成績時，助教要計算多位學生的總成績，於是他想利用矩陣的乘法來計算，首先他先將學生每個項目的成績列出，列出方式如下：
+
+    | 姓名 | 期中考（Ⅰ） | 期中考（Ⅱ） | 期末考 | 平時成績 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 甲 | 70 | 75 | 75 | 90 |
+
+    | 乙 | 60 | 70 | 70 | 85 |
+
+    | 丙 | 100 | 90 | 95 | 95 |
+
+    | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ |
+
+    再轉換成矩陣的型式呈現：$\left[ \begin{matrix}70 & 75 & 75 & 90 \\ 60 & 70 & 70 & 85 \\ 100 & 90 & 95 & 95 \\ ⋮ & ⋮ & ⋮ & ⋮\end{matrix} \right]$，試問：
+
+    (1)若要計算總成績，需將上面的矩陣乘上下面哪一個矩陣後，才能呈現每位同學的總成績？ （單選題，5 分）
+
+    (2)若<u>小華</u>前兩次期中考分別考了 30 分及 50 分，且<u>小華</u>平時上課認真，教授願意給<u>小華</u>的平時成績打最高分，利用矩陣乘法計算後，若<u>小華</u>希望總成績能及格（總成績≥ 60 分），則期末考至少要考幾分。（四捨五入至整數位）（5 分）'
+  options:
+  - label: A
+    content: 〔25 ％ 25 ％ 30 ％ 20 ％〕
+  - label: B
+    content: 〔20 ％ 25 ％ 25 ％ 30 ％〕
+  - label: C
+    content: $\left[ \begin{matrix}20 ％ \\ 25 ％ \\ 25 ％ \\ 30 ％\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}25 ％ \\ 25 ％ \\ 30 ％ \\ 20 ％\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T07
+      name: 矩陣乘法列式與加權應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

@@ -1,0 +1,580 @@
+document:
+  id: doc_108_高雄_高師大附中_數學_g10s2e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 108
+  semester: 2
+  exam_seq: 3
+  city: 高雄
+  school_short: 高師大附中
+  school: 國立高雄師範大學附屬高級中學
+  title: 國立高雄師範大學附屬高級中學 108學年度第2學期第3次定期評量 高一數學科試題
+  exam_name: 108學年度第2學期第3次定期評量
+  source_file: 高一/數學/108/2-3/高雄/高師大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 5 分，共 15 分）
+    count: 3
+  - ord: 2
+    name: 二、填充題（共 75 分）
+    count: 15
+  - ord: 3
+    name: 三、混合題（共 10 分）
+    count: 1
+questions:
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 某班級 50 位學生，段考國文、英文、數學及格的人數分別為 45、39、34 人，且英文及格的學生國文也都及格。現在假設數學和英文皆及格的有 x 人，數學及格但英文不及格的有 y 人。則下列哪些正確？
+  options:
+  - label: A
+    content: x＋y＝39
+  - label: B
+    content: 0 ≤ y ≤ 11
+  - label: C
+    content: 數學和英文皆及格的學生最少有 23 人
+  - label: D
+    content: 三科中至少有一科不及格的學生最少有 16 人
+  - label: E
+    content: 三科中至少有一科不及格的學生最多有 22 人
+  answer:
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T02
+      name: 排容原理與正因數倍數計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 四人同時玩「棒子、老虎、雞、蟲」的動物拳遊戲一次，規定為：棒子贏老虎，老虎贏雞，雞贏蟲，蟲贏棒子。假設恰有一人、兩人、三人獲勝的機率分別為 P(1)、P(2)、P(3)。則下列哪些正確？
+  options:
+  - label: A
+    content: P(1)＞P(2)
+  - label: B
+    content: P(2)＞P(3)
+  - label: C
+    content: P(2)＞P(1)＞P(3)
+  - label: D
+    content: P(2)＞P(1)＝P(3)
+  - label: E
+    content: 四人不分勝負的機率為$\frac{25}{32}$
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$P ( 1 )=\frac{C_{1}^{4}\times C_{1}^{4}}{4^{4}}=\frac{1}{16}$
+
+    $P ( 2 )=\frac{C_{2}^{4}\times C_{1}^{4}}{4^{4}}=\frac{3}{32}$
+
+    $P ( 3 )=\frac{C_{3}^{4}\times C_{1}^{4}}{4^{4}}=\frac{1}{16}$
+
+    (A) ╳ (B) ○ (C) ╳ (D) ○：P(2)＞P(1)＝P(3)
+
+    (E) ○：P（不分勝負）＝1－P(1)－P(2)－P(3)＝$\frac{25}{32}$
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-2-2-4
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 古典機率
+      std: true
+    textbook: 數學2（必修） 古典機率
+    pattern:
+      key: MA-2-2-4:T07
+      name: 獨立重複試驗與點數條件枚舉
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 選擇題為避免猜答而採倒扣記分，其扣分的標準是以猜答得分的期望值為 0 來計算。今有一題有五個選項的選擇題，則下列哪些正確？
+  options:
+  - label: A
+    content: 若此題為單選題，<u>小明</u>五個選項完全用猜的，則猜對的機率為$\frac{1}{5}$
+  - label: B
+    content: 若此題為至少有一個答案的複選題，<u>小明</u>五個選項完全用猜的，則猜對的機率為$\frac{1}{32}$
+  - label: C
+    content: 若單選題每一題 5 分，則答錯就需倒扣 1 分
+  - label: D
+    content: 若至少有一個答案的複選題每一題 6 分，則答錯就需倒扣 0.2 分
+  - label: E
+    content: 若此題為單選題，答對可得 6 分，<u>小明</u>確定五個選項中有兩個選項不正確，他就從剩下的選項中猜選一個，則<u>小明</u>此題得分的期望值為 1 分
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-5
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 數學期望值
+      std: true
+    textbook: 數學2（必修） 數學期望值
+    pattern:
+      key: MA-2-2-5:T04
+      name: 保險定價與公平遊戲決策
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '下列各小題的餅乾必須全部分完，不可以剩下，則：
+
+    (1) 將 3 片不同的餅乾分給 6 個學生，每人至多 1 片的方法數為＿＿＿＿。
+
+    (2) 將 6 片不同的餅乾分給 3 個學生的方法數為＿＿＿＿。
+
+    (3) 將 3 片相同的餅乾分給 6 個學生，每人至多 1 片的方法數為＿＿＿＿。
+
+    (4) 將 6 片不同的餅乾分給甲、乙、丙 3 個學生，其中甲、乙各得 1 片，丙得 4 片的方法數為 ＿＿＿＿。'
+  answer:
+  - (1) 120；(2) 729；(3) 20；(4) 30
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T01
+      name: 組合選取與分組分堆分配
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 校慶晚會原訂的 6 個節目已排成節目單，開演前再增加 3 個新節目。若原有 6 個節目的相對順序保持不變，則增加 3 個新節目後的節目單可有＿＿＿＿種安排。
+  answer:
+  - '504'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T04
+      name: 定序與條件排班特殊排列
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 將 6 件不同的禮物分給 3 個學生，禮物要全部分完，每人至少 1 件的方法數為＿＿＿＿。
+  answer:
+  - '540'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T06
+      name: 至少一人限制與排容原理
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 右圖所示為一含有斜線的棋盤形街道，今某人欲從 A 取捷徑走到 B，共有＿＿＿＿種走法。
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_108_高雄_高師大附中_數學_g10s2e3/s2_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 462.4
+      - 144.6
+      - 564.3
+      - 207.0
+  answer:
+  - '30'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T03
+      name: 棋盤捷徑與步數遞迴排列
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 袋子中有 3 顆白球，標註號碼 1～3 號；4 顆紅球，標註號碼 1～4 號。 今自袋子中每次取一球後不放回，若要 7 顆球全部都取出，設 A 表示白球先取完的事件，求 n(A)＝＿＿＿＿。
+  answer:
+  - '2880'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T04
+      name: 定序與條件排班特殊排列
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 若$1-\frac{1}{2}C_{1}^{n}+\left( -\frac{1}{2} \right) ^{2}C_{2}^{n}+\left( -\frac{1}{2} \right) ^{3}C_{3}^{n}+\ldots \ldots +\left( -\frac{1}{2} \right) ^{n}C_{n}^{n} < \frac{1}{10000}$，則最小正整數 n 為＿＿＿＿。
+  answer:
+  - '14'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T03
+      name: 二項式定理係數與近似估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: （1＋$x^{2}$）＋（1＋$x^{2}$）$^{2}$＋（1＋$x^{2}$）$^{3}$＋……＋（1＋$x^{2}$）$^{10}$ 展開式經合併同類項後，$x^{6}$ 項的係數為＿＿＿＿。
+  answer:
+  - '330'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T04
+      name: 巴斯卡定理與組合數等價轉換
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 甲、乙、丙、丁、戊、己、庚、辛 8 人排成一列，則甲不與乙、丙兩人相鄰的排法有＿＿＿＿種。
+  answer:
+  - '21600'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T01
+      name: 直線排列與相鄰不相鄰插空
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 不透明箱中置有編號分別為 1，2，3，6，8 的球各一顆，重複自箱中每次抽出一球，記錄分數後放回。請問抽三次後總得分大於 14 的情形有＿＿＿＿種。
+  answer:
+  - '38'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T03
+      name: 乘法加法原理分類窮舉計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: '一場車禍中肇事者逃逸，警方根據現場目擊證人提供的線索得知兩個訊息：
+
+    (一)肇事車輛的車牌號碼為 AB-2×××，其中「×」表示 0～9 的數字。
+
+    (二)四個數字中恰有兩個數字完全相同，但不知道是哪兩個數字（如 2335、2218、……）。
+
+    根據這兩個線索，警方最多要清查＿＿＿＿輛車。'
+  answer:
+  - '432'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T07
+      name: 數字組數與倍數限制計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: '甲、乙、丙分別投擲一顆公正的骰子一次，此三人擲得的點數依次為 a、b、c，則：
+
+    (1) （$a^{2}$－$b^{2}$）（$b^{2}$－$c^{2}$）＝0 的機率為＿＿＿＿。
+
+    (2) a ≤ b＜c 的機率為＿＿＿＿。'
+  answer:
+  - (1) $\frac{11}{36}$；(2) $\frac{35}{216}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-4
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 古典機率
+      std: true
+    textbook: 數學2（必修） 古典機率
+    pattern:
+      key: MA-2-2-4:T07
+      name: 獨立重複試驗與點數條件枚舉
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: '<u>小明</u>想要安排從星期一到星期五共五天的午餐計畫。他的餐點共有四種選擇：牛肉麵、大滷麵、咖哩飯及排骨飯。<u>小明</u>想要依據下列兩原則來安排他的午餐：
+
+    (一)每天只選一種餐點但這五天中每一種餐點至少各點一次。
+
+    (二)連續兩天的餐點不能重複且不連續兩天吃麵食。
+
+    根據上述原則，<u>小明</u>這五天中，在滿足條件(一)之下，
+
+    (1) 若必須再加點的一餐是麵類，則有＿＿＿＿種不同的午餐計畫。
+
+    (2) 若必須再加點的一餐是咖哩飯，則有＿＿＿＿種不同的午餐計畫。'
+  answer:
+  - (1) 12；(2) 24
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T01
+      name: 直線排列與相鄰不相鄰插空
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 有一特殊的 5 位數密碼鎖，其密碼都是 1 到 9 的相異數字，而且只要超過一半位置的數字正確，鎖就會打開（例如：密碼為 12345，則 12368，62745 都可以打開，但是 21354 則無法打開）。現已知輸入的密碼數字皆相異，則打開鎖的方法有＿＿＿＿種。
+  answer:
+  - '231'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T07
+      name: 數字組數與倍數限制計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: 根據統計資料得知，一個 50 歲的人在一年內存活的機率是 99.5 ％，今有一個 50 歲的人參加一年期保險額度為 50 萬元的人壽保險，需繳保費 5000 元，又公司對此一客戶的管理與行銷成本為 400 元。試求保險公司對此客戶的獲利期望值為＿＿＿＿元。
+  answer:
+  - '2100'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-5
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 數學期望值
+      std: true
+    textbook: 數學2（必修） 數學期望值
+    pattern:
+      key: MA-2-2-5:T04
+      name: 保險定價與公平遊戲決策
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 2
+  stem: 某市為了籌措經費而發行彩券，每發行一百萬張彩券，即附有壹百萬元獎 1 張，拾萬元獎 9 張，壹萬元獎 90 張，壹千元獎 900 張。假設某次彩券共發行三百萬張，若要對買彩券的人公平，則每張彩券的售價應為＿＿＿＿元。
+  answer:
+  - '3.7'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-5
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 數學期望值
+      std: true
+    textbook: 數學2（必修） 數學期望值
+    pattern:
+      key: MA-2-2-5:T04
+      name: 保險定價與公平遊戲決策
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高師大附中_數學_g10s2e3_s3_1
+  section: 3
+  number: 1
+  type: multiple
+  page: 3
+  stem: '擲一顆公正的骰子兩次，設點數和為 k 的機率為 $P_{k}$，則：
+
+    (1) 下列哪些正確？（多選，6 分）
+
+    (2) 求 k 的期望值。（4 分）'
+  options:
+  - label: A
+    content: k 有 12 個可能值
+  - label: B
+    content: $P_{8}=\frac{5}{36}$
+  - label: C
+    content: $P_{5}$＝$P_{9}$
+  - label: D
+    content: 所有 $P_{k}$ 值的總和小於 1
+  tags:
+    unit:
+      code: MA-2-2-5
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 數學期望值
+      std: true
+    textbook: 數學2（必修） 數學期望值
+    pattern:
+      key: MA-2-2-5:T01
+      name: 離散結果金額與點數期望值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

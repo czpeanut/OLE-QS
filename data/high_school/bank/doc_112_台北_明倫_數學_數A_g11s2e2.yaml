@@ -1,0 +1,717 @@
+document:
+  id: doc_112_台北_明倫_數學_數A_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 2
+  city: 台北
+  school_short: 明倫
+  school: 臺北市立明倫高級中學
+  title: 臺北市立明倫高級中學 112學年度第2學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 112學年度第2學期第2次定期評量
+  source_file: 高二/數學/112/2-2/台北/明倫_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 7 分，共 35 分；答錯一個選項得 4 分，答錯兩個選項得 2 分，答錯三個選項以上或未作答者得 0 分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（每格 5 分，最高 65 分）
+    count: 11
+questions:
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列各條件中，哪些恰可決定唯一的一個平面？
+  options:
+  - label: A
+    content: 點 A（5，－3，1）與直線 L：$\frac{x -2}{3}$＝$\frac{y +1}{-2}$＝2z－3
+  - label: B
+    content: 三點相異 A（2，1，5），B（3，4，3），C（4，7，1）
+  - label: C
+    content: $L_{1}$：$\frac{x -1}{2}$＝$\frac{y +2}{4}$＝$\frac{z -3}{3}$與 $L_{2}$：$\frac{x -1}{2}$＝$\frac{2y +4}{4}$＝$\frac{z -3}{3}$
+  - label: D
+    content: $L_{1}$：$\frac{x -2}{3}$＝$\frac{y +1}{2}$＝$\frac{z -1}{1}$與 $L_{2}$：$\frac{x -8}{3}$＝$\frac{y -3}{2}$＝$\frac{z -3}{1}$
+  - label: E
+    content: L：$\begin{cases}2x +y =3 \\ z =1\end{cases}$與 x 軸
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：點 A 代入 L：$\frac{3}{3}$＝$\frac{-2}{-2}$≠－1
+
+    ⇒ 點 A 不在 L 上，故恰可決定唯一平面
+
+    (B) ╳：$\vec{AB}$＝（1，3，－2）＝$\vec{BC}$⇒ A，B，C 三點共線
+
+    (C) ○：$L_{2}$：$\frac{x - 1}{2}$＝$\frac{y + 2}{2}$＝$\frac{z - 3}{3}$
+
+    ⇒$\vec{v_{2}}$＝（2，2，3）
+
+    ⇒$\vec{v_{2}}$和$\vec{v_{1}}$＝（2，4，3）不平行
+
+    又（1，－2，3）在 $L_{1}$ 上也在 $L_{2}$ 上
+
+    ⇒ $L_{1}$，$L_{2}$ 交於一點（1，－2，3）
+
+    ⇒ 恰可決定唯一平面
+
+    (D) ╳：（2，－1，1）為 $L_{1}$ 上的點代入 $L_{2}$：$\frac{-6}{3}$＝$\frac{-4}{2}$＝$\frac{-2}{1}$
+
+    ⇒（2，－1，1）亦為 $L_{2}$ 上一點
+
+    又$\vec{v_{1}}$//$\vec{v_{2}}$⇒ $L_{1}$，$L_{2}$ 重合
+
+    (E) ╳：L 之方向向量$\vec{v_{L}}$//（2，1，0）×（0，0，1）＝$\left( \left| \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right| , \left| \begin{matrix}0 & 2 \\ 1 & 0\end{matrix} \right| , \left| \begin{matrix}2 & 1 \\ 0 & 0\end{matrix} \right| \right)$
+
+    ＝（1，－2，0）
+
+    和 x 軸不平行，且 x 軸上任一點（a，0，0）明顯不為 L 上一點（∵z≠1）
+
+    ⇒ 此兩線歪斜
+
+    故選(A)(C)'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T02
+      name: 空間兩直線位置關係與共面
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設 A 與 B 為獨立事件，則下列哪些選項恆正確？
+  options:
+  - label: A
+    content: P（B∣A）≠P（A∣B）
+  - label: B
+    content: P（A∣B）＝P(A)
+  - label: C
+    content: P（A∪B）＝P(A)＋P(B)
+  - label: D
+    content: P（A∩B）＝P(A)P(B)
+  - label: E
+    content: P（A'∪B'）＝1－P(A)P(B)
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：P（B∣A）＝P(B)，P（A∣B）＝P(A)
+
+    但 P(A)和 P(B)的值可能相同
+
+    (B) ○：∵A，B 為獨立事件 ∴P（A∣B）＝P(A)
+
+    (C) ╳：P（A∪B）＝P(A)＋P(B)－P（A∩B）
+
+    ＝P(A)＋P(B)－P(A)P(B)
+
+    ≠P(A)＋P(B)
+
+    (D) ○：∵P（A∣B）＝P(A)
+
+    ∴$\frac{P (A \cap B)}{P (B)}$＝P(A)⇒ P（A∩B）＝P(A)P(B)
+
+    (E) ○：P（A''∪B''）＝P（（A∩B）''）＝1－P（A∩B）
+
+    ＝1－P(A)P(B)
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 某高二學生阿倫班上第一次期中考成績，經過統計後得知全班有 40 ％的學生數學不及格，有 30 ％的學生英文不及格，有 20 ％的學生數學、英文都不及格，則下列各敘述中，哪些是正確的？
+  options:
+  - label: A
+    content: 若阿倫同學英文不及格，則他數學不及格的機率為$\frac{2}{3}$
+  - label: B
+    content: 若阿倫同學英文及格，則他數學也及格的機率為$\frac{5}{7}$
+  - label: C
+    content: 若阿倫同學數學不及格，則他英文不及格的機率為$\frac{1}{2}$
+  - label: D
+    content: 若阿倫同學數學及格，則他英文也及格的機率大於$\frac{5}{6}$
+  - label: E
+    content: 全班同學中，數學、英文至少有一科不及格的機率為$\frac{1}{2}$
+  answer:
+  - A
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 A 為數學不及格之集合
+
+    B 為英文不及格之集合
+
+    則 P(A)＝0.4，P(B)＝0.3，P（A∩B）＝0.2
+
+    (A) ○：P（A∣B）＝$\frac{P (A \cap B)}{P (B)}$＝$\frac{0.2}{0.3}$＝$\frac{2}{3}$
+
+    (B) ○：P（A''∣B''）＝$\frac{P (A'' \cap B'')}{P (B'')}$＝$\frac{1-P (A \cup B)}{1-P (B)}$＝$\frac{1-P (A) -P (B) +P (A \cap B)}{1-P (B)}$
+
+    ＝$\frac{1 - 0.4 - 0.3 + 0.2}{1 - 0.3}$＝$\frac{5}{7}$
+
+    (C) ○：P（B∣A）＝$\frac{P (B \cap A)}{P (A)}$＝$\frac{0.2}{0.4}$＝$\frac{1}{2}$
+
+    (D) ╳：P（B''∣A''）＝$\frac{P (A'' \cap B'')}{P (A'')}$＝$\frac{0.5}{1 - 0.4}$＝$\frac{5}{6}$
+
+    (E) ○：P（A∪B）＝P(A)＋P(B)－P（A∩B）＝0.5＝$\frac{1}{2}$
+
+    故選(A)(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T07
+      name: 集合機率公式與列聯表條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 2
+  stem: 數學題目，甲、乙能解出之機率各為$\frac{2}{3}$、$\frac{1}{4}$，若甲、乙同解一數學問題且互不影響，則下列選項正確的有哪些？
+  options:
+  - label: A
+    content: 甲、乙兩人都解出之機率為$\frac{1}{6}$
+  - label: B
+    content: 恰一人解出之機率為$\frac{7}{12}$
+  - label: C
+    content: 兩人都解不出之機率為$\frac{1}{3}$
+  - label: D
+    content: 此題被解出之機率為$\frac{3}{4}$
+  - label: E
+    content: 若恰一人解出，則由甲解出的機率為$\frac{6}{7}$
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：∵甲、乙為獨立事件 ∴P（甲∩乙）＝P(甲)P(乙)＝$\frac{2}{3}\times \frac{1}{4}$＝$\frac{1}{6}$
+
+    (B) ○：P（甲∩乙''）＋P（甲''∩乙）＝P(甲)P（乙''）＋P（甲''）P(乙)
+
+    ＝$\frac{2}{3}\times \frac{3}{4}+\frac{1}{3}\times \frac{1}{4}$＝$\frac{7}{12}$
+
+    (C) ╳：P（甲''∩乙''）＝P（甲''）P（乙''）＝$\frac{1}{3}\times \frac{3}{4}$＝$\frac{1}{4}$
+
+    (D) ○：由選項(C)可知，1－P（甲''∩乙''）＝1－$\frac{1}{4}$＝$\frac{3}{4}$
+
+    (E) ○：由選項(B)可知，所求為$\frac{\frac{2}{3}\times \frac{3}{4}}{\frac{7}{12}}$＝$\frac{6}{7}$
+
+    故選(A)(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 2
+  stem: A 袋中有 4 個紅球，4 個白球，B 袋中有 3 個紅球，2 個白球；今從 A 袋中任取一球，令其為 X；然後將 X 放入 B 袋，再從 B 袋中取出 1 球，令其為 Y，則下列哪些選項正確？
+  options:
+  - label: A
+    content: P（X 為紅球）＝$\frac{1}{2}$
+  - label: B
+    content: P（Y 為紅球∣X 為紅球）＝$\frac{4}{5}$
+  - label: C
+    content: P（Y 為紅球∣X 為白球）＝$\frac{1}{2}$
+  - label: D
+    content: P（Y 為紅球）＝$\frac{1}{2}$
+  - label: E
+    content: P（X 為紅球∣Y 為紅球）＝$\frac{3}{7}$
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：P（X 為紅球）＝$\frac{4}{8}$＝$\frac{1}{2}$
+
+    (B) ╳：P（Y 為紅球∣X 為紅球）＝P（4 紅 2 白抽中紅球）＝$\frac{4}{6}$＝$\frac{2}{3}$
+
+    (C) ○：P（Y 為紅球∣X 為白球）＝P（3 紅 3 白抽中紅球）＝$\frac{3}{6}$＝$\frac{1}{2}$ (D) ╳：由選項(B)(C)可知
+
+    P（Y 為紅球）＝$P (X 紅 \cap Y 紅)+P (X 白 \cap Y 紅)$
+
+    ＝$P (X 紅)P (Y 紅 | X 紅)+P (X 白)P (Y 紅 | X 白)$
+
+    ＝$\frac{1}{2}$×$\frac{2}{3}$＋$\frac{1}{2}$×$\frac{1}{2}$＝$\frac{7}{12}$
+
+    (E) ╳：由選項(D)可知，P（X 為紅球∣Y 為紅球）＝$\frac{P (X 紅 \cap Y 紅)}{P (Y 紅)}$＝$\frac{\frac{1}{2}\times \frac{2}{3}}{\frac{7}{12}}$＝$\frac{4}{7}$
+
+    故選(A)(C)'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 設 A、B 為兩事件，且滿足 P（B∣A）＝$\frac{3}{4}$，P（B'）＝$\frac{1}{4}$，P（A∩B'）＝$\frac{1}{6}$，則 P（A∪B）＝＿＿＿＿。
+  answer:
+  - $\frac{11}{12}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（B∣A）＝$\frac{P (B \cap A)}{P (A)}$＝$\frac{3}{4}$⇒ P（A∩B）＝$\frac{3}{4}$×P(A)
+
+    又 P（A∩B''）＝P(A)－P（A∩B）＝P(A)－$\frac{3}{4}$×P(A)＝$\frac{1}{6}$⇒ P(A)＝$\frac{2}{3}$
+
+    得 P（A∩B）＝$\frac{1}{2}$
+
+    故 P（A∪B）＝P(A)＋P(B)－P（A∩B）＝$\frac{2}{3}$＋$\frac{3}{4}$－$\frac{1}{2}$＝$\frac{11}{12}$'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T07
+      name: 集合機率公式與列聯表條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 設甲袋有 2 個紅球、3 個白球；乙袋有 3 個紅球、2 個白球。現投擲一骰子 1 次，若出現點數為 1 或 3，則選甲袋並從袋中取出 2 球；若出現 2 或 4 或 5 或 6，則選乙袋並從袋中取出 2 球。試問：若已知抽出為同色球的條件下，求此 2 球來自甲袋的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（同色球）＝P（點數為 1，3）P（甲袋取出同色球）
+
+    ＋P（點數為 2，4，5，6）P（乙袋取出同色球）
+
+    ＝$\frac{1}{3}$×$\frac{C_{2}^{2}+C_{2}^{3}}{C_{2}^{5}}$＋$\frac{2}{3}$×$\frac{C_{2}^{3}+C_{2}^{2}}{C_{2}^{5}}$
+
+    ＝$\frac{4}{30}+\frac{8}{30}$＝$\frac{12}{30}$
+
+    故兩球來自甲袋的機率為$\frac{\frac{4}{30}}{\frac{12}{30}}$＝$\frac{1}{3}$'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 投擲一粒公正的骰子三次，設三次當中至少出現一次 6 點的事件為 A，三次當中至少出現一次 1 點的事件為 B，則 P（B∣A）的值為＿＿＿＿。
+  answer:
+  - $\frac{30}{91}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P(A)＝1－P（沒有 6）＝1－$\left( \frac{5}{6} \right) ^{3}$＝$\frac{91}{216}$
+
+    又 P（A∩B）＝1－P（沒有 6）－P（沒有 1）＋P（沒有 6 且 1）
+
+    ＝1－$\left( \frac{5}{6} \right) ^{3}$－$\left( \frac{5}{6} \right) ^{3}$＋$\left( \frac{4}{6} \right) ^{3}$＝$\frac{30}{216}$
+
+    故 P（B∣A）＝$\frac{P (A \cap B)}{P (A)}$＝$\frac{30}{91}$'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T05
+      name: 條件機率與對立事件綜合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 一年十二個月中，假設每個人在哪個月份出生是隨機的（機率相同），則 5 個人中，至少有兩個人出生在同一個月份的機率為＿＿＿＿。
+  answer:
+  - $\frac{89}{144}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求為 1－P（5 人均不同月）＝$1 -\frac{C_{5}^{12}\times 5 ！}{12^{5}}$＝1－$\frac{12\times 11\times 10\times 9\times 8}{12\times 12\times 12\times 12\times 12}$
+
+    ＝1－$\frac{55}{144}$＝$\frac{89}{144}$'
+  tags:
+    unit:
+      code: MA-2-2-4
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 古典機率
+      std: true
+    textbook: 數學2（必修） 古典機率
+    pattern:
+      key: MA-2-2-4:T03
+      name: 對立事件與互斥機率恆等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 在右圖的電路圖中有 5 個開關，以 A、B、C、D、E 表示。電流通過各開關的機率皆為$\frac{1}{3}$，假設各開關的操作獨立。若已知電流從左端 L 流到右端 R，則電流是從左端 L 經過 D 流到右 R 的機率為＿＿＿＿。
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_112_台北_明倫_數學_數A_g11s2e2/s2_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 400.55
+      - 732.75
+      - 564.3
+      - 794.05
+  answer:
+  - $\frac{33}{103}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（A、B 通或 C 通）＝P（A、B 通）＋P（C 通）－P（A、B 通且 C 通）
+
+    ＝$\frac{1}{3}\times \frac{1}{3}+\frac{1}{3}-\frac{1}{3}\times \frac{1}{3}\times \frac{1}{3}$＝$\frac{11}{27}$
+
+    P（（A、B 通或 C 通）且 D 通）＝$\frac{11}{27}\times \frac{1}{3}$＝$\frac{11}{81}$＝P（L 到 D 再到 R）
+
+    ⇒ P（L 到 R）＝P（（（A、B 通或 C 通）且 D 通）或 E 通）
+
+    ＝P（（A、B 通或 C 通）且 D 通）＋P（E 通）
+
+    －P（（A、B 通或 C 通且 D 通）且 E 通）
+
+    ＝$\frac{11}{27}\times \frac{1}{3}+\frac{1}{3}-\frac{11}{27}\times \frac{1}{3}\times \frac{1}{3}$
+
+    ＝$\frac{103}{243}$
+
+    故所求為$\frac{P (L 到 D 再到 R)}{P (L 到 R)}$＝$\frac{\frac{11}{81}}{\frac{103}{243}}$＝$\frac{33}{103}$'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T01
+      name: 條件機率定義與樣本篩選
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 3
+  stem: 某工廠由甲、乙、丙三部機器製造同一產品，其產量分別占總量的 50 ％、30 ％、20 ％。依照過去的經驗，甲、乙、丙三部機器製造同一產品不良率分別為 3 ％、5 ％、x ％。今任選一產品，已知此產品為不良品，而此產品由丙機器所製造的機率為$\frac{7}{22}$，則 x＝＿＿＿＿。
+  answer:
+  - '7'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: 已知兩直線 $L_{1}$：$\frac{x + 1}{3}$＝$\frac{y - 3}{4}$＝$\frac{z - 1}{2}$與 $L_{2}$：$\frac{x + 2}{2}$＝$\frac{y - 1}{3}$＝$\frac{z - 1}{1}$相交於一點 P，試求 P 點坐標為＿＿＿＿。
+  answer:
+  - （2，7，3）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵點 P 在 $L_{1}$ 上
+
+    ∴令 P（－1＋3t，3＋4t，1＋2t）代入 $L_{2}$ 得
+
+    $\frac{1 + 3t}{2}$＝$\frac{2 + 4t}{3}$＝$\frac{2t}{1}$⇒ t＝1
+
+    故 P 點坐標為（2，7，3）'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T07
+      name: 兩直線參數聯立求交點與角平分線
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: '我空軍某軍機於點 P（1，3，－2）發射一枚飛彈（假設飛彈直線飛行），欲擊落沿直線 L：$\frac{x + 1}{-3}$＝$\frac{y - 9}{2}$＝$\frac{z - 6}{2}$飛行之敵機，則：
+
+    (1) 敵機最快被擊中的點坐標為＿＿＿＿。
+
+    (2) 飛彈直線飛行最短命中的距離為＿＿＿＿。'
+  answer:
+  - (1)（5，5，2）；(2) 6
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 令被擊中點 Q 坐標為（－1－3t，9＋2t，6＋2t）
+
+    ⇒$\vec{PQ}$＝（－2－3t，6＋2t，8＋2t）
+
+    令直線 L 的方向向量為$\vec{v}$
+
+    欲使最快被擊中，則∣$\vec{PQ}$∣最短，即 Q 為 P 對 L 之垂足
+
+    ⇒$\vec{PQ}$⊥$\vec{v}$⇒（－2－3t，6＋2t，8＋2t）．（－3，2，2）＝0
+
+    ⇒ 6＋9t＋12＋4t＋16＋4t＝0 ⇒ 17t＝－34
+
+    ⇒ t＝－2
+
+    故 Q 點坐標為（5，5，2）
+
+    (2) 承(1) ，所求為∣$\vec{PQ}$∣＝$\sqrt{4^{2}+2^{2}+4^{2}}$＝$\sqrt{36}$＝6'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T03
+      name: 點到空間直線距離與投影點
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 已知兩直線 $L_{1}$：$\frac{x - 1}{2}$＝$\frac{y - 3}{-2}$＝$\frac{z - 1}{3}$與 $L_{2}$：$\frac{x - 3}{2}$＝$\frac{y - 4}{-2}$＝$\frac{z - 5}{3}$，試求包含 $L_{1}$ 及 $L_{2}$ 的平面方程式為＿＿＿＿。
+  answer:
+  - 11x＋2y－6z＝11
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 A（1，3，1）為 $L_{1}$ 上一點，B（3，4，5）為 $L_{2}$ 上一點
+
+    ⇒$\vec{AB}$＝（2，1，4）
+
+    再令$\vec{v}$＝（2，－2，3）為 $L_{1}$，$L_{2}$ 之方向向量
+
+    ⇒$\vec{n}$//$\vec{AB}$×$\vec{v}$＝$\left( \left| \begin{matrix}1 & 4 \\ -2 & 3\end{matrix} \right| , \left| \begin{matrix}4 & 2 \\ 3 & 2\end{matrix} \right| , \left| \begin{matrix}2 & 1 \\ 2 & -2\end{matrix} \right| \right)$＝（11，2，－6）
+
+    設平面為 11x＋2y－6z＝k，將 A（1，3，1）代入得 k＝11
+
+    故包含 $L_{1}$、$L_{2}$ 之平面方程式為 11x＋2y－6z＝11'
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 求與直線$\begin{cases}2y -z =-1 \\ 6x +y +z =1\end{cases}$垂直且過點（2，0，0）的平面方程式為＿＿＿＿。
+  answer:
+  - x－2y－4z＝2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令$\vec{v}$為直線 L：$\begin{cases}2y -z =-1 \\ 6x + y + z =1\end{cases}$之方向向量
+
+    ⇒$\vec{v}$//（0，2，－1）×（6，1，1）＝$\left( \left| \begin{matrix}2 & -1 \\ 1 & 1\end{matrix} \right| , \left| \begin{matrix}-1 & 0 \\ 1 & 6\end{matrix} \right| , \left| \begin{matrix}0 & 2 \\ 6 & 1\end{matrix} \right| \right)$＝（3，－6，－12）
+
+    令$\vec{v}$＝（1，－2，－4）
+
+    ∵L 和平面垂直
+
+    ∴$\vec{v}$和平面法向量$\vec{n}$平行 ⇒ 取$\vec{n}$＝（1，－2，－4）
+
+    設平面為 x－2y－4z＝k，將（2，0，0）代入得 k＝2
+
+    故平面方程式為 x－2y－4z＝2'
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_明倫_數學_數A_g11s2e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 3
+  stem: '已知兩直線 $L_{1}$：$\frac{x + 8}{6}$＝$\frac{y + 3}{-2}$＝$\frac{z + 6}{-1}$與 $L_{2}$：$\frac{x - 5}{3}$＝$\frac{y - 3}{2}$＝$\frac{z - 3}{-2}$為不共面的兩直線，試求：
+
+    (1) 此兩直線之最短距離為＿＿＿＿。
+
+    (2) 設 A（5，3，3）、B（8，5，1），若想在 $L_{1}$ 上找一點 P，使得△PAB 面積最小，則點 P 坐標為＿＿＿＿。
+
+    (3) 若平面 E 與兩直線 $L_{1}$、$L_{2}$ 都不相交，且平面 E 與兩直線 $L_{1}$、$L_{2}$ 的距離相等，則平面 E 的方程式為＿＿＿＿。'
+  answer:
+  - (1) 14；(2)（－2，－5，－7）；(3) 2x＋3y＋6z＝－12
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 令 P（－8＋6t，－3－2t，－6－t）為 $L_{1}$ 上一點
+
+    Q（5＋3s，3＋2s，3－2s）為 $L_{2}$ 上一點
+
+    ⇒$\vec{PQ}$＝（13＋3s－6t，6＋2s＋2t，9－2s＋t）
+
+    ∵$\begin{cases}\vec{PQ} \cdot \vec{v_{1}}=0 \\ \vec{PQ} \cdot \vec{v_{2}}=0\end{cases}$⇒$\begin{cases}(13+3s-6t , 6+2s+2t , 9-2s+t) \cdot (6 , -2 , -1)= 0 \\ (13+3s-6t , 6+2s+2t , 9-2s+t) \cdot (3 , 2 , -2)= 0\end{cases}$
+
+    ⇒$\begin{cases}16s - 41t =-57 \\ 17s - 16t =-33\end{cases}$⇒$\begin{cases}s =-1 \\ t =1\end{cases}$
+
+    故兩直線最短距離為∣$\vec{PQ}$∣＝$\sqrt{4^{2}+6^{2}+12^{2}}$＝14
+
+    (2) ∵A、B 兩點均在 $L_{2}$ 上
+
+    ∴當 P 為 $L_{1}$ 與 $L_{1}$、$L_{2}$ 公垂線之交點時，△PAB 面積最小
+
+    故由(1)知，點 P 坐標為（－2，－5，－7）
+
+    (3) 由(1)知，$\overline{PQ}$為公垂線且 P（－2，－5，－7），Q（2，1，5）
+
+    ∵E//$L_{1}$，且 E//$L_{2}$，又 E 與 $L_{1}$、$L_{2}$ 距離相等
+
+    ∴$\vec{n_{E}}$//$\vec{v_{1}}$×$\vec{v_{2}}$且 E 通過 P、Q 中點（0，－2，－1）
+
+    ⇒$\vec{n_{E}}$//$\vec{v_{1}}$×$\vec{v_{2}}$＝$\left( \left| \begin{matrix}-2 & -1 \\ 2 & -2\end{matrix} \right| , \left| \begin{matrix}-1 & 6 \\ -2 & 3\end{matrix} \right| , \left| \begin{matrix}6 & -2 \\ 3 & 2\end{matrix} \right| \right)$＝（6，9，18）
+
+    取$\vec{n_{E}}$＝（2，3，6）
+
+    設平面為 2x＋3y＋6z＝k，將（0，－2，－1）代入得 k＝－12
+
+    故 E 的方程式為 2x＋3y＋6z＝－12'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T04
+      name: 兩歪斜線公垂線段長計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

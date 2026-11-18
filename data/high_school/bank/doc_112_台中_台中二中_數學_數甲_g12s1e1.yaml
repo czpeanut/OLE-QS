@@ -1,0 +1,550 @@
+document:
+  id: doc_112_台中_台中二中_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 台中二中
+  school: 臺中市立臺中第二高級中等學校
+  title: 臺中市立臺中第二高級中等學校 112學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 112學年度第1學期第1次定期評量
+  source_file: 高三/數學/112/1-1/台中/台中二中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 30 分。錯一個選項得 4 分，錯二個選項得 2 分，其餘皆不得分）
+    count: 3
+  - ord: 2
+    name: 二、填充題（每格 5 分，共 70 分）
+    count: 9
+questions:
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 設 f（x）＝tanx，g（x）＝$x \cdot \sin \frac{1}{x}$，下列哪些是正確的敘述？
+  options:
+  - label: A
+    content: 函數 f（x）的定義域為所有實數
+  - label: B
+    content: 函數 g（x）在所有實數上連續
+  - label: C
+    content: $\lim_{x \rightarrow 0} f ( x )$存在
+  - label: D
+    content: $\lim_{x \rightarrow 1} g ( x )$存在
+  - label: E
+    content: $\lim_{x \rightarrow 0} g ( x )$不存在
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：在 x＝$\frac{2k + 1}{2}\pi$，$k\in ℤ$時，無定義
+
+    (B)╳：g（x）在 x＝0 無定義，因此在 x＝0 處必不連續
+
+    (C)○：$\lim_{x \rightarrow 0} f ( x )$＝$\lim_{x \rightarrow 0} \tan x$＝tan0＝0
+
+    (D)○：$\lim_{x \rightarrow 1} g ( x )$＝$\lim_{x \rightarrow 1} x \cdot \sin \frac{1}{x}$＝1．sin1＝sin1
+
+    (E)╳：∵$-| x |\leq x \cdot \sin \frac{1}{x}\leq | x |$
+
+    且$\lim_{x \rightarrow 0} ( -| x | )$＝$\lim_{x \rightarrow 0} | x |$＝0
+
+    ∴$\lim_{x \rightarrow 0} x \cdot \sin \frac{1}{x}$＝0
+
+    故選(C)(D)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T03
+      name: 函數連續性檢驗與求參
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 2
+  stem: 設 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋6，已知$\lim_{x \rightarrow 2} \frac{f ( x )}{x - 2}$＝－5，$\lim_{x \rightarrow 3} \frac{f ( x )}{x - 3}$＝7，且$\lim_{x \rightarrow -1} \frac{f ( x )+k}{x + 1}$為收斂，試選出下列正確的選項。
+  options:
+  - label: A
+    content: a＝3
+  - label: B
+    content: b＝－9
+  - label: C
+    content: c＝7
+  - label: D
+    content: k＝－12
+  - label: E
+    content: a＋b＋c＋k＝12
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可知 f（x）有 x－2，x－3 的因式，
+
+    故可令 f（x）＝（mx＋n）（x－2）（x－3）
+
+    ∵f(0)＝6 ∴n（－2）（－3）＝6$\Rightarrow$n＝1
+
+    得 f（x）＝（mx＋1）（x－2）（x－3）
+
+    ∵$\lim_{x \rightarrow 2} \frac{f ( x )}{x - 2}$＝$\lim_{x \rightarrow 2} ( ( mx + 1 ) ( x - 3 ) )$＝（2m＋1）（－1）＝－5
+
+    ∴m＝2
+
+    得 f（x）＝（2x＋1）（x－2）（x－3）＝$2x^{3}$－$9x^{2}$＋7x＋6
+
+    故 a＝2，b＝－9，c＝7
+
+    (A)╳：a＝2
+
+    (B)○
+
+    (C)○
+
+    (D)╳：若$\lim_{x \rightarrow -1} \frac{f ( x )+k}{x + 1}$收斂，則 f（－1）＋k＝0
+
+    即－2－9－7＋6＋k＝0$\Rightarrow$k＝12
+
+    (E)○：a＋b＋c＋k＝2－9＋7＋12＝12
+
+    故選(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T09
+      name: 雙重極限反推多項式係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 2
+  stem: 假設兩數列〈$a_{n}$〉、〈$b_{n}$〉，對所有正整數 n 都滿足$b_{n}+\frac{4n - 1}{n} < a_{n} < 3b_{n}$。已知$\lim_{n \rightarrow \infty} a_{n}$＝6，試選出正確的選項。
+  options:
+  - label: A
+    content: $b_{n} < 6 -\frac{4n - 1}{n}$
+  - label: B
+    content: $b_{n} > \frac{4n - 1}{2n}$
+  - label: C
+    content: 數列〈$b_{n}$〉有可能發散
+  - label: D
+    content: $a_{10000}$＜6.1
+  - label: E
+    content: $a_{10000}$＞5.9
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：不一定，反例：若 $a_{n}$＝$6 +\frac{3}{n}$，則$\lim_{n \rightarrow \infty} a_{n}$＝6
+
+    但$b_{1}+\frac{4\times 1 - 1}{1} < 6 +\frac{3}{1} < 3b_{1}$
+
+    $\Rightarrowb_{1}$＋3＜9＜$3b_{1}$
+
+    $\Rightarrow$3＜$b_{1}$＜6
+
+    此時 $b_{1}$＜$6 -\frac{4\times 1 - 1}{1}$＝3 不成立
+
+    (B)○：∵$b_{n}+\frac{4n - 1}{n} < 3b_{n}$
+
+    ∴$\frac{4n - 1}{n} < 2b_{n}\Rightarrow\frac{4n - 1}{2n} < b_{n}$
+
+    (C)╳：∵$\frac{4n - 1}{2n} < b_{n} < a_{n}-\frac{4n - 1}{n}$
+
+    且$\lim_{n \rightarrow \infty} \frac{4n - 1}{2n}$＝$\lim_{n \rightarrow \infty} \left( a_{n}-\frac{4n - 1}{n} \right)$＝2
+
+    ∴$\lim_{n \rightarrow \infty} b_{n}$＝2
+
+    (D)╳(E)○：$a_{n}$＞$b_{n}+\frac{4n - 1}{n}$＞$\frac{4n - 1}{2n}+\frac{4n - 1}{n}$＝$\frac{12n - 3}{2n}$＝$6 -\frac{3}{2n}$
+
+    $\Rightarrowa_{10000}$＞$6 -\frac{3}{20000}$＞5.9
+
+    但無法保證 $a_{10000}$＜6.1
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T01
+      name: 數列極限運算與收斂判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '求下列無窮級數和：
+
+    (1) $\sum_{n =1}^{\infty} \frac{3n - 1}{{4^{n}}^{-1}}$＝＿＿＿＿。
+
+    (2) $\sum_{n =1}^{\infty} \frac{n + 2}{n^{2}+n} \cdot \left( \frac{1}{2} \right) ^{n +1}$＝＿＿＿＿。'
+  answer:
+  - (1) 4；(2) $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T06
+      name: 分項對消與無窮級數極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: '求下列各極限值，若極限不存在，請寫「不存在」。
+
+    (1) $\lim_{n \rightarrow \infty} ( \sqrt{n^{2}-n + 1} - \sqrt{n^{2}+ 3n + 2} )$＝＿＿＿＿。
+
+    (2) $\lim_{n \rightarrow \infty} \frac{\left[ \frac{n}{3} \right]}{n}$＝＿＿＿＿。（[ ] 表示高斯函數）
+
+    (3) $\lim_{x \rightarrow 0} \left( \frac{x - 3}{x}-\frac{5x + 6}{x^{2}- 2x} \right)$＝＿＿＿＿。
+
+    (4) $\lim_{x \rightarrow 1} \frac{| x^{2}- 3x + 2 |-| x - 1 |}{x - 1}$＝＿＿＿＿。
+
+    (5) $\lim_{x \rightarrow 0} \frac{1}{x} \left( \frac{3}{\sqrt{9-x}}-\frac{1}{\sqrt{1-x}} \right)$＝＿＿＿＿。'
+  answer:
+  - (1) －2；(2) $\frac{1}{3}$；(3) 5；(4) 0；(5) $-\frac{4}{9}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) $\lim_{n \rightarrow \infty} ( \sqrt{n^{2}-n + 1} - \sqrt{n^{2}+ 3n + 2} )$
+
+    ＝$\lim_{n \rightarrow \infty} \left( ( \sqrt{n^{2}-n + 1} - \sqrt{n^{2}+ 3n + 2} ) \right.$×$\left. \frac{\sqrt{n^{2}-n + 1} + \sqrt{n^{2}+3n + 2}}{\sqrt{n^{2}-n + 1} + \sqrt{n^{2}+3n + 2}} \right)$
+
+    ＝$\lim_{n \rightarrow \infty} \frac{( n^{2}-n + 1 )-( n^{2}+ 3n + 2 )}{\sqrt{n^{2}-n + 1} + \sqrt{n^{2}+ 3n + 2}}$
+
+    ＝$\lim_{n \rightarrow \infty} \frac{-4n - 1}{\sqrt{n^{2}-n + 1} + \sqrt{n^{2}+ 3n + 2}}$
+
+    ＝$\lim_{n \rightarrow \infty} \frac{-4 -\frac{1}{n}}{\sqrt{1 -\frac{1}{n}+\frac{1}{n^{2}}} + \sqrt{1 +\frac{3}{n}+\frac{2}{n^{2}}}}$＝－2
+
+    (2) ∵$\frac{n}{3}- 1 < \left[ \frac{n}{3} \right] \leq \frac{n}{3}$
+
+    ∴$\frac{\frac{n}{3}- 1}{n} < \frac{\left[ \frac{n}{3} \right]}{n}\leq \frac{\frac{n}{3}}{n}$
+
+    又$\lim_{n \rightarrow \infty} \frac{\frac{n}{3}- 1}{n}$＝$\lim_{n \rightarrow \infty} \frac{\frac{n}{3}}{n}$＝$\frac{1}{3}$
+
+    故$\lim_{n \rightarrow \infty} \frac{\left[ \frac{n}{3} \right]}{n}$＝$\frac{1}{3}$
+
+    (3) $\lim_{x \rightarrow 0} \left( \frac{x - 3}{x}-\frac{5x + 6}{x^{2}- 2x} \right)$
+
+    ＝$\lim_{x \rightarrow 0} \frac{( x - 3 ) ( x - 2 )- 5x - 6}{x ( x - 2 )}$
+
+    ＝$\lim_{x \rightarrow 0} \frac{x^{2}- 10x}{x ( x - 2 )}$
+
+    ＝$\lim_{x \rightarrow 0} \frac{x - 10}{x - 2}$＝$\frac{-10}{-2}$＝5
+
+    (4) $\lim_{x \rightarrow 1^{+}} \frac{| x^{2}- 3x + 2 |-| x - 1 |}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{| ( x - 1 ) ( x - 2 ) |-| x - 1 |}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1^{+}} \frac{-( x^{2}- 3x + 2 )-( x - 1 )}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1^{+}} \frac{-x^{2}+ 2x - 1}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{-( x - 1 )^{2}}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1^{+}} ( -( x - 1 ) )$＝0
+
+    $\lim_{x \rightarrow 1^{-}} \frac{| x^{2}- 3x + 2 |-| x - 1 |}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{| ( x - 1 ) ( x - 2 ) |-| x - 1 |}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1^{-}} \frac{( x^{2}- 3x + 2 )+( x - 1 )}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1^{-}} \frac{x^{2}- 2x + 1}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{( x - 1 )^{2}}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1^{-}} ( x - 1 )$＝0
+
+    ∵$\lim_{x \rightarrow 1^{+}} \frac{| x^{2}- 3x + 2 |-| x - 1 |}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{| x^{2}- 3x + 2 |-| x - 1 |}{x - 1}$＝0
+
+    ∴$\lim_{x \rightarrow 1} \frac{| x^{2}- 3x + 2 |-| x - 1 |}{x - 1}$＝0
+
+    (5) $\lim_{x \rightarrow 0} \frac{1}{x} \left( \frac{3}{\sqrt{9-x}}-\frac{1}{\sqrt{1-x}} \right)$
+
+    ＝$\lim_{x \rightarrow 0} \left( \frac{1}{x} \cdot \frac{3\sqrt{1-x} - \sqrt{9-x}}{\sqrt{9-x} \cdot \sqrt{1-x}} \right)$
+
+    ＝$\lim_{x \rightarrow 0} \left( \frac{1}{x} \cdot \frac{\sqrt{9-9x} - \sqrt{9-x}}{\sqrt{9-x} \cdot \sqrt{1-x}} \cdot \frac{\sqrt{9-9x} + \sqrt{9-x}}{\sqrt{9-9x} + \sqrt{9-x}} \right)$
+
+    ＝$\lim_{x \rightarrow 0} \left( \frac{1}{x} \cdot \frac{9-9x -( 9-x )}{\sqrt{9-x} \cdot \sqrt{1-x} ( \sqrt{9-9x} + \sqrt{9-x} )} \right)$
+
+    ＝$\lim_{x \rightarrow 0} \left( \frac{1}{x} \cdot \frac{-8x}{\sqrt{9-x} \cdot \sqrt{1-x} ( \sqrt{9-9x} + \sqrt{9-x} )} \right)$
+
+    ＝$\lim_{x \rightarrow 0} \frac{-8}{\sqrt{9-x} \cdot \sqrt{1-x} ( \sqrt{9-9x} + \sqrt{9-x} )}$
+
+    ＝$\frac{-8}{3\times 1\times ( 3 + 3 )}$＝$-\frac{8}{18}$＝$-\frac{4}{9}$'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T11
+      name: 絕對值與分段去符號求極限
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 3
+  stem: 已知 $S_{n}$＝$\frac{3}{1^{2}}$＋$\frac{5}{1^{2}+2^{2}}$＋$\frac{7}{1^{2}+2^{2}+3^{2}}$＋……＋$\frac{2n +1}{1^{2}+2^{2}+3^{2}+\ldots \ldots +n^{2}}$，試求$\lim_{n \rightarrow \infty} S_{n}$之值為 ＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{2n + 1}{1^{2}+ 2^{2}+ 3^{2}+\ldots \ldots +n^{2}}$＝$\frac{2n + 1}{\frac{n ( n + 1 ) ( 2n + 1 )}{6}}$＝$\frac{6}{n ( n + 1 )}$＝$6 \left( \frac{1}{n}-\frac{1}{n + 1} \right)$
+
+    故 $S_{n}$＝$6 \left[ \left( \frac{1}{1}-\frac{1}{2} \right) + \left( \frac{1}{2}-\frac{1}{3} \right) +\ldots \ldots + \left( \frac{1}{n}-\frac{1}{n +1} \right) \right]$
+
+    ＝$6 \left( 1-\frac{1}{n + 1} \right)$
+
+    $\lim_{n \rightarrow \infty} S_{n}$＝$\lim_{n \rightarrow \infty} \left( 6 \left( 1-\frac{1}{n + 1} \right) \right)$＝6'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T06
+      name: 分項對消與無窮級數極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 3
+  stem: 設 $a_{n}$＝$\frac{1}{n} \left( \frac{2}{\sqrt{3n^{2}+1}}+\frac{4}{\sqrt{3n^{2}+2}}+\ldots \ldots +\frac{2n}{\sqrt{3n^{2}+n}} \right)$，試求$\lim_{n \rightarrow \infty} a_{n}$之值為＿＿＿＿。
+  answer:
+  - $\frac{\sqrt{3}}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{n}$ ≤ $\frac{1}{n} \left( \frac{2}{\sqrt{3n^{2}+1}}+\frac{4}{\sqrt{3n^{2}+1}}+\ldots \ldots +\frac{2n}{\sqrt{3n^{2}+1}} \right)$
+
+    ＝$\frac{1}{n}\times \frac{2}{\sqrt{3n^{2}+1}}\times \frac{n ( n + 1 )}{2}$＝$\frac{n + 1}{\sqrt{3n^{2}+1}}$
+
+    又 $a_{n}$ ≥ $\frac{1}{n} \left( \frac{2}{\sqrt{3n^{2}+n}}+\frac{4}{\sqrt{3n^{2}+n}}+\ldots \ldots +\frac{2n}{\sqrt{3n^{2}+n}} \right)$
+
+    ＝$\frac{1}{n}\times \frac{2}{\sqrt{3n^{2}+n}}\times \frac{n ( n + 1 )}{2}$＝$\frac{n + 1}{\sqrt{3n^{2}+n}}$
+
+    ∵$\lim_{n \rightarrow \infty} \frac{n + 1}{\sqrt{3n^{2}+n}}$＝$\lim_{n \rightarrow \infty} \frac{n + 1}{\sqrt{3n^{2}+1}}$＝$\frac{1}{\sqrt{3}}$
+
+    ∴$\lim_{n \rightarrow \infty} a_{n}$＝$\frac{1}{\sqrt{3}}$＝$\frac{\sqrt{3}}{3}$'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T04
+      name: 夾擠定理求數列和極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 3
+  stem: 設函數 f（x）＝$\begin{cases}\frac{-3x+a}{x-2} , x\neq 2 \\ b , x = 2\end{cases}$，且 f（x）在 x＝2 處連續，求數對（a，b）＝＿＿＿＿。
+  answer:
+  - （6，－3）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f（x）在 x＝2 處連續
+
+    ∴$\lim_{x \rightarrow 2} \frac{-3x +a}{x - 2}$存在
+
+    $\Rightarrow$－3×2＋a＝0
+
+    $\Rightarrow$a＝6
+
+    又$\lim_{x \rightarrow 2} \frac{-3x + 6}{x - 2}$＝$\lim_{x \rightarrow 2} ( -3 )$＝－3＝b
+
+    故數對（a，b）＝（6，－3）'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T03
+      name: 函數連續性檢驗與求參
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 3
+  stem: 已知實數 a，b 滿足$\lim_{n \rightarrow \infty} \left( \frac{1^{2}+ 2^{2}+\ldots \ldots +n^{2}}{n^{2}}-an \right)$＝b，試求數對（a，b）＝＿＿＿＿。
+  answer:
+  - $\left( \frac{1}{3} , \frac{1}{2} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \left( \frac{1^{2}+2^{2}+\ldots \ldots +n^{2}}{n^{2}}-an \right)$
+
+    ＝$\lim_{n \rightarrow \infty} \left( \frac{\frac{n ( n + 1 ) ( 2n + 1 )}{6}}{n^{2}}-an \right)$
+
+    ＝$\lim_{n \rightarrow \infty} \left( \frac{2n^{2}+ 3n + 1}{6n}-an \right)$
+
+    ＝$\lim_{n \rightarrow \infty} \left( \left( \frac{1}{3}-a \right) n +\frac{1}{2}+\frac{1}{6n} \right)$＝b
+
+    若極限存在，則 a＝$\frac{1}{3}$
+
+    且 b＝$\lim_{n \rightarrow \infty} \left( \frac{1}{2}+\frac{1}{6n} \right)$＝$\frac{1}{2}$
+
+    故數對（a，b）＝$\left( \frac{1}{3} , \frac{1}{2} \right)$'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T02
+      name: 多項式與指數型數列極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: 設 a，b 均為實數，且$\lim_{x \rightarrow 2} \left( \frac{\sqrt{ax +b} - 1}{x - 2} \right)$＝5，試求數對（a，b）＝＿＿＿＿。
+  answer:
+  - （10，－19）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T06
+      name: 函數極限有理化與運算性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: '坐標平面上，已知直線 L：x－ny＝0，（n 為正整數），圓 C：（x－1）$^{2}$＋（y－1）$^{2}$＝1，設
+
+    直線 L 與圓 C 交於 $P_{n}$，$Q_{n}$ 兩點，令 $a_{n}$＝$\overline{P_{n}Q_{n}}$，（$P_{n}$，$Q_{n}$ 兩點之長度，以 n 表示），則
+
+    $\lim_{n \rightarrow \infty} ( n \cdot a_{n}^{2} )$之值為＿＿＿＿。'
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T02
+      name: 多項式與指數型數列極限
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_112_台中_台中二中_數學_數甲_g12s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 如右圖，設正三角形 $A_{1}B_{1}C_{1}$ 的邊長為 1，以 5：8 的同順序比例內分各邊，連接各分點得第二個正三角形 $A_{2}B_{2}C_{2}$；再以同比例，同順序內分第二個正三角形的各邊，連接各分點得第三個正三角形 $A_{3}B_{3}C_{3}$；依此規則繼續下去，得到一系列的正三角形。設△$A_{n}B_{n}C_{n}$ 的面積為 $S_{n}$，此無窮多個正三角形的面積總和$\sum_{n =1}^{\infty} S_{n}$＝＿＿＿＿。
+  assets:
+  - key: s2_9_f1
+    kind: figure
+    file: doc_112_台中_台中二中_數學_數甲_g12s1e1/s2_9_f1.png
+    crop:
+      page: 3
+      rect:
+      - 446.65
+      - 383.15
+      - 564.3
+      - 486.55
+  answer:
+  - $\frac{169}{480}\sqrt{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

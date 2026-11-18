@@ -1,0 +1,333 @@
+document:
+  id: doc_112_台北_北一女中_數學_數B_g11s2e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 3
+  city: 台北
+  school_short: 北一女中
+  school: 臺北市立第一女子高級中學
+  title: 臺北市立第一女子高級中學 112學年度第2學期第3次定期評量 高二數學（數B）科試題
+  exam_name: 112學年度第2學期第3次定期評量
+  source_file: 高二/數學/112/2-3/台北/北一女中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多選題：（每題10分，共30分）
+    count: 3
+  - ord: 2
+    name: 二、填充題（第1到5題每格6分，第6到7題每格5分，共50分）
+    count: 7
+  - ord: 3
+    name: 三、計算題（需標示小題題號、寫出完整過程依照內容斟酌給扣分，共20分）
+    count: 2
+questions:
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列哪些關於機率的敘述是正確的？
+  options:
+  - label: '1'
+    content: 若P(A)＝$\frac{1}{2}$，且P(B)＝$\frac{2}{3}$，則 P(A∩B)≠0
+  - label: '2'
+    content: 若P(A)P(B)≠0，且P(A | B)＞P(A)，則P(B | A)＞P(B)
+  - label: '3'
+    content: 若P(A)P(B)≠0，則P(A | B)＋P(A' | B)＝P(B)
+  - label: '4'
+    content: 若P(A∩B)＝P(A)P(B)≠0，且P(A | B)＞P(A' | B)，則P(A)＞P(A')
+  - label: '5'
+    content: 若P(A∩B)＝P(A)P(B)≠0，則P(A | B)＝1－P(A' | B')
+  explanation: (1) ○：P ( A∪B )＝P (A)＋P (B)－P ( A∩B ) ＝$\frac{1}{2}$＋$\frac{2}{3}$－P ( A∩B )＝$\frac{7}{6}$－P ( A∩B ) ≤ 1 ∴P ( A∩B ) ≥ $\frac{1}{6}$ ∴ P ( A∩B )≠0 (2) ○：P (A)．P (B)≠0 ⇒ P (A)≠0且P (B)≠0 P ( A | B )＝$\frac{P(A\cap B)}{P(B)}$＞P (A) ⇒ P ( A∩B )＞P (A)．P (B) ⇒ $\frac{P(A\cap B)}{P(A)}$＞P (B) ⇒ P ( B | A )＞P (B) (3) ×：P (A) P (B)≠0 ⇒ P (A)≠0且P (B)≠0 P ( A | B )＋P ( A' | B )＝$\frac{P(A\cap B)+P(A'\cap B)}{P(B)}$＝$\frac{P(B)}{P(B)}$＝1≠P (B) (4) ○：P ( A∩B )＝P (A)．P (B)≠0 A，B獨立 P ( A | B )＝P (A)＞P ( A' | B )＝P (A') (5) ○：A，B獨立 P ( A | B )＝P (A) 1－P ( A' | B' )＝1－P (A')＝P (A) 故選(1)(2)(4)(5)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T06
+      name: 條件機率性質與集合運算判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s1_2
+  section: 1
+  number: 2
+  type: calc
+  page: 1
+  stem: 下列選項中的事件皆非空事件，則哪些關於機率的敘述是正確的？ (1)「以我對EaTing的認識，他會跟團訂飲料的機率是200％」這是主觀機率 (2)有同學發現EaTing這學期20次訂飲料有10次是訂綠茶，由客觀機率可知EaTing訂飲料時訂綠茶的機率是50％ (3)若EaTing預計下學期要用一枚公正硬幣決定要不要訂飲料：丟出正面就訂；丟出反面就不訂。則按照古典機率EaTing 下學期每一次訂飲料的機率是50％ (4)已知EaTing會訂飲料，若EaTing訂飲料只會喝綠茶或紅茶，則「EaTing訂綠茶」和「EaTing訂紅茶」這兩個事件會 互相獨立 (5)承上選項，若EaTing訂綠茶只會喝微糖，則「EaTing訂的飲料是綠茶」和「EaTing訂的飲料是微糖」這兩個事件不 會互相獨立
+  answer:
+  - (2)(3)(5)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) ×：機率大於1 (2) ○： (3) ○： (4) ×： (5) ○：P ( 喝綠茶∩微糖 )＝P ( 喝綠茶 )，P ( 微糖 )未必等於1 ∴ P ( 喝綠茶∩微糖 )≠P ( 喝綠茶 )．P ( 微糖 ) ∴ 兩者不獨立 P ( 喝綠茶∩喝紅茶 )＝0，但P ( 喝綠茶 )≠0，P ( 喝紅茶 )≠0 ∴ P ( 喝綠茶∩喝紅茶 )≠P ( 喝綠茶 )×P ( 喝紅茶 ) 故選(2)(3)(5)。
+
+    ↙第3球放紅球，前2球任放'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T15
+      name: 主觀機率與客觀機率判別
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s1_3
+  section: 1
+  number: 3
+  type: calc
+  page: 1
+  stem: 袋子中有大小相同的2顆紅球、2顆黃球和4顆綠球，若是依序從袋中取球，取後不放回，則下列哪些選項是正確的？ (1)「第3球是紅球」的機率等於「第4球是黃球」機率 (2)「第3球是紅球」的機率是「第2球是綠球」的機率的一半 (3)「第8球是綠球」的機率和「第8球是紅球或黃球」的機率相同 (4)「第1球是綠球」和「第1球是紅球或黃球」會互相獨立 (5)「第1球是綠球」和「第2球是綠球」會互相獨立
+  answer:
+  - (1)(2)(3)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) ○：P ( 第3球是紅球 )＝$\frac{2\cdot 7\times 6}{8\times 7\times 6}$＝$\frac{1}{4}$ P ( 第4球是黃球 )＝$\frac{2\times 7\times 6\times 5}{8\times 7\times 6\times 5}$＝$\frac{1}{4}$ ↖第4球放黃球，前3球任放 (2) ○：P ( 第2球是綠球 )＝$\frac{4\times 7}{8\times 7}$＝$\frac{1}{2}$ (3) ○：P ( 第8球是綠球 )＝$\frac{4\times 7!}{8!}$＝$\frac{1}{2}$ P ( 第8球是紅或黃 )＝1－P ( 第8球是綠球 )＝1－$\frac{1}{2}$＝$\frac{1}{2}$ (4) ×：P ( 第1球是綠球 )＝$\frac{4}{8}$＝$\frac{1}{2}$ P ( 第1球是紅或黃 )＝$\frac{2+2}{8}$＝$\frac{1}{2}$ P ( 第1球是綠球且第1球是紅或黃 )＝0≠$\frac{1}{2}$×$\frac{1}{2}$ (5) ×：P ( 第1球是綠球 )＝P ( 第2球是綠球 )＝$\frac{4}{8}$＝$\frac{1}{2}$ P ( 第1球是綠球且第2球是綠球 )＝$\frac{4\times 3}{8\times 7}$＝$\frac{3}{14}$≠$\frac{1}{2}$×$\frac{1}{2}$ 故選(1)(2)(3)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: EaTing每個工作天有$\frac{1}{5}$的機率會有媽媽牌便當，且若是某一天有媽媽牌便當的話，EaTing有$\frac{1}{2}$的機率會忘記帶便當出門。假如今天期末考EaTing沒有帶便當到學校，則這一天EaTing沒有媽媽牌便當的機率為＿＿＿＿。
+  answer:
+  - $\frac{8}{9}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P＝$\frac{\frac{4}{5}}{\frac{4}{5}+\frac{1}{5}\times \frac{1}{2}}$＝$\frac{8}{9}$ 沒便當 有便當但忘記帶
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T01
+      name: 貝氏定理與條件事後機率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 若A事件和B事件互相獨立，且P ( A∪B )＝$\frac{3}{5}$、P ( A' | B )＝$\frac{2}{3}$，則P (B)＝＿＿＿＿。
+  answer:
+  - $\frac{2}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( A∪B )＝P (A)＋P (B)－P (A)．P (B)＝$\frac{3}{5}$ P ( A' | B )＝P (A')＝1－P (A)＝$\frac{2}{3}$ ∴ P (A)＝$\frac{1}{3}\frac{1}{3}$＋P (B)－$\frac{1}{3}$P (B)＝$\frac{3}{5}$ ∴ P (B)＝$\frac{2}{5}$
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: EaTing請數B的同學們吃歐趴糖，28位同學每人各拿2顆，其中有4人拿的糖果都是草莓口味；有8人拿的糖果都是巧克力口味；有16人拿的糖果是草莓和巧克力口味各一顆。假如小忠發現小孝其中一顆糖果是草莓口味，則小孝另外一顆糖果是巧克力口味的機率為＿＿＿＿。
+  answer:
+  - $\frac{2}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 撲克牌一副有52張4種花色13種數值，小忠、小孝、小貽、婷婷四個人玩撲克牌，每個人抽13張，已知小忠、小孝兩人的牌中有23張黑色（黑桃或梅花）牌，則婷婷拿到2張黑色牌的機率為＿＿＿＿。
+  answer:
+  - $\frac{39}{100}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 假設小忠、小孝、婷婷三個人猜拳（剪刀、石頭、布），已知三人猜拳一次且無法分出勝負（可不止一人勝），則三人出同樣的拳的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 已知小貽說實話的機率為$\frac{3}{4}$，婷婷說實話的機率為$\frac{2}{3}$，且兩人說實話與否互不影響。若袋中有2枚金幣、3枚銀幣，今從袋中任取一枚硬幣，假設每枚硬幣被取中的機會均等，試問： (1)小貽、婷婷都說取中的硬幣是銀幣的機率為＿＿＿＿。 (2)若小貽、婷婷都說取中的是銀幣，則實際上是取中金幣的機率為＿＿＿＿。
+  answer:
+  - (1) $\frac{1}{3}$；(2) $\frac{1}{10}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T05
+      name: 貝氏定理與人員分類及誠實推論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 袋中有3個白球和5個紅球，自袋中依序取出4球，取後不放回，試問： (1)第4球取出第2個紅球的機率為＿＿＿＿。 (2)已知第4球取出第2個紅球的情況下，第1球是白球的機率為＿＿＿＿。
+  answer:
+  - (1) $\frac{3}{14}$；(2) $\frac{2}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 1
+  stem: 某天習題課有來上課的12位同學 ( 其中有小忠和小孝 ) 坐成三列橫排，每一列皆為四個位置相連成一排。則： (1)若A事件為「小忠坐在第二列」，B事件為「小孝坐在第二列」，試判斷A事件和B事件是否互相獨立？( 4分 ) (2)已知小忠坐在第二列，則小孝坐在第二列的機率為何？( 4分 )
+  explanation: (1) P ( A∩B )＝$\frac{4}{12}$×$\frac{3}{11}$＝$\frac{1}{11}$ P (A)＝$\frac{4}{12}$＝$\frac{1}{3}$，P (B)＝$\frac{4}{12}$＝$\frac{1}{3}$ P ( A∩B )≠$\frac{1}{3}$×$\frac{1}{3}$＝P (A)．P (B) 非獨立 (2) P (A)＝$\frac{1}{3}$ P ( A∩B )＝$\frac{1}{11}$ P ( B | A )＝$\frac{P(A\cap B)}{P(A)}$＝$\frac{3}{11}$
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_北一女中_數學_數B_g11s2e3_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 1
+  stem: 甲、乙兩個駕訓班都各有40名考生，其中甲班有10名男生、30名女生，其中有7名男生、15名女生成功考取駕照；乙班有30名男生、10名女生，其中有19名男生、4名女生成功考取駕照 (1)試將甲、乙兩班的男、女和考取、未考取人數以列聯表的方式呈現。（一個班級使用一個列聯表）( 4分 ) (2)當甲乙兩班分開看時，試比較男生考取率哪一班較高？女生考取率哪一班較高？( 4分 ) (3)試問從這兩班隨機抽出一名考生，已知這名考生有成功考取駕照，則試比較這位考生來自甲乙兩班哪一班的機率較高？ ( 4分 )
+  explanation: '甲班：
+
+    7.3 15.15 22.18
+
+    乙班：
+
+    19.11 4.6 23.17
+
+    (2) 甲班男生考取率$\frac{7}{10}$＝$\frac{21}{30}$ 乙班男生考取率$\frac{19}{30}$ ∴甲班男生考取率較高 甲班女生考取率$\frac{15}{30}$＝$\frac{5}{10}$ 乙班女生考取率$\frac{4}{10}$ 甲班女生考取率較高
+
+    (3) P ( 來自甲班 )＝$\frac{\frac{22}{80}}{\frac{22+23}{80}}$＝$\frac{22}{45}$ P ( 來自乙班 )＝$\frac{\frac{23}{80}}{\frac{22+23}{80}}$＝$\frac{23}{45}$ ∴來自乙班機率較高'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T10
+      name: 列聯表數據判讀與條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

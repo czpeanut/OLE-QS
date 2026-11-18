@@ -1,0 +1,717 @@
+document:
+  id: doc_113_台中_興大附中_數學_數B_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 113學年度第1學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  source_file: 高二/數學/113/1-2/台中/興大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 20 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（共 12 分）
+    count: 2
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 60 分）
+    count: 10
+  - ord: 4
+    name: 四、混合題（共 8 分）
+    count: 1
+questions:
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 試比較 a＝$log_{8}$54－$log_{8}$2，b＝－$log_{2}\frac{1}{5}$，c＝$log_{4}$7 的大小關係為何？
+  options:
+  - label: A
+    content: a＞b＞c
+  - label: B
+    content: c＞a＞b
+  - label: C
+    content: a＞c＞b
+  - label: D
+    content: b＞c＞a
+  - label: E
+    content: b＞a＞c
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'a＝$log_{8}$54－$log_{8}$2＝$log_{8}$27＝$\frac{\log 27}{\log 8}$＝$\frac{3 \log 3}{3 \log 2}$＝$log_{2}$3
+
+    b＝$-\log _{2}\frac{1}{5}$＝－$log_{2}5^{－1}$＝$log_{2}$5
+
+    c＝$log_{4}$7＝$\frac{\log 7}{\log 4}$＝$\frac{\log 7}{2 \log 2}$＝$\frac{1}{2}$ $log_{2}$7＝$\log _{2}\sqrt{7}$
+
+    ∵5＞3＞$\sqrt{7}$且 2＞1 ∴b＞a＞c
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T01
+      name: 對數定義與對數律運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設 log6＝a，log3＝b，則$\log _{2}\sqrt{30}$＝？
+  options:
+  - label: A
+    content: $\sqrt{\frac{b+1}{a-b}}$
+  - label: B
+    content: $\frac{1}{2}\left( \frac{b+1}{a-b} \right)$
+  - label: C
+    content: $\frac{b+1}{a-b}$
+  - label: D
+    content: $\frac{b+1}{a-b-1}$
+  - label: E
+    content: $\frac{1}{2}\left( \frac{a+5}{a-b-1} \right)$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\log _{2}\sqrt{30}$＝$\log _{2}30^{\frac{1}{2}}$＝$\frac{1}{2}$×$\frac{\log 30}{\log 2}=\frac{1}{2} \left( \frac{\log 2+\log 15}{\log 2} \right)$
+
+    ＝$\frac{1}{2} \left( 1+\frac{\log 15}{\log 2} \right)$＝$\frac{1}{2} \left( 1+\frac{\log \frac{30}{2}}{\log \frac{6}{3}} \right)$
+
+    ＝$\frac{1}{2} \left( 1+\frac{\log 3+\log 10-(\log 6-\log 3)}{\log 6-\log 3} \right)$
+
+    ＝$\frac{1}{2} \left( 1+\frac{b+1-a+b}{a-b} \right)$＝$\frac{1}{2} \left( \frac{b+1}{a-b} \right)$
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T04
+      name: 對數律與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 有兩個正實數 a、b，已知 $ab^{3}$＝$10^{5}$，$a^{3}$b＝10，則 logb＝？
+  options:
+  - label: A
+    content: '2'
+  - label: B
+    content: '3'
+  - label: C
+    content: $\frac{3}{2}$
+  - label: D
+    content: $\frac{7}{4}$
+  - label: E
+    content: $\frac{4}{3}$
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵（$ab^{3}$）$^{3}$＝$a^{3}b^{9}$＝$10^{15}$，$a^{3}$b＝10
+
+    ∴$\frac{10^{15}}{10}$＝$\frac{a^{3}b^{9}}{a^{3}b}$＝$b^{8}$
+
+    ⇒ $b^{8}$＝$10^{14}$ ⇒ b＝$10^{\frac{7}{4}}$ ⇒ logb＝$\frac{7}{4}$
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T02
+      name: 指數與對數互化求代數值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 在坐標平面上，已知向量$\vec{PQ}$＝（log5，－$7^{－3}$），其中點 P 的坐標為（log2，$4^{－3}$），則點 Q 位於
+  options:
+  - label: A
+    content: 第一象限
+  - label: B
+    content: 第二象限
+  - label: C
+    content: 第三象限
+  - label: D
+    content: 第四象限
+  - label: E
+    content: 坐標軸
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 Q（x，y）
+
+    由$\vec{PQ}$＝（log5，－$7^{－3}$）＝（x－log2，y－$4^{－3}$）
+
+    可得 x＝log5＋log2＝log10＝1，y＝－$7^{－3}$＋$4^{－3}$
+
+    ∵－$7^{－3}$＋$4^{－3}$＞0
+
+    ∴Q 點位於第一象限
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-B3-3-1
+      book: 數學3B
+      chapter: 平面向量
+      title: 平面向量
+      std: true
+    textbook: 數學3B 平面向量
+    pattern:
+      key: MA-B3-3-1:T04
+      name: 單位向量、長度與坐標運算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 1
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 右圖為 y＝$a^{x＋c}$＋b 的部分圖形，其中 a、b、c 均為常數， 則下列何者正確？
+  options:
+  - label: A
+    content: 0＜a＜1
+  - label: B
+    content: a＞1
+  - label: C
+    content: b＞0
+  - label: D
+    content: b＜0
+  - label: E
+    content: c＜0
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_113_台中_興大附中_數學_數B_g11s1e2/s2_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 453.65
+      - 127.0
+      - 564.3
+      - 218.3
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○ (B) ╳：∵圖形為遞減（由左而右逐漸下降）
+
+    ∴0＜a＜1
+
+    (C) ○ (D) ╳：∵漸近線為 y＝k，且由題圖知 0＜k＜1
+
+    ∴0＜b＝k＜1
+
+    (E) ╳：∵x＝0 時，y＝$a^{c}$＋b
+
+    由題圖可知 0＜y－b＜1 ⇒ 0＜$a^{c}$＜1
+
+    又 0＜a＜1 ∴c＞0
+
+    故選(A)(C)'
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T05
+      name: 指數函數圖形平移與係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 關於指數函數圖形或對數函數圖形的敘述，下列何者正確？
+  options:
+  - label: A
+    content: y＝$2024^{x}$ 的圖形恆在 y＝$113^{x}$ 的上方
+  - label: B
+    content: y＝$113^{x}$ 和 y＝$log_{113}$ x 的圖形對稱於 y＝x
+  - label: C
+    content: y＝$\left( \frac{1}{113} \right) ^{x}$和 y＝$\log _{\frac{1}{113}}x$ 的圖形凹口皆向下
+  - label: D
+    content: y＝$log_{2024}$（$x^{2}$－3x＋5）的圖形與 x 軸不相交
+  - label: E
+    content: y＝$log_{113}$x 和 y＝$\log _{\frac{1}{113}}x$ 的圖形對稱於 x 軸
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：不一定，x＜0 時不合
+
+    (B) ○：y＝$a^{x}$ 和 y＝$log_{a}$x 對稱於 y＝x
+
+    (C) ╳：y＝$\left( \frac{1}{113} \right) ^{x}$的圖形凹口向上
+
+    ∵y＝$\log _{\frac{1}{113}}x$＝$\frac{\log x}{\log 113^{-1}}$＝$\frac{\log x}{-\log 113}$＝－$log_{113}$x
+
+    ∴y＝$\log _{\frac{1}{113}}x$與 y＝$log_{113}$x 的圖形對稱於 x 軸
+
+    又 y＝$log_{113}$x 的圖形凹口向下，故 y＝$\log _{\frac{1}{113}}x$的圖形凹口向上
+
+    因此，兩圖形凹口皆向上
+
+    (D) ○：解 $log_{2024}$（$x^{2}$－3x＋5）＝0
+
+    ⇒ $x^{2}$－3x＋5＝1
+
+    ⇒ $x^{2}$－3x＋4＝0
+
+    ∵（－3）$^{2}$－4×1×4＜0 ∴$x^{2}$－3x＋4＝0 無實數解
+
+    故 y＝$log_{2024}$（$x^{2}$－3x＋5）與 x 軸不相交
+
+    (E) ○：承(C)
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T09
+      name: 對數函數圖形對稱與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 設$\vec{a}$＝（2，－1），$\vec{b}$＝（3，－4），令$\vec{c}$＝t$\vec{a}$＋$\vec{b}$，則∣$\vec{c}$∣的最小值為＿＿＿＿。
+  answer:
+  - $\sqrt{5}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\vec{c}$＝t（2，－1）＋（3，－4）＝（2t＋3，－t－4）
+
+    ⇒∣$\vec{c}$∣＝$\sqrt{(2t+3)^{2}+(-t-4)^{2}}$
+
+    ＝$\sqrt{5t^{2}+20t+25}$
+
+    ＝$\sqrt{5(t+2)^{2}+5}$
+
+    故當 t＝－2 時，∣$\vec{c}$∣的最小值為$\sqrt{5}$'
+  tags:
+    unit:
+      code: MA-B3-3-2
+      book: 數學3B
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3B 平面向量的運算
+    pattern:
+      key: MA-B3-3-2:T14
+      name: 向量線性組合長度極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 解方程式 $log_{2}$（x＋3）＋$log_{2}$（x－2）＝2＋$log_{2}$（x＋1），則 x＝＿＿＿＿。
+  answer:
+  - '5'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由對數的意義知$\begin{cases}x+3 > 0 \\ x-2 > 0 \\ x+1 > 0\end{cases}$ ⇒ x＞2
+
+    解方程式 $log_{2}$（x＋3）＋$log_{2}$（x－2）＝2＋$log_{2}$（x＋1）
+
+    ⇒ $\frac{\log (x +3)}{\log 2}$＋$\frac{\log (x -2)}{\log 2}$＝$\frac{2 \log 2}{\log 2}$＋$\frac{\log (x +1)}{\log 2}$
+
+    ⇒ log（x＋3）＋log（x－2）＝$log2^{2}$＋log（x＋1）
+
+    ⇒ log〔（x＋3）（x－2）〕＝log〔4（x＋1）〕
+
+    ⇒（x＋3）（x－2）＝4x＋4
+
+    ⇒ $x^{2}$－3x－10＝0
+
+    ⇒（x－5）（x＋2）＝0
+
+    ⇒ x＝5 或－2（不合 ∵x＞2）
+
+    故 x＝5'
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T02
+      name: 對數方程式求解與驗根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知某定期存款約定年利率為 36 ％，每月複利一次，若希望本利和可以超過本金的兩倍，則至少需要＿＿＿＿個月。（四捨五入取至整數位，已知 log1.36 $\approx$ 0.1335，log1.03 $\approx$ 0.0128）
+  answer:
+  - '24'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '月利率為$\frac{36 ％}{12}$＝3 ％
+
+    設本金為 A，
+
+    則 n 個月後的本利和為 A（1＋3 ％）$^{n}\geq$2A
+
+    ⇒（1.03）$^{n}\geq$2
+
+    ⇒ log（1.03）$^{n}\geq$log2
+
+    ⇒ n log1.03$\geq$log2
+
+    ⇒ n$\geq\frac{\log 2}{\log 1.03}\approx\frac{0.3010}{0.0128}\approx$ 23.52
+
+    故至少需要 24 個月'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T06
+      name: 常用對數與級數估算應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設－1$\leq$x$\leq$2，函數 f（x）＝－$4^{x}$＋3．$2^{x＋1}$－4 的最大值為 M，最小值為 m，則 M＋m＝ ＿＿＿＿。
+  answer:
+  - $\frac{15}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（x）＝－$4^{x}$＋3．$2^{x＋1}$－4
+
+    ＝－（$2^{x}$）$^{2}$＋6．$2^{x}$－4
+
+    ＝－〔（$2^{x}$）$^{2}$－6．$2^{x}$＋9〕＋5
+
+    ＝－（$2^{x}$－3）$^{2}$＋5
+
+    ∵－1$\leq$x$\leq$2 ∴$\frac{1}{2}\leq2^{x}\leq$4
+
+    當 $2^{x}$＝3 時，有最大值 M＝5
+
+    當 $2^{x}$＝$\frac{1}{2}$時，有最小值 m＝$\frac{-5}{4}$
+
+    故 M＋m＝$\frac{15}{4}$'
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T10
+      name: 指數函數限定區間極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 設$\vec{AB}$＝（6，8），$\vec{AC}$＝（－6，3），則△ABC 周長為＿＿＿＿。
+  answer:
+  - 23＋$3\sqrt{5}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\vec{BC}$＝$\vec{AC}$－$\vec{AB}$＝（－12，－5）
+
+    故△ABC 周長為∣$\vec{AB}$∣＋∣$\vec{AC}$∣＋∣$\vec{BC}$∣
+
+    ＝10＋$3\sqrt{5}$＋13＝23＋$3\sqrt{5}$
+
+    $6.2^{100}$＝（$10^{log2}$）$^{100}$＝$10^{100 log2}$ $\approx$ $10^{30.10}$＝$10^{0.1}$×$10^{30}$
+
+    故 $2^{100}$ 為 31 位數
+
+    7.∵3＝$2^{a}$，48＝$2^{b}$
+
+    ∴a＝$log_{2}$3，b＝$log_{2}$48
+
+    故直線 AB 的斜率 $m_{AB}$＝$\frac{48-3}{b-a}$＝$\frac{45}{\log _{2}48-\log _{2}3}$
+
+    ＝$\frac{45}{\frac{\log 48}{\log 2}-\frac{\log 3}{\log 2}}$＝$\frac{45 \log 2}{\log 16}$＝$\frac{45 \log 2}{4 \log 2}$＝$\frac{45}{4}$
+
+    8.$log_{3}$（$log_{7}$2）－2 $log_{9}$（$log_{7}$8）
+
+    ＝$\frac{\log (\log _{7}2)}{\log 3}$－$\frac{2 \log (\log _{7}8)}{\log 9}$＝$\frac{\log (\log _{7}2)}{\log 3}$－$\frac{2 \log (\log _{7}8)}{2 \log 3}$
+
+    ＝$\frac{\log \left( \frac{\log _{7}2}{\log _{7}8} \right)}{\log 3}$＝$\frac{\log \left( \frac{\frac{\log 2}{\log 7}}{\frac{\log 8}{\log 7}} \right)}{\log 3}$＝$\frac{\log \left( \frac{\log 2}{3 \log 2} \right)}{\log 3}$
+
+    ＝$\frac{\log \frac{1}{3}}{\log 3}$＝$\frac{-\log 3}{\log 3}$＝－1
+
+    9.設所求為 x 倍，則 $x^{0.7}$ $\approx$ 5.011
+
+    ⇒ $logx^{0.7}$ $\approx$ log5.011 $\approx$ 0.7
+
+    ⇒ 0.7 logx $\approx$ 0.7
+
+    ⇒ logx $\approx$ 1
+
+    ⇒ x $\approx$ 10
+
+    故所求約為 10 倍
+
+    10.設需要 t 天，將數據代入可得
+
+    50 ％＝$\frac{1}{1+(344-1) \cdot 7^{-\frac{5}{20}t}}$
+
+    ⇒ 2＝1＋343×$7^{-\frac{1}{4}t}$
+
+    ⇒ $7^{-\frac{1}{4}t}$＝$\frac{1}{343}$＝$7^{－3}$
+
+    ⇒ $-\frac{1}{4}t$＝－3 ⇒ t＝12
+
+    故需要 12 天'
+  tags:
+    unit:
+      code: MA-B3-3-1
+      book: 數學3B
+      chapter: 平面向量
+      title: 平面向量
+      std: true
+    textbook: 數學3B 平面向量
+    pattern:
+      key: MA-B3-3-1:T04
+      name: 單位向量、長度與坐標運算
+    labeled_by: agent
+    label_confidence: high
+    label_note: explanation 欄位混入第6、7題解析
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 美國數學家愛德華．卡斯納的姪子在 1940 年創造 Googol 這個名詞，代表一個極大的數 $10^{100}$。網際網路搜索引擎 Google 的名字由來，就是在 Googol 這個名詞上稍作改變，意旨該公司在網路上擁有無邊無際的訊息資源儲存量。若將 $10^{100}$ 做質因數分解，可寫成 $2^{100}$×$5^{100}$，而 $2^{100}$ 又被稱為 Little Googol，試問 $2^{100}$ 為＿＿＿＿位數。
+  answer:
+  - '31'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T03
+      name: 常用對數近似與數量級
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 A（a，3），B（b，48）都在 y＝$2^{x}$ 的圖形上，則直線 AB 的斜率為＿＿＿＿。
+  answer:
+  - $\frac{45}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T02
+      name: 指數函數圖形交點與斜率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 求 $log_{3}$（$log_{7}$2）－2 $log_{9}$（$log_{7}$8）＝＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T04
+      name: 對數律與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 統計學家克利夫蘭對人體的眼睛詳細研究後發現，我們的眼睛看到圖形面積的大小與此圖形實際面積的 0.7 次方成正比。例如：實際上，大圖形是小圖形的 5 倍，但眼睛感覺到的卻只有 $5^{0.7}$（約為 3.085）倍。現在書上有臺灣和德國的地圖，縮小的比例都一樣。如果從地圖上看起來，德國約是臺灣面積的 5.011 倍，那麼實際上德國面積是臺灣面積的＿＿＿＿倍。（log5.011 $\approx$ 0.7）
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T07
+      name: 常用對數於科學尺度應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: '俗話說：「一傳十，十傳百」，科學家發現資訊擴散的速度成指數型成長，歸結出訊息的擴散模型：訊息在一個城市裡擴散，剛開始時，每 a 人就有一人知道此訊息，若此城市每人每天平均接觸的人數為 b 人，經過 t 天渲染後，城市中知道這訊息的人數比例 I（t）為 I（t）＝$\frac{1}{1+(a-1) \cdot 7^{-\frac{b}{20}t}}$。
+
+    根據此模型，在一人口數為 3440 人的城市裡，城中每人每天平均接觸 5 人，若一開始有 10 人在散播訊息，則表示每 344 人就有一人知道此訊息，試問要讓城市中一半的人都知道此訊息需要＿＿＿＿天。'
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T11
+      name: 指數成長與半衰期衰減建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數B_g11s1e2_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 3
+  stem: '過往將狗的年齡換算成人類的歲數時，通常是直接將狗的年齡乘以 7。但美國加州大學聖地牙哥分校的研究團隊發表了新的狗年齡計算方法，以拉不拉多幼犬及成犬為採集資料，把人類和犬隻的 DNA 變化列入，更符合實際生命歷程。他們得到狗的年齡 t 對應到人類的年齡的公式為：f（t）＝37×log（t）＋31，其中 t$\geq$0.17。試回答以下問題。
+
+    (1) 根據這個公式，8 歲的狗最接近人類的幾歲？（單選題，3 分）
+
+    (2) 若有甲、乙兩隻狗，換算為人類歲數後，分別為 46. 3 歲和 35.1 歲，試問甲的實際年齡是乙的實際年齡多少倍？（非選擇題，5 分）（四捨五入到整數位）'
+  options:
+  - label: A
+    content: '56'
+  - label: B
+    content: '58'
+  - label: C
+    content: '60'
+  - label: D
+    content: '62'
+  - label: E
+    content: '64'
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T04
+      name: 對數函數圖形與銷售預測
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

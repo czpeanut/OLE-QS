@@ -1,0 +1,562 @@
+document:
+  id: doc_109_台中_台中二中_數學_數B_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 109
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 台中二中
+  school: 臺中市立臺中第二高級中等學校
+  title: 臺中市立臺中第二高級中等學校 109學年度第1學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 109學年度第1學期第2次定期評量
+  source_file: 高二/數學/109/1-2/台中/台中二中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 18 分）（每題全對得 6 分，錯 1 個得 4 分，錯 2 個得 2 分， 其餘得 0 分）
+    count: 3
+  - ord: 2
+    name: 二、填充題（每格 6 分，共 60 分）
+    count: 7
+  - ord: 3
+    name: 三、混合題（每題 6 分，共 24 分）
+    count: 3
+questions:
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列哪些運算式子合理？
+  options:
+  - label: A
+    content: $\log _{\sqrt{2}}3$＝$log_{2}$9
+  - label: B
+    content: log2＋log3＝log5
+  - label: C
+    content: log（－2）$^{10}$＝10×log（－2）
+  - label: D
+    content: $log_{3}$4×$log_{4}$5×$log_{5}$6＝2
+  - label: E
+    content: $9^{\log _{3}2}=4$
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：$\log _{\sqrt{2}}3=\frac{1}{\frac{1}{2}}\log _{2}3$＝2 $log_{2}$3＝$log_{2}$9
+
+    (B) ╳：log2＋log3＝log6≠log5
+
+    (C) ╳：log（－2）無意義
+
+    (D) ╳：$log_{3}$4×$log_{4}$5×$log_{5}$6＝$log_{3}$6＝1＋$log_{3}$2
+
+    (E) ○：$9^{\log _{3}2}$＝（$3^{\log _{3}2}$）$^{2}$＝$2^{2}$＝4
+
+    故選(A)(E)'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T01
+      name: 對數定義與對數律運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 關於兩函數 y＝$f_{1}$（x）＝$(\sqrt{2} )^{x}$和 y＝$f_{2}$（x）＝$\left( \frac{\sqrt{2}}{2} \right) ^{x}$的圖形，下列哪些選項正確？
+  options:
+  - label: A
+    content: 兩函數均為嚴格遞增函數
+  - label: B
+    content: 兩函數圖形均凹口向上
+  - label: C
+    content: 兩函數圖形只有一個交點
+  - label: D
+    content: 兩函數圖形對稱於 y 軸
+  - label: E
+    content: y＝$f_{1}$（x）和$y =\sqrt{2} \log x$函數圖形對稱於直線 y＝x
+  answer:
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：∵0＜$\frac{\sqrt{2}}{2}$＜1
+
+    ∴$f_{2}$（x）為嚴格遞減函數
+
+    (B) ○：指數函數皆為凹口向上
+
+    (C) ○：交（0，1）
+
+    (D) ○：∵$\sqrt{2}$．$\frac{\sqrt{2}}{2}$＝1
+
+    ∴$f_{1}$（x）、$f_{2}$（x）對稱於 y 軸
+
+    (E) ╳：y＝（$\sqrt{2}$）$^{x}$ 和$y =\log _{\sqrt{2}}x$對稱於 y＝x
+
+    且$y =\log _{\sqrt{2}}x$≠$\sqrt{2}$logx
+
+    故選(B)(C)(D)'
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T01
+      name: 指數函數圖形與對稱性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 設 t 是不為零的實數，關於對數函數 f（x）＝t．logx，下列敘述哪些正確？
+  options:
+  - label: A
+    content: 若 t＞0，f（x）的圖形均在 x 軸上方
+  - label: B
+    content: 若 t＜0，f（x）為嚴格遞減函數
+  - label: C
+    content: 若 t≠0，f（x）的圖形凹口向上
+  - label: D
+    content: 若 f（x）＝f（π），則 x＝π
+  - label: E
+    content: 若 0＜t＜1 且 $x_{1}$＜$x_{2}$，則 f（$x_{1}$）＞f（$x_{2}$）
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：反例：t＝1
+
+    (B) ○：∵logx 為嚴格遞增函數
+
+    ∴當 t＜0，t．logx 為嚴格遞減函數
+
+    (C) ╳：t＞0 時為凹口向下
+
+    (D) ○：∵f（x）＝t．logx 為嚴格遞增函數或嚴格遞減函數
+
+    ∴當 f（x）＝f（π）時，x＝π
+
+    (E) ╳：當 0＜t＜1 時，f（x）為嚴格遞增函數
+
+    故 $x_{1}$＜$x_{2}$ 時，f（$x_{1}$）＜f（$x_{2}$）
+
+    故選(B)(D)'
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T01
+      name: 對數函數圖形單調性凹向
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '計算下列各式的值：
+
+    (1) $\frac{1}{\log _{2}100}+\frac{1}{\log _{5}100}$＝＿＿＿＿。
+
+    (2) （$log_{2}$3－$log_{2}$9）×（$log_{3}$4＋$log_{9}$2）＝＿＿＿＿。'
+  answer:
+  - (1) $\frac{1}{2}$；(2) $-\frac{5}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) $\frac{1}{\log _{2}100}+\frac{1}{\log _{5}100}$＝$log_{100}$2＋$log_{100}$5＝$log_{100}$10
+
+    ＝$\frac{1}{2} \log _{10}10=\frac{1}{2}$
+
+    (2) 原式化為（$log_{2}$3－2 $log_{2}$3）×$\left( 2 \log _{3}2+\frac{1}{2} \log _{3}2 \right)$
+
+    ＝－$log_{2}$3×$\frac{5}{2}$ $log_{3}$2＝$-\frac{5}{2}$'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T01
+      name: 對數定義與對數律運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 若 x＝log2，則 $100^{x}$－（0.1）$^{x}$＝＿＿＿＿。
+  answer:
+  - $\frac{7}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'x＝log2 ⇔ $10^{x}$＝2
+
+    ∴$100^{x}$－$0.1^{x}$＝$10^{2x}$－$\left( \frac{1}{10} \right) ^{x}$＝（$10^{x}$）$^{2}$－（$10^{x}$）$^{－1}$
+
+    ＝$2^{2}$－$2^{－1}$＝4－$\frac{1}{2}$＝$\frac{7}{2}$'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T02
+      name: 指數與對數互化求代數值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: '實數 A、B 滿足 logA＝3.9、logB＝7.8，則$\log (A+\sqrt{B} )$的值最接近的正整數為 n，則
+
+    n＝＿＿＿＿。'
+  answer:
+  - '4'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'logA＝3.9 ⇒ A＝$10^{3.9}$，logB＝7.8 ⇒ B＝$10^{7.8}$
+
+    ∴$\log (A+\sqrt{B} )$＝$\log (10^{3.9}+\sqrt{10^{7.8}} )$＝log（2×$10^{3.9}$）
+
+    ＝log2＋$log10^{3.9}$ ≈ 0.3010＋3.9＝4.2010
+
+    故 n＝4'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T03
+      name: 常用對數近似與數量級
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: '解下列指對數方程式：
+
+    (1) $log_{3}$x＝9×$log_{x}$3：＿＿＿＿。
+
+    (2) log（$10^{x}$－1000）＝$\frac{x}{2}$＋1＋log9：＿＿＿＿。'
+  answer:
+  - (1) x＝27 或$\frac{1}{27}$；(2) x＝4
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 令 t＝$log_{3}$x ⇒ $log_{x}$3＝$\frac{1}{t}$
+
+    原式 ⇒ t＝9×$\frac{1}{t}$ ⇒ t＝±3 ⇒ $log_{3}$x＝±3
+
+    ∴x＝$3^{3}$ 或 $3^{－3}$ ⇒ x＝27 或$\frac{1}{27}$
+
+    (2) 原式 ⇒ log（$10^{x}$－1000）＝log$10^{\frac{x}{2}}$＋log10＋log9
+
+    ⇒ log（$10^{x}$－1000）＝$\log (90\times 10^{\frac{x}{2}})$
+
+    ∴$10^{x}$－1000＝90×$10^{\frac{x}{2}}$ ⇒ $(10^{\frac{x}{2}}-100)(10^{\frac{x}{2}}+10)$＝0
+
+    ⇒ $10^{\frac{x}{2}}$＝100 或－10（不合） ⇒ $\frac{x}{2}$＝2 ⇒ x＝4'
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T02
+      name: 對數方程式求解與驗根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: '解下列指對數不等式：
+
+    (1) $4^{x}$－5×$2^{x}$＋4 ≤ 0：＿＿＿＿。
+
+    (2) log（x＋1） ≤ 3：＿＿＿＿。'
+  answer:
+  - (1) 0 ≤ x ≤ 2；(2) －1＜x ≤ 999
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 原式 ⇒ （$2^{x}$－4）（$2^{x}$－1） ≤ 0 ⇒ 1 ≤ $2^{x}$ ≤ 4
+
+    ⇒ 0 ≤ x ≤ 2
+
+    (2) log（x＋1） ≤ 3 ⇒ log（x＋1） ≤ log1000
+
+    ⇒ x＋1 ≤ 1000，又 x＋1＞0
+
+    ⇒ －1＜x ≤ 999
+
+    $6.9^{x}$＝2 ⇒ x＝$log_{9}$2，故 P（$log_{9}$2，2）
+
+    $9^{x}$＝6 ⇒ x＝$log_{9}$6，故 Q（$log_{9}$6，6）
+
+    ⇒ $\overset{\leftarrow \rightarrow}{PQ}$斜率＝$\frac{6-2}{\log _{9}6-\log _{9}2}=\frac{4}{\log _{9}3}=\frac{4}{\frac{1}{2} \log _{3}3}$＝8
+
+    7.設 $n_{甲}$（t）、$n_{乙}$（t）分別為細菌甲、乙 t 天之數量
+
+    則 $n_{甲}$（t）＝$n_{甲}$(0)×$4^{\frac{t}{3}}$ ………………①
+
+    $n_{乙}$（t）＝$n_{乙}$(0)×$2^{\frac{t}{2}}$ ………………②
+
+    又 $n_{甲}$(0)＝$n_{乙}$(0)
+
+    $\frac{①}{②}$ ⇒ $\frac{n_{甲}(t)}{n_{乙}(t)}=\frac{4^{\frac{t}{3}}}{2^{\frac{t}{2}}}$＝$2^{\frac{2}{3}t-\frac{t}{2}}$＝$2^{\frac{1}{6}t}$
+
+    ⇒ $2^{\frac{1}{6}t}$＞1000 ⇒ $\log 2^{\frac{1}{6}t} > \log 1000$
+
+    ⇒ $\frac{1}{6}t \log 2$＞3 ⇒ t＞$\frac{3\times 6}{0.3010}$
+
+    ⇒ t＞59.8……
+
+    故 t 的最小正整數值為 60'
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T03
+      name: 指對數不等式求解定義域
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 右圖為 y＝$9^{x}$ 的圖形。設 P、Q 分別為直線 y＝2、y＝6 和 y＝$9^{x}$ 的交點，則直線$\overset{\leftarrow \rightarrow}{PQ}$的斜率為＿＿＿＿。
+  assets:
+  - key: s2_6_f1
+    kind: figure
+    file: doc_109_台中_台中二中_數學_數B_g11s1e2/s2_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 432.15
+      - 51.9
+      - 564.3
+      - 215.25
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T02
+      name: 指數函數圖形交點與斜率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 實驗室發現在水中當細菌甲是細菌乙的千倍以上時，有利於孑孓的生長。根據過往經驗可知細菌甲每 3 天增長為原來的 4 倍，細菌乙每 2 天增長為原來的 2 倍。若現在取相同數量的細菌甲、乙進行培養，則 t 天後即可發展成利於孑孓的生長環境，則 t 的最小正整數值為＿＿＿＿。
+  answer:
+  - '60'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T03
+      name: 指數成長倍數比較與估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: single
+  page: 2
+  stem: '若<u>阿兩</u>打算借貸 10 萬元，並於十年後一次償還完。按照上述銀行條件，<u>阿兩</u>應該如何選擇？（單選題）
+
+    $■答$：＿＿＿＿。'
+  options:
+  - label: A
+    content: 選擇甲銀行，可比另一家銀行少還約 600 元
+  - label: B
+    content: 選擇甲銀行，可比另一家銀行少還約 26000 元
+  - label: C
+    content: 選擇乙銀行，可比另一家銀行少還約 600 元
+  - label: D
+    content: 選擇乙銀行，可比另一家銀行少還約 26000 元
+  - label: E
+    content: 不管選擇甲或乙銀行，歸還的總金額均相同
+  group_stem: '）
+
+    2020 年由於新冠肺炎疫情衝擊產業，各家銀行配合政府振興經濟政策，紛紛推出各自的紓困方案，以提供民眾申請不需任何抵押品擔保的小額貸款。今有兩家銀行的紓困方案如下所示：
+
+    甲銀行：貸款年利率 4 ％，每一年複利計息一次。
+
+    乙銀行：貸款年利率 4 ％，每半年複利計息一次。
+
+    （參考數據：$1.02^{10}$ ≈ 1.219；$1.02^{20}$ ≈ 1.486；$1.04^{10}$ ≈ 1.480；$1.04^{20}$ ≈ 2.191；$1.08^{10}$ ≈ 2.16）'
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T04
+      name: 複利計息方案比較本利和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s3_3
+  section: 3
+  number: 3
+  type: single
+  page: 3
+  stem: '根據文中的對數函數與圖形，請選出正確的選項？（多重選擇題）
+
+    $■答$：＿＿＿＿。'
+  options:
+  - label: A
+    content: k＜0
+  - label: B
+    content: 0＜a＜1.5
+  - label: C
+    content: 1.5 ≤ a＜3
+  - label: D
+    content: 當 1 ≤ x ≤ 30 時，y＝log（x＋k）恆在 y＝$log_{a}$（x＋k）圖形的上方
+  - label: E
+    content: 當 1 ≤ x ≤ 30 時，y＝$log_{a}$x 恆在 y＝$log_{a}$（x＋k）圖形的下方
+  group_stem: '）
+
+    S 公司於 2020 年 11 月 19 日於全球發行最新的次世代遊戲主機 PS5， 在上市之前公司內部以對數函數 y＝$log_{a}$（x＋k）來預估上市後一個月 內的銷售總數量（如右圖所示），此函數表示從銷售日算起 x 天後 （0 ≤ x ≤ 30），共可賣出 y 百萬臺主機，其中 a、k 為常數。'
+  shared_asset: g3_3_4
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T04
+      name: 對數函數圖形與銷售預測
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹標註為多重選擇題但type為single
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數B_g11s1e2_s3_4
+  section: 3
+  number: 4
+  type: calc
+  page: 3
+  stem: S 公司營銷部門希望「能在 30 天內賣出千萬臺主機」。如果按照此對數函數來推估，營銷部門是否能達成這個目標，請說明你的理由？（計算證明題，需寫出詳細計算或推論過程才給分）
+  group_stem: '）
+
+    S 公司於 2020 年 11 月 19 日於全球發行最新的次世代遊戲主機 PS5， 在上市之前公司內部以對數函數 y＝$log_{a}$（x＋k）來預估上市後一個月 內的銷售總數量（如右圖所示），此函數表示從銷售日算起 x 天後 （0 ≤ x ≤ 30），共可賣出 y 百萬臺主機，其中 a、k 為常數。'
+  shared_asset: g3_3_4
+  answer:
+  - ∵$y =\log _{\sqrt{2}}(x+1)$為遞增函數
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T04
+      name: 對數函數圖形與銷售預測
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+shared_assets:
+- key: g3_3_4
+  label: 題組附圖
+  kind: figure
+  file: doc_109_台中_台中二中_數學_數B_g11s1e2/g3_3_4_f1.png
+  used_by:
+  - doc_109_台中_台中二中_數學_數B_g11s1e2_s3_3
+  - doc_109_台中_台中二中_數學_數B_g11s1e2_s3_4
+  crop:
+    page: 3
+    rect:
+    - 442.45
+    - 56.3
+    - 555.65
+    - 166.1

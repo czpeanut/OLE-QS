@@ -1,0 +1,604 @@
+document:
+  id: doc_109_台北_北一女中_數學_g10s2e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 2
+  city: 台北
+  school_short: 北一女中
+  school: 臺北市立第一女子高級中學
+  title: 臺北市立第一女子高級中學 109學年度第2學期第2次定期評量 高一數學科試題
+  exam_name: 109學年度第2學期第2次定期評量
+  source_file: 高一/數學/109/2-2/台北/北一女中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 25 分）
+    count: 5
+  - ord: 2
+    name: 二、多重選擇題（每題 10 分，共 20 分）
+    count: 2
+  - ord: 3
+    name: 三、填充題（每格 5 分，共 35 分）
+    count: 4
+  - ord: 4
+    name: 四、計算與證明題（共 10 分）
+    count: 1
+  - ord: 5
+    name: 五、混合題（共 10 分）
+    count: 1
+questions:
+- id: doc_109_台北_北一女中_數學_g10s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 兩等差數列之前 n 項和的比為（4n＋1）：（7n－2），則其第 6 項的比為何？
+  options:
+  - label: A
+    content: 5：8
+  - label: B
+    content: 4：7
+  - label: C
+    content: 1：2
+  - label: D
+    content: 5：7
+  - label: E
+    content: 3：5
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{6}$：$b_{6}$＝$11a_{6}$：$11b_{6}$
+
+    ＝（$a_{1}$＋$a_{2}$＋……＋$a_{11}$）：（$b_{1}$＋$b_{2}$＋……＋$b_{11}$）
+
+    ＝（4×11＋1）：（7×11－2）＝45：75
+
+    ＝3：5
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T01
+      name: 等比分段和與等差奇偶和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_北一女中_數學_g10s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 有一項數為偶數的等比數列，其首項為 5，奇數項和為 1705，偶數項和為 3410，則其項數為何？
+  options:
+  - label: A
+    content: '6'
+  - label: B
+    content: '8'
+  - label: C
+    content: '10'
+  - label: D
+    content: '12'
+  - label: E
+    content: '14'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令公比 r，
+
+    則前 n 項為 5，5r，$5r^{2}$，……，$5r^{n-1}$
+
+    $\begin{cases}5+5r^{2}+\ldots \ldots +5r^{n-2}=1705 \ldots \ldots \ldots \ldots \ldots ① \\ 5r+5r^{3}+\ldots \ldots +5r^{n-1}=3410\ldots \ldots \ldots \ldots \ldots ②\end{cases}$
+
+    $\frac{②}{①}$得 r＝2
+
+    故 1705＋3410＝$5+5\times 2+5\times 2^{2}+\ldots \ldots +5\times 2^{n-1}$＝$\frac{5 (2^{n}-1)}{2-1}$
+
+    ⇒ 5（$2^{n}$－1）＝5115
+
+    ⇒ $2^{n}$＝1024 ⇒ n＝10
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T01
+      name: 等比分段和與等差奇偶和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_北一女中_數學_g10s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 若$\frac{1}{1\times 2\times 3}+\frac{1}{2\times 3\times 4}+\frac{1}{3\times 4\times 5}+\ldots \ldots +\frac{1}{n (n+1) (n+2)}=\frac{11}{45}$，則自然數 n＝？
+  options:
+  - label: A
+    content: '5'
+  - label: B
+    content: '6'
+  - label: C
+    content: '7'
+  - label: D
+    content: '8'
+  - label: E
+    content: '9'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{1}{1\times 2\times 3}+\frac{1}{2\times 3\times 4}+\ldots \ldots +\frac{1}{n (n+1) (n+2)}$
+
+    ＝$\frac{1}{2} \left[ \left( \frac{1}{1\times 2}-\frac{1}{2\times 3} \right) + \left( \frac{1}{2\times 3}-\frac{1}{3\times 4} \right) +\ldots \ldots +\left( \frac{1}{n (n+1)}-\frac{1}{(n+1) (n+2)} \right) \right]$
+
+    ＝$\frac{1}{2} \left( \frac{1}{2}-\frac{1}{(n+1) (n+2)} \right) =\frac{11}{45}$
+
+    ⇒ $\frac{1}{(n+1) (n+2)}=\frac{1}{2}-\frac{22}{45}=\frac{1}{90}$
+
+    ⇒ （n＋1）（n＋2）＝90
+
+    ⇒ $n^{2}$＋3n－88＝0
+
+    ⇒ （n－8）（n＋11）＝0
+
+    ⇒ n＝8 或－11（不合）
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T12
+      name: 裂項相消與有理化對消求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_北一女中_數學_g10s2e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 數列$\frac{1}{1}$，$\frac{2}{1}$，$\frac{1}{2}$，$\frac{3}{1}$，$\frac{2}{2}$，$\frac{1}{3}$，$\frac{4}{1}$，$\frac{3}{2}$，$\frac{2}{3}$，$\frac{1}{4}$，……，依此規則，若此數列的 第 n 項為$\frac{20}{21}$，則 n＝？
+  options:
+  - label: A
+    content: '800'
+  - label: B
+    content: '801'
+  - label: C
+    content: '802'
+  - label: D
+    content: '803'
+  - label: E
+    content: '804'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T04
+      name: 圖形與數字陣列規律計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_北一女中_數學_g10s2e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 設數列〈$a_{n}$〉滿足$a_{1}=\frac{1}{3}$，$a_{n+1}=\frac{1}{2-a_{n}}$，n ≥ 1，若 $| a_{n}-1 | < \frac{1}{200}$，則 n 之最小值為何？
+  options:
+  - label: A
+    content: '200'
+  - label: B
+    content: '201'
+  - label: C
+    content: '202'
+  - label: D
+    content: '203'
+  - label: E
+    content: '204'
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{2}$＝$\frac{1}{2-a_{1}}$＝$\frac{1}{2-\frac{1}{3}}$＝$\frac{3}{5}$
+
+    $a_{3}$＝$\frac{1}{2-a_{2}}$＝$\frac{1}{2-\frac{3}{5}}$＝$\frac{5}{7}$，……，$a_{n}=\frac{2n-1}{2n+1}$
+
+    $| a_{n}-1 | < \frac{1}{200}$
+
+    ⇒ $\frac{2}{2n+1} < \frac{1}{200}$
+
+    ⇒ 400＜2n＋1
+
+    ⇒ $\frac{399}{2} < n$
+
+    得 n 的最小值為 200
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T02
+      name: 遞迴關係推算與累加求通項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_北一女中_數學_g10s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: '下表是針對 110 學年度高一新生所做的數學能力指標級分人數累計表。定義頂標、前標、均標、後標、底標分別為第 88、75、50、25、12 百分位數。則下列哪些正確？
+
+    | 級分 | 10 | 9 | 8 | 7 | 6 | 5 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | 人數 | 19 | 100 | 103 | 105 | 170 | 68 |
+
+    | 累計人數 | 800 | 781 | 681 | 578 | 473 | 303 |
+
+    | 級分 | 4 | 3 | 2 | 1 | 0 |  |
+
+    | 人數 | 54 | 51 | 50 | 48 | 32 |  |
+
+    | 累計人數 | 235 | 181 | 130 | 80 | 32 |  |'
+  options:
+  - label: A
+    content: 頂標為 10 級分
+  - label: B
+    content: 前標為 8 級分
+  - label: C
+    content: 均標為 7 級分
+  - label: D
+    content: 後標為 4 級分
+  - label: E
+    content: 底標為 2 級分
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：$800\times \frac{88}{100}=704$ ⇒ 頂標為 9 級分
+
+    (B) ○：$800\times \frac{75}{100}=600$ ⇒ 前標為 8 級分
+
+    (C) ╳：$800\times \frac{50}{100}=400$ ⇒ 均標為 6 級分
+
+    (D) ○：$800\times \frac{25}{100}=200$ ⇒ 後標為 4 級分
+
+    (E) ○：$800\times \frac{12}{100}=96$ ⇒ 底標為 2 級分
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T01
+      name: 集中趨勢與百分位數累計計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_北一女中_數學_g10s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 若原有 10 筆數據 $x_{1}$，$x_{2}$，……，$x_{10}$，其平均數為 40，標準差為 10，將原始數據線性調整後得 $y_{i}$，$y_{i}$＝－$2x_{i}$＋5，將原始數據 $x_{i}$ 標準化後得數據 $z_{i}$，下列敘述哪些正確？
+  options:
+  - label: A
+    content: $x_{1}$＋$x_{2}$＋……＋$x_{10}$＝400
+  - label: B
+    content: $z_{1}$＋$z_{2}$＋……＋$z_{10}$＝0
+  - label: C
+    content: $z_{1}^{2}$＋$z_{2}^{2}$＋……＋$z_{10}^{2}$＝10
+  - label: D
+    content: y 的平均數為－75
+  - label: E
+    content: y 的標準差為－20
+  answer:
+  - A
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：∵$x_{1}$，$x_{2}$，……，$x_{10}$ 平均為 40
+
+    ∴$\frac{x_{1}+x_{2}+\ldots \ldots +x_{10}}{10}=40$
+
+    ⇒ $x_{1}$＋$x_{2}$＋……＋$x_{10}$＝400
+
+    (B)(C) ○：∵$z_{1}$，$z_{2}$，……，$z_{10}$ 為標準化數據
+
+    ∴$z_{1}$，$z_{2}$，……，$z_{10}$ 平均為 0，標準差為 1
+
+    $\begin{cases}\frac{z_{1}+z_{2}+\ldots \ldots +z_{10}}{10}=0 \\ \frac{z_{1}^{2}+z_{2}^{2}+\ldots \ldots +z_{10}^{2}}{10}-0^{2}=1\end{cases}$ ⇒ $\begin{cases}z_{1}+z_{2}+\ldots \ldots +z_{10}=0 \\ z_{1}^{2}+z_{2}^{2}+\ldots \ldots +z_{10}^{2}=10\end{cases}$
+
+    (D) ○ (E) ╳：∵$y_{i}$＝－$2x_{i}$＋5
+
+    ∴μ$_{y}$＝－2μ$_{x}$＋5＝－75，σ$_{y}$＝∣－2∣σ$_{x}$＝20
+
+    故選(A)(B)(C)(D)'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_北一女中_數學_g10s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 一顆球從 1024 公尺的高處自由落下，每次著地後又彈回原高度的$\frac{1}{2}$再落下，則當球第 10 次著地時，所經過的路徑長為＿＿＿＿公尺。
+  answer:
+  - '3068'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$1024+1024\times \frac{1}{2}\times 2+1024\times \left( \frac{1}{2} \right) ^{2}\times 2+\ldots \ldots +1024\times \left( \frac{1}{2} \right) ^{9}\times 2$
+
+    ＝1024＋2（$2^{9}$＋$2^{8}$＋……＋2）
+
+    ＝$1024+2\times \frac{2 (2^{9}-1)}{2-1}$
+
+    ＝1024＋2044
+
+    ＝3068
+
+    故所經過的路徑長為 3068 公尺'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T03
+      name: 複利儲蓄與等比費率求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_北一女中_數學_g10s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: '在機器學習的實務中，對於未分群的資料進行分群是一件重要的課題，其中最基本的方法就是 K-means 分群法（K-means Clustering），透過疊代最佳化的技術，反覆更新群體的中心點和群體資料，以降低誤差函數值，當目標的誤差函數值不再下降，群體中心不再變動，即完成分群。設今一群體中有 10 筆一維數據
+
+    （$x_{1}$，$x_{2}$，$x_{3}$，$x_{4}$，$x_{5}$，$x_{6}$，$x_{7}$，$x_{8}$，$x_{9}$，$x_{10}$）＝（30，40，40，40，50，50，50，50，60，70），K-means 常用的群體中心點即為使（$x_{1}$－p）$^{2}$＋（$x_{2}$－p）$^{2}$＋（$x_{3}$－p）$^{2}$＋……＋（$x_{10}$－p）$^{2}$ 有最小值的實數 p，則：
+
+    (1) p＝＿＿＿＿。
+
+    (2) 這 10 筆一維數據（$x_{1}$，$x_{2}$，$x_{3}$，$x_{4}$，$x_{5}$，$x_{6}$，$x_{7}$，$x_{8}$，$x_{9}$，$x_{10}$）＝（30，40，40，40，50，50，50，50，60，70）的標準差為＿＿＿＿。'
+  answer:
+  - (1) 48；(2) $2\sqrt{29}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 f（x）＝（$x_{1}$－x）$^{2}$＋（$x_{2}$－x）$^{2}$＋……＋（$x_{10}$－x）$^{2}$
+
+    ＝$10x^{2}$－2（$x_{1}$＋$x_{2}$＋……＋$x_{10}$）x＋（$x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{10}^{2}$）
+
+    ＝10（$x^{2}$－2μ$_{x}$×x＋μ$_{x}^{2}$）＋（$x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{10}^{2}$）－10μ$_{x}^{2}$
+
+    ＝10（x－μ$_{x}$）$^{2}$＋10σ$_{x}^{2}$
+
+    (1) 當 x＝μ$_{x}$＝$\frac{1}{10} (30+40+40+40+50+50+50+50+60+70)$＝48 時
+
+    f（x）有最小值
+
+    故 p＝48
+
+    (2) f(48)＝（－18）$^{2}$＋（－8）$^{2}$＋（－8）$^{2}$＋（－8）$^{2}$＋$2^{2}$＋$2^{2}$＋$2^{2}$＋$2^{2}$＋$12^{2}$＋$22^{2}$＝10σ$_{x}^{2}$
+
+    ⇒ 10σ$_{x}^{2}$＝324＋64×3＋4×4＋144＋484
+
+    ⇒ 10σ$_{x}^{2}$＝1160
+
+    ⇒ σ$_{x}^{2}$＝116
+
+    ⇒ $\sigma _{x}=2\sqrt{29}$'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T02
+      name: 變異數標準差計算與增減變動
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_北一女中_數學_g10s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: '設數列〈$a_{n}$〉滿足 $a_{1}$＝5，$a_{n+1}=10a_{n}+9$。
+
+    (1) 若$a_{n+1}-\alpha =10 (a_{n}-\alpha )$，則α＝＿＿＿＿。
+
+    (2) 求 $a_{225}$ 乘開後的各位數字和為＿＿＿＿。'
+  answer:
+  - (1) －1；(2) 2021
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T02
+      name: 遞迴關係推算與累加求通項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_北一女中_數學_g10s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: '某班學生共 60 人，分 A、B 兩組參加數學競試，各組人數、平均及標準差如右表，則：
+
+    | 組別 | 人數 | 平均 | 標準差 |
+
+    | --- | --- | --- | --- |
+
+    | A | 20 | 50 | 10 |
+
+    | B | 40 | 80 | 5 |
+
+    (1) 全班的平均數為＿＿＿＿。
+
+    (2) 全班的標準差為＿＿＿＿。'
+  answer:
+  - (1) 70；(2) $5\sqrt{10}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 全班的平均數為$\frac{20\times 50+40\times 80}{60}$＝$\frac{4200}{60}$＝70
+
+    (2) 令 A 組 20 人的成績為 $x_{1}$，$x_{2}$，……，$x_{20}$
+
+    B 組 40 人的成績為 $x_{21}$，$x_{22}$，……，$x_{60}$
+
+    則$\begin{cases}\frac{x_{1}^{2}+x_{2}^{2}+\ldots \ldots +x_{20}^{2}}{20}-50^{2}=10^{2} \\ \frac{x_{21}^{2}+x_{22}^{2}+\ldots \ldots +x_{60}^{2}}{40}-80^{2}=5^{2}\end{cases}$ ⇒ $\begin{cases}x_{1}^{2}+x_{2}^{2}+\ldots \ldots +x_{20}^{2}=52000 \\ x_{21}^{2}+x_{22}^{2}+\ldots \ldots +x_{60}^{2}=257000\end{cases}$
+
+    故全班的標準差為$\sqrt{\frac{x_{1}^{2}+x_{2}^{2}+\ldots \ldots +x_{60}^{2}}{60}-70^{2}}$＝$\sqrt{\frac{309000}{60}-4900}$＝$\sqrt{250}$＝$5\sqrt{10}$'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T04
+      name: 分組資料合併與缺漏數據反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_北一女中_數學_g10s2e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '已知對所有正整數 n，$2^{n+2}+7^{n}$恆為某一質數 P 的倍數。
+
+    (1) 求此質數 P。（2 分）
+
+    (2) 試以數學歸納法驗證(1)是正確的。（8 分）'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T03
+      name: 數學歸納法猜測與倍數證明
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_北一女中_數學_g10s2e2_s5_1
+  section: 5
+  number: 1
+  type: single
+  page: 3
+  stem: '有 5 筆二維數據（x，y）：A（－1，1）、B（0，3）、C（2，5）、D（3，7）、E（4，2），
+
+    (1) 作出這 5 筆二維數據的散布圖。（2 分）
+
+    (2) 試問去掉哪一筆數據後，剩下 4 筆數據的相關係數最大？（單選，2 分）
+
+    (3) 承(2)，求剩下 4 筆數據相關係數的最大值為何？（3 分）
+
+    (4) 承(2)，求剩下 4 筆數據 y 對 x 的最適直線為何？（3 分）'
+  options:
+  - label: A
+    content: A
+  - label: B
+    content: B
+  - label: C
+    content: C
+  - label: D
+    content: D
+  - label: E
+    content: E
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T02
+      name: 相關係數與迴歸直線直接計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

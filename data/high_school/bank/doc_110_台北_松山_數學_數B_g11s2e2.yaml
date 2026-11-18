@@ -1,0 +1,395 @@
+document:
+  id: doc_110_台北_松山_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 2
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 110學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 110學年度第2學期第2次定期評量
+  source_file: 高二/數學/110/2-2/台北/松山_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題：每題6分，共30分。
+    count: 5
+  - ord: 2
+    name: 二、填充題：每格5分，共60分。
+    count: 7
+  - ord: 3
+    name: 三、混合題：10分（題目詳見答案卷）
+    count: 1
+questions:
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設A，B為樣本空間中的兩事件，請選出正確的選項。
+  options:
+  - label: '1'
+    content: 若A'與B'為獨立事件，則A與B為獨立事件
+  - label: '2'
+    content: 若A≠φ且P(B|A)＝P(B)，則A與B為獨立事件
+  - label: '3'
+    content: P(A∪B)＝P(A)+P(B)－P(A)P(B)
+  - label: '4'
+    content: 若A＝φ，則A與B為獨立事件
+  - label: '5'
+    content: 若A與B為互斥事件，則A與B為獨立事件
+  explanation: (1)○。 (2)○。 (3)×：P(A∪B)＝P(A)＋P(B)－P(A∩B)。 (4)○：A＝φ ⇒ P(A∩B)＝0＝P(A)P(B)。 (5)×：A、B互拆 ⇒ P(A∩B)＝0， 但P(A)P(B)不一定等於0。 故選(1)(2)(4)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: calc
+  page: 1
+  stem: 投擲一枚均勻的硬幣3次，下列哪些敘述正確？ (1)三次依序為正面、正面、反面的機率為$\frac{1}{8}$ (2)三次都是正面的機率為$\frac{1}{8}$ (3)若三次都是同一面，則第三次出現正面的機率為$\frac{1}{4}$ (4)若前兩次都出現正面，則第三次出現正面的機率為$\frac{1}{2}$ (5)若三次中恰出現1次正面，則第三次出現正面的機率為$\frac{1}{2}$
+  answer:
+  - (1)(2)(4)
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: calc
+  page: 1
+  stem: 保險公司把投保竊盗險的住宅分為A、B兩級，其所占比率分別為60%、40%·。過去一年A、B兩級住宅遭竊的比率分別為15%、5%。據此，公司推估未來一年A、B兩級住宅被竊的機率分別為0.15、0.05。今A級住宅中的20%經過改善，重新推估這些改善過的住宅未來一年被竊的機率會降為0.03；而其他住宅被竊機率不變。根據以上資料，試選出正確的選項。 (1)全體投保的住宅中，過去一年遭竊的比率為12% (2)過去一年遭竊的投保住宅中，A級所占的比率超過90% (3)推估未來一年，改善過的A級住宅的被竊機率為原來的$\frac{1}{5}$ (4)經改善後，推估未來一年被竊機率，全體投保的A級住宅會小於全體投保的B級住宅 (5)經改善後，推估未來一年全體投保的住宅被竊機率小於0.11
+  answer:
+  - (3)(5)
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T01
+      name: 貝氏定理與條件事後機率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s1_4
+  section: 1
+  number: 4
+  type: calc
+  page: 1
+  stem: 籤筒的5支籤中1支有獎，甲、乙與丙三人依序各抽一支籤，且抽完後不放回，每支籤被抽到的機率均等，則下列哪些敘述正確？ (1)甲、乙都沒中獎的機率為0.6 (2)甲、乙與丙都沒中獎的機率為0.4 (3)已知甲、乙有人中獎的條件下，甲中獎的機率比乙中獎的機率大 (4)已知甲沒中獎的條件下，乙中獎的機率為0.25 (5)甲、乙與丙三人中，甲中獎的機率最大
+  answer:
+  - (1)(2)(4)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1)○：$\frac{4}{5}$×$\frac{3}{4}$=0.6。 (2)○：$\frac{4}{5}$×$\frac{3}{4}$×$\frac{2}{3}$=0.4。 (3)×：P(甲中｜甲、乙有人中) ＝$\frac{\frac{1}{5}\times \frac{4}{4}}{1-\frac{4}{5}\times \frac{3}{4}}$＝$\frac{1}{2}$。 P(乙中｜甲、乙有人中) ＝$\frac{\frac{4}{5}\times \frac{1}{4}}{1-\frac{4}{5}\times \frac{3}{4}}$＝$\frac{1}{2}$。 ∴相等 (4)○：P(乙中｜甲沒中) ＝$\frac{\frac{4}{5}\times \frac{1}{4}}{\frac{4}{5}}$＝$\frac{1}{4}$＝0.25。 (5)×：每人中獎的機率都是$\frac{1}{5}$。 故選(1)(2)(4)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s1_5
+  section: 1
+  number: 5
+  type: calc
+  page: 1
+  stem: 一盒子中有10個燈泡其中有2個壞的，若從中隨機取出3個，試選出正確的選項。 (1)沒有壞燈泡的機率為$\frac{7}{15}$ (2)1個壞燈泡的機率為$\frac{1}{5}$ (3)2個壞燈泡的機率為$\frac{2}{5}$ (4)壞燈泡個數的期望值為$\frac{3}{5}$ (5)壞燈泡個數的期望值為1
+  answer:
+  - (1)(4)
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-5
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 數學期望值
+      std: true
+    textbook: 數學2（必修） 數學期望值
+    pattern:
+      key: MA-2-2-5:T06
+      name: 組合抽樣與計數期望值計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 某超級搖滾天團來臺開演唱會，在此天團的臉書粉絲社團成員中，有$\frac{3}{4}$的人會參加北部場演會，有$\frac{2}{3}$的人會參加南部場演唱會，有$\frac{1}{2}$的人兩場都會參加。今由此天團的臉書粉絲社團成員中任選一人，試回答下列問題： (1)已知此人會參加北部場演唱會，求他也會參加南部場演唱會的機率。 (2)已知此人不會參加南部場演唱會，求他也不會參加北部場演唱會的機率。
+  answer:
+  - (1)$\frac{2}{3}$ (2)$\frac{1}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1)P(南｜北)＝$\frac{\frac{1}{2}}{\frac{3}{4}}$＝$\frac{2}{3}$。 (2)P(不北｜不南)＝$\frac{P(不南且不北)}{P(不南)}$ ＝$\frac{1-P(南或北)}{1-P(南)}$＝$\frac{1-P(\frac{2}{3}+\frac{3}{4}-\frac{1}{2})}{1-\frac{2}{3}}$＝$\frac{1}{4}$。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T09
+      name: 條件機率定義與集合運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 不透明袋中有3白3紅共6個球，球大小形狀相同，僅顏色相異。甲、乙、丙、丁、戊5人依甲第一、乙第二、……、戊第五的次序，從袋中各取一球，取後不放回。試問在甲、乙取出不同色球的條件下，戊取得紅球的機率。（化為最簡分數）
+  answer:
+  - $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P(戊紅｜甲、乙不同色) ＝$\frac{(C_{1}^{3}\times C_{1}^{3}\times C_{1}^{2}\times 2)\times P_{2}^{3}}{(C_{1}^{3}\times C_{1}^{3}\times 2)\times P_{3}^{4}}$＝$\frac{1}{2}$。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 設A與B為樣本空間中的兩事件，P(A)＝$\frac{1}{3}$，P(A∪B)＝$\frac{7}{12}$，若A與B為獨立事件，求P(A｜B')。
+  answer:
+  - $\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: '設某人打靶每發的命中率為$\frac{1}{2}$，且每發中靶與否互不影響。 (1)此人射擊2，求有中靶 ( 至少中一發 ) 的機率。 (2)此人連續射擊n發時，中靶之機率超過99%，求 n之最小值。
+
+    |  | 女 | 男 |
+
+    | --- | --- | --- |
+
+    | 墾丁 | a | 12 |
+
+    | 花東 | b | 8 |'
+  answer:
+  - (1)$\frac{3}{4}$ (2)7
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1)P(有中)＝1－P(都未中) ＝1－($\frac{1}{2}$)$^{2}$＝$\frac{3}{4}$ (2)P(中靶)＝1－P(皆未中靶) ＝1－($\frac{1}{2}$)$^{n}$＝＞99% ⇒ ($\frac{1}{2}$)$^{n}$＜$\frac{1}{100}$ ⇒ $2^{n}$＞100 n log2＞2 ⇒ n＞$\frac{2}{0.3010}$＝6.6 ∴n的最小值為7
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T12
+      name: 獨立重複試驗與比賽勝率
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹漏字（「射擊2」應為「射擊2發」）且末段混入無關列聯表
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 擲一公正骰子，若出現1點、2點、3點或4點，在數線上將質點向右移2單位，若出現5點或6點，則在數線上將質點向左移1單位。今質點在數線上原點位置，連擲骰子六次，求質點經六次移動後恰回到原點的機率。
+  answer:
+  - $\frac{20}{243}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設有x次右移，(6－x)次左移， 令2x＋(－1)(6－x)＝0 ⇒ x＝2 ∴機率＝$C_{2}^{6}(\frac{4}{6})^{2}(\frac{2}{6})^{4}=\frac{20}{243}$
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T12
+      name: 獨立重複試驗與比賽勝率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 甲、乙兩人進行5戰3勝制的羽球比賽(不得和局)，即先勝3局者赢得比賽，並約定赢家可獲得獎金10000元。已知甲、乙比賽時，甲單局獲勝的機率為0.7，且每局的比賽結果互不影響，目前比賽進行到甲勝1局且乙勝1局。 (1)求甲贏得比賽的機率。 (2)若此時(甲勝1局且乙勝1局)，即因故中止且不再進行比賽，至於獎金的分配，則依照繼續比賽時兩人赢得比賽的機率之比例來分配，求甲應分得多少獎金。
+  answer:
+  - (1)$\frac{98}{125}$ (2)7840
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T07
+      name: 多階段試驗樹狀圖與機率分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 某檢測癌症的方法，對於確實有得癌症的人，檢驗報告顯示得癌症的機率為90%，而未得癌症的人，檢驗報告顯示得癌症的機率為5%。已知一群實驗對象中有8%的人確實有得癌症，且其餘92%的人確實未得癌症。現從這群實驗對象中任選一人。 (1)求此人的檢驗報告顯示得癌症之機率。 (2)已知此人的檢驗報告顯示得癌症，求此人確實有得癌症的機率。
+  answer:
+  - (1)$\frac{59}{500}$ (2)$\frac{36}{59}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $得癌 8\% < \begin{matrix}90\% 正確 \\ 10\%\end{matrix}未得癌 92\% < \begin{matrix}5\% \\ 95\% 正確\end{matrix}$ (1)機率＝8%×90%＋92%×5%＝$\frac{59}{500}$。 (2)機率＝$\frac{8\%\times 90\%}{\frac{59}{500}}$＝$\frac{36}{59}$。
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T04
+      name: 貝氏定理與醫學篩檢誤判反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: single
+  page: 2
+  stem: '每次打開Netflix想追劇時，常收到來自系統的推薦，提醒你有一部新上檔的影集，96%適合你，這其中的適合度到底是如何產生的呢？這也是Netflix成功的祕訣：「推薦引擎，更勝搜尋引擎。」 推薦引擎的運作原理說明：分析A、B兩部影集，根據看過這兩部影集的用戶數據來統計對影集的喜好程度，並將數據整理如下表：
+
+    |  | 喜歡影集A | 不喜歡影集A |
+
+    | --- | --- | --- |
+
+    | 喜歡影集B | 63% | 9% |
+
+    | 不喜歡影集B | 7% | 21% |
+
+    若你是一個喜歡影集A的用戶，根據上表你也會喜歡影集B的機率為$\frac{63\%}{63\%+7\%}$＝90% 透過這樣的大數據分析，系統可以透過您過往的觀看回饋來推薦適合你的影集，達到推薦引擎帶來所希望的精準行銷效果。 (1) 根據上述例子，若小龍不喜歡影集B，則他也不喜歡影集A的機率為何？
+
+    |  | 喜歡A也喜歡B | 喜歡A不喜歡B | 不喜歡A喜歡B | AB皆不喜歡 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 喜歡C | 64% | 8% | 2% | 3% |
+
+    | 不喜歡C |  | 4% | 4% | 12% |
+
+    根據上表，若小騰看完A、B兩部影集後都回饋系統很喜歡，則系統推薦小騰C影集時會顯示多少%的適合度？(小數點後四捨五入)'
+  options:
+  - label: A
+    content: 7%
+  - label: B
+    content: 9%
+  - label: C
+    content: 21%
+  - label: D
+    content: 70%
+  - label: E
+    content: 75% (2) 多數情況常常會針對多部影集同時分析，藉此更精準地找到最適合用戶的影集，若同時分析三部影集，其可能列表如下：
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1)P(不A｜不B)＝$\frac{21\%}{7\%+21\%}$＝$\frac{21}{28}$＝$\frac{3}{4}$＝75%， 故選(E)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T10
+      name: 列聯表數據判讀與條件機率
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹與選項混排，含第(2)小題殘缺文字與缺漏表格欄位，僅對應第(1)小題作答
+  difficulty: 2

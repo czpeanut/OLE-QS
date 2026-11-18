@@ -1,0 +1,769 @@
+document:
+  id: doc_112_台南_台南二中_數學_數甲_g12s1e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 2
+  city: 台南
+  school_short: 台南二中
+  school: 國立臺南第二高級中學
+  title: 國立臺南第二高級中學 112學年度第1學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 112學年度第1學期第2次定期評量
+  source_file: 高三/數學/112/1-2/台南/台南二中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 24 分）
+    count: 4
+  - ord: 2
+    name: 二、填充題（共 69 分，配分如下表）
+    count: 13
+  - ord: 3
+    name: 三、計算題（7 分）
+    count: 1
+questions:
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 已知多項式函數 f（x）之導函數 f'（x）的圖形如右，下列選項那些正確？
+  options:
+  - label: A
+    content: f(1)＜f(2)
+  - label: B
+    content: f(6)是極小值
+  - label: C
+    content: 函數 f（x）＝0 有三個相異實根
+  - label: D
+    content: 此圖形只有一個反曲點且過此點的切線斜率是正數
+  - label: E
+    content: 函數 f（x）在區間 [ 3，5 ] 的圖形是凹口向下
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_112_台南_台南二中_數學_數甲_g12s1e2/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 471.4
+      - 150.4
+      - 564.3
+      - 211.05
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{9}{2}$
+
+    (A)○：∵f（x）在 x ≤ 3 時為遞增 ∴f(1)＜f(2)
+
+    (B)○：由表可知 f(6)為極小值
+
+    (C)╳：不一定
+
+    (D)╳：反曲點在 x＝$\frac{3 + 6}{2}$＝$\frac{9}{2}$處，且此處的切線斜率為負
+
+    (E)╳：f（x）在$\left[ 3 , \frac{9}{2} \right]$凹口向下，在$\left[ \frac{9}{2} , 5 \right]$凹口向上
+
+    故選(A)(B)'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T09
+      name: 導函數圖形與係數正負幾何判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: '[ x ] 表不大於 x 的最大整數。下列各函數何者在 x＝0 處可微分？'
+  options:
+  - label: A
+    content: f（x）＝｜x｜
+  - label: B
+    content: f（x）＝$\left[ x -\frac{1}{2} \right]$
+  - label: C
+    content: f（x）＝x｜x｜
+  - label: D
+    content: f（x）＝$\frac{1}{x}$
+  - label: E
+    content: f（x）＝$\begin{cases}2x+3 , x\leq 0 \\ 3 , x > 0\end{cases}$
+  answer:
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：$\lim_{x \rightarrow 0^{-}} \frac{f ( x )-f ( 0 )}{x - 0}$＝$\lim_{x \rightarrow 0^{-}} \frac{( -x )- 0}{x}$＝－1
+
+    $\lim_{x \rightarrow 0^{+}} \frac{f ( x )-f ( 0 )}{x - 0}$＝$\lim_{x \rightarrow 0^{+}} \frac{x- 0}{x}$＝1
+
+    ∴在 x＝0 處不可微分
+
+    (B)○：$\lim_{x \rightarrow 0^{-}} \frac{f ( x )-f ( 0 )}{x - 0}$＝$\lim_{x \rightarrow 0^{-}} \frac{( -1 )-( -1 )}{x}$＝0
+
+    $\lim_{x \rightarrow 0^{+}} \frac{f ( x )-f ( 0 )}{x - 0}$＝$\lim_{x \rightarrow 0^{+}} \frac{( -1 )-( -1 )}{x}$＝0
+
+    ∴在 x＝0 處可微分
+
+    (C)○：$\lim_{x \rightarrow 0^{-}} \frac{f ( x )-f ( 0 )}{x - 0}$＝$\lim_{x \rightarrow 0^{-}} \frac{x ( -x )- 0}{x}$＝0
+
+    $\lim_{x \rightarrow 0^{+}} \frac{f ( x )-f ( 0 )}{x - 0}$＝$\lim_{x \rightarrow 0^{+}} \frac{x ( x )- 0}{x}$＝0
+
+    ∴在 x＝0 處可微分
+
+    (D)╳：f（x）＝$\frac{1}{x}$在 x＝0 處不連續
+
+    ∴不可微分
+
+    (E)╳：$\lim_{x \rightarrow 0^{-}} \frac{f ( x )-f ( 0 )}{x - 0}$＝$\lim_{x \rightarrow 0^{-}} \frac{( 2x + 3 )- 3}{x}$＝2
+
+    $\lim_{x \rightarrow 0^{+}} \frac{f ( x )-f ( 0 )}{x - 0}$＝$\lim_{x \rightarrow 0^{+}} \frac{3 - 3}{x}$＝0
+
+    ∴在 x＝0 處不可微分
+
+    故選(B)(C)'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 設 f（x）是實係數多項式函數，若 a＜b＜c＜d，下列選項那些正確？
+  options:
+  - label: A
+    content: 若 f（x）在區間 [ a，d ] 上嚴格遞增，則 f'（b）＞0
+  - label: B
+    content: 若 f'（b）＝0，則 f（x）在 x＝b 處有極值
+  - label: C
+    content: 若 f（x）在 x＝b 處有極大值，則 f'（b）＝0
+  - label: D
+    content: 若 f''（c）＝0，則點（c，f（c））是 f（x）圖形的反曲點
+  - label: E
+    content: 若 f（x）在 x＝b 處有極大值且在 x＝c 處有極小值，則 f（b）≥ f（c）
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 已知（x＋1）$^{2}$ 可整除多項式 f（x）＝$x^{8}$＋$ax^{3}$＋bx＋1，則下列何者正確？
+  options:
+  - label: A
+    content: a＋b＝2
+  - label: B
+    content: a＝－1
+  - label: C
+    content: $\lim_{x \rightarrow -1} \frac{f ( x )}{x + 1}$＝0
+  - label: D
+    content: 函數 f（x）在 x＝1 附近的一次近似為 14x－12
+  - label: E
+    content: ｜f（0.999）－4｜＜0.1
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$8x^{7}$＋$3ax^{2}$＋b
+
+    又 f（x）＝$x^{8}$＋$ax^{3}$＋bx＋1 有因式（x＋1）$^{2}$
+
+    $\Rightarrow\begin{cases}f( -1 )= 0 \\ f'' ( -1 )= 0\end{cases}$
+
+    $\Rightarrow\begin{cases}f( -1 )=( -1 )^{8}+a ( -1 )^{3}+b ( -1 )+1 = 0 \\ f'' ( -1 )= 8 ( -1 )^{7}+ 3a ( -1 )^{2}+b = 0\end{cases}$
+
+    $\Rightarrow\begin{cases}1 -a -b + 1 = 0 \\ -8 + 3a +b = 0\end{cases}$
+
+    $\Rightarrow\begin{cases}a +b = 2 \\ 3a +b = 8\end{cases}\Rightarrow$a＝3，b＝－1
+
+    (A)○：a＋b＝3＋（－1）＝2
+
+    (B)╳：a＝3
+
+    (C)○：$\lim_{x \rightarrow -1} \frac{f ( x )}{x + 1}$＝$\lim_{x \rightarrow -1} \frac{( x + 1 )^{2} \cdot g ( x )}{x + 1}$＝$\lim_{x \rightarrow -1} ( ( x + 1 ) \cdot g ( x ) )$＝0
+
+    (D)╳：f（x）在 x＝1 附近的一次近似為 f''(1)（x－1）＋f(1)
+
+    由 f(1)＝(1)$^{8}$＋3(1)$^{3}$－1＋1＝4
+
+    f''(1)＝8(1)$^{7}$＋9(1)$^{2}$＋（－1）＝16
+
+    ∴所求為 16（x－1）＋4＝16x－12
+
+    (E)○：由(D)，｜f（0.999）－4｜$\approx$｜（16（0.999－1）＋4）－4｜
+
+    ＝｜16（－0.001）｜＝0.016＜0.1
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T06
+      name: 切線線性近似與牛頓求根法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '試求下列各題的導數：
+
+    (1) f（x）＝（x－1）（x－2）$^{2}$（$2x^{2}$＋1）$^{3}$，則 f''(1)＝＿＿＿＿。
+
+    (2) f（x）＝$\frac{-2x + 1}{x^{2}+ 2x + 3}$，則 f''（－1）＝＿＿＿＿。'
+  answer:
+  - (1) 27；(2) －1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) f''(1)＝$\lim_{x \rightarrow 1} \frac{f ( x )-f ( 1 )}{x - 1}$＝$\lim_{x \rightarrow 1} \frac{( x - 1 ) ( x - 2 )^{2} ( 2x^{2}+ 1 )^{3}- 0}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1} ( ( x - 2 )^{2} ( 2x^{2}+ 1 )^{3} )$＝（－1）$^{2}$(3)$^{3}$＝27
+
+    (2) f''（x）＝$\frac{( -2x+1 )'' ( x^{2}+2x+3 )-( -2x+1 ) ( x^{2}+2x+3 )''}{( x^{2}+2x+3 )^{2}}$
+
+    ＝$\frac{( -2 ) ( x^{2}+ 2x + 3 )-( -2x + 1 ) ( 2x + 2 )}{( x^{2}+ 2x + 3 )^{2}}$
+
+    ∴f''（－1）＝$\frac{-2\times 2 - 3\times 0}{2^{2}}$＝－1'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T02
+      name: 微分四則與連鎖律計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 設實係數函數 f（x）＝$x^{3}$＋$ax^{2}$＋bx＋2 在－1 ≤ x ≤ 3 時遞減；在 x ≤ －1 或 x ≥ 3 時遞增，試求實數數對（a，b）＝＿＿＿＿。
+  answer:
+  - （－3，－9）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$3x^{2}$＋2ax＋b＝3（x＋1）（x－3）＝3（$x^{2}$－2x－3）＝$3x^{2}$－6x－9
+
+    ∴2a＝－6$\Rightarrow$a＝－3，b＝－9
+
+    故數對（a，b）＝（－3，－9）'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T08
+      name: 由極值條件反推多項式係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 若函數 f（x）＝－$x^{4}$＋$4x^{3}$＋3 在閉區間 [ －1，4 ] 的最大值為 M，最小值為 m，則實數數對 （M，m）＝＿＿＿＿。
+  answer:
+  - （30，－2）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T06
+      name: 閉區間臨界點與端點極值比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 試求函數 f（x）＝－$x^{3}$＋$3x^{2}$＋6x 圖形上所有切線中，斜率最大的切線方程式為＿＿＿＿。
+  answer:
+  - 9x－y＝1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝－$3x^{2}$＋6x＋6＝－3（x－1）$^{2}$＋9
+
+    ∴當 x＝1 時，f''（x）有最大值 9
+
+    又 f(1)＝－(1)$^{3}$＋3(1)$^{2}$＋6(1)＝8
+
+    ∴所求為 y－8＝9（x－1）$\Rightarrow$9x－y＝1'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T05
+      name: 切線斜率與切線方程式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 試求過函數 f（x）＝$x^{2}$－4x＋1 外一點 P（4，－3）的切線方程式為＿＿＿＿。
+  answer:
+  - y＝－3 及 8x－y＝35
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設切點 A（t，$t^{2}$－4t＋1）
+
+    f''（x）＝2x－4$\Rightarrow$f''（t）＝2t－4
+
+    $\Rightarrow$過 A 的切線為 y－（$t^{2}$－4t＋1）＝（2t－4）（x－t）
+
+    過 P（4，－3）$\Rightarrow$－3－（$t^{2}$－4t＋1）＝（2t－4）（4－t）
+
+    $\Rightarrow$－3－$t^{2}$＋4t－1＝8t－$2t^{2}$－16＋4t
+
+    $\Rightarrowt^{2}$－8t＋12＝0
+
+    $\Rightarrow$（t－2）（t－6）＝0
+
+    $\Rightarrow$t＝2 或 6
+
+    (1) t＝2 時，f''(2)＝2×2－4＝0 ∴切線 y－（－3）＝0（x－4）$\Rightarrow$y＝－3
+
+    (2) t＝6 時，f''(6)＝2×6－4＝8 ∴切線 y－（－3）＝8（x－4）$\Rightarrow$8x－y＝35
+
+    故所求切線方程式為 y＝－3 及 8x－y＝35'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T05
+      name: 切線斜率與切線方程式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 設 f（x）＝$\begin{cases}x^{2}+ 1 , x\leq 1 \\ \frac{ax +b}{x + 1} , x > 1\end{cases}$，若 f（x）在 x＝1 處可微分，求實數數對（a，b）＝＿＿＿＿。
+  answer:
+  - （6，－2）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f（x）在 x＝1 處可微分
+
+    ∴f（x）在 x＝1 處必連續
+
+    故$\lim_{x \rightarrow 1^{-}} f ( x )$＝$\lim_{x \rightarrow 1^{+}} f ( x )$
+
+    得 $1^{2}$＋1＝$\frac{a\times 1 +b}{1 + 1}\Rightarrow$a＋b＝4$\Rightarrow$b＝4－a
+
+    又 f（x）在 x＝1 處可微分
+
+    ∴$\lim_{x \rightarrow 1^{-}} \frac{( x^{2}+ 1 )-( 1 + 1 )}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{\left( \frac{ax +b}{x + 1} \right) -( 1 + 1 )}{x - 1}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{-}} \frac{x^{2}- 1}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{ax + 4 -a - 2x - 2}{( x - 1 ) ( x + 1 )}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{-}} ( x + 1 )$＝$\lim_{x \rightarrow 1^{+}} \frac{( a - 2 )x -( a - 2 )}{( x - 1 ) ( x + 1 )}$
+
+    $\Rightarrow$2＝$\lim_{x \rightarrow 1^{+}} \frac{( a - 2 ) ( x - 1 )}{( x - 1 ) ( x + 1 )}$
+
+    $\Rightarrow$2＝$\frac{a - 2}{2}\Rightarrow$a＝6
+
+    又 b＝4－a，得 b＝－2
+
+    故數對（a，b）＝（6，－2）'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 f（x）＝（$2x^{2}$－1）$^{5}$，試求$\lim_{h \rightarrow 0} \frac{f ( -1 -h )-f ( -1 )}{h}$＝＿＿＿＿。
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設－1－h＝x$\Rightarrow$h＝－1－x
+
+    h → 0 即 x →－1
+
+    $\lim_{h \rightarrow 0} \frac{f ( -1 -h )-f ( -1 )}{h}$＝$\lim_{x \rightarrow -1} \frac{f ( x )-f ( -1 )}{-1 -x}$
+
+    ＝$\lim_{x \rightarrow -1} \left( -\frac{f ( x )-f ( -1 )}{x -( -1 )} \right)$＝－f''（－1）
+
+    又 f''（x）＝5（$2x^{2}$－1）$^{4}$．（$2x^{2}$－1）''
+
+    ＝5（$2x^{2}$－1）$^{4}$．（4x）
+
+    ∴所求為－f''（－1）＝－5（2（－1）$^{2}$－1）$^{4}$．（4（－1））＝20'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T09
+      name: 導數極限定義式轉換求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知多項式 f（x）滿足 f''（x）＝6x－4 且 f（x）在 x＝2 有極值 3，則 f(1)＝＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d
+
+    f''（x）＝$3ax^{2}$＋2bx＋c
+
+    f''''（x）＝6ax＋2b＝6x－4
+
+    ∵6a＝6，2b＝－4
+
+    ∴a＝1，b＝－2
+
+    ∵f（x）在 x＝2 有極值 3
+
+    ∴$\begin{cases}f '' ( 2 )= 0 \\ f ( 2 )= 3\end{cases}\Rightarrow\begin{cases}3 ( 2 )^{2}- 4 ( 2 )+c = 0 \\ ( 2 )^{3}- 2 ( 2 )^{2}+c ( 2 )+d = 3\end{cases}$
+
+    $\Rightarrow\begin{cases}12 - 8 +c = 0 \\ 8 - 8 + 2c +d = 3\end{cases}\Rightarrow$c＝－4，d＝11
+
+    ∴f(1)＝$1^{3}$－2×$1^{2}$－4×1＋11＝6'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T03
+      name: 導函數積分反推原函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 已知三次函數 f（x）圖形的反曲點為（－1，6），f'(0)＝－7 且 f（x）在 x＝1 處的切線斜率為 11，求 f（x）＝＿＿＿＿。（請按降冪排列）
+  answer:
+  - $2x^{3}$＋$6x^{2}$－7x－5
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d
+
+    f''（x）＝$3ax^{2}$＋2bx＋c
+
+    f''''（x）＝6ax＋2b
+
+    由題意可知
+
+    (1) 反曲點（－1，6）$\Rightarrow$f''''（－1）＝0，f（－1）＝6
+
+    (2) f''(0)＝－7
+
+    (3) f（x）在 x＝1 處的切線斜率為 11$\Rightarrow$f''(1)＝11
+
+    $\Rightarrow\begin{cases}f ( -1 )=-a +b -c +d = 6 \\ f '''' ( -1 )=-6a + 2b = 0 \\ f '' ( 0 )=c =-7 \\ f '' ( 1 )= 3a + 2b +c = 11\end{cases}$
+
+    ∴a＝2，b＝6，c＝－7，d＝－5
+
+    故所求 f（x）＝$2x^{3}$＋$6x^{2}$－7x－5'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 設實係數多項式函數 f（x）＝$ax^{4}$＋$bx^{3}$＋$cx^{2}$＋dx＋e，若$\lim_{x \rightarrow \infty} \frac{f ( x )}{( x^{2}- 1 ) ( 3x + 1 )}$＝1， $\lim_{x \rightarrow 1} \frac{f ( x )}{x - 1}$＝2 且$\lim_{x \rightarrow 0} \frac{f ( x )}{x}$存在，則 f(2)＝＿＿＿＿。
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) $\lim_{x \rightarrow \infty} \frac{f ( x )}{( x^{2}- 1 ) ( 3x + 1 )}$＝1$\Rightarrow$a＝0，b＝3
+
+    (2) $\lim_{x \rightarrow 0} \frac{f ( x )}{x}$存在$\Rightarrow$f（x）有因式 x，即 f(0)＝0
+
+    $\Rightarrow$f(0)＝e＝0
+
+    (3) $\lim_{x \rightarrow 1} \frac{f ( x )}{x - 1}$＝2$\Rightarrow$f（x）有因式 x－1，即 f(1)＝0
+
+    $\Rightarrow$f(1)＝3＋c＋d＝0$\Rightarrow$d＝－c－3
+
+    代回$\lim_{x \rightarrow 1} \frac{f ( x )}{x - 1}$＝$\lim_{x \rightarrow 1} \frac{3x^{3}+cx^{2}-( c + 3 )x}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1} \frac{( 3x^{3}- 3x )+( cx^{2}-cx )}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1} \frac{( x - 1 ) ( 3x ( x + 1 )+cx )}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1} ( 3x ( x + 1 )+cx )$＝3×1×2＋c＝2
+
+    $\Rightarrow$c＝－4，d＝－c－3＝4－3＝1
+
+    ∴f（x）＝$3x^{3}$－$4x^{2}$＋x
+
+    所求 f(2)＝3×$2^{3}$－4×$2^{2}$＋2＝10'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T09
+      name: 雙重極限反推多項式係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 設三次函數 f（x）＝$ax^{3}$－$3x^{2}$＋（a＋2）x－5 為嚴格遞減函數，則實數 a 的範圍為＿＿＿＿。
+  answer:
+  - a ≤ －3
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '三次函數 f（x）＝$ax^{3}$－$3x^{2}$＋（a＋2）x－5 為嚴格遞減函數
+
+    $\Rightarrow$f''（x）＝$3ax^{2}$－6x＋（a＋2）≤ 0 恆成立
+
+    $\Rightarrow\begin{cases}開口: 3a < 0 \\ 判別式: ( -6 )^{2}- 4( 3a ) ( a+2 )\leq 0\end{cases}$
+
+    $\Rightarrow\begin{cases}a < 0 \\ -12a^{2}- 24a + 36\leq 0\end{cases}\Rightarrow\begin{cases}a < 0 \\ -12 ( a^{2}+ 2a - 3 )\leq 0\end{cases}$
+
+    $\Rightarrow\begin{cases}a < 0 \\ -12 ( a - 1 ) ( a + 3 )\leq 0\end{cases}\Rightarrow\begin{cases}a < 0 \\ ( a - 1 ) ( a + 3 )\geq 0\end{cases}$
+
+    $\Rightarrow\begin{cases}a < 0 \\ a\leq -3 或 a\geq 1\end{cases}\Rightarrow$a ≤ －3
+
+    ∴a 的範圍為 a ≤ －3'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T07
+      name: 二次導函數判別式定單調與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 設 P 點在拋物線 y＝$x^{2}$ 上移動，求 P 點與定點 A（6，3）的最近距離為＿＿＿＿。
+  answer:
+  - $\sqrt{17}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T05
+      name: 幾何圖形與函數極值應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: '想設計一個底面為正方形，且外表面積（五個面）為 108 平方英吋的無蓋盒子，如果厚度不計，試問 x 為多少時才有最大的體積？
+
+    $答$：＿＿＿＿。'
+  assets:
+  - key: s2_13_f1
+    kind: figure
+    file: doc_112_台南_台南二中_數學_數甲_g12s1e2/s2_13_f1.png
+    crop:
+      page: 2
+      rect:
+      - 446.65
+      - 422.95
+      - 564.3
+      - 512.85
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '已知 $x^{2}$＋4xh＝108$\Rightarrow$h＝$\frac{1}{4x} ( 108 -x^{2} )$，$0 < x < \sqrt{108}$
+
+    令 $x^{2}$h＝$x^{2} \cdot \frac{1}{4x} ( 108 -x^{2} )$＝$\frac{1}{4} ( 108x -x^{3} )$＝f（x）
+
+    f''（x）＝$\frac{1}{4} ( -3x^{2}+ 108 )$＝$\frac{-3}{4} ( x + 6 ) ( x - 6 )$
+
+    $\sqrt{108}$
+
+    ∴x＝6 時有最大的體積'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T05
+      name: 幾何圖形與函數極值應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南二中_數學_數甲_g12s1e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '小云和同學玩桌遊，每人選擇一個吉祥物放在起點上，並自起點出發，大家輪流投擲一個不公正的硬幣決定自己每次的移動位置，當出現正面則前進 2 格，反之出現反面則後退 1 格。假設此枚硬幣出現正面的機率為 p，其中 0＜p＜1，且每次投擲結果互不影響。今以 f（p）表示小云投擲 5 次硬幣後的位置位於起點前方第 4 格命運上的機率。試回答下列問題。
+
+    (1) 若小云投擲 5 次硬幣後的位置位於起點前方第 4 格命運上，則在 5 次投擲中共出現多少次正面？（1 分）
+
+    (2) 已知 f（p）是 p 的 5 次多項式，試求 f（p）。（展開並依降冪排列）（2 分）
+
+    (3) 求 f（p）的最大值。（4 分）'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4

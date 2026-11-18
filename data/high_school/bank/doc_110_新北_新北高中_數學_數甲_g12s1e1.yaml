@@ -1,0 +1,425 @@
+document:
+  id: doc_110_新北_新北高中_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 1
+  city: 新北
+  school_short: 新北高中
+  school: 新北市立新北高級中學
+  title: 新北市立新北高級中學 110學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 110學年度第1學期第1次定期評量
+  source_file: 高三/數學/110/1-1/新北/新北高中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單選題：
+    count: 2
+  - ord: 2
+    name: 二、填充題：
+    count: 12
+questions:
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 甲、乙二人比賽桌球，不得和局，若每局甲獲勝的機率為$\frac{3}{5}$，今規定先勝3局者可得獎金1000元。進行至甲勝2局、乙勝1局時，因故中止比賽，現以成績分配獎金，則甲應分得獎金多少元？
+  options:
+  - label: A
+    content: '200'
+  - label: B
+    content: '600'
+  - label: C
+    content: '720'
+  - label: D
+    content: '840'
+  - label: E
+    content: '960'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T07
+      name: 多輪或中止試驗期望值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 政府海關檢驗進口貨櫃中的牛肉含有瘦肉精的情況，若各件肉品含有過量瘦肉精與否是相互獨立的，依過去經驗：一件進口牛肉含有過量瘦肉精的機率為p；設X為n件進口牛肉中含有過量瘦肉精的件數，若已知期望值E (X)＝2，標準差σ為$\frac{2\sqrt{3}}{3}$，依規定若有2件或2件以上含有過量瘦肉精，則需要整批沒收銷毀，求此n件進口牛肉整批不被銷毀的機率為
+  options:
+  - label: A
+    content: $\frac{1}{729}$
+  - label: B
+    content: $\frac{4}{729}$
+  - label: C
+    content: $\frac{10}{729}$
+  - label: D
+    content: $\frac{156}{729}$
+  - label: E
+    content: $\frac{256}{729}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $E(X)=np=2$，$\sigma ^{2}=np(1-p)=\frac{4\times 3}{9}=\frac{4}{3}$， 兩式相除⇒$\frac{np(1-p)}{np}=\frac{\frac{4}{3}}{2}=\frac{2}{3}$，$1-p=\frac{2}{3}$，$p=\frac{1}{3}\therefore n=6\begin{matrix}P(不被銷毀)=P(1件不含過量)+P(都沒有) \\ =C_{1}^{6}\times (\frac{2}{3})^{5}(\frac{1}{3})+(\frac{2}{3})^{6}=\frac{192}{729}+\frac{64}{729}=\frac{256}{729}\end{matrix}$，故選(E)。
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T01
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 二項分布X～B ( 20 , 0.8 )，試問X為多少時，機率最大？
+  answer:
+  - '16'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 二項分布的機率最大處發生在期望值 $\therefore E(X)=np=20\times 0.8=16$(元)。
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T07
+      name: 二項分布最大機率與分布圖形
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 某次數學測驗共有16題單選題，每題有5個選項，某生完全憑猜測作答，每題都有作答，試求其答對題數的標準差。
+  answer:
+  - '1.6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\sigma (X)=\sqrt{np(1-p)}=\sqrt{16\times \frac{1}{5}\times \frac{4}{5}}=\frac{8}{5}=1.6$。
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T06
+      name: 二項分布期望值與標準差計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 一袋中有8個球，其中3個球上標記10，5個球上標記6，試問：從袋中任取4球，求數字和的期望值。
+  answer:
+  - '15'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $E(X)=\frac{10\times 3+6\times 5}{8}\times 4=30$。
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T03
+      name: 期望值的線性與可加性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 隨機變數X～G (p)，若X的變異數Var (X)＝6，試求X＝3的機率？
+  answer:
+  - $\frac{4}{27}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $Var(X)=\frac{1-p}{p^{2}}=6$，$6p^{2}+p-1=0$，$(3p-1)(2p+1)=0$，$p=\frac{1}{3}$或$-\frac{1}{2}(不合)\therefore X\sim G(\frac{1}{3})$，$P(X=3)=(\frac{2}{3})^{2}\times (\frac{1}{3})=\frac{4}{27}$
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T03
+      name: 幾何分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 摸彩箱裝有若干編號為1，2，…，8的彩球，其中各種編號的彩球數目可能不同。今從中隨機摸取一球，每球被取到的機會相同，依據所取球的號數給予若干報酬。現有甲、乙兩案：甲案為當摸得彩球的號數為k時，其所獲報酬同為k元；乙案為當摸得彩球的號數為k時，其所獲得報酬為9-k(k=1 , 2 ,…, 10元)。 已知：若依甲案，每摸取一球的期望值為$\frac{64}{11}$元，則依乙案，每摸取一球的期望值為多少元？
+  answer:
+  - $\frac{35}{11}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設取到 $k$ 號球的機率$P_{k}$，則$P_{1}+P_{2}+..+P_{8}=1$，$E_{甲}=\sum_{k=1}^{8} k\times P_{k}=\frac{64}{11}$， 故$E_{乙}=\sum_{k=1}^{8} (9-k)\times P_{k}=9\sum_{k=1}^{8} \times P_{k}-\sum_{k=1}^{8} k\times P_{k}=9\times 1-\frac{64}{11}=\frac{35}{11}$。
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T03
+      name: 期望值的線性與可加性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 設X為隨機變數，且y＝$\frac{2}{3}$X＋10，已知E (X)＝6，Var (X)＝0.9，試求Var (Y)。
+  answer:
+  - '0.4'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $E(X)=6,Var(x)=0.9$，$Var(Y)=Var(\frac{2}{3}X+10)=\frac{4}{9}Var(X)=\frac{4}{9}\times 0.9=0.4$。
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T05
+      name: 隨機變數線性變換統計量
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 已知某公司員工支持某項政策的機率為0.35，若公司打算暗中調查員工是否贊同該項政策，試問：預期至少需要調查多少人後，才會出現第一位贊同者？
+  answer:
+  - $\frac{20}{7}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'X: 1 2 3 …. $P$: $P(1-P)P(1-P)^{2}P$ ….. $E(X)=P+2(1-P)P+3(1-P)^{2}P+...(1-P)E(X)=(1-P)P+2(1-P)^{2}P+3(1-P)^{3}P+...$ 兩式相減 $PE(X)=P+(1-P)P+(1-P)^{2}P+...E(X)=1+(1-P)+(1-P)^{2}+...=\frac{1}{1-(1-P)}=\frac{1}{P}X\sim B(n,\frac{7}{20})$，$E(X)=n\times \frac{7}{20}=1,n=\frac{20}{7}$。'
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T03
+      name: 幾何分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 同時擲出3個均勻骰子，設出現三個點數為相異奇數的事件為A，將此試驗連做12次，若事件A發生了X次，試求E (X)。
+  answer:
+  - $\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 三個均勻骰子中，樣本空間共$6\times 6\times 6=216$， 出現三個點數為相異奇數的情形數為1點,3點,5點排列，共$3!=6\therefore P(A)=\frac{6}{216}=\frac{1}{36}$，又$n=12\therefore E(X)=np=12\times \frac{1}{36}=\frac{1}{3}$
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T06
+      name: 二項分布期望值與標準差計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 1
+  stem: 袋中有紅色代幣4枚、綠色代幣7枚以及藍色代幣若干枚，每一枚紅色、綠色、藍色代幣分別可兌換30元、20元及10元，現從袋中取出代幣1枚或2枚，每一枚代幣被取出的機率均等。設隨機變數Ｘ代表取出1枚代幣可兌換的金額 ( 單位：元 )；隨機變數Y代表取出2枚代幣可兌換的金額 ( 單位：元 )。 已知X的期望值為20，試問：(1) 藍色代幣有多少枚？(2) P ( Y ≤ 30 ) 的值？
+  answer:
+  - (1) 4；(2) $\frac{34}{105}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) 設藍色代幣有$x$枚 $\therefore E(X)=\frac{4}{x+11}\times 30+\frac{7}{x+11}\times 20+\frac{x}{x+11}\times 10=\frac{120+140+10x}{x+11}=20\therefore x=4$ (2) $P(Y\leq 30)=\frac{C_{1}^{7}C_{1}^{4}+C_{2}^{4}}{C_{2}^{15}}=\frac{34}{105}$。
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T06
+      name: 期望值反推未知數量或獎金
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 1
+  stem: 假設某個機器在一天內壞掉的機率為1/20，設X代表到第一次壞掉時所需要的天數，試求： (1) 該機器能夠正常運行至少兩天機率。 (2) Var (X)。
+  answer:
+  - (1) $\frac{361}{400}$；(2) 380
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $X\sim G(\frac{1}{20})$。 (1) $\frac{19}{20}\times \frac{19}{20}=\frac{361}{400}$。 (2) $P=\frac{1}{20}$，$Var(X)=\frac{1-p}{p^{2}}=\frac{\frac{19}{20}}{\frac{1}{400}}=380$。
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T03
+      name: 幾何分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 1
+  stem: '甲與乙兩人對打電競比賽，約定先贏得3局者獲勝，假設甲每局的勝率為$\frac{1}{3}$，且每局必分勝負，試回答下列問題：
+
+    (1) 試問甲在比完第三局時恰贏得第一局的機率為何？
+
+    (2) 若「恰比賽三局且乙獲勝」的機率為a，「恰比賽四局且乙獲勝」的機率為b，「恰比賽五局且乙獲勝」的機率為c，試比較a，b，c的大小。'
+  answer:
+  - (1) $\frac{4}{27}$；(2) a=b>c
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) 1, 2, 3 乙乙甲$\rightarrow \frac{2}{3}\times \frac{2}{3}\times \frac{1}{3}=\frac{4}{27}$。 (2) $a:\frac{2}{3}\times \frac{2}{3}\times \frac{2}{3}=\frac{8}{27}$。 $b:前三局乙甲乙排列,第四局乙勝:\frac{3!}{2!}\times (\frac{2}{3})^{3}\times \frac{1}{3}=\frac{8}{27}$。 $c:前四局乙甲甲乙排列,第五局乙勝:\frac{4!}{2!2!}\times (\frac{2}{3})^{3}\times (\frac{1}{3})^{2}=\frac{16}{81}$。 $\therefore a=b>c$
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T04
+      name: 二項分布與幾何分布機率
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_110_新北_新北高中_數學_數甲_g12s1e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 1
+  stem: '袋中有1個黑球與若干個白球，白球個數可能為3個或 5個。今從袋中任取一球，每球被取中之機會均等，記 錄其顏色後放回，重複上述動作10次，若黑球的抽中 次數超過3次，則判定袋中白球個數為3個，反之，則 判定袋中白球個數為5個。若白球實際的個數為5個， 試求依此方法正確判定的機率為何？( 今隨機變數Ｘ為 抽中黑球次數，利用Excel計算得右表。請四捨五入至 小數點後第四位 )
+
+    | k | P ( X＝k ) | P ( X＜＝k ) | P ( X＞k ) |
+
+    | --- | --- | --- | --- |
+
+    | 0 | 0.16150558 | 0.16150558 | 0.83849442 |
+
+    | 1 | 0.32301117 | 0.48451675 | 0.51548325 |
+
+    | 2 | 0.29071005 | 0.7752268 | 0.2247732 |
+
+    | 3 | 0.15504536 | 0.93027216 | 0.06972784 |
+
+    | 4 | 0.05426588 | 0.98453803 | 0.01546197 |
+
+    | 5 | 0.01302381 | 0.99756184 | 0.00243816 |
+
+    | 6 | 0.00217064 | 0.99973248 | 0.00026752 |
+
+    | 7 | 0.00024807 | 0.99998055 | 0.00001945 |
+
+    | 8 | 1.8605E－05 | 0.99999916 | 0.00000084 |
+
+    | 9 | 8.2691E－07 | 0.99999998 | 0.00000002 |
+
+    | 10 | 1.6538E－08 | 1.00000000 | 0.00000000 |'
+  answer:
+  - '0.9302'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\because$白球實際是5個 $\therefore X\leq 3\therefore P(X\leq 3)=0.93027216\approx 0.9303$
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T05
+      name: 不確定性與抽樣檢定應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

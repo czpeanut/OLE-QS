@@ -1,0 +1,513 @@
+document:
+  id: doc_109_台北_明倫_數學_g10s1e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 109
+  semester: 1
+  exam_seq: 2
+  city: 台北
+  school_short: 明倫
+  school: 臺北市立明倫高級中學
+  title: 臺北市立明倫高級中學 109學年度第1學期第2次定期評量 高一數學科試題
+  exam_name: 109學年度第1學期第2次定期評量
+  source_file: 高一/數學/109/1-2/台北/明倫.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 5 分，錯一個選項扣 2 分，兩個選項扣 4 分，錯三個以上不給分，共 20 分）
+    count: 4
+  - ord: 2
+    name: 二、填充題（前五格每格 6 分；其餘每格 5 分，共 80 分）
+    count: 12
+questions:
+- id: doc_109_台北_明倫_數學_g10s1e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 若 degf（x）＝degg（x）＝3，則下列哪些正確？
+  options:
+  - label: A
+    content: deg（f（x）＋g（x））＝3
+  - label: B
+    content: deg（f（x）－g（x））$\leq$2
+  - label: C
+    content: deg（f（x）．g（x））＝6
+  - label: D
+    content: deg（f（x）．g（x））＝9
+  - label: E
+    content: degf（$x^{2}$）＝5
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'degf（x）＝degg（x）＝3
+
+    (A)╳：deg（f（x）＋g（x））$\leq$3
+
+    (B)╳：deg（f（x）－g（x））$\leq$3
+
+    (C)○：deg（f（x）．g（x））＝degf（x）＋degg（x）＝3＋3＝6
+
+    (D)╳
+
+    (E)╳：degf（$x^{2}$）＝2．degf（x）＝6
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T01
+      name: 多項式定義與係數次數判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_g10s1e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 已知二次函數 y＝$ax^{2}$＋bx＋c 的圖形如右圖所示，則下列各式哪些為正數？
+  options:
+  - label: A
+    content: ac
+  - label: B
+    content: a＋b＋c
+  - label: C
+    content: a－b＋c
+  - label: D
+    content: 2a＋b
+  - label: E
+    content: a－2b＋4c
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_109_台北_明倫_數學_g10s1e2/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 449.0
+      - 273.8
+      - 563.1
+      - 347.1
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝f（x）＝$ax^{2}$＋bx＋c 的圖形開口向下$\Rightarrow$a＜0
+
+    與 y 軸交於（0，c）$\Rightarrow$c＜0
+
+    對稱軸 x＝$-\frac{b}{2a}> 0\Rightarrow$b＞0
+
+    (A)○：a＜0 且 c＜0$\Rightarrow$ac＞0
+
+    (B)○：a＋b＋c＝f(1)＞0
+
+    (C)╳：a－b＋c＝f（－1）＜0
+
+    (D)╳：$0 <-\frac{b}{2a}< 1\Rightarrow$－b＞2a$\Rightarrow$2a＋b＜0
+
+    (E)╳：a－2b＋4c＝$4 \left( \frac{1}{4}a -\frac{1}{2}b +c \right)$＝$4f \left( -\frac{1}{2} \right) < 0$
+
+    故選(A)(B)'
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T02
+      name: 拋物線係數與開口判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_明倫_數學_g10s1e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 學生練習計算三次多項式 f（x）除以一次多項式 g（x）的餘式。已知 f（x）的三次項係數為 3，一次項係數為 2。甲生在計算時把 f（x）的三次項係數錯看成 2（其它係數沒看錯），乙生在計算時把 f（x）的一次項係數錯看成－2（其它係數沒看錯），而甲、乙兩生算出來的餘式剛好一樣。試問 g（x）可能等於以下哪些一次式？
+  options:
+  - label: A
+    content: x－1
+  - label: B
+    content: x－2
+  - label: C
+    content: x
+  - label: D
+    content: x＋1
+  - label: E
+    content: x＋2
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T03
+      name: 餘式定理與高次餘式線性組合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_明倫_數學_g10s1e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 設 x，k 為實數，多項式函數 f（x）＝－$x^{2}$＋（k＋1）x＋k－2，已知 y＝f（x）的圖形在坐標平面上恰通過兩個象限，則下列哪些選項中的數值可滿足上述條件的 k 值？
+  options:
+  - label: A
+    content: －9
+  - label: B
+    content: －5
+  - label: C
+    content: $\sqrt[3]{5}$
+  - label: D
+    content: $\sqrt{26}$
+  - label: E
+    content: '1'
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T09
+      name: 二次函數圖形象限與正負判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 設 $2x^{4}$＋$4x^{3}$＋$ax^{2}$＋bx＋1 與 $2x^{4}$＋$3x^{3}$＋$x^{2}$＋x＋1 除以 $x^{2}$＋x＋2 之餘式相同，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （2，3）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 $2x^{4}$＋$4x^{3}$＋$ax^{2}$＋bx＋1＝（$x^{2}$＋x＋2）$q_{1}$（x）＋r（x）
+
+    $2x^{4}$＋$3x^{3}$＋$x^{2}$＋x＋1＝（$x^{2}$＋x＋2）$q_{2}$（x）＋r（x）
+
+    兩式相減
+
+    $\Rightarrowx^{3}$＋（a－1）$x^{2}$＋（b－1）x＝（$x^{2}$＋x＋2）（$q_{1}$（x）－$q_{2}$（x））
+
+    $\Rightarrow$〔$x^{2}$＋（a－1）x＋（b－1）〕x＝（$x^{2}$＋x＋2）（$q_{1}$（x）－$q_{2}$（x））
+
+    $\Rightarrow\frac{1}{1}=\frac{a -1}{1}=\frac{b -1}{2}\Rightarrow\begin{cases}a -1 = 1 \\ b -1 =2\end{cases}$
+
+    $\Rightarrow$數對（a，b）＝（2，3）'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T11
+      name: 因式定理與多項式整除反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 已知 y＝－$2x^{2}$＋ax＋b，在 x＝－2 時有最大值 1，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （－8，－7）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝－$2x^{2}$＋ax＋b＝－2（x＋2）$^{2}$＋1＝－$2x^{2}$－8x－7
+
+    ∴數對（a，b）＝（－8，－7）'
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T01
+      name: 二次函數配方與頂點性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設 f（x）＝$x^{5}$－$9x^{4}$＋$13x^{3}$＋32x＋12，試求 f(7)＝＿＿＿＿。
+  answer:
+  - －107
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T13
+      name: 餘式定理與綜合除法求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 若二次函數 y＝$2x^{2}$＋x－k＋1 恆在直線 y＝3x 的上方，則實數 k 的範圍為＿＿＿＿。
+  answer:
+  - $k<\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝$2x^{2}$＋x－k＋1 的圖形恆在 y＝3x 的上方
+
+    $\Rightarrow2x^{2}$＋x－k＋1＞3x，x 為實數
+
+    $\Rightarrow2x^{2}$－2x－k＋1＞0，x 為實數
+
+    $\Rightarrow$D＝（－2）$^{2}$－4．2．（－k＋1）＜0
+
+    $\Rightarrow$8k－4＜0$\Rightarrowk<\frac{1}{2}$'
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T02
+      name: 恆正恆負與判別式範圍
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 三次實係數多項函數 y＝f（x）之部分圖形如右圖所示，試求：P 點坐標為＿＿＿＿。
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_109_台北_明倫_數學_g10s1e2/s2_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 437.8
+      - 53.0
+      - 563.05
+      - 135.15
+  answer:
+  - （4，0） 6.4；$2\sqrt{5}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T03
+      name: 三次函數對稱中心性質
+    labeled_by: agent
+    label_confidence: high
+    label_note: 解答欄位疑似混入後方第6題答案
+  difficulty: 3
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 甲在乙正北方 10 公里處，今甲、乙兩人同時出發，乙向東每小時走 1 公里，甲向南每小時走 2 公里，則經＿＿＿＿小時後兩人距離最 短，為＿＿＿＿公里。
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T05
+      name: 二次函數建模與應用極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: '試求下列不等式的解範圍：
+
+    (1) 不等式（x－1）（x＋2）$^{2}$（x－3）$^{3}$（x＋4）$^{4}\leq$0 的解為＿＿＿＿。
+
+    (2) 不等式（$x^{2}$＋x－2）（$x^{2}$－4x＋3）（$x^{2}$－x＋2）（$x^{2}$－x－1）$\leq$0 的解為＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T04
+      name: 高次多項式不等式求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 多項式 f（x）除以 $x^{3}$＋8 之餘式為 $3x^{2}$－2x－1，若 xf（x）除以 $x^{2}$－2x＋4 之餘式為 ax＋b，則數對（a，b）＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T15
+      name: 二次以上除式的餘式問題
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 若一三次函數 f（x）＝－$2x^{3}$＋$6x^{2}$＋3x＋4 可寫成 a（x－h）$^{3}$＋p（x－h）＋k 的形式，則 f（x）的對稱中心為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T02
+      name: 三次函數配方與圖形平移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: '將一多項式 f（x）＝$x^{3}$－$3x^{2}$＋x＋3 表示成 a（x－2）$^{3}$＋b（x－2）$^{2}$＋c（x－2）＋d 的形式，其中 a，b，c，d 皆為實數。
+
+    (1) 試求序組（a，b，c，d）＝＿＿＿＿。
+
+    (2) 求 f（x）在 x＝2 附近的一次近似為＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T04
+      name: 三次函數某點的一次近似
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 若將 y＝$2x^{2}$＋4x＋3 之函數圖形向右平移 h 單位，再向下平移 k 單位，會與 y＝2（x－1）$^{2}$＋4 圖形重合，則數對（h，k）＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T07
+      name: 拋物線平移與係數比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_明倫_數學_g10s1e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 若 f（x）＝$ax^{2}$＋bx＋c，滿足 f(1)＝－2，f(4)＝7，且對於任意實數 t 都有 f（3＋t）＝f（1－t），則 c 之值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T08
+      name: 對稱軸與兩根式待定二次函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

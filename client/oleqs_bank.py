@@ -185,12 +185,14 @@ class Bank:
     # ── 分類表 ──
     def units(self, subject: str, grade: int, semester: int, publisher: str = "翰林",
               sub_subject: str | None = None) -> list[dict]:
-        """某冊的單元表：[{code, title, chapter, subject}]。英語回傳跨版本文法主題。"""
+        """某冊的單元表：[{code, title, chapter, subject}]。英語回傳跨版本文法主題，再加第1～3次段考
+        （字彙、片語、閱讀等非文法題依原卷段考次分在 E1～E3）。"""
         cur = json.loads((self.dir / "taxonomy" / "curriculum.json").read_text(encoding="utf-8"))
         if subject == "英語":
             return [{"code": t["id"], "title": t["title"], "chapter": t.get("group"), "subject": "英語"}
                     for t in cur["english"]
-                    if t.get("group") == "綜合" or (t["grade"], t["semester"]) <= (grade, semester)]
+                    if t.get("group") != "綜合"
+                    and (t.get("exam") or (t["grade"], t["semester"]) <= (grade, semester))]
         book = cur["junior"].get(str(grade), {}).get(str(semester), {}).get(subject, {})
         out = []
         for s, by_pub in book.items():

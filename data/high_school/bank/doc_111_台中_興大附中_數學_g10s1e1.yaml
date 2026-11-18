@@ -1,0 +1,660 @@
+document:
+  id: doc_111_台中_興大附中_數學_g10s1e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 111學年度第1學期第1次定期評量 高一數學科試題
+  exam_name: 111學年度第1學期第1次定期評量
+  source_file: 高一/數學/111/1-1/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 20 分）
+    count: 5
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 32 分。答錯 1 個選項者，得 4.8 分；答錯 2 個選項者，得 1.6 分；答錯多於 2 個選項或所有選項均未作答者，該題以零分計算）
+    count: 4
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 48 分）
+    count: 8
+questions:
+- id: doc_111_台中_興大附中_數學_g10s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 數線上有五點，依序由左到右為 A（a），B（b），C（c），D（d），E（e），若 $\overline{AB}$：$\overline{BC}$：$\overline{CD}$：$\overline{DE}$＝1：3：1：2，請選出正確的選項。
+  options:
+  - label: A
+    content: e＝$\frac{3d + b}{2}$
+  - label: B
+    content: c＝$\frac{b + e}{2}$
+  - label: C
+    content: d＝$\frac{5a + 2e}{7}$
+  - label: D
+    content: b＝$\frac{6a + d}{7}$
+  - label: E
+    content: a＝7e
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T04
+      name: 分點公式與數線區間
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_g10s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設 a 為整數。已知$\frac{a}{3}$＜$\sqrt{29}$＜$\frac{a + 1}{3}$，則 a 的值為下列哪一個選項？
+  options:
+  - label: A
+    content: '15'
+  - label: B
+    content: '16'
+  - label: C
+    content: '17'
+  - label: D
+    content: '18'
+  - label: E
+    content: '19'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{a}{3}$＜$\sqrt{29}$＜$\frac{a + 1}{3}$⇒ a＜$3\sqrt{29}$＜a＋1 ⇒ $a^{2}$＜261＜（a＋1）$^{2}$
+
+    又 a 為整數 ∴a＝16
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T02
+      name: 根式的整數與小數部分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_台中_興大附中_數學_g10s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 「十二平均律」是鋼琴音階的依循規則：每一個音的弦長都是前一個音弦長的$\sqrt[12]{2}$。若第一個音弦長為 16，試問第幾個音的弦長為 64？
+  options:
+  - label: A
+    content: '22'
+  - label: B
+    content: '23'
+  - label: C
+    content: '24'
+  - label: D
+    content: '25'
+  - label: E
+    content: '26'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設第 n 個音的弦長為 64
+
+    則 64＝$16\times ( \sqrt[12]{2} )^{n - 1}$⇒ 4＝$2^{\frac{n - 1}{12}}$⇒$\frac{n - 1}{12}$＝2 ⇒ n＝25
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T03
+      name: 指數倍數成長與數量級估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_g10s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 設－2 ≤ x ≤ 3，1 ≤ y ≤ 4，則 xy＋y 的最小值為下列哪一個選項？
+  options:
+  - label: A
+    content: '16'
+  - label: B
+    content: '7'
+  - label: C
+    content: '4'
+  - label: D
+    content: －4
+  - label: E
+    content: －7
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'xy＋y＝（x＋1）y，又－1 ≤ x＋1 ≤ 4，1 ≤ y ≤ 4
+
+    得－4 ≤（x＋1）y ≤ 16，則 xy＋y 的最小值為－4
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T06
+      name: 實數區間的四則運算範圍
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_g10s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 選出數值最大的選項。
+  options:
+  - label: A
+    content: $\sqrt{119} -\sqrt{118}$
+  - label: B
+    content: $\sqrt{120} -\sqrt{119}$
+  - label: C
+    content: $\sqrt{121} -\sqrt{120}$
+  - label: D
+    content: $\sqrt{122} -\sqrt{121}$
+  - label: E
+    content: $\sqrt{123} -\sqrt{122}$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 n 為正整數，則$\sqrt{n + 1} -\sqrt{n}$＝$\frac{1}{\sqrt{n + 1} +\sqrt{n}}$
+
+    因此當$\sqrt{n + 1} +\sqrt{n}$最小時，$\sqrt{n + 1} -\sqrt{n}$為最大
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-1-1-2
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 式的運算
+      std: true
+    textbook: 數學1（必修） 式的運算
+    pattern:
+      key: MA-1-1-2:T03
+      name: 雙重根號化簡與有理化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_g10s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 請選出正確的選項。
+  options:
+  - label: A
+    content: $0. \overline{34}$＜$0. 3\overline{43}$
+  - label: B
+    content: $\frac{2.3\times 10^{9}}{99}-123. \overline{23}$為整數
+  - label: C
+    content: 分數$\frac{26}{65}$可化成有限小數
+  - label: D
+    content: $0. 25\overline{6}$＝$\frac{77}{300}$
+  - label: E
+    content: $\sqrt{\sqrt{2401}}$為無理數
+  answer:
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：$0. \overline{34}$＝$\frac{34}{99}$，$0. 3\overline{43}$＝$\frac{343 - 3}{990}$＝$\frac{34}{99}$，兩者相等
+
+    (B)○：∵$\frac{2.3\times 10^{9}}{99}$＝$\frac{23}{99}\times 10^{8}$＝$0. \overline{23}\times 10^{8}$
+
+    ∴原式為$0. \overline{23}\times 10^{8}-123. \overline{23}$＝$23232323. \overline{23} - 123. \overline{23}$
+
+    ＝23232200 為整數
+
+    (C)○：$\frac{26}{65}$＝$\frac{2}{5}$＝0.4
+
+    (D)○：$0. 25\overline{6}$＝$\frac{256 - 25}{900}$＝$\frac{231}{900}$＝$\frac{77}{300}$
+
+    (E)╳：$\sqrt{\sqrt{2401}}$＝$\sqrt{49}$＝7，非無理數
+
+    故選(B)(C)(D)'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T05
+      name: 循環小數化分數與比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_g10s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 若$\sqrt{15 +\sqrt{176}}$的整數部分為 a，小數部分為 b。請選出正確的選項。
+  options:
+  - label: A
+    content: a＝2
+  - label: B
+    content: b＝$-3 +\sqrt{11}$
+  - label: C
+    content: ab＝$-6 + 2\sqrt{11}$
+  - label: D
+    content: $\frac{1}{b}$＝$\frac{\sqrt{11}}{11}$
+  - label: E
+    content: $\frac{2a - b - 3}{a + b - 2}$＝$\frac{-11 + 10\sqrt{11}}{11}$
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\sqrt{15 +\sqrt{176}}$＝$\sqrt{15 + 2\sqrt{44}}$＝$\sqrt{(\sqrt{11} + 2 )^{2}}$＝$\sqrt{11} + 2$＝$5 + (\sqrt{11} - 3 )$，得 a＝5，b＝$\sqrt{11} - 3$
+
+    (A)╳：a＝5
+
+    (B)○
+
+    (C)╳：ab＝$5\sqrt{11} - 15$
+
+    (D)╳：$\frac{1}{b}$＝$\frac{1}{\sqrt{11} - 3}$＝$\frac{\sqrt{11} + 3}{2}$
+
+    (E)○：$\frac{2a - b - 3}{a + b - 2}$＝$\frac{10 -\sqrt{11}}{\sqrt{11}}$＝$\frac{-11 + 10\sqrt{11}}{11}$
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T02
+      name: 根式的整數與小數部分
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_g10s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 若 a、b 都為無理數且 a＋b 為有理數，則下列哪個選項一定是無理數？
+  options:
+  - label: A
+    content: $\frac{2a + b}{3}$
+  - label: B
+    content: a－b
+  - label: C
+    content: a．b
+  - label: D
+    content: ｜a｜＋｜b｜
+  - label: E
+    content: $a^{2}$＋$b^{2}$
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：反設$\frac{2a + b}{3}$為有理數，則$\frac{2a + b}{3}-\frac{a + b}{3}$亦為有理數
+
+    即$\frac{a}{3}$為有理數⇒ a 為有理數，矛盾
+
+    (B)○：反設 a－b 為有理數，則（a－b）＋（a＋b）亦為有理數
+
+    即 2a 為有理數⇒ a 為有理數，矛盾
+
+    (C)╳：反例：a＝$2 +\sqrt{3}$，b＝$2 -\sqrt{3}$，則 a＋b，ab 均為有理數
+
+    (D)╳：反例：同(C)，則｜a｜＋｜b｜＝$2 +\sqrt{3} + ( 2 -\sqrt{3} )$＝4 為有理數
+
+    (E)╳：反例，同(C)，則 $a^{2}$＋$b^{2}$＝$( 2 +\sqrt{3} )^{2}+ ( 2 -\sqrt{3} )^{2}$＝4＋3＋4＋3＝14
+
+    故選(A)(B)'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T01
+      name: 有理數與無理數性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_g10s1e1_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 設 a、b、c、d 為實數，請選出正確的選項。
+  options:
+  - label: A
+    content: 若$a + b\sqrt{2}$＝$c + d\sqrt{2}$，則 a＝c 且 b＝d
+  - label: B
+    content: $(\sqrt{6} -\sqrt{10} ) a^{2}$≥$( 1 -\sqrt{5} ) a^{2}$
+  - label: C
+    content: 若 a＜b，則$\frac{5a + b}{5}$＜$\frac{3a + 2b}{6}$
+  - label: D
+    content: 若 $a^{2}$＞$b^{2}$，則｜a｜＞｜b｜
+  - label: E
+    content: 若 a＞b＞c＞d＞0，則 a＞$\frac{ac + bd}{c + d}$＞b
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：反例：a＝1，b＝1，c＝$1 -\sqrt{2}$，d＝2
+
+    則$a + b\sqrt{2}$＝$c + d\sqrt{2}$＝$1 +\sqrt{2}$，但 a≠c 且 b≠d
+
+    (B)○：若 a＝0，成立；若 a≠0，則要判斷$(\sqrt{6} -\sqrt{10} ) a^{2}$≥$( 1 -\sqrt{5} ) a^{2}$是否成立
+
+    即判斷$\sqrt{6} -\sqrt{10}$≥$1 -\sqrt{5}$是否成立
+
+    由$\sqrt{6} -\sqrt{10} - ( 1 -\sqrt{5} )$＝$(\sqrt{6} +\sqrt{5} ) - (\sqrt{10} + 1 )$
+
+    ∵$(\sqrt{6} +\sqrt{5} )^{2}$＝$11 + 2\sqrt{30}$
+
+    $(\sqrt{10} + 1 )^{2}$＝$11 + 2\sqrt{20}$
+
+    ∴$\sqrt{6} +\sqrt{5}$＞$\sqrt{10} + 1$
+
+    即 $\sqrt{6} +\sqrt{5} - (\sqrt{10} + 1 )$＞0
+
+    ⇒ $\sqrt{6} -\sqrt{10}$＞$1 -\sqrt{5}$
+
+    ∴所求式子成立
+
+    (C)╳：$\frac{3a + 2b}{6}-\frac{5a + b}{5}$＝$\frac{15a + 10b - 30a - 6b}{30}$＝$\frac{-15a + 4b}{30}$
+
+    當 a＝1，b＝2 時，$\frac{-15a + 4b}{30}$＜0，即$\frac{3a + 2b}{6}$＜$\frac{5a + b}{5}$
+
+    (D)○：$a^{2}$＞$b^{2}$ ⇒$\sqrt{a^{2}}$＞$\sqrt{b^{2}}$⇒｜a｜＞｜b｜
+
+    (E)○：$a -\frac{ac + bd}{c + d}$＝$\frac{ad - bd}{c + d}$＝$\frac{( a - b ) d}{c + d}$＞0
+
+    $\frac{ac + bd}{c + d}-b$＝$\frac{ac - bc}{c + d}$＝$\frac{( a - b ) c}{c + d}$＞0
+
+    ∴成立
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T09
+      name: 實數不等式與根式比大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_g10s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: $729^{-\frac{1}{3}}+ 32^{\frac{2}{5}}+\left( \frac{1}{27} \right) ^{-\frac{1}{3}}$＝＿＿＿＿。
+  answer:
+  - $\frac{64}{9}$ 2.18 3.30 4.$-\frac{1}{3}$；3 5.3 6.3 7.12 8.39
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$729^{-\frac{1}{3}}+ 32^{\frac{2}{5}}+ \left( \frac{1}{27} \right) ^{-\frac{1}{3}}$＝$( 3^{6})^{-\frac{1}{3}}+ ( 2^{5})^{\frac{2}{5}}+ ( 3^{-3})^{-\frac{1}{3}}$
+
+    ＝$3^{－2}$＋$2^{2}$＋$3^{1}$＝$\frac{1}{9}+ 4 + 3$＝$\frac{64}{9}$'
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T01
+      name: 根式與分數指數律化簡
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題目解答欄位誤將第1至8題答案全數串接於此題
+  difficulty: 1
+- id: doc_111_台中_興大附中_數學_g10s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 已知$x^{\frac{1}{3}}+x^{-\frac{1}{3}}$＝3，求 x＋$x^{－1}$ 的值為＿＿＿＿。
+  explanation: '$x^{\frac{2}{3}}+ x^{-\frac{2}{3}}$＝$(x^{\frac{1}{3}}+ x^{-\frac{1}{3}})^{2}- 2$＝9－2＝7
+
+    ⇒ x＋$x^{－1}$＝$(x^{\frac{1}{3}}+ x^{-\frac{1}{3}}) (x^{\frac{2}{3}}- 1 + x^{-\frac{2}{3}})$＝3×（7－1）＝18'
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T04
+      name: 負指數與對稱指數求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_g10s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 設 x，y 為實數，｜x－3｜＜2，｜y－5｜＜3，使｜xy－10｜＜k 成立之最小 k 值為＿＿＿＿。
+  explanation: '$\begin{cases}| x - 3 | < 2 \\ | y - 5 | < 3\end{cases}$⇒$\begin{cases}1 < x < 5 \\ 2 < y < 8\end{cases}$，得 2＜xy＜40
+
+    ⇒－8＜xy－10＜30，欲使｜xy－10｜＜k 恆成立
+
+    則 k 最小值為 30'
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T08
+      name: 絕對值區間與乘積範圍推算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_g10s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 求絕對值不等式｜x｜＋2｜x－2｜＞5 的範圍為 x＜＿＿＿＿或 x＞＿＿＿＿。（全對才給分）
+  explanation: '｜x｜＋2｜x－2｜＞5
+
+    ① x ≤ 0 時，原式⇒－x＋2（－x＋2）＞5
+
+    ⇒－3x＞1 ⇒ x＜$-\frac{1}{3}$
+
+    又 x ≤ 0，得 x＜$-\frac{1}{3}$
+
+    ② 0＜x ≤ 2 時，原式⇒ x＋2（－x＋2）＞5
+
+    ⇒－x＞1 ⇒ x＜－1
+
+    又 0＜x ≤ 2，得此範圍無解
+
+    ③ x＞2 時，原式⇒ x＋2（x－2）＞5
+
+    ⇒ 3x＞9 ⇒ x＞3
+
+    又 x＞2，得 x＞3
+
+    由①、②、③知，解的範圍為 x＜$-\frac{1}{3}$或 x＞3'
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T04
+      name: 雙絕對值分段討論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_g10s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 設 a，b 為實數，若｜ax＋3｜≥ b 的解為 x ≥ 7 或 x ≤－1，求 a＋b＝＿＿＿＿。
+  explanation: '$\frac{7 + (-1 )}{2}$＝3 得中點為 x＝3，又$\frac{7 - (-1 )}{2}$＝4
+
+    由解為 x ≥ 7 或 x ≤－1 可得｜x－3｜≥ 4
+
+    同乘以｜－1｜⇒｜－x＋3｜≥ 4
+
+    得 a＝－1，b＝4，故 a＋b＝3'
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T02
+      name: 含參絕對值不等式反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_g10s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 設 x，y，z 均為實數，且 xyz≠0，並滿足 $3^{x}$＝$5^{y}$＝$(\sqrt[3]{15} )^{z}$，求$\frac{yz + xz}{xy}$＝ ＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T06
+      name: 指數等式換底與指數倒數求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_g10s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 如右圖，△ABC 為直角三角形且 PTCR 為矩形，已知$\overline{PR}$＝3，$\overline{PT}$＝2，求△ABC 面積的最小值為＿＿＿＿。
+  assets:
+  - key: s3_7_f1
+    kind: figure
+    file: doc_111_台中_興大附中_數學_g10s1e1/s3_7_f1.png
+    crop:
+      page: 3
+      rect:
+      - 473.75
+      - 198.55
+      - 562.0
+      - 315.05
+  tags:
+    unit:
+      code: MA-1-1-2
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 式的運算
+      std: true
+    textbook: 數學1（必修） 式的運算
+    pattern:
+      key: MA-1-1-2:T02
+      name: 算幾不等式求幾何極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_g10s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: <u>愛因斯坦</u>認為極大的飛行速度會使得飛行物體的時間減慢，並提出：「太空人以光速的 x 倍（0＜x＜1）進行 t 年的太空旅行（太空人老了 t 歲）；旅行結束後返回地球，地球上已經過了$\frac{t}{\sqrt{1 - x^{2}}}$年$\left( 地球上的人老了\frac{t}{\sqrt{1 - x^{2}}}歲 \right)$。」某年，A 太空人 29 歲，他有位 3 歲的兒子。此年，該太空人以光速的$\frac{4}{5}$倍進行 t 年的太空旅行；旅行結束後返回地球，太空人發現他跟兒子的年紀竟然一樣。試問，根據上述理論，A 太空人旅行了＿＿＿＿年。
+  tags:
+    unit:
+      code: MA-1-1-2
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 式的運算
+      std: true
+    textbook: 數學1（必修） 式的運算
+    pattern:
+      key: MA-1-1-2:T04
+      name: 根式條件代數求值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2

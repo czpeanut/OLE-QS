@@ -1,0 +1,456 @@
+document:
+  id: doc_110_桃園_武陵_數學_數B_g11s2e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 3
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 110學年度第2學期第3次定期評量 高二數學（數B）科試題
+  exam_name: 110學年度第2學期第3次定期評量
+  source_file: 高二/數學/110/2-3/桃園/武陵_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 8 分，共 24 分；錯一個選項得 5 分，錯兩個選項得 2 分，錯三個選項以上或未作答得零分）
+    count: 3
+  - ord: 2
+    name: 二、填充題（共 64 分，配分如下表）
+    count: 8
+  - ord: 3
+    name: 三、混合題（12 分）
+    count: 1
+questions:
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: '下課時間，同學在聊天
+
+    <u>小楷</u>說：『世界盃棒球賽中，球評判斷本場比賽中華隊獲勝機率 6 成、日本隊 4 成。』
+
+    <u>小勛</u>說：『氣象預報：當天會下雨的機率有 90 ％。』
+
+    <u>小穎</u>說：『我看比賽百分之百要延期了啦。』則下列何者正確？'
+  options:
+  - label: A
+    content: <u>小楷</u>說的是主觀機率
+  - label: B
+    content: <u>小楷</u>說的是客觀機率
+  - label: C
+    content: <u>小勛</u>說的是主觀機率
+  - label: D
+    content: <u>小勛</u>說的是客觀機率
+  - label: E
+    content: <u>小穎</u>說的是客觀機率
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：球評無提出數據佐證，故為主觀機率
+
+    (B)╳：同(A)
+
+    (C)╳：氣象預報來自科學計算，故為客觀機率
+
+    (D)○：同(C)
+
+    (E)╳：無提出數據佐證，故為主觀機率
+
+    故選(A)(D)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T15
+      name: 主觀機率與客觀機率判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 袋中有 3 顆白球、7 顆紅球，今自袋中隨機取球，設每顆球被取到的機率都相等，一次取一球，取後不放回，則下列敘述何者正確？
+  options:
+  - label: A
+    content: 取兩次後，恰為一白球一紅球的機率為$\frac{7}{15}$
+  - label: B
+    content: 第二次取到的是紅球的機率為$\frac{2}{3}$
+  - label: C
+    content: 第一次取到白球的條件下，則第二次取到的是白球的機率為$\frac{2}{9}$
+  - label: D
+    content: 第一次取到白球的條件下，則第三次取到的是白球的機率為$\frac{2}{9}$
+  - label: E
+    content: 第二次取到白球的條件下，則第一次取到的是白球的機率為$\frac{1}{3}$
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：$\frac{3}{10}\times \frac{7}{9}+\frac{7}{10}\times \frac{3}{9}$＝$\frac{7}{15}$
+
+    (B)╳：$\frac{7}{10}\times \frac{6}{9}+\frac{3}{10}\times \frac{7}{9}$＝$\frac{7}{10}$
+
+    (C)○：$\frac{\frac{3}{10}\times \frac{2}{9}}{\frac{3}{10}}$＝$\frac{2}{9}$
+
+    (D)○：P（第三次白｜第一次白）
+
+    ＝P（第二次白｜第一次白）＝$\frac{2}{9}$
+
+    (E)╳：$\frac{\frac{3}{10}\times \frac{2}{9}}{\frac{7}{10}\times \frac{3}{9}+\frac{3}{10}\times \frac{2}{9}}$＝$\frac{2}{9}$
+
+    故選(A)(C)(D)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 設 A、B 為樣本空間 S 中的兩事件，P
+  options:
+  - label: A
+    content: ＝$\frac{1}{3}$，P（A∪B）＝$\frac{2}{3}$，則下列何者正確？(A) P
+  - label: B
+    content: 的最大值為$\frac{1}{3}$(B)若 A、B 為獨立事件，則 P(B)＝$\frac{1}{2}$
+  - label: C
+    content: 若 A、B 為獨立事件，則 P（A｜B）＝$\frac{1}{3}$
+  - label: D
+    content: 若 A、B 為互斥事件，則 P（A∩B）＝$\frac{1}{6}$
+  - label: E
+    content: 若 A、B 為互斥事件，則 P（B｜A'）＝$\frac{1}{3}$
+  answer:
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：當 A$\subseteq$B，則 P(B)＝P（A∪B）＝$\frac{2}{3}$
+
+    (B)○：若 A，B 獨立，P（A∩B）＝P(A)×P(B)
+
+    則 P（A∪B）＝P(A)＋P(B)－P(A)×P(B)
+
+    ⇒$\frac{2}{3}$＝$\frac{1}{3}$＋P(B)－$\frac{1}{3}$P(B)
+
+    ⇒ P(B)＝$\frac{1}{2}$
+
+    (C)○：P（A｜B）＝P(A)＝$\frac{1}{3}$
+
+    (D)╳：若 A，B 互斥，P（A∩B）＝0
+
+    (E)╳：P（A∪B）＝P(A)＋P(B)－P（A∩B）
+
+    ⇒$\frac{2}{3}$＝$\frac{1}{3}$＋P(B)－0
+
+    ⇒ P(B)＝$\frac{1}{3}$
+
+    又 P（B｜A''）＝$\frac{P (B\cap A'' )}{P (A'' )}$＝$\frac{P (B ) - P (A\cap B )}{\frac{2}{3}}$
+
+    ＝$\frac{\frac{1}{3}-0}{\frac{2}{3}}$＝$\frac{1}{2}$
+
+    故選(B)(C)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T06
+      name: 條件機率性質與集合運算判別
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹與選項(A)(B)文字斷行錯位（P(A)與P(B)之括號遺漏或錯置），不影響作答
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 甲、乙兩人各擲一顆公正的骰子，點數一樣的條件下，兩人點數和為 8 的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '點數一樣有｛（1，1），（2，2），……，（6，6）｝ 6 種可能，其中（4，4）點數和為 8，
+
+    故所求為$\frac{1}{6}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 若 A、B 為獨立事件，且已知 P(A)＝$\frac{1}{3}$，P(A∩B)＝$\frac{1}{8}$，則 P(B)＝＿＿＿＿
+  explanation: '∵P（A∩B）＝P(A)×P(B)
+
+    ∵$\frac{1}{8}$＝$\frac{1}{3}$×P(B)
+
+    ⇒ P(B)＝$\frac{3}{8}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: '設 P(A)＝$\frac{3}{8}$，P（A∪B）＝$\frac{3}{4}$，P（B''）＝$\frac{1}{3}$，試求：
+
+    (1) P（A∩B）＝＿＿＿＿。
+
+    (2) P（A｜B）＝＿＿＿＿。'
+  answer:
+  - (1) $\frac{7}{24}$；(2) $\frac{7}{16}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) P(B)＝1－P（B''）＝$\frac{2}{3}$
+
+    P（A∪B）＝P(A)＋P(B)－P（A∩B）
+
+    ⇒$\frac{3}{4}$＝$\frac{3}{8}+\frac{2}{3}$－P（A∩B）
+
+    ⇒ P（A∩B）＝$\frac{7}{24}$
+
+    (2) P（A｜B）＝$\frac{P (A\cap B )}{P (B )}$＝$\frac{\frac{7}{24}}{\frac{2}{3}}$＝$\frac{7}{16}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T09
+      name: 條件機率定義與集合運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知<u>小睎</u>在罰球線上投籃的命中率為$\frac{1}{3}$，且每次罰球都是獨立事件，則投籃 5 次，恰在第 5 次投進第 2 個球的機率為＿＿＿＿。
+  answer:
+  - $\frac{32}{243}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T12
+      name: 獨立重複試驗與比賽勝率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '甲、乙兩射手的命中率依次為$\frac{1}{2}$、$\frac{1}{3}$，今兩人對同一靶各射擊兩發，各人命中靶面的事件為獨立事件，試求：
+
+    (1) 靶面恰中一發的機率為＿＿＿＿。
+
+    (2) 若已知靶面恰中一發，則此發為甲命中的機率為＿＿＿＿。'
+  answer:
+  - (1) $\frac{1}{3}$；(2) $\frac{2}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T01
+      name: 貝氏定理與條件事後機率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '假設有某種罕見疾病，1000 個成年人當中只有 1 人會得到。醫界發展出一種測試方法，測試結果只有陽性和陰性兩種可能。對於該病病人來說，測試結果為陽性的機率是 99 ％，而對非病人來說，測試結果為陽性（即「偽陽性」）的機率是 2 ％。
+
+    (1) 若隨機抽一人做檢測，得到陽性反應的機率為＿＿＿＿。
+
+    (2) 若隨機抽一人做檢測，得到陰性反應，則他的確有該疾病的機率為＿＿＿＿。'
+  answer:
+  - (1) 0.02097；(2) $\frac{1}{97903}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T04
+      name: 貝氏定理與醫學篩檢誤判反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 在右邊的電路圖中有 4 個開關，以 1、2、3、4 表示。電流通過各開關的機率分別為$\frac{1}{2}$、$\frac{1}{3}$、$\frac{1}{4}$、$\frac{1}{5}$（如圖所示）。若各開關的操作獨立，求電流從左端（L）流到右端（R）的機率為＿＿＿＿。
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_110_桃園_武陵_數學_數B_g11s2e3/s2_7_f1.png
+    crop:
+      page: 2
+      rect:
+      - 367.75
+      - 493.65
+      - 563.75
+      - 566.95
+  answer:
+  - $\frac{5}{24}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 夜市舉辦抽獎活動，參加者依排隊順序抽獎，輪到抽獎的人有一次抽獎機會，抽獎方式為丟擲一枚均勻硬幣，正面為中獎，反面為沒中獎。獎品有 2 份，活動直到 2 份獎品都被抽中為止。試求在前四人至多有一人中獎的情況下，排第五位的人抽中第二份獎品的條件機率為 ＿＿＿＿。
+  answer:
+  - $\frac{2}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T05
+      name: 條件機率乘法公式與多階段試驗
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_110_桃園_武陵_數學_數B_g11s2e3_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '2 年 19 班有 40 位同學經統計得以下數據，男生 15 人中有 10 人觀看動漫影展，而有觀看動漫影展的共 24 人。
+
+    (1) 試完成列聯表。（4 分，錯一個扣 1 分，扣完為止）
+
+    |  | 女 $A_{1}$ | 男 $A_{2}$ | 合計 |
+
+    | --- | --- | --- | --- |
+
+    | 看 $B_{1}$ |  | 10 | 24 |
+
+    | 不看 $B_{2}$ |  |  |  |
+
+    | 合計 |  | 15 | 40 |
+
+    (2) 求 P（$A_{1}$｜$B_{2}$）之值。（4 分）
+
+    (3) 試問性別與是否看動漫影展是否為獨立事件，請說明理由。 （4 分）'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T10
+      name: 列聯表數據判讀與條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

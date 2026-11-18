@@ -1,0 +1,394 @@
+document:
+  id: doc_112_桃園_武陵_數學_g10s2e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 1
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 112學年度第2學期第1次定期評量 高一數學科試題
+  exam_name: 112學年度第2學期第1次定期評量
+  source_file: 高一/數學/112/2-1/桃園/武陵.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題 ( 每題3分，共9分 )
+    count: 1
+  - ord: 2
+    name: 二、多重選擇題(每題8分，錯一個選項扣2分，不倒扣，共16分)
+    count: 2
+  - ord: 3
+    name: 三、填充題(每格6分，共66分)
+    count: 8
+  - ord: 4
+    name: 四、計算證明題(共9分)
+    count: 1
+questions:
+- id: doc_112_桃園_武陵_數學_g10s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: (1) 「主計總處國勢普查處表示，2022年工業及服務業受僱員工全年總薪資中位數較2021年增加2.4％，為近四年最大 增幅，2019年以來較高水準。其中，2018年總薪資中位數年增幅3.5％、2019年1.3％，2020年、2021年受疫情影 響，年增幅分別只有0.8％、1％。」請問下列哪一個選項最接近2018年到2022年這五年的總薪資中位數平均年增幅 率。
+  options:
+  - label: A
+    content: $(\frac{3.5+1.3+0.8+1+2.4}{5})\%$
+  - label: B
+    content: $(\sqrt[5]{3.5\times 1.3\times 0.8\times 1\times 2.4})\%$
+  - label: C
+    content: $(\sqrt[5]{3.5\times 1.3\times 0.8\times 1\times 2.4}-1)\%$
+  - label: D
+    content: $(\sqrt[5]{1.035\times 1.013\times 1.008\times 1.01\times 1.024}-1)\%$
+  - label: E
+    content: $(\sqrt[5]{1.035\times 1.013\times 1.008\times 1.01\times 1.024}-1)\times 100\%$
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T05
+      name: 幾何平均數與平均成長率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_g10s2e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設兩變量x與y的n筆數據為 ( $x_{1}$ , $y_{1}$ ) , ( $x_{2}$ , $y_{2}$ ) ,…, ( $x_{n}$ , $y_{n}$ )，且x與y的平均數分別為μ$_{x}$ , μ$_{y}$，標準差分別為σ$_{x}$ , σ$_{y}$，相關係數為$r_{xy}$。另設兩變數$z_{i}$＝a ( $x_{i}$－μ$_{x}$ )，$w_{i}$＝b ( $y_{i}$－μ$_{y}$ )，相關係數為$r_{zw}$，w對z的迴歸直線為w＝mz＋k，請選出正確的選項。
+  options:
+  - label: A
+    content: 若 ( $x_{1}$ , $y_{1}$ ) , ( $x_{2}$ , $y_{2}$ ) ,…, ( $x_{n}$ , $y_{n}$ )皆落在同一條直線上，則 | $r_{xy}$ |＝1
+  - label: B
+    content: k＝0
+  - label: C
+    content: $r_{zw}$＝$r_{xy}$
+  - label: D
+    content: 若a＝σ$_{y}$，b＝σ$_{x}$，則$r_{zw}$＝m
+  - label: E
+    content: 若σ$_{y}$＝0，則$y_{1}$＝$y_{2}$＝…＝$y_{n}$
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T03
+      name: 線性變換對相關與迴歸影響
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_桃園_武陵_數學_g10s2e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設＜$a_{n}$＞是等差數列且公差d≠0，＜$b_{n}$＞是等比數列且公比r≠1，試問下列數列哪些必為等比數列？
+  options:
+  - label: A
+    content: ＜$2^{n}$×$b_{n＋1}$＞
+  - label: B
+    content: ＜$2^{an}$＞
+  - label: C
+    content: ＜$\frac{2^{n}}{b_{n}}$＞
+  - label: D
+    content: ＜$b_{n＋1}$－$b_{n}$＞
+  - label: E
+    content: ＜$\frac{b_{n+1}}{b_{n}}$＞
+  answer:
+  - A
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T06
+      name: 數列定義判別與單調正負分析
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_g10s2e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: '(1) 「大秦屋」為武稜高中附近的知名餐廳，在網路上有250個評論，其中一星評論有7個，二星評論有5個，三星評論 有9個，四星評論有29個，其它皆為五星評論。這250則評論的第5百分位數為$P_{5}$，第20百分位數為$P_{20}$，則數對 ( $P_{5}$ , $P_{20}$ )＝＿＿＿。
+
+    (2) 承(1)，為了要讓更多人知道大秦屋的美味，則至少要召集＿＿＿位親朋好友給予五星評論，才能讓網路上的總評價從4.6顆星變成4.9顆星。 ［註：總評價的算法是將所有評論星數的算術平均數四捨五入至小數點後第一位。］'
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_112_桃園_武陵_數學_g10s2e1/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 297.85
+      - 275.8
+      - 453.35
+      - 348.65
+  answer:
+  - (1) ( 7 , 29 )；(2) 650
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T01
+      name: 集中趨勢與百分位數累計計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_桃園_武陵_數學_g10s2e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 設數列＜$a_{n}$＞滿足$a_{1}$＝1，3 ( $a_{1}$＋$a_{2}$＋…＋$a_{n}$ )＝( n＋2 ) $a_{n}$，試求第n項$a_{n}$＝＿＿＿。
+  answer:
+  - $\frac{n(n+1)}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T04
+      name: 級數和S_n反求一般項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_桃園_武陵_數學_g10s2e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: '(1) 假設用撲克牌疊n層的金字塔會用到的牌數為$a_{n}$，如下圖，每個線段代表一張撲克牌，可知$a_{1}$＝2、$a_{2}$＝7、$a_{3}$＝15， 則$a_{n}$滿足的遞迴關係式為$a_{n＋1}$＝$a_{n}$＋＿＿＿。( n為正整數 )
+
+    (2) 承(1)，疊20層的金字塔會用到＿＿＿張撲克牌。'
+  assets:
+  - key: s3_3_f1
+    kind: figure
+    file: doc_112_桃園_武陵_數學_g10s2e1/s3_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 78.85
+      - 599.8
+      - 232.95
+      - 660.3
+  answer:
+  - (1) $a_{n}$＋( 3n＋2 )；(2) 610
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T04
+      name: 圖形與數字陣列規律計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_桃園_武陵_數學_g10s2e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 設3筆資料 ( 1 , 2 ) , ( 2 , a ) , ( 3 , b ) 的迴歸直線方程式是y＝$\frac{1}{2}$x＋2，則數對 ( a , b )＝＿＿＿。
+  answer:
+  - ( 4 , 3 )
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T07
+      name: 相關係數與迴歸反推未知數據
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_桃園_武陵_數學_g10s2e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 設數列＜$a_{n}$＞滿足下列關係式：$\sqrt{a_{n}}=\frac{\sqrt{a_{n+1}}+\sqrt{a_{n-1}}}{2}$，其中n ≥ 2，且n為正整數。 若$a_{1}$＝1，$a_{2}$＝9，求$a_{8}$＝＿＿＿。
+  answer:
+  - '225'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_g10s2e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: <u>小武</u>因確診未能考到數學段考，老師已經算出班上其餘20人的數學段考成績平均為60分，標準差為$\sqrt{420}$。<u>小武</u>痊癒後參加補考得到60分，則全班包含<u>小武</u>的21人數學段考成績的標準差為＿＿＿。
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T02
+      name: 變異數標準差計算與增減變動
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_g10s2e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: $3^{0}$×$2^{－1}$＋$3^{1}$×$2^{－2}$＋$3^{2}$×$2^{－3}$＋…＋$3^{8}$×$2^{－9}$＝＿＿＿。( 以最簡假分數表示 ) ［註：$2^{0}$＝512，$3^{8}$＝6561］
+  answer:
+  - $\frac{19171}{512}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T07
+      name: 等比級數求和與不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_桃園_武陵_數學_g10s2e1_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 用黑、白兩種顏色的正三角形地磚，依照如下的規律拼成若干圖形，用$a_{n}$表示第n個圖白色地磚的總面積，已知每個白色三角形地磚大小皆相等，黑色則有兩種規格，$b_{n}$表示第n個圖黑色地磚的總面積，已知$a_{1}$＝3，$b_{1}$＝1，試求$b_{10}$＝＿＿＿。
+  assets:
+  - key: s3_9_f1
+    kind: figure
+    file: doc_112_桃園_武陵_數學_g10s2e1/s3_9_f1.png
+    crop:
+      page: 3
+      rect:
+      - 267.85
+      - 473.8
+      - 474.1
+      - 548.3
+  answer:
+  - '235'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T04
+      name: 圖形與數字陣列規律計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_桃園_武陵_數學_g10s2e1_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '設數列＜$a_{n}$＞的前n項和為$S_{n}$，且對任意正整數n，$S_{n}$＝2－$a_{n}$恆成立。
+
+    (1) 試求$a_{1}$、$a_{2}$、$a_{3}$的值，並猜測$a_{n}$的一般項。( 3分 )
+
+    (2) 使用數學歸納法證明您的猜測。( 6分 )'
+  answer:
+  - (1) $a_{n}$＝($\frac{1}{2}$)$^{n－1}$。
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T03
+      name: 數學歸納法猜測與倍數證明
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

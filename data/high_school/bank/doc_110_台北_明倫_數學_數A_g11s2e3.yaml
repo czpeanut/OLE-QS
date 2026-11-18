@@ -1,0 +1,632 @@
+document:
+  id: doc_110_台北_明倫_數學_數A_g11s2e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 3
+  city: 台北
+  school_short: 明倫
+  school: 臺北市立明倫高級中學
+  title: 臺北市立明倫高級中學 110學年度第2學期第3次定期評量 高二數學（數A）科試題
+  exam_name: 110學年度第2學期第3次定期評量
+  source_file: 高二/數學/110/2-3/台北/明倫_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題(每題5分，答錯一個選項得3分；答錯二個選項得1分，答錯三個以上不給分)
+    count: 6
+  - ord: 2
+    name: 二、填充題(每格5分，滿分70分)
+    count: 14
+questions:
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 若聯立方程式$\begin{cases}x+2y+3z=2 \\ x-z=5 \\ 3x+2y+z=a\end{cases}$有解，則下列何者正確？
+  options:
+  - label: A
+    content: a＞10
+  - label: B
+    content: a＞20
+  - label: C
+    content: a＜0
+  - label: D
+    content: 聯立方程式有無窮多組解
+  - label: E
+    content: 聯立方程式恰有一解
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\begin{cases}x+2y+3z=2 \cdots ① \\ x-z=5\cdots \cdots \cdots \cdots ② \\ 3x+2y+z=a \cdots ③\end{cases}$ ③－①，2x－2z＝a－2 ⇒ x－z＝$\frac{a-2}{2}$ 方程組有解 ⇒ 由②得$\frac{a-2}{2}$＝5 ∴ a＝12 令z＝t，由②得x＝t＋5代入① 得y＝－2t－$\frac{3}{2}$ ∴方程組有無裉多組解 故選(A)(D)。
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T02
+      name: 含參三元聯立方程組解的討論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設a為實數，方程組$\begin{cases}ax+y+z=1 \\ x+ay+z=1 \\ x+y+az=1\end{cases}$下列何者可使方程組恰有一解？
+  options:
+  - label: A
+    content: a＝π
+  - label: B
+    content: a＝－1
+  - label: C
+    content: a＝$\sqrt{7}$
+  - label: D
+    content: a＝1
+  - label: E
+    content: a＝－2
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\left[ \begin{matrix}a & 1 & 1 & 1 \\ 1 & a & 1 & 1 \\ 1 & 1 & a & 1\end{matrix} \right]$→$\left[ \begin{matrix}a+2 & a+2 & a+2 & 3 \\ 1 & a & 1 & 1 \\ 1 & 1 & a & 1\end{matrix} \right]$ 當a＋2≠0時 →$\left[ \begin{matrix}1 & 1 & 1 & \frac{3}{a+2} \\ 1 & a & 1 & 1 \\ 1 & 1 & a & 1\end{matrix} \right]$→$\left[ \begin{matrix}1 & 1 & 1 & \frac{3}{a+2} \\ 0 & a-1 & 0 & \frac{a-1}{a+2} \\ 0 & 0 & a-1 & \frac{a-1}{a+2}\end{matrix} \right]$ 方程組恰有一解$\Leftrightarrow$a＋2≠0，a－1≠0 故選(A)(B)(C)。
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T09
+      name: 對稱型含參方程組消元討論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 設A、B與C皆為二階方陣，I為二階單位方陣，O為二階零方陣，r ∈ R，則下列敘述何者為真？
+  options:
+  - label: A
+    content: (rA) B＝A (rB)＝r (AB)
+  - label: B
+    content: 若A的行列式值不為0，且AB＝AC則B＝C
+  - label: C
+    content: 若A、B的反方陣都存在，則$^{ }$(AB)$^{－1}$＝$B^{－1}$ $A^{－1}$
+  - label: D
+    content: AC＋BC＝C (A＋B)
+  - label: E
+    content: $A^{5}$＝$A^{2}$ $A^{3}$＝$A^{3}$ $A^{2}$
+  answer:
+  - A
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○ (B) ○ (C) ○ (D) ×，AC＋BC＝( A＋B ) C，不一定等於C ( A＋B ) (E) ○ 故選(A)(B)(C)(E)。
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T06
+      name: 矩陣乘法代數性質與交換律判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 下列哪些二階方陣可將x軸變換到y軸？
+  options:
+  - label: A
+    content: $\left[ \begin{matrix}1 & 2 \\ 3 & 0\end{matrix} \right]$
+  - label: B
+    content: $\left[ \begin{matrix}0 & -1 \\ 3 & 2\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}-1 & -2 \\ -3 & -6\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}3 & -1 \\ 1 & 4\end{matrix} \right]$
+  - label: E
+    content: $\left[ \begin{matrix}0 & 2 \\ -1 & 0\end{matrix} \right]$
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: x軸上的任一點 ( t , 0 ) (A)$\left[ \begin{matrix}1 & 2 \\ 3 & 0\end{matrix} \right]\left[ \begin{matrix}t \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}t \\ 3t\end{matrix} \right]$，有點不在y軸上 (B)$\left[ \begin{matrix}0 & -1 \\ 3 & 2\end{matrix} \right]\left[ \begin{matrix}t \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}0 \\ 3t\end{matrix} \right]$，點構成y軸 (C)$\left[ \begin{matrix}-1 & -2 \\ -3 & -6\end{matrix} \right]\left[ \begin{matrix}t \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}-t \\ -3t\end{matrix} \right]$，有點不在y軸上 (D)$\left[ \begin{matrix}3 & -1 \\ 1 & 4\end{matrix} \right]\left[ \begin{matrix}t \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}3t \\ t\end{matrix} \right]$，有點不在y軸上 (E)$\left[ \begin{matrix}0 & 2 \\ -1 & 0\end{matrix} \right]\left[ \begin{matrix}t \\ 0\end{matrix} \right]$＝$\left[ \begin{matrix}0 \\ -t\end{matrix} \right]$，點構成y軸 故選(B)(E)。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T07
+      name: 直線經線性變換與逆矩陣反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 1
+  stem: 有關矩陣A＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$與矩陣B＝$\left[ \begin{matrix}\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}\end{matrix} \right]$，試問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: $A^{2}$＝－I
+  - label: B
+    content: AB＝BA
+  - label: C
+    content: $A^{2}$B＝$BA^{2}$
+  - label: D
+    content: $A^{10}B^{5}$＝$B^{9}A^{3}$
+  - label: E
+    content: (ABA)$^{7}$＝$AB^{7}$A
+  answer:
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: A＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$＝$\left[ \begin{matrix}\cos \pi & -\sin \pi \\ \sin \pi & \cos \pi\end{matrix} \right]$，逆時針旋轉π B＝$\left[ \begin{matrix}\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}\end{matrix} \right]$＝$\left[ \begin{matrix}\cos \frac{\pi}{4} & -\sin \frac{\pi}{4} \\ \sin \frac{\pi}{4} & \cos \frac{\pi}{4}\end{matrix} \right]$，逆時針旋轉$\frac{\pi}{4}$，$B^{8}$＝I (A)(法一) $A^{2}$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$＝I (法二) $A^{2}$＝$\left[ \begin{matrix}\cos 2\pi & -\sin 2\pi \\ \sin 2\pi & \cos 2\pi\end{matrix} \right]$＝I (B)都逆時針旋轉π＋$\frac{\pi}{4}$＝$\frac{5\pi}{4}$ (C) $A^{2}$B＝IB＝B，$BA^{2}$＝BI＝B (D) $A^{10}B^{5}$＝($A^{2}$)$^{5}B^{5}$＝$B^{5}$＝$\left[ \begin{matrix}\cos \frac{5\pi}{4} & -\sin \frac{5\pi}{4} \\ \sin \frac{5\pi}{4} & \cos \frac{5\pi}{4}\end{matrix} \right]$ $B^{9}A^{3}$＝$B^{9}$A＝BA＝$\left[ \begin{matrix}\cos \frac{5\pi}{4} & -\sin \frac{5\pi}{4} \\ \sin \frac{5\pi}{4} & \cos \frac{5\pi}{4}\end{matrix} \right]$ (E) ABA表逆時針旋轉π＋$\frac{\pi}{4}$＋π＝2π＋$\frac{\pi}{4}$ $^{ }$∴ (ABA)$^{7}$＝$B^{7}$ $^{ }AB^{7}$A表逆時針旋轉π＋$\frac{7\pi}{4}$＋π＝2π＋$\frac{7\pi}{4}$ $^{ }$∴ $AB^{7}$A＝$B^{7}$ 故選(B)(C)(D)(E)。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T03
+      name: 平面旋轉變換矩陣與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s1_6
+  section: 1
+  number: 6
+  type: multiple
+  page: 1
+  stem: 已知A、B是兩個2×2的轉移矩陣，試問下列矩陣哪些是轉移矩陣？
+  options:
+  - label: A
+    content: $A^{2}$
+  - label: B
+    content: A＋B
+  - label: C
+    content: AB
+  - label: D
+    content: $\frac{1}{2}$($A^{2}$＋$B^{2}$)
+  - label: E
+    content: 2 ($A^{2}$＋$B^{2}$)
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: A、B為2階轉移方陣 ⇒ AB，$\frac{1}{2}$(A＋B) 都是轉移方陣 ⇒ $A^{2}$，$B^{2}$，$\frac{1}{2}$($A^{2}$＋$B^{2}$) 也是轉移方陣 故選(A)(C)(D)。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T01
+      name: 轉移矩陣定義與性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 設矩陣$\left[ \begin{matrix}1 & -2 & a & 5 \\ 2 & b & -3 & -3 \\ 3 & -1 & 2 & c\end{matrix} \right]$經過列運算後，得$\left[ \begin{matrix}1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 2\end{matrix} \right]$，求a＋b－c＝＿＿＿＿。
+  answer:
+  - －2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 表示$\begin{cases}x-2y+az=5 \\ 2x+by-3z=-3 \\ 3x-y+2z=c\end{cases}$之解為$\begin{cases}x=1 \\ y=1 \\ z=2\end{cases}$ ⇒$\begin{cases}1-2+2a=5 \\ 2+b-b=-3 \\ 3-1+4=c\end{cases}$ ⇒$\begin{cases}a=3 \\ b=1 \\ c=6\end{cases}$ ∴ a＋b－c＝－2
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T07
+      name: 化簡矩陣回代解反推係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 若矩陣A、B滿足A＋B＝$\left[ \begin{matrix}3 & -2 \\ 2 & 9\end{matrix} \right]$，A－B＝$\left[ \begin{matrix}-1 & 16 \\ -4 & -1\end{matrix} \right]$，則$A^{2}$－$B^{2}$為＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}17 & 98 \\ -26 & 11\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: A＝$\left[ \begin{matrix}1 & 7 \\ -1 & 4\end{matrix} \right]$，B＝$\left[ \begin{matrix}2 & -9 \\ 3 & 5\end{matrix} \right]$ ∴ $A^{2}$－$B^{2}$＝$\left[ \begin{matrix}1 & 7 \\ -1 & 4\end{matrix} \right]\left[ \begin{matrix}1 & 7 \\ -1 & 4\end{matrix} \right]$－$\left[ \begin{matrix}2 & -9 \\ 3 & 5\end{matrix} \right]\left[ \begin{matrix}2 & -9 \\ 3 & 5\end{matrix} \right]$ ＝$\left[ \begin{matrix}-6 & 35 \\ -5 & 9\end{matrix} \right]$－$\left[ \begin{matrix}-23 & -63 \\ 21 & -2\end{matrix} \right]$ ＝$\left[ \begin{matrix}17 & 98 \\ -26 & 11\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T04
+      name: 矩陣方程與聯立矩陣求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設P、Q、R為二階方陣，且PQ＝$\left[ \begin{matrix}2 & 0 \\ 12 & 0\end{matrix} \right]$，PR＝$\left[ \begin{matrix}1 & 3 \\ 4 & 12\end{matrix} \right]$，Q＋R＝$\left[ \begin{matrix}1 & 0 \\ 3 & 3\end{matrix} \right]$，則P＝＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}0 & 1 \\ 4 & 4\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( Q＋R )＝$\left[ \begin{matrix}3 & 3 \\ 16 & 12\end{matrix} \right]$ P$\left[ \begin{matrix}1 & 0 \\ 3 & 3\end{matrix} \right]$＝$\left[ \begin{matrix}3 & 3 \\ 16 & 12\end{matrix} \right]$ ∴ P＝$\left[ \begin{matrix}3 & 3 \\ 16 & 12\end{matrix} \right] \frac{1}{3}\left[ \begin{matrix}3 & 0 \\ -3 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}0 & 1 \\ 4 & 4\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T04
+      name: 矩陣方程與聯立矩陣求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 矩陣可以用來作為祕密通訊。雙方可約定用$\left[ \begin{matrix}0 \\ 1\end{matrix} \right]$、$\left[ \begin{matrix}0 \\ 2\end{matrix} \right]$、$\left[ \begin{matrix}0 \\ 3\end{matrix} \right]$、…、$\left[ \begin{matrix}2 \\ 6\end{matrix} \right]$分別表示英文字母A、B、C、…、Z。例如： 矩陣$\left[ \begin{matrix}1 & 1 & 2 & 0 \\ 2 & 5 & 2 & 5\end{matrix} \right]$表示LOVE。但是為了保密，有時候會用金鑰加密，而此金鑰只有雙方知道。設金鑰X＝$\left[ \begin{matrix}3 & 4 \\ 2 & 3\end{matrix} \right]$，而甲將訊息A加密後傳給乙，亦即XA＝B，乙收到的訊息是B，設B＝$\left[ \begin{matrix}-5 & -4 & 6 & -20 \\ 4 & 3 & -4 & 15\end{matrix} \right]$，則原來訊息A表示的訊息為＿＿＿＿。(用英文字母表示)
+  answer:
+  - LATE
+  answer_status: verified
+  answer_source: answer_key
+  explanation: A＝$X^{－1}$B＝$\frac{1}{1}\left[ \begin{matrix}3 & 4 \\ 2 & 3\end{matrix} \right] \left[ \begin{matrix}-5 & -4 & 6 & -20 \\ 4 & 3 & -4 & 15\end{matrix} \right]$＝$\begin{matrix}\left[ \begin{matrix}1 & 0 & 2 & 0 \\ 2 & 1 & 0 & 5\end{matrix} \right] \\ \begin{matrix}\downarrow & \downarrow & \downarrow & \downarrow \\ L & A & T & E\end{matrix}\end{matrix}$ 訊息A表示的訊息為「LATE」。
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T05
+      name: 矩陣密碼編譯與線性建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知A為二階方陣，矩陣X＝$\left[ \begin{matrix}1 \\ 3\end{matrix} \right]$，AX＝$\left[ \begin{matrix}3 \\ 8\end{matrix} \right]$，$A^{2}$X＝$\left[ \begin{matrix}2 \\ 6\end{matrix} \right]$，求二階方陣A為＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}-18 & 7 \\ -46 & 18\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\left[ \begin{matrix}2 \\ 6\end{matrix} \right]$＝$A^{2}$X＝A (AX)＝A$\left[ \begin{matrix}3 \\ 8\end{matrix} \right]\left[ \begin{matrix}3 \\ 8\end{matrix} \right]$＝AX＝A$\left[ \begin{matrix}1 \\ 3\end{matrix} \right]$ ∴ A$\left[ \begin{matrix}3 & 1 \\ 8 & 3\end{matrix} \right]$＝$\left[ \begin{matrix}2 & 3 \\ 6 & 8\end{matrix} \right]$ 得A＝$\left[ \begin{matrix}2 & 3 \\ 6 & 8\end{matrix} \right] \frac{1}{1}\left[ \begin{matrix}3 & -1 \\ -8 & 3\end{matrix} \right]$＝$\left[ \begin{matrix}-18 & 7 \\ -46 & 18\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T03
+      name: 反矩陣存在條件與求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 設矩陣I＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$，A＝$\left[ \begin{matrix}0 & 2 \\ -2 & 2\end{matrix} \right]$。 (1)將$A^{3}$以單位方陣I表示為＿＿＿＿。(2)求$A^{10}$為＿＿＿＿。
+  answer:
+  - (1)－8I；(2)$\left[ \begin{matrix}0 & -1024 \\ 1024 & -1024\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) $A^{2}$＝$\left[ \begin{matrix}0 & 2 \\ -2 & 2\end{matrix} \right] \left[ \begin{matrix}0 & 2 \\ -2 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}-4 & 4 \\ -4 & 0\end{matrix} \right]$ ∴ $A^{3}$＝$AA^{2}$＝$\left[ \begin{matrix}-8 & 0 \\ 0 & -8\end{matrix} \right]$＝(－8) I (2) $A^{10}$＝($A^{3}$)$^{3}$ A＝(－8 I)$^{3}$ A $^{ }$＝－512$\left[ \begin{matrix}0 & 2 \\ -2 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}0 & -1024 \\ 1024 & -1024\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T02
+      name: 矩陣乘法與方陣冪次規律
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 某地區有甲、乙兩種報紙，市場調查結果如下： ① 今年訂甲報的，有80％明年會繼續訂甲報，有20％明年會改訂乙報。 ② 今年訂乙報的，有70％明年會繼續訂乙報，有30％明年會改訂甲報。 已知今年甲、乙兩報的市占率分別為40％，60％，試求二年後甲報的市占率為＿＿＿＿。
+  answer:
+  - 55％
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\begin{matrix}甲 乙 \\ \begin{matrix}甲 \\ 乙\end{matrix}\left[ \begin{matrix}80\% & 30\% \\ 20\% & 70\%\end{matrix} \right] \left[ \begin{matrix}40\% \\ 60\%\end{matrix} \right] =\left[ \begin{matrix}50\% \\ 50\%\end{matrix} \right] \\ \left[ \begin{matrix}80\% & 30\% \\ 20\% & 70\%\end{matrix} \right] \left[ \begin{matrix}50\% \\ 50\%\end{matrix} \right] =\left[ \begin{matrix}55\% \\ 45\%\end{matrix} \right]\end{matrix}$ ∴ 二年後甲報的市占率為55%
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T02
+      name: 馬可夫鏈多步轉移與穩定態
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 如附圖，若OABC為正方形，且O為原點，A點坐標為 ( 2,－1 )， 試求：(1) C點坐標為＿＿＿＿。(2) B點坐標為＿＿＿＿。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_110_台北_明倫_數學_數A_g11s2e3/s2_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 432.65
+      - 436.25
+      - 527.65
+      - 525.85
+  answer:
+  - (1) ( 1 , 2 )；(2) (3 , 12 )
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1)$\left[ \begin{matrix}\cos 90^{\circ} & -\sin 90^{\circ} \\ \sin 90^{\circ} & \cos 90^{\circ}\end{matrix} \right] \left[ \begin{matrix}2 \\ -1\end{matrix} \right]$＝$\left[ \begin{matrix}1 \\ 2\end{matrix} \right]$ ∴ C ( 1 , 2 ) (2) (法1)$\sqrt{2}\left[ \begin{matrix}\cos 45^{\circ} & -\sin 45^{\circ} \\ \sin 45^{\circ} & \cos 45^{\circ}\end{matrix} \right] \left[ \begin{matrix}2 \\ -1\end{matrix} \right]$＝$\left[ \begin{matrix}1 & -1 \\ 1 & 1\end{matrix} \right] \left[ \begin{matrix}2 \\ -1\end{matrix} \right]$＝$\left[ \begin{matrix}3 \\ 1\end{matrix} \right]$ (法2)$\vec{OB}$＝( 2 ,－1 )＋( 1 , 2 )＝( 3 , 1 ) ∴ 點B ( 3 , 1 )
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T03
+      name: 平面旋轉變換矩陣與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 設A＝$\frac{1}{2}\left[ \begin{matrix}1 & \sqrt{3} \\ -\sqrt{3} & 1\end{matrix} \right]$，若n為自然數，且$A^{n}$＝$I_{2}$，其中$I_{2}$＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$，則n的最小值為＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: A＝$\left[ \begin{matrix}\frac{1}{2} & \frac{\sqrt{3}}{2} \\ -\frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right]$＝$\left[ \begin{matrix}\cos (-60^{\circ}) & -\sin (-60^{\circ}) \\ \sin (-60^{\circ}) & \cos (-60^{\circ})\end{matrix} \right]$ $I_{2}$＝$A^{n}$＝$\left[ \begin{matrix}\cos (-60^{\circ}) & -\sin n(-60^{\circ}) \\ \sin n(-60^{\circ}) & \cos n(-60^{\circ})\end{matrix} \right]$ ∴ cos n (－60°)＝1，sin n (－60°)＝0 ⇒ cos (n．60°)＝1，sin (n．60°)＝0 得最小自然數n為6。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T03
+      name: 平面旋轉變換矩陣與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 已知直線L：y＝－2x，求點P ( 15, 10 ) 對直線L鏡射的對應點P' 之坐標為＿＿＿＿。
+  answer:
+  - (－17 ,－6 )
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 鏡射軸L：y＝－2x，斜角θ⇒ 斜率tanθ＝－2 得cos 2θ＝$\frac{1-\tan ^{2}\theta}{1+\tan ^{2}\theta}$＝$-\frac{3}{5}$ $^{ }$sin 2θ＝$\frac{2\tan \theta}{1+\tan ^{2}\theta}$＝$\frac{-4}{5}$ P'：$\left[ \begin{matrix}\cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta\end{matrix} \right] \left[ \begin{matrix}15 \\ 10\end{matrix} \right]$＝$\left[ \begin{matrix}-\frac{3}{5} & -\frac{4}{5} \\ -\frac{4}{5} & \frac{3}{5}\end{matrix} \right] \left[ \begin{matrix}15 \\ 10\end{matrix} \right]$＝$\left[ \begin{matrix}-17 \\ -6\end{matrix} \right]$ ∴ P' (－17 ,－6 )
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T04
+      name: 平面鏡射變換矩陣與對稱
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: '經線性變換M後，圖(一)變換成圖(二)，$A_{1}$ ( 0 , 2 )，映至$A_{2}$ (－1 , 1 )，其餘各點類推。試求線性變換矩陣M＝＿＿＿＿。
+
+    圖(一) 圖(二)'
+  assets:
+  - key: s2_11_f1
+    kind: figure
+    file: doc_110_台北_明倫_數學_數A_g11s2e3/s2_11_f1.png
+    crop:
+      page: 2
+      rect:
+      - 90.6
+      - 666.65
+      - 181.0
+      - 785.35
+  - key: s2_11_f2
+    kind: figure
+    file: doc_110_台北_明倫_數學_數A_g11s2e3/s2_11_f2.png
+    crop:
+      page: 2
+      rect:
+      - 190.1
+      - 666.65
+      - 308.8
+      - 785.35
+  explanation: M$\left[ \begin{matrix}0 \\ 2\end{matrix} \right]$＝$\left[ \begin{matrix}-1 \\ 1\end{matrix} \right]$ 線性映射具有保「比例」特性 ∵$\overline{OB_{2}}$＝1＝$\overline{A_{2}B_{2}}$ ∴$\overline{OB_{1}}$＝$\overline{A_{1}B_{1}}$，得$B_{1}$ ( 1 , 1 ) M$\left[ \begin{matrix}1 \\ 1\end{matrix} \right]$＝$\left[ \begin{matrix}0 \\ 1\end{matrix} \right]$ 得M$\left[ \begin{matrix}1 & 0 \\ 1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}0 & -1 \\ 1 & 1\end{matrix} \right]$ ∴ M$\left[ \begin{matrix}0 & -1 \\ 1 & 1\end{matrix} \right] \frac{1}{2}\left[ \begin{matrix}2 & 0 \\ -1 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{1}{2} & -\frac{1}{2} \\ \frac{1}{2} & \frac{1}{2}\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T08
+      name: 由對應點反求變換矩陣與幾何性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: P ($\sqrt{3}$, 1 ) 先對x軸作鏡射，再繞原點旋轉有向角30° 得P'，試求P' 之坐標為＿＿＿＿。
+  answer:
+  - ( 2 , 0 )
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ($\sqrt{3}$, 1 ) $\xrightarrow{鏡射}$ ($\sqrt{3}$,－1 ) ∴ P'：$\left[ \begin{matrix}\cos 30^{\circ} & -\sin 30^{\circ} \\ \sin 30^{\circ} & \cos 30^{\circ}\end{matrix} \right] \left[ \begin{matrix}\sqrt{3} \\ -1\end{matrix} \right]$＝$\left[ \begin{matrix}2 \\ 0\end{matrix} \right]$ 得P' ( 2 , 0 )
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T05
+      name: 線性變換複合與伸縮推移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 已知矩陣A＝$\left[ \begin{matrix}1 & 0 \\ 3 & 1\end{matrix} \right]\left[ \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\end{matrix} \right]\left[ \begin{matrix}1 & 2 \\ 0 & 1\end{matrix} \right]$，且 ① 表示往x方向推移y坐標2倍。 ② 表示往y方向推移x坐標2倍。 ③ 表示往x方向推移y坐標3倍。 ④ 表示往y方向推移x坐標3倍。 ⑤ 表示以原點為中心，順時針旋轉45度。 ⑥ 表示以原點為中心，逆時針旋轉45度。 則矩陣A所代表的線性變換，”<u>依序進行</u>”的變換步驟為＿＿＿＿。
+  answer:
+  - ①⑥④(不可調換順序)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\left[ \begin{matrix}1 & 2 \\ 0 & 1\end{matrix} \right] \left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}x+2y \\ y\end{matrix} \right]$…① $\left[ \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\end{matrix} \right]$＝$\left[ \begin{matrix}\cos (-\frac{\pi}{4}) & -\sin (-\frac{\pi}{4}) \\ \sin (-\frac{\pi}{4}) & \cos (-\frac{\pi}{4})\end{matrix} \right]$…⑤ $\left[ \begin{matrix}1 & 0 \\ 3 & 1\end{matrix} \right] \left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}x \\ z+3x\end{matrix} \right]$…④ ∴ 變換步驟為①⑤④
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T05
+      name: 線性變換複合與伸縮推移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_數A_g11s2e3_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 3
+  stem: 設a、b為實數，M＝$\left[ \begin{matrix}a & 5 \\ 2 & b\end{matrix} \right]$，若直線L：x＋2y＝2經過矩陣M的線性變換後，得新直線L'：x＋y＝8， 則a＋b＝＿＿＿＿。
+  answer:
+  - '5'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設M$\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}x' \\ y'\end{matrix} \right]$ ⇒ x'＝ax＋5y，y'＝2x＋by 代入L'：x＋y＝8 得 ( ax＋5y )＋( 2x＋by )＝8 ⇒ ( a＋2 ) x＋( 5＋b ) y＝8 此外L：x＋2y＝2同義 ∴$\frac{a+2}{1}$＝$\frac{5+b}{2}$＝$\frac{8}{2}$⇒ a＝2，b＝3 a＋b＝5
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T07
+      name: 直線經線性變換與逆矩陣反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

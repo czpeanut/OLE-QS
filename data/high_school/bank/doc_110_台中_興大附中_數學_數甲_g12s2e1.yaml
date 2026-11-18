@@ -1,0 +1,352 @@
+document:
+  id: doc_110_台中_興大附中_數學_數甲_g12s2e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 110學年度第2學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 110學年度第2學期第1次定期評量
+  source_file: 高三/數學/110/2-1/台中/興大附中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單選題（占20分）
+    count: 5
+  - ord: 2
+    name: 二、多重選題（占32分）
+    count: 4
+questions:
+- id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 重複執行伯努力試驗n次，已知成功次數的期望值為150次，成功次數的標準差為10次，則這個伯努力試驗應最有可能為下列哪一個選項？
+  options:
+  - label: A
+    content: 擲一公正骰子，以1或6點為成功，其他點數為失敗
+  - label: B
+    content: 擲一公正骰子，以1或6點為失敗，其他點數為成功
+  - label: C
+    content: 擲一公正骰子，以奇數點為成功，偶數點為失敗
+  - label: D
+    content: 擲一公正骰子，以1點為成功，其他點數為失敗
+  - label: E
+    content: 擲一公正骰子，以1點為失敗，其他點數為成功
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知$\begin{cases}np=150 \\ np(1-p)=100\end{cases}\Rightarrow$ 1－p＝$\frac{2}{3}\Rightarrow$ p＝$\frac{1}{3}$，即成功的機率為$\frac{1}{3}$，故選(A)。
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T01
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 若方程式$x^{2}$＋ax＋3－i＝0的兩根為1－i與β，試問a的值為下列哪一個選項？
+  options:
+  - label: A
+    content: 3＋3i
+  - label: B
+    content: 3－3i
+  - label: C
+    content: '3'
+  - label: D
+    content: －3
+  - label: E
+    content: －3i
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 將1－i代入$x^{2}$＋ax＋3－i＝0可得 (1－i)$^{2}$＋a(1－i)＋3－i＝0 $\Rightarrow$ a(1－i)＝－3＋3i $\Rightarrow$ a＝$\frac{-3+3i}{1-i}$＝－3，故選(D)。
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T01
+      name: 複數代入與複係數方程式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 設函數f (x)＝a(x－1)$^{4}$＋k，其中a，k為實數且a≠0。已知函數值f (x) 的正負情形如附表，則方程式f (x)＝0有多少個<u>正實根</u>？
+  options:
+  - label: A
+    content: 1個
+  - label: B
+    content: 2個
+  - label: C
+    content: 3個
+  - label: D
+    content: 4個
+  - label: E
+    content: 無法判斷
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數甲_g12s2e1/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 55.0
+      - 343.15
+      - 233.6
+      - 391.15
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: f (1)＝k＜0，f (2)＝a＋k＞0 $\Rightarrow$ a＞0 $\Rightarrow$ f (0)＝a＋k＞0 可知當x＜0時，f (x) 仍為正數，因為f (0) f (1)＜0，f (1) f (2)＜0，所以方程式f (x)＝0在0與1之間、1與2之間各有1個正實根，故選(B)。
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T02
+      name: 實係數方程式與勘根定理
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 甲、乙、丙三人進行「黑白黑白我勝利」的猜拳遊戲，每人每次出拳為手心或手背。現在規定甲與另外兩人不同者則甲獲勝且遊戲終止，否則繼續下一局比賽。已知每次出拳都為獨立事件，隨機出拳，直到甲第一次勝利為止。舉例：第一次出拳三人都出手背，則繼續第二次出拳；第二次出拳為乙、丙兩人出手背，甲出手心，則甲獲勝並停止遊戲。求停止遊戲所需次數的標準差為下列哪一個選項？
+  options:
+  - label: A
+    content: $\sqrt{6}$
+  - label: B
+    content: $2\sqrt{2}$
+  - label: C
+    content: $2\sqrt{3}$
+  - label: D
+    content: $2\sqrt{6}$
+  - label: E
+    content: '3'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設隨機變數X表示所需次數，可知X～G (P)，其中P＝$\frac{C_{1}^{2}}{2^{3}}$＝$\frac{1}{4}$ 所以標準差δ＝$\sqrt{\frac{1-P}{P^{2}}}$＝$\sqrt{\frac{1-\frac{1}{4}}{\frac{1}{16}}}$＝$\sqrt{12}$＝$2\sqrt{3}$，故選(C)。
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T03
+      name: 幾何分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 已知兩複數z與z＋i皆為方程式$x^{n}$＝1的複數根，求滿足此條件的最小正整數n為何？
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '6'
+  - label: C
+    content: '8'
+  - label: D
+    content: '10'
+  - label: E
+    content: '12'
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T04
+      name: 單位根幾何位置與週期求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s2_6
+  section: 2
+  number: 6
+  type: single
+  page: 1
+  stem: 在複數平面上有A，B兩點，其所代表的複數分別為$z_{1}$與$z_{2}$，O為原點，若| $z_{1}$ |＝$\sqrt{3}$，$\frac{z_{2}}{z_{1}}$＝1＋$\sqrt{3}i$。請選出正確的選項。
+  options:
+  - label: A
+    content: '| $z_{2}$ |＝$2\sqrt{3}$'
+  - label: B
+    content: ∠AOB＝$\frac{\pi}{6}$
+  - label: C
+    content: △OAB的面積為$3\sqrt{3}$
+  - label: D
+    content: '| $z_{1}$＋$z_{2}$ |＝$\sqrt{21}$'
+  - label: E
+    content: '| $z_{1}$－$z_{2}$ |＝$\sqrt{3}$'
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T01
+      name: 複數極式旋轉伸縮與面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s2_7
+  section: 2
+  number: 7
+  type: single
+  page: 1
+  stem: 某科系宣稱該系新生男女錄取的比例相等。今檢定男女錄取的比例，並列出前三個步驟如下： ①假設「男女錄取的比例相等」； ②確立檢定統計量為「隨機抽取11名新生中女生的人數」； ③設定顯著水準為0.05。 已知隨機變數X表示女生的人數，根據附表，試選出隨機變數X的拒絕域。
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: '1'
+  - label: C
+    content: '2'
+  - label: D
+    content: '10'
+  - label: E
+    content: '11'
+  assets:
+  - key: s2_7_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數甲_g12s2e1/s2_7_f1.png
+    crop:
+      page: 2
+      rect:
+      - 55.0
+      - 71.15
+      - 558.4
+      - 218.25
+  explanation: 因為P (X＝0)＋P (X＝1)＋P (X＝10)＋P (X＝11) ＝0.0004882813＋0.0053710938＋0.0053710938＋0.0004882813 ＝0.0117187502＜0.05， 且P (X＝0)＋P (X＝1)＋P (X＝2)＋P (X＝9)＋P (X＝10)＋P (X＝11) ＝0.0117187502＋0.0268554688＋0.0268554688 ＝0.0654296878＞0.05， 所以X＝0，1，10，11為顯著水準0.05的拒絕域， 故選(A)(B)(D)(E)。
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T02
+      name: 二項分布假設檢定拒絕域
+    labeled_by: agent
+    label_confidence: high
+    label_note: 假設檢定拒絕域屬於二項分布應用
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s2_8
+  section: 2
+  number: 8
+  type: single
+  page: 2
+  stem: 已知f (x)＝$2x^{4}$－$11x^{3}$＋$16x^{2}$＋10x－31，若f (2＋i)＝a＋bi，其中a，b皆為實數。請選出正確的選項。
+  options:
+  - label: A
+    content: a＝－1
+  - label: B
+    content: b＝1
+  - label: C
+    content: f (－2－i)＝a－bi
+  - label: D
+    content: 已知f (2)＜0、f (3)＞0，以初始值$a_{1}$＝3，則利用牛頓法求出$a_{2}$為2.68
+  - label: E
+    content: 已知f (x)＝0恰有一負根，且f (－1.5)＞0，則此負根最接近的整數為－2
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T03
+      name: 牛頓法求多項式近似根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數甲_g12s2e1_s2_9
+  section: 2
+  number: 9
+  type: single
+  page: 2
+  stem: 設ω＝cos$\frac{2\pi}{5}$＋i sin$\frac{2\pi}{5}$，請選出正確的選項。
+  options:
+  - label: A
+    content: $\overline{\omega ^{10}}$＝1
+  - label: B
+    content: (1－ω)(1－ω$^{2}$)(1－ω$^{3}$)(1－ω$^{4}$)＝5
+  - label: C
+    content: $\frac{1}{1-\omega}$＋$\frac{1}{1-\omega ^{2}}$＋$\frac{1}{1-\omega ^{3}}$＋$\frac{1}{1-\omega ^{4}}$＝2
+  - label: D
+    content: 1＋ω＋ω$^{2}$＋ω$^{3}$＋…＋ω$^{2022}$＝1＋ω＋ω$^{2}$＋ω$^{3}$
+  - label: E
+    content: cos$\frac{2\pi}{5}$＋cos$\frac{4\pi}{5}$＋cos$\frac{6\pi}{5}$＋cos$\frac{8\pi}{5}$＝1
+  explanation: (A) ○：ω$^{10}$＝(cos$\frac{2\pi}{5}$＋i sin$\frac{2\pi}{5}$)$^{10}$＝cso4π＋i sin4π＝1 $\Rightarrow\overline{\omega ^{10}}$＝1 (B) ○：因為1，ω，ω$^{2}$，ω$^{3}$，ω$^{4}$為$z^{5}$＝1的五個根， 所以$z^{5}$－1＝(z－1)(z－ω)(z－ω$^{2}$)(z－ω$^{3}$)(z－ω$^{4}$)＝(z－1)($z^{4}$＋$z^{3}$＋$z^{2}$＋z＋1) $\Rightarrow$ (z－ω)(z－ω$^{2}$)(z－ω$^{3}$)(z－ω$^{4}$)＝$z^{4}$＋$z^{3}$＋$z^{2}$＋z＋1 $\Rightarrow$ (1－ω)(1－ω$^{2}$)(1－ω$^{3}$)(1－ω$^{4}$)＝1＋1＋1＋1＋1＝5 (C) ○：可知ω$^{5}$＝1 $\Rightarrow\frac{1}{1-\omega}$＋$\frac{1}{1-\omega ^{2}}$＋$\frac{1}{1-\omega ^{3}}$＋$\frac{1}{1-\omega ^{4}}$＝($\frac{1}{1-\omega}$＋$\frac{1}{1-\omega ^{4}}$)＋($\frac{1}{1-\omega ^{2}}$＋$\frac{1}{1-\omega ^{3}}$) ＝$\frac{2-\omega -\omega ^{4}}{\omega ^{5}-\omega ^{4}-\omega +1}$＋$\frac{2-\omega ^{2}-\omega ^{3}}{\omega ^{5}-\omega ^{3}-\omega ^{2}+1}$＝$\frac{2-\omega -\omega ^{4}}{2-\omega -\omega ^{4}}$＋$\frac{2-\omega ^{2}-\omega ^{3}}{2-\omega ^{2}-\omega ^{3}}$＝1＋1＝2 (D) ×：可知1＋ω＋ω$^{2}$＋ω$^{3}$＋ω$^{4}$＝0 $\Rightarrow$ 1＋ω＋ω$^{2}$＋…＋ω$^{2022}$＝1＋ω＋ω$^{2}$ (E) ×：0＝1＋ω＋ω$^{2}$＋ω$^{3}$＋ω$^{4}$＝1＋(cos$\frac{2\pi}{5}$＋i sin$\frac{2\pi}{5}$)＋(cos$\frac{4\pi}{5}$＋isin$\frac{4\pi}{5}$)＋(cos$\frac{6\pi}{5}$＋isin$\frac{6\pi}{5}$)＋(cos$\frac{8\pi}{5}$＋isin$\frac{8\pi}{5}$) ＝(1＋cos$\frac{2\pi}{5}$＋cos$\frac{4\pi}{5}$＋cos$\frac{6\pi}{5}$＋cos$\frac{8\pi}{5}$)＋i (sin$\frac{2\pi}{5}$＋isin$\frac{4\pi}{5}$＋isin$\frac{6\pi}{5}$＋isin$\frac{8\pi}{5}$) $\Rightarrow$ cos$\frac{2\pi}{5}$＋cos$\frac{4\pi}{5}$＋cos$\frac{6\pi}{5}$＋cos$\frac{8\pi}{5}$＝－1 故選(A)(B)(C)。
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T03
+      name: 單位根性質與因式分解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

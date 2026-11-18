@@ -1,0 +1,780 @@
+document:
+  id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 屏東
+  school_short: 屏東高中
+  school: 國立屏東高級中學
+  title: 國立屏東高級中學 113學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  source_file: 高三/數學/113/1-1/屏東/屏東高中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 20 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題全對得 5 分，只錯一個選項得 3 分，只錯二個選項得 1 分，其餘得 0 分，共 25 分）
+    count: 5
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 55 分）
+    count: 11
+  scope_note: 翰林版甲(上) 1-1 ～ 1-4 及第二冊 ＿＿＿年＿＿＿班 座號＿＿＿ 姓名
+questions:
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 已知等比數列〈$a_{n}$〉＝$\left\langle \frac{1}{3^{n}} \right\rangle$，且 log3$\approx$0.4771，試問此數列從第幾項開始，其值會小於 $10^{－12}$？
+  options:
+  - label: A
+    content: '18'
+  - label: B
+    content: '20'
+  - label: C
+    content: '22'
+  - label: D
+    content: '24'
+  - label: E
+    content: '26'
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{1}{3^{n}} < 10^{-12}\Rightarrowlog3^{－n}$＜$log10^{－12}\Rightarrow$n log3＞12
+
+    $\Rightarrown > \frac{12}{\log 3}\approx\frac{12}{0.4771}\approx$25.15，得 n ≥ 26
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T06
+      name: 常用對數律化簡與求值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設 [ x ] 表小於或等於 x 的最大整數，則$\sum_{k =1}^{25} [ \sqrt{k} ]$之值為何？
+  options:
+  - label: A
+    content: '55'
+  - label: B
+    content: '65'
+  - label: C
+    content: '75'
+  - label: D
+    content: '85'
+  - label: E
+    content: '95'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '當 1 ≤ k ≤ 3 時，$[ \sqrt{k} ]$＝1
+
+    當 4 ≤ k ≤ 8 時，$[ \sqrt{k} ]$＝2
+
+    當 9 ≤ k ≤ 15 時，$[ \sqrt{k} ]$＝3
+
+    當 16 ≤ k ≤ 24 時，$[ \sqrt{k} ]$＝4
+
+    當 k＝25 時，$[ \sqrt{k} ]$＝5
+
+    得$\sum_{k =1}^{25} [ \sqrt{k} ]$＝1×3＋2×5＋3×7＋4×9＋5×1＝75
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T11
+      name: 分段與高斯函數級數求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 試問下列有關極限$\lim_{x \rightarrow 1} \frac{| 1 -x -x^{2} |- 1}{x - 1}$的敘述何者正確？
+  options:
+  - label: A
+    content: 極限不存在
+  - label: B
+    content: 極限為 0
+  - label: C
+    content: 極限為 1
+  - label: D
+    content: 極限為 3
+  - label: E
+    content: 極限為－2
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow 1} \frac{| 1 -x -x^{2} |- 1}{x - 1}$＝$\lim_{x \rightarrow 1} \frac{-( 1 -x -x^{2} )- 1}{x - 1}$＝$\lim_{x \rightarrow 1} \frac{x^{2}+x - 2}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1} \frac{( x - 1 ) ( x + 2 )}{x - 1}$＝$\lim_{x \rightarrow 1} ( x + 2 )$＝3
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T02
+      name: 函數極限與自然常數定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 在實數線上，動點 A 從原點開始往正向移動，動點 B 從 6 的位置開始往負向移動。兩個動點每一秒移動一次，已知第一秒 A、B 移動的距離分別為 1、4，且 A、B 每次移動的距離分別為其前一次移動距離的$\frac{1}{2}$倍、$\frac{1}{3}$倍。令 $c_{n}$ 為第 n 秒時 A、B 的中點位置。則$\lim_{n \rightarrow \infty} c_{n}$的值為下列哪一個選項？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: '4'
+  - label: E
+    content: '5'
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 $a_{n}$，$b_{n}$ 分別表示 A，B 在第 n 秒的位置
+
+    $\Rightarrowa_{1}$＝1，$a_{2}$＝$1 +\frac{1}{2}$，$a_{3}$＝$1 +\frac{1}{2}+\frac{1}{4}$，……， $a_{n}$＝$1 +\frac{1}{2}+\frac{1}{2^{2}}+\ldots \ldots +\frac{1}{2^{n -1}}$＝$\frac{1\times \left( 1 - \left( \frac{1}{2} \right) ^{n} \right)}{1 -\frac{1}{2}}$＝$2 \left( 1 - \left( \frac{1}{2} \right) ^{n} \right)$
+
+    且 $b_{1}$＝6－4，$b_{2}$＝$6 - \left( 4 + 4\times \frac{1}{3} \right)$，$b_{3}$＝$6 - \left( 4 + 4\times \frac{1}{3}+ 4\times \frac{1}{3^{2}} \right)$，……，
+
+    $b_{n}$＝$6 - \left( 4 + 4\times \frac{1}{3}+ 4\times \frac{1}{3^{2}}+\ldots \ldots + 4\times \frac{1}{3^{n-1}} \right)$＝$6 -\frac{4\times \left( 1 - \left( \frac{1}{3} \right) ^{n} \right)}{1 -\frac{1}{3}}$＝$6 - 6 \left( 1 - \left( \frac{1}{3} \right) ^{n} \right)$ ＝$6\times \left( \frac{1}{3} \right) ^{n}$
+
+    得 $c_{n}$＝$\frac{a_{n}+b_{n}}{2}$＝$1 - \left( \frac{1}{2} \right) ^{n}+ 3\times \left( \frac{1}{3} \right) ^{n}$
+
+    $\lim_{n \rightarrow \infty} c_{n}$＝$\lim_{n \rightarrow \infty} \left( 1 -\left( \frac{1}{2} \right) ^{n}+ 3\times \left( \frac{1}{3} \right) ^{n} \right)$＝1
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 下列哪些數列為收斂數列？
+  options:
+  - label: A
+    content: 〈（0.1）$^{n}$〉
+  - label: B
+    content: 〈（－1）$^{n}$〉
+  - label: C
+    content: $\left\langle \frac{4^{n -1}+ 3}{4^{n}} \right\rangle$
+  - label: D
+    content: $\left\langle \frac{5n^{2}+ 3}{4n^{2}} \right\rangle$
+  - label: E
+    content: $\left\langle \cos \frac{n\pi}{2} \right\rangle$
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵$\lim_{n \rightarrow \infty} ( 0.1 )^{n}$＝0
+
+    (B)╳：收斂值不唯一 ∴〈（－1）$^{n}$〉為發散數列
+
+    (C)○：∵$\lim_{n \rightarrow \infty} \frac{4^{n -1}+ 3}{4^{n}}$＝$\lim_{n \rightarrow \infty} \left( \frac{1}{4}+\frac{3}{4^{n}} \right)$＝$\frac{1}{4}$
+
+    (D)○：∵$\lim_{n \rightarrow \infty} \frac{5n^{2}+ 3}{4n^{2}}$＝$\lim_{n \rightarrow \infty} \frac{5 +\frac{3}{n^{2}}}{4}$＝$\frac{5}{4}$
+
+    (E)╳：$\left\langle \cos \frac{n\pi}{2} \right\rangle$：0，－1，0，1，0，－1，0，1，……
+
+    依 0，－1，0，1 四數一循環，故此數列發散
+
+    故選(A)(C)(D)'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T01
+      name: 數列極限運算與收斂判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 下列哪些選項的函數是奇函數？
+  options:
+  - label: A
+    content: $x^{3}$＋x＋1
+  - label: B
+    content: ｜x｜
+  - label: C
+    content: $\frac{1}{x}$
+  - label: D
+    content: $2^{x}$
+  - label: E
+    content: sinx
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：f（－x）＝（－x）$^{3}$＋（－x）＋1＝－$x^{3}$－x＋1≠－f（x）
+
+    (B)╳：f（－x）＝｜－x｜＝｜x｜≠－｜x｜＝－f（x）
+
+    (C)○：f（－x）＝$\frac{1}{-x}$＝$-\frac{1}{x}$＝－f（x）
+
+    (D)╳：f（－x）＝$2^{－x}$≠－$2^{x}$＝－f（x）
+
+    (E)○：f（－x）＝sin（－x）＝－sinx＝－f（x）
+
+    故選(C)(E)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 下列哪些選項中的函數互為反函數？
+  options:
+  - label: A
+    content: f（x）＝$2x -\frac{1}{3}$與 g（x）＝$\frac{x}{2}+\frac{1}{6}$
+  - label: B
+    content: f（x）＝$\sqrt{x - 1}$，x ≥ 1 與 g（x）＝$x^{2}$＋1，x ≥ 0
+  - label: C
+    content: f（x）＝$2^{x}$ 與 g（x）＝$log_{2}$x，x＞0
+  - label: D
+    content: f（x）＝$\frac{1}{x + 1}$與 g（x）＝x＋1
+  - label: E
+    content: f（x）＝sinx 與 g（x）＝cosx
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：f（g（x））＝$2 \left( \frac{x}{2}+\frac{1}{6} \right) -\frac{1}{3}$＝x
+
+    且 g（f（x））＝$\frac{1}{2} \left( 2x -\frac{1}{3} \right) +\frac{1}{6}$＝x
+
+    (B)○：f（g（x））＝$\sqrt{( x^{2}+ 1 )- 1}$＝｜x｜＝x（∵x ≥ 0）
+
+    且 g（f（x））＝$( \sqrt{x - 1} )^{2}+ 1$＝x－1＋1＝x
+
+    (C)○：f（g（x））＝$2^{\log _{2}x}$＝x 且 g（f（x））＝$log_{2}2^{x}$＝x
+
+    (D)╳：f（g（x））＝$\frac{1}{( x + 1 )+ 1}$≠x
+
+    (E)╳：f（g（x））＝sin（cosx）≠x
+
+    故選(A)(B)(C)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 設 f（x）＝$\frac{2 -x}{x^{2} ( x - 3 )}$，則下列敘述哪些是正確的？
+  options:
+  - label: A
+    content: $\lim_{x \rightarrow \infty} f ( x )$＝0
+  - label: B
+    content: $\lim_{x \rightarrow 0} f ( x )$＝0
+  - label: C
+    content: $\lim_{x \rightarrow 3} \frac{1}{f ( x )}$＝0
+  - label: D
+    content: $\lim_{x \rightarrow 3} f ( x )$＝0
+  - label: E
+    content: $\lim_{x \rightarrow 2} f ( x )$＝0
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：$\lim_{x \rightarrow \infty} \frac{2 - x}{x^{2} ( x - 3 )}$＝$\lim_{x \rightarrow \infty} \frac{\frac{2}{x^{3}}-\frac{1}{x^{2}}}{1 -\frac{3}{x}}$＝0
+
+    (B)╳：$\lim_{x \rightarrow 0} \frac{2 - x}{x^{2} ( x - 3 )}$不存在
+
+    (C)○：$\lim_{x \rightarrow 3} \frac{1}{f ( x )}$＝$\lim_{x \rightarrow 3} \frac{x^{2} ( x - 3 )}{2 -x}$＝$\frac{9\times 0}{2 - 3}$＝0
+
+    (D)╳：$\lim_{x \rightarrow 3} \frac{2 - x}{x^{2} ( x - 3 )}$不存在
+
+    (E)○：$\lim_{x \rightarrow 2} \frac{2 - x}{x^{2} ( x - 3 )}$＝$\frac{0}{4\times ( -1 )}$＝0
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T02
+      name: 函數極限與自然常數定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: multiple
+  page: 2
+  stem: 設有 10 筆（$x_{i}$，$y_{i}$）的資料，平均數分別為μ$_{x}$＝5，μ$_{y}$＝3，標準差分別為σ$_{x}$、σ$_{y}$，相關係數為 0.9，且 y 對 x 的最適直線過（0，2），則下列何者為真？
+  options:
+  - label: A
+    content: 最適直線過（0，0）
+  - label: B
+    content: y 對 x 的最適直線為 y＝$2 +\frac{1}{5}x$
+  - label: C
+    content: 最適直線過（10，0）
+  - label: D
+    content: σ$_{x}$＞σ$_{y}$
+  - label: E
+    content: 最適直線的斜率為 1
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵y 對 x 的最適直線必過（μ$_{x}$，μ$_{y}$）＝（5，3）
+
+    又過（0，2）
+
+    ∴y 對 x 的最適直線為 y－3＝$\frac{3 - 2}{5 - 0} ( x - 5 )$，即為 y＝$\frac{1}{5}x + 2$
+
+    (A)╳：（0，0）代入不合
+
+    (B)○
+
+    (C)╳：（10，0）代入不合
+
+    (D)○：∵m＝$r\frac{\sigma _{y}}{\sigma _{x}}\Rightarrow\frac{1}{5}$＝$0.9\times \frac{\sigma _{y}}{\sigma _{x}}\Rightarrow\frac{\sigma _{y}}{\sigma _{x}}$＝$\frac{2}{9}\Rightarrow$σ$_{x}$＞σ$_{y}$
+
+    (E)╳：m＝$\frac{1}{5}$
+
+    故選(B)(D)'
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T04
+      name: 迴歸直線過平均點與殘差性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: 無窮級數$\frac{1}{1 \cdot 3}$＋$\frac{1}{3 \cdot 5}$＋$\frac{1}{5 \cdot 7}$＋……＋$\frac{1}{( 2n - 1 ) ( 2n + 1 )}$＋……的和為＿＿＿＿。
+  answer:
+  - $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{1}{1 \cdot 3}$＋$\frac{1}{3 \cdot 5}$＋$\frac{1}{5 \cdot 7}$＋……＋$\frac{1}{( 2n - 1 ) ( 2n + 1 )}$＋……
+
+    ＝$\frac{1}{2}\left( 1 -\frac{1}{3}+\frac{1}{3}-\frac{1}{5}+\frac{1}{5}-\frac{1}{7} \right.$＋……＋$\left. \frac{1}{2n-1}-\frac{1}{2n+1}+\ldots \ldots \right)$
+
+    ＝$\lim_{n \rightarrow \infty} \frac{1}{2} \left( 1-\frac{1}{2n + 1} \right)$＝$\frac{1}{2}$'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T06
+      name: 分項對消與無窮級數極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 如下圖，將一段長度為 1 的線段 AB 三等分，將中間的線段剪下來，再將剩下的線段重複這樣的步驟，會得到無窮多個剪下來的線段，則所有剪下來線段的長度和為＿＿＿＿。
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_113_屏東_屏東高中_數學_數甲_g12s1e1/s3_2_f1.png
+    crop:
+      page: 3
+      rect:
+      - 208.3
+      - 146.1
+      - 409.8
+      - 188.2
+  answer:
+  - '1'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 $a_{n}$ 表第 n 次剪下之線段長
+
+    $\Rightarrowa_{1}$＝$\frac{1}{3}$，$a_{2}$＝$2\times \left( \frac{1}{3} \right) ^{2}$＝$\frac{1}{3}\times \frac{2}{3}$，$a_{3}$＝$4\times \left( \frac{1}{3} \right) ^{3}$＝$\frac{1}{3}\times \left( \frac{2}{3} \right) ^{2}$，……，$a_{n}$＝$\frac{1}{3}\times \left( \frac{2}{3} \right) ^{n -1}$
+
+    故所求為 $a_{1}$＋$a_{2}$＋$a_{3}$＋……＋$a_{n}$＋……＝$\frac{1}{3}+\frac{1}{3}\times \frac{2}{3}+\frac{1}{3}\times \left( \frac{2}{3} \right) ^{2}+\ldots \ldots$＝$\frac{\frac{1}{3}}{1 -\frac{2}{3}}$＝1'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 設 f（x）＝10＋6x－$x^{2}$，g（x）＝$\sqrt{x}$，試求（f。g）(4)的值為＿＿＿＿。
+  answer:
+  - '18'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵g(4)＝$\sqrt{4}$＝2
+
+    ∴（f。g）(4)＝f（g(4)）＝f(2)＝10＋12－4＝18'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 設 a，b 為實數，若$\lim_{x \rightarrow 1} \frac{x^{2}+ax +b}{x - 1}$＝5，則 a－b 的值為＿＿＿＿。
+  answer:
+  - '7'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\lim_{x \rightarrow 1} \frac{x^{2}+ax +b}{x - 1}$存在
+
+    ∴令 $x^{2}$＋ax＋b＝（x－1）（x－k）
+
+    $\lim_{x \rightarrow 1} \frac{x^{2}+ax +b}{x - 1}$＝$\lim_{x \rightarrow 1} \frac{( x - 1 ) ( x -k )}{x - 1}$＝$\lim_{x \rightarrow 1} ( x -k )$＝1－k＝5$\Rightarrow$k＝－4
+
+    得 $x^{2}$＋ax＋b＝（x－1）（x＋4）＝$x^{2}$＋3x－4$\Rightarrow$a＝3，b＝－4
+
+    故 a－b＝7'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T06
+      name: 函數極限有理化與運算性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 設 f（x）＝$\begin{cases}x - 1 , x < 1 \\ ax+b , 1\leq x < 2 \\ 3x , x\geq 2\end{cases}$，已知 a，b 為實數常數且 f（x）為連續函數，則 a－b＝ ＿＿＿＿。
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f（x）為連續函數
+
+    ∴$\begin{cases}\lim_{x \rightarrow 1^{-}} f ( x )=\lim_{x \rightarrow 1^{+}} f ( x ) \\ \lim_{x \rightarrow 2^{-}} f ( x )=\lim_{x \rightarrow 2^{+}} f ( x )\end{cases}\Rightarrow\begin{cases}\lim_{x \rightarrow 1^{-}} ( x - 1 )=\lim_{x \rightarrow 1^{+}} ( ax + b ) \\ \lim_{x \rightarrow 2^{-}} ( ax +b )=\lim_{x \rightarrow 2^{+}} 3x\end{cases}\Rightarrow\begin{cases}0 =a +b \\ 2a +b = 6\end{cases}$
+
+    得 a＝6，b＝－6
+
+    故 a－b＝12'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T03
+      name: 函數連續性檢驗與求參
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 已知 f（x）是三次多項式，且$\lim_{x \rightarrow -1} \frac{f ( x )}{x + 1}$＝2，$\lim_{x \rightarrow 1} \frac{f ( x )}{x - 1}$＝6，則 f(2)為＿＿＿＿。
+  answer:
+  - '15'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T09
+      name: 雙重極限反推多項式係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 將 3 寫成若干個自然數的和有 3，2＋1，1＋2，1＋1＋1 這四種方法（只寫 3 也算是一種方法，且規定順序不同視為不同方法，例如：2＋1，1＋2 這兩種是不同的方法）。試問將 5 寫成若干個自然數的和有＿＿＿＿種方法。
+  answer:
+  - '16'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T08
+      name: 整數分拆與不定方程解計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 假設每個人出生在 12 個月分的機會均等。現在路上隨挑 4 個人，會有人在相同月分出生的機率是＿＿＿＿。
+  assets:
+  - key: s3_8_f1
+    kind: figure
+    file: doc_113_屏東_屏東高中_數學_數甲_g12s1e1/s3_8_f1.png
+    crop:
+      page: 3
+      rect:
+      - 482.4
+      - 445.1
+      - 564.3
+      - 559.0
+  answer:
+  - $\frac{41}{96}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-4
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 古典機率
+      std: true
+    textbook: 數學2（必修） 古典機率
+    pattern:
+      key: MA-2-2-4:T03
+      name: 對立事件與互斥機率恆等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 一袋裝有大小相同的 10 元與 50 元代幣各三枚。假設每枚代幣被選取的機會均等，今從中任取兩枚代幣，則取到代幣總額的期望值為＿＿＿＿元。
+  answer:
+  - '60'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-5
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 數學期望值
+      std: true
+    textbook: 數學2（必修） 數學期望值
+    pattern:
+      key: MA-2-2-5:T07
+      name: 極值差值與異色屬性期望值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 在一個無風的夜晚，祈福天燈從地面的 A 點冉冉升起，1 秒鐘後升至 B 點，再花 1 秒鐘升至 C 點，再花一秒鐘升至 D 點。小楷在離 A 點 9 公尺遠的 P 點處觀察，發現∠APB＝∠BPC＝∠CPD，且$\overline{AB}$＝3 公尺，試求升起 3 秒後的高度$\overline{AD}$＝＿＿＿＿公尺。（四捨五入取至整數位）
+  answer:
+  - '13'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T04
+      name: 平面與立體三角測量應用
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_113_屏東_屏東高中_數學_數甲_g12s1e1_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 3
+  stem: 如右圖，△ABC 的三邊長 $\overline{AB}$＝7，$\overline{BC}$＝8，$\overline{CA}$＝9，若 ABDE 與 ACFG 皆為正方形，則 $\overline{EG}$ 的長度為＿＿＿＿。
+  assets:
+  - key: s3_11_f1
+    kind: figure
+    file: doc_113_屏東_屏東高中_數學_數甲_g12s1e1/s3_11_f1.png
+    crop:
+      page: 3
+      rect:
+      - 446.9
+      - 562.8
+      - 564.3
+      - 642.7
+  answer:
+  - '14'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T02
+      name: 餘弦定理求邊長角度與摺痕
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

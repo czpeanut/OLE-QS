@@ -1,0 +1,338 @@
+document:
+  id: doc_111_桃園_武陵_數學_g10s1e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 3
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 111學年度第1學期第3次定期評量 高一數學科試題
+  exam_name: 111學年度第1學期第3次定期評量
+  source_file: 高一/數學/111/1-3/桃園/武陵.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、混合題（共 20 分）
+    count: 4
+  - ord: 2
+    name: 二、填充題（共 56 分）
+    count: 5
+  - ord: 3
+    name: 三、多重選擇題（每題 8 分，共 24 分；答錯 1 選項得 5 分，答錯 2 選項得 2 分，答錯 3 選項以上或沒作答得 0 分）
+    count: 3
+questions:
+- id: doc_111_桃園_武陵_數學_g10s1e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 以下敘述，何者正確？（多選，6 分）
+  options:
+  - label: A
+    content: f（x）的各項係數和為 3
+  - label: B
+    content: f（x）除以（x－2）的餘式為 3
+  - label: C
+    content: （x＋1）．f（x）除以（x－1）的餘式為 3
+  - label: D
+    content: f（x）除以（x－1）（x－2）的餘式為 3
+  - label: E
+    content: f（x）除以（$x^{2}$－1）的餘式為 3x
+  group_stem: 已知多項式函數 f（x）＝$x^{3}$＋$bx^{2}$＋cx＋d 滿足 f(1)＝f(2)＝3 且 f（－1）＝－3，請作答下列(1)～(4)題：
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T03
+      name: 餘式定理與高次餘式線性組合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_g10s1e3_s1_2
+  section: 1
+  number: 2
+  type: calc
+  page: 1
+  stem: 求出序組（b，c，d）。（6 分）
+  group_stem: 已知多項式函數 f（x）＝$x^{3}$＋$bx^{2}$＋cx＋d 滿足 f(1)＝f(2)＝3 且 f（－1）＝－3，請作答下列(1)～(4)題：
+  explanation: '∵f（x）除以（x－2）$^{2}$ 的餘式為 6x－2，且 f（x）為三次多項式
+
+    ∴令 f（x）＝（ax＋b）（x－2）$^{2}$＋6x－2
+
+    又 f（x）除以 x＋2 的餘式為 2，且 f（x）的常數項為－6
+
+    ⇒ f（－2）＝2，f(0)＝－6
+
+    得$\begin{cases}16(-2a+b)-14=2 \\ 4b -2=-6\end{cases}$⇒$\begin{cases}-2a+b =1 \\ b =-1\end{cases}$⇒$\begin{cases}a =-1 \\ b =-1\end{cases}$
+
+    ⇒ f（x）＝（－x－1）（x－2）$^{2}$＋6x－2
+
+    故所有係數和為 f(1)＝－2＋6－2＝2'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T14
+      name: 因式定理與多項式假設
+    labeled_by: agent
+    label_confidence: high
+    label_note: 解析與題目不符
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_g10s1e3_s1_3
+  section: 1
+  number: 3
+  type: calc
+  page: 1
+  stem: 令 f（x）＝（x＋3）$^{3}$＋p（x＋3）$^{2}$＋q（x＋3）＋r，求出序組（p，q，r）。（6 分）
+  group_stem: 已知多項式函數 f（x）＝$x^{3}$＋$bx^{2}$＋cx＋d 滿足 f(1)＝f(2)＝3 且 f（－1）＝－3，請作答下列(1)～(4)題：
+  explanation: '當 k$\neq$0 時，對任意實數 x，f（x）＝$kx^{2}$－kx＋2 之值恆正
+
+    表示$\begin{cases}k>0 \\ 判別式(-k)^{2}-4\times k\times 2<0\end{cases}$⇒$\begin{cases}k>0 \\ k(k-8)<0\end{cases}$
+
+    ⇒$\begin{cases}k>0 \\ 0<k<8\end{cases}$⇒ 0＜k＜8
+
+    當 k＝0 時，f（x）＝2 亦恆正
+
+    故所求範圍為 0 ≤ k＜8'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T06
+      name: 綜合除法連續展開與泰勒近似
+    labeled_by: agent
+    label_confidence: high
+    label_note: 解析與題目不符
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_g10s1e3_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: 求出$\frac{f(-2.999)-f(-3.001)}{0.002}$之近似值為＿＿＿＿。（四捨五入至整數）（2 分）
+  group_stem: 已知多項式函數 f（x）＝$x^{3}$＋$bx^{2}$＋cx＋d 滿足 f(1)＝f(2)＝3 且 f（－1）＝－3，請作答下列(1)～(4)題：
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T09
+      name: 泰勒展開式與近似值估算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_g10s1e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 已知三次函數 y＝f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d 在 x＝－2 附近的一次近似為 y＝－2x－7， 則 y＝（x＋2）．f（x）圖形在 x＝－2 附近的一次近似為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T04
+      name: 三次函數某點的一次近似
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_g10s1e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 設 f（x）是一個三次多項式，已知 f（x）＞0 的解是 x＜－1 或－1＜x＜5，且 f（－2）＝14，求出 y＝f（x）圖形的對稱中心為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T02
+      name: 三次函數配方與圖形平移
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_111_桃園_武陵_數學_g10s1e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 小櫻在計算一道多項式函數的題目時遺忘了答案，只記得此二次函數為 f（x）＝a（x＋4）$^{2}$＋k，其中 a，k 皆為整數。還好她在計算紙上找到一些計算過程，發現 y＝f（x）的圖形通過 （－6，3），（－4，3），（－2，3），（－1，8）其中的三點。根據這些訊息，小櫻重新算出此二次函數，並求出當－7 ≤ x ≤ 1 時，f（x）之最大值為 M，最小值為 m，則數對 （M，m）＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T03
+      name: 閉區間上的二次函數極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_g10s1e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知存在實數 k 使得滿足不等式（x－k）（x－7）（x－2）$^{2}$（$x^{2}$＋3x＋4）≤ 0 的整數解有 10 個，若 k 可能的最大範圍為 a＜k ≤ b 或 c ≤ k＜d，試求 a＋b＋c＋d＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T08
+      name: 含參數高次不等式整數解反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_111_桃園_武陵_數學_g10s1e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 設 a 為實數，函數 f（x）＝$ax^{2}$＋4ax＋$a^{2}$ 有最大值為 M，試求 a 的最大可能範圍能使得 f（x）為二次函數且滿足 5 ≤ M ≤ 12。$■答$：＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T01
+      name: 二次函數配方與頂點性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_g10s1e3_s3_1
+  section: 3
+  number: 1
+  type: multiple
+  page: 2
+  stem: 試問下列各選項，何者與不等式（x＋1）（x－2）≤ 0 有相同的解？
+  options:
+  - label: A
+    content: （x＋1）$^{2}$（2－x）$^{3}$ ≥ 0
+  - label: B
+    content: （x＋1）$^{2}$（x－2）（$x^{3}$＋1）≤ 0
+  - label: C
+    content: （x＋1）$^{3}$（x－2）$^{5}$（x－1）$^{4}$ ≤ 0
+  - label: D
+    content: （x＋1）（x－2）（－$x^{2}$＋2x－7）≤ 0
+  - label: E
+    content: （x＋1）$^{3}$（x－2）（x－5）$^{2}$ ≤ 0
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T07
+      name: 多項式平移與同解不等式判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_g10s1e3_s3_2
+  section: 3
+  number: 2
+  type: multiple
+  page: 2
+  stem: 已知二次函數 f（x）＝$x^{2}$＋ax＋b，g（x）＝$x^{2}$，若 f（3－x）＝f（3＋x），則下列敘述何者正確？（已知$\sqrt{2}$≈ 1.414，$\pi$≈ 3.142）
+  options:
+  - label: A
+    content: f（π）＞f（2$\sqrt{2}$）
+  - label: B
+    content: 若 f（x）≤ 0 無實數解，則 b＜9
+  - label: C
+    content: 若 f（x）＜0 有 7 個整數解，則 f(7)＞0
+  - label: D
+    content: 若方程式 g（x）＝3 的解為 α，β，則｜α－β｜＝2$\sqrt{3}$
+  - label: E
+    content: 若方程式 f（x）＝4 的解為 s，t，且｜s－t｜＝2$\sqrt{3}$，則將 y＝g（x）的圖形向右平移 3 單位，向上平移 1 單位可與 y＝f（x）的圖形重合
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T08
+      name: 對稱軸與兩根式待定二次函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_g10s1e3_s3_3
+  section: 3
+  number: 3
+  type: multiple
+  page: 2
+  stem: 已知三次函數 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d，其中 a＞0，且 f（x）除以（x－1）$^{3}$ 的餘式為 2x－1。則下列敘述何者正確？
+  options:
+  - label: A
+    content: y＝f（x）圖形的對稱中心為（1，－1）
+  - label: B
+    content: f（3－$\sqrt{2}$）＋f（－1＋$\sqrt{2}$）＝－2
+  - label: C
+    content: y＝f（x）在對稱中心附近的一次近似為 y＝2x－1
+  - label: D
+    content: y＝f（x）的圖形與 x 軸可能會有 3 個交點
+  - label: E
+    content: y＝f（x）的圖形與直線 y＝5x－4 恰有 3 個相異交點
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T05
+      name: 廣域與局部特徵綜合判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -1,0 +1,924 @@
+document:
+  id: doc_113_台北_明倫_數學_數A_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 台北
+  school_short: 明倫
+  school: 臺北市立明倫高級中學
+  title: 臺北市立明倫高級中學 113學年度第1學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  source_file: 高二/數學/113/1-2/台北/明倫_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 25 分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（每題 5 分，共 40 分）
+    count: 8
+  - ord: 3
+    name: 三、多重選擇題（每題 6 分，共 30 分。錯一個選項得 4 分，錯兩個選項得 2 分，錯三個選項以上得 0 分）
+    count: 5
+  - ord: 4
+    name: 四、計算題（共 5 分）
+    count: 1
+questions:
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 關於對數律的使用，下列選項何者正確？
+  options:
+  - label: A
+    content: log（－10）$^{4}$＝4
+  - label: B
+    content: （$log_{2}$5）$^{2}$＝2（$log_{2}$5）
+  - label: C
+    content: log（－2）＋log（－5）＝log〔（－2）×（－5）〕
+  - label: D
+    content: $\log \frac{3}{5}=\frac{\log 3}{\log 5}$
+  - label: E
+    content: $log_{27}$4×$log_{2}$9＝$log_{3}$2
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：log（－10）$^{4}$＝$log10^{4}$＝4
+
+    (B)╳：（$log_{2}$5）$^{2}$＝（$log_{2}$5）×（$log_{2}$5）≠2 $log_{2}$5
+
+    (C)╳：log（－2）和 log（－5）無意義
+
+    (D)╳：$\log \frac{3}{5}$＝log3－log5≠$\frac{\log 3}{\log 5}$
+
+    (E)╳：$log_{27}$4×$log_{2}$9＝$\frac{\log 4}{\log 27}\times \frac{\log 9}{\log 2}$＝$\frac{2\log 2}{3\log 3}\times \frac{2\log 3}{\log 2}$＝$\frac{4}{3}$≠$log_{3}$2
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T11
+      name: 對數定義域與運算律正誤判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '將函數$f (x)= \left( \frac{1}{2} \right) ^{x}$的圖形依序做下列操作
+
+    步驟 1：將 y＝f（x）的函數圖形對 y 軸做對稱，得到 y＝g（x）
+
+    步驟 2：將 y＝g（x）的函數圖形對直線 y＝x 做對稱，得到 y＝h（x）
+
+    步驟 3：將 y＝h（x）向上平移 1 單位再向左平移 5 單位，得到 y＝k（x），則：'
+  options:
+  - label: A
+    content: k（x）＝1＋$log_{2}$（x－5）
+  - label: B
+    content: k（x）＝1＋$log_{2}$（x＋5）
+  - label: C
+    content: k（x）＝$1 +\log _{\frac{1}{2}} (x + 5)$
+  - label: D
+    content: k（x）＝1＋$2^{x＋5}$
+  - label: E
+    content: k（x）＝1－$2^{x＋5}$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$f (x)= \left( \frac{1}{2} \right) ^{x}\xrightarrow{對 y 軸做對稱}g (x)= \left( \frac{1}{2} \right) ^{- x}$
+
+    $\xrightarrow{對 y = x 做對稱}h (x)=-\log _{\frac{1}{2}}x$
+
+    $\xrightarrow[向左平移 5 單位]{向上平移 1 單位}k (x)$＝$-\log _{\frac{1}{2}} (x + 5)+ 1$＝$1 +\log _{2} (x + 5)$
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T01
+      name: 對數函數圖形與對稱性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 滿足不等式$(\pi )^{x^{2} - 3x - 12}$＜$(\pi )^{2x - 6}$的整數解共有 n 個，下列選項何者正確？
+  options:
+  - label: A
+    content: n＝3
+  - label: B
+    content: n＝4
+  - label: C
+    content: n＝5
+  - label: D
+    content: n＝6
+  - label: E
+    content: n 為無限多
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵π＞1
+
+    ∴$\pi ^{x^{2} - 3x - 12}$＜π$^{2x－6}\Rightarrowx^{2}$－3x－12＜2x－6
+
+    $\Rightarrowx^{2}$－5x－6＜0
+
+    $\Rightarrow$（x－6）（x＋1）＜0
+
+    $\Rightarrow$－1＜x＜6
+
+    整數 x 有 0，1，2，3，4，5，共 6 個
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T03
+      name: 同底數指數方程式不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 設$a = \left( \frac{1}{2} \right) ^{\frac{1}{2}}$、$b = \left( \frac{1}{2} \right) ^{a}$、$c =a^{\frac{1}{2}}$，下列大小關係，哪個選項正確？
+  options:
+  - label: A
+    content: a＞b＞c
+  - label: B
+    content: a＞c＞b
+  - label: C
+    content: b＞a＞c
+  - label: D
+    content: b＞c＞a
+  - label: E
+    content: c＞a＞b
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵a＝$\left( \frac{1}{2} \right) ^{\frac{1}{2}}$＜$\left( \frac{1}{2} \right) ^{0}$＝1 且 a＝$\left( \frac{1}{2} \right) ^{\frac{1}{2}}$＞$\left( \frac{1}{2} \right) ^{1}$＝$\frac{1}{2}$
+
+    $\Rightarrow\frac{1}{2}$＜a＜1
+
+    ∴a＝$\left( \frac{1}{2} \right) ^{\frac{1}{2}}$＞$\left( \frac{1}{2} \right) ^{a}$＝b
+
+    a＝$\left( \frac{1}{2} \right) ^{\frac{1}{2}}$＜$a^{\frac{1}{2}}$＝c
+
+    $\Rightarrow$c＞a＞b
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T09
+      name: 指數運算與數值大小估計
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 2
+  stem: 請選擇合適的實數 a，使得對於所有的實數 x，不等式 $log_{3}$（$x^{2}$＋ax＋2a－2）＞0 恆成立。
+  options:
+  - label: A
+    content: a＝0
+  - label: B
+    content: a＝2
+  - label: C
+    content: a＝4
+  - label: D
+    content: a＝6
+  - label: E
+    content: a＝8
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '若 $log_{3}$（$x^{2}$＋ax＋2a－2）＞0＝$log_{3}$1
+
+    則 $x^{2}$＋ax＋2a－2＞1
+
+    $\Rightarrowx^{2}$＋ax＋2a－3＞0
+
+    判別式 D＝$a^{2}$－4（2a－3）＜0
+
+    $\Rightarrowa^{2}$－8a＋12＜0
+
+    $\Rightarrow$（a－2）（a－6）＜0
+
+    $\Rightarrow$2＜a＜6
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T06
+      name: 對數不等式與真數定義域
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 如右圖，函數 y＝$log_{a}$（x－1）過（3，1），（b，0）， （9，c），則 a＋b＋c＝＿＿＿＿。
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_113_台北_明倫_數學_數A_g11s1e2/s2_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 416.05
+      - 196.0
+      - 564.2
+      - 275.65
+  explanation: 'y＝$log_{a}$（x－1）過（3，1）可知 1＝$log_{a}$2$\Rightarrow$a＝2
+
+    將（b，0），（9，c）代入 y＝$log_{2}$（x－1）得
+
+    $\begin{cases}0 =\log _{2} (b - 1) \\ c =\log _{2} (9 - 1)\end{cases}$
+
+    $\Rightarrow\begin{cases}b - 1 = 1 \\ c = 3\end{cases}\Rightarrow\begin{cases}b = 2 \\ c = 3\end{cases}$
+
+    故 a＋b＋c＝2＋2＋3＝7'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T04
+      name: 對數函數圖形、漸近線與對稱
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: $\left( \log _{3}125 +\log _{9}\frac{1}{25} \right) \left( \log _{5}81 +\log _{25}\frac{1}{3} \right)$＝＿＿＿＿。
+  explanation: '$\left( \log _{3}125 +\log _{9}\frac{1}{25} \right) \left( \log _{5}81 +\log _{25}\frac{1}{3} \right)$
+
+    ＝$\left( \frac{\log 125}{\log 3}+\frac{\log \frac{1}{25}}{\log 9} \right) \left( \frac{\log 81}{\log 5}+\frac{\log \frac{1}{3}}{\log 25} \right)$
+
+    ＝$\left( \frac{3\log 5}{\log 3}+\frac{- 2\log 5}{2\log 3} \right) \left( \frac{4\log 3}{\log 5}+\frac{-\log 3}{2\log 5} \right)$
+
+    ＝$\frac{2\log 5}{\log 3}\times \frac{7\log 3}{2\log 5}$
+
+    ＝7'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T01
+      name: 對數定義與換底公式化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 解方程式 2 log（x＋8）－log（x＋28）＝1，x＝＿＿＿＿。
+  explanation: '真數＞0
+
+    $\Rightarrow\begin{cases}x + 8 > 0 \\ x + 28 > 0\end{cases}\Rightarrow$x＞－8
+
+    2 log（x＋8）－log（x＋28）＝1
+
+    $\Rightarrow$log（x＋8）$^{2}$＝log（x＋28）＋1＝log（x＋28）＋log10＝log（10x＋280）
+
+    $\Rightarrowx^{2}$＋16x＋64＝10x＋280
+
+    $\Rightarrowx^{2}$＋6x－216＝0
+
+    $\Rightarrow$（x＋18）（x－12）＝0
+
+    $\Rightarrow$x＝12 或－18（不合）'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T02
+      name: 對數方程式求解與驗根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 解方程式 $log_{2}$（$9^{x}$－5）＝$log_{2}$（$3^{x}$－2）＋2，x＝＿＿＿＿。
+  explanation: '真數＞0
+
+    $\Rightarrow\begin{cases}9^{x} - 5 > 0 \\ 3^{x} - 2 > 0\end{cases}\Rightarrow\begin{cases}x >\log _{9}5 \\ x >\log _{3}2\end{cases}\Rightarrow\begin{cases}x >\log _{9}5 \\ x >\log _{9}4\end{cases}\Rightarrow$x＞$log_{9}$5
+
+    $log_{2}$（$9^{x}$－5）＝$log_{2}$（$3^{x}$－2）＋2＝$log_{2}$（$3^{x}$－2）＋$log_{2}$4＝$log_{2}$（4×$3^{x}$－8）
+
+    $\Rightarrow9^{x}$－5＝4×$3^{x}$－8
+
+    $\Rightarrow$（$3^{x}$）$^{2}$－4×$3^{x}$＋3＝0
+
+    $\Rightarrow$（$3^{x}$－1）（$3^{x}$－3）＝0
+
+    $\Rightarrow3^{x}$＝1 或 3
+
+    $\Rightarrow$x＝0（不合）或 1'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T02
+      name: 對數方程式求解與驗根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 不等式$(\log _{3}x + 1)(\log _{\frac{1}{4}}x - 1)$＞0，則其解為＿＿＿＿。
+  answer:
+  - $\frac{1}{4}$＜x＜$\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$(\log _{3}x + 1)(\log _{\frac{1}{4}}x - 1)$＞0
+
+    $\Rightarrow$（$log_{3}$x＋$log_{3}$3）（$log_{4}$x＋$log_{4}$4）＜0
+
+    $\Rightarrow\left( \log _{3}x -\log _{3}\frac{1}{3} \right) \left( \log _{4}x -\log _{4}\frac{1}{4} \right)$＜0
+
+    ∵$log_{3}$x＞$\log _{3}\frac{1}{3}\Leftrightarrow$x＞$\frac{1}{3}$
+
+    $log_{4}$x＞$\log _{4}\frac{1}{4}\Leftrightarrow$x＞$\frac{1}{4}$
+
+    ∴原不等式相當於考慮$\left( x -\frac{1}{3} \right) \left( x -\frac{1}{4} \right)$＜0
+
+    $\Rightarrow\frac{1}{4}$＜x＜$\frac{1}{3}$'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T03
+      name: 對數不等式求解與定義域
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 方程式$x^{\log x^{2}} = 10^{3}x$，則 x＝＿＿＿＿。（共 2 解）
+  answer:
+  - $\frac{1}{10}$或$10\sqrt{10}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x^{\log x^{2}} = 10^{3}x$
+
+    $\Rightarrow\log (x^{\log x^{2}})=\log (10^{3}x)$
+
+    $\Rightarrowlogx^{2}$×logx＝3＋logx
+
+    $\Rightarrow$2（logx）$^{2}$－logx－3＝0
+
+    $\Rightarrow$（logx＋1）（2 logx－3）＝0
+
+    $\Rightarrow$logx＝－1 或$\frac{3}{2}$
+
+    $\Rightarrow$x＝$10^{－1}$ 或 $10^{1.5}$
+
+    故 x＝$\frac{1}{10}$或$10\sqrt{10}$'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T07
+      name: 換元化為二次式求極值與解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知 t 是實數且 t 是方程式 $2^{－x}$＋$log_{2}$x＝0 的解，則$t^{\frac{1}{t}}$＝＿＿＿＿。
+  answer:
+  - $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T05
+      name: 圖形交點判斷實根與大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: '資訊熵是資訊理論中的一個核心概念，用來量化一個系統中的不確定性或平均資訊量。熵的計算公式如下：
+
+    E＝－（$P_{1}$ $log_{2}P_{1}$＋$P_{2}$ $log_{2}P_{2}$＋……＋$P_{n}$ $log_{2}P_{n}$）
+
+    其中 E 為該系統的資訊熵，$P_{k}$，1$\leq$k$\leq$n 代表系統中，全部 n 種狀況，所各自對應的機率。
+
+    例如：在丟擲一均勻銅板實驗中，共有正面和反面 2 種狀態，正面機率$P_{1} =\frac{1}{2}$，反面機率$P_{2} =\frac{1}{2}$，則此系統之資訊熵 E＝$- \left( \frac{1}{2}\log _{2}\frac{1}{2}+\frac{1}{2}\log _{2}\frac{1}{2} \right)$＝1。
+
+    現有一編碼問題有 A、B、C、D 共 4 種狀態，其相對應機率分別為
+
+    $P_{A} = \left( \frac{1}{2} \right) ^{7 -k}$、$P_{B} = \left( \frac{1}{2} \right) ^{5 -\frac{k}{2}}$、$P_{C} = \left( \frac{1}{2} \right) ^{6 -\frac{k}{2}}$、$P_{D} = \left( \frac{1}{2} \right) ^{6 -\frac{k}{2}}$，則此編碼的資訊熵 E＝＿＿＿＿。'
+  answer:
+  - $\frac{7}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$P_{A}$＋$P_{B}$＋$P_{C}$＋$P_{D}$＝1
+
+    ∴$\left( \frac{1}{2} \right) ^{7 -k}+ \left( \frac{1}{2} \right) ^{5 -\frac{k}{2}}+ \left( \frac{1}{2} \right) ^{6 -\frac{k}{2}}\times 2 = 1$
+
+    $\Rightarrow\left( \frac{1}{2} \right) ^{7 -k}+ \left( \frac{1}{2} \right) ^{5 -\frac{k}{2}}+ \left( \frac{1}{2} \right) ^{5 -\frac{k}{2}}= 1\Rightarrow\left( \frac{1}{2} \right) ^{7 -k}+ 2\times \left( \frac{1}{2} \right) ^{5 -\frac{k}{2}}= 1\Rightarrow\left( \frac{1}{2} \right) ^{7 -k}+ \left( \frac{1}{2} \right) ^{4 -\frac{k}{2}}= 1$
+
+    $\Rightarrow\left( \frac{1}{2} \right) ^{7}\times \left( \frac{1}{2} \right) ^{-k}+ \left( \frac{1}{2} \right) ^{4}\times \left( \frac{1}{2} \right) ^{-\frac{k}{2}}- 1 = 0\Rightarrow\left( \frac{1}{2} \right) ^{-k}+ 8\times \left( \frac{1}{2} \right) ^{-\frac{k}{2}}- 128 = 0$
+
+    $\Rightarrow\left( \left( \frac{1}{2} \right) ^{-\frac{k}{2}}+ 16 \right) \left( \left( \frac{1}{2} \right) ^{-\frac{k}{2}}- 8 \right) = 0\Rightarrow\left( \frac{1}{2} \right) ^{-\frac{k}{2}}$＝－16（不合）或 8
+
+    $\Rightarrow-\frac{k}{2}=- 3\Rightarrow$k＝6
+
+    則 $P_{A}$＝$\left( \frac{1}{2} \right) ^{1}$＝$\frac{1}{2}$，$P_{B}$＝$\left( \frac{1}{2} \right) ^{2}$＝$\frac{1}{4}$，$P_{C}$＝$P_{D}$＝$\left( \frac{1}{2} \right) ^{3}$＝$\frac{1}{8}$
+
+    故 E＝$- \left( \frac{1}{2}\log _{2}\frac{1}{2}+\frac{1}{4}\log _{2}\frac{1}{4}+\frac{1}{8}\log _{2}\frac{1}{8}+\frac{1}{8}\log _{2}\frac{1}{8} \right)$
+
+    ＝$- \left( -\frac{1}{2}-\frac{1}{2}-\frac{3}{8}-\frac{3}{8} \right)$＝$\frac{7}{4}$'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T10
+      name: 對數在科學與生活尺度之應用
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: multiple
+  page: 2
+  stem: 已知 a＝$98^{100}$、b＝$100^{98}$，則下列選項哪些正確？（已知 log2$\approx$0.3010，log7$\approx$0.8451）
+  options:
+  - label: A
+    content: 100a＜b
+  - label: B
+    content: a＜b
+  - label: C
+    content: a＞b
+  - label: D
+    content: a＞100b
+  - label: E
+    content: a＜10000b
+  answer:
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'loga＝$log98^{100}$＝100 log98＝100（log2＋2 log7）$\approx$199.12
+
+    logb＝$log100^{98}$＝98×2＝196
+
+    (A)╳：log100a＝2＋loga$\approx$201.12
+
+    logb＝196
+
+    ∴100a＞b
+
+    (B)╳：∵loga＞logb
+
+    ∴a＞b
+
+    (C)○：同(B)
+
+    (D)○：∵log100b＝2＋logb＝198＜loga
+
+    ∴100b＜a
+
+    (E)○：∵log10000b＝4＋logb＝200＞loga
+
+    ∴10000b＞a
+
+    故選(C)(D)(E)'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T02
+      name: 對數比較大小與估計
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s3_2
+  section: 3
+  number: 2
+  type: multiple
+  page: 3
+  stem: 已知 $log_{a}$t＝4、$log_{b}$t＝6、$log_{c}$t＝9，其中 b＞1、ac＞0 且 t＞0，則下列選項哪些正確？
+  options:
+  - label: A
+    content: c＞b＞a＞1
+  - label: B
+    content: a＞b＞c＞1
+  - label: C
+    content: c＞b＞1＞a
+  - label: D
+    content: $log_{abc}$t＞2
+  - label: E
+    content: $log_{abc}$t＜2
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：t＝$a^{4}$＝$b^{6}$＝$c^{9}$
+
+    $\Rightarrowa =b^{\frac{3}{2}}$，$c =b^{\frac{2}{3}}$
+
+    又 b＞1
+
+    故$a =b^{\frac{3}{2}}$＞b，1＝$b^{0}$＜$b^{\frac{2}{3}} =c$＜$b^{1}$
+
+    可知 a＞b＞c＞1
+
+    (B)○：同(A)
+
+    (C)╳：同(A)
+
+    (D)╳：$log_{abc}$t＝$\frac{\log t}{\log abc}$＝$\frac{1}{\frac{\log abc}{\log t}}$＝$\frac{1}{\frac{\log a}{\log t}+\frac{\log b}{\log t}+\frac{\log c}{\log t}}$
+
+    ＝$\frac{1}{(\log _{a}t)^{- 1} +(\log _{b}t)^{- 1} +(\log _{c}t)^{- 1}}$
+
+    ＝$\frac{1}{\frac{1}{4}+\frac{1}{6}+\frac{1}{9}}$＝$\frac{1}{\frac{19}{36}}$＝$\frac{36}{19}$＜$\frac{38}{19}$＝2
+
+    (E)○：同(D)
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T05
+      name: 對數定義與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s3_3
+  section: 3
+  number: 3
+  type: multiple
+  page: 3
+  stem: 已知方程式 $log_{2}$x＋k＝x，其中 k 為實數。下列選項哪些正確？
+  options:
+  - label: A
+    content: 當 k＝1 時，方程式 $log_{2}$x＋k＝x 有實數解
+  - label: B
+    content: 當 k＝－1 時，方程式 $log_{2}$x＋k＝x 有實數解
+  - label: C
+    content: 當 k＝5 時，方程式 $log_{2}$x＋k＝x 有唯一解 x＝8
+  - label: D
+    content: 若方程式 $log_{2}$x＋k＝x 有實數解，則方程式 $log_{2}$x＋k＝$\frac{x}{10}$也有實數解
+  - label: E
+    content: 若方程式 $log_{2}$x＋k＝x 有實數解，則方程式 $log_{2}$x＋k＝10x 也有實數解
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T05
+      name: 圖形交點判斷實根與大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s3_4
+  section: 3
+  number: 4
+  type: multiple
+  page: 3
+  stem: 設函數 f（x）＝b＋$2^{x＋a}$，其中 a，b 為實數且 a×b≠0，g（x）＝$2^{x}$，下列選項哪些正確？
+  options:
+  - label: A
+    content: 若 a＞0 且 b＞0，則 y＝f（x）與 y＝g（x）兩函數圖形有交點
+  - label: B
+    content: 若 a＞0 且 b＜0，則 y＝f（x）與 y＝g（x）兩函數圖形有交點
+  - label: C
+    content: 若 a＜0 且 b＞0，則 y＝f（x）與 y＝g（x）兩函數圖形有交點
+  - label: D
+    content: 若 a＜0 且 b＜0，則 y＝f（x）與 y＝g（x）兩函數圖形有交點
+  - label: E
+    content: 不存在實數數對（a，b），使得 y＝f（x）與 y＝g（x）兩函數圖形交點個數等於或多於 2 個
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '討論 b＋$2^{x＋a}$＝$2^{x}$ 之解
+
+    $\Rightarrow$b＋$2^{a}$．$2^{x}$＝$2^{x}$
+
+    $\Rightarrow$b＝$2^{x}$（1－$2^{a}$）
+
+    $\Rightarrow2^{x} =\frac{b}{1 - 2^{a}}$
+
+    (A)╳：a＞0，b＞0，則 1－$2^{a}$＜1－$2^{0}$＝0
+
+    $\Rightarrow2^{x} =\frac{b}{1 - 2^{a}}$＜0
+
+    $\Rightarrow$x 無實數解，故兩函數沒有交點
+
+    (B)○：a＞0，b＜0，則 1－$2^{a}$＜1－$2^{0}$＝0
+
+    $\Rightarrow2^{x} =\frac{b}{1 - 2^{a}}$＞0
+
+    $\Rightarrow$x 有實數解，故兩函數有交點
+
+    (C)○：a＜0，b＞0，則 1－$2^{a}$＞1－$2^{0}$＝0
+
+    $\Rightarrow2^{x} =\frac{b}{1 - 2^{a}}$＞0
+
+    $\Rightarrow$x 有實數解，故兩函數有交點
+
+    (D)╳：a＜0，b＜0，則 1－$2^{a}$＞1－$2^{0}$＝0
+
+    $\Rightarrow2^{x} =\frac{b}{1 - 2^{a}}$＜0
+
+    $\Rightarrow$x 無實數解，故兩函數沒有交點
+
+    (E)○：∵$2^{x}$＝k 僅有一解，k 為任意正實數
+
+    即當$\frac{b}{1 - 2^{a}}$＞0 時，$2^{x} =\frac{b}{1 - 2^{a}}$僅有一解
+
+    $\Rightarrow$y＝f（x）與 y＝g（x）有一個交點
+
+    當$\frac{b}{1 - 2^{a}}\leq$0 時，$2^{x} =\frac{b}{1 - 2^{a}}$無解
+
+    $\Rightarrow$y＝f（x）與 y＝g（x）沒有交點
+
+    ∴敘述為真
+
+    故選(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T06
+      name: 指數函數圖形與係數判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s3_5
+  section: 3
+  number: 5
+  type: multiple
+  page: 3
+  stem: 已知函數 y＝$log_{a}$（x＋b），其中 a＋b＝1，則下列選項中，何者可能為函數之圖形？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: s3_5_optA
+      file: doc_113_台北_明倫_數學_數A_g11s1e2/s3_5_optA.png
+      crop:
+        page: 3
+        rect:
+        - 154.2
+        - 477.25
+        - 253.2
+        - 564.25
+  - label: B
+    content: ''
+    asset:
+      key: s3_5_optB
+      file: doc_113_台北_明倫_數學_數A_g11s1e2/s3_5_optB.png
+      crop:
+        page: 3
+        rect:
+        - 372.55
+        - 477.25
+        - 471.55
+        - 564.25
+  - label: C
+    content: ''
+    asset:
+      key: s3_5_optC
+      file: doc_113_台北_明倫_數學_數A_g11s1e2/s3_5_optC.png
+      crop:
+        page: 3
+        rect:
+        - 153.55
+        - 569.25
+        - 252.55
+        - 656.25
+  - label: D
+    content: ''
+    asset:
+      key: s3_5_optD
+      file: doc_113_台北_明倫_數學_數A_g11s1e2/s3_5_optD.png
+      crop:
+        page: 3
+        rect:
+        - 373.2
+        - 569.25
+        - 472.2
+        - 656.25
+  - label: E
+    content: ''
+    asset:
+      key: s3_5_optE
+      file: doc_113_台北_明倫_數學_數A_g11s1e2/s3_5_optE.png
+      crop:
+        page: 3
+        rect:
+        - 152.9
+        - 661.25
+        - 251.9
+        - 748.25
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵a＞0 ∴b＝1－a
+
+    (A)╳：當 0＜a＜1 時，0＜b＜1
+
+    則 y＝$log_{a}$（x＋b）為 y＝$log_{a}$x 向左平移 b 單位
+
+    (B)○：當 a＞1 時，b＜0
+
+    又當 y＝1 時，1＝$log_{a}$（x＋b）$\Rightarrow$x＝a－b＞1
+
+    (C)╳：同(B)
+
+    (D)╳：同(A)
+
+    (E)○：同(A)
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T04
+      name: 對數函數圖形、漸近線與對稱
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台北_明倫_數學_數A_g11s1e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 4
+  stem: '在資訊科學中，將 n 筆資料由小到大做排序，「氣泡排序法」與「合併排序法」為常見的兩種排序演算法。此兩種方法排列 n 筆資料所需要的時間分別為 $T_{氣泡}$（n）＝$10^{－8}$×$n^{2}$ 與 $T_{合併}$（n）＝$10^{－5}$×n $log_{2}$n，即使用「氣泡排序法」排序 10000 筆資料所需要的時間為 $T_{氣泡}$（10000）＝$10^{－8}$×$10000^{2}$＝1（秒），請依上述資訊回答下列問題：（已知 log2$\approx$0.3）
+
+    (1) 使用「合併排序法」排序 10000 筆資料，需要多少時間？（四捨五入至小數點後第二位）（2 分）
+
+    (2) 將 $2^{m}$（m 為整數）筆資料做排序，當 m$\leq$k 時，「氣泡排序法」排序速度較快（花費較少時間），當 m$\geq$k＋1 時，「合併排序法」排序速度較快（花費較少時間），則 k＝？（3 分）'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T10
+      name: 對數在科學與生活尺度之應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -1,0 +1,432 @@
+document:
+  id: doc_110_桃園_武陵_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 2
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 110學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 110學年度第2學期第2次定期評量
+  source_file: 高二/數學/110/2-2/桃園/武陵_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 8 分，共 16 分）
+    count: 1
+  - ord: 2
+    name: 二、填充題（共 66 分，配分如下表）
+    count: 9
+  - ord: 3
+    name: 三、混合題（共 18 分）
+    count: 3
+  scope_note: 矩陣 ＿＿＿年＿＿＿班 座號＿＿＿ 姓名
+questions:
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設 A、B、C 均為二階方陣，I 為二階單位方陣，O 為二階零矩陣，det
+  options:
+  - label: A
+    content: 表矩陣 A 的行列式值，試選出正確的選項。(A) A（B＋C）＝AB＋CA
+  - label: B
+    content: AI＝IA 必不成立
+  - label: C
+    content: （AB）C＝A（BC）
+  - label: D
+    content: 若 det(A)≠0，且 AB＝AC，則 B＝C
+  - label: E
+    content: 若 AB＝O，則 A＝O 或 B＝O
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：A（B＋C）＝AB＋AC≠AB＋CA
+
+    (B)╳：IA＝AI＝A
+
+    (C)○
+
+    (D)○：det(A)≠0 ⇒ $A^{－1}$ 存在
+
+    所以 AB＝AC ⇒ $A^{－1}$AB＝$A^{－1}$AC ⇒ B＝C
+
+    (E)╳：反例：A＝$\left[ \begin{matrix}1 & 0 \\ 0 & 0\end{matrix} \right]$，B＝$\left[ \begin{matrix}0 & 0 \\ 1 & 0\end{matrix} \right]$
+
+    故選(C)(D)'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+    label_note: 選項A夾帶題幹文字，選項E含亂碼字元「�」（應為「若」），不影響作答
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 已知矩陣 A＝$\left[ \begin{matrix}-5 -a & -2 \\ 3 & -a\end{matrix} \right]$的反方陣不存在，則實數 a＝＿＿＿＿。
+  answer:
+  - －2 或－3
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵A 的反方陣不存在
+
+    ∴－a（－5－a）－（－2）×3＝0
+
+    ⇒ $a^{2}$＋5a＋6＝0
+
+    ⇒（a＋2）（a＋3）＝0 ⇒ a＝－2 或－3'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T04
+      name: 二階反方陣存在判別與求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 設矩陣 A＝[$a_{ij}$]$_{2×3}$，B＝[$b_{ij}$]$_{2×3}$，若 $a_{ij}$＝$i^{2}$＋j，$b_{ij}$＝i＋$j^{2}$，i＝1，2，j＝1，2，3，求 A＋B＝ ＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}4 & 8 & 14 \\ 8 & 12 & 18\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{11}$＝$1^{2}$＋1＝2，$a_{12}$＝$1^{2}$＋2＝3，$a_{13}$＝$1^{2}$＋3＝4
+
+    $a_{21}$＝$2^{2}$＋1＝5，$a_{22}$＝$2^{2}$＋2＝6，$a_{23}$＝$2^{2}$＋3＝7
+
+    $b_{11}$＝1＋$1^{2}$＝2，$b_{12}$＝1＋$2^{2}$＝5，$b_{13}$＝1＋$3^{2}$＝10
+
+    $b_{21}$＝2＋$1^{2}$＝3，$b_{22}$＝2＋$2^{2}$＝6，$b_{23}$＝2＋$3^{2}$＝11
+
+    故 A＋B＝$\left[ \begin{matrix}2 & 3 & 4 \\ 5 & 6 & 7\end{matrix} \right]$＋$\left[ \begin{matrix}2 & 5 & 10 \\ 3 & 6 & 11\end{matrix} \right]$＝$\left[ \begin{matrix}4 & 8 & 14 \\ 8 & 12 & 18\end{matrix} \right]$'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T01
+      name: 矩陣列式與基本加減純量積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設 A、B 為二階方陣，若 3A＋2B＝$\left[ \begin{matrix}-1 & 15 \\ 18 & 4\end{matrix} \right]$，A－B＝$\left[ \begin{matrix}3 & 0 \\ 6 & 8\end{matrix} \right]$且 A＝$\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$，則 a＋b＋c＋d＝ ＿＿＿＿。
+  answer:
+  - '14'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（3A＋2B）＋2（A－B）＝$\left[ \begin{matrix}-1 & 15 \\ 18 & 4\end{matrix} \right]$＋2$\left[ \begin{matrix}3 & 0 \\ 6 & 8\end{matrix} \right]$
+
+    ⇒ 5A＝$\left[ \begin{matrix}5 & 15 \\ 30 & 20\end{matrix} \right]$⇒ A＝$\left[ \begin{matrix}1 & 3 \\ 6 & 4\end{matrix} \right]$
+
+    故 a＋b＋c＋d＝1＋3＋6＋4＝14'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T01
+      name: 矩陣列式與基本加減純量積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 設 A＝$\left[ \begin{matrix}1 \\ 2 \\ 3\end{matrix} \right]$，B＝$\left[ \begin{matrix}4 & 5 & 6\end{matrix} \right]$，求 AB＝＿＿＿＿。
+  explanation: AB＝$\left[ \begin{matrix}1 \\ 2 \\ 3\end{matrix} \right] \left[ \begin{matrix}4 & 5 & 6\end{matrix} \right]$＝$\left[ \begin{matrix}4 & 5 & 6 \\ 8 & 10 & 12 \\ 12 & 15 & 18\end{matrix} \right]$
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T02
+      name: 矩陣乘法與交換律條件求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '設 A＝$\left[ \begin{matrix}6 & 2 \\ 2 & 1\end{matrix} \right]$，B＝$\left[ \begin{matrix}10 & -9 \\ 2 & 7\end{matrix} \right]$，C＝$\left[ \begin{matrix}10 & -7 \\ 6 & -10\end{matrix} \right]$，X 為二階方陣。若 AX－B＝C，則：
+
+    (1) A 的反方陣 $A^{－1}$＝＿＿＿＿。
+
+    (2) X＝＿＿＿＿。'
+  explanation: '(1) A＝$\left[ \begin{matrix}6 & 2 \\ 2 & 1\end{matrix} \right]$⇒ $A^{－1}$＝$\frac{1}{6 - 4}\left[ \begin{matrix}1 & -2 \\ -2 & 6\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{1}{2} & -1 \\ -1 & 3\end{matrix} \right]$
+
+    (2) AX－B＝C ⇒ AX＝B＋C ⇒ X＝$A^{－1}$（B＋C）
+
+    得 X＝$\left[ \begin{matrix}\frac{1}{2} & -1 \\ -1 & 3\end{matrix} \right] \left[ \begin{matrix}20 & -16 \\ 8 & -3\end{matrix} \right]$＝$\left[ \begin{matrix}2 & -5 \\ 4 & 7\end{matrix} \right]$'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T04
+      name: 二階反方陣存在判別與求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '若 A＝$\left[ \begin{matrix}1 & 3 \\ -1 & -2\end{matrix} \right]$，則：
+
+    (1) $A^{3}$＝＿＿＿＿。
+
+    (2) $A^{100}$＝＿＿＿＿。'
+  explanation: '(1) $A^{2}$＝$\left[ \begin{matrix}1 & 3 \\ -1 & -2\end{matrix} \right] \left[ \begin{matrix}1 & 3 \\ -1 & -2\end{matrix} \right]$＝$\left[ \begin{matrix}-2 & -3 \\ 1 & 1\end{matrix} \right]$
+
+    ⇒ $A^{3}$＝$A^{2}$A＝$\left[ \begin{matrix}-2 & -3 \\ 1 & 1\end{matrix} \right] \left[ \begin{matrix}1 & 3 \\ -1 & -2\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+
+    (2) $A^{100}$＝（$A^{3}$）$^{33}$A＝$I^{33}$A＝A＝$\left[ \begin{matrix}1 & 3 \\ -1 & -2\end{matrix} \right]$'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T03
+      name: 矩陣高次方規律與週期推算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 若 A＝$\left[ \begin{matrix}1 & -1 \\ 2 & 1\end{matrix} \right]$，B＝$\left[ \begin{matrix}2 & 1 \\ 4 & 0\end{matrix} \right]$，則 $A^{2}$＋AB－BA－$B^{2}$＝＿＿＿＿。
+  answer:
+  - $\left[ \begin{matrix}-15 & -2 \\ 0 & 1\end{matrix} \right]$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$A^{2}$＋AB－BA－$B^{2}$＝A（A＋B）－B（A＋B）
+
+    ＝（A－B）（A＋B）＝$\left[ \begin{matrix}-1 & -2 \\ -2 & 1\end{matrix} \right] \left[ \begin{matrix}3 & 0 \\ 6 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}-15 & -2 \\ 0 & 1\end{matrix} \right]$'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 設 a、b 為實數，已知矩陣 A＝$\left[ \begin{matrix}1 & 2 \\ a & 1\end{matrix} \right]$，B＝$\left[ \begin{matrix}2 & 3 \\ -1 & b\end{matrix} \right]$滿足（A＋B）$^{2}$＝$A^{2}$＋2AB＋$B^{2}$，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - $\left( -\frac{2}{3} , 2 \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵（A＋B）$^{2}$＝$A^{2}$＋AB＋BA＋$B^{2}$＝$A^{2}$＋2AB＋$B^{2}$
+
+    ∴AB＝BA
+
+    ⇒$\left[ \begin{matrix}1 & 2 \\ a & 1\end{matrix} \right] \left[ \begin{matrix}2 & 3 \\ -1 & b\end{matrix} \right]$＝$\left[ \begin{matrix}2 & 3 \\ -1 & b\end{matrix} \right] \left[ \begin{matrix}1 & 2 \\ a & 1\end{matrix} \right]$⇒$\left[ \begin{matrix}0 & 2b + 3 \\ 2a - 1 & 3a + b\end{matrix} \right]$＝$\left[ \begin{matrix}3a + 2 & 7 \\ ab - 1 & b - 2\end{matrix} \right]$
+
+    ⇒$\begin{cases}0 = 3a + 2 \\ 2b + 3 = 7\end{cases}$ ⇒$\begin{cases}a =-\frac{2}{3} \\ b = 2\end{cases}$
+
+    故數對（a，b）＝$\left( -\frac{2}{3} , 2 \right)$'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T02
+      name: 矩陣乘法與交換律條件求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: <u>小花</u>想跟隔壁班的<u>小天</u>交朋友，於是將自己的電話 09ab-cdefgh 寫成矩陣 A＝$\left[ \begin{matrix}ab & cd \\ ef & gh\end{matrix} \right]$，例如電話是 0912-345678，則寫成矩陣$\left[ \begin{matrix}12 & 34 \\ 56 & 78\end{matrix} \right]$。她告訴<u>小天</u>左邊乘上 B＝$\left[ \begin{matrix}1 & -3 \\ -2 & 7\end{matrix} \right]$，右邊乘上 C＝$\left[ \begin{matrix}1 & -2 \\ 2 & -5\end{matrix} \right]$得到的矩陣是$\left[ \begin{matrix}5 & -10 \\ 9 & -25\end{matrix} \right]$，即 BAC＝$\left[ \begin{matrix}5 & -10 \\ 9 & -25\end{matrix} \right]$。試求 （a＋b＋c＋d）－（e＋f＋g＋h）＝＿＿＿＿。
+  answer:
+  - －7
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'BAC＝$\left[ \begin{matrix}5 & -10 \\ 9 & -25\end{matrix} \right]$⇒ A＝$B^{－1}\left[ \begin{matrix}5 & -10 \\ 9 & -25\end{matrix} \right]C^{－1}$
+
+    ⇒ A＝$\frac{1}{1}\left[ \begin{matrix}7 & 3 \\ 2 & 1\end{matrix} \right] \left[ \begin{matrix}5 & -10 \\ 9 & -25\end{matrix} \right]\left( \frac{1}{-1} \right) \left[ \begin{matrix}-5 & 2 \\ -2 & 1\end{matrix} \right]$
+
+    ＝－$\left[ \begin{matrix}62 & -145 \\ 19 & -45\end{matrix} \right] \left[ \begin{matrix}-5 & 2 \\ -2 & 1\end{matrix} \right]$＝－$\left[ \begin{matrix}-20 & -21 \\ -5 & -7\end{matrix} \right]$＝$\left[ \begin{matrix}20 & 21 \\ 5 & 7\end{matrix} \right]$
+
+    得 a＝2，b＝0，c＝2，d＝1，e＝0，f＝5，g＝0，h＝7
+
+    故（a＋b＋c＋d）－（e＋f＋g＋h）＝－7'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T05
+      name: 矩陣代數恆等式與反方陣化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '<u>巧巧</u>規劃暑假到<u>日本</u>的<u>京都</u>、<u>大阪</u>和<u>東京</u>三地自助旅遊 12 日，每天的食、宿、交通費用預估如表一。目前她規劃兩個行程 A 與 B 如表二所示。試問這兩個行程的估計總花費各是多少元？（8 分）
+
+    | 表一 食、宿、交通費用預估表 |  |  |  |  | 表二 停留日數表 |  |  |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | 地點 費用 | <u>京都</u> | <u>大阪</u> | <u>東京</u> |  | 行程 地點 | A | B |
+
+    | 食 | 3000 | 2500 | 3500 |  | <u>京都</u> | 5 | 4 |
+
+    | 宿 | 4000 | 4000 | 4500 |  | <u>大阪</u> | 3 | 2 |
+
+    | 交通 | 2000 | 2500 | 3000 |  | <u>東京</u> | 4 | 6 |
+
+    | （單位：元∕天） |  |  |  |  | （單位：天） |  |  |'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T07
+      name: 矩陣乘法列式與加權應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: single
+  page: 3
+  stem: '設方陣 A＝$\left[ \begin{matrix}2 & 2 \\ 0 & 2\end{matrix} \right]$，試回答下列問題：
+
+    (1) $A^{3}$ 的所有元總和為（單選，2 分）
+
+    (2) n 為正整數，推測 $A^{n}$。（2 分）'
+  options:
+  - label: A
+    content: '32'
+  - label: B
+    content: '40'
+  - label: C
+    content: '48'
+  - label: D
+    content: '56'
+  - label: E
+    content: '64'
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T03
+      name: 矩陣高次方規律與週期推算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數B_g11s2e2_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 3
+  stem: 證明上述推測。（6 分）
+  tags:
+    unit:
+      code: MA-B4-3-1
+      book: 數學4B
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4B 矩陣的運算
+    pattern:
+      key: MA-B4-3-1:T03
+      name: 矩陣高次方規律與週期推算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3

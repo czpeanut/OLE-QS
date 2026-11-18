@@ -1,0 +1,999 @@
+document:
+  id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 屏東
+  school_short: 屏東高中
+  school: 國立屏東高級中學
+  title: 國立屏東高級中學 113學年度第1學期第2次定期評量 高三數學（數乙）科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  source_file: 高三/數學/113/1-2/屏東/屏東高中_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 35 分）
+    count: 7
+  - ord: 2
+    name: 二、多重選擇題（每題 5 分，共 30 分）
+    count: 6
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 35 分）
+    count: 7
+questions:
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 當 x＝2 時，f（x）＝$2x^{2}$－x＋3 的導數為
+  options:
+  - label: A
+    content: －7
+  - label: B
+    content: '7'
+  - label: C
+    content: －8
+  - label: D
+    content: '8'
+  - label: E
+    content: '9'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求為 f''(2)＝$\lim_{x\rightarrow 2} \frac{f(x)-f(2)}{x-2}$
+
+    ＝$\lim_{x\rightarrow 2} \frac{(2x^{2}-x+3)-(2\times 2^{2}-2+3)}{x-2}$
+
+    ＝$\lim_{x\rightarrow 2} \frac{2x^{2}-x-6}{x-2}$＝$\lim_{x\rightarrow 2} \frac{(2x+3)(x-2)}{x-2}$
+
+    ＝$\lim_{x\rightarrow 2}$（2x＋3）＝7
+
+    故選(B)
+
+    〔另解〕
+
+    ∵f''（x）＝4x－1 ∴f''(2)＝4×2－1＝7
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-Y1-2-1
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學乙（上） 微分
+    pattern:
+      key: MA-Y1-2-1:T02
+      name: 多項式函數微分公式計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 函數 f（x）＝$x^{4}$－$4x^{3}$＋3 在下列哪一個區間內為嚴格遞增？
+  options:
+  - label: A
+    content: （－5，－3）
+  - label: B
+    content: （－3，0）
+  - label: C
+    content: （0，3）
+  - label: D
+    content: （3，5）
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-2-2
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學乙（上） 函數性質的判定
+    pattern:
+      key: MA-Y1-2-2:T01
+      name: 函數遞增減區間與恆單調條件
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: f（x）＝$\begin{cases}ax+b , x \geq 1 \\ x^{2} , x<1\end{cases}$；若 f（x）在 x＝1 處可微分，則 a＝
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: '1'
+  - label: C
+    content: '2'
+  - label: D
+    content: －1
+  - label: E
+    content: －2
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '因為 f（x）在 x＝1 處可微分，所以 f（x）在 x＝1 處連續
+
+    $\lim_{x\rightarrow 1^{+}} \frac{f(x)-f(1)}{x-1}$＝$\lim_{x\rightarrow 1^{-}} \frac{f(x)-f(1)}{x-1}$
+
+    ⇒$\lim_{x\rightarrow 1^{+}} \frac{(ax+b)-(a+b)}{x-1}$＝$\lim_{x\rightarrow 1^{-}} \frac{x^{2}-1}{x-1}$
+
+    ⇒$\lim_{x\rightarrow 1^{+}} \frac{a(x-1)}{x-1}$＝$\lim_{x\rightarrow 1^{-}} \frac{(x+1)(x-1)}{x-1}$
+
+    ⇒$\lim_{x\rightarrow 1^{+}} a$＝$\lim_{x\rightarrow 1^{-}} (x+1)$
+
+    ⇒a＝2
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-Y1-2-1
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學乙（上） 微分
+    pattern:
+      key: MA-Y1-2-1:T10
+      name: 分段函數與連續可微性判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 下列各函數圖形中，何者 f'(0)存在？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: s1_4_optA
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_4_optA.png
+      crop:
+        page: 1
+        rect:
+        - 153.55
+        - 569.1
+        - 230.45
+        - 640.0
+  - label: B
+    content: ''
+    asset:
+      key: s1_4_optB
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_4_optB.png
+      crop:
+        page: 1
+        rect:
+        - 153.55
+        - 635.9
+        - 230.45
+        - 706.8
+  - label: C
+    content: ''
+    asset:
+      key: s1_4_optC
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_4_optC.png
+      crop:
+        page: 1
+        rect:
+        - 154.2
+        - 702.7
+        - 231.1
+        - 773.6
+  - label: D
+    content: ''
+    asset:
+      key: s1_4_optD
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_4_optD.png
+      crop:
+        page: 1
+        rect:
+        - 154.2
+        - 502.3
+        - 231.1
+        - 573.2
+  - label: E
+    content: ''
+    asset:
+      key: s1_4_optE
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_4_optE.png
+      crop:
+        page: 2
+        rect:
+        - 152.9
+        - 48.6
+        - 229.8
+        - 119.5
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''(0)存在必須
+
+    (1) f（x）在 x＝0 連續
+
+    (2)$\lim_{x\rightarrow 0^{+}} \frac{f(x)-f(0)}{x-0}$＝$\lim_{x\rightarrow 0^{-}} \frac{f(x)-f(0)}{x-0}$
+
+    由(1)知(B)(C)(D)不合，僅(A)(E)在 x＝0 連續
+
+    再由(2)知(A)不合，僅(E)符合，且 f''(0)＝0
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-Y1-2-1
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學乙（上） 微分
+    pattern:
+      key: MA-Y1-2-1:T10
+      name: 分段函數與連續可微性判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 函數 f（x）＝（x－2）（x－3）（2x＋1），則 f'(2)＝？
+  options:
+  - label: A
+    content: －1
+  - label: B
+    content: －5
+  - label: C
+    content: '0'
+  - label: D
+    content: '1'
+  - label: E
+    content: '5'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''(2)＝$\lim_{x\rightarrow 2} \frac{f(x)-f(2)}{x-2}$
+
+    ＝$\lim_{x\rightarrow 2} \frac{(x-2)(x-3)(2x+1)-0}{x-2}$
+
+    ＝$\lim_{x\rightarrow 2}$（x－3）（2x＋1）
+
+    ＝（－1）×5＝－5
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-Y1-2-1
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學乙（上） 微分
+    pattern:
+      key: MA-Y1-2-1:T01
+      name: 導數極限定義與可微性判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 2
+  stem: 函數 y＝f（x）的圖形如圖，則其一階導函數 y＝f'（x）的圖形最有可能是下列哪一個選項？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: s1_6_optA
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_6_optA.png
+      crop:
+        page: 2
+        rect:
+        - 154.2
+        - 347.05
+        - 263.5
+        - 432.15
+  - label: B
+    content: ''
+    asset:
+      key: s1_6_optB
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_6_optB.png
+      crop:
+        page: 2
+        rect:
+        - 153.55
+        - 428.05
+        - 260.95
+        - 515.75
+  - label: C
+    content: ''
+    asset:
+      key: s1_6_optC
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_6_optC.png
+      crop:
+        page: 2
+        rect:
+        - 153.55
+        - 511.65
+        - 270.3
+        - 601.55
+  - label: D
+    content: ''
+    asset:
+      key: s1_6_optD
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_6_optD.png
+      crop:
+        page: 2
+        rect:
+        - 154.2
+        - 597.45
+        - 269.3
+        - 686.15
+  - label: E
+    content: ''
+    asset:
+      key: s1_6_optE
+      file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_6_optE.png
+      crop:
+        page: 2
+        rect:
+        - 152.9
+        - 682.05
+        - 268.7
+        - 770.75
+  assets:
+  - key: s1_6_f1
+    kind: figure
+    file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s1_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 256.4
+      - 260.8
+      - 361.65
+      - 351.15
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題圖可知，
+
+    在（－∞，0]，f（x）遞減，因此 f''（x）≤ 0
+
+    在 [0，2]，f（x）遞增，因此 f''（x）≥ 0
+
+    在 [2，∞），f（x）遞減，因此 f''（x）≤ 0
+
+    故 y＝f''（x）的圖形最有可能是(A)'
+  tags:
+    unit:
+      code: MA-Y1-2-2
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學乙（上） 函數性質的判定
+    pattern:
+      key: MA-Y1-2-2:T09
+      name: 導數圖形與多項式係數判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 2
+  stem: xy 平面上，下列哪一條直線和 L：x＋3y－2＝0 的銳交角最大？
+  options:
+  - label: A
+    content: 2x＋y－4＝0
+  - label: B
+    content: 2x－y＝0
+  - label: C
+    content: x＋2y＋6＝0
+  - label: D
+    content: x－2y－1＝0
+  - label: E
+    content: y 軸
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '直線 L 的法向量$\vec{n}$＝（1，3）
+
+    (A)$\vec{n_{1}}$＝（2，1），cosθ$_{1}$＝$\frac{| 2+3 |}{\sqrt{10} \cdot \sqrt{5}}$＝$\frac{5}{\sqrt{50}}$
+
+    (B)$\vec{n_{2}}$＝（2，－1），cosθ$_{2}$＝$\frac{| 2-3 |}{\sqrt{10} \cdot \sqrt{5}}$＝$\frac{1}{\sqrt{50}}$
+
+    (C)$\vec{n_{3}}$＝（1，2），cosθ$_{3}$＝$\frac{| 1+6 |}{\sqrt{10} \cdot \sqrt{5}}$＝$\frac{7}{\sqrt{50}}$
+
+    (D)$\vec{n_{4}}$＝（1，－2），cosθ$_{4}$＝$\frac{| 1-6 |}{\sqrt{10} \cdot \sqrt{5}}$＝$\frac{5}{\sqrt{50}}$
+
+    (E) y 軸即 x＝0，$\vec{n_{5}}$＝（1，0），cosθ$_{5}$＝$\frac{1}{\sqrt{10} \cdot 1}$＝$\frac{1}{\sqrt{10}}$＝$\frac{\sqrt{5}}{\sqrt{50}}$
+
+    ∵cosθ$_{3}$＞cosθ$_{1}$＝cosθ$_{4}$＞cosθ$_{5}$＞cosθ$_{2}$
+
+    ∴θ$_{3}$＜θ$_{1}$＝θ$_{4}$＜θ$_{5}$＜θ$_{2}$，θ$_{2}$ 最大
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T13
+      name: 直線法向量方向向量與夾角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 3
+  stem: f（x）的函數圖形如圖所示，試選出正確的選項。
+  options:
+  - label: A
+    content: f（－3）＝2
+  - label: B
+    content: $\lim_{x\rightarrow -3} f(x)$＝2
+  - label: C
+    content: $\lim_{x\rightarrow -1} f(x)$不存在
+  - label: D
+    content: $\lim_{x\rightarrow 1^{-}} f(x)$＝f(1)
+  - label: E
+    content: f（x）在 x＝2 可微分
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s2_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 251.25
+      - 140.6
+      - 366.8
+      - 239.35
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：由題圖可知 f（－3）＝1
+
+    (B) ○：由題圖可知$\lim_{x\rightarrow -3^{+}} f(x)$＝$\lim_{x\rightarrow -3^{-}} f(x)$＝2
+
+    ∴$\lim_{x\rightarrow -3} f(x)$＝2
+
+    (C) ╳：由題圖可知$\lim_{x\rightarrow -1^{+}} f(x)$＝$\lim_{x\rightarrow -1^{-}} f(x)$＝3
+
+    ∴$\lim_{x\rightarrow -1} f(x)$＝3
+
+    (D) ○：由題圖可知$\lim_{x\rightarrow 1^{-}} f(x)$＝f(1)＝2
+
+    (E) ○：由題圖可知，當 x ≥ 1，函數 f（x）為線型函數
+
+    令 f（x）＝ax＋b，a＞0
+
+    $\lim_{x\rightarrow 2^{+}} \frac{f(x)-f(2)}{x-2}$＝$\lim_{x\rightarrow 2^{+}} \frac{ax+b-(2a+b)}{x-2}$＝$\lim_{x\rightarrow 2^{+}} \frac{a(x-2)}{x-2}$＝a
+
+    $\lim_{x\rightarrow 2^{-}} \frac{f(x)-f(2)}{x-2}$＝$\lim_{x\rightarrow 2^{-}} \frac{ax+b-(2a+b)}{x-2}$＝$\lim_{x\rightarrow 2^{-}} \frac{a(x-2)}{x-2}$＝a
+
+    ⇒$\lim_{x\rightarrow 2} \frac{f(x)-f(2)}{x-2}$＝a
+
+    故函數 f（x）在 x＝2 可微分
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T09
+      name: 函數圖形判讀極限與連續性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 3
+  stem: 三次多項式函數 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d 的圖形如圖，其中 A 是反曲點，請選出正確選項。
+  options:
+  - label: A
+    content: a＞0
+  - label: B
+    content: c＞0
+  - label: C
+    content: d＞0
+  - label: D
+    content: f（x）是遞增函數
+  - label: E
+    content: f（x）＝0 有 3 個實根
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s2_2_f1.png
+    crop:
+      page: 3
+      rect:
+      - 249.6
+      - 435.0
+      - 368.5
+      - 524.4
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：圖形右邊的 x 值愈大，則函數值（y 坐標）愈大，故知 a＞0
+
+    (B) ○：f''（x）＝$3ax^{2}$＋2bx＋c
+
+    ∵f''(0)＝c，又 f（x）在 x＝0 之處的切線斜率為正 ∴c＞0
+
+    (C) ○：f(0)＝d＞0
+
+    (D) ╳：由題圖可知，f（x）先遞增再遞減，然後再遞增
+
+    (E) ╳：f（x）的圖形與 x 軸只有一個交點，故 f（x）＝0 只有 1 個實根
+
+    故選(A)(B)(C)'
+  tags:
+    unit:
+      code: MA-Y1-2-2
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學乙（上） 函數性質的判定
+    pattern:
+      key: MA-Y1-2-2:T03
+      name: 凹向性、反曲點與係數判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 3
+  stem: 題圖是三次函數 f（x）的圖形，其中（3，1）為反曲點；在 x＝2 處有極小值；在 x＝4 處有極大值。選出正確的選項：
+  options:
+  - label: A
+    content: f'(2)＝0
+  - label: B
+    content: f''(2)＞0
+  - label: C
+    content: f''(3)＝0
+  - label: D
+    content: f'(3)＝0
+  - label: E
+    content: f''(5)＜0
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_113_屏東_屏東高中_數學_數乙_g12s1e2/s2_3_f1.png
+    crop:
+      page: 3
+      rect:
+      - 262.3
+      - 655.8
+      - 355.8
+      - 746.15
+  answer:
+  - A
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：∵f（x）在 x＝2 處有極小值 ∴f''(2)＝0
+
+    (B) ○：∵在 x＜3 時，圖形凹口向上 ∴f''''(2)＞0
+
+    (C) ○：∵（3，1）為反曲點 ∴f''''(3)＝0
+
+    (D) ╳：∵f（x）在 x＝3 之處的切線斜率為正 ∴f''(3)＞0
+
+    (E) ○：∵在 x＞3 時，圖形凹口向下 ∴f''''(5)＜0
+
+    故選(A)(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-Y1-2-2
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學乙（上） 函數性質的判定
+    pattern:
+      key: MA-Y1-2-2:T08
+      name: 二階導數與反曲點凹向性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 4
+  stem: 函數 f（x）＝∣x∣，選出下列敘述正確的選項。
+  options:
+  - label: A
+    content: f'(0)＝$\lim_{x\rightarrow 0} \frac{| x | - | 0 |}{x-0}$
+  - label: B
+    content: $\lim_{x\rightarrow 0^{+}} \frac{| x |}{x}$＝$\lim_{x\rightarrow 0^{-}} \frac{| x |}{x}$
+  - label: C
+    content: f'(0)不存在
+  - label: D
+    content: $\lim_{x\rightarrow 0} \frac{| x |}{x}$不存在
+  - label: E
+    content: 函數 f（x）在 x＝0 處不可微分
+  answer:
+  - A
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：f''(0)＝$\lim_{x\rightarrow 0} \frac{f(x)-f(0)}{x-0}$＝$\lim_{x\rightarrow 0} \frac{| x | - | 0 |}{x-0}$
+
+    (B) ╳：$\lim_{x\rightarrow 0^{+}} \frac{| x |}{x}$＝$\lim_{x\rightarrow 0^{+}} \frac{x}{x}$＝1
+
+    $\lim_{x\rightarrow 0^{-}} \frac{| x |}{x}$＝$\lim_{x\rightarrow 0^{-}} \frac{-x}{x}$＝－1
+
+    ∴$\lim_{x\rightarrow 0^{+}} \frac{| x |}{x}$≠$\lim_{x\rightarrow 0^{-}} \frac{| x |}{x}$
+
+    (C) ○：由(B)可知，f''(0)不存在
+
+    (D) ○：由(B)可知，$\lim_{x\rightarrow 0} \frac{| x |}{x}$不存在
+
+    (E) ○：由(B)可知，f（x）在 x＝0 處不可微分
+
+    故選(A)(C)(D)(E)'
+  tags:
+    unit:
+      code: MA-Y1-2-1
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學乙（上） 微分
+    pattern:
+      key: MA-Y1-2-1:T10
+      name: 分段函數與連續可微性判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s2_5
+  section: 2
+  number: 5
+  type: multiple
+  page: 4
+  stem: 下列敘述哪些是正確的？
+  options:
+  - label: A
+    content: y＝sinx 先左右伸縮 2 倍再左移 5 與先左移 5 再左右伸縮 2 倍，所得的圖形相同
+  - label: B
+    content: y＝sinx 先左右伸縮 2 倍再上移 5 與先上移 5 再左右伸縮 2 倍，所得的圖形相同
+  - label: C
+    content: sinx＝cosx 的解只有 2 個
+  - label: D
+    content: sinx＝$\frac{x}{2\pi}$的解只有 3 個
+  - label: E
+    content: y＝3 sin（－2x＋5）－7 的週期為 4π
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T02
+      name: 三角函數圖形平移與伸縮
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s2_6
+  section: 2
+  number: 6
+  type: multiple
+  page: 4
+  stem: 關於兩函數 y＝$f_{1}$（x）＝（$\sqrt{2}$）$^{x}$ 和 y＝$f_{2}$（x）＝$\left( \frac{\sqrt{2}}{2} \right) ^{x}$的圖形，下列哪些選項正確？
+  options:
+  - label: A
+    content: 兩函數均為嚴格遞增函數
+  - label: B
+    content: 兩函數圖形均凹口向上
+  - label: C
+    content: 兩函數圖形只有一個交點
+  - label: D
+    content: 兩函數圖形對稱於 y 軸
+  - label: E
+    content: y＝$f_{1}$（x）和 y＝$\sqrt{2}$log x 函數圖形對稱於直線 y＝x
+  answer:
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：∵$\sqrt{2}$＞1 ∴$f_{1}$（x）為嚴格遞增函數
+
+    ∵0＜$\frac{\sqrt{2}}{2}$＜1 ∴$f_{2}$（x）為嚴格遞減函數
+
+    (B) ○：指數函數皆為凹口向上
+
+    (C) ○：兩函數圖形交於一點（0，1）
+
+    (D) ○：∵$\sqrt{2}$．$\frac{\sqrt{2}}{2}$＝1 ∴$f_{1}$（x）、$f_{2}$（x）對稱於 y 軸
+
+    (E) ╳：y＝（$\sqrt{2}$）$^{x}$ 和 y＝$\log _{\sqrt{2}}x$對稱於 y＝x，且 y＝$\log _{\sqrt{2}}x$≠$\sqrt{2}$logx
+
+    故選(B)(C)(D)'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T01
+      name: 指數函數圖形與單調性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 4
+  stem: 設 f（x）＝$x^{3}$＋$ax^{2}$＋b，a、b ∈ R，若 y＝f（x）之圖形通過點（1，4）且在此點之切線的斜率為－3，則 a＋b＝＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$3x^{2}$＋2ax，
+
+    ∵y＝f（x）的圖形通過點（1，4） ∴f(1)＝1＋a＋b＝4 ⇒ a＋b＝3
+
+    又在點（1，4）的切線斜率為－3 ∴f''(1)＝2a＋3＝－3 ⇒ a＝－3
+
+    將 a＝－3 代入 a＋b＝3，得 b＝6
+
+    故 a＋b＝3'
+  tags:
+    unit:
+      code: MA-Y1-2-1
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學乙（上） 微分
+    pattern:
+      key: MA-Y1-2-1:T05
+      name: 由切線條件反推函數係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 4
+  stem: 一跳水選手從高 14.7 公尺的跳水平臺以 9.8 公尺∕秒的速度向上彈跳，經 t 秒後，這選手離地面的高度是 h（t）＝14.7＋9.8t－4.$9t^{2}$。假設水面與地面等高，求這選手入水時的速度為 ＿＿＿＿公尺∕秒向下。
+  answer:
+  - '19.6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '入水時 h（t）＝14.7＋9.8t－4.$9t^{2}$＝0
+
+    ⇒－4.9（$t^{2}$－2t－3）＝0⇒－4.9（t＋1）（t－3）＝0
+
+    ∴t＝－1（不合）或 3
+
+    即 t＝3 時入水
+
+    又 h''（t）＝9.8－9.8t
+
+    ∴入水時速度為 h''(3)＝9.8－9.8×3＝－19.6（公尺∕秒）
+
+    即入水時速度為 19.6 公尺∕秒向下'
+  tags:
+    unit:
+      code: MA-Y1-2-1
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學乙（上） 微分
+    pattern:
+      key: MA-Y1-2-1:T08
+      name: 導數在瞬時變化率之應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 4
+  stem: 已知函數 f（x）＝$x^{4}$＋$2x^{3}$－$ax^{2}$＋bx＋1 在 x＝1，－2 處有極值，求 a＋b＝＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$4x^{3}$＋$6x^{2}$－2ax＋b
+
+    由 f（x）在 x＝1，－2 處有極值
+
+    可知$\begin{cases}f ''(1)=4+6-2a+b=0 \\ f ''(-2)=-32+24+4a+b=0\end{cases}$
+
+    ⇒$\begin{cases}2a-b=10 \\ 4a+b=8\end{cases}$，解得 a＝3，b＝－4
+
+    故 a＋b＝3＋（－4）＝－1'
+  tags:
+    unit:
+      code: MA-Y1-2-2
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學乙（上） 函數性質的判定
+    pattern:
+      key: MA-Y1-2-2:T04
+      name: 由極值或反曲點條件反推函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 4
+  stem: 某公司生產紅外線額溫槍，已知生產量 x 臺，其總成本為 F（x）＝0.$0005x^{3}$－0.$3x^{2}$＋150x （元），試以 F（x＋1）－F（x） ≈ F'（x）來估算生產第 101 臺紅外線額溫槍的邊際成本為 ＿＿＿＿元。
+  answer:
+  - '105'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'F''（x）＝0.$0015x^{2}$－0.6x＋150
+
+    ⇒F''（100）＝0.0015×$100^{2}$－0.6×100＋150＝15－60＋150＝105（元）'
+  tags:
+    unit:
+      code: MA-Y1-2-1
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學乙（上） 微分
+    pattern:
+      key: MA-Y1-2-1:T08
+      name: 導數在瞬時變化率之應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 4
+  stem: 已知 f（x）＝$x^{3}$＋$ax^{2}$＋bx＋1 圖形的反曲點為（1，8），求數對（a，b）的值為＿＿＿＿。
+  answer:
+  - （－3，9）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$3x^{2}$＋2ax＋b
+
+    f''''（x）＝6x＋2a
+
+    ∵圖形的反曲點為（1，8）
+
+    ∴$\begin{cases}f ''''(1)=6+2a=0 \\ f(1)=1+a+b+1=8\end{cases}$，解得 a＝－3，b＝9
+
+    故數對（a，b）＝（－3，9）'
+  tags:
+    unit:
+      code: MA-Y1-2-2
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學乙（上） 函數性質的判定
+    pattern:
+      key: MA-Y1-2-2:T04
+      name: 由極值或反曲點條件反推函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 5
+  stem: 三次函數 f（x）＝$x^{3}$－$3x^{2}$－9x＋5 相對極大值為 M，相對極小值為 m，則數對（M，m）＝ ＿＿＿＿。
+  answer:
+  - （10，－22）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-2-2
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學乙（上） 函數性質的判定
+    pattern:
+      key: MA-Y1-2-2:T02
+      name: 多項式函數極值與閉區間最值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_屏東_屏東高中_數學_數乙_g12s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 5
+  stem: 若拋物線 y＝$x^{2}$＋2x－3 的頂點為 C，與 x 軸的交點為 A、B，則 sin∠ACB＝＿＿＿＿。
+  answer:
+  - $\frac{4}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T09
+      name: 二次函數圖形象限與正負判別
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3

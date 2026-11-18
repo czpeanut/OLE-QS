@@ -1,0 +1,382 @@
+document:
+  id: doc_109_新北_新店_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 2
+  city: 新北
+  school_short: 新店
+  school: 新北市立新店高級中學
+  title: 新北市立新店高級中學 109學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 109學年度第2學期第2次定期評量
+  source_file: 高二/數學/109/2-2/新北/新店_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、 單一選擇題（每題 10 分，共 20 分）
+    count: 2
+  - ord: 2
+    name: 二、 填充題（共 70 分）
+    count: 10
+  - ord: 3
+    name: 三、混合題（第(1)小題為單選題（2 分），第(2)小題為計算題（8 分），依計算過程分段給分）
+    count: 1
+  scope_note: 龍騰版單元 4～單元 5 ＿＿＿年＿＿＿班 座號＿＿＿ 姓名
+questions:
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 若 A 與 B 為獨立事件，P
+  options:
+  - label: A
+    content: ＝$\frac{1}{3}$，P（A∪B）＝$\frac{2}{3}$，則下列選項何者正確？(A) P
+  - label: B
+    content: ＝$\frac{1}{3}$(B) P（A∣B'）＝$\frac{2}{3}$
+  - label: C
+    content: P（A∩B）＝$\frac{1}{6}$
+  - label: D
+    content: P（A'∩B'）＝$\frac{4}{9}$
+  explanation: '(A)╳：$\frac{2}{3}$＝P（A∪B）＝P(A)＋P(B)－P（A∩B）＝$\frac{1}{3}$＋P(B)－$\frac{1}{3}$×P(B)
+
+    ∴$\frac{1}{3}$＝$\frac{2}{3}$P(B) ∴P(B)＝$\frac{1}{2}$
+
+    (B)╳：P（A∣B''）＝$\frac{P (A\cap B'')}{P (B'')}$＝$\frac{P (A)\times P (B'')}{P (B'')}$＝P(A)＝$\frac{1}{3}$
+
+    (C)○：P（A∩B）＝P(A)×P(B)＝$\frac{1}{3}$×$\frac{1}{2}$＝$\frac{1}{6}$
+
+    (D)╳：P（A''∩B''）＝P（A''）×P（B''）＝（1－P(A)）×（1－P(B)）
+
+    ＝$\left( 1 -\frac{1}{3} \right)$×$\left( 1 -\frac{1}{2} \right)$＝$\frac{2}{3}$×$\frac{1}{2}$＝$\frac{1}{3}$
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹與選項中 P(A)、P(B) 括號被誤切為選項標號
+  difficulty: 2
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '將班上 40 位學生按照性別及是否戴眼鏡分類，可得如右的列聯表，則下列選項何者正確？
+
+    | 是否戴眼鏡 性別 | 戴眼鏡 | 沒戴眼鏡 | 總和 |
+
+    | --- | --- | --- | --- |
+
+    | 男生 | a | b | 25 |
+
+    | 女生 | c | 6 | e |
+
+    | 總和 | 24 | d | 40 |'
+  options:
+  - label: A
+    content: a＝10
+  - label: B
+    content: e＋d＝30
+  - label: C
+    content: 從班上抽出一學生，設 A 表示抽到男生的事件，B 表示抽到戴眼鏡者的事件，則 A 與 B 為獨立事件
+  - label: D
+    content: 從班上抽出一學生，已知此生有戴眼鏡，則他是男生的機率為$\frac{9}{24}$
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T10
+      name: 列聯表數據判讀與條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '設 A、B 為樣本空間 S 中的兩事件，已知 P(A)＝$\frac{1}{3}$，P(A∩B)＝$\frac{1}{6}$，P(A∪B)＝$\frac{5}{12}$，求下列各機率：
+
+    (1) P(B)＝＿＿＿＿。
+
+    (2) P(A∣B'')＝＿＿＿＿。'
+  explanation: '(1) ∵P（A∪B）＝P(A)＋P(B)－P（A∩B）
+
+    ∴$\frac{5}{12}$＝$\frac{1}{3}$＋P(B)－$\frac{1}{6}$
+
+    ∴P(B)＝$\frac{5}{12}$＋$\frac{2}{12}$－$\frac{4}{12}$＝$\frac{3}{12}$＝$\frac{1}{4}$
+
+    (2) P（A∣B''）＝$\frac{P (A\cap B'')}{P (B'')}$＝$\frac{P (A) - P (A\cap B)}{1 - P (B)}$＝$\frac{\frac{1}{3}-\frac{1}{6}}{1 -\frac{1}{4}}$＝$\frac{\frac{1}{6}}{\frac{3}{4}}$＝$\frac{4}{18}$＝$\frac{2}{9}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T09
+      name: 條件機率定義與集合運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 某人練習罰球線投籃，每次投進的機率為$\frac{3}{4}$，且每次投進與否為獨立事件，今連續投籃 n 次，若欲使 n 次投籃中至少投進一次的機率大於 0.999，則 n 的最小值為＿＿＿＿。
+  explanation: '∵P（至少投進一次）＝1－P（全不中）＝1－$\left( 1 -\frac{3}{4} \right) ^{n}$＝1－$\left( \frac{1}{4} \right) ^{n}$＞0.999
+
+    ∴0.001＞$\frac{1}{4^{n}}$ ∴$\frac{1}{1000}$＞$\frac{1}{4^{n}}$ ∴$4^{n}$＞1000
+
+    $4^{4}$＝256，$4^{5}$＝1024＞1000 ∴n 的最小值為 5'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T12
+      name: 獨立重複試驗與比賽勝率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: '有一數學問題，甲能解出的機率為$\frac{3}{4}$，乙能解出的機率為$\frac{2}{3}$，今兩人同解此題，已知兩人各別能否解出為獨立事件，求：
+
+    (1) 至少有一人解出的機率為＿＿＿＿。
+
+    (2) 若已知恰有一人解出，則其為甲解出的機率為＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: '某校學生中，高一占 40 ％，高二占 30 ％，高三占 30 ％，且高一學生中 25 ％是近視，高二學生中 35 ％是近視，高三學生中 40 ％是近視，問：
+
+    (1) 由此校學生中任選一人，求選到的學生是近視的機率為＿＿＿＿。
+
+    (2) 由此校學生中任選一人，已知選到的學生是近視，求該學生是高二的機率為＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T06
+      name: 單次試驗的貝氏定理後驗機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 調查某班 40 位同學，有 32 人有用 Facebook，有 26 人有用 Instagram，有 20 人兩者都有用。今從班上任選一人，已知此人沒有用 Instagram，求他也沒有用 Facebook 的機率為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T09
+      name: 條件機率定義與集合運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '甲袋有 3 個黑球，2 個白球；乙袋有 2 個黑球，2 個白球。今由甲乙兩袋中任選一袋取出 2 球，每球被取到的機會都相同，問：
+
+    (1) 求此兩球為 1 黑球 1 白球的機率為＿＿＿＿。
+
+    (2) 已知取出的兩球為 1 黑球 1 白球，求此兩球來自甲袋的機率為＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T07
+      name: 抽袋取球與兩階段貝氏機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 甲、乙兩人進行一對一決賽（不得和局），約定先勝 3 局者為最終冠軍。設甲每局獲勝的機率為$\frac{1}{3}$，且每局的比賽結果互不影響，已知甲前兩局皆勝，求甲獲得最終冠軍的機率為 ＿＿＿＿。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T12
+      name: 獨立重複試驗與比賽勝率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: <u>小白</u>練習 3 分線投籃，每次投進的機率為$\frac{1}{4}$，上體育課時，老師給他 3 次投籃機會，只要投中一球，即停止投球。於本次活動中，在<u>小白</u>有投進的條件下，求他在前兩次有投進的機率為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T14
+      name: 樹狀圖與條件機率逆向推算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 甲、乙、丙、丁、戊五人抽籤決定需上臺發表的 2 個人選，但乙不想上臺，偷偷在每支籤上做記號，使得他能抽中不需上臺的籤！若五人按照甲→乙→丙→丁→戊的順序抽籤，5 支籤中有 2 支需上臺的籤，且抽後不放回，求丙抽中需上臺籤支的機率為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 電影「賭神」的一幕中，牌局顯示賭神的底牌為紅心 A 時，他能以同花順致勝！而他的底牌為紅心 A 的機率是$\frac{1}{43}$，根據過往賭神出牌模式，當他拿到致勝底牌時，喊 showhand 的機率為$\frac{5}{7}$，若他未拿到致勝底牌仍喊 showhand 的機率為$\frac{2}{7}$。已知賭神在此副牌局中喊出 showhand，問他的底牌確實是紅心 A 的機率為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T06
+      name: 單次試驗的貝氏定理後驗機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_新北_新店_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: single
+  page: 2
+  stem: '■ 目前生產的新冠肺炎快篩檢驗試劑，其檢測的準確率有其極限，仍有「偽陽性」與「偽陰性」的可能，已知受試者是否為帶原者與接受試劑檢測後的採檢結果關係如右表：
+
+    | 受試者 採檢結果 | 帶原者 | 非帶原者 |
+
+    | --- | --- | --- |
+
+    | 陽性 | 真陽性 | 偽陽性 |
+
+    | 陰性 | 偽陰性 | 真陰性 |
+
+    (1) 現有一新的快篩試劑，檢驗帶原者時，有 90 ％的機率呈現陽性，檢驗非帶原者時，有 80 ％的機率呈現陰性，已知某地區約有 20 ％比例的人為帶原者，若對於此地區人民進行普篩，則檢測結果為「偽陽性」的比例為多少？
+
+    答：＿＿＿＿。
+
+    (2) 承(1)，若現有一民眾，第一次快篩結果為陰性而第二次快篩結果為陽性，則此人為帶原者的機率為多少？（答案請以最簡分數表示，未書寫計算過程者不給分）'
+  options:
+  - label: A
+    content: '0.02'
+  - label: B
+    content: '0.16'
+  - label: C
+    content: '0.18'
+  - label: D
+    content: '0.64'
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T08
+      name: 多重檢驗與重複觀測貝氏更新
+    labeled_by: agent
+    label_confidence: high
+    label_note: 第(2)小題為計算題，選項僅對應第(1)小題
+  difficulty: 3

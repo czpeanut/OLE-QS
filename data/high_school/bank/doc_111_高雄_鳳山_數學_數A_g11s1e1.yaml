@@ -1,0 +1,731 @@
+document:
+  id: doc_111_高雄_鳳山_數學_數A_g11s1e1
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 1
+  city: 高雄
+  school_short: 鳳山
+  school: 國立鳳山高級中學
+  title: 國立鳳山高級中學 111學年度第1學期第1次定期評量 高二數學（數A）科試題
+  exam_name: 111學年度第1學期第1次定期評量
+  source_file: 高二/數學/111/1-1/高雄/鳳山_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 15 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 7 分，共 21 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（共 64 分）
+    count: 11
+questions:
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設 a＝sin（2.7π），則下列哪一個選項是正確的？
+  options:
+  - label: A
+    content: －1＜a$\leq- \frac{\sqrt{3}}{2}$
+  - label: B
+    content: $- \frac{\sqrt{3}}{2}$＜a$\leq$0
+  - label: C
+    content: 0＜a$\leq\frac{1}{2}$
+  - label: D
+    content: $\frac{1}{2}$＜a$\leq\frac{\sqrt{3}}{2}$
+  - label: E
+    content: $\frac{\sqrt{3}}{2}$＜a$\leq$1
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'a＝sin（2.7π）＝sin（2.7π－2π）
+
+    ＝sin（0.7π）＝sin（0.7×180°）
+
+    ＝sin126°＝sin（180°－54°）
+
+    ＝sin54°
+
+    ∵sin30°＜sin54°＜sin60°
+
+    ∴$\frac{1}{2}$＜a$\leq\frac{\sqrt{3}}{2}$，故選(D)'
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T02
+      name: 弧度角象限與三角比大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設△ABC 為直角三角形，已知 0°＜∠A＜45°，∠C＝90°，且兩內角 A，B 滿足 cosA cosB＋sinA sinB＋sinA cosA＝$\frac{6}{5}$，則 tanA 之值為何？
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: $\frac{1}{2}$
+  - label: C
+    content: $\frac{3}{5}$
+  - label: D
+    content: '1'
+  - label: E
+    content: $\frac{6}{5}$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∠C＝90°$\Rightarrow$∠A＋∠B＝90°$\Rightarrow$∠B＝90°－∠A
+
+    $\Rightarrow$cosB＝cos（90°－∠A）＝sinA，sinB＝sin（90°－∠A）＝cosA
+
+    ∴$\frac{6}{5}$＝cosA <u>cosB</u>＋sinA <u>sinB</u>＋sinA cosA
+
+    ＝cosA <u>sinA</u>＋sinA <u>cosA</u>＋sinA cosA
+
+    ＝3 sinA cosA
+
+    $\Rightarrow$sinA cosA＝$\frac{2}{5}\Rightarrow$2 sinA cosA＝$\frac{4}{5}\Rightarrow$sin2A＝$\frac{4}{5}$
+
+    ∵0°＜∠A＜45°$\Rightarrow$0°＜2∠A＜90°
+
+    ∴cos2A＝$\frac{3}{5}\Rightarrow$tan2A＝$\frac{\sin 2A}{\cos 2A}$＝$\frac{\frac{4}{5}}{\frac{3}{5}}$＝$\frac{4}{3}$
+
+    $\Rightarrow\frac{4}{3}$＝$\frac{2\tan A}{1 - \tan ^{2}A}$
+
+    $\Rightarrow$2－2 $tan^{2}$A＝3 tanA
+
+    $\Rightarrow$2 $tan^{2}$A＋3 tanA－2＝0
+
+    $\Rightarrow$（2 tanA－1）（tanA＋2）＝0
+
+    $\Rightarrow$tanA＝$\frac{1}{2}$或－2（不合）
+
+    $\Rightarrow$tanA＝$\frac{1}{2}$，故選(B)'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T03
+      name: 二倍角與三倍角公式計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 如右圖，<u>小明</u>將住家附近一塊半徑為 r 公尺，圓心角為$\frac{\pi}{2}$的扇形空地規劃成棒球練習場。已知此塊空地的面積為$(123 - 22\sqrt{2})\pi$平方 公尺，試問 r 之值最接近下列何者？
+  options:
+  - label: A
+    content: 16 公尺
+  - label: B
+    content: 17 公尺
+  - label: C
+    content: 18 公尺
+  - label: D
+    content: 19 公尺
+  - label: E
+    content: 20 公尺
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_111_高雄_鳳山_數學_數A_g11s1e1/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 488.3
+      - 568.35
+      - 564.3
+      - 624.35
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$(123 - 22\sqrt{2})\pi$＝$\frac{1}{2} \cdot r^{2} \cdot \theta$＝$\frac{1}{2} \cdot r^{2} \cdot \frac{\pi}{2}$
+
+    $\Rightarrowr^{2}$＝$4 \times (123 - 22\sqrt{2})$＝$492 - 88\sqrt{2}\approx$492－88×1.414＝367.568
+
+    ∵$19^{2}$＝361，$20^{2}$＝400
+
+    ∴r 之值最接近 19，故選(D)'
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T05
+      name: 扇形弧長面積與比例應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 若坐標平面上，有一標準位置角θ，其終邊上有一點為 P（x，－8），且 tanθ＝$\frac{24}{7}$，請選出正確的選項。
+  options:
+  - label: A
+    content: x＝$- \frac{3}{7}$
+  - label: B
+    content: $\sin \theta$＝$- \frac{24}{25}$
+  - label: C
+    content: $\sin \frac{\theta}{2}$＝$\frac{4}{5}$
+  - label: D
+    content: $\sin 2\theta$＝$\frac{336}{625}$
+  - label: E
+    content: $\sin \frac{\theta}{2}+\cos \frac{\theta}{2}$＝$\frac{1}{5}$
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：∵O（0，0），P（x，－8），tanθ＝$\frac{24}{7}$＝$\frac{- 8}{x}$
+
+    ∴24x＝－56$\Rightarrow$x＝$- \frac{7}{3}$
+
+    (B)○：∵r＝$\overline{OP}$＝$\sqrt{x^{2} + 8^{2}}$＝$\sqrt{\left( - \frac{7}{3} \right) ^{2} + \left( \frac{24}{3} \right) ^{2}}$＝$\frac{25}{3}$
+
+    ∴$\sin \theta$＝$\frac{y}{r}$＝$\frac{- 8}{\frac{25}{3}}$＝$- \frac{24}{25}$
+
+    (C)╳：∵cosθ＝$\frac{x}{r}$＝$\frac{- \frac{7}{3}}{\frac{25}{3}}$＝$- \frac{7}{25}$，$\sin \theta$＝$- \frac{24}{25}$
+
+    ∴360°n＋180°＜θ＜360°n＋270°，n 為正整數
+
+    ∴180°n＋90°＜$\frac{\theta}{2}$＜180°n＋135°
+
+    若 n＝0，則 90°＜$\frac{\theta}{2}$＜135°
+
+    ∴$\sin \frac{\theta}{2}$＝$\sqrt{\frac{1 - \cos \theta}{2}}$＝$\sqrt{\frac{1 - \left( - \frac{7}{25} \right)}{2}}$＝$\sqrt{\frac{16}{25}}$＝$\frac{4}{5}$
+
+    若 n＝1，則 270°＜$\frac{\theta}{2}$＜315°
+
+    ∴$\sin \frac{\theta}{2}$＝$- \sqrt{\frac{1 - \cos \theta}{2}}$＝$- \sqrt{\frac{1 - \left( - \frac{7}{25} \right)}{2}}$＝$- \sqrt{\frac{16}{25}}$＝$- \frac{4}{5}$
+
+    (D)○：∵sin2θ＝$2\sin \theta \cos \theta$＝$2 \times \left( - \frac{24}{25} \right) \times \left( - \frac{7}{25} \right)$＝$\frac{336}{625}$
+
+    (E)╳：若$\frac{\theta}{2}$為第二象限角，則$\sin \frac{\theta}{2}$＝$\frac{4}{5}$，$\cos \frac{\theta}{2}$＝$- \frac{3}{5}\Rightarrow\sin \frac{\theta}{2} + \cos \frac{\theta}{2}$＝$\frac{4}{5} + \left( - \frac{3}{5} \right)$＝$\frac{1}{5}$
+
+    若$\frac{\theta}{2}$為第四象限角，則$\sin \frac{\theta}{2}$＝$- \frac{4}{5}$，$\cos \frac{\theta}{2}$＝$\frac{3}{5}\Rightarrow\sin \frac{\theta}{2} + \cos \frac{\theta}{2}$＝$\left( - \frac{4}{5} \right) + \frac{3}{5}$＝$- \frac{1}{5}$
+
+    故選(B)(D)'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T04
+      name: 半角公式與象限正負判別
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 右圖可以是下列哪些函數的部分圖形？
+  options:
+  - label: A
+    content: y＝$\sin \left( x - \frac{3\pi}{4} \right)$
+  - label: B
+    content: y＝$\sin \left( x + \frac{3\pi}{4} \right)$
+  - label: C
+    content: y＝$\sin \left( x + \frac{5\pi}{4} \right)$
+  - label: D
+    content: y＝$\cos \left( x - \frac{5\pi}{4} \right)$
+  - label: E
+    content: y＝$\cos \left( 2x + \frac{3\pi}{4} \right)$
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_111_高雄_鳳山_數學_數A_g11s1e1/s2_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 388.1
+      - 324.6
+      - 564.3
+      - 397.5
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：圖形表示由 y＝sinx $\xrightarrow[\frac{3\pi}{4} 單位]{向右平移}$ y＝$\sin \left( x - \frac{3\pi}{4} \right)$
+
+    (B)╳：y＝$\sin \left( x + \frac{3\pi}{4} \right)$代表由 y＝sinx 向左平移$\frac{3\pi}{4}$單位所形成的圖形
+
+    (C)○：由(A) y＝$\sin \left( x - \frac{3\pi}{4} \right)$＝$\sin \left[ \left( x - \frac{3\pi}{4} \right) + 2\pi \right]$＝$\sin \left( x + \frac{5\pi}{4} \right)$
+
+    (D)○：由(A) y＝$\sin \left( x - \frac{3\pi}{4} \right)$＝$\cos \left[ \frac{\pi}{2} - \left( x - \frac{3\pi}{4} \right) \right]$＝$\cos \left( \frac{5\pi}{4} - x \right)$＝$\cos \left( x - \frac{5\pi}{4} \right)$
+
+    (E)╳：y＝$\cos \left( 2x + \frac{3\pi}{4} \right)$的週期為$\frac{2\pi}{│ 2 │}$＝π與圖形中的週期 2π不同
+
+    故選(A)(C)(D)'
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T10
+      name: 由圖形特徵反推三角函數參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 試問下列選項中的方程式，哪些恰有兩個相異實根？
+  options:
+  - label: A
+    content: sinx＝tanx，其中 0$\leq$x$\leq\frac{\pi}{2}$
+  - label: B
+    content: sinx＋cosx＝1，其中 0$\leq$x$\leq$π
+  - label: C
+    content: 5＝tanx，其中 0$\leq$x$\leq$2π
+  - label: D
+    content: πsinx＝x，其中－π$\leq$x$\leq$π
+  - label: E
+    content: sin｜x｜＝0.8，其中$- \frac{\pi}{2}\leq$x$\leq\frac{\pi}{2}$
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T03
+      name: 三角方程式實根與交點數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 試求$\cos \frac{2\pi}{3} + \sin \frac{11\pi}{6} \times \tan \frac{5\pi}{4}$＝＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\cos \frac{2\pi}{3} + \sin \frac{11\pi}{6} \times \tan \frac{5\pi}{4}$
+
+    ＝$\cos \left( \pi - \frac{\pi}{3} \right) + \sin \left( 2\pi - \frac{\pi}{6} \right) \times \tan \left( \pi + \frac{\pi}{4} \right)$
+
+    ＝$\left( - \cos \frac{\pi}{3} \right) + \left( - \sin \frac{\pi}{6} \right) \times \tan \frac{\pi}{4}$
+
+    ＝$\left( - \frac{1}{2} \right) + \left( - \frac{1}{2} \right) \times 1$
+
+    ＝－1'
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T04
+      name: 弧度特殊角三角比求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 設α為銳角，若$\cos \left( \alpha + \frac{\pi}{6} \right)$＝$\frac{4}{5}$，則$\sin \left( 2\alpha + \frac{\pi}{12} \right)$的值為＿＿＿＿。
+  answer:
+  - $\frac{17\sqrt{2}}{50}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\cos \left( \alpha + \frac{\pi}{6} \right)$＝$\frac{4}{5}$＞0，又 0＜α＜$\frac{\pi}{2}\Rightarrow\frac{\pi}{6}$＜$\alpha + \frac{\pi}{6}$＜$\frac{2\pi}{3}$
+
+    ∴$\frac{\pi}{6}$＜$\alpha + \frac{\pi}{6}$＜$\frac{\pi}{2}\Rightarrow\frac{\pi}{3}$＜$2\left( \alpha + \frac{\pi}{6} \right)$＜π
+
+    $\cos \left[ 2\left( \alpha + \frac{\pi}{6} \right) \right]$＝$2\cos ^{2}\left( \alpha + \frac{\pi}{6} \right) - 1$＝$2 \times \left( \frac{4}{5} \right) ^{2} - 1$＝$\frac{7}{25}$＞0
+
+    ∴$\frac{\pi}{3}$＜$2\left( \alpha + \frac{\pi}{6} \right)$＜$\frac{\pi}{2}\Rightarrow2\left( \alpha + \frac{\pi}{6} \right)$為第一象限角
+
+    ∴$\sin \left[ 2\left( \alpha + \frac{\pi}{6} \right) \right]$＝$\sqrt{1 - \cos ^{2}\left[ 2\left( \alpha + \frac{\pi}{6} \right) \right]}$
+
+    ＝$\sqrt{1 - \left( \frac{7}{25} \right) ^{2}}$＝$\frac{24}{25}$
+
+    ∴$\sin \left( 2\alpha + \frac{\pi}{12} \right)$＝$\sin \left[ 2\left( \alpha + \frac{\pi}{6} \right) - \frac{3\pi}{12} \right]$
+
+    ＝$\sin \left[ 2\left( \alpha + \frac{\pi}{6} \right) \right] \cos \frac{\pi}{4} - \cos \left[ 2\left( \alpha + \frac{\pi}{6} \right) \right] \sin \frac{\pi}{4}$
+
+    ＝$\frac{24}{25} \times \frac{\sqrt{2}}{2} - \frac{7}{25} \times \frac{\sqrt{2}}{2}$
+
+    ＝$\frac{17\sqrt{2}}{50}$'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T02
+      name: 和差角公式化簡與求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 設 0$\leq$x$\leq$2π，則滿足不等式－1$\leq$cosx$\leq\frac{\sqrt{3}}{2}$之 x 的範圍為＿＿＿＿。
+  answer:
+  - $\frac{\pi}{6}\leq$x$\leq\frac{11\pi}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T09
+      name: 三角不等式圖形交點求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 將Γ$_{1}$：y＝$f_{1}$（x）＝sinx 圖形上所有點的橫坐標都以 y 軸為中心，水平壓縮為原來的三分之一倍，得到Γ$_{2}$：y＝$f_{2}$（x）函數；再將Γ$_{2}$ 圖形向右平移$\frac{\pi}{3}$單位得到Γ$_{3}$：y＝$f_{3}$（x）；最後將Γ$_{3}$ 圖形上所有點的縱坐標都以 x 軸為中心，鉛直伸長為原來的兩倍，得到 Γ$_{4}$：y＝$f_{4}$（x）＝a sin（bx－c），其中 0＜c＜2π，則序組（a，b，c）＝＿＿＿＿。
+  answer:
+  - （2，3，π） 5.37 6.$\sqrt{19}$ 7.$\frac{\sqrt{2}}{2}$ 8.（7，1）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝sinx $\xrightarrow[成 \frac{1}{3} 倍]{水平方向壓縮}$ y＝sin3x $\xrightarrow[\frac{\pi}{3} 單位]{向右平移}$ y＝$\sin \left[ 3\left( x - \frac{\pi}{3} \right) \right]$
+
+    $\xrightarrow[伸長 2 倍]{鉛直方向}$ y＝2 sin（3x－π）＝a sin（bx－c）
+
+    故序組（a，b，c）＝（2，3，π）'
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T02
+      name: 三角函數圖形平移與伸縮
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 試求兩直線 $L_{1}$：x－2y＋3＝0 與 $L_{2}$：2x－y－2＝0 的銳夾角約為＿＿＿＿度。（四捨五入至整數位）
+  explanation: '$\begin{cases}L_{1} : x - 2y + 3 = 0 \\ L_{2} : 2x - y - 2 = 0\end{cases}\Rightarrow\begin{cases}L_{1} : y = \frac{1}{2}x + \frac{3}{2} \\ L_{2} : y = 2x - 2\end{cases}$
+
+    令 tanα＝$\frac{1}{2}$，tanβ＝2，且θ＝β－α
+
+    ∴tanθ＝tan（β－α）＝$\frac{\tan \beta - \tan \alpha}{1 + \tan \beta \cdot \tan \alpha}$＝$\frac{2 - \frac{1}{2}}{1 + 2 \times \frac{1}{2}}$＝$\frac{\frac{3}{2}}{2}$＝$\frac{3}{4}\Rightarrow$θ$\approx$37°'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T01
+      name: 正切和差角公式與兩線夾角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 設θ為第一象限角，f（θ）＝$2\cos \theta + 3\cos \left( \frac{\pi}{3} - \theta \right)$，則 f（θ）的最大值為＿＿＿＿。
+  explanation: 'f（θ）＝$2\cos \theta + 3\cos \left( \frac{\pi}{3} - \theta \right)$
+
+    ＝$2\cos \theta + 3\left( \cos \frac{\pi}{3}\cos \theta + \sin \frac{\pi}{3}\sin \theta \right)$
+
+    ＝$2\cos \theta + 3\left( \frac{1}{2}\cos \theta + \frac{\sqrt{3}}{2}\sin \theta \right)$
+
+    ＝$\frac{7}{2}\cos \theta + \frac{3\sqrt{3}}{2}\sin \theta$
+
+    $\leq\sqrt{\left( \frac{7}{2} \right) ^{2} + \left( \frac{3\sqrt{3}}{2} \right) ^{2}}$＝$\sqrt{\frac{49 + 27}{4}}$＝$\sqrt{\frac{76}{4}}$＝$\sqrt{19}$'
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T05
+      name: 限域正餘弦疊合求極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 設 y＝a sinx－b cosx 圖形的一條對稱軸方程式為 x＝$\frac{\pi}{4}$，且直線 L：ax－by＋c＝0 與 x 軸的夾角為θ，則 sinθ＝＿＿＿＿。
+  explanation: 'y＝a sinx－b cosx
+
+    ＝$\sqrt{a^{2} + b^{2}}\left( \sin x \cdot \frac{a}{\sqrt{a^{2} + b^{2}}} - \cos x \cdot \frac{b}{\sqrt{a^{2} + b^{2}}} \right)\left( 令\frac{a}{\sqrt{a^{2} + b^{2}}} = \cos \varphi , \frac{b}{\sqrt{a^{2} + b^{2}}} = \sin \varphi \right)$
+
+    ＝$\sqrt{a^{2} + b^{2}}(\sin x\cos \varphi - \cos x\sin \varphi )$＝$\sqrt{a^{2} + b^{2}}\sin (x - \varphi )$
+
+    ∵對稱軸為 x＝$\frac{\pi}{4}$
+
+    ∴將 x＝$\frac{\pi}{4}$代入$\Rightarrowa\sin \frac{\pi}{4}-b\cos \frac{\pi}{4}$＝$\pm \sqrt{a^{2} + b^{2}}$
+
+    $\Rightarrowa \cdot \frac{1}{\sqrt{2}} - b \cdot \frac{1}{\sqrt{2}}$＝$\pm \sqrt{a^{2} + b^{2}}$
+
+    $\Rightarrow\frac{1}{2}(a - b)^{2}$＝$a^{2}$＋$b^{2}$
+
+    $\Rightarrowa^{2}$－2ab＋$b^{2}$＝$2a^{2}$＋$2b^{2}$
+
+    $\Rightarrowa^{2}$＋2ab＋$b^{2}$＝0
+
+    $\Rightarrow$（a＋b）$^{2}$＝0
+
+    $\Rightarrow$a＝－b
+
+    L：ax－by＋c＝0$\Rightarrow$－bx－by＋c＝0$\Rightarrow$bx＋by＝c
+
+    $\Rightarrow$x＋y＝$\frac{c}{b}\Rightarrow$y＝－x＋$\frac{c}{b}$
+
+    ∴斜率 m＝－1＝tan135°
+
+    ∴θ＝180°－135°＝45°
+
+    $\Rightarrow$sinθ＝sin45°＝$\frac{\sqrt{2}}{2}$'
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T04
+      name: 疊合後圖形對稱與單調性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 設 0$\leq$x$\leq\frac{\pi}{2}$，若 f（x）＝$\sin ^{2}x + 4\sqrt{3}\sin x\cos x + 5\cos ^{2}x$的最大值為 M、最小值為 m，則數對（M，m）＝＿＿＿＿。
+  explanation: 'f（x）＝$\sin ^{2}x + 4\sqrt{3}\sin x\cos x + 5\cos ^{2}x$
+
+    ＝$\frac{1 - \cos 2x}{2} + 2\sqrt{3} (2\sin x\cos x) + 5 \times \frac{1 + \cos 2x}{2}$
+
+    ＝$2\sqrt{3}\sin 2x + 2\cos 2x + 3$
+
+    ＝$4\left( \sin 2x \cdot \frac{\sqrt{3}}{2} + \cos 2x \cdot \frac{1}{2} \right) + 3$
+
+    ＝$4\left( \sin 2x\cos \frac{\pi}{6} + \cos 2x\sin \frac{\pi}{6} \right) + 3$
+
+    ＝$4\sin \left( 2x + \frac{\pi}{6} \right) + 3$
+
+    ∵0$\leq$x$\leq\frac{\pi}{2}\Rightarrow$0$\leq$2x$\leq$π
+
+    $\Rightarrow\frac{\pi}{6}\leq2x + \frac{\pi}{6}\leq\frac{7\pi}{6}$
+
+    ∴最大值 M＝4×1＋3＝7
+
+    最小值 m＝$4 \times \left( -\frac{1}{2} \right) + 3$＝1
+
+    故數對（M，m）＝（7，1）'
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T06
+      name: 倍角降次後疊合反推參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 如右圖，有一個半徑為 3 公分的圓形硬幣，與地面垂直接觸於 A 點，現沿著地面一直線向左滾動了 15 公分，則此時 A 點離地面的高度約為 ＿＿＿＿公分。（四捨五入至小數點後第二位）
+  assets:
+  - key: s3_9_f1
+    kind: figure
+    file: doc_111_高雄_鳳山_數學_數A_g11s1e1/s3_9_f1.png
+    crop:
+      page: 3
+      rect:
+      - 459.5
+      - 363.65
+      - 564.3
+      - 412.75
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T07
+      name: 圓滾動皮帶公切線與圓周角弧長
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 設 0$\leq$x$\leq$π，0$\leq$y$\leq$π，且 x≠y，若 sinx＋cosy＝siny＋cosx，則 x＋y＝＿＿＿＿。
+  explanation: 'sinx＋cosy＝siny＋cosx
+
+    $\Rightarrowsin^{2}$x＋2 sinx cosy＋$cos^{2}$y＝$sin^{2}$y＋2 siny cosx＋$cos^{2}$x
+
+    $\Rightarrow$（$sin^{2}$x－$cos^{2}$x）＋2（sinx cosy－siny cosx）＋（$cos^{2}$y－$sin^{2}$y）＝0
+
+    $\Rightarrow$－cos2x＋2 sin（x－y）＋cos2y＝0
+
+    $\Rightarrow$cos2y－cos2x＋2 sin（x－y）＝0
+
+    $\Rightarrow$cos〔（x＋y）＋（y－x）〕－cos〔（x＋y）－（y－x）〕＋2 sin（x－y）＝0
+
+    $\Rightarrow$〔<u>cos（x＋y）cos（y－x）</u>－sin（x＋y）sin（y－x）〕 －〔<u>cos（x＋y）cos（y－x）</u>＋sin（x＋y）sin（y－x）〕＋2 sin（x－y）＝0
+
+    $\Rightarrow$－2 sin（x＋y）sin（y－x）＋2 sin（x－y）＝0
+
+    $\Rightarrow$2 sin（x＋y）sin（x－y）＋2 sin（x－y）＝0
+
+    $\Rightarrow$2 sin（x－y）．〔sin（x＋y）＋1〕＝0
+
+    ∵x≠y$\Rightarrow$sin（x－y）≠0
+
+    ∴sin（x＋y）＝－1
+
+    ∴x＋y＝$\frac{3\pi}{2}$'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T02
+      name: 和差角公式化簡與求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_111_高雄_鳳山_數學_數A_g11s1e1_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 3
+  stem: 已知正方形 ABCD 中，若點 E、F 分別為$\overline{BC}$、$\overline{CD}$邊上的點且滿足 $3\overline{DF}$＝$\overline{AD}$及∠FAE＝45°，則$\frac{\overline{AE}}{\overline{AF}}$＝＿＿＿＿。
+  assets:
+  - key: s3_11_f1
+    kind: figure
+    file: doc_111_高雄_鳳山_數學_數A_g11s1e1/s3_11_f1.png
+    crop:
+      page: 3
+      rect:
+      - 474.5
+      - 437.25
+      - 564.3
+      - 520.15
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T05
+      name: 幾何圖形和差角與倍角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

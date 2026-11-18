@@ -1,0 +1,597 @@
+document:
+  id: doc_110_台北_松山_數學_數甲_g12s1e3
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 3
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 110學年度第1學期第3次定期評量 高三數學（數甲）科試題
+  exam_name: 110學年度第1學期第3次定期評量
+  source_file: 高三/數學/110/1-3/台北/松山_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 12 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 24 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 54 分）
+    count: 9
+  - ord: 4
+    name: 四、證明題（共 10 分）
+    count: 1
+questions:
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 請計算定積分$\int_{0}^{2} ( 2 +\sqrt{4 -x^{2}} )dx$的值為何？
+  options:
+  - label: A
+    content: 4π
+  - label: B
+    content: 2π
+  - label: C
+    content: 2π＋4
+  - label: D
+    content: 2π＋2
+  - label: E
+    content: π＋4
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T05
+      name: 定積分求曲線圍成面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列何者為函數 g（x）＝$3x^{2}$－2x－1 的反導函數？
+  options:
+  - label: A
+    content: $3x^{2}$－2x－1
+  - label: B
+    content: $6x^{2}$－4x－1
+  - label: C
+    content: $x^{3}$－$x^{2}$－x＋1
+  - label: D
+    content: 6x－2
+  - label: E
+    content: $\int_{1}^{x} ( 6t - 2 )dt$
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：（$3x^{2}$－2x－1）''＝6x－2
+
+    (B)╳：（$6x^{2}$－4x－1）''＝12x－4
+
+    (C)○：（$x^{3}$－$x^{2}$－x＋1）''＝$3x^{2}$－2x－1
+
+    (D)╳：（6x－2）''＝6
+
+    (E)╳：$\left( \int_{1}^{x} ( 6t - 2 )dt \right) ''$＝6x－2
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T09
+      name: 反導函數與不定積分計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設函數 f（x）＝x 與 y＝0，x＝－3 及 x＝6 所圍成的區域分別為 $R_{1}$ 及 $R_{2}$，如右圖。區域 $R_{1}$、$R_{2}$ 的面積分別為 $A_{1}$、$A_{2}$，下列敘述哪些正確？
+  options:
+  - label: A
+    content: $A_{1}$＝$\int_{0}^{-3} xdx$
+  - label: B
+    content: $A_{2}$＝$\int_{0}^{6} xdx$
+  - label: C
+    content: $A_{1}$＋$A_{2}$＝$\int_{-3}^{6} xdx$
+  - label: D
+    content: $A_{2}$＝$2A_{1}$
+  - label: E
+    content: $A_{2}$＝$4A_{1}$
+  group_stem: 說明：錯一個選項得 5 分，錯兩個選項得 2 分，錯 3 個選項以上不得分。
+  shared_asset: g2_1_3
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T05
+      name: 定積分求曲線圍成面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設函數 f（x）＝$x^{2}$ 之圖形與 y＝0，x＝0，x＝2 所圍成的區域為 S。今將區間 [ 0，2 ]分割成 n 等分，得 n 個等寬的長條，令此 n 個長條之上矩形面積和（上和）為 $U_{n}$，下矩形面積和（下和）為 $L_{n}$，則下列哪些選項正確？
+  options:
+  - label: A
+    content: $L_{2}$＝1
+  - label: B
+    content: $U_{3}$＝$\frac{112}{27}$
+  - label: C
+    content: $U_{n}$－$L_{n}$＝$\frac{8}{n}$
+  - label: D
+    content: $L_{n}\leq$S 的面積$\leqU_{n}$
+  - label: E
+    content: S 的面積為 8
+  group_stem: 說明：錯一個選項得 5 分，錯兩個選項得 2 分，錯 3 個選項以上不得分。
+  shared_asset: g2_1_3
+  answer:
+  - A
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 實係數多項式函數 f（x）在 [ 0，5 ] 上的圖形如右圖，其中 R 區域的面積為 1，且$\int_{0}^{5} f ( x )dx$＝4，下列選項哪些正確？
+  options:
+  - label: A
+    content: $\int_{0}^{2} f ( x )dx$＝1
+  - label: B
+    content: $\int_{2}^{5} f ( x )dx$＝3
+  - label: C
+    content: $\int_{0}^{5} | f ( x ) |dx$＝6
+  - label: D
+    content: $\int_{0}^{2} ( -3 f ( x ) )dx$＝3
+  - label: E
+    content: $\int_{0}^{5} ( f ( x )+1 )dx$＝9
+  group_stem: 說明：錯一個選項得 5 分，錯兩個選項得 2 分，錯 3 個選項以上不得分。
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_110_台北_松山_數學_數甲_g12s1e3/s2_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 460.45
+      - 69.65
+      - 564.25
+      - 151.7
+  shared_asset: g2_1_3
+  answer:
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T03
+      name: 分段與絕對值函數定積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 設 f（x）為一實係數多項式，若 f（x）＝$x^{2}$＋2x－$\int_{0}^{1} f ( x )dx$，試求 f(1)＝＿＿＿＿。
+  answer:
+  - $\frac{7}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設$\int_{0}^{1} f ( x )dx$＝k，由 f（x）＝$x^{2}$＋2x－k 代入得
+
+    $\int_{0}^{1} ( x^{2}+ 2x -k )dx$＝k
+
+    $\Rightarrow\left. \left( \frac{1}{3}x^{3}+x^{2}-kx \right) \right| _{0}^{1}$＝$\frac{1}{3}$＋1－k＝k$\Rightarrow$k＝$\frac{2}{3}$
+
+    得 f（x）＝$x^{2}$＋2x－$\frac{2}{3}$，故 f(1)＝$1^{2}$＋2×1－$\frac{2}{3}$＝$\frac{7}{3}$'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T02
+      name: 多項式定積分與待定係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知 f（x）與 g（x）皆為實係數多項式函數，且$\int_{1}^{5} f ( x )dx$＝8，$\int_{5}^{7} f ( x )dx$＝－5，$\int_{1}^{7} g ( x )dx$＝2，試求$\int_{1}^{7} 〔 2 f ( x )-3g ( x ) 〕dx$＝＿＿＿＿。
+  answer:
+  - '0'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int_{1}^{7} 〔 2f ( x )- 3g ( x ) 〕dx$
+
+    ＝$2\int_{1}^{7} f ( x )dx$－$3\int_{1}^{7} g ( x )dx$
+
+    ＝$2 \left( \int_{1}^{5} f ( x )dx +\int_{5}^{7} f ( x )dx \right)$－$3\int_{1}^{7} g ( x )dx$
+
+    ＝2〔8＋（－5）〕－3×2＝0'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T02
+      name: 多項式定積分與待定係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 求$\lim_{n \rightarrow \infty} \frac{1^{4}+3^{4}+5^{4}+\cdots \cdots +( 2n - 1 )^{4}}{n^{5}}$＝＿＿＿＿。
+  answer:
+  - $\frac{16}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{1^{4}+ 3^{4}+ 5^{4}+\cdots \cdots +( 2n - 1 )^{4}}{n^{5}}$
+
+    ＝$\frac{1^{4}+ 2^{4}+ 3^{4}+\cdots \cdots +( 2n )^{4}}{n^{5}}$－$\frac{2^{4}+ 4^{4}+\cdots \cdots +( 2n )^{4}}{n^{5}}$
+
+    ＝$\frac{1}{n} \left[ \left( \frac{1}{n} \right) ^{4}+ \left( \frac{2}{n} \right) ^{4}+\cdots \cdots + \left( \frac{2n}{n} \right) ^{4} \right]$－$\frac{2^{4}}{n} \left[ \left( \frac{1}{n} \right) ^{4}+ \left( \frac{2}{n} \right) ^{4}+\cdots \cdots + \left( \frac{n}{n} \right) ^{4} \right]$
+
+    故$\lim_{n \rightarrow \infty} \frac{1^{4}+3^{4}+5^{4}+\cdots \cdots +( 2n - 1 )^{4}}{n^{5}}$＝$\int_{0}^{2} x^{4}dx$－$2^{4}\int_{0}^{1} x^{4}dx$
+
+    ＝$\left. \left( \frac{1}{5}x^{5} \right) \right| _{0}^{2}$－$\left. 16 \left( \frac{1}{5}x^{5} \right) \right| _{0}^{1}$＝$\frac{1}{5}$×$2^{5}$－$\frac{16}{5}$×$1^{5}$
+
+    ＝$\frac{1}{5}$（32－16）＝$\frac{16}{5}$'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 求不定積分$\int ( 3x^{2}- 2x + 1 )dx$＝＿＿＿＿。
+  answer:
+  - $x^{3}$－$x^{2}$＋x＋C，C 為任意常數
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\int ( 3x^{2}- 2x + 1 )dx$＝$x^{3}$－$x^{2}$＋x＋C，C 為任意常數
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T09
+      name: 反導函數與不定積分計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 求定積分$\int_{0}^{3} | x^{2}- 3x + 2 |dx$＝＿＿＿＿。
+  answer:
+  - $\frac{11}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x^{2}$－3x＋2＝（x－1）（x－2）
+
+    當 x＜1 或 x＞2 時，$x^{2}$－3x＋2＞0
+
+    當 1＜x＜2 時，$x^{2}$－3x＋2＜0
+
+    ∴$\int_{0}^{3} | x^{2}- 3x + 2 |dx$＝$\int_{0}^{1} ( x^{2}- 3x + 2 )dx$＋$\int_{1}^{2} 〔 -( x^{2}- 3x + 2 ) 〕dx$＋$\int_{2}^{3} ( x^{2}- 3x + 2 )dx$
+
+    ＝$\left. \left( \frac{1}{3}x^{3}-\frac{3}{2}x^{2}+2x \right) \right| _{0}^{1}$－$\left. \left( \frac{1}{3}x^{3}-\frac{3}{2}x^{2}+2x \right) \right| _{1}^{2}$＋$\left. \left( \frac{1}{3}x^{3}-\frac{3}{2}x^{2}+2x \right) \right| _{2}^{3}$
+
+    ＝$\left( \frac{1}{3}-\frac{3}{2}+ 2 \right)$－$\left[ \frac{1}{3} ( 2^{3}- 1^{3} )-\frac{3}{2} ( 2^{2}- 1^{2} )+ 2 ( 2 - 1 ) \right]$ ＋$\left[ \frac{1}{3} ( 3^{3}- 2^{3} )-\frac{3}{2} ( 3^{2}- 2^{2} )+ 2 ( 3 - 2 ) \right]$
+
+    ＝$\frac{1}{3}$（1－7＋19）－$\frac{3}{2}$（1－3＋5）＋2（1－1＋1）
+
+    ＝$\frac{13}{3}$－$\frac{9}{2}$＋2＝$\frac{11}{6}$'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T03
+      name: 分段與絕對值函數定積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 函數 f（x）＝$x^{3}$－$2x^{2}$＋4x＋1 與 g（x）＝$x^{2}$＋2x＋1 的圖形所圍區域的面積為＿＿＿＿。
+  answer:
+  - $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x^{3}$－$2x^{2}$＋4x＋1＝$x^{2}$＋2x＋1$\Rightarrowx^{3}$－$3x^{2}$＋2x＝0$\Rightarrow$x（x－1）（x－2）＝0$\Rightarrow$x＝0 或 1 或 2
+
+    ①$\int_{0}^{1} 〔 ( x^{3}- 2x^{2}+ 4x + 1 )-( x^{2}+ 2x + 1 ) 〕dx$
+
+    ＝$\int_{0}^{1} ( x^{3}- 3x^{2}+ 2x )dx$＝$\left. \left( \frac{1}{4}x^{4}-x^{3}+x^{2} \right) \right| _{0}^{1}$＝$\frac{1}{4}$－1＋1＝$\frac{1}{4}$
+
+    ②$\int_{1}^{2} 〔 ( x^{3}- 2x^{2}+ 4x + 1 )-( x^{2}+ 2x + 1 ) 〕dx$
+
+    ＝$\int_{1}^{2} ( x^{3}- 3x^{2}+ 2x )dx$＝$\left. \left( \frac{1}{4}x^{4}-x^{3}+x^{2} \right) \right| _{1}^{2}$
+
+    ＝$\frac{1}{4}$（$2^{4}$－$1^{4}$）－（$2^{3}$－$1^{3}$）＋（$2^{2}$－$1^{2}$）＝$\frac{1}{4}$×15－7＋3＝$-\frac{1}{4}$
+
+    故所求面積為$\left| \frac{1}{4} \right|$＋$\left| -\frac{1}{4} \right|$＝$\frac{1}{2}$'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T05
+      name: 定積分求曲線圍成面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 求 y＝$x^{2}$＋2x 的圖形介於 x＝0，x＝1 與 x 軸所圍成的區域，繞 x 軸旋轉的旋轉體體積為 ＿＿＿＿。
+  answer:
+  - $\frac{38\pi}{15}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求旋轉體體積為
+
+    $\int_{0}^{1} \pi y^{2}dx$＝$\int_{0}^{1} \pi ( x^{2}+2x )^{2} dx$＝$\pi \int_{0}^{1} ( x^{4}+4x^{3}+4x^{2} )dx$
+
+    ＝$\left. \pi \left( \frac{1}{5}x^{5}+x^{4}+\frac{4}{3}x^{3} \right) \right| _{0}^{1}$＝$\pi \left( \frac{1}{5}+1+\frac{4}{3} \right)$＝$\frac{38\pi}{15}$'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T07
+      name: 旋轉體與截面立體體積積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 善於利用時間的<u>祥祥</u>於凌晨 2 點開車在看不到終點的公路起點一路飄向北方，<u>祥祥</u> t 小時後的車速為 v（t）＝－$t^{3}$＋$2t^{2}$＋40t（公里／小時），<u>宏宏</u>於凌晨 3 點一邊開車一邊打哈欠從相同起點沿著相同路徑以等速度火力全開追上<u>祥祥</u>，請問<u>宏宏</u>若要在凌晨 6 點前追上<u>祥祥</u>，車速至少應該為＿＿＿＿公里／小時。（無條件進位至整數，才不可能錯過<u>祥祥</u>）
+  answer:
+  - '100'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '<u>祥祥</u>由凌晨 2 點到凌晨 6 點的行駛距離為
+
+    $\int_{0}^{4} ( -t^{3}+ 2t^{2}+ 40t )dt$
+
+    ＝$\left. \left( -\frac{1}{4}t^{4}+\frac{2}{3}t^{3}+ 20t^{2} \right) \right| _{0}^{4}$＝$-\frac{1}{4}$×$4^{4}$＋$\frac{2}{3}$×$4^{3}$＋20×$4^{2}$＝－64＋$\frac{128}{3}$＋320＝$\frac{896}{3}$
+
+    <u>宏宏</u>由凌晨 3 點到凌晨 6 點等速追上$\Rightarrow$速度為$\frac{896}{3}$÷3＝$\frac{896}{9}$＝99.……
+
+    故車速至少應該為 100 公里／小時'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T08
+      name: 定積分求位移與運動學應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 承上題，若速度為負代表反方向行駛，則<u>祥祥</u>在＿＿＿＿時可回到公路的起點。（以十二地支回答，十二地支：子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥）
+  assets:
+  - key: s3_9_f1
+    kind: figure
+    file: doc_110_台北_松山_數學_數甲_g12s1e3/s3_9_f1.png
+    crop:
+      page: 3
+      rect:
+      - 249.1
+      - 48.6
+      - 369.0
+      - 168.5
+  answer:
+  - 午
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 x 小時後可回到公路的起點
+
+    S＝$\int_{0}^{x} ( -t^{3}+2t^{2}+ 40t )dt$＝$\left. \left( -\frac{1}{4}t^{4}+\frac{2}{3}t^{3}+ 20t^{2} \right) \right| _{0}^{x}$
+
+    ＝$-\frac{1}{4}x^{4}$＋$\frac{2}{3}x^{3}$＋$20x^{2}$＝$\frac{1}{12}x^{2}$（－$3x^{2}$＋8x＋240）
+
+    x＝10 時，S＝$\frac{1}{12}$×100（－3×$10^{2}$＋8×10＋240）＝$\frac{25}{3}$（－300＋80＋240）＝$\frac{500}{3}$＞0
+
+    x＝11 時，S＝$\frac{1}{12}$×121（－3×$11^{2}$＋8×11＋240）＝$\frac{121}{12}$（－363＋88＋240）＝$-\frac{4235}{12}$＜0
+
+    ∴在 12 時～13 時之間，即午時可回到公路起點'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T08
+      name: 定積分求位移與運動學應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e3_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '利用「積分的方法」證明：
+
+    底面為邊長 a 的正方形，高度為 h 的四角錐（如右圖），體積為$\frac{1}{3}a^{2}h$。
+
+    證：'
+  assets:
+  - key: s4_1_f1
+    kind: figure
+    file: doc_110_台北_松山_數學_數甲_g12s1e3/s4_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 482.95
+      - 198.15
+      - 564.25
+      - 294.45
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T07
+      name: 旋轉體與截面立體體積積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+shared_assets:
+- key: g2_1_3
+  label: 題組附圖
+  kind: figure
+  file: doc_110_台北_松山_數學_數甲_g12s1e3/g2_1_3_f1.png
+  used_by:
+  - doc_110_台北_松山_數學_數甲_g12s1e3_s2_1
+  - doc_110_台北_松山_數學_數甲_g12s1e3_s2_2
+  - doc_110_台北_松山_數學_數甲_g12s1e3_s2_3
+  crop:
+    page: 1
+    rect:
+    - 462.7
+    - 447.75
+    - 564.25
+    - 542.15

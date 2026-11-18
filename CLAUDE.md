@@ -14,7 +14,7 @@
 ## 你是要「把考古題轉成題庫格式」交回來嗎？
 
 **讀 `docs/QUESTION_FORMAT.md`**：一份原卷一個 YAML＋附圖 PNG，欄位、文字寫法（LaTeX、畫線處 `<u>`、題組）、
-會被品管剔除的情況都在裡面。交件前跑 `python scripts/check_bank_yaml.py <bank 資料夾> --assets <附圖資料夾> --existing` 自我檢查。
+會被品管剔除的情況都在裡面；**高中卷**另讀 `docs/HIGH_SCHOOL_HANDOFF.md`。交件前跑 `python scripts/check_bank_yaml.py <bank 資料夾> --assets <附圖資料夾> --existing` 自我檢查。
 
 ## 規則
 

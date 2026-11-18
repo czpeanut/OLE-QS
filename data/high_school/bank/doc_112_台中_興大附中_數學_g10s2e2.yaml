@@ -1,0 +1,522 @@
+document:
+  id: doc_112_台中_興大附中_數學_g10s2e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 112學年度第2學期第2次定期評量 高一數學科試題
+  exam_name: 112學年度第2學期第2次定期評量
+  source_file: 高一/數學/112/2-2/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，請選出最適合的選項，全對才給分，共 12 分)
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，每題至少有一個選項是正確的。所有選項均答對者得 8 分；錯一個選項得 4.8 分；錯兩個選項得 1.6 分；所有選項均未作答或答錯多於兩個選項者，該題以 0 分計算，共 24 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題完全答對給 6 分，答錯不倒扣，未完全答對不給分，共 54 分）
+    count: 6
+  - ord: 4
+    name: 四、混合題（第(1)小題為單選題，不用書寫計算過程，第(2)、(3)小題為非選擇題，作答時必須寫出計算過程或理由，否則將酌予扣分，只寫答案不予計分，共 10 分）
+    count: 1
+questions:
+- id: doc_112_台中_興大附中_數學_g10s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 某球類比賽中，甲、乙兩人進入決賽，在 7 局中先贏得 4 局者就獲勝，現已賽畢三局，甲贏得 2 局，乙贏得 1 局，則往後共有多少種比賽情形可以分出勝負？（每場比賽無和局）
+  options:
+  - label: A
+    content: 6 種
+  - label: B
+    content: 8 種
+  - label: C
+    content: 10 種
+  - label: D
+    content: 12 種
+  - label: E
+    content: 14 種
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T09
+      name: 狀態轉移與賽局路徑樹狀圖
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 臺灣自用大客車的牌照號碼，第一位為大寫英文字母 P，第二、三位為大寫英文字母，末三位為數字，例如 PAB-023。若最後一位數字不用 4，而 4 也不能連續出現，例如末三位數字為 444、144、442 皆不能作為牌照號碼，且末三位數字沒有 000 這個號碼，則臺灣可能的自用大客車牌照號碼有多少個？
+  options:
+  - label: A
+    content: 26×26×999 個
+  - label: B
+    content: 26×26×909 個
+  - label: C
+    content: 26×26×900 個
+  - label: D
+    content: 26×26×899 個
+  - label: E
+    content: 26×26×890 個
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T06
+      name: 重複選取與乘方計數模型
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: '小明要設定一組讓班上同學進入線上課業討論室的密碼，已知密碼設定須滿足以下三個條件：
+
+    (1) 只能使用數字 1、2、3、4、5、6、7、8。
+
+    (2) 密碼須為四位數以上，例如 5321、76543 等。
+
+    (3) 數字須由左而右越來越小。
+
+    請問設定密碼的方式有幾種？'
+  options:
+  - label: A
+    content: 163 種
+  - label: B
+    content: 219 種
+  - label: C
+    content: 1680 種
+  - label: D
+    content: $8^{4}$ 種
+  - label: E
+    content: $4^{8}$ 種
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '方法數為 n（四位數）＋n（五位數）＋……＋n（八位數）
+
+    ＝$C_{4}^{8}$＋$C_{5}^{8}$＋$C_{6}^{8}$＋$C_{7}^{8}$＋$C_{8}^{8}$（選好數字後，直接由左而右越來越小）
+
+    ＝70＋56＋28＋8＋1＝163（種）
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T08
+      name: 選取即定序與遞增減數列計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 從高一學生中，抽出 80 人考國文、英文、數學。國文及格者有 40 人，英文及格者有 35 人，數學及格者有 37 人；國文、英文都不及格者有 24 人，英文、數學都不及格者有 22 人，國文、數學都不及格者有 20 人，三科至少一科不及格者有 71 人。下列哪些選項正確？
+  options:
+  - label: A
+    content: 英文不及格者有 40 人
+  - label: B
+    content: 三科都不及格者有 9 人
+  - label: C
+    content: 國文與英文都不及格，但數學及格者有 20 人
+  - label: D
+    content: 至少兩科不及格者有 48 人
+  - label: E
+    content: 三科皆及格者有 9 人
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T02
+      name: 排容原理與正因數倍數計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 一副撲克牌去掉鬼牌共有 52 張（4 種花色，每種花色各有 A、2、3、……、10、 J、Q、K 13 張牌），任取 5 張牌，不計順序，下列哪些選項正確？
+  options:
+  - label: A
+    content: 任取 5 張牌的方式有 52×51×50×49×48 種
+  - label: B
+    content: 形如 A2589（5 張牌的數字皆不同）的牌型有$C_{5}^{13}$×$4^{5}$ 種
+  - label: C
+    content: 形如 AA888（3 張牌的數字相同，另兩張牌的數字相同）的牌型有$C_{2}^{13}$×2×$C_{3}^{4}$×$C_{2}^{4}$種
+  - label: D
+    content: 形如 AAAA8（4 張牌的數字相同）的牌型有$C_{2}^{13}$×$C_{1}^{4}$種
+  - label: E
+    content: 形如 AAA89（3 張牌的數字相同，另兩張牌的數字不同）的牌型有 $C_{3}^{13}$×2×$C_{3}^{4}$×$C_{1}^{4}$×$C_{1}^{4}$種
+  answer:
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T09
+      name: 撲克牌型與成雙襪鞋配對計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s2e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 由 0、1、2、3、4、5 這六個數字中，任選三個相異數作三位數，則下列哪些選項正確？
+  options:
+  - label: A
+    content: 共有 100 個不同的三位數
+  - label: B
+    content: 將這些三位數以由小而大之順序排列時，第 50 個數為 320
+  - label: C
+    content: 共有 60 個不同的偶數
+  - label: D
+    content: 3 的倍數共有 40 個
+  - label: E
+    content: 此三位數滿足百位＜十位＜個位者共有 20 個
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T02
+      name: 同物排列與重複數字字典序
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設 a＞0，若$\left( ax^{3}-\frac{1}{2x^{2}} \right) ^{6}$展開式中，$\frac{1}{x^{2}}$項的係數為 15，則 $x^{3}$ 項的係數為＿＿＿＿。
+  group_stem: '2.甲、乙、丙、丁、戊、己、庚七人排成一列，甲在乙、丙之右方，但甲、乙或甲、丙不一定相鄰，則排列方式有＿＿＿＿種。
+
+    3.有 8 人參加校內歌唱比賽，依 3 人、3 人、2 人分成三組進行分組初賽。若惠惠、悠悠兩位好友必須同一組，則分組方式有＿＿＿＿種。'
+  answer:
+  - －160
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '展開後一般項為$C_{k}^{6}$（$ax^{3}$）$^{6－k}\left( -\frac{1}{2x^{2}} \right) ^{k}$＝$C_{k}^{6}a^{6－k}\left( -\frac{1}{2} \right) ^{k}x^{18－5k}$
+
+    若 18－5k＝－2，則 k＝4
+
+    k＝4 代入得$C_{4}^{6}a^{2}\left( -\frac{1}{2} \right) ^{4}$＝15 ⇒ $\frac{15}{16}a^{2}$＝15 ⇒ a＝±4（∵a＞0 ∴負不合）
+
+    若 18－5k＝3，則 k＝3
+
+    k＝3 代入得$C_{3}^{6}4^{3}\left( -\frac{1}{2} \right) ^{3}$＝20×64×$\left( -\frac{1}{8} \right)$＝－160，故 $x^{3}$ 項的係數為－160'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T03
+      name: 二項式定理係數與近似估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: （1.03）$^{5}$ 之近似值為＿＿＿＿。（四捨五入至小數點後第三位）
+  group_stem: '2.甲、乙、丙、丁、戊、己、庚七人排成一列，甲在乙、丙之右方，但甲、乙或甲、丙不一定相鄰，則排列方式有＿＿＿＿種。
+
+    3.有 8 人參加校內歌唱比賽，依 3 人、3 人、2 人分成三組進行分組初賽。若惠惠、悠悠兩位好友必須同一組，則分組方式有＿＿＿＿種。'
+  answer:
+  - '1.159'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（1.03）$^{5}$＝（1＋0.03）$^{5}$
+
+    ＝$C_{0}^{5}1^{5}$＋$C_{1}^{5}1^{4}$（0.03）$^{1}$＋$C_{2}^{5}1^{3}$（0.03）$^{2}$＋$C_{3}^{5}1^{2}$（0.03）$^{3}$＋$C_{4}^{5}1^{1}$（0.03）$^{4}$ ＋$C_{5}^{5}$（0.03）$^{5}$
+
+    $\approx$1＋0.15＋0.009＋0.00027
+
+    ＝1.15927
+
+    $\approx$1.159'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T03
+      name: 二項式定理係數與近似估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_台中_興大附中_數學_g10s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 袋中有 25 個球，分別編號為 1、2、3、……、25，從袋中取出 3 個球，則 3 個球編號的乘積為 33 的倍數之取法有＿＿＿＿種。
+  group_stem: '2.甲、乙、丙、丁、戊、己、庚七人排成一列，甲在乙、丙之右方，但甲、乙或甲、丙不一定相鄰，則排列方式有＿＿＿＿種。
+
+    3.有 8 人參加校內歌唱比賽，依 3 人、3 人、2 人分成三組進行分組初賽。若惠惠、悠悠兩位好友必須同一組，則分組方式有＿＿＿＿種。'
+  answer:
+  - '304'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 S＝｛ 1，2，3，……，25 ｝，且集合 A、B、C 均為 S 的子集
+
+    其中 A＝｛ 3，6，9，……，24 ｝的元素為 3 的倍數，n(A)＝8
+
+    B＝｛ 11，22 ｝的元素為 11 的倍數，n(B)＝2
+
+    C＝A'' ∩ B''＝S－（A ∪ B）的元素為不為 3 的倍數且不為 11 的倍數， n(C)＝25－8－2＝15
+
+    所求為 n（A 挑 2 個且 B 挑 1 個）＋n（A 挑 1 個且 B 挑 2 個）＋n（A，B，C 各挑 1 個）
+
+    ＝$C_{2}^{8}$×$C_{1}^{2}$＋$C_{1}^{8}$×$C_{2}^{2}$＋$C_{1}^{8}$×$C_{1}^{2}$×$C_{1}^{15}$
+
+    ＝56＋8＋240＝304（種）'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T01
+      name: 組合選取與分組分堆分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 五位明星球員甲、乙、丙、丁、戊聚在一起。甲球員提議每人拿出一件自己的簽名球衣互相交換（每人只取一件），若每人都不能拿到自己的球衣，且甲一定選乙的球衣、乙一定不選丙的球衣，則交換方式共有＿＿＿＿種。
+  group_stem: '2.甲、乙、丙、丁、戊、己、庚七人排成一列，甲在乙、丙之右方，但甲、乙或甲、丙不一定相鄰，則排列方式有＿＿＿＿種。
+
+    3.有 8 人參加校內歌唱比賽，依 3 人、3 人、2 人分成三組進行分組初賽。若惠惠、悠悠兩位好友必須同一組，則分組方式有＿＿＿＿種。'
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '依甲、乙、丙、丁、戊的順序列舉所有可能如下：
+
+    ①乙甲丁戊丙
+
+    ②乙甲戊丙丁
+
+    ③乙丁甲戊丙
+
+    ④乙丁戊甲丙
+
+    ⑤乙丁戊丙甲
+
+    ⑥乙戊甲丙丁
+
+    ⑦乙戊丁甲丙
+
+    ⑧乙戊丁丙甲
+
+    共 8 種'
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T04
+      name: 定序與條件排班特殊排列
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s2e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: '甲、乙、丙三人到某餐廳點了豪華分享套餐，其餐點為 1 份安格斯嫩肩牛排、2 份沙朗牛排、1 份胡椒風味義大利圓麵、1 份鮮蝦焗飯。已知該餐廳的上餐規則如下：
+
+    (1) 每次只上 1 份餐點。
+
+    (2) 同樣餐點不得連續上餐。
+
+    (3) 安格斯嫩肩牛排不得最後上餐。
+
+    則此 5 份餐點共有＿＿＿＿種不同的上餐順序。'
+  group_stem: '2.甲、乙、丙、丁、戊、己、庚七人排成一列，甲在乙、丙之右方，但甲、乙或甲、丙不一定相鄰，則排列方式有＿＿＿＿種。
+
+    3.有 8 人參加校內歌唱比賽，依 3 人、3 人、2 人分成三組進行分組初賽。若惠惠、悠悠兩位好友必須同一組，則分組方式有＿＿＿＿種。'
+  answer:
+  - '30'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T02
+      name: 同物排列與重複數字字典序
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s2e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 小明每餐都有吃水果的習慣，目前冰箱中有 10 顆水果，分別為 3 顆蘋果、4 顆芭樂、2 顆蓮霧、1 顆柳丁，他決定今天的早、中、晚餐各吃一顆水果，且從冰箱裡現有的水果中挑選，若同種水果視為相同物，則他今天三餐水果有＿＿＿＿種分配方式。
+  group_stem: '2.甲、乙、丙、丁、戊、己、庚七人排成一列，甲在乙、丙之右方，但甲、乙或甲、丙不一定相鄰，則排列方式有＿＿＿＿種。
+
+    3.有 8 人參加校內歌唱比賽，依 3 人、3 人、2 人分成三組進行分組初賽。若惠惠、悠悠兩位好友必須同一組，則分組方式有＿＿＿＿種。'
+  answer:
+  - '53'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求為 n（三同）＋n（二同一異）＋n（三異）
+
+    ＝$C_{1}^{2}$×$\frac{3 ！}{3 ！}$＋$C_{1}^{3}$×$C_{1}^{3}$×$\frac{3 ！}{2 ！}$＋$C_{3}^{4}$×3！
+
+    ＝2＋27＋24
+
+    ＝53（種）'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T01
+      name: 組合選取與分組分堆分配
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s2e2_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 3
+  stem: '試求下列的方法數：
+
+    (1) 將 7 本不同的書，依 3 本、2 本、2 本分成三堆，有幾種分法？（單選題，2 分）
+
+    (2) 將 7 本相同的書，全部放到 3 個相同的箱子裡，可以有空箱子，有幾種放法？（非選擇題，3 分）
+
+    (3) 將 7 本不同的書，分成三堆，有幾種分法？（非選擇題，5 分）'
+  options:
+  - label: A
+    content: 3 種
+  - label: B
+    content: 6 種
+  - label: C
+    content: 35 種
+  - label: D
+    content: 105 種
+  - label: E
+    content: 210 種
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T01
+      name: 組合選取與分組分堆分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -1,0 +1,622 @@
+document:
+  id: doc_110_台北_明倫_數學_g10s2e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 3
+  city: 台北
+  school_short: 明倫
+  school: 臺北市立明倫高級中學
+  title: 臺北市立明倫高級中學 110學年度第2學期第3次定期評量 高一數學科試題
+  exam_name: 110學年度第2學期第3次定期評量
+  source_file: 高一/數學/110/2-3/台北/明倫.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題：
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題：
+    count: 2
+  - ord: 3
+    name: 三、填充題：
+    count: 9
+  - ord: 4
+    name: 四、混合題：
+    count: 3
+questions:
+- id: doc_110_台北_明倫_數學_g10s2e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 如右圖，有5筆資料，試問去掉哪一筆資料之後，剩下的4筆資料相關係數最大？
+  options:
+  - label: A
+    content: A
+  - label: B
+    content: B
+  - label: C
+    content: C
+  - label: D
+    content: D
+  - label: E
+    content: E
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_110_台北_明倫_數學_g10s2e3/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 502.8
+      - 97.8
+      - 580.7
+      - 184.4
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 在散布圖上的點越靠近一條斜率為正的直線，則相關係數越大，所以去掉D點，剩下的4筆資料相關係數最大。故選(D)。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T01
+      name: 散布圖判讀與相關係數估計
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 若點 ( cos$\theta$, tan$\theta$) 在第二象限，則$\theta$在第幾象限？
+  options:
+  - label: A
+    content: 一
+  - label: B
+    content: 二
+  - label: C
+    content: 三
+  - label: D
+    content: 四
+  - label: E
+    content: 無法判斷
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 因為點 ( cos$\theta$, tan$\theta$) 在第二象限，所以$\begin{cases}\cos \theta <0 \\ \tan \theta >0\end{cases}$⇒$\theta$為第三象限角。故選(C)。
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T02
+      name: 象限角與對稱標準位置角求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_明倫_數學_g10s2e3_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 3 sin 450°×tan180°＋5 sin 270°×cos 180°＝？
+  options:
+  - label: A
+    content: '2'
+  - label: B
+    content: '3'
+  - label: C
+    content: '5'
+  - label: D
+    content: '8'
+  - label: E
+    content: －5
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 3 sin 450°×tan180°＋5 sin 270°×cos 180°＝3×1×0＋5×(－1)×(－1 )＝5。故選(C)。
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T01
+      name: 廣義角誘導公式化簡與比大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_明倫_數學_g10s2e3_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: △ABC中，已知sin A：sin B：sin C＝2：3：4，則△ABC為下列何種三角形？
+  options:
+  - label: A
+    content: 直角三角形
+  - label: B
+    content: 鈍角三角形
+  - label: C
+    content: 銳角三角形
+  - label: D
+    content: 等腰三角形
+  - label: E
+    content: 無法判別
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 由正弦定理可知$\overline{BC}$：$\overline{AC}$：$\overline{AB}$＝sin A：sin B：sin C＝2：3：4，設$\overline{BC}$＝2k，$\overline{AC}$＝3k，$\overline{AB}$＝4k， 由餘弦定理可知cos C＝$\frac{(2k)^{2}+(3k)^{2}-(4k)^{2}}{2\times 2k\times 3k}$＜0，所以∠C為鈍角，即△ABC為鈍角三角形。故選(B)。
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T02
+      name: 餘弦定理求邊長角度與摺痕
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列有關△ABC的敘述何者正確？( 其中$\overline{BC}$＝a，$\overline{AC}$＝b，$\overline{AB}$＝c )
+  options:
+  - label: A
+    content: 若∠A：∠B：∠C＝1：2：3，則a：b：c＝1：2：3
+  - label: B
+    content: 若$sin^{2 }$A＋$sin^{2 }$B＜$sin^{2 }$C，則△ABC為鈍角三角形
+  - label: C
+    content: 若cos A＜0，則△ABC為鈍角三角形
+  - label: D
+    content: tan ( B＋C )＝tan A
+  - label: E
+    content: cos ($\frac{B+C}{2}$)＝sin$\frac{A}{2}$
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ×：若∠A：∠B：∠C＝1：2：3，則∠A＝30°，∠B＝60°，∠C＝90° ⇒ a：b：c＝$sin^{ }$A：$sin^{ }$B：$sin^{ }$C＝$\frac{1}{2}$：$\frac{\sqrt{3}}{2}$：1＝1：$\sqrt{3}$：2。 (B) ○：若$sin^{2 }$A＋$sin^{2 }$B＜$sin^{2 }$C，則$a^{2}$＋$b^{2}$＜$c^{2}$ ⇒∠C為鈍角，即△ABC為鈍角三角形。 (C) ○：若cos A＜0，∠A為鈍角，即△ABC為鈍角三角形。 (D) ×：tan ( B＋C )＝tan ( 180°－A )＝－tan A。 (E) ○：cos ($\frac{B+C}{2}$)＝cos ($\frac{180^{\circ}-A}{2}$)＝cos ( 90°－$\frac{A}{2}$)＝sin$\frac{A}{2}$。 故選(B)(C)(E)。
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T01
+      name: 正弦定理與圓內接四邊形求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: <u>英國</u>有一項特別的研究，該研究指出身高愈高的人，感染新冠肺炎的機率愈高，<u>小玉</u>覺得研究結果很有趣，且已知免疫力和體溫有很大的關，便著手測量身邊的人的身高 ( X ) 及體溫 ( Y )，測量後得到資料：( 155 , 37.2 ) , ( 160 , 37 ) , ( 165 , 36.6 ) , ( 170 , 36.6 ) , ( 176 , 36.3 )，其中測量的單位分別是公分和攝氏溫度。若這5筆資料的相關係數為r，迴歸直線的斜率為m。現在如果將公分轉換成英吋 ( 1公分＝0.3937英吋 )，攝氏轉換成華氏 ( x℃＝($\frac{9}{5}$x＋32 )℉)，若單位換算後的相關係數為r'，迴歸直線的斜率為m'，則下列選項哪些正確？
+  options:
+  - label: A
+    content: rm＞0
+  - label: B
+    content: r＞0
+  - label: C
+    content: r＝r'
+  - label: D
+    content: m'＞0
+  - label: E
+    content: m'＞m
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_110_台北_明倫_數學_g10s2e3/s2_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 577.2
+      - 722.05
+      - 668.75
+      - 816.1
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設轉換後的資料為 ( X' , Y' )，其中X'＝0.3937X，Y'＝$\frac{9}{5}$Y＋32，可知 r'＝r＜0，m＝$\frac{r\sigma _{y}}{\sigma _{x}}$＜0 ⇒ m'＝$\frac{r'\sigma _{y}'}{\sigma _{x}'}$＝$\frac{r\times (\frac{9}{5}\sigma _{y})}{0.3937\sigma _{x}}$＝$\frac{\frac{9}{5}}{0.3937}$m＜m＜0。 故選(A)(C)。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T03
+      name: 線性變換對相關與迴歸影響
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_明倫_數學_g10s2e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 1
+  stem: △ABC的三邊長為3、8、9，求△ABC的面積為＿＿＿＿。
+  answer:
+  - 2$\sqrt{35}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: S＝$\frac{3+8+9}{2}$＝10，由海龍公式可得△ABC的面積＝$\sqrt{10\times 7\times 2\times 1}$＝2$\sqrt{35}$。
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T03
+      name: 海龍公式面積與角平分線長
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_明倫_數學_g10s2e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 1
+  stem: 如右圖，OABC為正方形且A ($\sqrt{3}$, 1 ) ( 直角坐標 )，B在第一象限，則B點的極坐標為＿＿＿＿。 ( 角度請表示在0°≤θ＜360° )
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_110_台北_明倫_數學_g10s2e3/s3_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 577.2
+      - 790.05
+      - 662.55
+      - 881.6
+  answer:
+  - '[2$\sqrt{2}$, 75°]'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知$\overline{OA}$＝$\sqrt{(\sqrt{3})^{2}+1^{2}}$＝2，且$\begin{cases}\cos 30^{\circ}=\frac{\sqrt{3}}{2} \\ \sin 30^{\circ}=\frac{1}{2}\end{cases}$，又$\overline{OB}$＝$\sqrt{2}\overline{OA}$＝2$\sqrt{2}$，∠AOB＝45°，所以B點的極坐標為[2$\sqrt{2}$, 75°]。
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T03
+      name: 極坐標與直角坐標互換及面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 1
+  stem: 設$\theta$為銳角，已知sin$\theta$＋cos$\theta$＝$\frac{5}{3}$，求tan$\theta$＋$\frac{1}{\tan \theta}$＝＿＿＿＿。
+  answer:
+  - $\frac{9}{8}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ( sin$\theta$＋cos$\theta$)$^{2}$＝1＋2 sin$\theta$cos$\theta$＝$\frac{25}{9}$⇒ sin$\theta$cos$\theta$＝$\frac{8}{9}$，故tan$\theta$＋$\frac{1}{\tan \theta}$＝$\frac{\sin \theta}{\cos \theta}$＋$\frac{\cos \theta}{\sin \theta}$＝$\frac{\sin ^{2}\theta +\cos ^{2}\theta}{\sin \theta \cos \theta}$＝$\frac{1}{\frac{8}{9}}$＝$\frac{9}{8}$。
+  tags:
+    unit:
+      code: MA-2-4-1
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 直角三角形的三角比
+      std: true
+    textbook: 數學2（必修） 直角三角形的三角比
+    pattern:
+      key: MA-2-4-1:T02
+      name: 銳角三角比恆等式與對稱求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 1
+  stem: 有4筆二維數據，如下表。若y對x的迴歸直線方程式為y＝x＋5，則 ( m , n )＝＿＿＿＿。
+  assets:
+  - key: s3_5_f1
+    kind: figure
+    file: doc_110_台北_明倫_數學_g10s2e3/s3_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 55.0
+      - 884.75
+      - 204.3
+      - 929.15
+  answer:
+  - ( 18 , 6 )
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T04
+      name: 迴歸直線過平均點與殘差性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 1
+  stem: 設直線$L_{1}$：x＋y－2＝0與$L_{2}$：ax－2y＝7兩直線的夾角為15°，則a＝＿＿＿＿。( 兩解 )
+  answer:
+  - －2$\sqrt{3}$或－$\frac{2\sqrt{3}}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T06
+      name: 斜率與直線傾斜角夾角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 1
+  stem: 若sin 2022°＝k，請用k表示tan 132°＝＿＿＿＿。
+  answer:
+  - $\frac{\sqrt{1-k^{2}}}{k}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T01
+      name: 廣義角誘導公式化簡與比大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 某項調查學生10人，記錄學期總成績與每週運動時數，如下表所示： 試求出學期總成績與每週運動時數的相關係數＿＿＿＿。
+  assets:
+  - key: s3_8_f1
+    kind: figure
+    file: doc_110_台北_明倫_數學_g10s2e3/s3_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 55.0
+      - 56.45
+      - 347.1
+      - 121.15
+  answer:
+  - '0.8'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T02
+      name: 相關係數與迴歸直線直接計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 在△ABC的三邊中，若D為$\overline{BC}$中點，$\overline{AB}$＝4，$\overline{AC}$＝8，$\overline{AD}$＝2$\sqrt{6}$，則$\overline{BC}$＝＿＿＿＿。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T05
+      name: 內切圓半徑與中線定理
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 如右圖，$\overline{AB}$為半圓的直徑，C、D為半圓周上兩點，若$\overline{AB}$＝6，$\overline{AD}$＝4，$\overline{BC}$＝3， 則$\overline{CD}$＝＿＿＿＿。
+  assets:
+  - key: s3_10_f1
+    kind: figure
+    file: doc_110_台北_明倫_數學_g10s2e3/s3_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 518.95
+      - 132.5
+      - 650.25
+      - 220.95
+  answer:
+  - $\sqrt{15}$－2
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T01
+      name: 正弦定理與圓內接四邊形求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_110_台北_明倫_數學_g10s2e3_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 2
+  stem: 試問，AOB為幾度？( 單選題 )
+  options:
+  - label: A
+    content: 84°
+  - label: B
+    content: 42°
+  - label: C
+    content: 30°
+  - label: D
+    content: 90°
+  - label: E
+    content: 120°
+  group_stem: <u>明倫高中</u>校本課程於期中安排活動，每班同學分成三組進行任務，第一組至O點<u>明倫高中</u>，第二組至A點三腳渡船頭，第三組至B點<u>保安宮</u>。已知三腳渡船頭位於<u>明倫高中</u>的北6°西距離1500公尺處，<u>保安宮</u>位於<u>明倫高中</u>的西36°南距離900公尺處，試問：
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 作圖如右， 可知∠AOB＝( 90°－6° )＋36°＝120°。 故選(E)。
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T04
+      name: 平面與立體三角測量應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_明倫_數學_g10s2e3_s4_2
+  section: 4
+  number: 2
+  type: calc
+  page: 2
+  stem: 三腳渡船頭與<u>保安宮</u>的直線為多少公尺？
+  group_stem: <u>明倫高中</u>校本課程於期中安排活動，每班同學分成三組進行任務，第一組至O點<u>明倫高中</u>，第二組至A點三腳渡船頭，第三組至B點<u>保安宮</u>。已知三腳渡船頭位於<u>明倫高中</u>的北6°西距離1500公尺處，<u>保安宮</u>位於<u>明倫高中</u>的西36°南距離900公尺處，試問：
+  answer:
+  - 2100公尺
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 由餘弦定理可得$\overline{AB}$＝$\sqrt{1500^{2}+900^{2}-2\times 1500\times 900\times \cos 120^{\circ}}$＝$\sqrt{2250000+810000+1350000}$＝2100， 故三腳渡船頭與<u>保安宮</u>的直線距離為2100公尺。
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T04
+      name: 平面與立體三角測量應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_明倫_數學_g10s2e3_s4_3
+  section: 4
+  number: 3
+  type: calc
+  page: 2
+  stem: 校本課程指導老師用對講機和三組同學同時交代任務，為使訊號清晰，老師站在與三組同學距離相等處發號施令，請問老師與三組同學距離為多少公尺？
+  group_stem: <u>明倫高中</u>校本課程於期中安排活動，每班同學分成三組進行任務，第一組至O點<u>明倫高中</u>，第二組至A點三腳渡船頭，第三組至B點<u>保安宮</u>。已知三腳渡船頭位於<u>明倫高中</u>的北6°西距離1500公尺處，<u>保安宮</u>位於<u>明倫高中</u>的西36°南距離900公尺處，試問：
+  answer:
+  - 700$\sqrt{3}$公尺
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設老師站的位置位於Q點，可知Q為△AOB的外心，且$\overline{QA}$＝$\overline{QB}$＝$\overline{QO}$＝R，其中R為△AOB的外接圓半徑，由正弦定理可得$\frac{\overline{AB}}{\sin 120^{\circ}}$＝2R ⇒ R＝$\frac{2100}{2\times \frac{\sqrt{3}}{2}}$＝700$\sqrt{3}$，故老師與三組同學的距離為700$\sqrt{3}$公尺。
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T04
+      name: 平面與立體三角測量應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

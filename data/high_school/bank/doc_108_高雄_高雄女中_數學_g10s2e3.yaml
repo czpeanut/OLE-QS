@@ -1,0 +1,696 @@
+document:
+  id: doc_108_高雄_高雄女中_數學_g10s2e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 108
+  semester: 2
+  exam_seq: 3
+  city: 高雄
+  school_short: 高雄女中
+  school: 高雄市立高雄女子高級中學
+  title: 高雄市立高雄女子高級中學 108學年度第2學期第3次定期評量 高一數學科試題
+  exam_name: 108學年度第2學期第3次定期評量
+  source_file: 高一/數學/108/2-3/高雄/高雄女中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 7 分，共 28 分）
+    count: 4
+  - ord: 2
+    name: 二、填充題（每格 4 分，共 72 分）
+    count: 17
+questions:
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: A＝｛x｜1 ≤ x ≤ 7｝，B＝｛x｜－3＜x＜5，x ∈ Z｝，則下列哪些敘述正確？
+  options:
+  - label: A
+    content: A＝｛x｜$x^{2}$－8x＋7 ≤ 0｝
+  - label: B
+    content: 4 ∈ A ∩ B
+  - label: C
+    content: A ∩ B＝｛x｜1 ≤ x＜5｝
+  - label: D
+    content: A ∪ B＝｛x｜－3＜x ≤ 7，x ∈ Z｝
+  - label: E
+    content: n（B－A）＝3
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：｛x｜$x^{2}$－8x＋7 ≤ 0｝＝｛x｜（x－7）（x－1） ≤ 0｝＝｛x｜1 ≤ x ≤ 7｝＝A
+
+    (B) ○：∵4 ∈ A 且 4 ∈ B
+
+    ∴4 ∈ A ∩ B
+
+    (C) ╳：$\frac{7}{2}\in A$但$\frac{7}{2}\notin B$，故$\frac{7}{2}\notin A \cap B$，但$\frac{7}{2}\in ｛x | 1\leq x < 5 ｝$
+
+    故 A∩B≠｛x｜1 ≤ x＜5｝
+
+    (D) ╳：$\frac{13}{2}\in A$，故$\frac{13}{2}\in A \cup B$，但$\frac{13}{2}\notin ｛x | -3 < x\leq 7 , x\in Z ｝$
+
+    ⇒ A∪B≠｛x｜－3＜x ≤ 7，x ∈ Z｝
+
+    (E) ○：B－A＝｛－2，－1，0｝，故 n（B－A）＝3
+
+    故選(A)(B)(E)'
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T01
+      name: 集合運算與二次不等式交聯集
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 以下哪些是 $x^{2}$＞4 的充分條件？
+  options:
+  - label: A
+    content: x＞4
+  - label: B
+    content: x ≤ －2
+  - label: C
+    content: x＝3
+  - label: D
+    content: ｜x｜＞2
+  - label: E
+    content: x≠1
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：x＞4 即可確保 $x^{2}$＞4
+
+    (B) ╳：x＝－2 時，x ≤ －2
+
+    但 $x^{2}$＞4 不成立
+
+    (C) ○：x＝3 即可確保 $x^{2}$＞4
+
+    (D) ○：｜x｜＞2 即可確保 $x^{2}$＞4
+
+    (E) ╳：x＝0 時，x≠1
+
+    但 $x^{2}$＞4 不成立
+
+    故選(A)(C)(D)'
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T04
+      name: 邏輯命題真假值與條件推論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 以下關於擲骰子的敘述，哪些是正確的？
+  options:
+  - label: A
+    content: 同時擲 2 顆外觀相同的骰子，共有 36 種相異的點數組合
+  - label: B
+    content: 同時擲 2 顆外觀相同的骰子，恰出現一個奇數點的機率為$\frac{1}{4}$
+  - label: C
+    content: 同時擲 2 顆外觀相同的骰子，至少有一顆出現 6 點的機率為$\frac{11}{36}$
+  - label: D
+    content: 同時擲 3 顆外觀相同的骰子，點數均相異的機率為$\frac{5}{9}$
+  - label: E
+    content: 同時擲 3 顆外觀相同的骰子，「點數和為 4」的機率小於「點數和為 17」的機率
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：共有 6＋5＋4＋3＋2＋1＝21（種）
+
+    (B) ╳：所求機率為$\frac{2\times C_{1}^{3}\times C_{1}^{3}}{36}=\frac{1}{2}$
+
+    (C) ○：所求機率為 $1-\frac{5^{2}}{6^{2}}=\frac{11}{36}$
+
+    (D) ○：所求機率為$\frac{6\times 5\times 4}{6^{3}}=\frac{5}{9}$
+
+    (E) ╳：點數和為'
+  tags:
+    unit:
+      code: MA-2-2-4
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 古典機率
+      std: true
+    textbook: 數學2（必修） 古典機率
+    pattern:
+      key: MA-2-2-4:T07
+      name: 獨立重複試驗與點數條件枚舉
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 以下敘述哪些是正確的？
+  options:
+  - label: A
+    content: 某團體有男性 20 人、女性 16 人，參加某館場時，館方請該團體成員倆倆並排驗票入場，則共有$C_{20}^{36}$種排法
+  - label: B
+    content: 平面上 7 條相異的直線，最多可有$C_{2}^{7}$個交點
+  - label: C
+    content: 今有 4 男 4 女排成一列，男女相間的排法有$4 ！\times C_{3}^{4}\times 4 ！$種
+  - label: D
+    content: 今有 6 對夫婦共 12 人，由其中任選 5 人，恰有一對夫妻的方法有$C_{1}^{6}\times C_{3}^{10}$種
+  - label: E
+    content: 將 10 件相異的禮品分成三堆，其中一堆有 4 件，另兩堆各 3 件，共有$\frac{C_{4}^{10}C_{3}^{6}C_{3}^{3}}{2}$種方法
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（1，1，2），有$\frac{3 ！}{2 ！}=3$（種）
+
+    P（點數和為 4）＝$\frac{3}{6^{3}}$
+
+    點數和為 17：（5，6，6），有$\frac{3 ！}{2 ！}=3$（種）
+
+    P（點數和為 17）＝$\frac{3}{6^{3}}$
+
+    故「點數和為 4」的機率等於「點數和為 17」的機率
+
+    故選(C)(D)
+
+    4.(A) ╳：共 36 人，應為$C_{2}^{36}C_{2}^{34}\ldots \ldots C_{2}^{2}$
+
+    (B) ○：當 7 條皆不互相平行，且任意 3 條不共點時，有$C_{2}^{7}$個交點
+
+    (C) ╳：有<u> 2 </u>×4！×4！種排法
+
+    男女男……
+
+    女男女……
+
+    (D) ╳：應為$C_{1}^{6}\times C_{3}^{5}\times 2^{3}$種
+
+    (E) ○：共有$C_{4}^{10}\times C_{3}^{6}\times C_{3}^{3}\times \frac{1}{2 ！}$種方法
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T01
+      name: 組合選取與分組分堆分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 今有 5 個男生跟 4 個女生欲排成一列，若規定男生必須排在一起，女生亦須排在一起，則排法有＿＿＿＿種。
+  answer:
+  - '5760'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 共有 2！×5！×4！＝2×120×24＝5760（種）
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T01
+      name: 直線排列與相鄰不相鄰插空
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 使用 1，2，3，4 四個數字製造五位數，數字可重覆也可不出現。試問這些五位數中，數字 3 恰出現兩次的有＿＿＿＿個。
+  answer:
+  - '270'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 共有$C_{2}^{5}\times 3\times 3\times 3$
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T02
+      name: 同物排列與重複數字字典序
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: （3x－$y^{2}$）$^{7}$ 展開式中，$x^{2}y^{10}$ 項的係數為＿＿＿＿。
+  answer:
+  - －189
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（3x－$y^{2}$）$^{7}$ 展開式的一般式為
+
+    $C_{k}^{7} (3x)^{7-k}(-y^{2})^{k}=C_{k}^{7}3^{7-k}\times (-1)^{k}\times x^{7-k}\times y^{2k}$
+
+    7－k＝2 且 2k＝10 ⇒ k＝5
+
+    故 $x^{2}y^{10}$ 項的係數為
+
+    $C_{5}^{7}\times 3^{2}\times (-1)^{5}$＝21×9×（－1）＝－189'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T03
+      name: 二項式定理係數與近似估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 一袋內有 10 顆球，每球被取中的機會均等，其中有 4 顆紅球。今從袋中一次任抽取 4 顆球，則抽出的 4 球至少有一顆紅球的機率為＿＿＿＿。
+  answer:
+  - $\frac{13}{14}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-4
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 古典機率
+      std: true
+    textbook: 數學2（必修） 古典機率
+    pattern:
+      key: MA-2-2-4:T03
+      name: 對立事件與互斥機率恆等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '聯合國發展高峰會提出 17 項永續發展目標，可分類融入經濟成長、社會進步、環境保護三面向。已知：
+
+    屬於經濟成長的有 6 項（如：消除飢餓、可負擔能源、……等）
+
+    屬於社會進步的有 9 項（如：性別平等、消除貧窮、……等）
+
+    屬於環境保護的有 8 項（如：海洋生態、氣候行動、……等）
+
+    可同時屬於 3 面向的只有 1 項（即：全球夥伴）。從以上資訊，可以推得此 17 項永續發展目標中，有＿＿＿＿項恰同時屬於某兩面向。（如：「責任消費與生產」既屬於經濟成長。亦屬於環境保護，但不屬於社會進步面向）'
+  answer:
+  - '4'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T02
+      name: 排容原理與正因數倍數計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 甲、乙、丙、丁、戊、己六人排成一列，則甲、乙、丙恰兩人相鄰的機率為＿＿＿＿。
+  answer:
+  - $\frac{3}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-4
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 古典機率
+      std: true
+    textbook: 數學2（必修） 古典機率
+    pattern:
+      key: MA-2-2-4:T06
+      name: 分組分房與排列棋盤占位機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 擲一顆公正骰子 3 次，記錄出現的點數，共有 a 種不同的可能結果。學校餐廳有 4 種主菜，某生每天任選一種，一週五天共有 b 種不同的點菜方式。將 6 封不同的信投入 3 個不同的郵箱，共有 c 種不同的投法。某餐廳有 5 種飲料可選擇，4 個好友各任選一種，共有 d 種選擇方法。試比較 a，b，c，d 的大小關係為＿＿＿＿。
+  answer:
+  - b＞c＞d＞a
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T06
+      name: 重複選取與乘方計數模型
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 今有 10 階樓梯，若每次任意上一階或三階，則上樓的方法有＿＿＿＿種。
+  answer:
+  - '28'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T03
+      name: 棋盤捷徑與步數遞迴排列
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 某社團組織章節中，規定每屆理事會需由 7 名理事組成，且男、女兩性別人數均不得少於理事員的三分之一。若該社團本屆符合擔任理事資格者有 5 個男生、7 個女生，則理事會的組成名單有＿＿＿＿種方法。
+  answer:
+  - '525'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T07
+      name: 條件限制分類選取計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 將一棋子放在直角坐標上的原點，每次可上、下、左、右擇一方向移動一個單位長。若經過六次移動後，棋子回到原點，則移動棋子的方法共有＿＿＿＿種。
+  answer:
+  - '400'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T03
+      name: 棋盤捷徑與步數遞迴排列
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: '某校在收取選組志願表後，統計出下學年度高二的醫藥衛生學群共有 400 個學生，預計將開設 10 個班，編班作業流程如下：
+
+    （a） 校方在袋中放置編號 1、2、3、……、10 號的球各一顆，每球被抽中機率相等。
+
+    （b） 學生排隊抽球，登記號碼後將球放回袋中，該球號即為抽球者的新班級。
+
+    （c） 任一班級累積滿 40 人時，即將該號碼的球從袋中取出，避免再有學生編入此班。
+
+    已知該校高一某群好朋友當中，有 6 人選了醫藥衛生學群，抽籤時亦排在前 6 名。則他們恰抽出「有其中 3 人同班，另外 3 人同在另一班」的分班狀況之機率為＿＿＿＿。'
+  answer:
+  - $\frac{9}{10000}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-4
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 古典機率
+      std: true
+    textbook: 數學2（必修） 古典機率
+    pattern:
+      key: MA-2-2-4:T06
+      name: 分組分房與排列棋盤占位機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 有一款 20 格的戳戳樂遊戲中，有 1 格是獎金 500 元，有 4 格是獎金 100 元，還有 5 格是獎金 20 元，其餘都是銘謝惠顧。某顧客想玩時，已有 4 格被戳破了，但老闆不願透漏任何獎金資訊，該顧客於是自行針對這 4 格假設各種可能狀況，例如均未中獎，恰兩格是 100 元獎金，……，並計算各狀況下自己玩此遊戲的獎金期望值，若最後他決定要戳 2 格，則所得總獎金的期望值最大為＿＿＿＿元。
+  answer:
+  - '125'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-5
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 數學期望值
+      std: true
+    textbook: 數學2（必修） 數學期望值
+    pattern:
+      key: MA-2-2-5:T08
+      name: 扣本淨利與條件分枝期望值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 一袋子內有 5 紅球、3 白球、1 黑球，每球被取出的機會均等，若從袋中一次取出 3 球，並以球色的數目乘以 10 為獎金（如：3 球異色則可得 30 元、3 球同色則可得 10 元），則操作一次所得獎金之期望值為＿＿＿＿元。
+  answer:
+  - $\frac{430}{21}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-5
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 數學期望值
+      std: true
+    textbook: 數學2（必修） 數學期望值
+    pattern:
+      key: MA-2-2-5:T07
+      name: 極值差值與異色屬性期望值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 2
+  stem: A＝｛2，4，2a＋1｝，B＝｛－4，a＋1，a＋3｝，若 A ∩ B＝｛4｝，則 a 之值為＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T01
+      name: 集合運算與二次不等式交聯集
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_15
+  section: 2
+  number: 15
+  type: fill
+  page: 3
+  stem: 令$T =-2C_{1}^{n}+2^{2}C_{2}^{n}-2^{3}C_{3}^{n}+\ldots \ldots +(-2)^{n}C_{n}^{n}$，其中 n ≥ 3，則所有可能的 T 值之和為＿＿＿＿。
+  answer:
+  - －2
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T03
+      name: 二項式定理係數與近似估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_16
+  section: 2
+  number: 16
+  type: fill
+  page: 3
+  stem: '某校期末考的考程共 3 天，每天有早上、下午各 2 個時段（共 12 個時段）可安排考科，已知以下資訊：
+
+    （a） 高一有 8 個科目要安排，每個時段只能安排 1 科，未填滿的時段則為自習。
+
+    （b） 國文、英文、數學三科必須分別安排在 3 天的第 1 節課。
+
+    （c） 地理、歷史、公民這三科的任兩科，均不能安排在同一天考試。
+
+    （d） 每天至多安排三個考科。
+
+    （e） 每天的最後一節課不得為自習。
+
+    依據以上條件，該校本次的高一期末考日程表有＿＿＿＿種安排方法。'
+  answer:
+  - '3456'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T04
+      name: 定序與條件排班特殊排列
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 5
+- id: doc_108_高雄_高雄女中_數學_g10s2e3_s2_17
+  section: 2
+  number: 17
+  type: fill
+  page: 3
+  stem: '為刺激消費，政府推出「三倍券」方案。領券方式包含紙本、電子支付、電子票證、信用卡共四種。其中紙本三倍券的面額分為 500 元 4 張、200 元 5 張，民眾可花 1000 元購買一份 9 張，共 3000 元的三倍券使用。某商店趁勢推出紙本消費券專區，專區內所有商品均為超級特價。但是，因結帳系統設定不良，故針對專區商品有以下消費限制：
+
+    （a） 三倍券單次最高結帳金額為 3000 元，故所有商品定價均不超過 3000 元。
+
+    （b） 任一商品均只能以三倍券全額支付，不得以現金等其他形式支付，亦不找零。
+
+    （c） 一件商品可用多張三倍券支付，但「不得合併多項商品」使用三倍券支付。
+
+    例如：欲購買 700 元、800 元商品各一件，可使用「面額 500 元與 200 元三倍券各 1 張」支付 700 元商品，以及「4 張面額 200 元的三倍券」支付 800 元商品。但不能使用「3 張面額 500 元的三倍券」支付這兩件總價 1500 元的商品。也不能使用「3 張面額 200 元的三倍券與 100 元現金」支付 700 元的商品。依據以上敘述，回答以下問題：
+
+    (1) 該專區可以有＿＿＿＿種商品定價。（如：定價 300 元無法以上述規則付款，是不合理的定價）
+
+    (2) 某人帶著一份三倍券進入該商店後，確認要帶走一項標價 1900 元的商品，並欲將剩下的 1100 元三倍券也一併使用完畢。請問他離開商店時，所有商品的單價有＿＿＿＿種不同的組合。（如：1900＋1100、1900＋500＋400＋200 為其中兩種）'
+  answer:
+  - (1) 26；(2) 7
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T08
+      name: 整數分拆與不定方程解計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

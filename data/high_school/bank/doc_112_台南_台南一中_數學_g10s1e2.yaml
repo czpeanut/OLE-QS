@@ -1,0 +1,537 @@
+document:
+  id: doc_112_台南_台南一中_數學_g10s1e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 2
+  city: 台南
+  school_short: 台南一中
+  school: 國立臺南第一高級中學
+  title: 國立臺南第一高級中學 112學年度第1學期第2次定期評量 高一數學科試題
+  exam_name: 112學年度第1學期第2次定期評量
+  source_file: 高一/數學/112/1-2/台南/台南一中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 10 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題 5 分，共 10 分；錯一選項得 3 分，錯兩選項得 1 分，其他 0 分）
+    count: 2
+  - ord: 3
+    name: 三、填充題（每格 5 分，共 65 分）
+    count: 13
+  - ord: 4
+    name: 四、計算題（共 15 分）
+    count: 1
+questions:
+- id: doc_112_台南_台南一中_數學_g10s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 圓（x－3）$^{2}$＋（y－3）$^{2}$＝$\frac{144}{25}$的圓周上到直線 L：3x＋4y＋16＝0 的距離為整數的點有幾個？
+  options:
+  - label: A
+    content: 5 個
+  - label: B
+    content: 6 個
+  - label: C
+    content: 8 個
+  - label: D
+    content: 9 個
+  - label: E
+    content: 10 個
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-3
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓與直線
+      std: true
+    textbook: 數學1（必修） 圓與直線
+    pattern:
+      key: MA-1-2-3:T17
+      name: 圓上點到直線的最值問題
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南一中_數學_g10s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 有一光線自點 A（－3，4）射向點 B（－2，2），經 x 軸反射再經 y 軸反射後，此光線繼續前進。請問此光線自點 A 出發後的路徑上會通過下列哪一點？
+  options:
+  - label: A
+    content: （－2，1）
+  - label: B
+    content: （0，0）
+  - label: C
+    content: （－1，4）
+  - label: D
+    content: （－2，5）
+  - label: E
+    content: （－5，8）
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T20
+      name: 直線對稱點與最短路徑
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南一中_數學_g10s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 已知三直線 $L_{1}$：x＋y＝5、$L_{2}$：x－3y＝0、$L_{3}$：2x－y＝0 所圍成的三角形區域（不含邊界）為 R，則下列哪些選項的點位在區域 R 的內部？
+  options:
+  - label: A
+    content: （1，1）
+  - label: B
+    content: （2，2）
+  - label: C
+    content: （3，3）
+  - label: D
+    content: （1，2）
+  - label: E
+    content: （2，1）
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '解 $L_{2}$、$L_{3}$ 之交點 ⇒$\begin{cases}2x + y = 3 \\ x - y = a\end{cases}$⇒ x＝$\frac{3 +a}{3}$，y＝$\frac{3 - 2a}{3}$
+
+    ∴三相異直線恰有一交點$\left( \frac{3 +a}{3} , \frac{3 -2a}{3} \right)$
+
+    代入 $L_{1}$ 得 a$\left( \frac{3 +a}{3} \right)$＋$\left( \frac{3 -2a}{3} \right)$＝1
+
+    ⇒ 3a＋$a^{2}$＋3－2a＝3 ⇒ $a^{2}$＋a＝0 ⇒ a（a＋1）＝0 ⇒ a＝0 或－1
+
+    ① 當 a＝0 時，$\begin{cases}L_{1} : y = 1 \\ L_{2} : 2x + y =3 \\ L_{3} : x - y = 0\end{cases}$
+
+    解得三直線恰交於一點（1，1）
+
+    ② 當 a＝－1 時，$\begin{cases}L_{1} : -x + y = 1 \\ L_{2} : 2x + y = 3 \\ L_{3} : x - y =-1\end{cases}$
+
+    解得三直線恰交於一點$\left( \frac{2}{3} , \frac{5}{3} \right)$，但 $L_{1}$＝$L_{3}$ 與題意不合
+
+    由①、② 得 a＝0'
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T06
+      name: 二元一次不等式與半平面
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南一中_數學_g10s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 坐標平面上，直線 L 通過點（2，3）且斜率為－$\frac{3}{2}$，若直線 L 與 x 軸、y 軸在第一象限圍出△ABC，則下列哪些選項是正確的？
+  options:
+  - label: A
+    content: △ABC 的周長大於 17
+  - label: B
+    content: △ABC 的外心坐標為（3，2）
+  - label: C
+    content: △ABC 的內心坐標為（1，1）
+  - label: D
+    content: △ABC 的垂心坐標為（0，0）
+  - label: E
+    content: △ABC 的重心坐標為$\left( \frac{4}{3} , 2 \right)$
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'L：x－5y＋21＝0$\xrightarrow{向右平移 k 單位}$（x－k）－5y＋21＝0
+
+    $\xrightarrow{向下平移 2k 單位}$（x－k）－5（y＋2k）＋21＝0
+
+    將（0，0）代入得 0－k－5（0＋2k）＋21＝0
+
+    ⇒－11k＋21＝0
+
+    故 k＝$\frac{21}{11}$'
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T09
+      name: 直線方程式與截距面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 坐標平面上，三相異直線 $L_{1}$：ax＋y＝1、$L_{2}$：2x＋y＝3、$L_{3}$：x－y＝a 恰有一共同交點，則 a 之值為＿＿＿＿。
+  answer:
+  - '0'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T15
+      name: 兩直線交點與聯立方程組
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 坐標平面上，將直線 L：x－5y＋21＝0 向右平移 k 單位，再向下平移 2k 單位（其中 k＞0）得到的新直線恰好通過原點 O（0，0），則 k 之值為＿＿＿＿。
+  answer:
+  - $\frac{21}{11}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T03
+      name: 直線平移與對稱直線變換
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知 A（0，3）、B（0，－3）、C（3，0），若直線 L：mx－y－6m＝0 與△ABC 不相交，則實數 m 的範圍為＿＿＿＿。
+  answer:
+  - $m <-\frac{1}{2}$或 m＞$\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T06
+      name: 二元一次不等式與半平面
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 有一圓與兩坐標軸都相切，且此圓的圓心在直線 L：3x－2y＝10 上，則此圓的半徑為＿＿＿＿。
+  answer:
+  - 2 或 10
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-2
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓方程式
+      std: true
+    textbook: 數學1（必修） 圓方程式
+    pattern:
+      key: MA-1-2-2:T04
+      name: 相切條件與截弦求圓方程式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 圓 $x^{2}$＋$y^{2}$＝12 內部的格子點（x，y 坐標均為整數）有＿＿＿＿個。
+  answer:
+  - '37'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-2
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓方程式
+      std: true
+    textbook: 數學1（必修） 圓方程式
+    pattern:
+      key: MA-1-2-2:T09
+      name: 點與圓的位置關係判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 由點 A（5，5）向圓 C：$x^{2}$＋$y^{2}$－2y－3＝0 作切線，則切線段長為＿＿＿＿。
+  answer:
+  - $\sqrt{37}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-3
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓與直線
+      std: true
+    textbook: 數學1（必修） 圓與直線
+    pattern:
+      key: MA-1-2-3:T03
+      name: 過圓外一點求切線與切點弦
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知 d＞0，在坐標平面上，圓 C：$x^{2}$＋$y^{2}$＋dx＋ey＋f＝0 與 y 軸相切於原點 O（0，0），若點 K（0，6）到圓 C 的圓周的最短距離為 2，則序組（d，e，f）＝＿＿＿＿。
+  answer:
+  - （16，0，0）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-2
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓方程式
+      std: true
+    textbook: 數學1（必修） 圓方程式
+    pattern:
+      key: MA-1-2-2:T04
+      name: 相切條件與截弦求圓方程式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 直線 L：x－y－1＝0 與圓 C：$x^{2}$＋$y^{2}$＝9 有兩個交點 A、B，則線段$\overline{AB}$的中點坐標為＿＿＿＿。
+  answer:
+  - $\left( \frac{1}{2} , -\frac{1}{2} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-3
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓與直線
+      std: true
+    textbook: 數學1（必修） 圓與直線
+    pattern:
+      key: MA-1-2-3:T01
+      name: 圓與直線關係判定及弦長計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 已知圓 C：$x^{2}$＋$y^{2}$＝25，點 A（－4，3）為圓周上一點。若以 A 為切點的切線為 L，則直線 L 與兩坐標軸圍出的三角形的面積為＿＿＿＿。
+  answer:
+  - $\frac{625}{24}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-3
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓與直線
+      std: true
+    textbook: 數學1（必修） 圓與直線
+    pattern:
+      key: MA-1-2-3:T02
+      name: 過圓上一點或已知斜率求切線
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 坐標平面上，有一不透光的圓 C：$x^{2}$＋（y－2）$^{2}$＝1，今在點 A（1，8）放置一個點光源，則圓 C 在 x 軸上的影子長度為＿＿＿＿。
+  answer:
+  - $\frac{96}{35}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-3
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓與直線
+      std: true
+    textbook: 數學1（必修） 圓與直線
+    pattern:
+      key: MA-1-2-3:T03
+      name: 過圓外一點求切線與切點弦
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 2
+  stem: 坐標平面上，已知點 P 在 y 軸正向上。過點 P 向圓 C：（x－3）$^{2}$＋（y－1）$^{2}$＝8 作切線，可得兩切線 $L_{1}$、$L_{2}$，若兩切線互相垂直（即 $L_{1}$⊥$L_{2}$），則點 P 的坐標為＿＿＿＿。
+  answer:
+  - （0，1＋$\sqrt{7}$）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-3
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓與直線
+      std: true
+    textbook: 數學1（必修） 圓與直線
+    pattern:
+      key: MA-1-2-3:T04
+      name: 圓與直線切線交點軌跡與綜合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 2
+  stem: 坐標平面上，有一直線 L：2x－3y＋15＝0 及一圓 C：$x^{2}$＋$y^{2}$＝9，今將直線 L 向右平移某些單位，使得直線與圓 C 第一次相切，此時切線稱為 M，若再繼續向右平移某些單位，直線與圓 C 會第二次相切，則第一次相切時直線 M 的方程式為＿＿＿＿。
+  answer:
+  - 2x－3y＋$3\sqrt{13}$＝0
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-3
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓與直線
+      std: true
+    textbook: 數學1（必修） 圓與直線
+    pattern:
+      key: MA-1-2-3:T02
+      name: 過圓上一點或已知斜率求切線
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南一中_數學_g10s1e2_s3_13
+  section: 3
+  number: 13
+  type: fill
+  page: 2
+  stem: 圓 C 的半徑為 2，已知圓 C 在第一象限與兩直線 $L_{1}$：y＝$\frac{1}{3}x$、$L_{2}$：y＝$\frac{1}{2}x$同時相切，則圓 C 的圓心坐標為＿＿＿＿。
+  answer:
+  - （$4\sqrt{10}$＋$6\sqrt{5}$，$2\sqrt{10}$＋$2\sqrt{5}$）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-3
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 圓與直線
+      std: true
+    textbook: 數學1（必修） 圓與直線
+    pattern:
+      key: MA-1-2-3:T12
+      name: 圓的切線與切點性質求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台南_台南一中_數學_g10s1e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 2
+  stem: '坐標平面上，已知由四個不等式 x＋y ≥－1、x＋y ≤ 1、2x－y ≥－4、2x－y ≤ 4 所圍成的區域為 Ω，試回答下列問題：
+
+    (1) 請在坐標平面上畫出區域 Ω。（5 分）
+
+    (2) 若完全包含區域 Ω 的最小圓為 C，則圓 C 的方程式為何？（5 分）
+
+    (3) 區域 Ω 的面積為何？（5 分）'
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T21
+      name: 二元一次聯立不等式區域
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4

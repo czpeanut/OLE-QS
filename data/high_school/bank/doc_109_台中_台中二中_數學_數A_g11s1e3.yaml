@@ -1,0 +1,532 @@
+document:
+  id: doc_109_台中_台中二中_數學_數A_g11s1e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 109
+  semester: 1
+  exam_seq: 3
+  city: 台中
+  school_short: 台中二中
+  school: 臺中市立臺中第二高級中等學校
+  title: 臺中市立臺中第二高級中等學校 109學年度第1學期第3次定期評量 高二數學（數A）科試題
+  exam_name: 109學年度第1學期第3次定期評量
+  source_file: 高二/數學/109/1-3/台中/台中二中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 12 分）
+    count: 2
+  - ord: 2
+    name: 二、填充題 A（每格 5 分，共 40 分）
+    count: 8
+  - ord: 3
+    name: 三、填充題 B（每格 6 分，共 48 分）
+    count: 8
+questions:
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設 a 為實數，下列有關二元一次聯立方程式$\begin{cases}3x + ( 4 - a ) y = 8 - a \\ ( 4 - a ) x + 3y = 6 + a\end{cases}$的敘述，哪些是正確的？
+  options:
+  - label: A
+    content: 不論 a 為何值，此聯立方程式必有解
+  - label: B
+    content: 若此聯立方程式有無限多解，則 a＝1
+  - label: C
+    content: 若此聯立方程式有唯一解，此解可表示為（x，y）＝$\left( - \frac{a}{a - 7} , \frac{a - 14}{a - 7} \right)$
+  - label: D
+    content: 當 a＝6 時，此聯立方程式有唯一解（x，y）＝（－6，8）
+  - label: E
+    content: 當 a＝7 時，此聯立方程式在坐標平面上的圖形為兩平行直線
+  explanation: '由克拉瑪公式知
+
+    Δ＝$\left| \begin{matrix}3 & 4 - a \\ 4 - a & 3\end{matrix} \right|$＝9－（4－a）$^{2}$＝－$a^{2}$＋8a－7＝－（a－7）（a－1）
+
+    Δ$_{x}$＝$\left| \begin{matrix}8 - a & 4 - a \\ 6 + a & 3\end{matrix} \right|$＝3（8－a）－（6＋a）（4－a）＝$a^{2}$－a＝a（a－1）
+
+    Δ$_{y}$＝$\left| \begin{matrix}3 & 8 - a \\ 4 - a & 6 + a\end{matrix} \right|$＝3（6＋a）－（4－a）（8－a）＝－$a^{2}$＋15a－14＝－（a－1）（a－14）
+
+    當Δ≠0，即 a≠7 且 a≠1 時，此聯立方程式有唯一解$\left( - \frac{a}{a - 7} , \frac{a - 14}{a - 7} \right)$
+
+    當Δ＝Δ$_{x}$＝Δ$_{y}$＝0，即 a＝1 時，此聯立方程式有無限多解
+
+    當Δ＝0，但Δ$_{x}$，Δ$_{y}$ 不全為 0，即 a＝7 時，此聯立方程式無解
+
+    (A)╳：由上述得知，a＝7 時無解
+
+    (B)○；(C)○
+
+    (D)╳：∵a＝6≠1 且 a≠7 ∴有唯一解$\left( - \frac{6}{6 - 7} , \frac{6 - 14}{6 - 7} \right)$＝（6，8）
+
+    (E)○：a＝7 時無解，故圖形為兩平行直線
+
+    故選(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-A3-3-3
+      book: 數學3A
+      chapter: 平面向量
+      title: 二元一次聯立方程式
+      std: true
+    textbook: 數學3A 二元一次聯立方程式
+    pattern:
+      key: MA-A3-3-3:T02
+      name: 兩直線平行重合與解的判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 已知由向量$\vec{a}$與$\vec{b}$所決定的平行四邊形面積為 6，設$\vec{c} = x\vec{a} + y\vec{b}$，則下列哪些數對（x，y）可使$\vec{c}$與$\vec{b}$所決定的平行四邊形面積為 12？
+  options:
+  - label: A
+    content: （2，1）
+  - label: B
+    content: （0，2）
+  - label: C
+    content: （2，－2）
+  - label: D
+    content: （－2，0）
+  - label: E
+    content: $\left( \frac{1}{2} , \frac{3}{2} \right)$
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T05
+      name: 二階行列式與平行四邊形
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 若$\left| \begin{matrix}a & b \\ c & d\end{matrix} \right| = - 2$，則$\left| \begin{matrix}2a + 3b & 2c + 3d \\ b - 5a & d - 5c\end{matrix} \right|$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T05
+      name: 二階行列式與平行四邊形
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 已知向量$\vec{a}$＝（－3，4），若向量$\vec{u}$與$\vec{a}$方向相反，且$| \vec{u} | = 3$，則向量$\vec{u}$＝＿＿＿＿。
+  explanation: '∵$| \vec{a} | = 5$，且$\vec{u}$與$\vec{a}$方向相反，$| \vec{u} | = 3$
+
+    ∴$\vec{u} = - \frac{3}{5}\vec{a}$＝$-\frac{3}{5} (-3 , 4)$＝$\left( \frac{9}{5} , - \frac{12}{5} \right)$'
+  tags:
+    unit:
+      code: MA-A3-3-1
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量
+      std: true
+    textbook: 數學3A 平面向量
+    pattern:
+      key: MA-A3-3-1:T01
+      name: 向量坐標表示與平行伸縮
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: '設$\vec{a}$＝（－2，5），$\vec{b}$＝（1，－1），$\vec{c}$＝（2，3），若（$\vec{a} + t\vec{b}$）與$\vec{c}$平行，則
+
+    t＝＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-A3-3-1
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量
+      std: true
+    textbook: 數學3A 平面向量
+    pattern:
+      key: MA-A3-3-1:T01
+      name: 向量坐標表示與平行伸縮
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: '坐標平面上 A（－4，a），B（b，5），C（14，2）三點共線，若 A 不在 B、C 之間，且
+
+    $\overline{AB} : \overline{AC}$＝2：3，則 a＋b＝＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-A3-3-1
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量
+      std: true
+    textbook: 數學3A 平面向量
+    pattern:
+      key: MA-A3-3-1:T02
+      name: 分點公式與三點共線應用
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹末尾有亂碼字元
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: '直角三角形 ABC 中，∠B＝90°，若$\vec{AB}$＝（－4，2），$\vec{AC}$＝（3，k），則實數 k 的值為
+
+    ＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T01
+      name: 平面向量內積與垂直夾角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 坐標平面上兩點 A（3，0），B（1，1），設直線 AB 與直線 L：x－3y－3＝0 的夾角為θ，則θ＝＿＿＿＿。（兩解）
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T01
+      name: 平面向量內積與垂直夾角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: '設$\vec{a}$＝（x，4），$\vec{b}$＝（1，y），x、y 為實數，若 $x^{2}$＋$4y^{2}$＝20，則$\vec{a} \cdot \vec{b}$的最小值為
+
+    ＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T03
+      name: 柯西不等式與內積極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 如右圖，ABCD 為一邊長為 12 的正方形，$\overline{AE} = 2\overline{EB}$，$\overline{BF} = 3\overline{FC}$，G 為$\overline{AD}$的中點，則$\vec{EF} \cdot \vec{EG}$＝＿＿＿＿。
+  assets:
+  - key: s2_8_f1
+    kind: figure
+    file: doc_109_台中_台中二中_數學_數A_g11s1e3/s2_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 471.85
+      - 720.0
+      - 560.25
+      - 806.9
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T01
+      name: 平面向量內積與垂直夾角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 1
+  stem: '設$\vec{a}$＝（5，5），$\vec{b}$＝（3，－7），若$( 2x + y ) \vec{a} + ( x + 2y - 6 ) \vec{b} = \vec{0}$，則數對
+
+    （x，y）＝＿＿＿＿。'
+  explanation: '原式$\Rightarrow$（2x＋y）（5，5）＋（x＋2y－6）（3，－7）＝（0，0）
+
+    $\Rightarrow\begin{cases}5 ( 2x + y ) + 3 ( x + 2y - 6 ) = 0 \\ 5 ( 2x + y ) - 7 ( x + 2y - 6 ) = 0\end{cases}\Rightarrow\begin{cases}13x + 11y = 18\cdots \cdots \cdots \cdots \cdots ① \\ x - 3y = - 14 \cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    ①－②×13 得 50y＝200$\Rightarrow$y＝4，代入②得 x＝－2
+
+    故數對（x，y）＝（－2，4）'
+  tags:
+    unit:
+      code: MA-A3-3-1
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量
+      std: true
+    textbook: 數學3A 平面向量
+    pattern:
+      key: MA-A3-3-1:T03
+      name: 平面向量的線性組合分解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 坐標平面上 A（1，－2），B（5，2），O 為原點，若$\vec{OP} = x\vec{OA} + y\vec{OB}$，其中$- \frac{1}{2}\leq x\leq 1$，1$\leq$y$\leq$3，則 P 點所形成區域的面積為＿＿＿＿。
+  explanation: '$\vec{OA}$＝（1，－2），$\vec{OB}$＝（5，2）
+
+    則由$\vec{OA}$、$\vec{OB}$所形成的平行四邊形面積為$| \left| \begin{matrix}1 & 5 \\ - 2 & 2\end{matrix} \right| |$＝12
+
+    又$\vec{OP} = x\vec{OA} + y\vec{OB}$，且$- \frac{1}{2}\leq x\leq 1$，1$\leq$y$\leq$3
+
+    故 P 點所形成的區域面積為$\left[ 1 - \left( - \frac{1}{2} \right) \right] \times ( 3 - 1 ) \times 12$＝$\frac{3}{2}\times 2\times 12$＝36'
+  tags:
+    unit:
+      code: MA-A3-3-1
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量
+      std: true
+    textbook: 數學3A 平面向量
+    pattern:
+      key: MA-A3-3-1:T04
+      name: 線性組合終點區域與面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 若$| \vec{a} | = | \vec{b} | = 2$，且$| 3\vec{a} - \vec{b} | = 5$，則$| \vec{a} + t\vec{b} |$的最小值為＿＿＿＿。
+  explanation: '因$| 3\vec{a} - \vec{b} | = 5$，且$| \vec{a} | = | \vec{b} | = 2$
+
+    可得$| 3\vec{a} - \vec{b} | ^{2} = 25$
+
+    $\Rightarrow9 | \vec{a} | ^{2} - 6\vec{a} \cdot \vec{b} + | \vec{b} | ^{2} = 25$
+
+    $\Rightarrow9\times 4- 6\vec{a} \cdot \vec{b} + 4= 25\Rightarrow\vec{a} \cdot \vec{b} = \frac{5}{2}$
+
+    因此$| \vec{a} + t\vec{b} | ^{2}$＝$| \vec{a} | ^{2} + 2t\vec{a} \cdot \vec{b} + t^{2} | \vec{b} | ^{2}$
+
+    ＝4＋2t×$\frac{5}{2}$＋$4t^{2}$
+
+    ＝$4 \left[ t^{2} + \frac{5}{4}t + \left( \frac{5}{8} \right) ^{2} \right] + 4 - \frac{25}{16}$
+
+    ＝$4 \left( t + \frac{5}{8} \right) ^{2} + \frac{39}{16}$
+
+    故當$t = - \frac{5}{8}$時，$| \vec{a} + t\vec{b} |$的最小值為$\sqrt{\frac{39}{16}} = \frac{\sqrt{39}}{4}$'
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T02
+      name: 向量長度平方與代數展開
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: '設$\vec{a}$＝（－2，2），若$| \vec{a} | = 2 | \vec{b} |$，且（$\vec{a} + 3\vec{b}$）與（$2\vec{a} - 3\vec{b}$）垂直，則$\vec{b}$在
+
+    $\vec{a}$方向的正射影為＿＿＿＿。'
+  explanation: '$| \vec{a} | = \sqrt{( - 2 ) ^{2} + 2^{2}} = 2\sqrt{2}\Rightarrow| \vec{b} | = \frac{1}{2} | \vec{a} | = \sqrt{2}$
+
+    又$( \vec{a} + 3\vec{b} ) \perp ( 2\vec{a} - 3\vec{b} )$
+
+    $\Rightarrow( \vec{a} + 3\vec{b} ) \cdot ( 2\vec{a} - 3\vec{b} ) = 0$
+
+    $\Rightarrow2 | \vec{a} | ^{2} + 3\vec{a} \cdot \vec{b} - 9 | \vec{b} | ^{2} = 0$
+
+    $\Rightarrow\vec{a} \cdot \vec{b} = \frac{9\times 2 - 2\times 8}{3} = \frac{2}{3}$
+
+    故$\vec{b}$在$\vec{a}$方向的正射影為$\left( \frac{\vec{b} \cdot \vec{a}}{| \vec{a} | ^{2}} \right) \vec{a} = \frac{\frac{2}{3}}{8} ( - 2 , 2 )$＝$\left( - \frac{1}{6} , \frac{1}{6} \right)$'
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T04
+      name: 正射影公式與幾何計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: '如右圖，$\vec{AD} = 2\vec{AB}$，$\vec{AC} = 2\vec{AE}$，且$\overline{BC}$與$\overline{DE}$交
+
+    於 P 點，已知$\vec{AB}$＝（7，3），$\vec{AC}$＝（－2，6），
+
+    則$\vec{AP}$＝＿＿＿＿。'
+  assets:
+  - key: s3_5_f1
+    kind: figure
+    file: doc_109_台中_台中二中_數學_數A_g11s1e3/s3_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 349.5
+      - 226.55
+      - 453.65
+      - 298.85
+  tags:
+    unit:
+      code: MA-A3-3-1
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量
+      std: true
+    textbook: 數學3A 平面向量
+    pattern:
+      key: MA-A3-3-1:T02
+      name: 分點公式與三點共線應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: '如右圖，正六邊形 ABCDEF 中，若$\vec{AB} \cdot \vec{AD} = | \vec{AC} |$，則
+
+    $\vec{AC} \cdot \vec{AE}$＝＿＿＿＿。'
+  assets:
+  - key: s3_6_f1
+    kind: figure
+    file: doc_109_台中_台中二中_數學_數A_g11s1e3/s3_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 459.25
+      - 278.5
+      - 562.65
+      - 366.9
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T01
+      name: 平面向量內積與垂直夾角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: '已知圓 C：（x－1）$^{2}$＋（y－1）$^{2}$＝1，若過點 P（4，0）作圓的兩切線，
+
+    設切點為 A、B，則$\vec{PA} \cdot \vec{PB}$＝＿＿＿＿。'
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T01
+      name: 平面向量內積與垂直夾角
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_109_台中_台中二中_數學_數A_g11s1e3_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 坐標平面上 O 為原點，若點 G（3，－1）為△ABC 的重心，且$| \vec{GA} | = 3$，$| \vec{GB} | = 4 | \vec{GC} | = \sqrt{11}$，則$| \vec{OA} + \vec{OB} + \vec{OC} |$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-3-2
+      book: 數學3A
+      chapter: 平面向量
+      title: 平面向量的運算
+      std: true
+    textbook: 數學3A 平面向量的運算
+    pattern:
+      key: MA-A3-3-2:T02
+      name: 向量長度平方與代數展開
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 題幹疑漏逗號（|GB|=4與|GC|=\sqrt{11}之間）
+  difficulty: 4

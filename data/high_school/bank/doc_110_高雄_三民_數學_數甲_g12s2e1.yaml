@@ -1,0 +1,537 @@
+document:
+  id: doc_110_高雄_三民_數學_數甲_g12s2e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 1
+  city: 高雄
+  school_short: 三民
+  school: 高雄市立三民高級中學
+  title: 高雄市立三民高級中學 110學年度第2學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 110學年度第2學期第1次定期評量
+  source_file: 高三/數學/110/2-1/高雄/三民_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、填充題：
+    count: 13
+  - ord: 2
+    name: 二、計算題：
+    count: 2
+questions:
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_1
+  section: 1
+  number: 1
+  type: fill
+  page: 1
+  stem: 設隨機變數X表示一週內某汽車經銷商賣出汽出的數目，而f (x)為X的機率質量函數，若f (x)＝$\begin{cases}\frac{ax^{2}}{x!} ,x = 1 , 2 , 3 , 4 \\ 0 ,x 為其他值。\end{cases}$，求a值為＿＿＿＿。
+  answer:
+  - $a=\frac{6}{31}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $x=1\Rightarrow \frac{a}{1}$，$x=2\Rightarrow \frac{4a}{2}$，$x=3\Rightarrow \frac{9a}{6}=\frac{3a}{2}$，$x=4\Rightarrow \frac{16a}{24}=\frac{2a}{3}\therefore a+2a+\frac{3a}{2}+\frac{2a}{3}=1\Rightarrow 31a=6\Rightarrow a=\frac{6}{31}$
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T01
+      name: 離散隨機變數機率分布表
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_2
+  section: 1
+  number: 2
+  type: fill
+  page: 1
+  stem: 校慶園遊會舉辦遊戲同樂，共有10位參賽者進行數項闖關活動，依各關的表現獲得對應積分，最後將積分加總後，進行獎金挑戰賽，而獎金挑戰賽的規則如下：一箱中放有12顆大小相同的球，其中3顆為中獎球，另外9顆為謝謝再聯絡球，參賽者依積分由高至低之順序，依序從箱中抽取1球（每顆球被取中機率相同），取後放回，當有人抽到中獎球時，遊戲結束，該參賽者獲得獎金；若沒中，則換下位參賽者抽球。若10位參賽者均沒中，則當期獎金累積到下一期。假設已知<u>小黃</u>為此期比賽積分排序的第4名，試問其中獎機率為＿＿＿＿。
+  answer:
+  - $\frac{27}{256}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 前三位沒有, 第四位中：$\frac{9}{12}\times \frac{9}{12}\times \frac{9}{12}\times \frac{3}{12}=\frac{27}{256}$
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T04
+      name: 二項分布與幾何分布機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: <u>三民航太</u>公司製造的飛機引擎，飛行中每具引擎故障的機率為p (p＞0)，且引擎故障與否彼此不互相影響。已知若有一半或一半以上的引擎不故障，該飛機即可做一次安全的飛行。若4個引擎的飛機可安全飛行的機率比2個引擎的飛機高，則p可為下列哪些選項？（多選）
+  options:
+  - label: A
+    content: $\frac{1}{3}$
+  - label: B
+    content: $\frac{1}{4}$
+  - label: C
+    content: $\frac{1}{2}$
+  - label: D
+    content: $\frac{1}{5}$
+  - label: E
+    content: $\frac{2}{7}$
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 二個安全 三個安全 四個安全>一個安全 二個安全 $C_{2}^{4}(1-P)^{2}P^{2}+C_{3}^{4}(1-P)^{3}P+C_{4}^{4}(1-P)^{4}>C_{1}^{2}(1-P)P+C_{2}^{2}(1-P)^{2}6P^{2}-6P^{3}+4P-8P^{2}+4P^{3}+1-3P+3P^{2}-P^{3}>P+1-3P+1>0\Rightarrow 3P<1\Rightarrow P<\frac{1}{3}$，所以符合的為(B)(D)(E)。
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T04
+      name: 二項分布與幾何分布機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: 設實係數二次方程式$x^{2}$－kx＋(k＋3)＝0的兩根為α，β，試問： (1) 若α，β為實數，求k的範圍為＿＿＿＿。 (2) 若α，β為實數，求k等於＿＿＿＿時，會使得α$^{2}$＋β$^{2}$的值最小。
+  answer:
+  - (1)$k\geq 6$或$k\leq -2$；(2) 1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\alpha +\beta =-\frac{-k}{1},\alpha \beta =k+3$
+
+    (1) $D=(-k)^{2}-4\times 1\times (k+3)\geq 0\Rightarrow k^{2}-4k-12\geq 0\Rightarrow (k-6)(k+2)\geq 0$
+
+    $k\geq 6$或$k\leq -2$ (2)$\alpha ^{2}+\beta ^{2}=(\alpha +\beta )^{2}-2\alpha \beta =k^{2}-2(k+3)=k^{2}-2k-6=(k-1)^{2}-7\geq -7$
+
+    所以當$k=1$時, $\alpha ^{2}+\beta ^{2}$有最小值。'
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T07
+      name: 二次方程式根與係數對稱求值
+    labeled_by: agent
+    label_confidence: high
+    label_note: 第(2)小題答案 k=1 未滿足第(1)小題實根條件 k>=6 或 k<=-2
+  difficulty: 2
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 1
+  stem: 下列選項哪些正確？（多選）
+  options:
+  - label: A
+    content: $\sqrt{-3}\times \sqrt{-2}=\sqrt{6}$
+  - label: B
+    content: $\frac{\sqrt{-2}}{\sqrt{-3}}=\sqrt{\frac{2}{3}}$
+  - label: C
+    content: $\frac{\sqrt{-3}}{\sqrt{2}}=\sqrt{\frac{-3}{2}}$
+  - label: D
+    content: $\frac{\sqrt{3}}{\sqrt{-2}}=\sqrt{\frac{3}{-2}}$
+  - label: E
+    content: $\sqrt{-3}\times \sqrt{2}=\sqrt{-6}$
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) $\sqrt{-3}\times \sqrt{-2}=-\sqrt{6}\therefore$錯誤 (B) $\frac{\sqrt{-2}}{\sqrt{-3}}=\sqrt{\frac{2}{3}}\therefore$正確 (C) $\frac{\sqrt{-3}}{\sqrt{2}}=\sqrt{\frac{-3}{2}}\therefore$正確
+
+    (D) $\frac{\sqrt{3}}{\sqrt{-2}}=\frac{\sqrt{3}}{\sqrt{2}i}=\frac{-\sqrt{3}i}{\sqrt{2}}=-\sqrt{\frac{-3}{2}}\therefore$錯誤
+
+    (E) $\sqrt{-3}\times \sqrt{2}=\sqrt{-6}\therefore$正確，故選(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T11
+      name: 負數平方根運算與性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_6
+  section: 1
+  number: 6
+  type: fill
+  page: 1
+  stem: 設隨機變數X表示投擲一不公正骰子出現的點數。P (X＝$x_{k}$)表示隨機變數X取值為$x_{k}$的機率。已知X的機率分布表如下：（x，y為未知常數） 若X的期望值等於$\frac{13}{4}$，試求：(1) 數對 (x,y)＝＿＿＿＿。 (2) X的變異數為＿＿＿＿。
+  assets:
+  - key: s1_6_f1
+    kind: figure
+    file: doc_110_高雄_三民_數學_數甲_g12s2e1/s1_6_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 462.75
+      - 411.1
+      - 507.45
+  answer:
+  - (1) $(x,y)=(\frac{1}{4},\frac{1}{8})$；(2) $\frac{47}{16}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x+y+y+x+y+y=1\Rightarrow 2x+4y=1$
+
+    $E(X)=1\times x+2\times y+3\times y+4\times x+5\times y+6\times y=\frac{13}{4}\Rightarrow 5x+16y=\frac{13}{4}$
+
+    (1)聯立得到 $\therefore x=\frac{1}{4},y=\frac{1}{8}\Rightarrow (x,y)=(\frac{1}{4},\frac{1}{8})$
+
+    (2) $Var(X)=E(X^{2})-\left[ E(X) \right] ^{2}=1^{2}\times \frac{1}{4}+2^{2}\times \frac{1}{8}+9\times \frac{1}{8}+16\times \frac{1}{4}+25\times \frac{1}{8}+36\times \frac{1}{8}-(\frac{13}{4})^{2}=\frac{108}{8}-\frac{169}{16}=\frac{47}{16}$'
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T09
+      name: 期望值與變異數反推未知參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_7
+  section: 1
+  number: 7
+  type: multiple
+  page: 1
+  stem: 設隨機變數X～B$\left( 18,\frac{1}{3} \right)$，則下列敘述哪些正確？（多選）
+  options:
+  - label: A
+    content: P (X＝8)＞P (X＝10)
+  - label: B
+    content: 機率P (X＝7)最大
+  - label: C
+    content: X的變異數為4
+  - label: D
+    content: X的期望值為6
+  - label: E
+    content: P (X＝5)＝$C_{5}^{18}\left( \frac{1}{3} \right) ^{5}$
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) $P(X=8)=C_{8}^{18}(\frac{1}{3})^{8}(\frac{2}{3})^{10},P(X=10)=C_{10}^{18}(\frac{1}{3})^{10}(\frac{2}{3})^{8},\therefore P(X=8)>P(X=10)\therefore$正確
+
+    (B) $E(X)=18\times \frac{1}{3}=6\therefore P(X=6)$最大 $\therefore$錯誤
+
+    (C) $Var(x)=18\times \frac{1}{3}\times \frac{2}{3}=4\therefore$正確
+
+    (D) $E(X)=18\times \frac{1}{3}=6\therefore$正確
+
+    (E) $P(X=5)=C_{5}^{18}(\frac{1}{3})^{5}(\frac{2}{3})^{13}\therefore$錯誤，故選(A)(C)(D)'
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T07
+      name: 二項分布最大機率與分布圖形
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_8
+  section: 1
+  number: 8
+  type: fill
+  page: 1
+  stem: 某飲料店推出滿百享折扣的活動，只要購買的飲料總金額超過一百元即可玩幸運轉盤一次。 已知<u>小黃</u>訂了120元的飲料，可以獲得玩一次幸運轉盤的機會，試問： (1) 該次<u>小黃</u>付款的期望值為＿＿＿＿。 (2) 若<u>小黃</u>愛上這個獎勵制度，連續一星期（7天）每天都來玩一次轉盤賭賭運氣，則轉到一獎的次數標準差為＿＿＿＿。
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_110_高雄_三民_數學_數甲_g12s2e1/s1_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 630.15
+      - 360.4
+      - 674.85
+  answer:
+  - (1) 10.2(元)；(2) 107.7
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1)$E(X)=0.1\times (120\times 0.5)+0.2\times (120\times 0.8)+0.3\times (120-10)+0.4\times (-120)=10.2$(元)
+
+    (2)$p_{1}=\frac{1}{10},E(X)=7\times \frac{1}{10}=\frac{7}{10}$
+
+    $E(X^{2})=\frac{1}{10}\times 60^{2}+\frac{2}{10}\times 96^{2}+\frac{3}{10}\times 110^{2}+\frac{4}{10}\times (-120)^{2}=\frac{1}{10}\times 115932=11593.2$
+
+    $\sigma (X)=\sqrt{Var(X)}=\sqrt{11593.2-0.49}=\sqrt{11592.71}\approx 107.7$'
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T02
+      name: 離散隨機變數期望值計算
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 第(2)小題題目問「轉到一獎的次數標準差」，但詳解與答案誤算為單次付款金額之標準差
+  difficulty: 3
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_9
+  section: 1
+  number: 9
+  type: fill
+  page: 1
+  stem: 一生存遊戲每關存活成功的機率均為$\frac{3}{5}$，若每關遊戲結束後玩家狀態均重置，即各關的結果不互相影響，遊戲開始後直到玩家存活失敗即遊戲結束，並結算玩家遊玩的關數（含失敗的關卡），令隨機變數X表示玩家遊玩的關卡數，試求變異數Var (X)為＿＿＿＿。
+  answer:
+  - $\frac{15}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $X\sim G(\frac{2}{5})$，$E(X)=\frac{1}{p}=\frac{1}{\frac{2}{5}}=\frac{5}{2},Var(X)=\frac{1-p}{p^{2}}=\frac{1-\frac{2}{5}}{\frac{4}{25}}=\frac{15}{4}$
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T03
+      name: 幾何分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_10
+  section: 1
+  number: 10
+  type: fill
+  page: 1
+  stem: 若a,b ∈ R，且 (1＋i)$^{5}$×$\frac{3+\sqrt{-16}}{\sqrt{-4}}$＝a＋bi，試求數對 (a,b)＝＿＿＿＿。
+  answer:
+  - $(-14,-2)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $(1+i)^{4}(1+i)\times \frac{3+4i}{2i}=-4(1+i)\times \frac{(3+4i)\times i^{3}}{2i\times i^{3}}=2i(1+i)(3+4i)=-14-2i\therefore (a,b)=(-14,-2)$
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T10
+      name: 複數四則運算與模長絕對值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_11
+  section: 1
+  number: 11
+  type: fill
+  page: 1
+  stem: 設$x^{2}$－2x＋3＝0的二根為α，β，試求$\frac{\beta ^{3}}{\alpha ^{2}+3}+\frac{\alpha ^{3}}{\beta ^{2}+3}$＝＿＿＿＿。
+  answer:
+  - $-\frac{7}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\alpha +\beta =2,\alpha \beta =3\alpha ^{2}-2\alpha +3=0\Rightarrow \alpha ^{2}+3=2\alpha$, $\alpha ^{2}+\beta ^{2}=(\alpha +\beta )^{2}-2\alpha \beta =4-6=-2\therefore \frac{\beta ^{3}}{\alpha ^{2}+3}+\frac{\alpha ^{3}}{\beta ^{2}+3}=\frac{\beta ^{3}}{2\alpha}+\frac{\alpha ^{3}}{2\beta}=\frac{\beta ^{4}+\alpha ^{4}}{2\alpha \beta}=\frac{1}{6}\left[ (\alpha ^{2}+\beta ^{2})^{2}-2\alpha ^{2}\beta ^{2} \right] =\frac{1}{6}\left[ (-2)^{2}-2\times 9 \right] =-\frac{14}{6}=-\frac{7}{3}$。
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T07
+      name: 二次方程式根與係數對稱求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_12
+  section: 1
+  number: 12
+  type: fill
+  page: 1
+  stem: 已知隨機變數X滿足E (－2X＋10)＝54，Var (－2X＋10)＝196，若令隨機變數Y＝$X^{2}$，試求E (Y)＝＿＿＿＿。
+  answer:
+  - '533'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$E(-2X+10)=-2E(X)+10,54=-2E(x)+10\Rightarrow E(X)=-22$
+
+    $Var(-2X+10)=4Var(X)=196\therefore Var(X)=49$
+
+    $E(Y)=E(X^{2})\therefore Var(X)=E(X^{2})-\left[ E(X) \right] ^{2}$
+
+    $49=E(X^{2})-484\Rightarrow E(X^{2})=533$'
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T05
+      name: 隨機變數線性變換統計量
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s1_13
+  section: 1
+  number: 13
+  type: multiple
+  page: 1
+  stem: 設x,y ∈ R，若x＋y＝－10，且xy＝9，則下列何者為真？（多選）
+  options:
+  - label: A
+    content: $(\sqrt{x}+\sqrt{y})^{2}=-16$
+  - label: B
+    content: $(\sqrt{x}-\sqrt{y})^{2}=-4$
+  - label: C
+    content: $\sqrt{x}+\sqrt{y}=\pm 4i$
+  - label: D
+    content: $\sqrt{x}-\sqrt{y}=\pm 2i$
+  - label: E
+    content: $\frac{\sqrt{x}}{\sqrt{y}}=-\frac{\sqrt{x}}{\sqrt{y}}$
+  answer:
+  - A
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\because x+y=-10,xy=9\therefore x<0,y<0$
+
+    (A) $(\sqrt{x}+\sqrt{y})^{2}=x+y-2\sqrt{xy}=-10-6=-16\therefore$正確
+
+    (B) $(\sqrt{x}-\sqrt{y})^{2}=x+y+2\sqrt{xy}=-10+6=-4\therefore$正確
+
+    (C) $\sqrt{x}+\sqrt{y}=\pm 4i\therefore$正確
+
+    (D) $\sqrt{x}-\sqrt{y}=\pm 2i\therefore$正確
+
+    (E) $\frac{\sqrt{x}}{\sqrt{y}}=\sqrt{\frac{x}{y}}\therefore$錯誤'
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T11
+      name: 負數平方根運算與性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 2
+  stem: 現有一個硬幣，令p表硬幣正面的機率，假設p只能為$\frac{1}{2}$或$\frac{1}{3}$。令我們訂定檢定的準則如下：連續投擲此硬幣6次，若正面次數不超過2次，則判定p＝$\frac{1}{2}$；反之，若正面次數超過2次，則判定p＝$\frac{1}{3}$。依上述判定方式，若p＝$\frac{1}{3}$，試求可以做出正確判定的機率。
+  answer:
+  - $\frac{21}{32}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$X:$ 1 2 3 4 5 6
+
+    $p:\frac{1}{2}\frac{1}{2}\frac{1}{3}\frac{1}{3}\frac{1}{3}\frac{1}{3}$
+
+    $\because p=\frac{1}{3}\therefore P(X>2)=P(X=3)+P(X=4)+P(X=5)+P(X=6)$
+
+    $=C_{3}^{6}(\frac{1}{2})^{3}(\frac{1}{2})^{3}+C_{4}^{6}(\frac{1}{2})^{2}(\frac{1}{2})^{4}+C_{5}^{6}(\frac{1}{2})^{1}(\frac{1}{2})^{5}+C_{6}^{6}(\frac{1}{2})^{6}=\frac{20+15+6+1}{64}=\frac{42}{64}=\frac{21}{32}$'
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T05
+      name: 不確定性與抽樣檢定應用
+    labeled_by: agent
+    label_confidence: high
+    label_note: 詳解計算 p=1/3 時誤代為 p=1/2
+  difficulty: 3
+- id: doc_110_高雄_三民_數學_數甲_g12s2e1_s2_2
+  section: 2
+  number: 2
+  type: calc
+  page: 2
+  stem: 設複數z的虛部為$-\frac{1}{2}$，且$\frac{1}{z}$的實部為$\frac{3}{5}$，試求其共軛複數$\overline{z}$。
+  answer:
+  - $\overline{z}=\frac{3}{2}+\frac{1}{2}i$或$\frac{1}{6}+\frac{1}{2}i$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設$z=a-\frac{1}{2}i,\frac{1}{z}=\frac{3}{5}+bi$
+
+    $\frac{1}{z}=\frac{1}{a-\frac{1}{2}i}=\frac{a+\frac{1}{2}i}{a^{2}+\frac{1}{4}}=\frac{a}{a^{2}+\frac{1}{4}}+\frac{\frac{1}{2}}{a^{2}+\frac{1}{4}}i$
+
+    $\therefore \frac{a}{a^{2}+\frac{1}{4}}=\frac{3}{5},3a^{2}+\frac{3}{4}=5a$
+
+    $\therefore z=\frac{3}{2}-\frac{1}{2}i$或$\frac{1}{6}-\frac{1}{2}i$
+
+    $\overline{z}=\frac{3}{2}+\frac{1}{2}i$或$\frac{1}{6}+\frac{1}{2}i$'
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T12
+      name: 複數相等與共軛實虛部反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

@@ -1,0 +1,504 @@
+document:
+  id: doc_111_桃園_武陵_數學_數甲_g12s2e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 2
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 111學年度第2學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 111學年度第2學期第2次定期評量
+  source_file: 高三/數學/111/2-2/桃園/武陵_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題全對得 8 分，錯一個扣 3 分，共 16 分）
+    count: 2
+  - ord: 2
+    name: 二、填充題（共 68 分）
+    count: 9
+  - ord: 3
+    name: 三、混合、證明題（共 20 分）
+    count: 2
+questions:
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設Γ＝｛z｜z ∈ C 且｜z－2i｜＝1｝，下列哪些點會落在圖形 Ω＝｛w｜w＝－iz，z ∈Γ｝上？
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: －2i
+  - label: C
+    content: 2＋i
+  - label: D
+    content: 1－i
+  - label: E
+    content: －2－i
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵3＝－i×z
+
+    ∴$z =\frac{3}{-i}\times \frac{i}{i}= 3i$
+
+    代入｜z－2i｜＝｜3i－2i｜＝1
+
+    (B)╳：∵－2i＝－i×z
+
+    ∴z＝2
+
+    代入｜z－2i｜＝｜2－2i｜＝$\sqrt{2^{2}+(- 2)^{2}}$≠1
+
+    (C)○：∵2＋i＝－i×z
+
+    ∴$z=\frac{2 +i}{-i}\times \frac{i}{i}=-1 + 2i$
+
+    代入｜z－2i｜＝｜（－1＋2i）－2i｜＝｜－1｜＝1
+
+    (D)╳：∵1－i＝－i×z
+
+    ∴$z=\frac{1 -i}{-i}\times \frac{i}{i}= 1 +i$
+
+    代入｜z－2i｜＝｜（1＋i）－2i｜＝｜1－i｜＝$\sqrt{1^{2}+(- 1)^{2}}$≠1
+
+    (E)╳：∵－2－i＝－i×z
+
+    ∴$z=\frac{- 2 -i}{-i}\times \frac{i}{i}= 1 - 2i$
+
+    代入｜z－2i｜＝｜（1－2i）－2i｜＝｜1－4i｜＝$\sqrt{1^{2}+(- 4)^{2}}$≠1
+
+    故選(A)(C)'
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T07
+      name: 複數極式乘除與幾何旋轉伸縮
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 甲在袋中放入 3 顆黑球與 1 顆白球，每次取一球再放回袋子，重複進行取球後放回袋子的動作，直到取出白球為止。乙也在同一袋子中，每次取一球後再放回，重複進行取球後放回袋子的動作 100 次，假設每顆球被取出的機會均相等。設隨機變數 X 表示甲取到白球時的總取球次數，而隨機變數 Y 表示乙重複進行取球後放回的動作 100 次後，取出白球的總次數。則下列選項何者正確？
+  options:
+  - label: A
+    content: E（X）＝2
+  - label: B
+    content: E（Y）＝25
+  - label: C
+    content: Var（X）＝16
+  - label: D
+    content: Var（Y）＝$\frac{75}{4}$
+  - label: E
+    content: E（$X^{2}$）＝28
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意知
+
+    $X～G \left( \frac{1}{4} \right)$，$Y～B \left( 100 , \frac{1}{4} \right)$
+
+    (A)╳：E（X）＝$\frac{1}{p}$＝$\frac{1}{\frac{1}{4}}$＝4（次）
+
+    (B)○：Ｅ（Y）＝np＝$100\times \frac{1}{4}$＝25（次）
+
+    (C)╳：Var（X）＝$\frac{1 -p}{p^{2}}$＝$\frac{1 -\frac{1}{4}}{\frac{1}{16}}$＝12
+
+    (D)○：Var（Y）＝np（1－p）＝$100\times \frac{1}{4}\times \left( 1 -\frac{1}{4} \right)$＝$\frac{75}{4}$
+
+    (E)○：Var（X）＝E（$X^{2}$）－（E（X））$^{2}$
+
+    $\Rightarrow$12＝E（$X^{2}$）－$4^{2}$
+
+    $\Rightarrow$E（$X^{2}$）＝12＋16＝28
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T03
+      name: 幾何分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 已知$(7 - 24i)^{2} =\frac{(1 + 2i)^{3} (1 + 7i)^{6}}{(- 2 -i)^{5} \cdot z}$，試求｜z｜＝＿＿＿＿。
+  explanation: '∵$(7 - 24i)^{2} =\frac{(1 + 2i)^{3} (1 + 7i)^{6}}{(- 2 -i)^{5} \cdot z}$ ∴$z =\frac{(1 + 2i)^{3} (1 + 7i)^{6}}{(- 2 -i)^{5} (7 - 24i)^{2}}$
+
+    ∴｜z｜＝$\frac{∣ 1 + 2i ∣^{3} \times ∣ 1 + 7i ∣^{6}}{∣ - 2 -i ∣^{5} \times ∣ 7 - 24i ∣^{2}}$＝$\frac{(\sqrt{1^{2} + 2^{2}})^{3} \times (\sqrt{1^{2} + 7^{2}})^{6}}{(\sqrt{(- 2)^{2}+(- 1)^{2}})^{5} \times (\sqrt{7^{2}+(- 24)^{2}})^{2}}$
+
+    ＝$\frac{5\sqrt{5}\times 50 \times 50 \times 50}{25\sqrt{5}\times 25\times 25}$＝5×2×2×2＝40'
+  tags:
+    unit:
+      code: MA-J2-2-1
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數與多項式方程式
+      std: true
+    textbook: 選修數學甲（下） 複數與多項式方程式
+    pattern:
+      key: MA-J2-2-1:T13
+      name: 複數模長乘除性質求絕對值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 化簡$(- 1 + \sqrt{3}i)^{- 5}$＝＿＿＿＿。（以 a＋bi 表示，a，b 為實數）
+  answer:
+  - $-\frac{1}{64}+\frac{\sqrt{3}}{64}i$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$(- 1 + \sqrt{3}i)^{- 5}$＝$\frac{1}{(- 1 + \sqrt{3}i)^{5}}$＝$\frac{1}{\left[ 2\left( -\frac{1}{2}+\frac{\sqrt{3}}{2}i \right) \right] ^{5}}$
+
+    ＝$\frac{1}{2^{5}\left( \cos \frac{2\pi}{3}+i\sin \frac{2\pi}{3} \right) ^{5}}$＝$\frac{1}{32}\times \frac{1}{\cos \frac{10\pi}{3}+i\sin \frac{10\pi}{3}}$
+
+    ＝$\frac{1}{32}\times \frac{1}{\cos \frac{4\pi}{3}+i\sin \frac{4\pi}{3}}$＝$\frac{1}{32}\times \frac{1}{\left( -\frac{1}{2} \right) -\frac{\sqrt{3}}{2}i}$
+
+    ＝$-\frac{1}{16}\times \frac{1}{1 + \sqrt{3}i}\times \frac{1 - \sqrt{3}i}{1 - \sqrt{3}i}$
+
+    ＝$-\frac{1}{16}\times \frac{1 - \sqrt{3}i}{1^{2} -(\sqrt{3}i)^{2}}$＝$-\frac{1}{64}+\frac{\sqrt{3}}{64}i$'
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T02
+      name: 隸美弗定理與高次方計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: '(1) 若 $z^{2}$＝－6－8i，求 z＝＿＿＿＿。
+
+    (2) 在複數平面上，複數 z 在第四象限且滿足｜z｜＝1 以及｜－6－8i－$z^{3}$｜＝｜－6－8i－z｜，求 z＝＿＿＿＿。'
+  answer:
+  - (1)$\pm (\sqrt{2} - 2\sqrt{2}i)$；(2)$\frac{1 - 2i}{\sqrt{5}}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T05
+      name: 複數平面距離與軌跡極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 將$- 1 - \cos \frac{2\pi}{7}-i\sin \frac{2\pi}{7}$寫成極式為＿＿＿＿。
+  answer:
+  - $2\cos \frac{\pi}{7}\left( \cos \frac{8\pi}{7}+i\sin \frac{8\pi}{7} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\cos \frac{2\pi}{7}= 2\cos ^{2}\frac{\pi}{7}- 1$ ∴$- 1 -\cos \frac{2\pi}{7}=- 2\cos ^{2}\frac{\pi}{7}$
+
+    又$\sin \frac{2\pi}{7}= 2\sin \frac{\pi}{7}\cos \frac{\pi}{7}$
+
+    ∴$- 1 -\cos \frac{2\pi}{7}-i\sin \frac{2\pi}{7}$＝$- 2\cos ^{2}\frac{\pi}{7}-i \left( 2\sin \frac{\pi}{7}\cos \frac{\pi}{7} \right)$
+
+    ＝$2\cos \frac{\pi}{7}\left( -\cos \frac{\pi}{7}-i\sin \frac{\pi}{7} \right)$＝$2\cos \frac{\pi}{7}\left( \cos \frac{8\pi}{7}+i\sin \frac{8\pi}{7} \right)$'
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T06
+      name: 複數標準式與極式互換
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: A（－1，3）、B（2，2）、C 依順時針方向連成一個三角形，已知$\frac{\overline{AC}}{\overline{AB}}= 2$，$\tan \angle BAC =\frac{4}{3}$，求 C 點坐標為＿＿＿＿。
+  answer:
+  - （1，－3）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T01
+      name: 複數極式旋轉伸縮與面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '$Z =\left( \frac{\sqrt{3} +i}{2} \right) ^{7}+i$，則：
+
+    (1)（｜Z｜，Arg（Z））＝＿＿＿＿。
+
+    (2) n ∈ Z，－20$\leq$n$\leq$100，可使 $Z^{n}$ 為純虛數之所有整數 n 有＿＿＿＿個。'
+  answer:
+  - (1)（1，150°）；(2) 20
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) ∵Z＝$\left( \frac{\sqrt{3}}{2}+\frac{1}{2}i \right) ^{7}+i$＝（cos30°＋i sin30°）$^{7}$＋i
+
+    ＝cos210°＋i sin210°＋i＝$-\frac{\sqrt{3}}{2}+i\times \left( -\frac{1}{2} \right) +i$
+
+    ＝$-\frac{\sqrt{3}}{2}+\frac{1}{2}i$＝cos150°＋i sin150°
+
+    ∴（｜Z｜，Arg（Z））＝（1，150°）
+
+    (2) $Z^{n}$＝（cos150°＋i sin150°）$^{n}$＝cos（150°×n）＋i sin（150°×n）為純虛數
+
+    ∴cos（150°×n）＝0
+
+    $\Rightarrow$150°×n＝180°×k＋90°，k ∈ Z，又－20$\leq$n$\leq$100，n ∈ Z
+
+    $\Rightarrown =\frac{6}{5}k+\frac{3}{5}$，令 k＝5t＋2
+
+    ∴$n =\frac{6}{5}(5t + 2)+\frac{3}{5}= 6t + 3$，t ∈ Z，即－20$\leq$6t＋3$\leq$100
+
+    $\Rightarrow$t＝－3，－2，－1，0，1，2，……，15，16，共 20 個
+
+    ∴k 有 20 個，故 n 有 20 個'
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T02
+      name: 隸美弗定理與高次方計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 若複數 z 滿足｜z－8＋6i｜＋｜z｜＝16，當 z 的虛部＝β時｜z｜有最大值 M，求數對 （β，M）＝＿＿＿＿。
+  answer:
+  - $\left( -\frac{39}{5} , 13 \right)$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T05
+      name: 複數平面距離與軌跡極值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 有甲、乙、丙、丁四人玩剪刀、石頭、布的遊戲，設隨機變數 X 表玩一次得勝的人數，求 X 的期望值為＿＿＿＿。
+  answer:
+  - $\frac{28}{27}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（X＝0）＝$\frac{3 +C_{1}^{3}\times \frac{4!}{2! \times 1! \times 1!}}{3\times 3\times 3\times 3}$＝$\frac{1 + 12}{27}$＝$\frac{13}{27}$
+
+    P（X＝1）＝$\frac{C_{1}^{4}\times C_{1}^{3}\times 1\times 1\times 1}{3\times 3\times 3\times 3}$＝$\frac{4}{27}$
+
+    P（X＝2）＝$\frac{C_{2}^{4}\times C_{1}^{3}\times 1\times 1}{3\times 3\times 3\times 3}$＝$\frac{6}{27}$
+
+    P（X＝3）＝$\frac{C_{3}^{4}\times C_{1}^{3}\times 1}{3\times 3\times 3\times 3}$＝$\frac{4}{27}$
+
+    ∴E（X）＝$\frac{13}{27}\times 0 +\frac{4}{27}\times 1 +\frac{6}{27}\times 2 +\frac{4}{27}\times 3$＝$\frac{4 + 12 + 12}{27}$＝$\frac{28}{27}$'
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T02
+      name: 離散隨機變數期望值計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 袋中有 1 號球、2 號球、3 號球各 2 個，每球被取的機會均等。今自袋中取三球，令隨機變數 X 表示三球之號碼和，求 X 的變異數為＿＿＿＿。
+  answer:
+  - $\frac{6}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '袋中有①①②②③③，共 6 顆球
+
+    6.$\frac{C_{1}^{2}C_{1}^{2}C_{1}^{2}}{C_{3}^{6}}=\frac{8}{20}$ 4.$\frac{C_{2}^{2}C_{1}^{2}}{C_{3}^{6}}=\frac{2}{20}$ 5.$\frac{2}{20}$ 5.$\frac{2}{20}$ 7.$\frac{2}{20}$ 7.$\frac{2}{20}$ 8.$\frac{2}{20}$
+
+    ∴Var（X）＝E（$X^{2}$）－（E（Ｘ））$^{2}$
+
+    ＝$\left[ \frac{8}{20}\times 6^{2}+\frac{2}{20}\times (4^{2} + 5^{2} + 5^{2} + 7^{2} + 7^{2} + 8^{2}) \right] - \left[ \frac{8}{20}\times 6 +\frac{2}{20}\times (4 + 5 + 5 + 7 + 7 + 8) \right] ^{2}$
+
+    ＝$\frac{186}{5}- 36$＝$\frac{6}{5}$'
+  tags:
+    unit:
+      code: MA-J2-1-1
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學甲（下） 離散型隨機變數
+    pattern:
+      key: MA-J2-1-1:T04
+      name: 隨機變數變異數與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '隨機變數 X～B（n，p），試證 E（X）＝np。（8 分）
+
+    證：'
+  answer:
+  - E（X）＝$\sum_{k = 0}^{n} P (x =k)\times k$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J2-1-2
+      book: 選修數學甲（下）
+      chapter: 機率與統計
+      title: 二項分布與幾何分布
+      std: true
+    textbook: 選修數學甲（下） 二項分布與幾何分布
+    pattern:
+      key: MA-J2-1-2:T06
+      name: 二項分布期望值與標準差計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_數甲_g12s2e2_s3_2
+  section: 3
+  number: 2
+  type: multiple
+  page: 2
+  stem: '有一個圓形的荷花池塘，兩隻青蛙在池塘圓周上作規律性的跳動。今建立一複數平面，如右圖，觀察兩隻青蛙的跳動情形。假設兩隻青蛙開始跳動的位置定為 A(1)，而且甲青蛙沿著圓周依逆時針方向跳動，第 m 次跳到複數$\left( \cos \frac{\pi}{12}+i\sin \frac{\pi}{12} \right) ^{m}$所代表的點；同時乙青蛙沿著圓周依順時針方向跳動，第 n 次跳到複數$\left( \cos \frac{\pi}{6}-i\sin \frac{\pi}{6} \right) ^{n}$所代表的點，其中 m，n 皆為正整數。
+
+    (1) 如果甲青蛙第 m 次跳到實軸上，則 m 的值有可能為下列哪些選項？（多選，2 分，全對才給分）
+
+    (2) 如果甲青蛙每 12 秒跳一次，乙青蛙每 8 秒跳一次，
+
+    ① 每經過多少秒，兩隻青蛙可以同時跳到相同位置？（6 分）
+
+    ② 兩隻青蛙是否能在實軸與虛軸上相遇嗎？試說明理由。（4 分）'
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: '9'
+  - label: C
+    content: '12'
+  - label: D
+    content: '15'
+  - label: E
+    content: '24'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_數甲_g12s2e2/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 435.9
+      - 364.0
+      - 564.3
+      - 454.05
+  tags:
+    unit:
+      code: MA-J2-2-2
+      book: 選修數學甲（下）
+      chapter: 複數與多項式方程式
+      title: 複數的幾何意涵
+      std: true
+    textbook: 選修數學甲（下） 複數的幾何意涵
+    pattern:
+      key: MA-J2-2-2:T04
+      name: 單位根幾何位置與週期求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

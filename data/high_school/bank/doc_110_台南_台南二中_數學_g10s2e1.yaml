@@ -1,0 +1,612 @@
+document:
+  id: doc_110_台南_台南二中_數學_g10s2e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 1
+  city: 台南
+  school_short: 台南二中
+  school: 國立臺南第二高級中學
+  title: 國立臺南第二高級中學 110學年度第2學期第1次定期評量 高一數學科試題
+  exam_name: 110學年度第2學期第1次定期評量
+  source_file: 高一/數學/110/2-1/台南/台南二中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 5 分，共 15 分）
+    count: 3
+  - ord: 2
+    name: 二、填充題（共 64 分）
+    count: 8
+  - ord: 3
+    name: 三、綜合題（共 21 分）
+    count: 3
+questions:
+- id: doc_110_台南_台南二中_數學_g10s2e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 若有一數列〈$a_{n}$〉的前 n 項和 $S_{n}$＝$n^{2}$－4n＋3，其中 n 為正整數，試問下列何者正確？
+  options:
+  - label: A
+    content: $a_{1}$＝－2
+  - label: B
+    content: $a_{3}$＞0
+  - label: C
+    content: 〈$a_{n}$〉為等差數列
+  - label: D
+    content: 此數列從第 2 項開始大於 0
+  - label: E
+    content: $a_{6}$＋$a_{7}$＋$a_{8}$＞$a_{4}$＋$a_{5}$＋$a_{6}$
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '當 n ≥ 2 時
+
+    $a_{n}$＝$S_{n}$－$S_{n－1}$＝（$n^{2}$－4n＋3）－〔（n－1）$^{2}$－4（n－1）＋3〕
+
+    ＝（$n^{2}$－4n＋3）－（$n^{2}$－2n＋1－4n＋4＋3）＝2n－5
+
+    (A) ╳：$a_{1}$＝$S_{1}$＝$1^{2}$－4×1＋3＝0
+
+    (B) ○：$a_{3}$＝2×3－5＝1＞0
+
+    (C) ╳：$a_{1}$＝0，$a_{2}$＝2×2－5＝－1，$a_{3}$＝1
+
+    ∵$a_{2}$－$a_{1}$≠$a_{3}$－$a_{2}$
+
+    ∴〈$a_{n}$〉不為等差數列
+
+    (D) ╳：應從第 3 項開始大於 0
+
+    (E) ○：∵$a_{6}$＋$a_{7}$＋$a_{8}$＝7＋9＋11＝27
+
+    $a_{4}$＋$a_{5}$＋$a_{6}$＝3＋5＋7＝15
+
+    ∴$a_{6}$＋$a_{7}$＋$a_{8}$＞$a_{4}$＋$a_{5}$＋$a_{6}$
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T04
+      name: 級數和S_n反求一般項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 某班有 35 名學生，已知某次考試成績全班的平均分數為 40 分，最高分為 86 分，最低分為 16 分。欲將全班學生成績做線性調整使得最高分為 90 分及最低分為 30 分。請選出正確的選項。
+  options:
+  - label: A
+    content: 調整後分數的平均值較原始分數的平均值大
+  - label: B
+    content: 調整後分數的中位數和原始分數的中位數一樣
+  - label: C
+    content: 調整後分數的中位數較原始分數的中位數大
+  - label: D
+    content: 調整後分數的標準差和原始分數的標準差一樣
+  - label: E
+    content: 調整後分數的標準差較原始分數的標準差大
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 y＝ax＋b，其中原分數為 x 分，調整後分數為 y 分
+
+    且（x，y）＝（16，30），（86，90）代入得
+
+    $\begin{cases}30=16a+b \\ 90=86a+b\end{cases}$⇒ a＝$\frac{6}{7}$，b＝$\frac{114}{7}$
+
+    故 y＝$\frac{6}{7}$x＋$\frac{114}{7}$
+
+    (A) ○：調整後平均為 y＝$\frac{6}{7}$×40＋$\frac{114}{7}$＝$\frac{354}{7}$＞40
+
+    (B) ╳ (C) ○：計算 $\frac{6}{7}$x＋$\frac{114}{7}$＞x ⇒ x＜114
+
+    即所有人分數調整後都會增加，中位數亦然
+
+    (D)(E) ╳：∵線性調整為 y＝$\frac{6}{7}$x＋$\frac{114}{7}$ ∴σ$_{y}$＝$\frac{6}{7}$σ$_{x}$＜σ$_{x}$
+
+    故選(A)(C)'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: '下表為兩家超商近 5 年的營業額（單位：千萬元），請根據此表選出正確選項。
+
+    | 年度 | 超商 S | 超商 J |
+
+    | --- | --- | --- |
+
+    | 2017 | 956 | 600 |
+
+    | 2018 | 1015 | 640 |
+
+    | 2019 | 1100 | 640 |
+
+    | 2020 | 1221 | 680 |
+
+    | 2021 | 1300 | 710 |'
+  options:
+  - label: A
+    content: 超商 J 的營業額逐年增加
+  - label: B
+    content: 超商 S 的標準差大於超商 J
+  - label: C
+    content: 兩家超商營業額的相關係數為正
+  - label: D
+    content: 超商 J 營業額對超商 S 營業額的迴歸直線斜率為正
+  - label: E
+    content: 不管幾年之後，超商 S 的營業額永遠高過超商 J 的營業額
+  answer:
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：2018～2019 之間並無增加
+
+    (B) ○：∵超商 S 的數據較分散 ∴標準差較大
+
+    (C) ○：∵超商 S 和超商 J 的營業額每年皆無衰退
+
+    ∴兩家超商營業額的相關係數為正
+
+    (D) ○：∵相關係數為正
+
+    ∴迴歸直線斜率為正
+
+    (E) ╳：不一定
+
+    故選(B)(C)(D)'
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T01
+      name: 散布圖判讀與相關係數估計
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 求 $1^{3}$－$2^{3}$＋$3^{3}$－$4^{3}$＋……＋$11^{3}$－$12^{3}$＝＿＿＿＿。
+  answer:
+  - －972
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T02
+      name: Sigma高次方與分項對消
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台南_台南二中_數學_g10s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知－8、a、b 成等差數列，a、b、64 成等比數列，求 a＋b＝＿＿＿＿。
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 某位數學老師在計算他的兩個上課班級的數學月考成績，若甲班平均 68 分，標準差 12 分，乙班平均 48 分，標準差 8 分。若兩班人數都是 35 人，若將兩班合併計算，則合併後的變異數為＿＿＿＿。
+  answer:
+  - '204'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T04
+      name: 分組資料合併與缺漏數據反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台南_台南二中_數學_g10s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 某次月考學校一年級數學平均 45 分，標準差 8 分，最高分 86 分；英文平均 52 分，標準差 5 分，最高分 90 分，英文與數學的相關係數為 0.32。因為考得不理想故兩科老師皆決定進行線性調分，已知數學調分完最高分為 100 分，標準差為 10 分；英文調分完最高分為 100 分，平均為 60 分。求調分完後數英兩科的相關係數為＿＿＿＿。
+  answer:
+  - '0.32'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T03
+      name: 線性變換對相關與迴歸影響
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹開頭含亂碼（「調分完後」應為「求調分完後」）
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 若等比級數 $S_{n}$＝1＋$\frac{1}{3}$＋$\frac{1}{3^{2}}$＋……＋$\frac{1}{3^{n-1}}$，則滿足 $\left| \frac{3}{2}-S_{n} \right|$＞$\frac{1}{1000}$ 的最大正整數 n 為 ＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T07
+      name: 等比級數求和與不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 已知某公司近四個月營收成長率分別為 44 ％、－91 ％、－50 ％、100 ％，求此公司這四個月營收的平均成長率為＿＿＿＿。
+  answer:
+  - －40 ％
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T05
+      name: 幾何平均數與平均成長率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: '有四組資料 A、B、C、D 如下表所示，其標準差分別為 σ$_{A}$、σ$_{B}$、σ$_{C}$、σ$_{D}$，試比較其大小為＿＿＿＿。
+
+    | A | 1 | 6 | 8 | 9 | 9 | 8 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | B | 3 | 8 | 10 | 11 | 11 | 10 |
+
+    | C | 5 | 30 | 40 | 45 | 45 | 40 |
+
+    | D | －9 | －9 | －8 | －6 | －8 | －1 |'
+  answer:
+  - σ$_{C}$＞σ$_{A}$＝σ$_{B}$＝σ$_{D}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: <u>小名</u>上學期三次數學段考的成績依序為 60 分、40 分、50 分，三次數學段考班平均依序為 55 分、33 分、42 分，標準差依序為 10 分、8 分、12 分，試問三次段考中<u>小名</u>哪次表現得最好？$■答$：＿＿＿＿。
+  answer:
+  - 第二次
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '請用數學歸納法證明對任意正整數 n，$3^{4n＋2}$＋$5^{2n＋1}$ 恆為 7 的倍數。（10 分）
+
+    證：'
+  answer:
+  - 當 n＝1 時
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令公比為 r
+
+    ∵$a_{4}$＋$a_{5}$＋……＋$a_{12}$＝$a_{1}r^{3}$＋$a_{2}r^{3}$＋……＋$a_{9}r^{3}$
+
+    ＝$r^{3}$（$a_{1}$＋$a_{2}$＋……＋$a_{9}$）
+
+    ∴16＝$r^{3}$（－8）
+
+    ⇒ $r^{3}$＝－2
+
+    又 $a_{1}$＋$a_{2}$＋……＋$a_{9}$＝$\frac{a_{1}(1-r^{9})}{1-r}$＝$\frac{a_{1} 〔1-(-2)^{3}〕}{1-r}$＝$\frac{9a_{1}}{1-r}$＝－8
+
+    ⇒ $\frac{a_{1}}{1-r}$＝－$\frac{8}{9}$
+
+    故前 15 項和為 $a_{1}$＋$a_{2}$＋……＋$a_{15}$＝$\frac{a_{1}(1-r^{15})}{1-r}$＝$\frac{a_{1} 〔1-(-2)^{5}〕}{1-r}$＝－$\frac{8}{9}$×33＝－$\frac{88}{3}$'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T03
+      name: 數學歸納法猜測與倍數證明
+    labeled_by: agent
+    label_confidence: high
+    label_note: 解析與題幹不符（誤植其他題解析）
+  difficulty: 3
+- id: doc_110_台南_台南二中_數學_g10s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 3
+  stem: '所謂的虛擬貨幣是指沒有實體，以虛擬型態存在的貨幣。如各種電子遊戲內的代幣，網購商場提供的紅利代幣（如蝦幣）等，都是虛擬貨幣的一種。
+
+    但這種傳統的虛擬貨幣有可能出現斷線回溯、駭客入侵，甚至貨幣發行者自行改變數字的狀況而影響交易的安全性及穩定度，而新興的加密貨幣即是透過「密碼學」相關技術解決了這些虛擬貨幣所隱含的安全性問題。
+
+    然而受限於電腦演算法的問題，新興的加密貨幣不像傳統貨幣一樣可以無限印製（暫且不討論通膨問題），每款加密貨幣都有其上限存在，如最知名的比特幣至多只會有 2100 萬枚。也因為加密貨幣價格不斐又有其上限存在，就如同稀有礦產一樣，吸引不少人投資，就如同過去的掏金熱一般，因此這些製造加密貨幣的過程又被人暱稱為挖礦。
+
+    加密貨幣製造需要大量的電腦運算，其中又以使用 GPU 演算的效率最高，也因此這幾年電腦顯示卡被大量的投資者搶購而出現了嚴重缺貨的現象（因為顯示卡的核心即是 GPU）。
+
+    為了搶搭這股挖礦熱潮，某 A 牌顯示卡製造商統計了 5 種自家品牌的顯示卡的銷售價格與今年的銷售數量如下表，試求：
+
+    | 銷售金額 x（千元） | 11 | 12 | 10 | 9 | 8 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 銷售數量 y（千臺） | 82 | 92 | 102 | 112 | 122 |
+
+    (1) x 和 y 的相關係數。（6 分）
+
+    (2) y 對 x 的迴歸直線。（3 分）'
+  answer:
+  - μ$_{x}$＝10，μ$_{y}$＝102
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a_{1}$＝$\frac{1}{3}$，$a_{2}$＝3×$\frac{1}{3}$＝1，$a_{3}$＝$\frac{1}{2}$×1＝$\frac{1}{2}$，$a_{4}$＝$\frac{1}{2}$×$\frac{1}{2}$＝$\frac{1}{4}$
+
+    $a_{5}$＝3×$\frac{1}{4}$＝$\frac{3}{4}$，$a_{6}$＝$\frac{1}{2}$×$\frac{3}{4}$＝$\frac{3}{8}$，$a_{7}$＝3×$\frac{3}{8}$＝$\frac{9}{8}$'
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T02
+      name: 相關係數與迴歸直線直接計算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 解析與題幹不符（誤植其他題解析）
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_g10s2e1_s3_3
+  section: 3
+  number: 3
+  type: single
+  page: 3
+  stem: 現在製造商想發行一款售價為 13000 元的顯示卡，若以此迴歸直線評估，則估計可以賣多少臺？（單選，2 分）
+  options:
+  - label: A
+    content: 65000 臺
+  - label: B
+    content: 68000 臺
+  - label: C
+    content: 72000 臺
+  - label: D
+    content: 75000 臺
+  - label: E
+    content: 78000 臺
+  explanation: '令所求為 σ$_{1}^{2}$，$b_{n}$＝n，$b_{n}$ 前 11 項變異數為 σ$_{2}^{2}$
+
+    則 σ$_{1}^{2}$＝9σ$_{2}^{2}$
+
+    又 $b_{n}$ 前 11 項變異數為σ$_{2}^{2}$＝$\frac{1^{2}+2^{2}+\cdots \cdots +11^{2}}{11}$－$\left( \frac{1+2+\cdots \cdots +11}{11} \right) ^{2}$
+
+    ＝$\frac{\frac{11\times 12\times 23}{6}}{11}$－$\left( \frac{\frac{11\times 12}{2}}{11} \right) ^{2}$
+
+    ＝46－36＝10
+
+    故所求為σ$_{1}^{2}$＝9×10＝90
+
+    $4.1^{3}$－$2^{3}$＋$3^{3}$－$4^{3}$＋……＋$11^{3}$－$12^{3}$
+
+    ＝（$1^{3}$＋$2^{3}$＋……＋$12^{3}$）－2（$2^{3}$＋$4^{3}$＋……＋$12^{3}$）
+
+    ＝（$1^{3}$＋$2^{3}$＋……＋$12^{3}$）－2×8（$1^{3}$＋$2^{3}$＋……＋$6^{3}$）
+
+    ＝$\left( \frac{12\times 13}{2} \right) ^{2}$－16$\left( \frac{6\times 7}{2} \right) ^{2}$＝6084－7056＝－972
+
+    5.由題意可知$\begin{cases}\frac{-8+b}{2}=a\cdots \cdots \cdots \cdots \cdots ① \\ 64a=b^{2}\cdots \cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    ①代入②得 64$\left( \frac{-8+b}{2} \right)$＝$b^{2}$ ⇒ $b^{2}$－32b＋256＝0 ⇒ （b－16）$^{2}$＝0
+
+    故 b＝16，代回①得 a＝4，a＋b＝20
+
+    6.令甲班學生為 $x_{1}$，$x_{2}$，……，$x_{35}$，平均為μ$_{甲}$，標準差為σ$_{甲}$
+
+    乙班學生為 $x_{36}$，$x_{37}$，……，$x_{70}$，平均為μ$_{乙}$，標準差為σ$_{乙}$
+
+    合併後，平均為μ$_{合}$，標準差為σ$_{合}$
+
+    μ$_{合}$＝$\frac{\mu _{甲}\times 35+\mu _{乙}\times 35}{70}$＝$\frac{68\times 35+48\times 35}{70}$＝58
+
+    又 $\frac{x_{1}^{2}+x_{2}^{2}+\cdots \cdots +x_{35}^{2}}{35}$－$68^{2}$＝144 ⇒ $x_{1}^{2}$＋$x_{2}^{2}$＋……＋$x_{35}^{2}$＝166880
+
+    $\frac{x_{36}^{2}+x_{37}^{2}+\cdots \cdots +x_{70}^{2}}{35}$－$48^{2}$＝64 ⇒ $x_{36}^{2}$＋$x_{37}^{2}$＋……＋$x_{70}^{2}$＝82880
+
+    故所求為σ$_{合}^{2}$＝$\frac{x_{1}^{2}+x_{2}^{2}+\cdots \cdots +x_{35}^{2}+\cdots \cdots +x_{70}^{2}}{70}$－μ$_{合}^{2}$
+
+    ＝$\frac{166880+82880}{70}$－$58^{2}$＝3568－3364＝204
+
+    7.∵為線性調整且係數皆為正
+
+    ∴相關係數仍為 0.32
+
+    8.$S_{n}$＝$\frac{1\left[ 1-\left( \frac{1}{3} \right) ^{n} \right]}{1-\frac{1}{3}}$＝$\frac{3}{2}$－$\frac{3}{2}\left( \frac{1}{3} \right) ^{n}$
+
+    $\left| \frac{3}{2}-S_{n} \right|$＝$\left| \frac{3}{2}\left( \frac{1}{3} \right) ^{n} \right|$＝$\frac{3}{2}\left( \frac{1}{3} \right) ^{n}$＞$\frac{1}{1000}$
+
+    ⇒ $\frac{1}{3^{n}}$＞$\frac{1}{1500}$ ⇒ $3^{n}$＜1500 ⇒ n＜6.……
+
+    取最大正整數 n＝6
+
+    9.（1＋r）$^{4}$＝（1＋44 ％）（1－91 ％）（1－50 ％）（1＋100 ％）
+
+    ＝$\frac{144}{100}$×$\frac{9}{100}$×$\frac{50}{100}/$×$\frac{200}{100}/$
+
+    ＝$\left( \frac{6}{10} \right) ^{4}$
+
+    ⇒ 1＋r＝0.6 ⇒ r＝－0.4＝－40 ％
+
+    10.A、B 之間有 B＝A＋2 的關係
+
+    D 組資料重新排列後發現
+
+    A、D 之間有 D＝－A 的關係
+
+    A、C 之間有 C＝5A 的關係
+
+    故 σ$_{C}$＝5σ$_{A}$，σ$_{A}$＝σ$_{B}$＝σ$_{D}$ ⇒ σ$_{C}$＞σ$_{A}$＝σ$_{B}$＝σ$_{D}$
+
+    11.計算三次段考的標準化分數 Z
+
+    $Z_{1}$＝$\frac{60-55}{10}$＝$\frac{1}{2}$
+
+    $Z_{2}$＝$\frac{40-33}{8}$＝$\frac{7}{8}$
+
+    $Z_{3}$＝$\frac{50-42}{12}$＝$\frac{8}{12}$＝$\frac{2}{3}$
+
+    ∵第二次 Z 分數最高
+
+    ∴可知第二次表現最好'
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T02
+      name: 相關係數與迴歸直線直接計算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 解析與題幹不符（誤植其他題解析）
+  difficulty: 1

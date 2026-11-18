@@ -1,0 +1,510 @@
+document:
+  id: doc_111_新北_新北高中_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 2
+  city: 新北
+  school_short: 新北高中
+  school: 新北市立新北高級中學
+  title: 新北市立新北高級中學 111學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 111學年度第2學期第2次定期評量
+  source_file: 高二/數學/111/2-2/新北/新北高中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 15 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 5 分，共 15 分，全對得 5 分，僅錯一個選項得 3 分，錯兩個選項得 1 分，其他得 0 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每格 5 分，共 60 分）
+    count: 5
+  - ord: 4
+    name: 四、計算題（共 10 分）
+    count: 1
+questions:
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 若有一個猜拳機器人設計成只會出剪刀、石頭、布。已知它出剪刀的機率是 0.5，出石頭的機率是 0.2。若按照一般猜拳的輸贏規則，今你跟此機器人交手時，出哪一種拳贏或平手（不輸）的機率最大？
+  options:
+  - label: A
+    content: 剪刀
+  - label: B
+    content: 石頭
+  - label: C
+    content: 布
+  - label: D
+    content: 其實都一樣
+  - label: E
+    content: 無法判斷
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '猜拳機器人出布的機率為 1－0.5－0.2＝0.3
+
+    P（不輸│出剪刀）＝0.5＋0.3＝0.8
+
+    P（不輸│出石頭）＝0.5＋0.2＝0.7
+
+    P（不輸│出布）＝0.3＋0.2＝0.5
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 依據統計，<u>新西市</u>過去一年晴天的比例是 40 ％，雨天的比例是 60 ％；而氣象報告明天真正是晴天也被預測是晴天的比例是 80 ％，真正是雨天但被預測是晴天的比例是 30 ％。若氣象報告預測明天是晴天，則明天是雨天的機率為何？
+  options:
+  - label: A
+    content: $\frac{1}{3}$
+  - label: B
+    content: $\frac{1}{4}$
+  - label: C
+    content: $\frac{3}{4}$
+  - label: D
+    content: $\frac{16}{25}$
+  - label: E
+    content: $\frac{9}{25}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T01
+      name: 貝氏定理與條件事後機率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 針對流行的 X 病毒可以透過快篩試劑做檢查，其可靠性如下：感染 X 病毒的人透過快篩檢驗能正確判斷為陽性的比率為 0.9；未感染 X 病毒的人，做快篩檢驗而錯誤判斷的可能性為 0.01（偽陽率）。現在對某地區人口進行普篩（全體進行快篩檢驗），發現經檢查出是陽性的條件下，是真正感染 X 病毒的患者機率為$\frac{30}{113}$，則此地區 X 病毒患者占全部人口的百分比為多少％？
+  options:
+  - label: A
+    content: '0.3'
+  - label: B
+    content: '0.35'
+  - label: C
+    content: '0.4'
+  - label: D
+    content: '0.45'
+  - label: E
+    content: '0.5'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T04
+      name: 貝氏定理與醫學篩檢誤判反推
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹含亂碼（分比）
+  difficulty: 3
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: '某公司員工總數 400 人參加公司所舉辦的抽獎活動，已知有 80 個中獎機會，其中男性有 48 人中獎，女性有 120 人未中獎。依據以上資料，作性別與中獎與否的列聯表如右，則下列選項何者正確？
+
+    | 性別 抽獎 | 男 | 女 | 總和 |
+
+    | --- | --- | --- | --- |
+
+    | 中獎 | 48 | c | 80 |
+
+    | 未中獎 | a | 120 | e |
+
+    | 總和 | b | d | 400 |'
+  options:
+  - label: A
+    content: a＝200
+  - label: B
+    content: b＋d＝396
+  - label: C
+    content: c＋e＝350
+  - label: D
+    content: 公司員工中任選一人，此人中獎機率為$\frac{1}{5}$
+  - label: E
+    content: 已知某人未中獎，則此人是女性的機率為$\frac{12}{25}$
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵48＋c＝80
+
+    ∴c＝32
+
+    又 d＝c＋120＝152
+
+    b＝400－d＝248
+
+    a＝b－48＝200
+
+    e＝a＋120＝320
+
+    (A)○：a＝200
+
+    (B)╳：b＋d＝248＋152＝400
+
+    (C)╳：c＋e＝32＋320＝352
+
+    (D)○：$\frac{80}{400}$＝$\frac{1}{5}$
+
+    (E)╳：所求為$\frac{120}{e}$＝$\frac{120}{320}$＝$\frac{3}{8}$
+
+    故選(A)(D)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T10
+      name: 列聯表數據判讀與條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 二年 A 班班上共有 20 個同學，且同學們的座號編號 1～20，明天老師將透過抽籤，抽到號碼籤的同學就是下學期的班長，請選出下列敘述正確的選項。
+  options:
+  - label: A
+    content: 「<u>小怡</u>：12 號同學跟老師感情最好，中獎的一定是 12 號」，這句話是客觀機率
+  - label: B
+    content: 「<u>小芳</u>：這個月超常抽到 10 號，根據統計，抽中 10 號的機率快接近 20 ％了」，這句話是客觀機率
+  - label: C
+    content: 「<u>小吉</u>：我這個人預測得很準，相信我，7 號一定是下學期班長」，這句話是主觀機率
+  - label: D
+    content: 「<u>小珠</u>：假設籤是公平的，每個人被抽到的機率一樣是$\frac{1}{20}$」，這句話根據古典機率是正確的
+  - label: E
+    content: 「<u>小佑</u>：20 人當中有 12 位女生，所以抽到女生當班長的機率比較大」，這句話根據古典機率是正確的
+  answer:
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：應為主觀機率
+
+    (B)○：∵有統計數據 ∴為客觀機率
+
+    (C)○：∵沒有統計數據
+
+    ∴為主觀機率
+
+    (D)○：若為公平，每個人被抽到的機率皆為$\frac{1}{20}$
+
+    (E)○：P（抽到女生）＝$\frac{12}{20}$＞$\frac{8}{20}$＝P（抽到男生）
+
+    故選(B)(C)(D)(E)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T15
+      name: 主觀機率與客觀機率判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: '甲、乙兩所國中學生申請入學當地一所高中，預定錄取 468 名。已知報名人數為甲校 400 人，乙校 432 人。已知是否錄取與就讀學校是獨立的，右方列聯表中 a，b，c，d 分別為各欄位的人數，請選出下列正確的選項。
+
+    |  | 錄取 | 未錄取 |
+
+    | --- | --- | --- |
+
+    | 甲校 | a | b |
+
+    | 乙校 | c | d |'
+  options:
+  - label: A
+    content: a＋b＝400
+  - label: B
+    content: b＋d＝300
+  - label: C
+    content: a ≤ c
+  - label: D
+    content: c ≤ d
+  - label: E
+    content: b ≤ c
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T08
+      name: 獨立事件與列聯表或不等式綜合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: '假設 A，B 為獨立事件，且 P(A)＝$\frac{1}{3}$，P(B)＝$\frac{3}{4}$，試求：
+
+    (1) P(A∩B'')＝＿＿＿＿。
+
+    (2) P(A''∩B'')＝＿＿＿＿。'
+  explanation: '(1)∵A，B 獨立
+
+    ∴P（A∩B）＝P(A)P(B)＝$\frac{1}{3}$×$\frac{3}{4}$＝$\frac{1}{4}$
+
+    故 P（A∩B''）＝P(A)－P（A∩B）
+
+    ＝$\frac{1}{3}$－$\frac{1}{4}$＝$\frac{1}{12}$
+
+    (2)∵A，B 獨立 ∴A''，B'' 亦獨立
+
+    故 P（A''∩B''）＝P（A''）P（B''）
+
+    ＝$\left( 1 -\frac{1}{3} \right) \left( 1 -\frac{3}{4} \right)$＝$\frac{2}{3}\times \frac{1}{4}$＝$\frac{1}{6}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: '甲、乙兩位同學共用一個靶練習打靶，根據這學期國防通識課統計：甲的命中率是$\frac{2}{3}$，乙的命中率是$\frac{3}{4}$，已知兩人打靶互不影響且均擊發一顆子彈，試求：
+
+    (1) 恰有一人命中的機率為＿＿＿＿。
+
+    (2) 此靶被擊中的機率為＿＿＿＿。'
+  answer:
+  - (1) $\frac{5}{12}$；(2) $\frac{11}{12}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 所求為 P（甲中，乙不中）＋P（甲不中，乙中）
+
+    ＝$\frac{2}{3}$×$\left( 1 -\frac{3}{4} \right)$＋$\left( 1 -\frac{2}{3} \right)$×$\frac{3}{4}$
+
+    ＝$\frac{2}{3}\times \frac{1}{4}$＋$\frac{1}{3}\times \frac{3}{4}$＝$\frac{5}{12}$
+
+    (2) 所求為 1－P（甲，乙都沒中）
+
+    ＝1－$\left( 1 -\frac{2}{3} \right) \left( 1 -\frac{3}{4} \right)$＝1－$\frac{1}{3}\times \frac{1}{4}$＝$\frac{11}{12}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: '設公司的福利委員會調查員工對公司的福利制度是否贊同，其結果如右表。若每位員工被選中的機會均等，試回答下列各題。
+
+    | 贊同與否 性別 | 贊同 | 不贊同 | 合計 |
+
+    | --- | --- | --- | --- |
+
+    | 男員工 | 33 | 27 | 60 |
+
+    | 女員工 | 22 | 18 | 40 |
+
+    | 合計 | 55 | 45 | 100 |
+
+    (1)任選一名員工，則為男員工且贊同的機率為何？
+
+    $■答$：＿＿＿＿。
+
+    (2)任選一名員工，已知該員工贊同的條件下，該員工為男員工的機率？$■答$：＿＿＿＿。
+
+    (3)任選一名員工，已知該員工為男員工的條件下，該員工贊同的機率？$■答$：＿＿＿＿。
+
+    (4)試判斷公司福利制度的贊不贊同與員工的性別是否獨立？$■答$：＿＿＿＿。（填是或否）'
+  answer:
+  - (1) $\frac{33}{100}$；(2) $\frac{3}{5}$；(3) $\frac{11}{20}$；(4) 是
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T04
+      name: 列聯表分析與獨立性檢驗
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: '<u>新南高中</u>統計暑假輔導課的名單，發現報名暑期輔導的同學中有$\frac{2}{3}$的同學上國文輔導課，有$\frac{3}{10}$的同學上英文輔導課，有$\frac{1}{6}$的同學兩科都有上，今隨機選了一個同學，求：
+
+    (1) 已知此人有上英文輔導課的條件下，則他也有上國文輔導課的機率為＿＿＿＿。
+
+    (2) 已知此人有上國文輔導課的條件下，那麼他沒有上英文輔導課的機率為＿＿＿＿。'
+  answer:
+  - (1) $\frac{5}{9}$；(2) $\frac{3}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: '<u>新東</u>社區用甲、乙兩臺加壓馬達抽水以維持各樓層都有穩定的用水，根據廠商資料：這兩臺甲、乙馬達能正常運作十年的機率分別為 0.8、0.7。假設兩臺馬達是否正常運作彼此互不影響，試回答下列各題。
+
+    (1) 使用十年後，兩臺馬達都無法運作的機率為何？$■答$：＿＿＿＿。
+
+    (2) 使用十年後，恰有一臺能正常運作的機率為何？$■答$：＿＿＿＿。'
+  answer:
+  - (1) $\frac{3}{50}$；(2) $\frac{19}{50}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_新北_新北高中_數學_數B_g11s2e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '<u>新北盃</u>網球賽採五戰三勝制（即先勝三局者獲勝晉級），根據過去紀錄知甲選手與乙選手實力有段差距，甲選手勝乙選手的機率是 0.8。但比賽前兩局甲選手因失誤過多導致兩局皆敗，此時因現場雨勢過大暫停。請問：
+
+    (1) 若雨停後比賽繼續且甲選手恢復原來水準，請將第三局後的各種狀況繪成樹狀圖。（3 分）
+
+    (2) 若雨停後比賽繼續且甲選手恢復原來水準，比賽最後結果誰獲得晉級的可能性較大？（4 分）
+
+    (3) 若雨勢無法停止，比賽被迫結束，原定這場網球賽獲勝者可以獲得 1 萬元獎金，如此一來，甲選手該獲得多少獎金才符合獲勝機率原則呢？（3 分）'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T07
+      name: 多階段試驗樹狀圖與機率分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -1,0 +1,566 @@
+document:
+  id: doc_110_台南_台南二中_數學_數乙_g12s2e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 1
+  city: 台南
+  school_short: 台南二中
+  school: 國立臺南第二高級中學
+  title: 國立臺南第二高級中學 110學年度第2學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 110學年度第2學期第1次定期評量
+  source_file: 高三/數學/110/2-1/台南/台南二中_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 12 分）
+    count: 2
+  - ord: 2
+    name: 二、填充題（共 88 分）
+    count: 11
+questions:
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 如右圖，聯立不等式$\begin{cases}ax +by\leq c \\ -2x +y\leq d\end{cases}$之圖形為陰影區域，試選出下列為正數之選項。
+  options:
+  - label: A
+    content: a
+  - label: B
+    content: b
+  - label: C
+    content: c
+  - label: D
+    content: d
+  - label: E
+    content: abcd
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_110_台南_台南二中_數學_數乙_g12s2e1/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 465.4
+      - 168.0
+      - 564.3
+      - 276.3
+  answer:
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T01
+      name: 圖形判別二元一次聯立不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: <u>立達</u>發現一款畫面會顯示平面坐標與一顆虛擬公正骰子的手遊，每回合遊戲坐標都是從（0，0）開始，且每回合遊戲都得搖動手機擲出骰子 6 次。當搖出的點數為 1、2、3、4 時，只有 x 坐標會增加 1；當搖出的點數為 5、6 時，只有 y 坐標會增加 1，而每回合結束後會得到一個坐標（x，y），每次搖出的點數結果互相獨立，且每次遊戲的結果也互相獨立。設隨機變數 X 代表每回合遊戲最後的 x 坐標值，隨機變數 Y 代表每回合遊戲最後的 y 坐標值，試選出正確的選項。
+  options:
+  - label: A
+    content: 每回合結束後，坐標的總和 x＋y 一定是 6
+  - label: B
+    content: 每回合結束後，坐標是（2，4）與（4，2）的機率相等
+  - label: C
+    content: 每回合結束後，若 x 坐標和 y 坐標相等，則相等的機率為$C_{3}^{6} \left( \frac{2}{3} \right) ^{3}\left( \frac{1}{3} \right) ^{3}$
+  - label: D
+    content: 隨機變數 X 的期望值為 4
+  - label: E
+    content: 隨機變數 X 的標準差不等於隨機變數 Y 的標準差
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵每回合共 6 次
+
+    ∴x＋y＝6
+
+    (B)╳：坐標（2，4）表示，點數 1、2、3、4 共 2 次，點數 5、6 共 4 次
+
+    機率值為$\left( \frac{2}{3} \right) ^{2}\times \left( \frac{1}{3} \right) ^{4}\times \frac{6!}{2!4!}$
+
+    坐標（4，2）表示，點數 1、2、3、4 共 4 次，點數 5、6 共 2 次
+
+    機率值為$\left( \frac{2}{3} \right) ^{4}\times \left( \frac{1}{3} \right) ^{2}\times \frac{6!}{4!2!}$
+
+    (C)○：x 坐標和 y 坐標相等，表示點數 1、2、3、4 共 3 次，點數 5、6 共 3 次
+
+    則其機率值為$C_{3}^{6} \left( \frac{2}{3} \right) ^{3} \left( \frac{1}{3} \right) ^{3}$
+
+    (D)○：∵X～B$\left( 6 , \frac{2}{3} \right)$ ∴E（X）＝$6\times \frac{2}{3}$＝4
+
+    (E)╳：承(D)，Var（X）＝$6\times \frac{2}{3}\times \frac{1}{3}$＝$\frac{4}{3}\Rightarrow$X 的標準差＝$\sqrt{\frac{4}{3}}$＝$\frac{2}{\sqrt{3}}$
+
+    ∵Y～B$\left( 6 , \frac{1}{3} \right)$
+
+    Var（Y）＝$6\times \frac{1}{3}\times \frac{2}{3}$＝$\frac{4}{3}\Rightarrow$Y 的標準差＝$\sqrt{\frac{4}{3}}$＝$\frac{2}{\sqrt{3}}$
+
+    ∴兩標準差相等
+
+    故選(A)(C)(D)'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T02
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '設隨機變數 X 的機率分布表如下：
+
+    | x | 1 | 2 | 3 | 4 |
+
+    | --- | --- | --- | --- | --- |
+
+    | p（x） | 2k | $2k^{2}$ | $5k^{2}$ | $k^{2}$ |
+
+    (1) k 值為＿＿＿＿。
+
+    (2) 設 X 的期望值 E（X）＝m，X 的變異數 Var（X）＝n，則數對（m，n）＝＿＿＿＿。'
+  answer:
+  - (1) $\frac{1}{4}$；(2) $\left( \frac{31}{16} , \frac{271}{256} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 2k＋$2k^{2}$＋$5k^{2}$＋$k^{2}$＝1
+
+    $\Rightarrow8k^{2}$＋2k－1＝0$\Rightarrow$（4k－1）（2k＋1）＝0$\Rightarrow$k＝$\frac{1}{4}$或 k＝$-\frac{1}{2}$（負不合）
+
+    ∴k 值為$\frac{1}{4}$
+
+    (2) E（X）＝m＝$1\times \frac{1}{2}+2\times \frac{1}{8}+3\times \frac{5}{16}+4\times \frac{1}{16}$＝$\frac{31}{16}$
+
+    E（$X^{2}$）＝$1^{2}\times \frac{1}{2}+2^{2}\times \frac{1}{8}+3^{2}\times \frac{5}{16}+4^{2}\times \frac{1}{16}$＝$\frac{77}{16}$
+
+    $\Rightarrow$Var（X）＝n＝$\frac{77}{16}- \left( \frac{31}{16} \right) ^{2}$＝$\frac{271}{256}$
+
+    故數對（m，n）＝$\left( \frac{31}{16} , \frac{271}{256} \right)$'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T03
+      name: 離散隨機變數變異數與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: '一袋子中裝有大小相同的 3 顆紅球和 7 顆白球，每顆球被取出的機會相同，從中同時取出 3 顆，若隨機變數 X 表示含紅球的顆數，則：
+
+    (1) X 的期望值 E（X）＝＿＿＿＿。
+
+    (2) P（X＜2）＝＿＿＿＿。'
+  answer:
+  - (1) $\frac{9}{10}$；(2) $\frac{49}{60}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '依題意知機率分布表如下
+
+    0.$\frac{C_{3}^{7}}{C_{3}^{10}}$＝$\frac{7}{24}$'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T02
+      name: 離散型隨機變數期望值計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: '設一隨機變數 X 滿足 E（X）＝3，Var（－3X＋2）＝27，則：
+
+    (1) E（3X＋5）＝＿＿＿＿。
+
+    (2) X 的標準差σ（X）＝＿＿＿＿。'
+  answer:
+  - (1) 14；(2) $\sqrt{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{C_{3}^{3}}{C_{3}^{10}}$＝$\frac{1}{120}$
+
+    (1) E（X）＝$0\times \frac{7}{24}+1\times \frac{21}{40}+2\times \frac{7}{40}+3\times \frac{1}{120}$＝$\frac{9}{10}$
+
+    (2) P（X＜2）＝P（X＝0）＋P（X＝1）＝$\frac{7}{24}+\frac{21}{40}$＝$\frac{49}{60}$
+
+    3.(1) E（3X＋5）＝3E（X）＋5＝3×3＋5＝14
+
+    (2) Var（－3X＋2）＝27
+
+    $\Rightarrow$（－3）$^{2}$Var（X）＝27
+
+    $\Rightarrow$Var（X）＝3
+
+    ∴σ（X）＝$\sqrt{3}$'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T04
+      name: 隨機變數線性變換性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 夜市的彈珠檯遊戲如右圖，若每次彈珠均由入口 O 進入，由 A、B、C、D、E 五個出口掉出，已知彈珠在各分支處選擇前進方向的機率相等，若每局遊戲可丟 80 顆彈珠，一次丟一顆使彈珠與彈珠間互相不影響，80 顆丟完後若有 X 顆彈珠由出口 C 掉出，則可得 X 元獎金；若重複此遊戲多局之後，所得獎金 X 的平均數為μ，標準差為σ，則數對（μ，σ）＝＿＿＿＿。
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_110_台南_台南二中_數學_數乙_g12s2e1/s2_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 480.75
+      - 51.3
+      - 564.3
+      - 144.6
+  answer:
+  - $\left( 30 , \frac{5\sqrt{3}}{2} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '彈珠在落入出口前，有四次向左或向右的機會
+
+    要由出口 C 掉出，彈珠需向左、向右各 2 次
+
+    ∴P(C)＝$C_{2}^{4} \left( \frac{1}{2} \right) ^{2} \left( \frac{1}{2} \right) ^{2}$＝$\frac{3}{8}$
+
+    μ＝E（X）＝$80\times \frac{3}{8}$＝30
+
+    σ＝$\sqrt{80\times \frac{3}{8}\times \frac{5}{8}}$＝$\frac{5\sqrt{3}}{2}$
+
+    ∴數對（μ，σ）＝$\left( 30 , \frac{5\sqrt{3}}{2} \right)$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T02
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '設 x、y 滿足聯立不等式$\begin{cases}3x +y\leq 9 \\ 3x + 4y\leq 12 \\ x\geq 0 \\ y\geq 0\end{cases}$，試求：
+
+    (1) 6x＋4y 之最大值為＿＿＿＿。
+
+    (2) 若 P＝3x＋ky 在（0，3）有唯一的最大值，則 k 的範圍為＿＿＿＿。
+
+    (3) 聯立不等式的解區域（含邊界）中有＿＿＿＿個格子點。
+
+    （$註$：橫坐標與縱坐標皆為整數之點則稱為格子點）'
+  answer:
+  - (1) 20；(2) k＞4；(3) 10
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T10
+      name: 由極值發生頂點反推目標係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 設 A（－1，2），B（4，3）且$\overline{AB}$和直線 y＝mx－3 相交，則 m 之範圍為＿＿＿＿。
+  answer:
+  - $m\leq -5$或$m\geq \frac{3}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T01
+      name: 圖形判別二元一次聯立不等式
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 某公司擁有 A、B 兩座在不同地區的倉庫，A 倉庫存貨 48 公噸，B 倉庫存貨 60 公噸。今公司接獲甲地客戶訂貨 36 公噸，同時接獲乙地客戶訂貨 44 公噸，而由 A 倉庫運至甲地每公噸運費 400 元，運至乙地每公噸運費 500 元；而由 B 倉庫運至甲地每公噸運費 600 元，運至乙地每公噸運費 650 元；則此公司運費最低為＿＿＿＿元。
+  answer:
+  - '41200'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T05
+      name: 運輸問題線性規劃建模求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: '某人宣稱他的射擊失誤率為 0.25 以下，今檢定其射擊的失誤率，並列出前三個步驟如下：
+
+    （Ⅰ） 假設「此人射擊的失誤率$p\leq 0.25$」；
+
+    （Ⅱ） 確立檢定統計量為「射擊 6 次，射擊失誤的次數」；
+
+    （Ⅲ） 設定顯著水準為 0.05。
+
+    設隨機變數 X 表示射擊失誤的次數，則拒絕域為＿＿＿＿。'
+  answer:
+  - X＞3
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '隨機變數 X 表示射擊失誤的次數，令射擊失誤為成功
+
+    則成功的機率為 0.25，失敗的機率為 0.75，則 X～B（6，0.25）
+
+    可得 X 的機率質量函數為 P（X＝k）＝$C_{k}^{6} ( 0.25 )^{k} ( 0.75 )^{6 -k}$，k＝0，1，2，……，6
+
+    則隨機變數 X 的機率分布表如下
+
+    0.（0.75）$^{6}\approx$0.17798 1.6×（0.25）×（0.75）$^{5}$ $\approx$0.35596 2.15×（0.25）$^{2}$×（0.75）$^{4}$ $\approx$0.29663 3.20×（0.25）$^{3}$×（0.75）$^{3}$ $\approx$0.13184 4.15×（0.25）$^{4}$×（0.75）$^{2}$ $\approx$0.03296 5.6×（0.25）$^{5}$×（0.75）$\approx$0.00439 6.（0.25）$^{6}\approx$0.00024
+
+    當隨機變數 X 在 X＞3 時
+
+    機率總和約為 0.03296＋0.00439＋0.00024＝0.03759＜α＝0.05
+
+    在 X＞2 時，機率總和約為 0.33422＞α＝0.05
+
+    故拒絕域為 X＞3'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T05
+      name: 二項檢定與拒絕域判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_10
+  section: 2
+  number: 10
+  type: single
+  page: 2
+  stem: '試選出右圖中鋪色區域（包含邊界）為下列哪個聯立不等式之解。
+
+    $答$：＿＿＿＿。'
+  options:
+  - label: A
+    content: $\begin{cases}x -y\geq -1 \\ 3x +y\leq 13 \\ x + 3y\leq 7\end{cases}$
+  - label: B
+    content: $\begin{cases}x -y\leq -1 \\ 3x +y\leq 13 \\ x + 3y\leq 7\end{cases}$
+  - label: C
+    content: $\begin{cases}x -y\geq -1 \\ 3x +y\geq 13 \\ x + 3y\geq 7\end{cases}$
+  - label: D
+    content: $\begin{cases}x -y\geq -1 \\ 3x +y\leq 13 \\ x + 3y\geq 7\end{cases}$
+  - label: E
+    content: $\begin{cases}x -y\leq -1 \\ 3x +y\leq 13 \\ x + 3y\geq 7\end{cases}$
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_110_台南_台南二中_數學_數乙_g12s2e1/s2_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 473.25
+      - 567.7
+      - 564.3
+      - 662.5
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 過點（1，2）、（3，4）的直線為 x－y＝－1
+
+    點（4，1）代入得 4－1＝3$\geq$－1
+
+    故區域滿足$x -y\geq -1$
+
+    (2) 過點（3，4）、（4，1）的直線為 3x＋y＝13
+
+    點（1，2）代入得 3＋2＝5$\leq$13
+
+    故區域滿足$3x +y\leq 13$
+
+    (3) 過點（4，1）、（1，2）的直線為 x＋3y＝7
+
+    點（3，4）代入得 3＋12＝15$\geq$7
+
+    故區域滿足$x + 3y\geq 7$
+
+    由上述(1)、(2)、(3)討論可知，所求即為聯立不等式$\begin{cases}x -y\geq -1 \\ 3x +y\leq 13 \\ x +3y\geq 7\end{cases}$之解
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T01
+      name: 圖形判別二元一次聯立不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 袋中有 2 個紅球及 1 個黃球，設每個球被取出的機會均等，每次取一球，取後放回。若取到黃球就贏得獎金 100 元，取到紅球就輸掉獎金 30 元。<u>淳甄</u>決定連取 6 次球，則她至少贏得 250 元獎金的機率為＿＿＿＿。
+  answer:
+  - $\frac{73}{729}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '每次取到黃球之機率為$\frac{1}{3}$
+
+    每次取到紅球之機率為$\frac{2}{3}$
+
+    (1) 若取到 6 次黃球，可贏得 600 元
+
+    $C_{6}^{6} \left( \frac{1}{3} \right) ^{6} \left( \frac{2}{3} \right) ^{0}$＝$\frac{1}{729}$
+
+    (2) 若取到 5 次黃球，1 次紅球，可贏得 470 元
+
+    $C_{5}^{6} \left( \frac{1}{3} \right) ^{5} \left( \frac{2}{3} \right) ^{1}$＝$\frac{12}{729}$
+
+    (3) 若取到 4 次黃球，2 次紅球，可贏得 340 元
+
+    $C_{4}^{6} \left( \frac{1}{3} \right) ^{4} \left( \frac{2}{3} \right) ^{2}$＝$\frac{60}{729}$
+
+    ∴所求為$\frac{1}{729}+\frac{12}{729}+\frac{60}{729}$＝$\frac{73}{729}$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T07
+      name: 二項分布試驗判別與單項機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台南_台南二中_數學_數乙_g12s2e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 3
+  stem: 已知平面上△ABC 的三個內角中，∠A＝x°，∠B＝y°，∠C＝z°，且 x、y、z 滿足不等式$x\geq z\geq y\geq \frac{2}{5}x$，若 x＋y 的最大值為 M，最小值為 m，則數對（M，m）＝＿＿＿＿。
+  answer:
+  - （140，105）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T03
+      name: 目標函數頂點法求極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

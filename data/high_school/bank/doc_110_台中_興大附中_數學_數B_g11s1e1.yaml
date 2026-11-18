@@ -1,0 +1,689 @@
+document:
+  id: doc_110_台中_興大附中_數學_數B_g11s1e1
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 110學年度第1學期第1次定期評量 高二數學（數B）科試題
+  exam_name: 110學年度第1學期第1次定期評量
+  source_file: 高二/數學/110/1-1/台中/興大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 20 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 40 分）
+    count: 5
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 40 分）
+    count: 8
+questions:
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 將一繩長為 100 公分的繩子一端固定在 A 點上，將此繩子逆時針纏繞在如右圖的圓形輪上，輪子的半徑是 5 公分，且繩子的另一端點為 B，則 B 點在什麼位置？
+  options:
+  - label: A
+    content: 第一象限
+  - label: B
+    content: 第二象限
+  - label: C
+    content: 第三象限
+  - label: D
+    content: 第四象限
+  - label: E
+    content: x 軸或 y 軸
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數B_g11s1e1/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 473.15
+      - 130.4
+      - 564.3
+      - 220.4
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{100}{2\pi \times 5}$＝3.1……（圈），介於 3～3.25 之間，即第一象限
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-B3-1-1
+      book: 數學3B
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3B 弧度量
+    pattern:
+      key: MA-B3-1-1:T07
+      name: 角度與弧度換算及象限判斷
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 令 a＝$\cos \sqrt{2}\pi$，試問下列哪一個選項是對的？
+  options:
+  - label: A
+    content: a＝－1
+  - label: B
+    content: －1＜a ≤ $-\frac{1}{2}$
+  - label: C
+    content: $-\frac{1}{2}$＜a ≤ 0
+  - label: D
+    content: 0＜a ≤ $\frac{1}{2}$
+  - label: E
+    content: $\frac{1}{2}$＜a ≤ 1
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{4\pi}{3}<\sqrt{2}\pi <\frac{3\pi}{2}$ ⇒ $\cos \frac{4\pi}{3}<\cos \sqrt{2}\pi <\cos \frac{3\pi}{2}$
+
+    ∴$-\frac{1}{2}$＜a＜0，故選(C)'
+  tags:
+    unit:
+      code: MA-B3-1-2
+      book: 數學3B
+      chapter: 三角函數
+      title: 週期性數學模型
+      std: true
+    textbook: 數學3B 週期性數學模型
+    pattern:
+      key: MA-B3-1-2:T01
+      name: 弧度角三角函數值與象限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 訊號處理學中，以儀器測量一個訊號的強度 x 通常以分貝（dB）值表示，其定義為 dB（x）＝10×$\log \frac{x}{x_{0}}$，其中 $x_{0}$ 是一個參考訊號的強度（$x_{0}$ 為一常數）。今以儀器測得某個訊號強度的分貝值為－3dB，關於該訊號的強度相對於參考訊號的強度，請由下列敘述中選出最適合的選項。（已知 log2 ≈ 0.3010）
+  options:
+  - label: A
+    content: 該訊號的強度大約與參考訊號的強度相同
+  - label: B
+    content: 該訊號的強度大約比參考訊號的強度增加三分之一
+  - label: C
+    content: 該訊號的強度大約比參考訊號的強度增加二分之一
+  - label: D
+    content: 該訊號的強度大約比參考訊號的強度減少三分之一
+  - label: E
+    content: 該訊號的強度大約比參考訊號的強度減少二分之一
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '－3＝10×$\log \frac{x}{x_{0}}$ ⇒ －0.3＝$\log \frac{x}{x_{0}}$
+
+    ⇒ $\frac{x}{x_{0}}$＝$10^{－0.3}$＝$\frac{1}{10^{0.3}}$ ≈ $\frac{1}{2}$（∵$10^{0.3010}$ ≈ 10 $^{log2}$＝2）
+
+    ∴x ≈ $\frac{1}{2}x_{0}$，故選(E)'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T07
+      name: 常用對數於科學尺度應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 依據醫學研究，人的體能模式為 P＝50（1＋sinωt），其中ω＞0，P ％表能量的百分比，t 表示出生後的天數。如果某人的體能週期是 30 天，則在一個週期中，有多少天能量的百分比不小於 75 ％？
+  options:
+  - label: A
+    content: '9'
+  - label: B
+    content: '10'
+  - label: C
+    content: '11'
+  - label: D
+    content: '12'
+  - label: E
+    content: 以上皆非
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '週期為$\frac{2\pi}{\omega}$＝30 ⇒ ω＝$\frac{2\pi}{30}$＝$\frac{\pi}{15}$
+
+    $50\left( 1+\sin \frac{\pi}{15}t \right)$ ≥ 75 ⇒ $1+\sin \frac{\pi}{15}t$ ≥ $\frac{3}{2}$ ⇒ $\sin \frac{\pi}{15}t$ ≥ $\frac{1}{2}$
+
+    又 0 ≤ t ≤ 30 ⇒ 0 ≤ $\frac{\pi}{15}t$ ≤ 2π
+
+    ∴$\frac{\pi}{6}$ ≤ $\frac{\pi}{15}t$ ≤ $\frac{5\pi}{6}$ ⇒ 2.5 ≤ t ≤ 12.5 ⇒ t＝3，4，……，12，共 10 天
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-B3-1-2
+      book: 數學3B
+      chapter: 三角函數
+      title: 週期性數學模型
+      std: true
+    textbook: 數學3B 週期性數學模型
+    pattern:
+      key: MA-B3-1-2:T08
+      name: 三角方程式不等式與區間極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 下列選項哪些正確？
+  options:
+  - label: A
+    content: $log_{7}$（－3）$^{2}$＝2 $log_{7}$（－3）
+  - label: B
+    content: $\sqrt{(\log 0.2)^{2}}$＝log0.2
+  - label: C
+    content: $\frac{1}{\log 2}$＝$\log \frac{1}{2}$
+  - label: D
+    content: $log_{2}$3＝$log_{4}$9
+  - label: E
+    content: log（$2^{(35)}$）＝$3^{5}$ log2
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：$log_{7}$（－3）$^{2}$＝$\frac{\log (-3)^{2}}{\log 7}$＝$\frac{2 \log | -3 |}{\log 7}$＝2 $log_{7}$∣－3∣
+
+    (B) ╳：$\sqrt{(\log 0.2)^{2}}$＝∣log0.2∣＝－log0.2
+
+    (C) ╳：$\log \frac{1}{2}$＝log1－log2＝0－log2＝－log2≠$\frac{1}{\log 2}$
+
+    (D) ○：$log_{4}$9＝$\frac{\log 9}{\log 4}$＝$\frac{2\log 3}{2\log 2}$＝$log_{2}$3
+
+    (E) ○
+
+    故選(D)(E)
+
+    2.3（弳）≈ 3×57.3°＝171.9°
+
+    (A) ╳：sin3 ≈ sin171.9°＞0
+
+    (B) ○：cos3 ≈ cos171.9°＜0
+
+    (C) ╳：150°＜171.9°＜180° ⇒ 0＜sin3＜$\frac{1}{2}$
+
+    (D) ╳：150°＜171.9°＜180° ⇒ －1＜cos3＜$-\frac{\sqrt{3}}{2}$ ∴∣cos3∣＞$\frac{1}{2}$
+
+    (E) ○：由(C)、(D)知∣sin3∣＜∣cos3∣
+
+    故選(B)(E)
+
+    3.(A) ○(B) ○(C) ╳(D) ╳：$log_{(6－a)}$（a－2）恆有意義 ⇒ $\begin{cases}底數: 6-a>0 , 6-a \neq 1 \\ 真數: a-2>0\end{cases}$
+
+    ⇒ $\begin{cases}a<6 ,a \neq 5 \\ a>2\end{cases}$ ∴2＜a＜6，a≠5
+
+    (E) ╳：a＝3，4，共 2 個
+
+    故選(A)(B)
+
+    4.(A) ○：－1 ≤ sin2x ≤ 1 ⇒ －3 ≤ 3 sin2x ≤ 3
+
+    (B) ╳：x＝$\frac{\pi}{2}$代入得 3 sin2$\left( \frac{\pi}{2} \right)$＝3 sinπ＝0
+
+    (C) ╳：振幅為 3
+
+    (D) ╳：週期為$\frac{2\pi}{2}$＝π
+
+    (E) ○：x＝$\frac{3\pi}{4}$代入得 $3 \sin 2\left( \frac{3\pi}{4} \right)$＝$3 \sin \frac{3\pi}{2}$＝－3 為最小值 ∴對稱於直線 x＝$\frac{3\pi}{4}$
+
+    故選(A)(E)
+
+    5.(A) ○：a＝50 ……振幅
+
+    (B) ╳：b＝50 ……輪軸中心高度
+
+    (C) ○：t＝0 時，$\sin \left( kt+\frac{\pi}{2} \right)$＝$\sin \frac{\pi}{2}$＝1 為最大值
+
+    (D) ╳：每 4 秒轉一圈 2π（弳） ∴每秒轉$\frac{2\pi}{4}$＝$\frac{\pi}{2}$（弳）
+
+    (E) ○：週期為 4＝$\frac{2\pi}{k}$ ∴k＝$\frac{2\pi}{4}$＝$\frac{\pi}{2}$
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T05
+      name: 對數性質與定義域判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 下列哪些敘述是正確的？
+  options:
+  - label: A
+    content: sin3＜0
+  - label: B
+    content: cos3＜0
+  - label: C
+    content: sin3＞$\frac{1}{2}$
+  - label: D
+    content: ∣cos3∣＜$\frac{1}{2}$
+  - label: E
+    content: ∣sin3∣＜∣cos3∣
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-1-2
+      book: 數學3B
+      chapter: 三角函數
+      title: 週期性數學模型
+      std: true
+    textbook: 數學3B 週期性數學模型
+    pattern:
+      key: MA-B3-1-2:T01
+      name: 弧度角三角函數值與象限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 設 $log_{(6－a)}$（a－2）恆有意義，則下列選項哪些是正確的？
+  options:
+  - label: A
+    content: 0＜a－2
+  - label: B
+    content: a＝π 可滿足
+  - label: C
+    content: a＝5 可滿足
+  - label: D
+    content: 2＜a＜6
+  - label: E
+    content: 若 a 為整數，則 a 有 3 個
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T05
+      name: 對數性質與定義域判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 關於函數 y＝3 sin2x，則下列選項哪些正確？
+  options:
+  - label: A
+    content: －3 ≤ y ≤ 3
+  - label: B
+    content: y＝3 sin2x 在 x＝$\frac{\pi}{2}$時有最大值
+  - label: C
+    content: 此函數圖形的振幅為 2
+  - label: D
+    content: 此函數圖形的週期為 2π
+  - label: E
+    content: 此函數的圖形對稱於直線 x＝$\frac{3\pi}{4}$
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-1-2
+      book: 數學3B
+      chapter: 三角函數
+      title: 週期性數學模型
+      std: true
+    textbook: 數學3B 週期性數學模型
+    pattern:
+      key: MA-B3-1-2:T02
+      name: 正弦函數振幅週期與平移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s2_5
+  section: 2
+  number: 5
+  type: multiple
+  page: 2
+  stem: <u>阿里山</u>小火車採用傳統的輪軸推進器，火車頭的輪軸轉 動如右示意圖。設輪圈的半徑 50 公分，而輪軸轉動時， A、B 兩點距離地面的高度為 y（公分）與時間 t（秒）的 關係式為 y＝f（t）＝$a \sin \left( kt+\frac{\pi}{2} \right)$＋b，其中 a、k、b 為常數，且 a＞0，k＞0，若輪軸轉動一圈的時間為 4 秒，則下列選項哪些是正確的？
+  options:
+  - label: A
+    content: a＝50
+  - label: B
+    content: b＝100
+  - label: C
+    content: 當 t＝0 時，A 點到地面的距離有最大值
+  - label: D
+    content: 輪軸每秒鐘轉$\frac{\pi}{4}$弳
+  - label: E
+    content: k＝$\frac{\pi}{2}$
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數B_g11s1e1/s2_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 425.9
+      - 593.75
+      - 563.7
+      - 657.25
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-1-2
+      book: 數學3B
+      chapter: 三角函數
+      title: 週期性數學模型
+      std: true
+    textbook: 數學3B 週期性數學模型
+    pattern:
+      key: MA-B3-1-2:T05
+      name: 週期性生理與自然現象
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: 右圖是一個邊長為 1 的正方形，各以頂點為圓心，邊長 1 為半徑在正方形內畫弧。求灰色區域的兩對角 A、B 之間的距離為＿＿＿＿。
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數B_g11s1e1/s3_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 444.95
+      - 59.2
+      - 564.3
+      - 178.55
+  answer:
+  - $\sqrt{3}$－1
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-1-1
+      book: 數學3B
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3B 弧度量
+    pattern:
+      key: MA-B3-1-1:T03
+      name: 扇形與圓複合陰影面積
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 實數對（x，y）滿足方程組$\begin{cases}\log _{2}x+\log _{y}8=2 \\ \log _{y}2+2 \log _{8}x=1\end{cases}$，求 x＋y 之值＝ ＿＿＿＿。
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$log_{y}$8＝$\frac{\log 8}{\log y}$＝$\frac{3 \log 2}{\log y}$＝3 $log_{y}$2，$log_{8}$x＝$\frac{\log x}{\log 8}$＝$\frac{\log x}{3 \log 2}$＝$\frac{1}{3} \log _{2}x$
+
+    $\begin{cases}\log _{2}x+\log _{y}8=2 \\ \log _{y}2+2 \log _{8}x =1\end{cases}$ ⇒ $\begin{cases}\log _{2}x+3 \log _{y}2=2 \cdots \cdots \cdots \cdots \cdots ① \\ \log _{y}2+\frac{2}{3} \log _{2}x =1\cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    ②×3－①得 $log_{2}$x＝1 ⇒ x＝2
+
+    代回①得 $log_{2}$2＋3 $log_{y}$2＝2 ⇒ 3 $log_{y}$2＝1 ⇒ $log_{y}$2＝$\frac{1}{3}$
+
+    ⇒ $y^{\frac{1}{3}}$＝2 ⇒ y＝$2^{3}$＝8
+
+    故 x＋y＝2＋8＝10'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T04
+      name: 對數律與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 天文學家以織女星的亮度 $I_{0}$ 為標準，被觀察的星星亮度為 I，將其星等定義為 m＝$-\frac{5}{2} \log \frac{I}{I_{0}}$。人類肉眼所能看到的最暗亮度為 6 等星，天文望遠鏡可觀測到 11 等星，試問 6 等星的亮度是 11 等星的＿＿＿＿倍。
+  answer:
+  - '100'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T07
+      name: 常用對數於科學尺度應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 設 log2＝p，log3＝q，則 $10^{3p＋2q}$ 的值＝＿＿＿＿。
+  assets:
+  - key: s3_4_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數B_g11s1e1/s3_4_f1.png
+    crop:
+      page: 3
+      rect:
+      - 477.75
+      - 255.35
+      - 564.3
+      - 363.2
+  answer:
+  - '72'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T02
+      name: 指數與對數互化求代數值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 如右略圖，直圓錐頂點為 A，底圓直徑$\overline{BC}$＝8，且$\overline{AB}$＝24。若一隻螞蟻 由 C 點沿錐面繞一圈到 D 點，其中 A、D、C 共一直線，已知$\overline{AD}$＝12。 求這隻螞蟻所走的最短路徑長度為＿＿＿＿。
+  answer:
+  - $12\sqrt{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-1-1
+      book: 數學3B
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3B 弧度量
+    pattern:
+      key: MA-B3-1-1:T02
+      name: 扇形弧長與面積公式求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 函數 y＝3 sin2x 在$\frac{\pi}{4}$ ≤ x ≤ $\frac{5\pi}{4}$內，與直線 y＝3 圍成一個封閉的圖形，則 此圖形的面積為＿＿＿＿。
+  answer:
+  - 3π
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-1-2
+      book: 數學3B
+      chapter: 三角函數
+      title: 週期性數學模型
+      std: true
+    textbook: 數學3B 週期性數學模型
+    pattern:
+      key: MA-B3-1-2:T06
+      name: 三角函數圖形與週期振幅平移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 如右圖所示，ABCD 為正方形，邊長為 2，四個等圓的圓心分別為 A，B，C，D，則陰影部分的面積為＿＿＿＿。
+  assets:
+  - key: s3_7_f1
+    kind: figure
+    file: doc_110_台中_興大附中_數學_數B_g11s1e1/s3_7_f1.png
+    crop:
+      page: 3
+      rect:
+      - 444.35
+      - 373.2
+      - 564.3
+      - 493.15
+  answer:
+  - 4－（4－$2\sqrt{2}$）π
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-1-1
+      book: 數學3B
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3B 弧度量
+    pattern:
+      key: MA-B3-1-1:T03
+      name: 扇形與圓複合陰影面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台中_興大附中_數學_數B_g11s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: '海水受到月球引力的影響會發生漲落的潮汐現象，下表是某港口在一天內海水漲落的紀錄表：經過長期的觀測得知，水深 y 與時間 t 可以用函數 y＝f（t）＝a sinbt＋c 來描述，根據上述資料，求出正數 a、b、c 的值，則 a＋b＋c＝＿＿＿＿。
+
+    | 時間 t（小時） | 0 | 3 | 6 | 9 | 12 | 15 | 18 | 21 | 24 |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | 水深 y（公尺） | 10 | 13 | 10 | 7 | 10 | 13 | 10 | 7 | 10 |'
+  answer:
+  - 13＋$\frac{\pi}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-1-2
+      book: 數學3B
+      chapter: 三角函數
+      title: 週期性數學模型
+      std: true
+    textbook: 數學3B 週期性數學模型
+    pattern:
+      key: MA-B3-1-2:T10
+      name: 潮汐與天文週期函數建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

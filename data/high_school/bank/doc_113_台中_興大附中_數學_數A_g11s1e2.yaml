@@ -1,0 +1,650 @@
+document:
+  id: doc_113_台中_興大附中_數學_數A_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 113學年度第1學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  source_file: 高二/數學/113/1-2/台中/興大附中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 10 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分，共 24 分。錯一個選項得 4 分，錯兩個選項得 2 分，錯三個選項以上或未作答者得 0 分）
+    count: 4
+  - ord: 3
+    name: 三、填充題（每題 6 分，共 60 分）
+    count: 10
+  - ord: 4
+    name: 四、計算題（共 6 分）
+    count: 1
+questions:
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列哪一個數值最大？
+  options:
+  - label: A
+    content: $3^{－2}$
+  - label: B
+    content: $\left( \frac{1}{3} \right) ^{- \sqrt{5}}$
+  - label: C
+    content: $\left( \frac{1}{3} \right) ^{- 2}$
+  - label: D
+    content: $(\sqrt{3})^{3}$
+  - label: E
+    content: $(\sqrt{3})^{- \sqrt{2}}$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left( \frac{1}{3} \right) ^{- \sqrt{5}}$＝$(3^{- 1})^{- \sqrt{5}}$＝$3^{\sqrt{5}}$
+
+    $\left( \frac{1}{3} \right) ^{- 2}$＝（$3^{－1}$）$^{－2}$＝$3^{2}$
+
+    $(\sqrt{3})^{3}$＝$(3^{\frac{1}{2}})^{3}$＝$3^{\frac{3}{2}}$
+
+    $(\sqrt{3})^{- \sqrt{2}}$＝$(3^{\frac{1}{2}})^{- \sqrt{2}}$＝$3^{-\frac{\sqrt{2}}{2}}$
+
+    ∵$\sqrt{5}$＞2＞$\frac{3}{2}$＞$-\frac{\sqrt{2}}{2}$＞－2，且底數 3＞1
+
+    ∴$3^{\sqrt{5}}$＞$3^{2}$＞$3^{\frac{3}{2}}$＞$3^{-\frac{\sqrt{2}}{2}}$＞$3^{－2}$
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T09
+      name: 指數運算與數值大小估計
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 指數方程式$2^{10^{x}}= 10^{9}$的解 x 最接近下列哪一個選項？
+  options:
+  - label: A
+    content: '1.2'
+  - label: B
+    content: '1.3'
+  - label: C
+    content: '1.4'
+  - label: D
+    content: '1.5'
+  - label: E
+    content: '1.6'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$2^{10^{x}}$＝$10^{\log 2^{10^{x}}}$＝$10^{10^{x}\log 2}$＝$10^{9}$
+
+    $\Rightarrow10^{x}$＝$\frac{9}{\log 2}\approx\frac{9}{0.3010}\approx$29.9
+
+    又 29.9$\approx$30＝3×10＝$10^{log3}$×10＝$10^{log3＋1}$
+
+    $\approx10^{0.4771＋1}$＝$10^{1.4771}$
+
+    $\Rightarrow10^{x}\approx10^{1.4771}\Rightarrow$x$\approx$1.4771
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T07
+      name: 對數值估計與代數條件求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 選出正確的選項。
+  options:
+  - label: A
+    content: 若 a＞b＞1，則 $log_{a}$b＞1
+  - label: B
+    content: 若 a＞b＞1，則 $log_{b}$a＜1
+  - label: C
+    content: 若 a＞1＞b＞0，則 $log_{b}$a＞0
+  - label: D
+    content: 若 1＞a＞b＞0，則 $log_{a}$b＞1
+  - label: E
+    content: 若 1＞b＞a＞0，則 0＜$log_{a}$b＜1
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：a＞b 且 a＞1$\Rightarrowlog_{a}$a＞$log_{a}$b$\Rightarrow$1＞$log_{a}$b
+
+    (B)╳：a＞b 且 b＞1$\Rightarrowlog_{b}$a＞$log_{b}$b$\Rightarrowlog_{b}$a＞1
+
+    (C)╳：a＞1 且 1＞b＞0$\Rightarrowlog_{b}$a＜$log_{b}$1$\Rightarrowlog_{b}$a＜0
+
+    (D)○：a＞b 且 1＞a＞0$\Rightarrowlog_{a}$a＜$log_{a}$b$\Rightarrow$1＜$log_{a}$b
+
+    (E)○：1＞b＞a 且 1＞a＞0$\Rightarrowlog_{a}$1＜$log_{a}$b＜$log_{a}$a$\Rightarrow$0＜$log_{a}$b＜1
+
+    故選(D)(E)'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T06
+      name: 對數不等式與真數定義域
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列敘述何者正確？
+  options:
+  - label: A
+    content: y＝$2^{x}$ 之圖形與 y＝－$2^{x}$ 之圖形對稱於 x 軸
+  - label: B
+    content: 將 y＝$log_{2}$x 之圖形向左平移 2 單位，再向上平移 3 單位後，得新圖形方程式為 y－3＝$log_{2}$（x＋2）
+  - label: C
+    content: y＝$log_{2}$∣x∣之圖形對稱於 x 軸
+  - label: D
+    content: y＝$log_{2}$（－x）之圖形與 y＝－$2^{x}$ 之圖形對稱於直線 y＝x
+  - label: E
+    content: y＝∣$log_{2}$x∣圖形與$y = \sqrt{2}$圖形的兩個交點之 x 坐標乘積為 1
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T01
+      name: 對數函數圖形與對稱性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 曲線 y＝$a^{x}$ 的部分圖形與 x 軸的關係如右圖所示，其中 A，B，C 為 x 軸上的相異三點，且$\overline{AB} = \overline{BC}$，過 A、B、C 三點分別作 x 軸的垂線，並交曲線 y＝$a^{x}$ 的圖形於 D、E、F 三點。下列選項哪些正確？
+  options:
+  - label: A
+    content: a＞1
+  - label: B
+    content: 若 B 為原點，則$\overline{AD}\times \overline{CF} =a^{2}$
+  - label: C
+    content: $\overline{AD}\times \overline{CF} = \overline{BE}^{2}$
+  - label: D
+    content: $\overline{AD} + \overline{CF}$＞$2\times \overline{BE}$
+  - label: E
+    content: $\overline{AD}$，$\overline{BE}$，$\overline{CF}$三線段長度有可能成等差數列
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_113_台中_興大附中_數學_數A_g11s1e2/s2_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 458.75
+      - 48.6
+      - 564.3
+      - 146.1
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T01
+      name: 指數函數圖形與單調性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 下列敘述何者正確？
+  options:
+  - label: A
+    content: $100^{-\frac{3}{2}}=\frac{1}{1000}$
+  - label: B
+    content: 若 x＝$log_{2}$3，則 $4^{x}$＝9
+  - label: C
+    content: $0.3^{－0.4}$＞$0.4^{－0.3}$
+  - label: D
+    content: 設 x，y＜0，且 $2^{x}$＝$3^{y}$，則 2x＞3y
+  - label: E
+    content: 若 n 為正整數，則 $n^{6}$＜$10^{9}$＜（n＋1）$^{6}$，則 n＝31
+  answer:
+  - A
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T09
+      name: 指數運算與數值大小估計
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 設$f (x)=\frac{5^{x} - 5^{-x}}{2}$，且 f（a）＝3，試求 f（3a）＝＿＿＿＿。
+  explanation: 'f（a）＝3$\Rightarrow\frac{5^{a} - 5^{-a}}{2}= 3\Rightarrow5^{a}$－$5^{－a}$＝6
+
+    f（3a）＝$\frac{5^{3a} - 5^{- 3a}}{2}$＝$\frac{1}{2} (5^{a} - 5^{-a})(5^{2a} + 5^{- 2a} + 1)$
+
+    ＝$\frac{1}{2} (5^{a} - 5^{-a})〔(5^{a} - 5^{-a})^{2}+2\times 5^{a}\times 5^{-a} + 1〕$
+
+    ＝$\frac{1}{2}\times 6\times (6^{2} + 3)$＝3×39＝117'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T02
+      name: 指數律化簡與對稱求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 不等式$\log _{\frac{1}{2}} (x - 1)$＞$\log _{\frac{1}{4}} (3 -x)$之解為＿＿＿＿。
+  explanation: '$\begin{cases}x - 1 > 0 \\ 3 - x > 0\end{cases}\Rightarrow\begin{cases}x > 1 \\ x < 3\end{cases}$
+
+    $\Rightarrow$1＜x＜3 ………………①
+
+    $\log _{\frac{1}{2}} (x - 1)$＞$\log _{\frac{1}{4}} (3 - x)\Rightarrow\log _{\frac{1}{4}} (x - 1)^{2}$＞$\log _{\frac{1}{4}} (3 - x)$
+
+    又底數為$\frac{1}{4}$＜1
+
+    $\Rightarrow$（x－1）$^{2}$＜（3－x）$\Rightarrowx^{2}$－2x＋1＜3－x
+
+    $\Rightarrowx^{2}$－x－2＜0$\Rightarrow$（x＋1）（x－2）＜0
+
+    $\Rightarrow$－1＜x＜2 ……………②
+
+    由①、②可知 1＜x＜2'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T03
+      name: 對數不等式求解與定義域
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 幸福公司為增進業務的發展，制定了一個激勵銷售人員的獎勵模型：y＝a $log_{4}$（x－1）＋b，x 表銷售金額（萬元），y 表獎勵金額（萬元），a，b 為常數。已知銷售金額為 17 萬元時，獎勵為 1 萬元；銷售金額為 33 萬元時，獎勵為 5 萬元。根據上述資料可得數對 （a，b）＝＿＿＿＿。
+  answer:
+  - （8，－15）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\begin{cases}1 =a\log _{4} (17 - 1)+b \\ 5 =a\log _{4} (33 - 1)+b\end{cases}$
+
+    $\Rightarrow\begin{cases}1 =a\log _{4}4^{2} +b \\ 5 =a\times \frac{5\log 2}{2\log 2}+b\end{cases}$
+
+    $\Rightarrow\begin{cases}1 = 2a +b \cdots \cdots \cdots \cdots \cdots ① \\ 5 =\frac{5}{2}a +b\cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    由②－①得$\frac{1}{2}a = 4$
+
+    $\Rightarrow$a＝8$\Rightarrow$b＝－15
+
+    故數對（a，b）＝（8，－15）'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T04
+      name: 對數函數圖形、漸近線與對稱
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 若－1$\leq$x$\leq$2，$f (x)= \left( \frac{1}{3} \right) ^{x^{2} - 2x + 1}$的最大值為 m，最小值為 n，則 m－n＝＿＿＿＿。
+  answer:
+  - $\frac{80}{81}$ 5.11 6.48 7.1000 8.$7 + 5\sqrt{2}$ 9.116 10.14
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（x）＝$\left( \frac{1}{3} \right) ^{x^{2} - 2x + 1}$＝$\left( \frac{1}{3} \right) ^{(x - 1)^{2}}$
+
+    ∴x＝1 時，f（x）有最大值$\left( \frac{1}{3} \right) ^{0}$＝1＝m
+
+    x＝－1 時，f（x）有最小值$\left( \frac{1}{3} \right) ^{(- 2)^{2}}$＝$\frac{1}{81}$＝n
+
+    故 m－n＝$1 -\frac{1}{81}$＝$\frac{80}{81}$
+
+    $5.10^{n－1}$＞$8^{n}$
+
+    $\Rightarrowlog10^{n－1}$＞$log8^{n}\Rightarrow$n－1＞n log8
+
+    $\Rightarrow$n－1＞n（3 log2）$\Rightarrow$n（1－3 log2）＞1
+
+    $\Rightarrow$n＞$\frac{1}{1 - 3\log 2}\approx\frac{1}{1 - 3\times 0.3010}$＝$\frac{1}{0.097}$＝10.3 …
+
+    故 n 至少為 11
+
+    6.a＝$3^{（－1）＋（－3）＋（－5）＋……＋（－19）}$
+
+    ＝$3^{\frac{〔(- 1)+(- 19)〕 \times 10}{2}}$＝$3^{－100}$
+
+    ＝（$10^{log3}$）$^{－100}\approx10^{－100×0.4771}$
+
+    ＝$10^{－47.71}$＝$10^{－48＋0.29}$
+
+    ＝$10^{0.29}$×$10^{－48}$
+
+    故 a 在小數點後第 48 位開始出現不為 0 的數字
+
+    7.設交談強度 $I_{1}$，音響強度 $I_{2}$
+
+    $\begin{cases}60 = 10\log \frac{I_{1}}{10^{- 12}} \\ 90 = 10\log \frac{I_{2}}{10^{- 12}}\end{cases}$
+
+    $\Rightarrow\begin{cases}10^{6} =\frac{I_{1}}{10^{- 12}} \\ 10^{9} =\frac{I_{2}}{10^{- 12}}\end{cases}\Rightarrow\begin{cases}I_{1} = 10^{- 6} \\ I_{2} = 10^{- 3}\end{cases}$
+
+    ∴$\frac{I_{2}}{I_{1}}$＝$\frac{10^{- 3}}{10^{- 6}}$＝$10^{3}$＝1000
+
+    故 1000 人一起日常交談的音量，可以和演唱會音響一樣大聲
+
+    8.$log_{10}$x＝$\frac{3\log x}{3\log 10}$＝$log_{1000}x^{3}$＝$log_{1000}$（x＋2y）
+
+    $log_{100}$y＝$\frac{\log y}{2\log 10}$＝$\frac{\frac{3}{2}\log y}{3\log 10}$＝$\log _{1000}y^{\frac{3}{2}}$＝$log_{1000}$（x＋2y）
+
+    $\Rightarrowx^{3}$＝$y^{\frac{3}{2}}$＝x＋2y
+
+    由$x^{3} = y^{\frac{3}{2}}\Rightarrowx = y^{\frac{1}{2}}$
+
+    代入$y^{\frac{3}{2}} = x + 2y\Rightarrowy^{\frac{3}{2}} = y^{\frac{1}{2}} + 2y$
+
+    設$y^{\frac{1}{2}} =a$
+
+    $\Rightarrowa^{3}$＝a＋$2a^{2}$
+
+    $\Rightarrowa^{3}$－$2a^{2}$－a＝0
+
+    $\Rightarrow$a（$a^{2}$－2a－1）＝0
+
+    $\Rightarrow$a＝0 或$\frac{2\pm \sqrt{8}}{2}$，又$a = y^{\frac{1}{2}}$＞0
+
+    ∴a＝$1 + \sqrt{2}$＝$y^{\frac{1}{2}}\Rightarrow$y＝$(1 + \sqrt{2})^{2}$＝$3 + 2\sqrt{2}$
+
+    x＝$y^{\frac{1}{2}}$＝$1 + \sqrt{2}$
+
+    故 x＋2y＝$(1 + \sqrt{2})+ 2 (3 + 2\sqrt{2})$＝$7 + 5\sqrt{2}$
+
+    9.1×（1＋2 ％）$^{60}$＋1×（1＋2 ％）$^{59}$＋……＋1×（1＋2 ％）$^{1}$
+
+    ＝$\frac{(1 + 2 ％)〔(1 + 2 ％)^{60} - 1〕}{(1 + 2 ％)- 1}\approx\frac{1.02 (3.2810 - 1)}{0.02}$
+
+    ＝116.331$\approx$116
+
+    故 5 年後本利和為 116 萬元
+
+    10.已知$\begin{cases}31 <\log a^{50} < 32 \\ - 36 <\log \left( \frac{1}{b} \right) ^{50}<- 35\end{cases}$
+
+    $\Rightarrow\begin{cases}31 < 50\log a < 32 \\ - 36 < 50\log \frac{1}{b}<- 35\end{cases}$
+
+    $\Rightarrow\begin{cases}31 < 50\log a < 32\cdots \cdots \cdots \cdots \cdots ① \\ 35 < 50\log b < 36 \cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    由①＋②得 66＜50（loga＋logb）＜68
+
+    $\Rightarrow$13.2＜10 logab＜13.6
+
+    $\Rightarrow$13.2＜log（ab）$^{10}$＜13.6
+
+    故（ab）$^{10}$ 為 14 位數'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T04
+      name: 指數複合函數的極值問題
+    labeled_by: agent
+    label_confidence: high
+    label_note: answer 與 explanation 欄位混入後續多題內容
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 滿足 $10^{n－1}$＞$8^{n}$ 的最小正整數 n 為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T06
+      name: 常用對數首尾數與位數估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 若 a＝$3^{－1}$×$3^{－3}$×$3^{－5}$×……×$3^{－19}$，則 a 在小數點後第＿＿＿＿位開始出現不為零的數字。
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T03
+      name: 首數與尾數的意義及應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知聲音的強度是每平方公尺多少能量（單位：W／$m^{2}$，W 為瓦特），而 0 分貝是根據聽力正常年輕人所能聽到的最小聲音所訂定的。若某一發聲體的強度為 I（W／$m^{2}$），將它換算成分貝 d 表示時，其公式為$d (I)= 10\log \frac{I}{I_{0}}$，$I_{0}$＝$10^{－12}$（W／$m^{2}$）。假設演唱會音響的聲音為 90 分貝，人們日常交談的聲音為 60 分貝，試求＿＿＿＿人一起日常交談的音量，可以和演唱會音響一樣大聲。
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T10
+      name: 對數在科學與生活尺度之應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知實數 x，y＞0，若 $log_{10}$x＝$log_{100}$y＝$log_{1000}$（x＋2y），則 x＋2y＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T05
+      name: 對數定義與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 幸福基金的月報酬率為 2 ％且以複利計息，若小美每月固定買入幸福基金 1 萬元，則 5 年後本利和為＿＿＿＿萬元。（四捨五入至整數位）
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T04
+      name: 複利儲蓄與對數近似計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 已知 a，b 為正數，$a^{50}$ 為 32 位數，$\left( \frac{1}{b} \right) ^{50}$的小數點以下第 36 位開始不為零，則（ab）$^{10}$ 為 ＿＿＿＿位數。
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T03
+      name: 首數與尾數的意義及應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數A_g11s1e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '小美下午喝了一杯有黃色標章的咖啡，含有 150 毫克的咖啡因，假設它會以每小時 20 ％的指數衰減速度離開小美體內，即一小時後會剩下 120 毫克的咖啡因，設 x 小時後咖啡因剩下 f（x）毫克，試回答下列各問題：
+
+    (1) 請寫出 f（x）。（1 分）
+
+    (2) 試用對數表示咖啡因的半衰期為多少小時。（1 分）
+
+    (3) 承(2)，試求半衰期的近似值。（四捨五入至小數點後第一位）。（4 分）'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T10
+      name: 指數成長、半衰與冷卻應用
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3

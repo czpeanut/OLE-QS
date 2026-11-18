@@ -1,0 +1,841 @@
+document:
+  id: doc_113_台南_台南二中_數學_數乙_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 台南
+  school_short: 台南二中
+  school: 國立臺南第二高級中學
+  title: 國立臺南第二高級中學 113學年度第1學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  source_file: 高三/數學/113/1-1/台南/台南二中_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、是非題，正確請填「○」，錯誤請填「╳」。（每題 1 分，共 10 分）
+    count: 10
+  - ord: 2
+    name: 二、多重選擇題（每題 5 分，答錯 1 個選項得 3 分，答錯 2 個選項得 1 分，答錯多於 2 個選項或未作答者不給分。共 10 分）
+    count: 2
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 55 分）
+    count: 11
+  - ord: 4
+    name: 四、混合題（共 25 分）
+    count: 4
+questions:
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: calc
+  page: 1
+  stem: $9.\overline{9}$＜10
+  answer:
+  - ╳
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '╳：設 x＝$9.\overline{9}$ ……………①
+
+    10x＝$99.\overline{9}$……………②
+
+    ②－① 得 9x＝90 ⇒ x＝10
+
+    ∴$9.\overline{9}$＝10'
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T04
+      name: 拆項與循環小數級數求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: calc
+  page: 1
+  stem: $\lim_{n\rightarrow \infty} \frac{{4^{n}}^{+1}}{3^{2n}}$＝0
+  answer:
+  - ○
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ○：$\lim_{n\rightarrow \infty} \frac{{4^{n}}^{+1}}{3^{2n}}$＝$\lim_{n\rightarrow \infty} \frac{4\times 4^{n}}{(3^{2})^{n}}$＝$\lim_{n\rightarrow \infty} \frac{4\times 4^{n}}{9^{n}}$＝4×$\lim_{n\rightarrow \infty} \left( \frac{4}{9} \right) ^{n}$＝0
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T01
+      name: 無窮數列收斂發散判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: calc
+  page: 1
+  stem: $\lim_{x\rightarrow 0} \frac{(x+1)^{4}}{(x-1)}$＝1
+  answer:
+  - ╳
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ╳：$\lim_{x\rightarrow 0} \frac{(x+1)^{4}}{x-1}$＝$\frac{1}{-1}$＝－1
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T02
+      name: 多項式與分式直接代入求極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: calc
+  page: 1
+  stem: 無窮數列$\left\langle \left( 3-\frac{5}{n} \right) \left( \frac{2n}{3n+1} \right) \right\rangle$為收斂數列。
+  answer:
+  - ○
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '○：∵$\lim_{n\rightarrow \infty} \left( \left( 3-\frac{5}{n} \right) \left( \frac{2n}{3n+1} \right) \right)$＝$\lim_{n\rightarrow \infty} \left( 3-\frac{5}{n} \right)$×$\lim_{n\rightarrow \infty} \frac{2n}{3n+1}$
+
+    ＝$\lim_{n\rightarrow \infty} \left( 3-\frac{5}{n} \right)$×$\lim_{n\rightarrow \infty} \frac{2}{3+\frac{1}{n}}$
+
+    ＝3×$\frac{2}{3}$＝2
+
+    ∴此數列為收斂數列'
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T02
+      name: 分式與指數數列極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_5
+  section: 1
+  number: 5
+  type: calc
+  page: 1
+  stem: 無窮等比級數 1－$\frac{4}{3}$＋$\frac{16}{9}$－$\frac{64}{27}$＋……的和為$\frac{1}{1-\left( -\frac{4}{3} \right)}$＝$\frac{3}{7}$
+  answer:
+  - ╳
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '╳：∵公比 r＝－$\frac{4}{3}$＜－1
+
+    ∴此無窮等比級數發散'
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T01
+      name: 無窮數列收斂發散判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_6
+  section: 1
+  number: 6
+  type: calc
+  page: 1
+  stem: 函數 f（x）＝｜x｜為偶函數。
+  answer:
+  - ○
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '○：∵f（－x）＝｜－x｜＝｜x｜＝f（x）
+
+    ∴f（x）＝｜x｜為偶函數'
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T14
+      name: 函數定義域、奇偶性與合成
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_7
+  section: 1
+  number: 7
+  type: calc
+  page: 1
+  stem: 函數 f（x）＝x＋$\frac{1}{x}$為奇函數。
+  answer:
+  - ○
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '○：∵f（－x）＝－x＋$\frac{1}{(-x)}$＝－x－$\frac{1}{x}$＝－$\left( x+\frac{1}{x} \right)$＝－f（x）
+
+    ∴f（x）＝x＋$\frac{1}{x}$為奇函數'
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T14
+      name: 函數定義域、奇偶性與合成
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_8
+  section: 1
+  number: 8
+  type: calc
+  page: 1
+  stem: 函數 f（x）＝｜x｜的定義域為所有正實數。
+  answer:
+  - ╳
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ╳：f（x）＝｜x｜的定義域為所有實數
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T13
+      name: 函數定義域值域與分段求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_9
+  section: 1
+  number: 9
+  type: calc
+  page: 1
+  stem: 函數 f（x）＝$\frac{1}{x}$的值域為所有實數。
+  answer:
+  - ╳
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ╳：f（x）＝$\frac{1}{x}$的值域為不含 0 的所有實數
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T13
+      name: 函數定義域值域與分段求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s1_10
+  section: 1
+  number: 10
+  type: calc
+  page: 1
+  stem: 函數 f（x）＝$\begin{cases}\frac{x^{2}-9}{x-3} , x\neq 3 \\ 6 , x=3\end{cases}$於實數上為連續函數。
+  answer:
+  - ○
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '○：∵$\lim_{x\rightarrow 3} f(x)$＝$\lim_{x\rightarrow 3} \frac{x^{2}-9}{x-3}$＝$\lim_{x\rightarrow 3} (x+3)$＝6＝f(3)
+
+    ∴f（x）於實數上為連續函數'
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T07
+      name: 函數連續性檢驗與求參
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 已知函數 f（x）＝$\begin{cases}-1 , x>0 \\ 0 , x=0 \\ 1 , x<0\end{cases}$，則下列選項哪些正確？
+  options:
+  - label: A
+    content: f(1)＞f（－1）
+  - label: B
+    content: $\lim_{x\rightarrow -1} f(x)$＝f（－1）
+  - label: C
+    content: $\lim_{x\rightarrow 0} f(x)$＝0
+  - label: D
+    content: $\lim_{x\rightarrow 1} \frac{f(x)}{(x-1)}$＝－1
+  - label: E
+    content: $\lim_{x\rightarrow -1} \frac{(x+1)}{f(x)}$＝0
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：∵f(1)＝－1，f（－1）＝1
+
+    ∴f(1)＜f（－1）
+
+    (B)○：$\lim_{x\rightarrow -1} f(x)$＝$\lim_{x\rightarrow -1} 1$＝1＝f（－1）
+
+    (C)╳：∵$\lim_{x\rightarrow 0^{-}} f(x)$＝1 且$\lim_{x\rightarrow 0^{+}} f(x)$＝－1
+
+    ∴$\lim_{x\rightarrow 0} f(x)$極限不存在
+
+    (D)╳：$\lim_{x\rightarrow 1} \frac{f(x)}{x-1}$＝$\lim_{x\rightarrow 1} \frac{-1}{x-1}$
+
+    ∵$\lim_{x\rightarrow 1} (x-1)$＝0 ∴極限不存在
+
+    (E)○：$\lim_{x\rightarrow -1} \frac{(x+1)}{f(x)}$＝$\lim_{x\rightarrow -1} \frac{x+1}{1}$＝0
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T03
+      name: 分段、絕對值與高斯函數左右極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 若 f（x）＝（x－4）（x－6）（x－8）＋（x－5）（x－7）（x－9），試問方程式 f（x）＝0 在下列哪兩個正整數之間有實根？
+  options:
+  - label: A
+    content: 4 與 5 之間
+  - label: B
+    content: 5 與 6 之間
+  - label: C
+    content: 6 與 7 之間
+  - label: D
+    content: 7 與 8 之間
+  - label: E
+    content: 8 與 9 之間
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f(4)＝（－1）×（－3）×（－5）＝－15
+
+    f(5)＝1×（－1）×（－3）＝3
+
+    f(6)＝1×（－1）×（－3）＝3
+
+    f(7)＝3×1×（－1）＝－3
+
+    f(8)＝3×1×（－1）＝－3
+
+    f(9)＝5×3×1＝15
+
+    ∵f(4)×f(5)＜0，f(6)×f(7)＜0，f(8)×f(9)＜0
+
+    ∴方程式 f（x）＝0 在 4 與 5 之間，6 與 7 之間，8 與 9 之間有實根
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T08
+      name: 介值定理與勘根應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 已知$\sum_{k=1}^{15} a_{k}=11$，$\sum_{k=1}^{15} b_{k}=-3$，試求$\sum_{k=1}^{15} (2a_{k}-3b_{k}+5)$之值為＿＿＿＿。
+  answer:
+  - '106'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\sum_{k=1}^{15} (2a_{k}-3b_{k}+5)$＝$2\sum_{k=1}^{15} a_{k}$－$3\sum_{k=1}^{15} b_{k}$＋$\sum_{k=1}^{15} 5$
+
+    ＝2×11－3×（－3）＋5×15
+
+    ＝22＋9＋75
+
+    ＝106'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T09
+      name: Sigma運算性質真偽判別
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 已知 a、b 為實數且$\frac{a}{2}$＋$\frac{b}{2^{2}}$＋$\frac{a}{2^{3}}$＋$\frac{b}{2^{4}}$＋……＋$\frac{a}{{2^{2n}}^{-1}}$＋$\frac{b}{2^{2n}}$＋……＝5，試求 2a＋b＝ ＿＿＿＿。
+  answer:
+  - '15'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left( \frac{a}{2}+\frac{a}{2^{3}}+\frac{a}{2^{5}}+\cdots \cdots +\frac{a}{{2^{2n}}^{-1}}+\cdots \cdots \right)$＋$\left( \frac{b}{2^{2}}+\frac{b}{2^{4}}+\frac{b}{2^{6}}+\cdots \cdots +\frac{b}{2^{2n}}+\cdots \cdots \right)$
+
+    ＝$a\left( \frac{1}{2}+\frac{1}{2^{3}}+\frac{1}{2^{5}}+\cdots \cdots +\frac{1}{{2^{2n}}^{-1}}+\cdots \cdots \right)$＋$b\left( \frac{1}{2^{2}}+\frac{1}{2^{4}}+\frac{1}{2^{6}}+\cdots \cdots +\frac{1}{2^{2n}}+\cdots \cdots \right)$
+
+    ＝a×$\frac{\frac{1}{2}}{1-\frac{1}{2^{2}}}$＋b×$\frac{\frac{1}{2^{2}}}{1-\frac{1}{2^{2}}}$＝$\frac{2}{3}$a＋$\frac{1}{3}$b＝5
+
+    ⇒ 2a＋b＝15'
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T04
+      name: 拆項與循環小數級數求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 試求$\lim_{n\rightarrow \infty} \frac{1 \cdot n+2 \cdot n+3 \cdot n+4 \cdot n+\cdots \cdots +n \cdot n}{1 \cdot 1+2 \cdot 2+3 \cdot 3+4 \cdot 4+\cdots \cdots +n \cdot n}$＝＿＿＿＿。
+  answer:
+  - $\frac{3}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n\rightarrow \infty} \frac{1 \cdot n+2 \cdot n+3 \cdot n+4 \cdot n+\cdots \cdots +n \cdot n}{1 \cdot 1+2 \cdot 2+3 \cdot 3+4 \cdot 4+\cdots \cdots +n \cdot n}$
+
+    ＝$\lim_{n\rightarrow \infty} \frac{n(1+2+3+4+\cdots \cdots +n)}{1^{2}+2^{2}+3^{2}+4^{2}+\cdots \cdots +n^{2}}$＝$\lim_{n\rightarrow \infty} \frac{n \cdot \frac{n(n+1)}{2}}{\frac{n(n+1)(2n+1)}{6}}$
+
+    ＝$\lim_{n\rightarrow \infty} \frac{3n}{2n+1}$＝$\lim_{n\rightarrow \infty} \frac{3}{2+\frac{1}{n}}$＝$\frac{3}{2}$'
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T02
+      name: 分式與指數數列極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 甲、乙兩人輪流擲一顆公正骰子，約定規則如下：當擲出點數為 6 點時，此人獲勝；當擲出點數不為 6 時，改由另一人投擲。若由甲先擲，試求乙獲勝的機率為＿＿＿＿。
+  answer:
+  - $\frac{5}{11}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（乙獲勝）＝$\frac{5}{6}$×$\frac{1}{6}$＋$\left( \frac{5}{6} \right) ^{3}$×$\frac{1}{6}$＋$\left( \frac{5}{6} \right) ^{5}$×$\frac{1}{6}$＋……
+
+    ＝$\frac{\frac{5}{6}\times \frac{1}{6}}{1-\left( \frac{5}{6} \right) ^{2}}$＝$\frac{\frac{5}{36}}{1-\frac{25}{36}}$＝$\frac{5}{11}$'
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T03
+      name: 無窮等比級數求和與反推
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 設函數 f（x）＝$\sqrt{9-x^{2}}$，g（x）＝x＋3，求函數$\frac{f(x)}{g(x)}$的定義域為＿＿＿＿。
+  answer:
+  - ｛x｜x ∈ R，－3＜x ≤ 3｝
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T13
+      name: 函數定義域值域與分段求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 試求函數 f（x）＝$\sqrt{4+2x-x^{2}}$的值域為＿＿＿＿。
+  answer:
+  - ｛y｜y ∈ R，0 ≤ y ≤ $\sqrt{5}$｝
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T13
+      name: 函數定義域值域與分段求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 若 f（x）＝$x^{2}$＋x－1、g（x）＝$x^{2}$，試求（f。g）（－2）＋（g。f）（－3）＝＿＿＿＿。
+  answer:
+  - '44'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T14
+      name: 函數定義域、奇偶性與合成
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 若函數 f（x）如右圖，試求$\lim_{x\rightarrow 2} f(x)$＝＿＿＿＿。
+  assets:
+  - key: s3_8_f1
+    kind: figure
+    file: doc_113_台南_台南二中_數學_數乙_g12s1e1/s3_8_f1.png
+    crop:
+      page: 2
+      rect:
+      - 445.15
+      - 475.8
+      - 564.3
+      - 599.6
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T09
+      name: 函數圖形判讀極限與連續性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 已知函數 f（x）＝$\begin{cases}3x-2b , x>1 \\ 3ax+b , -2\leq x \leq 1 \\ x+2a , x<-2\end{cases}$，a、b 為實數且 f（x）為連續函數，試求數對（a，b）＝＿＿＿＿。
+  answer:
+  - $\left( \frac{1}{3} , \frac{2}{3} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T07
+      name: 函數連續性檢驗與求參
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 已知 f（x）滿足$\frac{-x^{2}-x+5}{6}$ ≤ f（x）≤ $\frac{x^{2}-x+5}{6}$，其中－1 ≤ x ≤ 1，且 x≠0，試求$\lim_{x\rightarrow 0} f(x)$＝ ＿＿＿＿。
+  answer:
+  - $\frac{5}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T06
+      name: 夾擠定理求函數極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 2
+  stem: 試求$\lim_{x\rightarrow 5} \frac{1}{x-5}\left( \frac{1}{x}-\frac{1}{5} \right)$＝＿＿＿＿。
+  answer:
+  - $-\frac{1}{25}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T04
+      name: 不定型約分化簡求極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 3
+  stem: '設$\overline{PQ}$＝30，以$\overline{PQ}$的$\frac{1}{3}$為邊長，作一正方形 $A_{1}$，再以剩下線段的$\frac{1}{3}$為邊長作一正方形 $A_{2}$，如此繼續下去，得到一序列的正方形 $A_{1}$，$A_{2}$，$A_{3}$，……，如圖所示。
+
+    (1) $A_{1}$ 的面積：$A_{2}$ 的面積為（單選，3 分）
+
+    (2) 求無窮多個正方形 $A_{1}$，$A_{2}$，$A_{3}$，……面積的總和。（3 分）'
+  options:
+  - label: A
+    content: 2：1
+  - label: B
+    content: 4：1
+  - label: C
+    content: 3：2
+  - label: D
+    content: 9：4
+  - label: E
+    content: 16：9
+  assets:
+  - key: s4_1_f1
+    kind: figure
+    file: doc_113_台南_台南二中_數學_數乙_g12s1e1/s4_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 389.5
+      - 76.15
+      - 564.3
+      - 148.2
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T03
+      name: 無窮等比級數求和與反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s4_2
+  section: 4
+  number: 2
+  type: calc
+  page: 3
+  stem: '設想您居住在繁華的大都市，計程車隨時可供召喚。然而，每趟車資均經過精確的計算，讓我們來探討這項計費機制：起步價為新臺幣 70 元，此費用僅涵蓋 1 公里的行程。接續的行程費用則依每 0.5 公里加收 5 元。也就是說，行駛距離越遠，所需支付的費用將相應增加。現在，如果計程車行駛距離為 x 公里，車資公式為 f（x）＝$\begin{cases}70 , 0<x\leq 1, \\ 70+5\left[ \frac{x-1}{0.5} \right] , x>1\end{cases}$，其中[ ]為高斯符號。
+
+    (1) 假設要從家裡到圖書館，距離為 7.6 公里，請計算這段行程的計程車費用。（3 分）
+
+    (2) 假設乘坐計程車從圖書館到朋友家，車資為 100 元，求這段行駛距離的範圍？（3 分）'
+  answer:
+  - (1) f（7.6）＝70＋$5\left[ \frac{7.6-1}{0.5} \right]$＝70＋5×13＝135（元）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T13
+      name: 函數定義域值域與分段求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s4_3
+  section: 4
+  number: 3
+  type: single
+  page: 4
+  stem: '已知$\lim_{x\rightarrow 2} \frac{x^{3}+ax+b}{(x+2)^{2}(x-2)^{2}}$存在。
+
+    (1) 試選出數對（a，b）。（單選，3 分）
+
+    (2) 試求$\lim_{x\rightarrow 2} \frac{x^{3}+ax+b}{(x+2)^{2}(x-2)^{2}}$。（3 分）'
+  options:
+  - label: A
+    content: （－4，4）
+  - label: B
+    content: （－12，16）
+  - label: C
+    content: （4，8）
+  - label: D
+    content: （－4，0）
+  - label: E
+    content: （12，－16）
+  tags:
+    unit:
+      code: MA-Y1-1-2
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學乙（上） 函數與函數的極限
+    pattern:
+      key: MA-Y1-1-2:T05
+      name: 由函數極限存在反推參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台南_台南二中_數學_數乙_g12s1e1_s4_4
+  section: 4
+  number: 4
+  type: calc
+  page: 4
+  stem: '設〈$a_{n}$〉為一等差數列，已知 $a_{1}$＋$a_{3}$＋$a_{5}$＝114、$a_{2}$＋$a_{6}$＝64，
+
+    (1) 試求 $a_{1}$ 與公差。（4 分）
+
+    (2) 令 $S_{n}$＝$a_{1}$＋$a_{2}$＋……＋$a_{n}$，試求$\lim_{n\rightarrow \infty} \frac{S_{n}}{n^{2}}$。（3 分）'
+  answer:
+  - (1)設此等差數列之公差為 d
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T02
+      name: 分式與指數數列極限計算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2

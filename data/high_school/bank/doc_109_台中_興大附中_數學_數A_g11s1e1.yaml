@@ -1,0 +1,786 @@
+document:
+  id: doc_109_台中_興大附中_數學_數A_g11s1e1
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 109
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 109學年度第1學期第1次定期評量 高二數學（數A）科試題
+  exam_name: 109學年度第1學期第1次定期評量
+  source_file: 高二/數學/109/1-1/台中/興大附中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 16 分）
+    count: 4
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 32 分）
+    count: 4
+  - ord: 3
+    name: 三、填充題（共 44 分）
+    count: 8
+  - ord: 4
+    name: 四、混合題（共 8 分）
+    count: 1
+questions:
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 令 a＝sin（3π$^{2}$），試問下列哪一個選項是對的？
+  options:
+  - label: A
+    content: $- 1 <a\leq - \frac{\sqrt{3}}{2}$
+  - label: B
+    content: $- \frac{\sqrt{3}}{2}<a\leq - \frac{1}{2}$
+  - label: C
+    content: $- \frac{1}{2}<a\leq 0$
+  - label: D
+    content: $\frac{1}{2}<a\leq \frac{\sqrt{3}}{2}$
+  - label: E
+    content: $\frac{\sqrt{3}}{2}<a\leq 1$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'a＝sin（3π$^{2}$）＝sin（3π×π）$\approx$sin（9.42π）＝sin（1.42π）
+
+    由$\frac{4\pi}{3}< 1.42\pi <\frac{3\pi}{2}\Rightarrow\sin \frac{4\pi}{3}>\sin 1.42\pi >\sin \frac{3\pi}{2}$
+
+    ∴$- \frac{\sqrt{3}}{2}>a > - 1$，故選(A)'
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T01
+      name: 角度弧度換算與同界角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設 x 為實數，則下列哪個方程式有解？
+  options:
+  - label: A
+    content: sinx－cosx＝2
+  - label: B
+    content: sinx cosx＝1
+  - label: C
+    content: sinx＋$\frac{1}{\sin x}$＝1
+  - label: D
+    content: 2 sinx＋3 cosx＝4
+  - label: E
+    content: 3 sinx－4 cosx＝5
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)｜sinx－cosx｜$\leq\sqrt{2}$
+
+    (B)｜sinx cosx｜＝$\left| \frac{1}{2}\sin 2x \right| \leq \frac{1}{2}$
+
+    (C)若 sinx＞0$\Rightarrow\sin x + \frac{1}{\sin x}\geq 2\sqrt{\sin x\times \frac{1}{\sin x}}$＝2，若 sinx＜0$\Rightarrow\sin x + \frac{1}{\sin x}\leq - 2$
+
+    (D)｜2 sinx＋3 cosx｜$\leq\sqrt{2^{2} + 3^{2}}$＝$\sqrt{13}$
+
+    (E)｜3 sinx－4 cosx｜$\leq$5，當 sinx＝$\frac{3}{5}$，cosx＝$- \frac{4}{5}$時，3 sinx－4 cosx＝5
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T01
+      name: 正餘弦基本疊合與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 若－180°＜θ＜0°，$\frac{\tan \theta - \tan 32^{∘}}{1 + \tan \theta \tan 32^{∘}}$＝1，則 θ＝？
+  options:
+  - label: A
+    content: －13°
+  - label: B
+    content: －77°
+  - label: C
+    content: －90°
+  - label: D
+    content: －103°
+  - label: E
+    content: －135°
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{\tan \theta - \tan 32^{∘}}{1 + \tan \theta \tan 32^{∘}}$＝tan（θ－32°）＝1
+
+    由－180°＜θ＜0°$\Rightarrow$－212°＜θ－32°＜－32°
+
+    ∴θ－32°＝－135°$\Rightarrow$θ＝－103°，故選(D)'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T02
+      name: 和差角公式化簡與求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 下列哪個函數的週期為 π？
+  options:
+  - label: A
+    content: y＝｜sinx｜＋sinx
+  - label: B
+    content: y＝5 sinx＋4 cos（－x）
+  - label: C
+    content: y＝｜tanx｜＋2
+  - label: D
+    content: y＝$\left| 2\sin \frac{1}{2}x \right|$
+  - label: E
+    content: y＝｜sinx｜＋｜cosx｜
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)週期 2π
+
+    (B) y＝5 sinx＋4 cosx，週期 2π
+
+    (C)週期π
+
+    (D)週期 2π
+
+    (E)週期$\frac{\pi}{2}$
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T01
+      name: 三角函數週期振幅與值域
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 下列選項，何者是正確的？
+  options:
+  - label: A
+    content: sinπ＞sinπ°
+  - label: B
+    content: cosπ＞cosπ°
+  - label: C
+    content: cosπ°＞sinπ°
+  - label: D
+    content: tanπ＞tanπ°
+  - label: E
+    content: sin1＞sin2
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：sin180°＜sin3.14°
+
+    (B)╳：cos180°＜cos3.14°
+
+    (C)○：cos3.14°＞sin3.14°
+
+    (D)╳：tan180°＜tan3.14°
+
+    (E)╳：sin57.3°＜sin（2×57.3°）
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T01
+      name: 角度弧度換算與同界角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 下列有關 y＝sinx＋$\sqrt{3}$cosx 的性質，何者是正確的？
+  options:
+  - label: A
+    content: 圖形對稱於直線 x＝$\frac{\pi}{6}$
+  - label: B
+    content: y 的最大值為 2
+  - label: C
+    content: sinx＋$\sqrt{3}$cosx＝－3 沒有實數解
+  - label: D
+    content: sinx＋$\sqrt{3}$cosx＝－2 沒有實數解
+  - label: E
+    content: 於$\frac{2\pi}{3}<x<\frac{7\pi}{6}$時，y 呈現遞增
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝$\sin x + \sqrt{3}\cos x$
+
+    ＝$2 \left( \frac{1}{2}\sin x + \frac{\sqrt{3}}{2}\cos x \right)$
+
+    ＝2（cos60° sinx＋sin60° cosx）
+
+    ＝2 sin（x＋60°）
+
+    ＝$2 \sin \left( x + \frac{\pi}{3} \right)$
+
+    (A)○：x＝$\frac{\pi}{6}$時，y＝$2\sin \left( \frac{\pi}{6} + \frac{\pi}{3} \right)$＝$2\sin \frac{\pi}{2}$
+
+    產生最大值
+
+    ∴對稱於 x＝$\frac{\pi}{6}$
+
+    (B)○：x＝$\frac{\pi}{6}$＋2kπ（k 為整數）時，y 有最大值為 2
+
+    (C)○：｜y｜$\leq$2
+
+    (D)╳：sinx＝$- \frac{1}{2}$，cosx＝$- \frac{\sqrt{3}}{2}$時，y＝－2
+
+    (E)╳：x＝$\frac{2\pi}{3}$時，y＝$2\sin \left( \frac{2\pi}{3} + \frac{\pi}{3} \right)$＝2 sinπ＝0
+
+    x＝$\frac{7\pi}{6}$時，y＝$2\sin \left( \frac{7\pi}{6} + \frac{\pi}{3} \right)$＝$2\sin \frac{3\pi}{2}$＝－2
+
+    ∴呈現遞減
+
+    故選(A)(B)(C)'
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T02
+      name: 對稱換元法求三角極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 若 tanα、tanβ為方程式 $x^{2}$＋2x－1＝0 的兩根，則下列哪些選項是正確的？
+  options:
+  - label: A
+    content: tanα＋tanβ＝2
+  - label: B
+    content: tanαtanβ＝－1
+  - label: C
+    content: tan（α＋β）＝1
+  - label: D
+    content: cos（α－β）＝0
+  - label: E
+    content: $sin^{2}$（α＋β）＝$\frac{1}{2}$
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳(B)○：（x－tanα）（x－tanβ）＝0
+
+    $\Rightarrow\begin{cases}\tan \alpha + \tan \beta = - 2 \\ \tan \alpha \tan \beta = - 1\end{cases}$
+
+    (C)╳：tan（α＋β）＝$\frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta}$＝$\frac{- 2}{1 - ( - 1 )}$＝－1
+
+    (D)○：tan（α－β）＝$\frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta}$不存在（分母為 0）
+
+    表示 cos（α－β）＝0
+
+    (E)○：由(C)得α＋β＝135°＋360°×k 或 315°＋360°×k（k 為整數）
+
+    ∴$sin^{2}$（α＋β）＝$\left( \pm \frac{\sqrt{2}}{2} \right) ^{2}$＝$\frac{1}{2}$
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T02
+      name: 和差角公式化簡與求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s2_4
+  section: 2
+  number: 4
+  type: multiple
+  page: 2
+  stem: 下列敘述哪些是正確的？
+  options:
+  - label: A
+    content: y＝sinx 先左右伸縮 3 倍再左移 5 單位與先左移 5 單位再左右伸縮 3 倍，所得的圖形相同
+  - label: B
+    content: y＝sinx 先左右伸縮 3 倍再上移 5 單位與先上移 5 單位再左右伸縮 3 倍，所得的圖形相同
+  - label: C
+    content: sinx＝cosx 的解有 2 個
+  - label: D
+    content: sinx＝$\frac{x}{2\pi}$的解有 3 個
+  - label: E
+    content: sinx＝$x^{2}$ 的解有 1 個
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T02
+      name: 三角函數圖形平移與伸縮
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 試求三角比$\cos \frac{2\pi}{3} + \tan \left( - \frac{5\pi}{4} \right)$＝＿＿＿＿。
+  answer:
+  - $- \frac{3}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: cos120°＋tan（－225°）＝$- \frac{1}{2}$＋（－1）＝$- \frac{3}{2}$
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T04
+      name: 弧度特殊角三角比求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 設$y = \sin \left( x + \frac{\pi}{6} \right) + \cos \left( x - \frac{\pi}{3} \right)$，0$\leq$x$\leq$π，則 y 之最大值與最小值之和為＿＿＿＿。
+  answer:
+  - '1'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝$\left( \sin x\cos \frac{\pi}{6} + \cos x\sin \frac{\pi}{6} \right)$＋$\left( \cos x\cos \frac{\pi}{3} + \sin x\sin \frac{\pi}{3} \right)$
+
+    ＝sinx×$\frac{\sqrt{3}}{2}$＋cosx×$\frac{1}{2}$＋cosx×$\frac{1}{2}$＋sinx×$\frac{\sqrt{3}}{2}$
+
+    ＝$\sqrt{3}$sinx＋cosx＝$2 \left( \frac{\sqrt{3}}{2}\sin x + \frac{1}{2}\cos x \right)$
+
+    ＝$2 \left( \cos \frac{\pi}{6} \sin x + \sin \frac{\pi}{6}\cos x \right)$＝2 sin$\left( x + \frac{\pi}{6} \right)$
+
+    當 0$\leq$x$\leq$π$\Rightarrow\frac{\pi}{6}\leq x + \frac{\pi}{6}\leq \frac{7\pi}{6}$時
+
+    $\Rightarrow\sin \frac{7\pi}{6}\leq \sin \left( x + \frac{\pi}{6} \right) \leq \sin \frac{\pi}{2}\Rightarrow- \frac{1}{2}\leq \sin \left( x + \frac{\pi}{6} \right) \leq 1$
+
+    $\Rightarrow \times 2$－1$\leq$y$\leq$2
+
+    ∴最大值與最小值的和為 2＋（－1）＝1'
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T03
+      name: 正餘弦疊合求極值與解判別
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: '若一圓形中分割出來的扇形面積（$A_{1}$）與剩餘面積（$A_{2}$）
+
+    的比值為$\frac{\sqrt{5} - 1}{2}$，則稱此扇形為符合黃金比例的扇形，
+
+    一把符合黃金比例的摺扇，是指完全張開時符合上述的
+
+    比例特性，試問黃金比例的摺扇完全張開時的角度為
+
+    ＿＿＿＿。'
+  assets:
+  - key: s3_3_f1
+    kind: figure
+    file: doc_109_台中_興大附中_數學_數A_g11s1e1/s3_3_f1.png
+    crop:
+      page: 3
+      rect:
+      - 371.8
+      - 52.4
+      - 463.45
+      - 144.05
+  - key: s3_3_f2
+    kind: figure
+    file: doc_109_台中_興大附中_數學_數A_g11s1e1/s3_3_f2.png
+    crop:
+      page: 3
+      rect:
+      - 472.3
+      - 74.05
+      - 563.6
+      - 129.7
+  answer:
+  - $( 3 - \sqrt{5} ) \pi$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設張開角度為θ
+
+    $\frac{\theta}{2\pi -\theta} = \frac{A_{1}}{A_{2}} = \frac{\sqrt{5} - 1}{2}$
+
+    $\Rightarrow$2θ＝2π（$\sqrt{5}$－1）－（$\sqrt{5}$－1）θ
+
+    $\Rightarrow$（2＋（$\sqrt{5}$－1））θ＝2π（$\sqrt{5}$－1）
+
+    $\Rightarrow$（$\sqrt{5}$＋1）θ＝2π（$\sqrt{5}$－1）
+
+    ∴θ＝$2\pi \times \frac{\sqrt{5} - 1}{\sqrt{5} + 1}$＝$2\pi \times \frac{( \sqrt{5} - 1 ) ^{2}}{4}$＝$2\pi \times \frac{6 - 2\sqrt{5}}{4}$＝$( 3 - \sqrt{5} ) \pi$
+
+    故完全張開時的角度為$( 3 - \sqrt{5} ) \pi$'
+  tags:
+    unit:
+      code: MA-A3-1-1
+      book: 數學3A
+      chapter: 三角函數
+      title: 弧度量
+      std: true
+    textbook: 數學3A 弧度量
+    pattern:
+      key: MA-A3-1-1:T03
+      name: 弧度與角度換算及大小比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 設 cosα＝$\frac{3}{5}$，sinβ＝$- \frac{15}{17}$，且 270°＜α＜360°，180°＜β＜270°，試求 sin（α－β）與 cos（α－β）之和為＿＿＿＿。
+  answer:
+  - $\frac{113}{85}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由 270°＜α＜360°，cosα＝$\frac{3}{5}\Rightarrow$sinα＝$- \frac{4}{5}$
+
+    由 180°＜β＜270°，sinβ＝$- \frac{15}{17}\Rightarrow$cosβ＝$- \frac{8}{17}$
+
+    sin（α－β）＋cos（α－β）
+
+    ＝（sinαcosβ－cosαsinβ）＋（cosαcosβ＋sinαsinβ）
+
+    ＝$\left( - \frac{4}{5} \right) \left( - \frac{8}{17} \right) - \left( \frac{3}{5} \right) \left( - \frac{15}{17} \right) + \left( \frac{3}{5} \right) \left( - \frac{8}{17} \right) + \left( - \frac{4}{5} \right) \left( - \frac{15}{17} \right)$
+
+    ＝$\left( - \frac{4}{5} \right) \left( - \frac{23}{17} \right) + \left( \frac{3}{5} \right) \left( \frac{7}{17} \right)$＝$\frac{113}{85}$'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T01
+      name: 正切和差角公式與兩線夾角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 設 270°＜α＜360°，sinα＋cosα＝$\frac{7}{17}$，則 sin$\frac{\alpha}{2}$＝＿＿＿＿。
+  answer:
+  - $\frac{\sqrt{17}}{17}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\begin{cases}\sin \alpha + \cos \alpha = \frac{7}{17} \\ \sin ^{2}\alpha + \cos ^{2}\alpha = 1\end{cases}$，270°＜α＜360°$\Rightarrow$sinα＝$-\frac{8}{17}$，cosα＝$\frac{15}{17}$
+
+    ∵270°＜α＜360°$\Rightarrow$135°＜$\frac{\alpha}{2}$＜180° ∴$\sin \frac{\alpha}{2}$＞0
+
+    ∴$\sin \frac{\alpha}{2}$＝$\sqrt{\frac{1 - \cos \alpha}{2}} = \sqrt{\frac{1 - \frac{15}{17}}{2}} = \sqrt{\frac{1}{17}} = \frac{\sqrt{17}}{17}$
+
+    6.2 $sin^{2}$x－3 cosx$\leq$0
+
+    $\Rightarrow$2（1－$cos^{2}$x）－3 cosx$\leq$0$\Rightarrow$－2 $cos^{2}$x－3 cosx＋2$\leq$0
+
+    $\Rightarrow$2 $cos^{2}$x＋3 cosx－2$\geq$0$\Rightarrow$（cosx＋2）（2 cosx－1）$\geq$0
+
+    又 cosx＋2＞0 恆成立
+
+    ∴2 cosx－1$\geq$0$\Rightarrow$cosx$\geq\frac{1}{2}$
+
+    $\Rightarrow- \frac{\sqrt{3}}{2}\leq$sinx$\leq\frac{\sqrt{3}}{2}$………（＊）
+
+    f（x）＝3 $cos^{2}$x＋4 sinx
+
+    ＝3（1－$sin^{2}$x）＋4 sinx
+
+    ＝－3 $sin^{2}$x＋4 sinx＋3
+
+    ＝$- 3 \left( \sin x - \frac{2}{3} \right) ^{2} + \frac{13}{3}$
+
+    當 sinx＝$\frac{2}{3}$時（滿足（＊）），f（x）有最大值為$\frac{13}{3}$
+
+    7. a $sin^{2}$θ＋（a－b）cosθsinθ－b $cos^{2}$θ
+
+    ＝$a\times \frac{1 - \cos 2\theta}{2} + ( a - b ) \times \frac{\sin 2\theta}{2} - b\times \frac{1 + \cos 2\theta}{2}$＝$\frac{a - b}{2}\times \sin 2\theta - \frac{a + b}{2}\times \cos 2\theta + \frac{a - b}{2}$
+
+    最大值為$\sqrt{\left( \frac{a - b}{2} \right) ^{2} + \left( - \frac{a + b}{2} \right) ^{2}} + \frac{a - b}{2}$＝$\sqrt{\frac{2a^{2} + 2b^{2}}{4}} + \frac{a - b}{2}$＝$2 + \sqrt{13}$………（＊）
+
+    最小值為$- \sqrt{\frac{2a^{2} + 2b^{2}}{4}} + \frac{a - b}{2}$＝$2 - \sqrt{13}$
+
+    兩式相加得 a－b＝4 ………①
+
+    代回（＊）得$\sqrt{\frac{a^{2} + b^{2}}{2}} = \sqrt{13}$
+
+    $\Rightarrowa^{2}$＋$b^{2}$＝26………………②
+
+    由①、②得 a＝5，b＝1 或 a＝－1，b＝－5（a＞b）
+
+    故數對（a，b）＝（5，1）或（－1，－5）
+
+    8.設大、小圓的切點為 G
+
+    設$\overline{AB} = \overline{AG} = R$，$\overline{CE} = \overline{EF} = \overline{EG} = r\Rightarrow\overline{EB} = R - r$
+
+    由直角三角形 EAB
+
+    $\Rightarrow$（R＋r）$^{2}$＝$R^{2}$＋（R－r）$^{2}$
+
+    $\RightarrowR^{2}$＋2Rr＋$r^{2}$＝$R^{2}$＋$R^{2}$－2Rr＋$r^{2}$
+
+    $\Rightarrow$4Rr＝$R^{2}\Rightarrow$R＝4r
+
+    ∴tan∠EAB＝$\frac{3}{4}$，tan∠FAB＝$\frac{2}{4}$
+
+    $\Rightarrow$tan∠EAF＝tan（∠EAB－∠FAB）
+
+    ＝$\frac{\frac{3}{4} - \frac{2}{4}}{1 + \frac{3}{4}\times \frac{2}{4}}$＝$\frac{\frac{1}{4}}{1 + \frac{3}{8}} = \frac{\frac{1}{4}}{\frac{11}{8}} = \frac{2}{11}$'
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T03
+      name: 二倍角與三倍角公式計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 若 2 $sin^{2}$x－3 cosx$\leq$0，試求函數 f（x）＝3 $cos^{2}$x＋4 sinx，x$\in$R 的最大值為＿＿＿＿。
+  answer:
+  - $\frac{13}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T05
+      name: 三角函數週期判別與計算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: a＞b，若 a $sin^{2}$θ＋（a－b）cosθsinθ－b $cos^{2}$θ之最大值與最小值依次為$2 + \sqrt{13}$， $2 - \sqrt{13}$，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （5，1）或（－1，－5）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T04
+      name: 疊合後圖形對稱與單調性
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 如右圖，正方形 ABCD 中，E 是$\overline{BC}$邊上一點，$\overline{EC}$＝$\overline{EF}$，「以 E 為圓心，$\overline{EC}$為半徑的半圓」與「以 A 為圓心，$\overline{AB}$為半徑的圓弧」外切，則 tan∠EAF＝＿＿＿＿。
+  assets:
+  - key: s3_8_f1
+    kind: figure
+    file: doc_109_台中_興大附中_數學_數A_g11s1e1/s3_8_f1.png
+    crop:
+      page: 3
+      rect:
+      - 459.35
+      - 307.7
+      - 562.3
+      - 398.65
+  answer:
+  - $\frac{2}{11}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-1-3
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角的和差角公式
+      std: true
+    textbook: 數學3A 三角的和差角公式
+    pattern:
+      key: MA-A3-1-3:T04
+      name: 半角公式與象限正負判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_109_台中_興大附中_數學_數A_g11s1e1_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 3
+  stem: '某高中天文社成員欲觀測月球亮面的比例，從某日開始每隔兩個夜晚在同一時間拍攝月球照片，並計算月球亮面比例，他們的觀測資料如下表所示：
+
+    | 開始觀察後 的 x 日 | 0 日 | 2 日 | 4 日 | 6 日 | 8 日 | 10 日 | 12 日 | 14 日 | 16 日 | 18 日 | 20 日 | 22 日 | 24 日 | 26 日 | 28 日 | 30 日 |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | 月球亮面比例（ ％） | 42 | 24 | 10 | 2 | 0 | 8 | 23 | 43 | 66 | 85 | 97 | 100 | 92 | 97 | 60 | 41 |
+
+    假設用正弦函數 y＝a sin［b（x－h）］＋k（其中 a，b 為正數，0＜h＜30）來描述這筆觀測資料，且滿足下面兩條件：
+
+    ①資料點（22，1）和（8，0）落在圖形上。
+
+    ②資料點（22，1）和（8，0）依次為圖形相鄰的最高點與最低點。
+
+    則：
+
+    (1) 此圖形的週期下列何者？（單選，2 分）
+
+    (2) 求序組（a，b，h，k）＝？（6 分）'
+  options:
+  - label: A
+    content: '14'
+  - label: B
+    content: '28'
+  - label: C
+    content: '16'
+  - label: D
+    content: '32'
+  - label: E
+    content: '30'
+  tags:
+    unit:
+      code: MA-A3-1-2
+      book: 數學3A
+      chapter: 三角函數
+      title: 三角函數的圖形
+      std: true
+    textbook: 數學3A 三角函數的圖形
+    pattern:
+      key: MA-A3-1-2:T03
+      name: 三角方程式實根與交點數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

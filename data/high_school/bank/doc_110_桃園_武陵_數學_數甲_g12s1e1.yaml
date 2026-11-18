@@ -1,0 +1,498 @@
+document:
+  id: doc_110_桃園_武陵_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 1
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 110學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 110學年度第1學期第1次定期評量
+  source_file: 高三/數學/110/1-1/桃園/武陵_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 8 分，共 32 分）
+    count: 2
+  - ord: 2
+    name: 二、填充題（每題 6 分，共 48 分）
+    count: 8
+  - ord: 3
+    name: 三、混合題（共 20 分）
+    count: 2
+questions:
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 函數 f（x）＝$\frac{x^{3}}{| x |}$，g（x）＝x sinx，下列函數在其定義域的敘述哪些正確？
+  options:
+  - label: A
+    content: f（x）是奇函數
+  - label: B
+    content: g（x）是偶函數
+  - label: C
+    content: f（x）×g（x）是奇函數
+  - label: D
+    content: （f。g）（x）是偶函數
+  - label: E
+    content: （f。f）（x）是偶函數
+  answer:
+  - A
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：f（－x）＝$\frac{( -x )^{3}}{| -x |}$＝$-\frac{x^{3}}{| x |}$＝－f（x）
+
+    ∴f（x）是奇函數
+
+    (B)○：g（－x）＝（－x）sin（－x）＝（－x）（－sinx）＝x sinx＝g（x）
+
+    ∴g（x）是偶函數
+
+    (C)○：f（－x）×g（－x）＝（－f（x））×g（x）＝－f（x）×g（x）
+
+    ∴f（x）×g（x）是奇函數
+
+    (D)○：（f。g）（－x）＝f（g（－x））＝f（g（x））＝（f。g）（x）
+
+    ∴（f。g）（x）是偶函數
+
+    (E)╳：（f。f）（－x）＝f（f（－x））＝f（－f（x））＝－f（f（x））＝－（f。f）（x）
+
+    ∴（f。f）（x）是奇函數
+
+    故選(A)(B)(C)(D)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 關於函數 f（x）＝$\begin{cases}x , x\in Q \\ x^{2} , x\notin Q\end{cases}$，下列選項哪些正確？（Q 為所有有理數集合）
+  options:
+  - label: A
+    content: $\lim_{x \rightarrow 1} f ( x )$＝1
+  - label: B
+    content: $\lim_{x \rightarrow 0} f ( x )$＝0
+  - label: C
+    content: 函數 f（x）在 x＝1 處連續
+  - label: D
+    content: 函數 f（x）在 x＝0 處連續
+  - label: E
+    content: 函數 f（x）在 x＝－1 處連續
+  answer:
+  - A
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：當 x$\in$Q 時，$\lim_{x \rightarrow 1} f ( x )$＝$\lim_{x \rightarrow 1} x$＝1
+
+    當 x$\notin$Q 時，$\lim_{x \rightarrow 1} f ( x )$＝$\lim_{x \rightarrow 1} x^{2}$＝1
+
+    ∴$\lim_{x \rightarrow 1} f ( x )$＝1
+
+    (B)○：同(A)
+
+    (C)○：$\lim_{x \rightarrow 1} f ( x )$＝1＝f(1)
+
+    ∴f（x）在 x＝1 處連續
+
+    (D)○：$\lim_{x \rightarrow 0} f ( x )$＝0＝f(0)
+
+    ∴f（x）在 x＝0 處連續
+
+    (E)╳：x$\in$Q 時，$\lim_{x \rightarrow -1} f ( x )$＝$\lim_{x \rightarrow -1} x$＝－1
+
+    x$\notin$Q 時，$\lim_{x \rightarrow -1} f ( x )$＝$\lim_{x \rightarrow -1} x^{2}$＝1
+
+    ∴f（x）在 x＝－1 處不連續
+
+    故選(A)(B)(C)(D)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T03
+      name: 函數連續性檢驗與求參
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: <u>臺灣</u>綜藝節目「油魚遊戲」共有 7 關，每關所玩的遊戲相當公平，3 人一組每組會淘汰 1 人，當參賽者人數不為 3 的倍數時，無法湊成組的人會自動晉級下一關。依前面敘述可寫出函數 f（x）＝$x - \left[ \frac{x}{3} \right]$，如果參賽者有 200 人參加遊戲，則會有 f（200）人晉級，繼續挑戰第二關，……。問此 200 人挑戰 7 關最後成功過關的有＿＿＿＿人。
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（200）＝200－$\left[ \frac{200}{3} \right]$＝200－66＝134
+
+    f（134）＝134－$\left[ \frac{134}{3} \right]$＝134－44＝90
+
+    f(90)＝90－$\left[ \frac{90}{3} \right]$＝90－30＝60
+
+    f(60)＝60－$\left[ \frac{60}{3} \right]$＝60－20＝40
+
+    f(40)＝40－$\left[ \frac{40}{3} \right]$＝40－13＝27
+
+    f(27)＝27－$\left[ \frac{27}{3} \right]$＝27－9＝18
+
+    f(18)＝18－$\left[ \frac{18}{3} \right]$＝18－6＝12
+
+    故此 200 人挑戰 7 關最後成功過關的有 12 人'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: f（x）＝[x＋5]＋[5－x]，$\lim_{x \rightarrow 3^{+}} f ( x )$＝a，$\lim_{x \rightarrow 3^{-}} f ( x )$＝b，f(3)＝c，試求序組（a，b，c）＝＿＿＿＿。
+  answer:
+  - （9，9，10）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'a＝$\lim_{x \rightarrow 3^{+}} ( [ x + 5 ] + [ 5 -x ] )$＝8＋1＝9
+
+    b＝$\lim_{x \rightarrow 3^{-}} ( [ x + 5 ] + [ 5 -x ] )$＝7＋2＝9
+
+    c＝f(3)＝[ 3＋5 ]＋[ 5－3 ]＝8＋2＝10
+
+    故序組（a，b，c）＝（9，9，10）'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T02
+      name: 函數極限與自然常數定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 求極限$\lim_{x \rightarrow 2} \frac{\sqrt{1+\sqrt{2+x}} - \sqrt{3}}{x -2}$＝＿＿＿＿。
+  answer:
+  - $\frac{\sqrt{3}}{24}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow 2} \frac{\sqrt{1+\sqrt{2+x}} - \sqrt{3}}{x -2}$
+
+    ＝$\lim_{x \rightarrow 2} \left( \frac{\sqrt{1+\sqrt{2+x}} - \sqrt{3}}{x -2}\times \frac{\sqrt{1+\sqrt{2+x}} + \sqrt{3}}{\sqrt{1+\sqrt{2+x}} + \sqrt{3}} \right)$＝$\lim_{x \rightarrow 2} \frac{( \sqrt{1+\sqrt{2+x}} )^{2}-( \sqrt{3} )^{2}}{( x -2 ) ( \sqrt{1+\sqrt{2+x}} + \sqrt{3} )}$
+
+    ＝$\lim_{x \rightarrow 2} \frac{\sqrt{2+x} - 2}{( x -2 ) ( \sqrt{1+\sqrt{2+x}} + \sqrt{3} )}$＝$\lim_{x \rightarrow 2} \left( \frac{\sqrt{2+x} - 2}{( x -2 ) ( \sqrt{1+\sqrt{2+x}} + \sqrt{3} )}\times \frac{\sqrt{2+x} + 2}{\sqrt{2+x} + 2} \right)$
+
+    ＝$\lim_{x \rightarrow 2} \frac{( \sqrt{2+x} )^{2}-2^{2}}{( x -2 ) ( \sqrt{1+\sqrt{2+x}} + \sqrt{3} ) ( \sqrt{2+x} + 2 )}$＝$\lim_{x \rightarrow 2} \frac{x -2}{( x -2 ) ( \sqrt{1+\sqrt{2+x}} + \sqrt{3} ) ( \sqrt{2+x} + 2 )}$
+
+    ＝$\lim_{x \rightarrow 2} \frac{1}{( \sqrt{1+\sqrt{2+x}} + \sqrt{3} ) ( \sqrt{2+x} + 2 )}$＝$\frac{1}{( \sqrt{1+\sqrt{2+2}} + \sqrt{3} ) ( \sqrt{2+2} + 2 )}$
+
+    ＝$\frac{1}{2\sqrt{3}\times 4}$＝$\frac{\sqrt{3}}{24}$'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T10
+      name: 無理式極限有理化計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知$\lim_{n \rightarrow \infty} \left( 1+\frac{r}{n} \right) ^{n}$＝$e^{r}$，求$\lim_{n \rightarrow \infty} \left( 1+\frac{r +1}{n +1} \right) ^{n +1}$＝＿＿＿＿。
+  answer:
+  - $e^{r＋1}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 x＝n＋1，則 n →∞$\Rightarrow$ x →∞
+
+    故$\lim_{n \rightarrow \infty} \left( 1+\frac{r + 1}{n + 1} \right) ^{n + 1}$＝$\lim_{x \rightarrow \infty} \left( 1+\frac{r + 1}{x} \right) ^{x}$＝$e^{r＋1}$'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T02
+      name: 函數極限與自然常數定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '下列數列共有幾個極限值存在？
+
+    $\left\langle \frac{4n^{2}+ 7n - 8}{4n - 8} \right\rangle$、$\left\langle \frac{n^{2}+ 5n - 1}{n^{3}- n} \right\rangle$、$\left\langle \frac{( n + 3 )^{5}-( n - 2 )^{5}}{n^{4}} \right\rangle$、$\langle ( \sqrt{3 + \sqrt{8}} - \sqrt{2} )^{n} \rangle$、$\left\langle \frac{2n^{2}+ 1}{n}-\frac{2n - 1}{n} \right\rangle$、$\left\langle \frac{1^{2}+2^{2}+\cdots \cdots +n^{2}}{n^{2}} \right\rangle$
+
+    $答$：＿＿＿＿個。'
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '①$\lim_{n \rightarrow \infty} \frac{4n^{2}+7n - 8}{4n - 8}$不存在
+
+    ②$\lim_{n \rightarrow \infty} \frac{n^{2}+5n - 1}{n^{3}-n}$＝0
+
+    ③$\lim_{n \rightarrow \infty} \frac{( n + 3 )^{5}-( n - 2 )^{5}}{n^{4}}$＝$\lim_{n \rightarrow \infty} \frac{( n^{5}+5n^{4}\times 3+\cdots \cdots )-( n^{5}-5n^{4}\times 2+\cdots \cdots )}{n^{4}}$＝25
+
+    ④$\lim_{n \rightarrow \infty} ( \sqrt{3+\sqrt{8}} - \sqrt{2} )^{n}$＝$\lim_{n \rightarrow \infty} ( \sqrt{3+2\sqrt{2}} - \sqrt{2} )^{n}$＝$\lim_{n \rightarrow \infty} ( ( \sqrt{2} + 1 )-\sqrt{2} )^{n}$＝1
+
+    ⑤$\lim_{n \rightarrow \infty} \left( \frac{2n^{2}+1}{n}-\frac{2n -1}{n} \right)$＝$\lim_{n \rightarrow \infty} \frac{( 2n^{2}+1 )-( 2n -1 )}{n}$不存在
+
+    ⑥$\lim_{n \rightarrow \infty} \frac{1^{2}+2^{2}+\cdots \cdots +n^{2}}{n^{2}}$＝$\lim_{n \rightarrow \infty} \frac{\frac{n ( n +1 ) ( 2n +1 )}{6}}{n^{2}}$＝$\lim_{n \rightarrow \infty} \frac{\frac{2n^{3}+3n^{2}+n}{6}}{n^{2}}$不存在
+
+    故共有 3 個極限值存在'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T02
+      name: 多項式與指數型數列極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 已知函數 f（x）是連續函數，$\lim_{x \rightarrow 1} \frac{f ( x )-3}{x -1}$＝5 與$\lim_{x \rightarrow 1} \frac{g ( x )-2}{x -1}$＝2，試求 $\lim_{x \rightarrow 1} \frac{f ( x )g ( x )-2f ( x )+2f ( x )- 6}{x -1}$之值為＿＿＿＿。
+  answer:
+  - '16'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（x）為連續函數，$\lim_{x \rightarrow 1} \frac{f ( x )-3}{x -1}$＝5，$\lim_{x \rightarrow 1} \frac{g ( x )-2}{x -1}$＝2
+
+    $\Rightarrow\lim_{x \rightarrow 1} f ( x )$＝3，$\lim_{x \rightarrow 1} g ( x )$＝2
+
+    ∴$\lim_{x \rightarrow 1} \frac{f ( x )g ( x )-2f ( x )+2f ( x )-6}{x -1}$
+
+    ＝$\lim_{x \rightarrow 1} \frac{f ( x ) ( g ( x )-2 )+2 ( f ( x )-3 )}{x -1}$
+
+    ＝$\lim_{x \rightarrow 1} \left( f ( x )\times \frac{g ( x )-2}{x -1}+2\times \frac{f ( x )-3}{x -1} \right)$
+
+    ＝3×2＋2×5
+
+    ＝16'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T06
+      name: 函數極限有理化與運算性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知 a，b，c 為常數，$\lim_{x \rightarrow 3} \frac{ax^{2}+bx +c}{x^{2}-9}$＝2，$\lim_{x \rightarrow 2} \frac{ax^{2}+bx +c}{x^{2}-4}$＝－3，求$\lim_{n \rightarrow \infty} \frac{a^{n +1}+b^{n +1}+c^{n +1}}{a^{n}+b^{n}+c^{n}}$＝ ＿＿＿＿。
+  answer:
+  - '72'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由$\lim_{x \rightarrow 3} \frac{ax^{2}+bx +c}{x^{2}-9}$＝2，$\lim_{x \rightarrow 2} \frac{ax^{2}+bx +c}{x^{2}-4}$＝－3
+
+    $\Rightarrowax^{2}$＋bx＋c 有因式 x－3、x－2
+
+    設 $ax^{2}$＋bx＋c＝a（x－3）（x－2）
+
+    代回得$\lim_{x \rightarrow 3} \frac{a ( x -3 ) ( x -2 )}{x^{2}-9}$＝$\lim_{x \rightarrow 3} \frac{a ( x -3 ) ( x -2 )}{( x +3 ) ( x -3 )}$＝$\lim_{x \rightarrow 3} \frac{a ( x -2 )}{x +3}$＝$\frac{a\times 1}{6}$＝2$\Rightarrow$a＝12
+
+    故 $ax^{2}$＋bx＋c＝12（x－3）（x－2）＝$12x^{2}$－60x＋72$\Rightarrow$a＝12，b＝－60，c＝72
+
+    ∴$\lim_{n \rightarrow \infty} \frac{a^{n +1}+b^{n +1}+c^{n +1}}{a^{n}+b^{n}+c^{n}}$＝$\lim_{n \rightarrow \infty} \frac{12^{n +1}+( -60 )^{n +1}+72^{n +1}}{12^{n}+( -60 )^{n}+72^{n}}$ ＝$\lim_{n \rightarrow \infty} \frac{12\times \left( \frac{12}{72} \right) ^{n}+( -60 ) \times \left( \frac{-60}{72} \right) ^{n}+72}{\left( \frac{12}{72} \right) ^{n}+ \left( \frac{-60}{72} \right) ^{n}+1}$＝72'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T06
+      name: 函數極限有理化與運算性質
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: f（x）＝$x^{2}$＋4x＋3，f（x）定義域是 [ －3，2 ]，g（x）＝$\frac{1}{x}$，g（x）定義域是 ｛x$\in$R｜x$\in$[ －5，5 ]，x≠0｝，求（g。f）（x）的值域為＿＿＿＿。
+  answer:
+  - $\left\{ y | y\in R , y\leq -1 或 y\geq \frac{1}{5} \right\}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T05
+      name: 函數定義域與配方法極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: multiple
+  page: 3
+  stem: '(1) 關於高斯函數，下列選項哪些正確？（多選，4 分）
+
+    (2) 試求$\lim_{n \rightarrow \infty} \frac{\left[ \frac{n^{2}}{2} \right] + \left[ \frac{n^{2}}{2^{2}} \right] +\cdots \cdots + \left[ \frac{n^{2}}{2^{n}} \right]}{3n^{2}}$＝＿＿＿＿。（8 分）'
+  options:
+  - label: A
+    content: x＞0 時，[ x ]$\leq$x
+  - label: B
+    content: x＜0 時，x$\leq$[ x ]
+  - label: C
+    content: x－1＜[ x ]
+  - label: D
+    content: x－1，[ x ] 有可能相等
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T04
+      name: 夾擠定理求數列和極限
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_110_桃園_武陵_數學_數甲_g12s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: '如下圖所示，正△ABC 邊長為 11，取$\overline{AB}$，$\overline{BC}$，$\overline{CA}$上 8：3 的內分點，$\overline{AA_{1}}$＝$\frac{8}{11}\overline{AB}$， $\overline{BB_{1}}$＝$\frac{8}{11}\overline{BC}$，$\overline{CC_{1}}$＝$\frac{8}{11}\overline{CA}$，形成△$A_{1}B_{1}C_{1}$。再依此方法取△$A_{1}B_{1}C_{1}$ 邊上 8：3 的內分點形
+
+    成△$A_{2}B_{2}C_{2}$，……。稱△$AA_{1}C_{1}$ 為 $T_{1}$，△$A_{1}A_{2}C_{2}$ 為 $T_{2}$，以此類推可得 $T_{3}$，$T_{4}$，……。
+
+    (1) 求$\overline{A_{1}C_{1}}$＝＿＿＿＿。（2 分）
+
+    (2) 求 $T_{1}$，$T_{2}$，$T_{3}$，$T_{4}$，……面積的無窮級數和。（6 分）'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_110_桃園_武陵_數學_數甲_g12s1e1/s3_2_f1.png
+    crop:
+      page: 3
+      rect:
+      - 158.5
+      - 441.8
+      - 306.0
+      - 575.1
+  - key: s3_2_f2
+    kind: figure
+    file: doc_110_桃園_武陵_數學_數甲_g12s1e1/s3_2_f2.png
+    crop:
+      page: 3
+      rect:
+      - 312.1
+      - 441.8
+      - 459.6
+      - 575.1
+  answer:
+  - (1) $\overline{AA_{1}}$＝8，$\overline{AC_{1}}$＝3
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

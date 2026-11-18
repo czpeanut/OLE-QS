@@ -1,0 +1,237 @@
+document:
+  id: doc_113_桃園_武陵_數學_數甲_g12s1e3
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 3
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 113學年度第1學期第3次定期評量 高三數學（數甲）科試題
+  exam_name: 113學年度第1學期第3次定期評量
+  source_file: 高三/數學/113/1-3/桃園/武陵_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 第一部分：多重選擇題（每題8分，共16分）
+    count: 2
+  - ord: 3
+    name: 第一部分（每小題8分×5）
+    count: 1
+  - ord: 4
+    name: 第二部分（每小題5分×6）
+    count: 1
+  - ord: 5
+    name: 第三部分、計算題（占14分）
+    count: 3
+questions:
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設y＝f (x)的圖形（正值函數）與x軸及x＝0，x＝2所圍成的區域為R，將閉區間[ 0 , 2 ]等分成n等分，並設R的面積之上和為$U_{n}$，下和為$L_{n}$，則下列何者一定正確？
+  options:
+  - label: A
+    content: $U_{3}$ ≥ $L_{3}$
+  - label: B
+    content: $U_{3}$ ≥ $U_{6}$
+  - label: C
+    content: $U_{2}$ ≥ $U_{3}$
+  - label: D
+    content: $U_{33}$ ≥ $L_{44}$
+  - label: E
+    content: $L_{5}$ ≥ $L_{3}$
+  answer:
+  - A
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設多項式函數y＝f '(x)的圖形如右圖，與x軸的交點為( a , 0 )、( b , 0 )與( c , 0 )， 試問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: $\int_{a}^{c} f'(x)dx > 0$
+  - label: B
+    content: $\int_{a}^{c} f''(x)dx < 0$
+  - label: C
+    content: $\int_{a}^{c} f'''(x)dx > 0$
+  - label: D
+    content: f (x)在x＝s有極小值
+  - label: E
+    content: f (x)在x＝b有極小值
+  assets:
+  - key: s1_2_f1
+    kind: figure
+    file: doc_113_桃園_武陵_數學_數甲_g12s1e3/s1_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 516.5
+      - 199.3
+      - 636.85
+      - 320.3
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)觀察圖形可知，$\left| \int_{a}^{b} f''(x) dx \right| < \left| \int_{b}^{c} f''(x) dx \right|$且$\int_{a}^{b} f''(x)dx < 0 < \int_{b}^{c} f''(x)dx$ ∴ $\int_{a}^{c} f''(x)dx = \int_{a}^{b} f''(x)dx + \int_{b}^{c} f''(x)dx > 0$
+
+    (B) ∵f ''(x)是f ''''(x)的反導函數 ∴$\int_{a}^{c} f''''(x) dx$＝f ''(c)－f ''(a)＝0－0＝0
+
+    (C)觀察圖形可知，f ''(x)在x＝a處的切線斜率為0 ⇒ f ''''(a)＝0 f ''(x)在x＝c處的切線斜率為負 ⇒ f ''''(c)＜0 ∴ $\int_{a}^{c} f''''''(x) + dx$＝f ''''(c)－f ''''(a)＜0
+
+    (D)∵ f ''(x)在x＝s附近的值均為負 ∴ f (x)在x＝s附近遞減 故f (x)在x＝s處沒有極值
+
+    (E)∵ f ''(b)＝0且x∈ ( a , b )時，f ''(x)＜0 ⇒ f(x)在[a,b]遞減 x∈ ( b , c )時，f ''(x)＞0 ⇒ f (x)在[ b , c ]遞增 ∴ f (x)在x＝b有極小值
+
+    故選(A)(E)。'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T10
+      name: 定積分幾何意義與基本性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e3_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 1
+  stem: 'C. 已知拋物線Γ：y＝$x^{2}$與直線L：y＝x＋2，由L與Γ所圍區域繞x軸旋轉一周所得之旋轉體的體積為$\frac{ ⑧⑨ }{ ⑩ }$π。（化成最簡分數）
+
+    D. 農場高中儲水塔漏水，小武校長想了解平均每小時的漏水量，早上開始以速度函數v (t)＝－$t^{2}$＋t＋5（公升／小時）補水。已知經過2小時後，水塔裡的水量剛好不增不減（期間水並無向外溢流或見底現象）。請幫忙校長計算，平均每小時的漏水量為$\frac{ ⑪⑫ }{ ⑬ }$（公升／小時）。（化成最簡分數）
+
+    E. 設a為實數，f (x)滿足$\int_{a}^{x} f(t) = dt = (x^{2} - 3x + 5)^{\frac{3}{2}} - 8$，所有可能的a之總和＝A，試求數對( f (3) , A )＝$\frac{ ⑭\sqrt{ ⑮ } }{ ⑯ } , ⑰$。'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T06
+      name: 定積分求旋轉體體積
+    labeled_by: agent
+    label_confidence: high
+    label_note: 本題包含 C、D、E 三小題（旋轉體體積、積分淨變化量、微積分基本定理微分），原卷切題時併為同一題。
+  difficulty: 4
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e3_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 2
+  stem: 'H. 設實係數三次多項式函數Γ：y＝f (x)＝$ax^{3}$＋$bx^{2}$＋cx＋d，A ( 2 , t )為其圖形的反曲點，且此圖形在A ( 2 , t )的切線為 y＝2x， (1)求數對( t , $\int_{- 1}^{5} f(x)dx$)＝$( 22 , 2324 )$ (2)若Γ的圖形與y＝t所圍的封閉區域面積為6。求a＝$\frac{ 2526 }{ 27 }$。
+
+    I. 已知f (x)＝( x－20 )$^{2}$＋67， $S(1) = \sum_{k = 1}^{10} f(k)$，$S(2) = \sum_{k = 0}^{9} f(k)$，$S(3) = \sum_{k = 1}^{10} \frac{f(k - 1) + f(k)}{2}S(4) = \int_{0}^{10} f(x)dx$，$S(5) = \int_{1}^{11} f(x)dx$， 試比較上列各數之大小：S ($28$)＜S ($29$)＜S ($30$)＜S ($31$)＜S ($32$)
+
+    J. V (t)表示$x^{2}$＋( y－5 )$^{2}$－9與y軸及x＝t（其中0＜t＜3）圍成的封閉區域繞x軸旋轉的旋轉體體積，求V'' (1)＝$3334\sqrt{ 35 }$π。（化為最簡根號）'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T05
+      name: 定積分求曲線圍成面積
+    labeled_by: agent
+    label_confidence: high
+    label_note: 本題包含 H、I、J 三小題（定積分面積、黎曼和大小比較、旋轉體體積微分），原卷切題時併為同一題。
+  difficulty: 4
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e3_s5_1
+  section: 5
+  number: 1
+  type: fill
+  page: 2
+  stem: '已知函數：y＝f (x)＝$x^{3}$－7x＋6，自點A ( 1 , 8 )對f (x)作切線L，L與Γ所圍封閉區域為Ψ，
+
+    (1) L之方程式為________________。（5分）'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T05
+      name: 切線斜率與切線方程式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e3_s5_2
+  section: 5
+  number: 2
+  type: calc
+  page: 2
+  stem: Γ與L交於B ( b , f (b) )，C ( c , f (c) )，B，C在x軸的投影點分別為P ( b , 0 )，Q ( c , 0 )其中b＜c，將線段$\overline{PQ}$的n等分點沿著向量PQ的方向依序設為P＝$P_{0}$，$P_{1}$，…，$P_{n－1}$，$P_{n}$＝Q。考慮通過每一個$P_{k}$的鉛直線與此封閉區域Ψ所截的每一條等寬的長條面積。請利用此切長條方法寫下估計Ψ面積的黎曼和$S_{n}$（以Σ表示，不需化簡）（4分）
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_桃園_武陵_數學_數甲_g12s1e3_s5_3
+  section: 5
+  number: 3
+  type: calc
+  page: 2
+  stem: 以定積分形式表示Ψ的面積並求其值。（5分）
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T05
+      name: 定積分求曲線圍成面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

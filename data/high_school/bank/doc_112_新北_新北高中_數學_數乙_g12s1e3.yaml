@@ -1,0 +1,446 @@
+document:
+  id: doc_112_新北_新北高中_數學_數乙_g12s1e3
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 3
+  city: 新北
+  school_short: 新北高中
+  school: 新北市立新北高級中學
+  title: 新北市立新北高級中學 112學年度第1學期第3次定期評量 高三數學（數乙）科試題
+  exam_name: 112學年度第1學期第3次定期評量
+  source_file: 高三/數學/112/1-3/新北/新北高中_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 選擇題
+    count: 13
+questions:
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: '下列選項哪些是 f（x）＝$3x^{2}$－1 的反導函數？（多選）
+
+    $答$：＿＿＿＿。'
+  options:
+  - label: A
+    content: 6x
+  - label: B
+    content: $x^{3}$－x＋5
+  - label: C
+    content: －$x^{3}$＋x－1
+  - label: D
+    content: $x^{3}$－x－3
+  - label: E
+    content: 6x＋2
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int (3x^{2}-1)dx$＝$x^{3}$－x＋C，其中 C 為任意常數
+
+    故選(B)(D)'
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T06
+      name: 反導函數與不定積分計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_2
+  section: 1
+  number: 2
+  type: fill
+  page: 1
+  stem: '試計算下列不定積分及定積分。
+
+    (1)$\int 3x^{2} dx$＝＿＿＿＿。
+
+    (2)$\int (20x^{3}-16x+3) dx$＝＿＿＿＿。
+
+    (3)$\int_{0}^{2} (6x-1)dx$＝＿＿＿＿。
+
+    (4)$\int_{-2}^{2} 6x dx$＝＿＿＿＿。
+
+    (5)$\int_{-2}^{4} | x-2 | dx$＝＿＿＿＿。'
+  explanation: '(1)$\int 3x^{2} dx$＝$x^{3}$＋C，其中 C 為任意常數
+
+    (2)$\int (20x^{3}-16x+3)dx$＝$5x^{4}$－$8x^{2}$＋3x＋C，其中 C 為任意常數
+
+    (3)$\int_{0}^{2} (6x-1)dx$＝$\left. (3x^{2}-x) \right| _{0}^{2}$＝（12－2）－（0－0）＝10
+
+    (4)$\int_{-2}^{2} 6x dx$＝$\left. 3x^{2} \right| _{-2}^{2}$＝12－12＝0
+
+    (5)$\int_{-2}^{4} | x-2 | dx$＝$\int_{-2}^{2} (-x+2)dx$＋$\int_{2}^{4} (x-2)dx$＝$\left. \left( -\frac{1}{2}x^{2}+2x \right) \right| _{-2}^{2}$＋$\left. \left( \frac{1}{2}x^{2}-2x \right) \right| _{2}^{4}$
+
+    ＝（－2＋4）－（－2－4）＋（8－8）－（2－4）
+
+    ＝8＋2＝10'
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T04
+      name: 絕對值與分段函數的定積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_3
+  section: 1
+  number: 3
+  type: fill
+  page: 1
+  stem: 已知 f（x）＝$\begin{cases}-x+2 , x \leq 1 \\ 1 , x >1\end{cases}$，且 b＞1，試求定積分$\int_{0}^{b} f(x)dx$＝＿＿＿＿。
+  answer:
+  - $b+\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int_{0}^{b} f(x)dx$＝$\int_{0}^{1} (-x+2)dx$＋$\int_{1}^{b} 1 dx$
+
+    ＝$\left. \left( -\frac{1}{2}x^{2}+2x \right) \right| _{0}^{1}$＋$\left. x \right| _{1}^{b}$
+
+    ＝$\left( -\frac{1}{2}+2 \right) -0$＋（b－1）＝b＋$\frac{1}{2}$'
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T04
+      name: 絕對值與分段函數的定積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: 已知 f（x）的圖形如右圖，封閉區域 A、B、C、D 的面積依序為 2、5、1、4，則$\int_{1}^{7} f(x)dx$＝＿＿＿＿。
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_112_新北_新北高中_數學_數乙_g12s1e3/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 405.85
+      - 518.7
+      - 564.3
+      - 603.6
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\int_{1}^{7} f(x)dx$＝$\int_{1}^{2} f(x)dx$＋$\int_{2}^{4} f(x)dx$＋$\int_{4}^{5} f(x)dx$＋$\int_{5}^{7} f(x)dx$
+
+    ＝－（A 的面積）＋（B 的面積）－（C 的面積）＋（D 的面積）
+
+    ＝－2＋5－1＋4＝6'
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T03
+      name: 定積分幾何意義與區域正負號
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_5
+  section: 1
+  number: 5
+  type: fill
+  page: 1
+  stem: 設多項式函數 F（x）為函數 f（x）＝$3x^{2}$－2x＋1 的一個反導函數，且 F(2)＝2，試求 F(0)＝＿＿＿＿。
+  answer:
+  - －4
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'F（x）＝$\int (3x^{2}-2x+1)dx$＝$x^{3}$－$x^{2}$＋x＋C，其中 C 為常數
+
+    ∵F(2)＝8－4＋2＋C＝2 ⇒ C＝－4
+
+    ∴F（x）＝$x^{3}$－$x^{2}$＋x－4
+
+    故 F(0)＝－4'
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T01
+      name: 反導函數與不定積分求原函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_6
+  section: 1
+  number: 6
+  type: fill
+  page: 1
+  stem: 已知 f（x）是偶函數，且$\int_{0}^{3} f(x)dx$＝5，試求$\int_{-3}^{3} f(x)dx$的值為＿＿＿＿。
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f（x）是偶函數 ∴f（x）的圖形對稱於 y 軸
+
+    由此可得$\int_{-3}^{0} f(x)dx$＝$\int_{0}^{3} f(x)dx$
+
+    故$\int_{-3}^{3} f(x)dx$＝$\int_{-3}^{0} f(x)dx$＋$\int_{0}^{3} f(x)dx$＝$\int_{0}^{3} f(x)dx$＋$\int_{0}^{3} f(x)dx$
+
+    ＝5＋5＝10'
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T07
+      name: 定積分基本性質與真偽判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_7
+  section: 1
+  number: 7
+  type: fill
+  page: 1
+  stem: 設二次函數 y＝f（x）的圖形在點 P（x，y）處的切線斜率為 3x，且此函數過點（0，1），試求此函數為＿＿＿＿。
+  answer:
+  - y＝$\frac{3}{2}x^{2}+1$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵y＝f（x）的圖形在 P（x，y）處的切線斜率為 3x
+
+    ∴f''（x）＝3x ⇒ f（x）＝$\int 3x dx$＝$\frac{3}{2}x^{2}+C$，其中 C 為常數
+
+    又∵此函數過點（0，1） ∴f(0)＝C＝1
+
+    故 y＝f（x）＝$\frac{3}{2}x^{2}+1$'
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T01
+      name: 反導函數與不定積分求原函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_8
+  section: 1
+  number: 8
+  type: fill
+  page: 1
+  stem: 設 a＜－2，如右圖為二次函數 y＝（x＋2）（x－a）的圖形，且 A 區域與 B 區域的面積相等，試求 a 值為＿＿＿＿。
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_112_新北_新北高中_數學_數乙_g12s1e3/s1_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 461.5
+      - 684.65
+      - 564.3
+      - 801.45
+  answer:
+  - －6
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令（x＋2）（x－a）＝$x^{2}$＋（2－a）x－2a＝0，得 x＝－2 或 a
+
+    故知此二次函數的圖形與 x 軸交於點（a，0）與（－2，0）
+
+    ∵A 區域與 B 區域的面積相等
+
+    ∴$\int_{a}^{-2} (x^{2}+(2-a)x-2a)dx$＋$\int_{-2}^{0} (x^{2}+(2-a)x-2a)dx$＝0
+
+    ⇒$\left. \left( \frac{1}{3}x^{3}+\frac{2-a}{2}\times x^{2}-2ax \right) \right| _{a}^{-2}$＋$\left. \left( \frac{1}{3}x^{3}+\frac{2-a}{2}\times x^{2}-2ax \right) \right| _{-2}^{0}$＝0
+
+    ⇒$\frac{1}{3}a^{3}$＋$\frac{2-a}{2}$×$a^{2}$－$2a^{2}$＝0
+
+    整理得 $2a^{3}$＋3（2－a）$a^{2}$－$12a^{2}$＝0 ⇒ $a^{3}$＋$6a^{2}$＝0 ⇒ $a^{2}$（a＋6）＝0 ⇒ a＝0 或－6
+
+    但 a＜－2，故 a＝－6'
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T03
+      name: 已知面積比例或等分條件反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_9
+  section: 1
+  number: 9
+  type: fill
+  page: 1
+  stem: 試求函數 f（x）＝$x^{2}$＋4x＋5 在 x＝－3 到 x＝0 之間與 x 軸所圍的區域面積為＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵判別式為 $4^{2}$－4×1×5＜0，且二次函數開口向上
+
+    ∴函數 f（x）和 x 軸無交點
+
+    $\int_{-3}^{0} (x^{2}+4x+5)dx$＝$\left. \left( \frac{1}{3}x^{3}+2x^{2}+5x \right) \right| _{-3}^{0}$
+
+    ＝0－$\left( \frac{1}{3}\times (-27)+2\times 9+5\times (-3) \right)$
+
+    ＝6'
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T01
+      name: 曲線與坐標軸所圍成區域面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_10
+  section: 1
+  number: 10
+  type: fill
+  page: 1
+  stem: 設二次多項式 f（x）滿足 f(1)＝0，f(3)＝0 且 f(2)＝3，則$\int_{0}^{4} f(x)dx$＝＿＿＿＿。
+  answer:
+  - －4
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T02
+      name: 多項式定積分計算與待定係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_11
+  section: 1
+  number: 11
+  type: fill
+  page: 2
+  stem: 試求函數 f（x）＝$x^{2}$－3x＋2 圖形與 x 軸所圍成的區域面積為＿＿＿＿。
+  answer:
+  - $\frac{1}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T01
+      name: 曲線與坐標軸所圍成區域面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_12
+  section: 1
+  number: 12
+  type: fill
+  page: 2
+  stem: 某工廠每天上午 9 時準時開工，連續生產 8 小時後，於下午 5 時收工，開工 x 小時後的生產速率為 f（x）＝－0.$03x^{2}$＋0.18x＋1.75，0 ≤ x ≤ 8，（單位：千個／小時）。試求：從上午 9 時至 12 時為止生產的數量為＿＿＿＿個。
+  answer:
+  - '5790'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T04
+      name: 經濟與自然現象的定積分建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_新北_新北高中_數學_數乙_g12s1e3_s1_13
+  section: 1
+  number: 13
+  type: fill
+  page: 2
+  stem: 某農產加工廠根據過去的資料得知，生產 100 箱產品的成本為 160000 元，生產 x 箱產品的邊際成本為 f（x）＝1600－2x，但每天至多生產 240 箱。試問：由生產量 100 箱增加到 110 箱時，成本增加了＿＿＿＿元。
+  answer:
+  - '13900'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T09
+      name: 邊際函數積分求總成本收益
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

@@ -1,0 +1,418 @@
+document:
+  id: doc_112_台北_松山_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 1
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 112學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 112學年度第1學期第1次定期評量
+  source_file: 高三/數學/112/1-1/台北/松山_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 18 分）
+    count: 3
+  - ord: 2
+    name: 二、填充題（每題 7 分，共 63 分）
+    count: 8
+  - ord: 3
+    name: 三、混合題（共 19 分）
+    count: 1
+questions:
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列選項中的無窮數列或無窮級數，有哪些是收斂的？
+  options:
+  - label: A
+    content: 〈$0.99^{n}$〉
+  - label: B
+    content: $\sum_{n =1}^{\infty} 0.99^{n}$
+  - label: C
+    content: $\sum_{n =1}^{\infty} 1^{n}$
+  - label: D
+    content: $\left\langle \frac{1}{n} \right\rangle$
+  - label: E
+    content: $\sum_{n =1}^{\infty} \frac{1}{n}$
+  answer:
+  - A
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵－1＜r ≤ 1 ∴無窮等比數列收斂
+
+    (B)○：∵－1＜r＜1 ∴無窮等比級數收斂
+
+    (C)╳：r＝1 ∴無窮等比級數發散
+
+    (D)○：收斂到 0
+
+    (E)╳：$\sum_{n =1}^{\infty} \frac{1}{n}$＝$\frac{1}{1}$＋$\frac{1}{2}$＋$\frac{1}{3}$＋$\frac{1}{4}$＋$\frac{1}{5}$＋……
+
+    ＞$\frac{1}{1}$＋$\frac{1}{2}$＋$\left( \frac{1}{4}+\frac{1}{4} \right)$＋$\left( \frac{1}{8}+\frac{1}{8}+\frac{1}{8}+\frac{1}{8} \right)$＋……＝$\frac{3}{2}$＋$\frac{1}{2}$＋$\frac{1}{2}$＋……，發散
+
+    故選(A)(B)(D)'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T01
+      name: 數列極限運算與收斂判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設 f（x）＝$\frac{1}{x + 3}$，g（x）＝$\frac{1}{x + 1}$，下列選項哪些在合成函數（g。f）（x）的定義域內？
+  options:
+  - label: A
+    content: －1
+  - label: B
+    content: －2
+  - label: C
+    content: －3
+  - label: D
+    content: －4
+  - label: E
+    content: －5
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'x＋3≠0$\Rightarrow$x≠－3，$\frac{1}{x + 3}$≠－1$\Rightarrow$x≠－4
+
+    除了 x＝－3 或－4 外，其餘均在（g。f）（x）的定義域內
+
+    故選(A)(B)(E)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 已知條件（a）：此函數為奇函數；條件（b）：在 x＞0 時，此函數圖形的凹口向上。下列選項中，哪些函數同時滿足（a）（b）兩個條件？
+  options:
+  - label: A
+    content: $f_{1}$（x）＝$x^{3}$
+  - label: B
+    content: $f_{2}$（x）＝$x^{3}$－2x
+  - label: C
+    content: $f_{3}$（x）＝$x^{3}$＋2x
+  - label: D
+    content: $f_{4}$（x）＝sinx
+  - label: E
+    content: $f_{5}$（x）＝$e^{x}$
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 求 1×$0.0\overline{1}$＋2×$0.0\overline{2}$＋3×$0.0\overline{3}$＋……＋9×$0.0\overline{9}$＝＿＿＿＿。
+  answer:
+  - $\frac{19}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$0.0\overline{1}$＝$\frac{1}{90}$，$0.0\overline{2}$＝$\frac{2}{90}$，……
+
+    ∴1×$0.0\overline{1}$＋2×$0.0\overline{2}$＋3×$0.0\overline{3}$＋……＋9×$0.0\overline{9}$＝1×$\frac{1}{90}$＋2×$\frac{2}{90}$＋3×$\frac{3}{90}$＋……＋9×$\frac{9}{90}$
+
+    ＝$\frac{1}{90}$（$1^{2}$＋$2^{2}$＋……＋$9^{2}$）＝$\frac{1}{90}$×$\frac{9\times 10\times 19}{6}$＝$\frac{19}{6}$'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 求$\lim_{x \rightarrow 5} \left( \frac{\sqrt{x+4} + 2}{x + 1}+\frac{\sqrt{x+4} - 3}{x - 5} \right)$＝＿＿＿＿。
+  answer:
+  - '1'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\lim_{x \rightarrow 5} \frac{\sqrt{x+4} - 3}{x - 5}$＝$\lim_{x \rightarrow 5} \left( \frac{\sqrt{x+4} - 3}{x - 5}\times \frac{\sqrt{x+4} + 3}{\sqrt{x+4} + 3} \right)$＝$\lim_{x \rightarrow 5} \left( \frac{x - 5}{x - 5}\times \frac{1}{\sqrt{x+4} + 3} \right)$
+
+    ＝$\lim_{x \rightarrow 5} \frac{1}{\sqrt{x+4} + 3}$＝$\frac{1}{6}$
+
+    ∴$\lim_{x \rightarrow 5} \left( \frac{\sqrt{x+4} + 2}{x + 1}+\frac{\sqrt{x+4} - 3}{x - 5} \right)$＝$\lim_{x \rightarrow 5} \frac{\sqrt{x+4} + 2}{x + 1}$＋$\lim_{x \rightarrow 5} \frac{\sqrt{x+4} - 3}{x - 5}$＝$\frac{5}{6}+\frac{1}{6}$＝1'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T10
+      name: 無理式極限有理化計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 設 $S_{n}$＝$\frac{1}{1 \cdot 2}$＋$\frac{1}{2 \cdot 3}$＋……＋$\frac{1}{n ( n + 1 )}$，令 S＝$\lim_{n \rightarrow \infty} S_{n}$，試求滿足∣$S_{n}$－S∣＜$\frac{1}{100}$之最小自然數 n 為＿＿＿＿。
+  answer:
+  - '100'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$S_{n}$＝$\frac{1}{1 \cdot 2}$＋$\frac{1}{2 \cdot 3}$＋……＋$\frac{1}{n ( n + 1 )}$＝$\left( \frac{1}{1}-\frac{1}{2} \right)$＋$\left( \frac{1}{2}-\frac{1}{3} \right)$＋……＋$\left( \frac{1}{n}-\frac{1}{n + 1} \right)$
+
+    ＝1－$\frac{1}{n + 1}$
+
+    $\Rightarrow$S＝$\lim_{n \rightarrow \infty} S_{n}$＝$\lim_{n \rightarrow \infty} \left( 1 -\frac{1}{n + 1} \right)$＝1
+
+    得∣$S_{n}$－S∣＝$\left| 1-\frac{1}{n + 1}-1 \right|$＝$\frac{1}{n + 1} < \frac{1}{100}$
+
+    $\Rightarrow$n＞99
+
+    故最小自然數 n 為 100'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T06
+      name: 分項對消與無窮級數極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 已知 f（x）＝ln x，試求$\lim_{x \rightarrow 10} f ( x )$－$\lim_{x \rightarrow 10^{+}} f ( x )$－$\lim_{x \rightarrow 10^{-}} f ( x )$＋f(10)＝＿＿＿＿。
+  answer:
+  - '0'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f（x）＝ln x 在 x＞0 為連續函數
+
+    ∴$\lim_{x \rightarrow 10^{+}} f ( x )$＝$\lim_{x \rightarrow 10^{-}} f ( x )$＝$\lim_{x \rightarrow 10} f ( x )$＝f(10)
+
+    故所求為 0'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T03
+      name: 函數連續性檢驗與求參
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 試求$\lim_{n \rightarrow \infty} \left( \frac{n + 3}{n} \right) ^{3n}$＝＿＿＿＿。
+  answer:
+  - $e^{9}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$\lim_{n \rightarrow \infty} \left( \frac{n + 3}{n} \right) ^{3n}$＝$\lim_{n \rightarrow \infty} \left[ \left( 1 +\frac{3}{n} \right) ^{\frac{n}{3}} \right] ^{9}$
+
+    令 k＝$\frac{n}{3}$，則$\lim_{n \rightarrow \infty} \left[ \left( 1 +\frac{3}{n} \right) ^{\frac{n}{3}} \right] ^{9}$＝$\lim_{k \rightarrow \infty} \left[ \left( 1 +\frac{1}{k} \right) ^{k} \right] ^{9}$
+
+    又$\lim_{k \rightarrow \infty} \left( 1 +\frac{1}{k} \right) ^{k}$＝e
+
+    故所求為 $e^{9}$'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T02
+      name: 函數極限與自然常數定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 f（x）＝$\sum_{k =1}^{3} ( 4 -k )x^{k}$且實數 c 滿足 f（c）＝1000，求高斯符號 [ c ]＝＿＿＿＿。
+  answer:
+  - '9'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f（x）＝$\sum_{k =1}^{3} ( 4 -k )x^{k}$＝3x＋$2x^{2}$＋$x^{3}$
+
+    令 g（x）＝f（x）－1000＝$x^{3}$＋$2x^{2}$＋3x－1000
+
+    ∵g(9)＝－82＜0，g(10)＝230＞0
+
+    ∴由勘根定理知，存在 9＜c＜10，使得 g（c）＝0，即 f（c）＝1000
+
+    故高斯符號 [ c ]＝9'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T04
+      name: 介值定理與勘根應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 設函數 f（x）＝$x^{2}$＋2，g（x）＝2x＋1，試求$\lim_{n \rightarrow \infty} \frac{( f 。 g ) ( n )}{( g 。 f ) ( n )}$＝＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（f。g）（n）＝f（g（n））＝（g（n））$^{2}$＋2＝（2n＋1）$^{2}$＋2＝$4n^{2}$＋4n＋3
+
+    （g。f）（n）＝g（f（n））＝2f（n）＋1＝2（$n^{2}$＋2）＋1＝$2n^{2}$＋5
+
+    故$\lim_{n \rightarrow \infty} \frac{( f 。 g ) ( n )}{( g 。 f ) ( n )}$＝$\lim_{n \rightarrow \infty} \frac{4n^{2}+ 4n + 3}{2n^{2}+ 5}$＝2'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T02
+      name: 多項式與指數型數列極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 已知方程式 10x＝$2^{x}$ 的兩個實根為α$_{1}$，β$_{1}$，且方程式 x＝10．$log_{2}$x 的兩個實根為α$_{2}$，β$_{2}$，求$\frac{\alpha _{2}+\beta _{2}}{\alpha _{1}+\beta _{1}}$＝＿＿＿＿。
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台北_松山_數學_數甲_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '(2) 承上題，利用數學歸納法證明：對於任意正整數 n ≥ α，不等式 n！＞$n^{3}$ 恆成立。（非選擇題，7 分）
+
+    (3) 利用上題結論，求$\lim_{n \rightarrow \infty} \frac{n^{2}}{n ！}$之值。（非選擇題，7 分）'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T04
+      name: 夾擠定理求數列和極限
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹缺第(1)小題，第(2)小題「承上題」之 α 未於題幹中給出
+  difficulty: 4

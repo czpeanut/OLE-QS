@@ -75,7 +75,8 @@ def main() -> int:
         data = {t: f.result() for t, f in futs.items()}
     print("讀取完成：" + "、".join(f"{t} {len(v):,}" for t, v in data.items()), flush=True)
 
-    docs = {d["id"]: d for d in data["document"]}
+    # 這份快照只收國中（7～9 年級）；高中另由 scripts/export_senior.py 從 data/high_school/bank 產生
+    docs = {d["id"]: d for d in data["document"] if (d.get("grade") or 0) <= 9}
     sections = defaultdict(list)
     for s in data["section"]:
         sections[s["document_id"]].append(s)
@@ -113,6 +114,8 @@ def main() -> int:
     sec_name = {(s["document_id"], s["ord"]): s["name"] for s in data["section"]}
     with gzip.open(OUT / "questions.jsonl.gz", "wt", encoding="utf-8", compresslevel=9) as f:
         for q in sorted(data["question"], key=lambda q: (q["document_id"], q["section_ord"] or 0, q["number"] or 0)):
+            if q["document_id"] not in docs:
+                continue
             d = docs[q["document_id"]]
             note = q.get("review_note") or ""
             sk = q.get("sort_key")
@@ -157,8 +160,9 @@ def main() -> int:
     shutil.copy(REPO / "web/lib/data/patterns.json", tax / "math_patterns.json")
     manifest = {"schema_version": SCHEMA_VERSION, "exported_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
                 "source": "Supabase（線上題庫）", "questions": n_q, "papers": len(docs),
-                "questions_usable": sum(1 for q in data["question"] if q["status"] != "rejected"),
-                "images": len(data["asset"]) + sum(1 for o in data["option"] if o["asset_file"])}
+                "questions_usable": sum(1 for q in data["question"] if q["status"] != "rejected" and q["document_id"] in docs),
+                "images": sum(1 for a in data["asset"] if a["document_id"] in docs)
+                          + sum(1 for o in data["option"] if o["asset_file"] and o["asset_file"].split("/")[0] in docs)}
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     size = sum(p.stat().st_size for p in OUT.rglob("*") if p.is_file()) / 2**20
     print(f"匯出 {n_q:,} 題、{len(docs):,} 份卷 → {OUT.relative_to(REPO)}（{size:.1f} MB，{time.time() - t0:.0f} 秒）")

@@ -1,0 +1,418 @@
+document:
+  id: doc_109_台北_松山_數學_數A_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 2
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 109學年度第2學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 109學年度第2學期第2次定期評量
+  source_file: 高二/數學/109/2-2/台北/松山_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多選題：
+    count: 3
+  - ord: 2
+    name: 二、填充題：
+    count: 10
+  - ord: 3
+    name: 三、混合題：
+    count: 2
+questions:
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: calc
+  page: 1
+  stem: 已知空間中三直線$L_{1}$：$\frac{x-1}{-1}$＝$\frac{y-2}{1}$＝$\frac{z-3}{1}$、$L_{2}$：$\frac{x-1}{-1}$＝$\frac{y-1}{-1}$＝$\frac{z-1}{-1}$、$L_{3}$：$\frac{x-1}{1}$＝$\frac{y-2}{2}$＝$\frac{z-3}{-1}$及平面E：2x＋y＋z＝4，下列選項哪些正確？ (1) 直線$L_{1}$與平面E平行 (2) 直線$L_{2}$與平面E平行 (3) 直線$L_{1}$與直線$L_{2}$平行 (4) 直線$L_{3}$與平面E相交於一點 (5) 直線$L_{3}$與平面E的夾角為60°。
+  answer:
+  - (1)(3)(4)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1)○，(－1 , 1 , 1 )．( 2 , 1 , 1 )＝0 $L_{1}$上點 ( 1 , 2 , 3 ) 不在E上 ∴$L_{1}$ // E (2)×，( 1 ,－1 ,－1 )．( 2 , 1 , 1 )＝0 $L_{2}$上點 ( 1 , 1 , 1 ) 在E上 ∴$L_{2}$在E上 (3)○，(－1 , 1 , 1 ) // ( 1 ,－1 ,－1 ) $L_{1}$上點 ( 1 , 2 , 3 ) 不在$L_{2}$上 ∴$L_{1}$ // $L_{2}$ (4)○，( 1 , 2 ,－1 )．( 2 , 1 , 1 )≠0 ∴$L_{3}$在E交於一點 (5)×，cosθ＝$\frac{(1,2,-2)\cdot (2,1,1)}{|(1,2,-1)||(2,1,1)|}$＝$\frac{1}{2}$ ∴$L_{2}$與E之法向量銳夾角60° 即$L_{3}$與E夾角30°或150° 選(1)(3)(4)
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T08
+      name: 直線與平面平行重合及垂直判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: calc
+  page: 1
+  stem: 請參閱本試卷的填充題第1題至第3題的題幹，下列選項哪些正確？ (1) 本試卷填充題的第1題有使用到古典機率 (2) 本試卷填充題的第2題有使用到主觀機率 (3) 本試卷填充題的第2題有使用到客觀機率 (4) 本試卷填充題的第3題有使用到主觀機率 (5) 本試卷填充題的第3題有使用到客觀機率。
+  answer:
+  - (1)(2)(3)(5)
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1)○ (2)○ (3)○ (4)×，僅用到客觀認定 (5)○
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T06
+      name: 古典主觀與客觀機率判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 投擲一顆公正的骰子兩次，若A表示擲出點數和為6的事件，B表示擲出點數和小於5的事件，C表示擲出點數和為3的倍數的事件。下列選項哪些正確？
+  options:
+  - label: '1'
+    content: P(A)＝$\frac{5}{36}$
+  - label: '2'
+    content: P(B)＝$\frac{1}{6}$
+  - label: '3'
+    content: A、B為獨立事件
+  - label: '4'
+    content: B、C為獨立事件
+  - label: '5'
+    content: A、B、C為獨立事件
+  explanation: (1)○，P ( A )＝$\frac{5}{6\times 6}$＝$\frac{5}{36}$ (2)○，P ( B )＝$\frac{1+2+3}{6\times 6}$＝$\frac{1}{6}$ (3)×，P ( A∩B )＝0≠P ( A ) P ( B ) ∴A、B不是獨立事件 (4)○，P ( C )＝$\frac{2+5+4+1}{6\times 6}$＝$\frac{1}{3}$ P ( B∩C )＝P ( 點數和為3 )＝$\frac{2}{6\times 6}$＝$\frac{1}{18}$＝P ( B ) P ( C ) ∴A、B、C為獨立事件 (5)×，由(3)(4) A、B、C不是獨立事件 選(1)(2)(4)
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 投擲一枚均勻硬幣三次，觀察正反面出現的情形，若A表示至少出現一次正面的事件，B表示至少出現兩次反面的事件，則P ( B | A )＋P ( A | B )＝＿＿＿＿。
+  answer:
+  - $\frac{33}{28}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: n ( A )＝7，n ( B )＝4，n ( A∩B )＝3 ∴P ( B | A )＋P ( A | B )＝$\frac{3}{7}$＋$\frac{3}{4}$＝$\frac{33}{28}$
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T01
+      name: 條件機率定義與樣本篩選
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 甲外出工作，委託鄰居乙照顧一盆花。根據過去很多次的統計數據得知：如果不澆水，花死去的機率是0.8；若澆水，花死去的機率是0.1。如果甲有九成的把握乙會記得澆水，試問甲回家後發現這盆花還活著的情況下，但乙卻沒有澆水的機率為＿＿＿＿。
+  answer:
+  - $\frac{2}{83}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 下表為測量課程中同學們使用一儀器在地面測量某建築物高度若干次所得的數據，請根據此數據推測，若再用此儀器測量該建築物的高度三次，其平均為70公尺的機率為＿＿＿＿。
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_109_台北_松山_數學_數A_g11s2e2/s2_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 452.85
+      - 406.5
+      - 494.65
+  answer:
+  - $\frac{91}{500}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 平均70公尺之情形：70，70，70；68，70，72；69，70，71；68，71，71，原數有50次 所求機率和為$\frac{3!}{3!}$(－$\frac{10}{50}$)$^{3}$＋3! ($\frac{5}{50}$) ($\frac{10}{50}$) ($\frac{5}{50}$)＋3! ($\frac{15}{50}$) ($\frac{10}{50}$) ($\frac{15}{50}$)＋$\frac{3!}{1!2!}$($\frac{5}{50}$) ($\frac{15}{50}$)$^{2}$＝$\frac{31}{200}$ 註：由得到的數據作客觀認定
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 將平面$E_{1}$：x＋y＋z＝3的x截距、y截距、z截距分別加1為平面$E_{2}$的x截距、y截距、z截距，求平面$E_{1}$與$E_{2}$的距離為＿＿＿＿。
+  answer:
+  - $\frac{1}{\sqrt{3}}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $E_{1}$：x＋y＋z＝3的x截距，y截距，z截距均為1 ∴$E_{2}$的x截距，y截距，z截距均為2 $\Rightarrow$ $E_{2}$：x＋y＋z＝4 得d ( $E_{1}$ , $E_{2}$ )＝|$\frac{4-3}{\sqrt{1^{2}+1^{2}+1^{2}}}$|＝$\frac{\sqrt{3}}{3}$
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T08
+      name: 點面距離、對稱反射與最值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 已知實數x, y, z滿足方程式x＋2y＋2z＝6，試問$\sqrt{(x-1)^{2}+y^{2}+(z+5)^{2}}$的最小值為＿＿＿＿。
+  answer:
+  - '5'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設A ( 1 , 0 ,－5 ) P ( x , y , z ) 為平面E：x＋2y＋2z＝6上的動點 ∴$\sqrt{(x-1)^{2}+y^{2}+(z+t)^{2}}$＝$\overline{AP}$最小值為d ( A , E )＝|$\frac{1+0-10-6}{\sqrt{1^{2}+2^{2}+2^{2}}}$|＝5 註：也可由柯西不等式求得
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T08
+      name: 點面距離、對稱反射與最值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 試求兩平行線$L_{1}$：$\begin{cases}x+y=2 \ z=1\end{cases}$與$L_{2}$：$\begin{cases}x+y=2 \ z=3\end{cases}$的距離為＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $L_{1}$、$L_{2}$分別是將xy平面上的直線x＋y＝2，沿z軸向上平移1單位，3單位 ∴$L_{1}$、$L_{2}$的距離為 | 3－1 |＝2
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T03
+      name: 點到空間直線距離與投影點
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 已知四面體A-BCD的頂點坐標為A ( 1 , 1 , 0 )、B (－1 , 3 , 1 )、C ( 0 , 2 , 0 )、D ( 0 , 3 , 0 )，求平面ABC與平面ABD的夾角為＿＿＿＿。
+  answer:
+  - 45°或135°
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\overrightarrow{AB}$＝(－2 , 2 , 1 )，$\overrightarrow{AC}$＝(－1 , 1 , 0 )，$\overrightarrow{AD}$＝(－1 , 2 , 0 ) 平面ABC的法向量$\overrightarrow{n_{1}}$＝$\overrightarrow{AB}$×$\overrightarrow{AC}$＝(－1 ,－1 , 0 ) 平面ABD的法向量$\overrightarrow{n_{2}}$＝$\overrightarrow{AB}$×$\overrightarrow{AD}$＝(－2 ,－1 ,－2 ) 令$\overrightarrow{n_{1}}$、$\overrightarrow{n_{2}}$的夾角θ cosθ＝$\frac{\overrightarrow{n_{1}}\cdot \overrightarrow{n_{2}}}{|\overrightarrow{n_{1}}||\overrightarrow{n_{2}}|}$＝$\frac{3}{\sqrt{2}\cdot 3}$＝$\frac{1}{\sqrt{2}}\Rightarrow$ θ＝45° ∴平面ABC與平面ABC夾角45°或135° 註：四面體中，△ABC與△ABD二面之夾角45°
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T02
+      name: 兩平面夾角與位置關係
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 已知直線$L_{1}$：$\frac{x}{1}$＝$\frac{y-1}{1}$＝$\frac{z-2}{-1}$與$L_{2}$：$\frac{x-8}{6}$＝$\frac{y-7}{2}$＝$\frac{z-2}{-3}$互為歪斜線，若直線$L_{1}$與$L_{2}$的公垂線為$L_{3}$，則包含直線$L_{3}$且與直線$L_{1}$垂直的平面方程式為＿＿＿＿。
+  answer:
+  - x＋y－z＝2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $L_{1}$上點P ( p , 1＋p , 2－p ) $L_{2}$上點Q ( 8＋6q , 7＋2q , 2－3q ) $\overrightarrow{PQ}$＝( 8＋6q－p , 6＋2q－p ,－3q＋p ) 令$\overrightarrow{PQ}$⊥( 1 , 1 ,－1 )，$\overrightarrow{PQ}$⊥( 6 , 2 ,－3 ) $\Rightarrow\begin{cases}(8+6q-p)+(6+2q-p)-(-3q+p)=0 \ 6(8+6q-p)+2(6+2q-p)-3(-3q+p)=0\end{cases}\Rightarrow\begin{cases}11q-3p=-14 \ 49q-11p=-60\end{cases}$ q＝－1，p＝1 得P ( 1 , 2 , 1 ) 所求平面過P，以 ( 1 , 1 ,－1 ) 為法向量，方程式為 ( x－1 )＋( y－2 )－( z－1 )＝0 即x＋y－z－2＝0
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T04
+      name: 兩歪斜線公垂線段長計算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 1
+  stem: 已知空間中直線L＝$\frac{x-1}{1}$＝$\frac{y+2}{6}$＝$\frac{z-2}{-2}$與平面E：2x－y＋z＝0，試求直線L投影在平面E上的圖形方程式為＿＿＿＿。
+  answer:
+  - $\frac{x-2}{3}$＝$\frac{y-4}{5}$＝$\frac{z}{-1}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: L上動點A ( 1＋t ,－2＋6t , 2－2t ) 在E上的投影點P $\Rightarrow\overrightarrow{AP}$＝l ( 2 ,－1 , 1 )，得P ( 2l＋1＋t , ─l─2＋6t , l＋2－2t ) P在E上：2 ( 2 l＋1＋t )－(－l－2＋6t )＋( l＋2－2t )＝0 $\Rightarrow$ t－l＝1 t＝0時，l＝－1，得$P_{1}$ (－1 ,－1 , 1 ) t＝1時，l＝0，得$P_{2}$ ( 2 , 4 , 0 ) 線L投影在E上的圖形為直線$P_{1}P_{2}$：$\frac{x-2}{3}$＝$\frac{y-4}{5}$＝$\frac{z}{-1}$( 答案不唯一 )
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T06
+      name: 直線與平面交點及投影求解
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 1
+  stem: 已知空間中兩直線$L_{1}$＝$\frac{x-3}{1}$＝$\frac{y-3}{1}$＝$\frac{z}{2}$與$L_{2}$：$\frac{x-6}{-1}$＝$\frac{y+1}{k}$＝$\frac{z-6}{-2}$，其中k值是從集合 { 1 , 2 , 3 , 4 } 中任取一數，試問在直線$L_{1}$與$L_{2}$不重合的條件下，直線$L_{1}$與$L_{2}$會相交的機率為＿＿＿＿。
+  answer:
+  - $\frac{3}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設$L_{1}$、$L_{2}$交於點P，坐標如下： x＝3＋$t_{1}$＝6－$t_{2}$ y＝－1－$2t_{1}$＝－1＋$kt_{2}$ z＝$2t_{1}$＝6－$2t_{2}$ $\Rightarrow\begin{cases}t_{1}+t_{2}=3 \ 2t_{1}+kt_{2}=0\end{cases}\Rightarrow$ ( k－2 ) $t_{2}$＝－6 恰交一點 $\Leftrightarrow$ k≠2 ∵k ∈ { 1 , 2 , 3 , 4 } ∴機率＝$\frac{3}{4}$
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T02
+      name: 空間兩直線位置關係與共面
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 1
+  stem: 設北極與南極坐標分別為 ( 2 , 4 , 3 )、( 0 ,－2 ,－1 )，下列選項哪些可能是經線所在的平面？( 多選題 ) (1) x＋3y＋2z＝6 (2) 2x－z＝1 (3) x＋y－2z＝0 (4) 5x＋y－4z＝5 (5) x＋y＋z＝9
+  group_stem: 假設地球是一個球體，北極與南極是地球自轉的軸線貫穿地球表面的兩點。在地球表面上，以北極與南極做為一直徑的兩個端點所畫出的每個半圓，都稱為經線。通過<u>英國</u>的<u>格林威治</u>天文臺的經線，稱為0°經線。0°經線以西的半球上之經線，稱為西經線；以東的半球上之經線，稱為東經線。一般而言，經線所在的半平面與0°經線所在的半平面形成的二面角度數，就是該經線的度數。例如東經120°線所在的半平面與0°經線所在的半平面形成的二面角為120°。請回答下列問題：
+  answer:
+  - (1) (2)(3) (2) 5x＋y－4z＝2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1)× (2)○ (3)○ (4)× (5)× 選(2)(3)
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+    label_note: 答案欄位合併了次題答案
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數A_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 1
+  stem: 承上題，設0°經線所在的平面方程式為x－y＋z＝1，求東經90°線所在的平面方程式。
+  group_stem: 假設地球是一個球體，北極與南極是地球自轉的軸線貫穿地球表面的兩點。在地球表面上，以北極與南極做為一直徑的兩個端點所畫出的每個半圓，都稱為經線。通過<u>英國</u>的<u>格林威治</u>天文臺的經線，稱為0°經線。0°經線以西的半球上之經線，稱為西經線；以東的半球上之經線，稱為東經線。一般而言，經線所在的半平面與0°經線所在的半平面形成的二面角度數，就是該經線的度數。例如東經120°線所在的半平面與0°經線所在的半平面形成的二面角為120°。請回答下列問題：
+  explanation: 東經90°線所在平面，法向量為$\overrightarrow{n}\overrightarrow{n}$⊥$\overrightarrow{NS}$＝( 2 , 6 , 4 )＝2 ( 1 , 3 , 2 ) $\overrightarrow{n}$⊥( 平面x－y＋z＝1的法向量 ) ∴取$\overrightarrow{n}$＝( 1 , 3 , 2 ) × ( 1 ,－1 , 1 )＝( 5 , 1 ,－4 ) 所求平面：5 ( x－0 )＋1 ( y＋2 )－4 ( z＋1 )＝0 即5x＋y－4z－2＝0
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

@@ -1,0 +1,685 @@
+document:
+  id: doc_111_台南_台南二中_數學_數乙_g12s2e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 1
+  city: 台南
+  school_short: 台南二中
+  school: 國立臺南第二高級中學
+  title: 國立臺南第二高級中學 111學年度第2學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 111學年度第2學期第1次定期評量
+  source_file: 高三/數學/111/2-1/台南/台南二中_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 5 分，所有選項均答對者，得 5 分；答錯 1 個選項者，得 3 分；答錯 2 個選項者，得 1 分；答錯多於 2 個選項或所有選項均未作答者，該題以零分計算，共 20 分）
+    count: 4
+  - ord: 2
+    name: 二、填充題（每格 5 分，共 60 分）（答案如為分數，需化簡為最簡分數）
+    count: 10
+  - ord: 3
+    name: 三、混合題（共 20 分）
+    count: 2
+questions:
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 已知隨機變數 X、Y 滿足 Y＝aX＋b，其中 a，b$\in$R，請選出正確的選項。
+  options:
+  - label: A
+    content: E（Y）＝aE（X）＋b
+  - label: B
+    content: E（X＋Y）＝E（X）＋E（Y）
+  - label: C
+    content: E（XY）＝E（X）×E（Y）
+  - label: D
+    content: σ（Y）＝a×σ（X）
+  - label: E
+    content: E（$X^{2}$）≥〔E（X）〕$^{2}$
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T04
+      name: 隨機變數線性變換性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列選項中，請選出隨機變數 X 是「二項分布」的選項。
+  options:
+  - label: A
+    content: 10 題五選一的單選題，每題皆隨意選擇 1 個選項作答，隨機變數 X 表示答對的題數
+  - label: B
+    content: 10 題五選二的多選題，每題皆隨意選擇 2 個選項作答，隨機變數 X 表示完全答對的題數
+  - label: C
+    content: 擲一枚兩面皆為人頭的硬幣 10 次，隨機變數 X 表示出現人頭的次數
+  - label: D
+    content: 袋中有相同的黑球 2 顆、白球 2 顆，從袋中一次任取 1 球，取球後不放回袋中，稱為一次試驗。隨機變數 X 表示重複此試驗 3 次後，取出黑球的次數
+  - label: E
+    content: 袋中有相同的黑球 2 顆、白球 2 顆，從袋中一次任取 2 球，取球後放回袋中，稱為一次試驗。隨機變數 X 表示重複此試驗 3 次後，兩球同色的次數
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵X～B$\left( 10 , \frac{1}{5} \right)$
+
+    ∴隨機變數 X 是二項分布
+
+    (B)○：∵每題答對之機率為$\frac{C_{2}^{2}}{C_{2}^{5}}$＝$\frac{1}{10}$
+
+    且 X～B$\left( 10 , \frac{1}{10} \right)$
+
+    ∴隨機變數 X 是二項分布
+
+    (C)╳：伯努力試驗需只有 2 種可能的結果
+
+    (D)╳：伯努力試驗需在完全相同的情況下
+
+    取球後需放回袋中
+
+    (E)○：∵從袋中任取 2 球，取後放回
+
+    兩球同色之機率為$\frac{C_{2}^{2}+C_{2}^{2}}{C_{2}^{4}}$＝$\frac{1}{3}$，且 X～B$\left( 3 , \frac{1}{3} \right)$
+
+    ∴隨機變數 X 是二項分布
+
+    故選(A)(B)(E)'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T07
+      name: 二項分布試驗判別與單項機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: '重複操作一個成功機率為$\frac{1}{2}$的伯努力試驗 15 次，隨機變數 X 表示 15 次試驗中的成
+
+    功次數，P（X＝k）表示 15 次試驗中恰成功 k 次的機率。請選出正確的選項。'
+  options:
+  - label: A
+    content: X 的可能值有 15 個
+  - label: B
+    content: X 的機率分布為二項分布
+  - label: C
+    content: P（X＝4）＜P（X＝6）
+  - label: D
+    content: P（X＝6）＜P（X＝10）
+  - label: E
+    content: 若 P（X＝k）為最大機率，則 k＝8
+  answer:
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：X＝0，1，2，……，15，共有 16 個
+
+    (B)○：∵X～B$\left( 15 , \frac{1}{2} \right)$ ∴隨機變數 X 是二項分布
+
+    (C)○：P（X＝4）＝$C_{4}^{15} \left( \frac{1}{2} \right) ^{4} \left( \frac{1}{2} \right) ^{11}$＝1365×$\left( \frac{1}{2} \right) ^{15}$
+
+    P（X＝6）＝$C_{6}^{15} \left( \frac{1}{2} \right) ^{6} \left( \frac{1}{2} \right) ^{9}$＝5005×$\left( \frac{1}{2} \right) ^{15}$
+
+    $\Rightarrow$P（X＝4）＜P（X＝6）
+
+    (D)╳：∵P（X＝10）＝$C_{10}^{15} \left( \frac{1}{2} \right) ^{10} \left( \frac{1}{2} \right) ^{5}$＝$C_{5}^{15} \left( \frac{1}{2} \right) ^{5} \left( \frac{1}{2} \right) ^{10}$＝P（X＝5）＝3003×$\left( \frac{1}{2} \right) ^{15}$
+
+    承(C)可知 P（X＝6）＞P（X＝5）＝P（X＝10）
+
+    (E)╳：∵P（X＝7）＝$C_{7}^{15} \left( \frac{1}{2} \right) ^{7} \left( \frac{1}{2} \right) ^{8}$＝$C_{8}^{15} \left( \frac{1}{2} \right) ^{8} \left( \frac{1}{2} \right) ^{7}$＝P（X＝8）＝6435×$\left( \frac{1}{2} \right) ^{15}$為最大機率
+
+    ∴k＝7 或 8
+
+    故選(B)(C)'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T03
+      name: 二項分布最大機率項判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 已知直線 L：2x－5y＝7 將坐標平面上 L 以外的部分分成兩個半平面，請選出所有與原點位在同一個半平面的選項。
+  options:
+  - label: A
+    content: （3，0）
+  - label: B
+    content: （3，3）
+  - label: C
+    content: （3，4）
+  - label: D
+    content: （4，－4）
+  - label: E
+    content: （0，－4）
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '原點（0，0）代入 2x－5y，得 2×0－5×0＝0＜7
+
+    (A)○：（3，0）代入 2x－5y，得 2×3－5×0＝6＜7
+
+    (B)○：（3，3）代入 2x－5y，得 2×3－5×3＝－9＜7
+
+    (C)○：（3，4）代入 2x－5y，得 2×3－5×4＝－14＜7
+
+    (D)╳：（4，－4）代入 2x－5y，得 2×4－5×（－4）＝28＞7
+
+    (E)╳：（0，－4）代入 2x－5y，得 2×0－5×（－4）＝20＞7
+
+    故選(A)(B)(C)'
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T01
+      name: 圖形判別二元一次聯立不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: '已知隨機變數 X 的機率分布表如下：
+
+    | k | 1 | 2 | 4 |
+
+    | --- | --- | --- | --- |
+
+    | P（X＝k） | a | b | $\frac{1}{4}$ |
+
+    設 X 的期望值 E（X）＝2，則數對（a，b）＝＿＿＿＿。'
+  answer:
+  - $\left( \frac{1}{2} , \frac{1}{4} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'E（X）＝$1\times a + 2\times b + 4\times \frac{1}{4}$＝2$\Rightarrow$a＋2b＝1 ……………①
+
+    又機率總和$a +b +\frac{1}{4}$＝1$\Rightarrow$a＋b＝$\frac{3}{4}$ ……………………②
+
+    由①、②可得 a＝$\frac{1}{2}$，b＝$\frac{1}{4}$
+
+    故數對（a，b）＝$\left( \frac{1}{2} , \frac{1}{4} \right)$'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T05
+      name: 期望值與變異數反推未知參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 袋中有編號 1，2，3，4，5 的球各兩顆，且每顆球被取到的機會均等，每次從中取一球，記錄號碼後放回袋中，再取一球記錄號碼，稱此為一輪操作。隨機變數 X 表示兩球號碼差的絕對值，若 P（X＝k）的機率為最大，則 k＝＿＿＿＿。
+  answer:
+  - '1'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（X＝0）＝$\frac{1}{5}\times \frac{1}{5}$＋$\frac{1}{5}\times \frac{1}{5}$＋$\frac{1}{5}\times \frac{1}{5}$＋$\frac{1}{5}\times \frac{1}{5}$＋$\frac{1}{5}\times \frac{1}{5}$＝$\frac{1}{5}$
+
+    P（X＝1）＝$\frac{1}{5}\times \frac{1}{5}\times 2$＋$\frac{1}{5}\times \frac{1}{5}\times 2$＋$\frac{1}{5}\times \frac{1}{5}\times 2$＋$\frac{1}{5}\times \frac{1}{5}\times 2$＝$\frac{8}{25}$
+
+    P（X＝2）＝$\frac{1}{5}\times \frac{1}{5}\times 2$＋$\frac{1}{5}\times \frac{1}{5}\times 2$＋$\frac{1}{5}\times \frac{1}{5}\times 2$＝$\frac{6}{25}$
+
+    P（X＝3）＝$\frac{1}{5}\times \frac{1}{5}\times 2$＋$\frac{1}{5}\times \frac{1}{5}\times 2$＝$\frac{4}{25}$
+
+    P（X＝4）＝$\frac{1}{5}\times \frac{1}{5}\times 2$＝$\frac{2}{25}$
+
+    ∴k＝1'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T01
+      name: 離散隨機變數機率分布表
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知一顆不公正的正四面體骰子，其各面的點數分別為 1，2，3，4，且點數 k 出現的機率與$\frac{1}{k}$成正比，今擲此正四面體骰子一次，若隨機變數 X 表示擲出所得的點數，則 P（X＝2）＝ ＿＿＿＿。
+  answer:
+  - $\frac{6}{25}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設隨機變數 X 的機率分布表如下：
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T01
+      name: 離散隨機變數機率分布表
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 摸彩箱裝有若干編號為 1，2，3，……，25 的彩球，其中各種編號的彩球數目可能不同。今從中隨機摸取一球，隨機變數 X 表示抽中此球的號碼，且 E（X）＝$\frac{5}{2}$，Var（X）＝$\frac{16}{9}$。今依據所取球的號數給予若干報酬，當摸得彩球的號數為 k 時，其所獲報酬為（100－6k）元，k＝1，2，3，……，25。若隨機變數 Y 表示從中隨機摸取一球，抽中此球所得的報酬。則數對（E（Y），σ（Y））＝＿＿＿＿。
+  answer:
+  - （85，8）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{1}{4}h$
+
+    其中 h 為常數
+
+    ∵$h +\frac{1}{2}h +\frac{1}{3}h +\frac{1}{4}h$＝1$\Rightarrow$h＝$\frac{12}{25}$
+
+    故 P（X＝2）＝$\frac{1}{2}\times \frac{12}{25}$＝$\frac{6}{25}$
+
+    4.E（Y）＝E（100－6X）＝（－6）E（X）＋100＝$( -6 ) \times \frac{5}{2}+100$＝85
+
+    ∵Var（Y）＝Var（100－6X）＝（－6）$^{2}$Var（X）＝$36\times \frac{16}{9}$＝64
+
+    ∴σ（Y）＝$\sqrt{Var( Y )}$＝$\sqrt{64}$＝8
+
+    故數對（E（Y），σ（Y））＝（85，8）'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T04
+      name: 隨機變數線性變換性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 袋中有大小相同的紅球與白球共 100 顆，每次從袋中取出一球，觀察顏色後再放回袋中，共取球 10 次。已知每一次取球都為獨立事件，且每球被取到的機會均等。隨機變數 X 表示取球 10 次中，取得紅球的次數。X 的機率質量函數圖如下圖，則 a，b，c 的大小順序為 ＿＿＿＿。
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_111_台南_台南二中_數學_數乙_g12s2e1/s2_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 102.25
+      - 361.4
+      - 236.05
+      - 456.8
+  - key: s2_5_f2
+    kind: figure
+    file: doc_111_台南_台南二中_數學_數乙_g12s2e1/s2_5_f2.png
+    crop:
+      page: 2
+      rect:
+      - 242.15
+      - 361.4
+      - 375.95
+      - 456.8
+  - key: s2_5_f3
+    kind: figure
+    file: doc_111_台南_台南二中_數學_數乙_g12s2e1/s2_5_f3.png
+    crop:
+      page: 2
+      rect:
+      - 382.05
+      - 361.4
+      - 515.85
+      - 456.8
+  answer:
+  - c＞b＞a
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由 X 的機率質量函數圖可知
+
+    袋中有 c 顆紅球時，取球 10 次中，取得紅球次數較多者機率較大
+
+    而袋中有 a 顆紅球時，取球 10 次中，取得紅球次數較少者機率較大
+
+    故 c＞b＞a'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T06
+      name: 二項分布圖形與參數判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 擲一顆公正的骰子兩次，稱為一次試驗。隨機變數 X 表示重複此試驗 162 次後，出現點數和為 9 的次數。則數對（E（X），σ（X））＝＿＿＿＿。
+  answer:
+  - （18，4）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '點數和為 9 之情形如下：
+
+    6＋3，5＋4，4＋5，3＋6
+
+    其機率分別為$\frac{1}{6}\times \frac{1}{6}$＝$\frac{1}{36}$，$\frac{1}{6}\times \frac{1}{6}$＝$\frac{1}{36}$，$\frac{1}{6}\times \frac{1}{6}$＝$\frac{1}{36}$，$\frac{1}{6}\times \frac{1}{6}$＝$\frac{1}{36}$
+
+    由上可知，出現點數和為 9 的機率為$\frac{1}{36}+\frac{1}{36}+\frac{1}{36}+\frac{1}{36}$＝$\frac{1}{9}$
+
+    ∴E（X）＝$162\times \frac{1}{9}$＝18
+
+    σ（X）＝$\sqrt{Var( X )}$＝$\sqrt{162\times \frac{1}{9}\times \frac{8}{9}}$＝4
+
+    故數對（E（X），σ（X））＝（18，4）'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T02
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: '小明平時投籃 3 球中會投進 1 球，今體育課考試規定每人投 10 球，每球 10 分計算，60 分以上稱為及格。已知小明前 4 球皆投進籃框，試計算下列各小題：
+
+    (1) 若將 10 球全數投籃完畢才計算成績，則小明及格的機率為＿＿＿＿。
+
+    (2) 若將規則改為「60 分時，即停止投球」，則小明及格的機率為＿＿＿＿。'
+  answer:
+  - (1) $\frac{473}{729}$；(2) $\frac{473}{729}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) ∵小明前 4 球皆投進籃框
+
+    ∴小明後 6 球中，至少投進 2 球即及格
+
+    所求為$1 -C_{0}^{6} \left( \frac{2}{3} \right) ^{6}-C_{1}^{6} \left( \frac{1}{3} \right) ^{1} \left( \frac{2}{3} \right) ^{5}$＝$\frac{473}{729}$
+
+    (2) ∵及格時，即停止投球
+
+    ∴投進第 2 球就結束
+
+    所求為$\left( \frac{1}{3} \right) ^{2}$＋$\left( \frac{1}{3}\times \frac{2}{3}\times \frac{1}{3} \right) \times 2$＋$\left( \frac{1}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{1}{3} \right) \times 3$＋$\left( \frac{1}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{1}{3} \right) \times 4$ ＋$\left( \frac{1}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{2}{3}\times \frac{1}{3} \right) \times 5$
+
+    ＝$\frac{1}{9}+\frac{4}{27}+\frac{4}{27}+\frac{32}{243}+\frac{80}{729}$＝$\frac{473}{729}$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T08
+      name: 二項分布眾數比較與停止機率
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹含亂碼（球）
+  difficulty: 3
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 已知點（k，1）是二元一次聯立不等式$\begin{cases}x + 2y\leq 4 \\ x -y\geq 1\end{cases}$解區域中的點，則 k 的限制為＿＿＿＿。
+  answer:
+  - k＝2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵點（k，1）是二元一次聯立不等式解區域中的點
+
+    ∴k＋2 ≤ 4 且 k－1 ≥ 1
+
+    $\Rightarrow$k ≤ 2 且 k ≥ 2
+
+    故 k 的限制為 k＝2'
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T11
+      name: 點代入聯立不等式求參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: '已知 x，y 滿足聯立不等式$\begin{cases}-23\leq 4x - 3y\leq 1 \\ -17\leq 4x + 3y\leq 7\end{cases}$，則：
+
+    (1) 此不等式所圍成的區域面積為＿＿＿＿。
+
+    (2) 3x－5y＋2 的最小值為＿＿＿＿。'
+  answer:
+  - (1) 24；(2) －29
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T02
+      name: 可行解區域頂點與面積計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 某線性規劃問題的可行解區域為坐標平面上由點 A（－8，0），B（－10，5），C（0，4）與 D（2，－1）所圍成的平行四邊形及其內部的點。已知目標函數 ax＋by（其中 a，b 為常數）在 B 點有最大值 30，試求此目標函數在同個可行解區域內的最小值為＿＿＿＿。
+  answer:
+  - －6
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T10
+      name: 由極值發生頂點反推目標係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: '小明宣稱手上這一枚硬幣是均勻硬幣，今檢定「此枚硬幣是否為均勻硬幣？」，並列出前三個步驟如下：
+
+    ① 假設「此枚硬幣是均勻硬幣」
+
+    ② 確立檢定統計量為「重複丟此枚硬幣 8 次中，出現正面的次數」
+
+    ③ 設定顯著水準為 0.05
+
+    若令隨機變數 X 表示正面出現的次數，其機率分布表如下，試回答下列問題：
+
+    | k | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | P（X＝k） | 0.004 | 0.031 | 0.109 | 0.219 | 0.274 | 0.219 | 0.109 | 0.031 | 0.004 |
+
+    (1) 步驟①的假設中，即假設成功的機率 p＝＿＿＿＿。（填充題，1 分）
+
+    (2) 求此檢定的拒絕域。（計算題，4 分）
+
+    (3) 若試驗的結果為重複丟此枚硬幣 8 次中，出現 4 次正面，則此枚硬幣是均勻硬幣。（是非題，1 分）
+
+    $答$：＿＿＿＿。
+
+    (4) 若將步驟①的假設更改為「p ≤ 0.5」，其餘步驟不變，求此時的拒絕域。（計算題，4 分）'
+  answer:
+  - (1) ∵假設此硬幣是均勻硬幣
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T05
+      name: 二項檢定與拒絕域判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台南_台南二中_數學_數乙_g12s2e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: '打桌球一小時收費 30 元，可消耗熱量 300 卡路里；游泳一小時收費 50 元，可消耗熱量 450 卡路里。小明每週最多能抽出 8 小時運動，又希望總花費不超過 300 元，能消耗最多熱量。假設每週打桌球 x 小時，游泳 y 小時，則：
+
+    (1) 目標函數 P＝＿＿＿＿。（填充題，1 分）
+
+    (2) 根據題意列出二元一次不等式。（計算題，3 分）
+
+    (3) 畫出可行解區域。（作圖題，3 分）
+
+    (4) 每週打桌球＿＿＿＿小時，游泳＿＿＿＿小時，能消耗最多熱量＿＿＿＿卡路里。（填充題，一格 1 分，共 3 分）'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_111_台南_台南二中_數學_數乙_g12s2e1/s3_2_f1.png
+    crop:
+      page: 3
+      rect:
+      - 261.8
+      - 620.5
+      - 356.25
+      - 716.15
+  answer:
+  - (1) 目標函數 P＝300x＋450y
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-3-1
+      book: 選修數學乙（下）
+      chapter: 線性規劃
+      title: 線性規劃
+      std: true
+    textbook: 選修數學乙（下） 線性規劃
+    pattern:
+      key: MA-Y2-3-1:T09
+      name: 資源配置與最佳化應用建模
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹含亂碼（費）
+  difficulty: 2

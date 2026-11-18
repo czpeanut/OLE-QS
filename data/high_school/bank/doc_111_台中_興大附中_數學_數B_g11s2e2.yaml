@@ -1,0 +1,621 @@
+document:
+  id: doc_111_台中_興大附中_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 111學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 111學年度第2學期第2次定期評量
+  source_file: 高二/數學/111/2-2/台中/興大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 8 分，共 40 分；每題至少有一個選項是對的，全對得 8 分，錯一個選項得 5 分，錯兩個選項得 2 分，錯三個選項以上或沒作答得 0 分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（每題 5 分，共 60 分）
+    count: 12
+questions:
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 如右圖，直線 M 與直線 L 夾角 32°，交於 K 點，將直線 M 繞直線 L 形成一個頂點在 K 的直圓錐面。若平面 E 不過 K 點，其法向量與直線 L 的銳夾角為 x° 時，所截出的圖形為雙曲線，則 x 的值可能為何？
+  options:
+  - label: A
+    content: '20'
+  - label: B
+    content: '32'
+  - label: C
+    content: '58'
+  - label: D
+    content: '75'
+  - label: E
+    content: '80'
+  assets:
+  - key: s1_1_f1
+    kind: figure
+    file: doc_111_台中_興大附中_數學_數B_g11s2e2/s1_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 481.8
+      - 161.5
+      - 563.15
+      - 292.4
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '當平面 E 和直線 L 的夾角小於 32° 時，其截痕為雙曲線
+
+    即平面 E 之法向量和 L 夾角大於 90°－32°＝58° 時，其截痕為雙曲線
+
+    又 58°＜x°＜90°
+
+    故選(D)(E)'
+  tags:
+    unit:
+      code: MA-B4-4-1
+      book: 數學4B
+      chapter: 圓錐曲線
+      title: 圓錐曲線
+      std: true
+    textbook: 數學4B 圓錐曲線
+    pattern:
+      key: MA-B4-4-1:T06
+      name: 截面與旋轉角度範圍計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設 A、B 為獨立事件，且 P
+  options:
+  - label: A
+    content: ＝$\frac{1}{4}$，P（A ∪
+  - label: B
+    content: ＝$\frac{1}{2}$，則下列哪些選項是正確的？(A) P(B)＝$\frac{1}{4}$(B) P（A│B）＝$\frac{1}{4}$
+  - label: C
+    content: P（A'∩B）＝$\frac{1}{3}$
+  - label: D
+    content: P（A'│B）＝$\frac{3}{4}$
+  - label: E
+    content: P（B'│A）＝$\frac{2}{3}$
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵A、B 為獨立事件
+
+    ∴P（A∩B）＝P(A)P(B)
+
+    (A)╳：P（A∪B）＝P(A)＋P(B)－P（A∩B）
+
+    ⇒$\frac{1}{2}$＝$\frac{1}{4}$＋P(B)－$\frac{1}{4}$P(B)
+
+    ⇒ P(B)＝$\frac{1}{3}$
+
+    (B)○：∵A、B 為獨立事件
+
+    ∴P（A│B）＝P(A)＝$\frac{1}{4}$
+
+    (C)╳：∵A、B 為獨立事件 ∴A''、B 也是獨立事件
+
+    ⇒ P（A''∩ B）＝P（A''）P(B)＝$\left( 1-\frac{1}{4} \right)$×$\frac{1}{3}$＝$\frac{1}{4}$
+
+    (D)○：承(C) ∵A''、B 為獨立事件 ∴P（A''│B）＝P（A''）＝$\frac{3}{4}$
+
+    (E)○：∵A、B 為獨立事件 ∴A、B'' 也是獨立事件
+
+    ⇒ P（B''│A）＝P（B''）＝1－$\frac{1}{3}$＝$\frac{2}{3}$
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹與選項(A)(B)文字排版錯位
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 已知籤筒內的 10 支籤中有 3 支中獎籤，且每支籤被抽到的機會均等。今有甲、乙、丙三人，依甲、乙、丙的順序各抽出一支籤，且抽出的籤不再放回，則下列哪些選項是正確的？
+  options:
+  - label: A
+    content: 甲中獎的機率最大
+  - label: B
+    content: 丙中獎的機率為$\frac{3}{10}$
+  - label: C
+    content: 甲、乙兩人恰有一人中獎的機率為$\frac{7}{10}$
+  - label: D
+    content: 在甲、乙均中獎的條件下，丙中獎的機率為$\frac{1}{8}$
+  - label: E
+    content: 在甲中獎的條件下，丙中獎的機率為$\frac{2}{9}$
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：甲、乙、丙三人的中獎機率相等
+
+    (B)○：P（丙中）＝P（甲中）＝$\frac{3}{10}$
+
+    (C)╳：P（甲乙恰有一人中獎）＝P（甲中且乙不中）＋P（甲不中且乙中）
+
+    ＝$\frac{3}{10}\times \frac{7}{9}+\frac{7}{10}\times \frac{3}{9}$＝$\frac{42}{90}$＝$\frac{7}{15}$
+
+    (D)○：∵甲乙均中獎 ∴輪到丙剩一支中獎籤，所求機率為$\frac{1}{8}$
+
+    (E)○：甲中獎後，P（乙中│甲中）＝P（丙中│甲中）＝$\frac{2}{9}$
+
+    （∵9 支中有 2 支中獎籤）
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 2
+  stem: '某公司共有 A、B、C 三個工廠，其產品個數如右表所示，則下列哪些選項是正確的？
+
+    |  | A | B | C |
+
+    | --- | --- | --- | --- |
+
+    | 良品 | 900 | 1900 | 2900 |
+
+    | 不良品 | 100 | 100 | 100 |
+
+    $\left( : 不良率=\frac{不合格產品數}{總生產數} , 良率=\frac{合格生產數}{總生產數} \right)$'
+  options:
+  - label: A
+    content: 三廠不良率皆相同
+  - label: B
+    content: C 廠不良率最低
+  - label: C
+    content: A 廠良率最高
+  - label: D
+    content: 若取到不良品，它是由 B 廠生產的機率為$\frac{1}{3}$
+  - label: E
+    content: 若取到良品，它是由 B 廠生產的機率為$\frac{2}{3}$
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T10
+      name: 列聯表數據判讀與條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 2
+  stem: 根據<u>美國</u> CIA 所公布的《世界概況》，一般已開發國家的生育率應該達到 2.00，才得以維持死亡率與生育率的平衡，使國家正常運作。而<u>臺灣</u>的生育率卻僅僅 1.08。<u>歐</u> <u>美</u>媒體最近出現「嬰兒荒」（Baby Bust）此單詞，所謂的「嬰兒荒」為因少子化而造成經濟景氣消退。少子化是<u>臺灣</u>社會愈來愈嚴重的趨勢，未來<u>臺灣</u>要出現生兩個小孩的家庭只會越來越少，甚至生三個小孩更是少之又少。若某家庭有 3 個孩子，A 表示至多有一女孩的事件，B 表示至少有兩男孩的事件，C 表示老大、老二都是男孩的事件（假設生男孩與生女孩機率相同），請選出正確的選項。
+  options:
+  - label: A
+    content: P(A)＝$\frac{1}{2}$
+  - label: B
+    content: P(B)＝$\frac{2}{3}$
+  - label: C
+    content: P(C)＝$\frac{1}{4}$
+  - label: D
+    content: P（A∩B∩C）＝$\frac{1}{8}$
+  - label: E
+    content: A、B 為獨立事件
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：P(A)＝P（3 男）＋P（2 男 1 女）＝$\left( \frac{1}{2} \right) ^{3}+C_{2}^{3}\times \left( \frac{1}{2} \right) ^{3}$＝$\frac{1}{2}$
+
+    (B)╳：P(B)＝P（2 男 1 女）＋P（3 男）＝P(A)＝$\frac{1}{2}$
+
+    (C)○：P(C)＝$\frac{1}{2}\times \frac{1}{2}$＝$\frac{1}{4}$
+
+    (D)╳：P（A ∩ B ∩ C）＝$\frac{1}{2}\times \frac{1}{2}\times \frac{1}{2}$＋$\frac{1}{2}\times \frac{1}{2}\times \frac{1}{2}$＝$\frac{1}{4}$
+
+    （男，男，女）（男，男，男）
+
+    (E)╳：P（A∩B）＝P(A)＝$\frac{1}{2}$≠P(A)P(B)＝$\frac{1}{4}$
+
+    故選(A)(C)'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹含單一亂碼字元
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 2
+  stem: 分別調整各舞臺聚光燈的角度，如右圖所示，已知每個聚光燈照射的燈光形成直圓錐狀，且地板與天花板平行。選出聚光燈所有可能在地板上照亮區域邊界的圖形。
+  options:
+  - label: A
+    content: 圓
+  - label: B
+    content: 橢圓
+  - label: C
+    content: 拋物線
+  - label: D
+    content: 雙曲線。$■答$：＿＿＿＿
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_111_台中_興大附中_數學_數B_g11s2e2/s2_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 433.1
+      - 564.75
+      - 563.4
+      - 655.3
+  explanation: '最左邊聚光燈會形成圓
+
+    第二個聚光燈會形成橢圓
+
+    最右邊聚光燈會形成拋物線（∵聚光燈貼齊天花板且地板與天花板平行）
+
+    故選(A)(B)(C)'
+  tags:
+    unit:
+      code: MA-B4-4-1
+      book: 數學4B
+      chapter: 圓錐曲線
+      title: 圓錐曲線
+      std: true
+    textbook: 數學4B 圓錐曲線
+    pattern:
+      key: MA-B4-4-1:T04
+      name: 生活中圓錐曲線光影與軌跡
+    labeled_by: agent
+    label_confidence: high
+    label_note: 選項(D)夾雜作答提示文字
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: <u>小美</u>上學時須經過三處路口，在三處路口遇到紅燈的機率依序為 0.3，0.4，0.5。設此三處的紅燈號誌均互相獨立，則只遇到一次紅燈的機率為＿＿＿＿。
+  answer:
+  - $\frac{11}{25}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求為 0.3×0.6×0.5＋0.7×0.4×0.5＋0.7×0.6×0.5
+
+    ＝0.44＝$\frac{11}{25}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 連續投擲一顆公正的骰子兩次，在其點數和為 7 的條件下，試求第一次投擲出的點數比第二次投擲出的點數小的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '和為 7 之情況有（1，6），（2，5），（3，4），（4，3），（5，2），（6，1），共 6 種
+
+    其中第一次點數較小為（1，6），（2，5），（3，4），共 3 種
+
+    故所求機率為$\frac{3}{6}$＝$\frac{1}{2}$'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 目前袋中有藍、黑、白球各 1、2、3 顆，每顆球被取出的機會相同，現在從袋中取球，一次取一顆且取後放回，連續取三次，試求這三顆取出的球剛好包含所有顏色的機率為＿＿＿＿。
+  answer:
+  - $\frac{1}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: <u>幸福高中</u>班聯會想調查學生參加園遊會和演唱會的意願，以作為舉行活動的決策參考。經調查，全校 600 名學生中，有 520 人想參加園遊會，有 450 人想參加演唱會，有 40 人兩種都不想要參加。今自<u>幸福高中</u>學生中選一人，若已知此人想參加演唱會，則他也想參加園遊會的機率為＿＿＿＿。
+  answer:
+  - $\frac{41}{45}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T09
+      name: 條件機率定義與集合運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 3
+  stem: 進<u>快樂超市</u>的顧客中，有八成的人想買雞蛋，但因為蛋荒，<u>快樂超市</u>決定以抽籤的方式出售雞蛋，想買蛋的顧客可以有一次抽籤的機會，抽中的機率為 5 ％。假設不想買蛋的客人都不抽籤，試問離開<u>快樂超市</u>沒有買蛋的人中是想買蛋的顧客的機率為＿＿＿＿。
+  answer:
+  - $\frac{19}{24}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T01
+      name: 貝氏定理與條件事後機率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: '全班男女生共 50 人，票選畢業旅行的目的地，每人限投一票，結果如右表。假設每人被抽中的機會均等，今抽出兩人，若這兩人都是女生，則這兩人都想去<u>日本</u>的機率是＿＿＿＿。
+
+    |  | 男 | 女 |
+
+    | --- | --- | --- |
+
+    | 日本 | 13 | 10 |
+
+    | 韓國 | 2 | 10 |
+
+    | 泰國 | 8 | 3 |
+
+    | 越南 | 2 | 2 |'
+  answer:
+  - $\frac{3}{20}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T10
+      name: 列聯表數據判讀與條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 有五對夫婦共 10 人相約去旅遊，並決定組 4 人小組來統籌及安排旅遊細節。若該小組由 10 人中任選 4 人產生，已知該 4 人小組中至多有一對夫妻檔，則該 4 人小組中恰有一對夫妻檔的機率為＿＿＿＿。
+  answer:
+  - $\frac{3}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: 已知某國家禽流感大流行，雞隻得禽流感的機率為 0.2，今有一禽流感檢驗，對健康的雞能作出正確檢驗的機率為 0.9，罹患禽流感的雞能作出正確檢驗的機率為 0.8。假設每次檢驗的結果均是獨立的，今有一雞作此檢驗，在此雞檢驗兩次結果均為健康的條件下，則此雞確實是健康的機率為＿＿＿＿。
+  answer:
+  - $\frac{81}{82}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T08
+      name: 多重檢驗與重複觀測貝氏更新
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 5 月是值得慶祝的月分，不僅有 5 月 1 日勞動節，5 月 12 日國際護士節，還有 5 月 14 日母親節，在口罩解封後，民眾更是揮別疫情陰霾，回歸正常生活。有餐飲業者立刻推出優惠搶客，<u>美滿日本料理</u>餐廳宣布，5 月期間，餐廳舉行抽獎活動，辦法如下：箱子裡有號碼「5、2、0」各 2 顆，「1、3、4、6、7、8、9」各 1 顆，共 13 顆大小相同的球（每球被抽中的機會均等），每人一次抽取一球，抽後不放回，連抽 3 球，只要抽中「5、2、0」三個號碼（不計順序），可免費升級「和牛生牛肉，巨蛤吃到飽」。<u>小美</u> 5 月到<u>美滿日本料理</u>餐廳用餐，已知第一次抽中「5」，則她可免費升級「和牛生牛肉，巨蛤吃到飽」的機率為＿＿＿＿。
+  answer:
+  - $\frac{2}{33}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 3
+  stem: <u>小美</u>投籃命中率為 4 成，假設每次投籃互不影響，她至少要投＿＿＿＿球，才能保證投進籃框的機率在 0.99 以上。（log2$\approx$0.3010，log3$\approx$0.4771）
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T12
+      name: 獨立重複試驗與比賽勝率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s2e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 3
+  stem: <u>小美</u>將筆電接上傳輸線連結投影機，若傳輸線與投影機其中一個故障或兩者皆故障，則無法正常投影。已知傳輸線故障的機率為 0.1，投影機故障的機率為 0.05，且傳輸線與投影機故障與否互相獨立。在連接後無法正常投影的條件下，投影機沒有故障的機率為＿＿＿＿。
+  answer:
+  - $\frac{19}{29}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T09
+      name: 條件機率定義與集合運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

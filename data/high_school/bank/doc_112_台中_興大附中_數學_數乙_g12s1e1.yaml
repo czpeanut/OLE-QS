@@ -1,0 +1,516 @@
+document:
+  id: doc_112_台中_興大附中_數學_數乙_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 112學年度第1學期第1次定期評量 高三數學（數乙）科試題
+  exam_name: 112學年度第1學期第1次定期評量
+  source_file: 高三/數學/112/1-1/台中/興大附中_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單選題（占30分）
+    count: 5
+  - ord: 2
+    name: 二、多選題：（占16分）
+    count: 2
+  - ord: 3
+    name: 第貳部分、選填題（占54分）
+    count: 9
+questions:
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 已知△ABC中，$\frac{13}{\sin A}$＝$\frac{8}{\sin B}$＝$\frac{7}{\sin C}$，則最大角為何？
+  options:
+  - label: A
+    content: 75°
+  - label: B
+    content: 120°
+  - label: C
+    content: 135°
+  - label: D
+    content: 150°
+  - label: E
+    content: 105°
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 取a＝13 k，b＝8 k，c＝7 k 最大角∠A：cos A＝$\frac{8^{2}+7^{2}-13^{2}}{2\cdot 8\cdot 7}$＝－$\frac{1}{2}$ ⇒ ∠A＝120° 故選(B)。
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T02
+      name: 餘弦定理求邊長角度與摺痕
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列哪一個數列的極限值不為0？
+  options:
+  - label: A
+    content: $\left\langle \frac{3+(-1)^{n}}{n} \right\rangle$
+  - label: B
+    content: $\left\langle \frac{2^{n-2}+4^{n+4}}{6^{n}} \right\rangle$
+  - label: C
+    content: $\left\langle \frac{2^{n}}{n!} \right\rangle$
+  - label: D
+    content: 〈$\sqrt{n+101}-\sqrt{n-101}$〉
+  - label: E
+    content: $\left\langle \frac{1}{n^{2}}+\frac{2}{n^{2}}+\frac{3}{n^{2}}+\cdots \cdots +\frac{n}{n^{2}} \right\rangle$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) $\frac{3+(-1)^{n}}{n}$→0 (B) $\frac{2^{n-2}+4^{n+4}}{6^{n}}=\frac{1}{4}(\frac{1}{3})^{n}+4^{4}(\frac{2}{3})^{n}$→0 (C) $\frac{2^{n}}{n!}=\frac{2}{1}\cdot \frac{2}{2}\cdot \frac{2}{3}\cdot \frac{2}{4}\cdots \cdot \frac{2}{n}$→0 (D) $\sqrt{n+101}-\sqrt{n-101}=\frac{202}{\sqrt{n+101}+\sqrt{n-101}}$→0 (E) $\frac{1}{n^{2}}+\frac{2}{n^{2}}+\cdots +\frac{n}{n^{2}}=\frac{1}{n^{2}}\cdot \frac{n(n+1)}{2}=\frac{1}{2}(1+\frac{1}{n})\rightarrow \frac{1}{2}$ 故選(E)。
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T02
+      name: 分式與指數數列極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: $\sum_{n=1}^{\infty} \frac{2^{n-1}+2}{3^{n-1}}=?$
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '6'
+  - label: C
+    content: $\frac{9}{2}$
+  - label: D
+    content: $\frac{11}{2}$
+  - label: E
+    content: $\frac{14}{3}$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 所求$=\sum_{n=1}^{\infty} (\frac{2}{3})^{n-1}+\sum_{n=1}^{\infty} 2(\frac{1}{3})^{n-1}=\frac{1}{1-\frac{2}{3}}+2\cdot \frac{1}{1-\frac{1}{3}}=6$ 故選(B)。
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T04
+      name: 拆項與循環小數級數求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 下列各圖形，何者可由其中一個經平移以後與另一個重合？
+  options:
+  - label: A
+    content: y＝$2^{x}$與y＝$4^{x}$
+  - label: B
+    content: y＝$log_{2}$ x與y＝$log_{4}$ x
+  - label: C
+    content: y＝2 $log_{4}$ x與y＝$log_{2}$ 4x
+  - label: D
+    content: y＝$2^{x}$與y＝$log_{2}$ x
+  - label: E
+    content: y＝$log_{2 }$x與y＝$log_{4}\sqrt{x}$
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) y＝$4^{x}$＝$2^{2x}$＝( $2^{x}$ )$^{2}$ (B) $log_{4}$ x＝$\frac{\log _{2}x}{\log _{2}4}$＝$\frac{1}{2}$．$log_{2}$ x (C) y＝2 $log_{4}$ x＝2．$\frac{\log _{2}x}{2}$＝$log_{2}$ x y＝$log_{2}$ 4x＝2＋$log_{2}$ x ( 可平移使重合 ) (D) y＝$2^{x}$與y＝$log_{2}$ x對稱於x－y＝0 (E) y＝$log_{4}\sqrt{x}$＝$\frac{1}{2}log_{4}$ x＝$\frac{1}{4}log_{2}$ x 故選(C)。
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T04
+      name: 對數函數圖形、漸近線與對稱
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 某公司過去三年來的業績成長率依序為－10％、50％、150％，則這三年來的平均業績成長率最接近下列何者？
+  options:
+  - label: A
+    content: 63％
+  - label: B
+    content: 150％
+  - label: C
+    content: －42％
+  - label: D
+    content: 50％
+  - label: E
+    content: 100％
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 所求＝$[(1-10\%)(1+50\%)(1+150\%)]^{\frac{1}{3}}$ ＝$(\frac{9}{10}\cdot \frac{15}{10}\cdot \frac{25}{10})^{\frac{1}{3}}$＝$\frac{15}{10}$＝150%＝1＋50% 故選(D)。
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T05
+      name: 幾何平均數與平均成長率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s2_6
+  section: 2
+  number: 6
+  type: multiple
+  page: 1
+  stem: 設θ$_{1}$、θ$_{2}$、θ$_{3}$、θ$_{4}$分別為第一、第二、第三、第四象限角，且都介於0°與360°之間。已知| sinθ$_{1}$ |＝| sinθ$_{2}$ |＝| sinθ$_{3}$ |＝| sinθ$_{4}$ |＝$\frac{3}{5}$，請問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: θ$_{1}$＜45°
+  - label: B
+    content: θ$_{1}$＋θ$_{2}$＝180°
+  - label: C
+    content: sinθ$_{3}$＝－$\frac{3}{5}$
+  - label: D
+    content: cosθ$_{4}$＝－$\frac{4}{5}$
+  - label: E
+    content: θ$_{4}$＝θ$_{3}$＋90°
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T05
+      name: 三角比平方和差知一求多
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s2_7
+  section: 2
+  number: 7
+  type: multiple
+  page: 2
+  stem: 由一組二維資料( X , Y )求得Y對X的最適直線方程式為y＝－5＋3x及相關係數r，則下列敘述何者正確？
+  options:
+  - label: A
+    content: 相關係數r＞0
+  - label: B
+    content: 由最適直線方程式的斜率為3，可判得相關係數r的值很接近1
+  - label: C
+    content: 此資料的算術平均 (μ$_{X}$ ,μ$_{Y}$ )落在最適直線方程式上
+  - label: D
+    content: 若將此資料標準化後，則其最適直線方程式為y＝3x
+  - label: E
+    content: 若新建立資料（W , Z）其中W＝3X＋2，Z＝2Y＋5，則Z對W的最適直線方程式為z＝2w－9
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: Y對X的最適直線為Y－μ$_{y}$＝r．$\frac{\sigma _{y}}{\sigma _{x}}$( X－μ$_{x}$ )即y＝－5＋3x (A) r．$\frac{\sigma _{y}}{\sigma _{x}}$＝3 ⇒ r＞0 (B) r＝$\frac{3\cdot \sigma _{x}}{\sigma _{y}}$，不能確定接近1 (C) 是 (D) $\frac{Y-\mu _{Y}}{\sigma _{Y}}$＝r．$\frac{X-\mu _{X}}{\sigma _{X}}$ ⇒ Y'＝r．X' (E) Y對X的最適直線為y＝－5＋3x 又W＝3X＋2，Z＝2Y＋5 ∴$\frac{Z-5}{2}$＝－5＋( W－2 ) ⇒ Z＝2W－9 得Z對W的最適直線為Z＝2W－9 故選(A)(C)(E)。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T03
+      name: 線性變換對相關與迴歸影響
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 設〈$a_{n}$〉為一等差數列。已知$a_{2}$＋$a_{4}$＋$a_{6}$＝186，$a_{3}$＋$a_{7}$＝110。令$S_{n}$＝$a_{1}$＋$a_{2}$＋……＋$a_{n}$，則極限$\lim_{n\rightarrow \infty} \frac{S_{n}}{n^{2}}$＝＿＿＿＿。
+  answer:
+  - －$\frac{7}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設首項a，公差d ⇒ $a_{2}$＋$a_{4}$＋$a_{6}$＝( a＋d )＋( a＋3d )＋( a＋5d )＝3a＋9d＝186 $a_{3}$＋$a_{7}$＝( a＋2d )＋( a＋6d )＝2a＋8d＝110 ∴ a＝83，d＝－7 $S_{n}$＝$a_{1}$＋$a_{2}$＋…＋$a_{n}$＝$\frac{n[2\times 83+(n-1)(-7)]}{2}$ ∴$\lim_{n\rightarrow \infty} \frac{S_{n}}{n^{2}}$＝$\lim_{n\rightarrow \infty} \frac{2\times 83+(n-1)(-7)}{2n}$＝－$\frac{7}{2}$
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T02
+      name: 分式與指數數列極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 關於數列〈$a_{n}$〉，已知$\lim_{n\rightarrow \infty} \frac{a_{n}}{4n-3}$＝$\frac{1}{2}$，則$\lim_{n\rightarrow \infty} \frac{2n+a_{n}}{5n-1}$＝＿＿＿＿。
+  answer:
+  - $\frac{4}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\lim_{n\rightarrow \infty} \frac{2n+a_{n}}{5n-1}$＝$\lim_{n\rightarrow \infty} (\frac{2n}{5n-1}+\frac{a_{n}}{4n-3}\cdot \frac{4n-3}{5n-1})$＝$\frac{2}{5}$＋$\frac{1}{2}$．$\frac{4}{5}$＝$\frac{4}{5}$
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T06
+      name: 夾擠定理與極限性質推論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 甲、乙、丙三人依序輪流丟一個公正的骰子，約定先擲出5或6點者獲勝，則甲獲勝的機率為＿＿＿＿。
+  answer:
+  - $\frac{9}{19}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 甲勝 )＝$\frac{2}{6}$＋($\frac{4}{6}$)$^{3}\frac{2}{6}$＋($\frac{4}{6}$)$^{6}\frac{2}{6}$＋…＝$\frac{\frac{2}{6}}{1-(\frac{4}{6})^{3}}$＝$\frac{9}{19}$
+  tags:
+    unit:
+      code: MA-Y1-1-1
+      book: 選修數學乙（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學乙（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-Y1-1-1:T03
+      name: 無窮等比級數求和與反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設a＜0且已知 ( ax＋$\frac{1}{x^{2}}$)$^{6}$之展開式中，常數項為240，則a＝＿＿＿＿。
+  answer:
+  - －2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 一般項：$C_{k}^{6}(ax)^{k}(\frac{1}{x^{2}})^{6-k}=C_{k}^{6}\cdot a^{4}\cdot x^{-12+3k}$ 常數項：－12＋3k＝0 ⇒ k＝4 ⇒ $C_{4}^{6}$．$a^{4}$＝240 ⇒ $a^{4}$＝16 ⇒ $a^{2}$＝4 ∵ a＜0 ∴ a＝－2
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T03
+      name: 二項式定理係數與近似估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 兩直線y＝2，y＝6分別與指數函數y＝$3^{x}$的圖形交於P，Q兩點，則直線PQ的斜率為＿＿＿＿。
+  answer:
+  - '4'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\begin{cases}y=3^{x} \\ y=2\end{cases}$ ⇒ P ( $log_{3}$ 2 , 2 )，$\begin{cases}y=3^{x} \\ y=6\end{cases}$ ⇒ Q ( $log_{3}$ 6 , 6 ) 直線PQ的斜率＝$\frac{6-2}{\log _{3}6-\log _{3}2}$＝$\frac{4}{1}$＝4
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T02
+      name: 指數函數圖形交點與斜率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 如圖為函數y＝a sin (bx)＋c的部分圖形，其中a＞0，b＞0，則序組（a , b , c）＝＿＿＿＿。
+  assets:
+  - key: s3_6_f1
+    kind: figure
+    file: doc_112_台中_興大附中_數學_數乙_g12s1e1/s3_6_f1.png
+    crop:
+      page: 2
+      rect:
+      - 39.6
+      - 376.05
+      - 220.95
+      - 497.85
+  answer:
+  - ( 2 , 3 ,－1 )
+  answer_status: verified
+  answer_source: answer_key
+  explanation: x＝0 ⇒ y＝c＝－1 a＝$\frac{1}{2}$( 1－(－3 ) )＝2 ［0 , 2π］有3次波動 ⇒ b＝3 ∴ ( a , b , c )＝( 2 , 3 ,－1 )
+  tags:
+    unit:
+      code: MA-B3-1-2
+      book: 數學3B
+      chapter: 三角函數
+      title: 週期性數學模型
+      std: true
+    textbook: 數學3B 週期性數學模型
+    pattern:
+      key: MA-B3-1-2:T03
+      name: 由三角圖形反推函數參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 函數y＝5 $cos^{2}$ x－2$\sqrt{3}$sin x cos x＋3 $sin^{2}$ x的最大值為＿＿＿＿。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: y＝5．$\frac{1+\cos 2x}{2}$－$\sqrt{3}$sin 2x＋$\frac{3}{2}$( 1－cos 2x ) ＝4＋cos 2x－$\sqrt{3}$sin 2x ＝4＋2 cos ( 2x＋$\frac{\pi}{3}$) 最大值為4＋2＝6
+  tags:
+    unit:
+      code: MA-A3-1-4
+      book: 數學3A
+      chapter: 三角函數
+      title: 正餘弦的疊合
+      std: true
+    textbook: 數學3A 正餘弦的疊合
+    pattern:
+      key: MA-A3-1-4:T06
+      name: 倍角降次後疊合反推參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 設log 100x＝－6.2115，則x從小數點後第m位開始出現不為0的數字，此數字為n，則數對 ( m , n )＝＿＿＿＿。 （已知log 2 ≈ 0.3010，log 3 ≈ 0.4771，log 7 ≈ 0.8451）
+  answer:
+  - ( 9 , 6 ) I. 370
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'log 100x＝2＋log x＝－6.2115 ⇒ log x＝－8.2115＝(－9 )＋0.7885 log 6≒0.3010＋0.4771＝0.7781 log 7≒0.8451 ∴ x為純小數，小數點後第9位始不為0，其值為6，得 ( m , n )＝( 9 , 6 )
+
+    I. L (t)＝a．( 1－$10^{－bt}$ ) 得L (1)＝a ( 1－$10^{－b}$ )＝160 L (2)＝a ( 1－$10^{－2b}$ )＝280 相除：1＋$10^{－b}$＝$\frac{280}{160}$＝$\frac{7}{4}$ ⇒ $10^{－b}$＝$\frac{3}{4}$，a＝640 ∴ L (t)＝640 ( 1－($\frac{3}{4}$)$^{t}$ ) 得L (3)＝640 ( 1－($\frac{3}{4}$)$^{3}$ )＝640 ( 1－$\frac{27}{64}$)＝370'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T03
+      name: 常用對數近似與數量級
+    labeled_by: agent
+    label_confidence: high
+    label_note: 答案與詳解欄混入下一題內容
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數乙_g12s1e1_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 心理學家常用數學模式L (t)＝a．( 1－$10^{－b．t}$ ) 來描述學生經過t星期學習之後所得到的學習量（或成果），這裡的常數a與b跟學生及學習的科目相關。如果<u>妙妙</u>一星期可以背熟160個單字，兩星期可以背熟280個單字，那麼利用這個數學模式，推算<u>妙妙</u>三星期可以背熟＿＿＿＿個單字。
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T11
+      name: 指數成長與半衰期衰減建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

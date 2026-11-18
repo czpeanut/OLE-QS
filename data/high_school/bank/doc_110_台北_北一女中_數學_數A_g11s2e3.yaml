@@ -1,0 +1,531 @@
+document:
+  id: doc_110_台北_北一女中_數學_數A_g11s2e3
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 3
+  city: 台北
+  school_short: 北一女中
+  school: 臺北市立第一女子高級中學
+  title: 臺北市立第一女子高級中學 110學年度第2學期第3次定期評量 高二數學（數A）科試題
+  exam_name: 110學年度第2學期第3次定期評量
+  source_file: 高二/數學/110/2-3/台北/北一女中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 10 分，共 30 分）
+    count: 3
+  - ord: 2
+    name: 二、單一選擇題（每題 5 分，共 20 分）
+    count: 4
+  - ord: 3
+    name: 三、填充題（共 38 分）
+    count: 5
+  - ord: 4
+    name: 四、計算題（共 12 分）
+    count: 1
+questions:
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設 A、B、C 皆為二階方陣，I 是二階單位方陣，O 是二階零方陣，則下列各敘述哪些恆為真？
+  options:
+  - label: A
+    content: 若 AB＝O，則 A＝O 或 B＝O
+  - label: B
+    content: 若 A＝I 或 A＝－I，則 $A^{2}$＝I
+  - label: C
+    content: 若 A≠O，且 AB＝AC，則 B＝C
+  - label: D
+    content: 若$A^{-1}$存在，則$(A+A^{-1})^{2}$＝$A^{2}$＋2I＋$(A^{-1})^{2}$
+  - label: E
+    content: （A＋B）（A－B）＝$A^{2}$－$B^{2}$
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：$A=\left[ \begin{matrix}1 & 0 \\ 0 & 0\end{matrix} \right]$，$B=\left[ \begin{matrix}0 & 0 \\ 0 & 1\end{matrix} \right]$，得 AB＝O，但 A≠O 且 B≠O
+
+    (B) ○：注意，反之不然，例如$A=\left[ \begin{matrix}1 & 0 \\ 0 & -1\end{matrix} \right]$，亦滿足 $A^{2}$＝I
+
+    (C) ╳：detA≠0，即$A^{-1}$存在時，才有 AB＝AC ⇒$A^{-1}$（AB）＝$A^{-1}$（AC）⇒ B＝C
+
+    (D) ○：$(A+A^{-1})^{2}$＝$(A+A^{-1})(A+A^{-1})$＝AA＋$AA^{-1}$＋$A^{-1}A$＋$A^{-1}A^{-1}$＝$A^{2}+2I+(A^{-1})^{2}$
+
+    註：$AA^{-1}$＝$A^{-1}A$＝I
+
+    (E) ╳：（A＋B）（A－B）＝AA－AB＋BA－BB＝$A^{2}$－AB＋BA－$B^{2}$
+
+    註：AB＝BA 時，才有（A＋B）（A－B）＝$A^{2}$－$B^{2}$
+
+    故選(B)(D)'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T06
+      name: 矩陣乘法代數性質與交換律判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列矩陣所對應的三元一次方程組，哪些有無限多組解？
+  options:
+  - label: A
+    content: $\left[ \begin{matrix}1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0\end{matrix} \right]$
+  - label: B
+    content: $\left[ \begin{matrix}0 & 2 & 0 & 2 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 1\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}1 & 2 & 0 & 2 \\ 1 & 0 & 2 & 0 \\ 0 & 0 & 0 & 1\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}1 & 2 & 3 & 2 \\ 0 & 2 & 2 & 0 \\ 0 & 0 & 0 & 0\end{matrix} \right]$
+  - label: E
+    content: $\left[ \begin{matrix}2 & 0 & 2 & 2 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\end{matrix} \right]$
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：恰一解
+
+    (B) ╳：恰一解
+
+    (C) ╳：無解
+
+    (D) ○：$\begin{cases}x+2y+3z=2 \\ 2y+2z=0 \\ 0=0\end{cases}$表示無限多解
+
+    (E) ○：$\begin{cases}2x+2z=2 \\ 0=0 \\ 0=0\end{cases}$表示無限多解
+
+    故選(D)(E)'
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T06
+      name: 階梯形矩陣解的結構判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: △ABC 經過下列哪一個方陣的變換後，可得出一個相等面積的三角形△A'B'C'？
+  options:
+  - label: A
+    content: $\left[ \begin{matrix}\cos 10^{^{\circ}} & \sin 10^{^{\circ}} \\ -\sin 10^{^{\circ}} & \cos 10^{^{\circ}}\end{matrix} \right]$
+  - label: B
+    content: $\left[ \begin{matrix}\cos 10^{^{\circ}} & \sin 10^{^{\circ}} \\ \sin 10^{^{\circ}} & -\cos 10^{^{\circ}}\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}\cos 10^{^{\circ}} & \sin 10^{^{\circ}} \\ \sin 10^{^{\circ}} & \cos 10^{^{\circ}}\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}1 & \sin 10^{^{\circ}} \\ 0 & 1\end{matrix} \right]$
+  - label: E
+    content: $\left[ \begin{matrix}2 & 3 \\ 3 & 4\end{matrix} \right]$
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '變換矩陣的行列式值＝± 1，表示變換後的面積不變
+
+    (A) ○：$detA_{1}$＝$cos^{2}$10°＋$sin^{2}$10°＝1
+
+    (B) ○：$detA_{2}$＝－$cos^{2}$10°－$sin^{2}$10°＝－1
+
+    (C) ╳：$detA_{3}$＝$cos^{2}$10°－$sin^{2}$10°≠± 1
+
+    (D) ○：$detA_{4}$＝1
+
+    (E) ○：$detA_{5}$＝4．2－3．3＝－1
+
+    故選(A)(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T06
+      name: 線性變換面積縮放與行列式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s2_1
+  section: 2
+  number: 1
+  type: single
+  page: 1
+  stem: 設$I=\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$、$A=\left[ \begin{matrix}1 & 1 \\ 3 & 4\end{matrix} \right]$且 B＝I＋A，試選出代表 $B^{2}$－$A^{2}$ 的選項。
+  options:
+  - label: A
+    content: $\left[ \begin{matrix}3 & 2 \\ 6 & 9\end{matrix} \right]$
+  - label: B
+    content: $\left[ \begin{matrix}1 & 2 \\ 2 & 3\end{matrix} \right]$
+  - label: C
+    content: $\left[ \begin{matrix}1 & 2 \\ 2 & 1\end{matrix} \right]$
+  - label: D
+    content: $\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+  - label: E
+    content: $\left[ \begin{matrix}1 & 1 \\ 3 & 4\end{matrix} \right]$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$B^{2}-A^{2}=\left[ \begin{matrix}2 & 1 \\ 3 & 5\end{matrix} \right] ^{2}-\left[ \begin{matrix}1 & 1 \\ 3 & 4\end{matrix} \right] ^{2}$＝$\left[ \begin{matrix}7 & 7 \\ 21 & 28\end{matrix} \right] -\left[ \begin{matrix}4 & 5 \\ 15 & 19\end{matrix} \right] =\left[ \begin{matrix}3 & 2 \\ 6 & 9\end{matrix} \right]$
+
+    故選(A)
+
+    注意：$B^{2}$－$A^{2}$≠（B＋A）（B－A）'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T06
+      name: 矩陣乘法代數性質與交換律判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s2_2
+  section: 2
+  number: 2
+  type: single
+  page: 1
+  stem: '已知矩陣$A=\left[ \begin{matrix}1 & 0 \\ 3 & 1\end{matrix} \right] \left[ \begin{matrix}1 & 2 \\ 0 & 1\end{matrix} \right] \left[ \begin{matrix}1 & 0 \\ 0 & 2\end{matrix} \right]$，且
+
+    ① 表示往 x 方向推移 y 坐標的 2 倍。
+
+    ② 表示往 y 方向推移 x 坐標的 2 倍。
+
+    ③ 表示以原點為中心，往 x 方向伸縮 1 倍，往 y 方向伸縮 2 倍。
+
+    ④ 表示以原點為中心，往 y 方向伸縮 1 倍，往 x 方向伸縮 2 倍。
+
+    ⑤ 表示往 x 方向推移 y 坐標的 3 倍。
+
+    ⑥ 表示往 y 方向推移 x 坐標的 3 倍。
+
+    則矩陣 A 所代表的線性變換，依序進行的變換步驟為何？'
+  options:
+  - label: A
+    content: ③①⑥
+  - label: B
+    content: ⑥①③
+  - label: C
+    content: ③②⑤
+  - label: D
+    content: ⑤②③
+  - label: E
+    content: ⑤④③
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T05
+      name: 線性變換複合與伸縮推移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s2_3
+  section: 2
+  number: 3
+  type: single
+  page: 2
+  stem: 設二階方陣 A、B 滿足$A+2B=\left[ \begin{matrix}1 & 3 \\ 3 & 4\end{matrix} \right]$且$A-B=\left[ \begin{matrix}-5 & 0 \\ 0 & 1\end{matrix} \right]$，則 det（AB）＝？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: －1
+  - label: C
+    content: －3
+  - label: D
+    content: －5
+  - label: E
+    content: －7
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'A＝$\frac{1}{3}$（（A＋2B）＋2（A－B））＝$\frac{1}{3}\left[ \begin{matrix}-9 & 3 \\ 3 & 6\end{matrix} \right] =\left[ \begin{matrix}-3 & 1 \\ 1 & 2\end{matrix} \right]$
+
+    B＝$\frac{1}{3}$（（A＋2B）－（A－B））＝$\frac{1}{3}\left[ \begin{matrix}6 & 3 \\ 3 & 3\end{matrix} \right] =\left[ \begin{matrix}2 & 1 \\ 1 & 1\end{matrix} \right]$
+
+    ∴det（AB）＝detA．detB＝$\left| \begin{matrix}-3 & 1 \\ 1 & 2\end{matrix} \right| \left| \begin{matrix}2 & 1 \\ 1 & 1\end{matrix} \right|$＝（－7）(1)＝－7
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T04
+      name: 矩陣方程與聯立矩陣求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s2_4
+  section: 2
+  number: 4
+  type: single
+  page: 2
+  stem: 設 A（1，1），B（3，7），C（a，b）且 a＜0 為坐標平面上三點，若△ABC 為正三角形，則 a＋3b＝？
+  options:
+  - label: A
+    content: '10'
+  - label: B
+    content: '12'
+  - label: C
+    content: '14'
+  - label: D
+    content: '16'
+  - label: E
+    content: '18'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '將三點均平移（－1，－1） 變成 A（1，1）→ A''（0，0），B（3，7）→ B''（2，6），C（a，b）→ C''（a－1，b－1）
+
+    ⇒ C''＝$\left[ \begin{matrix}\cos 60^{^{\circ}} & -\sin 60^{^{\circ}} \\ \sin 60^{^{\circ}} & \cos 60^{^{\circ}}\end{matrix} \right] B''=\left[ \begin{matrix}\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2}\end{matrix} \right] \left[ \begin{matrix}2 \\ 6\end{matrix} \right] =\left[ \begin{matrix}1-3\sqrt{3} \\ \sqrt{3}+3\end{matrix} \right] =\left[ \begin{matrix}a-1 \\ b-1\end{matrix} \right]$
+
+    ∴$\left[ \begin{matrix}1-3\sqrt{3} \\ \sqrt{3}+3\end{matrix} \right] =\left[ \begin{matrix}a-1 \\ b-1\end{matrix} \right]$
+
+    a＋3b＝$(2-3\sqrt{3})+3(4+\sqrt{3})=14$
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T03
+      name: 平面旋轉變換矩陣與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 對矩陣$\left[ \begin{matrix}1 & 2 & a & b \\ 2 & 3 & c & d\end{matrix} \right]$做列運算若干次得到$\left[ \begin{matrix}1 & 0 & -2 & 4 \\ 0 & 1 & 2 & -2\end{matrix} \right]$，則序組 （a，b，c，d）＝＿＿＿＿。
+  answer:
+  - （2，0，2，2）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left[ \begin{matrix}1 & 2 & a & b \\ 2 & 3 & c & d\end{matrix} \right]$→$\left[ \begin{matrix}1 & 0 & -2 & 4 \\ 0 & 1 & 2 & -2\end{matrix} \right]$，表示$〔A | B〕$→$〔I | C〕$，即$A^{-1}A=I , A^{-1}B=C$
+
+    設$A=\left[ \begin{matrix}1 & 2 \\ 2 & 3\end{matrix} \right]$，$B=\left[ \begin{matrix}a & b \\ c & d\end{matrix} \right]$，$C=\left[ \begin{matrix}-2 & 4 \\ 2 & -2\end{matrix} \right]$
+
+    ∴B＝AC＝$\left[ \begin{matrix}1 & 2 \\ 2 & 3\end{matrix} \right] \left[ \begin{matrix}-2 & 4 \\ 2 & -2\end{matrix} \right] =\left[ \begin{matrix}2 & 0 \\ 2 & 2\end{matrix} \right]$
+
+    故序組（a，b，c，d）＝（2，0，2，2）'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T03
+      name: 反矩陣存在條件與求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 設 O、P、Q 三點坐標為 O（0，0）、P（3，5）、Q（－1，2）。若 O、P、Q 三點經過矩陣 $A=\left[ \begin{matrix}3 & 4 \\ 4 & 3\end{matrix} \right]$線性變換後，得到新的三點 O'、P'、Q'，則$\overset{-⃑}{O'P'}$與$\overset{-⃑}{O'Q'}$所張成的平行四邊形面積為＿＿＿＿。
+  answer:
+  - '77'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '因為$\vec{OP}$＝（3，5），$\vec{OQ}$＝（－1，2）
+
+    故由$\vec{OP}$與$\vec{OQ}$所張成的平行四邊形面積為$| \left| \begin{matrix}3 & 5 \\ -1 & 2\end{matrix} \right| |$＝｜3×2－5×（－1）｜＝11
+
+    又｜detA｜＝$| \left| \begin{matrix}3 & 4 \\ 4 & 3\end{matrix} \right| |$＝｜3×3－4×4｜＝7
+
+    故由$\overset{-⃑}{O''P''}$與$\overset{-⃑}{O''Q''}$所張成的平行四邊形面積為由$\vec{OP}$與$\vec{OQ}$所張成的平行四邊形面積的 7 倍
+
+    故所求面積為 7×11＝77'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T06
+      name: 線性變換面積縮放與行列式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: '(1)$\left[ \begin{matrix}\frac{7}{25} & \frac{24}{25} \\ \frac{24}{25} & -\frac{7}{25}\end{matrix} \right] ^{2022}$＝＿＿＿＿。
+
+    (2)$\left[ \begin{matrix}\sqrt{3} & -1 \\ 1 & \sqrt{3}\end{matrix} \right] ^{2022}$＝＿＿＿＿。'
+  explanation: '(1)$A=\left[ \begin{matrix}\frac{7}{25} & \frac{24}{25} \\ \frac{24}{25} & -\frac{7}{25}\end{matrix} \right]$＝$\left[ \begin{matrix}\cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta\end{matrix} \right]$表示對直線 L：y＝（tanθ）x 的鏡射矩陣
+
+    ∴$A^{2022}$＝$(A^{2})^{1011}$＝$I^{1011}$＝I＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$
+
+    (2)$B=\left[ \begin{matrix}\sqrt{3} & -1 \\ 1 & \sqrt{3}\end{matrix} \right]$＝$2\left[ \begin{matrix}\frac{\sqrt{3}}{2} & -\frac{1}{2} \\ \frac{1}{2} & \frac{\sqrt{3}}{2}\end{matrix} \right]$＝$2\left[ \begin{matrix}\cos 30^{^{\circ}} & -\sin 30^{^{\circ}} \\ \sin 30^{^{\circ}} & \cos 30^{^{\circ}}\end{matrix} \right]$
+
+    其中$\left[ \begin{matrix}\cos 30^{^{\circ}} & -\sin 30^{^{\circ}} \\ \sin 30^{^{\circ}} & \cos 30^{^{\circ}}\end{matrix} \right]$表示以原點為中心（逆時針）旋轉 30°的矩陣
+
+    ∴$B^{2022}$＝$\left( 2\left[ \begin{matrix}\cos 30^{^{\circ}} & -\sin 30^{^{\circ}} \\ \sin 30^{^{\circ}} & \cos 30^{^{\circ}}\end{matrix} \right] \right) ^{2022}$＝$2^{2022}\left[ \begin{matrix}\cos 30^{^{\circ}} & -\sin 30^{^{\circ}} \\ \sin 30^{^{\circ}} & \cos 30^{^{\circ}}\end{matrix} \right] ^{2022}$
+
+    ＝$2^{2022}\left[ \begin{matrix}\cos (30^{^{\circ}}\times 2022) & -\sin (30^{^{\circ}}\times 2022) \\ \sin (30^{^{\circ}}\times 2022) & \cos (30^{^{\circ}}\times 2022)\end{matrix} \right]$＝$2^{2022}\left[ \begin{matrix}\cos 180^{^{\circ}} & -\sin 180^{^{\circ}} \\ \sin 180^{^{\circ}} & \cos 180^{^{\circ}}\end{matrix} \right]$ ＝$2^{2022}\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$＝$\left[ \begin{matrix}-2^{2022} & 0 \\ 0 & -2^{2022}\end{matrix} \right]$'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T05
+      name: 線性變換複合與伸縮推移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設直線 L：y＝（tan75°）x，則點$P(4\sqrt{3} , 2)$對直線 L 作鏡射後所得的點為 P'，則點 P' 的坐標為＿＿＿＿。
+  answer:
+  - $(-5 , 3\sqrt{3})$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P''＝$\left[ \begin{matrix}\cos 150^{^{\circ}} & \sin 150^{^{\circ}} \\ \sin 150^{^{\circ}} & -\cos 150^{^{\circ}}\end{matrix} \right] P=\left[ \begin{matrix}-\frac{\sqrt{3}}{2} & \frac{1}{2} \\ \frac{1}{2} & \frac{\sqrt{3}}{2}\end{matrix} \right] \left[ \begin{matrix}4\sqrt{3} \\ 2\end{matrix} \right] =\left[ \begin{matrix}-5 \\ 3\sqrt{3}\end{matrix} \right]$
+
+    故點 P'' 的坐標為$(-5 , 3\sqrt{3})$'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T04
+      name: 平面鏡射變換矩陣與對稱
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: '設 A 為二階方陣，若$A\left[ \begin{matrix}0 \\ 1\end{matrix} \right] =\left[ \begin{matrix}2 \\ 1\end{matrix} \right]$且$A\left[ \begin{matrix}1 \\ 1\end{matrix} \right] =\left[ \begin{matrix}3 \\ 1\end{matrix} \right]$，則
+
+    (1) A＝＿＿＿＿。
+
+    (2)$A^{4}\left[ \begin{matrix}1 \\ 2\end{matrix} \right]$＝＿＿＿＿。'
+  explanation: '(1)$A\left[ \begin{matrix}0 & 1 \\ 1 & 1\end{matrix} \right] =\left[ \begin{matrix}2 & 3 \\ 1 & 1\end{matrix} \right]$⇒$A=\left[ \begin{matrix}2 & 3 \\ 1 & 1\end{matrix} \right] \left[ \begin{matrix}0 & 1 \\ 1 & 1\end{matrix} \right] ^{-1}=\left[ \begin{matrix}2 & 3 \\ 1 & 1\end{matrix} \right] \cdot \frac{1}{-1} \left[ \begin{matrix}1 & -1 \\ -1 & 0\end{matrix} \right] =\left[ \begin{matrix}1 & 2 \\ 0 & 1\end{matrix} \right]$
+
+    (2)$A^{4}\left[ \begin{matrix}1 \\ 2\end{matrix} \right] =\left[ \begin{matrix}1 & 2 \\ 0 & 1\end{matrix} \right] ^{4}\left[ \begin{matrix}1 \\ 2\end{matrix} \right] =\left[ \begin{matrix}1 & 8 \\ 0 & 1\end{matrix} \right] \left[ \begin{matrix}1 \\ 2\end{matrix} \right] =\left[ \begin{matrix}17 \\ 2\end{matrix} \right]$'
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T03
+      name: 反矩陣存在條件與求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_北一女中_數學_數A_g11s2e3_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 2
+  stem: '已知排球發球只有高手發球與低手發球兩種。<u>小綠</u>在練習排球發球時有一個習慣：當她前一球採高手發球，則下一球採高手發球的機率是採低手發球機率的$\frac{1}{2}$；當她前一球採低手發球，則下一球採低手發球的機率與採高手發球的機率相等。今天的發球練習中，<u>小綠</u>決定第一球採低手發球。
+
+    (1) 求轉移矩陣 A。（4 分）
+
+    (2) 利用(1)之轉移矩陣 A，求<u>小綠</u>在今天的發球練習中，第三球採低手發球的機率。（4 分）
+
+    (3) 對於轉移矩陣 A，若狀態 X 滿足 AX＝X，則稱 X 為穩定狀態，此穩定狀態就是長期會趨向的狀態。承(1)，試求<u>小綠</u>長期下來採低手發球的機率會趨向多少？（4 分）'
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T02
+      name: 馬可夫鏈多步轉移與穩定態
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

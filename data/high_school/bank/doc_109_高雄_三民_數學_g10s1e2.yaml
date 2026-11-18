@@ -1,0 +1,525 @@
+document:
+  id: doc_109_高雄_三民_數學_g10s1e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 109
+  semester: 1
+  exam_seq: 2
+  city: 高雄
+  school_short: 三民
+  school: 高雄市立三民高級中學
+  title: 高雄市立三民高級中學 109學年度第1學期第2次定期評量 高一數學科試題
+  exam_name: 109學年度第1學期第2次定期評量
+  source_file: 高一/數學/109/1-2/高雄/三民.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、填充題（每題 5 分，共 80 分）
+    count: 15
+  - ord: 2
+    name: 二、計算題（20 分，沒有計算過程不予計分）
+    count: 2
+questions:
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 下列敘述何者正確？$■答$：＿＿＿＿。
+  options:
+  - label: A
+    content: $\sqrt{5}x -6$為一個 x 的多項式
+  - label: B
+    content: 多項式 f（x）＝$x^{2021}$＋4 除以 x＋1 的餘式為 3
+  - label: C
+    content: 若多項式 f（x）＝$ax^{4}$＋$bx^{3}$＋$cx^{2}$＋dx＋e，則 deg（f（x））＝4
+  - label: D
+    content: 若多項式 f（x）除以$x -\frac{1}{2}$的商式為 2Q（x），則 f（x）除以 2x－1 的商式為 Q（x）
+  - label: E
+    content: 設多項式 f（x）＝$x^{3}$－4x＋2 與 g（x）＝（x－1）（x－2）（x＋1）＋a（x－1）（x－2）＋b（x－2）＋c 相等， 則 a＋b＋c＝－1
+  explanation: '(A)○：
+
+    (B)○：f（x）＝$x^{2021}$＋4 除以 x＋1 的餘式為 f（－1）＝3
+
+    (C)╳：deg f（x）$\leq$4 或 f（x）＝0 沒有次數
+
+    (D)○：f（x）＝$\left( x -\frac{1}{2} \right)$（2Q（x））＋r＝（2x－1）Q（x）＋r
+
+    $\Rightarrow$f（x）除以 2x－1 的商式為 Q（x）
+
+    (E)╳：$x^{3}$－4x＋2＝（x－1）（x－2）（x＋1）＋a（x－1）（x－2）＋b（x－2）＋c
+
+    $\Rightarrow$x＝2 代入 2＝c
+
+    x＝1 代入－1＝－b＋2$\Rightarrow$b＝3
+
+    x＝0 代入 2＝2＋2a－6＋2$\Rightarrow$a＝2
+
+    $\Rightarrow$a＋b＋c＝2＋3＋2＝7
+
+    故選(A)(B)(D)'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T02
+      name: 多項式除法原理與商餘換算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列何者是多項式 f（x）＝$2x^{4}$＋$5x^{3}$＋$3x^{2}$＋x－2 的因式？$■答$：＿＿＿＿。
+  options:
+  - label: A
+    content: x＋1
+  - label: B
+    content: x－3
+  - label: C
+    content: 2x＋1
+  - label: D
+    content: x＋2
+  - label: E
+    content: 2x－1
+  explanation: '(A)╳：f（－1）＝－3≠0$\Rightarrow$（x＋1）不是其因式
+
+    (B)╳：f(3)＝325≠0$\Rightarrow$（x－3）不是其因式
+
+    (C)╳：$f \left( -\frac{1}{2} \right) =-\frac{9}{4}\neq 0\Rightarrow$（2x＋1）不是其因式
+
+    (D)○：f（－2）＝0$\Rightarrow$（x＋2）是其因式
+
+    (E)○：$f \left( \frac{1}{2} \right) = 0\Rightarrow$（2x－1）是其因式
+
+    故選(D)(E)'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T05
+      name: 因式定理與整係數一次因式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 已知多項式 f（x）除以 $x^{2}$－x－2 之餘式為 18x＋9。試選出正確的選項。$■答$：＿＿＿＿。
+  options:
+  - label: A
+    content: f(2)＝45
+  - label: B
+    content: f(1)＝27
+  - label: C
+    content: f（x）可能為一次式
+  - label: D
+    content: f（x）可能為 $4x^{4}$＋$2x^{3}$－8x－3
+  - label: E
+    content: f（x）可能為 $4x^{4}$＋$2x^{3}$－$8x^{2}$－3
+  explanation: '設商式為 Q（x）
+
+    $\Rightarrow$f（x）＝（$x^{2}$－x－2）Q（x）＋（18x＋9）
+
+    ＝（x－2）（x＋1）Q（x）＋（18x＋9）
+
+    (A)○：f(2)＝0＋18×2＋9＝45
+
+    (B)╳：f(1)＝－2×Q(1)＋27 不一定等於 27
+
+    (C)○：當 Q（x）＝0 時，f（x）＝18x＋9 為一次式
+
+    (D)╳：令 g（x）＝$4x^{4}$＋$2x^{3}$－8x－3
+
+    $\Rightarrow$g(2)＝61≠f(2)
+
+    $\Rightarrow$f（x）不可能為 g（x）
+
+    (E)○：根據除法原理，得 $4x^{4}$＋$2x^{3}$－$8x^{2}$－3＝（$x^{2}$－x－2）（$4x^{2}$＋6x＋6）＋18x＋9
+
+    故 f（x）可能為 $4x^{4}$＋$2x^{3}$－$8x^{2}$－3
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T03
+      name: 餘式定理與高次餘式線性組合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_4
+  section: 1
+  number: 4
+  type: fill
+  page: 1
+  stem: 設三次多項式 f（x）滿足 f(1)＝f(2)＝0，且 f(0)＝2，f（－1）＝－6，則 f（x）＝＿＿＿＿。（可不用乘開）
+  explanation: '設三次多項式 f（x）＝（x－1）（x－2）（ax＋b）
+
+    又$\begin{cases}f (0)=2 \\ f (-1)=-6\end{cases}\Rightarrow\begin{cases}b =1 \\ -a +b =-1\end{cases}$
+
+    $\Rightarrow$a＝2，b＝1
+
+    $\Rightarrow$f（x）＝（x－1）（x－2）（2x＋1）'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T14
+      name: 因式定理與多項式假設
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_5
+  section: 1
+  number: 5
+  type: fill
+  page: 1
+  stem: 設多項式 f（x）除以 $x^{2}$＋x－2 的餘式為 3x＋1，除以 $x^{2}$＋x－6 的餘式為 x－1，則 f（x）除以 $x^{2}$＋2x－3 的餘式為＿＿＿＿。
+  explanation: '設 f（x）＝（$x^{2}$＋x－2）$Q_{1}$（x）＋（3x＋1）＝（x＋2）（x－1）$Q_{1}$（x）＋（3x＋1）
+
+    ＝（$x^{2}$＋x－6）$Q_{2}$（x）＋（x－1）＝（x＋3）（x－2）$Q_{2}$（x）＋（x－1）
+
+    ＝（$x^{2}$＋2x－3）Q（x）＋（ax＋b）＝（x＋3）（x－1）Q（x）＋（ax＋b）
+
+    x＝1$\Rightarrow$f(1)＝4＝a＋b
+
+    x＝－3$\Rightarrow$f（－3）＝－4＝－3a＋b
+
+    $\Rightarrow$a＝2，b＝2
+
+    $\Rightarrow$所求餘式為 2x＋2'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T04
+      name: 聯立除式與中國剩餘定理型餘式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_6
+  section: 1
+  number: 6
+  type: fill
+  page: 1
+  stem: 若多項式（x＋2）f（x）除以 $x^{2}$＋x＋1 的餘式為 7x＋5，則 f（x）除以 $x^{2}$＋x＋1 的餘式為 ＿＿＿＿。
+  explanation: '設 f（x）＝（$x^{2}$＋x＋1）Q（x）＋（ax＋b）
+
+    $\Rightarrow$（x＋2）f（x）＝（$x^{2}$＋x＋1）（x＋2）Q（x）＋（x＋2）（ax＋b）
+
+    ＝（$x^{2}$＋x＋1）（x＋2）Q（x）＋a（$x^{2}$＋x＋1）＋（7x＋5）
+
+    $\Rightarrow$（x＋2）（ax＋b）＝a（$x^{2}$＋x＋1）＋（7x＋5）
+
+    $\Rightarrowax^{2}$＋（2a＋b）x＋2b＝$ax^{2}$＋（a＋7）x＋（a＋5）
+
+    $\Rightarrow\begin{cases}2a +b =a +7 \\ 2b =a +5\end{cases}\Rightarrow\begin{cases}a +b =7 \\ a -2b =-5\end{cases}\Rightarrow\begin{cases}a =3 \\ b =4\end{cases}$
+
+    所求餘式為 3x＋4'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T15
+      name: 二次以上除式的餘式問題
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_7
+  section: 1
+  number: 7
+  type: fill
+  page: 1
+  stem: 已知一次函數 y＝f（x）的圖形通過（1，5），（2，7）兩點，求每當 x 值增加 5 單位時，其對應的函數值增加或減少＿＿＿＿單位。（需寫出“增加”或“減少”）
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T06
+      name: 一次與常數函數圖形及斜率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_8
+  section: 1
+  number: 8
+  type: single
+  page: 1
+  stem: 函數 f（x）＝$ax^{2}$＋bx＋c 的圖形如右圖所示，試判斷下列哪些選項的值是負數？$■答$：＿＿＿＿。
+  options:
+  - label: A
+    content: a
+  - label: B
+    content: b
+  - label: C
+    content: c
+  - label: D
+    content: $b^{2}$－4ac
+  - label: E
+    content: a－b＋c
+  assets:
+  - key: s1_8_f1
+    kind: figure
+    file: doc_109_高雄_三民_數學_g10s1e2/s1_8_f1.png
+    crop:
+      page: 1
+      rect:
+      - 456.95
+      - 606.0
+      - 562.55
+      - 677.35
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T02
+      name: 拋物線係數與開口判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_9
+  section: 1
+  number: 9
+  type: fill
+  page: 1
+  stem: 將 y＝$2x^{2}$＋4x＋a 的圖形向右平移 1 單位，再向下平移 4 單位後恰與 y＝$bx^{2}$＋cx＋5 的圖形重合，則 a＋b＋c＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T07
+      name: 拋物線平移與係數比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_11
+  section: 1
+  number: 11
+  type: fill
+  page: 1
+  stem: 設 m 為實數，已知二次函數 y＝$mx^{2}$＋3x＋m 的圖形恆在一次函數 y＝5x－1 圖形的上方，則 m 的範圍為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T02
+      name: 恆正恆負與判別式範圍
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_12
+  section: 1
+  number: 12
+  type: fill
+  page: 1
+  stem: 設二次函數 h（x）＝$x^{2}$－2x＋k 在－3$\leq$x$\leq$0 範圍內的最大值為 M，最小值為 m。若 M＋m＝20，則實數 k 值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T03
+      name: 閉區間上的二次函數極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_13
+  section: 1
+  number: 13
+  type: fill
+  page: 2
+  stem: 設 a，b 為實數，且二次不等式 $ax^{2}$－4x＋b$\geq$0 的解為$-\frac{3}{2}\leq x\leq \frac{1}{2}$，則數對（a，b） ＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T03
+      name: 根與解區間反推係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_14
+  section: 1
+  number: 14
+  type: fill
+  page: 2
+  stem: 設 f（x）＝$x^{3}$＋$3x^{2}$－2x＋1＝a（x－h）$^{3}$＋p（x－h）＋k，則 f（x）圖形的對稱中心為 ＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T02
+      name: 三次函數配方與圖形平移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_15
+  section: 1
+  number: 15
+  type: fill
+  page: 2
+  stem: 已知三次函數 y＝f（x）＝$x^{3}$＋$ax^{2}$＋bx＋c 之圖形如右圖所示，則不等式 f（x＋2）＞0 的解為＿＿＿＿。
+  assets:
+  - key: s1_15_f1
+    kind: figure
+    file: doc_109_高雄_三民_數學_g10s1e2/s1_15_f1.png
+    crop:
+      page: 2
+      rect:
+      - 443.35
+      - 163.0
+      - 563.6
+      - 280.55
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T06
+      name: 函數圖形判讀高次不等式解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_三民_數學_g10s1e2_s1_16
+  section: 1
+  number: 16
+  type: fill
+  page: 2
+  stem: 滿足不等式（x－1）$^{7}$（$x^{3}$－27）（x－9）$^{2}\leq$0 的整數共有＿＿＿＿個。
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T04
+      name: 高次多項式不等式求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_三民_數學_g10s1e2_s2_1
+  section: 2
+  number: 1
+  type: calc
+  page: 2
+  stem: '已知函數 f（x）＝$2x^{4}$－$7x^{3}$＋$x^{2}$－11x＋13，求：
+
+    (1) f（x）在 x＝2 附近的一次近似。
+
+    (2) f（1.999）的近似值。（四捨五入到小數點後第三位）'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T06
+      name: 綜合除法連續展開與泰勒近似
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_三民_數學_g10s1e2_s2_2
+  section: 2
+  number: 2
+  type: calc
+  page: 2
+  stem: '設多項式 f（x）＝$2x^{4}$＋$5x^{3}$＋$ax^{2}$＋4x＋b 有一個因式 $2x^{2}$＋3x＋1，求：
+
+    (1) 數對（a，b）。
+
+    (2) f（x）$\geq$0 的解。'
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T04
+      name: 高次多項式不等式求解
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3

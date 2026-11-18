@@ -1,0 +1,448 @@
+document:
+  id: doc_109_桃園_武陵_數學_g10s2e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 1
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 109學年度第2學期第1次定期評量 高一數學科試題
+  exam_name: 109學年度第2學期第1次定期評量
+  source_file: 高一/數學/109/2-1/桃園/武陵.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題 共28分
+    count: 4
+  - ord: 2
+    name: 二、填充題 共54分
+    count: 8
+  - ord: 3
+    name: 三、混合題 10分
+    count: 2
+  - ord: 4
+    name: 四、計算證明題 共8分
+    count: 1
+  - ord: 5
+    name: 一、多重選擇題：
+    count: 1
+  - ord: 6
+    name: 二、填充：
+    count: 3
+questions:
+- id: doc_109_桃園_武陵_數學_g10s2e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 已知等差數列〈$a_{n}$〉＝〈100 , 97 , 94 , …〉，且$S_{n}$＝$a_{1}$＋$a_{2}$＋…＋$a_{n}$，試選出正確的選項。
+  options:
+  - label: A
+    content: 公差為3
+  - label: B
+    content: $a_{33}$＝1
+  - label: C
+    content: $S_{33}$＝1716
+  - label: D
+    content: 若$S_{n}$＜0，則n的最小值為68
+  - label: E
+    content: $S_{30}$＝3 ( $S_{20}$－$S_{10}$ )
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T08
+      name: 等差數列性質與前n項求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_桃園_武陵_數學_g10s2e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設兩變量x與y的n筆數據為( $x_{1}$ , $y_{1}$ )，( $x_{2}$ , $y_{2}$ )，…，( $x_{n}$ , $y_{n}$ )，其關係為$y_{i}$＝－$3x_{i}$＋64 ( i＝1，2，…，n )，已知數據x的算術平均數為12，標準差為4，則下列選項哪些是正確？
+  options:
+  - label: A
+    content: 數據y的算術平均數為28
+  - label: B
+    content: 數據y的標準差為－12
+  - label: C
+    content: x與y的相關係數為－1
+  - label: D
+    content: 若$S_{xx}$＝320，則可知數據x共有20筆數據
+  - label: E
+    content: y對x的迴歸直線必過點( 0 , 64 )
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T03
+      name: 線性變換對相關與迴歸影響
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_109_桃園_武陵_數學_g10s2e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 有30筆數據( $x_{i}$ , $y_{i}$ )，i＝1，2，…，30，其平均數μ$_{x}$＝60，μ$_{y}$＝70，x與y的相關係數為0.8，且y對x的迴歸直線方程式通過點( 20 , 40 )，試問下列敘述哪些正確的？
+  options:
+  - label: A
+    content: y對x的迴歸直線斜率為0.75
+  - label: B
+    content: x的標準差小於y的標準差
+  - label: C
+    content: y對x的迴歸直線通過另一點 ( 76 , 84 )
+  - label: D
+    content: 若$x_{i}$'＝$3x_{i}$＋2，$y_{i}$'＝－$2y_{i}$＋10，則x' 與y' 的相關係數為－0.8
+  - label: E
+    content: 承(D)，y'對x'的迴歸直線斜率為負數
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T04
+      name: 迴歸直線過平均點與殘差性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_桃園_武陵_數學_g10s2e1_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 從1到500的正整數中挑選4個相異的數字，使這4個數由小到大排列後形成一個等差數列，已知此等差數列的首項為32，則下列哪些數<u>不可能</u>出現在所挑選的4個數中？
+  options:
+  - label: A
+    content: '91'
+  - label: B
+    content: '190'
+  - label: C
+    content: '491'
+  - label: D
+    content: '348'
+  - label: E
+    content: '500'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T07
+      name: 數列整數條件、共同項與枚舉
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_桃園_武陵_數學_g10s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 已知x與y的筆據如下表，試問： (1) x與y的相關係數為＿＿＿＿。 (2) 若利用最小平方法，求得y對x的迴歸直線方程式為y＝a＋bx，則a×b＝＿＿＿＿。
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_109_桃園_武陵_數學_g10s2e1/s2_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 63.9
+      - 775.95
+      - 296.3
+      - 818.45
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T02
+      name: 相關係數與迴歸直線直接計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_桃園_武陵_數學_g10s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 設$S_{n}$為等差數列〈$a_{n}$〉的前n項和，若$\frac{S_{3}}{S_{6}}$＝$\frac{2}{5}$，則$\frac{S_{6}}{S_{12}}$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T08
+      name: 等差數列性質與前n項求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_桃園_武陵_數學_g10s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知等比數列〈$a_{n}$〉的首項$a_{1}$＞0，公比r＞1，且$3a_{5}$＋$a_{7}$＝$4a_{6}$，若此數列中有兩相異項$a_{i}$，$a_{j}$滿足$\sqrt{a_{i}\times a_{j}}$＝$a_{7}$，則 r＋i＋j之值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_桃園_武陵_數學_g10s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 某校統計發現108年與109年學生人數的成長率分別為25％、28％，若108年、109年、110年這三年學生人數的平均成長率要大於或等於40％，則110年的成長率至少要為＿＿＿＿％。
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T05
+      name: 幾何平均數與平均成長率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_桃園_武陵_數學_g10s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 在數列〈$a_{n}$〉中，已知$a_{2}$＝10，$a_{8}$＝23，$a_{15}$＝－8且$a_{n}$＋$a_{n＋1}$＋$a_{n＋2}$＋$a_{n＋3}$＝40，n為任意正整數，試求$a_{2021}$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T02
+      name: 遞迴關係推算與累加求通項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_桃園_武陵_數學_g10s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 已知兩筆資料X：$x_{1}$，$x_{2}$，…，$x_{100}$與Y：$y_{1}$，$y_{2}$，…，$y_{100}$，其中$x_{i}$＝$y_{i}^{2}$，i＝1，2，…，100。若資料Y的算術平均數為20，標準差為5，則資料X的算術平均數為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T02
+      name: 變異數標準差計算與增減變動
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_桃園_武陵_數學_g10s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 設數列〈$a_{n}$〉前n項的和$a_{1}$＋$a_{2}$＋$a_{3}$＋…＋$a_{n}$＝$2^{n}$ ( $n^{2}$－2n )，則此數列的第n項$a_{n}$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T04
+      name: 級數和S_n反求一般項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_桃園_武陵_數學_g10s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 在1與4之間插入n ( n$\in$N )個數後，此n＋2個數成等比數列，假設此等比數列所有項 ( 包含1與4 ) 的乘積為$c_{n}$，試問：若$c_{1}$＋$c_{2}$＋$c_{3}$＋…＋$c_{n}$ ≥ 20000，則n的最小值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T07
+      name: 等比級數求和與不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_桃園_武陵_數學_g10s2e1_s3_1
+  section: 3
+  number: 1
+  type: single
+  page: 2
+  stem: 通項$\frac{2^{2}+4^{2}+\cdots +(2k)^{2}}{k}$的值為下列哪一個選項？
+  options:
+  - label: A
+    content: $\frac{13}{3}k^{2}$－$\frac{4}{3}$k＋1
+  - label: B
+    content: $\frac{13}{3}k^{2}$－10k＋$\frac{29}{3}$
+  - label: C
+    content: －$\frac{16}{3}k^{2}$＋22k－$\frac{38}{3}$
+  - label: D
+    content: $\frac{4}{3}k^{2}$＋2k＋$\frac{2}{3}$
+  - label: E
+    content: $\frac{4}{3}k^{2}$＋$\frac{2}{3}$k＋2
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T14
+      name: 通項多項式展開與線性求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_桃園_武陵_數學_g10s2e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 利用上題的答案，我們可以求出級數和S的值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T14
+      name: 通項多項式展開與線性求和
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹未列出級數和 S 的定義式或項數上界（疑缺公式或圖表）
+  difficulty: 3
+- id: doc_109_桃園_武陵_數學_g10s2e1_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '設數列〈$a_{n}$〉的遞迴關係式為$\begin{cases}a_{1}=1 \\ a_{n}=\frac{3a_{n-1}-1}{4a_{n-1}-1}( n\geq 2 , n\in N )\end{cases}$，則 (1) 試推測一般項$a_{n}$。 (2) 用數學歸納法證明推測正確。
+
+    桃園市立武陵高級中學109學年度第二學期一年級 第一次期中考 數學科 答案'
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T03
+      name: 數學歸納法猜測與倍數證明
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_109_桃園_武陵_數學_g10s2e1_s5_1
+  section: 5
+  number: 1
+  type: calc
+  page: 3
+  stem: (C)(D)(E) 2.(A)(C)(D)(E) 3. (A)(D)(E) 4. (D)
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 解答卷殘片，非題目
+  difficulty: 1
+- id: doc_109_桃園_武陵_數學_g10s2e1_s6_1
+  section: 6
+  number: 1
+  type: fill
+  page: 3
+  stem: (1) $\frac{-15}{\sqrt{415}}$；(2) －33
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 解答卷殘片，非題目
+  difficulty: 1
+- id: doc_109_桃園_武陵_數學_g10s2e1_s6_2
+  section: 6
+  number: 2
+  type: fill
+  page: 3
+  stem: $\frac{5}{14}$
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 解答卷殘片，非題目
+  difficulty: 1
+- id: doc_109_桃園_武陵_數學_g10s2e1_s6_7
+  section: 6
+  number: 7
+  type: fill
+  page: 3
+  stem: $2^{n－1}$ ( $n^{2}$－3 )
+  tags:
+    labeled_by: agent
+    label_confidence: low
+    label_note: 解答卷殘片，非題目
+  difficulty: 1

@@ -1,0 +1,477 @@
+document:
+  id: doc_113_台中_興大附中_數學_g10s1e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 113學年度第1學期第2次定期評量 高一數學科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  source_file: 高一/數學/113/1-2/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單選題：
+    count: 4
+  - ord: 2
+    name: 二、多選題：
+    count: 3
+  - ord: 3
+    name: 三、選填題：
+    count: 7
+  - ord: 4
+    name: 四、非選擇題
+    count: 1
+questions:
+- id: doc_113_台中_興大附中_數學_g10s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設f (x) 為一多項式，其奇數項係數和為2，偶數項係數和為6，求f (x) 除以$x^{2}$－1的餘式。
+  options:
+  - label: A
+    content: x＋7
+  - label: B
+    content: 2x－8
+  - label: C
+    content: 2x＋6
+  - label: D
+    content: －3x＋1
+  - label: E
+    content: －x＋3
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\begin{cases}奇數項係數和=\frac{f(1)-f(-1)}{2}=2 \\ 偶數項係數和=\frac{f(1)+f(-1)}{2}=6\end{cases}$ ⇒ $\begin{cases}f(1)=8 \\ f(-1)=4\end{cases}$ 設f (x)除以$x^{2}$－1的商式為Q(x)，餘式為ax＋b，即f (x)＝( $x^{2}$－1 )．Q(x)＋ax＋b 則$\begin{cases}f(1)=a+b=8 \\ f(-1)=-a+b=4\end{cases}$ ⇒ $\begin{cases}a = 2 \\ b = 6\end{cases}$ 故餘式為2x＋6。故選(C)。
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T07
+      name: 多項式四則運算與係數和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 下列哪一個選項是$2024^{5}$－8．$2024^{4}$－79．$2024^{2}$－17．2024－10除以2015的餘數？
+  options:
+  - label: A
+    content: －2014
+  - label: B
+    content: －1
+  - label: C
+    content: '0'
+  - label: D
+    content: '1'
+  - label: E
+    content: '2014'
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T13
+      name: 餘式定理與綜合除法求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 在邊長為4的正方形ABCD的三邊$\overline{AB}$、$\overline{BC}$、$\overline{CD}$上各取一點P、Q、R、使$\overline{AP}$＝$\overline{BQ}$＝2$\overline{CR}$，求△PQR的最小面積。
+  options:
+  - label: A
+    content: $\frac{4}{3}$
+  - label: B
+    content: $\frac{8}{3}$
+  - label: C
+    content: $\frac{10}{3}$
+  - label: D
+    content: $\frac{14}{3}$
+  - label: E
+    content: $\frac{16}{3}$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T05
+      name: 二次函數建模與應用極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 已知f (x)＝$\frac{1}{\sqrt{2}}x$－$\frac{1}{\sqrt{2}}$＋2與g(x)＝－2( x－1 )$^{3}$＋π( x－1 )＋2有三個交點，交點之x坐標分別為α , β , γ， 求g(α)＋g(β)＋g(γ)。
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: π
+  - label: E
+    content: '6'
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T03
+      name: 三次函數對稱中心性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e2_s2_5
+  section: 2
+  number: 5
+  type: multiple
+  page: 1
+  stem: 假設三條直線$L_{1}$：x－2y＋3＝0，$L_{2}$：2x＋3y＝0，$L_{3}$：ax－y－1＝0，若$L_{1}$ , $L_{2}$ , $L_{3}$不能圍成三角形，試求a之值。
+  options:
+  - label: A
+    content: $\frac{1}{2}$
+  - label: B
+    content: $-\frac{1}{2}$
+  - label: C
+    content: $-\frac{2}{3}$
+  - label: D
+    content: $-\frac{13}{9}$
+  - label: E
+    content: $\frac{7}{4}$
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '若$L_{3}$//$L_{1}$，則斜率$m_{3}$＝a＝$m_{1}$＝$\frac{1}{2}$ 若$L_{3}$//$L_{2}$，則斜率$m_{3}$＝a＝$m_{2}$＝$-\frac{2}{3}$ 若$L_{1}$ , $L_{2}$ , $L_{3}$ 交於一點，$\begin{cases}L_{1} : x-2y+3=0 \\ L_{2} : 2x+3y=0\end{cases}$ ⇒ ( x , y )＝$(-\frac{9}{7} , \frac{6}{7} )$，代入$L_{3}$＝$-\frac{9}{7}a-\frac{6}{7}-1$＝0 ⇒ a＝$-\frac{13}{9}$ 故選(A)(C)(D)。'
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T02
+      name: 三點共線與直線平行垂直
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e2_s2_6
+  section: 2
+  number: 6
+  type: multiple
+  page: 1
+  stem: 設k為實數，若二次函數y＝$k^{2}x^{2}$＋3x－5k的圖形在y＝$4x^{2}$＋3x－1的圖形下方且不相交，試求下列哪些k值可滿足此條 件。
+  options:
+  - label: A
+    content: $-\sqrt{2}$
+  - label: B
+    content: $-\frac{7}{10}$
+  - label: C
+    content: $\frac{4}{3}$
+  - label: D
+    content: '2'
+  - label: E
+    content: $\sqrt{7}$
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ( $k^{2}x^{2}$＋3x－5k )－( $4x^{2}$＋3x－1 ) 恆負 ⇒ ( $k^{2}$－4 )$x^{2}$－( 5k－1 )＜0 ①若$k^{2}$－4 $\neq$0，二次函數y＝( $k^{2}$－4 )$x^{2}$－( 5k－1 ) 的圖形在x軸下方，故開口向下且判別式＜0 $\begin{cases}k^{2}-4 < 0 \\ ( k^{2}-4 ) ( 5k-1 ) < 0\end{cases}$ ⇒ $\begin{cases}k^{2}-4 < 0 \\ 5k-1 > 0\end{cases}$ ⇒ $\begin{cases}-2 <k < 0 \\ k > \frac{1}{5}\end{cases}$ ⇒ $\frac{1}{5}$＜k＜0 ②若$k^{2}$－4＝0，則－( 5k－1 )＜0 ⇒ $\begin{cases}k^{2}-4 < 0 \\ 5k-1 > 0\end{cases}$ ⇒ k＝2 故選(C)(D)。
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T02
+      name: 恆正恆負與判別式範圍
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e2_s2_7
+  section: 2
+  number: 7
+  type: multiple
+  page: 1
+  stem: 若三次函數y＝f (x)＝$x^{3}$＋$6x^{2}$＋3x＋2＝a( x＋1 )$^{3}$＋b( x＋1 )$^{2}$＋c( x＋1 )＋d，其中a , b , c , d為實數，則下列哪些選項為真？
+  options:
+  - label: A
+    content: a＋b＋c＋d＝－3
+  - label: B
+    content: (－1 , d ) 為y＝f (x) 的對稱中心
+  - label: C
+    content: f (－0.99)＝3.94
+  - label: D
+    content: y＝f (2) 在x＝－1附近之近似直線為y＝－6x－2
+  - label: E
+    content: 當 | x | 值很大時，y＝f (x) 近似於y＝$x^{3}$
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) f (0)＝a＋b＋c＋d＝2 (2) $\begin{matrix}\begin{matrix}1 & + 6 & + 3 & + 2 \\ & - 1 & - 5 & + 2\end{matrix}\begin{matrix}-1 \\ \end{matrix} \\ \begin{matrix}1 & + 5 & - 2\end{matrix} \begin{matrix}+ 4\end{matrix} \begin{matrix}\cdots d\end{matrix} \\ \begin{matrix} & - 1 & - 4\end{matrix} \\ \begin{matrix}1 & + 4\end{matrix} \begin{matrix}-6\end{matrix} \cdots c \\ \begin{matrix} & - 1\end{matrix} \\ a\cdots 1 \begin{matrix}+ 3\end{matrix} \cdots b\end{matrix}$ ∴ f (x)＝( x＋1 )$^{3}$＋3( x＋1 )$^{2}$－6( x＋1 )＋4 ∵ b≠0 ∴ (－1 , d ) 不是對稱中心 (3) f (－0.99)＝(－0.99＋1 )$^{3}$＋3(－0.99＋1 )$^{2}$－6(－0.99＋1 )＋4 ＝0.000001＋0.0003－0.06＋4 ＝3.940301 (4) y＝f (x) 在x＝－1附近的近似直線為 y＝c( x＋1 )＋d ＝－6( x＋1 )＋4 ＝－6x－2 (5) 即y＝f (x) 的廣域特徵，故當 | x | 很大時，y＝f (x) 近似於y＝$x^{3}$。 故選(D)(E)。
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T05
+      name: 廣域與局部特徵綜合判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 1
+  stem: 滿足不等式 ( x－2 )$^{3}$( x－3 )$^{4}$( x＋3 )$^{5}$( $x^{2}$＋2x＋5 ) ≤ 0共有＿＿＿＿個整數。
+  answer:
+  - '7'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T04
+      name: 高次多項式不等式求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 1
+  stem: 某次高一期中考 ( 不是這次 ) 全班沒人及格，出題老師便以開根號乘以10再加15分來當作最後成績。<u>Bao</u>高興地說：「我一定是加分前後分數差距最多的人。」請問<u>Bao</u>的原始分數是＿＿＿＿分。
+  answer:
+  - '25'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設<u>Bao</u>的原始分數為x分，則加分前後的差距為$10\sqrt{x}$＋15－x＝－($\sqrt{x}$－5 )$^{2}$＋40 則當$\sqrt{x}$＝5 ⇔ x＝25 ( 分 ) 時，加分前後的差距最大為40 故<u>Bao</u>的原始分數為25分。
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T05
+      name: 二次函數建模與應用極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 1
+  stem: △ABC中，A(－1 , 2 ) , B(－1 , 5 ) , C( 2 , 3 )，已知三角形的垂心即為三高的交點，則△ABC之垂心坐標為＿＿＿＿。
+  answer:
+  - ($-\frac{1}{3}$ , 3 )
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\overleftrightarrow{AB}$：x＝－1，故通過C點的高的方程式為y＝3 $m_{AC}$＝$\frac{3-2}{2-(-1)}$＝$\frac{1}{3}$，所以通過B點的高之斜率為－3，方程式為y－5＝－3( x＋1 ) 垂心H $\begin{cases}y=3 \\ y-5=-3( x+1 )\end{cases}$ ⇒ ( x , y )＝( $\frac{-1}{3}$ , 3 )
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T19
+      name: 平行垂直與幾何中心應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 1
+  stem: 設f (x) 是一個四次多項式，已知f (x) 除以 ( x－1 )$^{3}$的餘式為2，f (x) 除以 ( x＋1 )的餘式－8，f (x) 除以 ( x－2 ) 的餘式為8，則f (0)＝＿＿＿＿。
+  answer:
+  - $\frac{-5}{6}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T04
+      name: 聯立除式與中國剩餘定理型餘式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 1
+  stem: 在平面上有兩點A( 6 , 5 ) , B( 3 , 8 ) 以及直線L：y＝mx－9m－2，已知L和$\overline{AB}$可相交的m範圍為a ≤ m ≤ b，則a×b＝＿＿＿＿。
+  answer:
+  - $\frac{35}{9}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T01
+      name: 直線斜率與方程式求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 1
+  stem: 若a為整數，且y＝－$5x^{2}$＋ax＋$\frac{2}{7}$的圖形與x軸的兩個交點都介於x＝－1與x＝2之間，則滿足這樣條件的a有 ＿＿＿＿個。
+  answer:
+  - '14'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T03
+      name: 根與解區間反推係數
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_113_台中_興大附中_數學_g10s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 1
+  stem: 設x為任意實數，f (x)＝$2024x^{2}$＋113x＋520，若p≠q且f (p)＝f (q)，求f (p＋q)＝＿＿＿＿。
+  answer:
+  - '520'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T08
+      name: 對稱軸與兩根式待定二次函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 1
+  stem: 若直線L：$\frac{x}{a}$＋$\frac{y}{b}$＝1通過 (－3 , 2 ) 且和兩坐標軸所圍的三角形面積為$\frac{3}{2}$。 (1) a×b可能為哪些可能值？( 2分 ) (2) 試求所有滿足敘述之直線L，並寫出該直線的x截距與y截距。( 8分 )
+  explanation: '(1) 直線L與x軸和y軸分別交於A( a , 0 ) 和B( 0 , b )，設O( 0 , 0 ) 由△OAB面積＝$\frac{1}{2}|ab| =\frac{3}{2}$ ⇒ | ab |＝3 ∴ ab＝3或－3
+
+    (2)將點 (－3 , 2 )代入$\frac{x}{a}+\frac{y}{b}$＝1 ⇒$\frac{-3}{a}+\frac{2}{b}$＝1 $\therefore b$＝$\frac{2}{1+\frac{3}{a}}$＝$\frac{2a}{a+3}$ 方法一：若ab＝3 ⇒ ab＝$\frac{2a^{2}}{a+3}$＝3 ⇒ $2a^{2}$＝3a＋9 ⇒ $2a^{2}$－3a－9＝0 ⇒ ( 2a＋3 ) ( a－3 )＝0 ∴ a＝$-\frac{3}{2}$或3 ① 當a＝$\frac{-3}{2}$時，b＝－2，即L的x截距為$\frac{-3}{2}$，y截距為－2 ② 當a＝3時，b＝1，即L的x截距為3，y截距為1
+
+    方法二：若ab＝－3 ⇒ ab＝$\frac{2a^{2}}{a+3}$＝－3 ⇒ $2a^{2}$＝－3a－9 ⇒ $2a^{2}$＋3a＋9＝0 判別式$3^{2}$－4×2×9＜0 ∴無解。'
+  tags:
+    unit:
+      code: MA-1-2-1
+      book: 數學1（必修）
+      chapter: 直線與圓
+      title: 直線方程式
+      std: true
+    textbook: 數學1（必修） 直線方程式
+    pattern:
+      key: MA-1-2-1:T09
+      name: 直線方程式與截距面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

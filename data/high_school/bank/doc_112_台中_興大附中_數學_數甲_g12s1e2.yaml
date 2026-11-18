@@ -1,0 +1,594 @@
+document:
+  id: doc_112_台中_興大附中_數學_數甲_g12s1e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 112學年度第1學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 112學年度第1學期第2次定期評量
+  source_file: 高三/數學/112/1-2/台中/興大附中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 20 分）
+    count: 5
+  - ord: 2
+    name: 二、多重選擇題（占 24 分）
+    count: 2
+  - ord: 3
+    name: 三、填充題（占 56 分）
+    count: 8
+questions:
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 討論函數 f（x）＝－$x^{4}$＋$4x^{3}$－$6x^{2}$＋8x 的凹向跟反曲點，下列選項何者正確？
+  options:
+  - label: A
+    content: x＝1 為反曲點，且 f（x）在 x＜1 時凹向下，在 x＞1 時凹向上
+  - label: B
+    content: x＝1 為反曲點，且 f（x）在 x＞1 時凹向下，在 x＜1 時凹向上
+  - label: C
+    content: x＝1 為反曲點，且 f（x）在所有實數皆凹向下
+  - label: D
+    content: x＝1 不為反曲點，且 f（x）在所有實數皆凹向下
+  - label: E
+    content: x＝1 不為反曲點，且 f（x）在所有實數皆凹向上
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝－$4x^{3}$＋$12x^{2}$－12x＋8
+
+    f''''（x）＝－$12x^{2}$＋24x－12
+
+    ＝－12（x－1）$^{2}$
+
+    $\Rightarrow$f''''(1)＝0，但當 x≠1 時，f''''（x）＜0
+
+    故 x＝1 不為反曲點，且皆凹向下
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 在 f（x）＝（$x^{2}$－5x＋3）$^{10}$ 的圖形上，以點 P（1，1）為切點的切線方程式為何？
+  options:
+  - label: A
+    content: 10x＋y＝11
+  - label: B
+    content: 10x－y＝9
+  - label: C
+    content: 30x－y＝29
+  - label: D
+    content: 30x＋y＝31
+  - label: E
+    content: y＝1
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝10（$x^{2}$－5x＋3）$^{9}$（2x－5）
+
+    f''(1)＝10（1－5＋3）$^{9}$（2－5）＝30
+
+    故切線為 30x－y＝29
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T05
+      name: 切線斜率與切線方程式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 設 k 為整數，且 f（x）＝$x^{3}$＋$kx^{2}$＋（k＋6）x＋3，若 f（x）恆為嚴格遞增函數，則滿足條件之 k 值共有幾個？
+  options:
+  - label: A
+    content: '7'
+  - label: B
+    content: '8'
+  - label: C
+    content: '9'
+  - label: D
+    content: '10'
+  - label: E
+    content: '11'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '若 f（x）恆為嚴格遞增
+
+    則 f''（x）＝$3x^{2}$＋2kx＋k＋6 ≥ 0
+
+    故（2k）$^{2}$－4×3×（k＋6）≤ 0
+
+    $\Rightarrow4k^{2}$－12k－72 ≤ 0
+
+    $\Rightarrowk^{2}$－3k－18 ≤ 0
+
+    $\Rightarrow$（k－6）（k＋3）≤ 0
+
+    $\Rightarrow$－3 ≤ k ≤ 6
+
+    ∵k 為整數
+
+    ∴共有 10 個
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T07
+      name: 二次導函數判別式定單調與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 已知 f（x）＝$4x^{3}$＋$x\int_{-2}^{0} f ( t )dt$＋5 為一多項式，試求 f（－1）之值為
+  options:
+  - label: A
+    content: '0'
+  - label: B
+    content: '3'
+  - label: C
+    content: '6'
+  - label: D
+    content: '9'
+  - label: E
+    content: '12'
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 a＝$\int_{-2}^{0} f ( t )dt$
+
+    則 f（x）＝$4x^{3}$＋ax＋5
+
+    $\int_{-2}^{0} f ( x )dx$＝$\int_{-2}^{0} ( 4x^{3}+ax + 5 )dx$
+
+    $\Rightarrow$a＝$\left. \left( x^{4}+\frac{a}{2}x^{2}+ 5x \right) \right| _{-2}^{0}$
+
+    ＝－（16＋2a－10）
+
+    $\Rightarrow$a＝－2
+
+    故 f（x）＝$4x^{3}$－2x＋5
+
+    f（－1）＝－4＋2＋5＝3
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T02
+      name: 多項式定積分與待定係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 1
+  stem: 若方程式 $x^{3}$＋$3x^{2}$－24x＋t＝0 有兩相異負根及一正根，則 t 值的範圍為
+  options:
+  - label: A
+    content: t＞28
+  - label: B
+    content: 0＜t＜28
+  - label: C
+    content: －28＜t＜80
+  - label: D
+    content: －80＜t＜0
+  - label: E
+    content: 0＜t＜80
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 f（x）＝$x^{3}$＋$3x^{2}$－24x＋t＝0
+
+    $\Rightarrow$f''（x）＝$3x^{2}$＋6x－24
+
+    ＝3（$x^{2}$＋2x－8）
+
+    ＝3（x＋4）（x－2）
+
+    若 y＝f（x）有三相異根，則 f（－4）．f(2)＜0
+
+    $\Rightarrow$（－64＋48＋96＋t）（8＋12－48＋t）＜0
+
+    $\Rightarrow$（t＋80）（t－28）＜0
+
+    $\Rightarrow$－80＜t＜28 …………………………………………①
+
+    又三相異根為兩負一正，故 f(0)＝t＜0 ……………②
+
+    由①、②得－80＜t＜0
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T03
+      name: 極值判別三次方程式實根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 右圖為 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d 的圖形，則下列哪些選項是正確的？
+  options:
+  - label: A
+    content: a＞0
+  - label: B
+    content: b＞0
+  - label: C
+    content: c＞0
+  - label: D
+    content: d＞0
+  - label: E
+    content: $b^{2}$－3ac＞0
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：∵當 x →∞，f（x）→－∞
+
+    ∴a＜0
+
+    (B)○：對稱中心之 x 坐標為$\frac{-b}{3a} > 0$
+
+    ∴b＞0
+
+    (C)○：f''（x）＝$3ax^{2}$＋2bx＋c
+
+    $\Rightarrow$f''(0)＝c＞0
+
+    (D)╳：f(0)＝d＜0
+
+    (E)○：∵f（x）有 2 條水平切線，即 f''（x）＝0 有兩相異解
+
+    ∴$b^{2}$－3ac＞0
+
+    故選(B)(C)(E)'
+  assets:
+  - key: s2_1_optB
+    file: doc_112_台中_興大附中_數學_數甲_g12s1e2/s2_1_optB.png
+    crop:
+      page: 2
+      rect:
+      - 473.2
+      - 125.15
+      - 564.25
+      - 217.7
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T09
+      name: 導函數圖形與係數正負幾何判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 試求下列哪些 x 值使得函數 f（x）＝$x^{4}$－$4x^{3}$＋$4x^{2}$＋5 在閉區間 [ －1，3 ] 上有極大值？
+  options:
+  - label: A
+    content: －1
+  - label: B
+    content: '0'
+  - label: C
+    content: '1'
+    asset:
+      key: s2_2_optC
+      file: doc_112_台中_興大附中_數學_數甲_g12s1e2/s2_2_optC.png
+      crop:
+        page: 2
+        rect:
+        - 446.4
+        - 364.95
+        - 564.3
+        - 469.85
+  - label: D
+    content: '2'
+  - label: E
+    content: '3'
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 若 f（x）＝$\frac{2x^{2}- 6x + 3}{x^{3}+ 1}$，求 f'(1)＝＿＿＿＿。
+  answer:
+  - $-\frac{1}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T02
+      name: 微分四則與連鎖律計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 定積分$\int_{-4}^{4} ( | x - 2 |+| x + 3 |+\sqrt{16 -x^{2}} )dx$之值為＿＿＿＿。
+  answer:
+  - 45＋8π
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T03
+      name: 分段與絕對值函數定積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 對於拋物線 y＝$x^{2}$＋2023 與直線 y＝0，x＝0，及 x＝2 所圍成的區域，若將區間 [ 0，2 ] 等分成 n 個區域，並以 $U_{n}$ 與 $L_{n}$ 分別表示所圍區域在 [ 0，2 ] 間 n 等分的上和與下和。若欲使 $U_{n}$－$L_{n}$＜0.1，則 n 之最小正整數值為＿＿＿＿。
+  answer:
+  - '81'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 兩函數 f（x）＝$x^{3}$－$2x^{2}$－x 與 g（x）＝－$2x^{2}$＋3x 之圖形所圍成的區域面積為＿＿＿＿。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T05
+      name: 定積分求曲線圍成面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 在半徑為 6 公分的半球形容器中裝滿水，再將此容器傾斜 30°，則流出的水體積共＿＿＿＿ 立方公分。
+  answer:
+  - 99π
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T07
+      name: 旋轉體與截面立體體積積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 設區域 R 為 f（x）＝$\sqrt{x+1}$與 g（x）＝2x－4 的圖形與 x 軸、y 軸在第一象限所圍成的區域。若將區域 R 繞 x 軸旋轉形成一個立體 S，試求立體 S 的體積為＿＿＿＿。
+  assets:
+  - key: s3_6_f1
+    kind: figure
+    file: doc_112_台中_興大附中_數學_數甲_g12s1e2/s3_6_f1.png
+    crop:
+      page: 3
+      rect:
+      - 460.9
+      - 68.25
+      - 564.3
+      - 152.15
+  answer:
+  - $\frac{37}{6}\pi$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T06
+      name: 定積分求旋轉體體積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 在半徑 15 公分的球內，作一個內接的直圓柱，則當直圓柱體積最大時的底面半徑為＿＿＿＿公分。
+  answer:
+  - $5\sqrt{6}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T05
+      name: 幾何圖形與函數極值應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數甲_g12s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 求極限$\frac{( 1^{2}+2^{2}+\ldots \ldots +n^{2} ) ( 1^{5}+2^{5}+\ldots \ldots +n^{5} )}{( 1^{3}+2^{3}+\ldots \ldots +n^{3} ) ( 1^{4}+2^{4}+\ldots \ldots +n^{4} )}$＝＿＿＿＿。
+  answer:
+  - $\frac{10}{9}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹漏印極限符號 lim
+  difficulty: 3

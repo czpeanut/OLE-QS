@@ -25,6 +25,11 @@ const COMMANDS: Record<string, string> = {
   "\\blacktriangleright": "▶", "\\dashrightarrow": "⇢", "\\nearrow": "↗", "\\swarrow": "↙", "\\searrow": "↘",
   "\\nwarrow": "↖", "\\newline": " ", "\\hline": "",
   "\\;": " ", "\\:": " ", "\\{": "{", "\\}": "}", "\\#": "#", "\\&": "&", "\\_": "_",
+  // 高中常用：大型運算子（上下限接在後面的 _ ^）、偏微分與集合
+  "\\sum": "∑", "\\prod": "∏", "\\int": "∫", "\\iint": "∬", "\\oint": "∮", "\\partial": "∂",
+  "\\nabla": "∇", "\\forall": "∀", "\\exists": "∃", "\\subseteq": "⊆", "\\supseteq": "⊇",
+  "\\setminus": "∖", "\\tau": "τ", "\\kappa": "κ", "\\xi": "ξ", "\\psi": "ψ",
+  "\\Gamma": "Γ", "\\Theta": "Θ", "\\Lambda": "Λ", "\\Psi": "Ψ",
 };
 // 排成正體的函數名
 const FUNCS = new Set(["\\sin", "\\cos", "\\tan", "\\cot", "\\sec", "\\csc", "\\log", "\\ln", "\\lim", "\\max", "\\min", "\\exp"]);
@@ -101,6 +106,12 @@ export function latexToHtml(tex: string): string {
         const [a, j] = group(tex, after);
         out.push(over(latexToHtml(a), cmd === "\\xrightarrow" ? "⟶" : cmd === "\\xleftarrow" ? "⟵" : "⇌")); i = j; continue;
       }
+      if (cmd === "\\binom" || cmd === "\\dbinom" || cmd === "\\tbinom") {       // 組合數 C(n, k)
+        const [a, j] = group(tex, after);
+        const [b, k] = group(tex, j);
+        out.push(`(<span class="frac"><span>${latexToHtml(a)}</span><span>${latexToHtml(b)}</span></span>)`); i = k; continue;
+      }
+      if (cmd === "\\mathbb") { const [b, j] = group(tex, after); out.push(({R: "ℝ", N: "ℕ", Z: "ℤ", Q: "ℚ", C: "ℂ"} as Record<string, string>)[b] ?? esc(b)); i = j; continue; }
       if (cmd === "\\underline") { const [b, j] = group(tex, after); out.push(`<span class="unl">${latexToHtml(b) || "\u2003"}</span>`); i = j; continue; }
       if (cmd === "\\hspace" || cmd === "\\vspace" || cmd === "\\phantom") { const [, j] = group(tex, after); out.push(cmd === "\\vspace" ? "" : "\u2003"); i = j; continue; }
       if (["\\mathbin", "\\mathrel", "\\operatorname", "\\rm"].includes(cmd)) {
@@ -108,7 +119,12 @@ export function latexToHtml(tex: string): string {
       }
       if (FUNCS.has(cmd)) { out.push(`<span class="up">${cmd.slice(1)}</span>`); i = after; continue; }
       if (IGNORE.has(cmd)) { i = after; continue; }
-      if (cmd === "\\sqrt") { const [b, j] = group(tex, after); out.push(`√<span class="sqrt">${latexToHtml(b)}</span>`); i = j; continue; }
+      if (cmd === "\\sqrt") {
+        let k = after, idx = "";
+        if (tex[k] === "[") { const e = tex.indexOf("]", k); if (e > k) { idx = tex.slice(k + 1, e); k = e + 1; } }   // 根指數 \sqrt[3]{x}
+        const [b, j] = group(tex, k);
+        out.push(`${idx ? `<sup>${latexToHtml(idx)}</sup>` : ""}√<span class="sqrt">${latexToHtml(b)}</span>`); i = j; continue;
+      }
       if (cmd === "\\overline") { const [b, j] = group(tex, after); out.push(`<span class="ovl">${latexToHtml(b)}</span>`); i = j; continue; }
       if (cmd === "\\overleftrightarrow" || cmd === "\\overrightarrow") {
         const [b, j] = group(tex, after);

@@ -1,0 +1,751 @@
+document:
+  id: doc_112_台中_興大附中_數學_g10s1e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 3
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 112學年度第1學期第3次定期評量 高一數學科試題
+  exam_name: 112學年度第1學期第3次定期評量
+  source_file: 高一/數學/112/1-3/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 12 分）
+    count: 2
+  - ord: 2
+    name: 二、多重選擇題（所有選項均答對者，得 8 分；答錯 1 個選項者，得 4.8 分；答錯 2 個選項者，得 1.6 分；答錯多於 2 個選項或所有選項均未作答者，該題以零分計算。共 16 分）
+    count: 2
+  - ord: 3
+    name: 第貳部分：填充題（占 72 分）
+    count: 12
+  - ord: 4
+    name: 第參部分：加分題（占 10 分）
+    count: 3
+questions:
+- id: doc_112_台中_興大附中_數學_g10s1e3_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設二次函數 f（x）＝$kx^{2}$＋8x＋（k＋6），不論 x 是任何實數，f（x）的值恆正，則實數 k 的範圍為
+  options:
+  - label: A
+    content: k＜－6
+  - label: B
+    content: k＞2
+  - label: C
+    content: －6＜k＜2
+  - label: D
+    content: k＜－6 或 k＞2
+  - label: E
+    content: 任意實數
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\begin{cases}判別式 = 8^{2}-4 \cdot k \cdot (k+6) < 0 \\ 開口:k > 0\end{cases}$⇒$\begin{cases}(k-2) (k+8)> 0 \\ k> 0\end{cases}$⇒$\begin{cases}k <-8 或 k > 2 \\ k > 0\end{cases}$ ∴k＞2
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T02
+      name: 恆正恆負與判別式範圍
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s1e3_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 當－2 ≤ x ≤ 1 時，二次函數 y＝－（x－m）$^{2}$＋$m^{2}$＋1 有最大值 4，則實數 m 的值為
+  options:
+  - label: A
+    content: $-\frac{7}{4}$
+  - label: B
+    content: $\sqrt{3}$或－$\sqrt{3}$
+  - label: C
+    content: 2 或$\sqrt{3}$或－$\sqrt{3}$
+  - label: D
+    content: 2 或－$\sqrt{3}$
+  - label: E
+    content: 2 或－$\sqrt{3}$或$-\frac{7}{4}$
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '①若－2 ≤ m ≤ 1，則最大值為 f（m）＝$m^{2}$＋1＝4 ⇒ m＝±$\sqrt{3}$ ∴m＝－$\sqrt{3}$
+
+    ②若 m＜－2，則最大值為 f（－2）＝－（－2－m）$^{2}$＋$m^{2}$＋1＝4 ⇒ m＝$-\frac{7}{4}$ ∴不合
+
+    ③若 m＞1，則最大值為 f(1)＝－（1－m）$^{2}$＋$m^{2}$＋1＝4 ⇒ m＝2 ∴m＝2
+
+    由①、②、③得 m＝2 或－$\sqrt{3}$
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T03
+      name: 閉區間上的二次函數極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s1e3_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 二次函數 y＝$ax^{2}$＋bx＋c 的部分圖形如右，且通過（－1，0），對稱軸為 x＝2，請選出正確的選項。
+  options:
+  - label: A
+    content: a＋c＝b
+  - label: B
+    content: 3a＋b＝0
+  - label: C
+    content: 25a＋5b＋c＞0
+  - label: D
+    content: 8a＋b＋c＞0
+  - label: E
+    content: 若圖形與 y 軸交點、頂點及（2，0）形成直角三角形，則 a＝－$\frac{1}{\sqrt{5}}$
+  assets:
+  - key: s2_1_f1
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e3/s2_1_f1.png
+    crop:
+      page: 1
+      rect:
+      - 465.4
+      - 480.25
+      - 564.3
+      - 576.9
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由對稱軸為 x＝2 可知，圖形與 x 軸的另一交點為（5，0）
+
+    f（x）＝$ax^{2}$＋bx＋c＝a（x＋1）（x－5），a＜0
+
+    (A) ○：f（－1）＝a－b＋c＝0 ⇒ a＋c＝b
+
+    (B) ╳：對稱軸 x＝$-\frac{b}{2a}$＝2 ⇒ 4a＋b＝0
+
+    (C) ╳：f(5)＝25a＋5b＋c＝0
+
+    (D) ○：由(A)、(B)，b＝－4a，c＝b－a＝－4a－a＝－5a ⇒ 8a＋b＋c＝－a＞0
+
+    (E) ○：f（x）＝$ax^{2}$＋bx＋c＝$ax^{2}$－4ax－5a，與 y 軸的交點為（0，－5a），頂點為（2，－9a）
+
+    由 y 軸交點處為直角
+
+    ⇒$\frac{(-9a)- (-5a)}{2-0}$×$\frac{0 -(-5a)}{2-0}$＝－1 ⇒（－4a）×5a＝－4 ⇒ a＝±$\frac{1}{\sqrt{5}}$（正不合）
+
+    故選(A)(D)(E)'
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T02
+      name: 拋物線係數與開口判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s1e3_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 已知三次函數的圖形可以區分為圖(一)、圖(二)、圖(三)、圖(四)、圖(五)、圖(六)這六類，請問下列哪些選項中的三次函數圖形為圖(六)這一類？
+  options:
+  - label: A
+    content: y＝$x^{3}$－x
+  - label: B
+    content: y＝－$x^{3}$＋$3x^{2}$－4x＋3
+  - label: C
+    content: y＝－$x^{3}$－$3x^{2}$＋2x－1
+  - label: D
+    content: y＝－$x^{3}$－$3x^{2}$－3x＋2
+  - label: E
+    content: y＝－（x－1）（$x^{2}$＋4x＋5）
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e3/s2_2_f1.png
+    crop:
+      page: 1
+      rect:
+      - 138.45
+      - 657.6
+      - 181.05
+      - 735.0
+  - key: s2_2_f2
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e3/s2_2_f2.png
+    crop:
+      page: 1
+      rect:
+      - 211.6
+      - 657.6
+      - 254.2
+      - 735.0
+  - key: s2_2_f3
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e3/s2_2_f3.png
+    crop:
+      page: 1
+      rect:
+      - 289.9
+      - 657.6
+      - 322.2
+      - 735.0
+  - key: s2_2_f4
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e3/s2_2_f4.png
+    crop:
+      page: 1
+      rect:
+      - 363.05
+      - 657.6
+      - 395.35
+      - 735.0
+  - key: s2_2_f5
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e3/s2_2_f5.png
+    crop:
+      page: 1
+      rect:
+      - 425.3
+      - 657.6
+      - 479.4
+      - 735.0
+  - key: s2_2_f6
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e3/s2_2_f6.png
+    crop:
+      page: 1
+      rect:
+      - 498.45
+      - 657.6
+      - 552.55
+      - 735.0
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '圖(六)為型如 y＝a（x－h）$^{3}$＋p（x－h）＋k，a＜0，p＞0 的三次函數
+
+    (A) ╳：圖(五)
+
+    (B) ╳：y＝－$x^{3}$＋$3x^{2}$－4x＋3＝－（x－1）$^{3}$－（x－1）＋1 為圖(二)
+
+    (C) ○：y＝－$x^{3}$－$3x^{2}$＋2x－1＝－（x＋1）$^{3}$＋5（x＋1）－5 為圖(六)
+
+    (D) ╳：y＝－$x^{3}$－$3x^{2}$－3x＋2＝－（x＋1）$^{3}$＋3 為圖(四)
+
+    (E) ○：y＝－（x－1）（$x^{2}$＋4x＋5）＝－$x^{3}$－$3x^{2}$－x＋5＝－（x＋1）$^{3}$＋2（x＋1）＋4 為圖(六)
+
+    故選(C)(E)'
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T01
+      name: 三次函數標準式圖形特徵
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 多項式 $x^{3}$＋$mx^{2}$＋5x＋2 能被 $x^{2}$＋nx＋1 整除，則數對（m，n）＝＿＿＿＿。
+  answer:
+  - （4，2）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x^{3}$＋$mx^{2}$＋5x＋2＝（$x^{2}$＋nx＋1）（x＋2）＝$x^{3}$＋（n＋2）$x^{2}$＋（2n＋1）x＋2 ∴n＝2，m＝4
+
+    故數對（m，n）＝（4，2）'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T08
+      name: 除法原理求商式餘式與整除
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 多項式（$x^{2}$＋2x－1）$^{6}$ 除以 x＋3 的餘式為＿＿＿＿。
+  answer:
+  - '64'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: f（x）＝（$x^{2}$＋2x－1）$^{6}$ 除以 x＋3 的餘式為 f（－3）＝（（－3）$^{2}$＋2（－3）－1）$^{6}$＝$2^{6}$＝64
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T03
+      name: 餘式定理與高次餘式線性組合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 若多項式 f（x）除以 x－1 的餘式為 1，除以 x－2 的餘式為 1，除以 x－3 的餘式為 3，則 f（x）除以（x－1）（x－2）（x－3）的餘式為＿＿＿＿。
+  answer:
+  - $x^{2}$－3x＋3
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T04
+      name: 聯立除式與中國剩餘定理型餘式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設 f（x）＝$2x^{4}$－$8x^{3}$＋$5x^{2}$＋2x＋6，則 f（x）除以（x－3）$^{3}$ 的餘式為＿＿＿＿。
+  answer:
+  - 41（x－3）$^{2}$＋32（x－3）＋3
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T06
+      name: 綜合除法連續展開與泰勒近似
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 承上題，f（3.001）＝＿＿＿＿。（四捨五入到小數點以下第三位）
+  answer:
+  - '3.032'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T06
+      name: 綜合除法連續展開與泰勒近似
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 滿足不等式 $x^{2}$（x＋5）（x－7）（$x^{2}$＋x－12）（$x^{2}$＋x＋1）≤ 0 的整數 x 有＿＿＿＿個。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T04
+      name: 高次多項式不等式求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 若二次函數 f（x）有最大值，且∣f(1)∣＝∣f(3)∣＝∣f(5)∣＝∣f(7)∣＝16，則 f（x）之最大值為＿＿＿＿。
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T08
+      name: 對稱軸與兩根式待定二次函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 多項式 $x^{113}$＋$x^{112}$ 除以 $x^{2}$－3x＋2 的餘式為＿＿＿＿。
+  answer:
+  - （3×$2^{112}$－2）x－3×$2^{112}$＋4
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T03
+      name: 餘式定理與高次餘式線性組合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 設 x、y 為實數，且 $x^{2}$＋$2y^{2}$＝1，若 3x＋$4y^{2}$ 的最大值為 M，最小值為 m，則數對 （M，m）＝＿＿＿＿。
+  answer:
+  - $\left( \frac{25}{8} , -3 \right)$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T03
+      name: 閉區間上的二次函數極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 已知三次函數 f（x）＝$ax^{3}$＋$bx^{2}$＋x＋d 圖形的對稱中心為$\left( \frac{1}{2} , 0 \right)$，且 $ax^{3}$＋$bx^{2}$＋x＋d＝0 的三根$\frac{1}{2}$、α、β 滿足∣α∣＋∣β∣＝2，則 a＝＿＿＿＿。
+  answer:
+  - －4
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T03
+      name: 三次函數對稱中心性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 2
+  stem: 若三次函數 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d 圖形的對稱中心為（0，3），且在 x＝2 附近的一次近似為 y＝3x－11，則 a＝＿＿＿＿。
+  answer:
+  - $\frac{7}{8}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T04
+      name: 三次函數某點的一次近似
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_g10s1e3_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 2
+  stem: 如下圖，在平面直角坐標系中，拋物線 y＝$ax^{2}$＋bx－4 與 x 軸交於點 A（－2，0）和點 B，與 y 軸交於點 C，拋物線的對稱軸為直線 x＝1。若兩動點 M、H 分別從點 A、B 以每秒 1 個單位長度的速度沿 x 軸同時出發相向而行，當點 M 到達原點時，點 H 立刻掉頭並以每秒$\frac{3}{2}$個單位長度的速度向點 B 方向移動，當點 M 到達拋物線的對稱軸時，兩點停止移動，經過點 M 的直線 l 與 x 軸垂直，交$\overline{AC}$或$\overline{BC}$於點 P。設點 M 的運動時間為 t 秒（0 ≤ t ≤ 3），點 M 的運動時間 t 與△APH 的面積 S 之函數關係式為 S（t）＝$\begin{cases}-t^{2}+6t , 0\leq t\leq 2 \\ g(t) , 2<t\leq 3\end{cases}$，則面積 S（t）的最大值為＿＿＿＿。
+  assets:
+  - key: s3_12_f1
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e3/s3_12_f1.png
+    crop:
+      page: 2
+      rect:
+      - 159.0
+      - 619.0
+      - 300.0
+      - 738.4
+  - key: s3_12_f2
+    kind: figure
+    file: doc_112_台中_興大附中_數學_g10s1e3/s3_12_f2.png
+    crop:
+      page: 2
+      rect:
+      - 318.1
+      - 619.0
+      - 459.1
+      - 738.4
+  answer:
+  - $\frac{25}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T05
+      name: 二次函數建模與應用極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_興大附中_數學_g10s1e3_s4_1
+  section: 4
+  number: 1
+  type: single
+  page: 3
+  stem: f（x）的次數為：（單選題，2 分）
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '2'
+  - label: C
+    content: '3'
+  - label: D
+    content: '0'
+  - label: E
+    content: 無次數
+  group_stem: f（x）為一多項式，已知對於任意實數 x，皆使 x．f（x）．f（1－x）＋$x^{3}$＋100 ≥ 0 恆成立。
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 f（x）＝$ax^{n}$＋$bx^{n－1}$＋…… ⇒ f（1－x）＝a（1－x）$^{n}$＋b（1－x）$^{n－1}$＋……
+
+    故 x．f（x）．f（1－x）的次數 1＋n＋n＝2n＋1 必為奇數
+
+    若 x．f（x）．f（1－x）＋$x^{3}$＋100 為 k 次函數，且 k 為奇數，
+
+    則 x．f（x）．f（1－x）＋$x^{3}$＋100 的值有正有負
+
+    因此次數 2n＋1＝3，使得 x．f（x）．f（1－x）＋$x^{3}$＋100 為二次函數
+
+    ∴f（x）＝ax＋b 為一次函數
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T02
+      name: 恆正恆負與判別式範圍
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_興大附中_數學_g10s1e3_s4_2
+  section: 4
+  number: 2
+  type: fill
+  page: 3
+  stem: f(2)的最大可能值為＿＿＿＿。（填充題，4 分）
+  group_stem: f（x）為一多項式，已知對於任意實數 x，皆使 x．f（x）．f（1－x）＋$x^{3}$＋100 ≥ 0 恆成立。
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '、3. x．f（x）．f（1－x）＋$x^{3}$＋100＝x（ax＋b）（a（1－x）＋b）＋$x^{3}$＋100
+
+    ＝（－$a^{2}x^{3}$＋$a^{2}x^{2}$＋b（a＋b）x）＋$x^{3}$＋100
+
+    ＝（1－$a^{2}$）$x^{3}$＋$a^{2}x^{2}$＋b（a＋b）x＋100 為二次函數
+
+    ⇒ 1－$a^{2}$＝0 ⇒ a＝± 1
+
+    ① a＝1 時，f（x）＝x＋b，
+
+    則 x．f（x）．f（1－x）＋$x^{3}$＋100＝$x^{2}$＋b（b＋1）x＋100 ≥ 0 恆成立
+
+    ⇒判別式＝（b（b＋1））$^{2}$－4．1．100 ≤ 0 ⇒－20 ≤ b（b＋1）≤ 20
+
+    分段討論
+
+    ❶－20 ≤ $b^{2}$＋b ⇒ $b^{2}$＋b＋20 ≥ 0，判別式＝1－4×1×20＜0 ∴恆正
+
+    ❷$b^{2}$＋b ≤ 20 ⇒ $b^{2}$＋b－20 ≤ 0 ⇒（b－4）（b＋5）≤ 0 ⇒－5 ≤ b ≤ 4
+
+    由❶、❷得－5 ≤ b ≤ 4
+
+    ∴f(2)＝2＋b 的最大值為 6，最小值為－3
+
+    ② a＝－1 時，f（x）＝－x＋b，
+
+    則 x．f（x）．f（1－x）＋$x^{3}$＋100＝$x^{2}$＋b（b－1）x＋100 ≥ 0 恆成立
+
+    ⇒判別式（b（b－1））$^{2}$－4．1．100 ≤ 0 ⇒－20 ≤ b（b－1）≤ 20
+
+    分段討論
+
+    ❶－20 ≤ $b^{2}$－b ⇒ $b^{2}$－b＋20 ≥ 0，判別式＝（－1）$^{2}$－4×1×20＜0 ∴恆正
+
+    ❷$b^{2}$－b ≤ 20 ⇒ $b^{2}$－b－20 ≤ 0 ⇒（b－5）（b＋4）≤ 0 ⇒－4 ≤ b ≤ 5
+
+    由❶、❷得－4 ≤ b ≤ 5
+
+    ∴f(2)＝－2＋b 的最大值為 3，最小值為－6
+
+    故 f(2)的最大可能值為 6，最小可能值為－6'
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T02
+      name: 恆正恆負與判別式範圍
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 5
+- id: doc_112_台中_興大附中_數學_g10s1e3_s4_3
+  section: 4
+  number: 3
+  type: fill
+  page: 3
+  stem: 'f(2)的最小可能值為＿＿＿＿。（填充題，4 分）
+
+    $■註$：形如 f（g（x））稱為合成函數，例如 f（x）＝$x^{2}$＋x＋1，g（x）＝2x－1，
+
+    則 f（g（x））＝（g（x））$^{2}$＋（g（x））＋1＝（2x－1）$^{2}$＋（2x－1）＋1
+
+    g（f（x））＝2（f（x））－1＝2（$x^{2}$＋x＋1）－1
+
+    f（f（x））＝（f（x））$^{2}$＋（f（x））＋1＝（$x^{2}$＋x＋1）$^{2}$＋（$x^{2}$＋x＋1）＋1
+
+    g（g（x））＝2（g（x））－1＝2（2x－1）－1'
+  group_stem: f（x）為一多項式，已知對於任意實數 x，皆使 x．f（x）．f（1－x）＋$x^{3}$＋100 ≥ 0 恆成立。
+  answer:
+  - －6
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T02
+      name: 恆正恆負與判別式範圍
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 5

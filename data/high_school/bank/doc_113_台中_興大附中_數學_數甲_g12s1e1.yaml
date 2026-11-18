@@ -1,0 +1,706 @@
+document:
+  id: doc_113_台中_興大附中_數學_數甲_g12s1e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 113學年度第1學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  source_file: 高三/數學/113/1-1/台中/興大附中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，占 12 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 5 分，答錯 1 個選項得 3 分，答錯 2 個選項得 1 分，答錯多於 2 個選項或未作答者得 0 分，占 10 分）
+    count: 2
+  - ord: 3
+    name: 第貳部分：填充題（每題完全答對給 6 分，占 72 分）
+    count: 12
+questions:
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 試求$\lim_{x \rightarrow 5} \frac{( x - 6 )^{50}- 1}{x - 5}$＝？
+  options:
+  - label: A
+    content: '100'
+  - label: B
+    content: －100
+  - label: C
+    content: '50'
+  - label: D
+    content: －50
+  - label: E
+    content: '1'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow 5} \frac{( x - 6 )^{50}- 1}{x - 5}$
+
+    ＝$\lim_{x \rightarrow 5} \frac{( x - 5 - 1 )^{50}- 1}{x - 5}$
+
+    ＝$\lim_{x \rightarrow 5} \frac{C_{0}^{50} ( x - 5 )^{50}-C_{1}^{50} ( x - 5 )^{49}+\ldots \ldots -C_{49}^{50} ( x-5 )^{1}+C_{50}^{50} \cdot 1 - 1}{x - 5}$
+
+    ＝$\lim_{x \rightarrow 5} ( C_{0}^{50} ( x - 5 )^{49}-C_{1}^{50} ( x - 5 )^{48}+\ldots \ldots +C_{48}^{50} ( x-5 )^{1}-C_{49}^{50} )$
+
+    ＝$-C_{49}^{50}$＝－50
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T10
+      name: 根點因式約分極限求導數
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 試求$\lim_{x \rightarrow \infty} ( \sqrt{4x^{2}+ 12x} - 2x )$＝？
+  options:
+  - label: A
+    content: '3'
+  - label: B
+    content: '2'
+  - label: C
+    content: '1'
+  - label: D
+    content: '0'
+  - label: E
+    content: 不存在
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow \infty} ( \sqrt{4x^{2}+ 12x} - 2x )$＝$\lim_{x \rightarrow \infty} ( \sqrt{4x^{2}+ 12x} - 2x )\times \frac{\sqrt{4x^{2}+ 12x} + 2x}{\sqrt{4x^{2}+ 12x} + 2x}$
+
+    ＝$\lim_{x \rightarrow \infty} \frac{4x^{2}+ 12x - 4x^{2}}{\sqrt{4x^{2}+ 12x} + 2x}$＝$\lim_{x \rightarrow \infty} \frac{12x}{\sqrt{4x^{2}+ 12x} + 2x}$
+
+    ＝$\frac{12}{2 + 2}$＝3
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T10
+      name: 無理式極限有理化計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 有一無窮等比級數和之收斂值為正數 S，且第二項為 2，則 S 的最小值為何？
+  options:
+  - label: A
+    content: $\sqrt{17}$
+  - label: B
+    content: $\frac{1 + \sqrt{17}}{2}$
+  - label: C
+    content: '8'
+  - label: D
+    content: '6'
+  - label: E
+    content: '4'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設首項 $a_{1}$，公比 r，－1＜r＜1，r≠0
+
+    則$\begin{cases}a_{2}=a_{1}r = 2 \\ S =\frac{a_{1}}{1 -r}\end{cases}$
+
+    將 $a_{1}$＝$\frac{2}{r}$代入得 S＝$\frac{\frac{2}{r}}{1 -r}$＝$\frac{2}{-r^{2}+r}$＝$\frac{2}{- \left( r^{2}-r +\frac{1}{4} \right) +\frac{1}{4}}$＝$\frac{2}{- \left( r -\frac{1}{2} \right) ^{2}+\frac{1}{4}}$
+
+    當 r＝$\frac{1}{2}$時，S＝$\frac{2}{\frac{1}{4}}$＝8 為最小正數值
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 請問下列哪些選項正確？
+  options:
+  - label: A
+    content: 無窮數列$\left\langle \frac{( -1 )^{n} \cdot 100}{n} \right\rangle$為收斂數列
+  - label: B
+    content: 若無窮數列〈$a_{n}$〉及〈$b_{n}$〉均為收斂數列，且對於任意正整數 n 皆滿足 $a_{n}$＜$b_{n}$，則$\lim_{n \rightarrow \infty} a_{n} < \lim_{n \rightarrow \infty} b_{n}$
+  - label: C
+    content: 若無窮數列〈$a_{n}$〉及〈$b_{n}$〉均為發散數列，則數列〈$a_{n}$×$b_{n}$〉必為發散
+  - label: D
+    content: 若無窮數列〈$a_{n}$〉收斂但〈$b_{n}$〉發散，則數列〈$a_{n}$－$b_{n}$〉必為發散
+  - label: E
+    content: 對於任意正整數 n，如果 0 ≤ $a_{n}$ ≤ $b_{n}$，且$\sum_{n =1}^{\infty} b_{n}$發散，則$\sum_{n =1}^{\infty} a_{n}$也發散
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：當 n →∞，$\frac{( -1 )^{n} \cdot 100}{n}$→ 0
+
+    故$\left\langle \frac{( -1 )^{n} \cdot 100}{n} \right\rangle$為收斂數列
+
+    (B)╳：不一定，反例：$a_{n}$＝$1 -\frac{1}{n}$，$b_{n}$＝$1 -\frac{1}{2n}$，
+
+    則對於任意正整數 n 皆滿足 $a_{n}$＜$b_{n}$
+
+    但$\lim_{n \rightarrow \infty} a_{n}$＝$\lim_{n \rightarrow \infty} b_{n}$＝1
+
+    (C)╳：不一定，反例：$a_{n}$＝（－1）$^{n}$，$b_{n}$＝（－1）$^{n}$，
+
+    則〈$a_{n}$〉，〈$b_{n}$〉皆為發散數列
+
+    但對於任意正整數 n 皆滿足 $a_{n}$×$b_{n}$＝1
+
+    故數列〈$a_{n}$．$b_{n}$〉為收斂
+
+    (D)○：若〈$a_{n}$－$b_{n}$〉收斂
+
+    則〈$b_{n}$〉＝〈$a_{n}$－（$a_{n}$－$b_{n}$）〉亦收斂，矛盾
+
+    故數列〈$a_{n}$－$b_{n}$〉必為發散
+
+    (E)╳：不一定，反例：對於任意正整數 n 皆滿足 $a_{n}$＝$\frac{1}{2^{n}}$，$b_{n}$＝n
+
+    則 0 ≤ $a_{n}$ ≤ $b_{n}$ 且$\sum_{n =1}^{\infty} b_{n}$發散
+
+    但$\sum_{n =1}^{\infty} a_{n}$＝$\frac{\frac{1}{2}}{1 -\frac{1}{2}}$＝1 收斂
+
+    故選(A)(D)'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T01
+      name: 數列極限運算與收斂判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 請問下列哪些極限存在？（其中 [ x ] 表示高斯函數）
+  options:
+  - label: A
+    content: $\lim_{x \rightarrow 0} x \sin \frac{1}{x}$
+  - label: B
+    content: $\lim_{x \rightarrow 0} x^{2} \cos \frac{1}{x^{2}}$
+  - label: C
+    content: $\lim_{n \rightarrow 0} ( 1 +n )^{\frac{1}{n}}$
+  - label: D
+    content: $\lim_{x \rightarrow 3} ( x - [ x ] )$
+  - label: E
+    content: $\lim_{x \rightarrow 3} [ x - [ x ] ]$
+  answer:
+  - A
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵$-| x |\leq x \sin \frac{1}{x}\leq | x |$，且$\lim_{x \rightarrow 0} ( -| x | )$＝$\lim_{x \rightarrow 0} | x |$＝0
+
+    ∴由夾擠定理可知$\lim_{x \rightarrow 0} x \sin \frac{1}{x}$＝0
+
+    (B)○：∵$-x^{2}\leq x^{2}\cos \frac{1}{x^{2}}\leq x^{2}$，且$\lim_{x \rightarrow 0} ( -x^{2} )$＝$\lim_{x \rightarrow 0} x^{2}$＝0
+
+    ∴由夾擠定理可知$\lim_{x \rightarrow 0} x^{2}\cos \frac{1}{x^{2}}$＝0
+
+    (C)○：令 t＝$\frac{1}{n}$，則
+
+    $\lim_{n \rightarrow 0} ( 1 +n )^{\frac{1}{n}}$＝$\lim_{t \rightarrow \infty} \left( 1 +\frac{1}{t} \right) ^{t}$＝e，極限存在
+
+    (D)╳：∵$\lim_{x \rightarrow 3^{+}} ( x - [ x ] )$＝0，$\lim_{x \rightarrow 3^{-}} ( x - [ x ] )$＝1
+
+    ∴$\lim_{x \rightarrow 3} ( x - [ x ] )$不存在
+
+    (E)○：∵$\lim_{x \rightarrow 3^{+}} [ x - [ x ] ]$＝0，$\lim_{x \rightarrow 3^{-}} [ x - [ x ] ]$＝0
+
+    ∴$\lim_{x \rightarrow 3} [ x - [ x ] ]$＝0
+
+    故選(A)(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T02
+      name: 函數極限與自然常數定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 設函數 f（x）＝$\begin{cases}x^{2}+ 3x +a , x\geq 1 \\ bx + 1 , x < 1\end{cases}$在 x＝1 處連續且可微分，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （2，5）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由 f（x）在 x＝1 連續可知
+
+    1＋3＋a＝b＋1$\Rightarrow$a＝b－3
+
+    由 f（x）在 x＝1 可微分可知
+
+    $\lim_{x \rightarrow 1^{+}} \frac{f ( x )-f ( 1 )}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{f ( x )-f ( 1 )}{x - 1}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{+}} \frac{( x^{2}+ 3x +a )-( a + 4 )}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{( bx + 1 )-( a + 4 )}{x - 1}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{+}} \frac{x^{2}+ 3x - 4}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{bx -a - 3}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{bx - b}{x - 1}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{+}} \frac{( x - 1 ) ( x + 4 )}{x - 1}$＝$\lim_{x \rightarrow 1^{-}} \frac{b ( x - 1 )}{x - 1}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{+}} ( x + 4 )$＝$\lim_{x \rightarrow 1^{-}} b$
+
+    $\Rightarrow$5＝b，代回得 a＝2
+
+    故數對（a，b）＝（2，5）'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 求極限值$\lim_{x \rightarrow 1} \frac{| -2x^{2}+ 7x - 3 |- 2}{x - 1}$＝＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵－$2x^{2}$＋7x－3 在 x＝1 附近皆正值
+
+    ∴$\lim_{x \rightarrow 1} \frac{| -2x^{2}+ 7x - 3 |- 2}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1} \frac{-2x^{2}+ 7x - 3 - 2}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1} \frac{-2x^{2}+ 7x - 5}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1} \frac{( -2x + 5 ) ( x - 1 )}{x - 1}$
+
+    ＝$\lim_{x \rightarrow 1} ( -2x + 5 )$＝3'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T11
+      name: 絕對值與分段去符號求極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 設 f（x）＝－$x^{3}$＋$ax^{2}$＋bx－15，若以（2，19）為切點的切線斜率最大，則 a－b＝＿＿＿＿。
+  answer:
+  - －3
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵y＝f（x）過（2，19）
+
+    ∴－8＋4a＋2b－15＝19
+
+    $\Rightarrow$2a＋b＝21
+
+    又 f''（x）＝－$3x^{2}$＋2ax＋b，在 x＝$-\frac{2a}{2 ( -3 )}$＝$\frac{a}{3}$有最大值
+
+    即$\frac{a}{3}$＝2$\Rightarrow$a＝6
+
+    代回得 b＝9
+
+    故 a－b＝6－9＝－3'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T05
+      name: 切線斜率與切線方程式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知函數 f（x）＝$\left( \frac{3x - 5}{x^{2}- 1} \right) ^{4}$，求 f'(2)＝＿＿＿＿。
+  answer:
+  - $\frac{20}{243}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$4 \left( \frac{3x - 5}{x^{2}- 1} \right) ^{3} \cdot \left( \frac{3x - 5}{x^{2}- 1} \right) ^{''}$
+
+    ＝$4 \left( \frac{3x - 5}{x^{2}- 1} \right) ^{3} \cdot \frac{3 \cdot ( x^{2}- 1 )-( 3x - 5 ) \cdot 2x}{( x^{2}- 1 )^{2}}$
+
+    f''(2)＝$4 \cdot \left( \frac{1}{3} \right) ^{3} \cdot \frac{3 \cdot 3 - 1 \cdot 4}{9}$
+
+    ＝$4 \cdot \frac{1}{27} \cdot \frac{5}{9}$＝$\frac{20}{243}$'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T02
+      name: 微分四則與連鎖律計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知 P（2，1）為二次函數 f（x）＝$x^{2}$－3x＋4 的圖形外一點，已知 L 為通過 P 點且與 y＝f（x）相切的切線，若 L 的斜率為正，則 L 的方程式為 y＝＿＿＿＿。
+  answer:
+  - 3x－5
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設切點為（a，$a^{2}$－3a＋4）
+
+    ∵f''（x）＝2x－3
+
+    ∴2a－3＝$\frac{a^{2}- 3a + 4 - 1}{a - 2}$＝$\frac{a^{2}- 3a + 3}{a - 2}$
+
+    $\Rightarrow2a^{2}$－7a＋6＝$a^{2}$－3a＋3
+
+    $\Rightarrowa^{2}$－4a＋3＝0
+
+    $\Rightarrow$（a－1）（a－3）＝0
+
+    $\Rightarrow$a＝1 或 3
+
+    當 a＝1 時，斜率為 2×1－3＝－1＜0
+
+    當 a＝3 時，斜率為 2×3－3＝3
+
+    故 L 的方程式為 y＝3（x－2）＋1
+
+    $\Rightarrow$y＝3x－5'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T05
+      name: 切線斜率與切線方程式
+    labeled_by: agent
+    label_confidence: high
+    label_note: explanation 含亂碼字元
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 求極限值$\lim_{n \rightarrow \infty} \frac{( n + 2n + 3n +\ldots \ldots +n^{2} )}{( 1^{2}+ 2^{2}+ 3^{2}+\ldots \ldots +n^{2} )}$＝＿＿＿＿。
+  answer:
+  - $\frac{3}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \frac{n + 2n + 3n +\ldots \ldots +n^{2}}{1^{2}+ 2^{2}+ 3^{2}+\ldots \ldots +n^{2}}$
+
+    ＝$\lim_{n \rightarrow \infty} \frac{n \cdot \frac{n ( n + 1 )}{2}}{\frac{n ( n + 1 ) ( 2n + 1 )}{6}}$
+
+    ＝$\lim_{n \rightarrow \infty} \frac{\frac{1}{2} \cdot n^{3}+\frac{1}{2} \cdot n^{2}}{\frac{1}{3} \cdot n^{3}+\frac{1}{2} \cdot n^{2}+\frac{1}{6}n}$＝$\frac{\frac{1}{2}}{\frac{1}{3}}$＝$\frac{3}{2}$'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T02
+      name: 多項式與指數型數列極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 求極限值$\lim_{x \rightarrow 1} \frac{x\sqrt{x} -x}{x - 1}$＝＿＿＿＿。
+  answer:
+  - $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{x \rightarrow 1} \frac{x ( \sqrt{x} - 1 )}{x - 1}$＝$\lim_{x \rightarrow 1} \frac{x ( \sqrt{x} - 1 )}{x - 1}\times \frac{\sqrt{x} + 1}{\sqrt{x} + 1}$
+
+    ＝$\lim_{x \rightarrow 1} \frac{x ( x - 1 )}{( x - 1 ) ( \sqrt{x} + 1 )}$
+
+    ＝$\frac{1}{2}$'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T10
+      name: 無理式極限有理化計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 若 k 為正整數，$\lim_{n \rightarrow \infty} \frac{( -2 )^{n}+ 7 \cdot 3^{n}+ 5 \cdot 4^{n}}{3^{n +1}+ 4^{n +k}}$＝$\frac{5}{256}$，則 k＝＿＿＿＿。
+  answer:
+  - '4'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{n \rightarrow \infty} \frac{( -2 )^{n}+ 7 \cdot 3^{n}+ 5 \cdot 4^{n}}{3^{n +1}+ 4^{n +k}}$＝$\lim_{n \rightarrow \infty} \frac{\left( -\frac{2}{4} \right) ^{n}+ 7 \cdot \left( \frac{3}{4} \right) ^{n}+ 5}{3 \cdot \left( \frac{3}{4} \right) ^{n}+ 4^{k}}$
+
+    ＝$\frac{5}{4^{k}}$＝$\frac{5}{256}$
+
+    $\Rightarrow$k＝4'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T02
+      name: 多項式與指數型數列極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 求$\sum_{n =1}^{\infty} \frac{5^{n +1}- 6^{n -1}}{7^{n}}$＝＿＿＿＿。
+  answer:
+  - $\frac{23}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\sum_{n =1}^{\infty} \frac{5^{n +1}- 6^{n -1}}{7^{n}}$＝$5\times \sum_{n =1}^{\infty} \left( \frac{5}{7} \right) ^{n}-\frac{1}{6}\times \sum_{n =1}^{\infty} \left( \frac{6}{7} \right) ^{n}$
+
+    ＝$5\times \frac{\frac{5}{7}}{1 -\frac{5}{7}}-\frac{1}{6}\times \frac{\frac{6}{7}}{1 -\frac{6}{7}}$
+
+    ＝$5\times \frac{5}{2}-\frac{1}{6}\times 6$
+
+    ＝$\frac{23}{2}$'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 已知 f'（a）＝4，則$\lim_{h \rightarrow 0} \frac{f ( a + 3h )-f ( a -h )}{h}$＝＿＿＿＿。
+  answer:
+  - '16'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{h \rightarrow 0} \frac{f ( a + 3h )-f ( a -h )}{h}$
+
+    ＝$\lim_{h \rightarrow 0} \frac{f ( a + 3h )-f ( a )}{h}$＋$\lim_{h \rightarrow 0} \frac{f ( a )-f ( a -h )}{h}$
+
+    ＝$3\lim_{h \rightarrow 0} \frac{f ( a + 3h )-f ( a )}{3h}$＋$\lim_{h \rightarrow 0} \frac{f ( a )-f ( a -h )}{h}$
+
+    ＝3f''（a）＋f''（a）＝16'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T09
+      name: 導數極限定義式轉換求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 2
+  stem: 設 f（x）為一多項式，且$\lim_{x \rightarrow \infty} \frac{f ( x )- 3x^{3}}{x^{2}+x - 6}$＝1，$\lim_{x \rightarrow 2} \frac{f ( x )}{x^{2}+x - 6}$＝6，求$\lim_{x \rightarrow 1} f ( x )$＝＿＿＿＿。
+  answer:
+  - －14
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由$\lim_{x \rightarrow \infty} \frac{f ( x )- 3x^{3}}{x^{2}+x - 6}$＝1 可知 f（x）＝$3x^{3}$＋$x^{2}$＋ax＋b
+
+    又$\lim_{x \rightarrow 2} \frac{f ( x )}{x^{2}+x - 6}$＝$\lim_{x \rightarrow 2} \frac{f ( x )}{( x - 2 ) ( x + 3 )}$極限存在
+
+    可知 f(2)＝0
+
+    $\Rightarrow$24＋4＋2a＋b＝0
+
+    $\Rightarrow$2a＋b＝－28
+
+    b＝－28－2a 代入得 f（x）＝$3x^{3}$＋$x^{2}$＋ax－2a－28＝（x－2）（$3x^{2}$＋7x＋（a＋14））
+
+    6＝$\lim_{x \rightarrow 2} \frac{f ( x )}{( x - 2 ) ( x + 3 )}$
+
+    ＝$\lim_{x \rightarrow 2} \frac{( x - 2 ) ( 3x^{2}+ 7x +( a + 14 ) )}{( x - 2 ) ( x + 3 )}$＝$\lim_{x \rightarrow 2} \frac{3x^{2}+ 7x +a + 14}{x + 3}$＝$\frac{12 + 14 +a + 14}{5}$＝$\frac{a + 40}{5}$
+
+    $\Rightarrow$a＋40＝30$\Rightarrow$a＝－10，代回得 b＝－8
+
+    故$\lim_{x \rightarrow 1} f ( x )$＝$\lim_{x \rightarrow 1} ( 3x^{3}+x^{2}- 10x - 8 )$＝3＋1－10－8＝－14'
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T09
+      name: 雙重極限反推多項式係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_數甲_g12s1e1_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 2
+  stem: 設有一正三角形△ABC，依序將三邊以 3：1 分段，再連接各分點得正三角形△$A_{1}B_{1}C_{1}$；再將新做出的△$A_{1}B_{1}C_{1}$ 三邊按順序以 3：1 分段，連接各分點得正三角形△$A_{2}B_{2}C_{2}$；……，依此規則做出無窮多個正三角形。若所有正三角形△ABC，△$A_{1}B_{1}C_{1}$，△$A_{2}B_{2}C_{2}$，……的面積和為 $100\sqrt{3}$，則正三角形△ABC 之邊長為＿＿＿＿。
+  answer:
+  - '15'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設$\overline{AB}$＝$a_{1}$，則$\overline{A_{1}B}$＝$\frac{1}{4}a_{1}$，$\overline{BB_{1}}$＝$\frac{3}{4}a_{1}$
+
+    故$\overline{A_{1}B_{1}}^{2}$＝$\left( \frac{1}{4}a_{1} \right) ^{2}+ \left( \frac{3}{4}a_{1} \right) ^{2}- 2\times \frac{1}{4}a_{1}\times \frac{3}{4}a_{1}\times \cos 60^{^{\circ}}$
+
+    ＝$\frac{7}{16}a_{1}^{2}$
+
+    $\Rightarrow$△ABC 面積為$\frac{\sqrt{3}}{4}a_{1}^{2}$，△$A_{1}B_{1}C_{1}$ 面積為$\frac{\sqrt{3}}{4}\times \frac{7}{16}\times a_{1}^{2}$，……
+
+    可知△$A_{1}B_{1}C_{1}$ 面積＝$\frac{7}{16}\triangle ABC 面積$
+
+    故總和為$\frac{\frac{\sqrt{3}}{4}a_{1}^{2}}{1 -\frac{7}{16}}$＝$100\sqrt{3}$
+
+    $\Rightarrowa_{1}$＝15'
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -1,0 +1,488 @@
+document:
+  id: doc_109_台北_松山_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 2
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 109學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 109學年度第2學期第2次定期評量
+  source_file: 高二/數學/109/2-2/台北/松山_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、 多選題：
+    count: 5
+  - ord: 2
+    name: 二、 填充題：
+    count: 8
+  - ord: 3
+    name: 三、 混合題：
+    count: 2
+questions:
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 丟一枚均勻的硬幣6次，試問下列選項哪些是正確的？
+  options:
+  - label: A
+    content: 一定會出現3次正面3次反面
+  - label: B
+    content: 出現3次正面的機率是$\frac{1}{2}$
+  - label: C
+    content: 若前2次都丟出正面，則後面4次得到反面的次數會多於正面次數
+  - label: D
+    content: 丟出1次正面的機率等於丟出5次正面的機率
+  - label: E
+    content: 丟出「正反正反正反」的機率等於丟出「正正反正反反」的機率
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ×：不一定 (B) ×：P ( 3次正面 )＝$\frac{C_{3}^{6}}{2^{6}}$＝$\frac{20}{64}$＝$\frac{5}{16}$ (C) ×：前2次的投擲情形不影響後面4次的投擲 (D)○：P ( 1次正面 )＝$\frac{C_{1}^{6}}{2^{6}}$，P ( 5次正面 )＝$\frac{C_{5}^{6}}{2^{6}}$，因為$C_{1}^{6}$＝$C_{5}^{6}$，所以兩者機率相等 (E)○：P ( 正反正反正反 )＝P ( 正正反正反反 )＝$\frac{1}{2^{6}}$＝$\frac{1}{64}$ 故選(D)(E)
+  tags:
+    unit:
+      code: MA-2-2-4
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 古典機率
+      std: true
+    textbook: 數學2（必修） 古典機率
+    pattern:
+      key: MA-2-2-4:T07
+      name: 獨立重複試驗與點數條件枚舉
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 若A、B為獨立事件，且P
+  options:
+  - label: A
+    content: ＝$\frac{1}{3}$，P ( A∩B )＝$\frac{2}{15}$，則下列選項哪些正確？ (A) P
+  - label: B
+    content: ＝$\frac{2}{5}$ (B) P ( A | B )＝$\frac{2}{3}$
+  - label: C
+    content: P ( B | A' )＝$\frac{2}{5}$
+  - label: D
+    content: P ( A | A∩B )＝$\frac{1}{3}$
+  - label: E
+    content: P ( A'∩B' )＝$\frac{2}{5}$
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)○：P ( A∩B )＝P (A) P (B) ⇒ $\frac{1}{3}$P (B)＝$\frac{2}{15}$ ⇒ P (B)＝$\frac{2}{5}$ (B) ×：P ( A | B )＝P (A)＝$\frac{1}{3}$ (C)○：P ( B | A' )＝P (B)＝$\frac{2}{5}$ (D) ×：P ( A | A∩B )＝$\frac{P(A\cap B)}{P(A\cap B)}$＝1 (E)○：P ( A'∩B' )＝P ( A' ) P ( B' )＝( 1－P (A) ) ( 1－P (B) )＝$\frac{2}{3}$×$\frac{3}{5}$＝$\frac{2}{5}$ 故選(A)(C)(E)
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹選項文字斷裂（P(A)、P(B)括號脫落）
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 擲一顆公正骰子兩次，則下列選項哪些是正確的？
+  options:
+  - label: A
+    content: 第一次出現奇數點的機率是$\frac{1}{2}$
+  - label: B
+    content: 點數和是9的機率是$\frac{1}{9}$
+  - label: C
+    content: 若已知點數和是9，則第一次出現奇數點的機率是$\frac{2}{9}$
+  - label: D
+    content: 若已知第一次出現奇數點，則點數和是9的機率是$\frac{1}{9}$
+  - label: E
+    content: 「第一次出現奇數點」與「點數和是9」兩事件為獨立事件
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)○：P ( 第一次出現奇數點 )＝$\frac{3}{6}$＝$\frac{1}{2}$ (B)○：因為9＝3＋6＝4＋5，所以P ( 點數和為9 )＝$\frac{4}{6^{2}}$＝$\frac{1}{9}$ (C) ×：點數和為9的情形有 ( 3 , 6 )，( 6 , 3 )，( 4 , 5 )，( 5 , 4 )， 所以P ( 第一次出現奇數點 | 點數和為9 )＝$\frac{2}{4}$＝$\frac{1}{2}$ (D)○：P ( 點數和為9 | 第一次出現奇數點 )＝$\frac{2}{3\times 6}$＝$\frac{1}{9}$ (E)○：承(A)(C)可知P ( 第一次出現奇數點 | 點數和為9 )＝P ( 第一次出現奇數點 ) 所以兩事件獨立 故選(A)(B)(D)(E)
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: '某數學競試有400位同學參加，主辦單位評分後將此400位同學依總分由高到低排序：前100人為A組，次100人為B組，再次100人為C組，最後100人為D組。進一步逐題分析同學答題情形， 將各組在填充第一題和填充第二題的答對率列表如下： 請選出正確的選項：
+
+    |  | A組 | B組 | C組 | D組 |
+
+    | --- | --- | --- | --- | --- |
+
+    | 第一題答對率 | 100％ | 80％ | 70％ | 20％ |
+
+    | 第二題答對率 | 100％ | 80％ | 30％ | 0％ |'
+  options:
+  - label: A
+    content: 全體同學第一題的答對率高於七成
+  - label: B
+    content: 第一題答錯的同學，不可能屬於A組
+  - label: C
+    content: 從第一題答錯的同學中隨機抽出一人，此人屬於C組的機率大於0.5
+  - label: D
+    content: 從C組同學中隨機抽出一人，此人第一、二題都答對的機率不可能大於0.3
+  - label: E
+    content: 兩題都答對的比例為52.5％
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ×：第一題的答對率為$\frac{100\times 1+100\times 0.8+100\times 0.7+100\times 0.2}{400}$×100％＝$\frac{100+80+70+20}{400}$×100％＝67.5％＜70％ (B)○：因為A組同學的第一題全對 (C) ×：P ( C組 | 第一題答錯 )＝$\frac{30}{20+30+80}$＝$\frac{3}{13}$＜0.5 (D)○：因為C組同學的第二題答對率只有30％ (E) ×：條件不足，無法計算兩題都答對的比例 故選(B)(D)
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 1
+  stem: 一袋中有3白球、4黑球，每次取一球，取後不放回。請問下列敘述哪些正確？
+  options:
+  - label: A
+    content: 第一次取到白球的機率為$\frac{3}{7}_{ }$
+  - label: B
+    content: 第三次取到白球的機率為$\frac{3}{7}$
+  - label: C
+    content: 白球先取完的機率的機率為$\frac{3}{7}$
+  - label: D
+    content: 前二次取到的球顏色不同的機率為$\frac{2}{7}$
+  - label: E
+    content: 若改變取球規則，一次取二球，則剛好是一黑一白球的機率為$\frac{4}{7}$
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)○：因為白球有3題，且袋中共有7顆球，所以P ( 第一次取到白球 )＝$\frac{3}{7}$ (B)○：P ( 第三次取到白球 )＝P ( 第一次取到白球 )＝$\frac{3}{7}$ (C) ×：P ( 白球先取完 )＝P ( 最一次取到黑球 )＝P ( 第一次取到黑球 )＝$\frac{4}{7}$ (D) ×：P ( 前二次取到的球顏色不同 )＝$\frac{3\times 4+4\times 3}{7\times 6}$＝$\frac{4}{7}$ (E)○：P ( 一黑一白 )＝$\frac{C_{1}^{3}C_{1}^{4}}{C_{2}^{7}}$＝$\frac{12}{21}$＝$\frac{4}{7}$ 故選(A)(B)(E)
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T05
+      name: 條件機率乘法公式與多階段試驗
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 設A、B為樣本空間S中的兩互斥事件，P(A)＝$\frac{1}{4}$，P ( A'∩B )＝$\frac{1}{2}$，試求P ( A∪B )＝＿＿＿＿。
+  answer:
+  - $\frac{3}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 因為A與B互斥，所以P ( A∩B )＝P (ψ)＝0 ⇒ P ( A'∩B )＝P (B)－P ( A∩B )＝P (B)＝$\frac{1}{2}$ ⇒ P ( A∪B )＝P (A)＋P (B)－P ( A∩B )＝$\frac{1}{4}$＋$\frac{1}{2}$＝$\frac{3}{4}$
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T03
+      name: 機率性質與排容不等式推論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: '有一不均勻的骰子，經事先檢驗知其出現各點數的機率如下表： 同時丟擲2顆此種骰子，試求點數和為8的機率＝＿＿＿＿。
+
+    | 點數 | 1 | 2 | 3 | 4 | 5 | 6 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | 機率 | 0.1 | 0.2 | 0.3 | 0.2 | 0.1 | 0.1 |'
+  answer:
+  - '0.14'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 因為8＝2＋6＝3＋5＝4＋4，所以P ( 點數和為8 )＝2×( 0.2×0.1＋0.3×0.1 )＋0.2×0.2＝0.1＋0.04＝0.14
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 某地訂報數據如下：訂<u>蓮禾報</u>約占65％，訂<u>苹菓日報</u>約占55％，設兩種報紙皆訂的比率為p，試求p的範圍：＿＿＿＿。
+  answer:
+  - 0.2 ≤ p ≤ 0.55
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設A、B分別表示訂<u>蓮禾報</u>、<u>苹菓日報</u>的事件 可知P (A)＝0.65，P (B)＝0.55，P ( A∩B )＝P ⇒ P (A)＋P (B)－1 ≤ P ( A∩B ) ≤ P (B) ⇒ 0.65＋0.55－1 ≤ P ≤ 0.55 ⇒ 0.2 ≤ P ≤ 0.55
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T03
+      name: 機率性質與排容不等式推論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 這個學期<u>小新</u>班上共有20次小考，貪玩的他只有4次及格。而每次小考後，媽媽都會詢問他成績是否及格，若及格他一定據實以告；但若不及格，他說實話的機率只有$\frac{1}{3}$。試問這學期若某一次小考，<u>小新</u>告知媽媽成績及格，其實他卻是不及格的機率為＿＿＿＿。
+  answer:
+  - $\frac{8}{11}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 考不及格 | 告知媽媽及格 )＝$\frac{P(考不及格\cap 告知媽媽及格)}{P(告知媽媽及格)}$＝$\frac{\frac{4}{5}\times \frac{2}{3}}{\frac{1}{5}\times 1+\frac{4}{5}\times \frac{2}{3}}$＝$\frac{8}{11}$
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T01
+      name: 貝氏定理與條件事後機率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: <u>大雄</u>跟<u>胖虎</u>玩丟骰子遊戲，遊戲規則如下：每次丟一個均勻的骰子，若出現1～4點，<u>大雄</u>給<u>胖虎</u>2元；若出現5或6點，<u>胖虎</u>要給<u>大雄</u>2元。試問：經過五次之後，<u>大雄</u>贏得6元的機率為＿＿＿＿。
+  answer:
+  - $\frac{10}{243}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設出現1～4點有x次，出現5點或6點有 ( 5－x ) 次 可知－2×x＋2×( 5－x )＝6 ⇒ 4x＝4 ⇒ x＝1 故P ( <u>大雄</u>嬴得6元 )＝$C_{1}^{5}\times \frac{4}{6}\times (\frac{2}{6})^{4}$＝$\frac{10}{243}$
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T05
+      name: 條件機率乘法公式與多階段試驗
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 某天夜晚發生了一起車禍，警方獲得以下資訊 ① 唯一的證人甲指稱「肇事的車輛是台白色計程車」 ② 根據計程車公會的資料，全部的計程車有95％是黃色，只有5％是白色 ③ 法院測試證人甲在夜間的辨色能力，發現他無論黃或白的識別正確機率都是90％，而有10％的機率看成另一色 根據以上三個條件，對於證人甲的說法正確的可信度 ( 車輛確實為白色的機率 ) 應為多少？＿＿＿＿。
+  answer:
+  - $\frac{9}{28}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T01
+      name: 貝氏定理與條件事後機率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 參加大型賽事運動會的運動選手都要通過事先的違規藥物檢定，某醫學院實驗室對1000位選手進行藥物檢定。已知樣本中有50人確實有服用違規藥物，藥物檢定後，偵測判斷為未服藥者有940人，其中真正未服藥者有935人。試問此藥物檢定技術的誤判率為＿＿＿＿。
+  answer:
+  - 2％
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T02
+      name: 檢驗誤判率與篩檢準確率分析
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 民間信仰中問卜擲筊的儀式是將一對筊杯擲出，若出現一陰面一陽面 ( 一正面一反面 ) ：稱作「聖筊」。 某間財神廟有個求「發財金」的活動，其規則如下： 先許願後擲筊， ①若第一次擲出聖筊，則可獲得發財金500元 ②若第一次未能擲出聖筊，則重新許願後再次擲筊，擲出聖筊後可獲得發財金400元 ③如此依次擲出聖筊者，可求得300元、200元、100元 ④若五次擲筊均未出現聖筊，則請下次再來許願求發財金 某天<u>阿崧</u>和父母一家三口來到這間財神廟要求發財金，假設每人每次擲筊的結果均為獨立 ( 每次擲筊出現聖筊的機率為$\frac{1}{2}$ )，試問： (1) <u>阿崧</u>沒有求得發財金的機率為＿＿＿＿。 (2) 已知爸爸媽媽有人求得發財金，試問爸爸求得發財金的機率為＿＿＿＿。
+  answer:
+  - (1) $\frac{1}{32}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) P ( <u>阿崧</u>未得發財金 )＝($\frac{1}{2}$)$^{5}$＝$\frac{1}{32}$ (2) P ( 爸爸求得發財金 | 爸爸媽媽有人求得發財金 )＝$\frac{1-\frac{1}{32}}{1-\frac{1}{32}\times \frac{1}{32}}$＝$\frac{992}{1023}$
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T05
+      name: 條件機率乘法公式與多階段試驗
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: <u>山松國小</u>目前有125位教師，其中有72人已取得汽車駕照，若學校的女老師共有50人，男老師且取得駕照者有45人。 (1) 試將以上資料用列聯表表示。 (2) 若要「取得汽車駕照與否」與「性別」獨立，則女老師中需再多少人取得汽車駕照？
+  answer:
+  - (1) (2) 3人
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) (2) 設女老師中需再有x人取得汽車駕照s 因為「取得汽車駕照與否」與「性別」獨立 所以P ( 取得汽車駕照 | 女老師 )＝P ( 取得汽車駕照 ) ⇒ $\frac{27+x}{50}$＝$\frac{72+x}{125}$ ⇒ 135＋5x＝144＋2x ⇒ x＝3 故女老師中需再有3人取得汽車駕照
+
+    45.27 30.23 75.50'
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T04
+      name: 列聯表分析與獨立性檢驗
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台北_松山_數學_數B_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: single
+  page: 2
+  stem: 要在餐廳擔任主廚的話，就必須取得乙級廚師執照。中部一所餐飲學校的老師實施分組考照模擬，將同學分成A、B兩組，成員比例分別為40％、60％。上學期A、B兩組同學通過模擬測試的比率分別為80％、50％，因此老師預估下學期A、B兩組同學通過模擬測試的機率分別為0.8及0.5。 今B組同學中的60％經過特訓加強，重新預估這些特訓加強過的B組同學下學期通過測試的機率會升為0.7；而其他同學通過模擬測試的機率不變。 根據以上資料，請回答下列問題： (1) 全部同學上學期通過模擬測試的比率為多少？
+  options:
+  - label: A
+    content: 26％
+  - label: B
+    content: 38％
+  - label: C
+    content: 56％
+  - label: D
+    content: 62％
+  - label: E
+    content: 68％ (2) 上學期通過模擬測試的同學中，A組同學所占的比率為多少？ (3) 經過特訓加強後，試推估下學期A、B組全體同學通過模擬測試的比率？
+  explanation: (1) 上學期通過模擬測試的比率為0.4×0.8＋0.6×0.5＝0.62 故選(D) (2) P ( A組同學 | 上學期通過測試 )＝$\frac{0.4\times 0.8}{0.62}$＝$\frac{16}{32}$ (3) 下學期通過模擬測試的比率為0.4×0.8＋0.6×( 0.6×0.7＋0.4×0.5 ) ＝0.32＋0.372＝0.692
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T01
+      name: 貝氏定理與條件事後機率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

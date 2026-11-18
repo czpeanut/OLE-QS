@@ -1,0 +1,686 @@
+document:
+  id: doc_112_台南_台南女中_數學_g10s1e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 1
+  city: 台南
+  school_short: 台南女中
+  school: 國立臺南女子高級中學
+  title: 國立臺南女子高級中學 112學年度第1學期第1次定期評量 高一數學科試題
+  exam_name: 112學年度第1學期第1次定期評量
+  source_file: 高一/數學/112/1-1/台南/台南女中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 30 分）
+    count: 5
+  - ord: 2
+    name: 二、多重選擇題（每題 5 分，共 15 分；錯一個選項得 3 分，錯兩個選項得 1 分，錯三個選項以上或未作答者不給分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 50 分）
+    count: 10
+  - ord: 4
+    name: 四、計算題（共 5 分）
+    count: 1
+questions:
+- id: doc_112_台南_台南女中_數學_g10s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 化簡 log100＋$\log \sqrt{10}$＋$10^{log6}$＝？
+  options:
+  - label: A
+    content: '2.2781'
+  - label: B
+    content: '8'
+  - label: C
+    content: '9'
+  - label: D
+    content: $\frac{15}{2}$
+  - label: E
+    content: $\frac{17}{2}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'log100＋$\log \sqrt{10}$＋$10^{log6}$
+
+    ＝$log10^{2}$＋$\log 10^{\frac{1}{2}}$＋6
+
+    ＝2＋$\frac{1}{2}$＋6＝$\frac{17}{2}$
+
+    故選(E)'
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T01
+      name: 常用對數定義與指數互化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_台南_台南女中_數學_g10s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: $\left( \frac{3}{2} \right) ^{-1}\times \left( \frac{8}{27} \right) ^{-\frac{2}{3}}$＋〔（3＋$\sqrt{10}$）$^{9}$×（3－$\sqrt{10}$）$^{9}$〕＝？
+  options:
+  - label: A
+    content: $\frac{1}{2}$
+  - label: B
+    content: $\frac{3}{2}$
+  - label: C
+    content: $\frac{5}{2}$
+  - label: D
+    content: $\frac{5}{3}$
+  - label: E
+    content: $\frac{-1}{3}$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T01
+      name: 根式與分數指數律化簡
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_112_台南_台南女中_數學_g10s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 滿足 3 ≤∣2x－5∣＜10 的整數 x 有多少個？
+  options:
+  - label: A
+    content: '4'
+  - label: B
+    content: '5'
+  - label: C
+    content: '7'
+  - label: D
+    content: '8'
+  - label: E
+    content: '9'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T09
+      name: 雙重絕對值不等式區間求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南女中_數學_g10s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 南女開心農場裡有位農夫想利用 100 公尺的竹籬圍成一個矩形的菜園，並在其中一個邊的正中央留下 4 公尺的出入口如右圖。請問這位農夫所能圍成的菜園面積最大為多少平方公尺？
+  options:
+  - label: A
+    content: '529'
+  - label: B
+    content: '576'
+  - label: C
+    content: '625'
+  - label: D
+    content: '676'
+  - label: E
+    content: '729'
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_112_台南_台南女中_數學_g10s1e1/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 472.55
+      - 645.85
+      - 564.3
+      - 694.85
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-2
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 式的運算
+      std: true
+    textbook: 數學1（必修） 式的運算
+    pattern:
+      key: MA-1-1-2:T02
+      name: 算幾不等式求幾何極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南女中_數學_g10s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 2
+  stem: 某艘超大型貨櫃輪船疑似因瞬間強風吹襲導致船身偏離航道，在埃及蘇伊士運河擱淺，造成運河航行受阻，全球貨物貿易損失每小時達 4 億美元。已知該艘貨櫃輪船長度約 $10^{2.602}$ 公尺，若將其船身直立起，則它的高度與下列何者最接近？（已知 $10^{0.3010}$ ≈ 2）
+  options:
+  - label: A
+    content: 巴黎的艾菲爾鐵塔（高度約 300 公尺）
+  - label: B
+    content: 高雄的 85 大樓（高度約 348 公尺）
+  - label: C
+    content: 杜拜的瑪麗娜 23 大廈（高度約 395 公尺）
+  - label: D
+    content: 紐約的中央公園塔（高度約 472 公尺）
+  - label: E
+    content: 臺北的 101 大樓（高度約 508 公尺）
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T07
+      name: 指數近似值與對數估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南女中_數學_g10s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: k 為常數，若方程式∣x∣＋∣x－2∣＝k 有實數解，則 k 可能為下列哪些選項？
+  options:
+  - label: A
+    content: $1.\overline{87}$
+  - label: B
+    content: log112
+  - label: C
+    content: $\sqrt{4-\sqrt{12}}$
+  - label: D
+    content: $2^{0.6}$
+  - label: E
+    content: $\frac{2023\sqrt{5}+\pi}{2024}$
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵∣x∣＋∣x－2∣可視為 x 與 0 的距離加上 x 與 2 的距離
+
+    ∴最小值為 2，即 k ≥ 2
+
+    (A) ╳：$1.\overline{87}$＝1.8787 ……＜2
+
+    (B) ○：log112＞log100＝2
+
+    (C) ╳：$\sqrt{4 -\sqrt{12}}$＝$\sqrt{4 -2\sqrt{3}}$＝$\sqrt{3} -1$＜$\sqrt{4}$－1＝1
+
+    (D) ╳：∵（$2^{0.6}$）$^{10}$＝$2^{6}$＜$2^{10}$＝（$2^{1}$）$^{10}$ ∴$2^{0.6}$＜$2^{1}$＝2
+
+    (E) ○：$\frac{2023\sqrt{5} +\pi}{2024}$＞$\frac{2023\sqrt{4} +3}{2024}$＝$2\frac{1}{2024}$＞2
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T03
+      name: 絕對值距離和差極值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_112_台南_台南女中_數學_g10s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: '某機構在 12 點時將兩種不同的營養劑分別投入培養皿甲與培養皿乙中，此時甲、乙的細菌數量分別為 X、Y。已知甲的數量每 3 小時成長為原來的 2 倍，例如 15 點時甲的數量為 2X。乙的數量每 2 小時成長為原來的 3 倍，例如 14 點時乙的數量為 3Y，測量所得結果部分記錄於下表。該機構在 18 點時測量發現甲、乙的數量相同，欲以細菌數量隨時間呈指數成長的模型來預估甲、乙 12 點至 24 點的細菌數量。根據上述，試選出正確的選項。
+
+    | 時刻（點） | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
+
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+    | 甲數量 | X |  |  | 2X |  |  |  |  |  |  |  |  |  |
+
+    | 乙數量 | Y |  | 3Y |  |  |  |  |  |  |  |  |  |  |'
+  options:
+  - label: A
+    content: 在 13 點時，乙的數量為 2Y
+  - label: B
+    content: 4X＝9Y
+  - label: C
+    content: X＞Y
+  - label: D
+    content: 在 20 點時，甲的數量大於乙的數量
+  - label: E
+    content: 在 24 點時，乙的數量為甲的$\frac{27}{4}$倍
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意知從 12 點起經過 t 小時後，甲的數量為$2^{\frac{t}{3}} \cdot X$，乙的數量為$3^{\frac{t}{2}} \cdot Y$
+
+    (A) ╳：乙數量在 13 點時應為$3^{\frac{1}{2}}$Y＝$\sqrt{3}$Y
+
+    (B) ╳：在 18 點時甲、乙的數量相同，表示$2^{\frac{6}{3}}$X＝$3^{\frac{6}{2}}$Y
+
+    即 4X＝27Y
+
+    (C) ○：承(B) ∵4X＝27Y ⇒ X＝$\frac{27}{4}$Y 且 X，Y＞0
+
+    ∴X＞Y
+
+    (D) ╳：在 20 點時，甲數量為$2^{\frac{8}{3}}$X，乙數量為 $3^{4}$Y
+
+    承(B)，可得$\frac{X}{Y}$＝$\frac{27}{4}$
+
+    ⇒$\frac{甲數量}{乙數量}$＝$\frac{2^{\frac{8}{3}}X}{3^{4}Y}$＝$\frac{27}{4}$×$\frac{2^{\frac{8}{3}}}{3^{4}}$＝$\frac{2^{\frac{2}{3}}}{3}$＜1
+
+    ⇒ 甲數量＜乙數量
+
+    (E) ○：在 24 點時，甲數量為 $2^{4}$X，乙數量為 $3^{6}$Y
+
+    承(B)，可得$\frac{Y}{X}$＝$\frac{4}{27}$
+
+    ⇒$\frac{乙數量}{甲數量}$＝$\frac{3^{6}Y}{2^{4}X}$＝$\frac{4}{27}$×$\frac{3^{6}}{2^{4}}$＝$\frac{27}{4}$
+
+    故乙數量為甲數量的$\frac{27}{4}$倍
+
+    故選(C)(E)'
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T03
+      name: 指數倍數成長與數量級估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南女中_數學_g10s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 下列哪些方程式恰有一個實數解？
+  options:
+  - label: A
+    content: ∣x－3∣＝∣x＋7∣
+  - label: B
+    content: ∣x－3∣＋∣x＋7∣＝12
+  - label: C
+    content: ∣x－3∣－∣x＋7∣＝4
+  - label: D
+    content: ∣x＋7∣－∣x－3∣＝4
+  - label: E
+    content: ∣x－3∣＝2∣x＋7∣
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T03
+      name: 絕對值距離和差極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: $3^{50}$－1 是＿＿＿＿位數。（已知 $10^{0.3010}$ ≈ 2，$10^{0.4771}$ ≈ 3）
+  answer:
+  - '24'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵$3^{n}$ 的尾數依序為 3、9、7、1、3、9、7、1、……（n 為正整數）
+
+    依 3，9，7，1 的順序，每 4 個一循環
+
+    ∵$50 = 4\times 12 + 2$
+
+    ∴$3^{50}$ 的尾數為 9，減 1 不影響位數
+
+    ⇒ $3^{50}$－1 ≈ $3^{50}$ ≈（$10^{0.4771}$）$^{50}$
+
+    ＝$10^{23.855}$＝$10^{0.855}$×$10^{23}$
+
+    故所求為 24 位數'
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T02
+      name: 常用對數求高次冪位數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 已知 $a^{2x}$＝$\sqrt{5-\sqrt{24}}$，求$\frac{a^{3x}+a^{-3x}}{a^{x}+a^{-x}}$的值為＿＿＿＿。
+  answer:
+  - $2\sqrt{3} - 1$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$a^{2x}$＝$\sqrt{5-\sqrt{24}}$＝$\sqrt{5-2\sqrt{6}}$＝$\sqrt{3}$－$\sqrt{2}$
+
+    $\frac{a^{3x}+a^{-3x}}{a^{x}+a^{-x}}$＝$\frac{(a^{x}+a^{-x})(a^{2x}- 1+a^{-2x})}{a^{x}+a^{-x}}$＝$a^{2x}$－1＋$a^{－2x}$
+
+    ＝$\sqrt{3}$－$\sqrt{2}$－1＋$\frac{1}{\sqrt{3} -\sqrt{2}}$＝$\sqrt{3}$－$\sqrt{2}$－1＋$\sqrt{3}$＋$\sqrt{2}$
+
+    ＝2$\sqrt{3}$－1
+
+    〈另解〉
+
+    $a^{2x}$＝$\sqrt{5-\sqrt{24}}$＝$\sqrt{5-2\sqrt{6}}$＝$\sqrt{3}$－$\sqrt{2}$
+
+    $\frac{a^{3x}+a^{-3x}}{a^{x}+a^{-x}}$＝$\frac{a^{4x}+a^{-2x}}{a^{2x}+ 1}$＝$\frac{(\sqrt{3} -\sqrt{2})^{2}+\frac{1}{\sqrt{3}-\sqrt{2}}}{\sqrt{3} -\sqrt{2} + 1}$
+
+    ＝$\frac{5-2\sqrt{6} +\sqrt{3} +\sqrt{2}}{\sqrt{3} -\sqrt{2} + 1}$
+
+    ＝$\frac{2\sqrt{3} (\sqrt{3} -\sqrt{2} + 1)-(\sqrt{3} -\sqrt{2} + 1)}{\sqrt{3} -\sqrt{2} + 1}$＝$2\sqrt{3}$－1'
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T04
+      name: 負指數與對稱指數求值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 已知$x+\frac{1}{x}$＝4，求$x^{3}+\frac{1}{x^{3}}$之值為＿＿＿＿。
+  answer:
+  - '52'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$x^{3}$＋$\frac{1}{x^{3}}$＝$\left( x+\frac{1}{x} \right)\left( x^{2} - 1 +\frac{1}{x^{2}} \right)$
+
+    ＝4．$\left[ \left( x+\frac{1}{x} \right) ^{2}-3 \right]$＝4．（$4^{2}$－3）＝52'
+  tags:
+    unit:
+      code: MA-1-1-2
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 式的運算
+      std: true
+    textbook: 數學1（必修） 式的運算
+    pattern:
+      key: MA-1-1-2:T05
+      name: 分式對稱式降次求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 國防部於 2020 年提出免役修正草案，使得未來免役標準更嚴格，其中關於身體質量指數（BMI）的標準為：BMI＜16.5 或 BMI＞35 得以免役。設身體質量指數公式為 身體質量指數＝$\frac{體重(公斤)}{〔身高(公尺)〕^{2}}$。已知胖胖的身高為 180 公分，但由於他的 BMI 為 36，所以達免役標準，若他想減重使得 BMI 降至 32 可入伍當兵報效國家，則他需減重＿＿＿＿公斤。（四捨五入至整數位）
+  answer:
+  - '13'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '胖胖目前體重為 36×（1.8）$^{2}$ 公斤，入伍的目標體重為 32×（1.8）$^{2}$ 公斤
+
+    故胖胖需減重 36×（1.8）$^{2}$－32×（1.8）$^{2}$＝4×3.24＝12.96 ≈ 13（公斤）'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T06
+      name: 實數區間的四則運算範圍
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 1
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 設$\sqrt{4+\sqrt{12}}$的整數部分為 a，小數部分為 b，則$\frac{1}{a+b}-\frac{1}{b}$的值為＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\sqrt{4+\sqrt{12}}$＝$\sqrt{4+2\sqrt{3}}$＝$\sqrt{3}$＋1
+
+    又 2＝$\sqrt{1}$＋1＜$\sqrt{3}$＋1＜$\sqrt{4}$＋1＝3 ⇒$\sqrt{3}$＋1 的整數部分為 2
+
+    可知 a＝2，b＝$\sqrt{3}$＋1－2＝$\sqrt{3}$－1
+
+    故$\frac{1}{a+b}-\frac{1}{b}$＝$\frac{1}{\sqrt{3} + 1}-\frac{1}{\sqrt{3} - 1}$＝$\frac{\sqrt{3} - 1}{2}$－$\frac{\sqrt{3} + 1}{2}$＝－1'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T02
+      name: 根式的整數與小數部分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 根據調查，九成減重的人面臨復胖困擾，關鍵點在「體脂肪」。現代醫學測量肥胖不再只用體重，而是體脂肪：對於是否須減肥，不再只以「體重」做標準，改以「體脂率」做判斷。體脂率是指體重有多少百分比是由脂肪所構成，男性正常體脂率在 14～23 ％之間，女性在 17～ 27 ％之間，年紀越大體脂率越高，且 30 歲的男性超過 25 ％、女性超過 30 ％即為「肥胖」。如果一位 60 公斤的男性，體脂率為 20 ％，其身體的脂肪重量為 體重（60 公斤）×體脂率（20 ％）＝12 公斤。維持健康之最低體脂肪量：男性 3 ％、女性 10～12 ％。已知某年輕女性體重 50 公斤，且體脂率在正常範圍內，若其身體的脂肪重量為 x 公斤且 x 的範圍可表為∣x－a∣≤ b，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - $\left( 11 , \frac{5}{2} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T05
+      name: 絕對值誤差應用題
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 數線上有 A（a）、B（b）、P(13)、Q（－27）四點，且 a＜b，若 P 在$\overline{AB}$上滿足 $\overline{PA}$：$\overline{PB}$＝2：1，Q 在$\overline{AB}$外滿足$\overline{QA}$：$\overline{QB}$＝2：3，試求 a＋b＝＿＿＿＿。
+  answer:
+  - '21'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T04
+      name: 分點公式與數線區間
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: ∣ax＋7∣≤ b 的解與$\begin{cases}| x-1 | \leq 3 \\ | x | \geq 3\end{cases}$的解相同，則 a＋b＝＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T02
+      name: 含參絕對值不等式反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 設 a 為負整數，已知恰有 9 個整數同時滿足絕對值不等式∣x－3∣≤ 8 與∣x－a∣＞10，試問 a 值為＿＿＿＿。
+  answer:
+  - －8
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T02
+      name: 含參絕對值不等式反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台南_台南女中_數學_g10s1e1_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 行政院院長表示去年全國稅收超徵 4500 億，所以預計將其中的 1400 億「還稅於民」，每人可以領取 6000 元現金，採「登記入帳」、「ATM 領現」、「郵局領現」、「直接入帳」及「造冊發放」等 5 種方式。已知小元住家與附近郵局及上班的公司都位於同一條筆直的道路上，且住家與公司的距離為 5 公里。因為郵局與小元住家的距離比郵局與公司的距離近，所以在今早上班前先從住家沿著此條道路開車到郵局領取 6000 元，再從郵局到公司，總共只需行駛 9 公里。若小元先從住家沿著此條道路開車到公司上班，四點下班再從公司到郵局領取 6000 元，則共需行駛＿＿＿＿公里。
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T03
+      name: 數線距離與等速相遇問題
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台南_台南女中_數學_g10s1e1_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 4
+  stem: 一臺搬運貨物的無人車可以透過遠端操作，在一條筆直的工作軌道上移動。已知無人車的訊號發射站設置在工作軌道上的$A\left( \frac{8}{3} \right)$及$B\left( \frac{16}{3} \right)$兩點，由發射站到無人車的距離和若超過 14，則訊號強度會太差而無法控制無人車。令無人車的位置為 C（x），則可控制無人車的實數 x 值最大範圍為何？
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T04
+      name: 雙絕對值分段討論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

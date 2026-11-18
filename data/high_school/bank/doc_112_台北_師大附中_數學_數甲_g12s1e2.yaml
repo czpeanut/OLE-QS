@@ -1,0 +1,555 @@
+document:
+  id: doc_112_台北_師大附中_數學_數甲_g12s1e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 2
+  city: 台北
+  school_short: 師大附中
+  school: 國立臺灣師範大學附屬高級中學
+  title: 國立臺灣師範大學附屬高級中學 112學年度第1學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 112學年度第1學期第2次定期評量
+  source_file: 高三/數學/112/1-2/台北/師大附中_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 8 分，共 40 分。答錯 1 個選項者，得 5 分；答錯 2 個選項者，得 2 分；其他情況得 0 分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（每格 5 分，共 60 分）
+    count: 10
+questions:
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 選出下列函數哪些在 x＝0 處導數存在？
+  options:
+  - label: A
+    content: f（x）＝｜x｜
+  - label: B
+    content: f（x）＝｜$x^{3}$｜
+  - label: C
+    content: f（x）＝｜x（x＋1）｜
+  - label: D
+    content: f（x）＝$\left[ x -\frac{1}{2} \right]$，其中 [ x ] 表 x 之高斯記號
+  - label: E
+    content: f（x）＝$\begin{cases}x^{2} , x\leq 0 \\ x^{4}+ 1 , x > 0\end{cases}$
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：$\lim_{x \rightarrow 0^{+}} \frac{| x |- 0}{x - 0}$＝$\lim_{x \rightarrow 0^{+}} \frac{x - 0}{x - 0}$＝1
+
+    $\lim_{x \rightarrow 0^{-}} \frac{| x |- 0}{x - 0}$＝$\lim_{x \rightarrow 0^{-}} \frac{-x - 0}{x - 0}$＝－1
+
+    ∴在 x＝0 處導數不存在
+
+    (B)○：$\lim_{x \rightarrow 0^{+}} \frac{| x^{3} |- 0}{x - 0}$＝$\lim_{x \rightarrow 0^{+}} \frac{x^{3}- 0}{x - 0}$＝0
+
+    $\lim_{x \rightarrow 0^{-}} \frac{| x^{3} |- 0}{x - 0}$＝$\lim_{x \rightarrow 0^{-}} \frac{-x^{3}- 0}{x - 0}$＝0
+
+    ∴在 x＝0 處導數存在
+
+    (C)╳：$\lim_{x \rightarrow 0^{+}} \frac{| x ( x + 1 ) |- 0}{x - 0}$＝$\lim_{x \rightarrow 0^{+}} \frac{x ( x + 1 )- 0}{x - 0}$＝1
+
+    $\lim_{x \rightarrow 0^{-}} \frac{| x ( x + 1 ) |- 0}{x - 0}$＝$\lim_{x \rightarrow 0^{-}} \frac{-x ( x + 1 )- 0}{x - 0}$＝－1
+
+    ∴在 x＝0 處導數不存在
+
+    (D)○：$\lim_{x \rightarrow 0^{+}} \frac{\left[ x -\frac{1}{2} \right] -( -1 )}{x - 0}$＝$\lim_{x \rightarrow 0^{+}} \frac{-1 -( -1 )}{x}$＝0
+
+    $\lim_{x \rightarrow 0^{-}} \frac{\left[ x -\frac{1}{2} \right] -( -1 )}{x - 0}$＝$\lim_{x \rightarrow 0^{-}} \frac{-1 -( -1 )}{x}$＝0
+
+    ∴在 x＝0 處導數存在
+
+    (E)╳：f（x）在 x＝0 不連續
+
+    ∴f（x）在 x＝0 處導數不存在
+
+    故選(B)(D)'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 已知函數 f（x）＝$2x^{3}$－$3x^{2}$－12x＋6，選出下列正確的敘述。
+  options:
+  - label: A
+    content: 當－2 ≤ x ≤ 1 時，f（x）是遞增函數
+  - label: B
+    content: 當 1 ≤ x ≤ 2 時，f（x）是遞減函數
+  - label: C
+    content: 當 x＝1 時，f（x）有極大值為－7
+  - label: D
+    content: 當$x\leq -\frac{1}{2}$時，y＝f（x）圖形的凹口向下
+  - label: E
+    content: 當$x\geq -\frac{1}{2}$時，y＝f（x）圖形的凹口向上
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$6x^{2}$－6x－12＝6（x＋1）（x－2）＝0$\Rightarrow$x＝－1 或 2
+
+    f''''（x）＝12x－6＝0$\Rightarrow$x＝$\frac{1}{2}$
+
+    依 f''（x）、f''''（x）正負製表如下
+
+    $\frac{1}{2}$
+
+    故選(B)(D)'
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 設 f（x）是定義在實數上的三次多項式函數，選出下列正確的敘述。
+  options:
+  - label: A
+    content: f（x）是連續函數
+  - label: B
+    content: f（x）不一定是可微分函數
+  - label: C
+    content: 若 f'（α）＝0，其中α$\in$R，則 f（α）必是 f（x）的極大值或極小值
+  - label: D
+    content: 若 f''（α）＝0，其中α$\in$R，則（α，f（α））必是 y＝f（x）圖形的反曲點
+  - label: E
+    content: 若 y＝f（x）有極大值，則 y＝f（x）必有極小值
+  answer:
+  - A
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 設導函數 y＝f'（x）的圖形是開口向下且頂點為 A（1，2）的拋物線，選出下列正確的敘述。
+  options:
+  - label: A
+    content: f（x）必是三次多項式函數
+  - label: B
+    content: f（x）在 x ≤ 1 的範圍是遞增函數，在 x ≥ 1 的範圍是遞減函數
+  - label: C
+    content: 函數 y＝f（x）的圖形在 x ≤ 1 時是凹口向下，在 x ≥ 1 時是凹口向上
+  - label: D
+    content: f（x）必有極大值和極小值
+  - label: E
+    content: 點 A（1，2）是 y＝f（x）圖形的反曲點
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T09
+      name: 導函數圖形與係數正負幾何判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 1
+  stem: 設 f（x）＝（x－1）（x－2）（x－3），令$\int_{1}^{2} f ( x )dx$＝a，$\int_{2}^{3} f ( x )dx$＝b，$\int_{1}^{3} f ( x )dx$＝c，選出下列正確的敘述。
+  options:
+  - label: A
+    content: a＝b
+  - label: B
+    content: a＋b＝c
+  - label: C
+    content: a ≥ c
+  - label: D
+    content: 函數 y＝f（x）的圖形和 x 軸所圍成封閉區域的面積為 a＋b
+  - label: E
+    content: $\int_{0}^{4} f ( x )dx$＝$\int_{1}^{3} f ( x )dx$
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T10
+      name: 定積分幾何意義與基本性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 已知函數 f（x）＝$x^{3}$－$2x^{2}$＋4x－3，則$\lim_{h \rightarrow 0} \frac{f ( 1 -h )-f ( 1 )}{3h}$＝＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\lim_{h \rightarrow 0} \frac{f ( 1 -h )-f ( 1 )}{3h}$＝$\lim_{h \rightarrow 0} \left( \frac{f ( 1 -h )-f ( 1 )}{1 -h -1}\times \frac{1}{-3} \right)$＝$-\frac{1}{3}f'' ( 1 )$
+
+    又 f''（x）＝$3x^{2}$－4x＋4
+
+    ∴f''(1)＝3－4＋4＝3
+
+    故所求為$-\frac{1}{3}\times 3$＝－1'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T09
+      name: 導數極限定義式轉換求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 若 f（x）＝$\frac{( 2x - 1 )^{2}}{x^{2}+ 1}$，則 f'(0)之值為＿＿＿＿。
+  answer:
+  - －4
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$\frac{( ( 2x - 1 )^{2} )'' ( x^{2}+ 1 )-( 2x - 1 )^{2} ( x^{2}+ 1 )''}{( x^{2}+ 1 )^{2}}$ ＝$\frac{( 2 ( 2x - 1 )\times 2 ) ( x^{2}+ 1 )-( 2x - 1 )^{2}\times 2x}{( x^{2}+ 1 )^{2}}$
+
+    故 f''(0)＝$\frac{-4\times 1 - 0}{1^{2}}$＝－4'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T02
+      name: 微分四則與連鎖律計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: '已知函數 f（x）＝$\begin{cases}ax +b , x\geq 1 \\ x^{3} , x < 1\end{cases}$，若在 x＝1 處有導數，則
+
+    (1) 數對（a，b）＝＿＿＿＿。
+
+    (2) $\int_{-1}^{3} f ( x )dx$＝＿＿＿＿。'
+  answer:
+  - (1)（3，－2）；(2) 8
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) ∵f（x）在 x＝1 處有導數 ∴f（x）在 x＝1 處連續
+
+    $\Rightarrow\lim_{x \rightarrow 1^{-}} f ( x )$＝$\lim_{x \rightarrow 1^{+}} f ( x )\Rightarrow$a＋b＝1
+
+    又$\lim_{x \rightarrow 1^{-}} \frac{x^{3}-( a +b )}{x-1}$＝$\lim_{x \rightarrow 1^{+}} \frac{ax +b -( a +b )}{x-1}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{-}} \frac{x^{3}- 1}{x - 1}$＝$\lim_{x \rightarrow 1^{+}} \frac{a ( x - 1 )}{x - 1}$
+
+    $\Rightarrow\lim_{x \rightarrow 1^{-}} ( x^{2}+x + 1 )$＝$\lim_{x \rightarrow 1^{+}} a\Rightarrow$a＝3
+
+    ∴b＝1－3＝－2
+
+    故數對（a，b）＝（3，－2）
+
+    (2) $\int_{-1}^{3} f ( x )dx$＝$\int_{-1}^{1} f ( x )dx$＋$\int_{1}^{3} f ( x )dx$
+
+    ＝$\int_{-1}^{1} x^{3}dx$＋$\int_{1}^{3} ( 3x - 2 )dx$＝$\left. \frac{1}{4}x^{4} \right| _{-1}^{1}$＋$\left. \left( \frac{3}{2}x^{2}- 2x \right) \right| _{1}^{3}$
+
+    ＝$\left( \frac{1}{4}-\frac{1}{4} \right)$＋$\left( \frac{27}{2}- 6 -\frac{3}{2}+ 2 \right)$＝8'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 已知多項式函數 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d 的二階導函數為 f''（x）＝6x－4 且 f'(1)＝－1， f(2)＝2，則序組（a，b，c，d）＝＿＿＿＿。
+  answer:
+  - （1，－2，0，2）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'f''（x）＝$3ax^{2}$＋2bx＋c$\Rightarrow$f''(1)＝3a＋2b＋c＝－1
+
+    又 f''''（x）＝6ax＋2b＝6x－4$\Rightarrow$a＝1，b＝－2，代回上式得 c＝0
+
+    ∴f（x）＝$x^{3}$－$2x^{2}$＋d
+
+    又 f(2)＝2$\Rightarrow$d＝2
+
+    故序組（a，b，c，d）＝（1，－2，0，2）'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T03
+      name: 導函數積分反推原函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: '已知 a，b，c 皆為實數，若兩曲線Γ$_{1}$：y＝$x^{2}$＋ax＋b，Γ$_{2}$：y＝－$x^{3}$＋c 都通過點 A（－1，2），且以 A 點為切點，則兩曲線在 A 點有共同的切線 L：y＝mx＋k，求
+
+    (1) 序組（a，b，c）＝＿＿＿＿。
+
+    (2) 數對（m，k）＝＿＿＿＿。'
+  answer:
+  - (1)（－1，0，1）；(2)（－3，－1）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) ∵Γ$_{2}$ 通過點 A（－1，2） ∴2＝－（－1）$^{3}$＋c$\Rightarrow$c＝1，即Γ$_{2}$：y＝－$x^{3}$＋1
+
+    又Γ$_{1}$、Γ$_{2}$ 以 A 點為切點的切線斜率相同
+
+    ∴2（－1）＋a＝－3（－1）$^{2}\Rightarrow$a－2＝－3$\Rightarrow$a＝－1
+
+    ∵Γ$_{1}$ 通過點 A（－1，2）
+
+    ∴2＝（－1）$^{2}$－（－1）＋b$\Rightarrow$b＝0
+
+    故得序組（a，b，c）＝（－1，0，1）
+
+    (2) 由(1)可知切線為 L：y－2＝－3（－1）$^{2}$（x－（－1））
+
+    $\Rightarrow$y－2＝－3（x＋1）$\Rightarrow$y＝－3x－1
+
+    故數對（m，k）＝（－3，－1）'
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T05
+      name: 切線斜率與切線方程式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 有一質點從平面坐標的原點（0，0）開始移動，每次移動一單位，每次往右移動的機率為 p（0＜p＜1），而往上移動的機率為 1－p，當質點移動到直線 x＝4 或直線 y＝4 時，就停止移動。設該質點移動經過點（2，2）或點（2，3）的機率為 f（p），則當 p＝＿＿＿＿時， f（p）有最大值。
+  answer:
+  - $\frac{13 - \sqrt{69}}{10}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 若兩函數圖形Γ$_{1}$：y＝$x^{3}$＋$x^{2}$ 和Γ$_{2}$：y＝$x^{2}$＋3x－a 有三相異交點，則實數 a 範圍為＿＿＿＿。
+  answer:
+  - －2＜a＜2
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T03
+      name: 極值判別三次方程式實根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 求值：$\lim_{n \rightarrow \infty} \left( \frac{n}{( n +1 )^{2}} \right.$＋$\frac{n}{( n +2 )^{2}}$＋$\frac{n}{( n +3 )^{2}}$＋……＋$\left. \frac{n}{( 2n )^{2}} \right)$＝＿＿＿＿。
+  answer:
+  - $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 已知 f（t）＝$12t^{3}$－$12t^{2}$ 且 F（x）＝$\int_{0}^{x} f ( t )dt$，則 F（x）的最小值為＿＿＿＿。
+  answer:
+  - －1
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T04
+      name: 微積分基本定理微分應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_師大附中_數學_數甲_g12s1e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: '若二次多項式函數 f（x）＝$ax^{2}$＋bx＋c 滿足下列三條件：
+
+    (1) $\lim_{x \rightarrow 1} \frac{f ( x )-f ( 1 )}{x - 1}$＝1。
+
+    (2) $\int_{0}^{1} f ( x )dx$＝$\frac{1}{6}$。
+
+    (3) $\sum_{n =1}^{5} f ( n )$＝70，其中 n 為正整數。
+
+    則序組（a，b，c）＝＿＿＿＿。'
+  answer:
+  - （2，－3，1）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T02
+      name: 多項式定積分與待定係數
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3

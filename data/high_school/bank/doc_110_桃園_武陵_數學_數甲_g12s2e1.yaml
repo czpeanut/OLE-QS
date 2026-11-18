@@ -1,0 +1,385 @@
+document:
+  id: doc_110_桃園_武陵_數學_數甲_g12s2e1
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 1
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 110學年度第2學期第1次定期評量 高三數學（數甲）科試題
+  exam_name: 110學年度第2學期第1次定期評量
+  source_file: 高三/數學/110/2-1/桃園/武陵_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、計算題（20％，每題10分，要有過程，否則該題0分）
+    count: 2
+  - ord: 2
+    name: 二、填充題（50％，每題5分，未化成最簡0分、未完全答對的題目0分）
+    count: 8
+  - ord: 3
+    name: 三、多重選擇題（30％，每題10分，每題只錯一個選項得5分，錯超過一個選項得0分）
+    count: 3
+questions:
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s1_1
+  section: 1
+  number: 1
+  type: calc
+  page: 1
+  stem: 坐標平面上，拋物線Г$_{1}$：( x－1 )$^{2}$＝32( y＋4 )，橢圓Г$_{2}$的兩焦點就是拋物線Г$_{1}$的頂點與焦點，Г$_{2}$的長軸長為10，求橢圓Г$_{2}$的方程式？
+  answer:
+  - $\frac{(x-1)^{2}}{9}+\frac{y^{2}}{25}$＝1
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J2-3-2
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 橢圓
+      std: true
+    textbook: 選修數學甲（下） 橢圓
+    pattern:
+      key: MA-J2-3-2:T01
+      name: 由幾何條件求橢圓標準式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s1_2
+  section: 1
+  number: 2
+  type: calc
+  page: 1
+  stem: 坐標平面上，雙曲線的漸近線為2x－y＝0與2x＋y＝0，且其中一焦點為F( 5 , 0 )，求此雙曲線方程式？
+  answer:
+  - $\frac{x^{2}}{5}-\frac{y^{2}}{20}$＝1
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 解$\begin{cases}2x-y=0 \\ 2x+y=0\end{cases}\Rightarrow\begin{cases}x=0 \\ y=0\end{cases}$，所以中心為 ( 0 , 0 )，作圖如右 可知$\frac{b}{a}=m_{L_{1}}=2\Rightarrow$ b＝2a又c＝5 所以$c^{2}$＝$a^{2}$＋$b^{2}$＝$a^{2}$＋$4a^{2}$＝$5a^{2}$＝25 $\Rightarrow$ $a^{2}$＝5 $\Rightarrow$ $b^{2}$＝$c^{2}$－$a^{2}$＝25－5＝20 故所求為$\frac{x^{2}}{5}-\frac{y^{2}}{20}=1$。
+  tags:
+    unit:
+      code: MA-J2-3-3
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 雙曲線
+      std: true
+    textbook: 選修數學甲（下） 雙曲線
+    pattern:
+      key: MA-J2-3-3:T02
+      name: 由漸近線與過點求雙曲線
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 橢圓Г$_{1}$：$\frac{(x-1234)^{2}}{99}$＋$\frac{(y-4321)^{2}}{9}$＝1的兩焦點為$F_{1}$、$F_{2}$，有一雙曲線Г$_{2}$與橢圓Г$_{1}$有共同的焦點$F_{1}$、$F_{2}$，且雙曲線Г$_{2}$的貫軸長與橢圓Г$_{1}$的短軸長相等，若P為Г$_{1}$與Г$_{2}$的一個交點，求$\overline{PF_{1}}$×$\overline{PF_{2}}$之值為＿＿＿＿。
+  answer:
+  - '90'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: Г$_{1}$的半長軸為a＝$\sqrt{99}$，半短軸長為b＝3，所以$c^{2}$＝$a^{2}$－$b^{2}$＝90 Г$_{2}$的貫軸長2a'＝2b $\Rightarrow$ a'＝b＝3 故由定義可得$\overline{PF_{1}}\times \overline{PF_{2}}$＝$\frac{1}{4}[(\overline{PF_{1}}+\overline{PF_{2}})^{2}-(\overline{PF_{1}}-\overline{PF_{2}})^{2}]$＝$\frac{1}{4}[(2a)^{2}-(2a')^{2}]$＝$\frac{1}{4}$($4a^{2}$－$4b^{2}$)＝$a^{2}$－$b^{2}$＝90。
+  tags:
+    unit:
+      code: MA-J2-3-3
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 雙曲線
+      std: true
+    textbook: 選修數學甲（下） 雙曲線
+    pattern:
+      key: MA-J2-3-3:T10
+      name: 共焦點橢圓雙曲線交點聯立
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 一星球繞太陽運行的軌道為一個橢圓，而且太陽位在橢圓的一個焦點上，當此星球運行到長軸上的兩個頂點時，距離太陽較近的長軸上的頂點稱為近日點，距離太陽較遠的長軸上的頂點稱為遠日點。若遠日點到太陽之距離恰好為橢圓之短軸長的5倍，求橢圓的短軸長是其近日點到太陽之距離的＿＿＿＿倍。
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設a－c＝k×2b，可知a＋c＝5×2b＝10b $\Rightarrow$ $b^{2}$＝$a^{2}$－$c^{2}$＝(a＋c)(a－c)＝10b×2kb＝$20kb^{2}$ $\Rightarrow$ 20k＝1 $\Rightarrow\frac{1}{k}$=20， 所以2b＝$\frac{1}{k}$(a－c)=20(a－c)，故所求為20倍。
+  tags:
+    unit:
+      code: MA-J2-3-2
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 橢圓
+      std: true
+    textbook: 選修數學甲（下） 橢圓
+    pattern:
+      key: MA-J2-3-2:T08
+      name: 橢圓標準式判別焦點與基本量
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 橢圓：$\frac{x^{2}}{9}$＋$\frac{y^{2}}{4}$＝1與x軸正向交點為A，與y軸正向交點為B，P為橢圓上第一象限的點，使四邊形OAPB面積最大 ( O為原點)，求四邊形OAPB面積的最大值為＿＿＿＿。
+  answer:
+  - $3\sqrt{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設P ( 3cosθ, 2sinθ)，可知A ( 3 , 0 )，B ( 0 , 2 ) 所以四邊形OAPB面積＝$\frac{1}{2}$×3×2sinθ＋$\frac{1}{2}$×2×3cosθ＝3(sinθ＋cosθ)＝$3\sqrt{2}$sin(θ＋45°) ≤ $3\sqrt{2}$ 故最大值為$3\sqrt{2}$。
+  tags:
+    unit:
+      code: MA-J2-3-2
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 橢圓
+      std: true
+    textbook: 選修數學甲（下） 橢圓
+    pattern:
+      key: MA-J2-3-2:T04
+      name: 橢圓的伸縮變換與參數式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 將橢圓Г$_{1}$：$\frac{x^{2}}{8}$＋$\frac{y^{2}}{2}$＝1以原點為中心，依逆時針方向旋轉45°後，得到橢圓Г$_{2}$的方程式為$ax^{2}$＋bxy＋$cy^{2}$－16＝0，a , b , c為固定實數，求a＋b＋c＝＿＿＿＿。
+  answer:
+  - '4'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設Г$_{2}$上任意一點P ( x , y ) 可由Г$_{1}$上一點Q ( r , s ) 旋轉而來 可知$\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}\cos 45^{\circ}-\sin 45^{\circ} \\ \sin 45^{\circ} \cos 45^{\circ}\end{matrix} \right] \left[ \begin{matrix}r \\ s\end{matrix} \right]\Rightarrow\left[ \begin{matrix}r \\ s\end{matrix} \right]$＝$\left[ \begin{matrix}\cos 45^{\circ}-\sin 45^{\circ} \\ \sin 45^{\circ} \cos 45^{\circ}\end{matrix} \right] ^{-1}\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}\cos (-45^{\circ})-\sin (-45^{\circ}) \\ \sin (-45^{\circ}) \cos (-45^{\circ})\end{matrix} \right] \left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{\sqrt{2}}{2} \frac{\sqrt{2}}{2} \\ \frac{-\sqrt{2}}{2} \frac{\sqrt{2}}{2}\end{matrix} \right] \left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{\sqrt{2}}{2}(x+y) \\ \frac{\sqrt{2}}{2}(-x+y)\end{matrix} \right]$ 將Q [$\frac{\sqrt{2}}{2}(x+y)$,$\frac{\sqrt{2}}{2}(-x+y)$] 代入Г$_{1}$可得$\frac{\frac{1}{2}(x+y)^{2}}{8}+\frac{\frac{1}{2}(-x+y)^{2}}{2}$＝1 $\Rightarrow$ (x＋y)$^{2}$＋4(－x＋y)$^{2}$＝16 $\Rightarrow$ $5x^{2}$－6xy＋$5y^{2}$－16＝0 $\Rightarrow$ a＝5，b＝－6，c＝5，故a＋b＋c＝5＋(－6)＋5＝4。
+  tags:
+    unit:
+      code: MA-J2-3-2
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 橢圓
+      std: true
+    textbook: 選修數學甲（下） 橢圓
+    pattern:
+      key: MA-J2-3-2:T05
+      name: 橢圓的旋轉與坐標變換
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 拋物線的對稱軸與x軸平行，且拋物線過 ( 0 , 1 ) , (－1 , 2 ) , ( 0 , 3 ) , ( t , 4 ) 四點，求實數t之值為＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 設拋物線方程式為x＝k(y－1)(y－3)，將 (－1 , 2 ) 代入可得－1＝－k $\Rightarrow$ k＝1 $\Rightarrow$ x＝(y－1)(y－3) 將 ( t , 4 ) 代入可得t＝3×1＝3。
+  tags:
+    unit:
+      code: MA-J2-3-1
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 拋物線
+      std: true
+    textbook: 選修數學甲（下） 拋物線
+    pattern:
+      key: MA-J2-3-1:T07
+      name: 過已知點待定係數求拋物線
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 1
+  stem: 橢圓Г$_{1}$：$\frac{x^{2}}{25}$＋$\frac{y^{2}}{16}$＝1的兩焦點為$F_{1}$、$F_{2}$，有一雙曲線Г$_{2}$與橢圓Г$_{1}$有共同的焦點$F_{1}$、$F_{2}$，且雙曲線Г$_{2}$過點P ( 4 , 1 )，求雙曲線Г$_{2}$的共軛軸長為＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知$F_{1}$ ( 3 , 0 )，$F_{2}$ (－3 , 0 ) $\Rightarrow$ 2C＝$\overline{F_{1}F_{2}}$＝6 $\Rightarrow$ C＝3， 又2a＝$| \overline{PF_{1}}-\overline{PF_{2}} |$＝$| \sqrt{(4-3)^{2}+(1-0)^{2}}-\sqrt{[4-(-3)]^{2}+(1-0)^{2}} |$＝$| \sqrt{2}-\sqrt{50} |$＝$4\sqrt{2}\Rightarrow$ a＝$2\sqrt{2}\Rightarrow$ b＝$\sqrt{c^{2}-a^{2}}$＝1，故共軛軸長為2。
+  tags:
+    unit:
+      code: MA-J2-3-3
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 雙曲線
+      std: true
+    textbook: 選修數學甲（下） 雙曲線
+    pattern:
+      key: MA-J2-3-3:T10
+      name: 共焦點橢圓雙曲線交點聯立
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 1
+  stem: 已知P ( a , b ) 為拋物線Г：( y－2 )$^{2}$＝－4( x＋1 ) 上一點，若F為拋物線Г的焦點，且$\overline{PF}$＝6，求實數a＝＿＿＿＿。
+  answer:
+  - －6
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知4C＝－4 $\Rightarrow$ C＝－1，又頂點為 (－1 , 2 )，所以焦點為 (－2 , 2 )，準線為L：x＝0， 由定義可得$\overline{PF}$＝d ( P , L ) $\Rightarrow$ －a＝6 $\Rightarrow$ a＝－6。
+  tags:
+    unit:
+      code: MA-J2-3-1
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 拋物線
+      std: true
+    textbook: 選修數學甲（下） 拋物線
+    pattern:
+      key: MA-J2-3-1:T09
+      name: 拋物線光學性質與焦弦長計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 1
+  stem: 雙曲線$| \sqrt{(x-7)^{2}+y^{2}}-\sqrt{(x+7)^{2}+y^{2}} |$＝10上一點P到焦點F ( 7 , 0 ) 的距離為6，Q是$\overline{PF}$的中點，O是坐標原點，求$\overline{OQ}$長為＿＿＿＿。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '可得2a＝10 $\Rightarrow$ a＝5，且另一焦點為F'' (－7 , 0 ) 所以2a＝$| \overline{PF}-\overline{PF''} |$＝$| 6-\overline{PF''} |$＝10 $\Rightarrow\overline{PF''}$＝16，又原點O為$\overline{FF''}$中點，Q為$\overline{PF}$中點 因此$\overline{OQ}$//$\overline{PF''}$且$\overline{OQ}$＝$\frac{1}{2}\overline{PF''}$＝8。
+
+    三、多重選擇題（30％，每題10分，每題只錯一個選項得5分，錯超過一個選項得0分）'
+  tags:
+    unit:
+      code: MA-J2-3-3
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 雙曲線
+      std: true
+    textbook: 選修數學甲（下） 雙曲線
+    pattern:
+      key: MA-J2-3-3:T04
+      name: 雙曲線定義與焦點距離差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s3_13
+  section: 3
+  number: 13
+  type: multiple
+  page: 1
+  stem: 坐標平面上，有一橢圓$\frac{x^{2}}{a^{2}}$＋$\frac{y^{2}}{b^{2}}$＝1 ( a＞0 , b＞0 )，如圖所示，通過橢圓中心O且 與x軸夾角為45°的直線在第一象限跟橢圓相交於P點。選出正確的選項？
+  options:
+  - label: A
+    content: P點坐標為 ( a cos 45° , b sin 45° )
+  - label: B
+    content: $\overline{OP}$＝$\sqrt{\frac{a^{2}+b^{2}}{2}}$
+  - label: C
+    content: $\overline{OP}$＝$\sqrt{\frac{2a^{2}b^{2}}{a^{2}+b^{2}}}$
+  - label: D
+    content: 將橢圓$\frac{x^{2}}{a^{2}}$＋$\frac{y^{2}}{b^{2}}$＝1 ( a＞0 , b＞0 )以原點為中心，沿著x軸方向伸縮3倍、沿著y軸方向伸縮2倍， 得到新橢圓的方程式為$\frac{x^{2}}{9a^{2}}$＋$\frac{y^{2}}{4b^{2}}$＝1
+  assets:
+  - key: s3_13_f1
+    kind: figure
+    file: doc_110_桃園_武陵_數學_數甲_g12s2e1/s3_13_f1.png
+    crop:
+      page: 1
+      rect:
+      - 509.05
+      - 712.55
+      - 654.65
+      - 821.2
+  explanation: (C)(D)
+  tags:
+    unit:
+      code: MA-J2-3-2
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 橢圓
+      std: true
+    textbook: 選修數學甲（下） 橢圓
+    pattern:
+      key: MA-J2-3-2:T04
+      name: 橢圓的伸縮變換與參數式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s3_14
+  section: 3
+  number: 14
+  type: multiple
+  page: 1
+  stem: 坐標平面上，雙曲線$9y^{2}$－$4x^{2}$＋18y＋16x－43＝0，選出正確的選項。
+  options:
+  - label: A
+    content: 頂點坐標為 (－1 ,－1 )，( 5 ,－1 )
+  - label: B
+    content: 共軛軸長為6
+  - label: C
+    content: 兩焦點為 ( 2 ,－1＋$\sqrt{13}$)，( 2 ,－1－$\sqrt{13}$)
+  - label: D
+    content: 兩漸近線斜率乘積為$\frac{-9}{4}$
+  explanation: (B)(C)
+  tags:
+    unit:
+      code: MA-J2-3-3
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 雙曲線
+      std: true
+    textbook: 選修數學甲（下） 雙曲線
+    pattern:
+      key: MA-J2-3-3:T03
+      name: 雙曲線一般式與漸近線求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_數甲_g12s2e1_s3_15
+  section: 3
+  number: 15
+  type: multiple
+  page: 2
+  stem: 坐標平面上，方程式$y^{2}$＋4x＋4y＝0之圖形，選出正確的選項。
+  options:
+  - label: A
+    content: 頂點為 ( 1 ,－2 )
+  - label: B
+    content: 頂點為 ( 1 ,－3 )
+  - label: C
+    content: 準線方程式為x－1＝0
+  - label: D
+    content: 對稱軸方程式為y＋2＝0
+  explanation: '(A)(D)
+
+    13. (A) ×：P點坐標為 ( $\overline{OP}$×cos45° , $\overline{OP}$×sin45° ) (B) ×：承(A)可知P ( $\frac{1}{\sqrt{2}}\overline{OP}$ , $\frac{1}{\sqrt{2}}\overline{OP}$ )，代入$\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}$＝1可得$\frac{\overline{OP}^{2}}{2a^{2}}+\frac{\overline{OP}^{2}}{2b^{2}}$＝1 $\Rightarrow\overline{OP}^{2}$＝$\frac{1}{\frac{1}{2a^{2}}+\frac{1}{2b^{2}}}$＝$\frac{2a^{2}b^{2}}{a^{2}+b^{2}}\Rightarrow\overline{OP}=\sqrt{\frac{2a^{2}b^{2}}{a^{2}+b^{2}}}$。 (C) ○：承(B)可知正確。 (D) ○：$\left[ \begin{matrix}x'' \\ y''\end{matrix} \right]$＝$\left[ \begin{matrix}3 & 0 \\ 0 & 2\end{matrix} \right] \left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}3x \\ 2y\end{matrix} \right]\Rightarrow\left[ \begin{matrix}x \\ y\end{matrix} \right]$＝$\left[ \begin{matrix}\frac{x''}{3} \\ \frac{y''}{2}\end{matrix} \right]$代入$\frac{x^{2}}{a^{2}}$＋$\frac{y^{2}}{b^{2}}$＝1可得$\frac{(\frac{x''}{3})^{2}}{a^{2}}$＋$\frac{(\frac{y''}{2})^{2}}{b^{2}}$＝1 $\Rightarrow\frac{x''^{2}}{9a^{2}}$＋$\frac{y''^{2}}{4b^{2}}$＝1，所以新橢圓方程式為$\frac{x^{2}}{9a^{2}}$＋$\frac{y^{2}}{4b^{2}}$＝1。 故選(C)(D)。
+
+    14. 9($y^{2}$＋2y)－4($x^{2}$－4x)＝43 $\Rightarrow$ 9(y＋1)$^{2}$－4(x－2)$^{2}$＝36 $\Rightarrow\frac{(y+1)^{2}}{4}$－$\frac{(x-2)^{2}}{9}$＝1 可知中心為 ( 2 ,－1 )，a＝2，b＝3 $\Rightarrow$ c＝$\sqrt{a^{2}+b^{2}}$＝$\sqrt{13}$ (A) ×：頂點為 ( 2 ,－3 )，( 2 , 1 ) (B) ○：共軛軸長為2b＝6 (C) ○：兩焦點為 ( 2 ,－1＋$\sqrt{13}$ )，( 2 ,－1－$\sqrt{13}$ ) (D) ×：兩漸近線為3(y＋1)＋2(x－2)＝0，3(y＋1)－2(x－2)＝0，所以斜率乘積為$\frac{-2}{3}$×$\frac{2}{3}$＝$\frac{-4}{9}$ 故選(B)(C)。
+
+    15. 配方可得(y＋2)$^{2}$＝－4x＋4 $\Rightarrow$ (y＋2)$^{2}$＝－4(x－1) $\Rightarrow$ 4c＝－4 $\Rightarrow$ c＝－1 (A) ○：頂點為 ( 1 ,－2 ) (B) ×：焦點為 ( 0 ,－2 ) (C) ×：準線為x＝2 (D) ○：對稱軸為y＝－2 故選(A)(D)。'
+  tags:
+    unit:
+      code: MA-J2-3-1
+      book: 選修數學甲（下）
+      chapter: 二次曲線
+      title: 拋物線
+      std: true
+    textbook: 選修數學甲（下） 拋物線
+    pattern:
+      key: MA-J2-3-1:T08
+      name: 拋物線一般式配方求幾何要素
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

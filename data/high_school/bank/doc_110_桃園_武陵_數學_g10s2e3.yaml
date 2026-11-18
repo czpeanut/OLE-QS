@@ -1,0 +1,491 @@
+document:
+  id: doc_110_桃園_武陵_數學_g10s2e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 3
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 110學年度第2學期第3次定期評量 高一數學科試題
+  exam_name: 110學年度第2學期第3次定期評量
+  source_file: 高一/數學/110/2-3/桃園/武陵.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 10 分，共 20 分）
+    count: 2
+  - ord: 2
+    name: 二、填充題（每題 7 分，共 63 分）
+    count: 9
+  - ord: 3
+    name: 三、計算證明及混合題（共 17 分）
+    count: 3
+questions:
+- id: doc_110_桃園_武陵_數學_g10s2e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 試問下列敘述哪些正確？
+  options:
+  - label: A
+    content: 若 cos100°＝k，則 tan（－260°）＝$\frac{\sqrt{1-k^{2}}}{-k}$
+  - label: B
+    content: 若θ為第四象限角，則$\frac{\theta}{2}$為第二象限角
+  - label: C
+    content: 若 sinθ＝sin$\varphi$，則θ、$\varphi$ 是同界角
+  - label: D
+    content: 若θ$_{n}$＝n×45°，n 為正整數，且 1 ≤ n ≤ 100，則有 13 個可能的 n 值可使θ$_{n}$ 為第一象限角
+  - label: E
+    content: 若標準位置角θ的始邊為 x 軸正向，終邊上一點 P 的坐標為 P（x，y），且 sinθ＝$\frac{3}{5}$，則 y＝3
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：由 cos100°＝k 可知 tan100°＝$\frac{\sqrt{1-k^{2}}}{k}$
+
+    則 tan（－260°）＝tan100°＝$\frac{\sqrt{1-k^{2}}}{k}$
+
+    (B)╳：不一定，反例：θ＝660° 為第四象限角
+
+    但$\frac{\theta}{2}$＝330° 為第四象限角
+
+    (C)╳：不一定，反例：θ＝30°，$\varphi$＝150°
+
+    sin30°＝sin150°＝$\frac{1}{2}$，但 30°，150° 不是同界角
+
+    (D)○：若為第一象限角，則 n＝8k＋1，k 為 0 或正整數
+
+    又 1 ≤ n ≤ 100，得 k＝0，1，2，……，12
+
+    即 n＝1，9，17，……，97，共 13 個 n 值
+
+    (E)╳：不一定，反例：$P\left( \frac{4}{5} , \frac{3}{5} \right)$，則 sinθ＝$\frac{3}{5}$，但 y＝$\frac{3}{5}$
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T07
+      name: 同界角、象限判別與單位圓定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_g10s2e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列哪些選項的條件有可能成立？
+  options:
+  - label: A
+    content: △ABC 中，sinA、sinB、sinC 均小於$\frac{1}{2}$
+  - label: B
+    content: △ABC 中，若$\overline{AC}$＝4，$\overline{AB}$＝6，∠B＝30°，則△ABC 為鈍角三角形
+  - label: C
+    content: △ABC 中，若$\overline{AC}$＝4，sinA＝$\frac{1}{3}$，sinB＝$\frac{1}{2}$，恰可決定唯一的△ABC
+  - label: D
+    content: △ABC 中，若$\overline{AC}$＝4，$\overline{BC}$＝2，sinA＝$\frac{1}{3}$，恰可決定唯一的△ABC
+  - label: E
+    content: 可找到△ABC 滿足$\overline{AC}$＝4，$\overline{BC}$＝2，cosA＝$\frac{1}{3}$
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：當∠A＝160°，∠B＝∠C＝10°
+
+    則 sinA、sinB、sinC 均小於$\frac{1}{2}$，滿足條件
+
+    (B)○：由正弦定理得$\frac{4}{\sin B}$＝$\frac{6}{\sin C}$⇒ sinC＝$\frac{3}{4}$，可取銳角 C 使得 sinC＝$\frac{3}{4}$
+
+    ∵sinC＝$\frac{3}{4}$＜$\frac{\sqrt{3}}{2}$＝sin60°
+
+    ∴∠C＜60°，∠A＞90°
+
+    故△ABC 為鈍角三角形
+
+    (C)╳：不一定，∠B 可能為 30° 或 150° 皆有可能
+
+    (D)╳：由正弦定理得$\frac{2}{\sin A}$＝$\frac{4}{\sin B}$⇒ sinB＝$\frac{2}{3}$
+
+    若∠B 為銳角，必有△ABC
+
+    若∠B 為鈍角，cosB＝$-\frac{\sqrt{5}}{3}$＞$-\frac{\sqrt{3}}{2}$＝cos150° ⇒ 90°＜∠B＜150°
+
+    又 cosA＝$\frac{2\sqrt{2}}{3}$＞$\frac{\sqrt{3}}{2}$＝cos30° ⇒ 0°＜∠A＜30°
+
+    ⇒∠C 為銳角，亦有△ABC
+
+    故不唯一
+
+    (E)╳：sinA＝$\frac{2\sqrt{2}}{3}$，由正弦定理得$\frac{2}{\sin A}$＝$\frac{4}{\sin B}$
+
+    ⇒ sinB＝$\frac{4\sqrt{2}}{3}$＞1（不合）
+
+    故選(A)(B)'
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T06
+      name: SSA三角形解個數判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_g10s2e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 設 a＝sin20°，b＝cos（－20°），c＝－cos150°，d＝tan50°，e＝tan390°，請比較這五個數大小為＿＿＿＿。
+  answer:
+  - d＞b＞c＞e＞a
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'a＝sin20°
+
+    b＝cos（－20°）＝cos20°＝sin70°
+
+    c＝－cos150°＝cos30°＝sin60°＝$\frac{\sqrt{3}}{2}$
+
+    d＝tan50°＞tan45°＝1
+
+    e＝tan390°＝tan30°＝$\frac{1}{\sqrt{3}}$＝$\frac{\sqrt{3}}{3}$
+
+    ⇒ d＞b＞c＞a
+
+    又 c＞e＞$\frac{1}{2}$＝sin30°＞sin20°＝a
+
+    ∴d＞b＞c＞e＞a'
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T01
+      name: 廣義角誘導公式化簡與比大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_g10s2e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 若θ為第三象限角，試化簡 $\frac{\sin (\theta - 180^{∘})}{\tan ( 180^{∘}+\theta )}$×$\frac{\tan ( -\theta )}{\sin (90^{∘}+\theta )}$×$\frac{\cos (\theta -270^{∘})}{\tan ( 180^{∘}-\theta )}$×$\frac{\cos (-\theta )}{\sin ( -\theta )}$＝ ＿＿＿＿。
+  answer:
+  - －cosθ
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T01
+      name: 廣義角誘導公式化簡與比大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_g10s2e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 角θ滿足 6 cosθ－$\frac{9}{\cos \theta}$＝11 tanθ，試求 sinθ＝＿＿＿＿。
+  answer:
+  - －$\frac{1}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T05
+      name: 三角比平方和差知一求多
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_g10s2e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 在△ABC 中，$\overline{BC}$＝6，$\overline{AC}$＝10，$\overline{AB}$＝14，若∠C 的角平分線交$\overline{AB}$於 D，試求$\overline{CD}$＝ ＿＿＿＿。
+  answer:
+  - $\frac{15}{4}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T03
+      name: 海龍公式面積與角平分線長
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_g10s2e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 如右圖，有一圓內接箏形 ABCD，其中$\overline{AB}$＝$\overline{AD}$，$\overline{CB}$＝$\overline{CD}$，已知$\overline{AB}$＝8，且箏形 ABCD 的面積為 48，若∠ACB＝θ，則 cosθ＝ ＿＿＿＿。
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_110_桃園_武陵_數學_g10s2e3/s2_5_f1.png
+    crop:
+      page: 1
+      rect:
+      - 453.2
+      - 708.8
+      - 564.3
+      - 823.1
+  answer:
+  - $\frac{3}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T01
+      name: 正弦定理與圓內接四邊形求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_g10s2e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 在極坐標平面上有三點 A[2，30°]、B[4，60°]、C[6，150°]，試求△ABC 之面積為＿＿＿＿。
+  answer:
+  - 14－$3\sqrt{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-2
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 廣義角三角比與極坐標
+      std: true
+    textbook: 數學2（必修） 廣義角三角比與極坐標
+    pattern:
+      key: MA-2-4-2:T03
+      name: 極坐標與直角坐標互換及面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_桃園_武陵_數學_g10s2e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 設△ABC 中，∠C 為直角，點 D 在斜邊$\overline{AB}$上，$\overline{AC}$＝9，$\overline{BC}$＝8，$\overline{CD}$＝6。已知△ACD 之內切圓與△BCD 之內切圓有相同的半徑，試求△ACD 面積是△BCD 面積的＿＿＿＿倍。
+  answer:
+  - $\frac{15}{14}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T05
+      name: 內切圓半徑與中線定理
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_g10s2e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: <u>森森</u>乘坐熱氣球飛到空中的一點 P，此時俯視水平地面上相異三點 A、B、C，發現此三點的俯角皆為 60°，若$\overline{AB}$＝$\overline{AC}$＝30 公尺，$\overline{BC}$＝40 公尺，試求此時熱氣球 P 點的高度為 ＿＿＿＿公尺。
+  answer:
+  - $9\sqrt{15}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T04
+      name: 平面與立體三角測量應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_g10s2e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: △ABC 中，∠BAC＝45°，$\overline{AB}$＝$4\sqrt{2}$，$\overline{AC}$＝3，若 D、E 兩點分別在$\overline{AB}$、$\overline{AC}$上，試求 $\overline{BE}$＋$\overline{DE}$＋$\overline{CD}$的最小可能值為＿＿＿＿。
+  answer:
+  - $\sqrt{65}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T02
+      name: 餘弦定理求邊長角度與摺痕
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_110_桃園_武陵_數學_g10s2e3_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '在△ABC 中，用 a，b，c 分別代表∠A，∠B，∠C 的對邊長，且 s＝$\frac{a+b +c}{2}$，試證明△ABC 的面積為$\sqrt{s (s-a)(s-b)(s-c)}$。（8 分）
+
+    證：'
+  answer:
+  - △ABC 的面積為
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T03
+      name: 海龍公式面積與角平分線長
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_g10s2e3_s3_2
+  section: 3
+  number: 2
+  type: single
+  page: 2
+  stem: '現實生活中，三角測量所應用的領域廣泛，以「航海」為例，三角測量可用來計算海上目標物在航行期間難以實際測量的數據。如下圖，有一筆直東西向海岸線（以上方為正北方），北方為大海，岸邊有兩座觀測站 A、B，兩觀測站相距 9 公里。（此為示意圖，不一定代表真實的長度或比例）
+
+    今有一艘漁船於海上航行，全程固定朝某一方位前進，航行期間，觀測站對漁船方位進行兩次測量。
+
+    第一次觀測時，A、B 觀測站測得漁船方位分別為東 30° 北、正北方。
+
+    第二次觀測時，A、B 觀測站測得漁船方位分別為東 75° 北、北 45° 西。
+
+    若想根據以上資料求得漁船的前進方向及距離，試回答以下問題：
+
+    (1) 第一次觀測時，漁船與 A 觀測站間的距離為多少公里？（單選，2 分）
+
+    (2) 若第二次觀測時，「A 觀測站與漁船連線」及「漁船前進路線」所夾的角為θ （0°＜θ＜180°），試求θ＝？（3 分）'
+  options:
+  - label: A
+    content: $3\sqrt{3}$公里
+  - label: B
+    content: $6\sqrt{3}$公里
+  - label: C
+    content: $\frac{9}{2}$公里
+  - label: D
+    content: 3 公里
+  - label: E
+    content: $\frac{9\sqrt{2}}{2}$公里
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_110_桃園_武陵_數學_g10s2e3/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 246.95
+      - 416.6
+      - 371.15
+      - 506.25
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T04
+      name: 平面與立體三角測量應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_桃園_武陵_數學_g10s2e3_s3_3
+  section: 3
+  number: 3
+  type: calc
+  page: 2
+  stem: 在兩次觀測的間隔期間，漁船往什麼方位前進？前進了多少公里？（1 分，3 分）
+  tags:
+    unit:
+      code: MA-2-4-3
+      book: 數學2（必修）
+      chapter: 三角比
+      title: 三角比的性質
+      std: true
+    textbook: 數學2（必修） 三角比的性質
+    pattern:
+      key: MA-2-4-3:T04
+      name: 平面與立體三角測量應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

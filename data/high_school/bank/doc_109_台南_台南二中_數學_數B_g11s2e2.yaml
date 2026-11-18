@@ -1,0 +1,588 @@
+document:
+  id: doc_109_台南_台南二中_數學_數B_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 109
+  semester: 2
+  exam_seq: 2
+  city: 台南
+  school_short: 台南二中
+  school: 國立臺南第二高級中學
+  title: 國立臺南第二高級中學 109學年度第2學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 109學年度第2學期第2次定期評量
+  source_file: 高二/數學/109/2-2/台南/台南二中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、 單選題：
+    count: 2
+  - ord: 2
+    name: 二、 多選題：
+    count: 3
+  - ord: 3
+    name: 三、 填充題：
+    count: 15
+questions:
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 設A，B為兩獨立事件，且P(B)＝$\frac{3}{5}$，P ( A | B )＝$\frac{1}{2}$，則P ( A∪B) 為何？
+  options:
+  - label: A
+    content: $\frac{1}{2}$
+  - label: B
+    content: $\frac{3}{4}$
+  - label: C
+    content: $\frac{2}{5}$
+  - label: D
+    content: $\frac{3}{5}$
+  - label: E
+    content: $\frac{4}{5}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 因為A、B為獨立事件，所以P ( A∩B )＝P (A) P (B) ⇒ P ( A | B )＝$\frac{P(A\cap B)}{P(B)}=\frac{P(A)P(B)}{P(B)}=P(A)=\frac{1}{2}$ ⇒ P ( A∪B )＝P (A)＋P (B)－P ( A∩B )＝$\frac{1}{2}+\frac{3}{5}-\frac{1}{2}\times \frac{3}{5}=\frac{8}{10}=\frac{4}{5}$ 故選(E)
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 擲一粒公正的骰子兩次，若已知點數和大於8，則第一次點數大於4的機率為何？
+  options:
+  - label: A
+    content: $\frac{2}{3}$
+  - label: B
+    content: $\frac{3}{4}$
+  - label: C
+    content: $\frac{7}{10}$
+  - label: D
+    content: $\frac{4}{5}$
+  - label: E
+    content: $\frac{6}{7}$
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 討論如下 (i) 點數和為9：( 3 , 6 )，( 4 , 5 )，( 5 , 4 )，( 6 , 3 ) (ii) 點數和為10：( 4 , 6 )，( 5 , 5 )，( 6 , 4 ) (iii) 點數和為11：( 5 , 6 )，( 6 , 5 ) (iv) 點數和為12：( 6 , 6 ) 所以P ( 第一次點數大於41點數和大於8 )＝$\frac{7}{10}$ 故選(C)
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設A、B為樣本空間S中的兩事件，P
+  options:
+  - label: A
+    content: ＝$\frac{1}{4}$，P
+  - label: B
+    content: ＝$\frac{5}{6}$，P ( A∪B )＝$\frac{11}{12}$，試問下列哪些選項是正確的？ (A) P ( A∩B )＝$\frac{1}{12}$ (B) P ( B | A )＝$\frac{2}{3}$
+  - label: C
+    content: P ( A | B )＝$\frac{2}{5}$
+  - label: D
+    content: P ( A' | B' )＝$\frac{1}{2}$
+  - label: E
+    content: P ( B | A' )＝$\frac{8}{9}$( A'、B'分別表示A、B的餘事件 )
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ×：P ( A∪B )＝P (A)＋P (B)－P ( A∩B ) ⇒ $\frac{11}{12}=\frac{1}{4}+\frac{5}{6}-P(A\cap B)$ ⇒ P ( A∩B )＝$\frac{1}{6}$ (B)○：P ( B | A )$=\frac{P(A\cap B)}{P(A)}=\frac{\frac{1}{6}}{\frac{1}{4}}=\frac{2}{3}$ (C) ×：P ( A | B )$=\frac{P(A\cap B)}{P(B)}=\frac{\frac{1}{6}}{\frac{5}{6}}=\frac{1}{5}$ (D)○：P ( A' | B' )$=\frac{P(A'\cap B')}{P(B')}=\frac{P(A\cup B')}{P(B')}=\frac{1-P(A\cup B)}{1-P(B)}=\frac{1-\frac{11}{12}}{1-\frac{5}{6}}=\frac{1}{2}$ (E)○：P ( B | A' )$=\frac{P(A'\cap B)}{P(A')}=\frac{P(B)-P(A\cap B)}{1-P(A)}=\frac{\frac{5}{6}-\frac{1}{6}}{1-\frac{1}{4}}=\frac{\frac{2}{3}}{\frac{3}{4}}=\frac{8}{9}$ 故選(B)(D)(E)
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹與選項(A)(B)排版斷行錯位，P(A)與P(B)符號遺失
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設一袋中有6個白球及4個紅球，每次從此袋中任意取出一球，每球被取到的機會均等，取後不放回，連續取四次。設A表第一次取到白球的事件，B表第三次取到白球的事件，C表取四次球中恰有三次為白球的事件，則下列哪些選項是正確的？
+  options:
+  - label: A
+    content: P
+  - label: B
+    content: ＝$\frac{3}{5}$ (B) P ( B | A )＝$\frac{5}{9}$
+  - label: C
+    content: P ( C | A )＝$\frac{5}{21}$
+  - label: D
+    content: 事件A與事件B為獨立事件
+  - label: E
+    content: P ( C | A∩B )＝$\frac{2}{7}$
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)○：P(B)＝$\frac{6}{10}$＝$\frac{3}{5}$ (B)○：P ( B | A )＝$\frac{5}{9}$ (C) ×：P ( C | A )＝$\frac{5}{9}\times \frac{4}{8}\times \frac{4}{7}+\frac{5}{9}\times \frac{4}{8}\times \frac{4}{7}+\frac{4}{9}\times \frac{5}{8}\times \frac{4}{7}=\frac{10}{21}$ (D) ×：P ( B | A )≠P(B) ⇒ A與B不為獨立事件 (E) ×：P ( C | A∩B )＝$\frac{P(A\cap B\cap C)}{P(A\cap B)}=\frac{\frac{6}{10}\times \frac{5}{9}\times \frac{4}{8}\times \frac{4}{7}+\frac{6}{10}\times \frac{4}{9}\times \frac{5}{8}\times \frac{4}{7}}{\frac{6}{10}\times \frac{5}{9}}=\frac{4}{7}$ 故選(A)(B)
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T07
+      name: 多階段試驗樹狀圖與機率分配
+    labeled_by: agent
+    label_confidence: high
+    label_note: 選項(A)(B)排版斷行錯位，P(B)符號遺失
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 1
+  stem: 選出正確的選項。
+  options:
+  - label: A
+    content: 若A、B均為樣本空間S中的非空事件，且P ( B | A )＝1，則A$\subseteq$B
+  - label: B
+    content: 設A、B、C為樣本空間S中的事件，若A、B為獨立事件，B、C亦為獨立事件，則A、C必為獨立事件
+  - label: C
+    content: 若A、B為樣本空間中的兩互斥事件，則A、B必為獨立事件
+  - label: D
+    content: 若A、B為樣本空間S中的兩個非空事件，且A、B為互斥事件，則A'、B'必為互斥事件。( A'、B'分別表示A、B的餘事件 )
+  - label: E
+    content: 若A'、B'樣本空間S中的獨立事件，則A、B必為獨立事件
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A)○：P ( B | A )＝$\frac{P(A\cap B)}{P(A)}$＝1 ⇒ P ( A∩B )＝P (A) ⇒ A$\subseteq$B (B) ×：A與C不一定為獨立事件 (C) ×：A與B不一定為獨立事件 (D) ×：因為A，B為互斥事件，所以A∩B＝ψ ⇒ A'∩B'≠ψ，即A'與B'不為互斥事件 (E)○：若A'與B'為獨立事件，則P ( A'∩B' )＝P ( A' ) P ( B' ) ⇒ 1－P ( A∪B )＝( 1－P (A) ) ( 1－P (B) )＝1－P (A) P (B)＋P ( A∩B ) ⇒ 1－( P (A)＋P (B)－P ( A∩B )＝1－P (A)－P (B)＋P ( A∩B ) ⇒ P ( A∩B )＝P (A) P (B)，即A與B為獨立事件 故選(A)(E)
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T06
+      name: 條件機率性質與集合運算判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 1
+  stem: 甲袋中有4個紅球、3個白球、乙袋中有5個紅球、2個白球，丙袋中有3個紅球、4個白球。今擲一公正骰子一次，若出現點數為4、5或6，從甲袋同時抽出兩球；若出現點數為2或3，則從乙袋同時抽出兩球；若出現點數為1，則從丙袋同時抽出兩球。已知抽出的兩球為異色球，則兩球來自乙袋的機率為＿＿＿＿。
+  answer:
+  - $\frac{5}{17}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 來自乙袋 | 兩球為異色球 )$=\frac{\frac{2}{6}\times \frac{C_{1}^{5}C_{1}^{2}}{2}}{\frac{3}{6}\times \frac{C_{1}^{4}C_{1}^{3}}{C_{2}^{7}}+\frac{2}{6}\times \frac{C_{1}^{5}C_{1}^{2}}{C_{2}^{7}}+\frac{1}{6}\times \frac{C_{1}^{3}C_{1}^{4}}{C_{2}^{7}}}=\frac{20}{36+20+12}=\frac{5}{17}$
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T03
+      name: 貝氏定理與袋球抽樣事後機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 1
+  stem: 一箱中有13枚硬幣，其中有3枚兩面都是人頭，有3枚兩面都是字，有7枚一面人頭一面字。今手從箱中握住一枚硬幣，取出後打開手掌，發現其中一面為人頭，試求另一面是字的條件機率。＿＿＿＿。
+  answer:
+  - $\frac{7}{13}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 另一面是字 | 其中一面為人頭 )$=\frac{\frac{7}{13}\times \frac{1}{2}}{\frac{3}{13}\times 1+\frac{7}{13}\times \frac{1}{2}}=\frac{7}{13}$
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T03
+      name: 貝氏定理與袋球抽樣事後機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 1
+  stem: '設A、B為樣本空間S中的兩事件，P(A)＝$\frac{2}{5}$，P(A∪B)＝$\frac{3}{4}$，試問：
+
+    (1) 若A與B為互斥事件，則P(B)＝＿＿＿＿。
+
+    (2) 若A與B為獨立事件，則P(B)＝＿＿＿＿'
+  explanation: (1) 若A與B為互斥事件，則A∩B＝ψ ⇒ P ( A∪B )＝P (A)＋P (B)－P ( A∩B ) ⇒ $\frac{3}{4}$＝$\frac{2}{5}$＋P (B)－0 ⇒ P (B)＝$\frac{3}{4}$－$\frac{2}{5}$＝$\frac{7}{20}$ (2) 若A與B為獨立事件，則P ( A∩B )＝P (A) P (B) ⇒ P ( A∪B )＝P (A)＋P (B)－P ( A∩B ) ⇒ $\frac{3}{4}$＝$\frac{2}{5}$＋P (B)－$\frac{2}{5}$P (B) ⇒ $\frac{3}{5}$P (B)＝$\frac{3}{4}$－$\frac{2}{5}$＝$\frac{7}{20}$ ⇒ P (B)＝$\frac{7}{12}$
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 1
+  stem: 某公司員工中有20％為行政人員，50％為技術人員，30％為研發人員。這些員工中，60％的行政人員有碩士文憑，x％的技術人員有碩士文憑，80％的研發人員有碩士文憑。若從有碩士文憑的員工中隨機抽選一人，他 ( 或她 ) 是技術人員的機率為$\frac{5}{23}$，則實數x之值為＿＿＿＿。
+  answer:
+  - '20'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 技術人員 | 碩士文憑 )$=\frac{0.5\times \frac{x}{100}}{0.2\times 0.6+0.5\times \frac{x}{100}+0.3\times 0.8}=\frac{5}{23}$ ⇒ 2.3x＝12＋0.5x＋24 ⇒ 1.8x＝36 ⇒ x＝20
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T05
+      name: 貝氏定理與人員分類及誠實推論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 1
+  stem: 已知投擲一個不均勻的硬幣一次，出現正面的機率為$\frac{1}{3}$，出現反面的機率為$\frac{2}{3}$。今投擲該硬幣五次，則在第五次投擲時，恰出現第三次正面的機率為＿＿＿＿。
+  answer:
+  - $\frac{8}{81}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 所求$=(C_{2}^{4}\times (\frac{1}{3})^{2}\times (\frac{2}{3})^{2})\times \frac{1}{3}=\frac{8}{81}$ 前4次為2正2反
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 1
+  stem: 實力相當的<u>小明</u>與<u>大雄</u>兩人比賽網球 ( 兩人獲勝機率皆為$\frac{1}{2}$)，每盤比賽結果互不影響，且沒有和局情況。規定先連勝二盤或先勝三盤者獨得獎金80000元。已知比賽完第一盤是<u>小明</u>獲勝，但因大雨緣故，大會決定不再繼續比賽，且為公平起見，大會將依兩人繼續比賽之獲勝機率大小比例來分配獎金，試<u>大雄</u>應分配多少獎金才公平？＿＿＿＿。
+  answer:
+  - 25000元
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 最後由<u>小明</u>獲勝 | 第一盤為<u>小明</u>獲勝 )＝$\frac{1}{2}$＋($\frac{1}{2}$)$^{3}$＋($\frac{1}{2}$)$^{4}$＝$\frac{11}{16}$ 故<u>大雄</u>應分配的獎金＝80000×( 1－$\frac{11}{16}$ )＝25000 ( 元 )
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T07
+      name: 多階段試驗樹狀圖與機率分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 1
+  stem: 已知某種快篩試劑對新冠肺炎檢驗的可靠度如下：出現「偽陰率」為3％ ( 即感染者做檢驗有3％的機會呈陰性反應，其他呈陽性反應 )，而出現「偽陽率」為1％ ( 即未感染者做檢驗有1％的機會呈陽性反應，其他呈陰性反應 )。已知某社區有2％的民眾為新冠肺炎感染者，今從此社區任意抽選一人並使用這種快篩試劑檢驗，若檢驗結果呈陽性反應，則此人確實感染新冠肺炎的機率為＿＿＿＿。
+  answer:
+  - $\frac{97}{146}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T04
+      name: 貝氏定理與醫學篩檢誤判反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 1
+  stem: '某校教師針對高二學生隨機選出50名男學生及30名女學生，針對新課網適應性的調查，每一位學生都要填答，只能填答適應或不適應。結果有48名學生填答無法適應新教材內容，而男學生及女學生適應與不適應新教材內容的人數如下表所列。假設學生性別與適應狀況為獨立事件，則正整數序對 ( a , b , c , d )＝＿＿＿＿。
+
+    | 適應狀況 性別 | 適應 | 不適應 (48人) |
+
+    | --- | --- | --- |
+
+    | 男生 ( 50人) | a人 | b人 |
+
+    | 女生 ( 30人) | c人 | d人 |'
+  answer:
+  - ( 20 , 30 , 12 , 18 )
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 可知b＝50－a，d＝48－b＝48－( 50－a )＝a－2，c＝30－d＝30－( a－2 )＝32－a 因為性別與適應狀況為獨立事件，所以P ( 男性 | 適應 )＝P ( 男生 ) ⇒ $\frac{a}{32}=\frac{50}{80}$ ⇒ a＝20 ⇒ b＝50－20＝30，c＝32－20＝12，d＝20－2＝18 故序組 ( a , b , c , d )＝( 20 , 30 , 12 , 18 )
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T08
+      name: 獨立事件與列聯表或不等式綜合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 2
+  stem: 有一部按鈕遊戲機，每投幣一枚，可按遊戲三次。已知第一次按下會出現黑色或白色的機率各為$\frac{1}{2}$；第二或第三次按下，出現與前一次同色的機率為$\frac{1}{3}$，不同色的機率為$\frac{2}{3}$。若<u>小明</u>投幣一枚，按鈕三次出現兩次黑色一次白色的機率為＿＿＿＿。( 化為最簡分數 )
+  answer:
+  - $\frac{4}{9}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 所求$=\underline{\frac{1}{2}\times \frac{1}{3}\times \frac{2}{3}}+\underline{\frac{1}{2}\times \frac{2}{3}\times \frac{2}{3}}+\underline{\frac{1}{2}\times \frac{2}{3}\times \frac{1}{3}}=\frac{8}{18}=\frac{4}{9}$ 黑黑白 黑白黑 白黑黑
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T07
+      name: 多階段試驗樹狀圖與機率分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 2
+  stem: 甲說實話的機率為$\frac{3}{4}$，乙說實話的機率為$\frac{2}{3}$，且甲、乙二人說實話與否互不影響。今袋中有5個黑球，3個白球，從袋中任取一球，若甲、乙二人看過之後均說是白球，則此球確實是白球之機率為＿＿＿＿。
+  answer:
+  - $\frac{18}{23}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T05
+      name: 貝氏定理與人員分類及誠實推論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_11
+  section: 3
+  number: 11
+  type: fill
+  page: 2
+  stem: 某校輔導室欲評估心理測驗偵測青少年憂鬱症的誤判率 ( 即偵測錯誤的機率 )，共有480人接受此心理測驗，測驗前已知樣本中有100人有青少年憂鬱症。測驗後，心理測驗判斷有青少年憂鬱症者有82人，其中真正有青少年憂鬱症有65人，試問此心理測驗的誤判率為＿＿＿＿。( 化成最簡分數 )
+  answer:
+  - $\frac{13}{120}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_12
+  section: 3
+  number: 12
+  type: fill
+  page: 2
+  stem: 某生技公司開發出檢驗肝炎的新方法，患有肝炎的人經此方法檢驗後，有90％的檢驗結果會呈現陽性反應，沒患肝炎的人，則有10％檢驗結果也會呈現陽性反應。經統計得知，某地區人口中有20％的人確實患有肝炎。已知此地區中的某人經此方法連續檢驗兩次，且兩次檢驗的結果互不影響。若兩次檢驗的結果皆為陽性反應，求此人確實罹患有肝炎的機率？＿＿＿＿。
+  answer:
+  - $\frac{81}{85}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T04
+      name: 貝氏定理與醫學篩檢誤判反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_13
+  section: 3
+  number: 13
+  type: fill
+  page: 2
+  stem: 一電視節目的獲勝者在節目的最後可進行拿獎金的活動，活動方式如下：獲勝者從三個寶箱中選出一個，其中有兩個寶箱上鎖。若寶箱沒上鎖，則可直接打開寶箱拿獎金。若寶箱上鎖，則有一次的機會，可從7把鑰匙中任取出3把來開寶箱 ( 每把鑰匙被取到的機會均等 )，並已知只有一把鑰匙能打開寶箱取得獎金。假設某人取得獎金，則此人是取到正確鑰匙打開寶箱的條件機率為＿＿＿＿。
+  answer:
+  - $\frac{6}{13}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: P ( 正確鑰匙打開寶箱 | 取得獎金 )$=\frac{\frac{2}{3}\times \frac{C_{1}^{1}C_{2}^{6}}{2}}{\frac{1}{3}\times 1+\frac{2}{3}\times \frac{C_{1}^{1}C_{2}^{6}}{C_{3}^{7}}}=\frac{6}{13}$＝$\frac{1}{2}$
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T03
+      name: 貝氏定理與袋球抽樣事後機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_14
+  section: 3
+  number: 14
+  type: fill
+  page: 2
+  stem: 設A、B為樣本空間S中的兩獨立事件，且P(A)＋P(B)＝1.2，則P(A∪B)的最小值為＿＿＿＿
+  explanation: 因為A與B為獨立事件，所以P ( A∩B )＝P (A) P (B)，由算幾不等式可得$\frac{P(A)+P(B)}{2}\geq \sqrt{P(A)P(B)}$ ⇒ P (A) P (B) ≤ 0.36 ⇒ P ( A∪B )＝P (A)＋P (B)－P ( A∩B )＝1.2－P (A) P (B) ≥ 1.2－0.36＝0.84 故P ( A∪B ) 的最小值為0.84
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T08
+      name: 獨立事件與列聯表或不等式綜合
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_台南_台南二中_數學_數B_g11s2e2_s3_15
+  section: 3
+  number: 15
+  type: fill
+  page: 2
+  stem: 已知<u>小豪</u>投籃的命中率是$\frac{1}{3}$，如果<u>小豪</u>連續投籃n次，至少一次進球的機率大於0.99，則最小正整數n為＿＿＿＿。( log 2$\approx$0.3010，log 3$\approx$0.4771 )
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 依題意可知1－($\frac{2}{3}$)$^{n}$＞0.99 ⇒ ($\frac{2}{3}$)$^{n}$＜0.01 ⇒ log ($\frac{2}{3}$)$^{n}$＜log 0.01 ⇒ n ( log 2－log 3 )＜－2 ⇒ n＞$\frac{2}{\log 3-\log 2}≃\frac{2}{0.4771-0.301}\approx 11.4$ 故最小正整數n為12
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

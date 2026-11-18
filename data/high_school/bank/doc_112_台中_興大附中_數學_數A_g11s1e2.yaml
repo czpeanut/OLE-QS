@@ -1,0 +1,744 @@
+document:
+  id: doc_112_台中_興大附中_數學_數A_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 112學年度第1學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 112學年度第1學期第2次定期評量
+  source_file: 高二/數學/112/1-2/台中/興大附中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 18 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 24 分；錯一個選項得 6 分，錯兩個選項得 2 分，錯三個選項以上或未作答得零分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 50 分）
+    count: 10
+  - ord: 4
+    name: 四、計算題（共 8 分）
+    count: 1
+questions:
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 滿足不等式$\frac{1}{112}\leq(\sqrt{11})^{x}\leq$2023 的整數 x 共有多少個？
+  options:
+  - label: A
+    content: 9 個
+  - label: B
+    content: 10 個
+  - label: C
+    content: 11 個
+  - label: D
+    content: 12 個
+  - label: E
+    content: 13 個
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$(\sqrt{11})^{- 4}$＝$\frac{1}{(\sqrt{11})^{4}}$＝$\frac{1}{11^{2}}$＝$\frac{1}{121}$＜$\frac{1}{112}$
+
+    $(\sqrt{11})^{- 3}$＝$\frac{1}{(\sqrt{11})^{3}}$＝$\frac{1}{11\sqrt{11}}$＞$\frac{1}{11\times 4}$＞$\frac{1}{112}\Rightarrow$x$\geq$－3 ……………①
+
+    $(\sqrt{11})^{6}$＝$11^{3}$＝121．11＝1331＜2023
+
+    $(\sqrt{11})^{7}$＝$11^{3} \cdot \sqrt{11}$＞$11^{3}$．3＝3993＞2023$\Rightarrow$x$\leq$6 ………………②
+
+    由①、②得－3$\leq$x$\leq$6
+
+    整數 x 共有 10 個
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T08
+      name: 指數不等式化簡與區間
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 某品牌計算機在計算對數 $log_{a}$b 時需按 log （ a ， b ）。某生在計算 $log_{a}$b 時（其中 a＞1 且 0＜b＜1）順序弄錯，誤按 log （ b ， a ），所得為正確值的$\frac{16}{9}$倍。試選出 a，b 間的關係式為何？
+  options:
+  - label: A
+    content: $a^{3}$＝$b^{4}$
+  - label: B
+    content: $a^{4}$＝$b^{3}$
+  - label: C
+    content: $a^{16}$＝$b^{9}$
+  - label: D
+    content: $a^{3}$×$b^{4}$＝1
+  - label: E
+    content: $a^{4}$×$b^{3}$＝1
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵a＞1，且 0＜b＜1
+
+    ∴$log_{a}$b＜0
+
+    $log_{b}$a＝$\frac{16}{9}\log _{a}b$
+
+    $\Rightarrow\frac{1}{\log _{a}b}$＝$\frac{16}{9}\log _{a}b$
+
+    $\Rightarrow$（$log_{a}$b）$^{2}$＝$\frac{9}{16}$
+
+    $\Rightarrowlog_{a}$b＝$\pm \frac{3}{4}$（正不合）
+
+    $\Rightarrow$b＝$a^{-\frac{3}{4}}$
+
+    $\Rightarrowb^{4}$＝$a^{－3}$
+
+    $\Rightarrowa^{3}b^{4}$＝1
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T13
+      name: 對數變數代換與倒數關係求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 滿足不等式$\log _{\frac{1}{3}}\log _{4}(x)\geq$－1，的整數 x 共有多少個？
+  options:
+  - label: A
+    content: 63 個
+  - label: B
+    content: 64 個
+  - label: C
+    content: 65 個
+  - label: D
+    content: 66 個
+  - label: E
+    content: 67 個
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T03
+      name: 對數不等式求解與定義域
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 坐標平面上，在函數圖形 y＝$\left( \frac{1}{2} \right) ^{x}$上，標示 A、B、C、D 四個點，其 x 坐標分別為－1、0、1、2，請選出正確的選項。
+  options:
+  - label: A
+    content: 點 B 落在直線 AC 下方
+  - label: B
+    content: 在直線 AB、直線 BC、直線 CD 中，以直線 AB 的斜率最大
+  - label: C
+    content: A、B、C、D 四個點，以點 D 最靠近 x 軸
+  - label: D
+    content: 直線 y＝$x^{2}$ 與 y＝$\left( \frac{1}{2} \right) ^{x}$的圖形有兩個交點
+  - label: E
+    content: 在$\overline{AB}$、$\overline{BC}$、$\overline{CD}$中，以$\overline{AB}$最長
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T01
+      name: 指數函數圖形與單調性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 已知 log2$\approx$0.3010，log3$\approx$0.4771，請選出正確的選項。
+  options:
+  - label: A
+    content: $6^{100}$ 是 78 位數
+  - label: B
+    content: $2^{50}$＋$5^{20}$ 是 16 位數
+  - label: C
+    content: $2^{30}$＋$3^{20}$ 是 11 位數
+  - label: D
+    content: 將$\left( \frac{1}{6} \right) ^{100}$表示成小數後，從小數點後第 78 位開始出現不為 0 的數字
+  - label: E
+    content: 將（0.2）$^{100}$＋（0.5）$^{200}$ 表示成小數後，從小數點後第 61 位開始出現不為 0 的數字
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：log $6^{100}$＝100 log 6＝100（log 2＋log 3）
+
+    $\approx$100×（0.3010＋0.4771）＝77.81＝77＋0.81
+
+    ∵首數為 77 ∴$6^{100}$ 為 78 位數
+
+    (B)○：log $2^{50}$＝50 log 2$\approx$50×0.3010＝15.05＝15＋0.05
+
+    ∵首數為 15 ∴$2^{50}$ 為 16 位數
+
+    log $5^{20}$＝20 log 5＝$20\log \frac{10}{2}$＝20（log 10－log 2）
+
+    $\approx$20×（1－0.3010）＝20×0.6990＝13.98＝13＋0.98
+
+    ∵首數為 13 ∴$5^{20}$ 為 14 位數
+
+    則 $2^{50}$＋$5^{20}$ 為 16 位數
+
+    (C)╳：log $2^{30}$＝30 log 2$\approx$30×0.3010＝9.03＝9＋0.03
+
+    ∵首數為 9 ∴$2^{30}$ 為 10 位數
+
+    log $3^{20}$＝20 log 3$\approx$20×0.4771＝9.542＝9＋0.542
+
+    ∵首數為 9 ∴$3^{20}$ 為 10 位數
+
+    又 log 1＝0＜0.03＜0.3010＝log 2
+
+    log 3＝0.4771＜0.542＜0.6020＝log 4
+
+    則$2^{30}$＋$3^{20}$ 為 10 位數
+
+    (D)○：$\log \left( \frac{1}{6} \right) ^{100}$＝log $6^{－100}$＝－100 log 6
+
+    $\approx$－100×0.7781＝－77.81＝－78＋0.19
+
+    ∵首數為－78
+
+    ∴$\left( \frac{1}{6} \right) ^{100}$從小數點後第 78 位開始出現不為 0 的數字
+
+    (E)○：log（0.2）$^{100}$＝$\log \left( \frac{1}{5} \right) ^{100}$＝log $5^{－100}$＝－100 log 5
+
+    $\approx$－100×0.6990＝－69.9＝－70＋0.1
+
+    ∵首數為－70
+
+    ∴（0.2）$^{100}$ 從小數點後第 78 位開始出現不為 0 的數字
+
+    log（0.5）$^{200}$＝$\log \left( \frac{1}{2} \right) ^{200}$＝log $2^{－200}$＝－200 log 2
+
+    $\approx$－200×0.3010＝－60.2＝－61＋0.8
+
+    ∵首數為－61
+
+    ∴（0.5）$^{200}$ 從小數點後第 61 位開始出現不為 0 的數字
+
+    則（0.2）$^{100}$＋（0.5）$^{200}$ 從小數點後第 61 位開始出現不為 0 的數字
+
+    故選(A)(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T03
+      name: 首數與尾數的意義及應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 關於對數函數的圖形，下列選項哪些是正確的？
+  options:
+  - label: A
+    content: 設 0＜a＜b＜1，則$\frac{1}{2}(\log _{2}a +\log _{2}b)$＞$\sqrt{\log _{2}a\times \log _{2}b}$
+  - label: B
+    content: 設 0＜a＜b＜1，則$\log _{2}\left( \frac{a +b}{2} \right)$＞$\frac{1}{2}(\log _{2}a +\log _{2}b)$
+  - label: C
+    content: 當 0＜a＜1 時，y＝$log_{a}$x 與 y＝$a^{x}$ 的圖形對稱於直線 y＝x
+  - label: D
+    content: 當 a＞1 時，y＝$log_{a}$x 與 y＝$\log _{\frac{1}{a}}x$的圖形對稱於 x 軸
+  - label: E
+    content: 當 a＞1 時，y＝$log_{a}$x 與 y＝$a^{x}$ 的圖形沒有交點
+  answer:
+  - B
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)╳：由算幾不等式$\frac{∣ \log _{2}a ∣+∣ \log _{2}b ∣}{2}$＞$\sqrt{∣ \log _{2}a ∣∣ \log _{2}b ∣}$
+
+    但 $log_{2}$a＜0，$log_{2}$b＜0，不滿足$\frac{\log _{2}a +\log _{2}b}{2}$＞$\sqrt{\log _{2}a\times \log _{2}b}$
+
+    (B)○：a，b＞0，由算幾不等式$\frac{a +b}{2}$＞$\sqrt{ab}$
+
+    $\Rightarrow\log _{2}\frac{a +b}{2}$＞$\log _{2}\sqrt{ab}$＝$\frac{\log \sqrt{ab}}{\log 2}$＝$\frac{\frac{1}{2}\log (ab)}{\log 2}$＝$\frac{1}{2} \left( \frac{\log a}{\log 2}+\frac{\log b}{\log 2} \right)$
+
+    ＝$\frac{1}{2} (\log _{2}a +\log _{2}b)$
+
+    (C)○：a＞0，a≠1 時，y＝$a^{x}$ 與 y＝$log_{a}$x 對稱於 y＝x
+
+    (D)○：a＞0，a≠1 時，y＝$log_{a}$x 與 y＝$\log _{\frac{1}{a}}x$＝－$log_{a}$x 對稱於 x 軸
+
+    (E)╳：當 a＝$e^{\frac{1}{e}}\approx$1.44 時，y＝$a^{x}$ 與 y＝$log_{a}$x 有一個交點
+
+    故選(B)(C)(D)'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T01
+      name: 對數函數圖形與對稱性
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 將 y＝$2^{x}$ 的圖形沿著 x 軸方向平移 h 單位，再沿著 y 軸方向平移 k 單位之後得到新的函數 y＝16×$2^{x}$＋2，其中 h＞0 表示向右平移，h＜0 表示向左平移，k＞0 表示向上平移，k＜0 表示向下平移，則 h＋k 之值為＿＿＿＿。
+  answer:
+  - －2
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'y＝$2^{x}$ $\xrightarrow{沿 x 軸平移 h 單位}$ y＝$2^{x－h}$
+
+    $\xrightarrow{沿 y 軸平移 k 單位}$ y＝$2^{x－h}$＋k
+
+    y＝$2^{x－h}$＋k＝16．$2^{x}$＋2＝$2^{4}$．$2^{x}$＋2＝$2^{x＋4}$＋2
+
+    $\Rightarrow$h＝－4，k＝2
+
+    故 h＋k＝－2'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T06
+      name: 指數函數圖形與係數判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 計算$\log _{3}18 +\log _{\sqrt{3}}2 -\log _{9}576 +(\log _{3}5) \times (\log _{125}9)+(4)^{\log _{2}3}$＝＿＿＿＿。
+  answer:
+  - $\frac{32}{3}$ 3.18 4.23 5.$-\frac{13}{6}$ 6.12 7.15 8.$\frac{1}{4}$ 9.12 10.5
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\log _{3}18 +\log _{\sqrt{3}}2 -\log _{9}576 +(\log _{3}5)(\log _{125}9)+(4)^{\log _{2}3}$
+
+    ＝$\frac{\log 18}{\log 3}+\frac{\log 2}{\log \sqrt{3}}-\frac{\log 576}{\log 9}+ \left( \frac{\log 5}{\log 3} \right) \left( \frac{\log 9}{\log 125} \right) + 4^{\frac{\log 3}{\log 2}}$
+
+    ＝$\frac{\log 18}{\log 3}+\frac{\log 2}{\frac{1}{2}\log 3}-\frac{2\log 24}{2\log 3}+ \left( \frac{\log 5}{\log 3} \right) \left( \frac{2\log 3}{3\log 5} \right) + 4^{\frac{2\log 3}{2\log 2}}$
+
+    ＝$\frac{\log 18}{\log 3}+\frac{2\log 2}{\log 3}-\frac{\log 24}{\log 3}+\frac{2}{3}+4^{\frac{\log 9}{\log 4}}$
+
+    ＝$\frac{\log 18}{\log 3}+\frac{\log 4}{\log 3}-\frac{\log 24}{\log 3}+\frac{2}{3}+4^{\log _{4}9}$
+
+    ＝$\frac{\log \frac{18\times 4}{24}}{\log 3}+\frac{2}{3}+ 9$
+
+    ＝$\frac{\log 3}{\log 3}+\frac{2}{3}+ 9$＝$\frac{32}{3}$'
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T01
+      name: 對數定義與換底公式化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知坐標平面上三點（2，log2）、（6，log6）、（10，logk）在同一直線上，則 k 之值為 ＿＿＿＿。
+  explanation: '$\frac{\log k -\log 6}{10 - 6}$＝$\frac{\log 6 -\log 2}{6 - 2}$
+
+    $\Rightarrow\frac{\log \frac{k}{6}}{4}$＝$\frac{\log 3}{4}\Rightarrow\frac{k}{6}$＝3
+
+    故 k＝18
+
+    4.10000（1＋5 ％）$^{n}$＞30000
+
+    $\Rightarrow1.05^{n}$＞3
+
+    $\Rightarrowlog1.05^{n}$＞log3
+
+    $\Rightarrow$n log1.05＞log3
+
+    $\Rightarrow$n（0.0212）＞0.4771
+
+    $\Rightarrow$n＞$\frac{0.4771}{0.0212}$＝22.5 ……
+
+    故至少 23 年
+
+    5.（logx）$^{2}$－logx－6＝0 的兩根 x＝α，β
+
+    設 logx＝t
+
+    $\Rightarrowt^{2}$－t－6＝0 的兩根 t＝logα，logβ
+
+    則（t－logα）（t－logβ）＝0
+
+    $\Rightarrowt^{2}$－（logα＋logβ）t＋logα．logβ＝0
+
+    對照係數可得$\begin{cases}\log \alpha +\log \beta = 1 \\ \log \alpha \cdot \log \beta =- 6\end{cases}$
+
+    故 $log_{α}$β＋$log_{β}$α＝$\frac{\log \beta}{\log \alpha}+\frac{\log \alpha}{\log \beta}$＝$\frac{(\log \alpha )^{2} +(\log \beta )^{2}}{\log \alpha \cdot \log \beta}$
+
+    ＝$\frac{(\log \alpha +\log \beta )^{2} - 2\log \alpha \cdot \log \beta}{\log \alpha \cdot \log \beta}$
+
+    ＝$\frac{(1)^{2} - 2 (- 6)}{- 6}$＝$-\frac{13}{6}$
+
+    6.$\begin{cases}I (0)=\frac{1}{4 +k\times 4^{0}}=\frac{12}{240}=\frac{1}{20} \cdots \cdots \cdots \cdots \cdots ① \\ I (3)=\frac{1}{4 +k\times 4^{- 3a}}=\frac{20}{240}=\frac{1}{12}\cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    由①得 k＝16
+
+    代入②得 16×$4^{－3a}$＝8
+
+    $\Rightarrow$（$4^{－a}$）$^{3}$＝$\frac{1}{2}$
+
+    $\Rightarrow4^{－a}$＝$\left( \frac{1}{2} \right) ^{\frac{1}{3}}$
+
+    則 I（t）＝$\frac{1}{4 + 16\times 4^{- at}}$＝$\frac{1}{5}$
+
+    $\Rightarrow$16×（$4^{－a}$）$^{t}$＝1
+
+    $\Rightarrow\left( \left( \frac{1}{2} \right) ^{\frac{1}{3}} \right) ^{t}$＝$\frac{1}{16}$＝$\left( \frac{1}{2} \right) ^{4}$
+
+    $\Rightarrow\frac{1}{3}t$＝4
+
+    $\Rightarrow$t＝12
+
+    故第 12 個月時，是此傳染病的傳染高峰
+
+    7.A（3，$log_{2}$3），B（7，$log_{2}$7），C（9，$log_{8}$9），D（49，$log_{8}$49）
+
+    $m_{1}$＝$\frac{\log _{2}7 -\log _{2}3}{7 - 3}$
+
+    ＝$\frac{1}{4}\times \left( \frac{\log 7}{\log 2}-\frac{\log 3}{\log 2} \right)$
+
+    ＝$\frac{1}{4}\times \frac{\log \frac{7}{3}}{\log 2}$
+
+    $m_{2}$＝$\frac{\log _{8}49 -\log _{8}9}{49 - 9}$
+
+    ＝$\frac{1}{40}\times \left( \frac{\log 49}{\log 8}-\frac{\log 9}{\log 8} \right)$
+
+    ＝$\frac{1}{40}\times \frac{\log \frac{49}{9}}{\log 8}$
+
+    ＝$\frac{1}{40}\times \frac{2\log \frac{7}{3}}{3\log 2}$
+
+    ＝$\frac{1}{60}\times \frac{\log \frac{7}{3}}{\log 2}$
+
+    故$\frac{m_{1}}{m_{2}}$＝$\frac{\frac{1}{4}\times \frac{\log \frac{7}{3}}{\log 2}}{\frac{1}{60}\times \frac{\log \frac{7}{3}}{\log 2}}$＝15
+
+    $8.4^{x}$．$5^{y}$＝100
+
+    $\Rightarrow$log（$4^{x}$．$5^{y}$）＝log100
+
+    $\Rightarrowlog4^{x}$＋$log5^{y}$＝2
+
+    $\Rightarrow$x（log4）＋y（log5）＝2
+
+    $\Rightarrow$（log5）y＝－（log4）x＋2
+
+    $\Rightarrow$y＝$-\frac{\log 4}{\log 5} \cdot x +\frac{2}{\log 5}$
+
+    ∴斜率＝$-\frac{\log 4}{\log 5}$＝－$log_{5}$4＝$log_{5}4^{－1}$＝$\log _{5}\frac{1}{4}$
+
+    故 k＝$\frac{1}{4}$
+
+    9.$\begin{cases}8^{x} = 54^{z} \\ 81^{y} = 54^{z}\end{cases}\Rightarrow\begin{cases}8 = 54^{\frac{z}{x}} \\ 81 = 54^{\frac{z}{y}}\end{cases}$
+
+    $\Rightarrow\begin{cases}8^{4} = 54^{\frac{4z}{x}} \cdots \cdots \cdots \cdots \cdots ① \\ 81^{9} = 54^{\frac{9z}{y}}\cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    由①×②得 $8^{4}$×$81^{9}$＝$54^{\frac{4z}{x}+\frac{9z}{y}}$
+
+    $\Rightarrow$（$2^{3}$）$^{4}$×（$3^{4}$）$^{9}$＝$54^{\frac{4z}{x}+\frac{9z}{y}}$
+
+    $\Rightarrow2^{12}$×（$3^{3}$）$^{12}$＝$54^{\frac{4z}{x}+\frac{9z}{y}}$
+
+    $\Rightarrow$(54)$^{12}$＝$54^{\frac{4z}{x}+\frac{9z}{y}}$
+
+    $\Rightarrow\frac{4z}{x}+\frac{9z}{y}$＝12
+
+    $\Rightarrow\frac{4}{x}+\frac{9}{y}$＝$\frac{12}{z}$
+
+    故 k＝12
+
+    10.由 y＝$\frac{1}{2}x$，且 A 為 O，B 兩點的中點，設 A（2t，t），B（4t，2t）代入 y＝$log_{a}$x
+
+    $\Rightarrow\begin{cases}\log _{a} (2t)=t \cdots \cdots \cdots \cdots \cdots ① \\ \log _{a} (4t)= 2t\cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    由①得 t＝$log_{a}$（2t）代入②
+
+    $\Rightarrow$2×$log_{a}$（2t）＝$log_{a}$（4t）
+
+    $\Rightarrow$（2t）$^{2}$＝4t
+
+    $\Rightarrow4t^{2}$－4t＝0
+
+    $\Rightarrow$4t（t－1）＝0
+
+    $\Rightarrow$t＝0（不合）或 1
+
+    ∴A（2，1）
+
+    所求$\overline{OA}^{2}$＝$(\sqrt{(2 - 0)^{2} +(1 - 0)^{2}})^{2}$＝5'
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T08
+      name: 對數函數坐標與幾何計算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 銀行宣稱某外幣商品年利率 5 ％且按年複利計算。則當某人購買該外幣商品 10,000 元後，在利率不變的情形下，至少需＿＿＿＿年後，才能讓本利和超過 30,000 元。（已知 log1.05$\approx$0.0212，log3$\approx$0.4771）
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T04
+      name: 複利儲蓄與對數近似計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 設α、β為方程式（logx）$^{2}$－logx－6＝0 之兩相異實數解，試求 $log_{α}$β＋$log_{β}$α＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T07
+      name: 換元化為二次式求極值與解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: 傳染病的感染率 I（t）定義＝$\frac{在時間 t (月)時被感染的人數}{城市總人數}$。據傳染病學的理論，其數學模型為 I（t）＝$\frac{1}{4 +k\times 4^{-at}}$，其中 k、a 均為常數。同時，定義當感染率 I（t）＝$\frac{1}{5}$，代表是傳染病的傳染高峰。現有一未知傳染病在總人口數為 240 萬人的 A 城市蔓延。已知一開始 （t＝0）有 12 萬人被傳染；第 3 個月時，有 20 萬人被傳染。試求第＿＿＿＿個月時，是此傳染病的傳染高峰。
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T05
+      name: 指數成長衰減與生活建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 若 f（x）＝$log_{2}$x 的函數圖形與直線 x＝3、x＝7 分別交於 A、B 兩點。g（x）＝$log_{8}$x 的函數圖形與直線 x＝9、x＝49 分別交於 C、D 兩點。設 A、B 兩點的斜率為 $m_{1}$，C、D 兩點的斜率為 $m_{2}$，則$\frac{m_{1}}{m_{2}}$的值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T08
+      name: 對數函數坐標與幾何計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 已知滿足方程式 $4^{x}$×$5^{y}$＝100 的所有數對（x，y）在坐標平面上會形成一直線 L，若直線 L 的斜率為 $log_{5}$k，則 k 之值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T05
+      name: 對數定義與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 已知 x，y，z 為實數，且 $8^{x}$＝$81^{y}$＝$54^{z}$，若$\frac{4}{x}+\frac{9}{y}=\frac{k}{z}$，則 k 之值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-2-2
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數與對數律
+      std: true
+    textbook: 數學3A 對數與對數律
+    pattern:
+      key: MA-A3-2-2:T05
+      name: 對數定義與換底化簡求值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 已知直線 y＝$\frac{1}{2}x$與 y＝$log_{a}$x 的函數圖形交於 A，B 兩點，若 O 為原點且 A 為 O、B 兩點的中點，即$\overline{OA} = \overline{AB}$，則$\overline{OA}^{2}$之值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-A3-2-3
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3A 對數函數
+    pattern:
+      key: MA-A3-2-3:T08
+      name: 對數函數坐標與幾何計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_興大附中_數學_數A_g11s1e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '傳染病在發生初期時，由於大部分人未感染且無抗體，所以總感染人數大都以指數形式成長。在「初始感染人數為 $P_{0}$，且每位已感染者平均一天會傳染給 r 位未感染者」的前提下，n 天後感染到此疾病的總人數 $P_{n}$ 可以表示為 $P_{n}$＝$P_{0}$（1＋r）$^{n}$，其中 $P_{0}\geq$1 且 r＞0。試回答下列問題：
+
+    (1) 已知 A＝$log_{3}$（$P_{4}$）－$log_{3}$（$P_{2}$），B＝$log_{3}$（$P_{9}$）－$log_{3}$（$P_{6}$），若 A＝k×B，試求 k 的值。（3 分）
+
+    (2) 已知某傳染病初期符合上述數學模型且每隔 8 天總感染人數會增加為 3 倍，試求$\frac{P_{23}}{P_{17}}\times \frac{P_{14}}{P_{10}}\times \frac{P_{8}}{P_{2}}$的值。（3 分）
+
+    (3) 承(2)，試求$\frac{\log _{3}(P_{20})-\log _{3}(P_{16})}{2}$的值。（2 分）'
+  tags:
+    unit:
+      code: MA-A3-2-1
+      book: 數學3A
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3A 指數函數
+    pattern:
+      key: MA-A3-2-1:T05
+      name: 指數成長衰減與生活建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -1,0 +1,650 @@
+document:
+  id: doc_113_台中_興大附中_數學_g10s1e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 1
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 113學年度第1學期第1次定期評量 高一數學科試題
+  exam_name: 113學年度第1學期第1次定期評量
+  source_file: 高一/數學/113/1-1/台中/興大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 5 分，共 35 分）
+    count: 7
+  - ord: 2
+    name: 二、多重選擇題（共 24 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 30 分）
+    count: 6
+  - ord: 4
+    name: 四、計算題（共 11 分）
+    count: 1
+questions:
+- id: doc_113_台中_興大附中_數學_g10s1e1_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: P 為數線上的一整數點，已知點 P 與點$\sqrt{173}$的距離小於 6，且與點$\sqrt{57}$的距離大於 4，則滿足條件的點 P 共有幾個？
+  options:
+  - label: A
+    content: 5 個
+  - label: B
+    content: 6 個
+  - label: C
+    content: 7 個
+  - label: D
+    content: 8 個
+  - label: E
+    content: 9 個
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∣x－$\sqrt{173}$∣＜6 ⇒∣x－13.……∣＜6 ⇒ 8 ≤ x ≤ 19
+
+    ∣x－$\sqrt{57}$∣＞4 ⇒∣x－7. ……∣＞4 ⇒ x ≤ 3 或 x ≥ 12
+
+    ∴x＝12，13，……，19，共 8 個
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T01
+      name: 絕對值方程式與不等式求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設 a、b 皆為非零的正實數，試求$\left( \frac{a}{2}+\frac{b}{3} \right) \times \left( \frac{3}{a}+\frac{2}{b} \right)$的最小值等於多少？
+  options:
+  - label: A
+    content: $\frac{13}{3}$
+  - label: B
+    content: $\frac{51}{12}$
+  - label: C
+    content: $\frac{25}{6}$
+  - label: D
+    content: $\frac{49}{12}$
+  - label: E
+    content: '4'
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-2
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 式的運算
+      std: true
+    textbook: 數學1（必修） 式的運算
+    pattern:
+      key: MA-1-1-2:T06
+      name: 算幾不等式求代數極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 設 a、b、c 皆為有理數，且滿足 $3^{3x}$＝$9^{y}$＝$\left( \frac{1}{81} \right) ^{z}$，若 x＋y＋z＝14，則 z 值等於多少？
+  options:
+  - label: A
+    content: －6
+  - label: B
+    content: －2
+  - label: C
+    content: '4'
+  - label: D
+    content: '8'
+  - label: E
+    content: '12'
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T06
+      name: 指數等式換底與指數倒數求值
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹筆誤將「x、y、z」寫成「a、b、c 皆為有理數」
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s1_4
+  section: 1
+  number: 4
+  type: single
+  page: 1
+  stem: 要計算常用對數值，可利用具有 log 功能鍵（取常用對數值）的計算器，以 log3 為例：依序鍵入$\square 3$，log，即可得 0.477121254，也就是說，log3 ≈ 0.477121254。那麼若在某種超大型的計算器中鍵入一個正整數 N，接著連續按鍵 log 兩次，視窗顯示得到的答案等於 3。試問這個正整數 N 是一個幾位數？
+  options:
+  - label: A
+    content: '900'
+  - label: B
+    content: '901'
+  - label: C
+    content: '1000'
+  - label: D
+    content: '1001'
+  - label: E
+    content: 以上皆非
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T02
+      name: 常用對數求高次冪位數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s1_5
+  section: 1
+  number: 5
+  type: single
+  page: 2
+  stem: 已知 a＝$0. \overline{3}$＋$0. \overline{7}$，b＝$0. \overline{9}$，c＝$\sqrt{(1.2)^{2}-2\times 1.2\times 0.2+(0.2)^{2}}$， d＝$\sqrt{(0.9)^{3}+0.3\times (0.9)^{2}+2.7\times (0.1)^{2}+(0.1)^{3}}$，則此四個實數 a，b，c，d 的大小順序，滿足下列哪一個選項？
+  options:
+  - label: A
+    content: a＞d＞c＞b
+  - label: B
+    content: a＝c＝d＞b
+  - label: C
+    content: a＞b＝c＝d
+  - label: D
+    content: a＞c＝d＞b
+  - label: E
+    content: a＝b＝c＝d
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T05
+      name: 循環小數化分數與比較
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s1_6
+  section: 1
+  number: 6
+  type: single
+  page: 2
+  stem: 設 f（x）為實係數三次多項式函數，滿足（x－1）f（x）除以 $x^{3}$－2 的餘式為 2x＋1。若 f(0)＝7，則 f(4)＝？
+  options:
+  - label: A
+    content: '1'
+  - label: B
+    content: '3'
+  - label: C
+    content: '6'
+  - label: D
+    content: '9'
+  - label: E
+    content: 以上皆非
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T02
+      name: 多項式除法原理與商餘換算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e1_s1_7
+  section: 1
+  number: 7
+  type: single
+  page: 2
+  stem: 設實係數多項式 f（x）＝$x^{4}$－$4x^{3}$－$2x^{2}$＋ax＋b，已知（$x^{2}$－2x＋5）整除 f（x），則實數 a＋b＝？
+  options:
+  - label: A
+    content: －47
+  - label: B
+    content: －46
+  - label: C
+    content: －45
+  - label: D
+    content: －44
+  - label: E
+    content: －43
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T08
+      name: 除法原理求商式餘式與整除
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 下列選項中，選出正確的選項。
+  options:
+  - label: A
+    content: 設實數 a，b 滿足 0＜a＜1，0＜b＜1，則 0＜$\frac{a}{b}$＜1
+  - label: B
+    content: 設 a、b 均為非負有理數，且 x、y 均為無理數，若 a＋x＝b＋y，則 a＝b 且 x＝y
+  - label: C
+    content: 無理數$\sqrt{43-\sqrt{27}}$介於整數 6 與整數 7 之間
+  - label: D
+    content: 13＜$\frac{3\sqrt{169}+4\sqrt{196}}{7}$＜$\frac{27}{2}$
+  - label: E
+    content: $(\sqrt{3} -\sqrt{2} )^{3}$＋$\frac{1}{(\sqrt{3} -\sqrt{2} )^{3}}$＝$18\sqrt{3}$
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：$\frac{a}{b}$可為任意非零實數
+
+    (B) ╳：反例：a＝3，b＝2，x＝$\sqrt{2}$，y＝1＋$\sqrt{2}$
+
+    3＋$\sqrt{2}$＝2＋（1＋$\sqrt{2}$）⇒ a＋x＝b＋y，但 a$\neq$b，x$\neq$y
+
+    (C) ○：$\sqrt{43-\sqrt{27}}$＝$\sqrt{43-5.\cdots \cdots}$＝$\sqrt{37.\cdots \cdots}$＝6.……
+
+    (D) ╳：由分點公式知，$\frac{3\sqrt{169}+4\sqrt{196}}{7}$＝$\frac{3\times 13+4\times 14}{7}$介於 13～14 之間且較靠近 14，
+
+    即 13.5＜$\frac{3\times 13+4\times 14}{7}$＜14
+
+    (E) ○：$(\sqrt{3}-\sqrt{2} )^{3}$＋$\frac{1}{(\sqrt{3}-\sqrt{2} )^{3}}$
+
+    ＝$(\sqrt{3}-\sqrt{2} )^{3}$＋$\left( \frac{1}{\sqrt{3} -\sqrt{2}}\times \frac{\sqrt{3} +\sqrt{2}}{\sqrt{3} +\sqrt{2}} \right) ^{3}$
+
+    ＝$(\sqrt{3}-\sqrt{2} )^{3}$＋$(\sqrt{3}+\sqrt{2} )^{3}$
+
+    ＝［（$\sqrt{3}$）$^{3}$－3（$\sqrt{3}$）$^{2}$（$\sqrt{2}$）＋3（$\sqrt{3}$）（$\sqrt{2}$）$^{2}$－（$\sqrt{2}$）$^{3}$］
+
+    ＋［（$\sqrt{3}$）$^{3}$＋3（$\sqrt{3}$）$^{2}$（$\sqrt{2}$）＋3（$\sqrt{3}$）（$\sqrt{2}$）$^{2}$＋（$\sqrt{2}$）$^{3}$］
+
+    ＝2［（$\sqrt{3}$）$^{3}$＋3（$\sqrt{3}$）（$\sqrt{2}$）$^{2}$］＝2（3$\sqrt{3}$＋6$\sqrt{3}$）＝18$\sqrt{3}$
+
+    故選(C)(E)'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T09
+      name: 實數不等式與根式比大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e1_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 下列選項中，選出正確的選項。
+  options:
+  - label: A
+    content: 每一個正數都可以表示（寫成）為 10 的某次方
+  - label: B
+    content: $\left( \frac{125}{8} \right) ^{\frac{2}{3}}$×（0.25）$^{－2}$＝100
+  - label: C
+    content: 若 a＝log2，b＝log50，則 a＋b＝100
+  - label: D
+    content: 若 logx＝1.7，logy＝1.3，則 xy＝100
+  - label: E
+    content: 若 logm＝2.3，logn＝4.3，則 n 是 m 的 100 倍
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：a＝$10^{loga}$，a＞0
+
+    (B) ○：$\left( \frac{125}{8} \right) ^{\frac{2}{3}}$×（0.25）$^{－2}$＝$\left( \left( \frac{5}{2} \right) ^{3} \right) ^{\frac{2}{3}}$×（$2^{－2}$）$^{－2}$＝$\left( \frac{5}{2} \right) ^{2}$×$2^{4}$＝$5^{2}$×$2^{2}$＝100
+
+    (C) ╳：a＋b＝log2＋log50≠100
+
+    (D) ╳：xy＝$10^{1.7}$×$10^{1.3}$＝$10^{3}$＝1000
+
+    (E) ○：$\frac{n}{m}$＝$\frac{10^{4.3}}{10^{2.3}}$＝$10^{2}$＝100
+
+    故選(A)(B)(E)'
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T01
+      name: 常用對數定義與指數互化
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 3
+  stem: 設多項式 f（x）除以 $x^{3}$－1 的商式為 x（x－1），餘式為 $2x^{2}$－2x＋3，請選出正確的選項。
+  options:
+  - label: A
+    content: f(1)＝3
+  - label: B
+    content: 多項式 f（x）除以 3x－3 所得的餘式為 9
+  - label: C
+    content: 多項式 f（x）除以 x（x－1）所得的餘式為 3
+  - label: D
+    content: 多項式 f（x）除以 x（x－1）$^{2}$ 所得的商式為 $x^{2}$＋x＋1
+  - label: E
+    content: 多項式 f（x）除以（x－1）$^{2}$ 所得的商式為 $x^{3}$＋$x^{2}$＋x
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T02
+      name: 多項式除法原理與商餘換算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: 若不等式∣2x－1∣－3∣x－2∣≤－2 之解為 x ≤α或 x ≥β，則實數對（α，β）＝＿＿＿＿。
+  answer:
+  - （1，7）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) x＜$\frac{1}{2}$時：－（2x－1）－3〔－（x－2）〕≤－2 ⇒ x ≤ 3 ∴x＜$\frac{1}{2}$
+
+    (2)$\frac{1}{2}$≤ x＜2 時：（2x－1）－3〔－（x－2）〕≤－2 ⇒ x ≤ 1 ∴$\frac{1}{2}$≤ x ≤ 1
+
+    (3) x ≥ 2 時：（2x－1）＋3〔－（x－2）〕≤－2 ⇒ x ≥ 7 ∴x ≥ 7
+
+    由(1)、(2) 、(3)得 x ≤ 1 或 x ≥ 7
+
+    ∴數對（α，β）＝（1，7）'
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T04
+      name: 雙絕對值分段討論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 若 x，y 為兩正實數，且滿足$x^{-3}y^{\frac{3}{2}}$＝1 及$\frac{1}{2}$logy＝1，則$\frac{x-y}{10}$＝＿＿＿＿。
+  answer:
+  - －9
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\frac{1}{2}$logy＝1 ⇒ logy＝2 ⇒ y＝$10^{2}$
+
+    又$x^{-3}y^{\frac{3}{2}}$＝1 ⇒ $x^{－3}$．$(10^{2})^{\frac{3}{2}}$＝1 ⇒ x＝10
+
+    ∴所求$\frac{x-y}{10}$＝$\frac{10-100}{10}$＝－9
+
+    3.50.6＝25＋（x－30）×$1.25^{－3}$ ⇒ 25.6×$1.25^{3}$＝x－30
+
+    ∴所求 x＝30＋50＝80（℃）
+
+    4.60＝10×log$\left( \frac{x}{2\times 10^{-5}} \right) ^{2}$⇒ $10^{6}$＝$\left( \frac{x}{2\times 10^{-5}} \right) ^{2}$⇒ $10^{3}$＝$\frac{x}{2\times 10^{-5}}$
+
+    ∴所求 x＝2×$10^{－2}$＝$\frac{1}{50}$（N／$m^{2}$）
+
+    5.f（x）＝（$x^{2}$－2x＋2）q（x）＋6x－7
+
+    ⇒（x＋1）f（x）＝（x＋1）〔（$x^{2}$－2x＋2）q（x）＋6x－7〕
+
+    ⇒（x＋1）f（x）＝（x＋1）（$x^{2}$－2x＋2）q（x）＋（x＋1）（6x－7）
+
+    （x＋1）f（x）除以 $x^{2}$－2x＋2 的餘式，即（x＋1）（6x－7）除以 $x^{2}$－2x＋2 的餘式
+
+    ∴餘式為 11x－19，所求 m＋n＝11＋（－19）＝－8
+
+    6.$x^{3}$＋$3x^{2}$＋4x＋2＝f（x）．$q_{1}$（x）＋3x＋2
+
+    ⇒（$x^{3}$＋$3x^{2}$＋4x＋2）－（3x＋2）＝f（x）．$q_{1}$（x）
+
+    ⇒ $x^{3}$＋$3x^{2}$＋x＝f（x）．$q_{1}$（x）
+
+    ⇒ x（$x^{2}$＋3x＋1）＝f（x）．$q_{1}$（x） ……………①
+
+    $x^{3}$＋$x^{2}$－x－1＝f（x）．$q_{2}$（x）＋4x＋1
+
+    ⇒（$x^{3}$＋$x^{2}$－x－1）－（4x＋1）＝f（x）．$q_{2}$（x）
+
+    ⇒ $x^{3}$＋$x^{2}$－5x－2＝f（x）．$q_{2}$（x）………………②
+
+    由①知，f（x）＝$x^{2}$＋3x＋1
+
+    ∴實數對（a，b）＝（3，1）
+
+    $■註$：$x^{3}$＋$x^{2}$－5x－2＝（$x^{2}$＋3x＋1）（x－2）'
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T08
+      name: 指對數聯立與倍數換算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 設室溫 30 ℃下，剛出爐的麵包溫度為 x ℃，經過 t 分鐘後的溫度 H ℃，將符合牛頓提出的冷卻定律公式 H＝25＋（x－30）×$1.25^{－t}$。設 3 分鐘後測量麵包的溫度為 50.6 ℃，求該麵包出爐時的溫度為＿＿＿＿℃。（四捨五入到整數位）
+  answer:
+  - '80'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T09
+      name: 科學模型與指數律應用求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 聲壓是用每平方公尺多少牛頓（N／$m^{2}$）來衡量聲音的強度，若以 x 表示聲壓，以 dB（分貝）表示聲壓所產生的噪音分貝數，則 x 與 dB 的關係式為 dB＝10×log$\left( \frac{x}{x_{0}} \right) ^{2}$，其中 $x_{0}$＝2×$10^{－5}$（N／$m^{2}$）為國際公認之參考聲壓（即一個人能感覺聲音的最小強度）。試求當噪音分貝數為 60 時，它的噪音聲壓為＿＿＿＿N／$m^{2}$。
+  answer:
+  - $\frac{1}{50}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T04
+      name: 對數分貝地震與pH應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_台中_興大附中_數學_g10s1e1_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 設實係數多項式 f（x）除以 $x^{2}$－2x＋2 的餘式為 6x－7，若（x＋1）f（x）除以 $x^{2}$－2x＋2 的餘式為 mx＋n，則實數 m＋n＝＿＿＿＿。
+  answer:
+  - －8
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T15
+      name: 二次以上除式的餘式問題
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e1_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 給定二次多項式 f（x）＝$x^{2}$＋ax＋b，已知多項式 $x^{3}$＋$3x^{2}$＋4x＋2 除以 f（x）其餘式為 3x＋2，多項式 $x^{3}$＋$x^{2}$－x－1 除以 f（x）其餘式為 4x＋1，則實數對（a，b）＝＿＿＿＿。
+  answer:
+  - （3，1）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T15
+      name: 二次以上除式的餘式問題
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_台中_興大附中_數學_g10s1e1_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '設多項式 f（x）＝$x^{4}$－$5x^{3}$＋$4x^{2}$＋5x＋6，試回答下列問題。
+
+    (1) 若 f（x）＝a（x－3）$^{4}$＋b（x－3）$^{3}$＋c（x－3）$^{2}$＋d（x－3）＋e，請使用綜合除法，求實數 a，b，c，d，e 之值。（5 分）
+
+    (2) 求 f（2.99）的近似值（四捨五入至小數點後第二位）。（3 分）
+
+    (3) 若 f（3＋$\sqrt{2}$）＝m＋n$\sqrt{2}$，求有理數對（m，n）。（3 分）'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T06
+      name: 綜合除法連續展開與泰勒近似
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

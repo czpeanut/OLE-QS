@@ -1,0 +1,556 @@
+document:
+  id: doc_112_台北_北一女中_數學_g10s1e3
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 112
+  semester: 1
+  exam_seq: 3
+  city: 台北
+  school_short: 北一女中
+  school: 臺北市立第一女子高級中學
+  title: 臺北市立第一女子高級中學 112學年度第1學期第3次定期評量 高一數學科試題
+  exam_name: 112學年度第1學期第3次定期評量
+  source_file: 高一/數學/112/1-3/台北/北一女中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每個選項 2 分，共 30 分，答錯不倒扣）
+    count: 3
+  - ord: 2
+    name: 二、填充題（每題 6 分，共 60 分）
+    count: 10
+  - ord: 3
+    name: 三、計算題（占 10 分，作答時必須寫出計算過程或理由，否則將酌予扣分！）
+    count: 1
+  scope_note: 多項式函數 ＿＿＿年＿＿＿班 座號＿＿＿ 姓名
+questions:
+- id: doc_112_台北_北一女中_數學_g10s1e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列關於多項式函數的敘述，請選出正確的選項。
+  options:
+  - label: A
+    content: 已知 a≠0，則任意三次函數 y＝$ax^{3}$＋$bx^{2}$＋cx＋d 的圖形都可以經由 y＝$ax^{3}$ 的圖形平移得到
+  - label: B
+    content: 將多項式 f（x）分別除以 $x^{3}$＋1 和 $x^{2}$－x＋1，其餘式必不相同
+  - label: C
+    content: 若 f（x）為二次函數，對稱軸為 x＝113，又 f（2024）＜0，f（120）＞0，則此圖形的開口向下
+  - label: D
+    content: 已知點（a，b）在 y＝$x^{3}$ 的圖形上，則點（－a＋2，b＋1）必在 y＝－（x－2）$^{3}$＋1 的圖形上
+  - label: E
+    content: 設 f（x）＝$ax^{3}$＋$bx^{2}$＋cx＋d，g（x）＝f（x＋2），則 f（x）和 g（x）的係數總和會相同
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T02
+      name: 三次函數配方與圖形平移
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_g10s1e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設兩相異多項式 f（x）、g（x）分別為 m 次和 n 次，下列敘述哪些正確？
+  options:
+  - label: A
+    content: deg（f（x）＋g（x））可能為 m＋n
+  - label: B
+    content: 若 m ≥ n，則 deg（f（x）－g（x））≤ m
+  - label: C
+    content: deg（f（x）g（x））＝mn
+  - label: D
+    content: deg（f（$x^{2}$＋1））＝$m^{2}$
+  - label: E
+    content: 已知 f（x）為一多項式函數。若 deg（f（x））＝3，則 deg（〔f（x）〕$^{3}$）＝6
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：令 f（x）＝$x^{2}$，g（x）＝1，則 m＝2，n＝0
+
+    ⇒ deg（f（x）＋g（x））＝2＝2＋0＝2
+
+    (B) ○：若 m＞n，或 m＝n，但兩者首項係數不同，則 deg（f（x）－g（x））＝m
+
+    又若 m＝n 且 f（x）之首項係數和 g（x）之首項係數相等
+
+    則 deg（f（x）－g（x））＜m
+
+    (C) ╳：deg（f（x）g（x））＝m＋n
+
+    (D) ╳：deg（f（$x^{2}$＋1））＝2m
+
+    (E) ╳：deg（〔f（x）〕$^{3}$）＝3×3＝9
+
+    故選(A)(B)'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T01
+      name: 多項式定義與係數次數判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_北一女中_數學_g10s1e3_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 已知 f（x）＝a（x－h）$^{3}$＋b（x－h）＋k，g（x）＝a（x－h）$^{2}$＋k，h（x）＝ax＋b，則下列哪些情形是可能會發生的？
+  options:
+  - label: A
+    content: ''
+    asset:
+      key: s1_3_optA
+      file: doc_112_台北_北一女中_數學_g10s1e3/s1_3_optA.png
+      crop:
+        page: 1
+        rect:
+        - 153.55
+        - 621.45
+        - 238.85
+        - 712.55
+  - label: B
+    content: ''
+    asset:
+      key: s1_3_optB
+      file: doc_112_台北_北一女中_數學_g10s1e3/s1_3_optB.png
+      crop:
+        page: 1
+        rect:
+        - 387.4
+        - 511.1
+        - 472.7
+        - 601.95
+  - label: C
+    content: ''
+    asset:
+      key: s1_3_optC
+      file: doc_112_台北_北一女中_數學_g10s1e3/s1_3_optC.png
+      crop:
+        page: 1
+        rect:
+        - 154.2
+        - 511.1
+        - 239.5
+        - 601.95
+  - label: D
+    content: ''
+    asset:
+      key: s1_3_optD
+      file: doc_112_台北_北一女中_數學_g10s1e3/s1_3_optD.png
+      crop:
+        page: 1
+        rect:
+        - 387.4
+        - 621.95
+        - 472.7
+        - 712.05
+  - label: E
+    content: ''
+    asset:
+      key: s1_3_optE
+      file: doc_112_台北_北一女中_數學_g10s1e3/s1_3_optE.png
+      crop:
+        page: 1
+        rect:
+        - 152.9
+        - 714.55
+        - 242.55
+        - 805.4
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f（x）之對稱中心和 g（x）之頂點均為（h，k）
+
+    ∴(B)不可能發生
+
+    (A)由題圖知，f（x）之 a＞0 且 b＜0，又 h（x）之斜率為 a＞0 且 y 截距＝b＜0
+
+    ⇒有可能
+
+    (C)由題圖知，f（x）之 a＜0 且 b＞0，又 h（x）之 y 截距＝b＝0
+
+    ⇒矛盾，不可能
+
+    (D)由題圖知，f（x）之 a＜0 且 b＞0，又 h（x）之 y 截距＝b＜0
+
+    ⇒矛盾，不可能
+
+    (E)由題圖知，a＞0 且 b＞0，又 h（x）之斜率為 a＞0 且 y 截距＝b＞0
+
+    ⇒有可能
+
+    故選(A)(E)'
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T01
+      name: 三次函數標準式圖形特徵
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 設 f（x）＝$x^{3}$＋$ax^{2}$＋bx－18 有一次因式（x－2）和（x－3），則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （－8，21）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f（x）有因式（x－2）和（x－3）
+
+    ∴$\begin{cases}f(2)=0 \\ f(3)=0\end{cases}$⇒$\begin{cases}8+4a+2b-18 = 0 \\ 27+9a+3b-18 = 0\end{cases}$⇒$\begin{cases}2a+b = 5 \\ 3a+b =-3\end{cases}$⇒$\begin{cases}a =-8 \\ b =21\end{cases}$
+
+    故數對（a，b）＝（－8，21）'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T05
+      name: 因式定理與整係數一次因式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 承上題，f（x）＞0 的解為＿＿＿＿。
+  answer:
+  - x＞2，但 x≠3
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T06
+      name: 函數圖形判讀高次不等式解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 右圖為一多項式 f（x）＝$ax^{4}$＋$bx^{3}$＋$cx^{2}$＋dx＋e 除以 x－1 之綜合除法的計算過程。試求 a＋b＋d＋e＝＿＿＿＿。
+  assets:
+  - key: s2_3_f1
+    kind: figure
+    file: doc_112_台北_北一女中_數學_g10s1e3/s2_3_f1.png
+    crop:
+      page: 2
+      rect:
+      - 409.3
+      - 85.95
+      - 560.7
+      - 147.85
+  answer:
+  - '16'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由綜合除法過程可知，f（x）除以 x－1 之餘式為 19
+
+    且 c＋2＝5 ⇒ c＝3
+
+    ⇒由餘式定理知，f(1)＝19
+
+    又 f(1)＝a＋b＋c＋d＋e＝19
+
+    故 a＋b＋d＋e＝19－3＝16'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T13
+      name: 餘式定理與綜合除法求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 解－（x＋1）（x＋2）（x＋3）＋（x＋2）＜0。 $答$：＿＿＿＿。
+  answer:
+  - －2－$\sqrt{2}$＜x＜－2 或 x＞－2＋$\sqrt{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-4
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式不等式
+      std: true
+    textbook: 數學1（必修） 多項式不等式
+    pattern:
+      key: MA-1-3-4:T04
+      name: 高次多項式不等式求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 當 x 很大的時候，多項式函數 y＝f（x）的圖形很接近 y＝$2x^{3}$，又在 x＝0 附近的圖形近似於直線 y＝5x－3，且滿足 f（－1）＝－4，則 y＝f（x）圖形的對稱中心為＿＿＿＿。
+  answer:
+  - （－1，－4）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵f（x）之首項係數為 2 且在 x＝0 附近的一次近似為 y＝5x－3
+
+    ∴令 f（x）＝$2x^{3}$＋$bx^{2}$＋5x－3
+
+    又 f（－1）＝－4 ⇒－2＋b－5－3＝－4 ⇒ b＝6
+
+    得 f（x）＝$2x^{3}$＋$6x^{2}$＋5x－3
+
+    ＝2（$x^{3}$＋$3x^{2}$＋3x＋1）－x－5
+
+    ＝2（x＋1）$^{3}$－（x＋1）－4
+
+    故對稱中心為（－1，－4）'
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T05
+      name: 廣域與局部特徵綜合判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 已知 f（x）＝$8x^{3}$－$12x^{2}$＋8x－5，試求 f（1.51）的近似值為＿＿＿＿。（四捨五入至小數點後第二位）
+  answer:
+  - '7.26'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T06
+      name: 綜合除法連續展開與泰勒近似
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 設 f（x）為三次多項式，且 f(1)＝f（－1）＝1，f(2)＝4，f(0)＝6。試求 f(5)＝＿＿＿＿。
+  answer:
+  - '241'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵degf（x）＝3 且 f(1)＝f（－1）＝1
+
+    ∴令 f（x）＝（ax＋b）（x－1）（x＋1）＋1
+
+    又$\begin{cases}f(2)= 4 \\ f(0)= 6\end{cases}$⇒$\begin{cases}(2a+b)\times 1\times 3+1 = 4 \\ b\times (-1)\times 1+1 = 6\end{cases}$⇒$\begin{cases}2a+b = 1 \\ b =-5\end{cases}$⇒$\begin{cases}a = 3 \\ b =-5\end{cases}$
+
+    得 f（x）＝（3x－5）（x－1）（x＋1）＋1
+
+    故 f(5)＝10×4×6＋1＝241'
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T14
+      name: 因式定理與多項式假設
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 坐標平面上有相異三點 A（3，1），B（0，7），C（2，k），其中 k 為實數。已知二次函數 f（x）＝$ax^{2}$＋bx＋c 過 A、B 兩點，但必不通過 C 點，試問 k＝＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵二次函數 f（x）過 A、B 兩點但必不通過 C
+
+    ∴A、B、C 三點共線
+
+    ⇒$m_{\overline{AB}}$＝$m_{\overline{BC}}$⇒$\frac{1-7}{3-0}$＝$\frac{k-7}{2-0}$
+
+    ⇒ k－7＝－4 ⇒ k＝3'
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T06
+      name: 一次與常數函數圖形及斜率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 今有三次函數 f（x）和二次函數 g（x），已知 y＝f（x）的對稱中心和 y＝g（x）的頂點均為（0，1）。而將（x－1）f（x）除以 g（x），得商式 $x^{2}$－x－2 和餘式 3x＋1。試問 f（x）－g（x）＝＿＿＿＿。
+  answer:
+  - $x^{3}$－$x^{2}$－x
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 f（x）＝$ax^{3}$＋cx＋1，g（x）＝$px^{2}$＋1
+
+    又（x－1）f（x）＝g（x）（$x^{2}$－x－2）＋3x＋1
+
+    ⇒（x－1）（$ax^{3}$＋cx＋1）＝（$px^{2}$＋1）（$x^{2}$－x－2）＋3x＋1
+
+    $x^{4}$ 項係數：左式＝a＝p＝右式 ……………………①
+
+    $x^{2}$ 項係數：左式＝c＝1－2p＝右式 ………………②
+
+    x 項係數：左式＝1－c＝－1＋3＝右式……………③
+
+    由③ 得 c＝－1，代入①、② 得 p＝1＝a
+
+    故 f（x）－g（x）＝（$x^{3}$－x＋1）－（$x^{2}$＋1）＝$x^{3}$－$x^{2}$－x'
+  tags:
+    unit:
+      code: MA-1-3-3
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 三次函數的圖形特徵
+      std: true
+    textbook: 數學1（必修） 三次函數的圖形特徵
+    pattern:
+      key: MA-1-3-3:T03
+      name: 三次函數對稱中心性質
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_112_台北_北一女中_數學_g10s1e3_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 本學年恰逢一女中雙甲子校慶，小智在校園中進行一項數學的解謎任務：「多項式 f（x）除以 $x^{2}$－x＋1，餘式為 5x－1；除以 $x^{2}$＋x＋1，餘式為－x＋3；除以 $x^{4}$＋$x^{2}$＋1，餘式為 $2x^{3}$＋$ax^{2}$＋bx＋c；請問序組（a，b，c）為何？」小智看得一頭霧水，於是決定使用一次提示的機會：「$x^{4}$＋$x^{2}$＋1＝（$x^{2}$＋x＋1）（$x^{2}$－x＋1）。」請妳幫幫小智完成任務：序組（a，b，c）＝＿＿＿＿。
+  answer:
+  - （3，2，4）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-1-3-1
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 多項式的除法原理
+      std: true
+    textbook: 數學1（必修） 多項式的除法原理
+    pattern:
+      key: MA-1-3-1:T04
+      name: 聯立除式與中國剩餘定理型餘式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台北_北一女中_數學_g10s1e3_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: '「帶動唱」是展現高一新生青春活力的舞臺。在表演的過程中，小儀和小旗分別站在小樂的東方 2 公尺處和北方 3 公尺處。此時，為了要變換隊形，小樂不動，而小儀和小旗則同時做「等速度直線」運動：小儀的速度為 1 公尺／秒（向東），小旗的速度為 1.5 公尺／秒（向南）。假設經過 t 秒，試問：
+
+    (1) 試以 t 表示三人彼此之間的「距離平方和」。（請展開，並以降冪的方式排列。）（6 分）
+
+    (2) 當 t 為多少時，三人彼此之間的「距離平方和」會最小？（4 分）'
+  tags:
+    unit:
+      code: MA-1-3-2
+      book: 數學1（必修）
+      chapter: 多項式函數
+      title: 一次與二次函數
+      std: true
+    textbook: 數學1（必修） 一次與二次函數
+    pattern:
+      key: MA-1-3-2:T05
+      name: 二次函數建模與應用極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

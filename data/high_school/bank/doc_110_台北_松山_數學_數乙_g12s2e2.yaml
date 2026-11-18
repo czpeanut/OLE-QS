@@ -1,0 +1,627 @@
+document:
+  id: doc_110_台北_松山_數學_數乙_g12s2e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 110
+  semester: 2
+  exam_seq: 2
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 110學年度第2學期第2次定期評量 高三數學（數乙）科試題
+  exam_name: 110學年度第2學期第2次定期評量
+  source_file: 高三/數學/110/2-2/台北/松山_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 4 分，共 12 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 6 分。錯一個選項得 4 分，錯兩個得 2 分，錯三個以上或未作答不給分，共 18 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每格 6 分，共 60 分）
+    count: 8
+  - ord: 4
+    name: 四、計算題（共 10 分）
+    count: 1
+questions:
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: '設隨機變數 X 可能的值為 1、2、3、4，且其機率質量函數
+
+    P（X＝k）＝$\begin{cases}a , k = 1 \\ \frac{1}{k^{2}} , k = 2 , 3 , 4\end{cases}$，試選出 a 的值。'
+  options:
+  - label: A
+    content: $\frac{7}{16}$
+  - label: B
+    content: $\frac{9}{16}$
+  - label: C
+    content: $\frac{1}{25}$
+  - label: D
+    content: $\frac{61}{144}$
+  - label: E
+    content: $\frac{83}{144}$
+  answer:
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（X＝1）＝a
+
+    P（X＝2）＝$\frac{1}{2^{2}}$＝$\frac{1}{4}$
+
+    P（X＝3）＝$\frac{1}{3^{2}}$＝$\frac{1}{9}$
+
+    P（X＝4）＝$\frac{1}{4^{2}}$＝$\frac{1}{16}$
+
+    $a +\frac{1}{4}+\frac{1}{9}+\frac{1}{16}$＝1
+
+    $\Rightarrow$a＝$\frac{83}{144}$，故選(E)'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T01
+      name: 離散隨機變數機率分布表
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: '設隨機變數 X 的機率分布表如下，其中 a，b 為實數，且期望值 E（X）＝3，試選出數對（a，b）。
+
+    | X | 1 | 2 | 3 | 4 | 5 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | P | a | b | 0.4 | b | 0.2 |'
+  options:
+  - label: A
+    content: （0.1，0.2）
+  - label: B
+    content: （0.2，0.1）
+  - label: C
+    content: （0.4，0.4）
+  - label: D
+    content: （0.4，0.6）
+  - label: E
+    content: （0.6，0.4）
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '機率總和為 a＋b＋0.4＋b＋0.2＝1$\Rightarrow$a＋2b＝0.4 …………①
+
+    E（X）＝1×a＋2×b＋3×0.4＋4×b＋5×0.2＝3
+
+    $\Rightarrow$a＋6b＝0.8 …………………………………………………②
+
+    由①、②可得數對（a，b）＝（0.2，0.1）
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T05
+      name: 期望值與變異數反推未知參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 已知某工廠生產的產品中，不良品的機率為 0.2。今隨機抽樣 23 件產品，隨機變數 X 為不良品的件數，若 P（X＝k）表示不良品為 k 件的機率，試問下列哪一個機率最大？
+  options:
+  - label: A
+    content: P（X＝4）
+  - label: B
+    content: P（X＝4.6）
+  - label: C
+    content: P（X＝5）
+  - label: D
+    content: P（X＝6）
+  - label: E
+    content: P（X＝7）
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) P（X＝4）＝$C_{4}^{23} ( 0.2 )^{4} ( 0.8 )^{19}$＝$C_{4}^{23}\times \frac{4^{19}}{5^{23}}$
+
+    (B) P（X＝4.6）＝0
+
+    (C) P（X＝5）＝$C_{5}^{23} ( 0.2 )^{5} ( 0.8 )^{18}$＝$C_{5}^{23}\times \frac{4^{18}}{5^{23}}$
+
+    (D) P（X＝6）＝$C_{6}^{23} ( 0.2 )^{6} ( 0.8 )^{17}$＝$C_{6}^{23}\times \frac{4^{17}}{5^{23}}$
+
+    (E) P（X＝7）＝$C_{7}^{23} ( 0.2 )^{7} ( 0.8 )^{16}$＝$C_{7}^{23}\times \frac{4^{16}}{5^{23}}$
+
+    ∵$C_{4}^{23}\times \frac{4^{19}}{5^{23}}$＞$C_{5}^{23}\times \frac{4^{18}}{5^{23}}$＞$C_{6}^{23}\times \frac{4^{17}}{5^{23}}$＞$C_{7}^{23}\times \frac{4^{16}}{5^{23}}$
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T03
+      name: 二項分布最大機率項判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 一袋中有 3 顆紅色球、7 顆白色球，設隨機變數 X 為一次取 1 球，取後放回，連取 3 球，紅色球球數；隨機變數 Y 為一次取 1 球，取後不放回，連取 3 球，紅色球球數。試選出正確的選項。
+  options:
+  - label: A
+    content: P（X＝1）＝$C_{1}^{10} ( 0.3 )^{1} ( 0.7 )^{9}$
+  - label: B
+    content: P（X＝1）＝P（X＝2）
+  - label: C
+    content: P（Y＝1）＋P（Y＝2）＋P（Y＝3）＝1
+  - label: D
+    content: E（X）＝$\frac{9}{10}$
+  - label: E
+    content: E（X）＝E（Y）
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T08
+      name: 期望值線性性質與總和計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 某高中英文單字比賽，試卷題目有 50 題，每道題目都是 4 選 1 的單選題，答對 1 題得 2 分，答錯不倒扣。今某生每題都從 4 個選項中隨機選 1 個答案作答，設隨機變數 X 為該生答對的題數，隨機變數 Y 為該生的試卷分數。試選出正確的選項。
+  options:
+  - label: A
+    content: P（X＝24）＞P（X＝25）
+  - label: B
+    content: P（X＝2）＝P（Y＝1）
+  - label: C
+    content: E（X）＝10
+  - label: D
+    content: E（Y）＝2E（X）
+  - label: E
+    content: Var（Y）＝2Var（X）
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由題意可知，某生每題答對率為$\frac{1}{4}$，答錯率為$\frac{3}{4}$
+
+    (A)○：∵P（X＝24）＝$C_{24}^{50} \left( \frac{1}{4} \right) ^{24} \left( \frac{3}{4} \right) ^{26}$
+
+    P（X＝25）＝$C_{25}^{50} \left( \frac{1}{4} \right) ^{25} \left( \frac{3}{4} \right) ^{25}$
+
+    ∴P（X＝24）＞P（X＝25）
+
+    (B)╳：∵P（X＝2）＝$C_{2}^{50} \left( \frac{1}{4} \right) ^{2} \left( \frac{3}{4} \right) ^{48}$
+
+    P（Y＝1）＝0
+
+    ∴P（X＝2）≠P（Y＝1）
+
+    (C)╳：∵X～B$\left( 50 , \frac{1}{4} \right)$
+
+    ∴E（X）＝$50\times \frac{1}{4}$＝$\frac{25}{2}$（題）
+
+    (D)○：E（Y）＝E（2X）＝2E（X）＝$\frac{25}{2}\times 2$＝25（分）
+
+    (E)╳：Var（Y）＝Var（2X）＝$2^{2}$．Var（X）＝4Var（X）
+
+    故選(A)(D)'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T02
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: '一池塘有鯉魚數隻，池塘主人說池塘裡雄鯉魚數量占 4 成。今某人從池塘中捕撈 10 隻鯉魚，設隨機變數 X 為雄鯉魚的數量（雄鯉魚數量占池塘總魚量 4 成），其機率分布表如下。若在顯著水準α＝0.05 下，試選出正確的選項。
+
+    | X | 0 | 1 | 2 | 3 | 4 | 5 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | P | 0.006047 | 0.040311 | 0.120932 | 0.214991 | 0.250823 | 0.200658 |
+
+    | X | 6 | 7 | 8 | 9 | 10 |  |
+
+    | P | 0.111477 | 0.042467 | 0.010617 | 0.001573 | 0.000105 |  |
+
+    （四捨五入至小數點後第 6 位）'
+  options:
+  - label: A
+    content: X～B（10，0.4）
+  - label: B
+    content: P（X＝1）＝$C_{1}^{10} ( 0.4 )^{1} ( 0.6 )^{9}$
+  - label: C
+    content: 拒絕域為$X\leq 1$
+  - label: D
+    content: 若捕撈 10 隻鯉魚中，有 1 隻雄鯉魚，則接受主人宣稱雄鯉魚數量占 4 成
+  - label: E
+    content: 若捕撈 10 隻鯉魚中，有 7 隻雄鯉魚，則接受主人宣稱雄鯉魚數量占 4 成
+  answer:
+  - A
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A)○：∵共捕撈 10 隻鯉魚，且其宣稱池塘裡雄鯉魚占 4 成
+
+    ∴X～B（10，0.4）
+
+    (B)○：P（X＝1）＝$C_{1}^{10} ( 0.4 )^{1} ( 0.6 )^{9}$
+
+    (C)╳：當隨機變數 X 的取值在 X＜1 時
+
+    機率總和約為$0.006047 < \frac{\alpha}{2}$＝0.025
+
+    而 X＞7 時，機率總和約為 0.010617＋0.001573＋0.000105＝$0.012295 < \frac{\alpha}{2}$＝0.025
+
+    故拒絕域為 X＜1 或 X＞7
+
+    (D)○：∵10 隻鯉魚中，有 1 隻雄鯉魚
+
+    X＝1 未落在拒絕域內
+
+    ∴接受此說法
+
+    (E)○：∵10 隻鯉魚中，有 7 隻雄鯉魚
+
+    X＝7 未落在拒絕域內
+
+    ∴接受此說法
+
+    故選(A)(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T05
+      name: 二項檢定與拒絕域判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 連續投擲一枚公正骰子 4 次，設隨機變數 X 為骰子點數小於 3 點的次數，則機率質量函數 P（X＝1）＝＿＿＿＿。
+  answer:
+  - $\frac{32}{81}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '出現小於 3 點之機率為$\frac{1}{3}$
+
+    出現大於或等於 3 點之機率為$\frac{2}{3}$
+
+    P（X＝1）＝$C_{1}^{4} \left( \frac{1}{3} \right) ^{1} \left( \frac{2}{3} \right) ^{3}$＝$\frac{32}{81}$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T07
+      name: 二項分布試驗判別與單項機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: '一袋中有編號 1 號球 1 顆、2 號球 2 顆、3 號球 4 顆、4 號球 2 顆、5 號球 1 顆，每顆球被抽出的機會相等。今隨機從袋中抽出 1 球，設隨機變數 X 為抽出的號碼，則：
+
+    (1) 期望值 E（X）＝＿＿＿＿。
+
+    (2) 標準差$\sqrt{Var( X )}$＝＿＿＿＿。'
+  answer:
+  - (1) 3；(2) $\frac{\sqrt{30}}{5}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T03
+      name: 離散隨機變數變異數與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 一箱中有 2 顆白球、2 顆黑球，每顆球被取到的機會相等。今從箱中每次取出 1 顆球，取後不放回，直到取到黑球時遊戲結束。如果在第 k 次取到黑球，則得獎金 $k^{2}$ 元。試問此遊戲獲得獎金的期望值為＿＿＿＿元。
+  answer:
+  - $\frac{10}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T06
+      name: 條件分支與多階段抽獎期望值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 為慶祝學校全中運榮獲佳績，合作社推出折扣優惠，只要消費滿 100 元就可以從摸彩箱中抽出 1 張彩券決定折扣數，每張彩券被抽出的機會相等。今摸彩箱中已經放入 4 張彩券，分別為 1 張 5 折、1 張 75 折、2 張 9 折。設隨機變數 X 為消費 100 元的顧客在折扣後需要支付的金額（元），若合作社想再加入 1 張彩券使得 X 的期望值等於 78 元，則所加入的那張彩券所代表的折扣數為＿＿＿＿折。
+  answer:
+  - '85'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y2-1-1
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 離散型隨機變數
+      std: true
+    textbook: 選修數學乙（下） 離散型隨機變數
+    pattern:
+      key: MA-Y2-1-1:T05
+      name: 期望值與變異數反推未知參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 依據過往數據統計，某生罰球命中率為 0.6。今連續罰球 20 球，每次進球與否不互相影響，則罰球進球數的期望值為＿＿＿＿球。
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設隨機變數 X 表示罰球進球數
+
+    由題意可知 X～B（20，0.6）
+
+    ∴E（X）＝20×0.6＝12（球）'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T02
+      name: 二項分布期望值與標準差
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: '夜市遊戲射飛鏢，玩家花 10 元可得到 5 支飛鏢，依照玩家射中水球顆數給獎，每支飛鏢最多射中 1 顆水球。已知某人射中水球的機率為$\frac{3}{4}$，則：
+
+    (1) 5 支飛鏢中，射中＿＿＿＿顆水球，機率最大。
+
+    (2) 至少射中 1 顆水球的機率為＿＿＿＿。'
+  answer:
+  - (1) 4；(2) $\frac{1023}{1024}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 設隨機變數 X 表示射中水球顆數
+
+    P（X＝0）＝$C_{0}^{5} \left( \frac{3}{4} \right) ^{0} \left( \frac{1}{4} \right) ^{5}$＝$\frac{1}{4^{5}}$
+
+    P（X＝1）＝$C_{1}^{5} \left( \frac{3}{4} \right) ^{1} \left( \frac{1}{4} \right) ^{4}$＝$\frac{15}{4^{5}}$
+
+    P（X＝2）＝$C_{2}^{5} \left( \frac{3}{4} \right) ^{2} \left( \frac{1}{4} \right) ^{3}$＝$\frac{90}{4^{5}}$
+
+    P（X＝3）＝$C_{3}^{5} \left( \frac{3}{4} \right) ^{3} \left( \frac{1}{4} \right) ^{2}$＝$\frac{270}{4^{5}}$
+
+    P（X＝4）＝$C_{4}^{5} \left( \frac{3}{4} \right) ^{4} \left( \frac{1}{4} \right) ^{1}$＝$\frac{405}{4^{5}}$
+
+    P（X＝5）＝$C_{5}^{5} \left( \frac{3}{4} \right) ^{5} \left( \frac{1}{4} \right) ^{0}$＝$\frac{243}{4^{5}}$
+
+    由上述可知，射中 4 顆水球機率最大
+
+    (2) 所求為 1－P（X＝0）＝$1 -\frac{1}{4^{5}}$＝$\frac{1023}{1024}$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T03
+      name: 二項分布最大機率項判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 有一機器人從數線的原點出發。今同時擲兩枚硬幣，出現兩枚正面，則機器人向右前進 1 單位（＋1），若出現一正一反或兩枚反面，則機器人向左前進 1 單位（－1）。今連續投擲兩枚硬幣 4 次，機器人停留在坐標 2 的機率為＿＿＿＿。
+  answer:
+  - $\frac{3}{64}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '若機器人停留在坐標 2，則需向右 3 次，向左 1 次
+
+    向右前進 1 單位之機率為$\frac{1}{4}$，向左前進 1 單位之機率為$\frac{3}{4}$
+
+    故所求為$C_{3}^{4} \left( \frac{1}{4} \right) ^{3} \left( \frac{3}{4} \right) ^{1}$＝$\frac{3}{64}$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T07
+      name: 二項分布試驗判別與單項機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 設隨機變數 X 是二項分布，即 X～B（n，p），且期望值 E（2X）＝16、變異數 Var（－3X＋2）＝54，則參數（n，p）＝＿＿＿＿。
+  answer:
+  - $\left( 32 , \frac{1}{4} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'E（2X）＝2E（X）＝16$\Rightarrow$E（X）＝8
+
+    Var（－3X＋2）＝（－3）$^{2}$Var（X）＝54$\Rightarrow$Var（X）＝6
+
+    $\begin{cases}E ( X )=np = 8 \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots ① \\ Var( X )=np ( 1 -p )= 6 \cdots \cdots \cdots \cdots \cdots ②\end{cases}$
+
+    將①代入②得 8（1－p）＝6$\Rightarrow$1－p＝$\frac{3}{4}\Rightarrow$p＝$\frac{1}{4}$
+
+    代回①可得 n＝32
+
+    ∴參數（n，p）＝$\left( 32 , \frac{1}{4} \right)$'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T09
+      name: 由期望值與變異數反推參數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數乙_g12s2e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '某藥廠研發出一款頭痛藥，並宣稱在患有頭痛的病人服用此藥後，至少有 8 成病人能獲得緩解。今找來 10 名患有頭痛的病人服用此藥，其中有 6 名病人獲得緩解。設隨機變數 X～B（10，0.8），且機率分布表如下。若顯著水準α＝0.05，試求：
+
+    | X | 0 | 1 | 2 | 3 | 4 | 5 |
+
+    | --- | --- | --- | --- | --- | --- | --- |
+
+    | P | 0.000000 | 0.000004 | 0.000074 | 0.000786 | 0.005505 | 0.026424 |
+
+    | X | 6 | 7 | 8 | 9 | 10 |  |
+
+    | P | 0.088080 | 0.201327 | 0.301990 | 0.268435 | 0.107374 |  |
+
+    （四捨五入至小數點後第 6 位）
+
+    (1) 拒絕域。（5 分）
+
+    (2) 接受或拒絕藥廠宣稱。（5 分）'
+  tags:
+    unit:
+      code: MA-Y2-1-2
+      book: 選修數學乙（下）
+      chapter: 機率與統計
+      title: 二項分布
+      std: true
+    textbook: 選修數學乙（下） 二項分布
+    pattern:
+      key: MA-Y2-1-2:T05
+      name: 二項檢定與拒絕域判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -1,0 +1,696 @@
+document:
+  id: doc_112_台中_台中二中_數學_數A_g11s2e1
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 1
+  city: 台中
+  school_short: 台中二中
+  school: 臺中市立臺中第二高級中等學校
+  title: 臺中市立臺中第二高級中等學校 112學年度第2學期第1次定期評量 高二數學（數A）科試題
+  exam_name: 112學年度第2學期第1次定期評量
+  source_file: 高二/數學/112/2-1/台中/台中二中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 24 分，答錯一個選項得 4 分，答錯二個選項得 2 分，答錯三個選項以上或沒作答得 0 分）
+    count: 4
+  - ord: 2
+    name: 二、第一部分填充題（每格 6 分，共 60 分）
+    count: 10
+  - ord: 3
+    name: 三、第二部分填充題（每格 4 分，共 16 分）
+    count: 4
+questions:
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列有關空間中的敘述，哪些選項是正確的？
+  options:
+  - label: A
+    content: 垂直於同一直線的兩相異直線必平行
+  - label: B
+    content: 任意兩相異直線一定存在有一直線同時垂直此兩直線
+  - label: C
+    content: 兩歪斜線在一平面上之投影必為相交於一點的兩直線
+  - label: D
+    content: 若 $L_{1}$ 與 $L_{2}$ 是歪斜線，$L_{2}$ 與 $L_{3}$ 也是歪斜線，則 $L_{1}$ 與 $L_{3}$ 也是歪斜線
+  - label: E
+    content: 相異兩平面 E 與 F 交於一線 L，若 L 垂直平面 G，則 E、F 均垂直平面 G
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：不一定，亦可能歪斜或交一點
+
+    (B) ○：敘述正確
+
+    (C) ╳：不一定，可能平行或直線與線外一點
+
+    (D) ╳：不一定，可能平行或交一點
+
+    (E) ○：敘述正確
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-A4-1-1
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間概念
+      std: true
+    textbook: 數學4A 空間概念
+    pattern:
+      key: MA-A4-1-1:T01
+      name: 空間線面平行垂直與歪斜判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設$\vec{a}$、$\vec{b}$、$\vec{c}$為空間中三個不平行的非零向量，試問下列哪些選項正確？
+  options:
+  - label: A
+    content: $\vec{c}$必可以表示成$x\vec{a}$＋$y\vec{b}$（即$\vec{c}$＝$x\vec{a}$＋$y\vec{b}$）
+  - label: B
+    content: 若$\vec{a}$．$\vec{c}$＝$\vec{b}$．$\vec{c}$，則$\vec{a}$＝$\vec{b}$
+  - label: C
+    content: $\vec{a}$×$\vec{b}$＝$\vec{b}$×$\vec{a}$
+  - label: D
+    content: ｜$\vec{a}$×$\vec{b}$｜＝$\sqrt{| \vec{a} | ^{2} | \vec{b} | ^{2}-(\vec{a} \cdot \vec{b})^{2}}$
+  - label: E
+    content: ｜（$\vec{a}$×$\vec{b}$）．$\vec{c}$｜＝｜$\vec{a}$．（$\vec{b}$×$\vec{c}$）｜
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T09
+      name: 空間向量綜合性質與運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 如右圖，ABCDEF 為正六邊形且邊長為 1，則下列各運算的值哪些選項會大於 1？
+  options:
+  - label: A
+    content: ｜$\vec{AB}$＋$\vec{CE}$｜
+  - label: B
+    content: $\vec{AB}$．$\vec{AC}$
+  - label: C
+    content: $\vec{AC}$．$\vec{AF}$
+  - label: D
+    content: ｜$\vec{AB}$×$\vec{AC}$｜
+  - label: E
+    content: ｜$\vec{AC}$×$\vec{AE}$｜
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_112_台中_台中二中_數學_數A_g11s2e1/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 473.4
+      - 450.35
+      - 564.3
+      - 533.0
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T09
+      name: 空間向量綜合性質與運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 如右圖所示，正立方體 ABCD－EFGH 的稜長為 4， $\overline{DK}$：$\overline{BK}$＝1：3，M、N 分別為$\overline{BF}$與$\overline{EF}$的中點，試問下列哪些選項正確？
+  options:
+  - label: A
+    content: $\vec{KM}$．$\vec{AB}$＝12
+  - label: B
+    content: $\overline{KN}$＝5
+  - label: C
+    content: cos∠MKN＝$\frac{10}{\sqrt{143}}$
+  - label: D
+    content: 四面體 EFGK 的體積為$\frac{32}{3}$
+  - label: E
+    content: $\vec{KM}$＝$\frac{1}{4}\vec{AB}$－$\frac{1}{4}\vec{AD}$＋$\frac{1}{2}\vec{AE}$
+  assets:
+  - key: s1_4_f1
+    kind: figure
+    file: doc_112_台中_台中二中_數學_數A_g11s2e1/s1_4_f1.png
+    crop:
+      page: 1
+      rect:
+      - 465.4
+      - 598.15
+      - 564.3
+      - 692.85
+  answer:
+  - A
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-2
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的坐標表示法
+      std: true
+    textbook: 數學4A 空間向量的坐標表示法
+    pattern:
+      key: MA-A4-1-2:T06
+      name: 空間長方體坐標化與向量運算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: $\left| \begin{matrix}2024 & 115 & 99 \\ 2025 & 114 & 100 \\ 2026 & 113 & 100\end{matrix} \right|$＝＿＿＿＿。
+  answer:
+  - '2139'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\left| \begin{matrix}2024 & 115 & 99 \\ 2025 & 114 & 100 \\ 2026 & 113 & 100\end{matrix} \right|$＝$\left| \begin{matrix}2024 & 115 & 99 \\ 1 & -1 & 1 \\ 2 & -2 & 1\end{matrix} \right|$＝$\left| \begin{matrix}2024 & 115 & 99 \\ 1 & -1 & 1 \\ 0 & 0 & -1\end{matrix} \right|$
+
+    ＝（－1）×$\left| \begin{matrix}2024 & 115 \\ 1 & -1\end{matrix} \right|$
+
+    ＝（－1）×（－2024－115）＝2139'
+  tags:
+    unit:
+      code: MA-A4-1-4
+      book: 數學4A
+      chapter: 空間向量
+      title: 三階行列式
+      std: true
+    textbook: 數學4A 三階行列式
+    pattern:
+      key: MA-A4-1-4:T01
+      name: 三階行列式性質與列運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 設 A（2，3，4），B（7，6，2），E 在 z 軸上，滿足$\overline{AE}$＝$\overline{BE}$，則 E 點坐標為＿＿＿＿。
+  answer:
+  - （0，0，－15）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 E（0，0，t）
+
+    ∵$\overline{AE}^{2}$＝$\overline{BE}^{2}$ ∴$2^{2}$＋$3^{2}$＋（4－t）$^{2}$＝$7^{2}$＋$6^{2}$＋（2－t）$^{2}$
+
+    ⇒ $t^{2}$－8t＋29＝$t^{2}$－4t＋89 ⇒－4t＝60 ⇒ t＝－15
+
+    故 E 點坐標為（0，0，－15）'
+  tags:
+    unit:
+      code: MA-A4-1-2
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的坐標表示法
+      std: true
+    textbook: 數學4A 空間向量的坐標表示法
+    pattern:
+      key: MA-A4-1-2:T01
+      name: 空間坐標投影與距離計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 已知 A（4，1，4）、B（－2，5，1）為空間中兩點，P 為 x 軸上一點，且∠APB＝90°，則 P 點坐標為＿＿＿＿。
+  answer:
+  - （1，0，0）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 P（t，0，0），則$\vec{PA}$＝（4－t，1，4），$\vec{PB}$＝（－2－t，5，1）
+
+    ∵∠APB＝90° ∴$\vec{PA}$．$\vec{PB}$＝0 ⇒（4－t，1，4）．（－2－t，5，1）＝0
+
+    ⇒（4－t）×（－2－t）＋1×5＋4×1＝0
+
+    ⇒ $t^{2}$－2t＋1＝0 ⇒（t－1）$^{2}$＝0
+
+    ⇒ t＝1，故 P 點坐標為（1，0，0）'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T05
+      name: 空間向量內積與正射影計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: $\vec{a}$＝（1，－2，2）、$\vec{b}$＝（4，－5，0），則$\vec{b}$在$\vec{a}$上之正射影為＿＿＿＿。
+  answer:
+  - $\left( \frac{14}{9} , -\frac{28}{9} , \frac{28}{9} \right)$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\vec{b}$在$\vec{a}$上的正射影為$\left( \frac{\vec{a} \cdot \vec{b}}{| \vec{a} | ^{2}} \right)\vec{a}$
+
+    ＝$\frac{1\times 4+(-2)\times (-5)+2\times 0}{1^{2}+(-2)^{2}+2^{2}}$（1，－2，2）
+
+    ＝$\left( \frac{14}{9} , -\frac{28}{9} , \frac{28}{9} \right)$'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T02
+      name: 空間正射影與參數極值計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 空間中，A（0，0，0）、B（2，1，3）、C（1，1，4），若$\vec{AP}$＝$x\vec{AB}$＋$y\vec{AC}$，其中 －1 ≤ x ≤ 1，1 ≤ y ≤ 3，則 P 點構成之圖形的面積為＿＿＿＿。
+  answer:
+  - $12\sqrt{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\vec{AB}$＝（2，1，3），$\vec{AC}$＝（1，1，4）
+
+    則$\vec{AB}$×$\vec{AC}$＝$\left( \left| \begin{matrix}1 & 3 \\ 1 & 4\end{matrix} \right| , \left| \begin{matrix}3 & 2 \\ 4 & 1\end{matrix} \right| , \left| \begin{matrix}2 & 1 \\ 1 & 1\end{matrix} \right| \right)$＝（1，－5，1）
+
+    P 點構成之圖形面積為〔1－（－1）〕（3－1）×（$\vec{AB}$和$\vec{AC}$所張成平行四邊形面積）
+
+    ＝4×｜$\vec{AB}$×$\vec{AC}$｜＝4×$\sqrt{1^{2}+(-5)^{2}+1^{2}}$＝$12\sqrt{3}$'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T04
+      name: 外積計算、性質與面積求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 若（x－1）$^{2}$＋$y^{2}$＋（z－2）$^{2}$＝4，且 2x－y＋2z＝k，試求 k 的最大值為＿＿＿＿。
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '由柯西不等式可知，
+
+    〔（x－1）$^{2}$＋$y^{2}$＋（z－2）$^{2}$〕〔$2^{2}$＋（－1）$^{2}$＋$2^{2}$〕≥〔2（x－1）－y＋2（z－2）〕$^{2}$
+
+    ⇒ 4×9 ≥（2x－y＋2z－6）$^{2}$ ⇒－6 ≤ 2x－y＋2z－6 ≤ 6
+
+    ⇒ 0 ≤ 2x－y＋2z ≤ 12 ⇒ 0 ≤ k ≤ 12
+
+    故 k 的最大值為 12'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T03
+      name: 空間柯西不等式求極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 空間中，O（0，0，0）、A（6，10，8）、B（13，5，6）、C（7，7，10），則四面體 OABC 之體積為＿＿＿＿。
+  answer:
+  - '64'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$\vec{OA}$×$\vec{OB}$＝$\left( \left| \begin{matrix}10 & 8 \\ 5 & 6\end{matrix} \right| , \left| \begin{matrix}8 & 6 \\ 6 & 13\end{matrix} \right| , \left| \begin{matrix}6 & 10 \\ 13 & 5\end{matrix} \right| \right)$＝（20，68，－100）
+
+    四面體 OABC 體積為$\frac{1}{6}$｜$\vec{OC}$．（$\vec{OA}$×$\vec{OB}$）｜
+
+    ＝$\frac{1}{6}$｜（7，7，10）．（20，68，－100）｜
+
+    ＝$\frac{1}{6}$×384＝64'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T08
+      name: 平行六面體體積與混合積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: $\vec{u}$＝（3，4，5），$\vec{v}$＝（1，－1，4），若$\vec{p}$＝$\vec{u}$＋$s\vec{v}$且$\vec{p}$平分$\vec{u}$與$\vec{v}$之夾角，則 s 之值為＿＿＿＿。
+  answer:
+  - $\frac{5}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '｜$\vec{u}$｜＝$\sqrt{3^{2}+4^{2}+5^{2}}$＝$5\sqrt{2}$
+
+    ｜$\vec{v}$｜＝$\sqrt{1^{2}+(-1)^{2}+4^{2}}$＝$3\sqrt{2}$
+
+    當｜$\vec{u}$｜＝｜$s\vec{v}$｜時可平分夾角
+
+    則$5\sqrt{2}$＝s×$3\sqrt{2}$⇒ s＝$\frac{5}{3}$'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T09
+      name: 空間向量綜合性質與運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 空間中，A（7，2，3）、B（1，8，5），若 P 為 y 軸上一動點，則$\overline{PA}^{2}$＋$\overline{PB}^{2}$的最小值為 ＿＿＿＿。
+  answer:
+  - '102'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 P（0，t，0）
+
+    ｜$\vec{PA}$｜$^{2}$＋｜$\vec{PB}$｜$^{2}$＝｜（7，2－t，3）｜$^{2}$＋｜（1，8－t，5）｜$^{2}$
+
+    ＝$7^{2}$＋（2－t）$^{2}$＋$3^{2}$＋$1^{2}$＋（8－t）$^{2}$＋$5^{2}$
+
+    ＝$2t^{2}$－20t＋152
+
+    ＝2（$t^{2}$－10t＋$5^{2}$）＋152－50
+
+    ＝2（t－5）$^{2}$＋102
+
+    當 t＝5，即 P（0，5，0）時，｜$\vec{PA}$｜$^{2}$＋｜$\vec{PB}$｜$^{2}$ 有最小值 102'
+  tags:
+    unit:
+      code: MA-A4-1-2
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的坐標表示法
+      std: true
+    textbook: 數學4A 空間向量的坐標表示法
+    pattern:
+      key: MA-A4-1-2:T01
+      name: 空間坐標投影與距離計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 常看到的文具中的三角板有兩種，其角度分別為 30°－60°－90°與 45°－45°－90°。今將兩種三角板△ABC（30°－60°－90°）與△ACD（45°－45°－90°）立在一起使得$\overline{AC}$為共同邊且$\overline{AB}$⊥$\overline{AD}$，如右圖所示，其中∠BAC＝∠CAD＝90°且 ∠ACB＝30°，若△BCD 與△ABC 所夾之兩面角為 θ，試求 tanθ＝＿＿＿＿。
+  assets:
+  - key: s2_10_f1
+    kind: figure
+    file: doc_112_台中_台中二中_數學_數A_g11s2e1/s2_10_f1.png
+    crop:
+      page: 2
+      rect:
+      - 492.2
+      - 367.0
+      - 564.3
+      - 469.1
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '點 A 對$\overline{BC}$做垂足 E
+
+    ∵$\overline{DA}$⊥平面 ABC 且$\overline{AE}$⊥$\overline{BC}$
+
+    ∴由三垂線定理可知，$\overline{DE}$⊥$\overline{BC}$
+
+    故θ＝∠AED 且∠DAE＝$90^{^{\circ}}$
+
+    設$\overline{AC}$＝$\overline{AD}$＝$\sqrt{3}$，$\overline{BA}$＝1，則$\overline{BC}$＝2
+
+    ∵$\frac{1}{2}\times \overline{AE}\times \overline{BC}$＝$\frac{1}{2}\times \overline{AB}\times \overline{AC}$
+
+    ∴$\overline{AE}$＝$\frac{\sqrt{3}}{2}$，tanθ＝$\frac{\overline{DA}}{AE}=\frac{\sqrt{3}}{\frac{\sqrt{3}}{2}}$＝2'
+  tags:
+    unit:
+      code: MA-A4-1-1
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間概念
+      std: true
+    textbook: 數學4A 空間概念
+    pattern:
+      key: MA-A4-1-1:T02
+      name: 三垂線定理計算空間線段長
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 如右圖，四面體 A－BCD 中，底面 BCD 與另外三側面 ABC、ACD、ABD 之兩面角均為 θ，若$\overline{BC}$＝7、$\overline{CD}$＝8、$\overline{BD}$＝9，tanθ＝$3\sqrt{5}$，則四面體 A－BCD 之體積為＿＿＿＿。
+  assets:
+  - key: s3_1_f1
+    kind: figure
+    file: doc_112_台中_台中二中_數學_數A_g11s2e1/s3_1_f1.png
+    crop:
+      page: 2
+      rect:
+      - 475.4
+      - 487.75
+      - 565.4
+      - 584.55
+  answer:
+  - $60\sqrt{5}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 A 到平面 BCD 投影點 H
+
+    H 到直線 BC，直線 CD，直線 BD 投影點分別為點 E，F，G，
+
+    ∵$\overline{AH}$⊥平面 BCD，$\overline{HE}$⊥$\overline{BC}$
+
+    ∴$\overline{AE}$⊥$\overline{BC}$⇒∠AEH＝θ
+
+    同理，∠AFH＝∠AGH＝θ
+
+    ∵$\overline{AH}$為共邊且$\frac{\overline{AH}}{\overline{EH}}$＝$\frac{\overline{AH}}{\overline{FH}}$＝$\frac{\overline{AH}}{\overline{GH}}$＝tanθ
+
+    則$\overline{EH}$＝$\overline{FH}$＝$\overline{GH}$⇒ H 為△BCD 內心
+
+    令內切圓半徑 r
+
+    △BCD 面積為$\sqrt{12\times 5\times 4\times 3}$＝r×$\frac{7+8+9}{2}$
+
+    ⇒ r＝$\sqrt{5}$⇒$\overline{AH}$＝$\sqrt{5}$tanθ＝15
+
+    故四面體 A－BCD 之體積為$\frac{1}{3}$×△BCD 面積×15＝5×$12\sqrt{5}$＝$60\sqrt{5}$'
+  tags:
+    unit:
+      code: MA-A4-1-1
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間概念
+      std: true
+    textbook: 數學4A 空間概念
+    pattern:
+      key: MA-A4-1-1:T04
+      name: 一般四面體距離與兩面角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 設 A、B、C 為空間中不共線三點，若｜$\vec{AB}$×$\vec{AC}$｜＝$\vec{AB}$．$\vec{AC}$，且 $\vec{AB}$．$\vec{AC}$＋$\vec{CA}$．$\vec{CB}$＝8，試問$\vec{AC}$在$\vec{AB}$上之投影長為＿＿＿＿。
+  answer:
+  - '2'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T05
+      name: 空間向量內積與正射影計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 空間中不共面四點 A、B、C、D，若$\vec{AD}$＝$2\vec{AB}$＋$\vec{AC}$＋$\frac{1}{4}$（$\vec{AB}$×$\vec{AC}$），且若△ABC 的面積為 12，試求四面體 ABCD 之體積為＿＿＿＿。
+  answer:
+  - '24'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '四面體 ABCD 之體積為$\frac{1}{6}$｜（$\vec{AB}$×$\vec{AC}$）．$\vec{AD}$｜
+
+    ＝$\frac{1}{6}\left| (\vec{AB}\times \vec{AC}) \cdot \left( 2\vec{AB}+\vec{AC}+\frac{1}{4}(\vec{AB}\times \vec{AC}) \right) \right|$
+
+    ＝$\frac{1}{6}\left| 2\vec{AB} \cdot (\vec{AB}\times \vec{AC})+\vec{AC} \cdot (\vec{AB}\times \vec{AC})+\frac{1}{4}(\vec{AB}\times \vec{AC}) \cdot (\vec{AB}\times \vec{AC}) \right|$
+
+    ＝$\frac{1}{6}\left| 0+0+\frac{1}{4}(\vec{AB}\times \vec{AC})^{2} \right|$＝$\frac{1}{6}\left| \frac{1}{4} \cdot (\vec{AB}\times \vec{AC})^{2} \right|$
+
+    ＝$\frac{1}{6}\left| \left( \frac{1}{2}\vec{AB}\times \vec{AC} \right) ^{2} \right|$＝$\frac{1}{6}$×（△ABC 面積）$^{2}$＝$\frac{1}{6}$×$12^{2}$＝24'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T08
+      name: 平行六面體體積與混合積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_台中二中_數學_數A_g11s2e1_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 設$\vec{a}$＝（1，2，3）、$\vec{b}$＝（1，1，1）、$\vec{c}$＝（1，－1，1），且 x、y 均為實數，則 ｜$\vec{a}$＋$x\vec{b}$＋$y\vec{c}$｜之最小值為＿＿＿＿。
+  answer:
+  - $\sqrt{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '｜$\vec{a}$＋$x\vec{b}$＋$y\vec{c}$｜$^{2}$
+
+    ＝｜（1＋x＋y，2＋x－y，3＋x＋y）｜$^{2}$
+
+    ＝（1＋x＋y）$^{2}$＋（2＋x－y）$^{2}$＋（3＋x＋y）$^{2}$
+
+    若 a（x＋y）＋b（x－y）＋c（x＋y）＝0
+
+    ⇒ x（a＋b＋c）＋y（a－b＋c）＝0
+
+    ⇒$\begin{cases}a +b +c = 0 \\ a -b +c = 0\end{cases}$⇒ b＝0，可取 a＝1，c＝－1
+
+    由柯西不等式可知，
+
+    〔（1＋x＋y）$^{2}$＋（2＋x－y）$^{2}$＋（3＋x＋y）$^{2}$〕×〔$1^{2}$＋$0^{2}$＋（－1）$^{2}$〕≥（1＋x＋y－3－x－y）$^{2}$
+
+    ⇒｜$\vec{a}$＋$x\vec{b}$＋$y\vec{c}$｜$^{2}$．2 ≥ 4
+
+    ⇒｜$\vec{a}$＋$x\vec{b}$＋$y\vec{c}$｜≥$\sqrt{2}$
+
+    故｜$\vec{a}$＋$x\vec{b}$＋$y\vec{c}$｜之最小值為$\sqrt{2}$'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T03
+      name: 空間柯西不等式求極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

@@ -1,0 +1,633 @@
+document:
+  id: doc_111_台中_興大附中_數學_數B_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 111
+  semester: 1
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 111學年度第1學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 111學年度第1學期第2次定期評量
+  source_file: 高二/數學/111/1-2/台中/興大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 18 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 24 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（第 1.～8.題每題 6 分，第 9.～10.題每題 5 分，共 58 分）
+    count: 10
+questions:
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 第 1 天獲得 1 元，第 2 天獲得 2 元，第 3 天獲得 4 元，第 4 天獲得 8 元，依此每天所獲得的錢為前一天的兩倍，如此進行到第 20 天，試問這 20 天所獲得的錢，總數最接近下列哪一個選項？
+  options:
+  - label: A
+    content: 10,000 元
+  - label: B
+    content: 100,000 元
+  - label: C
+    content: 1,000,000 元
+  - label: D
+    content: 10,000,000 元
+  - label: E
+    content: 100,000,000 元
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '這 20 天所獲得的錢為
+
+    1＋2＋$2^{2}$＋……＋$2^{19}$＝$\frac{1 (2^{20}-1)}{2-1}$＝$2^{20}$－1＝$1024^{2}$－1$\approx1000^{2}$＝$10^{6}$
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T07
+      name: 等比級數求和與不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 設正實數 b 滿足（$log_{3}$27）（$logb^{2}$）－$log_{8}$2＋logb＝2，試選出正確的選項。
+  options:
+  - label: A
+    content: 1$\leq$b$\leq\sqrt{10}$
+  - label: B
+    content: $\sqrt{10}\leq$b$\leq$10
+  - label: C
+    content: 10$\leq$b$\leq$10$\sqrt{10}$
+  - label: D
+    content: 10$\sqrt{10}\leq$b$\leq$100
+  - label: E
+    content: 100$\leq$b$\leq$100$\sqrt{10}$
+  answer:
+  - A
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '（$log_{3}$27）（$logb^{2}$）－$log_{8}$2＋logb＝2
+
+    ⇒ $\frac{\log 27}{\log 3}$×2 logb－$\frac{\log 2}{\log 8}$＋logb＝2
+
+    ⇒ 6 logb－$\frac{1}{3}$＋logb＝2 ⇒ logb＝$\frac{1}{3}$ ⇒ b＝$10^{\frac{1}{3}}$
+
+    ∵$10^{0}\leq$b$\leq10^{0.5}$ ∴1$\leq$b$\leq\sqrt{10}$
+
+    故選(A)'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T04
+      name: 對數律與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 有學者實驗發現：體重 w（公克）的動物在跑動 1 公里時，若每公克體重的基礎耗氧量為 m（毫升），則 w 與 m 的關係式為 m＝$\frac{10.46}{w^{0.5}}$。根據上述關係式，體重 1.2 公斤的貓之基礎耗氧量是體重 60 公斤人的幾倍？試選出最接近的選項。
+  options:
+  - label: A
+    content: 6 倍
+  - label: B
+    content: 7 倍
+  - label: C
+    content: 8 倍
+  - label: D
+    content: 9 倍
+  - label: E
+    content: 10 倍
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '所求為$\frac{\frac{10.46}{1200^{0.5}}}{\frac{10.46}{60000^{0.5}}}$＝$\sqrt{50}\approx$7
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T08
+      name: 指數律化簡與大小比較
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 1
+  stem: 已知點（a，b）是對數函數 y＝$log_{2}$x 圖形上的任一點，則下列哪些選項中的點也會在此 y＝$log_{2}$x 的圖形上？
+  options:
+  - label: A
+    content: （10a，b＋1）
+  - label: B
+    content: （$a^{2}$，2b）
+  - label: C
+    content: （$\sqrt{a}$，$\sqrt{b}$）
+  - label: D
+    content: $\left( \frac{1}{a} , -b \right)$
+  - label: E
+    content: $\left( \frac{a}{4} , b-2 \right)$
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '已知 b＝$log_{2}$a
+
+    (A) ╳：$log_{2}$10a＝$\frac{\log 10a}{\log 2}$＝$\frac{\log a+\log 10}{\log 2}$＝$\frac{\log a}{\log 2}$＋$\frac{\log 10}{\log 2}$＝$log_{2}$a＋$log_{2}$10＝b＋$log_{2}$10≠b＋1
+
+    (B) ○：$log_{2}a^{2}$＝$\frac{\log a^{2}}{\log 2}$＝$\frac{2 \log a}{\log 2}$＝2 $log_{2}$a＝2b
+
+    (C) ╳：$\log _{2}\sqrt{a}$＝$\frac{\log \sqrt{a}}{\log 2}$＝$\frac{\frac{1}{2} \log a}{\log 2}$＝$\frac{1}{2}log_{2}$a＝$\frac{1}{2}$b≠$\sqrt{b}$
+
+    (D) ○：$\log _{2}\frac{1}{a}$＝$\frac{\log \frac{1}{a}}{\log 2}$＝$\frac{-\log a}{\log 2}$＝－$log_{2}$a＝－b
+
+    (E) ○：$\log _{2}\frac{a}{4}$＝$\frac{\log \frac{a}{4}}{\log 2}$＝$\frac{\log a-\log 4}{\log 2}$＝$log_{2}$a－$\frac{2 \log 2}{\log 2}$＝b－2
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T12
+      name: 對數運算律驗點與圖形比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 設 a＞1＞b＞0，關於下列不等式，請選出正確的選項。
+  options:
+  - label: A
+    content: 若（α，β）是 y＝$a^{－x}$ 圖形上的一點，則（β，α）必為 y＝$\log _{a}\frac{1}{x}$圖形上的一點
+  - label: B
+    content: 若 P，Q 是 y＝$log_{a}$x 的圖形上兩相異點，則直線 PQ 之斜率必為正數
+  - label: C
+    content: log$\frac{b}{a}$＜log$\frac{a}{b}$
+  - label: D
+    content: $log_{a}$1＞$log_{b}$1
+  - label: E
+    content: $log_{a}$b$\leqlog_{b}$a
+  answer:
+  - A
+  - B
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：∵β＝$a^{－α}$ ∴$log_{a}$β＝－α
+
+    ⇒ α＝－$log_{a}$β＝$-\frac{\log \beta}{\log a}$＝$\frac{\log \frac{1}{\beta}}{\log a}$＝$\log _{a}\frac{1}{\beta}$ ⇒ （β，α）必為 y＝$\log _{a}\frac{1}{x}$ 圖形上的一點
+
+    (B) ○：當 a＞1，直線 PQ 斜率必為正數
+
+    (C) ○：∵$\frac{b}{a}$＜1＜$\frac{a}{b}$ ∴log$\frac{b}{a}$＜log$\frac{a}{b}$
+
+    (D) ╳：$log_{a}$1＝$log_{b}$1＝0
+
+    (E) ╳：反例：當 a＝4，b＝$\frac{1}{2}$時，$log_{4}\frac{1}{2}$＞$\log _{\frac{1}{2}}4$
+
+    故選(A)(B)(C)'
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T01
+      name: 對數函數圖形單調性凹向
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 下列哪些函數的圖形與直線 x＋y＝0 的圖形恰有一交點？
+  options:
+  - label: A
+    content: y＝$2^{x}$
+  - label: B
+    content: y＝－$2^{x}$
+  - label: C
+    content: y＝$2^{－∣x∣}$
+  - label: D
+    content: y＝$\log _{2}\frac{1}{x}$
+  - label: E
+    content: y＝$log_{2}$∣x∣
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T07
+      name: 對數函數圖形平移與實根個數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 2
+  stem: 化簡$3^{\log _{9}25}$＋$log_{2}\sqrt{32}$＋$\log _{\sqrt{3}}1$＋$log_{7}$8×$log_{4}$343＝＿＿＿＿。
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '$3^{\log _{9}25}$＋$\log _{2}\sqrt{32}$＋$\log _{\sqrt{3}}1$＋$log_{7}$8×$log_{4}$343
+
+    ＝$3^{\frac{\log 25}{\log 9}}$＋$\frac{\log \sqrt{32}}{\log 2}$＋0＋$\frac{\log 8}{\log 7}$×$\frac{\log 343}{\log 4}$＝$3^{\frac{2 \log 5}{2 \log 3}}$＋$\frac{\frac{5}{2} \log 2}{\log 2}$＋$\frac{3 \log 2}{\log 7}$×$\frac{3 \log 7}{2 \log 2}$
+
+    ＝$3^{\log _{3}5}$＋$\frac{5}{2}$＋$\frac{9}{2}$＝5＋7＝12'
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T04
+      name: 對數律與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 2
+  stem: 若兩直線 y＝4 與 y＝9 交 y＝$\left( \frac{2}{3} \right) ^{x}$的圖形於 P、Q 兩點，則直線 PQ 的斜率為＿＿＿＿。
+  answer:
+  - $-\frac{5}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 P（a，4），Q（b，9），$\left( \frac{2}{3} \right) ^{a}$＝4，$\left( \frac{2}{3} \right) ^{b}$＝9
+
+    ∵$\frac{\left( \frac{2}{3} \right) ^{b}}{\left( \frac{2}{3} \right) ^{a}}$＝$\left( \frac{2}{3} \right) ^{b-a}$＝$\frac{9}{4}$
+
+    ∴b－a＝－2
+
+    故直線 PQ 的斜率為$\frac{9-4}{b-a}$＝$-\frac{5}{2}$'
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T02
+      name: 指數函數圖形交點與斜率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 2
+  stem: 最近陽光紫外線強烈，生產玻璃的幸福公司聲稱，他們的玻璃能隔絕掉光線中 50 ％的紫外線，若依幸福公司的說法，要使紫外線隔絕到原來的 1 ％以下（含），則理論上至少要＿＿＿＿層玻璃。
+  answer:
+  - '7'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設要 n 層玻璃，則
+
+    $\left( \frac{1}{2} \right) ^{n}\leq\frac{1}{100}$
+
+    ⇒ $2^{n}\geq$100，取 n＝7
+
+    故至少要 7 層玻璃
+
+    4.2 $log_{3}$y＝1 ⇒ $log_{3}$y＝$\frac{1}{2}$ ⇒ y＝$3^{\frac{1}{2}}$ ⇒ $y^{4}$＝$3^{2}$＝9
+
+    $x^{\frac{-1}{3}}y^{4}$＝1 ⇒ $x^{\frac{-1}{3}}$＝$\frac{1}{9}$ ⇒ x＝$\left( \frac{1}{9} \right) ^{-3}$＝729
+
+    故$\frac{x-y^{4}}{10}$＝$\frac{729-9}{10}$＝72
+
+    5.設 A（t，logt），t≠0
+
+    ∵$\overline{OA}$：$\overline{OB}$＝1：4 ∴B（4t，4 logt）
+
+    ∵B 在 y＝logx 的圖形上 ∴4 logt＝log4t
+
+    ⇒ $t^{4}$＝4t ⇒ $t^{3}$＝4 ⇒ t＝$2^{\frac{2}{3}}$，故 m＝$\frac{2}{3}$
+
+    6.（1－r ％）$^{6}$＝70 ％
+
+    ⇒ 1－r ％＝$0.7^{\frac{1}{6}}\approx$0.9423
+
+    ⇒ r ％$\approx$0.0577 ⇒ r$\approx$5.8
+
+    7.$\begin{cases}L (1)=a (1-10^{-b})=50 \ldots \ldots \ldots \ldots \ldots ① \\ L (2)=a (1-10^{-2b})=90\ldots \ldots \ldots \ldots \ldots ②\end{cases}$
+
+    $\frac{②}{①}$得$\frac{a (1-10^{-b})(1+10^{-b})}{a (1-10^{-b})}$＝$\frac{90}{50}$ ⇒ 1＋$10^{－b}$＝$\frac{9}{5}$ ⇒ $10^{－b}$＝$\frac{4}{5}$
+
+    代入①得$a \left( 1-\frac{4}{5} \right)$＝50 ⇒ a＝250
+
+    ∴L(3)＝250（1－$10^{－3b}$）＝250 $\left[ 1-\left( \frac{4}{5} \right) ^{3} \right]$＝250×$\frac{61}{125}$＝122
+
+    故<u>小英</u>三星期可以背熟 122 個德文單字
+
+    8.$log_{2}$x＋$log_{x}$2－4＝0
+
+    ⇒ $\frac{\log x}{\log 2}$＋$\frac{\log 2}{\log x}$－4＝0 ⇒ $\left( \frac{\log x}{\log 2} \right) ^{2}$－4×$\frac{\log x}{\log 2}$＋1＝0 ⇒ （$log_{2}$x）$^{2}$－4 $log_{2}$x＋1＝0
+
+    ∵α，β為方程式 $log_{2}$x＋$log_{x}$2－4＝0 的兩根
+
+    得（$log_{2}$x－$log_{2}$α）（$log_{2}$x－$log_{2}$β）＝0
+
+    ⇒ （$log_{2}$x）$^{2}$－（$log_{2}$α＋$log_{2}$β）$log_{2}$x＋$log_{2}$α×$log_{2}$β＝0
+
+    ∴$\begin{cases}\log _{2}\alpha +\log _{2}\beta =4 \\ \log _{2}\alpha \times \log _{2}\beta =1\end{cases}$
+
+    故 $log_{α}$β＋$log_{β}$α＝$\frac{\log \beta}{\log \alpha}$＋$\frac{\log \alpha}{\log \beta}$＝$\frac{\frac{\log \beta}{\log 2}}{\frac{\log \alpha}{\log 2}}$＋$\frac{\frac{\log \alpha}{\log 2}}{\frac{\log \beta}{\log 2}}$＝$\frac{\log _{2}\beta}{\log _{2}\alpha}$＋$\frac{\log _{2}\alpha}{\log _{2}\beta}$
+
+    ＝$\frac{(\log _{2}\beta )^{2}+(\log _{2}\alpha )^{2}}{\log _{2}\alpha \times \log _{2}\beta}$＝$\frac{(\log _{2}\beta +\log _{2}\alpha )^{2}-2 \log _{2}\alpha \times \log _{2}\beta}{\log _{2}\alpha \times \log _{2}\beta}$
+
+    ＝$\frac{4^{2}-2\times 1}{1}$＝14
+
+    9.設 x 小時後，則 $2e^{－0.2x}$＜0.1
+
+    ∵log（$2e^{－0.2x}$）＝log2＋$loge^{－0.2x}$＝log2－0.2x loge，log0.1＝－1
+
+    ∴log2－0.2x loge＜－1
+
+    ⇒ x＞$\frac{\log 2+1}{0.2 \log e}\approx\frac{1.3010}{0.2}$×$\frac{1}{\log e}\approx\frac{1.3010}{0.2}$×2.3＝14.9615
+
+    取 x＝15
+
+    故至少在 15 小時後，在身體內的殘餘量會低於 0.1 毫克
+
+    10.$m_{1}$＝$\frac{\log _{a}5-\log _{a}2}{5-2}$＝$\frac{\frac{\log 5}{\log a}-\frac{\log 2}{\log a}}{3}$＝$\frac{\frac{\log \frac{5}{2}}{\log a}}{3}$＝$\frac{\log \frac{5}{2}}{3 \log a}$
+
+    $m_{2}$＝$\frac{\log _{a^{2}}5-\log _{a^{2}}2}{5-2}$＝$\frac{\frac{\log 5}{\log a^{2}}-\frac{\log 2}{\log a^{2}}}{3}$＝$\frac{\frac{\log \frac{5}{2}}{2 \log a}}{3}$＝$\frac{\log \frac{5}{2}}{6 \log a}$
+
+    故$\frac{m_{2}}{m_{1}}$＝$\frac{1}{2}$'
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T11
+      name: 指數成長與半衰期衰減建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 2
+  stem: 若 x，y 為兩正實數，且滿足$x^{\frac{-1}{3}}y^{4}$＝1 及 2 $log_{3}$y＝1，則$\frac{x-y^{4}}{10}$＝＿＿＿＿。
+  answer:
+  - '72'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T02
+      name: 指數與對數互化求代數值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 2
+  stem: 如右圖，過原點 O 的直線 L 與 y＝logx 的圖形交於 A，B 兩 點，若$\overline{OA}$：$\overline{AB}$＝1：3，且 A 點的 x 坐標為 $2^{m}$，則 m 之值 為＿＿＿＿。
+  assets:
+  - key: s3_5_f1
+    kind: figure
+    file: doc_111_台中_興大附中_數學_數B_g11s1e2/s3_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 443.6
+      - 514.45
+      - 563.9
+      - 564.95
+  answer:
+  - $\frac{2}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T12
+      name: 對數運算律驗點與圖形比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 2
+  stem: '某公司為了響應節能減碳政策，決定在六年後將公司該年二氧化碳排放量降為目前排放量的 70 ％。公司希望每年依固定的比率（當年和前一年排放量的比）逐年減少二氧化碳的排放量。若要達到這項目標，該公司每年至少要比前一年減少 r ％的二氧化碳的排放量。則 r 之值為 ＿＿＿＿。（四捨五入至小數點後第一位）
+
+    | n | 2 | 3 | 4 | 5 | 6 |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | $0.8^{\frac{1}{n}}$ | 0.8944 | 0.9283 | 0.9457 | 0.9564 | 0.9635 |
+
+    | $0.9^{\frac{1}{n}}$ | 0.9487 | 0.9655 | 0.9740 | 0.9791 | 0.9826 |
+
+    | $0.7^{\frac{1}{n}}$ | 0.8367 | 0.8879 | 0.9147 | 0.9311 | 0.9423 |'
+  answer:
+  - '5.8'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T11
+      name: 指數成長與半衰期衰減建模
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹空白處後方含單一亂碼字元
+  difficulty: 2
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 2
+  stem: 心理學家常用數學模式 L（t）＝a（1－$10^{－bt}$）來描述學生經過 t 星期後所得到的學習量，其中 a 與 b 跟學生及學習的科目相關。若<u>小英</u>一星期可以背熟 50 個德文單字，兩星期可以背熟 90 個德文單字，則<u>小英</u>三星期可以背熟＿＿＿＿個德文單字。
+  answer:
+  - '122'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T11
+      name: 指數成長與半衰期衰減建模
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 2
+  stem: 設α、β為方程式 $log_{2}$x＋$log_{x}$2－4＝0 之兩根，則 $log_{α}$β＋$log_{β}$α之值為＿＿＿＿。
+  answer:
+  - '14'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T02
+      name: 對數方程式求解與驗根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 若某種藥劑對人體施打後在血液中殘餘量的關係式為 f（x）＝$2e^{－0.2x}$，其中 f（x）是藥劑在身體內的殘餘量（單位：毫克），x 是注射藥劑後的時間（單位：小時），則至少在＿＿＿＿小時後，在身體內的殘餘量會低於 0.1 毫克。$\left( 無條件進位至整數位,已知 \log 2 \approx 0.3010 , \frac{1}{\log e} \approx 2.3 \right)$
+  answer:
+  - '15'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T11
+      name: 指數成長與半衰期衰減建模
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_111_台中_興大附中_數學_數B_g11s1e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 已知 a＞1。若 f（x）＝$log_{a}$x 的函數圖形與直線 x＝2、x＝5 分別交於 A、B 兩點。g（x）＝$\log _{a^{2}}x$的函數圖形與直線 x＝2、x＝5 分別交於 C、D 兩點。設 A，B 兩點的斜率為 $m_{1}$，C，D 兩點的斜率為 $m_{2}$，則$\frac{m_{2}}{m_{1}}$之值為＿＿＿＿。
+  answer:
+  - $\frac{1}{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T12
+      name: 對數運算律驗點與圖形比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

@@ -1,0 +1,520 @@
+document:
+  id: doc_113_高雄_高師大附中_數學_數B_g11s1e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數B
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 2
+  city: 高雄
+  school_short: 高師大附中
+  school: 國立高雄師範大學附屬高級中學
+  title: 國立高雄師範大學附屬高級中學 113學年度第1學期第2次定期評量 高二數學（數B）科試題
+  exam_name: 113學年度第1學期第2次定期評量
+  source_file: 高二/數學/113/1-2/高雄/高師大附中_數B.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題：每題5分，共25分（每題均有五個選項，其中至少有一個選項是正確的。答錯一個選項得3分，答錯兩個選項得1分，錯二個以上的選項不給分）
+    count: 5
+  - ord: 2
+    name: 二、填充題：每格全對才給分，依答對格數計分，配分如下表
+    count: 11
+  - ord: 3
+    name: 三、混合題：共10分（請寫出計算過程，無算式不予計分）
+    count: 1
+questions:
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列各項敘述何者正確？
+  options:
+  - label: A
+    content: log$_{\sqrt{2}}$3＝$log_{2}$ 9
+  - label: B
+    content: log 3＋log 4＝log 7
+  - label: C
+    content: log (－5)$^{10}$＝10 log (－5 )
+  - label: D
+    content: $log_{3}$ 4×$log_{4}$ 5×$log_{5}$ 6＝2
+  - label: E
+    content: $9^{\log _{3}2}$＝4
+  answer:
+  - A
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (A) ○：log$_{\sqrt{2}}$3＝$\log _{\sqrt{2}^{2}}3^{2}$＝$log_{2}$ 9。 (B) ×：log 3＋log 4＝log 3×4＝log 12≠log 7。 (C) ×：log (－5 )$^{10}$＝10 log |－5 |＝10 log 5≠10 log (－5 )。 (D) ×：$log_{3}$ 4×$log_{4}$ 5×$log_{5}$ 6＝$log_{3}$ 6≠2。 (E) ○：$9^{\log _{3}2}$＝$9^{\log _{3^{2}}2^{2}}$＝$9^{\log _{9}4}$＝4。 故選(A)(E)。
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T04
+      name: 對數律與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列哪些函數的圖形與直線x＋y＝0的圖形恰有一交點？
+  options:
+  - label: A
+    content: y＝$2^{-x}$
+  - label: B
+    content: y＝－$2^{x}$
+  - label: C
+    content: y＝$2^{- \left| x \right|}$
+  - label: D
+    content: y＝| $log_{2}$ x |
+  - label: E
+    content: y＝$log_{2}$ | x |
+  answer:
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T07
+      name: 對數函數圖形平移與實根個數
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 附圖表示函數y＝k．$a^{x}$＋b的圖形，其中k，a，b為常數，試選出正確的選項。
+  options:
+  - label: A
+    content: a＞1
+  - label: B
+    content: 0＜a＜1
+  - label: C
+    content: b＜0
+  - label: D
+    content: k＞1
+  - label: E
+    content: 0＜k＜1
+  assets:
+  - key: s1_3_f1
+    kind: figure
+    file: doc_113_高雄_高師大附中_數學_數B_g11s1e2/s1_3_f1.png
+    crop:
+      page: 1
+      rect:
+      - 54.9
+      - 335.95
+      - 159.95
+      - 429.05
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 漸近線圖形下移1單位 ∴ b＝－1 由圖知，底數a＞1，圖形的y截距在(－1 , 0 )之間 ⇒ －1＜k．$a^{0}$－1＜0 ⇒ 0＜k＜1 故選(A)(C)(E)。
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T05
+      name: 指數函數圖形平移與係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 關於指數與對數函數的圖形，下列選項哪些是正確的？
+  options:
+  - label: A
+    content: y＝$10^{x}$與y＝$10^{-x}$對稱於y軸
+  - label: B
+    content: y＝log x與y＝log$_{\frac{1}{10}}$x對稱於x軸
+  - label: C
+    content: y＝$10^{x}$與y＝log x對稱於x＋y＝0
+  - label: D
+    content: 若( α , β )為y＝$10^{x}$圖形上一點，則(－α , －β )為y＝log x圖形上一點
+  - label: E
+    content: 任取y＝log$_{\frac{1}{10}}$x圖形上兩不同點A，B，則直線AB的斜率為負
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T09
+      name: 對數函數圖形對稱與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 1
+  stem: 設a，b，c為實數且滿足log a＝1.2，log b＝2.4，log c＝3.6。試選出正確的選項。
+  options:
+  - label: A
+    content: a＋c＝2b
+  - label: B
+    content: 10＜a＜100
+  - label: C
+    content: 1000＜c＜2000
+  - label: D
+    content: b＝$a^{2}$
+  - label: E
+    content: a，b，c成等差數列
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: log a＝1.2，log b＝2.4，log c＝3.6 (A) ×：a＝$10^{1.2}$，b＝$10^{2.4}$，c＝$10^{3.6}$， a＋c＝$10^{1.2}$＋$10^{3.6}$≠$10^{2.4}$。 (B) ○：10＜$10^{1.2}$＜$10^{2}$ ⇒ 10＜a＜100。 (C) ×：2000＝2×$10^{3}$＝$10^{log 2}$×$10^{3}$＝$10^{0.301}$×$10^{3}$＝$10^{3.301}$ ∵ $10^{3.6}$＞$10^{3.301}$ ∴ c＞2000 (D) ○：b＝$10^{2.4}$＝( $10^{1.2}$ )$^{2}$＝$a^{2}$。 (E) ×：$b^{2}$＝( $10^{2.4}$ )$^{2}$＝$10^{4.8}$＝$10^{1.2}$×$10^{3.6}$＝a．c ∴ a、b、c成等比 故選(B)(D)。
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T02
+      name: 指數與對數互化求代數值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 計算(1) $2^{\log _{4}9}$＝＿＿＿＿。(2) ( $log_{2}$ 3＋$log_{4}$ 9 ) ( $log_{3}$ 4＋$log_{9}$ 2 )＝＿＿＿＿。
+  answer:
+  - (1) 3；(2) 5
+  answer_status: verified
+  answer_source: answer_key
+  explanation: (1) $2^{\log _{4}9}$＝$2^{\log _{2}3}$＝3。 (2) ( $log_{2}$ 3＋$log_{4}$ 9 ) ( $log_{3}$ 4＋$log_{9}$ 2 ) ＝( $log_{2}$ 3＋$\log _{2^{2}}3^{2}$) ( $\log _{3}2^{2}$＋$\log _{3^{2}}2$ ) ＝2 $log_{2}$ 3×( 2＋$\frac{1}{2}$) $log_{3}$ 2＝5 $log_{2}$ 3×$log_{3}$ 2＝5。
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T04
+      name: 對數律與換底化簡求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 設x＞0，y＞0，已知$log_{5}$ x＝6，$log_{5}$ y＝10，則$log_{5}$ ( x＋y )的值最接近的正整數為n，則n＝＿＿＿＿。
+  answer:
+  - '10'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $log_{5}$ x＝6 ⇒ x＝$5^{6}$，$log_{5}$ y＝10 ⇒ y＝$5^{10}$， $log_{5}$ ( x＋y )＝$log_{5}$ ( $5^{6}$＋$5^{10}$ )＝$log_{5}$ $5^{6}$ ( 1＋$5^{4}$ )＝$log_{5}$ $5^{6}$＋$log_{5}$ ( 1＋$5^{4}$ ) $\approx$6＋$log_{5}$ $5^{4}$＝6＋4＝10 ∴ n＝10
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T02
+      name: 指數與對數互化求代數值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 解對數方程式：$log_{4}$ ( x－2 )＋$log_{4}$ ( x＋1 )＝1，x＝＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $log_{4}$ ( x－2 )＋$log_{4}$ ( x＋1 )＝1 ⇒ $log_{4}$ ( x－2 ) ( x＋1 )＝1 ⇒ ( x－2 ) ( x＋1 )＝4 ⇒ $x^{2}$－x－2＝4 ⇒ ( x－3 ) ( x＋2 )＝0 ∴ x＝3或－2（不合）
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T02
+      name: 對數方程式求解與驗根
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 若$log_{( x－3 )}$ ( $x^{2}$－x－2 )有意義，求x之範圍＿＿＿＿。
+  answer:
+  - x＞3，x≠4
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T05
+      name: 對數性質與定義域判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 解對數不等式：log$_{\frac{1}{3}}$( x－1 )＞log$_{\frac{1}{9}}$( x＋5 )的解為＿＿＿＿。
+  answer:
+  - 1＜x＜4
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T06
+      name: 對數不等式與真數定義域
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 設P、Q分別為直線y＝2、y＝6和y＝$9^{x}$的交點，則直線$\overleftrightarrow{PQ}$的斜率為＿＿＿＿。
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T02
+      name: 指數函數圖形交點與斜率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 若$6^{-100}$化為純小數，小數點後第n位始不為0，且第一個不為0的數為a，則數對( n , a )＝＿＿＿＿。
+  answer:
+  - ( 78 , 1 )
+  answer_status: verified
+  answer_source: answer_key
+  explanation: log $6^{-100}$＝－100 log 6＝－100 ( log 2＋log 3 )＝－100×( 0.301＋0.4771 ) ＝－77.81＝－78＋0.19 ∴首數－78，尾數0.19 log 1＝0＜0.19＜0.301＝log 2 ∴ 第78位開始不為0，不為0的數字為1 故數對 ( n , a )＝( 78 , 1 )。
+  tags:
+    unit:
+      code: MA-B3-2-2
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數
+      std: true
+    textbook: 數學3B 對數
+    pattern:
+      key: MA-B3-2-2:T03
+      name: 常用對數近似與數量級
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 設a＝log$_{\frac{1}{3}}$2，b＝log$_{\frac{1}{3}}\frac{1}{2}$，c＝log$_{\frac{1}{2}}$3，d＝log$_{\frac{1}{2}}\frac{1}{3}$，比較a，b，c，d之大小＿＿＿＿。
+  answer:
+  - d＞b＞a＞c
+  answer_status: verified
+  answer_source: answer_key
+  explanation: －1＝log$_{\frac{1}{3}}$3＜a＝log$_{\frac{1}{3}}$2＜log$_{\frac{1}{3}}$1＝0， 0＝log$_{\frac{1}{3}}$1＜b＝log$_{\frac{1}{3}}\frac{1}{2}$＜log$_{\frac{1}{3}}\frac{1}{3}$＝1， c＝log$_{\frac{1}{2}}$3＜log$_{\frac{1}{2}}$2＝－1， d＝log$_{\frac{1}{2}}\frac{1}{3}$＞log$_{\frac{1}{2}}\frac{1}{2}$＝1， ∴ d＞b＞a＞c
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T11
+      name: 同底轉換與區間夾擠比大小
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 1
+  stem: 過點P ( 0 , 4 )且與直線L：x－y＝0垂直的直線L'，分別交函數f (x)＝$2^{x}$與g (x)＝$log_{2}$ x兩圖形於A，B兩點，求$\overline{PA}$＋$\overline{PB}$之值為＿＿＿＿。
+  answer:
+  - 4$\sqrt{2}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T09
+      name: 對數函數圖形對稱與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 設函數f (x)＝log x的圖形上有兩點A，B，其x坐標分別為a，b。已知直線AB的斜率為$\frac{1}{2}$，且b－a＝4，若兩直線x＝b，y＝log a交於一點C，試求△ABC的面積為＿＿＿＿。
+  answer:
+  - '4'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B3-2-3
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 對數函數
+      std: true
+    textbook: 數學3B 對數函數
+    pattern:
+      key: MA-B3-2-3:T10
+      name: 對數函數坐標與幾何計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 已知某一種細菌每隔1天數量會變為原來的5倍，設1000株細菌需經過n天後數量才會超過$10^{12}$株，則最小正整數n＝＿＿＿＿。
+  answer:
+  - '13'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 依題意可得f (t)＝$5^{t}$， 1000．$5^{n}$＞$10^{12}$ ⇒ log 1000．$5^{n}$＞log $10^{12 }$⇒ 3＋n log 5＞12 ∴ n＞$\frac{9}{\log 5}$＝$\frac{9}{0.699}$＝12.87…… 故最小正整數n＝13。
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T03
+      name: 指數成長倍數比較與估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_高雄_高師大附中_數學_數B_g11s1e2_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 某銀行推出一項投資商品，內容為每年繳9700元，共繳10次，10年後一次領回100000元。銀行宣稱其投資報酬率為$\frac{100000-9700\times 10}{9700\times 10}\approx$3.09％，大於銀行的定存利率2％。 (1) 若每年存入銀行9700元作複利定存，年利率2％，每年計息一次，試問10年後可領回本利和多少元？（四捨五入取 至整數位）（已知$1.02^{10}\approx$1.22）（7分） (2) 試以投資報酬率評估此投資產品是否值得購買。（3分，請寫出原因，否則不予計分）
+  answer:
+  - (1) 108834元；(2) 不值得購買
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 9700×( 1＋2％ )$^{10}$＋9700×( 1＋2％ )$^{9}$＋…＋9700×( 1＋2％ )
+
+    ＝$\frac{9700\times 1.02\cdot \left( 1.02^{10}-1 \right)}{1.02-1}$＝$\frac{9700\times 1.02\cdot \left( 1.22-1 \right)}{0.02}$＝108834 (元)。 (2) $\frac{108834-9700\times 10}{9700\times 10}\approx$12.2％＞3.09％ ∴ 不值得購買'
+  tags:
+    unit:
+      code: MA-B3-2-1
+      book: 數學3B
+      chapter: 指數與對數函數
+      title: 指數函數
+      std: true
+    textbook: 數學3B 指數函數
+    pattern:
+      key: MA-B3-2-1:T04
+      name: 複利計息方案比較本利和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

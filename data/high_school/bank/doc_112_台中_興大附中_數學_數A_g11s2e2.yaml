@@ -1,0 +1,629 @@
+document:
+  id: doc_112_台中_興大附中_數學_數A_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 2
+  city: 台中
+  school_short: 興大附中
+  school: 國立中興大學附屬高級中學
+  title: 國立中興大學附屬高級中學 112學年度第2學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 112學年度第2學期第2次定期評量
+  source_file: 高二/數學/112/2-2/台中/興大附中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、單一選擇題（每題 6 分，共 18 分）
+    count: 3
+  - ord: 2
+    name: 二、多重選擇題（每題 8 分，共 24 分）
+    count: 3
+  - ord: 3
+    name: 三、填充題（每題 5 分，共 50 分）
+    count: 10
+  - ord: 4
+    name: 四、計算題（共 8 分）
+    count: 1
+questions:
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: single
+  page: 1
+  stem: 試求通過 A（3，1，2）、B（5，4，3）兩點，且與平面 E：x＋2y－z＝1 垂直的平面方程式為 ax＋by＋cz＝1，則 a＋b＋c 之值為下列哪一個選項？
+  options:
+  - label: A
+    content: $-\frac{1}{10}$
+  - label: B
+    content: $\frac{1}{10}$
+  - label: C
+    content: $\frac{3}{10}$
+  - label: D
+    content: $\frac{5}{10}$
+  - label: E
+    content: $\frac{7}{10}$
+  answer:
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'E：x＋2y－z＝1 與 ax＋by＋cz＝1 的法向量分別為（1，2，－1），（a，b，c）
+
+    ⇒$\begin{cases}(1 , 2 , -1) \cdot (a , b , c)=0 \\ 3a +b + 2c =1 \\ 5a + 4b +3c =1\end{cases}$⇒$\begin{cases}a + 2b -c =0 \cdots \cdots \cdots \cdots \cdots ① \\ 3a +b +2c =1 \cdots \cdots \cdots \cdots \cdots ② \\ 5a + 4b +3c =1\cdots \cdots \cdots \cdots \cdots ③\end{cases}$
+
+    $\begin{matrix}由①\times 2+② 得 5a+5b =1 \\ 由①\times 3+③ 得 8 a +10b=1\end{matrix}$⇒ a＝$\frac{1}{2}$，b＝$-\frac{3}{10}$
+
+    代回①得 c＝a＋2b＝$\frac{1}{2}$＋2×$\left( -\frac{3}{10} \right)$＝$\frac{1}{2}$－$\frac{3}{5}$＝$-\frac{1}{10}$
+
+    ∴a＋b＋c＝$\frac{1}{2}$＋$\left( -\frac{3}{10} \right)$＋$\left( -\frac{1}{10} \right)$＝$\frac{5-3-1}{10}$＝$\frac{1}{10}$
+
+    故選(B)'
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: single
+  page: 1
+  stem: 空間中，若直線 L：$\frac{x -2}{1}=\frac{y +1}{-2}=\frac{z +1}{2}$與平面 E：2x＋3y＋z＋4＝0 的交點坐標為 （a，b，c），則 a＋b＋c 之值為下列哪一個選項？
+  options:
+  - label: A
+    content: －4
+  - label: B
+    content: －2
+  - label: C
+    content: '0'
+  - label: D
+    content: '2'
+  - label: E
+    content: '4'
+  answer:
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 L 上一點（2＋t，－1－2t，－1＋2t），代入 E
+
+    ⇒ 2（2＋t）＋3（－1－2t）＋（－1＋2t）＋4＝0
+
+    ⇒－2t＋4＝0
+
+    ⇒ t＝2
+
+    ∴交點（a，b，c）＝（4，－5，3），則所求為 4＋（－5）＋3＝2
+
+    故選(D)'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T06
+      name: 直線與平面交點及投影求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: single
+  page: 1
+  stem: 甲、乙兩人同時射擊一個靶面，每人射擊兩發子彈，已知兩人每次射擊命中與否為獨立事件，且甲乙兩人射中與否亦為獨立事件。設甲、乙每發子彈的射擊命中率分別為$\frac{1}{3}$、$\frac{3}{5}$，則此靶面恰中兩發子彈的機率為何？
+  options:
+  - label: A
+    content: $\frac{106}{225}$
+  - label: B
+    content: $\frac{52}{225}$
+  - label: C
+    content: $\frac{88}{225}$
+  - label: D
+    content: $\frac{103}{225}$
+  - label: E
+    content: $\frac{117}{225}$
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P（甲中 2 且乙中 0）＋P（甲中 1 且乙中 1）＋P（甲中 0 且乙中 2）
+
+    ＝$\frac{1}{3}\times \frac{1}{3}\times \left( 1-\frac{3}{5} \right) \times \left( 1-\frac{3}{5} \right)$＋$C_{1}^{2}\times \frac{1}{3}\times \left( 1-\frac{1}{3} \right) \times C_{1}^{2}\times \frac{3}{5}\times \left( 1-\frac{3}{5} \right)$＋$\left( 1-\frac{1}{3} \right) \times \left( 1-\frac{1}{3} \right) \times \frac{3}{5}\times \frac{3}{5}$
+
+    ＝$\frac{4}{225}$＋$\frac{48}{225}$＋$\frac{36}{225}$＝$\frac{88}{225}$，故選(C)'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: multiple
+  page: 2
+  stem: 空間中一直線 L：$\frac{x -1}{2}=\frac{y -2}{-1}=\frac{z +3}{3}$，下列的各方程式中，何者的圖形亦為直線 L？
+  options:
+  - label: A
+    content: $\frac{x -3}{2}=\frac{y -1}{-1}=\frac{z}{3}$
+  - label: B
+    content: $\begin{cases}x =-1+2t \\ y =3-t \\ z =-6+3t\end{cases}$，t 為實數
+  - label: C
+    content: $\frac{2}{x -1}=\frac{-1}{y -2}=\frac{3}{z +3}$
+  - label: D
+    content: $\begin{cases}x +2y =5 \\ 3y +z =3\end{cases}$
+  - label: E
+    content: $\begin{cases}2x +7y +z =13 \\ x -y -z =5\end{cases}$
+  answer:
+  - A
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'L：$\frac{x -1}{2}=\frac{y -2}{-1}=\frac{z +3}{3}$，方向向量$\vec{v}$＝（2，－1，3），過 P（1，2，－3）
+
+    (A) ○：P（1，2，－3）代入$\frac{x -3}{2}=\frac{y -1}{-1}=\frac{z}{3}$得$\frac{1-3}{2}=\frac{2-1}{-1}=\frac{-3}{3}$滿足，且相同方向向量
+
+    (B) ○：（－1，3，－6）代入$\frac{x -1}{2}=\frac{y -2}{-1}=\frac{z +3}{3}$得$\frac{-1-1}{2}=\frac{3-2}{-1}=\frac{-6+3}{3}$滿足，且相同方向向量
+
+    (C) ╳：B（3，1，0）代入$\frac{2}{x -1}=\frac{-1}{y -2}=\frac{3}{z +3}$滿足方程式，但 P（1，2，－3）不滿足此方程式
+
+    (D) ○：L 的參數式（1＋2t，2－t，－3＋3t）代入$\begin{cases}x +2y =5 \\ 3y +z =3\end{cases}$
+
+    得$\begin{cases}( 1+2t )+2( 2-t )= 5 \\ 3( 2-t )+(-3+3t )= 3\end{cases}$⇒$\begin{cases}5 = 5 \\ 3 = 3\end{cases}$，表示 t 為任意實數
+
+    (E) ╳：承選項(D)，$\begin{cases}2( 1+2t )+7( 2-t )+(-3+3t )= 13 \\ ( 1+2t )-( 2-t )-(-3+3t )= 5\end{cases}$⇒$\begin{cases}13 = 13 \\ 2 =5\end{cases}$
+
+    ⇒ t 無解，無相交
+
+    故選(A)(B)(D)'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T01
+      name: 空間直線表示法互換與交點
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 2
+  stem: 戴戴與嬌嬌兩人進行 5 戰 3 勝制（先贏得 3 局的人獲勝）的羽球比賽，前 3 局戴戴贏 1 局輸 2 局暫時落後。已知過去兩人的比賽中，每局比賽戴戴獲勝的機率是 0.7，且各局比賽的勝負結果互不影響，試問下列哪些選項是正確的？
+  options:
+  - label: A
+    content: 比賽由戴戴獲勝的機率為 0.7
+  - label: B
+    content: 比賽由嬌嬌獲勝的機率為 0.51
+  - label: C
+    content: 若比賽由嬌嬌獲勝，則戴戴的戰績為贏 2 局輸 3 局的機率為$\frac{7}{17}$
+  - label: D
+    content: 若比賽由嬌嬌獲勝，則戴戴的戰績為贏 1 局輸 3 局的機率為$\frac{1}{2}$
+  - label: E
+    content: 若比賽由戴戴獲勝，則嬌嬌的戰績為贏 2 局輸 3 局的機率為 1
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '戴戴前三局贏 1 輸 2
+
+    (A) ╳：戴戴獲勝的機率為（0.7）$^{2}$＝0.49
+
+    (B) ○：由選項(A)可知 1－0.49＝0.51
+
+    (C) ○：戴戴贏 2 輸 3 的機率與第四局贏第五局輸的機率相等
+
+    ⇒ 0.7×0.3＝0.21
+
+    ∴$\frac{0.21}{0.51}$＝$\frac{7}{17}$
+
+    (D) ╳：戴戴第四局輸的機率為 0.3
+
+    ∴$\frac{0.3}{0.51}$＝$\frac{10}{17}$
+
+    (E) ○：戴戴要贏只能 2 連勝，此時嬌嬌的戰績必為贏 2 輸 3
+
+    ∴所求機率為 1
+
+    故選(B)(C)(E)'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T04
+      name: 多輪賽局與獲勝機率分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: multiple
+  page: 2
+  stem: 設｛$A_{1}$，$A_{2}$，$A_{3}$，$A_{4}$｝為某一試驗的樣本空間 S 的一個分割，且 P（$A_{1}$）＝x， P（$A_{2}$）＝$\frac{1}{4}$，P（$A_{3}$）＝$\frac{1}{4}$，P（$A_{4}$）＝$\frac{1}{6}$。若一事件 D 滿足 P（D∣$A_{1}$）＝y， P（D∣$A_{2}$）＝$\frac{1}{6}$，P（D∣$A_{3}$）＝$\frac{1}{12}$，P（D∣$A_{4}$）＝$\frac{1}{4}$。請選出正確的選項。
+  options:
+  - label: A
+    content: x＝$\frac{1}{3}$
+  - label: B
+    content: 若 $A_{1}$ 與事件 D 為互斥事件，則 P(D)＝$\frac{2}{3}$
+  - label: C
+    content: 若 $A_{1}$ 與事件 D 為互斥事件，則 P
+  - label: D
+    content: ＝$\frac{5}{48}$(D)若 $A_{1}$ 與事件 D 為獨立事件，則 P(D)＝$\frac{5}{24}$
+  - label: E
+    content: 若 $A_{2}$ 與事件 D 為獨立事件，則 y＝$\frac{3}{16}$
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：x＋$\frac{1}{4}$＋$\frac{1}{4}$＋$\frac{1}{6}$＝1 ⇒ x＝$\frac{4}{12}$＝$\frac{1}{3}$
+
+    (B) ╳：∵$A_{1}$∩D＝∅，由 P（D∣$A_{1}$）＝$\frac{P (D \cap A_{1})}{P (A_{1})}$＝$\frac{0}{P (A_{1})}$＝0＝y
+
+    ∴P(D)＝P（D∩$A_{1}$）＋P（D∩$A_{2}$）＋P（D∩$A_{3}$）＋P（D∩$A_{4}$）
+
+    ＝P（$A_{1}$）P（D∣$A_{1}$）＋P（$A_{2}$）P（D∣$A_{2}$）＋P（$A_{3}$）P（D∣$A_{3}$）
+
+    ＋P（$A_{4}$）P（D∣$A_{4}$）
+
+    ＝$\frac{1}{3}\times 0+\frac{1}{4}\times \frac{1}{6}+\frac{1}{4}\times \frac{1}{12}+\frac{1}{6}\times \frac{1}{4}$＝$\frac{5}{48}$
+
+    (C) ○：同選項(B)
+
+    (D) ╳：P(D)＝P（$A_{1}$）P（D∣$A_{1}$）＋P（$A_{2}$）P（D∣$A_{2}$）
+
+    ＋P（$A_{3}$）P（D∣$A_{3}$）＋P（$A_{4}$）P（D∣$A_{4}$）
+
+    ⇒ y＝$\frac{1}{3}$y＋$\frac{1}{4}\times \frac{1}{6}+\frac{1}{4}\times \frac{1}{12}+\frac{1}{6}\times \frac{1}{4}=\frac{1}{3}y+\frac{5}{48}$（∵P(D)＝P（D∣$A_{1}$））
+
+    則 y＝$\frac{5}{32}$＝P(D)
+
+    (E) ○：P(D)＝P（$A_{1}$）P（D∣$A_{1}$）＋P（$A_{2}$）P（D∣$A_{2}$）＋P（$A_{3}$）P（D∣$A_{3}$）
+
+    ＋P（$A_{4}$）P（D∣$A_{4}$）
+
+    ⇒$\frac{1}{6}=\frac{1}{3}y+\frac{1}{4}\times \frac{1}{6}+\frac{1}{4}\times \frac{1}{12}+\frac{1}{6}\times \frac{1}{4}=\frac{1}{3}y+\frac{5}{48}$（∵P(D)＝P（D∣$A_{2}$））
+
+    則 y＝$\frac{3}{16}$
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T01
+      name: 條件機率定義與樣本篩選
+    labeled_by: agent
+    label_confidence: high
+    label_note: 選項C與D文字斷行錯位
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 3
+  stem: 若直線 L：$\begin{cases}3x +y -z =5 \\ x -2y +z =7\end{cases}$與平面 E：ax－5y＋z－7＝0 平行，則 a 之值為＿＿＿＿。
+  answer:
+  - '13'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T08
+      name: 直線與平面平行重合及垂直判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 3
+  stem: 如右圖，有一個邊長為 6 公尺的正立方體木塊，一位雕塑家想要作一件藝術品，他拿鋸子沿 P，Q，R 三點鋸下四面體 APQR，剩下的木塊以截面 PQR 為底放在地上，已知$\overline{AP}$＝2 公尺，$\overline{AQ}$＝$\overline{AR}$＝1 公尺，則這一件藝術品距離地面的高度為＿＿＿＿公尺。
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_112_台中_興大附中_數學_數A_g11s2e2/s3_2_f1.png
+    crop:
+      page: 3
+      rect:
+      - 491.85
+      - 105.6
+      - 562.85
+      - 183.05
+  answer:
+  - $\frac{28}{3}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T10
+      name: 立體幾何坐標化與截面距離
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 3
+  stem: 坐標空間中有方向向量為（2，2，1）的直線 L、平面 $E_{1}$：3x＋2y－6z＝36 與平面 $E_{2}$；3x＋2y－6z＝－20。則 L 被 $E_{1}$、$E_{2}$ 所截線段的長度為＿＿＿＿。
+  answer:
+  - '42'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T10
+      name: 立體幾何坐標化與截面距離
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 3
+  stem: 設 A（7，3，0），B（3，5，1），若點 P 在平面 E：2x＋y－z＝5 上使得$\overline{AP}$＋$\overline{BP}$有最小值 m，則 m 之值為＿＿＿＿。
+  answer:
+  - $\sqrt{61}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T08
+      name: 點面距離、對稱反射與最值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 3
+  stem: 坐標空間中，平面 2x＋y－3z＝－1 上有兩相異直線 L；x＋1＝y＋2＝－2（z＋1）與 L'。已知 L 也在另一平面 E 上，且 L' 在 E 的投影與 L 重合。則 E 的方程式為＿＿＿＿。
+  answer:
+  - 5x－4y＋2z＝1
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 3
+  stem: 設空間中兩歪斜線 $L_{1}$：$\begin{cases}x = 0 \\ z = 0\end{cases}$，$L_{2}$：$\begin{cases}5x + 12z = 60 \\ y = 0\end{cases}$，則 $L_{1}$ 與 $L_{2}$ 的距離為＿＿＿＿。
+  answer:
+  - $\frac{60}{13}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T04
+      name: 兩歪斜線公垂線段長計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 3
+  stem: 設 A、B 為獨立事件，若 P（A'）＝$\frac{3}{5}$且 P（A∪B）＝$\frac{5}{8}$，則 P（B'∣A）＝＿＿＿＿。
+  answer:
+  - $\frac{5}{8}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 3
+  stem: 近年來在眾多司法改革中，國民法官法的設立係為使國民與法官共同參與刑事審判，提升司法透明度，反映國民正當司法感情，增進國民對司法之了解與信賴，彰顯國民主權理念。參考外國部分國家的法庭設有陪審團制度。假設被選中參加一項刑案審判的陪審團，若被告無罪則被其判無罪開釋的機率是 90 ％，但若被告有罪則被判無罪開釋的機率是 20 ％。另外，假設在接受法庭審判的被告當中有 70 ％是真正有罪的。試問，若已知陪審團判某被告無罪，但該名被告其實真的有罪的機率為＿＿＿＿。
+  answer:
+  - $\frac{14}{41}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_9
+  section: 3
+  number: 9
+  type: fill
+  page: 3
+  stem: 甲、乙兩人說實話的機率分別為$\frac{4}{5}$、$\frac{9}{10}$且互不影響。一袋中有 4 白球、6 黑球，丙從此袋中取出一球，分別給甲、乙兩人看過後，再各自說出球的顏色。已知甲說白色，乙說黑色。試問此時甲說實話的機率為＿＿＿＿。
+  answer:
+  - $\frac{8}{35}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s3_10
+  section: 3
+  number: 10
+  type: fill
+  page: 3
+  stem: 坐標空間中有兩相異直線 $L_{1}$：$\frac{x - 2}{1}=\frac{y - 1}{3}=\frac{z - 2}{2}$與 $L_{2}$：$\frac{x -3}{2}=\frac{y}{-1}=\frac{z +1}{2}$，已知直線 L 過點 A（－7，－8，－7）且分別與 $L_{1}$、$L_{2}$ 相交，若直線 L 的方程式為$\frac{x +7}{a}=\frac{y +8}{b}=\frac{z +7}{5}$，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （7，3）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T02
+      name: 空間兩直線位置關係與共面
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_台中_興大附中_數學_數A_g11s2e2_s4_1
+  section: 4
+  number: 1
+  type: calc
+  page: 3
+  stem: '右圖為現代建築時常使用的起重機組，立於基座上的結構稱為塔身，上方垂直塔身的水平結構為起重臂，而起重臂可透過控制器繞著塔身旋轉。若將一起重機置於空間坐標系中，已知塔身的所在的直線方程式為$\frac{x -1}{3}=\frac{y +2}{1}=\frac{z}{-2}$，而某時刻起重臂最外側的一點剛好在坐標（10，－3，－1）。
+
+    (1) 起重臂繞轉一圈軌跡所在的平面方程式為何？（3 分）
+
+    (2) 起重臂最外側的一點到塔身的長度為多少單位？（5 分）'
+  assets:
+  - key: s4_1_f1
+    kind: figure
+    file: doc_112_台中_興大附中_數學_數A_g11s2e2/s4_1_f1.png
+    crop:
+      page: 3
+      rect:
+      - 425.75
+      - 600.45
+      - 564.1
+      - 713.9
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T03
+      name: 點到空間直線距離與投影點
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3

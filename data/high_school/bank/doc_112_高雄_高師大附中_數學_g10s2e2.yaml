@@ -1,0 +1,570 @@
+document:
+  id: doc_112_高雄_高師大附中_數學_g10s2e2
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 2
+  city: 高雄
+  school_short: 高師大附中
+  school: 國立高雄師範大學附屬高級中學
+  title: 國立高雄師範大學附屬高級中學 112學年度第2學期第2次定期評量 高一數學科試題
+  exam_name: 112學年度第2學期第2次定期評量
+  source_file: 高一/數學/112/2-2/高雄/高師大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 5 分，共 25 分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（配分如下表，共 75 分）
+    count: 8
+questions:
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: '某基金會制定的優秀學生申請獎學金的條件必須同時滿足以下兩個要求：
+
+    ①國文成績不低於 70 分或英文成績不低於 70 分。
+
+    ②數學成績 80 分以上（含）且體育成績及格（大於或等於 60 分）。 已知小豪數學成績 85 分，則下列哪些正確？'
+  options:
+  - label: A
+    content: 若小豪體育成績不及格，則無法獲得獎學金
+  - label: B
+    content: 若小豪國文成績 75 分且體育成績及格，則可以獲得獎學金
+  - label: C
+    content: 若小豪體育成績及格，但是英文成績不及格，則無法獲得獎學金
+  - label: D
+    content: 若小豪無法獲得獎學金，則小豪的國文或英文成績低於 70 分
+  - label: E
+    content: 若小豪無法獲得獎學金，則小豪國文、英文成績皆低於 70 分且體育成績不及格
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T04
+      name: 邏輯命題真假值與條件推論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 某一班共有 40 人，問卷調查喜歡打籃球與喜歡打排球的人數。從統計資料顯示此班有 30 人喜歡打籃球，而有 15 人喜歡打排球。設 A 為同時喜歡打籃球與排球的人數；B 為喜歡打籃球，但不喜歡打排球的人數；C 為不喜歡打籃球，但喜歡打排球的人數；D 為不喜歡打籃球，也不喜歡打排球的人數，則下列哪些正確？
+  options:
+  - label: A
+    content: B＞A
+  - label: B
+    content: B＞C
+  - label: C
+    content: A＞C
+  - label: D
+    content: C＞D
+  - label: E
+    content: B＞D
+  answer:
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設白色壁磚有 x 片，藍色壁磚有 y 片，x，y 均為非負整數
+
+    ⇒ 2x＋3y＝15
+
+    當（x，y）＝（6，1）時，有$\frac{7 ！}{6 ！}$＝7 種
+
+    當（x，y）＝（3，3）時，有$\frac{6 ！}{3 ！ 3 ！}$＝20 種
+
+    當（x，y）＝（0，5）時，有$\frac{5 ！}{5 ！}$＝1 種
+
+    故有 7＋20＋1＝28 種方法'
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T02
+      name: 排容原理與正因數倍數計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 將 9 本書依下列各選項中的情形分配，下列哪些正確？
+  options:
+  - label: A
+    content: 若 9 本書均相異，分給甲、乙、丙三人，每人各得 3 本的方法數為$C_{3}^{9}\times C_{3}^{6}\times C_{3}^{3}\times \frac{1}{3 ！}$種
+  - label: B
+    content: 若 9 本書均相異，分給甲、乙、丙三人，其中兩人各得 2 本，另一人得 5 本的方法數為$C_{2}^{9}\times C_{2}^{7}\times C_{5}^{5}\times \frac{1}{2 ！}$種
+  - label: C
+    content: 若 9 本書均相異，分裝入三個相同的袋子，其中一袋裝 5 本，另兩袋各裝 2 本的方法數為$C_{5}^{9}\times C_{2}^{4}\times C_{2}^{2}\times \frac{1}{2 ！}$種
+  - label: D
+    content: 若 9 本書均相同，分給甲、乙、丙三人，其中一人得 5 本，另兩人各得 2 本的方法數為$C_{5}^{9}\times C_{2}^{4}\times C_{2}^{2}\times \frac{1}{2 ！}$×3！種
+  - label: E
+    content: 若 9 本書均相同，分給甲、乙、丙三人，每人至少得 1 本的方法數為 $3^{9}$－$C_{1}^{3}$×$2^{9}$＋$C_{2}^{3}$×$1^{9}$ 種
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設三邊長為 x，y，z，因兩邊和大於第三邊，故最長邊小於 9，設 9＞x$\geq$y$\geq$z＞0
+
+    ⇒ （x，y，z）可能為（8，8，2），（8，7，3），（8，6，4），（8，5，5），（7，7，4），（7，6，5），（6，6，6）
+
+    故共有 7 種三角形'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T01
+      name: 組合選取與分組分堆分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 2
+  stem: 翠翠主任前往北辰樓（共有 5 樓）巡視上課情形，剛好有 n 位同學同時和翠翠主任一起進入 1 樓電梯要上樓。假設電梯在每一層樓皆可以按、可以停靠，每人皆按下自己想要到達的樓層，而且這段期間電梯只會由下而上依次停靠大家所按的樓層。則下列哪些正確？
+  options:
+  - label: A
+    content: 若 n＝1 時，則電梯最多有 4 種停靠方式
+  - label: B
+    content: 若 n＝2 時，則電梯最多有 14 種停靠方式
+  - label: C
+    content: 若 n＝3 時，則電梯最多有 15 種停靠方式
+  - label: D
+    content: 若 n＝4 時，則電梯最多有 16 種停靠方式
+  - label: E
+    content: 若 n＝5 時，則電梯最多有 15 種停靠方式
+  answer:
+  - B
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'n（經過 C 且不經過 D）＝n（經過 C）－n（經過 C 且經過 D）
+
+    ＝$\frac{4 ！}{2 ！ 2 ！}$×$\frac{6 ！}{4 ！ 2 ！}$－$\frac{4 ！}{2 ！ 2 ！}$×$\frac{3 ！}{2 ！ 1 ！}$×$\frac{3 ！}{2 ！ 1 ！}$
+
+    ＝36
+
+    故有 36 種走法'
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T03
+      name: 乘法加法原理分類窮舉計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 2
+  stem: 將數字 1，2，3，4，5，6 填入右圖的空格中，每個空格填一個數字，且數字不重複，則下列哪些正確？
+  options:
+  - label: A
+    content: 任意填入有 720 種不同的填法
+  - label: B
+    content: 若第一列都填入偶數，第二列都填入奇數，有 72 種不同的填法
+  - label: C
+    content: 若每一行上方數字都小於下方數字，有 90 種不同的填法
+  - label: D
+    content: 若每一列中數字都是由左而右越來越大，有 120 種不同的填法
+  - label: E
+    content: 若每一行的數字和都相等，有 6 種不同的填法
+  assets:
+  - key: s1_5_f1
+    kind: figure
+    file: doc_112_高雄_高師大附中_數學_g10s2e2/s1_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 472.85
+      - 292.25
+      - 564.3
+      - 355.65
+  answer:
+  - A
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '設 A 表上午、下午擦黑板同一人的集合，B 表上午、下午掃地同一人的集合
+
+    所求為 n（任意排）－n(A)－n(B)＋n（A ∩ B）
+
+    ＝6×5×6×5－6×5×1×5－6×5×5×1＋6×5×1×1＝630
+
+    故有 630 種排法'
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T04
+      name: 定序與條件排班特殊排列
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: '用 0、1、2、3、4、5、6 共 7 個數字作成三位數，數字不重複使用，則：
+
+    (1) 偶數共有＿＿＿＿個。
+
+    (2) 3 的倍數有＿＿＿＿個。'
+  group_stem: '2.有一面長方形牆壁，尺寸為 15×1（即長 15 單位，寬 1 單位），今有白色及藍色壁磚，其中白色壁磚尺寸為 2×1，藍色壁磚尺寸為 3×1，則有＿＿＿＿種貼滿牆壁的方法（壁磚不可裁切）。
+
+    3.三邊長為整數，且周長為 18 的三角形共有＿＿＿＿種（註：三邊長（8，2，8）及（8，8，2）視為同一種三角形）。
+
+    4.如右圖的棋盤式街道，甲從 A 到 B 走捷徑，必須經過 C 但不經過 D 的走法有＿＿＿＿種。
+
+    5.某班級每日有 6 位同學當值日生，值日生工作分為上午時段及下午時段。每日上午、下午均各需排一名值日生擦黑板，另一名值日生掃地，上午擦黑板的人下午仍可以掃地，上午掃地的人下午仍可以擦黑板。且上午、下午擦黑板非同一人，掃地也非同一人，則該班每天有＿＿＿＿種排擦黑板及掃地值日生的方法。'
+  shared_asset: g2_6_13
+  answer:
+  - (1) 105；(2) 68
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T07
+      name: 數字組數與倍數限制計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 3
+  stem: 自 pineapple 一字中，任取 4 個字母排成一列，共有＿＿＿＿種排法。
+  group_stem: '2.有一面長方形牆壁，尺寸為 15×1（即長 15 單位，寬 1 單位），今有白色及藍色壁磚，其中白色壁磚尺寸為 2×1，藍色壁磚尺寸為 3×1，則有＿＿＿＿種貼滿牆壁的方法（壁磚不可裁切）。
+
+    3.三邊長為整數，且周長為 18 的三角形共有＿＿＿＿種（註：三邊長（8，2，8）及（8，8，2）視為同一種三角形）。
+
+    4.如右圖的棋盤式街道，甲從 A 到 B 走捷徑，必須經過 C 但不經過 D 的走法有＿＿＿＿種。
+
+    5.某班級每日有 6 位同學當值日生，值日生工作分為上午時段及下午時段。每日上午、下午均各需排一名值日生擦黑板，另一名值日生掃地，上午擦黑板的人下午仍可以掃地，上午掃地的人下午仍可以擦黑板。且上午、下午擦黑板非同一人，掃地也非同一人，則該班每天有＿＿＿＿種排擦黑板及掃地值日生的方法。'
+  shared_asset: g2_6_13
+  answer:
+  - '626'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'p 有 3 個，e 有 2 個，i，n，a，l 各 1 個
+
+    3 同 1 異：$C_{1}^{5}\times \frac{4 ！}{3 ！}$＝20；2 同 2 同：$\frac{4 ！}{2 ！ 2 ！}$＝6
+
+    2 同 2 異：$C_{1}^{2}\times C_{2}^{5}\times \frac{4 ！}{2 ！}$＝240；4 異：$C_{4}^{6}$×4！＝360
+
+    故共有 20＋6＋240＋360＝626（種）'
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T02
+      name: 同物排列與重複數字字典序
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 3
+  stem: 多項式（$x^{2}$＋2x＋2）$^{10}$ 除以（x＋1）$^{3}$ 之餘式為＿＿＿＿。
+  group_stem: '2.有一面長方形牆壁，尺寸為 15×1（即長 15 單位，寬 1 單位），今有白色及藍色壁磚，其中白色壁磚尺寸為 2×1，藍色壁磚尺寸為 3×1，則有＿＿＿＿種貼滿牆壁的方法（壁磚不可裁切）。
+
+    3.三邊長為整數，且周長為 18 的三角形共有＿＿＿＿種（註：三邊長（8，2，8）及（8，8，2）視為同一種三角形）。
+
+    4.如右圖的棋盤式街道，甲從 A 到 B 走捷徑，必須經過 C 但不經過 D 的走法有＿＿＿＿種。
+
+    5.某班級每日有 6 位同學當值日生，值日生工作分為上午時段及下午時段。每日上午、下午均各需排一名值日生擦黑板，另一名值日生掃地，上午擦黑板的人下午仍可以掃地，上午掃地的人下午仍可以擦黑板。且上午、下午擦黑板非同一人，掃地也非同一人，則該班每天有＿＿＿＿種排擦黑板及掃地值日生的方法。'
+  shared_asset: g2_6_13
+  answer:
+  - $10x^{2}$＋20x＋11
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '∵（$x^{2}$＋2x＋2）$^{10}$＝〔（x＋1）$^{2}$＋1〕$^{10}$
+
+    ＝$C_{10}^{10}$（x＋1）$^{20}$＋$C_{9}^{10}$（x＋1）$^{18}$＋……＋$C_{2}^{10}$（x＋1）$^{4}$＋$C_{1}^{10}$（x＋1）$^{2}$＋1
+
+    ∴（$x^{2}$＋2x＋2）$^{10}$ 除以（x＋1）$^{3}$ 之餘式為$C_{1}^{10}$（x＋1）$^{2}$＋1＝$10x^{2}$＋20x＋11'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T03
+      name: 二項式定理係數與近似估算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 3
+  stem: '有 7 個不同的球投入甲、乙、丙三個不同的箱子中，球需全部投入箱子中，則：
+
+    (1) 每箱至少投入 1 球，方法數有＿＿＿＿種。
+
+    (2) 甲箱至少投入 3 球，乙箱至少投入 2 球，丙箱至少投入 1 球，方法數有＿＿＿＿種。'
+  group_stem: '2.有一面長方形牆壁，尺寸為 15×1（即長 15 單位，寬 1 單位），今有白色及藍色壁磚，其中白色壁磚尺寸為 2×1，藍色壁磚尺寸為 3×1，則有＿＿＿＿種貼滿牆壁的方法（壁磚不可裁切）。
+
+    3.三邊長為整數，且周長為 18 的三角形共有＿＿＿＿種（註：三邊長（8，2，8）及（8，8，2）視為同一種三角形）。
+
+    4.如右圖的棋盤式街道，甲從 A 到 B 走捷徑，必須經過 C 但不經過 D 的走法有＿＿＿＿種。
+
+    5.某班級每日有 6 位同學當值日生，值日生工作分為上午時段及下午時段。每日上午、下午均各需排一名值日生擦黑板，另一名值日生掃地，上午擦黑板的人下午仍可以掃地，上午掃地的人下午仍可以擦黑板。且上午、下午擦黑板非同一人，掃地也非同一人，則該班每天有＿＿＿＿種排擦黑板及掃地值日生的方法。'
+  shared_asset: g2_6_13
+  answer:
+  - (1) 1806；(2) 455
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1) 可分成以下四種情況：
+
+    ①（5，1，1）：$C_{5}^{7}$×$C_{1}^{2}$×$C_{1}^{1}$×$\frac{1}{2 ！}$×3！＝126
+
+    ②（4，2，1）：$C_{4}^{7}$×$C_{2}^{3}$×$C_{1}^{1}$×3！＝630
+
+    ③（3，3，1）：$C_{3}^{7}$×$C_{3}^{4}$×$C_{1}^{1}$×$\frac{1}{2 ！}$×3！＝420
+
+    ④（3，2，2）：$C_{3}^{7}$×$C_{2}^{4}$×$C_{2}^{2}$×$\frac{1}{2 ！}$×3！＝630
+
+    共有 126＋630＋420＋630＝1806（種）
+
+    (2) （甲，乙，丙）球數有（4，2，1），（3，3，1），（3，2，2）三種
+
+    ⇒ $C_{4}^{7}$×$C_{2}^{3}$×$C_{1}^{1}$＋$C_{3}^{7}$×$C_{3}^{4}$×$C_{1}^{1}$＋$C_{3}^{7}$×$C_{2}^{4}$×$C_{2}^{2}$＝455（種）'
+  tags:
+    unit:
+      code: MA-2-2-3
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 組合
+      std: true
+    textbook: 數學2（必修） 組合
+    pattern:
+      key: MA-2-2-3:T06
+      name: 至少一人限制與排容原理
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 由數字 1，2，3，4 組成六位數的密碼，數字 1，2，3，4 至少各出現一次，且不可連續三位數字都相同，這樣的六位數密碼共有＿＿＿＿個。
+  group_stem: '2.有一面長方形牆壁，尺寸為 15×1（即長 15 單位，寬 1 單位），今有白色及藍色壁磚，其中白色壁磚尺寸為 2×1，藍色壁磚尺寸為 3×1，則有＿＿＿＿種貼滿牆壁的方法（壁磚不可裁切）。
+
+    3.三邊長為整數，且周長為 18 的三角形共有＿＿＿＿種（註：三邊長（8，2，8）及（8，8，2）視為同一種三角形）。
+
+    4.如右圖的棋盤式街道，甲從 A 到 B 走捷徑，必須經過 C 但不經過 D 的走法有＿＿＿＿種。
+
+    5.某班級每日有 6 位同學當值日生，值日生工作分為上午時段及下午時段。每日上午、下午均各需排一名值日生擦黑板，另一名值日生掃地，上午擦黑板的人下午仍可以掃地，上午掃地的人下午仍可以擦黑板。且上午、下午擦黑板非同一人，掃地也非同一人，則該班每天有＿＿＿＿種排擦黑板及掃地值日生的方法。'
+  shared_asset: g2_6_13
+  answer:
+  - '1464'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '分成 2 種情況：
+
+    ① 1 個數字重複（如：112134） ⇒ $C_{1}^{4}\times \left( \frac{6 ！}{3 ！} - 4 ！ \right)$
+
+    ② 2 個數字重複（如：112234） ⇒ $C_{2}^{4}\times \frac{6 ！}{2 ！ 2 ！}$＝1080
+
+    故共有 384＋1080＝1464（種）'
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T02
+      name: 同物排列與重複數字字典序
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 3
+  stem: 甲、乙、丙、丁、……等 7 人一起去校園餐廳買早餐，早餐有漢堡、三明治和蛋餅三種選擇。若漢堡只剩 6 份，三明治只剩 5 份，蛋餅還有 7 份以上。已知甲堅持不吃蛋餅，且每人都要買一份早餐，則此 7 人的早餐共有＿＿＿＿種不同的選法。
+  group_stem: '2.有一面長方形牆壁，尺寸為 15×1（即長 15 單位，寬 1 單位），今有白色及藍色壁磚，其中白色壁磚尺寸為 2×1，藍色壁磚尺寸為 3×1，則有＿＿＿＿種貼滿牆壁的方法（壁磚不可裁切）。
+
+    3.三邊長為整數，且周長為 18 的三角形共有＿＿＿＿種（註：三邊長（8，2，8）及（8，8，2）視為同一種三角形）。
+
+    4.如右圖的棋盤式街道，甲從 A 到 B 走捷徑，必須經過 C 但不經過 D 的走法有＿＿＿＿種。
+
+    5.某班級每日有 6 位同學當值日生，值日生工作分為上午時段及下午時段。每日上午、下午均各需排一名值日生擦黑板，另一名值日生掃地，上午擦黑板的人下午仍可以掃地，上午掃地的人下午仍可以擦黑板。且上午、下午擦黑板非同一人，掃地也非同一人，則該班每天有＿＿＿＿種排擦黑板及掃地值日生的方法。'
+  shared_asset: g2_6_13
+  answer:
+  - '1443'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'n（任意選）－n（7 人選漢堡）－n（7 人選三明治）－n（6 人選三明治）
+
+    ＝2×$3^{6}$－1－1－$C_{1}^{6}$'
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T02
+      name: 排容原理與正因數倍數計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 3
+  stem: 小安的健身教練幫他規劃 1 小時的健身訓練，訓練的部位包含胸部、背部、腿部、手臂及腹部共 5 個部位，每個部位每次訓練 4 分鐘，每次訓練間隔休息 3 分鐘，每個部位都要訓練到，但每個部位最多訓練兩次。因為小安的腳曾經受傷，教練可安排一次或兩次腿部訓練，但若教練安排有兩次腿部訓練，則不能相鄰，其餘部位為了增加訓練強度，若有兩次訓練則要相鄰，則教練有＿＿＿＿種安排訓練課程的方式。
+  group_stem: '2.有一面長方形牆壁，尺寸為 15×1（即長 15 單位，寬 1 單位），今有白色及藍色壁磚，其中白色壁磚尺寸為 2×1，藍色壁磚尺寸為 3×1，則有＿＿＿＿種貼滿牆壁的方法（壁磚不可裁切）。
+
+    3.三邊長為整數，且周長為 18 的三角形共有＿＿＿＿種（註：三邊長（8，2，8）及（8，8，2）視為同一種三角形）。
+
+    4.如右圖的棋盤式街道，甲從 A 到 B 走捷徑，必須經過 C 但不經過 D 的走法有＿＿＿＿種。
+
+    5.某班級每日有 6 位同學當值日生，值日生工作分為上午時段及下午時段。每日上午、下午均各需排一名值日生擦黑板，另一名值日生掃地，上午擦黑板的人下午仍可以掃地，上午掃地的人下午仍可以擦黑板。且上午、下午擦黑板非同一人，掃地也非同一人，則該班每天有＿＿＿＿種排擦黑板及掃地值日生的方法。'
+  shared_asset: g2_6_13
+  answer:
+  - '1080'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-2
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 排列
+      std: true
+    textbook: 數學2（必修） 排列
+    pattern:
+      key: MA-2-2-2:T01
+      name: 直線排列與相鄰不相鄰插空
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_高雄_高師大附中_數學_g10s2e2_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 3
+  stem: 學校讓高三仁、義、禮三班分別投票選擇畢旅景點，景點共有四個可供選擇。其中大學參訪有 A、B 兩個景點可供選擇，遊樂園有 C、D 兩個景點可供選擇。若學校要每班從四個景點中，選擇兩個不同景點，且兩個不同景點中至少要有一個大學參訪景點。則仁、義、禮三班投票結果至少有一個相同景點（例如：仁班選 A、B；義班選 A、C；禮班選 A、D）的方法有＿＿＿＿種。
+  group_stem: '2.有一面長方形牆壁，尺寸為 15×1（即長 15 單位，寬 1 單位），今有白色及藍色壁磚，其中白色壁磚尺寸為 2×1，藍色壁磚尺寸為 3×1，則有＿＿＿＿種貼滿牆壁的方法（壁磚不可裁切）。
+
+    3.三邊長為整數，且周長為 18 的三角形共有＿＿＿＿種（註：三邊長（8，2，8）及（8，8，2）視為同一種三角形）。
+
+    4.如右圖的棋盤式街道，甲從 A 到 B 走捷徑，必須經過 C 但不經過 D 的走法有＿＿＿＿種。
+
+    5.某班級每日有 6 位同學當值日生，值日生工作分為上午時段及下午時段。每日上午、下午均各需排一名值日生擦黑板，另一名值日生掃地，上午擦黑板的人下午仍可以掃地，上午掃地的人下午仍可以擦黑板。且上午、下午擦黑板非同一人，掃地也非同一人，則該班每天有＿＿＿＿種排擦黑板及掃地值日生的方法。'
+  shared_asset: g2_6_13
+  answer:
+  - '65'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-2-1
+      book: 數學2（必修）
+      chapter: 排列組合與機率
+      title: 計數原理
+      std: true
+    textbook: 數學2（必修） 計數原理
+    pattern:
+      key: MA-2-2-1:T03
+      name: 乘法加法原理分類窮舉計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+shared_assets:
+- key: g2_6_13
+  label: 題組附圖
+  kind: figure
+  file: doc_112_高雄_高師大附中_數學_g10s2e2/g2_6_13_f1.png
+  used_by:
+  - doc_112_高雄_高師大附中_數學_g10s2e2_s2_6
+  - doc_112_高雄_高師大附中_數學_g10s2e2_s2_7
+  - doc_112_高雄_高師大附中_數學_g10s2e2_s2_8
+  - doc_112_高雄_高師大附中_數學_g10s2e2_s2_9
+  - doc_112_高雄_高師大附中_數學_g10s2e2_s2_10
+  - doc_112_高雄_高師大附中_數學_g10s2e2_s2_11
+  - doc_112_高雄_高師大附中_數學_g10s2e2_s2_12
+  - doc_112_高雄_高師大附中_數學_g10s2e2_s2_13
+  crop:
+    page: 2
+    rect:
+    - 455.55
+    - 641.6
+    - 564.3
+    - 714.8

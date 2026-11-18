@@ -1,0 +1,335 @@
+document:
+  id: doc_113_桃園_武陵_數學_數乙_g12s1e3
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數乙
+  academic_year_roc: 113
+  semester: 1
+  exam_seq: 3
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 113學年度第1學期第3次定期評量 高三數學（數乙）科試題
+  exam_name: 113學年度第1學期第3次定期評量
+  source_file: 高三/數學/113/1-3/桃園/武陵_數乙.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 第一部分：多重選擇題（占24分）
+    count: 2
+  - ord: 2
+    name: 第二部分：選填題（每題6分，10題共60分）
+    count: 9
+  - ord: 3
+    name: 第三部分、計算題（每題10分，2題共20分）
+    count: 2
+questions:
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設f (x)為三次多項式函數且函數g (x)滿足g′(x)＝f (x)，請選出正確的選項。
+  options:
+  - label: A
+    content: 函數g (x)為四次多項式函數
+  - label: B
+    content: 函數g (x)為f (x)的一個反導函數
+  - label: C
+    content: $\int f(x)dx = g(x)$
+  - label: D
+    content: $\int f(x)\cdot g(x)dx = \int f(x)dx\cdot \int g(x)dx$
+  - label: E
+    content: 若實數a滿足f ( a＋1 )＝f (a－1 )＝f (a)＝k，則$\int_{a - 1}^{a + 1} f(x)dx = k$
+  answer:
+  - A
+  - B
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T07
+      name: 定積分基本性質與真偽判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列有關多項式函數f (x)＝$2x^{4}$＋$4x^{3}$的敘述，請選出正確的選項。
+  options:
+  - label: A
+    content: $\int f(x)dx = \frac{1}{2}x^{5} + x^{4} + C$，其中C為任意常數
+  - label: B
+    content: f (x) ≤ 0在區間[－1 , 0 ]上恆成立
+  - label: C
+    content: 若g (x)是f (x)的一個反導函數，則g (x)在區間[ 0 , 1 ]上為遞增函數
+  - label: D
+    content: $\int_{- 1}^{1} f(x)dx = \int_{- 1}^{1} 2x^{4}dx$
+  - label: E
+    content: $\int_{- 1}^{1} f(x)dx = \int_{0}^{1} 2x^{4}dx$
+  answer:
+  - B
+  - C
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T07
+      name: 定積分基本性質與真偽判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: 定積分$\int_{0}^{2} (4x^{3} + 3x^{2} + 1)dx =③④$。
+  explanation: (1) $A\begin{cases}y = x^{3} \\ y = x^{2}\end{cases}$ ⇒ $x^{3}$＝$x^{2}$ ⇒ $x^{3}$－$x^{2}$＝0 ⇒ $x^{2}$ ( x－1 )＝0，∴x＝0（重根）或1 ∵ A在第一象限 ∴取x＝1，y＝$1^{3}$＝1 ∴ A ( 1 , 1 ) (2) $\left| \int_{0}^{1} x^{3}dx \right|$＝$\left| \frac{1}{4}x^{4}\left| _{0}^{1} \right. \right|$＝$\frac{1}{4}$ (3) $\left| \int_{0}^{1} x^{3} - x^{2}dx \right|$＝$\left| \frac{1}{4}x^{4} - \frac{1}{3}x^{3}\left| _{0}^{1} \right. \right|$＝$\left| \frac{1}{4} - \frac{1}{3} \right|$＝$\frac{1}{12}$
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T02
+      name: 多項式定積分計算與待定係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 1
+  stem: 設分段函數f (x)＝$\begin{cases}x^{2} + 1 x\leq 3 \\ 2x + 4 x > 3\end{cases}$，則定積分$\int_{0}^{4} f(x)dx =⑤⑥$。
+  explanation: (1) D(x)＝S(x) ⇒ 320－0.$5x^{2}$＝5x＋20 ⇒ $x^{2}$＋10x－600＝0 ⇒ ( x＋30 ) ( x－20 )＝0 ∴ x＝－30或20（負不合） ∴ a＝20 b＝S(20)＝120 ∴ P ( a , b )＝( 20 , 120 ) (2) $\int_{0}^{20} D(x)dx - 20\times 120$＝$\int_{0}^{20} 320 - \frac{1}{2}x^{2}dx - 2400$ ＝( 320x－$\frac{1}{6}x^{3}$ )$\left| _{0}^{20} \right.$－2400＝$\frac{16000}{6}$＝$\frac{8000}{3}$（元） (3)20×120－$\int_{0}^{20} S(x)dx$＝2400－$\int_{0}^{20} 5x + 20dx$ ＝2400－($\frac{5}{2}x^{2}$＋20x )$\left| _{0}^{20} \right.$＝1000（元）
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T04
+      name: 絕對值與分段函數的定積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 1
+  stem: 定積分$\int_{1}^{2} \sqrt{4 - x^{2}}dx =⑦⑧⑨$。（四捨五入至小數點後第2位） （已知π ≈ 3.1415、$\sqrt{2}$ ≈ 1.4142、$\sqrt{3}$ ≈ 1.7321）
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T09
+      name: 幾何面積與絕對值分段積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 1
+  stem: 函數f (x)＝$x^{2}$－6x＋8在x＝0到x＝4之間與x軸所圍的區域面積為$⑩$。
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T01
+      name: 曲線與坐標軸所圍成區域面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 1
+  stem: 在某個實驗室中，我們觀察到某種細菌的數量，在前10個小時內，從最初的1000個細菌，在經過t小時後，增加為P(t)個細菌。若將此細菌的數量以連續函數P(t)=$600t^{2}$＋50t＋1000作近似（0 ≤ t ≤ 10），則此細菌的數量在前5個小時內的平均增長速率為$⑪⑫⑬⑭$（個／小時）。
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T08
+      name: 函數的平均值與圖形積分
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 2
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 1
+  stem: 假設生產「五零帽T」之邊際成本函數為C′(x)＝200－0.4x（元／件），0 ≤ x ≤ 1000，其中x表示「五零帽T」的生產量（件），且固定成本為3000元（即C(0)＝3000）。 (1)從生產300件「五零帽T」增加到400件「五零帽T」所增加的平均成本為$⑮⑯$（元／件）。 Note：「增加的平均成本」即為「增加的總成本」除以「增加的產量」。 (2)生產100件「五零帽T」的總成本為$⑰⑱$千元。
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T09
+      name: 邊際函數積分求總成本收益
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 1
+  stem: 已知三次函數f (x)的導函數為f ′(x)＝$3x^{2}$－1且f (0)＝1，則$\int_{2}^{4} f(x)dx=⑲⑳$。
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T01
+      name: 反導函數與不定積分求原函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 1
+  stem: 已知三次函數f (x)在x＝－1與x＝1處分別有極大值$\frac{7}{3}$與極小值－$\frac{1}{3}$，則f (3)＝$2122$。
+  tags:
+    unit:
+      code: MA-Y1-2-2
+      book: 選修數學乙（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學乙（上） 函數性質的判定
+    pattern:
+      key: MA-Y1-2-2:T04
+      name: 由極值或反曲點條件反推函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 1
+  stem: 設函數f (x)＝－$x^{2}$ ( x－1) ( x＋1 )且函數F (t)＝$\int_{-1}^{t} f(x)dx$，當t＝α時，函數F (t)有極大值M，則α＋M＝$\frac{ 2324 }{ 2526 }$。（請化簡為最簡分數）
+  tags:
+    unit:
+      code: MA-Y1-3-1
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學乙（上） 積分
+    pattern:
+      key: MA-Y1-3-1:T11
+      name: 積分函數配方或微分求極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 1
+  stem: '設函數圖形y＝$x^{3}$與y＝$x^{2}$在第一象限的交點為A ( a , b )：
+
+    (1) 試求A ( a , b )點坐標。（2分）
+
+    (2) 試求y＝$x^{3}$與x軸在區間[ 0 , a ]上所圍成的區域面積。（4分）
+
+    (3) 試求y＝$x^{3}$與y＝$x^{2}$在區間[ 0 , a ]上所圍成的區域面積。（4分）'
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T02
+      name: 兩曲線所圍成封閉區域的面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_113_桃園_武陵_數學_數乙_g12s1e3_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: '已知某商品的需求函數為D (x)＝320－0.$5x^{2}$，供給函數為S (x)＝5x＋20，其中x為商品數量，且此商品的均衡點坐標為P ( a , b )。
+
+    (1) 試求此商品的均衡點坐標P ( a , b )。（2分）
+
+    (2) 若將定價訂為b元，則此時的消費者剩餘為多少？（4分）
+
+    (3) 若將定價訂為b元，則此時的生產者剩餘為多少？（4分）'
+  tags:
+    unit:
+      code: MA-Y1-3-2
+      book: 選修數學乙（上）
+      chapter: 積分
+      title: 積分的應用
+      std: true
+    textbook: 選修數學乙（上） 積分的應用
+    pattern:
+      key: MA-Y1-3-2:T10
+      name: 消費者剩餘與生產者剩餘
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -1,0 +1,513 @@
+document:
+  id: doc_110_台北_松山_數學_數甲_g12s1e2
+  level: senior
+  grade: 12
+  subject: 數學
+  course: 數甲
+  academic_year_roc: 110
+  semester: 1
+  exam_seq: 2
+  city: 台北
+  school_short: 松山
+  school: 臺北市立松山高級中學
+  title: 臺北市立松山高級中學 110學年度第1學期第2次定期評量 高三數學（數甲）科試題
+  exam_name: 110學年度第1學期第2次定期評量
+  source_file: 高三/數學/110/1-2/台北/松山_數甲.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、是非題（10分）
+    count: 5
+  - ord: 2
+    name: 二、多選題（24分）
+    count: 3
+  - ord: 3
+    name: 三、選填題（50分）
+    count: 8
+  - ord: 4
+    name: 四、混合題（16分）
+    count: 3
+questions:
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s1_1
+  section: 1
+  number: 1
+  type: calc
+  page: 1
+  stem: 高斯函數f (x)＝[ x ] 在x＝$\frac{3}{5}$處可微分。（高斯符號 [ x ] 表示不大於x的最大整數）
+  answer:
+  - ○
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ○：$\lim_{x\rightarrow \frac{3}{5}} \frac{f(x)-f(\frac{3}{5})}{x-\frac{3}{5}}=\lim_{x\rightarrow \frac{3}{5}} \frac{0-0}{x-\frac{3}{5}}=0$，故f (x)＝[ x ]在x＝$\frac{3}{5}$處可微分。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹含亂碼（「處微分」應為「處可微分」）
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s1_2
+  section: 1
+  number: 2
+  type: calc
+  page: 1
+  stem: 若m是函數f (x) 的一個極小值，且M是函數f (x) 的一個極大值，則M ≥ m。
+  answer:
+  - ×
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ×：函數的極大值不一定「大於或等於」其極小值。
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s1_3
+  section: 1
+  number: 3
+  type: calc
+  page: 1
+  stem: 若f '(a)＝0，則函數f (x) 在x＝a處有極值。
+  answer:
+  - ×
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ×：舉反例，令f (x)＝$x^{3}$，則f '(x)＝$3x^{2}$，得f '(0)＝0，但函數f (x)在x＝0處沒有極值。
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s1_4
+  section: 1
+  number: 4
+  type: calc
+  page: 1
+  stem: 若f ''(a)＝0，則點 ( a , f (a) ) 為函數f (x) 圖形的反曲點。
+  answer:
+  - ×
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ×：舉反例，令f (x)＝$x^{4}$，則f '(x)＝$4x^{3}$，f ''(x)＝$12x^{2}$，得f ''(0)＝0，但點 ( 0 , f (0) ) 不是f (x) 圖形的反曲點。
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s1_5
+  section: 1
+  number: 5
+  type: calc
+  page: 1
+  stem: 若三次函數y＝f (x) 的圖形有極大值點、反曲點與極小值點，則依序此三點的x坐標成等差數列。
+  answer:
+  - ○
+  answer_status: verified
+  answer_source: answer_key
+  explanation: ○：設f (x) 圖形的極大值點，反曲點，極小值點分別為 ( a , f (a) )，( b , f (b) )，( c , f (c) )，則( a , f (a) )，( c , f (c) ) 兩點 對稱於 ( b , f (b) )，故$\frac{a+c}{2}$＝b，所以a，b，c成等差數列。
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s2_2
+  section: 2
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設f (x)＝( x－2 ) | x－2 |，試選出正確的選項。
+  options:
+  - label: A
+    content: f (2)＝0
+  - label: B
+    content: f '(2) 不存在
+  - label: C
+    content: f (x) 在x＝2處連續但不可微分
+  - label: D
+    content: f (x) 在x＝2處連續亦可微分
+  - label: E
+    content: f (x) 在x＝2處不連續亦不可微分
+  answer:
+  - A
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: f (2)＝( 2－2 ) | 2－2 |＝0 f '(2)＝$\lim_{x\rightarrow 2} \frac{f(x)-f(2)}{x-2}=\lim_{x\rightarrow 2} \frac{(x-2)|x-2|-0}{x-1}=\lim_{x\rightarrow 2} |x-2|=0$ 故f '(2)存在，且f '(2)＝f (2) 所以f (x)在x＝2處連續亦可微分。 故選(A)(D)。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s2_4
+  section: 2
+  number: 4
+  type: calc
+  page: 1
+  stem: 若n＝5，則f (x) 至少有一個極值點
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T01
+      name: 導數判別遞增減與極值
+    labeled_by: agent
+    label_confidence: low
+    label_note: 缺少前提題幹（未定義 f(x) 與 n 之條件）
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s2_5
+  section: 2
+  number: 5
+  type: calc
+  page: 1
+  stem: 若f (x) 在x＝3與x＝6處有極值點，則f (x) 在x＝3與x＝6之間有反曲點
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: low
+    label_note: 缺少前提題幹（未定義 f(x) 之條件）
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s3_1
+  section: 3
+  number: 1
+  type: fill
+  page: 1
+  stem: 若函數f (x)＝( 2x－5 )$^{20}$ ( x－1 )$^{10}$，則f '(2) 之值為＿＿＿＿。
+  answer:
+  - －30
+  answer_status: verified
+  answer_source: answer_key
+  explanation: f '(x)＝20 ( 2x－5 )$^{19}$．2．( x－1 )$^{10}$＋( 2x－5 )$^{20}$．10 ( x－1 )$^{9}$ 故f '(2)＝20×(－1 )$^{19}$．2＋(－1 )$^{20}$．10．1＝－40＋10＝－30。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T02
+      name: 微分四則與連鎖律計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s3_2
+  section: 3
+  number: 2
+  type: fill
+  page: 1
+  stem: 若函數f (x)＝$\frac{3x}{x^{2}+3x+1}$，則f '(0) 之值為＿＿＿＿。
+  answer:
+  - '3'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: f '(x)＝$\frac{3(x^{2}+3x+1)-3x(2x+3)}{(x^{2}+3x+1)^{2}}$，故f '(0)＝$\frac{3\times 1-0}{1^{2}}$＝3。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T02
+      name: 微分四則與連鎖律計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s3_3
+  section: 3
+  number: 3
+  type: fill
+  page: 1
+  stem: 設函數f (x)＝$\begin{cases}x^{3}+x , x\geq 1 \\ ax^{2}+b , x<1\end{cases}$，若f (x) 在x＝1處可微分，則a×b之值為＿＿＿＿。
+  answer:
+  - '0'
+  answer_status: verified
+  answer_source: answer_key
+  explanation: $\lim_{x\rightarrow 1^{+}} \frac{f(x)-f(1)}{x-1}=\lim_{x\rightarrow 1^{+}} \frac{(x^{3}+x)-2}{x-1}=\lim_{x\rightarrow 1^{+}} (x^{2}+x+2)=4$ 又$\lim_{x\rightarrow 1^{-}} \frac{f(x)-f(1)}{x-1}=\lim_{x\rightarrow 1^{-}} \frac{(ax^{2}+b)-2}{x-1}=\lim_{x\rightarrow 1^{-}} \frac{ax^{2}+(b-2)}{x-1}$ 因f (x) 在x＝1處可微分，故$\lim_{x\rightarrow 1^{-}} \frac{ax^{2}+(b-2)}{x-1}=4$，所以$\begin{cases}a+b-2=0 \\ 2a=4\end{cases}$ 得a＝2，b＝0，於是a×b＝0。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s3_4
+  section: 3
+  number: 4
+  type: fill
+  page: 1
+  stem: 函數f (x)＝$x^{12}$＋$x^{6}$－x＋3在x＝－1附近的一次近似為y＝＿＿＿＿x－＿＿＿＿。（備註：一次近似又稱一次估計）
+  answer:
+  - －19x－13
+  answer_status: verified
+  answer_source: answer_key
+  explanation: f '(x)＝$12x^{11}$＋$6x^{5}$－1，故f '(－1 )＝－12－6－1＝－19 又f (－1 )＝1＋1＋3＝6 所以f (x) 在x＝－1附近的一次近似為y－6＝－19 ( x＋1 )，而y＝－19x－13。
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s3_5
+  section: 3
+  number: 5
+  type: fill
+  page: 1
+  stem: '若多項式函數f (x) 除以 ( x－1)$^{2}$的餘式為4x，則
+
+    (A) f (1)＋f ''(1)之值為＿＿＿＿。
+
+    (B) $\lim_{x\rightarrow 1} \frac{f(x^{2})-f(1)}{x^{2}-1}$之值為＿＿＿＿。
+
+    (C) $\lim_{x\rightarrow 1} \frac{x^{2}f(1)-f(x^{2})}{x^{2}-1}$之值為＿＿＿＿。'
+  explanation: 設f (x)＝( x－1 )$^{2}$ q (x)＋4x，其中q (x) 為多項式 (A) f (1)＝0＋4×1＝4，f '(x)＝2 ( x－1 ) q (x)＋( x－1 )$^{2}$ q'(x)＋4，故f '(1)＝4 於是f (1)＋f '(1)＝4＋4＝8。 (B) $\lim_{x\rightarrow 1} \frac{f(x^{2})-f(1)}{x^{2}-1}=\lim_{x\rightarrow 1} \frac{(x^{2}-1)^{2}q(x)^{2}+4x^{2}-4}{x^{2}-1}$＝$\lim_{x\rightarrow 1}$[ ( $x^{2}$－1 ) q ( $x^{2}$ )＋4 ]＝0＋4＝4。 (C) $\lim_{x\rightarrow 1} \frac{x^{2}f(1)-f(x^{2})}{x^{2}-1}=\lim_{x\rightarrow 1} \frac{x^{2}f(1)-x^{2}f(x^{2})+x^{2}f(x^{2})-f(x^{2})}{x^{2}-1}=\lim_{x\rightarrow 1} \frac{-x^{2}(f(x^{2})-f(1))+f(x^{2})(x^{2}-1)}{x^{2}-1}=\lim_{x\rightarrow 1} [(-x^{2}\cdot \frac{f(x^{2})-f(1)}{x^{2}-1}+f(x^{2})]=-4+4=0$。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T09
+      name: 導數極限定義式轉換求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s3_6
+  section: 3
+  number: 6
+  type: fill
+  page: 1
+  stem: 設P點在拋物線y＝$x^{2}$上移動，若P點與點A ( 3 , 0 ) 最近的距離為$\sqrt{s}$，則s之值為＿＿＿＿。
+  answer:
+  - '5'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T05
+      name: 幾何圖形與函數極值應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s3_7
+  section: 3
+  number: 7
+  type: fill
+  page: 1
+  stem: 若三次多項式函數f (x)＝$x^{3}$＋$kx^{2}$－4kx－7沒有極值，且其圖形之反曲點的坐標為格子點，則k<u>可能</u>的值之總和為＿＿＿＿。（備註：格子點表示該點的x，y坐標皆為整數）
+  answer:
+  - －30
+  answer_status: verified
+  answer_source: answer_key
+  explanation: f '(x)＝$3x^{2}$＋2kx－4k，因f (x) 沒有極值，設f '(x)＝0的兩根不為相異實根， 於是 ( 2k )$^{2}$－4×3×(－4k ) ≤ 0，而$4k^{2}$＋48k ≤ 0 ⇒ 4k ( k＋12 ) ≤ 0 ⇒ －12 ≤ k ≤ 0， 又f ''(x)＝6x＋2k，令f ''(x)＝0，得x＝－$\frac{1}{3}$k，因x為整數，故k＝0，－3，－6，－9，－12， 其總和＝0＋(－3 )＋(－6 )＋(－9 )＋(－12 )＝－30。
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s3_8
+  section: 3
+  number: 8
+  type: fill
+  page: 1
+  stem: 設f (x) 為三次多項式函數，已知$\lim_{x\rightarrow 1} \frac{f(x)}{x-1}=-3$，且f (x) 在x＝2處有極值。若過f (x) 圖形上一點 (－1 , f (－1) ) 的切線方程式為9x－y＋7＝0，則f (5) 之值為＿＿＿＿。
+  answer:
+  - '52'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T03
+      name: 導函數積分反推原函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s4_1
+  section: 4
+  number: 1
+  type: fill
+  page: 1
+  stem: '魔法森林世界中，「魔法Q彈棒」與「Q彈棒」皆由「QQ彈」變形得來。這QQ彈原始狀態是一個底圓半徑為15公分、高為60公分的圓柱體，它在變形時永遠保持為圓柱體。變形時底圓半徑會以每秒1公分的等速率縮短，而高以每秒10公分的等速率增長。已知QQ彈的底圓半徑只能從15公分縮到5公分為止，且QQ彈在開始變形t秒後的體積為V (t)。 當QQ彈體積變為<u>最大</u>時為「Q彈棒」，而QQ彈體積變為<u>最小</u>時為「魔法Q彈棒」。 試回答下列問題。
+
+    (1) 若QQ彈在開始變形t秒後的體積為V (t)＝π( 15－at )$^{2}$ ( 60＋bt )，0 ≤ t ≤ 10，則實數a之值為＿＿＿＿，實數b之值為＿＿＿＿。（填充題，每格2分，共4分）'
+  answer:
+  - (1) 依題意知，V (t)＝π( 15－t )$^{2}$ ( 60＋10t )，其中0 ≤ t ≤ 10，故a＝1，b＝10。
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T05
+      name: 幾何圖形與函數極值應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s4_2
+  section: 4
+  number: 2
+  type: single
+  page: 2
+  stem: 「QQ彈」在t＝5的體積瞬時變化率為下列哪一選項。（單選題，4 分）
+  options:
+  - label: A
+    content: 每秒減少990π立方公分
+  - label: B
+    content: 每秒增加990π立方公分
+  - label: C
+    content: 每秒減少1110π立方公分
+  - label: D
+    content: 每秒增加1110π立方公分
+  - label: E
+    content: 每秒減少1200π立方公分 (F) 每秒增加1200π立方公分
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T02
+      name: 微分四則與連鎖律計算
+    labeled_by: agent
+    label_confidence: high
+    label_note: 選項(F)誤併入選項(E)中
+  difficulty: 2
+- id: doc_110_台北_松山_數學_數甲_g12s1e2_s4_3
+  section: 4
+  number: 3
+  type: fill
+  page: 2
+  stem: 承第(1)題，「Q彈棒」與「魔法Q彈棒」的體積相差＿＿＿＿立方公分。（計算題，8分，需寫出完整計算過程）
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T05
+      name: 幾何圖形與函數極值應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

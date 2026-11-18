@@ -1,0 +1,640 @@
+document:
+  id: doc_112_高雄_高師大附中_數學_數A_g11s2e2
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 112
+  semester: 2
+  exam_seq: 2
+  city: 高雄
+  school_short: 高師大附中
+  school: 國立高雄師範大學附屬高級中學
+  title: 國立高雄師範大學附屬高級中學 112學年度第2學期第2次定期評量 高二數學（數A）科試題
+  exam_name: 112學年度第2學期第2次定期評量
+  source_file: 高二/數學/112/2-2/高雄/高師大附中_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 30 分。答錯一個選項給 4 分，答錯兩個選項給 2 分，答錯三個選項以上或不作答不給分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（共 70 分）
+    count: 13
+questions:
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 坐標空間中有一平面 P 過（0，0，0）、（3，2，1）及（3，2，－1）三點。試選出正確的選項。
+  options:
+  - label: A
+    content: 向量（3，2，0）與平面 P 垂直
+  - label: B
+    content: 平面 P 與平面 6x＋4y－z＝7 垂直
+  - label: C
+    content: 點（0，－6，－4）在平面 P 上
+  - label: D
+    content: 平面 P 包含 z 軸
+  - label: E
+    content: 點（－5，1，3）到平面 P 的距離是$\sqrt{13}$
+  answer:
+  - B
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '令 A（0，0，0），B（3，2，1），C（3，2，－1）
+
+    則$\vec{AB}$＝（3，2，1），$\vec{AC}$＝（3，2，－1）
+
+    ⇒$\vec{AB}$×$\vec{AC}$＝$\left( \left| \begin{matrix}2 & 1 \\ 2 & -1\end{matrix} \right| , \left| \begin{matrix}1 & 3 \\ -1 & 3\end{matrix} \right| , \left| \begin{matrix}3 & 2 \\ 3 & 2\end{matrix} \right| \right)$＝（－4，6，0）//（2，－3，0）
+
+    故平面 P 的方程式為 2x－3y＝0，$\vec{n_{P}}$＝（2，－3，0）
+
+    (A) ╳：∵（2，－3，0）．（3，2，0）＝0
+
+    ∴$\vec{n_{P}}$⊥（3，2，0）⇒ 平面 P 平行（3，2，0）
+
+    (B) ○：∵（2，－3，0）．（6，4，－1）＝0
+
+    ∴平面 P⊥平面 6x＋4y－z＝7
+
+    (C) ╳：（0，－6，－4）代入得 0＋18≠0
+
+    故（0，－6，－4）不在平面 P 上
+
+    (D) ○：從 z 軸上任取兩點（0，0，1），（0，0，2）皆在平面 P 上，可知平面 P 包含 z 軸
+
+    (E) ○：d（（－5，1，3），P）＝$\frac{| -10-3 |}{\sqrt{2^{2}+(-3)^{2}+0^{2}}}$＝$\sqrt{13}$
+
+    故選(B)(D)(E)'
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 對於空間坐標中直線 L：$\frac{x -2}{1}=\frac{y +3}{-2}=\frac{z -1}{3}$，下列哪些敘述是正確的？
+  options:
+  - label: A
+    content: 點（3，－5，－2）在 L 上
+  - label: B
+    content: L 與$\frac{x +2}{1}=\frac{y +3}{2}=\frac{z +7}{1}$互為歪斜線
+  - label: C
+    content: L 與$\begin{cases}x -y -z=-1 \\ x +2y +z=0\end{cases}$平行
+  - label: D
+    content: L 與$\frac{x +2}{1}=\frac{y +3}{2}=\frac{z -1}{1}$交於一點
+  - label: E
+    content: L 與$\frac{x +2}{1}=\frac{y +3}{2}=\frac{z -1}{1}$垂直
+  answer:
+  - C
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：（3，－5，－2）代入$\frac{x -2}{1}=\frac{y +3}{-2}=\frac{z -1}{3}$
+
+    得$\frac{1}{1}$＝$\frac{-2}{-2}$≠$\frac{-3}{3}$
+
+    可知（3，－5，－2）不在直線 L 上
+
+    (B) ╳：∵兩直線方向向量不平行
+
+    ∴兩直線為相交或歪斜
+
+    計算 L 的參數式$\begin{cases}x = 2+t \\ y =-3 -2t \\ z =1 +3t\end{cases}$，t ∈ R
+
+    代入另一直線得$\frac{4+t}{1}$＝$\frac{-2t}{2}$＝$\frac{8+3t}{1}$
+
+    可得 t＝－2，故兩線相交於（0，1，－5）
+
+    (C) ○：$\vec{n_{E_{1}}}$＝（1，－1，－1），$\vec{n_{E_{2}}}$＝（1，2，1）
+
+    $\vec{n_{E_{1}}}$×$\vec{n_{E_{2}}}$＝$\left( \left| \begin{matrix}-1 & -1 \\ 2 & 1\end{matrix} \right| , \left| \begin{matrix}-1 & 1 \\ 1 & 1\end{matrix} \right| , \left| \begin{matrix}1 & -1 \\ 1 & 2\end{matrix} \right| \right)$＝（1，－2，3）
+
+    可知$\vec{n_{E_{1}}}$×$\vec{n_{E_{2}}}$和 L 之方向向量平行
+
+    又 L 上一點（2，－3，1）不在 x－y－z＝－1 上
+
+    故兩線平行
+
+    (D) ╳：將 L 的參數式代入另一直線
+
+    得$\frac{4+t}{1}$＝$\frac{-2t}{2}$＝$\frac{3t}{1}$
+
+    ∵$\frac{4+t}{1}$＝$\frac{-2t}{2}$⇒ t＝－2，$\frac{-2t}{2}$＝$\frac{3t}{1}$⇒ t＝0 ∴無解
+
+    故兩線歪斜
+
+    (E) ╳：由選項(D)可知兩線歪斜，故不垂直
+
+    故選(C)'
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T02
+      name: 空間兩直線位置關係與共面
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 投擲一個均勻的骰子，設 A 表示出現奇數點的事件，B 表示出現偶數點的事件，C 表示出現 1 點或 2 點的事件，下列哪些選項正確？
+  options:
+  - label: A
+    content: P（A∣B）＝0
+  - label: B
+    content: P（A∣C）＝$\frac{1}{2}$
+  - label: C
+    content: A、B 是獨立事件
+  - label: D
+    content: A、C 是互斥事件
+  - label: E
+    content: B、C 是獨立事件
+  answer:
+  - A
+  - B
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: 'P(A)＝$\frac{1}{2}$，P(B)＝$\frac{1}{2}$，P(C)＝$\frac{1}{3}$，
+
+    P（A∩B）＝0，P（A∩C）＝$\frac{1}{6}$，P（B∩C）＝$\frac{1}{6}$
+
+    (A) ○：P（A∣B）＝$\frac{P (A \cap B)}{P (B)}$＝$\frac{0}{\frac{1}{2}}$＝0
+
+    (B) ○：P（A∣C）＝$\frac{P (A \cap C)}{P (C)}$＝$\frac{\frac{1}{6}}{\frac{1}{3}}$＝$\frac{1}{2}$
+
+    (C) ╳：∵P（A∩B）＝0≠P(A)×P(B)＝$\frac{1}{4}$
+
+    ∴A，B 不獨立
+
+    (D) ╳：∵P（A∩C）≠0 ∴A，C 非互斥
+
+    (E) ○：∵P（B∩C）＝$\frac{1}{6}$＝$\frac{1}{2}\times \frac{1}{3}$＝P(B)×P(C)
+
+    ∴B，C 獨立
+
+    故選(A)(B)(E)'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T07
+      name: 集合機率公式與列聯表條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 甲班有 40 位同學，座號 1 到 40 號。期末同樂會時舉辦摸彩活動，摸彩箱中有 40 支籤，其中 5 支有獎。現在從 1 號、2 號、3 號、……、40 號，按照順序輪流抽籤（取後不放回），試問下列哪些選項正確？
+  options:
+  - label: A
+    content: 40 號中獎的機率最低
+  - label: B
+    content: 1 號中獎的機率高於 2 號中獎的機率
+  - label: C
+    content: 1 號、2 號均中獎的機率為$\frac{1}{78}$
+  - label: D
+    content: 在 1 號中獎的條件下，2 號中獎的機率為$\frac{4}{39}$
+  - label: E
+    content: 在 2 號中獎的條件下，3 號中獎的機率為$\frac{1}{13}$
+  answer:
+  - C
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：每一號中獎機率一樣高
+
+    (B) ╳：每一號中獎機率一樣高
+
+    (C) ○：所求為$\frac{5\times 4}{40\times 39}$＝$\frac{1}{78}$
+
+    (D) ○：P（2 中∣1 中）＝$\frac{P (1 中 \cap 2 中)}{P (1 中)}$＝$\frac{\frac{5}{40}\times \frac{4}{39}}{\frac{5}{40}}$＝$\frac{4}{39}$
+
+    (E) ╳：所求和 P（2 中∣1 中）相同，亦為$\frac{4}{39}$
+
+    故選(C)(D)'
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T08
+      name: 依序抽籤不放回與對稱性機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 2
+  stem: 設一樣本空間 U 至少包含兩事件 A、B，其中 P
+  options:
+  - label: A
+    content: ＝x，P
+  - label: B
+    content: ＝y 且 P（A∣B）＝$\frac{1}{2}$，P（B∣A）＝$\frac{2}{3}$，下列哪些選項正確？(A) x：y＝4：3(B) x ≤$\frac{3}{5}$
+  - label: C
+    content: y ≤$\frac{2}{5}$
+  - label: D
+    content: 若 A、B 為獨立事件，則 x＝$\frac{1}{2}$
+  - label: E
+    content: 若 A、B 為獨立事件，則 P（A∩B）＝$\frac{2}{3}$
+  answer:
+  - B
+  - D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T07
+      name: 集合機率公式與列聯表條件機率
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題幹與選項排版錯亂（P(A)=x、P(B)=y 被誤拆為選項 A、B）
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: 已知 P（1，－2，3）是平面 E 上距離 Q（3，4，－3）最近的點，則平面 E 的方程式為 ＿＿＿＿。
+  answer:
+  - x＋3y－3z＝－14
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T07
+      name: 垂直平分面與最近點法向量
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 右圖為長方體 ABCD－EFGH，其中$\overline{AB}$＝2，$\overline{AD}$＝4，$\overline{AE}$＝6，若平面 BEG 與平面 BEF 的夾角為 θ，則 sinθ＝＿＿＿＿。
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_112_高雄_高師大附中_數學_數A_g11s2e2/s2_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 459.25
+      - 363.95
+      - 563.9
+      - 453.4
+  answer:
+  - $\frac{2\sqrt{10}}{7}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T02
+      name: 兩平面夾角與位置關係
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 設 A（3，0，－2），直線 L：$\frac{x +1}{3}=\frac{y -1}{2}=\frac{z +1}{-2}$，則包含 A 點及直線 L 的平面方程式為＿＿＿＿。
+  answer:
+  - 4x＋5y＋11z＝－10
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T01
+      name: 平面方程式與法向量求法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 設直線 $L_{1}$：$\frac{x -5}{3}=\frac{y +7}{-6}=\frac{z -1}{-2}$與 $L_{2}$：$\frac{x -1}{3}=\frac{y}{2}=\frac{z +5}{2}$為歪斜線，若 P 在 $L_{1}$ 上，Q 在 $L_{2}$ 上，當$\overline{PQ}$有最小值時，則 Q 點坐標為＿＿＿＿。
+  answer:
+  - （4，2，－3）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T04
+      name: 兩歪斜線公垂線段長計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 空間有一正立方體 ABCD－EFGH（如右圖），已知頂點 A（1，7，2）， 直線 FH：$\frac{x -2}{1}=\frac{y +6}{-1}=\frac{z -3}{1}$，則此正立方體邊長為＿＿＿＿。
+  assets:
+  - key: s2_5_f1
+    kind: figure
+    file: doc_112_高雄_高師大附中_數學_數A_g11s2e2/s2_5_f1.png
+    crop:
+      page: 2
+      rect:
+      - 479.5
+      - 461.2
+      - 564.3
+      - 551.55
+  answer:
+  - '8'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T05
+      name: 直線在立體圖形中的幾何應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 設空間中兩直線 $L_{1}$：$\frac{x}{2}=\frac{y -3}{3}=\frac{z}{-1}$與 $L_{2}$：$\frac{x +2}{-6}=\frac{y}{-4}=\frac{z -1}{2}$，，則 $L_{1}$、$L_{2}$ 所夾銳角的角平分線方程式為$\begin{cases}x+ay=-2 \\ 2y+bz=5\end{cases}$，則數對（a，b）＝＿＿＿＿。
+  answer:
+  - （－1，5）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T07
+      name: 兩直線參數聯立求交點與角平分線
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知空間中兩直線 $L_{1}$：$\frac{x -4}{-3}=\frac{y +1}{4}=\frac{z -2}{1}$與 $L_{2}$：$\frac{x}{1}=\frac{y -7}{2}=\frac{z +7}{-2}$為歪斜線，其中 B（0，7，－7）、C（－2，3，－3）兩點都在 $L_{2}$ 上，若在 $L_{1}$ 上取一點 A，則△ABC 面積的最小值為＿＿＿＿。
+  answer:
+  - '18'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-2
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的直線
+      std: true
+    textbook: 數學4A 空間中的直線
+    pattern:
+      key: MA-A4-2-2:T04
+      name: 兩歪斜線公垂線段長計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 設平面 E：2x＋2y－z－12＝0 為一鏡面，光線自 A（－2，3，8）射向鏡面 E 上之一點 P 後，反射至 B（0，8，6），則光線路徑長$\overline{AP}$＋$\overline{PB}$為＿＿＿＿。
+  answer:
+  - '7'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-2-1
+      book: 數學4A
+      chapter: 空間中的平面與直線
+      title: 空間中的平面
+      std: true
+    textbook: 數學4A 空間中的平面
+    pattern:
+      key: MA-A4-2-1:T08
+      name: 點面距離、對稱反射與最值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 某校全體高三學生都有報考學測數學 A 或數學 B，在這些學生中只報考數學 A 的學生占全體高三學生的$\frac{3}{10}$。報考數學 A 的學生中有$\frac{5}{9}$的學生同時也報考數學 B。今自此校任選一人，已知此人是報考數學 B 的學生，則他只報考數學 B 的機率為＿＿＿ 。
+  answer:
+  - $\frac{13}{28}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T07
+      name: 集合機率公式與列聯表條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 3
+  stem: 甲、乙、丙三人解出一題數學問題的機率分別為$\frac{2}{3}$、$\frac{3}{5}$、$\frac{3}{4}$，今三人同解某一個問題且互不影響，此題恰被二人解出的機率為＿＿＿＿。
+  answer:
+  - $\frac{9}{20}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 3
+  stem: 醫學上常用心電圖篩檢心臟疾病。根據統計，有 90 ％的心肌梗塞病患可由心電圖篩檢出來，但也會有 2 ％的健康者被誤判為患有心肌梗塞。如果某一個城市有 1 ％的市民患有心肌梗塞的疾病。試問若該城市某市民經心電圖檢查被判患有心肌梗塞，則他真正患有心肌梗塞的機率為＿＿＿＿。
+  answer:
+  - $\frac{5}{16}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 3
+  stem: 巧巧投擲 3 個公正骰子，每個骰子出現的點數互不影響。巧巧投擲骰子 n 次（每次都投擲 3 個公正骰子），至少有一次「3 個骰子出現點數都相異」的機率超過 99 ％，則 n 的最小值為 ＿＿＿＿。（log2 ≈ 0.3010，log3 ≈ 0.4771）
+  answer:
+  - '6'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_112_高雄_高師大附中_數學_數A_g11s2e2_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 3
+  stem: '一個標有 1 至 12 號格子的 12 格戳戳樂遊戲，每回遊戲以投擲一枚均勻銅板四次來決定，要戳哪些格子。規則如下：
+
+    (一)第一次投擲銅板，若是正面，則戳 1 號格子；若是反面，則戳 2 號格子。
+
+    (二)第二、三、四次投擲銅板，若是正面，則所戳格子的號碼為前一次所戳格子的號碼加 1；若是反面，則所戳格子的號碼為前一次所戳格子的號碼加 2，依此類推。
+
+    例如：投擲銅板四次的結果依序為「正、反、反、正」，則會戳編號分別為 1、3、5、6 號的四個格子。
+
+    已知在 4 號格子被戳到的條件下，3 號格子被戳到的機率為＿＿＿＿。'
+  answer:
+  - $\frac{5}{11}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T01
+      name: 條件機率定義與樣本篩選
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

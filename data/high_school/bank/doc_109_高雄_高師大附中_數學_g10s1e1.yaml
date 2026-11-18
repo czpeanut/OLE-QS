@@ -1,0 +1,553 @@
+document:
+  id: doc_109_高雄_高師大附中_數學_g10s1e1
+  level: senior
+  grade: 10
+  subject: 數學
+  academic_year_roc: 109
+  semester: 1
+  exam_seq: 1
+  city: 高雄
+  school_short: 高師大附中
+  school: 國立高雄師範大學附屬高級中學
+  title: 國立高雄師範大學附屬高級中學 109學年度第1學期第1次定期評量 高一數學科試題
+  exam_name: 109學年度第1學期第1次定期評量
+  source_file: 高一/數學/109/1-1/高雄/高師大附中.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 一、多重選擇題（每題 6 分，共 30 分）
+    count: 5
+  - ord: 2
+    name: 二、填充題（答案全對才給分，每題 5 分，共 70 分）
+    count: 13
+questions:
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 下列哪些選項是正確的？
+  options:
+  - label: A
+    content: 若 $a^{3}$ 是有理數，且 $a^{6}$ 是有理數，則 a 是有理數
+  - label: B
+    content: 若 $a^{3}$ 是有理數，且 $a^{5}$ 是有理數，則 a 是有理數
+  - label: C
+    content: 若 a，b 均為實數，a－b 為有理數，且 ab 為無理數，則 a＋b 必為無理數
+  - label: D
+    content: $0.\overline{9} < 1$
+  - label: E
+    content: a，b 均為實數，若$a +b\sqrt{2} =0$，則 a＝b＝0
+  explanation: '(A)╳：反例：$a =\sqrt[3]{2}$是無理數，但 $a^{3}$＝2，$a^{6}$＝（$a^{3}$）$^{2}$＝4 都是有理數
+
+    (B)○：∵$a^{3}$，$a^{5}$ 皆為有理數 ∴$\frac{a^{3} \cdot a^{3}}{a^{5}}$＝a 為有理數
+
+    (C)○：假設 a＋b 為有理數，又 a－b 為有理數
+
+    則 a＝$\frac{(a +b)+(a -b)}{2}$，b＝$\frac{(a +b)-(a -b)}{2}$都是有理數
+
+    ∴ab 為有理數，產生矛盾
+
+    故假設有誤，即 a＋b 必為無理數
+
+    (D)╳：$0.\overline{9} =\frac{9}{9}= 1$
+
+    (E)╳：反例：$a =\sqrt{2}$，b＝－1，則$a +b\sqrt{2} =\sqrt{2} +(-1) \times \sqrt{2} =0$
+
+    故選(B)(C)'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T01
+      name: 有理數與無理數性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 下列哪些選項是正確的？
+  options:
+  - label: A
+    content: $10^{\log \frac{1}{2}}> 10^{\log \frac{1}{3}}$
+  - label: B
+    content: 將正數 a 寫成 10 的次方時，其指數必為正數
+  - label: C
+    content: a＞0，則 $10^{2 loga}$＝2a
+  - label: D
+    content: a＞0，則$\frac{1}{a}$＝$10^{－loga}$
+  - label: E
+    content: $10^{0.4771}$＝3
+  explanation: '(A)○：∵$10^{\log \frac{1}{2}}=\frac{1}{2}$，$10^{\log \frac{1}{3}}=\frac{1}{3}$ ∴$\frac{1}{2}>\frac{1}{3}\Rightarrow10^{\log \frac{1}{2}}> 10^{\log \frac{1}{3}}$
+
+    (B)╳：反例：a＝$\frac{1}{10}> 0$，但 a＝$10^{－1}$
+
+    (C)╳：a＞0，$10^{2 loga}$＝（$10^{loga}$）$^{2}$＝$a^{2}$≠2a
+
+    (D)○：a＞0，$10^{－loga}$＝（$10^{loga}$）$^{－1}$＝$a^{－1}$＝$\frac{1}{a}$
+
+    (E)╳：3＝$10^{0.4771212……}$≠$10^{0.4771}$
+
+    故選(A)(D)'
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T01
+      name: 常用對數定義與指數互化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s1_3
+  section: 1
+  number: 3
+  type: multiple
+  page: 1
+  stem: 設 a＞0 且 a＋$a^{－1}$＝6，則下列哪些選項是正確的？
+  options:
+  - label: A
+    content: a＞1
+  - label: B
+    content: a－$a^{－1}$＝$4\sqrt{2}$
+  - label: C
+    content: $a^{2}$＋$a^{－2}$＝34
+  - label: D
+    content: $a^{\frac{1}{2}}+a^{-\frac{1}{2}}=2\sqrt{2}$
+  - label: E
+    content: $a^{3}$＋$a^{－3}$＝196
+  explanation: '(A)╳：a＋$a^{－1}$＝6
+
+    $\Rightarrowa^{2}$－6a＋1＝0$\Rightarrow$a＝$\frac{6\pm \sqrt{32}}{2}=3\pm 2\sqrt{2}$
+
+    (B)╳：（a－$a^{－1}$）$^{2}$＝（a＋$a^{－1}$）$^{2}$－$4aa^{－1}$＝$6^{2}$－4＝32
+
+    $\Rightarrow$a－$a^{－1}$＝$\pm \sqrt{32} =\pm 4\sqrt{2}$
+
+    (C)○：（a＋$a^{－1}$）$^{2}$＝$a^{2}$＋$2aa^{－1}$＋$a^{－2}$
+
+    $6^{2}$＝$a^{2}$＋2＋$a^{－2}\Rightarrowa^{2}$＋$a^{－2}$＝34
+
+    (D)○：$(a^{\frac{1}{2}}+a^{-\frac{1}{2}})^{2}$＝a＋$a^{－1}$＋2＝6＋2＝8
+
+    ∵a＞0 ∴$a^{\frac{1}{2}}+a^{-\frac{1}{2}}=\sqrt{8} =2\sqrt{2}$
+
+    (E)╳：$a^{3}$＋$a^{－3}$＝（a＋$a^{－1}$）$^{3}$－$3aa^{－1}$（a＋$a^{－1}$）＝$6^{3}$－3×1×6＝198
+
+    故選(C)(D)'
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T04
+      name: 負指數與對稱指數求值
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s1_4
+  section: 1
+  number: 4
+  type: multiple
+  page: 1
+  stem: 若$\sqrt{7+4\sqrt{3}}$的整數部分是 a，小數部分是 b，則下列哪些選項是正確的？
+  options:
+  - label: A
+    content: a＝4
+  - label: B
+    content: b＝0.732
+  - label: C
+    content: a－b＝$4+\sqrt{3}$
+  - label: D
+    content: a＋b＝$2+\sqrt{3}$
+  - label: E
+    content: $\frac{1}{a -b}=\frac{4+\sqrt{3}}{13}$
+  explanation: '(A)╳：$\sqrt{7+4\sqrt{3}}$＝$\sqrt{7+2\sqrt{12}}$＝$\sqrt{(\sqrt{4} +\sqrt{3} )^{2}}$＝$2+\sqrt{3}$＝2＋1.732……$\approx$3.732
+
+    ∴a＝3
+
+    (B)╳：b＝$\sqrt{7+4\sqrt{3}} -a$＝$2+\sqrt{3} -3=\sqrt{3} -1$
+
+    (C)╳：a－b＝$3-(\sqrt{3} -1)=4-\sqrt{3}$
+
+    (D)○：a＋b＝$3+(\sqrt{3} -1)=2+\sqrt{3}$
+
+    (E)○：$\frac{1}{a -b}=\frac{1}{4-\sqrt{3}}=\frac{4+\sqrt{3}}{13}$
+
+    故選(D)(E)'
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T02
+      name: 根式的整數與小數部分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s1_5
+  section: 1
+  number: 5
+  type: multiple
+  page: 1
+  stem: 某個手機程式，每次點擊螢幕上的數 a 後，螢幕上的數就會變成 $a^{2}$。當一開始時螢幕上的數 b 為正且連續點擊螢幕 n 次後，螢幕上的數為 $b_{n}$。已知 $b_{3}$＝$81^{3}$。下列哪些選項是正確的？
+  options:
+  - label: A
+    content: b＝27
+  - label: B
+    content: $b_{6}$＝$81^{24}$
+  - label: C
+    content: 若 $b_{10}$＝$10^{k}$，則 731＜k＜732
+  - label: D
+    content: $b_{10}$ 為 732 位數
+  - label: E
+    content: $\frac{1}{b_{10}}$的小數點後第 733 位開始不為 0
+  explanation: '(A)╳：$b_{3}$＝（（$b^{2}$）$^{2}$）$^{2}$＝$b^{8}$＝$81^{3}$＝（$3^{4}$）$^{3}$
+
+    ∴b＝$3^{\frac{12}{8}}=3^{\frac{3}{2}}=3\sqrt{3}$
+
+    (B)○：$b_{6}$＝（（（$b^{8}$）$^{2}$）$^{2}$）$^{2}$＝（$81^{3}$）$^{8}$＝$81^{24}$
+
+    (C)╳：$b_{10}$＝$( (b^{8} )^{8} )^{2^{4}}$＝（（$b^{8}$）$^{8}$）$^{16}$＝（$81^{24}$）$^{16}$＝$3^{1536}\approx$（$10^{0.4771}$）$^{1536}$＝$10^{732.8256}$
+
+    $\Rightarrow$k$\approx$732.8256
+
+    (D)╳：$b_{10}\approx10^{732.8256}$＝$10^{732}$×$10^{0.8256}$＝6.……×$10^{732}$ 為 733 位數
+
+    (E)○：$\frac{1}{b_{10}}$＝（$b_{10}$）$^{－1}\approx10^{－732.8256}$＝$10^{－733＋0.1744}$＝$10^{0.1744}$×$10^{－733}$
+
+    其小數點後第 733 位開始不為 0
+
+    故選(B)(E)'
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T02
+      name: 常用對數求高次冪位數
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 1
+  stem: $\log 1000+\log (10\times \sqrt[3]{10} )-\log \frac{1}{100\sqrt{10}}$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T06
+      name: 常用對數律化簡與求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 不等式 1$\leq$｜－3x＋2｜$\leq$5 的解所形成的區間的長度為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T09
+      name: 雙重絕對值不等式區間求解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 設 a 為 0～9 的阿拉伯數字且$\frac{28}{90}< 0.3\overline{a4} <\frac{31}{90}$，則 a 的值為＿＿＿＿。（不只一個）
+  tags:
+    unit:
+      code: MA-1-1-1
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 實數
+      std: true
+    textbook: 數學1（必修） 實數
+    pattern:
+      key: MA-1-1-1:T05
+      name: 循環小數化分數與比較
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 設 x，y 均為實數，且 $17^{x}$＝9，$459^{y}$＝81，則$\frac{1}{x}-\frac{2}{y}$的值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T06
+      name: 指數等式換底與指數倒數求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: ｜2x－3｜－｜x＋1｜＝10 的解為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T04
+      name: 雙絕對值分段討論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 用總長度 20 的圍牆圍出兩個相鄰且大小相同的長方形，形成「日」字形，則所圍出總面積的最大值為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-2
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 式的運算
+      std: true
+    textbook: 數學1（必修） 式的運算
+    pattern:
+      key: MA-1-1-2:T02
+      name: 算幾不等式求幾何極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知 $9^{x}$＝$\sqrt{2} +1$，則$\frac{27^{x}+27^{-x}}{3^{x}-3^{-x}}$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T04
+      name: 負指數與對稱指數求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 不等式｜2x＋9｜＋3｜x－5｜$\leq$20 的解為＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T04
+      name: 雙絕對值分段討論
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_9
+  section: 2
+  number: 9
+  type: fill
+  page: 2
+  stem: 設 a＝log3，b＝log4，則$100^{2a +\frac{1}{2}b}$＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T01
+      name: 常用對數定義與指數互化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_10
+  section: 2
+  number: 10
+  type: fill
+  page: 2
+  stem: 某公司研發益生菌，此菌種每 1 日之後會增為 a 倍。若已知 3 日後的細菌數為 32000 個，6 日後的細菌數為 2048000 個，若適合人體食用的益生菌必須超過 10 億個，則從一開始培養到適合人體食用必須至少經過＿＿＿＿天。
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T03
+      name: 指數倍數成長與數量級估算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_11
+  section: 2
+  number: 11
+  type: fill
+  page: 2
+  stem: 921 大地震，又稱<u>集集</u>大地震，是 1999 年 9 月 21 日上午 1 時 47 分 15.9 秒發生於<u>臺灣</u>中部山區芮氏規模為 7.3 的地震，民國 105 年 2 月 6 日上午 3 點 57 分發生<u>高雄</u> <u>美濃</u>芮氏規模 6.6 地震。國際上常用地震規模來衡量地震釋放出的能量，而國內又常以芮氏規模做為報導的主要參考。根據<u>中央氣象局</u>資料，如果設芮氏規模為 r 的地震釋放能量為 E 爾格，則 r 與 E 的數學關係為 logE＝11.8＋1.5r。請問<u>集集</u>大地震釋放出的能量約為<u>美濃</u>地震的多少倍？ $■答$：＿＿＿＿倍（答案以四捨五入法取到整數位）
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T04
+      name: 對數分貝地震與pH應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_12
+  section: 2
+  number: 12
+  type: fill
+  page: 2
+  stem: 很多人在服藥時，最擔心的是藥物在體內殘留的時間。根據專業藥師的說法，藥物在人體內，經過正常的代謝程序，最終都會排出體外，只是時間長短。一個比較客觀的判讀方法，是依照每個藥物的「半衰期」來預測。「半衰期」指的是藥物在體內吸收之後，分佈到血液中，達到最高血中濃度，經代謝排除之後，血中濃度下降到原本一半所需的時間。某常見的止痛藥，其有效主成分是「乙醯胺酚」（Acetaminophen），以一般健康成年人來說，其「半衰期」約為 2.5 小時，今有一名健康成年人，用藥後 30 分鐘即達到血液高峰值，若再過 8 小時後，血液中的藥物濃度將是原本濃度的 a ％，則 a＝＿＿＿＿。（答案以四捨五入法取到小數點後第二位）
+  tags:
+    unit:
+      code: MA-1-1-4
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 指數
+      std: true
+    textbook: 數學1（必修） 指數
+    pattern:
+      key: MA-1-1-4:T03
+      name: 指數倍數成長與數量級估算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_13
+  section: 2
+  number: 13
+  type: fill
+  page: 2
+  stem: 根據調查，九成減重的人面臨復胖困擾，關鍵點在「體脂肪」。現代醫學測量肥胖不再只用體重，而是體脂肪；對於是否須減肥，不再只以「體重」做標準，改以「體脂率」做判斷。體脂肪率是指體重有多少百分比是由脂肪所構成，男性正常體脂率在 14～23 ％之間，女性在 17～27 ％之間，年紀越大體脂率越高，30 歲的男性超過 25 ％、女性超過 30 ％即為「肥胖」。如果一位 60 公斤的男性，體脂率為 20 ％，其身體的脂肪重量為體重（60 公斤）×體脂率（20 ％）＝12 公斤。維持健康之最低體脂肪量：男性 3 ％、女性 10～12 ％。已知某年輕女性體重 50 公斤，且體脂肪率在正常範圍內，若其身體的脂肪重量為 x 公斤且 x 的範圍可表為｜x－a｜$\leq$b，則數對（a，b）＝＿＿＿＿。
+  tags:
+    unit:
+      code: MA-1-1-3
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 絕對值
+      std: true
+    textbook: 數學1（必修） 絕對值
+    pattern:
+      key: MA-1-1-3:T05
+      name: 絕對值誤差應用題
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_109_高雄_高師大附中_數學_g10s1e1_s2_14
+  section: 2
+  number: 14
+  type: fill
+  page: 3
+  stem: 'pH 值是衡量溶液酸鹼程度的標準，定義如下：
+
+    pH 值＝－log[$H^{＋}$]，其中：[$H^{＋}$] 為氫離子的濃度（莫耳／升）。
+
+    下表是食物酸鹼程度的分類表：
+
+    | 食物 | pH 值（平均） | 食物 | pH 值（平均） | 食物 | pH 值（平均） |
+
+    | --- | --- | --- | --- | --- | --- |
+
+    | 水 | 7.0 | 鳳梨 | 4.0 | 番茄 | 4.5 |
+
+    | 牛奶 | 7.4 | 草莓 | 3.0 | 蘋果 | 4.9 |
+
+    | 石榴 | 5.0 | 葡萄 | 4.5 | 蔓越莓汁 | 2.4 |
+
+    | 西瓜 | 6.6 | 香蕉 | 4.85 | 檸檬 | 2.3 |
+
+    則用一升西瓜、兩升牛奶的西瓜牛奶 pH 值為＿＿＿＿。（答案以四捨五入法取到小數點後第二位）'
+  tags:
+    unit:
+      code: MA-1-1-5
+      book: 數學1（必修）
+      chapter: 數與式
+      title: 常用對數
+      std: true
+    textbook: 數學1（必修） 常用對數
+    pattern:
+      key: MA-1-1-5:T04
+      name: 對數分貝地震與pH應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4

@@ -1,0 +1,465 @@
+document:
+  id: doc_111_桃園_武陵_數學_數A_g11s2e1
+  level: senior
+  grade: 11
+  subject: 數學
+  course: 數A
+  academic_year_roc: 111
+  semester: 2
+  exam_seq: 1
+  city: 桃園
+  school_short: 武陵
+  school: 桃園市立武陵高級中等學校
+  title: 桃園市立武陵高級中等學校 111學年度第2學期第1次定期評量 高二數學（數A）科試題
+  exam_name: 111學年度第2學期第1次定期評量
+  source_file: 高二/數學/111/2-1/桃園/武陵_數A.pdf
+  extractor: programmatic:word_pipeline
+  sections:
+  - ord: 1
+    name: 二、多重選擇題（每題 9 分，共 18 分。答錯一個選項得 6 分，錯兩個得 3 分，錯三個以上或未作答得 0 分）
+    count: 2
+  - ord: 2
+    name: 三、填充題（每格 6 分，共 60 分）
+    count: 8
+  - ord: 3
+    name: 四、計算證明題（要有計算過程，每題 8 分，共 16 分）
+    count: 2
+questions:
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s1_1
+  section: 1
+  number: 1
+  type: multiple
+  page: 1
+  stem: 設空間坐標系中三點 A（3，2，1），B（5，1，－1），C（2，0，3），向量 $\vec{u}$＝$r\vec{AB}+\vec{AC}$，r 為實數，請選出正確的選項。
+  options:
+  - label: A
+    content: 兩向量$\vec{AB}$與$\vec{AC}$夾角為銳角
+  - label: B
+    content: △ABC 面積小於 4
+  - label: C
+    content: 向量$\vec{AB}$在$\vec{AC}$上的正射影長小於 1
+  - label: D
+    content: 若$| \vec{u} |$最小時，則 r＞0
+  - label: E
+    content: 若$\vec{u}$平分∠BAC，則 r 為正整數
+  answer:
+  - D
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ╳：$\vec{AB}$＝（2，－1，－2），$| \vec{AB} |$＝$\sqrt{2^{2}+(-1)^{2}+(-2)^{2}}$＝3
+
+    $\vec{AC}$＝（－1，－2，2），$| \vec{AC} |$＝$\sqrt{(-1)^{2}+(-2)^{2}+2^{2}}$＝3
+
+    令兩向量夾角為 θ
+
+    則 cosθ＝$\frac{\vec{AB} \cdot \vec{AC}}{| \vec{AB} | | \vec{AC} |}$＝$\frac{-2+2-4}{3 \cdot 3}$＝$-\frac{4}{9}$＜0
+
+    故 θ 為鈍角
+
+    (B) ╳：sinθ＝$\sqrt{1-\cos ^{2}\theta}$＝$\sqrt{1-\frac{16}{81}}$＝$\frac{\sqrt{65}}{9}$
+
+    △ABC＝$\frac{1}{2} \cdot | \vec{AB} | | \vec{AC} | \sin \theta$＝$\frac{1}{2}$．3．3．$\frac{\sqrt{65}}{9}$＝$\frac{\sqrt{65}}{2}$＞$\frac{8}{2}$＝4
+
+    (C) ╳：$\vec{AB}$在$\vec{AC}$上正射影長＝$| | \vec{AB} | \cos \theta |$＝$\left| 3 \cdot \left( -\frac{4}{9} \right) \right|$＝$\frac{4}{3}$＞1
+
+    (D) ○：$\vec{u}$＝（2r－1，－r－2，－2r＋2）
+
+    $| \vec{u} | ^{2}$＝（2r－1）$^{2}$＋（－r－2）$^{2}$＋（－2r＋2）$^{2}$
+
+    ＝$4r^{2}$－4r＋1＋$r^{2}$＋4r＋4＋$4r^{2}$－8r＋4＝$9r^{2}$－8r＋9
+
+    ＝$9\left( r^{2}-\frac{8}{9}r+\left( \frac{4}{9} \right) ^{2} \right) +9-\frac{16}{9}$＝$9\left( r-\frac{4}{9} \right) ^{2}+\frac{65}{9}$
+
+    當 r＝$\frac{4}{9}$時，$| \vec{u} |$有最小值$\sqrt{\frac{65}{9}}$＝$\frac{\sqrt{65}}{3}$
+
+    (E) ○：若$\vec{u}$平分∠BAC，則$r | \vec{AB} |$＝$| \vec{AC} |$⇒ r＝1
+
+    故選(D)(E)'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T09
+      name: 空間向量綜合性質與運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s1_2
+  section: 1
+  number: 2
+  type: multiple
+  page: 1
+  stem: 設兩空間向量$\vec{u}$＝（a，b，0），$\vec{v}$＝（c，d，1），滿足 $a^{2}$＋$b^{2}$＝$c^{2}$＋$d^{2}$＝3，請選出正確的選項。
+  options:
+  - label: A
+    content: 向量$\vec{u}$與 z 軸垂直
+  - label: B
+    content: $\vec{u} \cdot \vec{v}$的最大值為$\sqrt{3}$
+  - label: C
+    content: $\vec{u}$與$\vec{v}$的夾角最大為 150°
+  - label: D
+    content: ad－bc 的值可能為$2\sqrt{3}$
+  - label: E
+    content: $| \vec{u}\times \vec{v} |$的最大值為$2\sqrt{3}$
+  answer:
+  - A
+  - C
+  - E
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(A) ○：z 軸方向向量（0，0，1）
+
+    ∵（a，b，0）．（0，0，1）＝0
+
+    ∴$\vec{u}$⊥z 軸
+
+    (B) ╳：$\vec{u} \cdot \vec{v}$＝ac＋bd
+
+    又（$a^{2}$＋$b^{2}$）（$c^{2}$＋$d^{2}$）≥（ac＋bd）$^{2}$
+
+    ⇒－3 ≤ ac＋bd ≤ 3
+
+    最大值為 3
+
+    (C) ○：令夾角為 θ，則
+
+    cosθ＝$\frac{\vec{u} \cdot \vec{v}}{| \vec{u} | | \vec{v} |}$＝$\frac{ac+bd}{\sqrt{3} \cdot 2}$
+
+    ⇒$\frac{-3}{2\sqrt{3}}$≤ cosθ ≤$\frac{3}{2\sqrt{3}}$
+
+    ⇒$\frac{-\sqrt{3}}{2}$≤ cosθ ≤$\frac{\sqrt{3}}{2}$
+
+    當 cosθ＝$\frac{-\sqrt{3}}{2}$時，θ 有最大值 150°
+
+    (D) ╳：∵（$a^{2}$＋$b^{2}$）（$d^{2}$＋（－c）$^{2}$）≥（ad－bc）$^{2}$
+
+    ∴－3 ≤ ad－bc ≤ 3
+
+    ∵$2\sqrt{3}$＞3
+
+    ∴ad－bc 不可能為$2\sqrt{3}$
+
+    (E) ○：$| \vec{u}\times \vec{v} |$＝$\vec{u}$，$\vec{v}$所張開之平行四邊形面積
+
+    最大值發生於$\vec{u}$⊥$\vec{v}$
+
+    即$| \vec{u}\times \vec{v} |$最大值＝$| \vec{u} | \cdot | \vec{v} |$＝$\sqrt{3} \cdot 2$＝$2\sqrt{3}$
+
+    故選(A)(C)(E)'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T09
+      name: 空間向量綜合性質與運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s2_1
+  section: 2
+  number: 1
+  type: fill
+  page: 2
+  stem: '設空間中兩向量$\vec{a}$＝（6，2，3），$\vec{b}$＝（2，－1，0），則：
+
+    (1)$| \vec{a}-2\vec{b} |$為＿＿＿＿。
+
+    (2) 外積$\vec{a}\times \vec{b}$為＿＿＿＿。
+
+    (3) 向量$\vec{a}$在向量$\vec{b}$上的正射影為＿＿＿＿。'
+  answer:
+  - (1) $\sqrt{29}$；(2)（3，6，－10）；(3)（4，－2，0）
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '(1)$\vec{a}-2\vec{b}$＝（2，4，3）
+
+    $| \vec{a}-2\vec{b} |$＝$\sqrt{2^{2}+4^{2}+3^{2}}$＝$\sqrt{29}$
+
+    (2)$\vec{a}\times \vec{b}$＝（3，6，－10）
+
+    (3)$\vec{a}$在$\vec{b}$上正射影＝$\frac{\vec{a} \cdot \vec{b}}{| \vec{b} | ^{2}}\vec{b}$
+
+    ＝$\frac{12-2}{5}$（2，－1，0）＝（4，－2，0）'
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T05
+      name: 空間向量內積與正射影計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s2_2
+  section: 2
+  number: 2
+  type: fill
+  page: 2
+  stem: 如右圖，空間中直線$\overset{\leftarrow \rightarrow}{AB}$分別與兩歪斜線 $L_{1}$、$L_{2}$ 垂直於 A、B 兩點，直線 $L_{3}$ 與 $L_{1}$ 平行，且通過點 B 和 $L_{2}$ 夾 45° 角。若$\overline{AB}$＝5 且 $L_{1}$ 上一點 P 滿足$\overline{AP} =10$，則 P 到 $L_{2}$ 的最短距離為＿＿＿＿。
+  assets:
+  - key: s2_2_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_數A_g11s2e1/s2_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 459.8
+      - 192.9
+      - 564.3
+      - 289.25
+  answer:
+  - $5\sqrt{3}$
+  answer_status: verified
+  answer_source: answer_key
+  explanation: '作 P 垂直 $L_{3}$ 於 Q，Q 垂直 $L_{2}$ 於 R
+
+    由三垂線定理可得$\overline{PR}$垂直 $L_{2}$
+
+    則$\overline{BQ}$＝$\overline{AP}$＝10，$\overline{BR}$＝$\overline{RQ}$＝$5\sqrt{2}$
+
+    故 d（P，$L_{2}$）＝d（P，R）＝$\sqrt{5^{2}+(5\sqrt{2})^{2}}$＝$5\sqrt{3}$'
+  tags:
+    unit:
+      code: MA-A4-1-1
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間概念
+      std: true
+    textbook: 數學4A 空間概念
+    pattern:
+      key: MA-A4-1-1:T02
+      name: 三垂線定理計算空間線段長
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s2_3
+  section: 2
+  number: 3
+  type: fill
+  page: 2
+  stem: 設 a＋b＋c＝－3，ab＋bc＋ca＝4，則行列式$\left| \begin{matrix}a & b & c \\ b & c & a \\ c & a & b\end{matrix} \right|$的值為＿＿＿＿。
+  answer:
+  - －9
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-4
+      book: 數學4A
+      chapter: 空間向量
+      title: 三階行列式
+      std: true
+    textbook: 數學4A 三階行列式
+    pattern:
+      key: MA-A4-1-4:T04
+      name: 特殊結構三階行列式化簡
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s2_4
+  section: 2
+  number: 4
+  type: fill
+  page: 2
+  stem: 如右圖，有個八面體，兩側面 ABCDEF 與 GHIJKL 為全等正六邊形，其餘六個面為全等長方形。其中$\overline{AB} =2$，$\overline{BH} =3$，若向量$\vec{AK}$與$\vec{FI}$夾角為 θ，則 cosθ＝＿＿＿＿。
+  assets:
+  - key: s2_4_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_數A_g11s2e1/s2_4_f1.png
+    crop:
+      page: 2
+      rect:
+      - 446.9
+      - 328.9
+      - 564.3
+      - 425.65
+  answer:
+  - $\frac{3\sqrt{21}}{35}$
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-2
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的坐標表示法
+      std: true
+    textbook: 數學4A 空間向量的坐標表示法
+    pattern:
+      key: MA-A4-1-2:T06
+      name: 空間長方體坐標化與向量運算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s2_5
+  section: 2
+  number: 5
+  type: fill
+  page: 2
+  stem: 已知正四面體 ABCD，在空間坐標系的坐標分別為 B（0，0，0）， C（0，a，b），D（0，c，d），且△BCD 的重心坐標為 G（0，4，3），則 A 點坐標為 ＿＿＿＿。（有兩解）
+  answer:
+  - （±$5\sqrt{2}$，4，3）
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-2
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的坐標表示法
+      std: true
+    textbook: 數學4A 空間向量的坐標表示法
+    pattern:
+      key: MA-A4-1-2:T09
+      name: 空間多面體頂點坐標反推
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 4
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s2_6
+  section: 2
+  number: 6
+  type: fill
+  page: 2
+  stem: 空間中三向量$\vec{a}$、$\vec{b}$、$\vec{c}$所決定的平行六面體體積為 10，則由$3\vec{a}-2\vec{b}$、$5\vec{b}+3\vec{c}$、$\vec{a}+\vec{c}$所決定的平行六面體體積為＿＿＿＿。
+  answer:
+  - '90'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T08
+      name: 平行六面體體積與混合積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s2_7
+  section: 2
+  number: 7
+  type: fill
+  page: 2
+  stem: 已知空間坐標系中點$A (3\sqrt{5} , 4 , -3)$、B（2，3，1），動點 P 在 x 軸上，動點 Q 在 y 軸上，則$\overline{AP}$＋$\overline{PQ}$＋$\overline{QB}$的最小值為＿＿＿＿。
+  answer:
+  - '12'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-2
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的坐標表示法
+      std: true
+    textbook: 數學4A 空間向量的坐標表示法
+    pattern:
+      key: MA-A4-1-2:T07
+      name: 空間對稱反射與鏡面光線路徑
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s2_8
+  section: 2
+  number: 8
+  type: fill
+  page: 2
+  stem: 在四面體 ABCD 中，$\overline{AB} = 8\sqrt{13}$，$\overline{AD}$＝25，$\overline{BD}$＝39，$\overline{CD}$＝63，cos∠ADC＝$\frac{3}{5}$， cos∠BDC＝$\frac{5}{13}$，則點 A 到平面 BCD 的距離為＿＿＿＿。
+  answer:
+  - '16'
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-1
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間概念
+      std: true
+    textbook: 數學4A 空間概念
+    pattern:
+      key: MA-A4-1-1:T04
+      name: 一般四面體距離與兩面角
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 4
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s3_1
+  section: 3
+  number: 1
+  type: calc
+  page: 2
+  stem: 設 x、y 皆為實數，求 $x^{2}$＋$y^{2}$＋（2x－3y－14）$^{2}$ 的最小值與此時之數對（x，y）為何？
+  answer:
+  - 由柯西不等式
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-3
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間向量的運算
+      std: true
+    textbook: 數學4A 空間向量的運算
+    pattern:
+      key: MA-A4-1-3:T03
+      name: 空間柯西不等式求極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
+- id: doc_111_桃園_武陵_數學_數A_g11s2e1_s3_2
+  section: 3
+  number: 2
+  type: calc
+  page: 2
+  stem: '設空間中有一平面 E、落在 E 上的一條直線 L 及平面 E 的法線$\overset{\leftarrow \rightarrow}{AB}$。已知法線$\overset{\leftarrow \rightarrow}{AB}$與平面 E 交於點 B，直線$\overset{\leftarrow \rightarrow}{AC}$垂直直線 L 於點 C 且 B、C 兩點相異，求證：直線$\overset{\leftarrow \rightarrow}{BC}$與直線 L 垂直。
+
+    證：'
+  assets:
+  - key: s3_2_f1
+    kind: figure
+    file: doc_111_桃園_武陵_數學_數A_g11s2e1/s3_2_f1.png
+    crop:
+      page: 2
+      rect:
+      - 437.1
+      - 693.65
+      - 564.85
+      - 787.8
+  answer:
+  - 設 L 上異於 C 之一點 D
+  answer_status: verified
+  answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-1-1
+      book: 數學4A
+      chapter: 空間向量
+      title: 空間概念
+      std: true
+    textbook: 數學4A 空間概念
+    pattern:
+      key: MA-A4-1-1:T06
+      name: 三垂線定理與空間線段長
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
