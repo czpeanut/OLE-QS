@@ -47,9 +47,21 @@ questions:
   - D
   answer_status: verified
   answer_source: answer_key
-  explanation: (A) ○。 (B) ×：0＜P(A) ≤ 1。 (C) ×：必須再加上A∩B＝$\emptyset$。 (D) ○：P(A∩B)＝P(A)×$\frac{P(A\cap
-    B)}{P(A)}$＝P(A)P(B | A)。 (E) ×：若P(A∪B)＝P(A)＋P(B)，則P(A∩B)＝0 即A∩B＝$\emptyset$，此時A與B為互斥事件。
-    故選(A)(D)。
+  explanation: (A) ○。 (B) ×：0＜P(A) ≤ 1。 (C) ×：必須再加上A∩B＝$\emptyset$。 (D) ○：P(A∩B)＝P(A)×$\frac{P(A\cap B)}{P(A)}$＝P(A)P(B | A)。 (E) ×：若P(A∪B)＝P(A)＋P(B)，則P(A∩B)＝0 即A∩B＝$\emptyset$，此時A與B為互斥事件。 故選(A)(D)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T06
+      name: 條件機率性質與集合運算判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s1_2
   section: 1
   number: 2
@@ -72,11 +84,21 @@ questions:
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: (A) ×：若A∩B＝$\emptyset$，A≠$\emptyset$，B≠$\emptyset$，則P(A∩B)＝0≠P(A)P(B)
-    此時A , B兩事件不獨立。 (B) ×：P(A | B)＝P(B | A)$\Rightarrow \frac{P(A\cap B)}{P(B)}=\frac{P(A\cap
-    B)}{P(A)}\Rightarrow$P(A)＝P(B) A , B兩事件不一定獨立。 (C) ×：P(A∩B)＝P(A)×$\frac{P(A\cap
-    B)}{P(A)}$＝P(A)P(B | A) A , B兩事件不一定獨立。 (D) ○：若P(A∩B)＝P(A)P(B)，則A , B兩事件必獨立。 (E)
-    ○：若P(B | A)＝P(B)，則A , B兩事件獨立。 故選(D)(E)。
+  explanation: (A) ×：若A∩B＝$\emptyset$，A≠$\emptyset$，B≠$\emptyset$，則P(A∩B)＝0≠P(A)P(B) 此時A , B兩事件不獨立。 (B) ×：P(A | B)＝P(B | A)$\Rightarrow \frac{P(A\cap B)}{P(B)}=\frac{P(A\cap B)}{P(A)}\Rightarrow$P(A)＝P(B) A , B兩事件不一定獨立。 (C) ×：P(A∩B)＝P(A)×$\frac{P(A\cap B)}{P(A)}$＝P(A)P(B | A) A , B兩事件不一定獨立。 (D) ○：若P(A∩B)＝P(A)P(B)，則A , B兩事件必獨立。 (E) ○：若P(B | A)＝P(B)，則A , B兩事件獨立。 故選(D)(E)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T02
+      name: 獨立事件判別與乘積機率計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s1_3
   section: 1
   number: 3
@@ -100,6 +122,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: (A) ○。 (B) ×：該機率為客觀機率。 (C) ×：不一定。 (D) ×：命中率不能超過1。 (E) ○。 故選(A)(E)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T15
+      name: 主觀機率與客觀機率判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s1_4
   section: 1
   number: 4
@@ -122,21 +158,45 @@ questions:
   - D
   answer_status: verified
   answer_source: answer_key
-  explanation: (A) ○：5次的正面的機率＝($\frac{1}{2}$)$^{5}$＝$\frac{1}{32}$。 (B) ×：恰3次正面的機率＝$C_{3}^{5}(\frac{1}{2})^{3}(\frac{1}{2})^{2}=\frac{10}{32}=\frac{5}{16}$。
-    (C) ×：機率為$(\frac{1}{2})^{3}(\frac{1}{2})^{2}=\frac{1}{32}$。 (D) ○：機率為$C_{2}^{4}(\frac{1}{2})^{2}(\frac{1}{2})^{2}(\frac{1}{2})=\frac{C_{2}^{4}}{2^{5}}$。
-    (E) ×：機率為$\frac{(\frac{1}{2})^{4}\times \frac{1}{2}}{(\frac{1}{2})^{4}}=\frac{1}{2}$。
-    故選(A)(D)。
+  explanation: (A) ○：5次的正面的機率＝($\frac{1}{2}$)$^{5}$＝$\frac{1}{32}$。 (B) ×：恰3次正面的機率＝$C_{3}^{5}(\frac{1}{2})^{3}(\frac{1}{2})^{2}=\frac{10}{32}=\frac{5}{16}$。 (C) ×：機率為$(\frac{1}{2})^{3}(\frac{1}{2})^{2}=\frac{1}{32}$。 (D) ○：機率為$C_{2}^{4}(\frac{1}{2})^{2}(\frac{1}{2})^{2}(\frac{1}{2})=\frac{C_{2}^{4}}{2^{5}}$。 (E) ×：機率為$\frac{(\frac{1}{2})^{4}\times \frac{1}{2}}{(\frac{1}{2})^{4}}=\frac{1}{2}$。 故選(A)(D)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T12
+      name: 獨立重複試驗與比賽勝率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 已知二年18班共有35人，第四次期中考英文及格有15人、數學及格有12人，兩科都及格有7人。若從班上任選一學生，試問： (1)此學生至少有一科及格的機率；
-    (2)已知此學生英文及格，求他數學也及格的機率； (3)已知此學生數學不及格，求他英文也不及格的機率。
+  stem: 已知二年18班共有35人，第四次期中考英文及格有15人、數學及格有12人，兩科都及格有7人。若從班上任選一學生，試問： (1)此學生至少有一科及格的機率； (2)已知此學生英文及格，求他數學也及格的機率； (3)已知此學生數學不及格，求他英文也不及格的機率。
   answer:
   - (1) $\frac{4}{7}$；(2) $\frac{7}{15}$；(3) $\frac{15}{23}$
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T01
+      name: 條件機率定義與樣本空間縮減
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s2_2
   section: 2
   number: 2
@@ -147,10 +207,21 @@ questions:
   - (1) $\frac{5}{24}$；(2) $\frac{16}{21}$
   answer_status: verified
   answer_source: answer_key
-  explanation: (1) 所求機率＝$\frac{5}{24}$。 (2) 所求機率＝$\frac{\frac{19}{24}\times \frac{18}{23}\times
-    \frac{17}{22}\times \frac{16}{21}\times \frac{15}{20}+\frac{19}{24}\times \frac{18}{23}\times
-    \frac{17}{22}\times \frac{5}{21}\times \frac{16}{20}}{\frac{19}{24}\times \frac{18}{23}\times
-    \frac{17}{22}}=\frac{16}{21}\times \frac{15}{20}+\frac{5}{21}\times \frac{16}{20}=\frac{320}{420}=\frac{16}{21}$。
+  explanation: (1) 所求機率＝$\frac{5}{24}$。 (2) 所求機率＝$\frac{\frac{19}{24}\times \frac{18}{23}\times \frac{17}{22}\times \frac{16}{21}\times \frac{15}{20}+\frac{19}{24}\times \frac{18}{23}\times \frac{17}{22}\times \frac{5}{21}\times \frac{16}{20}}{\frac{19}{24}\times \frac{18}{23}\times \frac{17}{22}}=\frac{16}{21}\times \frac{15}{20}+\frac{5}{21}\times \frac{16}{20}=\frac{320}{420}=\frac{16}{21}$。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T13
+      name: 不放回抽樣與抽籤順序機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s2_3
   section: 2
   number: 3
@@ -161,8 +232,21 @@ questions:
   - (1) $\frac{19}{50}$；(2) $\frac{7}{19}$
   answer_status: verified
   answer_source: answer_key
-  explanation: 設A , B分別表示解出數學問題的事件 (1) 所求機率＝P(A∩B')＋P(A'∩B)＝P(A)P(B')＋P(A')P(B)＝0.2×0.7＋0.8×0.3＝0.38＝$\frac{38}{100}=\frac{19}{50}$。
-    (2) 所求機率＝$\frac{0.2\times 0.7}{\frac{19}{50}}=\frac{\frac{7}{50}}{\frac{19}{50}}=\frac{7}{19}$。
+  explanation: 設A , B分別表示解出數學問題的事件 (1) 所求機率＝P(A∩B')＋P(A'∩B)＝P(A)P(B')＋P(A')P(B)＝0.2×0.7＋0.8×0.3＝0.38＝$\frac{38}{100}=\frac{19}{50}$。 (2) 所求機率＝$\frac{0.2\times 0.7}{\frac{19}{50}}=\frac{\frac{7}{50}}{\frac{19}{50}}=\frac{7}{19}$。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T11
+      name: 獨立事件性質與乘法公式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s2_4
   section: 2
   number: 4
@@ -175,29 +259,46 @@ questions:
     (2) A、B為獨立事件；
 
     (3) P(A | B)＝$\frac{1}{4}$'
-  explanation: (1) A∩B＝$\emptyset \Rightarrow$P(A∩B)＝0 P(A∪B)＝P(A)＋P(B)－P(A∩B) $\Rightarrow
-    \frac{4}{5}=\frac{3}{4}$＋P(B)－0，故P(B)＝$\frac{4}{5}-\frac{3}{4}=\frac{1}{20}$。
-    (2) P(A∩B)＝P(A)P(B) P(A∪B)＝P(A)＋P(B)－P(A∩B)＝P(A)＋P(B)－P(A)P(B) $\Rightarrow \frac{4}{5}=\frac{3}{4}$＋P(B)－$\frac{3}{4}$P(B)
-    $\Rightarrow \frac{1}{4}$P(B)＝$\frac{1}{20}$，故P(B)＝$\frac{1}{5}$。 (3) P(A | B)＝$\frac{1}{4}\Rightarrow
-    \frac{P(A\cap B)}{P(B)}=\frac{1}{4}\Rightarrow$P(A∩B)＝$\frac{1}{4}$P(B) P(A∪B)＝P(A)＋P(B)－P(A∩B)＝P(A)＋P(B)－$\frac{1}{4}$P(B)
-    $\Rightarrow \frac{4}{5}=\frac{1}{4}$＋P(B)－$\frac{1}{4}$P(B) $\Rightarrow \frac{3}{4}$P(B)＝$\frac{1}{20}$，故P(B)＝$\frac{1}{15}$。
+  explanation: (1) A∩B＝$\emptyset \Rightarrow$P(A∩B)＝0 P(A∪B)＝P(A)＋P(B)－P(A∩B) $\Rightarrow \frac{4}{5}=\frac{3}{4}$＋P(B)－0，故P(B)＝$\frac{4}{5}-\frac{3}{4}=\frac{1}{20}$。 (2) P(A∩B)＝P(A)P(B) P(A∪B)＝P(A)＋P(B)－P(A∩B)＝P(A)＋P(B)－P(A)P(B) $\Rightarrow \frac{4}{5}=\frac{3}{4}$＋P(B)－$\frac{3}{4}$P(B) $\Rightarrow \frac{1}{4}$P(B)＝$\frac{1}{20}$，故P(B)＝$\frac{1}{5}$。 (3) P(A | B)＝$\frac{1}{4}\Rightarrow \frac{P(A\cap B)}{P(B)}=\frac{1}{4}\Rightarrow$P(A∩B)＝$\frac{1}{4}$P(B) P(A∪B)＝P(A)＋P(B)－P(A∩B)＝P(A)＋P(B)－$\frac{1}{4}$P(B) $\Rightarrow \frac{4}{5}=\frac{1}{4}$＋P(B)－$\frac{1}{4}$P(B) $\Rightarrow \frac{3}{4}$P(B)＝$\frac{1}{20}$，故P(B)＝$\frac{1}{15}$。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T09
+      name: 條件機率定義與集合運算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s2_5
   section: 2
   number: 5
   type: fill
   page: 1
-  stem: 已知某飛彈每枚擊中目標的機率為75％，且每枚飛彈擊中目標與否為獨立事件。 (1)若同時發射3枚飛彈，求擊中目標（即至少中1枚）的機率； (2)若已知擊中目標，求3枚均擊中的機率；
-    (3)請問至少要同時發射多少枚飛彈，才能使擊中目標的機率不低於99.99％？
+  stem: 已知某飛彈每枚擊中目標的機率為75％，且每枚飛彈擊中目標與否為獨立事件。 (1)若同時發射3枚飛彈，求擊中目標（即至少中1枚）的機率； (2)若已知擊中目標，求3枚均擊中的機率； (3)請問至少要同時發射多少枚飛彈，才能使擊中目標的機率不低於99.99％？
   answer:
   - (1) $\frac{63}{64}$；(2) $\frac{3}{7}$；(3) 7
   answer_status: verified
   answer_source: answer_key
-  explanation: (1) 所求機率＝1－P(三枚皆不中)＝1－($\frac{1}{4}$)$^{3}$＝$\frac{63}{64}$。 (2) 所求機率＝$\frac{\frac{3}{4}\times
-    \frac{3}{4}\times \frac{3}{4}}{\frac{63}{64}}=\frac{27}{63}=\frac{3}{7}$。 (3)
-    設同時發射n枚飛彈， 依題意知1－$\left[ (1-\frac{3}{4})^{n} \right]$ ≥ 99.99％ $\Rightarrow (\frac{1}{4})^{n}$
-    ≤ 0.0001$\Rightarrow (\frac{1}{4})^{n}$ ≤ $\frac{1}{10000}$ 當n＝6時，$(\frac{1}{4})^{6}=(\frac{1}{2})^{12}=\frac{1}{4096}$＞$\frac{1}{10000}$
-    當n＝7時，$(\frac{1}{4})^{7}=(\frac{1}{2})^{14}=\frac{1}{16384}$＜$\frac{1}{10000}$
-    故至少要同時發射7枚飛彈。
+  explanation: (1) 所求機率＝1－P(三枚皆不中)＝1－($\frac{1}{4}$)$^{3}$＝$\frac{63}{64}$。 (2) 所求機率＝$\frac{\frac{3}{4}\times \frac{3}{4}\times \frac{3}{4}}{\frac{63}{64}}=\frac{27}{63}=\frac{3}{7}$。 (3) 設同時發射n枚飛彈， 依題意知1－$\left[ (1-\frac{3}{4})^{n} \right]$ ≥ 99.99％ $\Rightarrow (\frac{1}{4})^{n}$ ≤ 0.0001$\Rightarrow (\frac{1}{4})^{n}$ ≤ $\frac{1}{10000}$ 當n＝6時，$(\frac{1}{4})^{6}=(\frac{1}{2})^{12}=\frac{1}{4096}$＞$\frac{1}{10000}$ 當n＝7時，$(\frac{1}{4})^{7}=(\frac{1}{2})^{14}=\frac{1}{16384}$＜$\frac{1}{10000}$ 故至少要同時發射7枚飛彈。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T12
+      name: 獨立重複試驗與比賽勝率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s2_6
   section: 2
   number: 6
@@ -208,6 +309,20 @@ questions:
   - '5880'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T07
+      name: 多階段試驗樹狀圖與機率分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s2_7
   section: 2
   number: 7
@@ -218,19 +333,45 @@ questions:
   - '1176'
   answer_status: verified
   answer_source: answer_key
-  explanation: 期望值＝1000×$\frac{3}{5}$×$\frac{2}{5}$＋2000×$\frac{3}{5}$×$\frac{3}{5}$×$\frac{2}{5}$＋3000×$\frac{3}{5}$×$\frac{3}{5}$×$\frac{3}{5}$
-    ＝240＋288＋648＝1176 (元)。
+  explanation: 期望值＝1000×$\frac{3}{5}$×$\frac{2}{5}$＋2000×$\frac{3}{5}$×$\frac{3}{5}$×$\frac{2}{5}$＋3000×$\frac{3}{5}$×$\frac{3}{5}$×$\frac{3}{5}$ ＝240＋288＋648＝1176 (元)。
+  tags:
+    unit:
+      code: MA-B4-2-1
+      book: 數學4B
+      chapter: 機率
+      title: 條件機率
+      std: true
+    textbook: 數學4B 條件機率
+    pattern:
+      key: MA-B4-2-1:T07
+      name: 多階段試驗樹狀圖與機率分配
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 甲袋有3個黑球、2個白球；乙袋有4個黑球、2個白球；丙袋有3個黑球、1個白球。今擲一顆公正的骰子，若擲出1、2、3點，則從甲袋取2球；若擲出4、5點，則從乙袋取2球；若擲出6點，則從丙袋取2球。已知每球被取到的機率均相同，
-    (1)若從甲袋取2球，求2球均為黑球的機率； (2)在取出2球均為黑球的條件下，求此2球來自甲袋的機率。
+  stem: 甲袋有3個黑球、2個白球；乙袋有4個黑球、2個白球；丙袋有3個黑球、1個白球。今擲一顆公正的骰子，若擲出1、2、3點，則從甲袋取2球；若擲出4、5點，則從乙袋取2球；若擲出6點，則從丙袋取2球。已知每球被取到的機率均相同， (1)若從甲袋取2球，求2球均為黑球的機率； (2)在取出2球均為黑球的條件下，求此2球來自甲袋的機率。
   answer:
   - (1) $\frac{3}{10}$；(2) $\frac{9}{22}$
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T07
+      name: 抽袋取球與兩階段貝氏機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s2_9
   section: 2
   number: 9
@@ -241,13 +382,26 @@ questions:
   - '30'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T04
+      name: 貝氏定理與醫學篩檢誤判反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數B_g11s2e2_s3_1
   section: 3
   number: 1
   type: calc
   page: 2
-  stem: 根據統計：某地區有5％的人罹患某肺炎，且患者經篩檢後呈現陽性機率為99％；未患此病的人經篩檢後呈現陰性的機率為99.6％。若計劃針對此區共10000人進行普篩，則：
-    (1)依據以上資料，完成底下的列聯表；（每格0.5分，共4分） (2)若從此地區任選一人，已知檢驗結果呈陽性，但此人實際上無病之機率；（2分） (3)若從此地區任選一人，求此人的檢驗結果呈陰性但實際上有病之機率。（2分）
+  stem: 根據統計：某地區有5％的人罹患某肺炎，且患者經篩檢後呈現陽性機率為99％；未患此病的人經篩檢後呈現陰性的機率為99.6％。若計劃針對此區共10000人進行普篩，則： (1)依據以上資料，完成底下的列聯表；（每格0.5分，共4分） (2)若從此地區任選一人，已知檢驗結果呈陽性，但此人實際上無病之機率；（2分） (3)若從此地區任選一人，求此人的檢驗結果呈陰性但實際上有病之機率。（2分）
   assets:
   - key: s3_1_f1
     kind: figure
@@ -259,3 +413,17 @@ questions:
       - 277.45
       - 233.8
       - 352.75
+  tags:
+    unit:
+      code: MA-B4-2-2
+      book: 數學4B
+      chapter: 機率
+      title: 貝氏定理
+      std: true
+    textbook: 數學4B 貝氏定理
+    pattern:
+      key: MA-B4-2-2:T02
+      name: 檢驗誤判率與篩檢準確率分析
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2

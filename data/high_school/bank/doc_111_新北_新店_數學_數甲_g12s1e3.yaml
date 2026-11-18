@@ -27,8 +27,7 @@ questions:
   number: 1
   type: single
   page: 1
-  stem: 已知坐標平面上四點 O（0，0），P（1，0），Q（1，1），R（0，1）。多項式函數 f（x）與 g（x）在區間 [ 0，1 ] 上的圖形將正方形
-    OPQR 分成 A，B，C 三區域，如圖所示。設 A、B、C 三區域的面積分別為 a、b、c，試問下列選項哪個<u>不正確</u>？
+  stem: 已知坐標平面上四點 O（0，0），P（1，0），Q（1，1），R（0，1）。多項式函數 f（x）與 g（x）在區間 [ 0，1 ] 上的圖形將正方形 OPQR 分成 A，B，C 三區域，如圖所示。設 A、B、C 三區域的面積分別為 a、b、c，試問下列選項哪個<u>不正確</u>？
   options:
   - label: A
     content: a＝$\int_{0}^{1} f ( x )dx$
@@ -63,6 +62,20 @@ questions:
       - 369.35
       - 564.3
       - 446.15
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T05
+      name: 定積分求曲線圍成面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s1_2
   section: 1
   number: 2
@@ -91,6 +104,21 @@ questions:
     (D)○
 
     故選(B)'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T10
+      name: 定積分幾何意義與基本性質判別
+    labeled_by: agent
+    label_confidence: high
+    label_note: 缺圖（題幹「圖形如右」但未附圖，無法從題面判讀各區域正負與區間）
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s1_3
   section: 1
   number: 3
@@ -161,6 +189,20 @@ questions:
     (D)○
 
     故選(C)'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T10
+      name: 定積分幾何意義與基本性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s1_4
   section: 1
   number: 4
@@ -171,8 +213,7 @@ questions:
   - label: A
     content: 函數 f（x）的圖形與 x 軸及直線 x＝a，x＝b 所圍成的區域面積為$\int_{a}^{b} f ( x )dx$
   - label: B
-    content: 若 a＜c＜b，則$\int_{a}^{b} f ( x )dx$＝$\int_{a}^{c} f ( x )dx$＋$\int_{c}^{b}
-      f ( x )dx$
+    content: 若 a＜c＜b，則$\int_{a}^{b} f ( x )dx$＝$\int_{a}^{c} f ( x )dx$＋$\int_{c}^{b} f ( x )dx$
   - label: C
     content: $\int_{a}^{a} f ( x )dx$＝0
   - label: D
@@ -190,13 +231,26 @@ questions:
     (D)○
 
     故選(A)'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T10
+      name: 定積分幾何意義與基本性質判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s1_5
   section: 1
   number: 5
   type: single
   page: 2
-  stem: 已知函數 f（x）在區間 [ a，b ] 內為連續且值均為正數，考慮函數 f（x）對於 [ a，b ] 的 n 等分分割之上和與下和依序為 $U_{n}$
-    與 $L_{n}$，則下列何者正確？
+  stem: 已知函數 f（x）在區間 [ a，b ] 內為連續且值均為正數，考慮函數 f（x）對於 [ a，b ] 的 n 等分分割之上和與下和依序為 $U_{n}$ 與 $L_{n}$，則下列何者正確？
   options:
   - label: A
     content: $\lim_{n \rightarrow \infty} U_{n} > \lim_{n \rightarrow \infty} L_{n}$
@@ -205,18 +259,30 @@ questions:
   - label: C
     content: 對於任意正整數 n，$U_{n}$＝$L_{n}$ 必成立
   - label: D
-    content: 設 R 為曲線 y＝f（x）與直線 x＝a，x＝b，y＝0 所圍成的區域，則 R 的面積為$\int_{a}^{b} f ( x )dx$＝$\lim_{n
-      \rightarrow \infty} L_{n}$
+    content: 設 R 為曲線 y＝f（x）與直線 x＝a，x＝b，y＝0 所圍成的區域，則 R 的面積為$\int_{a}^{b} f ( x )dx$＝$\lim_{n \rightarrow \infty} L_{n}$
   answer:
   - D
   answer_status: verified
   answer_source: answer_key
   explanation: '(D)○：∵f（x）在區間 [ a，b ]內為連續且值均為正數
 
-    ∴R 的面積為$\int_{a}^{b} | f ( x ) |dx$＝$\int_{a}^{b} f ( x )dx$＝$\lim_{n \rightarrow
-    \infty} L_{n}$
+    ∴R 的面積為$\int_{a}^{b} | f ( x ) |dx$＝$\int_{a}^{b} f ( x )dx$＝$\lim_{n \rightarrow \infty} L_{n}$
 
     故選(D)'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s2_1
   section: 2
   number: 1
@@ -235,6 +301,20 @@ questions:
   - (1) 1；(2) 0；(3) 2；(4) 0
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T03
+      name: 分段與絕對值函數定積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s2_2
   section: 2
   number: 2
@@ -256,19 +336,45 @@ questions:
     故反曲點為（－1，F（－1））＝（－1，7）
 
     ∴7h＋k＝7（－1）＋7＝0'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T09
+      name: 反導函數與不定積分計算
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s2_3
   section: 2
   number: 3
   type: fill
   page: 2
-  stem: 設函數 f（x）在閉區間[0，2]分成 n 等分後，所得到的上和為 $U_{n}$＝$\frac{7n^{2}+ 3n + 1}{n^{2}}$，下和為
-    $L_{n}$＝$\frac{7n^{2}- 3n + 1}{n^{2}}$，試求$\int_{0}^{2} f ( x )dx$＝＿＿＿＿。
+  stem: 設函數 f（x）在閉區間[0，2]分成 n 等分後，所得到的上和為 $U_{n}$＝$\frac{7n^{2}+ 3n + 1}{n^{2}}$，下和為 $L_{n}$＝$\frac{7n^{2}- 3n + 1}{n^{2}}$，試求$\int_{0}^{2} f ( x )dx$＝＿＿＿＿。
   answer:
   - '7'
   answer_status: verified
   answer_source: answer_key
-  explanation: $\lim_{n \rightarrow \infty} U_{n}$＝$\lim_{n \rightarrow \infty} L_{n}$＝7
-    ∴$\int_{0}^{2} f ( x )dx$＝7
+  explanation: $\lim_{n \rightarrow \infty} U_{n}$＝$\lim_{n \rightarrow \infty} L_{n}$＝7 ∴$\int_{0}^{2} f ( x )dx$＝7
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T01
+      name: 黎曼和與上下和極限計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s2_4
   section: 2
   number: 4
@@ -279,10 +385,23 @@ questions:
   - '3'
   answer_status: verified
   answer_source: answer_key
-  explanation: '$\int_{a}^{x} f ( t )dt$＝$x^{2}$－3x－4$\Rightarrow( \int_{a}^{x} f
-    ( t )dt ) ''$＝（$x^{2}$－3x－4）''
+  explanation: '$\int_{a}^{x} f ( t )dt$＝$x^{2}$－3x－4$\Rightarrow( \int_{a}^{x} f ( t )dt ) ''$＝（$x^{2}$－3x－4）''
 
     $\Rightarrow$f（x）＝2x－3 ∴f(3)＝3'
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T04
+      name: 微積分基本定理微分應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s2_5
   section: 2
   number: 5
@@ -293,24 +412,50 @@ questions:
   - '9'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T05
+      name: 定積分求曲線圍成面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 在空間中，設 S 為平面 6x＋3y＋2z＝6 與三個坐標平面圍成一個錐體，已知通過點（x，0，0）且垂直 x 軸的平面與 S 所截出的圖形為直角三角形，其面積
-    A（x）＝a（1－x）$^{b}$，則 S 的體積為$\int_{0}^{c} A ( x )dx$＝V，試問 a－b－c＋V＝＿＿＿＿。
+  stem: 在空間中，設 S 為平面 6x＋3y＋2z＝6 與三個坐標平面圍成一個錐體，已知通過點（x，0，0）且垂直 x 軸的平面與 S 所截出的圖形為直角三角形，其面積 A（x）＝a（1－x）$^{b}$，則 S 的體積為$\int_{0}^{c} A ( x )dx$＝V，試問 a－b－c＋V＝＿＿＿＿。
   answer:
   - '1'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T07
+      name: 旋轉體與截面立體體積積分
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s2_7
   section: 2
   number: 7
   type: fill
   page: 3
-  stem: 如右圖，$R_{1}$ 與 $R_{2}$ 是函數 f（x）＝－$x^{2}$＋ax（0＜a＜3）的圖形與 x 軸、 x＝3 所圍成的兩個區域。已知
-    $R_{1}$ 與 $R_{2}$ 的面積相同，則 a＝＿＿＿＿。
+  stem: 如右圖，$R_{1}$ 與 $R_{2}$ 是函數 f（x）＝－$x^{2}$＋ax（0＜a＜3）的圖形與 x 軸、 x＝3 所圍成的兩個區域。已知 $R_{1}$ 與 $R_{2}$ 的面積相同，則 a＝＿＿＿＿。
   assets:
   - key: s2_7_f1
     kind: figure
@@ -326,14 +471,41 @@ questions:
   - '2'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T05
+      name: 定積分求曲線圍成面積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數甲_g12s1e3_s2_8
   section: 2
   number: 8
   type: fill
   page: 3
-  stem: 數學阿罵做了一個蛋糕模具，以函數 f（x）＝$-\sqrt{5} ( x^{2}- 3 )$為一邊設計，將 f（x）與 x 軸、x＝1 及 x＝2
-    所圍成的區域 R 繞 x 軸旋轉後，即可形成蛋糕模型。在不計模具厚度下，將此模型所做出的蛋糕等分為三塊給孫子，每個孫子可吃到的蛋糕體積為 aπ，則 a＝＿＿＿＿。
+  stem: 數學阿罵做了一個蛋糕模具，以函數 f（x）＝$-\sqrt{5} ( x^{2}- 3 )$為一邊設計，將 f（x）與 x 軸、x＝1 及 x＝2 所圍成的區域 R 繞 x 軸旋轉後，即可形成蛋糕模型。在不計模具厚度下，將此模型所做出的蛋糕等分為三塊給孫子，每個孫子可吃到的蛋糕體積為 aπ，則 a＝＿＿＿＿。
   answer:
   - '2'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-3-1
+      book: 選修數學甲（上）
+      chapter: 積分
+      title: 積分
+      std: true
+    textbook: 選修數學甲（上） 積分
+    pattern:
+      key: MA-J1-3-1:T06
+      name: 定積分求旋轉體體積
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

@@ -38,16 +38,27 @@ questions:
   - label: D
     content: 若事件A＝全事件S，則A與B為獨立事件
   - label: E
-    content: 設$A_{1}$ , $A_{2}$ , $A_{3}$為樣本空間S的三個非零事件，若$A_{1}$∩$A_{2}$＝$A_{2}$∩$A_{3}$＝$A_{1}$∩$A_{3}$＝$\emptyset$，則{$A_{1}$
-      , $A_{2}$ , $A_{3}$}為S的一組分割
+    content: 設$A_{1}$ , $A_{2}$ , $A_{3}$為樣本空間S的三個非零事件，若$A_{1}$∩$A_{2}$＝$A_{2}$∩$A_{3}$＝$A_{1}$∩$A_{3}$＝$\emptyset$，則{$A_{1}$ , $A_{2}$ , $A_{3}$}為S的一組分割
   answer:
   - B
   - D
   answer_status: verified
   answer_source: answer_key
-  explanation: (A) ×：當A , B兩事件相依時，則P (A∩B) ≠ P (A) P (B)。 (B) ○。 (C) ×：若A∩B＝$\emptyset$，且P
-    (A)＞0，P (B)＞0，則A , B為相依事件。 (D) ○：P (S∩B)＝P (B)＝P (S) P (B)，故A與B為獨立事件。 (E) ×：尚須一條件$A_{1}$∪$A_{2}$∪$A_{3}$＝樣本空間。
-    故選(B)(D)。
+  explanation: (A) ×：當A , B兩事件相依時，則P (A∩B) ≠ P (A) P (B)。 (B) ○。 (C) ×：若A∩B＝$\emptyset$，且P (A)＞0，P (B)＞0，則A , B為相依事件。 (D) ○：P (S∩B)＝P (B)＝P (S) P (B)，故A與B為獨立事件。 (E) ×：尚須一條件$A_{1}$∪$A_{2}$∪$A_{3}$＝樣本空間。 故選(B)(D)。
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s1_2
   section: 1
   number: 2
@@ -71,20 +82,21 @@ questions:
   - E
   answer_status: verified
   answer_source: answer_key
-  explanation: (A) ○：AB與BA皆有意義，故A , B分別為m×n與n×m矩陣， 又AB＝BA，故m＝n，所以A , B都是方陣。 (B) ×：舉反例，設A＝$\left[
-    \begin{matrix}2 & 2 \\ 1 & 1\end{matrix} \right]$，B＝$\left[ \begin{matrix}2 &
-    2 \\ 1 & 0\end{matrix} \right]$，C＝$\left[ \begin{matrix}0 & 1 \\ 3 & 1\end{matrix}
-    \right]$， 則AB＝$\left[ \begin{matrix}2 & 2 \\ 1 & 1\end{matrix} \right]\left[ \begin{matrix}2
-    & 2 \\ 1 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}6 & 4 \\ 3 & 2\end{matrix}
-    \right]$，AC＝$\left[ \begin{matrix}2 & 2 \\ 1 & 1\end{matrix} \right]\left[ \begin{matrix}0
-    & 1 \\ 3 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}6 & 4 \\ 3 & 2\end{matrix}
-    \right]$， 故AB＝AC且A≠O，但B≠C。 (C) ○：$A^{2}$＝I$\Rightarrow$AA＝I，故A為A的反方陣，即$A^{－1}$＝A。
-    (D) ×：舉反例，設A＝$\left[ \begin{matrix}0 & 1 \\ 0 & 0\end{matrix} \right]$，B＝$\left[
-    \begin{matrix}1 & 0 \\ 0 & 0\end{matrix} \right]$，則A≠O，但B≠O， 但AB＝$\left[ \begin{matrix}0
-    & 1 \\ 0 & 0\end{matrix} \right]\left[ \begin{matrix}1 & 0 \\ 0 & 0\end{matrix}
-    \right]$＝$\left[ \begin{matrix}0 & 0 \\ 0 & 0\end{matrix} \right]$＝O。 (E) ○：(A－B)$^{2}$＝(A－B)(A－B)＝$A^{2}$－AB－BA＋$B^{2}$，
-    若(A－B)$^{2}$＝$A^{2}$－2AB＋$B^{2}$， 則$A^{2}$－AB－BA＋$B^{2}$＝$A^{2}$－2AB＋$B^{2}\Rightarrow$BA＝AB。
-    故選(A)(C)(E)。
+  explanation: (A) ○：AB與BA皆有意義，故A , B分別為m×n與n×m矩陣， 又AB＝BA，故m＝n，所以A , B都是方陣。 (B) ×：舉反例，設A＝$\left[ \begin{matrix}2 & 2 \\ 1 & 1\end{matrix} \right]$，B＝$\left[ \begin{matrix}2 & 2 \\ 1 & 0\end{matrix} \right]$，C＝$\left[ \begin{matrix}0 & 1 \\ 3 & 1\end{matrix} \right]$， 則AB＝$\left[ \begin{matrix}2 & 2 \\ 1 & 1\end{matrix} \right]\left[ \begin{matrix}2 & 2 \\ 1 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}6 & 4 \\ 3 & 2\end{matrix} \right]$，AC＝$\left[ \begin{matrix}2 & 2 \\ 1 & 1\end{matrix} \right]\left[ \begin{matrix}0 & 1 \\ 3 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}6 & 4 \\ 3 & 2\end{matrix} \right]$， 故AB＝AC且A≠O，但B≠C。 (C) ○：$A^{2}$＝I$\Rightarrow$AA＝I，故A為A的反方陣，即$A^{－1}$＝A。 (D) ×：舉反例，設A＝$\left[ \begin{matrix}0 & 1 \\ 0 & 0\end{matrix} \right]$，B＝$\left[ \begin{matrix}1 & 0 \\ 0 & 0\end{matrix} \right]$，則A≠O，但B≠O， 但AB＝$\left[ \begin{matrix}0 & 1 \\ 0 & 0\end{matrix} \right]\left[ \begin{matrix}1 & 0 \\ 0 & 0\end{matrix} \right]$＝$\left[ \begin{matrix}0 & 0 \\ 0 & 0\end{matrix} \right]$＝O。 (E) ○：(A－B)$^{2}$＝(A－B)(A－B)＝$A^{2}$－AB－BA＋$B^{2}$， 若(A－B)$^{2}$＝$A^{2}$－2AB＋$B^{2}$， 則$A^{2}$－AB－BA＋$B^{2}$＝$A^{2}$－2AB＋$B^{2}\Rightarrow$BA＝AB。 故選(A)(C)(E)。
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T06
+      name: 矩陣乘法代數性質與交換律判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s1_3
   section: 1
   number: 3
@@ -97,47 +109,57 @@ questions:
   - label: B
     content: $\left[ \begin{matrix}1 & 0 \\ 3 & 1\end{matrix} \right]$是一種水平推移矩陣
   - label: C
-    content: $\left[ \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{-1}{\sqrt{2}}
-      & \frac{1}{\sqrt{2}}\end{matrix} \right]$是以O為中心的旋轉矩陣
+    content: $\left[ \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{-1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\end{matrix} \right]$是以O為中心的旋轉矩陣
   - label: D
-    content: 設$A=\left[ \begin{matrix}\cos 72^{\circ} & -\sin 72^{\circ} \\ \sin 72^{\circ}
-      & \cos 72^{\circ}\end{matrix} \right]$，則$A^{5}$＝I
+    content: 設$A=\left[ \begin{matrix}\cos 72^{\circ} & -\sin 72^{\circ} \\ \sin 72^{\circ} & \cos 72^{\circ}\end{matrix} \right]$，則$A^{5}$＝I
   - label: E
-    content: $\left[ \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}}
-      & \frac{-1}{\sqrt{2}}\end{matrix} \right]$是以y＝x為鏡射軸的鏡射矩陣
+    content: $\left[ \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}}\end{matrix} \right]$是以y＝x為鏡射軸的鏡射矩陣
   answer:
   - A
   - C
   - D
   answer_status: verified
   answer_source: answer_key
-  explanation: (A) ○：3I＝$\left[ \begin{matrix}3 & 0 \\ 0 & 3\end{matrix} \right]$為伸縮方陣。
-    (B) ×：$\left[ \begin{matrix}1 & 0 \\ 3 & 1\end{matrix} \right]$是一種鉛直推移矩陣。 (C)
-    ○：$\left[ \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}}
-    & \frac{1}{\sqrt{2}}\end{matrix} \right]$＝$\left[ \begin{matrix}\cos \frac{7\pi}{4}
-    & -\sin \frac{7\pi}{4} \\ \sin \frac{7\pi}{4} & \cos \frac{7\pi}{4}\end{matrix}
-    \right]$是以O為中心的旋轉矩陣。 (D) ○：$\left[ \begin{matrix}\cos 72^{\circ} & -\sin 72^{\circ}
-    \\ \sin 72^{\circ} & \cos 72^{\circ}\end{matrix} \right] ^{5}$＝$\left[ \begin{matrix}\cos
-    360^{\circ} & -\sin 360^{\circ} \\ \sin 360^{\circ} & \cos 360^{\circ}\end{matrix}
-    \right]$＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$＝I。 (E) ×：$\left[
-    \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} &
-    -\frac{1}{\sqrt{2}}\end{matrix} \right]$＝$\left[ \begin{matrix}\cos (2\times \frac{\pi}{8})
-    & \sin (2\times \frac{\pi}{8}) \\ \sin (2\times \frac{\pi}{8}) & -\cos (2\times
-    \frac{\pi}{8})\end{matrix} \right]$是以y＝x tan$\frac{\pi}{8}$為鏡射軸的鏡射矩陣。 故選(A)(C)(D)。
+  explanation: (A) ○：3I＝$\left[ \begin{matrix}3 & 0 \\ 0 & 3\end{matrix} \right]$為伸縮方陣。 (B) ×：$\left[ \begin{matrix}1 & 0 \\ 3 & 1\end{matrix} \right]$是一種鉛直推移矩陣。 (C) ○：$\left[ \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\end{matrix} \right]$＝$\left[ \begin{matrix}\cos \frac{7\pi}{4} & -\sin \frac{7\pi}{4} \\ \sin \frac{7\pi}{4} & \cos \frac{7\pi}{4}\end{matrix} \right]$是以O為中心的旋轉矩陣。 (D) ○：$\left[ \begin{matrix}\cos 72^{\circ} & -\sin 72^{\circ} \\ \sin 72^{\circ} & \cos 72^{\circ}\end{matrix} \right] ^{5}$＝$\left[ \begin{matrix}\cos 360^{\circ} & -\sin 360^{\circ} \\ \sin 360^{\circ} & \cos 360^{\circ}\end{matrix} \right]$＝$\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$＝I。 (E) ×：$\left[ \begin{matrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}\end{matrix} \right]$＝$\left[ \begin{matrix}\cos (2\times \frac{\pi}{8}) & \sin (2\times \frac{\pi}{8}) \\ \sin (2\times \frac{\pi}{8}) & -\cos (2\times \frac{\pi}{8})\end{matrix} \right]$是以y＝x tan$\frac{\pi}{8}$為鏡射軸的鏡射矩陣。 故選(A)(C)(D)。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T05
+      name: 線性變換複合與伸縮推移
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_1
   section: 2
   number: 1
   type: fill
   page: 1
-  stem: 已知重補修報名狀況如下，全校有$\frac{3}{4}$的人報名英文，$\frac{4}{7}$的人報名數學，$\frac{1}{2}$的人兩科皆報名，今任選1人，則
-    (1) 已知某人有報名數學，則他也有報名英文的機率為＿＿＿＿。 (2) 已知某人<u>沒有</u>報名數學，則他也<u>沒有</u>報名英文的機率為＿＿＿＿。
+  stem: 已知重補修報名狀況如下，全校有$\frac{3}{4}$的人報名英文，$\frac{4}{7}$的人報名數學，$\frac{1}{2}$的人兩科皆報名，今任選1人，則 (1) 已知某人有報名數學，則他也有報名英文的機率為＿＿＿＿。 (2) 已知某人<u>沒有</u>報名數學，則他也<u>沒有</u>報名英文的機率為＿＿＿＿。
   answer:
   - (1) $\frac{7}{8}$；(2) $\frac{5}{12}$
   answer_status: verified
   answer_source: answer_key
-  explanation: (1) 設A , B分別表報名英文、數學的人所成的集合， 則P (A | B)＝$\frac{P(A\cap B)}{P(B)}$＝$\frac{\frac{1}{2}}{\frac{4}{7}}$＝$\frac{7}{8}$。
-    (2) P (A' | B')＝$\frac{P(A'\cap B')}{P(B')}$＝$\frac{P((A\cup B)')}{1-P(B)}$＝$\frac{1-P(A\cup
-    B)}{1-P(B)}$＝$\frac{1-〔P(A)+P(B)-P(A\cap B)〕}{1-P(B)}$＝$\frac{1-(\frac{3}{4}+\frac{4}{7}-\frac{1}{2})}{1-\frac{4}{7}}$＝$\frac{\frac{5}{28}}{\frac{3}{7}}$＝$\frac{5}{12}$。
+  explanation: (1) 設A , B分別表報名英文、數學的人所成的集合， 則P (A | B)＝$\frac{P(A\cap B)}{P(B)}$＝$\frac{\frac{1}{2}}{\frac{4}{7}}$＝$\frac{7}{8}$。 (2) P (A' | B')＝$\frac{P(A'\cap B')}{P(B')}$＝$\frac{P((A\cup B)')}{1-P(B)}$＝$\frac{1-P(A\cup B)}{1-P(B)}$＝$\frac{1-〔P(A)+P(B)-P(A\cap B)〕}{1-P(B)}$＝$\frac{1-(\frac{3}{4}+\frac{4}{7}-\frac{1}{2})}{1-\frac{4}{7}}$＝$\frac{\frac{5}{28}}{\frac{3}{7}}$＝$\frac{5}{12}$。
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T07
+      name: 集合機率公式與列聯表條件機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_2
   section: 2
   number: 2
@@ -148,36 +170,70 @@ questions:
     (1) 若P(A)＝$\frac{2}{3}$，若P(A∪B)＝$\frac{4}{5}$，則P(B)＝＿＿＿＿。
 
     (2) 若P(A)＝$\frac{2}{7}$，若P(A''∪B'')＝$\frac{9}{14}$，則P(B)＝＿＿＿＿'
-  explanation: A , B為獨立事件，故P (A∩B)＝P (A) P (B)。 (1) P (A∪B)＝P (A)＋P (B)－P (A∩B)＝P
-    (A)＋P (B)－P (A) P (B)， 故$\frac{4}{5}$＝$\frac{2}{3}$＋P (B)－$\frac{2}{3}$P (B)$\Rightarrow\frac{1}{3}$P
-    (B)＝$\frac{5}{12}$， 故P (B)＝$\frac{2}{5}$。 (2) P (A'∩B')＝P ((A∪B)')＝1－P (A∪B)＝1－P
-    (A)－P (B)＋P (A∩B)＝1－P (A)－P (B)＋P (A) P (B)， 故$\frac{9}{14}=1-\frac{2}{7}-P(B)+\frac{2}{7}P(B)\Rightarrow
-    \frac{5}{7}P(B)=\frac{1}{14}$，故$P(B)=\frac{1}{10}$。
+  explanation: A , B為獨立事件，故P (A∩B)＝P (A) P (B)。 (1) P (A∪B)＝P (A)＋P (B)－P (A∩B)＝P (A)＋P (B)－P (A) P (B)， 故$\frac{4}{5}$＝$\frac{2}{3}$＋P (B)－$\frac{2}{3}$P (B)$\Rightarrow\frac{1}{3}$P (B)＝$\frac{5}{12}$， 故P (B)＝$\frac{2}{5}$。 (2) P (A'∩B')＝P ((A∪B)')＝1－P (A∪B)＝1－P (A)－P (B)＋P (A∩B)＝1－P (A)－P (B)＋P (A) P (B)， 故$\frac{9}{14}=1-\frac{2}{7}-P(B)+\frac{2}{7}P(B)\Rightarrow \frac{5}{7}P(B)=\frac{1}{14}$，故$P(B)=\frac{1}{10}$。
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T02
+      name: 獨立事件判別與乘積機率
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_3
   section: 2
   number: 3
   type: fill
   page: 1
-  stem: 已知某牌新冠肺炎快篩試劑使用效果如下：90％的新冠肺炎患者快篩後皆呈現陽性反應，而4％的非患者也會呈現陽性反應，若某地區實際感染新冠肺炎患者占人口比例的20％，則：
-    (1) 該地區某位民眾使用快篩試劑檢測後呈現陽性反應的機率為＿＿＿＿。 (2) 若該位民眾檢測結果為陽性反應，但實際上並未染病的機率為＿＿＿＿。
+  stem: 已知某牌新冠肺炎快篩試劑使用效果如下：90％的新冠肺炎患者快篩後皆呈現陽性反應，而4％的非患者也會呈現陽性反應，若某地區實際感染新冠肺炎患者占人口比例的20％，則： (1) 該地區某位民眾使用快篩試劑檢測後呈現陽性反應的機率為＿＿＿＿。 (2) 若該位民眾檢測結果為陽性反應，但實際上並未染病的機率為＿＿＿＿。
   answer:
   - (1) $\frac{53}{250}$；(2) $\frac{8}{53}$
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_4
   section: 2
   number: 4
   type: fill
   page: 1
-  stem: 某大學入學管道依序有三種，前一種管道未獲錄取才能再參加下一種入學管道，已知第一、第二、第三種入學管道的錄取率分別為$\frac{2}{3}$、$\frac{3}{5}$、$\frac{4}{7}$，且每一種入學管道錄取與否互不影響。
-    (1) 某生錄取該大學的機率為＿＿＿＿。 (2) 已知某生錄取該大學，則他是藉由第二種入學管道錄取的機率為＿＿＿＿。
+  stem: 某大學入學管道依序有三種，前一種管道未獲錄取才能再參加下一種入學管道，已知第一、第二、第三種入學管道的錄取率分別為$\frac{2}{3}$、$\frac{3}{5}$、$\frac{4}{7}$，且每一種入學管道錄取與否互不影響。 (1) 某生錄取該大學的機率為＿＿＿＿。 (2) 已知某生錄取該大學，則他是藉由第二種入學管道錄取的機率為＿＿＿＿。
   answer:
   - (1) $\frac{33}{35}$；(2) $\frac{7}{33}$
   answer_status: verified
   answer_source: answer_key
-  explanation: (1) 所求＝$\frac{2}{3}+\frac{1}{3}\times \frac{3}{5}+\frac{1}{3}\times
-    \frac{2}{5}\times \frac{4}{7}=\frac{99}{105}=\frac{33}{35}$。 (2) 所求＝$\frac{\frac{1}{3}\times
-    \frac{3}{5}}{\frac{33}{35}}$＝$\frac{\frac{1}{5}}{\frac{33}{35}}$＝$\frac{7}{33}$。
+  explanation: (1) 所求＝$\frac{2}{3}+\frac{1}{3}\times \frac{3}{5}+\frac{1}{3}\times \frac{2}{5}\times \frac{4}{7}=\frac{99}{105}=\frac{33}{35}$。 (2) 所求＝$\frac{\frac{1}{3}\times \frac{3}{5}}{\frac{33}{35}}$＝$\frac{\frac{1}{5}}{\frac{33}{35}}$＝$\frac{7}{33}$。
+  tags:
+    unit:
+      code: MA-A4-3-1
+      book: 數學4A
+      chapter: 機率
+      title: 條件機率與貝氏定理
+      std: true
+    textbook: 數學4A 條件機率與貝氏定理
+    pattern:
+      key: MA-A4-3-1:T03
+      name: 貝氏定理與檢測準確率反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_5
   section: 2
   number: 5
@@ -188,80 +244,122 @@ questions:
   - '6'
   answer_status: verified
   answer_source: answer_key
-  explanation: △$_{x}$＝$\left| \begin{matrix}-4 & 3 & -14 \\ 14 & -5 & 5 \\ a & -2
-    & 1\end{matrix} \right|$＝0 $\Rightarrow$20＋15a＋392－70a－42－40＝0 $\Rightarrow$－55a＝－330，
-    故a＝6。
+  explanation: △$_{x}$＝$\left| \begin{matrix}-4 & 3 & -14 \\ 14 & -5 & 5 \\ a & -2 & 1\end{matrix} \right|$＝0 $\Rightarrow$20＋15a＋392－70a－42－40＝0 $\Rightarrow$－55a＝－330， 故a＝6。
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T10
+      name: 行列式與克拉瑪判別方程組解
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_6
   section: 2
   number: 6
   type: fill
   page: 2
-  stem: 增廣矩陣$\left[ \begin{matrix}a & 3 & -2 & 8 \\ 2 & b & 1 & 12 \\ 1 & -1 & c &
-    7\end{matrix} \right]$經過數次列運算後得到$\left[ \begin{matrix}1 & -1 & 1 & 7 \\ 0 & 1
-    & -1 & -2 \\ 0 & 0 & 1 & 4\end{matrix} \right]$，則 ( a , b , c,)＝＿＿＿＿。
+  stem: 增廣矩陣$\left[ \begin{matrix}a & 3 & -2 & 8 \\ 2 & b & 1 & 12 \\ 1 & -1 & c & 7\end{matrix} \right]$經過數次列運算後得到$\left[ \begin{matrix}1 & -1 & 1 & 7 \\ 0 & 1 & -1 & -2 \\ 0 & 0 & 1 & 4\end{matrix} \right]$，則 ( a , b , c,)＝＿＿＿＿。
   answer:
   - ( 2 ,－1 , 1 )
   answer_status: verified
   answer_source: answer_key
-  explanation: $\begin{cases}x-y+z=7 \\ y-z=-2 \\ z=4\end{cases}$，得x＝5，y＝2，z＝4， 代入$\begin{cases}ax+3y-2z=8
-    \\ 2x+by+z=12 \\ x-y+cz=7\end{cases}$，得$\begin{cases}5a+6-8=8 \\ 10+2b+4=12 \\
-    5-2+4c=7\end{cases}$， 得a＝2，b＝－1，c＝1，故 ( a , b , c )＝( 2 ,－1 , 1 )。
+  explanation: $\begin{cases}x-y+z=7 \\ y-z=-2 \\ z=4\end{cases}$，得x＝5，y＝2，z＝4， 代入$\begin{cases}ax+3y-2z=8 \\ 2x+by+z=12 \\ x-y+cz=7\end{cases}$，得$\begin{cases}5a+6-8=8 \\ 10+2b+4=12 \\ 5-2+4c=7\end{cases}$， 得a＝2，b＝－1，c＝1，故 ( a , b , c )＝( 2 ,－1 , 1 )。
+  tags:
+    unit:
+      code: MA-A4-4-1
+      book: 數學4A
+      chapter: 矩陣
+      title: 三元一次聯立方程式
+      std: true
+    textbook: 數學4A 三元一次聯立方程式
+    pattern:
+      key: MA-A4-4-1:T07
+      name: 化簡矩陣回代解反推係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_7
   section: 2
   number: 7
   type: fill
   page: 2
-  stem: 已知矩陣A , B , C滿足AB＝$\left[ \begin{matrix}50 & 25 \\ 75 & 50\end{matrix} \right]$且AC＝$\left[
-    \begin{matrix}16 & 48 \\ -64 & 32\end{matrix} \right]$，則A (BA) C＝＿＿＿＿。
+  stem: 已知矩陣A , B , C滿足AB＝$\left[ \begin{matrix}50 & 25 \\ 75 & 50\end{matrix} \right]$且AC＝$\left[ \begin{matrix}16 & 48 \\ -64 & 32\end{matrix} \right]$，則A (BA) C＝＿＿＿＿。
   answer:
   - $\left[ \begin{matrix}-800 & 3200 \\ -2000 & 5200\end{matrix} \right]$
   answer_status: verified
   answer_source: answer_key
-  explanation: A (BA) C＝(AB)(AC)＝$\left[ \begin{matrix}50 & 25 \\ 75 & 50\end{matrix}
-    \right] \left[ \begin{matrix}16 & 48 \\ -64 & 32\end{matrix} \right]$＝(25×16)($\left[
-    \begin{matrix}2 & 1 \\ 3 & 2\end{matrix} \right] \left[ \begin{matrix}1 & 3 \\
-    -4 & 2\end{matrix} \right]$)＝400$\left[ \begin{matrix}-2 & 8 \\ -5 & 13\end{matrix}
-    \right]$＝$\left[ \begin{matrix}-800 & 3200 \\ -2000 & 5200\end{matrix} \right]$。
+  explanation: A (BA) C＝(AB)(AC)＝$\left[ \begin{matrix}50 & 25 \\ 75 & 50\end{matrix} \right] \left[ \begin{matrix}16 & 48 \\ -64 & 32\end{matrix} \right]$＝(25×16)($\left[ \begin{matrix}2 & 1 \\ 3 & 2\end{matrix} \right] \left[ \begin{matrix}1 & 3 \\ -4 & 2\end{matrix} \right]$)＝400$\left[ \begin{matrix}-2 & 8 \\ -5 & 13\end{matrix} \right]$＝$\left[ \begin{matrix}-800 & 3200 \\ -2000 & 5200\end{matrix} \right]$。
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T02
+      name: 矩陣乘法與方陣冪次規律
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
-  stem: 設矩陣A , B滿足A＋B＝$\left[ \begin{matrix}6 & 5 \\ 1 & 3\end{matrix} \right]$及A－B＝$\left[
-    \begin{matrix}-4 & 1 \\ 1 & 5\end{matrix} \right]$，則$A^{2}$－$B^{2}$＝＿＿＿＿。
+  stem: 設矩陣A , B滿足A＋B＝$\left[ \begin{matrix}6 & 5 \\ 1 & 3\end{matrix} \right]$及A－B＝$\left[ \begin{matrix}-4 & 1 \\ 1 & 5\end{matrix} \right]$，則$A^{2}$－$B^{2}$＝＿＿＿＿。
   answer:
   - $\left[ \begin{matrix}-21 & 7 \\ 5 & 18\end{matrix} \right]$
   answer_status: verified
   answer_source: answer_key
-  explanation: 2A＝$\left[ \begin{matrix}6 & 5 \\ 1 & 3\end{matrix} \right]$＋$\left[
-    \begin{matrix}-4 & 1 \\ 1 & 5\end{matrix} \right]$＝$\left[ \begin{matrix}2 & 6
-    \\ 2 & 8\end{matrix} \right]\Rightarrow$A＝$\left[ \begin{matrix}1 & 3 \\ 1 & 4\end{matrix}
-    \right]$， 2B＝$\left[ \begin{matrix}6 & 5 \\ 1 & 3\end{matrix} \right]$－$\left[
-    \begin{matrix}-4 & 1 \\ 1 & 5\end{matrix} \right]$＝$\left[ \begin{matrix}10 &
-    4 \\ 0 & -2\end{matrix} \right]\Rightarrow$B＝$\left[ \begin{matrix}5 & 2 \\ 0
-    & -1\end{matrix} \right]$， $A^{2}$－$B^{2}$＝$\left[ \begin{matrix}1 & 3 \\ 1 &
-    4\end{matrix} \right]\left[ \begin{matrix}1 & 3 \\ 1 & 4\end{matrix} \right]$－$\left[
-    \begin{matrix}5 & 2 \\ 0 & -1\end{matrix} \right]\left[ \begin{matrix}5 & 2 \\
-    0 & -1\end{matrix} \right]$＝$\left[ \begin{matrix}4 & 15 \\ 5 & 19\end{matrix}
-    \right]$－$\left[ \begin{matrix}25 & 8 \\ 0 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}-21
-    & 7 \\ 5 & 18\end{matrix} \right]$。
+  explanation: 2A＝$\left[ \begin{matrix}6 & 5 \\ 1 & 3\end{matrix} \right]$＋$\left[ \begin{matrix}-4 & 1 \\ 1 & 5\end{matrix} \right]$＝$\left[ \begin{matrix}2 & 6 \\ 2 & 8\end{matrix} \right]\Rightarrow$A＝$\left[ \begin{matrix}1 & 3 \\ 1 & 4\end{matrix} \right]$， 2B＝$\left[ \begin{matrix}6 & 5 \\ 1 & 3\end{matrix} \right]$－$\left[ \begin{matrix}-4 & 1 \\ 1 & 5\end{matrix} \right]$＝$\left[ \begin{matrix}10 & 4 \\ 0 & -2\end{matrix} \right]\Rightarrow$B＝$\left[ \begin{matrix}5 & 2 \\ 0 & -1\end{matrix} \right]$， $A^{2}$－$B^{2}$＝$\left[ \begin{matrix}1 & 3 \\ 1 & 4\end{matrix} \right]\left[ \begin{matrix}1 & 3 \\ 1 & 4\end{matrix} \right]$－$\left[ \begin{matrix}5 & 2 \\ 0 & -1\end{matrix} \right]\left[ \begin{matrix}5 & 2 \\ 0 & -1\end{matrix} \right]$＝$\left[ \begin{matrix}4 & 15 \\ 5 & 19\end{matrix} \right]$－$\left[ \begin{matrix}25 & 8 \\ 0 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}-21 & 7 \\ 5 & 18\end{matrix} \right]$。
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T06
+      name: 矩陣乘法代數性質與交換律判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
-  stem: 已知矩陣A滿足$A^{4}$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$且$A^{7}$＝$\left[
-    \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$，則A＝＿＿＿＿。
+  stem: 已知矩陣A滿足$A^{4}$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$且$A^{7}$＝$\left[ \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$，則A＝＿＿＿＿。
   answer:
   - $\left[ \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$
   answer_status: verified
   answer_source: answer_key
-  explanation: $A^{8}$＝($A^{4}$)$^{2}$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix}
-    \right]\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}-1
-    & 0 \\ 0 & -1\end{matrix} \right]$， ($A^{7}$)$^{－1}$＝$\left[ \begin{matrix}-2
-    & 5 \\ -1 & 2\end{matrix} \right]$， 故A＝$A^{8}$($A^{7}$)$^{－1}$＝$\left[ \begin{matrix}-1
-    & 0 \\ 0 & -1\end{matrix} \right]\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix}
-    \right]$＝$\left[ \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$。
+  explanation: $A^{8}$＝($A^{4}$)$^{2}$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]$， ($A^{7}$)$^{－1}$＝$\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$， 故A＝$A^{8}$($A^{7}$)$^{－1}$＝$\left[ \begin{matrix}-1 & 0 \\ 0 & -1\end{matrix} \right]\left[ \begin{matrix}-2 & 5 \\ -1 & 2\end{matrix} \right]$＝$\left[ \begin{matrix}2 & -5 \\ 1 & -2\end{matrix} \right]$。
+  tags:
+    unit:
+      code: MA-A4-4-2
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的運算
+      std: true
+    textbook: 數學4A 矩陣的運算
+    pattern:
+      key: MA-A4-4-2:T03
+      name: 反矩陣存在條件與求解
+    labeled_by: agent
+    label_confidence: high
+    label_note: 題首「已知」缺字亂碼，不影響作答
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_10
   section: 2
   number: 10
@@ -272,15 +370,21 @@ questions:
   - $\left[ \begin{matrix}512 & 0 \\ 0 & 512\end{matrix} \right]$
   answer_status: verified
   answer_source: answer_key
-  explanation: A＝$\left[ \begin{matrix}-1 & -\sqrt{3} \\ \sqrt{3} & -1\end{matrix}
-    \right]$＝2$\left[ \begin{matrix}-\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2}
-    & -\frac{1}{2}\end{matrix} \right]$＝$2\left[ \begin{matrix}\cos 240^{\circ} &
-    \sin 240^{\circ} \\ -\sin 240^{\circ} & \cos 240^{\circ}\end{matrix} \right]$，
-    故$A^{9}$＝$2^{9}\left[ \begin{matrix}\cos 2160^{\circ} & \sin 2160^{\circ} \\ -\sin
-    2160^{\circ} & \cos 2160^{\circ}\end{matrix} \right]$＝$512\left[ \begin{matrix}\cos
-    0^{\circ} & \sin 0^{\circ} \\ -\sin 0^{\circ} & \cos 0^{\circ}\end{matrix} \right]$＝$512\left[
-    \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}512 &
-    0 \\ 0 & 512\end{matrix} \right]$。
+  explanation: A＝$\left[ \begin{matrix}-1 & -\sqrt{3} \\ \sqrt{3} & -1\end{matrix} \right]$＝2$\left[ \begin{matrix}-\frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & -\frac{1}{2}\end{matrix} \right]$＝$2\left[ \begin{matrix}\cos 240^{\circ} & \sin 240^{\circ} \\ -\sin 240^{\circ} & \cos 240^{\circ}\end{matrix} \right]$， 故$A^{9}$＝$2^{9}\left[ \begin{matrix}\cos 2160^{\circ} & \sin 2160^{\circ} \\ -\sin 2160^{\circ} & \cos 2160^{\circ}\end{matrix} \right]$＝$512\left[ \begin{matrix}\cos 0^{\circ} & \sin 0^{\circ} \\ -\sin 0^{\circ} & \cos 0^{\circ}\end{matrix} \right]$＝$512\left[ \begin{matrix}1 & 0 \\ 0 & 1\end{matrix} \right]$＝$\left[ \begin{matrix}512 & 0 \\ 0 & 512\end{matrix} \right]$。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T03
+      name: 平面旋轉變換矩陣與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_11
   section: 2
   number: 11
@@ -302,12 +406,21 @@ questions:
   - ( 3 , 7 )
   answer_status: verified
   answer_source: answer_key
-  explanation: 以O為旋轉中心，將B點依順時針方向旋轉90°得A點$\left[ \begin{matrix}\cos (-90^{\circ}) &
-    -\sin (-90^{\circ}) \\ \sin (-90^{\circ}) & \cos (-90^{\circ})\end{matrix} \right]
-    \left[ \begin{matrix}-4 \\ 10\end{matrix} \right]$＝$\left[ \begin{matrix}0 & 1
-    \\ -1 & 0\end{matrix} \right] \left[ \begin{matrix}-4 \\ 10\end{matrix} \right]$＝$\left[
-    \begin{matrix}10 \\ 4\end{matrix} \right]$， 故A點坐標為 ( 10 , 4 )， 而E點坐標為 ($\frac{-4+10}{2}$,$\frac{10+4}{2}$)，即
-    ( 3 , 7 )。
+  explanation: 以O為旋轉中心，將B點依順時針方向旋轉90°得A點$\left[ \begin{matrix}\cos (-90^{\circ}) & -\sin (-90^{\circ}) \\ \sin (-90^{\circ}) & \cos (-90^{\circ})\end{matrix} \right] \left[ \begin{matrix}-4 \\ 10\end{matrix} \right]$＝$\left[ \begin{matrix}0 & 1 \\ -1 & 0\end{matrix} \right] \left[ \begin{matrix}-4 \\ 10\end{matrix} \right]$＝$\left[ \begin{matrix}10 \\ 4\end{matrix} \right]$， 故A點坐標為 ( 10 , 4 )， 而E點坐標為 ($\frac{-4+10}{2}$,$\frac{10+4}{2}$)，即 ( 3 , 7 )。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T03
+      name: 平面旋轉變換矩陣與應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_12
   section: 2
   number: 12
@@ -318,36 +431,67 @@ questions:
   - (－11 ,－2 )
   answer_status: verified
   answer_source: answer_key
-  explanation: 設tanθ＝2，其中θ為銳角，則cosθ＝$\frac{1}{\sqrt{5}}$，sinθ＝$\frac{2}{\sqrt{5}}$，
-    故sin 2θ＝2 sinθcosθ＝2×$\frac{2}{\sqrt{5}}$×$\frac{1}{\sqrt{5}}$＝$\frac{4}{5}$，
-    cos 2θ＝2 $cos^{2}$θ－1＝2×$\frac{1}{5}$－1＝$-\frac{3}{5}$， $\left[ \begin{matrix}\cos
-    2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta\end{matrix} \right] \left[
-    \begin{matrix}5 \\ -10\end{matrix} \right]$＝$\left[ \begin{matrix}-\frac{3}{5}
-    & \frac{4}{5} \\ \frac{4}{5} & \frac{3}{5}\end{matrix} \right] \left[ \begin{matrix}5
-    \\ -10\end{matrix} \right]$＝$\left[ \begin{matrix}-11 \\ -2\end{matrix} \right]$，故所求坐標為
-    (－11 ,－2 )。
+  explanation: 設tanθ＝2，其中θ為銳角，則cosθ＝$\frac{1}{\sqrt{5}}$，sinθ＝$\frac{2}{\sqrt{5}}$， 故sin 2θ＝2 sinθcosθ＝2×$\frac{2}{\sqrt{5}}$×$\frac{1}{\sqrt{5}}$＝$\frac{4}{5}$， cos 2θ＝2 $cos^{2}$θ－1＝2×$\frac{1}{5}$－1＝$-\frac{3}{5}$， $\left[ \begin{matrix}\cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta\end{matrix} \right] \left[ \begin{matrix}5 \\ -10\end{matrix} \right]$＝$\left[ \begin{matrix}-\frac{3}{5} & \frac{4}{5} \\ \frac{4}{5} & \frac{3}{5}\end{matrix} \right] \left[ \begin{matrix}5 \\ -10\end{matrix} \right]$＝$\left[ \begin{matrix}-11 \\ -2\end{matrix} \right]$，故所求坐標為 (－11 ,－2 )。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T04
+      name: 平面鏡射變換矩陣與對稱
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_13
   section: 2
   number: 13
   type: fill
   page: 2
-  stem: 設二階方陣A將坐標平面上P , Q , R分別變換至P' ( 17 , 13 )、Q' ( 6 , 3 )、R' (−12 ,−9 )，已知△PQR面積為8且
-    det(A)＞ 0，則det(A)＝＿＿＿＿。
+  stem: 設二階方陣A將坐標平面上P , Q , R分別變換至P' ( 17 , 13 )、Q' ( 6 , 3 )、R' (−12 ,−9 )，已知△PQR面積為8且 det(A)＞ 0，則det(A)＝＿＿＿＿。
   answer:
   - '3'
   answer_status: verified
   answer_source: answer_key
-  explanation: $\vec{P'Q'}$＝(－11 ,－10 )，$\vec{P'R'}$＝(－29 ,－22 )， △P'Q'R' 面積＝$\frac{1}{2}
-    | \left| \begin{matrix}-11 & -10 \\ -29 & -22\end{matrix} \right| |$＝$\frac{1}{2}$×48＝24，
-    △P'Q'R' 面積＝det (A)．△PQR面積 $\Rightarrow$24＝det (A)×8$\Rightarrow$det (A)＝3。
+  explanation: $\vec{P'Q'}$＝(－11 ,－10 )，$\vec{P'R'}$＝(－29 ,－22 )， △P'Q'R' 面積＝$\frac{1}{2} | \left| \begin{matrix}-11 & -10 \\ -29 & -22\end{matrix} \right| |$＝$\frac{1}{2}$×48＝24， △P'Q'R' 面積＝det (A)．△PQR面積 $\Rightarrow$24＝det (A)×8$\Rightarrow$det (A)＝3。
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T06
+      name: 線性變換面積縮放與行列式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_111_新北_新店_數學_數A_g11s2e3_s2_14
   section: 2
   number: 14
   type: fill
   page: 2
-  stem: 已知甲袋有1白球與1紅球，乙袋有3紅球。先從甲袋中取出1球放入乙袋後，再從乙袋中取出1球放入甲袋，如此稱為一局。則： (1)兩局後白球在甲袋的機率為＿＿＿＿。
-    (2)長期而言，白球在乙袋的機率為＿＿＿＿。
+  stem: 已知甲袋有1白球與1紅球，乙袋有3紅球。先從甲袋中取出1球放入乙袋後，再從乙袋中取出1球放入甲袋，如此稱為一局。則： (1)兩局後白球在甲袋的機率為＿＿＿＿。 (2)長期而言，白球在乙袋的機率為＿＿＿＿。
   answer:
   - (1) $\frac{31}{64}$；(2) $\frac{3}{5}$
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-A4-4-3
+      book: 數學4A
+      chapter: 矩陣
+      title: 矩陣的應用
+      std: true
+    textbook: 數學4A 矩陣的應用
+    pattern:
+      key: MA-A4-4-3:T02
+      name: 馬可夫鏈多步轉移與穩定態
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

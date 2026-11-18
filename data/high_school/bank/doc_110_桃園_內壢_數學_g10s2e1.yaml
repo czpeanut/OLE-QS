@@ -32,6 +32,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 原式＝(1＋$\frac{1}{2}$)＋(2＋$\frac{1}{4}$)＋(3＋$\frac{1}{8}$)＋…＋(10＋$\frac{1}{1024}$)＝(1＋2＋3＋…＋10)＋($\frac{1}{2}$＋$\frac{1}{4}$＋$\frac{1}{8}$＋…＋$\frac{1}{1024}$) ＝$\frac{10\times 11}{2}$＋$\frac{1}{2}$×$\frac{1-(\frac{1}{2})^{10}}{1-\frac{1}{2}}$＝55＋$\frac{1023}{1024}$＝$55\frac{1023}{1024}$。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T13
+      name: 雙層等比與差比混合拆解求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_2
   section: 1
   number: 2
@@ -42,6 +56,20 @@ questions:
   - '764'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T02
+      name: 遞迴關係推算與累加求通項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_3
   section: 1
   number: 3
@@ -53,6 +81,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: $a_{10}$＝$S_{10}$－$S_{9}$＝($10^{2}$－10)－($9^{2}$－9)＝18。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T04
+      name: 級數和S_n反求一般項
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_4
   section: 1
   number: 4
@@ -83,6 +125,20 @@ questions:
     ( iii ) 90×$\frac{3}{4}$＝67.5 ⇒ $Q_{3}$＝$x_{68}$＝5。
 
     故 (Me, $P_{30}$, $Q_{3}$)＝(3, 2, 5)。'
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T01
+      name: 集中趨勢與百分位數累計計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_5
   section: 1
   number: 5
@@ -105,6 +161,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: μ$_{x}$＝$\frac{13+11+10+12+14}{5}$＝12，μ$_{y}$＝$\frac{12+13+14+15+11}{5}$＝13 ⇒ $S_{xx}$＝$1^{2}$＋(－1)$^{2}$＋(－2)$^{2}$＋$0^{2}$＋$2^{2}$＝10，$S_{yy}$＝(－1)$^{2}$＋$0^{2}$＋$1^{2}$＋$2^{2}$＋(－2)$^{2}$＝10， $S_{xy}$＝1×(－1)＋(－1)×0＋(－2)×1＋0×2＋2×(－2)＝－7 故r＝$\frac{S_{xy}}{\sqrt{S_{xx}}\times \sqrt{S_{yy}}}$＝$\frac{-7}{\sqrt{10}\times \sqrt{10}}$＝－0.7。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T02
+      name: 相關係數與迴歸直線直接計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_6
   section: 1
   number: 6
@@ -116,6 +186,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 設公差為d，可知$\begin{cases}a_{4}=a_{1}+3d=8 \\ a_{11}=a_{1}+10d=22\end{cases}$⇒ $\begin{cases}a_{1}=2 \\ d=2\end{cases}$⇒ $S_{n}$＝$\frac{n \left[ 2\times 2+(n-1)\times 2 \right]}{2}$＝n (n＋1) ⇒$\frac{1}{S_{n}}$＝$\frac{1}{n (n+1)}$＝$\frac{1}{n}$－$\frac{1}{n+1}$，故$\frac{1}{S_{1}}$＋$\frac{1}{S_{2}}$＋…＋$\frac{1}{S_{35}}$＝(1－$\frac{1}{2}$)＋($\frac{1}{2}$－$\frac{1}{3}$)＋…＋($\frac{1}{35}$－$\frac{1}{36}$)＝1－$\frac{1}{36}$＝$\frac{35}{36}$。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T12
+      name: 裂項相消與有理化對消求和
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_7
   section: 1
   number: 7
@@ -127,6 +211,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 可知a＝$\frac{r\sigma _{y}}{\sigma _{x}}$＝$\frac{0.75\times 4}{2}$＝1.5，又迴歸直線必過點 (μ$_{x}$, μ$_{y}$)，所以13×1.5＋b＝17 ⇒ b＝－2.5，故 (a, b)＝(1.5,－2.5)。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T06
+      name: 統計量與平方和求相關迴歸
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_8
   section: 1
   number: 8
@@ -138,6 +236,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: x＝15代入可得y＝1.5×15－2.5＝20。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T06
+      name: 統計量與平方和求相關迴歸
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_9
   section: 1
   number: 9
@@ -156,6 +268,21 @@ questions:
   - label: E
     content: $S_{100}$，$S_{200}$，$S_{300}$三數成等比
   explanation: (A) ×：若$a_{99}$＜$a_{100}$，則$a_{99}$＜$a_{99}$r，當$a_{99}$＜0時，r＜1。 (B) ○：因為$\frac{a_{107}}{a_{106}}$＝$\frac{a_{106}}{a_{105}}$＝r，所以$a_{106}^{2}$＝$a_{105}$．$a_{107}$。 (C) ×：反例：$a_{1}$＝1，r＝$\frac{-1}{2}$⇒ $S_{2022}$＝$a_{1}$×$\frac{1-r^{2022}}{1-r}$＝1×$\frac{1-(\frac{-1}{2})^{2022}}{1-(\frac{-1}{2})}$＞0。 (D) ○：若$S_{2022}$＝0，則r＝－1＜0。 (E) ×：應為$S_{100}$，$S_{200}$－$S_{100}$，$S_{300}$－$S_{200}$成等比。 故選(B)(D)。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T01
+      name: 等比分段和與等差奇偶和
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 題型為多選題但標為 single，且解答欄位為空（解析有寫選BD）
+  difficulty: 3
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_10
   section: 1
   number: 10
@@ -166,6 +293,20 @@ questions:
   - '8'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T07
+      name: 等比級數求和與不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_11
   section: 1
   number: 11
@@ -177,6 +318,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 因為18＋19＝37，所以$a_{k}$位於第36個括號中的第19項，故k＝(1＋2＋…＋35)＋19＝$\frac{35\times 36}{2}$＋19＝649。
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T04
+      name: 圖形與數字陣列規律計數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_12
   section: 1
   number: 12
@@ -188,6 +343,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 設原始分數為x分，調整後為y分，可知y＝$\frac{6}{5}x$＋10，μ$_{x}$＝45，σ$^{ }_{x}$＝10，所以M＝$\frac{6}{5}\mu _{x}$＋10＝$\frac{6}{5}$×45＋10＝64，σ＝$\frac{6}{5}\sigma _{x}$＝$\frac{6}{5}$×10＝12，故 (M, σ)＝(64, 12)。
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T03
+      name: 線性平移伸縮與z分數標準化
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_13
   section: 1
   number: 13
@@ -199,6 +368,21 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: $4^{2}$＋$7^{2}$＋$10^{2}$＋…＋$61^{2}$＝(1＋3×1)$^{2}$＋(1＋3×2)$^{2}$＋(1＋3×3)$^{2}$＋…＋(1＋3×20)$^{2}$ ＝($1^{2}$＋9×$1^{2}$＋2×3×1)＋($1^{2}$＋9×$2^{2}$＋2×3×2)＋($1^{2}$＋9×$3^{2}$＋2×3×3)＋…＋($1^{2}$＋9×$20^{2}$＋2×3×20) ＝20＋9 ($1^{2}$＋$2^{2}$＋…＋$20^{2}$)＋6 (1＋2＋…＋20) ＝20＋9×$\frac{20\times 21\times 42}{6}$＋6×$\frac{20\times 21}{2}$＝20＋25830＋1260＝27110。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T14
+      name: 通項多項式展開與線性求和
+    labeled_by: agent
+    label_confidence: high
+    label_note: 解析中寫 20×21×42/6（正確為 20×21×41/6=2870，9×2870=25830 數值計算無誤）
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_14
   section: 1
   number: 14
@@ -250,6 +434,20 @@ questions:
   - $r_{1}$＝$r_{3}$＞$r_{4}$＞$r_{2}$
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T01
+      name: 散布圖判讀與相關係數估計
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_15
   section: 1
   number: 15
@@ -261,6 +459,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 可知μ$_{x}$＝$\frac{1+2+3}{3}$＝2，μ$_{y}$＝$\frac{3+a+b}{3}$，因為迴歸直線必過點 (μ$_{x}$, μ$_{y}$)，所以μ$_{y}$＝－μ$_{x}$＋4＝－2＋4＝2 ⇒$\frac{3+a+b}{3}$＝2 ⇒ a＋b＝3，$S_{xx}$＝(－1)$^{2}$＋$0^{2}$＋$1^{2}$＝2，$S_{xy}$＝(－1)×1＋0×(a－2)＋1×(b－2)＝b－3 ⇒ 斜率m＝$\frac{S_{xy}}{S_{xx}}$＝$\frac{b-3}{2}$＝－1 ⇒ b＝1 ⇒ a＝2，故數對 (a, b)＝(2, 1)。
+  tags:
+    unit:
+      code: MA-2-3-2
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 二維數據分析
+      std: true
+    textbook: 數學2（必修） 二維數據分析
+    pattern:
+      key: MA-2-3-2:T04
+      name: 迴歸直線過平均點與殘差性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_16
   section: 1
   number: 16
@@ -272,6 +484,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 設〈$a_{n}$〉為等比數列，其中r＝2，且$S_{5}$＝5，可得$S_{5}$＝$a_{1}$×$\frac{2^{5}-1}{2-1}$＝$31a_{1}$＝5 ⇒ $a_{1}$＝$\frac{5}{31}$⇒ $a_{7}$＝$a_{1}r^{6}$＝$\frac{5}{31}$×$2^{6}$＝$\frac{320}{31}$， 故第7天織了$\frac{320}{31}$尺。
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T07
+      name: 等比級數求和與不等式
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_17
   section: 1
   number: 17
@@ -283,6 +509,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 可知μ$_{x}$＝36，𝜎$_{x}$＝12，μ$_{y}$＝59，因為y＝10$\sqrt{x}$，所以$y^{2}$＝100x ⇒ 𝜎$_{y}$＝$\sqrt{\frac{1}{30}(y_{1}^{2}+y_{2}^{2}+\cdots +y_{30}^{2})-\mu _{y}^{2}}$＝$\sqrt{\frac{1}{30}(100x_{1}+100x_{2}+\cdots +100x_{30})-59^{2}}$＝$\sqrt{100\times \frac{x_{1}+x_{2}+\cdots +x_{30}}{30}-3481}$ ＝$\sqrt{100\times 36-3481}$＝$\sqrt{119}\approx 11$， 故n＝11。
+  tags:
+    unit:
+      code: MA-2-3-1
+      book: 數學2（必修）
+      chapter: 數據分析
+      title: 一維數據分析
+      std: true
+    textbook: 數學2（必修） 一維數據分析
+    pattern:
+      key: MA-2-3-1:T02
+      name: 變異數標準差計算與增減變動
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_110_桃園_內壢_數學_g10s2e1_s1_18
   section: 1
   number: 18
@@ -294,6 +534,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 可知$a_{1}$×$a_{2022}$＝$a_{2}$×$a_{2021}$＝…＝$a_{1011}$×$a_{1012}$＝3×27＝$3^{4}$ ⇒ $a_{1}$×$a_{2}$×…×$a_{2022}$＝($3^{4}$)$^{1011}$＝$3^{4044}$，故m＝4044。
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T01
+      name: 等差等比一般項與中項性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_桃園_內壢_數學_g10s2e1_s2_1
   section: 2
   number: 1
@@ -310,3 +564,17 @@ questions:
   - (1) 2n－1；(2) $a_{n}$＝$n^{2}$；(3) $a_{n}$＝$n^{2}$
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-1
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 數列與遞迴關係
+      std: true
+    textbook: 數學2（必修） 數列與遞迴關係
+    pattern:
+      key: MA-2-1-1:T03
+      name: 數學歸納法猜測與倍數證明
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

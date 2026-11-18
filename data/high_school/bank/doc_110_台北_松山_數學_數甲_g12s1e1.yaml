@@ -49,6 +49,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: (A) ○：無窮數列〈$r^{n}$〉收斂的充要條件是－1＜r ≤ 1。 (B) ○：若數列〈$r^{n}$〉及〈$x^{n}$〉皆為收斂數列，則－1＜r ≤ 1，－1＜x ≤ 1， 故－1＜rx ≤ 1，於是〈$r^{n}$．$x^{n}$〉（即〈( rx )$^{n}$〉）亦為收斂數列。 (C) ×：舉反例，令$r^{n}$＝(－1 )$^{n}$＝$x^{n}$，則〈$r^{n}$〉及〈$x^{n}$〉皆為發散數列，但$r^{n}$．$x^{n}$＝(－1 )$^{2n}$＝1，於是〈$r^{n}$．$x^{n}$〉為收斂數列。 (D) ×：若數列〈( x ( x－2 )$^{n}$〉為收斂數列，則x＝0或－1＜x－2 ≤ 1，即x＝0或1＜x ≤ 3。 (E) ○：若等比數列〈( x ( x－2 )$^{n}$〉為收斂數列，則$\begin{cases}x\neq 0 \\ -1<x-2\leq 1 , x-2\neq 0\end{cases}$ ⇒ $\begin{cases}x\neq 0 \\ 1<x\leq 3,x\neq 2\end{cases}$ ⇒ 1＜x ≤ 3，x≠2。 故選(A)(B)(E)。
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T01
+      name: 數列極限運算與收斂判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s1_2
   section: 1
   number: 2
@@ -73,6 +87,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: 因多項式函數f (x)＝$ax^{n}$ ( n ≥ 2 ) 的圖形凹口向下，故a＜0，n為偶數。 （事實上，f'(x)＝$nax^{n－1}$，f'' (x)＝n ( n－1 ) $ax^{n－2}$， 因f (x)＝$ax^{n}$的圖形凹口向下，故n ( n－1 ) $ax^{n－2}$恆小於0，所以a＜0，且n為偶數。） (A) ○：f (－x )＝a (－x )$^{n}$＝$ax^{n}$＝f (x)，故f (x) 是偶函數。 (B) ○：f (x) 不是一對一函數，故f (x) 的反函數不存在。 (C) ○：g (－x )＝a (－x )$^{n＋1}$＝－$ax^{n＋1}$＝－g (x)，故g (x)的圖形對稱於原點。 (D) ×：因a＜0，故g (x) 的圖形由左往右下降，且原點為對稱中心，當x＜0時，凹口向上；當x＞0時，凹口向下。 （事實上，g' (x)＝( n＋1 ) $ax^{n}$，g'' (x)＝n ( x＋1 ) $ax^{n－1}$。當x＞0時，g''(x)＜0，此時，其圖形凹口向下。） (E) ×：h (x)＝$log_{n}$ x為一對一函數，故其反函數存在，其反函數$h^{－1}$ (x)＝$n^{x}$。 故選(A)(B)(C)。
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s1_3
   section: 1
   number: 3
@@ -95,6 +123,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: (A) ○：若，則由$\lim_{x\rightarrow 0}$g (x)＝$\lim_{x\rightarrow 0}$h (x)＝4，則由夾擠定理知$\lim_{x\rightarrow 0}$f (x)＝4。 (B) ×：舉反例，令g (x)＝$x^{2}$＋3，f (x)＝－$7x^{2}$＋5，h (x)＝－$x^{2}$＋5 在區間 (－$\frac{1}{2}$ , $\frac{1}{2}$ ) 中，g (x) ≤ f (x) ≤ h (x)，且$\lim_{x\rightarrow 0}$g (x)＝3，$\lim_{x\rightarrow 0}$h (x)＝5，但$\lim_{x\rightarrow 0}$f (x)＝5。 (C) ×：舉反例，令f (x)＝－$2x^{2}$＋x＋6，則f (－1 )＝3，f (1)＝5，但f (0)＝6。 (D) ×：舉反例，令f (x)＝－$\frac{2}{3}x^{2}$＋x＋$\frac{14}{3}$，則f (－1)＝3，f (1)＝5，且f (2)＝4，但2不介於－1與1之間。 (E) ×：舉反例，令f (x)＝$\frac{4x+1}{x}$，則f (－1 )＝3，f (1)＝5，但沒有實數c滿足－1＜c＜1且f (c)＝4。 故選(A)。
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T04
+      name: 介值定理與勘根應用
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_2
   section: 2
   number: 2
@@ -106,6 +148,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: f (x) 在x＝1連續，故$\lim_{x\rightarrow 1}$f (x)＝f (1)，於是f (1)＝$\lim_{x\rightarrow 1}$f (x)＝$\lim_{x\rightarrow 1^{+}}$f (x)＝3，故2 f (1)－$\lim_{x\rightarrow 1}$f (x)＝2×3－3＝3。
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T03
+      name: 函數連續性檢驗與求參
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 1
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_3
   section: 2
   number: 3
@@ -117,6 +173,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: $\frac{f}{g}(x)$＝$\frac{x^{3}-3x^{2}+4x-2}{x-1}$＝$x^{2}$－2x＋2，x≠1，而$x^{2}$－2x＋2＝( x－1 )$^{2}$＋1 ≥ 1，又當x＝1時，( x－1 )$^{2}$＋1＝1 所以$\frac{f}{g}(x)$的值域＝{ y | y＞1，y$\in$R }。
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T05
+      name: 函數定義域與配方法極值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_4
   section: 2
   number: 4
@@ -128,6 +198,20 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: $\sum_{k=2}^{n} \frac{1}{k(k+1)}=\sum_{k=2}^{n} (\frac{1}{k}-\frac{1}{k+1})=[(\frac{1}{2}-\frac{1}{3})+(\frac{1}{3}-\frac{1}{4})+\cdots +(\frac{1}{n}-\frac{1}{n+1})]=\frac{1}{2}-\frac{1}{n+1}$ 故$\sum_{k=2}^{\infty} \frac{1}{k(k+1)}=\lim_{n\rightarrow \infty} \sum_{k=2}^{n} \frac{1}{k(k+1)}=\lim_{n\rightarrow \infty} (\frac{1}{2}-\frac{1}{n+1})=\frac{1}{2}$。
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T06
+      name: 分項對消與無窮級數極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_5
   section: 2
   number: 5
@@ -138,6 +222,20 @@ questions:
   - '0'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T02
+      name: 函數極限與自然常數定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_6
   section: 2
   number: 6
@@ -148,6 +246,20 @@ questions:
   - '2'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T02
+      name: 多項式與指數型數列極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_7
   section: 2
   number: 7
@@ -158,6 +270,20 @@ questions:
   - －$\frac{2\pi}{3}$＜x＜$\frac{4\pi}{3}$
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T02
+      name: 函數極限與自然常數定義
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_8
   section: 2
   number: 8
@@ -168,6 +294,21 @@ questions:
   - 5×6×7×8
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-2-1-2
+      book: 數學2（必修）
+      chapter: 數列與級數
+      title: 級數
+      std: true
+    textbook: 數學2（必修） 級數
+    pattern:
+      key: MA-2-1-2:T14
+      name: 通項多項式展開與線性求和
+    labeled_by: agent
+    label_confidence: medium
+    label_note: 題幹級數上限誤植為無窮大（應為 n），且答案欄誤植為乘積算式
+  difficulty: 3
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_9
   section: 2
   number: 9
@@ -178,6 +319,21 @@ questions:
   - ( 4 , $\frac{1}{6}$ )
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T03
+      name: 函數連續性檢驗與求參
+    labeled_by: agent
+    label_confidence: high
+    label_note: 極限變數誤植為 n（應為 x→5）
+  difficulty: 2
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s2_10
   section: 2
   number: 10
@@ -188,6 +344,20 @@ questions:
   - '1'
   answer_status: verified
   answer_source: answer_key
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_110_台北_松山_數學_數甲_g12s1e1_s3_2
   section: 3
   number: 2
@@ -200,3 +370,17 @@ questions:
   answer_status: verified
   answer_source: answer_key
   explanation: $(\frac{n+1}{n})+(\frac{n+1}{n})^{2}+\cdots +(\frac{n+1}{n})^{n}=\frac{(\frac{n+1}{n})[(\frac{n+1}{n})^{n}-1]}{\frac{n+1}{n}-1})=n(1+\frac{1}{n})[(1+\frac{1}{n})^{n}-1]$ 故原式＝$\lim_{x\rightarrow \infty}$( 1＋$\frac{1}{n}$) [ ( 1＋$\frac{1}{n}$)$^{n}$－1 ]＝( 1＋0 ) ( e－1 )＝e－1。
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T02
+      name: 函數極限與自然常數定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3

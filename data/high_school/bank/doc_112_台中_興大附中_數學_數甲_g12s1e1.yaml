@@ -29,18 +29,60 @@ questions:
   page: 1
   stem: 下列關於極限與導數的敘述哪些是正確的？ (1)$\lim_{x \rightarrow 0} \frac{\cos x}{x} = 0$ (2)$\lim_{x \rightarrow 0} \frac{| x |}{x} = 0$ (3)$\lim_{x \rightarrow 0} x^{2} \cos \frac{1}{x} = 0$ (4)若f (x)＝x | x |，則f ′(0)＝0 (5)若f (x)＝[ x ]，則f ′($\sqrt{2}$)＝0
   explanation: (1) $\lim_{x \rightarrow 0} \cos x = 1$，$\lim_{x \rightarrow 0} x = 0$ ⇒ $\lim_{x \rightarrow 0} \frac{\cos x}{x}$不存在。 (2) $\lim_{x \rightarrow 0^{+}} \frac{| x |}{x} = \lim_{x \rightarrow 0^{+}} 1 = 1$，$\lim_{x \rightarrow 0^{-}} \frac{| x |}{x} = \lim_{x \rightarrow 0^{-}} ( - 1 ) = - 1$ ∴$\lim_{x \rightarrow 0} \frac{| x |}{x}$不存在。 (3) $- 1 \leq \cos\frac{1}{x} \leq 1$ ⇒ $- x^{2} \leq x^{2}\cos\frac{1}{x} \leq x^{2}$ ∴$\lim_{x \rightarrow 0} x^{2} \cos \frac{1}{x} = 0$ (4) f ′(0)＝$\lim_{x \rightarrow 0} \frac{f (x) - f (0)}{x - 0}$＝$\lim_{x \rightarrow 0} | x |$＝0。 (5) 當1＜x＜2時，f (x)＝[$^{ }x^{ }$]＝1 ⇒ f ′($\sqrt{2}$)＝0。 故選(3)(4)(5)。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s1_2
   section: 1
   number: 2
   type: calc
   page: 1
   stem: 下列關於數列的敘述哪些是正確的？ (1)若〈$a_{n}$〉為收斂數列，則$\sum_{n = 1}^{\infty} a_{n}$為收斂 (2)數列〈$a_{n}$〉中，若$\lim_{n \rightarrow \infty} a_{2n} = r$，則$\lim_{n \rightarrow \infty} a_{n} = r$ (3)數列〈$a_{n}$〉，其中$a_{n}$＝$r^{n}$，若 | r |＜1，則$\lim_{n \rightarrow \infty} a_{n}$有極限值 (4)$\lim_{n \rightarrow 0} ( 1 + n )^{\frac{1}{n}} = e$，且e為無理數，滿足2＜e ＜3 (5) 三數列〈$a_{n}$〉、〈$b_{n}$〉、〈$c_{n}$〉，其關係為$a_{n}$ ≤ $b_{n}$ ≤ $c_{n}$。若〈$a_{n}$〉及〈$c_{n}$〉均為收斂數列，則〈$b_{n}$〉必為收斂數列
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T01
+      name: 數列極限運算與收斂判別
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s1_3
   section: 1
   number: 3
   type: calc
   page: 1
   stem: 下列關於函數的敘述哪些是正確的？ (1) y＝| sin x |＋| cos x |、y＝$3^{－| x |}$、y＝$x^{4}$＋$x^{2}$＋2，以上三個函數皆為偶函數 (2) y＝$10^{x}$以及y＝log x兩函數互為反函數 (3)若函數f (x)滿足f (1)＝3，f (2)＝5，則存在1＜p＜2使得f (p)＝4 (4)三實數a、b、c，設三次多項方程式f (x) 且滿足f (c)＝0，若a＜b＜c，則f (a)×f (b)＜0 (5)若函數f (x) 在x＝a滿足$\lim_{x \rightarrow a} f ( x ) = \lim_{x \rightarrow a^{+}} f ( x ) = \lim_{x \rightarrow a^{-}} f ( x ) = f ( a )$，則f ′(a) 存在
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T01
+      name: 合成函數、奇偶與反函數
+    labeled_by: agent
+    label_confidence: medium
+  difficulty: 3
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_1
   section: 2
   number: 1
@@ -48,6 +90,21 @@ questions:
   page: 1
   stem: 若$\lim_{n \rightarrow \infty} \frac{2^{n} + 3^{n}}{6^{n}} = \alpha$，$\sum_{n = 1}^{\infty} \frac{2^{n} + 3^{n}}{6^{n}} = \beta$，則$\alpha + \beta$＝$\frac{ ④ }{ ⑤ }$。（化為最簡分數）
   explanation: a≠0，$\lim_{n \rightarrow \infty} S_{n}$存在 ⇔ $| \frac{1}{r} | < 1$ ⇔ $| r | > 1$ (1)$\sqrt{2} > 1$ ⇒ $( \sqrt{2} )^{\frac{1}{\sqrt{2}}} > 1$ (2) sin 75° cos 75°＝$\frac{1}{2}$sin 150°＝$\frac{1}{4}$ (3) log 0.2＝$log_{ }$2－1$\approx$－0.699 (4) 0＜$log_{2023}$ 2022＜1 (5) $log_{ 2}$ 0.1＝－$\frac{1}{\log 2}\approx$－3.32 故選(1)(5)。
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+    label_note: 詳解誤植為他題內容
+  difficulty: 2
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_2
   section: 2
   number: 2
@@ -55,6 +112,21 @@ questions:
   page: 1
   stem: 設無窮等比級數$0.\overline{1}$＋$0.\overline{03}$＋…，則此級數和為$\frac{ ⑥⑦ }{ ⑧⑨ }$。（化為最簡分數）
   explanation: S＝$\frac{9}{1 - \frac{1}{4}}$＝12。
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T05
+      name: 無窮等比級數求和與應用
+    labeled_by: agent
+    label_confidence: high
+    label_note: 詳解誤植為他題內容
+  difficulty: 2
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_3
   section: 2
   number: 3
@@ -62,63 +134,218 @@ questions:
   page: 1
   stem: 求極限值$\lim_{n \rightarrow \infty} \frac{2^{n - 1} + 5 \cdot 3^{n + 1} - 6 \cdot 4^{n - 1}}{3 \cdot 2^{n + 1} - 4 \cdot 3^{n - 1} + 7 \cdot 4^{n + 1}}$＝$\frac{ ⑩⑪ }{ ⑫⑬ }$。（化為最簡分數）
   explanation: $\left| 12 - \frac{9 〔 1 - ( \frac{1}{4} )^{n} 〕}{1 - \frac{1}{4}} \right|$＝12 ($\frac{1}{4}$)$^{n}$＜$10^{－8}$ 取log：log 12－2n．log 2＜－8 ⇒ ( 0.6020＋0.4771 )＋8＜2n×0.3010 ⇒ n＞$\frac{9.0791}{0.6020}\approx$15.08 取最小正整數n＝16
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T02
+      name: 多項式與指數型數列極限
+    labeled_by: agent
+    label_confidence: high
+    label_note: 詳解誤植為他題內容
+  difficulty: 2
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_4
   section: 2
   number: 4
   type: fill
   page: 1
   stem: 設a、b為實數，已知$\lim_{n \rightarrow \infty} ( \frac{n^{2} + 3n}{n + 1} + \frac{an^{2} + bn}{n + 2} ) = 4$，則數對 ( a , b )＝$( ⑭⑮ , ⑯ )$。
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T02
+      name: 多項式與指數型數列極限
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_5
   section: 2
   number: 5
   type: fill
   page: 1
   stem: 設f (x) 為三次函數且$\lim_{x \rightarrow - 1} \frac{f (x)}{x + 1} = - 6$，$\lim_{x \rightarrow 2} \frac{f (x)}{x - 2} = - 3$，則f (3)＝$⑰⑱$。
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T09
+      name: 雙重極限反推多項式係數
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_6
   section: 2
   number: 6
   type: fill
   page: 1
   stem: 若$\lim_{x \rightarrow 3} \frac{x^{2} - ax - 12}{x^{2} - ( 3 + b ) x + 3b} = - \frac{7}{2}$，則數對 ( a , b )＝$( ⑲⑳ , 21 )$。
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T06
+      name: 函數極限有理化與運算性質
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_7
   section: 2
   number: 7
   type: fill
   page: 1
   stem: 求極限值$\lim_{x \rightarrow 4} \frac{\sqrt{2 + \sqrt{x}} - 2}{x - 4}$＝$\frac{ 22 }{ 2324 }$。（化為最簡分數）
+  tags:
+    unit:
+      code: MA-J1-1-2
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 函數與函數的極限
+      std: true
+    textbook: 選修數學甲（上） 函數與函數的極限
+    pattern:
+      key: MA-J1-1-2:T10
+      name: 無理式極限有理化計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_8
   section: 2
   number: 8
   type: fill
   page: 2
   stem: 已知函數f (x) 滿足f (1)＝1，f ′(1)＝5，則$\lim_{x \rightarrow 1} \frac{f ( x^{3} ) - f ( 1 )}{x - 1}$＝$2526$。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T09
+      name: 導數極限定義式轉換求值
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_9
   section: 2
   number: 9
   type: fill
   page: 2
   stem: 設函數f (x)＝$\begin{cases}x^{2} + ax + b , x \geq 2 \\ x^{3} , x < 2\end{cases}$，若f ′(2) 存在，則數對 ( a , b )＝$( 27 , 282930 )$。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T01
+      name: 連續與可微關係及極限定義
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_10
   section: 2
   number: 10
   type: fill
   page: 2
   stem: 三次函數y＝$\frac{1}{3}x^{3}$＋$ax^{2}$＋bx＋c，若函數圖形上以 ( 3 , －3 ) 為切點的切線，其切線斜率最小，且此切線通過原點，則數對 ( a , b , c )＝$( 3132 , 33 , 3435 )$。
+  tags:
+    unit:
+      code: MA-J1-2-2
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 函數性質的判定
+      std: true
+    textbook: 選修數學甲（上） 函數性質的判定
+    pattern:
+      key: MA-J1-2-2:T02
+      name: 反曲點與圖形對稱中心
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_11
   section: 2
   number: 11
   type: fill
   page: 2
   stem: 函數f (x)＝$\frac{3x}{\cos x}$，則f ′(0)＝$36$。
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T02
+      name: 微分四則與連鎖律計算
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_12
   section: 2
   number: 12
   type: fill
   page: 2
   stem: 若取$\sqrt{7}$的近似值$a_{0}$＝3，利用牛頓法及$a_{0}$，求出$\sqrt{7}$的下一個近似值為$a_{1}$，再利用牛頓法及$a_{1}$，求出$\sqrt{7}$的下一個近似值為$a_{2}$，則 $a_{2}$＝$\frac{ 373839 }{ 4041 }$。（化為最簡分數）
+  tags:
+    unit:
+      code: MA-J1-2-1
+      book: 選修數學甲（上）
+      chapter: 微分
+      title: 微分
+      std: true
+    textbook: 選修數學甲（上） 微分
+    pattern:
+      key: MA-J1-2-1:T06
+      name: 切線線性近似與牛頓求根法
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 3
 - id: doc_112_台中_興大附中_數學_數甲_g12s1e1_s2_13
   section: 2
   number: 13
   type: fill
   page: 2
   stem: 若$a_{n}$＝$\sqrt{1 + 2 + 3 + \cdots + ( n + 1 )} - \sqrt{1 + 2 + 3 + \cdots + n}$，則$\lim_{n \rightarrow \infty} a_{n}$＝$\frac{ \sqrt{ 42 } }{ 43 }$。（化為最簡根式）
+  tags:
+    unit:
+      code: MA-J1-1-1
+      book: 選修數學甲（上）
+      chapter: 極限與函數
+      title: 數列的極限與無窮等比級數
+      std: true
+    textbook: 選修數學甲（上） 數列的極限與無窮等比級數
+    pattern:
+      key: MA-J1-1-1:T03
+      name: 根式有理化與極限反推
+    labeled_by: agent
+    label_confidence: high
+  difficulty: 2
