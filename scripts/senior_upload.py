@@ -154,8 +154,15 @@ def upload(workers: int = 4) -> int:
 
     def wipe(doc_id: str) -> None:
         # 級聯刪除整卷會逾時：先分批刪子表，再刪題目
-        r = s.get(f"{url}/question", params={"select": "id", "document_id": f"eq.{doc_id}"}, headers=H, timeout=120)
-        r.raise_for_status()
+        for attempt in range(6):                  # 偶爾代理伺服器斷線，重試
+            try:
+                r = s.get(f"{url}/question", params={"select": "id", "document_id": f"eq.{doc_id}"}, headers=H, timeout=120)
+                r.raise_for_status()
+                break
+            except requests.RequestException:
+                if attempt == 5:
+                    raise
+                time.sleep(2 ** attempt)
         ids = [x["id"] for x in r.json()]
         for i in range(0, len(ids), 25):
             chunk = "in.(" + ",".join(f'"{x}"' for x in ids[i:i + 25]) + ")"
