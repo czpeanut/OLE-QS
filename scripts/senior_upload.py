@@ -134,7 +134,7 @@ def upload(only: str | None = None) -> int:
     con.row_factory = sqlite3.Row
     docs = [r["id"] for r in con.execute("select id from document")]
     if only == "fixed":        # 只傳有修正題的卷（來源標記或內容有變）；其他卷不動
-        docs = [r[0] for r in con.execute("select distinct document_id from question q join question_source s "
+        docs = [r[0] for r in con.execute("select distinct q.document_id from question q join question_source s "
                                           "on s.question_id = q.id where s.relation = 'fixed'")]
     q_docs = ",".join("'" + d.replace("'", "''") + "'" for d in docs)
     print(f"這次傳 {len(docs)} 卷", flush=True)
