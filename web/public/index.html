@@ -751,7 +751,7 @@ async function init(){
   countUp($('[data-count="hs-year"]'), TAX.years.length);
   moveInk();
   seg($("#f-subject"), TAX.subjects.map(s => [s.name, s.name]), F.subject, v => { F.subject = v; F.sub = ""; subjectChanged() });
-  seg($("#f-book"), TAX.books.map(b => [`${b.grade}-${b.semester}`, b.name]), F.book, v => { F.book = v; loadUnits() });
+  seg($("#f-book"), TAX.books.map(b => [`${b.grade}-${b.semester}`, b.name]), F.book, v => { const was = senior(); F.book = v; if (senior() !== was) F.sub = ""; subjectChanged() });
   seg($("#f-pub"), TAX.publishers.map(p => [p, p]), F.pub, v => { F.pub = v; loadUnits() });
   seg($("#f-diff"), DIFF_OPTS, F.diff, v => { F.diff = v; search(0) });
   // 作答形式可複選：再點一次取消
@@ -775,14 +775,17 @@ async function init(){
   refreshCount();
   subjectChanged();
 }
+// 高中（高一～高三）：分科是物理、化學…；單元是跨版本的標準單元，不選版本
+function senior(){ return +F.book.split("-")[0] >= 10 }
 function subjectChanged(){
   const s = TAX.subjects.find(x => x.name === F.subject);
-  $("#w-sub").hidden = !s.subs.length;
-  seg($("#f-sub"), [["", "全部"], ...s.subs.map(x => [x, x])], F.sub, v => { F.sub = v; loadUnits() });
+  const subs = senior() ? (s.senior_subs || []) : s.subs;
+  $("#w-sub").hidden = !subs.length;
+  seg($("#f-sub"), [["", "全部"], ...subs.map(x => [x, x])], F.sub, v => { F.sub = v; loadUnits() });
   // 英語用跨版本主題；數學與自然各版本節次一致，版本只影響章節名稱
-  $("#w-pub").hidden = F.subject === "英語";
-  $("#w-diff").hidden = F.subject !== "數學";          // 目前只有數學評過難度
-  if (F.subject !== "數學" && F.diff) { F.diff = ""; seg($("#f-diff"), DIFF_OPTS, "", v => { F.diff = v; search(0) }) }
+  $("#w-pub").hidden = F.subject === "英語" || senior();
+  $("#w-diff").hidden = !(F.subject === "數學" || (senior() && F.subject === "自然"));   // 評過難度：數學、高中自然
+  if ($("#w-diff").hidden && F.diff) { F.diff = ""; seg($("#f-diff"), DIFF_OPTS, "", v => { F.diff = v; search(0) }) }
   loadUnits();
 }
 
@@ -793,8 +796,8 @@ async function loadUnits(){
   if (F.sub) qs.set("sub", F.sub);
   UNITS = await (await api("/api/units?" + qs)).json();
   F.units.clear(); F.patterns.clear();
-  $("#units-title").textContent = F.subject === "英語" ? "文法主題" : `章節・${F.pub}版`;
-  $("#u-note").textContent = F.subject === "英語" ? "跨版本主題" : TAX.merged.includes(F.subject) ? "三版本節次對齊，題數合併計算" : "";
+  $("#units-title").textContent = F.subject === "英語" ? "文法主題" : senior() ? "章節・標準單元" : `章節・${F.pub}版`;
+  $("#u-note").textContent = F.subject === "英語" ? "跨版本主題" : senior() ? "高中各版本對齊成標準單元；列出這學期考過的單元" : TAX.merged.includes(F.subject) ? "三版本節次對齊，題數合併計算" : "";
   renderUnits(); search(0);
 }
 function renderUnits(){
@@ -833,7 +836,7 @@ function setSide(open){
 function summarizeSide(){
   const book = TAX.books.find(b => `${b.grade}-${b.semester}` === F.book)?.name || "";
   const n = F.units.size;
-  $("#side-sum").textContent = `${F.subject}${F.sub ? "・" + F.sub : ""}・${book}${F.subject === "英語" ? "" : "・" + F.pub}${n ? `・${n} 個單元` : ""}`;
+  $("#side-sum").textContent = `${F.subject}${F.sub ? "・" + F.sub : ""}・${book}${F.subject === "英語" || senior() ? "" : "・" + F.pub}${n ? `・${n} 個單元` : ""}`;
 }
 
 // 已套用的篩選（可點掉）
@@ -864,7 +867,7 @@ function filters(){
   const [g, s] = F.book.split("-");
   const f = {subject:F.subject, grade:+g, semester:+s};
   if (F.sub) f.sub = F.sub;
-  if (F.units.size) { f.units = [...F.units]; f.publisher = F.pub }
+  if (F.units.size) { f.units = [...F.units]; if (!senior()) f.publisher = F.pub }
   if (F.formats.size) f.types = FORMATS.filter(x => F.formats.has(x[0])).flatMap(x => x[2]);
   if (F.patterns.size) f.patterns = [...F.patterns];
   if (F.diff) f.difficulty = F.diff.split(",").map(Number);

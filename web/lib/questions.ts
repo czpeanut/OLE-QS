@@ -115,7 +115,8 @@ export function filtered(f: Omit<Filters, "limit" | "offset">, base: string, cou
   if (f.units?.length) {
     // 歷史、地理、公民的節次代號會重複，要連同子科比對
     qb = qb.or(f.units.map((k) => { const [s, c] = k.split("|"); return `and(unit_subject.eq.${quote(s)},unit_code.eq.${quote(c)})`; }).join(","));
-    if (f.publisher && f.subject && !MERGED.has(f.subject) && f.subject !== "英語") qb = qb.eq("unit_publisher", f.publisher);
+    if (f.publisher && f.subject && !MERGED.has(f.subject) && f.subject !== "英語" && !(f.grade && f.grade >= 10))
+      qb = qb.eq("unit_publisher", f.publisher);     // 高中是跨版本的標準單元，不分版本
   }
   if (f.types?.length) qb = qb.in("type", f.types);
   if (f.patterns?.length) qb = qb.in("pf.value", f.patterns);
