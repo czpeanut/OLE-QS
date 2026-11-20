@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>agent 審題結果</title>
+<style>
+:root{--bg:#f4f5f7;--panel:#fff;--line:#e1e4e9;--ink:#1b1f24;--muted:#687280;--accent:#2563c9;--warn:#b45309;--bad:#b42318;--ok:#1a7f4b}
+@media (prefers-color-scheme:dark){:root{--bg:#13161a;--panel:#1b1f25;--line:#2b3139;--ink:#e5e8ec;--muted:#99a2ae;--accent:#6aa2f2;--warn:#f0b35a;--bad:#f28b82;--ok:#6fd3a0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 "Noto Sans TC","Noto Sans CJK TC",system-ui,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 8px}
+.sub{color:var(--muted);margin:0 0 16px}
+a{color:var(--accent)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:6px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;white-space:normal}
+th{color:var(--muted);font-weight:600}
+td small{color:var(--muted)}
+tr.sec td{font-weight:700;background:rgba(127,127,127,.08);text-align:left}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.tabs button,.bar select,.bar input{font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:6px 12px}
+.tabs button.on{border-color:var(--accent);color:var(--accent);font-weight:700}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.bar input{flex:1;min-width:160px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.item .id{color:var(--muted);font-size:12px;word-break:break-all}
+.item .stem{white-space:pre-wrap;margin:6px 0}
+.opt{margin:2px 0;color:var(--muted);font-size:14px}
+.ans{margin-top:6px;font-size:14px}.ans b{color:var(--bad)}.why{color:var(--warn);font-size:14px;margin-top:4px;white-space:pre-wrap}
+.pg{display:flex;gap:10px;align-items:center;margin:14px 0}.pg button{font:inherit;padding:6px 14px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px}
+.back{display:inline-block;margin-bottom:12px}
+</style></head>
+<body><main>
+<a class="back" href="/review-home.html">← 回審題台</a>
+<h1>agent 審題結果</h1>
+<p class="sub">國中逐題審題（執行 agent 逐題解題、比對答案、單元與難度）的驗收統計，與已寫回資料庫的狀況。題目清單可展開查看原題。</p>
+<h2>統計（以審題題數為分母）</h2>
+<div class="panel"><table id="st"></table></div>
+<h2>題目清單</h2>
+<div class="tabs" id="tabs"></div>
+<div class="bar"><select id="sub"></select><input id="q" placeholder="搜尋題目編號、題幹或說明…"></div>
+<div id="list"></div>
+<div class="pg"><button id="prev">上一頁</button><span id="pn"></span><button id="next">下一頁</button></div>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const fmt=n=>(n||0).toLocaleString();
+let S,items=[],cur="text",page=0;const PER=30;
+async function init(){
+  S=await (await fetch("/agent-review/stats.json")).json();
+  drawStats();
+  const tabs=$("#tabs");
+  Object.entries(S.cats).forEach(([k,c])=>{const b=document.createElement("button");b.textContent=`${c.name}（${fmt(c.n)}）`;b.onclick=()=>load(k);b.dataset.k=k;tabs.append(b)});
+  $("#sub").innerHTML='<option value="">全部科目</option>'+["數學","國文","英語","社會","自然"].map(s=>`<option>${s}</option>`).join("");
+  $("#sub").onchange=()=>{page=0;draw()};$("#q").oninput=()=>{page=0;draw()};
+  $("#prev").onclick=()=>{page--;draw(1)};$("#next").onclick=()=>{page++;draw(1)};
+  load("text");
+}
+function drawStats(){
+  const sj=S.subjects,t=$("#st");
+  const row=(label,get,pct)=>`<tr><td>${label}</td>`+sj.map(s=>{const n=get(s)||0,tot=S.stats[s]["審題題數"];return `<td>${fmt(n)}${pct===false?"":` <small>${(n*100/tot).toFixed(2)}%</small>`}</td>`}).join("")+"</tr>";
+  const sec=x=>`<tr class="sec"><td colspan="${sj.length+1}">${x}</td></tr>`;
+  const g=k=>s=>S.stats[s][k];
+  t.innerHTML=`<tr><th></th>${sj.map(s=>`<th>${s}</th>`).join("")}</tr>`+
+   row("審題題數",g("審題題數"),false)+
+   sec("題目本身")+row("題目文字有問題（不寫回）",g("題目文字有問題"))+row("　其中選擇題缺選項",g("　其中：選擇題缺選項"))+
+   sec("答案")+row("同意原答案",g("答案_agree"))+row("補缺（原本沒答案，agent 補上）",g("答案_補缺"))+row("訂正（原本有答案，agent 判錯）",g("答案_訂正"))+
+   row("　訂正已寫回（標爭議，保留原答案備查）",g("答案修正_寫回_訂正"))+row("　風險題（只標爭議，答案不動）",g("答案修正_風險題_只標爭議"))+
+   row("不確定（unsure）",g("答案_unsure"))+row("開放式／無標準答案（none）",g("答案_none"))+
+   sec("單元")+row("單元已改（補缺＋改錯）",g("單元修正_寫回"))+row("　補缺（原本沒有單元或只有段考範圍）",s=>S.unit[s]["補缺"])+row("　改錯（原單元不對）",s=>S.unit[s]["改錯"])+
+   row("　對不到單元表（未寫回）",g("單元修正_對不到單元表"))+
+   sec("其他")+row("數學題型已改",g("題型修正_寫回"))+row("補上難度",g("補難度"))+
+   sec("難度分布（agent 評定）")+[1,2,3,4,5].map(d=>row("難度 "+d,s=>S.difficulty[s][d])).join("");
+}
+async function load(k){
+  cur=k;page=0;document.querySelectorAll("#tabs button").forEach(b=>b.classList.toggle("on",b.dataset.k===k));
+  $("#list").innerHTML="載入中…";
+  items=await (await fetch(`/agent-review/items_${k}.json`)).json();draw();
+}
+function draw(scroll){
+  const sub=$("#sub").value,q=$("#q").value.trim();
+  const f=items.filter(x=>(!sub||x.s.startsWith(sub))&&(!q||(x.id+x.stem+x.why).includes(q)));
+  const pages=Math.max(1,Math.ceil(f.length/PER));page=Math.min(Math.max(page,0),pages-1);
+  $("#pn").textContent=`第 ${page+1} / ${pages} 頁，共 ${fmt(f.length)} 題`;
+  $("#prev").disabled=page===0;$("#next").disabled=page>=pages-1;
+  $("#list").innerHTML=f.slice(page*PER,(page+1)*PER).map(x=>`<div class="item"><div class="id">${esc(x.id)}　${esc(x.s)}　${esc(x.g)}</div>
+   <div class="stem">${esc(x.stem)}</div>${x.opts.map(o=>`<div class="opt">${esc(o[0])}　${esc(o[1])}</div>`).join("")}
+   <div class="ans">原答案：${esc(x.old.join("、")||"（無）")}${x.new.length&&cur!=="text"?`　→　agent：<b>${esc(x.new.join("、"))}</b>`:""}</div>
+   ${x.why?`<div class="why">${esc(x.why)}</div>`:""}</div>`).join("")||"<p class='sub'>沒有符合的題目</p>";
+  if(scroll)scrollTo(0,$("#tabs").offsetTop-10);
+}
+init();
+</script></body></html>
