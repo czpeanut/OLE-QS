@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自命題審題</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<style>
+:root{--bg:#f4f5f7;--panel:#fff;--line:#e1e4e9;--ink:#1b1f24;--muted:#687280;--accent:#2563c9;--ok:#1a7f4b;--warn:#b45309}
+@media (prefers-color-scheme:dark){:root{--bg:#13161a;--panel:#1b1f25;--line:#2b3139;--ink:#e5e8ec;--muted:#99a2ae;--accent:#6aa2f2;--ok:#6fd3a0;--warn:#f0b35a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 "Noto Sans TC","Noto Sans CJK TC",system-ui,sans-serif}
+main{max-width:920px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);margin:0 0 12px}
+.note{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:8px;padding:8px 12px;margin:10px 0;font-size:14px}
+a{color:var(--accent)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.bar select,.bar input,.pg button,.btn{font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:6px 12px}
+.bar input{flex:1;min-width:160px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.meta{color:var(--muted);font-size:12px;word-break:break-all}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-right:4px;font-size:12px}
+.grp{background:rgba(127,127,127,.08);border-radius:8px;padding:8px 10px;margin:6px 0;font-size:14px}
+.stem{margin:6px 0}.opt{margin:3px 0 3px 4px}
+.ans{margin-top:8px;border-top:1px dashed var(--line);padding-top:8px;display:none}
+.ans.on{display:block}.ans b{color:var(--ok)}.ex{color:var(--muted);font-size:14px;margin-top:4px}
+table.t{border-collapse:collapse;margin:6px 0;font-size:14px}table.t td,table.t th{border:1px solid var(--line);padding:3px 8px}
+.pg{display:flex;gap:10px;align-items:center;margin:14px 0}
+.btn{cursor:pointer;font-size:13px;padding:2px 10px;margin-top:6px}
+</style></head>
+<body><main>
+<a href="/review-home.html">← 回審題台</a>
+<h1>自命題審題</h1>
+<p class="sub">agent 原創的高中題目（尚未入庫，僅供審題）。點「看答案與解說」展開。</p>
+<div class="note">這些題沒有原卷來源，是 AI 依課綱單元原創。<b>不會出現在選題組卷</b>；通過審題後才會入庫並標示「原創」。</div>
+<div class="bar">
+  <select id="sub"></select><select id="bk"></select><select id="ty"><option value="">全部題型</option><option value="single">單選</option><option value="multiple">多選</option><option value="fill">填充</option><option value="essay">簡答</option></select>
+  <select id="df"><option value="">全部難度</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+  <input id="q" placeholder="搜尋題號、單元、題幹…">
+</div>
+<div id="stat" class="sub"></div>
+<div id="list"></div>
+<div class="pg"><button id="prev">上一頁</button><span id="pn"></span><button id="next">下一頁</button></div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+const TY={single:"單選",multiple:"多選",fill:"填充",essay:"簡答"};
+const esc=s=>String(s??"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function md(s){
+  const L=String(s??"").split("\n"),out=[];
+  for(let i=0;i<L.length;i++){
+    if(/^\s*\|.*\|\s*$/.test(L[i])){
+      const rows=[];while(i<L.length&&/^\s*\|.*\|\s*$/.test(L[i])){rows.push(L[i]);i++}i--;
+      const cells=r=>r.trim().replace(/^\||\|$/g,"").split("|").map(c=>c.trim());
+      const body=rows.filter(r=>!/^\s*\|[\s:\-|]+\|\s*$/.test(r)).map(cells);
+      out.push('<table class="t">'+body.map((r,k)=>"<tr>"+r.map(c=>`<${k?"td":"th"}>${inl(c)}</${k?"td":"th"}>`).join("")+"</tr>").join("")+"</table>");
+    }else out.push(inl(L[i])+"<br>");
+  }
+  return out.join("").replace(/(<br>)+$/,"");
+}
+const inl=s=>esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>");
+let IDX,DATA=[],PER=20,page=0,cache={};
+async function init(){
+  IDX=await (await fetch("/original/index.json")).json();
+  $("#sub").innerHTML=Object.keys(IDX).map(s=>`<option value="${s}">${s}（${IDX[s].n}）</option>`).join("");
+  ["sub","bk","ty","df"].forEach(k=>$("#"+k).onchange=k==="sub"?loadSub:()=>{page=0;draw()});
+  $("#q").oninput=()=>{page=0;draw()};
+  $("#prev").onclick=()=>{page--;draw(1)};$("#next").onclick=()=>{page++;draw(1)};
+  loadSub();
+}
+async function loadSub(){
+  const s=$("#sub").value;
+  $("#list").innerHTML="載入中…";
+  DATA=cache[s]||(cache[s]=await (await fetch(`/original/${encodeURIComponent(s)}.json`)).json());
+  $("#bk").innerHTML='<option value="">全部冊次</option>'+Object.entries(IDX[s].books).map(([b,n])=>`<option value="${esc(b)}">${esc(b)}（${n}）</option>`).join("");
+  page=0;draw();
+}
+function draw(scroll){
+  const bk=$("#bk").value,ty=$("#ty").value,df=$("#df").value,q=$("#q").value.trim();
+  const f=DATA.filter(x=>(!bk||x.bk===bk)&&(!ty||x.t===ty)&&(!df||String(x.d)===df)&&(!q||(x.id+x.ut+x.s+(x.g||"")).includes(q)));
+  const pages=Math.max(1,Math.ceil(f.length/PER));page=Math.min(Math.max(page,0),pages-1);
+  $("#pn").textContent=`第 ${page+1} / ${pages} 頁`;$("#stat").textContent=`符合 ${f.length.toLocaleString()} 題`;
+  $("#prev").disabled=!page;$("#next").disabled=page>=pages-1;
+  $("#list").innerHTML=f.slice(page*PER,(page+1)*PER).map((x,i)=>`<div class="item"><div class="meta"><span class="tag">${TY[x.t]||x.t}</span><span class="tag">難 ${x.d}</span>${esc(x.bk)}　${esc(x.u)} ${esc(x.ut)}${x.p?`　題型：${esc(x.p)}`:""}<br>${esc(x.id)}</div>
+   ${x.g?`<div class="grp">${md(x.g)}</div>`:""}<div class="stem">${md(x.s)}</div>
+   ${x.o.map(o=>`<div class="opt">(${esc(o[0])}) ${inl(o[1])}</div>`).join("")}
+   <button class="btn" onclick="this.nextElementSibling.classList.toggle('on');rm(this.parentNode)">看答案與解說</button>
+   <div class="ans"><div>答案：<b>${x.a.map(a=>md(a)).join("、")||"（無）"}</b>${x.sr?`<div class="ex">給分：${esc(x.sr)}</div>`:""}</div><div class="ex">${x.e?md(x.e):'<span style="color:var(--warn)">（尚無解說）</span>'}</div></div></div>`).join("")||'<p class="sub">沒有符合的題目</p>';
+  rm($("#list"));
+  if(scroll)scrollTo(0,0);
+}
+function rm(el){if(window.renderMathInElement)renderMathInElement(el,{delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],throwOnError:false})}
+addEventListener("load",()=>{init()});
+</script></body></html>
